@@ -10,7 +10,6 @@
 # direct methods
 .method public constructor <init>(Landroid/graphics/Picture;)V
     .locals 0
-    .param p1    # Landroid/graphics/Picture;
 
     invoke-direct {p0}, Landroid/graphics/drawable/Drawable;-><init>()V
 
@@ -23,7 +22,6 @@
 # virtual methods
 .method public draw(Landroid/graphics/Canvas;)V
     .locals 3
-    .param p1    # Landroid/graphics/Canvas;
 
     iget-object v1, p0, Landroid/graphics/drawable/PictureDrawable;->mPicture:Landroid/graphics/Picture;
 
@@ -119,35 +117,30 @@
 
 .method public setAlpha(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public setColorFilter(Landroid/graphics/ColorFilter;)V
     .locals 0
-    .param p1    # Landroid/graphics/ColorFilter;
 
     return-void
 .end method
 
 .method public setDither(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method public setFilterBitmap(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method public setPicture(Landroid/graphics/Picture;)V
     .locals 0
-    .param p1    # Landroid/graphics/Picture;
 
     iput-object p1, p0, Landroid/graphics/drawable/PictureDrawable;->mPicture:Landroid/graphics/Picture;
 

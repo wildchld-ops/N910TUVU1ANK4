@@ -84,7 +84,6 @@
 
 .method public constructor <init>(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -111,7 +110,6 @@
 
 .method public static obtain(Landroid/support/v4/view/accessibility/AccessibilityRecordCompat;)Landroid/support/v4/view/accessibility/AccessibilityRecordCompat;
     .locals 3
-    .param p0    # Landroid/support/v4/view/accessibility/AccessibilityRecordCompat;
 
     new-instance v0, Landroid/support/v4/view/accessibility/AccessibilityRecordCompat;
 
@@ -132,7 +130,6 @@
 # virtual methods
 .method public equals(Ljava/lang/Object;)Z
     .locals 5
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x1
 
@@ -560,7 +557,6 @@
 
 .method public setAddedCount(I)V
     .locals 2
-    .param p1    # I
 
     sget-object v0, Landroid/support/v4/view/accessibility/AccessibilityRecordCompat;->IMPL:Landroid/support/v4/view/accessibility/AccessibilityRecordCompat$AccessibilityRecordImpl;
 
@@ -573,7 +569,6 @@
 
 .method public setBeforeText(Ljava/lang/CharSequence;)V
     .locals 2
-    .param p1    # Ljava/lang/CharSequence;
 
     sget-object v0, Landroid/support/v4/view/accessibility/AccessibilityRecordCompat;->IMPL:Landroid/support/v4/view/accessibility/AccessibilityRecordCompat$AccessibilityRecordImpl;
 
@@ -586,7 +581,6 @@
 
 .method public setChecked(Z)V
     .locals 2
-    .param p1    # Z
 
     sget-object v0, Landroid/support/v4/view/accessibility/AccessibilityRecordCompat;->IMPL:Landroid/support/v4/view/accessibility/AccessibilityRecordCompat$AccessibilityRecordImpl;
 
@@ -599,7 +593,6 @@
 
 .method public setClassName(Ljava/lang/CharSequence;)V
     .locals 2
-    .param p1    # Ljava/lang/CharSequence;
 
     sget-object v0, Landroid/support/v4/view/accessibility/AccessibilityRecordCompat;->IMPL:Landroid/support/v4/view/accessibility/AccessibilityRecordCompat$AccessibilityRecordImpl;
 
@@ -612,7 +605,6 @@
 
 .method public setContentDescription(Ljava/lang/CharSequence;)V
     .locals 2
-    .param p1    # Ljava/lang/CharSequence;
 
     sget-object v0, Landroid/support/v4/view/accessibility/AccessibilityRecordCompat;->IMPL:Landroid/support/v4/view/accessibility/AccessibilityRecordCompat$AccessibilityRecordImpl;
 
@@ -625,7 +617,6 @@
 
 .method public setCurrentItemIndex(I)V
     .locals 2
-    .param p1    # I
 
     sget-object v0, Landroid/support/v4/view/accessibility/AccessibilityRecordCompat;->IMPL:Landroid/support/v4/view/accessibility/AccessibilityRecordCompat$AccessibilityRecordImpl;
 
@@ -638,7 +629,6 @@
 
 .method public setEnabled(Z)V
     .locals 2
-    .param p1    # Z
 
     sget-object v0, Landroid/support/v4/view/accessibility/AccessibilityRecordCompat;->IMPL:Landroid/support/v4/view/accessibility/AccessibilityRecordCompat$AccessibilityRecordImpl;
 
@@ -651,7 +641,6 @@
 
 .method public setFromIndex(I)V
     .locals 2
-    .param p1    # I
 
     sget-object v0, Landroid/support/v4/view/accessibility/AccessibilityRecordCompat;->IMPL:Landroid/support/v4/view/accessibility/AccessibilityRecordCompat$AccessibilityRecordImpl;
 
@@ -664,7 +653,6 @@
 
 .method public setFullScreen(Z)V
     .locals 2
-    .param p1    # Z
 
     sget-object v0, Landroid/support/v4/view/accessibility/AccessibilityRecordCompat;->IMPL:Landroid/support/v4/view/accessibility/AccessibilityRecordCompat$AccessibilityRecordImpl;
 
@@ -677,7 +665,6 @@
 
 .method public setItemCount(I)V
     .locals 2
-    .param p1    # I
 
     sget-object v0, Landroid/support/v4/view/accessibility/AccessibilityRecordCompat;->IMPL:Landroid/support/v4/view/accessibility/AccessibilityRecordCompat$AccessibilityRecordImpl;
 
@@ -690,7 +677,6 @@
 
 .method public setMaxScrollX(I)V
     .locals 2
-    .param p1    # I
 
     sget-object v0, Landroid/support/v4/view/accessibility/AccessibilityRecordCompat;->IMPL:Landroid/support/v4/view/accessibility/AccessibilityRecordCompat$AccessibilityRecordImpl;
 
@@ -703,7 +689,6 @@
 
 .method public setMaxScrollY(I)V
     .locals 2
-    .param p1    # I
 
     sget-object v0, Landroid/support/v4/view/accessibility/AccessibilityRecordCompat;->IMPL:Landroid/support/v4/view/accessibility/AccessibilityRecordCompat$AccessibilityRecordImpl;
 
@@ -716,7 +701,6 @@
 
 .method public setParcelableData(Landroid/os/Parcelable;)V
     .locals 2
-    .param p1    # Landroid/os/Parcelable;
 
     sget-object v0, Landroid/support/v4/view/accessibility/AccessibilityRecordCompat;->IMPL:Landroid/support/v4/view/accessibility/AccessibilityRecordCompat$AccessibilityRecordImpl;
 
@@ -729,7 +713,6 @@
 
 .method public setPassword(Z)V
     .locals 2
-    .param p1    # Z
 
     sget-object v0, Landroid/support/v4/view/accessibility/AccessibilityRecordCompat;->IMPL:Landroid/support/v4/view/accessibility/AccessibilityRecordCompat$AccessibilityRecordImpl;
 
@@ -742,7 +725,6 @@
 
 .method public setRemovedCount(I)V
     .locals 2
-    .param p1    # I
 
     sget-object v0, Landroid/support/v4/view/accessibility/AccessibilityRecordCompat;->IMPL:Landroid/support/v4/view/accessibility/AccessibilityRecordCompat$AccessibilityRecordImpl;
 
@@ -755,7 +737,6 @@
 
 .method public setScrollX(I)V
     .locals 2
-    .param p1    # I
 
     sget-object v0, Landroid/support/v4/view/accessibility/AccessibilityRecordCompat;->IMPL:Landroid/support/v4/view/accessibility/AccessibilityRecordCompat$AccessibilityRecordImpl;
 
@@ -768,7 +749,6 @@
 
 .method public setScrollY(I)V
     .locals 2
-    .param p1    # I
 
     sget-object v0, Landroid/support/v4/view/accessibility/AccessibilityRecordCompat;->IMPL:Landroid/support/v4/view/accessibility/AccessibilityRecordCompat$AccessibilityRecordImpl;
 
@@ -781,7 +761,6 @@
 
 .method public setScrollable(Z)V
     .locals 2
-    .param p1    # Z
 
     sget-object v0, Landroid/support/v4/view/accessibility/AccessibilityRecordCompat;->IMPL:Landroid/support/v4/view/accessibility/AccessibilityRecordCompat$AccessibilityRecordImpl;
 
@@ -794,7 +773,6 @@
 
 .method public setSource(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     sget-object v0, Landroid/support/v4/view/accessibility/AccessibilityRecordCompat;->IMPL:Landroid/support/v4/view/accessibility/AccessibilityRecordCompat$AccessibilityRecordImpl;
 
@@ -807,8 +785,6 @@
 
 .method public setSource(Landroid/view/View;I)V
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     sget-object v0, Landroid/support/v4/view/accessibility/AccessibilityRecordCompat;->IMPL:Landroid/support/v4/view/accessibility/AccessibilityRecordCompat$AccessibilityRecordImpl;
 
@@ -821,7 +797,6 @@
 
 .method public setToIndex(I)V
     .locals 2
-    .param p1    # I
 
     sget-object v0, Landroid/support/v4/view/accessibility/AccessibilityRecordCompat;->IMPL:Landroid/support/v4/view/accessibility/AccessibilityRecordCompat$AccessibilityRecordImpl;
 

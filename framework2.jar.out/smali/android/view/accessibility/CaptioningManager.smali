@@ -44,7 +44,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -85,7 +84,6 @@
 
 .method static synthetic access$000(Landroid/view/accessibility/CaptioningManager;)V
     .locals 0
-    .param p0    # Landroid/view/accessibility/CaptioningManager;
 
     invoke-direct {p0}, Landroid/view/accessibility/CaptioningManager;->notifyEnabledChanged()V
 
@@ -94,7 +92,6 @@
 
 .method static synthetic access$100(Landroid/view/accessibility/CaptioningManager;)V
     .locals 0
-    .param p0    # Landroid/view/accessibility/CaptioningManager;
 
     invoke-direct {p0}, Landroid/view/accessibility/CaptioningManager;->notifyLocaleChanged()V
 
@@ -103,7 +100,6 @@
 
 .method static synthetic access$200(Landroid/view/accessibility/CaptioningManager;)V
     .locals 0
-    .param p0    # Landroid/view/accessibility/CaptioningManager;
 
     invoke-direct {p0}, Landroid/view/accessibility/CaptioningManager;->notifyFontScaleChanged()V
 
@@ -112,7 +108,6 @@
 
 .method static synthetic access$300(Landroid/view/accessibility/CaptioningManager;)Ljava/lang/Runnable;
     .locals 1
-    .param p0    # Landroid/view/accessibility/CaptioningManager;
 
     iget-object v0, p0, Landroid/view/accessibility/CaptioningManager;->mStyleChangedRunnable:Ljava/lang/Runnable;
 
@@ -121,7 +116,6 @@
 
 .method static synthetic access$400(Landroid/view/accessibility/CaptioningManager;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Landroid/view/accessibility/CaptioningManager;
 
     iget-object v0, p0, Landroid/view/accessibility/CaptioningManager;->mHandler:Landroid/os/Handler;
 
@@ -130,7 +124,6 @@
 
 .method static synthetic access$500(Landroid/view/accessibility/CaptioningManager;)V
     .locals 0
-    .param p0    # Landroid/view/accessibility/CaptioningManager;
 
     invoke-direct {p0}, Landroid/view/accessibility/CaptioningManager;->notifyUserStyleChanged()V
 
@@ -351,7 +344,6 @@
 
 .method private registerObserver(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/view/accessibility/CaptioningManager;->mContentResolver:Landroid/content/ContentResolver;
 
@@ -372,7 +364,6 @@
 # virtual methods
 .method public addCaptioningChangeListener(Landroid/view/accessibility/CaptioningManager$CaptioningChangeListener;)V
     .locals 2
-    .param p1    # Landroid/view/accessibility/CaptioningManager$CaptioningChangeListener;
 
     iget-object v1, p0, Landroid/view/accessibility/CaptioningManager;->mListeners:Ljava/util/ArrayList;
 
@@ -618,7 +609,6 @@
 
 .method public removeCaptioningChangeListener(Landroid/view/accessibility/CaptioningManager$CaptioningChangeListener;)V
     .locals 3
-    .param p1    # Landroid/view/accessibility/CaptioningManager$CaptioningChangeListener;
 
     iget-object v1, p0, Landroid/view/accessibility/CaptioningManager;->mListeners:Ljava/util/ArrayList;
 

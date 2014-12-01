@@ -84,7 +84,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Lcom/android/mms/model/Model;-><init>()V
 
@@ -99,9 +98,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Lcom/android/mms/model/MediaModel;Lcom/android/mms/model/AttachmentModel;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/mms/model/MediaModel;
-    .param p3    # Lcom/android/mms/model/AttachmentModel;
 
     invoke-direct {p0}, Lcom/android/mms/model/Model;-><init>()V
 
@@ -120,7 +116,6 @@
 
 .method private static checkFileTransferType(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     if-nez p0, :cond_0
 
@@ -291,11 +286,6 @@
 
 .method public static createFileTransferFromURL(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Landroid/net/Uri;Z)Lcom/android/mms/model/ImFileTransferModel;
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/net/Uri;
-    .param p4    # Z
 
     new-instance v1, Lcom/android/mms/model/ImFileTransferModel;
 
@@ -536,7 +526,6 @@
 
 .method private static isMediaType(Ljava/lang/String;)Z
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -695,7 +684,6 @@
 
 .method public handleEvent(Lorg/w3c/dom/events/Event;)V
     .locals 0
-    .param p1    # Lorg/w3c/dom/events/Event;
 
     return-void
 .end method
@@ -818,8 +806,6 @@
 
 .method public onModelChanged(Lcom/android/mms/model/Model;Z)V
     .locals 0
-    .param p1    # Lcom/android/mms/model/Model;
-    .param p2    # Z
 
     return-void
 .end method

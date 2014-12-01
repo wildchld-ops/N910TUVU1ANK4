@@ -40,8 +40,6 @@
 # direct methods
 .method public constructor <init>(Lcom/sec/knox/container/EnterpriseContainerService;ILandroid/os/Handler;)V
     .locals 2
-    .param p2    # I
-    .param p3    # Landroid/os/Handler;
 
     const/4 v1, 0x0
 
@@ -70,10 +68,6 @@
 
 .method public constructor <init>(Lcom/sec/knox/container/EnterpriseContainerService;ILandroid/os/Handler;Ljava/util/List;ZI)V
     .locals 2
-    .param p2    # I
-    .param p3    # Landroid/os/Handler;
-    .param p5    # Z
-    .param p6    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -124,7 +118,6 @@
 
 .method private installPackages(Ljava/lang/String;)Z
     .locals 9
-    .param p1    # Ljava/lang/String;
 
     const/4 v5, 0x0
 

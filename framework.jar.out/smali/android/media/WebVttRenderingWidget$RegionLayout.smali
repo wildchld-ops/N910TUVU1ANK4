@@ -36,10 +36,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/media/TextTrackRegion;Landroid/view/accessibility/CaptioningManager$CaptionStyle;F)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/media/TextTrackRegion;
-    .param p3    # Landroid/view/accessibility/CaptioningManager$CaptionStyle;
-    .param p4    # F
 
     invoke-direct {p0, p1}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;)V
 
@@ -74,8 +70,6 @@
 
 .method public measureForParent(II)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
 
     const/high16 v6, -0x80000000
 
@@ -197,7 +191,6 @@
 
 .method public put(Landroid/media/TextTrackCue;)V
     .locals 7
-    .param p1    # Landroid/media/TextTrackCue;
 
     const/4 v6, -0x2
 
@@ -275,8 +268,6 @@
 
 .method public setCaptionStyle(Landroid/view/accessibility/CaptioningManager$CaptionStyle;F)V
     .locals 4
-    .param p1    # Landroid/view/accessibility/CaptioningManager$CaptionStyle;
-    .param p2    # F
 
     iput-object p1, p0, Landroid/media/WebVttRenderingWidget$RegionLayout;->mCaptionStyle:Landroid/view/accessibility/CaptioningManager$CaptionStyle;
 

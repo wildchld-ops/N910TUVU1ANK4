@@ -36,7 +36,6 @@
 
 .method private updateLayout(Z)V
     .locals 4
-    .param p1    # Z
 
     const/16 v3, 0x8
 
@@ -142,7 +141,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
@@ -378,7 +376,6 @@
 
 .method public rejectCallWithMessage(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Lcom/android/incallui/CallCommandClient;->getInstance()Lcom/android/incallui/CallCommandClient;
 

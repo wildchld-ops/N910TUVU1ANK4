@@ -18,12 +18,6 @@
 # direct methods
 .method constructor <init>(Landroid/content/IntentFilter;Lcom/android/server/am/ReceiverList;Ljava/lang/String;Ljava/lang/String;II)V
     .locals 0
-    .param p1    # Landroid/content/IntentFilter;
-    .param p2    # Lcom/android/server/am/ReceiverList;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
-    .param p6    # I
 
     invoke-direct {p0, p1}, Landroid/content/IntentFilter;-><init>(Landroid/content/IntentFilter;)V
 
@@ -44,8 +38,6 @@
 # virtual methods
 .method public dump(Ljava/io/PrintWriter;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/io/PrintWriter;
-    .param p2    # Ljava/lang/String;
 
     new-instance v0, Landroid/util/PrintWriterPrinter;
 
@@ -62,8 +54,6 @@
 
 .method public dumpBrief(Ljava/io/PrintWriter;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/io/PrintWriter;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p0, p1, p2}, Lcom/android/server/am/BroadcastFilter;->dumpBroadcastFilterState(Ljava/io/PrintWriter;Ljava/lang/String;)V
 
@@ -72,8 +62,6 @@
 
 .method dumpBroadcastFilterState(Ljava/io/PrintWriter;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/io/PrintWriter;
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/server/am/BroadcastFilter;->requiredPermission:Ljava/lang/String;
 
@@ -95,9 +83,6 @@
 
 .method public dumpInReceiverList(Ljava/io/PrintWriter;Landroid/util/Printer;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/io/PrintWriter;
-    .param p2    # Landroid/util/Printer;
-    .param p3    # Ljava/lang/String;
 
     invoke-super {p0, p2, p3}, Landroid/content/IntentFilter;->dump(Landroid/util/Printer;Ljava/lang/String;)V
 

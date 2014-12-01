@@ -78,10 +78,6 @@
 # direct methods
 .method constructor <init>(Ljava/lang/String;Ljava/lang/String;ILandroid/net/Uri;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Landroid/net/Uri;
 
     const/4 v0, 0x0
 
@@ -120,7 +116,6 @@
 
 .method private addReadOwner(Lcom/android/server/am/UriPermissionOwner;)V
     .locals 1
-    .param p1    # Lcom/android/server/am/UriPermissionOwner;
 
     iget-object v0, p0, Lcom/android/server/am/UriPermission;->mReadOwners:Ljava/util/HashSet;
 
@@ -157,7 +152,6 @@
 
 .method private addWriteOwner(Lcom/android/server/am/UriPermissionOwner;)V
     .locals 1
-    .param p1    # Lcom/android/server/am/UriPermissionOwner;
 
     iget-object v0, p0, Lcom/android/server/am/UriPermission;->mWriteOwners:Ljava/util/HashSet;
 
@@ -234,8 +228,6 @@
 
 .method clearModes(IZ)Z
     .locals 5
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v4, 0x0
 
@@ -393,8 +385,6 @@
 
 .method dump(Ljava/io/PrintWriter;Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/io/PrintWriter;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
@@ -742,7 +732,6 @@
 
 .method public getStrength(I)I
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Lcom/android/server/am/UriPermission;->persistableModeFlags:I
 
@@ -785,9 +774,6 @@
 
 .method grantModes(IZLcom/android/server/am/UriPermissionOwner;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # Lcom/android/server/am/UriPermissionOwner;
 
     if-eqz p2, :cond_0
 
@@ -831,8 +817,6 @@
 
 .method initPersistedModes(IJ)V
     .locals 0
-    .param p1    # I
-    .param p2    # J
 
     iput p1, p0, Lcom/android/server/am/UriPermission;->persistableModeFlags:I
 
@@ -847,7 +831,6 @@
 
 .method releasePersistableModes(I)Z
     .locals 3
-    .param p1    # I
 
     iget v0, p0, Lcom/android/server/am/UriPermission;->persistedModeFlags:I
 
@@ -895,7 +878,6 @@
 
 .method removeReadOwner(Lcom/android/server/am/UriPermissionOwner;)V
     .locals 3
-    .param p1    # Lcom/android/server/am/UriPermissionOwner;
 
     iget-object v0, p0, Lcom/android/server/am/UriPermission;->mReadOwners:Ljava/util/HashSet;
 
@@ -964,7 +946,6 @@
 
 .method removeWriteOwner(Lcom/android/server/am/UriPermissionOwner;)V
     .locals 3
-    .param p1    # Lcom/android/server/am/UriPermissionOwner;
 
     iget-object v0, p0, Lcom/android/server/am/UriPermission;->mWriteOwners:Ljava/util/HashSet;
 
@@ -1045,7 +1026,6 @@
 
 .method takePersistableModes(I)Z
     .locals 4
-    .param p1    # I
 
     iget v1, p0, Lcom/android/server/am/UriPermission;->persistableModeFlags:I
 

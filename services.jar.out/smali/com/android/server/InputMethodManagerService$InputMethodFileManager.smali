@@ -75,7 +75,6 @@
 # direct methods
 .method public constructor <init>(Ljava/util/HashMap;I)V
     .locals 6
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -206,8 +205,6 @@
 
 .method static synthetic access$2000(Lcom/android/server/InputMethodManagerService$InputMethodFileManager;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/server/InputMethodManagerService$InputMethodFileManager;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/InputMethodManagerService$InputMethodFileManager;->deleteAllInputMethodSubtypes(Ljava/lang/String;)V
 
@@ -216,7 +213,6 @@
 
 .method private deleteAllInputMethodSubtypes(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/server/InputMethodManagerService$InputMethodFileManager;->mMethodMap:Ljava/util/HashMap;
 
@@ -251,7 +247,6 @@
 
 .method private static readAdditionalInputMethodSubtypes(Ljava/util/HashMap;Landroid/util/AtomicFile;)V
     .locals 23
-    .param p1    # Landroid/util/AtomicFile;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -842,7 +837,6 @@
 
 .method private static writeAdditionalInputMethodSubtypes(Ljava/util/HashMap;Landroid/util/AtomicFile;Ljava/util/HashMap;)V
     .locals 13
-    .param p1    # Landroid/util/AtomicFile;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1149,8 +1143,6 @@
 # virtual methods
 .method public addInputMethodSubtypes(Landroid/view/inputmethod/InputMethodInfo;[Landroid/view/inputmethod/InputMethodSubtype;)V
     .locals 8
-    .param p1    # Landroid/view/inputmethod/InputMethodInfo;
-    .param p2    # [Landroid/view/inputmethod/InputMethodSubtype;
 
     iget-object v5, p0, Lcom/android/server/InputMethodManagerService$InputMethodFileManager;->mMethodMap:Ljava/util/HashMap;
 

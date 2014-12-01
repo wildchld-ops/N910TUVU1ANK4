@@ -279,7 +279,6 @@
 
 .method public static valueOf(Ljava/lang/String;)Landroid/net/NetworkInfo$DetailedState;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-class v0, Landroid/net/NetworkInfo$DetailedState;
 

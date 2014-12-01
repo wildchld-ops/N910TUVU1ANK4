@@ -23,8 +23,6 @@
 # direct methods
 .method constructor <init>(ILandroid/renderscript/RenderScript;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Landroid/renderscript/RenderScript;
 
     invoke-direct {p0, p1, p2}, Landroid/renderscript/BaseObj;-><init>(ILandroid/renderscript/RenderScript;)V
 
@@ -51,8 +49,6 @@
 
 .method public setInput(Landroid/renderscript/Script$KernelID;Landroid/renderscript/Allocation;)V
     .locals 5
-    .param p1    # Landroid/renderscript/Script$KernelID;
-    .param p2    # Landroid/renderscript/Allocation;
 
     const/4 v0, 0x0
 
@@ -118,8 +114,6 @@
 
 .method public setOutput(Landroid/renderscript/Script$KernelID;Landroid/renderscript/Allocation;)V
     .locals 5
-    .param p1    # Landroid/renderscript/Script$KernelID;
-    .param p2    # Landroid/renderscript/Allocation;
 
     const/4 v0, 0x0
 

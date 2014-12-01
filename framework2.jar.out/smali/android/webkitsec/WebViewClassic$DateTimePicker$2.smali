@@ -36,9 +36,6 @@
 # virtual methods
 .method public onTimeSet(Landroid/widget/TimePicker;II)V
     .locals 2
-    .param p1    # Landroid/widget/TimePicker;
-    .param p2    # I
-    .param p3    # I
 
     iget-object v0, p0, Landroid/webkitsec/WebViewClassic$DateTimePicker$2;->this$1:Landroid/webkitsec/WebViewClassic$DateTimePicker;
 

@@ -28,7 +28,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -61,8 +60,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v1, 0x0
 
@@ -95,7 +92,6 @@
 
 .method static synthetic access$000(Lcom/diotek/ime/implement/view/candidate/CandidateView;)Lcom/diotek/ime/framework/common/InputManager;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/view/candidate/CandidateView;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/candidate/AbstractCandidateView;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -104,7 +100,6 @@
 
 .method static synthetic access$100(Lcom/diotek/ime/implement/view/candidate/CandidateView;)Lcom/diotek/ime/framework/inputmode/InputModeManager;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/view/candidate/CandidateView;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/candidate/AbstractCandidateView;->mInputModeManager:Lcom/diotek/ime/framework/inputmode/InputModeManager;
 
@@ -113,7 +108,6 @@
 
 .method static synthetic access$1000(Lcom/diotek/ime/implement/view/candidate/CandidateView;)Lcom/diotek/ime/framework/common/InputManager;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/view/candidate/CandidateView;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/candidate/AbstractCandidateView;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -122,7 +116,6 @@
 
 .method static synthetic access$1100(Lcom/diotek/ime/implement/view/candidate/CandidateView;)Lcom/diotek/ime/framework/common/InputManager;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/view/candidate/CandidateView;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/candidate/AbstractCandidateView;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -131,7 +124,6 @@
 
 .method static synthetic access$1200(Lcom/diotek/ime/implement/view/candidate/CandidateView;)Lcom/diotek/ime/framework/common/InputManager;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/view/candidate/CandidateView;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/candidate/AbstractCandidateView;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -140,7 +132,6 @@
 
 .method static synthetic access$1300(Lcom/diotek/ime/implement/view/candidate/CandidateView;)Lcom/diotek/ime/framework/common/InputManager;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/view/candidate/CandidateView;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/candidate/AbstractCandidateView;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -149,7 +140,6 @@
 
 .method static synthetic access$1400(Lcom/diotek/ime/implement/view/candidate/CandidateView;)Lcom/diotek/ime/framework/common/InputManager;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/view/candidate/CandidateView;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/candidate/AbstractCandidateView;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -158,7 +148,6 @@
 
 .method static synthetic access$1500(Lcom/diotek/ime/implement/view/candidate/CandidateView;)Lcom/diotek/ime/framework/common/InputManager;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/view/candidate/CandidateView;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/candidate/AbstractCandidateView;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -167,7 +156,6 @@
 
 .method static synthetic access$1600(Lcom/diotek/ime/implement/view/candidate/CandidateView;)Lcom/diotek/ime/framework/common/InputManager;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/view/candidate/CandidateView;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/candidate/AbstractCandidateView;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -176,7 +164,6 @@
 
 .method static synthetic access$1700(Lcom/diotek/ime/implement/view/candidate/CandidateView;)Lcom/diotek/ime/framework/common/InputManager;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/view/candidate/CandidateView;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/candidate/AbstractCandidateView;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -185,7 +172,6 @@
 
 .method static synthetic access$1800(Lcom/diotek/ime/implement/view/candidate/CandidateView;)Lcom/diotek/ime/framework/common/InputManager;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/view/candidate/CandidateView;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/candidate/AbstractCandidateView;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -194,7 +180,6 @@
 
 .method static synthetic access$1900(Lcom/diotek/ime/implement/view/candidate/CandidateView;)Lcom/diotek/ime/framework/common/InputManager;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/view/candidate/CandidateView;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/candidate/AbstractCandidateView;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -203,7 +188,6 @@
 
 .method static synthetic access$200(Lcom/diotek/ime/implement/view/candidate/CandidateView;)Lcom/diotek/ime/framework/common/InputManager;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/view/candidate/CandidateView;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/candidate/AbstractCandidateView;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -212,7 +196,6 @@
 
 .method static synthetic access$300(Lcom/diotek/ime/implement/view/candidate/CandidateView;)Lcom/diotek/ime/framework/common/InputManager;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/view/candidate/CandidateView;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/candidate/AbstractCandidateView;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -221,7 +204,6 @@
 
 .method static synthetic access$400(Lcom/diotek/ime/implement/view/candidate/CandidateView;)Lcom/diotek/ime/framework/common/InputManager;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/view/candidate/CandidateView;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/candidate/AbstractCandidateView;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -230,7 +212,6 @@
 
 .method static synthetic access$500(Lcom/diotek/ime/implement/view/candidate/CandidateView;)Lcom/diotek/ime/framework/common/InputManager;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/view/candidate/CandidateView;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/candidate/AbstractCandidateView;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -239,7 +220,6 @@
 
 .method static synthetic access$600(Lcom/diotek/ime/implement/view/candidate/CandidateView;)Z
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/view/candidate/CandidateView;
 
     iget-boolean v0, p0, Lcom/diotek/ime/framework/view/candidate/AbstractCandidateView;->mIsAlreadyDismissExpandPopup:Z
 
@@ -248,8 +228,6 @@
 
 .method static synthetic access$702(Lcom/diotek/ime/implement/view/candidate/CandidateView;Z)Z
     .locals 0
-    .param p0    # Lcom/diotek/ime/implement/view/candidate/CandidateView;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/view/candidate/AbstractCandidateView;->mIsAlreadyDismissExpandPopup:Z
 
@@ -258,7 +236,6 @@
 
 .method static synthetic access$800(Lcom/diotek/ime/implement/view/candidate/CandidateView;)Lcom/diotek/ime/framework/common/InputManager;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/view/candidate/CandidateView;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/candidate/AbstractCandidateView;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -267,7 +244,6 @@
 
 .method static synthetic access$900(Lcom/diotek/ime/implement/view/candidate/CandidateView;)Lcom/diotek/ime/framework/common/InputManager;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/view/candidate/CandidateView;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/candidate/AbstractCandidateView;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -278,7 +254,6 @@
 # virtual methods
 .method public dispatchTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 10
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v9, 0x1
 
@@ -1296,7 +1271,6 @@
 
 .method protected getExpandPopupHeight(I)I
     .locals 5
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -1632,7 +1606,6 @@
 
 .method public onHoverEvent(Landroid/view/MotionEvent;)Z
     .locals 10
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v3, 0x0
 
@@ -1884,7 +1857,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/candidate/AbstractCandidateView;->mInputModeManager:Lcom/diotek/ime/framework/inputmode/InputModeManager;
 
@@ -1916,7 +1888,6 @@
 
 .method protected setExpandButtonImage(Z)V
     .locals 7
-    .param p1    # Z
 
     const v6, 0x7f02003b
 

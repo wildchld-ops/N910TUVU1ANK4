@@ -37,7 +37,6 @@
 
 .method synthetic constructor <init>(Landroid/renderscript/Font$1;)V
     .locals 0
-    .param p1    # Landroid/renderscript/Font$1;
 
     invoke-direct {p0}, Landroid/renderscript/Font$FontFamily;-><init>()V
 

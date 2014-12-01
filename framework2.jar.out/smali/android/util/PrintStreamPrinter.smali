@@ -13,7 +13,6 @@
 # direct methods
 .method public constructor <init>(Ljava/io/PrintStream;)V
     .locals 0
-    .param p1    # Ljava/io/PrintStream;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -26,7 +25,6 @@
 # virtual methods
 .method public println(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/util/PrintStreamPrinter;->mPS:Ljava/io/PrintStream;
 

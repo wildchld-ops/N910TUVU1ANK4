@@ -255,9 +255,6 @@
 
 .method public getKeyIndexAndNearbyCodes(IIZ)I
     .locals 12
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     const/4 v11, 0x4
 
@@ -508,10 +505,6 @@
 
 .method public setKeyboard(Lcom/diotek/ime/framework/view/DefaultKeyboard;FFZ)[Lcom/diotek/ime/framework/view/Keyboard$Key;
     .locals 23
-    .param p1    # Lcom/diotek/ime/framework/view/DefaultKeyboard;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # Z
 
     move-object/from16 v0, p0
 

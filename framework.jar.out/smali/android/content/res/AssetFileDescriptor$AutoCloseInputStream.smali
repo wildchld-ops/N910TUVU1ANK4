@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/res/AssetFileDescriptor;)V
     .locals 2
-    .param p1    # Landroid/content/res/AssetFileDescriptor;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -101,7 +100,6 @@
 
 .method public mark(I)V
     .locals 4
-    .param p1    # I
 
     iget-wide v0, p0, Landroid/content/res/AssetFileDescriptor$AutoCloseInputStream;->mRemaining:J
 
@@ -179,7 +177,6 @@
 
 .method public read([B)I
     .locals 2
-    .param p1    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -199,9 +196,6 @@
 
 .method public read([BII)I
     .locals 5
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -310,7 +304,6 @@
 
 .method public skip(J)J
     .locals 6
-    .param p1    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

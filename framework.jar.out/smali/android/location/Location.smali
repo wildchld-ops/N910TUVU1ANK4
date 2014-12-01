@@ -90,7 +90,6 @@
 
 .method public constructor <init>(Landroid/location/Location;)V
     .locals 7
-    .param p1    # Landroid/location/Location;
 
     const-wide/16 v5, 0x0
 
@@ -157,7 +156,6 @@
 
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const-wide/16 v5, 0x0
 
@@ -224,8 +222,6 @@
 
 .method static synthetic access$002(Landroid/location/Location;J)J
     .locals 0
-    .param p0    # Landroid/location/Location;
-    .param p1    # J
 
     iput-wide p1, p0, Landroid/location/Location;->mTime:J
 
@@ -234,8 +230,6 @@
 
 .method static synthetic access$1002(Landroid/location/Location;Z)Z
     .locals 0
-    .param p0    # Landroid/location/Location;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/location/Location;->mHasAccuracy:Z
 
@@ -244,8 +238,6 @@
 
 .method static synthetic access$102(Landroid/location/Location;J)J
     .locals 0
-    .param p0    # Landroid/location/Location;
-    .param p1    # J
 
     iput-wide p1, p0, Landroid/location/Location;->mElapsedRealtimeNanos:J
 
@@ -254,8 +246,6 @@
 
 .method static synthetic access$1102(Landroid/location/Location;F)F
     .locals 0
-    .param p0    # Landroid/location/Location;
-    .param p1    # F
 
     iput p1, p0, Landroid/location/Location;->mAccuracy:F
 
@@ -264,8 +254,6 @@
 
 .method static synthetic access$1202(Landroid/location/Location;Landroid/os/Bundle;)Landroid/os/Bundle;
     .locals 0
-    .param p0    # Landroid/location/Location;
-    .param p1    # Landroid/os/Bundle;
 
     iput-object p1, p0, Landroid/location/Location;->mExtras:Landroid/os/Bundle;
 
@@ -274,8 +262,6 @@
 
 .method static synthetic access$1302(Landroid/location/Location;Z)Z
     .locals 0
-    .param p0    # Landroid/location/Location;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/location/Location;->mIsFromMockProvider:Z
 
@@ -284,8 +270,6 @@
 
 .method static synthetic access$202(Landroid/location/Location;D)D
     .locals 0
-    .param p0    # Landroid/location/Location;
-    .param p1    # D
 
     iput-wide p1, p0, Landroid/location/Location;->mLatitude:D
 
@@ -294,8 +278,6 @@
 
 .method static synthetic access$302(Landroid/location/Location;D)D
     .locals 0
-    .param p0    # Landroid/location/Location;
-    .param p1    # D
 
     iput-wide p1, p0, Landroid/location/Location;->mLongitude:D
 
@@ -304,8 +286,6 @@
 
 .method static synthetic access$402(Landroid/location/Location;Z)Z
     .locals 0
-    .param p0    # Landroid/location/Location;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/location/Location;->mHasAltitude:Z
 
@@ -314,8 +294,6 @@
 
 .method static synthetic access$502(Landroid/location/Location;D)D
     .locals 0
-    .param p0    # Landroid/location/Location;
-    .param p1    # D
 
     iput-wide p1, p0, Landroid/location/Location;->mAltitude:D
 
@@ -324,8 +302,6 @@
 
 .method static synthetic access$602(Landroid/location/Location;Z)Z
     .locals 0
-    .param p0    # Landroid/location/Location;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/location/Location;->mHasSpeed:Z
 
@@ -334,8 +310,6 @@
 
 .method static synthetic access$702(Landroid/location/Location;F)F
     .locals 0
-    .param p0    # Landroid/location/Location;
-    .param p1    # F
 
     iput p1, p0, Landroid/location/Location;->mSpeed:F
 
@@ -344,8 +318,6 @@
 
 .method static synthetic access$802(Landroid/location/Location;Z)Z
     .locals 0
-    .param p0    # Landroid/location/Location;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/location/Location;->mHasBearing:Z
 
@@ -354,8 +326,6 @@
 
 .method static synthetic access$902(Landroid/location/Location;F)F
     .locals 0
-    .param p0    # Landroid/location/Location;
-    .param p1    # F
 
     iput p1, p0, Landroid/location/Location;->mBearing:F
 
@@ -364,11 +334,6 @@
 
 .method private static computeDistanceAndBearing(DDDD[F)V
     .locals 87
-    .param p0    # D
-    .param p2    # D
-    .param p4    # D
-    .param p6    # D
-    .param p8    # [F
 
     const/16 v12, 0x14
 
@@ -891,7 +856,6 @@
 
 .method public static convert(Ljava/lang/String;)D
     .locals 21
-    .param p0    # Ljava/lang/String;
 
     if-nez p0, :cond_0
 
@@ -1288,8 +1252,6 @@
 
 .method public static convert(DI)Ljava/lang/String;
     .locals 11
-    .param p0    # D
-    .param p2    # I
 
     const/16 v10, 0x3a
 
@@ -1452,11 +1414,6 @@
 
 .method public static distanceBetween(DDDD[F)V
     .locals 2
-    .param p0    # D
-    .param p2    # D
-    .param p4    # D
-    .param p6    # D
-    .param p8    # [F
 
     if-eqz p8, :cond_0
 
@@ -1485,7 +1442,6 @@
 # virtual methods
 .method public bearingTo(Landroid/location/Location;)F
     .locals 10
-    .param p1    # Landroid/location/Location;
 
     iget-object v9, p0, Landroid/location/Location;->mResults:[F
 
@@ -1596,7 +1552,6 @@
 
 .method public distanceTo(Landroid/location/Location;)F
     .locals 10
-    .param p1    # Landroid/location/Location;
 
     iget-object v9, p0, Landroid/location/Location;->mResults:[F
 
@@ -1699,8 +1654,6 @@
 
 .method public dump(Landroid/util/Printer;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Landroid/util/Printer;
-    .param p2    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -1761,7 +1714,6 @@
 
 .method public getExtraLocation(Ljava/lang/String;)Landroid/location/Location;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Landroid/location/Location;->mExtras:Landroid/os/Bundle;
 
@@ -2073,7 +2025,6 @@
 
 .method public set(Landroid/location/Location;)V
     .locals 2
-    .param p1    # Landroid/location/Location;
 
     iget-object v0, p1, Landroid/location/Location;->mProvider:Ljava/lang/String;
 
@@ -2154,7 +2105,6 @@
 
 .method public setAccuracy(F)V
     .locals 1
-    .param p1    # F
 
     iput p1, p0, Landroid/location/Location;->mAccuracy:F
 
@@ -2167,7 +2117,6 @@
 
 .method public setAltitude(D)V
     .locals 1
-    .param p1    # D
 
     iput-wide p1, p0, Landroid/location/Location;->mAltitude:D
 
@@ -2180,7 +2129,6 @@
 
 .method public setBearing(F)V
     .locals 2
-    .param p1    # F
 
     const/high16 v1, 0x43b40000
 
@@ -2217,7 +2165,6 @@
 
 .method public setElapsedRealtimeNanos(J)V
     .locals 0
-    .param p1    # J
 
     iput-wide p1, p0, Landroid/location/Location;->mElapsedRealtimeNanos:J
 
@@ -2226,8 +2173,6 @@
 
 .method public setExtraLocation(Ljava/lang/String;Landroid/location/Location;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/location/Location;
 
     iget-object v0, p0, Landroid/location/Location;->mExtras:Landroid/os/Bundle;
 
@@ -2249,7 +2194,6 @@
 
 .method public setExtras(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     if-nez p1, :cond_0
 
@@ -2270,7 +2214,6 @@
 
 .method public setIsFromMockProvider(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/location/Location;->mIsFromMockProvider:Z
 
@@ -2279,7 +2222,6 @@
 
 .method public setLatitude(D)V
     .locals 0
-    .param p1    # D
 
     iput-wide p1, p0, Landroid/location/Location;->mLatitude:D
 
@@ -2288,7 +2230,6 @@
 
 .method public setLongitude(D)V
     .locals 0
-    .param p1    # D
 
     iput-wide p1, p0, Landroid/location/Location;->mLongitude:D
 
@@ -2297,7 +2238,6 @@
 
 .method public setProvider(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/location/Location;->mProvider:Ljava/lang/String;
 
@@ -2306,7 +2246,6 @@
 
 .method public setSpeed(F)V
     .locals 1
-    .param p1    # F
 
     iput p1, p0, Landroid/location/Location;->mSpeed:F
 
@@ -2319,7 +2258,6 @@
 
 .method public setTime(J)V
     .locals 0
-    .param p1    # J
 
     iput-wide p1, p0, Landroid/location/Location;->mTime:J
 
@@ -2530,8 +2468,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 5
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     const/4 v1, 0x1
 

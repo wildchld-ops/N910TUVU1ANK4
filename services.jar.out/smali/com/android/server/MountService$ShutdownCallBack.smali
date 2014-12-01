@@ -25,8 +25,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/MountService;Ljava/lang/String;Landroid/os/storage/IMountShutdownObserver;)V
     .locals 2
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/os/storage/IMountShutdownObserver;
 
     const/4 v1, 0x1
 
@@ -47,9 +45,6 @@
 
 .method constructor <init>(Lcom/android/server/MountService;Ljava/lang/String;Landroid/os/storage/IMountShutdownObserver;Z)V
     .locals 2
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/os/storage/IMountShutdownObserver;
-    .param p4    # Z
 
     const/4 v1, 0x0
 

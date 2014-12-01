@@ -27,7 +27,6 @@
 # virtual methods
 .method public createService(Landroid/app/ContextImpl;)Ljava/lang/Object;
     .locals 2
-    .param p1    # Landroid/app/ContextImpl;
 
     new-instance v0, Landroid/hardware/scontext/SContextManager;
 

@@ -42,7 +42,6 @@
 
 .method private constructor <init>(Lcom/sec/android/glview/TwGLContext;)V
     .locals 2
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
 
     const/4 v1, 0x0
 
@@ -221,7 +220,6 @@
 
 .method public static declared-synchronized getInstance(Lcom/sec/android/glview/TwGLContext;)Lcom/sec/android/glview/TwGLPreviewData;
     .locals 2
-    .param p0    # Lcom/sec/android/glview/TwGLContext;
 
     const-class v1, Lcom/sec/android/glview/TwGLPreviewData;
 
@@ -519,9 +517,6 @@
 
 .method public declared-synchronized setPreviewData(II[B)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [B
 
     monitor-enter p0
 

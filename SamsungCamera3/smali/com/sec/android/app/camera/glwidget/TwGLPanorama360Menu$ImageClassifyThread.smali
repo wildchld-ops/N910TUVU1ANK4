@@ -33,8 +33,6 @@
 # direct methods
 .method public constructor <init>(Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu;Landroid/graphics/Bitmap;Lcom/sec/android/app/camera/panorama360/core/MorphoImageStitcher;)V
     .locals 2
-    .param p2    # Landroid/graphics/Bitmap;
-    .param p3    # Lcom/sec/android/app/camera/panorama360/core/MorphoImageStitcher;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$ImageClassifyThread;->this$0:Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu;
 
@@ -192,10 +190,6 @@
 
 .method public setInputData([BIILjava/lang/String;)V
     .locals 2
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
 
     const-string v0, "TwGLPanorama360Menu"
 

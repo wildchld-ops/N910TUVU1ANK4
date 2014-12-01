@@ -33,7 +33,6 @@
 # virtual methods
 .method public addGeofences([Landroid/hardware/location/GeofenceHardwareRequestParcelable;)V
     .locals 1
-    .param p1    # [Landroid/hardware/location/GeofenceHardwareRequestParcelable;
 
     iget-object v0, p0, Lcom/android/server/location/FlpHardwareProvider$2;->this$0:Lcom/android/server/location/FlpHardwareProvider;
 
@@ -58,12 +57,6 @@
 
 .method public modifyGeofenceOptions(IIIIII)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     iget-object v0, p0, Lcom/android/server/location/FlpHardwareProvider$2;->this$0:Lcom/android/server/location/FlpHardwareProvider;
 
@@ -87,7 +80,6 @@
 
 .method public pauseMonitoringGeofence(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/location/FlpHardwareProvider$2;->this$0:Lcom/android/server/location/FlpHardwareProvider;
 
@@ -99,7 +91,6 @@
 
 .method public removeGeofences([I)V
     .locals 1
-    .param p1    # [I
 
     iget-object v0, p0, Lcom/android/server/location/FlpHardwareProvider$2;->this$0:Lcom/android/server/location/FlpHardwareProvider;
 
@@ -111,8 +102,6 @@
 
 .method public resumeMonitoringGeofence(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/server/location/FlpHardwareProvider$2;->this$0:Lcom/android/server/location/FlpHardwareProvider;
 

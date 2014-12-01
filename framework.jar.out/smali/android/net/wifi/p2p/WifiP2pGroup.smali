@@ -99,7 +99,6 @@
 
 .method public constructor <init>(Landroid/net/wifi/p2p/WifiP2pGroup;)V
     .locals 4
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pGroup;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -189,7 +188,6 @@
 
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 12
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;
@@ -507,7 +505,6 @@
 # virtual methods
 .method public addClient(Landroid/net/wifi/p2p/WifiP2pDevice;)V
     .locals 4
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pDevice;
 
     iget-object v3, p0, Landroid/net/wifi/p2p/WifiP2pGroup;->mClients:Ljava/util/List;
 
@@ -565,7 +562,6 @@
 
 .method public addClient(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Landroid/net/wifi/p2p/WifiP2pDevice;
 
@@ -578,7 +574,6 @@
 
 .method public contains(Landroid/net/wifi/p2p/WifiP2pDevice;)Z
     .locals 2
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pDevice;
 
     iget-object v1, p0, Landroid/net/wifi/p2p/WifiP2pGroup;->mClients:Ljava/util/List;
 
@@ -767,7 +762,6 @@
 
 .method public removeClient(Landroid/net/wifi/p2p/WifiP2pDevice;)Z
     .locals 2
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pDevice;
 
     iget-object v1, p0, Landroid/net/wifi/p2p/WifiP2pGroup;->mClients:Ljava/util/List;
 
@@ -796,7 +790,6 @@
 
 .method public removeClient(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Landroid/net/wifi/p2p/WifiP2pGroup;->mClients:Ljava/util/List;
 
@@ -829,7 +822,6 @@
 
 .method public setFrequency(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/net/wifi/p2p/WifiP2pGroup;->mFrequency:I
 
@@ -838,7 +830,6 @@
 
 .method public setInterface(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/net/wifi/p2p/WifiP2pGroup;->mInterface:Ljava/lang/String;
 
@@ -847,7 +838,6 @@
 
 .method public setIsGroupOwner(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/net/wifi/p2p/WifiP2pGroup;->mIsGroupOwner:Z
 
@@ -856,7 +846,6 @@
 
 .method public setNetworkId(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/net/wifi/p2p/WifiP2pGroup;->mNetId:I
 
@@ -865,7 +854,6 @@
 
 .method public setNetworkName(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/net/wifi/p2p/WifiP2pGroup;->mNetworkName:Ljava/lang/String;
 
@@ -874,7 +862,6 @@
 
 .method public setOwner(Landroid/net/wifi/p2p/WifiP2pDevice;)V
     .locals 0
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pDevice;
 
     iput-object p1, p0, Landroid/net/wifi/p2p/WifiP2pGroup;->mOwner:Landroid/net/wifi/p2p/WifiP2pDevice;
 
@@ -883,7 +870,6 @@
 
 .method public setPassphrase(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/net/wifi/p2p/WifiP2pGroup;->mPassphrase:Ljava/lang/String;
 
@@ -1015,8 +1001,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 4
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v2, p0, Landroid/net/wifi/p2p/WifiP2pGroup;->mNetworkName:Ljava/lang/String;
 

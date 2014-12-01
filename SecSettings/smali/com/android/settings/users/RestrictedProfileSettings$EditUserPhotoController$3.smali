@@ -52,7 +52,6 @@
 # virtual methods
 .method protected varargs doInBackground([Ljava/lang/Void;)Landroid/graphics/Bitmap;
     .locals 15
-    .param p1    # [Ljava/lang/Void;
 
     iget-boolean v11, p0, Lcom/android/settings/users/RestrictedProfileSettings$EditUserPhotoController$3;->val$cropped:Z
 
@@ -226,7 +225,6 @@
 
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [Ljava/lang/Void;
 
@@ -239,7 +237,6 @@
 
 .method protected onPostExecute(Landroid/graphics/Bitmap;)V
     .locals 4
-    .param p1    # Landroid/graphics/Bitmap;
 
     if-eqz p1, :cond_1
 
@@ -381,7 +378,6 @@
 
 .method protected bridge synthetic onPostExecute(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Landroid/graphics/Bitmap;
 

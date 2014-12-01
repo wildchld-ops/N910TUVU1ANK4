@@ -558,7 +558,6 @@
 
 .method private SetFirstTimePhonepassword(Landroid/content/Intent;)V
     .locals 4
-    .param p1    # Landroid/content/Intent;
 
     sget-object v0, Lcom/android/settings/MasterClearConfirm$2;->$SwitchMap$com$android$settings$MasterClearConfirm$PWState:[I
 
@@ -708,7 +707,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/MasterClearConfirm;)V
     .locals 0
-    .param p0    # Lcom/android/settings/MasterClearConfirm;
 
     invoke-direct {p0}, Lcom/android/settings/MasterClearConfirm;->storeResetDate()V
 
@@ -717,7 +715,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/MasterClearConfirm;)V
     .locals 0
-    .param p0    # Lcom/android/settings/MasterClearConfirm;
 
     invoke-direct {p0}, Lcom/android/settings/MasterClearConfirm;->DoMasterReset()V
 
@@ -726,7 +723,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/MasterClearConfirm;)V
     .locals 0
-    .param p0    # Lcom/android/settings/MasterClearConfirm;
 
     invoke-direct {p0}, Lcom/android/settings/MasterClearConfirm;->StartPassword()V
 
@@ -1079,8 +1075,6 @@
 
 .method public isIntentExists(Landroid/content/Context;Landroid/content/Intent;)Z
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     const/4 v2, 0x0
 
@@ -1148,9 +1142,6 @@
 
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const/4 v2, -0x1
 
@@ -1211,7 +1202,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v2, 0x0
 
@@ -1253,9 +1243,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 2
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const v0, 0x7f040148
 
@@ -1313,10 +1300,6 @@
 
 .method protected queryPhonepassword(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
 
     new-instance v0, Landroid/content/Intent;
 

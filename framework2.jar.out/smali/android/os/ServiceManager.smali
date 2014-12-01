@@ -44,8 +44,6 @@
 
 .method public static addService(Ljava/lang/String;Landroid/os/IBinder;)V
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Landroid/os/IBinder;
 
     :try_start_0
     invoke-static {}, Landroid/os/ServiceManager;->getIServiceManager()Landroid/os/IServiceManager;
@@ -75,9 +73,6 @@
 
 .method public static addService(Ljava/lang/String;Landroid/os/IBinder;Z)V
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Z
 
     :try_start_0
     invoke-static {}, Landroid/os/ServiceManager;->getIServiceManager()Landroid/os/IServiceManager;
@@ -105,7 +100,6 @@
 
 .method public static checkService(Ljava/lang/String;)Landroid/os/IBinder;
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     :try_start_0
     sget-object v2, Landroid/os/ServiceManager;->sCache:Ljava/util/HashMap;
@@ -178,7 +172,6 @@
 
 .method public static getService(Ljava/lang/String;)Landroid/os/IBinder;
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     :try_start_0
     sget-object v2, Landroid/os/ServiceManager;->sCache:Ljava/util/HashMap;

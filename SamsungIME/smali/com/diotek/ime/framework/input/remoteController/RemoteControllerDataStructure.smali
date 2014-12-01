@@ -483,7 +483,6 @@
 
 .method public computeNearstColumnIndex(I)I
     .locals 9
-    .param p1    # I
 
     const/4 v4, 0x0
 
@@ -607,7 +606,6 @@
 
 .method public computeNearstColumnIndexForMinikeyboard(I)I
     .locals 9
-    .param p1    # I
 
     const/4 v4, 0x0
 
@@ -1142,8 +1140,6 @@
 
 .method public initializeForMinikeyboard(Ljava/util/List;II)V
     .locals 2
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1189,7 +1185,6 @@
 
 .method public isThisKeyNotInvisible(I)Z
     .locals 1
-    .param p1    # I
 
     const/4 v0, -0x1
 
@@ -1699,7 +1694,6 @@
 
 .method public setmRowCount(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/diotek/ime/framework/input/remoteController/RemoteControllerDataStructure;->mRowCount:I
 
@@ -1708,7 +1702,6 @@
 
 .method public setmRowCountForMinikeyboard(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/diotek/ime/framework/input/remoteController/RemoteControllerDataStructure;->mRowCountForMinikeyboard:I
 

@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Lcom/android/settings/mirrorlink/MirrorLink;Lcom/android/settings/mirrorlink/MirrorLink$1;)V
     .locals 0
-    .param p1    # Lcom/android/settings/mirrorlink/MirrorLink;
-    .param p2    # Lcom/android/settings/mirrorlink/MirrorLink$1;
 
     invoke-direct {p0, p1}, Lcom/android/settings/mirrorlink/MirrorLink$TetherChangeReceiver;-><init>(Lcom/android/settings/mirrorlink/MirrorLink;)V
 
@@ -43,8 +41,6 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 8
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     const/4 v6, 0x0
 

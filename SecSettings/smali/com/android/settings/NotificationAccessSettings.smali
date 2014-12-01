@@ -97,7 +97,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/NotificationAccessSettings;)Ljava/util/HashSet;
     .locals 1
-    .param p0    # Lcom/android/settings/NotificationAccessSettings;
 
     iget-object v0, p0, Lcom/android/settings/NotificationAccessSettings;->mEnabledListeners:Ljava/util/HashSet;
 
@@ -106,7 +105,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/NotificationAccessSettings;)Landroid/content/pm/PackageManager;
     .locals 1
-    .param p0    # Lcom/android/settings/NotificationAccessSettings;
 
     iget-object v0, p0, Lcom/android/settings/NotificationAccessSettings;->mPM:Landroid/content/pm/PackageManager;
 
@@ -115,7 +113,6 @@
 
 .method private static getListeners(Landroid/widget/ArrayAdapter;Landroid/content/pm/PackageManager;)I
     .locals 11
-    .param p1    # Landroid/content/pm/PackageManager;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -262,7 +259,6 @@
 
 .method public static getListenersCount(Landroid/content/pm/PackageManager;)I
     .locals 1
-    .param p0    # Landroid/content/pm/PackageManager;
 
     const/4 v0, 0x0
 
@@ -277,7 +273,6 @@
 # virtual methods
 .method isListenerEnabled(Landroid/content/pm/ServiceInfo;)Z
     .locals 3
-    .param p1    # Landroid/content/pm/ServiceInfo;
 
     new-instance v0, Landroid/content/ComponentName;
 
@@ -357,7 +352,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -396,9 +390,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 2
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const v0, 0x7f040164
 
@@ -413,10 +404,6 @@
 
 .method public onListItemClick(Landroid/widget/ListView;Landroid/view/View;IJ)V
     .locals 5
-    .param p1    # Landroid/widget/ListView;
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
 
     iget-object v2, p0, Lcom/android/settings/NotificationAccessSettings;->mList:Lcom/android/settings/NotificationAccessSettings$ListenerListAdapter;
 

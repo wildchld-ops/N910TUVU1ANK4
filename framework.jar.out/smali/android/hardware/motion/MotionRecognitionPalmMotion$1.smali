@@ -21,7 +21,6 @@
 # direct methods
 .method constructor <init>(Landroid/hardware/motion/MotionRecognitionPalmMotion;Landroid/os/Handler;)V
     .locals 0
-    .param p2    # Landroid/os/Handler;
 
     iput-object p1, p0, Landroid/hardware/motion/MotionRecognitionPalmMotion$1;->this$0:Landroid/hardware/motion/MotionRecognitionPalmMotion;
 
@@ -34,7 +33,6 @@
 # virtual methods
 .method public onChange(Z)V
     .locals 7
-    .param p1    # Z
 
     const/4 v6, 0x0
 

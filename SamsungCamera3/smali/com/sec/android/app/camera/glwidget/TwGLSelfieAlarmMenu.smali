@@ -506,11 +506,6 @@
 
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;ILcom/sec/android/glview/TwGLViewGroup;Lcom/sec/android/app/camera/MenuResourceDepot;I)V
     .locals 8
-    .param p1    # Lcom/sec/android/app/camera/Camera;
-    .param p2    # I
-    .param p3    # Lcom/sec/android/glview/TwGLViewGroup;
-    .param p4    # Lcom/sec/android/app/camera/MenuResourceDepot;
-    .param p5    # I
 
     const/4 v5, 0x6
 
@@ -837,7 +832,6 @@
 
 .method static synthetic access$000(Lcom/sec/android/app/camera/glwidget/TwGLSelfieAlarmMenu;)Lcom/sec/android/app/camera/glwidget/TwGLSelfieAlarmMenu$OnBurstCaptureCancelListener;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLSelfieAlarmMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLSelfieAlarmMenu;->mListener:Lcom/sec/android/app/camera/glwidget/TwGLSelfieAlarmMenu$OnBurstCaptureCancelListener;
 
@@ -846,7 +840,6 @@
 
 .method static synthetic access$100(Lcom/sec/android/app/camera/glwidget/TwGLSelfieAlarmMenu;)I
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLSelfieAlarmMenu;
 
     iget v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLSelfieAlarmMenu;->mStoreCount:I
 
@@ -855,8 +848,6 @@
 
 .method static synthetic access$102(Lcom/sec/android/app/camera/glwidget/TwGLSelfieAlarmMenu;I)I
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLSelfieAlarmMenu;
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLSelfieAlarmMenu;->mStoreCount:I
 
@@ -865,7 +856,6 @@
 
 .method static synthetic access$200(Lcom/sec/android/app/camera/glwidget/TwGLSelfieAlarmMenu;)I
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLSelfieAlarmMenu;
 
     iget v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLSelfieAlarmMenu;->mCaptureCount:I
 
@@ -874,7 +864,6 @@
 
 .method static synthetic access$300(Lcom/sec/android/app/camera/glwidget/TwGLSelfieAlarmMenu;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLSelfieAlarmMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLSelfieAlarmMenu;->mBurstMsgHandler:Landroid/os/Handler;
 
@@ -883,8 +872,6 @@
 
 .method private checkShotROIState([II)I
     .locals 6
-    .param p1    # [I
-    .param p2    # I
 
     const/4 v1, 0x4
 
@@ -976,8 +963,6 @@
 
 .method private getSelfieGuideBoxResizeRange(Landroid/graphics/Rect;I)F
     .locals 3
-    .param p1    # Landroid/graphics/Rect;
-    .param p2    # I
 
     const v2, 0x3f666666
 
@@ -1107,11 +1092,6 @@
 
 .method private declared-synchronized resizeSelfieGuide(IFFFF)V
     .locals 8
-    .param p1    # I
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
 
     const/4 v6, 0x0
 
@@ -1717,8 +1697,6 @@
 
 .method private setSelectedSelfieGuide(FF)V
     .locals 10
-    .param p1    # F
-    .param p2    # F
 
     const/4 v9, 0x0
 
@@ -2121,8 +2099,6 @@
 
 .method public deNormalize(FI)F
     .locals 2
-    .param p1    # F
-    .param p2    # I
 
     const/high16 v0, 0x447a0000
 
@@ -2467,8 +2443,6 @@
 
 .method public onCameraSettingsChanged(II)V
     .locals 10
-    .param p1    # I
-    .param p2    # I
 
     const/4 v9, 0x0
 
@@ -2776,7 +2750,6 @@
 
 .method public onOrientationChanged(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLSelfieAlarmMenu;->mOrientation:I
 
@@ -3024,8 +2997,6 @@
 
 .method public onTouch(Lcom/sec/android/glview/TwGLView;Landroid/view/MotionEvent;)Z
     .locals 10
-    .param p1    # Lcom/sec/android/glview/TwGLView;
-    .param p2    # Landroid/view/MotionEvent;
 
     const/4 v8, 0x3
 
@@ -3801,7 +3772,6 @@
 
 .method public declared-synchronized selfieAlarmFDRectChanged([Lcom/sec/android/seccamera/SecCamera$Face;)V
     .locals 16
-    .param p1    # [Lcom/sec/android/seccamera/SecCamera$Face;
 
     monitor-enter p0
 
@@ -4493,7 +4463,6 @@
 
 .method public setBurstCapturing(Z)V
     .locals 1
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLSelfieAlarmMenu;->mIsBurstCapturing:Z
 
@@ -4652,7 +4621,6 @@
 
 .method public setNeedToResize(Z)V
     .locals 3
-    .param p1    # Z
 
     const-string v0, "TwGLSelfieAlarmMenu"
 
@@ -4683,7 +4651,6 @@
 
 .method public setOnBurstCaptureCancelledListener(Lcom/sec/android/app/camera/glwidget/TwGLSelfieAlarmMenu$OnBurstCaptureCancelListener;)V
     .locals 0
-    .param p1    # Lcom/sec/android/app/camera/glwidget/TwGLSelfieAlarmMenu$OnBurstCaptureCancelListener;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLSelfieAlarmMenu;->mListener:Lcom/sec/android/app/camera/glwidget/TwGLSelfieAlarmMenu$OnBurstCaptureCancelListener;
 
@@ -4692,7 +4659,6 @@
 
 .method public setPostCaptureProgress(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "TwGLSelfieAlarmMenu"
 
@@ -4721,7 +4687,6 @@
 
 .method public setPostCaptureProgressMax(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLSelfieAlarmMenu;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -4745,7 +4710,6 @@
 
 .method public setSelfieAlarmMode(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLSelfieAlarmMenu;->mSelfieAlarmMode:Z
 

@@ -134,8 +134,6 @@
 
 .method private growArray([Landroid/graphics/Rect;I)[Landroid/graphics/Rect;
     .locals 3
-    .param p1    # [Landroid/graphics/Rect;
-    .param p2    # I
 
     const/4 v2, 0x0
 
@@ -150,7 +148,6 @@
 
 .method private isBelowSpace(I)Z
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Lcom/diotek/ime/framework/view/tracker/ProximityKeyDetector;->mSpaceY:I
 
@@ -169,8 +166,6 @@
 
 .method private isValidArea(II)Z
     .locals 5
-    .param p1    # I
-    .param p2    # I
 
     iget-object v4, p0, Lcom/diotek/ime/framework/view/tracker/ProximityKeyDetector;->mValidArea:[Landroid/graphics/Rect;
 
@@ -734,9 +729,6 @@
 
 .method public getKeyIndexAndNearbyCodes(IIZ)I
     .locals 16
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     invoke-virtual/range {p0 .. p1}, Lcom/diotek/ime/framework/view/tracker/KeyDetector;->getTouchX(I)I
 
@@ -1435,10 +1427,6 @@
 
 .method public setKeyboard(Lcom/diotek/ime/framework/view/DefaultKeyboard;FFZ)[Lcom/diotek/ime/framework/view/Keyboard$Key;
     .locals 2
-    .param p1    # Lcom/diotek/ime/framework/view/DefaultKeyboard;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # Z
 
     invoke-super {p0, p1, p2, p3, p4}, Lcom/diotek/ime/framework/view/tracker/KeyDetector;->setKeyboard(Lcom/diotek/ime/framework/view/DefaultKeyboard;FFZ)[Lcom/diotek/ime/framework/view/Keyboard$Key;
 

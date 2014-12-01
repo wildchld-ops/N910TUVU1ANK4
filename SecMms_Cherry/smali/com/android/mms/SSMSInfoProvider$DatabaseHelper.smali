@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     const-string v0, "ssms.db"
 
@@ -38,7 +37,6 @@
 # virtual methods
 .method public onCreate(Landroid/database/sqlite/SQLiteDatabase;)V
     .locals 1
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
 
     const-string v0, "CREATE TABLE IF NOT EXISTS ssms (_id INTEGER PRIMARY KEY AUTOINCREMENT,ssms_enable BOOLEAN,ssms_state INTEGER,product_code TEXT,product_info INTEGER);"
 
@@ -49,9 +47,6 @@
 
 .method public onUpgrade(Landroid/database/sqlite/SQLiteDatabase;II)V
     .locals 1
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p2    # I
-    .param p3    # I
 
     const-string v0, "DROP TABLE IF EXISTS ssms"
 

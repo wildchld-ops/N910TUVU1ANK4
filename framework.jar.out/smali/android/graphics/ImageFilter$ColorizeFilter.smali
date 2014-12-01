@@ -27,7 +27,6 @@
 
 .method synthetic constructor <init>(Landroid/graphics/ImageFilter$1;)V
     .locals 0
-    .param p1    # Landroid/graphics/ImageFilter$1;
 
     invoke-direct {p0}, Landroid/graphics/ImageFilter$ColorizeFilter;-><init>()V
 
@@ -38,7 +37,6 @@
 # virtual methods
 .method public setBlendRatio(F)V
     .locals 3
-    .param p1    # F
 
     const/4 v0, 0x4
 
@@ -61,10 +59,6 @@
 
 .method public setColor(FFFF)V
     .locals 4
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
 
     const/high16 v3, 0x3f800000
 

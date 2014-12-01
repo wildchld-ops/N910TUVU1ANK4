@@ -139,8 +139,6 @@
 
 .method public init(IZ)V
     .locals 1
-    .param p1    # I
-    .param p2    # Z
 
     iput-boolean p2, p0, Lcom/diotek/ime/framework/input/autospace/AutoSpaceController;->mIsAutoSpace:Z
 
@@ -187,8 +185,6 @@
 
 .method public isEnableAutoSpace(IZ)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Z
 
     const/high16 v3, 0x69770000
 
@@ -376,7 +372,6 @@
 
 .method public isEnableAutoSpaceAfterPunctuation(I)Z
     .locals 3
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -485,7 +480,6 @@
 
 .method public isEnableAutoSpaceAtSymbol(I)Z
     .locals 4
-    .param p1    # I
 
     const/high16 v3, 0x69770000
 
@@ -737,7 +731,6 @@
 
 .method public setAutoSpaceOn(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/input/autospace/AutoSpaceController;->mIsAutoSpacePreference:Z
 
@@ -746,8 +739,6 @@
 
 .method public setUpAutoSpace(IZ)V
     .locals 6
-    .param p1    # I
-    .param p2    # Z
 
     const/high16 v5, 0x69770000
 
@@ -972,7 +963,6 @@
 
 .method public setUpAutoSpace(Ljava/lang/CharSequence;)V
     .locals 3
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v2, 0x0
 

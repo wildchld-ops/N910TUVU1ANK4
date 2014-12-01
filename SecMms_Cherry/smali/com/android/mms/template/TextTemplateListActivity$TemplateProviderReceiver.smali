@@ -37,8 +37,6 @@
 
 .method synthetic constructor <init>(Lcom/android/mms/template/TextTemplateListActivity;Lcom/android/mms/template/TextTemplateListActivity$1;)V
     .locals 0
-    .param p1    # Lcom/android/mms/template/TextTemplateListActivity;
-    .param p2    # Lcom/android/mms/template/TextTemplateListActivity$1;
 
     invoke-direct {p0, p1}, Lcom/android/mms/template/TextTemplateListActivity$TemplateProviderReceiver;-><init>(Lcom/android/mms/template/TextTemplateListActivity;)V
 
@@ -57,8 +55,6 @@
 
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     if-eqz p2, :cond_0
 
@@ -139,7 +135,6 @@
 
 .method public setRegistered(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/template/TextTemplateListActivity$TemplateProviderReceiver;->mIsRegistered:Z
 

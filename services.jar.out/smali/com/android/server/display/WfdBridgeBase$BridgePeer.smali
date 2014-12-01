@@ -41,8 +41,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/display/WfdBridgeBase;Ljava/net/Socket;Lcom/android/server/display/WfdBridgeBase$WBPMsgHandler;)V
     .locals 4
-    .param p2    # Ljava/net/Socket;
-    .param p3    # Lcom/android/server/display/WfdBridgeBase$WBPMsgHandler;
 
     iput-object p1, p0, Lcom/android/server/display/WfdBridgeBase$BridgePeer;->this$0:Lcom/android/server/display/WfdBridgeBase;
 
@@ -381,7 +379,6 @@
 
 .method public send(Ljava/lang/String;)I
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "WfdBridgeBase::BridgePeer"
 

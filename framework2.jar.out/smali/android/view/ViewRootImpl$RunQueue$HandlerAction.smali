@@ -31,7 +31,6 @@
 
 .method synthetic constructor <init>(Landroid/view/ViewRootImpl$1;)V
     .locals 0
-    .param p1    # Landroid/view/ViewRootImpl$1;
 
     invoke-direct {p0}, Landroid/view/ViewRootImpl$RunQueue$HandlerAction;-><init>()V
 
@@ -42,7 +41,6 @@
 # virtual methods
 .method public equals(Ljava/lang/Object;)Z
     .locals 5
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x1
 

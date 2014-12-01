@@ -43,8 +43,6 @@
 # direct methods
 .method public constructor <init>(ILjava/lang/String;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -109,7 +107,6 @@
 
 .method static synthetic access$1000(Landroid/net/wifi/WifiStateTracker;)Landroid/net/NetworkInfo$State;
     .locals 1
-    .param p0    # Landroid/net/wifi/WifiStateTracker;
 
     iget-object v0, p0, Landroid/net/wifi/WifiStateTracker;->mLastState:Landroid/net/NetworkInfo$State;
 
@@ -118,8 +115,6 @@
 
 .method static synthetic access$1002(Landroid/net/wifi/WifiStateTracker;Landroid/net/NetworkInfo$State;)Landroid/net/NetworkInfo$State;
     .locals 0
-    .param p0    # Landroid/net/wifi/WifiStateTracker;
-    .param p1    # Landroid/net/NetworkInfo$State;
 
     iput-object p1, p0, Landroid/net/wifi/WifiStateTracker;->mLastState:Landroid/net/NetworkInfo$State;
 
@@ -128,8 +123,6 @@
 
 .method static synthetic access$102(Landroid/net/wifi/WifiStateTracker;Landroid/net/NetworkInfo;)Landroid/net/NetworkInfo;
     .locals 0
-    .param p0    # Landroid/net/wifi/WifiStateTracker;
-    .param p1    # Landroid/net/NetworkInfo;
 
     iput-object p1, p0, Landroid/net/wifi/WifiStateTracker;->mNetworkInfo:Landroid/net/NetworkInfo;
 
@@ -138,7 +131,6 @@
 
 .method static synthetic access$1100(Landroid/net/wifi/WifiStateTracker;)Landroid/net/NetworkInfo;
     .locals 1
-    .param p0    # Landroid/net/wifi/WifiStateTracker;
 
     iget-object v0, p0, Landroid/net/wifi/WifiStateTracker;->mNetworkInfo:Landroid/net/NetworkInfo;
 
@@ -147,7 +139,6 @@
 
 .method static synthetic access$1200(Landroid/net/wifi/WifiStateTracker;)Landroid/net/SamplingDataTracker;
     .locals 1
-    .param p0    # Landroid/net/wifi/WifiStateTracker;
 
     iget-object v0, p0, Landroid/net/wifi/WifiStateTracker;->mSamplingDataTracker:Landroid/net/SamplingDataTracker;
 
@@ -156,7 +147,6 @@
 
 .method static synthetic access$1300(Landroid/net/wifi/WifiStateTracker;)Landroid/net/NetworkInfo;
     .locals 1
-    .param p0    # Landroid/net/wifi/WifiStateTracker;
 
     iget-object v0, p0, Landroid/net/wifi/WifiStateTracker;->mNetworkInfo:Landroid/net/NetworkInfo;
 
@@ -165,7 +155,6 @@
 
 .method static synthetic access$1400(Landroid/net/wifi/WifiStateTracker;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Landroid/net/wifi/WifiStateTracker;
 
     iget-object v0, p0, Landroid/net/wifi/WifiStateTracker;->mCsHandler:Landroid/os/Handler;
 
@@ -174,8 +163,6 @@
 
 .method static synthetic access$1502(Landroid/net/wifi/WifiStateTracker;Landroid/net/LinkProperties;)Landroid/net/LinkProperties;
     .locals 0
-    .param p0    # Landroid/net/wifi/WifiStateTracker;
-    .param p1    # Landroid/net/LinkProperties;
 
     iput-object p1, p0, Landroid/net/wifi/WifiStateTracker;->mLinkProperties:Landroid/net/LinkProperties;
 
@@ -184,7 +171,6 @@
 
 .method static synthetic access$1600(Landroid/net/wifi/WifiStateTracker;)Landroid/net/NetworkInfo;
     .locals 1
-    .param p0    # Landroid/net/wifi/WifiStateTracker;
 
     iget-object v0, p0, Landroid/net/wifi/WifiStateTracker;->mNetworkInfo:Landroid/net/NetworkInfo;
 
@@ -193,8 +179,6 @@
 
 .method static synthetic access$202(Landroid/net/wifi/WifiStateTracker;Landroid/net/LinkProperties;)Landroid/net/LinkProperties;
     .locals 0
-    .param p0    # Landroid/net/wifi/WifiStateTracker;
-    .param p1    # Landroid/net/LinkProperties;
 
     iput-object p1, p0, Landroid/net/wifi/WifiStateTracker;->mLinkProperties:Landroid/net/LinkProperties;
 
@@ -203,7 +187,6 @@
 
 .method static synthetic access$300(Landroid/net/wifi/WifiStateTracker;)Landroid/net/LinkProperties;
     .locals 1
-    .param p0    # Landroid/net/wifi/WifiStateTracker;
 
     iget-object v0, p0, Landroid/net/wifi/WifiStateTracker;->mLinkProperties:Landroid/net/LinkProperties;
 
@@ -212,8 +195,6 @@
 
 .method static synthetic access$402(Landroid/net/wifi/WifiStateTracker;Landroid/net/LinkProperties;)Landroid/net/LinkProperties;
     .locals 0
-    .param p0    # Landroid/net/wifi/WifiStateTracker;
-    .param p1    # Landroid/net/LinkProperties;
 
     iput-object p1, p0, Landroid/net/wifi/WifiStateTracker;->mLinkProperties:Landroid/net/LinkProperties;
 
@@ -222,8 +203,6 @@
 
 .method static synthetic access$502(Landroid/net/wifi/WifiStateTracker;Landroid/net/LinkCapabilities;)Landroid/net/LinkCapabilities;
     .locals 0
-    .param p0    # Landroid/net/wifi/WifiStateTracker;
-    .param p1    # Landroid/net/LinkCapabilities;
 
     iput-object p1, p0, Landroid/net/wifi/WifiStateTracker;->mLinkCapabilities:Landroid/net/LinkCapabilities;
 
@@ -232,7 +211,6 @@
 
 .method static synthetic access$600(Landroid/net/wifi/WifiStateTracker;)Landroid/net/LinkCapabilities;
     .locals 1
-    .param p0    # Landroid/net/wifi/WifiStateTracker;
 
     iget-object v0, p0, Landroid/net/wifi/WifiStateTracker;->mLinkCapabilities:Landroid/net/LinkCapabilities;
 
@@ -241,8 +219,6 @@
 
 .method static synthetic access$702(Landroid/net/wifi/WifiStateTracker;Landroid/net/LinkCapabilities;)Landroid/net/LinkCapabilities;
     .locals 0
-    .param p0    # Landroid/net/wifi/WifiStateTracker;
-    .param p1    # Landroid/net/LinkCapabilities;
 
     iput-object p1, p0, Landroid/net/wifi/WifiStateTracker;->mLinkCapabilities:Landroid/net/LinkCapabilities;
 
@@ -251,8 +227,6 @@
 
 .method static synthetic access$802(Landroid/net/wifi/WifiStateTracker;Landroid/net/wifi/WifiInfo;)Landroid/net/wifi/WifiInfo;
     .locals 0
-    .param p0    # Landroid/net/wifi/WifiStateTracker;
-    .param p1    # Landroid/net/wifi/WifiInfo;
 
     iput-object p1, p0, Landroid/net/wifi/WifiStateTracker;->mWifiInfo:Landroid/net/wifi/WifiInfo;
 
@@ -261,7 +235,6 @@
 
 .method static synthetic access$900(Landroid/net/wifi/WifiStateTracker;)Landroid/net/NetworkInfo;
     .locals 1
-    .param p0    # Landroid/net/wifi/WifiStateTracker;
 
     iget-object v0, p0, Landroid/net/wifi/WifiStateTracker;->mNetworkInfo:Landroid/net/NetworkInfo;
 
@@ -272,7 +245,6 @@
 # virtual methods
 .method public addStackedLink(Landroid/net/LinkProperties;)V
     .locals 1
-    .param p1    # Landroid/net/LinkProperties;
 
     iget-object v0, p0, Landroid/net/wifi/WifiStateTracker;->mLinkProperties:Landroid/net/LinkProperties;
 
@@ -293,14 +265,12 @@
 
 .method public captivePortalCheckCompleted(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method public defaultRouteSet(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Landroid/net/wifi/WifiStateTracker;->mDefaultRouteSet:Ljava/util/concurrent/atomic/AtomicBoolean;
 
@@ -519,7 +489,6 @@
 
 .method public privateDnsRouteSet(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Landroid/net/wifi/WifiStateTracker;->mPrivateDnsRouteSet:Ljava/util/concurrent/atomic/AtomicBoolean;
 
@@ -548,7 +517,6 @@
 
 .method public reconnectDualMMS(I)Z
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -557,7 +525,6 @@
 
 .method public removeStackedLink(Landroid/net/LinkProperties;)V
     .locals 1
-    .param p1    # Landroid/net/LinkProperties;
 
     iget-object v0, p0, Landroid/net/wifi/WifiStateTracker;->mLinkProperties:Landroid/net/LinkProperties;
 
@@ -568,28 +535,24 @@
 
 .method public setDependencyMet(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method public setPolicyDataEnable(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method public setPolicyDataEnableSecondary(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method public setRadio(Z)Z
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Landroid/net/wifi/WifiStateTracker;->mWifiManager:Landroid/net/wifi/WifiManager;
 
@@ -602,7 +565,6 @@
 
 .method public setTeardownRequested(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Landroid/net/wifi/WifiStateTracker;->mTeardownRequested:Ljava/util/concurrent/atomic/AtomicBoolean;
 
@@ -613,7 +575,6 @@
 
 .method public setUserDataEnable(Z)V
     .locals 3
-    .param p1    # Z
 
     const-string v0, "WifiStateTracker"
 
@@ -648,23 +609,18 @@
 
 .method public setUserDataEnableEx(ZI)V
     .locals 0
-    .param p1    # Z
-    .param p2    # I
 
     return-void
 .end method
 
 .method public setUserDataEnableSecondary(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method public startMonitoring(Landroid/content/Context;Landroid/os/Handler;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/Handler;
 
     iput-object p2, p0, Landroid/net/wifi/WifiStateTracker;->mCsHandler:Landroid/os/Handler;
 
@@ -713,7 +669,6 @@
 
 .method public startSampling(Landroid/net/SamplingDataTracker$SamplingSnapshot;)V
     .locals 1
-    .param p1    # Landroid/net/SamplingDataTracker$SamplingSnapshot;
 
     iget-object v0, p0, Landroid/net/wifi/WifiStateTracker;->mSamplingDataTracker:Landroid/net/SamplingDataTracker;
 
@@ -724,7 +679,6 @@
 
 .method public stopSampling(Landroid/net/SamplingDataTracker$SamplingSnapshot;)V
     .locals 1
-    .param p1    # Landroid/net/SamplingDataTracker$SamplingSnapshot;
 
     iget-object v0, p0, Landroid/net/wifi/WifiStateTracker;->mSamplingDataTracker:Landroid/net/SamplingDataTracker;
 
@@ -735,15 +689,12 @@
 
 .method public supplyMessenger(Landroid/os/Messenger;)V
     .locals 0
-    .param p1    # Landroid/os/Messenger;
 
     return-void
 .end method
 
 .method public supplyMessenger(Landroid/os/Messenger;I)V
     .locals 0
-    .param p1    # Landroid/os/Messenger;
-    .param p2    # I
 
     return-void
 .end method
@@ -766,7 +717,6 @@
 
 .method public teardownDualMMS(I)Z
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 

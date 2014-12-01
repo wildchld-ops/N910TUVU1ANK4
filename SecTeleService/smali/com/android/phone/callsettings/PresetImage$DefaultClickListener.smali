@@ -80,7 +80,7 @@
 
     const/16 v5, 0x32
 
-    invoke-virtual {v4, v1, v5}, Landroid/app/Fragment;->startActivityForResult(Landroid/content/Intent;I)V
+    invoke-virtual {v4, v1, v5}, Lcom/android/phone/callsettings/PresetImage;->startActivityForResult(Landroid/content/Intent;I)V
     :try_end_0
     .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -94,7 +94,7 @@
 
     iget-object v5, p0, Lcom/android/phone/callsettings/PresetImage$DefaultClickListener;->this$0:Lcom/android/phone/callsettings/PresetImage;
 
-    invoke-virtual {v5, v6}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {v5, v6}, Lcom/android/phone/callsettings/PresetImage;->getString(I)Ljava/lang/String;
 
     move-result-object v5
 
@@ -138,7 +138,7 @@
 
     const/16 v5, 0x34
 
-    invoke-virtual {v4, v1, v5}, Landroid/app/Fragment;->startActivityForResult(Landroid/content/Intent;I)V
+    invoke-virtual {v4, v1, v5}, Lcom/android/phone/callsettings/PresetImage;->startActivityForResult(Landroid/content/Intent;I)V
 
     goto :goto_0
 
@@ -159,7 +159,7 @@
 
     const/16 v5, 0x33
 
-    invoke-virtual {v4, v1, v5}, Landroid/app/Fragment;->startActivityForResult(Landroid/content/Intent;I)V
+    invoke-virtual {v4, v1, v5}, Lcom/android/phone/callsettings/PresetImage;->startActivityForResult(Landroid/content/Intent;I)V
     :try_end_1
     .catch Landroid/content/ActivityNotFoundException; {:try_start_1 .. :try_end_1} :catch_1
 
@@ -172,7 +172,7 @@
 
     iget-object v5, p0, Lcom/android/phone/callsettings/PresetImage$DefaultClickListener;->this$0:Lcom/android/phone/callsettings/PresetImage;
 
-    invoke-virtual {v5, v6}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {v5, v6}, Lcom/android/phone/callsettings/PresetImage;->getString(I)Ljava/lang/String;
 
     move-result-object v5
 
@@ -227,7 +227,7 @@
 
     const/16 v5, 0x35
 
-    invoke-virtual {v4, v1, v5}, Landroid/app/Fragment;->startActivityForResult(Landroid/content/Intent;I)V
+    invoke-virtual {v4, v1, v5}, Lcom/android/phone/callsettings/PresetImage;->startActivityForResult(Landroid/content/Intent;I)V
 
     goto/16 :goto_0
 
@@ -238,7 +238,7 @@
 
     const v6, 0x7f0902a2
 
-    invoke-virtual {v5, v6}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {v5, v6}, Lcom/android/phone/callsettings/PresetImage;->getString(I)Ljava/lang/String;
 
     move-result-object v5
 

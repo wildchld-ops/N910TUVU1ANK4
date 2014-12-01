@@ -33,8 +33,6 @@
 # direct methods
 .method constructor <init>(Landroid/graphics/NinePatch;Landroid/graphics/Rect;)V
     .locals 6
-    .param p1    # Landroid/graphics/NinePatch;
-    .param p2    # Landroid/graphics/Rect;
 
     const/4 v4, 0x0
 
@@ -57,9 +55,6 @@
 
 .method constructor <init>(Landroid/graphics/NinePatch;Landroid/graphics/Rect;Landroid/graphics/Rect;)V
     .locals 6
-    .param p1    # Landroid/graphics/NinePatch;
-    .param p2    # Landroid/graphics/Rect;
-    .param p3    # Landroid/graphics/Rect;
 
     const/4 v4, 0x0
 
@@ -80,11 +75,6 @@
 
 .method constructor <init>(Landroid/graphics/NinePatch;Landroid/graphics/Rect;Landroid/graphics/Rect;ZZ)V
     .locals 1
-    .param p1    # Landroid/graphics/NinePatch;
-    .param p2    # Landroid/graphics/Rect;
-    .param p3    # Landroid/graphics/Rect;
-    .param p4    # Z
-    .param p5    # Z
 
     invoke-direct {p0}, Landroid/graphics/drawable/Drawable$ConstantState;-><init>()V
 
@@ -111,7 +101,6 @@
 
 .method constructor <init>(Landroid/graphics/drawable/NinePatchDrawable$NinePatchState;)V
     .locals 1
-    .param p1    # Landroid/graphics/drawable/NinePatchDrawable$NinePatchState;
 
     invoke-direct {p0}, Landroid/graphics/drawable/Drawable$ConstantState;-><init>()V
 
@@ -186,7 +175,6 @@
 
 .method public newDrawable(Landroid/content/res/Resources;)Landroid/graphics/drawable/Drawable;
     .locals 2
-    .param p1    # Landroid/content/res/Resources;
 
     new-instance v0, Landroid/graphics/drawable/NinePatchDrawable;
 

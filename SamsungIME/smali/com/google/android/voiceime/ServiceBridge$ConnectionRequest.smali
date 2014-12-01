@@ -28,7 +28,6 @@
 # direct methods
 .method private constructor <init>(Lcom/google/android/voiceime/ServiceBridge;Ljava/lang/String;)V
     .locals 0
-    .param p2    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/google/android/voiceime/ServiceBridge$ConnectionRequest;->this$0:Lcom/google/android/voiceime/ServiceBridge;
 
@@ -41,9 +40,6 @@
 
 .method synthetic constructor <init>(Lcom/google/android/voiceime/ServiceBridge;Ljava/lang/String;Lcom/google/android/voiceime/ServiceBridge$1;)V
     .locals 0
-    .param p1    # Lcom/google/android/voiceime/ServiceBridge;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/google/android/voiceime/ServiceBridge$1;
 
     invoke-direct {p0, p1, p2}, Lcom/google/android/voiceime/ServiceBridge$ConnectionRequest;-><init>(Lcom/google/android/voiceime/ServiceBridge;Ljava/lang/String;)V
 
@@ -52,8 +48,6 @@
 
 .method static synthetic access$200(Lcom/google/android/voiceime/ServiceBridge$ConnectionRequest;Lcom/google/android/voiceime/ServiceHelper$Callback;)V
     .locals 0
-    .param p0    # Lcom/google/android/voiceime/ServiceBridge$ConnectionRequest;
-    .param p1    # Lcom/google/android/voiceime/ServiceHelper$Callback;
 
     invoke-direct {p0, p1}, Lcom/google/android/voiceime/ServiceBridge$ConnectionRequest;->setServiceCallback(Lcom/google/android/voiceime/ServiceHelper$Callback;)V
 
@@ -62,7 +56,6 @@
 
 .method private setServiceCallback(Lcom/google/android/voiceime/ServiceHelper$Callback;)V
     .locals 0
-    .param p1    # Lcom/google/android/voiceime/ServiceHelper$Callback;
 
     iput-object p1, p0, Lcom/google/android/voiceime/ServiceBridge$ConnectionRequest;->mServiceCallback:Lcom/google/android/voiceime/ServiceHelper$Callback;
 
@@ -73,8 +66,6 @@
 # virtual methods
 .method public onServiceConnected(Landroid/content/ComponentName;Landroid/os/IBinder;)V
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Landroid/os/IBinder;
 
     check-cast p2, Lcom/google/android/voiceime/ServiceHelper$ServiceHelperBinder;
 
@@ -93,7 +84,6 @@
 
 .method public onServiceDisconnected(Landroid/content/ComponentName;)V
     .locals 0
-    .param p1    # Landroid/content/ComponentName;
 
     return-void
 .end method

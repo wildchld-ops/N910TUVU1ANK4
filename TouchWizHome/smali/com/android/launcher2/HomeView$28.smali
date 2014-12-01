@@ -37,7 +37,6 @@
 # virtual methods
 .method public onAnimationEnd(Landroid/animation/Animator;)V
     .locals 2
-    .param p1    # Landroid/animation/Animator;
 
     const/16 v1, 0x8
 
@@ -112,7 +111,6 @@
 
 .method public onAnimationStart(Landroid/animation/Animator;)V
     .locals 2
-    .param p1    # Landroid/animation/Animator;
 
     # getter for: Lcom/android/launcher2/HomeView;->cpuBooster:Landroid/os/DVFSHelper;
     invoke-static {}, Lcom/android/launcher2/HomeView;->access$500()Landroid/os/DVFSHelper;

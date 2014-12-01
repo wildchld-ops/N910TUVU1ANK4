@@ -47,10 +47,6 @@
 
 .method private constructor <init>(Ljava/lang/String;III)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -137,11 +133,6 @@
 
 .method private constructor <init>(Ljava/lang/String;III[B)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # [B
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/server/connectivity/VpnNamespace$VpnNetIf;-><init>(Ljava/lang/String;III)V
 
@@ -152,7 +143,6 @@
 
 .method static readObject(Ljava/io/DataInputStream;)Lcom/android/server/connectivity/VpnNamespace$VpnNetIf;
     .locals 10
-    .param p0    # Ljava/io/DataInputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

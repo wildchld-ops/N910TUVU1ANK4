@@ -100,7 +100,6 @@
 
 .method public addItem(Lcom/samsung/android/sdk/look/airbutton/SlookAirButtonAdapter$AirButtonItem;)V
     .locals 1
-    .param p1    # Lcom/samsung/android/sdk/look/airbutton/SlookAirButtonAdapter$AirButtonItem;
 
     iget-object v0, p0, Lcom/samsung/android/sdk/look/airbutton/SlookAirButtonAdapter;->mItemList:Ljava/util/ArrayList;
 
@@ -170,7 +169,6 @@
 
 .method public getItem(I)Lcom/samsung/android/sdk/look/airbutton/SlookAirButtonAdapter$AirButtonItem;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/samsung/android/sdk/look/airbutton/SlookAirButtonAdapter;->mItemList:Ljava/util/ArrayList;
 
@@ -203,8 +201,6 @@
 
 .method public insertItem(ILcom/samsung/android/sdk/look/airbutton/SlookAirButtonAdapter$AirButtonItem;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Lcom/samsung/android/sdk/look/airbutton/SlookAirButtonAdapter$AirButtonItem;
 
     iget-object v0, p0, Lcom/samsung/android/sdk/look/airbutton/SlookAirButtonAdapter;->mItemList:Ljava/util/ArrayList;
 
@@ -236,21 +232,18 @@
 
 .method public onDismiss(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     return-void
 .end method
 
 .method public onHide(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     return-void
 .end method
 
 .method public onHoverEnter(Landroid/view/View;)Z
     .locals 1
-    .param p1    # Landroid/view/View;
 
     const/4 v0, 0x1
 
@@ -259,21 +252,18 @@
 
 .method public onHoverExit(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     return-void
 .end method
 
 .method public onShow(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     return-void
 .end method
 
 .method public removeItem(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/samsung/android/sdk/look/airbutton/SlookAirButtonAdapter;->mItemList:Ljava/util/ArrayList;
 
@@ -297,7 +287,6 @@
 
 .method public setEmptyText(Ljava/lang/CharSequence;)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
 
     iput-object p1, p0, Lcom/samsung/android/sdk/look/airbutton/SlookAirButtonAdapter;->mEmptyText:Ljava/lang/CharSequence;
 
@@ -306,8 +295,6 @@
 
 .method public updateItem(ILcom/samsung/android/sdk/look/airbutton/SlookAirButtonAdapter$AirButtonItem;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Lcom/samsung/android/sdk/look/airbutton/SlookAirButtonAdapter$AirButtonItem;
 
     iget-object v0, p0, Lcom/samsung/android/sdk/look/airbutton/SlookAirButtonAdapter;->mItemList:Ljava/util/ArrayList;
 

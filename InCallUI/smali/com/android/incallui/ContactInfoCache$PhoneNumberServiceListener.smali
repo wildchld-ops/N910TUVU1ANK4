@@ -27,7 +27,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/incallui/ContactInfoCache;I)V
     .locals 0
-    .param p2    # I
 
     iput-object p1, p0, Lcom/android/incallui/ContactInfoCache$PhoneNumberServiceListener;->this$0:Lcom/android/incallui/ContactInfoCache;
 

@@ -117,12 +117,6 @@
 # direct methods
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;IILandroid/view/ViewGroup;Lcom/sec/android/app/camera/MenuResourceDepot;I)V
     .locals 8
-    .param p1    # Lcom/sec/android/app/camera/Camera;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/view/ViewGroup;
-    .param p5    # Lcom/sec/android/app/camera/MenuResourceDepot;
-    .param p6    # I
 
     const/4 v7, 0x1
 
@@ -147,13 +141,6 @@
 
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;IILandroid/view/ViewGroup;Lcom/sec/android/app/camera/MenuResourceDepot;IZ)V
     .locals 11
-    .param p1    # Lcom/sec/android/app/camera/Camera;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/view/ViewGroup;
-    .param p5    # Lcom/sec/android/app/camera/MenuResourceDepot;
-    .param p6    # I
-    .param p7    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -349,12 +336,6 @@
 
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;ILcom/sec/android/glview/TwGLViewGroup;Lcom/sec/android/app/camera/MenuResourceDepot;IZ)V
     .locals 9
-    .param p1    # Lcom/sec/android/app/camera/Camera;
-    .param p2    # I
-    .param p3    # Lcom/sec/android/glview/TwGLViewGroup;
-    .param p4    # Lcom/sec/android/app/camera/MenuResourceDepot;
-    .param p5    # I
-    .param p6    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -504,13 +485,6 @@
 
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;ILcom/sec/android/glview/TwGLViewGroup;Lcom/sec/android/app/camera/MenuResourceDepot;Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;IZ)V
     .locals 10
-    .param p1    # Lcom/sec/android/app/camera/Camera;
-    .param p2    # I
-    .param p3    # Lcom/sec/android/glview/TwGLViewGroup;
-    .param p4    # Lcom/sec/android/app/camera/MenuResourceDepot;
-    .param p5    # Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;
-    .param p6    # I
-    .param p7    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -963,7 +937,6 @@
 
 .method public onActivityTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v0, 0x0
 
@@ -986,14 +959,12 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     return-void
 .end method
 
 .method public onClick(Lcom/sec/android/glview/TwGLView;)Z
     .locals 1
-    .param p1    # Lcom/sec/android/glview/TwGLView;
 
     const/4 v0, 0x0
 
@@ -1008,8 +979,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x0
 
@@ -1018,8 +987,6 @@
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x0
 
@@ -1060,7 +1027,6 @@
 
 .method protected resourceChanged(Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;)V
     .locals 0
-    .param p1    # Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/MenuBase;->mResource:Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;
 
@@ -1168,7 +1134,6 @@
 
 .method public final setAnchor(Lcom/sec/android/glview/TwGLImage;)V
     .locals 0
-    .param p1    # Lcom/sec/android/glview/TwGLImage;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/MenuBase;->mAnchor:Lcom/sec/android/glview/TwGLImage;
 
@@ -1177,7 +1142,6 @@
 
 .method public final setBaseResourceId(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/app/camera/MenuBase;->mLayoutId:I
 
@@ -1186,7 +1150,6 @@
 
 .method public final setBaseViewId(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/app/camera/MenuBase;->mViewId:I
 
@@ -1195,7 +1158,6 @@
 
 .method protected setCaptureEnabled(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/MenuBase;->mCaptureEnabled:Z
 
@@ -1204,7 +1166,6 @@
 
 .method public final setChild(Lcom/sec/android/app/camera/MenuBase;)V
     .locals 0
-    .param p1    # Lcom/sec/android/app/camera/MenuBase;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/MenuBase;->mChild:Lcom/sec/android/app/camera/MenuBase;
 
@@ -1213,7 +1174,6 @@
 
 .method public final setDim(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-boolean v1, p0, Lcom/sec/android/app/camera/MenuBase;->mGLActive:Z
 
@@ -1251,7 +1211,6 @@
 
 .method public setHideAnimation(Landroid/view/animation/Animation;)V
     .locals 0
-    .param p1    # Landroid/view/animation/Animation;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/MenuBase;->mHideAnimation:Landroid/view/animation/Animation;
 
@@ -1260,8 +1219,6 @@
 
 .method public final setLaunchPosition(FF)V
     .locals 0
-    .param p1    # F
-    .param p2    # F
 
     iput p1, p0, Lcom/sec/android/app/camera/MenuBase;->mLaunchX:F
 
@@ -1272,7 +1229,6 @@
 
 .method public final setLaunchType(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/app/camera/MenuBase;->mLaunchType:I
 
@@ -1281,7 +1237,6 @@
 
 .method public setOnHideListener(Lcom/sec/android/app/camera/MenuBase$OnHideListener;)V
     .locals 0
-    .param p1    # Lcom/sec/android/app/camera/MenuBase$OnHideListener;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/MenuBase;->mOnHideListener:Lcom/sec/android/app/camera/MenuBase$OnHideListener;
 
@@ -1290,7 +1245,6 @@
 
 .method public setOnShowListener(Lcom/sec/android/app/camera/MenuBase$OnShowListener;)V
     .locals 0
-    .param p1    # Lcom/sec/android/app/camera/MenuBase$OnShowListener;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/MenuBase;->mOnShowListener:Lcom/sec/android/app/camera/MenuBase$OnShowListener;
 
@@ -1299,7 +1253,6 @@
 
 .method public setShowAnimation(Landroid/view/animation/Animation;)V
     .locals 0
-    .param p1    # Landroid/view/animation/Animation;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/MenuBase;->mShowAnimation:Landroid/view/animation/Animation;
 
@@ -1308,7 +1261,6 @@
 
 .method public setShowNextViewMsg(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/MenuBase;->mHasShowViewMsg:Z
 
@@ -1317,7 +1269,6 @@
 
 .method protected setTouchHandled(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/MenuBase;->mPreviewTouchEnabled:Z
 
@@ -1326,7 +1277,6 @@
 
 .method public final setZorder(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Lcom/sec/android/app/camera/MenuBase;->mZorder:I
 

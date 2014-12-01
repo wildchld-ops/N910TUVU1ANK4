@@ -60,7 +60,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/launcher2/CellLayout;)V
     .locals 2
-    .param p1    # Lcom/android/launcher2/CellLayout;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -103,7 +102,6 @@
 
 .method static synthetic access$000(Lcom/android/launcher2/DeltaVisualizer;)Ljava/util/List;
     .locals 1
-    .param p0    # Lcom/android/launcher2/DeltaVisualizer;
 
     iget-object v0, p0, Lcom/android/launcher2/DeltaVisualizer;->mAnimLayerPendingRunnables:Ljava/util/List;
 
@@ -112,7 +110,6 @@
 
 .method static synthetic access$100(Lcom/android/launcher2/DeltaVisualizer;)Ljava/util/IdentityHashMap;
     .locals 1
-    .param p0    # Lcom/android/launcher2/DeltaVisualizer;
 
     iget-object v0, p0, Lcom/android/launcher2/DeltaVisualizer;->mLastDeltas:Ljava/util/IdentityHashMap;
 
@@ -121,9 +118,6 @@
 
 .method static synthetic access$200(Lcom/android/launcher2/DeltaVisualizer;Lcom/android/launcher2/BaseItem;Landroid/view/View;)Landroid/graphics/Bitmap;
     .locals 1
-    .param p0    # Lcom/android/launcher2/DeltaVisualizer;
-    .param p1    # Lcom/android/launcher2/BaseItem;
-    .param p2    # Landroid/view/View;
 
     invoke-direct {p0, p1, p2}, Lcom/android/launcher2/DeltaVisualizer;->getBitmapForAnim(Lcom/android/launcher2/BaseItem;Landroid/view/View;)Landroid/graphics/Bitmap;
 
@@ -134,7 +128,6 @@
 
 .method static synthetic access$300(Lcom/android/launcher2/DeltaVisualizer;)Lcom/android/launcher2/CellLayout;
     .locals 1
-    .param p0    # Lcom/android/launcher2/DeltaVisualizer;
 
     iget-object v0, p0, Lcom/android/launcher2/DeltaVisualizer;->mLayout:Lcom/android/launcher2/CellLayout;
 
@@ -143,7 +136,6 @@
 
 .method static synthetic access$400(Lcom/android/launcher2/DeltaVisualizer;)Z
     .locals 1
-    .param p0    # Lcom/android/launcher2/DeltaVisualizer;
 
     iget-boolean v0, p0, Lcom/android/launcher2/DeltaVisualizer;->mBlockTransform:Z
 
@@ -152,8 +144,6 @@
 
 .method static synthetic access$402(Lcom/android/launcher2/DeltaVisualizer;Z)Z
     .locals 0
-    .param p0    # Lcom/android/launcher2/DeltaVisualizer;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/launcher2/DeltaVisualizer;->mBlockTransform:Z
 
@@ -162,8 +152,6 @@
 
 .method static synthetic access$500(Lcom/android/launcher2/DeltaVisualizer;Lcom/android/launcher2/AnimationLayer$Anim;)V
     .locals 0
-    .param p0    # Lcom/android/launcher2/DeltaVisualizer;
-    .param p1    # Lcom/android/launcher2/AnimationLayer$Anim;
 
     invoke-direct {p0, p1}, Lcom/android/launcher2/DeltaVisualizer;->removeAllListeners(Lcom/android/launcher2/AnimationLayer$Anim;)V
 
@@ -172,9 +160,6 @@
 
 .method static synthetic access$600(Lcom/android/launcher2/DeltaVisualizer;Lcom/android/launcher2/AnimationLayer$Anim;Landroid/view/View;)V
     .locals 0
-    .param p0    # Lcom/android/launcher2/DeltaVisualizer;
-    .param p1    # Lcom/android/launcher2/AnimationLayer$Anim;
-    .param p2    # Landroid/view/View;
 
     invoke-direct {p0, p1, p2}, Lcom/android/launcher2/DeltaVisualizer;->positioningListener(Lcom/android/launcher2/AnimationLayer$Anim;Landroid/view/View;)V
 
@@ -183,9 +168,6 @@
 
 .method static synthetic access$700(Lcom/android/launcher2/DeltaVisualizer;Lcom/android/launcher2/AnimationLayer$Anim;Landroid/view/View;)V
     .locals 0
-    .param p0    # Lcom/android/launcher2/DeltaVisualizer;
-    .param p1    # Lcom/android/launcher2/AnimationLayer$Anim;
-    .param p2    # Landroid/view/View;
 
     invoke-direct {p0, p1, p2}, Lcom/android/launcher2/DeltaVisualizer;->bounceOnEndListener(Lcom/android/launcher2/AnimationLayer$Anim;Landroid/view/View;)V
 
@@ -194,9 +176,6 @@
 
 .method static synthetic access$800(Lcom/android/launcher2/DeltaVisualizer;Lcom/android/launcher2/AnimationLayer$Anim;Landroid/view/View;)V
     .locals 0
-    .param p0    # Lcom/android/launcher2/DeltaVisualizer;
-    .param p1    # Lcom/android/launcher2/AnimationLayer$Anim;
-    .param p2    # Landroid/view/View;
 
     invoke-direct {p0, p1, p2}, Lcom/android/launcher2/DeltaVisualizer;->bounceListner(Lcom/android/launcher2/AnimationLayer$Anim;Landroid/view/View;)V
 
@@ -205,7 +184,6 @@
 
 .method private animateDelta(Lcom/android/launcher2/PositionDelta;)V
     .locals 8
-    .param p1    # Lcom/android/launcher2/PositionDelta;
 
     iget-object v1, p1, Lcom/android/launcher2/PositionDelta;->item:Lcom/android/launcher2/BaseItem;
 
@@ -336,8 +314,6 @@
 
 .method private bounceListner(Lcom/android/launcher2/AnimationLayer$Anim;Landroid/view/View;)V
     .locals 9
-    .param p1    # Lcom/android/launcher2/AnimationLayer$Anim;
-    .param p2    # Landroid/view/View;
 
     const v8, 0x3cf5c28f
 
@@ -410,8 +386,6 @@
 
 .method private bounceOnEndListener(Lcom/android/launcher2/AnimationLayer$Anim;Landroid/view/View;)V
     .locals 2
-    .param p1    # Lcom/android/launcher2/AnimationLayer$Anim;
-    .param p2    # Landroid/view/View;
 
     invoke-virtual {p1}, Lcom/android/launcher2/AnimationLayer$Anim;->getAnimator()Landroid/animation/Animator;
 
@@ -440,8 +414,6 @@
 
 .method private finishOnEndListener(Lcom/android/launcher2/AnimationLayer$Anim;Landroid/view/View;)V
     .locals 2
-    .param p1    # Lcom/android/launcher2/AnimationLayer$Anim;
-    .param p2    # Landroid/view/View;
 
     invoke-virtual {p1}, Lcom/android/launcher2/AnimationLayer$Anim;->getAnimator()Landroid/animation/Animator;
 
@@ -470,8 +442,6 @@
 
 .method private getBitmapForAnim(Lcom/android/launcher2/BaseItem;Landroid/view/View;)Landroid/graphics/Bitmap;
     .locals 3
-    .param p1    # Lcom/android/launcher2/BaseItem;
-    .param p2    # Landroid/view/View;
 
     const/4 v0, 0x0
 
@@ -543,8 +513,6 @@
 
 .method private positioningListener(Lcom/android/launcher2/AnimationLayer$Anim;Landroid/view/View;)V
     .locals 5
-    .param p1    # Lcom/android/launcher2/AnimationLayer$Anim;
-    .param p2    # Landroid/view/View;
 
     iget-object v3, p0, Lcom/android/launcher2/DeltaVisualizer;->mLayout:Lcom/android/launcher2/CellLayout;
 
@@ -601,7 +569,6 @@
 
 .method private removeAllListeners(Lcom/android/launcher2/AnimationLayer$Anim;)V
     .locals 2
-    .param p1    # Lcom/android/launcher2/AnimationLayer$Anim;
 
     invoke-virtual {p1}, Lcom/android/launcher2/AnimationLayer$Anim;->getAnimator()Landroid/animation/Animator;
 
@@ -631,7 +598,6 @@
 
 .method private resetItem(Lcom/android/launcher2/BaseItem;)V
     .locals 6
-    .param p1    # Lcom/android/launcher2/BaseItem;
 
     const/4 v5, 0x0
 
@@ -714,9 +680,6 @@
 
 .method private updateViewForSpan(Landroid/view/View;II)Z
     .locals 8
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v1, 0x0
 

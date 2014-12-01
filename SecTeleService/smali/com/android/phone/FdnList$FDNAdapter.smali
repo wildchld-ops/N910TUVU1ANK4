@@ -70,7 +70,7 @@
 
     const-string v6, "layout_inflater"
 
-    invoke-virtual {v5, v6}, Lcom/android/phone/ADNList;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v5, v6}, Lcom/android/phone/FdnList;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v4
 
@@ -85,7 +85,7 @@
     move-result-object v3
 
     :cond_0
-    iget-object v5, p0, Landroid/widget/CursorAdapter;->mCursor:Landroid/database/Cursor;
+    iget-object v5, p0, Lcom/android/phone/FdnList$FDNAdapter;->mCursor:Landroid/database/Cursor;
 
     invoke-interface {v5, p1}, Landroid/database/Cursor;->moveToPosition(I)Z
 
@@ -111,7 +111,7 @@
 
     if-eqz v1, :cond_1
 
-    iget-object v5, p0, Landroid/widget/CursorAdapter;->mCursor:Landroid/database/Cursor;
+    iget-object v5, p0, Lcom/android/phone/FdnList$FDNAdapter;->mCursor:Landroid/database/Cursor;
 
     invoke-interface {v5, v8}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
 
@@ -122,7 +122,7 @@
     :cond_1
     if-eqz v2, :cond_2
 
-    iget-object v5, p0, Landroid/widget/CursorAdapter;->mCursor:Landroid/database/Cursor;
+    iget-object v5, p0, Lcom/android/phone/FdnList$FDNAdapter;->mCursor:Landroid/database/Cursor;
 
     invoke-interface {v5, v9}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
 
@@ -141,7 +141,7 @@
 
     move-result-object v6
 
-    iget-object v7, p0, Landroid/widget/CursorAdapter;->mCursor:Landroid/database/Cursor;
+    iget-object v7, p0, Lcom/android/phone/FdnList$FDNAdapter;->mCursor:Landroid/database/Cursor;
 
     invoke-interface {v7, v9}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
 
@@ -158,13 +158,13 @@
 
     check-cast v0, Landroid/widget/ImageButton;
 
-    invoke-virtual {v0, v8}, Landroid/view/View;->setFocusable(Z)V
+    invoke-virtual {v0, v8}, Landroid/widget/ImageButton;->setFocusable(Z)V
 
     new-instance v5, Lcom/android/phone/FdnList$FDNAdapter$1;
 
     invoke-direct {v5, p0, p1}, Lcom/android/phone/FdnList$FDNAdapter$1;-><init>(Lcom/android/phone/FdnList$FDNAdapter;I)V
 
-    invoke-virtual {v0, v5}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v0, v5}, Landroid/widget/ImageButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     const-string v5, "fdn_button_call"
 

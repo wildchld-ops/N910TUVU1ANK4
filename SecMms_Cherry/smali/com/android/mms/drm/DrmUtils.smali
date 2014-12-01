@@ -44,7 +44,6 @@
 
 .method public static cleanupStorage(Landroid/content/Context;)V
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     new-instance v0, Ljava/lang/Thread;
 
@@ -63,7 +62,6 @@
 
 .method public static getConvertExtension(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, ".fl"
 
@@ -72,8 +70,6 @@
 
 .method public static getUniqueDestination(Ljava/lang/String;Ljava/lang/String;)Ljava/io/File;
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/io/File;
 
@@ -156,8 +152,6 @@
 
 .method public static haveRightsForAction(Landroid/net/Uri;I)Z
     .locals 5
-    .param p0    # Landroid/net/Uri;
-    .param p1    # I
 
     const/4 v2, 0x1
 
@@ -213,8 +207,6 @@
 
 .method public static insert(Landroid/content/Context;Lcom/android/mms/drm/DrmWrapper;)Landroid/net/Uri;
     .locals 8
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/mms/drm/DrmWrapper;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -330,7 +322,6 @@
 
 .method public static isDrmType(Ljava/lang/String;)Z
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     const/4 v2, 0x0
 

@@ -37,7 +37,6 @@
 
 .method public static isFacebookAppInstalled(Landroid/content/Context;)Z
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     :try_start_0
     invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
@@ -67,7 +66,6 @@
 
 .method public static isLoggedInFacebook(Landroid/content/Context;)Z
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Landroid/accounts/AccountManager;->get(Landroid/content/Context;)Landroid/accounts/AccountManager;
 
@@ -98,7 +96,6 @@
 
 .method public static isLoggedInGoogle(Landroid/content/Context;)Z
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Landroid/accounts/AccountManager;->get(Landroid/content/Context;)Landroid/accounts/AccountManager;
 

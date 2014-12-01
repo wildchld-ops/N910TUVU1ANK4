@@ -37,8 +37,6 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     :try_start_0
     iget-object v0, p0, Lcom/android/server/DevicePolicyManagerService$6;->val$result:Landroid/os/RemoteCallback;

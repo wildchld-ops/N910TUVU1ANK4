@@ -85,14 +85,6 @@
 
 .method public constructor <init>(ILjava/lang/String;Landroid/app/Notification;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;ZLjava/util/HashMap;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/app/Notification;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # I
-    .param p7    # Ljava/lang/String;
-    .param p8    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -156,14 +148,6 @@
 
 .method public constructor <init>(ILjava/lang/String;Landroid/app/Notification;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;ZLjava/util/HashMap;Ljava/util/List;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/app/Notification;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # I
-    .param p7    # Ljava/lang/String;
-    .param p8    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -225,7 +209,6 @@
 
 .method public constructor <init>(Landroid/os/Parcel;)V
     .locals 3
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -342,8 +325,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 3
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget v1, p0, Landroid/app/KnoxNotification;->notifId:I
 

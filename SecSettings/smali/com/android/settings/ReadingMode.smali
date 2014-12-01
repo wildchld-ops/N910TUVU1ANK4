@@ -823,7 +823,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/ReadingMode;)Landroid/content/pm/PackageManager;
     .locals 1
-    .param p0    # Lcom/android/settings/ReadingMode;
 
     iget-object v0, p0, Lcom/android/settings/ReadingMode;->mPm:Landroid/content/pm/PackageManager;
 
@@ -832,9 +831,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/ReadingMode;ILandroid/content/pm/ActivityInfo;)Landroid/graphics/drawable/Drawable;
     .locals 1
-    .param p0    # Lcom/android/settings/ReadingMode;
-    .param p1    # I
-    .param p2    # Landroid/content/pm/ActivityInfo;
 
     invoke-direct {p0, p1, p2}, Lcom/android/settings/ReadingMode;->loadAppIcon(ILandroid/content/pm/ActivityInfo;)Landroid/graphics/drawable/Drawable;
 
@@ -845,7 +841,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/ReadingMode;)Landroid/widget/Switch;
     .locals 1
-    .param p0    # Lcom/android/settings/ReadingMode;
 
     iget-object v0, p0, Lcom/android/settings/ReadingMode;->mActionBarSwitch:Landroid/widget/Switch;
 
@@ -854,7 +849,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/ReadingMode;)Lcom/android/settings/ReadingMode$AppListAdapter;
     .locals 1
-    .param p0    # Lcom/android/settings/ReadingMode;
 
     iget-object v0, p0, Lcom/android/settings/ReadingMode;->mAppListAdapter:Lcom/android/settings/ReadingMode$AppListAdapter;
 
@@ -863,8 +857,6 @@
 
 .method private loadAppIcon(ILandroid/content/pm/ActivityInfo;)Landroid/graphics/drawable/Drawable;
     .locals 12
-    .param p1    # I
-    .param p2    # Landroid/content/pm/ActivityInfo;
 
     new-instance v7, Lcom/android/settings/lockscreenshortcut/IconResizer;
 
@@ -1022,7 +1014,6 @@
 # virtual methods
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 13
-    .param p1    # Landroid/os/Bundle;
 
     const/16 v12, 0x15
 
@@ -1232,8 +1223,6 @@
 
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 3
-    .param p1    # Landroid/widget/CompoundButton;
-    .param p2    # Z
 
     const-string v0, "ReadingMode"
 
@@ -1284,7 +1273,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -1293,8 +1281,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
     .locals 3
-    .param p1    # Landroid/view/Menu;
-    .param p2    # Landroid/view/MenuInflater;
 
     const/4 v2, 0x1
 
@@ -1321,9 +1307,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 2
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const v0, 0x7f0401f7
 
@@ -1338,7 +1321,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 8
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v6, 0x0
 

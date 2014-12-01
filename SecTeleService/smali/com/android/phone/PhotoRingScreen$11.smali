@@ -52,7 +52,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v4}, Landroid/widget/CompoundButton;->isChecked()Z
+    invoke-virtual {v4}, Landroid/widget/CheckBox;->isChecked()Z
 
     move-result v0
 
@@ -67,7 +67,7 @@
 
     iget-object v4, p0, Lcom/android/phone/PhotoRingScreen$11;->this$0:Lcom/android/phone/PhotoRingScreen;
 
-    invoke-virtual {v4}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v4}, Lcom/android/phone/PhotoRingScreen;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v4
 
@@ -153,7 +153,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v2, v3}, Landroid/app/Dialog;->setCancelable(Z)V
+    invoke-virtual {v2, v3}, Landroid/app/ProgressDialog;->setCancelable(Z)V
 
     :goto_2
     return-void
@@ -166,7 +166,7 @@
     :cond_1
     iget-object v4, p0, Lcom/android/phone/PhotoRingScreen$11;->this$0:Lcom/android/phone/PhotoRingScreen;
 
-    invoke-virtual {v4}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v4}, Lcom/android/phone/PhotoRingScreen;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v4
 
@@ -208,7 +208,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v2}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
+    invoke-virtual {v2}, Landroid/widget/AutoCompleteTextView;->getText()Landroid/text/Editable;
 
     move-result-object v2
 

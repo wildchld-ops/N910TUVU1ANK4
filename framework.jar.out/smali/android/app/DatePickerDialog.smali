@@ -60,12 +60,6 @@
 
 .method public constructor <init>(Landroid/content/Context;ILandroid/app/DatePickerDialog$OnDateSetListener;III)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Landroid/app/DatePickerDialog$OnDateSetListener;
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     invoke-direct {p0, p1, p2}, Landroid/app/AlertDialog;-><init>(Landroid/content/Context;I)V
 
@@ -166,11 +160,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/app/DatePickerDialog$OnDateSetListener;III)V
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/app/DatePickerDialog$OnDateSetListener;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     const/4 v2, 0x0
 
@@ -193,7 +182,6 @@
 
 .method static synthetic access$000(Landroid/app/DatePickerDialog;)Landroid/widget/DatePicker;
     .locals 1
-    .param p0    # Landroid/app/DatePickerDialog;
 
     iget-object v0, p0, Landroid/app/DatePickerDialog;->mDatePicker:Landroid/widget/DatePicker;
 
@@ -279,9 +267,6 @@
 
 .method private updateTitle(III)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0}, Landroid/app/DatePickerDialog;->needToUpdateTitle()Z
 
@@ -386,8 +371,6 @@
 
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 0
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     invoke-direct {p0}, Landroid/app/DatePickerDialog;->tryNotifyDateSet()V
 
@@ -396,10 +379,6 @@
 
 .method public onDateChanged(Landroid/widget/DatePicker;III)V
     .locals 0
-    .param p1    # Landroid/widget/DatePicker;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-direct {p0, p2, p3, p4}, Landroid/app/DatePickerDialog;->updateTitle(III)V
 
@@ -408,7 +387,6 @@
 
 .method public onRestoreInstanceState(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/AlertDialog;->onRestoreInstanceState(Landroid/os/Bundle;)V
 
@@ -487,7 +465,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 3
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-boolean v1, p0, Landroid/app/DatePickerDialog;->mCancelable:Z
 
@@ -548,9 +525,6 @@
 
 .method public updateDate(III)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     iget-object v0, p0, Landroid/app/DatePickerDialog;->mDatePicker:Landroid/widget/DatePicker;
 

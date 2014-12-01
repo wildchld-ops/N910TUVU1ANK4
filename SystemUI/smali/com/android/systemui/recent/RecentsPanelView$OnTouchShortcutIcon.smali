@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Lcom/android/systemui/recent/RecentsPanelView;Lcom/android/systemui/recent/RecentsPanelView$1;)V
     .locals 0
-    .param p1    # Lcom/android/systemui/recent/RecentsPanelView;
-    .param p2    # Lcom/android/systemui/recent/RecentsPanelView$1;
 
     invoke-direct {p0, p1}, Lcom/android/systemui/recent/RecentsPanelView$OnTouchShortcutIcon;-><init>(Lcom/android/systemui/recent/RecentsPanelView;)V
 
@@ -46,8 +44,6 @@
 # virtual methods
 .method public onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     move-object v0, p1
 

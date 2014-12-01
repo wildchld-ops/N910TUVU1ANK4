@@ -40,8 +40,6 @@
 
 .method synthetic constructor <init>(Lcom/android/launcher2/MenuAppsGrid;Lcom/android/launcher2/MenuAppsGrid$1;)V
     .locals 0
-    .param p1    # Lcom/android/launcher2/MenuAppsGrid;
-    .param p2    # Lcom/android/launcher2/MenuAppsGrid$1;
 
     invoke-direct {p0, p1}, Lcom/android/launcher2/MenuAppsGrid$StateDownloadedApps;-><init>(Lcom/android/launcher2/MenuAppsGrid;)V
 
@@ -82,7 +80,6 @@
 
 .method public enter(Ljava/util/List;Lcom/android/launcher2/MenuAppsGrid$State;)V
     .locals 9
-    .param p2    # Lcom/android/launcher2/MenuAppsGrid$State;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -254,7 +251,6 @@
 
 .method public exit(Ljava/util/List;Lcom/android/launcher2/MenuAppsGrid$State;)V
     .locals 2
-    .param p2    # Lcom/android/launcher2/MenuAppsGrid$State;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -373,7 +369,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Lcom/android/launcher2/MenuAppsGrid$StateDownloadedApps;->this$0:Lcom/android/launcher2/MenuAppsGrid;
 
@@ -389,8 +384,6 @@
 
 .method public onClickAppItem(Lcom/android/launcher2/AppItem;Landroid/view/View;)Z
     .locals 3
-    .param p1    # Lcom/android/launcher2/AppItem;
-    .param p2    # Landroid/view/View;
 
     new-instance v0, Lcom/android/launcher2/MenuAppsGrid$StateDownloadedApps$1;
 
@@ -411,7 +404,6 @@
 
 .method public setLastPageIndex(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/launcher2/MenuAppsGrid$StateDownloadedApps;->mLastPageIndex:I
 

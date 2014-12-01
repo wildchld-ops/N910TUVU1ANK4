@@ -36,8 +36,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/LEDManagerService;Landroid/os/IBinder;I)V
     .locals 0
-    .param p2    # Landroid/os/IBinder;
-    .param p3    # I
 
     iput-object p1, p0, Lcom/android/server/LEDManagerService$LED;->this$0:Lcom/android/server/LEDManagerService;
 
@@ -52,11 +50,6 @@
 
 .method static synthetic access$000(Lcom/android/server/LEDManagerService$LED;IIII)V
     .locals 0
-    .param p0    # Lcom/android/server/LEDManagerService$LED;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/server/LEDManagerService$LED;->setLEDState(IIII)V
 
@@ -65,7 +58,6 @@
 
 .method static synthetic access$400(Lcom/android/server/LEDManagerService$LED;)I
     .locals 1
-    .param p0    # Lcom/android/server/LEDManagerService$LED;
 
     iget v0, p0, Lcom/android/server/LEDManagerService$LED;->mColor:I
 
@@ -74,7 +66,6 @@
 
 .method static synthetic access$500(Lcom/android/server/LEDManagerService$LED;)I
     .locals 1
-    .param p0    # Lcom/android/server/LEDManagerService$LED;
 
     iget v0, p0, Lcom/android/server/LEDManagerService$LED;->mMode:I
 
@@ -83,7 +74,6 @@
 
 .method static synthetic access$600(Lcom/android/server/LEDManagerService$LED;)I
     .locals 1
-    .param p0    # Lcom/android/server/LEDManagerService$LED;
 
     iget v0, p0, Lcom/android/server/LEDManagerService$LED;->mOnMS:I
 
@@ -92,7 +82,6 @@
 
 .method static synthetic access$700(Lcom/android/server/LEDManagerService$LED;)I
     .locals 1
-    .param p0    # Lcom/android/server/LEDManagerService$LED;
 
     iget v0, p0, Lcom/android/server/LEDManagerService$LED;->mOffMS:I
 
@@ -101,10 +90,6 @@
 
 .method private setLEDState(IIII)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iget v0, p0, Lcom/android/server/LEDManagerService$LED;->mColor:I
 

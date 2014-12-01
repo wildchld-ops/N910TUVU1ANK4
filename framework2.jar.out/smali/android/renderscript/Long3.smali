@@ -22,9 +22,6 @@
 
 .method public constructor <init>(JJJ)V
     .locals 0
-    .param p1    # J
-    .param p3    # J
-    .param p5    # J
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

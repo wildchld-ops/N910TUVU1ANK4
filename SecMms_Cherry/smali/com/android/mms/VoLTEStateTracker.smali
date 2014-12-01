@@ -34,8 +34,6 @@
 # virtual methods
 .method public isVoLteEnabled(Landroid/content/Intent;Landroid/content/Context;)Z
     .locals 4
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -77,7 +75,6 @@
 
 .method public isVolteEnabled(Landroid/content/Context;)Z
     .locals 12
-    .param p1    # Landroid/content/Context;
 
     const/4 v7, 0x1
 
@@ -347,8 +344,6 @@
 
 .method public startTracking(Landroid/content/Context;Landroid/content/BroadcastReceiver;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/BroadcastReceiver;
 
     const-string v1, "VolteStateTracker"
 

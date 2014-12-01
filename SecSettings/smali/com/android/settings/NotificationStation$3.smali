@@ -46,8 +46,6 @@
 # virtual methods
 .method public compare(Lcom/android/settings/NotificationStation$HistoricalNotificationInfo;Lcom/android/settings/NotificationStation$HistoricalNotificationInfo;)I
     .locals 4
-    .param p1    # Lcom/android/settings/NotificationStation$HistoricalNotificationInfo;
-    .param p2    # Lcom/android/settings/NotificationStation$HistoricalNotificationInfo;
 
     iget-wide v0, p2, Lcom/android/settings/NotificationStation$HistoricalNotificationInfo;->timestamp:J
 
@@ -62,8 +60,6 @@
 
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p1, Lcom/android/settings/NotificationStation$HistoricalNotificationInfo;
 

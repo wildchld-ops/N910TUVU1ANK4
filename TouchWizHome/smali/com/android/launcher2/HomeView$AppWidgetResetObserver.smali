@@ -37,7 +37,6 @@
 # virtual methods
 .method public onChange(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/launcher2/HomeView$AppWidgetResetObserver;->this$0:Lcom/android/launcher2/HomeView;
 

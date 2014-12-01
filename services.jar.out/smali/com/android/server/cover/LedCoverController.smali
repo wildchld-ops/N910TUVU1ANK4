@@ -77,8 +77,6 @@
 
 .method constructor <init>(Landroid/os/Looper;Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/os/Looper;
-    .param p2    # Landroid/content/Context;
 
     const/4 v3, 0x1
 
@@ -169,8 +167,6 @@
 
 .method static synthetic access$002(Lcom/android/server/cover/LedCoverController;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/cover/LedCoverController;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/cover/LedCoverController;->mIsLedOn:Z
 
@@ -179,9 +175,6 @@
 
 .method static synthetic access$100(Lcom/android/server/cover/LedCoverController;I[B)V
     .locals 0
-    .param p0    # Lcom/android/server/cover/LedCoverController;
-    .param p1    # I
-    .param p2    # [B
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/cover/LedCoverController;->handleSendDataToLedCover(I[B)V
 
@@ -190,8 +183,6 @@
 
 .method static synthetic access$200(Lcom/android/server/cover/LedCoverController;Z)V
     .locals 0
-    .param p0    # Lcom/android/server/cover/LedCoverController;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/cover/LedCoverController;->handleUpdateLedCoverAttachState(Z)V
 
@@ -200,7 +191,6 @@
 
 .method static synthetic access$300(Lcom/android/server/cover/LedCoverController;)Landroid/os/PowerManager$WakeLock;
     .locals 1
-    .param p0    # Lcom/android/server/cover/LedCoverController;
 
     iget-object v0, p0, Lcom/android/server/cover/LedCoverController;->mLedOnOffWakeLock:Landroid/os/PowerManager$WakeLock;
 
@@ -209,7 +199,6 @@
 
 .method static synthetic access$400(Lcom/android/server/cover/LedCoverController;)I
     .locals 1
-    .param p0    # Lcom/android/server/cover/LedCoverController;
 
     iget v0, p0, Lcom/android/server/cover/LedCoverController;->mCoverColor:I
 
@@ -218,7 +207,6 @@
 
 .method private declared-synchronized getSerialManager(Landroid/content/Context;)Landroid/hardware/SerialManager;
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     monitor-enter p0
 
@@ -266,8 +254,6 @@
 
 .method private handleSendDataToLedCover(I[B)V
     .locals 7
-    .param p1    # I
-    .param p2    # [B
 
     const/4 v6, 0x0
 
@@ -420,7 +406,6 @@
 
 .method private handleUpdateLedCoverAttachState(Z)V
     .locals 4
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/cover/LedCoverController;->powerControlLedCover(Z)Z
 
@@ -525,7 +510,6 @@
 
 .method private initializeCoverControlPath(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -585,7 +569,6 @@
 
 .method private powerControlLedCover(Z)Z
     .locals 10
-    .param p1    # Z
 
     const/4 v6, 0x0
 
@@ -850,8 +833,6 @@
 
 .method private writeDataViaSerial(Ljava/lang/String;[B)Z
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/FileNotFoundException;
@@ -1029,9 +1010,6 @@
 # virtual methods
 .method dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     const-string v0, " Current LedCoverController state:"
 
@@ -1078,8 +1056,6 @@
 
 .method sendDataToLedCover(I[B)Z
     .locals 5
-    .param p1    # I
-    .param p2    # [B
 
     const/4 v2, 0x0
 
@@ -1437,8 +1413,6 @@
 
 .method updateLedCoverAttachStateLocked(ZLcom/samsung/android/cover/CoverState;)V
     .locals 6
-    .param p1    # Z
-    .param p2    # Lcom/samsung/android/cover/CoverState;
 
     const/4 v3, 0x0
 

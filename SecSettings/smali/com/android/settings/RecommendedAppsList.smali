@@ -473,7 +473,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/RecommendedAppsList;)I
     .locals 1
-    .param p0    # Lcom/android/settings/RecommendedAppsList;
 
     invoke-direct {p0}, Lcom/android/settings/RecommendedAppsList;->getCheckedRecommendedAppNum()I
 
@@ -484,7 +483,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/RecommendedAppsList;)Lcom/android/settings/RecommendedAppsList$AppListAdapter;
     .locals 1
-    .param p0    # Lcom/android/settings/RecommendedAppsList;
 
     iget-object v0, p0, Lcom/android/settings/RecommendedAppsList;->mAppListAdapter:Lcom/android/settings/RecommendedAppsList$AppListAdapter;
 
@@ -493,7 +491,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/RecommendedAppsList;)Ljava/util/LinkedHashMap;
     .locals 1
-    .param p0    # Lcom/android/settings/RecommendedAppsList;
 
     iget-object v0, p0, Lcom/android/settings/RecommendedAppsList;->mTempCheckedApplist:Ljava/util/LinkedHashMap;
 
@@ -502,7 +499,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/RecommendedAppsList;)Ljava/util/LinkedHashMap;
     .locals 1
-    .param p0    # Lcom/android/settings/RecommendedAppsList;
 
     iget-object v0, p0, Lcom/android/settings/RecommendedAppsList;->mTempApplist:Ljava/util/LinkedHashMap;
 
@@ -511,7 +507,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/RecommendedAppsList;)V
     .locals 0
-    .param p0    # Lcom/android/settings/RecommendedAppsList;
 
     invoke-direct {p0}, Lcom/android/settings/RecommendedAppsList;->initializeActionBarTitle()V
 
@@ -520,7 +515,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/RecommendedAppsList;)Landroid/content/pm/PackageManager;
     .locals 1
-    .param p0    # Lcom/android/settings/RecommendedAppsList;
 
     iget-object v0, p0, Lcom/android/settings/RecommendedAppsList;->mPm:Landroid/content/pm/PackageManager;
 
@@ -529,9 +523,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/RecommendedAppsList;ILandroid/content/pm/ActivityInfo;)Landroid/graphics/drawable/Drawable;
     .locals 1
-    .param p0    # Lcom/android/settings/RecommendedAppsList;
-    .param p1    # I
-    .param p2    # Landroid/content/pm/ActivityInfo;
 
     invoke-direct {p0, p1, p2}, Lcom/android/settings/RecommendedAppsList;->loadAppIcon(ILandroid/content/pm/ActivityInfo;)Landroid/graphics/drawable/Drawable;
 
@@ -688,8 +679,6 @@
 
 .method private loadAppIcon(ILandroid/content/pm/ActivityInfo;)Landroid/graphics/drawable/Drawable;
     .locals 12
-    .param p1    # I
-    .param p2    # Landroid/content/pm/ActivityInfo;
 
     new-instance v7, Lcom/android/settings/lockscreenshortcut/IconResizer;
 
@@ -847,7 +836,6 @@
 # virtual methods
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 13
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v12, 0x1
 
@@ -1378,7 +1366,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 11
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v7, 0x1
 
@@ -1732,8 +1719,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
     .locals 4
-    .param p1    # Landroid/view/Menu;
-    .param p2    # Landroid/view/MenuInflater;
 
     const/4 v3, 0x1
 
@@ -1789,9 +1774,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 3
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const v1, 0x7f0401f7
 
@@ -1818,7 +1800,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 3
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v0, 0x1
 

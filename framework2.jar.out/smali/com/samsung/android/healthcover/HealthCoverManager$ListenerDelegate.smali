@@ -31,8 +31,6 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/healthcover/HealthCoverManager;Lcom/samsung/android/healthcover/HealthCoverListener;Landroid/os/Handler;)V
     .locals 2
-    .param p2    # Lcom/samsung/android/healthcover/HealthCoverListener;
-    .param p3    # Landroid/os/Handler;
 
     iput-object p1, p0, Lcom/samsung/android/healthcover/HealthCoverManager$ListenerDelegate;->this$0:Lcom/samsung/android/healthcover/HealthCoverManager;
 
@@ -80,7 +78,6 @@
 
 .method static synthetic access$100(Lcom/samsung/android/healthcover/HealthCoverManager$ListenerDelegate;)Lcom/samsung/android/healthcover/HealthCoverListener;
     .locals 1
-    .param p0    # Lcom/samsung/android/healthcover/HealthCoverManager$ListenerDelegate;
 
     iget-object v0, p0, Lcom/samsung/android/healthcover/HealthCoverManager$ListenerDelegate;->mListener:Lcom/samsung/android/healthcover/HealthCoverListener;
 
@@ -99,8 +96,6 @@
 
 .method public onDataCallback([BI)V
     .locals 3
-    .param p1    # [B
-    .param p2    # I
 
     invoke-static {}, Landroid/os/Message;->obtain()Landroid/os/Message;
 

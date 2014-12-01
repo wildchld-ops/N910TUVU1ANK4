@@ -51,7 +51,6 @@
 # direct methods
 .method public constructor <init>(Landroid/net/wifi/WifiWatchdogStateMachine;Landroid/os/Looper;)V
     .locals 3
-    .param p2    # Landroid/os/Looper;
 
     const/4 v0, 0x0
 
@@ -86,8 +85,6 @@
 
 .method static synthetic access$19100(Landroid/net/wifi/WifiWatchdogStateMachine$CaptivePortalHandler;Landroid/os/Handler;)V
     .locals 0
-    .param p0    # Landroid/net/wifi/WifiWatchdogStateMachine$CaptivePortalHandler;
-    .param p1    # Landroid/os/Handler;
 
     invoke-direct {p0, p1}, Landroid/net/wifi/WifiWatchdogStateMachine$CaptivePortalHandler;->checkCaptivePortal(Landroid/os/Handler;)V
 
@@ -96,7 +93,6 @@
 
 .method static synthetic access$7100(Landroid/net/wifi/WifiWatchdogStateMachine$CaptivePortalHandler;)V
     .locals 0
-    .param p0    # Landroid/net/wifi/WifiWatchdogStateMachine$CaptivePortalHandler;
 
     invoke-direct {p0}, Landroid/net/wifi/WifiWatchdogStateMachine$CaptivePortalHandler;->notifyDisconnect()V
 
@@ -105,7 +101,6 @@
 
 .method private checkCaptivePortal(Landroid/os/Handler;)V
     .locals 4
-    .param p1    # Landroid/os/Handler;
 
     const/4 v3, 0x0
 
@@ -631,7 +626,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 17
-    .param p1    # Landroid/os/Message;
 
     const/4 v9, -0x1
 

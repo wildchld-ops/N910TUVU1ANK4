@@ -44,7 +44,6 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 4
-    .param p1    # Landroid/view/View;
 
     iget-object v3, p0, Lcom/android/mms/ui/ComposeMessageFragment$219;->val$selectAllCheckBox:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 

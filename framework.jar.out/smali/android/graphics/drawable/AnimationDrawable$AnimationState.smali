@@ -23,9 +23,6 @@
 # direct methods
 .method constructor <init>(Landroid/graphics/drawable/AnimationDrawable$AnimationState;Landroid/graphics/drawable/AnimationDrawable;Landroid/content/res/Resources;)V
     .locals 1
-    .param p1    # Landroid/graphics/drawable/AnimationDrawable$AnimationState;
-    .param p2    # Landroid/graphics/drawable/AnimationDrawable;
-    .param p3    # Landroid/content/res/Resources;
 
     invoke-direct {p0, p1, p2, p3}, Landroid/graphics/drawable/DrawableContainer$DrawableContainerState;-><init>(Landroid/graphics/drawable/DrawableContainer$DrawableContainerState;Landroid/graphics/drawable/DrawableContainer;Landroid/content/res/Resources;)V
 
@@ -60,7 +57,6 @@
 
 .method static synthetic access$000(Landroid/graphics/drawable/AnimationDrawable$AnimationState;)[I
     .locals 1
-    .param p0    # Landroid/graphics/drawable/AnimationDrawable$AnimationState;
 
     iget-object v0, p0, Landroid/graphics/drawable/AnimationDrawable$AnimationState;->mDurations:[I
 
@@ -69,8 +65,6 @@
 
 .method static synthetic access$002(Landroid/graphics/drawable/AnimationDrawable$AnimationState;[I)[I
     .locals 0
-    .param p0    # Landroid/graphics/drawable/AnimationDrawable$AnimationState;
-    .param p1    # [I
 
     iput-object p1, p0, Landroid/graphics/drawable/AnimationDrawable$AnimationState;->mDurations:[I
 
@@ -79,7 +73,6 @@
 
 .method static synthetic access$100(Landroid/graphics/drawable/AnimationDrawable$AnimationState;)Z
     .locals 1
-    .param p0    # Landroid/graphics/drawable/AnimationDrawable$AnimationState;
 
     iget-boolean v0, p0, Landroid/graphics/drawable/AnimationDrawable$AnimationState;->mOneShot:Z
 
@@ -88,8 +81,6 @@
 
 .method static synthetic access$102(Landroid/graphics/drawable/AnimationDrawable$AnimationState;Z)Z
     .locals 0
-    .param p0    # Landroid/graphics/drawable/AnimationDrawable$AnimationState;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/graphics/drawable/AnimationDrawable$AnimationState;->mOneShot:Z
 
@@ -100,8 +91,6 @@
 # virtual methods
 .method public addFrame(Landroid/graphics/drawable/Drawable;I)V
     .locals 2
-    .param p1    # Landroid/graphics/drawable/Drawable;
-    .param p2    # I
 
     invoke-super {p0, p1}, Landroid/graphics/drawable/DrawableContainer$DrawableContainerState;->addChild(Landroid/graphics/drawable/Drawable;)I
 
@@ -116,8 +105,6 @@
 
 .method public growArray(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     const/4 v2, 0x0
 
@@ -148,7 +135,6 @@
 
 .method public newDrawable(Landroid/content/res/Resources;)Landroid/graphics/drawable/Drawable;
     .locals 2
-    .param p1    # Landroid/content/res/Resources;
 
     new-instance v0, Landroid/graphics/drawable/AnimationDrawable;
 

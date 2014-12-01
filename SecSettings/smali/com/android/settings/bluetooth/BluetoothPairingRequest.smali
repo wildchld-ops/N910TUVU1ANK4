@@ -14,7 +14,6 @@
 
 .method private playPopupAlert(Landroid/content/Context;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
 
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 

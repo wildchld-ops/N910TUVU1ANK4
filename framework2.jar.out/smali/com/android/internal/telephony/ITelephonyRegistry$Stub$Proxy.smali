@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -53,10 +52,6 @@
 
 .method public listen(Ljava/lang/String;Lcom/android/internal/telephony/IPhoneStateListener;IZ)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/internal/telephony/IPhoneStateListener;
-    .param p3    # I
-    .param p4    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -138,7 +133,6 @@
 
 .method public notifyCallForwardingChanged(Z)V
     .locals 5
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -197,8 +191,6 @@
 
 .method public notifyCallState(ILjava/lang/String;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -313,7 +305,6 @@
 
 .method public notifyCellLocation(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -384,7 +375,6 @@
 
 .method public notifyDataActivity(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -436,15 +426,6 @@
 
 .method public notifyDataConnection(IZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/net/LinkProperties;Landroid/net/LinkCapabilities;IZ)V
     .locals 5
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Landroid/net/LinkProperties;
-    .param p7    # Landroid/net/LinkCapabilities;
-    .param p8    # I
-    .param p9    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -572,8 +553,6 @@
 
 .method public notifyDataConnectionFailed(Ljava/lang/String;Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -627,7 +606,6 @@
 
 .method public notifyDualSimSlotActivationState(Z)V
     .locals 5
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -686,7 +664,6 @@
 
 .method public notifyDunDataActivity(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -738,8 +715,6 @@
 
 .method public notifyDunDataConnection(II)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -842,7 +817,6 @@
 
 .method public notifyMessageWaitingChanged(Z)V
     .locals 5
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -901,7 +875,6 @@
 
 .method public notifyOtaspChanged(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -953,7 +926,6 @@
 
 .method public notifyServiceState(Landroid/telephony/ServiceState;)V
     .locals 5
-    .param p1    # Landroid/telephony/ServiceState;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1024,7 +996,6 @@
 
 .method public notifySignalStrength(Landroid/telephony/SignalStrength;)V
     .locals 5
-    .param p1    # Landroid/telephony/SignalStrength;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

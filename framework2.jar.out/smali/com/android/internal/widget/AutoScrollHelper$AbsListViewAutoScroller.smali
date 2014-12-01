@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Landroid/widget/AbsListView;)V
     .locals 0
-    .param p1    # Landroid/widget/AbsListView;
 
     invoke-direct {p0, p1}, Lcom/android/internal/widget/AutoScrollHelper;-><init>(Landroid/view/View;)V
 
@@ -34,7 +33,6 @@
 # virtual methods
 .method public canTargetScrollHorizontally(I)Z
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -43,7 +41,6 @@
 
 .method public canTargetScrollVertically(I)Z
     .locals 10
-    .param p1    # I
 
     const/4 v7, 0x0
 
@@ -112,8 +109,6 @@
 
 .method public scrollTargetBy(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/internal/widget/AutoScrollHelper$AbsListViewAutoScroller;->mTarget:Landroid/widget/AbsListView;
 

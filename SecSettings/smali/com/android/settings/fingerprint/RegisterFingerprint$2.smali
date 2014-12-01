@@ -33,7 +33,6 @@
 # virtual methods
 .method public onFingerprintEvent(Lcom/samsung/android/fingerprint/FingerprintEvent;)V
     .locals 1
-    .param p1    # Lcom/samsung/android/fingerprint/FingerprintEvent;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

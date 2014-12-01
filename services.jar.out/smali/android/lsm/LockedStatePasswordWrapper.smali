@@ -18,7 +18,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -113,7 +112,6 @@
 
 .method public setPassword(Ljava/lang/String;)I
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 

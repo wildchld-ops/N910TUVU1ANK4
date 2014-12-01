@@ -92,7 +92,6 @@
 # virtual methods
 .method public Init(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const-string v2, ".golf"
 
@@ -123,7 +122,6 @@
 
 .method public InitGolfFile(Ljava/lang/String;)I
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -168,9 +166,6 @@
 
 .method public createThumbnails(Ljava/lang/String;II)Landroid/graphics/Bitmap;
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     invoke-virtual {p0, p1}, Lcom/sec/android/app/camera/GolfImageManager;->Init(Ljava/lang/String;)V
 

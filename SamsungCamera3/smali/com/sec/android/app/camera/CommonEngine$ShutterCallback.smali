@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Lcom/sec/android/app/camera/CommonEngine;Lcom/sec/android/app/camera/CommonEngine$1;)V
     .locals 0
-    .param p1    # Lcom/sec/android/app/camera/CommonEngine;
-    .param p2    # Lcom/sec/android/app/camera/CommonEngine$1;
 
     invoke-direct {p0, p1}, Lcom/sec/android/app/camera/CommonEngine$ShutterCallback;-><init>(Lcom/sec/android/app/camera/CommonEngine;)V
 

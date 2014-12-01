@@ -29,7 +29,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/NotificationManagerService;Landroid/os/Handler;)V
     .locals 1
-    .param p2    # Landroid/os/Handler;
 
     iput-object p1, p0, Lcom/android/server/NotificationManagerService$SettingsObserver;->this$0:Lcom/android/server/NotificationManagerService;
 
@@ -128,8 +127,6 @@
 
 .method public onChange(ZLandroid/net/Uri;)V
     .locals 0
-    .param p1    # Z
-    .param p2    # Landroid/net/Uri;
 
     invoke-virtual {p0, p2}, Lcom/android/server/NotificationManagerService$SettingsObserver;->update(Landroid/net/Uri;)V
 
@@ -138,7 +135,6 @@
 
 .method public update(Landroid/net/Uri;)V
     .locals 8
-    .param p1    # Landroid/net/Uri;
 
     const/4 v4, 0x1
 

@@ -45,7 +45,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 1
-    .param p1    # Landroid/os/Message;
 
     iget-object v0, p0, Lcom/android/incallui/CallHandlerService$MainHandler;->this$0:Lcom/android/incallui/CallHandlerService;
 

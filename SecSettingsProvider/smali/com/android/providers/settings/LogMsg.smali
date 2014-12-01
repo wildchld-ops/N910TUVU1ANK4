@@ -30,8 +30,6 @@
 
 .method public static out(Ljava/lang/String;Ljava/lang/String;)V
     .locals 7
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J

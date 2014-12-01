@@ -81,7 +81,7 @@
 
     const v0, 0x7f0a016f
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/phone/OtaInCallScreen;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -93,7 +93,7 @@
 
     const v0, 0x7f0a0170
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/phone/OtaInCallScreen;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -107,13 +107,13 @@
 
     const/16 v1, 0x8
 
-    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setVisibility(I)V
 
     iget-object v1, p0, Lcom/android/phone/OtaInCallScreen;->mOtaWidgetData:Lcom/android/phone/OtaInCallScreen$OtaWidgetData;
 
     const v0, 0x7f0a0171
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/phone/OtaInCallScreen;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -125,7 +125,7 @@
 
     const v0, 0x1010002
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/phone/OtaInCallScreen;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -145,7 +145,7 @@
 
     const v0, 0x7f0a0172
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/phone/OtaInCallScreen;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -157,7 +157,7 @@
 
     const v0, 0x7f0a016e
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/phone/OtaInCallScreen;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -169,7 +169,7 @@
 
     const v1, 0x7f0a0179
 
-    invoke-virtual {p0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v1}, Lcom/android/phone/OtaInCallScreen;->findViewById(I)Landroid/view/View;
 
     move-result-object v1
 
@@ -179,7 +179,7 @@
 
     const v1, 0x7f0a0176
 
-    invoke-virtual {p0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v1}, Lcom/android/phone/OtaInCallScreen;->findViewById(I)Landroid/view/View;
 
     move-result-object v1
 
@@ -189,7 +189,7 @@
 
     const v1, 0x7f0a017b
 
-    invoke-virtual {p0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v1}, Lcom/android/phone/OtaInCallScreen;->findViewById(I)Landroid/view/View;
 
     move-result-object v1
 
@@ -199,7 +199,7 @@
 
     const v0, 0x7f0a017a
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/phone/OtaInCallScreen;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -211,13 +211,13 @@
 
     iget-object v0, v0, Lcom/android/phone/OtaInCallScreen$OtaWidgetData;->otaEndButton:Landroid/widget/Button;
 
-    invoke-virtual {v0, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v0, p0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     iget-object v1, p0, Lcom/android/phone/OtaInCallScreen;->mOtaWidgetData:Lcom/android/phone/OtaInCallScreen$OtaWidgetData;
 
     const v0, 0x7f0a0175
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/phone/OtaInCallScreen;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -229,13 +229,13 @@
 
     iget-object v0, v0, Lcom/android/phone/OtaInCallScreen$OtaWidgetData;->otaSpeakerButton:Landroid/widget/ToggleButton;
 
-    invoke-virtual {v0, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v0, p0}, Landroid/widget/ToggleButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     iget-object v1, p0, Lcom/android/phone/OtaInCallScreen;->mOtaWidgetData:Lcom/android/phone/OtaInCallScreen$OtaWidgetData;
 
     const v0, 0x7f0a0177
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/phone/OtaInCallScreen;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -247,13 +247,13 @@
 
     iget-object v0, v0, Lcom/android/phone/OtaInCallScreen$OtaWidgetData;->otaActivateButton:Landroid/widget/Button;
 
-    invoke-virtual {v0, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v0, p0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     iget-object v1, p0, Lcom/android/phone/OtaInCallScreen;->mOtaWidgetData:Lcom/android/phone/OtaInCallScreen$OtaWidgetData;
 
     const v0, 0x7f0a0178
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/phone/OtaInCallScreen;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -265,13 +265,13 @@
 
     iget-object v0, v0, Lcom/android/phone/OtaInCallScreen$OtaWidgetData;->otaSkipButton:Landroid/widget/Button;
 
-    invoke-virtual {v0, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v0, p0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     iget-object v1, p0, Lcom/android/phone/OtaInCallScreen;->mOtaWidgetData:Lcom/android/phone/OtaInCallScreen$OtaWidgetData;
 
     const v0, 0x7f0a017c
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/phone/OtaInCallScreen;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -283,13 +283,13 @@
 
     iget-object v0, v0, Lcom/android/phone/OtaInCallScreen$OtaWidgetData;->otaNextButton:Landroid/widget/Button;
 
-    invoke-virtual {v0, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v0, p0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     iget-object v1, p0, Lcom/android/phone/OtaInCallScreen;->mOtaWidgetData:Lcom/android/phone/OtaInCallScreen$OtaWidgetData;
 
     const v0, 0x7f0a017d
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/phone/OtaInCallScreen;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -301,13 +301,13 @@
 
     iget-object v0, v0, Lcom/android/phone/OtaInCallScreen$OtaWidgetData;->otaTryAgainButton:Landroid/widget/Button;
 
-    invoke-virtual {v0, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v0, p0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     iget-object v1, p0, Lcom/android/phone/OtaInCallScreen;->mOtaWidgetData:Lcom/android/phone/OtaInCallScreen$OtaWidgetData;
 
     const v0, 0x7f0a0173
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/phone/OtaInCallScreen;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -425,7 +425,7 @@
 
     invoke-direct {v0, p0}, Lcom/android/phone/OtaInCallScreen$3;-><init>(Lcom/android/phone/OtaInCallScreen;)V
 
-    invoke-virtual {v0}, Ljava/lang/Thread;->start()V
+    invoke-virtual {v0}, Lcom/android/phone/OtaInCallScreen$3;->start()V
 
     :cond_0
     :goto_0
@@ -498,7 +498,7 @@
 
     iget-object v1, v1, Lcom/android/phone/OtaInCallScreen$OtaWidgetData;->otaSkipConfirmationDialog:Landroid/app/AlertDialog;
 
-    invoke-virtual {v1}, Landroid/app/Dialog;->show()V
+    invoke-virtual {v1}, Landroid/app/AlertDialog;->show()V
 
     return-void
 .end method
@@ -738,13 +738,13 @@
 
     iget-object v0, v0, Lcom/android/phone/OtaInCallScreen$OtaWidgetData;->otaTextActivate:Landroid/widget/TextView;
 
-    invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v2}, Landroid/widget/TextView;->setVisibility(I)V
 
     iget-object v0, p0, Lcom/android/phone/OtaInCallScreen;->mOtaWidgetData:Lcom/android/phone/OtaInCallScreen$OtaWidgetData;
 
     iget-object v0, v0, Lcom/android/phone/OtaInCallScreen$OtaWidgetData;->otaTextListenProgress:Landroid/widget/TextView;
 
-    invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v2}, Landroid/widget/TextView;->setVisibility(I)V
 
     iget-object v0, p0, Lcom/android/phone/OtaInCallScreen;->mOtaWidgetData:Lcom/android/phone/OtaInCallScreen$OtaWidgetData;
 
@@ -756,7 +756,7 @@
 
     iget-object v0, v0, Lcom/android/phone/OtaInCallScreen$OtaWidgetData;->otaTextSuccessFail:Landroid/widget/TextView;
 
-    invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v2}, Landroid/widget/TextView;->setVisibility(I)V
 
     iget-object v0, p0, Lcom/android/phone/OtaInCallScreen;->mOtaWidgetData:Lcom/android/phone/OtaInCallScreen$OtaWidgetData;
 
@@ -780,37 +780,37 @@
 
     iget-object v0, v0, Lcom/android/phone/OtaInCallScreen$OtaWidgetData;->otaDtmfDialerView:Lcom/android/phone/DTMFTwelveKeyDialerView;
 
-    invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v2}, Lcom/android/phone/DTMFTwelveKeyDialerView;->setVisibility(I)V
 
     iget-object v0, p0, Lcom/android/phone/OtaInCallScreen;->mOtaWidgetData:Lcom/android/phone/OtaInCallScreen$OtaWidgetData;
 
     iget-object v0, v0, Lcom/android/phone/OtaInCallScreen$OtaWidgetData;->otaSpeakerButton:Landroid/widget/ToggleButton;
 
-    invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v2}, Landroid/widget/ToggleButton;->setVisibility(I)V
 
     iget-object v0, p0, Lcom/android/phone/OtaInCallScreen;->mOtaWidgetData:Lcom/android/phone/OtaInCallScreen$OtaWidgetData;
 
     iget-object v0, v0, Lcom/android/phone/OtaInCallScreen$OtaWidgetData;->otaTryAgainButton:Landroid/widget/Button;
 
-    invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v2}, Landroid/widget/Button;->setVisibility(I)V
 
     iget-object v0, p0, Lcom/android/phone/OtaInCallScreen;->mOtaWidgetData:Lcom/android/phone/OtaInCallScreen$OtaWidgetData;
 
     iget-object v0, v0, Lcom/android/phone/OtaInCallScreen$OtaWidgetData;->otaNextButton:Landroid/widget/Button;
 
-    invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v2}, Landroid/widget/Button;->setVisibility(I)V
 
     iget-object v0, p0, Lcom/android/phone/OtaInCallScreen;->mOtaWidgetData:Lcom/android/phone/OtaInCallScreen$OtaWidgetData;
 
     iget-object v0, v0, Lcom/android/phone/OtaInCallScreen$OtaWidgetData;->otaUpperWidgets:Landroid/view/ViewGroup;
 
-    invoke-virtual {v0, v3}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v3}, Landroid/view/ViewGroup;->setVisibility(I)V
 
     iget-object v0, p0, Lcom/android/phone/OtaInCallScreen;->mOtaWidgetData:Lcom/android/phone/OtaInCallScreen$OtaWidgetData;
 
     iget-object v0, v0, Lcom/android/phone/OtaInCallScreen$OtaWidgetData;->otaSkipButton:Landroid/widget/Button;
 
-    invoke-virtual {v0, v3}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v3}, Landroid/widget/Button;->setVisibility(I)V
 
     goto :goto_0
 .end method
@@ -848,7 +848,7 @@
 
     sget-object v2, Landroid/os/UserHandle;->CURRENT:Landroid/os/UserHandle;
 
-    invoke-virtual {v1, v0, v2}, Landroid/content/ContextWrapper;->startActivityAsUser(Landroid/content/Intent;Landroid/os/UserHandle;)V
+    invoke-virtual {v1, v0, v2}, Lcom/android/phone/PhoneGlobals;->startActivityAsUser(Landroid/content/Intent;Landroid/os/UserHandle;)V
 
     return-void
 .end method
@@ -918,7 +918,7 @@
 
     iget-object v1, v1, Lcom/android/phone/OtaInCallScreen$OtaWidgetData;->otaTextListenProgress:Landroid/widget/TextView;
 
-    invoke-virtual {v1, v3}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v1, v3}, Landroid/widget/TextView;->setVisibility(I)V
 
     iget-object v1, p0, Lcom/android/phone/OtaInCallScreen;->mOtaWidgetData:Lcom/android/phone/OtaInCallScreen$OtaWidgetData;
 
@@ -944,7 +944,7 @@
 
     iget-object v1, v1, Lcom/android/phone/OtaInCallScreen$OtaWidgetData;->otaSpeakerButton:Landroid/widget/ToggleButton;
 
-    invoke-virtual {v1, v3}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v1, v3}, Landroid/widget/ToggleButton;->setVisibility(I)V
 
     iget-object v1, p0, Lcom/android/phone/OtaInCallScreen;->mApp:Lcom/android/phone/PhoneGlobals;
 
@@ -1023,7 +1023,7 @@
 
     iget-object v1, v1, Lcom/android/phone/OtaInCallScreen$OtaWidgetData;->otaTextListenProgress:Landroid/widget/TextView;
 
-    invoke-virtual {v1, v3}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v1, v3}, Landroid/widget/TextView;->setVisibility(I)V
 
     iget-object v1, p0, Lcom/android/phone/OtaInCallScreen;->mOtaWidgetData:Lcom/android/phone/OtaInCallScreen$OtaWidgetData;
 
@@ -1037,7 +1037,7 @@
 
     iget-object v1, v1, Lcom/android/phone/OtaInCallScreen$OtaWidgetData;->otaDtmfDialerView:Lcom/android/phone/DTMFTwelveKeyDialerView;
 
-    invoke-virtual {v1, v3}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v1, v3}, Lcom/android/phone/DTMFTwelveKeyDialerView;->setVisibility(I)V
 
     iget-object v1, p0, Lcom/android/phone/OtaInCallScreen;->mOtaWidgetData:Lcom/android/phone/OtaInCallScreen$OtaWidgetData;
 
@@ -1049,7 +1049,7 @@
 
     iget-object v1, v1, Lcom/android/phone/OtaInCallScreen$OtaWidgetData;->otaSpeakerButton:Landroid/widget/ToggleButton;
 
-    invoke-virtual {v1, v3}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v1, v3}, Landroid/widget/ToggleButton;->setVisibility(I)V
 
     iget-object v1, p0, Lcom/android/phone/OtaInCallScreen;->mApp:Lcom/android/phone/PhoneGlobals;
 
@@ -1201,7 +1201,7 @@
 
     iget-object v0, v0, Lcom/android/phone/OtaInCallScreen$OtaWidgetData;->otaTextSuccessFail:Landroid/widget/TextView;
 
-    invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v2}, Landroid/widget/TextView;->setVisibility(I)V
 
     iget-object v0, p0, Lcom/android/phone/OtaInCallScreen;->mOtaWidgetData:Lcom/android/phone/OtaInCallScreen$OtaWidgetData;
 
@@ -1221,7 +1221,7 @@
 
     iget-object v0, v0, Lcom/android/phone/OtaInCallScreen$OtaWidgetData;->otaTryAgainButton:Landroid/widget/Button;
 
-    invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v2}, Landroid/widget/Button;->setVisibility(I)V
 
     invoke-virtual {p0}, Lcom/android/phone/OtaInCallScreen;->isDialerOpened()Z
 
@@ -1273,7 +1273,7 @@
 
     iget-object v0, v0, Lcom/android/phone/OtaInCallScreen$OtaWidgetData;->otaFailureDialog:Landroid/app/AlertDialog;
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
+    invoke-virtual {v0}, Landroid/app/AlertDialog;->getWindow()Landroid/view/Window;
 
     move-result-object v0
 
@@ -1285,7 +1285,7 @@
 
     iget-object v0, v0, Lcom/android/phone/OtaInCallScreen$OtaWidgetData;->otaFailureDialog:Landroid/app/AlertDialog;
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->show()V
+    invoke-virtual {v0}, Landroid/app/AlertDialog;->show()V
 
     mul-int/lit16 v0, p1, 0x3e8
 
@@ -1324,7 +1324,7 @@
 
     iget-object v0, v0, Lcom/android/phone/OtaInCallScreen$OtaWidgetData;->otaTextSuccessFail:Landroid/widget/TextView;
 
-    invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v2}, Landroid/widget/TextView;->setVisibility(I)V
 
     iget-object v0, p0, Lcom/android/phone/OtaInCallScreen;->mOtaWidgetData:Lcom/android/phone/OtaInCallScreen$OtaWidgetData;
 
@@ -1344,7 +1344,7 @@
 
     iget-object v0, v0, Lcom/android/phone/OtaInCallScreen$OtaWidgetData;->otaNextButton:Landroid/widget/Button;
 
-    invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v2}, Landroid/widget/Button;->setVisibility(I)V
 
     invoke-virtual {p0}, Lcom/android/phone/OtaInCallScreen;->isDialerOpened()Z
 
@@ -1378,7 +1378,7 @@
     invoke-virtual {v0, v1}, Lcom/android/phone/OtaUtils;->sendOtaspResult(I)V
 
     :cond_0
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/OtaInCallScreen;->finish()V
 
     return-void
 .end method
@@ -1613,7 +1613,7 @@
 
     const v0, 0x7f040065
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->setContentView(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/OtaInCallScreen;->setContentView(I)V
 
     iget-object v0, p0, Lcom/android/phone/OtaInCallScreen;->otaUtils:Lcom/android/phone/OtaUtils;
 
@@ -1744,14 +1744,14 @@
     move v0, v1
 
     :goto_0
-    invoke-virtual {v2, v0}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v2, v0}, Landroid/widget/Button;->setVisibility(I)V
 
     :cond_0
     iget-object v0, p0, Lcom/android/phone/OtaInCallScreen;->mOtaWidgetData:Lcom/android/phone/OtaInCallScreen$OtaWidgetData;
 
     iget-object v0, v0, Lcom/android/phone/OtaInCallScreen$OtaWidgetData;->otaTextActivate:Landroid/widget/TextView;
 
-    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setVisibility(I)V
 
     iget-object v0, p0, Lcom/android/phone/OtaInCallScreen;->mOtaWidgetData:Lcom/android/phone/OtaInCallScreen$OtaWidgetData;
 
@@ -1983,7 +1983,7 @@
 
     if-eqz p1, :cond_0
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
+    invoke-virtual {p0}, Lcom/android/phone/OtaInCallScreen;->getWindow()Landroid/view/Window;
 
     move-result-object v0
 
@@ -1993,7 +1993,7 @@
     return-void
 
     :cond_0
-    invoke-virtual {p0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
+    invoke-virtual {p0}, Lcom/android/phone/OtaInCallScreen;->getWindow()Landroid/view/Window;
 
     move-result-object v0
 

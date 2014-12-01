@@ -20,7 +20,6 @@
 # virtual methods
 .method public captureEndValues(Landroid/transition/TransitionValues;)V
     .locals 3
-    .param p1    # Landroid/transition/TransitionValues;
 
     iget-object v0, p1, Landroid/transition/TransitionValues;->values:Ljava/util/Map;
 
@@ -43,7 +42,6 @@
 
 .method public captureStartValues(Landroid/transition/TransitionValues;)V
     .locals 3
-    .param p1    # Landroid/transition/TransitionValues;
 
     iget-object v0, p1, Landroid/transition/TransitionValues;->values:Ljava/util/Map;
 
@@ -66,9 +64,6 @@
 
 .method public createAnimator(Landroid/view/ViewGroup;Landroid/transition/TransitionValues;Landroid/transition/TransitionValues;)Landroid/animation/Animator;
     .locals 6
-    .param p1    # Landroid/view/ViewGroup;
-    .param p2    # Landroid/transition/TransitionValues;
-    .param p3    # Landroid/transition/TransitionValues;
 
     const/4 v4, 0x0
 

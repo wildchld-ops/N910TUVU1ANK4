@@ -194,7 +194,6 @@
 # virtual methods
 .method public declared-synchronized createIWlanApnList(Landroid/content/Context;)V
     .locals 64
-    .param p1    # Landroid/content/Context;
 
     monitor-enter p0
 
@@ -3287,7 +3286,6 @@
 
 .method public declared-synchronized readEpdgSettings(Landroid/content/Context;)V
     .locals 41
-    .param p1    # Landroid/content/Context;
 
     monitor-enter p0
 

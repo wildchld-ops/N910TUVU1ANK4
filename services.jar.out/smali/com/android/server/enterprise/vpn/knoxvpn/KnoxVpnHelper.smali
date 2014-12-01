@@ -83,7 +83,6 @@
 
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -212,7 +211,6 @@
 
 .method public static declared-synchronized getInstance(Landroid/content/Context;)Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnHelper;
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     const-class v1, Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnHelper;
 
@@ -326,8 +324,6 @@
 # virtual methods
 .method public addVpnProfileToDatabase(Lcom/sec/enterprise/knox/KnoxVpnContext;Ljava/lang/String;)Z
     .locals 29
-    .param p1    # Lcom/sec/enterprise/knox/KnoxVpnContext;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/json/JSONException;
@@ -906,8 +902,6 @@
 
 .method public addVpnProfileToMap(Lcom/sec/enterprise/knox/KnoxVpnContext;Ljava/lang/String;)Z
     .locals 24
-    .param p1    # Lcom/sec/enterprise/knox/KnoxVpnContext;
-    .param p2    # Ljava/lang/String;
 
     move-object/from16 v0, p1
 
@@ -1287,8 +1281,6 @@
 
 .method public chainingForAddAll(Ljava/lang/String;I)Z
     .locals 14
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const-string v7, "FW-KnoxVpnHelper"
 
@@ -1531,8 +1523,6 @@
 
 .method public checkForSystemUIDApplicationForVpn(Ljava/lang/String;I)Z
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v2, 0x0
 
@@ -1636,8 +1626,6 @@
 
 .method public checkIfAdminHasVpnPermission(ILjava/lang/String;)Z
     .locals 2
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     new-instance v0, Landroid/app/enterprise/ContextInfo;
 
@@ -1656,7 +1644,6 @@
 
 .method public checkIfProfileHasChainingFeature(Ljava/lang/String;)I
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, -0x1
 
@@ -1730,7 +1717,6 @@
 
 .method public checkIfVpnProfileTableIsEmpty(Ljava/lang/String;)Z
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x1
 
@@ -1835,8 +1821,6 @@
 
 .method public checkSystemVpn(Ljava/lang/String;Ljava/lang/String;)I
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v5, -0x1
 
@@ -1960,7 +1944,6 @@
 
 .method public containerPackageListFromVpnDatabase(I)[Ljava/lang/String;
     .locals 13
-    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -2097,7 +2080,6 @@
 
 .method public getAdminUidForPersona(I)I
     .locals 4
-    .param p1    # I
 
     const/4 v0, -0x1
 
@@ -2134,7 +2116,6 @@
 
 .method public getContainerIdFromPackageName(Ljava/lang/String;)I
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, -0x1
 
@@ -2169,7 +2150,6 @@
 
 .method public getInstalledPackages(I)[Ljava/lang/String;
     .locals 16
-    .param p1    # I
 
     :try_start_0
     invoke-static {}, Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnHelper;->getPackageManager()Landroid/content/pm/IPackageManager;
@@ -2299,8 +2279,6 @@
 
 .method public getOriginalPackageName(ILjava/lang/String;)Ljava/lang/String;
     .locals 7
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     sget-boolean v4, Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnHelper;->DBG:Z
 
@@ -2405,7 +2383,6 @@
 
 .method public getPackageNameForUid(I)Ljava/lang/String;
     .locals 6
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -2457,8 +2434,6 @@
 
 .method public getPersonifiedName(ILjava/lang/String;)Ljava/lang/String;
     .locals 5
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     :try_start_0
     sget-boolean v2, Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnHelper;->DBG:Z
@@ -2535,7 +2510,6 @@
 
 .method public getProfileNameFromJsonString(Ljava/lang/String;)Ljava/lang/String;
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -2601,7 +2575,6 @@
 
 .method public getProfileOfVendor(Ljava/lang/String;)Ljava/lang/String;
     .locals 12
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -2712,7 +2685,6 @@
 
 .method public getProfileOwningThePackage(Ljava/lang/String;)Ljava/lang/String;
     .locals 12
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -2823,7 +2795,6 @@
 
 .method public getRegularPackageName(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -2850,8 +2821,6 @@
 
 .method public getTransformedUIDForPackage(II)I
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     invoke-static {p1, p2}, Landroid/os/UserHandle;->getUid(II)I
 
@@ -2862,8 +2831,6 @@
 
 .method public getUIDForPackage(ILjava/lang/String;)I
     .locals 9
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v5, -0x1
 
@@ -3005,7 +2972,6 @@
 
 .method public getUidForPackageName(Ljava/lang/String;)I
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     sget-boolean v3, Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnHelper;->DBG:Z
 
@@ -3146,7 +3112,6 @@
 
 .method public declared-synchronized isPackageExists(I)Z
     .locals 10
-    .param p1    # I
 
     monitor-enter p0
 
@@ -3256,8 +3221,6 @@
 
 .method public isPackageInstalled(Ljava/lang/String;I)Z
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v5, 0x0
 
@@ -3358,7 +3321,6 @@
 
 .method public isPersonaExists(I)Z
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0}, Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnHelper;->getPersonManager()Landroid/os/PersonaManager;
 
@@ -3389,7 +3351,6 @@
 
 .method public declared-synchronized isRangeExists(I)Z
     .locals 6
-    .param p1    # I
 
     monitor-enter p0
 

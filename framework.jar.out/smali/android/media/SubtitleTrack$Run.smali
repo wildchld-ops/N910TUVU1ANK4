@@ -77,7 +77,6 @@
 
 .method synthetic constructor <init>(Landroid/media/SubtitleTrack$1;)V
     .locals 0
-    .param p1    # Landroid/media/SubtitleTrack$1;
 
     invoke-direct {p0}, Landroid/media/SubtitleTrack$Run;-><init>()V
 

@@ -115,7 +115,6 @@
 
 .method public constructor <init>(Lcom/diotek/ime/framework/engine/dhwr/HwrPathController$Diopoint;)V
     .locals 12
-    .param p1    # Lcom/diotek/ime/framework/engine/dhwr/HwrPathController$Diopoint;
 
     const/high16 v11, 0x40000000
 
@@ -267,7 +266,6 @@
 
 .method public constructor <init>(Ljava/util/List;Ljava/util/List;I)V
     .locals 11
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -498,8 +496,6 @@
 
 .method public constructor <init>([F[F)V
     .locals 10
-    .param p1    # [F
-    .param p2    # [F
 
     const/4 v9, 0x1
 
@@ -652,9 +648,6 @@
 # virtual methods
 .method public add(FFI)Z
     .locals 6
-    .param p1    # F
-    .param p2    # F
-    .param p3    # I
 
     const/high16 v5, 0x40000000
 
@@ -934,8 +927,6 @@
 
 .method public add([F[F)Z
     .locals 9
-    .param p1    # [F
-    .param p2    # [F
 
     const/high16 v8, 0x40000000
 
@@ -1471,7 +1462,6 @@
 
 .method public setEnable(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/engine/dhwr/HwrPathController$Diopoint;->mEnable:Z
 
@@ -1480,7 +1470,6 @@
 
 .method public setGrouped(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/diotek/ime/framework/engine/dhwr/HwrPathController$Diopoint;->mGrouped:I
 
@@ -1489,7 +1478,6 @@
 
 .method public setMatrix(Landroid/graphics/Matrix;)V
     .locals 1
-    .param p1    # Landroid/graphics/Matrix;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/engine/dhwr/HwrPathController$Diopoint;->transMatrix:Landroid/graphics/Matrix;
 
@@ -1500,7 +1488,6 @@
 
 .method public setSelected(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/engine/dhwr/HwrPathController$Diopoint;->mSelected:Z
 
@@ -1509,7 +1496,6 @@
 
 .method public setUnusedPoint(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/engine/dhwr/HwrPathController$Diopoint;->mUnusedPoint:Z
 

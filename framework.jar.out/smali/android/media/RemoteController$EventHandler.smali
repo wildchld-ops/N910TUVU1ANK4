@@ -21,8 +21,6 @@
 # direct methods
 .method public constructor <init>(Landroid/media/RemoteController;Landroid/media/RemoteController;Landroid/os/Looper;)V
     .locals 0
-    .param p2    # Landroid/media/RemoteController;
-    .param p3    # Landroid/os/Looper;
 
     iput-object p1, p0, Landroid/media/RemoteController$EventHandler;->this$0:Landroid/media/RemoteController;
 
@@ -35,7 +33,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 5
-    .param p1    # Landroid/os/Message;
 
     const/4 v1, 0x0
 

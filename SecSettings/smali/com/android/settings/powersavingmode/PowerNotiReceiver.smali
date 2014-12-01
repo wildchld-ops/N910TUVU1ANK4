@@ -620,8 +620,6 @@
 
 .method private setUidAllowedForData([Ljava/lang/String;Z)V
     .locals 6
-    .param p1    # [Ljava/lang/String;
-    .param p2    # Z
 
     iget-object v3, p0, Lcom/android/settings/powersavingmode/PowerNotiReceiver;->mContext:Landroid/content/Context;
 
@@ -730,7 +728,6 @@
 
 .method private updateBlackGreyModeChanged(I)V
     .locals 7
-    .param p1    # I
 
     const/4 v6, 0x0
 
@@ -983,7 +980,6 @@
 
 .method private updateDataServiceListChanged(I)V
     .locals 12
-    .param p1    # I
 
     const/4 v11, 0x0
 
@@ -1158,7 +1154,6 @@
 # virtual methods
 .method public disablePowerSavingMode(Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     const/4 v3, 0x1
 
@@ -1193,7 +1188,6 @@
 
 .method public enablePowerSavingMode(Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     const/4 v3, 0x1
 
@@ -1252,7 +1246,6 @@
 
 .method public getUid(Ljava/lang/String;)I
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     iget-object v3, p0, Lcom/android/settings/powersavingmode/PowerNotiReceiver;->mContext:Landroid/content/Context;
 
@@ -1286,7 +1279,6 @@
 
 .method public notificationClear(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const v0, 0x7f020686
 
@@ -1433,8 +1425,6 @@
 
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 20
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     invoke-virtual/range {p2 .. p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 

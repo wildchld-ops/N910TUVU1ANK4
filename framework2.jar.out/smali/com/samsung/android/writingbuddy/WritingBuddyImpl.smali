@@ -277,7 +277,6 @@
 
 .method public constructor <init>(Landroid/view/View;)V
     .locals 4
-    .param p1    # Landroid/view/View;
 
     const/4 v3, 0x1
 
@@ -363,7 +362,6 @@
 
 .method static synthetic access$000(Lcom/samsung/android/writingbuddy/WritingBuddyImpl;)Lcom/samsung/android/writingbuddy/PopupCue;
     .locals 1
-    .param p0    # Lcom/samsung/android/writingbuddy/WritingBuddyImpl;
 
     iget-object v0, p0, Lcom/samsung/android/writingbuddy/WritingBuddyImpl;->mPopupCue:Lcom/samsung/android/writingbuddy/PopupCue;
 
@@ -372,7 +370,6 @@
 
 .method static synthetic access$100(Lcom/samsung/android/writingbuddy/WritingBuddyImpl;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/samsung/android/writingbuddy/WritingBuddyImpl;
 
     invoke-direct {p0}, Lcom/samsung/android/writingbuddy/WritingBuddyImpl;->getHandler()Landroid/os/Handler;
 
@@ -383,7 +380,6 @@
 
 .method static synthetic access$1000(Lcom/samsung/android/writingbuddy/WritingBuddyImpl;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/samsung/android/writingbuddy/WritingBuddyImpl;
 
     iget-object v0, p0, Lcom/samsung/android/writingbuddy/WritingBuddyImpl;->mHandler:Landroid/os/Handler;
 
@@ -392,8 +388,6 @@
 
 .method static synthetic access$200(Lcom/samsung/android/writingbuddy/WritingBuddyImpl;Z)Z
     .locals 1
-    .param p0    # Lcom/samsung/android/writingbuddy/WritingBuddyImpl;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/samsung/android/writingbuddy/WritingBuddyImpl;->dismissPopupCue(Z)Z
 
@@ -404,7 +398,6 @@
 
 .method static synthetic access$300(Lcom/samsung/android/writingbuddy/WritingBuddyImpl;)Z
     .locals 1
-    .param p0    # Lcom/samsung/android/writingbuddy/WritingBuddyImpl;
 
     invoke-direct {p0}, Lcom/samsung/android/writingbuddy/WritingBuddyImpl;->showWritingBuddy()Z
 
@@ -415,7 +408,6 @@
 
 .method static synthetic access$400(Lcom/samsung/android/writingbuddy/WritingBuddyImpl;)I
     .locals 1
-    .param p0    # Lcom/samsung/android/writingbuddy/WritingBuddyImpl;
 
     iget v0, p0, Lcom/samsung/android/writingbuddy/WritingBuddyImpl;->mBoardType:I
 
@@ -424,7 +416,6 @@
 
 .method static synthetic access$500(Lcom/samsung/android/writingbuddy/WritingBuddyImpl;)I
     .locals 1
-    .param p0    # Lcom/samsung/android/writingbuddy/WritingBuddyImpl;
 
     iget v0, p0, Lcom/samsung/android/writingbuddy/WritingBuddyImpl;->mState:I
 
@@ -433,10 +424,6 @@
 
 .method static synthetic access$600(Lcom/samsung/android/writingbuddy/WritingBuddyImpl;Landroid/view/View;FF)Z
     .locals 1
-    .param p0    # Lcom/samsung/android/writingbuddy/WritingBuddyImpl;
-    .param p1    # Landroid/view/View;
-    .param p2    # F
-    .param p3    # F
 
     invoke-direct {p0, p1, p2, p3}, Lcom/samsung/android/writingbuddy/WritingBuddyImpl;->pointInView(Landroid/view/View;FF)Z
 
@@ -447,7 +434,6 @@
 
 .method static synthetic access$700(Lcom/samsung/android/writingbuddy/WritingBuddyImpl;)Z
     .locals 1
-    .param p0    # Lcom/samsung/android/writingbuddy/WritingBuddyImpl;
 
     iget-boolean v0, p0, Lcom/samsung/android/writingbuddy/WritingBuddyImpl;->mIsPopupCueShowMSGCalled:Z
 
@@ -456,8 +442,6 @@
 
 .method static synthetic access$702(Lcom/samsung/android/writingbuddy/WritingBuddyImpl;Z)Z
     .locals 0
-    .param p0    # Lcom/samsung/android/writingbuddy/WritingBuddyImpl;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/android/writingbuddy/WritingBuddyImpl;->mIsPopupCueShowMSGCalled:Z
 
@@ -466,8 +450,6 @@
 
 .method static synthetic access$800(Lcom/samsung/android/writingbuddy/WritingBuddyImpl;Landroid/os/Message;)V
     .locals 0
-    .param p0    # Lcom/samsung/android/writingbuddy/WritingBuddyImpl;
-    .param p1    # Landroid/os/Message;
 
     invoke-direct {p0, p1}, Lcom/samsung/android/writingbuddy/WritingBuddyImpl;->handleMessage(Landroid/os/Message;)V
 
@@ -476,7 +458,6 @@
 
 .method static synthetic access$900(Lcom/samsung/android/writingbuddy/WritingBuddyImpl;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/samsung/android/writingbuddy/WritingBuddyImpl;
 
     iget-object v0, p0, Lcom/samsung/android/writingbuddy/WritingBuddyImpl;->mParentView:Landroid/view/View;
 
@@ -485,7 +466,6 @@
 
 .method private canStartTemplateWritingBuddy(Z)Z
     .locals 11
-    .param p1    # Z
 
     const/4 v9, 0x0
 
@@ -817,7 +797,6 @@
 
 .method private canStartWritingBuddy(Z)Z
     .locals 14
-    .param p1    # Z
 
     iget-boolean v5, p0, Lcom/samsung/android/writingbuddy/WritingBuddyImpl;->mCanStartWritingBuddy:Z
 
@@ -1263,7 +1242,6 @@
 
 .method private closeWritingBuddy(Z)Z
     .locals 3
-    .param p1    # Z
 
     :try_start_0
     iget-object v1, p0, Lcom/samsung/android/writingbuddy/WritingBuddyImpl;->mWBManager:Lcom/samsung/android/writingbuddy/IWritingBuddyManager;
@@ -1298,8 +1276,6 @@
 
 .method private convertDPtoPX(FLandroid/util/DisplayMetrics;)I
     .locals 3
-    .param p1    # F
-    .param p2    # Landroid/util/DisplayMetrics;
 
     move-object v0, p2
 
@@ -1375,7 +1351,6 @@
 
 .method private dismissPopupCue(Z)Z
     .locals 3
-    .param p1    # Z
 
     const-string v1, "WritingBuddyImpl"
 
@@ -1571,7 +1546,6 @@
 
 .method private getRectInWindow(Landroid/view/View;)Landroid/graphics/Rect;
     .locals 7
-    .param p1    # Landroid/view/View;
 
     const/4 v6, 0x1
 
@@ -1625,7 +1599,6 @@
 
 .method private getRectOnScreen(Landroid/view/View;)Landroid/graphics/Rect;
     .locals 7
-    .param p1    # Landroid/view/View;
 
     const/4 v6, 0x1
 
@@ -1679,8 +1652,6 @@
 
 .method private getTargetWBRect(Landroid/view/View;I)Landroid/graphics/Rect;
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/samsung/android/writingbuddy/WritingBuddyImpl;->mWBRect:Landroid/graphics/Rect;
 
@@ -1689,8 +1660,6 @@
 
 .method private getVisibleRectInWindow(Landroid/view/View;Z)Landroid/graphics/Rect;
     .locals 18
-    .param p1    # Landroid/view/View;
-    .param p2    # Z
 
     move-object/from16 v0, p0
 
@@ -2007,8 +1976,6 @@
 
 .method private getVisibleRectOnScreen(Landroid/view/View;Z)Landroid/graphics/Rect;
     .locals 18
-    .param p1    # Landroid/view/View;
-    .param p2    # Z
 
     move-object/from16 v0, p0
 
@@ -2365,7 +2332,6 @@
 
 .method private handleMessage(Landroid/os/Message;)V
     .locals 8
-    .param p1    # Landroid/os/Message;
 
     const/4 v7, 0x0
 
@@ -2499,7 +2465,6 @@
 
 .method private isPasswordInputType(Landroid/view/View;)Z
     .locals 5
-    .param p1    # Landroid/view/View;
 
     const/4 v2, 0x0
 
@@ -2615,7 +2580,6 @@
 
 .method private notifyPositionCheck(I)V
     .locals 7
-    .param p1    # I
 
     const/4 v6, 0x0
 
@@ -2772,8 +2736,6 @@
 
 .method private pointInView(FF)Z
     .locals 1
-    .param p1    # F
-    .param p2    # F
 
     iget-object v0, p0, Lcom/samsung/android/writingbuddy/WritingBuddyImpl;->mParentView:Landroid/view/View;
 
@@ -2786,9 +2748,6 @@
 
 .method private pointInView(Landroid/view/View;FF)Z
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # F
-    .param p3    # F
 
     const/4 v2, 0x0
 
@@ -2845,7 +2804,6 @@
 
 .method private registerEventListener(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -3026,10 +2984,6 @@
 
 .method private scheduleState(IILandroid/view/MotionEvent;I)Z
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/view/MotionEvent;
-    .param p4    # I
 
     iget v0, p0, Lcom/samsung/android/writingbuddy/WritingBuddyImpl;->mBoardType:I
 
@@ -3054,10 +3008,6 @@
 
 .method private scheduleStateForEditor(IILandroid/view/MotionEvent;I)Z
     .locals 10
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/view/MotionEvent;
-    .param p4    # I
 
     iput-object p3, p0, Lcom/samsung/android/writingbuddy/WritingBuddyImpl;->motionEvent:Landroid/view/MotionEvent;
 
@@ -3686,10 +3636,6 @@
 
 .method private scheduleStateForTemplate(IILandroid/view/MotionEvent;I)Z
     .locals 8
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/view/MotionEvent;
-    .param p4    # I
 
     invoke-static {p3}, Lcom/samsung/android/writingbuddy/WritingBuddyImpl$EventChecker;->isDuplicated(Landroid/view/MotionEvent;)Z
 
@@ -4283,7 +4229,6 @@
 
 .method private sendActionButtonResult(I)V
     .locals 4
-    .param p1    # I
 
     const/4 v3, 0x2
 
@@ -4346,7 +4291,6 @@
 
 .method private sendHelpModeResult(Ljava/lang/CharSequence;)V
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
 
     iget-boolean v0, p0, Lcom/samsung/android/writingbuddy/WritingBuddyImpl;->mIsHelpModeEnabled:Z
 
@@ -4366,7 +4310,6 @@
 
 .method private sendMMSDataDelete(Ljava/lang/CharSequence;)V
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
 
     iget-object v0, p0, Lcom/samsung/android/writingbuddy/WritingBuddyImpl;->mTextWritingListener:Lcom/samsung/android/writingbuddy/WritingBuddyImpl$OnTextWritingListener;
 
@@ -4382,8 +4325,6 @@
 
 .method private sendWatchActionResult(Ljava/lang/CharSequence;Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Landroid/os/Bundle;
 
     iget-boolean v0, p0, Lcom/samsung/android/writingbuddy/WritingBuddyImpl;->mIsWatchActionEnabled:Z
 
@@ -6106,7 +6047,6 @@
 
 .method public finish(Z)V
     .locals 6
-    .param p1    # Z
 
     const/4 v5, 0x0
 
@@ -6249,8 +6189,6 @@
 
 .method public handleMotionEvent(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 4
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     const/4 v1, 0x0
 
@@ -6300,7 +6238,6 @@
 
 .method public handleWindowFocusChanged(Z)Z
     .locals 6
-    .param p1    # Z
 
     const/4 v5, 0x0
 
@@ -6441,7 +6378,6 @@
 
 .method public notifyPositionChanged(I)V
     .locals 8
-    .param p1    # I
 
     const/4 v7, 0x0
 
@@ -6690,7 +6626,6 @@
 
 .method public onCreateInputConnection(Landroid/view/inputmethod/EditorInfo;)Landroid/view/inputmethod/InputConnection;
     .locals 1
-    .param p1    # Landroid/view/inputmethod/EditorInfo;
 
     const/4 v0, 0x0
 
@@ -6699,7 +6634,6 @@
 
 .method public onImageInserted(Landroid/graphics/Bitmap;)V
     .locals 1
-    .param p1    # Landroid/graphics/Bitmap;
 
     if-nez p1, :cond_1
 
@@ -6737,8 +6671,6 @@
 
 .method public onResultReceived(Landroid/os/Bundle;I)V
     .locals 13
-    .param p1    # Landroid/os/Bundle;
-    .param p2    # I
 
     const/4 v12, 0x2
 
@@ -7328,8 +7260,6 @@
 
 .method public onTextDeleted(II)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
 
     sget-boolean v2, Lcom/samsung/android/writingbuddy/WritingBuddyImpl;->DEBUG:Z
 
@@ -7477,9 +7407,6 @@
 
 .method public onTextInserted(ILjava/lang/CharSequence;I)V
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/CharSequence;
-    .param p3    # I
 
     const/4 v3, 0x0
 
@@ -7862,7 +7789,6 @@
 
 .method public setAnchorView(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     iput-object p1, p0, Lcom/samsung/android/writingbuddy/WritingBuddyImpl;->mAnchorView:Landroid/view/View;
 
@@ -7871,7 +7797,6 @@
 
 .method public setBoardTemplate(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/android/writingbuddy/WritingBuddyImpl;->mBoardTemplate:I
 
@@ -7880,7 +7805,6 @@
 
 .method public setBoardType(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/android/writingbuddy/WritingBuddyImpl;->mBoardType:I
 
@@ -7889,7 +7813,6 @@
 
 .method public setEditorType(I)V
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -7915,7 +7838,6 @@
 
 .method public setImageWritingEnabled(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/android/writingbuddy/WritingBuddyImpl;->mIsImageWritingEnabled:Z
 
@@ -7924,7 +7846,6 @@
 
 .method public setMathWritingEnabled(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/android/writingbuddy/WritingBuddyImpl;->mIsMathWritingEnabled:Z
 
@@ -7933,7 +7854,6 @@
 
 .method public setOnImageWritingListener(Lcom/samsung/android/writingbuddy/WritingBuddyImpl$OnImageWritingListener;)V
     .locals 1
-    .param p1    # Lcom/samsung/android/writingbuddy/WritingBuddyImpl$OnImageWritingListener;
 
     if-eqz p1, :cond_0
 
@@ -7954,7 +7874,6 @@
 
 .method public setOnPrivateCommandListner(Lcom/samsung/android/writingbuddy/WritingBuddyImpl$OnPrivateCommandListener;)V
     .locals 0
-    .param p1    # Lcom/samsung/android/writingbuddy/WritingBuddyImpl$OnPrivateCommandListener;
 
     iput-object p1, p0, Lcom/samsung/android/writingbuddy/WritingBuddyImpl;->mPrivateCommandListener:Lcom/samsung/android/writingbuddy/WritingBuddyImpl$OnPrivateCommandListener;
 
@@ -7963,7 +7882,6 @@
 
 .method public setOnTextUpdateListener(Lcom/samsung/android/writingbuddy/WritingBuddyImpl$OnTextUpdateListener;)V
     .locals 0
-    .param p1    # Lcom/samsung/android/writingbuddy/WritingBuddyImpl$OnTextUpdateListener;
 
     iput-object p1, p0, Lcom/samsung/android/writingbuddy/WritingBuddyImpl;->mTextUpdateListener:Lcom/samsung/android/writingbuddy/WritingBuddyImpl$OnTextUpdateListener;
 
@@ -7972,7 +7890,6 @@
 
 .method public setOnTextWritingListener(Lcom/samsung/android/writingbuddy/WritingBuddyImpl$OnTextWritingListener;)V
     .locals 0
-    .param p1    # Lcom/samsung/android/writingbuddy/WritingBuddyImpl$OnTextWritingListener;
 
     iput-object p1, p0, Lcom/samsung/android/writingbuddy/WritingBuddyImpl;->mTextWritingListener:Lcom/samsung/android/writingbuddy/WritingBuddyImpl$OnTextWritingListener;
 
@@ -7981,7 +7898,6 @@
 
 .method public setParentView(Landroid/view/View;)V
     .locals 3
-    .param p1    # Landroid/view/View;
 
     const/4 v2, 0x0
 
@@ -8014,7 +7930,6 @@
 
 .method public setPrivateCommnad(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x1
 

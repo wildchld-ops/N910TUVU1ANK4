@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Lcom/android/server/TextServicesManagerService;Lcom/android/server/TextServicesManagerService$1;)V
     .locals 0
-    .param p1    # Lcom/android/server/TextServicesManagerService;
-    .param p2    # Lcom/android/server/TextServicesManagerService$1;
 
     invoke-direct {p0, p1}, Lcom/android/server/TextServicesManagerService$TextServicesMonitor;-><init>(Lcom/android/server/TextServicesManagerService;)V
 

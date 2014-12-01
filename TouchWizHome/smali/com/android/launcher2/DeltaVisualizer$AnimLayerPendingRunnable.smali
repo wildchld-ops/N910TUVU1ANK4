@@ -35,7 +35,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/launcher2/DeltaVisualizer;Landroid/view/View;)V
     .locals 1
-    .param p2    # Landroid/view/View;
 
     iput-object p1, p0, Lcom/android/launcher2/DeltaVisualizer$AnimLayerPendingRunnable;->this$0:Lcom/android/launcher2/DeltaVisualizer;
 

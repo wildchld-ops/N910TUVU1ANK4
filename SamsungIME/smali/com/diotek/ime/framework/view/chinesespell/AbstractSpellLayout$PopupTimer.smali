@@ -42,8 +42,6 @@
 
 .method synthetic constructor <init>(Lcom/diotek/ime/framework/view/chinesespell/AbstractSpellLayout;Lcom/diotek/ime/framework/view/chinesespell/AbstractSpellLayout$1;)V
     .locals 0
-    .param p1    # Lcom/diotek/ime/framework/view/chinesespell/AbstractSpellLayout;
-    .param p2    # Lcom/diotek/ime/framework/view/chinesespell/AbstractSpellLayout$1;
 
     invoke-direct {p0, p1}, Lcom/diotek/ime/framework/view/chinesespell/AbstractSpellLayout$PopupTimer;-><init>(Lcom/diotek/ime/framework/view/chinesespell/AbstractSpellLayout;)V
 

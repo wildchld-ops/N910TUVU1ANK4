@@ -378,11 +378,6 @@
 
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;FFFF)V
     .locals 10
-    .param p1    # Lcom/sec/android/app/camera/Camera;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
 
     invoke-virtual {p1}, Lcom/sec/android/app/camera/Camera;->getGLContext()Lcom/sec/android/glview/TwGLContext;
 
@@ -689,8 +684,6 @@
 # virtual methods
 .method public declared-synchronized contains(FF)Z
     .locals 1
-    .param p1    # F
-    .param p2    # F
 
     monitor-enter p0
 
@@ -703,7 +696,6 @@
 
 .method public convertOrientationForSubView(I)I
     .locals 1
-    .param p1    # I
 
     const/4 v0, -0x1
 
@@ -745,8 +737,6 @@
 
 .method public declared-synchronized findViewByCoordinate(FF)Lcom/sec/android/glview/TwGLView;
     .locals 1
-    .param p1    # F
-    .param p2    # F
 
     monitor-enter p0
 
@@ -883,14 +873,12 @@
 
 .method public onMoveHelpFocusPicker(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onOrientationChanged(I)V
     .locals 1
-    .param p1    # I
 
     sget v0, Lcom/sec/android/app/camera/glwidget/TwGLTutorialRecordingMode;->mOrientation:I
 
@@ -908,7 +896,6 @@
 
 .method public setHelpText(I)V
     .locals 13
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -3762,7 +3749,6 @@
 
 .method public setSizeForOrientation(I)V
     .locals 11
-    .param p1    # I
 
     const/4 v6, 0x0
 

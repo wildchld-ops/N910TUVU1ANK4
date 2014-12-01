@@ -41,11 +41,6 @@
 
 .method private backspaceOrForwardDelete(Landroid/view/View;Landroid/text/Editable;ILandroid/view/KeyEvent;Z)Z
     .locals 5
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/text/Editable;
-    .param p3    # I
-    .param p4    # Landroid/view/KeyEvent;
-    .param p5    # Z
 
     const/4 v2, 0x0
 
@@ -148,8 +143,6 @@
 
 .method private deleteLine(Landroid/view/View;Landroid/text/Editable;)Z
     .locals 5
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/text/Editable;
 
     instance-of v4, p1, Landroid/widget/TextView;
 
@@ -196,8 +189,6 @@
 
 .method private deleteSelection(Landroid/view/View;Landroid/text/Editable;)Z
     .locals 4
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/text/Editable;
 
     invoke-static {p2}, Landroid/text/Selection;->getSelectionStart(Ljava/lang/CharSequence;)I
 
@@ -233,8 +224,6 @@
 
 .method static makeTextContentType(Landroid/text/method/TextKeyListener$Capitalize;Z)I
     .locals 3
-    .param p0    # Landroid/text/method/TextKeyListener$Capitalize;
-    .param p1    # Z
 
     const/4 v0, 0x1
 
@@ -285,10 +274,6 @@
 # virtual methods
 .method public backspace(Landroid/view/View;Landroid/text/Editable;ILandroid/view/KeyEvent;)Z
     .locals 6
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/text/Editable;
-    .param p3    # I
-    .param p4    # Landroid/view/KeyEvent;
 
     const/4 v5, 0x0
 
@@ -311,10 +296,6 @@
 
 .method public forwardDelete(Landroid/view/View;Landroid/text/Editable;ILandroid/view/KeyEvent;)Z
     .locals 6
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/text/Editable;
-    .param p3    # I
-    .param p4    # Landroid/view/KeyEvent;
 
     const/4 v5, 0x1
 
@@ -337,10 +318,6 @@
 
 .method public onKeyDown(Landroid/view/View;Landroid/text/Editable;ILandroid/view/KeyEvent;)Z
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/text/Editable;
-    .param p3    # I
-    .param p4    # Landroid/view/KeyEvent;
 
     sparse-switch p3, :sswitch_data_0
 
@@ -381,9 +358,6 @@
 
 .method public onKeyOther(Landroid/view/View;Landroid/text/Editable;Landroid/view/KeyEvent;)Z
     .locals 7
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/text/Editable;
-    .param p3    # Landroid/view/KeyEvent;
 
     const/4 v4, 0x0
 

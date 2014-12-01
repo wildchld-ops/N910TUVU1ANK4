@@ -39,7 +39,6 @@
 # virtual methods
 .method applyNewConfig(Landroid/content/res/Resources;)Z
     .locals 6
-    .param p1    # Landroid/content/res/Resources;
 
     const/4 v3, 0x1
 

@@ -40,7 +40,6 @@
 # virtual methods
 .method public onLongClick(Landroid/view/View;)Z
     .locals 2
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Lcom/android/mms/ui/ComposeMessageFragment$151;->this$0:Lcom/android/mms/ui/ComposeMessageFragment;
 

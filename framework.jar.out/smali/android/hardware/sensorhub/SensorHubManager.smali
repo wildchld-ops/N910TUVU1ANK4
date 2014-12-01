@@ -124,8 +124,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/os/Looper;)V
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/Looper;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -281,8 +279,6 @@
 
 .method private static SendSensorHubData(I[B)I
     .locals 7
-    .param p0    # I
-    .param p1    # [B
 
     const/16 v6, 0x100
 
@@ -429,7 +425,6 @@
 
 .method static synthetic access$002(I)I
     .locals 0
-    .param p0    # I
 
     sput p0, Landroid/hardware/sensorhub/SensorHubManager;->sQueue:I
 
@@ -446,7 +441,6 @@
 
 .method private disableSensorHubLocked(Landroid/hardware/sensorhub/SensorHub;)Z
     .locals 3
-    .param p1    # Landroid/hardware/sensorhub/SensorHub;
 
     const/4 v2, -0x1
 
@@ -465,8 +459,6 @@
 
 .method private enableSensorHubLocked(Landroid/hardware/sensorhub/SensorHub;I)Z
     .locals 6
-    .param p1    # Landroid/hardware/sensorhub/SensorHub;
-    .param p2    # I
 
     const/4 v3, 0x0
 
@@ -540,7 +532,6 @@
 
 .method private unregisterListener(Ljava/lang/Object;)V
     .locals 9
-    .param p1    # Ljava/lang/Object;
 
     if-nez p1, :cond_0
 
@@ -654,8 +645,6 @@
 
 .method private unregisterListener(Ljava/lang/Object;Landroid/hardware/sensorhub/SensorHub;)V
     .locals 7
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Landroid/hardware/sensorhub/SensorHub;
 
     if-eqz p1, :cond_0
 
@@ -768,9 +757,6 @@
 # virtual methods
 .method public SendSensorHubData(Landroid/hardware/sensorhub/SensorHub;I[B)I
     .locals 1
-    .param p1    # Landroid/hardware/sensorhub/SensorHub;
-    .param p2    # I
-    .param p3    # [B
 
     invoke-static {p2, p3}, Landroid/hardware/sensorhub/SensorHubManager;->SendSensorHubData(I[B)I
 
@@ -781,7 +767,6 @@
 
 .method public getDefaultSensorHub(I)Landroid/hardware/sensorhub/SensorHub;
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/hardware/sensorhub/SensorHubManager;->getSensorHubList(I)Ljava/util/List;
 
@@ -812,7 +797,6 @@
 
 .method public getSensorHubList(I)Ljava/util/List;
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -899,9 +883,6 @@
 
 .method public registerListener(Landroid/hardware/sensorhub/SensorHubEventListener;Landroid/hardware/sensorhub/SensorHub;I)Z
     .locals 1
-    .param p1    # Landroid/hardware/sensorhub/SensorHubEventListener;
-    .param p2    # Landroid/hardware/sensorhub/SensorHub;
-    .param p3    # I
 
     const/4 v0, 0x0
 
@@ -914,10 +895,6 @@
 
 .method public registerListener(Landroid/hardware/sensorhub/SensorHubEventListener;Landroid/hardware/sensorhub/SensorHub;ILandroid/os/Handler;)Z
     .locals 6
-    .param p1    # Landroid/hardware/sensorhub/SensorHubEventListener;
-    .param p2    # Landroid/hardware/sensorhub/SensorHub;
-    .param p3    # I
-    .param p4    # Landroid/os/Handler;
 
     if-gez p3, :cond_0
 
@@ -951,11 +928,6 @@
 
 .method public registerListener(Landroid/hardware/sensorhub/SensorHubEventListener;Landroid/hardware/sensorhub/SensorHub;ILandroid/os/Handler;I)Z
     .locals 10
-    .param p1    # Landroid/hardware/sensorhub/SensorHubEventListener;
-    .param p2    # Landroid/hardware/sensorhub/SensorHub;
-    .param p3    # I
-    .param p4    # Landroid/os/Handler;
-    .param p5    # I
 
     if-eqz p1, :cond_0
 
@@ -1214,7 +1186,6 @@
 
 .method public unregisterListener(Landroid/hardware/sensorhub/SensorHubEventListener;)V
     .locals 0
-    .param p1    # Landroid/hardware/sensorhub/SensorHubEventListener;
 
     invoke-direct {p0, p1}, Landroid/hardware/sensorhub/SensorHubManager;->unregisterListener(Ljava/lang/Object;)V
 
@@ -1223,8 +1194,6 @@
 
 .method public unregisterListener(Landroid/hardware/sensorhub/SensorHubEventListener;Landroid/hardware/sensorhub/SensorHub;)V
     .locals 0
-    .param p1    # Landroid/hardware/sensorhub/SensorHubEventListener;
-    .param p2    # Landroid/hardware/sensorhub/SensorHub;
 
     invoke-direct {p0, p1, p2}, Landroid/hardware/sensorhub/SensorHubManager;->unregisterListener(Ljava/lang/Object;Landroid/hardware/sensorhub/SensorHub;)V
 

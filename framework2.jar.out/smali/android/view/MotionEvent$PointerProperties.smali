@@ -33,7 +33,6 @@
 
 .method public constructor <init>(Landroid/view/MotionEvent$PointerProperties;)V
     .locals 0
-    .param p1    # Landroid/view/MotionEvent$PointerProperties;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -44,8 +43,6 @@
 
 .method static synthetic access$000(Landroid/view/MotionEvent$PointerProperties;Landroid/view/MotionEvent$PointerProperties;)Z
     .locals 1
-    .param p0    # Landroid/view/MotionEvent$PointerProperties;
-    .param p1    # Landroid/view/MotionEvent$PointerProperties;
 
     invoke-direct {p0, p1}, Landroid/view/MotionEvent$PointerProperties;->equals(Landroid/view/MotionEvent$PointerProperties;)Z
 
@@ -56,7 +53,6 @@
 
 .method public static createArray(I)[Landroid/view/MotionEvent$PointerProperties;
     .locals 3
-    .param p0    # I
 
     new-array v0, p0, [Landroid/view/MotionEvent$PointerProperties;
 
@@ -81,7 +77,6 @@
 
 .method private equals(Landroid/view/MotionEvent$PointerProperties;)Z
     .locals 2
-    .param p1    # Landroid/view/MotionEvent$PointerProperties;
 
     if-eqz p1, :cond_0
 
@@ -126,7 +121,6 @@
 
 .method public copyFrom(Landroid/view/MotionEvent$PointerProperties;)V
     .locals 1
-    .param p1    # Landroid/view/MotionEvent$PointerProperties;
 
     iget v0, p1, Landroid/view/MotionEvent$PointerProperties;->id:I
 
@@ -141,7 +135,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     instance-of v0, p1, Landroid/view/MotionEvent$PointerProperties;
 

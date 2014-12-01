@@ -236,7 +236,6 @@
 
 .method private getAdjectFactorForDensity(I)F
     .locals 1
-    .param p1    # I
 
     const/high16 v0, 0x3f800000
 
@@ -290,10 +289,6 @@
 
 .method private getDistance(FFFF)I
     .locals 6
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
 
     const-wide/high16 v4, 0x4000000000000000L
 
@@ -394,7 +389,6 @@
 
 .method private isNarrowChar(Ljava/lang/CharSequence;)Z
     .locals 3
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v1, 0x0
 
@@ -450,7 +444,6 @@
 
 .method private isPointMovementGesture(Landroid/view/MotionEvent;)Z
     .locals 9
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v5, 0x0
 
@@ -574,7 +567,6 @@
 # virtual methods
 .method public checkNeedMove(Landroid/view/MotionEvent;)I
     .locals 8
-    .param p1    # Landroid/view/MotionEvent;
 
     const-wide v6, 0x3fe999999999999aL
 
@@ -752,7 +744,6 @@
 
 .method public getDirectionX(Landroid/view/MotionEvent;)I
     .locals 3
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v0, 0x0
 
@@ -807,7 +798,6 @@
 
 .method public getDirectionY(Landroid/view/MotionEvent;)I
     .locals 3
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v0, 0x0
 
@@ -1257,7 +1247,6 @@
 
 .method public onDownKeyEvent(I)V
     .locals 23
-    .param p1    # I
 
     move-object/from16 v0, p0
 
@@ -1752,7 +1741,6 @@
 
 .method public setDownPosition(Landroid/view/MotionEvent;)V
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     if-eqz p1, :cond_0
 
@@ -1782,8 +1770,6 @@
 
 .method public setDownPosition(Landroid/view/MotionEvent;I)V
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # I
 
     if-eqz p1, :cond_0
 
@@ -1813,7 +1799,6 @@
 
 .method public setPointingShiftPressed(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/trace/KeyboardPointing;->mPointingShiftPressed:Z
 

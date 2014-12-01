@@ -51,8 +51,6 @@
 # direct methods
 .method constructor <init>(Landroid/content/UndoManager;I)V
     .locals 1
-    .param p1    # Landroid/content/UndoManager;
-    .param p2    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -75,9 +73,6 @@
 
 .method constructor <init>(Landroid/content/UndoManager;Landroid/os/Parcel;Ljava/lang/ClassLoader;)V
     .locals 7
-    .param p1    # Landroid/content/UndoManager;
-    .param p2    # Landroid/os/Parcel;
-    .param p3    # Ljava/lang/ClassLoader;
 
     const/4 v6, 0x0
 
@@ -441,7 +436,6 @@
 
 .method getLastOperation(Ljava/lang/Class;Landroid/content/UndoOwner;)Landroid/content/UndoOperation;
     .locals 5
-    .param p2    # Landroid/content/UndoOwner;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -636,7 +630,6 @@
 
 .method hasOperation(Landroid/content/UndoOwner;)Z
     .locals 5
-    .param p1    # Landroid/content/UndoOwner;
 
     const/4 v3, 0x1
 
@@ -709,7 +702,6 @@
 
 .method matchOwner(Landroid/content/UndoOwner;)Z
     .locals 2
-    .param p1    # Landroid/content/UndoOwner;
 
     iget-object v1, p0, Landroid/content/UndoManager$UndoState;->mOperations:Ljava/util/ArrayList;
 
@@ -786,7 +778,6 @@
 
 .method setCanMerge(Z)Z
     .locals 1
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -809,7 +800,6 @@
 
 .method setLabel(Ljava/lang/CharSequence;)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
 
     iput-object p1, p0, Landroid/content/UndoManager$UndoState;->mLabel:Ljava/lang/CharSequence;
 
@@ -850,7 +840,6 @@
 
 .method updateLabel(Ljava/lang/CharSequence;)V
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
 
     iget-object v0, p0, Landroid/content/UndoManager$UndoState;->mLabel:Ljava/lang/CharSequence;
 
@@ -864,7 +853,6 @@
 
 .method writeToParcel(Landroid/os/Parcel;)V
     .locals 6
-    .param p1    # Landroid/os/Parcel;
 
     const/4 v4, 0x1
 

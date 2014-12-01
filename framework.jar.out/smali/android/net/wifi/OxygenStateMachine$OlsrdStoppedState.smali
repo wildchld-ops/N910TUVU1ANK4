@@ -45,7 +45,6 @@
 
 .method public processMessage(Landroid/os/Message;)Z
     .locals 7
-    .param p1    # Landroid/os/Message;
 
     const-wide/16 v5, 0x1388
 

@@ -29,9 +29,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/pm/PackageManagerService;Ljava/lang/String;IJ)V
     .locals 0
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # J
 
     iput-object p1, p0, Lcom/android/server/pm/PackageManagerService$VerifierPackage;->this$0:Lcom/android/server/pm/PackageManagerService;
 

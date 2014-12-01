@@ -21,8 +21,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Ljava/security/KeyStore;)V
     .locals 9
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/security/KeyStore;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -117,7 +115,6 @@
 
 .method private showNotification(Ljava/lang/Exception;)V
     .locals 5
-    .param p1    # Ljava/lang/Exception;
 
     const/4 v4, 0x1
 
@@ -170,8 +167,6 @@
 # virtual methods
 .method public checkClientTrusted([Ljava/security/cert/X509Certificate;Ljava/lang/String;)V
     .locals 1
-    .param p1    # [Ljava/security/cert/X509Certificate;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/security/cert/CertificateException;
@@ -187,8 +182,6 @@
 
 .method public checkServerTrusted([Ljava/security/cert/X509Certificate;Ljava/lang/String;)V
     .locals 2
-    .param p1    # [Ljava/security/cert/X509Certificate;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/security/cert/CertificateException;

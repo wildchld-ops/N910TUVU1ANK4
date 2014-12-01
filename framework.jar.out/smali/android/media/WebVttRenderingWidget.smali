@@ -67,7 +67,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -78,8 +77,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -92,9 +89,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Landroid/view/ViewGroup;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
@@ -165,7 +159,6 @@
 
 .method static synthetic access$100(Landroid/media/WebVttRenderingWidget;)Landroid/view/accessibility/CaptioningManager$CaptionStyle;
     .locals 1
-    .param p0    # Landroid/media/WebVttRenderingWidget;
 
     iget-object v0, p0, Landroid/media/WebVttRenderingWidget;->mCaptionStyle:Landroid/view/accessibility/CaptioningManager$CaptionStyle;
 
@@ -174,9 +167,6 @@
 
 .method static synthetic access$200(Landroid/media/WebVttRenderingWidget;Landroid/view/accessibility/CaptioningManager$CaptionStyle;F)V
     .locals 0
-    .param p0    # Landroid/media/WebVttRenderingWidget;
-    .param p1    # Landroid/view/accessibility/CaptioningManager$CaptionStyle;
-    .param p2    # F
 
     invoke-direct {p0, p1, p2}, Landroid/media/WebVttRenderingWidget;->setCaptionStyle(Landroid/view/accessibility/CaptioningManager$CaptionStyle;F)V
 
@@ -185,7 +175,6 @@
 
 .method static synthetic access$300(Landroid/media/WebVttRenderingWidget;)F
     .locals 1
-    .param p0    # Landroid/media/WebVttRenderingWidget;
 
     iget v0, p0, Landroid/media/WebVttRenderingWidget;->mFontSize:F
 
@@ -194,8 +183,6 @@
 
 .method static synthetic access$400(II)I
     .locals 1
-    .param p0    # I
-    .param p1    # I
 
     invoke-static {p0, p1}, Landroid/media/WebVttRenderingWidget;->resolveCueAlignment(II)I
 
@@ -206,7 +193,6 @@
 
 .method private calculateLinePosition(Landroid/media/WebVttRenderingWidget$CueLayout;)I
     .locals 6
-    .param p1    # Landroid/media/WebVttRenderingWidget$CueLayout;
 
     const/16 v4, 0x64
 
@@ -274,9 +260,6 @@
 
 .method private layoutCue(IILandroid/media/WebVttRenderingWidget$CueLayout;)V
     .locals 19
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/media/WebVttRenderingWidget$CueLayout;
 
     invoke-virtual/range {p3 .. p3}, Landroid/media/WebVttRenderingWidget$CueLayout;->getCue()Landroid/media/TextTrackCue;
 
@@ -459,9 +442,6 @@
 
 .method private layoutRegion(IILandroid/media/WebVttRenderingWidget$RegionLayout;)V
     .locals 9
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/media/WebVttRenderingWidget$RegionLayout;
 
     const/high16 v8, 0x42c80000
 
@@ -735,8 +715,6 @@
 
 .method private static resolveCueAlignment(II)I
     .locals 2
-    .param p0    # I
-    .param p1    # I
 
     const/16 v1, 0xcc
 
@@ -781,8 +759,6 @@
 
 .method private setCaptionStyle(Landroid/view/accessibility/CaptioningManager$CaptionStyle;F)V
     .locals 6
-    .param p1    # Landroid/view/accessibility/CaptioningManager$CaptionStyle;
-    .param p2    # F
 
     iput-object p1, p0, Landroid/media/WebVttRenderingWidget;->mCaptionStyle:Landroid/view/accessibility/CaptioningManager$CaptionStyle;
 
@@ -867,11 +843,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 10
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     sub-int v6, p4, p2
 
@@ -952,8 +923,6 @@
 
 .method protected onMeasure(II)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     invoke-super {p0, p1, p2}, Landroid/view/ViewGroup;->onMeasure(II)V
 
@@ -1184,7 +1153,6 @@
 
 .method public setOnChangedListener(Landroid/media/SubtitleTrack$RenderingWidget$OnChangedListener;)V
     .locals 0
-    .param p1    # Landroid/media/SubtitleTrack$RenderingWidget$OnChangedListener;
 
     iput-object p1, p0, Landroid/media/WebVttRenderingWidget;->mListener:Landroid/media/SubtitleTrack$RenderingWidget$OnChangedListener;
 
@@ -1193,8 +1161,6 @@
 
 .method public setSize(II)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     const/high16 v3, 0x40000000
 
@@ -1217,7 +1183,6 @@
 
 .method public setVisible(Z)V
     .locals 1
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 

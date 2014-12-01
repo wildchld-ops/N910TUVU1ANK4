@@ -41,9 +41,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/os/Handler;Lcom/android/server/dreams/DreamController$Listener;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/Handler;
-    .param p3    # Lcom/android/server/dreams/DreamController$Listener;
 
     const/high16 v2, 0x40000000
 
@@ -104,7 +101,6 @@
 
 .method static synthetic access$000(Lcom/android/server/dreams/DreamController;)Lcom/android/server/dreams/DreamController$DreamRecord;
     .locals 1
-    .param p0    # Lcom/android/server/dreams/DreamController;
 
     iget-object v0, p0, Lcom/android/server/dreams/DreamController;->mCurrentDream:Lcom/android/server/dreams/DreamController$DreamRecord;
 
@@ -113,7 +109,6 @@
 
 .method static synthetic access$100(Lcom/android/server/dreams/DreamController;)Lcom/android/server/dreams/DreamController$Listener;
     .locals 1
-    .param p0    # Lcom/android/server/dreams/DreamController;
 
     iget-object v0, p0, Lcom/android/server/dreams/DreamController;->mListener:Lcom/android/server/dreams/DreamController$Listener;
 
@@ -122,7 +117,6 @@
 
 .method static synthetic access$200(Lcom/android/server/dreams/DreamController;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/server/dreams/DreamController;
 
     iget-object v0, p0, Lcom/android/server/dreams/DreamController;->mHandler:Landroid/os/Handler;
 
@@ -131,8 +125,6 @@
 
 .method static synthetic access$300(Lcom/android/server/dreams/DreamController;Landroid/service/dreams/IDreamService;)V
     .locals 0
-    .param p0    # Lcom/android/server/dreams/DreamController;
-    .param p1    # Landroid/service/dreams/IDreamService;
 
     invoke-direct {p0, p1}, Lcom/android/server/dreams/DreamController;->attach(Landroid/service/dreams/IDreamService;)V
 
@@ -141,7 +133,6 @@
 
 .method private attach(Landroid/service/dreams/IDreamService;)V
     .locals 4
-    .param p1    # Landroid/service/dreams/IDreamService;
 
     :try_start_0
     invoke-interface {p1}, Landroid/service/dreams/IDreamService;->asBinder()Landroid/os/IBinder;
@@ -208,7 +199,6 @@
 # virtual methods
 .method public dump(Ljava/io/PrintWriter;)V
     .locals 2
-    .param p1    # Ljava/io/PrintWriter;
 
     const-string v0, "Dreamland:"
 
@@ -403,10 +393,6 @@
 
 .method public startDream(Landroid/os/Binder;Landroid/content/ComponentName;ZI)V
     .locals 9
-    .param p1    # Landroid/os/Binder;
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # Z
-    .param p4    # I
 
     const/4 v8, 0x1
 

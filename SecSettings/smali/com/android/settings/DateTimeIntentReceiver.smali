@@ -64,7 +64,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/DateTimeIntentReceiver;)Landroid/widget/Button;
     .locals 1
-    .param p0    # Lcom/android/settings/DateTimeIntentReceiver;
 
     iget-object v0, p0, Lcom/android/settings/DateTimeIntentReceiver;->setup_button:Landroid/widget/Button;
 
@@ -73,8 +72,6 @@
 
 .method static synthetic access$002(Lcom/android/settings/DateTimeIntentReceiver;Landroid/widget/Button;)Landroid/widget/Button;
     .locals 0
-    .param p0    # Lcom/android/settings/DateTimeIntentReceiver;
-    .param p1    # Landroid/widget/Button;
 
     iput-object p1, p0, Lcom/android/settings/DateTimeIntentReceiver;->setup_button:Landroid/widget/Button;
 
@@ -83,7 +80,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/DateTimeIntentReceiver;)Landroid/widget/Button;
     .locals 1
-    .param p0    # Lcom/android/settings/DateTimeIntentReceiver;
 
     iget-object v0, p0, Lcom/android/settings/DateTimeIntentReceiver;->close_button:Landroid/widget/Button;
 
@@ -92,7 +88,6 @@
 
 .method static synthetic access$1000(Lcom/android/settings/DateTimeIntentReceiver;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/android/settings/DateTimeIntentReceiver;
 
     iget-object v0, p0, Lcom/android/settings/DateTimeIntentReceiver;->timezone:Landroid/widget/TextView;
 
@@ -101,8 +96,6 @@
 
 .method static synthetic access$1002(Lcom/android/settings/DateTimeIntentReceiver;Landroid/widget/TextView;)Landroid/widget/TextView;
     .locals 0
-    .param p0    # Lcom/android/settings/DateTimeIntentReceiver;
-    .param p1    # Landroid/widget/TextView;
 
     iput-object p1, p0, Lcom/android/settings/DateTimeIntentReceiver;->timezone:Landroid/widget/TextView;
 
@@ -111,8 +104,6 @@
 
 .method static synthetic access$102(Lcom/android/settings/DateTimeIntentReceiver;Landroid/widget/Button;)Landroid/widget/Button;
     .locals 0
-    .param p0    # Lcom/android/settings/DateTimeIntentReceiver;
-    .param p1    # Landroid/widget/Button;
 
     iput-object p1, p0, Lcom/android/settings/DateTimeIntentReceiver;->close_button:Landroid/widget/Button;
 
@@ -121,7 +112,6 @@
 
 .method static synthetic access$1100(Lcom/android/settings/DateTimeIntentReceiver;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/android/settings/DateTimeIntentReceiver;
 
     iget-object v0, p0, Lcom/android/settings/DateTimeIntentReceiver;->timeformat:Landroid/widget/TextView;
 
@@ -130,8 +120,6 @@
 
 .method static synthetic access$1102(Lcom/android/settings/DateTimeIntentReceiver;Landroid/widget/TextView;)Landroid/widget/TextView;
     .locals 0
-    .param p0    # Lcom/android/settings/DateTimeIntentReceiver;
-    .param p1    # Landroid/widget/TextView;
 
     iput-object p1, p0, Lcom/android/settings/DateTimeIntentReceiver;->timeformat:Landroid/widget/TextView;
 
@@ -148,7 +136,6 @@
 
 .method static synthetic access$1202(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/settings/DateTimeIntentReceiver;->dialog_state:Z
 
@@ -157,7 +144,6 @@
 
 .method static synthetic access$1302(Lcom/android/settings/DateTimeIntentReceiver$DateTimeDialog;)Lcom/android/settings/DateTimeIntentReceiver$DateTimeDialog;
     .locals 0
-    .param p0    # Lcom/android/settings/DateTimeIntentReceiver$DateTimeDialog;
 
     sput-object p0, Lcom/android/settings/DateTimeIntentReceiver;->mDialog:Lcom/android/settings/DateTimeIntentReceiver$DateTimeDialog;
 
@@ -166,7 +152,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/DateTimeIntentReceiver;)Lcom/sec/android/touchwiz/widget/TwCheckBox;
     .locals 1
-    .param p0    # Lcom/android/settings/DateTimeIntentReceiver;
 
     iget-object v0, p0, Lcom/android/settings/DateTimeIntentReceiver;->autoDateTime:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
@@ -175,8 +160,6 @@
 
 .method static synthetic access$202(Lcom/android/settings/DateTimeIntentReceiver;Lcom/sec/android/touchwiz/widget/TwCheckBox;)Lcom/sec/android/touchwiz/widget/TwCheckBox;
     .locals 0
-    .param p0    # Lcom/android/settings/DateTimeIntentReceiver;
-    .param p1    # Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
     iput-object p1, p0, Lcom/android/settings/DateTimeIntentReceiver;->autoDateTime:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
@@ -185,7 +168,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/DateTimeIntentReceiver;)Landroid/widget/LinearLayout;
     .locals 1
-    .param p0    # Lcom/android/settings/DateTimeIntentReceiver;
 
     iget-object v0, p0, Lcom/android/settings/DateTimeIntentReceiver;->autoDateTimeLayout:Landroid/widget/LinearLayout;
 
@@ -194,8 +176,6 @@
 
 .method static synthetic access$302(Lcom/android/settings/DateTimeIntentReceiver;Landroid/widget/LinearLayout;)Landroid/widget/LinearLayout;
     .locals 0
-    .param p0    # Lcom/android/settings/DateTimeIntentReceiver;
-    .param p1    # Landroid/widget/LinearLayout;
 
     iput-object p1, p0, Lcom/android/settings/DateTimeIntentReceiver;->autoDateTimeLayout:Landroid/widget/LinearLayout;
 
@@ -204,7 +184,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/DateTimeIntentReceiver;)Lcom/sec/android/touchwiz/widget/TwCheckBox;
     .locals 1
-    .param p0    # Lcom/android/settings/DateTimeIntentReceiver;
 
     iget-object v0, p0, Lcom/android/settings/DateTimeIntentReceiver;->autoTimezone:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
@@ -213,8 +192,6 @@
 
 .method static synthetic access$402(Lcom/android/settings/DateTimeIntentReceiver;Lcom/sec/android/touchwiz/widget/TwCheckBox;)Lcom/sec/android/touchwiz/widget/TwCheckBox;
     .locals 0
-    .param p0    # Lcom/android/settings/DateTimeIntentReceiver;
-    .param p1    # Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
     iput-object p1, p0, Lcom/android/settings/DateTimeIntentReceiver;->autoTimezone:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
@@ -223,7 +200,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/DateTimeIntentReceiver;)Landroid/widget/LinearLayout;
     .locals 1
-    .param p0    # Lcom/android/settings/DateTimeIntentReceiver;
 
     iget-object v0, p0, Lcom/android/settings/DateTimeIntentReceiver;->autoTimezoneLayout:Landroid/widget/LinearLayout;
 
@@ -232,8 +208,6 @@
 
 .method static synthetic access$502(Lcom/android/settings/DateTimeIntentReceiver;Landroid/widget/LinearLayout;)Landroid/widget/LinearLayout;
     .locals 0
-    .param p0    # Lcom/android/settings/DateTimeIntentReceiver;
-    .param p1    # Landroid/widget/LinearLayout;
 
     iput-object p1, p0, Lcom/android/settings/DateTimeIntentReceiver;->autoTimezoneLayout:Landroid/widget/LinearLayout;
 
@@ -242,7 +216,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/DateTimeIntentReceiver;)Lcom/sec/android/touchwiz/widget/TwCheckBox;
     .locals 1
-    .param p0    # Lcom/android/settings/DateTimeIntentReceiver;
 
     iget-object v0, p0, Lcom/android/settings/DateTimeIntentReceiver;->timeFormat:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
@@ -251,8 +224,6 @@
 
 .method static synthetic access$602(Lcom/android/settings/DateTimeIntentReceiver;Lcom/sec/android/touchwiz/widget/TwCheckBox;)Lcom/sec/android/touchwiz/widget/TwCheckBox;
     .locals 0
-    .param p0    # Lcom/android/settings/DateTimeIntentReceiver;
-    .param p1    # Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
     iput-object p1, p0, Lcom/android/settings/DateTimeIntentReceiver;->timeFormat:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
@@ -261,7 +232,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/DateTimeIntentReceiver;)Landroid/widget/LinearLayout;
     .locals 1
-    .param p0    # Lcom/android/settings/DateTimeIntentReceiver;
 
     iget-object v0, p0, Lcom/android/settings/DateTimeIntentReceiver;->timeFormatLayout:Landroid/widget/LinearLayout;
 
@@ -270,8 +240,6 @@
 
 .method static synthetic access$702(Lcom/android/settings/DateTimeIntentReceiver;Landroid/widget/LinearLayout;)Landroid/widget/LinearLayout;
     .locals 0
-    .param p0    # Lcom/android/settings/DateTimeIntentReceiver;
-    .param p1    # Landroid/widget/LinearLayout;
 
     iput-object p1, p0, Lcom/android/settings/DateTimeIntentReceiver;->timeFormatLayout:Landroid/widget/LinearLayout;
 
@@ -280,7 +248,6 @@
 
 .method static synthetic access$800(Lcom/android/settings/DateTimeIntentReceiver;)Landroid/content/res/Resources;
     .locals 1
-    .param p0    # Lcom/android/settings/DateTimeIntentReceiver;
 
     iget-object v0, p0, Lcom/android/settings/DateTimeIntentReceiver;->resources:Landroid/content/res/Resources;
 
@@ -289,8 +256,6 @@
 
 .method static synthetic access$802(Lcom/android/settings/DateTimeIntentReceiver;Landroid/content/res/Resources;)Landroid/content/res/Resources;
     .locals 0
-    .param p0    # Lcom/android/settings/DateTimeIntentReceiver;
-    .param p1    # Landroid/content/res/Resources;
 
     iput-object p1, p0, Lcom/android/settings/DateTimeIntentReceiver;->resources:Landroid/content/res/Resources;
 
@@ -299,7 +264,6 @@
 
 .method static synthetic access$900(Lcom/android/settings/DateTimeIntentReceiver;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/android/settings/DateTimeIntentReceiver;
 
     iget-object v0, p0, Lcom/android/settings/DateTimeIntentReceiver;->datetime:Landroid/widget/TextView;
 
@@ -308,8 +272,6 @@
 
 .method static synthetic access$902(Lcom/android/settings/DateTimeIntentReceiver;Landroid/widget/TextView;)Landroid/widget/TextView;
     .locals 0
-    .param p0    # Lcom/android/settings/DateTimeIntentReceiver;
-    .param p1    # Landroid/widget/TextView;
 
     iput-object p1, p0, Lcom/android/settings/DateTimeIntentReceiver;->datetime:Landroid/widget/TextView;
 
@@ -408,8 +370,6 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 

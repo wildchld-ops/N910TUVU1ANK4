@@ -52,8 +52,6 @@
 
 .method private CompareFile(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 31
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v10, 0x5
 
@@ -635,8 +633,6 @@
 
 .method private compareFileSize(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     new-instance v0, Ljava/io/File;
 
@@ -741,8 +737,6 @@
 
 .method public SetAlternateFormat(ILandroid/sec/clipboard/data/ClipboardData;)Z
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/sec/clipboard/data/ClipboardData;
 
     invoke-super {p0, p1, p2}, Landroid/sec/clipboard/data/ClipboardData;->SetAlternateFormat(ILandroid/sec/clipboard/data/ClipboardData;)Z
 
@@ -845,7 +839,6 @@
 
 .method public SetBitmap(Landroid/graphics/Bitmap;)Z
     .locals 1
-    .param p1    # Landroid/graphics/Bitmap;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -856,7 +849,6 @@
 
 .method public SetBitmapPath(Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -924,9 +916,6 @@
 
 .method public SetBitmapPath(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     sget-boolean v4, Landroid/sec/clipboard/data/ClipboardDefine;->DEBUG:Z
 
@@ -1117,7 +1106,6 @@
 
 .method public SetExtraDataPath(Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -1192,7 +1180,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 6
-    .param p1    # Ljava/lang/Object;
 
     sget-boolean v4, Landroid/sec/clipboard/data/ClipboardDefine;->DEBUG:Z
 
@@ -1272,7 +1259,6 @@
 
 .method protected readFormSource(Landroid/os/Parcel;)V
     .locals 4
-    .param p1    # Landroid/os/Parcel;
 
     :try_start_0
     const-class v1, Ljava/lang/String;
@@ -1479,8 +1465,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 4
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     sget-boolean v2, Landroid/sec/clipboard/data/ClipboardDefine;->DEBUG:Z
 

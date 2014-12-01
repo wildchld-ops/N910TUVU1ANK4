@@ -34,8 +34,6 @@
 
 .method public constructor <init>(Landroid/content/Context;I)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -78,8 +76,6 @@
 
 .method static synthetic access$100(Lcom/android/server/connectivity/MvpVpnClientsManager;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/server/connectivity/MvpVpnClientsManager;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/connectivity/MvpVpnClientsManager;->removeMvpClientFromList(Ljava/lang/String;)V
 
@@ -310,7 +306,6 @@
 
 .method private isAnMvpClient(Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     invoke-direct {p0}, Lcom/android/server/connectivity/MvpVpnClientsManager;->getMvpClientList()Ljava/util/ArrayList;
@@ -412,7 +407,6 @@
 
 .method private declared-synchronized removeMvpClientFromList(Ljava/lang/String;)V
     .locals 9
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -638,7 +632,6 @@
 # virtual methods
 .method public addMvpClientToList(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     iget-object v3, p0, Lcom/android/server/connectivity/MvpVpnClientsManager;->mListFile:Ljava/io/File;
 
@@ -771,7 +764,6 @@
 
 .method public isClientAllowedForHost(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x1
 

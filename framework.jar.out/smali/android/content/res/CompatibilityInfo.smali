@@ -86,10 +86,6 @@
 
 .method private constructor <init>(IIFF)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # F
-    .param p4    # F
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -106,10 +102,6 @@
 
 .method public constructor <init>(Landroid/content/pm/ApplicationInfo;IIZ)V
     .locals 11
-    .param p1    # Landroid/content/pm/ApplicationInfo;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -399,7 +391,6 @@
 
 .method synthetic constructor <init>(Landroid/content/res/CompatibilityInfo$1;)V
     .locals 0
-    .param p1    # Landroid/content/res/CompatibilityInfo$1;
 
     invoke-direct {p0}, Landroid/content/res/CompatibilityInfo;-><init>()V
 
@@ -408,7 +399,6 @@
 
 .method private constructor <init>(Landroid/os/Parcel;)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -441,8 +431,6 @@
 
 .method synthetic constructor <init>(Landroid/os/Parcel;Landroid/content/res/CompatibilityInfo$1;)V
     .locals 0
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # Landroid/content/res/CompatibilityInfo$1;
 
     invoke-direct {p0, p1}, Landroid/content/res/CompatibilityInfo;-><init>(Landroid/os/Parcel;)V
 
@@ -451,8 +439,6 @@
 
 .method public static computeCompatibleScaling(Landroid/util/DisplayMetrics;Landroid/util/DisplayMetrics;)F
     .locals 14
-    .param p0    # Landroid/util/DisplayMetrics;
-    .param p1    # Landroid/util/DisplayMetrics;
 
     iget v11, p0, Landroid/util/DisplayMetrics;->noncompatWidthPixels:I
 
@@ -590,8 +576,6 @@
 
 .method public applyToConfiguration(ILandroid/content/res/Configuration;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/content/res/Configuration;
 
     invoke-virtual {p0}, Landroid/content/res/CompatibilityInfo;->supportsScreen()Z
 
@@ -650,7 +634,6 @@
 
 .method public applyToDisplayMetrics(Landroid/util/DisplayMetrics;)V
     .locals 3
-    .param p1    # Landroid/util/DisplayMetrics;
 
     const/high16 v2, 0x3f000000
 
@@ -756,7 +739,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 7
-    .param p1    # Ljava/lang/Object;
 
     const/4 v3, 0x1
 
@@ -1039,8 +1021,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget v0, p0, Landroid/content/res/CompatibilityInfo;->mCompatibilityFlags:I
 

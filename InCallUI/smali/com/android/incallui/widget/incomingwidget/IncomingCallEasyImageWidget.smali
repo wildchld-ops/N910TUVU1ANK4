@@ -32,7 +32,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     const/4 v2, 0x5
 
@@ -99,8 +98,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v2, 0x5
 
@@ -167,9 +164,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v2, 0x5
 
@@ -236,7 +230,6 @@
 
 .method static synthetic access$000(Lcom/android/incallui/widget/incomingwidget/IncomingCallEasyImageWidget;)I
     .locals 1
-    .param p0    # Lcom/android/incallui/widget/incomingwidget/IncomingCallEasyImageWidget;
 
     iget v0, p0, Lcom/android/incallui/widget/incomingwidget/IncomingCallEasyImageWidget;->mLeftArrowAnimationIndex:I
 
@@ -245,8 +238,6 @@
 
 .method static synthetic access$002(Lcom/android/incallui/widget/incomingwidget/IncomingCallEasyImageWidget;I)I
     .locals 0
-    .param p0    # Lcom/android/incallui/widget/incomingwidget/IncomingCallEasyImageWidget;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/incallui/widget/incomingwidget/IncomingCallEasyImageWidget;->mLeftArrowAnimationIndex:I
 
@@ -255,7 +246,6 @@
 
 .method static synthetic access$008(Lcom/android/incallui/widget/incomingwidget/IncomingCallEasyImageWidget;)I
     .locals 2
-    .param p0    # Lcom/android/incallui/widget/incomingwidget/IncomingCallEasyImageWidget;
 
     iget v0, p0, Lcom/android/incallui/widget/incomingwidget/IncomingCallEasyImageWidget;->mLeftArrowAnimationIndex:I
 
@@ -268,7 +258,6 @@
 
 .method static synthetic access$100(Lcom/android/incallui/widget/incomingwidget/IncomingCallEasyImageWidget;)[I
     .locals 1
-    .param p0    # Lcom/android/incallui/widget/incomingwidget/IncomingCallEasyImageWidget;
 
     iget-object v0, p0, Lcom/android/incallui/widget/incomingwidget/IncomingCallEasyImageWidget;->mEasyArrowLeftAnimation:[I
 
@@ -277,7 +266,6 @@
 
 .method static synthetic access$200(Lcom/android/incallui/widget/incomingwidget/IncomingCallEasyImageWidget;)I
     .locals 1
-    .param p0    # Lcom/android/incallui/widget/incomingwidget/IncomingCallEasyImageWidget;
 
     iget v0, p0, Lcom/android/incallui/widget/incomingwidget/IncomingCallEasyImageWidget;->mRightArrowAnimationIndex:I
 
@@ -286,8 +274,6 @@
 
 .method static synthetic access$202(Lcom/android/incallui/widget/incomingwidget/IncomingCallEasyImageWidget;I)I
     .locals 0
-    .param p0    # Lcom/android/incallui/widget/incomingwidget/IncomingCallEasyImageWidget;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/incallui/widget/incomingwidget/IncomingCallEasyImageWidget;->mRightArrowAnimationIndex:I
 
@@ -296,7 +282,6 @@
 
 .method static synthetic access$208(Lcom/android/incallui/widget/incomingwidget/IncomingCallEasyImageWidget;)I
     .locals 2
-    .param p0    # Lcom/android/incallui/widget/incomingwidget/IncomingCallEasyImageWidget;
 
     iget v0, p0, Lcom/android/incallui/widget/incomingwidget/IncomingCallEasyImageWidget;->mRightArrowAnimationIndex:I
 
@@ -309,7 +294,6 @@
 
 .method static synthetic access$300(Lcom/android/incallui/widget/incomingwidget/IncomingCallEasyImageWidget;)[I
     .locals 1
-    .param p0    # Lcom/android/incallui/widget/incomingwidget/IncomingCallEasyImageWidget;
 
     iget-object v0, p0, Lcom/android/incallui/widget/incomingwidget/IncomingCallEasyImageWidget;->mEasyArrowRightAnimation:[I
 
@@ -318,7 +302,6 @@
 
 .method static synthetic access$400(Lcom/android/incallui/widget/incomingwidget/IncomingCallEasyImageWidget;)Landroid/widget/ImageView;
     .locals 1
-    .param p0    # Lcom/android/incallui/widget/incomingwidget/IncomingCallEasyImageWidget;
 
     iget-object v0, p0, Lcom/android/incallui/widget/incomingwidget/IncomingCallEasyImageWidget;->mLeftArrowImageViews:Landroid/widget/ImageView;
 
@@ -327,7 +310,6 @@
 
 .method static synthetic access$500(Lcom/android/incallui/widget/incomingwidget/IncomingCallEasyImageWidget;)Landroid/widget/ImageView;
     .locals 1
-    .param p0    # Lcom/android/incallui/widget/incomingwidget/IncomingCallEasyImageWidget;
 
     iget-object v0, p0, Lcom/android/incallui/widget/incomingwidget/IncomingCallEasyImageWidget;->mRightArrowImageViews:Landroid/widget/ImageView;
 
@@ -336,7 +318,6 @@
 
 .method static synthetic access$600(Lcom/android/incallui/widget/incomingwidget/IncomingCallEasyImageWidget;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/incallui/widget/incomingwidget/IncomingCallEasyImageWidget;
 
     iget-object v0, p0, Lcom/android/incallui/widget/incomingwidget/IncomingCallEasyImageWidget;->mHandler:Landroid/os/Handler;
 
@@ -393,7 +374,6 @@
 
 .method private makeArrowViews(I)V
     .locals 5
-    .param p1    # I
 
     const/4 v4, -0x2
 
@@ -826,7 +806,6 @@
 
 .method public log(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "IncomingCallEasyImageWidget"
 
@@ -837,8 +816,6 @@
 
 .method public log(Ljava/lang/String;Z)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const-string v0, "IncomingCallEasyImageWidget"
 
@@ -849,7 +826,6 @@
 
 .method protected setGrabbedState(I)V
     .locals 0
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 

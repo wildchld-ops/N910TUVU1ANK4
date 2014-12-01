@@ -19,7 +19,6 @@
 # direct methods
 .method static synthetic access$000(Lcom/android/settings/MouseHoveringViewEnabler;)Landroid/widget/Switch;
     .locals 1
-    .param p0    # Lcom/android/settings/MouseHoveringViewEnabler;
 
     iget-object v0, p0, Lcom/android/settings/MouseHoveringViewEnabler;->mSwitch:Landroid/widget/Switch;
 
@@ -28,7 +27,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/MouseHoveringViewEnabler;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/settings/MouseHoveringViewEnabler;
 
     iget-object v0, p0, Lcom/android/settings/MouseHoveringViewEnabler;->mContext:Landroid/content/Context;
 
@@ -37,8 +35,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/MouseHoveringViewEnabler;Z)V
     .locals 0
-    .param p0    # Lcom/android/settings/MouseHoveringViewEnabler;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/settings/MouseHoveringViewEnabler;->broadcastMouseHoveringChanged(Z)V
 
@@ -47,7 +43,6 @@
 
 .method private broadcastMouseHoveringChanged(Z)V
     .locals 2
-    .param p1    # Z
 
     new-instance v0, Landroid/content/Intent;
 
@@ -246,8 +241,6 @@
 
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 4
-    .param p1    # Landroid/widget/CompoundButton;
-    .param p2    # Z
 
     const/4 v3, 0x1
 
@@ -389,7 +382,6 @@
 
 .method public setSwitch(Landroid/widget/Switch;)V
     .locals 2
-    .param p1    # Landroid/widget/Switch;
 
     iget-object v0, p0, Lcom/android/settings/MouseHoveringViewEnabler;->mSwitch:Landroid/widget/Switch;
 

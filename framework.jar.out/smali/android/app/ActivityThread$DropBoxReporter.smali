@@ -52,9 +52,6 @@
 # virtual methods
 .method public addData(Ljava/lang/String;[BI)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # [B
-    .param p3    # I
 
     iget-object v0, p0, Landroid/app/ActivityThread$DropBoxReporter;->dropBox:Landroid/os/DropBoxManager;
 
@@ -65,8 +62,6 @@
 
 .method public addText(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/app/ActivityThread$DropBoxReporter;->dropBox:Landroid/os/DropBoxManager;
 

@@ -35,7 +35,6 @@
 # virtual methods
 .method public compareTo(Landroid/view/animation/ModelViewState;)Z
     .locals 8
-    .param p1    # Landroid/view/animation/ModelViewState;
 
     const/4 v4, 0x1
 
@@ -263,16 +262,6 @@
 
 .method public setRotationAnimation(FFFFFIFIFI)V
     .locals 2
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # I
-    .param p7    # F
-    .param p8    # I
-    .param p9    # F
-    .param p10    # I
 
     new-instance v0, Landroid/view/animation/SmgAnimation;
 
@@ -315,7 +304,6 @@
 
 .method public setShaderAnim(F)V
     .locals 2
-    .param p1    # F
 
     new-instance v0, Landroid/view/animation/SmgAnimation;
 
@@ -340,7 +328,6 @@
 
 .method public setSmgAnimationState(Landroid/view/animation/ModelViewState;)V
     .locals 3
-    .param p1    # Landroid/view/animation/ModelViewState;
 
     iget-object v2, p1, Landroid/view/animation/ModelViewState;->smgAnimationList:Ljava/util/ArrayList;
 
@@ -373,12 +360,6 @@
 
 .method public setTranslationAnim(FFFIII)V
     .locals 2
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     new-instance v0, Landroid/view/animation/SmgAnimation;
 

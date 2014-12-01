@@ -32,7 +32,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/settings/NotificationStation;Landroid/content/Context;)V
     .locals 1
-    .param p2    # Landroid/content/Context;
 
     iput-object p1, p0, Lcom/android/settings/NotificationStation$NotificationHistoryAdapter;->this$0:Lcom/android/settings/NotificationStation;
 
@@ -55,7 +54,6 @@
 
 .method private createRow(Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 4
-    .param p1    # Landroid/view/ViewGroup;
 
     iget-object v1, p0, Lcom/android/settings/NotificationStation$NotificationHistoryAdapter;->mInflater:Landroid/view/LayoutInflater;
 
@@ -74,9 +72,6 @@
 # virtual methods
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     invoke-virtual {p0, p1}, Landroid/widget/ArrayAdapter;->getItem(I)Ljava/lang/Object;
 

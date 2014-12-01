@@ -36,8 +36,6 @@
 
 .method synthetic constructor <init>(Landroid/widget/RadioGroup;Landroid/widget/RadioGroup$1;)V
     .locals 0
-    .param p1    # Landroid/widget/RadioGroup;
-    .param p2    # Landroid/widget/RadioGroup$1;
 
     invoke-direct {p0, p1}, Landroid/widget/RadioGroup$PassThroughHierarchyChangeListener;-><init>(Landroid/widget/RadioGroup;)V
 
@@ -46,8 +44,6 @@
 
 .method static synthetic access$202(Landroid/widget/RadioGroup$PassThroughHierarchyChangeListener;Landroid/view/ViewGroup$OnHierarchyChangeListener;)Landroid/view/ViewGroup$OnHierarchyChangeListener;
     .locals 0
-    .param p0    # Landroid/widget/RadioGroup$PassThroughHierarchyChangeListener;
-    .param p1    # Landroid/view/ViewGroup$OnHierarchyChangeListener;
 
     iput-object p1, p0, Landroid/widget/RadioGroup$PassThroughHierarchyChangeListener;->mOnHierarchyChangeListener:Landroid/view/ViewGroup$OnHierarchyChangeListener;
 
@@ -58,8 +54,6 @@
 # virtual methods
 .method public onChildViewAdded(Landroid/view/View;Landroid/view/View;)V
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/View;
 
     iget-object v1, p0, Landroid/widget/RadioGroup$PassThroughHierarchyChangeListener;->this$0:Landroid/widget/RadioGroup;
 
@@ -112,8 +106,6 @@
 
 .method public onChildViewRemoved(Landroid/view/View;Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/View;
 
     iget-object v0, p0, Landroid/widget/RadioGroup$PassThroughHierarchyChangeListener;->this$0:Landroid/widget/RadioGroup;
 

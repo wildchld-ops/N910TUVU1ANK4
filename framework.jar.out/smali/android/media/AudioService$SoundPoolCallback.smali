@@ -57,8 +57,6 @@
 
 .method synthetic constructor <init>(Landroid/media/AudioService;Landroid/media/AudioService$1;)V
     .locals 0
-    .param p1    # Landroid/media/AudioService;
-    .param p2    # Landroid/media/AudioService$1;
 
     invoke-direct {p0, p1}, Landroid/media/AudioService$SoundPoolCallback;-><init>(Landroid/media/AudioService;)V
 
@@ -69,9 +67,6 @@
 # virtual methods
 .method public onLoadComplete(Landroid/media/SoundPool;II)V
     .locals 4
-    .param p1    # Landroid/media/SoundPool;
-    .param p2    # I
-    .param p3    # I
 
     iget-object v1, p0, Landroid/media/AudioService$SoundPoolCallback;->this$0:Landroid/media/AudioService;
 
@@ -139,7 +134,6 @@
 
 .method public setSamples([I)V
     .locals 3
-    .param p1    # [I
 
     const/4 v0, 0x0
 

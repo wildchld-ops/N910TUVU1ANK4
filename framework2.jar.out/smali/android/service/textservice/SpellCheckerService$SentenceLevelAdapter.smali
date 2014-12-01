@@ -54,7 +54,6 @@
 
 .method public constructor <init>(Ljava/util/Locale;)V
     .locals 1
-    .param p1    # Ljava/util/Locale;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -69,8 +68,6 @@
 
 .method static synthetic access$000(Landroid/service/textservice/SpellCheckerService$SentenceLevelAdapter;Landroid/view/textservice/TextInfo;)Landroid/service/textservice/SpellCheckerService$SentenceLevelAdapter$SentenceTextInfoParams;
     .locals 1
-    .param p0    # Landroid/service/textservice/SpellCheckerService$SentenceLevelAdapter;
-    .param p1    # Landroid/view/textservice/TextInfo;
 
     invoke-direct {p0, p1}, Landroid/service/textservice/SpellCheckerService$SentenceLevelAdapter;->getSplitWords(Landroid/view/textservice/TextInfo;)Landroid/service/textservice/SpellCheckerService$SentenceLevelAdapter$SentenceTextInfoParams;
 
@@ -81,7 +78,6 @@
 
 .method private getSplitWords(Landroid/view/textservice/TextInfo;)Landroid/service/textservice/SpellCheckerService$SentenceLevelAdapter$SentenceTextInfoParams;
     .locals 13
-    .param p1    # Landroid/view/textservice/TextInfo;
 
     const/4 v12, 0x0
 
@@ -178,8 +174,6 @@
 
 .method public static reconstructSuggestions(Landroid/service/textservice/SpellCheckerService$SentenceLevelAdapter$SentenceTextInfoParams;[Landroid/view/textservice/SuggestionsInfo;)Landroid/view/textservice/SentenceSuggestionsInfo;
     .locals 13
-    .param p0    # Landroid/service/textservice/SpellCheckerService$SentenceLevelAdapter$SentenceTextInfoParams;
-    .param p1    # [Landroid/view/textservice/SuggestionsInfo;
 
     const/4 v11, 0x0
 

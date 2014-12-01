@@ -88,7 +88,7 @@
 
     const v3, 0x7f09000c
 
-    invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {v2, v3}, Lcom/android/phone/DriveLinkDialogActivity;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
@@ -104,7 +104,7 @@
 
     iget-object v2, p0, Lcom/android/phone/DriveLinkDialogActivity$2;->this$0:Lcom/android/phone/DriveLinkDialogActivity;
 
-    invoke-virtual {v2, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {v2, v4}, Lcom/android/phone/DriveLinkDialogActivity;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
@@ -158,7 +158,7 @@
     :goto_2
     aput-object v1, v4, v5
 
-    invoke-virtual {v2, v3, v4}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {v2, v3, v4}, Lcom/android/phone/DriveLinkDialogActivity;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -231,7 +231,7 @@
 
     iget-object v2, p0, Lcom/android/phone/DriveLinkDialogActivity$2;->this$0:Lcom/android/phone/DriveLinkDialogActivity;
 
-    invoke-virtual {v2, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {v2, v4}, Lcom/android/phone/DriveLinkDialogActivity;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 

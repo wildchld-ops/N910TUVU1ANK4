@@ -47,8 +47,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/power/PowerManagerService;Lcom/android/server/LightsService;I)V
     .locals 2
-    .param p2    # Lcom/android/server/LightsService;
-    .param p3    # I
 
     const/4 v1, 0x0
 
@@ -105,7 +103,6 @@
 
 .method static synthetic access$2000(Lcom/android/server/power/PowerManagerService$InputDeviceLightState;)I
     .locals 1
-    .param p0    # Lcom/android/server/power/PowerManagerService$InputDeviceLightState;
 
     invoke-direct {p0}, Lcom/android/server/power/PowerManagerService$InputDeviceLightState;->getInputDeviceLightTimeout()I
 
@@ -116,8 +113,6 @@
 
 .method static synthetic access$2100(Lcom/android/server/power/PowerManagerService$InputDeviceLightState;I)V
     .locals 0
-    .param p0    # Lcom/android/server/power/PowerManagerService$InputDeviceLightState;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/power/PowerManagerService$InputDeviceLightState;->setInputDeviceLightTimeout(I)V
 
@@ -126,8 +121,6 @@
 
 .method static synthetic access$2200(Lcom/android/server/power/PowerManagerService$InputDeviceLightState;Z)V
     .locals 0
-    .param p0    # Lcom/android/server/power/PowerManagerService$InputDeviceLightState;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/power/PowerManagerService$InputDeviceLightState;->setInputDeviceLightKeep(Z)V
 
@@ -136,7 +129,6 @@
 
 .method static synthetic access$2300(Lcom/android/server/power/PowerManagerService$InputDeviceLightState;)Z
     .locals 1
-    .param p0    # Lcom/android/server/power/PowerManagerService$InputDeviceLightState;
 
     invoke-direct {p0}, Lcom/android/server/power/PowerManagerService$InputDeviceLightState;->getInputDeviceLightKeep()Z
 
@@ -147,7 +139,6 @@
 
 .method static synthetic access$2400(Lcom/android/server/power/PowerManagerService$InputDeviceLightState;)I
     .locals 1
-    .param p0    # Lcom/android/server/power/PowerManagerService$InputDeviceLightState;
 
     invoke-direct {p0}, Lcom/android/server/power/PowerManagerService$InputDeviceLightState;->getInputDeviceLightState()I
 
@@ -158,7 +149,6 @@
 
 .method static synthetic access$7100(Lcom/android/server/power/PowerManagerService$InputDeviceLightState;)V
     .locals 0
-    .param p0    # Lcom/android/server/power/PowerManagerService$InputDeviceLightState;
 
     invoke-direct {p0}, Lcom/android/server/power/PowerManagerService$InputDeviceLightState;->handleInputDeviceLightOn()V
 
@@ -167,7 +157,6 @@
 
 .method static synthetic access$7200(Lcom/android/server/power/PowerManagerService$InputDeviceLightState;)V
     .locals 0
-    .param p0    # Lcom/android/server/power/PowerManagerService$InputDeviceLightState;
 
     invoke-direct {p0}, Lcom/android/server/power/PowerManagerService$InputDeviceLightState;->handleInputDeviceLightOff()V
 
@@ -230,7 +219,6 @@
 
 .method private setInputDeviceLightKeep(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/power/PowerManagerService$InputDeviceLightState;->mIsKeepLight:Z
 
@@ -239,7 +227,6 @@
 
 .method private setInputDeviceLightTimeout(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Lcom/android/server/power/PowerManagerService$InputDeviceLightState;->mInputDeviceLightTimeout:I
 
@@ -255,7 +242,6 @@
 # virtual methods
 .method public setInputDeviceLightOn(I)V
     .locals 5
-    .param p1    # I
 
     const/4 v3, 0x0
 

@@ -32,8 +32,6 @@
 
 .method public static buildCallerInfo(Landroid/content/Context;Lcom/android/services/telephony/common/CallIdentification;)Lcom/android/incallui/CallerInfo;
     .locals 7
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/services/telephony/common/CallIdentification;
 
     const/4 v6, 0x1
 
@@ -176,7 +174,6 @@
 
 .method private static checkCnapSpecialCases(Ljava/lang/String;)I
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "PRIVATE"
 
@@ -328,8 +325,6 @@
 
 .method public static getCallerInfoForCall(Landroid/content/Context;Lcom/android/services/telephony/common/CallIdentification;)Lcom/android/incallui/CallerInfo;
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/services/telephony/common/CallIdentification;
 
     invoke-static {p0, p1}, Lcom/android/incallui/CallerInfoUtils;->buildCallerInfo(Landroid/content/Context;Lcom/android/services/telephony/common/CallIdentification;)Lcom/android/incallui/CallerInfo;
 
@@ -340,9 +335,6 @@
 
 .method public static getCallerInfoForCall(Landroid/content/Context;Lcom/android/services/telephony/common/CallIdentification;Lcom/android/incallui/CallerInfoAsyncQuery$OnQueryCompleteListener;)Lcom/android/incallui/CallerInfo;
     .locals 13
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/services/telephony/common/CallIdentification;
-    .param p2    # Lcom/android/incallui/CallerInfoAsyncQuery$OnQueryCompleteListener;
 
     const/4 v0, -0x1
 
@@ -425,10 +417,6 @@
 
 .method static modifyForSpecialCnapCases(Landroid/content/Context;Lcom/android/incallui/CallerInfo;Ljava/lang/String;I)Ljava/lang/String;
     .locals 8
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/incallui/CallerInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     const v7, 0x7f09000f
 
@@ -642,8 +630,6 @@
 
 .method public static sendViewNotification(Landroid/content/Context;Landroid/net/Uri;)V
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
 
     invoke-static {}, Lcom/sec/android/app/CscFeature;->getInstance()Lcom/sec/android/app/CscFeature;
 
@@ -713,7 +699,6 @@
 
 .method static toLogSafePhoneNumber(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     if-nez p0, :cond_0
 

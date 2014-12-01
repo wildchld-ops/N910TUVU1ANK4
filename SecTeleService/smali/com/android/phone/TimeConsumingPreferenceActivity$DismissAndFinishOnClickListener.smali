@@ -91,7 +91,7 @@
 
     iget-object v1, p0, Lcom/android/phone/TimeConsumingPreferenceActivity$DismissAndFinishOnClickListener;->this$0:Lcom/android/phone/TimeConsumingPreferenceActivity;
 
-    # invokes: Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    # invokes: Lcom/android/phone/TimeConsumingPreferenceActivity;->getContentResolver()Landroid/content/ContentResolver;
     invoke-static {v1}, Lcom/android/phone/TimeConsumingPreferenceActivity;->access$000(Lcom/android/phone/TimeConsumingPreferenceActivity;)Landroid/content/ContentResolver;
 
     move-result-object v1
@@ -128,7 +128,7 @@
 
     iget-object v1, p0, Lcom/android/phone/TimeConsumingPreferenceActivity$DismissAndFinishOnClickListener;->this$0:Lcom/android/phone/TimeConsumingPreferenceActivity;
 
-    invoke-virtual {v1, v0}, Landroid/app/Fragment;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {v1, v0}, Lcom/android/phone/TimeConsumingPreferenceActivity;->startActivity(Landroid/content/Intent;)V
 
     :cond_0
     return-void

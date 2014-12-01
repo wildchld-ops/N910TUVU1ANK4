@@ -30,7 +30,6 @@
 
 .method public static getSubWindow(Landroid/app/Activity;)Landroid/view/Window;
     .locals 3
-    .param p0    # Landroid/app/Activity;
 
     sget-object v1, Lcom/samsung/android/sdk/look/cocktailbar/SlookCocktailSubWindow;->mSlook:Lcom/samsung/android/sdk/look/Slook;
 
@@ -76,8 +75,6 @@
 
 .method public static setSubContentView(Landroid/app/Activity;I)V
     .locals 2
-    .param p0    # Landroid/app/Activity;
-    .param p1    # I
 
     sget-object v0, Lcom/samsung/android/sdk/look/cocktailbar/SlookCocktailSubWindow;->mSlook:Lcom/samsung/android/sdk/look/Slook;
 
@@ -123,8 +120,6 @@
 
 .method public static setSubContentView(Landroid/app/Activity;Landroid/view/View;)V
     .locals 2
-    .param p0    # Landroid/app/Activity;
-    .param p1    # Landroid/view/View;
 
     sget-object v0, Lcom/samsung/android/sdk/look/cocktailbar/SlookCocktailSubWindow;->mSlook:Lcom/samsung/android/sdk/look/Slook;
 

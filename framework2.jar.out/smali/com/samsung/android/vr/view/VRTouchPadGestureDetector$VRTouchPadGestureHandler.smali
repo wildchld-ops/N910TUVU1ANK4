@@ -31,7 +31,6 @@
 
 .method public constructor <init>(Lcom/samsung/android/vr/view/VRTouchPadGestureDetector;Landroid/os/Handler;)V
     .locals 1
-    .param p2    # Landroid/os/Handler;
 
     iput-object p1, p0, Lcom/samsung/android/vr/view/VRTouchPadGestureDetector$VRTouchPadGestureHandler;->this$0:Lcom/samsung/android/vr/view/VRTouchPadGestureDetector;
 
@@ -48,7 +47,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 2
-    .param p1    # Landroid/os/Message;
 
     iget v0, p1, Landroid/os/Message;->what:I
 

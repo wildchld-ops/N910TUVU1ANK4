@@ -845,7 +845,6 @@
 
 .method public constructor <init>(Landroid/os/Looper;)V
     .locals 1
-    .param p1    # Landroid/os/Looper;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -880,7 +879,6 @@
 
 .method static synthetic access$000(Landroid/hardware/contextaware/ContextAwareManager;)Landroid/os/Looper;
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/ContextAwareManager;
 
     iget-object v0, p0, Landroid/hardware/contextaware/ContextAwareManager;->mMainLooper:Landroid/os/Looper;
 
@@ -889,7 +887,6 @@
 
 .method private getListnerDelegate(Landroid/hardware/contextaware/manager/ContextAwareListener;)Landroid/hardware/contextaware/ContextAwareManager$CaListenerDelegate;
     .locals 4
-    .param p1    # Landroid/hardware/contextaware/manager/ContextAwareListener;
 
     if-nez p1, :cond_1
 
@@ -938,9 +935,6 @@
 
 .method private setCAProperty(IILandroid/hardware/contextaware/manager/ContextAwarePropertyBundle;)Z
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/hardware/contextaware/manager/ContextAwarePropertyBundle;
 
     const/4 v1, 0x0
 
@@ -968,8 +962,6 @@
 # virtual methods
 .method public final getContextInfo(Landroid/hardware/contextaware/manager/ContextAwareListener;I)V
     .locals 4
-    .param p1    # Landroid/hardware/contextaware/manager/ContextAwareListener;
-    .param p2    # I
 
     invoke-direct {p0, p1}, Landroid/hardware/contextaware/ContextAwareManager;->getListnerDelegate(Landroid/hardware/contextaware/manager/ContextAwareListener;)Landroid/hardware/contextaware/ContextAwareManager$CaListenerDelegate;
 
@@ -1054,8 +1046,6 @@
 
 .method public final registerListener(Landroid/hardware/contextaware/manager/ContextAwareListener;I)V
     .locals 4
-    .param p1    # Landroid/hardware/contextaware/manager/ContextAwareListener;
-    .param p2    # I
 
     invoke-direct {p0, p1}, Landroid/hardware/contextaware/ContextAwareManager;->getListnerDelegate(Landroid/hardware/contextaware/manager/ContextAwareListener;)Landroid/hardware/contextaware/ContextAwareManager$CaListenerDelegate;
 
@@ -1098,7 +1088,6 @@
 
 .method public final resetCAService(I)V
     .locals 2
-    .param p1    # I
 
     :try_start_0
     iget-object v1, p0, Landroid/hardware/contextaware/ContextAwareManager;->mContextAwareService:Landroid/hardware/contextaware/manager/IContextAwareService;
@@ -1120,10 +1109,6 @@
 
 .method public final setCALogger(ZZIZ)V
     .locals 2
-    .param p1    # Z
-    .param p2    # Z
-    .param p3    # I
-    .param p4    # Z
 
     :try_start_0
     iget-object v1, p0, Landroid/hardware/contextaware/ContextAwareManager;->mContextAwareService:Landroid/hardware/contextaware/manager/IContextAwareService;
@@ -1145,9 +1130,6 @@
 
 .method public final setCAProperty(IID)Z
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # D
 
     new-instance v0, Landroid/hardware/contextaware/manager/ContextAwarePropertyBundle;
 
@@ -1172,9 +1154,6 @@
 
 .method public final setCAProperty(IIF)Z
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # F
 
     new-instance v0, Landroid/hardware/contextaware/manager/ContextAwarePropertyBundle;
 
@@ -1199,9 +1178,6 @@
 
 .method public final setCAProperty(III)Z
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     new-instance v0, Landroid/hardware/contextaware/manager/ContextAwarePropertyBundle;
 
@@ -1226,9 +1202,6 @@
 
 .method public final setCAProperty(IIJ)Z
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
 
     new-instance v0, Landroid/hardware/contextaware/manager/ContextAwarePropertyBundle;
 
@@ -1253,9 +1226,6 @@
 
 .method public final setCAProperty(IILjava/lang/String;)Z
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     new-instance v0, Landroid/hardware/contextaware/manager/ContextAwarePropertyBundle;
 
@@ -1276,8 +1246,6 @@
 
 .method public final setCAProperty(IILjava/util/ArrayList;)Z
     .locals 2
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II",
@@ -1307,8 +1275,6 @@
 
 .method public final setCAProperty(IILjava/util/HashSet;)Z
     .locals 2
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II",
@@ -1338,9 +1304,6 @@
 
 .method public final setCAProperty(IIZ)Z
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     new-instance v0, Landroid/hardware/contextaware/manager/ContextAwarePropertyBundle;
 
@@ -1365,9 +1328,6 @@
 
 .method public final setCAProperty(II[B)Z
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [B
 
     new-instance v0, Landroid/hardware/contextaware/manager/ContextAwarePropertyBundle;
 
@@ -1392,9 +1352,6 @@
 
 .method public final setCAProperty(II[C)Z
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [C
 
     new-instance v0, Landroid/hardware/contextaware/manager/ContextAwarePropertyBundle;
 
@@ -1415,9 +1372,6 @@
 
 .method public final setCAProperty(II[D)Z
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [D
 
     new-instance v0, Landroid/hardware/contextaware/manager/ContextAwarePropertyBundle;
 
@@ -1438,9 +1392,6 @@
 
 .method public final setCAProperty(II[F)Z
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [F
 
     new-instance v0, Landroid/hardware/contextaware/manager/ContextAwarePropertyBundle;
 
@@ -1461,9 +1412,6 @@
 
 .method public final setCAProperty(II[I)Z
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [I
 
     new-instance v0, Landroid/hardware/contextaware/manager/ContextAwarePropertyBundle;
 
@@ -1484,9 +1432,6 @@
 
 .method public final setCAProperty(II[J)Z
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [J
 
     new-instance v0, Landroid/hardware/contextaware/manager/ContextAwarePropertyBundle;
 
@@ -1507,9 +1452,6 @@
 
 .method public final setCAProperty(II[Ljava/lang/String;)Z
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [Ljava/lang/String;
 
     new-instance v0, Landroid/hardware/contextaware/manager/ContextAwarePropertyBundle;
 
@@ -1530,8 +1472,6 @@
 
 .method public final setScenarioForDebugging(IILjava/util/List;Ljava/util/List;)Z
     .locals 6
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II",
@@ -1631,8 +1571,6 @@
 
 .method public final setScenarioForTest(II)Z
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     const/4 v1, 0x0
 
@@ -1658,7 +1596,6 @@
 
 .method public final setVersion(I)V
     .locals 2
-    .param p1    # I
 
     :try_start_0
     iget-object v1, p0, Landroid/hardware/contextaware/ContextAwareManager;->mContextAwareService:Landroid/hardware/contextaware/manager/IContextAwareService;
@@ -1726,7 +1663,6 @@
 
 .method public final unregisterListener(Landroid/hardware/contextaware/manager/ContextAwareListener;)V
     .locals 5
-    .param p1    # Landroid/hardware/contextaware/manager/ContextAwareListener;
 
     invoke-static {}, Landroid/hardware/contextaware/ContextList$ContextType;->values()[Landroid/hardware/contextaware/ContextList$ContextType;
 
@@ -1757,8 +1693,6 @@
 
 .method public final unregisterListener(Landroid/hardware/contextaware/manager/ContextAwareListener;I)V
     .locals 4
-    .param p1    # Landroid/hardware/contextaware/manager/ContextAwareListener;
-    .param p2    # I
 
     invoke-direct {p0, p1}, Landroid/hardware/contextaware/ContextAwareManager;->getListnerDelegate(Landroid/hardware/contextaware/manager/ContextAwareListener;)Landroid/hardware/contextaware/ContextAwareManager$CaListenerDelegate;
 

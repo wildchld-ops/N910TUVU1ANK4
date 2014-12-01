@@ -47,7 +47,6 @@
 
 .method protected initCustomLayout(Landroid/view/ViewGroup;)V
     .locals 3
-    .param p1    # Landroid/view/ViewGroup;
 
     const-string v1, "IncomingTipsPopupService"
 
@@ -163,8 +162,6 @@
 
 .method public onStateChange(Lcom/android/incallui/InCallPresenter$InCallState;Lcom/android/incallui/CallList;)V
     .locals 4
-    .param p1    # Lcom/android/incallui/InCallPresenter$InCallState;
-    .param p2    # Lcom/android/incallui/CallList;
 
     const-string v1, "IncomingTipsPopupService"
 

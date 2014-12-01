@@ -65,10 +65,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Lcom/android/server/media/RemoteDisplayProviderWatcher$Callback;Landroid/os/Handler;I)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/server/media/RemoteDisplayProviderWatcher$Callback;
-    .param p3    # Landroid/os/Handler;
-    .param p4    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -117,7 +113,6 @@
 
 .method static synthetic access$100(Lcom/android/server/media/RemoteDisplayProviderWatcher;)V
     .locals 0
-    .param p0    # Lcom/android/server/media/RemoteDisplayProviderWatcher;
 
     invoke-direct {p0}, Lcom/android/server/media/RemoteDisplayProviderWatcher;->scanPackages()V
 
@@ -126,8 +121,6 @@
 
 .method private findProvider(Ljava/lang/String;Ljava/lang/String;)I
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v3, p0, Lcom/android/server/media/RemoteDisplayProviderWatcher;->mProviders:Ljava/util/ArrayList;
 
@@ -170,7 +163,6 @@
 
 .method private hasCaptureVideoPermission(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -373,7 +365,6 @@
 
 .method private verifyServiceTrusted(Landroid/content/pm/ServiceInfo;)Z
     .locals 4
-    .param p1    # Landroid/content/pm/ServiceInfo;
 
     const/4 v0, 0x0
 
@@ -488,8 +479,6 @@
 # virtual methods
 .method public dump(Ljava/io/PrintWriter;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/io/PrintWriter;
-    .param p2    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 

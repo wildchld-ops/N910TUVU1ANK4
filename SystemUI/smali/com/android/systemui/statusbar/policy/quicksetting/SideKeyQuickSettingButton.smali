@@ -27,7 +27,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 8
-    .param p1    # Landroid/content/Context;
 
     const v2, 0x7f0b0131
 
@@ -102,7 +101,6 @@
 
 .method static synthetic access$000(Lcom/android/systemui/statusbar/policy/quicksetting/SideKeyQuickSettingButton;)Z
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/policy/quicksetting/SideKeyQuickSettingButton;
 
     invoke-direct {p0}, Lcom/android/systemui/statusbar/policy/quicksetting/SideKeyQuickSettingButton;->getSideKeyEnabled()Z
 
@@ -141,7 +139,6 @@
 
 .method private setSideKeyEnabled(Z)V
     .locals 4
-    .param p1    # Z
 
     const/4 v0, 0x1
 
@@ -234,7 +231,6 @@
 
 .method public onClick(Z)V
     .locals 4
-    .param p1    # Z
 
     iget-object v1, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -427,7 +423,6 @@
 
 .method public userSwitched(Landroid/content/pm/UserInfo;)V
     .locals 2
-    .param p1    # Landroid/content/pm/UserInfo;
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/quicksetting/SideKeyQuickSettingButton;->mSideKeyObserver:Lcom/android/systemui/statusbar/policy/quicksetting/SideKeyQuickSettingButton$SideKeyObserver;
 

@@ -62,7 +62,6 @@
 
 .method protected final checkParserMap(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/hardware/contextaware/dataprovider/sensorhubprovider/SensorHubParserBean;->mParserMap:Ljava/util/concurrent/ConcurrentHashMap;
 
@@ -95,7 +94,6 @@
 
 .method public final getParser(Ljava/lang/String;)Landroid/hardware/contextaware/dataprovider/sensorhubprovider/ISensorHubParser;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/hardware/contextaware/dataprovider/sensorhubprovider/SensorHubParserBean;->mParserMap:Ljava/util/concurrent/ConcurrentHashMap;
 
@@ -129,8 +127,6 @@
 
 .method public final registerParser(Ljava/lang/String;Landroid/hardware/contextaware/dataprovider/sensorhubprovider/ISensorHubParser;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/hardware/contextaware/dataprovider/sensorhubprovider/ISensorHubParser;
 
     iget-object v0, p0, Landroid/hardware/contextaware/dataprovider/sensorhubprovider/SensorHubParserBean;->mParserMap:Ljava/util/concurrent/ConcurrentHashMap;
 
@@ -158,7 +154,6 @@
 
 .method public final unregisterParser(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/hardware/contextaware/dataprovider/sensorhubprovider/SensorHubParserBean;->mParserMap:Ljava/util/concurrent/ConcurrentHashMap;
 

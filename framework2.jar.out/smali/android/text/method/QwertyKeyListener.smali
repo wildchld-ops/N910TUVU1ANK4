@@ -487,8 +487,6 @@
 
 .method public constructor <init>(Landroid/text/method/TextKeyListener$Capitalize;Z)V
     .locals 1
-    .param p1    # Landroid/text/method/TextKeyListener$Capitalize;
-    .param p2    # Z
 
     const/4 v0, 0x0
 
@@ -499,9 +497,6 @@
 
 .method private constructor <init>(Landroid/text/method/TextKeyListener$Capitalize;ZZ)V
     .locals 0
-    .param p1    # Landroid/text/method/TextKeyListener$Capitalize;
-    .param p2    # Z
-    .param p3    # Z
 
     invoke-direct {p0}, Landroid/text/method/BaseKeyListener;-><init>()V
 
@@ -516,8 +511,6 @@
 
 .method public static getInstance(ZLandroid/text/method/TextKeyListener$Capitalize;)Landroid/text/method/QwertyKeyListener;
     .locals 3
-    .param p0    # Z
-    .param p1    # Landroid/text/method/TextKeyListener$Capitalize;
 
     invoke-virtual {p1}, Ljava/lang/Enum;->ordinal()I
 
@@ -586,10 +579,6 @@
 
 .method private getReplacement(Ljava/lang/CharSequence;IILandroid/view/View;)Ljava/lang/String;
     .locals 10
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/view/View;
 
     const/4 v7, 0x0
 
@@ -708,10 +697,6 @@
 
 .method public static markAsReplaced(Landroid/text/Spannable;IILjava/lang/String;)V
     .locals 7
-    .param p0    # Landroid/text/Spannable;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     const/4 v6, 0x0
 
@@ -764,11 +749,6 @@
 
 .method private showCharacterPicker(Landroid/view/View;Landroid/text/Editable;CZI)Z
     .locals 7
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/text/Editable;
-    .param p3    # C
-    .param p4    # Z
-    .param p5    # I
 
     const/4 v6, 0x1
 
@@ -814,7 +794,6 @@
 
 .method private static toTitleCase(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -869,10 +848,6 @@
 
 .method public onKeyDown(Landroid/view/View;Landroid/text/Editable;ILandroid/view/KeyEvent;)Z
     .locals 44
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/text/Editable;
-    .param p3    # I
-    .param p4    # Landroid/view/KeyEvent;
 
     const/16 v34, 0x0
 

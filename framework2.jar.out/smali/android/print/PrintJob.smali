@@ -12,8 +12,6 @@
 # direct methods
 .method constructor <init>(Landroid/print/PrintJobInfo;Landroid/print/PrintManager;)V
     .locals 0
-    .param p1    # Landroid/print/PrintJobInfo;
-    .param p2    # Landroid/print/PrintManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -99,7 +97,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 4
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x0
 

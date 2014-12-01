@@ -98,9 +98,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/media/MediaTimeProvider;Landroid/media/SubtitleController$Listener;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/media/MediaTimeProvider;
-    .param p3    # Landroid/media/SubtitleController$Listener;
 
     const/4 v1, 0x0
 
@@ -155,7 +152,6 @@
 
 .method static synthetic access$000(Landroid/media/SubtitleController;)V
     .locals 0
-    .param p0    # Landroid/media/SubtitleController;
 
     invoke-direct {p0}, Landroid/media/SubtitleController;->doShow()V
 
@@ -164,7 +160,6 @@
 
 .method static synthetic access$100(Landroid/media/SubtitleController;)V
     .locals 0
-    .param p0    # Landroid/media/SubtitleController;
 
     invoke-direct {p0}, Landroid/media/SubtitleController;->doHide()V
 
@@ -173,8 +168,6 @@
 
 .method static synthetic access$200(Landroid/media/SubtitleController;Landroid/media/SubtitleTrack;)V
     .locals 0
-    .param p0    # Landroid/media/SubtitleController;
-    .param p1    # Landroid/media/SubtitleTrack;
 
     invoke-direct {p0, p1}, Landroid/media/SubtitleController;->doSelectTrack(Landroid/media/SubtitleTrack;)V
 
@@ -183,7 +176,6 @@
 
 .method static synthetic access$300(Landroid/media/SubtitleController;)V
     .locals 0
-    .param p0    # Landroid/media/SubtitleController;
 
     invoke-direct {p0}, Landroid/media/SubtitleController;->doSelectDefaultTrack()V
 
@@ -339,7 +331,6 @@
 
 .method private doSelectTrack(Landroid/media/SubtitleTrack;)V
     .locals 2
-    .param p1    # Landroid/media/SubtitleTrack;
 
     const/4 v0, 0x1
 
@@ -455,7 +446,6 @@
 
 .method private processOnAnchor(Landroid/os/Message;)V
     .locals 2
-    .param p1    # Landroid/os/Message;
 
     sget-boolean v0, Landroid/media/SubtitleController;->$assertionsDisabled:Z
 
@@ -505,7 +495,6 @@
 # virtual methods
 .method public addTrack(Landroid/media/MediaFormat;)Landroid/media/SubtitleTrack;
     .locals 7
-    .param p1    # Landroid/media/MediaFormat;
 
     iget-object v4, p0, Landroid/media/SubtitleController;->mRenderers:Ljava/util/Vector;
 
@@ -971,7 +960,6 @@
 
 .method public registerRenderer(Landroid/media/SubtitleController$Renderer;)V
     .locals 2
-    .param p1    # Landroid/media/SubtitleController$Renderer;
 
     iget-object v1, p0, Landroid/media/SubtitleController;->mRenderers:Ljava/util/Vector;
 
@@ -1077,7 +1065,6 @@
 
 .method public selectTrack(Landroid/media/SubtitleTrack;)Z
     .locals 2
-    .param p1    # Landroid/media/SubtitleTrack;
 
     if-eqz p1, :cond_0
 
@@ -1112,7 +1099,6 @@
 
 .method public setAnchor(Landroid/media/SubtitleController$Anchor;)V
     .locals 3
-    .param p1    # Landroid/media/SubtitleController$Anchor;
 
     const/4 v1, 0x0
 

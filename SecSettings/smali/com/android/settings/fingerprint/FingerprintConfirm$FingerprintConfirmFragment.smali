@@ -45,7 +45,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/fingerprint/FingerprintConfirm$FingerprintConfirmFragment;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/settings/fingerprint/FingerprintConfirm$FingerprintConfirmFragment;
 
     iget-object v0, p0, Lcom/android/settings/fingerprint/FingerprintConfirm$FingerprintConfirmFragment;->mHandler:Landroid/os/Handler;
 
@@ -54,8 +53,6 @@
 
 .method static synthetic access$002(Lcom/android/settings/fingerprint/FingerprintConfirm$FingerprintConfirmFragment;Landroid/os/Handler;)Landroid/os/Handler;
     .locals 0
-    .param p0    # Lcom/android/settings/fingerprint/FingerprintConfirm$FingerprintConfirmFragment;
-    .param p1    # Landroid/os/Handler;
 
     iput-object p1, p0, Lcom/android/settings/fingerprint/FingerprintConfirm$FingerprintConfirmFragment;->mHandler:Landroid/os/Handler;
 
@@ -64,7 +61,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/fingerprint/FingerprintConfirm$FingerprintConfirmFragment;)V
     .locals 0
-    .param p0    # Lcom/android/settings/fingerprint/FingerprintConfirm$FingerprintConfirmFragment;
 
     invoke-direct {p0}, Lcom/android/settings/fingerprint/FingerprintConfirm$FingerprintConfirmFragment;->showSensorErrorDialog()V
 
@@ -73,7 +69,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/fingerprint/FingerprintConfirm$FingerprintConfirmFragment;)Lcom/samsung/android/fingerprint/FingerprintManager;
     .locals 1
-    .param p0    # Lcom/android/settings/fingerprint/FingerprintConfirm$FingerprintConfirmFragment;
 
     iget-object v0, p0, Lcom/android/settings/fingerprint/FingerprintConfirm$FingerprintConfirmFragment;->mFingerprintManager:Lcom/samsung/android/fingerprint/FingerprintManager;
 
@@ -126,7 +121,6 @@
 # virtual methods
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onCreate(Landroid/os/Bundle;)V
 

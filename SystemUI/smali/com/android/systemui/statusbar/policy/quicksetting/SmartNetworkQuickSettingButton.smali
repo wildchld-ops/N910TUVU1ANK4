@@ -37,7 +37,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 10
-    .param p1    # Landroid/content/Context;
 
     const v2, 0x7f0b011f
 
@@ -136,7 +135,6 @@
 
 .method static synthetic access$000(Lcom/android/systemui/statusbar/policy/quicksetting/SmartNetworkQuickSettingButton;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/policy/quicksetting/SmartNetworkQuickSettingButton;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -145,8 +143,6 @@
 
 .method static synthetic access$100(Lcom/android/systemui/statusbar/policy/quicksetting/SmartNetworkQuickSettingButton;I)V
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/policy/quicksetting/SmartNetworkQuickSettingButton;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/systemui/statusbar/policy/quicksetting/SmartNetworkQuickSettingButton;->setMode(I)V
 
@@ -155,7 +151,6 @@
 
 .method static synthetic access$200(Lcom/android/systemui/statusbar/policy/quicksetting/SmartNetworkQuickSettingButton;)Z
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/policy/quicksetting/SmartNetworkQuickSettingButton;
 
     iget-boolean v0, p0, Lcom/android/systemui/statusbar/policy/quicksetting/SmartNetworkQuickSettingButton;->mState:Z
 
@@ -164,8 +159,6 @@
 
 .method static synthetic access$202(Lcom/android/systemui/statusbar/policy/quicksetting/SmartNetworkQuickSettingButton;Z)Z
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/policy/quicksetting/SmartNetworkQuickSettingButton;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/systemui/statusbar/policy/quicksetting/SmartNetworkQuickSettingButton;->mState:Z
 
@@ -174,7 +167,6 @@
 
 .method static synthetic access$300(Lcom/android/systemui/statusbar/policy/quicksetting/SmartNetworkQuickSettingButton;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/policy/quicksetting/SmartNetworkQuickSettingButton;
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/quicksetting/SmartNetworkQuickSettingButton;->mContentResolver:Landroid/content/ContentResolver;
 
@@ -183,7 +175,6 @@
 
 .method static synthetic access$400(Lcom/android/systemui/statusbar/policy/quicksetting/SmartNetworkQuickSettingButton;)I
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/policy/quicksetting/SmartNetworkQuickSettingButton;
 
     invoke-direct {p0}, Lcom/android/systemui/statusbar/policy/quicksetting/SmartNetworkQuickSettingButton;->getMode()I
 
@@ -359,7 +350,6 @@
 
 .method private setMode(I)V
     .locals 4
-    .param p1    # I
 
     const/4 v3, 0x1
 
@@ -452,7 +442,6 @@
 
 .method public onClick(Z)V
     .locals 5
-    .param p1    # Z
 
     const/4 v4, 0x0
 
@@ -609,7 +598,6 @@
 
 .method public userSwitched(Landroid/content/pm/UserInfo;)V
     .locals 2
-    .param p1    # Landroid/content/pm/UserInfo;
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/quicksetting/SmartNetworkQuickSettingButton;->mSmartPauseObserver:Lcom/android/systemui/statusbar/policy/quicksetting/SmartNetworkQuickSettingButton$SmartPauseObserver;
 

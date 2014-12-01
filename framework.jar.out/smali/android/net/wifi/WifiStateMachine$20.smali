@@ -36,7 +36,6 @@
 # virtual methods
 .method public onFailure(I)V
     .locals 3
-    .param p1    # I
 
     # getter for: Landroid/net/wifi/WifiStateMachine;->DBG:Z
     invoke-static {}, Landroid/net/wifi/WifiStateMachine;->access$100()Z

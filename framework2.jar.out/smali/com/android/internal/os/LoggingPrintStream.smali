@@ -46,7 +46,6 @@
 
 .method private flush(Z)V
     .locals 6
-    .param p1    # Z
 
     const/4 v5, 0x0
 
@@ -118,7 +117,6 @@
 # virtual methods
 .method public declared-synchronized append(C)Ljava/io/PrintStream;
     .locals 1
-    .param p1    # C
 
     monitor-enter p0
 
@@ -141,7 +139,6 @@
 
 .method public declared-synchronized append(Ljava/lang/CharSequence;)Ljava/io/PrintStream;
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
 
     monitor-enter p0
 
@@ -170,9 +167,6 @@
 
 .method public declared-synchronized append(Ljava/lang/CharSequence;II)Ljava/io/PrintStream;
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
 
     monitor-enter p0
 
@@ -201,7 +195,6 @@
 
 .method public bridge synthetic append(C)Ljava/lang/Appendable;
     .locals 1
-    .param p1    # C
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -217,7 +210,6 @@
 
 .method public bridge synthetic append(Ljava/lang/CharSequence;)Ljava/lang/Appendable;
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -233,9 +225,6 @@
 
 .method public bridge synthetic append(Ljava/lang/CharSequence;II)Ljava/lang/Appendable;
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -289,8 +278,6 @@
 
 .method public varargs format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/Object;
 
     invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
 
@@ -305,9 +292,6 @@
 
 .method public varargs declared-synchronized format(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;
     .locals 2
-    .param p1    # Ljava/util/Locale;
-    .param p2    # Ljava/lang/String;
-    .param p3    # [Ljava/lang/Object;
 
     monitor-enter p0
 
@@ -353,7 +337,6 @@
 
 .method public declared-synchronized print(C)V
     .locals 1
-    .param p1    # C
 
     monitor-enter p0
 
@@ -387,7 +370,6 @@
 
 .method public declared-synchronized print(D)V
     .locals 1
-    .param p1    # D
 
     monitor-enter p0
 
@@ -412,7 +394,6 @@
 
 .method public declared-synchronized print(F)V
     .locals 1
-    .param p1    # F
 
     monitor-enter p0
 
@@ -437,7 +418,6 @@
 
 .method public declared-synchronized print(I)V
     .locals 1
-    .param p1    # I
 
     monitor-enter p0
 
@@ -462,7 +442,6 @@
 
 .method public declared-synchronized print(J)V
     .locals 1
-    .param p1    # J
 
     monitor-enter p0
 
@@ -487,7 +466,6 @@
 
 .method public declared-synchronized print(Ljava/lang/Object;)V
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     monitor-enter p0
 
@@ -516,7 +494,6 @@
 
 .method public declared-synchronized print(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -545,7 +522,6 @@
 
 .method public declared-synchronized print(Z)V
     .locals 1
-    .param p1    # Z
 
     monitor-enter p0
 
@@ -570,7 +546,6 @@
 
 .method public declared-synchronized print([C)V
     .locals 1
-    .param p1    # [C
 
     monitor-enter p0
 
@@ -599,8 +574,6 @@
 
 .method public varargs printf(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/Object;
 
     invoke-virtual {p0, p1, p2}, Lcom/android/internal/os/LoggingPrintStream;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;
 
@@ -611,9 +584,6 @@
 
 .method public varargs printf(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;
     .locals 1
-    .param p1    # Ljava/util/Locale;
-    .param p2    # Ljava/lang/String;
-    .param p3    # [Ljava/lang/Object;
 
     invoke-virtual {p0, p1, p2, p3}, Lcom/android/internal/os/LoggingPrintStream;->format(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;
 
@@ -648,7 +618,6 @@
 
 .method public declared-synchronized println(C)V
     .locals 1
-    .param p1    # C
 
     monitor-enter p0
 
@@ -677,7 +646,6 @@
 
 .method public declared-synchronized println(D)V
     .locals 1
-    .param p1    # D
 
     monitor-enter p0
 
@@ -706,7 +674,6 @@
 
 .method public declared-synchronized println(F)V
     .locals 1
-    .param p1    # F
 
     monitor-enter p0
 
@@ -735,7 +702,6 @@
 
 .method public declared-synchronized println(I)V
     .locals 1
-    .param p1    # I
 
     monitor-enter p0
 
@@ -764,7 +730,6 @@
 
 .method public declared-synchronized println(J)V
     .locals 1
-    .param p1    # J
 
     monitor-enter p0
 
@@ -793,7 +758,6 @@
 
 .method public declared-synchronized println(Ljava/lang/Object;)V
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     monitor-enter p0
 
@@ -822,7 +786,6 @@
 
 .method public declared-synchronized println(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -905,7 +868,6 @@
 
 .method public declared-synchronized println(Z)V
     .locals 1
-    .param p1    # Z
 
     monitor-enter p0
 
@@ -934,7 +896,6 @@
 
 .method public declared-synchronized println([C)V
     .locals 1
-    .param p1    # [C
 
     monitor-enter p0
 
@@ -969,7 +930,6 @@
 
 .method public write(I)V
     .locals 4
-    .param p1    # I
 
     const/4 v3, 0x1
 
@@ -988,7 +948,6 @@
 
 .method public write([B)V
     .locals 2
-    .param p1    # [B
 
     const/4 v0, 0x0
 
@@ -1001,9 +960,6 @@
 
 .method public declared-synchronized write([BII)V
     .locals 7
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
 
     monitor-enter p0
 

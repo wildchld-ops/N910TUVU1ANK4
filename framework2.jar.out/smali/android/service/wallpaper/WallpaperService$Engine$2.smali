@@ -101,8 +101,6 @@
 
 .method public setFixedSize(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Landroid/service/wallpaper/WallpaperService$Engine$2;->this$1:Landroid/service/wallpaper/WallpaperService$Engine;
 
@@ -126,7 +124,6 @@
 
 .method public setKeepScreenOn(Z)V
     .locals 2
-    .param p1    # Z
 
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 

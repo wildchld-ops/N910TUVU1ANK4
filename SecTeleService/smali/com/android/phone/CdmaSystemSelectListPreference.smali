@@ -81,7 +81,7 @@
 
     const/4 v2, 0x0
 
-    invoke-virtual {v1, v2}, Landroid/os/Handler;->obtainMessage(I)Landroid/os/Message;
+    invoke-virtual {v1, v2}, Lcom/android/phone/CdmaSystemSelectListPreference$MyHandler;->obtainMessage(I)Landroid/os/Message;
 
     move-result-object v1
 
@@ -96,7 +96,7 @@
 
     if-eqz v0, :cond_1
 
-    invoke-virtual {p0}, Landroid/preference/ListPreference;->getValue()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/android/phone/CdmaSystemSelectListPreference;->getValue()Ljava/lang/String;
 
     move-result-object v0
 
@@ -122,7 +122,7 @@
 
     const/4 v2, 0x1
 
-    invoke-virtual {v1, v2}, Landroid/os/Handler;->obtainMessage(I)Landroid/os/Message;
+    invoke-virtual {v1, v2}, Lcom/android/phone/CdmaSystemSelectListPreference$MyHandler;->obtainMessage(I)Landroid/os/Message;
 
     move-result-object v1
 
@@ -132,7 +132,7 @@
 
     move-result-object v0
 
-    invoke-virtual {p0, v0}, Landroid/preference/ListPreference;->setValue(Ljava/lang/String;)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/CdmaSystemSelectListPreference;->setValue(Ljava/lang/String;)V
 
     :cond_1
     return-void
@@ -161,13 +161,13 @@
 
     if-eqz p1, :cond_1
 
-    invoke-virtual {p0}, Landroid/preference/ListPreference;->getValue()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/android/phone/CdmaSystemSelectListPreference;->getValue()Ljava/lang/String;
 
     move-result-object v3
 
     if-eqz v3, :cond_1
 
-    invoke-virtual {p0}, Landroid/preference/ListPreference;->getValue()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/android/phone/CdmaSystemSelectListPreference;->getValue()Ljava/lang/String;
 
     move-result-object v3
 
@@ -220,7 +220,7 @@
 
     iget-object v4, p0, Lcom/android/phone/CdmaSystemSelectListPreference;->mHandler:Lcom/android/phone/CdmaSystemSelectListPreference$MyHandler;
 
-    invoke-virtual {v4, v8}, Landroid/os/Handler;->obtainMessage(I)Landroid/os/Message;
+    invoke-virtual {v4, v8}, Lcom/android/phone/CdmaSystemSelectListPreference$MyHandler;->obtainMessage(I)Landroid/os/Message;
 
     move-result-object v4
 
@@ -260,7 +260,7 @@
 
     aput-object v6, v5, v7
 
-    invoke-virtual {p0}, Landroid/preference/ListPreference;->getValue()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/android/phone/CdmaSystemSelectListPreference;->getValue()Ljava/lang/String;
 
     move-result-object v6
 
@@ -304,7 +304,7 @@
     return-void
 
     :cond_0
-    invoke-super {p0, p1}, Landroid/preference/DialogPreference;->showDialog(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Landroid/preference/ListPreference;->showDialog(Landroid/os/Bundle;)V
 
     goto :goto_0
 .end method

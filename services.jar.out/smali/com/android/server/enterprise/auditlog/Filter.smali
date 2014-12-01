@@ -22,7 +22,6 @@
 # virtual methods
 .method public filtering(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/server/enterprise/auditlog/Filter;->mPattern:Ljava/util/regex/Pattern;
 
@@ -43,7 +42,6 @@
 
 .method public setFilter(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     invoke-static {p1}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;)Ljava/util/regex/Pattern;

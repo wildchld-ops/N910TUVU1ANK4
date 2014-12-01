@@ -354,7 +354,6 @@
 
 .method private getByteFromFile(Ljava/lang/String;)B
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -531,7 +530,6 @@
 
 .method private getStringFromFile(Ljava/lang/String;)Ljava/lang/String;
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -657,7 +655,6 @@
 # virtual methods
 .method public onDisabled(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     invoke-super {p0, p1}, Landroid/appwidget/AppWidgetProvider;->onDisabled(Landroid/content/Context;)V
 
@@ -666,7 +663,6 @@
 
 .method public onEnabled(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     invoke-super {p0, p1}, Landroid/appwidget/AppWidgetProvider;->onEnabled(Landroid/content/Context;)V
 
@@ -756,9 +752,6 @@
 
 .method public onUpdate(Landroid/content/Context;Landroid/appwidget/AppWidgetManager;[I)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/appwidget/AppWidgetManager;
-    .param p3    # [I
 
     invoke-virtual {p1}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 

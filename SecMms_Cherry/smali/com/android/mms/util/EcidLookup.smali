@@ -76,7 +76,6 @@
 
 .method static synthetic access$000(Ljava/lang/String;)V
     .locals 0
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/android/mms/util/EcidLookup;->invalidateCache(Ljava/lang/String;)V
 
@@ -85,7 +84,6 @@
 
 .method static synthetic access$100(Landroid/content/Context;)V
     .locals 0
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Lcom/android/mms/util/EcidLookup;->initSendersCache(Landroid/content/Context;)V
 
@@ -102,8 +100,6 @@
 
 .method public static addSender(Landroid/content/Context;Landroid/net/Uri;)Ljava/lang/String;
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
 
     invoke-static {p0, p1}, Lcom/android/mms/util/AddressUtils;->getFrom(Landroid/content/Context;Landroid/net/Uri;)Ljava/lang/String;
 
@@ -128,7 +124,6 @@
 
 .method public static addSender(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/android/mms/util/EcidLookup;->isValidPhoneNumber(Ljava/lang/String;)Z
 
@@ -150,11 +145,6 @@
 
 .method public static delayedNotification(Landroid/content/Context;Landroid/net/Uri;ZLandroid/net/Uri;I)V
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Z
-    .param p3    # Landroid/net/Uri;
-    .param p4    # I
 
     invoke-static {p0, p3}, Lcom/android/mms/util/AddressUtils;->getFrom(Landroid/content/Context;Landroid/net/Uri;)Ljava/lang/String;
 
@@ -174,11 +164,6 @@
 
 .method public static delayedNotification(Landroid/content/Context;Landroid/net/Uri;ZLjava/lang/String;I)V
     .locals 7
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Z
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
 
     invoke-static {p3}, Lcom/android/mms/util/EcidLookup;->normalizeNumber(Ljava/lang/String;)Ljava/lang/String;
 
@@ -236,8 +221,6 @@
 
 .method private static doLookup(Landroid/content/ContentResolver;Ljava/lang/String;)Landroid/database/Cursor;
     .locals 7
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # Ljava/lang/String;
 
     const/4 v6, 0x0
 
@@ -471,8 +454,6 @@
 
 .method private static getBool(Landroid/database/Cursor;I)Z
     .locals 4
-    .param p0    # Landroid/database/Cursor;
-    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -511,7 +492,6 @@
 
 .method private static getEcidContactFromCursor(Landroid/database/Cursor;)Lcom/android/mms/util/EcidLookup$EcidContact;
     .locals 9
-    .param p0    # Landroid/database/Cursor;
 
     const/4 v8, 0x0
 
@@ -696,8 +676,6 @@
 
 .method public static getEcidName(Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -779,8 +757,6 @@
 
 .method private static getString(Landroid/database/Cursor;I)Ljava/lang/String;
     .locals 1
-    .param p0    # Landroid/database/Cursor;
-    .param p1    # I
 
     const/4 v0, -0x1
 
@@ -807,8 +783,6 @@
 
 .method public static hasUpdateFor(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x1
 
@@ -889,7 +863,6 @@
 
 .method public static declared-synchronized init(Landroid/content/Context;)V
     .locals 5
-    .param p0    # Landroid/content/Context;
 
     const-class v1, Lcom/android/mms/util/EcidLookup;
 
@@ -978,7 +951,6 @@
 
 .method private static initSendersCache(Landroid/content/Context;)V
     .locals 10
-    .param p0    # Landroid/content/Context;
 
     const/4 v6, 0x1
 
@@ -1094,7 +1066,6 @@
 
 .method private static invalidateCache(Ljava/lang/String;)V
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -1139,7 +1110,6 @@
 
 .method private static isValidPhoneNumber(Ljava/lang/String;)Z
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -1199,7 +1169,6 @@
 
 .method private static normalizeNumber(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     const/4 v1, 0x1
 
@@ -1246,8 +1215,6 @@
 
 .method public static shouldWaitForEcidName(Landroid/content/Context;Landroid/net/Uri;)Z
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
 
     invoke-static {p0, p1}, Lcom/android/mms/util/AddressUtils;->getFrom(Landroid/content/Context;Landroid/net/Uri;)Ljava/lang/String;
 
@@ -1262,7 +1229,6 @@
 
 .method public static shouldWaitForEcidName(Ljava/lang/String;)Z
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     const/4 v1, 0x0
 

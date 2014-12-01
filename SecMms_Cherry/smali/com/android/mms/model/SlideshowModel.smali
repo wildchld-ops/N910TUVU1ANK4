@@ -111,7 +111,6 @@
 
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Lcom/android/mms/model/Model;-><init>()V
 
@@ -144,10 +143,6 @@
 
 .method private constructor <init>(Lcom/android/mms/model/LayoutModel;Ljava/util/ArrayList;Ljava/util/ArrayList;Lorg/w3c/dom/smil/SMILDocument;Lcom/google/android/mms/pdu/PduBody;Landroid/content/Context;)V
     .locals 4
-    .param p1    # Lcom/android/mms/model/LayoutModel;
-    .param p4    # Lorg/w3c/dom/smil/SMILDocument;
-    .param p5    # Lcom/google/android/mms/pdu/PduBody;
-    .param p6    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -248,9 +243,6 @@
 
 .method private static adjusDuration(Lorg/w3c/dom/smil/SMILParElement;Lorg/w3c/dom/smil/SMILMediaElement;Lcom/android/mms/model/MediaModel;)V
     .locals 5
-    .param p0    # Lorg/w3c/dom/smil/SMILParElement;
-    .param p1    # Lorg/w3c/dom/smil/SMILMediaElement;
-    .param p2    # Lcom/android/mms/model/MediaModel;
 
     const/high16 v4, 0x447a0000
 
@@ -372,8 +364,6 @@
 
 .method private static asSMILPartElement(Lorg/w3c/dom/smil/SMILDocument;Lorg/w3c/dom/Node;)Lorg/w3c/dom/smil/SMILParElement;
     .locals 4
-    .param p0    # Lorg/w3c/dom/smil/SMILDocument;
-    .param p1    # Lorg/w3c/dom/Node;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/google/android/mms/MmsException;
@@ -446,9 +436,6 @@
 
 .method private static checkCRMode(ZZLcom/android/mms/model/MediaModel;)Z
     .locals 3
-    .param p0    # Z
-    .param p1    # Z
-    .param p2    # Lcom/android/mms/model/MediaModel;
 
     if-eqz p0, :cond_0
 
@@ -549,7 +536,6 @@
 
 .method private static checkContentLocation(Lcom/google/android/mms/pdu/PduPart;)Ljava/lang/String;
     .locals 2
-    .param p0    # Lcom/google/android/mms/pdu/PduPart;
 
     invoke-virtual {p0}, Lcom/google/android/mms/pdu/PduPart;->getContentLocation()[B
 
@@ -578,9 +564,6 @@
 
 .method private checkDRMExtension(Lcom/google/android/mms/pdu/PduPart;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 6
-    .param p1    # Lcom/google/android/mms/pdu/PduPart;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const/16 v4, 0x2e
 
@@ -658,11 +641,6 @@
 
 .method private checkMediaFileName(IILcom/android/mms/model/MediaModel;Lcom/google/android/mms/pdu/PduPart;Ljava/lang/String;)Ljava/lang/String;
     .locals 9
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Lcom/android/mms/model/MediaModel;
-    .param p4    # Lcom/google/android/mms/pdu/PduPart;
-    .param p5    # Ljava/lang/String;
 
     add-int/lit8 v2, p1, 0x1
 
@@ -823,9 +801,6 @@
 
 .method public static createFromMessageUri(Landroid/content/Context;Landroid/net/Uri;Z)Lcom/android/mms/model/SlideshowModel;
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/google/android/mms/MmsException;
@@ -845,9 +820,6 @@
 
 .method public static createFromPduBody(Landroid/content/Context;Lcom/google/android/mms/pdu/PduBody;Z)Lcom/android/mms/model/SlideshowModel;
     .locals 37
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/google/android/mms/pdu/PduBody;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/google/android/mms/MmsException;
@@ -1475,10 +1447,6 @@
 
 .method public static createFromPduBodyForForward(Landroid/content/Context;Landroid/net/Uri;ZZ)Lcom/android/mms/model/SlideshowModel;
     .locals 33
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Z
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/google/android/mms/MmsException;
@@ -1956,8 +1924,6 @@
 
 .method public static createName(JI)Ljava/lang/String;
     .locals 2
-    .param p0    # J
-    .param p2    # I
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -1996,7 +1962,6 @@
 
 .method public static createNew(Landroid/content/Context;)Lcom/android/mms/model/SlideshowModel;
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     new-instance v0, Lcom/android/mms/model/SlideshowModel;
 
@@ -2007,7 +1972,6 @@
 
 .method private static createRegionModel(Lorg/w3c/dom/smil/SMILRootLayoutElement;)Lcom/android/mms/model/RegionModel;
     .locals 6
-    .param p0    # Lorg/w3c/dom/smil/SMILRootLayoutElement;
 
     const/4 v2, 0x0
 
@@ -2066,12 +2030,6 @@
 
 .method private static createSlideshowModel(Landroid/content/Context;Lcom/google/android/mms/pdu/PduBody;Lorg/w3c/dom/smil/SMILDocument;Lcom/android/mms/model/LayoutModel;Ljava/util/ArrayList;ILjava/util/ArrayList;Z)Lcom/android/mms/model/SlideshowModel;
     .locals 16
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/google/android/mms/pdu/PduBody;
-    .param p2    # Lorg/w3c/dom/smil/SMILDocument;
-    .param p3    # Lcom/android/mms/model/LayoutModel;
-    .param p5    # I
-    .param p7    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2319,7 +2277,6 @@
 
 .method public static getAddAttachmentSlideForCompose(Z)Z
     .locals 3
-    .param p0    # Z
 
     const/4 v1, 0x0
 
@@ -2356,9 +2313,6 @@
 
 .method private static getAttachmentList(Landroid/content/Context;Lcom/google/android/mms/pdu/PduBody;Lorg/w3c/dom/NodeList;)Ljava/util/ArrayList;
     .locals 10
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/google/android/mms/pdu/PduBody;
-    .param p2    # Lorg/w3c/dom/NodeList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2523,8 +2477,6 @@
 
 .method public static getPduBody(Landroid/content/Context;Landroid/net/Uri;)Lcom/google/android/mms/pdu/PduBody;
     .locals 7
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/google/android/mms/MmsException;
@@ -2617,7 +2569,6 @@
 
 .method public static getSmilMediaElement(Lorg/w3c/dom/Node;)Lorg/w3c/dom/smil/SMILMediaElement;
     .locals 6
-    .param p0    # Lorg/w3c/dom/Node;
 
     move-object v2, p0
 
@@ -2663,8 +2614,6 @@
 
 .method public static getSubject(Landroid/content/Context;Landroid/net/Uri;)Ljava/lang/String;
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/google/android/mms/MmsException;
@@ -2705,9 +2654,6 @@
 
 .method private makePduBody(Landroid/content/Context;Lorg/w3c/dom/smil/SMILDocument;Z)Lcom/google/android/mms/pdu/PduBody;
     .locals 40
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lorg/w3c/dom/smil/SMILDocument;
-    .param p3    # Z
 
     new-instance v26, Lcom/google/android/mms/pdu/PduBody;
 
@@ -3552,7 +3498,6 @@
 
 .method private makePduBody(Lorg/w3c/dom/smil/SMILDocument;)Lcom/google/android/mms/pdu/PduBody;
     .locals 2
-    .param p1    # Lorg/w3c/dom/smil/SMILDocument;
 
     const/4 v0, 0x0
 
@@ -3567,7 +3512,6 @@
 
 .method private static makeRegionModelList(Lorg/w3c/dom/smil/SMILLayoutElement;Ljava/util/ArrayList;)I
     .locals 13
-    .param p0    # Lorg/w3c/dom/smil/SMILLayoutElement;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3650,8 +3594,6 @@
 
 .method private makeSmilPart(Lorg/w3c/dom/smil/SMILDocument;Lcom/google/android/mms/pdu/PduBody;)V
     .locals 7
-    .param p1    # Lorg/w3c/dom/smil/SMILDocument;
-    .param p2    # Lcom/google/android/mms/pdu/PduBody;
 
     const/4 v1, 0x0
 
@@ -3765,7 +3707,6 @@
 
 .method private declared-synchronized makeVItemPart(Lcom/google/android/mms/pdu/PduBody;)V
     .locals 26
-    .param p1    # Lcom/google/android/mms/pdu/PduBody;
 
     monitor-enter p0
 
@@ -4403,7 +4344,6 @@
 
 .method private registerObserver(Lcom/android/mms/model/Model;)V
     .locals 3
-    .param p1    # Lcom/android/mms/model/Model;
 
     invoke-virtual {p1, p0}, Lcom/android/mms/model/Model;->registerModelChangedObserver(Lcom/android/mms/model/IModelChangedObserver;)V
 
@@ -4436,7 +4376,6 @@
 
 .method public static setAddAttachmentSlideForCompose(Z)V
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/mms/model/SlideshowModel;->sRawAttachmentAddSlideforCompose:Z
 
@@ -4445,7 +4384,6 @@
 
 .method public static setCheckMessageSizeforSlide(Z)V
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/mms/model/SlideshowModel;->sCheckMessageSize:Z
 
@@ -4456,7 +4394,6 @@
 # virtual methods
 .method public MmsResizeForRetry(Landroid/net/Uri;)V
     .locals 17
-    .param p1    # Landroid/net/Uri;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/google/android/mms/MmsException;,
@@ -4895,8 +4832,6 @@
 
 .method public declared-synchronized add(ILcom/android/mms/model/SlideModel;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Lcom/android/mms/model/SlideModel;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/android/mms/ExceedMessageSizeException;,
@@ -4967,8 +4902,6 @@
 
 .method public bridge synthetic add(ILjava/lang/Object;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Ljava/lang/Object;
 
     check-cast p2, Lcom/android/mms/model/SlideModel;
 
@@ -4979,7 +4912,6 @@
 
 .method public declared-synchronized add(Lcom/android/mms/model/SlideModel;)Z
     .locals 3
-    .param p1    # Lcom/android/mms/model/SlideModel;
 
     const/4 v1, 0x1
 
@@ -5032,7 +4964,6 @@
 
 .method public bridge synthetic add(Ljava/lang/Object;)Z
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/android/mms/model/SlideModel;
 
@@ -5045,7 +4976,6 @@
 
 .method public addAll(ILjava/util/Collection;)Z
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -5088,8 +5018,6 @@
 
 .method public declared-synchronized addAttachment(ILcom/android/mms/model/AttachmentModel;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Lcom/android/mms/model/AttachmentModel;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/android/mms/ContentRestrictionException;
@@ -5136,7 +5064,6 @@
 
 .method public addAttachment(Lcom/android/mms/model/AttachmentModel;)V
     .locals 1
-    .param p1    # Lcom/android/mms/model/AttachmentModel;
 
     iget-object v0, p0, Lcom/android/mms/model/SlideshowModel;->mRawAttachments:Ljava/util/ArrayList;
 
@@ -5151,7 +5078,6 @@
 
 .method public checkMessageSize(I)V
     .locals 9
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/android/mms/ContentRestrictionException;,
@@ -5353,7 +5279,6 @@
 
 .method public contains(Ljava/lang/Object;)Z
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     iget-object v0, p0, Lcom/android/mms/model/SlideshowModel;->mSlides:Ljava/util/ArrayList;
 
@@ -5385,7 +5310,6 @@
 
 .method public decreaseMessageSize(I)V
     .locals 1
-    .param p1    # I
 
     if-lez p1, :cond_0
 
@@ -5401,7 +5325,6 @@
 
 .method public finalResize(Landroid/net/Uri;)V
     .locals 14
-    .param p1    # Landroid/net/Uri;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/google/android/mms/MmsException;,
@@ -5632,7 +5555,6 @@
 
 .method public get(I)Lcom/android/mms/model/SlideModel;
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/mms/model/SlideshowModel;->isEmpty()Z
 
@@ -5683,7 +5605,6 @@
 
 .method public bridge synthetic get(I)Ljava/lang/Object;
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/mms/model/SlideshowModel;->get(I)Lcom/android/mms/model/SlideModel;
 
@@ -6082,7 +6003,6 @@
 
 .method public increaseMessageSize(I)V
     .locals 1
-    .param p1    # I
 
     if-lez p1, :cond_0
 
@@ -6098,7 +6018,6 @@
 
 .method public indexOf(Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     iget-object v0, p0, Lcom/android/mms/model/SlideshowModel;->mSlides:Ljava/util/ArrayList;
 
@@ -6239,7 +6158,6 @@
 
 .method public lastIndexOf(Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     iget-object v0, p0, Lcom/android/mms/model/SlideshowModel;->mSlides:Ljava/util/ArrayList;
 
@@ -6273,7 +6191,6 @@
 
 .method public listIterator(I)Ljava/util/ListIterator;
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -6295,7 +6212,6 @@
 
 .method public makeCopy(Landroid/content/Context;)Lcom/google/android/mms/pdu/PduBody;
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     invoke-static {p0}, Lcom/android/mms/model/SmilHelper;->getDocument(Lcom/android/mms/model/SlideshowModel;)Lorg/w3c/dom/smil/SMILDocument;
 
@@ -6312,8 +6228,6 @@
 
 .method public onModelChanged(Lcom/android/mms/model/Model;Z)V
     .locals 1
-    .param p1    # Lcom/android/mms/model/Model;
-    .param p2    # Z
 
     const/4 v0, 0x0
 
@@ -6329,7 +6243,6 @@
 
 .method public openPartFiles(Landroid/content/ContentResolver;)Ljava/util/HashMap;
     .locals 12
-    .param p1    # Landroid/content/ContentResolver;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -6478,7 +6391,6 @@
 
 .method protected registerModelChangedObserverInDescendants(Lcom/android/mms/model/IModelChangedObserver;)V
     .locals 3
-    .param p1    # Lcom/android/mms/model/IModelChangedObserver;
 
     iget-object v2, p0, Lcom/android/mms/model/SlideshowModel;->mLayout:Lcom/android/mms/model/LayoutModel;
 
@@ -6513,7 +6425,6 @@
 
 .method public declared-synchronized remove(I)Lcom/android/mms/model/SlideModel;
     .locals 2
-    .param p1    # I
 
     monitor-enter p0
 
@@ -6575,7 +6486,6 @@
 
 .method public bridge synthetic remove(I)Ljava/lang/Object;
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/mms/model/SlideshowModel;->remove(I)Lcom/android/mms/model/SlideModel;
 
@@ -6586,7 +6496,6 @@
 
 .method public declared-synchronized remove(Ljava/lang/Object;)Z
     .locals 4
-    .param p1    # Ljava/lang/Object;
 
     const/4 v2, 0x1
 
@@ -6704,7 +6613,6 @@
 
 .method public declared-synchronized removeAttachment(Ljava/lang/Object;)Z
     .locals 4
-    .param p1    # Ljava/lang/Object;
 
     const/4 v2, 0x1
 
@@ -6759,8 +6667,6 @@
 
 .method public declared-synchronized removeAttachment(Ljava/lang/Object;I)Z
     .locals 4
-    .param p1    # Ljava/lang/Object;
-    .param p2    # I
 
     const/4 v2, 0x1
 
@@ -6840,8 +6746,6 @@
 
 .method public set(ILcom/android/mms/model/SlideModel;)Lcom/android/mms/model/SlideModel;
     .locals 4
-    .param p1    # I
-    .param p2    # Lcom/android/mms/model/SlideModel;
 
     iget-object v3, p0, Lcom/android/mms/model/SlideshowModel;->mSlides:Ljava/util/ArrayList;
 
@@ -6912,8 +6816,6 @@
 
 .method public bridge synthetic set(ILjava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/Object;
 
     check-cast p2, Lcom/android/mms/model/SlideModel;
 
@@ -6926,7 +6828,6 @@
 
 .method public setCurrentMessageSize(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/mms/model/SlideshowModel;->mCurrentMessageSize:I
 
@@ -6935,7 +6836,6 @@
 
 .method public setSafeMMS(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/model/SlideshowModel;->mSafeMMS:Z
 
@@ -6956,8 +6856,6 @@
 
 .method public subList(II)Ljava/util/List;
     .locals 1
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II)",
@@ -6979,7 +6877,6 @@
 
 .method public declared-synchronized sync(Lcom/google/android/mms/pdu/PduBody;)V
     .locals 11
-    .param p1    # Lcom/google/android/mms/pdu/PduBody;
 
     monitor-enter p0
 
@@ -7251,7 +7148,6 @@
 
 .method protected unregisterModelChangedObserverInDescendants(Lcom/android/mms/model/IModelChangedObserver;)V
     .locals 3
-    .param p1    # Lcom/android/mms/model/IModelChangedObserver;
 
     iget-object v2, p0, Lcom/android/mms/model/SlideshowModel;->mLayout:Lcom/android/mms/model/LayoutModel;
 

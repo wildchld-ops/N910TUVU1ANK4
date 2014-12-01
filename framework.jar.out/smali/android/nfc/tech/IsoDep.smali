@@ -20,7 +20,6 @@
 # direct methods
 .method public constructor <init>(Landroid/nfc/Tag;)V
     .locals 3
-    .param p1    # Landroid/nfc/Tag;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -65,7 +64,6 @@
 
 .method public static get(Landroid/nfc/Tag;)Landroid/nfc/tech/IsoDep;
     .locals 3
-    .param p0    # Landroid/nfc/Tag;
 
     const/4 v1, 0x0
 
@@ -255,7 +253,6 @@
 
 .method public setTimeout(I)V
     .locals 4
-    .param p1    # I
 
     :try_start_0
     iget-object v2, p0, Landroid/nfc/tech/IsoDep;->mTag:Landroid/nfc/Tag;
@@ -297,7 +294,6 @@
 
 .method public transceive([B)[B
     .locals 1
-    .param p1    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

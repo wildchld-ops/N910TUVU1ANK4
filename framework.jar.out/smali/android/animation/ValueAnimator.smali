@@ -206,7 +206,6 @@
 
 .method static synthetic access$000(Landroid/animation/ValueAnimator;)J
     .locals 2
-    .param p0    # Landroid/animation/ValueAnimator;
 
     iget-wide v0, p0, Landroid/animation/ValueAnimator;->mStartDelay:J
 
@@ -215,8 +214,6 @@
 
 .method static synthetic access$100(Landroid/animation/ValueAnimator;Landroid/animation/ValueAnimator$AnimationHandler;)V
     .locals 0
-    .param p0    # Landroid/animation/ValueAnimator;
-    .param p1    # Landroid/animation/ValueAnimator$AnimationHandler;
 
     invoke-direct {p0, p1}, Landroid/animation/ValueAnimator;->startAnimation(Landroid/animation/ValueAnimator$AnimationHandler;)V
 
@@ -225,8 +222,6 @@
 
 .method static synthetic access$200(Landroid/animation/ValueAnimator;J)Z
     .locals 1
-    .param p0    # Landroid/animation/ValueAnimator;
-    .param p1    # J
 
     invoke-direct {p0, p1, p2}, Landroid/animation/ValueAnimator;->delayedAnimationFrame(J)Z
 
@@ -237,8 +232,6 @@
 
 .method static synthetic access$302(Landroid/animation/ValueAnimator;Z)Z
     .locals 0
-    .param p0    # Landroid/animation/ValueAnimator;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/animation/ValueAnimator;->mRunning:Z
 
@@ -247,8 +240,6 @@
 
 .method static synthetic access$400(Landroid/animation/ValueAnimator;Landroid/animation/ValueAnimator$AnimationHandler;)V
     .locals 0
-    .param p0    # Landroid/animation/ValueAnimator;
-    .param p1    # Landroid/animation/ValueAnimator$AnimationHandler;
 
     invoke-direct {p0, p1}, Landroid/animation/ValueAnimator;->endAnimation(Landroid/animation/ValueAnimator$AnimationHandler;)V
 
@@ -286,7 +277,6 @@
 
 .method private delayedAnimationFrame(J)Z
     .locals 8
-    .param p1    # J
 
     const-wide/16 v6, 0x0
 
@@ -372,7 +362,6 @@
 
 .method private endAnimation(Landroid/animation/ValueAnimator$AnimationHandler;)V
     .locals 7
-    .param p1    # Landroid/animation/ValueAnimator$AnimationHandler;
 
     const-wide/16 v5, 0x8
 
@@ -595,7 +584,6 @@
 
 .method public static varargs ofFloat([F)Landroid/animation/ValueAnimator;
     .locals 1
-    .param p0    # [F
 
     new-instance v0, Landroid/animation/ValueAnimator;
 
@@ -608,7 +596,6 @@
 
 .method public static varargs ofInt([I)Landroid/animation/ValueAnimator;
     .locals 1
-    .param p0    # [I
 
     new-instance v0, Landroid/animation/ValueAnimator;
 
@@ -621,8 +608,6 @@
 
 .method public static varargs ofObject(Landroid/animation/TypeEvaluator;[Ljava/lang/Object;)Landroid/animation/ValueAnimator;
     .locals 1
-    .param p0    # Landroid/animation/TypeEvaluator;
-    .param p1    # [Ljava/lang/Object;
 
     new-instance v0, Landroid/animation/ValueAnimator;
 
@@ -637,7 +622,6 @@
 
 .method public static varargs ofPropertyValuesHolder([Landroid/animation/PropertyValuesHolder;)Landroid/animation/ValueAnimator;
     .locals 1
-    .param p0    # [Landroid/animation/PropertyValuesHolder;
 
     new-instance v0, Landroid/animation/ValueAnimator;
 
@@ -650,7 +634,6 @@
 
 .method public static setDurationScale(F)V
     .locals 0
-    .param p0    # F
 
     sput p0, Landroid/animation/ValueAnimator;->sDurationScale:F
 
@@ -659,7 +642,6 @@
 
 .method public static setFrameDelay(J)V
     .locals 0
-    .param p0    # J
 
     invoke-static {p0, p1}, Landroid/view/Choreographer;->setFrameDelay(J)V
 
@@ -668,7 +650,6 @@
 
 .method private start(Z)V
     .locals 7
-    .param p1    # Z
 
     const-wide/16 v5, 0x0
 
@@ -733,7 +714,6 @@
 
 .method private startAnimation(Landroid/animation/ValueAnimator$AnimationHandler;)V
     .locals 4
-    .param p1    # Landroid/animation/ValueAnimator$AnimationHandler;
 
     const-wide/16 v2, 0x8
 
@@ -782,7 +762,6 @@
 # virtual methods
 .method public addUpdateListener(Landroid/animation/ValueAnimator$AnimatorUpdateListener;)V
     .locals 1
-    .param p1    # Landroid/animation/ValueAnimator$AnimatorUpdateListener;
 
     iget-object v0, p0, Landroid/animation/ValueAnimator;->mUpdateListeners:Ljava/util/ArrayList;
 
@@ -804,7 +783,6 @@
 
 .method animateValue(F)V
     .locals 4
-    .param p1    # F
 
     iget-object v3, p0, Landroid/animation/ValueAnimator;->mInterpolator:Landroid/animation/TimeInterpolator;
 
@@ -869,7 +847,6 @@
 
 .method animationFrame(J)Z
     .locals 10
-    .param p1    # J
 
     const/high16 v5, 0x3f800000
 
@@ -1243,7 +1220,6 @@
 
 .method final doAnimationFrame(J)Z
     .locals 7
-    .param p1    # J
 
     const/4 v2, 0x0
 
@@ -1438,7 +1414,6 @@
 
 .method public getAnimatedValue(Ljava/lang/String;)Ljava/lang/Object;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Landroid/animation/ValueAnimator;->mValuesMap:Ljava/util/HashMap;
 
@@ -1663,7 +1638,6 @@
 
 .method public removeUpdateListener(Landroid/animation/ValueAnimator$AnimatorUpdateListener;)V
     .locals 1
-    .param p1    # Landroid/animation/ValueAnimator$AnimatorUpdateListener;
 
     iget-object v0, p0, Landroid/animation/ValueAnimator;->mUpdateListeners:Ljava/util/ArrayList;
 
@@ -1769,7 +1743,6 @@
 
 .method public setCurrentPlayTime(J)V
     .locals 4
-    .param p1    # J
 
     invoke-virtual {p0}, Landroid/animation/ValueAnimator;->initAnimation()V
 
@@ -1801,7 +1774,6 @@
 
 .method public bridge synthetic setDuration(J)Landroid/animation/Animator;
     .locals 1
-    .param p1    # J
 
     invoke-virtual {p0, p1, p2}, Landroid/animation/ValueAnimator;->setDuration(J)Landroid/animation/ValueAnimator;
 
@@ -1812,7 +1784,6 @@
 
 .method public setDuration(J)Landroid/animation/ValueAnimator;
     .locals 3
-    .param p1    # J
 
     const-wide/16 v0, 0x0
 
@@ -1862,7 +1833,6 @@
 
 .method public setEvaluator(Landroid/animation/TypeEvaluator;)V
     .locals 2
-    .param p1    # Landroid/animation/TypeEvaluator;
 
     if-eqz p1, :cond_0
 
@@ -1890,7 +1860,6 @@
 
 .method public varargs setFloatValues([F)V
     .locals 4
-    .param p1    # [F
 
     const/4 v3, 0x0
 
@@ -1947,7 +1916,6 @@
 
 .method public varargs setIntValues([I)V
     .locals 4
-    .param p1    # [I
 
     const/4 v3, 0x0
 
@@ -2004,7 +1972,6 @@
 
 .method public setInterpolator(Landroid/animation/TimeInterpolator;)V
     .locals 1
-    .param p1    # Landroid/animation/TimeInterpolator;
 
     if-eqz p1, :cond_0
 
@@ -2025,7 +1992,6 @@
 
 .method public varargs setObjectValues([Ljava/lang/Object;)V
     .locals 5
-    .param p1    # [Ljava/lang/Object;
 
     const/4 v4, 0x0
 
@@ -2084,7 +2050,6 @@
 
 .method public setRepeatCount(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/animation/ValueAnimator;->mRepeatCount:I
 
@@ -2093,7 +2058,6 @@
 
 .method public setRepeatMode(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/animation/ValueAnimator;->mRepeatMode:I
 
@@ -2102,7 +2066,6 @@
 
 .method public setStartDelay(J)V
     .locals 2
-    .param p1    # J
 
     long-to-float v0, p1
 
@@ -2121,7 +2084,6 @@
 
 .method public varargs setValues([Landroid/animation/PropertyValuesHolder;)V
     .locals 5
-    .param p1    # [Landroid/animation/PropertyValuesHolder;
 
     array-length v1, p1
 

@@ -411,7 +411,6 @@
 
 .method private playPopupAlert(Landroid/content/Context;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
 
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -446,10 +445,6 @@
 
 .method private sendIntentToReceiver(Ljava/lang/String;ZLjava/lang/String;Z)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # Ljava/lang/String;
-    .param p4    # Z
 
     new-instance v0, Landroid/content/Intent;
 

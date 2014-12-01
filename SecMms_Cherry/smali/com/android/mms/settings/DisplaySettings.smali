@@ -36,8 +36,6 @@
 
 .method private removePreference(Landroid/preference/PreferenceGroup;Landroid/preference/Preference;)V
     .locals 0
-    .param p1    # Landroid/preference/PreferenceGroup;
-    .param p2    # Landroid/preference/Preference;
 
     if-eqz p1, :cond_0
 
@@ -446,7 +444,6 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onCreate(Landroid/os/Bundle;)V
 
@@ -516,7 +513,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -595,7 +591,6 @@
 
 .method public onSaveLog(Z)V
     .locals 3
-    .param p1    # Z
 
     invoke-static {}, Lcom/android/mms/MmsConfig;->getEnableContextServiceEnable()Z
 

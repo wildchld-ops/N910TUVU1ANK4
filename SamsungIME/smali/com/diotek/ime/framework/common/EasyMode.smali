@@ -72,7 +72,6 @@
 
 .method public static isDeviceEasyModeOn(Landroid/content/Context;)Z
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     const/4 v3, 0x1
 
@@ -103,7 +102,6 @@
 
 .method public static setEasyModeStandardRatio(F)V
     .locals 0
-    .param p0    # F
 
     sput p0, Lcom/diotek/ime/framework/common/EasyMode;->EASY_MODE_RATIO:F
 
@@ -112,7 +110,6 @@
 
 .method public static setEasyModeStatus(Z)V
     .locals 1
-    .param p0    # Z
 
     sput-boolean p0, Lcom/diotek/ime/framework/common/EasyMode;->mEasyModeStatus:Z
 

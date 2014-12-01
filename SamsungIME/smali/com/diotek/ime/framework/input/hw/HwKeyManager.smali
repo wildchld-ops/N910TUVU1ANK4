@@ -318,7 +318,6 @@
 
 .method private isLithuanianAltGr(I)Z
     .locals 3
-    .param p1    # I
 
     invoke-static {}, Lcom/diotek/ime/framework/common/InputManagerImpl;->getInstance()Lcom/diotek/ime/framework/common/InputManager;
 
@@ -365,8 +364,6 @@
 # virtual methods
 .method public convertCyrillicUmlaut(II)I
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     move v0, p1
 
@@ -456,9 +453,6 @@
 
 .method public getCharacter(IZZ)S
     .locals 7
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # Z
 
     const/4 v4, 0x0
 
@@ -654,7 +648,6 @@
 
 .method public getNordicSymbolPopupKey(I)I
     .locals 1
-    .param p1    # I
 
     move v0, p1
 
@@ -705,7 +698,6 @@
 
 .method public getPhonepadCharacters(I)[I
     .locals 5
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -792,7 +784,6 @@
 
 .method public setInputLanguage(Lcom/diotek/ime/framework/common/Language;)V
     .locals 6
-    .param p1    # Lcom/diotek/ime/framework/common/Language;
 
     const/4 v3, 0x2
 

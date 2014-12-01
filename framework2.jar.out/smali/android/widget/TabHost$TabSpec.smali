@@ -27,7 +27,6 @@
 # direct methods
 .method private constructor <init>(Landroid/widget/TabHost;Ljava/lang/String;)V
     .locals 0
-    .param p2    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/widget/TabHost$TabSpec;->this$0:Landroid/widget/TabHost;
 
@@ -40,9 +39,6 @@
 
 .method synthetic constructor <init>(Landroid/widget/TabHost;Ljava/lang/String;Landroid/widget/TabHost$1;)V
     .locals 0
-    .param p1    # Landroid/widget/TabHost;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/widget/TabHost$1;
 
     invoke-direct {p0, p1, p2}, Landroid/widget/TabHost$TabSpec;-><init>(Landroid/widget/TabHost;Ljava/lang/String;)V
 
@@ -51,7 +47,6 @@
 
 .method static synthetic access$200(Landroid/widget/TabHost$TabSpec;)Landroid/widget/TabHost$IndicatorStrategy;
     .locals 1
-    .param p0    # Landroid/widget/TabHost$TabSpec;
 
     iget-object v0, p0, Landroid/widget/TabHost$TabSpec;->mIndicatorStrategy:Landroid/widget/TabHost$IndicatorStrategy;
 
@@ -60,7 +55,6 @@
 
 .method static synthetic access$300(Landroid/widget/TabHost$TabSpec;)Landroid/widget/TabHost$ContentStrategy;
     .locals 1
-    .param p0    # Landroid/widget/TabHost$TabSpec;
 
     iget-object v0, p0, Landroid/widget/TabHost$TabSpec;->mContentStrategy:Landroid/widget/TabHost$ContentStrategy;
 
@@ -79,7 +73,6 @@
 
 .method public setContent(I)Landroid/widget/TabHost$TabSpec;
     .locals 3
-    .param p1    # I
 
     new-instance v0, Landroid/widget/TabHost$ViewIdContentStrategy;
 
@@ -96,7 +89,6 @@
 
 .method public setContent(Landroid/content/Intent;)Landroid/widget/TabHost$TabSpec;
     .locals 4
-    .param p1    # Landroid/content/Intent;
 
     new-instance v0, Landroid/widget/TabHost$IntentContentStrategy;
 
@@ -115,7 +107,6 @@
 
 .method public setContent(Landroid/widget/TabHost$TabContentFactory;)Landroid/widget/TabHost$TabSpec;
     .locals 3
-    .param p1    # Landroid/widget/TabHost$TabContentFactory;
 
     new-instance v0, Landroid/widget/TabHost$FactoryContentStrategy;
 
@@ -132,7 +123,6 @@
 
 .method public setIndicator(Landroid/view/View;)Landroid/widget/TabHost$TabSpec;
     .locals 3
-    .param p1    # Landroid/view/View;
 
     new-instance v0, Landroid/widget/TabHost$ViewIndicatorStrategy;
 
@@ -149,7 +139,6 @@
 
 .method public setIndicator(Ljava/lang/CharSequence;)Landroid/widget/TabHost$TabSpec;
     .locals 3
-    .param p1    # Ljava/lang/CharSequence;
 
     new-instance v0, Landroid/widget/TabHost$LabelIndicatorStrategy;
 
@@ -166,8 +155,6 @@
 
 .method public setIndicator(Ljava/lang/CharSequence;Landroid/graphics/drawable/Drawable;)Landroid/widget/TabHost$TabSpec;
     .locals 3
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Landroid/graphics/drawable/Drawable;
 
     new-instance v0, Landroid/widget/TabHost$LabelAndIconIndicatorStrategy;
 

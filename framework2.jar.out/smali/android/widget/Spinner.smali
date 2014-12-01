@@ -53,7 +53,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -64,8 +63,6 @@
 
 .method public constructor <init>(Landroid/content/Context;I)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -78,8 +75,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const v0, 0x1010081
 
@@ -90,9 +85,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v0, -0x1
 
@@ -103,10 +95,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;II)V
     .locals 8
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
-    .param p4    # I
 
     const/4 v7, 0x0
 
@@ -264,7 +252,6 @@
 
 .method static synthetic access$100(Landroid/widget/Spinner;)Landroid/widget/Spinner$SpinnerPopup;
     .locals 1
-    .param p0    # Landroid/widget/Spinner;
 
     iget-object v0, p0, Landroid/widget/Spinner;->mPopup:Landroid/widget/Spinner$SpinnerPopup;
 
@@ -273,7 +260,6 @@
 
 .method static synthetic access$400(Landroid/widget/Spinner;)I
     .locals 1
-    .param p0    # Landroid/widget/Spinner;
 
     iget v0, p0, Landroid/widget/Spinner;->mInitialHorizontalOffset:I
 
@@ -282,7 +268,6 @@
 
 .method static synthetic access$500(Landroid/widget/Spinner;)Landroid/graphics/Rect;
     .locals 1
-    .param p0    # Landroid/widget/Spinner;
 
     iget-object v0, p0, Landroid/widget/Spinner;->mTempRect:Landroid/graphics/Rect;
 
@@ -291,7 +276,6 @@
 
 .method static synthetic access$600(Landroid/widget/Spinner;)Z
     .locals 1
-    .param p0    # Landroid/widget/Spinner;
 
     invoke-virtual {p0}, Landroid/view/View;->isVisibleToUser()Z
 
@@ -302,8 +286,6 @@
 
 .method private makeView(IZ)Landroid/view/View;
     .locals 4
-    .param p1    # I
-    .param p2    # Z
 
     iget-boolean v2, p0, Landroid/widget/AdapterView;->mDataChanged:Z
 
@@ -342,8 +324,6 @@
 
 .method private setUpChild(Landroid/view/View;Z)V
     .locals 11
-    .param p1    # Landroid/view/View;
-    .param p2    # Z
 
     invoke-virtual {p1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
@@ -593,8 +573,6 @@
 
 .method layout(IZ)V
     .locals 10
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v9, 0x0
 
@@ -742,8 +720,6 @@
 
 .method measureContentWidth(Landroid/widget/SpinnerAdapter;Landroid/graphics/drawable/Drawable;)I
     .locals 13
-    .param p1    # Landroid/widget/SpinnerAdapter;
-    .param p2    # Landroid/graphics/drawable/Drawable;
 
     if-nez p1, :cond_1
 
@@ -883,8 +859,6 @@
 
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 0
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     invoke-virtual {p0, p2}, Landroid/widget/AbsSpinner;->setSelection(I)V
 
@@ -895,7 +869,6 @@
 
 .method protected onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 3
-    .param p1    # Landroid/content/res/Configuration;
 
     const/4 v2, 0x1
 
@@ -963,7 +936,6 @@
 
 .method public onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
     .locals 1
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
 
     invoke-super {p0, p1}, Landroid/widget/AbsSpinner;->onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
 
@@ -980,7 +952,6 @@
 
 .method public onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
     .locals 1
-    .param p1    # Landroid/view/accessibility/AccessibilityNodeInfo;
 
     invoke-super {p0, p1}, Landroid/widget/AbsSpinner;->onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
 
@@ -1006,11 +977,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 2
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     const/4 v1, 0x0
 
@@ -1029,8 +995,6 @@
 
 .method protected onMeasure(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     invoke-super {p0, p1, p2}, Landroid/widget/AbsSpinner;->onMeasure(II)V
 
@@ -1086,7 +1050,6 @@
 
 .method public onRestoreInstanceState(Landroid/os/Parcelable;)V
     .locals 4
-    .param p1    # Landroid/os/Parcelable;
 
     move-object v1, p1
 
@@ -1167,7 +1130,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-object v0, p0, Landroid/widget/Spinner;->mForwardingListener:Landroid/widget/ListPopupWindow$ForwardingListener;
 
@@ -1235,7 +1197,6 @@
 
 .method public bridge synthetic setAdapter(Landroid/widget/Adapter;)V
     .locals 0
-    .param p1    # Landroid/widget/Adapter;
 
     check-cast p1, Landroid/widget/SpinnerAdapter;
 
@@ -1246,7 +1207,6 @@
 
 .method public setAdapter(Landroid/widget/SpinnerAdapter;)V
     .locals 2
-    .param p1    # Landroid/widget/SpinnerAdapter;
 
     invoke-super {p0, p1}, Landroid/widget/AbsSpinner;->setAdapter(Landroid/widget/SpinnerAdapter;)V
 
@@ -1281,7 +1241,6 @@
 
 .method public setDropDownHorizontalOffset(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/widget/Spinner;->mPopup:Landroid/widget/Spinner$SpinnerPopup;
 
@@ -1294,7 +1253,6 @@
 
 .method public setDropDownVerticalOffset(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/widget/Spinner;->mPopup:Landroid/widget/Spinner$SpinnerPopup;
 
@@ -1305,7 +1263,6 @@
 
 .method public setDropDownWidth(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Landroid/widget/Spinner;->mPopup:Landroid/widget/Spinner$SpinnerPopup;
 
@@ -1330,7 +1287,6 @@
 
 .method public setEnabled(Z)V
     .locals 3
-    .param p1    # Z
 
     invoke-super {p0, p1}, Landroid/view/View;->setEnabled(Z)V
 
@@ -1363,7 +1319,6 @@
 
 .method public setGravity(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/widget/Spinner;->mGravity:I
 
@@ -1388,7 +1343,6 @@
 
 .method public setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
     .locals 2
-    .param p1    # Landroid/widget/AdapterView$OnItemClickListener;
 
     new-instance v0, Ljava/lang/RuntimeException;
 
@@ -1401,7 +1355,6 @@
 
 .method public setOnItemClickListenerInt(Landroid/widget/AdapterView$OnItemClickListener;)V
     .locals 0
-    .param p1    # Landroid/widget/AdapterView$OnItemClickListener;
 
     invoke-super {p0, p1}, Landroid/widget/AdapterView;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
 
@@ -1410,7 +1363,6 @@
 
 .method public setPopupBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
     .locals 2
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     iget-object v0, p0, Landroid/widget/Spinner;->mPopup:Landroid/widget/Spinner$SpinnerPopup;
 
@@ -1439,7 +1391,6 @@
 
 .method public setPopupBackgroundResource(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
@@ -1460,7 +1411,6 @@
 
 .method public setPrompt(Ljava/lang/CharSequence;)V
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
 
     iget-object v0, p0, Landroid/widget/Spinner;->mPopup:Landroid/widget/Spinner$SpinnerPopup;
 
@@ -1471,7 +1421,6 @@
 
 .method public setPromptId(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 

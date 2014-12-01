@@ -32,7 +32,6 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
@@ -87,7 +86,6 @@
 
 .method protected onCreateDialog(I)Landroid/app/AlertDialog;
     .locals 4
-    .param p1    # I
 
     const-string v1, "FactoryResetDialog: "
 
@@ -294,7 +292,6 @@
 
 .method protected bridge synthetic onCreateDialog(I)Landroid/app/Dialog;
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/settings/FactoryResetDialog;->onCreateDialog(I)Landroid/app/AlertDialog;
 
@@ -313,8 +310,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/16 v3, 0x54
 

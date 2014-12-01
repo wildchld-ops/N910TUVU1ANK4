@@ -100,7 +100,6 @@
 
 .method private final internalLockCanvas(Landroid/graphics/Rect;)Landroid/graphics/Canvas;
     .locals 10
-    .param p1    # Landroid/graphics/Rect;
 
     iget v6, p0, Lcom/android/internal/view/BaseSurfaceHolder;->mType:I
 
@@ -232,7 +231,6 @@
 # virtual methods
 .method public addCallback(Landroid/view/SurfaceHolder$Callback;)V
     .locals 2
-    .param p1    # Landroid/view/SurfaceHolder$Callback;
 
     iget-object v1, p0, Lcom/android/internal/view/BaseSurfaceHolder;->mCallbacks:Ljava/util/ArrayList;
 
@@ -407,7 +405,6 @@
 
 .method public lockCanvas(Landroid/graphics/Rect;)Landroid/graphics/Canvas;
     .locals 1
-    .param p1    # Landroid/graphics/Rect;
 
     invoke-direct {p0, p1}, Lcom/android/internal/view/BaseSurfaceHolder;->internalLockCanvas(Landroid/graphics/Rect;)Landroid/graphics/Canvas;
 
@@ -427,7 +424,6 @@
 
 .method public removeCallback(Landroid/view/SurfaceHolder$Callback;)V
     .locals 2
-    .param p1    # Landroid/view/SurfaceHolder$Callback;
 
     iget-object v1, p0, Lcom/android/internal/view/BaseSurfaceHolder;->mCallbacks:Ljava/util/ArrayList;
 
@@ -454,8 +450,6 @@
 
 .method public setFixedSize(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget v0, p0, Lcom/android/internal/view/BaseSurfaceHolder;->mRequestedWidth:I
 
@@ -478,7 +472,6 @@
 
 .method public setFormat(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Lcom/android/internal/view/BaseSurfaceHolder;->mRequestedFormat:I
 
@@ -518,8 +511,6 @@
 
 .method public setSurfaceFrameSize(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     const/4 v1, 0x0
 
@@ -544,7 +535,6 @@
 
 .method public setType(I)V
     .locals 1
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -601,7 +591,6 @@
 
 .method public unlockCanvasAndPost(Landroid/graphics/Canvas;)V
     .locals 1
-    .param p1    # Landroid/graphics/Canvas;
 
     iget-object v0, p0, Lcom/android/internal/view/BaseSurfaceHolder;->mSurface:Landroid/view/Surface;
 

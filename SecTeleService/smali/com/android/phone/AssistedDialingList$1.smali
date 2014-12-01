@@ -159,7 +159,7 @@
 
     iget-object v5, p0, Lcom/android/phone/AssistedDialingList$1;->this$0:Lcom/android/phone/AssistedDialingList;
 
-    invoke-virtual {v5}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v5}, Lcom/android/phone/AssistedDialingList;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v5
 
@@ -177,7 +177,7 @@
     :goto_1
     iget-object v5, p0, Lcom/android/phone/AssistedDialingList$1;->this$0:Lcom/android/phone/AssistedDialingList;
 
-    invoke-virtual {v5}, Landroid/app/Activity;->finish()V
+    invoke-virtual {v5}, Lcom/android/phone/AssistedDialingList;->finish()V
 
     return-void
 
@@ -189,7 +189,7 @@
     :cond_2
     iget-object v5, p0, Lcom/android/phone/AssistedDialingList$1;->this$0:Lcom/android/phone/AssistedDialingList;
 
-    invoke-virtual {v5}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v5}, Lcom/android/phone/AssistedDialingList;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v5
 
@@ -217,7 +217,7 @@
 
     iget-object v5, p0, Lcom/android/phone/AssistedDialingList$1;->this$0:Lcom/android/phone/AssistedDialingList;
 
-    invoke-virtual {v5}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v5}, Lcom/android/phone/AssistedDialingList;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v5
 

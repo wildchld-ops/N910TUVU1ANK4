@@ -106,7 +106,6 @@
 
 .method static synthetic access$200(Lcom/android/launcher2/AnimationLayer$Anim;)V
     .locals 0
-    .param p0    # Lcom/android/launcher2/AnimationLayer$Anim;
 
     invoke-direct {p0}, Lcom/android/launcher2/AnimationLayer$Anim;->updateView()V
 
@@ -115,7 +114,6 @@
 
 .method static synthetic access$300(Lcom/android/launcher2/AnimationLayer$Anim;)Z
     .locals 1
-    .param p0    # Lcom/android/launcher2/AnimationLayer$Anim;
 
     iget-boolean v0, p0, Lcom/android/launcher2/AnimationLayer$Anim;->mShadowFadeStarted:Z
 
@@ -124,8 +122,6 @@
 
 .method static synthetic access$302(Lcom/android/launcher2/AnimationLayer$Anim;Z)Z
     .locals 0
-    .param p0    # Lcom/android/launcher2/AnimationLayer$Anim;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/launcher2/AnimationLayer$Anim;->mShadowFadeStarted:Z
 
@@ -174,9 +170,6 @@
 # virtual methods
 .method public addAlphaAnimator(FFZ)V
     .locals 3
-    .param p1    # F
-    .param p2    # F
-    .param p3    # Z
 
     iget-object v0, p0, Lcom/android/launcher2/AnimationLayer$Anim;->mAnimation:Landroid/animation/Animator;
 
@@ -199,8 +192,6 @@
 
 .method public addUpdateListener(Landroid/animation/ValueAnimator$AnimatorUpdateListener;Z)V
     .locals 2
-    .param p1    # Landroid/animation/ValueAnimator$AnimatorUpdateListener;
-    .param p2    # Z
 
     iget-object v0, p0, Lcom/android/launcher2/AnimationLayer$Anim;->mAnimation:Landroid/animation/Animator;
 
@@ -449,7 +440,6 @@
 
 .method public setFrom([I)V
     .locals 0
-    .param p1    # [I
 
     iput-object p1, p0, Lcom/android/launcher2/AnimationLayer$Anim;->mFrom:[I
 
@@ -458,7 +448,6 @@
 
 .method public setTo([I)V
     .locals 0
-    .param p1    # [I
 
     iput-object p1, p0, Lcom/android/launcher2/AnimationLayer$Anim;->mTo:[I
 
@@ -467,11 +456,6 @@
 
 .method setupBasicAnimation(ILjava/lang/Runnable;Landroid/view/View;Landroid/graphics/Bitmap;Landroid/widget/ImageView;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/Runnable;
-    .param p3    # Landroid/view/View;
-    .param p4    # Landroid/graphics/Bitmap;
-    .param p5    # Landroid/widget/ImageView;
 
     iput p1, p0, Lcom/android/launcher2/AnimationLayer$Anim;->mAnimGroup:I
 
@@ -513,13 +497,6 @@
 
 .method setupMoveAnimation(Landroid/view/View;Landroid/graphics/Bitmap;Landroid/widget/ImageView;[I[IIZ)V
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/graphics/Bitmap;
-    .param p3    # Landroid/widget/ImageView;
-    .param p4    # [I
-    .param p5    # [I
-    .param p6    # I
-    .param p7    # Z
 
     const/4 v0, 0x4
 
@@ -596,11 +573,6 @@
 
 .method setupMoveFadeAnimation(Landroid/view/View;Landroid/graphics/Bitmap;Landroid/widget/ImageView;[I[I)V
     .locals 24
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/graphics/Bitmap;
-    .param p3    # Landroid/widget/ImageView;
-    .param p4    # [I
-    .param p5    # [I
 
     const/4 v2, 0x4
 
@@ -889,9 +861,6 @@
 
 .method update([IIZ)V
     .locals 4
-    .param p1    # [I
-    .param p2    # I
-    .param p3    # Z
 
     iput-boolean p3, p0, Lcom/android/launcher2/AnimationLayer$Anim;->mClippingEnabled:Z
 
@@ -951,7 +920,6 @@
 
 .method public updateBitmap(Landroid/graphics/Bitmap;)V
     .locals 3
-    .param p1    # Landroid/graphics/Bitmap;
 
     iput-object p1, p0, Lcom/android/launcher2/AnimationLayer$Anim;->b:Landroid/graphics/Bitmap;
 

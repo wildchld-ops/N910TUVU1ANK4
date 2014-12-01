@@ -104,7 +104,6 @@
 
 .method private isDisabled(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/diotek/ime/framework/common/PrivateImeOptionsControllerImpl;->mPrivateImeOptionsTable:Ljava/util/Hashtable;
 
@@ -135,7 +134,6 @@
 
 .method private isEnabled(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/diotek/ime/framework/common/PrivateImeOptionsControllerImpl;->mPrivateImeOptionsTable:Ljava/util/Hashtable;
 
@@ -961,7 +959,6 @@
 
 .method public setPrivateImeOptionsToTable(Ljava/lang/String;)Z
     .locals 11
-    .param p1    # Ljava/lang/String;
 
     const/4 v5, 0x0
 

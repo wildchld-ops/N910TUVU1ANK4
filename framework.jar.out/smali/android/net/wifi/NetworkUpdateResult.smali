@@ -16,7 +16,6 @@
 # direct methods
 .method public constructor <init>(I)V
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -35,8 +34,6 @@
 
 .method public constructor <init>(ZZ)V
     .locals 1
-    .param p1    # Z
-    .param p2    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -91,7 +88,6 @@
 
 .method public setIpChanged(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/net/wifi/NetworkUpdateResult;->ipChanged:Z
 
@@ -100,7 +96,6 @@
 
 .method public setIsNewNetwork(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/net/wifi/NetworkUpdateResult;->isNewNetwork:Z
 
@@ -109,7 +104,6 @@
 
 .method public setNetworkId(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/net/wifi/NetworkUpdateResult;->netId:I
 
@@ -118,7 +112,6 @@
 
 .method public setProxyChanged(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/net/wifi/NetworkUpdateResult;->proxyChanged:Z
 

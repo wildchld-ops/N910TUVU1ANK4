@@ -154,7 +154,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 6
-    .param p1    # Landroid/os/Bundle;
 
     const/16 v5, 0x400
 
@@ -240,10 +239,6 @@
 
 .method public startWithFragment(Ljava/lang/String;Landroid/os/Bundle;Landroid/app/Fragment;I)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Bundle;
-    .param p3    # Landroid/app/Fragment;
-    .param p4    # I
 
     const/4 v5, 0x1
 

@@ -95,9 +95,6 @@
 
 .method static synthetic access$300(FFF)V
     .locals 0
-    .param p0    # F
-    .param p1    # F
-    .param p2    # F
 
     invoke-static {p0, p1, p2}, Lcom/sec/dtl/launcher/GyroForShadow;->onAccelerometerChanged(FFF)V
 
@@ -106,7 +103,6 @@
 
 .method public static initialize(Landroid/content/Context;)V
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     const-string v1, "sensor"
 
@@ -137,9 +133,6 @@
 
 .method private static onAccelerometerChanged(FFF)V
     .locals 12
-    .param p0    # F
-    .param p1    # F
-    .param p2    # F
 
     const v11, 0x3e99999a
 
@@ -349,7 +342,6 @@
 
 .method public static registerListener(Lcom/sec/dtl/launcher/GyroForShadow$VectorListener;)V
     .locals 1
-    .param p0    # Lcom/sec/dtl/launcher/GyroForShadow$VectorListener;
 
     invoke-static {}, Lcom/sec/dtl/launcher/GyroForShadow;->startSensor()V
 
@@ -420,7 +412,6 @@
 
 .method public static unregisterListener(Lcom/sec/dtl/launcher/GyroForShadow$VectorListener;)V
     .locals 1
-    .param p0    # Lcom/sec/dtl/launcher/GyroForShadow$VectorListener;
 
     sget-object v0, Lcom/sec/dtl/launcher/GyroForShadow;->mListeners:Ljava/util/Vector;
 

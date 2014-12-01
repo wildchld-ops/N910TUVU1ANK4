@@ -180,7 +180,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     const/4 v3, 0x0
 
@@ -397,7 +396,6 @@
 
 .method static synthetic access$000(Lcom/android/systemui/recent/multiwindowUtils/MultiWindowTrayInfo;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/systemui/recent/multiwindowUtils/MultiWindowTrayInfo;
 
     iget-object v0, p0, Lcom/android/systemui/recent/multiwindowUtils/MultiWindowTrayInfo;->mContext:Landroid/content/Context;
 
@@ -406,8 +404,6 @@
 
 .method static synthetic access$100(Lcom/android/systemui/recent/multiwindowUtils/MultiWindowTrayInfo;Landroid/content/pm/ResolveInfo;)Landroid/graphics/drawable/Drawable;
     .locals 1
-    .param p0    # Lcom/android/systemui/recent/multiwindowUtils/MultiWindowTrayInfo;
-    .param p1    # Landroid/content/pm/ResolveInfo;
 
     invoke-direct {p0, p1}, Lcom/android/systemui/recent/multiwindowUtils/MultiWindowTrayInfo;->loadIconForResolve(Landroid/content/pm/ResolveInfo;)Landroid/graphics/drawable/Drawable;
 
@@ -418,8 +414,6 @@
 
 .method static synthetic access$200(Lcom/android/systemui/recent/multiwindowUtils/MultiWindowTrayInfo;Ljava/util/List;)Landroid/graphics/drawable/BitmapDrawable;
     .locals 1
-    .param p0    # Lcom/android/systemui/recent/multiwindowUtils/MultiWindowTrayInfo;
-    .param p1    # Ljava/util/List;
 
     invoke-direct {p0, p1}, Lcom/android/systemui/recent/multiwindowUtils/MultiWindowTrayInfo;->generateMultiIcon(Ljava/util/List;)Landroid/graphics/drawable/BitmapDrawable;
 
@@ -430,7 +424,6 @@
 
 .method private addwithcheckduplicate(Lcom/android/systemui/recent/multiwindowUtils/MultiWindowTrayInfo$LaunchItem;)Z
     .locals 5
-    .param p1    # Lcom/android/systemui/recent/multiwindowUtils/MultiWindowTrayInfo$LaunchItem;
 
     const/4 v2, 0x0
 
@@ -488,7 +481,6 @@
 
 .method private addwithcheckduplicateForPenWindow(Lcom/android/systemui/recent/multiwindowUtils/MultiWindowTrayInfo$LaunchItem;)Z
     .locals 5
-    .param p1    # Lcom/android/systemui/recent/multiwindowUtils/MultiWindowTrayInfo$LaunchItem;
 
     const/4 v2, 0x0
 
@@ -546,7 +538,6 @@
 
 .method private addwithcheckduplicateForPenWindowOnly(Lcom/android/systemui/recent/multiwindowUtils/MultiWindowTrayInfo$LaunchItem;)Z
     .locals 5
-    .param p1    # Lcom/android/systemui/recent/multiwindowUtils/MultiWindowTrayInfo$LaunchItem;
 
     const/4 v2, 0x0
 
@@ -604,7 +595,6 @@
 
 .method private addwithcheckduplicateForTemplate(Lcom/android/systemui/recent/multiwindowUtils/MultiWindowTrayInfo$LaunchItem;)Z
     .locals 4
-    .param p1    # Lcom/android/systemui/recent/multiwindowUtils/MultiWindowTrayInfo$LaunchItem;
 
     iget-object v2, p0, Lcom/android/systemui/recent/multiwindowUtils/MultiWindowTrayInfo;->mFlashBarDelList:Ljava/util/List;
 
@@ -660,7 +650,6 @@
 
 .method private findResolveInfo(Ljava/lang/String;)Landroid/content/pm/ResolveInfo;
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const/4 v6, 0x1
 
@@ -919,7 +908,6 @@
 
 .method private getClassName(Landroid/app/ActivityManager$RunningTaskInfo;)Ljava/lang/String;
     .locals 1
-    .param p1    # Landroid/app/ActivityManager$RunningTaskInfo;
 
     iget-object v0, p1, Landroid/app/ActivityManager$RunningTaskInfo;->baseActivity:Landroid/content/ComponentName;
 
@@ -932,9 +920,6 @@
 
 .method private getFullResIcon(Landroid/content/res/Resources;II)Landroid/graphics/drawable/Drawable;
     .locals 2
-    .param p1    # Landroid/content/res/Resources;
-    .param p2    # I
-    .param p3    # I
 
     :try_start_0
     invoke-virtual {p1, p2, p3}, Landroid/content/res/Resources;->getDrawableForDensity(II)Landroid/graphics/drawable/Drawable;
@@ -956,7 +941,6 @@
 
 .method private getPackageName(Landroid/app/ActivityManager$RunningTaskInfo;)Ljava/lang/String;
     .locals 1
-    .param p1    # Landroid/app/ActivityManager$RunningTaskInfo;
 
     iget-object v0, p1, Landroid/app/ActivityManager$RunningTaskInfo;->baseActivity:Landroid/content/ComponentName;
 
@@ -969,7 +953,6 @@
 
 .method private loadIconForResolve(Landroid/content/pm/ResolveInfo;)Landroid/graphics/drawable/Drawable;
     .locals 9
-    .param p1    # Landroid/content/pm/ResolveInfo;
 
     invoke-virtual {p0}, Lcom/android/systemui/recent/multiwindowUtils/MultiWindowTrayInfo;->getLauncherLargeIconDensity()I
 
@@ -1075,7 +1058,6 @@
 
 .method private makeExampleTemplate(Lcom/android/systemui/recent/multiwindowUtils/MultiUserPreferences;)I
     .locals 1
-    .param p1    # Lcom/android/systemui/recent/multiwindowUtils/MultiUserPreferences;
 
     const/4 v0, 0x0
 
@@ -1084,8 +1066,6 @@
 
 .method private parseActivityInfoMetaData(Landroid/os/Bundle;Ljava/lang/String;)Ljava/util/ArrayList;
     .locals 3
-    .param p1    # Landroid/os/Bundle;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1129,7 +1109,6 @@
 
 .method private queryResolveInfo(Ljava/lang/String;)Ljava/util/List;
     .locals 9
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1203,8 +1182,6 @@
 
 .method private updateMultiAppList(Lcom/android/systemui/recent/multiwindowUtils/MultiWindowTrayInfo$LaunchItem;I)V
     .locals 3
-    .param p1    # Lcom/android/systemui/recent/multiwindowUtils/MultiWindowTrayInfo$LaunchItem;
-    .param p2    # I
 
     const-string v1, "MultiWindowTrayInfo"
 
@@ -1251,8 +1228,6 @@
 # virtual methods
 .method public addInstalledPackage(Ljava/lang/String;Z)Z
     .locals 16
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     move-object/from16 v0, p0
 
@@ -1913,8 +1888,6 @@
 
 .method public addTemplate(Ljava/util/List;Ljava/lang/String;Z)I
     .locals 15
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2234,9 +2207,6 @@
 
 .method public changeApplistItem(IIZ)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     const/4 v2, -0x1
 
@@ -2282,9 +2252,6 @@
 
 .method public changeSmartWindowItem(IIZ)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     const/4 v2, -0x1
 
@@ -2339,9 +2306,6 @@
 
 .method public createShadowIcon(Landroid/graphics/Bitmap;II)Landroid/graphics/Bitmap;
     .locals 10
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # I
-    .param p3    # I
 
     if-nez p1, :cond_0
 
@@ -4006,7 +3970,6 @@
 
 .method public getActivityInfoForPenWindow(I)Landroid/content/pm/ActivityInfo;
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/systemui/recent/multiwindowUtils/MultiWindowTrayInfo;->mPopupAppList:Ljava/util/List;
 
@@ -4091,7 +4054,6 @@
 
 .method public getAppResolveInfo(I)Landroid/content/pm/ResolveInfo;
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -4112,8 +4074,6 @@
 
 .method public getAppTitle(IZ)Ljava/lang/String;
     .locals 2
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v1, -0x1
 
@@ -4286,7 +4246,6 @@
 
 .method public getComponentInfo(I)Landroid/content/pm/ComponentInfo;
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/systemui/recent/multiwindowUtils/MultiWindowTrayInfo;->mFlashBarAppList:Ljava/util/List;
 
@@ -4642,7 +4601,6 @@
 
 .method public getFlashBarIndex(Ljava/lang/String;)I
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -4696,9 +4654,6 @@
 
 .method public getFlashBarIntent(IZZ)Ljava/util/List;
     .locals 11
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(IZZ)",
@@ -4952,7 +4907,6 @@
 
 .method public getIconByIndex(I)Landroid/graphics/drawable/Drawable;
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -4973,7 +4927,6 @@
 
 .method public getIconByIndexForSmartWindow(I)Landroid/graphics/drawable/Drawable;
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -4994,7 +4947,6 @@
 
 .method public getIconByRunningTaskInfo(Landroid/app/ActivityManager$RunningTaskInfo;)Landroid/graphics/drawable/Drawable;
     .locals 3
-    .param p1    # Landroid/app/ActivityManager$RunningTaskInfo;
 
     invoke-direct {p0, p1}, Lcom/android/systemui/recent/multiwindowUtils/MultiWindowTrayInfo;->getClassName(Landroid/app/ActivityManager$RunningTaskInfo;)Ljava/lang/String;
 
@@ -5160,8 +5112,6 @@
 
 .method public getListItemByIndex(IZ)Lcom/android/systemui/recent/multiwindowUtils/MultiWindowTrayInfo$LaunchItem;
     .locals 1
-    .param p1    # I
-    .param p2    # Z
 
     if-eqz p2, :cond_0
 
@@ -5212,8 +5162,6 @@
 
 .method public getPopupIntent(IZ)Ljava/util/List;
     .locals 8
-    .param p1    # I
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(IZ)",
@@ -5316,7 +5264,6 @@
 
 .method public getRunningAppByIndex(I)Lcom/android/systemui/recent/multiwindowUtils/MultiWindowTrayInfo$LaunchItem;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/systemui/recent/multiwindowUtils/MultiWindowTrayInfo;->mRunningAppList:Ljava/util/List;
 
@@ -5378,7 +5325,6 @@
 
 .method public getRunningAppTaskIdByIndex(I)I
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/systemui/recent/multiwindowUtils/MultiWindowTrayInfo;->getRunningAppByIndex(I)Lcom/android/systemui/recent/multiwindowUtils/MultiWindowTrayInfo$LaunchItem;
 
@@ -5401,8 +5347,6 @@
 
 .method public getSmartWindowItemByIndex(IZ)Lcom/android/systemui/recent/multiwindowUtils/MultiWindowTrayInfo$LaunchItem;
     .locals 1
-    .param p1    # I
-    .param p2    # Z
 
     if-eqz p2, :cond_0
 
@@ -5475,7 +5419,6 @@
 
 .method public isPenWindowOnly(I)Z
     .locals 5
-    .param p1    # I
 
     iget-object v3, p0, Lcom/android/systemui/recent/multiwindowUtils/MultiWindowTrayInfo;->mFlashBarAppList:Ljava/util/List;
 
@@ -5531,8 +5474,6 @@
 
 .method public isTemplate(IZ)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v2, 0x0
 
@@ -5606,7 +5547,6 @@
 
 .method public loadFlashBarList(Lcom/android/systemui/recent/multiwindowUtils/MultiUserPreferences;)V
     .locals 30
-    .param p1    # Lcom/android/systemui/recent/multiwindowUtils/MultiUserPreferences;
 
     const-string v27, "MultiWindowTrayInfo"
 
@@ -6416,7 +6356,6 @@
 
 .method public loadPopupList(Lcom/android/systemui/recent/multiwindowUtils/MultiUserPreferences;)V
     .locals 17
-    .param p1    # Lcom/android/systemui/recent/multiwindowUtils/MultiUserPreferences;
 
     const-string v14, "MultiWindowTrayInfo"
 
@@ -6669,8 +6608,6 @@
 
 .method public makeAppListForScrollView(Ljava/util/List;ZI)V
     .locals 1
-    .param p2    # Z
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -6690,9 +6627,6 @@
 
 .method public makeAppListForScrollView(Ljava/util/List;ZIZ)V
     .locals 24
-    .param p2    # Z
-    .param p3    # I
-    .param p4    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -7310,9 +7244,6 @@
 
 .method public makeInstancebadgeForGridView(Landroid/widget/ImageView;II)V
     .locals 14
-    .param p1    # Landroid/widget/ImageView;
-    .param p2    # I
-    .param p3    # I
 
     const-string v11, "MultiWindowTrayInfo"
 
@@ -7559,8 +7490,6 @@
 
 .method public makeMultiInstanceIntent(Landroid/content/pm/ResolveInfo;Landroid/content/Intent;)V
     .locals 7
-    .param p1    # Landroid/content/pm/ResolveInfo;
-    .param p2    # Landroid/content/Intent;
 
     const/4 v1, 0x0
 
@@ -7837,8 +7766,6 @@
 
 .method public moveToAppListItem(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget-object v1, p0, Lcom/android/systemui/recent/multiwindowUtils/MultiWindowTrayInfo;->mFlashBarDelList:Ljava/util/List;
 
@@ -7862,7 +7789,6 @@
 
 .method public moveToEditListItem(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/systemui/recent/multiwindowUtils/MultiWindowTrayInfo;->mFlashBarAppList:Ljava/util/List;
 
@@ -7885,7 +7811,6 @@
 
 .method public moveToSmartEditItem(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/systemui/recent/multiwindowUtils/MultiWindowTrayInfo;->mPopupAppList:Ljava/util/List;
 
@@ -7931,8 +7856,6 @@
 
 .method public moveToSmartWindowItem(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget-object v1, p0, Lcom/android/systemui/recent/multiwindowUtils/MultiWindowTrayInfo;->mPopupDelList:Ljava/util/List;
 
@@ -7956,8 +7879,6 @@
 
 .method public pkgManagerList(Landroid/content/Intent;Z)Z
     .locals 9
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Z
 
     const/4 v5, 0x0
 
@@ -8292,8 +8213,6 @@
 
 .method public removeInstalledPackage(Ljava/lang/String;Z)Z
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const/4 v6, 0x0
 
@@ -8601,8 +8520,6 @@
 
 .method public removeTemplate(IZ)V
     .locals 3
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v1, -0x1
 
@@ -8668,8 +8585,6 @@
 
 .method public reorderApplist(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     const/4 v1, -0x1
 
@@ -8701,8 +8616,6 @@
 
 .method public reorderSmartWindowList(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     const/4 v1, -0x1
 
@@ -9517,7 +9430,6 @@
 
 .method public setAppListSizeChangeListener(Lcom/android/systemui/recent/multiwindowUtils/MultiWindowTrayInfo$AppListSizeChangeListener;)V
     .locals 0
-    .param p1    # Lcom/android/systemui/recent/multiwindowUtils/MultiWindowTrayInfo$AppListSizeChangeListener;
 
     iput-object p1, p0, Lcom/android/systemui/recent/multiwindowUtils/MultiWindowTrayInfo;->mListener:Lcom/android/systemui/recent/multiwindowUtils/MultiWindowTrayInfo$AppListSizeChangeListener;
 
@@ -9526,7 +9438,6 @@
 
 .method public setFlashBarState(Z)V
     .locals 4
-    .param p1    # Z
 
     const-string v0, "MultiWindowTrayInfo"
 
@@ -9561,7 +9472,6 @@
 
 .method public setRemoveTask(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/systemui/recent/multiwindowUtils/MultiWindowTrayInfo;->mRemovingTask:I
 
@@ -9653,7 +9563,6 @@
 
 .method public updateAppListForScrollView(Ljava/util/List;Z)V
     .locals 10
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -9796,7 +9705,6 @@
 
 .method public updateInstalledPackage(Ljava/lang/String;)Z
     .locals 13
-    .param p1    # Ljava/lang/String;
 
     iget-object v10, p0, Lcom/android/systemui/recent/multiwindowUtils/MultiWindowTrayInfo;->mFlashBarAppList:Ljava/util/List;
 

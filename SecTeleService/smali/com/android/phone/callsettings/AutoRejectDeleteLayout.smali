@@ -54,7 +54,7 @@
 
     iget v0, p0, Lcom/android/phone/callsettings/AutoRejectDeleteLayout;->checkableId:I
 
-    invoke-virtual {p0, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/phone/callsettings/AutoRejectDeleteLayout;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -87,7 +87,7 @@
 
     iget v0, p0, Lcom/android/phone/callsettings/AutoRejectDeleteLayout;->checkableId:I
 
-    invoke-virtual {p0, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/phone/callsettings/AutoRejectDeleteLayout;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -115,7 +115,7 @@
 
     iget v0, p0, Lcom/android/phone/callsettings/AutoRejectDeleteLayout;->checkableId:I
 
-    invoke-virtual {p0, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/phone/callsettings/AutoRejectDeleteLayout;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 

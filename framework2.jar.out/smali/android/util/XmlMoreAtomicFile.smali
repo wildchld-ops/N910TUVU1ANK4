@@ -6,7 +6,6 @@
 # direct methods
 .method public constructor <init>(Ljava/io/File;)V
     .locals 0
-    .param p1    # Ljava/io/File;
 
     invoke-direct {p0, p1}, Landroid/util/MoreAtomicFile;-><init>(Ljava/io/File;)V
 
@@ -17,7 +16,6 @@
 # virtual methods
 .method protected isDamaged(Ljava/io/File;)Z
     .locals 9
-    .param p1    # Ljava/io/File;
 
     const/4 v2, 0x0
 

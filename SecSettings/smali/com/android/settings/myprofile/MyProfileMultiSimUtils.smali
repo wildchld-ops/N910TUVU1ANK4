@@ -54,7 +54,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -69,8 +68,6 @@
 
 .method public static appendPropertySimSlot(Ljava/lang/String;I)Ljava/lang/String;
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
 
     move-object v0, p0
 
@@ -182,7 +179,6 @@
 
 .method public static getCurrentWallpaper(Landroid/content/Context;)Ljava/lang/String;
     .locals 5
-    .param p0    # Landroid/content/Context;
 
     const-string v2, "ril.MSIMM"
 

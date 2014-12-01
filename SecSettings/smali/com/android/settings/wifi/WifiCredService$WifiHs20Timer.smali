@@ -25,7 +25,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/settings/wifi/WifiCredService;I)V
     .locals 1
-    .param p2    # I
 
     iput-object p1, p0, Lcom/android/settings/wifi/WifiCredService$WifiHs20Timer;->this$0:Lcom/android/settings/wifi/WifiCredService;
 
@@ -44,7 +43,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/wifi/WifiCredService$WifiHs20Timer;)Ljava/util/Timer;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiCredService$WifiHs20Timer;
 
     iget-object v0, p0, Lcom/android/settings/wifi/WifiCredService$WifiHs20Timer;->hs20_timer:Ljava/util/Timer;
 
@@ -53,7 +51,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/wifi/WifiCredService$WifiHs20Timer;)I
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiCredService$WifiHs20Timer;
 
     iget v0, p0, Lcom/android/settings/wifi/WifiCredService$WifiHs20Timer;->cred_id:I
 

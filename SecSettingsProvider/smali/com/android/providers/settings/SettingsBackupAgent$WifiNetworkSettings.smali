@@ -69,7 +69,6 @@
 # virtual methods
 .method public readNetworks(Ljava/io/BufferedReader;)V
     .locals 3
-    .param p1    # Ljava/io/BufferedReader;
 
     :cond_0
     :goto_0
@@ -127,7 +126,6 @@
 
 .method public write(Ljava/io/Writer;)V
     .locals 3
-    .param p1    # Ljava/io/Writer;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

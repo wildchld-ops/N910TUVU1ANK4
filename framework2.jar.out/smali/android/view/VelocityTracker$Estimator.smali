@@ -49,8 +49,6 @@
 
 .method private estimate(F[F)F
     .locals 4
-    .param p1    # F
-    .param p2    # [F
 
     const/4 v0, 0x0
 
@@ -83,7 +81,6 @@
 # virtual methods
 .method public estimateX(F)F
     .locals 1
-    .param p1    # F
 
     iget-object v0, p0, Landroid/view/VelocityTracker$Estimator;->xCoeff:[F
 
@@ -96,7 +93,6 @@
 
 .method public estimateY(F)F
     .locals 1
-    .param p1    # F
 
     iget-object v0, p0, Landroid/view/VelocityTracker$Estimator;->yCoeff:[F
 
@@ -109,7 +105,6 @@
 
 .method public getXCoeff(I)F
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/view/VelocityTracker$Estimator;->degree:I
 
@@ -130,7 +125,6 @@
 
 .method public getYCoeff(I)F
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/view/VelocityTracker$Estimator;->degree:I
 

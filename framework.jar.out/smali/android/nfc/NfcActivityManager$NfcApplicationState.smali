@@ -25,7 +25,6 @@
 # direct methods
 .method public constructor <init>(Landroid/nfc/NfcActivityManager;Landroid/app/Application;)V
     .locals 1
-    .param p2    # Landroid/app/Application;
 
     iput-object p1, p0, Landroid/nfc/NfcActivityManager$NfcApplicationState;->this$0:Landroid/nfc/NfcActivityManager;
 

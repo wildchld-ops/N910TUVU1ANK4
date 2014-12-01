@@ -32,7 +32,6 @@
 # direct methods
 .method private constructor <init>(Landroid/support/v4/app/ActionBarDrawerToggle;Landroid/graphics/drawable/Drawable;)V
     .locals 3
-    .param p2    # Landroid/graphics/drawable/Drawable;
 
     const/4 v0, 0x0
 
@@ -62,9 +61,6 @@
 
 .method synthetic constructor <init>(Landroid/support/v4/app/ActionBarDrawerToggle;Landroid/graphics/drawable/Drawable;Landroid/support/v4/app/ActionBarDrawerToggle$1;)V
     .locals 0
-    .param p1    # Landroid/support/v4/app/ActionBarDrawerToggle;
-    .param p2    # Landroid/graphics/drawable/Drawable;
-    .param p3    # Landroid/support/v4/app/ActionBarDrawerToggle$1;
 
     invoke-direct {p0, p1, p2}, Landroid/support/v4/app/ActionBarDrawerToggle$SlideDrawable;-><init>(Landroid/support/v4/app/ActionBarDrawerToggle;Landroid/graphics/drawable/Drawable;)V
 
@@ -75,7 +71,6 @@
 # virtual methods
 .method public draw(Landroid/graphics/Canvas;)V
     .locals 6
-    .param p1    # Landroid/graphics/Canvas;
 
     const/4 v5, 0x0
 
@@ -179,7 +174,6 @@
 
 .method public setOffset(F)V
     .locals 0
-    .param p1    # F
 
     iput p1, p0, Landroid/support/v4/app/ActionBarDrawerToggle$SlideDrawable;->mOffset:F
 
@@ -190,7 +184,6 @@
 
 .method public setPosition(F)V
     .locals 0
-    .param p1    # F
 
     iput p1, p0, Landroid/support/v4/app/ActionBarDrawerToggle$SlideDrawable;->mPosition:F
 

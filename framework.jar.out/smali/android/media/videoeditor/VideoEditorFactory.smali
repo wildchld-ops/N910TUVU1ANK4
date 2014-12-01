@@ -14,7 +14,6 @@
 
 .method public static create(Ljava/lang/String;)Landroid/media/videoeditor/VideoEditor;
     .locals 4
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -92,8 +91,6 @@
 
 .method public static load(Ljava/lang/String;Z)Landroid/media/videoeditor/VideoEditor;
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

@@ -23,7 +23,6 @@
 # direct methods
 .method public constructor <init>(Landroid/hardware/motion/MotionRecognitionService;Landroid/os/Looper;)V
     .locals 1
-    .param p2    # Landroid/os/Looper;
 
     iput-object p1, p0, Landroid/hardware/motion/MotionRecognitionService$ServiceHandler;->this$0:Landroid/hardware/motion/MotionRecognitionService;
 
@@ -40,9 +39,6 @@
 
 .method private checkListener(III)Z
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v1, 0x0
 
@@ -215,7 +211,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 12
-    .param p1    # Landroid/os/Message;
 
     const/16 v10, 0x64
 

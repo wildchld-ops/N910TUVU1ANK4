@@ -256,9 +256,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/content/pm/IPackageManager;Landroid/app/admin/IDevicePolicyManager;)V
     .locals 15
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/pm/IPackageManager;
-    .param p3    # Landroid/app/admin/IDevicePolicyManager;
 
     invoke-direct {p0}, Landroid/app/enterprise/IEnterpriseDeviceManager$Stub;-><init>()V
 
@@ -810,9 +807,6 @@
 
 .method static synthetic access$000(Lcom/android/server/enterprise/EnterpriseDeviceManagerService;Landroid/content/ComponentName;I)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/EnterpriseDeviceManagerService;
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/enterprise/EnterpriseDeviceManagerService;->removeActiveAdminDelayed(Landroid/content/ComponentName;I)V
 
@@ -821,9 +815,6 @@
 
 .method static synthetic access$100(Lcom/android/server/enterprise/EnterpriseDeviceManagerService;Landroid/content/ComponentName;I)Landroid/app/enterprise/EnterpriseDeviceAdminInfo;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/EnterpriseDeviceManagerService;
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;
@@ -847,7 +838,6 @@
 
 .method static synthetic access$200(Lcom/android/server/enterprise/EnterpriseDeviceManagerService;)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/EnterpriseDeviceManagerService;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/EnterpriseDeviceManagerService;->runAdminUpdate()V
 
@@ -856,8 +846,6 @@
 
 .method static synthetic access$300(Lcom/android/server/enterprise/EnterpriseDeviceManagerService;Z)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/EnterpriseDeviceManagerService;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/EnterpriseDeviceManagerService;->updateConstrainedStateData(Z)V
 
@@ -866,7 +854,6 @@
 
 .method static synthetic access$400(Lcom/android/server/enterprise/EnterpriseDeviceManagerService;)Ljava/util/List;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/EnterpriseDeviceManagerService;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/EnterpriseDeviceManagerService;->getConstrainedStateAll()Ljava/util/List;
 
@@ -877,10 +864,6 @@
 
 .method static synthetic access$500(Lcom/android/server/enterprise/EnterpriseDeviceManagerService;Ljava/lang/String;Ljava/lang/String;Z)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/EnterpriseDeviceManagerService;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/server/enterprise/EnterpriseDeviceManagerService;->showConstrainedStateNotification(Ljava/lang/String;Ljava/lang/String;Z)V
 
@@ -889,7 +872,6 @@
 
 .method static synthetic access$600(Lcom/android/server/enterprise/EnterpriseDeviceManagerService;)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/EnterpriseDeviceManagerService;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/EnterpriseDeviceManagerService;->selfUpdate()V
 
@@ -906,7 +888,6 @@
 
 .method static synthetic access$702(Landroid/content/ComponentName;)Landroid/content/ComponentName;
     .locals 0
-    .param p0    # Landroid/content/ComponentName;
 
     sput-object p0, Lcom/android/server/enterprise/EnterpriseDeviceManagerService;->mSelfUpdateAdminComponent:Landroid/content/ComponentName;
 
@@ -915,7 +896,6 @@
 
 .method static synthetic access$800(Lcom/android/server/enterprise/EnterpriseDeviceManagerService;)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/EnterpriseDeviceManagerService;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/EnterpriseDeviceManagerService;->addServices()V
 
@@ -924,7 +904,6 @@
 
 .method static synthetic access$900(Lcom/android/server/enterprise/EnterpriseDeviceManagerService;)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/EnterpriseDeviceManagerService;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/EnterpriseDeviceManagerService;->initServices()V
 
@@ -933,8 +912,6 @@
 
 .method private activateAdmin(Landroid/content/ComponentName;Z)V
     .locals 17
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Z
 
     invoke-static {}, Landroid/os/UserHandle;->getCallingUserId()I
 
@@ -2651,7 +2628,6 @@
 
 .method private checkAdminExistsInELMDB(Ljava/lang/String;)Z
     .locals 12
-    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Landroid/os/Binder;->clearCallingIdentity()J
 
@@ -2804,7 +2780,6 @@
 
 .method private checkContainerOwnerShip(Landroid/app/enterprise/ContextInfo;)V
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/16 v5, 0x64
 
@@ -2884,7 +2859,6 @@
 
 .method private checkContainerOwnerShipForUMC(Landroid/app/enterprise/ContextInfo;)V
     .locals 6
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/16 v4, 0x64
 
@@ -2962,7 +2936,6 @@
 
 .method private checkIfMigrationNeeded(Landroid/database/sqlite/SQLiteDatabase;)Z
     .locals 3
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
 
     const/4 v0, 0x1
 
@@ -3161,8 +3134,6 @@
 
 .method private checkProxyAdminPermission(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 11
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const/4 v8, 0x1
 
@@ -3284,7 +3255,6 @@
 
 .method private compareSystemSignature([Landroid/content/pm/Signature;)Z
     .locals 11
-    .param p1    # [Landroid/content/pm/Signature;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3385,10 +3355,6 @@
 
 .method public static createContextAsUser(Landroid/content/Context;Ljava/lang/String;II)Landroid/content/Context;
     .locals 7
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     const-string v4, "EnterpriseDeviceManagerService"
 
@@ -3489,8 +3455,6 @@
 
 .method private deactivateProxyAdminsForOwnerAdmin(Landroid/content/ComponentName;I)V
     .locals 13
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # I
 
     new-instance v5, Ljava/util/ArrayList;
 
@@ -3680,8 +3644,6 @@
 
 .method private disableConstrainedStateInternal(ILjava/lang/String;)Z
     .locals 13
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v6, 0x1
 
@@ -3833,10 +3795,6 @@
 
 .method private enforceActiveAdminPermissionByContext(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;ZZ)Landroid/app/enterprise/ContextInfo;
     .locals 11
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
-    .param p4    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -4145,9 +4103,6 @@
 
 .method private enforceOwnerOnlyAndActiveAdminPermissionByContext(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Z)Landroid/app/enterprise/ContextInfo;
     .locals 4
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     const/4 v3, 0x0
 
@@ -4283,8 +4238,6 @@
 
 .method private findAdmin(Landroid/content/ComponentName;I)Landroid/app/enterprise/EnterpriseDeviceAdminInfo;
     .locals 12
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;
@@ -4449,7 +4402,6 @@
 
 .method private getActiveAdminLocked(Landroid/content/ComponentName;)Landroid/app/enterprise/EnterpriseDeviceAdminInfo;
     .locals 5
-    .param p1    # Landroid/content/ComponentName;
 
     iget-object v2, p0, Lcom/android/server/enterprise/EnterpriseDeviceManagerService;->mAdminList:Ljava/util/ArrayList;
 
@@ -4513,8 +4465,6 @@
 
 .method private getActiveAdminLocked(Landroid/content/ComponentName;I)Landroid/app/enterprise/EnterpriseDeviceAdminInfo;
     .locals 5
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # I
 
     iget-object v2, p0, Lcom/android/server/enterprise/EnterpriseDeviceManagerService;->mAdminList:Ljava/util/ArrayList;
 
@@ -4602,7 +4552,6 @@
 
 .method private getAdminNameForUserId(I)Landroid/content/ComponentName;
     .locals 5
-    .param p1    # I
 
     iget-object v3, p0, Lcom/android/server/enterprise/EnterpriseDeviceManagerService;->mEdmStorageProvider:Lcom/android/server/enterprise/storage/EdmStorageProvider;
 
@@ -4647,7 +4596,6 @@
 
 .method public static getCallingOrCurrentUserId(Landroid/app/enterprise/ContextInfo;)I
     .locals 4
-    .param p0    # Landroid/app/enterprise/ContextInfo;
 
     if-nez p0, :cond_0
 
@@ -4714,7 +4662,6 @@
 
 .method public static getCallingOrUserUid(Landroid/app/enterprise/ContextInfo;)I
     .locals 2
-    .param p0    # Landroid/app/enterprise/ContextInfo;
 
     if-nez p0, :cond_0
 
@@ -4852,7 +4799,6 @@
 
 .method static getContainerId(I)I
     .locals 1
-    .param p0    # I
 
     invoke-static {p0}, Lcom/sec/enterprise/knox/EnterpriseContainerManager;->getContainerId(I)I
 
@@ -4871,7 +4817,6 @@
 
 .method public static final getPolicyService(Ljava/lang/String;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     sget-object v0, Lcom/android/server/enterprise/EnterpriseDeviceManagerService;->mPolicyServices:Ljava/util/Map;
 
@@ -4884,8 +4829,6 @@
 
 .method public static getProxyAdminOwnerUid(Lcom/android/server/enterprise/storage/EdmStorageProvider;I)I
     .locals 6
-    .param p0    # Lcom/android/server/enterprise/storage/EdmStorageProvider;
-    .param p1    # I
 
     const/4 v5, 0x0
 
@@ -5154,9 +5097,6 @@
 
 .method private isMatch([B[BI)Z
     .locals 4
-    .param p1    # [B
-    .param p2    # [B
-    .param p3    # I
 
     const/4 v1, 0x0
 
@@ -5350,8 +5290,6 @@
 
 .method private isPermissionGranted(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const-string v4, "apppermission_control_policy"
 
@@ -5410,8 +5348,6 @@
 
 .method private static isTableExists(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;)Z
     .locals 5
-    .param p0    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -6492,9 +6428,6 @@
 
 .method private migrateEcppDatabse(Landroid/content/ComponentName;IJ)Z
     .locals 2
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # I
-    .param p3    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -6522,8 +6455,6 @@
 
 .method private migrateEnterpriseDatabase(IZ)J
     .locals 2
-    .param p1    # I
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -7230,8 +7161,6 @@
 
 .method private migrateFromV1DmAppInfo(Landroid/database/sqlite/SQLiteDatabase;I)Z
     .locals 16
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p2    # I
 
     invoke-virtual/range {p1 .. p1}, Landroid/database/sqlite/SQLiteDatabase;->beginTransaction()V
 
@@ -7401,7 +7330,6 @@
 
 .method private migrateFromV1Setting(I)Z
     .locals 8
-    .param p1    # I
 
     const/16 v7, 0xa
 
@@ -7899,8 +7827,6 @@
 
 .method private removeActiveAdmin(Landroid/content/ComponentName;I)V
     .locals 4
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -8021,8 +7947,6 @@
 
 .method private removeActiveAdminDelayed(Landroid/content/ComponentName;I)V
     .locals 21
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # I
 
     monitor-enter p0
 
@@ -8838,7 +8762,6 @@
 
 .method private sendMigrationIntent(Z)V
     .locals 4
-    .param p1    # Z
 
     new-instance v0, Landroid/content/Intent;
 
@@ -8873,9 +8796,6 @@
 
 .method private showConstrainedStateNotification(Ljava/lang/String;Ljava/lang/String;Z)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     const v5, 0x1040292
 
@@ -9010,8 +8930,6 @@
 
 .method private split([B[B)Ljava/util/List;
     .locals 4
-    .param p1    # [B
-    .param p2    # [B
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([B[B)",
@@ -9070,7 +8988,6 @@
 
 .method private updateConstrainedStateData(Z)V
     .locals 34
-    .param p1    # Z
 
     const-string v31, "EnterpriseDeviceManagerService"
 
@@ -9813,8 +9730,6 @@
 
 .method private verifyActivePermissions(ILjava/lang/String;)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     iget-object v2, p0, Lcom/android/server/enterprise/EnterpriseDeviceManagerService;->mAdminMap:Ljava/util/HashMap;
 
@@ -9863,9 +9778,6 @@
 # virtual methods
 .method public activateAdminForUser(Landroid/content/ComponentName;ZI)V
     .locals 16
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Z
-    .param p3    # I
 
     move-object/from16 v0, p0
 
@@ -10590,10 +10502,6 @@
 
 .method public addProxyAdmin(Landroid/app/admin/ProxyDeviceAdminInfo;ILandroid/content/ComponentName;I)V
     .locals 6
-    .param p1    # Landroid/app/admin/ProxyDeviceAdminInfo;
-    .param p2    # I
-    .param p3    # Landroid/content/ComponentName;
-    .param p4    # I
 
     const/4 v5, 0x0
 
@@ -10791,7 +10699,6 @@
 
 .method public configureContainerAdminForMigration(Z)Z
     .locals 3
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -10845,8 +10752,6 @@
 
 .method public deactivateAdminForUser(Landroid/content/ComponentName;I)V
     .locals 4
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # I
 
     iget-object v1, p0, Lcom/android/server/enterprise/EnterpriseDeviceManagerService;->mContext:Landroid/content/Context;
 
@@ -10898,7 +10803,6 @@
 
 .method public deactivateProxyAdminsForUser(I)V
     .locals 11
-    .param p1    # I
 
     const/4 v10, 0x0
 
@@ -11068,7 +10972,6 @@
 
 .method public disableConstrainedState(Landroid/app/enterprise/ContextInfo;)Z
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const-string v1, "com.sec.enterprise.knox.permission.KNOX_RESTRICTION"
 
@@ -11095,9 +10998,6 @@
 
 .method public enableConstrainedState(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;I)Z
     .locals 25
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     const-string v20, "com.sec.enterprise.knox.permission.KNOX_RESTRICTION"
 
@@ -11657,7 +11557,6 @@
 
 .method public enforceActiveAdminPermission(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -11683,8 +11582,6 @@
 
 .method public enforceActiveAdminPermissionByContext(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Landroid/app/enterprise/ContextInfo;
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -11702,8 +11599,6 @@
 
 .method public enforceAuthorization(Ljava/lang/String;Ljava/lang/String;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -11799,8 +11694,6 @@
 
 .method public enforceContainerOwnerShipPermissionByContext(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Landroid/app/enterprise/ContextInfo;
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -11820,8 +11713,6 @@
 
 .method public enforceOwnerOnlyAndActiveAdminPermission(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Landroid/app/enterprise/ContextInfo;
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -11839,8 +11730,6 @@
 
 .method public enforceOwnerOnlyPermissionByContext(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Landroid/app/enterprise/ContextInfo;
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -11901,8 +11790,6 @@
 
 .method public enforcePermissionByContext(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Landroid/app/enterprise/ContextInfo;
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -11954,7 +11841,6 @@
 
 .method public getActiveAdmins(I)Ljava/util/List;
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -12070,7 +11956,6 @@
 
 .method public getActiveAdminsInfo(I)Ljava/util/List;
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -12170,7 +12055,6 @@
 
 .method public getActiveSamsungAuthorizedAdmin(I)Landroid/app/enterprise/EnterpriseDeviceAdminInfo;
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/server/enterprise/EnterpriseDeviceManagerService;->mAdminMap:Ljava/util/HashMap;
 
@@ -12203,8 +12087,6 @@
 
 .method public getAdminRemovable(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 12
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const/4 v9, 0x1
 
@@ -12361,7 +12243,6 @@
 
 .method public getProxyAdmins(I)Ljava/util/List;
     .locals 30
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -12796,8 +12677,6 @@
 
 .method public getRemoveWarning(Landroid/content/ComponentName;Landroid/os/RemoteCallback;)V
     .locals 2
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Landroid/os/RemoteCallback;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -12844,8 +12723,6 @@
 
 .method public hasGrantedPolicy(Landroid/content/ComponentName;I)Z
     .locals 1
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -12865,9 +12742,6 @@
 
 .method public hasGrantedPolicy(Landroid/content/ComponentName;II)Z
     .locals 4
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -12938,7 +12812,6 @@
 
 .method public isAdminActive(Landroid/content/ComponentName;)Z
     .locals 1
-    .param p1    # Landroid/content/ComponentName;
 
     monitor-enter p0
 
@@ -12977,7 +12850,6 @@
 
 .method public isAdminRemovable(Landroid/content/ComponentName;)Z
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
 
     const-string v0, "EnterpriseDeviceManagerService"
 
@@ -13014,8 +12886,6 @@
 
 .method public isAdminRemovableInternal(Landroid/content/ComponentName;I)Z
     .locals 6
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # I
 
     const-string v3, "EnterpriseDeviceManagerService"
 
@@ -13177,7 +13047,6 @@
 
 .method public isRestrictedByConstrainedState(I)Z
     .locals 5
-    .param p1    # I
 
     invoke-direct {p0}, Lcom/android/server/enterprise/EnterpriseDeviceManagerService;->getConstrainedStateAll()Ljava/util/List;
 
@@ -13231,7 +13100,6 @@
 
 .method public isUMCAdmin(Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, -0x1
 
@@ -13291,7 +13159,6 @@
 
 .method public migrateApplicationDisablePolicy(I)Z
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -13319,8 +13186,6 @@
 
 .method public migrateEnterpriseContainer(IZ)Z
     .locals 7
-    .param p1    # I
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -13424,8 +13289,6 @@
 
 .method public onContainerCreation(II)V
     .locals 8
-    .param p1    # I
-    .param p2    # I
 
     const-string v5, "EnterpriseDeviceManagerService"
 
@@ -13525,8 +13388,6 @@
 
 .method public onContainerRemoved(II)V
     .locals 8
-    .param p1    # I
-    .param p2    # I
 
     const-string v5, "EnterpriseDeviceManagerService"
 
@@ -13626,8 +13487,6 @@
 
 .method public onPreContainerRemoval(II)V
     .locals 8
-    .param p1    # I
-    .param p2    # I
 
     const-string v5, "EnterpriseDeviceManagerService"
 
@@ -13727,7 +13586,6 @@
 
 .method public packageHasActiveAdmins(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -13796,8 +13654,6 @@
 
 .method public packageHasActiveAdminsAsUser(Ljava/lang/String;I)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     monitor-enter p0
 
@@ -13936,7 +13792,6 @@
 
 .method public removeActiveAdmin(Landroid/content/ComponentName;)V
     .locals 1
-    .param p1    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -13954,8 +13809,6 @@
 
 .method public removeActiveAdminFromDpm(Landroid/content/ComponentName;I)V
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # I
 
     const-string v0, "EnterpriseDeviceManagerService"
 
@@ -14002,7 +13855,6 @@
 
 .method public removeProxyAdmin(I)V
     .locals 4
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/server/enterprise/EnterpriseDeviceManagerService;->mContext:Landroid/content/Context;
 
@@ -14035,9 +13887,6 @@
 
 .method public restoreContainerAdminData(ILjava/lang/String;I)Z
     .locals 8
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     invoke-static {}, Landroid/os/Binder;->getCallingPid()I
 
@@ -14191,7 +14040,6 @@
 
 .method public declared-synchronized selfUpdateAdmin(Ljava/lang/String;)I
     .locals 22
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -14738,8 +14586,6 @@
 
 .method public setActiveAdmin(Landroid/content/ComponentName;Z)V
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -14761,7 +14607,6 @@
 
 .method public setActiveAdminSilent(Landroid/content/ComponentName;)V
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
 
     iget-object v0, p0, Lcom/android/server/enterprise/EnterpriseDeviceManagerService;->mContext:Landroid/content/Context;
 
@@ -14780,9 +14625,6 @@
 
 .method public setAdminRemovable(Landroid/app/enterprise/ContextInfo;ZLjava/lang/String;)Z
     .locals 10
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
-    .param p3    # Ljava/lang/String;
 
     const/4 v5, 0x0
 
@@ -14941,7 +14783,6 @@
 
 .method public setB2BMode(Z)I
     .locals 1
-    .param p1    # Z
 
     const/4 v0, 0x0
 
@@ -14950,8 +14791,6 @@
 
 .method public setPermissions(I[Ljava/lang/String;)V
     .locals 5
-    .param p1    # I
-    .param p2    # [Ljava/lang/String;
 
     iget-object v2, p0, Lcom/android/server/enterprise/EnterpriseDeviceManagerService;->mContext:Landroid/content/Context;
 
@@ -15144,10 +14983,6 @@
 
 .method public updateProxyAdmin(Landroid/app/admin/ProxyDeviceAdminInfo;ILandroid/content/ComponentName;I)V
     .locals 7
-    .param p1    # Landroid/app/admin/ProxyDeviceAdminInfo;
-    .param p2    # I
-    .param p3    # Landroid/content/ComponentName;
-    .param p4    # I
 
     const/4 v6, 0x0
 

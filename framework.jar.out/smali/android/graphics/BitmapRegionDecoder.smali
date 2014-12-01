@@ -18,7 +18,6 @@
 # direct methods
 .method private constructor <init>(I)V
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -39,7 +38,6 @@
 
 .method private checkRecycled(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-boolean v0, p0, Landroid/graphics/BitmapRegionDecoder;->mRecycled:Z
 
@@ -81,8 +79,6 @@
 
 .method public static newInstance(Ljava/io/FileDescriptor;Z)Landroid/graphics/BitmapRegionDecoder;
     .locals 1
-    .param p0    # Ljava/io/FileDescriptor;
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -98,8 +94,6 @@
 
 .method public static newInstance(Ljava/io/InputStream;Z)Landroid/graphics/BitmapRegionDecoder;
     .locals 2
-    .param p0    # Ljava/io/InputStream;
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -137,8 +131,6 @@
 
 .method public static newInstance(Ljava/lang/String;Z)Landroid/graphics/BitmapRegionDecoder;
     .locals 14
-    .param p0    # Ljava/lang/String;
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -366,9 +358,6 @@
 
 .method public static newInstance(Ljava/lang/String;ZZ)Landroid/graphics/BitmapRegionDecoder;
     .locals 14
-    .param p0    # Ljava/lang/String;
-    .param p1    # Z
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -604,10 +593,6 @@
 
 .method public static newInstance([BIIZ)Landroid/graphics/BitmapRegionDecoder;
     .locals 2
-    .param p0    # [B
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -643,8 +628,6 @@
 # virtual methods
 .method public decodeRegion(Landroid/graphics/Rect;Landroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;
     .locals 7
-    .param p1    # Landroid/graphics/Rect;
-    .param p2    # Landroid/graphics/BitmapFactory$Options;
 
     iget-object v6, p0, Landroid/graphics/BitmapRegionDecoder;->mNativeLock:Ljava/lang/Object;
 

@@ -40,7 +40,6 @@
 # virtual methods
 .method public onLongClick(Landroid/view/View;)Z
     .locals 1
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Lcom/android/settings/Settings$HeaderAdapter$7;->val$searchViewLayout:Landroid/widget/LinearLayout;
 

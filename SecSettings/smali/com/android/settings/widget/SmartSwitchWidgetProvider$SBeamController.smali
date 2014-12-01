@@ -26,7 +26,6 @@
 # direct methods
 .method constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -49,7 +48,6 @@
 
 .method static toggle(Z)V
     .locals 6
-    .param p0    # Z
 
     if-eqz p0, :cond_0
 
@@ -228,8 +226,6 @@
 
 .method public onSharedPreferenceChanged(Landroid/content/SharedPreferences;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Landroid/content/SharedPreferences;
-    .param p2    # Ljava/lang/String;
 
     const-string v0, "SmartSwitchWidgetProvider"
 

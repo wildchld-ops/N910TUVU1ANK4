@@ -33,8 +33,6 @@
 # virtual methods
 .method public appPrivateCommand(Ljava/lang/String;Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Bundle;
 
     invoke-virtual {p0}, Landroid/inputmethodservice/InputMethodService$InputMethodSessionImpl;->isEnabled()Z
 
@@ -55,7 +53,6 @@
 
 .method public displayCompletions([Landroid/view/inputmethod/CompletionInfo;)V
     .locals 1
-    .param p1    # [Landroid/view/inputmethod/CompletionInfo;
 
     invoke-virtual {p0}, Landroid/inputmethodservice/InputMethodService$InputMethodSessionImpl;->isEnabled()Z
 
@@ -100,7 +97,6 @@
 
 .method public showSideSyncSoftInput(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/inputmethodservice/InputMethodService$InputMethodSessionImpl;->this$0:Landroid/inputmethodservice/InputMethodService;
 
@@ -112,8 +108,6 @@
 
 .method public toggleSoftInput(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Landroid/inputmethodservice/InputMethodService$InputMethodSessionImpl;->this$0:Landroid/inputmethodservice/InputMethodService;
 
@@ -125,7 +119,6 @@
 
 .method public updateCursor(Landroid/graphics/Rect;)V
     .locals 1
-    .param p1    # Landroid/graphics/Rect;
 
     invoke-virtual {p0}, Landroid/inputmethodservice/InputMethodService$InputMethodSessionImpl;->isEnabled()Z
 
@@ -146,8 +139,6 @@
 
 .method public updateExtractedText(ILandroid/view/inputmethod/ExtractedText;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/inputmethod/ExtractedText;
 
     invoke-virtual {p0}, Landroid/inputmethodservice/InputMethodService$InputMethodSessionImpl;->isEnabled()Z
 
@@ -168,12 +159,6 @@
 
 .method public updateSelection(IIIIII)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     invoke-virtual {p0}, Landroid/inputmethodservice/InputMethodService$InputMethodSessionImpl;->isEnabled()Z
 
@@ -206,7 +191,6 @@
 
 .method public viewClicked(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-virtual {p0}, Landroid/inputmethodservice/InputMethodService$InputMethodSessionImpl;->isEnabled()Z
 

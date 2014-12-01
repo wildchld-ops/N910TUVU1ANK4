@@ -33,7 +33,6 @@
 
 .method static synthetic access$000(Lcom/android/launcher2/DarkenView$Drawer;)F
     .locals 1
-    .param p0    # Lcom/android/launcher2/DarkenView$Drawer;
 
     iget v0, p0, Lcom/android/launcher2/DarkenView$Drawer;->mAlpha:F
 
@@ -42,8 +41,6 @@
 
 .method static synthetic access$002(Lcom/android/launcher2/DarkenView$Drawer;F)F
     .locals 0
-    .param p0    # Lcom/android/launcher2/DarkenView$Drawer;
-    .param p1    # F
 
     iput p1, p0, Lcom/android/launcher2/DarkenView$Drawer;->mAlpha:F
 
@@ -54,7 +51,6 @@
 # virtual methods
 .method public drawGL([F)V
     .locals 2
-    .param p1    # [F
 
     const/4 v1, 0x0
 

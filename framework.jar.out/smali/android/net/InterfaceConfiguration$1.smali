@@ -40,7 +40,6 @@
 # virtual methods
 .method public createFromParcel(Landroid/os/Parcel;)Landroid/net/InterfaceConfiguration;
     .locals 5
-    .param p1    # Landroid/os/Parcel;
 
     new-instance v1, Landroid/net/InterfaceConfiguration;
 
@@ -102,7 +101,6 @@
 
 .method public bridge synthetic createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     invoke-virtual {p0, p1}, Landroid/net/InterfaceConfiguration$1;->createFromParcel(Landroid/os/Parcel;)Landroid/net/InterfaceConfiguration;
 
@@ -113,7 +111,6 @@
 
 .method public newArray(I)[Landroid/net/InterfaceConfiguration;
     .locals 1
-    .param p1    # I
 
     new-array v0, p1, [Landroid/net/InterfaceConfiguration;
 
@@ -122,7 +119,6 @@
 
 .method public bridge synthetic newArray(I)[Ljava/lang/Object;
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/net/InterfaceConfiguration$1;->newArray(I)[Landroid/net/InterfaceConfiguration;
 

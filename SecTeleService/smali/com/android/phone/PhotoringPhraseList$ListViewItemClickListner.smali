@@ -118,7 +118,7 @@
 
     check-cast v0, Landroid/widget/CheckBox;
 
-    invoke-virtual {v0}, Landroid/widget/CompoundButton;->isChecked()Z
+    invoke-virtual {v0}, Landroid/widget/CheckBox;->isChecked()Z
 
     move-result v2
 
@@ -127,15 +127,15 @@
     move v2, v3
 
     :goto_1
-    invoke-virtual {v0, v2}, Landroid/widget/CompoundButton;->setChecked(Z)V
+    invoke-virtual {v0, v2}, Landroid/widget/CheckBox;->setChecked(Z)V
 
     iget-object v2, p0, Lcom/android/phone/PhotoringPhraseList$ListViewItemClickListner;->mLview:Landroid/widget/ListView;
 
-    invoke-virtual {v0}, Landroid/widget/CompoundButton;->isChecked()Z
+    invoke-virtual {v0}, Landroid/widget/CheckBox;->isChecked()Z
 
     move-result v5
 
-    invoke-virtual {v2, p3, v5}, Landroid/widget/AbsListView;->setItemChecked(IZ)V
+    invoke-virtual {v2, p3, v5}, Landroid/widget/ListView;->setItemChecked(IZ)V
 
     iget-object v2, p0, Lcom/android/phone/PhotoringPhraseList$ListViewItemClickListner;->this$0:Lcom/android/phone/PhotoringPhraseList;
 
@@ -164,7 +164,7 @@
     move v2, v3
 
     :goto_2
-    invoke-virtual {v5, v2}, Landroid/widget/CompoundButton;->setChecked(Z)V
+    invoke-virtual {v5, v2}, Landroid/widget/CheckBox;->setChecked(Z)V
 
     iget-object v2, p0, Lcom/android/phone/PhotoringPhraseList$ListViewItemClickListner;->this$0:Lcom/android/phone/PhotoringPhraseList;
 

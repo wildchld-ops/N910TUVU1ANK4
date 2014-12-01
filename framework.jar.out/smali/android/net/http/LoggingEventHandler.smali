@@ -19,15 +19,12 @@
 # virtual methods
 .method public certificate(Landroid/net/http/SslCertificate;)V
     .locals 0
-    .param p1    # Landroid/net/http/SslCertificate;
 
     return-void
 .end method
 
 .method public data([BI)V
     .locals 0
-    .param p1    # [B
-    .param p2    # I
 
     return-void
 .end method
@@ -40,15 +37,12 @@
 
 .method public error(ILjava/lang/String;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method public handleSslErrorRequest(Landroid/net/http/SslError;)Z
     .locals 1
-    .param p1    # Landroid/net/http/SslError;
 
     const/4 v0, 0x0
 
@@ -57,15 +51,12 @@
 
 .method public headers(Landroid/net/http/Headers;)V
     .locals 0
-    .param p1    # Landroid/net/http/Headers;
 
     return-void
 .end method
 
 .method public locationChanged(Ljava/lang/String;Z)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     return-void
 .end method
@@ -82,10 +73,6 @@
 
 .method public status(IIILjava/lang/String;)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
 
     return-void
 .end method

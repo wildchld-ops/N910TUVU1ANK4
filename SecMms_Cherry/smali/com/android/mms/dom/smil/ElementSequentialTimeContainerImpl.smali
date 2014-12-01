@@ -9,7 +9,6 @@
 # direct methods
 .method constructor <init>(Lorg/w3c/dom/smil/SMILElement;)V
     .locals 0
-    .param p1    # Lorg/w3c/dom/smil/SMILElement;
 
     invoke-direct {p0, p1}, Lcom/android/mms/dom/smil/ElementTimeContainerImpl;-><init>(Lorg/w3c/dom/smil/SMILElement;)V
 
@@ -20,7 +19,6 @@
 # virtual methods
 .method public getActiveChildrenAt(F)Lorg/w3c/dom/NodeList;
     .locals 4
-    .param p1    # F
 
     invoke-virtual {p0}, Lcom/android/mms/dom/smil/ElementTimeContainerImpl;->getTimeChildren()Lorg/w3c/dom/NodeList;
 

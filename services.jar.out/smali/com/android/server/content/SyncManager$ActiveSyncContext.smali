@@ -45,9 +45,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/content/SyncManager;Lcom/android/server/content/SyncOperation;JI)V
     .locals 3
-    .param p2    # Lcom/android/server/content/SyncOperation;
-    .param p3    # J
-    .param p5    # I
 
     iput-object p1, p0, Lcom/android/server/content/SyncManager$ActiveSyncContext;->this$0:Lcom/android/server/content/SyncManager;
 
@@ -116,8 +113,6 @@
 # virtual methods
 .method bindToSyncAdapter(Landroid/content/pm/RegisteredServicesCache$ServiceInfo;I)Z
     .locals 9
-    .param p1    # Landroid/content/pm/RegisteredServicesCache$ServiceInfo;
-    .param p2    # I
 
     const/4 v1, 0x0
 
@@ -328,7 +323,6 @@
 
 .method public onFinished(Landroid/content/SyncResult;)V
     .locals 3
-    .param p1    # Landroid/content/SyncResult;
 
     const-string v0, "SyncManager"
 
@@ -373,8 +367,6 @@
 
 .method public onServiceConnected(Landroid/content/ComponentName;Landroid/os/IBinder;)V
     .locals 4
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Landroid/os/IBinder;
 
     iget-object v1, p0, Lcom/android/server/content/SyncManager$ActiveSyncContext;->this$0:Lcom/android/server/content/SyncManager;
 
@@ -417,7 +409,6 @@
 
 .method public onServiceDisconnected(Landroid/content/ComponentName;)V
     .locals 4
-    .param p1    # Landroid/content/ComponentName;
 
     iget-object v1, p0, Lcom/android/server/content/SyncManager$ActiveSyncContext;->this$0:Lcom/android/server/content/SyncManager;
 
@@ -480,7 +471,6 @@
 
 .method public toString(Ljava/lang/StringBuilder;)V
     .locals 3
-    .param p1    # Ljava/lang/StringBuilder;
 
     const-string/jumbo v0, "startTime "
 

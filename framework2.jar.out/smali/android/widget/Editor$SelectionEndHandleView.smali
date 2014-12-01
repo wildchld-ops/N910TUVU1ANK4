@@ -21,10 +21,6 @@
 # direct methods
 .method public constructor <init>(Landroid/widget/Editor;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
     .locals 1
-    .param p2    # Landroid/graphics/drawable/Drawable;
-    .param p3    # Landroid/graphics/drawable/Drawable;
-    .param p4    # Landroid/graphics/drawable/Drawable;
-    .param p5    # Landroid/graphics/drawable/Drawable;
 
     iput-object p1, p0, Landroid/widget/Editor$SelectionEndHandleView;->this$0:Landroid/widget/Editor;
 
@@ -210,8 +206,6 @@
 
 .method protected getHotspotX(Landroid/graphics/drawable/Drawable;Z)I
     .locals 1
-    .param p1    # Landroid/graphics/drawable/Drawable;
-    .param p2    # Z
 
     if-eqz p2, :cond_0
 
@@ -246,8 +240,6 @@
 
 .method protected positionAtCursorOffset(IZ)V
     .locals 1
-    .param p1    # I
-    .param p2    # Z
 
     invoke-super {p0, p1, p2}, Landroid/widget/Editor$HandleView;->positionAtCursorOffset(IZ)V
 
@@ -316,7 +308,6 @@
 
 .method public setActionPopupWindow(Landroid/widget/Editor$ActionPopupWindow;)V
     .locals 0
-    .param p1    # Landroid/widget/Editor$ActionPopupWindow;
 
     iput-object p1, p0, Landroid/widget/Editor$HandleView;->mActionPopupWindow:Landroid/widget/Editor$ActionPopupWindow;
 
@@ -325,7 +316,6 @@
 
 .method public setNewActionPopupWindow(Landroid/widget/Editor$NewActionPopupWindow;)V
     .locals 0
-    .param p1    # Landroid/widget/Editor$NewActionPopupWindow;
 
     iput-object p1, p0, Landroid/widget/Editor$HandleView;->mNewActionPopupWindow:Landroid/widget/Editor$NewActionPopupWindow;
 
@@ -442,8 +432,6 @@
 
 .method public updatePosition(FF)V
     .locals 4
-    .param p1    # F
-    .param p2    # F
 
     iget-object v2, p0, Landroid/widget/Editor$SelectionEndHandleView;->this$0:Landroid/widget/Editor;
 
@@ -515,7 +503,6 @@
 
 .method public updateSelection(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Landroid/widget/Editor$SelectionEndHandleView;->this$0:Landroid/widget/Editor;
 

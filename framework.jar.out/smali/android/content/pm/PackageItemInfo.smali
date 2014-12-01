@@ -38,7 +38,6 @@
 
 .method public constructor <init>(Landroid/content/pm/PackageItemInfo;)V
     .locals 1
-    .param p1    # Landroid/content/pm/PackageItemInfo;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -105,7 +104,6 @@
 
 .method protected constructor <init>(Landroid/os/Parcel;)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -162,16 +160,12 @@
 # virtual methods
 .method protected dumpBack(Landroid/util/Printer;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Landroid/util/Printer;
-    .param p2    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method protected dumpFront(Landroid/util/Printer;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Landroid/util/Printer;
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/content/pm/PackageItemInfo;->name:Ljava/lang/String;
 
@@ -315,7 +309,6 @@
 
 .method protected loadDefaultIcon(Landroid/content/pm/PackageManager;)Landroid/graphics/drawable/Drawable;
     .locals 1
-    .param p1    # Landroid/content/pm/PackageManager;
 
     invoke-virtual {p1}, Landroid/content/pm/PackageManager;->getDefaultActivityIcon()Landroid/graphics/drawable/Drawable;
 
@@ -326,7 +319,6 @@
 
 .method protected loadDefaultLogo(Landroid/content/pm/PackageManager;)Landroid/graphics/drawable/Drawable;
     .locals 1
-    .param p1    # Landroid/content/pm/PackageManager;
 
     const/4 v0, 0x0
 
@@ -335,7 +327,6 @@
 
 .method public loadIcon(Landroid/content/pm/PackageManager;)Landroid/graphics/drawable/Drawable;
     .locals 4
-    .param p1    # Landroid/content/pm/PackageManager;
 
     const/4 v0, 0x0
 
@@ -395,7 +386,6 @@
 
 .method public loadLabel(Landroid/content/pm/PackageManager;)Ljava/lang/CharSequence;
     .locals 8
-    .param p1    # Landroid/content/pm/PackageManager;
 
     invoke-static {}, Landroid/sec/enterprise/EnterpriseDeviceManager;->getInstance()Landroid/sec/enterprise/EnterpriseDeviceManager;
 
@@ -505,7 +495,6 @@
 
 .method public loadLogo(Landroid/content/pm/PackageManager;)Landroid/graphics/drawable/Drawable;
     .locals 4
-    .param p1    # Landroid/content/pm/PackageManager;
 
     iget v1, p0, Landroid/content/pm/PackageItemInfo;->logo:I
 
@@ -538,8 +527,6 @@
 
 .method public loadXmlMetaData(Landroid/content/pm/PackageManager;Ljava/lang/String;)Landroid/content/res/XmlResourceParser;
     .locals 3
-    .param p1    # Landroid/content/pm/PackageManager;
-    .param p2    # Ljava/lang/String;
 
     iget-object v1, p0, Landroid/content/pm/PackageItemInfo;->metaData:Landroid/os/Bundle;
 
@@ -574,8 +561,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v0, p0, Landroid/content/pm/PackageItemInfo;->name:Ljava/lang/String;
 

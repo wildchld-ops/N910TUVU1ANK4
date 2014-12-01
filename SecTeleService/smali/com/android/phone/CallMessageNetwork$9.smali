@@ -37,7 +37,7 @@
 
     sget-object v1, Lcom/android/phone/CallMessageConstants$RequestType;->GET_CONTENT_SPEC_CALL:Lcom/android/phone/CallMessageConstants$RequestType;
 
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    invoke-virtual {v1}, Lcom/android/phone/CallMessageConstants$RequestType;->ordinal()I
 
     move-result v1
 
@@ -53,7 +53,7 @@
 
     sget-object v1, Lcom/android/phone/CallMessageConstants$RequestType;->UPLOAD_CONTENT_CALL:Lcom/android/phone/CallMessageConstants$RequestType;
 
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    invoke-virtual {v1}, Lcom/android/phone/CallMessageConstants$RequestType;->ordinal()I
 
     move-result v1
 
@@ -69,7 +69,7 @@
 
     sget-object v1, Lcom/android/phone/CallMessageConstants$RequestType;->SET_REALTIME_SERVICEINFO_CALL:Lcom/android/phone/CallMessageConstants$RequestType;
 
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    invoke-virtual {v1}, Lcom/android/phone/CallMessageConstants$RequestType;->ordinal()I
 
     move-result v1
 
@@ -85,7 +85,7 @@
 
     sget-object v1, Lcom/android/phone/CallMessageConstants$RequestType;->GET_CALLMESSAGE_CALL:Lcom/android/phone/CallMessageConstants$RequestType;
 
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    invoke-virtual {v1}, Lcom/android/phone/CallMessageConstants$RequestType;->ordinal()I
 
     move-result v1
 
@@ -101,7 +101,7 @@
 
     sget-object v1, Lcom/android/phone/CallMessageConstants$RequestType;->GET_CALLMESSAGE_CHG_CALL:Lcom/android/phone/CallMessageConstants$RequestType;
 
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    invoke-virtual {v1}, Lcom/android/phone/CallMessageConstants$RequestType;->ordinal()I
 
     move-result v1
 
@@ -117,7 +117,7 @@
 
     sget-object v1, Lcom/android/phone/CallMessageConstants$RequestType;->DOWNLOAD_CONTENT:Lcom/android/phone/CallMessageConstants$RequestType;
 
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    invoke-virtual {v1}, Lcom/android/phone/CallMessageConstants$RequestType;->ordinal()I
 
     move-result v1
 

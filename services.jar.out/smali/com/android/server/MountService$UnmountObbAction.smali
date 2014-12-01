@@ -23,8 +23,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/MountService;Lcom/android/server/MountService$ObbState;Z)V
     .locals 0
-    .param p2    # Lcom/android/server/MountService$ObbState;
-    .param p3    # Z
 
     iput-object p1, p0, Lcom/android/server/MountService$UnmountObbAction;->this$0:Lcom/android/server/MountService;
 

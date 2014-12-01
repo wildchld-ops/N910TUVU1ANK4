@@ -33,7 +33,6 @@
 # virtual methods
 .method public onAnimationEnd(Landroid/animation/Animator;)V
     .locals 2
-    .param p1    # Landroid/animation/Animator;
 
     iget-object v0, p0, Lcom/android/systemui/screenshot/GlobalScreenshot$10;->this$0:Lcom/android/systemui/screenshot/GlobalScreenshot;
 
@@ -51,7 +50,6 @@
 
 .method public onAnimationStart(Landroid/animation/Animator;)V
     .locals 5
-    .param p1    # Landroid/animation/Animator;
 
     const/high16 v4, 0x3f800000
 

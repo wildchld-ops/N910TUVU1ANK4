@@ -52,7 +52,6 @@
 
 .method public getNativeSize(I)I
     .locals 1
-    .param p1    # I
 
     const/16 v0, 0x10
 
@@ -61,7 +60,6 @@
 
 .method public isNativeTypeSupported(I)Z
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -78,10 +76,6 @@
 
 .method public marshal(Landroid/graphics/Rect;Ljava/nio/ByteBuffer;IZ)I
     .locals 2
-    .param p1    # Landroid/graphics/Rect;
-    .param p2    # Ljava/nio/ByteBuffer;
-    .param p3    # I
-    .param p4    # Z
 
     const/16 v1, 0x10
 
@@ -116,10 +110,6 @@
 
 .method public bridge synthetic marshal(Ljava/lang/Object;Ljava/nio/ByteBuffer;IZ)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/nio/ByteBuffer;
-    .param p3    # I
-    .param p4    # Z
 
     check-cast p1, Landroid/graphics/Rect;
 
@@ -132,8 +122,6 @@
 
 .method public unmarshal(Ljava/nio/ByteBuffer;I)Landroid/graphics/Rect;
     .locals 7
-    .param p1    # Ljava/nio/ByteBuffer;
-    .param p2    # I
 
     invoke-virtual {p1}, Ljava/nio/ByteBuffer;->getInt()I
 
@@ -164,8 +152,6 @@
 
 .method public bridge synthetic unmarshal(Ljava/nio/ByteBuffer;I)Ljava/lang/Object;
     .locals 1
-    .param p1    # Ljava/nio/ByteBuffer;
-    .param p2    # I
 
     invoke-virtual {p0, p1, p2}, Landroid/hardware/camera2/impl/MetadataMarshalRect;->unmarshal(Ljava/nio/ByteBuffer;I)Landroid/graphics/Rect;
 

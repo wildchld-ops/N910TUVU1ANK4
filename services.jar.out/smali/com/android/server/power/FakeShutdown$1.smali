@@ -33,7 +33,6 @@
 # virtual methods
 .method public onUEvent(Landroid/os/UEventObserver$UEvent;)V
     .locals 7
-    .param p1    # Landroid/os/UEventObserver$UEvent;
 
     # getter for: Lcom/android/server/power/FakeShutdown;->sFakeState:I
     invoke-static {}, Lcom/android/server/power/FakeShutdown;->access$000()I

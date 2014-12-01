@@ -69,7 +69,6 @@
 
 .method private constructor <init>(Landroid/os/Parcel;)V
     .locals 3
-    .param p1    # Landroid/os/Parcel;
 
     const/4 v1, 0x0
 
@@ -137,8 +136,6 @@
 
 .method synthetic constructor <init>(Landroid/os/Parcel;Landroid/print/PrintAttributes$1;)V
     .locals 0
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # Landroid/print/PrintAttributes$1;
 
     invoke-direct {p0, p1}, Landroid/print/PrintAttributes;-><init>(Landroid/os/Parcel;)V
 
@@ -147,7 +144,6 @@
 
 .method static colorModeToString(I)Ljava/lang/String;
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -175,7 +171,6 @@
 
 .method static enforceValidColorMode(I)V
     .locals 3
-    .param p0    # I
 
     and-int/lit8 v0, p0, 0x3
 
@@ -239,7 +234,6 @@
 
 .method public copyFrom(Landroid/print/PrintAttributes;)V
     .locals 1
-    .param p1    # Landroid/print/PrintAttributes;
 
     iget-object v0, p1, Landroid/print/PrintAttributes;->mMediaSize:Landroid/print/PrintAttributes$MediaSize;
 
@@ -270,7 +264,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 5
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x1
 
@@ -512,7 +505,6 @@
 
 .method public setColorMode(I)V
     .locals 0
-    .param p1    # I
 
     invoke-static {p1}, Landroid/print/PrintAttributes;->enforceValidColorMode(I)V
 
@@ -523,7 +515,6 @@
 
 .method public setMediaSize(Landroid/print/PrintAttributes$MediaSize;)V
     .locals 0
-    .param p1    # Landroid/print/PrintAttributes$MediaSize;
 
     iput-object p1, p0, Landroid/print/PrintAttributes;->mMediaSize:Landroid/print/PrintAttributes$MediaSize;
 
@@ -532,7 +523,6 @@
 
 .method public setMinMargins(Landroid/print/PrintAttributes$Margins;)V
     .locals 0
-    .param p1    # Landroid/print/PrintAttributes$Margins;
 
     iput-object p1, p0, Landroid/print/PrintAttributes;->mMinMargins:Landroid/print/PrintAttributes$Margins;
 
@@ -541,7 +531,6 @@
 
 .method public setResolution(Landroid/print/PrintAttributes$Resolution;)V
     .locals 0
-    .param p1    # Landroid/print/PrintAttributes$Resolution;
 
     iput-object p1, p0, Landroid/print/PrintAttributes;->mResolution:Landroid/print/PrintAttributes$Resolution;
 
@@ -658,8 +647,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 3
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     const/4 v2, 0x1
 

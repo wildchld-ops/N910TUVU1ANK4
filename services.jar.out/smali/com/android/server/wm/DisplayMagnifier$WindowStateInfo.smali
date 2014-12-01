@@ -74,7 +74,6 @@
 
 .method public static obtain(Lcom/android/server/wm/WindowState;)Lcom/android/server/wm/DisplayMagnifier$WindowStateInfo;
     .locals 3
-    .param p0    # Lcom/android/server/wm/WindowState;
 
     sget-object v1, Lcom/android/server/wm/DisplayMagnifier$WindowStateInfo;->sPool:Landroid/util/Pools$SimplePool;
 

@@ -36,7 +36,6 @@
 # virtual methods
 .method public onInit(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method

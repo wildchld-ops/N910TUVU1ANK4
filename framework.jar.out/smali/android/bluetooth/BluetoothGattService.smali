@@ -48,10 +48,6 @@
 # direct methods
 .method constructor <init>(Landroid/bluetooth/BluetoothDevice;Ljava/util/UUID;II)V
     .locals 1
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
-    .param p2    # Ljava/util/UUID;
-    .param p3    # I
-    .param p4    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -84,8 +80,6 @@
 
 .method public constructor <init>(Ljava/util/UUID;I)V
     .locals 2
-    .param p1    # Ljava/util/UUID;
-    .param p2    # I
 
     const/4 v1, 0x0
 
@@ -122,7 +116,6 @@
 # virtual methods
 .method public addCharacteristic(Landroid/bluetooth/BluetoothGattCharacteristic;)Z
     .locals 1
-    .param p1    # Landroid/bluetooth/BluetoothGattCharacteristic;
 
     iget-object v0, p0, Landroid/bluetooth/BluetoothGattService;->mCharacteristics:Ljava/util/List;
 
@@ -137,7 +130,6 @@
 
 .method addIncludedService(Landroid/bluetooth/BluetoothGattService;)V
     .locals 1
-    .param p1    # Landroid/bluetooth/BluetoothGattService;
 
     iget-object v0, p0, Landroid/bluetooth/BluetoothGattService;->mIncludedServices:Ljava/util/List;
 
@@ -148,7 +140,6 @@
 
 .method public addService(Landroid/bluetooth/BluetoothGattService;)Z
     .locals 1
-    .param p1    # Landroid/bluetooth/BluetoothGattService;
 
     iget-object v0, p0, Landroid/bluetooth/BluetoothGattService;->mIncludedServices:Ljava/util/List;
 
@@ -161,7 +152,6 @@
 
 .method public getCharacteristic(Ljava/util/UUID;)Landroid/bluetooth/BluetoothGattCharacteristic;
     .locals 3
-    .param p1    # Ljava/util/UUID;
 
     iget-object v2, p0, Landroid/bluetooth/BluetoothGattService;->mCharacteristics:Ljava/util/List;
 
@@ -203,8 +193,6 @@
 
 .method getCharacteristic(Ljava/util/UUID;I)Landroid/bluetooth/BluetoothGattCharacteristic;
     .locals 3
-    .param p1    # Ljava/util/UUID;
-    .param p2    # I
 
     iget-object v2, p0, Landroid/bluetooth/BluetoothGattService;->mCharacteristics:Ljava/util/List;
 
@@ -334,7 +322,6 @@
 
 .method public setAdvertisePreferred(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/bluetooth/BluetoothGattService;->mAdvertisePreferred:Z
 
@@ -343,7 +330,6 @@
 
 .method public setHandles(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/bluetooth/BluetoothGattService;->mHandles:I
 
@@ -352,7 +338,6 @@
 
 .method public setInstanceId(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/bluetooth/BluetoothGattService;->mInstanceId:I
 

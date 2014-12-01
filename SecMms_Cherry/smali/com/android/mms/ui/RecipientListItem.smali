@@ -48,8 +48,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -89,8 +87,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;)V
 
@@ -111,8 +107,6 @@
 # virtual methods
 .method public changeFontSize(ILandroid/view/View;)V
     .locals 12
-    .param p1    # I
-    .param p2    # Landroid/view/View;
 
     instance-of v8, p2, Lcom/android/mms/ui/RecipientListItem;
 
@@ -330,8 +324,6 @@
 
 .method public changeFontSize7Step(ILandroid/view/View;)V
     .locals 15
-    .param p1    # I
-    .param p2    # Landroid/view/View;
 
     move-object/from16 v0, p2
 
@@ -738,7 +730,6 @@
 
 .method public setContactInfo(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -755,7 +746,6 @@
 
 .method public setTextColor(Ljava/lang/Boolean;)V
     .locals 3
-    .param p1    # Ljava/lang/Boolean;
 
     iget-object v0, p0, Lcom/android/mms/ui/RecipientListItem;->mFromView:Landroid/widget/TextView;
 

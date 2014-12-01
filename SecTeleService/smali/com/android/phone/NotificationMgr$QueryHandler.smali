@@ -441,7 +441,7 @@
 
     iget-object v1, p0, Lcom/android/phone/NotificationMgr$QueryHandler;->this$0:Lcom/android/phone/NotificationMgr;
 
-    invoke-virtual {v12}, Landroid/app/Notification$Style;->build()Landroid/app/Notification;
+    invoke-virtual {v12}, Landroid/app/Notification$InboxStyle;->build()Landroid/app/Notification;
 
     move-result-object v2
 
@@ -674,7 +674,7 @@
 
     const-string v9, "number"
 
-    invoke-virtual/range {v2 .. v9}, Landroid/content/AsyncQueryHandler;->startQuery(ILjava/lang/Object;Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual/range {v2 .. v9}, Lcom/android/phone/NotificationMgr$QueryHandler;->startQuery(ILjava/lang/Object;Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)V
 
     :cond_3
     move-object/from16 v0, p0
@@ -1328,7 +1328,7 @@
 
     iget-object v2, v0, Lcom/android/phone/NotificationMgr$QueryHandler;->this$0:Lcom/android/phone/NotificationMgr;
 
-    invoke-virtual/range {v27 .. v27}, Landroid/app/Notification$Style;->build()Landroid/app/Notification;
+    invoke-virtual/range {v27 .. v27}, Landroid/app/Notification$InboxStyle;->build()Landroid/app/Notification;
 
     move-result-object v3
 
@@ -1917,7 +1917,7 @@
 
     iget-object v2, v0, Lcom/android/phone/NotificationMgr$QueryHandler;->this$0:Lcom/android/phone/NotificationMgr;
 
-    invoke-virtual/range {v27 .. v27}, Landroid/app/Notification$Style;->build()Landroid/app/Notification;
+    invoke-virtual/range {v27 .. v27}, Landroid/app/Notification$InboxStyle;->build()Landroid/app/Notification;
 
     move-result-object v3
 
@@ -2132,7 +2132,7 @@
 
     const-string v9, "number"
 
-    invoke-virtual/range {v2 .. v9}, Landroid/content/AsyncQueryHandler;->startQuery(ILjava/lang/Object;Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual/range {v2 .. v9}, Lcom/android/phone/NotificationMgr$QueryHandler;->startQuery(ILjava/lang/Object;Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)V
 
     :cond_2a
     move-object/from16 v0, p0

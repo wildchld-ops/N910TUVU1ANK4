@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Lcom/sec/android/app/camera/QuickShot;Lcom/sec/android/app/camera/QuickShot$1;)V
     .locals 0
-    .param p1    # Lcom/sec/android/app/camera/QuickShot;
-    .param p2    # Lcom/sec/android/app/camera/QuickShot$1;
 
     invoke-direct {p0, p1}, Lcom/sec/android/app/camera/QuickShot$ShutterCallback;-><init>(Lcom/sec/android/app/camera/QuickShot;)V
 

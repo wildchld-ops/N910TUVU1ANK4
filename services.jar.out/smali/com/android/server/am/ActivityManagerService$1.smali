@@ -43,8 +43,6 @@
 # virtual methods
 .method protected bridge synthetic allowFilterResult(Landroid/content/IntentFilter;Ljava/util/List;)Z
     .locals 1
-    .param p1    # Landroid/content/IntentFilter;
-    .param p2    # Ljava/util/List;
 
     check-cast p1, Lcom/android/server/am/BroadcastFilter;
 
@@ -57,7 +55,6 @@
 
 .method protected allowFilterResult(Lcom/android/server/am/BroadcastFilter;Ljava/util/List;)Z
     .locals 3
-    .param p1    # Lcom/android/server/am/BroadcastFilter;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -120,8 +117,6 @@
 
 .method protected bridge synthetic isPackageForFilter(Ljava/lang/String;Landroid/content/IntentFilter;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/IntentFilter;
 
     check-cast p2, Lcom/android/server/am/BroadcastFilter;
 
@@ -134,8 +129,6 @@
 
 .method protected isPackageForFilter(Ljava/lang/String;Lcom/android/server/am/BroadcastFilter;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/server/am/BroadcastFilter;
 
     iget-object v0, p2, Lcom/android/server/am/BroadcastFilter;->packageName:Ljava/lang/String;
 
@@ -148,7 +141,6 @@
 
 .method protected bridge synthetic newArray(I)[Landroid/content/IntentFilter;
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/server/am/ActivityManagerService$1;->newArray(I)[Lcom/android/server/am/BroadcastFilter;
 
@@ -159,7 +151,6 @@
 
 .method protected newArray(I)[Lcom/android/server/am/BroadcastFilter;
     .locals 1
-    .param p1    # I
 
     new-array v0, p1, [Lcom/android/server/am/BroadcastFilter;
 
@@ -168,9 +159,6 @@
 
 .method protected newResult(Lcom/android/server/am/BroadcastFilter;II)Lcom/android/server/am/BroadcastFilter;
     .locals 2
-    .param p1    # Lcom/android/server/am/BroadcastFilter;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v1, -0x1
 
@@ -202,9 +190,6 @@
 
 .method protected bridge synthetic newResult(Landroid/content/IntentFilter;II)Ljava/lang/Object;
     .locals 1
-    .param p1    # Landroid/content/IntentFilter;
-    .param p2    # I
-    .param p3    # I
 
     check-cast p1, Lcom/android/server/am/BroadcastFilter;
 

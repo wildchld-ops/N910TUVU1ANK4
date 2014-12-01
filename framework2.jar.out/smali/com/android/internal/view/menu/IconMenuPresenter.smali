@@ -32,7 +32,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     new-instance v0, Landroid/view/ContextThemeWrapper;
 
@@ -63,8 +62,6 @@
 # virtual methods
 .method protected addItemView(Landroid/view/View;I)V
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     move-object v1, p1
 
@@ -91,8 +88,6 @@
 
 .method public bindItemView(Lcom/android/internal/view/menu/MenuItemImpl;Lcom/android/internal/view/menu/MenuView$ItemView;)V
     .locals 3
-    .param p1    # Lcom/android/internal/view/menu/MenuItemImpl;
-    .param p2    # Lcom/android/internal/view/menu/MenuView$ItemView;
 
     move-object v0, p2
 
@@ -143,8 +138,6 @@
 
 .method protected filterLeftoverView(Landroid/view/ViewGroup;I)Z
     .locals 2
-    .param p1    # Landroid/view/ViewGroup;
-    .param p2    # I
 
     invoke-virtual {p1, p2}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
@@ -183,8 +176,6 @@
 
 .method public initForMenu(Landroid/content/Context;Lcom/android/internal/view/menu/MenuBuilder;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/internal/view/menu/MenuBuilder;
 
     invoke-super {p0, p1, p2}, Lcom/android/internal/view/menu/BaseMenuPresenter;->initForMenu(Landroid/content/Context;Lcom/android/internal/view/menu/MenuBuilder;)V
 
@@ -197,7 +188,6 @@
 
 .method public onRestoreInstanceState(Landroid/os/Parcelable;)V
     .locals 0
-    .param p1    # Landroid/os/Parcelable;
 
     check-cast p1, Landroid/os/Bundle;
 
@@ -241,7 +231,6 @@
 
 .method public onSubMenuSelected(Lcom/android/internal/view/menu/SubMenuBuilder;)Z
     .locals 3
-    .param p1    # Lcom/android/internal/view/menu/SubMenuBuilder;
 
     const/4 v1, 0x0
 
@@ -291,7 +280,6 @@
 
 .method public restoreHierarchyState(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     const-string v3, "android:menu:icon"
 
@@ -344,7 +332,6 @@
 
 .method public saveHierarchyState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     new-instance v0, Landroid/util/SparseArray;
 
@@ -370,8 +357,6 @@
 
 .method public shouldIncludeItem(ILcom/android/internal/view/menu/MenuItemImpl;)Z
     .locals 6
-    .param p1    # I
-    .param p2    # Lcom/android/internal/view/menu/MenuItemImpl;
 
     const/4 v2, 0x1
 
@@ -430,7 +415,6 @@
 
 .method public updateMenuView(Z)V
     .locals 5
-    .param p1    # Z
 
     iget-object v1, p0, Lcom/android/internal/view/menu/BaseMenuPresenter;->mMenuView:Lcom/android/internal/view/menu/MenuView;
 

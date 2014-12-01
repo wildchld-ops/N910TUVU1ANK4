@@ -10,8 +10,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Loauth/signpost/AbstractOAuthConsumer;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -22,7 +20,6 @@
 # virtual methods
 .method protected wrap(Ljava/lang/Object;)Loauth/signpost/http/HttpRequest;
     .locals 3
-    .param p1    # Ljava/lang/Object;
 
     instance-of v0, p1, Lorg/apache/http/HttpRequest;
 

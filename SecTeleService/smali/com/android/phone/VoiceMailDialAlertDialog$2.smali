@@ -41,7 +41,7 @@
 
     iget-object v0, p0, Lcom/android/phone/VoiceMailDialAlertDialog$2;->this$0:Lcom/android/phone/VoiceMailDialAlertDialog;
 
-    invoke-virtual {v0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {v0}, Lcom/android/phone/VoiceMailDialAlertDialog;->finish()V
 
     return-void
 .end method

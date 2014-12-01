@@ -101,8 +101,6 @@
 # virtual methods
 .method public onCreateLoader(ILandroid/os/Bundle;)Landroid/content/Loader;
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -137,7 +135,6 @@
 
 .method public onLoadFinished(Landroid/content/Loader;Landroid/net/NetworkStats;)V
     .locals 3
-    .param p2    # Landroid/net/NetworkStats;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -179,8 +176,6 @@
 
 .method public bridge synthetic onLoadFinished(Landroid/content/Loader;Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Landroid/content/Loader;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p2, Landroid/net/NetworkStats;
 

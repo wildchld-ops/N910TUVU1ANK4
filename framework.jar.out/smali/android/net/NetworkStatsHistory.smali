@@ -86,7 +86,6 @@
 
 .method public constructor <init>(J)V
     .locals 2
-    .param p1    # J
 
     const/16 v0, 0xa
 
@@ -99,8 +98,6 @@
 
 .method public constructor <init>(JI)V
     .locals 1
-    .param p1    # J
-    .param p3    # I
 
     const/4 v0, -0x1
 
@@ -111,9 +108,6 @@
 
 .method public constructor <init>(JII)V
     .locals 2
-    .param p1    # J
-    .param p3    # I
-    .param p4    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -190,8 +184,6 @@
 
 .method public constructor <init>(Landroid/net/NetworkStatsHistory;J)V
     .locals 1
-    .param p1    # Landroid/net/NetworkStatsHistory;
-    .param p2    # J
 
     invoke-virtual {p1, p2, p3}, Landroid/net/NetworkStatsHistory;->estimateResizeBuckets(J)I
 
@@ -206,7 +198,6 @@
 
 .method public constructor <init>(Landroid/os/Parcel;)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -275,7 +266,6 @@
 
 .method public constructor <init>(Ljava/io/DataInputStream;)V
     .locals 5
-    .param p1    # Ljava/io/DataInputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -543,9 +533,6 @@
 
 .method private static addLong([JIJ)V
     .locals 2
-    .param p0    # [J
-    .param p1    # I
-    .param p2    # J
 
     if-eqz p0, :cond_0
 
@@ -561,8 +548,6 @@
 
 .method private ensureBuckets(JJ)V
     .locals 7
-    .param p1    # J
-    .param p3    # J
 
     iget-wide v3, p0, Landroid/net/NetworkStatsHistory;->bucketDuration:J
 
@@ -620,9 +605,6 @@
 
 .method private static getLong([JIJ)J
     .locals 0
-    .param p0    # [J
-    .param p1    # I
-    .param p2    # J
 
     if-eqz p0, :cond_0
 
@@ -634,8 +616,6 @@
 
 .method private insertBucket(IJ)V
     .locals 7
-    .param p1    # I
-    .param p2    # J
 
     const-wide/16 v5, 0x0
 
@@ -868,9 +848,6 @@
 
 .method public static randomLong(Ljava/util/Random;JJ)J
     .locals 4
-    .param p0    # Ljava/util/Random;
-    .param p1    # J
-    .param p3    # J
 
     long-to-float v0, p1
 
@@ -893,9 +870,6 @@
 
 .method private static setLong([JIJ)V
     .locals 0
-    .param p0    # [J
-    .param p1    # I
-    .param p2    # J
 
     if-eqz p0, :cond_0
 
@@ -917,8 +891,6 @@
 
 .method public dump(Lcom/android/internal/util/IndentingPrintWriter;Z)V
     .locals 4
-    .param p1    # Lcom/android/internal/util/IndentingPrintWriter;
-    .param p2    # Z
 
     const/4 v1, 0x0
 
@@ -1080,7 +1052,6 @@
 
 .method public estimateResizeBuckets(J)I
     .locals 4
-    .param p1    # J
 
     invoke-virtual {p0}, Landroid/net/NetworkStatsHistory;->size()I
 
@@ -1103,9 +1074,6 @@
 
 .method public generateRandom(JJJ)V
     .locals 19
-    .param p1    # J
-    .param p3    # J
-    .param p5    # J
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -1162,14 +1130,6 @@
 
 .method public generateRandom(JJJJJJJLjava/util/Random;)V
     .locals 20
-    .param p1    # J
-    .param p3    # J
-    .param p5    # J
-    .param p7    # J
-    .param p9    # J
-    .param p11    # J
-    .param p13    # J
-    .param p15    # Ljava/util/Random;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -1385,7 +1345,6 @@
 
 .method public getIndexAfter(J)I
     .locals 4
-    .param p1    # J
 
     const/4 v3, 0x0
 
@@ -1420,7 +1379,6 @@
 
 .method public getIndexBefore(J)I
     .locals 4
-    .param p1    # J
 
     const/4 v3, 0x0
 
@@ -1487,8 +1445,6 @@
 
 .method public getValues(ILandroid/net/NetworkStatsHistory$Entry;)Landroid/net/NetworkStatsHistory$Entry;
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/net/NetworkStatsHistory$Entry;
 
     const-wide/16 v3, -0x1
 
@@ -1567,10 +1523,6 @@
 
 .method public getValues(JJJLandroid/net/NetworkStatsHistory$Entry;)Landroid/net/NetworkStatsHistory$Entry;
     .locals 23
-    .param p1    # J
-    .param p3    # J
-    .param p5    # J
-    .param p7    # Landroid/net/NetworkStatsHistory$Entry;
 
     if-eqz p7, :cond_1
 
@@ -2046,9 +1998,6 @@
 
 .method public getValues(JJLandroid/net/NetworkStatsHistory$Entry;)Landroid/net/NetworkStatsHistory$Entry;
     .locals 8
-    .param p1    # J
-    .param p3    # J
-    .param p5    # Landroid/net/NetworkStatsHistory$Entry;
 
     const-wide v5, 0x7fffffffffffffffL
 
@@ -2069,10 +2018,6 @@
 
 .method public recordData(JJJJ)V
     .locals 15
-    .param p1    # J
-    .param p3    # J
-    .param p5    # J
-    .param p7    # J
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -2113,9 +2058,6 @@
 
 .method public recordData(JJLandroid/net/NetworkStats$Entry;)V
     .locals 40
-    .param p1    # J
-    .param p3    # J
-    .param p5    # Landroid/net/NetworkStats$Entry;
 
     move-object/from16 v0, p5
 
@@ -2387,7 +2329,6 @@
 
 .method public recordEntireHistory(Landroid/net/NetworkStatsHistory;)V
     .locals 6
-    .param p1    # Landroid/net/NetworkStatsHistory;
 
     const-wide/high16 v2, -0x8000000000000000L
 
@@ -2404,9 +2345,6 @@
 
 .method public recordHistory(Landroid/net/NetworkStatsHistory;JJ)V
     .locals 17
-    .param p1    # Landroid/net/NetworkStatsHistory;
-    .param p2    # J
-    .param p4    # J
 
     new-instance v1, Landroid/net/NetworkStats$Entry;
 
@@ -2552,7 +2490,6 @@
 
 .method public removeBucketsBefore(J)V
     .locals 8
-    .param p1    # J
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -2717,8 +2654,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-wide v0, p0, Landroid/net/NetworkStatsHistory;->bucketDuration:J
 
@@ -2775,7 +2710,6 @@
 
 .method public writeToStream(Ljava/io/DataOutputStream;)V
     .locals 2
-    .param p1    # Ljava/io/DataOutputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

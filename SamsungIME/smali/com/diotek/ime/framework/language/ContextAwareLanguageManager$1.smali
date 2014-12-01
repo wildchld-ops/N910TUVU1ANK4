@@ -46,8 +46,6 @@
 # virtual methods
 .method public compare(Lcom/diotek/ime/framework/language/ContextAwareLanguageManager$PreferredLanguage;Lcom/diotek/ime/framework/language/ContextAwareLanguageManager$PreferredLanguage;)I
     .locals 2
-    .param p1    # Lcom/diotek/ime/framework/language/ContextAwareLanguageManager$PreferredLanguage;
-    .param p2    # Lcom/diotek/ime/framework/language/ContextAwareLanguageManager$PreferredLanguage;
 
     iget-byte v0, p1, Lcom/diotek/ime/framework/language/ContextAwareLanguageManager$PreferredLanguage;->preference:B
 
@@ -80,8 +78,6 @@
 
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p1, Lcom/diotek/ime/framework/language/ContextAwareLanguageManager$PreferredLanguage;
 

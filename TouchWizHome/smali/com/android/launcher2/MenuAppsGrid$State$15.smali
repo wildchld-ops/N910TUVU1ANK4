@@ -37,7 +37,6 @@
 
 .method protected getObj(Lcom/android/launcher2/MenuAppsGrid;)Lcom/android/launcher2/MenuAppsGrid$StateObj;
     .locals 1
-    .param p1    # Lcom/android/launcher2/MenuAppsGrid;
 
     const/4 v0, 0x0
 

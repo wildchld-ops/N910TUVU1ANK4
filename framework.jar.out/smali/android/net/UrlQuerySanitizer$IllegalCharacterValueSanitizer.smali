@@ -100,7 +100,6 @@
 
 .method public constructor <init>(I)V
     .locals 0
-    .param p1    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -111,7 +110,6 @@
 
 .method private characterIsLegal(C)Z
     .locals 3
-    .param p1    # C
 
     const/4 v0, 0x1
 
@@ -266,7 +264,6 @@
 
 .method private isWhitespace(C)Z
     .locals 1
-    .param p1    # C
 
     sparse-switch p1, :sswitch_data_0
 
@@ -295,7 +292,6 @@
 
 .method private trimWhitespace(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -364,7 +360,6 @@
 # virtual methods
 .method public sanitize(Ljava/lang/String;)Ljava/lang/String;
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 

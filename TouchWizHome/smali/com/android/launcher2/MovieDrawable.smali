@@ -36,7 +36,6 @@
 # direct methods
 .method public constructor <init>(Landroid/graphics/Movie;)V
     .locals 2
-    .param p1    # Landroid/graphics/Movie;
 
     invoke-virtual {p1}, Landroid/graphics/Movie;->width()I
 
@@ -53,9 +52,6 @@
 
 .method public constructor <init>(Landroid/graphics/Movie;II)V
     .locals 3
-    .param p1    # Landroid/graphics/Movie;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v2, 0x1
 
@@ -116,7 +112,6 @@
 
 .method static synthetic access$000(Lcom/android/launcher2/MovieDrawable;)Landroid/graphics/Movie;
     .locals 1
-    .param p0    # Lcom/android/launcher2/MovieDrawable;
 
     iget-object v0, p0, Lcom/android/launcher2/MovieDrawable;->mMovie:Landroid/graphics/Movie;
 
@@ -125,7 +120,6 @@
 
 .method static synthetic access$100(Lcom/android/launcher2/MovieDrawable;)I
     .locals 1
-    .param p0    # Lcom/android/launcher2/MovieDrawable;
 
     iget v0, p0, Lcom/android/launcher2/MovieDrawable;->mCurrentCycle:I
 
@@ -134,8 +128,6 @@
 
 .method static synthetic access$102(Lcom/android/launcher2/MovieDrawable;I)I
     .locals 0
-    .param p0    # Lcom/android/launcher2/MovieDrawable;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/launcher2/MovieDrawable;->mCurrentCycle:I
 
@@ -144,7 +136,6 @@
 
 .method static synthetic access$108(Lcom/android/launcher2/MovieDrawable;)I
     .locals 2
-    .param p0    # Lcom/android/launcher2/MovieDrawable;
 
     iget v0, p0, Lcom/android/launcher2/MovieDrawable;->mCurrentCycle:I
 
@@ -157,7 +148,6 @@
 
 .method static synthetic access$200(Lcom/android/launcher2/MovieDrawable;)Ljava/lang/Runnable;
     .locals 1
-    .param p0    # Lcom/android/launcher2/MovieDrawable;
 
     iget-object v0, p0, Lcom/android/launcher2/MovieDrawable;->mRunnable:Ljava/lang/Runnable;
 
@@ -166,7 +156,6 @@
 
 .method static synthetic access$300(Lcom/android/launcher2/MovieDrawable;)J
     .locals 2
-    .param p0    # Lcom/android/launcher2/MovieDrawable;
 
     iget-wide v0, p0, Lcom/android/launcher2/MovieDrawable;->mStartTime:J
 
@@ -175,8 +164,6 @@
 
 .method static synthetic access$302(Lcom/android/launcher2/MovieDrawable;J)J
     .locals 0
-    .param p0    # Lcom/android/launcher2/MovieDrawable;
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/android/launcher2/MovieDrawable;->mStartTime:J
 
@@ -185,8 +172,6 @@
 
 .method static synthetic access$402(Lcom/android/launcher2/MovieDrawable;Z)Z
     .locals 0
-    .param p0    # Lcom/android/launcher2/MovieDrawable;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/launcher2/MovieDrawable;->mNewFrame:Z
 
@@ -195,7 +180,6 @@
 
 .method static synthetic access$500(Lcom/android/launcher2/MovieDrawable;)I
     .locals 1
-    .param p0    # Lcom/android/launcher2/MovieDrawable;
 
     iget v0, p0, Lcom/android/launcher2/MovieDrawable;->mRelTime:I
 
@@ -204,8 +188,6 @@
 
 .method static synthetic access$502(Lcom/android/launcher2/MovieDrawable;I)I
     .locals 0
-    .param p0    # Lcom/android/launcher2/MovieDrawable;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/launcher2/MovieDrawable;->mRelTime:I
 
@@ -302,7 +284,6 @@
 # virtual methods
 .method public draw(Landroid/graphics/Canvas;)V
     .locals 5
-    .param p1    # Landroid/graphics/Canvas;
 
     iget v1, p0, Lcom/android/launcher2/MovieDrawable;->mAlpha:I
 
@@ -422,7 +403,6 @@
 
 .method public setAlpha(I)V
     .locals 1
-    .param p1    # I
 
     iput p1, p0, Lcom/android/launcher2/MovieDrawable;->mAlpha:I
 
@@ -435,7 +415,6 @@
 
 .method public setColorFilter(Landroid/graphics/ColorFilter;)V
     .locals 1
-    .param p1    # Landroid/graphics/ColorFilter;
 
     iget-object v0, p0, Lcom/android/launcher2/MovieDrawable;->mPaint:Landroid/graphics/Paint;
 
@@ -446,7 +425,6 @@
 
 .method public setFilterBitmap(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/launcher2/MovieDrawable;->mPaint:Landroid/graphics/Paint;
 

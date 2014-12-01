@@ -74,7 +74,6 @@
 
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -285,7 +284,6 @@
 
 .method static synthetic access$000(Ljava/lang/String;)I
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Landroid/speech/srec/Recognizer;->SR_GrammarLoad(Ljava/lang/String;)I
 
@@ -296,7 +294,6 @@
 
 .method static synthetic access$100(Landroid/speech/srec/Recognizer;)I
     .locals 1
-    .param p0    # Landroid/speech/srec/Recognizer;
 
     iget v0, p0, Landroid/speech/srec/Recognizer;->mVocabulary:I
 
@@ -305,7 +302,6 @@
 
 .method static synthetic access$1000(I)V
     .locals 0
-    .param p0    # I
 
     invoke-static {p0}, Landroid/speech/srec/Recognizer;->SR_GrammarDestroy(I)V
 
@@ -314,8 +310,6 @@
 
 .method static synthetic access$200(II)V
     .locals 0
-    .param p0    # I
-    .param p1    # I
 
     invoke-static {p0, p1}, Landroid/speech/srec/Recognizer;->SR_GrammarSetupVocabulary(II)V
 
@@ -324,7 +318,6 @@
 
 .method static synthetic access$300(I)V
     .locals 0
-    .param p0    # I
 
     invoke-static {p0}, Landroid/speech/srec/Recognizer;->SR_GrammarResetAllSlots(I)V
 
@@ -333,12 +326,6 @@
 
 .method static synthetic access$400(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)V
     .locals 0
-    .param p0    # I
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
-    .param p5    # Ljava/lang/String;
 
     invoke-static/range {p0 .. p5}, Landroid/speech/srec/Recognizer;->SR_GrammarAddWordToSlot(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)V
 
@@ -347,7 +334,6 @@
 
 .method static synthetic access$500(I)V
     .locals 0
-    .param p0    # I
 
     invoke-static {p0}, Landroid/speech/srec/Recognizer;->SR_GrammarCompile(I)V
 
@@ -356,7 +342,6 @@
 
 .method static synthetic access$600(Landroid/speech/srec/Recognizer;)I
     .locals 1
-    .param p0    # Landroid/speech/srec/Recognizer;
 
     iget v0, p0, Landroid/speech/srec/Recognizer;->mRecognizer:I
 
@@ -365,8 +350,6 @@
 
 .method static synthetic access$700(II)V
     .locals 0
-    .param p0    # I
-    .param p1    # I
 
     invoke-static {p0, p1}, Landroid/speech/srec/Recognizer;->SR_GrammarSetupRecognizer(II)V
 
@@ -375,8 +358,6 @@
 
 .method static synthetic access$802(Landroid/speech/srec/Recognizer;Landroid/speech/srec/Recognizer$Grammar;)Landroid/speech/srec/Recognizer$Grammar;
     .locals 0
-    .param p0    # Landroid/speech/srec/Recognizer;
-    .param p1    # Landroid/speech/srec/Recognizer$Grammar;
 
     iput-object p1, p0, Landroid/speech/srec/Recognizer;->mActiveGrammar:Landroid/speech/srec/Recognizer$Grammar;
 
@@ -385,8 +366,6 @@
 
 .method static synthetic access$900(ILjava/lang/String;)V
     .locals 0
-    .param p0    # I
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p0, p1}, Landroid/speech/srec/Recognizer;->SR_GrammarSave(ILjava/lang/String;)V
 
@@ -395,7 +374,6 @@
 
 .method public static eventToString(I)Ljava/lang/String;
     .locals 2
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -505,7 +483,6 @@
 
 .method public static getConfigDir(Ljava/util/Locale;)Ljava/lang/String;
     .locals 5
-    .param p0    # Ljava/util/Locale;
 
     if-nez p0, :cond_0
 
@@ -885,8 +862,6 @@
 
 .method public getResult(ILjava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     iget v0, p0, Landroid/speech/srec/Recognizer;->mRecognizer:I
 
@@ -911,7 +886,6 @@
 
 .method public getResultKeys(I)[Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/speech/srec/Recognizer;->mRecognizer:I
 
@@ -924,10 +898,6 @@
 
 .method public putAudio([BIIZ)I
     .locals 1
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Z
 
     iget v0, p0, Landroid/speech/srec/Recognizer;->mRecognizer:I
 
@@ -940,7 +910,6 @@
 
 .method public putAudio(Ljava/io/InputStream;)V
     .locals 5
-    .param p1    # Ljava/io/InputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1029,7 +998,6 @@
 
 .method public setAcousticState(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget v0, p0, Landroid/speech/srec/Recognizer;->mRecognizer:I
 

@@ -96,7 +96,6 @@
 
 .method public constructor <init>(Landroid/os/PerformanceCollector$PerformanceResultsWriter;)V
     .locals 0
-    .param p1    # Landroid/os/PerformanceCollector$PerformanceResultsWriter;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -819,7 +818,6 @@
 # virtual methods
 .method public addIteration(Ljava/lang/String;)Landroid/os/Bundle;
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Landroid/os/Process;->getElapsedCpuTime()J
 
@@ -888,8 +886,6 @@
 
 .method public addMeasurement(Ljava/lang/String;F)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # F
 
     iget-object v0, p0, Landroid/os/PerformanceCollector;->mPerfWriter:Landroid/os/PerformanceCollector$PerformanceResultsWriter;
 
@@ -905,8 +901,6 @@
 
 .method public addMeasurement(Ljava/lang/String;J)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
 
     iget-object v0, p0, Landroid/os/PerformanceCollector;->mPerfWriter:Landroid/os/PerformanceCollector$PerformanceResultsWriter;
 
@@ -922,8 +916,6 @@
 
 .method public addMeasurement(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/os/PerformanceCollector;->mPerfWriter:Landroid/os/PerformanceCollector$PerformanceResultsWriter;
 
@@ -939,7 +931,6 @@
 
 .method public beginSnapshot(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/os/PerformanceCollector;->mPerfWriter:Landroid/os/PerformanceCollector$PerformanceResultsWriter;
 
@@ -978,7 +969,6 @@
 
 .method public setPerformanceResultsWriter(Landroid/os/PerformanceCollector$PerformanceResultsWriter;)V
     .locals 0
-    .param p1    # Landroid/os/PerformanceCollector$PerformanceResultsWriter;
 
     iput-object p1, p0, Landroid/os/PerformanceCollector;->mPerfWriter:Landroid/os/PerformanceCollector$PerformanceResultsWriter;
 
@@ -987,7 +977,6 @@
 
 .method public startTiming(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/os/PerformanceCollector;->mPerfWriter:Landroid/os/PerformanceCollector$PerformanceResultsWriter;
 
@@ -1031,7 +1020,6 @@
 
 .method public stopTiming(Ljava/lang/String;)Landroid/os/Bundle;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Landroid/os/PerformanceCollector;->addIteration(Ljava/lang/String;)Landroid/os/Bundle;
 

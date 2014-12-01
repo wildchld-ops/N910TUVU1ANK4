@@ -53,7 +53,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -93,7 +92,6 @@
 
 .method public static from(Landroid/content/Context;)Landroid/telephony/MSimTelephonyManager;
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     const-string/jumbo v0, "phone_msim"
 
@@ -132,9 +130,6 @@
 
 .method public static getIntAtIndex(Landroid/content/ContentResolver;Ljava/lang/String;I)I
     .locals 3
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/provider/Settings$SettingNotFoundException;
@@ -187,7 +182,6 @@
 
 .method private getPhoneTypeFromNetworkType(I)I
     .locals 3
-    .param p1    # I
 
     const-string/jumbo v1, "ro.telephony.default_network"
 
@@ -218,7 +212,6 @@
 
 .method private getPhoneTypeFromProperty(I)I
     .locals 3
-    .param p1    # I
 
     const-string v1, "gsm.current.phone-type"
 
@@ -247,9 +240,6 @@
 
 .method public static getTelephonyProperty(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -297,10 +287,6 @@
 
 .method public static putIntAtIndex(Landroid/content/ContentResolver;Ljava/lang/String;II)Z
     .locals 7
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     const-string v0, ""
 
@@ -425,9 +411,6 @@
 
 .method public static setTelephonyProperty(Ljava/lang/String;ILjava/lang/String;)V
     .locals 7
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const-string v3, ""
 
@@ -563,7 +546,6 @@
 # virtual methods
 .method public getAllCellInfo(I)Ljava/util/List;
     .locals 3
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -604,7 +586,6 @@
 
 .method public getCallState(I)I
     .locals 3
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -636,7 +617,6 @@
 
 .method public getCdmaEriIconIndex(I)I
     .locals 3
-    .param p1    # I
 
     const/4 v1, -0x1
 
@@ -668,7 +648,6 @@
 
 .method public getCdmaEriIconMode(I)I
     .locals 3
-    .param p1    # I
 
     const/4 v1, -0x1
 
@@ -700,7 +679,6 @@
 
 .method public getCdmaEriText(I)Ljava/lang/String;
     .locals 3
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -732,7 +710,6 @@
 
 .method public getCompleteVoiceMailNumber(I)Ljava/lang/String;
     .locals 3
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -764,7 +741,6 @@
 
 .method public getCurrentPhoneType(I)I
     .locals 3
-    .param p1    # I
 
     :try_start_0
     invoke-direct {p0}, Landroid/telephony/MSimTelephonyManager;->getITelephonyMSim()Lcom/android/internal/telephony/msim/ITelephonyMSim;
@@ -842,7 +818,6 @@
 
 .method public getDataNetworkType(I)I
     .locals 3
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -970,7 +945,6 @@
 
 .method public getDeviceId(I)Ljava/lang/String;
     .locals 3
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -1002,7 +976,6 @@
 
 .method public getDeviceSoftwareVersion(I)Ljava/lang/String;
     .locals 3
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -1034,7 +1007,6 @@
 
 .method public getLine1AlphaTag(I)Ljava/lang/String;
     .locals 3
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -1066,7 +1038,6 @@
 
 .method public getLine1Number(I)Ljava/lang/String;
     .locals 3
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -1098,7 +1069,6 @@
 
 .method public getLteOnCdmaMode(I)I
     .locals 3
-    .param p1    # I
 
     const/4 v1, -0x1
 
@@ -1146,7 +1116,6 @@
 
 .method public getMsisdn(I)Ljava/lang/String;
     .locals 3
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -1232,7 +1201,6 @@
 
 .method public getNetworkCountryIso(I)Ljava/lang/String;
     .locals 2
-    .param p1    # I
 
     const-string v0, "gsm.operator.iso-country"
 
@@ -1247,7 +1215,6 @@
 
 .method public getNetworkOperator(I)Ljava/lang/String;
     .locals 2
-    .param p1    # I
 
     const-string v0, "gsm.operator.numeric"
 
@@ -1262,7 +1229,6 @@
 
 .method public getNetworkOperatorName(I)Ljava/lang/String;
     .locals 2
-    .param p1    # I
 
     const-string v0, "gsm.operator.alpha"
 
@@ -1277,7 +1243,6 @@
 
 .method public getNetworkType(I)I
     .locals 3
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -1312,7 +1277,6 @@
 
 .method public getNetworkTypeName(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/telephony/MSimTelephonyManager;->getNetworkType(I)I
 
@@ -1369,7 +1333,6 @@
 
 .method public getPhoneType(I)I
     .locals 1
-    .param p1    # I
 
     invoke-static {}, Landroid/telephony/TelephonyManager;->getDefault()Landroid/telephony/TelephonyManager;
 
@@ -1458,7 +1421,6 @@
 
 .method public getSimCountryIso(I)Ljava/lang/String;
     .locals 2
-    .param p1    # I
 
     const-string v0, "gsm.sim.operator.iso-country"
 
@@ -1473,7 +1435,6 @@
 
 .method public getSimOperator(I)Ljava/lang/String;
     .locals 2
-    .param p1    # I
 
     const-string v0, "gsm.sim.operator.numeric"
 
@@ -1488,7 +1449,6 @@
 
 .method public getSimOperatorName(I)Ljava/lang/String;
     .locals 2
-    .param p1    # I
 
     const-string v0, "gsm.sim.operator.alpha"
 
@@ -1503,7 +1463,6 @@
 
 .method public getSimSerialNumber(I)Ljava/lang/String;
     .locals 3
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -1535,7 +1494,6 @@
 
 .method public getSimState(I)I
     .locals 3
-    .param p1    # I
 
     const-string v1, "gsm.sim.state"
 
@@ -1618,7 +1576,6 @@
 
 .method public getSubscriberId(I)Ljava/lang/String;
     .locals 3
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -1650,7 +1607,6 @@
 
 .method public getVoiceMailAlphaTag(I)Ljava/lang/String;
     .locals 3
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -1682,7 +1638,6 @@
 
 .method public getVoiceMailNumber(I)Ljava/lang/String;
     .locals 3
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -1714,7 +1669,6 @@
 
 .method public getVoiceMessageCount(I)I
     .locals 3
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -1746,7 +1700,6 @@
 
 .method public getVoiceNetworkType(I)I
     .locals 3
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -1781,7 +1734,6 @@
 
 .method public hasIccCard(I)Z
     .locals 3
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -1858,7 +1810,6 @@
 
 .method public isNetworkRoaming(I)Z
     .locals 3
-    .param p1    # I
 
     const-string/jumbo v0, "true"
 
@@ -1879,8 +1830,6 @@
 
 .method public listen(Landroid/telephony/PhoneStateListener;I)V
     .locals 7
-    .param p1    # Landroid/telephony/PhoneStateListener;
-    .param p2    # I
 
     sget-object v0, Landroid/telephony/MSimTelephonyManager;->sContext:Landroid/content/Context;
 
@@ -1950,7 +1899,6 @@
 
 .method public setDefaultDataSubscription(I)Z
     .locals 3
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -1982,7 +1930,6 @@
 
 .method public setPreferredDataSubscription(I)Z
     .locals 3
-    .param p1    # I
 
     const/4 v1, 0x0
 

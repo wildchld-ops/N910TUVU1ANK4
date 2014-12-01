@@ -30,7 +30,6 @@
 
 .method public static gluErrorString(I)Ljava/lang/String;
     .locals 1
-    .param p0    # I
 
     sparse-switch p0, :sswitch_data_0
 
@@ -88,16 +87,6 @@
 
 .method public static gluLookAt(Ljavax/microedition/khronos/opengles/GL10;FFFFFFFFF)V
     .locals 11
-    .param p0    # Ljavax/microedition/khronos/opengles/GL10;
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # F
-    .param p7    # F
-    .param p8    # F
-    .param p9    # F
 
     sget-object v0, Landroid/opengl/GLU;->sScratch:[F
 
@@ -146,11 +135,6 @@
 
 .method public static gluOrtho2D(Ljavax/microedition/khronos/opengles/GL10;FFFF)V
     .locals 7
-    .param p0    # Ljavax/microedition/khronos/opengles/GL10;
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
 
     const/high16 v5, -0x40800000
 
@@ -173,11 +157,6 @@
 
 .method public static gluPerspective(Ljavax/microedition/khronos/opengles/GL10;FFFF)V
     .locals 9
-    .param p0    # Ljavax/microedition/khronos/opengles/GL10;
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
 
     float-to-double v5, p1
 
@@ -212,17 +191,6 @@
 
 .method public static gluProject(FFF[FI[FI[II[FI)I
     .locals 11
-    .param p0    # F
-    .param p1    # F
-    .param p2    # F
-    .param p3    # [F
-    .param p4    # I
-    .param p5    # [F
-    .param p6    # I
-    .param p7    # [I
-    .param p8    # I
-    .param p9    # [F
-    .param p10    # I
 
     sget-object v0, Landroid/opengl/GLU;->sScratch:[F
 
@@ -399,17 +367,6 @@
 
 .method public static gluUnProject(FFF[FI[FI[II[FI)I
     .locals 10
-    .param p0    # F
-    .param p1    # F
-    .param p2    # F
-    .param p3    # [F
-    .param p4    # I
-    .param p5    # [F
-    .param p6    # I
-    .param p7    # [I
-    .param p8    # I
-    .param p9    # [F
-    .param p10    # I
 
     sget-object v0, Landroid/opengl/GLU;->sScratch:[F
 

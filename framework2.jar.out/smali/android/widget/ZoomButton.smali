@@ -19,7 +19,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -30,8 +29,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -42,9 +39,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/ImageButton;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
@@ -71,7 +65,6 @@
 
 .method static synthetic access$000(Landroid/widget/ZoomButton;)Z
     .locals 1
-    .param p0    # Landroid/widget/ZoomButton;
 
     iget-boolean v0, p0, Landroid/widget/ZoomButton;->mIsInLongpress:Z
 
@@ -80,7 +73,6 @@
 
 .method static synthetic access$100(Landroid/widget/ZoomButton;)J
     .locals 2
-    .param p0    # Landroid/widget/ZoomButton;
 
     iget-wide v0, p0, Landroid/widget/ZoomButton;->mZoomSpeed:J
 
@@ -89,7 +81,6 @@
 
 .method static synthetic access$200(Landroid/widget/ZoomButton;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Landroid/widget/ZoomButton;
 
     iget-object v0, p0, Landroid/widget/ZoomButton;->mHandler:Landroid/os/Handler;
 
@@ -100,8 +91,6 @@
 # virtual methods
 .method public dispatchUnhandledMove(Landroid/view/View;I)Z
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     invoke-virtual {p0}, Landroid/view/View;->clearFocus()V
 
@@ -114,7 +103,6 @@
 
 .method public onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
     .locals 1
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
 
     invoke-super {p0, p1}, Landroid/widget/ImageButton;->onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
 
@@ -131,7 +119,6 @@
 
 .method public onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
     .locals 1
-    .param p1    # Landroid/view/accessibility/AccessibilityNodeInfo;
 
     invoke-super {p0, p1}, Landroid/widget/ImageButton;->onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
 
@@ -148,8 +135,6 @@
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x0
 
@@ -164,7 +149,6 @@
 
 .method public onLongClick(Landroid/view/View;)Z
     .locals 3
-    .param p1    # Landroid/view/View;
 
     const/4 v2, 0x1
 
@@ -181,7 +165,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 2
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getAction()I
 
@@ -214,7 +197,6 @@
 
 .method public setEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     if-nez p1, :cond_0
 
@@ -230,7 +212,6 @@
 
 .method public setZoomSpeed(J)V
     .locals 0
-    .param p1    # J
 
     iput-wide p1, p0, Landroid/widget/ZoomButton;->mZoomSpeed:J
 

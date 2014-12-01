@@ -40,7 +40,6 @@
 # virtual methods
 .method public createFromParcel(Landroid/os/Parcel;)Landroid/graphics/Region;
     .locals 2
-    .param p1    # Landroid/os/Parcel;
 
     # invokes: Landroid/graphics/Region;->nativeCreateFromParcel(Landroid/os/Parcel;)I
     invoke-static {p1}, Landroid/graphics/Region;->access$000(Landroid/os/Parcel;)I
@@ -65,7 +64,6 @@
 
 .method public bridge synthetic createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     invoke-virtual {p0, p1}, Landroid/graphics/Region$1;->createFromParcel(Landroid/os/Parcel;)Landroid/graphics/Region;
 
@@ -76,7 +74,6 @@
 
 .method public newArray(I)[Landroid/graphics/Region;
     .locals 1
-    .param p1    # I
 
     new-array v0, p1, [Landroid/graphics/Region;
 
@@ -85,7 +82,6 @@
 
 .method public bridge synthetic newArray(I)[Ljava/lang/Object;
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/graphics/Region$1;->newArray(I)[Landroid/graphics/Region;
 

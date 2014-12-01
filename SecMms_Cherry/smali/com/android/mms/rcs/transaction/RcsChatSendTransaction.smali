@@ -37,13 +37,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;ILjava/lang/String;JLjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 9
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # J
-    .param p6    # Ljava/lang/String;
-    .param p7    # Ljava/lang/String;
-    .param p8    # Ljava/lang/String;
 
     invoke-static {p3}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
@@ -140,7 +133,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/rcs/transaction/RcsChatSendTransaction;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/mms/rcs/transaction/RcsChatSendTransaction;
 
     iget-object v0, p0, Lcom/android/mms/rcs/transaction/RcsChatSendTransaction;->mTimeoutHandler:Landroid/os/Handler;
 
@@ -149,7 +141,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/rcs/transaction/RcsChatSendTransaction;)Lcom/android/mms/rcs/transaction/RcsChatSendTransaction$ResponseReceiver;
     .locals 1
-    .param p0    # Lcom/android/mms/rcs/transaction/RcsChatSendTransaction;
 
     iget-object v0, p0, Lcom/android/mms/rcs/transaction/RcsChatSendTransaction;->mResponseReceiver:Lcom/android/mms/rcs/transaction/RcsChatSendTransaction$ResponseReceiver;
 
@@ -158,7 +149,6 @@
 
 .method static synthetic access$300(Lcom/android/mms/rcs/transaction/RcsChatSendTransaction;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Lcom/android/mms/rcs/transaction/RcsChatSendTransaction;
 
     iget-object v0, p0, Lcom/android/mms/rcs/transaction/RcsChatSendTransaction;->mSTransactionSync:Ljava/lang/Object;
 
@@ -169,7 +159,6 @@
 # virtual methods
 .method public extractIdsToAddresses(Ljava/lang/String;)Ljava/lang/StringBuilder;
     .locals 18
-    .param p1    # Ljava/lang/String;
 
     new-instance v8, Ljava/lang/StringBuilder;
 
@@ -315,8 +304,6 @@
 
 .method public formatNames([Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 9
-    .param p1    # [Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     array-length v8, p1
 
@@ -423,8 +410,6 @@
 
 .method public onMessageSent(JJ)V
     .locals 24
-    .param p1    # J
-    .param p3    # J
 
     const-string v2, "Mms/RcsChatSendTransaction"
 
@@ -724,9 +709,6 @@
 
 .method public onMessageSentUpdate(JZLjava/lang/String;)V
     .locals 8
-    .param p1    # J
-    .param p3    # Z
-    .param p4    # Ljava/lang/String;
 
     :try_start_0
     new-instance v3, Landroid/content/ContentValues;
@@ -1451,7 +1433,6 @@
 
 .method public update(Lcom/android/mms/rcs/transaction/ImObservable;)V
     .locals 2
-    .param p1    # Lcom/android/mms/rcs/transaction/ImObservable;
 
     const-string v0, "Mms/RcsChatSendTransaction"
 
@@ -1464,7 +1445,6 @@
 
 .method public updateChatId(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     const/4 v5, 0x0
 

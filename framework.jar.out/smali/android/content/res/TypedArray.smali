@@ -22,10 +22,6 @@
 # direct methods
 .method constructor <init>(Landroid/content/res/Resources;[I[II)V
     .locals 1
-    .param p1    # Landroid/content/res/Resources;
-    .param p2    # [I
-    .param p3    # [I
-    .param p4    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -48,8 +44,6 @@
 
 .method private getValueAt(ILandroid/util/TypedValue;)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/util/TypedValue;
 
     iget-object v0, p0, Landroid/content/res/TypedArray;->mData:[I
 
@@ -120,7 +114,6 @@
 
 .method private loadStringValueAt(I)Ljava/lang/CharSequence;
     .locals 5
-    .param p1    # I
 
     iget-object v1, p0, Landroid/content/res/TypedArray;->mData:[I
 
@@ -200,8 +193,6 @@
 # virtual methods
 .method public getBoolean(IZ)Z
     .locals 6
-    .param p1    # I
-    .param p2    # Z
 
     mul-int/lit8 p1, p1, 0x6
 
@@ -316,8 +307,6 @@
 
 .method public getColor(II)I
     .locals 7
-    .param p1    # I
-    .param p2    # I
 
     mul-int/lit8 p1, p1, 0x6
 
@@ -407,7 +396,6 @@
 
 .method public getColorStateList(I)Landroid/content/res/ColorStateList;
     .locals 3
-    .param p1    # I
 
     iget-object v0, p0, Landroid/content/res/TypedArray;->mValue:Landroid/util/TypedValue;
 
@@ -438,8 +426,6 @@
 
 .method public getDimension(IF)F
     .locals 5
-    .param p1    # I
-    .param p2    # F
 
     mul-int/lit8 p1, p1, 0x6
 
@@ -505,8 +491,6 @@
 
 .method public getDimensionPixelOffset(II)I
     .locals 5
-    .param p1    # I
-    .param p2    # I
 
     mul-int/lit8 p1, p1, 0x6
 
@@ -572,8 +556,6 @@
 
 .method public getDimensionPixelSize(II)I
     .locals 5
-    .param p1    # I
-    .param p2    # I
 
     mul-int/lit8 p1, p1, 0x6
 
@@ -639,7 +621,6 @@
 
 .method public getDrawable(I)Landroid/graphics/drawable/Drawable;
     .locals 3
-    .param p1    # I
 
     iget-object v0, p0, Landroid/content/res/TypedArray;->mValue:Landroid/util/TypedValue;
 
@@ -670,8 +651,6 @@
 
 .method public getFloat(IF)F
     .locals 7
-    .param p1    # I
-    .param p2    # F
 
     mul-int/lit8 p1, p1, 0x6
 
@@ -797,10 +776,6 @@
 
 .method public getFraction(IIIF)F
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # F
 
     mul-int/lit8 p1, p1, 0x6
 
@@ -866,7 +841,6 @@
 
 .method public getIndex(I)I
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Landroid/content/res/TypedArray;->mIndices:[I
 
@@ -891,8 +865,6 @@
 
 .method public getInt(II)I
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     mul-int/lit8 p1, p1, 0x6
 
@@ -995,8 +967,6 @@
 
 .method public getInteger(II)I
     .locals 5
-    .param p1    # I
-    .param p2    # I
 
     mul-int/lit8 p1, p1, 0x6
 
@@ -1058,8 +1028,6 @@
 
 .method public getLayoutDimension(II)I
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     mul-int/lit8 p1, p1, 0x6
 
@@ -1107,8 +1075,6 @@
 
 .method public getLayoutDimension(ILjava/lang/String;)I
     .locals 5
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     mul-int/lit8 p1, p1, 0x6
 
@@ -1194,8 +1160,6 @@
 
 .method public getNonConfigurationString(II)Ljava/lang/String;
     .locals 8
-    .param p1    # I
-    .param p2    # I
 
     const/4 v4, 0x0
 
@@ -1313,7 +1277,6 @@
 
 .method public getNonResourceString(I)Ljava/lang/String;
     .locals 5
-    .param p1    # I
 
     mul-int/lit8 p1, p1, 0x6
 
@@ -1380,8 +1343,6 @@
 
 .method public getResourceId(II)I
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     mul-int/lit8 p1, p1, 0x6
 
@@ -1418,7 +1379,6 @@
 
 .method public getString(I)Ljava/lang/String;
     .locals 8
-    .param p1    # I
 
     const/4 v4, 0x0
 
@@ -1526,7 +1486,6 @@
 
 .method public getText(I)Ljava/lang/CharSequence;
     .locals 7
-    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -1623,7 +1582,6 @@
 
 .method public getTextArray(I)[Ljava/lang/CharSequence;
     .locals 3
-    .param p1    # I
 
     iget-object v0, p0, Landroid/content/res/TypedArray;->mValue:Landroid/util/TypedValue;
 
@@ -1654,8 +1612,6 @@
 
 .method public getValue(ILandroid/util/TypedValue;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/util/TypedValue;
 
     mul-int/lit8 v0, p1, 0x6
 
@@ -1668,7 +1624,6 @@
 
 .method public hasValue(I)Z
     .locals 3
-    .param p1    # I
 
     mul-int/lit8 p1, p1, 0x6
 
@@ -1701,7 +1656,6 @@
 
 .method public peekValue(I)Landroid/util/TypedValue;
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Landroid/content/res/TypedArray;->mValue:Landroid/util/TypedValue;
 

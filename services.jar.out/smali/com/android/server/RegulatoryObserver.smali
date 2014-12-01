@@ -40,7 +40,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Landroid/os/UEventObserver;-><init>()V
 
@@ -75,7 +74,6 @@
 
 .method static synthetic access$100(Lcom/android/server/RegulatoryObserver;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/server/RegulatoryObserver;
 
     iget-object v0, p0, Lcom/android/server/RegulatoryObserver;->mCountryCode:Ljava/lang/String;
 
@@ -84,7 +82,6 @@
 
 .method static synthetic access$200(Lcom/android/server/RegulatoryObserver;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/server/RegulatoryObserver;
 
     iget-object v0, p0, Lcom/android/server/RegulatoryObserver;->mContext:Landroid/content/Context;
 
@@ -361,7 +358,6 @@
 # virtual methods
 .method public onUEvent(Landroid/os/UEventObserver$UEvent;)V
     .locals 4
-    .param p1    # Landroid/os/UEventObserver$UEvent;
 
     sget-object v1, Lcom/android/server/RegulatoryObserver;->TAG:Ljava/lang/String;
 

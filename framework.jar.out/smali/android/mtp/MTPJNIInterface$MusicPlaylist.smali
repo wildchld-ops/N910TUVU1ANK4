@@ -51,7 +51,6 @@
 
 .method public static getContentUri(Ljava/lang/String;)Landroid/net/Uri;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -86,7 +85,6 @@
 
 .method public static getMembersContentUri(Ljava/lang/String;)Landroid/net/Uri;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -121,8 +119,6 @@
 
 .method public static getMembersContentUri(Ljava/lang/String;J)Landroid/net/Uri;
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # J
 
     new-instance v0, Ljava/lang/StringBuilder;
 

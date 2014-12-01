@@ -42,8 +42,6 @@
 
 .method synthetic constructor <init>(Lcom/android/server/sec/ClippedDataPickerDialog;Lcom/android/server/sec/ClippedDataPickerDialog$1;)V
     .locals 0
-    .param p1    # Lcom/android/server/sec/ClippedDataPickerDialog;
-    .param p2    # Lcom/android/server/sec/ClippedDataPickerDialog$1;
 
     invoke-direct {p0, p1}, Lcom/android/server/sec/ClippedDataPickerDialog$ClipboardWorkingFormUiInterfaceImp;-><init>(Lcom/android/server/sec/ClippedDataPickerDialog;)V
 
@@ -73,7 +71,6 @@
 
 .method public setClipboardDataListChange(I)V
     .locals 8
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -286,7 +283,6 @@
 
 .method public setClipboardDataMgr(Landroid/sec/clipboard/data/IClipboardDataList;)V
     .locals 3
-    .param p1    # Landroid/sec/clipboard/data/IClipboardDataList;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -397,7 +393,6 @@
 
 .method public setClipboardDataUiEvent(Landroid/sec/clipboard/IClipboardDataUiEvent;)V
     .locals 2
-    .param p1    # Landroid/sec/clipboard/IClipboardDataUiEvent;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

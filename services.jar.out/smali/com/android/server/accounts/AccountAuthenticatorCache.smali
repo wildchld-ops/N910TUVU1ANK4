@@ -48,7 +48,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
 
     const-string v2, "android.accounts.AccountAuthenticator"
 
@@ -71,8 +70,6 @@
 # virtual methods
 .method public bridge synthetic getServiceInfo(Landroid/accounts/AuthenticatorDescription;I)Landroid/content/pm/RegisteredServicesCache$ServiceInfo;
     .locals 1
-    .param p1    # Landroid/accounts/AuthenticatorDescription;
-    .param p2    # I
 
     invoke-super {p0, p1, p2}, Landroid/content/pm/RegisteredServicesCache;->getServiceInfo(Ljava/lang/Object;I)Landroid/content/pm/RegisteredServicesCache$ServiceInfo;
 
@@ -83,9 +80,6 @@
 
 .method public parseServiceAttributes(Landroid/content/res/Resources;Ljava/lang/String;Landroid/util/AttributeSet;)Landroid/accounts/AuthenticatorDescription;
     .locals 9
-    .param p1    # Landroid/content/res/Resources;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/util/AttributeSet;
 
     sget-object v0, Lcom/android/internal/R$styleable;->AccountAuthenticator:[I
 
@@ -179,9 +173,6 @@
 
 .method public bridge synthetic parseServiceAttributes(Landroid/content/res/Resources;Ljava/lang/String;Landroid/util/AttributeSet;)Ljava/lang/Object;
     .locals 1
-    .param p1    # Landroid/content/res/Resources;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/util/AttributeSet;
 
     invoke-virtual {p0, p1, p2, p3}, Lcom/android/server/accounts/AccountAuthenticatorCache;->parseServiceAttributes(Landroid/content/res/Resources;Ljava/lang/String;Landroid/util/AttributeSet;)Landroid/accounts/AuthenticatorDescription;
 

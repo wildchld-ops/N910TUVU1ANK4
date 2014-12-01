@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -94,7 +93,6 @@
 
 .method public onScreenTurnedOff(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -138,7 +136,6 @@
 
 .method public onScreenTurnedOn(Lcom/android/internal/policy/IKeyguardShowCallback;)V
     .locals 5
-    .param p1    # Lcom/android/internal/policy/IKeyguardShowCallback;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

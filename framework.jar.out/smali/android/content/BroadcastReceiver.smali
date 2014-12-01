@@ -189,7 +189,6 @@
 
 .method public final getResultExtras(Z)Landroid/os/Bundle;
     .locals 2
-    .param p1    # Z
 
     iget-object v1, p0, Landroid/content/BroadcastReceiver;->mPendingResult:Landroid/content/BroadcastReceiver$PendingResult;
 
@@ -288,8 +287,6 @@
 
 .method public peekService(Landroid/content/Context;Landroid/content/Intent;)Landroid/os/IBinder;
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     invoke-static {}, Landroid/app/ActivityManagerNative;->getDefault()Landroid/app/IActivityManager;
 
@@ -325,7 +322,6 @@
 
 .method public final setDebugUnregister(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/content/BroadcastReceiver;->mDebugUnregister:Z
 
@@ -334,14 +330,12 @@
 
 .method public final setOrderedHint(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method public final setPendingResult(Landroid/content/BroadcastReceiver$PendingResult;)V
     .locals 0
-    .param p1    # Landroid/content/BroadcastReceiver$PendingResult;
 
     iput-object p1, p0, Landroid/content/BroadcastReceiver;->mPendingResult:Landroid/content/BroadcastReceiver$PendingResult;
 
@@ -350,9 +344,6 @@
 
 .method public final setResult(ILjava/lang/String;Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/os/Bundle;
 
     invoke-virtual {p0}, Landroid/content/BroadcastReceiver;->checkSynchronousHint()V
 
@@ -373,7 +364,6 @@
 
 .method public final setResultCode(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/content/BroadcastReceiver;->checkSynchronousHint()V
 
@@ -386,7 +376,6 @@
 
 .method public final setResultData(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Landroid/content/BroadcastReceiver;->checkSynchronousHint()V
 
@@ -399,7 +388,6 @@
 
 .method public final setResultExtras(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     invoke-virtual {p0}, Landroid/content/BroadcastReceiver;->checkSynchronousHint()V
 

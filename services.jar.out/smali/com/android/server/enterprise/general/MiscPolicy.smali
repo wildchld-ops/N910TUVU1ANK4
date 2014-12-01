@@ -112,7 +112,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -166,7 +165,6 @@
 
 .method static synthetic access$500(Lcom/android/server/enterprise/general/MiscPolicy;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/general/MiscPolicy;
 
     iget-object v0, p0, Lcom/android/server/enterprise/general/MiscPolicy;->mContext:Landroid/content/Context;
 
@@ -175,10 +173,6 @@
 
 .method private addBookmark(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Ljava/lang/String;Landroid/graphics/Bitmap;)Z
     .locals 9
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Landroid/graphics/Bitmap;
 
     const/4 v6, 0x1
 
@@ -244,10 +238,6 @@
 
 .method private addBookmarkToAndroidBrowser(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;Landroid/graphics/Bitmap;)Z
     .locals 18
-    .param p1    # Landroid/content/ContentResolver;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Landroid/graphics/Bitmap;
 
     const/4 v10, 0x0
 
@@ -594,9 +584,6 @@
 
 .method private addBookmarkToChrome(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 9
-    .param p1    # Landroid/content/ContentResolver;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -708,9 +695,6 @@
 
 .method private addBookmarkToSBrowser(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 9
-    .param p1    # Landroid/content/ContentResolver;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -822,7 +806,6 @@
 
 .method private static final addOrUrlEquals(Ljava/lang/StringBuilder;)V
     .locals 1
-    .param p0    # Ljava/lang/StringBuilder;
 
     const-string v0, " OR url = "
 
@@ -833,7 +816,6 @@
 
 .method private static bitmapToBytes(Landroid/graphics/Bitmap;)[B
     .locals 3
-    .param p0    # Landroid/graphics/Bitmap;
 
     if-nez p0, :cond_0
 
@@ -862,7 +844,6 @@
 
 .method private enforceOwnerOnlyAndSecurityPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/general/MiscPolicy;->getEDM()Landroid/app/enterprise/EnterpriseDeviceManager;
 
@@ -879,7 +860,6 @@
 
 .method private enforceOwnerOnlyAndWriteSettingsPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/general/MiscPolicy;->getEDM()Landroid/app/enterprise/EnterpriseDeviceManager;
 
@@ -896,7 +876,6 @@
 
 .method private enforceSecurityPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/general/MiscPolicy;->getEDM()Landroid/app/enterprise/EnterpriseDeviceManager;
 
@@ -913,7 +892,6 @@
 
 .method private floatToIndex(F)I
     .locals 7
-    .param p1    # F
 
     const/4 v2, -0x1
 
@@ -1048,10 +1026,6 @@
 
 .method private static final getVisitedLike(Landroid/content/ContentResolver;Ljava/lang/String;Landroid/net/Uri;[Ljava/lang/String;)Landroid/database/Cursor;
     .locals 10
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/net/Uri;
-    .param p3    # [Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -1260,7 +1234,6 @@
 
 .method private isAdminLockScreenStringSet(I)I
     .locals 7
-    .param p1    # I
 
     const/4 v6, 0x1
 
@@ -1348,9 +1321,6 @@
 
 .method private isRingToneEntryExist(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Landroid/net/Uri;)J
     .locals 12
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/net/Uri;
 
     const-wide/16 v8, -0x1
 
@@ -1520,7 +1490,6 @@
 
 .method private readFile(Ljava/lang/String;)[B
     .locals 13
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -1768,9 +1737,6 @@
 
 .method private removeBookmarkFromAndroidBrowser(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 19
-    .param p1    # Landroid/content/ContentResolver;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const/4 v9, 0x0
 
@@ -2053,9 +2019,6 @@
 
 .method private removeBookmarkFromChrome(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 11
-    .param p1    # Landroid/content/ContentResolver;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const/4 v5, 0x1
 
@@ -2170,9 +2133,6 @@
 
 .method private removeBookmarkFromSBrowser(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 11
-    .param p1    # Landroid/content/ContentResolver;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const/4 v5, 0x1
 
@@ -2268,9 +2228,6 @@
 
 .method private removeFromBookmarks(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 9
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const/4 v6, 0x1
 
@@ -2491,9 +2448,6 @@
 
 .method private updateDatabase(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Ljava/lang/String;)V
     .locals 15
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     new-instance v7, Ljava/io/File;
 
@@ -2738,7 +2692,6 @@
 # virtual methods
 .method public addClipboardData(Landroid/content/ClipData;)Z
     .locals 1
-    .param p1    # Landroid/content/ClipData;
 
     const/4 v0, 0x1
 
@@ -2747,8 +2700,6 @@
 
 .method public addClipboardTextData(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 13
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const/4 v9, 0x0
 
@@ -2902,10 +2853,6 @@
 
 .method public addWebBookmarkBitmap(Landroid/app/enterprise/ContextInfo;Landroid/net/Uri;Ljava/lang/String;Landroid/graphics/Bitmap;)Z
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Landroid/net/Uri;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Landroid/graphics/Bitmap;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/general/MiscPolicy;->enforceSecurityPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -2937,10 +2884,6 @@
 
 .method public addWebBookmarkByteBuffer(Landroid/app/enterprise/ContextInfo;Landroid/net/Uri;Ljava/lang/String;[B)Z
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Landroid/net/Uri;
-    .param p3    # Ljava/lang/String;
-    .param p4    # [B
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/general/MiscPolicy;->enforceSecurityPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -2972,8 +2915,6 @@
 
 .method public allowNFCStateChange(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     const-string v1, "MiscPolicy"
 
@@ -3008,8 +2949,6 @@
 
 .method public changeLockScreenString(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 15
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct/range {p0 .. p1}, Lcom/android/server/enterprise/general/MiscPolicy;->enforceOwnerOnlyAndSecurityPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -3352,7 +3291,6 @@
 
 .method public clearClipboardData(Landroid/app/enterprise/ContextInfo;)Z
     .locals 10
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/general/MiscPolicy;->enforceOwnerOnlyAndSecurityPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -3432,9 +3370,6 @@
 
 .method public deleteWebBookmark(Landroid/app/enterprise/ContextInfo;Landroid/net/Uri;Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Landroid/net/Uri;
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/general/MiscPolicy;->enforceSecurityPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -3478,7 +3413,6 @@
 
 .method public getClipboardTextData(Landroid/app/enterprise/ContextInfo;)Ljava/lang/String;
     .locals 10
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/general/MiscPolicy;->enforceOwnerOnlyAndSecurityPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -3592,7 +3526,6 @@
 
 .method public getCurrentLockScreenString(Landroid/app/enterprise/ContextInfo;)Ljava/lang/String;
     .locals 9
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-static {}, Landroid/os/Binder;->getCallingUid()I
 
@@ -3713,7 +3646,6 @@
 
 .method public getLastSimChangeInfo(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/SimChangeInfo;
     .locals 6
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/general/MiscPolicy;->enforceOwnerOnlyAndSecurityPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -3911,7 +3843,6 @@
 
 .method public getSystemActiveFont(Landroid/app/enterprise/ContextInfo;)Ljava/lang/String;
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/general/MiscPolicy;->GetSystemFontChanger()Lcom/android/server/enterprise/general/MiscPolicy$SystemFontChanger;
 
@@ -3926,7 +3857,6 @@
 
 .method public getSystemActiveFontSize(Landroid/app/enterprise/ContextInfo;)F
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     new-instance v0, Landroid/content/res/Configuration;
 
@@ -4031,7 +3961,6 @@
 
 .method public getSystemFontSizes(Landroid/app/enterprise/ContextInfo;)[F
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/general/MiscPolicy;->retrieveSystemFontSizes()V
 
@@ -4042,7 +3971,6 @@
 
 .method public getSystemFonts(Landroid/app/enterprise/ContextInfo;)[Ljava/lang/String;
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/general/MiscPolicy;->GetSystemFontChanger()Lcom/android/server/enterprise/general/MiscPolicy$SystemFontChanger;
 
@@ -4182,21 +4110,18 @@
 
 .method public onAdminAdded(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onAdminRemoved(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onPreAdminRemoval(I)V
     .locals 5
-    .param p1    # I
 
     invoke-static {p1}, Landroid/os/UserHandle;->getUserId(I)I
 
@@ -4259,9 +4184,6 @@
 
 .method public setRingerBytes(Landroid/app/enterprise/ContextInfo;[BLjava/lang/String;)V
     .locals 9
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # [B
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/general/MiscPolicy;->enforceOwnerOnlyAndWriteSettingsPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -4519,9 +4441,6 @@
 
 .method public setRingerFilePath(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/general/MiscPolicy;->enforceOwnerOnlyAndSecurityPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -4577,9 +4496,6 @@
 
 .method public setSystemActiveFont(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/general/MiscPolicy;->enforceOwnerOnlyAndSecurityPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -4606,8 +4522,6 @@
 
 .method public setSystemActiveFontSize(Landroid/app/enterprise/ContextInfo;F)Z
     .locals 12
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # F
 
     const/4 v9, 0x0
 
@@ -4775,8 +4689,6 @@
 
 .method public startNFC(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 8
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/general/MiscPolicy;->enforceOwnerOnlyAndSecurityPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 

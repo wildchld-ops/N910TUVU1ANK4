@@ -46,8 +46,6 @@
 # virtual methods
 .method public compare(Lcom/android/settings/applications/RunningState$MergedItem;Lcom/android/settings/applications/RunningState$MergedItem;)I
     .locals 12
-    .param p1    # Lcom/android/settings/applications/RunningState$MergedItem;
-    .param p2    # Lcom/android/settings/applications/RunningState$MergedItem;
 
     const/16 v11, 0x190
 
@@ -295,8 +293,6 @@
 
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p1, Lcom/android/settings/applications/RunningState$MergedItem;
 

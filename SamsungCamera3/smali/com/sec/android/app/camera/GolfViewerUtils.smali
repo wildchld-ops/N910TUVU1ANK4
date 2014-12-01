@@ -18,9 +18,6 @@
 
 .method public static OpenGolfFile(Ljava/lang/String;Ljava/lang/String;[I)I
     .locals 28
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # [I
 
     const/4 v15, 0x0
 
@@ -371,10 +368,6 @@
 
 .method public static setImageBuffer(Ljava/lang/String;II[B)V
     .locals 9
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [B
 
     const-string v2, ".jpg"
 

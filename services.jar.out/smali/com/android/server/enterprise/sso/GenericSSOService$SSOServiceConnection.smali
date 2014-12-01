@@ -26,7 +26,6 @@
 # direct methods
 .method public constructor <init>(I)V
     .locals 0
-    .param p1    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,7 +36,6 @@
 
 .method static synthetic access$700(Lcom/android/server/enterprise/sso/GenericSSOService$SSOServiceConnection;)I
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/sso/GenericSSOService$SSOServiceConnection;
 
     iget v0, p0, Lcom/android/server/enterprise/sso/GenericSSOService$SSOServiceConnection;->mUserId:I
 
@@ -56,8 +54,6 @@
 
 .method public onServiceConnected(Landroid/content/ComponentName;Landroid/os/IBinder;)V
     .locals 2
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Landroid/os/IBinder;
 
     const-string v0, "GenericSSOService"
 
@@ -117,7 +113,6 @@
 
 .method public onServiceDisconnected(Landroid/content/ComponentName;)V
     .locals 2
-    .param p1    # Landroid/content/ComponentName;
 
     sget-boolean v0, Landroid/app/enterprise/sso/GenericSSOConstants;->DEBUG:Z
 

@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -53,8 +52,6 @@
 
 .method public onImageInserted(ILandroid/net/Uri;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/net/Uri;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -119,8 +116,6 @@
 
 .method public onResultReceived(ILandroid/os/Bundle;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -185,9 +180,6 @@
 
 .method public onTextDeleted(III)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -235,10 +227,6 @@
 
 .method public onTextInserted(IILjava/lang/CharSequence;I)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/CharSequence;
-    .param p4    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -307,7 +295,6 @@
 
 .method public onUpdateDialog(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

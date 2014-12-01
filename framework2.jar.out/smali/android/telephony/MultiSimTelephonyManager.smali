@@ -88,7 +88,6 @@
 
 .method private constructor <init>(I)V
     .locals 0
-    .param p1    # I
 
     invoke-direct {p0}, Landroid/telephony/TelephonyManager;-><init>()V
 
@@ -99,7 +98,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-static {}, Lcom/android/internal/telephony/MultiSimManager;->getDefaultSimSlot()I
 
@@ -112,8 +110,6 @@
 
 .method public constructor <init>(Landroid/content/Context;I)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     invoke-direct {p0, p1}, Landroid/telephony/TelephonyManager;-><init>(Landroid/content/Context;)V
 
@@ -134,7 +130,6 @@
 
 .method public static getDefault(I)Landroid/telephony/MultiSimTelephonyManager;
     .locals 2
-    .param p0    # I
 
     sget-object v0, Landroid/telephony/MultiSimTelephonyManager;->sInstance:[Landroid/telephony/MultiSimTelephonyManager;
 
@@ -377,8 +372,6 @@
 
 .method public listen(Landroid/telephony/PhoneStateListener;I)V
     .locals 0
-    .param p1    # Landroid/telephony/PhoneStateListener;
-    .param p2    # I
 
     invoke-super {p0, p1, p2}, Landroid/telephony/TelephonyManager;->listen(Landroid/telephony/PhoneStateListener;I)V
 

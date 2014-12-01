@@ -124,7 +124,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/rcs/RcsNewFeatureActivity;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/mms/rcs/RcsNewFeatureActivity;
 
     iget-object v0, p0, Lcom/android/mms/rcs/RcsNewFeatureActivity;->mContext:Landroid/content/Context;
 
@@ -133,7 +132,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/rcs/RcsNewFeatureActivity;)Lcom/android/mms/rcs/settings/RcsSettingUtils$DuplicatedClient;
     .locals 1
-    .param p0    # Lcom/android/mms/rcs/RcsNewFeatureActivity;
 
     iget-object v0, p0, Lcom/android/mms/rcs/RcsNewFeatureActivity;->mClient:Lcom/android/mms/rcs/settings/RcsSettingUtils$DuplicatedClient;
 
@@ -142,8 +140,6 @@
 
 .method static synthetic access$102(Lcom/android/mms/rcs/RcsNewFeatureActivity;Lcom/android/mms/rcs/settings/RcsSettingUtils$DuplicatedClient;)Lcom/android/mms/rcs/settings/RcsSettingUtils$DuplicatedClient;
     .locals 0
-    .param p0    # Lcom/android/mms/rcs/RcsNewFeatureActivity;
-    .param p1    # Lcom/android/mms/rcs/settings/RcsSettingUtils$DuplicatedClient;
 
     iput-object p1, p0, Lcom/android/mms/rcs/RcsNewFeatureActivity;->mClient:Lcom/android/mms/rcs/settings/RcsSettingUtils$DuplicatedClient;
 
@@ -152,7 +148,6 @@
 
 .method public static findDuplicatedClient(Landroid/content/Context;)Lcom/android/mms/rcs/settings/RcsSettingUtils$DuplicatedClient;
     .locals 11
-    .param p0    # Landroid/content/Context;
 
     const/16 v10, 0x80
 
@@ -305,8 +300,6 @@
 
 .method private static readSharedPreferences(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/Boolean;
     .locals 12
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const/4 v7, 0x0
 
@@ -686,9 +679,6 @@
 # virtual methods
 .method public createLaunchDialog(ZZLcom/android/mms/rcs/settings/RcsSettingUtils$DuplicatedClient;)V
     .locals 15
-    .param p1    # Z
-    .param p2    # Z
-    .param p3    # Lcom/android/mms/rcs/settings/RcsSettingUtils$DuplicatedClient;
 
     const-string v11, "RcsNewFeatireActivity"
 
@@ -927,7 +917,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 12
-    .param p1    # Landroid/os/Bundle;
 
     const-wide/16 v10, 0x0
 

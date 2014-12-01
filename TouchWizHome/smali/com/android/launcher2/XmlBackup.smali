@@ -53,10 +53,6 @@
 
 .method private RestoreLogs(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 19
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     new-instance v6, Ljava/io/File;
 
@@ -358,7 +354,6 @@
 
 .method public static StreamCrypt(Ljava/lang/String;)Ljavax/crypto/spec/SecretKeySpec;
     .locals 6
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;
@@ -412,10 +407,6 @@
 
 .method private XmlGenerator(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 26
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     new-instance v8, Ljava/io/File;
 
@@ -1079,7 +1070,6 @@
 
 .method private close(Ljava/io/InputStream;)V
     .locals 1
-    .param p1    # Ljava/io/InputStream;
 
     if-eqz p1, :cond_0
 
@@ -1102,7 +1092,6 @@
 
 .method private close(Ljava/io/OutputStream;)V
     .locals 1
-    .param p1    # Ljava/io/OutputStream;
 
     if-eqz p1, :cond_0
 
@@ -1125,9 +1114,6 @@
 
 .method private createBackupShortcutIcon(Ljava/lang/String;Ljava/lang/String;Landroid/graphics/Bitmap;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/graphics/Bitmap;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/FileNotFoundException;,
@@ -1182,8 +1168,6 @@
 
 .method public static decryptStream(Ljava/io/InputStream;Ljavax/crypto/spec/SecretKeySpec;)Ljava/io/InputStream;
     .locals 4
-    .param p0    # Ljava/io/InputStream;
-    .param p1    # Ljavax/crypto/spec/SecretKeySpec;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;
@@ -1221,7 +1205,6 @@
 
 .method private deleteFile(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     new-instance v1, Ljava/io/File;
@@ -1252,8 +1235,6 @@
 
 .method public static encryptStream(Ljava/io/OutputStream;Ljavax/crypto/spec/SecretKeySpec;)Ljava/io/OutputStream;
     .locals 4
-    .param p0    # Ljava/io/OutputStream;
-    .param p1    # Ljavax/crypto/spec/SecretKeySpec;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;
@@ -1297,10 +1278,6 @@
 
 .method private makeFolderTag(Landroid/content/Context;Lorg/xmlpull/v1/XmlSerializer;ILjava/lang/String;)V
     .locals 25
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lorg/xmlpull/v1/XmlSerializer;
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;,
@@ -1648,10 +1625,6 @@
 
 .method private makeHomeTag(Landroid/content/Context;Lorg/xmlpull/v1/XmlSerializer;Ljava/lang/String;Lcom/android/launcher2/XmlBackup$Result;)V
     .locals 34
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lorg/xmlpull/v1/XmlSerializer;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Lcom/android/launcher2/XmlBackup$Result;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;,
@@ -2359,9 +2332,6 @@
 
 .method private makeHotseatTag(Landroid/content/Context;Lorg/xmlpull/v1/XmlSerializer;Ljava/lang/String;)V
     .locals 26
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lorg/xmlpull/v1/XmlSerializer;
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;,
@@ -2758,8 +2728,6 @@
 
 .method public static saveBitmap(Ljava/lang/String;Landroid/graphics/Bitmap;)V
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # Landroid/graphics/Bitmap;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/FileNotFoundException;,
@@ -2810,9 +2778,6 @@
 # virtual methods
 .method protected getIconFromCursor(Landroid/database/Cursor;ILandroid/content/Context;)Landroid/graphics/Bitmap;
     .locals 4
-    .param p1    # Landroid/database/Cursor;
-    .param p2    # I
-    .param p3    # Landroid/content/Context;
 
     invoke-interface {p1, p2}, Landroid/database/Cursor;->getBlob(I)[B
 
@@ -2846,8 +2811,6 @@
 
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 

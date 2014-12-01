@@ -60,7 +60,6 @@
 
 .method public processMessage(Landroid/os/Message;)Z
     .locals 4
-    .param p1    # Landroid/os/Message;
 
     const-string v1, "Tethering"
 

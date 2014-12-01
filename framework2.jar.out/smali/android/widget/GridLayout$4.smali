@@ -27,17 +27,12 @@
 # virtual methods
 .method public getAlignmentValue(Landroid/view/View;II)I
     .locals 0
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # I
 
     return p2
 .end method
 
 .method getGravityOffset(Landroid/view/View;I)I
     .locals 0
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     return p2
 .end method

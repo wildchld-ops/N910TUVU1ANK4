@@ -51,7 +51,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -72,8 +71,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -125,14 +122,12 @@
 
 .method public onChangedDisplayPolicy(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onChangedReversedView(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
@@ -142,28 +137,24 @@
 
 .method public onOrientationChanged(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onPanelVisibilityChanged(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public setData(Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     return-void
 .end method
 
 .method public setListener(Lcom/samsung/android/cocktailbar/AbsCocktailLoadablePanel$CocktailLoadablePanelListener;)V
     .locals 0
-    .param p1    # Lcom/samsung/android/cocktailbar/AbsCocktailLoadablePanel$CocktailLoadablePanelListener;
 
     iput-object p1, p0, Lcom/samsung/android/cocktailbar/AbsCocktailLoadablePanel;->mListener:Lcom/samsung/android/cocktailbar/AbsCocktailLoadablePanel$CocktailLoadablePanelListener;
 
@@ -172,7 +163,6 @@
 
 .method public setOnCocktailClickHander(Lcom/samsung/android/cocktailbar/AbsCocktailLoadablePanel$OnCocktailClickHandler;)V
     .locals 0
-    .param p1    # Lcom/samsung/android/cocktailbar/AbsCocktailLoadablePanel$OnCocktailClickHandler;
 
     iput-object p1, p0, Lcom/samsung/android/cocktailbar/AbsCocktailLoadablePanel;->mOnCocktailClickHandler:Lcom/samsung/android/cocktailbar/AbsCocktailLoadablePanel$OnCocktailClickHandler;
 

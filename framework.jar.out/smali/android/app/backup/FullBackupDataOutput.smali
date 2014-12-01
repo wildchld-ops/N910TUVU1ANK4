@@ -10,7 +10,6 @@
 # direct methods
 .method public constructor <init>(Landroid/os/ParcelFileDescriptor;)V
     .locals 2
-    .param p1    # Landroid/os/ParcelFileDescriptor;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

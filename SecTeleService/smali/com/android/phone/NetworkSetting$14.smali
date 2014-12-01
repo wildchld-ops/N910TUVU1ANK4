@@ -39,7 +39,7 @@
 
     iget-object v0, p0, Lcom/android/phone/NetworkSetting$14;->this$0:Lcom/android/phone/NetworkSetting;
 
-    invoke-virtual {v0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {v0}, Lcom/android/phone/NetworkSetting;->finish()V
 
     return-void
 .end method

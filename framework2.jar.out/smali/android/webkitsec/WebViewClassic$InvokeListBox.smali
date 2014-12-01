@@ -40,9 +40,6 @@
 # direct methods
 .method private constructor <init>(Landroid/webkitsec/WebViewClassic;[Ljava/lang/String;[II)V
     .locals 5
-    .param p2    # [Ljava/lang/String;
-    .param p3    # [I
-    .param p4    # I
 
     iput-object p1, p0, Landroid/webkitsec/WebViewClassic$InvokeListBox;->this$0:Landroid/webkitsec/WebViewClassic;
 
@@ -107,11 +104,6 @@
 
 .method synthetic constructor <init>(Landroid/webkitsec/WebViewClassic;[Ljava/lang/String;[IILandroid/webkitsec/WebViewClassic$1;)V
     .locals 0
-    .param p1    # Landroid/webkitsec/WebViewClassic;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # [I
-    .param p4    # I
-    .param p5    # Landroid/webkitsec/WebViewClassic$1;
 
     invoke-direct {p0, p1, p2, p3, p4}, Landroid/webkitsec/WebViewClassic$InvokeListBox;-><init>(Landroid/webkitsec/WebViewClassic;[Ljava/lang/String;[II)V
 
@@ -120,9 +112,6 @@
 
 .method private constructor <init>(Landroid/webkitsec/WebViewClassic;[Ljava/lang/String;[I[I)V
     .locals 5
-    .param p2    # [Ljava/lang/String;
-    .param p3    # [I
-    .param p4    # [I
 
     iput-object p1, p0, Landroid/webkitsec/WebViewClassic$InvokeListBox;->this$0:Landroid/webkitsec/WebViewClassic;
 
@@ -187,11 +176,6 @@
 
 .method synthetic constructor <init>(Landroid/webkitsec/WebViewClassic;[Ljava/lang/String;[I[ILandroid/webkitsec/WebViewClassic$1;)V
     .locals 0
-    .param p1    # Landroid/webkitsec/WebViewClassic;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # [I
-    .param p4    # [I
-    .param p5    # Landroid/webkitsec/WebViewClassic$1;
 
     invoke-direct {p0, p1, p2, p3, p4}, Landroid/webkitsec/WebViewClassic$InvokeListBox;-><init>(Landroid/webkitsec/WebViewClassic;[Ljava/lang/String;[I[I)V
 
@@ -200,7 +184,6 @@
 
 .method static synthetic access$12700(Landroid/webkitsec/WebViewClassic$InvokeListBox;)Z
     .locals 1
-    .param p0    # Landroid/webkitsec/WebViewClassic$InvokeListBox;
 
     iget-boolean v0, p0, Landroid/webkitsec/WebViewClassic$InvokeListBox;->mMultiple:Z
 
@@ -209,7 +192,6 @@
 
 .method static synthetic access$12800(Landroid/webkitsec/WebViewClassic$InvokeListBox;)[Landroid/webkitsec/WebViewClassic$InvokeListBox$Container;
     .locals 1
-    .param p0    # Landroid/webkitsec/WebViewClassic$InvokeListBox;
 
     iget-object v0, p0, Landroid/webkitsec/WebViewClassic$InvokeListBox;->mContainers:[Landroid/webkitsec/WebViewClassic$InvokeListBox$Container;
 

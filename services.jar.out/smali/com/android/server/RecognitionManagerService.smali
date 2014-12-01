@@ -30,7 +30,6 @@
 # direct methods
 .method constructor <init>(Landroid/content/Context;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
 
     const/4 v4, 0x0
 
@@ -85,8 +84,6 @@
 
 .method static synthetic access$000(Lcom/android/server/RecognitionManagerService;I)V
     .locals 0
-    .param p0    # Lcom/android/server/RecognitionManagerService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/RecognitionManagerService;->initForUser(I)V
 
@@ -95,7 +92,6 @@
 
 .method private initForUser(I)V
     .locals 4
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/server/RecognitionManagerService;->getCurRecognizer(I)Landroid/content/ComponentName;
 
@@ -143,8 +139,6 @@
 # virtual methods
 .method findAvailRecognizer(Ljava/lang/String;I)Landroid/content/ComponentName;
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v7, 0x0
 
@@ -269,7 +263,6 @@
 
 .method getCurRecognizer(I)Landroid/content/ComponentName;
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/server/RecognitionManagerService;->mContext:Landroid/content/Context;
 
@@ -304,8 +297,6 @@
 
 .method setCurRecognizer(Landroid/content/ComponentName;I)V
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/server/RecognitionManagerService;->mContext:Landroid/content/Context;
 

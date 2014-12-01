@@ -78,7 +78,6 @@
 
 .method protected constructor <init>(Landroid/os/Parcel;)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
 
     const/4 v0, 0x1
 
@@ -115,7 +114,6 @@
 
 .method protected constructor <init>(Landroid/telephony/CellInfo;)V
     .locals 2
-    .param p1    # Landroid/telephony/CellInfo;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -136,7 +134,6 @@
 
 .method private static timeStampTypeToString(I)Ljava/lang/String;
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -188,7 +185,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 9
-    .param p1    # Ljava/lang/Object;
 
     const/4 v3, 0x1
 
@@ -318,7 +314,6 @@
 
 .method public setRegisterd(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/telephony/CellInfo;->mRegistered:Z
 
@@ -327,7 +322,6 @@
 
 .method public setTimeStamp(J)V
     .locals 0
-    .param p1    # J
 
     iput-wide p1, p0, Landroid/telephony/CellInfo;->mTimeStamp:J
 
@@ -336,7 +330,6 @@
 
 .method public setTimeStampType(I)V
     .locals 1
-    .param p1    # I
 
     if-ltz p1, :cond_0
 
@@ -427,9 +420,6 @@
 
 .method protected writeToParcel(Landroid/os/Parcel;II)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
-    .param p3    # I
 
     invoke-virtual {p1, p3}, Landroid/os/Parcel;->writeInt(I)V
 

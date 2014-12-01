@@ -12,9 +12,6 @@
 # direct methods
 .method public constructor <init>(III)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v0, 0x2
 
@@ -85,7 +82,6 @@
 
 .method public setDuration(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/immersion/IVTRepeatElement;->duration:I
 
@@ -94,7 +90,6 @@
 
 .method public setRepeatCount(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/immersion/IVTRepeatElement;->repeatCount:I
 

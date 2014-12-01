@@ -587,7 +587,6 @@
 
 .method private controlWaitingCall(I)V
     .locals 7
-    .param p1    # I
 
     const/4 v3, 0x1
 
@@ -808,7 +807,6 @@
 # virtual methods
 .method public onDisabled(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     invoke-super {p0, p1}, Lcom/samsung/android/sdk/look/cocktailbar/SlookCocktailProvider;->onDisabled(Landroid/content/Context;)V
 
@@ -817,9 +815,6 @@
 
 .method public onDroped(Landroid/content/Context;Lcom/samsung/android/sdk/look/cocktailbar/SlookCocktailManager;Landroid/view/DragEvent;)V
     .locals 18
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/samsung/android/sdk/look/cocktailbar/SlookCocktailManager;
-    .param p3    # Landroid/view/DragEvent;
 
     invoke-virtual/range {p3 .. p3}, Landroid/view/DragEvent;->getAction()I
 
@@ -1412,7 +1407,6 @@
 
 .method public onEnabled(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     invoke-super {p0, p1}, Lcom/samsung/android/sdk/look/cocktailbar/SlookCocktailProvider;->onEnabled(Landroid/content/Context;)V
 
@@ -1427,8 +1421,6 @@
 
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 23
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     const-string v20, "SecondScreenForCallProvider"
 
@@ -2453,9 +2445,6 @@
 
 .method public onUpdate(Landroid/content/Context;Lcom/samsung/android/sdk/look/cocktailbar/SlookCocktailManager;[I)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/samsung/android/sdk/look/cocktailbar/SlookCocktailManager;
-    .param p3    # [I
 
     invoke-super {p0, p1, p2, p3}, Lcom/samsung/android/sdk/look/cocktailbar/SlookCocktailProvider;->onUpdate(Landroid/content/Context;Lcom/samsung/android/sdk/look/cocktailbar/SlookCocktailManager;[I)V
 

@@ -83,9 +83,6 @@
 
 .method synthetic constructor <init>([Ljava/lang/Object;[Ljava/lang/Object;Landroid/widget/GridLayout$1;)V
     .locals 0
-    .param p1    # [Ljava/lang/Object;
-    .param p2    # [Ljava/lang/Object;
-    .param p3    # Landroid/widget/GridLayout$1;
 
     invoke-direct {p0, p1, p2}, Landroid/widget/GridLayout$PackedMap;-><init>([Ljava/lang/Object;[Ljava/lang/Object;)V
 
@@ -94,7 +91,6 @@
 
 .method private static compact([Ljava/lang/Object;[I)[Ljava/lang/Object;
     .locals 6
-    .param p1    # [I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<K:",
@@ -212,7 +208,6 @@
 # virtual methods
 .method public getValue(I)Ljava/lang/Object;
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)TV;"

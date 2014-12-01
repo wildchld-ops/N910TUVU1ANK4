@@ -33,7 +33,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 5
-    .param p1    # Landroid/os/Message;
 
     iget-object v3, p0, Lcom/android/settings/ResetSettings$2;->this$0:Lcom/android/settings/ResetSettings;
 

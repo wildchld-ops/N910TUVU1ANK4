@@ -93,7 +93,7 @@
     .locals 1
     .param p0    # Lcom/android/phone/TimeConsumingPreferenceActivity;
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/TimeConsumingPreferenceActivity;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -133,7 +133,7 @@
     :try_start_0
     iput-boolean v0, p0, Lcom/android/phone/TimeConsumingPreferenceActivity;->mIsShowDialog:Z
 
-    invoke-virtual {p0, p1}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->dismissDialog(I)V
+    invoke-virtual {p0, p1}, Lcom/android/phone/TimeConsumingPreferenceActivity;->dismissDialog(I)V
     :try_end_0
     .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -224,7 +224,7 @@
 
     iput-boolean v0, p0, Lcom/android/phone/TimeConsumingPreferenceActivity;->mIsForeground:Z
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/TimeConsumingPreferenceActivity;->finish()V
 
     return-void
 .end method
@@ -296,7 +296,7 @@
     :cond_1
     new-instance v1, Landroid/app/ProgressDialog;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/TimeConsumingPreferenceActivity;->getActivity()Landroid/app/Activity;
 
     move-result-object v5
 
@@ -311,11 +311,11 @@
     goto :goto_0
 
     :sswitch_0
-    invoke-virtual {p0, v8}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->setCancelable(Z)V
+    invoke-virtual {p0, v8}, Lcom/android/phone/TimeConsumingPreferenceActivity;->setCancelable(Z)V
 
-    invoke-virtual {p0, p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->setOnCancelListener(Landroid/content/DialogInterface$OnCancelListener;)V
+    invoke-virtual {p0, p0}, Lcom/android/phone/TimeConsumingPreferenceActivity;->setOnCancelListener(Landroid/content/DialogInterface$OnCancelListener;)V
 
-    invoke-virtual {v1}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
+    invoke-virtual {v1}, Landroid/app/ProgressDialog;->getWindow()Landroid/view/Window;
 
     move-result-object v4
 
@@ -323,7 +323,7 @@
 
     const v4, 0x7f09007d
 
-    invoke-virtual {p0, v4}, Landroid/app/Fragment;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v4}, Lcom/android/phone/TimeConsumingPreferenceActivity;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v4
 
@@ -332,11 +332,11 @@
     goto :goto_0
 
     :sswitch_1
-    invoke-virtual {p0, v10}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->setCancelable(Z)V
+    invoke-virtual {p0, v10}, Lcom/android/phone/TimeConsumingPreferenceActivity;->setCancelable(Z)V
 
     const v4, 0x7f09007e
 
-    invoke-virtual {p0, v4}, Landroid/app/Fragment;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v4}, Lcom/android/phone/TimeConsumingPreferenceActivity;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v4
 
@@ -364,7 +364,7 @@
     :cond_3
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/TimeConsumingPreferenceActivity;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
 
@@ -381,19 +381,19 @@
     invoke-virtual {v0, v9, v4}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     :goto_1
-    invoke-virtual {p0, v3}, Landroid/app/Fragment;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v3}, Lcom/android/phone/TimeConsumingPreferenceActivity;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v4
 
     invoke-virtual {v0, v4}, Landroid/app/AlertDialog$Builder;->setTitle(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0, v2}, Landroid/app/Fragment;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v2}, Lcom/android/phone/TimeConsumingPreferenceActivity;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v4
 
     invoke-virtual {v0, v4}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0, v8}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->setCancelable(Z)V
+    invoke-virtual {p0, v8}, Lcom/android/phone/TimeConsumingPreferenceActivity;->setCancelable(Z)V
 
     invoke-virtual {v0}, Landroid/app/AlertDialog$Builder;->create()Landroid/app/AlertDialog;
 
@@ -691,13 +691,13 @@
 
     const/4 v0, 0x0
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/TimeConsumingPreferenceActivity;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
     if-eqz v1, :cond_3
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/TimeConsumingPreferenceActivity;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 

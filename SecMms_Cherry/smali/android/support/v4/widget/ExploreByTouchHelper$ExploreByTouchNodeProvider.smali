@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Landroid/support/v4/widget/ExploreByTouchHelper;Landroid/support/v4/widget/ExploreByTouchHelper$1;)V
     .locals 0
-    .param p1    # Landroid/support/v4/widget/ExploreByTouchHelper;
-    .param p2    # Landroid/support/v4/widget/ExploreByTouchHelper$1;
 
     invoke-direct {p0, p1}, Landroid/support/v4/widget/ExploreByTouchHelper$ExploreByTouchNodeProvider;-><init>(Landroid/support/v4/widget/ExploreByTouchHelper;)V
 
@@ -43,7 +41,6 @@
 # virtual methods
 .method public createAccessibilityNodeInfo(I)Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompat;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/support/v4/widget/ExploreByTouchHelper$ExploreByTouchNodeProvider;->this$0:Landroid/support/v4/widget/ExploreByTouchHelper;
 
@@ -57,9 +54,6 @@
 
 .method public performAction(IILandroid/os/Bundle;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/os/Bundle;
 
     iget-object v0, p0, Landroid/support/v4/widget/ExploreByTouchHelper$ExploreByTouchNodeProvider;->this$0:Landroid/support/v4/widget/ExploreByTouchHelper;
 

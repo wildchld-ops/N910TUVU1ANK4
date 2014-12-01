@@ -33,10 +33,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/mms/animation/MsgDeleteActionAnimation$ChildItemViewMgr;IIZLandroid/view/View;)V
     .locals 3
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Z
-    .param p5    # Landroid/view/View;
 
     const/4 v2, 0x0
 
@@ -67,10 +63,6 @@
 
 .method private userSetChildView(IIZLandroid/view/View;)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # Landroid/view/View;
 
     iput-boolean p3, p0, Lcom/android/mms/animation/MsgDeleteActionAnimation$ChildItemViewMgr$ChildrenView;->mIsNewChildView:Z
 
@@ -120,8 +112,6 @@
 
 .method public userCalculateOffsetTransfer(IF)V
     .locals 4
-    .param p1    # I
-    .param p2    # F
 
     iget-boolean v2, p0, Lcom/android/mms/animation/MsgDeleteActionAnimation$ChildItemViewMgr$ChildrenView;->mIsTransfer:Z
 
@@ -186,8 +176,6 @@
 
 .method public userOffsetChildTopAndBottom(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/mms/animation/MsgDeleteActionAnimation$ChildItemViewMgr$ChildrenView;->mView:Landroid/view/View;
 
@@ -198,10 +186,6 @@
 
 .method public userSetTransfer(FFFF)V
     .locals 1
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
 
     const/4 v0, 0x1
 

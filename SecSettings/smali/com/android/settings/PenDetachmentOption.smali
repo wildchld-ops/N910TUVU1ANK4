@@ -286,7 +286,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/PenDetachmentOption;)Lcom/android/settings/PenDetachmentOption$PanelDragShadowBuilder;
     .locals 1
-    .param p0    # Lcom/android/settings/PenDetachmentOption;
 
     iget-object v0, p0, Lcom/android/settings/PenDetachmentOption;->mShadowBuilder:Lcom/android/settings/PenDetachmentOption$PanelDragShadowBuilder;
 
@@ -295,8 +294,6 @@
 
 .method static synthetic access$002(Lcom/android/settings/PenDetachmentOption;Lcom/android/settings/PenDetachmentOption$PanelDragShadowBuilder;)Lcom/android/settings/PenDetachmentOption$PanelDragShadowBuilder;
     .locals 0
-    .param p0    # Lcom/android/settings/PenDetachmentOption;
-    .param p1    # Lcom/android/settings/PenDetachmentOption$PanelDragShadowBuilder;
 
     iput-object p1, p0, Lcom/android/settings/PenDetachmentOption;->mShadowBuilder:Lcom/android/settings/PenDetachmentOption$PanelDragShadowBuilder;
 
@@ -305,7 +302,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/PenDetachmentOption;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/settings/PenDetachmentOption;
 
     iget-object v0, p0, Lcom/android/settings/PenDetachmentOption;->mLongClickedView:Landroid/view/View;
 
@@ -314,7 +310,6 @@
 
 .method static synthetic access$1000(Lcom/android/settings/PenDetachmentOption;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/PenDetachmentOption;
 
     iget-boolean v0, p0, Lcom/android/settings/PenDetachmentOption;->mFromQuickPanel:Z
 
@@ -323,8 +318,6 @@
 
 .method static synthetic access$102(Lcom/android/settings/PenDetachmentOption;Landroid/view/View;)Landroid/view/View;
     .locals 0
-    .param p0    # Lcom/android/settings/PenDetachmentOption;
-    .param p1    # Landroid/view/View;
 
     iput-object p1, p0, Lcom/android/settings/PenDetachmentOption;->mLongClickedView:Landroid/view/View;
 
@@ -333,7 +326,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/PenDetachmentOption;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/settings/PenDetachmentOption;
 
     iget-object v0, p0, Lcom/android/settings/PenDetachmentOption;->mCurrentFooterView:Landroid/view/View;
 
@@ -342,7 +334,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/PenDetachmentOption;)Landroid/view/GestureDetector;
     .locals 1
-    .param p0    # Lcom/android/settings/PenDetachmentOption;
 
     iget-object v0, p0, Lcom/android/settings/PenDetachmentOption;->mGestureDetector:Landroid/view/GestureDetector;
 
@@ -351,7 +342,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/PenDetachmentOption;)I
     .locals 1
-    .param p0    # Lcom/android/settings/PenDetachmentOption;
 
     iget v0, p0, Lcom/android/settings/PenDetachmentOption;->idxGap:I
 
@@ -360,7 +350,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/PenDetachmentOption;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/settings/PenDetachmentOption;
 
     iget-object v0, p0, Lcom/android/settings/PenDetachmentOption;->mActivePenPanelList:Ljava/util/ArrayList;
 
@@ -369,7 +358,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/PenDetachmentOption;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/settings/PenDetachmentOption;
 
     iget-object v0, p0, Lcom/android/settings/PenDetachmentOption;->mCandidatePenPanelList:Ljava/util/ArrayList;
 
@@ -378,8 +366,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/PenDetachmentOption;Landroid/view/View;)V
     .locals 0
-    .param p0    # Lcom/android/settings/PenDetachmentOption;
-    .param p1    # Landroid/view/View;
 
     invoke-direct {p0, p1}, Lcom/android/settings/PenDetachmentOption;->changePenSettingsByPanel(Landroid/view/View;)V
 
@@ -388,7 +374,6 @@
 
 .method static synthetic access$800(Lcom/android/settings/PenDetachmentOption;)V
     .locals 0
-    .param p0    # Lcom/android/settings/PenDetachmentOption;
 
     invoke-direct {p0}, Lcom/android/settings/PenDetachmentOption;->saveAppslist()V
 
@@ -397,7 +382,6 @@
 
 .method static synthetic access$900(Lcom/android/settings/PenDetachmentOption;)V
     .locals 0
-    .param p0    # Lcom/android/settings/PenDetachmentOption;
 
     invoke-direct {p0}, Lcom/android/settings/PenDetachmentOption;->updatePenIconSettingsList()V
 
@@ -406,7 +390,6 @@
 
 .method private changePenSettingsByPanel(Landroid/view/View;)V
     .locals 9
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Lcom/android/settings/PenDetachmentOption;->mLongClickedView:Landroid/view/View;
 
@@ -563,9 +546,6 @@
 
 .method private displayPenIconSettings(IIILjava/util/ArrayList;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/util/ArrayList;)V
     .locals 24
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(III",
@@ -1379,7 +1359,6 @@
 
 .method private isEmptyPanel(Ljava/util/ArrayList;I)Z
     .locals 2
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1900,10 +1879,6 @@
 
 .method private swapPanels(Ljava/util/ArrayList;ILjava/util/ArrayList;III)V
     .locals 4
-    .param p2    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2434,7 +2409,6 @@
 # virtual methods
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     invoke-virtual {p0}, Landroid/app/Fragment;->getResources()Landroid/content/res/Resources;
 
@@ -2515,7 +2489,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 3
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -2573,7 +2546,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v4, 0x0
 
@@ -2658,7 +2630,6 @@
 
 .method public onDown(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v0, 0x0
 
@@ -2667,10 +2638,6 @@
 
 .method public onFling(Landroid/view/MotionEvent;Landroid/view/MotionEvent;FF)Z
     .locals 5
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # Landroid/view/MotionEvent;
-    .param p3    # F
-    .param p4    # F
 
     const/4 v0, 0x0
 
@@ -2811,7 +2778,6 @@
 
 .method public onLongPress(Landroid/view/MotionEvent;)V
     .locals 0
-    .param p1    # Landroid/view/MotionEvent;
 
     return-void
 .end method
@@ -2826,8 +2792,6 @@
 
 .method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
     .locals 6
-    .param p1    # Landroid/preference/Preference;
-    .param p2    # Ljava/lang/Object;
 
     invoke-virtual {p1}, Landroid/preference/Preference;->getKey()Ljava/lang/String;
 
@@ -2924,8 +2888,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 1
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     invoke-super {p0, p1, p2}, Landroid/preference/PreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
 
@@ -2944,10 +2906,6 @@
 
 .method public onScroll(Landroid/view/MotionEvent;Landroid/view/MotionEvent;FF)Z
     .locals 3
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # Landroid/view/MotionEvent;
-    .param p3    # F
-    .param p4    # F
 
     const/4 v0, 0x0
 
@@ -3019,14 +2977,12 @@
 
 .method public onShowPress(Landroid/view/MotionEvent;)V
     .locals 0
-    .param p1    # Landroid/view/MotionEvent;
 
     return-void
 .end method
 
 .method public onSingleTapUp(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v0, 0x0
 

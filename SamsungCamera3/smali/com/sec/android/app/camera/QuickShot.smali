@@ -76,7 +76,6 @@
 
 .method static synthetic access$100(Lcom/sec/android/app/camera/QuickShot;)J
     .locals 2
-    .param p0    # Lcom/sec/android/app/camera/QuickShot;
 
     invoke-direct {p0}, Lcom/sec/android/app/camera/QuickShot;->getDateTaken()J
 
@@ -87,7 +86,6 @@
 
 .method static synthetic access$200(Lcom/sec/android/app/camera/QuickShot;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/QuickShot;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/QuickShot;->mContentResolver:Landroid/content/ContentResolver;
 
@@ -96,7 +94,6 @@
 
 .method static synthetic access$300(Lcom/sec/android/app/camera/QuickShot;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/QuickShot;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/QuickShot;->mActivityContext:Landroid/content/Context;
 
@@ -105,7 +102,6 @@
 
 .method static synthetic access$400(Lcom/sec/android/app/camera/QuickShot;)Lcom/sec/android/seccamera/SecCamera;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/QuickShot;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/QuickShot;->mCameraDevice:Lcom/sec/android/seccamera/SecCamera;
 
@@ -114,7 +110,6 @@
 
 .method static synthetic access$500(Lcom/sec/android/app/camera/QuickShot;)Z
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/QuickShot;
 
     invoke-direct {p0}, Lcom/sec/android/app/camera/QuickShot;->isSecureKeyguardLocked()Z
 
@@ -157,8 +152,6 @@
 
 .method private getSizeRatio(II)I
     .locals 5
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -219,7 +212,6 @@
 
 .method private openCamera(I)Z
     .locals 13
-    .param p1    # I
 
     const/4 v9, 0x1
 
@@ -422,7 +414,6 @@
 
 .method private sleep(I)V
     .locals 3
-    .param p1    # I
 
     int-to-long v1, p1
 
@@ -487,7 +478,6 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 

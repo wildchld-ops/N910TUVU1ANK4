@@ -70,7 +70,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v4}, Landroid/view/View;->isShown()Z
+    invoke-virtual {v4}, Landroid/widget/LinearLayout;->isShown()Z
 
     move-result v4
 
@@ -106,7 +106,7 @@
 
     aget-object v1, v4, v3
 
-    invoke-virtual {v1}, Landroid/view/View;->getAnimation()Landroid/view/animation/Animation;
+    invoke-virtual {v1}, Landroid/widget/ImageView;->getAnimation()Landroid/view/animation/Animation;
 
     move-result-object v0
 
@@ -125,7 +125,7 @@
 
     const-wide/16 v4, 0x96
 
-    invoke-virtual {p0, v9, v4, v5}, Landroid/os/Handler;->sendEmptyMessageDelayed(IJ)Z
+    invoke-virtual {p0, v9, v4, v5}, Lcom/android/phone/IncomingCallWidget$Handle$3;->sendEmptyMessageDelayed(IJ)Z
 
     :cond_2
     :goto_3
@@ -136,7 +136,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v1, v4}, Landroid/view/View;->startAnimation(Landroid/view/animation/Animation;)V
+    invoke-virtual {v1, v4}, Landroid/widget/ImageView;->startAnimation(Landroid/view/animation/Animation;)V
 
     goto :goto_0
 
@@ -150,7 +150,7 @@
     :cond_4
     const-wide/16 v4, 0x384
 
-    invoke-virtual {p0, v9, v4, v5}, Landroid/os/Handler;->sendEmptyMessageDelayed(IJ)Z
+    invoke-virtual {p0, v9, v4, v5}, Lcom/android/phone/IncomingCallWidget$Handle$3;->sendEmptyMessageDelayed(IJ)Z
 
     goto :goto_3
 

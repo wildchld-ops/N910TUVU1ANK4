@@ -20,9 +20,6 @@
 # direct methods
 .method public constructor <init>(Landroid/appwidget/AppWidgetProviderInfo;Ljava/lang/String;Landroid/os/Parcelable;)V
     .locals 2
-    .param p1    # Landroid/appwidget/AppWidgetProviderInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/os/Parcelable;
 
     sget-object v1, Lcom/android/launcher2/BaseItem$Type;->HOME_WIDGET:Lcom/android/launcher2/BaseItem$Type;
 

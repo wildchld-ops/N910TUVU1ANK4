@@ -6,10 +6,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/net/Uri;Landroid/database/Cursor;Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/net/Uri;
-    .param p3    # Landroid/database/Cursor;
-    .param p4    # Ljava/lang/Object;
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/incallui/callerinfocard/item/PersonalItem;-><init>(Landroid/content/Context;Landroid/net/Uri;Landroid/database/Cursor;Ljava/lang/Object;)V
 
@@ -32,8 +28,6 @@
 
 .method public getRemainedDays(Landroid/content/Context;I)Ljava/lang/String;
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -68,9 +62,6 @@
 
 .method public getUpdateTimeString(Landroid/content/Context;Ljava/lang/String;Z)Ljava/lang/String;
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     const/4 v1, 0x1
 

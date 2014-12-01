@@ -22,9 +22,6 @@
 
 .method public static createDialog(Landroid/content/Context;ILandroid/view/View$OnClickListener;)Landroid/app/Dialog;
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # Landroid/view/View$OnClickListener;
 
     const v4, 0x103012e
 
@@ -74,9 +71,6 @@
 
 .method public static showDialogFragment(Landroid/app/Activity;ILandroid/view/View$OnClickListener;)Landroid/app/DialogFragment;
     .locals 6
-    .param p0    # Landroid/app/Activity;
-    .param p1    # I
-    .param p2    # Landroid/view/View$OnClickListener;
 
     const/4 v0, 0x0
 

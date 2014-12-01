@@ -28,8 +28,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/mms/ui/MmsRichContainer;II)V
     .locals 0
-    .param p2    # I
-    .param p3    # I
 
     iput-object p1, p0, Lcom/android/mms/ui/MmsRichContainer$MsgMediaContextMenuClickListner;->this$0:Lcom/android/mms/ui/MmsRichContainer;
 
@@ -46,7 +44,6 @@
 # virtual methods
 .method public onMenuItemClick(Landroid/view/MenuItem;)Z
     .locals 9
-    .param p1    # Landroid/view/MenuItem;
 
     const/16 v8, 0xc
 

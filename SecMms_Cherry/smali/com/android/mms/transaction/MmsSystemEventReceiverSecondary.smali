@@ -148,7 +148,6 @@
 
 .method static synthetic access$102(Landroid/net/ConnectivityManager;)Landroid/net/ConnectivityManager;
     .locals 0
-    .param p0    # Landroid/net/ConnectivityManager;
 
     sput-object p0, Lcom/android/mms/transaction/MmsSystemEventReceiverSecondary;->mConnMgr:Landroid/net/ConnectivityManager;
 
@@ -165,7 +164,6 @@
 
 .method static synthetic access$202(I)I
     .locals 0
-    .param p0    # I
 
     sput p0, Lcom/android/mms/transaction/MmsSystemEventReceiverSecondary;->waitCount:I
 
@@ -186,8 +184,6 @@
 
 .method static synthetic access$300(Landroid/content/Context;I)V
     .locals 0
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     invoke-static {p0, p1}, Lcom/android/mms/transaction/MmsSystemEventReceiverSecondary;->wakeUpService(Landroid/content/Context;I)V
 
@@ -196,7 +192,6 @@
 
 .method static synthetic access$400(Landroid/content/Context;)V
     .locals 0
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Lcom/android/mms/transaction/MmsSystemEventReceiverSecondary;->wakeUpService(Landroid/content/Context;)V
 
@@ -205,7 +200,6 @@
 
 .method static synthetic access$502(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/mms/transaction/MmsSystemEventReceiverSecondary;->bExecutingEvent:Z
 
@@ -214,8 +208,6 @@
 
 .method public static beginStartingService(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/content/Intent;
 
     sget-object v1, Lcom/android/mms/transaction/MmsSystemEventReceiverSecondary;->mStartingServiceSync:Ljava/lang/Object;
 
@@ -240,7 +232,6 @@
 
 .method public static cancelAlarmManager(Landroid/content/Context;)V
     .locals 5
-    .param p0    # Landroid/content/Context;
 
     const-string v3, "alarm"
 
@@ -277,8 +268,6 @@
 
 .method public static finishStartingService(Landroid/app/Service;I)V
     .locals 2
-    .param p0    # Landroid/app/Service;
-    .param p1    # I
 
     sget-object v1, Lcom/android/mms/transaction/MmsSystemEventReceiverSecondary;->mStartingServiceSync:Ljava/lang/Object;
 
@@ -303,7 +292,6 @@
 
 .method public static hasRetrieveTransaction(Landroid/content/Context;)Z
     .locals 7
-    .param p0    # Landroid/content/Context;
 
     const/4 v6, 0x1
 
@@ -407,7 +395,6 @@
 
 .method public static isAutoRetrieve(I)Z
     .locals 5
-    .param p0    # I
 
     invoke-static {}, Lcom/android/mms/util/DownloadManager;->getInstance()Lcom/android/mms/util/DownloadManager;
 
@@ -476,7 +463,6 @@
 
 .method public static registerForConnectionStateChanges(Landroid/content/Context;)V
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     const/4 v0, 0x1
 
@@ -487,8 +473,6 @@
 
 .method public static registerForConnectionStateChanges(Landroid/content/Context;I)V
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     const/4 v5, 0x1
 
@@ -649,7 +633,6 @@
 
 .method public static registerForTetherStateChanges(Landroid/content/Context;)V
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Lcom/android/mms/transaction/MmsSystemEventReceiverSecondary;->unRegisterForTetherStateChanges(Landroid/content/Context;)V
 
@@ -687,7 +670,6 @@
 
 .method private restorePduNotificationStatus(Landroid/content/Context;)V
     .locals 7
-    .param p1    # Landroid/content/Context;
 
     new-instance v3, Landroid/content/ContentValues;
 
@@ -748,8 +730,6 @@
 
 .method public static setAlarmManager(Landroid/content/Context;I)V
     .locals 12
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -831,7 +811,6 @@
 
 .method public static unRegisterForConnectionStateChanges(Landroid/content/Context;)V
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     const/4 v0, 0x1
 
@@ -842,8 +821,6 @@
 
 .method public static unRegisterForConnectionStateChanges(Landroid/content/Context;I)V
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     const/4 v4, 0x1
 
@@ -980,7 +957,6 @@
 
 .method public static unRegisterForTetherStateChanges(Landroid/content/Context;)V
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     const-string v0, "Mms:transactionSecondary"
 
@@ -1011,7 +987,6 @@
 
 .method private static wakeUpService(Landroid/content/Context;)V
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     const/4 v0, 0x1
 
@@ -1024,8 +999,6 @@
 
 .method private static wakeUpService(Landroid/content/Context;I)V
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -1036,9 +1009,6 @@
 
 .method private static wakeUpService(Landroid/content/Context;IZ)V
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # Z
 
     const-string v1, "Mms:transactionSecondary"
 
@@ -1078,7 +1048,6 @@
 # virtual methods
 .method public isTestSimCard(Landroid/content/Context;)Z
     .locals 14
-    .param p1    # Landroid/content/Context;
 
     const/4 v10, 0x0
 
@@ -1224,8 +1193,6 @@
 
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 33
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     const-string v29, "Mms:transactionSecondary"
 
@@ -2184,9 +2151,6 @@
 
 .method public startIMEITracker(Landroid/content/Context;Landroid/content/Intent;I)V
     .locals 12
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
-    .param p3    # I
 
     const/4 v8, 0x1
 
@@ -2424,8 +2388,6 @@
 
 .method public startSelloutSms(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     invoke-static {p1}, Lcom/android/mms/ui/MessageUtils;->getSsmsInfo(Landroid/content/Context;)Landroid/content/ContentValues;
 

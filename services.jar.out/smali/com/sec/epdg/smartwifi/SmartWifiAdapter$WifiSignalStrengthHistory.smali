@@ -79,8 +79,6 @@
 
 .method synthetic constructor <init>(Lcom/sec/epdg/smartwifi/SmartWifiAdapter;Lcom/sec/epdg/smartwifi/SmartWifiAdapter$1;)V
     .locals 0
-    .param p1    # Lcom/sec/epdg/smartwifi/SmartWifiAdapter;
-    .param p2    # Lcom/sec/epdg/smartwifi/SmartWifiAdapter$1;
 
     invoke-direct {p0, p1}, Lcom/sec/epdg/smartwifi/SmartWifiAdapter$WifiSignalStrengthHistory;-><init>(Lcom/sec/epdg/smartwifi/SmartWifiAdapter;)V
 
@@ -248,7 +246,6 @@
 # virtual methods
 .method public declared-synchronized addInitialReading(Ljava/lang/Integer;)V
     .locals 4
-    .param p1    # Ljava/lang/Integer;
 
     monitor-enter p0
 
@@ -287,7 +284,6 @@
 
 .method public declared-synchronized addReading(Ljava/lang/Integer;)V
     .locals 7
-    .param p1    # Ljava/lang/Integer;
 
     monitor-enter p0
 
@@ -817,7 +813,6 @@
 
 .method public declared-synchronized setWeakWifiLevel(I)V
     .locals 1
-    .param p1    # I
 
     monitor-enter p0
 

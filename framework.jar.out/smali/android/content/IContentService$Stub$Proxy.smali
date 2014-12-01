@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,10 +36,6 @@
 # virtual methods
 .method public addPeriodicSync(Landroid/accounts/Account;Ljava/lang/String;Landroid/os/Bundle;J)V
     .locals 5
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/os/Bundle;
-    .param p4    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -136,8 +131,6 @@
 
 .method public addStatusChangeListener(ILandroid/content/ISyncStatusObserver;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/content/ISyncStatusObserver;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -211,8 +204,6 @@
 
 .method public cancelSync(Landroid/accounts/Account;Ljava/lang/String;)V
     .locals 5
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -285,9 +276,6 @@
 
 .method public cancelSyncAsUser(Landroid/accounts/Account;Ljava/lang/String;I)V
     .locals 5
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -435,8 +423,6 @@
 
 .method public getIsSyncable(Landroid/accounts/Account;Ljava/lang/String;)I
     .locals 6
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -573,7 +559,6 @@
 
 .method public getMasterSyncAutomaticallyAsUser(I)Z
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -636,8 +621,6 @@
 
 .method public getPeriodicSyncs(Landroid/accounts/Account;Ljava/lang/String;)Ljava/util/List;
     .locals 6
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -786,7 +769,6 @@
 
 .method public getSyncAdapterTypesAsUser(I)[Landroid/content/SyncAdapterType;
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -846,8 +828,6 @@
 
 .method public getSyncAutomatically(Landroid/accounts/Account;Ljava/lang/String;)Z
     .locals 7
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -936,9 +916,6 @@
 
 .method public getSyncAutomaticallyAsUser(Landroid/accounts/Account;Ljava/lang/String;I)Z
     .locals 7
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1029,8 +1006,6 @@
 
 .method public getSyncStatus(Landroid/accounts/Account;Ljava/lang/String;)Landroid/content/SyncStatusInfo;
     .locals 6
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1123,8 +1098,6 @@
 
 .method public isSyncActive(Landroid/accounts/Account;Ljava/lang/String;)Z
     .locals 7
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1213,8 +1186,6 @@
 
 .method public isSyncPending(Landroid/accounts/Account;Ljava/lang/String;)Z
     .locals 7
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1303,11 +1274,6 @@
 
 .method public notifyChange(Landroid/net/Uri;Landroid/database/IContentObserver;ZZI)V
     .locals 5
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Landroid/database/IContentObserver;
-    .param p3    # Z
-    .param p4    # Z
-    .param p5    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1420,10 +1386,6 @@
 
 .method public registerContentObserver(Landroid/net/Uri;ZLandroid/database/IContentObserver;I)V
     .locals 5
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Z
-    .param p3    # Landroid/database/IContentObserver;
-    .param p4    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1524,9 +1486,6 @@
 
 .method public removePeriodicSync(Landroid/accounts/Account;Ljava/lang/String;Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1620,7 +1579,6 @@
 
 .method public removeStatusChangeListener(Landroid/content/ISyncStatusObserver;)V
     .locals 5
-    .param p1    # Landroid/content/ISyncStatusObserver;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1684,9 +1642,6 @@
 
 .method public requestSync(Landroid/accounts/Account;Ljava/lang/String;Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1780,9 +1735,6 @@
 
 .method public setIsSyncable(Landroid/accounts/Account;Ljava/lang/String;I)V
     .locals 5
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1857,10 +1809,6 @@
 
 .method public setIsSyncableAsUser(Landroid/accounts/Account;Ljava/lang/String;II)V
     .locals 5
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1937,7 +1885,6 @@
 
 .method public setMasterSyncAutomatically(Z)V
     .locals 5
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1996,8 +1943,6 @@
 
 .method public setMasterSyncAutomaticallyAsUser(ZI)V
     .locals 5
-    .param p1    # Z
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2058,9 +2003,6 @@
 
 .method public setSyncAutomatically(Landroid/accounts/Account;Ljava/lang/String;Z)V
     .locals 5
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2147,10 +2089,6 @@
 
 .method public setSyncAutomaticallyAsUser(Landroid/accounts/Account;Ljava/lang/String;ZI)V
     .locals 5
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
-    .param p4    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2239,7 +2177,6 @@
 
 .method public sync(Landroid/content/SyncRequest;)V
     .locals 5
-    .param p1    # Landroid/content/SyncRequest;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2310,7 +2247,6 @@
 
 .method public unregisterContentObserver(Landroid/database/IContentObserver;)V
     .locals 5
-    .param p1    # Landroid/database/IContentObserver;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

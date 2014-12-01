@@ -56,7 +56,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -67,8 +66,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/view/View;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -87,7 +84,6 @@
 
 .method static synthetic access$100(Lcom/android/launcher2/BlendedDarkenView;)Z
     .locals 1
-    .param p0    # Lcom/android/launcher2/BlendedDarkenView;
 
     iget-boolean v0, p0, Lcom/android/launcher2/BlendedDarkenView;->loaded:Z
 
@@ -96,8 +92,6 @@
 
 .method static synthetic access$102(Lcom/android/launcher2/BlendedDarkenView;Z)Z
     .locals 0
-    .param p0    # Lcom/android/launcher2/BlendedDarkenView;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/launcher2/BlendedDarkenView;->loaded:Z
 
@@ -106,7 +100,6 @@
 
 .method static synthetic access$200(Lcom/android/launcher2/BlendedDarkenView;)V
     .locals 0
-    .param p0    # Lcom/android/launcher2/BlendedDarkenView;
 
     invoke-direct {p0}, Lcom/android/launcher2/BlendedDarkenView;->compilePrograms()V
 
@@ -115,7 +108,6 @@
 
 .method static synthetic access$300(Lcom/android/launcher2/BlendedDarkenView;)V
     .locals 0
-    .param p0    # Lcom/android/launcher2/BlendedDarkenView;
 
     invoke-direct {p0}, Lcom/android/launcher2/BlendedDarkenView;->loadVBOs()V
 
@@ -200,8 +192,6 @@
 
 .method private createProgram(Ljava/lang/String;Ljava/lang/String;)I
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v6, 0x1
 
@@ -285,8 +275,6 @@
 
 .method private loadShader(ILjava/lang/String;)I
     .locals 5
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -556,10 +544,6 @@
 
 .method private setVertex([FIFF)V
     .locals 1
-    .param p1    # [F
-    .param p2    # I
-    .param p3    # F
-    .param p4    # F
 
     add-int/lit8 v0, p2, 0x0
 
@@ -576,7 +560,6 @@
 # virtual methods
 .method public checkGlError(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Landroid/opengl/GLES20;->glGetError()I
 
@@ -657,7 +640,6 @@
 
 .method protected dispatchDraw(Landroid/graphics/Canvas;)V
     .locals 1
-    .param p1    # Landroid/graphics/Canvas;
 
     iget-object v0, p0, Lcom/android/launcher2/BlendedDarkenView;->mDrawer:Lcom/android/launcher2/BlendedDarkenView$Drawer;
 
@@ -698,7 +680,6 @@
 
 .method public onSetAlpha(I)Z
     .locals 4
-    .param p1    # I
 
     const/4 v3, 0x1
 

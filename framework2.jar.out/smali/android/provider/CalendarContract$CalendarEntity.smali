@@ -54,7 +54,6 @@
 
 .method public static newEntityIterator(Landroid/database/Cursor;)Landroid/content/EntityIterator;
     .locals 1
-    .param p0    # Landroid/database/Cursor;
 
     new-instance v0, Landroid/provider/CalendarContract$CalendarEntity$EntityIteratorImpl;
 

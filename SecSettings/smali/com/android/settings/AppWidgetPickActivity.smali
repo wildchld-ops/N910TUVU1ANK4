@@ -61,9 +61,6 @@
 # virtual methods
 .method public createItem(Landroid/content/Context;Landroid/appwidget/AppWidgetProviderInfo;Landroid/os/Bundle;)Lcom/android/settings/ActivityPicker$PickAdapter$Item;
     .locals 11
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/appwidget/AppWidgetProviderInfo;
-    .param p3    # Landroid/os/Bundle;
 
     iget-object v5, p2, Landroid/appwidget/AppWidgetProviderInfo;->label:Ljava/lang/String;
 
@@ -263,9 +260,6 @@
 
 .method public bridge synthetic createItem(Landroid/content/Context;Landroid/appwidget/AppWidgetProviderInfo;Landroid/os/Bundle;)Ljava/lang/Object;
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/appwidget/AppWidgetProviderInfo;
-    .param p3    # Landroid/os/Bundle;
 
     invoke-virtual {p0, p1, p2, p3}, Lcom/android/settings/AppWidgetPickActivity;->createItem(Landroid/content/Context;Landroid/appwidget/AppWidgetProviderInfo;Landroid/os/Bundle;)Lcom/android/settings/ActivityPicker$PickAdapter$Item;
 
@@ -305,8 +299,6 @@
 
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 8
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     invoke-virtual {p0, p2}, Lcom/android/settings/ActivityPicker;->getIntentForPosition(I)Landroid/content/Intent;
 
@@ -385,7 +377,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v3, 0x0
 
@@ -446,8 +437,6 @@
 
 .method setResultData(ILandroid/content/Intent;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/content/Intent;
 
     if-eqz p2, :cond_0
 

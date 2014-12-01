@@ -62,7 +62,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -105,7 +104,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/transaction/NotificationPlayer;)Landroid/os/Looper;
     .locals 1
-    .param p0    # Lcom/android/mms/transaction/NotificationPlayer;
 
     iget-object v0, p0, Lcom/android/mms/transaction/NotificationPlayer;->mLooper:Landroid/os/Looper;
 
@@ -114,8 +112,6 @@
 
 .method static synthetic access$002(Lcom/android/mms/transaction/NotificationPlayer;Landroid/os/Looper;)Landroid/os/Looper;
     .locals 0
-    .param p0    # Lcom/android/mms/transaction/NotificationPlayer;
-    .param p1    # Landroid/os/Looper;
 
     iput-object p1, p0, Lcom/android/mms/transaction/NotificationPlayer;->mLooper:Landroid/os/Looper;
 
@@ -124,7 +120,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/transaction/NotificationPlayer;)Landroid/media/AudioManager$OnAudioFocusChangeListener;
     .locals 1
-    .param p0    # Lcom/android/mms/transaction/NotificationPlayer;
 
     iget-object v0, p0, Lcom/android/mms/transaction/NotificationPlayer;->mAudioFocusListener:Landroid/media/AudioManager$OnAudioFocusChangeListener;
 
@@ -133,7 +128,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/transaction/NotificationPlayer;)Landroid/media/MediaPlayer;
     .locals 1
-    .param p0    # Lcom/android/mms/transaction/NotificationPlayer;
 
     iget-object v0, p0, Lcom/android/mms/transaction/NotificationPlayer;->mPlayer:Landroid/media/MediaPlayer;
 
@@ -142,8 +136,6 @@
 
 .method static synthetic access$202(Lcom/android/mms/transaction/NotificationPlayer;Landroid/media/MediaPlayer;)Landroid/media/MediaPlayer;
     .locals 0
-    .param p0    # Lcom/android/mms/transaction/NotificationPlayer;
-    .param p1    # Landroid/media/MediaPlayer;
 
     iput-object p1, p0, Lcom/android/mms/transaction/NotificationPlayer;->mPlayer:Landroid/media/MediaPlayer;
 
@@ -152,7 +144,6 @@
 
 .method static synthetic access$300(Lcom/android/mms/transaction/NotificationPlayer;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/mms/transaction/NotificationPlayer;
 
     iget-object v0, p0, Lcom/android/mms/transaction/NotificationPlayer;->mTag:Ljava/lang/String;
 
@@ -161,7 +152,6 @@
 
 .method static synthetic access$400(Lcom/android/mms/transaction/NotificationPlayer;)Landroid/media/AudioManager;
     .locals 1
-    .param p0    # Lcom/android/mms/transaction/NotificationPlayer;
 
     iget-object v0, p0, Lcom/android/mms/transaction/NotificationPlayer;->mAudioManager:Landroid/media/AudioManager;
 
@@ -170,8 +160,6 @@
 
 .method static synthetic access$402(Lcom/android/mms/transaction/NotificationPlayer;Landroid/media/AudioManager;)Landroid/media/AudioManager;
     .locals 0
-    .param p0    # Lcom/android/mms/transaction/NotificationPlayer;
-    .param p1    # Landroid/media/AudioManager;
 
     iput-object p1, p0, Lcom/android/mms/transaction/NotificationPlayer;->mAudioManager:Landroid/media/AudioManager;
 
@@ -180,7 +168,6 @@
 
 .method static synthetic access$500(Lcom/android/mms/transaction/NotificationPlayer;)Ljava/util/LinkedList;
     .locals 1
-    .param p0    # Lcom/android/mms/transaction/NotificationPlayer;
 
     iget-object v0, p0, Lcom/android/mms/transaction/NotificationPlayer;->mCmdQueue:Ljava/util/LinkedList;
 
@@ -189,8 +176,6 @@
 
 .method static synthetic access$600(Lcom/android/mms/transaction/NotificationPlayer;Lcom/android/mms/transaction/NotificationPlayer$Command;)V
     .locals 0
-    .param p0    # Lcom/android/mms/transaction/NotificationPlayer;
-    .param p1    # Lcom/android/mms/transaction/NotificationPlayer$Command;
 
     invoke-direct {p0, p1}, Lcom/android/mms/transaction/NotificationPlayer;->startSound(Lcom/android/mms/transaction/NotificationPlayer$Command;)V
 
@@ -199,8 +184,6 @@
 
 .method static synthetic access$702(Lcom/android/mms/transaction/NotificationPlayer;Lcom/android/mms/transaction/NotificationPlayer$CmdThread;)Lcom/android/mms/transaction/NotificationPlayer$CmdThread;
     .locals 0
-    .param p0    # Lcom/android/mms/transaction/NotificationPlayer;
-    .param p1    # Lcom/android/mms/transaction/NotificationPlayer$CmdThread;
 
     iput-object p1, p0, Lcom/android/mms/transaction/NotificationPlayer;->mThread:Lcom/android/mms/transaction/NotificationPlayer$CmdThread;
 
@@ -209,7 +192,6 @@
 
 .method static synthetic access$800(Lcom/android/mms/transaction/NotificationPlayer;)V
     .locals 0
-    .param p0    # Lcom/android/mms/transaction/NotificationPlayer;
 
     invoke-direct {p0}, Lcom/android/mms/transaction/NotificationPlayer;->releaseWakeLock()V
 
@@ -233,7 +215,6 @@
 
 .method private enqueueLocked(Lcom/android/mms/transaction/NotificationPlayer$Command;)V
     .locals 1
-    .param p1    # Lcom/android/mms/transaction/NotificationPlayer$Command;
 
     iget-object v0, p0, Lcom/android/mms/transaction/NotificationPlayer;->mCmdQueue:Ljava/util/LinkedList;
 
@@ -276,7 +257,6 @@
 
 .method private startSound(Lcom/android/mms/transaction/NotificationPlayer$Command;)V
     .locals 7
-    .param p1    # Lcom/android/mms/transaction/NotificationPlayer$Command;
 
     :try_start_0
     iget-object v4, p0, Lcom/android/mms/transaction/NotificationPlayer;->mCompletionHandlingLock:Ljava/lang/Object;
@@ -445,7 +425,6 @@
 # virtual methods
 .method public onCompletion(Landroid/media/MediaPlayer;)V
     .locals 3
-    .param p1    # Landroid/media/MediaPlayer;
 
     iget-object v0, p0, Lcom/android/mms/transaction/NotificationPlayer;->mAudioManager:Landroid/media/AudioManager;
 
@@ -526,11 +505,6 @@
 
 .method public play(Landroid/content/Context;Landroid/net/Uri;ZIF)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/net/Uri;
-    .param p3    # Z
-    .param p4    # I
-    .param p5    # F
 
     const/4 v3, 0x1
 
@@ -585,7 +559,6 @@
 
 .method public setUsesWakeLock(Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     iget-object v1, p0, Lcom/android/mms/transaction/NotificationPlayer;->mWakeLock:Landroid/os/PowerManager$WakeLock;
 

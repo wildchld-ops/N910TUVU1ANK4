@@ -49,7 +49,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x4
 
@@ -60,8 +59,6 @@
 
 .method public constructor <init>(Landroid/content/Context;I)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -104,7 +101,6 @@
 
 .method static synthetic access$000(Landroid/net/http/RequestQueue;)Landroid/content/Context;
     .locals 1
-    .param p0    # Landroid/net/http/RequestQueue;
 
     iget-object v0, p0, Landroid/net/http/RequestQueue;->mContext:Landroid/content/Context;
 
@@ -113,7 +109,6 @@
 
 .method static synthetic access$100(Landroid/net/http/RequestQueue;)Lorg/apache/http/HttpHost;
     .locals 1
-    .param p0    # Landroid/net/http/RequestQueue;
 
     iget-object v0, p0, Landroid/net/http/RequestQueue;->mProxyHost:Lorg/apache/http/HttpHost;
 
@@ -122,8 +117,6 @@
 
 .method static synthetic access$200(Landroid/net/http/RequestQueue;Lorg/apache/http/HttpHost;)Lorg/apache/http/HttpHost;
     .locals 1
-    .param p0    # Landroid/net/http/RequestQueue;
-    .param p1    # Lorg/apache/http/HttpHost;
 
     invoke-direct {p0, p1}, Landroid/net/http/RequestQueue;->determineHost(Lorg/apache/http/HttpHost;)Lorg/apache/http/HttpHost;
 
@@ -134,7 +127,6 @@
 
 .method static synthetic access$300(Landroid/net/http/RequestQueue;)V
     .locals 0
-    .param p0    # Landroid/net/http/RequestQueue;
 
     invoke-direct {p0}, Landroid/net/http/RequestQueue;->setProxyConfig()V
 
@@ -143,7 +135,6 @@
 
 .method private determineHost(Lorg/apache/http/HttpHost;)Lorg/apache/http/HttpHost;
     .locals 2
-    .param p1    # Lorg/apache/http/HttpHost;
 
     iget-object v0, p0, Landroid/net/http/RequestQueue;->mProxyHost:Lorg/apache/http/HttpHost;
 
@@ -633,7 +624,6 @@
 
 .method public declared-synchronized getRequest(Lorg/apache/http/HttpHost;)Landroid/net/http/Request;
     .locals 4
-    .param p1    # Lorg/apache/http/HttpHost;
 
     monitor-enter p0
 
@@ -693,7 +683,6 @@
 
 .method public declared-synchronized haveRequest(Lorg/apache/http/HttpHost;)Z
     .locals 1
-    .param p1    # Lorg/apache/http/HttpHost;
 
     monitor-enter p0
 
@@ -720,12 +709,6 @@
 
 .method public queueRequest(Ljava/lang/String;Landroid/net/WebAddress;Ljava/lang/String;Ljava/util/Map;Landroid/net/http/EventHandler;Ljava/io/InputStream;I)Landroid/net/http/RequestHandle;
     .locals 12
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/net/WebAddress;
-    .param p3    # Ljava/lang/String;
-    .param p5    # Landroid/net/http/EventHandler;
-    .param p6    # Ljava/io/InputStream;
-    .param p7    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -825,11 +808,6 @@
 
 .method public queueRequest(Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Landroid/net/http/EventHandler;Ljava/io/InputStream;I)Landroid/net/http/RequestHandle;
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p4    # Landroid/net/http/EventHandler;
-    .param p5    # Ljava/io/InputStream;
-    .param p6    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -874,8 +852,6 @@
 
 .method protected declared-synchronized queueRequest(Landroid/net/http/Request;Z)V
     .locals 3
-    .param p1    # Landroid/net/http/Request;
-    .param p2    # Z
 
     monitor-enter p0
 
@@ -952,12 +928,6 @@
 
 .method public queueSynchronousRequest(Ljava/lang/String;Landroid/net/WebAddress;Ljava/lang/String;Ljava/util/Map;Landroid/net/http/EventHandler;Ljava/io/InputStream;I)Landroid/net/http/RequestHandle;
     .locals 13
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/net/WebAddress;
-    .param p3    # Ljava/lang/String;
-    .param p5    # Landroid/net/http/EventHandler;
-    .param p6    # Ljava/io/InputStream;
-    .param p7    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1089,7 +1059,6 @@
 
 .method public requeueRequest(Landroid/net/http/Request;)V
     .locals 1
-    .param p1    # Landroid/net/http/Request;
 
     const/4 v0, 0x1
 

@@ -33,8 +33,6 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 14
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     iget-object v11, p0, Lcom/android/server/enterprise/device/DeviceInfo$6;->this$0:Lcom/android/server/enterprise/device/DeviceInfo;
 

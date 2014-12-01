@@ -70,13 +70,6 @@
 
 .method public constructor <init>(ILjava/lang/String;Ljava/lang/Object;Ljava/lang/Object;IIF)V
     .locals 0
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/Object;
-    .param p4    # Ljava/lang/Object;
-    .param p5    # I
-    .param p6    # I
-    .param p7    # F
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -99,15 +92,6 @@
 
 .method public constructor <init>(ILjava/lang/String;Ljava/lang/Object;Ljava/lang/Object;IIFII)V
     .locals 0
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/Object;
-    .param p4    # Ljava/lang/Object;
-    .param p5    # I
-    .param p6    # I
-    .param p7    # F
-    .param p8    # I
-    .param p9    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -238,7 +222,6 @@
 
 .method public readFromParcel(Landroid/os/Parcel;)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
@@ -311,8 +294,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget v0, p0, Lcom/samsung/android/hermes/KerykeionResult;->mResultType:I
 

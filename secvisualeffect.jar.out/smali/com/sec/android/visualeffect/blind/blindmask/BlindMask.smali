@@ -22,9 +22,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;II)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0, p1}, Landroid/view/View;-><init>(Landroid/content/Context;)V
 
@@ -106,7 +103,6 @@
 
 .method protected onDraw(Landroid/graphics/Canvas;)V
     .locals 2
-    .param p1    # Landroid/graphics/Canvas;
 
     invoke-super {p0, p1}, Landroid/view/View;->onDraw(Landroid/graphics/Canvas;)V
 
@@ -126,7 +122,6 @@
 
 .method public setHeight(I)V
     .locals 4
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/visualeffect/blind/blindmask/BlindMask;->mRect:Landroid/graphics/Rect;
 
@@ -149,8 +144,6 @@
 
 .method public setWidth(IZ)V
     .locals 5
-    .param p1    # I
-    .param p2    # Z
 
     if-eqz p1, :cond_1
 

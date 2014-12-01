@@ -36,7 +36,6 @@
 # virtual methods
 .method public onContentChanged(Lcom/android/mms/ui/SpamMessageListAdapter;)V
     .locals 3
-    .param p1    # Lcom/android/mms/ui/SpamMessageListAdapter;
 
     const-string v0, "Mms/SpamMessageManager"
 

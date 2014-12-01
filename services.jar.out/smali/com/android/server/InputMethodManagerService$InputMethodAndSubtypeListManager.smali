@@ -41,8 +41,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Lcom/android/server/InputMethodManagerService;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/server/InputMethodManagerService;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -95,7 +93,6 @@
 
 .method static synthetic access$3800(Lcom/android/server/InputMethodManagerService$InputMethodAndSubtypeListManager;)Landroid/content/pm/PackageManager;
     .locals 1
-    .param p0    # Lcom/android/server/InputMethodManagerService$InputMethodAndSubtypeListManager;
 
     iget-object v0, p0, Lcom/android/server/InputMethodManagerService$InputMethodAndSubtypeListManager;->mPm:Landroid/content/pm/PackageManager;
 
@@ -106,9 +103,6 @@
 # virtual methods
 .method public getNextInputMethod(ZLandroid/view/inputmethod/InputMethodInfo;Landroid/view/inputmethod/InputMethodSubtype;)Lcom/android/server/InputMethodManagerService$ImeSubtypeListItem;
     .locals 10
-    .param p1    # Z
-    .param p2    # Landroid/view/inputmethod/InputMethodInfo;
-    .param p3    # Landroid/view/inputmethod/InputMethodSubtype;
 
     const/4 v7, 0x0
 
@@ -256,9 +250,6 @@
 
 .method public getSortedInputMethodAndSubtypeList(ZZZ)Ljava/util/List;
     .locals 22
-    .param p1    # Z
-    .param p2    # Z
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(ZZZ)",

@@ -84,7 +84,6 @@
 
 .method public constructor <init>(Ljava/lang/CharSequence;)V
     .locals 2
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v0, 0x0
 
@@ -99,9 +98,6 @@
 
 .method public constructor <init>(Ljava/lang/CharSequence;II)V
     .locals 12
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v1, 0x0
 
@@ -257,11 +253,6 @@
 
 .method private change(IILjava/lang/CharSequence;II)V
     .locals 38
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/CharSequence;
-    .param p4    # I
-    .param p5    # I
 
     sub-int v33, p2, p1
 
@@ -943,9 +934,6 @@
 
 .method private checkRange(Ljava/lang/String;II)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     if-ge p3, p2, :cond_0
 
@@ -1089,8 +1077,6 @@
 
 .method private static hasNonExclusiveExclusiveSpanAt(Ljava/lang/CharSequence;I)Z
     .locals 7
-    .param p0    # Ljava/lang/CharSequence;
-    .param p1    # I
 
     instance-of v6, p0, Landroid/text/Spanned;
 
@@ -1141,7 +1127,6 @@
 
 .method private moveGapTo(I)V
     .locals 12
-    .param p1    # I
 
     const/4 v11, 0x3
 
@@ -1328,8 +1313,6 @@
 
 .method private static region(II)Ljava/lang/String;
     .locals 2
-    .param p0    # I
-    .param p1    # I
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -1370,7 +1353,6 @@
 
 .method private removeSpan(I)V
     .locals 7
-    .param p1    # I
 
     iget-object v4, p0, Landroid/text/SpannableStringBuilder;->mSpans:[Ljava/lang/Object;
 
@@ -1461,7 +1443,6 @@
 
 .method private resizeFor(I)V
     .locals 9
-    .param p1    # I
 
     const/4 v8, 0x0
 
@@ -1578,7 +1559,6 @@
 
 .method private sendAfterTextChanged([Landroid/text/TextWatcher;)V
     .locals 3
-    .param p1    # [Landroid/text/TextWatcher;
 
     array-length v1, p1
 
@@ -1601,10 +1581,6 @@
 
 .method private sendBeforeTextChanged([Landroid/text/TextWatcher;III)V
     .locals 3
-    .param p1    # [Landroid/text/TextWatcher;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     array-length v1, p1
 
@@ -1627,9 +1603,6 @@
 
 .method private sendSpanAdded(Ljava/lang/Object;II)V
     .locals 4
-    .param p1    # Ljava/lang/Object;
-    .param p2    # I
-    .param p3    # I
 
     const-class v3, Landroid/text/SpanWatcher;
 
@@ -1660,11 +1633,6 @@
 
 .method private sendSpanChanged(Ljava/lang/Object;IIII)V
     .locals 10
-    .param p1    # Ljava/lang/Object;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-static {p2, p4}, Ljava/lang/Math;->min(II)I
 
@@ -1723,9 +1691,6 @@
 
 .method private sendSpanRemoved(Ljava/lang/Object;II)V
     .locals 4
-    .param p1    # Ljava/lang/Object;
-    .param p2    # I
-    .param p3    # I
 
     const-class v3, Landroid/text/SpanWatcher;
 
@@ -1756,10 +1721,6 @@
 
 .method private sendTextChanged([Landroid/text/TextWatcher;III)V
     .locals 3
-    .param p1    # [Landroid/text/TextWatcher;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     array-length v1, p1
 
@@ -1782,9 +1743,6 @@
 
 .method private sendToSpanWatchers(III)V
     .locals 12
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const v11, 0x8000
 
@@ -1976,11 +1934,6 @@
 
 .method private setSpan(ZLjava/lang/Object;III)V
     .locals 22
-    .param p1    # Z
-    .param p2    # Ljava/lang/Object;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     const-string/jumbo v3, "setSpan"
 
@@ -2504,12 +2457,6 @@
 
 .method private updatedIntervalBound(IIIIZZ)I
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Z
-    .param p6    # Z
 
     if-lt p1, p2, :cond_4
 
@@ -2576,7 +2523,6 @@
 
 .method public static valueOf(Ljava/lang/CharSequence;)Landroid/text/SpannableStringBuilder;
     .locals 1
-    .param p0    # Ljava/lang/CharSequence;
 
     instance-of v0, p0, Landroid/text/SpannableStringBuilder;
 
@@ -2601,7 +2547,6 @@
 # virtual methods
 .method public bridge synthetic append(C)Landroid/text/Editable;
     .locals 1
-    .param p1    # C
 
     invoke-virtual {p0, p1}, Landroid/text/SpannableStringBuilder;->append(C)Landroid/text/SpannableStringBuilder;
 
@@ -2612,7 +2557,6 @@
 
 .method public bridge synthetic append(Ljava/lang/CharSequence;)Landroid/text/Editable;
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
 
     invoke-virtual {p0, p1}, Landroid/text/SpannableStringBuilder;->append(Ljava/lang/CharSequence;)Landroid/text/SpannableStringBuilder;
 
@@ -2623,9 +2567,6 @@
 
 .method public bridge synthetic append(Ljava/lang/CharSequence;II)Landroid/text/Editable;
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
 
     invoke-virtual {p0, p1, p2, p3}, Landroid/text/SpannableStringBuilder;->append(Ljava/lang/CharSequence;II)Landroid/text/SpannableStringBuilder;
 
@@ -2636,7 +2577,6 @@
 
 .method public append(C)Landroid/text/SpannableStringBuilder;
     .locals 1
-    .param p1    # C
 
     invoke-static {p1}, Ljava/lang/String;->valueOf(C)Ljava/lang/String;
 
@@ -2651,7 +2591,6 @@
 
 .method public append(Ljava/lang/CharSequence;)Landroid/text/SpannableStringBuilder;
     .locals 6
-    .param p1    # Ljava/lang/CharSequence;
 
     invoke-virtual {p0}, Landroid/text/SpannableStringBuilder;->length()I
 
@@ -2678,9 +2617,6 @@
 
 .method public append(Ljava/lang/CharSequence;II)Landroid/text/SpannableStringBuilder;
     .locals 6
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
 
     invoke-virtual {p0}, Landroid/text/SpannableStringBuilder;->length()I
 
@@ -2705,7 +2641,6 @@
 
 .method public bridge synthetic append(C)Ljava/lang/Appendable;
     .locals 1
-    .param p1    # C
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -2721,7 +2656,6 @@
 
 .method public bridge synthetic append(Ljava/lang/CharSequence;)Ljava/lang/Appendable;
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -2737,9 +2671,6 @@
 
 .method public bridge synthetic append(Ljava/lang/CharSequence;II)Ljava/lang/Appendable;
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -2755,7 +2686,6 @@
 
 .method public charAt(I)C
     .locals 4
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/text/SpannableStringBuilder;->length()I
 
@@ -2954,8 +2884,6 @@
 
 .method public bridge synthetic delete(II)Landroid/text/Editable;
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0, p1, p2}, Landroid/text/SpannableStringBuilder;->delete(II)Landroid/text/SpannableStringBuilder;
 
@@ -2966,8 +2894,6 @@
 
 .method public delete(II)Landroid/text/SpannableStringBuilder;
     .locals 7
-    .param p1    # I
-    .param p2    # I
 
     const/4 v4, 0x0
 
@@ -3007,12 +2933,6 @@
 
 .method public drawText(Landroid/graphics/Canvas;IIFFLandroid/graphics/Paint;)V
     .locals 7
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # F
-    .param p5    # F
-    .param p6    # Landroid/graphics/Paint;
 
     const/4 v2, 0x0
 
@@ -3096,15 +3016,6 @@
 
 .method public drawTextRun(Landroid/graphics/Canvas;IIIIFFILandroid/graphics/Paint;)V
     .locals 10
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # F
-    .param p7    # F
-    .param p8    # I
-    .param p9    # Landroid/graphics/Paint;
 
     const-string v0, "drawTextRun"
 
@@ -3200,7 +3111,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 8
-    .param p1    # Ljava/lang/Object;
 
     const/4 v5, 0x0
 
@@ -3343,10 +3253,6 @@
 
 .method public getChars(II[CI)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [C
-    .param p4    # I
 
     const-string v0, "getChars"
 
@@ -3424,7 +3330,6 @@
 
 .method public getSpanEnd(Ljava/lang/Object;)I
     .locals 5
-    .param p1    # Ljava/lang/Object;
 
     iget v0, p0, Landroid/text/SpannableStringBuilder;->mSpanCount:I
 
@@ -3468,7 +3373,6 @@
 
 .method public getSpanFlags(Ljava/lang/Object;)I
     .locals 4
-    .param p1    # Ljava/lang/Object;
 
     iget v0, p0, Landroid/text/SpannableStringBuilder;->mSpanCount:I
 
@@ -3503,7 +3407,6 @@
 
 .method public getSpanStart(Ljava/lang/Object;)I
     .locals 5
-    .param p1    # Ljava/lang/Object;
 
     iget v0, p0, Landroid/text/SpannableStringBuilder;->mSpanCount:I
 
@@ -3547,8 +3450,6 @@
 
 .method public getSpans(IILjava/lang/Class;)[Ljava/lang/Object;
     .locals 22
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -3887,14 +3788,6 @@
 
 .method public getTextRunAdvances(IIIII[FILandroid/graphics/Paint;)F
     .locals 10
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # [F
-    .param p7    # I
-    .param p8    # Landroid/graphics/Paint;
 
     sub-int v5, p4, p3
 
@@ -3986,12 +3879,6 @@
 
 .method public getTextRunCursor(IIIIILandroid/graphics/Paint;)I
     .locals 8
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Landroid/graphics/Paint;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -4081,10 +3968,6 @@
 
 .method public getTextWidths(II[FLandroid/graphics/Paint;)I
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [F
-    .param p4    # Landroid/graphics/Paint;
 
     const/4 v3, 0x0
 
@@ -4219,8 +4102,6 @@
 
 .method public bridge synthetic insert(ILjava/lang/CharSequence;)Landroid/text/Editable;
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/CharSequence;
 
     invoke-virtual {p0, p1, p2}, Landroid/text/SpannableStringBuilder;->insert(ILjava/lang/CharSequence;)Landroid/text/SpannableStringBuilder;
 
@@ -4231,10 +4112,6 @@
 
 .method public bridge synthetic insert(ILjava/lang/CharSequence;II)Landroid/text/Editable;
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/CharSequence;
-    .param p3    # I
-    .param p4    # I
 
     invoke-virtual {p0, p1, p2, p3, p4}, Landroid/text/SpannableStringBuilder;->insert(ILjava/lang/CharSequence;II)Landroid/text/SpannableStringBuilder;
 
@@ -4245,8 +4122,6 @@
 
 .method public insert(ILjava/lang/CharSequence;)Landroid/text/SpannableStringBuilder;
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/CharSequence;
 
     const/4 v4, 0x0
 
@@ -4271,10 +4146,6 @@
 
 .method public insert(ILjava/lang/CharSequence;II)Landroid/text/SpannableStringBuilder;
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/CharSequence;
-    .param p3    # I
-    .param p4    # I
 
     move-object v0, p0
 
@@ -4311,9 +4182,6 @@
 
 .method public measureText(IILandroid/graphics/Paint;)F
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/graphics/Paint;
 
     const/4 v3, 0x0
 
@@ -4377,9 +4245,6 @@
 
 .method public nextSpanTransition(IILjava/lang/Class;)I
     .locals 10
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/Class;
 
     iget v0, p0, Landroid/text/SpannableStringBuilder;->mSpanCount:I
 
@@ -4457,7 +4322,6 @@
 
 .method public removeSpan(Ljava/lang/Object;)V
     .locals 2
-    .param p1    # Ljava/lang/Object;
 
     iget v1, p0, Landroid/text/SpannableStringBuilder;->mSpanCount:I
 
@@ -4485,9 +4349,6 @@
 
 .method public bridge synthetic replace(IILjava/lang/CharSequence;)Landroid/text/Editable;
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/CharSequence;
 
     invoke-virtual {p0, p1, p2, p3}, Landroid/text/SpannableStringBuilder;->replace(IILjava/lang/CharSequence;)Landroid/text/SpannableStringBuilder;
 
@@ -4498,11 +4359,6 @@
 
 .method public bridge synthetic replace(IILjava/lang/CharSequence;II)Landroid/text/Editable;
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/CharSequence;
-    .param p4    # I
-    .param p5    # I
 
     invoke-virtual/range {p0 .. p5}, Landroid/text/SpannableStringBuilder;->replace(IILjava/lang/CharSequence;II)Landroid/text/SpannableStringBuilder;
 
@@ -4513,9 +4369,6 @@
 
 .method public replace(IILjava/lang/CharSequence;)Landroid/text/SpannableStringBuilder;
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/CharSequence;
 
     const/4 v4, 0x0
 
@@ -4540,11 +4393,6 @@
 
 .method public replace(IILjava/lang/CharSequence;II)Landroid/text/SpannableStringBuilder;
     .locals 23
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/CharSequence;
-    .param p4    # I
-    .param p5    # I
 
     const-string/jumbo v5, "replace"
 
@@ -4777,7 +4625,6 @@
 
 .method public setFilters([Landroid/text/InputFilter;)V
     .locals 1
-    .param p1    # [Landroid/text/InputFilter;
 
     if-nez p1, :cond_0
 
@@ -4795,10 +4642,6 @@
 
 .method public setSpan(Ljava/lang/Object;III)V
     .locals 6
-    .param p1    # Ljava/lang/Object;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/4 v1, 0x1
 
@@ -4819,8 +4662,6 @@
 
 .method public subSequence(II)Ljava/lang/CharSequence;
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     new-instance v0, Landroid/text/SpannableStringBuilder;
 
@@ -4831,8 +4672,6 @@
 
 .method public substring(II)Ljava/lang/String;
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     sub-int v1, p2, p1
 

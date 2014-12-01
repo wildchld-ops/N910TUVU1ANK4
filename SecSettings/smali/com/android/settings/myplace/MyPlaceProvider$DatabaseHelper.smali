@@ -17,7 +17,6 @@
 # direct methods
 .method constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     const-string v0, "myplace.db"
 
@@ -34,7 +33,6 @@
 # virtual methods
 .method initDB(Landroid/database/sqlite/SQLiteDatabase;)V
     .locals 4
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
 
     const/4 v3, 0x0
 
@@ -113,7 +111,6 @@
 
 .method public onCreate(Landroid/database/sqlite/SQLiteDatabase;)V
     .locals 1
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
 
     const-string v0, "CREATE TABLE registerinfo (_id INTEGER PRIMARY KEY  AUTOINCREMENT  NOT NULL , type INTEGER ,profile_name VARCHAR NOT NULL , timestamp VARCHAR , gps_location VARCHAR , gps_latitude INTEGER , gps_longitude INTEGER , gps_map BLOB , wifi_ap_name VARCHAR , wifi_bssid VARCHAR , wifi_frequency INTEGER , wifi_auto_connect INTEGER , bt_device_name VARCHAR , bt_mac_address VARCHAR)"
 
@@ -126,9 +123,6 @@
 
 .method public onUpgrade(Landroid/database/sqlite/SQLiteDatabase;II)V
     .locals 3
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p2    # I
-    .param p3    # I
 
     const-string v0, "MyPlaceProvider"
 

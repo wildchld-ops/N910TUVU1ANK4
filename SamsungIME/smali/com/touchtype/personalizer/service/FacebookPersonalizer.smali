@@ -38,7 +38,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -67,8 +66,6 @@
 
 .method static synthetic access$002(Lcom/touchtype/personalizer/service/FacebookPersonalizer;Lcom/sec/android/app/sns3/svc/sp/facebook/auth/api/ISnsFacebookForAuthToken;)Lcom/sec/android/app/sns3/svc/sp/facebook/auth/api/ISnsFacebookForAuthToken;
     .locals 0
-    .param p0    # Lcom/touchtype/personalizer/service/FacebookPersonalizer;
-    .param p1    # Lcom/sec/android/app/sns3/svc/sp/facebook/auth/api/ISnsFacebookForAuthToken;
 
     iput-object p1, p0, Lcom/touchtype/personalizer/service/FacebookPersonalizer;->mSnsFacebookForAuthToken:Lcom/sec/android/app/sns3/svc/sp/facebook/auth/api/ISnsFacebookForAuthToken;
 
@@ -77,7 +74,6 @@
 
 .method static synthetic access$100(Lcom/touchtype/personalizer/service/FacebookPersonalizer;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/touchtype/personalizer/service/FacebookPersonalizer;
 
     iget-object v0, p0, Lcom/touchtype/personalizer/service/FacebookPersonalizer;->mContext:Landroid/content/Context;
 
@@ -86,8 +82,6 @@
 
 .method static synthetic access$200(Lcom/touchtype/personalizer/service/FacebookPersonalizer;Landroid/app/Activity;)V
     .locals 0
-    .param p0    # Lcom/touchtype/personalizer/service/FacebookPersonalizer;
-    .param p1    # Landroid/app/Activity;
 
     invoke-direct {p0, p1}, Lcom/touchtype/personalizer/service/FacebookPersonalizer;->signInToFacebook(Landroid/app/Activity;)V
 
@@ -96,7 +90,6 @@
 
 .method public static createParams(Ljava/lang/String;)Lcom/touchtype_fluency/service/util/PostParams;
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     new-instance v0, Lcom/touchtype_fluency/service/util/PostParams;
 
@@ -117,7 +110,6 @@
 
 .method public static createParamsForSSO(Ljava/lang/String;)Lcom/touchtype_fluency/service/util/PostParams;
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     new-instance v0, Lcom/touchtype_fluency/service/util/PostParams;
 
@@ -138,7 +130,6 @@
 
 .method private downloadFacebookApp(Landroid/app/Activity;)V
     .locals 2
-    .param p1    # Landroid/app/Activity;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -161,7 +152,6 @@
 
 .method private signInToFacebook(Landroid/app/Activity;)V
     .locals 5
-    .param p1    # Landroid/app/Activity;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -431,7 +421,6 @@
 
 .method public startPersonalization(Landroid/app/Activity;)V
     .locals 4
-    .param p1    # Landroid/app/Activity;
 
     const/4 v1, 0x0
 
@@ -574,8 +563,6 @@
 
 .method public startPersonalization(ZZ)V
     .locals 4
-    .param p1    # Z
-    .param p2    # Z
 
     iget v2, p0, Lcom/touchtype/personalizer/service/FacebookPersonalizer;->mFaceSigningType:I
 

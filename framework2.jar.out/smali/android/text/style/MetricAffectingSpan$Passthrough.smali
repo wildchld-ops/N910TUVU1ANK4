@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Landroid/text/style/MetricAffectingSpan;)V
     .locals 0
-    .param p1    # Landroid/text/style/MetricAffectingSpan;
 
     invoke-direct {p0}, Landroid/text/style/MetricAffectingSpan;-><init>()V
 
@@ -56,7 +55,6 @@
 
 .method public updateDrawState(Landroid/text/TextPaint;)V
     .locals 1
-    .param p1    # Landroid/text/TextPaint;
 
     iget-object v0, p0, Landroid/text/style/MetricAffectingSpan$Passthrough;->mStyle:Landroid/text/style/MetricAffectingSpan;
 
@@ -67,7 +65,6 @@
 
 .method public updateMeasureState(Landroid/text/TextPaint;)V
     .locals 1
-    .param p1    # Landroid/text/TextPaint;
 
     iget-object v0, p0, Landroid/text/style/MetricAffectingSpan$Passthrough;->mStyle:Landroid/text/style/MetricAffectingSpan;
 

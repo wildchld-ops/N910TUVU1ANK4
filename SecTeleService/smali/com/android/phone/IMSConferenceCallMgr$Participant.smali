@@ -417,7 +417,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v2}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v2}, Lcom/android/phone/PhoneGlobals;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -531,7 +531,7 @@
     move-exception v7
 
     :try_start_2
-    invoke-virtual {v7}, Ljava/lang/Throwable;->printStackTrace()V
+    invoke-virtual {v7}, Ljava/lang/Exception;->printStackTrace()V
 
     iget-object v2, p0, Lcom/android/phone/IMSConferenceCallMgr$Participant;->this$0:Lcom/android/phone/IMSConferenceCallMgr;
 

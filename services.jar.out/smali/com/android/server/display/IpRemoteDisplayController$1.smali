@@ -23,7 +23,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/display/IpRemoteDisplayController;Landroid/os/Handler;Landroid/content/ContentResolver;)V
     .locals 0
-    .param p2    # Landroid/os/Handler;
 
     iput-object p1, p0, Lcom/android/server/display/IpRemoteDisplayController$1;->this$0:Lcom/android/server/display/IpRemoteDisplayController;
 
@@ -38,8 +37,6 @@
 # virtual methods
 .method public onChange(ZLandroid/net/Uri;)V
     .locals 7
-    .param p1    # Z
-    .param p2    # Landroid/net/Uri;
 
     const/4 v6, 0x2
 

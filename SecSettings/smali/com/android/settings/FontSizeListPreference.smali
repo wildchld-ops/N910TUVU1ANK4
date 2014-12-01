@@ -20,7 +20,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -31,8 +30,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -75,7 +72,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/FontSizeListPreference;)Ljava/lang/Boolean;
     .locals 1
-    .param p0    # Lcom/android/settings/FontSizeListPreference;
 
     iget-object v0, p0, Lcom/android/settings/FontSizeListPreference;->isWidget:Ljava/lang/Boolean;
 
@@ -84,8 +80,6 @@
 
 .method static synthetic access$002(Lcom/android/settings/FontSizeListPreference;Ljava/lang/Boolean;)Ljava/lang/Boolean;
     .locals 0
-    .param p0    # Lcom/android/settings/FontSizeListPreference;
-    .param p1    # Ljava/lang/Boolean;
 
     iput-object p1, p0, Lcom/android/settings/FontSizeListPreference;->isWidget:Ljava/lang/Boolean;
 
@@ -94,7 +88,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/FontSizeListPreference;)Lcom/android/settings/DisplaySettings;
     .locals 1
-    .param p0    # Lcom/android/settings/FontSizeListPreference;
 
     iget-object v0, p0, Lcom/android/settings/FontSizeListPreference;->mFontSize:Lcom/android/settings/DisplaySettings;
 
@@ -103,7 +96,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/FontSizeListPreference;)Lcom/android/settings/FontMenu;
     .locals 1
-    .param p0    # Lcom/android/settings/FontSizeListPreference;
 
     iget-object v0, p0, Lcom/android/settings/FontSizeListPreference;->mFontsize:Lcom/android/settings/FontMenu;
 
@@ -144,7 +136,6 @@
 
 .method protected onDialogClosed(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-super {p0, p1}, Landroid/preference/ListPreference;->onDialogClosed(Z)V
 
@@ -187,7 +178,6 @@
 
 .method protected onPrepareDialogBuilder(Landroid/app/AlertDialog$Builder;)V
     .locals 3
-    .param p1    # Landroid/app/AlertDialog$Builder;
 
     iget-object v0, p0, Lcom/android/settings/FontSizeListPreference;->mFontSizeListAdapter:Lcom/android/settings/FontSizeListAdapter;
 
@@ -317,7 +307,6 @@
 
 .method public setObject(Lcom/android/settings/DisplaySettings;)V
     .locals 0
-    .param p1    # Lcom/android/settings/DisplaySettings;
 
     iput-object p1, p0, Lcom/android/settings/FontSizeListPreference;->mFontSize:Lcom/android/settings/DisplaySettings;
 
@@ -326,7 +315,6 @@
 
 .method public setObject(Lcom/android/settings/FontMenu;)V
     .locals 0
-    .param p1    # Lcom/android/settings/FontMenu;
 
     iput-object p1, p0, Lcom/android/settings/FontSizeListPreference;->mFontsize:Lcom/android/settings/FontMenu;
 

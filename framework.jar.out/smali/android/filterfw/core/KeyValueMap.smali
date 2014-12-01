@@ -26,7 +26,6 @@
 
 .method public static varargs fromKeyValues([Ljava/lang/Object;)Landroid/filterfw/core/KeyValueMap;
     .locals 1
-    .param p0    # [Ljava/lang/Object;
 
     new-instance v0, Landroid/filterfw/core/KeyValueMap;
 
@@ -41,7 +40,6 @@
 # virtual methods
 .method public getFloat(Ljava/lang/String;)F
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -66,7 +64,6 @@
 
 .method public getInt(Ljava/lang/String;)I
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -91,7 +88,6 @@
 
 .method public getString(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -112,7 +108,6 @@
 
 .method public varargs setKeyValues([Ljava/lang/Object;)V
     .locals 6
-    .param p1    # [Ljava/lang/Object;
 
     array-length v3, p1
 

@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,7 +36,6 @@
 # virtual methods
 .method public activateContainer(I)Z
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -100,7 +98,6 @@
 
 .method public adminPasswordReset(I)Z
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -171,7 +168,6 @@
 
 .method public cancelCreateContainer(I)Z
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -234,7 +230,6 @@
 
 .method public changeActiveContainerPasswordStatus(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -286,10 +281,6 @@
 
 .method public changePassword(ILjava/lang/String;Ljava/lang/String;Lcom/sec/enterprise/knox/IEnterpriseContainerCallback;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Lcom/sec/enterprise/knox/IEnterpriseContainerCallback;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -359,8 +350,6 @@
 
 .method public checkPassword(ILjava/lang/String;)I
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -418,7 +407,6 @@
 
 .method public containerizedAppStarting(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -470,8 +458,6 @@
 
 .method public createContainer(Lcom/sec/enterprise/knox/IEnterpriseContainerCallback;I)Z
     .locals 7
-    .param p1    # Lcom/sec/enterprise/knox/IEnterpriseContainerCallback;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -553,9 +539,6 @@
 
 .method public createContainerFromB2CtoB2B(ILcom/sec/enterprise/knox/IEnterpriseContainerCallback;I)Z
     .locals 6
-    .param p1    # I
-    .param p2    # Lcom/sec/enterprise/knox/IEnterpriseContainerCallback;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -634,8 +617,6 @@
 
 .method public createContainerInternal(Lcom/sec/knox/container/EnterpriseContainerObjectParam;Lcom/sec/enterprise/knox/IEnterpriseContainerCallback;)Z
     .locals 7
-    .param p1    # Lcom/sec/knox/container/EnterpriseContainerObjectParam;
-    .param p2    # Lcom/sec/enterprise/knox/IEnterpriseContainerCallback;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -736,7 +717,6 @@
 
 .method public enforcePasswordChange(I)Z
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -799,8 +779,6 @@
 
 .method public getAllowBluetoothMode(ILandroid/content/ComponentName;)I
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -877,8 +855,6 @@
 
 .method public getAllowBrowser(ILandroid/content/ComponentName;)Z
     .locals 7
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -967,8 +943,6 @@
 
 .method public getAllowCamera(ILandroid/content/ComponentName;)Z
     .locals 7
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1057,8 +1031,6 @@
 
 .method public getAllowDesktopSync(ILandroid/content/ComponentName;)Z
     .locals 7
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1147,8 +1119,6 @@
 
 .method public getAllowInternetSharing(ILandroid/content/ComponentName;)Z
     .locals 7
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1237,8 +1207,6 @@
 
 .method public getAllowIrDA(ILandroid/content/ComponentName;)Z
     .locals 7
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1327,8 +1295,6 @@
 
 .method public getAllowPOPIMAPEmail(ILandroid/content/ComponentName;)Z
     .locals 7
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1417,8 +1383,6 @@
 
 .method public getAllowStorageCard(ILandroid/content/ComponentName;)Z
     .locals 7
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1507,8 +1471,6 @@
 
 .method public getAllowTextMessaging(ILandroid/content/ComponentName;)Z
     .locals 7
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1597,8 +1559,6 @@
 
 .method public getAllowWifi(ILandroid/content/ComponentName;)Z
     .locals 7
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1687,7 +1647,6 @@
 
 .method public getAndroidId(I)Ljava/lang/String;
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1743,8 +1702,6 @@
 
 .method public getAppInstallationSource(ILjava/lang/String;)I
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1802,8 +1759,6 @@
 
 .method public getAppUninstallAllowed(ILjava/lang/String;)Z
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1868,7 +1823,6 @@
 
 .method public getContainerEmailId(I)Ljava/lang/String;
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1924,7 +1878,6 @@
 
 .method public getContainerFirmwareVersion(I)Ljava/lang/String;
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1980,7 +1933,6 @@
 
 .method public getContainerForPackage(Ljava/lang/String;)I
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2036,7 +1988,6 @@
 
 .method public getContainerId(I)I
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2092,7 +2043,6 @@
 
 .method public getContainerLockOnScreenLock(I)Z
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2155,7 +2105,6 @@
 
 .method public getContainerPackages(I)Ljava/util/List;
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -2221,7 +2170,6 @@
 
 .method public getContainerSecurityInformation(I)Lcom/sec/knox/container/EnterpriseContainerObjectParam;
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2293,7 +2241,6 @@
 
 .method public getContainerType(I)I
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2349,8 +2296,6 @@
 
 .method public getContainerisedString(ILjava/lang/String;)Ljava/lang/String;
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2408,8 +2353,6 @@
 
 .method public getContainerizedPackageName(ILjava/lang/String;)Ljava/lang/String;
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2532,7 +2475,6 @@
 
 .method public getCurrentFailedPasswordAttempts(I)I
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2588,8 +2530,6 @@
 
 .method public getInstalledApplications(II)Ljava/util/List;
     .locals 6
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II)",
@@ -2659,8 +2599,6 @@
 
 .method public getInstalledPackages(II)Ljava/util/List;
     .locals 6
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II)",
@@ -2738,8 +2676,6 @@
 
 .method public getLaunchIntentForContainerizedApp(ILjava/lang/String;)Landroid/content/Intent;
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2813,7 +2749,6 @@
 
 .method public getLockType(I)I
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2869,8 +2804,6 @@
 
 .method public getMaximumFailedPasswordsForDisable(ILandroid/content/ComponentName;)I
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2947,8 +2880,6 @@
 
 .method public getMaximumFailedPasswordsForWipe(ILandroid/content/ComponentName;)I
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3025,8 +2956,6 @@
 
 .method public getMaximumTimeToLock(ILandroid/content/ComponentName;)J
     .locals 7
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3103,8 +3032,6 @@
 
 .method public getMinPasswordComplexChars(ILandroid/content/ComponentName;)I
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3181,7 +3108,6 @@
 
 .method public getMountStatus(I)Z
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3244,8 +3170,6 @@
 
 .method public getOriginalPackageName(ILjava/lang/String;)Ljava/lang/String;
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3303,7 +3227,6 @@
 
 .method public getOriginalPackageNames(I)Ljava/util/List;
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -3369,8 +3292,6 @@
 
 .method public getPassword(ILandroid/content/ComponentName;)Ljava/lang/String;
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3447,7 +3368,6 @@
 
 .method public getPasswordEnabledContainerLockTimeout(I)J
     .locals 7
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3503,8 +3423,6 @@
 
 .method public getPasswordExpiration(ILandroid/content/ComponentName;)J
     .locals 7
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3581,8 +3499,6 @@
 
 .method public getPasswordExpirationTimeout(ILandroid/content/ComponentName;)J
     .locals 7
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3659,8 +3575,6 @@
 
 .method public getPasswordExpires(ILandroid/content/ComponentName;)I
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3737,8 +3651,6 @@
 
 .method public getPasswordHistory(ILandroid/content/ComponentName;)I
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3815,8 +3727,6 @@
 
 .method public getPasswordHistoryLength(ILandroid/content/ComponentName;)I
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3893,8 +3803,6 @@
 
 .method public getPasswordMaximumLength(II)I
     .locals 6
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3952,8 +3860,6 @@
 
 .method public getPasswordMinimumLength(ILandroid/content/ComponentName;)I
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4030,8 +3936,6 @@
 
 .method public getPasswordMinimumLetters(ILandroid/content/ComponentName;)I
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4108,8 +4012,6 @@
 
 .method public getPasswordMinimumLowerCase(ILandroid/content/ComponentName;)I
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4186,8 +4088,6 @@
 
 .method public getPasswordMinimumNonLetter(ILandroid/content/ComponentName;)I
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4264,8 +4164,6 @@
 
 .method public getPasswordMinimumNumeric(ILandroid/content/ComponentName;)I
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4342,8 +4240,6 @@
 
 .method public getPasswordMinimumSymbols(ILandroid/content/ComponentName;)I
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4420,8 +4316,6 @@
 
 .method public getPasswordMinimumUpperCase(ILandroid/content/ComponentName;)I
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4498,8 +4392,6 @@
 
 .method public getPasswordQuality(ILandroid/content/ComponentName;)I
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4576,7 +4468,6 @@
 
 .method public getPasswordVerifyOnlyOnModeChange(I)Z
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4639,8 +4530,6 @@
 
 .method public getProperty(ILjava/lang/String;)Ljava/lang/String;
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4698,9 +4587,6 @@
 
 .method public getPropertyOpt(ILjava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4760,8 +4646,6 @@
 
 .method public getSimplePasswordEnabled(ILandroid/content/ComponentName;)Z
     .locals 7
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4850,7 +4734,6 @@
 
 .method public getStatus(I)I
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4906,7 +4789,6 @@
 
 .method public inKeyguardRestrictedInputMode(I)Z
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4969,11 +4851,6 @@
 
 .method public installPackages(ILjava/lang/String;Lcom/sec/enterprise/knox/IEnterpriseContainerCallback;II)Z
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/sec/enterprise/knox/IEnterpriseContainerCallback;
-    .param p4    # I
-    .param p5    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5056,7 +4933,6 @@
 
 .method public isActivePasswordSufficient(I)Z
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5119,7 +4995,6 @@
 
 .method public isKeyguardLocked(I)Z
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5182,7 +5057,6 @@
 
 .method public isKeyguardSecure(I)Z
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5245,8 +5119,6 @@
 
 .method public isPasswordForbidden(ILjava/lang/String;)Z
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5311,7 +5183,6 @@
 
 .method public isPasswordVisisbilityEnabled(I)Z
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5374,7 +5245,6 @@
 
 .method public lockContainer(I)Z
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5437,7 +5307,6 @@
 
 .method public onUserInteraction(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5489,8 +5358,6 @@
 
 .method public reboot(ILjava/lang/String;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5544,9 +5411,6 @@
 
 .method public registerEventReceiver(I[ILcom/sec/enterprise/knox/IEnterpriseContainerEventReceiver;)Z
     .locals 6
-    .param p1    # I
-    .param p2    # [I
-    .param p3    # Lcom/sec/enterprise/knox/IEnterpriseContainerEventReceiver;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5625,8 +5489,6 @@
 
 .method public removeContainer(ILcom/sec/enterprise/knox/IEnterpriseContainerCallback;)Z
     .locals 6
-    .param p1    # I
-    .param p2    # Lcom/sec/enterprise/knox/IEnterpriseContainerCallback;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5703,9 +5565,6 @@
 
 .method public resetPassword(ILjava/lang/String;I)Z
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5772,9 +5631,6 @@
 
 .method public setAllowBluetoothMode(ILandroid/content/ComponentName;I)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5849,9 +5705,6 @@
 
 .method public setAllowBrowser(ILandroid/content/ComponentName;Z)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5938,9 +5791,6 @@
 
 .method public setAllowCamera(ILandroid/content/ComponentName;Z)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -6027,9 +5877,6 @@
 
 .method public setAllowDesktopSync(ILandroid/content/ComponentName;Z)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -6116,9 +5963,6 @@
 
 .method public setAllowInternetSharing(ILandroid/content/ComponentName;Z)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -6205,9 +6049,6 @@
 
 .method public setAllowIrDA(ILandroid/content/ComponentName;Z)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -6294,9 +6135,6 @@
 
 .method public setAllowPOPIMAPEmail(ILandroid/content/ComponentName;Z)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -6383,9 +6221,6 @@
 
 .method public setAllowStorageCard(ILandroid/content/ComponentName;Z)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -6472,9 +6307,6 @@
 
 .method public setAllowTextMessaging(ILandroid/content/ComponentName;Z)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -6561,9 +6393,6 @@
 
 .method public setAllowWifi(ILandroid/content/ComponentName;Z)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -6650,8 +6479,6 @@
 
 .method public setContainerLockOnScreenLock(IZ)Z
     .locals 7
-    .param p1    # I
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -6731,7 +6558,6 @@
 
 .method public setDownloadWakeState(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -6783,8 +6609,6 @@
 
 .method public setLockType(II)Z
     .locals 6
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -6849,9 +6673,6 @@
 
 .method public setMaximumFailedPasswordsForDisable(ILandroid/content/ComponentName;I)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -6926,9 +6747,6 @@
 
 .method public setMaximumFailedPasswordsForWipe(ILandroid/content/ComponentName;I)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -7003,9 +6821,6 @@
 
 .method public setMaximumTimeToLock(ILandroid/content/ComponentName;J)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -7080,9 +6895,6 @@
 
 .method public setMinPasswordComplexChars(ILandroid/content/ComponentName;I)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -7157,8 +6969,6 @@
 
 .method public setPasswordEnabledContainerLockTimeout(IJ)V
     .locals 5
-    .param p1    # I
-    .param p2    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -7212,9 +7022,6 @@
 
 .method public setPasswordExpirationTimeout(ILandroid/content/ComponentName;J)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -7289,9 +7096,6 @@
 
 .method public setPasswordExpires(ILandroid/content/ComponentName;I)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -7366,9 +7170,6 @@
 
 .method public setPasswordHistory(ILandroid/content/ComponentName;I)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -7443,9 +7244,6 @@
 
 .method public setPasswordHistoryLength(ILandroid/content/ComponentName;I)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -7520,9 +7318,6 @@
 
 .method public setPasswordMinimumLength(ILandroid/content/ComponentName;I)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -7597,9 +7392,6 @@
 
 .method public setPasswordMinimumLetters(ILandroid/content/ComponentName;I)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -7674,9 +7466,6 @@
 
 .method public setPasswordMinimumLowerCase(ILandroid/content/ComponentName;I)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -7751,9 +7540,6 @@
 
 .method public setPasswordMinimumNonLetter(ILandroid/content/ComponentName;I)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -7828,9 +7614,6 @@
 
 .method public setPasswordMinimumNumeric(ILandroid/content/ComponentName;I)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -7905,9 +7688,6 @@
 
 .method public setPasswordMinimumSymbols(ILandroid/content/ComponentName;I)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -7982,9 +7762,6 @@
 
 .method public setPasswordMinimumUpperCase(ILandroid/content/ComponentName;I)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -8059,9 +7836,6 @@
 
 .method public setPasswordQuality(ILandroid/content/ComponentName;I)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -8136,8 +7910,6 @@
 
 .method public setPasswordVerifyOnlyOnModeChange(IZ)Z
     .locals 7
-    .param p1    # I
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -8217,8 +7989,6 @@
 
 .method public setPasswordVisibilityEnabled(IZ)V
     .locals 5
-    .param p1    # I
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -8279,9 +8049,6 @@
 
 .method public setSimplePasswordEnabled(ILandroid/content/ComponentName;Z)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -8368,9 +8135,6 @@
 
 .method public startApp(ILjava/lang/String;Ljava/lang/String;)Z
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -8437,8 +8201,6 @@
 
 .method public startTimer(ILandroid/os/IBinder;)Z
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/os/IBinder;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -8503,7 +8265,6 @@
 
 .method public startUpgrade(I)Z
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -8566,8 +8327,6 @@
 
 .method public stopApp(ILjava/lang/String;)Z
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -8632,8 +8391,6 @@
 
 .method public stopTimer(ILandroid/os/IBinder;)Z
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/os/IBinder;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -8698,9 +8455,6 @@
 
 .method public stopTimerWithTimeOut(ILandroid/os/IBinder;J)Z
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/os/IBinder;
-    .param p3    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -8767,7 +8521,6 @@
 
 .method public unRegisterEventReceiver(Lcom/sec/enterprise/knox/IEnterpriseContainerEventReceiver;)Z
     .locals 6
-    .param p1    # Lcom/sec/enterprise/knox/IEnterpriseContainerEventReceiver;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -8842,9 +8595,6 @@
 
 .method public uninstallPackages(ILjava/lang/String;Lcom/sec/enterprise/knox/IEnterpriseContainerCallback;)Z
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/sec/enterprise/knox/IEnterpriseContainerCallback;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -8923,7 +8673,6 @@
 
 .method public unlockContainer(I)Z
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -8986,7 +8735,6 @@
 
 .method public upgradeComplete(I)Z
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -9049,9 +8797,6 @@
 
 .method public validatePasswordComplexity(ILjava/lang/String;Ljava/lang/String;)I
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -9111,9 +8856,6 @@
 
 .method public verifyPassword(ILjava/lang/String;Lcom/sec/enterprise/knox/IEnterpriseContainerCallback;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/sec/enterprise/knox/IEnterpriseContainerCallback;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -9181,9 +8923,6 @@
 
 .method public verifyPasswordForAutoMount(ILjava/lang/String;Lcom/sec/enterprise/knox/IEnterpriseContainerCallback;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/sec/enterprise/knox/IEnterpriseContainerCallback;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -9251,7 +8990,6 @@
 
 .method public wipeSDCardData(I)Z
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

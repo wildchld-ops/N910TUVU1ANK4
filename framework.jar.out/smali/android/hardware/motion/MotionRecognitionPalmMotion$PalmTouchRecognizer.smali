@@ -49,8 +49,6 @@
 
 .method synthetic constructor <init>(Landroid/hardware/motion/MotionRecognitionPalmMotion;Landroid/hardware/motion/MotionRecognitionPalmMotion$1;)V
     .locals 0
-    .param p1    # Landroid/hardware/motion/MotionRecognitionPalmMotion;
-    .param p2    # Landroid/hardware/motion/MotionRecognitionPalmMotion$1;
 
     invoke-direct {p0, p1}, Landroid/hardware/motion/MotionRecognitionPalmMotion$PalmTouchRecognizer;-><init>(Landroid/hardware/motion/MotionRecognitionPalmMotion;)V
 
@@ -59,7 +57,6 @@
 
 .method static synthetic access$2400(Landroid/hardware/motion/MotionRecognitionPalmMotion$PalmTouchRecognizer;)Z
     .locals 1
-    .param p0    # Landroid/hardware/motion/MotionRecognitionPalmMotion$PalmTouchRecognizer;
 
     iget-boolean v0, p0, Landroid/hardware/motion/MotionRecognitionPalmMotion$PalmTouchRecognizer;->mPalmDown:Z
 
@@ -68,8 +65,6 @@
 
 .method static synthetic access$2402(Landroid/hardware/motion/MotionRecognitionPalmMotion$PalmTouchRecognizer;Z)Z
     .locals 0
-    .param p0    # Landroid/hardware/motion/MotionRecognitionPalmMotion$PalmTouchRecognizer;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/hardware/motion/MotionRecognitionPalmMotion$PalmTouchRecognizer;->mPalmDown:Z
 
@@ -80,7 +75,6 @@
 # virtual methods
 .method public Initialize(Landroid/hardware/motion/MotionRecognitionPalmMotion$SurfaceTouchSharingData;)V
     .locals 2
-    .param p1    # Landroid/hardware/motion/MotionRecognitionPalmMotion$SurfaceTouchSharingData;
 
     const/4 v0, 0x0
 
@@ -125,7 +119,6 @@
 
 .method public Process(Landroid/hardware/motion/MotionRecognitionPalmMotion$SurfaceTouchSharingData;)V
     .locals 6
-    .param p1    # Landroid/hardware/motion/MotionRecognitionPalmMotion$SurfaceTouchSharingData;
 
     const/4 v5, 0x1
 

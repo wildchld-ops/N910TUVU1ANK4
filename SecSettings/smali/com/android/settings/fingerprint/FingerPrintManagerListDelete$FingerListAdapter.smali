@@ -30,9 +30,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/settings/fingerprint/FingerPrintManagerListDelete;Landroid/content/Context;IILjava/util/List;)V
     .locals 0
-    .param p2    # Landroid/content/Context;
-    .param p3    # I
-    .param p4    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -56,9 +53,6 @@
 # virtual methods
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     const/4 v5, 0x0
 
@@ -143,7 +137,6 @@
 
 .method public setChecked(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method

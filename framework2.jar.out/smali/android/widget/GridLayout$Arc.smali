@@ -25,8 +25,6 @@
 # direct methods
 .method public constructor <init>(Landroid/widget/GridLayout$Interval;Landroid/widget/GridLayout$MutableInt;)V
     .locals 1
-    .param p1    # Landroid/widget/GridLayout$Interval;
-    .param p2    # Landroid/widget/GridLayout$MutableInt;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

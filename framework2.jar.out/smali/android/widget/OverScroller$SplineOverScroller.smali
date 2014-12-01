@@ -341,7 +341,6 @@
 
 .method constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     const/4 v2, 0x0
 
@@ -408,7 +407,6 @@
 
 .method static synthetic access$000(Landroid/widget/OverScroller$SplineOverScroller;)Z
     .locals 1
-    .param p0    # Landroid/widget/OverScroller$SplineOverScroller;
 
     iget-boolean v0, p0, Landroid/widget/OverScroller$SplineOverScroller;->mFinished:Z
 
@@ -417,8 +415,6 @@
 
 .method static synthetic access$002(Landroid/widget/OverScroller$SplineOverScroller;Z)Z
     .locals 0
-    .param p0    # Landroid/widget/OverScroller$SplineOverScroller;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/widget/OverScroller$SplineOverScroller;->mFinished:Z
 
@@ -427,7 +423,6 @@
 
 .method static synthetic access$100(Landroid/widget/OverScroller$SplineOverScroller;)I
     .locals 1
-    .param p0    # Landroid/widget/OverScroller$SplineOverScroller;
 
     iget v0, p0, Landroid/widget/OverScroller$SplineOverScroller;->mCurrentPosition:I
 
@@ -436,7 +431,6 @@
 
 .method static synthetic access$200(Landroid/widget/OverScroller$SplineOverScroller;)F
     .locals 1
-    .param p0    # Landroid/widget/OverScroller$SplineOverScroller;
 
     iget v0, p0, Landroid/widget/OverScroller$SplineOverScroller;->mCurrVelocity:F
 
@@ -445,7 +439,6 @@
 
 .method static synthetic access$300(Landroid/widget/OverScroller$SplineOverScroller;)I
     .locals 1
-    .param p0    # Landroid/widget/OverScroller$SplineOverScroller;
 
     iget v0, p0, Landroid/widget/OverScroller$SplineOverScroller;->mStart:I
 
@@ -454,7 +447,6 @@
 
 .method static synthetic access$400(Landroid/widget/OverScroller$SplineOverScroller;)I
     .locals 1
-    .param p0    # Landroid/widget/OverScroller$SplineOverScroller;
 
     iget v0, p0, Landroid/widget/OverScroller$SplineOverScroller;->mFinal:I
 
@@ -463,7 +455,6 @@
 
 .method static synthetic access$500(Landroid/widget/OverScroller$SplineOverScroller;)I
     .locals 1
-    .param p0    # Landroid/widget/OverScroller$SplineOverScroller;
 
     iget v0, p0, Landroid/widget/OverScroller$SplineOverScroller;->mDuration:I
 
@@ -472,7 +463,6 @@
 
 .method static synthetic access$600(Landroid/widget/OverScroller$SplineOverScroller;)J
     .locals 2
-    .param p0    # Landroid/widget/OverScroller$SplineOverScroller;
 
     iget-wide v0, p0, Landroid/widget/OverScroller$SplineOverScroller;->mStartTime:J
 
@@ -481,7 +471,6 @@
 
 .method static synthetic access$700(Landroid/widget/OverScroller$SplineOverScroller;)I
     .locals 1
-    .param p0    # Landroid/widget/OverScroller$SplineOverScroller;
 
     iget v0, p0, Landroid/widget/OverScroller$SplineOverScroller;->mState:I
 
@@ -490,9 +479,6 @@
 
 .method private adjustDuration(III)V
     .locals 12
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/high16 v11, 0x42c80000
 
@@ -566,9 +552,6 @@
 
 .method private fitOnBounceCurve(III)V
     .locals 8
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     neg-int v4, p3
 
@@ -663,7 +646,6 @@
 
 .method private static getDeceleration(I)F
     .locals 1
-    .param p0    # I
 
     if-lez p0, :cond_0
 
@@ -680,7 +662,6 @@
 
 .method private getSplineDeceleration(I)D
     .locals 3
-    .param p1    # I
 
     const v0, 0x3eb33333
 
@@ -711,7 +692,6 @@
 
 .method private getSplineFlingDistance(I)D
     .locals 8
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/widget/OverScroller$SplineOverScroller;->getSplineDeceleration(I)D
 
@@ -752,7 +732,6 @@
 
 .method private getSplineFlingDuration(I)I
     .locals 8
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/widget/OverScroller$SplineOverScroller;->getSplineDeceleration(I)D
 
@@ -898,10 +877,6 @@
 
 .method private startAfterEdge(IIII)V
     .locals 13
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     if-le p1, p2, :cond_0
 
@@ -1026,9 +1001,6 @@
 
 .method private startBounceAfterEdge(III)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     if-nez p3, :cond_0
 
@@ -1055,9 +1027,6 @@
 
 .method private startSpringback(III)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v1, 0x0
 
@@ -1204,7 +1173,6 @@
 
 .method extendDuration(I)V
     .locals 5
-    .param p1    # I
 
     invoke-static {}, Landroid/view/animation/AnimationUtils;->currentAnimationTimeMillis()J
 
@@ -1260,11 +1228,6 @@
 
 .method fling(IIIII)V
     .locals 8
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     const/4 v7, 0x1
 
@@ -1422,9 +1385,6 @@
 
 .method notifyEdgeReached(III)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     iget v0, p0, Landroid/widget/OverScroller$SplineOverScroller;->mState:I
 
@@ -1450,7 +1410,6 @@
 
 .method setFinalPosition(I)V
     .locals 1
-    .param p1    # I
 
     iput p1, p0, Landroid/widget/OverScroller$SplineOverScroller;->mFinal:I
 
@@ -1463,7 +1422,6 @@
 
 .method setFriction(F)V
     .locals 0
-    .param p1    # F
 
     iput p1, p0, Landroid/widget/OverScroller$SplineOverScroller;->mFlingFriction:F
 
@@ -1472,9 +1430,6 @@
 
 .method springback(III)Z
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v0, 0x1
 
@@ -1524,9 +1479,6 @@
 
 .method startScroll(III)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v2, 0x0
 
@@ -1978,7 +1930,6 @@
 
 .method updateScroll(F)V
     .locals 3
-    .param p1    # F
 
     iget v0, p0, Landroid/widget/OverScroller$SplineOverScroller;->mStart:I
 

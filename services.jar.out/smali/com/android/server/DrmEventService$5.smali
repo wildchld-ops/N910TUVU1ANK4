@@ -36,8 +36,6 @@
 # virtual methods
 .method public onEvent(Landroid/drm/DrmManagerClient;Landroid/drm/DrmEvent;)V
     .locals 12
-    .param p1    # Landroid/drm/DrmManagerClient;
-    .param p2    # Landroid/drm/DrmEvent;
 
     const/4 v11, 0x1
 

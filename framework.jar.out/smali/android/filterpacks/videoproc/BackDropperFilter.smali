@@ -450,7 +450,6 @@
 
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const/16 v6, 0x8
 
@@ -667,8 +666,6 @@
 
 .method private allocateFrames(Landroid/filterfw/core/FrameFormat;Landroid/filterfw/core/FilterContext;)V
     .locals 13
-    .param p1    # Landroid/filterfw/core/FrameFormat;
-    .param p2    # Landroid/filterfw/core/FilterContext;
 
     const/4 v12, 0x2
 
@@ -1450,7 +1447,6 @@
 
 .method private createMemoryFormat(Landroid/filterfw/core/FrameFormat;)Z
     .locals 11
-    .param p1    # Landroid/filterfw/core/FrameFormat;
 
     const/4 v6, 0x1
 
@@ -1728,7 +1724,6 @@
 
 .method private pyramidLevel(I)I
     .locals 4
-    .param p1    # I
 
     int-to-double v0, p1
 
@@ -1757,9 +1752,6 @@
 
 .method private updateBgScaling(Landroid/filterfw/core/Frame;Landroid/filterfw/core/Frame;Z)V
     .locals 11
-    .param p1    # Landroid/filterfw/core/Frame;
-    .param p2    # Landroid/filterfw/core/Frame;
-    .param p3    # Z
 
     invoke-virtual {p1}, Landroid/filterfw/core/Frame;->getFormat()Landroid/filterfw/core/FrameFormat;
 
@@ -2103,7 +2095,6 @@
 # virtual methods
 .method public close(Landroid/filterfw/core/FilterContext;)V
     .locals 3
-    .param p1    # Landroid/filterfw/core/FilterContext;
 
     iget-object v1, p0, Landroid/filterpacks/videoproc/BackDropperFilter;->mMemoryFormat:Landroid/filterfw/core/MutableFrameFormat;
 
@@ -2187,8 +2178,6 @@
 
 .method public fieldPortValueUpdated(Ljava/lang/String;Landroid/filterfw/core/FilterContext;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/filterfw/core/FilterContext;
 
     const/4 v3, 0x1
 
@@ -2570,8 +2559,6 @@
 
 .method public getOutputFormat(Ljava/lang/String;Landroid/filterfw/core/FrameFormat;)Landroid/filterfw/core/FrameFormat;
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/filterfw/core/FrameFormat;
 
     const/4 v2, 0x0
 
@@ -2599,7 +2586,6 @@
 
 .method public prepare(Landroid/filterfw/core/FilterContext;)V
     .locals 3
-    .param p1    # Landroid/filterfw/core/FilterContext;
 
     const/4 v2, 0x2
 
@@ -2637,7 +2623,6 @@
 
 .method public process(Landroid/filterfw/core/FilterContext;)V
     .locals 32
-    .param p1    # Landroid/filterfw/core/FilterContext;
 
     const-string/jumbo v21, "video"
 

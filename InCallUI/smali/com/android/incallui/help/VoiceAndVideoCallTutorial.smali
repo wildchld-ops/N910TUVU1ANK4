@@ -110,7 +110,6 @@
 
 .method static synthetic access$000(Lcom/android/incallui/help/VoiceAndVideoCallTutorial;)Landroid/widget/Button;
     .locals 1
-    .param p0    # Lcom/android/incallui/help/VoiceAndVideoCallTutorial;
 
     iget-object v0, p0, Lcom/android/incallui/help/VoiceAndVideoCallTutorial;->mEndButton:Landroid/widget/Button;
 
@@ -119,7 +118,6 @@
 
 .method static synthetic access$100(Lcom/android/incallui/help/VoiceAndVideoCallTutorial;)Landroid/widget/ImageView;
     .locals 1
-    .param p0    # Lcom/android/incallui/help/VoiceAndVideoCallTutorial;
 
     iget-object v0, p0, Lcom/android/incallui/help/VoiceAndVideoCallTutorial;->mHelpTabView:Landroid/widget/ImageView;
 
@@ -128,7 +126,6 @@
 
 .method static synthetic access$1000(Lcom/android/incallui/help/VoiceAndVideoCallTutorial;)V
     .locals 0
-    .param p0    # Lcom/android/incallui/help/VoiceAndVideoCallTutorial;
 
     invoke-direct {p0}, Lcom/android/incallui/help/VoiceAndVideoCallTutorial;->runVoiceCallAnimation()V
 
@@ -137,7 +134,6 @@
 
 .method static synthetic access$1100(Lcom/android/incallui/help/VoiceAndVideoCallTutorial;)V
     .locals 0
-    .param p0    # Lcom/android/incallui/help/VoiceAndVideoCallTutorial;
 
     invoke-direct {p0}, Lcom/android/incallui/help/VoiceAndVideoCallTutorial;->callActiveScreenSettings()V
 
@@ -146,8 +142,6 @@
 
 .method static synthetic access$1200(Lcom/android/incallui/help/VoiceAndVideoCallTutorial;Z)V
     .locals 0
-    .param p0    # Lcom/android/incallui/help/VoiceAndVideoCallTutorial;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/incallui/help/VoiceAndVideoCallTutorial;->startActivity(Z)V
 
@@ -156,7 +150,6 @@
 
 .method static synthetic access$1300(Lcom/android/incallui/help/VoiceAndVideoCallTutorial;)Landroid/view/animation/Animation;
     .locals 1
-    .param p0    # Lcom/android/incallui/help/VoiceAndVideoCallTutorial;
 
     iget-object v0, p0, Lcom/android/incallui/help/VoiceAndVideoCallTutorial;->mFlashingAnimation:Landroid/view/animation/Animation;
 
@@ -165,7 +158,6 @@
 
 .method static synthetic access$1400(Lcom/android/incallui/help/VoiceAndVideoCallTutorial;)I
     .locals 1
-    .param p0    # Lcom/android/incallui/help/VoiceAndVideoCallTutorial;
 
     iget v0, p0, Lcom/android/incallui/help/VoiceAndVideoCallTutorial;->mBubbleCount:I
 
@@ -174,7 +166,6 @@
 
 .method static synthetic access$1408(Lcom/android/incallui/help/VoiceAndVideoCallTutorial;)I
     .locals 2
-    .param p0    # Lcom/android/incallui/help/VoiceAndVideoCallTutorial;
 
     iget v0, p0, Lcom/android/incallui/help/VoiceAndVideoCallTutorial;->mBubbleCount:I
 
@@ -187,7 +178,6 @@
 
 .method static synthetic access$1500(Lcom/android/incallui/help/VoiceAndVideoCallTutorial;)Landroid/view/animation/Animation;
     .locals 1
-    .param p0    # Lcom/android/incallui/help/VoiceAndVideoCallTutorial;
 
     iget-object v0, p0, Lcom/android/incallui/help/VoiceAndVideoCallTutorial;->mFadingAnimation:Landroid/view/animation/Animation;
 
@@ -196,7 +186,6 @@
 
 .method static synthetic access$200(Lcom/android/incallui/help/VoiceAndVideoCallTutorial;)Landroid/widget/FrameLayout;
     .locals 1
-    .param p0    # Lcom/android/incallui/help/VoiceAndVideoCallTutorial;
 
     iget-object v0, p0, Lcom/android/incallui/help/VoiceAndVideoCallTutorial;->mTipEndCall:Landroid/widget/FrameLayout;
 
@@ -205,7 +194,6 @@
 
 .method static synthetic access$300(Lcom/android/incallui/help/VoiceAndVideoCallTutorial;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/incallui/help/VoiceAndVideoCallTutorial;
 
     iget-object v0, p0, Lcom/android/incallui/help/VoiceAndVideoCallTutorial;->mExtraStep:Ljava/lang/String;
 
@@ -214,7 +202,6 @@
 
 .method static synthetic access$400(Lcom/android/incallui/help/VoiceAndVideoCallTutorial;)Landroid/widget/FrameLayout;
     .locals 1
-    .param p0    # Lcom/android/incallui/help/VoiceAndVideoCallTutorial;
 
     iget-object v0, p0, Lcom/android/incallui/help/VoiceAndVideoCallTutorial;->mMakeCallComplete:Landroid/widget/FrameLayout;
 
@@ -223,7 +210,6 @@
 
 .method static synthetic access$500(Lcom/android/incallui/help/VoiceAndVideoCallTutorial;)Landroid/view/animation/Animation;
     .locals 1
-    .param p0    # Lcom/android/incallui/help/VoiceAndVideoCallTutorial;
 
     iget-object v0, p0, Lcom/android/incallui/help/VoiceAndVideoCallTutorial;->mBubbleAnimation2:Landroid/view/animation/Animation;
 
@@ -232,7 +218,6 @@
 
 .method static synthetic access$600(Lcom/android/incallui/help/VoiceAndVideoCallTutorial;)V
     .locals 0
-    .param p0    # Lcom/android/incallui/help/VoiceAndVideoCallTutorial;
 
     invoke-direct {p0}, Lcom/android/incallui/help/VoiceAndVideoCallTutorial;->showToast()V
 
@@ -241,7 +226,6 @@
 
 .method static synthetic access$700(Lcom/android/incallui/help/VoiceAndVideoCallTutorial;)Landroid/widget/ImageView;
     .locals 1
-    .param p0    # Lcom/android/incallui/help/VoiceAndVideoCallTutorial;
 
     iget-object v0, p0, Lcom/android/incallui/help/VoiceAndVideoCallTutorial;->callDialingAnimation:Landroid/widget/ImageView;
 
@@ -250,7 +234,6 @@
 
 .method static synthetic access$808(Lcom/android/incallui/help/VoiceAndVideoCallTutorial;)I
     .locals 2
-    .param p0    # Lcom/android/incallui/help/VoiceAndVideoCallTutorial;
 
     iget v0, p0, Lcom/android/incallui/help/VoiceAndVideoCallTutorial;->callTimerCount:I
 
@@ -263,7 +246,6 @@
 
 .method static synthetic access$900(Lcom/android/incallui/help/VoiceAndVideoCallTutorial;)V
     .locals 0
-    .param p0    # Lcom/android/incallui/help/VoiceAndVideoCallTutorial;
 
     invoke-direct {p0}, Lcom/android/incallui/help/VoiceAndVideoCallTutorial;->dispCallDuration()V
 
@@ -272,7 +254,6 @@
 
 .method private animationInit(Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     const v3, 0x7f050003
 
@@ -1100,7 +1081,6 @@
 
 .method private startActivity(Z)V
     .locals 6
-    .param p1    # Z
 
     invoke-static {}, Lcom/sec/android/app/CscFeature;->getInstance()Lcom/sec/android/app/CscFeature;
 
@@ -1692,7 +1672,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 4
-    .param p1    # Landroid/content/res/Configuration;
 
     const/16 v3, 0x64
 
@@ -1771,7 +1750,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 

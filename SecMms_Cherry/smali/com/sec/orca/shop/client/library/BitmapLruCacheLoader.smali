@@ -49,7 +49,6 @@
 
 .method private constructor <init>(I)V
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -74,7 +73,6 @@
 
 .method public static buildBitmapLruCacheLoader(I)Lcom/sec/orca/shop/client/library/BitmapLruCacheLoader;
     .locals 1
-    .param p0    # I
 
     new-instance v0, Lcom/sec/orca/shop/client/library/BitmapLruCacheLoader;
 

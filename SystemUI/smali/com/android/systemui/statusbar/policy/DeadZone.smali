@@ -38,8 +38,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -50,9 +48,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v2, 0x1
 
@@ -139,7 +134,6 @@
 
 .method private getSize(J)F
     .locals 6
-    .param p1    # J
 
     iget v2, p0, Lcom/android/systemui/statusbar/policy/DeadZone;->mSizeMax:I
 
@@ -224,9 +218,6 @@
 
 .method static lerp(FFF)F
     .locals 1
-    .param p0    # F
-    .param p1    # F
-    .param p2    # F
 
     sub-float v0, p1, p0
 
@@ -249,7 +240,6 @@
 
 .method public onDraw(Landroid/graphics/Canvas;)V
     .locals 6
-    .param p1    # Landroid/graphics/Canvas;
 
     const/4 v4, 0x0
 
@@ -326,7 +316,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 5
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getAction()I
 
@@ -447,7 +436,6 @@
 
 .method public poke(Landroid/view/MotionEvent;)V
     .locals 2
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getEventTime()J
 
@@ -467,7 +455,6 @@
 
 .method public setFlash(F)V
     .locals 0
-    .param p1    # F
 
     iput p1, p0, Lcom/android/systemui/statusbar/policy/DeadZone;->mFlashFrac:F
 
@@ -478,7 +465,6 @@
 
 .method public setFlashOnTouchCapture(Z)V
     .locals 1
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/systemui/statusbar/policy/DeadZone;->mShouldFlash:Z
 

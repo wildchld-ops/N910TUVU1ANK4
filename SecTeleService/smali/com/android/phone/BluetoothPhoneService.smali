@@ -312,7 +312,7 @@
 
     sget-object v1, Lcom/android/phone/BluetoothPhoneService$4;->$SwitchMap$com$android$internal$telephony$Call$State:[I
 
-    invoke-virtual {p0}, Ljava/lang/Enum;->ordinal()I
+    invoke-virtual {p0}, Lcom/android/internal/telephony/Call$State;->ordinal()I
 
     move-result v2
 
@@ -2318,24 +2318,6 @@
 
     if-ne v3, v4, :cond_7
 
-    const-string v3, "BluetoothPhoneService"
-
-    const-string v4, "Send fake +CLCC for CDMA if UconnectClccCarkit"
-
-    invoke-static {v3, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    const/4 v3, 0x0
-
-    sput v3, Lcom/android/phone/BluetoothPhoneService;->mLastIndex:I
-
-    invoke-direct/range {p0 .. p0}, Lcom/android/phone/BluetoothPhoneService;->listCurrentCallsCdma()V
-
-    const-string v3, "BluetoothPhoneService"
-
-    const-string v4, "Send fake alerting +CIEV for CDMA"
-
-    invoke-static {v3, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lcom/android/phone/BluetoothPhoneService;->mBluetoothHeadset:Landroid/bluetooth/BluetoothHeadset;
@@ -2373,6 +2355,12 @@
     move-result v8
 
     invoke-virtual/range {v3 .. v8}, Landroid/bluetooth/BluetoothHeadset;->phoneStateChanged(IIILjava/lang/String;I)V
+
+    const-string v3, "BluetoothPhoneService"
+
+    const-string v4, "Send fake alerting +CIEV for CDMA"
+
+    invoke-static {v3, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
@@ -2862,7 +2850,7 @@
     goto :goto_0
 
     :cond_3
-    invoke-virtual {v6}, Ljava/util/AbstractSequentialList;->iterator()Ljava/util/Iterator;
+    invoke-virtual {v6}, Ljava/util/LinkedList;->iterator()Ljava/util/Iterator;
 
     move-result-object v13
 
@@ -2961,7 +2949,7 @@
     invoke-virtual {v15, v7}, Ljava/util/LinkedList;->remove(Ljava/lang/Object;)Z
 
     :cond_8
-    invoke-virtual {v15}, Ljava/util/AbstractCollection;->isEmpty()Z
+    invoke-virtual {v15}, Ljava/util/LinkedList;->isEmpty()Z
 
     move-result v19
 
@@ -3322,7 +3310,7 @@
 
     sget-object v0, Lcom/android/phone/BluetoothPhoneService$4;->$SwitchMap$com$android$internal$telephony$Call$State:[I
 
-    invoke-virtual {v9}, Ljava/lang/Enum;->ordinal()I
+    invoke-virtual {v9}, Lcom/android/internal/telephony/Call$State;->ordinal()I
 
     move-result v1
 
@@ -3606,7 +3594,7 @@
     :cond_1
     const-string v1, "power"
 
-    invoke-virtual {p0, v1}, Landroid/content/ContextWrapper;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v1}, Lcom/android/phone/BluetoothPhoneService;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -3743,7 +3731,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-virtual {p0}, Landroid/app/Service;->stopSelf()V
+    invoke-virtual {p0}, Lcom/android/phone/BluetoothPhoneService;->stopSelf()V
 
     :cond_0
     sget-boolean v0, Lcom/android/phone/BluetoothPhoneService;->VDBG:Z

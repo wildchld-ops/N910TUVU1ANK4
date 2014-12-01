@@ -35,8 +35,6 @@
 # direct methods
 .method public constructor <init>(II)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;,
@@ -104,7 +102,6 @@
 
 .method static synthetic access$000(Landroid/media/audiofx/BassBoost;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Landroid/media/audiofx/BassBoost;
 
     iget-object v0, p0, Landroid/media/audiofx/BassBoost;->mParamListenerLock:Ljava/lang/Object;
 
@@ -113,7 +110,6 @@
 
 .method static synthetic access$100(Landroid/media/audiofx/BassBoost;)Landroid/media/audiofx/BassBoost$OnParameterChangeListener;
     .locals 1
-    .param p0    # Landroid/media/audiofx/BassBoost;
 
     iget-object v0, p0, Landroid/media/audiofx/BassBoost;->mParamListener:Landroid/media/audiofx/BassBoost$OnParameterChangeListener;
 
@@ -192,7 +188,6 @@
 
 .method public setParameterListener(Landroid/media/audiofx/BassBoost$OnParameterChangeListener;)V
     .locals 3
-    .param p1    # Landroid/media/audiofx/BassBoost$OnParameterChangeListener;
 
     iget-object v1, p0, Landroid/media/audiofx/BassBoost;->mParamListenerLock:Ljava/lang/Object;
 
@@ -234,7 +229,6 @@
 
 .method public setProperties(Landroid/media/audiofx/BassBoost$Settings;)V
     .locals 2
-    .param p1    # Landroid/media/audiofx/BassBoost$Settings;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;,
@@ -258,7 +252,6 @@
 
 .method public setStrength(S)V
     .locals 1
-    .param p1    # S
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;,

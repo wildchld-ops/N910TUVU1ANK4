@@ -113,9 +113,6 @@
 # virtual methods
 .method public uca_CHInit(B[B[I)J
     .locals 2
-    .param p1    # B
-    .param p2    # [B
-    .param p3    # [I
 
     invoke-static {p1, p2, p3}, Landroid/ktuca/KtUcaServiceJni;->KUCA_CHInit(B[B[I)J
 
@@ -126,8 +123,6 @@
 
 .method public uca_Close([BB)J
     .locals 2
-    .param p1    # [B
-    .param p2    # B
 
     invoke-static {p1, p2}, Landroid/ktuca/KtUcaServiceJni;->KUCA_Close([BB)J
 
@@ -138,8 +133,6 @@
 
 .method public uca_CloseT([BB)J
     .locals 2
-    .param p1    # [B
-    .param p2    # B
 
     invoke-static {p1, p2}, Landroid/ktuca/KtUcaServiceJni;->KUCA_CloseT([BB)J
 
@@ -150,7 +143,6 @@
 
 .method public uca_KUH_Establish(B)J
     .locals 2
-    .param p1    # B
 
     invoke-static {p1}, Landroid/ktuca/KtUcaServiceJni;->KUCA_KUH_Establish(B)J
 
@@ -161,7 +153,6 @@
 
 .method public uca_KUH_Release(B)J
     .locals 2
-    .param p1    # B
 
     invoke-static {p1}, Landroid/ktuca/KtUcaServiceJni;->KUCA_KUH_Release(B)J
 
@@ -172,11 +163,6 @@
 
 .method public uca_KUH_Transmit(B[BI[B[I)J
     .locals 2
-    .param p1    # B
-    .param p2    # [B
-    .param p3    # I
-    .param p4    # [B
-    .param p5    # [I
 
     invoke-static {p1, p2, p3, p4, p5}, Landroid/ktuca/KtUcaServiceJni;->KUCA_KUH_Transmit(B[BI[B[I)J
 
@@ -187,9 +173,6 @@
 
 .method public uca_Open([B[B[I)J
     .locals 2
-    .param p1    # [B
-    .param p2    # [B
-    .param p3    # [I
 
     invoke-static {p1, p2, p3}, Landroid/ktuca/KtUcaServiceJni;->KUCA_Open([B[B[I)J
 
@@ -200,9 +183,6 @@
 
 .method public uca_OpenT([B[B[I)J
     .locals 2
-    .param p1    # [B
-    .param p2    # [B
-    .param p3    # [I
 
     invoke-static {p1, p2, p3}, Landroid/ktuca/KtUcaServiceJni;->KUCA_OpenT([B[B[I)J
 
@@ -213,11 +193,6 @@
 
 .method public uca_Transmit([B[BI[B[I)J
     .locals 2
-    .param p1    # [B
-    .param p2    # [B
-    .param p3    # I
-    .param p4    # [B
-    .param p5    # [I
 
     invoke-static {p1, p2, p3, p4, p5}, Landroid/ktuca/KtUcaServiceJni;->KUCA_Transmit([B[BI[B[I)J
 
@@ -228,9 +203,6 @@
 
 .method public uca_UCAVersion([B[B[I)J
     .locals 2
-    .param p1    # [B
-    .param p2    # [B
-    .param p3    # [I
 
     invoke-static {p1, p2, p3}, Landroid/ktuca/KtUcaServiceJni;->KUCA_UCAVersion([B[B[I)J
 
@@ -241,11 +213,6 @@
 
 .method public uca_getHandle([B[B[B[B[I)J
     .locals 2
-    .param p1    # [B
-    .param p2    # [B
-    .param p3    # [B
-    .param p4    # [B
-    .param p5    # [I
 
     invoke-static {p1, p2, p3, p4, p5}, Landroid/ktuca/KtUcaServiceJni;->KUCA_getHandle([B[B[B[B[I)J
 
@@ -256,11 +223,6 @@
 
 .method public uca_getICCID([B[B[II[B)J
     .locals 2
-    .param p1    # [B
-    .param p2    # [B
-    .param p3    # [I
-    .param p4    # I
-    .param p5    # [B
 
     invoke-static {p1, p2, p3, p4, p5}, Landroid/ktuca/KtUcaServiceJni;->KUCA_getICCID([B[B[II[B)J
 
@@ -271,11 +233,6 @@
 
 .method public uca_getIMSI([B[B[II[B)J
     .locals 2
-    .param p1    # [B
-    .param p2    # [B
-    .param p3    # [I
-    .param p4    # I
-    .param p5    # [B
 
     invoke-static {p1, p2, p3, p4, p5}, Landroid/ktuca/KtUcaServiceJni;->KUCA_getIMSI([B[B[II[B)J
 
@@ -286,11 +243,6 @@
 
 .method public uca_getMDN([B[B[II[B)J
     .locals 2
-    .param p1    # [B
-    .param p2    # [B
-    .param p3    # [I
-    .param p4    # I
-    .param p5    # [B
 
     invoke-static {p1, p2, p3, p4, p5}, Landroid/ktuca/KtUcaServiceJni;->KUCA_getMDN([B[B[II[B)J
 
@@ -301,11 +253,6 @@
 
 .method public uca_getMODEL([B[B[II[B)J
     .locals 2
-    .param p1    # [B
-    .param p2    # [B
-    .param p3    # [I
-    .param p4    # I
-    .param p5    # [B
 
     invoke-static {p1, p2, p3, p4, p5}, Landroid/ktuca/KtUcaServiceJni;->KUCA_getMODEL([B[B[II[B)J
 
@@ -316,11 +263,6 @@
 
 .method public uca_getMSISDN([B[B[II[B)J
     .locals 2
-    .param p1    # [B
-    .param p2    # [B
-    .param p3    # [I
-    .param p4    # I
-    .param p5    # [B
 
     invoke-static {p1, p2, p3, p4, p5}, Landroid/ktuca/KtUcaServiceJni;->KUCA_getMSISDN([B[B[II[B)J
 
@@ -331,11 +273,6 @@
 
 .method public uca_getPUID([B[B[II[B)J
     .locals 2
-    .param p1    # [B
-    .param p2    # [B
-    .param p3    # [I
-    .param p4    # I
-    .param p5    # [B
 
     invoke-static {p1, p2, p3, p4, p5}, Landroid/ktuca/KtUcaServiceJni;->KUCA_getPUID([B[B[II[B)J
 
@@ -346,10 +283,6 @@
 
 .method public uca_getPinStatus([BI[B[I)J
     .locals 2
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # [B
-    .param p4    # [I
 
     invoke-static {p1, p2, p3, p4}, Landroid/ktuca/KtUcaServiceJni;->KUCA_getPinStatus([BI[B[I)J
 
@@ -360,9 +293,6 @@
 
 .method public uca_getSIMInfo([B[B[I)J
     .locals 2
-    .param p1    # [B
-    .param p2    # [B
-    .param p3    # [I
 
     invoke-static {p1, p2, p3}, Landroid/ktuca/KtUcaServiceJni;->KUCA_getSIMInfo([B[B[I)J
 
@@ -373,8 +303,6 @@
 
 .method public uca_getSimStatus([B[B)J
     .locals 2
-    .param p1    # [B
-    .param p2    # [B
 
     invoke-static {p1, p2}, Landroid/ktuca/KtUcaServiceJni;->KUCA_getSimStatus([B[B)J
 
@@ -385,7 +313,6 @@
 
 .method public uca_printCHInfo(B)J
     .locals 2
-    .param p1    # B
 
     invoke-static {p1}, Landroid/ktuca/KtUcaServiceJni;->KUCA_printCHInfo(B)J
 
@@ -396,11 +323,6 @@
 
 .method public uca_usimAUTH([B[B[B[B[I)J
     .locals 2
-    .param p1    # [B
-    .param p2    # [B
-    .param p3    # [B
-    .param p4    # [B
-    .param p5    # [I
 
     invoke-static {p1, p2, p3, p4, p5}, Landroid/ktuca/KtUcaServiceJni;->KUCA_usimAUTH([B[B[B[B[I)J
 
@@ -411,11 +333,6 @@
 
 .method public uca_verifyPin([BILjava/lang/String;[B[I)J
     .locals 2
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # [B
-    .param p5    # [I
 
     invoke-static {p1, p2, p3, p4, p5}, Landroid/ktuca/KtUcaServiceJni;->KUCA_verifyPin([BILjava/lang/String;[B[I)J
 

@@ -29,10 +29,6 @@
 # direct methods
 .method public constructor <init>(I[Landroid/view/textservice/TextInfo;IZ)V
     .locals 0
-    .param p1    # I
-    .param p2    # [Landroid/view/textservice/TextInfo;
-    .param p3    # I
-    .param p4    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

@@ -59,8 +59,6 @@
 
 .method static synthetic access$1300(Landroid/webkitsec/ZoomManager$FocusMovementQueue;F)V
     .locals 0
-    .param p0    # Landroid/webkitsec/ZoomManager$FocusMovementQueue;
-    .param p1    # F
 
     invoke-direct {p0, p1}, Landroid/webkitsec/ZoomManager$FocusMovementQueue;->add(F)V
 
@@ -69,7 +67,6 @@
 
 .method static synthetic access$1400(Landroid/webkitsec/ZoomManager$FocusMovementQueue;)F
     .locals 1
-    .param p0    # Landroid/webkitsec/ZoomManager$FocusMovementQueue;
 
     invoke-direct {p0}, Landroid/webkitsec/ZoomManager$FocusMovementQueue;->getSum()F
 
@@ -80,7 +77,6 @@
 
 .method static synthetic access$900(Landroid/webkitsec/ZoomManager$FocusMovementQueue;)V
     .locals 0
-    .param p0    # Landroid/webkitsec/ZoomManager$FocusMovementQueue;
 
     invoke-direct {p0}, Landroid/webkitsec/ZoomManager$FocusMovementQueue;->clear()V
 
@@ -89,7 +85,6 @@
 
 .method private add(F)V
     .locals 3
-    .param p1    # F
 
     iget v0, p0, Landroid/webkitsec/ZoomManager$FocusMovementQueue;->mSum:F
 

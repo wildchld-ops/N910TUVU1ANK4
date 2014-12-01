@@ -44,7 +44,6 @@
 
 .method public static getInternetAvailability(Landroid/content/Context;)Lcom/touchtype_fluency/service/util/NetworkUtil$NetworkState;
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     :try_start_0
     invoke-static {p0}, Lcom/touchtype_fluency/service/util/NetworkUtil;->getNetworkInfo(Landroid/content/Context;)Landroid/net/NetworkInfo;
@@ -76,7 +75,6 @@
 
 .method private static getNetworkInfo(Landroid/content/Context;)Landroid/net/NetworkInfo;
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     const-string v1, "connectivity"
 
@@ -113,7 +111,6 @@
 
 .method private static isConnected(Landroid/net/NetworkInfo;)Lcom/touchtype_fluency/service/util/NetworkUtil$NetworkState;
     .locals 1
-    .param p0    # Landroid/net/NetworkInfo;
 
     if-eqz p0, :cond_0
 
@@ -164,7 +161,6 @@
 
 .method public static isDataRoammingOff(Landroid/content/Context;)Z
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -196,7 +192,6 @@
 
 .method public static isFlightMode(Landroid/content/Context;)Z
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -220,7 +215,6 @@
 
 .method public static isInternetAvailable(Landroid/content/Context;)Z
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Lcom/touchtype_fluency/service/util/NetworkUtil;->getInternetAvailability(Landroid/content/Context;)Lcom/touchtype_fluency/service/util/NetworkUtil$NetworkState;
 
@@ -243,7 +237,6 @@
 
 .method public static isMobileDataOff(Landroid/content/Context;)Z
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -275,7 +268,6 @@
 
 .method public static isNoSignal(Landroid/content/Context;)Z
     .locals 5
-    .param p0    # Landroid/content/Context;
 
     const/4 v2, 0x0
 
@@ -325,7 +317,6 @@
 
 .method public static isReachToDataLimit(Landroid/content/Context;)Z
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -357,7 +348,6 @@
 
 .method public static isRoamming(Landroid/content/Context;)Z
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     const-string v1, "phone"
 
@@ -376,7 +366,6 @@
 
 .method public static isWIFIorETHERNETConnected(Landroid/content/Context;)Z
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Lcom/touchtype_fluency/service/util/NetworkUtil;->getInternetAvailability(Landroid/content/Context;)Lcom/touchtype_fluency/service/util/NetworkUtil$NetworkState;
 

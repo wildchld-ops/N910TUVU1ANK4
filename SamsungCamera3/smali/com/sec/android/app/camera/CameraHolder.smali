@@ -178,7 +178,6 @@
 
 .method static synthetic access$000(Lcom/sec/android/app/camera/CameraHolder;)I
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/CameraHolder;
 
     iget v0, p0, Lcom/sec/android/app/camera/CameraHolder;->mUsers:I
 
@@ -187,7 +186,6 @@
 
 .method static synthetic access$100(Lcom/sec/android/app/camera/CameraHolder;)V
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/CameraHolder;
 
     invoke-direct {p0}, Lcom/sec/android/app/camera/CameraHolder;->releaseCamera()V
 
@@ -346,7 +344,6 @@
 
 .method public getCameraInfo(I)Lcom/sec/android/seccamera/SecCamera$CameraInfo;
     .locals 2
-    .param p1    # I
 
     iget v0, p0, Lcom/sec/android/app/camera/CameraHolder;->mDualBackCameraId:I
 
@@ -486,7 +483,6 @@
 
 .method public declared-synchronized open(I)Lcom/sec/android/seccamera/SecCamera;
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/sec/android/app/camera/CameraHardwareException;
@@ -691,8 +687,6 @@
 
 .method public declared-synchronized open(II)Lcom/sec/android/seccamera/SecCamera;
     .locals 5
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/sec/android/app/camera/CameraHardwareException;
@@ -953,7 +947,6 @@
 
 .method public declared-synchronized tryOpen(I)Lcom/sec/android/seccamera/SecCamera;
     .locals 4
-    .param p1    # I
 
     const/4 v1, 0x0
 

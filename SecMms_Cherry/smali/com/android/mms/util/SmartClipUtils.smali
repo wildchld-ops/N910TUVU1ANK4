@@ -20,7 +20,6 @@
 # direct methods
 .method public constructor <init>(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -35,7 +34,6 @@
 
 .method public static getSmsToUri(Landroid/content/Intent;)Landroid/net/Uri;
     .locals 2
-    .param p0    # Landroid/content/Intent;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -76,7 +74,6 @@
 
 .method public static getThreadId(Landroid/content/Intent;)J
     .locals 3
-    .param p0    # Landroid/content/Intent;
 
     invoke-virtual {p0}, Landroid/content/Intent;->getData()Landroid/net/Uri;
 
@@ -99,7 +96,6 @@
 
 .method public static isComposerIntent(Landroid/content/Intent;)Z
     .locals 3
-    .param p0    # Landroid/content/Intent;
 
     invoke-virtual {p0}, Landroid/content/Intent;->getData()Landroid/net/Uri;
 
@@ -128,7 +124,6 @@
 
 .method public static isListIntent(Landroid/content/Intent;)Z
     .locals 3
-    .param p0    # Landroid/content/Intent;
 
     invoke-virtual {p0}, Landroid/content/Intent;->getData()Landroid/net/Uri;
 
@@ -161,7 +156,6 @@
 
 .method public static setConversationListTag(Landroid/app/Activity;)V
     .locals 1
-    .param p0    # Landroid/app/Activity;
 
     invoke-virtual {p0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
 
@@ -178,7 +172,6 @@
 
 .method public static setConversationListTag(Landroid/view/View;)V
     .locals 4
-    .param p0    # Landroid/view/View;
 
     const-string v0, "Mms/SmartClipUtils"
 
@@ -207,7 +200,6 @@
 # virtual methods
 .method public updateComposerTag(Lcom/android/mms/data/Conversation;)V
     .locals 5
-    .param p1    # Lcom/android/mms/data/Conversation;
 
     if-eqz p1, :cond_0
 

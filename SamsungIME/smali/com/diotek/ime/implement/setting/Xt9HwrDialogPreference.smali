@@ -33,8 +33,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/preference/DialogPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -55,9 +53,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Landroid/preference/DialogPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
@@ -78,7 +73,6 @@
 
 .method static synthetic access$000(Lcom/diotek/ime/implement/setting/Xt9HwrDialogPreference;)I
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/setting/Xt9HwrDialogPreference;
 
     iget v0, p0, Lcom/diotek/ime/implement/setting/Xt9HwrDialogPreference;->mCurrentIndex:I
 
@@ -87,8 +81,6 @@
 
 .method static synthetic access$002(Lcom/diotek/ime/implement/setting/Xt9HwrDialogPreference;I)I
     .locals 0
-    .param p0    # Lcom/diotek/ime/implement/setting/Xt9HwrDialogPreference;
-    .param p1    # I
 
     iput p1, p0, Lcom/diotek/ime/implement/setting/Xt9HwrDialogPreference;->mCurrentIndex:I
 
@@ -97,8 +89,6 @@
 
 .method static synthetic access$100(Lcom/diotek/ime/implement/setting/Xt9HwrDialogPreference;I)V
     .locals 0
-    .param p0    # Lcom/diotek/ime/implement/setting/Xt9HwrDialogPreference;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/diotek/ime/implement/setting/Xt9HwrDialogPreference;->saveInputMethodToSet(I)V
 
@@ -107,7 +97,6 @@
 
 .method static synthetic access$200(Lcom/diotek/ime/implement/setting/Xt9HwrDialogPreference;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/setting/Xt9HwrDialogPreference;
 
     iget-object v0, p0, Lcom/diotek/ime/implement/setting/Xt9HwrDialogPreference;->mContext:Landroid/content/Context;
 
@@ -116,7 +105,6 @@
 
 .method private saveInputMethodToSet(I)V
     .locals 4
-    .param p1    # I
 
     iget-object v2, p0, Lcom/diotek/ime/implement/setting/Xt9HwrDialogPreference;->mContext:Landroid/content/Context;
 
@@ -204,7 +192,6 @@
 # virtual methods
 .method public findIndexOfValue(Ljava/lang/CharSequence;)I
     .locals 3
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v1, -0x1
 
@@ -248,7 +235,6 @@
 
 .method protected onBindView(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     invoke-direct {p0}, Lcom/diotek/ime/implement/setting/Xt9HwrDialogPreference;->setDefaultThickness()V
 
@@ -267,7 +253,6 @@
 
 .method protected onPrepareDialogBuilder(Landroid/app/AlertDialog$Builder;)V
     .locals 4
-    .param p1    # Landroid/app/AlertDialog$Builder;
 
     const/4 v3, 0x1
 
@@ -350,8 +335,6 @@
 
 .method public setEntries(Landroid/content/res/TypedArray;[Ljava/lang/String;)V
     .locals 6
-    .param p1    # Landroid/content/res/TypedArray;
-    .param p2    # [Ljava/lang/String;
 
     iput-object p2, p0, Lcom/diotek/ime/implement/setting/Xt9HwrDialogPreference;->mEntryValues:[Ljava/lang/String;
 
@@ -400,7 +383,6 @@
 
 .method public setEntryValues([Ljava/lang/String;)V
     .locals 0
-    .param p1    # [Ljava/lang/String;
 
     iput-object p1, p0, Lcom/diotek/ime/implement/setting/Xt9HwrDialogPreference;->mEntries:[Ljava/lang/String;
 
@@ -409,8 +391,6 @@
 
 .method public setSummary(Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p0}, Landroid/preference/Preference;->getSharedPreferences()Landroid/content/SharedPreferences;
 

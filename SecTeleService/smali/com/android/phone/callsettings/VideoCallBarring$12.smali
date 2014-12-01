@@ -106,7 +106,7 @@
 
     iget-object v1, p0, Lcom/android/phone/callsettings/VideoCallBarring$12;->this$0:Lcom/android/phone/callsettings/VideoCallBarring;
 
-    invoke-virtual {v1}, Landroid/app/Fragment;->isAdded()Z
+    invoke-virtual {v1}, Lcom/android/phone/callsettings/VideoCallBarring;->isAdded()Z
 
     move-result v1
 

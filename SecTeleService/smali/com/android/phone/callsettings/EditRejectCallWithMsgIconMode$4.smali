@@ -130,7 +130,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1, v4}, Landroid/widget/TextView;->setEnabled(Z)V
+    invoke-virtual {v1, v4}, Landroid/widget/Button;->setEnabled(Z)V
 
     :cond_1
     :goto_1
@@ -156,7 +156,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1, v5}, Landroid/widget/TextView;->setEnabled(Z)V
+    invoke-virtual {v1, v5}, Landroid/widget/Button;->setEnabled(Z)V
 
     goto :goto_1
 .end method

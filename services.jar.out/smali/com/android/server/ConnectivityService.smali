@@ -723,10 +723,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/os/INetworkManagementService;Landroid/net/INetworkStatsService;Landroid/net/INetworkPolicyManager;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/INetworkManagementService;
-    .param p3    # Landroid/net/INetworkStatsService;
-    .param p4    # Landroid/net/INetworkPolicyManager;
 
     const/4 v5, 0x0
 
@@ -747,11 +743,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/os/INetworkManagementService;Landroid/net/INetworkStatsService;Landroid/net/INetworkPolicyManager;Lcom/android/server/ConnectivityService$NetworkFactory;)V
     .locals 38
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/INetworkManagementService;
-    .param p3    # Landroid/net/INetworkStatsService;
-    .param p4    # Landroid/net/INetworkPolicyManager;
-    .param p5    # Lcom/android/server/ConnectivityService$NetworkFactory;
 
     invoke-direct/range {p0 .. p0}, Landroid/net/IConnectivityManager$Stub;-><init>()V
 
@@ -2999,7 +2990,6 @@
 
 .method static synthetic access$004(Lcom/android/server/ConnectivityService;)I
     .locals 1
-    .param p0    # Lcom/android/server/ConnectivityService;
 
     iget v0, p0, Lcom/android/server/ConnectivityService;->mRouteIdCtr:I
 
@@ -3012,7 +3002,6 @@
 
 .method static synthetic access$100(Lcom/android/server/ConnectivityService;)Lcom/android/server/ConnectivityService$InternalHandler;
     .locals 1
-    .param p0    # Lcom/android/server/ConnectivityService;
 
     iget-object v0, p0, Lcom/android/server/ConnectivityService;->mHandler:Lcom/android/server/ConnectivityService$InternalHandler;
 
@@ -3021,7 +3010,6 @@
 
 .method static synthetic access$1000(Lcom/android/server/ConnectivityService;)[Landroid/net/NetworkStateTracker;
     .locals 1
-    .param p0    # Lcom/android/server/ConnectivityService;
 
     iget-object v0, p0, Lcom/android/server/ConnectivityService;->mNetTrackers:[Landroid/net/NetworkStateTracker;
 
@@ -3030,7 +3018,6 @@
 
 .method static synthetic access$1100(Lcom/android/server/ConnectivityService;)Landroid/os/INetworkManagementService;
     .locals 1
-    .param p0    # Lcom/android/server/ConnectivityService;
 
     iget-object v0, p0, Lcom/android/server/ConnectivityService;->mNetd:Landroid/os/INetworkManagementService;
 
@@ -3039,7 +3026,6 @@
 
 .method static synthetic access$1200(Lcom/android/server/ConnectivityService;)I
     .locals 1
-    .param p0    # Lcom/android/server/ConnectivityService;
 
     iget v0, p0, Lcom/android/server/ConnectivityService;->mActiveDefaultNetwork:I
 
@@ -3048,8 +3034,6 @@
 
 .method static synthetic access$1300(Lcom/android/server/ConnectivityService;Landroid/net/NetworkStateTracker;)V
     .locals 0
-    .param p0    # Lcom/android/server/ConnectivityService;
-    .param p1    # Landroid/net/NetworkStateTracker;
 
     invoke-direct {p0, p1}, Lcom/android/server/ConnectivityService;->updateTcpDelayedAckSettings(Landroid/net/NetworkStateTracker;)V
 
@@ -3058,8 +3042,6 @@
 
 .method static synthetic access$1400(Lcom/android/server/ConnectivityService;Landroid/net/NetworkStateTracker;)V
     .locals 0
-    .param p0    # Lcom/android/server/ConnectivityService;
-    .param p1    # Landroid/net/NetworkStateTracker;
 
     invoke-direct {p0, p1}, Lcom/android/server/ConnectivityService;->updateNetworkSettings(Landroid/net/NetworkStateTracker;)V
 
@@ -3068,7 +3050,6 @@
 
 .method static synthetic access$1500(Lcom/android/server/ConnectivityService;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/server/ConnectivityService;
 
     iget-object v0, p0, Lcom/android/server/ConnectivityService;->mContext:Landroid/content/Context;
 
@@ -3077,8 +3058,6 @@
 
 .method static synthetic access$1600(Lcom/android/server/ConnectivityService;Landroid/net/NetworkInfo;)Z
     .locals 1
-    .param p0    # Lcom/android/server/ConnectivityService;
-    .param p1    # Landroid/net/NetworkInfo;
 
     invoke-direct {p0, p1}, Lcom/android/server/ConnectivityService;->isCaptivePortalAllowedNetwork(Landroid/net/NetworkInfo;)Z
 
@@ -3089,8 +3068,6 @@
 
 .method static synthetic access$1700(Lcom/android/server/ConnectivityService;Landroid/net/NetworkInfo;)V
     .locals 0
-    .param p0    # Lcom/android/server/ConnectivityService;
-    .param p1    # Landroid/net/NetworkInfo;
 
     invoke-direct {p0, p1}, Lcom/android/server/ConnectivityService;->handleConnectionFailure(Landroid/net/NetworkInfo;)V
 
@@ -3099,8 +3076,6 @@
 
 .method static synthetic access$1800(Lcom/android/server/ConnectivityService;Landroid/net/NetworkInfo;)V
     .locals 0
-    .param p0    # Lcom/android/server/ConnectivityService;
-    .param p1    # Landroid/net/NetworkInfo;
 
     invoke-direct {p0, p1}, Lcom/android/server/ConnectivityService;->handleCaptivePortalTrackerCheck(Landroid/net/NetworkInfo;)V
 
@@ -3109,10 +3084,6 @@
 
 .method static synthetic access$1900(Lcom/android/server/ConnectivityService;Landroid/net/LinkProperties;Landroid/net/RouteInfo;Z)Z
     .locals 1
-    .param p0    # Lcom/android/server/ConnectivityService;
-    .param p1    # Landroid/net/LinkProperties;
-    .param p2    # Landroid/net/RouteInfo;
-    .param p3    # Z
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/server/ConnectivityService;->removeRoute(Landroid/net/LinkProperties;Landroid/net/RouteInfo;Z)Z
 
@@ -3123,8 +3094,6 @@
 
 .method static synthetic access$200(Landroid/content/Context;Landroid/os/Handler;)Landroid/net/NetworkStateTracker;
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/os/Handler;
 
     invoke-static {p0, p1}, Lcom/android/server/ConnectivityService;->makeWimaxStateTracker(Landroid/content/Context;Landroid/os/Handler;)Landroid/net/NetworkStateTracker;
 
@@ -3135,8 +3104,6 @@
 
 .method static synthetic access$2000(Lcom/android/server/ConnectivityService;Landroid/net/NetworkInfo;)V
     .locals 0
-    .param p0    # Lcom/android/server/ConnectivityService;
-    .param p1    # Landroid/net/NetworkInfo;
 
     invoke-direct {p0, p1}, Lcom/android/server/ConnectivityService;->handleDisconnect(Landroid/net/NetworkInfo;)V
 
@@ -3145,8 +3112,6 @@
 
 .method static synthetic access$2100(Lcom/android/server/ConnectivityService;Landroid/net/NetworkInfo;)V
     .locals 0
-    .param p0    # Lcom/android/server/ConnectivityService;
-    .param p1    # Landroid/net/NetworkInfo;
 
     invoke-direct {p0, p1}, Lcom/android/server/ConnectivityService;->handleConnect(Landroid/net/NetworkInfo;)V
 
@@ -3155,7 +3120,6 @@
 
 .method static synthetic access$2200(Lcom/android/server/ConnectivityService;)Lcom/android/server/net/LockdownVpnTracker;
     .locals 1
-    .param p0    # Lcom/android/server/ConnectivityService;
 
     iget-object v0, p0, Lcom/android/server/ConnectivityService;->mLockdownTracker:Lcom/android/server/net/LockdownVpnTracker;
 
@@ -3164,7 +3128,6 @@
 
 .method static synthetic access$2300(Lcom/android/server/ConnectivityService;)Lcom/android/server/enterprise/billing/EnterpriseConnectivity;
     .locals 1
-    .param p0    # Lcom/android/server/ConnectivityService;
 
     iget-object v0, p0, Lcom/android/server/ConnectivityService;->mEnterpriseConnectivity:Lcom/android/server/enterprise/billing/EnterpriseConnectivity;
 
@@ -3173,7 +3136,6 @@
 
 .method static synthetic access$2400(Lcom/android/server/ConnectivityService;)Lcom/sec/android/emergencymode/EmergencyManager;
     .locals 1
-    .param p0    # Lcom/android/server/ConnectivityService;
 
     iget-object v0, p0, Lcom/android/server/ConnectivityService;->mEmergencyMgr:Lcom/sec/android/emergencymode/EmergencyManager;
 
@@ -3182,7 +3144,6 @@
 
 .method static synthetic access$2500(Lcom/android/server/ConnectivityService;)[Landroid/net/LinkProperties;
     .locals 1
-    .param p0    # Lcom/android/server/ConnectivityService;
 
     iget-object v0, p0, Lcom/android/server/ConnectivityService;->mCurrentLinkProperties:[Landroid/net/LinkProperties;
 
@@ -3191,7 +3152,6 @@
 
 .method static synthetic access$2600(Lcom/android/server/ConnectivityService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/ConnectivityService;
 
     invoke-direct {p0}, Lcom/android/server/ConnectivityService;->checkRelatedFeature()Z
 
@@ -3202,8 +3162,6 @@
 
 .method static synthetic access$2700(Lcom/android/server/ConnectivityService;I)Z
     .locals 1
-    .param p0    # Lcom/android/server/ConnectivityService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/ConnectivityService;->checkCondition(I)Z
 
@@ -3214,9 +3172,6 @@
 
 .method static synthetic access$2800(Lcom/android/server/ConnectivityService;IZ)V
     .locals 0
-    .param p0    # Lcom/android/server/ConnectivityService;
-    .param p1    # I
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/ConnectivityService;->handleConnectivityChange(IZ)V
 
@@ -3225,7 +3180,6 @@
 
 .method static synthetic access$2900(Lcom/android/server/ConnectivityService;)I
     .locals 1
-    .param p0    # Lcom/android/server/ConnectivityService;
 
     iget v0, p0, Lcom/android/server/ConnectivityService;->mNetTransitionWakeLockSerialNumber:I
 
@@ -3234,8 +3188,6 @@
 
 .method static synthetic access$300(Landroid/content/Context;Landroid/os/Handler;)Landroid/net/NetworkStateTracker;
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/os/Handler;
 
     invoke-static {p0, p1}, Lcom/android/server/ConnectivityService;->makeEthernetStateTracker(Landroid/content/Context;Landroid/os/Handler;)Landroid/net/NetworkStateTracker;
 
@@ -3246,7 +3198,6 @@
 
 .method static synthetic access$3000(Lcom/android/server/ConnectivityService;)Landroid/os/PowerManager$WakeLock;
     .locals 1
-    .param p0    # Lcom/android/server/ConnectivityService;
 
     iget-object v0, p0, Lcom/android/server/ConnectivityService;->mNetTransitionWakeLock:Landroid/os/PowerManager$WakeLock;
 
@@ -3255,7 +3206,6 @@
 
 .method static synthetic access$3100(Lcom/android/server/ConnectivityService;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/server/ConnectivityService;
 
     iget-object v0, p0, Lcom/android/server/ConnectivityService;->mNetTransitionWakeLockCausedBy:Ljava/lang/String;
 
@@ -3264,9 +3214,6 @@
 
 .method static synthetic access$3200(Lcom/android/server/ConnectivityService;II)V
     .locals 0
-    .param p0    # Lcom/android/server/ConnectivityService;
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/ConnectivityService;->handleInetConditionChange(II)V
 
@@ -3275,9 +3222,6 @@
 
 .method static synthetic access$3300(Lcom/android/server/ConnectivityService;II)V
     .locals 0
-    .param p0    # Lcom/android/server/ConnectivityService;
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/ConnectivityService;->handleInetConditionHoldEnd(II)V
 
@@ -3286,8 +3230,6 @@
 
 .method static synthetic access$3400(Lcom/android/server/ConnectivityService;I)V
     .locals 0
-    .param p0    # Lcom/android/server/ConnectivityService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/ConnectivityService;->handleSetNetworkPreference(I)V
 
@@ -3296,8 +3238,6 @@
 
 .method static synthetic access$3500(Lcom/android/server/ConnectivityService;Z)V
     .locals 0
-    .param p0    # Lcom/android/server/ConnectivityService;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/ConnectivityService;->handleSetMobileData(Z)V
 
@@ -3306,7 +3246,6 @@
 
 .method static synthetic access$3600(Lcom/android/server/ConnectivityService;)V
     .locals 0
-    .param p0    # Lcom/android/server/ConnectivityService;
 
     invoke-direct {p0}, Lcom/android/server/ConnectivityService;->handleDeprecatedGlobalHttpProxy()V
 
@@ -3315,9 +3254,6 @@
 
 .method static synthetic access$3700(Lcom/android/server/ConnectivityService;IZ)V
     .locals 0
-    .param p0    # Lcom/android/server/ConnectivityService;
-    .param p1    # I
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/ConnectivityService;->handleSetDependencyMet(IZ)V
 
@@ -3326,8 +3262,6 @@
 
 .method static synthetic access$3800(Lcom/android/server/ConnectivityService;Landroid/content/Intent;)V
     .locals 0
-    .param p0    # Lcom/android/server/ConnectivityService;
-    .param p1    # Landroid/content/Intent;
 
     invoke-direct {p0, p1}, Lcom/android/server/ConnectivityService;->sendStickyBroadcast(Landroid/content/Intent;)V
 
@@ -3336,9 +3270,6 @@
 
 .method static synthetic access$3900(Lcom/android/server/ConnectivityService;IZ)V
     .locals 0
-    .param p0    # Lcom/android/server/ConnectivityService;
-    .param p1    # I
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/ConnectivityService;->handleSetPolicyDataEnable(IZ)V
 
@@ -3347,9 +3278,6 @@
 
 .method static synthetic access$400(Lcom/android/server/ConnectivityService;IZ)V
     .locals 0
-    .param p0    # Lcom/android/server/ConnectivityService;
-    .param p1    # I
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/ConnectivityService;->sendDataActivityBroadcast(IZ)V
 
@@ -3358,7 +3286,6 @@
 
 .method static synthetic access$4000(Lcom/android/server/ConnectivityService;)Ljava/util/concurrent/atomic/AtomicInteger;
     .locals 1
-    .param p0    # Lcom/android/server/ConnectivityService;
 
     iget-object v0, p0, Lcom/android/server/ConnectivityService;->mEnableFailFastMobileDataTag:Ljava/util/concurrent/atomic/AtomicInteger;
 
@@ -3367,7 +3294,6 @@
 
 .method static synthetic access$4100(Lcom/android/server/ConnectivityService;)V
     .locals 0
-    .param p0    # Lcom/android/server/ConnectivityService;
 
     invoke-direct {p0}, Lcom/android/server/ConnectivityService;->handleNetworkSamplingTimeout()V
 
@@ -3376,8 +3302,6 @@
 
 .method static synthetic access$4200(Lcom/android/server/ConnectivityService;Landroid/net/ProxyProperties;)V
     .locals 0
-    .param p0    # Lcom/android/server/ConnectivityService;
-    .param p1    # Landroid/net/ProxyProperties;
 
     invoke-direct {p0, p1}, Lcom/android/server/ConnectivityService;->handleApplyDefaultProxy(Landroid/net/ProxyProperties;)V
 
@@ -3386,8 +3310,6 @@
 
 .method static synthetic access$4302(Lcom/android/server/ConnectivityService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/ConnectivityService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/ConnectivityService;->bIsFailOverToMobile:Z
 
@@ -3396,9 +3318,6 @@
 
 .method static synthetic access$4400(Lcom/android/server/ConnectivityService;ZI)V
     .locals 0
-    .param p0    # Lcom/android/server/ConnectivityService;
-    .param p1    # Z
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/ConnectivityService;->handleSetMobileDataEx(ZI)V
 
@@ -3407,7 +3326,6 @@
 
 .method static synthetic access$4500(Lcom/android/server/ConnectivityService;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Lcom/android/server/ConnectivityService;
 
     iget-object v0, p0, Lcom/android/server/ConnectivityService;->mDnsLock:Ljava/lang/Object;
 
@@ -3416,12 +3334,6 @@
 
 .method static synthetic access$4600(Lcom/android/server/ConnectivityService;Ljava/lang/String;Ljava/lang/String;Ljava/util/Collection;Ljava/lang/String;Z)V
     .locals 0
-    .param p0    # Lcom/android/server/ConnectivityService;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/util/Collection;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Z
 
     invoke-direct/range {p0 .. p5}, Lcom/android/server/ConnectivityService;->updateDnsLocked(Ljava/lang/String;Ljava/lang/String;Ljava/util/Collection;Ljava/lang/String;Z)V
 
@@ -3430,7 +3342,6 @@
 
 .method static synthetic access$4700(Lcom/android/server/ConnectivityService;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Lcom/android/server/ConnectivityService;
 
     iget-object v0, p0, Lcom/android/server/ConnectivityService;->mProxyLock:Ljava/lang/Object;
 
@@ -3439,8 +3350,6 @@
 
 .method static synthetic access$4802(Lcom/android/server/ConnectivityService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/ConnectivityService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/ConnectivityService;->mDefaultProxyDisabled:Z
 
@@ -3449,7 +3358,6 @@
 
 .method static synthetic access$4900(Lcom/android/server/ConnectivityService;)Landroid/net/ProxyProperties;
     .locals 1
-    .param p0    # Lcom/android/server/ConnectivityService;
 
     iget-object v0, p0, Lcom/android/server/ConnectivityService;->mGlobalProxy:Landroid/net/ProxyProperties;
 
@@ -3458,7 +3366,6 @@
 
 .method static synthetic access$500(Ljava/lang/String;)V
     .locals 0
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/android/server/ConnectivityService;->log(Ljava/lang/String;)V
 
@@ -3467,7 +3374,6 @@
 
 .method static synthetic access$5000(Lcom/android/server/ConnectivityService;)Landroid/net/ProxyProperties;
     .locals 1
-    .param p0    # Lcom/android/server/ConnectivityService;
 
     iget-object v0, p0, Lcom/android/server/ConnectivityService;->mDefaultProxy:Landroid/net/ProxyProperties;
 
@@ -3476,8 +3382,6 @@
 
 .method static synthetic access$5100(Lcom/android/server/ConnectivityService;Landroid/net/ProxyProperties;)V
     .locals 0
-    .param p0    # Lcom/android/server/ConnectivityService;
-    .param p1    # Landroid/net/ProxyProperties;
 
     invoke-direct {p0, p1}, Lcom/android/server/ConnectivityService;->sendProxyBroadcast(Landroid/net/ProxyProperties;)V
 
@@ -3486,7 +3390,6 @@
 
 .method static synthetic access$5200(Lcom/android/server/ConnectivityService;)Landroid/util/SparseArray;
     .locals 1
-    .param p0    # Lcom/android/server/ConnectivityService;
 
     iget-object v0, p0, Lcom/android/server/ConnectivityService;->mEnterpriseVpnStoreObj:Landroid/util/SparseArray;
 
@@ -3495,9 +3398,6 @@
 
 .method static synthetic access$5300(Lcom/android/server/ConnectivityService;ILjava/lang/String;)I
     .locals 1
-    .param p0    # Lcom/android/server/ConnectivityService;
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/ConnectivityService;->getUIDForPackage(ILjava/lang/String;)I
 
@@ -3508,11 +3408,6 @@
 
 .method static synthetic access$5400(Lcom/android/server/ConnectivityService;ZILjava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/server/ConnectivityService;
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/server/ConnectivityService;->setProvNotificationVisible(ZILjava/lang/String;Ljava/lang/String;)V
 
@@ -3521,7 +3416,6 @@
 
 .method static synthetic access$5500(Lcom/android/server/ConnectivityService;)Ljava/util/concurrent/atomic/AtomicBoolean;
     .locals 1
-    .param p0    # Lcom/android/server/ConnectivityService;
 
     iget-object v0, p0, Lcom/android/server/ConnectivityService;->mIsProvisioningNetwork:Ljava/util/concurrent/atomic/AtomicBoolean;
 
@@ -3530,7 +3424,6 @@
 
 .method static synthetic access$5600(Lcom/android/server/ConnectivityService;)Ljava/util/concurrent/atomic/AtomicBoolean;
     .locals 1
-    .param p0    # Lcom/android/server/ConnectivityService;
 
     iget-object v0, p0, Lcom/android/server/ConnectivityService;->mIsStartingProvisioning:Ljava/util/concurrent/atomic/AtomicBoolean;
 
@@ -3539,7 +3432,6 @@
 
 .method static synthetic access$5700(Ljava/lang/String;)V
     .locals 0
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/android/server/ConnectivityService;->loge(Ljava/lang/String;)V
 
@@ -3548,7 +3440,6 @@
 
 .method static synthetic access$5800(Lcom/android/server/ConnectivityService;)Ljava/util/concurrent/atomic/AtomicBoolean;
     .locals 1
-    .param p0    # Lcom/android/server/ConnectivityService;
 
     iget-object v0, p0, Lcom/android/server/ConnectivityService;->mIsCheckingMobileProvisioning:Ljava/util/concurrent/atomic/AtomicBoolean;
 
@@ -3557,9 +3448,6 @@
 
 .method static synthetic access$600(Lcom/android/server/ConnectivityService;Lcom/android/server/ConnectivityService$FeatureUser;Z)I
     .locals 1
-    .param p0    # Lcom/android/server/ConnectivityService;
-    .param p1    # Lcom/android/server/ConnectivityService$FeatureUser;
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/ConnectivityService;->stopUsingNetworkFeature(Lcom/android/server/ConnectivityService$FeatureUser;Z)I
 
@@ -3570,7 +3458,6 @@
 
 .method static synthetic access$6200(Lcom/android/server/ConnectivityService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/ConnectivityService;
 
     invoke-direct {p0}, Lcom/android/server/ConnectivityService;->isMobileDataStateTrackerReady()Z
 
@@ -3581,8 +3468,6 @@
 
 .method static synthetic access$6300(Lcom/android/server/ConnectivityService;I)V
     .locals 0
-    .param p0    # Lcom/android/server/ConnectivityService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/ConnectivityService;->setEnableFailFastMobileData(I)V
 
@@ -3591,8 +3476,6 @@
 
 .method static synthetic access$6500(Lcom/android/server/ConnectivityService;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/server/ConnectivityService;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/ConnectivityService;->handleMobileProvisioningAction(Ljava/lang/String;)V
 
@@ -3601,8 +3484,6 @@
 
 .method static synthetic access$6600(Lcom/android/server/ConnectivityService;I)V
     .locals 0
-    .param p0    # Lcom/android/server/ConnectivityService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/ConnectivityService;->onUserStart(I)V
 
@@ -3611,8 +3492,6 @@
 
 .method static synthetic access$6700(Lcom/android/server/ConnectivityService;I)V
     .locals 0
-    .param p0    # Lcom/android/server/ConnectivityService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/ConnectivityService;->onUserStop(I)V
 
@@ -3621,7 +3500,6 @@
 
 .method static synthetic access$6800(Lcom/android/server/ConnectivityService;)Lcom/android/server/ConnectivityService$EmergencyHandler;
     .locals 1
-    .param p0    # Lcom/android/server/ConnectivityService;
 
     iget-object v0, p0, Lcom/android/server/ConnectivityService;->mEmergencyHandler:Lcom/android/server/ConnectivityService$EmergencyHandler;
 
@@ -3630,8 +3508,6 @@
 
 .method static synthetic access$6900(Lcom/android/server/ConnectivityService;Z)V
     .locals 0
-    .param p0    # Lcom/android/server/ConnectivityService;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/ConnectivityService;->routeTableFlush(Z)V
 
@@ -3640,7 +3516,6 @@
 
 .method static synthetic access$700(Lcom/android/server/ConnectivityService;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Lcom/android/server/ConnectivityService;
 
     iget-object v0, p0, Lcom/android/server/ConnectivityService;->mRulesLock:Ljava/lang/Object;
 
@@ -3649,8 +3524,6 @@
 
 .method static synthetic access$7000(Lcom/android/server/ConnectivityService;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/server/ConnectivityService;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/ConnectivityService;->removeAllMessage(Ljava/lang/String;)V
 
@@ -3659,8 +3532,6 @@
 
 .method static synthetic access$7100(Lcom/android/server/ConnectivityService;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/server/ConnectivityService;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/ConnectivityService;->emergencyOpenDataPath(Ljava/lang/String;)V
 
@@ -3669,7 +3540,6 @@
 
 .method static synthetic access$7200(Lcom/android/server/ConnectivityService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/ConnectivityService;
 
     iget-boolean v0, p0, Lcom/android/server/ConnectivityService;->emergencyDataOpened:Z
 
@@ -3678,8 +3548,6 @@
 
 .method static synthetic access$7202(Lcom/android/server/ConnectivityService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/ConnectivityService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/ConnectivityService;->emergencyDataOpened:Z
 
@@ -3688,8 +3556,6 @@
 
 .method static synthetic access$7302(Lcom/android/server/ConnectivityService;Lcom/android/server/ciq/IPConnectivityCIQ;)Lcom/android/server/ciq/IPConnectivityCIQ;
     .locals 0
-    .param p0    # Lcom/android/server/ConnectivityService;
-    .param p1    # Lcom/android/server/ciq/IPConnectivityCIQ;
 
     iput-object p1, p0, Lcom/android/server/ConnectivityService;->mCiq:Lcom/android/server/ciq/IPConnectivityCIQ;
 
@@ -3698,7 +3564,6 @@
 
 .method static synthetic access$800(Lcom/android/server/ConnectivityService;)Landroid/util/SparseIntArray;
     .locals 1
-    .param p0    # Lcom/android/server/ConnectivityService;
 
     iget-object v0, p0, Lcom/android/server/ConnectivityService;->mUidRules:Landroid/util/SparseIntArray;
 
@@ -3707,7 +3572,6 @@
 
 .method static synthetic access$900(Lcom/android/server/ConnectivityService;)Ljava/util/HashSet;
     .locals 1
-    .param p0    # Lcom/android/server/ConnectivityService;
 
     iget-object v0, p0, Lcom/android/server/ConnectivityService;->mMeteredIfaces:Ljava/util/HashSet;
 
@@ -3716,10 +3580,6 @@
 
 .method private addRoute(Landroid/net/LinkProperties;Landroid/net/RouteInfo;ZZ)Z
     .locals 7
-    .param p1    # Landroid/net/LinkProperties;
-    .param p2    # Landroid/net/RouteInfo;
-    .param p3    # Z
-    .param p4    # Z
 
     const/4 v3, 0x0
 
@@ -3744,9 +3604,6 @@
 
 .method private addRouteToAddress(Landroid/net/LinkProperties;Ljava/net/InetAddress;Z)Z
     .locals 6
-    .param p1    # Landroid/net/LinkProperties;
-    .param p2    # Ljava/net/InetAddress;
-    .param p3    # Z
 
     const/4 v3, 0x1
 
@@ -3769,8 +3626,6 @@
 
 .method private anyConnectSupportingKnox(Ljava/lang/String;I)Z
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -3934,7 +3789,6 @@
 
 .method private checkCondition(I)Z
     .locals 3
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -3965,7 +3819,6 @@
 
 .method private checkCondition(Landroid/net/NetworkInfo;)Z
     .locals 2
-    .param p1    # Landroid/net/NetworkInfo;
 
     invoke-static {}, Lcom/sec/android/app/CscFeature;->getInstance()Lcom/sec/android/app/CscFeature;
 
@@ -4002,8 +3855,6 @@
 
 .method private checkIfCallerIsProxyCisco(Lcom/android/internal/net/VpnConfig;I)V
     .locals 9
-    .param p1    # Lcom/android/internal/net/VpnConfig;
-    .param p2    # I
 
     new-instance v6, Ljava/lang/StringBuilder;
 
@@ -4225,7 +4076,6 @@
 
 .method private checkIfKnoxVpnProfileExists(Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -4261,7 +4111,6 @@
 
 .method private checkKnoxVpnProfileType(Lcom/android/internal/net/VpnConfig;)I
     .locals 8
-    .param p1    # Lcom/android/internal/net/VpnConfig;
 
     const/4 v3, 0x0
 
@@ -4440,7 +4289,6 @@
 
 .method private static checkNotNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -4486,7 +4334,6 @@
 
 .method private checkSourceRouteCondition(I)Z
     .locals 4
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -4570,7 +4417,6 @@
 
 .method private createNewNetworkInfo(Landroid/net/NetworkInfo;)Landroid/net/NetworkInfo;
     .locals 5
-    .param p1    # Landroid/net/NetworkInfo;
 
     new-instance v0, Landroid/net/NetworkInfo;
 
@@ -4621,8 +4467,6 @@
 
 .method private declared-synchronized disconnect(Ljava/lang/String;I)Z
     .locals 26
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     monitor-enter p0
 
@@ -5734,7 +5578,6 @@
 
 .method private emergencyOpenDataPath(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "ConnectivityService"
 
@@ -6004,7 +5847,6 @@
 
 .method private enforceVzw800ApnPermission(I)V
     .locals 4
-    .param p1    # I
 
     iget-object v2, p0, Lcom/android/server/ConnectivityService;->mContext:Landroid/content/Context;
 
@@ -6042,10 +5884,6 @@
 
 .method private establishEnterpriseVpnForKnox1VpnClients(Lcom/android/server/connectivity/EnterpriseVpn;Lcom/android/internal/net/VpnConfig;ILjava/lang/String;)Landroid/os/ParcelFileDescriptor;
     .locals 7
-    .param p1    # Lcom/android/server/connectivity/EnterpriseVpn;
-    .param p2    # Lcom/android/internal/net/VpnConfig;
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -6212,10 +6050,6 @@
 
 .method private establishEnterpriseVpnForKnox2VpnClients(Lcom/android/server/connectivity/EnterpriseVpn;Lcom/android/internal/net/VpnConfig;ILjava/lang/String;)Landroid/os/ParcelFileDescriptor;
     .locals 5
-    .param p1    # Lcom/android/server/connectivity/EnterpriseVpn;
-    .param p2    # Lcom/android/internal/net/VpnConfig;
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -6404,7 +6238,6 @@
 
 .method private declared-synchronized getDomainsByProfileName(Ljava/lang/String;)Ljava/util/List;
     .locals 5
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -6514,8 +6347,6 @@
 
 .method private getFilteredNetworkInfo(Landroid/net/NetworkStateTracker;I)Landroid/net/NetworkInfo;
     .locals 4
-    .param p1    # Landroid/net/NetworkStateTracker;
-    .param p2    # I
 
     const/4 v3, 0x0
 
@@ -6581,8 +6412,6 @@
 
 .method private getNetworkInfo(II)Landroid/net/NetworkInfo;
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -6595,9 +6424,6 @@
 
 .method private getNetworkInfo(IIZ)Landroid/net/NetworkInfo;
     .locals 7
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     const/4 v1, 0x0
 
@@ -6749,7 +6575,6 @@
 
 .method private getNetworkStateUnchecked(I)Landroid/net/NetworkState;
     .locals 5
-    .param p1    # I
 
     invoke-static {p1}, Landroid/net/ConnectivityManager;->isNetworkTypeValidEx(I)Z
 
@@ -6800,7 +6625,6 @@
 
 .method private getPackageNameFromUid(I)Ljava/lang/String;
     .locals 6
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -6903,7 +6727,6 @@
 
 .method private declared-synchronized getProfilesByDomain(I)Ljava/util/List;
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -7076,7 +6899,6 @@
 
 .method private getProvisioningUrlBaseFromFile(I)Ljava/lang/String;
     .locals 12
-    .param p1    # I
 
     const/4 v9, 0x0
 
@@ -7462,7 +7284,6 @@
 
 .method private getRestoreDefaultNetworkDelay(I)I
     .locals 6
-    .param p1    # I
 
     const-string v4, "VZW"
 
@@ -7605,8 +7426,6 @@
 
 .method private getUIDForPackage(ILjava/lang/String;)I
     .locals 9
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v5, -0x1
 
@@ -7733,7 +7552,6 @@
 
 .method private getUpdatedInterfaceforMeta(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -7833,7 +7651,6 @@
 
 .method private handleApplyDefaultProxy(Landroid/net/ProxyProperties;)V
     .locals 3
-    .param p1    # Landroid/net/ProxyProperties;
 
     if-eqz p1, :cond_0
 
@@ -7984,7 +7801,6 @@
 
 .method private handleCaptivePortalTrackerCheck(Landroid/net/NetworkInfo;)V
     .locals 5
-    .param p1    # Landroid/net/NetworkInfo;
 
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -8126,7 +7942,6 @@
 
 .method private handleConnect(Landroid/net/NetworkInfo;)V
     .locals 13
-    .param p1    # Landroid/net/NetworkInfo;
 
     const/4 v12, -0x1
 
@@ -8654,7 +8469,6 @@
 
 .method private handleConnectionFailure(Landroid/net/NetworkInfo;)V
     .locals 12
-    .param p1    # Landroid/net/NetworkInfo;
 
     const/4 v11, -0x1
 
@@ -8950,8 +8764,6 @@
 
 .method private handleConnectivityChange(IZ)V
     .locals 19
-    .param p1    # I
-    .param p2    # Z
 
     if-eqz p2, :cond_3
 
@@ -9928,7 +9740,6 @@
 
 .method private handleDisconnect(Landroid/net/NetworkInfo;)V
     .locals 26
-    .param p1    # Landroid/net/NetworkInfo;
 
     invoke-virtual/range {p1 .. p1}, Landroid/net/NetworkInfo;->getType()I
 
@@ -10594,7 +10405,6 @@
 
 .method private handleDnsConfigurationChange(I)V
     .locals 17
-    .param p1    # I
 
     move-object/from16 v0, p0
 
@@ -10889,8 +10699,6 @@
 
 .method private handleInetConditionChange(II)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     iget v1, p0, Lcom/android/server/ConnectivityService;->mActiveDefaultNetwork:I
 
@@ -11023,8 +10831,6 @@
 
 .method private handleInetConditionHoldEnd(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -11133,7 +10939,6 @@
 
 .method private handleMobileProvisioningAction(Ljava/lang/String;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const/4 v6, 0x0
 
@@ -11363,8 +11168,6 @@
 
 .method private handleSetDependencyMet(IZ)V
     .locals 2
-    .param p1    # I
-    .param p2    # Z
 
     iget-object v0, p0, Lcom/android/server/ConnectivityService;->mNetTrackers:[Landroid/net/NetworkStateTracker;
 
@@ -11420,7 +11223,6 @@
 
 .method private handleSetMobileData(Z)V
     .locals 3
-    .param p1    # Z
 
     const/4 v2, 0x6
 
@@ -11457,8 +11259,6 @@
 
 .method private handleSetMobileDataEx(ZI)V
     .locals 3
-    .param p1    # Z
-    .param p2    # I
 
     const/4 v2, 0x6
 
@@ -11495,7 +11295,6 @@
 
 .method private handleSetNetworkPreference(I)V
     .locals 1
-    .param p1    # I
 
     invoke-static {p1}, Landroid/net/ConnectivityManager;->isNetworkTypeValidEx(I)Z
 
@@ -11550,8 +11349,6 @@
 
 .method private handleSetPolicyDataEnable(IZ)V
     .locals 2
-    .param p1    # I
-    .param p2    # Z
 
     invoke-static {p1}, Landroid/net/ConnectivityManager;->isNetworkTypeValidEx(I)Z
 
@@ -11577,7 +11374,6 @@
 
 .method private hasInterfaceAsUser(I)Z
     .locals 11
-    .param p1    # I
 
     const/4 v7, 0x1
 
@@ -11889,7 +11685,6 @@
 
 .method private internalSwitchDataNetwork(I)V
     .locals 2
-    .param p1    # I
 
     invoke-static {}, Lcom/android/internal/telephony/MultiSimManager;->isMultiSimSlot()Z
 
@@ -11940,7 +11735,6 @@
 
 .method private isAddressUnderVpn(Ljava/net/InetAddress;)Z
     .locals 11
-    .param p1    # Ljava/net/InetAddress;
 
     const/4 v7, 0x0
 
@@ -12086,7 +11880,6 @@
 
 .method private isCaptivePortalAllowedNetwork(Landroid/net/NetworkInfo;)Z
     .locals 2
-    .param p1    # Landroid/net/NetworkInfo;
 
     iget-object v0, p0, Lcom/android/server/ConnectivityService;->mCaptivePortalAllowedNetworkTypes:[I
 
@@ -12146,7 +11939,6 @@
 
 .method private isIpv4Connected(Landroid/net/LinkProperties;)Z
     .locals 7
-    .param p1    # Landroid/net/LinkProperties;
 
     const/4 v4, 0x0
 
@@ -12233,7 +12025,6 @@
 
 .method private isIpv6Connected(Landroid/net/LinkProperties;)Z
     .locals 7
-    .param p1    # Landroid/net/LinkProperties;
 
     const/4 v4, 0x0
 
@@ -12350,8 +12141,6 @@
 
 .method private isNetworkBlocked(Landroid/net/NetworkStateTracker;I)Z
     .locals 7
-    .param p1    # Landroid/net/NetworkStateTracker;
-    .param p2    # I
 
     const/4 v3, 0x0
 
@@ -12407,7 +12196,6 @@
 
 .method private isNetworkMeteredUnchecked(I)Z
     .locals 2
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/ConnectivityService;->getNetworkStateUnchecked(I)Landroid/net/NetworkState;
 
@@ -12438,7 +12226,6 @@
 
 .method private isNewNetTypePreferredOverCurrentNetType(I)Z
     .locals 2
-    .param p1    # I
 
     iget v0, p0, Lcom/android/server/ConnectivityService;->mNetworkPreference:I
 
@@ -12481,7 +12268,6 @@
 
 .method private isNonPreferredDataSlotMMSAPN(Landroid/net/NetworkInfo;)Z
     .locals 5
-    .param p1    # Landroid/net/NetworkInfo;
 
     const/4 v2, 0x0
 
@@ -12544,8 +12330,6 @@
 
 .method private isPackageAvsAuthorized(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v8, 0x0
 
@@ -12670,7 +12454,6 @@
 
 .method private isPossibleSwitchData(I)Z
     .locals 9
-    .param p1    # I
 
     const/4 v6, 0x1
 
@@ -12925,7 +12708,6 @@
 
 .method private isSprintSignedApplication(I)Z
     .locals 13
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -13115,7 +12897,6 @@
 
 .method private isVzwAppsApnPermissionGranted(I)Z
     .locals 21
-    .param p1    # I
 
     const-string v19, "Entered into isVzwAppsApnPermissionGranted"
 
@@ -13603,7 +13384,6 @@
 
 .method private static log(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "ConnectivityService"
 
@@ -13614,7 +13394,6 @@
 
 .method private static loge(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "ConnectivityService"
 
@@ -13625,8 +13404,6 @@
 
 .method private static makeEthernetStateTracker(Landroid/content/Context;Landroid/os/Handler;)Landroid/net/NetworkStateTracker;
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/os/Handler;
 
     invoke-static {}, Landroid/net/EthernetDataTracker;->getInstance()Landroid/net/EthernetDataTracker;
 
@@ -13637,8 +13414,6 @@
 
 .method private makeGeneralIntent(Landroid/net/NetworkInfo;Ljava/lang/String;)Landroid/content/Intent;
     .locals 3
-    .param p1    # Landroid/net/NetworkInfo;
-    .param p2    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/server/ConnectivityService;->mLockdownTracker:Lcom/android/server/net/LockdownVpnTracker;
 
@@ -13731,8 +13506,6 @@
 
 .method private static makeWimaxStateTracker(Landroid/content/Context;Landroid/os/Handler;)Landroid/net/NetworkStateTracker;
     .locals 20
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/os/Handler;
 
     const/4 v13, 0x0
 
@@ -14089,8 +13862,6 @@
 
 .method private maskAsMobile(Landroid/content/Intent;Landroid/net/NetworkInfo;)Landroid/content/Intent;
     .locals 3
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Landroid/net/NetworkInfo;
 
     const/4 v1, 0x0
 
@@ -14123,12 +13894,6 @@
 
 .method private modifyRoute(Landroid/net/LinkProperties;Landroid/net/RouteInfo;IZZZ)Z
     .locals 10
-    .param p1    # Landroid/net/LinkProperties;
-    .param p2    # Landroid/net/RouteInfo;
-    .param p3    # I
-    .param p4    # Z
-    .param p5    # Z
-    .param p6    # Z
 
     if-eqz p1, :cond_0
 
@@ -14471,11 +14236,6 @@
 
 .method private modifyRouteToAddress(Landroid/net/LinkProperties;Ljava/net/InetAddress;ZZZ)Z
     .locals 11
-    .param p1    # Landroid/net/LinkProperties;
-    .param p2    # Ljava/net/InetAddress;
-    .param p3    # Z
-    .param p4    # Z
-    .param p5    # Z
 
     const-string v0, "VZW"
 
@@ -14636,7 +14396,6 @@
 
 .method private declared-synchronized onUserStart(I)V
     .locals 7
-    .param p1    # I
 
     monitor-enter p0
 
@@ -14767,7 +14526,6 @@
 
 .method private onUserStop(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v2, p0, Lcom/android/server/ConnectivityService;->mVpns:Landroid/util/SparseArray;
 
@@ -14814,8 +14572,6 @@
 
 .method private reassessPidDns(IZ)V
     .locals 11
-    .param p1    # I
-    .param p2    # Z
 
     new-instance v5, Ljava/lang/Integer;
 
@@ -14967,7 +14723,6 @@
 
 .method private removeAllMessage(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/server/ConnectivityService;->mEmergencyHandler:Lcom/android/server/ConnectivityService$EmergencyHandler;
 
@@ -15007,7 +14762,6 @@
 
 .method private removeDataActivityTracking(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v2, p0, Lcom/android/server/ConnectivityService;->mNetTrackers:[Landroid/net/NetworkStateTracker;
 
@@ -15053,9 +14807,6 @@
 
 .method private removeRoute(Landroid/net/LinkProperties;Landroid/net/RouteInfo;Z)Z
     .locals 7
-    .param p1    # Landroid/net/LinkProperties;
-    .param p2    # Landroid/net/RouteInfo;
-    .param p3    # Z
 
     const/4 v3, 0x0
 
@@ -15080,8 +14831,6 @@
 
 .method private removeRouteToAddress(Landroid/net/LinkProperties;Ljava/net/InetAddress;)Z
     .locals 6
-    .param p1    # Landroid/net/LinkProperties;
-    .param p2    # Ljava/net/InetAddress;
 
     const/4 v3, 0x0
 
@@ -15104,7 +14853,6 @@
 
 .method private resetTcpDelayedAckSettings(Landroid/net/NetworkStateTracker;)V
     .locals 6
-    .param p1    # Landroid/net/NetworkStateTracker;
 
     invoke-interface {p1}, Landroid/net/NetworkStateTracker;->getDefaultTcpUserConfigPropName()Ljava/lang/String;
 
@@ -15203,7 +14951,6 @@
 
 .method private routeTableFlush(Z)V
     .locals 8
-    .param p1    # Z
 
     const/4 v7, 0x1
 
@@ -15415,8 +15162,6 @@
 
 .method private sendConnectedBroadcastDelayed(Landroid/net/NetworkInfo;I)V
     .locals 3
-    .param p1    # Landroid/net/NetworkInfo;
-    .param p2    # I
 
     const-string v1, "VZW"
 
@@ -15465,8 +15210,6 @@
 
 .method private sendDataActivityBroadcast(IZ)V
     .locals 11
-    .param p1    # I
-    .param p2    # Z
 
     new-instance v1, Landroid/content/Intent;
 
@@ -15521,8 +15264,6 @@
 
 .method private sendGeneralBroadcast(Landroid/net/NetworkInfo;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Landroid/net/NetworkInfo;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/ConnectivityService;->makeGeneralIntent(Landroid/net/NetworkInfo;Ljava/lang/String;)Landroid/content/Intent;
 
@@ -15535,9 +15276,6 @@
 
 .method private sendGeneralBroadcastDelayed(Landroid/net/NetworkInfo;Ljava/lang/String;I)V
     .locals 1
-    .param p1    # Landroid/net/NetworkInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/ConnectivityService;->makeGeneralIntent(Landroid/net/NetworkInfo;Ljava/lang/String;)Landroid/content/Intent;
 
@@ -15550,7 +15288,6 @@
 
 .method private sendInetConditionBroadcast(Landroid/net/NetworkInfo;)V
     .locals 1
-    .param p1    # Landroid/net/NetworkInfo;
 
     const-string v0, "android.net.conn.INET_CONDITION_ACTION"
 
@@ -15561,8 +15298,6 @@
 
 .method private sendInterfaceNameToKnoxVpn(Ljava/lang/String;I)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const-string v4, "ConnectivityService"
 
@@ -15694,7 +15429,6 @@
 
 .method private sendProxyBroadcast(Landroid/net/ProxyProperties;)V
     .locals 6
-    .param p1    # Landroid/net/ProxyProperties;
 
     if-nez p1, :cond_0
 
@@ -15782,7 +15516,6 @@
 
 .method private sendStickyBroadcast(Landroid/content/Intent;)V
     .locals 13
-    .param p1    # Landroid/content/Intent;
 
     monitor-enter p0
 
@@ -16319,8 +16052,6 @@
 
 .method private sendStickyBroadcastDelayed(Landroid/content/Intent;I)V
     .locals 4
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
 
     if-gtz p2, :cond_0
 
@@ -16349,8 +16080,6 @@
 
 .method private sendStickyBroadcastToUser(Landroid/content/Intent;I)V
     .locals 2
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/server/ConnectivityService;->mContext:Landroid/content/Context;
 
@@ -16365,7 +16094,6 @@
 
 .method private setBufferSize(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     const-string v3, ","
@@ -16486,7 +16214,6 @@
 
 .method private setDelAckSize(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     const-string v2, "/sys/kernel/ipv4/tcp_delack_seg"
@@ -16546,7 +16273,6 @@
 
 .method private setDnsToVpnV10(Ljava/lang/String;Ljava/util/List;Ljava/util/List;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -16657,7 +16383,6 @@
 
 .method private setEnableFailFastMobileData(I)V
     .locals 4
-    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -16696,7 +16421,6 @@
 
 .method private setLockdownTracker(Lcom/android/server/net/LockdownVpnTracker;)V
     .locals 4
-    .param p1    # Lcom/android/server/net/LockdownVpnTracker;
 
     iget-object v0, p0, Lcom/android/server/ConnectivityService;->mLockdownTracker:Lcom/android/server/net/LockdownVpnTracker;
 
@@ -16754,10 +16478,6 @@
 
 .method private setProvNotificationVisible(ZILjava/lang/String;Ljava/lang/String;)V
     .locals 13
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     new-instance v9, Ljava/lang/StringBuilder;
 
@@ -17158,7 +16878,6 @@
 
 .method private setUserConfig(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     invoke-static {p1}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
@@ -17234,7 +16953,6 @@
 
 .method private setupDataActivityTracking(I)V
     .locals 6
-    .param p1    # I
 
     const/4 v5, 0x0
 
@@ -17322,7 +17040,6 @@
 
 .method private showCaptivePortalCheckNotification(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "\"gogoinflight\""
 
@@ -17375,8 +17092,6 @@
 
 .method private stopUsingNetworkFeature(Lcom/android/server/ConnectivityService$FeatureUser;Z)I
     .locals 14
-    .param p1    # Lcom/android/server/ConnectivityService$FeatureUser;
-    .param p2    # Z
 
     iget v4, p1, Lcom/android/server/ConnectivityService$FeatureUser;->mNetworkType:I
 
@@ -17747,7 +17462,6 @@
 
 .method private teardown(Landroid/net/NetworkStateTracker;)Z
     .locals 2
-    .param p1    # Landroid/net/NetworkStateTracker;
 
     const/4 v0, 0x1
 
@@ -17789,7 +17503,6 @@
 
 .method private tryFailover(I)V
     .locals 9
-    .param p1    # I
 
     const/16 v8, 0x1d
 
@@ -18062,10 +17775,6 @@
 
 .method private updateDnsLocked(Ljava/lang/String;Ljava/lang/String;Ljava/util/Collection;Ljava/lang/String;Z)V
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -18306,7 +18015,6 @@
 
 .method private updateMtuSizeSettings(Landroid/net/NetworkStateTracker;)V
     .locals 6
-    .param p1    # Landroid/net/NetworkStateTracker;
 
     invoke-interface {p1}, Landroid/net/NetworkStateTracker;->getLinkProperties()Landroid/net/LinkProperties;
 
@@ -18396,7 +18104,6 @@
 
 .method private updateNetworkSettings(Landroid/net/NetworkStateTracker;)V
     .locals 8
-    .param p1    # Landroid/net/NetworkStateTracker;
 
     invoke-interface {p1}, Landroid/net/NetworkStateTracker;->getTcpBufferSizesPropName()Ljava/lang/String;
 
@@ -18484,10 +18191,6 @@
 
 .method private updateRoutes(Landroid/net/LinkProperties;Landroid/net/LinkProperties;ZZ)Z
     .locals 14
-    .param p1    # Landroid/net/LinkProperties;
-    .param p2    # Landroid/net/LinkProperties;
-    .param p3    # Z
-    .param p4    # Z
 
     const/4 v10, 0x0
 
@@ -18846,9 +18549,6 @@
 
 .method private updateSourceRoutes(Landroid/net/LinkProperties;Landroid/net/LinkProperties;I)V
     .locals 14
-    .param p1    # Landroid/net/LinkProperties;
-    .param p2    # Landroid/net/LinkProperties;
-    .param p3    # I
 
     move/from16 v0, p3
 
@@ -19147,7 +18847,6 @@
 
 .method private updateTcpDelayedAckSettings(Landroid/net/NetworkStateTracker;)V
     .locals 6
-    .param p1    # Landroid/net/NetworkStateTracker;
 
     invoke-interface {p1}, Landroid/net/NetworkStateTracker;->getTcpUserConfigPropName()Ljava/lang/String;
 
@@ -19332,7 +19031,6 @@
 # virtual methods
 .method public captivePortalCheckComplete(Landroid/net/NetworkInfo;)V
     .locals 2
-    .param p1    # Landroid/net/NetworkInfo;
 
     invoke-direct {p0}, Lcom/android/server/ConnectivityService;->enforceConnectivityInternalPermission()V
 
@@ -19371,8 +19069,6 @@
 
 .method public captivePortalCheckCompleted(Landroid/net/NetworkInfo;Z)V
     .locals 2
-    .param p1    # Landroid/net/NetworkInfo;
-    .param p2    # Z
 
     invoke-direct {p0}, Lcom/android/server/ConnectivityService;->enforceConnectivityInternalPermission()V
 
@@ -19421,7 +19117,6 @@
 
 .method public checkMobileProvisioning(I)I
     .locals 10
-    .param p1    # I
 
     const/4 v3, -0x1
 
@@ -19601,8 +19296,6 @@
 
 .method public convertFeatureToNetworkType(ILjava/lang/String;)I
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     move v0, p1
 
@@ -19872,8 +19565,6 @@
 
 .method public declared-synchronized createEnterpriseVpn(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v8, 0x0
 
@@ -20057,8 +19748,6 @@
 
 .method public declared-synchronized disconnect(Ljava/lang/String;Z)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     monitor-enter p0
 
@@ -20087,8 +19776,6 @@
 
 .method public declared-synchronized disconnectPerAppVpn(Ljava/lang/String;I)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     monitor-enter p0
 
@@ -20113,7 +19800,6 @@
 
 .method public declared-synchronized disconnectSystemVpn(I)V
     .locals 5
-    .param p1    # I
 
     monitor-enter p0
 
@@ -20223,9 +19909,6 @@
 
 .method protected dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 14
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     new-instance v10, Lcom/android/internal/util/IndentingPrintWriter;
 
@@ -20713,8 +20396,6 @@
 
 .method public declared-synchronized establishEnterpriseVpn(Lcom/android/internal/net/VpnConfig;Ljava/lang/String;)Landroid/os/ParcelFileDescriptor;
     .locals 9
-    .param p1    # Lcom/android/internal/net/VpnConfig;
-    .param p2    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -21070,8 +20751,6 @@
 
 .method public declared-synchronized establishEnterpriseVpnIS(Ljava/lang/String;Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -21170,7 +20849,6 @@
 
 .method public establishVpn(Lcom/android/internal/net/VpnConfig;)Landroid/os/ParcelFileDescriptor;
     .locals 7
-    .param p1    # Lcom/android/internal/net/VpnConfig;
 
     const/4 v6, 0x1
 
@@ -21482,7 +21160,6 @@
 
 .method public findConnectionTypeForIface(Ljava/lang/String;)I
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const/4 v5, -0x1
 
@@ -21546,7 +21223,6 @@
 
 .method public getActiveEnterpriseNetworkType(Ljava/lang/String;)I
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/server/ConnectivityService;->enforceConnectivityInternalPermission()V
 
@@ -21629,7 +21305,6 @@
 
 .method public getActiveNetworkInfoForUid(I)Landroid/net/NetworkInfo;
     .locals 2
-    .param p1    # I
 
     invoke-direct {p0}, Lcom/android/server/ConnectivityService;->enforceConnectivityInternalPermission()V
 
@@ -22317,7 +21992,6 @@
 
 .method public getInterfaceName(Ljava/lang/String;)Ljava/lang/String;
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -22420,7 +22094,6 @@
 
 .method public getLastTetherError(Ljava/lang/String;)I
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/server/ConnectivityService;->enforceTetherAccessPermission()V
 
@@ -22491,7 +22164,6 @@
 
 .method public getLinkProperties(I)Landroid/net/LinkProperties;
     .locals 5
-    .param p1    # I
 
     invoke-direct {p0}, Lcom/android/server/ConnectivityService;->enforceAccessPermission()V
 
@@ -22572,8 +22244,6 @@
 
 .method public getLinkProperties(II)Landroid/net/LinkProperties;
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0}, Lcom/android/server/ConnectivityService;->enforceAccessPermission()V
 
@@ -22650,7 +22320,6 @@
 
 .method public getLinkQualityInfo(I)Landroid/net/LinkQualityInfo;
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0}, Lcom/android/server/ConnectivityService;->enforceAccessPermission()V
 
@@ -22754,7 +22423,6 @@
 
 .method public getMobileDataEnabledEx(I)Z
     .locals 5
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -22999,7 +22667,6 @@
 
 .method public getNetworkInfo(I)Landroid/net/NetworkInfo;
     .locals 2
-    .param p1    # I
 
     invoke-direct {p0}, Lcom/android/server/ConnectivityService;->enforceAccessPermission()V
 
@@ -23246,7 +22913,6 @@
 
 .method public getUidsForApnType(Ljava/lang/String;)[I
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/server/ConnectivityService;->enforceConnectivityInternalPermission()V
 
@@ -23261,7 +22927,6 @@
 
 .method public getUsersForEnterpriseNetwork(I)[I
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0}, Lcom/android/server/ConnectivityService;->enforceConnectivityInternalPermission()V
 
@@ -23414,7 +23079,6 @@
 
 .method public isEntApnEnabled(I)Z
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0}, Lcom/android/server/ConnectivityService;->enforceConnectivityInternalPermission()V
 
@@ -23453,7 +23117,6 @@
 
 .method public isNetworkSupported(I)Z
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0}, Lcom/android/server/ConnectivityService;->enforceAccessPermission()V
 
@@ -23633,7 +23296,6 @@
 
 .method public knoxVpnProfileType(Ljava/lang/String;)I
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -23714,8 +23376,6 @@
 
 .method public markSocketAsUser(Landroid/os/ParcelFileDescriptor;I)V
     .locals 4
-    .param p1    # Landroid/os/ParcelFileDescriptor;
-    .param p2    # I
 
     invoke-direct {p0}, Lcom/android/server/ConnectivityService;->enforceMarkNetworkSocketPermission()V
 
@@ -23796,8 +23456,6 @@
 
 .method public onSwitchDataNetworkCallback(IZ)V
     .locals 11
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v10, 0x1
 
@@ -24063,25 +23721,18 @@
 
 .method public onSwitchToSim1DataNetworkCallback(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method public onSwitchToSim2DataNetworkCallback(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method public declared-synchronized prepareEnterpriseVpn(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZ)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Z
-    .param p5    # Z
 
     monitor-enter p0
 
@@ -24205,10 +23856,6 @@
 
 .method public declared-synchronized prepareEnterpriseVpnExt(Ljava/lang/String;Ljava/lang/String;ZZ)Z
     .locals 14
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
-    .param p4    # Z
 
     monitor-enter p0
 
@@ -24566,8 +24213,6 @@
 
 .method public declared-synchronized prepareVpn(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v7, 0x0
 
@@ -24742,8 +24387,6 @@
 
 .method public prepareVpnForMvp(Ljava/lang/String;Landroid/os/Messenger;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Messenger;
 
     invoke-direct {p0}, Lcom/android/server/ConnectivityService;->throwIfLockdownEnabled()V
 
@@ -24796,8 +24439,6 @@
 
 .method public declared-synchronized protectEnterpriseVpn(Landroid/os/ParcelFileDescriptor;Ljava/lang/String;)Z
     .locals 12
-    .param p1    # Landroid/os/ParcelFileDescriptor;
-    .param p2    # Ljava/lang/String;
 
     const/4 v9, 0x1
 
@@ -25166,7 +24807,6 @@
 
 .method public protectVpn(Landroid/os/ParcelFileDescriptor;)Z
     .locals 10
-    .param p1    # Landroid/os/ParcelFileDescriptor;
 
     const/4 v6, 0x1
 
@@ -25481,9 +25121,6 @@
 
 .method public removeRouteToHostAddress(I[BLjava/lang/String;)Z
     .locals 7
-    .param p1    # I
-    .param p2    # [B
-    .param p3    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -25535,8 +25172,6 @@
 
 .method public reportInetCondition(II)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     iget-object v3, p0, Lcom/android/server/ConnectivityService;->mContext:Landroid/content/Context;
 
@@ -25683,7 +25318,6 @@
 
 .method public requestNetworkTransitionWakelock(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/server/ConnectivityService;->enforceConnectivityInternalPermission()V
 
@@ -25755,9 +25389,6 @@
 
 .method public requestRouteToHost(IILjava/lang/String;)Z
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     invoke-static {p2}, Landroid/net/NetworkUtils;->intToInetAddress(I)Ljava/net/InetAddress;
 
@@ -25784,9 +25415,6 @@
 
 .method public requestRouteToHostAddress(I[BLjava/lang/String;)Z
     .locals 15
-    .param p1    # I
-    .param p2    # [B
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/server/ConnectivityService;->enforceChangePermission()V
 
@@ -26212,7 +25840,6 @@
 
 .method public saveDhcpServerConfiguration(Landroid/net/DhcpServerConfiguration;)Z
     .locals 4
-    .param p1    # Landroid/net/DhcpServerConfiguration;
 
     const-string v2, "ConnectivityService"
 
@@ -26295,7 +25922,6 @@
 
 .method public sendConnectedBroadcast(Landroid/net/NetworkInfo;)V
     .locals 3
-    .param p1    # Landroid/net/NetworkInfo;
 
     invoke-direct {p0}, Lcom/android/server/ConnectivityService;->enforceConnectivityInternalPermission()V
 
@@ -26346,7 +25972,6 @@
 
 .method public setAirplaneMode(Z)V
     .locals 6
-    .param p1    # Z
 
     invoke-direct {p0}, Lcom/android/server/ConnectivityService;->enforceConnectivityInternalPermission()V
 
@@ -26405,8 +26030,6 @@
 
 .method protected setAlarm(ILandroid/app/PendingIntent;)V
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/app/PendingIntent;
 
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
@@ -26427,8 +26050,6 @@
 
 .method public setDataDependency(IZ)V
     .locals 4
-    .param p1    # I
-    .param p2    # Z
 
     invoke-direct {p0}, Lcom/android/server/ConnectivityService;->enforceConnectivityInternalPermission()V
 
@@ -26459,7 +26080,6 @@
 
 .method public setGlobalProxy(Landroid/net/ProxyProperties;)V
     .locals 13
-    .param p1    # Landroid/net/ProxyProperties;
 
     invoke-direct {p0}, Lcom/android/server/ConnectivityService;->enforceConnectivityInternalPermission()V
 
@@ -26734,7 +26354,6 @@
 
 .method public setMobileDataEnabled(Z)V
     .locals 11
-    .param p1    # Z
 
     const/4 v7, 0x0
 
@@ -27123,8 +26742,6 @@
 
 .method public setMobileDataEnabledEx(ZI)V
     .locals 10
-    .param p1    # Z
-    .param p2    # I
 
     const-string v6, "ChinaNalSecurity"
 
@@ -27517,7 +27134,6 @@
 
 .method public setNcmTethering(Z)I
     .locals 1
-    .param p1    # Z
 
     invoke-direct {p0}, Lcom/android/server/ConnectivityService;->enforceTetherChangePermission()V
 
@@ -27532,7 +27148,6 @@
 
 .method public setNetworkPreference(I)V
     .locals 6
-    .param p1    # I
 
     invoke-direct {p0}, Lcom/android/server/ConnectivityService;->enforceChangePermission()V
 
@@ -27619,8 +27234,6 @@
 
 .method public setPolicyDataEnable(IZ)V
     .locals 4
-    .param p1    # I
-    .param p2    # Z
 
     iget-object v0, p0, Lcom/android/server/ConnectivityService;->mContext:Landroid/content/Context;
 
@@ -27657,10 +27270,6 @@
 
 .method public setProvisioningNotificationVisible(ZILjava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/server/ConnectivityService;->enforceConnectivityInternalPermission()V
 
@@ -27671,8 +27280,6 @@
 
 .method public setRadio(IZ)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v1, 0x0
 
@@ -27708,7 +27315,6 @@
 
 .method public setRadios(Z)Z
     .locals 6
-    .param p1    # Z
 
     const/4 v3, 0x1
 
@@ -27754,7 +27360,6 @@
 
 .method public setUsbTethering(Z)I
     .locals 1
-    .param p1    # Z
 
     invoke-direct {p0}, Lcom/android/server/ConnectivityService;->enforceTetherChangePermission()V
 
@@ -27781,7 +27386,6 @@
 
 .method public startLegacyVpn(Lcom/android/internal/net/VpnProfile;)V
     .locals 5
-    .param p1    # Lcom/android/internal/net/VpnProfile;
 
     invoke-direct {p0}, Lcom/android/server/ConnectivityService;->throwIfLockdownEnabled()V
 
@@ -27852,9 +27456,6 @@
 
 .method public startUsingNetworkFeature(ILjava/lang/String;Landroid/os/IBinder;)I
     .locals 32
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/os/IBinder;
 
     const-wide/16 v21, 0x0
 
@@ -29414,8 +29015,6 @@
 
 .method public stopUsingNetworkFeature(ILjava/lang/String;)I
     .locals 8
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v6, 0x1
 
@@ -29494,8 +29093,6 @@
 
 .method public supplyMessenger(ILandroid/os/Messenger;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/os/Messenger;
 
     invoke-direct {p0}, Lcom/android/server/ConnectivityService;->enforceConnectivityInternalPermission()V
 
@@ -29523,9 +29120,6 @@
 
 .method public supplyMessengerEx(ILandroid/os/Messenger;I)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/os/Messenger;
-    .param p3    # I
 
     invoke-direct {p0}, Lcom/android/server/ConnectivityService;->enforceConnectivityInternalPermission()V
 
@@ -29555,7 +29149,6 @@
 
 .method public switchDataNetwork(I)V
     .locals 6
-    .param p1    # I
 
     const/4 v5, -0x1
 
@@ -29682,7 +29275,6 @@
 
 .method public switchDataNetworkForMMS(I)V
     .locals 4
-    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -29870,7 +29462,6 @@
 
 .method public tether(Ljava/lang/String;)I
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/server/ConnectivityService;->enforceTetherChangePermission()V
 
@@ -29897,7 +29488,6 @@
 
 .method public untether(Ljava/lang/String;)I
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/server/ConnectivityService;->enforceTetherChangePermission()V
 
@@ -29924,8 +29514,6 @@
 
 .method protected updateBlockedUids(IZ)V
     .locals 6
-    .param p1    # I
-    .param p2    # Z
 
     :try_start_0
     const-string v3, "alarm"
@@ -30014,9 +29602,6 @@
 
 .method public updateEnterpriseVpn(Ljava/lang/String;IZ)V
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Z
 
     const-string v7, "ConnectivityService"
 

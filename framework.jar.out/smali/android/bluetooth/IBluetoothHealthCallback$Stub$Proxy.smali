@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -53,8 +52,6 @@
 
 .method public onHealthAppConfigurationStatusChange(Landroid/bluetooth/BluetoothHealthAppConfiguration;I)V
     .locals 5
-    .param p1    # Landroid/bluetooth/BluetoothHealthAppConfiguration;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -127,12 +124,6 @@
 
 .method public onHealthChannelStateChange(Landroid/bluetooth/BluetoothHealthAppConfiguration;Landroid/bluetooth/BluetoothDevice;IILandroid/os/ParcelFileDescriptor;I)V
     .locals 5
-    .param p1    # Landroid/bluetooth/BluetoothHealthAppConfiguration;
-    .param p2    # Landroid/bluetooth/BluetoothDevice;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Landroid/os/ParcelFileDescriptor;
-    .param p6    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

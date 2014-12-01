@@ -29,9 +29,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/MountService;Ljava/lang/String;ZZ)V
     .locals 1
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
-    .param p4    # Z
 
     iput-object p1, p0, Lcom/android/server/MountService$UnmountCallBack;->this$0:Lcom/android/server/MountService;
 

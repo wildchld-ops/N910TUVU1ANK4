@@ -14,10 +14,6 @@
 
 .method public static createAlpha(JLandroid/view/animation/Interpolator;FF)Landroid/view/animation/AlphaAnimation;
     .locals 2
-    .param p0    # J
-    .param p2    # Landroid/view/animation/Interpolator;
-    .param p3    # F
-    .param p4    # F
 
     const/4 v1, 0x1
 
@@ -38,12 +34,6 @@
 
 .method public static createAnimator(JLandroid/view/animation/Interpolator;Ljava/lang/Object;Ljava/lang/String;FF)Landroid/animation/ObjectAnimator;
     .locals 5
-    .param p0    # J
-    .param p2    # Landroid/view/animation/Interpolator;
-    .param p3    # Ljava/lang/Object;
-    .param p4    # Ljava/lang/String;
-    .param p5    # F
-    .param p6    # F
 
     const/4 v4, 0x1
 
@@ -78,12 +68,6 @@
 
 .method public static createAnimator(JLandroid/view/animation/Interpolator;Ljava/lang/Object;Ljava/lang/String;II)Landroid/animation/ObjectAnimator;
     .locals 5
-    .param p0    # J
-    .param p2    # Landroid/view/animation/Interpolator;
-    .param p3    # Ljava/lang/Object;
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
-    .param p6    # I
 
     const/4 v4, 0x1
 
@@ -118,14 +102,6 @@
 
 .method public static createRotate(JLandroid/view/animation/Interpolator;FFIFIF)Landroid/view/animation/RotateAnimation;
     .locals 7
-    .param p0    # J
-    .param p2    # Landroid/view/animation/Interpolator;
-    .param p3    # F
-    .param p4    # F
-    .param p5    # I
-    .param p6    # F
-    .param p7    # I
-    .param p8    # F
 
     new-instance v0, Landroid/view/animation/RotateAnimation;
 
@@ -152,16 +128,6 @@
 
 .method public static createScale(JLandroid/view/animation/Interpolator;FFFFIFIF)Landroid/view/animation/ScaleAnimation;
     .locals 9
-    .param p0    # J
-    .param p2    # Landroid/view/animation/Interpolator;
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # F
-    .param p7    # I
-    .param p8    # F
-    .param p9    # I
-    .param p10    # F
 
     new-instance v0, Landroid/view/animation/ScaleAnimation;
 
@@ -200,16 +166,6 @@
 
 .method public static createTranslate(JLandroid/view/animation/Interpolator;IFIFIFIF)Landroid/view/animation/TranslateAnimation;
     .locals 9
-    .param p0    # J
-    .param p2    # Landroid/view/animation/Interpolator;
-    .param p3    # I
-    .param p4    # F
-    .param p5    # I
-    .param p6    # F
-    .param p7    # I
-    .param p8    # F
-    .param p9    # I
-    .param p10    # F
 
     new-instance v0, Landroid/view/animation/TranslateAnimation;
 

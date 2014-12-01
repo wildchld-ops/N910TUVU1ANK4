@@ -126,8 +126,6 @@
 
 .method private constructor <init>(Landroid/content/Context;Landroid/os/Handler;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/Handler;
 
     const/4 v3, 0x0
 
@@ -224,7 +222,6 @@
 
 .method static synthetic access$1000(Lcom/sec/epdg/smartwifi/SmartWifiAdapter;)Ljava/lang/Runnable;
     .locals 1
-    .param p0    # Lcom/sec/epdg/smartwifi/SmartWifiAdapter;
 
     iget-object v0, p0, Lcom/sec/epdg/smartwifi/SmartWifiAdapter;->mRunnableWifiOn:Ljava/lang/Runnable;
 
@@ -233,7 +230,6 @@
 
 .method static synthetic access$1100(Lcom/sec/epdg/smartwifi/SmartWifiAdapter;)Ljava/lang/Runnable;
     .locals 1
-    .param p0    # Lcom/sec/epdg/smartwifi/SmartWifiAdapter;
 
     iget-object v0, p0, Lcom/sec/epdg/smartwifi/SmartWifiAdapter;->mRunnableWifiOff:Ljava/lang/Runnable;
 
@@ -242,9 +238,6 @@
 
 .method static synthetic access$1200(Lcom/sec/epdg/smartwifi/SmartWifiAdapter;Ljava/lang/Runnable;Ljava/lang/Runnable;)V
     .locals 0
-    .param p0    # Lcom/sec/epdg/smartwifi/SmartWifiAdapter;
-    .param p1    # Ljava/lang/Runnable;
-    .param p2    # Ljava/lang/Runnable;
 
     invoke-direct {p0, p1, p2}, Lcom/sec/epdg/smartwifi/SmartWifiAdapter;->startProfilingTask(Ljava/lang/Runnable;Ljava/lang/Runnable;)V
 
@@ -253,7 +246,6 @@
 
 .method static synthetic access$1300(Lcom/sec/epdg/smartwifi/SmartWifiAdapter;)Z
     .locals 1
-    .param p0    # Lcom/sec/epdg/smartwifi/SmartWifiAdapter;
 
     invoke-direct {p0}, Lcom/sec/epdg/smartwifi/SmartWifiAdapter;->isVoLTEHandoverReady()Z
 
@@ -264,7 +256,6 @@
 
 .method static synthetic access$1400(Lcom/sec/epdg/smartwifi/SmartWifiAdapter;)Landroid/telephony/TelephonyManager;
     .locals 1
-    .param p0    # Lcom/sec/epdg/smartwifi/SmartWifiAdapter;
 
     iget-object v0, p0, Lcom/sec/epdg/smartwifi/SmartWifiAdapter;->mTelephonyManager:Landroid/telephony/TelephonyManager;
 
@@ -273,7 +264,6 @@
 
 .method static synthetic access$1500(Lcom/sec/epdg/smartwifi/SmartWifiAdapter;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/sec/epdg/smartwifi/SmartWifiAdapter;
 
     iget-object v0, p0, Lcom/sec/epdg/smartwifi/SmartWifiAdapter;->mSmartWifiHandler:Landroid/os/Handler;
 
@@ -282,7 +272,6 @@
 
 .method static synthetic access$1600(Lcom/sec/epdg/smartwifi/SmartWifiAdapter;)Z
     .locals 1
-    .param p0    # Lcom/sec/epdg/smartwifi/SmartWifiAdapter;
 
     iget-boolean v0, p0, Lcom/sec/epdg/smartwifi/SmartWifiAdapter;->mPollCaptive:Z
 
@@ -291,8 +280,6 @@
 
 .method static synthetic access$1700(Lcom/sec/epdg/smartwifi/SmartWifiAdapter;Z)Z
     .locals 1
-    .param p0    # Lcom/sec/epdg/smartwifi/SmartWifiAdapter;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/sec/epdg/smartwifi/SmartWifiAdapter;->isCaptivePortalAuthenticated(Z)Z
 
@@ -303,8 +290,6 @@
 
 .method static synthetic access$1800(Lcom/sec/epdg/smartwifi/SmartWifiAdapter;I)Z
     .locals 1
-    .param p0    # Lcom/sec/epdg/smartwifi/SmartWifiAdapter;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/sec/epdg/smartwifi/SmartWifiAdapter;->isFunnyRssi(I)Z
 
@@ -315,8 +300,6 @@
 
 .method static synthetic access$1900(Lcom/sec/epdg/smartwifi/SmartWifiAdapter;I)Z
     .locals 1
-    .param p0    # Lcom/sec/epdg/smartwifi/SmartWifiAdapter;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/sec/epdg/smartwifi/SmartWifiAdapter;->isRssiInHystersisZone(I)Z
 
@@ -327,7 +310,6 @@
 
 .method static synthetic access$2000(Lcom/sec/epdg/smartwifi/SmartWifiAdapter;)Z
     .locals 1
-    .param p0    # Lcom/sec/epdg/smartwifi/SmartWifiAdapter;
 
     iget-boolean v0, p0, Lcom/sec/epdg/smartwifi/SmartWifiAdapter;->mProfilingStarted:Z
 
@@ -336,7 +318,6 @@
 
 .method static synthetic access$2100(Lcom/sec/epdg/smartwifi/SmartWifiAdapter;)Lcom/sec/epdg/smartwifi/SmartWifiAdapter$SmartWifiRSSIListener;
     .locals 1
-    .param p0    # Lcom/sec/epdg/smartwifi/SmartWifiAdapter;
 
     iget-object v0, p0, Lcom/sec/epdg/smartwifi/SmartWifiAdapter;->mSmartWifiRSSIListener:Lcom/sec/epdg/smartwifi/SmartWifiAdapter$SmartWifiRSSIListener;
 
@@ -345,7 +326,6 @@
 
 .method static synthetic access$2200(Lcom/sec/epdg/smartwifi/SmartWifiAdapter;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/sec/epdg/smartwifi/SmartWifiAdapter;
 
     iget-object v0, p0, Lcom/sec/epdg/smartwifi/SmartWifiAdapter;->mContext:Landroid/content/Context;
 
@@ -354,8 +334,6 @@
 
 .method static synthetic access$2300(Lcom/sec/epdg/smartwifi/SmartWifiAdapter;Ljava/net/InetAddress;)Z
     .locals 1
-    .param p0    # Lcom/sec/epdg/smartwifi/SmartWifiAdapter;
-    .param p1    # Ljava/net/InetAddress;
 
     invoke-direct {p0, p1}, Lcom/sec/epdg/smartwifi/SmartWifiAdapter;->isPingable(Ljava/net/InetAddress;)Z
 
@@ -366,7 +344,6 @@
 
 .method static synthetic access$2400(Lcom/sec/epdg/smartwifi/SmartWifiAdapter;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/sec/epdg/smartwifi/SmartWifiAdapter;
 
     iget-object v0, p0, Lcom/sec/epdg/smartwifi/SmartWifiAdapter;->mOutStandingTasks:Ljava/util/ArrayList;
 
@@ -375,7 +352,6 @@
 
 .method static synthetic access$2500(Lcom/sec/epdg/smartwifi/SmartWifiAdapter;)Ljava/lang/Boolean;
     .locals 1
-    .param p0    # Lcom/sec/epdg/smartwifi/SmartWifiAdapter;
 
     invoke-direct {p0}, Lcom/sec/epdg/smartwifi/SmartWifiAdapter;->algoForStartProfiling()Ljava/lang/Boolean;
 
@@ -386,8 +362,6 @@
 
 .method static synthetic access$2600(Lcom/sec/epdg/smartwifi/SmartWifiAdapter;I)Ljava/lang/Boolean;
     .locals 1
-    .param p0    # Lcom/sec/epdg/smartwifi/SmartWifiAdapter;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/sec/epdg/smartwifi/SmartWifiAdapter;->doWifiToLteHO(I)Ljava/lang/Boolean;
 
@@ -398,8 +372,6 @@
 
 .method static synthetic access$2700(Lcom/sec/epdg/smartwifi/SmartWifiAdapter;I)Ljava/lang/Boolean;
     .locals 1
-    .param p0    # Lcom/sec/epdg/smartwifi/SmartWifiAdapter;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/sec/epdg/smartwifi/SmartWifiAdapter;->doLteToWifiHO(I)Ljava/lang/Boolean;
 
@@ -410,7 +382,6 @@
 
 .method static synthetic access$300(Lcom/sec/epdg/smartwifi/SmartWifiAdapter;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/sec/epdg/smartwifi/SmartWifiAdapter;
 
     iget-object v0, p0, Lcom/sec/epdg/smartwifi/SmartWifiAdapter;->mHandler:Landroid/os/Handler;
 
@@ -419,7 +390,6 @@
 
 .method static synthetic access$400(Lcom/sec/epdg/smartwifi/SmartWifiAdapter;)Lcom/sec/epdg/smartwifi/SmartWifiAdapter$WifiSignalStrengthHistory;
     .locals 1
-    .param p0    # Lcom/sec/epdg/smartwifi/SmartWifiAdapter;
 
     iget-object v0, p0, Lcom/sec/epdg/smartwifi/SmartWifiAdapter;->mWifiSignalStrengthHistory:Lcom/sec/epdg/smartwifi/SmartWifiAdapter$WifiSignalStrengthHistory;
 
@@ -428,7 +398,6 @@
 
 .method static synthetic access$500(Lcom/sec/epdg/smartwifi/SmartWifiAdapter;)Lcom/sec/epdg/smartwifi/SmartWifiAdapter$SignalStrengthHistory;
     .locals 1
-    .param p0    # Lcom/sec/epdg/smartwifi/SmartWifiAdapter;
 
     iget-object v0, p0, Lcom/sec/epdg/smartwifi/SmartWifiAdapter;->mCdmaSignalStrengthHistory:Lcom/sec/epdg/smartwifi/SmartWifiAdapter$SignalStrengthHistory;
 
@@ -437,7 +406,6 @@
 
 .method static synthetic access$600(Lcom/sec/epdg/smartwifi/SmartWifiAdapter;)V
     .locals 0
-    .param p0    # Lcom/sec/epdg/smartwifi/SmartWifiAdapter;
 
     invoke-direct {p0}, Lcom/sec/epdg/smartwifi/SmartWifiAdapter;->addInitialReadingForWifi()V
 
@@ -446,7 +414,6 @@
 
 .method static synthetic access$700(Lcom/sec/epdg/smartwifi/SmartWifiAdapter;)V
     .locals 0
-    .param p0    # Lcom/sec/epdg/smartwifi/SmartWifiAdapter;
 
     invoke-direct {p0}, Lcom/sec/epdg/smartwifi/SmartWifiAdapter;->clearTasksArray()V
 
@@ -455,7 +422,6 @@
 
 .method static synthetic access$800(Lcom/sec/epdg/smartwifi/SmartWifiAdapter;)Ljava/net/InetAddress;
     .locals 1
-    .param p0    # Lcom/sec/epdg/smartwifi/SmartWifiAdapter;
 
     iget-object v0, p0, Lcom/sec/epdg/smartwifi/SmartWifiAdapter;->mAddrToReach:Ljava/net/InetAddress;
 
@@ -464,7 +430,6 @@
 
 .method static synthetic access$900(Lcom/sec/epdg/smartwifi/SmartWifiAdapter;)Z
     .locals 1
-    .param p0    # Lcom/sec/epdg/smartwifi/SmartWifiAdapter;
 
     iget-boolean v0, p0, Lcom/sec/epdg/smartwifi/SmartWifiAdapter;->mMetHoThreshold:Z
 
@@ -473,8 +438,6 @@
 
 .method static synthetic access$902(Lcom/sec/epdg/smartwifi/SmartWifiAdapter;Z)Z
     .locals 0
-    .param p0    # Lcom/sec/epdg/smartwifi/SmartWifiAdapter;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/epdg/smartwifi/SmartWifiAdapter;->mMetHoThreshold:Z
 
@@ -583,8 +546,6 @@
 
 .method public static calculateSignalLevelForTmo(II)I
     .locals 7
-    .param p0    # I
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -742,7 +703,6 @@
 
 .method private doLteToWifiHO(I)Ljava/lang/Boolean;
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Lcom/sec/epdg/smartwifi/SmartWifiAdapter;->mWifiSignalStrengthHistory:Lcom/sec/epdg/smartwifi/SmartWifiAdapter$WifiSignalStrengthHistory;
 
@@ -775,7 +735,6 @@
 
 .method private doWifiToLteHO(I)Ljava/lang/Boolean;
     .locals 3
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -805,8 +764,6 @@
 
 .method public static getInstance(Landroid/content/Context;Landroid/os/Handler;)Lcom/sec/epdg/smartwifi/SmartWifiAdapter;
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/os/Handler;
 
     sget-object v0, Lcom/sec/epdg/smartwifi/SmartWifiAdapter;->mSmartWifiAdapter:Lcom/sec/epdg/smartwifi/SmartWifiAdapter;
 
@@ -826,7 +783,6 @@
 
 .method private static getWeakWifiRssiDb(I)I
     .locals 8
-    .param p0    # I
 
     const/4 v7, 0x5
 
@@ -969,7 +925,6 @@
 
 .method private isCaptivePortalAuthenticated(Z)Z
     .locals 2
-    .param p1    # Z
 
     invoke-direct {p0}, Lcom/sec/epdg/smartwifi/SmartWifiAdapter;->isWifiGoodLink()Lcom/sec/epdg/smartwifi/SmartWifiAdapter$WifiLinkStatus;
 
@@ -1001,7 +956,6 @@
 
 .method private isFunnyRssi(I)Z
     .locals 1
-    .param p1    # I
 
     const/16 v0, -0xc8
 
@@ -1020,7 +974,6 @@
 
 .method private isPingable(Ljava/net/InetAddress;)Z
     .locals 7
-    .param p1    # Ljava/net/InetAddress;
 
     const/4 v3, 0x1
 
@@ -1098,7 +1051,6 @@
 
 .method private isRssiInHystersisZone(I)Z
     .locals 2
-    .param p1    # I
 
     sget v0, Lcom/sec/epdg/smartwifi/SmartWifiAdapter;->mWeakWifiDb:I
 
@@ -1113,9 +1065,6 @@
 
 .method private isRssiInHystersisZoneInt(III)Z
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v2, 0x0
 
@@ -1339,7 +1288,6 @@
 
 .method private static isWifiConnected(Landroid/content/Context;)Z
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     const-string v2, "connectivity"
 
@@ -1698,8 +1646,6 @@
 
 .method private startProfilingTask(Ljava/lang/Runnable;Ljava/lang/Runnable;)V
     .locals 6
-    .param p1    # Ljava/lang/Runnable;
-    .param p2    # Ljava/lang/Runnable;
 
     new-instance v0, Lcom/sec/epdg/smartwifi/SmartWifiAdapter$SmartWifiTask;
 
@@ -1771,9 +1717,6 @@
 
 .method public isWifiTolteHORecommended(ILjava/lang/Runnable;Ljava/lang/Runnable;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Ljava/lang/Runnable;
-    .param p3    # Ljava/lang/Runnable;
 
     const/4 v0, 0x1
 
@@ -1795,9 +1738,6 @@
 
 .method public islteToWifiHORecommended(ILjava/lang/Runnable;Ljava/lang/Runnable;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Ljava/lang/Runnable;
-    .param p3    # Ljava/lang/Runnable;
 
     const/4 v0, 0x1
 
@@ -1819,12 +1759,6 @@
 
 .method public startProfiling(Ljava/net/InetAddress;Ljava/lang/Runnable;Ljava/lang/Runnable;III)V
     .locals 4
-    .param p1    # Ljava/net/InetAddress;
-    .param p2    # Ljava/lang/Runnable;
-    .param p3    # Ljava/lang/Runnable;
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     const/4 v3, 0x0
 

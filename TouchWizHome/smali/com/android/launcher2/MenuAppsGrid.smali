@@ -339,7 +339,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -352,8 +351,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -364,9 +361,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v5, 0x0
 
@@ -633,7 +627,6 @@
 
 .method static synthetic access$000(Lcom/android/launcher2/MenuAppsGrid;)Lcom/android/launcher2/Folder;
     .locals 1
-    .param p0    # Lcom/android/launcher2/MenuAppsGrid;
 
     iget-object v0, p0, Lcom/android/launcher2/MenuAppsGrid;->mFolder:Lcom/android/launcher2/Folder;
 
@@ -642,8 +635,6 @@
 
 .method static synthetic access$002(Lcom/android/launcher2/MenuAppsGrid;Lcom/android/launcher2/Folder;)Lcom/android/launcher2/Folder;
     .locals 0
-    .param p0    # Lcom/android/launcher2/MenuAppsGrid;
-    .param p1    # Lcom/android/launcher2/Folder;
 
     iput-object p1, p0, Lcom/android/launcher2/MenuAppsGrid;->mFolder:Lcom/android/launcher2/Folder;
 
@@ -652,7 +643,6 @@
 
 .method static synthetic access$100(Lcom/android/launcher2/MenuAppsGrid;)Lcom/android/launcher2/MenuView;
     .locals 1
-    .param p0    # Lcom/android/launcher2/MenuAppsGrid;
 
     iget-object v0, p0, Lcom/android/launcher2/MenuAppsGrid;->mTabHost:Lcom/android/launcher2/MenuView;
 
@@ -661,7 +651,6 @@
 
 .method static synthetic access$1000(Lcom/android/launcher2/MenuAppsGrid;)Lcom/android/launcher2/MenuAppsGrid$StateObj;
     .locals 1
-    .param p0    # Lcom/android/launcher2/MenuAppsGrid;
 
     iget-object v0, p0, Lcom/android/launcher2/MenuAppsGrid;->mStateDownloadedApps:Lcom/android/launcher2/MenuAppsGrid$StateObj;
 
@@ -670,7 +659,6 @@
 
 .method static synthetic access$1100(Lcom/android/launcher2/MenuAppsGrid;)Lcom/android/launcher2/MenuAppsGrid$StateObj;
     .locals 1
-    .param p0    # Lcom/android/launcher2/MenuAppsGrid;
 
     iget-object v0, p0, Lcom/android/launcher2/MenuAppsGrid;->mStateDownloadedUninstall:Lcom/android/launcher2/MenuAppsGrid$StateObj;
 
@@ -679,7 +667,6 @@
 
 .method static synthetic access$1200(Lcom/android/launcher2/MenuAppsGrid;)Lcom/android/launcher2/MenuAppsGrid$StateFolderSelect;
     .locals 1
-    .param p0    # Lcom/android/launcher2/MenuAppsGrid;
 
     iget-object v0, p0, Lcom/android/launcher2/MenuAppsGrid;->mStateFolderSelect:Lcom/android/launcher2/MenuAppsGrid$StateFolderSelect;
 
@@ -688,7 +675,6 @@
 
 .method static synthetic access$1300(Lcom/android/launcher2/MenuAppsGrid;)Lcom/android/launcher2/MenuAppsGrid$StateShareAppSelect;
     .locals 1
-    .param p0    # Lcom/android/launcher2/MenuAppsGrid;
 
     iget-object v0, p0, Lcom/android/launcher2/MenuAppsGrid;->mStateshareSelect:Lcom/android/launcher2/MenuAppsGrid$StateShareAppSelect;
 
@@ -697,7 +683,6 @@
 
 .method static synthetic access$1400(Lcom/android/launcher2/MenuAppsGrid;)Lcom/android/launcher2/MenuAppsGrid$StateSelAppsToHide;
     .locals 1
-    .param p0    # Lcom/android/launcher2/MenuAppsGrid;
 
     iget-object v0, p0, Lcom/android/launcher2/MenuAppsGrid;->mStateSelAppsToHide:Lcom/android/launcher2/MenuAppsGrid$StateSelAppsToHide;
 
@@ -706,7 +691,6 @@
 
 .method static synthetic access$1500(Lcom/android/launcher2/MenuAppsGrid;)Lcom/android/launcher2/MenuAppsGrid$StateSelAppsToUnHide;
     .locals 1
-    .param p0    # Lcom/android/launcher2/MenuAppsGrid;
 
     iget-object v0, p0, Lcom/android/launcher2/MenuAppsGrid;->mStateSelAppsToUnHide:Lcom/android/launcher2/MenuAppsGrid$StateSelAppsToUnHide;
 
@@ -715,7 +699,6 @@
 
 .method static synthetic access$1600(Lcom/android/launcher2/MenuAppsGrid;)Lcom/android/launcher2/MenuAppsGrid$StateMoveToSecretBox;
     .locals 1
-    .param p0    # Lcom/android/launcher2/MenuAppsGrid;
 
     iget-object v0, p0, Lcom/android/launcher2/MenuAppsGrid;->mStateMoveToSecretBox:Lcom/android/launcher2/MenuAppsGrid$StateMoveToSecretBox;
 
@@ -724,7 +707,6 @@
 
 .method static synthetic access$1700(Lcom/android/launcher2/MenuAppsGrid;)Lcom/android/launcher2/MenuAppsGrid$StateRemoveFromSecretBox;
     .locals 1
-    .param p0    # Lcom/android/launcher2/MenuAppsGrid;
 
     iget-object v0, p0, Lcom/android/launcher2/MenuAppsGrid;->mStateRemoveFromSecretBox:Lcom/android/launcher2/MenuAppsGrid$StateRemoveFromSecretBox;
 
@@ -733,7 +715,6 @@
 
 .method static synthetic access$1800(Lcom/android/launcher2/MenuAppsGrid;)Lcom/android/launcher2/MenuAppsGrid$StateSelAppsToEnable;
     .locals 1
-    .param p0    # Lcom/android/launcher2/MenuAppsGrid;
 
     iget-object v0, p0, Lcom/android/launcher2/MenuAppsGrid;->mStateSelAppsToEnable:Lcom/android/launcher2/MenuAppsGrid$StateSelAppsToEnable;
 
@@ -742,7 +723,6 @@
 
 .method static synthetic access$1900(Lcom/android/launcher2/MenuAppsGrid;)Lcom/android/launcher2/MenuAppsGrid$StateObj;
     .locals 1
-    .param p0    # Lcom/android/launcher2/MenuAppsGrid;
 
     iget-object v0, p0, Lcom/android/launcher2/MenuAppsGrid;->mStatePageEdit:Lcom/android/launcher2/MenuAppsGrid$StateObj;
 
@@ -751,8 +731,6 @@
 
 .method static synthetic access$200(Lcom/android/launcher2/MenuAppsGrid;Z)V
     .locals 0
-    .param p0    # Lcom/android/launcher2/MenuAppsGrid;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/launcher2/MenuAppsGrid;->setMenuAppsGridAccessibilityEnabled(Z)V
 
@@ -761,7 +739,6 @@
 
 .method static synthetic access$2000(Lcom/android/launcher2/MenuAppsGrid;)Lcom/android/launcher2/MenuAppsGrid$StateRemoveFolder;
     .locals 1
-    .param p0    # Lcom/android/launcher2/MenuAppsGrid;
 
     iget-object v0, p0, Lcom/android/launcher2/MenuAppsGrid;->mStateRemoveFolder:Lcom/android/launcher2/MenuAppsGrid$StateRemoveFolder;
 
@@ -778,7 +755,6 @@
 
 .method static synthetic access$300(Lcom/android/launcher2/MenuAppsGrid;)Landroid/view/View$OnTouchListener;
     .locals 1
-    .param p0    # Lcom/android/launcher2/MenuAppsGrid;
 
     iget-object v0, p0, Lcom/android/launcher2/MenuAppsGrid;->mDarkenLayerTouchListener:Landroid/view/View$OnTouchListener;
 
@@ -787,7 +763,6 @@
 
 .method static synthetic access$3300(Lcom/android/launcher2/MenuAppsGrid;)Lcom/android/launcher2/MenuAppsGridFragment;
     .locals 1
-    .param p0    # Lcom/android/launcher2/MenuAppsGrid;
 
     iget-object v0, p0, Lcom/android/launcher2/MenuAppsGrid;->mMenuAppsGridFragment:Lcom/android/launcher2/MenuAppsGridFragment;
 
@@ -796,7 +771,6 @@
 
 .method static synthetic access$3402(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/launcher2/MenuAppsGrid;->mEmptyFoldertoAddButton:Z
 
@@ -805,7 +779,6 @@
 
 .method static synthetic access$3500(Lcom/android/launcher2/MenuAppsGrid;)Lcom/android/launcher2/MenuTitleBarManager;
     .locals 1
-    .param p0    # Lcom/android/launcher2/MenuAppsGrid;
 
     iget-object v0, p0, Lcom/android/launcher2/MenuAppsGrid;->mTitleBarManager:Lcom/android/launcher2/MenuTitleBarManager;
 
@@ -814,9 +787,6 @@
 
 .method static synthetic access$3600(Lcom/android/launcher2/MenuAppsGrid;ZLcom/android/launcher2/AppIconView;)V
     .locals 0
-    .param p0    # Lcom/android/launcher2/MenuAppsGrid;
-    .param p1    # Z
-    .param p2    # Lcom/android/launcher2/AppIconView;
 
     invoke-direct {p0, p1, p2}, Lcom/android/launcher2/MenuAppsGrid;->setIconTextAndShadowVisibilityOnItem(ZLcom/android/launcher2/AppIconView;)V
 
@@ -825,7 +795,6 @@
 
 .method static synthetic access$3700(Lcom/android/launcher2/MenuAppsGrid;)Landroid/animation/Animator;
     .locals 1
-    .param p0    # Lcom/android/launcher2/MenuAppsGrid;
 
     iget-object v0, p0, Lcom/android/launcher2/MenuAppsGrid;->mEnterEditModeAnimator:Landroid/animation/Animator;
 
@@ -834,9 +803,6 @@
 
 .method static synthetic access$3800(Lcom/android/launcher2/MenuAppsGrid;Ljava/util/List;Z)V
     .locals 0
-    .param p0    # Lcom/android/launcher2/MenuAppsGrid;
-    .param p1    # Ljava/util/List;
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/launcher2/MenuAppsGrid;->animatePageZoomOut(Ljava/util/List;Z)V
 
@@ -845,7 +811,6 @@
 
 .method static synthetic access$3900(Lcom/android/launcher2/MenuAppsGrid;)Landroid/animation/Animator;
     .locals 1
-    .param p0    # Lcom/android/launcher2/MenuAppsGrid;
 
     iget-object v0, p0, Lcom/android/launcher2/MenuAppsGrid;->mExitEditModeAnimator:Landroid/animation/Animator;
 
@@ -854,7 +819,6 @@
 
 .method static synthetic access$400(Lcom/android/launcher2/MenuAppsGrid;)Ljava/util/Stack;
     .locals 1
-    .param p0    # Lcom/android/launcher2/MenuAppsGrid;
 
     iget-object v0, p0, Lcom/android/launcher2/MenuAppsGrid;->mRecycledViews:Ljava/util/Stack;
 
@@ -879,7 +843,6 @@
 
 .method static synthetic access$4200(Lcom/android/launcher2/MenuAppsGrid;)Ljava/util/List;
     .locals 1
-    .param p0    # Lcom/android/launcher2/MenuAppsGrid;
 
     invoke-direct {p0}, Lcom/android/launcher2/MenuAppsGrid;->getConstructedViews()Ljava/util/List;
 
@@ -890,7 +853,6 @@
 
 .method static synthetic access$4300(Lcom/android/launcher2/MenuAppsGrid;)Ljava/util/List;
     .locals 1
-    .param p0    # Lcom/android/launcher2/MenuAppsGrid;
 
     iget-object v0, p0, Lcom/android/launcher2/MenuAppsGrid;->preCheckedItems:Ljava/util/List;
 
@@ -899,7 +861,6 @@
 
 .method static synthetic access$4400(Lcom/android/launcher2/MenuAppsGrid;)Lcom/android/launcher2/ItemViewBuilder;
     .locals 1
-    .param p0    # Lcom/android/launcher2/MenuAppsGrid;
 
     iget-object v0, p0, Lcom/android/launcher2/MenuAppsGrid;->mItemViewBuilder:Lcom/android/launcher2/ItemViewBuilder;
 
@@ -916,7 +877,6 @@
 
 .method static synthetic access$500(Lcom/android/launcher2/MenuAppsGrid;)Landroid/view/LayoutInflater;
     .locals 1
-    .param p0    # Lcom/android/launcher2/MenuAppsGrid;
 
     iget-object v0, p0, Lcom/android/launcher2/MenuAppsGrid;->mLayoutInflater:Landroid/view/LayoutInflater;
 
@@ -925,8 +885,6 @@
 
 .method static synthetic access$5000(Lcom/android/launcher2/MenuAppsGrid;Ljava/util/List;)Ljava/util/List;
     .locals 1
-    .param p0    # Lcom/android/launcher2/MenuAppsGrid;
-    .param p1    # Ljava/util/List;
 
     invoke-direct {p0, p1}, Lcom/android/launcher2/MenuAppsGrid;->getRealatedApps(Ljava/util/List;)Ljava/util/List;
 
@@ -937,7 +895,6 @@
 
 .method static synthetic access$5200(Lcom/android/launcher2/MenuAppsGrid;)Lcom/android/launcher2/MenuStateAnimatorSet;
     .locals 1
-    .param p0    # Lcom/android/launcher2/MenuAppsGrid;
 
     iget-object v0, p0, Lcom/android/launcher2/MenuAppsGrid;->mStateAnimatorSet:Lcom/android/launcher2/MenuStateAnimatorSet;
 
@@ -946,7 +903,6 @@
 
 .method static synthetic access$5300(Lcom/android/launcher2/MenuAppsGrid;)Lcom/android/launcher2/MenuView$ViewType;
     .locals 1
-    .param p0    # Lcom/android/launcher2/MenuAppsGrid;
 
     iget-object v0, p0, Lcom/android/launcher2/MenuAppsGrid;->mViewType:Lcom/android/launcher2/MenuView$ViewType;
 
@@ -955,7 +911,6 @@
 
 .method static synthetic access$5400(Lcom/android/launcher2/MenuAppsGrid;)Landroid/content/pm/PackageManager;
     .locals 1
-    .param p0    # Lcom/android/launcher2/MenuAppsGrid;
 
     iget-object v0, p0, Lcom/android/launcher2/MenuAppsGrid;->mPm:Landroid/content/pm/PackageManager;
 
@@ -964,9 +919,6 @@
 
 .method static synthetic access$5500(Lcom/android/launcher2/MenuAppsGrid;ZLjava/lang/Iterable;)V
     .locals 0
-    .param p0    # Lcom/android/launcher2/MenuAppsGrid;
-    .param p1    # Z
-    .param p2    # Ljava/lang/Iterable;
 
     invoke-direct {p0, p1, p2}, Lcom/android/launcher2/MenuAppsGrid;->setIconTextAndShadowVisibilityOnItems(ZLjava/lang/Iterable;)V
 
@@ -975,8 +927,6 @@
 
 .method static synthetic access$5600(Lcom/android/launcher2/MenuAppsGrid;Z)V
     .locals 0
-    .param p0    # Lcom/android/launcher2/MenuAppsGrid;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/launcher2/MenuAppsGrid;->setDragInProgress(Z)V
 
@@ -985,7 +935,6 @@
 
 .method static synthetic access$5800(Lcom/android/launcher2/MenuAppsGrid;)Z
     .locals 1
-    .param p0    # Lcom/android/launcher2/MenuAppsGrid;
 
     invoke-direct {p0}, Lcom/android/launcher2/MenuAppsGrid;->isConfirmDialogOpen()Z
 
@@ -996,7 +945,6 @@
 
 .method static synthetic access$700(Lcom/android/launcher2/MenuAppsGrid;)Lcom/android/launcher2/MenuAppsGrid$StateObj;
     .locals 1
-    .param p0    # Lcom/android/launcher2/MenuAppsGrid;
 
     iget-object v0, p0, Lcom/android/launcher2/MenuAppsGrid;->mStateNormal:Lcom/android/launcher2/MenuAppsGrid$StateObj;
 
@@ -1005,7 +953,6 @@
 
 .method static synthetic access$800(Lcom/android/launcher2/MenuAppsGrid;)Lcom/android/launcher2/MenuAppsGrid$StateObj;
     .locals 1
-    .param p0    # Lcom/android/launcher2/MenuAppsGrid;
 
     iget-object v0, p0, Lcom/android/launcher2/MenuAppsGrid;->mStateEdit:Lcom/android/launcher2/MenuAppsGrid$StateObj;
 
@@ -1014,7 +961,6 @@
 
 .method static synthetic access$900(Lcom/android/launcher2/MenuAppsGrid;)Lcom/android/launcher2/MenuAppsGrid$StateObj;
     .locals 1
-    .param p0    # Lcom/android/launcher2/MenuAppsGrid;
 
     iget-object v0, p0, Lcom/android/launcher2/MenuAppsGrid;->mStateUninstall:Lcom/android/launcher2/MenuAppsGrid$StateObj;
 
@@ -1023,7 +969,6 @@
 
 .method private addAppItem(Lcom/android/launcher2/AppItem;)V
     .locals 2
-    .param p1    # Lcom/android/launcher2/AppItem;
 
     invoke-direct {p0, p1}, Lcom/android/launcher2/MenuAppsGrid;->getOrCreatePageForItem(Lcom/android/launcher2/AppItem;)Lcom/android/launcher2/CellLayoutMenu;
 
@@ -1067,7 +1012,6 @@
 
 .method private animatePageZoomOut(Ljava/util/List;Z)V
     .locals 3
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1119,7 +1063,6 @@
 
 .method private changeOrientationIfRequired(Landroid/content/res/Configuration;)V
     .locals 8
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
@@ -1270,8 +1213,6 @@
 
 .method private checkPageType(Lcom/android/launcher2/AppItem;I)Z
     .locals 3
-    .param p1    # Lcom/android/launcher2/AppItem;
-    .param p2    # I
 
     const/4 v1, 0x1
 
@@ -1354,9 +1295,6 @@
 
 .method private findNewFolderPosition(Lcom/android/launcher2/AppItem;II)V
     .locals 6
-    .param p1    # Lcom/android/launcher2/AppItem;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v5, -0x1
 
@@ -1526,7 +1464,6 @@
 
 .method private getOrCreatePageForItem(Lcom/android/launcher2/AppItem;)Lcom/android/launcher2/CellLayoutMenu;
     .locals 5
-    .param p1    # Lcom/android/launcher2/AppItem;
 
     invoke-virtual {p0}, Lcom/android/launcher2/PagedView;->getPageCount()I
 
@@ -1779,7 +1716,6 @@
 
 .method private moveToCurrentPage(I)V
     .locals 5
-    .param p1    # I
 
     const/4 v4, 0x0
 
@@ -2143,7 +2079,6 @@
 
 .method private openFolderKeyboardIfNeeded(Landroid/os/Bundle;)V
     .locals 9
-    .param p1    # Landroid/os/Bundle;
 
     if-eqz p1, :cond_0
 
@@ -2290,7 +2225,6 @@
 
 .method private setDragInProgress(Z)V
     .locals 1
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/launcher2/MenuAppsGrid;->mDragInProgress:Z
 
@@ -2314,8 +2248,6 @@
 
 .method private setIconTextAndShadowVisibilityOnItem(ZLcom/android/launcher2/AppIconView;)V
     .locals 1
-    .param p1    # Z
-    .param p2    # Lcom/android/launcher2/AppIconView;
 
     invoke-virtual {p2, p1}, Lcom/android/launcher2/AppIconView;->setTextVisible(Z)V
 
@@ -2328,7 +2260,6 @@
 
 .method private setIconTextAndShadowVisibilityOnItems(ZLjava/lang/Iterable;)V
     .locals 3
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(Z",
@@ -2373,7 +2304,6 @@
 
 .method private setMenuAppsGridAccessibilityEnabled(Z)V
     .locals 5
-    .param p1    # Z
 
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
@@ -2451,9 +2381,6 @@
 
 .method private updateGridSize(III)V
     .locals 16
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     invoke-virtual/range {p0 .. p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
@@ -2627,7 +2554,6 @@
 
 .method private updatePageLayout(I)V
     .locals 3
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/launcher2/PagedView;->getPageCount()I
 
@@ -2840,7 +2766,6 @@
 
 .method protected beginDragging(Landroid/view/View;)Z
     .locals 14
-    .param p1    # Landroid/view/View;
 
     const/4 v13, 0x0
 
@@ -3197,7 +3122,6 @@
 
 .method public clearLayout(Lcom/android/launcher2/Page;)V
     .locals 6
-    .param p1    # Lcom/android/launcher2/Page;
 
     new-instance v4, Ljava/util/ArrayList;
 
@@ -3306,8 +3230,6 @@
 
 .method public closeFolder(ZZ)Z
     .locals 3
-    .param p1    # Z
-    .param p2    # Z
 
     const/4 v0, 0x1
 
@@ -3372,7 +3294,6 @@
 
 .method public dispatchDragEvent(Landroid/view/DragEvent;)Z
     .locals 3
-    .param p1    # Landroid/view/DragEvent;
 
     const/4 v2, 0x1
 
@@ -3406,7 +3327,6 @@
 
 .method protected dispatchDraw(Landroid/graphics/Canvas;)V
     .locals 0
-    .param p1    # Landroid/graphics/Canvas;
 
     invoke-super {p0, p1}, Lcom/android/launcher2/PagedView;->dispatchDraw(Landroid/graphics/Canvas;)V
 
@@ -3417,7 +3337,6 @@
 
 .method protected findGrandchildByTag(Ljava/lang/Object;)Landroid/view/View;
     .locals 6
-    .param p1    # Ljava/lang/Object;
 
     const/4 v4, 0x0
 
@@ -3508,7 +3427,6 @@
 
 .method protected getAssociatedLowerPageBound(I)I
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/launcher2/MenuAppsGrid;->getState()Lcom/android/launcher2/MenuAppsGrid$State;
 
@@ -3533,7 +3451,6 @@
 
 .method protected getAssociatedUpperPageBound(I)I
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/launcher2/MenuAppsGrid;->getState()Lcom/android/launcher2/MenuAppsGrid$State;
 
@@ -3560,7 +3477,6 @@
 
 .method public getCreateFolderColor(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/launcher2/MenuAppsGrid;->mCreateFolderColor:I
 
@@ -3662,7 +3578,6 @@
 
 .method getOrCreatePageAt(I)Lcom/android/launcher2/CellLayoutMenu;
     .locals 4
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/launcher2/PagedView;->getPageCount()I
 
@@ -3817,7 +3732,6 @@
 
 .method getStateObj(Lcom/android/launcher2/MenuAppsGrid$State;)Lcom/android/launcher2/MenuAppsGrid$StateObj;
     .locals 1
-    .param p1    # Lcom/android/launcher2/MenuAppsGrid$State;
 
     invoke-virtual {p1, p0}, Lcom/android/launcher2/MenuAppsGrid$State;->getObj(Lcom/android/launcher2/MenuAppsGrid;)Lcom/android/launcher2/MenuAppsGrid$StateObj;
 
@@ -3840,7 +3754,6 @@
 
 .method protected getUnEncumberedPagedViewBounds(Landroid/graphics/Rect;)Z
     .locals 9
-    .param p1    # Landroid/graphics/Rect;
 
     const/4 v3, 0x1
 
@@ -3984,8 +3897,6 @@
 
 .method public handleStateChange(Lcom/android/launcher2/MenuAppsGrid$State;Lcom/android/launcher2/MenuAppsGrid$State;)V
     .locals 8
-    .param p1    # Lcom/android/launcher2/MenuAppsGrid$State;
-    .param p2    # Lcom/android/launcher2/MenuAppsGrid$State;
 
     const/4 v7, 0x1
 
@@ -4132,7 +4043,6 @@
 
 .method public hideEditBar(Landroid/animation/Animator;)V
     .locals 2
-    .param p1    # Landroid/animation/Animator;
 
     iget-object v0, p0, Lcom/android/launcher2/MenuAppsGrid;->mTitleBarManager:Lcom/android/launcher2/MenuTitleBarManager;
 
@@ -4180,8 +4090,6 @@
 
 .method protected invalidatePageData(IZ)V
     .locals 1
-    .param p1    # I
-    .param p2    # Z
 
     invoke-super {p0, p1, p2}, Lcom/android/launcher2/PagedView;->invalidatePageData(IZ)V
 
@@ -4211,7 +4119,6 @@
 
 .method public isFolderPage(I)Z
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -4266,7 +4173,6 @@
 
 .method public isSecretPage(I)Z
     .locals 3
-    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -4350,7 +4256,6 @@
 
 .method protected onAddItem(Lcom/android/launcher2/AppIconView;)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/AppIconView;
 
     invoke-virtual {p1, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -4365,7 +4270,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 5
-    .param p1    # Landroid/view/View;
 
     const/4 v4, 0x1
 
@@ -4539,7 +4443,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 1
-    .param p1    # Landroid/content/res/Configuration;
 
     iget v0, p1, Landroid/content/res/Configuration;->orientation:I
 
@@ -4693,13 +4596,6 @@
 
 .method public onFolderCreated(Lcom/android/launcher2/BaseItem;Ljava/lang/String;JZZII)V
     .locals 12
-    .param p1    # Lcom/android/launcher2/BaseItem;
-    .param p2    # Ljava/lang/String;
-    .param p3    # J
-    .param p5    # Z
-    .param p6    # Z
-    .param p7    # I
-    .param p8    # I
 
     invoke-virtual {p0}, Lcom/android/launcher2/MenuAppsGrid;->getState()Lcom/android/launcher2/MenuAppsGrid$State;
 
@@ -4860,7 +4756,6 @@
 
 .method public onFolderNameChange(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     sget-object v0, Lcom/android/launcher2/MenuView$ViewType;->ALPHABETIC_GRID:Lcom/android/launcher2/MenuView$ViewType;
 
@@ -4880,11 +4775,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 2
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-super/range {p0 .. p5}, Lcom/android/launcher2/PagedView;->onLayout(ZIIII)V
 
@@ -4915,7 +4805,6 @@
 
 .method public onLongClick(Landroid/view/View;)Z
     .locals 5
-    .param p1    # Landroid/view/View;
 
     const/4 v2, 0x0
 
@@ -5018,7 +4907,6 @@
 
 .method public onRestoreInstanceState(Landroid/os/Parcelable;)V
     .locals 3
-    .param p1    # Landroid/os/Parcelable;
 
     instance-of v1, p1, Landroid/os/Bundle;
 
@@ -5097,8 +4985,6 @@
 
 .method protected onVisibilityChanged(Landroid/view/View;I)V
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     if-nez p2, :cond_0
 
@@ -5120,8 +5006,6 @@
 
 .method public openFolder(Lcom/android/launcher2/FolderItem;Z)V
     .locals 8
-    .param p1    # Lcom/android/launcher2/FolderItem;
-    .param p2    # Z
 
     const/4 v6, 0x0
 
@@ -5404,9 +5288,6 @@
 
 .method public preCreateFolder(Ljava/lang/String;Lcom/android/launcher2/MenuAppsGrid$State;I)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/launcher2/MenuAppsGrid$State;
-    .param p3    # I
 
     const/4 v5, 0x1
 
@@ -5507,7 +5388,6 @@
 
 .method refreshQuickViewMenuGrid(Z)V
     .locals 2
-    .param p1    # Z
 
     invoke-virtual {p0}, Lcom/android/launcher2/MenuAppsGrid;->getState()Lcom/android/launcher2/MenuAppsGrid$State;
 
@@ -5648,7 +5528,6 @@
 
 .method public restoreOpenFolderState(Landroid/os/Bundle;)V
     .locals 6
-    .param p1    # Landroid/os/Bundle;
 
     if-nez p1, :cond_1
 
@@ -5771,7 +5650,6 @@
 
 .method public saveOpenFolderState(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     iget-object v1, p0, Lcom/android/launcher2/MenuAppsGrid;->mFolder:Lcom/android/launcher2/Folder;
 
@@ -5837,7 +5715,6 @@
 
 .method public saveSecretNoti(Ljava/lang/Boolean;)V
     .locals 5
-    .param p1    # Ljava/lang/Boolean;
 
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
@@ -5872,7 +5749,6 @@
 
 .method protected setAccessibilityFocusChange(Z)V
     .locals 0
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/launcher2/MenuAppsGrid;->setMenuAppsGridAccessibilityEnabled(Z)V
 
@@ -5881,7 +5757,6 @@
 
 .method public setCreateFolderAddButtonFromHomeView(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/launcher2/MenuAppsGrid;->mIsFromHomeView:Z
 
@@ -5890,7 +5765,6 @@
 
 .method public setCreateFolderAddButtonState(Lcom/android/launcher2/BaseItem;)V
     .locals 13
-    .param p1    # Lcom/android/launcher2/BaseItem;
 
     iget-object v10, p0, Lcom/android/launcher2/MenuAppsGrid;->mTitleBarManager:Lcom/android/launcher2/MenuTitleBarManager;
 
@@ -6179,8 +6053,6 @@
 
 .method setDummyPanelProperties(FI)V
     .locals 6
-    .param p1    # F
-    .param p2    # I
 
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
@@ -6233,7 +6105,6 @@
 
 .method public setFolderColorToAddButton(I)V
     .locals 0
-    .param p1    # I
 
     sput p1, Lcom/android/launcher2/MenuAppsGrid;->mFolderColorToAddButton:I
 
@@ -6242,7 +6113,6 @@
 
 .method public setFolderTitletoAddButton(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     sput-object p1, Lcom/android/launcher2/MenuAppsGrid;->mFolderTitletoAddButton:Ljava/lang/String;
 
@@ -6251,7 +6121,6 @@
 
 .method public setMenuAppsGridFragment(Lcom/android/launcher2/MenuAppsGridFragment;)V
     .locals 0
-    .param p1    # Lcom/android/launcher2/MenuAppsGridFragment;
 
     iput-object p1, p0, Lcom/android/launcher2/MenuAppsGrid;->mMenuAppsGridFragment:Lcom/android/launcher2/MenuAppsGridFragment;
 
@@ -6260,7 +6129,6 @@
 
 .method public setPanelViewport(Landroid/view/View;)V
     .locals 3
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p1}, Landroid/view/View;->getWidth()I
 
@@ -6286,7 +6154,6 @@
 
 .method public setPrevFolderOnCreateFolder(Lcom/android/launcher2/Folder;)V
     .locals 0
-    .param p1    # Lcom/android/launcher2/Folder;
 
     iput-object p1, p0, Lcom/android/launcher2/MenuAppsGrid;->mPrevFolderOnCreateFolder:Lcom/android/launcher2/Folder;
 
@@ -6295,7 +6162,6 @@
 
 .method public setStartEditNormalPage(Z)V
     .locals 0
-    .param p1    # Z
 
     sput-boolean p1, Lcom/android/launcher2/MenuAppsGrid;->mStartEditNormalPage:Z
 
@@ -6304,7 +6170,6 @@
 
 .method public setStateTargetFolder(Lcom/android/launcher2/FolderItem;)V
     .locals 3
-    .param p1    # Lcom/android/launcher2/FolderItem;
 
     iget-object v0, p0, Lcom/android/launcher2/MenuAppsGrid;->mStateFolderSelect:Lcom/android/launcher2/MenuAppsGrid$StateFolderSelect;
 
@@ -6320,7 +6185,6 @@
 
 .method public setTabHost(Lcom/android/launcher2/MenuView;)V
     .locals 2
-    .param p1    # Lcom/android/launcher2/MenuView;
 
     iput-object p1, p0, Lcom/android/launcher2/MenuAppsGrid;->mTabHost:Lcom/android/launcher2/MenuView;
 
@@ -6360,7 +6224,6 @@
 
 .method public setViewType(Lcom/android/launcher2/MenuView$ViewType;)V
     .locals 4
-    .param p1    # Lcom/android/launcher2/MenuView$ViewType;
 
     iget-object v2, p0, Lcom/android/launcher2/MenuAppsGrid;->mViewType:Lcom/android/launcher2/MenuView$ViewType;
 
@@ -6453,8 +6316,6 @@
 
 .method public syncPageItems(IZ)V
     .locals 2
-    .param p1    # I
-    .param p2    # Z
 
     invoke-virtual {p0, p1}, Lcom/android/launcher2/PagedView;->getPageAt(I)Landroid/view/View;
 
@@ -6748,8 +6609,6 @@
 
 .method protected updatePageTransform(Landroid/view/View;F)V
     .locals 19
-    .param p1    # Landroid/view/View;
-    .param p2    # F
 
     if-nez p1, :cond_0
 
@@ -7157,8 +7016,6 @@
 
 .method protected updatePageTransformZoomEffect(Lcom/android/launcher2/CellLayout;F)V
     .locals 8
-    .param p1    # Lcom/android/launcher2/CellLayout;
-    .param p2    # F
 
     const/high16 v7, 0x40000000
 

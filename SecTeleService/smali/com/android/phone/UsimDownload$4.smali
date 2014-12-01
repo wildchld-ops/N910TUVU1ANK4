@@ -492,7 +492,7 @@
 
     iget-object v4, p0, Lcom/android/phone/UsimDownload$4;->this$0:Lcom/android/phone/UsimDownload;
 
-    invoke-virtual {v4}, Landroid/app/Activity;->finish()V
+    invoke-virtual {v4}, Lcom/android/phone/UsimDownload;->finish()V
 
     goto/16 :goto_0
 
@@ -708,7 +708,7 @@
 
     iget-object v4, p0, Lcom/android/phone/UsimDownload$4;->this$0:Lcom/android/phone/UsimDownload;
 
-    invoke-virtual {v4}, Landroid/app/Activity;->finish()V
+    invoke-virtual {v4}, Lcom/android/phone/UsimDownload;->finish()V
 
     goto/16 :goto_0
 

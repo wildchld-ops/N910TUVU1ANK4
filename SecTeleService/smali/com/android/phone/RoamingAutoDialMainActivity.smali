@@ -27,13 +27,13 @@
     .locals 3
     .param p1    # Landroid/os/Bundle;
 
-    invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Landroid/app/ListActivity;->onCreate(Landroid/os/Bundle;)V
 
     new-instance v0, Ljava/util/LinkedList;
 
     invoke-direct {v0}, Ljava/util/LinkedList;-><init>()V
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/RoamingAutoDialMainActivity;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -45,7 +45,7 @@
 
     invoke-virtual {v0, v1}, Ljava/util/LinkedList;->add(Ljava/lang/Object;)Z
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/RoamingAutoDialMainActivity;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -57,7 +57,7 @@
 
     invoke-virtual {v0, v1}, Ljava/util/LinkedList;->add(Ljava/lang/Object;)Z
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/RoamingAutoDialMainActivity;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -69,7 +69,7 @@
 
     invoke-virtual {v0, v1}, Ljava/util/LinkedList;->add(Ljava/lang/Object;)Z
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/RoamingAutoDialMainActivity;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -81,7 +81,7 @@
 
     invoke-virtual {v0, v1}, Ljava/util/LinkedList;->add(Ljava/lang/Object;)Z
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/RoamingAutoDialMainActivity;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -93,7 +93,7 @@
 
     invoke-virtual {v0, v1}, Ljava/util/LinkedList;->add(Ljava/lang/Object;)Z
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/RoamingAutoDialMainActivity;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -105,7 +105,7 @@
 
     invoke-virtual {v0, v1}, Ljava/util/LinkedList;->add(Ljava/lang/Object;)Z
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/RoamingAutoDialMainActivity;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -119,7 +119,7 @@
 
     const v1, 0x7f040092
 
-    invoke-virtual {p0, v1}, Landroid/app/Activity;->setContentView(I)V
+    invoke-virtual {p0, v1}, Lcom/android/phone/RoamingAutoDialMainActivity;->setContentView(I)V
 
     new-instance v1, Landroid/widget/ArrayAdapter;
 
@@ -127,7 +127,7 @@
 
     invoke-direct {v1, p0, v2, v0}, Landroid/widget/ArrayAdapter;-><init>(Landroid/content/Context;ILjava/util/List;)V
 
-    invoke-virtual {p0, v1}, Landroid/app/ListActivity;->setListAdapter(Landroid/widget/ListAdapter;)V
+    invoke-virtual {p0, v1}, Lcom/android/phone/RoamingAutoDialMainActivity;->setListAdapter(Landroid/widget/ListAdapter;)V
 
     return-void
 .end method
@@ -211,7 +211,7 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/RoamingAutoDialMainActivity;->startActivity(Landroid/content/Intent;)V
 
     goto :goto_0
 
@@ -222,7 +222,7 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/RoamingAutoDialMainActivity;->startActivity(Landroid/content/Intent;)V
 
     goto :goto_0
 
@@ -233,7 +233,7 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/RoamingAutoDialMainActivity;->startActivity(Landroid/content/Intent;)V
 
     goto :goto_0
 
@@ -244,7 +244,7 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/RoamingAutoDialMainActivity;->startActivity(Landroid/content/Intent;)V
 
     goto :goto_0
 
@@ -255,7 +255,7 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/RoamingAutoDialMainActivity;->startActivity(Landroid/content/Intent;)V
 
     goto :goto_0
 
@@ -266,7 +266,7 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/RoamingAutoDialMainActivity;->startActivity(Landroid/content/Intent;)V
 
     goto :goto_0
 
@@ -277,7 +277,7 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/RoamingAutoDialMainActivity;->startActivity(Landroid/content/Intent;)V
 
     goto :goto_0
 
@@ -298,7 +298,7 @@
 .method public onResume()V
     .locals 0
 
-    invoke-super {p0}, Landroid/app/Activity;->onResume()V
+    invoke-super {p0}, Landroid/app/ListActivity;->onResume()V
 
     return-void
 .end method

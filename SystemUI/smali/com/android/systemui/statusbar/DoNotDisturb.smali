@@ -56,7 +56,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 8
-    .param p1    # Landroid/content/Context;
 
     const/high16 v7, 0x10000000
 
@@ -261,8 +260,6 @@
 
 .method static synthetic access$002(Lcom/android/systemui/statusbar/DoNotDisturb;Z)Z
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/DoNotDisturb;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/systemui/statusbar/DoNotDisturb;->isPrayModeOn:Z
 
@@ -271,7 +268,6 @@
 
 .method static synthetic access$100(Lcom/android/systemui/statusbar/DoNotDisturb;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/DoNotDisturb;
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/DoNotDisturb;->mContext:Landroid/content/Context;
 
@@ -735,7 +731,6 @@
 
 .method public isPrayModeEnabled(Landroid/content/Context;)Z
     .locals 7
-    .param p1    # Landroid/content/Context;
 
     const/4 v1, 0x0
 

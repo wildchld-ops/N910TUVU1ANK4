@@ -28,9 +28,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/mms/ui/SlideshowActivity;[Ljava/lang/String;[Ljava/lang/String;Ljava/lang/Runnable;)V
     .locals 1
-    .param p2    # [Ljava/lang/String;
-    .param p3    # [Ljava/lang/String;
-    .param p4    # Ljava/lang/Runnable;
 
     iput-object p1, p0, Lcom/android/mms/ui/SlideshowActivity$DrmOkListener;->this$0:Lcom/android/mms/ui/SlideshowActivity;
 
@@ -63,8 +60,6 @@
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 5
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     iget-object v1, p0, Lcom/android/mms/ui/SlideshowActivity$DrmOkListener;->mDrmFilePaths:[Ljava/lang/String;
 

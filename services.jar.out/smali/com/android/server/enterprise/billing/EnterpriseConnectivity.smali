@@ -120,10 +120,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/os/INetworkManagementService;Landroid/net/IConnectivityManager;Landroid/os/Looper;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/INetworkManagementService;
-    .param p3    # Landroid/net/IConnectivityManager;
-    .param p4    # Landroid/os/Looper;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -334,7 +330,6 @@
 
 .method static synthetic access$1000(Ljava/lang/String;)V
     .locals 0
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/android/server/enterprise/billing/EnterpriseConnectivity;->sloge(Ljava/lang/String;)V
 
@@ -343,7 +338,6 @@
 
 .method static synthetic access$1100(Lcom/android/server/enterprise/billing/EnterpriseConnectivity;)Landroid/os/INetworkManagementService;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/billing/EnterpriseConnectivity;
 
     iget-object v0, p0, Lcom/android/server/enterprise/billing/EnterpriseConnectivity;->mNMSvc:Landroid/os/INetworkManagementService;
 
@@ -352,7 +346,6 @@
 
 .method static synthetic access$1200(Lcom/android/server/enterprise/billing/EnterpriseConnectivity;)Ljava/io/BufferedWriter;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/billing/EnterpriseConnectivity;
 
     iget-object v0, p0, Lcom/android/server/enterprise/billing/EnterpriseConnectivity;->mBufferedWriter:Ljava/io/BufferedWriter;
 
@@ -361,8 +354,6 @@
 
 .method static synthetic access$1202(Lcom/android/server/enterprise/billing/EnterpriseConnectivity;Ljava/io/BufferedWriter;)Ljava/io/BufferedWriter;
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/billing/EnterpriseConnectivity;
-    .param p1    # Ljava/io/BufferedWriter;
 
     iput-object p1, p0, Lcom/android/server/enterprise/billing/EnterpriseConnectivity;->mBufferedWriter:Ljava/io/BufferedWriter;
 
@@ -371,8 +362,6 @@
 
 .method static synthetic access$1300(Lcom/android/server/enterprise/billing/EnterpriseConnectivity;Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/billing/EnterpriseConnectivity;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/billing/EnterpriseConnectivity;->feature(Ljava/lang/String;)Ljava/lang/String;
 
@@ -383,7 +372,6 @@
 
 .method static synthetic access$1400(Lcom/android/server/enterprise/billing/EnterpriseConnectivity;)Ljava/io/File;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/billing/EnterpriseConnectivity;
 
     iget-object v0, p0, Lcom/android/server/enterprise/billing/EnterpriseConnectivity;->mFile:Ljava/io/File;
 
@@ -392,8 +380,6 @@
 
 .method static synthetic access$1402(Lcom/android/server/enterprise/billing/EnterpriseConnectivity;Ljava/io/File;)Ljava/io/File;
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/billing/EnterpriseConnectivity;
-    .param p1    # Ljava/io/File;
 
     iput-object p1, p0, Lcom/android/server/enterprise/billing/EnterpriseConnectivity;->mFile:Ljava/io/File;
 
@@ -402,7 +388,6 @@
 
 .method static synthetic access$1500(Lcom/android/server/enterprise/billing/EnterpriseConnectivity;)Lcom/android/server/enterprise/billing/EnterpriseBillingEngine;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/billing/EnterpriseConnectivity;
 
     iget-object v0, p0, Lcom/android/server/enterprise/billing/EnterpriseConnectivity;->mEntProvider:Lcom/android/server/enterprise/billing/EnterpriseBillingEngine;
 
@@ -411,7 +396,6 @@
 
 .method static synthetic access$1600(Lcom/android/server/enterprise/billing/EnterpriseConnectivity;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/billing/EnterpriseConnectivity;
 
     iget-object v0, p0, Lcom/android/server/enterprise/billing/EnterpriseConnectivity;->mContext:Landroid/content/Context;
 
@@ -428,7 +412,6 @@
 
 .method static synthetic access$300(Lcom/android/server/enterprise/billing/EnterpriseConnectivity;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/billing/EnterpriseConnectivity;
 
     iget-object v0, p0, Lcom/android/server/enterprise/billing/EnterpriseConnectivity;->mConnections:Ljava/util/ArrayList;
 
@@ -437,7 +420,6 @@
 
 .method static synthetic access$400(Ljava/lang/String;)V
     .locals 0
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/android/server/enterprise/billing/EnterpriseConnectivity;->slogd(Ljava/lang/String;)V
 
@@ -446,8 +428,6 @@
 
 .method static synthetic access$600(Lcom/android/server/enterprise/billing/EnterpriseConnectivity;Ljava/lang/String;)I
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/billing/EnterpriseConnectivity;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/billing/EnterpriseConnectivity;->connectivityType(Ljava/lang/String;)I
 
@@ -458,7 +438,6 @@
 
 .method static synthetic access$700(Ljava/lang/String;)V
     .locals 0
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/android/server/enterprise/billing/EnterpriseConnectivity;->slogv(Ljava/lang/String;)V
 
@@ -467,7 +446,6 @@
 
 .method static synthetic access$800(Lcom/android/server/enterprise/billing/EnterpriseConnectivity;)I
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/billing/EnterpriseConnectivity;
 
     iget v0, p0, Lcom/android/server/enterprise/billing/EnterpriseConnectivity;->mDefRouteNetwork:I
 
@@ -476,7 +454,6 @@
 
 .method static synthetic access$900(Lcom/android/server/enterprise/billing/EnterpriseConnectivity;)Landroid/net/IConnectivityManager;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/billing/EnterpriseConnectivity;
 
     iget-object v0, p0, Lcom/android/server/enterprise/billing/EnterpriseConnectivity;->mConnSvc:Landroid/net/IConnectivityManager;
 
@@ -485,7 +462,6 @@
 
 .method private connectivityType(Ljava/lang/String;)I
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_1
 
@@ -523,7 +499,6 @@
 
 .method private feature(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_1
 
@@ -561,7 +536,6 @@
 
 .method private getConnection(I)Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;
     .locals 3
-    .param p1    # I
 
     iget-object v2, p0, Lcom/android/server/enterprise/billing/EnterpriseConnectivity;->mConnections:Ljava/util/ArrayList;
 
@@ -638,7 +612,6 @@
 
 .method private isDefaultNetwork(I)Z
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -658,7 +631,6 @@
 
 .method private static final slogd(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "EntConnectivity"
 
@@ -669,7 +641,6 @@
 
 .method private static final sloge(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "EntConnectivity"
 
@@ -680,7 +651,6 @@
 
 .method private static final slogv(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     sget-boolean v0, Lcom/android/server/enterprise/billing/EnterpriseConnectivity;->VDBG:Z
 
@@ -698,7 +668,6 @@
 # virtual methods
 .method public getActiveEnterpriseNetworkType(Ljava/lang/String;)I
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, -0x1
 
@@ -790,8 +759,6 @@
 
 .method public getEnterpriseNetworkType(II)I
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     iget-object v2, p0, Lcom/android/server/enterprise/billing/EnterpriseConnectivity;->mConnections:Ljava/util/ArrayList;
 
@@ -857,7 +824,6 @@
 
 .method public getUidsForApnType(Ljava/lang/String;)[I
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -940,7 +906,6 @@
 
 .method public getUserHandleForConnection(I)Ljava/util/List;
     .locals 4
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -994,7 +959,6 @@
 
 .method public getUsersForNetwork(I)[I
     .locals 6
-    .param p1    # I
 
     iget-object v5, p0, Lcom/android/server/enterprise/billing/EnterpriseConnectivity;->mConnections:Ljava/util/ArrayList;
 
@@ -1142,7 +1106,6 @@
 
 .method public isEntApnEnabled(I)Z
     .locals 4
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -1254,7 +1217,6 @@
 
 .method public updateConnectivity(Landroid/net/NetworkInfo;)V
     .locals 12
-    .param p1    # Landroid/net/NetworkInfo;
 
     if-nez p1, :cond_1
 

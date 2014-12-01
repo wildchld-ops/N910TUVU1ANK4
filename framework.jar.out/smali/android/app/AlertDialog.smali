@@ -33,7 +33,6 @@
 # direct methods
 .method protected constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -50,8 +49,6 @@
 
 .method protected constructor <init>(Landroid/content/Context;I)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     const/4 v0, 0x1
 
@@ -62,9 +59,6 @@
 
 .method constructor <init>(Landroid/content/Context;IZ)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Z
 
     invoke-static {p1, p2}, Landroid/app/AlertDialog;->resolveDialogTheme(Landroid/content/Context;I)I
 
@@ -95,9 +89,6 @@
 
 .method protected constructor <init>(Landroid/content/Context;ZLandroid/content/DialogInterface$OnCancelListener;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Z
-    .param p3    # Landroid/content/DialogInterface$OnCancelListener;
 
     const/4 v0, 0x0
 
@@ -130,7 +121,6 @@
 
 .method static synthetic access$000(Landroid/app/AlertDialog;)Lcom/android/internal/app/AlertController;
     .locals 1
-    .param p0    # Landroid/app/AlertDialog;
 
     iget-object v0, p0, Landroid/app/AlertDialog;->mAlert:Lcom/android/internal/app/AlertController;
 
@@ -139,8 +129,6 @@
 
 .method static resolveDialogTheme(Landroid/content/Context;I)I
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     const/4 v3, 0x1
 
@@ -214,7 +202,6 @@
 # virtual methods
 .method public getButton(I)Landroid/widget/Button;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/app/AlertDialog;->mAlert:Lcom/android/internal/app/AlertController;
 
@@ -239,7 +226,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Dialog;->onCreate(Landroid/os/Bundle;)V
 
@@ -252,8 +238,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     iget-object v0, p0, Landroid/app/AlertDialog;->mAlert:Lcom/android/internal/app/AlertController;
 
@@ -278,8 +262,6 @@
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     iget-object v0, p0, Landroid/app/AlertDialog;->mAlert:Lcom/android/internal/app/AlertController;
 
@@ -304,9 +286,6 @@
 
 .method public setButton(ILjava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Ljava/lang/CharSequence;
-    .param p3    # Landroid/content/DialogInterface$OnClickListener;
 
     iget-object v0, p0, Landroid/app/AlertDialog;->mAlert:Lcom/android/internal/app/AlertController;
 
@@ -319,9 +298,6 @@
 
 .method public setButton(ILjava/lang/CharSequence;Landroid/os/Message;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Ljava/lang/CharSequence;
-    .param p3    # Landroid/os/Message;
 
     iget-object v0, p0, Landroid/app/AlertDialog;->mAlert:Lcom/android/internal/app/AlertController;
 
@@ -334,8 +310,6 @@
 
 .method public setButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)V
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Landroid/content/DialogInterface$OnClickListener;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -348,8 +322,6 @@
 
 .method public setButton(Ljava/lang/CharSequence;Landroid/os/Message;)V
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Landroid/os/Message;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -362,8 +334,6 @@
 
 .method public setButton2(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)V
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Landroid/content/DialogInterface$OnClickListener;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -376,8 +346,6 @@
 
 .method public setButton2(Ljava/lang/CharSequence;Landroid/os/Message;)V
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Landroid/os/Message;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -390,8 +358,6 @@
 
 .method public setButton3(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)V
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Landroid/content/DialogInterface$OnClickListener;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -404,8 +370,6 @@
 
 .method public setButton3(Ljava/lang/CharSequence;Landroid/os/Message;)V
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Landroid/os/Message;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -418,7 +382,6 @@
 
 .method public setCustomTitle(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Landroid/app/AlertDialog;->mAlert:Lcom/android/internal/app/AlertController;
 
@@ -429,7 +392,6 @@
 
 .method public setIcon(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/app/AlertDialog;->mAlert:Lcom/android/internal/app/AlertController;
 
@@ -440,7 +402,6 @@
 
 .method public setIcon(Landroid/graphics/drawable/Drawable;)V
     .locals 1
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     iget-object v0, p0, Landroid/app/AlertDialog;->mAlert:Lcom/android/internal/app/AlertController;
 
@@ -451,7 +412,6 @@
 
 .method public setIconAttribute(I)V
     .locals 3
-    .param p1    # I
 
     new-instance v0, Landroid/util/TypedValue;
 
@@ -478,7 +438,6 @@
 
 .method public setInverseBackgroundForced(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Landroid/app/AlertDialog;->mAlert:Lcom/android/internal/app/AlertController;
 
@@ -489,7 +448,6 @@
 
 .method public setMessage(Ljava/lang/CharSequence;)V
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
 
     iget-object v0, p0, Landroid/app/AlertDialog;->mAlert:Lcom/android/internal/app/AlertController;
 
@@ -500,7 +458,6 @@
 
 .method public setTitle(Ljava/lang/CharSequence;)V
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
 
     invoke-super {p0, p1}, Landroid/app/Dialog;->setTitle(Ljava/lang/CharSequence;)V
 
@@ -513,7 +470,6 @@
 
 .method public setView(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Landroid/app/AlertDialog;->mAlert:Lcom/android/internal/app/AlertController;
 
@@ -524,11 +480,6 @@
 
 .method public setView(Landroid/view/View;IIII)V
     .locals 6
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     iget-object v0, p0, Landroid/app/AlertDialog;->mAlert:Lcom/android/internal/app/AlertController;
 

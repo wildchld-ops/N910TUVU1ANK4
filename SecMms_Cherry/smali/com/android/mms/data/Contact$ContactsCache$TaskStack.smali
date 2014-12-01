@@ -62,7 +62,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/data/Contact$ContactsCache$TaskStack;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/mms/data/Contact$ContactsCache$TaskStack;
 
     iget-object v0, p0, Lcom/android/mms/data/Contact$ContactsCache$TaskStack;->mThingsToLoad:Ljava/util/ArrayList;
 
@@ -73,7 +72,6 @@
 # virtual methods
 .method public pop(Lcom/android/mms/data/Contact;)Lcom/android/mms/data/Contact$ContactsCache$RunnableUpdateContact;
     .locals 3
-    .param p1    # Lcom/android/mms/data/Contact;
 
     iget-object v2, p0, Lcom/android/mms/data/Contact$ContactsCache$TaskStack;->mThingsToLoad:Ljava/util/ArrayList;
 
@@ -142,7 +140,6 @@
 
 .method public push(Lcom/android/mms/data/Contact$ContactsCache$RunnableUpdateContact;)V
     .locals 2
-    .param p1    # Lcom/android/mms/data/Contact$ContactsCache$RunnableUpdateContact;
 
     iget-object v1, p0, Lcom/android/mms/data/Contact$ContactsCache$TaskStack;->mThingsToLoad:Ljava/util/ArrayList;
 

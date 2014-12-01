@@ -23,7 +23,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/mms/rcs/RcsOwnCapsManager;Landroid/os/Handler;Landroid/content/Context;)V
     .locals 0
-    .param p2    # Landroid/os/Handler;
 
     iput-object p1, p0, Lcom/android/mms/rcs/RcsOwnCapsManager$2;->this$0:Lcom/android/mms/rcs/RcsOwnCapsManager;
 
@@ -38,7 +37,6 @@
 # virtual methods
 .method public onChange(Z)V
     .locals 6
-    .param p1    # Z
 
     const/4 v2, 0x1
 

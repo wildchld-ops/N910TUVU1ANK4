@@ -125,7 +125,6 @@
 
 .method private constructor <init>(Ljava/lang/String;ILandroid/content/Context;)V
     .locals 2
-    .param p3    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -165,8 +164,6 @@
 
 .method private makeWidgetItem(Landroid/content/Context;Landroid/content/pm/ResolveInfo;)[Lcom/samsung/surfacewidget/SurfaceWidgetProviderInfo;
     .locals 13
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/pm/ResolveInfo;
 
     new-instance v1, Landroid/content/ComponentName;
 
@@ -326,7 +323,6 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/android/launcher2/SurfaceWidgetPackageManager;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-class v0, Lcom/android/launcher2/SurfaceWidgetPackageManager;
 
@@ -357,7 +353,6 @@
 # virtual methods
 .method public clearWidgetInstanceNumbers(Lcom/samsung/surfacewidget/SurfaceWidgetProviderInfo;)V
     .locals 3
-    .param p1    # Lcom/samsung/surfacewidget/SurfaceWidgetProviderInfo;
 
     iget-object v1, p0, Lcom/android/launcher2/SurfaceWidgetPackageManager;->mActiveSurfaceWidgetMap:Ljava/util/Map;
 
@@ -413,7 +408,6 @@
 
 .method createWidgetInstance(Lcom/samsung/surfacewidget/SurfaceWidgetProviderInfo;)I
     .locals 7
-    .param p1    # Lcom/samsung/surfacewidget/SurfaceWidgetProviderInfo;
 
     const/4 v6, 0x1
 
@@ -547,8 +541,6 @@
 
 .method public findWidget(Landroid/content/ComponentName;Ljava/lang/String;)Lcom/samsung/surfacewidget/SurfaceWidgetProviderInfo;
     .locals 4
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Ljava/lang/String;
 
     if-eqz p1, :cond_2
 
@@ -609,7 +601,6 @@
 
 .method public declared-synchronized getWidgetItems(Z)Ljava/util/List;
     .locals 10
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(Z)",
@@ -814,8 +805,6 @@
 
 .method hasWidgetInstance(Lcom/samsung/surfacewidget/SurfaceWidgetProviderInfo;I)Z
     .locals 3
-    .param p1    # Lcom/samsung/surfacewidget/SurfaceWidgetProviderInfo;
-    .param p2    # I
 
     iget-object v1, p0, Lcom/android/launcher2/SurfaceWidgetPackageManager;->mActiveSurfaceWidgetMap:Ljava/util/Map;
 
@@ -846,7 +835,6 @@
 
 .method declared-synchronized loadIfNeeded(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     monitor-enter p0
 
@@ -923,8 +911,6 @@
 
 .method public removeWidgetInstance(Lcom/samsung/surfacewidget/SurfaceWidgetProviderInfo;I)V
     .locals 4
-    .param p1    # Lcom/samsung/surfacewidget/SurfaceWidgetProviderInfo;
-    .param p2    # I
 
     if-nez p1, :cond_0
 
@@ -1065,8 +1051,6 @@
 
 .method updateWidgetInstance(Lcom/samsung/surfacewidget/SurfaceWidgetProviderInfo;I)V
     .locals 4
-    .param p1    # Lcom/samsung/surfacewidget/SurfaceWidgetProviderInfo;
-    .param p2    # I
 
     iget-object v1, p0, Lcom/android/launcher2/SurfaceWidgetPackageManager;->mActiveSurfaceWidgetMap:Ljava/util/Map;
 

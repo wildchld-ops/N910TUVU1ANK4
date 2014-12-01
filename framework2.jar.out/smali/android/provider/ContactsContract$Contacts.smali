@@ -166,8 +166,6 @@
 
 .method public static getLookupUri(JLjava/lang/String;)Landroid/net/Uri;
     .locals 1
-    .param p0    # J
-    .param p2    # Ljava/lang/String;
 
     sget-object v0, Landroid/provider/ContactsContract$Contacts;->CONTENT_LOOKUP_URI:Landroid/net/Uri;
 
@@ -184,8 +182,6 @@
 
 .method public static getLookupUri(Landroid/content/ContentResolver;Landroid/net/Uri;)Landroid/net/Uri;
     .locals 10
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # Landroid/net/Uri;
 
     const/4 v4, 0x1
 
@@ -263,8 +259,6 @@
 
 .method public static lookupContact(Landroid/content/ContentResolver;Landroid/net/Uri;)Landroid/net/Uri;
     .locals 9
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # Landroid/net/Uri;
 
     const/4 v1, 0x0
 
@@ -335,8 +329,6 @@
 
 .method public static markAsContacted(Landroid/content/ContentResolver;J)V
     .locals 6
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # J
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -371,8 +363,6 @@
 
 .method public static openContactPhotoInputStream(Landroid/content/ContentResolver;Landroid/net/Uri;)Ljava/io/InputStream;
     .locals 1
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # Landroid/net/Uri;
 
     const/4 v0, 0x0
 
@@ -385,9 +375,6 @@
 
 .method public static openContactPhotoInputStream(Landroid/content/ContentResolver;Landroid/net/Uri;Z)Ljava/io/InputStream;
     .locals 10
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Z
 
     const/4 v4, 0x0
 

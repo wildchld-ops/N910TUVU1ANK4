@@ -84,7 +84,6 @@
 
 .method private getAccumulatedDays(I)[I
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/incallui/lunar/SolarLunarConverter;->isLeapYear(I)Z
 
@@ -105,7 +104,6 @@
 
 .method private isLeapYear(I)Z
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -132,10 +130,6 @@
 # virtual methods
 .method public convertLunarToSolar(IIIZ)V
     .locals 12
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Z
 
     const-string v9, "feature_chn"
 
@@ -498,10 +492,6 @@
 
 .method public convertLunarToSolar_CHN(IIIZ)V
     .locals 12
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Z
 
     const/16 v9, 0x759
 

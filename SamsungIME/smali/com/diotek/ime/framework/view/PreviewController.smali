@@ -38,8 +38,6 @@
 
 .method private constructor <init>(Landroid/content/Context;I)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -56,8 +54,6 @@
 
 .method public static getInstance(Landroid/content/Context;I)Lcom/diotek/ime/framework/view/PreviewController;
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     sget-object v0, Lcom/diotek/ime/framework/view/PreviewController;->mInstance:Lcom/diotek/ime/framework/view/PreviewController;
 
@@ -167,8 +163,6 @@
 
 .method public init(Landroid/content/Context;I)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     iput-object p1, p0, Lcom/diotek/ime/framework/view/PreviewController;->mContext:Landroid/content/Context;
 

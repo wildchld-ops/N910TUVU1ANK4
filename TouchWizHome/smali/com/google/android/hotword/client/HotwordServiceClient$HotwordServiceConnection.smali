@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Lcom/google/android/hotword/client/HotwordServiceClient;Lcom/google/android/hotword/client/HotwordServiceClient$1;)V
     .locals 0
-    .param p1    # Lcom/google/android/hotword/client/HotwordServiceClient;
-    .param p2    # Lcom/google/android/hotword/client/HotwordServiceClient$1;
 
     invoke-direct {p0, p1}, Lcom/google/android/hotword/client/HotwordServiceClient$HotwordServiceConnection;-><init>(Lcom/google/android/hotword/client/HotwordServiceClient;)V
 
@@ -46,8 +44,6 @@
 # virtual methods
 .method public onServiceConnected(Landroid/content/ComponentName;Landroid/os/IBinder;)V
     .locals 2
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Landroid/os/IBinder;
 
     iget-object v0, p0, Lcom/google/android/hotword/client/HotwordServiceClient$HotwordServiceConnection;->this$0:Lcom/google/android/hotword/client/HotwordServiceClient;
 
@@ -68,7 +64,6 @@
 
 .method public onServiceDisconnected(Landroid/content/ComponentName;)V
     .locals 2
-    .param p1    # Landroid/content/ComponentName;
 
     iget-object v0, p0, Lcom/google/android/hotword/client/HotwordServiceClient$HotwordServiceConnection;->this$0:Lcom/google/android/hotword/client/HotwordServiceClient;
 

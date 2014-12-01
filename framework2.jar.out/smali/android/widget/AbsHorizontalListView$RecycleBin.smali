@@ -101,7 +101,6 @@
 
 .method static synthetic access$4800(Landroid/widget/AbsHorizontalListView$RecycleBin;)Landroid/widget/AbsHorizontalListView$RecyclerListener;
     .locals 1
-    .param p0    # Landroid/widget/AbsHorizontalListView$RecycleBin;
 
     iget-object v0, p0, Landroid/widget/AbsHorizontalListView$RecycleBin;->mRecyclerListener:Landroid/widget/AbsHorizontalListView$RecyclerListener;
 
@@ -110,8 +109,6 @@
 
 .method static synthetic access$4802(Landroid/widget/AbsHorizontalListView$RecycleBin;Landroid/widget/AbsHorizontalListView$RecyclerListener;)Landroid/widget/AbsHorizontalListView$RecyclerListener;
     .locals 0
-    .param p0    # Landroid/widget/AbsHorizontalListView$RecycleBin;
-    .param p1    # Landroid/widget/AbsHorizontalListView$RecyclerListener;
 
     iput-object p1, p0, Landroid/widget/AbsHorizontalListView$RecycleBin;->mRecyclerListener:Landroid/widget/AbsHorizontalListView$RecyclerListener;
 
@@ -267,8 +264,6 @@
 # virtual methods
 .method addScrapView(Landroid/view/View;I)V
     .locals 6
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     const/4 v4, 0x1
 
@@ -557,8 +552,6 @@
 
 .method fillActiveViews(II)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     iget-object v4, p0, Landroid/widget/AbsHorizontalListView$RecycleBin;->mActiveViews:[Landroid/view/View;
 
@@ -613,7 +606,6 @@
 
 .method getActiveView(I)Landroid/view/View;
     .locals 5
-    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -644,7 +636,6 @@
 
 .method getScrapView(I)Landroid/view/View;
     .locals 3
-    .param p1    # I
 
     iget v1, p0, Landroid/widget/AbsHorizontalListView$RecycleBin;->mViewTypeCount:I
 
@@ -696,7 +687,6 @@
 
 .method getTransientStateView(I)Landroid/view/View;
     .locals 5
-    .param p1    # I
 
     iget-object v4, p0, Landroid/widget/AbsHorizontalListView$RecycleBin;->this$0:Landroid/widget/AbsHorizontalListView;
 
@@ -1187,7 +1177,6 @@
 
 .method setCacheColorHint(I)V
     .locals 10
-    .param p1    # I
 
     iget v8, p0, Landroid/widget/AbsHorizontalListView$RecycleBin;->mViewTypeCount:I
 
@@ -1283,7 +1272,6 @@
 
 .method public setViewTypeCount(I)V
     .locals 4
-    .param p1    # I
 
     const/4 v2, 0x1
 
@@ -1331,7 +1319,6 @@
 
 .method public shouldRecycleViewType(I)Z
     .locals 1
-    .param p1    # I
 
     if-ltz p1, :cond_0
 

@@ -123,8 +123,6 @@
 # direct methods
 .method private constructor <init>(Landroid/content/Context;Ljava/lang/String;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0}, Landroid/os/INetworkManagementService$Stub;-><init>()V
 
@@ -253,7 +251,6 @@
 
 .method static synthetic access$100(Lcom/android/server/NetworkManagementService;)Ljava/util/concurrent/CountDownLatch;
     .locals 1
-    .param p0    # Lcom/android/server/NetworkManagementService;
 
     iget-object v0, p0, Lcom/android/server/NetworkManagementService;->mConnectedSignal:Ljava/util/concurrent/CountDownLatch;
 
@@ -262,11 +259,6 @@
 
 .method static synthetic access$1000(Lcom/android/server/NetworkManagementService;Ljava/lang/String;Ljava/lang/String;II)V
     .locals 0
-    .param p0    # Lcom/android/server/NetworkManagementService;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/server/NetworkManagementService;->notifyAddressUpdated(Ljava/lang/String;Ljava/lang/String;II)V
 
@@ -275,8 +267,6 @@
 
 .method static synthetic access$102(Lcom/android/server/NetworkManagementService;Ljava/util/concurrent/CountDownLatch;)Ljava/util/concurrent/CountDownLatch;
     .locals 0
-    .param p0    # Lcom/android/server/NetworkManagementService;
-    .param p1    # Ljava/util/concurrent/CountDownLatch;
 
     iput-object p1, p0, Lcom/android/server/NetworkManagementService;->mConnectedSignal:Ljava/util/concurrent/CountDownLatch;
 
@@ -285,11 +275,6 @@
 
 .method static synthetic access$1100(Lcom/android/server/NetworkManagementService;Ljava/lang/String;Ljava/lang/String;II)V
     .locals 0
-    .param p0    # Lcom/android/server/NetworkManagementService;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/server/NetworkManagementService;->notifyAddressRemoved(Ljava/lang/String;Ljava/lang/String;II)V
 
@@ -298,7 +283,6 @@
 
 .method static synthetic access$1200(Lcom/android/server/NetworkManagementService;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/server/NetworkManagementService;
 
     iget-object v0, p0, Lcom/android/server/NetworkManagementService;->mContext:Landroid/content/Context;
 
@@ -307,7 +291,6 @@
 
 .method static synthetic access$200(Lcom/android/server/NetworkManagementService;)V
     .locals 0
-    .param p0    # Lcom/android/server/NetworkManagementService;
 
     invoke-direct {p0}, Lcom/android/server/NetworkManagementService;->prepareNativeDaemon()V
 
@@ -316,7 +299,6 @@
 
 .method static synthetic access$300(Lcom/android/server/NetworkManagementService;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/server/NetworkManagementService;
 
     iget-object v0, p0, Lcom/android/server/NetworkManagementService;->mMainHandler:Landroid/os/Handler;
 
@@ -325,8 +307,6 @@
 
 .method static synthetic access$400(Lcom/android/server/NetworkManagementService;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/server/NetworkManagementService;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/NetworkManagementService;->notifyInterfaceAdded(Ljava/lang/String;)V
 
@@ -335,8 +315,6 @@
 
 .method static synthetic access$500(Lcom/android/server/NetworkManagementService;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/server/NetworkManagementService;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/NetworkManagementService;->notifyInterfaceRemoved(Ljava/lang/String;)V
 
@@ -345,9 +323,6 @@
 
 .method static synthetic access$600(Lcom/android/server/NetworkManagementService;Ljava/lang/String;Z)V
     .locals 0
-    .param p0    # Lcom/android/server/NetworkManagementService;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/NetworkManagementService;->notifyInterfaceStatusChanged(Ljava/lang/String;Z)V
 
@@ -356,9 +331,6 @@
 
 .method static synthetic access$700(Lcom/android/server/NetworkManagementService;Ljava/lang/String;Z)V
     .locals 0
-    .param p0    # Lcom/android/server/NetworkManagementService;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/NetworkManagementService;->notifyInterfaceLinkStateChanged(Ljava/lang/String;Z)V
 
@@ -367,9 +339,6 @@
 
 .method static synthetic access$800(Lcom/android/server/NetworkManagementService;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/server/NetworkManagementService;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/NetworkManagementService;->notifyLimitReached(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -378,9 +347,6 @@
 
 .method static synthetic access$900(Lcom/android/server/NetworkManagementService;Ljava/lang/String;Z)V
     .locals 0
-    .param p0    # Lcom/android/server/NetworkManagementService;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/NetworkManagementService;->notifyInterfaceClassActivity(Ljava/lang/String;Z)V
 
@@ -389,7 +355,6 @@
 
 .method public static create(Landroid/content/Context;)Lcom/android/server/NetworkManagementService;
     .locals 1
-    .param p0    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/InterruptedException;
@@ -407,8 +372,6 @@
 
 .method static create(Landroid/content/Context;Ljava/lang/String;)Lcom/android/server/NetworkManagementService;
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/InterruptedException;
@@ -455,7 +418,6 @@
 
 .method private getInterfaceGlobalAddresses(Ljava/net/NetworkInterface;)Ljava/util/List;
     .locals 7
-    .param p1    # Ljava/net/NetworkInterface;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -592,7 +554,6 @@
 
 .method private static getSecurityType(Landroid/net/wifi/WifiConfiguration;)Ljava/lang/String;
     .locals 1
-    .param p0    # Landroid/net/wifi/WifiConfiguration;
 
     invoke-virtual {p0}, Landroid/net/wifi/WifiConfiguration;->getAuthType()I
 
@@ -627,9 +588,6 @@
 
 .method private modifyEpdg(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/net/SocketException;
@@ -818,9 +776,6 @@
 
 .method private modifyNat(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 11
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/net/SocketException;
@@ -1008,9 +963,6 @@
 
 .method private modifyPrivatePacket(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/net/SocketException;
@@ -1104,10 +1056,6 @@
 
 .method private modifyRoute(Ljava/lang/String;Ljava/lang/String;Landroid/net/RouteInfo;Ljava/lang/String;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/net/RouteInfo;
-    .param p4    # Ljava/lang/String;
 
     new-instance v0, Lcom/android/server/NativeDaemonConnector$Command;
 
@@ -1221,10 +1169,6 @@
 
 .method private notifyAddressRemoved(Ljava/lang/String;Ljava/lang/String;II)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
 
     iget-object v2, p0, Lcom/android/server/NetworkManagementService;->mObservers:Landroid/os/RemoteCallbackList;
 
@@ -1276,10 +1220,6 @@
 
 .method private notifyAddressUpdated(Ljava/lang/String;Ljava/lang/String;II)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
 
     iget-object v2, p0, Lcom/android/server/NetworkManagementService;->mObservers:Landroid/os/RemoteCallbackList;
 
@@ -1331,7 +1271,6 @@
 
 .method private notifyInterfaceAdded(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v2, p0, Lcom/android/server/NetworkManagementService;->mObservers:Landroid/os/RemoteCallbackList;
 
@@ -1383,8 +1322,6 @@
 
 .method private notifyInterfaceClassActivity(Ljava/lang/String;Z)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     iget-object v2, p0, Lcom/android/server/NetworkManagementService;->mObservers:Landroid/os/RemoteCallbackList;
 
@@ -1436,8 +1373,6 @@
 
 .method private notifyInterfaceLinkStateChanged(Ljava/lang/String;Z)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     iget-object v2, p0, Lcom/android/server/NetworkManagementService;->mObservers:Landroid/os/RemoteCallbackList;
 
@@ -1489,7 +1424,6 @@
 
 .method private notifyInterfaceRemoved(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v2, p0, Lcom/android/server/NetworkManagementService;->mActiveAlerts:Ljava/util/HashMap;
 
@@ -1549,8 +1483,6 @@
 
 .method private notifyInterfaceStatusChanged(Ljava/lang/String;Z)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     iget-object v2, p0, Lcom/android/server/NetworkManagementService;->mObservers:Landroid/os/RemoteCallbackList;
 
@@ -1602,8 +1534,6 @@
 
 .method private notifyLimitReached(Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v2, p0, Lcom/android/server/NetworkManagementService;->mObservers:Landroid/os/RemoteCallbackList;
 
@@ -2049,7 +1979,6 @@
 
 .method private readRouteList(Ljava/lang/String;)Ljava/util/ArrayList;
     .locals 8
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2187,7 +2116,6 @@
 # virtual methods
 .method public addEnterpriseChain(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     const-string v1, "NetworkManagementService"
 
@@ -2246,8 +2174,6 @@
 
 .method public addEnterpriseLookup(Ljava/lang/String;Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/server/NetworkManagementService;->mContext:Landroid/content/Context;
 
@@ -2304,7 +2230,6 @@
 
 .method public addEnterpriseMasq(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/server/NetworkManagementService;->mContext:Landroid/content/Context;
 
@@ -2357,9 +2282,6 @@
 
 .method public addIdleTimer(Ljava/lang/String;ILjava/lang/String;)V
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     iget-object v2, p0, Lcom/android/server/NetworkManagementService;->mContext:Landroid/content/Context;
 
@@ -2471,7 +2393,6 @@
 
 .method public addRejectDefault(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/server/NetworkManagementService;->mContext:Landroid/content/Context;
 
@@ -2524,8 +2445,6 @@
 
 .method public addRoute(Ljava/lang/String;Landroid/net/RouteInfo;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/net/RouteInfo;
 
     iget-object v0, p0, Lcom/android/server/NetworkManagementService;->mContext:Landroid/content/Context;
 
@@ -2546,9 +2465,6 @@
 
 .method public addRouteWithMetric(Ljava/lang/String;ILandroid/net/RouteInfo;)Z
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Landroid/net/RouteInfo;
 
     const/4 v5, 0x1
 
@@ -2690,8 +2606,6 @@
 
 .method public addSecondaryRoute(Ljava/lang/String;Landroid/net/RouteInfo;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/net/RouteInfo;
 
     iget-object v0, p0, Lcom/android/server/NetworkManagementService;->mContext:Landroid/content/Context;
 
@@ -2712,7 +2626,6 @@
 
 .method public addUpstreamV6Interface(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;
@@ -2802,11 +2715,6 @@
 
 .method public attachPppd(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/server/NetworkManagementService;->mContext:Landroid/content/Context;
 
@@ -2951,7 +2859,6 @@
 
 .method public clearDnsInterfaceForPid(I)V
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;
@@ -3025,9 +2932,6 @@
 
 .method public clearDnsInterfaceForUidRange(Ljava/lang/String;II)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     iget-object v1, p0, Lcom/android/server/NetworkManagementService;->mContext:Landroid/content/Context;
 
@@ -3132,7 +3036,6 @@
 
 .method public clearHostExemption(Landroid/net/LinkAddress;)V
     .locals 6
-    .param p1    # Landroid/net/LinkAddress;
 
     iget-object v1, p0, Lcom/android/server/NetworkManagementService;->mContext:Landroid/content/Context;
 
@@ -3191,7 +3094,6 @@
 
 .method public clearInterfaceAddresses(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/server/NetworkManagementService;->mContext:Landroid/content/Context;
 
@@ -3238,7 +3140,6 @@
 
 .method public clearMarkedForwarding(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/server/NetworkManagementService;->mContext:Landroid/content/Context;
 
@@ -3297,8 +3198,6 @@
 
 .method public clearMarkedForwardingRoute(Ljava/lang/String;Landroid/net/RouteInfo;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/net/RouteInfo;
 
     iget-object v2, p0, Lcom/android/server/NetworkManagementService;->mContext:Landroid/content/Context;
 
@@ -3385,9 +3284,6 @@
 
 .method public clearUidRangeRoute(Ljava/lang/String;II)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     iget-object v1, p0, Lcom/android/server/NetworkManagementService;->mContext:Landroid/content/Context;
 
@@ -3462,9 +3358,6 @@
 
 .method public controlPrivatePacket(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/server/NetworkManagementService;->mContext:Landroid/content/Context;
 
@@ -3535,8 +3428,6 @@
 
 .method public delSrcRoute([BI)Z
     .locals 9
-    .param p1    # [B
-    .param p2    # I
 
     const/4 v4, 0x1
 
@@ -3638,7 +3529,6 @@
 
 .method public detachPppd(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/server/NetworkManagementService;->mContext:Landroid/content/Context;
 
@@ -3685,8 +3575,6 @@
 
 .method public disableEpdg(Ljava/lang/String;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/server/NetworkManagementService;->mContext:Landroid/content/Context;
 
@@ -3749,7 +3637,6 @@
 
 .method public disableIpv6(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/server/NetworkManagementService;->mContext:Landroid/content/Context;
 
@@ -3802,8 +3689,6 @@
 
 .method public disableNat(Ljava/lang/String;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/server/NetworkManagementService;->mContext:Landroid/content/Context;
 
@@ -3834,9 +3719,6 @@
 
 .method protected dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     iget-object v2, p0, Lcom/android/server/NetworkManagementService;->mContext:Landroid/content/Context;
 
@@ -3983,8 +3865,6 @@
 
 .method public enableEpdg(Ljava/lang/String;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/server/NetworkManagementService;->mContext:Landroid/content/Context;
 
@@ -4047,7 +3927,6 @@
 
 .method public enableIpv6(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/server/NetworkManagementService;->mContext:Landroid/content/Context;
 
@@ -4100,8 +3979,6 @@
 
 .method public enableNat(Ljava/lang/String;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/server/NetworkManagementService;->mContext:Landroid/content/Context;
 
@@ -4174,7 +4051,6 @@
 
 .method public flushInterfaceDnsCache(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/server/NetworkManagementService;->mContext:Landroid/content/Context;
 
@@ -4401,7 +4277,6 @@
 
 .method public getInterfaceConfig(Ljava/lang/String;)Landroid/net/InterfaceConfiguration;
     .locals 14
-    .param p1    # Ljava/lang/String;
 
     iget-object v9, p0, Lcom/android/server/NetworkManagementService;->mContext:Landroid/content/Context;
 
@@ -4715,7 +4590,6 @@
 
 .method public getMarkForUid(I)I
     .locals 7
-    .param p1    # I
 
     iget-object v2, p0, Lcom/android/server/NetworkManagementService;->mContext:Landroid/content/Context;
 
@@ -5117,7 +4991,6 @@
 
 .method public getNetworkStatsUidDetail(I)Landroid/net/NetworkStats;
     .locals 4
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/server/NetworkManagementService;->mContext:Landroid/content/Context;
 
@@ -5150,9 +5023,6 @@
 
 .method public getNetworkStatsVideoCall(Ljava/lang/String;II)Landroid/net/NetworkStats;
     .locals 11
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v10, 0x1
 
@@ -5349,7 +5219,6 @@
 
 .method public getRoutes(Ljava/lang/String;)[Landroid/net/RouteInfo;
     .locals 22
-    .param p1    # Ljava/lang/String;
 
     move-object/from16 v0, p0
 
@@ -6088,8 +5957,6 @@
 
 .method public markEnterpriseUid(ILjava/lang/String;)V
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/server/NetworkManagementService;->mContext:Landroid/content/Context;
 
@@ -6217,7 +6084,6 @@
 
 .method public registerObserver(Landroid/net/INetworkManagementEventObserver;)V
     .locals 3
-    .param p1    # Landroid/net/INetworkManagementEventObserver;
 
     iget-object v0, p0, Lcom/android/server/NetworkManagementService;->mContext:Landroid/content/Context;
 
@@ -6236,7 +6102,6 @@
 
 .method public removeEnterpriseChain(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/server/NetworkManagementService;->mContext:Landroid/content/Context;
 
@@ -6289,8 +6154,6 @@
 
 .method public removeEnterpriseLookup(Ljava/lang/String;Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/server/NetworkManagementService;->mContext:Landroid/content/Context;
 
@@ -6347,7 +6210,6 @@
 
 .method public removeEnterpriseMasq(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/server/NetworkManagementService;->mContext:Landroid/content/Context;
 
@@ -6400,7 +6262,6 @@
 
 .method public removeIdleTimer(Ljava/lang/String;)V
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     iget-object v2, p0, Lcom/android/server/NetworkManagementService;->mContext:Landroid/content/Context;
 
@@ -6515,7 +6376,6 @@
 
 .method public removeInterfaceAlert(Ljava/lang/String;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/server/NetworkManagementService;->mContext:Landroid/content/Context;
 
@@ -6607,7 +6467,6 @@
 
 .method public removeInterfaceQuota(Ljava/lang/String;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/server/NetworkManagementService;->mContext:Landroid/content/Context;
 
@@ -6706,7 +6565,6 @@
 
 .method public removeRejectDefault(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/server/NetworkManagementService;->mContext:Landroid/content/Context;
 
@@ -6759,8 +6617,6 @@
 
 .method public removeRoute(Ljava/lang/String;Landroid/net/RouteInfo;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/net/RouteInfo;
 
     iget-object v0, p0, Lcom/android/server/NetworkManagementService;->mContext:Landroid/content/Context;
 
@@ -6781,8 +6637,6 @@
 
 .method public removeSecondaryRoute(Ljava/lang/String;Landroid/net/RouteInfo;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/net/RouteInfo;
 
     iget-object v0, p0, Lcom/android/server/NetworkManagementService;->mContext:Landroid/content/Context;
 
@@ -6803,7 +6657,6 @@
 
 .method public removeUpstreamV6Interface(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;
@@ -6893,8 +6746,6 @@
 
 .method public replaceDefaultRoute(Ljava/lang/String;[B)Z
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # [B
 
     const/4 v4, 0x0
 
@@ -7019,10 +6870,6 @@
 
 .method public replaceSrcRoute(Ljava/lang/String;[B[BI)Z
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # [B
-    .param p3    # [B
-    .param p4    # I
 
     const/4 v6, 0x1
 
@@ -7189,7 +7036,6 @@
 
 .method public rmcEnable(Z)I
     .locals 8
-    .param p1    # Z
 
     const/4 v1, 0x1
 
@@ -7252,7 +7098,6 @@
 
 .method public rmcSetInterval(I)I
     .locals 7
-    .param p1    # I
 
     const/4 v6, 0x0
 
@@ -7305,7 +7150,6 @@
 
 .method public rmcSetMac(Ljava/lang/String;)I
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const/4 v6, 0x0
 
@@ -7354,7 +7198,6 @@
 
 .method public rmcSetRate(I)I
     .locals 7
-    .param p1    # I
 
     const/4 v6, 0x0
 
@@ -7407,8 +7250,6 @@
 
 .method public setAccessPoint(Landroid/net/wifi/WifiConfiguration;Ljava/lang/String;)V
     .locals 10
-    .param p1    # Landroid/net/wifi/WifiConfiguration;
-    .param p2    # Ljava/lang/String;
 
     const/4 v2, 0x1
 
@@ -7751,7 +7592,6 @@
 
 .method public setAccessPointDisassocSta(Ljava/lang/String;)I
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const/4 v6, 0x0
 
@@ -7808,7 +7648,6 @@
 
 .method public setDefaultInterfaceForDns(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/server/NetworkManagementService;->mContext:Landroid/content/Context;
 
@@ -7855,7 +7694,6 @@
 
 .method public setDnsForwarders([Ljava/lang/String;)V
     .locals 10
-    .param p1    # [Ljava/lang/String;
 
     iget-object v6, p0, Lcom/android/server/NetworkManagementService;->mContext:Landroid/content/Context;
 
@@ -7934,8 +7772,6 @@
 
 .method public setDnsInterfaceForPid(Ljava/lang/String;I)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;
@@ -8013,9 +7849,6 @@
 
 .method public setDnsInterfaceForUidRange(Ljava/lang/String;II)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     iget-object v1, p0, Lcom/android/server/NetworkManagementService;->mContext:Landroid/content/Context;
 
@@ -8078,9 +7911,6 @@
 
 .method public setDnsServersForInterface(Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)V
     .locals 11
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     iget-object v7, p0, Lcom/android/server/NetworkManagementService;->mContext:Landroid/content/Context;
 
@@ -8173,8 +8003,6 @@
 
 .method public setEnterpriseBlockUidRule(IZ)V
     .locals 7
-    .param p1    # I
-    .param p2    # Z
 
     iget-object v2, p0, Lcom/android/server/NetworkManagementService;->mContext:Landroid/content/Context;
 
@@ -8239,9 +8067,6 @@
 
 .method public setFirewallEgressDestRule(Ljava/lang/String;IZ)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Z
 
     invoke-static {}, Lcom/android/server/NetworkManagementService;->enforceSystemUid()V
 
@@ -8308,8 +8133,6 @@
 
 .method public setFirewallEgressSourceRule(Ljava/lang/String;Z)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     invoke-static {}, Lcom/android/server/NetworkManagementService;->enforceSystemUid()V
 
@@ -8368,7 +8191,6 @@
 
 .method public setFirewallEnabled(Z)V
     .locals 6
-    .param p1    # Z
 
     invoke-static {}, Lcom/android/server/NetworkManagementService;->enforceSystemUid()V
 
@@ -8415,8 +8237,6 @@
 
 .method public setFirewallInterfaceRule(Ljava/lang/String;Z)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     invoke-static {}, Lcom/android/server/NetworkManagementService;->enforceSystemUid()V
 
@@ -8475,8 +8295,6 @@
 
 .method public setFirewallUidRule(IZ)V
     .locals 7
-    .param p1    # I
-    .param p2    # Z
 
     invoke-static {}, Lcom/android/server/NetworkManagementService;->enforceSystemUid()V
 
@@ -8539,7 +8357,6 @@
 
 .method public setGlobalAlert(J)V
     .locals 6
-    .param p1    # J
 
     iget-object v1, p0, Lcom/android/server/NetworkManagementService;->mContext:Landroid/content/Context;
 
@@ -8598,7 +8415,6 @@
 
 .method public setHostExemption(Landroid/net/LinkAddress;)V
     .locals 6
-    .param p1    # Landroid/net/LinkAddress;
 
     iget-object v1, p0, Lcom/android/server/NetworkManagementService;->mContext:Landroid/content/Context;
 
@@ -8657,8 +8473,6 @@
 
 .method public setInterfaceAlert(Ljava/lang/String;J)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
 
     iget-object v1, p0, Lcom/android/server/NetworkManagementService;->mContext:Landroid/content/Context;
 
@@ -8805,8 +8619,6 @@
 
 .method public setInterfaceConfig(Ljava/lang/String;Landroid/net/InterfaceConfiguration;)V
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/net/InterfaceConfiguration;
 
     iget-object v5, p0, Lcom/android/server/NetworkManagementService;->mContext:Landroid/content/Context;
 
@@ -8929,7 +8741,6 @@
 
 .method public setInterfaceDown(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/server/NetworkManagementService;->mContext:Landroid/content/Context;
 
@@ -8952,8 +8763,6 @@
 
 .method public setInterfaceIpv6PrivacyExtensions(Ljava/lang/String;Z)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     iget-object v1, p0, Lcom/android/server/NetworkManagementService;->mContext:Landroid/content/Context;
 
@@ -9014,8 +8823,6 @@
 
 .method public setInterfaceQuota(Ljava/lang/String;J)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
 
     iget-object v1, p0, Lcom/android/server/NetworkManagementService;->mContext:Landroid/content/Context;
 
@@ -9145,7 +8952,6 @@
 
 .method public setInterfaceUp(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/server/NetworkManagementService;->mContext:Landroid/content/Context;
 
@@ -9168,7 +8974,6 @@
 
 .method public setIpForwardingEnabled(Z)V
     .locals 6
-    .param p1    # Z
 
     iget-object v1, p0, Lcom/android/server/NetworkManagementService;->mContext:Landroid/content/Context;
 
@@ -9219,7 +9024,6 @@
 
 .method public setMacaddrAcl(I)I
     .locals 7
-    .param p1    # I
 
     const/4 v6, 0x0
 
@@ -9280,7 +9084,6 @@
 
 .method public setMarkedForwarding(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/server/NetworkManagementService;->mContext:Landroid/content/Context;
 
@@ -9339,8 +9142,6 @@
 
 .method public setMarkedForwardingRoute(Ljava/lang/String;Landroid/net/RouteInfo;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/net/RouteInfo;
 
     iget-object v2, p0, Lcom/android/server/NetworkManagementService;->mContext:Landroid/content/Context;
 
@@ -9427,7 +9228,6 @@
 
 .method public setMaxClient(I)I
     .locals 7
-    .param p1    # I
 
     const/4 v6, 0x0
 
@@ -9488,8 +9288,6 @@
 
 .method public setMtu(Ljava/lang/String;I)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     iget-object v2, p0, Lcom/android/server/NetworkManagementService;->mContext:Landroid/content/Context;
 
@@ -9546,7 +9344,6 @@
 
 .method public setTxPower(I)I
     .locals 7
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -9617,8 +9414,6 @@
 
 .method public setUidNetworkRules(IZ)V
     .locals 8
-    .param p1    # I
-    .param p2    # Z
 
     iget-object v2, p0, Lcom/android/server/NetworkManagementService;->mContext:Landroid/content/Context;
 
@@ -9743,9 +9538,6 @@
 
 .method public setUidRangeRoute(Ljava/lang/String;II)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     iget-object v1, p0, Lcom/android/server/NetworkManagementService;->mContext:Landroid/content/Context;
 
@@ -9820,7 +9612,6 @@
 
 .method public setv6DnsForwarders([Ljava/lang/String;)V
     .locals 10
-    .param p1    # [Ljava/lang/String;
 
     iget-object v6, p0, Lcom/android/server/NetworkManagementService;->mContext:Landroid/content/Context;
 
@@ -9919,8 +9710,6 @@
 
 .method public startAccessPoint(Landroid/net/wifi/WifiConfiguration;Ljava/lang/String;)V
     .locals 10
-    .param p1    # Landroid/net/wifi/WifiConfiguration;
-    .param p2    # Ljava/lang/String;
 
     const/4 v2, 0x1
 
@@ -10283,7 +10072,6 @@
 
 .method public startClatd(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;
@@ -10335,9 +10123,6 @@
 
 .method public startNetworkStatsOnPorts(Ljava/lang/String;II)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     iget-object v1, p0, Lcom/android/server/NetworkManagementService;->mContext:Landroid/content/Context;
 
@@ -10406,7 +10191,6 @@
 
 .method public startTethering([Ljava/lang/String;)V
     .locals 10
-    .param p1    # [Ljava/lang/String;
 
     iget-object v6, p0, Lcom/android/server/NetworkManagementService;->mContext:Landroid/content/Context;
 
@@ -10521,7 +10305,6 @@
 
 .method public stopAccessPoint(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/server/NetworkManagementService;->mContext:Landroid/content/Context;
 
@@ -10615,9 +10398,6 @@
 
 .method public stopNetworkStatsOnPorts(Ljava/lang/String;II)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     iget-object v1, p0, Lcom/android/server/NetworkManagementService;->mContext:Landroid/content/Context;
 
@@ -10736,7 +10516,6 @@
 
 .method public tetherInterface(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/server/NetworkManagementService;->mContext:Landroid/content/Context;
 
@@ -10789,8 +10568,6 @@
 
 .method public unmarkEnterpriseUid(ILjava/lang/String;)V
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/server/NetworkManagementService;->mContext:Landroid/content/Context;
 
@@ -10851,7 +10628,6 @@
 
 .method public unregisterObserver(Landroid/net/INetworkManagementEventObserver;)V
     .locals 3
-    .param p1    # Landroid/net/INetworkManagementEventObserver;
 
     iget-object v0, p0, Lcom/android/server/NetworkManagementService;->mContext:Landroid/content/Context;
 
@@ -10870,7 +10646,6 @@
 
 .method public untetherInterface(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/server/NetworkManagementService;->mContext:Landroid/content/Context;
 
@@ -10923,9 +10698,6 @@
 
 .method public updateRa(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/server/NetworkManagementService;->mContext:Landroid/content/Context;
 
@@ -10980,8 +10752,6 @@
 
 .method public wifiFirmwareReload(Ljava/lang/String;Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/server/NetworkManagementService;->mContext:Landroid/content/Context;
 
@@ -11032,8 +10802,6 @@
 
 .method public wps_ap_method(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v2, p0, Lcom/android/server/NetworkManagementService;->mContext:Landroid/content/Context;
 

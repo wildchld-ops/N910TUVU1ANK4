@@ -48,8 +48,6 @@
 # direct methods
 .method constructor <init>(Landroid/media/WebVttRenderingWidget;Landroid/media/MediaFormat;)V
     .locals 2
-    .param p1    # Landroid/media/WebVttRenderingWidget;
-    .param p2    # Landroid/media/MediaFormat;
 
     invoke-direct {p0, p2}, Landroid/media/SubtitleTrack;-><init>(Landroid/media/MediaFormat;)V
 
@@ -112,7 +110,6 @@
 
 .method public onCueParsed(Landroid/media/TextTrackCue;)V
     .locals 17
-    .param p1    # Landroid/media/TextTrackCue;
 
     move-object/from16 v0, p0
 
@@ -458,9 +455,6 @@
 
 .method public onData(Ljava/lang/String;ZJ)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # J
 
     iget-object v1, p0, Landroid/media/WebVttTrack;->mParser:Landroid/media/WebVttParser;
 
@@ -564,7 +558,6 @@
 
 .method public onRegionParsed(Landroid/media/TextTrackRegion;)V
     .locals 3
-    .param p1    # Landroid/media/TextTrackRegion;
 
     iget-object v1, p0, Landroid/media/WebVttTrack;->mParser:Landroid/media/WebVttParser;
 

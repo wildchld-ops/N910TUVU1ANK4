@@ -37,7 +37,6 @@
 
 .method public constructor <init>(Ljavax/microedition/khronos/egl/EGLContext;)V
     .locals 2
-    .param p1    # Ljavax/microedition/khronos/egl/EGLContext;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

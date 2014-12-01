@@ -36,7 +36,6 @@
 # virtual methods
 .method public onGroupInfoAvailable(Landroid/net/wifi/p2p/WifiP2pGroup;)V
     .locals 6
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pGroup;
 
     if-nez p1, :cond_1
 

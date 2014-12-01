@@ -25,9 +25,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/InputMethodManagerService;Lcom/android/internal/view/IInputMethod;Landroid/view/InputChannel;)V
     .locals 0
-    .param p1    # Lcom/android/server/InputMethodManagerService;
-    .param p2    # Lcom/android/internal/view/IInputMethod;
-    .param p3    # Landroid/view/InputChannel;
 
     invoke-direct {p0}, Lcom/android/internal/view/IInputSessionCallback$Stub;-><init>()V
 
@@ -44,7 +41,6 @@
 # virtual methods
 .method public sessionCreated(Lcom/android/internal/view/IInputMethodSession;)V
     .locals 3
-    .param p1    # Lcom/android/internal/view/IInputMethodSession;
 
     iget-object v0, p0, Lcom/android/server/InputMethodManagerService$MethodCallback;->mParentIMMS:Lcom/android/server/InputMethodManagerService;
 

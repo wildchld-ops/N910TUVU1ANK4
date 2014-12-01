@@ -20,7 +20,6 @@
 
 .method private captureValues(Landroid/transition/TransitionValues;)V
     .locals 3
-    .param p1    # Landroid/transition/TransitionValues;
 
     iget-object v0, p1, Landroid/transition/TransitionValues;->values:Ljava/util/Map;
 
@@ -66,7 +65,6 @@
 # virtual methods
 .method public captureEndValues(Landroid/transition/TransitionValues;)V
     .locals 0
-    .param p1    # Landroid/transition/TransitionValues;
 
     invoke-direct {p0, p1}, Landroid/transition/Recolor;->captureValues(Landroid/transition/TransitionValues;)V
 
@@ -75,7 +73,6 @@
 
 .method public captureStartValues(Landroid/transition/TransitionValues;)V
     .locals 0
-    .param p1    # Landroid/transition/TransitionValues;
 
     invoke-direct {p0, p1}, Landroid/transition/Recolor;->captureValues(Landroid/transition/TransitionValues;)V
 
@@ -84,9 +81,6 @@
 
 .method public createAnimator(Landroid/view/ViewGroup;Landroid/transition/TransitionValues;Landroid/transition/TransitionValues;)Landroid/animation/Animator;
     .locals 15
-    .param p1    # Landroid/view/ViewGroup;
-    .param p2    # Landroid/transition/TransitionValues;
-    .param p3    # Landroid/transition/TransitionValues;
 
     if-eqz p2, :cond_0
 

@@ -114,10 +114,6 @@
 
 .method constructor <init>(ILandroid/renderscript/RenderScript;Landroid/renderscript/Type;I)V
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/renderscript/RenderScript;
-    .param p3    # Landroid/renderscript/Type;
-    .param p4    # I
 
     const/4 v2, 0x0
 
@@ -271,8 +267,6 @@
 
 .method public static createCubemapFromBitmap(Landroid/renderscript/RenderScript;Landroid/graphics/Bitmap;)Landroid/renderscript/Allocation;
     .locals 2
-    .param p0    # Landroid/renderscript/RenderScript;
-    .param p1    # Landroid/graphics/Bitmap;
 
     sget-object v0, Landroid/renderscript/Allocation$MipmapControl;->MIPMAP_NONE:Landroid/renderscript/Allocation$MipmapControl;
 
@@ -287,10 +281,6 @@
 
 .method public static createCubemapFromBitmap(Landroid/renderscript/RenderScript;Landroid/graphics/Bitmap;Landroid/renderscript/Allocation$MipmapControl;I)Landroid/renderscript/Allocation;
     .locals 10
-    .param p0    # Landroid/renderscript/RenderScript;
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # Landroid/renderscript/Allocation$MipmapControl;
-    .param p3    # I
 
     const/4 v8, 0x0
 
@@ -443,13 +433,6 @@
 
 .method public static createCubemapFromCubeFaces(Landroid/renderscript/RenderScript;Landroid/graphics/Bitmap;Landroid/graphics/Bitmap;Landroid/graphics/Bitmap;Landroid/graphics/Bitmap;Landroid/graphics/Bitmap;Landroid/graphics/Bitmap;)Landroid/renderscript/Allocation;
     .locals 9
-    .param p0    # Landroid/renderscript/RenderScript;
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # Landroid/graphics/Bitmap;
-    .param p3    # Landroid/graphics/Bitmap;
-    .param p4    # Landroid/graphics/Bitmap;
-    .param p5    # Landroid/graphics/Bitmap;
-    .param p6    # Landroid/graphics/Bitmap;
 
     sget-object v7, Landroid/renderscript/Allocation$MipmapControl;->MIPMAP_NONE:Landroid/renderscript/Allocation$MipmapControl;
 
@@ -478,15 +461,6 @@
 
 .method public static createCubemapFromCubeFaces(Landroid/renderscript/RenderScript;Landroid/graphics/Bitmap;Landroid/graphics/Bitmap;Landroid/graphics/Bitmap;Landroid/graphics/Bitmap;Landroid/graphics/Bitmap;Landroid/graphics/Bitmap;Landroid/renderscript/Allocation$MipmapControl;I)Landroid/renderscript/Allocation;
     .locals 11
-    .param p0    # Landroid/renderscript/RenderScript;
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # Landroid/graphics/Bitmap;
-    .param p3    # Landroid/graphics/Bitmap;
-    .param p4    # Landroid/graphics/Bitmap;
-    .param p5    # Landroid/graphics/Bitmap;
-    .param p6    # Landroid/graphics/Bitmap;
-    .param p7    # Landroid/renderscript/Allocation$MipmapControl;
-    .param p8    # I
 
     invoke-virtual {p1}, Landroid/graphics/Bitmap;->getHeight()I
 
@@ -686,8 +660,6 @@
 
 .method public static createFromBitmap(Landroid/renderscript/RenderScript;Landroid/graphics/Bitmap;)Landroid/renderscript/Allocation;
     .locals 2
-    .param p0    # Landroid/renderscript/RenderScript;
-    .param p1    # Landroid/graphics/Bitmap;
 
     invoke-virtual {p0}, Landroid/renderscript/RenderScript;->getApplicationContext()Landroid/content/Context;
 
@@ -728,10 +700,6 @@
 
 .method public static createFromBitmap(Landroid/renderscript/RenderScript;Landroid/graphics/Bitmap;Landroid/renderscript/Allocation$MipmapControl;I)Landroid/renderscript/Allocation;
     .locals 11
-    .param p0    # Landroid/renderscript/RenderScript;
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # Landroid/renderscript/Allocation$MipmapControl;
-    .param p3    # I
 
     const-wide/32 v9, 0x8000
 
@@ -880,9 +848,6 @@
 
 .method public static createFromBitmapResource(Landroid/renderscript/RenderScript;Landroid/content/res/Resources;I)Landroid/renderscript/Allocation;
     .locals 2
-    .param p0    # Landroid/renderscript/RenderScript;
-    .param p1    # Landroid/content/res/Resources;
-    .param p2    # I
 
     invoke-virtual {p0}, Landroid/renderscript/RenderScript;->getApplicationContext()Landroid/content/Context;
 
@@ -923,11 +888,6 @@
 
 .method public static createFromBitmapResource(Landroid/renderscript/RenderScript;Landroid/content/res/Resources;ILandroid/renderscript/Allocation$MipmapControl;I)Landroid/renderscript/Allocation;
     .locals 4
-    .param p0    # Landroid/renderscript/RenderScript;
-    .param p1    # Landroid/content/res/Resources;
-    .param p2    # I
-    .param p3    # Landroid/renderscript/Allocation$MipmapControl;
-    .param p4    # I
 
     invoke-virtual {p0}, Landroid/renderscript/RenderScript;->validate()V
 
@@ -959,9 +919,6 @@
 
 .method public static createFromString(Landroid/renderscript/RenderScript;Ljava/lang/String;I)Landroid/renderscript/Allocation;
     .locals 5
-    .param p0    # Landroid/renderscript/RenderScript;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-virtual {p0}, Landroid/renderscript/RenderScript;->validate()V
 
@@ -1004,9 +961,6 @@
 
 .method public static createSized(Landroid/renderscript/RenderScript;Landroid/renderscript/Element;I)Landroid/renderscript/Allocation;
     .locals 1
-    .param p0    # Landroid/renderscript/RenderScript;
-    .param p1    # Landroid/renderscript/Element;
-    .param p2    # I
 
     const/4 v0, 0x1
 
@@ -1019,10 +973,6 @@
 
 .method public static createSized(Landroid/renderscript/RenderScript;Landroid/renderscript/Element;II)Landroid/renderscript/Allocation;
     .locals 8
-    .param p0    # Landroid/renderscript/RenderScript;
-    .param p1    # Landroid/renderscript/Element;
-    .param p2    # I
-    .param p3    # I
 
     const-wide/32 v6, 0x8000
 
@@ -1078,8 +1028,6 @@
 
 .method public static createTyped(Landroid/renderscript/RenderScript;Landroid/renderscript/Type;)Landroid/renderscript/Allocation;
     .locals 2
-    .param p0    # Landroid/renderscript/RenderScript;
-    .param p1    # Landroid/renderscript/Type;
 
     sget-object v0, Landroid/renderscript/Allocation$MipmapControl;->MIPMAP_NONE:Landroid/renderscript/Allocation$MipmapControl;
 
@@ -1094,9 +1042,6 @@
 
 .method public static createTyped(Landroid/renderscript/RenderScript;Landroid/renderscript/Type;I)Landroid/renderscript/Allocation;
     .locals 1
-    .param p0    # Landroid/renderscript/RenderScript;
-    .param p1    # Landroid/renderscript/Type;
-    .param p2    # I
 
     sget-object v0, Landroid/renderscript/Allocation$MipmapControl;->MIPMAP_NONE:Landroid/renderscript/Allocation$MipmapControl;
 
@@ -1109,10 +1054,6 @@
 
 .method public static createTyped(Landroid/renderscript/RenderScript;Landroid/renderscript/Type;Landroid/renderscript/Allocation$MipmapControl;I)Landroid/renderscript/Allocation;
     .locals 6
-    .param p0    # Landroid/renderscript/RenderScript;
-    .param p1    # Landroid/renderscript/Type;
-    .param p2    # Landroid/renderscript/Allocation$MipmapControl;
-    .param p3    # I
 
     const-wide/32 v4, 0x8000
 
@@ -1171,10 +1112,6 @@
 
 .method private data1DChecks(IIII)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iget-object v0, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
@@ -1279,8 +1216,6 @@
 
 .method static elementFromBitmap(Landroid/renderscript/RenderScript;Landroid/graphics/Bitmap;)Landroid/renderscript/Element;
     .locals 4
-    .param p0    # Landroid/renderscript/RenderScript;
-    .param p1    # Landroid/graphics/Bitmap;
 
     invoke-virtual {p1}, Landroid/graphics/Bitmap;->getConfig()Landroid/graphics/Bitmap$Config;
 
@@ -1386,7 +1321,6 @@
 
 .method static sendBufferNotification(I)V
     .locals 4
-    .param p0    # I
 
     sget-object v2, Landroid/renderscript/Allocation;->mAllocationMap:Ljava/util/HashMap;
 
@@ -1432,7 +1366,6 @@
 
 .method private setBitmap(Landroid/graphics/Bitmap;)V
     .locals 0
-    .param p1    # Landroid/graphics/Bitmap;
 
     iput-object p1, p0, Landroid/renderscript/Allocation;->mBitmap:Landroid/graphics/Bitmap;
 
@@ -1441,9 +1374,6 @@
 
 .method static typeFromBitmap(Landroid/renderscript/RenderScript;Landroid/graphics/Bitmap;Landroid/renderscript/Allocation$MipmapControl;)Landroid/renderscript/Type;
     .locals 3
-    .param p0    # Landroid/renderscript/RenderScript;
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # Landroid/renderscript/Allocation$MipmapControl;
 
     invoke-static {p0, p1}, Landroid/renderscript/Allocation;->elementFromBitmap(Landroid/renderscript/RenderScript;Landroid/graphics/Bitmap;)Landroid/renderscript/Element;
 
@@ -1488,7 +1418,6 @@
 
 .method private updateCacheInfo(Landroid/renderscript/Type;)V
     .locals 3
-    .param p1    # Landroid/renderscript/Type;
 
     const/4 v2, 0x1
 
@@ -1545,10 +1474,6 @@
 
 .method private validate2DRange(IIII)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iget-object v0, p0, Landroid/renderscript/Allocation;->mAdaptedAllocation:Landroid/renderscript/Allocation;
 
@@ -1610,12 +1535,6 @@
 
 .method private validate3DRange(IIIIII)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     iget-object v0, p0, Landroid/renderscript/Allocation;->mAdaptedAllocation:Landroid/renderscript/Allocation;
 
@@ -1687,7 +1606,6 @@
 
 .method private validateBitmapFormat(Landroid/graphics/Bitmap;)V
     .locals 4
-    .param p1    # Landroid/graphics/Bitmap;
 
     const/4 v3, 0x2
 
@@ -2143,7 +2061,6 @@
 
 .method private validateBitmapSize(Landroid/graphics/Bitmap;)V
     .locals 2
-    .param p1    # Landroid/graphics/Bitmap;
 
     iget v0, p0, Landroid/renderscript/Allocation;->mCurrentDimX:I
 
@@ -2537,10 +2454,6 @@
 # virtual methods
 .method public copy1DRangeFrom(IILandroid/renderscript/Allocation;I)V
     .locals 14
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/renderscript/Allocation;
-    .param p4    # I
 
     const-wide/32 v1, 0x8000
 
@@ -2597,9 +2510,6 @@
 
 .method public copy1DRangeFrom(II[B)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [B
 
     const-wide/32 v1, 0x8000
 
@@ -2618,9 +2528,6 @@
 
 .method public copy1DRangeFrom(II[F)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [F
 
     const-wide/32 v1, 0x8000
 
@@ -2639,9 +2546,6 @@
 
 .method public copy1DRangeFrom(II[I)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [I
 
     const-wide/32 v1, 0x8000
 
@@ -2660,9 +2564,6 @@
 
 .method public copy1DRangeFrom(II[S)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [S
 
     const-wide/32 v1, 0x8000
 
@@ -2681,9 +2582,6 @@
 
 .method public copy1DRangeFromUnchecked(II[B)V
     .locals 9
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [B
 
     const-wide/32 v7, 0x8000
 
@@ -2728,9 +2626,6 @@
 
 .method public copy1DRangeFromUnchecked(II[F)V
     .locals 9
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [F
 
     const-wide/32 v7, 0x8000
 
@@ -2777,9 +2672,6 @@
 
 .method public copy1DRangeFromUnchecked(II[I)V
     .locals 9
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [I
 
     const-wide/32 v7, 0x8000
 
@@ -2826,9 +2718,6 @@
 
 .method public copy1DRangeFromUnchecked(II[S)V
     .locals 9
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [S
 
     const-wide/32 v7, 0x8000
 
@@ -2875,13 +2764,6 @@
 
 .method public copy2DRangeFrom(IIIILandroid/renderscript/Allocation;II)V
     .locals 14
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Landroid/renderscript/Allocation;
-    .param p6    # I
-    .param p7    # I
 
     const-wide/32 v1, 0x8000
 
@@ -2948,11 +2830,6 @@
 
 .method public copy2DRangeFrom(IIII[B)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # [B
 
     const-wide/32 v1, 0x8000
 
@@ -2971,11 +2848,6 @@
 
 .method public copy2DRangeFrom(IIII[F)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # [F
 
     const-wide/32 v1, 0x8000
 
@@ -2994,11 +2866,6 @@
 
 .method public copy2DRangeFrom(IIII[I)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # [I
 
     const-wide/32 v1, 0x8000
 
@@ -3017,11 +2884,6 @@
 
 .method public copy2DRangeFrom(IIII[S)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # [S
 
     const-wide/32 v1, 0x8000
 
@@ -3040,9 +2902,6 @@
 
 .method public copy2DRangeFrom(IILandroid/graphics/Bitmap;)V
     .locals 11
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/graphics/Bitmap;
 
     const-wide/32 v9, 0x8000
 
@@ -3129,11 +2988,6 @@
 
 .method copy2DRangeFromUnchecked(IIII[B)V
     .locals 10
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # [B
 
     const-wide/32 v0, 0x8000
 
@@ -3182,11 +3036,6 @@
 
 .method copy2DRangeFromUnchecked(IIII[F)V
     .locals 10
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # [F
 
     const-wide/32 v0, 0x8000
 
@@ -3237,11 +3086,6 @@
 
 .method copy2DRangeFromUnchecked(IIII[I)V
     .locals 10
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # [I
 
     const-wide/32 v0, 0x8000
 
@@ -3292,11 +3136,6 @@
 
 .method copy2DRangeFromUnchecked(IIII[S)V
     .locals 10
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # [S
 
     const-wide/32 v0, 0x8000
 
@@ -3347,16 +3186,6 @@
 
 .method public copy3DRangeFrom(IIIIIILandroid/renderscript/Allocation;III)V
     .locals 15
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # Landroid/renderscript/Allocation;
-    .param p8    # I
-    .param p9    # I
-    .param p10    # I
 
     iget-object v1, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
@@ -3409,13 +3238,6 @@
 
 .method public copy3DRangeFrom(IIIIII[B)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # [B
 
     invoke-direct {p0}, Landroid/renderscript/Allocation;->validateIsInt8()V
 
@@ -3426,13 +3248,6 @@
 
 .method public copy3DRangeFrom(IIIIII[F)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # [F
 
     invoke-direct {p0}, Landroid/renderscript/Allocation;->validateIsFloat32()V
 
@@ -3443,13 +3258,6 @@
 
 .method public copy3DRangeFrom(IIIIII[I)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # [I
 
     invoke-direct {p0}, Landroid/renderscript/Allocation;->validateIsInt32()V
 
@@ -3460,13 +3268,6 @@
 
 .method public copy3DRangeFrom(IIIIII[S)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # [S
 
     invoke-direct {p0}, Landroid/renderscript/Allocation;->validateIsInt16()V
 
@@ -3477,13 +3278,6 @@
 
 .method copy3DRangeFromUnchecked(IIIIII[B)V
     .locals 12
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # [B
 
     iget-object v1, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
@@ -3524,13 +3318,6 @@
 
 .method copy3DRangeFromUnchecked(IIIIII[F)V
     .locals 12
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # [F
 
     iget-object v1, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
@@ -3573,13 +3360,6 @@
 
 .method copy3DRangeFromUnchecked(IIIIII[I)V
     .locals 12
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # [I
 
     iget-object v1, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
@@ -3622,13 +3402,6 @@
 
 .method copy3DRangeFromUnchecked(IIIIII[S)V
     .locals 12
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # [S
 
     iget-object v1, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
@@ -3671,7 +3444,6 @@
 
 .method public copyFrom(Landroid/graphics/Bitmap;)V
     .locals 8
-    .param p1    # Landroid/graphics/Bitmap;
 
     const-wide/32 v6, 0x8000
 
@@ -3740,7 +3512,6 @@
 
 .method public copyFrom(Landroid/renderscript/Allocation;)V
     .locals 10
-    .param p1    # Landroid/renderscript/Allocation;
 
     const-wide/32 v8, 0x8000
 
@@ -3798,7 +3569,6 @@
 
 .method public copyFrom([B)V
     .locals 10
-    .param p1    # [B
 
     const-wide/32 v8, 0x8000
 
@@ -3866,7 +3636,6 @@
 
 .method public copyFrom([F)V
     .locals 10
-    .param p1    # [F
 
     const-wide/32 v8, 0x8000
 
@@ -3934,7 +3703,6 @@
 
 .method public copyFrom([I)V
     .locals 10
-    .param p1    # [I
 
     const-wide/32 v8, 0x8000
 
@@ -4002,7 +3770,6 @@
 
 .method public copyFrom([Landroid/renderscript/BaseObj;)V
     .locals 6
-    .param p1    # [Landroid/renderscript/BaseObj;
 
     const-wide/32 v4, 0x8000
 
@@ -4100,7 +3867,6 @@
 
 .method public copyFrom([S)V
     .locals 10
-    .param p1    # [S
 
     const-wide/32 v8, 0x8000
 
@@ -4168,7 +3934,6 @@
 
 .method public copyFromUnchecked([B)V
     .locals 10
-    .param p1    # [B
 
     const-wide/32 v8, 0x8000
 
@@ -4236,7 +4001,6 @@
 
 .method public copyFromUnchecked([F)V
     .locals 10
-    .param p1    # [F
 
     const-wide/32 v8, 0x8000
 
@@ -4304,7 +4068,6 @@
 
 .method public copyFromUnchecked([I)V
     .locals 10
-    .param p1    # [I
 
     const-wide/32 v8, 0x8000
 
@@ -4372,7 +4135,6 @@
 
 .method public copyFromUnchecked([S)V
     .locals 10
-    .param p1    # [S
 
     const-wide/32 v8, 0x8000
 
@@ -4440,7 +4202,6 @@
 
 .method public copyTo(Landroid/graphics/Bitmap;)V
     .locals 4
-    .param p1    # Landroid/graphics/Bitmap;
 
     const-wide/32 v2, 0x8000
 
@@ -4473,7 +4234,6 @@
 
 .method public copyTo([B)V
     .locals 4
-    .param p1    # [B
 
     const-wide/32 v2, 0x8000
 
@@ -4504,7 +4264,6 @@
 
 .method public copyTo([F)V
     .locals 4
-    .param p1    # [F
 
     const-wide/32 v2, 0x8000
 
@@ -4535,7 +4294,6 @@
 
 .method public copyTo([I)V
     .locals 4
-    .param p1    # [I
 
     const-wide/32 v2, 0x8000
 
@@ -4566,7 +4324,6 @@
 
 .method public copyTo([S)V
     .locals 4
-    .param p1    # [S
 
     const-wide/32 v2, 0x8000
 
@@ -4825,7 +4582,6 @@
 
 .method public declared-synchronized resize(I)V
     .locals 3
-    .param p1    # I
 
     monitor-enter p0
 
@@ -4933,9 +4689,6 @@
 
 .method public setFromFieldPacker(IILandroid/renderscript/FieldPacker;)V
     .locals 8
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/renderscript/FieldPacker;
 
     iget-object v0, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
@@ -5087,8 +4840,6 @@
 
 .method public setFromFieldPacker(ILandroid/renderscript/FieldPacker;)V
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/renderscript/FieldPacker;
 
     iget-object v3, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
@@ -5166,7 +4917,6 @@
 
 .method public setOnBufferAvailableListener(Landroid/renderscript/Allocation$OnBufferAvailableListener;)V
     .locals 4
-    .param p1    # Landroid/renderscript/Allocation$OnBufferAvailableListener;
 
     sget-object v1, Landroid/renderscript/Allocation;->mAllocationMap:Ljava/util/HashMap;
 
@@ -5205,7 +4955,6 @@
 
 .method public setSurface(Landroid/view/Surface;)V
     .locals 2
-    .param p1    # Landroid/view/Surface;
 
     iget-object v0, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
@@ -5241,7 +4990,6 @@
 
 .method public setSurfaceTexture(Landroid/graphics/SurfaceTexture;)V
     .locals 1
-    .param p1    # Landroid/graphics/SurfaceTexture;
 
     new-instance v0, Landroid/view/Surface;
 
@@ -5254,7 +5002,6 @@
 
 .method public syncAll(I)V
     .locals 4
-    .param p1    # I
 
     const-wide/32 v2, 0x8000
 

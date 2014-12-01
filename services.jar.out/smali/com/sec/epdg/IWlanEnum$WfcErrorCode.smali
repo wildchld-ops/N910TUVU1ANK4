@@ -136,7 +136,6 @@
 
 .method private constructor <init>(Ljava/lang/String;II)V
     .locals 0
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)V"
@@ -152,7 +151,6 @@
 
 .method public static getWFCErrorCode(Lcom/sec/epdg/IWlanError;)I
     .locals 2
-    .param p0    # Lcom/sec/epdg/IWlanError;
 
     invoke-virtual {p0}, Lcom/sec/epdg/IWlanError;->getError()Lcom/sec/epdg/IWlanError$EpdgError;
 
@@ -242,7 +240,6 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/sec/epdg/IWlanEnum$WfcErrorCode;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-class v0, Lcom/sec/epdg/IWlanEnum$WfcErrorCode;
 

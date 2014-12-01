@@ -53,7 +53,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Landroid/widget/TextView;->length()I
+    invoke-virtual {v0}, Landroid/widget/EditText;->length()I
 
     move-result v0
 
@@ -141,7 +141,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Landroid/view/View;->requestFocus()Z
+    invoke-virtual {v0}, Landroid/widget/EditText;->requestFocus()Z
 
     iget-object v0, p0, Lcom/android/phone/EditFdnContactScreen$5;->this$0:Lcom/android/phone/EditFdnContactScreen;
 
@@ -166,7 +166,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Landroid/widget/TextView;->length()I
+    invoke-virtual {v0}, Landroid/widget/EditText;->length()I
 
     move-result v0
 
@@ -199,7 +199,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Landroid/view/View;->requestFocus()Z
+    invoke-virtual {v0}, Landroid/widget/EditText;->requestFocus()Z
 
     iget-object v0, p0, Lcom/android/phone/EditFdnContactScreen$5;->this$0:Lcom/android/phone/EditFdnContactScreen;
 
@@ -260,7 +260,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Landroid/view/View;->requestFocus()Z
+    invoke-virtual {v0}, Landroid/widget/EditText;->requestFocus()Z
 
     iget-object v0, p0, Lcom/android/phone/EditFdnContactScreen$5;->this$0:Lcom/android/phone/EditFdnContactScreen;
 
@@ -382,7 +382,7 @@
 
     move-object v7, v2
 
-    invoke-virtual/range {v0 .. v7}, Landroid/content/AsyncQueryHandler;->startQuery(ILjava/lang/Object;Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual/range {v0 .. v7}, Lcom/android/phone/EditFdnContactScreen$QueryHandler;->startQuery(ILjava/lang/Object;Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)V
 
     iget-object v0, p0, Lcom/android/phone/EditFdnContactScreen$5;->this$0:Lcom/android/phone/EditFdnContactScreen;
 
@@ -403,7 +403,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v2}, Landroid/view/View;->getWindowToken()Landroid/os/IBinder;
+    invoke-virtual {v2}, Landroid/widget/EditText;->getWindowToken()Landroid/os/IBinder;
 
     move-result-object v2
 
@@ -423,7 +423,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v2}, Landroid/view/View;->getWindowToken()Landroid/os/IBinder;
+    invoke-virtual {v2}, Landroid/widget/EditText;->getWindowToken()Landroid/os/IBinder;
 
     move-result-object v2
 

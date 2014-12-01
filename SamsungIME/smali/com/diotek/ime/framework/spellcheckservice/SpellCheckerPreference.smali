@@ -17,7 +17,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Landroid/preference/CheckBoxPreference;-><init>(Landroid/content/Context;)V
 
@@ -28,8 +27,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/preference/CheckBoxPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -40,9 +37,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Landroid/preference/CheckBoxPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
@@ -85,7 +79,6 @@
 
 .method public onPreferenceClick(Landroid/preference/Preference;)Z
     .locals 1
-    .param p1    # Landroid/preference/Preference;
 
     const/4 v0, 0x1
 
@@ -94,7 +87,6 @@
 
 .method public setSpellCheckerService(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     iget-object v2, p0, Lcom/diotek/ime/framework/spellcheckservice/SpellCheckerPreference;->mTsm:Landroid/view/textservice/TextServicesManager;
 

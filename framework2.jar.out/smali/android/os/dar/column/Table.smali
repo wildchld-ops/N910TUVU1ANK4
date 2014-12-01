@@ -25,7 +25,6 @@
 # direct methods
 .method public constructor <init>(Landroid/net/Uri;)V
     .locals 1
-    .param p1    # Landroid/net/Uri;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -44,7 +43,6 @@
 # virtual methods
 .method public addColumn(Landroid/os/dar/column/Column;)V
     .locals 3
-    .param p1    # Landroid/os/dar/column/Column;
 
     iget-object v0, p1, Landroid/os/dar/column/Column;->name:Ljava/lang/String;
 
@@ -90,8 +88,6 @@
 
 .method public addColumn(Ljava/lang/String;Z)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const/4 v0, 0x0
 
@@ -162,7 +158,6 @@
 
 .method public searchColumn(Ljava/lang/String;)Landroid/os/dar/column/Column;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 

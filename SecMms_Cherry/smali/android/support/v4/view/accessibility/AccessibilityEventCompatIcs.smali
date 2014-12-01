@@ -14,8 +14,6 @@
 
 .method public static appendRecord(Landroid/view/accessibility/AccessibilityEvent;Ljava/lang/Object;)V
     .locals 0
-    .param p0    # Landroid/view/accessibility/AccessibilityEvent;
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Landroid/view/accessibility/AccessibilityRecord;
 
@@ -26,8 +24,6 @@
 
 .method public static getRecord(Landroid/view/accessibility/AccessibilityEvent;I)Ljava/lang/Object;
     .locals 1
-    .param p0    # Landroid/view/accessibility/AccessibilityEvent;
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/view/accessibility/AccessibilityEvent;->getRecord(I)Landroid/view/accessibility/AccessibilityRecord;
 
@@ -38,7 +34,6 @@
 
 .method public static getRecordCount(Landroid/view/accessibility/AccessibilityEvent;)I
     .locals 1
-    .param p0    # Landroid/view/accessibility/AccessibilityEvent;
 
     invoke-virtual {p0}, Landroid/view/accessibility/AccessibilityEvent;->getRecordCount()I
 

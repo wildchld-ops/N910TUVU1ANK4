@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Landroid/webkitsec/ZoomControlEmbedded;Landroid/webkitsec/ZoomControlEmbedded$1;)V
     .locals 0
-    .param p1    # Landroid/webkitsec/ZoomControlEmbedded;
-    .param p2    # Landroid/webkitsec/ZoomControlEmbedded$1;
 
     invoke-direct {p0, p1}, Landroid/webkitsec/ZoomControlEmbedded$ZoomListener;-><init>(Landroid/webkitsec/ZoomControlEmbedded;)V
 
@@ -46,7 +44,6 @@
 # virtual methods
 .method public onVisibilityChanged(Z)V
     .locals 2
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -84,7 +81,6 @@
 
 .method public onZoom(Z)V
     .locals 1
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 

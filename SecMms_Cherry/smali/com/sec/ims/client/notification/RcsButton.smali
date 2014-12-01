@@ -40,7 +40,6 @@
 
 .method public constructor <init>(Landroid/os/Parcel;)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -61,8 +60,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/Integer;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Integer;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -113,8 +110,6 @@
 
 .method public static make(Ljava/lang/String;Ljava/lang/Integer;)Lcom/sec/ims/client/notification/RcsButton;
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/Integer;
 
     new-instance v0, Lcom/sec/ims/client/notification/RcsButton;
 
@@ -135,7 +130,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 4
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x0
 
@@ -241,8 +235,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/sec/ims/client/notification/RcsButton;->mLabel:Ljava/lang/String;
 

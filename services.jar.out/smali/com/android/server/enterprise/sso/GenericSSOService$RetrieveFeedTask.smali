@@ -44,7 +44,6 @@
 # virtual methods
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [Ljava/lang/String;
 
@@ -57,7 +56,6 @@
 
 .method protected varargs doInBackground([Ljava/lang/String;)Ljava/lang/Void;
     .locals 6
-    .param p1    # [Ljava/lang/String;
 
     :try_start_0
     new-instance v0, Lcom/android/server/enterprise/sso/GenericSSOService$SntpClient;
@@ -142,7 +140,6 @@
 
 .method protected bridge synthetic onPostExecute(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Ljava/lang/Void;
 
@@ -153,7 +150,6 @@
 
 .method protected onPostExecute(Ljava/lang/Void;)V
     .locals 1
-    .param p1    # Ljava/lang/Void;
 
     # getter for: Lcom/android/server/enterprise/sso/GenericSSOService;->countDownLatchNTP:Ljava/util/concurrent/CountDownLatch;
     invoke-static {}, Lcom/android/server/enterprise/sso/GenericSSOService;->access$1500()Ljava/util/concurrent/CountDownLatch;

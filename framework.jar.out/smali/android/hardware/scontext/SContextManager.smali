@@ -53,7 +53,6 @@
 # direct methods
 .method public constructor <init>(Landroid/os/Looper;)V
     .locals 1
-    .param p1    # Landroid/os/Looper;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -86,8 +85,6 @@
 
 .method private changeParameters(Landroid/hardware/scontext/SContextListener;Landroid/hardware/scontext/SContextProperty;)Z
     .locals 6
-    .param p1    # Landroid/hardware/scontext/SContextListener;
-    .param p2    # Landroid/hardware/scontext/SContextProperty;
 
     const/4 v3, 0x0
 
@@ -187,8 +184,6 @@
 
 .method private checkListenerAndService(Landroid/hardware/scontext/SContextListener;I)Z
     .locals 4
-    .param p1    # Landroid/hardware/scontext/SContextListener;
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -268,7 +263,6 @@
 
 .method private getListenerDelegate(Landroid/hardware/scontext/SContextListener;)Landroid/hardware/scontext/SContextManager$SContextListenerDelegate;
     .locals 4
-    .param p1    # Landroid/hardware/scontext/SContextListener;
 
     if-eqz p1, :cond_0
 
@@ -326,8 +320,6 @@
 
 .method private registerListener(Landroid/hardware/scontext/SContextListener;Landroid/hardware/scontext/SContextProperty;)Z
     .locals 6
-    .param p1    # Landroid/hardware/scontext/SContextListener;
-    .param p2    # Landroid/hardware/scontext/SContextProperty;
 
     invoke-virtual {p2}, Landroid/hardware/scontext/SContextProperty;->getType()I
 
@@ -426,9 +418,6 @@
 # virtual methods
 .method public changeParameters(Landroid/hardware/scontext/SContextListener;II)Z
     .locals 3
-    .param p1    # Landroid/hardware/scontext/SContextListener;
-    .param p2    # I
-    .param p3    # I
 
     new-instance v0, Landroid/hardware/scontext/SContextProperty;
 
@@ -469,11 +458,6 @@
 
 .method public changeParameters(Landroid/hardware/scontext/SContextListener;IIDD)Z
     .locals 4
-    .param p1    # Landroid/hardware/scontext/SContextListener;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # D
-    .param p6    # D
 
     const/4 v3, 0x2
 
@@ -524,12 +508,6 @@
 
 .method public changeParameters(Landroid/hardware/scontext/SContextListener;IIIII)Z
     .locals 3
-    .param p1    # Landroid/hardware/scontext/SContextListener;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     new-instance v0, Landroid/hardware/scontext/SContextProperty;
 
@@ -570,7 +548,6 @@
 
 .method public getFeatureLevel(I)I
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/hardware/scontext/SContextManager;->isAvailableService(I)Z
 
@@ -605,8 +582,6 @@
 
 .method public initializeSContextService(Landroid/hardware/scontext/SContextListener;I)V
     .locals 5
-    .param p1    # Landroid/hardware/scontext/SContextListener;
-    .param p2    # I
 
     invoke-virtual {p0, p2}, Landroid/hardware/scontext/SContextManager;->isAvailableService(I)Z
 
@@ -697,7 +672,6 @@
 
 .method public isAvailableService(I)Z
     .locals 3
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -732,8 +706,6 @@
 
 .method public registerListener(Landroid/hardware/scontext/SContextListener;I)Z
     .locals 2
-    .param p1    # Landroid/hardware/scontext/SContextListener;
-    .param p2    # I
 
     new-instance v0, Landroid/hardware/scontext/SContextProperty;
 
@@ -748,9 +720,6 @@
 
 .method public registerListener(Landroid/hardware/scontext/SContextListener;II)Z
     .locals 4
-    .param p1    # Landroid/hardware/scontext/SContextListener;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v3, 0x2
 
@@ -858,11 +827,6 @@
 
 .method public registerListener(Landroid/hardware/scontext/SContextListener;IIDD)Z
     .locals 7
-    .param p1    # Landroid/hardware/scontext/SContextListener;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # D
-    .param p6    # D
 
     const/4 v6, 0x2
 
@@ -950,10 +914,6 @@
 
 .method public registerListener(Landroid/hardware/scontext/SContextListener;III)Z
     .locals 4
-    .param p1    # Landroid/hardware/scontext/SContextListener;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     new-instance v0, Landroid/hardware/scontext/SContextProperty;
 
@@ -1028,12 +988,6 @@
 
 .method public registerListener(Landroid/hardware/scontext/SContextListener;IIIDI)Z
     .locals 11
-    .param p1    # Landroid/hardware/scontext/SContextListener;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # D
-    .param p7    # I
 
     const/4 v10, 0x0
 
@@ -1103,11 +1057,6 @@
 
 .method public registerListener(Landroid/hardware/scontext/SContextListener;IIII)Z
     .locals 3
-    .param p1    # Landroid/hardware/scontext/SContextListener;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     const/4 v1, 0x0
 
@@ -1141,12 +1090,6 @@
 
 .method public registerListener(Landroid/hardware/scontext/SContextListener;IIIII)Z
     .locals 11
-    .param p1    # Landroid/hardware/scontext/SContextListener;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     const/4 v10, 0x0
 
@@ -1286,13 +1229,6 @@
 
 .method public registerListener(Landroid/hardware/scontext/SContextListener;IIIIII)Z
     .locals 3
-    .param p1    # Landroid/hardware/scontext/SContextListener;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
 
     const/4 v1, 0x0
 
@@ -1366,11 +1302,6 @@
 
 .method public registerListener(Landroid/hardware/scontext/SContextListener;IIIZ)Z
     .locals 6
-    .param p1    # Landroid/hardware/scontext/SContextListener;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Z
 
     const/16 v5, 0x7f
 
@@ -1452,9 +1383,6 @@
 
 .method public registerListener(Landroid/hardware/scontext/SContextListener;I[I)Z
     .locals 7
-    .param p1    # Landroid/hardware/scontext/SContextListener;
-    .param p2    # I
-    .param p3    # [I
 
     new-instance v3, Landroid/hardware/scontext/SContextProperty;
 
@@ -1534,10 +1462,6 @@
 
 .method public registerListener(Landroid/hardware/scontext/SContextListener;I[II)Z
     .locals 3
-    .param p1    # Landroid/hardware/scontext/SContextListener;
-    .param p2    # I
-    .param p3    # [I
-    .param p4    # I
 
     new-instance v0, Landroid/hardware/scontext/SContextProperty;
 
@@ -1565,8 +1489,6 @@
 
 .method public requestToUpdate(Landroid/hardware/scontext/SContextListener;I)V
     .locals 5
-    .param p1    # Landroid/hardware/scontext/SContextListener;
-    .param p2    # I
 
     invoke-virtual {p0, p2}, Landroid/hardware/scontext/SContextManager;->isAvailableService(I)Z
 
@@ -1677,9 +1599,6 @@
 
 .method public setReferenceData(I[B[B)Z
     .locals 5
-    .param p1    # I
-    .param p2    # [B
-    .param p3    # [B
 
     const/4 v1, 0x0
 
@@ -1752,7 +1671,6 @@
 
 .method public unregisterListener(Landroid/hardware/scontext/SContextListener;)V
     .locals 7
-    .param p1    # Landroid/hardware/scontext/SContextListener;
 
     if-eqz p1, :cond_0
 
@@ -1852,8 +1770,6 @@
 
 .method public unregisterListener(Landroid/hardware/scontext/SContextListener;I)V
     .locals 5
-    .param p1    # Landroid/hardware/scontext/SContextListener;
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Landroid/hardware/scontext/SContextManager;->checkListenerAndService(Landroid/hardware/scontext/SContextListener;I)Z
 

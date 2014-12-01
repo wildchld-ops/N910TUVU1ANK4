@@ -60,7 +60,6 @@
 
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -89,7 +88,6 @@
 
 .method public static initialize(Landroid/content/Context;)Lcom/android/launcher2/BadgeCountReceiver;
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     new-instance v0, Lcom/android/launcher2/BadgeCountReceiver;
 
@@ -112,8 +110,6 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 11
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     const/4 v10, 0x1
 

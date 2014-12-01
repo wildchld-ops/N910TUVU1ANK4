@@ -76,7 +76,6 @@
 
 .method public static createIMSCallFailError(Lcom/android/services/telephony/common/Call;)V
     .locals 2
-    .param p0    # Lcom/android/services/telephony/common/Call;
 
     const-string v1, "createIMSCallFailError"
 
@@ -111,7 +110,6 @@
 
 .method public static getDisconnectCauseAction_DCM(Lcom/android/services/telephony/common/Call;)Landroid/os/Bundle;
     .locals 14
-    .param p0    # Lcom/android/services/telephony/common/Call;
 
     new-instance v8, Landroid/os/Bundle;
 
@@ -440,7 +438,6 @@
 
 .method public static getDisconnectCauseAction_HK(Lcom/android/services/telephony/common/Call;)Landroid/os/Bundle;
     .locals 13
-    .param p0    # Lcom/android/services/telephony/common/Call;
 
     new-instance v7, Landroid/os/Bundle;
 
@@ -763,7 +760,6 @@
 
 .method public static getDisconnectCauseAction_KTT(Lcom/android/services/telephony/common/Call;)Landroid/os/Bundle;
     .locals 15
-    .param p0    # Lcom/android/services/telephony/common/Call;
 
     new-instance v8, Landroid/os/Bundle;
 
@@ -1570,7 +1566,6 @@
 
 .method public static getDisconnectCauseAction_KTT_UICC(Lcom/android/services/telephony/common/Call;)Landroid/os/Bundle;
     .locals 17
-    .param p0    # Lcom/android/services/telephony/common/Call;
 
     new-instance v9, Landroid/os/Bundle;
 
@@ -2482,7 +2477,6 @@
 
 .method public static getDisconnectCauseAction_LGT(Lcom/android/services/telephony/common/Call;)Landroid/os/Bundle;
     .locals 15
-    .param p0    # Lcom/android/services/telephony/common/Call;
 
     new-instance v8, Landroid/os/Bundle;
 
@@ -3346,7 +3340,6 @@
 
 .method public static getDisconnectCauseAction_LGT_UICC(Lcom/android/services/telephony/common/Call;)Landroid/os/Bundle;
     .locals 16
-    .param p0    # Lcom/android/services/telephony/common/Call;
 
     new-instance v8, Landroid/os/Bundle;
 
@@ -4385,7 +4378,6 @@
 
 .method public static getDisconnectCauseAction_SKT(Lcom/android/services/telephony/common/Call;)Landroid/os/Bundle;
     .locals 15
-    .param p0    # Lcom/android/services/telephony/common/Call;
 
     new-instance v8, Landroid/os/Bundle;
 
@@ -5282,7 +5274,6 @@
 
 .method public static getDisconnectCauseAction_SKT_UICC(Lcom/android/services/telephony/common/Call;)Landroid/os/Bundle;
     .locals 16
-    .param p0    # Lcom/android/services/telephony/common/Call;
 
     new-instance v8, Landroid/os/Bundle;
 
@@ -6261,7 +6252,6 @@
 
 .method private static getError(I)Ljava/lang/String;
     .locals 3
-    .param p0    # I
 
     const-string v0, ""
 
@@ -6305,7 +6295,6 @@
 
 .method private static getSIPErrorString(I)Ljava/lang/String;
     .locals 3
-    .param p0    # I
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -7326,7 +7315,6 @@
 
 .method public static handleDisconnectCause(Lcom/android/services/telephony/common/Call;)Landroid/os/Bundle;
     .locals 2
-    .param p0    # Lcom/android/services/telephony/common/Call;
 
     if-nez p0, :cond_0
 
@@ -7478,7 +7466,6 @@
 
 .method public static handlePSBaringEvent(Lcom/android/services/telephony/common/Call;)Landroid/os/Bundle;
     .locals 15
-    .param p0    # Lcom/android/services/telephony/common/Call;
 
     const/4 v12, 0x1
 
@@ -7925,7 +7912,6 @@
 
 .method public static setIMSCallFailErrorBundle(Landroid/os/Bundle;)V
     .locals 0
-    .param p0    # Landroid/os/Bundle;
 
     sput-object p0, Lcom/android/incallui/vt/PSVTCallUtils;->mImsCallFailErrorBundle:Landroid/os/Bundle;
 
@@ -7934,7 +7920,6 @@
 
 .method public static setPSBarringEventReceived(Z)V
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/incallui/vt/PSVTCallUtils;->mPSBarringEventReceived:Z
 

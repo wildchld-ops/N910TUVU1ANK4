@@ -45,7 +45,7 @@
 
     const-string v2, "connectivity"
 
-    invoke-virtual {v1, v2}, Landroid/app/Activity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v1, v2}, Lcom/android/phone/MobileNetworkSettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -71,7 +71,7 @@
 
     move-result v2
 
-    invoke-virtual {v1, v2}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+    invoke-virtual {v1, v2}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     :cond_0
     return-void

@@ -30,8 +30,6 @@
 # direct methods
 .method constructor <init>(Landroid/hardware/location/GeofenceHardwareImpl;Landroid/hardware/location/IGeofenceHardwareCallback;I)V
     .locals 0
-    .param p2    # Landroid/hardware/location/IGeofenceHardwareCallback;
-    .param p3    # I
 
     iput-object p1, p0, Landroid/hardware/location/GeofenceHardwareImpl$Reaper;->this$0:Landroid/hardware/location/GeofenceHardwareImpl;
 
@@ -46,8 +44,6 @@
 
 .method constructor <init>(Landroid/hardware/location/GeofenceHardwareImpl;Landroid/hardware/location/IGeofenceHardwareMonitorCallback;I)V
     .locals 0
-    .param p2    # Landroid/hardware/location/IGeofenceHardwareMonitorCallback;
-    .param p3    # I
 
     iput-object p1, p0, Landroid/hardware/location/GeofenceHardwareImpl$Reaper;->this$0:Landroid/hardware/location/GeofenceHardwareImpl;
 
@@ -161,7 +157,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 5
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x1
 

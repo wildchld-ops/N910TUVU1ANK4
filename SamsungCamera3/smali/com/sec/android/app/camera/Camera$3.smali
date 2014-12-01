@@ -36,7 +36,6 @@
 # virtual methods
 .method public onAccessibilityStateChanged(Z)V
     .locals 3
-    .param p1    # Z
 
     if-nez p1, :cond_0
 

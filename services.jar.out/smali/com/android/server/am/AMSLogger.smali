@@ -111,11 +111,6 @@
 
 .method private static copyStackTraceToAMSLog(ILjava/lang/String;Ljava/lang/String;JLjava/lang/String;)V
     .locals 18
-    .param p0    # I
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # J
-    .param p5    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -573,7 +568,6 @@
 
 .method private static getTraceFileSize(Ljava/lang/String;)J
     .locals 7
-    .param p0    # Ljava/lang/String;
 
     const/4 v6, 0x1
 
@@ -704,14 +698,6 @@
 # virtual methods
 .method public log(ZLandroid/content/pm/ApplicationInfo;ZLandroid/content/pm/ApplicationInfo;ZZLandroid/content/Intent;I)V
     .locals 6
-    .param p1    # Z
-    .param p2    # Landroid/content/pm/ApplicationInfo;
-    .param p3    # Z
-    .param p4    # Landroid/content/pm/ApplicationInfo;
-    .param p5    # Z
-    .param p6    # Z
-    .param p7    # Landroid/content/Intent;
-    .param p8    # I
 
     const/4 v5, 0x1
 
@@ -1272,8 +1258,6 @@
 
 .method public logStackTrace(ILjava/lang/String;)V
     .locals 10
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const-string v0, "dalvik.vm.stack-trace-file"
 

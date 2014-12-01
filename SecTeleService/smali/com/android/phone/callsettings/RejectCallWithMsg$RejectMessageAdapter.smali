@@ -274,7 +274,7 @@
 
     iget-object v2, p0, Lcom/android/phone/callsettings/RejectCallWithMsg$RejectMessageAdapter;->this$0:Lcom/android/phone/callsettings/RejectCallWithMsg;
 
-    invoke-virtual {v0, p1}, Landroid/widget/AbsListView;->isItemChecked(I)Z
+    invoke-virtual {v0, p1}, Landroid/widget/ListView;->isItemChecked(I)Z
 
     move-result v3
 

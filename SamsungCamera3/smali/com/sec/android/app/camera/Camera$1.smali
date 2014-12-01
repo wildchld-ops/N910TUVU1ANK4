@@ -33,7 +33,6 @@
 # virtual methods
 .method public onBridgeStatusChanged(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "TAG"
 

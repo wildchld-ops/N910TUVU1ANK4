@@ -61,8 +61,6 @@
 
 .method synthetic constructor <init>(Landroid/hardware/camera2/CameraManager;Landroid/hardware/camera2/CameraManager$1;)V
     .locals 0
-    .param p1    # Landroid/hardware/camera2/CameraManager;
-    .param p2    # Landroid/hardware/camera2/CameraManager$1;
 
     invoke-direct {p0, p1}, Landroid/hardware/camera2/CameraManager$CameraServiceListener;-><init>(Landroid/hardware/camera2/CameraManager;)V
 
@@ -71,7 +69,6 @@
 
 .method private isAvailable(I)Z
     .locals 1
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -95,7 +92,6 @@
 
 .method private validStatus(I)Z
     .locals 1
-    .param p1    # I
 
     sparse-switch p1, :sswitch_data_0
 
@@ -130,8 +126,6 @@
 
 .method public onStatusChanged(II)V
     .locals 12
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

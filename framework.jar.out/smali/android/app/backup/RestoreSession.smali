@@ -26,8 +26,6 @@
 # direct methods
 .method constructor <init>(Landroid/content/Context;Landroid/app/backup/IRestoreSession;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/app/backup/IRestoreSession;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -86,7 +84,6 @@
 
 .method public getAvailableRestoreSets(Landroid/app/backup/RestoreObserver;)I
     .locals 5
-    .param p1    # Landroid/app/backup/RestoreObserver;
 
     const/4 v1, -0x1
 
@@ -122,8 +119,6 @@
 
 .method public restoreAll(JLandroid/app/backup/RestoreObserver;)I
     .locals 4
-    .param p1    # J
-    .param p3    # Landroid/app/backup/RestoreObserver;
 
     const/4 v1, -0x1
 
@@ -181,8 +176,6 @@
 
 .method public restorePackage(Ljava/lang/String;Landroid/app/backup/RestoreObserver;)I
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/app/backup/RestoreObserver;
 
     const/4 v1, -0x1
 
@@ -240,9 +233,6 @@
 
 .method public restoreSome(JLandroid/app/backup/RestoreObserver;[Ljava/lang/String;)I
     .locals 4
-    .param p1    # J
-    .param p3    # Landroid/app/backup/RestoreObserver;
-    .param p4    # [Ljava/lang/String;
 
     const/4 v1, -0x1
 

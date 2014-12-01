@@ -172,7 +172,6 @@
 
 .method static synthetic access$000(Landroid/preference/PreferenceActivity;)V
     .locals 0
-    .param p0    # Landroid/preference/PreferenceActivity;
 
     invoke-direct {p0}, Landroid/preference/PreferenceActivity;->bindPreferences()V
 
@@ -181,7 +180,6 @@
 
 .method static synthetic access$100(Landroid/preference/PreferenceActivity;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Landroid/preference/PreferenceActivity;
 
     iget-object v0, p0, Landroid/preference/PreferenceActivity;->mHeaders:Ljava/util/ArrayList;
 
@@ -190,7 +188,6 @@
 
 .method static synthetic access$1000(Landroid/preference/PreferenceActivity;)Z
     .locals 1
-    .param p0    # Landroid/preference/PreferenceActivity;
 
     iget-boolean v0, p0, Landroid/preference/PreferenceActivity;->mUpdateLayoutBySplitChange:Z
 
@@ -199,8 +196,6 @@
 
 .method static synthetic access$1002(Landroid/preference/PreferenceActivity;Z)Z
     .locals 0
-    .param p0    # Landroid/preference/PreferenceActivity;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/preference/PreferenceActivity;->mUpdateLayoutBySplitChange:Z
 
@@ -209,7 +204,6 @@
 
 .method static synthetic access$1102(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Landroid/preference/PreferenceActivity;->mUserUpdateSplit:Z
 
@@ -226,7 +220,6 @@
 
 .method static synthetic access$1202(F)F
     .locals 0
-    .param p0    # F
 
     sput p0, Landroid/preference/PreferenceActivity;->mSplitBarMovedLeftWeight:F
 
@@ -235,7 +228,6 @@
 
 .method static synthetic access$200(Landroid/preference/PreferenceActivity;)Landroid/widget/ListAdapter;
     .locals 1
-    .param p0    # Landroid/preference/PreferenceActivity;
 
     iget-object v0, p0, Landroid/app/ListActivity;->mAdapter:Landroid/widget/ListAdapter;
 
@@ -244,7 +236,6 @@
 
 .method static synthetic access$300(Landroid/preference/PreferenceActivity;)Landroid/widget/ListAdapter;
     .locals 1
-    .param p0    # Landroid/preference/PreferenceActivity;
 
     iget-object v0, p0, Landroid/app/ListActivity;->mAdapter:Landroid/widget/ListAdapter;
 
@@ -253,7 +244,6 @@
 
 .method static synthetic access$400(Landroid/preference/PreferenceActivity;)Landroid/preference/PreferenceActivity$Header;
     .locals 1
-    .param p0    # Landroid/preference/PreferenceActivity;
 
     iget-object v0, p0, Landroid/preference/PreferenceActivity;->mCurHeader:Landroid/preference/PreferenceActivity$Header;
 
@@ -262,7 +252,6 @@
 
 .method static synthetic access$600(Landroid/preference/PreferenceActivity;)Z
     .locals 1
-    .param p0    # Landroid/preference/PreferenceActivity;
 
     iget-boolean v0, p0, Landroid/preference/PreferenceActivity;->mEnableSplitBar:Z
 
@@ -271,7 +260,6 @@
 
 .method static synthetic access$700(Landroid/preference/PreferenceActivity;)Z
     .locals 1
-    .param p0    # Landroid/preference/PreferenceActivity;
 
     iget-boolean v0, p0, Landroid/preference/PreferenceActivity;->mIsDeviceDefault:Z
 
@@ -280,7 +268,6 @@
 
 .method static synthetic access$800(Landroid/preference/PreferenceActivity;)Landroid/view/View;
     .locals 1
-    .param p0    # Landroid/preference/PreferenceActivity;
 
     iget-object v0, p0, Landroid/preference/PreferenceActivity;->mSplitBarView:Landroid/view/View;
 
@@ -289,7 +276,6 @@
 
 .method static synthetic access$900(Landroid/preference/PreferenceActivity;)Landroid/view/ViewGroup;
     .locals 1
-    .param p0    # Landroid/preference/PreferenceActivity;
 
     iget-object v0, p0, Landroid/preference/PreferenceActivity;->mPrefsContainer:Landroid/view/ViewGroup;
 
@@ -389,9 +375,6 @@
 
 .method private switchToHeaderInner(Ljava/lang/String;Landroid/os/Bundle;I)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Bundle;
-    .param p3    # I
 
     invoke-virtual {p0}, Landroid/app/Activity;->getFragmentManager()Landroid/app/FragmentManager;
 
@@ -463,7 +446,6 @@
 # virtual methods
 .method public addPreferencesFromIntent(Landroid/content/Intent;)V
     .locals 2
-    .param p1    # Landroid/content/Intent;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -486,7 +468,6 @@
 
 .method public addPreferencesFromResource(I)V
     .locals 2
-    .param p1    # I
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -509,7 +490,6 @@
 
 .method findBestMatchingHeader(Landroid/preference/PreferenceActivity$Header;Ljava/util/ArrayList;)Landroid/preference/PreferenceActivity$Header;
     .locals 9
-    .param p1    # Landroid/preference/PreferenceActivity$Header;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -719,7 +699,6 @@
 
 .method public findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -744,9 +723,6 @@
 
 .method public finishPreferencePanel(Landroid/app/Fragment;ILandroid/content/Intent;)V
     .locals 2
-    .param p1    # Landroid/app/Fragment;
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     iget-boolean v0, p0, Landroid/preference/PreferenceActivity;->mSinglePane:Z
 
@@ -940,7 +916,6 @@
 
 .method protected isValidFragment(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Landroid/content/ContextWrapper;->getApplicationInfo()Landroid/content/pm/ApplicationInfo;
 
@@ -1008,7 +983,6 @@
 
 .method public loadHeadersFromResource(ILjava/util/List;)V
     .locals 16
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -1556,9 +1530,6 @@
 
 .method protected onActivityResult(IILandroid/content/Intent;)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     invoke-super {p0, p1, p2, p3}, Landroid/app/Activity;->onActivityResult(IILandroid/content/Intent;)V
 
@@ -1591,10 +1562,6 @@
 
 .method public onBuildStartFragmentIntent(Ljava/lang/String;Landroid/os/Bundle;II)Landroid/content/Intent;
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Bundle;
-    .param p3    # I
-    .param p4    # I
 
     new-instance v0, Landroid/content/Intent;
 
@@ -1635,7 +1602,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 7
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -1736,7 +1702,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 32
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super/range {p0 .. p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
@@ -3053,8 +3018,6 @@
 
 .method public onHeaderClick(Landroid/preference/PreferenceActivity$Header;I)V
     .locals 7
-    .param p1    # Landroid/preference/PreferenceActivity$Header;
-    .param p2    # I
 
     iget-object v0, p1, Landroid/preference/PreferenceActivity$Header;->fragment:Ljava/lang/String;
 
@@ -3159,10 +3122,6 @@
 
 .method protected onListItemClick(Landroid/widget/ListView;Landroid/view/View;IJ)V
     .locals 2
-    .param p1    # Landroid/widget/ListView;
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
 
     invoke-virtual {p0}, Landroid/app/Activity;->isResumed()Z
 
@@ -3200,7 +3159,6 @@
 
 .method protected onNewIntent(Landroid/content/Intent;)V
     .locals 1
-    .param p1    # Landroid/content/Intent;
 
     iget-object v0, p0, Landroid/preference/PreferenceActivity;->mPreferenceManager:Landroid/preference/PreferenceManager;
 
@@ -3216,8 +3174,6 @@
 
 .method public onPreferenceStartFragment(Landroid/preference/PreferenceFragment;Landroid/preference/Preference;)Z
     .locals 7
-    .param p1    # Landroid/preference/PreferenceFragment;
-    .param p2    # Landroid/preference/Preference;
 
     invoke-virtual {p2}, Landroid/preference/Preference;->getFragment()Ljava/lang/String;
 
@@ -3250,8 +3206,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 1
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -3262,7 +3216,6 @@
 
 .method protected onRestoreInstanceState(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     iget-object v2, p0, Landroid/preference/PreferenceActivity;->mPreferenceManager:Landroid/preference/PreferenceManager;
 
@@ -3297,7 +3250,6 @@
 
 .method protected onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onSaveInstanceState(Landroid/os/Bundle;)V
 
@@ -3377,7 +3329,6 @@
 
 .method protected setActionBarShadow(Z)V
     .locals 7
-    .param p1    # Z
 
     const/4 v6, 0x0
 
@@ -3451,7 +3402,6 @@
 
 .method public setEnableSplitBar(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/preference/PreferenceActivity;->mEnableSplitBar:Z
 
@@ -3460,7 +3410,6 @@
 
 .method public setListFooter(Landroid/view/View;)V
     .locals 4
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Landroid/preference/PreferenceActivity;->mListFooter:Landroid/widget/FrameLayout;
 
@@ -3483,7 +3432,6 @@
 
 .method protected setMultiPane(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/preference/PreferenceActivity;->mIsMultiPane:Z
 
@@ -3492,9 +3440,6 @@
 
 .method public setParentTitle(Ljava/lang/CharSequence;Ljava/lang/CharSequence;Landroid/view/View$OnClickListener;)V
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Ljava/lang/CharSequence;
-    .param p3    # Landroid/view/View$OnClickListener;
 
     iget-object v0, p0, Landroid/preference/PreferenceActivity;->mFragmentBreadCrumbs:Landroid/app/FragmentBreadCrumbs;
 
@@ -3510,7 +3455,6 @@
 
 .method public setPreferenceScreen(Landroid/preference/PreferenceScreen;)V
     .locals 2
-    .param p1    # Landroid/preference/PreferenceScreen;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -3546,7 +3490,6 @@
 
 .method setSelectedHeader(Landroid/preference/PreferenceActivity$Header;)V
     .locals 3
-    .param p1    # Landroid/preference/PreferenceActivity$Header;
 
     iput-object p1, p0, Landroid/preference/PreferenceActivity;->mCurHeader:Landroid/preference/PreferenceActivity$Header;
 
@@ -3600,7 +3543,6 @@
 
 .method showBreadCrumbs(Landroid/preference/PreferenceActivity$Header;)V
     .locals 3
-    .param p1    # Landroid/preference/PreferenceActivity$Header;
 
     if-eqz p1, :cond_2
 
@@ -3657,8 +3599,6 @@
 
 .method public showBreadCrumbs(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)V
     .locals 6
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Ljava/lang/CharSequence;
 
     const/16 v4, 0x8
 
@@ -3760,8 +3700,6 @@
 
 .method public startPreferenceFragment(Landroid/app/Fragment;Z)V
     .locals 2
-    .param p1    # Landroid/app/Fragment;
-    .param p2    # Z
 
     invoke-virtual {p0}, Landroid/app/Activity;->getFragmentManager()Landroid/app/FragmentManager;
 
@@ -3800,12 +3738,6 @@
 
 .method public startPreferencePanel(Ljava/lang/String;Landroid/os/Bundle;ILjava/lang/CharSequence;Landroid/app/Fragment;I)V
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Bundle;
-    .param p3    # I
-    .param p4    # Ljava/lang/CharSequence;
-    .param p5    # Landroid/app/Fragment;
-    .param p6    # I
 
     iget-boolean v0, p0, Landroid/preference/PreferenceActivity;->mSinglePane:Z
 
@@ -3880,10 +3812,6 @@
 
 .method public startWithFragment(Ljava/lang/String;Landroid/os/Bundle;Landroid/app/Fragment;I)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Bundle;
-    .param p3    # Landroid/app/Fragment;
-    .param p4    # I
 
     const/4 v5, 0x0
 
@@ -3906,12 +3834,6 @@
 
 .method public startWithFragment(Ljava/lang/String;Landroid/os/Bundle;Landroid/app/Fragment;III)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Bundle;
-    .param p3    # Landroid/app/Fragment;
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     invoke-virtual {p0, p1, p2, p5, p6}, Landroid/preference/PreferenceActivity;->onBuildStartFragmentIntent(Ljava/lang/String;Landroid/os/Bundle;II)Landroid/content/Intent;
 
@@ -3932,7 +3854,6 @@
 
 .method public switchToHeader(Landroid/preference/PreferenceActivity$Header;)V
     .locals 4
-    .param p1    # Landroid/preference/PreferenceActivity$Header;
 
     iget-object v1, p0, Landroid/preference/PreferenceActivity;->mCurHeader:Landroid/preference/PreferenceActivity$Header;
 
@@ -3994,8 +3915,6 @@
 
 .method public switchToHeader(Ljava/lang/String;Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Bundle;
 
     const/4 v0, 0x0
 

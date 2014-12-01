@@ -54,7 +54,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     const/4 v2, 0x1
 
@@ -109,8 +108,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v2, 0x1
 
@@ -165,9 +162,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v2, 0x1
 
@@ -267,7 +261,6 @@
 
 .method static synthetic access$000(Lcom/android/incallui/InCallPhotoView;)Landroid/graphics/Bitmap;
     .locals 1
-    .param p0    # Lcom/android/incallui/InCallPhotoView;
 
     iget-object v0, p0, Lcom/android/incallui/InCallPhotoView;->mBlurredBitmap:Landroid/graphics/Bitmap;
 
@@ -276,7 +269,6 @@
 
 .method static synthetic access$100(Lcom/android/incallui/InCallPhotoView;)V
     .locals 0
-    .param p0    # Lcom/android/incallui/InCallPhotoView;
 
     invoke-direct {p0}, Lcom/android/incallui/InCallPhotoView;->ApplyBlurEffect()V
 
@@ -285,7 +277,6 @@
 
 .method static synthetic access$200(Lcom/android/incallui/InCallPhotoView;)V
     .locals 0
-    .param p0    # Lcom/android/incallui/InCallPhotoView;
 
     invoke-direct {p0}, Lcom/android/incallui/InCallPhotoView;->ApplyHighQualityPhoto()V
 
@@ -294,8 +285,6 @@
 
 .method static synthetic access$300(Lcom/android/incallui/InCallPhotoView;Landroid/graphics/drawable/Drawable;)V
     .locals 0
-    .param p0    # Lcom/android/incallui/InCallPhotoView;
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     invoke-direct {p0, p1}, Lcom/android/incallui/InCallPhotoView;->makeBlurEffectIfNeeded(Landroid/graphics/drawable/Drawable;)V
 
@@ -304,9 +293,6 @@
 
 .method public static fastblur(Landroid/content/Context;Landroid/graphics/Bitmap;I)Landroid/graphics/Bitmap;
     .locals 8
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # I
 
     const/4 v5, 0x0
 
@@ -384,8 +370,6 @@
 
 .method private initFromAttributest(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v4, 0x1
 
@@ -604,7 +588,6 @@
 
 .method private makeBlurEffectIfNeeded(Landroid/graphics/drawable/Drawable;)V
     .locals 10
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     const-string v7, "InCallPhotoView"
 
@@ -1005,7 +988,6 @@
 
 .method protected onDraw(Landroid/graphics/Canvas;)V
     .locals 11
-    .param p1    # Landroid/graphics/Canvas;
 
     const/4 v9, 0x0
 
@@ -1236,7 +1218,6 @@
 
 .method public setBlurEffect(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/incallui/InCallPhotoView;->mIsBlurEffectOn:Z
 
@@ -1245,7 +1226,6 @@
 
 .method public setBlurEffectAlways(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/incallui/InCallPhotoView;->mIsBlurEffectAlwaysOn:Z
 
@@ -1254,7 +1234,6 @@
 
 .method public setImageBitmap(Landroid/graphics/Bitmap;)V
     .locals 2
-    .param p1    # Landroid/graphics/Bitmap;
     .annotation runtime Landroid/view/RemotableViewMethod;
     .end annotation
 
@@ -1271,7 +1250,6 @@
 
 .method public setImageDrawable(Landroid/graphics/drawable/Drawable;)V
     .locals 3
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     const-string v1, "InCallPhotoView"
 
@@ -1326,7 +1304,6 @@
 
 .method public setImageResource(I)V
     .locals 2
-    .param p1    # I
 
     const-string v0, "InCallPhotoView"
 

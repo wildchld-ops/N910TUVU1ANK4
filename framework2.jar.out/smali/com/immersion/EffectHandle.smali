@@ -12,8 +12,6 @@
 # direct methods
 .method protected constructor <init>(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -104,7 +102,6 @@
 
 .method public modifyPlayingMagSweepEffect(Lcom/immersion/MagSweepEffectDefinition;)V
     .locals 10
-    .param p1    # Lcom/immersion/MagSweepEffectDefinition;
 
     invoke-static {}, Lcom/immersion/ImmVibe;->getInstance()Lcom/immersion/ImmVibe;
 
@@ -149,7 +146,6 @@
 
 .method public modifyPlayingPeriodicEffect(Lcom/immersion/PeriodicEffectDefinition;)V
     .locals 11
-    .param p1    # Lcom/immersion/PeriodicEffectDefinition;
 
     invoke-static {}, Lcom/immersion/ImmVibe;->getInstance()Lcom/immersion/ImmVibe;
 
@@ -214,8 +210,6 @@
 
 .method public playStreamingSample([BI)V
     .locals 3
-    .param p1    # [B
-    .param p2    # I
 
     invoke-static {}, Lcom/immersion/ImmVibe;->getInstance()Lcom/immersion/ImmVibe;
 
@@ -232,9 +226,6 @@
 
 .method public playStreamingSampleWithOffset([BII)V
     .locals 6
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
 
     invoke-static {}, Lcom/immersion/ImmVibe;->getInstance()Lcom/immersion/ImmVibe;
 

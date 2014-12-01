@@ -42,7 +42,6 @@
 
 .method public static buildDisabledSystemInputMethods(Ljava/lang/StringBuilder;Ljava/util/HashSet;)V
     .locals 4
-    .param p0    # Ljava/lang/StringBuilder;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -95,8 +94,6 @@
 
 .method private static buildEnabledInputMethodsString(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/util/HashSet;)V
     .locals 3
-    .param p0    # Ljava/lang/StringBuilder;
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -144,7 +141,6 @@
 
 .method public static buildInputMethodsAndSubtypesString(Ljava/lang/StringBuilder;Ljava/util/HashMap;)V
     .locals 4
-    .param p0    # Ljava/lang/StringBuilder;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -210,7 +206,6 @@
 
 .method private static getDisabledSystemIMEs(Landroid/content/ContentResolver;)Ljava/util/HashSet;
     .locals 3
-    .param p0    # Landroid/content/ContentResolver;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -269,7 +264,6 @@
 
 .method private static getEnabledInputMethodsAndSubtypeList(Landroid/content/ContentResolver;)Ljava/util/HashMap;
     .locals 6
-    .param p0    # Landroid/content/ContentResolver;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -374,7 +368,6 @@
 
 .method private static getInputMethodSubtypeSelected(Landroid/content/ContentResolver;)I
     .locals 2
-    .param p0    # Landroid/content/ContentResolver;
 
     :try_start_0
     const-string v1, "selected_input_method_subtype"
@@ -398,7 +391,6 @@
 
 .method private static isInputMethodSubtypeSelected(Landroid/content/ContentResolver;)Z
     .locals 2
-    .param p0    # Landroid/content/ContentResolver;
 
     invoke-static {p0}, Lcom/android/settings/inputmethod/InputMethodAndSubtypeUtil;->getInputMethodSubtypeSelected(Landroid/content/ContentResolver;)I
 
@@ -421,8 +413,6 @@
 
 .method public static loadInputMethodSubtypeList(Lcom/android/settings/SettingsPreferenceFragment;Landroid/content/ContentResolver;Ljava/util/List;Ljava/util/Map;)V
     .locals 10
-    .param p0    # Lcom/android/settings/SettingsPreferenceFragment;
-    .param p1    # Landroid/content/ContentResolver;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -530,8 +520,6 @@
 
 .method private static putSelectedInputMethodSubtype(Landroid/content/ContentResolver;I)V
     .locals 1
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # I
 
     const-string v0, "selected_input_method_subtype"
 
@@ -542,9 +530,6 @@
 
 .method public static saveInputMethodSubtypeList(Lcom/android/settings/SettingsPreferenceFragment;Landroid/content/ContentResolver;Ljava/util/List;Z)V
     .locals 27
-    .param p0    # Lcom/android/settings/SettingsPreferenceFragment;
-    .param p1    # Landroid/content/ContentResolver;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -924,9 +909,6 @@
 
 .method public static setSubtypesPreferenceEnabled(Lcom/android/settings/SettingsPreferenceFragment;Ljava/util/List;Ljava/lang/String;Z)V
     .locals 9
-    .param p0    # Lcom/android/settings/SettingsPreferenceFragment;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1025,7 +1007,6 @@
 
 .method public static updateSubtypesPreferenceChecked(Lcom/android/settings/SettingsPreferenceFragment;Ljava/util/List;Ljava/util/HashMap;)V
     .locals 11
-    .param p0    # Lcom/android/settings/SettingsPreferenceFragment;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

@@ -36,8 +36,6 @@
 
 .method public onRoutePresentationDisplayChanged(Landroid/media/MediaRouter;Landroid/media/MediaRouter$RouteInfo;)V
     .locals 0
-    .param p1    # Landroid/media/MediaRouter;
-    .param p2    # Landroid/media/MediaRouter$RouteInfo;
 
     return-void
 .end method

@@ -148,7 +148,6 @@
 
 .method private constructor <init>(I)V
     .locals 0
-    .param p1    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -217,7 +216,6 @@
 
 .method private init(I)V
     .locals 1
-    .param p1    # I
 
     if-eqz p1, :cond_0
 
@@ -405,7 +403,6 @@
 
 .method protected static final obtain(I)Landroid/os/Parcel;
     .locals 4
-    .param p0    # I
 
     sget-object v2, Landroid/os/Parcel;->sHolderPool:[Landroid/os/Parcel;
 
@@ -471,9 +468,6 @@
 
 .method private readArrayInternal([Ljava/lang/Object;ILjava/lang/ClassLoader;)V
     .locals 2
-    .param p1    # [Ljava/lang/Object;
-    .param p2    # I
-    .param p3    # Ljava/lang/ClassLoader;
 
     const/4 v0, 0x0
 
@@ -496,9 +490,6 @@
 
 .method private readListInternal(Ljava/util/List;ILjava/lang/ClassLoader;)V
     .locals 1
-    .param p1    # Ljava/util/List;
-    .param p2    # I
-    .param p3    # Ljava/lang/ClassLoader;
 
     :goto_0
     if-lez p2, :cond_0
@@ -519,9 +510,6 @@
 
 .method private readSparseArrayInternal(Landroid/util/SparseArray;ILjava/lang/ClassLoader;)V
     .locals 2
-    .param p1    # Landroid/util/SparseArray;
-    .param p2    # I
-    .param p3    # Ljava/lang/ClassLoader;
 
     :goto_0
     if-lez p2, :cond_0
@@ -546,8 +534,6 @@
 
 .method private readSparseBooleanArrayInternal(Landroid/util/SparseBooleanArray;I)V
     .locals 4
-    .param p1    # Landroid/util/SparseBooleanArray;
-    .param p2    # I
 
     const/4 v2, 0x1
 
@@ -586,9 +572,6 @@
 # virtual methods
 .method public final appendFrom(Landroid/os/Parcel;II)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
-    .param p3    # I
 
     iget v0, p0, Landroid/os/Parcel;->mNativePtr:I
 
@@ -1178,7 +1161,6 @@
 
 .method public final enforceInterface(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget v0, p0, Landroid/os/Parcel;->mNativePtr:I
 
@@ -1226,7 +1208,6 @@
 
 .method public final pushAllowFds(Z)Z
     .locals 1
-    .param p1    # Z
 
     iget v0, p0, Landroid/os/Parcel;->mNativePtr:I
 
@@ -1239,7 +1220,6 @@
 
 .method public final readArray(Ljava/lang/ClassLoader;)[Ljava/lang/Object;
     .locals 2
-    .param p1    # Ljava/lang/ClassLoader;
 
     invoke-virtual {p0}, Landroid/os/Parcel;->readInt()I
 
@@ -1262,7 +1242,6 @@
 
 .method public final readArrayList(Ljava/lang/ClassLoader;)Ljava/util/ArrayList;
     .locals 2
-    .param p1    # Ljava/lang/ClassLoader;
 
     invoke-virtual {p0}, Landroid/os/Parcel;->readInt()I
 
@@ -1287,9 +1266,6 @@
 
 .method readArrayMapInternal(Landroid/util/ArrayMap;ILjava/lang/ClassLoader;)V
     .locals 2
-    .param p1    # Landroid/util/ArrayMap;
-    .param p2    # I
-    .param p3    # Ljava/lang/ClassLoader;
 
     :goto_0
     if-lez p2, :cond_0
@@ -1314,9 +1290,6 @@
 
 .method readArrayMapSafelyInternal(Landroid/util/ArrayMap;ILjava/lang/ClassLoader;)V
     .locals 2
-    .param p1    # Landroid/util/ArrayMap;
-    .param p2    # I
-    .param p3    # Ljava/lang/ClassLoader;
 
     :goto_0
     if-lez p2, :cond_0
@@ -1341,7 +1314,6 @@
 
 .method public final readBinderArray([Landroid/os/IBinder;)V
     .locals 4
-    .param p1    # [Landroid/os/IBinder;
 
     invoke-virtual {p0}, Landroid/os/Parcel;->readInt()I
 
@@ -1446,7 +1418,6 @@
 
 .method public final readBooleanArray([Z)V
     .locals 4
-    .param p1    # [Z
 
     invoke-virtual {p0}, Landroid/os/Parcel;->readInt()I
 
@@ -1508,7 +1479,6 @@
 
 .method public final readBundle(Ljava/lang/ClassLoader;)Landroid/os/Bundle;
     .locals 2
-    .param p1    # Ljava/lang/ClassLoader;
 
     invoke-virtual {p0}, Landroid/os/Parcel;->readInt()I
 
@@ -1550,7 +1520,6 @@
 
 .method public final readByteArray([B)V
     .locals 4
-    .param p1    # [B
 
     const/4 v3, 0x0
 
@@ -1582,7 +1551,6 @@
 
 .method public final readCharArray([C)V
     .locals 4
-    .param p1    # [C
 
     invoke-virtual {p0}, Landroid/os/Parcel;->readInt()I
 
@@ -1670,7 +1638,6 @@
 
 .method public final readCreator(Landroid/os/Parcelable$Creator;Ljava/lang/ClassLoader;)Landroid/os/Parcelable;
     .locals 1
-    .param p2    # Ljava/lang/ClassLoader;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T::",
@@ -1722,7 +1689,6 @@
 
 .method public final readDoubleArray([D)V
     .locals 4
-    .param p1    # [D
 
     invoke-virtual {p0}, Landroid/os/Parcel;->readInt()I
 
@@ -1781,8 +1747,6 @@
 
 .method public final readException(ILjava/lang/String;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     packed-switch p1, :pswitch_data_0
 
@@ -1946,7 +1910,6 @@
 
 .method public final readFloatArray([F)V
     .locals 4
-    .param p1    # [F
 
     invoke-virtual {p0}, Landroid/os/Parcel;->readInt()I
 
@@ -1986,7 +1949,6 @@
 
 .method public final readHashMap(Ljava/lang/ClassLoader;)Ljava/util/HashMap;
     .locals 2
-    .param p1    # Ljava/lang/ClassLoader;
 
     invoke-virtual {p0}, Landroid/os/Parcel;->readInt()I
 
@@ -2023,7 +1985,6 @@
 
 .method public final readIntArray([I)V
     .locals 4
-    .param p1    # [I
 
     invoke-virtual {p0}, Landroid/os/Parcel;->readInt()I
 
@@ -2063,8 +2024,6 @@
 
 .method public final readList(Ljava/util/List;Ljava/lang/ClassLoader;)V
     .locals 1
-    .param p1    # Ljava/util/List;
-    .param p2    # Ljava/lang/ClassLoader;
 
     invoke-virtual {p0}, Landroid/os/Parcel;->readInt()I
 
@@ -2089,7 +2048,6 @@
 
 .method public final readLongArray([J)V
     .locals 4
-    .param p1    # [J
 
     invoke-virtual {p0}, Landroid/os/Parcel;->readInt()I
 
@@ -2129,8 +2087,6 @@
 
 .method public final readMap(Ljava/util/Map;Ljava/lang/ClassLoader;)V
     .locals 1
-    .param p1    # Ljava/util/Map;
-    .param p2    # Ljava/lang/ClassLoader;
 
     invoke-virtual {p0}, Landroid/os/Parcel;->readInt()I
 
@@ -2143,9 +2099,6 @@
 
 .method readMapInternal(Ljava/util/Map;ILjava/lang/ClassLoader;)V
     .locals 2
-    .param p1    # Ljava/util/Map;
-    .param p2    # I
-    .param p3    # Ljava/lang/ClassLoader;
 
     :goto_0
     if-lez p2, :cond_0
@@ -2170,7 +2123,6 @@
 
 .method public final readParcelable(Ljava/lang/ClassLoader;)Landroid/os/Parcelable;
     .locals 2
-    .param p1    # Ljava/lang/ClassLoader;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T::",
@@ -2219,7 +2171,6 @@
 
 .method public final readParcelableArray(Ljava/lang/ClassLoader;)[Landroid/os/Parcelable;
     .locals 4
-    .param p1    # Ljava/lang/ClassLoader;
 
     invoke-virtual {p0}, Landroid/os/Parcel;->readInt()I
 
@@ -2253,7 +2204,6 @@
 
 .method public final readParcelableCreator(Ljava/lang/ClassLoader;)Landroid/os/Parcelable$Creator;
     .locals 10
-    .param p1    # Ljava/lang/ClassLoader;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T::",
@@ -2705,7 +2655,6 @@
 
 .method public final readSparseArray(Ljava/lang/ClassLoader;)Landroid/util/SparseArray;
     .locals 2
-    .param p1    # Ljava/lang/ClassLoader;
 
     invoke-virtual {p0}, Landroid/os/Parcel;->readInt()I
 
@@ -2766,7 +2715,6 @@
 
 .method public final readStringArray([Ljava/lang/String;)V
     .locals 4
-    .param p1    # [Ljava/lang/String;
 
     invoke-virtual {p0}, Landroid/os/Parcel;->readInt()I
 
@@ -3092,7 +3040,6 @@
 
 .method public final readValue(Ljava/lang/ClassLoader;)Ljava/lang/Object;
     .locals 5
-    .param p1    # Ljava/lang/ClassLoader;
 
     const/4 v2, 0x1
 
@@ -3471,7 +3418,6 @@
 
 .method public final restoreAllowFds(Z)V
     .locals 1
-    .param p1    # Z
 
     iget v0, p0, Landroid/os/Parcel;->mNativePtr:I
 
@@ -3482,7 +3428,6 @@
 
 .method public final setDataCapacity(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/os/Parcel;->mNativePtr:I
 
@@ -3493,7 +3438,6 @@
 
 .method public final setDataPosition(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/os/Parcel;->mNativePtr:I
 
@@ -3504,7 +3448,6 @@
 
 .method public final setDataSize(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/os/Parcel;->mNativePtr:I
 
@@ -3515,9 +3458,6 @@
 
 .method public final unmarshall([BII)V
     .locals 1
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
 
     iget v0, p0, Landroid/os/Parcel;->mNativePtr:I
 
@@ -3528,7 +3468,6 @@
 
 .method public final writeArray([Ljava/lang/Object;)V
     .locals 3
-    .param p1    # [Ljava/lang/Object;
 
     if-nez p1, :cond_1
 
@@ -3611,7 +3550,6 @@
 
 .method public final writeBinderArray([Landroid/os/IBinder;)V
     .locals 3
-    .param p1    # [Landroid/os/IBinder;
 
     if-eqz p1, :cond_0
 
@@ -3689,7 +3627,6 @@
 
 .method public final writeBooleanArray([Z)V
     .locals 3
-    .param p1    # [Z
 
     if-eqz p1, :cond_1
 
@@ -3731,7 +3668,6 @@
 
 .method public final writeBundle(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     if-nez p1, :cond_0
 
@@ -3752,7 +3688,6 @@
 
 .method public final writeByte(B)V
     .locals 0
-    .param p1    # B
 
     invoke-virtual {p0, p1}, Landroid/os/Parcel;->writeInt(I)V
 
@@ -3761,7 +3696,6 @@
 
 .method public final writeByteArray([B)V
     .locals 2
-    .param p1    # [B
 
     const/4 v1, 0x0
 
@@ -3782,9 +3716,6 @@
 
 .method public final writeByteArray([BII)V
     .locals 1
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
 
     if-nez p1, :cond_0
 
@@ -3809,7 +3740,6 @@
 
 .method public final writeCharArray([C)V
     .locals 3
-    .param p1    # [C
 
     if-eqz p1, :cond_0
 
@@ -3841,7 +3771,6 @@
 
 .method public final writeCharSequence(Ljava/lang/CharSequence;)V
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v0, 0x0
 
@@ -3852,7 +3781,6 @@
 
 .method public final writeCharSequenceArray([Ljava/lang/CharSequence;)V
     .locals 3
-    .param p1    # [Ljava/lang/CharSequence;
 
     if-eqz p1, :cond_0
 
@@ -3884,7 +3812,6 @@
 
 .method public final writeDouble(D)V
     .locals 1
-    .param p1    # D
 
     iget v0, p0, Landroid/os/Parcel;->mNativePtr:I
 
@@ -3895,7 +3822,6 @@
 
 .method public final writeDoubleArray([D)V
     .locals 4
-    .param p1    # [D
 
     if-eqz p1, :cond_0
 
@@ -3927,7 +3853,6 @@
 
 .method public final writeException(Ljava/lang/Exception;)V
     .locals 2
-    .param p1    # Ljava/lang/Exception;
 
     const/4 v0, 0x0
 
@@ -4017,7 +3942,6 @@
 
 .method public final writeFileDescriptor(Ljava/io/FileDescriptor;)V
     .locals 1
-    .param p1    # Ljava/io/FileDescriptor;
 
     iget v0, p0, Landroid/os/Parcel;->mNativePtr:I
 
@@ -4028,7 +3952,6 @@
 
 .method public final writeFloat(F)V
     .locals 1
-    .param p1    # F
 
     iget v0, p0, Landroid/os/Parcel;->mNativePtr:I
 
@@ -4039,7 +3962,6 @@
 
 .method public final writeFloatArray([F)V
     .locals 3
-    .param p1    # [F
 
     if-eqz p1, :cond_0
 
@@ -4071,7 +3993,6 @@
 
 .method public final writeInt(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/os/Parcel;->mNativePtr:I
 
@@ -4082,7 +4003,6 @@
 
 .method public final writeIntArray([I)V
     .locals 3
-    .param p1    # [I
 
     if-eqz p1, :cond_0
 
@@ -4114,7 +4034,6 @@
 
 .method public final writeInterfaceToken(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget v0, p0, Landroid/os/Parcel;->mNativePtr:I
 
@@ -4125,7 +4044,6 @@
 
 .method public final writeList(Ljava/util/List;)V
     .locals 3
-    .param p1    # Ljava/util/List;
 
     if-nez p1, :cond_1
 
@@ -4161,7 +4079,6 @@
 
 .method public final writeLong(J)V
     .locals 1
-    .param p1    # J
 
     iget v0, p0, Landroid/os/Parcel;->mNativePtr:I
 
@@ -4172,7 +4089,6 @@
 
 .method public final writeLongArray([J)V
     .locals 4
-    .param p1    # [J
 
     if-eqz p1, :cond_0
 
@@ -4204,7 +4120,6 @@
 
 .method public final writeMap(Ljava/util/Map;)V
     .locals 0
-    .param p1    # Ljava/util/Map;
 
     invoke-virtual {p0, p1}, Landroid/os/Parcel;->writeMapInternal(Ljava/util/Map;)V
 
@@ -4322,8 +4237,6 @@
 
 .method public final writeParcelable(Landroid/os/Parcelable;I)V
     .locals 2
-    .param p1    # Landroid/os/Parcelable;
-    .param p2    # I
 
     if-nez p1, :cond_0
 
@@ -4352,7 +4265,6 @@
 
 .method public final writeParcelableArray([Landroid/os/Parcelable;I)V
     .locals 3
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T::",
@@ -4391,7 +4303,6 @@
 
 .method public final writeParcelableCreator(Landroid/os/Parcelable;)V
     .locals 2
-    .param p1    # Landroid/os/Parcelable;
 
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -4408,7 +4319,6 @@
 
 .method public final writeSerializable(Ljava/io/Serializable;)V
     .locals 7
-    .param p1    # Ljava/io/Serializable;
 
     if-nez p1, :cond_0
 
@@ -4539,7 +4449,6 @@
 
 .method public final writeSparseBooleanArray(Landroid/util/SparseBooleanArray;)V
     .locals 3
-    .param p1    # Landroid/util/SparseBooleanArray;
 
     if-nez p1, :cond_1
 
@@ -4593,7 +4502,6 @@
 
 .method public final writeString(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget v0, p0, Landroid/os/Parcel;->mNativePtr:I
 
@@ -4604,7 +4512,6 @@
 
 .method public final writeStringArray([Ljava/lang/String;)V
     .locals 3
-    .param p1    # [Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -4682,7 +4589,6 @@
 
 .method public final writeStrongBinder(Landroid/os/IBinder;)V
     .locals 1
-    .param p1    # Landroid/os/IBinder;
 
     iget v0, p0, Landroid/os/Parcel;->mNativePtr:I
 
@@ -4693,7 +4599,6 @@
 
 .method public final writeStrongInterface(Landroid/os/IInterface;)V
     .locals 1
-    .param p1    # Landroid/os/IInterface;
 
     if-nez p1, :cond_0
 
@@ -4714,7 +4619,6 @@
 
 .method public final writeTypedArray([Landroid/os/Parcelable;I)V
     .locals 4
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T::",
@@ -4827,7 +4731,6 @@
 
 .method public final writeValue(Ljava/lang/Object;)V
     .locals 3
-    .param p1    # Ljava/lang/Object;
 
     const/4 v0, 0x1
 

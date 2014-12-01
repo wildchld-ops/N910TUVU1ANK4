@@ -204,7 +204,7 @@
 
     iget-object v2, p0, Lcom/android/phone/EditFdnContactScreen$QueryHandler;->this$0:Lcom/android/phone/EditFdnContactScreen;
 
-    invoke-virtual {v2}, Landroid/app/Fragment;->isAdded()Z
+    invoke-virtual {v2}, Lcom/android/phone/EditFdnContactScreen;->isAdded()Z
 
     move-result v2
 
@@ -467,7 +467,7 @@
 
     invoke-direct {v3, p0}, Lcom/android/phone/EditFdnContactScreen$QueryHandler$1;-><init>(Lcom/android/phone/EditFdnContactScreen$QueryHandler;)V
 
-    invoke-virtual {v2, v3}, Landroid/widget/TextView;->addTextChangedListener(Landroid/text/TextWatcher;)V
+    invoke-virtual {v2, v3}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
     :cond_2
     :goto_1
@@ -548,7 +548,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v2, v1}, Landroid/widget/TextView;->setFilters([Landroid/text/InputFilter;)V
+    invoke-virtual {v2, v1}, Landroid/widget/EditText;->setFilters([Landroid/text/InputFilter;)V
 
     iget-object v2, p0, Lcom/android/phone/EditFdnContactScreen$QueryHandler;->this$0:Lcom/android/phone/EditFdnContactScreen;
 
@@ -557,7 +557,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v2, v7}, Landroid/widget/TextView;->setInputType(I)V
+    invoke-virtual {v2, v7}, Landroid/widget/EditText;->setInputType(I)V
 
     iget-object v2, p0, Lcom/android/phone/EditFdnContactScreen$QueryHandler;->this$0:Lcom/android/phone/EditFdnContactScreen;
 
@@ -570,7 +570,7 @@
 
     invoke-direct {v3, p0}, Lcom/android/phone/EditFdnContactScreen$QueryHandler$2;-><init>(Lcom/android/phone/EditFdnContactScreen$QueryHandler;)V
 
-    invoke-virtual {v2, v3}, Landroid/widget/TextView;->addTextChangedListener(Landroid/text/TextWatcher;)V
+    invoke-virtual {v2, v3}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
     goto/16 :goto_0
 
@@ -595,7 +595,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v2, v0}, Landroid/widget/TextView;->setFilters([Landroid/text/InputFilter;)V
+    invoke-virtual {v2, v0}, Landroid/widget/EditText;->setFilters([Landroid/text/InputFilter;)V
 
     goto :goto_1
 

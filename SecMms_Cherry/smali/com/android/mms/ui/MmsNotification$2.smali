@@ -36,9 +36,6 @@
 # virtual methods
 .method public onError(Landroid/media/MediaPlayer;II)Z
     .locals 3
-    .param p1    # Landroid/media/MediaPlayer;
-    .param p2    # I
-    .param p3    # I
 
     :try_start_0
     invoke-virtual {p1}, Landroid/media/MediaPlayer;->stop()V

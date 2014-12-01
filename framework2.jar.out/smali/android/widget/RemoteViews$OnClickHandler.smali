@@ -27,9 +27,6 @@
 # virtual methods
 .method public onClickHandler(Landroid/view/View;Landroid/app/PendingIntent;Landroid/content/Intent;)Z
     .locals 10
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/app/PendingIntent;
-    .param p3    # Landroid/content/Intent;
 
     const/4 v9, 0x0
 

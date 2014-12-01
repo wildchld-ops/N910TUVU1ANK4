@@ -41,9 +41,6 @@
 # virtual methods
 .method public bulkRequestIconForPageUrl(Landroid/content/ContentResolver;Ljava/lang/String;Landroid/webkit/WebIconDatabase$IconListener;)V
     .locals 1
-    .param p1    # Landroid/content/ContentResolver;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/webkit/WebIconDatabase$IconListener;
 
     new-instance v0, Landroid/webkit/MustOverrideException;
 
@@ -64,7 +61,6 @@
 
 .method public open(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Landroid/webkit/MustOverrideException;
 
@@ -75,7 +71,6 @@
 
 .method public releaseIconForPageUrl(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Landroid/webkit/MustOverrideException;
 
@@ -96,8 +91,6 @@
 
 .method public requestIconForPageUrl(Ljava/lang/String;Landroid/webkit/WebIconDatabase$IconListener;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/webkit/WebIconDatabase$IconListener;
 
     new-instance v0, Landroid/webkit/MustOverrideException;
 
@@ -108,7 +101,6 @@
 
 .method public retainIconForPageUrl(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Landroid/webkit/MustOverrideException;
 

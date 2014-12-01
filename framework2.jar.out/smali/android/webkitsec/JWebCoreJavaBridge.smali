@@ -73,7 +73,6 @@
 
 .method private cookies(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Landroid/webkitsec/CookieManager;->getInstance()Landroid/webkitsec/CookieManager;
 
@@ -156,9 +155,6 @@
 
 .method private declared-synchronized getSignedPublicKey(ILjava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -224,7 +220,6 @@
 
 .method static declared-synchronized removeActiveWebView(Landroid/webkitsec/WebViewClassic;)V
     .locals 2
-    .param p0    # Landroid/webkitsec/WebViewClassic;
 
     const-class v1, Landroid/webkitsec/JWebCoreJavaBridge;
 
@@ -266,7 +261,6 @@
 
 .method private resolveFilePathForContentUri(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v2, p0, Landroid/webkitsec/JWebCoreJavaBridge;->mContentUriToFilePathMap:Ljava/util/HashMap;
 
@@ -299,7 +293,6 @@
 
 .method static declared-synchronized setActiveWebView(Landroid/webkitsec/WebViewClassic;)V
     .locals 2
-    .param p0    # Landroid/webkitsec/WebViewClassic;
 
     const-class v1, Landroid/webkitsec/JWebCoreJavaBridge;
 
@@ -343,8 +336,6 @@
 
 .method private setCookies(Ljava/lang/String;Ljava/lang/String;)V
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v7, -0x1
 
@@ -455,7 +446,6 @@
 
 .method private setSharedTimer(J)V
     .locals 4
-    .param p1    # J
 
     const/4 v3, 0x1
 
@@ -553,7 +543,6 @@
 
 .method public handleMessage(Landroid/os/Message;)V
     .locals 2
-    .param p1    # Landroid/os/Message;
 
     iget v0, p1, Landroid/os/Message;->what:I
 
@@ -675,8 +664,6 @@
 
 .method public storeFilePathForContentUri(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/webkitsec/JWebCoreJavaBridge;->mContentUriToFilePathMap:Ljava/util/HashMap;
 
@@ -698,7 +685,6 @@
 
 .method public updateProxy(Landroid/net/ProxyProperties;)V
     .locals 4
-    .param p1    # Landroid/net/ProxyProperties;
 
     if-nez p1, :cond_0
 

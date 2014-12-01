@@ -14,7 +14,6 @@
 
 .method public static round(F)I
     .locals 5
-    .param p0    # F
 
     const/high16 v2, 0x4b800000
 

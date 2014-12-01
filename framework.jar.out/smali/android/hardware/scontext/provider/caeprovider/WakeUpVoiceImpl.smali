@@ -20,9 +20,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;ILandroid/hardware/scontext/provider/EventListener;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Landroid/hardware/scontext/provider/EventListener;
 
     const/16 v0, 0x10
 
@@ -43,8 +40,6 @@
 
 .method private divideReferenceData(I[B)Z
     .locals 6
-    .param p1    # I
-    .param p2    # [B
 
     const/4 v2, 0x0
 
@@ -98,8 +93,6 @@
 
 .method private sendReferenceDataToCAE(I[B)Z
     .locals 7
-    .param p1    # I
-    .param p2    # [B
 
     const/4 v6, 0x2
 
@@ -228,8 +221,6 @@
 # virtual methods
 .method public setProperty(ILandroid/os/Bundle;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     const-string/jumbo v0, "wake_up_voice_mode"
 
@@ -246,8 +237,6 @@
 
 .method public setReferenceData(I[B)Z
     .locals 4
-    .param p1    # I
-    .param p2    # [B
 
     const/4 v0, 0x0
 

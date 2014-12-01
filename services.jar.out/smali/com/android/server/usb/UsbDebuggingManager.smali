@@ -49,7 +49,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -100,7 +99,6 @@
 
 .method static synthetic access$000(Lcom/android/server/usb/UsbDebuggingManager;)Z
     .locals 1
-    .param p0    # Lcom/android/server/usb/UsbDebuggingManager;
 
     iget-boolean v0, p0, Lcom/android/server/usb/UsbDebuggingManager;->mAdbEnabled:Z
 
@@ -109,8 +107,6 @@
 
 .method static synthetic access$002(Lcom/android/server/usb/UsbDebuggingManager;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/usb/UsbDebuggingManager;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/usb/UsbDebuggingManager;->mAdbEnabled:Z
 
@@ -119,7 +115,6 @@
 
 .method static synthetic access$100(Lcom/android/server/usb/UsbDebuggingManager;)Ljava/lang/Thread;
     .locals 1
-    .param p0    # Lcom/android/server/usb/UsbDebuggingManager;
 
     iget-object v0, p0, Lcom/android/server/usb/UsbDebuggingManager;->mThread:Ljava/lang/Thread;
 
@@ -128,7 +123,6 @@
 
 .method static synthetic access$1000(Lcom/android/server/usb/UsbDebuggingManager;)V
     .locals 0
-    .param p0    # Lcom/android/server/usb/UsbDebuggingManager;
 
     invoke-direct {p0}, Lcom/android/server/usb/UsbDebuggingManager;->deleteKeyFile()V
 
@@ -137,8 +131,6 @@
 
 .method static synthetic access$102(Lcom/android/server/usb/UsbDebuggingManager;Ljava/lang/Thread;)Ljava/lang/Thread;
     .locals 0
-    .param p0    # Lcom/android/server/usb/UsbDebuggingManager;
-    .param p1    # Ljava/lang/Thread;
 
     iput-object p1, p0, Lcom/android/server/usb/UsbDebuggingManager;->mThread:Ljava/lang/Thread;
 
@@ -147,7 +139,6 @@
 
 .method static synthetic access$200(Lcom/android/server/usb/UsbDebuggingManager;)V
     .locals 0
-    .param p0    # Lcom/android/server/usb/UsbDebuggingManager;
 
     invoke-direct {p0}, Lcom/android/server/usb/UsbDebuggingManager;->closeSocket()V
 
@@ -156,8 +147,6 @@
 
 .method static synthetic access$302(Lcom/android/server/usb/UsbDebuggingManager;Ljava/io/OutputStream;)Ljava/io/OutputStream;
     .locals 0
-    .param p0    # Lcom/android/server/usb/UsbDebuggingManager;
-    .param p1    # Ljava/io/OutputStream;
 
     iput-object p1, p0, Lcom/android/server/usb/UsbDebuggingManager;->mOutputStream:Ljava/io/OutputStream;
 
@@ -166,8 +155,6 @@
 
 .method static synthetic access$402(Lcom/android/server/usb/UsbDebuggingManager;Landroid/net/LocalSocket;)Landroid/net/LocalSocket;
     .locals 0
-    .param p0    # Lcom/android/server/usb/UsbDebuggingManager;
-    .param p1    # Landroid/net/LocalSocket;
 
     iput-object p1, p0, Lcom/android/server/usb/UsbDebuggingManager;->mSocket:Landroid/net/LocalSocket;
 
@@ -176,8 +163,6 @@
 
 .method static synthetic access$500(Lcom/android/server/usb/UsbDebuggingManager;Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/server/usb/UsbDebuggingManager;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/usb/UsbDebuggingManager;->getFingerprints(Ljava/lang/String;)Ljava/lang/String;
 
@@ -188,7 +173,6 @@
 
 .method static synthetic access$600(Lcom/android/server/usb/UsbDebuggingManager;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/server/usb/UsbDebuggingManager;
 
     iget-object v0, p0, Lcom/android/server/usb/UsbDebuggingManager;->mFingerprints:Ljava/lang/String;
 
@@ -197,8 +181,6 @@
 
 .method static synthetic access$602(Lcom/android/server/usb/UsbDebuggingManager;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/android/server/usb/UsbDebuggingManager;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/server/usb/UsbDebuggingManager;->mFingerprints:Ljava/lang/String;
 
@@ -207,8 +189,6 @@
 
 .method static synthetic access$700(Lcom/android/server/usb/UsbDebuggingManager;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/server/usb/UsbDebuggingManager;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/usb/UsbDebuggingManager;->writeKey(Ljava/lang/String;)V
 
@@ -217,8 +197,6 @@
 
 .method static synthetic access$800(Lcom/android/server/usb/UsbDebuggingManager;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/server/usb/UsbDebuggingManager;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/usb/UsbDebuggingManager;->sendResponse(Ljava/lang/String;)V
 
@@ -227,9 +205,6 @@
 
 .method static synthetic access$900(Lcom/android/server/usb/UsbDebuggingManager;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/server/usb/UsbDebuggingManager;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/usb/UsbDebuggingManager;->showConfirmationDialog(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -339,7 +314,6 @@
 
 .method private getFingerprints(Ljava/lang/String;)Ljava/lang/String;
     .locals 10
-    .param p1    # Ljava/lang/String;
 
     const/4 v8, 0x0
 
@@ -702,7 +676,6 @@
 
 .method private sendResponse(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/server/usb/UsbDebuggingManager;->mOutputStream:Ljava/io/OutputStream;
 
@@ -737,8 +710,6 @@
 
 .method private showConfirmationDialog(Ljava/lang/String;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const-string v2, "UsbDebuggingManager"
 
@@ -813,7 +784,6 @@
 
 .method private writeKey(Ljava/lang/String;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     invoke-direct {p0}, Lcom/android/server/usb/UsbDebuggingManager;->getUserKeyFile()Ljava/io/File;
@@ -901,8 +871,6 @@
 # virtual methods
 .method public allowUsbDebugging(ZLjava/lang/String;)V
     .locals 3
-    .param p1    # Z
-    .param p2    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/server/usb/UsbDebuggingManager;->mHandler:Landroid/os/Handler;
 
@@ -959,8 +927,6 @@
 
 .method public dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;)V
     .locals 4
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
 
     const/4 v1, 0x0
 
@@ -1174,7 +1140,6 @@
 
 .method public setAdbEnabled(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v1, p0, Lcom/android/server/usb/UsbDebuggingManager;->mHandler:Landroid/os/Handler;
 

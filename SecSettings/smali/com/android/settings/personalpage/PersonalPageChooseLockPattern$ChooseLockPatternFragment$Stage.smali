@@ -250,11 +250,6 @@
 
 .method private constructor <init>(Ljava/lang/String;IILcom/android/settings/personalpage/PersonalPageChooseLockPattern$ChooseLockPatternFragment$LeftButtonMode;Lcom/android/settings/personalpage/PersonalPageChooseLockPattern$ChooseLockPatternFragment$RightButtonMode;IZ)V
     .locals 0
-    .param p3    # I
-    .param p4    # Lcom/android/settings/personalpage/PersonalPageChooseLockPattern$ChooseLockPatternFragment$LeftButtonMode;
-    .param p5    # Lcom/android/settings/personalpage/PersonalPageChooseLockPattern$ChooseLockPatternFragment$RightButtonMode;
-    .param p6    # I
-    .param p7    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",

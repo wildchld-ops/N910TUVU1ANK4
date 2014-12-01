@@ -41,8 +41,6 @@
 
 .method synthetic constructor <init>(Landroid/webkitsec/WebSettingsClassic;Landroid/webkitsec/WebSettingsClassic$1;)V
     .locals 0
-    .param p1    # Landroid/webkitsec/WebSettingsClassic;
-    .param p2    # Landroid/webkitsec/WebSettingsClassic$1;
 
     invoke-direct {p0, p1}, Landroid/webkitsec/WebSettingsClassic$EventHandler;-><init>(Landroid/webkitsec/WebSettingsClassic;)V
 
@@ -51,7 +49,6 @@
 
 .method static synthetic access$300(Landroid/webkitsec/WebSettingsClassic$EventHandler;)V
     .locals 0
-    .param p0    # Landroid/webkitsec/WebSettingsClassic$EventHandler;
 
     invoke-direct {p0}, Landroid/webkitsec/WebSettingsClassic$EventHandler;->setRenderPriority()V
 
@@ -60,8 +57,6 @@
 
 .method static synthetic access$800(Landroid/webkitsec/WebSettingsClassic$EventHandler;Landroid/os/Message;)Z
     .locals 1
-    .param p0    # Landroid/webkitsec/WebSettingsClassic$EventHandler;
-    .param p1    # Landroid/os/Message;
 
     invoke-direct {p0, p1}, Landroid/webkitsec/WebSettingsClassic$EventHandler;->sendMessage(Landroid/os/Message;)Z
 
@@ -72,7 +67,6 @@
 
 .method static synthetic access$900(Landroid/webkitsec/WebSettingsClassic$EventHandler;)V
     .locals 0
-    .param p0    # Landroid/webkitsec/WebSettingsClassic$EventHandler;
 
     invoke-direct {p0}, Landroid/webkitsec/WebSettingsClassic$EventHandler;->createHandler()V
 
@@ -109,7 +103,6 @@
 
 .method private declared-synchronized sendMessage(Landroid/os/Message;)Z
     .locals 1
-    .param p1    # Landroid/os/Message;
 
     monitor-enter p0
 

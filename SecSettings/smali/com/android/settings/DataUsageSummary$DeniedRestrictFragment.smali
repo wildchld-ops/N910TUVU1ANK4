@@ -41,7 +41,6 @@
 
 .method public static close(Lcom/android/settings/DataUsageSummary;)V
     .locals 2
-    .param p0    # Lcom/android/settings/DataUsageSummary;
 
     sget-object v0, Lcom/android/settings/DataUsageSummary$DeniedRestrictFragment;->dialog:Lcom/android/settings/DataUsageSummary$DeniedRestrictFragment;
 
@@ -77,7 +76,6 @@
 # virtual methods
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 

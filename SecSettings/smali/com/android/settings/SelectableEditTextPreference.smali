@@ -10,8 +10,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/preference/EditTextPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -22,7 +20,6 @@
 # virtual methods
 .method protected onBindDialogView(Landroid/view/View;)V
     .locals 4
-    .param p1    # Landroid/view/View;
 
     const/4 v2, 0x0
 
@@ -95,7 +92,6 @@
 
 .method public setInitialSelectionMode(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/settings/SelectableEditTextPreference;->mSelectionMode:I
 

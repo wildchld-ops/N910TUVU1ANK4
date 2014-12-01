@@ -49,13 +49,6 @@
 # virtual methods
 .method public performReceive(Landroid/content/Intent;ILjava/lang/String;Landroid/os/Bundle;ZZI)V
     .locals 17
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Landroid/os/Bundle;
-    .param p5    # Z
-    .param p6    # Z
-    .param p7    # I
 
     move-object/from16 v0, p0
 

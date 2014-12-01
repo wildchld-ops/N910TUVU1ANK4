@@ -73,7 +73,6 @@
 
 .method public static getCacheFile(Ljava/lang/String;Ljava/util/Map;)Landroid/webkitsec/CacheManager$CacheResult;
     .locals 1
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -107,7 +106,6 @@
 
 .method public static getCacheSize(Landroid/content/Context;)I
     .locals 10
-    .param p0    # Landroid/content/Context;
 
     const/4 v5, 0x0
 
@@ -179,9 +177,6 @@
 
 .method static saveCacheFile(Ljava/lang/String;JLandroid/webkitsec/CacheManager$CacheResult;)V
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # J
-    .param p3    # Landroid/webkitsec/CacheManager$CacheResult;
 
     :try_start_0
     iget-object v1, p3, Landroid/webkitsec/CacheManager$CacheResult;->outStream:Ljava/io/OutputStream;
@@ -209,8 +204,6 @@
 
 .method public static saveCacheFile(Ljava/lang/String;Landroid/webkitsec/CacheManager$CacheResult;)V
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Landroid/webkitsec/CacheManager$CacheResult;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 

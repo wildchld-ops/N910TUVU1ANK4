@@ -64,7 +64,6 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 10
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v9, 0x3
 
@@ -229,8 +228,6 @@
 
 .method setDrawable(ILandroid/graphics/drawable/Drawable;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/graphics/drawable/Drawable;
 
     if-eqz p2, :cond_0
 
@@ -248,12 +245,6 @@
 
 .method setIconAndText(IIILjava/lang/String;II)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
-    .param p6    # I
 
     const/4 v5, 0x0
 
@@ -326,8 +317,6 @@
 
 .method setText(ILjava/lang/CharSequence;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/CharSequence;
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 

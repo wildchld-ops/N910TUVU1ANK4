@@ -456,7 +456,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/cover/MissedMsgActivity;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/cover/MissedMsgActivity;
 
     iget-boolean v0, p0, Lcom/android/mms/cover/MissedMsgActivity;->mIsEnterConvList:Z
 
@@ -465,7 +464,6 @@
 
 .method static synthetic access$1000(Lcom/android/mms/cover/MissedMsgActivity;)V
     .locals 0
-    .param p0    # Lcom/android/mms/cover/MissedMsgActivity;
 
     invoke-direct {p0}, Lcom/android/mms/cover/MissedMsgActivity;->sendExitBroadCastToScover()V
 
@@ -474,7 +472,6 @@
 
 .method static synthetic access$1100(Lcom/android/mms/cover/MissedMsgActivity;)I
     .locals 1
-    .param p0    # Lcom/android/mms/cover/MissedMsgActivity;
 
     iget v0, p0, Lcom/android/mms/cover/MissedMsgActivity;->mCurrentIdx:I
 
@@ -483,10 +480,6 @@
 
 .method static synthetic access$1200(Lcom/android/mms/cover/MissedMsgActivity;Ljava/lang/Runnable;IZ)V
     .locals 0
-    .param p0    # Lcom/android/mms/cover/MissedMsgActivity;
-    .param p1    # Ljava/lang/Runnable;
-    .param p2    # I
-    .param p3    # Z
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/mms/cover/MissedMsgActivity;->markAsRead(Ljava/lang/Runnable;IZ)V
 
@@ -495,10 +488,6 @@
 
 .method static synthetic access$1300(Lcom/android/mms/cover/MissedMsgActivity;IZZ)V
     .locals 0
-    .param p0    # Lcom/android/mms/cover/MissedMsgActivity;
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # Z
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/mms/cover/MissedMsgActivity;->setMissedMsgInfo(IZZ)V
 
@@ -507,7 +496,6 @@
 
 .method static synthetic access$1400(Lcom/android/mms/cover/MissedMsgActivity;)Landroid/net/Uri;
     .locals 1
-    .param p0    # Lcom/android/mms/cover/MissedMsgActivity;
 
     iget-object v0, p0, Lcom/android/mms/cover/MissedMsgActivity;->msgUri:Landroid/net/Uri;
 
@@ -516,7 +504,6 @@
 
 .method static synthetic access$1500(Lcom/android/mms/cover/MissedMsgActivity;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/cover/MissedMsgActivity;
 
     iget-boolean v0, p0, Lcom/android/mms/cover/MissedMsgActivity;->update_seen:Z
 
@@ -525,8 +512,6 @@
 
 .method static synthetic access$1502(Lcom/android/mms/cover/MissedMsgActivity;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/cover/MissedMsgActivity;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/cover/MissedMsgActivity;->update_seen:Z
 
@@ -535,7 +520,6 @@
 
 .method static synthetic access$1600(Lcom/android/mms/cover/MissedMsgActivity;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/cover/MissedMsgActivity;
 
     iget-boolean v0, p0, Lcom/android/mms/cover/MissedMsgActivity;->update_read:Z
 
@@ -544,8 +528,6 @@
 
 .method static synthetic access$1602(Lcom/android/mms/cover/MissedMsgActivity;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/cover/MissedMsgActivity;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/cover/MissedMsgActivity;->update_read:Z
 
@@ -554,7 +536,6 @@
 
 .method static synthetic access$1700(Lcom/android/mms/cover/MissedMsgActivity;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/mms/cover/MissedMsgActivity;
 
     iget-object v0, p0, Lcom/android/mms/cover/MissedMsgActivity;->mMsgTypes:Ljava/util/ArrayList;
 
@@ -563,7 +544,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/cover/MissedMsgActivity;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/cover/MissedMsgActivity;
 
     iget-boolean v0, p0, Lcom/android/mms/cover/MissedMsgActivity;->mShowMsgPreview:Z
 
@@ -572,7 +552,6 @@
 
 .method static synthetic access$300(Lcom/android/mms/cover/MissedMsgActivity;)J
     .locals 2
-    .param p0    # Lcom/android/mms/cover/MissedMsgActivity;
 
     iget-wide v0, p0, Lcom/android/mms/cover/MissedMsgActivity;->mThreadId:J
 
@@ -581,7 +560,6 @@
 
 .method static synthetic access$400(Lcom/android/mms/cover/MissedMsgActivity;)J
     .locals 2
-    .param p0    # Lcom/android/mms/cover/MissedMsgActivity;
 
     iget-wide v0, p0, Lcom/android/mms/cover/MissedMsgActivity;->mLaunchThreadId:J
 
@@ -590,7 +568,6 @@
 
 .method static synthetic access$500(Lcom/android/mms/cover/MissedMsgActivity;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/cover/MissedMsgActivity;
 
     iget-boolean v0, p0, Lcom/android/mms/cover/MissedMsgActivity;->isCmas:Z
 
@@ -599,7 +576,6 @@
 
 .method static synthetic access$600(Lcom/android/mms/cover/MissedMsgActivity;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/mms/cover/MissedMsgActivity;
 
     iget-object v0, p0, Lcom/android/mms/cover/MissedMsgActivity;->mContext:Landroid/content/Context;
 
@@ -608,7 +584,6 @@
 
 .method static synthetic access$700(Lcom/android/mms/cover/MissedMsgActivity;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/mms/cover/MissedMsgActivity;
 
     iget-object v0, p0, Lcom/android/mms/cover/MissedMsgActivity;->mCmasType:Ljava/lang/String;
 
@@ -617,7 +592,6 @@
 
 .method static synthetic access$802(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/mms/cover/MissedMsgActivity;->mIsFinishing:Z
 
@@ -626,7 +600,6 @@
 
 .method static synthetic access$900(Lcom/android/mms/cover/MissedMsgActivity;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/mms/cover/MissedMsgActivity;
 
     iget-object v0, p0, Lcom/android/mms/cover/MissedMsgActivity;->mAddressToCall:Ljava/lang/String;
 
@@ -927,7 +900,6 @@
 
 .method private getCallableRecipient(Lcom/android/mms/data/ContactList;)Ljava/lang/String;
     .locals 3
-    .param p1    # Lcom/android/mms/data/ContactList;
 
     if-eqz p1, :cond_0
 
@@ -982,7 +954,6 @@
 
 .method private getContactHeaderString(Lcom/android/mms/data/ContactList;)Ljava/lang/String;
     .locals 5
-    .param p1    # Lcom/android/mms/data/ContactList;
 
     const/4 v4, 0x1
 
@@ -1126,7 +1097,6 @@
 
 .method private getContactNumberString(Lcom/android/mms/data/ContactList;)Ljava/lang/String;
     .locals 5
-    .param p1    # Lcom/android/mms/data/ContactList;
 
     const/4 v4, 0x1
 
@@ -1257,8 +1227,6 @@
 
 .method private getFlickType(II)I
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     const/16 v1, 0x14
 
@@ -1305,7 +1273,6 @@
 
 .method private static getImage(Lcom/android/mms/model/SlideModel;)Landroid/graphics/Bitmap;
     .locals 5
-    .param p0    # Lcom/android/mms/model/SlideModel;
 
     invoke-virtual {p0}, Lcom/android/mms/model/SlideModel;->hasImage()Z
 
@@ -1395,7 +1362,6 @@
 
 .method private getMmsUri(J)Landroid/net/Uri;
     .locals 2
-    .param p1    # J
 
     sget-object v0, Landroid/provider/Telephony$Mms;->CONTENT_URI:Landroid/net/Uri;
 
@@ -1420,7 +1386,6 @@
 
 .method private static getPduPersister(Landroid/content/Context;)Lcom/google/android/mms/pdu/PduPersister;
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     sget-object v0, Lcom/android/mms/cover/MissedMsgActivity;->sPduPersister:Lcom/google/android/mms/pdu/PduPersister;
 
@@ -1440,7 +1405,6 @@
 
 .method private getSlideAttachCount(Lcom/android/mms/model/SlideshowModel;)I
     .locals 8
-    .param p1    # Lcom/android/mms/model/SlideshowModel;
 
     const/4 v6, 0x0
 
@@ -1528,7 +1492,6 @@
 
 .method private static getText(Lcom/android/mms/model/SlideModel;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/mms/model/SlideModel;
 
     invoke-virtual {p0}, Lcom/android/mms/model/SlideModel;->hasText()Z
 
@@ -1555,11 +1518,6 @@
 
 .method private handleFlick(IIIIJ)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # J
 
     const/4 v6, 0x1
 
@@ -1653,7 +1611,6 @@
 
 .method private handleIntent(Landroid/content/Intent;)V
     .locals 8
-    .param p1    # Landroid/content/Intent;
 
     const/4 v7, 0x0
 
@@ -2176,7 +2133,6 @@
 
 .method private initMissedMsgInfos(Landroid/content/Context;)V
     .locals 18
-    .param p1    # Landroid/content/Context;
 
     const-string v1, "Mms/MissedMsgActivity"
 
@@ -2788,9 +2744,6 @@
 
 .method private markAsRead(Ljava/lang/Runnable;IZ)V
     .locals 15
-    .param p1    # Ljava/lang/Runnable;
-    .param p2    # I
-    .param p3    # Z
 
     const/4 v13, 0x0
 
@@ -3308,8 +3261,6 @@
 
 .method private moveToNextMessage(ZI)V
     .locals 3
-    .param p1    # Z
-    .param p2    # I
 
     const/4 v2, 0x1
 
@@ -3347,9 +3298,6 @@
 
 .method private parsingPdu(Landroid/content/Context;JI)V
     .locals 14
-    .param p1    # Landroid/content/Context;
-    .param p2    # J
-    .param p4    # I
 
     const/4 v10, 0x0
 
@@ -4002,9 +3950,6 @@
 
 .method private setMissedMsgInfo(IZZ)V
     .locals 9
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # Z
 
     const-string v4, "Mms/MissedMsgActivity"
 
@@ -4743,7 +4688,6 @@
 
 .method private setMsgDataToPreview(I)V
     .locals 8
-    .param p1    # I
 
     const/4 v7, 0x3
 
@@ -4968,9 +4912,6 @@
 
 .method private setPreviewMsgInfo(Landroid/content/Context;Ljava/lang/String;J)V
     .locals 17
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # J
 
     invoke-direct/range {p0 .. p0}, Lcom/android/mms/cover/MissedMsgActivity;->initArrayData()V
 
@@ -5427,7 +5368,6 @@
 # virtual methods
 .method public dispatchTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 8
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v2, 0x0
 
@@ -5533,7 +5473,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
@@ -5768,8 +5707,6 @@
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x1
 
@@ -5818,7 +5755,6 @@
 
 .method protected onNewIntent(Landroid/content/Intent;)V
     .locals 2
-    .param p1    # Landroid/content/Intent;
 
     const-string v0, "Mms/MissedMsgActivity"
 

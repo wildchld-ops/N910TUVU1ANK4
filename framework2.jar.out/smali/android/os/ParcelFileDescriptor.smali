@@ -90,7 +90,6 @@
 
 .method public constructor <init>(Landroid/os/ParcelFileDescriptor;)V
     .locals 2
-    .param p1    # Landroid/os/ParcelFileDescriptor;
 
     const/4 v1, 0x0
 
@@ -117,7 +116,6 @@
 
 .method public constructor <init>(Ljava/io/FileDescriptor;)V
     .locals 1
-    .param p1    # Ljava/io/FileDescriptor;
 
     const/4 v0, 0x0
 
@@ -128,8 +126,6 @@
 
 .method public constructor <init>(Ljava/io/FileDescriptor;Ljava/io/FileDescriptor;)V
     .locals 2
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/FileDescriptor;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -169,8 +165,6 @@
 
 .method static synthetic access$000(Ljava/io/FileDescriptor;[B)Landroid/os/ParcelFileDescriptor$Status;
     .locals 1
-    .param p0    # Ljava/io/FileDescriptor;
-    .param p1    # [B
 
     invoke-static {p0, p1}, Landroid/os/ParcelFileDescriptor;->readCommStatus(Ljava/io/FileDescriptor;[B)Landroid/os/ParcelFileDescriptor$Status;
 
@@ -181,7 +175,6 @@
 
 .method public static adoptFd(I)Landroid/os/ParcelFileDescriptor;
     .locals 2
-    .param p0    # I
 
     new-instance v0, Ljava/io/FileDescriptor;
 
@@ -198,8 +191,6 @@
 
 .method private closeWithStatus(ILjava/lang/String;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     iget-boolean v0, p0, Landroid/os/ParcelFileDescriptor;->mClosed:Z
 
@@ -551,7 +542,6 @@
 
 .method public static dup(Ljava/io/FileDescriptor;)Landroid/os/ParcelFileDescriptor;
     .locals 3
-    .param p0    # Ljava/io/FileDescriptor;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -585,8 +575,6 @@
 
 .method public static fromData([BLjava/lang/String;)Landroid/os/ParcelFileDescriptor;
     .locals 5
-    .param p0    # [B
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -639,7 +627,6 @@
 
 .method public static fromDatagramSocket(Ljava/net/DatagramSocket;)Landroid/os/ParcelFileDescriptor;
     .locals 2
-    .param p0    # Ljava/net/DatagramSocket;
 
     invoke-virtual {p0}, Ljava/net/DatagramSocket;->getFileDescriptor$()Ljava/io/FileDescriptor;
 
@@ -662,7 +649,6 @@
 
 .method public static fromFd(I)Landroid/os/ParcelFileDescriptor;
     .locals 4
-    .param p0    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -702,7 +688,6 @@
 
 .method public static fromSocket(Ljava/net/Socket;)Landroid/os/ParcelFileDescriptor;
     .locals 2
-    .param p0    # Ljava/net/Socket;
 
     invoke-virtual {p0}, Ljava/net/Socket;->getFileDescriptor$()Ljava/io/FileDescriptor;
 
@@ -744,8 +729,6 @@
 
 .method public static open(Ljava/io/File;I)Landroid/os/ParcelFileDescriptor;
     .locals 2
-    .param p0    # Ljava/io/File;
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/FileNotFoundException;
@@ -773,10 +756,6 @@
 
 .method public static open(Ljava/io/File;ILandroid/os/Handler;Landroid/os/ParcelFileDescriptor$OnCloseListener;)Landroid/os/ParcelFileDescriptor;
     .locals 6
-    .param p0    # Ljava/io/File;
-    .param p1    # I
-    .param p2    # Landroid/os/Handler;
-    .param p3    # Landroid/os/ParcelFileDescriptor$OnCloseListener;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -852,8 +831,6 @@
 
 .method private static openInternal(Ljava/io/File;I)Ljava/io/FileDescriptor;
     .locals 3
-    .param p0    # Ljava/io/File;
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/FileNotFoundException;
@@ -888,7 +865,6 @@
 
 .method public static parseMode(Ljava/lang/String;)I
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     const-string/jumbo v1, "r"
 
@@ -998,8 +974,6 @@
 
 .method private static readCommStatus(Ljava/io/FileDescriptor;[B)Landroid/os/ParcelFileDescriptor$Status;
     .locals 8
-    .param p0    # Ljava/io/FileDescriptor;
-    .param p1    # [B
 
     const/4 v7, -0x2
 
@@ -1109,8 +1083,6 @@
 
 .method private writeCommStatusAndClose(ILjava/lang/String;)V
     .locals 9
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v8, 0x0
 
@@ -1440,7 +1412,6 @@
 
 .method public closeWithError(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1790,7 +1761,6 @@
 
 .method public seekTo(J)J
     .locals 4
-    .param p1    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1884,8 +1854,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v0, p0, Landroid/os/ParcelFileDescriptor;->mWrapped:Landroid/os/ParcelFileDescriptor;
 

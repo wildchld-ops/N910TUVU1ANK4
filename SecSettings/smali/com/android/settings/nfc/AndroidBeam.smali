@@ -72,7 +72,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/nfc/AndroidBeam;)Landroid/app/Activity;
     .locals 1
-    .param p0    # Lcom/android/settings/nfc/AndroidBeam;
 
     iget-object v0, p0, Lcom/android/settings/nfc/AndroidBeam;->activity:Landroid/app/Activity;
 
@@ -81,7 +80,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/nfc/AndroidBeam;)Landroid/nfc/NfcAdapter;
     .locals 1
-    .param p0    # Lcom/android/settings/nfc/AndroidBeam;
 
     iget-object v0, p0, Lcom/android/settings/nfc/AndroidBeam;->mNfcAdapter:Landroid/nfc/NfcAdapter;
 
@@ -90,7 +88,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/nfc/AndroidBeam;)Landroid/widget/Switch;
     .locals 1
-    .param p0    # Lcom/android/settings/nfc/AndroidBeam;
 
     iget-object v0, p0, Lcom/android/settings/nfc/AndroidBeam;->mActionBarSwitch:Landroid/widget/Switch;
 
@@ -133,7 +130,6 @@
 
 .method private initView(Landroid/view/View;)V
     .locals 4
-    .param p1    # Landroid/view/View;
 
     iget-object v2, p0, Lcom/android/settings/nfc/AndroidBeam;->mActionBarSwitch:Landroid/widget/Switch;
 
@@ -207,8 +203,6 @@
 # virtual methods
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 6
-    .param p1    # Landroid/widget/CompoundButton;
-    .param p2    # Z
 
     const/4 v5, 0x0
 
@@ -332,7 +326,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 1
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -350,7 +343,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 6
-    .param p1    # Landroid/os/Bundle;
 
     const/16 v4, 0x10
 
@@ -505,9 +497,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 3
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const v1, 0x7f04001a
 

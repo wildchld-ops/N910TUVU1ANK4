@@ -93,7 +93,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/wifi/WifiConnectionMonitorService;)Landroid/net/wifi/WifiManager;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiConnectionMonitorService;
 
     iget-object v0, p0, Lcom/android/settings/wifi/WifiConnectionMonitorService;->mWifiManager:Landroid/net/wifi/WifiManager;
 
@@ -102,7 +101,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/wifi/WifiConnectionMonitorService;)I
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiConnectionMonitorService;
 
     iget v0, p0, Lcom/android/settings/wifi/WifiConnectionMonitorService;->mThreshold:I
 
@@ -111,8 +109,6 @@
 
 .method static synthetic access$202(Lcom/android/settings/wifi/WifiConnectionMonitorService;I)I
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/WifiConnectionMonitorService;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/settings/wifi/WifiConnectionMonitorService;->mThreshold:I
 
@@ -121,7 +117,6 @@
 
 .method private isWifiSettingScreen(Landroid/content/Context;)Z
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     sget-boolean v0, Lcom/android/settings/wifi/WifiStatusReceiver;->mIsForegroundWifiSettings:Z
 
@@ -132,7 +127,6 @@
 # virtual methods
 .method addBlackList(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -410,7 +404,6 @@
 
 .method public onBind(Landroid/content/Intent;)Landroid/os/IBinder;
     .locals 1
-    .param p1    # Landroid/content/Intent;
 
     const/4 v0, 0x0
 
@@ -566,9 +559,6 @@
 
 .method public onStartCommand(Landroid/content/Intent;II)I
     .locals 3
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
-    .param p3    # I
 
     const-string v0, "WifiConnectionMonitorService"
 
@@ -634,7 +624,6 @@
 
 .method removeBlackList(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 

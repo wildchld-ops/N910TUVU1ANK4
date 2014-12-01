@@ -30,8 +30,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/display/DisplayManagerService;ILandroid/hardware/display/IDisplayManagerCallback;)V
     .locals 0
-    .param p2    # I
-    .param p3    # Landroid/hardware/display/IDisplayManagerCallback;
 
     iput-object p1, p0, Lcom/android/server/display/DisplayManagerService$CallbackRecord;->this$0:Lcom/android/server/display/DisplayManagerService;
 
@@ -59,8 +57,6 @@
 
 .method public notifyDisplayEventAsync(II)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     :try_start_0
     iget-object v1, p0, Lcom/android/server/display/DisplayManagerService$CallbackRecord;->mCallback:Landroid/hardware/display/IDisplayManagerCallback;

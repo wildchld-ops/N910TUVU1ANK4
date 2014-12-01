@@ -51,7 +51,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -62,8 +61,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const v3, 0xffffff
 
@@ -126,7 +123,6 @@
 
 .method static synthetic access$000(Lcom/android/systemui/screenshot/CaptureEffectView;)I
     .locals 1
-    .param p0    # Lcom/android/systemui/screenshot/CaptureEffectView;
 
     iget v0, p0, Lcom/android/systemui/screenshot/CaptureEffectView;->mDirection:I
 
@@ -135,8 +131,6 @@
 
 .method static synthetic access$102(Lcom/android/systemui/screenshot/CaptureEffectView;F)F
     .locals 0
-    .param p0    # Lcom/android/systemui/screenshot/CaptureEffectView;
-    .param p1    # F
 
     iput p1, p0, Lcom/android/systemui/screenshot/CaptureEffectView;->mTranslateOffset:F
 
@@ -145,8 +139,6 @@
 
 .method static synthetic access$202(Lcom/android/systemui/screenshot/CaptureEffectView;I)I
     .locals 0
-    .param p0    # Lcom/android/systemui/screenshot/CaptureEffectView;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/systemui/screenshot/CaptureEffectView;->mGradientColor2:I
 
@@ -155,7 +147,6 @@
 
 .method static synthetic access$300(Lcom/android/systemui/screenshot/CaptureEffectView;)V
     .locals 0
-    .param p0    # Lcom/android/systemui/screenshot/CaptureEffectView;
 
     invoke-direct {p0}, Lcom/android/systemui/screenshot/CaptureEffectView;->clearCaptureBitmap()V
 
@@ -164,7 +155,6 @@
 
 .method static synthetic access$400(Lcom/android/systemui/screenshot/CaptureEffectView;)Z
     .locals 1
-    .param p0    # Lcom/android/systemui/screenshot/CaptureEffectView;
 
     iget-boolean v0, p0, Lcom/android/systemui/screenshot/CaptureEffectView;->isFirst:Z
 
@@ -173,8 +163,6 @@
 
 .method static synthetic access$402(Lcom/android/systemui/screenshot/CaptureEffectView;Z)Z
     .locals 0
-    .param p0    # Lcom/android/systemui/screenshot/CaptureEffectView;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/systemui/screenshot/CaptureEffectView;->isFirst:Z
 
@@ -183,7 +171,6 @@
 
 .method static synthetic access$500(Lcom/android/systemui/screenshot/CaptureEffectView;)Lcom/android/systemui/screenshot/CaptureEffectView$OnCaptureAnimationListener;
     .locals 1
-    .param p0    # Lcom/android/systemui/screenshot/CaptureEffectView;
 
     iget-object v0, p0, Lcom/android/systemui/screenshot/CaptureEffectView;->mCaptureAnimationListener:Lcom/android/systemui/screenshot/CaptureEffectView$OnCaptureAnimationListener;
 
@@ -244,7 +231,6 @@
 
 .method public onDraw(Landroid/graphics/Canvas;)V
     .locals 10
-    .param p1    # Landroid/graphics/Canvas;
 
     const-string v0, "CaptureEffectView"
 
@@ -420,7 +406,6 @@
 
 .method public setOnCaptureAnimationListener(Lcom/android/systemui/screenshot/CaptureEffectView$OnCaptureAnimationListener;)V
     .locals 0
-    .param p1    # Lcom/android/systemui/screenshot/CaptureEffectView$OnCaptureAnimationListener;
 
     iput-object p1, p0, Lcom/android/systemui/screenshot/CaptureEffectView;->mCaptureAnimationListener:Lcom/android/systemui/screenshot/CaptureEffectView$OnCaptureAnimationListener;
 
@@ -429,8 +414,6 @@
 
 .method public show(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
@@ -451,8 +434,6 @@
 
 .method public show(Landroid/graphics/Bitmap;I)V
     .locals 2
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # I
 
     const-string v0, "CaptureEffectView"
 

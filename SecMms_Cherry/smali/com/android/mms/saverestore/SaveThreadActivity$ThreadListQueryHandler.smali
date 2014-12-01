@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/mms/saverestore/SaveThreadActivity;Landroid/content/ContentResolver;)V
     .locals 0
-    .param p2    # Landroid/content/ContentResolver;
 
     iput-object p1, p0, Lcom/android/mms/saverestore/SaveThreadActivity$ThreadListQueryHandler;->this$0:Lcom/android/mms/saverestore/SaveThreadActivity;
 
@@ -34,9 +33,6 @@
 # virtual methods
 .method protected onQueryComplete(ILjava/lang/Object;Landroid/database/Cursor;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Ljava/lang/Object;
-    .param p3    # Landroid/database/Cursor;
 
     const/4 v4, 0x0
 

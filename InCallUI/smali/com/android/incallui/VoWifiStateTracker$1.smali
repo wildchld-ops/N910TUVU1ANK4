@@ -21,7 +21,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/incallui/VoWifiStateTracker;Landroid/os/Handler;)V
     .locals 0
-    .param p2    # Landroid/os/Handler;
 
     iput-object p1, p0, Lcom/android/incallui/VoWifiStateTracker$1;->this$0:Lcom/android/incallui/VoWifiStateTracker;
 
@@ -34,8 +33,6 @@
 # virtual methods
 .method public onChange(ZLandroid/net/Uri;)V
     .locals 3
-    .param p1    # Z
-    .param p2    # Landroid/net/Uri;
 
     invoke-super {p0, p1, p2}, Landroid/database/ContentObserver;->onChange(ZLandroid/net/Uri;)V
 

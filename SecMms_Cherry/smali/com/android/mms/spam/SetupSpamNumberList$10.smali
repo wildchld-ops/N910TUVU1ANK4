@@ -36,9 +36,6 @@
 # virtual methods
 .method public onCreateContextMenu(Landroid/view/ContextMenu;Landroid/view/View;Landroid/view/ContextMenu$ContextMenuInfo;)V
     .locals 3
-    .param p1    # Landroid/view/ContextMenu;
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ContextMenu$ContextMenuInfo;
 
     iget-object v1, p0, Lcom/android/mms/spam/SetupSpamNumberList$10;->this$0:Lcom/android/mms/spam/SetupSpamNumberList;
 

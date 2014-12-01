@@ -61,7 +61,6 @@
 
 .method private joinStrings(Ljava/lang/String;Ljava/lang/Iterable;)Ljava/lang/String;
     .locals 5
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -118,8 +117,6 @@
 
 .method private statusClause(Ljava/lang/String;I)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -162,8 +159,6 @@
 # virtual methods
 .method public orderBy(Ljava/lang/String;I)Landroid/app/DownloadManager$Query;
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v0, 0x1
 
@@ -273,8 +268,6 @@
 
 .method public orderByLocalized(Ljava/lang/String;I)Landroid/app/DownloadManager$Query;
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v0, 0x1
 
@@ -384,9 +377,6 @@
 
 .method runQuery(Landroid/content/ContentResolver;[Ljava/lang/String;Landroid/net/Uri;)Landroid/database/Cursor;
     .locals 10
-    .param p1    # Landroid/content/ContentResolver;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # Landroid/net/Uri;
 
     move-object v1, p3
 
@@ -679,7 +669,6 @@
 
 .method public varargs setFilterById([J)Landroid/app/DownloadManager$Query;
     .locals 0
-    .param p1    # [J
 
     iput-object p1, p0, Landroid/app/DownloadManager$Query;->mIds:[J
 
@@ -688,7 +677,6 @@
 
 .method public setFilterByStatus(I)Landroid/app/DownloadManager$Query;
     .locals 1
-    .param p1    # I
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -701,7 +689,6 @@
 
 .method public setOnlyIncludeVisibleInDownloadsUi(Z)Landroid/app/DownloadManager$Query;
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/app/DownloadManager$Query;->mOnlyIncludeVisibleInDownloadsUi:Z
 

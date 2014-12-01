@@ -33,7 +33,6 @@
 # direct methods
 .method public constructor <init>(Landroid/widget/Editor;Landroid/graphics/drawable/Drawable;)V
     .locals 6
-    .param p2    # Landroid/graphics/drawable/Drawable;
 
     iput-object p1, p0, Landroid/widget/Editor$InsertionHandleView;->this$0:Landroid/widget/Editor;
 
@@ -136,8 +135,6 @@
 
 .method protected getHotspotX(Landroid/graphics/drawable/Drawable;Z)I
     .locals 1
-    .param p1    # Landroid/graphics/drawable/Drawable;
-    .param p2    # Z
 
     invoke-virtual {p1}, Landroid/graphics/drawable/Drawable;->getIntrinsicWidth()I
 
@@ -178,7 +175,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 8
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-super {p0, p1}, Landroid/widget/Editor$HandleView;->onTouchEvent(Landroid/view/MotionEvent;)Z
 
@@ -351,8 +347,6 @@
 
 .method public updatePosition(FF)V
     .locals 2
-    .param p1    # F
-    .param p2    # F
 
     iget-object v0, p0, Landroid/widget/Editor$InsertionHandleView;->this$0:Landroid/widget/Editor;
 
@@ -374,7 +368,6 @@
 
 .method public updateSelection(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Landroid/widget/Editor$InsertionHandleView;->this$0:Landroid/widget/Editor;
 

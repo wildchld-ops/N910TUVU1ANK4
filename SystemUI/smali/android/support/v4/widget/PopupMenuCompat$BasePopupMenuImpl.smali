@@ -30,7 +30,6 @@
 # virtual methods
 .method public getDragToOpenListener(Ljava/lang/Object;)Landroid/view/View$OnTouchListener;
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     const/4 v0, 0x0
 

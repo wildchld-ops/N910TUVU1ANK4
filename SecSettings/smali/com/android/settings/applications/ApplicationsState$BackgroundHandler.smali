@@ -25,7 +25,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/settings/applications/ApplicationsState;Landroid/os/Looper;)V
     .locals 1
-    .param p2    # Landroid/os/Looper;
 
     iput-object p1, p0, Lcom/android/settings/applications/ApplicationsState$BackgroundHandler;->this$0:Lcom/android/settings/applications/ApplicationsState;
 
@@ -44,7 +43,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 16
-    .param p1    # Landroid/os/Message;
 
     const/4 v8, 0x0
 

@@ -12,7 +12,6 @@
 # direct methods
 .method public constructor <init>(Ljava/io/File;)V
     .locals 3
-    .param p1    # Ljava/io/File;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -53,7 +52,6 @@
 # virtual methods
 .method public failWrite(Ljava/io/FileOutputStream;)V
     .locals 3
-    .param p1    # Ljava/io/FileOutputStream;
 
     if-eqz p1, :cond_0
 
@@ -92,7 +90,6 @@
 
 .method public finishWrite(Ljava/io/FileOutputStream;)V
     .locals 3
-    .param p1    # Ljava/io/FileOutputStream;
 
     if-eqz p1, :cond_0
 

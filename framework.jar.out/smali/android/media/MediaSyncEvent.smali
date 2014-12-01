@@ -18,7 +18,6 @@
 # direct methods
 .method private constructor <init>(I)V
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -33,7 +32,6 @@
 
 .method public static createEvent(I)Landroid/media/MediaSyncEvent;
     .locals 3
-    .param p0    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;
@@ -80,7 +78,6 @@
 
 .method private static isValidType(I)Z
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -123,7 +120,6 @@
 
 .method public setAudioSessionId(I)Landroid/media/MediaSyncEvent;
     .locals 3
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;

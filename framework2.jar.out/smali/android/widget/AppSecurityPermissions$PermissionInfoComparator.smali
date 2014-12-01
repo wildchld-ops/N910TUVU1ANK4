@@ -50,8 +50,6 @@
 # virtual methods
 .method public final compare(Landroid/widget/AppSecurityPermissions$MyPermissionInfo;Landroid/widget/AppSecurityPermissions$MyPermissionInfo;)I
     .locals 3
-    .param p1    # Landroid/widget/AppSecurityPermissions$MyPermissionInfo;
-    .param p2    # Landroid/widget/AppSecurityPermissions$MyPermissionInfo;
 
     iget-object v0, p0, Landroid/widget/AppSecurityPermissions$PermissionInfoComparator;->sCollator:Ljava/text/Collator;
 
@@ -68,8 +66,6 @@
 
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p1, Landroid/widget/AppSecurityPermissions$MyPermissionInfo;
 

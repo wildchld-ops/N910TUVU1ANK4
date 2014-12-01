@@ -27,9 +27,6 @@
 # direct methods
 .method constructor <init>(Landroid/widget/TextView;II)V
     .locals 2
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v0, 0x0
 
@@ -64,8 +61,6 @@
 
 .method private getResourceId(II)I
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     if-nez p1, :cond_0
 
@@ -97,7 +92,6 @@
 # virtual methods
 .method fixDirection(Z)V
     .locals 2
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/widget/Editor$ErrorPopup;->mAbove:Z
 
@@ -146,11 +140,6 @@
 
 .method public update(IIIIZ)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Z
 
     invoke-super/range {p0 .. p5}, Landroid/widget/PopupWindow;->update(IIIIZ)V
 

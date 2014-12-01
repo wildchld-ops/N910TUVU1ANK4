@@ -14,7 +14,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -25,8 +24,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -37,9 +34,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/launcher2/CellLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
@@ -50,11 +44,6 @@
 # virtual methods
 .method public canAcceptDrop(Lcom/android/launcher2/DragState;IIIZ)Z
     .locals 20
-    .param p1    # Lcom/android/launcher2/DragState;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Z
 
     invoke-virtual/range {p0 .. p0}, Lcom/android/launcher2/CellLayout;->getContainer()Lcom/android/launcher2/CellLayoutContainer;
 
@@ -428,11 +417,6 @@
 
 .method public findDragCell(Lcom/android/launcher2/DragState;II[I[I)Z
     .locals 1
-    .param p1    # Lcom/android/launcher2/DragState;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # [I
-    .param p5    # [I
 
     invoke-super/range {p0 .. p5}, Lcom/android/launcher2/CellLayout;->findDragCell(Lcom/android/launcher2/DragState;II[I[I)Z
 
@@ -445,12 +429,6 @@
 
 .method public findDragCell(Lcom/android/launcher2/DragState;II[I[IZ)Z
     .locals 1
-    .param p1    # Lcom/android/launcher2/DragState;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # [I
-    .param p5    # [I
-    .param p6    # Z
 
     invoke-super/range {p0 .. p6}, Lcom/android/launcher2/CellLayout;->findDragCell(Lcom/android/launcher2/DragState;II[I[IZ)Z
 
@@ -557,8 +535,6 @@
 
 .method public isPointInRegion(FF)Z
     .locals 3
-    .param p1    # F
-    .param p2    # F
 
     new-instance v0, Landroid/graphics/Rect;
 
@@ -613,10 +589,6 @@
 
 .method public noRoomForDrop(Lcom/android/launcher2/DragState;III)V
     .locals 13
-    .param p1    # Lcom/android/launcher2/DragState;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
 
@@ -758,10 +730,6 @@
 
 .method notifyWidgetsOfPageScroll(IIII)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/4 v0, 0x0
 
@@ -799,7 +767,6 @@
 
 .method public onDragEvent(Landroid/view/DragEvent;)Z
     .locals 2
-    .param p1    # Landroid/view/DragEvent;
 
     invoke-virtual {p1}, Landroid/view/DragEvent;->getAction()I
 
@@ -831,8 +798,6 @@
 
 .method public onPreDeltaVisualize(Landroid/view/View;Lcom/android/launcher2/BaseItem;)V
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Lcom/android/launcher2/BaseItem;
 
     instance-of v0, p1, Lcom/android/launcher2/FolderIconView;
 
@@ -852,11 +817,6 @@
 
 .method rearrangeWorkspaceForSpace(Lcom/android/launcher2/BaseItem;IIII)Z
     .locals 8
-    .param p1    # Lcom/android/launcher2/BaseItem;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     const/4 v5, 0x1
 
@@ -922,9 +882,6 @@
 
 .method public setResizeFrame(Landroid/view/View;Ljava/lang/Runnable;Lcom/android/launcher2/Workspace$State;)V
     .locals 5
-    .param p1    # Landroid/view/View;
-    .param p2    # Ljava/lang/Runnable;
-    .param p3    # Lcom/android/launcher2/Workspace$State;
 
     const/4 v4, 0x0
 

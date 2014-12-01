@@ -98,7 +98,6 @@
 
 .method dismissInternal(Z)V
     .locals 4
-    .param p1    # Z
 
     const/4 v3, 0x1
 
@@ -174,10 +173,6 @@
 
 .method public dump(Ljava/lang/String;Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/io/FileDescriptor;
-    .param p3    # Ljava/io/PrintWriter;
-    .param p4    # [Ljava/lang/String;
 
     invoke-super {p0, p1, p2, p3, p4}, Landroid/app/Fragment;->dump(Ljava/lang/String;Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
 
@@ -284,7 +279,6 @@
 
 .method public getLayoutInflater(Landroid/os/Bundle;)Landroid/view/LayoutInflater;
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     iget-boolean v0, p0, Landroid/app/DialogFragment;->mShowsDialog:Z
 
@@ -396,7 +390,6 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onActivityCreated(Landroid/os/Bundle;)V
 
@@ -499,7 +492,6 @@
 
 .method public onAttach(Landroid/app/Activity;)V
     .locals 1
-    .param p1    # Landroid/app/Activity;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onAttach(Landroid/app/Activity;)V
 
@@ -517,14 +509,12 @@
 
 .method public onCancel(Landroid/content/DialogInterface;)V
     .locals 0
-    .param p1    # Landroid/content/DialogInterface;
 
     return-void
 .end method
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v1, 0x1
 
@@ -598,7 +588,6 @@
 
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     new-instance v0, Landroid/app/Dialog;
 
@@ -663,7 +652,6 @@
 
 .method public onDismiss(Landroid/content/DialogInterface;)V
     .locals 1
-    .param p1    # Landroid/content/DialogInterface;
 
     iget-boolean v0, p0, Landroid/app/DialogFragment;->mViewDestroyed:Z
 
@@ -679,7 +667,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onSaveInstanceState(Landroid/os/Bundle;)V
 
@@ -800,7 +787,6 @@
 
 .method public setCancelable(Z)V
     .locals 1
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/app/DialogFragment;->mCancelable:Z
 
@@ -818,7 +804,6 @@
 
 .method public setShowsDialog(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/app/DialogFragment;->mShowsDialog:Z
 
@@ -827,8 +812,6 @@
 
 .method public setStyle(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iput p1, p0, Landroid/app/DialogFragment;->mStyle:I
 
@@ -860,8 +843,6 @@
 
 .method public show(Landroid/app/FragmentTransaction;Ljava/lang/String;)I
     .locals 2
-    .param p1    # Landroid/app/FragmentTransaction;
-    .param p2    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -888,8 +869,6 @@
 
 .method public show(Landroid/app/FragmentManager;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Landroid/app/FragmentManager;
-    .param p2    # Ljava/lang/String;
 
     const/4 v1, 0x0
 

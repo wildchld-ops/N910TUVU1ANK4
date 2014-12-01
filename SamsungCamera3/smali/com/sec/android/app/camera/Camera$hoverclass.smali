@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Lcom/sec/android/app/camera/Camera;Lcom/sec/android/app/camera/Camera$1;)V
     .locals 0
-    .param p1    # Lcom/sec/android/app/camera/Camera;
-    .param p2    # Lcom/sec/android/app/camera/Camera$1;
 
     invoke-direct {p0, p1}, Lcom/sec/android/app/camera/Camera$hoverclass;-><init>(Lcom/sec/android/app/camera/Camera;)V
 
@@ -46,8 +44,6 @@
 # virtual methods
 .method public onHover(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     const/4 v0, 0x0
 

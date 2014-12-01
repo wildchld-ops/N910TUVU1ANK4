@@ -36,8 +36,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/16 v1, 0x63
 
@@ -80,7 +78,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/OneHandSideSoftKeyTransparencyPreference;)V
     .locals 0
-    .param p0    # Lcom/android/settings/OneHandSideSoftKeyTransparencyPreference;
 
     invoke-direct {p0}, Lcom/android/settings/OneHandSideSoftKeyTransparencyPreference;->onTransparencyChanged()V
 
@@ -89,7 +86,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/OneHandSideSoftKeyTransparencyPreference;)V
     .locals 0
-    .param p0    # Lcom/android/settings/OneHandSideSoftKeyTransparencyPreference;
 
     invoke-direct {p0}, Lcom/android/settings/OneHandSideSoftKeyTransparencyPreference;->onDonotshowChanged()V
 
@@ -178,7 +174,6 @@
 # virtual methods
 .method protected onBindDialogView(Landroid/view/View;)V
     .locals 4
-    .param p1    # Landroid/view/View;
 
     const/4 v0, 0x0
 
@@ -284,8 +279,6 @@
 
 .method public onCheckedChanged(Lcom/sec/android/touchwiz/widget/TwCompoundButton;Z)V
     .locals 1
-    .param p1    # Lcom/sec/android/touchwiz/widget/TwCompoundButton;
-    .param p2    # Z
 
     iget-object v0, p0, Lcom/android/settings/OneHandSideSoftKeyTransparencyPreference;->mCheckBox:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
@@ -312,7 +305,6 @@
 
 .method protected onDialogClosed(Z)V
     .locals 4
-    .param p1    # Z
 
     invoke-super {p0, p1}, Landroid/preference/SeekBarDialogPreference;->onDialogClosed(Z)V
 
@@ -429,9 +421,6 @@
 
 .method public onProgressChanged(Landroid/widget/SeekBar;IZ)V
     .locals 3
-    .param p1    # Landroid/widget/SeekBar;
-    .param p2    # I
-    .param p3    # Z
 
     iget-boolean v0, p0, Lcom/android/settings/OneHandSideSoftKeyTransparencyPreference;->mTouchInProgress:Z
 
@@ -487,7 +476,6 @@
 
 .method public onStartTrackingTouch(Landroid/widget/SeekBar;)V
     .locals 1
-    .param p1    # Landroid/widget/SeekBar;
 
     const/4 v0, 0x0
 
@@ -498,7 +486,6 @@
 
 .method public onStopTrackingTouch(Landroid/widget/SeekBar;)V
     .locals 1
-    .param p1    # Landroid/widget/SeekBar;
 
     const/4 v0, 0x1
 
@@ -509,7 +496,6 @@
 
 .method protected showDialog(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v3, 0x1
 

@@ -598,7 +598,6 @@
 
 .method static synthetic access$000(Lcom/android/server/DeviceManager3LMService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/DeviceManager3LMService;
 
     iget-boolean v0, p0, Lcom/android/server/DeviceManager3LMService;->mUseCustomNotification:Z
 
@@ -607,7 +606,6 @@
 
 .method static synthetic access$100(Lcom/android/server/DeviceManager3LMService;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/server/DeviceManager3LMService;
 
     iget-object v0, p0, Lcom/android/server/DeviceManager3LMService;->mNotificationText:Ljava/lang/String;
 
@@ -616,8 +614,6 @@
 
 .method static synthetic access$102(Lcom/android/server/DeviceManager3LMService;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/android/server/DeviceManager3LMService;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/server/DeviceManager3LMService;->mNotificationText:Ljava/lang/String;
 
@@ -626,7 +622,6 @@
 
 .method static synthetic access$200(Lcom/android/server/DeviceManager3LMService;)Landroid/app/NotificationManager;
     .locals 1
-    .param p0    # Lcom/android/server/DeviceManager3LMService;
 
     iget-object v0, p0, Lcom/android/server/DeviceManager3LMService;->mNotificationManager:Landroid/app/NotificationManager;
 
@@ -635,8 +630,6 @@
 
 .method static synthetic access$702(Lcom/android/server/DeviceManager3LMService;Landroid/bluetooth/BluetoothPan;)Landroid/bluetooth/BluetoothPan;
     .locals 0
-    .param p0    # Lcom/android/server/DeviceManager3LMService;
-    .param p1    # Landroid/bluetooth/BluetoothPan;
 
     iput-object p1, p0, Lcom/android/server/DeviceManager3LMService;->mBluetoothPan:Landroid/bluetooth/BluetoothPan;
 
@@ -645,8 +638,6 @@
 
 .method static synthetic access$800(Lcom/android/server/DeviceManager3LMService;I)V
     .locals 0
-    .param p0    # Lcom/android/server/DeviceManager3LMService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/DeviceManager3LMService;->setCurrentUserId(I)V
 
@@ -655,7 +646,6 @@
 
 .method private clearNotification(I)V
     .locals 1
-    .param p1    # I
 
     new-instance v0, Lcom/android/server/DeviceManager3LMService$3;
 
@@ -668,8 +658,6 @@
 
 .method private fillApnMap(Ljava/util/Map;Landroid/database/Cursor;)V
     .locals 2
-    .param p1    # Ljava/util/Map;
-    .param p2    # Landroid/database/Cursor;
 
     const-string v0, "_id"
 
@@ -896,7 +884,6 @@
 
 .method private getApplicationLabel(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -998,7 +985,6 @@
 
 .method private isAccessPermitted(Z)Z
     .locals 1
-    .param p1    # Z
 
     const/4 v0, 0x1
 
@@ -1037,7 +1023,6 @@
 
 .method private isBootLocked(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -1046,23 +1031,12 @@
 
 .method private notify(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/content/Intent;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Landroid/content/Intent;
 
     return-void
 .end method
 
 .method private notify(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/content/Intent;I)V
     .locals 8
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Landroid/content/Intent;
-    .param p6    # I
 
     new-instance v0, Lcom/android/server/DeviceManager3LMService$2;
 
@@ -1089,7 +1063,6 @@
 
 .method private setApnLockMode(Z)Z
     .locals 4
-    .param p1    # Z
 
     const/4 v1, 0x1
 
@@ -1120,7 +1093,6 @@
 
 .method private setCurrentUserId(I)V
     .locals 3
-    .param p1    # I
 
     sput p1, Lcom/android/server/DeviceManager3LMService;->mCurrentUserId:I
 
@@ -1153,7 +1125,6 @@
 
 .method private static setNFCSavedState(I)V
     .locals 0
-    .param p0    # I
 
     sput p0, Lcom/android/server/DeviceManager3LMService;->NFCSavedState:I
 
@@ -1162,15 +1133,12 @@
 
 .method private setPackageState(Ljava/lang/String;I)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     return-void
 .end method
 
 .method private updateNetworkRules(Lcom/android/server/DeviceManager3LMService$RulesEngine;)V
     .locals 0
-    .param p1    # Lcom/android/server/DeviceManager3LMService$RulesEngine;
 
     return-void
 .end method
@@ -1179,15 +1147,12 @@
 # virtual methods
 .method public addApn(Ljava/util/Map;)V
     .locals 0
-    .param p1    # Ljava/util/Map;
 
     return-void
 .end method
 
 .method public addOrUpdateApn(Ljava/util/Map;I)Z
     .locals 2
-    .param p1    # Ljava/util/Map;
-    .param p2    # I
 
     invoke-virtual {p0, p1, p2}, Lcom/android/server/DeviceManager3LMService;->addOrUpdateApnResult(Ljava/util/Map;I)I
 
@@ -1208,8 +1173,6 @@
 
 .method public addOrUpdateApnResult(Ljava/util/Map;I)I
     .locals 23
-    .param p1    # Ljava/util/Map;
-    .param p2    # I
 
     invoke-direct/range {p0 .. p0}, Lcom/android/server/DeviceManager3LMService;->isAccessPermitted()Z
 
@@ -1621,35 +1584,30 @@
 
 .method public blockAdb(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method public blockScreenshot(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method public blockTethering(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method public blockUsb(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method public checkAppInstallPolicies(Ljava/lang/String;Ljava/util/List;Ljava/util/List;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1672,7 +1630,6 @@
 
 .method public checkAppUninstallPolicies(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -1681,8 +1638,6 @@
 
 .method public checkPackagePermission(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -1691,7 +1646,6 @@
 
 .method public checkPrimaryClipAccess(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -1700,7 +1654,6 @@
 
 .method public checkSignature(I)Z
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -1709,8 +1662,6 @@
 
 .method public checkUidPermission(Ljava/lang/String;I)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v0, 0x1
 
@@ -1719,7 +1670,6 @@
 
 .method public checkVpnDns(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -1740,7 +1690,6 @@
 
 .method public clearApplicationUserData(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -1755,16 +1704,12 @@
 
 .method public completePackageScan(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     return-void
 .end method
 
 .method public connectToVpn(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -1773,7 +1718,6 @@
 
 .method public deleteApn(I)Z
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/server/DeviceManager3LMService;->deleteApnResult(I)I
 
@@ -1794,7 +1738,6 @@
 
 .method public deleteApnResult(I)I
     .locals 7
-    .param p1    # I
 
     const/4 v2, -0x4
 
@@ -1883,22 +1826,18 @@
 
 .method public deletePackage(Ljava/lang/String;Z)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     return-void
 .end method
 
 .method public disablePackage(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method public disconnectFromVpn(Z)Z
     .locals 1
-    .param p1    # Z
 
     const/4 v0, 0x0
 
@@ -1907,16 +1846,12 @@
 
 .method public enablePackage(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method public encryptPackage(Ljava/lang/String;ZZ)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1948,7 +1883,6 @@
 
 .method public getApn(I)Ljava/util/Map;
     .locals 11
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -2091,8 +2025,6 @@
 
 .method public getApnByMccMnc(II)Ljava/util/List;
     .locals 11
-    .param p1    # I
-    .param p2    # I
 
     const/16 v1, 0x3e7
 
@@ -2385,7 +2317,6 @@
 
 .method public getPackageGids(Ljava/lang/String;)[I
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -2396,7 +2327,6 @@
 
 .method public getPackageGidsWithException(Ljava/lang/String;)[I
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/server/DeviceManager3LMService;->mPackageManager:Landroid/content/pm/PackageManager;
 
@@ -2562,14 +2492,12 @@
 
 .method public init(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     return-void
 .end method
 
 .method public installPackage(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     return-void
 .end method
@@ -2600,7 +2528,6 @@
 
 .method public isApnSelectable(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/server/DeviceManager3LMService;->mApnList:Ljava/util/Set;
 
@@ -2667,7 +2594,6 @@
 
 .method public isPackage3LM(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -2676,7 +2602,6 @@
 
 .method public isPackageDisabled(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -2685,7 +2610,6 @@
 
 .method public isPackageEncrypted(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2699,7 +2623,6 @@
 
 .method public isPackageEncryptionRequired(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2713,7 +2636,6 @@
 
 .method public isPackageWhitelisted(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -2859,7 +2781,6 @@
 
 .method public isSsidAllowed(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -2868,7 +2789,6 @@
 
 .method public isSsidLocked(Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/16 v4, 0x22
 
@@ -2984,8 +2904,6 @@
 
 .method public keyStoreChangePassword(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -2994,7 +2912,6 @@
 
 .method public keyStoreContains(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -3003,7 +2920,6 @@
 
 .method public keyStoreDeleteKey(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -3012,7 +2928,6 @@
 
 .method public keyStoreGetKey(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -3037,8 +2952,6 @@
 
 .method public keyStorePutKey(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -3055,7 +2968,6 @@
 
 .method public keyStoreSetPassword(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     return-void
 .end method
@@ -3070,7 +2982,6 @@
 
 .method public keyStoreUnlock(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -3079,31 +2990,24 @@
 
 .method public lockAdmin(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method public lockApn(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method public notification(III)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     return-void
 .end method
 
 .method public putSettingsSecureInt(Ljava/lang/String;I)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -3112,8 +3016,6 @@
 
 .method public putSettingsSecureString(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -3128,7 +3030,6 @@
 
 .method public restoreOriginalDns(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -3137,7 +3038,6 @@
 
 .method public setActivationState(Z)V
     .locals 2
-    .param p1    # Z
 
     invoke-direct {p0}, Lcom/android/server/DeviceManager3LMService;->isAccessPermitted()Z
 
@@ -3168,7 +3068,6 @@
 
 .method public setAllowedPackages(Ljava/util/Map;)Z
     .locals 1
-    .param p1    # Ljava/util/Map;
 
     const/4 v0, 0x0
 
@@ -3351,7 +3250,6 @@
 
 .method public setAppInstallPermissionPolicies(Ljava/util/Map;)Z
     .locals 1
-    .param p1    # Ljava/util/Map;
 
     const/4 v0, 0x0
 
@@ -3360,7 +3258,6 @@
 
 .method public setAppInstallPkgNamePolicies(Ljava/util/Map;)Z
     .locals 1
-    .param p1    # Ljava/util/Map;
 
     const/4 v0, 0x0
 
@@ -3369,7 +3266,6 @@
 
 .method public setAppInstallPubkeyPolicies(Ljava/util/Map;)Z
     .locals 1
-    .param p1    # Ljava/util/Map;
 
     const/4 v0, 0x0
 
@@ -3378,7 +3274,6 @@
 
 .method public setAppUninstallPkgNamePolicies(Ljava/util/Map;)Z
     .locals 1
-    .param p1    # Ljava/util/Map;
 
     const/4 v0, 0x0
 
@@ -3387,21 +3282,18 @@
 
 .method public setBluetoothEnabled(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method public setBootLock(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method public setDataEncryptionRequired(Z)V
     .locals 0
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3413,7 +3305,6 @@
 
 .method public setExternalSDEncryptionState(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "DeviceManager3LM"
 
@@ -3462,7 +3353,6 @@
 
 .method public setExternalStorageEnabled(Z)V
     .locals 11
-    .param p1    # Z
 
     invoke-direct {p0}, Lcom/android/server/DeviceManager3LMService;->isAccessPermitted()Z
 
@@ -3584,7 +3474,6 @@
 
 .method public setLocationMode(I)Z
     .locals 2
-    .param p1    # I
 
     invoke-direct {p0}, Lcom/android/server/DeviceManager3LMService;->isAccessPermitted()Z
 
@@ -3617,15 +3506,12 @@
 
 .method public setLocationProviderEnabled(Ljava/lang/String;Z)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     return-void
 .end method
 
 .method public setMultiUserEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-direct {p0}, Lcom/android/server/DeviceManager3LMService;->isAccessPermitted()Z
 
@@ -3644,30 +3530,24 @@
 
 .method public setNfcState(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public setNotificationText(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method public setOtaDelay(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public setPackagePermission(Ljava/lang/String;Ljava/lang/String;Z)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     const/4 v0, 0x0
 
@@ -3676,9 +3556,6 @@
 
 .method public setPackageScanner(Ljava/lang/String;ZI)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # I
 
     return-void
 .end method
@@ -3718,7 +3595,6 @@
 
 .method public setPreferredApn(I)Z
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/server/DeviceManager3LMService;->setPreferredApnResult(I)I
 
@@ -3739,7 +3615,6 @@
 
 .method public setPreferredApnResult(I)I
     .locals 12
-    .param p1    # I
 
     const/4 v10, 0x0
 
@@ -3922,7 +3797,6 @@
 
 .method public setPrimaryClipOwner(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
@@ -3962,7 +3836,6 @@
 
 .method public setSdEncryptionRequired(Z)V
     .locals 5
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4060,14 +3933,12 @@
 
 .method public setWifiState(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public setisSimulatorPermitted(Z)V
     .locals 3
-    .param p1    # Z
 
     const-string v0, "DeviceManager3LM"
 
@@ -4122,7 +3993,6 @@
 
 .method public setupVpnDns(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -4137,8 +4007,6 @@
 
 .method public updateSdNotification(ZLjava/lang/String;)V
     .locals 0
-    .param p1    # Z
-    .param p2    # Ljava/lang/String;
 
     return-void
 .end method

@@ -32,10 +32,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;III)V
     .locals 9
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/4 v8, 0x1
 
@@ -187,7 +183,6 @@
 # virtual methods
 .method public changeBackground(Landroid/graphics/Bitmap;)V
     .locals 2
-    .param p1    # Landroid/graphics/Bitmap;
 
     const-string v0, "BrilliantCutEffect_BrilliantRingView"
 
@@ -231,7 +226,6 @@
 
 .method public handleTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 3
-    .param p1    # Landroid/view/MotionEvent;
 
     const-string v0, "BrilliantCutEffect_BrilliantRingView"
 
@@ -311,7 +305,6 @@
 
 .method protected onWindowVisibilityChanged(I)V
     .locals 0
-    .param p1    # I
 
     if-nez p1, :cond_0
 
@@ -375,8 +368,6 @@
 
 .method public sendDragSoundInfo(Landroid/media/SoundPool;I)V
     .locals 1
-    .param p1    # Landroid/media/SoundPool;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/sec/android/visualeffect/brilliantcuteffect/BrilliantCutView;->mRenderer:Lcom/sec/android/visualeffect/brilliantcuteffect/BrilliantCutRenderer;
 
@@ -387,7 +378,6 @@
 
 .method public setBackground(Landroid/graphics/Bitmap;)V
     .locals 2
-    .param p1    # Landroid/graphics/Bitmap;
 
     const-string v0, "BrilliantCutEffect_BrilliantRingView"
 
@@ -404,7 +394,6 @@
 
 .method public setResourcesBitmap(Landroid/graphics/Bitmap;)V
     .locals 1
-    .param p1    # Landroid/graphics/Bitmap;
 
     iget-object v0, p0, Lcom/sec/android/visualeffect/brilliantcuteffect/BrilliantCutView;->mRenderer:Lcom/sec/android/visualeffect/brilliantcuteffect/BrilliantCutRenderer;
 
@@ -415,7 +404,6 @@
 
 .method public settingsForImageType(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/visualeffect/brilliantcuteffect/BrilliantCutView;->mRenderer:Lcom/sec/android/visualeffect/brilliantcuteffect/BrilliantCutRenderer;
 
@@ -442,8 +430,6 @@
 
 .method public showUnlockAffordance(JLandroid/graphics/Rect;)V
     .locals 1
-    .param p1    # J
-    .param p3    # Landroid/graphics/Rect;
 
     iget-object v0, p0, Lcom/sec/android/visualeffect/brilliantcuteffect/BrilliantCutView;->mRenderer:Lcom/sec/android/visualeffect/brilliantcuteffect/BrilliantCutRenderer;
 

@@ -159,7 +159,6 @@
 
 .method private isEqualKeyIndex(I)Z
     .locals 7
-    .param p1    # I
 
     const/4 v6, -0x1
 
@@ -796,8 +795,6 @@
 
 .method private processMultiTap(I[I)V
     .locals 9
-    .param p1    # I
-    .param p2    # [I
 
     const/4 v8, 0x1
 
@@ -1009,8 +1006,6 @@
 
 .method private processMultiTapTone(I[I)V
     .locals 3
-    .param p1    # I
-    .param p2    # [I
 
     iget-object v1, p0, Lcom/diotek/ime/framework/input/AbstractInputModule;->mMultitap:Lcom/diotek/ime/framework/input/InputModule$Timer;
 
@@ -1092,8 +1087,6 @@
 
 .method private processSingleTap(I[I)V
     .locals 12
-    .param p1    # I
-    .param p2    # [I
 
     const/16 v2, 0x27
 
@@ -1729,7 +1722,6 @@
 
 .method private removeDivChar([C)Ljava/lang/String;
     .locals 6
-    .param p1    # [C
 
     const/4 v4, 0x0
 
@@ -1799,8 +1791,6 @@
 
 .method public onCharacterKey(I[I)V
     .locals 7
-    .param p1    # I
-    .param p2    # [I
 
     const/4 v3, 0x1
 
@@ -1955,17 +1945,12 @@
 
 .method public onHwrPanelLongPressed(ILjava/lang/String;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method public onHwrTouchDown(IIJ)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
 
     const/4 v0, 0x0
 
@@ -1974,9 +1959,6 @@
 
 .method public onHwrTouchMove(IIJ)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
 
     const/4 v0, 0x0
 
@@ -1985,9 +1967,6 @@
 
 .method public onHwrTouchUp(IIJ)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
 
     const/4 v0, 0x0
 
@@ -1996,7 +1975,6 @@
 
 .method public onText(Ljava/lang/CharSequence;)V
     .locals 7
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v6, 0x0
 
@@ -2113,8 +2091,6 @@
 
 .method public pickSuggestionManually(ILjava/lang/CharSequence;)V
     .locals 10
-    .param p1    # I
-    .param p2    # Ljava/lang/CharSequence;
 
     const/4 v6, 0x0
 
@@ -2288,16 +2264,12 @@
 
 .method public previewTrace(IZ)V
     .locals 0
-    .param p1    # I
-    .param p2    # Z
 
     return-void
 .end method
 
 .method protected processSymbolicKey(I[I)V
     .locals 12
-    .param p1    # I
-    .param p2    # [I
 
     iget-object v8, p0, Lcom/diotek/ime/framework/input/AbstractInputModule;->mEngineManager:Lcom/diotek/ime/framework/engine/InputEngineManager;
 

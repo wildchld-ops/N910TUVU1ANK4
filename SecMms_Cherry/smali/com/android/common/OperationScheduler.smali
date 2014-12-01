@@ -22,7 +22,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/SharedPreferences;)V
     .locals 0
-    .param p1    # Landroid/content/SharedPreferences;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -33,8 +32,6 @@
 
 .method private getTimeBefore(Ljava/lang/String;J)J
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
 
     iget-object v2, p0, Lcom/android/common/OperationScheduler;->mStorage:Landroid/content/SharedPreferences;
 
@@ -68,8 +65,6 @@
 
 .method public static parseOptions(Ljava/lang/String;Lcom/android/common/OperationScheduler$Options;)Lcom/android/common/OperationScheduler$Options;
     .locals 11
-    .param p0    # Ljava/lang/String;
-    .param p1    # Lcom/android/common/OperationScheduler$Options;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;
@@ -315,7 +310,6 @@
 
 .method private static parseSeconds(Ljava/lang/String;)J
     .locals 2
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/NumberFormatException;
@@ -393,7 +387,6 @@
 
 .method public getNextTimeMillis(Lcom/android/common/OperationScheduler$Options;)J
     .locals 30
-    .param p1    # Lcom/android/common/OperationScheduler$Options;
 
     move-object/from16 v0, p0
 
@@ -811,7 +804,6 @@
 
 .method public setEnabledState(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/common/OperationScheduler;->mStorage:Landroid/content/SharedPreferences;
 
@@ -832,7 +824,6 @@
 
 .method public setMoratoriumTimeHttp(Ljava/lang/String;)Z
     .locals 9
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x1
 
@@ -886,7 +877,6 @@
 
 .method public setMoratoriumTimeMillis(J)V
     .locals 4
-    .param p1    # J
 
     iget-object v0, p0, Lcom/android/common/OperationScheduler;->mStorage:Landroid/content/SharedPreferences;
 
@@ -917,7 +907,6 @@
 
 .method public setTriggerTimeMillis(J)V
     .locals 2
-    .param p1    # J
 
     iget-object v0, p0, Lcom/android/common/OperationScheduler;->mStorage:Landroid/content/SharedPreferences;
 

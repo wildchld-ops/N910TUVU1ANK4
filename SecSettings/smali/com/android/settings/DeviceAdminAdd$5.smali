@@ -21,7 +21,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/settings/DeviceAdminAdd;Landroid/os/Handler;)V
     .locals 0
-    .param p2    # Landroid/os/Handler;
 
     iput-object p1, p0, Lcom/android/settings/DeviceAdminAdd$5;->this$0:Lcom/android/settings/DeviceAdminAdd;
 
@@ -34,7 +33,6 @@
 # virtual methods
 .method protected onResult(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     if-eqz p1, :cond_1
 

@@ -65,8 +65,6 @@
 
 .method constructor <init>(Ljava/lang/String;Z)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -85,7 +83,6 @@
 
 .method private static getCachedDirectionality(C)B
     .locals 1
-    .param p0    # C
 
     const/16 v0, 0x700
 

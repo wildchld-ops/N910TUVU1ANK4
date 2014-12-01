@@ -14,7 +14,6 @@
 
 .method public static getAlpha(Landroid/view/View;)F
     .locals 1
-    .param p0    # Landroid/view/View;
 
     invoke-virtual {p0}, Landroid/view/View;->getAlpha()F
 
@@ -35,7 +34,6 @@
 
 .method public static getLayerType(Landroid/view/View;)I
     .locals 1
-    .param p0    # Landroid/view/View;
 
     invoke-virtual {p0}, Landroid/view/View;->getLayerType()I
 
@@ -46,7 +44,6 @@
 
 .method public static getMeasuredHeightAndState(Landroid/view/View;)I
     .locals 1
-    .param p0    # Landroid/view/View;
 
     invoke-virtual {p0}, Landroid/view/View;->getMeasuredHeightAndState()I
 
@@ -57,7 +54,6 @@
 
 .method public static getMeasuredState(Landroid/view/View;)I
     .locals 1
-    .param p0    # Landroid/view/View;
 
     invoke-virtual {p0}, Landroid/view/View;->getMeasuredState()I
 
@@ -68,7 +64,6 @@
 
 .method public static getMeasuredWidthAndState(Landroid/view/View;)I
     .locals 1
-    .param p0    # Landroid/view/View;
 
     invoke-virtual {p0}, Landroid/view/View;->getMeasuredWidthAndState()I
 
@@ -79,9 +74,6 @@
 
 .method public static resolveSizeAndState(III)I
     .locals 1
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
 
     invoke-static {p0, p1, p2}, Landroid/view/View;->resolveSizeAndState(III)I
 
@@ -92,9 +84,6 @@
 
 .method public static setLayerType(Landroid/view/View;ILandroid/graphics/Paint;)V
     .locals 0
-    .param p0    # Landroid/view/View;
-    .param p1    # I
-    .param p2    # Landroid/graphics/Paint;
 
     invoke-virtual {p0, p1, p2}, Landroid/view/View;->setLayerType(ILandroid/graphics/Paint;)V
 

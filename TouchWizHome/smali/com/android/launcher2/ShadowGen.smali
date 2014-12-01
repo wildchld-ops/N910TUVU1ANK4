@@ -157,7 +157,6 @@
 
 .method static synthetic access$400(Lcom/android/launcher2/ShadowGen;)Ljava/util/LinkedList;
     .locals 1
-    .param p0    # Lcom/android/launcher2/ShadowGen;
 
     iget-object v0, p0, Lcom/android/launcher2/ShadowGen;->mQueue:Ljava/util/LinkedList;
 
@@ -182,7 +181,6 @@
 
 .method static synthetic access$700(Lcom/android/launcher2/ShadowGen;)Ljava/util/LinkedList;
     .locals 1
-    .param p0    # Lcom/android/launcher2/ShadowGen;
 
     iget-object v0, p0, Lcom/android/launcher2/ShadowGen;->mFolderQueue:Ljava/util/LinkedList;
 
@@ -293,11 +291,6 @@
 
 .method public queueBitmap(Landroid/graphics/Bitmap;Lcom/android/launcher2/ShadowGen$GeneratedCallback;Landroid/os/Handler;Landroid/content/res/Resources;Z)V
     .locals 5
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # Lcom/android/launcher2/ShadowGen$GeneratedCallback;
-    .param p3    # Landroid/os/Handler;
-    .param p4    # Landroid/content/res/Resources;
-    .param p5    # Z
 
     const/4 v4, 0x0
 
@@ -444,7 +437,6 @@
 
 .method public startInBackground(Landroid/content/res/Resources;)V
     .locals 2
-    .param p1    # Landroid/content/res/Resources;
 
     const/4 v1, -0x1
 

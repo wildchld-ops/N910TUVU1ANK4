@@ -7259,13 +7259,6 @@
     <public type="dimen" name="default_emoticon_item_toppadding" id="0x7f090ba4" />
     <public type="dimen" name="qwerty_emoticon_first_line_vertical_gap" id="0x7f090ba5" />
     <public type="dimen" name="qwerty_emoticon_last_line_vertical_gap" id="0x7f090ba6" />
-    <public type="dimen" name="japanese_qwerty_key_last_horizontal_gap2" id="0x7f090bac" />
-    <public type="dimen" name="japanese_qwerty_key_last_width_url_email_multi_language" id="0x7f090bad" />
-    <public type="dimen" name="qwerty_email_url_last_line_horizontal_gap" id="0x7f090bae" />
-    <public type="dimen" name="qwerty_indian_tamil_first_column_fourth_line_horizontal_gap2" id="0x7f090baf" />
-    <public type="dimen" name="danish_horizontal_gap_right_of_sym" id="0x7f090bb0" />
-    <public type="dimen" name="danish_horizontal_gap_left_of_enter" id="0x7f090bb1" />
-    <public type="dimen" name="qwerty_kazakh_third_row_default_gap" id="0x7f090bb2" />
     <public type="dimen" name="APKTOOL_DUMMY_09b6" id="0x7f0909b6" />
     <public type="dimen" name="APKTOOL_DUMMY_09b7" id="0x7f0909b7" />
     <public type="dimen" name="APKTOOL_DUMMY_09b8" id="0x7f0909b8" />
@@ -7438,6 +7431,13 @@
     <public type="dimen" name="APKTOOL_DUMMY_0ba9" id="0x7f090ba9" />
     <public type="dimen" name="APKTOOL_DUMMY_0baa" id="0x7f090baa" />
     <public type="dimen" name="APKTOOL_DUMMY_0bab" id="0x7f090bab" />
+    <public type="dimen" name="japanese_qwerty_key_last_horizontal_gap2" id="0x7f090bac" />
+    <public type="dimen" name="japanese_qwerty_key_last_width_url_email_multi_language" id="0x7f090bad" />
+    <public type="dimen" name="qwerty_email_url_last_line_horizontal_gap" id="0x7f090bae" />
+    <public type="dimen" name="qwerty_indian_tamil_first_column_fourth_line_horizontal_gap2" id="0x7f090baf" />
+    <public type="dimen" name="danish_horizontal_gap_right_of_sym" id="0x7f090bb0" />
+    <public type="dimen" name="danish_horizontal_gap_left_of_enter" id="0x7f090bb1" />
+    <public type="dimen" name="qwerty_kazakh_third_row_default_gap" id="0x7f090bb2" />
     <public type="dimen" name="APKTOOL_DUMMY_0bb3" id="0x7f090bb3" />
     <public type="dimen" name="APKTOOL_DUMMY_0bb4" id="0x7f090bb4" />
     <public type="dimen" name="APKTOOL_DUMMY_0bb5" id="0x7f090bb5" />
@@ -8898,13 +8898,13 @@
     <public type="color" name="setting_select_input_languages_list_text_color_xml" id="0x7f0c0066" />
     <public type="color" name="settings_button_text_color_white_xml" id="0x7f0c0067" />
     <public type="color" name="settings_button_text_color_xml" id="0x7f0c0068" />
+    <public type="color" name="APKTOOL_DUMMY_004d" id="0x7f0c004d" />
     <public type="color" name="pressedkey_extra_labelcolor" id="0x7f0c004e" />
     <public type="color" name="pressed_numberkey_extra_labelcolor" id="0x7f0c004f" />
     <public type="color" name="numberkey_extra_labelcolor" id="0x7f0c0050" />
     <public type="color" name="phonepad_text_labelcolor" id="0x7f0c0051" />
     <public type="color" name="phonepad_text_labelcolor_press" id="0x7f0c0052" />
     <public type="color" name="phonepad_month_number_text_labelcolor" id="0x7f0c0053" />
-    <public type="color" name="APKTOOL_DUMMY_004d" id="0x7f0c004d" />
     <public type="color" name="APKTOOL_DUMMY_0054" id="0x7f0c0054" />
     <public type="color" name="APKTOOL_DUMMY_0055" id="0x7f0c0055" />
     <public type="color" name="APKTOOL_DUMMY_0056" id="0x7f0c0056" />

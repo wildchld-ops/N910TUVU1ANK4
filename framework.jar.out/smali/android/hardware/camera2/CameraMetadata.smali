@@ -258,7 +258,6 @@
 
 .method static getKeysStatic(Ljava/lang/Class;Landroid/hardware/camera2/CameraMetadata;)Ljava/util/ArrayList;
     .locals 10
-    .param p1    # Landroid/hardware/camera2/CameraMetadata;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

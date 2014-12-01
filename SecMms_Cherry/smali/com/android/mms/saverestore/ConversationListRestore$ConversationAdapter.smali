@@ -21,8 +21,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/mms/saverestore/ConversationListRestore;Landroid/content/Context;ILjava/util/ArrayList;)V
     .locals 0
-    .param p2    # Landroid/content/Context;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -46,9 +44,6 @@
 # virtual methods
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 26
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     move-object/from16 v14, p2
 

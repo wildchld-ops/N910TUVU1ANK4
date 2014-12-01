@@ -14,8 +14,6 @@
 
 .method static startActivities(Landroid/content/Context;[Landroid/content/Intent;)V
     .locals 0
-    .param p0    # Landroid/content/Context;
-    .param p1    # [Landroid/content/Intent;
 
     invoke-virtual {p0, p1}, Landroid/content/Context;->startActivities([Landroid/content/Intent;)V
 

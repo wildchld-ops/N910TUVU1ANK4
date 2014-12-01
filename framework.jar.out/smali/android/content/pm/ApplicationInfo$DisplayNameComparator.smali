@@ -36,7 +36,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/pm/PackageManager;)V
     .locals 1
-    .param p1    # Landroid/content/pm/PackageManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -55,8 +54,6 @@
 # virtual methods
 .method public final compare(Landroid/content/pm/ApplicationInfo;Landroid/content/pm/ApplicationInfo;)I
     .locals 5
-    .param p1    # Landroid/content/pm/ApplicationInfo;
-    .param p2    # Landroid/content/pm/ApplicationInfo;
 
     iget-object v2, p0, Landroid/content/pm/ApplicationInfo$DisplayNameComparator;->mPM:Landroid/content/pm/PackageManager;
 
@@ -99,8 +96,6 @@
 
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p1, Landroid/content/pm/ApplicationInfo;
 

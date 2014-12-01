@@ -33,7 +33,6 @@
 # virtual methods
 .method public awakenScrollBars(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/webkitsec/WebView$PrivateAccess;->this$0:Landroid/webkitsec/WebView;
 
@@ -45,8 +44,6 @@
 
 .method public awakenScrollBars(IZ)V
     .locals 1
-    .param p1    # I
-    .param p2    # Z
 
     iget-object v0, p0, Landroid/webkitsec/WebView$PrivateAccess;->this$0:Landroid/webkitsec/WebView;
 
@@ -97,10 +94,6 @@
 
 .method public onScrollChanged(IIII)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iget-object v0, p0, Landroid/webkitsec/WebView$PrivateAccess;->this$0:Landroid/webkitsec/WebView;
 
@@ -111,15 +104,6 @@
 
 .method public overScrollBy(IIIIIIIIZ)V
     .locals 10
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
-    .param p9    # Z
 
     iget-object v0, p0, Landroid/webkitsec/WebView$PrivateAccess;->this$0:Landroid/webkitsec/WebView;
 
@@ -149,8 +133,6 @@
 
 .method public setMeasuredDimension(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Landroid/webkitsec/WebView$PrivateAccess;->this$0:Landroid/webkitsec/WebView;
 
@@ -162,7 +144,6 @@
 
 .method public setScrollXRaw(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/webkitsec/WebView$PrivateAccess;->this$0:Landroid/webkitsec/WebView;
 
@@ -174,7 +155,6 @@
 
 .method public setScrollYRaw(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/webkitsec/WebView$PrivateAccess;->this$0:Landroid/webkitsec/WebView;
 
@@ -197,7 +177,6 @@
 
 .method public super_dispatchKeyEvent(Landroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/KeyEvent;
 
     iget-object v0, p0, Landroid/webkitsec/WebView$PrivateAccess;->this$0:Landroid/webkitsec/WebView;
 
@@ -224,7 +203,6 @@
 
 .method public super_onGenericMotionEvent(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-object v0, p0, Landroid/webkitsec/WebView$PrivateAccess;->this$0:Landroid/webkitsec/WebView;
 
@@ -238,7 +216,6 @@
 
 .method public super_onHoverEvent(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-object v0, p0, Landroid/webkitsec/WebView$PrivateAccess;->this$0:Landroid/webkitsec/WebView;
 
@@ -252,8 +229,6 @@
 
 .method public super_performAccessibilityAction(ILandroid/os/Bundle;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     iget-object v0, p0, Landroid/webkitsec/WebView$PrivateAccess;->this$0:Landroid/webkitsec/WebView;
 
@@ -280,8 +255,6 @@
 
 .method public super_requestFocus(ILandroid/graphics/Rect;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/graphics/Rect;
 
     iget-object v0, p0, Landroid/webkitsec/WebView$PrivateAccess;->this$0:Landroid/webkitsec/WebView;
 
@@ -295,8 +268,6 @@
 
 .method public super_scrollTo(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Landroid/webkitsec/WebView$PrivateAccess;->this$0:Landroid/webkitsec/WebView;
 
@@ -308,10 +279,6 @@
 
 .method public super_setFrame(IIII)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iget-object v0, p0, Landroid/webkitsec/WebView$PrivateAccess;->this$0:Landroid/webkitsec/WebView;
 
@@ -325,7 +292,6 @@
 
 .method public super_setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
     .locals 1
-    .param p1    # Landroid/view/ViewGroup$LayoutParams;
 
     iget-object v0, p0, Landroid/webkitsec/WebView$PrivateAccess;->this$0:Landroid/webkitsec/WebView;
 

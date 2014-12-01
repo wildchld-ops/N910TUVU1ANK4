@@ -12,9 +12,6 @@
 # direct methods
 .method public constructor <init>(III)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0, p1}, Landroid/graphics/drawable/ColorDrawable;-><init>(I)V
 

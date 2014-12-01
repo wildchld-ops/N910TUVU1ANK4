@@ -51,7 +51,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Landroid/view/View;->requestFocus()Z
+    invoke-virtual {v0}, Landroid/widget/AutoCompleteTextView;->requestFocus()Z
 
     :cond_0
     const/4 v0, 0x1

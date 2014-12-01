@@ -18,8 +18,6 @@
 
 .method public static checkPrivacy(Landroid/content/Context;Landroid/net/Uri;)Z
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
 
     const/4 v1, 0x1
 

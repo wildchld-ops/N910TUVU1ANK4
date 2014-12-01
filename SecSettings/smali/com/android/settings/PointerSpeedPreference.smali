@@ -31,8 +31,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/preference/SeekBarDialogPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -69,7 +67,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/PointerSpeedPreference;)V
     .locals 0
-    .param p0    # Lcom/android/settings/PointerSpeedPreference;
 
     invoke-direct {p0}, Lcom/android/settings/PointerSpeedPreference;->onSpeedChanged()V
 
@@ -126,7 +123,6 @@
 # virtual methods
 .method protected onBindDialogView(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     invoke-super {p0, p1}, Landroid/preference/SeekBarDialogPreference;->onBindDialogView(Landroid/view/View;)V
 
@@ -175,7 +171,6 @@
 
 .method protected onDialogClosed(Z)V
     .locals 4
-    .param p1    # Z
 
     invoke-super {p0, p1}, Landroid/preference/DialogPreference;->onDialogClosed(Z)V
 
@@ -220,9 +215,6 @@
 
 .method public onProgressChanged(Landroid/widget/SeekBar;IZ)V
     .locals 2
-    .param p1    # Landroid/widget/SeekBar;
-    .param p2    # I
-    .param p3    # Z
 
     iget-boolean v0, p0, Lcom/android/settings/PointerSpeedPreference;->mTouchInProgress:Z
 
@@ -344,7 +336,6 @@
 
 .method public onStartTrackingTouch(Landroid/widget/SeekBar;)V
     .locals 1
-    .param p1    # Landroid/widget/SeekBar;
 
     const/4 v0, 0x1
 
@@ -355,7 +346,6 @@
 
 .method public onStopTrackingTouch(Landroid/widget/SeekBar;)V
     .locals 2
-    .param p1    # Landroid/widget/SeekBar;
 
     const/4 v0, 0x0
 
@@ -376,7 +366,6 @@
 
 .method protected showDialog(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/preference/DialogPreference;->showDialog(Landroid/os/Bundle;)V
 

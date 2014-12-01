@@ -36,7 +36,6 @@
 # virtual methods
 .method public onAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
     .locals 5
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
 
     iget-object v1, p0, Landroid/app/UiAutomation$IAccessibilityServiceClientImpl$1;->val$this$0:Landroid/app/UiAutomation;
 
@@ -124,7 +123,6 @@
 
 .method public onGesture(I)Z
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -139,7 +137,6 @@
 
 .method public onKeyEvent(Landroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x0
 
@@ -154,7 +151,6 @@
 
 .method public onSetConnectionId(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Landroid/app/UiAutomation$IAccessibilityServiceClientImpl$1;->val$this$0:Landroid/app/UiAutomation;
 

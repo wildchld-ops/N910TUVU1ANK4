@@ -50,8 +50,6 @@
 
 .method public static createConfigDialogIntent(Ljava/lang/String;Lcom/android/mms/util/VipModeCTC$ConfigDialog;)Landroid/content/Intent;
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Lcom/android/mms/util/VipModeCTC$ConfigDialog;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -86,8 +84,6 @@
 
 .method public static isMessageBlocked(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 7
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     new-instance v1, Landroid/os/Bundle;
 
@@ -166,7 +162,6 @@
 
 .method public static isNumberEligibleForConfigDialog(Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 

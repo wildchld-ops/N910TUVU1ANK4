@@ -46,8 +46,6 @@
 # virtual methods
 .method public compare(Landroid/graphics/Paint$Gradient;Landroid/graphics/Paint$Gradient;)I
     .locals 2
-    .param p1    # Landroid/graphics/Paint$Gradient;
-    .param p2    # Landroid/graphics/Paint$Gradient;
 
     iget v0, p1, Landroid/graphics/Paint$Gradient;->position:F
 
@@ -83,8 +81,6 @@
 
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p1, Landroid/graphics/Paint$Gradient;
 

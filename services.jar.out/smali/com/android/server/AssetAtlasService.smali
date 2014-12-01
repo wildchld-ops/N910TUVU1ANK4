@@ -51,7 +51,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 9
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Landroid/view/IAssetAtlas$Stub;-><init>()V
 
@@ -157,7 +156,6 @@
 
 .method static synthetic access$000(Lcom/android/server/AssetAtlasService;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/server/AssetAtlasService;
 
     iget-object v0, p0, Lcom/android/server/AssetAtlasService;->mVersionName:Ljava/lang/String;
 
@@ -166,10 +164,6 @@
 
 .method static synthetic access$100(Lcom/android/server/AssetAtlasService;Ljava/util/ArrayList;ILjava/lang/String;)Lcom/android/server/AssetAtlasService$Configuration;
     .locals 1
-    .param p0    # Lcom/android/server/AssetAtlasService;
-    .param p1    # Ljava/util/ArrayList;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/server/AssetAtlasService;->chooseConfiguration(Ljava/util/ArrayList;ILjava/lang/String;)Lcom/android/server/AssetAtlasService$Configuration;
 
@@ -180,7 +174,6 @@
 
 .method static synthetic access$200(Lcom/android/server/AssetAtlasService;)Landroid/view/GraphicBuffer;
     .locals 1
-    .param p0    # Lcom/android/server/AssetAtlasService;
 
     iget-object v0, p0, Lcom/android/server/AssetAtlasService;->mBuffer:Landroid/view/GraphicBuffer;
 
@@ -189,8 +182,6 @@
 
 .method static synthetic access$202(Lcom/android/server/AssetAtlasService;Landroid/view/GraphicBuffer;)Landroid/view/GraphicBuffer;
     .locals 0
-    .param p0    # Lcom/android/server/AssetAtlasService;
-    .param p1    # Landroid/view/GraphicBuffer;
 
     iput-object p1, p0, Lcom/android/server/AssetAtlasService;->mBuffer:Landroid/view/GraphicBuffer;
 
@@ -199,7 +190,6 @@
 
 .method static synthetic access$300(Lcom/android/server/AssetAtlasService;)Ljava/util/concurrent/atomic/AtomicBoolean;
     .locals 1
-    .param p0    # Lcom/android/server/AssetAtlasService;
 
     iget-object v0, p0, Lcom/android/server/AssetAtlasService;->mAtlasReady:Ljava/util/concurrent/atomic/AtomicBoolean;
 
@@ -208,7 +198,6 @@
 
 .method static synthetic access$400(Lcom/android/server/AssetAtlasService;)[I
     .locals 1
-    .param p0    # Lcom/android/server/AssetAtlasService;
 
     iget-object v0, p0, Lcom/android/server/AssetAtlasService;->mAtlasMap:[I
 
@@ -217,8 +206,6 @@
 
 .method static synthetic access$402(Lcom/android/server/AssetAtlasService;[I)[I
     .locals 0
-    .param p0    # Lcom/android/server/AssetAtlasService;
-    .param p1    # [I
 
     iput-object p1, p0, Lcom/android/server/AssetAtlasService;->mAtlasMap:[I
 
@@ -235,8 +222,6 @@
 
 .method static synthetic access$600(Landroid/view/GraphicBuffer;I)Z
     .locals 1
-    .param p0    # Landroid/view/GraphicBuffer;
-    .param p1    # I
 
     invoke-static {p0, p1}, Lcom/android/server/AssetAtlasService;->nUploadAtlas(Landroid/view/GraphicBuffer;I)Z
 
@@ -247,9 +232,6 @@
 
 .method static synthetic access$700(Landroid/graphics/Canvas;II)I
     .locals 1
-    .param p0    # Landroid/graphics/Canvas;
-    .param p1    # I
-    .param p2    # I
 
     invoke-static {p0, p1, p2}, Lcom/android/server/AssetAtlasService;->nAcquireAtlasCanvas(Landroid/graphics/Canvas;II)I
 
@@ -260,8 +242,6 @@
 
 .method static synthetic access$800(Landroid/graphics/Canvas;I)V
     .locals 0
-    .param p0    # Landroid/graphics/Canvas;
-    .param p1    # I
 
     invoke-static {p0, p1}, Lcom/android/server/AssetAtlasService;->nReleaseAtlasCanvas(Landroid/graphics/Canvas;I)V
 
@@ -270,8 +250,6 @@
 
 .method private checkBuildIdentifier(Ljava/io/BufferedReader;Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/io/BufferedReader;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -295,8 +273,6 @@
 
 .method private chooseConfiguration(Ljava/util/ArrayList;ILjava/lang/String;)Lcom/android/server/AssetAtlasService$Configuration;
     .locals 3
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -343,7 +319,6 @@
 
 .method private static computeBestConfiguration(Ljava/util/ArrayList;I)Lcom/android/server/AssetAtlasService$Configuration;
     .locals 21
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -645,7 +620,6 @@
 
 .method private getBuildIdentifier(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/16 v3, 0x2f
 
@@ -751,7 +725,6 @@
 
 .method private static queryVersionName(Landroid/content/Context;)Ljava/lang/String;
     .locals 5
-    .param p0    # Landroid/content/Context;
 
     :try_start_0
     invoke-virtual {p0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
@@ -791,8 +764,6 @@
 
 .method private readConfiguration(Ljava/io/File;Ljava/lang/String;)Lcom/android/server/AssetAtlasService$Configuration;
     .locals 13
-    .param p1    # Ljava/io/File;
-    .param p2    # Ljava/lang/String;
 
     const/4 v8, 0x0
 
@@ -1089,9 +1060,6 @@
 
 .method private static readInt(Ljava/io/BufferedReader;II)I
     .locals 1
-    .param p0    # Ljava/io/BufferedReader;
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1119,9 +1087,6 @@
 
 .method private writeConfiguration(Lcom/android/server/AssetAtlasService$Configuration;Ljava/io/File;Ljava/lang/String;)V
     .locals 6
-    .param p1    # Lcom/android/server/AssetAtlasService$Configuration;
-    .param p2    # Ljava/io/File;
-    .param p3    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -1406,7 +1371,6 @@
 
 .method public isCompatible(I)Z
     .locals 1
-    .param p1    # I
 
     invoke-static {}, Landroid/os/Process;->myPpid()I
 

@@ -31,7 +31,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/Looper;)V
     .locals 2
-    .param p1    # Landroid/os/Looper;
 
     invoke-direct {p0}, Lcom/samsung/android/cocktailbar/ICocktailBarDecorManagerCallback$Stub;-><init>()V
 
@@ -58,8 +57,6 @@
 
 .method static synthetic access$002(Lcom/samsung/android/cocktailbar/CocktailBarDecorManager$Globals;Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
     .locals 0
-    .param p0    # Lcom/samsung/android/cocktailbar/CocktailBarDecorManager$Globals;
-    .param p1    # Landroid/graphics/Bitmap;
 
     iput-object p1, p0, Lcom/samsung/android/cocktailbar/CocktailBarDecorManager$Globals;->mCocktailBarDecor:Landroid/graphics/Bitmap;
 
@@ -68,8 +65,6 @@
 
 .method static synthetic access$102(Lcom/samsung/android/cocktailbar/CocktailBarDecorManager$Globals;Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
     .locals 0
-    .param p0    # Lcom/samsung/android/cocktailbar/CocktailBarDecorManager$Globals;
-    .param p1    # Landroid/graphics/Bitmap;
 
     iput-object p1, p0, Lcom/samsung/android/cocktailbar/CocktailBarDecorManager$Globals;->mDefaultCocktailBarDecor:Landroid/graphics/Bitmap;
 
@@ -78,7 +73,6 @@
 
 .method static synthetic access$300(Lcom/samsung/android/cocktailbar/CocktailBarDecorManager$Globals;)Lcom/samsung/android/cocktailbar/ICocktailBarService;
     .locals 1
-    .param p0    # Lcom/samsung/android/cocktailbar/CocktailBarDecorManager$Globals;
 
     iget-object v0, p0, Lcom/samsung/android/cocktailbar/CocktailBarDecorManager$Globals;->mService:Lcom/samsung/android/cocktailbar/ICocktailBarService;
 
@@ -87,10 +81,6 @@
 
 .method static generateBitmap(Landroid/content/Context;Landroid/graphics/Bitmap;II)Landroid/graphics/Bitmap;
     .locals 12
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v5, 0x0
 
@@ -355,7 +345,6 @@
 
 .method private getCocktailBarDecorTypeLocked(Landroid/graphics/BitmapFactory$Options;)I
     .locals 2
-    .param p1    # Landroid/graphics/BitmapFactory$Options;
 
     iget-object v0, p1, Landroid/graphics/BitmapFactory$Options;->outMimeType:Ljava/lang/String;
 
@@ -384,7 +373,6 @@
 
 .method private getCurrentCocktailBarDecorBitmapLocked(Landroid/content/Context;)Landroid/graphics/Bitmap;
     .locals 10
-    .param p1    # Landroid/content/Context;
 
     const/4 v8, 0x0
 
@@ -515,7 +503,6 @@
 
 .method private getCurrentCocktailBarDecorMovieLocked(Landroid/content/Context;)Landroid/graphics/Movie;
     .locals 7
-    .param p1    # Landroid/content/Context;
 
     const/4 v3, 0x0
 
@@ -638,7 +625,6 @@
 
 .method private getDefaultCocktailBarDecorBitmapLocked(Landroid/content/Context;)Landroid/graphics/Bitmap;
     .locals 9
-    .param p1    # Landroid/content/Context;
 
     const/4 v7, 0x0
 
@@ -1193,7 +1179,6 @@
 # virtual methods
 .method public getCocktailBarDecorBitmap(Landroid/content/Context;)Landroid/graphics/Bitmap;
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     monitor-enter p0
 
@@ -1295,7 +1280,6 @@
 
 .method public getCocktailBarDecorMovie(Landroid/content/Context;)Landroid/graphics/Movie;
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     monitor-enter p0
 

@@ -48,7 +48,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -139,9 +138,6 @@
 
 .method public getAirButtonHitTest(III)I
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     :try_start_0
     invoke-direct {p0}, Lcom/samsung/android/smartclip/SpenGestureManager;->getService()Lcom/samsung/android/smartclip/ISpenGestureService;
@@ -176,9 +172,6 @@
 
 .method public getSmartClipDataByScreenRect(Landroid/graphics/Rect;Landroid/os/IBinder;I)Lcom/samsung/android/smartclip/SmartClipDataRepositoryImpl;
     .locals 3
-    .param p1    # Landroid/graphics/Rect;
-    .param p2    # Landroid/os/IBinder;
-    .param p3    # I
 
     :try_start_0
     invoke-direct {p0}, Lcom/samsung/android/smartclip/SpenGestureManager;->getService()Lcom/samsung/android/smartclip/ISpenGestureService;
@@ -327,8 +320,6 @@
 
 .method public setAirButtonHitTestResult(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     :try_start_0
     invoke-direct {p0}, Lcom/samsung/android/smartclip/SpenGestureManager;->getService()Lcom/samsung/android/smartclip/ISpenGestureService;
@@ -356,7 +347,6 @@
 
 .method public setDisableGlobalAirBottonAppindex(I)V
     .locals 3
-    .param p1    # I
 
     :try_start_0
     invoke-direct {p0}, Lcom/samsung/android/smartclip/SpenGestureManager;->getService()Lcom/samsung/android/smartclip/ISpenGestureService;
@@ -384,7 +374,6 @@
 
 .method public setFocusWindow(I)V
     .locals 4
-    .param p1    # I
 
     :try_start_0
     sget-object v1, Lcom/samsung/android/smartclip/SpenGestureManager;->mService:Lcom/samsung/android/smartclip/ISpenGestureService;
@@ -434,7 +423,6 @@
 
 .method public setSmartClipDataExtractionResult(Lcom/samsung/android/smartclip/SmartClipDataExtractionResponse;)V
     .locals 3
-    .param p1    # Lcom/samsung/android/smartclip/SmartClipDataExtractionResponse;
 
     :try_start_0
     invoke-direct {p0}, Lcom/samsung/android/smartclip/SpenGestureManager;->getService()Lcom/samsung/android/smartclip/ISpenGestureService;

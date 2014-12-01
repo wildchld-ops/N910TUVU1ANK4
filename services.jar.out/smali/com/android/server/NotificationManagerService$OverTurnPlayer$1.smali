@@ -40,7 +40,6 @@
 # virtual methods
 .method public onMotionListener(Landroid/hardware/motion/MREvent;)V
     .locals 4
-    .param p1    # Landroid/hardware/motion/MREvent;
 
     const/4 v3, 0x0
 

@@ -28,7 +28,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -43,8 +42,6 @@
 
 .method public constructor <init>(Landroid/content/Context;I)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -81,8 +78,6 @@
 
 .method public onAccuracyChanged(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     return-void
 .end method
@@ -92,8 +87,6 @@
 
 .method public onSensorChanged(I[F)V
     .locals 0
-    .param p1    # I
-    .param p2    # [F
 
     return-void
 .end method

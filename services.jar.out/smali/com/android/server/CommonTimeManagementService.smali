@@ -201,7 +201,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Landroid/os/Binder;-><init>()V
 
@@ -268,7 +267,6 @@
 
 .method static synthetic access$000(Lcom/android/server/CommonTimeManagementService;)V
     .locals 0
-    .param p0    # Lcom/android/server/CommonTimeManagementService;
 
     invoke-direct {p0}, Lcom/android/server/CommonTimeManagementService;->reevaluateServiceState()V
 
@@ -277,7 +275,6 @@
 
 .method static synthetic access$100(Lcom/android/server/CommonTimeManagementService;)V
     .locals 0
-    .param p0    # Lcom/android/server/CommonTimeManagementService;
 
     invoke-direct {p0}, Lcom/android/server/CommonTimeManagementService;->scheduleTimeConfigReconnect()V
 
@@ -286,7 +283,6 @@
 
 .method static synthetic access$200(Lcom/android/server/CommonTimeManagementService;)V
     .locals 0
-    .param p0    # Lcom/android/server/CommonTimeManagementService;
 
     invoke-direct {p0}, Lcom/android/server/CommonTimeManagementService;->connectToTimeConfig()V
 
@@ -295,7 +291,6 @@
 
 .method static synthetic access$300(Lcom/android/server/CommonTimeManagementService;)V
     .locals 0
-    .param p0    # Lcom/android/server/CommonTimeManagementService;
 
     invoke-direct {p0}, Lcom/android/server/CommonTimeManagementService;->handleNoInterfaceTimeout()V
 
@@ -921,9 +916,6 @@
 # virtual methods
 .method protected dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     const/4 v4, 0x1
 

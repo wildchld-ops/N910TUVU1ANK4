@@ -33,8 +33,6 @@
 # direct methods
 .method public constructor <init>(Landroid/view/ViewRootImpl;Landroid/view/ViewRootImpl$InputStage;Ljava/lang/String;)V
     .locals 0
-    .param p2    # Landroid/view/ViewRootImpl$InputStage;
-    .param p3    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/view/ViewRootImpl$AsyncInputStage;->this$0:Landroid/view/ViewRootImpl;
 
@@ -47,8 +45,6 @@
 
 .method private dequeue(Landroid/view/ViewRootImpl$QueuedInputEvent;Landroid/view/ViewRootImpl$QueuedInputEvent;)V
     .locals 4
-    .param p1    # Landroid/view/ViewRootImpl$QueuedInputEvent;
-    .param p2    # Landroid/view/ViewRootImpl$QueuedInputEvent;
 
     if-nez p2, :cond_1
 
@@ -94,7 +90,6 @@
 
 .method private enqueue(Landroid/view/ViewRootImpl$QueuedInputEvent;)V
     .locals 4
-    .param p1    # Landroid/view/ViewRootImpl$QueuedInputEvent;
 
     iget-object v0, p0, Landroid/view/ViewRootImpl$AsyncInputStage;->mQueueTail:Landroid/view/ViewRootImpl$QueuedInputEvent;
 
@@ -135,8 +130,6 @@
 # virtual methods
 .method protected apply(Landroid/view/ViewRootImpl$QueuedInputEvent;I)V
     .locals 1
-    .param p1    # Landroid/view/ViewRootImpl$QueuedInputEvent;
-    .param p2    # I
 
     const/4 v0, 0x3
 
@@ -155,7 +148,6 @@
 
 .method protected defer(Landroid/view/ViewRootImpl$QueuedInputEvent;)V
     .locals 1
-    .param p1    # Landroid/view/ViewRootImpl$QueuedInputEvent;
 
     iget v0, p1, Landroid/view/ViewRootImpl$QueuedInputEvent;->mFlags:I
 
@@ -170,8 +162,6 @@
 
 .method dump(Ljava/lang/String;Ljava/io/PrintWriter;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/io/PrintWriter;
 
     invoke-virtual {p2, p1}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
@@ -200,7 +190,6 @@
 
 .method protected forward(Landroid/view/ViewRootImpl$QueuedInputEvent;)V
     .locals 6
-    .param p1    # Landroid/view/ViewRootImpl$QueuedInputEvent;
 
     iget v5, p1, Landroid/view/ViewRootImpl$QueuedInputEvent;->mFlags:I
 

@@ -26,8 +26,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/ui/ConfirmRateLimitActivity;Z)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ConfirmRateLimitActivity;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/ConfirmRateLimitActivity;->doAnswer(Z)V
 
@@ -36,7 +34,6 @@
 
 .method private doAnswer(Z)V
     .locals 2
-    .param p1    # Z
 
     new-instance v0, Landroid/content/Intent;
 
@@ -59,7 +56,6 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
@@ -126,8 +122,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x4
 

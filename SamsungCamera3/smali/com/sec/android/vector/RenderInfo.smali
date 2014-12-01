@@ -38,9 +38,6 @@
 
 .method private static calculate(FFF)F
     .locals 1
-    .param p0    # F
-    .param p1    # F
-    .param p2    # F
 
     sub-float v0, p1, p0
 
@@ -55,7 +52,6 @@
 # virtual methods
 .method public calculatePaint(F)Landroid/graphics/Paint;
     .locals 10
-    .param p1    # F
 
     const/4 v9, 0x3
 
@@ -152,7 +148,6 @@
 
 .method public calculatePath(F)Landroid/graphics/Path;
     .locals 13
-    .param p1    # F
 
     iget-object v0, p0, Lcom/sec/android/vector/RenderInfo;->mRenderPath:Landroid/graphics/Path;
 
@@ -560,8 +555,6 @@
 
 .method public setColors([I[I)V
     .locals 0
-    .param p1    # [I
-    .param p2    # [I
 
     iput-object p1, p0, Lcom/sec/android/vector/RenderInfo;->mFromColor:[I
 
@@ -572,7 +565,6 @@
 
 .method public setCommands([Lcom/sec/android/vector/DRAW_PATH_TYPE;)V
     .locals 0
-    .param p1    # [Lcom/sec/android/vector/DRAW_PATH_TYPE;
 
     iput-object p1, p0, Lcom/sec/android/vector/RenderInfo;->mCommands:[Lcom/sec/android/vector/DRAW_PATH_TYPE;
 
@@ -581,7 +573,6 @@
 
 .method public setPaint(Landroid/graphics/Paint;)V
     .locals 0
-    .param p1    # Landroid/graphics/Paint;
 
     iput-object p1, p0, Lcom/sec/android/vector/RenderInfo;->mRenderPaint:Landroid/graphics/Paint;
 
@@ -590,8 +581,6 @@
 
 .method public setParams([[[F[[[F)V
     .locals 0
-    .param p1    # [[[F
-    .param p2    # [[[F
 
     iput-object p1, p0, Lcom/sec/android/vector/RenderInfo;->mFromParams:[[[F
 
@@ -602,7 +591,6 @@
 
 .method public setPath(Landroid/graphics/Path;)V
     .locals 0
-    .param p1    # Landroid/graphics/Path;
 
     iput-object p1, p0, Lcom/sec/android/vector/RenderInfo;->mRenderPath:Landroid/graphics/Path;
 

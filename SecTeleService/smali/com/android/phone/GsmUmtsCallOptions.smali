@@ -44,9 +44,9 @@
 
     const v1, 0x7f060024
 
-    invoke-virtual {p0, v1}, Landroid/preference/PreferenceActivity;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v1}, Lcom/android/phone/GsmUmtsCallOptions;->addPreferencesFromResource(I)V
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getActionBar()Landroid/app/ActionBar;
+    invoke-virtual {p0}, Lcom/android/phone/GsmUmtsCallOptions;->getActionBar()Landroid/app/ActionBar;
 
     move-result-object v0
 
@@ -65,13 +65,13 @@
 
     if-eq v1, v2, :cond_1
 
-    invoke-virtual {p0}, Landroid/preference/PreferenceActivity;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/phone/GsmUmtsCallOptions;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v1
 
     const/4 v2, 0x0
 
-    invoke-virtual {v1, v2}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v1, v2}, Landroid/preference/PreferenceScreen;->setEnabled(Z)V
 
     :cond_1
     return-void
@@ -89,7 +89,7 @@
 
     if-ne v0, v1, :cond_0
 
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/GsmUmtsCallOptions;->finish()V
 
     const/4 v1, 0x1
 
@@ -97,7 +97,7 @@
     return v1
 
     :cond_0
-    invoke-super {p0, p1}, Landroid/app/Activity;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
+    invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
 
     move-result v1
 

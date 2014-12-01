@@ -36,8 +36,6 @@
 # virtual methods
 .method public buildView(Lcom/android/launcher2/BaseItem;Lcom/android/launcher2/CellLayout;)Landroid/view/View;
     .locals 4
-    .param p1    # Lcom/android/launcher2/BaseItem;
-    .param p2    # Lcom/android/launcher2/CellLayout;
 
     sget-object v1, Lcom/android/launcher2/Workspace$24;->$SwitchMap$com$android$launcher2$BaseItem$Type:[I
 
@@ -184,9 +182,6 @@
 
 .method public onViewAdded(Landroid/view/View;Lcom/android/launcher2/BaseItem;Lcom/android/launcher2/CellLayout;)V
     .locals 8
-    .param p1    # Landroid/view/View;
-    .param p2    # Lcom/android/launcher2/BaseItem;
-    .param p3    # Lcom/android/launcher2/CellLayout;
 
     instance-of v4, p1, Lcom/android/launcher2/AllappsIcon;
 

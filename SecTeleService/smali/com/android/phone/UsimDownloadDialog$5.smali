@@ -49,7 +49,7 @@
 
     iget-object v0, p0, Lcom/android/phone/UsimDownloadDialog$5;->this$0:Lcom/android/phone/UsimDownloadDialog;
 
-    invoke-virtual {v0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {v0}, Lcom/android/phone/UsimDownloadDialog;->finish()V
 
     return-void
 .end method

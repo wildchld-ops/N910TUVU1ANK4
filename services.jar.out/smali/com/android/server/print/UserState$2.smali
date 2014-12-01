@@ -21,7 +21,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/print/UserState;Landroid/content/Context;)V
     .locals 0
-    .param p2    # Landroid/content/Context;
 
     iput-object p1, p0, Lcom/android/server/print/UserState$2;->this$0:Lcom/android/server/print/UserState;
 

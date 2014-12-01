@@ -156,8 +156,6 @@
 
 .method constructor <init>(ILandroid/renderscript/RenderScript;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Landroid/renderscript/RenderScript;
 
     invoke-direct {p0, p1, p2}, Landroid/renderscript/BaseObj;-><init>(ILandroid/renderscript/RenderScript;)V
 
@@ -166,7 +164,6 @@
 
 .method private static addFamilyToMap(Landroid/renderscript/Font$FontFamily;)V
     .locals 3
-    .param p0    # Landroid/renderscript/Font$FontFamily;
 
     const/4 v0, 0x0
 
@@ -195,11 +192,6 @@
 
 .method public static create(Landroid/renderscript/RenderScript;Landroid/content/res/Resources;Ljava/lang/String;Landroid/renderscript/Font$Style;F)Landroid/renderscript/Font;
     .locals 4
-    .param p0    # Landroid/renderscript/RenderScript;
-    .param p1    # Landroid/content/res/Resources;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/renderscript/Font$Style;
-    .param p4    # F
 
     invoke-static {p2, p3}, Landroid/renderscript/Font;->getFontFileName(Ljava/lang/String;Landroid/renderscript/Font$Style;)Ljava/lang/String;
 
@@ -244,10 +236,6 @@
 
 .method public static createFromAsset(Landroid/renderscript/RenderScript;Landroid/content/res/Resources;Ljava/lang/String;F)Landroid/renderscript/Font;
     .locals 7
-    .param p0    # Landroid/renderscript/RenderScript;
-    .param p1    # Landroid/content/res/Resources;
-    .param p2    # Ljava/lang/String;
-    .param p3    # F
 
     invoke-virtual {p0}, Landroid/renderscript/RenderScript;->validate()V
 
@@ -301,10 +289,6 @@
 
 .method public static createFromFile(Landroid/renderscript/RenderScript;Landroid/content/res/Resources;Ljava/io/File;F)Landroid/renderscript/Font;
     .locals 1
-    .param p0    # Landroid/renderscript/RenderScript;
-    .param p1    # Landroid/content/res/Resources;
-    .param p2    # Ljava/io/File;
-    .param p3    # F
 
     invoke-virtual {p2}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
@@ -319,10 +303,6 @@
 
 .method public static createFromFile(Landroid/renderscript/RenderScript;Landroid/content/res/Resources;Ljava/lang/String;F)Landroid/renderscript/Font;
     .locals 6
-    .param p0    # Landroid/renderscript/RenderScript;
-    .param p1    # Landroid/content/res/Resources;
-    .param p2    # Ljava/lang/String;
-    .param p3    # F
 
     invoke-virtual {p0}, Landroid/renderscript/RenderScript;->validate()V
 
@@ -372,10 +352,6 @@
 
 .method public static createFromResource(Landroid/renderscript/RenderScript;Landroid/content/res/Resources;IF)Landroid/renderscript/Font;
     .locals 10
-    .param p0    # Landroid/renderscript/RenderScript;
-    .param p1    # Landroid/content/res/Resources;
-    .param p2    # I
-    .param p3    # F
 
     new-instance v7, Ljava/lang/StringBuilder;
 
@@ -504,8 +480,6 @@
 
 .method static getFontFileName(Ljava/lang/String;Landroid/renderscript/Font$Style;)Ljava/lang/String;
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Landroid/renderscript/Font$Style;
 
     sget-object v1, Landroid/renderscript/Font;->sFontFamilyMap:Ljava/util/Map;
 

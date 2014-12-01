@@ -31,9 +31,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;II)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v0, -0x1
 
@@ -52,9 +49,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/net/Uri;I)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/net/Uri;
-    .param p3    # I
 
     const/4 v0, -0x1
 
@@ -75,7 +69,6 @@
 
 .method private rescaleBigImage(Landroid/graphics/drawable/Drawable;)V
     .locals 6
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     const/4 v5, 0x0
 

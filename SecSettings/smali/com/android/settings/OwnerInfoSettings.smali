@@ -51,7 +51,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/OwnerInfoSettings;)Landroid/widget/EditText;
     .locals 1
-    .param p0    # Lcom/android/settings/OwnerInfoSettings;
 
     iget-object v0, p0, Lcom/android/settings/OwnerInfoSettings;->mOwnerInfo:Landroid/widget/EditText;
 
@@ -60,7 +59,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/OwnerInfoSettings;)V
     .locals 0
-    .param p0    # Lcom/android/settings/OwnerInfoSettings;
 
     invoke-direct {p0}, Lcom/android/settings/OwnerInfoSettings;->showInputMethod()V
 
@@ -124,7 +122,6 @@
 
 .method private initView(Landroid/view/View;)V
     .locals 7
-    .param p1    # Landroid/view/View;
 
     const/16 v6, 0x41
 
@@ -345,7 +342,6 @@
 
 .method public static newInstance(I)Lcom/android/settings/OwnerInfoSettings;
     .locals 3
-    .param p0    # I
 
     new-instance v1, Lcom/android/settings/OwnerInfoSettings;
 
@@ -416,8 +412,6 @@
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 2
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     packed-switch p2, :pswitch_data_0
 
@@ -488,7 +482,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 0
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/app/DialogFragment;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -499,7 +492,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v3, 0x0
 
@@ -557,7 +549,6 @@
 
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v3, 0x0
 
@@ -659,9 +650,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 1
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     invoke-super {p0, p1, p2, p3}, Landroid/app/DialogFragment;->onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
 
@@ -815,7 +803,6 @@
 
 .method public setDialogFragmentListener(Lcom/android/settings/OwnerInfoSettings$DialogFragmentListener;)V
     .locals 0
-    .param p1    # Lcom/android/settings/OwnerInfoSettings$DialogFragmentListener;
 
     iput-object p1, p0, Lcom/android/settings/OwnerInfoSettings;->listener:Lcom/android/settings/OwnerInfoSettings$DialogFragmentListener;
 

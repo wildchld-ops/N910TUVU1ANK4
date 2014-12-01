@@ -24,7 +24,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -52,8 +51,6 @@
 # virtual methods
 .method public OnTwMultiSelectStart(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     const-string v0, "GridTest"
 
@@ -92,8 +89,6 @@
 
 .method public OnTwMultiSelectStop(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/settings/common/PenSelectListener;->mTwDragSelectedItemArray:Ljava/util/ArrayList;
 
@@ -104,8 +99,6 @@
 
 .method public addDragItemToListArray(Landroid/view/View;I)V
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/settings/common/PenSelectListener;->mTwDragSelectedItemArray:Ljava/util/ArrayList;
 
@@ -161,12 +154,6 @@
 
 .method public onTwMultiSelected(Landroid/widget/AdapterView;Landroid/view/View;IJZZZ)V
     .locals 0
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
-    .param p6    # Z
-    .param p7    # Z
-    .param p8    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

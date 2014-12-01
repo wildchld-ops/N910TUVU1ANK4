@@ -183,7 +183,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Landroid/widget/EditText;-><init>(Landroid/content/Context;)V
 
@@ -198,8 +197,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/widget/EditText;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -214,9 +211,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/EditText;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
@@ -231,7 +225,6 @@
 
 .method static synthetic access$1000(Lcom/android/ex/editstyledtext/EditStyledText;)V
     .locals 0
-    .param p0    # Lcom/android/ex/editstyledtext/EditStyledText;
 
     invoke-direct {p0}, Lcom/android/ex/editstyledtext/EditStyledText;->onRefreshZeoWidthChar()V
 
@@ -240,7 +233,6 @@
 
 .method static synthetic access$1100(Lcom/android/ex/editstyledtext/EditStyledText;)F
     .locals 1
-    .param p0    # Lcom/android/ex/editstyledtext/EditStyledText;
 
     invoke-direct {p0}, Lcom/android/ex/editstyledtext/EditStyledText;->getPaddingScale()F
 
@@ -251,8 +243,6 @@
 
 .method static synthetic access$1400(Lcom/android/ex/editstyledtext/EditStyledText;I)I
     .locals 1
-    .param p0    # Lcom/android/ex/editstyledtext/EditStyledText;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/ex/editstyledtext/EditStyledText;->dipToPx(I)I
 
@@ -263,7 +253,6 @@
 
 .method static synthetic access$1700(Lcom/android/ex/editstyledtext/EditStyledText;)Lcom/android/ex/editstyledtext/EditStyledText$EditorManager;
     .locals 1
-    .param p0    # Lcom/android/ex/editstyledtext/EditStyledText;
 
     iget-object v0, p0, Lcom/android/ex/editstyledtext/EditStyledText;->mManager:Lcom/android/ex/editstyledtext/EditStyledText$EditorManager;
 
@@ -272,7 +261,6 @@
 
 .method static synthetic access$1900(Lcom/android/ex/editstyledtext/EditStyledText;)V
     .locals 0
-    .param p0    # Lcom/android/ex/editstyledtext/EditStyledText;
 
     invoke-direct {p0}, Lcom/android/ex/editstyledtext/EditStyledText;->finishComposingText()V
 
@@ -281,9 +269,6 @@
 
 .method static synthetic access$300(Lcom/android/ex/editstyledtext/EditStyledText;II)V
     .locals 0
-    .param p0    # Lcom/android/ex/editstyledtext/EditStyledText;
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/ex/editstyledtext/EditStyledText;->notifyStateChanged(II)V
 
@@ -292,7 +277,6 @@
 
 .method static synthetic access$3500(Lcom/android/ex/editstyledtext/EditStyledText;)V
     .locals 0
-    .param p0    # Lcom/android/ex/editstyledtext/EditStyledText;
 
     invoke-direct {p0}, Lcom/android/ex/editstyledtext/EditStyledText;->cancelViewManagers()V
 
@@ -301,7 +285,6 @@
 
 .method static synthetic access$3800(Lcom/android/ex/editstyledtext/EditStyledText;)V
     .locals 0
-    .param p0    # Lcom/android/ex/editstyledtext/EditStyledText;
 
     invoke-direct {p0}, Lcom/android/ex/editstyledtext/EditStyledText;->showInsertImageSelectAlertDialog()V
 
@@ -310,7 +293,6 @@
 
 .method static synthetic access$400(Lcom/android/ex/editstyledtext/EditStyledText;)I
     .locals 1
-    .param p0    # Lcom/android/ex/editstyledtext/EditStyledText;
 
     invoke-direct {p0}, Lcom/android/ex/editstyledtext/EditStyledText;->getMaxImageWidthPx()I
 
@@ -321,7 +303,6 @@
 
 .method static synthetic access$4100(Lcom/android/ex/editstyledtext/EditStyledText;)V
     .locals 0
-    .param p0    # Lcom/android/ex/editstyledtext/EditStyledText;
 
     invoke-direct {p0}, Lcom/android/ex/editstyledtext/EditStyledText;->showPreview()V
 
@@ -330,7 +311,6 @@
 
 .method static synthetic access$4400(Lcom/android/ex/editstyledtext/EditStyledText;)V
     .locals 0
-    .param p0    # Lcom/android/ex/editstyledtext/EditStyledText;
 
     invoke-direct {p0}, Lcom/android/ex/editstyledtext/EditStyledText;->showMenuAlertDialog()V
 
@@ -339,7 +319,6 @@
 
 .method static synthetic access$500(Lcom/android/ex/editstyledtext/EditStyledText;)I
     .locals 1
-    .param p0    # Lcom/android/ex/editstyledtext/EditStyledText;
 
     invoke-direct {p0}, Lcom/android/ex/editstyledtext/EditStyledText;->getMaxImageWidthDip()I
 
@@ -350,7 +329,6 @@
 
 .method static synthetic access$600(Lcom/android/ex/editstyledtext/EditStyledText;)Landroid/graphics/drawable/Drawable;
     .locals 1
-    .param p0    # Lcom/android/ex/editstyledtext/EditStyledText;
 
     iget-object v0, p0, Lcom/android/ex/editstyledtext/EditStyledText;->mDefaultBackground:Landroid/graphics/drawable/Drawable;
 
@@ -359,8 +337,6 @@
 
 .method static synthetic access$700(Landroid/view/View;Landroid/text/Spannable;)V
     .locals 0
-    .param p0    # Landroid/view/View;
-    .param p1    # Landroid/text/Spannable;
 
     invoke-static {p0, p1}, Lcom/android/ex/editstyledtext/EditStyledText;->stopSelecting(Landroid/view/View;Landroid/text/Spannable;)V
 
@@ -369,8 +345,6 @@
 
 .method static synthetic access$800(Landroid/view/View;Landroid/text/Spannable;)V
     .locals 0
-    .param p0    # Landroid/view/View;
-    .param p1    # Landroid/text/Spannable;
 
     invoke-static {p0, p1}, Lcom/android/ex/editstyledtext/EditStyledText;->startSelecting(Landroid/view/View;Landroid/text/Spannable;)V
 
@@ -379,8 +353,6 @@
 
 .method static synthetic access$900(Lcom/android/ex/editstyledtext/EditStyledText;I)V
     .locals 0
-    .param p0    # Lcom/android/ex/editstyledtext/EditStyledText;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/ex/editstyledtext/EditStyledText;->sendHintMessage(I)V
 
@@ -423,7 +395,6 @@
 
 .method private dipToPx(I)I
     .locals 4
-    .param p1    # I
 
     iget v0, p0, Lcom/android/ex/editstyledtext/EditStyledText;->mPaddingScale:F
 
@@ -603,8 +574,6 @@
 
 .method private notifyStateChanged(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     iget-object v2, p0, Lcom/android/ex/editstyledtext/EditStyledText;->mESTNotifiers:Ljava/util/ArrayList;
 
@@ -659,7 +628,6 @@
 
 .method private sendHintMessage(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v2, p0, Lcom/android/ex/editstyledtext/EditStyledText;->mESTNotifiers:Ljava/util/ArrayList;
 
@@ -694,7 +662,6 @@
 
 .method private sendOnTouchEvent(Landroid/view/MotionEvent;)V
     .locals 3
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-object v2, p0, Lcom/android/ex/editstyledtext/EditStyledText;->mESTNotifiers:Ljava/util/ArrayList;
 
@@ -837,8 +804,6 @@
 
 .method private static startSelecting(Landroid/view/View;Landroid/text/Spannable;)V
     .locals 3
-    .param p0    # Landroid/view/View;
-    .param p1    # Landroid/text/Spannable;
 
     const/4 v2, 0x0
 
@@ -853,8 +818,6 @@
 
 .method private static stopSelecting(Landroid/view/View;Landroid/text/Spannable;)V
     .locals 1
-    .param p0    # Landroid/view/View;
-    .param p1    # Landroid/text/Spannable;
 
     sget-object v0, Lcom/android/ex/editstyledtext/EditStyledText;->SELECTING:Landroid/text/NoCopySpan$Concrete;
 
@@ -867,8 +830,6 @@
 # virtual methods
 .method public addAction(ILcom/android/ex/editstyledtext/EditStyledText$EditModeActions$EditModeActionBase;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Lcom/android/ex/editstyledtext/EditStyledText$EditModeActions$EditModeActionBase;
 
     iget-object v0, p0, Lcom/android/ex/editstyledtext/EditStyledText;->mManager:Lcom/android/ex/editstyledtext/EditStyledText$EditorManager;
 
@@ -879,7 +840,6 @@
 
 .method public addEditStyledTextListener(Lcom/android/ex/editstyledtext/EditStyledText$EditStyledTextNotifier;)V
     .locals 1
-    .param p1    # Lcom/android/ex/editstyledtext/EditStyledText$EditStyledTextNotifier;
 
     iget-object v0, p0, Lcom/android/ex/editstyledtext/EditStyledText;->mESTNotifiers:Ljava/util/ArrayList;
 
@@ -901,8 +861,6 @@
 
 .method public addInputExtra(ZLjava/lang/String;)V
     .locals 2
-    .param p1    # Z
-    .param p2    # Ljava/lang/String;
 
     invoke-super {p0, p1}, Landroid/widget/TextView;->getInputExtras(Z)Landroid/os/Bundle;
 
@@ -969,7 +927,6 @@
 
 .method public getForegroundColor(I)I
     .locals 4
-    .param p1    # I
 
     const/high16 v1, -0x1000000
 
@@ -1033,7 +990,6 @@
 
 .method public getHtml(Ljava/util/ArrayList;Z)Ljava/lang/String;
     .locals 2
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1064,7 +1020,6 @@
 
 .method public getHtml(Z)Ljava/lang/String;
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/ex/editstyledtext/EditStyledText;->mConverter:Lcom/android/ex/editstyledtext/EditStyledText$StyledTextConverter;
 
@@ -1207,7 +1162,6 @@
 
 .method protected onCreateContextMenu(Landroid/view/ContextMenu;)V
     .locals 4
-    .param p1    # Landroid/view/ContextMenu;
 
     const/4 v3, 0x0
 
@@ -1285,7 +1239,6 @@
 
 .method public onCreateInputConnection(Landroid/view/inputmethod/EditorInfo;)Landroid/view/inputmethod/InputConnection;
     .locals 2
-    .param p1    # Landroid/view/inputmethod/EditorInfo;
 
     new-instance v0, Lcom/android/ex/editstyledtext/EditStyledText$StyledTextInputConnection;
 
@@ -1326,9 +1279,6 @@
 
 .method protected onFocusChanged(ZILandroid/graphics/Rect;)V
     .locals 1
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # Landroid/graphics/Rect;
 
     invoke-super {p0, p1, p2, p3}, Landroid/widget/EditText;->onFocusChanged(ZILandroid/graphics/Rect;)V
 
@@ -1378,7 +1328,6 @@
 
 .method public onInsertImage(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/ex/editstyledtext/EditStyledText;->mManager:Lcom/android/ex/editstyledtext/EditStyledText$EditorManager;
 
@@ -1389,7 +1338,6 @@
 
 .method public onInsertImage(Landroid/net/Uri;)V
     .locals 1
-    .param p1    # Landroid/net/Uri;
 
     iget-object v0, p0, Lcom/android/ex/editstyledtext/EditStyledText;->mManager:Lcom/android/ex/editstyledtext/EditStyledText$EditorManager;
 
@@ -1412,7 +1360,6 @@
 
 .method public onRestoreInstanceState(Landroid/os/Parcelable;)V
     .locals 2
-    .param p1    # Landroid/os/Parcelable;
 
     instance-of v1, p1, Lcom/android/ex/editstyledtext/EditStyledText$SavedStyledTextState;
 
@@ -1465,8 +1412,6 @@
 
 .method public onStartAction(IZ)V
     .locals 1
-    .param p1    # I
-    .param p2    # Z
 
     iget-object v0, p0, Lcom/android/ex/editstyledtext/EditStyledText;->mManager:Lcom/android/ex/editstyledtext/EditStyledText$EditorManager;
 
@@ -1655,10 +1600,6 @@
 
 .method protected onTextChanged(Ljava/lang/CharSequence;III)V
     .locals 2
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iget-object v0, p0, Lcom/android/ex/editstyledtext/EditStyledText;->mManager:Lcom/android/ex/editstyledtext/EditStyledText$EditorManager;
 
@@ -1735,7 +1676,6 @@
 
 .method public onTextContextMenuItem(I)Z
     .locals 5
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -1862,7 +1802,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 7
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getAction()I
 
@@ -1979,7 +1918,6 @@
 
 .method public removeEditStyledTextListener(Lcom/android/ex/editstyledtext/EditStyledText$EditStyledTextNotifier;)V
     .locals 2
-    .param p1    # Lcom/android/ex/editstyledtext/EditStyledText$EditStyledTextNotifier;
 
     iget-object v1, p0, Lcom/android/ex/editstyledtext/EditStyledText;->mESTNotifiers:Ljava/util/ArrayList;
 
@@ -2003,8 +1941,6 @@
 
 .method public setAlignAlertParams(Ljava/lang/CharSequence;[Ljava/lang/CharSequence;)V
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # [Ljava/lang/CharSequence;
 
     iget-object v0, p0, Lcom/android/ex/editstyledtext/EditStyledText;->mDialog:Lcom/android/ex/editstyledtext/EditStyledText$StyledTextDialog;
 
@@ -2015,7 +1951,6 @@
 
 .method public setAlignment(Landroid/text/Layout$Alignment;)V
     .locals 1
-    .param p1    # Landroid/text/Layout$Alignment;
 
     iget-object v0, p0, Lcom/android/ex/editstyledtext/EditStyledText;->mManager:Lcom/android/ex/editstyledtext/EditStyledText$EditorManager;
 
@@ -2026,7 +1961,6 @@
 
 .method public setBackgroundColor(I)V
     .locals 1
-    .param p1    # I
 
     const v0, 0xffffff
 
@@ -2053,7 +1987,6 @@
 
 .method public setBuilder(Landroid/app/AlertDialog$Builder;)V
     .locals 1
-    .param p1    # Landroid/app/AlertDialog$Builder;
 
     iget-object v0, p0, Lcom/android/ex/editstyledtext/EditStyledText;->mDialog:Lcom/android/ex/editstyledtext/EditStyledText$StyledTextDialog;
 
@@ -2064,10 +1997,6 @@
 
 .method public setColorAlertParams(Ljava/lang/CharSequence;[Ljava/lang/CharSequence;[Ljava/lang/CharSequence;Ljava/lang/CharSequence;)V
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # [Ljava/lang/CharSequence;
-    .param p3    # [Ljava/lang/CharSequence;
-    .param p4    # Ljava/lang/CharSequence;
 
     iget-object v0, p0, Lcom/android/ex/editstyledtext/EditStyledText;->mDialog:Lcom/android/ex/editstyledtext/EditStyledText$StyledTextDialog;
 
@@ -2078,9 +2007,6 @@
 
 .method public setContextMenuStrings(Ljava/lang/CharSequence;Ljava/lang/CharSequence;Ljava/lang/CharSequence;)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Ljava/lang/CharSequence;
-    .param p3    # Ljava/lang/CharSequence;
 
     sput-object p1, Lcom/android/ex/editstyledtext/EditStyledText;->STR_HORIZONTALLINE:Ljava/lang/CharSequence;
 
@@ -2093,7 +2019,6 @@
 
 .method public setHtml(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/ex/editstyledtext/EditStyledText;->mConverter:Lcom/android/ex/editstyledtext/EditStyledText$StyledTextConverter;
 
@@ -2104,7 +2029,6 @@
 
 .method public setItemColor(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/ex/editstyledtext/EditStyledText;->mManager:Lcom/android/ex/editstyledtext/EditStyledText$EditorManager;
 
@@ -2117,7 +2041,6 @@
 
 .method public setItemSize(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/ex/editstyledtext/EditStyledText;->mManager:Lcom/android/ex/editstyledtext/EditStyledText$EditorManager;
 
@@ -2130,7 +2053,6 @@
 
 .method public setMarquee(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/ex/editstyledtext/EditStyledText;->mManager:Lcom/android/ex/editstyledtext/EditStyledText$EditorManager;
 
@@ -2141,8 +2063,6 @@
 
 .method public setMarqueeAlertParams(Ljava/lang/CharSequence;[Ljava/lang/CharSequence;)V
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # [Ljava/lang/CharSequence;
 
     iget-object v0, p0, Lcom/android/ex/editstyledtext/EditStyledText;->mDialog:Lcom/android/ex/editstyledtext/EditStyledText$StyledTextDialog;
 
@@ -2153,10 +2073,6 @@
 
 .method public setSizeAlertParams(Ljava/lang/CharSequence;[Ljava/lang/CharSequence;[Ljava/lang/CharSequence;[Ljava/lang/CharSequence;)V
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # [Ljava/lang/CharSequence;
-    .param p3    # [Ljava/lang/CharSequence;
-    .param p4    # [Ljava/lang/CharSequence;
 
     iget-object v0, p0, Lcom/android/ex/editstyledtext/EditStyledText;->mDialog:Lcom/android/ex/editstyledtext/EditStyledText$StyledTextDialog;
 
@@ -2167,7 +2083,6 @@
 
 .method public setStyledTextHtmlConverter(Lcom/android/ex/editstyledtext/EditStyledText$StyledTextHtmlConverter;)V
     .locals 1
-    .param p1    # Lcom/android/ex/editstyledtext/EditStyledText$StyledTextHtmlConverter;
 
     iget-object v0, p0, Lcom/android/ex/editstyledtext/EditStyledText;->mConverter:Lcom/android/ex/editstyledtext/EditStyledText$StyledTextConverter;
 

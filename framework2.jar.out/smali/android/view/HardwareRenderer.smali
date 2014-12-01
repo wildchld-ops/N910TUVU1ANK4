@@ -97,7 +97,6 @@
 
 .method static beginFrame([I)V
     .locals 0
-    .param p0    # [I
 
     invoke-static {p0}, Landroid/view/HardwareRenderer;->nBeginFrame([I)V
 
@@ -106,8 +105,6 @@
 
 .method static createGlRenderer(IZ)Landroid/view/HardwareRenderer;
     .locals 3
-    .param p0    # I
-    .param p1    # Z
 
     packed-switch p0, :pswitch_data_0
 
@@ -152,7 +149,6 @@
 
 .method public static disable(Z)V
     .locals 1
-    .param p0    # Z
 
     const/4 v0, 0x1
 
@@ -234,7 +230,6 @@
 
 .method public static setupDiskCache(Ljava/io/File;)V
     .locals 2
-    .param p0    # Ljava/io/File;
 
     new-instance v0, Ljava/io/File;
 
@@ -253,7 +248,6 @@
 
 .method static startTrimMemory(I)V
     .locals 0
-    .param p0    # I
 
     invoke-static {p0}, Landroid/view/HardwareRenderer$Gl20Renderer;->startTrimMemory(I)V
 
@@ -262,7 +256,6 @@
 
 .method static trimMemory(I)V
     .locals 0
-    .param p0    # I
 
     invoke-static {p0}, Landroid/view/HardwareRenderer;->startTrimMemory(I)V
 
@@ -334,9 +327,6 @@
 
 .method initializeIfNeeded(IILandroid/view/Surface;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/view/Surface;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/view/Surface$OutOfResourcesException;
@@ -404,7 +394,6 @@
 
 .method setEnabled(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/view/HardwareRenderer;->mEnabled:Z
 
@@ -416,7 +405,6 @@
 
 .method setRequested(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/view/HardwareRenderer;->mRequested:Z
 

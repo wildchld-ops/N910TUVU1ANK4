@@ -36,8 +36,6 @@
 
 .method synthetic constructor <init>(Landroid/widget/TableRow;Landroid/widget/TableRow$1;)V
     .locals 0
-    .param p1    # Landroid/widget/TableRow;
-    .param p2    # Landroid/widget/TableRow$1;
 
     invoke-direct {p0, p1}, Landroid/widget/TableRow$ChildrenTracker;-><init>(Landroid/widget/TableRow;)V
 
@@ -46,8 +44,6 @@
 
 .method static synthetic access$100(Landroid/widget/TableRow$ChildrenTracker;Landroid/view/ViewGroup$OnHierarchyChangeListener;)V
     .locals 0
-    .param p0    # Landroid/widget/TableRow$ChildrenTracker;
-    .param p1    # Landroid/view/ViewGroup$OnHierarchyChangeListener;
 
     invoke-direct {p0, p1}, Landroid/widget/TableRow$ChildrenTracker;->setOnHierarchyChangeListener(Landroid/view/ViewGroup$OnHierarchyChangeListener;)V
 
@@ -56,7 +52,6 @@
 
 .method private setOnHierarchyChangeListener(Landroid/view/ViewGroup$OnHierarchyChangeListener;)V
     .locals 0
-    .param p1    # Landroid/view/ViewGroup$OnHierarchyChangeListener;
 
     iput-object p1, p0, Landroid/widget/TableRow$ChildrenTracker;->listener:Landroid/view/ViewGroup$OnHierarchyChangeListener;
 
@@ -67,8 +62,6 @@
 # virtual methods
 .method public onChildViewAdded(Landroid/view/View;Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/View;
 
     iget-object v0, p0, Landroid/widget/TableRow$ChildrenTracker;->this$0:Landroid/widget/TableRow;
 
@@ -91,8 +84,6 @@
 
 .method public onChildViewRemoved(Landroid/view/View;Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/View;
 
     iget-object v0, p0, Landroid/widget/TableRow$ChildrenTracker;->this$0:Landroid/widget/TableRow;
 

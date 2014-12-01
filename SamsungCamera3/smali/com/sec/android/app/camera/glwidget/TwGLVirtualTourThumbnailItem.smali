@@ -46,11 +46,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;FFFF)V
     .locals 1
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
 
     const/4 v0, 0x0
 
@@ -69,7 +64,6 @@
 # virtual methods
 .method public setThumbnail(Landroid/graphics/Bitmap;)V
     .locals 3
-    .param p1    # Landroid/graphics/Bitmap;
 
     const/4 v2, 0x0
 
@@ -95,7 +89,6 @@
 
 .method public setType(I)V
     .locals 7
-    .param p1    # I
 
     const/4 v2, 0x0
 

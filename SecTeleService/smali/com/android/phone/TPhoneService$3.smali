@@ -111,12 +111,12 @@
     iget-object v7, p0, Lcom/android/phone/TPhoneService$3;->this$0:Lcom/android/phone/TPhoneService;
 
     # invokes: Lcom/android/phone/TPhoneService;->sendPhoneState()V
-    invoke-static {v7}, Lcom/android/phone/TPhoneService;->access$600(Lcom/android/phone/TPhoneService;)V
+    invoke-static {v7}, Lcom/android/phone/TPhoneService;->access$500(Lcom/android/phone/TPhoneService;)V
 
     iget-object v7, p0, Lcom/android/phone/TPhoneService$3;->this$0:Lcom/android/phone/TPhoneService;
 
     # getter for: Lcom/android/phone/TPhoneService;->mCM:Lcom/android/internal/telephony/CallManager;
-    invoke-static {v7}, Lcom/android/phone/TPhoneService;->access$700(Lcom/android/phone/TPhoneService;)Lcom/android/internal/telephony/CallManager;
+    invoke-static {v7}, Lcom/android/phone/TPhoneService;->access$600(Lcom/android/phone/TPhoneService;)Lcom/android/internal/telephony/CallManager;
 
     move-result-object v7
 
@@ -149,7 +149,7 @@
     move-result-object v8
 
     # invokes: Lcom/android/phone/TPhoneService;->log(Ljava/lang/String;Z)V
-    invoke-static {v7, v8, v10}, Lcom/android/phone/TPhoneService;->access$100(Lcom/android/phone/TPhoneService;Ljava/lang/String;Z)V
+    invoke-static {v7, v8, v10}, Lcom/android/phone/TPhoneService;->access$700(Lcom/android/phone/TPhoneService;Ljava/lang/String;Z)V
 
     iget-object v7, p0, Lcom/android/phone/TPhoneService$3;->this$0:Lcom/android/phone/TPhoneService;
 
@@ -171,7 +171,7 @@
     const-string v8, "Dialing..."
 
     # invokes: Lcom/android/phone/TPhoneService;->log(Ljava/lang/String;)V
-    invoke-static {v7, v8}, Lcom/android/phone/TPhoneService;->access$500(Lcom/android/phone/TPhoneService;Ljava/lang/String;)V
+    invoke-static {v7, v8}, Lcom/android/phone/TPhoneService;->access$100(Lcom/android/phone/TPhoneService;Ljava/lang/String;)V
 
     iget-object v7, p0, Lcom/android/phone/TPhoneService$3;->this$0:Lcom/android/phone/TPhoneService;
 
@@ -232,7 +232,7 @@
     iget-object v7, p0, Lcom/android/phone/TPhoneService$3;->this$0:Lcom/android/phone/TPhoneService;
 
     # invokes: Lcom/android/phone/TPhoneService;->sendPhoneState()V
-    invoke-static {v7}, Lcom/android/phone/TPhoneService;->access$600(Lcom/android/phone/TPhoneService;)V
+    invoke-static {v7}, Lcom/android/phone/TPhoneService;->access$500(Lcom/android/phone/TPhoneService;)V
 
     goto/16 :goto_0
 
@@ -318,7 +318,7 @@
     const-string v8, "Modify call request rejected by mt"
 
     # invokes: Lcom/android/phone/TPhoneService;->log(Ljava/lang/String;)V
-    invoke-static {v7, v8}, Lcom/android/phone/TPhoneService;->access$500(Lcom/android/phone/TPhoneService;Ljava/lang/String;)V
+    invoke-static {v7, v8}, Lcom/android/phone/TPhoneService;->access$100(Lcom/android/phone/TPhoneService;Ljava/lang/String;)V
 
     :goto_1
     iget-object v7, p0, Lcom/android/phone/TPhoneService$3;->this$0:Lcom/android/phone/TPhoneService;
@@ -443,7 +443,7 @@
     const-string v8, "Modify call request to CALL_TYPE_VOICE"
 
     # invokes: Lcom/android/phone/TPhoneService;->log(Ljava/lang/String;)V
-    invoke-static {v7, v8}, Lcom/android/phone/TPhoneService;->access$500(Lcom/android/phone/TPhoneService;Ljava/lang/String;)V
+    invoke-static {v7, v8}, Lcom/android/phone/TPhoneService;->access$100(Lcom/android/phone/TPhoneService;Ljava/lang/String;)V
 
     iget-object v7, p0, Lcom/android/phone/TPhoneService$3;->this$0:Lcom/android/phone/TPhoneService;
 
@@ -466,7 +466,7 @@
     const-string v8, "Modify call request to CALL_TYPE_VT"
 
     # invokes: Lcom/android/phone/TPhoneService;->log(Ljava/lang/String;)V
-    invoke-static {v7, v8}, Lcom/android/phone/TPhoneService;->access$500(Lcom/android/phone/TPhoneService;Ljava/lang/String;)V
+    invoke-static {v7, v8}, Lcom/android/phone/TPhoneService;->access$100(Lcom/android/phone/TPhoneService;Ljava/lang/String;)V
 
     iget-object v7, p0, Lcom/android/phone/TPhoneService$3;->this$0:Lcom/android/phone/TPhoneService;
 
@@ -499,7 +499,7 @@
     iget-object v7, p0, Lcom/android/phone/TPhoneService$3;->this$0:Lcom/android/phone/TPhoneService;
 
     # getter for: Lcom/android/phone/TPhoneService;->mCM:Lcom/android/internal/telephony/CallManager;
-    invoke-static {v7}, Lcom/android/phone/TPhoneService;->access$700(Lcom/android/phone/TPhoneService;)Lcom/android/internal/telephony/CallManager;
+    invoke-static {v7}, Lcom/android/phone/TPhoneService;->access$600(Lcom/android/phone/TPhoneService;)Lcom/android/internal/telephony/CallManager;
 
     move-result-object v7
 

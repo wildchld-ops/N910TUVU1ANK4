@@ -33,8 +33,6 @@
 # virtual methods
 .method public onPageFinished(Landroid/webkit/WebView;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Landroid/webkit/WebView;
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/settings/SettingsLicenseActivity$3;->this$0:Lcom/android/settings/SettingsLicenseActivity;
 

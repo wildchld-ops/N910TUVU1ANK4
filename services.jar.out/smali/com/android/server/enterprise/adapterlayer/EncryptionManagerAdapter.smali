@@ -20,7 +20,6 @@
 
 .method public static declared-synchronized getInstance(Landroid/content/Context;)Lcom/android/server/enterprise/adapterlayer/EncryptionManagerAdapter;
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     const-class v1, Lcom/android/server/enterprise/adapterlayer/EncryptionManagerAdapter;
 

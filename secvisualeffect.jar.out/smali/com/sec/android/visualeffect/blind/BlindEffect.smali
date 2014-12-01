@@ -103,7 +103,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     const/4 v3, 0x1
 
@@ -180,8 +179,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v3, 0x1
 
@@ -258,9 +255,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v3, 0x1
 
@@ -337,7 +331,6 @@
 
 .method static synthetic access$000(Lcom/sec/android/visualeffect/blind/BlindEffect;)F
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/blind/BlindEffect;
 
     iget v0, p0, Lcom/sec/android/visualeffect/blind/BlindEffect;->animationValue:F
 
@@ -346,8 +339,6 @@
 
 .method static synthetic access$002(Lcom/sec/android/visualeffect/blind/BlindEffect;F)F
     .locals 0
-    .param p0    # Lcom/sec/android/visualeffect/blind/BlindEffect;
-    .param p1    # F
 
     iput p1, p0, Lcom/sec/android/visualeffect/blind/BlindEffect;->animationValue:F
 
@@ -356,7 +347,6 @@
 
 .method static synthetic access$100(Lcom/sec/android/visualeffect/blind/BlindEffect;)F
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/blind/BlindEffect;
 
     iget v0, p0, Lcom/sec/android/visualeffect/blind/BlindEffect;->pushAnimationMin:F
 
@@ -365,7 +355,6 @@
 
 .method static synthetic access$1000(Lcom/sec/android/visualeffect/blind/BlindEffect;)I
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/blind/BlindEffect;
 
     iget v0, p0, Lcom/sec/android/visualeffect/blind/BlindEffect;->totalColumn:I
 
@@ -374,8 +363,6 @@
 
 .method static synthetic access$1100(Lcom/sec/android/visualeffect/blind/BlindEffect;I)V
     .locals 0
-    .param p0    # Lcom/sec/android/visualeffect/blind/BlindEffect;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/sec/android/visualeffect/blind/BlindEffect;->setScale(I)V
 
@@ -384,7 +371,6 @@
 
 .method static synthetic access$1200(Lcom/sec/android/visualeffect/blind/BlindEffect;)V
     .locals 0
-    .param p0    # Lcom/sec/android/visualeffect/blind/BlindEffect;
 
     invoke-direct {p0}, Lcom/sec/android/visualeffect/blind/BlindEffect;->unlockFinished()V
 
@@ -393,9 +379,6 @@
 
 .method static synthetic access$1300(Lcom/sec/android/visualeffect/blind/BlindEffect;FF)V
     .locals 0
-    .param p0    # Lcom/sec/android/visualeffect/blind/BlindEffect;
-    .param p1    # F
-    .param p2    # F
 
     invoke-direct {p0, p1, p2}, Lcom/sec/android/visualeffect/blind/BlindEffect;->playDownAnimator(FF)V
 
@@ -404,7 +387,6 @@
 
 .method static synthetic access$1400(Lcom/sec/android/visualeffect/blind/BlindEffect;)V
     .locals 0
-    .param p0    # Lcom/sec/android/visualeffect/blind/BlindEffect;
 
     invoke-direct {p0}, Lcom/sec/android/visualeffect/blind/BlindEffect;->playUpAnimator()V
 
@@ -413,7 +395,6 @@
 
 .method static synthetic access$200(Lcom/sec/android/visualeffect/blind/BlindEffect;)Lcom/sec/android/visualeffect/blind/ImageViewBlended;
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/blind/BlindEffect;
 
     iget-object v0, p0, Lcom/sec/android/visualeffect/blind/BlindEffect;->lightView:Lcom/sec/android/visualeffect/blind/ImageViewBlended;
 
@@ -422,7 +403,6 @@
 
 .method static synthetic access$300(Lcom/sec/android/visualeffect/blind/BlindEffect;)F
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/blind/BlindEffect;
 
     iget v0, p0, Lcom/sec/android/visualeffect/blind/BlindEffect;->pushAnimationMax:F
 
@@ -431,7 +411,6 @@
 
 .method static synthetic access$400(Lcom/sec/android/visualeffect/blind/BlindEffect;)F
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/blind/BlindEffect;
 
     iget v0, p0, Lcom/sec/android/visualeffect/blind/BlindEffect;->pointX:F
 
@@ -440,8 +419,6 @@
 
 .method static synthetic access$402(Lcom/sec/android/visualeffect/blind/BlindEffect;F)F
     .locals 0
-    .param p0    # Lcom/sec/android/visualeffect/blind/BlindEffect;
-    .param p1    # F
 
     iput p1, p0, Lcom/sec/android/visualeffect/blind/BlindEffect;->pointX:F
 
@@ -450,8 +427,6 @@
 
 .method static synthetic access$416(Lcom/sec/android/visualeffect/blind/BlindEffect;F)F
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/blind/BlindEffect;
-    .param p1    # F
 
     iget v0, p0, Lcom/sec/android/visualeffect/blind/BlindEffect;->pointX:F
 
@@ -464,7 +439,6 @@
 
 .method static synthetic access$500(Lcom/sec/android/visualeffect/blind/BlindEffect;)F
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/blind/BlindEffect;
 
     iget v0, p0, Lcom/sec/android/visualeffect/blind/BlindEffect;->point2X:F
 
@@ -473,8 +447,6 @@
 
 .method static synthetic access$502(Lcom/sec/android/visualeffect/blind/BlindEffect;F)F
     .locals 0
-    .param p0    # Lcom/sec/android/visualeffect/blind/BlindEffect;
-    .param p1    # F
 
     iput p1, p0, Lcom/sec/android/visualeffect/blind/BlindEffect;->point2X:F
 
@@ -483,8 +455,6 @@
 
 .method static synthetic access$516(Lcom/sec/android/visualeffect/blind/BlindEffect;F)F
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/blind/BlindEffect;
-    .param p1    # F
 
     iget v0, p0, Lcom/sec/android/visualeffect/blind/BlindEffect;->point2X:F
 
@@ -497,7 +467,6 @@
 
 .method static synthetic access$600(Lcom/sec/android/visualeffect/blind/BlindEffect;)V
     .locals 0
-    .param p0    # Lcom/sec/android/visualeffect/blind/BlindEffect;
 
     invoke-direct {p0}, Lcom/sec/android/visualeffect/blind/BlindEffect;->cancelAllAnimator()V
 
@@ -506,7 +475,6 @@
 
 .method static synthetic access$700(Lcom/sec/android/visualeffect/blind/BlindEffect;)F
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/blind/BlindEffect;
 
     iget v0, p0, Lcom/sec/android/visualeffect/blind/BlindEffect;->currentX:F
 
@@ -515,7 +483,6 @@
 
 .method static synthetic access$800(Lcom/sec/android/visualeffect/blind/BlindEffect;)F
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/blind/BlindEffect;
 
     iget v0, p0, Lcom/sec/android/visualeffect/blind/BlindEffect;->pointY:F
 
@@ -524,8 +491,6 @@
 
 .method static synthetic access$816(Lcom/sec/android/visualeffect/blind/BlindEffect;F)F
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/blind/BlindEffect;
-    .param p1    # F
 
     iget v0, p0, Lcom/sec/android/visualeffect/blind/BlindEffect;->pointY:F
 
@@ -538,7 +503,6 @@
 
 .method static synthetic access$900(Lcom/sec/android/visualeffect/blind/BlindEffect;)F
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/blind/BlindEffect;
 
     iget v0, p0, Lcom/sec/android/visualeffect/blind/BlindEffect;->currentY:F
 
@@ -667,7 +631,6 @@
 
 .method private cancelAnimator(Landroid/animation/Animator;)V
     .locals 1
-    .param p1    # Landroid/animation/Animator;
 
     if-eqz p1, :cond_0
 
@@ -685,7 +648,6 @@
 
 .method private constructor(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const-string v0, "BlindEffect"
 
@@ -773,8 +735,6 @@
 
 .method private getBlindX(IZ)I
     .locals 4
-    .param p1    # I
-    .param p2    # Z
 
     if-eqz p2, :cond_0
 
@@ -811,9 +771,6 @@
 
 .method private getDistance(FFI)F
     .locals 4
-    .param p1    # F
-    .param p2    # F
-    .param p3    # I
 
     const/4 v3, 0x0
 
@@ -890,9 +847,6 @@
 
 .method private getScaledBitmap(Landroid/graphics/Bitmap;II)Landroid/graphics/Bitmap;
     .locals 10
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v9, 0x0
 
@@ -963,8 +917,6 @@
 
 .method private playDownAnimator(FF)V
     .locals 4
-    .param p1    # F
-    .param p2    # F
 
     iput p1, p0, Lcom/sec/android/visualeffect/blind/BlindEffect;->currentX:F
 
@@ -1386,8 +1338,6 @@
 
 .method private setBrightness(Landroid/graphics/ColorMatrix;F)V
     .locals 5
-    .param p1    # Landroid/graphics/ColorMatrix;
-    .param p2    # F
 
     const/high16 v4, 0x3f800000
 
@@ -1548,7 +1498,6 @@
 
 .method private setScale(I)V
     .locals 9
-    .param p1    # I
 
     const/high16 v8, 0x40000000
 
@@ -1888,8 +1837,6 @@
 
 .method public handleTouchEvent(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 8
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     const/4 v7, 0x1
 
@@ -2164,7 +2111,6 @@
 
 .method public setBackgroundImage(Landroid/graphics/Bitmap;)V
     .locals 3
-    .param p1    # Landroid/graphics/Bitmap;
 
     const-string v0, "BlindEffect"
 
@@ -2238,7 +2184,6 @@
 
 .method public setLightImage(Landroid/graphics/Bitmap;)V
     .locals 3
-    .param p1    # Landroid/graphics/Bitmap;
 
     const-string v0, "BlindEffect"
 
@@ -2287,7 +2232,6 @@
 
 .method public setUnlockDelayDuration(J)V
     .locals 1
-    .param p1    # J
 
     long-to-int v0, p1
 
@@ -2318,8 +2262,6 @@
 
 .method public showUnlockAffordance(JLandroid/graphics/Rect;)V
     .locals 3
-    .param p1    # J
-    .param p3    # Landroid/graphics/Rect;
 
     const-string v0, "BlindEffect"
 
@@ -2440,7 +2382,6 @@
 
 .method public startAffordanceRunnableUp(J)V
     .locals 1
-    .param p1    # J
 
     iget-object v0, p0, Lcom/sec/android/visualeffect/blind/BlindEffect;->affordanceRunnableUp:Ljava/lang/Runnable;
 

@@ -51,8 +51,6 @@
 
 .method private constructor <init>(Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Landroid/net/Uri$AbstractPart;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -61,8 +59,6 @@
 
 .method static appendDecodedSegment(Landroid/net/Uri$PathPart;Ljava/lang/String;)Landroid/net/Uri$PathPart;
     .locals 2
-    .param p0    # Landroid/net/Uri$PathPart;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Landroid/net/Uri;->encode(Ljava/lang/String;)Ljava/lang/String;
 
@@ -77,8 +73,6 @@
 
 .method static appendEncodedSegment(Landroid/net/Uri$PathPart;Ljava/lang/String;)Landroid/net/Uri$PathPart;
     .locals 5
-    .param p0    # Landroid/net/Uri$PathPart;
-    .param p1    # Ljava/lang/String;
 
     if-nez p0, :cond_0
 
@@ -205,8 +199,6 @@
 
 .method static from(Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri$PathPart;
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     if-nez p0, :cond_0
 
@@ -236,7 +228,6 @@
 
 .method static fromDecoded(Ljava/lang/String;)Landroid/net/Uri$PathPart;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     # getter for: Landroid/net/Uri;->NOT_CACHED:Ljava/lang/String;
     invoke-static {}, Landroid/net/Uri;->access$300()Ljava/lang/String;
@@ -252,7 +243,6 @@
 
 .method static fromEncoded(Ljava/lang/String;)Landroid/net/Uri$PathPart;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     # getter for: Landroid/net/Uri;->NOT_CACHED:Ljava/lang/String;
     invoke-static {}, Landroid/net/Uri;->access$300()Ljava/lang/String;
@@ -268,7 +258,6 @@
 
 .method static makeAbsolute(Landroid/net/Uri$PathPart;)Landroid/net/Uri$PathPart;
     .locals 8
-    .param p0    # Landroid/net/Uri$PathPart;
 
     const/4 v0, 0x1
 
@@ -408,7 +397,6 @@
 
 .method static readFrom(Landroid/os/Parcel;)Landroid/net/Uri$PathPart;
     .locals 4
-    .param p0    # Landroid/os/Parcel;
 
     invoke-virtual {p0}, Landroid/os/Parcel;->readInt()I
 

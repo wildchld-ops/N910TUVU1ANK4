@@ -20,7 +20,6 @@
 # direct methods
 .method public constructor <init>(Landroid/app/Activity;)V
     .locals 5
-    .param p1    # Landroid/app/Activity;
 
     const/4 v4, 0x0
 
@@ -75,7 +74,6 @@
 
 .method static synthetic access$000(Lcom/sec/android/app/camera/CameraDirectConnectManager;)Landroid/app/Activity;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/CameraDirectConnectManager;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/CameraDirectConnectManager;->mActivity:Landroid/app/Activity;
 
@@ -84,8 +82,6 @@
 
 .method static synthetic access$100(Lcom/sec/android/app/camera/CameraDirectConnectManager;Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/CameraDirectConnectManager;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/sec/android/app/camera/CameraDirectConnectManager;->getMacData(Ljava/lang/String;)Ljava/lang/String;
 
@@ -96,7 +92,6 @@
 
 .method private getMacData(Ljava/lang/String;)Ljava/lang/String;
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     new-instance v2, Lorg/json/JSONObject;
 

@@ -113,7 +113,6 @@
 
 .method public final setUserGender(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/hardware/contextaware/manager/CaUserInfo;->mUserGender:I
 
@@ -122,7 +121,6 @@
 
 .method public final setUserHeight(D)V
     .locals 0
-    .param p1    # D
 
     iput-wide p1, p0, Landroid/hardware/contextaware/manager/CaUserInfo;->mUserHeight:D
 
@@ -131,7 +129,6 @@
 
 .method public final setUserWeight(D)V
     .locals 0
-    .param p1    # D
 
     iput-wide p1, p0, Landroid/hardware/contextaware/manager/CaUserInfo;->mUserWeight:D
 

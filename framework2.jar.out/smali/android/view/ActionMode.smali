@@ -92,7 +92,6 @@
 
 .method public setTag(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     iput-object p1, p0, Landroid/view/ActionMode;->mTag:Ljava/lang/Object;
 
@@ -107,7 +106,6 @@
 
 .method public setTitleOptionalHint(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/view/ActionMode;->mTitleOptionalHint:Z
 

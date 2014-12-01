@@ -77,9 +77,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/widget/SearchView;Landroid/app/SearchableInfo;Ljava/util/WeakHashMap;)V
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/widget/SearchView;
-    .param p3    # Landroid/app/SearchableInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -228,7 +225,6 @@
 
 .method private checkIconCache(Ljava/lang/String;)Landroid/graphics/drawable/Drawable;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Landroid/widget/SuggestionsAdapter;->mOutsideDrawablesCache:Ljava/util/WeakHashMap;
 
@@ -255,7 +251,6 @@
 
 .method private formatUrl(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
     .locals 8
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v1, 0x0
 
@@ -323,7 +318,6 @@
 
 .method private getActivityIcon(Landroid/content/ComponentName;)Landroid/graphics/drawable/Drawable;
     .locals 10
-    .param p1    # Landroid/content/ComponentName;
 
     const/4 v6, 0x0
 
@@ -425,7 +419,6 @@
 
 .method private getActivityIconWithCache(Landroid/content/ComponentName;)Landroid/graphics/drawable/Drawable;
     .locals 6
-    .param p1    # Landroid/content/ComponentName;
 
     const/4 v4, 0x0
 
@@ -495,8 +488,6 @@
 
 .method public static getColumnString(Landroid/database/Cursor;Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p0    # Landroid/database/Cursor;
-    .param p1    # Ljava/lang/String;
 
     invoke-interface {p0, p1}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
 
@@ -511,7 +502,6 @@
 
 .method private getDefaultIcon1(Landroid/database/Cursor;)Landroid/graphics/drawable/Drawable;
     .locals 2
-    .param p1    # Landroid/database/Cursor;
 
     iget-object v1, p0, Landroid/widget/SuggestionsAdapter;->mSearchable:Landroid/app/SearchableInfo;
 
@@ -544,7 +534,6 @@
 
 .method private getDrawable(Landroid/net/Uri;)Landroid/graphics/drawable/Drawable;
     .locals 10
-    .param p1    # Landroid/net/Uri;
 
     const/4 v6, 0x0
 
@@ -764,7 +753,6 @@
 
 .method private getDrawableFromResourceValue(Ljava/lang/String;)Landroid/graphics/drawable/Drawable;
     .locals 9
-    .param p1    # Ljava/lang/String;
 
     const/4 v5, 0x0
 
@@ -907,7 +895,6 @@
 
 .method private getIcon1(Landroid/database/Cursor;)Landroid/graphics/drawable/Drawable;
     .locals 4
-    .param p1    # Landroid/database/Cursor;
 
     iget v2, p0, Landroid/widget/SuggestionsAdapter;->mIconName1Col:I
 
@@ -943,7 +930,6 @@
 
 .method private getIcon2(Landroid/database/Cursor;)Landroid/graphics/drawable/Drawable;
     .locals 3
-    .param p1    # Landroid/database/Cursor;
 
     iget v1, p0, Landroid/widget/SuggestionsAdapter;->mIconName2Col:I
 
@@ -972,8 +958,6 @@
 
 .method private static getStringOrNull(Landroid/database/Cursor;I)Ljava/lang/String;
     .locals 4
-    .param p0    # Landroid/database/Cursor;
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -1008,9 +992,6 @@
 
 .method private setViewDrawable(Landroid/widget/ImageView;Landroid/graphics/drawable/Drawable;I)V
     .locals 2
-    .param p1    # Landroid/widget/ImageView;
-    .param p2    # Landroid/graphics/drawable/Drawable;
-    .param p3    # I
 
     const/4 v1, 0x0
 
@@ -1037,8 +1018,6 @@
 
 .method private setViewText(Landroid/widget/TextView;Ljava/lang/CharSequence;)V
     .locals 1
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # Ljava/lang/CharSequence;
 
     invoke-virtual {p1, p2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
@@ -1065,8 +1044,6 @@
 
 .method private storeInIconCache(Ljava/lang/String;Landroid/graphics/drawable/Drawable;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/graphics/drawable/Drawable;
 
     if-eqz p2, :cond_0
 
@@ -1084,7 +1061,6 @@
 
 .method private updateSpinnerState(Landroid/database/Cursor;)V
     .locals 2
-    .param p1    # Landroid/database/Cursor;
 
     if-eqz p1, :cond_1
 
@@ -1116,9 +1092,6 @@
 # virtual methods
 .method public bindView(Landroid/view/View;Landroid/content/Context;Landroid/database/Cursor;)V
     .locals 22
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/database/Cursor;
 
     invoke-virtual/range {p1 .. p1}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
@@ -1920,7 +1893,6 @@
 
 .method public changeCursor(Landroid/database/Cursor;)V
     .locals 3
-    .param p1    # Landroid/database/Cursor;
 
     iget-boolean v1, p0, Landroid/widget/SuggestionsAdapter;->mClosed:Z
 
@@ -2026,7 +1998,6 @@
 
 .method public convertToString(Landroid/database/Cursor;)Ljava/lang/CharSequence;
     .locals 5
-    .param p1    # Landroid/database/Cursor;
 
     const/4 v3, 0x0
 
@@ -2104,9 +2075,6 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     :try_start_0
     invoke-super {p0, p1, p2, p3}, Landroid/widget/CursorAdapter;->getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
@@ -2165,9 +2133,6 @@
 
 .method public newView(Landroid/content/Context;Landroid/database/Cursor;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/database/Cursor;
-    .param p3    # Landroid/view/ViewGroup;
 
     invoke-super {p0, p1, p2, p3}, Landroid/widget/ResourceCursorAdapter;->newView(Landroid/content/Context;Landroid/database/Cursor;Landroid/view/ViewGroup;)Landroid/view/View;
 
@@ -2212,7 +2177,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p1}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
@@ -2234,7 +2198,6 @@
 
 .method public runQueryOnBackgroundThread(Ljava/lang/CharSequence;)Landroid/database/Cursor;
     .locals 7
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v3, 0x0
 
@@ -2308,7 +2271,6 @@
 
 .method public setQueryRefinement(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/widget/SuggestionsAdapter;->mQueryRefinement:I
 

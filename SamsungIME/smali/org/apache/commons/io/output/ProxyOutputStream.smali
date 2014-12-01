@@ -6,7 +6,6 @@
 # direct methods
 .method public constructor <init>(Ljava/io/OutputStream;)V
     .locals 0
-    .param p1    # Ljava/io/OutputStream;
 
     invoke-direct {p0, p1}, Ljava/io/FilterOutputStream;-><init>(Ljava/io/OutputStream;)V
 
@@ -47,7 +46,6 @@
 
 .method public write(I)V
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -63,7 +61,6 @@
 
 .method public write([B)V
     .locals 1
-    .param p1    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -79,9 +76,6 @@
 
 .method public write([BII)V
     .locals 1
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

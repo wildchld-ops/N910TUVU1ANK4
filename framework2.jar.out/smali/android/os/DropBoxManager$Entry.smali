@@ -58,8 +58,6 @@
 
 .method public constructor <init>(Ljava/lang/String;J)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
 
     const/4 v0, 0x0
 
@@ -93,10 +91,6 @@
 
 .method public constructor <init>(Ljava/lang/String;JLandroid/os/ParcelFileDescriptor;I)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
-    .param p4    # Landroid/os/ParcelFileDescriptor;
-    .param p5    # I
 
     const/4 v0, 0x1
 
@@ -179,10 +173,6 @@
 
 .method public constructor <init>(Ljava/lang/String;JLjava/io/File;I)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
-    .param p4    # Ljava/io/File;
-    .param p5    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -254,9 +244,6 @@
 
 .method public constructor <init>(Ljava/lang/String;JLjava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
-    .param p4    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -305,10 +292,6 @@
 
 .method public constructor <init>(Ljava/lang/String;J[BI)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
-    .param p4    # [B
-    .param p5    # I
 
     const/4 v0, 0x1
 
@@ -507,7 +490,6 @@
 
 .method public getText(I)Ljava/lang/String;
     .locals 9
-    .param p1    # I
 
     const/4 v8, 0x0
 
@@ -669,8 +651,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v0, p0, Landroid/os/DropBoxManager$Entry;->mTag:Ljava/lang/String;
 

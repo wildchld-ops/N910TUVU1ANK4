@@ -71,7 +71,6 @@
 
 .method constructor <init>(Landroid/os/Parcel;)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -104,7 +103,6 @@
 
 .method public getRoute(Ljava/lang/String;)Landroid/media/MediaRouterClientState$RouteInfo;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     iget-object v3, p0, Landroid/media/MediaRouterClientState;->routes:Ljava/util/ArrayList;
 
@@ -197,8 +195,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v0, p0, Landroid/media/MediaRouterClientState;->routes:Ljava/util/ArrayList;
 

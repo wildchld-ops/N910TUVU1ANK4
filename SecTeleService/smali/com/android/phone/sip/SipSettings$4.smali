@@ -40,7 +40,7 @@
 
     check-cast p1, Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {p1}, Landroid/preference/TwoStatePreference;->isChecked()Z
+    invoke-virtual {p1}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
     move-result v0
 

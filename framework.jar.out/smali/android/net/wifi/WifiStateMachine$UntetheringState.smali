@@ -174,7 +174,6 @@
 
 .method public processMessage(Landroid/os/Message;)Z
     .locals 3
-    .param p1    # Landroid/os/Message;
 
     iget v1, p1, Landroid/os/Message;->what:I
 

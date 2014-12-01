@@ -35,9 +35,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Ljava/lang/String;I)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     const/4 v0, 0x0
 
@@ -52,8 +49,6 @@
 
 .method static synthetic access$000(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p0, p1}, Lcom/android/server/enterprise/vpn/knoxvpn/storage/VpnStorageHelper;->isTableExists(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;)Z
 
@@ -64,8 +59,6 @@
 
 .method static synthetic access$100(Landroid/database/sqlite/SQLiteDatabase;Lcom/android/server/enterprise/storage/Table;)V
     .locals 0
-    .param p0    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p1    # Lcom/android/server/enterprise/storage/Table;
 
     invoke-static {p0, p1}, Lcom/android/server/enterprise/vpn/knoxvpn/storage/VpnStorageHelper;->preTableCreate(Landroid/database/sqlite/SQLiteDatabase;Lcom/android/server/enterprise/storage/Table;)V
 
@@ -74,8 +67,6 @@
 
 .method static synthetic access$200(Landroid/database/sqlite/SQLiteDatabase;Lcom/android/server/enterprise/storage/Table;)V
     .locals 0
-    .param p0    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p1    # Lcom/android/server/enterprise/storage/Table;
 
     invoke-static {p0, p1}, Lcom/android/server/enterprise/vpn/knoxvpn/storage/VpnStorageHelper;->createTable(Landroid/database/sqlite/SQLiteDatabase;Lcom/android/server/enterprise/storage/Table;)V
 
@@ -84,8 +75,6 @@
 
 .method static synthetic access$300(Landroid/database/sqlite/SQLiteDatabase;Lcom/android/server/enterprise/storage/Table;)V
     .locals 0
-    .param p0    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p1    # Lcom/android/server/enterprise/storage/Table;
 
     invoke-static {p0, p1}, Lcom/android/server/enterprise/vpn/knoxvpn/storage/VpnStorageHelper;->postTableCreate(Landroid/database/sqlite/SQLiteDatabase;Lcom/android/server/enterprise/storage/Table;)V
 
@@ -94,8 +83,6 @@
 
 .method static synthetic access$400(Landroid/database/sqlite/SQLiteDatabase;Lcom/android/server/enterprise/storage/Table;)Z
     .locals 1
-    .param p0    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p1    # Lcom/android/server/enterprise/storage/Table;
 
     invoke-static {p0, p1}, Lcom/android/server/enterprise/vpn/knoxvpn/storage/VpnStorageHelper;->preTableUpdate(Landroid/database/sqlite/SQLiteDatabase;Lcom/android/server/enterprise/storage/Table;)Z
 
@@ -106,9 +93,6 @@
 
 .method static synthetic access$500(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Lcom/android/server/enterprise/storage/Table;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/server/enterprise/storage/Table;
 
     invoke-static {p0, p1, p2}, Lcom/android/server/enterprise/vpn/knoxvpn/storage/VpnStorageHelper;->getMissingColumns(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Lcom/android/server/enterprise/storage/Table;)Ljava/util/ArrayList;
 
@@ -127,7 +111,6 @@
 
 .method private convertAdminIdToLUID(Landroid/content/ContentValues;)V
     .locals 9
-    .param p1    # Landroid/content/ContentValues;
 
     const-string v4, "containerID"
 
@@ -215,8 +198,6 @@
 
 .method private static createTable(Landroid/database/sqlite/SQLiteDatabase;Lcom/android/server/enterprise/storage/Table;)V
     .locals 9
-    .param p0    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p1    # Lcom/android/server/enterprise/storage/Table;
 
     const/4 v8, 0x2
 
@@ -358,9 +339,6 @@
 
 .method private static getMissingColumns(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Lcom/android/server/enterprise/storage/Table;)Ljava/util/ArrayList;
     .locals 4
-    .param p0    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/server/enterprise/storage/Table;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -424,8 +402,6 @@
 
 .method private static isTableExists(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;)Z
     .locals 4
-    .param p0    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -488,24 +464,18 @@
 
 .method private static postTableCreate(Landroid/database/sqlite/SQLiteDatabase;Lcom/android/server/enterprise/storage/Table;)V
     .locals 0
-    .param p0    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p1    # Lcom/android/server/enterprise/storage/Table;
 
     return-void
 .end method
 
 .method private static preTableCreate(Landroid/database/sqlite/SQLiteDatabase;Lcom/android/server/enterprise/storage/Table;)V
     .locals 0
-    .param p0    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p1    # Lcom/android/server/enterprise/storage/Table;
 
     return-void
 .end method
 
 .method private static preTableUpdate(Landroid/database/sqlite/SQLiteDatabase;Lcom/android/server/enterprise/storage/Table;)Z
     .locals 1
-    .param p0    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p1    # Lcom/android/server/enterprise/storage/Table;
 
     const/4 v0, 0x0
 
@@ -514,8 +484,6 @@
 
 .method static translateToAdminLUID(JJ)J
     .locals 3
-    .param p0    # J
-    .param p2    # J
 
     const-wide/16 v1, 0x0
 
@@ -545,9 +513,6 @@
 # virtual methods
 .method public delete(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;)Z
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # [Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -675,9 +640,6 @@
 
 .method public deleteDataByFields(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;)Z
     .locals 12
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # [Ljava/lang/String;
 
     const/4 v9, 0x0
 
@@ -794,7 +756,6 @@
 
 .method public doTablesCreationOrUpdate(Landroid/database/sqlite/SQLiteDatabase;)V
     .locals 5
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
 
     sget-boolean v1, Lcom/android/server/enterprise/vpn/knoxvpn/storage/VpnStorageHelper;->DBG:Z
 
@@ -891,10 +852,6 @@
 
 .method public getDataByFields(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;)Ljava/util/ArrayList;
     .locals 21
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # [Ljava/lang/String;
-    .param p4    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1137,8 +1094,6 @@
 
 .method public insert(Ljava/lang/String;Landroid/content/ContentValues;)Z
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/ContentValues;
 
     const/4 v2, 0x0
 
@@ -1183,7 +1138,6 @@
 
 .method public onConfigure(Landroid/database/sqlite/SQLiteDatabase;)V
     .locals 3
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-super {p0, p1}, Landroid/database/sqlite/SQLiteOpenHelper;->onConfigure(Landroid/database/sqlite/SQLiteDatabase;)V
 
@@ -1211,7 +1165,6 @@
 
 .method public onCreate(Landroid/database/sqlite/SQLiteDatabase;)V
     .locals 2
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
 
     const-string v0, "KnoxVpn.StorageHelper"
 
@@ -1226,9 +1179,6 @@
 
 .method public onDowngrade(Landroid/database/sqlite/SQLiteDatabase;II)V
     .locals 1
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p2    # I
-    .param p3    # I
 
     sget-boolean v0, Lcom/android/server/enterprise/vpn/knoxvpn/storage/VpnStorageHelper;->DBG:Z
 
@@ -1242,9 +1192,6 @@
 
 .method public onUpgrade(Landroid/database/sqlite/SQLiteDatabase;II)V
     .locals 3
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p2    # I
-    .param p3    # I
 
     sget-boolean v0, Lcom/android/server/enterprise/vpn/knoxvpn/storage/VpnStorageHelper;->DBG:Z
 
@@ -1290,10 +1237,6 @@
 
 .method public putDataByFields(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;Landroid/content/ContentValues;)Z
     .locals 14
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # [Ljava/lang/String;
-    .param p4    # Landroid/content/ContentValues;
 
     :try_start_0
     invoke-virtual {p0}, Landroid/database/sqlite/SQLiteOpenHelper;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
@@ -1431,7 +1374,6 @@
 
 .method public declared-synchronized query(Ljava/lang/String;)Landroid/database/Cursor;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -1462,8 +1404,6 @@
 
 .method public declared-synchronized query(Ljava/lang/String;[Ljava/lang/String;)Landroid/database/Cursor;
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/String;
 
     monitor-enter p0
 
@@ -1492,10 +1432,6 @@
 
 .method public declared-synchronized query(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;)Landroid/database/Cursor;
     .locals 14
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # [Ljava/lang/String;
-    .param p4    # [Ljava/lang/String;
 
     monitor-enter p0
 
@@ -1659,10 +1595,6 @@
 
 .method public update(Ljava/lang/String;Landroid/content/ContentValues;[Ljava/lang/String;[Ljava/lang/String;)Z
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/ContentValues;
-    .param p3    # [Ljava/lang/String;
-    .param p4    # [Ljava/lang/String;
 
     const/4 v3, 0x0
 

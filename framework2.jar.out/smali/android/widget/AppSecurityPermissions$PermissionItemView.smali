@@ -32,8 +32,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -50,7 +48,6 @@
 
 .method static synthetic access$000(Landroid/widget/AppSecurityPermissions$PermissionItemView;)Ljava/lang/String;
     .locals 1
-    .param p0    # Landroid/widget/AppSecurityPermissions$PermissionItemView;
 
     iget-object v0, p0, Landroid/widget/AppSecurityPermissions$PermissionItemView;->mPackageName:Ljava/lang/String;
 
@@ -59,7 +56,6 @@
 
 .method private addRevokeUIIfNecessary(Landroid/app/AlertDialog$Builder;)V
     .locals 4
-    .param p1    # Landroid/app/AlertDialog$Builder;
 
     iget-boolean v2, p0, Landroid/widget/AppSecurityPermissions$PermissionItemView;->mShowRevokeUI:Z
 
@@ -109,7 +105,6 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 11
-    .param p1    # Landroid/view/View;
 
     const/4 v10, 0x0
 
@@ -274,12 +269,6 @@
 
 .method public setPermission(Landroid/widget/AppSecurityPermissions$MyPermissionGroupInfo;Landroid/widget/AppSecurityPermissions$MyPermissionInfo;ZLjava/lang/CharSequence;Ljava/lang/String;Z)V
     .locals 9
-    .param p1    # Landroid/widget/AppSecurityPermissions$MyPermissionGroupInfo;
-    .param p2    # Landroid/widget/AppSecurityPermissions$MyPermissionInfo;
-    .param p3    # Z
-    .param p4    # Ljava/lang/CharSequence;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Z
 
     iput-object p1, p0, Landroid/widget/AppSecurityPermissions$PermissionItemView;->mGroup:Landroid/widget/AppSecurityPermissions$MyPermissionGroupInfo;
 

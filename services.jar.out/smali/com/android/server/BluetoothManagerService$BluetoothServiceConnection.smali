@@ -38,8 +38,6 @@
 
 .method synthetic constructor <init>(Lcom/android/server/BluetoothManagerService;Lcom/android/server/BluetoothManagerService$1;)V
     .locals 0
-    .param p1    # Lcom/android/server/BluetoothManagerService;
-    .param p2    # Lcom/android/server/BluetoothManagerService$1;
 
     invoke-direct {p0, p1}, Lcom/android/server/BluetoothManagerService$BluetoothServiceConnection;-><init>(Lcom/android/server/BluetoothManagerService;)V
 
@@ -66,8 +64,6 @@
 
 .method public onServiceConnected(Landroid/content/ComponentName;Landroid/os/IBinder;)V
     .locals 4
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Landroid/os/IBinder;
 
     # getter for: Lcom/android/server/BluetoothManagerService;->DBG:Z
     invoke-static {}, Lcom/android/server/BluetoothManagerService;->access$100()Z
@@ -198,7 +194,6 @@
 
 .method public onServiceDisconnected(Landroid/content/ComponentName;)V
     .locals 4
-    .param p1    # Landroid/content/ComponentName;
 
     # getter for: Lcom/android/server/BluetoothManagerService;->DBG:Z
     invoke-static {}, Lcom/android/server/BluetoothManagerService;->access$100()Z
@@ -327,7 +322,6 @@
 
 .method public setGetNameAddressOnly(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/BluetoothManagerService$BluetoothServiceConnection;->mGetNameAddressOnly:Z
 
@@ -336,8 +330,6 @@
 
 .method public setTurnOnRadio(ZI)V
     .locals 1
-    .param p1    # Z
-    .param p2    # I
 
     iput-boolean p1, p0, Lcom/android/server/BluetoothManagerService$BluetoothServiceConnection;->mIsTurnOnRadio:Z
 

@@ -67,8 +67,6 @@
 # virtual methods
 .method getNextTransition(II)I
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -109,8 +107,6 @@
 
 .method public hasSpansIntersecting(II)Z
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -150,9 +146,6 @@
 
 .method public init(Landroid/text/Spanned;II)V
     .locals 9
-    .param p1    # Landroid/text/Spanned;
-    .param p2    # I
-    .param p3    # I
 
     iget-object v7, p0, Landroid/text/SpanSet;->classType:Ljava/lang/Class;
 

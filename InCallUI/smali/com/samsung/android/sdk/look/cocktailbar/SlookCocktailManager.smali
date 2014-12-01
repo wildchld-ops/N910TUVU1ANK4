@@ -49,7 +49,6 @@
 
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -81,7 +80,6 @@
 
 .method public static getInstance(Landroid/content/Context;)Lcom/samsung/android/sdk/look/cocktailbar/SlookCocktailManager;
     .locals 6
-    .param p0    # Landroid/content/Context;
 
     sget-object v4, Lcom/samsung/android/sdk/look/cocktailbar/SlookCocktailManager;->sManagerCache:Ljava/util/WeakHashMap;
 
@@ -179,8 +177,6 @@
 # virtual methods
 .method public closeCocktail(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/samsung/android/sdk/look/cocktailbar/SlookCocktailManager;->mSlook:Lcom/samsung/android/sdk/look/Slook;
 
@@ -202,7 +198,6 @@
 
 .method public getCocktailIds(Landroid/content/ComponentName;)[I
     .locals 2
-    .param p1    # Landroid/content/ComponentName;
 
     iget-object v0, p0, Lcom/samsung/android/sdk/look/cocktailbar/SlookCocktailManager;->mSlook:Lcom/samsung/android/sdk/look/Slook;
 
@@ -233,7 +228,6 @@
 
 .method public showCocktail(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/samsung/android/sdk/look/cocktailbar/SlookCocktailManager;->mSlook:Lcom/samsung/android/sdk/look/Slook;
 
@@ -255,8 +249,6 @@
 
 .method public updateCocktail(ILcom/samsung/android/sdk/look/cocktailbar/SlookCocktailManager$CocktailInfo;)V
     .locals 6
-    .param p1    # I
-    .param p2    # Lcom/samsung/android/sdk/look/cocktailbar/SlookCocktailManager$CocktailInfo;
 
     iget-object v0, p0, Lcom/samsung/android/sdk/look/cocktailbar/SlookCocktailManager;->mSlook:Lcom/samsung/android/sdk/look/Slook;
 

@@ -34,7 +34,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -65,9 +64,6 @@
 
 .method private broadcastIntentAsUser(ZII)V
     .locals 5
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
 
     const/4 v0, 0x0
 
@@ -104,7 +100,6 @@
 
 .method private enforcePermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/smartcard/SmartCardEmailPolicy;->getEDM()Landroid/app/enterprise/EnterpriseDeviceManager;
 
@@ -125,10 +120,6 @@
 
 .method private getAliasName(Ljava/lang/String;IILjava/lang/String;)Ljava/lang/String;
     .locals 15
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -341,9 +332,6 @@
 
 .method private getEmailAcctCountAsUser(IILjava/lang/String;)I
     .locals 9
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     const/4 v5, 0x0
 
@@ -458,8 +446,6 @@
 
 .method private isAuthenticationEnabledAsUser(II)Z
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     const/4 v1, 0x0
 
@@ -484,8 +470,6 @@
 # virtual methods
 .method public getSMIMEEncryptionCertificate(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Ljava/lang/String;
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -524,8 +508,6 @@
 
 .method public getSMIMESignatureCertificate(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Ljava/lang/String;
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -564,7 +546,6 @@
 
 .method public isAuthenticationEnabled(Landroid/app/enterprise/ContextInfo;)Z
     .locals 4
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     sget-object v2, Lcom/android/server/enterprise/smartcard/SmartCardEmailPolicy;->TAG:Ljava/lang/String;
 
@@ -599,8 +580,6 @@
 
 .method public isCredentialRequired(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -638,14 +617,12 @@
 
 .method public onAdminAdded(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onAdminRemoved(I)V
     .locals 5
-    .param p1    # I
 
     const/4 v4, 0x0
 
@@ -678,39 +655,30 @@
 
 .method public onContainerCreation(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     return-void
 .end method
 
 .method public onContainerRemoved(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     return-void
 .end method
 
 .method public onPreAdminRemoval(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onPreContainerRemoval(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     return-void
 .end method
 
 .method public removeSMIMEEncryptionCertificate(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 11
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const/4 v8, 0x0
 
@@ -818,8 +786,6 @@
 
 .method public removeSMIMESignatureCertificate(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 11
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const/4 v8, 0x0
 
@@ -927,9 +893,6 @@
 
 .method public requireCredentials(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Z)Z
     .locals 12
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     const/4 v8, 0x0
 
@@ -1114,9 +1077,6 @@
 
 .method public setForceSMIMEEncryptionCertificate(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 11
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const/4 v8, 0x0
 
@@ -1232,9 +1192,6 @@
 
 .method public setForceSMIMESignatureCertificate(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 11
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const/4 v8, 0x0
 

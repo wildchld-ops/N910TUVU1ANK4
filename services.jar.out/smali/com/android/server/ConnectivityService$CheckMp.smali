@@ -64,8 +64,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Lcom/android/server/ConnectivityService;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/server/ConnectivityService;
 
     const/4 v0, 0x1
 
@@ -120,7 +118,6 @@
 
 .method static synthetic access$5900(Ljava/lang/String;)V
     .locals 0
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/android/server/ConnectivityService$CheckMp;->log(Ljava/lang/String;)V
 
@@ -129,7 +126,6 @@
 
 .method private inetAddressesToString([Ljava/net/InetAddress;)Ljava/lang/String;
     .locals 7
-    .param p1    # [Ljava/net/InetAddress;
 
     new-instance v5, Ljava/lang/StringBuffer;
 
@@ -176,7 +172,6 @@
 
 .method private declared-synchronized isMobileOk(Lcom/android/server/ConnectivityService$CheckMp$Params;)Ljava/lang/Integer;
     .locals 40
-    .param p1    # Lcom/android/server/ConnectivityService$CheckMp$Params;
 
     monitor-enter p0
 
@@ -2291,7 +2286,6 @@
 
 .method private static log(Ljava/lang/String;)V
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "ConnectivityService"
 
@@ -2443,7 +2437,6 @@
 
 .method private static sleep(I)V
     .locals 3
-    .param p0    # I
 
     mul-int/lit16 v1, p0, 0x3e8
 
@@ -2469,7 +2462,6 @@
 # virtual methods
 .method protected varargs doInBackground([Lcom/android/server/ConnectivityService$CheckMp$Params;)Ljava/lang/Integer;
     .locals 1
-    .param p1    # [Lcom/android/server/ConnectivityService$CheckMp$Params;
 
     const/4 v0, 0x0
 
@@ -2484,7 +2476,6 @@
 
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [Lcom/android/server/ConnectivityService$CheckMp$Params;
 
@@ -2544,7 +2535,6 @@
 
 .method protected onPostExecute(Ljava/lang/Integer;)V
     .locals 2
-    .param p1    # Ljava/lang/Integer;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -2594,7 +2584,6 @@
 
 .method protected bridge synthetic onPostExecute(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Ljava/lang/Integer;
 

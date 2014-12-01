@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Lcom/android/settings/wifi/WifiCaptiveActivity;Lcom/android/settings/wifi/WifiCaptiveActivity$1;)V
     .locals 0
-    .param p1    # Lcom/android/settings/wifi/WifiCaptiveActivity;
-    .param p2    # Lcom/android/settings/wifi/WifiCaptiveActivity$1;
 
     invoke-direct {p0, p1}, Lcom/android/settings/wifi/WifiCaptiveActivity$CustomWebViewClient;-><init>(Lcom/android/settings/wifi/WifiCaptiveActivity;)V
 
@@ -43,9 +41,6 @@
 # virtual methods
 .method public onReceivedSslError(Landroid/webkit/WebView;Landroid/webkit/SslErrorHandler;Landroid/net/http/SslError;)V
     .locals 2
-    .param p1    # Landroid/webkit/WebView;
-    .param p2    # Landroid/webkit/SslErrorHandler;
-    .param p3    # Landroid/net/http/SslError;
 
     if-eqz p3, :cond_0
 
@@ -72,8 +67,6 @@
 
 .method public shouldOverrideUrlLoading(Landroid/webkit/WebView;Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Landroid/webkit/WebView;
-    .param p2    # Ljava/lang/String;
 
     const/4 v4, 0x0
 

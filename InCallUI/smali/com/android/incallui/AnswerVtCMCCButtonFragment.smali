@@ -28,7 +28,6 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 3
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p1}, Landroid/view/View;->getId()I
 
@@ -112,9 +111,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 3
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const-string v1, "onCreateView..."
 
@@ -178,7 +174,6 @@
 
 .method protected onFinishInflate(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     const v0, 0x7f0e0024
 
@@ -242,16 +237,12 @@
 
 .method public onGrabbedStateChange(Landroid/view/View;I)V
     .locals 0
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     return-void
 .end method
 
 .method public onTrigger(Landroid/view/View;I)V
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     const/4 v2, 0x1
 
@@ -327,7 +318,6 @@
 
 .method public showAnswerUi(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-super {p0, p1}, Lcom/android/incallui/AnswerFragment;->showAnswerUi(Z)V
 

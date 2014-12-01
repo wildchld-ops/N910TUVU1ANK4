@@ -24,7 +24,6 @@
 
 .method public constructor <init>(I)V
     .locals 2
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -56,8 +55,6 @@
 
 .method static synthetic access$000(Lorg/mime4j/decoder/UnboundedFifoByteBuffer;I)I
     .locals 1
-    .param p0    # Lorg/mime4j/decoder/UnboundedFifoByteBuffer;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lorg/mime4j/decoder/UnboundedFifoByteBuffer;->increment(I)I
 
@@ -68,8 +65,6 @@
 
 .method static synthetic access$100(Lorg/mime4j/decoder/UnboundedFifoByteBuffer;I)I
     .locals 1
-    .param p0    # Lorg/mime4j/decoder/UnboundedFifoByteBuffer;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lorg/mime4j/decoder/UnboundedFifoByteBuffer;->decrement(I)I
 
@@ -80,7 +75,6 @@
 
 .method private decrement(I)I
     .locals 1
-    .param p1    # I
 
     add-int/lit8 p1, p1, -0x1
 
@@ -98,7 +92,6 @@
 
 .method private increment(I)I
     .locals 1
-    .param p1    # I
 
     add-int/lit8 p1, p1, 0x1
 
@@ -118,7 +111,6 @@
 # virtual methods
 .method public add(B)Z
     .locals 6
-    .param p1    # B
 
     const/4 v5, 0x0
 

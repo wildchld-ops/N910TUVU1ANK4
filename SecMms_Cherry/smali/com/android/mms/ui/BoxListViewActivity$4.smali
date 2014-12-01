@@ -36,7 +36,6 @@
 # virtual methods
 .method public onModeChanged(Z)V
     .locals 3
-    .param p1    # Z
 
     const-string v0, "Mms/BoxListViewActivity"
 
@@ -65,7 +64,6 @@
 
 .method public onSizeChanged(Landroid/graphics/Rect;)V
     .locals 2
-    .param p1    # Landroid/graphics/Rect;
 
     const-string v0, "Mms/BoxListViewActivity"
 
@@ -78,7 +76,6 @@
 
 .method public onZoneChanged(I)V
     .locals 2
-    .param p1    # I
 
     const-string v0, "Mms/BoxListViewActivity"
 

@@ -36,8 +36,6 @@
 # virtual methods
 .method public onSizeChanged(II)V
     .locals 8
-    .param p1    # I
-    .param p2    # I
 
     iget-object v6, p0, Lcom/android/mms/ui/SlideshowPresenter$1;->this$0:Lcom/android/mms/ui/SlideshowPresenter;
 

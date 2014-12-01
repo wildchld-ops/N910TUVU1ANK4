@@ -27,7 +27,6 @@
 # direct methods
 .method public constructor <init>(Landroid/os/Handler;)V
     .locals 2
-    .param p1    # Landroid/os/Handler;
 
     invoke-direct {p0, p1}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
 
@@ -48,7 +47,6 @@
 # virtual methods
 .method public onChange(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-super {p0, p1}, Landroid/database/ContentObserver;->onChange(Z)V
 

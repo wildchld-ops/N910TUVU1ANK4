@@ -42,8 +42,6 @@
 
 .method synthetic constructor <init>(Lcom/android/incallui/vt/VideoCallManager;Lcom/android/incallui/vt/VideoCallManager$1;)V
     .locals 0
-    .param p1    # Lcom/android/incallui/vt/VideoCallManager;
-    .param p2    # Lcom/android/incallui/vt/VideoCallManager$1;
 
     invoke-direct {p0, p1}, Lcom/android/incallui/vt/VideoCallManager$DualCameraTask;-><init>(Lcom/android/incallui/vt/VideoCallManager;)V
 
@@ -54,7 +52,6 @@
 # virtual methods
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [Ljava/lang/Boolean;
 
@@ -67,7 +64,6 @@
 
 .method protected varargs doInBackground([Ljava/lang/Boolean;)Ljava/lang/Void;
     .locals 2
-    .param p1    # [Ljava/lang/Boolean;
 
     const/4 v1, 0x0
 
@@ -112,7 +108,6 @@
 
 .method protected bridge synthetic onPostExecute(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Ljava/lang/Void;
 
@@ -123,7 +118,6 @@
 
 .method protected onPostExecute(Ljava/lang/Void;)V
     .locals 0
-    .param p1    # Ljava/lang/Void;
 
     return-void
 .end method

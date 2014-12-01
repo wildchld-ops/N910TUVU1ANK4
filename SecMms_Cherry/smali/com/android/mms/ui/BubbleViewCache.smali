@@ -356,7 +356,6 @@
 
 .method public static log(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "Mms/BubbleViewCache"
 
@@ -367,7 +366,6 @@
 
 .method public static declared-synchronized returnCacheView(Lcom/android/mms/ui/MessageListItem;)V
     .locals 4
-    .param p0    # Lcom/android/mms/ui/MessageListItem;
 
     const-class v2, Lcom/android/mms/ui/BubbleViewCache;
 

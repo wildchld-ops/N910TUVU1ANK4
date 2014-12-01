@@ -327,10 +327,6 @@
 
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;ILcom/sec/android/glview/TwGLViewGroup;Lcom/sec/android/app/camera/MenuResourceDepot;)V
     .locals 11
-    .param p1    # Lcom/sec/android/app/camera/Camera;
-    .param p2    # I
-    .param p3    # Lcom/sec/android/glview/TwGLViewGroup;
-    .param p4    # Lcom/sec/android/app/camera/MenuResourceDepot;
 
     const/4 v5, 0x3
 
@@ -828,7 +824,6 @@
 
 .method static synthetic access$000(Lcom/sec/android/app/camera/glwidget/TwGLHelpPopup;)Lcom/sec/android/app/camera/Camera;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLHelpPopup;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -837,7 +832,6 @@
 
 .method static synthetic access$100(Lcom/sec/android/app/camera/glwidget/TwGLHelpPopup;)Lcom/sec/android/app/camera/Camera;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLHelpPopup;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -862,7 +856,6 @@
 
 .method static synthetic access$1200(Lcom/sec/android/app/camera/glwidget/TwGLHelpPopup;)Lcom/sec/android/glview/TwGLList;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLHelpPopup;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLHelpPopup;->mList:Lcom/sec/android/glview/TwGLList;
 
@@ -871,7 +864,6 @@
 
 .method static synthetic access$1300(Lcom/sec/android/app/camera/glwidget/TwGLHelpPopup;)Lcom/sec/android/app/camera/Camera;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLHelpPopup;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -880,7 +872,6 @@
 
 .method static synthetic access$1400(Lcom/sec/android/app/camera/glwidget/TwGLHelpPopup;)Lcom/sec/android/app/camera/Camera;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLHelpPopup;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -889,7 +880,6 @@
 
 .method static synthetic access$1500(Lcom/sec/android/app/camera/glwidget/TwGLHelpPopup;)Lcom/sec/android/app/camera/Camera;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLHelpPopup;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -898,7 +888,6 @@
 
 .method static synthetic access$1600(Lcom/sec/android/app/camera/glwidget/TwGLHelpPopup;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLHelpPopup;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLHelpPopup;->mMenuTitle:Ljava/lang/String;
 
@@ -907,7 +896,6 @@
 
 .method static synthetic access$1700(Lcom/sec/android/app/camera/glwidget/TwGLHelpPopup;)Lcom/sec/android/app/camera/Camera;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLHelpPopup;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -916,7 +904,6 @@
 
 .method static synthetic access$1800(Lcom/sec/android/app/camera/glwidget/TwGLHelpPopup;)Lcom/sec/android/app/camera/Camera;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLHelpPopup;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -925,7 +912,6 @@
 
 .method static synthetic access$1900(Lcom/sec/android/app/camera/glwidget/TwGLHelpPopup;)Lcom/sec/android/app/camera/Camera;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLHelpPopup;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -934,7 +920,6 @@
 
 .method static synthetic access$2000(Lcom/sec/android/app/camera/glwidget/TwGLHelpPopup;)Lcom/sec/android/app/camera/Camera;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLHelpPopup;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -943,7 +928,6 @@
 
 .method static synthetic access$2100(Lcom/sec/android/app/camera/glwidget/TwGLHelpPopup;)Lcom/sec/android/app/camera/Camera;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLHelpPopup;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -952,7 +936,6 @@
 
 .method static synthetic access$300(Lcom/sec/android/app/camera/glwidget/TwGLHelpPopup;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLHelpPopup;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLHelpPopup;->mHelpDescriptionList:Ljava/util/ArrayList;
 
@@ -961,7 +944,6 @@
 
 .method static synthetic access$400(Lcom/sec/android/app/camera/glwidget/TwGLHelpPopup;)I
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLHelpPopup;
 
     iget v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLHelpPopup;->mHelpListSize:I
 
@@ -970,8 +952,6 @@
 
 .method static synthetic access$402(Lcom/sec/android/app/camera/glwidget/TwGLHelpPopup;I)I
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLHelpPopup;
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLHelpPopup;->mHelpListSize:I
 
@@ -980,7 +960,6 @@
 
 .method static synthetic access$500(Lcom/sec/android/app/camera/glwidget/TwGLHelpPopup;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLHelpPopup;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLHelpPopup;->mHelpSubTitleList:Ljava/util/ArrayList;
 
@@ -989,7 +968,6 @@
 
 .method static synthetic access$600(Lcom/sec/android/app/camera/glwidget/TwGLHelpPopup;)Z
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLHelpPopup;
 
     iget-boolean v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLHelpPopup;->mHasListTopBottomPadding:Z
 
@@ -998,7 +976,6 @@
 
 .method static synthetic access$700(Lcom/sec/android/app/camera/glwidget/TwGLHelpPopup;)I
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLHelpPopup;
 
     iget v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLHelpPopup;->mDescriptionType:I
 
@@ -1007,7 +984,6 @@
 
 .method static synthetic access$800(Lcom/sec/android/app/camera/glwidget/TwGLHelpPopup;)I
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLHelpPopup;
 
     iget v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLHelpPopup;->mDescriptionIconResId:I
 
@@ -1016,7 +992,6 @@
 
 .method static synthetic access$900(Lcom/sec/android/app/camera/glwidget/TwGLHelpPopup;)Lcom/sec/android/app/camera/Camera;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLHelpPopup;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -1093,7 +1068,6 @@
 
 .method public iniResources(I)V
     .locals 18
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -2568,7 +2542,6 @@
 
 .method public onActivityTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 2
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v1, 0x1
 
@@ -2588,7 +2561,6 @@
 
 .method public onAnimationEnd(Landroid/view/animation/Animation;)Z
     .locals 2
-    .param p1    # Landroid/view/animation/Animation;
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/MenuBase;->isActive()Z
 
@@ -2622,7 +2594,6 @@
 
 .method public onAnimationStart(Landroid/view/animation/Animation;)Z
     .locals 1
-    .param p1    # Landroid/view/animation/Animation;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -2645,7 +2616,6 @@
 
 .method public onClick(Lcom/sec/android/glview/TwGLView;)Z
     .locals 1
-    .param p1    # Lcom/sec/android/glview/TwGLView;
 
     invoke-virtual {p1}, Lcom/sec/android/glview/TwGLView;->getTag()I
 
@@ -2709,7 +2679,6 @@
 
 .method public onOrientationChanged(I)V
     .locals 6
-    .param p1    # I
 
     const/4 v1, 0x4
 
@@ -3369,8 +3338,6 @@
 
 .method public onTouch(Lcom/sec/android/glview/TwGLView;Landroid/view/MotionEvent;)Z
     .locals 4
-    .param p1    # Lcom/sec/android/glview/TwGLView;
-    .param p2    # Landroid/view/MotionEvent;
 
     invoke-virtual {p2}, Landroid/view/MotionEvent;->getAction()I
 

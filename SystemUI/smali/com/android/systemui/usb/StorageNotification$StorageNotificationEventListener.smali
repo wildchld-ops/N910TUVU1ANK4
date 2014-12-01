@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Lcom/android/systemui/usb/StorageNotification;Lcom/android/systemui/usb/StorageNotification$1;)V
     .locals 0
-    .param p1    # Lcom/android/systemui/usb/StorageNotification;
-    .param p2    # Lcom/android/systemui/usb/StorageNotification$1;
 
     invoke-direct {p0, p1}, Lcom/android/systemui/usb/StorageNotification$StorageNotificationEventListener;-><init>(Lcom/android/systemui/usb/StorageNotification;)V
 
@@ -43,9 +41,6 @@
 # virtual methods
 .method public onStorageStateChanged(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/systemui/usb/StorageNotification$StorageNotificationEventListener;->this$0:Lcom/android/systemui/usb/StorageNotification;
 
@@ -65,7 +60,6 @@
 
 .method public onUsbMassStorageConnectionChanged(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/systemui/usb/StorageNotification$StorageNotificationEventListener;->this$0:Lcom/android/systemui/usb/StorageNotification;
 

@@ -45,7 +45,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Landroid/content/AsyncTaskLoader;-><init>(Landroid/content/Context;)V
 
@@ -78,7 +77,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/print/PrintSettingsFragment$PrintJobsLoader;)V
     .locals 0
-    .param p0    # Lcom/android/settings/print/PrintSettingsFragment$PrintJobsLoader;
 
     invoke-virtual {p0}, Landroid/content/AsyncTaskLoader;->onForceLoad()V
 
@@ -87,7 +85,6 @@
 
 .method private static shouldShowToUser(Landroid/print/PrintJobInfo;)Z
     .locals 1
-    .param p0    # Landroid/print/PrintJobInfo;
 
     invoke-virtual {p0}, Landroid/print/PrintJobInfo;->getState()I
 
@@ -122,7 +119,6 @@
 # virtual methods
 .method public bridge synthetic deliverResult(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Ljava/util/List;
 

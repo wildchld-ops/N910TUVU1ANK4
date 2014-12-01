@@ -39,8 +39,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -51,9 +49,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     invoke-direct {p0, p1, p2}, Landroid/widget/TextView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -299,8 +294,6 @@
 
 .method public initialize(Lcom/android/internal/view/menu/MenuItemImpl;I)V
     .locals 2
-    .param p1    # Lcom/android/internal/view/menu/MenuItemImpl;
-    .param p2    # I
 
     iput-object p1, p0, Lcom/android/internal/view/menu/IconMenuItemView;->mItemData:Lcom/android/internal/view/menu/MenuItemImpl;
 
@@ -341,8 +334,6 @@
 
 .method initialize(Ljava/lang/CharSequence;Landroid/graphics/drawable/Drawable;)V
     .locals 2
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Landroid/graphics/drawable/Drawable;
 
     const/4 v0, 0x1
 
@@ -372,11 +363,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 0
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-super/range {p0 .. p5}, Landroid/widget/TextView;->onLayout(ZIIII)V
 
@@ -387,10 +373,6 @@
 
 .method protected onTextChanged(Ljava/lang/CharSequence;III)V
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-super {p0, p1, p2, p3, p4}, Landroid/widget/TextView;->onTextChanged(Ljava/lang/CharSequence;III)V
 
@@ -454,7 +436,6 @@
 
 .method setCaptionMode(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v1, p0, Lcom/android/internal/view/menu/IconMenuItemView;->mItemData:Lcom/android/internal/view/menu/MenuItemImpl;
 
@@ -517,21 +498,18 @@
 
 .method public setCheckable(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method public setChecked(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method public setIcon(Landroid/graphics/drawable/Drawable;)V
     .locals 4
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     const/4 v3, 0x0
 
@@ -574,7 +552,6 @@
 
 .method setIconMenuView(Lcom/android/internal/view/menu/IconMenuView;)V
     .locals 0
-    .param p1    # Lcom/android/internal/view/menu/IconMenuView;
 
     iput-object p1, p0, Lcom/android/internal/view/menu/IconMenuItemView;->mIconMenuView:Lcom/android/internal/view/menu/IconMenuView;
 
@@ -583,7 +560,6 @@
 
 .method public setItemData(Lcom/android/internal/view/menu/MenuItemImpl;)V
     .locals 0
-    .param p1    # Lcom/android/internal/view/menu/MenuItemImpl;
 
     iput-object p1, p0, Lcom/android/internal/view/menu/IconMenuItemView;->mItemData:Lcom/android/internal/view/menu/MenuItemImpl;
 
@@ -592,7 +568,6 @@
 
 .method public setItemInvoker(Lcom/android/internal/view/menu/MenuBuilder$ItemInvoker;)V
     .locals 0
-    .param p1    # Lcom/android/internal/view/menu/MenuBuilder$ItemInvoker;
 
     iput-object p1, p0, Lcom/android/internal/view/menu/IconMenuItemView;->mItemInvoker:Lcom/android/internal/view/menu/MenuBuilder$ItemInvoker;
 
@@ -601,8 +576,6 @@
 
 .method public setShortcut(ZC)V
     .locals 1
-    .param p1    # Z
-    .param p2    # C
 
     iget-boolean v0, p0, Lcom/android/internal/view/menu/IconMenuItemView;->mShortcutCaptionMode:Z
 
@@ -622,7 +595,6 @@
 
 .method public setTitle(Ljava/lang/CharSequence;)V
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
 
     iget-boolean v0, p0, Lcom/android/internal/view/menu/IconMenuItemView;->mShortcutCaptionMode:Z
 
@@ -646,7 +618,6 @@
 
 .method public setVisibility(I)V
     .locals 1
-    .param p1    # I
 
     invoke-super {p0, p1}, Landroid/view/View;->setVisibility(I)V
 

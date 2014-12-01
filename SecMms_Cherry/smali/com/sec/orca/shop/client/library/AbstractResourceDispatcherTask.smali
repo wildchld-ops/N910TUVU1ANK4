@@ -74,7 +74,6 @@
 # virtual methods
 .method public equals(Ljava/lang/Object;)Z
     .locals 3
-    .param p1    # Ljava/lang/Object;
 
     instance-of v1, p1, Lcom/sec/orca/shop/client/library/AbstractResourceDispatcherTask;
 
@@ -264,7 +263,6 @@
 
 .method protected runOnUiThread(Ljava/util/concurrent/Callable;J)V
     .locals 1
-    .param p2    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -299,7 +297,6 @@
 
 .method public setResourceDispatcher(Lcom/sec/orca/shop/client/library/ResourceDispatcher;)V
     .locals 0
-    .param p1    # Lcom/sec/orca/shop/client/library/ResourceDispatcher;
 
     iput-object p1, p0, Lcom/sec/orca/shop/client/library/AbstractResourceDispatcherTask;->mResourceDispatcher:Lcom/sec/orca/shop/client/library/ResourceDispatcher;
 
@@ -308,7 +305,6 @@
 
 .method setSuccess(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/orca/shop/client/library/AbstractResourceDispatcherTask;->mIsSuccess:Z
 
@@ -317,7 +313,6 @@
 
 .method public setValue(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     iput-object p1, p0, Lcom/sec/orca/shop/client/library/AbstractResourceDispatcherTask;->mValue:Ljava/lang/Object;
 
@@ -326,7 +321,6 @@
 
 .method public setView(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     new-instance v0, Ljava/lang/ref/WeakReference;
 

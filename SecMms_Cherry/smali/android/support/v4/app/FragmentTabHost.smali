@@ -47,7 +47,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -66,8 +65,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/widget/TabHost;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -84,8 +81,6 @@
 
 .method private doTabChanged(Ljava/lang/String;Landroid/support/v4/app/FragmentTransaction;)Landroid/support/v4/app/FragmentTransaction;
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/support/v4/app/FragmentTransaction;
 
     const/4 v1, 0x0
 
@@ -307,7 +302,6 @@
 
 .method private ensureHierarchy(Landroid/content/Context;)V
     .locals 8
-    .param p1    # Landroid/content/Context;
 
     const v4, 0x1020013
 
@@ -393,8 +387,6 @@
 
 .method private initFragmentTabHost(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v3, 0x0
 
@@ -427,8 +419,6 @@
 # virtual methods
 .method public addTab(Landroid/widget/TabHost$TabSpec;Ljava/lang/Class;Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/widget/TabHost$TabSpec;
-    .param p3    # Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -647,7 +637,6 @@
 
 .method protected onRestoreInstanceState(Landroid/os/Parcelable;)V
     .locals 2
-    .param p1    # Landroid/os/Parcelable;
 
     move-object v0, p1
 
@@ -688,7 +677,6 @@
 
 .method public onTabChanged(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-boolean v1, p0, Landroid/support/v4/app/FragmentTabHost;->mAttached:Z
 
@@ -719,7 +707,6 @@
 
 .method public setOnTabChangedListener(Landroid/widget/TabHost$OnTabChangeListener;)V
     .locals 0
-    .param p1    # Landroid/widget/TabHost$OnTabChangeListener;
 
     iput-object p1, p0, Landroid/support/v4/app/FragmentTabHost;->mOnTabChangeListener:Landroid/widget/TabHost$OnTabChangeListener;
 
@@ -742,8 +729,6 @@
 
 .method public setup(Landroid/content/Context;Landroid/support/v4/app/FragmentManager;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/support/v4/app/FragmentManager;
 
     invoke-direct {p0, p1}, Landroid/support/v4/app/FragmentTabHost;->ensureHierarchy(Landroid/content/Context;)V
 
@@ -760,9 +745,6 @@
 
 .method public setup(Landroid/content/Context;Landroid/support/v4/app/FragmentManager;I)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/support/v4/app/FragmentManager;
-    .param p3    # I
 
     invoke-direct {p0, p1}, Landroid/support/v4/app/FragmentTabHost;->ensureHierarchy(Landroid/content/Context;)V
 

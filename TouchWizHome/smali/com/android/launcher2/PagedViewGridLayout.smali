@@ -19,9 +19,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;II)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v1, 0x0
 
@@ -42,7 +39,6 @@
 
 .method private drawShadows(Landroid/graphics/Canvas;)V
     .locals 3
-    .param p1    # Landroid/graphics/Canvas;
 
     const/4 v0, 0x0
 
@@ -154,7 +150,6 @@
 
 .method public getChildOnPageAt(I)Landroid/view/View;
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
@@ -183,7 +178,6 @@
 
 .method public indexOfChildOnPage(Landroid/view/View;)I
     .locals 1
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p0, p1}, Landroid/view/ViewGroup;->indexOfChild(Landroid/view/View;)I
 
@@ -194,7 +188,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 6
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-super {p0, p1}, Landroid/view/View;->onTouchEvent(Landroid/view/MotionEvent;)Z
 
@@ -253,7 +246,6 @@
 
 .method public removeViewOnPageAt(I)V
     .locals 0
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/view/ViewGroup;->removeViewAt(I)V
 
@@ -262,7 +254,6 @@
 
 .method public setAccessibilityEnabled(Z)V
     .locals 6
-    .param p1    # Z
 
     const/4 v1, 0x0
 
@@ -334,7 +325,6 @@
 
 .method public setBitmapLoaderRunnable(Ljava/lang/Runnable;)V
     .locals 0
-    .param p1    # Ljava/lang/Runnable;
 
     iput-object p1, p0, Lcom/android/launcher2/PagedViewGridLayout;->mBitmapLoaderRunnable:Ljava/lang/Runnable;
 
@@ -343,7 +333,6 @@
 
 .method public setPageType(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/launcher2/PagedViewGridLayout;->mPageType:I
 

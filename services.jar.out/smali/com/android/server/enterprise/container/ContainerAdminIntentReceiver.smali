@@ -74,7 +74,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 7
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -164,7 +163,6 @@
 
 .method static synthetic access$000(Lcom/android/server/enterprise/container/ContainerAdminIntentReceiver;)Lcom/android/server/enterprise/storage/EdmStorageProvider;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/container/ContainerAdminIntentReceiver;
 
     iget-object v0, p0, Lcom/android/server/enterprise/container/ContainerAdminIntentReceiver;->mEdmStorageProvider:Lcom/android/server/enterprise/storage/EdmStorageProvider;
 
@@ -181,10 +179,6 @@
 
 .method static synthetic access$200(Lcom/android/server/enterprise/container/ContainerAdminIntentReceiver;Landroid/content/Context;Landroid/content/Intent;I)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/container/ContainerAdminIntentReceiver;
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/server/enterprise/container/ContainerAdminIntentReceiver;->sendBroadcastToAdmin(Landroid/content/Context;Landroid/content/Intent;I)V
 
@@ -201,9 +195,6 @@
 
 .method private sendBroadcastToAdmin(Landroid/content/Context;Landroid/content/Intent;I)V
     .locals 11
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
-    .param p3    # I
 
     :try_start_0
     iget-object v8, p0, Lcom/android/server/enterprise/container/ContainerAdminIntentReceiver;->mContext:Landroid/content/Context;
@@ -472,9 +463,6 @@
 
 .method public registerBroadcastReceiverIntent(ILjava/lang/String;Ljava/lang/String;)Z
     .locals 8
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const/4 v4, 0x1
 
@@ -930,9 +918,6 @@
 
 .method public unregisterBroadcastReceiverIntent(ILjava/lang/String;Ljava/lang/String;)Z
     .locals 8
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const/4 v6, 0x1
 

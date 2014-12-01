@@ -40,7 +40,6 @@
 
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -73,8 +72,6 @@
 
 .method static synthetic access$002(Lcom/android/mms/Omacp;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/Omacp;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/Omacp;->mIsOmacpChanged:Z
 
@@ -108,8 +105,6 @@
 # virtual methods
 .method public addMenu(Landroid/view/Menu;I)V
     .locals 2
-    .param p1    # Landroid/view/Menu;
-    .param p2    # I
 
     const/4 v1, 0x0
 
@@ -133,7 +128,6 @@
 
 .method public broadcastSetCp(Landroid/app/Activity;)V
     .locals 2
-    .param p1    # Landroid/app/Activity;
 
     if-nez p1, :cond_0
 

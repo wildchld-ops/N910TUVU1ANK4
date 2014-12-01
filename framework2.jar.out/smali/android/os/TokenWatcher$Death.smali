@@ -28,8 +28,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/TokenWatcher;Landroid/os/IBinder;Ljava/lang/String;)V
     .locals 0
-    .param p2    # Landroid/os/IBinder;
-    .param p3    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/os/TokenWatcher$Death;->this$0:Landroid/os/TokenWatcher;
 

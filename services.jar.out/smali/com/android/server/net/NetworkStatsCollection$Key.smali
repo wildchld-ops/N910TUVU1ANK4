@@ -42,10 +42,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/net/NetworkIdentitySet;III)V
     .locals 3
-    .param p1    # Lcom/android/server/net/NetworkIdentitySet;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -102,7 +98,6 @@
 # virtual methods
 .method public compareTo(Lcom/android/server/net/NetworkStatsCollection$Key;)I
     .locals 2
-    .param p1    # Lcom/android/server/net/NetworkStatsCollection$Key;
 
     iget v0, p0, Lcom/android/server/net/NetworkStatsCollection$Key;->uid:I
 
@@ -117,7 +112,6 @@
 
 .method public bridge synthetic compareTo(Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/android/server/net/NetworkStatsCollection$Key;
 
@@ -130,7 +124,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 4
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x0
 

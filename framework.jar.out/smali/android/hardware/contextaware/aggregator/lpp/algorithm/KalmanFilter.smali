@@ -40,8 +40,6 @@
 # direct methods
 .method public constructor <init>(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     const/4 v2, 0x1
 
@@ -142,7 +140,6 @@
 # virtual methods
 .method public MeasurementUpdate(Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;)Z
     .locals 22
-    .param p1    # Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;
 
     invoke-virtual/range {p1 .. p1}, Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;->getRowDimension()I
 
@@ -638,7 +635,6 @@
 
 .method public TimePropagation(D)Z
     .locals 12
-    .param p1    # D
 
     const/4 v11, 0x1
 
@@ -860,7 +856,6 @@
 
 .method public setInitialCovariance([[D)Z
     .locals 6
-    .param p1    # [[D
 
     const/4 v3, 0x1
 
@@ -926,7 +921,6 @@
 
 .method public setInitialState([D)Z
     .locals 6
-    .param p1    # [D
 
     const/4 v2, 0x1
 
@@ -969,7 +963,6 @@
 
 .method public setMeasurementMatrix([[D)Z
     .locals 6
-    .param p1    # [[D
 
     const/4 v3, 0x1
 
@@ -1035,7 +1028,6 @@
 
 .method public setMeasurementNoise([[D)Z
     .locals 6
-    .param p1    # [[D
 
     const/4 v3, 0x1
 
@@ -1101,7 +1093,6 @@
 
 .method public setProcessNoise([[D)Z
     .locals 6
-    .param p1    # [[D
 
     const/4 v3, 0x1
 
@@ -1167,7 +1158,6 @@
 
 .method public setTransitionMatrix([[D)Z
     .locals 6
-    .param p1    # [[D
 
     const/4 v3, 0x1
 

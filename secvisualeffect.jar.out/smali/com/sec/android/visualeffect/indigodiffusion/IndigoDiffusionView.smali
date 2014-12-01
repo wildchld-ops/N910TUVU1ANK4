@@ -22,10 +22,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;III)V
     .locals 8
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/4 v6, 0x0
 
@@ -179,7 +175,6 @@
 # virtual methods
 .method public changeBackground(Landroid/graphics/Bitmap;)V
     .locals 2
-    .param p1    # Landroid/graphics/Bitmap;
 
     const-string v0, "IndigoDiffusionView"
 
@@ -207,9 +202,6 @@
 
 .method public changeColor(III)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     iget-object v0, p0, Lcom/sec/android/visualeffect/indigodiffusion/IndigoDiffusionView;->mRenderer:Lcom/sec/android/visualeffect/indigodiffusion/IndigoDiffusionRenderer;
 
@@ -230,7 +222,6 @@
 
 .method public handleTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-object v0, p0, Lcom/sec/android/visualeffect/indigodiffusion/IndigoDiffusionView;->mRenderer:Lcom/sec/android/visualeffect/indigodiffusion/IndigoDiffusionRenderer;
 
@@ -271,7 +262,6 @@
 
 .method protected onWindowVisibilityChanged(I)V
     .locals 0
-    .param p1    # I
 
     if-nez p1, :cond_0
 
@@ -303,7 +293,6 @@
 
 .method public setBackground(Landroid/graphics/Bitmap;)V
     .locals 1
-    .param p1    # Landroid/graphics/Bitmap;
 
     iget-object v0, p0, Lcom/sec/android/visualeffect/indigodiffusion/IndigoDiffusionView;->mRenderer:Lcom/sec/android/visualeffect/indigodiffusion/IndigoDiffusionRenderer;
 
@@ -314,7 +303,6 @@
 
 .method public setResourcesBitmap(Landroid/graphics/Bitmap;)V
     .locals 1
-    .param p1    # Landroid/graphics/Bitmap;
 
     iget-object v0, p0, Lcom/sec/android/visualeffect/indigodiffusion/IndigoDiffusionView;->mRenderer:Lcom/sec/android/visualeffect/indigodiffusion/IndigoDiffusionRenderer;
 
@@ -325,21 +313,6 @@
 
 .method public setRippleConfiguration(IIFFFFIIIIFFFFI)V
     .locals 17
-    .param p1    # I
-    .param p2    # I
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # F
-    .param p7    # I
-    .param p8    # I
-    .param p9    # I
-    .param p10    # I
-    .param p11    # F
-    .param p12    # F
-    .param p13    # F
-    .param p14    # F
-    .param p15    # I
 
     move-object/from16 v0, p0
 
@@ -392,8 +365,6 @@
 
 .method public showUnlockAffordance(JLandroid/graphics/Rect;)V
     .locals 3
-    .param p1    # J
-    .param p3    # Landroid/graphics/Rect;
 
     const-string v0, "IndigoDiffusionView"
 

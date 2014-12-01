@@ -20,8 +20,6 @@
 
 .method public constructor <init>(BB)V
     .locals 0
-    .param p1    # B
-    .param p2    # B
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

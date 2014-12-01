@@ -51,8 +51,6 @@
 # virtual methods
 .method addTag(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     move-object v0, p2
 
@@ -98,8 +96,6 @@
 
 .method checkPkgName(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/internal/os/xmlCheckExt;->mMap:Ljava/util/HashMap;
 
@@ -126,7 +122,6 @@
 
 .method public varargs doCheck([Ljava/lang/String;)Z
     .locals 13
-    .param p1    # [Ljava/lang/String;
 
     const/4 v12, 0x1
 

@@ -44,7 +44,6 @@
 
 .method private Sendmsg(I)V
     .locals 5
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -134,7 +133,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/wifi/WifiWarningDialog;)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/WifiWarningDialog;
 
     invoke-direct {p0}, Lcom/android/settings/wifi/WifiWarningDialog;->wifiWarningDialogPressOK()V
 
@@ -143,7 +141,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/wifi/WifiWarningDialog;)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/WifiWarningDialog;
 
     invoke-direct {p0}, Lcom/android/settings/wifi/WifiWarningDialog;->wifiWarningDialogPressCancel()V
 
@@ -152,8 +149,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/wifi/WifiWarningDialog;I)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/WifiWarningDialog;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/settings/wifi/WifiWarningDialog;->Sendmsg(I)V
 
@@ -170,7 +165,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/wifi/WifiWarningDialog;)Landroid/net/wifi/WifiManager;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiWarningDialog;
 
     iget-object v0, p0, Lcom/android/settings/wifi/WifiWarningDialog;->mWifiManager:Landroid/net/wifi/WifiManager;
 
@@ -179,7 +173,6 @@
 
 .method private displayDialog(I)V
     .locals 3
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/settings/wifi/WifiWarningDialog;->getDialog(I)Landroid/app/Dialog;
 
@@ -215,7 +208,6 @@
 
 .method private getDialog(I)Landroid/app/Dialog;
     .locals 7
-    .param p1    # I
 
     const/4 v6, 0x0
 
@@ -616,7 +608,6 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v3, 0x1
 

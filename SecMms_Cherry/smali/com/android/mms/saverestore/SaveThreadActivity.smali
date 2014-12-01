@@ -296,7 +296,6 @@
 
 .method private deriveAddress(Landroid/content/Intent;)Ljava/lang/String;
     .locals 2
-    .param p1    # Landroid/content/Intent;
 
     invoke-virtual {p1}, Landroid/content/Intent;->getData()Landroid/net/Uri;
 
@@ -371,7 +370,6 @@
 
 .method private getOrCreateThreadId([Ljava/lang/String;)J
     .locals 3
-    .param p1    # [Ljava/lang/String;
 
     new-instance v0, Ljava/util/HashSet;
 
@@ -406,8 +404,6 @@
 
 .method private initActivityState(Landroid/os/Bundle;Landroid/content/Intent;)V
     .locals 7
-    .param p1    # Landroid/os/Bundle;
-    .param p2    # Landroid/content/Intent;
 
     const/4 v6, 0x1
 
@@ -660,7 +656,6 @@
 
 .method private setThreadId(J)V
     .locals 0
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/android/mms/saverestore/SaveThreadActivity;->mThreadId:J
 
@@ -725,7 +720,6 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 7
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 

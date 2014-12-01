@@ -23,7 +23,6 @@
 
 .method public static getExtendedMetadataParser([B)Landroid/drm/DrmUtils$ExtendedMetadataParser;
     .locals 2
-    .param p0    # [B
 
     new-instance v0, Landroid/drm/DrmUtils$ExtendedMetadataParser;
 
@@ -36,7 +35,6 @@
 
 .method private static quietlyDispose(Ljava/io/InputStream;)V
     .locals 1
-    .param p0    # Ljava/io/InputStream;
 
     if-eqz p0, :cond_0
 
@@ -57,7 +55,6 @@
 
 .method private static quietlyDispose(Ljava/io/OutputStream;)V
     .locals 1
-    .param p0    # Ljava/io/OutputStream;
 
     if-eqz p0, :cond_0
 
@@ -78,7 +75,6 @@
 
 .method static readBytes(Ljava/io/File;)[B
     .locals 5
-    .param p0    # Ljava/io/File;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -127,7 +123,6 @@
 
 .method static readBytes(Ljava/lang/String;)[B
     .locals 2
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -147,7 +142,6 @@
 
 .method static removeFile(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -165,8 +159,6 @@
 
 .method static writeToFile(Ljava/lang/String;[B)V
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

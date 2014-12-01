@@ -72,7 +72,6 @@
 # direct methods
 .method public constructor <init>(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;Ljava/lang/String;)V
     .locals 3
-    .param p2    # Ljava/lang/String;
 
     const/4 v2, 0x1
 
@@ -135,7 +134,6 @@
 # virtual methods
 .method public compareTo(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer$ToolBoxMenu;)I
     .locals 3
-    .param p1    # Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer$ToolBoxMenu;
 
     iget v2, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer$ToolBoxMenu;->priority:I
 
@@ -158,7 +156,6 @@
 
 .method public bridge synthetic compareTo(Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer$ToolBoxMenu;
 

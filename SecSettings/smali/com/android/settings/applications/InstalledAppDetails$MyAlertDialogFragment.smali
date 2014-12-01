@@ -25,8 +25,6 @@
 
 .method public static newInstance(II)Lcom/android/settings/applications/InstalledAppDetails$MyAlertDialogFragment;
     .locals 3
-    .param p0    # I
-    .param p1    # I
 
     new-instance v1, Lcom/android/settings/applications/InstalledAppDetails$MyAlertDialogFragment;
 
@@ -65,7 +63,6 @@
 
 .method public onCancel(Landroid/content/DialogInterface;)V
     .locals 4
-    .param p1    # Landroid/content/DialogInterface;
 
     const/4 v3, 0x1
 
@@ -132,7 +129,6 @@
 
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
     .locals 13
-    .param p1    # Landroid/os/Bundle;
 
     invoke-virtual {p0}, Lcom/android/settings/applications/InstalledAppDetails$MyAlertDialogFragment;->getArguments()Landroid/os/Bundle;
 

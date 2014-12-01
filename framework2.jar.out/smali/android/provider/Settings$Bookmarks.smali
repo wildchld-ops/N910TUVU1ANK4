@@ -92,12 +92,6 @@
 
 .method public static add(Landroid/content/ContentResolver;Landroid/content/Intent;Ljava/lang/String;Ljava/lang/String;CI)Landroid/net/Uri;
     .locals 6
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # C
-    .param p5    # I
 
     const/4 v5, 0x0
 
@@ -176,8 +170,6 @@
 
 .method public static getIntentForShortcut(Landroid/content/ContentResolver;C)Landroid/content/Intent;
     .locals 10
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # C
 
     const/4 v5, 0x0
 
@@ -282,16 +274,12 @@
 
 .method public static getLabelForFolder(Landroid/content/res/Resources;Ljava/lang/String;)Ljava/lang/CharSequence;
     .locals 0
-    .param p0    # Landroid/content/res/Resources;
-    .param p1    # Ljava/lang/String;
 
     return-object p1
 .end method
 
 .method public static getTitle(Landroid/content/Context;Landroid/database/Cursor;)Ljava/lang/CharSequence;
     .locals 11
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/database/Cursor;
 
     const/4 v10, 0x0
 

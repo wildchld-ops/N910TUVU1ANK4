@@ -52,7 +52,6 @@
 
 .method public static dumpHexString([B)Ljava/lang/String;
     .locals 2
-    .param p0    # [B
 
     const/4 v0, 0x0
 
@@ -67,9 +66,6 @@
 
 .method public static dumpHexString([BII)Ljava/lang/String;
     .locals 10
-    .param p0    # [B
-    .param p1    # I
-    .param p2    # I
 
     new-instance v7, Ljava/lang/StringBuilder;
 
@@ -265,7 +261,6 @@
 
 .method public static hexStringToByteArray(Ljava/lang/String;)[B
     .locals 6
-    .param p0    # Ljava/lang/String;
 
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
@@ -318,7 +313,6 @@
 
 .method private static toByte(C)I
     .locals 3
-    .param p0    # C
 
     const/16 v0, 0x30
 
@@ -397,7 +391,6 @@
 
 .method public static toByteArray(B)[B
     .locals 2
-    .param p0    # B
 
     const/4 v1, 0x1
 
@@ -412,7 +405,6 @@
 
 .method public static toByteArray(I)[B
     .locals 3
-    .param p0    # I
 
     const/4 v1, 0x4
 
@@ -461,7 +453,6 @@
 
 .method public static toHexString(B)Ljava/lang/String;
     .locals 1
-    .param p0    # B
 
     invoke-static {p0}, Lcom/android/internal/util/HexDump;->toByteArray(B)[B
 
@@ -476,7 +467,6 @@
 
 .method public static toHexString(I)Ljava/lang/String;
     .locals 1
-    .param p0    # I
 
     invoke-static {p0}, Lcom/android/internal/util/HexDump;->toByteArray(I)[B
 
@@ -491,7 +481,6 @@
 
 .method public static toHexString([B)Ljava/lang/String;
     .locals 2
-    .param p0    # [B
 
     const/4 v0, 0x0
 
@@ -506,9 +495,6 @@
 
 .method public static toHexString([BII)Ljava/lang/String;
     .locals 7
-    .param p0    # [B
-    .param p1    # I
-    .param p2    # I
 
     mul-int/lit8 v5, p2, 0x2
 

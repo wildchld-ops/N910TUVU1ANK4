@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Landroid/hardware/contextaware/aggregator/lpp/LppAggregator;Landroid/hardware/contextaware/aggregator/lpp/LppAggregator$1;)V
     .locals 0
-    .param p1    # Landroid/hardware/contextaware/aggregator/lpp/LppAggregator;
-    .param p2    # Landroid/hardware/contextaware/aggregator/lpp/LppAggregator$1;
 
     invoke-direct {p0, p1}, Landroid/hardware/contextaware/aggregator/lpp/LppAggregator$LPPFusionListener;-><init>(Landroid/hardware/contextaware/aggregator/lpp/LppAggregator;)V
 
@@ -121,7 +119,6 @@
 
 .method public lppStatus(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     return-void
 .end method
@@ -154,7 +151,6 @@
 
 .method public onLocationChanged(Landroid/location/Location;)V
     .locals 4
-    .param p1    # Landroid/location/Location;
 
     const-string v0, "LppAggregator"
 

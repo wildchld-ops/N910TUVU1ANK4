@@ -35,12 +35,6 @@
 # direct methods
 .method constructor <init>(Landroid/content/pm/PackageParser$Package;[Ljava/lang/String;IIII)V
     .locals 0
-    .param p1    # Landroid/content/pm/PackageParser$Package;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

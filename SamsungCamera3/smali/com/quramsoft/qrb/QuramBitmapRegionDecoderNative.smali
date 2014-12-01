@@ -62,12 +62,6 @@
 
 .method public static nativeDecodeRegion(IIIIILandroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;
     .locals 18
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Landroid/graphics/BitmapFactory$Options;
 
     const/4 v8, 0x0
 

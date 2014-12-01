@@ -25,8 +25,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/settings/wifi/WifiCredService;Ljava/lang/String;Landroid/content/Context;)V
     .locals 1
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/content/Context;
 
     iput-object p1, p0, Lcom/android/settings/wifi/WifiCredService$ReadWithScanner;->this$0:Lcom/android/settings/wifi/WifiCredService;
 
@@ -47,8 +45,6 @@
 
 .method private getAAACA(Ljava/lang/String;Ljava/lang/String;)Ljava/security/cert/X509Certificate;
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;
@@ -152,8 +148,6 @@
 
 .method private setNameValuePPSMO(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -366,7 +360,6 @@
 
 .method public getHash([B)Ljava/lang/String;
     .locals 4
-    .param p1    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;
@@ -400,7 +393,6 @@
 
 .method public hexify([B)Ljava/lang/String;
     .locals 4
-    .param p1    # [B
 
     const/16 v3, 0x10
 
@@ -477,8 +469,6 @@
 
 .method public installCaCert(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;
@@ -650,8 +640,6 @@
 
 .method public installclientCert(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;
@@ -687,8 +675,6 @@
 
 .method protected processLine(Ljava/lang/StringBuffer;Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/StringBuffer;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -845,7 +831,6 @@
 
 .method public writeClientCert(Ljava/io/File;)Ljava/lang/String;
     .locals 11
-    .param p1    # Ljava/io/File;
 
     new-instance v8, Ljava/lang/StringBuilder;
 
@@ -1090,9 +1075,6 @@
 
 .method public writeToSupplicant(Ljava/lang/String;[BLjava/lang/String;)V
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # [B
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;

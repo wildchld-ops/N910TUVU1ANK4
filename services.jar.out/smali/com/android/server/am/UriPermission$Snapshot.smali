@@ -31,7 +31,6 @@
 # direct methods
 .method private constructor <init>(Lcom/android/server/am/UriPermission;)V
     .locals 2
-    .param p1    # Lcom/android/server/am/UriPermission;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -64,8 +63,6 @@
 
 .method synthetic constructor <init>(Lcom/android/server/am/UriPermission;Lcom/android/server/am/UriPermission$1;)V
     .locals 0
-    .param p1    # Lcom/android/server/am/UriPermission;
-    .param p2    # Lcom/android/server/am/UriPermission$1;
 
     invoke-direct {p0, p1}, Lcom/android/server/am/UriPermission$Snapshot;-><init>(Lcom/android/server/am/UriPermission;)V
 

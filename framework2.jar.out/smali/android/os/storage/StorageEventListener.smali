@@ -16,16 +16,12 @@
 # virtual methods
 .method public onStorageStateChanged(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method public onUsbMassStorageConnectionChanged(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method

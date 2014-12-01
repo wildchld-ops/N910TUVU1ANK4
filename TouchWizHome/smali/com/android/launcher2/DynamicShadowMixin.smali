@@ -48,7 +48,6 @@
 
 .method public constructor <init>(Landroid/view/View;)V
     .locals 4
-    .param p1    # Landroid/view/View;
 
     const/4 v3, 0x0
 
@@ -125,7 +124,6 @@
 
 .method private align4(I)I
     .locals 1
-    .param p1    # I
 
     add-int/lit8 v0, p1, 0x3
 
@@ -141,7 +139,6 @@
 # virtual methods
 .method public draw(Landroid/graphics/Canvas;)V
     .locals 13
-    .param p1    # Landroid/graphics/Canvas;
 
     const/4 v1, 0x0
 
@@ -450,7 +447,6 @@
 
 .method public setViewToInvalidate(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     iput-object p1, p0, Lcom/android/launcher2/DynamicShadowMixin;->mViewToInvalidateOnShadowDirty:Landroid/view/View;
 

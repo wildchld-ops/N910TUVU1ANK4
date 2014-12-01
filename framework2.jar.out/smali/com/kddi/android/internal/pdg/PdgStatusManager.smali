@@ -30,9 +30,6 @@
 
 .method public static getPrivacyData(Landroid/content/Context;Ljava/lang/String;I)Lcom/kddi/android/internal/pdg/PdgStatusManager$PrivacyData;
     .locals 15
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     new-instance v1, Ljava/lang/StringBuilder;
 

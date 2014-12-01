@@ -37,8 +37,6 @@
 # virtual methods
 .method public packageDeleted(Ljava/lang/String;I)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v0, 0x1
 

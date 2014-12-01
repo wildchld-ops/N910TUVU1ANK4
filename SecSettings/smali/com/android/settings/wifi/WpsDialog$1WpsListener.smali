@@ -62,7 +62,6 @@
 
 .method public onFailure(I)V
     .locals 4
-    .param p1    # I
 
     const v3, 0x7f0903d1
 
@@ -231,7 +230,6 @@
 
 .method public onStartSuccess(Ljava/lang/String;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 

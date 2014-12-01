@@ -36,8 +36,6 @@
 
 .method synthetic constructor <init>(Landroid/view/View;Landroid/view/View$1;)V
     .locals 0
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/View$1;
 
     invoke-direct {p0, p1}, Landroid/view/View$SendViewScrolledAccessibilityEvent;-><init>(Landroid/view/View;)V
 

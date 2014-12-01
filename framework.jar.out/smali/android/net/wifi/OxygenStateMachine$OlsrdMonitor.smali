@@ -27,7 +27,6 @@
 # direct methods
 .method public constructor <init>(Landroid/net/wifi/OxygenStateMachine;Lcom/android/internal/util/StateMachine;)V
     .locals 0
-    .param p2    # Lcom/android/internal/util/StateMachine;
 
     iput-object p1, p0, Landroid/net/wifi/OxygenStateMachine$OlsrdMonitor;->this$0:Landroid/net/wifi/OxygenStateMachine;
 
@@ -40,7 +39,6 @@
 
 .method static synthetic access$2400(Landroid/net/wifi/OxygenStateMachine$OlsrdMonitor;)Z
     .locals 1
-    .param p0    # Landroid/net/wifi/OxygenStateMachine$OlsrdMonitor;
 
     iget-boolean v0, p0, Landroid/net/wifi/OxygenStateMachine$OlsrdMonitor;->mMonitoring:Z
 

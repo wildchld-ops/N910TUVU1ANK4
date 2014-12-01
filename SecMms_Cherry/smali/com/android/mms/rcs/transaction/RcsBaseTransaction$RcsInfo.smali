@@ -111,7 +111,6 @@
 
 .method public setChatId(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/mms/rcs/transaction/RcsBaseTransaction$RcsInfo;->mChatId:Ljava/lang/String;
 
@@ -120,7 +119,6 @@
 
 .method public setMediaUri(Landroid/net/Uri;)V
     .locals 0
-    .param p1    # Landroid/net/Uri;
 
     iput-object p1, p0, Lcom/android/mms/rcs/transaction/RcsBaseTransaction$RcsInfo;->mMediaUri:Landroid/net/Uri;
 
@@ -129,7 +127,6 @@
 
 .method public setMessageBody(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/mms/rcs/transaction/RcsBaseTransaction$RcsInfo;->mMessageBody:Ljava/lang/String;
 
@@ -138,7 +135,6 @@
 
 .method public setRcsId(J)V
     .locals 0
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/android/mms/rcs/transaction/RcsBaseTransaction$RcsInfo;->mRcsId:J
 
@@ -147,7 +143,6 @@
 
 .method public setRcsUri(Landroid/net/Uri;)V
     .locals 0
-    .param p1    # Landroid/net/Uri;
 
     iput-object p1, p0, Lcom/android/mms/rcs/transaction/RcsBaseTransaction$RcsInfo;->mRcsUri:Landroid/net/Uri;
 

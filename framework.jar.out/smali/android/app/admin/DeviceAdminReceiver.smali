@@ -62,7 +62,6 @@
 # virtual methods
 .method public getManager(Landroid/content/Context;)Landroid/app/admin/DevicePolicyManager;
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     iget-object v0, p0, Landroid/app/admin/DeviceAdminReceiver;->mManager:Landroid/app/admin/DevicePolicyManager;
 
@@ -91,7 +90,6 @@
 
 .method public getWho(Landroid/content/Context;)Landroid/content/ComponentName;
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     iget-object v0, p0, Landroid/app/admin/DeviceAdminReceiver;->mWho:Landroid/content/ComponentName;
 
@@ -120,8 +118,6 @@
 
 .method public onDisableRequested(Landroid/content/Context;Landroid/content/Intent;)Ljava/lang/CharSequence;
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     const/4 v0, 0x0
 
@@ -130,56 +126,42 @@
 
 .method public onDisabled(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     return-void
 .end method
 
 .method public onEnabled(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     return-void
 .end method
 
 .method public onPasswordChanged(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     return-void
 .end method
 
 .method public onPasswordExpiring(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     return-void
 .end method
 
 .method public onPasswordFailed(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     return-void
 .end method
 
 .method public onPasswordSucceeded(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     return-void
 .end method
 
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
@@ -307,8 +289,6 @@
 
 .method public onRecoveryPasswordRequested(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     return-void
 .end method

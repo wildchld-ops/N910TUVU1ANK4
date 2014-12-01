@@ -50,7 +50,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -187,7 +186,6 @@
 
 .method static synthetic access$000(Landroid/os/OEMEncryption;)Landroid/app/Notification;
     .locals 1
-    .param p0    # Landroid/os/OEMEncryption;
 
     iget-object v0, p0, Landroid/os/OEMEncryption;->notification:Landroid/app/Notification;
 
@@ -196,7 +194,6 @@
 
 .method static synthetic access$100(Landroid/os/OEMEncryption;)Landroid/app/NotificationManager;
     .locals 1
-    .param p0    # Landroid/os/OEMEncryption;
 
     iget-object v0, p0, Landroid/os/OEMEncryption;->mNotificationManager:Landroid/app/NotificationManager;
 
@@ -205,7 +202,6 @@
 
 .method static synthetic access$200(Landroid/os/OEMEncryption;)Landroid/dirEncryption/DirEncryptionManager;
     .locals 1
-    .param p0    # Landroid/os/OEMEncryption;
 
     iget-object v0, p0, Landroid/os/OEMEncryption;->dem:Landroid/dirEncryption/DirEncryptionManager;
 
@@ -214,8 +210,6 @@
 
 .method static synthetic access$302(Landroid/os/OEMEncryption;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Landroid/os/OEMEncryption;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/os/OEMEncryption;->EXTERNAL_SD_STATE:Ljava/lang/String;
 
@@ -224,7 +218,6 @@
 
 .method static synthetic access$400(Landroid/os/OEMEncryption;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Landroid/os/OEMEncryption;
 
     iget-object v0, p0, Landroid/os/OEMEncryption;->handler:Landroid/os/Handler;
 
@@ -233,7 +226,6 @@
 
 .method static synthetic access$500(Landroid/os/OEMEncryption;)Z
     .locals 1
-    .param p0    # Landroid/os/OEMEncryption;
 
     iget-boolean v0, p0, Landroid/os/OEMEncryption;->mSDPolicy:Z
 
@@ -242,7 +234,6 @@
 
 .method static synthetic access$600(Landroid/os/OEMEncryption;)Landroid/os/IDeviceManager3LM;
     .locals 1
-    .param p0    # Landroid/os/OEMEncryption;
 
     iget-object v0, p0, Landroid/os/OEMEncryption;->m_dem_3lm:Landroid/os/IDeviceManager3LM;
 
@@ -251,7 +242,6 @@
 
 .method public static declared-synchronized getInstance(Landroid/content/Context;)Landroid/os/OEMEncryption;
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     const-class v1, Landroid/os/OEMEncryption;
 
@@ -435,7 +425,6 @@
 
 .method public setSDEncryptionPolicy(Z)V
     .locals 13
-    .param p1    # Z
 
     const v12, 0x1040ba1
 

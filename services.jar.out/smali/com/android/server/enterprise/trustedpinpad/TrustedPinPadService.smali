@@ -52,7 +52,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -151,7 +150,6 @@
 
 .method private enforcePermission(Landroid/app/enterprise/ContextInfo;)V
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-static {}, Landroid/os/Binder;->getCallingUid()I
 
@@ -214,7 +212,6 @@
 # virtual methods
 .method public getCertificates(Landroid/app/enterprise/ContextInfo;)Ljava/util/List;
     .locals 12
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -528,7 +525,6 @@
 
 .method public getSecretDimensions(Landroid/app/enterprise/ContextInfo;)[I
     .locals 6
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v2, 0x0
 
@@ -680,12 +676,6 @@
 
 .method public launchTrustedPinPad(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Ljava/lang/String;[BZI)[B
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # [B
-    .param p5    # Z
-    .param p6    # I
 
     sget-boolean v0, Lcom/android/server/enterprise/trustedpinpad/TrustedPinPadService;->DBG:Z
 
@@ -821,7 +811,6 @@
 
 .method public loadTrustedPinPad(Landroid/app/enterprise/ContextInfo;)I
     .locals 6
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v2, 0x1
 
@@ -964,30 +953,24 @@
 
 .method public onAdminAdded(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onAdminRemoved(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onPreAdminRemoval(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public setPin(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;[B)[B
     .locals 4
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # [B
 
     sget-boolean v1, Lcom/android/server/enterprise/trustedpinpad/TrustedPinPadService;->DBG:Z
 
@@ -1113,11 +1096,6 @@
 
 .method public setSecretImage(Landroid/app/enterprise/ContextInfo;[BIILjava/lang/String;)I
     .locals 6
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # [B
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Ljava/lang/String;
 
     const/4 v2, 0x1
 
@@ -1275,7 +1253,6 @@
 
 .method public unloadTrustedPinPad(Landroid/app/enterprise/ContextInfo;)I
     .locals 6
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v2, 0x1
 

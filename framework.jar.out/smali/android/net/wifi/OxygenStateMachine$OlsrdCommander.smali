@@ -51,8 +51,6 @@
 
 .method private send(Ljava/lang/String;Z)Ljava/lang/String;
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const/4 v6, 0x3
 
@@ -122,7 +120,6 @@
 
 .method private sendToMonitor(Ljava/lang/String;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     iget-object v4, p0, Landroid/net/wifi/OxygenStateMachine$OlsrdCommander;->mUdpSocket:Ljava/net/DatagramSocket;
@@ -243,8 +240,6 @@
 
 .method private sendToOlsrd(Ljava/lang/String;Z)Ljava/lang/String;
     .locals 11
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const/4 v7, 0x0
 
@@ -630,7 +625,6 @@
 
 .method public setChannel(I)Z
     .locals 3
-    .param p1    # I
 
     new-instance v1, Ljava/lang/StringBuilder;
 

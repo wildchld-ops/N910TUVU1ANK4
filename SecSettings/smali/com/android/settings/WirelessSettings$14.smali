@@ -36,7 +36,6 @@
 # virtual methods
 .method public onDismiss(Landroid/content/DialogInterface;)V
     .locals 4
-    .param p1    # Landroid/content/DialogInterface;
 
     iget-object v1, p0, Lcom/android/settings/WirelessSettings$14;->this$0:Lcom/android/settings/WirelessSettings;
 

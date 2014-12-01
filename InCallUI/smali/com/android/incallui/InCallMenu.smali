@@ -34,7 +34,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -764,7 +763,6 @@
 
 .method private log(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "InCallMenu"
 
@@ -775,8 +773,6 @@
 
 .method private log(Ljava/lang/String;Z)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const-string v0, "InCallMenu"
 
@@ -811,7 +807,6 @@
 
 .method private manageHoldMenu(Landroid/view/MenuItem;)V
     .locals 10
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-static {}, Lcom/android/incallui/CallList;->getInstance()Lcom/android/incallui/CallList;
 
@@ -1076,7 +1071,6 @@
 
 .method private prepareOptionMenuForEasyMode(Landroid/view/Menu;)Z
     .locals 14
-    .param p1    # Landroid/view/Menu;
 
     const v13, 0x7f020501
 
@@ -1500,7 +1494,6 @@
 
 .method public isCallDead(Lcom/android/services/telephony/common/Call;)Z
     .locals 2
-    .param p1    # Lcom/android/services/telephony/common/Call;
 
     const/4 v1, 0x1
 
@@ -1602,7 +1595,6 @@
 
 .method protected optionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 5
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v1, 0x0
 
@@ -2187,7 +2179,6 @@
 
 .method protected prepareOptionsMenu(Landroid/view/Menu;)Z
     .locals 50
-    .param p1    # Landroid/view/Menu;
 
     const-string v47, "prepareOptionsMenu()..."
 
@@ -4394,7 +4385,6 @@
 
 .method public setMenuOpen(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/incallui/InCallMenu;->mIsMenuOpen:Z
 
@@ -4403,7 +4393,6 @@
 
 .method public setTransferFileOption(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v1, p0, Lcom/android/incallui/InCallMenu;->menu:Landroid/view/Menu;
 

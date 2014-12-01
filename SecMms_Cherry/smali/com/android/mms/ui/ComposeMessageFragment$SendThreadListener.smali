@@ -26,8 +26,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/mms/ui/ComposeMessageFragment;Landroid/app/Activity;I)V
     .locals 1
-    .param p2    # Landroid/app/Activity;
-    .param p3    # I
 
     iput-object p1, p0, Lcom/android/mms/ui/ComposeMessageFragment$SendThreadListener;->this$0:Lcom/android/mms/ui/ComposeMessageFragment;
 
@@ -46,8 +44,6 @@
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 3
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/mms/ui/ComposeMessageFragment$SendThreadListener;->this$0:Lcom/android/mms/ui/ComposeMessageFragment;
 

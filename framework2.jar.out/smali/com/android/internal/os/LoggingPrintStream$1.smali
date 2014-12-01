@@ -27,7 +27,6 @@
 # virtual methods
 .method public write(I)V
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

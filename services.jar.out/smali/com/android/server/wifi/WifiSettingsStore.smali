@@ -30,7 +30,6 @@
 # direct methods
 .method constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -239,7 +238,6 @@
 
 .method private persistWifiState(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/server/wifi/WifiSettingsStore;->mContext:Landroid/content/Context;
 
@@ -310,9 +308,6 @@
 # virtual methods
 .method dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -442,7 +437,6 @@
 
 .method declared-synchronized handleWifiIbssToggled(Z)V
     .locals 3
-    .param p1    # Z
 
     monitor-enter p0
 
@@ -509,7 +503,6 @@
 
 .method declared-synchronized handleWifiToggled(Z)Z
     .locals 3
-    .param p1    # Z
 
     const/4 v1, 0x1
 
@@ -726,7 +719,6 @@
 
 .method declared-synchronized setOrRecoveryScanMode(Z)V
     .locals 4
-    .param p1    # Z
 
     const/4 v3, 0x1
 

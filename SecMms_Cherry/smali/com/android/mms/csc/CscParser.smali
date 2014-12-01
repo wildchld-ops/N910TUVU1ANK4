@@ -52,7 +52,6 @@
 
 .method public static getChameleonInstance(I)Lcom/android/mms/csc/CscParser;
     .locals 1
-    .param p0    # I
 
     const/4 v0, 0x0
 
@@ -114,8 +113,6 @@
 
 .method private search(Lorg/w3c/dom/Node;Ljava/lang/String;)Lorg/w3c/dom/Node;
     .locals 6
-    .param p1    # Lorg/w3c/dom/Node;
-    .param p2    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -171,7 +168,6 @@
 # virtual methods
 .method public get(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lcom/android/mms/csc/CscParser;->search(Ljava/lang/String;)Lorg/w3c/dom/Node;
 
@@ -198,7 +194,6 @@
 
 .method public getValue(Lorg/w3c/dom/Node;)Ljava/lang/String;
     .locals 4
-    .param p1    # Lorg/w3c/dom/Node;
 
     if-nez p1, :cond_0
 
@@ -294,7 +289,6 @@
 
 .method public load(Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -378,7 +372,6 @@
 
 .method public search(Ljava/lang/String;)Lorg/w3c/dom/Node;
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -430,8 +423,6 @@
 
 .method public searchList(Lorg/w3c/dom/Node;Ljava/lang/String;)Lorg/w3c/dom/NodeList;
     .locals 9
-    .param p1    # Lorg/w3c/dom/Node;
-    .param p2    # Ljava/lang/String;
 
     const/4 v6, 0x0
 

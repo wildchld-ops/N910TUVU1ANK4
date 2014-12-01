@@ -30,9 +30,6 @@
 # direct methods
 .method private constructor <init>(Lcom/android/server/VRManagerService;Landroid/content/Context;Lcom/android/server/VRManagerService$VRServiceConnection;Lcom/android/internal/app/IVRManagerService;)V
     .locals 0
-    .param p2    # Landroid/content/Context;
-    .param p3    # Lcom/android/server/VRManagerService$VRServiceConnection;
-    .param p4    # Lcom/android/internal/app/IVRManagerService;
 
     iput-object p1, p0, Lcom/android/server/VRManagerService$VRConnection;->this$0:Lcom/android/server/VRManagerService;
 
@@ -49,11 +46,6 @@
 
 .method synthetic constructor <init>(Lcom/android/server/VRManagerService;Landroid/content/Context;Lcom/android/server/VRManagerService$VRServiceConnection;Lcom/android/internal/app/IVRManagerService;Lcom/android/server/VRManagerService$1;)V
     .locals 0
-    .param p1    # Lcom/android/server/VRManagerService;
-    .param p2    # Landroid/content/Context;
-    .param p3    # Lcom/android/server/VRManagerService$VRServiceConnection;
-    .param p4    # Lcom/android/internal/app/IVRManagerService;
-    .param p5    # Lcom/android/server/VRManagerService$1;
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/server/VRManagerService$VRConnection;-><init>(Lcom/android/server/VRManagerService;Landroid/content/Context;Lcom/android/server/VRManagerService$VRServiceConnection;Lcom/android/internal/app/IVRManagerService;)V
 

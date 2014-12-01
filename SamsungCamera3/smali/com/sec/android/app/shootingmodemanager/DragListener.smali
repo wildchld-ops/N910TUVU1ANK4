@@ -17,8 +17,6 @@
 # direct methods
 .method public constructor <init>(Lcom/sec/android/app/shootingmodemanager/DragSource;Lcom/sec/android/app/shootingmodemanager/DropTarget;)V
     .locals 1
-    .param p1    # Lcom/sec/android/app/shootingmodemanager/DragSource;
-    .param p2    # Lcom/sec/android/app/shootingmodemanager/DropTarget;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,8 +35,6 @@
 # virtual methods
 .method public onDrag(Landroid/view/View;Landroid/view/DragEvent;)Z
     .locals 4
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/DragEvent;
 
     const/4 v3, 0x1
 

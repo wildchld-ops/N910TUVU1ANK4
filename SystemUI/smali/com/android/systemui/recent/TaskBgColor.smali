@@ -10,7 +10,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -23,8 +22,6 @@
 # virtual methods
 .method public extractColor(Landroid/graphics/drawable/Drawable;Lcom/android/systemui/recent/TaskDescription;)I
     .locals 1
-    .param p1    # Landroid/graphics/drawable/Drawable;
-    .param p2    # Lcom/android/systemui/recent/TaskDescription;
 
     const v0, -0xffaa67
 

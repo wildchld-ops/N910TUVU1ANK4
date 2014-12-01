@@ -46,7 +46,6 @@
 
 .method private constructor <init>(Landroid/os/Parcel;)V
     .locals 0
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -57,8 +56,6 @@
 
 .method synthetic constructor <init>(Landroid/os/Parcel;Landroid/os/storage/sensitive/SensitiveDataParcel$1;)V
     .locals 0
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # Landroid/os/storage/sensitive/SensitiveDataParcel$1;
 
     invoke-direct {p0, p1}, Landroid/os/storage/sensitive/SensitiveDataParcel;-><init>(Landroid/os/Parcel;)V
 
@@ -67,8 +64,6 @@
 
 .method public constructor <init>(Ljava/lang/String;[B)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # [B
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -129,7 +124,6 @@
 
 .method public readFromParcel(Landroid/os/Parcel;)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
@@ -160,7 +154,6 @@
 
 .method public setClient(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/os/storage/sensitive/SensitiveDataParcel;->client:Ljava/lang/String;
 
@@ -169,7 +162,6 @@
 
 .method public setData([B)V
     .locals 0
-    .param p1    # [B
 
     iput-object p1, p0, Landroid/os/storage/sensitive/SensitiveDataParcel;->data:[B
 
@@ -178,7 +170,6 @@
 
 .method public setOperation(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/os/storage/sensitive/SensitiveDataParcel;->op:I
 
@@ -187,8 +178,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget v0, p0, Landroid/os/storage/sensitive/SensitiveDataParcel;->op:I
 

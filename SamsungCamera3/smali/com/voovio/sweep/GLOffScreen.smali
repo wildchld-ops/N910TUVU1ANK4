@@ -54,9 +54,6 @@
 # direct methods
 .method public constructor <init>(III)V
     .locals 8
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v3, 0x0
 
@@ -398,8 +395,6 @@
 
 .method private getConfigAttrib(Ljavax/microedition/khronos/egl/EGLConfig;I)I
     .locals 4
-    .param p1    # Ljavax/microedition/khronos/egl/EGLConfig;
-    .param p2    # I
 
     const/4 v1, 0x0
 
@@ -712,7 +707,6 @@
 
 .method public getByteBuffer(Ljava/nio/ByteBuffer;)I
     .locals 8
-    .param p1    # Ljava/nio/ByteBuffer;
 
     const/4 v0, 0x0
 
@@ -877,7 +871,6 @@
 
 .method public post(Ljava/lang/Runnable;)V
     .locals 5
-    .param p1    # Ljava/lang/Runnable;
 
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
 
@@ -924,7 +917,6 @@
 
 .method public setRenderer(Lcom/voovio/sweep/GLOffScreen$Renderer;)V
     .locals 6
-    .param p1    # Lcom/voovio/sweep/GLOffScreen$Renderer;
 
     iput-object p1, p0, Lcom/voovio/sweep/GLOffScreen;->mRenderer:Lcom/voovio/sweep/GLOffScreen$Renderer;
 

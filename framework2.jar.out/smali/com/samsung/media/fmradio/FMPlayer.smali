@@ -36,7 +36,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -176,7 +175,6 @@
 
 .method private remoteError(Landroid/os/RemoteException;)V
     .locals 4
-    .param p1    # Landroid/os/RemoteException;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/samsung/media/fmradio/FMPlayerException;
@@ -685,7 +683,6 @@
 
 .method public SetAFRMSSISamples(I)V
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/samsung/media/fmradio/FMPlayerException;
@@ -714,7 +711,6 @@
 
 .method public SetAFRMSSIThreshold(I)V
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/samsung/media/fmradio/FMPlayerException;
@@ -743,7 +739,6 @@
 
 .method public SetAFValid_th(I)V
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/samsung/media/fmradio/FMPlayerException;
@@ -772,7 +767,6 @@
 
 .method public SetAF_th(I)V
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/samsung/media/fmradio/FMPlayerException;
@@ -801,7 +795,6 @@
 
 .method public SetCFOTh12(I)V
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/samsung/media/fmradio/FMPlayerException;
@@ -830,7 +823,6 @@
 
 .method public SetGoodChannelRMSSIThreshold(I)V
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/samsung/media/fmradio/FMPlayerException;
@@ -859,7 +851,6 @@
 
 .method public SetOffChannelThreshold(I)V
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/samsung/media/fmradio/FMPlayerException;
@@ -888,7 +879,6 @@
 
 .method public SetOnChannelThreshold(I)V
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/samsung/media/fmradio/FMPlayerException;
@@ -917,7 +907,6 @@
 
 .method public SetRMSSIFirstStage(I)V
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/samsung/media/fmradio/FMPlayerException;
@@ -946,7 +935,6 @@
 
 .method public SetSINRFirstStage(I)V
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/samsung/media/fmradio/FMPlayerException;
@@ -975,7 +963,6 @@
 
 .method public SetSINRSamples(I)V
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/samsung/media/fmradio/FMPlayerException;
@@ -1004,7 +991,6 @@
 
 .method public SetSINRThreshold(I)V
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/samsung/media/fmradio/FMPlayerException;
@@ -1033,7 +1019,6 @@
 
 .method public SetSearchAlgoType(I)V
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/samsung/media/fmradio/FMPlayerException;
@@ -2116,7 +2101,6 @@
 
 .method public log(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "FMPlayer"
 
@@ -2279,7 +2263,6 @@
 
 .method public on(Z)Z
     .locals 7
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/samsung/media/fmradio/FMPlayerException;
@@ -2342,7 +2325,6 @@
 
 .method public removeListener(Lcom/samsung/media/fmradio/FMEventListener;)V
     .locals 3
-    .param p1    # Lcom/samsung/media/fmradio/FMEventListener;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/samsung/media/fmradio/FMPlayerException;
@@ -2576,7 +2558,6 @@
 
 .method public setBand(I)V
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/samsung/media/fmradio/FMPlayerException;
@@ -2603,7 +2584,6 @@
 
 .method public setChannelSpacing(I)V
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/samsung/media/fmradio/FMPlayerException;
@@ -2630,7 +2610,6 @@
 
 .method public setCnt_th(I)V
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/samsung/media/fmradio/FMPlayerException;
@@ -2659,7 +2638,6 @@
 
 .method public setCnt_th_2(I)V
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/samsung/media/fmradio/FMPlayerException;
@@ -2688,7 +2666,6 @@
 
 .method public setDEConstant(J)V
     .locals 2
-    .param p1    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/samsung/media/fmradio/FMPlayerException;
@@ -2717,7 +2694,6 @@
 
 .method public setFMIntenna(Z)V
     .locals 2
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/samsung/media/fmradio/FMPlayerException;
@@ -2746,7 +2722,6 @@
 
 .method public setFeatureWaitPidDuringScanning(Z)V
     .locals 2
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/samsung/media/fmradio/FMPlayerException;
@@ -2773,7 +2748,6 @@
 
 .method public setInternetStreamingMode(Z)V
     .locals 2
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/samsung/media/fmradio/FMPlayerException;
@@ -2800,7 +2774,6 @@
 
 .method public setListener(Lcom/samsung/media/fmradio/FMEventListener;)V
     .locals 3
-    .param p1    # Lcom/samsung/media/fmradio/FMEventListener;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/samsung/media/fmradio/FMPlayerException;
@@ -2862,7 +2835,6 @@
 
 .method public setRSSI_th(I)V
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/samsung/media/fmradio/FMPlayerException;
@@ -2891,7 +2863,6 @@
 
 .method public setRSSI_th_2(I)V
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/samsung/media/fmradio/FMPlayerException;
@@ -2920,7 +2891,6 @@
 
 .method public setRecordMode(I)V
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/samsung/media/fmradio/FMPlayerException;
@@ -2947,7 +2917,6 @@
 
 .method public setSNR_th(I)V
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/samsung/media/fmradio/FMPlayerException;
@@ -2976,7 +2945,6 @@
 
 .method public setSNR_th_2(I)V
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/samsung/media/fmradio/FMPlayerException;
@@ -3005,7 +2973,6 @@
 
 .method public setSeekRSSI(J)V
     .locals 2
-    .param p1    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/samsung/media/fmradio/FMPlayerException;
@@ -3034,7 +3001,6 @@
 
 .method public setSeekSNR(J)V
     .locals 2
-    .param p1    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/samsung/media/fmradio/FMPlayerException;
@@ -3063,9 +3029,6 @@
 
 .method public setSoftMuteControl(III)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/samsung/media/fmradio/FMPlayerException;
@@ -3092,7 +3055,6 @@
 
 .method public setSoftmute(Z)V
     .locals 2
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/samsung/media/fmradio/FMPlayerException;
@@ -3119,7 +3081,6 @@
 
 .method public setSpeakerOn(Z)Z
     .locals 3
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/samsung/media/fmradio/FMPlayerException;
@@ -3214,7 +3175,6 @@
 
 .method public setVolume(J)V
     .locals 2
-    .param p1    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/samsung/media/fmradio/FMPlayerException;
@@ -3241,7 +3201,6 @@
 
 .method public tune(J)Z
     .locals 2
-    .param p1    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/samsung/media/fmradio/FMPlayerException;

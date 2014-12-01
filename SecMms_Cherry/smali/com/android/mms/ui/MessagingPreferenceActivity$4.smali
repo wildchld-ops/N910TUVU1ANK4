@@ -36,7 +36,6 @@
 # virtual methods
 .method public onResult(Ljava/lang/Boolean;)V
     .locals 4
-    .param p1    # Ljava/lang/Boolean;
 
     if-nez p1, :cond_0
 

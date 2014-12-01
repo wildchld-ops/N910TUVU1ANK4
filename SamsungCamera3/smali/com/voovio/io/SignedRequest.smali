@@ -18,7 +18,6 @@
 
 .method public static GetJSONRequest(Ljava/lang/String;)Lorg/json/JSONObject;
     .locals 14
-    .param p0    # Ljava/lang/String;
 
     const/16 v13, 0x8
 
@@ -221,7 +220,6 @@
 
 .method public static GetSignedRequest(Lorg/json/JSONObject;)Ljava/lang/String;
     .locals 11
-    .param p0    # Lorg/json/JSONObject;
 
     const/16 v10, 0x8
 

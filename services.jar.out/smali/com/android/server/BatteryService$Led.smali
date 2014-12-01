@@ -35,8 +35,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/BatteryService;Landroid/content/Context;Lcom/android/server/LightsService;)V
     .locals 2
-    .param p2    # Landroid/content/Context;
-    .param p3    # Lcom/android/server/LightsService;
 
     iput-object p1, p0, Lcom/android/server/BatteryService$Led;->this$0:Lcom/android/server/BatteryService;
 

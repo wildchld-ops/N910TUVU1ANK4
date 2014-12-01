@@ -32,7 +32,6 @@
 
 .method public static incrementOperationCount(I)V
     .locals 0
-    .param p0    # I
 
     invoke-static {p0}, Landroid/net/TrafficStats;->incrementOperationCount(I)V
 
@@ -41,8 +40,6 @@
 
 .method public static incrementOperationCount(II)V
     .locals 0
-    .param p0    # I
-    .param p1    # I
 
     invoke-static {p0, p1}, Landroid/net/TrafficStats;->incrementOperationCount(II)V
 
@@ -51,7 +48,6 @@
 
 .method public static setThreadStatsTag(I)V
     .locals 0
-    .param p0    # I
 
     invoke-static {p0}, Landroid/net/TrafficStats;->setThreadStatsTag(I)V
 
@@ -60,7 +56,6 @@
 
 .method public static tagSocket(Ljava/net/Socket;)V
     .locals 0
-    .param p0    # Ljava/net/Socket;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/net/SocketException;
@@ -74,7 +69,6 @@
 
 .method public static untagSocket(Ljava/net/Socket;)V
     .locals 0
-    .param p0    # Ljava/net/Socket;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/net/SocketException;

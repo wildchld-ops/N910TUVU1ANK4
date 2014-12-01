@@ -72,8 +72,6 @@
 
 .method static synthetic access$000(Ljava/lang/String;J)V
     .locals 0
-    .param p0    # Ljava/lang/String;
-    .param p1    # J
 
     invoke-static {p0, p1, p2}, Landroid/webkitsec/WebStorageClassic;->nativeSetQuotaForOrigin(Ljava/lang/String;J)V
 
@@ -82,7 +80,6 @@
 
 .method static synthetic access$100(Ljava/lang/String;)V
     .locals 0
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Landroid/webkitsec/WebStorageClassic;->nativeDeleteOrigin(Ljava/lang/String;)V
 
@@ -99,7 +96,6 @@
 
 .method static synthetic access$300(Landroid/webkitsec/WebStorageClassic;)V
     .locals 0
-    .param p0    # Landroid/webkitsec/WebStorageClassic;
 
     invoke-direct {p0}, Landroid/webkitsec/WebStorageClassic;->syncValues()V
 
@@ -108,7 +104,6 @@
 
 .method static synthetic access$400(Landroid/webkitsec/WebStorageClassic;)Ljava/util/Map;
     .locals 1
-    .param p0    # Landroid/webkitsec/WebStorageClassic;
 
     iget-object v0, p0, Landroid/webkitsec/WebStorageClassic;->mOrigins:Ljava/util/Map;
 
@@ -117,8 +112,6 @@
 
 .method static synthetic access$500(Landroid/webkitsec/WebStorageClassic;Landroid/os/Message;)V
     .locals 0
-    .param p0    # Landroid/webkitsec/WebStorageClassic;
-    .param p1    # Landroid/os/Message;
 
     invoke-direct {p0, p1}, Landroid/webkitsec/WebStorageClassic;->postUIMessage(Landroid/os/Message;)V
 
@@ -167,7 +160,6 @@
 
 .method private declared-synchronized postMessage(Landroid/os/Message;)V
     .locals 1
-    .param p1    # Landroid/os/Message;
 
     monitor-enter p0
 
@@ -197,7 +189,6 @@
 
 .method private postUIMessage(Landroid/os/Message;)V
     .locals 1
-    .param p1    # Landroid/os/Message;
 
     iget-object v0, p0, Landroid/webkitsec/WebStorageClassic;->mUIHandler:Landroid/os/Handler;
 
@@ -353,7 +344,6 @@
 
 .method public deleteOrigin(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -498,7 +488,6 @@
 
 .method public getQuotaForOrigin(Ljava/lang/String;Landroid/webkitsec/ValueCallback;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -589,7 +578,6 @@
 
 .method public getUsageForOrigin(Ljava/lang/String;Landroid/webkitsec/ValueCallback;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -680,7 +668,6 @@
 
 .method public setAppCacheMaximumSize(J)V
     .locals 0
-    .param p1    # J
 
     invoke-static {p1, p2}, Landroid/webkitsec/WebStorageClassic;->nativeSetAppCacheMaximumSize(J)V
 
@@ -689,8 +676,6 @@
 
 .method public setQuotaForOrigin(Ljava/lang/String;J)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
 
     if-eqz p1, :cond_0
 

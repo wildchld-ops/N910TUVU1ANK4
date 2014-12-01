@@ -33,7 +33,6 @@
 # virtual methods
 .method public interfaceRemoved(Ljava/lang/String;)V
     .locals 10
-    .param p1    # Ljava/lang/String;
 
     const/4 v6, 0x1
 
@@ -436,8 +435,6 @@
 
 .method public interfaceStatusChanged(Ljava/lang/String;Z)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     iget-object v1, p0, Lcom/android/server/connectivity/Vpn$3;->this$0:Lcom/android/server/connectivity/Vpn;
 

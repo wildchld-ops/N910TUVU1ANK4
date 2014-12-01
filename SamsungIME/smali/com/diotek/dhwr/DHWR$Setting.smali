@@ -37,8 +37,6 @@
 # virtual methods
 .method public AddLanguage(II)I
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget-wide v0, p0, Lcom/diotek/dhwr/DHWR$Setting;->mId:J
 
@@ -83,7 +81,6 @@
 
 .method public SetCandidateSize(I)I
     .locals 2
-    .param p1    # I
 
     iget-wide v0, p0, Lcom/diotek/dhwr/DHWR$Setting;->mId:J
 
@@ -96,7 +93,6 @@
 
 .method public SetContinuity(Z)I
     .locals 2
-    .param p1    # Z
 
     iget-wide v0, p0, Lcom/diotek/dhwr/DHWR$Setting;->mId:J
 
@@ -109,7 +105,6 @@
 
 .method public SetMode(I)I
     .locals 2
-    .param p1    # I
 
     iget-wide v0, p0, Lcom/diotek/dhwr/DHWR$Setting;->mId:J
 
@@ -122,7 +117,6 @@
 
 .method public SetUserCharSet([C)I
     .locals 2
-    .param p1    # [C
 
     iget-wide v0, p0, Lcom/diotek/dhwr/DHWR$Setting;->mId:J
 
@@ -135,11 +129,6 @@
 
 .method public SetWritingArea(IIIII)I
     .locals 7
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     iget-wide v0, p0, Lcom/diotek/dhwr/DHWR$Setting;->mId:J
 

@@ -148,7 +148,7 @@
 
     iget-object v1, v1, Lcom/android/phone/callsettings/RejectCallWithMsg;->mListView:Landroid/widget/ListView;
 
-    invoke-virtual {v1, v5}, Landroid/widget/AbsListView;->twSetCustomMultiChoiceMode(Z)V
+    invoke-virtual {v1, v5}, Landroid/widget/ListView;->twSetCustomMultiChoiceMode(Z)V
 
     invoke-static {}, Lcom/android/services/telephony/common/PhoneFeature;->isSupportSpen()Z
 
@@ -162,7 +162,7 @@
 
     const/4 v2, 0x0
 
-    invoke-virtual {v1, v2}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v1, v2}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
     :cond_0
     iget-object v1, p0, Lcom/android/phone/callsettings/RejectCallWithMsg$ActionModeCallback;->this$0:Lcom/android/phone/callsettings/RejectCallWithMsg;
@@ -183,12 +183,12 @@
 
     const/16 v2, 0x8
 
-    invoke-virtual {v1, v2}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v1, v2}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
     :cond_1
     iget-object v1, p0, Lcom/android/phone/callsettings/RejectCallWithMsg$ActionModeCallback;->this$0:Lcom/android/phone/callsettings/RejectCallWithMsg;
 
-    invoke-virtual {v1}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v1}, Lcom/android/phone/callsettings/RejectCallWithMsg;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -231,7 +231,7 @@
 
     iget-object v1, p0, Lcom/android/phone/callsettings/RejectCallWithMsg$ActionModeCallback;->this$0:Lcom/android/phone/callsettings/RejectCallWithMsg;
 
-    invoke-virtual {v1}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v1}, Lcom/android/phone/callsettings/RejectCallWithMsg;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -247,7 +247,7 @@
 
     iget-object v1, p0, Lcom/android/phone/callsettings/RejectCallWithMsg$ActionModeCallback;->this$0:Lcom/android/phone/callsettings/RejectCallWithMsg;
 
-    invoke-virtual {v1}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v1}, Lcom/android/phone/callsettings/RejectCallWithMsg;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v3
 
@@ -293,7 +293,7 @@
 
     invoke-direct {v2, p0}, Lcom/android/phone/callsettings/RejectCallWithMsg$ActionModeCallback$1;-><init>(Lcom/android/phone/callsettings/RejectCallWithMsg$ActionModeCallback;)V
 
-    invoke-virtual {v1, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v1, v2}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     :cond_4
     iget-object v1, p0, Lcom/android/phone/callsettings/RejectCallWithMsg$ActionModeCallback;->this$0:Lcom/android/phone/callsettings/RejectCallWithMsg;
@@ -306,7 +306,7 @@
     :cond_5
     iget-object v1, p0, Lcom/android/phone/callsettings/RejectCallWithMsg$ActionModeCallback;->this$0:Lcom/android/phone/callsettings/RejectCallWithMsg;
 
-    invoke-virtual {v1}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v1}, Lcom/android/phone/callsettings/RejectCallWithMsg;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -416,7 +416,7 @@
 
     const/16 v1, 0x8
 
-    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v1}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
     :cond_4
     iget-object v0, p0, Lcom/android/phone/callsettings/RejectCallWithMsg$ActionModeCallback;->this$0:Lcom/android/phone/callsettings/RejectCallWithMsg;
@@ -452,12 +452,12 @@
 
     move-result-object v0
 
-    invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v2}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
     :cond_5
     iget-object v0, p0, Lcom/android/phone/callsettings/RejectCallWithMsg$ActionModeCallback;->this$0:Lcom/android/phone/callsettings/RejectCallWithMsg;
 
-    invoke-virtual {v0}, Landroid/app/Fragment;->getFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual {v0}, Lcom/android/phone/callsettings/RejectCallWithMsg;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v0
 
@@ -598,7 +598,7 @@
 
     iget-object v0, v0, Lcom/android/phone/callsettings/RejectCallWithMsg;->mListView:Landroid/widget/ListView;
 
-    invoke-virtual {v0}, Landroid/widget/AdapterView;->getCount()I
+    invoke-virtual {v0}, Landroid/widget/ListView;->getCount()I
 
     move-result v0
 
@@ -630,7 +630,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Landroid/widget/BaseAdapter;->notifyDataSetChanged()V
+    invoke-virtual {v0}, Lcom/android/phone/callsettings/RejectCallWithMsg$RejectMessageAdapter;->notifyDataSetChanged()V
 
     invoke-virtual {p1}, Landroid/view/ActionMode;->invalidate()V
 
@@ -837,7 +837,7 @@
 
     iget-object v2, p0, Lcom/android/phone/callsettings/RejectCallWithMsg$ActionModeCallback;->this$0:Lcom/android/phone/callsettings/RejectCallWithMsg;
 
-    invoke-virtual {v2}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v2}, Lcom/android/phone/callsettings/RejectCallWithMsg;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v2
 
@@ -863,7 +863,7 @@
 
     iget-object v2, v2, Lcom/android/phone/callsettings/RejectCallWithMsg;->mListView:Landroid/widget/ListView;
 
-    invoke-virtual {v2}, Landroid/widget/AdapterView;->getCount()I
+    invoke-virtual {v2}, Landroid/widget/ListView;->getCount()I
 
     move-result v2
 
@@ -954,7 +954,7 @@
 
     iget-object v2, v2, Lcom/android/phone/callsettings/RejectCallWithMsg;->mListView:Landroid/widget/ListView;
 
-    invoke-virtual {v2}, Landroid/view/View;->isFocused()Z
+    invoke-virtual {v2}, Landroid/widget/ListView;->isFocused()Z
 
     move-result v2
 
@@ -964,14 +964,14 @@
 
     iget-object v2, v2, Lcom/android/phone/callsettings/RejectCallWithMsg;->mSelectAll:Landroid/widget/LinearLayout;
 
-    invoke-virtual {v2}, Landroid/view/View;->requestFocus()Z
+    invoke-virtual {v2}, Landroid/widget/LinearLayout;->requestFocus()Z
 
     :cond_2
     iget-object v2, p0, Lcom/android/phone/callsettings/RejectCallWithMsg$ActionModeCallback;->this$0:Lcom/android/phone/callsettings/RejectCallWithMsg;
 
     iget-object v2, v2, Lcom/android/phone/callsettings/RejectCallWithMsg;->mListView:Landroid/widget/ListView;
 
-    invoke-virtual {v2}, Landroid/widget/AdapterView;->getCount()I
+    invoke-virtual {v2}, Landroid/widget/ListView;->getCount()I
 
     move-result v2
 

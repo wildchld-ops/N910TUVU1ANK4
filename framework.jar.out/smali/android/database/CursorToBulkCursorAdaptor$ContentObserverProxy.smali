@@ -21,8 +21,6 @@
 # direct methods
 .method public constructor <init>(Landroid/database/IContentObserver;Landroid/os/IBinder$DeathRecipient;)V
     .locals 2
-    .param p1    # Landroid/database/IContentObserver;
-    .param p2    # Landroid/os/IBinder$DeathRecipient;
 
     const/4 v0, 0x0
 
@@ -62,8 +60,6 @@
 
 .method public onChange(ZLandroid/net/Uri;)V
     .locals 1
-    .param p1    # Z
-    .param p2    # Landroid/net/Uri;
 
     :try_start_0
     iget-object v0, p0, Landroid/database/CursorToBulkCursorAdaptor$ContentObserverProxy;->mRemote:Landroid/database/IContentObserver;
@@ -83,7 +79,6 @@
 
 .method public unlinkToDeath(Landroid/os/IBinder$DeathRecipient;)Z
     .locals 2
-    .param p1    # Landroid/os/IBinder$DeathRecipient;
 
     iget-object v0, p0, Landroid/database/CursorToBulkCursorAdaptor$ContentObserverProxy;->mRemote:Landroid/database/IContentObserver;
 

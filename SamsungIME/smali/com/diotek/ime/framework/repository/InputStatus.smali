@@ -478,7 +478,6 @@
 
 .method public static setEnableTrace(Z)V
     .locals 1
-    .param p0    # Z
 
     sget-object v0, Lcom/diotek/ime/framework/repository/InputStatus;->sInstance:Lcom/diotek/ime/framework/repository/InputStatus;
 
@@ -504,7 +503,6 @@
 
 .method public static setFlagCjiTurboKeyLongpress(Z)V
     .locals 1
-    .param p0    # Z
 
     sget-object v0, Lcom/diotek/ime/framework/repository/InputStatus;->sInstance:Lcom/diotek/ime/framework/repository/InputStatus;
 
@@ -530,7 +528,6 @@
 
 .method public static setFlagComposedByRecapturing(Z)V
     .locals 1
-    .param p0    # Z
 
     sget-object v0, Lcom/diotek/ime/framework/repository/InputStatus;->sInstance:Lcom/diotek/ime/framework/repository/InputStatus;
 
@@ -556,7 +553,6 @@
 
 .method public static setFlagHwKeyInput(Z)V
     .locals 1
-    .param p0    # Z
 
     sget-object v0, Lcom/diotek/ime/framework/repository/InputStatus;->sInstance:Lcom/diotek/ime/framework/repository/InputStatus;
 
@@ -582,7 +578,6 @@
 
 .method public static setFlagInputNumberOnComposing(Z)V
     .locals 1
-    .param p0    # Z
 
     sget-object v0, Lcom/diotek/ime/framework/repository/InputStatus;->sInstance:Lcom/diotek/ime/framework/repository/InputStatus;
 
@@ -608,7 +603,6 @@
 
 .method public static setFlagKeyLongpressed(Z)V
     .locals 1
-    .param p0    # Z
 
     sget-object v0, Lcom/diotek/ime/framework/repository/InputStatus;->sInstance:Lcom/diotek/ime/framework/repository/InputStatus;
 
@@ -634,7 +628,6 @@
 
 .method public static setFlagPhonepadPopupNumberInput(Z)V
     .locals 1
-    .param p0    # Z
 
     sget-object v0, Lcom/diotek/ime/framework/repository/InputStatus;->sInstance:Lcom/diotek/ime/framework/repository/InputStatus;
 
@@ -660,7 +653,6 @@
 
 .method public static setHangulDeleteLength(I)V
     .locals 1
-    .param p0    # I
 
     sget-object v0, Lcom/diotek/ime/framework/repository/InputStatus;->sInstance:Lcom/diotek/ime/framework/repository/InputStatus;
 
@@ -686,7 +678,6 @@
 
 .method public static setKNOXStatus(Z)V
     .locals 1
-    .param p0    # Z
 
     sget-object v0, Lcom/diotek/ime/framework/repository/InputStatus;->sInstance:Lcom/diotek/ime/framework/repository/InputStatus;
 
@@ -712,7 +703,6 @@
 
 .method public static setLastInputProcess(I)V
     .locals 1
-    .param p0    # I
 
     sget-object v0, Lcom/diotek/ime/framework/repository/InputStatus;->sInstance:Lcom/diotek/ime/framework/repository/InputStatus;
 
@@ -738,7 +728,6 @@
 
 .method public static setNoEmoticonInput(Z)V
     .locals 1
-    .param p0    # Z
 
     sget-object v0, Lcom/diotek/ime/framework/repository/InputStatus;->sInstance:Lcom/diotek/ime/framework/repository/InputStatus;
 

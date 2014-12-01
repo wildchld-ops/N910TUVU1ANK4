@@ -112,7 +112,7 @@
     :catch_0
     move-exception v0
 
-    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
+    invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
 
     goto :goto_0
 
@@ -141,7 +141,7 @@
     :catch_1
     move-exception v0
 
-    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
+    invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
 
     goto :goto_0
 
@@ -170,7 +170,7 @@
     :catch_2
     move-exception v0
 
-    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
+    invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
 
     goto :goto_0
 .end method
@@ -198,7 +198,7 @@
     :catch_0
     move-exception v0
 
-    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
+    invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
 
     const/4 v1, 0x0
 
@@ -339,7 +339,7 @@
     if-eqz v7, :cond_2
 
     :try_start_4
-    invoke-virtual {v7}, Ljava/io/InputStreamReader;->close()V
+    invoke-virtual {v7}, Ljava/io/FileReader;->close()V
     :try_end_4
     .catch Ljava/io/IOException; {:try_start_4 .. :try_end_4} :catch_5
 
@@ -402,7 +402,7 @@
 
     move-result-object v11
 
-    invoke-virtual {v5}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+    invoke-virtual {v5}, Ljava/io/FileNotFoundException;->getMessage()Ljava/lang/String;
 
     move-result-object v12
 
@@ -430,7 +430,7 @@
     if-eqz v7, :cond_2
 
     :try_start_8
-    invoke-virtual {v7}, Ljava/io/InputStreamReader;->close()V
+    invoke-virtual {v7}, Ljava/io/FileReader;->close()V
     :try_end_8
     .catch Ljava/io/IOException; {:try_start_8 .. :try_end_8} :catch_1
 
@@ -457,7 +457,7 @@
     if-eqz v7, :cond_2
 
     :try_start_a
-    invoke-virtual {v7}, Ljava/io/InputStreamReader;->close()V
+    invoke-virtual {v7}, Ljava/io/FileReader;->close()V
     :try_end_a
     .catch Ljava/io/IOException; {:try_start_a .. :try_end_a} :catch_3
 
@@ -484,7 +484,7 @@
     if-eqz v7, :cond_7
 
     :try_start_c
-    invoke-virtual {v7}, Ljava/io/InputStreamReader;->close()V
+    invoke-virtual {v7}, Ljava/io/FileReader;->close()V
     :try_end_c
     .catch Ljava/io/IOException; {:try_start_c .. :try_end_c} :catch_9
 
@@ -697,7 +697,7 @@
     if-eqz v6, :cond_2
 
     :try_start_4
-    invoke-virtual {v6}, Ljava/io/InputStreamReader;->close()V
+    invoke-virtual {v6}, Ljava/io/FileReader;->close()V
     :try_end_4
     .catch Ljava/io/IOException; {:try_start_4 .. :try_end_4} :catch_5
 
@@ -760,7 +760,7 @@
 
     move-result-object v11
 
-    invoke-virtual {v4}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+    invoke-virtual {v4}, Ljava/io/FileNotFoundException;->getMessage()Ljava/lang/String;
 
     move-result-object v12
 
@@ -788,7 +788,7 @@
     if-eqz v6, :cond_2
 
     :try_start_8
-    invoke-virtual {v6}, Ljava/io/InputStreamReader;->close()V
+    invoke-virtual {v6}, Ljava/io/FileReader;->close()V
     :try_end_8
     .catch Ljava/io/IOException; {:try_start_8 .. :try_end_8} :catch_1
 
@@ -815,7 +815,7 @@
     if-eqz v6, :cond_2
 
     :try_start_a
-    invoke-virtual {v6}, Ljava/io/InputStreamReader;->close()V
+    invoke-virtual {v6}, Ljava/io/FileReader;->close()V
     :try_end_a
     .catch Ljava/io/IOException; {:try_start_a .. :try_end_a} :catch_3
 
@@ -842,7 +842,7 @@
     if-eqz v6, :cond_7
 
     :try_start_c
-    invoke-virtual {v6}, Ljava/io/InputStreamReader;->close()V
+    invoke-virtual {v6}, Ljava/io/FileReader;->close()V
     :try_end_c
     .catch Ljava/io/IOException; {:try_start_c .. :try_end_c} :catch_9
 

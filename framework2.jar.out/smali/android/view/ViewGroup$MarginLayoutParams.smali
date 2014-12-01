@@ -106,8 +106,6 @@
 # direct methods
 .method public constructor <init>(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     const/high16 v0, -0x80000000
 
@@ -154,8 +152,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 8
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v7, 0x0
 
@@ -337,7 +333,6 @@
 
 .method public constructor <init>(Landroid/view/ViewGroup$LayoutParams;)V
     .locals 1
-    .param p1    # Landroid/view/ViewGroup$LayoutParams;
 
     const/high16 v0, -0x80000000
 
@@ -384,7 +379,6 @@
 
 .method public constructor <init>(Landroid/view/ViewGroup$MarginLayoutParams;)V
     .locals 1
-    .param p1    # Landroid/view/ViewGroup$MarginLayoutParams;
 
     const/high16 v0, -0x80000000
 
@@ -716,9 +710,6 @@
 
 .method public onDebugDraw(Landroid/view/View;Landroid/graphics/Canvas;Landroid/graphics/Paint;)V
     .locals 11
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/graphics/Canvas;
-    .param p3    # Landroid/graphics/Paint;
 
     iget-object v0, p1, Landroid/view/View;->mParent:Landroid/view/ViewParent;
 
@@ -790,7 +781,6 @@
 
 .method public resolveLayoutDirection(I)V
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/view/ViewGroup$MarginLayoutParams;->setLayoutDirection(I)V
 
@@ -820,7 +810,6 @@
 
 .method public setLayoutDirection(I)V
     .locals 2
-    .param p1    # I
 
     if-eqz p1, :cond_1
 
@@ -887,7 +876,6 @@
 
 .method public setMarginEnd(I)V
     .locals 1
-    .param p1    # I
 
     iput p1, p0, Landroid/view/ViewGroup$MarginLayoutParams;->endMargin:I
 
@@ -904,7 +892,6 @@
 
 .method public setMarginStart(I)V
     .locals 1
-    .param p1    # I
 
     iput p1, p0, Landroid/view/ViewGroup$MarginLayoutParams;->startMargin:I
 
@@ -921,10 +908,6 @@
 
 .method public setMargins(IIII)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iput p1, p0, Landroid/view/ViewGroup$MarginLayoutParams;->leftMargin:I
 
@@ -981,10 +964,6 @@
 
 .method public setMarginsRelative(IIII)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iput p1, p0, Landroid/view/ViewGroup$MarginLayoutParams;->startMargin:I
 

@@ -29,7 +29,6 @@
 # virtual methods
 .method consoleLogging(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     # getter for: Landroid/hardware/contextaware/utilbundle/logger/CaLogger;->isConsoleLogging:Z
     invoke-static {}, Landroid/hardware/contextaware/utilbundle/logger/CaLogger;->access$100()Z
@@ -71,7 +70,6 @@
 
 .method fileLogging(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     # getter for: Landroid/hardware/contextaware/utilbundle/logger/CaLogger;->isFileLogging:Z
     invoke-static {}, Landroid/hardware/contextaware/utilbundle/logger/CaLogger;->access$400()Z

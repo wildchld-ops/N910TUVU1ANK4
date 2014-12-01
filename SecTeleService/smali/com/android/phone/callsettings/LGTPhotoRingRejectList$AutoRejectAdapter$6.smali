@@ -234,7 +234,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1, v2}, Landroid/widget/AbsListView;->twShowMultiChoiceMode(Z)V
+    invoke-virtual {v1, v2}, Landroid/widget/ListView;->twShowMultiChoiceMode(Z)V
 
     iget-object v1, p0, Lcom/android/phone/callsettings/LGTPhotoRingRejectList$AutoRejectAdapter$6;->this$1:Lcom/android/phone/callsettings/LGTPhotoRingRejectList$AutoRejectAdapter;
 
@@ -265,7 +265,7 @@
 
     move-result v3
 
-    invoke-virtual {v1, v3, v2}, Landroid/widget/AbsListView;->setItemChecked(IZ)V
+    invoke-virtual {v1, v3, v2}, Landroid/widget/ListView;->setItemChecked(IZ)V
 
     :goto_2
     move v1, v2
@@ -298,7 +298,7 @@
 
     add-int/lit8 v3, v3, -0x1
 
-    invoke-virtual {v1, v3, v2}, Landroid/widget/AbsListView;->setItemChecked(IZ)V
+    invoke-virtual {v1, v3, v2}, Landroid/widget/ListView;->setItemChecked(IZ)V
 
     goto :goto_2
 

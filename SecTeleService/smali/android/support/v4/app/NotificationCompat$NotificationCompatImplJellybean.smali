@@ -166,15 +166,15 @@
 
     move-object/from16 v0, v20
 
-    iget-object v2, v0, Landroid/support/v4/app/NotificationCompat$Style;->mBigContentTitle:Ljava/lang/CharSequence;
+    iget-object v2, v0, Landroid/support/v4/app/NotificationCompat$BigTextStyle;->mBigContentTitle:Ljava/lang/CharSequence;
 
     move-object/from16 v0, v20
 
-    iget-boolean v3, v0, Landroid/support/v4/app/NotificationCompat$Style;->mSummaryTextSet:Z
+    iget-boolean v3, v0, Landroid/support/v4/app/NotificationCompat$BigTextStyle;->mSummaryTextSet:Z
 
     move-object/from16 v0, v20
 
-    iget-object v4, v0, Landroid/support/v4/app/NotificationCompat$Style;->mSummaryText:Ljava/lang/CharSequence;
+    iget-object v4, v0, Landroid/support/v4/app/NotificationCompat$BigTextStyle;->mSummaryText:Ljava/lang/CharSequence;
 
     move-object/from16 v0, v20
 
@@ -209,15 +209,15 @@
 
     move-object/from16 v0, v20
 
-    iget-object v2, v0, Landroid/support/v4/app/NotificationCompat$Style;->mBigContentTitle:Ljava/lang/CharSequence;
+    iget-object v2, v0, Landroid/support/v4/app/NotificationCompat$InboxStyle;->mBigContentTitle:Ljava/lang/CharSequence;
 
     move-object/from16 v0, v20
 
-    iget-boolean v3, v0, Landroid/support/v4/app/NotificationCompat$Style;->mSummaryTextSet:Z
+    iget-boolean v3, v0, Landroid/support/v4/app/NotificationCompat$InboxStyle;->mSummaryTextSet:Z
 
     move-object/from16 v0, v20
 
-    iget-object v4, v0, Landroid/support/v4/app/NotificationCompat$Style;->mSummaryText:Ljava/lang/CharSequence;
+    iget-object v4, v0, Landroid/support/v4/app/NotificationCompat$InboxStyle;->mSummaryText:Ljava/lang/CharSequence;
 
     move-object/from16 v0, v20
 
@@ -246,15 +246,15 @@
 
     move-object/from16 v0, v20
 
-    iget-object v2, v0, Landroid/support/v4/app/NotificationCompat$Style;->mBigContentTitle:Ljava/lang/CharSequence;
+    iget-object v2, v0, Landroid/support/v4/app/NotificationCompat$BigPictureStyle;->mBigContentTitle:Ljava/lang/CharSequence;
 
     move-object/from16 v0, v20
 
-    iget-boolean v3, v0, Landroid/support/v4/app/NotificationCompat$Style;->mSummaryTextSet:Z
+    iget-boolean v3, v0, Landroid/support/v4/app/NotificationCompat$BigPictureStyle;->mSummaryTextSet:Z
 
     move-object/from16 v0, v20
 
-    iget-object v4, v0, Landroid/support/v4/app/NotificationCompat$Style;->mSummaryText:Ljava/lang/CharSequence;
+    iget-object v4, v0, Landroid/support/v4/app/NotificationCompat$BigPictureStyle;->mSummaryText:Ljava/lang/CharSequence;
 
     move-object/from16 v0, v20
 

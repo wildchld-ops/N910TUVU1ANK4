@@ -41,7 +41,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Landroid/bluetooth/IBluetoothSecureManagerService$Stub;-><init>()V
 
@@ -143,8 +142,6 @@
 
 .method private final findWhiteListIndex(Ljava/lang/String;I)I
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     iget-object v4, p0, Landroid/app/BluetoothSecureManagerService;->mPrefs:Landroid/app/SharedPreferencesImpl;
 
@@ -233,14 +230,12 @@
 
 .method public static final getSecureSettingName(Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Ljava/lang/String;
 
     return-object p0
 .end method
 
 .method private final getWhiteListKey(I)Ljava/lang/String;
     .locals 2
-    .param p1    # I
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -269,9 +264,6 @@
 
 .method private final packWhiteListValue(Ljava/lang/String;I[Ljava/lang/String;)Ljava/lang/String;
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # [Ljava/lang/String;
 
     const/16 v6, 0x3b
 
@@ -322,7 +314,6 @@
 
 .method private final unpackWhiteListValue(Ljava/lang/String;)Landroid/app/BluetoothSecureManagerService$WhiteListValue;
     .locals 10
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -446,9 +437,6 @@
 # virtual methods
 .method public addWhiteList(Ljava/lang/String;I[Ljava/lang/String;)Z
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # [Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -675,7 +663,6 @@
 
 .method public enableSecureMode(Z)Z
     .locals 3
-    .param p1    # Z
 
     const-string v0, "BluetoothSecureManagerService"
 
@@ -720,7 +707,6 @@
 
 .method public enableWhiteList(Z)Z
     .locals 3
-    .param p1    # Z
 
     const-string v0, "BluetoothSecureManagerService"
 
@@ -765,7 +751,6 @@
 
 .method public getSecureModeSetting(Ljava/lang/String;)I
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -849,7 +834,6 @@
 
 .method public getWhiteListCod(I)I
     .locals 5
-    .param p1    # I
 
     const-string v2, "BluetoothSecureManagerService"
 
@@ -976,7 +960,6 @@
 
 .method public getWhiteListName(I)Ljava/lang/String;
     .locals 5
-    .param p1    # I
 
     const-string v2, "BluetoothSecureManagerService"
 
@@ -1063,7 +1046,6 @@
 
 .method public getWhiteListNextIndex(I)I
     .locals 7
-    .param p1    # I
 
     const/4 v3, -0x1
 
@@ -1142,7 +1124,6 @@
 
 .method public getWhiteListUuids(I)[Ljava/lang/String;
     .locals 5
-    .param p1    # I
 
     const-string v2, "BluetoothSecureManagerService"
 
@@ -1237,8 +1218,6 @@
 
 .method public removeWhiteList(Ljava/lang/String;I)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v3, 0x0
 
@@ -1318,8 +1297,6 @@
 
 .method public setSecureModeSetting(Ljava/lang/String;I)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const-string v1, "BluetoothSecureManagerService"
 

@@ -24,7 +24,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -154,7 +153,6 @@
 
 .method private getAdminName(Landroid/content/ComponentName;)Ljava/lang/String;
     .locals 7
-    .param p1    # Landroid/content/ComponentName;
 
     const-string v0, ""
 
@@ -216,7 +214,6 @@
 # virtual methods
 .method PasswordInformationDecoding(I)I
     .locals 10
-    .param p1    # I
 
     const-wide/high16 v8, 0x4020000000000000L
 
@@ -301,7 +298,6 @@
 
 .method PasswordInformationEncoding(I)I
     .locals 11
-    .param p1    # I
 
     const-string v5, "EcppStorageProvider"
 
@@ -484,8 +480,6 @@
 
 .method public checkOldPasswordHistory(I[B)Z
     .locals 8
-    .param p1    # I
-    .param p2    # [B
 
     const/4 v7, 0x0
 
@@ -563,8 +557,6 @@
 
 .method public getAllowBluetoothMode(ILandroid/content/ComponentName;)I
     .locals 9
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
 
     :try_start_0
     const-string v1, "PASSWORD_POLICY"
@@ -604,8 +596,6 @@
 
 .method public getAllowBrowser(ILandroid/content/ComponentName;)Z
     .locals 8
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
 
     const/4 v7, 0x1
 
@@ -643,8 +633,6 @@
 
 .method public getAllowCamera(ILandroid/content/ComponentName;)Z
     .locals 8
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
 
     const/4 v7, 0x1
 
@@ -682,8 +670,6 @@
 
 .method public getAllowDesktopSync(ILandroid/content/ComponentName;)Z
     .locals 8
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
 
     const/4 v7, 0x1
 
@@ -721,8 +707,6 @@
 
 .method public getAllowInternetSharing(ILandroid/content/ComponentName;)Z
     .locals 8
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
 
     const/4 v7, 0x1
 
@@ -760,8 +744,6 @@
 
 .method public getAllowIrDA(ILandroid/content/ComponentName;)Z
     .locals 8
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
 
     const/4 v7, 0x1
 
@@ -799,8 +781,6 @@
 
 .method public getAllowPOPIMAPEmail(ILandroid/content/ComponentName;)Z
     .locals 8
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
 
     const/4 v7, 0x1
 
@@ -838,8 +818,6 @@
 
 .method public getAllowStorageCard(ILandroid/content/ComponentName;)Z
     .locals 8
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
 
     const/4 v7, 0x1
 
@@ -877,8 +855,6 @@
 
 .method public getAllowTextMessaging(ILandroid/content/ComponentName;)Z
     .locals 8
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
 
     const/4 v7, 0x1
 
@@ -916,8 +892,6 @@
 
 .method public getAllowWifi(ILandroid/content/ComponentName;)Z
     .locals 8
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
 
     const/4 v7, 0x1
 
@@ -955,10 +929,6 @@
 
 .method protected getColumnValue(Ljava/lang/String;Ljava/lang/String;ILandroid/content/ComponentName;)Ljava/lang/String;
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Landroid/content/ComponentName;
 
     const/4 v6, 0x0
 
@@ -1080,8 +1050,6 @@
 
 .method public getMaximumFailedPasswordsForDisable(ILandroid/content/ComponentName;)I
     .locals 8
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
 
     const/4 v7, 0x0
 
@@ -1121,8 +1089,6 @@
 
 .method public getMaximumFailedPasswordsForWipe(ILandroid/content/ComponentName;)I
     .locals 8
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
 
     const/4 v7, 0x0
 
@@ -1162,8 +1128,6 @@
 
 .method public getMaximumTimeToLock(ILandroid/content/ComponentName;)J
     .locals 9
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
 
     const-wide/16 v7, 0x0
 
@@ -1256,8 +1220,6 @@
 
 .method public getPasswordEnabledContainerLockTimeout(ILandroid/content/ComponentName;)J
     .locals 9
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
 
     const-wide/16 v7, 0x0
 
@@ -1350,8 +1312,6 @@
 
 .method public getPasswordExpirationDate(ILandroid/content/ComponentName;)J
     .locals 9
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
 
     :try_start_0
     const-string v1, "PASSWORD_POLICY"
@@ -1415,8 +1375,6 @@
 
 .method public getPasswordExpirationTimeout(ILandroid/content/ComponentName;)J
     .locals 9
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
 
     const-wide/16 v7, 0x0
 
@@ -1509,8 +1467,6 @@
 
 .method public getPasswordHistory(ILandroid/content/ComponentName;)I
     .locals 8
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
 
     const/4 v7, 0x0
 
@@ -1605,8 +1561,6 @@
 
 .method public getPasswordMinimumLength(ILandroid/content/ComponentName;)I
     .locals 7
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
 
     :try_start_0
     const-string v0, "EcppStorageProvider"
@@ -1676,8 +1630,6 @@
 
 .method public getPasswordMinimumLetters(ILandroid/content/ComponentName;)I
     .locals 7
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
 
     :try_start_0
     const-string v1, "PASSWORD_POLICY"
@@ -1715,8 +1667,6 @@
 
 .method public getPasswordMinimumLowerCase(ILandroid/content/ComponentName;)I
     .locals 7
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
 
     :try_start_0
     const-string v1, "PASSWORD_POLICY"
@@ -1754,8 +1704,6 @@
 
 .method public getPasswordMinimumNonLetter(ILandroid/content/ComponentName;)I
     .locals 7
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
 
     :try_start_0
     const-string v1, "PASSWORD_POLICY"
@@ -1793,8 +1741,6 @@
 
 .method public getPasswordMinimumNumeric(ILandroid/content/ComponentName;)I
     .locals 7
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
 
     :try_start_0
     const-string v1, "PASSWORD_POLICY"
@@ -1832,8 +1778,6 @@
 
 .method public getPasswordMinimumSymbols(ILandroid/content/ComponentName;)I
     .locals 7
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
 
     :try_start_0
     const-string v1, "PASSWORD_POLICY"
@@ -1871,8 +1815,6 @@
 
 .method public getPasswordMinimumUpperCase(ILandroid/content/ComponentName;)I
     .locals 7
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
 
     :try_start_0
     const-string v1, "PASSWORD_POLICY"
@@ -1910,8 +1852,6 @@
 
 .method public getPasswordQuality(ILandroid/content/ComponentName;)I
     .locals 8
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
 
     :try_start_0
     const-string v1, "PASSWORD_POLICY"
@@ -1954,7 +1894,6 @@
 
 .method public getPasswordStateInfoFromDB(I)Lcom/sec/knox/container/contentprovider/ContainerPasswordStateInfo;
     .locals 8
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -2305,8 +2244,6 @@
 
 .method public getSimplePasswordEnabled(ILandroid/content/ComponentName;)Z
     .locals 8
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
 
     const/4 v7, 0x1
 
@@ -2344,11 +2281,6 @@
 
 .method protected getStricterColumnValue(Ljava/lang/String;Ljava/lang/String;ILandroid/content/ComponentName;Z)J
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Landroid/content/ComponentName;
-    .param p5    # Z
 
     const-wide/16 v6, 0x0
 
@@ -2373,12 +2305,6 @@
 
 .method protected getStricterColumnValue(Ljava/lang/String;Ljava/lang/String;ILandroid/content/ComponentName;ZJ)J
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Landroid/content/ComponentName;
-    .param p5    # Z
-    .param p6    # J
 
     const-string v7, "EcppStorageProvider"
 
@@ -2671,11 +2597,6 @@
 
 .method protected getStricterColumnValueForBoolean(Ljava/lang/String;Ljava/lang/String;ILandroid/content/ComponentName;Z)Z
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Landroid/content/ComponentName;
-    .param p5    # Z
 
     const/4 v5, 0x1
 
@@ -2925,7 +2846,6 @@
 
 .method public isPasswordVisisbilityEnabled(I)Z
     .locals 9
-    .param p1    # I
 
     const/4 v8, 0x0
 
@@ -2974,7 +2894,6 @@
 
 .method public migrationPasswordUsingEncoding(I)V
     .locals 22
-    .param p1    # I
 
     const-string v3, "EcppStorageProvider"
 
@@ -3331,7 +3250,6 @@
 
 .method public removeActiveAdmin(Landroid/content/ComponentName;)Z
     .locals 5
-    .param p1    # Landroid/content/ComponentName;
 
     :try_start_0
     iget-object v1, p0, Lcom/sec/knox/container/contentprovider/EcppStorageProvider;->mEcppDbHelper:Lcom/sec/knox/container/contentprovider/EcppStorageHelper;
@@ -3417,7 +3335,6 @@
 
 .method public removeContainer(I)Z
     .locals 11
-    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -3732,8 +3649,6 @@
 
 .method public removeOldestPasswordIfRequired(II)V
     .locals 9
-    .param p1    # I
-    .param p2    # I
 
     const/4 v8, 0x0
 
@@ -3833,19 +3748,6 @@
 
 .method public setActivePasswordState(IIIIIIIIIZIII)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
-    .param p9    # I
-    .param p10    # Z
-    .param p11    # I
-    .param p12    # I
-    .param p13    # I
 
     new-instance v1, Landroid/content/ContentValues;
 
@@ -4047,9 +3949,6 @@
 
 .method public setAllowBluetoothMode(ILandroid/content/ComponentName;I)V
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # I
 
     const-string v1, "PASSWORD_POLICY"
 
@@ -4070,9 +3969,6 @@
 
 .method public setAllowBrowser(ILandroid/content/ComponentName;Z)V
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # Z
 
     const/4 v4, 0x0
 
@@ -4098,9 +3994,6 @@
 
 .method public setAllowCamera(ILandroid/content/ComponentName;Z)V
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # Z
 
     const/4 v4, 0x0
 
@@ -4126,9 +4019,6 @@
 
 .method public setAllowDesktopSync(ILandroid/content/ComponentName;Z)V
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # Z
 
     const/4 v4, 0x0
 
@@ -4154,9 +4044,6 @@
 
 .method public setAllowInternetSharing(ILandroid/content/ComponentName;Z)V
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # Z
 
     const/4 v4, 0x0
 
@@ -4182,9 +4069,6 @@
 
 .method public setAllowIrDA(ILandroid/content/ComponentName;Z)V
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # Z
 
     const/4 v4, 0x0
 
@@ -4210,9 +4094,6 @@
 
 .method public setAllowPOPIMAPEmail(ILandroid/content/ComponentName;Z)V
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # Z
 
     const/4 v4, 0x0
 
@@ -4238,9 +4119,6 @@
 
 .method public setAllowStorageCard(ILandroid/content/ComponentName;Z)V
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # Z
 
     const/4 v4, 0x0
 
@@ -4266,9 +4144,6 @@
 
 .method public setAllowTextMessaging(ILandroid/content/ComponentName;Z)V
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # Z
 
     const/4 v4, 0x0
 
@@ -4294,9 +4169,6 @@
 
 .method public setAllowWifi(ILandroid/content/ComponentName;Z)V
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # Z
 
     const/4 v4, 0x0
 
@@ -4322,11 +4194,6 @@
 
 .method protected setColumnValues(Ljava/lang/String;Landroid/content/ComponentName;Ljava/lang/String;II)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
-    .param p5    # I
 
     const-string v0, "EcppStorageProvider"
 
@@ -4409,11 +4276,6 @@
 
 .method protected setColumnValuesAsLong(Ljava/lang/String;Landroid/content/ComponentName;Ljava/lang/String;JI)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # Ljava/lang/String;
-    .param p4    # J
-    .param p6    # I
 
     const-string v3, "EcppStorageProvider"
 
@@ -4584,9 +4446,6 @@
 
 .method public setMaximumFailedPasswordsForDisable(ILandroid/content/ComponentName;I)V
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # I
 
     const-string v1, "PASSWORD_POLICY"
 
@@ -4607,9 +4466,6 @@
 
 .method public setMaximumFailedPasswordsForWipe(ILandroid/content/ComponentName;I)V
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # I
 
     const-string v1, "PASSWORD_POLICY"
 
@@ -4630,9 +4486,6 @@
 
 .method public setMaximumTimeToLock(ILandroid/content/ComponentName;J)V
     .locals 7
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # J
 
     const-string v1, "PASSWORD_POLICY"
 
@@ -4653,8 +4506,6 @@
 
 .method public setOldPasswordToHistory(I[B)V
     .locals 4
-    .param p1    # I
-    .param p2    # [B
 
     const/4 v3, 0x0
 
@@ -4691,9 +4542,6 @@
 
 .method public setPasswordEnabledContainerLockTimeout(ILandroid/content/ComponentName;J)V
     .locals 7
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # J
 
     const-string v1, "PASSWORD_POLICY"
 
@@ -4714,9 +4562,6 @@
 
 .method public setPasswordExpirationDate(ILandroid/content/ComponentName;J)V
     .locals 7
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # J
 
     const-string v0, "EcppStorageProvider"
 
@@ -4759,9 +4604,6 @@
 
 .method public setPasswordExpirationTimeout(ILandroid/content/ComponentName;J)V
     .locals 7
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # J
 
     const-string v1, "PASSWORD_POLICY"
 
@@ -4782,9 +4624,6 @@
 
 .method public setPasswordHistory(ILandroid/content/ComponentName;I)V
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # I
 
     const-string v1, "PASSWORD_POLICY"
 
@@ -4805,9 +4644,6 @@
 
 .method public setPasswordMinimumLength(ILandroid/content/ComponentName;I)V
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # I
 
     const-string v0, "EcppStorageProvider"
 
@@ -4870,9 +4706,6 @@
 
 .method public setPasswordMinimumLetters(ILandroid/content/ComponentName;I)V
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # I
 
     const-string v1, "PASSWORD_POLICY"
 
@@ -4893,9 +4726,6 @@
 
 .method public setPasswordMinimumLowerCase(ILandroid/content/ComponentName;I)V
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # I
 
     const-string v1, "PASSWORD_POLICY"
 
@@ -4916,9 +4746,6 @@
 
 .method public setPasswordMinimumNonLetter(ILandroid/content/ComponentName;I)V
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # I
 
     const-string v1, "PASSWORD_POLICY"
 
@@ -4939,9 +4766,6 @@
 
 .method public setPasswordMinimumNumeric(ILandroid/content/ComponentName;I)V
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # I
 
     const-string v1, "PASSWORD_POLICY"
 
@@ -4962,9 +4786,6 @@
 
 .method public setPasswordMinimumSymbols(ILandroid/content/ComponentName;I)V
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # I
 
     const-string v1, "PASSWORD_POLICY"
 
@@ -4985,9 +4806,6 @@
 
 .method public setPasswordMinimumUpperCase(ILandroid/content/ComponentName;I)V
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # I
 
     const-string v1, "PASSWORD_POLICY"
 
@@ -5008,9 +4826,6 @@
 
 .method public setPasswordQuality(ILandroid/content/ComponentName;I)V
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # I
 
     const-string v1, "PASSWORD_POLICY"
 
@@ -5031,8 +4846,6 @@
 
 .method public setPasswordVisibilityEnabled(IZ)V
     .locals 6
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v4, 0x0
 
@@ -5058,9 +4871,6 @@
 
 .method public setSimplePasswordEnabled(ILandroid/content/ComponentName;Z)V
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # Z
 
     if-eqz p3, :cond_0
 

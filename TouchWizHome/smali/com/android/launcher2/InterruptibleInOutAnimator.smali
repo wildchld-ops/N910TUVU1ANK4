@@ -30,9 +30,6 @@
 # direct methods
 .method public constructor <init>(JFF)V
     .locals 3
-    .param p1    # J
-    .param p3    # F
-    .param p4    # F
 
     const/4 v2, 0x1
 
@@ -85,8 +82,6 @@
 
 .method static synthetic access$002(Lcom/android/launcher2/InterruptibleInOutAnimator;I)I
     .locals 0
-    .param p0    # Lcom/android/launcher2/InterruptibleInOutAnimator;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/launcher2/InterruptibleInOutAnimator;->mDirection:I
 
@@ -95,7 +90,6 @@
 
 .method private animate(I)V
     .locals 13
-    .param p1    # I
 
     const/4 v12, 0x1
 
@@ -270,7 +264,6 @@
 
 .method public setTag(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     iput-object p1, p0, Lcom/android/launcher2/InterruptibleInOutAnimator;->mTag:Ljava/lang/Object;
 

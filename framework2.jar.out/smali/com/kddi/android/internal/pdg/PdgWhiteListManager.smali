@@ -22,8 +22,6 @@
 
 .method public static contain(Landroid/content/Context;Ljava/lang/String;)Z
     .locals 11
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 

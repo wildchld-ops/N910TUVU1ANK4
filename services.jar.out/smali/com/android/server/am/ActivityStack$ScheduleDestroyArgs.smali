@@ -25,9 +25,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/am/ProcessRecord;ZLjava/lang/String;)V
     .locals 0
-    .param p1    # Lcom/android/server/am/ProcessRecord;
-    .param p2    # Z
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

@@ -110,8 +110,6 @@
 
 .method public static appendSimSlot(Ljava/lang/String;I)Ljava/lang/String;
     .locals 0
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
 
     return-object p0
 .end method
@@ -161,8 +159,6 @@
 
 .method public static getSimIcon(Landroid/content/Context;I)I
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -257,8 +253,6 @@
 
 .method public static getSimName(Landroid/content/Context;I)Ljava/lang/String;
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 

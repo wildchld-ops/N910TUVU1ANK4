@@ -51,7 +51,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/motion2014/MotionSettings2014;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/motion2014/MotionSettings2014;
 
     iget-object v0, p0, Lcom/android/settings/motion2014/MotionSettings2014;->mResolver:Landroid/content/ContentResolver;
 
@@ -60,7 +59,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/motion2014/MotionSettings2014;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/motion2014/MotionSettings2014;
 
     invoke-virtual {p0}, Lcom/android/settings/SettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -71,7 +69,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/motion2014/MotionSettings2014;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/motion2014/MotionSettings2014;
 
     invoke-virtual {p0}, Lcom/android/settings/SettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -82,7 +79,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/motion2014/MotionSettings2014;)Landroid/preference/SwitchPreferenceScreen;
     .locals 1
-    .param p0    # Lcom/android/settings/motion2014/MotionSettings2014;
 
     iget-object v0, p0, Lcom/android/settings/motion2014/MotionSettings2014;->mPalmSwipeSwitch:Landroid/preference/SwitchPreferenceScreen;
 
@@ -253,7 +249,6 @@
 
 .method private showAllOptionDisabledDialog(Landroid/preference/SwitchPreferenceScreen;)V
     .locals 3
-    .param p1    # Landroid/preference/SwitchPreferenceScreen;
 
     invoke-direct {p0}, Lcom/android/settings/motion2014/MotionSettings2014;->dismissAllDialog()V
 
@@ -310,7 +305,6 @@
 # virtual methods
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 8
-    .param p1    # Landroid/os/Bundle;
 
     const/16 v7, 0x64
 
@@ -982,8 +976,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
     .locals 3
-    .param p1    # Landroid/view/Menu;
-    .param p2    # Landroid/view/MenuInflater;
 
     const/4 v2, 0x0
 
@@ -1033,7 +1025,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 3
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -1097,8 +1088,6 @@
 
 .method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
     .locals 5
-    .param p1    # Landroid/preference/Preference;
-    .param p2    # Ljava/lang/Object;
 
     const/4 v4, 0x0
 
@@ -1278,8 +1267,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 1
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     invoke-super {p0, p1, p2}, Landroid/preference/PreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
 

@@ -65,8 +65,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/content/pm/ResolveInfo;)V
     .locals 21
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/pm/ResolveInfo;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -457,7 +455,6 @@
 
 .method public constructor <init>(Landroid/os/Parcel;)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -576,7 +573,6 @@
 
 .method public getSubtypeAt(I)Landroid/view/textservice/SpellCheckerSubtype;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/view/textservice/SpellCheckerInfo;->mSubtypes:Ljava/util/ArrayList;
 
@@ -603,7 +599,6 @@
 
 .method public loadIcon(Landroid/content/pm/PackageManager;)Landroid/graphics/drawable/Drawable;
     .locals 1
-    .param p1    # Landroid/content/pm/PackageManager;
 
     iget-object v0, p0, Landroid/view/textservice/SpellCheckerInfo;->mService:Landroid/content/pm/ResolveInfo;
 
@@ -616,7 +611,6 @@
 
 .method public loadLabel(Landroid/content/pm/PackageManager;)Ljava/lang/CharSequence;
     .locals 3
-    .param p1    # Landroid/content/pm/PackageManager;
 
     iget v0, p0, Landroid/view/textservice/SpellCheckerInfo;->mLabel:I
 
@@ -652,8 +646,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget v0, p0, Landroid/view/textservice/SpellCheckerInfo;->mLabel:I
 

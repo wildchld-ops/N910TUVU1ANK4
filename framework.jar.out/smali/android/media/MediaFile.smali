@@ -1361,7 +1361,6 @@
 
 .method private static _isAudioFileType(I)Z
     .locals 2
-    .param p0    # I
 
     const/4 v0, 0x1
 
@@ -1401,7 +1400,6 @@
 
 .method private static _isVideoFileType(I)Z
     .locals 1
-    .param p0    # I
 
     const/16 v0, 0x15
 
@@ -1434,9 +1432,6 @@
 
 .method static addFileType(Ljava/lang/String;ILjava/lang/String;)V
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     sget-object v0, Landroid/media/MediaFile;->sFileTypeMap:Ljava/util/HashMap;
 
@@ -1459,10 +1454,6 @@
 
 .method static addFileType(Ljava/lang/String;ILjava/lang/String;I)V
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     invoke-static {p0, p1, p2}, Landroid/media/MediaFile;->addFileType(Ljava/lang/String;ILjava/lang/String;)V
 
@@ -1495,7 +1486,6 @@
 
 .method public static getFileTitle(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     const/16 v2, 0x2f
 
@@ -1538,7 +1528,6 @@
 
 .method public static getFileType(Ljava/lang/String;)Landroid/media/MediaFile$MediaFileType;
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     const/16 v1, 0x2e
 
@@ -1579,7 +1568,6 @@
 
 .method public static getFileTypeForMimeType(Ljava/lang/String;)I
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     sget-object v1, Landroid/media/MediaFile;->sMimeTypeMap:Ljava/util/HashMap;
 
@@ -1606,8 +1594,6 @@
 
 .method public static getFormatCode(Ljava/lang/String;Ljava/lang/String;)I
     .locals 5
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -1673,7 +1659,6 @@
 
 .method public static getMimeTypeForFile(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Landroid/media/MediaFile;->getFileType(Ljava/lang/String;)Landroid/media/MediaFile$MediaFileType;
 
@@ -1694,7 +1679,6 @@
 
 .method public static getMimeTypeForFormatCode(I)Ljava/lang/String;
     .locals 2
-    .param p0    # I
 
     sget-object v0, Landroid/media/MediaFile;->sFormatToMimeTypeMap:Ljava/util/HashMap;
 
@@ -1713,7 +1697,6 @@
 
 .method public static isAudioFileType(I)Z
     .locals 4
-    .param p0    # I
 
     const/4 v1, 0x0
 
@@ -1760,7 +1743,6 @@
 
 .method public static isDrmFileType(I)Z
     .locals 1
-    .param p0    # I
 
     const/16 v0, 0x33
 
@@ -1783,7 +1765,6 @@
 
 .method public static isImageFileType(I)Z
     .locals 1
-    .param p0    # I
 
     const/16 v0, 0x1f
 
@@ -1806,7 +1787,6 @@
 
 .method public static isMimeTypeMedia(Ljava/lang/String;)Z
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Landroid/media/MediaFile;->getFileTypeForMimeType(Ljava/lang/String;)I
 
@@ -1850,7 +1830,6 @@
 
 .method public static isPlayListFileType(I)Z
     .locals 1
-    .param p0    # I
 
     const/16 v0, 0x29
 
@@ -1934,7 +1913,6 @@
 
 .method public static isVideoFileType(I)Z
     .locals 4
-    .param p0    # I
 
     const/4 v1, 0x0
 

@@ -97,7 +97,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/myprofile/ClockActivity;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/settings/myprofile/ClockActivity;
 
     iget-object v0, p0, Lcom/android/settings/myprofile/ClockActivity;->mFontSizeRangeArrayList:Ljava/util/ArrayList;
 
@@ -106,7 +105,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/myprofile/ClockActivity;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/android/settings/myprofile/ClockActivity;
 
     iget-object v0, p0, Lcom/android/settings/myprofile/ClockActivity;->mTvPreviewText:Landroid/widget/TextView;
 
@@ -115,9 +113,6 @@
 
 .method static synthetic access$1000(Lcom/android/settings/myprofile/ClockActivity;Landroid/view/View;I)V
     .locals 0
-    .param p0    # Lcom/android/settings/myprofile/ClockActivity;
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/settings/myprofile/ClockActivity;->updateAlignButtonAndPreviewTextAlignment(Landroid/view/View;I)V
 
@@ -126,7 +121,6 @@
 
 .method static synthetic access$1100(Lcom/android/settings/myprofile/ClockActivity;)Lcom/android/settings/myprofile/EditMyProfileDialog;
     .locals 1
-    .param p0    # Lcom/android/settings/myprofile/ClockActivity;
 
     iget-object v0, p0, Lcom/android/settings/myprofile/ClockActivity;->mEditmyProfileDialog:Lcom/android/settings/myprofile/EditMyProfileDialog;
 
@@ -135,8 +129,6 @@
 
 .method static synthetic access$1102(Lcom/android/settings/myprofile/ClockActivity;Lcom/android/settings/myprofile/EditMyProfileDialog;)Lcom/android/settings/myprofile/EditMyProfileDialog;
     .locals 0
-    .param p0    # Lcom/android/settings/myprofile/ClockActivity;
-    .param p1    # Lcom/android/settings/myprofile/EditMyProfileDialog;
 
     iput-object p1, p0, Lcom/android/settings/myprofile/ClockActivity;->mEditmyProfileDialog:Lcom/android/settings/myprofile/EditMyProfileDialog;
 
@@ -145,8 +137,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/myprofile/ClockActivity;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/settings/myprofile/ClockActivity;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/settings/myprofile/ClockActivity;->saveTextSizeToDB(Ljava/lang/String;)V
 
@@ -155,7 +145,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/myprofile/ClockActivity;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/settings/myprofile/ClockActivity;
 
     iget-object v0, p0, Lcom/android/settings/myprofile/ClockActivity;->TAG:Ljava/lang/String;
 
@@ -164,7 +153,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/myprofile/ClockActivity;)V
     .locals 0
-    .param p0    # Lcom/android/settings/myprofile/ClockActivity;
 
     invoke-direct {p0}, Lcom/android/settings/myprofile/ClockActivity;->reflectSelectedTextFontColor()V
 
@@ -173,7 +161,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/myprofile/ClockActivity;)Lcom/android/settings/myprofile/GradientColorPickerView;
     .locals 1
-    .param p0    # Lcom/android/settings/myprofile/ClockActivity;
 
     iget-object v0, p0, Lcom/android/settings/myprofile/ClockActivity;->mGradientColorPickerView:Lcom/android/settings/myprofile/GradientColorPickerView;
 
@@ -182,7 +169,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/myprofile/ClockActivity;)Lcom/android/settings/myprofile/SpLitColorPickerView;
     .locals 1
-    .param p0    # Lcom/android/settings/myprofile/ClockActivity;
 
     iget-object v0, p0, Lcom/android/settings/myprofile/ClockActivity;->mSpLitColorPickerView:Lcom/android/settings/myprofile/SpLitColorPickerView;
 
@@ -191,7 +177,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/myprofile/ClockActivity;)Landroid/widget/Button;
     .locals 1
-    .param p0    # Lcom/android/settings/myprofile/ClockActivity;
 
     iget-object v0, p0, Lcom/android/settings/myprofile/ClockActivity;->mBtnTextAlignLeft:Landroid/widget/Button;
 
@@ -200,7 +185,6 @@
 
 .method static synthetic access$800(Lcom/android/settings/myprofile/ClockActivity;)Landroid/widget/Button;
     .locals 1
-    .param p0    # Lcom/android/settings/myprofile/ClockActivity;
 
     iget-object v0, p0, Lcom/android/settings/myprofile/ClockActivity;->mBtnTextAlignRight:Landroid/widget/Button;
 
@@ -209,7 +193,6 @@
 
 .method static synthetic access$900(Lcom/android/settings/myprofile/ClockActivity;)Landroid/widget/Button;
     .locals 1
-    .param p0    # Lcom/android/settings/myprofile/ClockActivity;
 
     iget-object v0, p0, Lcom/android/settings/myprofile/ClockActivity;->mBtnTextAlignCenter:Landroid/widget/Button;
 
@@ -396,7 +379,6 @@
 
 .method private getViewID(I)I
     .locals 1
-    .param p1    # I
 
     if-nez p1, :cond_0
 
@@ -829,7 +811,6 @@
 
 .method private saveTextAlignSettingsToDB(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/settings/myprofile/ClockActivity;->mContentResolver:Landroid/content/ContentResolver;
 
@@ -864,7 +845,6 @@
 
 .method private saveTextColorValueToDB(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/settings/myprofile/ClockActivity;->mContentResolver:Landroid/content/ContentResolver;
 
@@ -899,7 +879,6 @@
 
 .method private saveTextSizeToDB(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/settings/myprofile/ClockActivity;->mContentResolver:Landroid/content/ContentResolver;
 
@@ -912,8 +891,6 @@
 
 .method private updateAlignButtonAndPreviewTextAlignment(Landroid/view/View;I)V
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     invoke-virtual {p0}, Lcom/android/settings/myprofile/ClockActivity;->setDefaultImage()V
 
@@ -1125,7 +1102,6 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
@@ -1174,7 +1150,6 @@
 
 .method public onProfileTextChanged(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/settings/myprofile/ClockActivity;->mTvEditProfileLabel:Landroid/widget/TextView;
 

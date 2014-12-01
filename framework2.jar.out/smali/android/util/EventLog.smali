@@ -68,7 +68,6 @@
 
 .method public static getTagCode(Ljava/lang/String;)I
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     invoke-static {}, Landroid/util/EventLog;->readTagsFile()V
 
@@ -97,7 +96,6 @@
 
 .method public static getTagName(I)Ljava/lang/String;
     .locals 2
-    .param p0    # I
 
     invoke-static {}, Landroid/util/EventLog;->readTagsFile()V
 

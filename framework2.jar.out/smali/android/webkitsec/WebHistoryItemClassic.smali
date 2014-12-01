@@ -39,7 +39,6 @@
 
 .method private constructor <init>(I)V
     .locals 3
-    .param p1    # I
 
     invoke-direct {p0}, Landroid/webkitsec/WebHistoryItem;-><init>()V
 
@@ -81,7 +80,6 @@
 
 .method private constructor <init>(Landroid/webkitsec/WebHistoryItemClassic;)V
     .locals 1
-    .param p1    # Landroid/webkitsec/WebHistoryItemClassic;
 
     invoke-direct {p0}, Landroid/webkitsec/WebHistoryItem;-><init>()V
 
@@ -115,7 +113,6 @@
 
 .method constructor <init>([B)V
     .locals 3
-    .param p1    # [B
 
     invoke-direct {p0}, Landroid/webkitsec/WebHistoryItem;-><init>()V
 
@@ -449,7 +446,6 @@
 
 .method inflate(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/webkitsec/WebHistoryItemClassic;->mFlattenedData:[B
 
@@ -468,7 +464,6 @@
 
 .method public setCustomData(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     iput-object p1, p0, Landroid/webkitsec/WebHistoryItemClassic;->mCustomData:Ljava/lang/Object;
 
@@ -477,7 +472,6 @@
 
 .method setFavicon(Landroid/graphics/Bitmap;)V
     .locals 0
-    .param p1    # Landroid/graphics/Bitmap;
 
     iput-object p1, p0, Landroid/webkitsec/WebHistoryItemClassic;->mFavicon:Landroid/graphics/Bitmap;
 
@@ -486,8 +480,6 @@
 
 .method setTouchIconUrl(Ljava/lang/String;Z)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     if-nez p2, :cond_0
 

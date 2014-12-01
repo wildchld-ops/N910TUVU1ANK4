@@ -20,7 +20,6 @@
 
 .method public static deserializeObject([B)Ljava/lang/Object;
     .locals 5
-    .param p0    # [B
 
     const/4 v3, 0x0
 
@@ -562,8 +561,6 @@
 
 .method public static readPropertyValue(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 10
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const/4 v7, 0x0
 
@@ -804,7 +801,6 @@
 
 .method public static serializeObject(Ljava/lang/Object;)[B
     .locals 4
-    .param p0    # Ljava/lang/Object;
 
     new-instance v0, Ljava/io/ByteArrayOutputStream;
 
@@ -840,9 +836,6 @@
 
 .method public static writePropertyValue(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 17
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v10, 0x0
 

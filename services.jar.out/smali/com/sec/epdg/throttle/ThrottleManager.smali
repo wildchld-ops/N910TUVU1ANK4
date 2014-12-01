@@ -56,9 +56,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;ZZ)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Z
-    .param p3    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -111,7 +108,6 @@
 
 .method private addOrGetTimer(Ljava/lang/String;)V
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     const/4 v7, 0x0
 
@@ -358,7 +354,6 @@
 
 .method private getDataRetryIntent(Ljava/lang/String;)Landroid/content/Intent;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -393,7 +388,6 @@
 
 .method private getRetryPendingIntent(Ljava/lang/String;)Landroid/app/PendingIntent;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/sec/epdg/throttle/ThrottleManager;->getDataRetryIntent(Ljava/lang/String;)Landroid/content/Intent;
 
@@ -424,8 +418,6 @@
 
 .method private isThrottleRequired(Ljava/lang/String;Lcom/sec/epdg/IWlanError;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/sec/epdg/IWlanError;
 
     const/4 v3, 0x1
 
@@ -690,7 +682,6 @@
 
 .method public isRetryThrottled(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-boolean v0, p0, Lcom/sec/epdg/throttle/ThrottleManager;->mIsThrottleEnabled:Z
 
@@ -733,7 +724,6 @@
 
 .method public onWifiConnected(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/sec/epdg/throttle/ThrottleManager;->mCurrentSsid:Ljava/lang/String;
 
@@ -751,7 +741,6 @@
 
 .method public onWifiDisconnected(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -826,8 +815,6 @@
 
 .method public startTimerOrIncrementCounter(Ljava/lang/String;Lcom/sec/epdg/IWlanError;)Z
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/sec/epdg/IWlanError;
 
     const/4 v2, 0x0
 

@@ -50,8 +50,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Z)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     invoke-direct {p0}, Lcom/google/gdata/util/common/base/UnicodeEscaper;-><init>()V
 
@@ -121,7 +119,6 @@
 
 .method private static createSafeOctets(Ljava/lang/String;)[Z
     .locals 9
-    .param p0    # Ljava/lang/String;
 
     const/4 v8, 0x1
 
@@ -222,7 +219,6 @@
 # virtual methods
 .method public escape(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p1}, Ljava/lang/String;->length()I
 
@@ -265,7 +261,6 @@
 
 .method protected escape(I)[C
     .locals 7
-    .param p1    # I
 
     const/4 v6, 0x3
 
@@ -615,9 +610,6 @@
 
 .method protected nextEscapeIndex(Ljava/lang/CharSequence;II)I
     .locals 2
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
 
     :goto_0
     if-ge p2, p3, :cond_0

@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Lcom/android/mms/ui/EmoticonContainer;Lcom/android/mms/ui/EmoticonContainer$1;)V
     .locals 0
-    .param p1    # Lcom/android/mms/ui/EmoticonContainer;
-    .param p2    # Lcom/android/mms/ui/EmoticonContainer$1;
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/EmoticonContainer$StickerPagersAdapter;-><init>(Lcom/android/mms/ui/EmoticonContainer;)V
 
@@ -43,9 +41,6 @@
 # virtual methods
 .method public destroyItem(Landroid/view/ViewGroup;ILjava/lang/Object;)V
     .locals 4
-    .param p1    # Landroid/view/ViewGroup;
-    .param p2    # I
-    .param p3    # Ljava/lang/Object;
 
     # getter for: Lcom/android/mms/ui/EmoticonContainer;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/android/mms/ui/EmoticonContainer;->access$000()Ljava/lang/String;
@@ -162,7 +157,6 @@
 
 .method public getItemPosition(Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     const/4 v0, -0x2
 
@@ -171,8 +165,6 @@
 
 .method public instantiateItem(Landroid/view/ViewGroup;I)Ljava/lang/Object;
     .locals 6
-    .param p1    # Landroid/view/ViewGroup;
-    .param p2    # I
 
     # getter for: Lcom/android/mms/ui/EmoticonContainer;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/android/mms/ui/EmoticonContainer;->access$000()Ljava/lang/String;
@@ -291,8 +283,6 @@
 
 .method public isViewFromObject(Landroid/view/View;Ljava/lang/Object;)Z
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Ljava/lang/Object;
 
     if-ne p1, p2, :cond_0
 

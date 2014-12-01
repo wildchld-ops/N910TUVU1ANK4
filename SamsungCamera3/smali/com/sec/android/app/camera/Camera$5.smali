@@ -33,8 +33,6 @@
 # virtual methods
 .method public onCallStateChanged(ILjava/lang/String;)V
     .locals 8
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/16 v7, 0x66
 

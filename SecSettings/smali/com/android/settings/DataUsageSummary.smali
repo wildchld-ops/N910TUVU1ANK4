@@ -542,7 +542,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/DataUsageSummary;)Ljava/lang/Boolean;
     .locals 1
-    .param p0    # Lcom/android/settings/DataUsageSummary;
 
     iget-object v0, p0, Lcom/android/settings/DataUsageSummary;->mMobileDataEnabled:Ljava/lang/Boolean;
 
@@ -551,8 +550,6 @@
 
 .method static synthetic access$002(Lcom/android/settings/DataUsageSummary;Ljava/lang/Boolean;)Ljava/lang/Boolean;
     .locals 0
-    .param p0    # Lcom/android/settings/DataUsageSummary;
-    .param p1    # Ljava/lang/Boolean;
 
     iput-object p1, p0, Lcom/android/settings/DataUsageSummary;->mMobileDataEnabled:Ljava/lang/Boolean;
 
@@ -561,7 +558,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/DataUsageSummary;)Landroid/net/ConnectivityManager;
     .locals 1
-    .param p0    # Lcom/android/settings/DataUsageSummary;
 
     iget-object v0, p0, Lcom/android/settings/DataUsageSummary;->mConnService:Landroid/net/ConnectivityManager;
 
@@ -570,7 +566,6 @@
 
 .method static synthetic access$1000(Lcom/android/settings/DataUsageSummary;)Landroid/widget/TabHost;
     .locals 1
-    .param p0    # Lcom/android/settings/DataUsageSummary;
 
     iget-object v0, p0, Lcom/android/settings/DataUsageSummary;->mTabHost:Landroid/widget/TabHost;
 
@@ -579,7 +574,6 @@
 
 .method static synthetic access$1100(Lcom/android/settings/DataUsageSummary;)Landroid/net/NetworkPolicyManager;
     .locals 1
-    .param p0    # Lcom/android/settings/DataUsageSummary;
 
     iget-object v0, p0, Lcom/android/settings/DataUsageSummary;->mPolicyManager:Landroid/net/NetworkPolicyManager;
 
@@ -588,7 +582,6 @@
 
 .method static synthetic access$1200(Lcom/android/settings/DataUsageSummary;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/settings/DataUsageSummary;
 
     iget-object v0, p0, Lcom/android/settings/DataUsageSummary;->handler_loading:Landroid/os/Handler;
 
@@ -597,7 +590,6 @@
 
 .method static synthetic access$1300(Lcom/android/settings/DataUsageSummary;)Landroid/view/MenuItem;
     .locals 1
-    .param p0    # Lcom/android/settings/DataUsageSummary;
 
     iget-object v0, p0, Lcom/android/settings/DataUsageSummary;->mMenuRestrictBackground:Landroid/view/MenuItem;
 
@@ -606,7 +598,6 @@
 
 .method static synthetic access$1400(Lcom/android/settings/DataUsageSummary;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/DataUsageSummary;
 
     iget-boolean v0, p0, Lcom/android/settings/DataUsageSummary;->mBinding:Z
 
@@ -615,7 +606,6 @@
 
 .method static synthetic access$1500(Lcom/android/settings/DataUsageSummary;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/settings/DataUsageSummary;
 
     iget-object v0, p0, Lcom/android/settings/DataUsageSummary;->mCurrentTab:Ljava/lang/String;
 
@@ -624,7 +614,6 @@
 
 .method static synthetic access$1600(Lcom/android/settings/DataUsageSummary;)Landroid/app/DialogFragment;
     .locals 1
-    .param p0    # Lcom/android/settings/DataUsageSummary;
 
     iget-object v0, p0, Lcom/android/settings/DataUsageSummary;->mDialog:Landroid/app/DialogFragment;
 
@@ -633,8 +622,6 @@
 
 .method static synthetic access$1602(Lcom/android/settings/DataUsageSummary;Landroid/app/DialogFragment;)Landroid/app/DialogFragment;
     .locals 0
-    .param p0    # Lcom/android/settings/DataUsageSummary;
-    .param p1    # Landroid/app/DialogFragment;
 
     iput-object p1, p0, Lcom/android/settings/DataUsageSummary;->mDialog:Landroid/app/DialogFragment;
 
@@ -643,8 +630,6 @@
 
 .method static synthetic access$1700(Lcom/android/settings/DataUsageSummary;Z)V
     .locals 0
-    .param p0    # Lcom/android/settings/DataUsageSummary;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/settings/DataUsageSummary;->setMobileDataEnabled(Z)V
 
@@ -653,7 +638,6 @@
 
 .method static synthetic access$1800(Lcom/android/settings/DataUsageSummary;)Lcom/sec/android/touchwiz/widget/TwCheckBox;
     .locals 1
-    .param p0    # Lcom/android/settings/DataUsageSummary;
 
     iget-object v0, p0, Lcom/android/settings/DataUsageSummary;->mConfirmAtBoot:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
@@ -662,7 +646,6 @@
 
 .method static synthetic access$1900(Lcom/android/settings/DataUsageSummary;)Landroid/app/enterprise/RestrictionPolicy;
     .locals 1
-    .param p0    # Lcom/android/settings/DataUsageSummary;
 
     iget-object v0, p0, Lcom/android/settings/DataUsageSummary;->mRestrictionPolicy:Landroid/app/enterprise/RestrictionPolicy;
 
@@ -671,8 +654,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/DataUsageSummary;Z)V
     .locals 0
-    .param p0    # Lcom/android/settings/DataUsageSummary;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/settings/DataUsageSummary;->updatePolicy(Z)V
 
@@ -681,8 +662,6 @@
 
 .method static synthetic access$2000(Lcom/android/settings/DataUsageSummary;J)V
     .locals 0
-    .param p0    # Lcom/android/settings/DataUsageSummary;
-    .param p1    # J
 
     invoke-direct {p0, p1, p2}, Lcom/android/settings/DataUsageSummary;->setPolicyLimitBytes(J)V
 
@@ -691,7 +670,6 @@
 
 .method static synthetic access$2100(Lcom/android/settings/DataUsageSummary;)Lcom/sec/android/touchwiz/widget/TwCheckBox;
     .locals 1
-    .param p0    # Lcom/android/settings/DataUsageSummary;
 
     iget-object v0, p0, Lcom/android/settings/DataUsageSummary;->mDisableAtLimit:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
@@ -700,7 +678,6 @@
 
 .method static synthetic access$2200(Lcom/android/settings/DataUsageSummary;)Lcom/sec/android/touchwiz/widget/TwCheckBox;
     .locals 1
-    .param p0    # Lcom/android/settings/DataUsageSummary;
 
     iget-object v0, p0, Lcom/android/settings/DataUsageSummary;->mAlertAtWarning:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
@@ -709,8 +686,6 @@
 
 .method static synthetic access$2300(Lcom/android/settings/DataUsageSummary;J)V
     .locals 0
-    .param p0    # Lcom/android/settings/DataUsageSummary;
-    .param p1    # J
 
     invoke-direct {p0, p1, p2}, Lcom/android/settings/DataUsageSummary;->setPolicyWarningBytes(J)V
 
@@ -719,8 +694,6 @@
 
 .method static synthetic access$2400(Lcom/android/settings/DataUsageSummary;I)V
     .locals 0
-    .param p0    # Lcom/android/settings/DataUsageSummary;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/settings/DataUsageSummary;->resetTimeData(I)V
 
@@ -729,7 +702,6 @@
 
 .method static synthetic access$2500(Lcom/android/settings/DataUsageSummary;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/settings/DataUsageSummary;
 
     iget-object v0, p0, Lcom/android/settings/DataUsageSummary;->mTotalReceive_menu:Landroid/view/View;
 
@@ -738,8 +710,6 @@
 
 .method static synthetic access$2600(Landroid/view/View;Ljava/lang/CharSequence;)V
     .locals 0
-    .param p0    # Landroid/view/View;
-    .param p1    # Ljava/lang/CharSequence;
 
     invoke-static {p0, p1}, Lcom/android/settings/DataUsageSummary;->setPreferenceSummary(Landroid/view/View;Ljava/lang/CharSequence;)V
 
@@ -748,7 +718,6 @@
 
 .method static synthetic access$2700(Lcom/android/settings/DataUsageSummary;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/settings/DataUsageSummary;
 
     iget-object v0, p0, Lcom/android/settings/DataUsageSummary;->mTotalSent_menu:Landroid/view/View;
 
@@ -757,7 +726,6 @@
 
 .method static synthetic access$2800(Lcom/android/settings/DataUsageSummary;)Lcom/sec/android/touchwiz/widget/TwCheckBox;
     .locals 1
-    .param p0    # Lcom/android/settings/DataUsageSummary;
 
     iget-object v0, p0, Lcom/android/settings/DataUsageSummary;->mAppRestrict:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
@@ -766,8 +734,6 @@
 
 .method static synthetic access$2900(Lcom/android/settings/DataUsageSummary;Z)V
     .locals 0
-    .param p0    # Lcom/android/settings/DataUsageSummary;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/settings/DataUsageSummary;->setAppRestrictBackground(Z)V
 
@@ -776,7 +742,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/DataUsageSummary;)V
     .locals 0
-    .param p0    # Lcom/android/settings/DataUsageSummary;
 
     invoke-direct {p0}, Lcom/android/settings/DataUsageSummary;->updateView()V
 
@@ -785,7 +750,6 @@
 
 .method static synthetic access$3000(Lcom/android/settings/DataUsageSummary;)Landroid/content/Intent;
     .locals 1
-    .param p0    # Lcom/android/settings/DataUsageSummary;
 
     iget-object v0, p0, Lcom/android/settings/DataUsageSummary;->mAppSettingsIntent:Landroid/content/Intent;
 
@@ -794,7 +758,6 @@
 
 .method static synthetic access$3100(Lcom/android/settings/DataUsageSummary;)Lcom/android/settings/net/UidDetailProvider;
     .locals 1
-    .param p0    # Lcom/android/settings/DataUsageSummary;
 
     iget-object v0, p0, Lcom/android/settings/DataUsageSummary;->mUidDetailProvider:Lcom/android/settings/net/UidDetailProvider;
 
@@ -803,7 +766,6 @@
 
 .method static synthetic access$3200(Lcom/android/settings/DataUsageSummary;)Landroid/widget/Spinner;
     .locals 1
-    .param p0    # Lcom/android/settings/DataUsageSummary;
 
     iget-object v0, p0, Lcom/android/settings/DataUsageSummary;->mCycleSpinner:Landroid/widget/Spinner;
 
@@ -812,7 +774,6 @@
 
 .method static synthetic access$3300(Lcom/android/settings/DataUsageSummary;)Lcom/android/settings/widget/ChartDataUsageView;
     .locals 1
-    .param p0    # Lcom/android/settings/DataUsageSummary;
 
     iget-object v0, p0, Lcom/android/settings/DataUsageSummary;->mChart:Lcom/android/settings/widget/ChartDataUsageView;
 
@@ -821,7 +782,6 @@
 
 .method static synthetic access$3400(Lcom/android/settings/DataUsageSummary;)V
     .locals 0
-    .param p0    # Lcom/android/settings/DataUsageSummary;
 
     invoke-direct {p0}, Lcom/android/settings/DataUsageSummary;->updateDetailData()V
 
@@ -830,7 +790,6 @@
 
 .method static synthetic access$3500(Lcom/android/settings/DataUsageSummary;)Landroid/net/INetworkStatsSession;
     .locals 1
-    .param p0    # Lcom/android/settings/DataUsageSummary;
 
     iget-object v0, p0, Lcom/android/settings/DataUsageSummary;->mStatsSession:Landroid/net/INetworkStatsSession;
 
@@ -839,7 +798,6 @@
 
 .method static synthetic access$3600(Lcom/android/settings/DataUsageSummary;)Lcom/android/settings/net/ChartData;
     .locals 1
-    .param p0    # Lcom/android/settings/DataUsageSummary;
 
     iget-object v0, p0, Lcom/android/settings/DataUsageSummary;->mChartData:Lcom/android/settings/net/ChartData;
 
@@ -848,8 +806,6 @@
 
 .method static synthetic access$3602(Lcom/android/settings/DataUsageSummary;Lcom/android/settings/net/ChartData;)Lcom/android/settings/net/ChartData;
     .locals 0
-    .param p0    # Lcom/android/settings/DataUsageSummary;
-    .param p1    # Lcom/android/settings/net/ChartData;
 
     iput-object p1, p0, Lcom/android/settings/DataUsageSummary;->mChartData:Lcom/android/settings/net/ChartData;
 
@@ -858,7 +814,6 @@
 
 .method static synthetic access$3700(Lcom/android/settings/DataUsageSummary;)V
     .locals 0
-    .param p0    # Lcom/android/settings/DataUsageSummary;
 
     invoke-direct {p0}, Lcom/android/settings/DataUsageSummary;->updateAppDetail()V
 
@@ -867,7 +822,6 @@
 
 .method static synthetic access$3800(Lcom/android/settings/DataUsageSummary;)Landroid/widget/ListView;
     .locals 1
-    .param p0    # Lcom/android/settings/DataUsageSummary;
 
     iget-object v0, p0, Lcom/android/settings/DataUsageSummary;->mListView:Landroid/widget/ListView;
 
@@ -876,7 +830,6 @@
 
 .method static synthetic access$3900(Lcom/android/settings/DataUsageSummary;)Lcom/android/settings/DataUsageSummary$DataUsageAdapter;
     .locals 1
-    .param p0    # Lcom/android/settings/DataUsageSummary;
 
     iget-object v0, p0, Lcom/android/settings/DataUsageSummary;->mAdapter:Lcom/android/settings/DataUsageSummary$DataUsageAdapter;
 
@@ -885,7 +838,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/DataUsageSummary;)Lcom/sec/android/touchwiz/widget/TwCheckBox;
     .locals 1
-    .param p0    # Lcom/android/settings/DataUsageSummary;
 
     iget-object v0, p0, Lcom/android/settings/DataUsageSummary;->mDataEnabled:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
@@ -894,7 +846,6 @@
 
 .method static synthetic access$4000(Lcom/android/settings/DataUsageSummary;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/DataUsageSummary;
 
     invoke-direct {p0}, Lcom/android/settings/DataUsageSummary;->isAppDetailMode()Z
 
@@ -905,7 +856,6 @@
 
 .method static synthetic access$4100(Lcom/android/settings/DataUsageSummary;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/android/settings/DataUsageSummary;
 
     iget-object v0, p0, Lcom/android/settings/DataUsageSummary;->mEmpty:Landroid/widget/TextView;
 
@@ -922,8 +872,6 @@
 
 .method static synthetic access$4300(Landroid/content/Context;J)Ljava/lang/String;
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
 
     invoke-static {p0, p1, p2}, Lcom/android/settings/DataUsageSummary;->formatFileSizeGB(Landroid/content/Context;J)Ljava/lang/String;
 
@@ -934,8 +882,6 @@
 
 .method static synthetic access$4400(Landroid/content/Context;J)Ljava/lang/String;
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
 
     invoke-static {p0, p1, p2}, Lcom/android/settings/DataUsageSummary;->formatFileSizeMB(Landroid/content/Context;J)Ljava/lang/String;
 
@@ -946,8 +892,6 @@
 
 .method static synthetic access$4502(Lcom/android/settings/DataUsageSummary;Lcom/android/settings/DataUsageSummary$AppItem;)Lcom/android/settings/DataUsageSummary$AppItem;
     .locals 0
-    .param p0    # Lcom/android/settings/DataUsageSummary;
-    .param p1    # Lcom/android/settings/DataUsageSummary$AppItem;
 
     iput-object p1, p0, Lcom/android/settings/DataUsageSummary;->mCurrentApp:Lcom/android/settings/DataUsageSummary$AppItem;
 
@@ -956,7 +900,6 @@
 
 .method static synthetic access$4600(Lcom/android/settings/DataUsageSummary;)Landroid/net/NetworkTemplate;
     .locals 1
-    .param p0    # Lcom/android/settings/DataUsageSummary;
 
     iget-object v0, p0, Lcom/android/settings/DataUsageSummary;->mTemplate:Landroid/net/NetworkTemplate;
 
@@ -965,7 +908,6 @@
 
 .method static synthetic access$4700(Lcom/android/settings/DataUsageSummary;)Lcom/android/settings/net/NetworkPolicyEditor;
     .locals 1
-    .param p0    # Lcom/android/settings/DataUsageSummary;
 
     iget-object v0, p0, Lcom/android/settings/DataUsageSummary;->mPolicyEditor:Lcom/android/settings/net/NetworkPolicyEditor;
 
@@ -990,7 +932,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/DataUsageSummary;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/settings/DataUsageSummary;
 
     iget-object v0, p0, Lcom/android/settings/DataUsageSummary;->mDataEnabledView:Landroid/view/View;
 
@@ -999,8 +940,6 @@
 
 .method static synthetic access$5000(Lcom/android/settings/DataUsageSummary;Z)V
     .locals 0
-    .param p0    # Lcom/android/settings/DataUsageSummary;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/settings/DataUsageSummary;->setDataRoaming(Z)V
 
@@ -1009,7 +948,6 @@
 
 .method static synthetic access$5200(Lcom/android/settings/DataUsageSummary;)V
     .locals 0
-    .param p0    # Lcom/android/settings/DataUsageSummary;
 
     invoke-direct {p0}, Lcom/android/settings/DataUsageSummary;->setBackgroundTrafficOn()V
 
@@ -1018,7 +956,6 @@
 
 .method static synthetic access$5300(Lcom/android/settings/DataUsageSummary;)V
     .locals 0
-    .param p0    # Lcom/android/settings/DataUsageSummary;
 
     invoke-direct {p0}, Lcom/android/settings/DataUsageSummary;->setBackgroundTrafficOff()V
 
@@ -1027,7 +964,6 @@
 
 .method static synthetic access$5400(Lcom/android/settings/DataUsageSummary;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/DataUsageSummary;
 
     invoke-direct {p0}, Lcom/android/settings/DataUsageSummary;->isMobileDataEnabled()Z
 
@@ -1038,8 +974,6 @@
 
 .method static synthetic access$5502(Lcom/android/settings/DataUsageSummary;Landroid/os/Messenger;)Landroid/os/Messenger;
     .locals 0
-    .param p0    # Lcom/android/settings/DataUsageSummary;
-    .param p1    # Landroid/os/Messenger;
 
     iput-object p1, p0, Lcom/android/settings/DataUsageSummary;->mServiceMessenger:Landroid/os/Messenger;
 
@@ -1048,9 +982,6 @@
 
 .method static synthetic access$5600(Lcom/android/settings/DataUsageSummary;II)V
     .locals 0
-    .param p0    # Lcom/android/settings/DataUsageSummary;
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/settings/DataUsageSummary;->getTimeData(II)V
 
@@ -1059,8 +990,6 @@
 
 .method static synthetic access$5702(Lcom/android/settings/DataUsageSummary;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/DataUsageSummary;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/DataUsageSummary;->mBound:Z
 
@@ -1069,8 +998,6 @@
 
 .method static synthetic access$5800(Lcom/android/settings/DataUsageSummary;[B)V
     .locals 0
-    .param p0    # Lcom/android/settings/DataUsageSummary;
-    .param p1    # [B
 
     invoke-direct {p0, p1}, Lcom/android/settings/DataUsageSummary;->setSummaryfortimedata([B)V
 
@@ -1079,7 +1006,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/DataUsageSummary;)Landroid/app/enterprise/EnterpriseDeviceManager;
     .locals 1
-    .param p0    # Lcom/android/settings/DataUsageSummary;
 
     iget-object v0, p0, Lcom/android/settings/DataUsageSummary;->mEDM:Landroid/app/enterprise/EnterpriseDeviceManager;
 
@@ -1088,7 +1014,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/DataUsageSummary;)Landroid/app/ProgressDialog;
     .locals 1
-    .param p0    # Lcom/android/settings/DataUsageSummary;
 
     iget-object v0, p0, Lcom/android/settings/DataUsageSummary;->loadingDialog:Landroid/app/ProgressDialog;
 
@@ -1097,8 +1022,6 @@
 
 .method static synthetic access$702(Lcom/android/settings/DataUsageSummary;Landroid/app/ProgressDialog;)Landroid/app/ProgressDialog;
     .locals 0
-    .param p0    # Lcom/android/settings/DataUsageSummary;
-    .param p1    # Landroid/app/ProgressDialog;
 
     iput-object p1, p0, Lcom/android/settings/DataUsageSummary;->loadingDialog:Landroid/app/ProgressDialog;
 
@@ -1107,7 +1030,6 @@
 
 .method static synthetic access$800(Lcom/android/settings/DataUsageSummary;)Landroid/net/INetworkStatsService;
     .locals 1
-    .param p0    # Lcom/android/settings/DataUsageSummary;
 
     iget-object v0, p0, Lcom/android/settings/DataUsageSummary;->mStatsService:Landroid/net/INetworkStatsService;
 
@@ -1116,7 +1038,6 @@
 
 .method static synthetic access$900(Lcom/android/settings/DataUsageSummary;)V
     .locals 0
-    .param p0    # Lcom/android/settings/DataUsageSummary;
 
     invoke-direct {p0}, Lcom/android/settings/DataUsageSummary;->updateBody()V
 
@@ -1139,8 +1060,6 @@
 
 .method private buildTabSpec(Ljava/lang/String;I)Landroid/widget/TabHost$TabSpec;
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/settings/DataUsageSummary;->mTabHost:Landroid/widget/TabHost;
 
@@ -2025,7 +1944,6 @@
 
 .method public static hasReadyEnt1Radio(Landroid/content/Context;)Z
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     const/16 v0, 0x1c
 
@@ -2038,8 +1956,6 @@
 
 .method private static hasReadyEnterpriseNetwork(Landroid/content/Context;I)Z
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     invoke-static {p0}, Landroid/net/ConnectivityManager;->from(Landroid/content/Context;)Landroid/net/ConnectivityManager;
 
@@ -2082,7 +1998,6 @@
 
 .method public static hasReadyMobile4gRadio(Landroid/content/Context;)Z
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -2196,7 +2111,6 @@
 
 .method public static hasWifiRadio(Landroid/content/Context;)Z
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Landroid/net/ConnectivityManager;->from(Landroid/content/Context;)Landroid/net/ConnectivityManager;
 
@@ -2261,8 +2175,6 @@
 
 .method private static insetListViewDrawables(Landroid/widget/ListView;I)V
     .locals 4
-    .param p0    # Landroid/widget/ListView;
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/widget/ListView;->getSelector()Landroid/graphics/drawable/Drawable;
 
@@ -2472,7 +2384,6 @@
 
 .method private isNetworkPolicyModifiable(Landroid/net/NetworkPolicy;)Z
     .locals 1
-    .param p1    # Landroid/net/NetworkPolicy;
 
     if-eqz p1, :cond_0
 
@@ -2635,7 +2546,6 @@
 
 .method private setAppRestrictBackground(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v1, p0, Lcom/android/settings/DataUsageSummary;->mCurrentApp:Lcom/android/settings/DataUsageSummary$AppItem;
 
@@ -2905,7 +2815,6 @@
 
 .method private setMobilePolicySplit(Z)V
     .locals 4
-    .param p1    # Z
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -2937,7 +2846,6 @@
 
 .method private setPolicyLimitBytes(J)V
     .locals 2
-    .param p1    # J
 
     iget-object v0, p0, Lcom/android/settings/DataUsageSummary;->mPolicyEditor:Lcom/android/settings/net/NetworkPolicyEditor;
 
@@ -2954,7 +2862,6 @@
 
 .method private setPolicyWarningBytes(J)V
     .locals 2
-    .param p1    # J
 
     iget-object v0, p0, Lcom/android/settings/DataUsageSummary;->mPolicyEditor:Lcom/android/settings/net/NetworkPolicyEditor;
 
@@ -5329,9 +5236,6 @@
 # virtual methods
 .method byteToLong([BII)J
     .locals 9
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
 
     const-wide/16 v1, 0x0
 
@@ -5374,7 +5278,6 @@
 
 .method public hasEthernet(Landroid/content/Context;)Z
     .locals 11
-    .param p1    # Landroid/content/Context;
 
     invoke-static {p1}, Landroid/net/ConnectivityManager;->from(Landroid/content/Context;)Landroid/net/ConnectivityManager;
 
@@ -5463,7 +5366,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 1
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -5488,7 +5390,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 10
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v9, 0x0
 

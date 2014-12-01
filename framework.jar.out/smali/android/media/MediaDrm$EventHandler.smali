@@ -23,8 +23,6 @@
 # direct methods
 .method public constructor <init>(Landroid/media/MediaDrm;Landroid/media/MediaDrm;Landroid/os/Looper;)V
     .locals 0
-    .param p2    # Landroid/media/MediaDrm;
-    .param p3    # Landroid/os/Looper;
 
     iput-object p1, p0, Landroid/media/MediaDrm$EventHandler;->this$0:Landroid/media/MediaDrm;
 
@@ -39,7 +37,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 7
-    .param p1    # Landroid/os/Message;
 
     iget-object v0, p0, Landroid/media/MediaDrm$EventHandler;->mMediaDrm:Landroid/media/MediaDrm;
 

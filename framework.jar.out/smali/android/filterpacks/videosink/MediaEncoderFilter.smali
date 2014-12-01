@@ -168,7 +168,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 12
-    .param p1    # Ljava/lang/String;
 
     const-wide/16 v10, 0x0
 
@@ -279,7 +278,6 @@
 
 .method private startRecording(Landroid/filterfw/core/FilterContext;)V
     .locals 11
-    .param p1    # Landroid/filterfw/core/FilterContext;
 
     const/4 v6, 0x1
 
@@ -444,7 +442,6 @@
 
 .method private stopRecording(Landroid/filterfw/core/FilterContext;)V
     .locals 8
-    .param p1    # Landroid/filterfw/core/FilterContext;
 
     const/4 v7, 0x0
 
@@ -781,7 +778,6 @@
 # virtual methods
 .method public close(Landroid/filterfw/core/FilterContext;)V
     .locals 2
-    .param p1    # Landroid/filterfw/core/FilterContext;
 
     iget-boolean v0, p0, Landroid/filterpacks/videosink/MediaEncoderFilter;->mLogVerbose:Z
 
@@ -806,8 +802,6 @@
 
 .method public fieldPortValueUpdated(Ljava/lang/String;Landroid/filterfw/core/FilterContext;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/filterfw/core/FilterContext;
 
     iget-boolean v0, p0, Landroid/filterpacks/videosink/MediaEncoderFilter;->mLogVerbose:Z
 
@@ -895,7 +889,6 @@
 
 .method public open(Landroid/filterfw/core/FilterContext;)V
     .locals 2
-    .param p1    # Landroid/filterfw/core/FilterContext;
 
     iget-boolean v0, p0, Landroid/filterpacks/videosink/MediaEncoderFilter;->mLogVerbose:Z
 
@@ -922,7 +915,6 @@
 
 .method public prepare(Landroid/filterfw/core/FilterContext;)V
     .locals 2
-    .param p1    # Landroid/filterfw/core/FilterContext;
 
     iget-boolean v0, p0, Landroid/filterpacks/videosink/MediaEncoderFilter;->mLogVerbose:Z
 
@@ -950,7 +942,6 @@
 
 .method public process(Landroid/filterfw/core/FilterContext;)V
     .locals 4
-    .param p1    # Landroid/filterfw/core/FilterContext;
 
     invoke-virtual {p1}, Landroid/filterfw/core/FilterContext;->getGLEnvironment()Landroid/filterfw/core/GLEnvironment;
 
@@ -1060,7 +1051,6 @@
 
 .method public skipFrameAndModifyTimestamp(J)Z
     .locals 9
-    .param p1    # J
 
     const-wide/32 v7, 0x3b9aca00
 
@@ -1281,7 +1271,6 @@
 
 .method public tearDown(Landroid/filterfw/core/FilterContext;)V
     .locals 1
-    .param p1    # Landroid/filterfw/core/FilterContext;
 
     iget-object v0, p0, Landroid/filterpacks/videosink/MediaEncoderFilter;->mMediaRecorder:Landroid/media/MediaRecorder;
 

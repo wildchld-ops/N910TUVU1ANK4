@@ -72,7 +72,6 @@
 # virtual methods
 .method public final isInterruptModeType(I)Z
     .locals 2
-    .param p1    # I
 
     invoke-static {}, Landroid/hardware/contextaware/ContextList;->getInstance()Landroid/hardware/contextaware/ContextList;
 
@@ -91,7 +90,6 @@
 
 .method public final isInterruptModeType(Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x0
 

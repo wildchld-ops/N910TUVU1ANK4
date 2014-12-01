@@ -33,9 +33,6 @@
 # direct methods
 .method public constructor <init>(Landroid/database/Cursor;Landroid/database/IContentObserver;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Landroid/database/Cursor;
-    .param p2    # Landroid/database/IContentObserver;
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0}, Landroid/database/BulkCursorNative;-><init>()V
 
@@ -110,7 +107,6 @@
 
 .method private createAndRegisterObserverProxyLocked(Landroid/database/IContentObserver;)V
     .locals 2
-    .param p1    # Landroid/database/IContentObserver;
 
     iget-object v0, p0, Landroid/database/CursorToBulkCursorAdaptor;->mObserver:Landroid/database/CursorToBulkCursorAdaptor$ContentObserverProxy;
 
@@ -395,7 +391,6 @@
 
 .method public getWindow(I)Landroid/database/CursorWindow;
     .locals 4
-    .param p1    # I
 
     iget-object v2, p0, Landroid/database/CursorToBulkCursorAdaptor;->mLock:Ljava/lang/Object;
 
@@ -504,7 +499,6 @@
 
 .method public onMove(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Landroid/database/CursorToBulkCursorAdaptor;->mLock:Ljava/lang/Object;
 
@@ -539,7 +533,6 @@
 
 .method public requery(Landroid/database/IContentObserver;)I
     .locals 5
-    .param p1    # Landroid/database/IContentObserver;
 
     iget-object v3, p0, Landroid/database/CursorToBulkCursorAdaptor;->mLock:Ljava/lang/Object;
 
@@ -641,7 +634,6 @@
 
 .method public respond(Landroid/os/Bundle;)Landroid/os/Bundle;
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     iget-object v1, p0, Landroid/database/CursorToBulkCursorAdaptor;->mLock:Ljava/lang/Object;
 

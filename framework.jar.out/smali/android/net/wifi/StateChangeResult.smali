@@ -16,10 +16,6 @@
 # direct methods
 .method constructor <init>(ILandroid/net/wifi/WifiSsid;Ljava/lang/String;Landroid/net/wifi/SupplicantState;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Landroid/net/wifi/WifiSsid;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Landroid/net/wifi/SupplicantState;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

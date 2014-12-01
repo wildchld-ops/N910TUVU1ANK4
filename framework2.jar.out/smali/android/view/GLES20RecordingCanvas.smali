@@ -49,7 +49,6 @@
 
 .method static obtain(Landroid/view/GLES20DisplayList;)Landroid/view/GLES20RecordingCanvas;
     .locals 2
-    .param p0    # Landroid/view/GLES20DisplayList;
 
     sget-object v1, Landroid/view/GLES20RecordingCanvas;->sPool:Landroid/util/Pools$SynchronizedPool;
 
@@ -75,9 +74,6 @@
 # virtual methods
 .method public drawDisplayList(Landroid/view/DisplayList;Landroid/graphics/Rect;I)I
     .locals 2
-    .param p1    # Landroid/view/DisplayList;
-    .param p2    # Landroid/graphics/Rect;
-    .param p3    # I
 
     invoke-super {p0, p1, p2, p3}, Landroid/view/GLES20Canvas;->drawDisplayList(Landroid/view/DisplayList;Landroid/graphics/Rect;I)I
 
@@ -96,7 +92,6 @@
 
 .method end(I)I
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/view/GLES20Canvas;->getDisplayList(I)I
 

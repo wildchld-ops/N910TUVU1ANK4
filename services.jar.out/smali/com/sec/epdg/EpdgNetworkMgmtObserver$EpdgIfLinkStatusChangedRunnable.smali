@@ -28,8 +28,6 @@
 # direct methods
 .method public constructor <init>(Lcom/sec/epdg/EpdgNetworkMgmtObserver;Ljava/lang/String;Z)V
     .locals 1
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     iput-object p1, p0, Lcom/sec/epdg/EpdgNetworkMgmtObserver$EpdgIfLinkStatusChangedRunnable;->this$0:Lcom/sec/epdg/EpdgNetworkMgmtObserver;
 

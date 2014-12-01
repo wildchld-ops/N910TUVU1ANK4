@@ -32,8 +32,6 @@
 # direct methods
 .method constructor <init>(Landroid/content/Context;Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/view/View;
 
     invoke-direct {p0, p1}, Landroid/view/ViewGroup;-><init>(Landroid/content/Context;)V
 
@@ -68,7 +66,6 @@
 # virtual methods
 .method public add(Landroid/graphics/drawable/Drawable;)V
     .locals 1
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     iget-object v0, p0, Landroid/view/ViewOverlay$OverlayViewGroup;->mDrawables:Ljava/util/ArrayList;
 
@@ -107,7 +104,6 @@
 
 .method public add(Landroid/view/View;)V
     .locals 7
-    .param p1    # Landroid/view/View;
 
     const/4 v6, 0x2
 
@@ -222,7 +218,6 @@
 
 .method protected dispatchDraw(Landroid/graphics/Canvas;)V
     .locals 3
-    .param p1    # Landroid/graphics/Canvas;
 
     invoke-super {p0, p1}, Landroid/view/ViewGroup;->dispatchDraw(Landroid/graphics/Canvas;)V
 
@@ -284,10 +279,6 @@
 
 .method public invalidate(IIII)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-super {p0, p1, p2, p3, p4}, Landroid/view/View;->invalidate(IIII)V
 
@@ -305,7 +296,6 @@
 
 .method public invalidate(Landroid/graphics/Rect;)V
     .locals 1
-    .param p1    # Landroid/graphics/Rect;
 
     invoke-super {p0, p1}, Landroid/view/View;->invalidate(Landroid/graphics/Rect;)V
 
@@ -323,7 +313,6 @@
 
 .method invalidate(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-super {p0, p1}, Landroid/view/View;->invalidate(Z)V
 
@@ -341,8 +330,6 @@
 
 .method public invalidateChildFast(Landroid/view/View;Landroid/graphics/Rect;)V
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/graphics/Rect;
 
     iget-object v2, p0, Landroid/view/ViewOverlay$OverlayViewGroup;->mHostView:Landroid/view/View;
 
@@ -377,8 +364,6 @@
 
 .method public invalidateChildInParent([ILandroid/graphics/Rect;)Landroid/view/ViewParent;
     .locals 4
-    .param p1    # [I
-    .param p2    # Landroid/graphics/Rect;
 
     const/4 v3, 0x1
 
@@ -428,9 +413,6 @@
 
 .method protected invalidateChildInParentFast(IILandroid/graphics/Rect;)Landroid/view/ViewParent;
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/graphics/Rect;
 
     iget-object v0, p0, Landroid/view/ViewOverlay$OverlayViewGroup;->mHostView:Landroid/view/View;
 
@@ -457,7 +439,6 @@
 
 .method public invalidateDrawable(Landroid/graphics/drawable/Drawable;)V
     .locals 1
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {p1}, Landroid/graphics/drawable/Drawable;->getBounds()Landroid/graphics/Rect;
 
@@ -504,8 +485,6 @@
 
 .method invalidateViewProperty(ZZ)V
     .locals 1
-    .param p1    # Z
-    .param p2    # Z
 
     invoke-super {p0, p1, p2}, Landroid/view/View;->invalidateViewProperty(ZZ)V
 
@@ -556,18 +535,12 @@
 
 .method protected onLayout(ZIIII)V
     .locals 0
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     return-void
 .end method
 
 .method public remove(Landroid/graphics/drawable/Drawable;)V
     .locals 1
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     iget-object v0, p0, Landroid/view/ViewOverlay$OverlayViewGroup;->mDrawables:Ljava/util/ArrayList;
 
@@ -593,7 +566,6 @@
 
 .method public remove(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     invoke-super {p0, p1}, Landroid/view/ViewGroup;->removeView(Landroid/view/View;)V
 

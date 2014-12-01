@@ -55,7 +55,6 @@
 
 .method public constructor <init>(Landroid/view/View;)V
     .locals 3
-    .param p1    # Landroid/view/View;
 
     const/high16 v2, -0x80000000
 
@@ -121,8 +120,6 @@
 
 .method static synthetic access$100(Landroid/support/v4/widget/ExploreByTouchHelper;I)Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompat;
     .locals 1
-    .param p0    # Landroid/support/v4/widget/ExploreByTouchHelper;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/support/v4/widget/ExploreByTouchHelper;->createNode(I)Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompat;
 
@@ -133,10 +130,6 @@
 
 .method static synthetic access$200(Landroid/support/v4/widget/ExploreByTouchHelper;IILandroid/os/Bundle;)Z
     .locals 1
-    .param p0    # Landroid/support/v4/widget/ExploreByTouchHelper;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/os/Bundle;
 
     invoke-direct {p0, p1, p2, p3}, Landroid/support/v4/widget/ExploreByTouchHelper;->performAction(IILandroid/os/Bundle;)Z
 
@@ -147,7 +140,6 @@
 
 .method private clearAccessibilityFocus(I)Z
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/support/v4/widget/ExploreByTouchHelper;->isAccessibilityFocused(I)Z
 
@@ -180,8 +172,6 @@
 
 .method private createEvent(II)Landroid/view/accessibility/AccessibilityEvent;
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -209,8 +199,6 @@
 
 .method private createEventForChild(II)Landroid/view/accessibility/AccessibilityEvent;
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     invoke-static {p2}, Landroid/view/accessibility/AccessibilityEvent;->obtain(I)Landroid/view/accessibility/AccessibilityEvent;
 
@@ -276,7 +264,6 @@
 
 .method private createEventForHost(I)Landroid/view/accessibility/AccessibilityEvent;
     .locals 2
-    .param p1    # I
 
     invoke-static {p1}, Landroid/view/accessibility/AccessibilityEvent;->obtain(I)Landroid/view/accessibility/AccessibilityEvent;
 
@@ -291,7 +278,6 @@
 
 .method private createNode(I)Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompat;
     .locals 1
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -319,7 +305,6 @@
 
 .method private createNodeForChild(I)Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompat;
     .locals 8
-    .param p1    # I
 
     const/4 v7, 0x0
 
@@ -547,7 +532,6 @@
 
 .method private intersectVisibleToUser(Landroid/graphics/Rect;)Z
     .locals 5
-    .param p1    # Landroid/graphics/Rect;
 
     const/4 v2, 0x0
 
@@ -633,7 +617,6 @@
 
 .method private isAccessibilityFocused(I)Z
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/support/v4/widget/ExploreByTouchHelper;->mFocusedVirtualViewId:I
 
@@ -652,9 +635,6 @@
 
 .method private manageFocusForChild(IILandroid/os/Bundle;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/os/Bundle;
 
     sparse-switch p2, :sswitch_data_0
 
@@ -688,9 +668,6 @@
 
 .method private performAction(IILandroid/os/Bundle;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/os/Bundle;
 
     packed-switch p1, :pswitch_data_0
 
@@ -718,9 +695,6 @@
 
 .method private performActionForChild(IILandroid/os/Bundle;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/os/Bundle;
 
     sparse-switch p2, :sswitch_data_0
 
@@ -749,8 +723,6 @@
 
 .method private performActionForHost(ILandroid/os/Bundle;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     iget-object v0, p0, Landroid/support/v4/widget/ExploreByTouchHelper;->mView:Landroid/view/View;
 
@@ -763,7 +735,6 @@
 
 .method private requestAccessibilityFocus(I)Z
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -811,7 +782,6 @@
 
 .method private updateHoveredVirtualView(I)V
     .locals 2
-    .param p1    # I
 
     iget v1, p0, Landroid/support/v4/widget/ExploreByTouchHelper;->mHoveredVirtualViewId:I
 
@@ -840,7 +810,6 @@
 # virtual methods
 .method public dispatchHoverEvent(Landroid/view/MotionEvent;)Z
     .locals 6
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v1, 0x1
 
@@ -929,7 +898,6 @@
 
 .method public getAccessibilityNodeProvider(Landroid/view/View;)Landroid/support/v4/view/accessibility/AccessibilityNodeProviderCompat;
     .locals 2
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Landroid/support/v4/widget/ExploreByTouchHelper;->mNodeProvider:Landroid/support/v4/widget/ExploreByTouchHelper$ExploreByTouchNodeProvider;
 
@@ -984,7 +952,6 @@
 
 .method public invalidateVirtualView(I)V
     .locals 1
-    .param p1    # I
 
     const/16 v0, 0x800
 
@@ -1004,8 +971,6 @@
 
 .method public sendEventForVirtualView(II)Z
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     const/4 v2, 0x0
 

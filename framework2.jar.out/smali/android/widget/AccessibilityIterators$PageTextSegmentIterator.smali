@@ -62,7 +62,6 @@
 # virtual methods
 .method public following(I)[I
     .locals 12
-    .param p1    # I
 
     const/4 v9, 0x0
 
@@ -194,7 +193,6 @@
 
 .method public initialize(Landroid/widget/TextView;)V
     .locals 2
-    .param p1    # Landroid/widget/TextView;
 
     invoke-virtual {p1}, Landroid/widget/TextView;->getIterableTextForAccessibility()Ljava/lang/CharSequence;
 
@@ -215,7 +213,6 @@
 
 .method public preceding(I)[I
     .locals 11
-    .param p1    # I
 
     const/4 v8, 0x0
 

@@ -53,7 +53,7 @@
 
     const/16 v1, 0x64
 
-    invoke-virtual {v0, v1}, Landroid/app/Activity;->removeDialog(I)V
+    invoke-virtual {v0, v1}, Lcom/android/phone/MobileNetworkSettings;->removeDialog(I)V
 
     return-void
 .end method

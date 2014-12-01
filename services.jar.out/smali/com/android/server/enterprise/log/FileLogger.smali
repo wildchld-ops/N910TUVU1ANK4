@@ -78,7 +78,6 @@
 
 .method constructor <init>(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x1
 
@@ -131,8 +130,6 @@
 
 .method static synthetic access$100(Lcom/android/server/enterprise/log/FileLogger;Ljava/util/concurrent/CountDownLatch;)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/log/FileLogger;
-    .param p1    # Ljava/util/concurrent/CountDownLatch;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/log/FileLogger;->startLogFileWriter(Ljava/util/concurrent/CountDownLatch;)V
 
@@ -141,7 +138,6 @@
 
 .method static synthetic access$200(Lcom/android/server/enterprise/log/FileLogger;)Ljava/util/concurrent/ArrayBlockingQueue;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/log/FileLogger;
 
     iget-object v0, p0, Lcom/android/server/enterprise/log/FileLogger;->consumerQueue:Ljava/util/concurrent/ArrayBlockingQueue;
 
@@ -150,7 +146,6 @@
 
 .method static synthetic access$300(Lcom/android/server/enterprise/log/FileLogger;)Ljava/util/concurrent/ArrayBlockingQueue;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/log/FileLogger;
 
     iget-object v0, p0, Lcom/android/server/enterprise/log/FileLogger;->producerQueue:Ljava/util/concurrent/ArrayBlockingQueue;
 
@@ -159,7 +154,6 @@
 
 .method static synthetic access$500(J)J
     .locals 2
-    .param p0    # J
 
     invoke-static {p0, p1}, Lcom/android/server/enterprise/log/FileLogger;->getDayBoundaryTimestamp(J)J
 
@@ -170,7 +164,6 @@
 
 .method static synthetic access$600(Lcom/android/server/enterprise/log/FileLogger;)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/log/FileLogger;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/log/FileLogger;->cleanupLogs()V
 
@@ -179,8 +172,6 @@
 
 .method static synthetic access$702(Lcom/android/server/enterprise/log/FileLogger;Lcom/android/server/enterprise/log/FileLogger$LogFileWriter;)Lcom/android/server/enterprise/log/FileLogger$LogFileWriter;
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/log/FileLogger;
-    .param p1    # Lcom/android/server/enterprise/log/FileLogger$LogFileWriter;
 
     iput-object p1, p0, Lcom/android/server/enterprise/log/FileLogger;->mLogFileWriter:Lcom/android/server/enterprise/log/FileLogger$LogFileWriter;
 
@@ -236,7 +227,6 @@
 
 .method private static final getDayBoundaryTimestamp(J)J
     .locals 2
-    .param p0    # J
 
     const-wide/16 v0, 0x3e8
 
@@ -253,7 +243,6 @@
 
 .method private startLogFileWriter(Ljava/util/concurrent/CountDownLatch;)V
     .locals 3
-    .param p1    # Ljava/util/concurrent/CountDownLatch;
 
     const/4 v2, 0x0
 
@@ -315,7 +304,6 @@
 # virtual methods
 .method public copyLogs(Ljava/io/FileOutputStream;)V
     .locals 8
-    .param p1    # Ljava/io/FileOutputStream;
 
     new-instance v1, Ljava/io/File;
 
@@ -414,9 +402,6 @@
 
 .method public log(ILjava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 

@@ -33,8 +33,6 @@
 # virtual methods
 .method public packageDeleted(Ljava/lang/String;I)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     iget-object v1, p0, Lcom/android/settings/applications/UninstallMultipleScreen$PackageDeleteObserver;->this$0:Lcom/android/settings/applications/UninstallMultipleScreen;
 

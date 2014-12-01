@@ -156,7 +156,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     const/4 v2, 0x0
 
@@ -201,8 +200,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v2, 0x0
 
@@ -249,9 +246,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v2, 0x0
 
@@ -298,8 +292,6 @@
 
 .method private alignBaseline(Landroid/view/View;Landroid/widget/RelativeLayout$LayoutParams;)V
     .locals 10
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/widget/RelativeLayout$LayoutParams;
 
     const/4 v8, 0x4
 
@@ -430,9 +422,6 @@
 
 .method private applyHorizontalSizeRules(Landroid/widget/RelativeLayout$LayoutParams;I[I)V
     .locals 7
-    .param p1    # Landroid/widget/RelativeLayout$LayoutParams;
-    .param p2    # I
-    .param p3    # [I
 
     const/4 v6, 0x7
 
@@ -667,8 +656,6 @@
 
 .method private applyVerticalSizeRules(Landroid/widget/RelativeLayout$LayoutParams;I)V
     .locals 8
-    .param p1    # Landroid/widget/RelativeLayout$LayoutParams;
-    .param p2    # I
 
     const/16 v7, 0x8
 
@@ -918,9 +905,6 @@
 
 .method private static centerHorizontal(Landroid/view/View;Landroid/widget/RelativeLayout$LayoutParams;I)V
     .locals 3
-    .param p0    # Landroid/view/View;
-    .param p1    # Landroid/widget/RelativeLayout$LayoutParams;
-    .param p2    # I
 
     invoke-virtual {p0}, Landroid/view/View;->getMeasuredWidth()I
 
@@ -943,9 +927,6 @@
 
 .method private static centerVertical(Landroid/view/View;Landroid/widget/RelativeLayout$LayoutParams;I)V
     .locals 3
-    .param p0    # Landroid/view/View;
-    .param p1    # Landroid/widget/RelativeLayout$LayoutParams;
-    .param p2    # I
 
     invoke-virtual {p0}, Landroid/view/View;->getMeasuredHeight()I
 
@@ -968,14 +949,6 @@
 
 .method private getChildMeasureSpec(IIIIIIII)I
     .locals 7
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
 
     const/4 v6, 0x0
 
@@ -1094,8 +1067,6 @@
 
 .method private getRelatedView([II)Landroid/view/View;
     .locals 6
-    .param p1    # [I
-    .param p2    # I
 
     const/4 v4, 0x0
 
@@ -1184,8 +1155,6 @@
 
 .method private getRelatedViewBaseline([II)I
     .locals 2
-    .param p1    # [I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Landroid/widget/RelativeLayout;->getRelatedView([II)Landroid/view/View;
 
@@ -1208,8 +1177,6 @@
 
 .method private getRelatedViewParams([II)Landroid/widget/RelativeLayout$LayoutParams;
     .locals 3
-    .param p1    # [I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Landroid/widget/RelativeLayout;->getRelatedView([II)Landroid/view/View;
 
@@ -1242,8 +1209,6 @@
 
 .method private initFromAttributes(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     sget-object v1, Lcom/android/internal/R$styleable;->RelativeLayout:[I
 
@@ -1278,10 +1243,6 @@
 
 .method private measureChild(Landroid/view/View;Landroid/widget/RelativeLayout$LayoutParams;II)V
     .locals 11
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/widget/RelativeLayout$LayoutParams;
-    .param p3    # I
-    .param p4    # I
 
     # getter for: Landroid/widget/RelativeLayout$LayoutParams;->mLeft:I
     invoke-static {p2}, Landroid/widget/RelativeLayout$LayoutParams;->access$100(Landroid/widget/RelativeLayout$LayoutParams;)I
@@ -1346,10 +1307,6 @@
 
 .method private measureChildHorizontal(Landroid/view/View;Landroid/widget/RelativeLayout$LayoutParams;II)V
     .locals 12
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/widget/RelativeLayout$LayoutParams;
-    .param p3    # I
-    .param p4    # I
 
     # getter for: Landroid/widget/RelativeLayout$LayoutParams;->mLeft:I
     invoke-static {p2}, Landroid/widget/RelativeLayout$LayoutParams;->access$100(Landroid/widget/RelativeLayout$LayoutParams;)I
@@ -1469,10 +1426,6 @@
 
 .method private positionChildHorizontal(Landroid/view/View;Landroid/widget/RelativeLayout$LayoutParams;IZ)Z
     .locals 5
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/widget/RelativeLayout$LayoutParams;
-    .param p3    # I
-    .param p4    # Z
 
     const/4 v2, 0x1
 
@@ -1682,10 +1635,6 @@
 
 .method private positionChildVertical(Landroid/view/View;Landroid/widget/RelativeLayout$LayoutParams;IZ)Z
     .locals 4
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/widget/RelativeLayout$LayoutParams;
-    .param p3    # I
-    .param p4    # Z
 
     const/4 v1, 0x1
 
@@ -1857,7 +1806,6 @@
 
 .method private queryCompatibilityModes(Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     const/4 v2, 0x1
 
@@ -1976,7 +1924,6 @@
 # virtual methods
 .method protected checkLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Z
     .locals 1
-    .param p1    # Landroid/view/ViewGroup$LayoutParams;
 
     instance-of v0, p1, Landroid/widget/RelativeLayout$LayoutParams;
 
@@ -1985,7 +1932,6 @@
 
 .method public dispatchPopulateAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)Z
     .locals 7
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
 
     iget-object v4, p0, Landroid/widget/RelativeLayout;->mTopToBottomLeftToRightSet:Ljava/util/SortedSet;
 
@@ -2090,7 +2036,6 @@
 
 .method public bridge synthetic generateLayoutParams(Landroid/util/AttributeSet;)Landroid/view/ViewGroup$LayoutParams;
     .locals 1
-    .param p1    # Landroid/util/AttributeSet;
 
     invoke-virtual {p0, p1}, Landroid/widget/RelativeLayout;->generateLayoutParams(Landroid/util/AttributeSet;)Landroid/widget/RelativeLayout$LayoutParams;
 
@@ -2101,7 +2046,6 @@
 
 .method protected generateLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Landroid/view/ViewGroup$LayoutParams;
     .locals 1
-    .param p1    # Landroid/view/ViewGroup$LayoutParams;
 
     new-instance v0, Landroid/widget/RelativeLayout$LayoutParams;
 
@@ -2112,7 +2056,6 @@
 
 .method public generateLayoutParams(Landroid/util/AttributeSet;)Landroid/widget/RelativeLayout$LayoutParams;
     .locals 2
-    .param p1    # Landroid/util/AttributeSet;
 
     new-instance v0, Landroid/widget/RelativeLayout$LayoutParams;
 
@@ -2159,7 +2102,6 @@
 
 .method public onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
     .locals 1
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
 
     invoke-super {p0, p1}, Landroid/view/View;->onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
 
@@ -2176,7 +2118,6 @@
 
 .method public onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
     .locals 1
-    .param p1    # Landroid/view/accessibility/AccessibilityNodeInfo;
 
     invoke-super {p0, p1}, Landroid/view/View;->onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
 
@@ -2193,11 +2134,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 8
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getChildCount()I
 
@@ -2259,8 +2195,6 @@
 
 .method protected onMeasure(II)V
     .locals 43
-    .param p1    # I
-    .param p2    # I
 
     move-object/from16 v0, p0
 
@@ -3494,7 +3428,6 @@
 
 .method public setGravity(I)V
     .locals 1
-    .param p1    # I
     .annotation runtime Landroid/view/RemotableViewMethod;
     .end annotation
 
@@ -3530,7 +3463,6 @@
 
 .method public setHorizontalGravity(I)V
     .locals 3
-    .param p1    # I
     .annotation runtime Landroid/view/RemotableViewMethod;
     .end annotation
 
@@ -3562,7 +3494,6 @@
 
 .method public setIgnoreGravity(I)V
     .locals 0
-    .param p1    # I
     .annotation runtime Landroid/view/RemotableViewMethod;
     .end annotation
 
@@ -3573,7 +3504,6 @@
 
 .method public setVerticalGravity(I)V
     .locals 2
-    .param p1    # I
     .annotation runtime Landroid/view/RemotableViewMethod;
     .end annotation
 

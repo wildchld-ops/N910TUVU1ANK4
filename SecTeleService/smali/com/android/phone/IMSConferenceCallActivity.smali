@@ -364,7 +364,7 @@
     invoke-static {v1, p1, v0}, Lcom/android/phone/PhoneUtils;->addUserToConfCall(Lcom/android/internal/telephony/Phone;Ljava/lang/String;Z)I
 
     :goto_2
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/IMSConferenceCallActivity;->finish()V
 
     return-void
 
@@ -462,7 +462,7 @@
 
     if-eqz v1, :cond_6
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/IMSConferenceCallActivity;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -487,7 +487,7 @@
 
     const v3, 0x7f09097d
 
-    invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {v2, v3}, Lcom/android/phone/PhoneGlobals;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
@@ -496,7 +496,7 @@
     goto :goto_3
 
     :cond_6
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/IMSConferenceCallActivity;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -519,7 +519,7 @@
 
     invoke-static {v0}, Lcom/android/phone/IMSConferenceCallMgr;->setDirectConfCall(Z)V
 
-    invoke-virtual {p0, v1}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v1}, Lcom/android/phone/IMSConferenceCallActivity;->startActivity(Landroid/content/Intent;)V
 
     goto/16 :goto_2
 .end method
@@ -537,9 +537,9 @@
 
     const v0, 0x7f04004b
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->setContentView(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/IMSConferenceCallActivity;->setContentView(I)V
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getActionBar()Landroid/app/ActionBar;
+    invoke-virtual {p0}, Lcom/android/phone/IMSConferenceCallActivity;->getActionBar()Landroid/app/ActionBar;
 
     move-result-object v0
 
@@ -547,7 +547,7 @@
 
     const v0, 0x7f0a0110
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/phone/IMSConferenceCallActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -555,7 +555,7 @@
 
     const v0, 0x7f0a0118
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/phone/IMSConferenceCallActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -583,7 +583,7 @@
 
     const v0, 0x7f0a0119
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/phone/IMSConferenceCallActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -593,7 +593,7 @@
 
     const v0, 0x7f0a011a
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/phone/IMSConferenceCallActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -601,7 +601,7 @@
 
     const v0, 0x7f0a0113
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/phone/IMSConferenceCallActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -611,11 +611,11 @@
 
     iget-object v0, p0, Lcom/android/phone/IMSConferenceCallActivity;->mContactButton:Landroid/widget/ImageButton;
 
-    invoke-virtual {v0, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v0, p0}, Landroid/widget/ImageButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     const v0, 0x7f0a0114
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/phone/IMSConferenceCallActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -625,11 +625,11 @@
 
     iget-object v0, p0, Lcom/android/phone/IMSConferenceCallActivity;->mPlusButton:Landroid/widget/ImageButton;
 
-    invoke-virtual {v0, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v0, p0}, Landroid/widget/ImageButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     const v0, 0x7f0a0117
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/phone/IMSConferenceCallActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -639,13 +639,13 @@
 
     iget-object v0, p0, Lcom/android/phone/IMSConferenceCallActivity;->mButton_Send:Landroid/widget/Button;
 
-    invoke-virtual {v0, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v0, p0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     invoke-direct {p0}, Lcom/android/phone/IMSConferenceCallActivity;->show_SendButton()V
 
     const v0, 0x7f0a0112
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/phone/IMSConferenceCallActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -659,7 +659,7 @@
 
     const-string v0, "input_method"
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Lcom/android/phone/IMSConferenceCallActivity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -671,13 +671,13 @@
 
     iget-object v1, p0, Lcom/android/phone/IMSConferenceCallActivity;->textwatcher:Landroid/text/TextWatcher;
 
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->addTextChangedListener(Landroid/text/TextWatcher;)V
+    invoke-virtual {v0, v1}, Landroid/widget/AutoCompleteTextView;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
     iget-object v0, p0, Lcom/android/phone/IMSConferenceCallActivity;->mRecipientsText:Landroid/widget/AutoCompleteTextView;
 
     const v1, 0x10000006
 
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setImeOptions(I)V
+    invoke-virtual {v0, v1}, Landroid/widget/AutoCompleteTextView;->setImeOptions(I)V
 
     iget-object v0, p0, Lcom/android/phone/IMSConferenceCallActivity;->mRecipientsText:Landroid/widget/AutoCompleteTextView;
 
@@ -687,7 +687,7 @@
 
     iget-object v0, p0, Lcom/android/phone/IMSConferenceCallActivity;->mRecipientsText:Landroid/widget/AutoCompleteTextView;
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/IMSConferenceCallActivity;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -697,11 +697,11 @@
 
     move-result v1
 
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setHintTextColor(I)V
+    invoke-virtual {v0, v1}, Landroid/widget/AutoCompleteTextView;->setHintTextColor(I)V
 
     iget-object v0, p0, Lcom/android/phone/IMSConferenceCallActivity;->mRecipientsText:Landroid/widget/AutoCompleteTextView;
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/IMSConferenceCallActivity;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -711,9 +711,9 @@
 
     move-result v1
 
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextColor(I)V
+    invoke-virtual {v0, v1}, Landroid/widget/AutoCompleteTextView;->setTextColor(I)V
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/IMSConferenceCallActivity;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -773,7 +773,7 @@
 
     invoke-direct {v1, p0}, Lcom/android/phone/IMSConferenceCallActivity$3;-><init>(Lcom/android/phone/IMSConferenceCallActivity;)V
 
-    invoke-virtual {v0, v1}, Landroid/widget/AdapterView;->setOnItemLongClickListener(Landroid/widget/AdapterView$OnItemLongClickListener;)V
+    invoke-virtual {v0, v1}, Landroid/widget/ListView;->setOnItemLongClickListener(Landroid/widget/AdapterView$OnItemLongClickListener;)V
 
     new-instance v0, Lcom/android/phone/IMSConferenceCallActivity$ActionModeCallback;
 
@@ -785,13 +785,13 @@
 
     const/4 v1, 0x3
 
-    invoke-virtual {v0, v1}, Landroid/widget/AbsListView;->setChoiceMode(I)V
+    invoke-virtual {v0, v1}, Landroid/widget/ListView;->setChoiceMode(I)V
 
     sget-object v0, Lcom/android/phone/IMSConferenceCallActivity;->mDeleteList:Landroid/widget/ListView;
 
     iget-object v1, p0, Lcom/android/phone/IMSConferenceCallActivity;->mModeCallback:Lcom/android/phone/IMSConferenceCallActivity$ActionModeCallback;
 
-    invoke-virtual {v0, v1}, Landroid/widget/AbsListView;->setMultiChoiceModeListener(Landroid/widget/AbsListView$MultiChoiceModeListener;)V
+    invoke-virtual {v0, v1}, Landroid/widget/ListView;->setMultiChoiceModeListener(Landroid/widget/AbsListView$MultiChoiceModeListener;)V
 
     iget-object v0, p0, Lcom/android/phone/IMSConferenceCallActivity;->mSelectAll:Landroid/widget/LinearLayout;
 
@@ -799,7 +799,7 @@
 
     invoke-direct {v1, p0}, Lcom/android/phone/IMSConferenceCallActivity$4;-><init>(Lcom/android/phone/IMSConferenceCallActivity;)V
 
-    invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v0, v1}, Landroid/widget/LinearLayout;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     iget-boolean v0, p0, Lcom/android/phone/IMSConferenceCallActivity;->mIsConfTypeVoice:Z
 
@@ -807,7 +807,7 @@
 
     const v0, 0x7f09096e
 
-    invoke-virtual {p0, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lcom/android/phone/IMSConferenceCallActivity;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -819,7 +819,7 @@
     :cond_2
     const v0, 0x7f090729
 
-    invoke-virtual {p0, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lcom/android/phone/IMSConferenceCallActivity;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -1386,7 +1386,7 @@
 
     aput-object v2, v1, v4
 
-    invoke-virtual {p0, v0, v1}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {p0, v0, v1}, Lcom/android/phone/IMSConferenceCallActivity;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -1412,7 +1412,7 @@
 
     sget-object v5, Lcom/android/phone/IMSConferenceCallActivity;->mDeleteList:Landroid/widget/ListView;
 
-    invoke-virtual {v5}, Landroid/widget/AdapterView;->getCount()I
+    invoke-virtual {v5}, Landroid/widget/ListView;->getCount()I
 
     move-result v2
 
@@ -1429,7 +1429,7 @@
 
     sget-object v5, Lcom/android/phone/IMSConferenceCallActivity;->mDeleteList:Landroid/widget/ListView;
 
-    invoke-virtual {v5, v3}, Landroid/widget/AbsListView;->isItemChecked(I)Z
+    invoke-virtual {v5, v3}, Landroid/widget/ListView;->isItemChecked(I)Z
 
     move-result v0
 
@@ -1690,7 +1690,7 @@
 
     const-string v2, "phone"
 
-    invoke-virtual {p0, v2}, Landroid/app/Activity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v2}, Lcom/android/phone/IMSConferenceCallActivity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -1779,7 +1779,7 @@
     :goto_0
     const/16 v1, 0xa
 
-    invoke-virtual {p0, v0, v1}, Landroid/app/Activity;->startActivityForResult(Landroid/content/Intent;I)V
+    invoke-virtual {p0, v0, v1}, Lcom/android/phone/IMSConferenceCallActivity;->startActivityForResult(Landroid/content/Intent;I)V
 
     return-void
 
@@ -2277,7 +2277,7 @@
 
     iget-object v1, p0, Lcom/android/phone/IMSConferenceCallActivity;->mRecipientsText:Landroid/widget/AutoCompleteTextView;
 
-    invoke-virtual {v1}, Landroid/view/View;->getWindowToken()Landroid/os/IBinder;
+    invoke-virtual {v1}, Landroid/widget/AutoCompleteTextView;->getWindowToken()Landroid/os/IBinder;
 
     move-result-object v1
 
@@ -2288,7 +2288,7 @@
 
     const/4 v1, 0x1
 
-    invoke-virtual {v0, v1}, Landroid/widget/AbsListView;->twShowMultiChoiceMode(Z)V
+    invoke-virtual {v0, v1}, Landroid/widget/ListView;->twShowMultiChoiceMode(Z)V
 
     iget-object v0, p0, Lcom/android/phone/IMSConferenceCallActivity;->mParticipantsAdapter:Lcom/android/phone/IMSConferenceCallActivity$ParticipantsAdapter;
 
@@ -2437,7 +2437,7 @@
 
     const v1, 0x7f09096e
 
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
+    invoke-virtual {v0, v1}, Landroid/widget/Button;->setText(I)V
 
     :goto_0
     iget-object v0, p0, Lcom/android/phone/IMSConferenceCallActivity;->icCM:Lcom/android/phone/IMSConferenceCallMgr;
@@ -2456,7 +2456,7 @@
 
     const/4 v1, 0x1
 
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setEnabled(Z)V
+    invoke-virtual {v0, v1}, Landroid/widget/Button;->setEnabled(Z)V
 
     :goto_1
     return-void
@@ -2466,7 +2466,7 @@
 
     const v1, 0x7f090729
 
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
+    invoke-virtual {v0, v1}, Landroid/widget/Button;->setText(I)V
 
     goto :goto_0
 
@@ -2475,7 +2475,7 @@
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setEnabled(Z)V
+    invoke-virtual {v0, v1}, Landroid/widget/Button;->setEnabled(Z)V
 
     goto :goto_1
 .end method
@@ -2537,7 +2537,7 @@
 
     move-result-object v0
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->setTitle(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/IMSConferenceCallActivity;->setTitle(Ljava/lang/CharSequence;)V
 
     return-void
 .end method
@@ -2633,7 +2633,7 @@
     packed-switch v1, :pswitch_data_0
 
     :cond_0
-    invoke-super {p0, p1}, Landroid/app/Activity;->dispatchKeyEvent(Landroid/view/KeyEvent;)Z
+    invoke-super {p0, p1}, Landroid/app/ListActivity;->dispatchKeyEvent(Landroid/view/KeyEvent;)Z
 
     move-result v0
 
@@ -2747,7 +2747,7 @@
 
     invoke-direct {p0, v0}, Lcom/android/phone/IMSConferenceCallActivity;->log(Ljava/lang/String;)V
 
-    invoke-super {p0, p1, p2, p3}, Landroid/app/Activity;->onActivityResult(IILandroid/content/Intent;)V
+    invoke-super {p0, p1, p2, p3}, Landroid/app/ListActivity;->onActivityResult(IILandroid/content/Intent;)V
 
     new-instance v1, Ljava/util/ArrayList;
 
@@ -3035,7 +3035,7 @@
 
     const v3, 0x7f09096e
 
-    invoke-virtual {p0, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v3}, Lcom/android/phone/IMSConferenceCallActivity;->getString(I)Ljava/lang/String;
 
     move-result-object v3
 
@@ -3051,7 +3051,7 @@
 
     aput-object v3, v2, v5
 
-    invoke-virtual {p0, v7, v2}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {p0, v7, v2}, Lcom/android/phone/IMSConferenceCallActivity;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -3062,7 +3062,7 @@
     :cond_1
     new-array v2, v6, [Ljava/lang/Object;
 
-    invoke-virtual {p0, v8}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v8}, Lcom/android/phone/IMSConferenceCallActivity;->getString(I)Ljava/lang/String;
 
     move-result-object v3
 
@@ -3078,7 +3078,7 @@
 
     aput-object v3, v2, v5
 
-    invoke-virtual {p0, v7, v2}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {p0, v7, v2}, Lcom/android/phone/IMSConferenceCallActivity;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -3094,7 +3094,7 @@
     :pswitch_2
     iget-object v2, p0, Lcom/android/phone/IMSConferenceCallActivity;->mRecipientsText:Landroid/widget/AutoCompleteTextView;
 
-    invoke-virtual {v2}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
+    invoke-virtual {v2}, Landroid/widget/AutoCompleteTextView;->getText()Landroid/text/Editable;
 
     move-result-object v2
 
@@ -3132,7 +3132,7 @@
 
     const v3, 0x7f09096e
 
-    invoke-virtual {p0, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v3}, Lcom/android/phone/IMSConferenceCallActivity;->getString(I)Ljava/lang/String;
 
     move-result-object v3
 
@@ -3148,7 +3148,7 @@
 
     aput-object v3, v2, v5
 
-    invoke-virtual {p0, v7, v2}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {p0, v7, v2}, Lcom/android/phone/IMSConferenceCallActivity;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -3159,7 +3159,7 @@
     :cond_3
     new-array v2, v6, [Ljava/lang/Object;
 
-    invoke-virtual {p0, v8}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v8}, Lcom/android/phone/IMSConferenceCallActivity;->getString(I)Ljava/lang/String;
 
     move-result-object v3
 
@@ -3175,7 +3175,7 @@
 
     aput-object v3, v2, v5
 
-    invoke-virtual {p0, v7, v2}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {p0, v7, v2}, Lcom/android/phone/IMSConferenceCallActivity;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -3202,7 +3202,7 @@
 
     const-string v3, ""
 
-    invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {v2, v3}, Landroid/widget/AutoCompleteTextView;->setText(Ljava/lang/CharSequence;)V
 
     goto/16 :goto_0
 
@@ -3237,7 +3237,7 @@
     :cond_6
     iget-object v2, p0, Lcom/android/phone/IMSConferenceCallActivity;->mButton_Send:Landroid/widget/Button;
 
-    invoke-virtual {v2, v4}, Landroid/widget/TextView;->setEnabled(Z)V
+    invoke-virtual {v2, v4}, Landroid/widget/Button;->setEnabled(Z)V
 
     invoke-direct {p0}, Lcom/android/phone/IMSConferenceCallActivity;->InitiateConfCall()V
 
@@ -3265,7 +3265,7 @@
 
     const/4 v5, 0x0
 
-    invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Landroid/app/ListActivity;->onCreate(Landroid/os/Bundle;)V
 
     const-string v1, "tablet_device"
 
@@ -3275,12 +3275,12 @@
 
     if-nez v1, :cond_0
 
-    invoke-virtual {p0, v6}, Landroid/app/Activity;->setRequestedOrientation(I)V
+    invoke-virtual {p0, v6}, Lcom/android/phone/IMSConferenceCallActivity;->setRequestedOrientation(I)V
 
     :cond_0
     iput-boolean v5, p0, Lcom/android/phone/IMSConferenceCallActivity;->forcefinishing:Z
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/phone/IMSConferenceCallActivity;->getIntent()Landroid/content/Intent;
 
     move-result-object v1
 
@@ -3336,7 +3336,7 @@
     :goto_0
     iput-boolean v6, p0, Lcom/android/phone/IMSConferenceCallActivity;->forcefinishing:Z
 
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/IMSConferenceCallActivity;->finish()V
 
     :cond_2
     :goto_1
@@ -3379,7 +3379,7 @@
     :goto_2
     iput-boolean v6, p0, Lcom/android/phone/IMSConferenceCallActivity;->forcefinishing:Z
 
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/IMSConferenceCallActivity;->finish()V
 
     goto :goto_1
 
@@ -3428,7 +3428,7 @@
     :goto_3
     iput-boolean v6, p0, Lcom/android/phone/IMSConferenceCallActivity;->forcefinishing:Z
 
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/IMSConferenceCallActivity;->finish()V
 
     goto :goto_1
 
@@ -3638,13 +3638,13 @@
 
     aput-object v2, v1, v5
 
-    invoke-virtual {p0, v7, v1}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {p0, v7, v1}, Lcom/android/phone/IMSConferenceCallActivity;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v1
 
     invoke-direct {p0, v1}, Lcom/android/phone/IMSConferenceCallActivity;->showToast(Ljava/lang/String;)V
 
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/IMSConferenceCallActivity;->finish()V
 
     goto/16 :goto_1
 
@@ -3699,13 +3699,13 @@
 
     aput-object v2, v1, v5
 
-    invoke-virtual {p0, v7, v1}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {p0, v7, v1}, Lcom/android/phone/IMSConferenceCallActivity;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v1
 
     invoke-direct {p0, v1}, Lcom/android/phone/IMSConferenceCallActivity;->showToast(Ljava/lang/String;)V
 
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/IMSConferenceCallActivity;->finish()V
 
     goto/16 :goto_1
 
@@ -3733,7 +3733,7 @@
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 2
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getMenuInflater()Landroid/view/MenuInflater;
+    invoke-virtual {p0}, Lcom/android/phone/IMSConferenceCallActivity;->getMenuInflater()Landroid/view/MenuInflater;
 
     move-result-object v0
 
@@ -3833,7 +3833,7 @@
 
     sparse-switch v1, :sswitch_data_0
 
-    invoke-super {p0, p1}, Landroid/app/Activity;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
+    invoke-super {p0, p1}, Landroid/app/ListActivity;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
 
     move-result v0
 
@@ -3846,7 +3846,7 @@
 
     if-nez v1, :cond_0
 
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/IMSConferenceCallActivity;->finish()V
 
     goto :goto_0
 
@@ -3869,7 +3869,7 @@
 
     const/4 v2, 0x0
 
-    invoke-super {p0}, Landroid/app/Activity;->onPause()V
+    invoke-super {p0}, Landroid/app/ListActivity;->onPause()V
 
     const-string v0, "inside onPause()"
 
@@ -3890,7 +3890,7 @@
 
     iget-object v1, p0, Lcom/android/phone/IMSConferenceCallActivity;->mRecipientsText:Landroid/widget/AutoCompleteTextView;
 
-    invoke-virtual {v1}, Landroid/view/View;->getWindowToken()Landroid/os/IBinder;
+    invoke-virtual {v1}, Landroid/widget/AutoCompleteTextView;->getWindowToken()Landroid/os/IBinder;
 
     move-result-object v1
 
@@ -3902,7 +3902,7 @@
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)Z
     .locals 1
 
-    invoke-super {p0, p1}, Landroid/app/Activity;->onPrepareOptionsMenu(Landroid/view/Menu;)Z
+    invoke-super {p0, p1}, Landroid/app/ListActivity;->onPrepareOptionsMenu(Landroid/view/Menu;)Z
 
     const-string v0, "onPrepareOptionsMenu"
 
@@ -3918,7 +3918,7 @@
 .method protected onResume()V
     .locals 4
 
-    invoke-super {p0}, Landroid/app/Activity;->onResume()V
+    invoke-super {p0}, Landroid/app/ListActivity;->onResume()V
 
     const-string v0, "inside onResume()"
 
@@ -3949,7 +3949,7 @@
     .locals 3
     .param p1    # Z
 
-    invoke-super {p0, p1}, Landroid/app/Activity;->onWindowFocusChanged(Z)V
+    invoke-super {p0, p1}, Landroid/app/ListActivity;->onWindowFocusChanged(Z)V
 
     if-eqz p1, :cond_0
 
@@ -3959,7 +3959,7 @@
 
     iget-object v0, p0, Lcom/android/phone/IMSConferenceCallActivity;->mRecipientsText:Landroid/widget/AutoCompleteTextView;
 
-    invoke-virtual {v0}, Landroid/view/View;->requestFocus()Z
+    invoke-virtual {v0}, Landroid/widget/AutoCompleteTextView;->requestFocus()Z
 
     iget-object v0, p0, Lcom/android/phone/IMSConferenceCallActivity;->imm:Landroid/view/inputmethod/InputMethodManager;
 
@@ -4010,7 +4010,7 @@
     :goto_1
     sget-object v1, Lcom/android/phone/IMSConferenceCallActivity;->mDeleteList:Landroid/widget/ListView;
 
-    invoke-virtual {v1, v0, v2}, Landroid/widget/AbsListView;->setItemChecked(IZ)V
+    invoke-virtual {v1, v0, v2}, Landroid/widget/ListView;->setItemChecked(IZ)V
 
     add-int/lit8 v0, v0, 0x1
 
@@ -4091,7 +4091,7 @@
 
     const v1, 0x7f09096f
 
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
+    invoke-virtual {v0, v1}, Landroid/widget/Button;->setText(I)V
 
     iget-object v0, p0, Lcom/android/phone/IMSConferenceCallActivity;->mHolderCtl:Lcom/android/phone/IMSConferenceCallActivity$HolderCtl;
 
@@ -4233,11 +4233,11 @@
 
     iget-object v0, p2, Lcom/android/phone/IMSConferenceCallActivity$ParticipantHolder;->mStatusView:Landroid/widget/TextView;
 
-    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setVisibility(I)V
 
     iget-object v0, p2, Lcom/android/phone/IMSConferenceCallActivity$ParticipantHolder;->mElapsedTimeView:Landroid/widget/TextView;
 
-    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setVisibility(I)V
 
     :cond_1
     const v0, 0x7f0a0124
@@ -4258,7 +4258,7 @@
 
     iget-object v0, p2, Lcom/android/phone/IMSConferenceCallActivity$ParticipantHolder;->mButton_Dial:Landroid/widget/Button;
 
-    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v1}, Landroid/widget/Button;->setVisibility(I)V
 
     :cond_2
     return-void
@@ -4379,7 +4379,7 @@
     :cond_0
     iget-object v0, p2, Lcom/android/phone/IMSConferenceCallActivity$ParticipantHolder;->mButton_Dial:Landroid/widget/Button;
 
-    invoke-virtual {v0, v3}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v3}, Landroid/widget/Button;->setVisibility(I)V
 
     :goto_0
     invoke-virtual {p0, p2, p3}, Lcom/android/phone/IMSConferenceCallActivity;->setStatusText(Lcom/android/phone/IMSConferenceCallActivity$ParticipantHolder;Lcom/android/phone/IMSConferenceCallMgr$Participant;)V
@@ -4400,16 +4400,16 @@
 
     iget-object v0, p2, Lcom/android/phone/IMSConferenceCallActivity$ParticipantHolder;->mElapsedTimeView:Landroid/widget/TextView;
 
-    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setVisibility(I)V
 
     :cond_1
     iget-object v0, p2, Lcom/android/phone/IMSConferenceCallActivity$ParticipantHolder;->mStatusView:Landroid/widget/TextView;
 
-    invoke-virtual {v0, v3}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v3}, Landroid/widget/TextView;->setVisibility(I)V
 
     iget-object v0, p2, Lcom/android/phone/IMSConferenceCallActivity$ParticipantHolder;->mButton_Dial:Landroid/widget/Button;
 
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setEnabled(Z)V
+    invoke-virtual {v0, v1}, Landroid/widget/Button;->setEnabled(Z)V
 
     invoke-virtual {p1, v1}, Landroid/view/View;->setEnabled(Z)V
 
@@ -4428,14 +4428,14 @@
     :cond_3
     iget-object v0, p2, Lcom/android/phone/IMSConferenceCallActivity$ParticipantHolder;->mButton_Dial:Landroid/widget/Button;
 
-    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v1}, Landroid/widget/Button;->setVisibility(I)V
 
     goto :goto_0
 
     :cond_4
     iget-object v0, p2, Lcom/android/phone/IMSConferenceCallActivity$ParticipantHolder;->mButton_Dial:Landroid/widget/Button;
 
-    invoke-virtual {v0, v3}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v3}, Landroid/widget/Button;->setVisibility(I)V
 
     goto :goto_0
 
@@ -4450,15 +4450,15 @@
 
     iget-object v0, p2, Lcom/android/phone/IMSConferenceCallActivity$ParticipantHolder;->mElapsedTimeView:Landroid/widget/TextView;
 
-    invoke-virtual {v0, v3}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v3}, Landroid/widget/TextView;->setVisibility(I)V
 
     iget-object v0, p2, Lcom/android/phone/IMSConferenceCallActivity$ParticipantHolder;->mStatusView:Landroid/widget/TextView;
 
-    invoke-virtual {v0, v3}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v3}, Landroid/widget/TextView;->setVisibility(I)V
 
     iget-object v0, p2, Lcom/android/phone/IMSConferenceCallActivity$ParticipantHolder;->mButton_Dial:Landroid/widget/Button;
 
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setEnabled(Z)V
+    invoke-virtual {v0, v1}, Landroid/widget/Button;->setEnabled(Z)V
 
     invoke-virtual {p1, v1}, Landroid/view/View;->setEnabled(Z)V
 
@@ -4483,15 +4483,15 @@
 
     iget-object v0, p2, Lcom/android/phone/IMSConferenceCallActivity$ParticipantHolder;->mElapsedTimeView:Landroid/widget/TextView;
 
-    invoke-virtual {v0, v3}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v3}, Landroid/widget/TextView;->setVisibility(I)V
 
     iget-object v0, p2, Lcom/android/phone/IMSConferenceCallActivity$ParticipantHolder;->mStatusView:Landroid/widget/TextView;
 
-    invoke-virtual {v0, v3}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v3}, Landroid/widget/TextView;->setVisibility(I)V
 
     iget-object v0, p2, Lcom/android/phone/IMSConferenceCallActivity$ParticipantHolder;->mButton_Dial:Landroid/widget/Button;
 
-    invoke-virtual {v0, v2}, Landroid/widget/TextView;->setEnabled(Z)V
+    invoke-virtual {v0, v2}, Landroid/widget/Button;->setEnabled(Z)V
 
     invoke-virtual {p1, v2}, Landroid/view/View;->setEnabled(Z)V
 
@@ -4516,7 +4516,7 @@
 
     iget-object v0, p2, Lcom/android/phone/IMSConferenceCallActivity$ParticipantHolder;->mButton_Dial:Landroid/widget/Button;
 
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setEnabled(Z)V
+    invoke-virtual {v0, v1}, Landroid/widget/Button;->setEnabled(Z)V
 
     invoke-virtual {p1, v1}, Landroid/view/View;->setEnabled(Z)V
 
@@ -4531,7 +4531,7 @@
     :goto_2
     iget-object v0, p2, Lcom/android/phone/IMSConferenceCallActivity$ParticipantHolder;->mElapsedTimeView:Landroid/widget/TextView;
 
-    invoke-virtual {v0, v3}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v3}, Landroid/widget/TextView;->setVisibility(I)V
 
     iget-object v0, p0, Lcom/android/phone/IMSConferenceCallActivity;->mHolderCtl:Lcom/android/phone/IMSConferenceCallActivity$HolderCtl;
 
@@ -4541,14 +4541,14 @@
 
     iget-object v0, p2, Lcom/android/phone/IMSConferenceCallActivity$ParticipantHolder;->mStatusView:Landroid/widget/TextView;
 
-    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setVisibility(I)V
 
     goto/16 :goto_1
 
     :cond_8
     iget-object v0, p2, Lcom/android/phone/IMSConferenceCallActivity$ParticipantHolder;->mButton_Dial:Landroid/widget/Button;
 
-    invoke-virtual {v0, v2}, Landroid/widget/TextView;->setEnabled(Z)V
+    invoke-virtual {v0, v2}, Landroid/widget/Button;->setEnabled(Z)V
 
     invoke-virtual {p1, v2}, Landroid/view/View;->setEnabled(Z)V
 
@@ -4574,7 +4574,7 @@
 
     sget-object v3, Lcom/android/phone/IMSConferenceCallActivity;->mDeleteList:Landroid/widget/ListView;
 
-    invoke-virtual {v3}, Landroid/widget/AdapterView;->getCount()I
+    invoke-virtual {v3}, Landroid/widget/ListView;->getCount()I
 
     move-result v1
 
@@ -4591,7 +4591,7 @@
 
     sget-object v3, Lcom/android/phone/IMSConferenceCallActivity;->mDeleteList:Landroid/widget/ListView;
 
-    invoke-virtual {v3, v2}, Landroid/widget/AbsListView;->isItemChecked(I)Z
+    invoke-virtual {v3, v2}, Landroid/widget/ListView;->isItemChecked(I)Z
 
     move-result v0
 
@@ -4631,7 +4631,7 @@
 
     sget-object v0, Lcom/android/phone/IMSConferenceCallActivity;->mDeleteList:Landroid/widget/ListView;
 
-    invoke-virtual {v0}, Landroid/widget/AbsListView;->clearChoices()V
+    invoke-virtual {v0}, Landroid/widget/ListView;->clearChoices()V
 
     iget-object v0, p0, Lcom/android/phone/IMSConferenceCallActivity;->mCheckedItemPositions:Ljava/util/ArrayList;
 
@@ -4676,7 +4676,7 @@
 
     sget-object v1, Lcom/android/phone/IMSConferenceCallActivity;->mDeleteList:Landroid/widget/ListView;
 
-    invoke-virtual {v1}, Landroid/widget/AbsListView;->clearChoices()V
+    invoke-virtual {v1}, Landroid/widget/ListView;->clearChoices()V
 
     iget-object v1, p0, Lcom/android/phone/IMSConferenceCallActivity;->mCheckedItemPositions:Ljava/util/ArrayList;
 
@@ -4738,7 +4738,7 @@
 
     const v1, 0x7f090a37
 
-    invoke-virtual {p0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v1}, Lcom/android/phone/IMSConferenceCallActivity;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -4760,7 +4760,7 @@
 
     sget-object v1, Lcom/android/phone/IMSConferenceCallActivity;->mDeleteList:Landroid/widget/ListView;
 
-    invoke-virtual {v1}, Landroid/widget/AdapterView;->getCount()I
+    invoke-virtual {v1}, Landroid/widget/ListView;->getCount()I
 
     move-result v1
 

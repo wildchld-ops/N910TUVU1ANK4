@@ -35,8 +35,6 @@
 # direct methods
 .method constructor <init>(Landroid/widget/StackView;Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 2
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/util/AttributeSet;
 
     const/4 v1, 0x0
 
@@ -81,7 +79,6 @@
 
 .method constructor <init>(Landroid/widget/StackView;Landroid/view/View;)V
     .locals 2
-    .param p2    # Landroid/view/View;
 
     const/4 v1, 0x0
 
@@ -138,8 +135,6 @@
 
 .method invalidateGlobalRegion(Landroid/view/View;Landroid/graphics/Rect;)V
     .locals 8
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/graphics/Rect;
 
     const/4 v5, 0x0
 
@@ -338,7 +333,6 @@
 
 .method public setHorizontalOffset(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/widget/StackView$LayoutParams;->verticalOffset:I
 
@@ -349,8 +343,6 @@
 
 .method public setOffsets(II)V
     .locals 15
-    .param p1    # I
-    .param p2    # I
 
     iget v9, p0, Landroid/widget/StackView$LayoutParams;->horizontalOffset:I
 
@@ -558,7 +550,6 @@
 
 .method public setVerticalOffset(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/widget/StackView$LayoutParams;->horizontalOffset:I
 

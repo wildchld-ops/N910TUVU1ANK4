@@ -51,10 +51,6 @@
 
 .method private static chooseHorizontal(Landroid/text/Layout;III)I
     .locals 7
-    .param p0    # Landroid/text/Layout;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     invoke-virtual {p0, p2}, Landroid/text/Layout;->getLineForOffset(I)I
 
@@ -125,8 +121,6 @@
 
 .method public static extendDown(Landroid/text/Spannable;Landroid/text/Layout;)Z
     .locals 7
-    .param p0    # Landroid/text/Spannable;
-    .param p1    # Landroid/text/Layout;
 
     const/4 v6, 0x1
 
@@ -202,8 +196,6 @@
 
 .method public static extendLeft(Landroid/text/Spannable;Landroid/text/Layout;)Z
     .locals 3
-    .param p0    # Landroid/text/Spannable;
-    .param p1    # Landroid/text/Layout;
 
     const/4 v2, 0x1
 
@@ -225,8 +217,6 @@
 
 .method public static extendRight(Landroid/text/Spannable;Landroid/text/Layout;)Z
     .locals 3
-    .param p0    # Landroid/text/Spannable;
-    .param p1    # Landroid/text/Layout;
 
     const/4 v2, 0x1
 
@@ -248,8 +238,6 @@
 
 .method public static final extendSelection(Landroid/text/Spannable;I)V
     .locals 2
-    .param p0    # Landroid/text/Spannable;
-    .param p1    # I
 
     sget-object v0, Landroid/text/Selection;->SELECTION_END:Ljava/lang/Object;
 
@@ -271,8 +259,6 @@
 
 .method public static extendToLeftEdge(Landroid/text/Spannable;Landroid/text/Layout;)Z
     .locals 2
-    .param p0    # Landroid/text/Spannable;
-    .param p1    # Landroid/text/Layout;
 
     const/4 v1, -0x1
 
@@ -289,8 +275,6 @@
 
 .method public static extendToRightEdge(Landroid/text/Spannable;Landroid/text/Layout;)Z
     .locals 2
-    .param p0    # Landroid/text/Spannable;
-    .param p1    # Landroid/text/Layout;
 
     const/4 v1, 0x1
 
@@ -305,8 +289,6 @@
 
 .method public static extendUp(Landroid/text/Spannable;Landroid/text/Layout;)Z
     .locals 7
-    .param p0    # Landroid/text/Spannable;
-    .param p1    # Landroid/text/Layout;
 
     const/4 v6, 0x1
 
@@ -370,9 +352,6 @@
 
 .method private static findEdge(Landroid/text/Spannable;Landroid/text/Layout;I)I
     .locals 5
-    .param p0    # Landroid/text/Spannable;
-    .param p1    # Landroid/text/Layout;
-    .param p2    # I
 
     invoke-static {p0}, Landroid/text/Selection;->getSelectionEnd(Ljava/lang/CharSequence;)I
 
@@ -418,7 +397,6 @@
 
 .method public static final getSelectionEnd(Ljava/lang/CharSequence;)I
     .locals 1
-    .param p0    # Ljava/lang/CharSequence;
 
     instance-of v0, p0, Landroid/text/Spanned;
 
@@ -443,7 +421,6 @@
 
 .method public static final getSelectionStart(Ljava/lang/CharSequence;)I
     .locals 1
-    .param p0    # Ljava/lang/CharSequence;
 
     instance-of v0, p0, Landroid/text/Spanned;
 
@@ -468,8 +445,6 @@
 
 .method public static moveDown(Landroid/text/Spannable;Landroid/text/Layout;)Z
     .locals 10
-    .param p0    # Landroid/text/Spannable;
-    .param p1    # Landroid/text/Layout;
 
     const/4 v8, 0x1
 
@@ -566,8 +541,6 @@
 
 .method public static moveLeft(Landroid/text/Spannable;Landroid/text/Layout;)Z
     .locals 5
-    .param p0    # Landroid/text/Spannable;
-    .param p1    # Landroid/text/Layout;
 
     const/4 v3, 0x1
 
@@ -611,8 +584,6 @@
 
 .method public static moveRight(Landroid/text/Spannable;Landroid/text/Layout;)Z
     .locals 5
-    .param p0    # Landroid/text/Spannable;
-    .param p1    # Landroid/text/Layout;
 
     const/4 v3, 0x1
 
@@ -654,9 +625,6 @@
 
 .method public static moveToFollowing(Landroid/text/Spannable;Landroid/text/Selection$PositionIterator;Z)Z
     .locals 2
-    .param p0    # Landroid/text/Spannable;
-    .param p1    # Landroid/text/Selection$PositionIterator;
-    .param p2    # Z
 
     invoke-static {p0}, Landroid/text/Selection;->getSelectionEnd(Ljava/lang/CharSequence;)I
 
@@ -688,8 +656,6 @@
 
 .method public static moveToLeftEdge(Landroid/text/Spannable;Landroid/text/Layout;)Z
     .locals 2
-    .param p0    # Landroid/text/Spannable;
-    .param p1    # Landroid/text/Layout;
 
     const/4 v1, -0x1
 
@@ -706,9 +672,6 @@
 
 .method public static moveToPreceding(Landroid/text/Spannable;Landroid/text/Selection$PositionIterator;Z)Z
     .locals 2
-    .param p0    # Landroid/text/Spannable;
-    .param p1    # Landroid/text/Selection$PositionIterator;
-    .param p2    # Z
 
     invoke-static {p0}, Landroid/text/Selection;->getSelectionEnd(Ljava/lang/CharSequence;)I
 
@@ -740,8 +703,6 @@
 
 .method public static moveToRightEdge(Landroid/text/Spannable;Landroid/text/Layout;)Z
     .locals 2
-    .param p0    # Landroid/text/Spannable;
-    .param p1    # Landroid/text/Layout;
 
     const/4 v1, 0x1
 
@@ -756,8 +717,6 @@
 
 .method public static moveUp(Landroid/text/Spannable;Landroid/text/Layout;)Z
     .locals 10
-    .param p0    # Landroid/text/Spannable;
-    .param p1    # Landroid/text/Layout;
 
     const/4 v8, 0x1
 
@@ -848,7 +807,6 @@
 
 .method public static final removeSelection(Landroid/text/Spannable;)V
     .locals 1
-    .param p0    # Landroid/text/Spannable;
 
     sget-object v0, Landroid/text/Selection;->SELECTION_START:Ljava/lang/Object;
 
@@ -863,7 +821,6 @@
 
 .method public static final selectAll(Landroid/text/Spannable;)V
     .locals 2
-    .param p0    # Landroid/text/Spannable;
 
     const/4 v0, 0x0
 
@@ -878,8 +835,6 @@
 
 .method public static final setSelection(Landroid/text/Spannable;I)V
     .locals 0
-    .param p0    # Landroid/text/Spannable;
-    .param p1    # I
 
     invoke-static {p0, p1, p1}, Landroid/text/Selection;->setSelection(Landroid/text/Spannable;II)V
 
@@ -888,9 +843,6 @@
 
 .method public static setSelection(Landroid/text/Spannable;II)V
     .locals 17
-    .param p0    # Landroid/text/Spannable;
-    .param p1    # I
-    .param p2    # I
 
     invoke-static/range {p0 .. p0}, Landroid/text/Selection;->getSelectionStart(Ljava/lang/CharSequence;)I
 

@@ -33,12 +33,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/launcher2/PanelDrawer;IIFFFZ)V
     .locals 0
-    .param p2    # I
-    .param p3    # I
-    .param p4    # F
-    .param p5    # F
-    .param p6    # F
-    .param p7    # Z
 
     iput-object p1, p0, Lcom/android/launcher2/PanelDrawer$Functor;->this$0:Lcom/android/launcher2/PanelDrawer;
 
@@ -63,7 +57,6 @@
 # virtual methods
 .method public drawGL([F)V
     .locals 9
-    .param p1    # [F
 
     const/4 v1, 0x2
 

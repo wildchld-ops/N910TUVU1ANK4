@@ -16,7 +16,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -39,8 +38,6 @@
 
 .method static synthetic access$002(Lcom/samsung/android/service/gesture/TspInputEventObserver;Z)Z
     .locals 0
-    .param p0    # Lcom/samsung/android/service/gesture/TspInputEventObserver;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/android/service/gesture/TspInputEventObserver;->mConnected:Z
 
@@ -51,7 +48,6 @@
 # virtual methods
 .method public final onInputEvent(Landroid/view/InputEvent;)V
     .locals 1
-    .param p1    # Landroid/view/InputEvent;
 
     iget-boolean v0, p0, Lcom/samsung/android/service/gesture/TspInputEventObserver;->mConnected:Z
 

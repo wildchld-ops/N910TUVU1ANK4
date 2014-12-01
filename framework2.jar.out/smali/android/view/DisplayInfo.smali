@@ -96,7 +96,6 @@
 
 .method private constructor <init>(Landroid/os/Parcel;)V
     .locals 0
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -107,8 +106,6 @@
 
 .method synthetic constructor <init>(Landroid/os/Parcel;Landroid/view/DisplayInfo$1;)V
     .locals 0
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # Landroid/view/DisplayInfo$1;
 
     invoke-direct {p0, p1}, Landroid/view/DisplayInfo;-><init>(Landroid/os/Parcel;)V
 
@@ -117,7 +114,6 @@
 
 .method public constructor <init>(Landroid/view/DisplayInfo;)V
     .locals 0
-    .param p1    # Landroid/view/DisplayInfo;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -128,7 +124,6 @@
 
 .method private static flagsToString(I)Ljava/lang/String;
     .locals 2
-    .param p0    # I
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -179,11 +174,6 @@
 
 .method private getMetricsWithSize(Landroid/util/DisplayMetrics;Landroid/content/res/CompatibilityInfo;Landroid/os/IBinder;II)V
     .locals 2
-    .param p1    # Landroid/util/DisplayMetrics;
-    .param p2    # Landroid/content/res/CompatibilityInfo;
-    .param p3    # Landroid/os/IBinder;
-    .param p4    # I
-    .param p5    # I
 
     iget v0, p0, Landroid/view/DisplayInfo;->logicalDensityDpi:I
 
@@ -247,7 +237,6 @@
 # virtual methods
 .method public copyFrom(Landroid/view/DisplayInfo;)V
     .locals 1
-    .param p1    # Landroid/view/DisplayInfo;
 
     iget v0, p1, Landroid/view/DisplayInfo;->layerStack:I
 
@@ -366,7 +355,6 @@
 
 .method public equals(Landroid/view/DisplayInfo;)Z
     .locals 2
-    .param p1    # Landroid/view/DisplayInfo;
 
     if-eqz p1, :cond_0
 
@@ -545,7 +533,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     instance-of v0, p1, Landroid/view/DisplayInfo;
 
@@ -572,7 +559,6 @@
 
 .method public getAppMetrics(Landroid/util/DisplayMetrics;)V
     .locals 2
-    .param p1    # Landroid/util/DisplayMetrics;
 
     sget-object v0, Landroid/content/res/CompatibilityInfo;->DEFAULT_COMPATIBILITY_INFO:Landroid/content/res/CompatibilityInfo;
 
@@ -585,9 +571,6 @@
 
 .method public getAppMetrics(Landroid/util/DisplayMetrics;Landroid/content/res/CompatibilityInfo;Landroid/os/IBinder;)V
     .locals 6
-    .param p1    # Landroid/util/DisplayMetrics;
-    .param p2    # Landroid/content/res/CompatibilityInfo;
-    .param p3    # Landroid/os/IBinder;
 
     iget v4, p0, Landroid/view/DisplayInfo;->appWidth:I
 
@@ -608,8 +591,6 @@
 
 .method public getAppMetrics(Landroid/util/DisplayMetrics;Landroid/view/DisplayAdjustments;)V
     .locals 6
-    .param p1    # Landroid/util/DisplayMetrics;
-    .param p2    # Landroid/view/DisplayAdjustments;
 
     invoke-virtual {p2}, Landroid/view/DisplayAdjustments;->getCompatibilityInfo()Landroid/content/res/CompatibilityInfo;
 
@@ -634,9 +615,6 @@
 
 .method public getLogicalMetrics(Landroid/util/DisplayMetrics;Landroid/content/res/CompatibilityInfo;Landroid/os/IBinder;)V
     .locals 6
-    .param p1    # Landroid/util/DisplayMetrics;
-    .param p2    # Landroid/content/res/CompatibilityInfo;
-    .param p3    # Landroid/os/IBinder;
 
     iget v4, p0, Landroid/view/DisplayInfo;->logicalWidth:I
 
@@ -707,7 +685,6 @@
 
 .method public hasAccess(I)Z
     .locals 2
-    .param p1    # I
 
     iget v0, p0, Landroid/view/DisplayInfo;->flags:I
 
@@ -730,7 +707,6 @@
 
 .method public readFromParcel(Landroid/os/Parcel;)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
@@ -1156,8 +1132,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget v0, p0, Landroid/view/DisplayInfo;->layerStack:I
 

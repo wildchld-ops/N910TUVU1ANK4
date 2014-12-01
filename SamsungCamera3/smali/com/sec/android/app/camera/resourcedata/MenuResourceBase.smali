@@ -38,8 +38,6 @@
 # direct methods
 .method public constructor <init>(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -64,9 +62,6 @@
 
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;II)V
     .locals 1
-    .param p1    # Lcom/sec/android/app/camera/Camera;
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -109,8 +104,6 @@
 
 .method public findBundle(II)Lcom/sec/android/app/camera/resourcedata/MenuResourceBundle;
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     iget-object v2, p0, Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;->mMenuResource:Ljava/util/ArrayList;
 
@@ -164,7 +157,6 @@
 
 .method public getItem(I)Lcom/sec/android/app/camera/resourcedata/MenuResourceBundle;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;->mMenuResource:Ljava/util/ArrayList;
 
@@ -213,7 +205,6 @@
 
 .method public refreshResources(I)V
     .locals 0
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;->setCommandId(I)V
 
@@ -224,7 +215,6 @@
 
 .method public removeItem(I)Lcom/sec/android/app/camera/resourcedata/MenuResourceBundle;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;->mMenuResource:Ljava/util/ArrayList;
 
@@ -239,8 +229,6 @@
 
 .method public removeItems(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     if-ge p1, p2, :cond_0
 
@@ -289,7 +277,6 @@
 
 .method public setCommandId(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;->mCommandId:I
 
@@ -298,7 +285,6 @@
 
 .method public setId(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;->mId:I
 

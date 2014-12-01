@@ -76,8 +76,6 @@
 # direct methods
 .method public constructor <init>(ILcom/android/mms/model/SlideshowModel;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Lcom/android/mms/model/SlideshowModel;
 
     const/4 v1, 0x1
 
@@ -102,7 +100,6 @@
 
 .method public constructor <init>(ILjava/util/ArrayList;)V
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -179,7 +176,6 @@
 
 .method public constructor <init>(Lcom/android/mms/model/SlideshowModel;)V
     .locals 1
-    .param p1    # Lcom/android/mms/model/SlideshowModel;
 
     invoke-static {}, Lcom/android/mms/MmsConfig;->getMinimumSlideElementDuration()I
 
@@ -194,7 +190,6 @@
 
 .method private internalAdd(Lcom/android/mms/model/MediaModel;)V
     .locals 5
-    .param p1    # Lcom/android/mms/model/MediaModel;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;,
@@ -449,8 +444,6 @@
 
 .method private internalAddOrReplace(Lcom/android/mms/model/MediaModel;Lcom/android/mms/model/MediaModel;)V
     .locals 6
-    .param p1    # Lcom/android/mms/model/MediaModel;
-    .param p2    # Lcom/android/mms/model/MediaModel;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/android/mms/ExceedMessageSizeException;
@@ -574,7 +567,6 @@
 
 .method private internalRemove(Ljava/lang/Object;)Z
     .locals 5
-    .param p1    # Ljava/lang/Object;
 
     const/4 v3, 0x1
 
@@ -722,8 +714,6 @@
 # virtual methods
 .method public add(ILcom/android/mms/model/MediaModel;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Lcom/android/mms/model/MediaModel;
 
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
@@ -736,8 +726,6 @@
 
 .method public bridge synthetic add(ILjava/lang/Object;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Ljava/lang/Object;
 
     check-cast p2, Lcom/android/mms/model/MediaModel;
 
@@ -748,7 +736,6 @@
 
 .method public add(Lcom/android/mms/model/MediaModel;)Z
     .locals 1
-    .param p1    # Lcom/android/mms/model/MediaModel;
 
     const/4 v0, 0x1
 
@@ -761,7 +748,6 @@
 
 .method public bridge synthetic add(Ljava/lang/Object;)Z
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/android/mms/model/MediaModel;
 
@@ -774,7 +760,6 @@
 
 .method public addAll(ILjava/util/Collection;)Z
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -886,7 +871,6 @@
 
 .method public contains(Ljava/lang/Object;)Z
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     iget-object v0, p0, Lcom/android/mms/model/SlideModel;->mMedia:Ljava/util/ArrayList;
 
@@ -918,7 +902,6 @@
 
 .method public decreaseMessageSize(I)V
     .locals 2
-    .param p1    # I
 
     if-lez p1, :cond_1
 
@@ -949,7 +932,6 @@
 
 .method public decreaseSlideSize(I)V
     .locals 1
-    .param p1    # I
 
     if-lez p1, :cond_0
 
@@ -973,7 +955,6 @@
 
 .method public get(I)Lcom/android/mms/model/MediaModel;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/mms/model/SlideModel;->mMedia:Ljava/util/ArrayList;
 
@@ -1002,7 +983,6 @@
 
 .method public bridge synthetic get(I)Ljava/lang/Object;
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/mms/model/SlideModel;->get(I)Lcom/android/mms/model/MediaModel;
 
@@ -1189,7 +1169,6 @@
 
 .method public handleEvent(Lorg/w3c/dom/events/Event;)V
     .locals 4
-    .param p1    # Lorg/w3c/dom/events/Event;
 
     const/4 v3, 0x1
 
@@ -1317,7 +1296,6 @@
 
 .method public increaseMessageSize(I)V
     .locals 2
-    .param p1    # I
 
     if-lez p1, :cond_0
 
@@ -1343,7 +1321,6 @@
 
 .method public increaseSlideSize(I)V
     .locals 1
-    .param p1    # I
 
     if-lez p1, :cond_0
 
@@ -1359,7 +1336,6 @@
 
 .method public indexOf(Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     iget-object v0, p0, Lcom/android/mms/model/SlideModel;->mMedia:Ljava/util/ArrayList;
 
@@ -1421,7 +1397,6 @@
 
 .method public lastIndexOf(Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     iget-object v0, p0, Lcom/android/mms/model/SlideModel;->mMedia:Ljava/util/ArrayList;
 
@@ -1455,7 +1430,6 @@
 
 .method public listIterator(I)Ljava/util/ListIterator;
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -1477,7 +1451,6 @@
 
 .method protected registerModelChangedObserverInDescendants(Lcom/android/mms/model/IModelChangedObserver;)V
     .locals 3
-    .param p1    # Lcom/android/mms/model/IModelChangedObserver;
 
     iget-object v2, p0, Lcom/android/mms/model/SlideModel;->mMedia:Ljava/util/ArrayList;
 
@@ -1508,7 +1481,6 @@
 
 .method public remove(I)Lcom/android/mms/model/MediaModel;
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/mms/model/SlideModel;->mMedia:Ljava/util/ArrayList;
 
@@ -1536,7 +1508,6 @@
 
 .method public bridge synthetic remove(I)Ljava/lang/Object;
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/mms/model/SlideModel;->remove(I)Lcom/android/mms/model/MediaModel;
 
@@ -1547,7 +1518,6 @@
 
 .method public remove(Ljava/lang/Object;)Z
     .locals 2
-    .param p1    # Ljava/lang/Object;
 
     const/4 v0, 0x1
 
@@ -1655,8 +1625,6 @@
 
 .method public replaceText(Ljava/lang/String;Lcom/android/mms/model/TextModel;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/mms/model/TextModel;
 
     invoke-virtual {p1}, Ljava/lang/String;->getBytes()[B
 
@@ -1731,8 +1699,6 @@
 
 .method public set(ILcom/android/mms/model/MediaModel;)Lcom/android/mms/model/MediaModel;
     .locals 2
-    .param p1    # I
-    .param p2    # Lcom/android/mms/model/MediaModel;
 
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
@@ -1745,8 +1711,6 @@
 
 .method public bridge synthetic set(ILjava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/Object;
 
     check-cast p2, Lcom/android/mms/model/MediaModel;
 
@@ -1759,7 +1723,6 @@
 
 .method public setDuration(I)V
     .locals 1
-    .param p1    # I
 
     iput p1, p0, Lcom/android/mms/model/SlideModel;->mDuration:I
 
@@ -1772,7 +1735,6 @@
 
 .method public setFill(S)V
     .locals 1
-    .param p1    # S
 
     iput-short p1, p0, Lcom/android/mms/model/SlideModel;->mFill:S
 
@@ -1785,7 +1747,6 @@
 
 .method public setParent(Lcom/android/mms/model/SlideshowModel;)V
     .locals 0
-    .param p1    # Lcom/android/mms/model/SlideshowModel;
 
     iput-object p1, p0, Lcom/android/mms/model/SlideModel;->mParent:Lcom/android/mms/model/SlideshowModel;
 
@@ -1794,7 +1755,6 @@
 
 .method public setVisible(Z)V
     .locals 1
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/model/SlideModel;->mVisible:Z
 
@@ -1819,8 +1779,6 @@
 
 .method public subList(II)Ljava/util/List;
     .locals 1
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II)",
@@ -1903,7 +1861,6 @@
 
 .method protected unregisterModelChangedObserverInDescendants(Lcom/android/mms/model/IModelChangedObserver;)V
     .locals 3
-    .param p1    # Lcom/android/mms/model/IModelChangedObserver;
 
     iget-object v2, p0, Lcom/android/mms/model/SlideModel;->mMedia:Ljava/util/ArrayList;
 
@@ -1934,7 +1891,6 @@
 
 .method public updateDuration(I)V
     .locals 0
-    .param p1    # I
 
     if-gtz p1, :cond_0
 

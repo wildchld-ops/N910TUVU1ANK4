@@ -18,11 +18,6 @@
 # direct methods
 .method private constructor <init>(Landroid/content/Context;IIILandroid/os/Handler;)V
     .locals 9
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Landroid/os/Handler;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -67,11 +62,6 @@
 
 .method public static createAndBind(Landroid/content/Context;IIILandroid/os/Handler;)Lcom/android/server/location/GeocoderProxy;
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/os/Handler;
 
     new-instance v0, Lcom/android/server/location/GeocoderProxy;
 
@@ -134,10 +124,6 @@
 
 .method public getFromLocation(DDILandroid/location/GeocoderParams;Ljava/util/List;)Ljava/lang/String;
     .locals 9
-    .param p1    # D
-    .param p3    # D
-    .param p5    # I
-    .param p6    # Landroid/location/GeocoderParams;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(DDI",
@@ -191,13 +177,6 @@
 
 .method public getFromLocationName(Ljava/lang/String;DDDDILandroid/location/GeocoderParams;Ljava/util/List;)Ljava/lang/String;
     .locals 14
-    .param p1    # Ljava/lang/String;
-    .param p2    # D
-    .param p4    # D
-    .param p6    # D
-    .param p8    # D
-    .param p10    # I
-    .param p11    # Landroid/location/GeocoderParams;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

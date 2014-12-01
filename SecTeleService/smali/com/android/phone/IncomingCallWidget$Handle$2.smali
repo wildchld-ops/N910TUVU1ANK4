@@ -60,7 +60,7 @@
 
     invoke-virtual {v0, v1}, Lcom/android/phone/IncomingCallWidget;->log(Ljava/lang/String;)V
 
-    invoke-super {p0, p1}, Landroid/view/View;->onWindowVisibilityChanged(I)V
+    invoke-super {p0, p1}, Landroid/widget/FrameLayout;->onWindowVisibilityChanged(I)V
 
     packed-switch p1, :pswitch_data_0
 

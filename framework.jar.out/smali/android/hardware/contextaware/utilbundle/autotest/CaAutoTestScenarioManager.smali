@@ -39,7 +39,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -95,9 +94,6 @@
 
 .method public final setScenarioForDebugging(II[B)Z
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [B
 
     if-nez p3, :cond_0
 
@@ -180,8 +176,6 @@
 
 .method public final setScenarioForTest(II)Z
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     packed-switch p1, :pswitch_data_0
 

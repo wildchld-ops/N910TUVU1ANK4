@@ -32,8 +32,6 @@
 
 .method public static beginStartingService(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/content/Intent;
 
     const-string v0, "DrmEventReceiver"
 
@@ -70,8 +68,6 @@
 
 .method public static finishStartingService(Landroid/app/Service;I)V
     .locals 2
-    .param p0    # Landroid/app/Service;
-    .param p1    # I
 
     const-string v0, "DrmEventReceiver"
 
@@ -86,8 +82,6 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     const-string v0, "DrmEventReceiver"
 
@@ -104,9 +98,6 @@
 
 .method protected onReceiveWithPrivilege(Landroid/content/Context;Landroid/content/Intent;Z)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
-    .param p3    # Z
 
     const-string v0, "DrmEventReceiver"
 

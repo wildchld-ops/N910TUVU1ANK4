@@ -52,7 +52,6 @@
 # virtual methods
 .method public varargs doCheck([Ljava/lang/String;)Z
     .locals 4
-    .param p1    # [Ljava/lang/String;
 
     const/4 v2, 0x0
 

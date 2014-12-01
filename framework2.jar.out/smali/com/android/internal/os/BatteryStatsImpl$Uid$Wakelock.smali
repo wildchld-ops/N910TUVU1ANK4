@@ -37,8 +37,6 @@
 
 .method private readTimerFromParcel(ILjava/util/ArrayList;Ljava/util/ArrayList;Landroid/os/Parcel;)Lcom/android/internal/os/BatteryStatsImpl$StopwatchTimer;
     .locals 6
-    .param p1    # I
-    .param p4    # Landroid/os/Parcel;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -89,7 +87,6 @@
 # virtual methods
 .method public bridge synthetic getWakeTime(I)Landroid/os/BatteryStats$Timer;
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/internal/os/BatteryStatsImpl$Uid$Wakelock;->getWakeTime(I)Lcom/android/internal/os/BatteryStatsImpl$Timer;
 
@@ -100,7 +97,6 @@
 
 .method public getWakeTime(I)Lcom/android/internal/os/BatteryStatsImpl$Timer;
     .locals 3
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -154,7 +150,6 @@
 
 .method readFromParcelLocked(Ljava/util/ArrayList;Landroid/os/Parcel;)V
     .locals 2
-    .param p2    # Landroid/os/Parcel;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -352,8 +347,6 @@
 
 .method writeToParcelLocked(Landroid/os/Parcel;J)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # J
 
     iget-object v0, p0, Lcom/android/internal/os/BatteryStatsImpl$Uid$Wakelock;->mTimerPartial:Lcom/android/internal/os/BatteryStatsImpl$StopwatchTimer;
 

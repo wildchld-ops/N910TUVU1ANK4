@@ -16,8 +16,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -38,9 +36,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v0, 0x0
 
@@ -164,7 +159,6 @@
 
 .method public init(Lcom/diotek/ime/framework/view/FullScreenHwrPanelView;)V
     .locals 6
-    .param p1    # Lcom/diotek/ime/framework/view/FullScreenHwrPanelView;
 
     const/4 v5, 0x1
 
@@ -282,7 +276,6 @@
 
 .method public onHwrPanelLongPressed(Landroid/graphics/Point;)V
     .locals 1
-    .param p1    # Landroid/graphics/Point;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/FullScreenHwrKeyboardView;->mFullScreenHwrPanelView:Lcom/diotek/ime/framework/view/FullScreenHwrPanelView;
 
@@ -293,7 +286,6 @@
 
 .method protected onWindowVisibilityChanged(I)V
     .locals 1
-    .param p1    # I
 
     invoke-super {p0, p1}, Landroid/view/View;->onWindowVisibilityChanged(I)V
 

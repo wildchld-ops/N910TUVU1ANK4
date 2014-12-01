@@ -87,7 +87,6 @@
 
 .method public constructor <init>(Lcom/android/server/wm/AppWindowToken;)V
     .locals 1
-    .param p1    # Lcom/android/server/wm/AppWindowToken;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -124,8 +123,6 @@
 
 .method static notifyAnimationState(JZ)V
     .locals 2
-    .param p0    # J
-    .param p2    # Z
 
     :try_start_0
     sget-object v1, Lcom/android/server/wm/AppWindowAnimator;->cfmsService:Landroid/os/ICustomFrequencyManager;
@@ -169,7 +166,6 @@
 
 .method private stepAnimation(J)Z
     .locals 4
-    .param p1    # J
 
     const/4 v1, 0x0
 
@@ -213,7 +209,6 @@
 
 .method private stepThumbnailAnimation(J)V
     .locals 8
-    .param p1    # J
 
     const/4 v3, 0x1
 
@@ -402,9 +397,6 @@
 
 .method dump(Ljava/io/PrintWriter;Ljava/lang/String;Z)V
     .locals 4
-    .param p1    # Ljava/io/PrintWriter;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     invoke-virtual {p1, p2}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
@@ -624,9 +616,6 @@
 
 .method public setAnimation(Landroid/view/animation/Animation;II)V
     .locals 5
-    .param p1    # Landroid/view/animation/Animation;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v4, 0x1
 
@@ -794,7 +783,6 @@
 
 .method stepAnimationLocked(J)Z
     .locals 7
-    .param p1    # J
 
     const/4 v2, 0x1
 

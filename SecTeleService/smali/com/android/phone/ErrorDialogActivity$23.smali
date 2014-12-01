@@ -37,7 +37,7 @@
 
     sget-object v1, Lcom/android/phone/Constants$ProgressIndicationType;->NONE:Lcom/android/phone/Constants$ProgressIndicationType;
 
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    invoke-virtual {v1}, Lcom/android/phone/Constants$ProgressIndicationType;->ordinal()I
 
     move-result v1
 
@@ -53,7 +53,7 @@
 
     sget-object v1, Lcom/android/phone/Constants$ProgressIndicationType;->TURNING_ON_RADIO:Lcom/android/phone/Constants$ProgressIndicationType;
 
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    invoke-virtual {v1}, Lcom/android/phone/Constants$ProgressIndicationType;->ordinal()I
 
     move-result v1
 
@@ -69,7 +69,7 @@
 
     sget-object v1, Lcom/android/phone/Constants$ProgressIndicationType;->RETRYING:Lcom/android/phone/Constants$ProgressIndicationType;
 
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    invoke-virtual {v1}, Lcom/android/phone/Constants$ProgressIndicationType;->ordinal()I
 
     move-result v1
 

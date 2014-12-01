@@ -52,8 +52,6 @@
 # direct methods
 .method constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v2, 0x0
 
@@ -151,7 +149,6 @@
 
 .method constructor <init>(Landroid/os/Parcel;)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Landroid/app/ExtraAttr$Owner;-><init>()V
 
@@ -252,7 +249,6 @@
 
 .method dump(Ljava/io/PrintWriter;)V
     .locals 2
-    .param p1    # Ljava/io/PrintWriter;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -394,7 +390,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 4
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x0
 
@@ -690,8 +685,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v0, p0, Landroid/app/SpellScroll$Ingredient;->mName:Ljava/lang/String;
 

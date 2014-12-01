@@ -34,7 +34,6 @@
 # direct methods
 .method public constructor <init>(Landroid/filterfw/core/FilterContext;)V
     .locals 1
-    .param p1    # Landroid/filterfw/core/FilterContext;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

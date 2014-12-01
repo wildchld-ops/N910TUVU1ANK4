@@ -14,7 +14,6 @@
 # direct methods
 .method public constructor <init>(Landroid/net/wifi/IWifiOffloadManager;)V
     .locals 0
-    .param p1    # Landroid/net/wifi/IWifiOffloadManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -27,7 +26,6 @@
 # virtual methods
 .method public checkAppForWiFiOffloading(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     iget-object v1, p0, Landroid/net/wifi/WifiOffloadManager;->mService:Landroid/net/wifi/IWifiOffloadManager;
@@ -69,7 +67,6 @@
 
 .method public checkAppNeedsMoveToFront(I)V
     .locals 4
-    .param p1    # I
 
     :try_start_0
     iget-object v1, p0, Landroid/net/wifi/WifiOffloadManager;->mService:Landroid/net/wifi/IWifiOffloadManager;

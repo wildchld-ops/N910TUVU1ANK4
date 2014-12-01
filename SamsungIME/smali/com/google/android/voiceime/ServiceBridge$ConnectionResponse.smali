@@ -28,8 +28,6 @@
 # direct methods
 .method private constructor <init>(Lcom/google/android/voiceime/ServiceBridge;Landroid/content/Context;Ljava/lang/String;)V
     .locals 0
-    .param p2    # Landroid/content/Context;
-    .param p3    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/google/android/voiceime/ServiceBridge$ConnectionResponse;->this$0:Lcom/google/android/voiceime/ServiceBridge;
 
@@ -44,10 +42,6 @@
 
 .method synthetic constructor <init>(Lcom/google/android/voiceime/ServiceBridge;Landroid/content/Context;Ljava/lang/String;Lcom/google/android/voiceime/ServiceBridge$1;)V
     .locals 0
-    .param p1    # Lcom/google/android/voiceime/ServiceBridge;
-    .param p2    # Landroid/content/Context;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Lcom/google/android/voiceime/ServiceBridge$1;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/google/android/voiceime/ServiceBridge$ConnectionResponse;-><init>(Lcom/google/android/voiceime/ServiceBridge;Landroid/content/Context;Ljava/lang/String;)V
 
@@ -58,8 +52,6 @@
 # virtual methods
 .method public onServiceConnected(Landroid/content/ComponentName;Landroid/os/IBinder;)V
     .locals 2
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Landroid/os/IBinder;
 
     check-cast p2, Lcom/google/android/voiceime/ServiceHelper$ServiceHelperBinder;
 
@@ -80,7 +72,6 @@
 
 .method public onServiceDisconnected(Landroid/content/ComponentName;)V
     .locals 0
-    .param p1    # Landroid/content/ComponentName;
 
     return-void
 .end method

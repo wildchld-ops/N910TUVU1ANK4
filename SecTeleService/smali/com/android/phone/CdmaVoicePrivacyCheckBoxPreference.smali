@@ -83,7 +83,7 @@
 
     iget-object v2, p0, Lcom/android/phone/CdmaVoicePrivacyCheckBoxPreference;->mHandler:Lcom/android/phone/CdmaVoicePrivacyCheckBoxPreference$MyHandler;
 
-    invoke-virtual {v2, v1}, Landroid/os/Handler;->obtainMessage(I)Landroid/os/Message;
+    invoke-virtual {v2, v1}, Lcom/android/phone/CdmaVoicePrivacyCheckBoxPreference$MyHandler;->obtainMessage(I)Landroid/os/Message;
 
     move-result-object v1
 
@@ -111,11 +111,11 @@
 .method protected onClick()V
     .locals 4
 
-    invoke-super {p0}, Landroid/preference/TwoStatePreference;->onClick()V
+    invoke-super {p0}, Landroid/preference/CheckBoxPreference;->onClick()V
 
     iget-object v0, p0, Lcom/android/phone/CdmaVoicePrivacyCheckBoxPreference;->phone:Lcom/android/internal/telephony/Phone;
 
-    invoke-virtual {p0}, Landroid/preference/TwoStatePreference;->isChecked()Z
+    invoke-virtual {p0}, Lcom/android/phone/CdmaVoicePrivacyCheckBoxPreference;->isChecked()Z
 
     move-result v1
 
@@ -123,7 +123,7 @@
 
     const/4 v3, 0x1
 
-    invoke-virtual {v2, v3}, Landroid/os/Handler;->obtainMessage(I)Landroid/os/Message;
+    invoke-virtual {v2, v3}, Lcom/android/phone/CdmaVoicePrivacyCheckBoxPreference$MyHandler;->obtainMessage(I)Landroid/os/Message;
 
     move-result-object v2
 

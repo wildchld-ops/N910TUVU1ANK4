@@ -36,9 +36,6 @@
 # virtual methods
 .method public isInsideView(Landroid/view/View;Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 9
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/MotionEvent;
 
     const/4 v0, 0x1
 
@@ -233,8 +230,6 @@
 
 .method public onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 7
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     const/4 v2, 0x0
 

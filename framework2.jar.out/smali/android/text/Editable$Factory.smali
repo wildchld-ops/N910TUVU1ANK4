@@ -51,7 +51,6 @@
 # virtual methods
 .method public newEditable(Ljava/lang/CharSequence;)Landroid/text/Editable;
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
 
     new-instance v0, Landroid/text/SpannableStringBuilder;
 

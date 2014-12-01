@@ -119,7 +119,6 @@
 
 .method public static valueOf(Ljava/lang/String;)Landroid/graphics/Atlas$Type;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-class v0, Landroid/graphics/Atlas$Type;
 

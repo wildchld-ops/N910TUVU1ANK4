@@ -33,14 +33,12 @@
 # virtual methods
 .method public onDone(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method public onError(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     # getter for: Landroid/webkitsec/AccessibilityInjector;->DEBUG:Z
     invoke-static {}, Landroid/webkitsec/AccessibilityInjector;->access$000()Z
@@ -92,7 +90,6 @@
 
 .method public onStart(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     return-void
 .end method

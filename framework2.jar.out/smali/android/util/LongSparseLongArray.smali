@@ -27,7 +27,6 @@
 
 .method public constructor <init>(I)V
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -66,7 +65,6 @@
 
 .method private growKeyAndValueArrays(I)V
     .locals 6
-    .param p1    # I
 
     const/4 v5, 0x0
 
@@ -105,8 +103,6 @@
 # virtual methods
 .method public append(JJ)V
     .locals 3
-    .param p1    # J
-    .param p3    # J
 
     iget v1, p0, Landroid/util/LongSparseLongArray;->mSize:I
 
@@ -232,7 +228,6 @@
 
 .method public delete(J)V
     .locals 3
-    .param p1    # J
 
     iget-object v1, p0, Landroid/util/LongSparseLongArray;->mKeys:[J
 
@@ -252,7 +247,6 @@
 
 .method public get(J)J
     .locals 2
-    .param p1    # J
 
     const-wide/16 v0, 0x0
 
@@ -265,8 +259,6 @@
 
 .method public get(JJ)J
     .locals 3
-    .param p1    # J
-    .param p3    # J
 
     iget-object v1, p0, Landroid/util/LongSparseLongArray;->mKeys:[J
 
@@ -291,7 +283,6 @@
 
 .method public indexOfKey(J)I
     .locals 2
-    .param p1    # J
 
     iget-object v0, p0, Landroid/util/LongSparseLongArray;->mKeys:[J
 
@@ -306,7 +297,6 @@
 
 .method public indexOfValue(J)I
     .locals 3
-    .param p1    # J
 
     const/4 v0, 0x0
 
@@ -339,7 +329,6 @@
 
 .method public keyAt(I)J
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Landroid/util/LongSparseLongArray;->mKeys:[J
 
@@ -350,8 +339,6 @@
 
 .method public put(JJ)V
     .locals 5
-    .param p1    # J
-    .param p3    # J
 
     iget-object v1, p0, Landroid/util/LongSparseLongArray;->mKeys:[J
 
@@ -438,7 +425,6 @@
 
 .method public removeAt(I)V
     .locals 5
-    .param p1    # I
 
     iget-object v0, p0, Landroid/util/LongSparseLongArray;->mKeys:[J
 
@@ -560,7 +546,6 @@
 
 .method public valueAt(I)J
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Landroid/util/LongSparseLongArray;->mValues:[J
 

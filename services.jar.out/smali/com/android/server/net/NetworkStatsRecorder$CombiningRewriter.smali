@@ -24,7 +24,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/net/NetworkStatsCollection;)V
     .locals 1
-    .param p1    # Lcom/android/server/net/NetworkStatsCollection;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -45,7 +44,6 @@
 # virtual methods
 .method public read(Ljava/io/InputStream;)V
     .locals 1
-    .param p1    # Ljava/io/InputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -75,7 +73,6 @@
 
 .method public write(Ljava/io/OutputStream;)V
     .locals 2
-    .param p1    # Ljava/io/OutputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

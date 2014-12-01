@@ -72,7 +72,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -121,8 +120,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v1, 0x0
 
@@ -169,7 +166,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/ui/MmsPlayerControllerMulti;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/MmsPlayerControllerMulti;
 
     iget-boolean v0, p0, Lcom/android/mms/ui/MmsPlayerControllerMulti;->mShowing:Z
 
@@ -178,7 +174,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/ui/MmsPlayerControllerMulti;)Landroid/widget/ProgressBar;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/MmsPlayerControllerMulti;
 
     iget-object v0, p0, Lcom/android/mms/ui/MmsPlayerControllerMulti;->mProgress:Landroid/widget/ProgressBar;
 
@@ -187,7 +182,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/ui/MmsPlayerControllerMulti;)Landroid/widget/LinearLayout;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/MmsPlayerControllerMulti;
 
     iget-object v0, p0, Lcom/android/mms/ui/MmsPlayerControllerMulti;->mProgressContainer:Landroid/widget/LinearLayout;
 
@@ -196,7 +190,6 @@
 
 .method static synthetic access$300(Lcom/android/mms/ui/MmsPlayerControllerMulti;)I
     .locals 1
-    .param p0    # Lcom/android/mms/ui/MmsPlayerControllerMulti;
 
     invoke-direct {p0}, Lcom/android/mms/ui/MmsPlayerControllerMulti;->setProgress()I
 
@@ -207,7 +200,6 @@
 
 .method static synthetic access$400(Lcom/android/mms/ui/MmsPlayerControllerMulti;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/MmsPlayerControllerMulti;
 
     iget-boolean v0, p0, Lcom/android/mms/ui/MmsPlayerControllerMulti;->mDragging:Z
 
@@ -216,7 +208,6 @@
 
 .method static synthetic access$500(Lcom/android/mms/ui/MmsPlayerControllerMulti;)Lcom/android/mms/ui/MmsPlayerControllerMulti$MediaPlayerControl;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/MmsPlayerControllerMulti;
 
     iget-object v0, p0, Lcom/android/mms/ui/MmsPlayerControllerMulti;->mPlayer:Lcom/android/mms/ui/MmsPlayerControllerMulti$MediaPlayerControl;
 
@@ -259,7 +250,6 @@
 
 .method private initControllerView(Landroid/view/View;)V
     .locals 4
-    .param p1    # Landroid/view/View;
 
     const/4 v3, 0x0
 
@@ -564,7 +554,6 @@
 
 .method private stringForTime(I)Ljava/lang/String;
     .locals 11
-    .param p1    # I
 
     const/4 v10, 0x2
 
@@ -738,7 +727,6 @@
 # virtual methods
 .method public SetIsPressDown(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/MmsPlayerControllerMulti;->mPressDown:Z
 
@@ -747,7 +735,6 @@
 
 .method public SlideShowActivityRunnable(Lcom/android/mms/model/SlideshowModel;)V
     .locals 1
-    .param p1    # Lcom/android/mms/model/SlideshowModel;
 
     iget-object v0, p0, Lcom/android/mms/ui/MmsPlayerControllerMulti;->mPlayer:Lcom/android/mms/ui/MmsPlayerControllerMulti$MediaPlayerControl;
 
@@ -943,8 +930,6 @@
 
 .method public isInVisibleRect(II)Z
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget-boolean v1, p0, Lcom/android/mms/ui/MmsPlayerControllerMulti;->mShowing:Z
 
@@ -1154,7 +1139,6 @@
 
 .method public onKeyEvent(Landroid/view/KeyEvent;)Z
     .locals 6
-    .param p1    # Landroid/view/KeyEvent;
 
     const/4 v3, 0x0
 
@@ -1372,7 +1356,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     const/16 v0, 0xbb8
 
@@ -1385,7 +1368,6 @@
 
 .method public onTrackballEvent(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     const/16 v0, 0xbb8
 
@@ -1428,7 +1410,6 @@
 
 .method public seek(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/mms/ui/MmsPlayerControllerMulti;->mPlayer:Lcom/android/mms/ui/MmsPlayerControllerMulti$MediaPlayerControl;
 
@@ -1444,7 +1425,6 @@
 
 .method public setAnchorView(Landroid/widget/RelativeLayout;)V
     .locals 4
-    .param p1    # Landroid/widget/RelativeLayout;
 
     const/4 v3, -0x1
 
@@ -1477,7 +1457,6 @@
 
 .method public setEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-virtual {p0, p1}, Lcom/android/mms/ui/MmsPlayerControllerMulti;->setStatePauseButton(Z)V
 
@@ -1561,7 +1540,6 @@
 
 .method public setMediaPlayer(Lcom/android/mms/ui/MmsPlayerControllerMulti$MediaPlayerControl;)V
     .locals 0
-    .param p1    # Lcom/android/mms/ui/MmsPlayerControllerMulti$MediaPlayerControl;
 
     iput-object p1, p0, Lcom/android/mms/ui/MmsPlayerControllerMulti;->mPlayer:Lcom/android/mms/ui/MmsPlayerControllerMulti$MediaPlayerControl;
 
@@ -1572,7 +1550,6 @@
 
 .method public setPageMoveButton(Z)V
     .locals 0
-    .param p1    # Z
 
     invoke-virtual {p0, p1}, Lcom/android/mms/ui/MmsPlayerControllerMulti;->setStatePrevButton(Z)V
 
@@ -1583,7 +1560,6 @@
 
 .method public setPlayerState(Lcom/android/mms/dom/smil/SmilPlayer$SmilPlayerState;)V
     .locals 1
-    .param p1    # Lcom/android/mms/dom/smil/SmilPlayer$SmilPlayerState;
 
     iget-object v0, p0, Lcom/android/mms/ui/MmsPlayerControllerMulti;->mPlayer:Lcom/android/mms/ui/MmsPlayerControllerMulti$MediaPlayerControl;
 
@@ -1599,7 +1575,6 @@
 
 .method public setStateNextButton(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/mms/ui/MmsPlayerControllerMulti;->mNextPageButton:Landroid/widget/ImageButton;
 
@@ -1619,7 +1594,6 @@
 
 .method public setStatePauseButton(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/mms/ui/MmsPlayerControllerMulti;->mPauseButton:Landroid/widget/ImageButton;
 
@@ -1639,7 +1613,6 @@
 
 .method public setStatePrevButton(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/mms/ui/MmsPlayerControllerMulti;->mPrevPageButton:Landroid/widget/ImageButton;
 
@@ -1669,7 +1642,6 @@
 
 .method public show(I)V
     .locals 7
-    .param p1    # I
 
     const/4 v6, 0x0
 

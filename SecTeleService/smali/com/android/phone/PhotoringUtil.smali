@@ -466,7 +466,7 @@
 
     check-cast v4, Landroid/widget/LinearLayout;
 
-    invoke-virtual {v4, p1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v4, p1}, Landroid/widget/LinearLayout;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     invoke-virtual {v3, v8}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -474,7 +474,7 @@
 
     check-cast v4, Landroid/widget/LinearLayout;
 
-    invoke-virtual {v4, p1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v4, p1}, Landroid/widget/LinearLayout;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     const v4, 0x7f0a0188
 
@@ -484,7 +484,7 @@
 
     check-cast v4, Landroid/widget/LinearLayout;
 
-    invoke-virtual {v4, p1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v4, p1}, Landroid/widget/LinearLayout;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     invoke-virtual {v3, v9}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -492,7 +492,7 @@
 
     check-cast v4, Landroid/widget/LinearLayout;
 
-    invoke-virtual {v4, p1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v4, p1}, Landroid/widget/LinearLayout;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     const-string v4, "support_mcid_with_alertinfo"
 
@@ -502,9 +502,9 @@
 
     if-eqz v4, :cond_0
 
-    invoke-virtual {v1, v7}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v1, v7}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
-    invoke-virtual {v2, v7}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v2, v7}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
     :cond_0
     new-instance v0, Landroid/app/AlertDialog$Builder;
@@ -733,7 +733,7 @@
     :catch_0
     move-exception v0
 
-    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
+    invoke-virtual {v0}, Ljava/io/UnsupportedEncodingException;->printStackTrace()V
 
     const/4 v2, 0x0
 
@@ -770,7 +770,7 @@
 
     invoke-direct {v2}, Ljava/util/Date;-><init>()V
 
-    invoke-virtual {v1, v2}, Ljava/text/DateFormat;->format(Ljava/util/Date;)Ljava/lang/String;
+    invoke-virtual {v1, v2}, Ljava/text/SimpleDateFormat;->format(Ljava/util/Date;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -1255,7 +1255,7 @@
     :catch_0
     move-exception v13
 
-    invoke-virtual {v13}, Ljava/lang/Throwable;->printStackTrace()V
+    invoke-virtual {v13}, Ljava/lang/NumberFormatException;->printStackTrace()V
 
     goto :goto_1
 
@@ -1877,7 +1877,7 @@
     :catch_0
     move-exception v0
 
-    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
+    invoke-virtual {v0}, Ljava/io/IOException;->printStackTrace()V
 
     goto :goto_0
 .end method
@@ -2338,7 +2338,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f020305
+    const v3, 0x7f020304
 
     invoke-static {v2, v3}, Landroid/graphics/BitmapFactory;->decodeResource(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;
 
@@ -2404,7 +2404,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f020305
+    const v3, 0x7f020304
 
     invoke-static {v2, v3}, Landroid/graphics/BitmapFactory;->decodeResource(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;
 

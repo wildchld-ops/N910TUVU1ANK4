@@ -63,7 +63,7 @@
 
     move-result-object v0
 
-    invoke-virtual {p1}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p1}, Lcom/android/phone/callsettings/RejectCallWithMsgModes;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -107,7 +107,7 @@
 
     const-string v4, "layout_inflater"
 
-    invoke-virtual {v3, v4}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v3, v4}, Lcom/android/phone/callsettings/RejectCallWithMsgModes;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -189,7 +189,7 @@
 
     const/4 v4, 0x1
 
-    invoke-virtual {v3, v4}, Landroid/widget/CompoundButton;->setChecked(Z)V
+    invoke-virtual {v3, v4}, Landroid/widget/RadioButton;->setChecked(Z)V
 
     :goto_1
     const v3, 0x7f0a01e1
@@ -204,7 +204,7 @@
 
     invoke-direct {v3, p0, p1}, Lcom/android/phone/callsettings/RejectCallWithMsgModes$ModeAdapter$1;-><init>(Lcom/android/phone/callsettings/RejectCallWithMsgModes$ModeAdapter;I)V
 
-    invoke-virtual {v1, v3}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v1, v3}, Landroid/widget/LinearLayout;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     const v3, 0x7f0a01df
 
@@ -218,7 +218,7 @@
 
     invoke-direct {v3, p0, p1}, Lcom/android/phone/callsettings/RejectCallWithMsgModes$ModeAdapter$2;-><init>(Lcom/android/phone/callsettings/RejectCallWithMsgModes$ModeAdapter;I)V
 
-    invoke-virtual {v2, v3}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v2, v3}, Landroid/widget/LinearLayout;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     return-object p2
 
@@ -246,7 +246,7 @@
 
     const/4 v4, 0x0
 
-    invoke-virtual {v3, v4}, Landroid/widget/CompoundButton;->setChecked(Z)V
+    invoke-virtual {v3, v4}, Landroid/widget/RadioButton;->setChecked(Z)V
 
     goto :goto_1
 .end method

@@ -78,7 +78,6 @@
 
 .method public static getState(Ljava/lang/String;)Landroid/os/SystemService$State;
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -123,7 +122,6 @@
 
 .method public static isRunning(Ljava/lang/String;)Z
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     sget-object v0, Landroid/os/SystemService$State;->RUNNING:Landroid/os/SystemService$State;
 
@@ -140,7 +138,6 @@
 
 .method public static isStopped(Ljava/lang/String;)Z
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     sget-object v0, Landroid/os/SystemService$State;->STOPPED:Landroid/os/SystemService$State;
 
@@ -157,7 +154,6 @@
 
 .method public static restart(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "ctl.restart"
 
@@ -168,7 +164,6 @@
 
 .method public static start(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "ctl.start"
 
@@ -179,7 +174,6 @@
 
 .method public static stop(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "ctl.stop"
 
@@ -190,7 +184,6 @@
 
 .method public static varargs waitForAnyStopped([Ljava/lang/String;)V
     .locals 7
-    .param p0    # [Ljava/lang/String;
 
     :goto_0
     sget-object v5, Landroid/os/SystemService;->sPropertyLock:Ljava/lang/Object;
@@ -264,9 +257,6 @@
 
 .method public static waitForState(Ljava/lang/String;Landroid/os/SystemService$State;J)V
     .locals 7
-    .param p0    # Ljava/lang/String;
-    .param p1    # Landroid/os/SystemService$State;
-    .param p2    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/util/concurrent/TimeoutException;

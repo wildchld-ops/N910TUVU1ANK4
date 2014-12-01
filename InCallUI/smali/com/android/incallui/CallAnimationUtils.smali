@@ -40,7 +40,6 @@
 
 .method static synthetic access$000(Ljava/lang/String;)V
     .locals 0
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/android/incallui/CallAnimationUtils;->log(Ljava/lang/String;)V
 
@@ -49,7 +48,6 @@
 
 .method private static log(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     sget-object v0, Lcom/android/incallui/CallAnimationUtils;->LOG_TAG:Ljava/lang/String;
 

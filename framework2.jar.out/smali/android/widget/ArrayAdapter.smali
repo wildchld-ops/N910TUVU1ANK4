@@ -71,8 +71,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;I)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     const/4 v1, 0x0
 
@@ -101,9 +99,6 @@
 
 .method public constructor <init>(Landroid/content/Context;II)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0}, Landroid/widget/BaseAdapter;-><init>()V
 
@@ -132,9 +127,6 @@
 
 .method public constructor <init>(Landroid/content/Context;IILjava/util/List;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -168,9 +160,6 @@
 
 .method public constructor <init>(Landroid/content/Context;II[Ljava/lang/Object;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -206,8 +195,6 @@
 
 .method public constructor <init>(Landroid/content/Context;ILjava/util/List;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -241,8 +228,6 @@
 
 .method public constructor <init>(Landroid/content/Context;I[Ljava/lang/Object;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -278,7 +263,6 @@
 
 .method static synthetic access$100(Landroid/widget/ArrayAdapter;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Landroid/widget/ArrayAdapter;
 
     iget-object v0, p0, Landroid/widget/ArrayAdapter;->mOriginalValues:Ljava/util/ArrayList;
 
@@ -287,8 +271,6 @@
 
 .method static synthetic access$102(Landroid/widget/ArrayAdapter;Ljava/util/ArrayList;)Ljava/util/ArrayList;
     .locals 0
-    .param p0    # Landroid/widget/ArrayAdapter;
-    .param p1    # Ljava/util/ArrayList;
 
     iput-object p1, p0, Landroid/widget/ArrayAdapter;->mOriginalValues:Ljava/util/ArrayList;
 
@@ -297,7 +279,6 @@
 
 .method static synthetic access$200(Landroid/widget/ArrayAdapter;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Landroid/widget/ArrayAdapter;
 
     iget-object v0, p0, Landroid/widget/ArrayAdapter;->mLock:Ljava/lang/Object;
 
@@ -306,7 +287,6 @@
 
 .method static synthetic access$300(Landroid/widget/ArrayAdapter;)Ljava/util/List;
     .locals 1
-    .param p0    # Landroid/widget/ArrayAdapter;
 
     iget-object v0, p0, Landroid/widget/ArrayAdapter;->mObjects:Ljava/util/List;
 
@@ -315,8 +295,6 @@
 
 .method static synthetic access$302(Landroid/widget/ArrayAdapter;Ljava/util/List;)Ljava/util/List;
     .locals 0
-    .param p0    # Landroid/widget/ArrayAdapter;
-    .param p1    # Ljava/util/List;
 
     iput-object p1, p0, Landroid/widget/ArrayAdapter;->mObjects:Ljava/util/List;
 
@@ -325,9 +303,6 @@
 
 .method public static createFromResource(Landroid/content/Context;II)Landroid/widget/ArrayAdapter;
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -357,10 +332,6 @@
 
 .method private createViewFromResource(ILandroid/view/View;Landroid/view/ViewGroup;I)Landroid/view/View;
     .locals 7
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
-    .param p4    # I
 
     if-nez p2, :cond_1
 
@@ -453,9 +424,6 @@
 
 .method private init(Landroid/content/Context;IILjava/util/List;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -722,9 +690,6 @@
 
 .method public getDropDownView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     iget v0, p0, Landroid/widget/ArrayAdapter;->mDropDownResource:I
 
@@ -758,7 +723,6 @@
 
 .method public getItem(I)Ljava/lang/Object;
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)TT;"
@@ -776,7 +740,6 @@
 
 .method public getItemId(I)J
     .locals 2
-    .param p1    # I
 
     int-to-long v0, p1
 
@@ -802,9 +765,6 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     iget v0, p0, Landroid/widget/ArrayAdapter;->mResource:I
 
@@ -817,7 +777,6 @@
 
 .method public insert(Ljava/lang/Object;I)V
     .locals 2
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TT;I)V"
@@ -936,7 +895,6 @@
 
 .method public setDropDownViewResource(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/widget/ArrayAdapter;->mDropDownResource:I
 
@@ -945,7 +903,6 @@
 
 .method public setNotifyOnChange(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/widget/ArrayAdapter;->mNotifyOnChange:Z
 

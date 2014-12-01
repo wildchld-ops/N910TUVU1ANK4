@@ -96,8 +96,6 @@
 
 .method public static dpToPx(FLandroid/content/Context;)F
     .locals 3
-    .param p0    # F
-    .param p1    # Landroid/content/Context;
 
     const/4 v1, 0x1
 

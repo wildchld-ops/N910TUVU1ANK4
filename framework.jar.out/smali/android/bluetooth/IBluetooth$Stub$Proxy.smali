@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -45,10 +44,6 @@
 
 .method public authorizeService(Landroid/bluetooth/BluetoothDevice;Landroid/os/ParcelUuid;ZZ)Z
     .locals 7
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
-    .param p2    # Landroid/os/ParcelUuid;
-    .param p3    # Z
-    .param p4    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -180,7 +175,6 @@
 
 .method public cancelBondProcess(Landroid/bluetooth/BluetoothDevice;)Z
     .locals 7
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -376,7 +370,6 @@
 
 .method public configHciSnoopLog(Z)Z
     .locals 7
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -454,11 +447,6 @@
 
 .method public connectSocket(Landroid/bluetooth/BluetoothDevice;ILandroid/os/ParcelUuid;II)Landroid/os/ParcelFileDescriptor;
     .locals 6
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
-    .param p2    # I
-    .param p3    # Landroid/os/ParcelUuid;
-    .param p4    # I
-    .param p5    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -576,7 +564,6 @@
 
 .method public createBond(Landroid/bluetooth/BluetoothDevice;)Z
     .locals 7
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -663,11 +650,6 @@
 
 .method public createSocketChannel(ILjava/lang/String;Landroid/os/ParcelUuid;II)Landroid/os/ParcelFileDescriptor;
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/os/ParcelUuid;
-    .param p4    # I
-    .param p5    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -826,7 +808,6 @@
 
 .method public disableRadio(I)Z
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -889,7 +870,6 @@
 
 .method public dutModeConfigure(Z)Z
     .locals 7
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1087,7 +1067,6 @@
 
 .method public enableRadio(I)Z
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1150,7 +1129,6 @@
 
 .method public fetchRemoteUuids(Landroid/bluetooth/BluetoothDevice;)Z
     .locals 7
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1343,7 +1321,6 @@
 
 .method public getBondState(Landroid/bluetooth/BluetoothDevice;)I
     .locals 6
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1528,7 +1505,6 @@
 
 .method public getGearIsConnected(Landroid/bluetooth/BluetoothDevice;)Z
     .locals 7
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1615,7 +1591,6 @@
 
 .method public getGearManagerName(Landroid/bluetooth/BluetoothDevice;)[B
     .locals 6
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1963,7 +1938,6 @@
 
 .method public getProfileConnectionState(I)I
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2125,7 +2099,6 @@
 
 .method public getRemoteAlias(Landroid/bluetooth/BluetoothDevice;)Ljava/lang/String;
     .locals 6
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2200,7 +2173,6 @@
 
 .method public getRemoteAppearance(Landroid/bluetooth/BluetoothDevice;)I
     .locals 6
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2275,7 +2247,6 @@
 
 .method public getRemoteClass(Landroid/bluetooth/BluetoothDevice;)I
     .locals 6
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2350,7 +2321,6 @@
 
 .method public getRemoteName(Landroid/bluetooth/BluetoothDevice;)Ljava/lang/String;
     .locals 6
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2425,7 +2395,6 @@
 
 .method public getRemoteType(Landroid/bluetooth/BluetoothDevice;)I
     .locals 6
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2500,7 +2469,6 @@
 
 .method public getRemoteUuids(Landroid/bluetooth/BluetoothDevice;)[Landroid/os/ParcelUuid;
     .locals 6
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2742,8 +2710,6 @@
 
 .method public initWakeLock(Landroid/os/ParcelFileDescriptor;Landroid/os/ParcelFileDescriptor;)V
     .locals 5
-    .param p1    # Landroid/os/ParcelFileDescriptor;
-    .param p2    # Landroid/os/ParcelFileDescriptor;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3133,9 +3099,6 @@
 
 .method public leTestMode(III)Z
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3202,10 +3165,6 @@
 
 .method public monitorRawRssi(Landroid/bluetooth/BluetoothDevice;III)Z
     .locals 7
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3351,7 +3310,6 @@
 
 .method public readRawRssi(Landroid/bluetooth/BluetoothDevice;)Z
     .locals 7
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3438,7 +3396,6 @@
 
 .method public registerCallback(Landroid/bluetooth/IBluetoothCallback;)V
     .locals 5
-    .param p1    # Landroid/bluetooth/IBluetoothCallback;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3502,9 +3459,6 @@
 
 .method public registerRadioClient(Landroid/bluetooth/IBluetoothManagerCallback;Landroid/os/ParcelUuid;I)Z
     .locals 7
-    .param p1    # Landroid/bluetooth/IBluetoothManagerCallback;
-    .param p2    # Landroid/os/ParcelUuid;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3607,7 +3561,6 @@
 
 .method public removeBond(Landroid/bluetooth/BluetoothDevice;)Z
     .locals 7
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3694,7 +3647,6 @@
 
 .method public selectBTAntenna(I)I
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3750,10 +3702,6 @@
 
 .method public sendConnectionStateChange(Landroid/bluetooth/BluetoothDevice;III)V
     .locals 5
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3830,9 +3778,6 @@
 
 .method public sendVsc(I[BI)I
     .locals 6
-    .param p1    # I
-    .param p2    # [B
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3892,7 +3837,6 @@
 
 .method public setAvStreaming(Z)Z
     .locals 7
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3970,7 +3914,6 @@
 
 .method public setBleAdvEvtType(I)Z
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4033,7 +3976,6 @@
 
 .method public setDiscoverableTimeout(I)Z
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4096,8 +4038,6 @@
 
 .method public setLeHwSetup(Landroid/bluetooth/BluetoothDevice;I)Z
     .locals 7
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4186,7 +4126,6 @@
 
 .method public setName(Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4249,8 +4188,6 @@
 
 .method public setPairingConfirmation(Landroid/bluetooth/BluetoothDevice;Z)Z
     .locals 7
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4349,10 +4286,6 @@
 
 .method public setPasskey(Landroid/bluetooth/BluetoothDevice;ZI[B)Z
     .locals 7
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
-    .param p2    # Z
-    .param p3    # I
-    .param p4    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4455,10 +4388,6 @@
 
 .method public setPin(Landroid/bluetooth/BluetoothDevice;ZI[B)Z
     .locals 7
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
-    .param p2    # Z
-    .param p3    # I
-    .param p4    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4561,8 +4490,6 @@
 
 .method public setRemoteAlias(Landroid/bluetooth/BluetoothDevice;Ljava/lang/String;)Z
     .locals 7
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4651,8 +4578,6 @@
 
 .method public setRemoteClass(Landroid/bluetooth/BluetoothDevice;I)Z
     .locals 7
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4741,8 +4666,6 @@
 
 .method public setRfcommConnected(Landroid/bluetooth/BluetoothDevice;Z)V
     .locals 5
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4827,8 +4750,6 @@
 
 .method public setScanMode(II)Z
     .locals 6
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4893,8 +4814,6 @@
 
 .method public setSdpRecord(ZI)Z
     .locals 7
-    .param p1    # Z
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4974,8 +4893,6 @@
 
 .method public setTxPower(Landroid/bluetooth/BluetoothDevice;I)Z
     .locals 7
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5064,7 +4981,6 @@
 
 .method public sspDebugConfigure(Z)Z
     .locals 7
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5202,7 +5118,6 @@
 
 .method public unregisterCallback(Landroid/bluetooth/IBluetoothCallback;)V
     .locals 5
-    .param p1    # Landroid/bluetooth/IBluetoothCallback;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5266,7 +5181,6 @@
 
 .method public unregisterRadioClient(Landroid/os/ParcelUuid;)Z
     .locals 7
-    .param p1    # Landroid/os/ParcelUuid;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

@@ -68,11 +68,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/internal/app/ResolverActivity;Landroid/content/Context;Landroid/content/Intent;[Landroid/content/Intent;Ljava/util/List;ILjava/lang/String;)V
     .locals 1
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/content/Intent;
-    .param p4    # [Landroid/content/Intent;
-    .param p6    # I
-    .param p7    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -134,8 +129,6 @@
 
 .method private final bindView(Landroid/view/View;Lcom/android/internal/app/ResolverActivity$DisplayResolveInfo;)V
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # Lcom/android/internal/app/ResolverActivity$DisplayResolveInfo;
 
     invoke-virtual {p1}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
@@ -206,10 +199,6 @@
 
 .method private processGroup(Ljava/util/List;IILandroid/content/pm/ResolveInfo;Ljava/lang/CharSequence;)V
     .locals 16
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/content/pm/ResolveInfo;
-    .param p5    # Ljava/lang/CharSequence;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1193,7 +1182,6 @@
 
 .method public getItem(I)Ljava/lang/Object;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/internal/app/ResolverActivity$ResolveListAdapter;->mList:Ljava/util/List;
 
@@ -1206,7 +1194,6 @@
 
 .method public getItemId(I)J
     .locals 2
-    .param p1    # I
 
     int-to-long v0, p1
 
@@ -1215,9 +1202,6 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     const/4 v5, 0x0
 
@@ -1400,7 +1384,6 @@
 
 .method public intentForPosition(I)Landroid/content/Intent;
     .locals 7
-    .param p1    # I
 
     iget-object v4, p0, Lcom/android/internal/app/ResolverActivity$ResolveListAdapter;->mList:Ljava/util/List;
 
@@ -1460,7 +1443,6 @@
 
 .method public resolveInfoForPosition(I)Landroid/content/pm/ResolveInfo;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/internal/app/ResolverActivity$ResolveListAdapter;->mList:Ljava/util/List;
 

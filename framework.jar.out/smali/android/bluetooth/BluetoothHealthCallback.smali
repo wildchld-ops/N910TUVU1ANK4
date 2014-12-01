@@ -20,8 +20,6 @@
 # virtual methods
 .method public onHealthAppConfigurationStatusChange(Landroid/bluetooth/BluetoothHealthAppConfiguration;I)V
     .locals 3
-    .param p1    # Landroid/bluetooth/BluetoothHealthAppConfiguration;
-    .param p2    # I
 
     const-string v0, "BluetoothHealthCallback"
 
@@ -60,12 +58,6 @@
 
 .method public onHealthChannelStateChange(Landroid/bluetooth/BluetoothHealthAppConfiguration;Landroid/bluetooth/BluetoothDevice;IILandroid/os/ParcelFileDescriptor;I)V
     .locals 3
-    .param p1    # Landroid/bluetooth/BluetoothHealthAppConfiguration;
-    .param p2    # Landroid/bluetooth/BluetoothDevice;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Landroid/os/ParcelFileDescriptor;
-    .param p6    # I
 
     const-string v0, "BluetoothHealthCallback"
 

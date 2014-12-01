@@ -23,8 +23,6 @@
 # direct methods
 .method public constructor <init>(J[D)V
     .locals 1
-    .param p1    # J
-    .param p3    # [D
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -43,8 +41,6 @@
 
 .method public constructor <init>(J[F)V
     .locals 4
-    .param p1    # J
-    .param p3    # [F
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

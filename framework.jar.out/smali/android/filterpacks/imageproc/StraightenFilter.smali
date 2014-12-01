@@ -41,7 +41,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -439,8 +438,6 @@
 # virtual methods
 .method public fieldPortValueUpdated(Ljava/lang/String;Landroid/filterfw/core/FilterContext;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/filterfw/core/FilterContext;
 
     iget-object v0, p0, Landroid/filterpacks/imageproc/StraightenFilter;->mProgram:Landroid/filterfw/core/Program;
 
@@ -454,8 +451,6 @@
 
 .method public initProgram(Landroid/filterfw/core/FilterContext;I)V
     .locals 4
-    .param p1    # Landroid/filterfw/core/FilterContext;
-    .param p2    # I
 
     packed-switch p2, :pswitch_data_0
 
@@ -512,7 +507,6 @@
 
 .method public process(Landroid/filterfw/core/FilterContext;)V
     .locals 5
-    .param p1    # Landroid/filterfw/core/FilterContext;
 
     const-string v3, "image"
 

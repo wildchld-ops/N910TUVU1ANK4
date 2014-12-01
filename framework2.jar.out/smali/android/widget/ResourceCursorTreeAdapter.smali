@@ -18,10 +18,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/database/Cursor;II)V
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/database/Cursor;
-    .param p3    # I
-    .param p4    # I
 
     move-object v0, p0
 
@@ -44,11 +40,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/database/Cursor;III)V
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/database/Cursor;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     move-object v0, p0
 
@@ -71,12 +62,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/database/Cursor;IIII)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/database/Cursor;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     invoke-direct {p0, p2, p1}, Landroid/widget/CursorTreeAdapter;-><init>(Landroid/database/Cursor;Landroid/content/Context;)V
 
@@ -105,10 +90,6 @@
 # virtual methods
 .method public newChildView(Landroid/content/Context;Landroid/database/Cursor;ZLandroid/view/ViewGroup;)Landroid/view/View;
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/database/Cursor;
-    .param p3    # Z
-    .param p4    # Landroid/view/ViewGroup;
 
     iget-object v1, p0, Landroid/widget/ResourceCursorTreeAdapter;->mInflater:Landroid/view/LayoutInflater;
 
@@ -133,10 +114,6 @@
 
 .method public newGroupView(Landroid/content/Context;Landroid/database/Cursor;ZLandroid/view/ViewGroup;)Landroid/view/View;
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/database/Cursor;
-    .param p3    # Z
-    .param p4    # Landroid/view/ViewGroup;
 
     iget-object v1, p0, Landroid/widget/ResourceCursorTreeAdapter;->mInflater:Landroid/view/LayoutInflater;
 

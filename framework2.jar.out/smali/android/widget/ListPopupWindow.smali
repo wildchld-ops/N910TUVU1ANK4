@@ -102,7 +102,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -117,8 +116,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const v0, 0x10102ff
 
@@ -131,9 +128,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v0, 0x0
 
@@ -144,10 +138,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;II)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
-    .param p4    # I
 
     const/4 v1, -0x2
 
@@ -246,7 +236,6 @@
 
 .method static synthetic access$1000(Landroid/widget/ListPopupWindow;)Landroid/widget/ListPopupWindow$ResizePopupRunnable;
     .locals 1
-    .param p0    # Landroid/widget/ListPopupWindow;
 
     iget-object v0, p0, Landroid/widget/ListPopupWindow;->mResizePopupRunnable:Landroid/widget/ListPopupWindow$ResizePopupRunnable;
 
@@ -255,7 +244,6 @@
 
 .method static synthetic access$1100(Landroid/widget/ListPopupWindow;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Landroid/widget/ListPopupWindow;
 
     iget-object v0, p0, Landroid/widget/ListPopupWindow;->mHandler:Landroid/os/Handler;
 
@@ -264,7 +252,6 @@
 
 .method static synthetic access$600(Landroid/widget/ListPopupWindow;)Landroid/widget/ListPopupWindow$DropDownListView;
     .locals 1
-    .param p0    # Landroid/widget/ListPopupWindow;
 
     iget-object v0, p0, Landroid/widget/ListPopupWindow;->mDropDownList:Landroid/widget/ListPopupWindow$DropDownListView;
 
@@ -273,7 +260,6 @@
 
 .method static synthetic access$900(Landroid/widget/ListPopupWindow;)Landroid/widget/PopupWindow;
     .locals 1
-    .param p0    # Landroid/widget/ListPopupWindow;
 
     iget-object v0, p0, Landroid/widget/ListPopupWindow;->mPopup:Landroid/widget/PopupWindow;
 
@@ -884,7 +870,6 @@
 
 .method public createDragToOpenListener(Landroid/view/View;)Landroid/view/View$OnTouchListener;
     .locals 1
-    .param p1    # Landroid/view/View;
 
     new-instance v0, Landroid/widget/ListPopupWindow$1;
 
@@ -1183,8 +1168,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 13
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/16 v12, 0x14
 
@@ -1382,8 +1365,6 @@
 
 .method public onKeyPreIme(ILandroid/view/KeyEvent;)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v2, 0x1
 
@@ -1463,8 +1444,6 @@
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     invoke-virtual {p0}, Landroid/widget/ListPopupWindow;->isShowing()Z
 
@@ -1508,7 +1487,6 @@
 
 .method public performItemClick(I)Z
     .locals 7
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/widget/ListPopupWindow;->isShowing()Z
 
@@ -1572,7 +1550,6 @@
 
 .method public setAdapter(Landroid/widget/ListAdapter;)V
     .locals 2
-    .param p1    # Landroid/widget/ListAdapter;
 
     iget-object v0, p0, Landroid/widget/ListPopupWindow;->mObserver:Landroid/database/DataSetObserver;
 
@@ -1628,7 +1605,6 @@
 
 .method public setAnchorView(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     iput-object p1, p0, Landroid/widget/ListPopupWindow;->mDropDownAnchorView:Landroid/view/View;
 
@@ -1637,7 +1613,6 @@
 
 .method public setAnimationStyle(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/widget/ListPopupWindow;->mPopup:Landroid/widget/PopupWindow;
 
@@ -1648,7 +1623,6 @@
 
 .method public setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
     .locals 1
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     iget-object v0, p0, Landroid/widget/ListPopupWindow;->mPopup:Landroid/widget/PopupWindow;
 
@@ -1659,7 +1633,6 @@
 
 .method public setContentWidth(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Landroid/widget/ListPopupWindow;->mPopup:Landroid/widget/PopupWindow;
 
@@ -1698,7 +1671,6 @@
 
 .method public setDropDownAlwaysVisible(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/widget/ListPopupWindow;->mDropDownAlwaysVisible:Z
 
@@ -1707,7 +1679,6 @@
 
 .method public setDropDownGravity(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/widget/ListPopupWindow;->mDropDownGravity:I
 
@@ -1716,7 +1687,6 @@
 
 .method public setForceIgnoreOutsideTouch(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/widget/ListPopupWindow;->mForceIgnoreOutsideTouch:Z
 
@@ -1725,7 +1695,6 @@
 
 .method public setHeight(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/widget/ListPopupWindow;->mDropDownHeight:I
 
@@ -1734,7 +1703,6 @@
 
 .method public setHorizontalOffset(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/widget/ListPopupWindow;->mDropDownHorizontalOffset:I
 
@@ -1743,7 +1711,6 @@
 
 .method public setInputMethodMode(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/widget/ListPopupWindow;->mPopup:Landroid/widget/PopupWindow;
 
@@ -1754,7 +1721,6 @@
 
 .method setListItemExpandMax(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/widget/ListPopupWindow;->mListItemExpandMaximum:I
 
@@ -1763,7 +1729,6 @@
 
 .method public setListSelector(Landroid/graphics/drawable/Drawable;)V
     .locals 0
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     iput-object p1, p0, Landroid/widget/ListPopupWindow;->mDropDownListHighlight:Landroid/graphics/drawable/Drawable;
 
@@ -1772,7 +1737,6 @@
 
 .method public setModal(Z)V
     .locals 1
-    .param p1    # Z
 
     const/4 v0, 0x1
 
@@ -1787,7 +1751,6 @@
 
 .method public setOnDismissListener(Landroid/widget/PopupWindow$OnDismissListener;)V
     .locals 1
-    .param p1    # Landroid/widget/PopupWindow$OnDismissListener;
 
     iget-object v0, p0, Landroid/widget/ListPopupWindow;->mPopup:Landroid/widget/PopupWindow;
 
@@ -1798,7 +1761,6 @@
 
 .method public setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
     .locals 0
-    .param p1    # Landroid/widget/AdapterView$OnItemClickListener;
 
     iput-object p1, p0, Landroid/widget/ListPopupWindow;->mItemClickListener:Landroid/widget/AdapterView$OnItemClickListener;
 
@@ -1807,7 +1769,6 @@
 
 .method public setOnItemSelectedListener(Landroid/widget/AdapterView$OnItemSelectedListener;)V
     .locals 0
-    .param p1    # Landroid/widget/AdapterView$OnItemSelectedListener;
 
     iput-object p1, p0, Landroid/widget/ListPopupWindow;->mItemSelectedListener:Landroid/widget/AdapterView$OnItemSelectedListener;
 
@@ -1816,7 +1777,6 @@
 
 .method public setPromptPosition(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/widget/ListPopupWindow;->mPromptPosition:I
 
@@ -1825,7 +1785,6 @@
 
 .method public setPromptView(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p0}, Landroid/widget/ListPopupWindow;->isShowing()Z
 
@@ -1848,7 +1807,6 @@
 
 .method public setSelection(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Landroid/widget/ListPopupWindow;->mDropDownList:Landroid/widget/ListPopupWindow$DropDownListView;
 
@@ -1883,7 +1841,6 @@
 
 .method public setSoftInputMode(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/widget/ListPopupWindow;->mPopup:Landroid/widget/PopupWindow;
 
@@ -1894,7 +1851,6 @@
 
 .method public setVerticalOffset(I)V
     .locals 1
-    .param p1    # I
 
     iput p1, p0, Landroid/widget/ListPopupWindow;->mDropDownVerticalOffset:I
 
@@ -1907,7 +1863,6 @@
 
 .method public setWidth(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/widget/ListPopupWindow;->mDropDownWidth:I
 
@@ -1916,7 +1871,6 @@
 
 .method public setWindowLayoutType(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/widget/ListPopupWindow;->mPopup:Landroid/widget/PopupWindow;
 

@@ -96,7 +96,6 @@
 
 .method public static buildPanelFileUri(Ljava/lang/String;)Landroid/net/Uri;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     sget-object v0, Lcom/sec/orca/shop/client/library/ShopConstants;->BASE_URI:Landroid/net/Uri;
 
@@ -157,7 +156,6 @@
 
 .method public static buildStickerFileUri(Ljava/lang/String;)Landroid/net/Uri;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     sget-object v0, Lcom/sec/orca/shop/client/library/ShopConstants;->BASE_URI:Landroid/net/Uri;
 
@@ -260,7 +258,6 @@
 
 .method public static buildStickerUriById(Ljava/lang/String;)Landroid/net/Uri;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     sget-object v0, Lcom/sec/orca/shop/client/library/ShopConstants;->BASE_URI:Landroid/net/Uri;
 
@@ -293,7 +290,6 @@
 
 .method public static buildStickerUriByPackage(Ljava/lang/String;)Landroid/net/Uri;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     sget-object v0, Lcom/sec/orca/shop/client/library/ShopConstants;->BASE_URI:Landroid/net/Uri;
 

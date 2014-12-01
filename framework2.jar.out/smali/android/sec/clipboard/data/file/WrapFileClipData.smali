@@ -23,7 +23,6 @@
 # direct methods
 .method public constructor <init>(Landroid/sec/clipboard/data/ClipboardData;)V
     .locals 1
-    .param p1    # Landroid/sec/clipboard/data/ClipboardData;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -173,7 +172,6 @@
 
 .method public setClipData(Landroid/sec/clipboard/data/ClipboardData;)V
     .locals 1
-    .param p1    # Landroid/sec/clipboard/data/ClipboardData;
 
     const/4 v0, 0x0
 
@@ -186,7 +184,6 @@
 
 .method public setDir(Ljava/io/File;)V
     .locals 0
-    .param p1    # Ljava/io/File;
 
     iput-object p1, p0, Landroid/sec/clipboard/data/file/WrapFileClipData;->mDir:Ljava/io/File;
 
@@ -195,7 +192,6 @@
 
 .method public setFile(Ljava/io/File;)V
     .locals 0
-    .param p1    # Ljava/io/File;
 
     iput-object p1, p0, Landroid/sec/clipboard/data/file/WrapFileClipData;->mPath:Ljava/io/File;
 
@@ -204,7 +200,6 @@
 
 .method public setProtectState(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/sec/clipboard/data/file/WrapFileClipData;->mIsProtected:Z
 

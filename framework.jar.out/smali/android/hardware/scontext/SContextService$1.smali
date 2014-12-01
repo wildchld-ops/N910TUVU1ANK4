@@ -36,8 +36,6 @@
 # virtual methods
 .method public onEventChanged(ILandroid/os/Bundle;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     if-nez p2, :cond_1
 

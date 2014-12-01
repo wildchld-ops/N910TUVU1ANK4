@@ -25,8 +25,6 @@
 
 .method private varargs generatePacket([B[B)[B
     .locals 9
-    .param p1    # [B
-    .param p2    # [B
 
     array-length v1, p2
 
@@ -152,7 +150,6 @@
 
 .method private setSensorHubManager(Landroid/hardware/sensorhub/SensorHubManager;)V
     .locals 0
-    .param p1    # Landroid/hardware/sensorhub/SensorHubManager;
 
     iput-object p1, p0, Landroid/hardware/contextaware/utilbundle/SensorHubCommManager;->mSensorHubManager:Landroid/hardware/sensorhub/SensorHubManager;
 
@@ -163,7 +160,6 @@
 # virtual methods
 .method public final initializeManager(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     if-nez p1, :cond_1
 
@@ -201,8 +197,6 @@
 
 .method public final varargs sendCmdToSensorHub([B[B)I
     .locals 5
-    .param p1    # [B
-    .param p2    # [B
 
     array-length v0, p2
 
@@ -294,8 +288,6 @@
 
 .method public final sendPacketToSensorHub(I[B)I
     .locals 4
-    .param p1    # I
-    .param p2    # [B
 
     invoke-direct {p0}, Landroid/hardware/contextaware/utilbundle/SensorHubCommManager;->getSensorHubManager()Landroid/hardware/sensorhub/SensorHubManager;
 
@@ -389,8 +381,6 @@
 
 .method public final varargs testGeneratePacket([B[B)[B
     .locals 1
-    .param p1    # [B
-    .param p2    # [B
     .annotation runtime Landroid/test/FlakyTest;
     .end annotation
 

@@ -36,7 +36,6 @@
 # virtual methods
 .method public doFrame(J)V
     .locals 4
-    .param p1    # J
 
     const/4 v3, 0x0
 

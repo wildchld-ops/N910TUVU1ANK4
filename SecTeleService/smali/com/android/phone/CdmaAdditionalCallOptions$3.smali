@@ -95,7 +95,7 @@
 
     iget-object v2, p0, Lcom/android/phone/CdmaAdditionalCallOptions$3;->this$0:Lcom/android/phone/CdmaAdditionalCallOptions;
 
-    # invokes: Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    # invokes: Lcom/android/phone/CdmaAdditionalCallOptions;->getContentResolver()Landroid/content/ContentResolver;
     invoke-static {v2}, Lcom/android/phone/CdmaAdditionalCallOptions;->access$200(Lcom/android/phone/CdmaAdditionalCallOptions;)Landroid/content/ContentResolver;
 
     move-result-object v2
@@ -124,7 +124,7 @@
     :cond_1
     iget-object v2, p0, Lcom/android/phone/CdmaAdditionalCallOptions$3;->this$0:Lcom/android/phone/CdmaAdditionalCallOptions;
 
-    # invokes: Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    # invokes: Lcom/android/phone/CdmaAdditionalCallOptions;->getContentResolver()Landroid/content/ContentResolver;
     invoke-static {v2}, Lcom/android/phone/CdmaAdditionalCallOptions;->access$300(Lcom/android/phone/CdmaAdditionalCallOptions;)Landroid/content/ContentResolver;
 
     move-result-object v2

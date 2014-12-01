@@ -133,7 +133,6 @@
 
 .method public static getIkeErrorString(I)Ljava/lang/String;
     .locals 1
-    .param p0    # I
 
     const/4 v0, 0x0
 
@@ -253,7 +252,6 @@
 
 .method public static toTestAppEventStatus(I)Ljava/lang/String;
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 

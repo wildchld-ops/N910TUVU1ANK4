@@ -28,7 +28,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/enterprise/vpn/EnterpriseVpnPolicy;I)V
     .locals 1
-    .param p2    # I
 
     iput-object p1, p0, Lcom/android/server/enterprise/vpn/EnterpriseVpnPolicy$ProxyServiceConnection;->this$0:Lcom/android/server/enterprise/vpn/EnterpriseVpnPolicy;
 
@@ -45,7 +44,6 @@
 
 .method static synthetic access$500(Lcom/android/server/enterprise/vpn/EnterpriseVpnPolicy$ProxyServiceConnection;)Landroid/app/enterprise/IEnterpriseVpnInterface;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/vpn/EnterpriseVpnPolicy$ProxyServiceConnection;
 
     iget-object v0, p0, Lcom/android/server/enterprise/vpn/EnterpriseVpnPolicy$ProxyServiceConnection;->mProxyService:Landroid/app/enterprise/IEnterpriseVpnInterface;
 
@@ -192,8 +190,6 @@
 
 .method public onServiceConnected(Landroid/content/ComponentName;Landroid/os/IBinder;)V
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Landroid/os/IBinder;
 
     const-string v0, "Cisco_Vpn_Policy"
 
@@ -230,7 +226,6 @@
 
 .method public onServiceDisconnected(Landroid/content/ComponentName;)V
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
 
     const-string v0, "Cisco_Vpn_Policy"
 

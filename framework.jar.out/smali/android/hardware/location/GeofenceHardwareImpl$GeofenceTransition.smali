@@ -33,12 +33,6 @@
 # direct methods
 .method constructor <init>(Landroid/hardware/location/GeofenceHardwareImpl;IIJLandroid/location/Location;II)V
     .locals 0
-    .param p2    # I
-    .param p3    # I
-    .param p4    # J
-    .param p6    # Landroid/location/Location;
-    .param p7    # I
-    .param p8    # I
 
     iput-object p1, p0, Landroid/hardware/location/GeofenceHardwareImpl$GeofenceTransition;->this$0:Landroid/hardware/location/GeofenceHardwareImpl;
 
@@ -61,7 +55,6 @@
 
 .method static synthetic access$200(Landroid/hardware/location/GeofenceHardwareImpl$GeofenceTransition;)I
     .locals 1
-    .param p0    # Landroid/hardware/location/GeofenceHardwareImpl$GeofenceTransition;
 
     iget v0, p0, Landroid/hardware/location/GeofenceHardwareImpl$GeofenceTransition;->mGeofenceId:I
 
@@ -70,7 +63,6 @@
 
 .method static synthetic access$400(Landroid/hardware/location/GeofenceHardwareImpl$GeofenceTransition;)I
     .locals 1
-    .param p0    # Landroid/hardware/location/GeofenceHardwareImpl$GeofenceTransition;
 
     iget v0, p0, Landroid/hardware/location/GeofenceHardwareImpl$GeofenceTransition;->mTransition:I
 
@@ -79,7 +71,6 @@
 
 .method static synthetic access$500(Landroid/hardware/location/GeofenceHardwareImpl$GeofenceTransition;)Landroid/location/Location;
     .locals 1
-    .param p0    # Landroid/hardware/location/GeofenceHardwareImpl$GeofenceTransition;
 
     iget-object v0, p0, Landroid/hardware/location/GeofenceHardwareImpl$GeofenceTransition;->mLocation:Landroid/location/Location;
 
@@ -88,7 +79,6 @@
 
 .method static synthetic access$600(Landroid/hardware/location/GeofenceHardwareImpl$GeofenceTransition;)J
     .locals 2
-    .param p0    # Landroid/hardware/location/GeofenceHardwareImpl$GeofenceTransition;
 
     iget-wide v0, p0, Landroid/hardware/location/GeofenceHardwareImpl$GeofenceTransition;->mTimestamp:J
 
@@ -97,7 +87,6 @@
 
 .method static synthetic access$700(Landroid/hardware/location/GeofenceHardwareImpl$GeofenceTransition;)I
     .locals 1
-    .param p0    # Landroid/hardware/location/GeofenceHardwareImpl$GeofenceTransition;
 
     iget v0, p0, Landroid/hardware/location/GeofenceHardwareImpl$GeofenceTransition;->mMonitoringType:I
 

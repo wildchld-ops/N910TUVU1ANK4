@@ -18,7 +18,6 @@
 
 .method public static getUsefullIntent(Landroid/content/Context;)Landroid/content/Intent;
     .locals 9
-    .param p0    # Landroid/content/Context;
 
     const/4 v5, 0x0
 
@@ -188,8 +187,6 @@
 
 .method public static isValidIntent(Landroid/content/Context;Landroid/content/Intent;)Z
     .locals 7
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/content/Intent;
 
     const/4 v4, 0x1
 
@@ -287,7 +284,6 @@
 
 .method public static marshall(Landroid/content/Intent;)[B
     .locals 3
-    .param p0    # Landroid/content/Intent;
 
     const/4 v2, 0x0
 
@@ -310,7 +306,6 @@
 
 .method public static unmarshall([B)Landroid/content/Intent;
     .locals 4
-    .param p0    # [B
 
     const/4 v3, 0x0
 

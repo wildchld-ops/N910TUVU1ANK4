@@ -29,7 +29,6 @@
 # direct methods
 .method public constructor <init>(Landroid/net/wifi/WifiStateMachine;Ljava/net/Socket;)V
     .locals 0
-    .param p2    # Ljava/net/Socket;
 
     iput-object p1, p0, Landroid/net/wifi/WifiStateMachine$ShareProfileFileReceiver;->this$0:Landroid/net/wifi/WifiStateMachine;
 

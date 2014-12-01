@@ -352,7 +352,6 @@
 
 .method public static assignSeinfoValue(Landroid/content/pm/PackageParser$Package;)V
     .locals 18
-    .param p0    # Landroid/content/pm/PackageParser$Package;
 
     move-object/from16 v0, p0
 
@@ -1439,7 +1438,6 @@
 
 .method public static checkContainerAllowCategory(Ljava/lang/String;)Z
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -1499,8 +1497,6 @@
 
 .method protected static checkIfSingleContainerOwnerIsBeingAdded(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x1
 
@@ -1726,8 +1722,6 @@
 
 .method protected static createMyContainerID(Ljava/lang/String;Ljava/lang/String;)I
     .locals 10
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const-string v8, "container"
 
@@ -1893,10 +1887,6 @@
 
 .method private static determineInstallPolicyType(Lorg/xmlpull/v1/XmlPullParser;ZLjava/lang/String;Lcom/android/server/pm/SELinuxMMAC$InstallPolicy;)Lcom/android/server/pm/SELinuxMMAC$InstallPolicy;
     .locals 59
-    .param p0    # Lorg/xmlpull/v1/XmlPullParser;
-    .param p1    # Z
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/android/server/pm/SELinuxMMAC$InstallPolicy;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -3586,8 +3576,6 @@
 
 .method public static findMacPermEntry(Ljava/lang/String;Ljava/lang/String;)Landroid/content/pm/ApplicationInfo;
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x1
 
@@ -3861,8 +3849,6 @@
 
 .method public static getApplicationInfo(Ljava/lang/String;[Ljava/lang/String;)Landroid/content/pm/ApplicationInfo;
     .locals 14
-    .param p0    # Ljava/lang/String;
-    .param p1    # [Ljava/lang/String;
 
     const/4 v13, 0x0
 
@@ -4161,8 +4147,6 @@
 
 .method public static getBlacklist(II)Ljava/util/HashSet;
     .locals 2
-    .param p0    # I
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II)",
@@ -4196,8 +4180,6 @@
 
 .method public static getContainerAllowCategory(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Lcom/android/server/pm/SELinuxMMAC$GenericMDMID;
 
@@ -4236,9 +4218,6 @@
 
 .method protected static getContainerAllowPackageNamesFromSEContainer(III)[Ljava/lang/String;
     .locals 13
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
 
     const/4 v12, 0x4
 
@@ -4432,8 +4411,6 @@
 
 .method protected static getMyContainerIDs(Ljava/lang/String;Ljava/lang/String;)Ljava/util/HashSet;
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -4484,7 +4461,6 @@
 
 .method private static getPackageLevelbyKey(Ljava/lang/String;)I
     .locals 8
-    .param p0    # Ljava/lang/String;
 
     const/4 v0, -0x1
 
@@ -4557,9 +4533,6 @@
 
 .method protected static getPackageNamesFromSEContainerID(III)[Ljava/lang/String;
     .locals 7
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
 
     const/4 v5, 0x0
 
@@ -4696,7 +4669,6 @@
 
 .method public static getSBAlist(I)Ljava/util/HashSet;
     .locals 1
-    .param p0    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -4720,11 +4692,6 @@
 
 .method protected static getSEContainerIDFromPackageName(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;II)I
     .locals 7
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
 
     const/4 v4, -0x1
 
@@ -4851,11 +4818,6 @@
 
 .method protected static getSEContainerIDsFromContainerAllowPackage(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;II)[I
     .locals 14
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
 
     new-instance v3, Ljava/util/ArrayList;
 
@@ -5065,8 +5027,6 @@
 
 .method public static getWhitelist(II)Ljava/util/HashSet;
     .locals 2
-    .param p0    # I
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II)",
@@ -5179,9 +5139,6 @@
 
 .method public static isContainerCreatedbyCaller(Ljava/lang/String;Ljava/lang/String;I)Z
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     new-instance v1, Lcom/android/server/pm/SELinuxMMAC$GenericMDMID;
 
@@ -5227,7 +5184,6 @@
 
 .method public static isKnoxKey([Landroid/content/pm/Signature;)Z
     .locals 6
-    .param p0    # [Landroid/content/pm/Signature;
 
     array-length v2, p0
 
@@ -5285,7 +5241,6 @@
 
 .method public static isKnoxKey([Ljava/lang/String;)Z
     .locals 14
-    .param p0    # [Ljava/lang/String;
 
     const/4 v8, 0x0
 
@@ -5395,7 +5350,6 @@
 
 .method public static isMyContainerID(I)Z
     .locals 1
-    .param p0    # I
 
     const/16 v0, 0xc9
 
@@ -5418,7 +5372,6 @@
 
 .method protected static isSEContainerActivated(I)Z
     .locals 7
-    .param p0    # I
 
     const/4 v2, 0x0
 
@@ -5495,7 +5448,6 @@
 
 .method private static isSystemApp(Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "media"
 
@@ -5543,7 +5495,6 @@
 
 .method public static passInstallPolicyChecks(Landroid/content/pm/PackageParser$Package;)Z
     .locals 10
-    .param p0    # Landroid/content/pm/PackageParser$Package;
 
     const/4 v9, 0x0
 
@@ -5668,7 +5619,6 @@
 
 .method public static readInstallPolicy(Ljava/io/File;)Z
     .locals 3
-    .param p0    # Ljava/io/File;
 
     const/4 v0, 0x2
 
@@ -5693,7 +5643,6 @@
 
 .method private static readInstallPolicy([Ljava/io/File;)Z
     .locals 23
-    .param p0    # [Ljava/io/File;
 
     const/4 v13, 0x0
 
@@ -6764,9 +6713,6 @@
 
 .method protected static removeMyContainerID(Ljava/lang/String;Ljava/lang/String;I)I
     .locals 7
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v2, 0x0
 
@@ -6858,7 +6804,6 @@
 
 .method public static setEnforcingMode(Z)V
     .locals 2
-    .param p0    # Z
 
     const-string/jumbo v1, "persist.mmac.enforce"
 
@@ -6879,8 +6824,6 @@
 
 .method private static setSecurityContext(Landroid/content/pm/PackageParser$Package;I)V
     .locals 2
-    .param p0    # Landroid/content/pm/PackageParser$Package;
-    .param p1    # I
 
     iget-object v0, p0, Landroid/content/pm/PackageParser$Package;->applicationInfo:Landroid/content/pm/ApplicationInfo;
 
@@ -6958,7 +6901,6 @@
 
 .method private static validateValue(Ljava/lang/String;)Z
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     const/4 v3, 0x0
 

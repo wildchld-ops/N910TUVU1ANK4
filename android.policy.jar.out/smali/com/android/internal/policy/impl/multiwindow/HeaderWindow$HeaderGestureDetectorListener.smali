@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;Lcom/android/internal/policy/impl/multiwindow/HeaderWindow$1;)V
     .locals 0
-    .param p1    # Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;
-    .param p2    # Lcom/android/internal/policy/impl/multiwindow/HeaderWindow$1;
 
     invoke-direct {p0, p1}, Lcom/android/internal/policy/impl/multiwindow/HeaderWindow$HeaderGestureDetectorListener;-><init>(Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;)V
 
@@ -46,7 +44,6 @@
 # virtual methods
 .method public onDown(Landroid/view/MotionEvent;)Z
     .locals 2
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v1, 0x0
 
@@ -60,10 +57,6 @@
 
 .method public onFling(Landroid/view/MotionEvent;Landroid/view/MotionEvent;FF)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # Landroid/view/MotionEvent;
-    .param p3    # F
-    .param p4    # F
 
     const/4 v0, 0x0
 
@@ -72,7 +65,6 @@
 
 .method public onLongPress(Landroid/view/MotionEvent;)V
     .locals 5
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/multiwindow/HeaderWindow$HeaderGestureDetectorListener;->this$0:Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;
 
@@ -157,10 +149,6 @@
 
 .method public onScroll(Landroid/view/MotionEvent;Landroid/view/MotionEvent;FF)Z
     .locals 2
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # Landroid/view/MotionEvent;
-    .param p3    # F
-    .param p4    # F
 
     const/4 v1, 0x1
 
@@ -174,14 +162,12 @@
 
 .method public onShowPress(Landroid/view/MotionEvent;)V
     .locals 0
-    .param p1    # Landroid/view/MotionEvent;
 
     return-void
 .end method
 
 .method public onSingleTapUp(Landroid/view/MotionEvent;)Z
     .locals 2
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v1, 0x0
 

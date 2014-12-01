@@ -1138,10 +1138,6 @@
 
 .method public constructor <init>(FFFJ)V
     .locals 26
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # J
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -1745,9 +1741,6 @@
 
 .method private computeGeocentricCoordinates(FFF)V
     .locals 15
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
 
     const/high16 v11, 0x447a0000
 
@@ -1902,7 +1895,6 @@
 
 .method private static computeSchmidtQuasiNormFactors(I)[[F
     .locals 10
-    .param p0    # I
 
     const/4 v4, 0x1
 

@@ -15,8 +15,6 @@
 # direct methods
 .method public constructor <init>(Landroid/os/IBinder;Landroid/hardware/contextaware/manager/ContextAwareService$ServiceHandler;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Landroid/hardware/contextaware/manager/ContextAwareService$ServiceHandler;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -31,8 +29,6 @@
 # virtual methods
 .method public final updateCmdProcessResult(Ljava/lang/String;Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Bundle;
 
     sget-object v3, Landroid/hardware/contextaware/ContextList$ContextType;->CMD_PROCESS_FAULT_DETECTION:Landroid/hardware/contextaware/ContextList$ContextType;
 

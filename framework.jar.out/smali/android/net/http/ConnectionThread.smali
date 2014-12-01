@@ -32,10 +32,6 @@
 # direct methods
 .method constructor <init>(Landroid/content/Context;ILandroid/net/http/RequestQueue$ConnectionManager;Landroid/net/http/RequestFeeder;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Landroid/net/http/RequestQueue$ConnectionManager;
-    .param p4    # Landroid/net/http/RequestFeeder;
 
     invoke-direct {p0}, Ljava/lang/Thread;-><init>()V
 

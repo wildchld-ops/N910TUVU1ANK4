@@ -73,7 +73,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -84,8 +83,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const v5, 0x10805ed
 
@@ -166,7 +163,6 @@
 
 .method static synthetic access$000(Lcom/android/internal/widget/SlidingTab;)V
     .locals 0
-    .param p0    # Lcom/android/internal/widget/SlidingTab;
 
     invoke-direct {p0}, Lcom/android/internal/widget/SlidingTab;->onAnimationDone()V
 
@@ -175,8 +171,6 @@
 
 .method static synthetic access$202(Lcom/android/internal/widget/SlidingTab;Z)Z
     .locals 0
-    .param p0    # Lcom/android/internal/widget/SlidingTab;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/internal/widget/SlidingTab;->mAnimating:Z
 
@@ -185,7 +179,6 @@
 
 .method static synthetic access$300(Lcom/android/internal/widget/SlidingTab;)V
     .locals 0
-    .param p0    # Lcom/android/internal/widget/SlidingTab;
 
     invoke-direct {p0}, Lcom/android/internal/widget/SlidingTab;->resetView()V
 
@@ -194,7 +187,6 @@
 
 .method static synthetic access$400(Lcom/android/internal/widget/SlidingTab;)Landroid/view/animation/Animation$AnimationListener;
     .locals 1
-    .param p0    # Lcom/android/internal/widget/SlidingTab;
 
     iget-object v0, p0, Lcom/android/internal/widget/SlidingTab;->mAnimationDoneListener:Landroid/view/animation/Animation$AnimationListener;
 
@@ -203,7 +195,6 @@
 
 .method static synthetic access$500(Lcom/android/internal/widget/SlidingTab;)Lcom/android/internal/widget/SlidingTab$Slider;
     .locals 1
-    .param p0    # Lcom/android/internal/widget/SlidingTab;
 
     iget-object v0, p0, Lcom/android/internal/widget/SlidingTab;->mLeftSlider:Lcom/android/internal/widget/SlidingTab$Slider;
 
@@ -212,7 +203,6 @@
 
 .method static synthetic access$600(Lcom/android/internal/widget/SlidingTab;)Lcom/android/internal/widget/SlidingTab$Slider;
     .locals 1
-    .param p0    # Lcom/android/internal/widget/SlidingTab;
 
     iget-object v0, p0, Lcom/android/internal/widget/SlidingTab;->mRightSlider:Lcom/android/internal/widget/SlidingTab$Slider;
 
@@ -255,7 +245,6 @@
 
 .method private dispatchTriggerEvent(I)V
     .locals 2
-    .param p1    # I
 
     const-wide/16 v0, 0x28
 
@@ -293,7 +282,6 @@
 
 .method private log(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "SlidingTab"
 
@@ -304,8 +292,6 @@
 
 .method private moveHandle(FF)V
     .locals 6
-    .param p1    # F
-    .param p2    # F
 
     iget-object v4, p0, Lcom/android/internal/widget/SlidingTab;->mCurrentSlider:Lcom/android/internal/widget/SlidingTab$Slider;
 
@@ -406,7 +392,6 @@
 
 .method private setGrabbedState(I)V
     .locals 2
-    .param p1    # I
 
     iget v0, p0, Lcom/android/internal/widget/SlidingTab;->mGrabbedState:I
 
@@ -430,7 +415,6 @@
 
 .method private declared-synchronized vibrate(J)V
     .locals 5
-    .param p1    # J
 
     const/4 v0, 0x1
 
@@ -503,9 +487,6 @@
 
 .method private withinView(FFLandroid/view/View;)Z
     .locals 2
-    .param p1    # F
-    .param p2    # F
-    .param p3    # Landroid/view/View;
 
     const/high16 v1, -0x3db80000
 
@@ -570,7 +551,6 @@
 # virtual methods
 .method public onInterceptTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 14
-    .param p1    # Landroid/view/MotionEvent;
 
     const v7, 0x3f2aaaab
 
@@ -751,11 +731,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 6
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     if-nez p1, :cond_0
 
@@ -820,8 +795,6 @@
 
 .method protected onMeasure(II)V
     .locals 11
-    .param p1    # I
-    .param p2    # I
 
     invoke-static {p1}, Landroid/view/View$MeasureSpec;->getMode(I)I
 
@@ -908,7 +881,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 12
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v10, 0x2
 
@@ -1144,8 +1116,6 @@
 
 .method protected onVisibilityChanged(Landroid/view/View;I)V
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     invoke-super {p0, p1, p2}, Landroid/view/View;->onVisibilityChanged(Landroid/view/View;I)V
 
@@ -1165,7 +1135,6 @@
 
 .method public reset(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/internal/widget/SlidingTab;->mLeftSlider:Lcom/android/internal/widget/SlidingTab$Slider;
 
@@ -1187,8 +1156,6 @@
 
 .method public setHoldAfterTrigger(ZZ)V
     .locals 0
-    .param p1    # Z
-    .param p2    # Z
 
     iput-boolean p1, p0, Lcom/android/internal/widget/SlidingTab;->mHoldLeftOnTransition:Z
 
@@ -1199,7 +1166,6 @@
 
 .method public setLeftHintText(I)V
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0}, Lcom/android/internal/widget/SlidingTab;->isHorizontal()Z
 
@@ -1217,10 +1183,6 @@
 
 .method public setLeftTabResources(IIII)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iget-object v0, p0, Lcom/android/internal/widget/SlidingTab;->mLeftSlider:Lcom/android/internal/widget/SlidingTab$Slider;
 
@@ -1247,7 +1209,6 @@
 
 .method public setOnTriggerListener(Lcom/android/internal/widget/SlidingTab$OnTriggerListener;)V
     .locals 0
-    .param p1    # Lcom/android/internal/widget/SlidingTab$OnTriggerListener;
 
     iput-object p1, p0, Lcom/android/internal/widget/SlidingTab;->mOnTriggerListener:Lcom/android/internal/widget/SlidingTab$OnTriggerListener;
 
@@ -1256,7 +1217,6 @@
 
 .method public setRightHintText(I)V
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0}, Lcom/android/internal/widget/SlidingTab;->isHorizontal()Z
 
@@ -1274,10 +1234,6 @@
 
 .method public setRightTabResources(IIII)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iget-object v0, p0, Lcom/android/internal/widget/SlidingTab;->mRightSlider:Lcom/android/internal/widget/SlidingTab$Slider;
 
@@ -1304,7 +1260,6 @@
 
 .method public setVisibility(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/view/View;->getVisibility()I
 
@@ -1328,7 +1283,6 @@
 
 .method startAnimating(Z)V
     .locals 23
-    .param p1    # Z
 
     const/16 v19, 0x1
 

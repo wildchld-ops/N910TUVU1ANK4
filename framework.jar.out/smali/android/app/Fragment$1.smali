@@ -36,7 +36,6 @@
 # virtual methods
 .method public findViewById(I)Landroid/view/View;
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Landroid/app/Fragment$1;->this$0:Landroid/app/Fragment;
 

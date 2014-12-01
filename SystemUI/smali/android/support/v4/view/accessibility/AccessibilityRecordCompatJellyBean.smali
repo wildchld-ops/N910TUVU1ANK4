@@ -14,9 +14,6 @@
 
 .method public static setSource(Ljava/lang/Object;Landroid/view/View;I)V
     .locals 0
-    .param p0    # Ljava/lang/Object;
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     check-cast p0, Landroid/view/accessibility/AccessibilityRecord;
 

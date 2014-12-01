@@ -43,7 +43,7 @@
 
     sget-object v8, Lcom/android/phone/PhoneGlobals$26;->$SwitchMap$com$android$phone$CallMessageConstants$RequestType:[I
 
-    invoke-virtual {p1}, Ljava/lang/Enum;->ordinal()I
+    invoke-virtual {p1}, Lcom/android/phone/CallMessageConstants$RequestType;->ordinal()I
 
     move-result v9
 
@@ -139,7 +139,7 @@
 
     move-result-object v8
 
-    invoke-virtual {v8}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v8}, Lcom/android/phone/PhoneGlobals;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v8
 

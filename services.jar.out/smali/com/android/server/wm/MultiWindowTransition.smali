@@ -75,10 +75,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Lcom/android/server/wm/DisplayContent;Landroid/view/SurfaceSession;Lcom/android/server/wm/WindowManagerService;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/server/wm/DisplayContent;
-    .param p3    # Landroid/view/SurfaceSession;
-    .param p4    # Lcom/android/server/wm/WindowManagerService;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -115,7 +111,6 @@
 
 .method static synthetic access$000(Lcom/android/server/wm/MultiWindowTransition;)Lcom/android/server/wm/WindowManagerService;
     .locals 1
-    .param p0    # Lcom/android/server/wm/MultiWindowTransition;
 
     iget-object v0, p0, Lcom/android/server/wm/MultiWindowTransition;->mService:Lcom/android/server/wm/WindowManagerService;
 
@@ -124,7 +119,6 @@
 
 .method private createFreezeSurface(Z)Lcom/android/server/wm/MultiWindowTransition$ScreenFreezeSurface;
     .locals 13
-    .param p1    # Z
 
     const/4 v12, 0x0
 
@@ -228,7 +222,6 @@
 
 .method private doDefaultAnimation(J)Z
     .locals 6
-    .param p1    # J
 
     const/4 v4, 0x0
 
@@ -356,7 +349,6 @@
 
 .method private setDrawFinishedAnimation(Lcom/android/server/wm/AppWindowToken;)Z
     .locals 5
-    .param p1    # Lcom/android/server/wm/AppWindowToken;
 
     const/4 v0, 0x0
 
@@ -410,7 +402,6 @@
 
 .method private setMaximizeAnimation(Lcom/android/server/wm/AppWindowToken;)Z
     .locals 8
-    .param p1    # Lcom/android/server/wm/AppWindowToken;
 
     const/4 v0, 0x0
 
@@ -498,7 +489,6 @@
 
 .method private setMinimizeAnimation(Lcom/android/server/wm/AppWindowToken;)Z
     .locals 9
-    .param p1    # Lcom/android/server/wm/AppWindowToken;
 
     if-eqz p1, :cond_0
 
@@ -588,7 +578,6 @@
 
 .method private stepAnimation(J)Z
     .locals 1
-    .param p1    # J
 
     iget v0, p0, Lcom/android/server/wm/MultiWindowTransition;->mTransition:I
 
@@ -663,7 +652,6 @@
 
 .method setApplicationDrawn(Lcom/android/server/wm/AppWindowToken;)V
     .locals 1
-    .param p1    # Lcom/android/server/wm/AppWindowToken;
 
     iget-object v0, p0, Lcom/android/server/wm/MultiWindowTransition;->mMaxmizingAppList:Ljava/util/ArrayList;
 
@@ -707,8 +695,6 @@
 
 .method public setMultiWindowTransition(Lcom/android/server/wm/AppWindowToken;I)V
     .locals 1
-    .param p1    # Lcom/android/server/wm/AppWindowToken;
-    .param p2    # I
 
     packed-switch p2, :pswitch_data_0
 
@@ -787,7 +773,6 @@
 
 .method public stepAnimationLocked(J)Z
     .locals 1
-    .param p1    # J
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/wm/MultiWindowTransition;->stepAnimation(J)Z
 

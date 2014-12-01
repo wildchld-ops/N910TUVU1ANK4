@@ -306,7 +306,7 @@
 
     iput-object v8, p0, Lcom/google/common/collect/MapMakerInternalMap;->ticker:Lcom/google/common/base/Ticker;
 
-    invoke-virtual {p1}, Lcom/google/common/collect/GenericMapMaker;->getRemovalListener()Lcom/google/common/collect/MapMaker$RemovalListener;
+    invoke-virtual {p1}, Lcom/google/common/collect/MapMaker;->getRemovalListener()Lcom/google/common/collect/MapMaker$RemovalListener;
 
     move-result-object v8
 

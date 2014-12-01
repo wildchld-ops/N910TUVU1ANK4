@@ -39,7 +39,6 @@
 # virtual methods
 .method public onScale(Landroid/view/ScaleGestureDetector;)Z
     .locals 5
-    .param p1    # Landroid/view/ScaleGestureDetector;
 
     const/4 v1, 0x1
 
@@ -137,7 +136,6 @@
 
 .method public onScaleBegin(Landroid/view/ScaleGestureDetector;)Z
     .locals 1
-    .param p1    # Landroid/view/ScaleGestureDetector;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/AbstractKeyboardView$8;->this$0:Lcom/diotek/ime/framework/view/AbstractKeyboardView;
 
@@ -168,7 +166,6 @@
 
 .method public onScaleEnd(Landroid/view/ScaleGestureDetector;)V
     .locals 1
-    .param p1    # Landroid/view/ScaleGestureDetector;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/AbstractKeyboardView$8;->this$0:Lcom/diotek/ime/framework/view/AbstractKeyboardView;
 

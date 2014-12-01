@@ -36,7 +36,6 @@
 # virtual methods
 .method public onRecognitionResult(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/google/android/voiceime/IntentApiTrigger$1;->this$0:Lcom/google/android/voiceime/IntentApiTrigger;
 

@@ -20,7 +20,6 @@
 
 .method public static getStorageState(Ljava/io/File;)Ljava/lang/String;
     .locals 7
-    .param p0    # Ljava/io/File;
 
     sget v3, Landroid/os/Build$VERSION;->SDK_INT:I
 

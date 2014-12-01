@@ -28,7 +28,6 @@
 
 .method synthetic constructor <init>(Lcom/android/internal/os/RuntimeInit$1;)V
     .locals 0
-    .param p1    # Lcom/android/internal/os/RuntimeInit$1;
 
     invoke-direct {p0}, Lcom/android/internal/os/RuntimeInit$UncaughtHandler;-><init>()V
 
@@ -39,8 +38,6 @@
 # virtual methods
 .method public uncaughtException(Ljava/lang/Thread;Ljava/lang/Throwable;)V
     .locals 9
-    .param p1    # Ljava/lang/Thread;
-    .param p2    # Ljava/lang/Throwable;
 
     const/16 v8, 0xa
 

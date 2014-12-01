@@ -32,7 +32,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, -0x1
 
@@ -61,8 +60,6 @@
 # virtual methods
 .method protected createProgram(Landroid/filterfw/core/FilterContext;Landroid/filterfw/core/FrameFormat;)V
     .locals 3
-    .param p1    # Landroid/filterfw/core/FilterContext;
-    .param p2    # Landroid/filterfw/core/FrameFormat;
 
     iget-object v0, p0, Landroid/filterpacks/imageproc/CropFilter;->mLastFormat:Landroid/filterfw/core/FrameFormat;
 
@@ -165,8 +162,6 @@
 
 .method public getOutputFormat(Ljava/lang/String;Landroid/filterfw/core/FrameFormat;)Landroid/filterfw/core/FrameFormat;
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/filterfw/core/FrameFormat;
 
     const/4 v1, 0x0
 
@@ -181,7 +176,6 @@
 
 .method public process(Landroid/filterfw/core/FilterContext;)V
     .locals 9
-    .param p1    # Landroid/filterfw/core/FilterContext;
 
     const/4 v8, -0x1
 

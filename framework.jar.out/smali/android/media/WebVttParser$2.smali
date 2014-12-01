@@ -36,7 +36,6 @@
 # virtual methods
 .method public parse(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const-string/jumbo v0, "\ufeff"
 

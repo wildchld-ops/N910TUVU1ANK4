@@ -43,7 +43,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/DeviceNameSettings;)Landroid/app/AlertDialog;
     .locals 1
-    .param p0    # Lcom/android/settings/DeviceNameSettings;
 
     iget-object v0, p0, Lcom/android/settings/DeviceNameSettings;->mAlertDialog:Landroid/app/AlertDialog;
 
@@ -52,7 +51,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/DeviceNameSettings;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/settings/DeviceNameSettings;
 
     iget-object v0, p0, Lcom/android/settings/DeviceNameSettings;->mTempName:Ljava/lang/String;
 
@@ -61,8 +59,6 @@
 
 .method static synthetic access$102(Lcom/android/settings/DeviceNameSettings;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/android/settings/DeviceNameSettings;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/settings/DeviceNameSettings;->mTempName:Ljava/lang/String;
 
@@ -71,7 +67,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/DeviceNameSettings;)Landroid/widget/EditText;
     .locals 1
-    .param p0    # Lcom/android/settings/DeviceNameSettings;
 
     iget-object v0, p0, Lcom/android/settings/DeviceNameSettings;->mEditText:Landroid/widget/EditText;
 
@@ -80,7 +75,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/DeviceNameSettings;)Landroid/widget/Toast;
     .locals 1
-    .param p0    # Lcom/android/settings/DeviceNameSettings;
 
     iget-object v0, p0, Lcom/android/settings/DeviceNameSettings;->mMaxToast:Landroid/widget/Toast;
 
@@ -89,8 +83,6 @@
 
 .method static synthetic access$302(Lcom/android/settings/DeviceNameSettings;Landroid/widget/Toast;)Landroid/widget/Toast;
     .locals 0
-    .param p0    # Lcom/android/settings/DeviceNameSettings;
-    .param p1    # Landroid/widget/Toast;
 
     iput-object p1, p0, Lcom/android/settings/DeviceNameSettings;->mMaxToast:Landroid/widget/Toast;
 
@@ -99,7 +91,6 @@
 
 .method private initView(Landroid/view/View;)V
     .locals 7
-    .param p1    # Landroid/view/View;
 
     const/4 v6, 0x1
 
@@ -212,7 +203,6 @@
 
 .method static newInstance(I)Lcom/android/settings/DeviceNameSettings;
     .locals 3
-    .param p0    # I
 
     new-instance v1, Lcom/android/settings/DeviceNameSettings;
 
@@ -277,8 +267,6 @@
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 1
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/settings/DeviceNameSettings;->listener:Lcom/android/settings/DeviceNameSettings$ConfirmationDialogFragmentListener;
 
@@ -309,7 +297,6 @@
 
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v3, 0x0
 
@@ -394,9 +381,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 1
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     invoke-super {p0, p1, p2, p3}, Landroid/app/Fragment;->onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
 
@@ -508,7 +492,6 @@
 
 .method public setConfirmationDialogFragmentListener(Lcom/android/settings/DeviceNameSettings$ConfirmationDialogFragmentListener;)V
     .locals 0
-    .param p1    # Lcom/android/settings/DeviceNameSettings$ConfirmationDialogFragmentListener;
 
     iput-object p1, p0, Lcom/android/settings/DeviceNameSettings;->listener:Lcom/android/settings/DeviceNameSettings$ConfirmationDialogFragmentListener;
 

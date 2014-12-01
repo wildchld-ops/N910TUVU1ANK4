@@ -654,12 +654,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/database/Cursor;Landroid/widget/ListView;ZLjava/util/regex/Pattern;Z)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/database/Cursor;
-    .param p3    # Landroid/widget/ListView;
-    .param p4    # Z
-    .param p5    # Ljava/util/regex/Pattern;
-    .param p6    # Z
 
     const/4 v2, 0x0
 
@@ -790,12 +784,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/database/Cursor;Landroid/widget/ListView;ZZLjava/lang/String;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/database/Cursor;
-    .param p3    # Landroid/widget/ListView;
-    .param p4    # Z
-    .param p5    # Z
-    .param p6    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -951,7 +939,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/ui/MessageListAdapter;)Landroid/widget/ListView;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/MessageListAdapter;
 
     iget-object v0, p0, Lcom/android/mms/ui/MessageListAdapter;->mListView:Landroid/widget/ListView;
 
@@ -960,7 +947,6 @@
 
 .method public static formatDate(J)J
     .locals 6
-    .param p0    # J
 
     invoke-static {}, Ljava/util/Calendar;->getInstance()Ljava/util/Calendar;
 
@@ -1003,8 +989,6 @@
 
 .method private formatDate(Landroid/content/Context;J)Ljava/lang/String;
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # J
 
     invoke-static {p1}, Landroid/text/format/DateFormat;->getDateFormat(Landroid/content/Context;)Ljava/text/DateFormat;
 
@@ -1043,8 +1027,6 @@
 
 .method private static getKey(Ljava/lang/String;J)J
     .locals 5
-    .param p0    # Ljava/lang/String;
-    .param p1    # J
 
     const-wide/16 v3, 0x2710
 
@@ -1850,7 +1832,6 @@
 
 .method private isCursorValid(Landroid/database/Cursor;)Z
     .locals 1
-    .param p1    # Landroid/database/Cursor;
 
     if-eqz p1, :cond_0
 
@@ -1886,7 +1867,6 @@
 
 .method private needAnimation(I)Z
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Lcom/android/mms/ui/MessageListAdapter;->mAnimationIdx:I
 
@@ -1917,8 +1897,6 @@
 
 .method private setSearchTitle(Landroid/database/Cursor;Landroid/view/View;)V
     .locals 11
-    .param p1    # Landroid/database/Cursor;
-    .param p2    # Landroid/view/View;
 
     const v7, 0x7f0b0341
 
@@ -2380,9 +2358,6 @@
 
 .method public bindView(Landroid/view/View;Landroid/content/Context;Landroid/database/Cursor;)V
     .locals 26
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/database/Cursor;
 
     if-eqz p1, :cond_c
 
@@ -3249,9 +3224,6 @@
 
 .method public canCachedMessageItemBeCombineForwarded(Ljava/lang/String;JLandroid/database/Cursor;)Z
     .locals 11
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
-    .param p4    # Landroid/database/Cursor;
 
     const/4 v10, 0x0
 
@@ -3371,7 +3343,6 @@
 
 .method public changeCursor(Landroid/database/Cursor;)V
     .locals 13
-    .param p1    # Landroid/database/Cursor;
 
     invoke-super {p0, p1}, Landroid/widget/CursorAdapter;->changeCursor(Landroid/database/Cursor;)V
 
@@ -3558,7 +3529,6 @@
 
 .method public changeFontSizeIndex(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Lcom/android/mms/ui/MessageListAdapter;->mFontSizeIndex:I
 
@@ -3664,8 +3634,6 @@
 
 .method public collapse(Landroid/view/View;Z)V
     .locals 7
-    .param p1    # Landroid/view/View;
-    .param p2    # Z
 
     const/high16 v4, 0x3f000000
 
@@ -3714,8 +3682,6 @@
 
 .method public expand(Landroid/view/View;Z)V
     .locals 7
-    .param p1    # Landroid/view/View;
-    .param p2    # Z
 
     const/high16 v4, 0x3f000000
 
@@ -3772,10 +3738,6 @@
 
 .method public getCachedMessageItem(Ljava/lang/String;JLandroid/database/Cursor;Z)Lcom/android/mms/ui/MessageItem;
     .locals 11
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
-    .param p4    # Landroid/database/Cursor;
-    .param p5    # Z
 
     const/4 v0, 0x0
 
@@ -4096,9 +4058,6 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     :try_start_0
     invoke-super {p0, p1, p2, p3}, Landroid/widget/CursorAdapter;->getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
@@ -4240,9 +4199,6 @@
 
 .method public isCheckedMessageId(JLjava/lang/String;I)Z
     .locals 3
-    .param p1    # J
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
 
     const-string v1, "sms"
 
@@ -4430,9 +4386,6 @@
 
 .method public newView(Landroid/content/Context;Landroid/database/Cursor;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/database/Cursor;
-    .param p3    # Landroid/view/ViewGroup;
 
     const/4 v3, 0x0
 
@@ -4472,7 +4425,6 @@
 
 .method public notAllowedCombineForward(Lcom/android/mms/ui/MessageItem;)Z
     .locals 1
-    .param p1    # Lcom/android/mms/ui/MessageItem;
 
     invoke-virtual {p1}, Lcom/android/mms/ui/MessageItem;->isMms()Z
 
@@ -4588,10 +4540,6 @@
 
 .method public onScroll(Landroid/widget/AbsListView;III)V
     .locals 3
-    .param p1    # Landroid/widget/AbsListView;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/4 v2, -0x1
 
@@ -4627,17 +4575,12 @@
 
 .method public onScrollStateChanged(Landroid/widget/AbsListView;I)V
     .locals 0
-    .param p1    # Landroid/widget/AbsListView;
-    .param p2    # I
 
     return-void
 .end method
 
 .method public refreshChecked(JLjava/lang/String;I)V
     .locals 3
-    .param p1    # J
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
 
     new-instance v0, Lcom/android/mms/ui/MessageListAdapter$ImData;
 
@@ -4850,7 +4793,6 @@
 
 .method public setAnimationIndex(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/mms/ui/MessageListAdapter;->mAnimationIdx:I
 
@@ -4859,8 +4801,6 @@
 
 .method public setBubbleInfo(JLjava/lang/String;)V
     .locals 0
-    .param p1    # J
-    .param p3    # Ljava/lang/String;
 
     iput-wide p1, p0, Lcom/android/mms/ui/MessageListAdapter;->mBubbleIdx:J
 
@@ -4871,9 +4811,6 @@
 
 .method public setChecked(JLjava/lang/String;I)V
     .locals 3
-    .param p1    # J
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
 
     const-string v1, "sms"
 
@@ -5025,7 +4962,6 @@
 
 .method public setCombineAndForwardMode(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/MessageListAdapter;->mIsCombAndForwMode:Z
 
@@ -5034,7 +4970,6 @@
 
 .method public setCopyToSimMode(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-static {}, Lcom/android/mms/MmsConfig;->getEnableMultiCopyToSIM()Z
 
@@ -5078,7 +5013,6 @@
 
 .method public setFlickAnimation(Landroid/view/animation/Animation;)V
     .locals 2
-    .param p1    # Landroid/view/animation/Animation;
 
     iput-object p1, p0, Lcom/android/mms/ui/MessageListAdapter;->mFlickAnimation:Landroid/view/animation/Animation;
 
@@ -5095,8 +5029,6 @@
 
 .method public setForceSelectPosition(IZ)V
     .locals 3
-    .param p1    # I
-    .param p2    # Z
 
     const-string v0, "Mms/MessageListAdapter"
 
@@ -5139,7 +5071,6 @@
 
 .method public setIsMultiMode(Z)V
     .locals 1
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/MessageListAdapter;->mIsMultiMode:Z
 
@@ -5163,7 +5094,6 @@
 
 .method public setMsgListItemHandler(Landroid/os/Handler;)V
     .locals 0
-    .param p1    # Landroid/os/Handler;
 
     iput-object p1, p0, Lcom/android/mms/ui/MessageListAdapter;->mMsgListItemHandler:Landroid/os/Handler;
 
@@ -5172,14 +5102,12 @@
 
 .method public setOnContentChangedListener(Lcom/android/mms/ui/MessageListAdapter$OnDataSetChangedListener;)V
     .locals 0
-    .param p1    # Lcom/android/mms/ui/MessageListAdapter$OnDataSetChangedListener;
 
     return-void
 .end method
 
 .method public setOnDataSetChangedListener(Lcom/android/mms/ui/MessageListAdapter$OnDataSetChangedListener;)V
     .locals 0
-    .param p1    # Lcom/android/mms/ui/MessageListAdapter$OnDataSetChangedListener;
 
     iput-object p1, p0, Lcom/android/mms/ui/MessageListAdapter;->mOnDataSetChangedListener:Lcom/android/mms/ui/MessageListAdapter$OnDataSetChangedListener;
 
@@ -5188,7 +5116,6 @@
 
 .method public setSearchString(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/mms/ui/MessageListAdapter;->mSearchString:Ljava/lang/String;
 
@@ -5197,8 +5124,6 @@
 
 .method public setThreadInfo(JLjava/lang/String;)V
     .locals 0
-    .param p1    # J
-    .param p3    # Ljava/lang/String;
 
     iput-wide p1, p0, Lcom/android/mms/ui/MessageListAdapter;->mThreadIdx:J
 
@@ -5209,7 +5134,6 @@
 
 .method public setWorkingMessageUri(Landroid/net/Uri;)V
     .locals 1
-    .param p1    # Landroid/net/Uri;
 
     const/4 v0, 0x1
 
@@ -5220,8 +5144,6 @@
 
 .method public setWorkingMessageUri(Landroid/net/Uri;Z)V
     .locals 1
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Z
 
     iput-object p1, p0, Lcom/android/mms/ui/MessageListAdapter;->mWorkingMessageUri:Landroid/net/Uri;
 
@@ -5241,9 +5163,6 @@
 
 .method public toggleCheckBox(JLjava/lang/String;I)Z
     .locals 4
-    .param p1    # J
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
 
     const/4 v1, 0x0
 

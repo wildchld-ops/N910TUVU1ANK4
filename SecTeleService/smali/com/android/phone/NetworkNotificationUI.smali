@@ -762,7 +762,7 @@
 
     const-string v2, "layout_inflater"
 
-    invoke-virtual {v0, v2}, Landroid/view/ContextThemeWrapper;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v0, v2}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -798,9 +798,9 @@
 
     iget-object v1, p0, Lcom/android/phone/NetworkNotificationUI;->mNotifyNetworkRegisteringListener:Landroid/content/DialogInterface$OnDismissListener;
 
-    invoke-virtual {v0, v1}, Landroid/app/Dialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
+    invoke-virtual {v0, v1}, Landroid/app/AlertDialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
+    invoke-virtual {v0}, Landroid/app/AlertDialog;->getWindow()Landroid/view/Window;
 
     move-result-object v1
 
@@ -808,7 +808,7 @@
 
     invoke-virtual {v1, v2}, Landroid/view/Window;->setType(I)V
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->show()V
+    invoke-virtual {v0}, Landroid/app/AlertDialog;->show()V
 
     iput-object v0, p0, Lcom/android/phone/NetworkNotificationUI;->mNotifyNetworkRegisteringDialog:Landroid/app/AlertDialog;
 
@@ -1799,7 +1799,7 @@
     :cond_1
     iget-object v0, p0, Lcom/android/phone/NetworkNotificationUI;->mNotifyRTSDialog:Landroid/app/AlertDialog;
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->dismiss()V
+    invoke-virtual {v0}, Landroid/app/AlertDialog;->dismiss()V
 
     const/4 v0, 0x0
 
@@ -2973,7 +2973,7 @@
 
     invoke-direct {v2}, Ljava/util/Date;-><init>()V
 
-    invoke-virtual {v1, v2}, Ljava/text/DateFormat;->format(Ljava/util/Date;)Ljava/lang/String;
+    invoke-virtual {v1, v2}, Ljava/text/SimpleDateFormat;->format(Ljava/util/Date;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -3053,7 +3053,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v1, v0}, Ljava/io/OutputStream;->write([B)V
+    invoke-virtual {v1, v0}, Ljava/io/FileOutputStream;->write([B)V
 
     const-string v0, "\n"
 
@@ -3061,7 +3061,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v1, v0}, Ljava/io/OutputStream;->write([B)V
+    invoke-virtual {v1, v0}, Ljava/io/FileOutputStream;->write([B)V
 
     invoke-static {}, Ljava/lang/Runtime;->getRuntime()Ljava/lang/Runtime;
 
@@ -3099,7 +3099,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/io/IOException;->getMessage()Ljava/lang/String;
 
     move-result-object v0
 
@@ -3152,7 +3152,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/io/FileNotFoundException;->getMessage()Ljava/lang/String;
 
     move-result-object v0
 
@@ -3192,7 +3192,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/io/IOException;->getMessage()Ljava/lang/String;
 
     move-result-object v0
 
@@ -3223,7 +3223,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/NullPointerException;->getMessage()Ljava/lang/String;
 
     move-result-object v0
 
@@ -3254,7 +3254,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
 
     move-result-object v0
 
@@ -3285,7 +3285,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/NullPointerException;->getMessage()Ljava/lang/String;
 
     move-result-object v0
 
@@ -3316,7 +3316,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
 
     move-result-object v0
 
@@ -3349,7 +3349,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/io/IOException;->getMessage()Ljava/lang/String;
 
     move-result-object v0
 
@@ -3389,7 +3389,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/io/IOException;->getMessage()Ljava/lang/String;
 
     move-result-object v0
 
@@ -3420,7 +3420,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/NullPointerException;->getMessage()Ljava/lang/String;
 
     move-result-object v0
 
@@ -3451,7 +3451,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
 
     move-result-object v0
 
@@ -3496,7 +3496,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v1}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/io/IOException;->getMessage()Ljava/lang/String;
 
     move-result-object v1
 
@@ -3527,7 +3527,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v1}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/NullPointerException;->getMessage()Ljava/lang/String;
 
     move-result-object v1
 
@@ -3558,7 +3558,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v1}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
 
     move-result-object v1
 
@@ -3945,7 +3945,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0, p1}, Landroid/widget/TextView;->setEnabled(Z)V
+    invoke-virtual {v0, p1}, Landroid/widget/Button;->setEnabled(Z)V
 
     return-void
 .end method
@@ -3997,9 +3997,9 @@
 
     iget-object v1, p0, Lcom/android/phone/NetworkNotificationUI;->mAutoTimesetListener:Landroid/content/DialogInterface$OnDismissListener;
 
-    invoke-virtual {v0, v1}, Landroid/app/Dialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
+    invoke-virtual {v0, v1}, Landroid/app/AlertDialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
+    invoke-virtual {v0}, Landroid/app/AlertDialog;->getWindow()Landroid/view/Window;
 
     move-result-object v1
 
@@ -4007,7 +4007,7 @@
 
     invoke-virtual {v1, v2}, Landroid/view/Window;->setType(I)V
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->show()V
+    invoke-virtual {v0}, Landroid/app/AlertDialog;->show()V
 
     sput-object v0, Lcom/android/phone/NetworkNotificationUI;->mAutoTimesetDialog:Landroid/app/AlertDialog;
 
@@ -4037,7 +4037,7 @@
 
     const-string v0, "layout_inflater"
 
-    invoke-virtual {v1, v0}, Landroid/view/ContextThemeWrapper;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v1, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -4088,9 +4088,9 @@
 
     iget-object v1, p0, Lcom/android/phone/NetworkNotificationUI;->mDataConnectSelectListener:Landroid/content/DialogInterface$OnDismissListener;
 
-    invoke-virtual {v0, v1}, Landroid/app/Dialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
+    invoke-virtual {v0, v1}, Landroid/app/AlertDialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
+    invoke-virtual {v0}, Landroid/app/AlertDialog;->getWindow()Landroid/view/Window;
 
     move-result-object v1
 
@@ -4098,7 +4098,7 @@
 
     invoke-virtual {v1, v2}, Landroid/view/Window;->setType(I)V
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->show()V
+    invoke-virtual {v0}, Landroid/app/AlertDialog;->show()V
 
     const-string v1, "LGT"
 
@@ -4133,9 +4133,9 @@
 
     if-eqz v3, :cond_2
 
-    invoke-virtual {v1, v5}, Landroid/view/View;->setFocusable(Z)V
+    invoke-virtual {v1, v5}, Landroid/widget/Button;->setFocusable(Z)V
 
-    invoke-virtual {v2, v5}, Landroid/view/View;->setFocusable(Z)V
+    invoke-virtual {v2, v5}, Landroid/widget/Button;->setFocusable(Z)V
 
     :goto_1
     iput-object v0, p0, Lcom/android/phone/NetworkNotificationUI;->mDataConnectSelectDialog:Landroid/app/AlertDialog;
@@ -4166,9 +4166,9 @@
     goto :goto_0
 
     :cond_2
-    invoke-virtual {v1, v4}, Landroid/view/View;->setFocusable(Z)V
+    invoke-virtual {v1, v4}, Landroid/widget/Button;->setFocusable(Z)V
 
-    invoke-virtual {v2, v4}, Landroid/view/View;->setFocusable(Z)V
+    invoke-virtual {v2, v4}, Landroid/widget/Button;->setFocusable(Z)V
 
     goto :goto_1
 .end method
@@ -4190,7 +4190,7 @@
 
     const-string v0, "layout_inflater"
 
-    invoke-virtual {v4, v0}, Landroid/view/ContextThemeWrapper;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v4, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -4264,7 +4264,7 @@
 
     iget-object v1, p0, Lcom/android/phone/NetworkNotificationUI;->mAlertDialog:Landroid/app/AlertDialog;
 
-    invoke-virtual {v1}, Landroid/app/Dialog;->dismiss()V
+    invoke-virtual {v1}, Landroid/app/AlertDialog;->dismiss()V
 
     :cond_0
     new-instance v1, Landroid/app/AlertDialog$Builder;
@@ -4346,7 +4346,7 @@
 
     iget-object v0, p0, Lcom/android/phone/NetworkNotificationUI;->mDataRoamingUseSwtich:Landroid/widget/Switch;
 
-    invoke-virtual {v0}, Landroid/widget/CompoundButton;->isChecked()Z
+    invoke-virtual {v0}, Landroid/widget/Switch;->isChecked()Z
 
     move-result v0
 
@@ -4363,7 +4363,7 @@
 
     iget-object v2, p0, Lcom/android/phone/NetworkNotificationUI;->mDataRoamingUseSwtich:Landroid/widget/Switch;
 
-    invoke-virtual {v2}, Landroid/widget/CompoundButton;->isChecked()Z
+    invoke-virtual {v2}, Landroid/widget/Switch;->isChecked()Z
 
     move-result v2
 
@@ -4373,7 +4373,7 @@
 
     iget-object v2, p0, Lcom/android/phone/NetworkNotificationUI;->mDataRoamingUseSwtich:Landroid/widget/Switch;
 
-    invoke-virtual {v2}, Landroid/widget/CompoundButton;->isChecked()Z
+    invoke-virtual {v2}, Landroid/widget/Switch;->isChecked()Z
 
     move-result v2
 
@@ -4385,13 +4385,13 @@
 
     invoke-direct {v2, p0}, Lcom/android/phone/NetworkNotificationUI$10;-><init>(Lcom/android/phone/NetworkNotificationUI;)V
 
-    invoke-virtual {v0, v2}, Landroid/widget/CompoundButton;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
+    invoke-virtual {v0, v2}, Landroid/widget/Switch;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
     invoke-virtual {v1}, Landroid/app/AlertDialog$Builder;->create()Landroid/app/AlertDialog;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
+    invoke-virtual {v0}, Landroid/app/AlertDialog;->getWindow()Landroid/view/Window;
 
     move-result-object v1
 
@@ -4399,7 +4399,7 @@
 
     invoke-virtual {v1, v2}, Landroid/view/Window;->setType(I)V
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->show()V
+    invoke-virtual {v0}, Landroid/app/AlertDialog;->show()V
 
     iput-object v0, p0, Lcom/android/phone/NetworkNotificationUI;->mAlertDialog:Landroid/app/AlertDialog;
 
@@ -4480,7 +4480,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
+    invoke-virtual {v0}, Landroid/app/AlertDialog;->getWindow()Landroid/view/Window;
 
     move-result-object v1
 
@@ -4488,7 +4488,7 @@
 
     invoke-virtual {v1, v2}, Landroid/view/Window;->setType(I)V
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->show()V
+    invoke-virtual {v0}, Landroid/app/AlertDialog;->show()V
 
     return-void
 
@@ -4555,7 +4555,7 @@
 
     const-string v1, "layout_inflater"
 
-    invoke-virtual {v0, v1}, Landroid/view/ContextThemeWrapper;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -4603,9 +4603,9 @@
 
     iget-object v1, p0, Lcom/android/phone/NetworkNotificationUI;->mNetworkRegNotiListener:Landroid/content/DialogInterface$OnDismissListener;
 
-    invoke-virtual {v0, v1}, Landroid/app/Dialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
+    invoke-virtual {v0, v1}, Landroid/app/AlertDialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
+    invoke-virtual {v0}, Landroid/app/AlertDialog;->getWindow()Landroid/view/Window;
 
     move-result-object v1
 
@@ -4613,7 +4613,7 @@
 
     invoke-virtual {v1, v2}, Landroid/view/Window;->setType(I)V
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->show()V
+    invoke-virtual {v0}, Landroid/app/AlertDialog;->show()V
 
     const/4 v1, -0x1
 
@@ -4635,9 +4635,9 @@
 
     if-eqz v3, :cond_3
 
-    invoke-virtual {v1, v5}, Landroid/view/View;->setFocusable(Z)V
+    invoke-virtual {v1, v5}, Landroid/widget/Button;->setFocusable(Z)V
 
-    invoke-virtual {v2, v5}, Landroid/view/View;->setFocusable(Z)V
+    invoke-virtual {v2, v5}, Landroid/widget/Button;->setFocusable(Z)V
 
     :goto_1
     iput-object v0, p0, Lcom/android/phone/NetworkNotificationUI;->mNetworkRegNotiDialog:Landroid/app/AlertDialog;
@@ -4645,9 +4645,9 @@
     goto :goto_0
 
     :cond_3
-    invoke-virtual {v1, v4}, Landroid/view/View;->setFocusable(Z)V
+    invoke-virtual {v1, v4}, Landroid/widget/Button;->setFocusable(Z)V
 
-    invoke-virtual {v2, v4}, Landroid/view/View;->setFocusable(Z)V
+    invoke-virtual {v2, v4}, Landroid/widget/Button;->setFocusable(Z)V
 
     goto :goto_1
 .end method
@@ -4699,9 +4699,9 @@
 
     iget-object v1, p0, Lcom/android/phone/NetworkNotificationUI;->mNoServiceAndManualSelecionListener:Landroid/content/DialogInterface$OnDismissListener;
 
-    invoke-virtual {v0, v1}, Landroid/app/Dialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
+    invoke-virtual {v0, v1}, Landroid/app/AlertDialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
+    invoke-virtual {v0}, Landroid/app/AlertDialog;->getWindow()Landroid/view/Window;
 
     move-result-object v1
 
@@ -4709,7 +4709,7 @@
 
     invoke-virtual {v1, v2}, Landroid/view/Window;->setType(I)V
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->show()V
+    invoke-virtual {v0}, Landroid/app/AlertDialog;->show()V
 
     iput-object v0, p0, Lcom/android/phone/NetworkNotificationUI;->mNoServiceAndManualSelectionDialog:Landroid/app/AlertDialog;
 
@@ -4739,7 +4739,7 @@
 
     const-string v0, "layout_inflater"
 
-    invoke-virtual {v3, v0}, Landroid/view/ContextThemeWrapper;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v3, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -4908,11 +4908,11 @@
 
     iget-object v1, p0, Lcom/android/phone/NetworkNotificationUI;->mDataRoamingUseSwtich:Landroid/widget/Switch;
 
-    invoke-virtual {v1}, Landroid/widget/CompoundButton;->isChecked()Z
+    invoke-virtual {v1}, Landroid/widget/Switch;->isChecked()Z
 
     move-result v1
 
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setEnabled(Z)V
+    invoke-virtual {v0, v1}, Landroid/widget/Switch;->setEnabled(Z)V
 
     iget-object v0, p0, Lcom/android/phone/NetworkNotificationUI;->mDataRoamingUseSwtich:Landroid/widget/Switch;
 
@@ -4920,7 +4920,7 @@
 
     invoke-direct {v1, p0}, Lcom/android/phone/NetworkNotificationUI$4;-><init>(Lcom/android/phone/NetworkNotificationUI;)V
 
-    invoke-virtual {v0, v1}, Landroid/widget/CompoundButton;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
+    invoke-virtual {v0, v1}, Landroid/widget/Switch;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
     :goto_2
     invoke-virtual {v6}, Landroid/app/AlertDialog$Builder;->create()Landroid/app/AlertDialog;
@@ -4929,9 +4929,9 @@
 
     iget-object v1, p0, Lcom/android/phone/NetworkNotificationUI;->mRoamDataWarnigListener:Landroid/content/DialogInterface$OnDismissListener;
 
-    invoke-virtual {v0, v1}, Landroid/app/Dialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
+    invoke-virtual {v0, v1}, Landroid/app/AlertDialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
+    invoke-virtual {v0}, Landroid/app/AlertDialog;->getWindow()Landroid/view/Window;
 
     move-result-object v1
 
@@ -4939,7 +4939,7 @@
 
     invoke-virtual {v1, v3}, Landroid/view/Window;->setType(I)V
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->show()V
+    invoke-virtual {v0}, Landroid/app/AlertDialog;->show()V
 
     const-string v1, "SKT"
 
@@ -5004,7 +5004,7 @@
 
     iget-object v0, p0, Lcom/android/phone/NetworkNotificationUI;->mAlertDialog:Landroid/app/AlertDialog;
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->dismiss()V
+    invoke-virtual {v0}, Landroid/app/AlertDialog;->dismiss()V
 
     :cond_6
     const v0, 0x7f0a0216

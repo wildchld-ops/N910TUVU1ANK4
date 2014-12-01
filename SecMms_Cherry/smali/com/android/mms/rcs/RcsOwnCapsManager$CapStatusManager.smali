@@ -50,7 +50,6 @@
 
 .method public constructor <init>(Lcom/android/mms/rcs/RcsOwnCapsManager;)V
     .locals 0
-    .param p1    # Lcom/android/mms/rcs/RcsOwnCapsManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -61,8 +60,6 @@
 
 .method static synthetic access$500(Lcom/android/mms/rcs/RcsOwnCapsManager$CapStatusManager;Z)V
     .locals 0
-    .param p0    # Lcom/android/mms/rcs/RcsOwnCapsManager$CapStatusManager;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/mms/rcs/RcsOwnCapsManager$CapStatusManager;->notiftStateListeners(Z)V
 
@@ -71,7 +68,6 @@
 
 .method private notiftStateListeners(Z)V
     .locals 3
-    .param p1    # Z
 
     sget-object v2, Lcom/android/mms/rcs/RcsOwnCapsManager$CapStatusManager;->sFtStateListers:Ljava/util/ArrayList;
 
@@ -104,7 +100,6 @@
 # virtual methods
 .method public registerFtStateListener(Lcom/android/mms/rcs/RcsOwnCapsManager$CapStatusManager$FtStateListener;)V
     .locals 3
-    .param p1    # Lcom/android/mms/rcs/RcsOwnCapsManager$CapStatusManager$FtStateListener;
 
     const-string v0, "Mms/RcsOwnCapsManager"
 
@@ -190,7 +185,6 @@
 
 .method public unRegisterFtStateListener(Lcom/android/mms/rcs/RcsOwnCapsManager$CapStatusManager$FtStateListener;)V
     .locals 3
-    .param p1    # Lcom/android/mms/rcs/RcsOwnCapsManager$CapStatusManager$FtStateListener;
 
     sget-object v0, Lcom/android/mms/rcs/RcsOwnCapsManager$CapStatusManager;->sFtStateListers:Ljava/util/ArrayList;
 

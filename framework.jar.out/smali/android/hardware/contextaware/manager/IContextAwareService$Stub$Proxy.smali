@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -45,8 +44,6 @@
 
 .method public getContextInfo(Landroid/os/IBinder;I)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -210,8 +207,6 @@
 
 .method public registerCallback(Landroid/os/IBinder;I)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -265,7 +260,6 @@
 
 .method public resetCAService(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -317,10 +311,6 @@
 
 .method public setCALogger(ZZIZ)V
     .locals 5
-    .param p1    # Z
-    .param p2    # Z
-    .param p3    # I
-    .param p4    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -410,9 +400,6 @@
 
 .method public setCAProperty(IILandroid/hardware/contextaware/manager/ContextAwarePropertyBundle;)Z
     .locals 7
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/hardware/contextaware/manager/ContextAwarePropertyBundle;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -503,9 +490,6 @@
 
 .method public setScenarioForDebugging(II[B)Z
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -572,8 +556,6 @@
 
 .method public setScenarioForTest(II)Z
     .locals 6
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -638,7 +620,6 @@
 
 .method public setVersion(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -788,8 +769,6 @@
 
 .method public unregisterCallback(Landroid/os/IBinder;I)Z
     .locals 6
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

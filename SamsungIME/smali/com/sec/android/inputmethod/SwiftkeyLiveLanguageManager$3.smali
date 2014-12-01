@@ -27,9 +27,6 @@
 # virtual methods
 .method public onComplete(ZZZ)V
     .locals 3
-    .param p1    # Z
-    .param p2    # Z
-    .param p3    # Z
 
     if-eqz p1, :cond_0
 
@@ -49,8 +46,6 @@
 
 .method public onProgress(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     return-void
 .end method

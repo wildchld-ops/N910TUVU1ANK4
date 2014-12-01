@@ -44,7 +44,6 @@
 # virtual methods
 .method protected varargs doInBackground([Ljava/lang/String;)Ljava/lang/Integer;
     .locals 5
-    .param p1    # [Ljava/lang/String;
 
     const-string v2, "ChooseLockPassword"
 
@@ -116,7 +115,6 @@
 
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [Ljava/lang/String;
 
@@ -129,7 +127,6 @@
 
 .method protected onPostExecute(Ljava/lang/Integer;)V
     .locals 6
-    .param p1    # Ljava/lang/Integer;
 
     :try_start_0
     const-string v3, "ChooseLockPassword"
@@ -488,7 +485,6 @@
 
 .method protected bridge synthetic onPostExecute(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Ljava/lang/Integer;
 

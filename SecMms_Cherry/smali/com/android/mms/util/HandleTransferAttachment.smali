@@ -38,7 +38,6 @@
 # direct methods
 .method public constructor <init>(Landroid/app/Activity;)V
     .locals 0
-    .param p1    # Landroid/app/Activity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -51,8 +50,6 @@
 # virtual methods
 .method public startActivityForAttachMedia(IZ)V
     .locals 15
-    .param p1    # I
-    .param p2    # Z
 
     const-string v0, "audio/*"
 

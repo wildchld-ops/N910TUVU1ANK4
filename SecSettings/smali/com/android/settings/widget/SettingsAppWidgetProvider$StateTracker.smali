@@ -47,7 +47,6 @@
 
 .method synthetic constructor <init>(Lcom/android/settings/widget/SettingsAppWidgetProvider$1;)V
     .locals 0
-    .param p1    # Lcom/android/settings/widget/SettingsAppWidgetProvider$1;
 
     invoke-direct {p0}, Lcom/android/settings/widget/SettingsAppWidgetProvider$StateTracker;-><init>()V
 
@@ -56,8 +55,6 @@
 
 .method private final getContentDescription(Landroid/content/Context;I)Ljava/lang/String;
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     invoke-virtual {p0}, Lcom/android/settings/widget/SettingsAppWidgetProvider$StateTracker;->getButtonDescription()I
 
@@ -122,7 +119,6 @@
 
 .method public final getTriState(Landroid/content/Context;)I
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x5
 
@@ -193,8 +189,6 @@
 
 .method protected final setCurrentState(Landroid/content/Context;I)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     const/4 v4, 0x1
 
@@ -324,8 +318,6 @@
 
 .method public final setImageViewResources(Landroid/content/Context;Landroid/widget/RemoteViews;)V
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/widget/RemoteViews;
 
     const/4 v6, 0x1
 

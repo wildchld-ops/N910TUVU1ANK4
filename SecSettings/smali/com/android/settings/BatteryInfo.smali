@@ -56,7 +56,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/BatteryInfo;)V
     .locals 0
-    .param p0    # Lcom/android/settings/BatteryInfo;
 
     invoke-direct {p0}, Lcom/android/settings/BatteryInfo;->updateBatteryStats()V
 
@@ -65,7 +64,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/BatteryInfo;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/android/settings/BatteryInfo;
 
     iget-object v0, p0, Lcom/android/settings/BatteryInfo;->mLevel:Landroid/widget/TextView;
 
@@ -74,7 +72,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/BatteryInfo;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/android/settings/BatteryInfo;
 
     iget-object v0, p0, Lcom/android/settings/BatteryInfo;->mScale:Landroid/widget/TextView;
 
@@ -83,7 +80,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/BatteryInfo;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/android/settings/BatteryInfo;
 
     iget-object v0, p0, Lcom/android/settings/BatteryInfo;->mVoltage:Landroid/widget/TextView;
 
@@ -92,8 +88,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/BatteryInfo;I)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/settings/BatteryInfo;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/settings/BatteryInfo;->tenthsToFixedString(I)Ljava/lang/String;
 
@@ -104,7 +98,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/BatteryInfo;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/android/settings/BatteryInfo;
 
     iget-object v0, p0, Lcom/android/settings/BatteryInfo;->mTemperature:Landroid/widget/TextView;
 
@@ -113,7 +106,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/BatteryInfo;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/android/settings/BatteryInfo;
 
     iget-object v0, p0, Lcom/android/settings/BatteryInfo;->mTechnology:Landroid/widget/TextView;
 
@@ -122,7 +114,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/BatteryInfo;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/android/settings/BatteryInfo;
 
     iget-object v0, p0, Lcom/android/settings/BatteryInfo;->mStatus:Landroid/widget/TextView;
 
@@ -131,7 +122,6 @@
 
 .method static synthetic access$800(Lcom/android/settings/BatteryInfo;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/android/settings/BatteryInfo;
 
     iget-object v0, p0, Lcom/android/settings/BatteryInfo;->mPower:Landroid/widget/TextView;
 
@@ -140,7 +130,6 @@
 
 .method static synthetic access$900(Lcom/android/settings/BatteryInfo;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/android/settings/BatteryInfo;
 
     iget-object v0, p0, Lcom/android/settings/BatteryInfo;->mHealth:Landroid/widget/TextView;
 
@@ -149,7 +138,6 @@
 
 .method private final tenthsToFixedString(I)Ljava/lang/String;
     .locals 3
-    .param p1    # I
 
     div-int/lit8 v0, p1, 0xa
 
@@ -216,7 +204,6 @@
 # virtual methods
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 

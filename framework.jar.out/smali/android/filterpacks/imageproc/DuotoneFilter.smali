@@ -35,7 +35,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Landroid/filterfw/core/Filter;-><init>(Ljava/lang/String;)V
 
@@ -170,16 +169,12 @@
 # virtual methods
 .method public getOutputFormat(Ljava/lang/String;Landroid/filterfw/core/FrameFormat;)Landroid/filterfw/core/FrameFormat;
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/filterfw/core/FrameFormat;
 
     return-object p2
 .end method
 
 .method public initProgram(Landroid/filterfw/core/FilterContext;I)V
     .locals 4
-    .param p1    # Landroid/filterfw/core/FilterContext;
-    .param p2    # I
 
     packed-switch p2, :pswitch_data_0
 
@@ -240,7 +235,6 @@
 
 .method public process(Landroid/filterfw/core/FilterContext;)V
     .locals 5
-    .param p1    # Landroid/filterfw/core/FilterContext;
 
     const-string v3, "image"
 

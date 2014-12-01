@@ -32,8 +32,6 @@
 # direct methods
 .method public constructor <init>(Landroid/view/View;F)V
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # F
 
     const/4 v2, 0x0
 
@@ -88,7 +86,6 @@
 
 .method static synthetic access$000(Lcom/samsung/android/airbutton/view/AirButtonHoverAnimationView;)Landroid/graphics/Point;
     .locals 1
-    .param p0    # Lcom/samsung/android/airbutton/view/AirButtonHoverAnimationView;
 
     iget-object v0, p0, Lcom/samsung/android/airbutton/view/AirButtonHoverAnimationView;->mCurrentPoint:Landroid/graphics/Point;
 
@@ -97,8 +94,6 @@
 
 .method static synthetic access$002(Lcom/samsung/android/airbutton/view/AirButtonHoverAnimationView;Landroid/graphics/Point;)Landroid/graphics/Point;
     .locals 0
-    .param p0    # Lcom/samsung/android/airbutton/view/AirButtonHoverAnimationView;
-    .param p1    # Landroid/graphics/Point;
 
     iput-object p1, p0, Lcom/samsung/android/airbutton/view/AirButtonHoverAnimationView;->mCurrentPoint:Landroid/graphics/Point;
 
@@ -107,7 +102,6 @@
 
 .method static synthetic access$100(Lcom/samsung/android/airbutton/view/AirButtonHoverAnimationView;)Landroid/graphics/Point;
     .locals 1
-    .param p0    # Lcom/samsung/android/airbutton/view/AirButtonHoverAnimationView;
 
     iget-object v0, p0, Lcom/samsung/android/airbutton/view/AirButtonHoverAnimationView;->mOldPoint:Landroid/graphics/Point;
 
@@ -116,8 +110,6 @@
 
 .method static synthetic access$102(Lcom/samsung/android/airbutton/view/AirButtonHoverAnimationView;Landroid/graphics/Point;)Landroid/graphics/Point;
     .locals 0
-    .param p0    # Lcom/samsung/android/airbutton/view/AirButtonHoverAnimationView;
-    .param p1    # Landroid/graphics/Point;
 
     iput-object p1, p0, Lcom/samsung/android/airbutton/view/AirButtonHoverAnimationView;->mOldPoint:Landroid/graphics/Point;
 
@@ -126,7 +118,6 @@
 
 .method static synthetic access$200(Lcom/samsung/android/airbutton/view/AirButtonHoverAnimationView;)Landroid/widget/ImageView;
     .locals 1
-    .param p0    # Lcom/samsung/android/airbutton/view/AirButtonHoverAnimationView;
 
     iget-object v0, p0, Lcom/samsung/android/airbutton/view/AirButtonHoverAnimationView;->mAnimationView:Landroid/widget/ImageView;
 
@@ -135,7 +126,6 @@
 
 .method static synthetic access$300(Lcom/samsung/android/airbutton/view/AirButtonHoverAnimationView;)Ljava/lang/Runnable;
     .locals 1
-    .param p0    # Lcom/samsung/android/airbutton/view/AirButtonHoverAnimationView;
 
     iget-object v0, p0, Lcom/samsung/android/airbutton/view/AirButtonHoverAnimationView;->mAnimator:Ljava/lang/Runnable;
 
@@ -144,7 +134,6 @@
 
 .method static synthetic access$400(Lcom/samsung/android/airbutton/view/AirButtonHoverAnimationView;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/samsung/android/airbutton/view/AirButtonHoverAnimationView;
 
     iget-object v0, p0, Lcom/samsung/android/airbutton/view/AirButtonHoverAnimationView;->mHandler:Landroid/os/Handler;
 
@@ -153,7 +142,6 @@
 
 .method private initBasicVariables(F)V
     .locals 3
-    .param p1    # F
 
     iget-object v1, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -182,8 +170,6 @@
 
 .method private showAnimationView(FF)V
     .locals 3
-    .param p1    # F
-    .param p2    # F
 
     iget-object v1, p0, Lcom/samsung/android/airbutton/view/AirButtonHoverAnimationView;->mAnimationView:Landroid/widget/ImageView;
 
@@ -351,11 +337,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 9
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     const/4 v8, 0x2
 
@@ -455,7 +436,6 @@
 
 .method protected onWindowVisibilityChanged(I)V
     .locals 2
-    .param p1    # I
 
     invoke-super {p0, p1}, Landroid/view/View;->onWindowVisibilityChanged(I)V
 
@@ -481,8 +461,6 @@
 
 .method public requestSendAccessibilityEvent(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/accessibility/AccessibilityEvent;
 
     const/4 v0, 0x1
 
@@ -491,15 +469,12 @@
 
 .method public sendAccessibilityEvent(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public setAnimationViewPosition(FF)V
     .locals 5
-    .param p1    # F
-    .param p2    # F
 
     iget-object v2, p0, Lcom/samsung/android/airbutton/view/AirButtonHoverAnimationView;->mAnimationView:Landroid/widget/ImageView;
 

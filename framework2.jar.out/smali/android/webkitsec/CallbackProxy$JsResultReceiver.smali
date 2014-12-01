@@ -46,8 +46,6 @@
 
 .method synthetic constructor <init>(Landroid/webkitsec/CallbackProxy;Landroid/webkitsec/CallbackProxy$1;)V
     .locals 0
-    .param p1    # Landroid/webkitsec/CallbackProxy;
-    .param p2    # Landroid/webkitsec/CallbackProxy$1;
 
     invoke-direct {p0, p1}, Landroid/webkitsec/CallbackProxy$JsResultReceiver;-><init>(Landroid/webkitsec/CallbackProxy;)V
 
@@ -84,7 +82,6 @@
 # virtual methods
 .method public onJsResultComplete(Landroid/webkitsec/JsResult;)V
     .locals 1
-    .param p1    # Landroid/webkitsec/JsResult;
 
     iget-boolean v0, p0, Landroid/webkitsec/CallbackProxy$JsResultReceiver;->mReady:Z
 

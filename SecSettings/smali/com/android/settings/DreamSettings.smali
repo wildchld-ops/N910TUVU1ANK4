@@ -73,7 +73,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/DreamSettings;)Lcom/android/settings/DreamBackend;
     .locals 1
-    .param p0    # Lcom/android/settings/DreamSettings;
 
     iget-object v0, p0, Lcom/android/settings/DreamSettings;->mBackend:Lcom/android/settings/DreamBackend;
 
@@ -82,7 +81,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/DreamSettings;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/settings/DreamSettings;
 
     iget-object v0, p0, Lcom/android/settings/DreamSettings;->mContext:Landroid/content/Context;
 
@@ -91,7 +89,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/DreamSettings;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/DreamSettings;
 
     iget-boolean v0, p0, Lcom/android/settings/DreamSettings;->mRefreshing:Z
 
@@ -100,7 +97,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/DreamSettings;)V
     .locals 0
-    .param p0    # Lcom/android/settings/DreamSettings;
 
     invoke-direct {p0}, Lcom/android/settings/DreamSettings;->refreshFromBackend()V
 
@@ -109,7 +105,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/DreamSettings;)Landroid/widget/Switch;
     .locals 1
-    .param p0    # Lcom/android/settings/DreamSettings;
 
     iget-object v0, p0, Lcom/android/settings/DreamSettings;->mSwitch:Landroid/widget/Switch;
 
@@ -118,7 +113,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/DreamSettings;)Lcom/android/settings/DreamSettings$DreamInfoAdapter;
     .locals 1
-    .param p0    # Lcom/android/settings/DreamSettings;
 
     iget-object v0, p0, Lcom/android/settings/DreamSettings;->mAdapter:Lcom/android/settings/DreamSettings$DreamInfoAdapter;
 
@@ -127,8 +121,6 @@
 
 .method static synthetic access$800(Ljava/lang/String;[Ljava/lang/Object;)V
     .locals 0
-    .param p0    # Ljava/lang/String;
-    .param p1    # [Ljava/lang/Object;
 
     invoke-static {p0, p1}, Lcom/android/settings/DreamSettings;->logd(Ljava/lang/String;[Ljava/lang/Object;)V
 
@@ -137,11 +129,6 @@
 
 .method private createMenuItem(Landroid/view/Menu;IIZLjava/lang/Runnable;)Landroid/view/MenuItem;
     .locals 2
-    .param p1    # Landroid/view/Menu;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Z
-    .param p5    # Ljava/lang/Runnable;
 
     invoke-interface {p1, p2}, Landroid/view/Menu;->add(I)Landroid/view/MenuItem;
 
@@ -298,7 +285,6 @@
 
 .method public static getSummaryTextWithDreamName(Landroid/content/Context;)Ljava/lang/CharSequence;
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     new-instance v0, Lcom/android/settings/DreamBackend;
 
@@ -344,8 +330,6 @@
 
 .method private static varargs logd(Ljava/lang/String;[Ljava/lang/Object;)V
     .locals 0
-    .param p0    # Ljava/lang/String;
-    .param p1    # [Ljava/lang/Object;
 
     return-void
 .end method
@@ -518,7 +502,6 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 8
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v6, 0x1
 
@@ -661,7 +644,6 @@
 
 .method public onAttach(Landroid/app/Activity;)V
     .locals 4
-    .param p1    # Landroid/app/Activity;
 
     const-string v0, "onAttach(%s)"
 
@@ -692,7 +674,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 11
-    .param p1    # Landroid/os/Bundle;
 
     const v10, 0x800015
 
@@ -831,7 +812,6 @@
 
 .method public onCreateDialog(I)Landroid/app/Dialog;
     .locals 5
-    .param p1    # I
 
     const/4 v4, 0x1
 
@@ -868,8 +848,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
     .locals 8
-    .param p1    # Landroid/view/Menu;
-    .param p2    # Landroid/view/MenuInflater;
 
     const-string v0, "onCreateOptionsMenu()"
 

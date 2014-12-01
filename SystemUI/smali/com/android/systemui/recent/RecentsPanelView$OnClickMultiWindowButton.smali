@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Lcom/android/systemui/recent/RecentsPanelView;Lcom/android/systemui/recent/RecentsPanelView$1;)V
     .locals 0
-    .param p1    # Lcom/android/systemui/recent/RecentsPanelView;
-    .param p2    # Lcom/android/systemui/recent/RecentsPanelView$1;
 
     invoke-direct {p0, p1}, Lcom/android/systemui/recent/RecentsPanelView$OnClickMultiWindowButton;-><init>(Lcom/android/systemui/recent/RecentsPanelView;)V
 
@@ -46,7 +44,6 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 6
-    .param p1    # Landroid/view/View;
 
     const/4 v3, 0x0
 

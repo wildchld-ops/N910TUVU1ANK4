@@ -40,11 +40,6 @@
 # direct methods
 .method public constructor <init>(Landroid/webkit/JsPromptResult;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Landroid/webkit/JsPromptResult;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -63,8 +58,6 @@
 
 .method public constructor <init>(Landroid/webkit/JsPromptResult;Landroid/os/Message;)V
     .locals 2
-    .param p1    # Landroid/webkit/JsPromptResult;
-    .param p2    # Landroid/os/Message;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -123,7 +116,6 @@
 
 .method static synthetic access$100(Landroid/webkit/JsDialogHelper;)Landroid/webkit/JsPromptResult;
     .locals 1
-    .param p0    # Landroid/webkit/JsDialogHelper;
 
     iget-object v0, p0, Landroid/webkit/JsDialogHelper;->mResult:Landroid/webkit/JsPromptResult;
 
@@ -132,7 +124,6 @@
 
 .method private static canShowAlertDialog(Landroid/content/Context;)Z
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     instance-of v0, p0, Landroid/app/Activity;
 
@@ -141,7 +132,6 @@
 
 .method private getJsDialogTitle(Landroid/content/Context;)Ljava/lang/String;
     .locals 7
-    .param p1    # Landroid/content/Context;
 
     iget-object v1, p0, Landroid/webkit/JsDialogHelper;->mUrl:Ljava/lang/String;
 
@@ -228,8 +218,6 @@
 # virtual methods
 .method public invokeCallback(Landroid/webkit/WebChromeClient;Landroid/webkit/WebView;)Z
     .locals 6
-    .param p1    # Landroid/webkit/WebChromeClient;
-    .param p2    # Landroid/webkit/WebView;
 
     iget v0, p0, Landroid/webkit/JsDialogHelper;->mType:I
 
@@ -331,7 +319,6 @@
 
 .method public showDialog(Landroid/content/Context;)V
     .locals 13
-    .param p1    # Landroid/content/Context;
 
     const/4 v12, 0x1
 

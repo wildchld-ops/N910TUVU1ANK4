@@ -14,8 +14,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -30,7 +28,6 @@
 
 .method private init(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x1
 
@@ -45,7 +42,6 @@
 
 .method private setLayoutTextStyle(Ljava/lang/String;)Landroid/widget/TextView;
     .locals 11
-    .param p1    # Ljava/lang/String;
 
     const/16 v10, 0x3e8
 
@@ -250,7 +246,6 @@
 
 .method private setTextStyle(Landroid/widget/TextView;)V
     .locals 1
-    .param p1    # Landroid/widget/TextView;
 
     const/high16 v0, 0x41900000
 
@@ -276,7 +271,6 @@
 # virtual methods
 .method public addContent(I)V
     .locals 3
-    .param p1    # I
 
     const-string v1, "IndexedTextLayout"
 
@@ -301,7 +295,6 @@
 
 .method public addContent(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "IndexedTextLayout"
 
@@ -318,7 +311,6 @@
 
 .method public setIsTablet(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/wfd/IndexedTextLayout;->mIsTablet:Z
 

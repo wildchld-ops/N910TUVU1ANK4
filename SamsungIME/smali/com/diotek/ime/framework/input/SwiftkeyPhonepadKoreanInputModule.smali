@@ -192,12 +192,6 @@
 
 .method private chunjyinMultitap(Landroid/view/inputmethod/InputConnection;I[IZZI)V
     .locals 21
-    .param p1    # Landroid/view/inputmethod/InputConnection;
-    .param p2    # I
-    .param p3    # [I
-    .param p4    # Z
-    .param p5    # Z
-    .param p6    # I
 
     new-instance v5, Ljava/lang/StringBuilder;
 
@@ -1385,9 +1379,6 @@
 
 .method private chunjyinMultitapByTrace(Landroid/view/inputmethod/InputConnection;[II)V
     .locals 6
-    .param p1    # Landroid/view/inputmethod/InputConnection;
-    .param p2    # [I
-    .param p3    # I
 
     const/4 v5, 0x0
 
@@ -1535,8 +1526,6 @@
 
 .method private commitText(Landroid/view/inputmethod/InputConnection;Ljava/lang/CharSequence;)V
     .locals 3
-    .param p1    # Landroid/view/inputmethod/InputConnection;
-    .param p2    # Ljava/lang/CharSequence;
 
     if-eqz p1, :cond_1
 
@@ -1611,7 +1600,6 @@
 
 .method private countStroke(C)I
     .locals 1
-    .param p1    # C
 
     const/4 v0, 0x1
 
@@ -1663,7 +1651,6 @@
 
 .method public static isConsonant(I)Z
     .locals 1
-    .param p0    # I
 
     const/16 v0, 0x3131
 
@@ -1686,7 +1673,6 @@
 
 .method private isMedialVowel(C)Z
     .locals 2
-    .param p1    # C
 
     const/4 v0, 0x0
 
@@ -1706,7 +1692,6 @@
 
 .method private isNaragulSpecialKey(I)Z
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -1795,11 +1780,6 @@
 
 .method private naragulMultitap(Landroid/view/inputmethod/InputConnection;I[IZZ)V
     .locals 20
-    .param p1    # Landroid/view/inputmethod/InputConnection;
-    .param p2    # I
-    .param p3    # [I
-    .param p4    # Z
-    .param p5    # Z
 
     new-instance v5, Ljava/lang/StringBuilder;
 
@@ -3447,8 +3427,6 @@
 
 .method private processMultiTap(I[I)V
     .locals 12
-    .param p1    # I
-    .param p2    # [I
 
     const/4 v11, 0x2
 
@@ -3674,8 +3652,6 @@
 
 .method private processSingleTap(I[I)V
     .locals 7
-    .param p1    # I
-    .param p2    # [I
 
     const/4 v6, 0x0
 
@@ -3813,8 +3789,6 @@
 
 .method private processWordSeparator(I[I)V
     .locals 18
-    .param p1    # I
-    .param p2    # [I
 
     const/4 v15, 0x1
 
@@ -4405,7 +4379,6 @@
 
 .method private replaceNaragul(Ljava/lang/StringBuilder;)Z
     .locals 12
-    .param p1    # Ljava/lang/StringBuilder;
 
     const/16 v11, 0x318f
 
@@ -4661,11 +4634,6 @@
 
 .method private setIsTappingMultiTapKey(Landroid/view/inputmethod/InputConnection;I[IZZ)I
     .locals 6
-    .param p1    # Landroid/view/inputmethod/InputConnection;
-    .param p2    # I
-    .param p3    # [I
-    .param p4    # Z
-    .param p5    # Z
 
     const/4 v5, 0x1
 
@@ -4766,7 +4734,6 @@
 
 .method private splitStroke(C)Ljava/lang/String;
     .locals 4
-    .param p1    # C
 
     const/16 v3, 0x3161
 
@@ -5050,10 +5017,6 @@
 
 .method public initInputEngineAndComposing(IIII)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-virtual {p0}, Lcom/diotek/ime/framework/input/AbstractInputModule;->getTimeoutComposingLength()I
 
@@ -5103,8 +5066,6 @@
 
 .method public onCharacterKey(I[I)V
     .locals 13
-    .param p1    # I
-    .param p2    # [I
 
     const/4 v12, 0x4
 
@@ -5347,16 +5308,12 @@
 
 .method public onHwrPanelLongPressed(ILjava/lang/String;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method public pickSuggestionManually(ILjava/lang/CharSequence;)V
     .locals 13
-    .param p1    # I
-    .param p2    # Ljava/lang/CharSequence;
 
     iget-object v11, p0, Lcom/diotek/ime/framework/input/AbstractInputModule;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -5756,8 +5713,6 @@
 
 .method protected processMultiTapSymbolicKey(I[I)V
     .locals 10
-    .param p1    # I
-    .param p2    # [I
 
     const/4 v7, 0x0
 
@@ -5940,8 +5895,6 @@
 
 .method protected processSymbolicKey(I[I)V
     .locals 6
-    .param p1    # I
-    .param p2    # [I
 
     const/4 v5, 0x1
 

@@ -33,8 +33,6 @@
 # virtual methods
 .method public dispatchRemoteVolumeUpdate(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     sget-object v0, Landroid/media/MediaRouter;->sStatic:Landroid/media/MediaRouter$Static;
 

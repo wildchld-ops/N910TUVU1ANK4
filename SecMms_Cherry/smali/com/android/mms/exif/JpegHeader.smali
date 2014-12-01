@@ -34,7 +34,6 @@
 
 .method public static final isSofMarker(S)Z
     .locals 1
-    .param p0    # S
 
     const/16 v0, -0x40
 

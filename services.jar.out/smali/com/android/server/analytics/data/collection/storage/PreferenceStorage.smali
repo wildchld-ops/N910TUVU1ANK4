@@ -14,9 +14,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Ljava/lang/String;I)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     const/4 v0, 0x0
 
@@ -81,8 +78,6 @@
 
 .method public declared-synchronized getPrefs(Ljava/lang/String;F)F
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # F
 
     monitor-enter p0
 
@@ -117,8 +112,6 @@
 
 .method public declared-synchronized getPrefs(Ljava/lang/String;I)I
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     monitor-enter p0
 
@@ -153,8 +146,6 @@
 
 .method public declared-synchronized getPrefs(Ljava/lang/String;J)J
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
 
     monitor-enter p0
 
@@ -189,8 +180,6 @@
 
 .method public declared-synchronized getPrefs(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -225,8 +214,6 @@
 
 .method public declared-synchronized getPrefs(Ljava/lang/String;Z)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     monitor-enter p0
 
@@ -261,8 +248,6 @@
 
 .method public declared-synchronized setPrefs(Ljava/lang/String;F)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # F
 
     monitor-enter p0
 
@@ -301,8 +286,6 @@
 
 .method public declared-synchronized setPrefs(Ljava/lang/String;I)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     monitor-enter p0
 
@@ -341,8 +324,6 @@
 
 .method public declared-synchronized setPrefs(Ljava/lang/String;J)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
 
     monitor-enter p0
 
@@ -381,8 +362,6 @@
 
 .method public declared-synchronized setPrefs(Ljava/lang/String;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -421,8 +400,6 @@
 
 .method public declared-synchronized setPrefs(Ljava/lang/String;Z)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     monitor-enter p0
 

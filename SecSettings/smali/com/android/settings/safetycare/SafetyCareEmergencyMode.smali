@@ -71,7 +71,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/safetycare/SafetyCareEmergencyMode;)Landroid/widget/Switch;
     .locals 1
-    .param p0    # Lcom/android/settings/safetycare/SafetyCareEmergencyMode;
 
     iget-object v0, p0, Lcom/android/settings/safetycare/SafetyCareEmergencyMode;->mActionBarSwitch:Landroid/widget/Switch;
 
@@ -82,7 +81,6 @@
 # virtual methods
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 6
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v5, 0x0
 
@@ -175,8 +173,6 @@
 
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 3
-    .param p1    # Landroid/widget/CompoundButton;
-    .param p2    # Z
 
     if-eqz p2, :cond_0
 
@@ -210,7 +206,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 9
-    .param p1    # Landroid/os/Bundle;
 
     const/16 v5, 0x10
 

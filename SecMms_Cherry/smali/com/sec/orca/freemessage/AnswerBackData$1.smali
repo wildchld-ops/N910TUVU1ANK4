@@ -40,7 +40,6 @@
 # virtual methods
 .method public createFromParcel(Landroid/os/Parcel;)Lcom/sec/orca/freemessage/AnswerBackData;
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     new-instance v0, Lcom/sec/orca/freemessage/AnswerBackData;
 
@@ -51,7 +50,6 @@
 
 .method public bridge synthetic createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     invoke-virtual {p0, p1}, Lcom/sec/orca/freemessage/AnswerBackData$1;->createFromParcel(Landroid/os/Parcel;)Lcom/sec/orca/freemessage/AnswerBackData;
 
@@ -62,7 +60,6 @@
 
 .method public newArray(I)[Lcom/sec/orca/freemessage/AnswerBackData;
     .locals 1
-    .param p1    # I
 
     new-array v0, p1, [Lcom/sec/orca/freemessage/AnswerBackData;
 
@@ -71,7 +68,6 @@
 
 .method public bridge synthetic newArray(I)[Ljava/lang/Object;
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/sec/orca/freemessage/AnswerBackData$1;->newArray(I)[Lcom/sec/orca/freemessage/AnswerBackData;
 

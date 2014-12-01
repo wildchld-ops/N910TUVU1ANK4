@@ -54,9 +54,6 @@
 # direct methods
 .method public constructor <init>(Landroid/view/View;Lcom/samsung/android/sdk/look/airbutton/SlookAirButtonAdapter;I)V
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # Lcom/samsung/android/sdk/look/airbutton/SlookAirButtonAdapter;
-    .param p3    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -110,7 +107,6 @@
 
 .method static synthetic access$000(Lcom/samsung/android/sdk/look/airbutton/SlookAirButton;)Lcom/samsung/android/sdk/look/airbutton/SlookAirButton$ItemSelectListener;
     .locals 1
-    .param p0    # Lcom/samsung/android/sdk/look/airbutton/SlookAirButton;
 
     iget-object v0, p0, Lcom/samsung/android/sdk/look/airbutton/SlookAirButton;->mItemSelectListener:Lcom/samsung/android/sdk/look/airbutton/SlookAirButton$ItemSelectListener;
 
@@ -119,7 +115,6 @@
 
 .method private isSupport(I)Z
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -318,7 +313,6 @@
 
 .method public moveAnimationIcon(Landroid/view/MotionEvent;)V
     .locals 2
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v0, 0x1
 
@@ -375,7 +369,6 @@
 
 .method public setAutoControlEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     const/4 v0, 0x1
 
@@ -398,7 +391,6 @@
 
 .method public setBounceEffectEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     const/4 v0, 0x1
 
@@ -421,7 +413,6 @@
 
 .method public setDirection(I)V
     .locals 5
-    .param p1    # I
 
     const/4 v4, 0x2
 
@@ -528,7 +519,6 @@
 
 .method public setGravity(I)V
     .locals 4
-    .param p1    # I
 
     const/4 v3, 0x1
 
@@ -618,7 +608,6 @@
 
 .method public setItemSelectListener(Lcom/samsung/android/sdk/look/airbutton/SlookAirButton$ItemSelectListener;)V
     .locals 2
-    .param p1    # Lcom/samsung/android/sdk/look/airbutton/SlookAirButton$ItemSelectListener;
 
     const/4 v0, 0x1
 
@@ -652,8 +641,6 @@
 
 .method public setPosition(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x1
 
@@ -676,7 +663,6 @@
 
 .method public setScrollEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     const/4 v0, 0x1
 
@@ -699,7 +685,6 @@
 
 .method public show(Landroid/view/MotionEvent;)V
     .locals 2
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v0, 0x1
 
@@ -758,7 +743,6 @@
 
 .method public startAnimationIcon(Landroid/view/MotionEvent;)V
     .locals 2
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v0, 0x1
 
@@ -815,7 +799,6 @@
 
 .method public stopAnimationIcon(Landroid/view/MotionEvent;)V
     .locals 2
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v0, 0x1
 

@@ -25,7 +25,6 @@
 
 .method static createItem(Landroid/database/Cursor;)Lcom/sec/android/app/shootingmodemanager/ShootingModeItem;
     .locals 11
-    .param p0    # Landroid/database/Cursor;
 
     const/4 v10, 0x0
 

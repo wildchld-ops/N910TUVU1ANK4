@@ -161,7 +161,6 @@
 
 .method public static returnMatrix4(Lcom/voovio/voo3d/data/Matrix4;)V
     .locals 3
-    .param p0    # Lcom/voovio/voo3d/data/Matrix4;
 
     sget-object v1, Lcom/voovio/voo3d/data/Matrix4Pool;->m_oPoolLock:Ljava/lang/Object;
 

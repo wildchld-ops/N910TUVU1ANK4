@@ -29,8 +29,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/widget/Switch;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/widget/Switch;
 
     const/4 v1, 0x0
 
@@ -71,9 +69,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/widget/Switch;Z)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/widget/Switch;
-    .param p3    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/settings/personalpage/PersonalPageEnabler;-><init>(Landroid/content/Context;Landroid/widget/Switch;)V
 
@@ -86,8 +81,6 @@
 # virtual methods
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 12
-    .param p1    # Landroid/widget/CompoundButton;
-    .param p2    # Z
 
     const v11, 0x10008000
 
@@ -529,8 +522,6 @@
 
 .method public setHeaderPosition(Landroid/preference/PreferenceActivity$Header;I)V
     .locals 0
-    .param p1    # Landroid/preference/PreferenceActivity$Header;
-    .param p2    # I
 
     iput-object p1, p0, Lcom/android/settings/personalpage/PersonalPageEnabler;->mHeader:Landroid/preference/PreferenceActivity$Header;
 
@@ -541,7 +532,6 @@
 
 .method public setSwitch(Landroid/widget/Switch;)V
     .locals 5
-    .param p1    # Landroid/widget/Switch;
 
     const/4 v4, 0x0
 

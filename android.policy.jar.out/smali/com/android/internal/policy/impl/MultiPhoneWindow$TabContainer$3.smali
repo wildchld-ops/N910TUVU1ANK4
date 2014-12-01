@@ -36,7 +36,6 @@
 # virtual methods
 .method public createTabContent(Ljava/lang/String;)Landroid/view/View;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Landroid/widget/LinearLayout;
 

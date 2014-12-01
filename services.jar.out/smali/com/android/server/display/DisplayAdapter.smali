@@ -34,11 +34,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/display/DisplayManagerService$SyncRoot;Landroid/content/Context;Landroid/os/Handler;Lcom/android/server/display/DisplayAdapter$Listener;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Lcom/android/server/display/DisplayManagerService$SyncRoot;
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/os/Handler;
-    .param p4    # Lcom/android/server/display/DisplayAdapter$Listener;
-    .param p5    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -57,7 +52,6 @@
 
 .method static synthetic access$000(Lcom/android/server/display/DisplayAdapter;)Lcom/android/server/display/DisplayAdapter$Listener;
     .locals 1
-    .param p0    # Lcom/android/server/display/DisplayAdapter;
 
     iget-object v0, p0, Lcom/android/server/display/DisplayAdapter;->mListener:Lcom/android/server/display/DisplayAdapter$Listener;
 
@@ -68,7 +62,6 @@
 # virtual methods
 .method public dumpLocked(Ljava/io/PrintWriter;)V
     .locals 0
-    .param p1    # Ljava/io/PrintWriter;
 
     return-void
 .end method
@@ -113,8 +106,6 @@
 
 .method protected final sendDisplayDeviceEventLocked(Lcom/android/server/display/DisplayDevice;I)V
     .locals 2
-    .param p1    # Lcom/android/server/display/DisplayDevice;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/server/display/DisplayAdapter;->mHandler:Landroid/os/Handler;
 

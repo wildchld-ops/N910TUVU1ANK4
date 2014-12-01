@@ -25,8 +25,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/internal/policy/impl/multiwindow/MinimizeAnimator;FF)V
     .locals 1
-    .param p2    # F
-    .param p3    # F
 
     const/4 v0, 0x0
 

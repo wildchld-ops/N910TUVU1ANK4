@@ -59,7 +59,6 @@
 
 .method constructor <init>(Ljava/io/FileDescriptor;)V
     .locals 1
-    .param p1    # Ljava/io/FileDescriptor;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -99,7 +98,6 @@
 
 .method static synthetic access$000(Landroid/net/LocalSocketImpl;)Ljava/io/FileDescriptor;
     .locals 1
-    .param p0    # Landroid/net/LocalSocketImpl;
 
     iget-object v0, p0, Landroid/net/LocalSocketImpl;->fd:Ljava/io/FileDescriptor;
 
@@ -108,8 +106,6 @@
 
 .method static synthetic access$100(Landroid/net/LocalSocketImpl;Ljava/io/FileDescriptor;)I
     .locals 1
-    .param p0    # Landroid/net/LocalSocketImpl;
-    .param p1    # Ljava/io/FileDescriptor;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -125,7 +121,6 @@
 
 .method static synthetic access$200(Landroid/net/LocalSocketImpl;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Landroid/net/LocalSocketImpl;
 
     iget-object v0, p0, Landroid/net/LocalSocketImpl;->readMonitor:Ljava/lang/Object;
 
@@ -134,8 +129,6 @@
 
 .method static synthetic access$300(Landroid/net/LocalSocketImpl;Ljava/io/FileDescriptor;)I
     .locals 1
-    .param p0    # Landroid/net/LocalSocketImpl;
-    .param p1    # Ljava/io/FileDescriptor;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -151,11 +144,6 @@
 
 .method static synthetic access$400(Landroid/net/LocalSocketImpl;[BIILjava/io/FileDescriptor;)I
     .locals 1
-    .param p0    # Landroid/net/LocalSocketImpl;
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/io/FileDescriptor;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -171,7 +159,6 @@
 
 .method static synthetic access$500(Landroid/net/LocalSocketImpl;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Landroid/net/LocalSocketImpl;
 
     iget-object v0, p0, Landroid/net/LocalSocketImpl;->writeMonitor:Ljava/lang/Object;
 
@@ -180,11 +167,6 @@
 
 .method static synthetic access$600(Landroid/net/LocalSocketImpl;[BIILjava/io/FileDescriptor;)V
     .locals 0
-    .param p0    # Landroid/net/LocalSocketImpl;
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/io/FileDescriptor;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -198,9 +180,6 @@
 
 .method static synthetic access$700(Landroid/net/LocalSocketImpl;ILjava/io/FileDescriptor;)V
     .locals 0
-    .param p0    # Landroid/net/LocalSocketImpl;
-    .param p1    # I
-    .param p2    # Ljava/io/FileDescriptor;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -214,8 +193,6 @@
 
 .method static synthetic access$800(Landroid/net/LocalSocketImpl;Ljava/io/FileDescriptor;)I
     .locals 1
-    .param p0    # Landroid/net/LocalSocketImpl;
-    .param p1    # Ljava/io/FileDescriptor;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -332,7 +309,6 @@
 # virtual methods
 .method protected accept(Landroid/net/LocalSocketImpl;)V
     .locals 2
-    .param p1    # Landroid/net/LocalSocketImpl;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -388,7 +364,6 @@
 
 .method public bind(Landroid/net/LocalSocketAddress;)V
     .locals 3
-    .param p1    # Landroid/net/LocalSocketAddress;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -533,8 +508,6 @@
 
 .method protected connect(Landroid/net/LocalSocketAddress;I)V
     .locals 3
-    .param p1    # Landroid/net/LocalSocketAddress;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -575,7 +548,6 @@
 
 .method public create(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -755,7 +727,6 @@
 
 .method public getOption(I)Ljava/lang/Object;
     .locals 3
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -902,7 +873,6 @@
 
 .method protected listen(I)V
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -931,7 +901,6 @@
 
 .method protected sendUrgentData(I)V
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -949,7 +918,6 @@
 
 .method public setFileDescriptorsForSend([Ljava/io/FileDescriptor;)V
     .locals 2
-    .param p1    # [Ljava/io/FileDescriptor;
 
     iget-object v1, p0, Landroid/net/LocalSocketImpl;->writeMonitor:Ljava/lang/Object;
 
@@ -974,8 +942,6 @@
 
 .method public setOption(ILjava/lang/Object;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

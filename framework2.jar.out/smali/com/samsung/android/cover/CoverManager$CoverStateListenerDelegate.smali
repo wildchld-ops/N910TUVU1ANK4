@@ -33,8 +33,6 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/cover/CoverManager;Lcom/samsung/android/cover/CoverManager$CoverStateListener;Landroid/os/Handler;)V
     .locals 2
-    .param p2    # Lcom/samsung/android/cover/CoverManager$CoverStateListener;
-    .param p3    # Landroid/os/Handler;
 
     iput-object p1, p0, Lcom/samsung/android/cover/CoverManager$CoverStateListenerDelegate;->this$0:Lcom/samsung/android/cover/CoverManager;
 
@@ -72,7 +70,6 @@
 
 .method static synthetic access$300(Lcom/samsung/android/cover/CoverManager$CoverStateListenerDelegate;)Lcom/samsung/android/cover/CoverManager$CoverStateListener;
     .locals 1
-    .param p0    # Lcom/samsung/android/cover/CoverManager$CoverStateListenerDelegate;
 
     iget-object v0, p0, Lcom/samsung/android/cover/CoverManager$CoverStateListenerDelegate;->mListener:Lcom/samsung/android/cover/CoverManager$CoverStateListener;
 
@@ -108,7 +105,6 @@
 
 .method public onCoverAttachStateChanged(Z)V
     .locals 4
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -142,7 +138,6 @@
 
 .method public onCoverSwitchStateChanged(Z)V
     .locals 3
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

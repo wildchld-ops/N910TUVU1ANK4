@@ -27,9 +27,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/WiredAccessoryManager$WiredAccessoryObserver;Ljava/lang/String;II)V
     .locals 0
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
 
     iput-object p1, p0, Lcom/android/server/WiredAccessoryManager$WiredAccessoryObserver$UEventInfo;->this$1:Lcom/android/server/WiredAccessoryManager$WiredAccessoryObserver;
 
@@ -66,8 +63,6 @@
 
 .method public computeNewHeadsetState(II)I
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     iget v2, p0, Lcom/android/server/WiredAccessoryManager$WiredAccessoryObserver$UEventInfo;->mState1Bits:I
 

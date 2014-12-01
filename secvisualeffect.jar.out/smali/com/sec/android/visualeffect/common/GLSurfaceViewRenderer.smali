@@ -109,9 +109,6 @@
 
 .method public handleTouchEvent(III)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v1, 0x1
 
@@ -156,7 +153,6 @@
 
 .method public loadSpecialTexture([Ljava/lang/String;)V
     .locals 17
-    .param p1    # [Ljava/lang/String;
 
     if-nez p1, :cond_1
 
@@ -370,7 +366,6 @@
 
 .method public onDrawFrame(Ljavax/microedition/khronos/opengles/GL10;)V
     .locals 13
-    .param p1    # Ljavax/microedition/khronos/opengles/GL10;
 
     const-wide/16 v11, 0x0
 
@@ -552,9 +547,6 @@
 
 .method public onSurfaceChanged(Ljavax/microedition/khronos/opengles/GL10;II)V
     .locals 3
-    .param p1    # Ljavax/microedition/khronos/opengles/GL10;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v1, 0x1
 
@@ -656,8 +648,6 @@
 
 .method public onSurfaceCreated(Ljavax/microedition/khronos/opengles/GL10;Ljavax/microedition/khronos/egl/EGLConfig;)V
     .locals 3
-    .param p1    # Ljavax/microedition/khronos/opengles/GL10;
-    .param p2    # Ljavax/microedition/khronos/egl/EGLConfig;
 
     const/4 v2, 0x0
 
@@ -680,9 +670,6 @@
 
 .method public setLandscapeBitmap([III)V
     .locals 2
-    .param p1    # [I
-    .param p2    # I
-    .param p3    # I
 
     iget-object v0, p0, Lcom/sec/android/visualeffect/common/GLSurfaceViewRenderer;->TAG:Ljava/lang/String;
 
@@ -707,9 +694,6 @@
 
 .method public setPortraitBitmap([III)V
     .locals 2
-    .param p1    # [I
-    .param p2    # I
-    .param p3    # I
 
     iget-object v0, p0, Lcom/sec/android/visualeffect/common/GLSurfaceViewRenderer;->TAG:Ljava/lang/String;
 

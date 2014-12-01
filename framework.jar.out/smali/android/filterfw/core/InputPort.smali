@@ -10,8 +10,6 @@
 # direct methods
 .method public constructor <init>(Landroid/filterfw/core/Filter;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Landroid/filterfw/core/Filter;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Landroid/filterfw/core/FilterPort;-><init>(Landroid/filterfw/core/Filter;Ljava/lang/String;)V
 
@@ -231,7 +229,6 @@
 
 .method public setSourcePort(Landroid/filterfw/core/OutputPort;)V
     .locals 3
-    .param p1    # Landroid/filterfw/core/OutputPort;
 
     iget-object v0, p0, Landroid/filterfw/core/InputPort;->mSourcePort:Landroid/filterfw/core/OutputPort;
 

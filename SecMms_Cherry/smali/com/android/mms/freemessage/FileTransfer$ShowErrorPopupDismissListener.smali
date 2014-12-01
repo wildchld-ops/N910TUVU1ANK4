@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Lcom/android/mms/freemessage/FileTransfer;Lcom/android/mms/freemessage/FileTransfer$1;)V
     .locals 0
-    .param p1    # Lcom/android/mms/freemessage/FileTransfer;
-    .param p2    # Lcom/android/mms/freemessage/FileTransfer$1;
 
     invoke-direct {p0, p1}, Lcom/android/mms/freemessage/FileTransfer$ShowErrorPopupDismissListener;-><init>(Lcom/android/mms/freemessage/FileTransfer;)V
 
@@ -46,7 +44,6 @@
 # virtual methods
 .method public onDismiss(Landroid/content/DialogInterface;)V
     .locals 0
-    .param p1    # Landroid/content/DialogInterface;
 
     return-void
 .end method

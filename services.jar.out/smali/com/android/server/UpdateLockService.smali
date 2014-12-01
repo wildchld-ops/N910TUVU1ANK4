@@ -28,7 +28,6 @@
 # direct methods
 .method constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Landroid/os/IUpdateLock$Stub;-><init>()V
 
@@ -55,7 +54,6 @@
 
 .method private makeTag(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -116,8 +114,6 @@
 # virtual methods
 .method public acquireUpdateLock(Landroid/os/IBinder;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -145,9 +141,6 @@
 
 .method public dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/server/UpdateLockService;->mContext:Landroid/content/Context;
 
@@ -210,7 +203,6 @@
 
 .method public releaseUpdateLock(Landroid/os/IBinder;)V
     .locals 3
-    .param p1    # Landroid/os/IBinder;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -234,7 +226,6 @@
 
 .method sendLockChangedBroadcast(Z)V
     .locals 7
-    .param p1    # Z
 
     invoke-static {}, Landroid/os/Binder;->clearCallingIdentity()J
 

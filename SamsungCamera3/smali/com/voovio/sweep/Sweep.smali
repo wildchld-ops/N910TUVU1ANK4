@@ -205,8 +205,6 @@
 
 .method public static final TradeOffHeuristic(Lcom/voovio/voo3d/data/Vector3;F)Lcom/voovio/voo3d/data/Vector3;
     .locals 8
-    .param p0    # Lcom/voovio/voo3d/data/Vector3;
-    .param p1    # F
 
     const/high16 v7, 0x43c80000
 
@@ -316,7 +314,6 @@
 
 .method private adjustAngle(F)F
     .locals 12
-    .param p1    # F
 
     const/high16 v11, 0x3f000000
 
@@ -444,7 +441,6 @@
 
 .method private appendVoovio(I)V
     .locals 7
-    .param p1    # I
 
     new-instance v0, Lcom/voovio/sweep/Voovio;
 
@@ -481,13 +477,6 @@
 
 .method public static final createSweep([IIII[Lcom/voovio/sweep/Template;[Lcom/voovio/voo3d/data/Vector3;[F)Lcom/voovio/sweep/Sweep;
     .locals 10
-    .param p0    # [I
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # [Lcom/voovio/sweep/Template;
-    .param p5    # [Lcom/voovio/voo3d/data/Vector3;
-    .param p6    # [F
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/voovio/sweep/SweepException;
@@ -852,7 +841,6 @@
 # virtual methods
 .method append(I)V
     .locals 3
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/voovio/sweep/Sweep;->appendVoovio(I)V
 
@@ -883,8 +871,6 @@
 
 .method appendFromAngle(IF)V
     .locals 7
-    .param p1    # I
-    .param p2    # F
 
     invoke-direct {p0, p2}, Lcom/voovio/sweep/Sweep;->adjustAngle(F)F
 
@@ -955,9 +941,6 @@
 
 .method appendFromTemplate(ILcom/voovio/sweep/Template;F)V
     .locals 6
-    .param p1    # I
-    .param p2    # Lcom/voovio/sweep/Template;
-    .param p3    # F
 
     invoke-direct {p0, p1}, Lcom/voovio/sweep/Sweep;->appendVoovio(I)V
 
@@ -1044,9 +1027,6 @@
 
 .method appendFromTranslation(ILcom/voovio/voo3d/data/Vector3;F)V
     .locals 6
-    .param p1    # I
-    .param p2    # Lcom/voovio/voo3d/data/Vector3;
-    .param p3    # F
 
     invoke-direct {p0, p1}, Lcom/voovio/sweep/Sweep;->appendVoovio(I)V
 
@@ -1119,10 +1099,6 @@
 
 .method appendFromTurnMatchingData(IFFF)V
     .locals 20
-    .param p1    # I
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
 
     invoke-static/range {p3 .. p3}, Ljava/lang/Math;->abs(F)F
 
@@ -1568,9 +1544,6 @@
 
 .method createHighResTextures(Lcom/voovio/sweep/ResourceManager;ILandroid/graphics/Bitmap$Config;)V
     .locals 21
-    .param p1    # Lcom/voovio/sweep/ResourceManager;
-    .param p2    # I
-    .param p3    # Landroid/graphics/Bitmap$Config;
     .annotation build Landroid/annotation/TargetApi;
         value = 0xb
     .end annotation
@@ -1835,8 +1808,6 @@
 
 .method createLowResTextures(Lcom/voovio/sweep/ResourceManager;I)V
     .locals 24
-    .param p1    # Lcom/voovio/sweep/ResourceManager;
-    .param p2    # I
     .annotation build Landroid/annotation/TargetApi;
         value = 0xb
     .end annotation
@@ -2457,7 +2428,6 @@
 
 .method getNeighbours(Lcom/voovio/sweep/Voovio;Ljava/util/ArrayList;)V
     .locals 8
-    .param p1    # Lcom/voovio/sweep/Voovio;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3203,7 +3173,6 @@
 
 .method public getTransition(I)Lcom/voovio/sweep/Transition;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/voovio/sweep/Sweep;->m_aTransitions:Ljava/util/ArrayList;
 
@@ -3254,7 +3223,6 @@
 
 .method public setSEFFile(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/voovio/sweep/Sweep;->m_strSEFFile:Ljava/lang/String;
 

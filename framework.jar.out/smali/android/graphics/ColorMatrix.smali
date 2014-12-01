@@ -26,7 +26,6 @@
 
 .method public constructor <init>(Landroid/graphics/ColorMatrix;)V
     .locals 4
-    .param p1    # Landroid/graphics/ColorMatrix;
 
     const/16 v3, 0x14
 
@@ -49,7 +48,6 @@
 
 .method public constructor <init>([F)V
     .locals 3
-    .param p1    # [F
 
     const/16 v2, 0x14
 
@@ -80,7 +78,6 @@
 
 .method public postConcat(Landroid/graphics/ColorMatrix;)V
     .locals 0
-    .param p1    # Landroid/graphics/ColorMatrix;
 
     invoke-virtual {p0, p1, p0}, Landroid/graphics/ColorMatrix;->setConcat(Landroid/graphics/ColorMatrix;Landroid/graphics/ColorMatrix;)V
 
@@ -89,7 +86,6 @@
 
 .method public preConcat(Landroid/graphics/ColorMatrix;)V
     .locals 0
-    .param p1    # Landroid/graphics/ColorMatrix;
 
     invoke-virtual {p0, p0, p1}, Landroid/graphics/ColorMatrix;->setConcat(Landroid/graphics/ColorMatrix;Landroid/graphics/ColorMatrix;)V
 
@@ -138,7 +134,6 @@
 
 .method public set(Landroid/graphics/ColorMatrix;)V
     .locals 4
-    .param p1    # Landroid/graphics/ColorMatrix;
 
     const/4 v3, 0x0
 
@@ -155,7 +150,6 @@
 
 .method public set([F)V
     .locals 3
-    .param p1    # [F
 
     const/4 v2, 0x0
 
@@ -170,8 +164,6 @@
 
 .method public setConcat(Landroid/graphics/ColorMatrix;Landroid/graphics/ColorMatrix;)V
     .locals 13
-    .param p1    # Landroid/graphics/ColorMatrix;
-    .param p2    # Landroid/graphics/ColorMatrix;
 
     const/4 v12, 0x4
 
@@ -404,8 +396,6 @@
 
 .method public setRotate(IF)V
     .locals 8
-    .param p1    # I
-    .param p2    # F
 
     const/16 v7, 0xc
 
@@ -525,7 +515,6 @@
 
 .method public setSaturation(F)V
     .locals 7
-    .param p1    # F
 
     invoke-virtual {p0}, Landroid/graphics/ColorMatrix;->reset()V
 
@@ -594,10 +583,6 @@
 
 .method public setScale(FFFF)V
     .locals 3
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
 
     iget-object v0, p0, Landroid/graphics/ColorMatrix;->mArray:[F
 

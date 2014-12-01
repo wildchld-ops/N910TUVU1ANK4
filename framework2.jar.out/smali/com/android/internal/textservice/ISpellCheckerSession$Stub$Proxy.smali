@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -135,8 +134,6 @@
 
 .method public onGetSentenceSuggestionsMultiple([Landroid/view/textservice/TextInfo;I)V
     .locals 5
-    .param p1    # [Landroid/view/textservice/TextInfo;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -184,9 +181,6 @@
 
 .method public onGetSuggestionsMultiple([Landroid/view/textservice/TextInfo;IZ)V
     .locals 5
-    .param p1    # [Landroid/view/textservice/TextInfo;
-    .param p2    # I
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

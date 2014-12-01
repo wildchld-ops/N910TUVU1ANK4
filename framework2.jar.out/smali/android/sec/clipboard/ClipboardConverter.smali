@@ -23,7 +23,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,7 +33,6 @@
 
 .method private getFormatID(Landroid/content/ClipData;)I
     .locals 10
-    .param p1    # Landroid/content/ClipData;
 
     const/4 v9, 0x1
 
@@ -187,7 +185,6 @@
 
 .method public static getInstance(Landroid/content/Context;)Landroid/sec/clipboard/ClipboardConverter;
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     sget-object v0, Landroid/sec/clipboard/ClipboardConverter;->sInstance:Landroid/sec/clipboard/ClipboardConverter;
 
@@ -207,7 +204,6 @@
 
 .method private getMultiUri(Landroid/content/ClipData;)Ljava/util/ArrayList;
     .locals 6
-    .param p1    # Landroid/content/ClipData;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -270,7 +266,6 @@
 
 .method private isImagefile(Landroid/net/Uri;)Z
     .locals 3
-    .param p1    # Landroid/net/Uri;
 
     if-eqz p1, :cond_0
 
@@ -317,7 +312,6 @@
 # virtual methods
 .method public ClipDataToClipbaordData(Landroid/content/ClipData;)Landroid/sec/clipboard/data/ClipboardData;
     .locals 11
-    .param p1    # Landroid/content/ClipData;
 
     const/4 v10, 0x0
 
@@ -584,7 +578,6 @@
 
 .method public ClipbaordDataToClipData(Landroid/sec/clipboard/data/ClipboardData;)Landroid/content/ClipData;
     .locals 1
-    .param p1    # Landroid/sec/clipboard/data/ClipboardData;
 
     const/4 v0, 0x0
 

@@ -44,10 +44,6 @@
 
 .method public constructor <init>(ILandroid/accounts/Account;Ljava/lang/String;J)V
     .locals 0
-    .param p1    # I
-    .param p2    # Landroid/accounts/Account;
-    .param p3    # Ljava/lang/String;
-    .param p4    # J
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -64,7 +60,6 @@
 
 .method public constructor <init>(Landroid/content/SyncInfo;)V
     .locals 3
-    .param p1    # Landroid/content/SyncInfo;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -99,7 +94,6 @@
 
 .method constructor <init>(Landroid/os/Parcel;)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -142,8 +136,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget v0, p0, Landroid/content/SyncInfo;->authorityId:I
 

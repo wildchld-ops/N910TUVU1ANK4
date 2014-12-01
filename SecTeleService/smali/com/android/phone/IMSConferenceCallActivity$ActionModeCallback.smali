@@ -104,11 +104,11 @@
 
     move-result-object v1
 
-    invoke-virtual {v1, v4}, Landroid/widget/AbsListView;->twSetCustomMultiChoiceMode(Z)V
+    invoke-virtual {v1, v4}, Landroid/widget/ListView;->twSetCustomMultiChoiceMode(Z)V
 
     iget-object v1, p0, Lcom/android/phone/IMSConferenceCallActivity$ActionModeCallback;->this$0:Lcom/android/phone/IMSConferenceCallActivity;
 
-    invoke-virtual {v1}, Landroid/app/Activity;->getMenuInflater()Landroid/view/MenuInflater;
+    invoke-virtual {v1}, Lcom/android/phone/IMSConferenceCallActivity;->getMenuInflater()Landroid/view/MenuInflater;
 
     move-result-object v0
 
@@ -131,7 +131,7 @@
 
     iget-object v1, p0, Lcom/android/phone/IMSConferenceCallActivity$ActionModeCallback;->this$0:Lcom/android/phone/IMSConferenceCallActivity;
 
-    invoke-virtual {v1}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v1}, Lcom/android/phone/IMSConferenceCallActivity;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -189,7 +189,7 @@
 
     invoke-direct {v2, p0}, Lcom/android/phone/IMSConferenceCallActivity$ActionModeCallback$1;-><init>(Lcom/android/phone/IMSConferenceCallActivity$ActionModeCallback;)V
 
-    invoke-virtual {v1, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v1, v2}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     :cond_1
     iget-object v1, p0, Lcom/android/phone/IMSConferenceCallActivity$ActionModeCallback;->this$0:Lcom/android/phone/IMSConferenceCallActivity;

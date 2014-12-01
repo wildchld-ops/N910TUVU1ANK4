@@ -33,7 +33,6 @@
 # virtual methods
 .method public onFontScaleChanged(F)V
     .locals 3
-    .param p1    # F
 
     iget-object v1, p0, Landroid/media/WebVttRenderingWidget$1;->this$0:Landroid/media/WebVttRenderingWidget;
 
@@ -66,7 +65,6 @@
 
 .method public onUserStyleChanged(Landroid/view/accessibility/CaptioningManager$CaptionStyle;)V
     .locals 2
-    .param p1    # Landroid/view/accessibility/CaptioningManager$CaptionStyle;
 
     iget-object v0, p0, Landroid/media/WebVttRenderingWidget$1;->this$0:Landroid/media/WebVttRenderingWidget;
 

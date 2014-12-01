@@ -56,8 +56,6 @@
 
 .method private constructor <init>(IF)V
     .locals 0
-    .param p1    # I
-    .param p2    # F
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -70,9 +68,6 @@
 
 .method synthetic constructor <init>(IFLandroid/media/Rating$1;)V
     .locals 0
-    .param p1    # I
-    .param p2    # F
-    .param p3    # Landroid/media/Rating$1;
 
     invoke-direct {p0, p1, p2}, Landroid/media/Rating;-><init>(IF)V
 
@@ -81,7 +76,6 @@
 
 .method public static newHeartRating(Z)Landroid/media/Rating;
     .locals 3
-    .param p0    # Z
 
     new-instance v1, Landroid/media/Rating;
 
@@ -104,7 +98,6 @@
 
 .method public static newPercentageRating(F)Landroid/media/Rating;
     .locals 2
-    .param p0    # F
 
     const/4 v0, 0x0
 
@@ -142,8 +135,6 @@
 
 .method public static newStarRating(IF)Landroid/media/Rating;
     .locals 5
-    .param p0    # I
-    .param p1    # F
 
     const/4 v1, 0x0
 
@@ -232,7 +223,6 @@
 
 .method public static newThumbRating(Z)Landroid/media/Rating;
     .locals 3
-    .param p0    # Z
 
     new-instance v1, Landroid/media/Rating;
 
@@ -255,7 +245,6 @@
 
 .method public static newUnratedRating(I)Landroid/media/Rating;
     .locals 2
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -508,8 +497,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget v0, p0, Landroid/media/Rating;->mRatingStyle:I
 

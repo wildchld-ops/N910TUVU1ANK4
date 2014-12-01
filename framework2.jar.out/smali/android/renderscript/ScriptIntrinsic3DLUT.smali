@@ -12,9 +12,6 @@
 # direct methods
 .method private constructor <init>(ILandroid/renderscript/RenderScript;Landroid/renderscript/Element;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Landroid/renderscript/RenderScript;
-    .param p3    # Landroid/renderscript/Element;
 
     invoke-direct {p0, p1, p2}, Landroid/renderscript/ScriptIntrinsic;-><init>(ILandroid/renderscript/RenderScript;)V
 
@@ -25,8 +22,6 @@
 
 .method public static create(Landroid/renderscript/RenderScript;Landroid/renderscript/Element;)Landroid/renderscript/ScriptIntrinsic3DLUT;
     .locals 3
-    .param p0    # Landroid/renderscript/RenderScript;
-    .param p1    # Landroid/renderscript/Element;
 
     const/16 v1, 0x8
 
@@ -68,8 +63,6 @@
 # virtual methods
 .method public forEach(Landroid/renderscript/Allocation;Landroid/renderscript/Allocation;)V
     .locals 2
-    .param p1    # Landroid/renderscript/Allocation;
-    .param p2    # Landroid/renderscript/Allocation;
 
     const/4 v0, 0x0
 
@@ -98,7 +91,6 @@
 
 .method public setLUT(Landroid/renderscript/Allocation;)V
     .locals 3
-    .param p1    # Landroid/renderscript/Allocation;
 
     invoke-virtual {p1}, Landroid/renderscript/Allocation;->getType()Landroid/renderscript/Type;
 

@@ -50,22 +50,6 @@
 
 .method public constructor <init>(FFFFFFFFFFFFFFFF)V
     .locals 1
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # F
-    .param p7    # F
-    .param p8    # F
-    .param p9    # F
-    .param p10    # F
-    .param p11    # F
-    .param p12    # F
-    .param p13    # F
-    .param p14    # F
-    .param p15    # F
-    .param p16    # F
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -110,7 +94,6 @@
 
 .method public constructor <init>([F)V
     .locals 1
-    .param p1    # [F
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -217,7 +200,6 @@
 # virtual methods
 .method public FillArray([F)V
     .locals 2
-    .param p1    # [F
 
     const/4 v0, 0x0
 
@@ -320,7 +302,6 @@
 
 .method public FromArray([F)V
     .locals 1
-    .param p1    # [F
 
     const/4 v0, 0x0
 
@@ -423,9 +404,6 @@
 
 .method public FromOrientation(Lcom/voovio/voo3d/data/Vector3;Lcom/voovio/voo3d/data/Vector3;Lcom/voovio/voo3d/data/Vector3;)V
     .locals 2
-    .param p1    # Lcom/voovio/voo3d/data/Vector3;
-    .param p2    # Lcom/voovio/voo3d/data/Vector3;
-    .param p3    # Lcom/voovio/voo3d/data/Vector3;
 
     invoke-virtual {p0}, Lcom/voovio/voo3d/data/Matrix4;->identity()V
 
@@ -592,8 +570,6 @@
 
 .method public axisRotation(Lcom/voovio/voo3d/data/Vector3;F)V
     .locals 11
-    .param p1    # Lcom/voovio/voo3d/data/Vector3;
-    .param p2    # F
 
     invoke-virtual {p0}, Lcom/voovio/voo3d/data/Matrix4;->identity()V
 
@@ -825,7 +801,6 @@
 
 .method public copy(Lcom/voovio/voo3d/data/Matrix4;)V
     .locals 1
-    .param p1    # Lcom/voovio/voo3d/data/Matrix4;
 
     iget v0, p1, Lcom/voovio/voo3d/data/Matrix4;->e0:F
 
@@ -1156,12 +1131,6 @@
 
 .method public frustumRH(FFFFFF)V
     .locals 4
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # F
 
     const/high16 v3, 0x40000000
 
@@ -2102,7 +2071,6 @@
 
 .method public leftMultiply(Lcom/voovio/voo3d/data/Matrix4;)V
     .locals 0
-    .param p1    # Lcom/voovio/voo3d/data/Matrix4;
 
     invoke-virtual {p0, p1}, Lcom/voovio/voo3d/data/Matrix4;->multiply(Lcom/voovio/voo3d/data/Matrix4;)V
 
@@ -2111,7 +2079,6 @@
 
 .method public multiply(Lcom/voovio/voo3d/data/Matrix4;)V
     .locals 36
-    .param p1    # Lcom/voovio/voo3d/data/Matrix4;
 
     move-object/from16 v0, p0
 
@@ -2602,7 +2569,6 @@
 
 .method public multiply3x3(Lcom/voovio/voo3d/data/Matrix4;)V
     .locals 22
-    .param p1    # Lcom/voovio/voo3d/data/Matrix4;
 
     move-object/from16 v0, p0
 
@@ -2879,7 +2845,6 @@
 
 .method public multiply4x3(Lcom/voovio/voo3d/data/Matrix4;)V
     .locals 28
-    .param p1    # Lcom/voovio/voo3d/data/Matrix4;
 
     move-object/from16 v0, p0
 
@@ -3228,10 +3193,6 @@
 
 .method public perspectiveFieldOfViewRH(FFFF)V
     .locals 11
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
 
     float-to-double v5, p3
 
@@ -3276,7 +3237,6 @@
 
 .method public rightMultiply(Lcom/voovio/voo3d/data/Matrix4;)V
     .locals 36
-    .param p1    # Lcom/voovio/voo3d/data/Matrix4;
 
     move-object/from16 v0, p1
 
@@ -3767,7 +3727,6 @@
 
 .method public rotationX(F)V
     .locals 4
-    .param p1    # F
 
     invoke-virtual {p0}, Lcom/voovio/voo3d/data/Matrix4;->identity()V
 
@@ -3810,7 +3769,6 @@
 
 .method public rotationY(F)V
     .locals 4
-    .param p1    # F
 
     invoke-virtual {p0}, Lcom/voovio/voo3d/data/Matrix4;->identity()V
 
@@ -3853,7 +3811,6 @@
 
 .method public rotationZ(F)V
     .locals 4
-    .param p1    # F
 
     invoke-virtual {p0}, Lcom/voovio/voo3d/data/Matrix4;->identity()V
 
@@ -3896,9 +3853,6 @@
 
 .method public scale(FFF)V
     .locals 0
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
 
     invoke-virtual {p0}, Lcom/voovio/voo3d/data/Matrix4;->identity()V
 
@@ -4195,9 +4149,6 @@
 
 .method public translation(FFF)V
     .locals 0
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
 
     invoke-virtual {p0}, Lcom/voovio/voo3d/data/Matrix4;->identity()V
 
@@ -4354,7 +4305,6 @@
 
 .method public vectorMult(Lcom/voovio/voo3d/data/Vector3;)V
     .locals 5
-    .param p1    # Lcom/voovio/voo3d/data/Vector3;
 
     iget v0, p1, Lcom/voovio/voo3d/data/Vector3;->x:F
 
@@ -4433,7 +4383,6 @@
 
 .method public vectorMult3x3(Lcom/voovio/voo3d/data/Vector3;)V
     .locals 5
-    .param p1    # Lcom/voovio/voo3d/data/Vector3;
 
     iget v0, p1, Lcom/voovio/voo3d/data/Vector3;->x:F
 

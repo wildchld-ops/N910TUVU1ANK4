@@ -27,8 +27,6 @@
 # direct methods
 .method constructor <init>(Ljava/lang/String;I)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-direct {p0, p2}, Lcom/android/server/pm/GrantedPermissions;-><init>(I)V
 
@@ -55,7 +53,6 @@
 # virtual methods
 .method addPackage(Lcom/android/server/pm/PackageSetting;)V
     .locals 2
-    .param p1    # Lcom/android/server/pm/PackageSetting;
 
     iget-object v0, p0, Lcom/android/server/pm/SharedUserSetting;->packages:Ljava/util/HashSet;
 
@@ -79,7 +76,6 @@
 
 .method removePackage(Lcom/android/server/pm/PackageSetting;)V
     .locals 5
-    .param p1    # Lcom/android/server/pm/PackageSetting;
 
     iget-object v3, p0, Lcom/android/server/pm/SharedUserSetting;->packages:Ljava/util/HashSet;
 

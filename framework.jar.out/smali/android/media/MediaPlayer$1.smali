@@ -36,8 +36,6 @@
 # virtual methods
 .method public onSubtitleData(Landroid/media/MediaPlayer;Landroid/media/SubtitleData;)V
     .locals 9
-    .param p1    # Landroid/media/MediaPlayer;
-    .param p2    # Landroid/media/SubtitleData;
 
     invoke-virtual {p2}, Landroid/media/SubtitleData;->getTrackIndex()I
 

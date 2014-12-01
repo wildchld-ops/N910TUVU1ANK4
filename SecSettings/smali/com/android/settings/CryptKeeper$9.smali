@@ -21,8 +21,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/settings/CryptKeeper;JJ)V
     .locals 0
-    .param p2    # J
-    .param p4    # J
 
     iput-object p1, p0, Lcom/android/settings/CryptKeeper$9;->this$0:Lcom/android/settings/CryptKeeper;
 
@@ -168,7 +166,6 @@
 
 .method public onTick(J)V
     .locals 8
-    .param p1    # J
 
     const/4 v7, 0x1
 

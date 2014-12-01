@@ -101,7 +101,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -112,8 +111,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -124,9 +121,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v0, 0x0
 
@@ -782,7 +776,6 @@
 
 .method private getDataSignalTypeIcon(I)I
     .locals 4
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -841,7 +834,6 @@
 # virtual methods
 .method public dispatchPopulateAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)Z
     .locals 2
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
 
     iget-boolean v0, p0, Lcom/android/systemui/statusbar/SignalClusterView;->mWifiVisible:Z
 
@@ -1140,7 +1132,6 @@
 
 .method public onRtlPropertiesChanged(I)V
     .locals 2
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -1207,7 +1198,6 @@
 
 .method public setBtTetherState(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/systemui/statusbar/SignalClusterView;->mBtTetherState:Z
 
@@ -1216,12 +1206,6 @@
 
 .method public setDataSignalIcon(ZIIIIZ)V
     .locals 5
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Z
 
     const v4, 0x7f020345
 
@@ -1357,7 +1341,6 @@
 
 .method public setDataState(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/systemui/statusbar/SignalClusterView;->mMobileDataState:I
 
@@ -1366,7 +1349,6 @@
 
 .method public setHasService(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/systemui/statusbar/SignalClusterView;->mHasService:Z
 
@@ -1375,8 +1357,6 @@
 
 .method public setIsAirplaneMode(ZI)V
     .locals 0
-    .param p1    # Z
-    .param p2    # I
 
     iput-boolean p1, p0, Lcom/android/systemui/statusbar/SignalClusterView;->mIsAirplaneMode:Z
 
@@ -1389,12 +1369,6 @@
 
 .method public setMobileDataIndicators(ZIIILjava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Ljava/lang/String;
-    .param p6    # Ljava/lang/String;
 
     iput-boolean p1, p0, Lcom/android/systemui/statusbar/SignalClusterView;->mMobileVisible:Z
 
@@ -1415,12 +1389,6 @@
 
 .method public setNWBoosterIndicators(ZZIIILjava/lang/String;)V
     .locals 0
-    .param p1    # Z
-    .param p2    # Z
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Ljava/lang/String;
 
     iput-boolean p1, p0, Lcom/android/systemui/statusbar/SignalClusterView;->mNWBoosterVisible:Z
 
@@ -1441,7 +1409,6 @@
 
 .method public setNetworkController(Lcom/android/systemui/statusbar/policy/NetworkController;)V
     .locals 0
-    .param p1    # Lcom/android/systemui/statusbar/policy/NetworkController;
 
     iput-object p1, p0, Lcom/android/systemui/statusbar/SignalClusterView;->mNC:Lcom/android/systemui/statusbar/policy/NetworkController;
 
@@ -1450,7 +1417,6 @@
 
 .method public setRoamingIcon(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/systemui/statusbar/SignalClusterView;->mMobileRoamingId:I
 
@@ -1459,10 +1425,6 @@
 
 .method public setWifiIndicators(ZIILjava/lang/String;)V
     .locals 0
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
 
     iput-boolean p1, p0, Lcom/android/systemui/statusbar/SignalClusterView;->mWifiVisible:Z
 

@@ -37,8 +37,6 @@
 
 .method synthetic constructor <init>(Lcom/sec/android/app/camera/glwidget/TwGLAudioRecordIndicator;Lcom/sec/android/app/camera/glwidget/TwGLAudioRecordIndicator$1;)V
     .locals 0
-    .param p1    # Lcom/sec/android/app/camera/glwidget/TwGLAudioRecordIndicator;
-    .param p2    # Lcom/sec/android/app/camera/glwidget/TwGLAudioRecordIndicator$1;
 
     invoke-direct {p0, p1}, Lcom/sec/android/app/camera/glwidget/TwGLAudioRecordIndicator$ConnectTimerTask;-><init>(Lcom/sec/android/app/camera/glwidget/TwGLAudioRecordIndicator;)V
 

@@ -75,8 +75,6 @@
 # direct methods
 .method public constructor <init>(Landroid/view/View;I)V
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     const/4 v2, 0x0
 
@@ -167,7 +165,6 @@
 
 .method static synthetic access$000(Landroid/widget/FHoverPopupWindow;)I
     .locals 1
-    .param p0    # Landroid/widget/FHoverPopupWindow;
 
     iget v0, p0, Landroid/widget/FHoverPopupWindow;->mDisplayWidthToComputeAniWidth:I
 
@@ -176,7 +173,6 @@
 
 .method static synthetic access$100(Landroid/widget/FHoverPopupWindow;)I
     .locals 1
-    .param p0    # Landroid/widget/FHoverPopupWindow;
 
     iget v0, p0, Landroid/widget/FHoverPopupWindow;->mDirection:I
 
@@ -185,7 +181,6 @@
 
 .method static synthetic access$1000(Landroid/widget/FHoverPopupWindow;)I
     .locals 1
-    .param p0    # Landroid/widget/FHoverPopupWindow;
 
     iget v0, p0, Landroid/widget/FHoverPopupWindow;->mDisplayFrameRight:I
 
@@ -194,8 +189,6 @@
 
 .method static synthetic access$102(Landroid/widget/FHoverPopupWindow;I)I
     .locals 0
-    .param p0    # Landroid/widget/FHoverPopupWindow;
-    .param p1    # I
 
     iput p1, p0, Landroid/widget/FHoverPopupWindow;->mDirection:I
 
@@ -204,7 +197,6 @@
 
 .method static synthetic access$1100(Landroid/widget/FHoverPopupWindow;)F
     .locals 1
-    .param p0    # Landroid/widget/FHoverPopupWindow;
 
     iget v0, p0, Landroid/widget/FHoverPopupWindow;->TW:F
 
@@ -213,7 +205,6 @@
 
 .method static synthetic access$1200(Landroid/widget/FHoverPopupWindow;)F
     .locals 1
-    .param p0    # Landroid/widget/FHoverPopupWindow;
 
     iget v0, p0, Landroid/widget/FHoverPopupWindow;->H:F
 
@@ -222,7 +213,6 @@
 
 .method static synthetic access$1300(Landroid/widget/FHoverPopupWindow;)F
     .locals 1
-    .param p0    # Landroid/widget/FHoverPopupWindow;
 
     iget v0, p0, Landroid/widget/FHoverPopupWindow;->W:F
 
@@ -231,8 +221,6 @@
 
 .method static synthetic access$1302(Landroid/widget/FHoverPopupWindow;F)F
     .locals 0
-    .param p0    # Landroid/widget/FHoverPopupWindow;
-    .param p1    # F
 
     iput p1, p0, Landroid/widget/FHoverPopupWindow;->W:F
 
@@ -241,7 +229,6 @@
 
 .method static synthetic access$1400(Landroid/widget/FHoverPopupWindow;)Landroid/graphics/PointF;
     .locals 1
-    .param p0    # Landroid/widget/FHoverPopupWindow;
 
     iget-object v0, p0, Landroid/widget/FHoverPopupWindow;->mCenterPoint:Landroid/graphics/PointF;
 
@@ -250,8 +237,6 @@
 
 .method static synthetic access$1402(Landroid/widget/FHoverPopupWindow;Landroid/graphics/PointF;)Landroid/graphics/PointF;
     .locals 0
-    .param p0    # Landroid/widget/FHoverPopupWindow;
-    .param p1    # Landroid/graphics/PointF;
 
     iput-object p1, p0, Landroid/widget/FHoverPopupWindow;->mCenterPoint:Landroid/graphics/PointF;
 
@@ -260,7 +245,6 @@
 
 .method static synthetic access$1500(Landroid/widget/FHoverPopupWindow;)Landroid/graphics/PointF;
     .locals 1
-    .param p0    # Landroid/widget/FHoverPopupWindow;
 
     iget-object v0, p0, Landroid/widget/FHoverPopupWindow;->mLeftPoint:Landroid/graphics/PointF;
 
@@ -269,8 +253,6 @@
 
 .method static synthetic access$1502(Landroid/widget/FHoverPopupWindow;Landroid/graphics/PointF;)Landroid/graphics/PointF;
     .locals 0
-    .param p0    # Landroid/widget/FHoverPopupWindow;
-    .param p1    # Landroid/graphics/PointF;
 
     iput-object p1, p0, Landroid/widget/FHoverPopupWindow;->mLeftPoint:Landroid/graphics/PointF;
 
@@ -279,7 +261,6 @@
 
 .method static synthetic access$1600(Landroid/widget/FHoverPopupWindow;)Landroid/graphics/PointF;
     .locals 1
-    .param p0    # Landroid/widget/FHoverPopupWindow;
 
     iget-object v0, p0, Landroid/widget/FHoverPopupWindow;->mRightPoint:Landroid/graphics/PointF;
 
@@ -288,8 +269,6 @@
 
 .method static synthetic access$1602(Landroid/widget/FHoverPopupWindow;Landroid/graphics/PointF;)Landroid/graphics/PointF;
     .locals 0
-    .param p0    # Landroid/widget/FHoverPopupWindow;
-    .param p1    # Landroid/graphics/PointF;
 
     iput-object p1, p0, Landroid/widget/FHoverPopupWindow;->mRightPoint:Landroid/graphics/PointF;
 
@@ -298,7 +277,6 @@
 
 .method static synthetic access$1700(Landroid/widget/FHoverPopupWindow;)F
     .locals 1
-    .param p0    # Landroid/widget/FHoverPopupWindow;
 
     iget v0, p0, Landroid/widget/FHoverPopupWindow;->mPickerPadding:F
 
@@ -307,7 +285,6 @@
 
 .method static synthetic access$1800(Landroid/widget/FHoverPopupWindow;)I
     .locals 1
-    .param p0    # Landroid/widget/FHoverPopupWindow;
 
     iget v0, p0, Landroid/widget/FHoverPopupWindow;->mContainerLeftOnWindow:I
 
@@ -316,7 +293,6 @@
 
 .method static synthetic access$1900(Landroid/widget/FHoverPopupWindow;)Landroid/graphics/Rect;
     .locals 1
-    .param p0    # Landroid/widget/FHoverPopupWindow;
 
     iget-object v0, p0, Landroid/widget/FHoverPopupWindow;->mReferncedAnchorRect:Landroid/graphics/Rect;
 
@@ -325,7 +301,6 @@
 
 .method static synthetic access$200(Landroid/widget/FHoverPopupWindow;)I
     .locals 1
-    .param p0    # Landroid/widget/FHoverPopupWindow;
 
     iget v0, p0, Landroid/widget/FHoverPopupWindow;->MOVE_RIGHT:I
 
@@ -334,7 +309,6 @@
 
 .method static synthetic access$2000(Landroid/widget/FHoverPopupWindow;)I
     .locals 1
-    .param p0    # Landroid/widget/FHoverPopupWindow;
 
     iget v0, p0, Landroid/widget/FHoverPopupWindow;->mPickerXoffset:I
 
@@ -343,9 +317,6 @@
 
 .method static synthetic access$300(Landroid/widget/FHoverPopupWindow;II)V
     .locals 0
-    .param p0    # Landroid/widget/FHoverPopupWindow;
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Landroid/widget/FHoverPopupWindow;->setAnimator(II)V
 
@@ -354,7 +325,6 @@
 
 .method static synthetic access$400(Landroid/widget/FHoverPopupWindow;)Landroid/animation/ValueAnimator;
     .locals 1
-    .param p0    # Landroid/widget/FHoverPopupWindow;
 
     iget-object v0, p0, Landroid/widget/FHoverPopupWindow;->objAnimator:Landroid/animation/ValueAnimator;
 
@@ -363,7 +333,6 @@
 
 .method static synthetic access$500(Landroid/widget/FHoverPopupWindow;)I
     .locals 1
-    .param p0    # Landroid/widget/FHoverPopupWindow;
 
     iget v0, p0, Landroid/widget/FHoverPopupWindow;->MOVE_LEFT:I
 
@@ -372,7 +341,6 @@
 
 .method static synthetic access$600(Landroid/widget/FHoverPopupWindow;)I
     .locals 1
-    .param p0    # Landroid/widget/FHoverPopupWindow;
 
     iget v0, p0, Landroid/widget/FHoverPopupWindow;->MOVE_LEFT_TO_CENTER:I
 
@@ -381,7 +349,6 @@
 
 .method static synthetic access$700(Landroid/widget/FHoverPopupWindow;)I
     .locals 1
-    .param p0    # Landroid/widget/FHoverPopupWindow;
 
     iget v0, p0, Landroid/widget/FHoverPopupWindow;->MOVE_RIGHT_TO_CENTER:I
 
@@ -390,7 +357,6 @@
 
 .method static synthetic access$800(Landroid/widget/FHoverPopupWindow;)F
     .locals 1
-    .param p0    # Landroid/widget/FHoverPopupWindow;
 
     iget v0, p0, Landroid/widget/FHoverPopupWindow;->objAnimationValue:F
 
@@ -399,8 +365,6 @@
 
 .method static synthetic access$802(Landroid/widget/FHoverPopupWindow;F)F
     .locals 0
-    .param p0    # Landroid/widget/FHoverPopupWindow;
-    .param p1    # F
 
     iput p1, p0, Landroid/widget/FHoverPopupWindow;->objAnimationValue:F
 
@@ -409,7 +373,6 @@
 
 .method static synthetic access$900(Landroid/widget/FHoverPopupWindow;)I
     .locals 1
-    .param p0    # Landroid/widget/FHoverPopupWindow;
 
     iget v0, p0, Landroid/widget/FHoverPopupWindow;->mDisplayFrameLeft:I
 
@@ -467,8 +430,6 @@
 
 .method private setAnimator(II)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
 
     const/4 v4, 0x1
 
@@ -578,10 +539,6 @@
 # virtual methods
 .method public computePopupPosition(Landroid/view/View;III)V
     .locals 51
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     move-object/from16 v0, p0
 
@@ -3096,10 +3053,6 @@
 
 .method public computePopupPositionInternal(Landroid/graphics/Rect;Landroid/graphics/Rect;II)V
     .locals 0
-    .param p1    # Landroid/graphics/Rect;
-    .param p2    # Landroid/graphics/Rect;
-    .param p3    # I
-    .param p4    # I
 
     invoke-super {p0, p1, p2, p3, p4}, Landroid/widget/HoverPopupWindow;->computePopupPositionInternal(Landroid/graphics/Rect;Landroid/graphics/Rect;II)V
 
@@ -3134,7 +3087,6 @@
 
 .method public onHoverEvent(Landroid/view/MotionEvent;)Z
     .locals 17
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-super/range {p0 .. p1}, Landroid/widget/HoverPopupWindow;->onHoverEvent(Landroid/view/MotionEvent;)Z
 
@@ -3995,7 +3947,6 @@
 
 .method public setOverTopPickerOffset(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/widget/HoverPopupWindow;->mContentContainer:Landroid/widget/HoverPopupWindow$HoverPopupContainer;
 
@@ -4019,7 +3970,6 @@
 
 .method public setPickerXOffset(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/widget/FHoverPopupWindow;->mPickerXoffset:I
 
@@ -4028,10 +3978,6 @@
 
 .method public updateHoverPopup(Landroid/view/View;III)V
     .locals 0
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-super {p0, p1, p2, p3, p4}, Landroid/widget/HoverPopupWindow;->updateHoverPopup(Landroid/view/View;III)V
 

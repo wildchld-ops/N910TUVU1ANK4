@@ -41,10 +41,6 @@
 
 .method public constructor <init>(Landroid/opengl/GLLogWrapper;IIILjava/nio/Buffer;)V
     .locals 0
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Ljava/nio/Buffer;
 
     iput-object p1, p0, Landroid/opengl/GLLogWrapper$PointerInfo;->this$0:Landroid/opengl/GLLogWrapper;
 
@@ -120,7 +116,6 @@
 
 .method public sizeof(I)I
     .locals 2
-    .param p1    # I
 
     const/4 v1, 0x4
 

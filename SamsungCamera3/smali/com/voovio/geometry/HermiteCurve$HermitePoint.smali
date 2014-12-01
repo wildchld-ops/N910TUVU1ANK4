@@ -29,7 +29,6 @@
 # direct methods
 .method public constructor <init>(Lcom/voovio/geometry/HermiteCurve;F)V
     .locals 6
-    .param p2    # F
 
     const/high16 v5, 0x40400000
 

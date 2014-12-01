@@ -54,7 +54,7 @@
 
     const-string v9, "layout_inflater"
 
-    invoke-virtual {v1, v9}, Landroid/view/ContextThemeWrapper;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v1, v9}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v2
 
@@ -138,7 +138,7 @@
 
     move-result-object v9
 
-    invoke-virtual {v9}, Landroid/widget/CompoundButton;->isChecked()Z
+    invoke-virtual {v9}, Landroid/widget/Switch;->isChecked()Z
 
     move-result v7
 
@@ -160,7 +160,7 @@
 
     move-result-object v9
 
-    invoke-virtual {v9}, Landroid/widget/CompoundButton;->isChecked()Z
+    invoke-virtual {v9}, Landroid/widget/Switch;->isChecked()Z
 
     move-result v0
 

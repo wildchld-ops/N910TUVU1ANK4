@@ -45,7 +45,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Lcom/samsung/android/cepproxyks/ISCEPKeystoreService$Stub;-><init>()V
 
@@ -56,7 +55,6 @@
 
 .method static synthetic access$000(Lcom/android/server/cepproxyks/ScepKeystoreProxyService;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/server/cepproxyks/ScepKeystoreProxyService;
 
     iget-object v0, p0, Lcom/android/server/cepproxyks/ScepKeystoreProxyService;->mContext:Landroid/content/Context;
 
@@ -65,8 +63,6 @@
 
 .method public static bind(Landroid/content/Context;I)Lcom/android/server/cepproxyks/ScepKeystoreProxyService$KeyChainConnection;
     .locals 11
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/InterruptedException;,
@@ -254,7 +250,6 @@
 
 .method private static ensureNotOnMainThread(Landroid/content/Context;)V
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     invoke-static {}, Landroid/os/Looper;->myLooper()Landroid/os/Looper;
 
@@ -282,7 +277,6 @@
 
 .method private isHardwareBackedKey([B)Z
     .locals 8
-    .param p1    # [B
 
     const/4 v5, 0x0
 
@@ -354,7 +348,6 @@
 
 .method private parseCertificate([B)Ljava/security/cert/X509Certificate;
     .locals 2
-    .param p1    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/security/cert/CertificateException;
@@ -384,8 +377,6 @@
 # virtual methods
 .method public deletecertificateEntry(Ljava/lang/String;Z)I
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -559,7 +550,6 @@
 
 .method public getCertificate(Ljava/lang/String;)Lcom/samsung/android/cepproxyks/CertificateAKS;
     .locals 12
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -792,8 +782,6 @@
 
 .method public grantAccessForAKS(ILjava/lang/String;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -844,7 +832,6 @@
 
 .method public installCACert(Lcom/samsung/android/cepproxyks/CertificateAKS;)I
     .locals 4
-    .param p1    # Lcom/samsung/android/cepproxyks/CertificateAKS;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -911,8 +898,6 @@
 
 .method public installCACertForWifiCCM(Lcom/samsung/android/cepproxyks/CertificateAKS;Ljava/lang/String;)I
     .locals 9
-    .param p1    # Lcom/samsung/android/cepproxyks/CertificateAKS;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1011,7 +996,6 @@
 
 .method public installCaCertificate([B)V
     .locals 9
-    .param p1    # [B
 
     new-instance v6, Lcom/android/org/conscrypt/TrustedCertificateStore;
 
@@ -1168,11 +1152,6 @@
 
 .method public installCertificateInAndroidKeyStore(Lcom/samsung/android/cepproxyks/CertByte;Ljava/lang/String;[CZI)I
     .locals 16
-    .param p1    # Lcom/samsung/android/cepproxyks/CertByte;
-    .param p2    # Ljava/lang/String;
-    .param p3    # [C
-    .param p4    # Z
-    .param p5    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1668,8 +1647,6 @@
 
 .method public isAliasExists(Ljava/lang/String;Z)I
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1814,7 +1791,6 @@
 
 .method setPrivateKey([B)Ljava/security/PrivateKey;
     .locals 4
-    .param p1    # [B
 
     :try_start_0
     const-string v3, "RSA"

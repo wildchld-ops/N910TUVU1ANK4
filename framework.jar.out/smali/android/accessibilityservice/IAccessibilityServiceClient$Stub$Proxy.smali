@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -94,7 +93,6 @@
 
 .method public onAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
     .locals 5
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -157,7 +155,6 @@
 
 .method public onGesture(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -242,8 +239,6 @@
 
 .method public onKeyEvent(Landroid/view/KeyEvent;I)V
     .locals 5
-    .param p1    # Landroid/view/KeyEvent;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -308,8 +303,6 @@
 
 .method public setConnection(Landroid/accessibilityservice/IAccessibilityServiceConnection;I)V
     .locals 5
-    .param p1    # Landroid/accessibilityservice/IAccessibilityServiceConnection;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

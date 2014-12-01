@@ -52,9 +52,6 @@
 
 .method public constructor <init>(Lcom/android/settings/accessibility/smartscroll/touchwiz/widget/TwHelpScrollView;Landroid/content/Context;I)V
     .locals 3
-    .param p1    # Lcom/android/settings/accessibility/smartscroll/touchwiz/widget/TwHelpScrollView;
-    .param p2    # Landroid/content/Context;
-    .param p3    # I
 
     const/4 v2, 0x0
 
@@ -119,7 +116,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartMotionListener;)I
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartMotionListener;
 
     iget v0, p0, Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartMotionListener;->mSmartScrollSpeedNormalY:I
 
@@ -128,7 +124,6 @@
 
 .method static synthetic access$1000(Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartMotionListener;)V
     .locals 0
-    .param p0    # Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartMotionListener;
 
     invoke-direct {p0}, Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartMotionListener;->doSmartMotionScroll()V
 
@@ -137,9 +132,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartMotionListener;II)V
     .locals 0
-    .param p0    # Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartMotionListener;
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartMotionListener;->handleSmartMotionScrolling(II)V
 
@@ -148,7 +140,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartMotionListener;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartMotionListener;
 
     iget-boolean v0, p0, Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartMotionListener;->mCheckStartMotionListener:Z
 
@@ -157,7 +148,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartMotionListener;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartMotionListener;
 
     iget-boolean v0, p0, Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartMotionListener;->mCheckFaceDetected:Z
 
@@ -166,8 +156,6 @@
 
 .method static synthetic access$402(Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartMotionListener;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartMotionListener;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartMotionListener;->mCheckFaceDetected:Z
 
@@ -176,8 +164,6 @@
 
 .method static synthetic access$502(Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartMotionListener;I)I
     .locals 0
-    .param p0    # Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartMotionListener;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartMotionListener;->mSmartScrollDirection:I
 
@@ -186,7 +172,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartMotionListener;)V
     .locals 0
-    .param p0    # Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartMotionListener;
 
     invoke-direct {p0}, Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartMotionListener;->getSmartScrollSpeed()V
 
@@ -195,7 +180,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartMotionListener;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartMotionListener;
 
     iget-object v0, p0, Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartMotionListener;->mPrivateEventHandler:Landroid/os/Handler;
 
@@ -204,8 +188,6 @@
 
 .method static synthetic access$802(Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartMotionListener;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartMotionListener;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartMotionListener;->mDoScrollMove:Z
 
@@ -214,8 +196,6 @@
 
 .method static synthetic access$902(Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartMotionListener;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartMotionListener;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartMotionListener;->mCheckSendResetEvent:Z
 
@@ -393,8 +373,6 @@
 
 .method private handleSmartMotionScrolling(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     const/4 v1, 0x1
 
@@ -486,7 +464,6 @@
 
 .method private isEdgeScrolling(I)Z
     .locals 5
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -614,7 +591,6 @@
 
 .method public setSmartMotionScrollAngle(I)V
     .locals 3
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartMotionListener;->isEnableSmartMotionListener()Z
 

@@ -30,9 +30,6 @@
 # direct methods
 .method public constructor <init>(Lcom/sec/android/app/camera/MonitoredActivity;Ljava/lang/Runnable;Landroid/os/Handler;)V
     .locals 1
-    .param p1    # Lcom/sec/android/app/camera/MonitoredActivity;
-    .param p2    # Ljava/lang/Runnable;
-    .param p3    # Landroid/os/Handler;
 
     invoke-direct {p0}, Lcom/sec/android/app/camera/MonitoredActivity$LifeCycleAdapter;-><init>()V
 
@@ -57,7 +54,6 @@
 
 .method static synthetic access$000(Lcom/sec/android/app/camera/Util$BackgroundJob;)Lcom/sec/android/app/camera/MonitoredActivity;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/Util$BackgroundJob;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Util$BackgroundJob;->mActivity:Lcom/sec/android/app/camera/MonitoredActivity;
 
@@ -68,7 +64,6 @@
 # virtual methods
 .method public onActivityDestroyed(Lcom/sec/android/app/camera/MonitoredActivity;)V
     .locals 2
-    .param p1    # Lcom/sec/android/app/camera/MonitoredActivity;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Util$BackgroundJob;->mCleanupRunner:Ljava/lang/Runnable;
 
@@ -85,14 +80,12 @@
 
 .method public onActivityStarted(Lcom/sec/android/app/camera/MonitoredActivity;)V
     .locals 0
-    .param p1    # Lcom/sec/android/app/camera/MonitoredActivity;
 
     return-void
 .end method
 
 .method public onActivityStopped(Lcom/sec/android/app/camera/MonitoredActivity;)V
     .locals 0
-    .param p1    # Lcom/sec/android/app/camera/MonitoredActivity;
 
     return-void
 .end method

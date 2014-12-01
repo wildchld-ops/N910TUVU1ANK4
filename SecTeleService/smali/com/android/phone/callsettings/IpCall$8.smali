@@ -149,7 +149,7 @@
 
     const v2, 0x7f09047a
 
-    invoke-virtual {v1, v2}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {v1, v2}, Lcom/android/phone/callsettings/IpCall;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -202,11 +202,11 @@
 
     iget-object v1, p0, Lcom/android/phone/callsettings/IpCall$8;->this$0:Lcom/android/phone/callsettings/IpCall;
 
-    invoke-virtual {v1, v4}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->removeDialog(I)V
+    invoke-virtual {v1, v4}, Lcom/android/phone/callsettings/IpCall;->removeDialog(I)V
 
     iget-object v1, p0, Lcom/android/phone/callsettings/IpCall$8;->this$0:Lcom/android/phone/callsettings/IpCall;
 
-    invoke-virtual {v1, v4}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->showDialog(I)V
+    invoke-virtual {v1, v4}, Lcom/android/phone/callsettings/IpCall;->showDialog(I)V
 
     goto :goto_0
 

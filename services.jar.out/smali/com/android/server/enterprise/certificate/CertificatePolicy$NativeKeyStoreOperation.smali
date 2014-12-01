@@ -59,8 +59,6 @@
 # direct methods
 .method private constructor <init>(Lcom/android/server/enterprise/certificate/CertificatePolicy;IILjava/util/Set;Ljava/util/Map;)V
     .locals 0
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II",
@@ -93,12 +91,6 @@
 
 .method synthetic constructor <init>(Lcom/android/server/enterprise/certificate/CertificatePolicy;IILjava/util/Set;Ljava/util/Map;Lcom/android/server/enterprise/certificate/CertificatePolicy$1;)V
     .locals 0
-    .param p1    # Lcom/android/server/enterprise/certificate/CertificatePolicy;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/util/Set;
-    .param p5    # Ljava/util/Map;
-    .param p6    # Lcom/android/server/enterprise/certificate/CertificatePolicy$1;
 
     invoke-direct/range {p0 .. p5}, Lcom/android/server/enterprise/certificate/CertificatePolicy$NativeKeyStoreOperation;-><init>(Lcom/android/server/enterprise/certificate/CertificatePolicy;IILjava/util/Set;Ljava/util/Map;)V
 
@@ -109,7 +101,6 @@
 # virtual methods
 .method protected varargs doInBackground([Ljava/lang/Integer;)Ljava/lang/Boolean;
     .locals 10
-    .param p1    # [Ljava/lang/Integer;
 
     const/4 v9, 0x1
 
@@ -326,7 +317,6 @@
 
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [Ljava/lang/Integer;
 

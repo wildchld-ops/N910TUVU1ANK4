@@ -40,7 +40,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/export/MmsPartExportDialogActivity;)V
     .locals 0
-    .param p0    # Lcom/android/mms/export/MmsPartExportDialogActivity;
 
     invoke-direct {p0}, Lcom/android/mms/export/MmsPartExportDialogActivity;->nextIntent()V
 
@@ -93,7 +92,6 @@
 
 .method private queueIntent(Landroid/content/Intent;)V
     .locals 1
-    .param p1    # Landroid/content/Intent;
 
     iget-object v0, p0, Lcom/android/mms/export/MmsPartExportDialogActivity;->mQueuedIntents:Ljava/util/Queue;
 
@@ -106,7 +104,6 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 6
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
@@ -160,7 +157,6 @@
 
 .method protected onNewIntent(Landroid/content/Intent;)V
     .locals 0
-    .param p1    # Landroid/content/Intent;
 
     invoke-direct {p0, p1}, Lcom/android/mms/export/MmsPartExportDialogActivity;->queueIntent(Landroid/content/Intent;)V
 
@@ -169,7 +165,6 @@
 
 .method protected onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     iget-object v1, p0, Lcom/android/mms/export/MmsPartExportDialogActivity;->mQueuedIntents:Ljava/util/Queue;
 

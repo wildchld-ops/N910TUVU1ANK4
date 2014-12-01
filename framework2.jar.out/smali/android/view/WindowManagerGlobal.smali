@@ -142,7 +142,6 @@
 
 .method static synthetic access$000(Landroid/view/WindowManagerGlobal;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Landroid/view/WindowManagerGlobal;
 
     iget-object v0, p0, Landroid/view/WindowManagerGlobal;->mLock:Ljava/lang/Object;
 
@@ -151,7 +150,6 @@
 
 .method static synthetic access$100(Landroid/view/WindowManagerGlobal;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Landroid/view/WindowManagerGlobal;
 
     iget-object v0, p0, Landroid/view/WindowManagerGlobal;->mRoots:Ljava/util/ArrayList;
 
@@ -160,8 +158,6 @@
 
 .method private findViewLocked(Landroid/view/View;Z)I
     .locals 4
-    .param p1    # Landroid/view/View;
-    .param p2    # Z
 
     iget-object v1, p0, Landroid/view/WindowManagerGlobal;->mViews:Ljava/util/ArrayList;
 
@@ -285,7 +281,6 @@
 
 .method private static getWindowName(Landroid/view/ViewRootImpl;)Ljava/lang/String;
     .locals 2
-    .param p0    # Landroid/view/ViewRootImpl;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -448,8 +443,6 @@
 
 .method private removeViewLocked(IZ)V
     .locals 5
-    .param p1    # I
-    .param p2    # Z
 
     iget-object v4, p0, Landroid/view/WindowManagerGlobal;->mRoots:Ljava/util/ArrayList;
 
@@ -510,10 +503,6 @@
 # virtual methods
 .method public addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;Landroid/view/Display;Landroid/view/Window;)V
     .locals 13
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/ViewGroup$LayoutParams;
-    .param p3    # Landroid/view/Display;
-    .param p4    # Landroid/view/Window;
 
     if-nez p1, :cond_0
 
@@ -857,8 +846,6 @@
 
 .method public changeCanvasOpacity(Landroid/os/IBinder;Z)V
     .locals 3
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Z
 
     if-nez p1, :cond_0
 
@@ -933,9 +920,6 @@
 
 .method public closeAll(Landroid/os/IBinder;Ljava/lang/String;Ljava/lang/String;)V
     .locals 7
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     iget-object v5, p0, Landroid/view/WindowManagerGlobal;->mLock:Ljava/lang/Object;
 
@@ -1067,7 +1051,6 @@
 
 .method doRemoveView(Landroid/view/ViewRootImpl;)V
     .locals 4
-    .param p1    # Landroid/view/ViewRootImpl;
 
     iget-object v3, p0, Landroid/view/WindowManagerGlobal;->mLock:Ljava/lang/Object;
 
@@ -1119,7 +1102,6 @@
 
 .method public dumpGfxInfo(Ljava/io/FileDescriptor;)V
     .locals 17
-    .param p1    # Ljava/io/FileDescriptor;
 
     new-instance v3, Ljava/io/FileOutputStream;
 
@@ -1437,7 +1419,6 @@
 
 .method public getRootView(Ljava/lang/String;)Landroid/view/View;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     iget-object v3, p0, Landroid/view/WindowManagerGlobal;->mLock:Ljava/lang/Object;
 
@@ -1560,8 +1541,6 @@
 
 .method public removeView(Landroid/view/View;Z)V
     .locals 6
-    .param p1    # Landroid/view/View;
-    .param p2    # Z
 
     if-nez p1, :cond_0
 
@@ -1652,7 +1631,6 @@
 
 .method public reportNewConfiguration(Landroid/content/res/Configuration;)V
     .locals 6
-    .param p1    # Landroid/content/res/Configuration;
 
     iget-object v5, p0, Landroid/view/WindowManagerGlobal;->mLock:Ljava/lang/Object;
 
@@ -1719,8 +1697,6 @@
 
 .method public setMultiWindowScale(FF)V
     .locals 4
-    .param p1    # F
-    .param p2    # F
 
     iget-object v3, p0, Landroid/view/WindowManagerGlobal;->mLock:Ljava/lang/Object;
 
@@ -1769,8 +1745,6 @@
 
 .method public setStoppedState(Landroid/os/IBinder;Z)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Z
 
     iget-object v4, p0, Landroid/view/WindowManagerGlobal;->mLock:Ljava/lang/Object;
 
@@ -1835,7 +1809,6 @@
 
 .method public startTrimMemory(I)V
     .locals 4
-    .param p1    # I
 
     const/16 v3, 0x50
 
@@ -1969,8 +1942,6 @@
 
 .method public updateViewLayout(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
     .locals 5
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/ViewGroup$LayoutParams;
 
     if-nez p1, :cond_0
 

@@ -44,8 +44,6 @@
 # direct methods
 .method public constructor <init>(Landroid/database/Cursor;Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/database/Cursor;
-    .param p2    # Landroid/content/Context;
 
     invoke-direct {p0}, Landroid/widget/BaseExpandableListAdapter;-><init>()V
 
@@ -58,9 +56,6 @@
 
 .method public constructor <init>(Landroid/database/Cursor;Landroid/content/Context;Z)V
     .locals 0
-    .param p1    # Landroid/database/Cursor;
-    .param p2    # Landroid/content/Context;
-    .param p3    # Z
 
     invoke-direct {p0}, Landroid/widget/BaseExpandableListAdapter;-><init>()V
 
@@ -71,7 +66,6 @@
 
 .method static synthetic access$100(Landroid/widget/CursorTreeAdapter;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Landroid/widget/CursorTreeAdapter;
 
     iget-object v0, p0, Landroid/widget/CursorTreeAdapter;->mHandler:Landroid/os/Handler;
 
@@ -80,7 +74,6 @@
 
 .method static synthetic access$200(Landroid/widget/CursorTreeAdapter;)Z
     .locals 1
-    .param p0    # Landroid/widget/CursorTreeAdapter;
 
     iget-boolean v0, p0, Landroid/widget/CursorTreeAdapter;->mAutoRequery:Z
 
@@ -89,9 +82,6 @@
 
 .method private init(Landroid/database/Cursor;Landroid/content/Context;Z)V
     .locals 1
-    .param p1    # Landroid/database/Cursor;
-    .param p2    # Landroid/content/Context;
-    .param p3    # Z
 
     iput-object p2, p0, Landroid/widget/CursorTreeAdapter;->mContext:Landroid/content/Context;
 
@@ -178,7 +168,6 @@
 
 .method public changeCursor(Landroid/database/Cursor;)V
     .locals 2
-    .param p1    # Landroid/database/Cursor;
 
     iget-object v0, p0, Landroid/widget/CursorTreeAdapter;->mGroupCursorHelper:Landroid/widget/CursorTreeAdapter$MyCursorHelper;
 
@@ -191,7 +180,6 @@
 
 .method public bridge synthetic convertToString(Landroid/database/Cursor;)Ljava/lang/CharSequence;
     .locals 1
-    .param p1    # Landroid/database/Cursor;
 
     invoke-virtual {p0, p1}, Landroid/widget/CursorTreeAdapter;->convertToString(Landroid/database/Cursor;)Ljava/lang/String;
 
@@ -202,7 +190,6 @@
 
 .method public convertToString(Landroid/database/Cursor;)Ljava/lang/String;
     .locals 1
-    .param p1    # Landroid/database/Cursor;
 
     if-nez p1, :cond_0
 
@@ -221,7 +208,6 @@
 
 .method declared-synchronized deactivateChildrenCursorHelper(I)V
     .locals 2
-    .param p1    # I
 
     monitor-enter p0
 
@@ -254,8 +240,6 @@
 
 .method public getChild(II)Landroid/database/Cursor;
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x1
 
@@ -272,8 +256,6 @@
 
 .method public bridge synthetic getChild(II)Ljava/lang/Object;
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0, p1, p2}, Landroid/widget/CursorTreeAdapter;->getChild(II)Landroid/database/Cursor;
 
@@ -284,8 +266,6 @@
 
 .method public getChildId(II)J
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x1
 
@@ -302,11 +282,6 @@
 
 .method public getChildView(IIZLandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # Landroid/view/View;
-    .param p5    # Landroid/view/ViewGroup;
 
     const/4 v3, 0x1
 
@@ -352,7 +327,6 @@
 
 .method public getChildrenCount(I)I
     .locals 2
-    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -388,8 +362,6 @@
 
 .method declared-synchronized getChildrenCursorHelper(IZ)Landroid/widget/CursorTreeAdapter$MyCursorHelper;
     .locals 3
-    .param p1    # I
-    .param p2    # Z
 
     monitor-enter p0
 
@@ -497,7 +469,6 @@
 
 .method public getGroup(I)Landroid/database/Cursor;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/widget/CursorTreeAdapter;->mGroupCursorHelper:Landroid/widget/CursorTreeAdapter$MyCursorHelper;
 
@@ -510,7 +481,6 @@
 
 .method public bridge synthetic getGroup(I)Ljava/lang/Object;
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/widget/CursorTreeAdapter;->getGroup(I)Landroid/database/Cursor;
 
@@ -533,7 +503,6 @@
 
 .method public getGroupId(I)J
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Landroid/widget/CursorTreeAdapter;->mGroupCursorHelper:Landroid/widget/CursorTreeAdapter$MyCursorHelper;
 
@@ -546,10 +515,6 @@
 
 .method public getGroupView(IZLandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 4
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # Landroid/view/View;
-    .param p4    # Landroid/view/ViewGroup;
 
     iget-object v2, p0, Landroid/widget/CursorTreeAdapter;->mGroupCursorHelper:Landroid/widget/CursorTreeAdapter$MyCursorHelper;
 
@@ -599,8 +564,6 @@
 
 .method public isChildSelectable(II)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x1
 
@@ -625,7 +588,6 @@
 
 .method public notifyDataSetChanged(Z)V
     .locals 0
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -649,7 +611,6 @@
 
 .method public onGroupCollapsed(I)V
     .locals 0
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/widget/CursorTreeAdapter;->deactivateChildrenCursorHelper(I)V
 
@@ -658,7 +619,6 @@
 
 .method public runQueryOnBackgroundThread(Ljava/lang/CharSequence;)Landroid/database/Cursor;
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
 
     iget-object v0, p0, Landroid/widget/CursorTreeAdapter;->mFilterQueryProvider:Landroid/widget/FilterQueryProvider;
 
@@ -685,8 +645,6 @@
 
 .method public setChildrenCursor(ILandroid/database/Cursor;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/database/Cursor;
 
     const/4 v1, 0x0
 
@@ -701,7 +659,6 @@
 
 .method public setFilterQueryProvider(Landroid/widget/FilterQueryProvider;)V
     .locals 0
-    .param p1    # Landroid/widget/FilterQueryProvider;
 
     iput-object p1, p0, Landroid/widget/CursorTreeAdapter;->mFilterQueryProvider:Landroid/widget/FilterQueryProvider;
 
@@ -710,7 +667,6 @@
 
 .method public setGroupCursor(Landroid/database/Cursor;)V
     .locals 2
-    .param p1    # Landroid/database/Cursor;
 
     iget-object v0, p0, Landroid/widget/CursorTreeAdapter;->mGroupCursorHelper:Landroid/widget/CursorTreeAdapter$MyCursorHelper;
 

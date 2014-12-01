@@ -26,7 +26,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/launcher2/DeferredHandler;Ljava/lang/Runnable;)V
     .locals 0
-    .param p2    # Ljava/lang/Runnable;
 
     iput-object p1, p0, Lcom/android/launcher2/DeferredHandler$IdleRunnable;->this$0:Lcom/android/launcher2/DeferredHandler;
 

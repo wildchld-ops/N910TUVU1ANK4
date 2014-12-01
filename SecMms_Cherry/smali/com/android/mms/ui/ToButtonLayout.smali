@@ -30,8 +30,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/widget/ScrollView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -42,10 +40,6 @@
 # virtual methods
 .method public addButton(Landroid/view/View;III)V
     .locals 5
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iget-object v2, p0, Lcom/android/mms/ui/ToButtonLayout;->mToButtonPanel:Landroid/widget/AbsoluteLayout;
 

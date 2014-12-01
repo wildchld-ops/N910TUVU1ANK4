@@ -328,7 +328,7 @@
 
     sget-object v0, Lcom/android/phone/DsaMain;->mWaitDialog:Landroid/app/ProgressDialog;
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->dismiss()V
+    invoke-virtual {v0}, Landroid/app/ProgressDialog;->dismiss()V
 
     const/4 v0, 0x0
 
@@ -338,7 +338,7 @@
 
     const/4 v1, 0x1
 
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setEnabled(Z)V
+    invoke-virtual {v0, v1}, Landroid/widget/Switch;->setEnabled(Z)V
 
     :cond_0
     return-void
@@ -378,7 +378,7 @@
 
     iget-object v0, p0, Lcom/android/phone/DsaMain;->mActionBarSwitch:Landroid/widget/Switch;
 
-    invoke-virtual {v0, v3}, Landroid/widget/TextView;->setEnabled(Z)V
+    invoke-virtual {v0, v3}, Landroid/widget/Switch;->setEnabled(Z)V
 
     packed-switch p1, :pswitch_data_0
 
@@ -388,13 +388,13 @@
     :pswitch_0
     const v0, 0x7f0908ac
 
-    invoke-virtual {p0, v0}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v0}, Lcom/android/phone/DsaMain;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v0
 
     const v1, 0x7f09007e
 
-    invoke-virtual {p0, v1}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v1}, Lcom/android/phone/DsaMain;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v1
 
@@ -406,7 +406,7 @@
 
     sget-object v0, Lcom/android/phone/DsaMain;->mWaitDialog:Landroid/app/ProgressDialog;
 
-    invoke-virtual {v0, v3}, Landroid/app/Dialog;->setCancelable(Z)V
+    invoke-virtual {v0, v3}, Landroid/app/ProgressDialog;->setCancelable(Z)V
 
     sget-object v0, Lcom/android/phone/DsaMain;->mWaitDialog:Landroid/app/ProgressDialog;
 
@@ -414,7 +414,7 @@
 
     invoke-direct {v1, p0}, Lcom/android/phone/DsaMain$2;-><init>(Lcom/android/phone/DsaMain;)V
 
-    invoke-virtual {v0, v1}, Landroid/app/Dialog;->setOnKeyListener(Landroid/content/DialogInterface$OnKeyListener;)V
+    invoke-virtual {v0, v1}, Landroid/app/ProgressDialog;->setOnKeyListener(Landroid/content/DialogInterface$OnKeyListener;)V
 
     goto :goto_0
 
@@ -474,7 +474,7 @@
     :cond_1
     iget-object v8, p0, Lcom/android/phone/DsaMain;->mActionBarSwitch:Landroid/widget/Switch;
 
-    invoke-virtual {v8}, Landroid/widget/CompoundButton;->isChecked()Z
+    invoke-virtual {v8}, Landroid/widget/Switch;->isChecked()Z
 
     move-result v8
 
@@ -510,7 +510,7 @@
 
     if-nez v8, :cond_0
 
-    invoke-virtual {p0}, Landroid/app/ListActivity;->getListView()Landroid/widget/ListView;
+    invoke-virtual {p0}, Lcom/android/phone/DsaMain;->getListView()Landroid/widget/ListView;
 
     invoke-static {p0, v14, v12}, Landroid/widget/ListView;->inflate(Landroid/content/Context;ILandroid/view/ViewGroup;)Landroid/view/View;
 
@@ -524,7 +524,7 @@
 
     const v8, 0x7f0a00cb
 
-    invoke-virtual {v2, v8}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    invoke-virtual {v2, v8}, Landroid/widget/LinearLayout;->findViewById(I)Landroid/view/View;
 
     move-result-object v7
 
@@ -538,7 +538,7 @@
 
     const v9, 0x7f0908ac
 
-    invoke-virtual {p0, v9}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v9}, Lcom/android/phone/DsaMain;->getString(I)Ljava/lang/String;
 
     move-result-object v9
 
@@ -554,7 +554,7 @@
 
     move-result-object v8
 
-    invoke-virtual {p0, v13}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v13}, Lcom/android/phone/DsaMain;->getString(I)Ljava/lang/String;
 
     move-result-object v9
 
@@ -595,7 +595,7 @@
 
     iget-object v8, p0, Lcom/android/phone/DsaMain;->mActionBarSwitch:Landroid/widget/Switch;
 
-    invoke-virtual {v8, v12}, Landroid/widget/CompoundButton;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
+    invoke-virtual {v8, v12}, Landroid/widget/Switch;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
     iget-object v8, p0, Lcom/android/phone/DsaMain;->mActionBarSwitch:Landroid/widget/Switch;
 
@@ -603,7 +603,7 @@
 
     iget-object v8, p0, Lcom/android/phone/DsaMain;->mActionBarSwitch:Landroid/widget/Switch;
 
-    invoke-virtual {v8, p0}, Landroid/widget/CompoundButton;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
+    invoke-virtual {v8, p0}, Landroid/widget/Switch;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
     invoke-virtual {v0, v10}, Lcom/android/phone/DsaResult;->makeResultInformation(I)Ljava/lang/String;
 
@@ -615,7 +615,7 @@
 
     const v9, 0x7f0908ad
 
-    invoke-virtual {p0, v9}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v9}, Lcom/android/phone/DsaMain;->getString(I)Ljava/lang/String;
 
     move-result-object v9
 
@@ -631,7 +631,7 @@
 
     move-result-object v8
 
-    invoke-virtual {p0, v13}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v13}, Lcom/android/phone/DsaMain;->getString(I)Ljava/lang/String;
 
     move-result-object v9
 
@@ -686,7 +686,7 @@
 
     if-nez v8, :cond_0
 
-    invoke-virtual {p0}, Landroid/app/ListActivity;->getListView()Landroid/widget/ListView;
+    invoke-virtual {p0}, Lcom/android/phone/DsaMain;->getListView()Landroid/widget/ListView;
 
     invoke-static {p0, v14, v12}, Landroid/widget/ListView;->inflate(Landroid/content/Context;ILandroid/view/ViewGroup;)Landroid/view/View;
 
@@ -702,7 +702,7 @@
 
     const v8, 0x7f0a00cb
 
-    invoke-virtual {v2, v8}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    invoke-virtual {v2, v8}, Landroid/widget/LinearLayout;->findViewById(I)Landroid/view/View;
 
     move-result-object v7
 
@@ -716,7 +716,7 @@
 
     const v9, 0x7f0908ac
 
-    invoke-virtual {p0, v9}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v9}, Lcom/android/phone/DsaMain;->getString(I)Ljava/lang/String;
 
     move-result-object v9
 
@@ -732,7 +732,7 @@
 
     move-result-object v8
 
-    invoke-virtual {p0, v13}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v13}, Lcom/android/phone/DsaMain;->getString(I)Ljava/lang/String;
 
     move-result-object v9
 
@@ -765,7 +765,7 @@
 
     const-string v8, "SelectSimStatus"
 
-    invoke-virtual {p0, v8, v10}, Landroid/content/ContextWrapper;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+    invoke-virtual {p0, v8, v10}, Lcom/android/phone/DsaMain;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
 
     move-result-object v4
 
@@ -789,7 +789,7 @@
 
     const v9, 0x7f0908ad
 
-    invoke-virtual {p0, v9}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v9}, Lcom/android/phone/DsaMain;->getString(I)Ljava/lang/String;
 
     move-result-object v9
 
@@ -805,7 +805,7 @@
 
     move-result-object v8
 
-    invoke-virtual {p0, v13}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v13}, Lcom/android/phone/DsaMain;->getString(I)Ljava/lang/String;
 
     move-result-object v9
 
@@ -860,7 +860,7 @@
 
     iget-object v8, p0, Lcom/android/phone/DsaMain;->mActionBarSwitch:Landroid/widget/Switch;
 
-    invoke-virtual {v8, v12}, Landroid/widget/CompoundButton;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
+    invoke-virtual {v8, v12}, Landroid/widget/Switch;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
     iget-object v8, p0, Lcom/android/phone/DsaMain;->mActionBarSwitch:Landroid/widget/Switch;
 
@@ -868,7 +868,7 @@
 
     iget-object v8, p0, Lcom/android/phone/DsaMain;->mActionBarSwitch:Landroid/widget/Switch;
 
-    invoke-virtual {v8, p0}, Landroid/widget/CompoundButton;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
+    invoke-virtual {v8, p0}, Landroid/widget/Switch;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
     goto :goto_1
 
@@ -895,7 +895,7 @@
 
     iget-object v8, p0, Lcom/android/phone/DsaMain;->mActionBarSwitch:Landroid/widget/Switch;
 
-    invoke-virtual {v8, v12}, Landroid/widget/CompoundButton;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
+    invoke-virtual {v8, v12}, Landroid/widget/Switch;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
     iget-object v8, p0, Lcom/android/phone/DsaMain;->mActionBarSwitch:Landroid/widget/Switch;
 
@@ -903,7 +903,7 @@
 
     iget-object v8, p0, Lcom/android/phone/DsaMain;->mActionBarSwitch:Landroid/widget/Switch;
 
-    invoke-virtual {v8, p0}, Landroid/widget/CompoundButton;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
+    invoke-virtual {v8, p0}, Landroid/widget/Switch;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
     goto/16 :goto_1
 
@@ -930,7 +930,7 @@
 
     iget-object v8, p0, Lcom/android/phone/DsaMain;->mActionBarSwitch:Landroid/widget/Switch;
 
-    invoke-virtual {v8, v12}, Landroid/widget/CompoundButton;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
+    invoke-virtual {v8, v12}, Landroid/widget/Switch;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
     iget-object v8, p0, Lcom/android/phone/DsaMain;->mActionBarSwitch:Landroid/widget/Switch;
 
@@ -938,7 +938,7 @@
 
     iget-object v8, p0, Lcom/android/phone/DsaMain;->mActionBarSwitch:Landroid/widget/Switch;
 
-    invoke-virtual {v8, p0}, Landroid/widget/CompoundButton;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
+    invoke-virtual {v8, p0}, Landroid/widget/Switch;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
     goto/16 :goto_1
 
@@ -1004,15 +1004,15 @@
 
     const v5, 0x7f06001d
 
-    invoke-virtual {p0, v5}, Landroid/preference/PreferenceActivity;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v5}, Lcom/android/phone/DsaMain;->addPreferencesFromResource(I)V
 
-    invoke-virtual {p0}, Landroid/preference/PreferenceActivity;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/phone/DsaMain;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v4
 
     const-string v5, "button_phone_number_key"
 
-    invoke-virtual {v4, v5}, Landroid/preference/PreferenceGroup;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {v4, v5}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v5
 
@@ -1024,7 +1024,7 @@
 
     const-string v5, "button_set_sim_card_key"
 
-    invoke-virtual {v4, v5}, Landroid/preference/PreferenceGroup;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {v4, v5}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v5
 
@@ -1036,7 +1036,7 @@
 
     const-string v5, "dsa_main"
 
-    invoke-virtual {p0, v5, v9}, Landroid/content/ContextWrapper;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+    invoke-virtual {p0, v5, v9}, Lcom/android/phone/DsaMain;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
 
     move-result-object v5
 
@@ -1072,9 +1072,9 @@
 
     iget-object v5, p0, Lcom/android/phone/DsaMain;->mBroadcastReceiver:Landroid/content/BroadcastReceiver;
 
-    invoke-virtual {p0, v5, v1}, Landroid/content/ContextWrapper;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
+    invoke-virtual {p0, v5, v1}, Lcom/android/phone/DsaMain;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getActionBar()Landroid/app/ActionBar;
+    invoke-virtual {p0}, Lcom/android/phone/DsaMain;->getActionBar()Landroid/app/ActionBar;
 
     move-result-object v0
 
@@ -1091,7 +1091,7 @@
 
     iput-object v5, p0, Lcom/android/phone/DsaMain;->mActionBarSwitch:Landroid/widget/Switch;
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/DsaMain;->getResources()Landroid/content/res/Resources;
 
     move-result-object v5
 
@@ -1103,15 +1103,15 @@
 
     iget-object v5, p0, Lcom/android/phone/DsaMain;->mActionBarSwitch:Landroid/widget/Switch;
 
-    invoke-virtual {v5, v9, v9, v2, v9}, Landroid/widget/TextView;->setPadding(IIII)V
+    invoke-virtual {v5, v9, v9, v2, v9}, Landroid/widget/Switch;->setPadding(IIII)V
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getActionBar()Landroid/app/ActionBar;
+    invoke-virtual {p0}, Lcom/android/phone/DsaMain;->getActionBar()Landroid/app/ActionBar;
 
     move-result-object v5
 
     invoke-virtual {v5, v7, v7}, Landroid/app/ActionBar;->setDisplayOptions(II)V
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getActionBar()Landroid/app/ActionBar;
+    invoke-virtual {p0}, Lcom/android/phone/DsaMain;->getActionBar()Landroid/app/ActionBar;
 
     move-result-object v5
 
@@ -1127,7 +1127,7 @@
 
     iget-object v5, p0, Lcom/android/phone/DsaMain;->mActionBarSwitch:Landroid/widget/Switch;
 
-    invoke-virtual {v5, v10}, Landroid/widget/TextView;->setEnabled(Z)V
+    invoke-virtual {v5, v10}, Landroid/widget/Switch;->setEnabled(Z)V
 
     invoke-static {}, Lcom/android/phone/PhoneGlobals;->getInstance()Lcom/android/phone/PhoneGlobals;
 
@@ -1191,7 +1191,7 @@
 
     iget-object v0, p0, Lcom/android/phone/DsaMain;->mBroadcastReceiver:Landroid/content/BroadcastReceiver;
 
-    invoke-virtual {p0, v0}, Landroid/content/ContextWrapper;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/DsaMain;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
     sput-boolean v2, Lcom/android/phone/DsaMain;->mGetResult:Z
 
@@ -1232,7 +1232,7 @@
 
     packed-switch v0, :pswitch_data_0
 
-    invoke-super {p0, p1}, Landroid/app/Activity;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
+    invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
 
     move-result v0
 
@@ -1240,7 +1240,7 @@
     return v0
 
     :pswitch_0
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/DsaMain;->finish()V
 
     const/4 v0, 0x1
 
@@ -1265,13 +1265,13 @@
 
     invoke-virtual {p0}, Lcom/android/phone/DsaMain;->dismissDialog()V
 
-    invoke-super {p0}, Landroid/app/Activity;->onPause()V
+    invoke-super {p0}, Landroid/preference/PreferenceActivity;->onPause()V
 
     iget-object v0, p0, Lcom/android/phone/DsaMain;->mActionBarSwitch:Landroid/widget/Switch;
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Landroid/widget/CompoundButton;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
+    invoke-virtual {v0, v1}, Landroid/widget/Switch;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
     return-void
 .end method
@@ -1283,7 +1283,7 @@
 
     const/4 v2, 0x0
 
-    invoke-super {p0}, Landroid/app/Activity;->onResume()V
+    invoke-super {p0}, Landroid/preference/PreferenceActivity;->onResume()V
 
     const-string v0, "DsaMain"
 
@@ -1293,7 +1293,7 @@
 
     iget-object v0, p0, Lcom/android/phone/DsaMain;->mActionBarSwitch:Landroid/widget/Switch;
 
-    invoke-virtual {v0}, Landroid/widget/CompoundButton;->isChecked()Z
+    invoke-virtual {v0}, Landroid/widget/Switch;->isChecked()Z
 
     move-result v0
 
@@ -1316,7 +1316,7 @@
 
     iget-object v0, p0, Lcom/android/phone/DsaMain;->mActionBarSwitch:Landroid/widget/Switch;
 
-    invoke-virtual {v0}, Landroid/widget/CompoundButton;->isChecked()Z
+    invoke-virtual {v0}, Landroid/widget/Switch;->isChecked()Z
 
     move-result v0
 
@@ -1345,7 +1345,7 @@
     :cond_2
     iget-object v0, p0, Lcom/android/phone/DsaMain;->mActionBarSwitch:Landroid/widget/Switch;
 
-    invoke-virtual {v0, p0}, Landroid/widget/CompoundButton;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
+    invoke-virtual {v0, p0}, Landroid/widget/Switch;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
     return-void
 
@@ -1396,7 +1396,7 @@
 
     iget-object v4, p0, Lcom/android/phone/DsaMain;->mActionBarSwitch:Landroid/widget/Switch;
 
-    invoke-virtual {v4, v9}, Landroid/widget/CompoundButton;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
+    invoke-virtual {v4, v9}, Landroid/widget/Switch;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
     iget-object v4, p0, Lcom/android/phone/DsaMain;->mActionBarSwitch:Landroid/widget/Switch;
 
@@ -1404,7 +1404,7 @@
 
     iget-object v4, p0, Lcom/android/phone/DsaMain;->mActionBarSwitch:Landroid/widget/Switch;
 
-    invoke-virtual {v4, p0}, Landroid/widget/CompoundButton;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
+    invoke-virtual {v4, p0}, Landroid/widget/Switch;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
     :goto_0
     return-void
@@ -1412,7 +1412,7 @@
     :cond_0
     const-string v4, "dsa_phone_number"
 
-    invoke-virtual {p0, v4, v7}, Landroid/content/ContextWrapper;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+    invoke-virtual {p0, v4, v7}, Lcom/android/phone/DsaMain;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
 
     move-result-object v0
 
@@ -1485,7 +1485,7 @@
 
     iget-object v6, p0, Lcom/android/phone/DsaMain;->mActionBarSwitch:Landroid/widget/Switch;
 
-    invoke-virtual {v6}, Landroid/widget/CompoundButton;->isChecked()Z
+    invoke-virtual {v6}, Landroid/widget/Switch;->isChecked()Z
 
     move-result v6
 
@@ -1537,7 +1537,7 @@
 
     iget-object v4, p0, Lcom/android/phone/DsaMain;->mActionBarSwitch:Landroid/widget/Switch;
 
-    invoke-virtual {v4}, Landroid/widget/CompoundButton;->isChecked()Z
+    invoke-virtual {v4}, Landroid/widget/Switch;->isChecked()Z
 
     move-result v4
 
@@ -1571,7 +1571,7 @@
     :cond_3
     iget-object v4, p0, Lcom/android/phone/DsaMain;->mActionBarSwitch:Landroid/widget/Switch;
 
-    invoke-virtual {v4, v9}, Landroid/widget/CompoundButton;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
+    invoke-virtual {v4, v9}, Landroid/widget/Switch;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
     iget-object v4, p0, Lcom/android/phone/DsaMain;->mActionBarSwitch:Landroid/widget/Switch;
 
@@ -1579,14 +1579,14 @@
 
     iget-object v4, p0, Lcom/android/phone/DsaMain;->mActionBarSwitch:Landroid/widget/Switch;
 
-    invoke-virtual {v4, p0}, Landroid/widget/CompoundButton;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
+    invoke-virtual {v4, p0}, Landroid/widget/Switch;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
     goto/16 :goto_0
 
     :cond_4
     const-string v4, "SelectSimStatus"
 
-    invoke-virtual {p0, v4, v7}, Landroid/content/ContextWrapper;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+    invoke-virtual {p0, v4, v7}, Lcom/android/phone/DsaMain;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
 
     move-result-object v0
 
@@ -1660,7 +1660,7 @@
 
     const-string v4, "SelectSimStatus"
 
-    invoke-virtual {p0, v4, v7}, Landroid/content/ContextWrapper;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+    invoke-virtual {p0, v4, v7}, Lcom/android/phone/DsaMain;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
 
     move-result-object v0
 

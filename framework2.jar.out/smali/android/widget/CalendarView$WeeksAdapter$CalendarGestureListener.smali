@@ -33,7 +33,6 @@
 # virtual methods
 .method public onSingleTapUp(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v0, 0x1
 

@@ -93,7 +93,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -122,7 +121,6 @@
 
 .method static decodeGSMPackedString([B)Ljava/lang/String;
     .locals 6
-    .param p0    # [B
 
     const/4 v0, 0x0
 
@@ -171,9 +169,6 @@
 
 .method private static decodeString(Ljava/lang/String;ZI)Ljava/lang/String;
     .locals 5
-    .param p0    # Ljava/lang/String;
-    .param p1    # Z
-    .param p2    # I
 
     move-object v0, p0
 
@@ -261,7 +256,6 @@
 
 .method static decodeUCS2String([B)Ljava/lang/String;
     .locals 3
-    .param p0    # [B
 
     const-string v0, ""
 
@@ -288,7 +282,6 @@
 
 .method static decodeUTF8String([B)Ljava/lang/String;
     .locals 3
-    .param p0    # [B
 
     const-string v0, ""
 
@@ -315,8 +308,6 @@
 
 .method private static getDialogMessage(Lcom/android/internal/location/GpsNetInitiatedHandler$GpsNiNotification;Landroid/content/Context;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/internal/location/GpsNetInitiatedHandler$GpsNiNotification;
-    .param p1    # Landroid/content/Context;
 
     invoke-static {p0, p1}, Lcom/android/internal/location/GpsNetInitiatedHandler;->getNotifMessage(Lcom/android/internal/location/GpsNetInitiatedHandler$GpsNiNotification;Landroid/content/Context;)Ljava/lang/String;
 
@@ -327,8 +318,6 @@
 
 .method public static getDialogTitle(Lcom/android/internal/location/GpsNetInitiatedHandler$GpsNiNotification;Landroid/content/Context;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/internal/location/GpsNetInitiatedHandler$GpsNiNotification;
-    .param p1    # Landroid/content/Context;
 
     invoke-static {p0, p1}, Lcom/android/internal/location/GpsNetInitiatedHandler;->getNotifTitle(Lcom/android/internal/location/GpsNetInitiatedHandler$GpsNiNotification;Landroid/content/Context;)Ljava/lang/String;
 
@@ -339,7 +328,6 @@
 
 .method private getDlgIntent(Lcom/android/internal/location/GpsNetInitiatedHandler$GpsNiNotification;)Landroid/content/Intent;
     .locals 6
-    .param p1    # Lcom/android/internal/location/GpsNetInitiatedHandler$GpsNiNotification;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -442,8 +430,6 @@
 
 .method private static getNotifMessage(Lcom/android/internal/location/GpsNetInitiatedHandler$GpsNiNotification;Landroid/content/Context;)Ljava/lang/String;
     .locals 7
-    .param p0    # Lcom/android/internal/location/GpsNetInitiatedHandler$GpsNiNotification;
-    .param p1    # Landroid/content/Context;
 
     const v1, 0x104082c
 
@@ -492,8 +478,6 @@
 
 .method private static getNotifTicker(Lcom/android/internal/location/GpsNetInitiatedHandler$GpsNiNotification;Landroid/content/Context;)Ljava/lang/String;
     .locals 7
-    .param p0    # Lcom/android/internal/location/GpsNetInitiatedHandler$GpsNiNotification;
-    .param p1    # Landroid/content/Context;
 
     const v1, 0x104082a
 
@@ -542,8 +526,6 @@
 
 .method private static getNotifTitle(Lcom/android/internal/location/GpsNetInitiatedHandler$GpsNiNotification;Landroid/content/Context;)Ljava/lang/String;
     .locals 3
-    .param p0    # Lcom/android/internal/location/GpsNetInitiatedHandler$GpsNiNotification;
-    .param p1    # Landroid/content/Context;
 
     const v1, 0x104082b
 
@@ -564,7 +546,6 @@
 
 .method private openNiDialog(Lcom/android/internal/location/GpsNetInitiatedHandler$GpsNiNotification;)V
     .locals 4
-    .param p1    # Lcom/android/internal/location/GpsNetInitiatedHandler$GpsNiNotification;
 
     invoke-direct {p0, p1}, Lcom/android/internal/location/GpsNetInitiatedHandler;->getDlgIntent(Lcom/android/internal/location/GpsNetInitiatedHandler$GpsNiNotification;)Landroid/content/Intent;
 
@@ -627,7 +608,6 @@
 
 .method private declared-synchronized setNiNotification(Lcom/android/internal/location/GpsNetInitiatedHandler$GpsNiNotification;)V
     .locals 9
-    .param p1    # Lcom/android/internal/location/GpsNetInitiatedHandler$GpsNiNotification;
 
     monitor-enter p0
 
@@ -831,8 +811,6 @@
 
 .method static stringToByteArray(Ljava/lang/String;Z)[B
     .locals 5
-    .param p0    # Ljava/lang/String;
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -909,7 +887,6 @@
 # virtual methods
 .method public handleNiNotification(Lcom/android/internal/location/GpsNetInitiatedHandler$GpsNiNotification;)V
     .locals 3
-    .param p1    # Lcom/android/internal/location/GpsNetInitiatedHandler$GpsNiNotification;
 
     const-string v0, "GpsNetInitiatedHandler"
 

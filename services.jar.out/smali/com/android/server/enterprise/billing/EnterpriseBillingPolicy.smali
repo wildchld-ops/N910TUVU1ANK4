@@ -41,7 +41,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -76,8 +75,6 @@
 
 .method static synthetic access$000(Lcom/android/server/enterprise/billing/EnterpriseBillingPolicy;Landroid/net/Uri;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/billing/EnterpriseBillingPolicy;
-    .param p1    # Landroid/net/Uri;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/billing/EnterpriseBillingPolicy;->getPackageName(Landroid/net/Uri;)Ljava/lang/String;
 
@@ -88,7 +85,6 @@
 
 .method static synthetic access$100(Lcom/android/server/enterprise/billing/EnterpriseBillingPolicy;)Lcom/android/server/enterprise/billing/EnterpriseBillingPolicyStorageHelper;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/billing/EnterpriseBillingPolicy;
 
     iget-object v0, p0, Lcom/android/server/enterprise/billing/EnterpriseBillingPolicy;->ebpHelper:Lcom/android/server/enterprise/billing/EnterpriseBillingPolicyStorageHelper;
 
@@ -97,7 +93,6 @@
 
 .method static synthetic access$200(Lcom/android/server/enterprise/billing/EnterpriseBillingPolicy;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/billing/EnterpriseBillingPolicy;
 
     iget-object v0, p0, Lcom/android/server/enterprise/billing/EnterpriseBillingPolicy;->mContext:Landroid/content/Context;
 
@@ -106,7 +101,6 @@
 
 .method static synthetic access$300(Lcom/android/server/enterprise/billing/EnterpriseBillingPolicy;)Lcom/android/server/enterprise/billing/EnterpriseBillingEngine;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/billing/EnterpriseBillingPolicy;
 
     iget-object v0, p0, Lcom/android/server/enterprise/billing/EnterpriseBillingPolicy;->ebEngine:Lcom/android/server/enterprise/billing/EnterpriseBillingEngine;
 
@@ -115,8 +109,6 @@
 
 .method static synthetic access$400(Lcom/android/server/enterprise/billing/EnterpriseBillingPolicy;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/billing/EnterpriseBillingPolicy;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/billing/EnterpriseBillingPolicy;->deactivateSplitBillingIfLastTime(Ljava/lang/String;)V
 
@@ -125,7 +117,6 @@
 
 .method private activateSplitBillingIfFirstTime(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/server/enterprise/billing/EnterpriseBillingPolicy;->ebpHelper:Lcom/android/server/enterprise/billing/EnterpriseBillingPolicyStorageHelper;
 
@@ -190,7 +181,6 @@
 
 .method private deactivateSplitBillingIfLastTime(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/server/enterprise/billing/EnterpriseBillingPolicy;->ebpHelper:Lcom/android/server/enterprise/billing/EnterpriseBillingPolicyStorageHelper;
 
@@ -203,8 +193,6 @@
 
 .method private disableProfileForContainerInternal(II)Z
     .locals 6
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -363,9 +351,6 @@
 
 .method private enableProfileForContainerInternal(Ljava/lang/String;II)Z
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -613,7 +598,6 @@
 
 .method private enforceActiveAdminEnterpriseBillingPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/billing/EnterpriseBillingPolicy;->getEnterpriseDeviceManager()Landroid/app/enterprise/EnterpriseDeviceManager;
 
@@ -630,7 +614,6 @@
 
 .method private getAdminUid(Landroid/app/enterprise/ContextInfo;)I
     .locals 9
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const-string v6, "EnterpriseBillingPolicy"
 
@@ -825,7 +808,6 @@
 
 .method private getPackageName(Landroid/net/Uri;)Ljava/lang/String;
     .locals 1
-    .param p1    # Landroid/net/Uri;
 
     const/4 v0, 0x0
 
@@ -841,8 +823,6 @@
 
 .method private isApplicationPacakgeAvailable(ILjava/lang/String;)Z
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const-string v4, "EnterpriseBillingPolicy"
 
@@ -916,7 +896,6 @@
 
 .method private isApplicationPacakgeAvailable(Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -951,7 +930,6 @@
 
 .method private isContainerAvailable(I)Z
     .locals 1
-    .param p1    # I
 
     if-nez p1, :cond_0
 
@@ -970,8 +948,6 @@
 
 .method private turn(Ljava/lang/String;Z)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     iget-object v1, p0, Lcom/android/server/enterprise/billing/EnterpriseBillingPolicy;->ebpHelper:Lcom/android/server/enterprise/billing/EnterpriseBillingPolicyStorageHelper;
 
@@ -1005,9 +981,6 @@
 # virtual methods
 .method public activateProfile(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Z)Z
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1160,8 +1133,6 @@
 
 .method public addProfile(Landroid/app/enterprise/ContextInfo;Lcom/sec/enterprise/knox/billing/EnterpriseBillingProfile;)Z
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Lcom/sec/enterprise/knox/billing/EnterpriseBillingProfile;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1368,8 +1339,6 @@
 
 .method public addProfileForCurrentContainer(Landroid/app/enterprise/ContextInfo;Lcom/sec/enterprise/knox/billing/EnterpriseBillingProfile;)Z
     .locals 9
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Lcom/sec/enterprise/knox/billing/EnterpriseBillingProfile;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1709,10 +1678,6 @@
 
 .method public addVpnToBillingProfile(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 8
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1926,9 +1891,6 @@
 
 .method public allowRoaming(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Z)Z
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2027,9 +1989,6 @@
 
 .method public allowWifiFallback(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Z)V
     .locals 4
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2128,8 +2087,6 @@
 
 .method public disableProfile(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2272,7 +2229,6 @@
 
 .method public disableProfileForApps(Landroid/app/enterprise/ContextInfo;Ljava/util/List;)Z
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2395,7 +2351,6 @@
 
 .method public disableProfileForAppsInternal(Ljava/util/List;I)Z
     .locals 8
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2571,7 +2526,6 @@
 
 .method public disableProfileForContainer(Landroid/app/enterprise/ContextInfo;)Z
     .locals 6
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2698,7 +2652,6 @@
 
 .method public disableProfileForCurrentContainer(Landroid/app/enterprise/ContextInfo;)Z
     .locals 11
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3041,8 +2994,6 @@
 
 .method public enableProfileForApps(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Ljava/util/List;)Z
     .locals 6
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3203,8 +3154,6 @@
 
 .method public enableProfileForAppsInternal(Ljava/lang/String;Ljava/util/List;I)Z
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3433,8 +3382,6 @@
 
 .method public enableProfileForContainer(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3615,8 +3562,6 @@
 
 .method public enableProfileForCurrentContainer(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 15
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4052,8 +3997,6 @@
 
 .method public getApplicationsUsingProfile(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Ljava/util/List;
     .locals 6
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -4191,7 +4134,6 @@
 
 .method public getAvailableProfiles(Landroid/app/enterprise/ContextInfo;)Ljava/util/List;
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -4289,7 +4231,6 @@
 
 .method public getAvailableProfilesForCaller(Landroid/app/enterprise/ContextInfo;)Ljava/util/List;
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -4483,8 +4424,6 @@
 
 .method public getContainersUsingProfile(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Ljava/util/List;
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -4604,8 +4543,6 @@
 
 .method public getProfileDetails(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Lcom/sec/enterprise/knox/billing/EnterpriseBillingProfile;
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4728,8 +4665,6 @@
 
 .method public getProfileForApplication(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Lcom/sec/enterprise/knox/billing/EnterpriseBillingProfile;
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4844,7 +4779,6 @@
 
 .method public getProfileForContainer(Landroid/app/enterprise/ContextInfo;)Lcom/sec/enterprise/knox/billing/EnterpriseBillingProfile;
     .locals 6
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4941,7 +4875,6 @@
 
 .method public getUidApntypeMappings(Landroid/app/enterprise/ContextInfo;)Ljava/util/Map;
     .locals 4
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -5034,8 +4967,6 @@
 
 .method public getVpnsBoundToProfile(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Ljava/util/List;
     .locals 4
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -5158,8 +5089,6 @@
 
 .method public isProfileActive(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5282,8 +5211,6 @@
 
 .method public isProfileActiveByCaller(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 8
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5522,8 +5449,6 @@
 
 .method public isProfileEnabled(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5646,8 +5571,6 @@
 
 .method public isProfileTurnedOn(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5770,8 +5693,6 @@
 
 .method public isRoamingAllowed(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5894,8 +5815,6 @@
 
 .method public isWifiFallbackAllowed(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -6018,7 +5937,6 @@
 
 .method public onAdminAdded(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "EnterpriseBillingPolicy"
 
@@ -6047,7 +5965,6 @@
 
 .method public onAdminRemoved(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "EnterpriseBillingPolicy"
 
@@ -6076,7 +5993,6 @@
 
 .method public onPreAdminRemoval(I)V
     .locals 11
-    .param p1    # I
 
     const-string v8, "EnterpriseBillingPolicy"
 
@@ -6271,8 +6187,6 @@
 
 .method public removeProfile(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -6409,8 +6323,6 @@
 
 .method public removeProfileForCurrentContainer(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 9
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -6648,9 +6560,6 @@
 
 .method public removeVpnFromBillingProfile(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -6958,8 +6867,6 @@
 
 .method public turnOffProfile(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -7088,8 +6995,6 @@
 
 .method public turnOnProfile(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -7212,8 +7117,6 @@
 
 .method public updateProfile(Landroid/app/enterprise/ContextInfo;Lcom/sec/enterprise/knox/billing/EnterpriseBillingProfile;)Z
     .locals 12
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Lcom/sec/enterprise/knox/billing/EnterpriseBillingProfile;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

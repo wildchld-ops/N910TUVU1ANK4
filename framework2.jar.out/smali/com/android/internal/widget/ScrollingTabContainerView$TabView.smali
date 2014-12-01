@@ -36,10 +36,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/internal/widget/ScrollingTabContainerView;Landroid/content/Context;Landroid/app/ActionBar$Tab;ZZ)V
     .locals 2
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/app/ActionBar$Tab;
-    .param p4    # Z
-    .param p5    # Z
 
     iput-object p1, p0, Lcom/android/internal/widget/ScrollingTabContainerView$TabView;->this$0:Lcom/android/internal/widget/ScrollingTabContainerView;
 
@@ -71,7 +67,6 @@
 # virtual methods
 .method public bindTab(Landroid/app/ActionBar$Tab;)V
     .locals 0
-    .param p1    # Landroid/app/ActionBar$Tab;
 
     iput-object p1, p0, Lcom/android/internal/widget/ScrollingTabContainerView$TabView;->mTab:Landroid/app/ActionBar$Tab;
 
@@ -90,7 +85,6 @@
 
 .method public onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
     .locals 1
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
 
     invoke-super {p0, p1}, Landroid/widget/LinearLayout;->onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
 
@@ -107,7 +101,6 @@
 
 .method public onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
     .locals 1
-    .param p1    # Landroid/view/accessibility/AccessibilityNodeInfo;
 
     invoke-super {p0, p1}, Landroid/widget/LinearLayout;->onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
 
@@ -124,7 +117,6 @@
 
 .method public onLongClick(Landroid/view/View;)Z
     .locals 9
-    .param p1    # Landroid/view/View;
 
     const/4 v7, 0x0
 
@@ -189,8 +181,6 @@
 
 .method public onMeasure(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     invoke-super {p0, p1, p2}, Landroid/widget/LinearLayout;->onMeasure(II)V
 
@@ -232,7 +222,6 @@
 
 .method public setSelected(Z)V
     .locals 2
-    .param p1    # Z
 
     invoke-virtual {p0}, Landroid/view/View;->isSelected()Z
 

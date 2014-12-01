@@ -32,7 +32,6 @@
 # direct methods
 .method constructor <init>(Landroid/media/MediaRouter$RouteCategory;)V
     .locals 1
-    .param p1    # Landroid/media/MediaRouter$RouteCategory;
 
     invoke-direct {p0, p1}, Landroid/media/MediaRouter$RouteInfo;-><init>(Landroid/media/MediaRouter$RouteCategory;)V
 
@@ -55,7 +54,6 @@
 # virtual methods
 .method public addRoute(Landroid/media/MediaRouter$RouteInfo;)V
     .locals 4
-    .param p1    # Landroid/media/MediaRouter$RouteInfo;
 
     invoke-virtual {p1}, Landroid/media/MediaRouter$RouteInfo;->getGroup()Landroid/media/MediaRouter$RouteGroup;
 
@@ -176,8 +174,6 @@
 
 .method public addRoute(Landroid/media/MediaRouter$RouteInfo;I)V
     .locals 3
-    .param p1    # Landroid/media/MediaRouter$RouteInfo;
-    .param p2    # I
 
     invoke-virtual {p1}, Landroid/media/MediaRouter$RouteInfo;->getGroup()Landroid/media/MediaRouter$RouteGroup;
 
@@ -292,7 +288,6 @@
 
 .method getName(Landroid/content/res/Resources;)Ljava/lang/CharSequence;
     .locals 1
-    .param p1    # Landroid/content/res/Resources;
 
     iget-boolean v0, p0, Landroid/media/MediaRouter$RouteGroup;->mUpdateName:Z
 
@@ -310,7 +305,6 @@
 
 .method public getRouteAt(I)Landroid/media/MediaRouter$RouteInfo;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/media/MediaRouter$RouteGroup;->mRoutes:Ljava/util/ArrayList;
 
@@ -337,8 +331,6 @@
 
 .method memberNameChanged(Landroid/media/MediaRouter$RouteInfo;Ljava/lang/CharSequence;)V
     .locals 1
-    .param p1    # Landroid/media/MediaRouter$RouteInfo;
-    .param p2    # Ljava/lang/CharSequence;
 
     const/4 v0, 0x1
 
@@ -351,8 +343,6 @@
 
 .method memberStatusChanged(Landroid/media/MediaRouter$RouteInfo;Ljava/lang/CharSequence;)V
     .locals 0
-    .param p1    # Landroid/media/MediaRouter$RouteInfo;
-    .param p2    # Ljava/lang/CharSequence;
 
     invoke-virtual {p0, p2}, Landroid/media/MediaRouter$RouteInfo;->setStatusInt(Ljava/lang/CharSequence;)V
 
@@ -361,7 +351,6 @@
 
 .method memberVolumeChanged(Landroid/media/MediaRouter$RouteInfo;)V
     .locals 0
-    .param p1    # Landroid/media/MediaRouter$RouteInfo;
 
     invoke-virtual {p0}, Landroid/media/MediaRouter$RouteGroup;->updateVolume()V
 
@@ -370,7 +359,6 @@
 
 .method public removeRoute(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Landroid/media/MediaRouter$RouteGroup;->mRoutes:Ljava/util/ArrayList;
 
@@ -399,7 +387,6 @@
 
 .method public removeRoute(Landroid/media/MediaRouter$RouteInfo;)V
     .locals 3
-    .param p1    # Landroid/media/MediaRouter$RouteInfo;
 
     invoke-virtual {p1}, Landroid/media/MediaRouter$RouteInfo;->getGroup()Landroid/media/MediaRouter$RouteGroup;
 
@@ -461,7 +448,6 @@
 
 .method public requestSetVolume(I)V
     .locals 8
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/media/MediaRouter$RouteInfo;->getVolumeMax()I
 
@@ -523,7 +509,6 @@
 
 .method public requestUpdateVolume(I)V
     .locals 7
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/media/MediaRouter$RouteInfo;->getVolumeMax()I
 
@@ -727,7 +712,6 @@
 
 .method public setIconDrawable(Landroid/graphics/drawable/Drawable;)V
     .locals 0
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     iput-object p1, p0, Landroid/media/MediaRouter$RouteInfo;->mIcon:Landroid/graphics/drawable/Drawable;
 
@@ -736,7 +720,6 @@
 
 .method public setIconResource(I)V
     .locals 1
-    .param p1    # I
 
     sget-object v0, Landroid/media/MediaRouter;->sStatic:Landroid/media/MediaRouter$Static;
 

@@ -47,8 +47,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/net/wifi/p2p/WifiP2pDevice;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/net/wifi/p2p/WifiP2pDevice;
 
     const/16 v5, 0x9
 
@@ -234,7 +232,6 @@
 # virtual methods
 .method public compareTo(Landroid/preference/Preference;)I
     .locals 4
-    .param p1    # Landroid/preference/Preference;
 
     const/4 v1, 0x1
 
@@ -325,7 +322,6 @@
 
 .method public bridge synthetic compareTo(Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Landroid/preference/Preference;
 
@@ -338,7 +334,6 @@
 
 .method protected onBindView(Landroid/view/View;)V
     .locals 3
-    .param p1    # Landroid/view/View;
 
     iget-object v1, p0, Lcom/android/settings/wifi/p2p/WifiP2pPeer;->device:Landroid/net/wifi/p2p/WifiP2pDevice;
 
@@ -412,7 +407,6 @@
 
 .method public setTalkback(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/wifi/p2p/WifiP2pPeer;->mTalkback:Z
 

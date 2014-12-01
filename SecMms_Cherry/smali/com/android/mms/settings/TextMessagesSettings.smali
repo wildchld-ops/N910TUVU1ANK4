@@ -92,7 +92,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/settings/TextMessagesSettings;)V
     .locals 0
-    .param p0    # Lcom/android/mms/settings/TextMessagesSettings;
 
     invoke-direct {p0}, Lcom/android/mms/settings/TextMessagesSettings;->refreshSIMPreferences()V
 
@@ -101,7 +100,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/settings/TextMessagesSettings;)Landroid/preference/Preference;
     .locals 1
-    .param p0    # Lcom/android/mms/settings/TextMessagesSettings;
 
     iget-object v0, p0, Lcom/android/mms/settings/TextMessagesSettings;->mManageSDPref:Landroid/preference/Preference;
 
@@ -110,8 +108,6 @@
 
 .method static synthetic access$102(Lcom/android/mms/settings/TextMessagesSettings;Landroid/preference/Preference;)Landroid/preference/Preference;
     .locals 0
-    .param p0    # Lcom/android/mms/settings/TextMessagesSettings;
-    .param p1    # Landroid/preference/Preference;
 
     iput-object p1, p0, Lcom/android/mms/settings/TextMessagesSettings;->mManageSDPref:Landroid/preference/Preference;
 
@@ -120,7 +116,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/settings/TextMessagesSettings;)Landroid/preference/EditTextPreference;
     .locals 1
-    .param p0    # Lcom/android/mms/settings/TextMessagesSettings;
 
     iget-object v0, p0, Lcom/android/mms/settings/TextMessagesSettings;->mSmscAddrPref:Landroid/preference/EditTextPreference;
 
@@ -129,7 +124,6 @@
 
 .method private confirmSDcardDialog(Landroid/content/DialogInterface$OnClickListener;)V
     .locals 3
-    .param p1    # Landroid/content/DialogInterface$OnClickListener;
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
@@ -414,8 +408,6 @@
 
 .method private removePreference(Landroid/preference/PreferenceGroup;Landroid/preference/Preference;)V
     .locals 0
-    .param p1    # Landroid/preference/PreferenceGroup;
-    .param p2    # Landroid/preference/Preference;
 
     if-eqz p1, :cond_0
 
@@ -485,7 +477,6 @@
 
 .method private setSmscSummary(Landroid/content/SharedPreferences;)V
     .locals 7
-    .param p1    # Landroid/content/SharedPreferences;
 
     const/4 v6, 0x2
 
@@ -600,7 +591,6 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v4, 0x1
 
@@ -761,7 +751,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -801,8 +790,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 9
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     const/4 v8, 0x0
 

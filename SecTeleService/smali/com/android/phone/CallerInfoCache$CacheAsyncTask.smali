@@ -116,7 +116,7 @@
 
     new-array v1, v1, [Ljava/lang/Void;
 
-    invoke-virtual {p0, v1}, Landroid/os/AsyncTask;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
+    invoke-virtual {p0, v1}, Lcom/android/phone/CallerInfoCache$CacheAsyncTask;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
 
     return-void
 .end method

@@ -48,10 +48,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/view/View;Landroid/text/Editable;Z)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/text/Editable;
-    .param p4    # Z
 
     const/4 v2, 0x0
 
@@ -120,8 +116,6 @@
 
 .method static synthetic access$000(Landroid/text/method/SmileyPickerDialog;Z)V
     .locals 0
-    .param p0    # Landroid/text/method/SmileyPickerDialog;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Landroid/text/method/SmileyPickerDialog;->sendShowState(Z)V
 
@@ -130,7 +124,6 @@
 
 .method static synthetic access$100(Landroid/text/method/SmileyPickerDialog;)Landroid/view/LayoutInflater;
     .locals 1
-    .param p0    # Landroid/text/method/SmileyPickerDialog;
 
     iget-object v0, p0, Landroid/text/method/SmileyPickerDialog;->mInflater:Landroid/view/LayoutInflater;
 
@@ -139,7 +132,6 @@
 
 .method static synthetic access$200(Landroid/text/method/SmileyPickerDialog;)Ljava/lang/String;
     .locals 1
-    .param p0    # Landroid/text/method/SmileyPickerDialog;
 
     iget-object v0, p0, Landroid/text/method/SmileyPickerDialog;->mOptions:Ljava/lang/String;
 
@@ -148,7 +140,6 @@
 
 .method static synthetic access$300(Landroid/text/method/SmileyPickerDialog;)I
     .locals 1
-    .param p0    # Landroid/text/method/SmileyPickerDialog;
 
     iget v0, p0, Landroid/text/method/SmileyPickerDialog;->prePosition2:I
 
@@ -157,8 +148,6 @@
 
 .method static synthetic access$302(Landroid/text/method/SmileyPickerDialog;I)I
     .locals 0
-    .param p0    # Landroid/text/method/SmileyPickerDialog;
-    .param p1    # I
 
     iput p1, p0, Landroid/text/method/SmileyPickerDialog;->prePosition2:I
 
@@ -167,7 +156,6 @@
 
 .method static synthetic access$400(Landroid/text/method/SmileyPickerDialog;)I
     .locals 1
-    .param p0    # Landroid/text/method/SmileyPickerDialog;
 
     iget v0, p0, Landroid/text/method/SmileyPickerDialog;->prePosition3:I
 
@@ -176,8 +164,6 @@
 
 .method static synthetic access$402(Landroid/text/method/SmileyPickerDialog;I)I
     .locals 0
-    .param p0    # Landroid/text/method/SmileyPickerDialog;
-    .param p1    # I
 
     iput p1, p0, Landroid/text/method/SmileyPickerDialog;->prePosition3:I
 
@@ -186,7 +172,6 @@
 
 .method static synthetic access$500(Landroid/text/method/SmileyPickerDialog;)I
     .locals 1
-    .param p0    # Landroid/text/method/SmileyPickerDialog;
 
     iget v0, p0, Landroid/text/method/SmileyPickerDialog;->prePosition4:I
 
@@ -195,8 +180,6 @@
 
 .method static synthetic access$502(Landroid/text/method/SmileyPickerDialog;I)I
     .locals 0
-    .param p0    # Landroid/text/method/SmileyPickerDialog;
-    .param p1    # I
 
     iput p1, p0, Landroid/text/method/SmileyPickerDialog;->prePosition4:I
 
@@ -205,7 +188,6 @@
 
 .method private replaceCharacterAndClose(Ljava/lang/CharSequence;)V
     .locals 3
-    .param p1    # Ljava/lang/CharSequence;
 
     iget-object v1, p0, Landroid/text/method/SmileyPickerDialog;->mText:Landroid/text/Editable;
 
@@ -241,7 +223,6 @@
 
 .method private sendShowState(Z)V
     .locals 2
-    .param p1    # Z
 
     new-instance v0, Landroid/content/Intent;
 
@@ -268,7 +249,6 @@
 # virtual methods
 .method public countLength(I)I
     .locals 5
-    .param p1    # I
 
     iget-object v3, p0, Landroid/text/method/SmileyPickerDialog;->mOptions:Ljava/lang/String;
 
@@ -322,7 +302,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     instance-of v1, p1, Landroid/widget/Button;
 
@@ -342,7 +321,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Dialog;->onCreate(Landroid/os/Bundle;)V
 
@@ -401,10 +379,6 @@
 
 .method public onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
     .locals 4
-    .param p1    # Landroid/widget/AdapterView;
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
 
     if-nez p3, :cond_0
 

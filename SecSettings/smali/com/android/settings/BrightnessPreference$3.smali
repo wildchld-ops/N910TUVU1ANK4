@@ -21,7 +21,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/settings/BrightnessPreference;Landroid/os/Handler;)V
     .locals 0
-    .param p2    # Landroid/os/Handler;
 
     iput-object p1, p0, Lcom/android/settings/BrightnessPreference$3;->this$0:Lcom/android/settings/BrightnessPreference;
 
@@ -34,7 +33,6 @@
 # virtual methods
 .method public onChange(Z)V
     .locals 3
-    .param p1    # Z
 
     const-string v0, "BrightnessPreference"
 

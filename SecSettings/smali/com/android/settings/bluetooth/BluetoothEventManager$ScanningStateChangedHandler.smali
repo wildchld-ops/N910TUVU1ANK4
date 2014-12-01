@@ -26,7 +26,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/settings/bluetooth/BluetoothEventManager;Z)V
     .locals 0
-    .param p2    # Z
 
     iput-object p1, p0, Lcom/android/settings/bluetooth/BluetoothEventManager$ScanningStateChangedHandler;->this$0:Lcom/android/settings/bluetooth/BluetoothEventManager;
 
@@ -41,9 +40,6 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;Landroid/bluetooth/BluetoothDevice;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
-    .param p3    # Landroid/bluetooth/BluetoothDevice;
 
     iget-object v2, p0, Lcom/android/settings/bluetooth/BluetoothEventManager$ScanningStateChangedHandler;->this$0:Lcom/android/settings/bluetooth/BluetoothEventManager;
 

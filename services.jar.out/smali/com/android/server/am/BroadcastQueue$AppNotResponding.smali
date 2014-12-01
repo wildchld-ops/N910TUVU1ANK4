@@ -28,8 +28,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/am/BroadcastQueue;Lcom/android/server/am/ProcessRecord;Ljava/lang/String;)V
     .locals 0
-    .param p2    # Lcom/android/server/am/ProcessRecord;
-    .param p3    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/server/am/BroadcastQueue$AppNotResponding;->this$0:Lcom/android/server/am/BroadcastQueue;
 

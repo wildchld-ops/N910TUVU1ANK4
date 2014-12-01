@@ -33,7 +33,6 @@
 
 .method public constructor <init>(Lcom/google/android/voiceime/IntentApiTrigger$Callback;)V
     .locals 0
-    .param p1    # Lcom/google/android/voiceime/IntentApiTrigger$Callback;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -44,7 +43,6 @@
 
 .method static synthetic access$100(Lcom/google/android/voiceime/ServiceBridge;)Lcom/google/android/voiceime/IntentApiTrigger$Callback;
     .locals 1
-    .param p0    # Lcom/google/android/voiceime/ServiceBridge;
 
     iget-object v0, p0, Lcom/google/android/voiceime/ServiceBridge;->mCallback:Lcom/google/android/voiceime/IntentApiTrigger$Callback;
 
@@ -55,8 +53,6 @@
 # virtual methods
 .method public notifyResult(Landroid/content/Context;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
 
     new-instance v0, Lcom/google/android/voiceime/ServiceBridge$ConnectionResponse;
 
@@ -79,8 +75,6 @@
 
 .method public startVoiceRecognition(Landroid/content/Context;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
 
     new-instance v0, Lcom/google/android/voiceime/ServiceBridge$ConnectionRequest;
 

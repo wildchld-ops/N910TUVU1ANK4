@@ -213,7 +213,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/ui/MessageDatabaseBackupActivity;)Lcom/android/mms/ui/MessageDatabaseBackupActivity$BackgroundWorkThread;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/MessageDatabaseBackupActivity;
 
     iget-object v0, p0, Lcom/android/mms/ui/MessageDatabaseBackupActivity;->mWorkThread:Lcom/android/mms/ui/MessageDatabaseBackupActivity$BackgroundWorkThread;
 
@@ -222,8 +221,6 @@
 
 .method static synthetic access$002(Lcom/android/mms/ui/MessageDatabaseBackupActivity;Lcom/android/mms/ui/MessageDatabaseBackupActivity$BackgroundWorkThread;)Lcom/android/mms/ui/MessageDatabaseBackupActivity$BackgroundWorkThread;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/MessageDatabaseBackupActivity;
-    .param p1    # Lcom/android/mms/ui/MessageDatabaseBackupActivity$BackgroundWorkThread;
 
     iput-object p1, p0, Lcom/android/mms/ui/MessageDatabaseBackupActivity;->mWorkThread:Lcom/android/mms/ui/MessageDatabaseBackupActivity$BackgroundWorkThread;
 
@@ -248,7 +245,6 @@
 
 .method static synthetic access$300(Lcom/android/mms/ui/MessageDatabaseBackupActivity;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/MessageDatabaseBackupActivity;
 
     iget-object v0, p0, Lcom/android/mms/ui/MessageDatabaseBackupActivity;->mEventHandler:Landroid/os/Handler;
 
@@ -265,7 +261,6 @@
 
 .method static synthetic access$800(Lcom/android/mms/ui/MessageDatabaseBackupActivity;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/MessageDatabaseBackupActivity;
 
     invoke-direct {p0}, Lcom/android/mms/ui/MessageDatabaseBackupActivity;->startBackup()V
 
@@ -274,7 +269,6 @@
 
 .method static synthetic access$900(Lcom/android/mms/ui/MessageDatabaseBackupActivity;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/MessageDatabaseBackupActivity;
 
     invoke-direct {p0}, Lcom/android/mms/ui/MessageDatabaseBackupActivity;->startRestore()V
 
@@ -370,8 +364,6 @@
 
 .method private getProgressDialog(Ljava/lang/String;Ljava/lang/String;)Landroid/app/ProgressDialog;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/mms/ui/MessageDatabaseBackupActivity;->mDlgProg:Landroid/app/ProgressDialog;
 
@@ -393,7 +385,6 @@
 
 .method private make32byteKey(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/16 v3, 0x20
 
@@ -577,7 +568,6 @@
 
 .method private showCryptoDialog(I)V
     .locals 3
-    .param p1    # I
 
     new-instance v0, Lcom/android/mms/ui/MessageDatabaseBackupActivity$CryptoKeyDialog;
 
@@ -880,7 +870,6 @@
 # virtual methods
 .method public DeleteDir(Ljava/io/File;)Z
     .locals 9
-    .param p1    # Ljava/io/File;
 
     const/4 v5, 0x0
 
@@ -1116,7 +1105,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 12
-    .param p1    # Landroid/view/View;
 
     const v11, 0x7f0b01fc
 
@@ -1277,7 +1265,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 14
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v13, 0x0
 
@@ -1543,7 +1530,6 @@
 
 .method protected onNewIntent(Landroid/content/Intent;)V
     .locals 2
-    .param p1    # Landroid/content/Intent;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onNewIntent(Landroid/content/Intent;)V
 
@@ -1558,8 +1544,6 @@
 
 .method public onProgressDlgCompleted(Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p0}, Landroid/app/Activity;->isFinishing()Z
 
@@ -1589,8 +1573,6 @@
 
 .method public onProgressDlgStart(Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Lcom/android/mms/ui/MessageDatabaseBackupActivity;->getProgressDialog(Ljava/lang/String;Ljava/lang/String;)Landroid/app/ProgressDialog;
 
@@ -1626,7 +1608,6 @@
 
 .method public setCryptoKey(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const v1, 0x7f0b01fd
 

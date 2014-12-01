@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Lcom/sec/epdg/smartwifi/SmartWifiAdapter;Lcom/sec/epdg/smartwifi/SmartWifiAdapter$1;)V
     .locals 0
-    .param p1    # Lcom/sec/epdg/smartwifi/SmartWifiAdapter;
-    .param p2    # Lcom/sec/epdg/smartwifi/SmartWifiAdapter$1;
 
     invoke-direct {p0, p1}, Lcom/sec/epdg/smartwifi/SmartWifiAdapter$SmartWifiTelListener;-><init>(Lcom/sec/epdg/smartwifi/SmartWifiAdapter;)V
 
@@ -43,8 +41,6 @@
 # virtual methods
 .method public onDataConnectionStateChanged(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     const-string v0, "[SMARTWIFI]"
 
@@ -125,7 +121,6 @@
 
 .method public onServiceStateChanged(Landroid/telephony/ServiceState;)V
     .locals 3
-    .param p1    # Landroid/telephony/ServiceState;
 
     const-string v0, "[SMARTWIFI]"
 
@@ -200,7 +195,6 @@
 
 .method public onSignalStrengthsChanged(Landroid/telephony/SignalStrength;)V
     .locals 4
-    .param p1    # Landroid/telephony/SignalStrength;
 
     iget-object v0, p0, Lcom/sec/epdg/smartwifi/SmartWifiAdapter$SmartWifiTelListener;->this$0:Lcom/sec/epdg/smartwifi/SmartWifiAdapter;
 

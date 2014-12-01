@@ -141,7 +141,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     const/4 v2, 0x0
 
@@ -218,7 +217,6 @@
 
 .method private static log(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "DirEncryptionManager"
 
@@ -231,11 +229,6 @@
 # virtual methods
 .method public changeEcryptfsPassword(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/dirEncryption/IDirEncryptionManagerCallBack;I)I
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Landroid/dirEncryption/IDirEncryptionManagerCallBack;
-    .param p5    # I
 
     const/16 v7, 0xc8
 
@@ -289,7 +282,6 @@
 
 .method public encryptStorage(Ljava/lang/String;)I
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/16 v1, 0xc8
 
@@ -639,8 +631,6 @@
 
 .method public isPathMounted(Ljava/lang/String;Landroid/dirEncryption/IDirEncryptionManagerCallBack;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/dirEncryption/IDirEncryptionManagerCallBack;
 
     const/4 v1, 0x0
 
@@ -757,14 +747,6 @@
 
 .method public mountEcryptfsStorage(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZIIILandroid/dirEncryption/IDirEncryptionManagerCallBack;)I
     .locals 12
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Z
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # Landroid/dirEncryption/IDirEncryptionManagerCallBack;
 
     const/16 v10, 0xc8
 
@@ -836,7 +818,6 @@
 
 .method public registerListener(Landroid/os/storage/IDirEncryptServiceListener;)V
     .locals 2
-    .param p1    # Landroid/os/storage/IDirEncryptServiceListener;
 
     iget-object v1, p0, Landroid/dirEncryption/DirEncryptionManager;->m_InstDirEncSvc:Landroid/os/storage/IDirEncryptService;
 
@@ -867,7 +848,6 @@
 
 .method public setNeedToCreateKey(Z)V
     .locals 2
-    .param p1    # Z
 
     invoke-virtual {p0}, Landroid/dirEncryption/DirEncryptionManager;->isEncryptionSupported()Z
 
@@ -944,7 +924,6 @@
 
 .method public setPassword(Ljava/lang/String;)I
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/16 v1, 0xc8
 
@@ -995,7 +974,6 @@
 
 .method public setPolicyChanged(Z)V
     .locals 0
-    .param p1    # Z
 
     sput-boolean p1, Landroid/dirEncryption/DirEncryptionManager;->mPolicyChanged:Z
 
@@ -1004,7 +982,6 @@
 
 .method public setSavedUserID(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/dirEncryption/DirEncryptionManager;->mDew:Landroid/dirEncryption/DirEncryptionWrapper;
 
@@ -1015,9 +992,6 @@
 
 .method public setStorageCardEncryptionPolicy(III)I
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/16 v1, 0xc8
 
@@ -1108,7 +1082,6 @@
 
 .method public setUserDiff(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Landroid/dirEncryption/DirEncryptionManager;->mDew:Landroid/dirEncryption/DirEncryptionWrapper;
 
@@ -1119,10 +1092,6 @@
 
 .method public unmountEcryptfsStorage(Ljava/lang/String;Landroid/dirEncryption/IDirEncryptionManagerCallBack;II)I
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/dirEncryption/IDirEncryptionManagerCallBack;
-    .param p3    # I
-    .param p4    # I
 
     const/16 v1, 0xc8
 
@@ -1231,7 +1200,6 @@
 
 .method public unregisterListener(Landroid/os/storage/IDirEncryptServiceListener;)V
     .locals 2
-    .param p1    # Landroid/os/storage/IDirEncryptServiceListener;
 
     iget-object v1, p0, Landroid/dirEncryption/DirEncryptionManager;->m_InstDirEncSvc:Landroid/os/storage/IDirEncryptService;
 

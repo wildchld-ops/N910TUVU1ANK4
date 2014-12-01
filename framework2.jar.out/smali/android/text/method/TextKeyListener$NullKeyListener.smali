@@ -58,9 +58,6 @@
 # virtual methods
 .method public clearMetaKeyState(Landroid/view/View;Landroid/text/Editable;I)V
     .locals 0
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/text/Editable;
-    .param p3    # I
 
     return-void
 .end method
@@ -75,10 +72,6 @@
 
 .method public onKeyDown(Landroid/view/View;Landroid/text/Editable;ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/text/Editable;
-    .param p3    # I
-    .param p4    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x0
 
@@ -87,9 +80,6 @@
 
 .method public onKeyOther(Landroid/view/View;Landroid/text/Editable;Landroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/text/Editable;
-    .param p3    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x0
 
@@ -98,10 +88,6 @@
 
 .method public onKeyUp(Landroid/view/View;Landroid/text/Editable;ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/text/Editable;
-    .param p3    # I
-    .param p4    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x0
 

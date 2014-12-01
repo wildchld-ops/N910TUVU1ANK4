@@ -24,10 +24,6 @@
 # direct methods
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;Lcom/sec/android/glview/TwGLViewGroup;Lcom/sec/android/app/camera/MenuResourceDepot;Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;)V
     .locals 1
-    .param p1    # Lcom/sec/android/app/camera/Camera;
-    .param p2    # Lcom/sec/android/glview/TwGLViewGroup;
-    .param p3    # Lcom/sec/android/app/camera/MenuResourceDepot;
-    .param p4    # Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;
 
     invoke-direct {p0}, Lcom/sec/android/app/camera/command/MenuCommand;-><init>()V
 
@@ -490,7 +486,6 @@
 
 .method public setSliderDirection(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/app/camera/command/LaunchEffectTypeMenuCommand;->mSlideDirection:I
 
@@ -499,7 +494,6 @@
 
 .method public setZOrder(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/app/camera/command/LaunchEffectTypeMenuCommand;->mZOrder:I
 

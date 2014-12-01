@@ -113,9 +113,6 @@
 
 .method private constructor <init>(Landroid/content/Context;Lcom/android/server/power/ShutdownDialog;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/server/power/ShutdownDialog;
-    .param p3    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -169,7 +166,6 @@
 
 .method static synthetic access$200(Lcom/android/server/power/FakeShutdown;)Landroid/media/MediaPlayer;
     .locals 1
-    .param p0    # Lcom/android/server/power/FakeShutdown;
 
     iget-object v0, p0, Lcom/android/server/power/FakeShutdown;->mp:Landroid/media/MediaPlayer;
 
@@ -178,7 +174,6 @@
 
 .method private bookSilentShutdownAfterHours(I)V
     .locals 4
-    .param p1    # I
 
     const-string v2, "FakeShutdown"
 
@@ -737,7 +732,6 @@
 
 .method private makeFrontAppIntent(Z)Landroid/content/Intent;
     .locals 4
-    .param p1    # Z
 
     new-instance v0, Landroid/content/Intent;
 
@@ -1363,7 +1357,6 @@
 
 .method public static restoreSuddenShutdown(Landroid/content/Context;)I
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     const/4 v3, -0x1
 
@@ -1403,9 +1396,6 @@
 
 .method public static shutdown(Landroid/content/Context;Lcom/android/server/power/ShutdownDialog;Ljava/lang/String;)V
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/server/power/ShutdownDialog;
-    .param p2    # Ljava/lang/String;
 
     const-string v0, "FakeShutdown"
 
@@ -1518,8 +1508,6 @@
 
 .method private vibrate(IZ)V
     .locals 3
-    .param p1    # I
-    .param p2    # Z
 
     if-gez p1, :cond_1
 
@@ -1561,7 +1549,6 @@
 
 .method private waitForAnimStart(Lcom/android/server/power/ShutdownDialog;)V
     .locals 4
-    .param p1    # Lcom/android/server/power/ShutdownDialog;
 
     const-string v2, "FakeShutdown"
 

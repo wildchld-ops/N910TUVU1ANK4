@@ -46,9 +46,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/IContentProvider;Ljava/lang/String;I)V
     .locals 1
-    .param p1    # Landroid/content/IContentProvider;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -83,7 +80,6 @@
 
 .method private flush(Landroid/net/Uri;Ljava/util/List;)V
     .locals 21
-    .param p1    # Landroid/net/Uri;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -550,9 +546,6 @@
 
 .method private insert(Landroid/net/Uri;Landroid/content/ContentValues;Z)V
     .locals 4
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Landroid/content/ContentValues;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -683,8 +676,6 @@
 
 .method public insert(Landroid/net/Uri;Landroid/content/ContentValues;)V
     .locals 1
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Landroid/content/ContentValues;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -700,8 +691,6 @@
 
 .method public insertwithPriority(Landroid/net/Uri;Landroid/content/ContentValues;)V
     .locals 1
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Landroid/content/ContentValues;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

@@ -83,7 +83,7 @@
 
     move-object/from16 v32, v0
 
-    invoke-virtual/range {v32 .. v32}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual/range {v32 .. v32}, Lcom/android/phone/PhoneGlobals;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v32
 
@@ -98,7 +98,7 @@
 
     move-object/from16 v32, v0
 
-    invoke-virtual/range {v32 .. v32}, Landroid/content/ContextWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual/range {v32 .. v32}, Lcom/android/phone/PhoneGlobals;->getResources()Landroid/content/res/Resources;
 
     move-result-object v32
 
@@ -176,7 +176,7 @@
 
     invoke-direct {v0, v1}, Lcom/android/phone/IccNetworkDepersonalizationPanel;-><init>(Landroid/content/Context;)V
 
-    invoke-virtual/range {v20 .. v20}, Landroid/app/Dialog;->show()V
+    invoke-virtual/range {v20 .. v20}, Lcom/android/phone/IccNetworkDepersonalizationPanel;->show()V
 
     goto :goto_0
 
@@ -211,7 +211,7 @@
 
     invoke-direct {v0, v1, v2}, Lcom/android/phone/IccNetworkDepersonalizationPanel;-><init>(Landroid/content/Context;Lcom/android/internal/telephony/IccCard$State;)V
 
-    invoke-virtual/range {v21 .. v21}, Landroid/app/Dialog;->show()V
+    invoke-virtual/range {v21 .. v21}, Lcom/android/phone/IccNetworkDepersonalizationPanel;->show()V
 
     goto/16 :goto_0
 
@@ -246,7 +246,7 @@
 
     invoke-direct {v0, v1, v2}, Lcom/android/phone/IccNetworkDepersonalizationPanel;-><init>(Landroid/content/Context;Z)V
 
-    invoke-virtual/range {v27 .. v27}, Landroid/app/Dialog;->show()V
+    invoke-virtual/range {v27 .. v27}, Lcom/android/phone/IccNetworkDepersonalizationPanel;->show()V
 
     goto/16 :goto_0
 
@@ -899,7 +899,7 @@
 
     move-object/from16 v32, v0
 
-    invoke-virtual/range {v32 .. v32}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual/range {v32 .. v32}, Lcom/android/phone/PhoneGlobals;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v32
 
@@ -1205,7 +1205,7 @@
 
     move-result-object v32
 
-    invoke-virtual/range {v32 .. v32}, Landroid/app/Dialog;->dismiss()V
+    invoke-virtual/range {v32 .. v32}, Landroid/app/ProgressDialog;->dismiss()V
 
     move-object/from16 v0, p0
 
@@ -1355,7 +1355,7 @@
 
     move-object/from16 v32, v0
 
-    invoke-virtual/range {v32 .. v32}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual/range {v32 .. v32}, Lcom/android/phone/PhoneGlobals;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v32
 
@@ -1374,7 +1374,7 @@
 
     move-object/from16 v32, v0
 
-    invoke-virtual/range {v32 .. v32}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual/range {v32 .. v32}, Lcom/android/phone/PhoneGlobals;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v32
 
@@ -1547,7 +1547,7 @@
 
     move-object/from16 v32, v0
 
-    invoke-virtual/range {v32 .. v32}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual/range {v32 .. v32}, Lcom/android/phone/PhoneGlobals;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v32
 
@@ -1676,7 +1676,7 @@
 
     move-object/from16 v32, v0
 
-    invoke-virtual/range {v32 .. v32}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual/range {v32 .. v32}, Lcom/android/phone/PhoneGlobals;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v32
 
@@ -1756,7 +1756,7 @@
 
     move-object/from16 v32, v0
 
-    invoke-virtual/range {v32 .. v32}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual/range {v32 .. v32}, Lcom/android/phone/PhoneGlobals;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v32
 
@@ -2187,7 +2187,7 @@
 
     move-object/from16 v0, v32
 
-    invoke-virtual {v0, v15}, Landroid/content/ContextWrapper;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {v0, v15}, Lcom/android/phone/PhoneGlobals;->startActivity(Landroid/content/Intent;)V
 
     goto/16 :goto_0
 
@@ -2256,7 +2256,7 @@
 
     move-object/from16 v0, v32
 
-    invoke-virtual {v0, v15}, Landroid/content/ContextWrapper;->sendBroadcast(Landroid/content/Intent;)V
+    invoke-virtual {v0, v15}, Lcom/android/phone/PhoneGlobals;->sendBroadcast(Landroid/content/Intent;)V
 
     const/16 v32, 0x1
 
@@ -2377,7 +2377,7 @@
 
     move-object/from16 v32, v0
 
-    invoke-virtual/range {v32 .. v32}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual/range {v32 .. v32}, Lcom/android/phone/PhoneGlobals;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v32
 
@@ -2529,7 +2529,7 @@
 
     move-object/from16 v1, v23
 
-    invoke-virtual {v0, v1}, Landroid/content/ContextWrapper;->sendBroadcast(Landroid/content/Intent;)V
+    invoke-virtual {v0, v1}, Lcom/android/phone/PhoneGlobals;->sendBroadcast(Landroid/content/Intent;)V
 
     goto/16 :goto_0
 

@@ -72,13 +72,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZZLjava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Z
-    .param p5    # Z
-    .param p6    # Z
-    .param p7    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -133,7 +126,6 @@
 
 .method public compareTo(Landroid/hardware/display/WifiDisplay;)I
     .locals 2
-    .param p1    # Landroid/hardware/display/WifiDisplay;
 
     iget-object v0, p0, Landroid/hardware/display/WifiDisplay;->mDeviceAlias:Ljava/lang/String;
 
@@ -169,7 +161,6 @@
 
 .method public bridge synthetic compareTo(Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Landroid/hardware/display/WifiDisplay;
 
@@ -190,7 +181,6 @@
 
 .method public equals(Landroid/hardware/display/WifiDisplay;)Z
     .locals 2
-    .param p1    # Landroid/hardware/display/WifiDisplay;
 
     if-eqz p1, :cond_0
 
@@ -237,7 +227,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     instance-of v0, p1, Landroid/hardware/display/WifiDisplay;
 
@@ -324,7 +313,6 @@
 
 .method public hasSameAddress(Landroid/hardware/display/WifiDisplay;)Z
     .locals 2
-    .param p1    # Landroid/hardware/display/WifiDisplay;
 
     if-eqz p1, :cond_0
 
@@ -506,8 +494,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 3
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     const/4 v1, 0x1
 

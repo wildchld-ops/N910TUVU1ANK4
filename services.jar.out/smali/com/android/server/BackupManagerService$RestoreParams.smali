@@ -37,13 +37,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/BackupManagerService;Lcom/android/internal/backup/IBackupTransport;Ljava/lang/String;Landroid/app/backup/IRestoreObserver;JLandroid/content/pm/PackageInfo;IZ)V
     .locals 1
-    .param p2    # Lcom/android/internal/backup/IBackupTransport;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Landroid/app/backup/IRestoreObserver;
-    .param p5    # J
-    .param p7    # Landroid/content/pm/PackageInfo;
-    .param p8    # I
-    .param p9    # Z
 
     iput-object p1, p0, Lcom/android/server/BackupManagerService$RestoreParams;->this$0:Lcom/android/server/BackupManagerService;
 
@@ -72,11 +65,6 @@
 
 .method constructor <init>(Lcom/android/server/BackupManagerService;Lcom/android/internal/backup/IBackupTransport;Ljava/lang/String;Landroid/app/backup/IRestoreObserver;JZ)V
     .locals 2
-    .param p2    # Lcom/android/internal/backup/IBackupTransport;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Landroid/app/backup/IRestoreObserver;
-    .param p5    # J
-    .param p7    # Z
 
     const/4 v1, 0x0
 
@@ -107,12 +95,6 @@
 
 .method constructor <init>(Lcom/android/server/BackupManagerService;Lcom/android/internal/backup/IBackupTransport;Ljava/lang/String;Landroid/app/backup/IRestoreObserver;J[Ljava/lang/String;Z)V
     .locals 1
-    .param p2    # Lcom/android/internal/backup/IBackupTransport;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Landroid/app/backup/IRestoreObserver;
-    .param p5    # J
-    .param p7    # [Ljava/lang/String;
-    .param p8    # Z
 
     iput-object p1, p0, Lcom/android/server/BackupManagerService$RestoreParams;->this$0:Lcom/android/server/BackupManagerService;
 

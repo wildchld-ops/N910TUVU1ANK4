@@ -36,7 +36,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/SettingsEmergencySettings;)Landroid/preference/PreferenceScreen;
     .locals 1
-    .param p0    # Lcom/android/settings/SettingsEmergencySettings;
 
     iget-object v0, p0, Lcom/android/settings/SettingsEmergencySettings;->mMobilePreference:Landroid/preference/PreferenceScreen;
 
@@ -45,7 +44,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/SettingsEmergencySettings;)Landroid/preference/PreferenceScreen;
     .locals 1
-    .param p0    # Lcom/android/settings/SettingsEmergencySettings;
 
     iget-object v0, p0, Lcom/android/settings/SettingsEmergencySettings;->mTempPreference:Landroid/preference/PreferenceScreen;
 
@@ -56,7 +54,6 @@
 # virtual methods
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 2
-    .param p1    # Landroid/content/res/Configuration;
 
     iget-object v0, p0, Lcom/android/settings/SettingsEmergencySettings;->mBrightPreference:Lcom/android/settings/BrightnessPreference;
 
@@ -71,7 +68,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -211,8 +207,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 13
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     const/4 v12, 0x0
 

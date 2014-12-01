@@ -476,7 +476,7 @@
 
     invoke-static {v1, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/PhotoRingScreen;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -702,13 +702,13 @@
 
     const/4 v1, 0x4
 
-    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setVisibility(I)V
 
     iget-object v0, p0, Lcom/android/phone/PhotoRingScreen;->mVideoErrIcon:Landroid/widget/ImageView;
 
     invoke-virtual {v0, v8}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/PhotoRingScreen;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -1140,7 +1140,7 @@
 
     const/4 v3, 0x1
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/PhotoRingScreen;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v6
 
@@ -1152,7 +1152,7 @@
 
     if-eq v6, v8, :cond_3
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/PhotoRingScreen;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v6
 
@@ -1190,7 +1190,7 @@
 
     iget-object v6, p0, Lcom/android/phone/PhotoRingScreen;->mCB:Landroid/widget/CheckBox;
 
-    invoke-virtual {v6, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v6, p0}, Landroid/widget/CheckBox;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     invoke-virtual {v1, v12}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1219,7 +1219,7 @@
 
     check-cast v4, Landroid/widget/TextView;
 
-    invoke-virtual {v4, v10}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v4, v10}, Landroid/widget/TextView;->setVisibility(I)V
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
@@ -1253,7 +1253,7 @@
 
     move-result-object v6
 
-    invoke-virtual {v6}, Landroid/app/Dialog;->show()V
+    invoke-virtual {v6}, Landroid/app/AlertDialog;->show()V
 
     iput-boolean v9, p0, Lcom/android/phone/PhotoRingScreen;->bMobileOffPopup:Z
 
@@ -1278,7 +1278,7 @@
     goto :goto_1
 
     :cond_3
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/PhotoRingScreen;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v6
 
@@ -1316,7 +1316,7 @@
 
     iget-object v6, p0, Lcom/android/phone/PhotoRingScreen;->mCB:Landroid/widget/CheckBox;
 
-    invoke-virtual {v6, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v6, p0}, Landroid/widget/CheckBox;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     invoke-virtual {v1, v12}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -1345,7 +1345,7 @@
 
     check-cast v4, Landroid/widget/TextView;
 
-    invoke-virtual {v4, v10}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v4, v10}, Landroid/widget/TextView;->setVisibility(I)V
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
@@ -1371,7 +1371,7 @@
 
     move-result-object v6
 
-    invoke-virtual {v6}, Landroid/app/Dialog;->show()V
+    invoke-virtual {v6}, Landroid/app/AlertDialog;->show()V
 
     iput-boolean v9, p0, Lcom/android/phone/PhotoRingScreen;->bMobileOnPopup:Z
 
@@ -1402,11 +1402,11 @@
 
     iget-object v0, p0, Lcom/android/phone/PhotoRingScreen;->mMenuDialog:Landroid/app/AlertDialog;
 
-    invoke-virtual {v0, v1}, Landroid/app/Dialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
+    invoke-virtual {v0, v1}, Landroid/app/AlertDialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
     iget-object v0, p0, Lcom/android/phone/PhotoRingScreen;->mMenuDialog:Landroid/app/AlertDialog;
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->dismiss()V
+    invoke-virtual {v0}, Landroid/app/AlertDialog;->dismiss()V
 
     iput-object v1, p0, Lcom/android/phone/PhotoRingScreen;->mMenuDialog:Landroid/app/AlertDialog;
 
@@ -1461,7 +1461,7 @@
     iput-boolean v2, p0, Lcom/android/phone/PhotoRingScreen;->bisExcuted:Z
 
     :try_start_0
-    invoke-virtual {p0, v0, v1}, Landroid/app/Activity;->startActivityForResult(Landroid/content/Intent;I)V
+    invoke-virtual {p0, v0, v1}, Lcom/android/phone/PhotoRingScreen;->startActivityForResult(Landroid/content/Intent;I)V
     :try_end_0
     .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -1472,7 +1472,7 @@
     :cond_2
     const v0, 0x7f0902a2
 
-    invoke-virtual {p0, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lcom/android/phone/PhotoRingScreen;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -1517,7 +1517,7 @@
 
     const-string v3, "connectivity"
 
-    invoke-virtual {p0, v3}, Landroid/app/Activity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v3}, Lcom/android/phone/PhotoRingScreen;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -1539,7 +1539,7 @@
 
     invoke-virtual {v2, v3, v6}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
-    invoke-virtual {p0, v2}, Landroid/content/ContextWrapper;->sendBroadcast(Landroid/content/Intent;)V
+    invoke-virtual {p0, v2}, Lcom/android/phone/PhotoRingScreen;->sendBroadcast(Landroid/content/Intent;)V
 
     const/16 v3, 0x2006
 
@@ -1579,7 +1579,7 @@
 
     invoke-virtual {v0, v3, v6}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
-    invoke-virtual {p0, v0}, Landroid/content/ContextWrapper;->sendBroadcast(Landroid/content/Intent;)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/PhotoRingScreen;->sendBroadcast(Landroid/content/Intent;)V
 
     :cond_0
     return-void
@@ -1613,11 +1613,11 @@
 
     const v0, 0x7f040072
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->setContentView(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/PhotoRingScreen;->setContentView(I)V
 
     const v0, 0x7f0a01b3
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/phone/PhotoRingScreen;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -1627,7 +1627,7 @@
 
     const v0, 0x7f0a01b2
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/phone/PhotoRingScreen;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -1637,7 +1637,7 @@
 
     const v0, 0x7f0a01b1
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/phone/PhotoRingScreen;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -1651,16 +1651,16 @@
 
     iget-object v0, p0, Lcom/android/phone/PhotoRingScreen;->mPreparedMediaButton:Landroid/widget/ImageButton;
 
-    invoke-virtual {v0, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v0, p0}, Landroid/widget/ImageButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     iget-object v0, p0, Lcom/android/phone/PhotoRingScreen;->mPreparedMediaButton:Landroid/widget/ImageButton;
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->registerForContextMenu(Landroid/view/View;)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/PhotoRingScreen;->registerForContextMenu(Landroid/view/View;)V
 
     :cond_0
     const v0, 0x7f0a01b0
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/phone/PhotoRingScreen;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -1674,12 +1674,12 @@
 
     iget-object v0, p0, Lcom/android/phone/PhotoRingScreen;->mRecipientsText:Landroid/widget/AutoCompleteTextView;
 
-    invoke-virtual {v0}, Landroid/view/View;->requestFocus()Z
+    invoke-virtual {v0}, Landroid/widget/AutoCompleteTextView;->requestFocus()Z
 
     :cond_1
     const v0, 0x7f0a019e
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/phone/PhotoRingScreen;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -1689,7 +1689,7 @@
 
     const v0, 0x7f0a01af
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/phone/PhotoRingScreen;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -1703,7 +1703,7 @@
 
     invoke-direct {v1, p0}, Lcom/android/phone/PhotoRingScreen$14;-><init>(Lcom/android/phone/PhotoRingScreen;)V
 
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setOnEditorActionListener(Landroid/widget/TextView$OnEditorActionListener;)V
+    invoke-virtual {v0, v1}, Landroid/widget/AutoCompleteTextView;->setOnEditorActionListener(Landroid/widget/TextView$OnEditorActionListener;)V
 
     iget-object v0, p0, Lcom/android/phone/PhotoRingScreen;->mNumberText:Landroid/widget/AutoCompleteTextView;
 
@@ -1711,11 +1711,11 @@
 
     invoke-direct {v1, p0}, Lcom/android/phone/PhotoRingScreen$15;-><init>(Lcom/android/phone/PhotoRingScreen;)V
 
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->addTextChangedListener(Landroid/text/TextWatcher;)V
+    invoke-virtual {v0, v1}, Landroid/widget/AutoCompleteTextView;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
     const-string v0, "input_method"
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Lcom/android/phone/PhotoRingScreen;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -1733,7 +1733,7 @@
 
     invoke-direct {v1, p0, v2, v3}, Lcom/android/phone/PhotoringUtil$PhraseTextWatcher;-><init>(Landroid/content/Context;Landroid/widget/EditText;Landroid/widget/TextView;)V
 
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->addTextChangedListener(Landroid/text/TextWatcher;)V
+    invoke-virtual {v0, v1}, Landroid/widget/AutoCompleteTextView;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
     iget-object v0, p0, Lcom/android/phone/PhotoRingScreen;->mRecipientsText:Landroid/widget/AutoCompleteTextView;
 
@@ -1751,17 +1751,17 @@
 
     iget-object v1, p0, Lcom/android/phone/PhotoRingScreen;->mRecipientsText:Landroid/widget/AutoCompleteTextView;
 
-    invoke-virtual {v1, v0}, Landroid/widget/TextView;->setFilters([Landroid/text/InputFilter;)V
+    invoke-virtual {v1, v0}, Landroid/widget/AutoCompleteTextView;->setFilters([Landroid/text/InputFilter;)V
 
     iget-object v0, p0, Lcom/android/phone/PhotoRingScreen;->mRecipientsText:Landroid/widget/AutoCompleteTextView;
 
     const-string v1, "disableEmoticonInput=true"
 
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setPrivateImeOptions(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Landroid/widget/AutoCompleteTextView;->setPrivateImeOptions(Ljava/lang/String;)V
 
     const v0, 0x7f0a0113
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/phone/PhotoRingScreen;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -1775,12 +1775,12 @@
 
     iget-object v0, p0, Lcom/android/phone/PhotoRingScreen;->mContactButton:Landroid/widget/Button;
 
-    invoke-virtual {v0, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v0, p0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     :cond_2
     const v0, 0x7f0a01b5
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/phone/PhotoRingScreen;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -1794,12 +1794,12 @@
 
     iget-object v0, p0, Lcom/android/phone/PhotoRingScreen;->mBTN_MessageList:Landroid/widget/Button;
 
-    invoke-virtual {v0, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v0, p0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     :cond_3
     const v0, 0x7f0a01b7
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/phone/PhotoRingScreen;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -1813,7 +1813,7 @@
 
     iget-object v0, p0, Lcom/android/phone/PhotoRingScreen;->mBTN_Send:Landroid/widget/Button;
 
-    invoke-virtual {v0, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v0, p0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     :cond_4
     iget v0, p0, Lcom/android/phone/PhotoRingScreen;->mContentFrom:I
@@ -1828,12 +1828,12 @@
 
     iget-object v0, p0, Lcom/android/phone/PhotoRingScreen;->mBTN_Send:Landroid/widget/Button;
 
-    invoke-virtual {v0, v4}, Landroid/widget/TextView;->setEnabled(Z)V
+    invoke-virtual {v0, v4}, Landroid/widget/Button;->setEnabled(Z)V
 
     :cond_5
     const v0, 0x7f0a01b6
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/phone/PhotoRingScreen;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -1847,14 +1847,14 @@
 
     iget-object v0, p0, Lcom/android/phone/PhotoRingScreen;->mBTN_MediaEdit:Landroid/widget/Button;
 
-    invoke-virtual {v0, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v0, p0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     :cond_6
     invoke-direct {p0}, Lcom/android/phone/PhotoRingScreen;->setTempGUI()V
 
     invoke-virtual {p0}, Lcom/android/phone/PhotoRingScreen;->loadPhotoNameInfo()V
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/PhotoRingScreen;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -1892,7 +1892,7 @@
 
     const/16 v1, 0x9b
 
-    invoke-virtual {p0, v0, v1}, Landroid/app/Activity;->startActivityForResult(Landroid/content/Intent;I)V
+    invoke-virtual {p0, v0, v1}, Lcom/android/phone/PhotoRingScreen;->startActivityForResult(Landroid/content/Intent;I)V
 
     return-void
 .end method
@@ -1981,7 +1981,7 @@
 
     iget-object v0, p0, Lcom/android/phone/PhotoRingScreen;->mRecipientsText:Landroid/widget/AutoCompleteTextView;
 
-    invoke-virtual {v0}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
+    invoke-virtual {v0}, Landroid/widget/AutoCompleteTextView;->getText()Landroid/text/Editable;
 
     move-result-object v0
 
@@ -2044,7 +2044,7 @@
 
     if-eqz v0, :cond_3
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/PhotoRingScreen;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -2093,12 +2093,12 @@
 
     :cond_0
     :goto_2
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/PhotoRingScreen;->startActivity(Landroid/content/Intent;)V
 
     :goto_3
     const-string v0, "input_method"
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Lcom/android/phone/PhotoRingScreen;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -2114,7 +2114,7 @@
 
     iget-object v1, p0, Lcom/android/phone/PhotoRingScreen;->mRecipientsText:Landroid/widget/AutoCompleteTextView;
 
-    invoke-virtual {v1}, Landroid/view/View;->getApplicationWindowToken()Landroid/os/IBinder;
+    invoke-virtual {v1}, Landroid/widget/AutoCompleteTextView;->getApplicationWindowToken()Landroid/os/IBinder;
 
     move-result-object v1
 
@@ -2141,7 +2141,7 @@
 
     const/4 v0, -0x1
 
-    invoke-virtual {p0, v0, v1}, Landroid/app/Activity;->setResult(ILandroid/content/Intent;)V
+    invoke-virtual {p0, v0, v1}, Lcom/android/phone/PhotoRingScreen;->setResult(ILandroid/content/Intent;)V
 
     invoke-virtual {p0}, Lcom/android/phone/PhotoRingScreen;->finish()V
 
@@ -2153,7 +2153,7 @@
     goto/16 :goto_0
 
     :cond_3
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/PhotoRingScreen;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -2191,7 +2191,7 @@
 
     const/4 v1, 0x1
 
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setEnabled(Z)V
+    invoke-virtual {v0, v1}, Landroid/widget/Button;->setEnabled(Z)V
 
     return-void
 .end method
@@ -2242,7 +2242,7 @@
     :goto_0
     iget-object v2, p0, Lcom/android/phone/PhotoRingScreen;->mRecipientsText:Landroid/widget/AutoCompleteTextView;
 
-    invoke-virtual {v2}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
+    invoke-virtual {v2}, Landroid/widget/AutoCompleteTextView;->getText()Landroid/text/Editable;
 
     move-result-object v2
 
@@ -2458,7 +2458,7 @@
 
     invoke-virtual {v3, v2, v4}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/PhotoRingScreen;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 
@@ -2542,7 +2542,7 @@
 
     const/4 v2, 0x4
 
-    invoke-virtual {v1, v2}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v1, v2}, Landroid/widget/TextView;->setVisibility(I)V
 
     iget-object v1, p0, Lcom/android/phone/PhotoRingScreen;->mVideoErrIcon:Landroid/widget/ImageView;
 
@@ -2552,7 +2552,7 @@
 
     iget-object v1, p0, Lcom/android/phone/PhotoRingScreen;->mPreparedMediaButton:Landroid/widget/ImageButton;
 
-    invoke-virtual {v1, v0}, Landroid/widget/ImageView;->setImageBitmap(Landroid/graphics/Bitmap;)V
+    invoke-virtual {v1, v0}, Landroid/widget/ImageButton;->setImageBitmap(Landroid/graphics/Bitmap;)V
 
     return-void
 .end method
@@ -2584,11 +2584,11 @@
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageBitmap(Landroid/graphics/Bitmap;)V
+    invoke-virtual {v0, v1}, Landroid/widget/ImageButton;->setImageBitmap(Landroid/graphics/Bitmap;)V
 
     iget-object v0, p0, Lcom/android/phone/PhotoRingScreen;->mPhotoringContentsText:Landroid/widget/TextView;
 
-    invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v2}, Landroid/widget/TextView;->setVisibility(I)V
 
     iget-object v0, p0, Lcom/android/phone/PhotoRingScreen;->mVideoErrIcon:Landroid/widget/ImageView;
 
@@ -2609,7 +2609,7 @@
 
     const v1, 0x7f0902c7
 
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
+    invoke-virtual {v0, v1}, Landroid/widget/Button;->setText(I)V
 
     const-string v0, "support_mcid_with_alertinfo"
 
@@ -2628,7 +2628,7 @@
     :goto_0
     iget-object v0, p0, Lcom/android/phone/PhotoRingScreen;->mBTN_MediaEdit:Landroid/widget/Button;
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/PhotoRingScreen;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -2636,11 +2636,11 @@
 
     move-result v1
 
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextColor(I)V
+    invoke-virtual {v0, v1}, Landroid/widget/Button;->setTextColor(I)V
 
     iget-object v0, p0, Lcom/android/phone/PhotoRingScreen;->mBTN_MessageList:Landroid/widget/Button;
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/PhotoRingScreen;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -2648,11 +2648,11 @@
 
     move-result v1
 
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextColor(I)V
+    invoke-virtual {v0, v1}, Landroid/widget/Button;->setTextColor(I)V
 
     iget-object v0, p0, Lcom/android/phone/PhotoRingScreen;->mRecipientsText:Landroid/widget/AutoCompleteTextView;
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/PhotoRingScreen;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -2662,11 +2662,11 @@
 
     move-result v1
 
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setHintTextColor(I)V
+    invoke-virtual {v0, v1}, Landroid/widget/AutoCompleteTextView;->setHintTextColor(I)V
 
     iget-object v0, p0, Lcom/android/phone/PhotoRingScreen;->mNumberText:Landroid/widget/AutoCompleteTextView;
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/PhotoRingScreen;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -2676,11 +2676,11 @@
 
     move-result v1
 
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setHintTextColor(I)V
+    invoke-virtual {v0, v1}, Landroid/widget/AutoCompleteTextView;->setHintTextColor(I)V
 
     iget-object v0, p0, Lcom/android/phone/PhotoRingScreen;->mRecipientsText:Landroid/widget/AutoCompleteTextView;
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/PhotoRingScreen;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -2690,11 +2690,11 @@
 
     move-result v1
 
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextColor(I)V
+    invoke-virtual {v0, v1}, Landroid/widget/AutoCompleteTextView;->setTextColor(I)V
 
     iget-object v0, p0, Lcom/android/phone/PhotoRingScreen;->mNumberText:Landroid/widget/AutoCompleteTextView;
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/PhotoRingScreen;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -2704,7 +2704,7 @@
 
     move-result v1
 
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextColor(I)V
+    invoke-virtual {v0, v1}, Landroid/widget/AutoCompleteTextView;->setTextColor(I)V
 
     return-void
 
@@ -2735,7 +2735,7 @@
 
     iget-object v0, p0, Lcom/android/phone/PhotoRingScreen;->mMenuDialog:Landroid/app/AlertDialog;
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->show()V
+    invoke-virtual {v0}, Landroid/app/AlertDialog;->show()V
 
     return-void
 .end method
@@ -2775,7 +2775,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Landroid/app/Dialog;->show()V
+    invoke-virtual {v1}, Landroid/app/AlertDialog;->show()V
 
     return-void
 
@@ -2822,7 +2822,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Landroid/app/Dialog;->show()V
+    invoke-virtual {v1}, Landroid/app/AlertDialog;->show()V
 
     return-void
 
@@ -2865,7 +2865,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Landroid/app/Dialog;->show()V
+    invoke-virtual {v1}, Landroid/app/AlertDialog;->show()V
 
     return-void
 .end method
@@ -2881,7 +2881,7 @@
 
     const/4 v1, 0x1
 
-    invoke-virtual {p0, v0, v1}, Landroid/app/Activity;->startActivityForResult(Landroid/content/Intent;I)V
+    invoke-virtual {p0, v0, v1}, Lcom/android/phone/PhotoRingScreen;->startActivityForResult(Landroid/content/Intent;I)V
 
     return-void
 .end method
@@ -2961,7 +2961,7 @@
 
     move-result-object v1
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getBaseContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/PhotoRingScreen;->getBaseContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -3018,11 +3018,11 @@
 
     iget-object v1, p0, Lcom/android/phone/PhotoRingScreen;->mNumberText:Landroid/widget/AutoCompleteTextView;
 
-    invoke-virtual {v1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {v1, v0}, Landroid/widget/AutoCompleteTextView;->setText(Ljava/lang/CharSequence;)V
 
     iget-object v0, p0, Lcom/android/phone/PhotoRingScreen;->mNumberText:Landroid/widget/AutoCompleteTextView;
 
-    invoke-virtual {v0, v7}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v7}, Landroid/widget/AutoCompleteTextView;->setVisibility(I)V
 
     :goto_1
     return-void
@@ -3039,7 +3039,7 @@
 
     iget-object v1, p0, Lcom/android/phone/PhotoRingScreen;->mNumber:Ljava/lang/String;
 
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {v0, v1}, Landroid/widget/AutoCompleteTextView;->setText(Ljava/lang/CharSequence;)V
 
     iput-object v5, p0, Lcom/android/phone/PhotoRingScreen;->contactName:Ljava/lang/String;
 
@@ -3230,7 +3230,7 @@
     :cond_3
     iget-object v0, p0, Lcom/android/phone/PhotoRingScreen;->mRecipientsText:Landroid/widget/AutoCompleteTextView;
 
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {v0, v1}, Landroid/widget/AutoCompleteTextView;->setText(Ljava/lang/CharSequence;)V
 
     if-eqz v1, :cond_0
 
@@ -3238,11 +3238,11 @@
 
     iget-object v1, p0, Lcom/android/phone/PhotoRingScreen;->mRecipientsText:Landroid/widget/AutoCompleteTextView;
 
-    invoke-virtual {v1}, Landroid/widget/TextView;->length()I
+    invoke-virtual {v1}, Landroid/widget/AutoCompleteTextView;->length()I
 
     move-result v1
 
-    invoke-virtual {v0, v1}, Landroid/widget/EditText;->setSelection(I)V
+    invoke-virtual {v0, v1}, Landroid/widget/AutoCompleteTextView;->setSelection(I)V
 
     goto/16 :goto_0
 
@@ -3259,7 +3259,7 @@
 
     if-eqz v0, :cond_4
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/PhotoRingScreen;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -3456,7 +3456,7 @@
     const/16 v1, 0x9d
 
     :try_start_0
-    invoke-virtual {p0, v0, v1}, Landroid/app/Activity;->startActivityForResult(Landroid/content/Intent;I)V
+    invoke-virtual {p0, v0, v1}, Lcom/android/phone/PhotoRingScreen;->startActivityForResult(Landroid/content/Intent;I)V
     :try_end_0
     .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -3467,7 +3467,7 @@
 
     const v1, 0x7f090929
 
-    invoke-virtual {p0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v1}, Lcom/android/phone/PhotoRingScreen;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -3558,7 +3558,7 @@
     const/16 v0, 0x98
 
     :try_start_1
-    invoke-virtual {p0, v1, v0}, Landroid/app/Activity;->startActivityForResult(Landroid/content/Intent;I)V
+    invoke-virtual {p0, v1, v0}, Lcom/android/phone/PhotoRingScreen;->startActivityForResult(Landroid/content/Intent;I)V
     :try_end_1
     .catch Landroid/content/ActivityNotFoundException; {:try_start_1 .. :try_end_1} :catch_1
 
@@ -3569,7 +3569,7 @@
 
     const v0, 0x7f090929
 
-    invoke-virtual {p0, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lcom/android/phone/PhotoRingScreen;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -3630,13 +3630,13 @@
 
     const/4 v1, 0x4
 
-    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setVisibility(I)V
 
     iget-object v0, p0, Lcom/android/phone/PhotoRingScreen;->mVideoErrIcon:Landroid/widget/ImageView;
 
     invoke-virtual {v0, v4}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/PhotoRingScreen;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -4024,7 +4024,7 @@
 
     iget-object v1, p0, Lcom/android/phone/PhotoRingScreen;->mNumberText:Landroid/widget/AutoCompleteTextView;
 
-    invoke-virtual {v1}, Landroid/view/View;->getApplicationWindowToken()Landroid/os/IBinder;
+    invoke-virtual {v1}, Landroid/widget/AutoCompleteTextView;->getApplicationWindowToken()Landroid/os/IBinder;
 
     move-result-object v1
 
@@ -4034,7 +4034,7 @@
 
     iget-object v1, p0, Lcom/android/phone/PhotoRingScreen;->mRecipientsText:Landroid/widget/AutoCompleteTextView;
 
-    invoke-virtual {v1}, Landroid/view/View;->getApplicationWindowToken()Landroid/os/IBinder;
+    invoke-virtual {v1}, Landroid/widget/AutoCompleteTextView;->getApplicationWindowToken()Landroid/os/IBinder;
 
     move-result-object v1
 
@@ -4114,7 +4114,7 @@
     :sswitch_1
     iget-object v0, p0, Lcom/android/phone/PhotoRingScreen;->mNumberText:Landroid/widget/AutoCompleteTextView;
 
-    invoke-virtual {v0}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
+    invoke-virtual {v0}, Landroid/widget/AutoCompleteTextView;->getText()Landroid/text/Editable;
 
     move-result-object v0
 
@@ -4153,7 +4153,7 @@
 
     iget-object v0, p0, Lcom/android/phone/PhotoRingScreen;->mNumberText:Landroid/widget/AutoCompleteTextView;
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/PhotoRingScreen;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -4163,11 +4163,11 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setError(Ljava/lang/CharSequence;)V
+    invoke-virtual {v0, v1}, Landroid/widget/AutoCompleteTextView;->setError(Ljava/lang/CharSequence;)V
 
     iget-object v0, p0, Lcom/android/phone/PhotoRingScreen;->mNumberText:Landroid/widget/AutoCompleteTextView;
 
-    invoke-virtual {v0}, Landroid/view/View;->requestFocus()Z
+    invoke-virtual {v0}, Landroid/widget/AutoCompleteTextView;->requestFocus()Z
 
     iput-boolean v3, p0, Lcom/android/phone/PhotoRingScreen;->bEmptyNumErr:Z
 
@@ -4207,7 +4207,7 @@
 
     iget-object v0, p0, Lcom/android/phone/PhotoRingScreen;->mRecipientsText:Landroid/widget/AutoCompleteTextView;
 
-    invoke-virtual {v0}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
+    invoke-virtual {v0}, Landroid/widget/AutoCompleteTextView;->getText()Landroid/text/Editable;
 
     move-result-object v0
 
@@ -4215,7 +4215,7 @@
 
     iget-object v0, p0, Lcom/android/phone/PhotoRingScreen;->mRecipientsText:Landroid/widget/AutoCompleteTextView;
 
-    invoke-virtual {v0}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
+    invoke-virtual {v0}, Landroid/widget/AutoCompleteTextView;->getText()Landroid/text/Editable;
 
     move-result-object v0
 
@@ -4255,7 +4255,7 @@
 
     if-nez v0, :cond_7
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/PhotoRingScreen;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -4272,7 +4272,7 @@
 
     if-eqz v0, :cond_b
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/PhotoRingScreen;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -4307,7 +4307,7 @@
 
     if-nez v2, :cond_9
 
-    invoke-virtual {v0, v6}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v6}, Landroid/widget/TextView;->setVisibility(I)V
 
     :goto_2
     const v0, 0x7f0a0190
@@ -4322,7 +4322,7 @@
 
     iget-object v0, p0, Lcom/android/phone/PhotoRingScreen;->mCB:Landroid/widget/CheckBox;
 
-    invoke-virtual {v0, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v0, p0}, Landroid/widget/CheckBox;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
@@ -4356,7 +4356,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->show()V
+    invoke-virtual {v0}, Landroid/app/AlertDialog;->show()V
 
     goto/16 :goto_1
 
@@ -4369,7 +4369,7 @@
 
     if-eqz v2, :cond_a
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/PhotoRingScreen;->getResources()Landroid/content/res/Resources;
 
     move-result-object v2
 
@@ -4384,7 +4384,7 @@
     goto :goto_2
 
     :cond_a
-    invoke-virtual {v0, v6}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v6}, Landroid/widget/TextView;->setVisibility(I)V
 
     goto :goto_2
 
@@ -4443,7 +4443,7 @@
 
     iget-object v0, p0, Lcom/android/phone/PhotoRingScreen;->mRecipientsText:Landroid/widget/AutoCompleteTextView;
 
-    invoke-virtual {v0}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
+    invoke-virtual {v0}, Landroid/widget/AutoCompleteTextView;->getText()Landroid/text/Editable;
 
     move-result-object v0
 
@@ -4530,7 +4530,7 @@
     invoke-virtual {v0, v1, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
     :try_start_0
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/PhotoRingScreen;->startActivity(Landroid/content/Intent;)V
     :try_end_0
     .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -4642,7 +4642,7 @@
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
     :try_start_0
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/PhotoRingScreen;->startActivity(Landroid/content/Intent;)V
     :try_end_0
     .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -4764,7 +4764,7 @@
     const/16 v1, 0x98
 
     :try_start_1
-    invoke-virtual {p0, v0, v1}, Landroid/app/Activity;->startActivityForResult(Landroid/content/Intent;I)V
+    invoke-virtual {p0, v0, v1}, Lcom/android/phone/PhotoRingScreen;->startActivityForResult(Landroid/content/Intent;I)V
     :try_end_1
     .catch Landroid/content/ActivityNotFoundException; {:try_start_1 .. :try_end_1} :catch_1
 
@@ -4775,7 +4775,7 @@
 
     const v1, 0x7f090929
 
-    invoke-virtual {p0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v1}, Lcom/android/phone/PhotoRingScreen;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -4823,11 +4823,11 @@
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageBitmap(Landroid/graphics/Bitmap;)V
+    invoke-virtual {v0, v1}, Landroid/widget/ImageButton;->setImageBitmap(Landroid/graphics/Bitmap;)V
 
     iget-object v0, p0, Lcom/android/phone/PhotoRingScreen;->mPhotoringContentsText:Landroid/widget/TextView;
 
-    invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v2}, Landroid/widget/TextView;->setVisibility(I)V
 
     iget-object v0, p0, Lcom/android/phone/PhotoRingScreen;->mVideoErrIcon:Landroid/widget/ImageView;
 
@@ -4863,18 +4863,18 @@
 
     const v7, 0x7f090a7b
 
-    invoke-virtual {p0, v7}, Landroid/app/Activity;->setTitle(I)V
+    invoke-virtual {p0, v7}, Lcom/android/phone/PhotoRingScreen;->setTitle(I)V
 
     :goto_0
     const-string v7, "onCreate"
 
     invoke-direct {p0, v7}, Lcom/android/phone/PhotoRingScreen;->log(Ljava/lang/String;)V
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/phone/PhotoRingScreen;->getIntent()Landroid/content/Intent;
 
     move-result-object v4
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getActionBar()Landroid/app/ActionBar;
+    invoke-virtual {p0}, Lcom/android/phone/PhotoRingScreen;->getActionBar()Landroid/app/ActionBar;
 
     move-result-object v0
 
@@ -4897,7 +4897,7 @@
 
     iget-object v7, p0, Lcom/android/phone/PhotoRingScreen;->mReceiver:Landroid/content/BroadcastReceiver;
 
-    invoke-virtual {p0, v7, v5}, Landroid/content/ContextWrapper;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
+    invoke-virtual {p0, v7, v5}, Lcom/android/phone/PhotoRingScreen;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
     invoke-static {}, Lcom/android/phone/PhotoRingMgr;->getInstance()Lcom/android/phone/PhotoRingMgr;
 
@@ -4940,7 +4940,7 @@
     :cond_2
     const v7, 0x7f0907fc
 
-    invoke-virtual {p0, v7}, Landroid/app/Activity;->setTitle(I)V
+    invoke-virtual {p0, v7}, Lcom/android/phone/PhotoRingScreen;->setTitle(I)V
 
     goto :goto_0
 
@@ -4991,7 +4991,7 @@
 
     const/4 v8, 0x1
 
-    invoke-virtual {v7, v1, v8}, Landroid/content/ContextWrapper;->openFileOutput(Ljava/lang/String;I)Ljava/io/FileOutputStream;
+    invoke-virtual {v7, v1, v8}, Lcom/android/phone/PhoneGlobals;->openFileOutput(Ljava/lang/String;I)Ljava/io/FileOutputStream;
 
     move-result-object v3
 
@@ -5117,10 +5117,10 @@
 
     move-result-object v8
 
-    invoke-virtual {v7, v8}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {v7, v8}, Landroid/widget/AutoCompleteTextView;->setText(Ljava/lang/CharSequence;)V
 
     :cond_7
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/PhotoRingScreen;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v7
 
@@ -5140,7 +5140,7 @@
 
     const/16 v7, 0x9c
 
-    invoke-virtual {p0, v6, v7}, Landroid/app/Activity;->startActivityForResult(Landroid/content/Intent;I)V
+    invoke-virtual {p0, v6, v7}, Lcom/android/phone/PhotoRingScreen;->startActivityForResult(Landroid/content/Intent;I)V
 
     goto/16 :goto_1
 
@@ -5249,7 +5249,7 @@
 
     iget-object v0, p0, Lcom/android/phone/PhotoRingScreen;->mReceiver:Landroid/content/BroadcastReceiver;
 
-    invoke-virtual {p0, v0}, Landroid/content/ContextWrapper;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/PhotoRingScreen;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
     iput-object v2, p0, Lcom/android/phone/PhotoRingScreen;->mReceiver:Landroid/content/BroadcastReceiver;
 
@@ -5291,7 +5291,7 @@
 
     iget-object v1, p0, Lcom/android/phone/PhotoRingScreen;->mRecipientsText:Landroid/widget/AutoCompleteTextView;
 
-    invoke-virtual {v1}, Landroid/view/View;->getWindowToken()Landroid/os/IBinder;
+    invoke-virtual {v1}, Landroid/widget/AutoCompleteTextView;->getWindowToken()Landroid/os/IBinder;
 
     move-result-object v1
 
@@ -5345,23 +5345,23 @@
 
     const/4 v1, 0x1
 
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setInputType(I)V
+    invoke-virtual {v0, v1}, Landroid/widget/AutoCompleteTextView;->setInputType(I)V
 
     iget-object v0, p0, Lcom/android/phone/PhotoRingScreen;->mRecipientsText:Landroid/widget/AutoCompleteTextView;
 
     const/4 v1, 0x6
 
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setImeOptions(I)V
+    invoke-virtual {v0, v1}, Landroid/widget/AutoCompleteTextView;->setImeOptions(I)V
 
     iget-object v0, p0, Lcom/android/phone/PhotoRingScreen;->mRecipientsText:Landroid/widget/AutoCompleteTextView;
 
-    invoke-virtual {v0, v2}, Landroid/widget/TextView;->setHorizontallyScrolling(Z)V
+    invoke-virtual {v0, v2}, Landroid/widget/AutoCompleteTextView;->setHorizontallyScrolling(Z)V
 
     iget-object v0, p0, Lcom/android/phone/PhotoRingScreen;->mRecipientsText:Landroid/widget/AutoCompleteTextView;
 
     const v1, 0x7fffffff
 
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setMaxLines(I)V
+    invoke-virtual {v0, v1}, Landroid/widget/AutoCompleteTextView;->setMaxLines(I)V
 
     :cond_1
     iput-boolean v2, p0, Lcom/android/phone/PhotoRingScreen;->bisExcuted:Z

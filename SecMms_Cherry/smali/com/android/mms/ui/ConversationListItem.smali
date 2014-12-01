@@ -108,7 +108,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Landroid/widget/RelativeLayout;-><init>(Landroid/content/Context;)V
 
@@ -143,8 +142,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/widget/RelativeLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -185,7 +182,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/ui/ConversationListItem;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ConversationListItem;
 
     iget-object v0, p0, Lcom/android/mms/ui/ConversationListItem;->mContext:Landroid/content/Context;
 
@@ -194,7 +190,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/ui/ConversationListItem;)Lcom/android/mms/data/Conversation;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ConversationListItem;
 
     iget-object v0, p0, Lcom/android/mms/ui/ConversationListItem;->mConversation:Lcom/android/mms/data/Conversation;
 
@@ -203,7 +198,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/ui/ConversationListItem;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ConversationListItem;
 
     invoke-direct {p0}, Lcom/android/mms/ui/ConversationListItem;->updateFromView()V
 
@@ -212,7 +206,6 @@
 
 .method static synthetic access$300(Lcom/android/mms/ui/ConversationListItem;)J
     .locals 2
-    .param p0    # Lcom/android/mms/ui/ConversationListItem;
 
     iget-wide v0, p0, Lcom/android/mms/ui/ConversationListItem;->mHoverEnterTime:J
 
@@ -221,8 +214,6 @@
 
 .method static synthetic access$302(Lcom/android/mms/ui/ConversationListItem;J)J
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ConversationListItem;
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/android/mms/ui/ConversationListItem;->mHoverEnterTime:J
 
@@ -231,7 +222,6 @@
 
 .method static synthetic access$400(Lcom/android/mms/ui/ConversationListItem;)Landroid/widget/HoverPopupWindow;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ConversationListItem;
 
     iget-object v0, p0, Lcom/android/mms/ui/ConversationListItem;->subjectViewHpw:Landroid/widget/HoverPopupWindow;
 
@@ -240,8 +230,6 @@
 
 .method static synthetic access$402(Lcom/android/mms/ui/ConversationListItem;Landroid/widget/HoverPopupWindow;)Landroid/widget/HoverPopupWindow;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ConversationListItem;
-    .param p1    # Landroid/widget/HoverPopupWindow;
 
     iput-object p1, p0, Lcom/android/mms/ui/ConversationListItem;->subjectViewHpw:Landroid/widget/HoverPopupWindow;
 
@@ -250,7 +238,6 @@
 
 .method static synthetic access$500(Lcom/android/mms/ui/ConversationListItem;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ConversationListItem;
 
     iget-object v0, p0, Lcom/android/mms/ui/ConversationListItem;->mSubjectView:Landroid/widget/TextView;
 
@@ -259,9 +246,6 @@
 
 .method static synthetic access$600(Lcom/android/mms/ui/ConversationListItem;Landroid/widget/TextView;Ljava/lang/String;)Ljava/lang/StringBuffer;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ConversationListItem;
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Lcom/android/mms/ui/ConversationListItem;->makeHoverText(Landroid/widget/TextView;Ljava/lang/String;)Ljava/lang/StringBuffer;
 
@@ -571,8 +555,6 @@
 
 .method private makeHoverText(Landroid/widget/TextView;Ljava/lang/String;)Ljava/lang/StringBuffer;
     .locals 4
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # Ljava/lang/String;
 
     const v3, 0x7f0c00c8
 
@@ -1279,8 +1261,6 @@
 # virtual methods
 .method public IsMMS(Landroid/content/Context;J)Z
     .locals 12
-    .param p1    # Landroid/content/Context;
-    .param p2    # J
 
     const/4 v11, 0x0
 
@@ -1382,8 +1362,6 @@
 
 .method public SetHPWListenerForPenHover(Landroid/content/Context;Lcom/android/mms/data/Conversation;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/mms/data/Conversation;
 
     iget-object v0, p0, Lcom/android/mms/ui/ConversationListItem;->mSubjectView:Landroid/widget/TextView;
 
@@ -1398,9 +1376,6 @@
 
 .method public bind(Landroid/content/Context;Lcom/android/mms/data/Conversation;Z)V
     .locals 24
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/mms/data/Conversation;
-    .param p3    # Z
 
     move-object/from16 v0, p2
 
@@ -2377,7 +2352,6 @@
 
 .method public changeFontSize(I)V
     .locals 12
-    .param p1    # I
 
     iget v8, p0, Lcom/android/mms/ui/ConversationListItem;->mOldFontSize:I
 
@@ -2612,7 +2586,6 @@
 
 .method public changeFontSize7Step(I)V
     .locals 26
-    .param p1    # I
 
     move-object/from16 v0, p0
 
@@ -3295,8 +3268,6 @@
 
 .method public getbodyFromMMS(Landroid/content/Context;J)Ljava/lang/String;
     .locals 12
-    .param p1    # Landroid/content/Context;
-    .param p2    # J
 
     const/4 v10, 0x0
 
@@ -3411,8 +3382,6 @@
 
 .method public onDrag(Landroid/view/View;Landroid/view/DragEvent;)Z
     .locals 13
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/DragEvent;
 
     invoke-virtual {p2}, Landroid/view/DragEvent;->getAction()I
 
@@ -3761,7 +3730,6 @@
 
 .method public onUpdate(Lcom/android/mms/data/Contact;)V
     .locals 3
-    .param p1    # Lcom/android/mms/data/Contact;
 
     move-object v0, p1
 
@@ -3778,7 +3746,6 @@
 
 .method public onWindowFocusChanged(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-super {p0, p1}, Landroid/widget/RelativeLayout;->onWindowFocusChanged(Z)V
 
@@ -3804,7 +3771,6 @@
 
 .method public setAvatarClickable(Z)V
     .locals 1
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/ConversationListItem;->mAvatarClickable:Z
 
@@ -3829,7 +3795,6 @@
 
 .method public setSplitMode(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/ConversationListItem;->mIsSplitMode:Z
 

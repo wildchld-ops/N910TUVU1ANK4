@@ -52,7 +52,6 @@
 
 .method public onClipboardDataPaste(Landroid/sec/clipboard/data/ClipboardData;)V
     .locals 3
-    .param p1    # Landroid/sec/clipboard/data/ClipboardData;
 
     sget-object v1, Ljava/lang/System;->out:Ljava/io/PrintStream;
 

@@ -33,7 +33,6 @@
 # virtual methods
 .method public onPersonaActive(I)V
     .locals 3
-    .param p1    # I
 
     # getter for: Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnEngineService;->DBG:Z
     invoke-static {}, Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnEngineService;->access$000()Z
@@ -73,7 +72,6 @@
 
 .method public onRemovePersona(I)V
     .locals 3
-    .param p1    # I
 
     # getter for: Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnEngineService;->DBG:Z
     invoke-static {}, Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnEngineService;->access$000()Z
@@ -113,7 +111,6 @@
 
 .method public onResetPersona(I)V
     .locals 3
-    .param p1    # I
 
     # getter for: Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnEngineService;->DBG:Z
     invoke-static {}, Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnEngineService;->access$000()Z
@@ -153,9 +150,6 @@
 
 .method public onSwitchPersona(IIZ)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     # getter for: Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnEngineService;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/android/server/enterprise/vpn/knoxvpn/KnoxVpnEngineService;->access$100()Ljava/lang/String;

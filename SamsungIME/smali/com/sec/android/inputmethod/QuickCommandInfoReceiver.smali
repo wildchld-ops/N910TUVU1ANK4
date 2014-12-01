@@ -22,7 +22,6 @@
 
 .method private sendLanguageInfo(Landroid/content/Context;)V
     .locals 27
-    .param p1    # Landroid/content/Context;
 
     const-string v23, "com.sec.android.inputmethod_preferences"
 
@@ -683,7 +682,6 @@
 
 .method private sendSwiftKeyMode(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     iget-object v2, p0, Lcom/sec/android/inputmethod/QuickCommandInfoReceiver;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -712,8 +710,6 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     invoke-static {}, Lcom/diotek/ime/framework/common/InputManagerImpl;->getInstance()Lcom/diotek/ime/framework/common/InputManager;
 

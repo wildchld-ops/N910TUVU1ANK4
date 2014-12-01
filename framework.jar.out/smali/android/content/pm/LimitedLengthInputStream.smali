@@ -12,9 +12,6 @@
 # direct methods
 .method public constructor <init>(Ljava/io/InputStream;JJ)V
     .locals 3
-    .param p1    # Ljava/io/InputStream;
-    .param p2    # J
-    .param p4    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -148,7 +145,6 @@
 
 .method public read([B)I
     .locals 2
-    .param p1    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -168,9 +164,6 @@
 
 .method public read([BII)I
     .locals 8
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

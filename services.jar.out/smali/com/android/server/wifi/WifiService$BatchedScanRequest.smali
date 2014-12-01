@@ -29,9 +29,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/wifi/WifiService;Landroid/net/wifi/BatchedScanSettings;Landroid/os/IBinder;Landroid/os/WorkSource;)V
     .locals 6
-    .param p2    # Landroid/net/wifi/BatchedScanSettings;
-    .param p3    # Landroid/os/IBinder;
-    .param p4    # Landroid/os/WorkSource;
 
     const/4 v3, 0x0
 
@@ -89,8 +86,6 @@
 
 .method public isSameApp(II)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget v0, p0, Lcom/android/server/wifi/WifiService$BatchedScanRequest;->uid:I
 

@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Landroid/webkitsec/HTML5Audio;Landroid/webkitsec/HTML5Audio$1;)V
     .locals 0
-    .param p1    # Landroid/webkitsec/HTML5Audio;
-    .param p2    # Landroid/webkitsec/HTML5Audio$1;
 
     invoke-direct {p0, p1}, Landroid/webkitsec/HTML5Audio$TimeupdateTask;-><init>(Landroid/webkitsec/HTML5Audio;)V
 

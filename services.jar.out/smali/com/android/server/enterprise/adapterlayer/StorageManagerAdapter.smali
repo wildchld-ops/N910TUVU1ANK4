@@ -28,7 +28,6 @@
 
 .method public static declared-synchronized getInstance(Landroid/content/Context;)Lcom/android/server/enterprise/adapterlayer/StorageManagerAdapter;
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     const-class v1, Lcom/android/server/enterprise/adapterlayer/StorageManagerAdapter;
 
@@ -291,7 +290,6 @@
 
 .method public getVolumeState(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     sget-object v0, Lcom/android/server/enterprise/adapterlayer/StorageManagerAdapter;->mStorageManager:Landroid/os/storage/StorageManager;
 

@@ -31,7 +31,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Lcom/samsung/android/magazinecard/IMagazineCardManager$Stub;-><init>()V
 
@@ -68,8 +67,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Lcom/android/server/wm/WindowManagerService;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/server/wm/WindowManagerService;
 
     invoke-direct {p0}, Lcom/samsung/android/magazinecard/IMagazineCardManager$Stub;-><init>()V
 
@@ -106,7 +103,6 @@
 
 .method static synthetic access$000(Lcom/android/server/magazinecard/MagazineCardManagerService;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/server/magazinecard/MagazineCardManagerService;
 
     iget-object v0, p0, Lcom/android/server/magazinecard/MagazineCardManagerService;->mContext:Landroid/content/Context;
 
@@ -115,9 +111,6 @@
 
 .method private findRecordIndex(ILandroid/content/ComponentName;I)I
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # I
 
     iget-object v3, p0, Lcom/android/server/magazinecard/MagazineCardManagerService;->mCardRecordArray:Ljava/util/ArrayList;
 
@@ -270,8 +263,6 @@
 
 .method private sendCardUpdatedNotification(ILcom/samsung/android/magazinecard/MagazineCardRecord;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Lcom/samsung/android/magazinecard/MagazineCardRecord;
 
     new-instance v0, Landroid/os/Message;
 
@@ -296,9 +287,6 @@
 # virtual methods
 .method public declared-synchronized addCard(ILandroid/content/ComponentName;Lcom/samsung/android/magazinecard/MagazineCardInfo;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # Lcom/samsung/android/magazinecard/MagazineCardInfo;
 
     monitor-enter p0
 
@@ -382,7 +370,6 @@
 
 .method public declared-synchronized getCard(I)Lcom/samsung/android/magazinecard/MagazineCardRecord;
     .locals 4
-    .param p1    # I
 
     monitor-enter p0
 
@@ -438,8 +425,6 @@
 
 .method public declared-synchronized getCardRecordIdList(IZ)[I
     .locals 8
-    .param p1    # I
-    .param p2    # Z
 
     monitor-enter p0
 
@@ -653,9 +638,6 @@
 
 .method public declared-synchronized isCardExist(ILandroid/content/ComponentName;I)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # I
 
     monitor-enter p0
 
@@ -724,8 +706,6 @@
 
 .method public declared-synchronized removeAllCard(ILandroid/content/ComponentName;)V
     .locals 7
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
 
     monitor-enter p0
 
@@ -853,9 +833,6 @@
 
 .method public declared-synchronized removeCard(ILandroid/content/ComponentName;I)V
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # I
 
     monitor-enter p0
 
@@ -931,9 +908,6 @@
 
 .method public declared-synchronized updateCard(ILandroid/content/ComponentName;Lcom/samsung/android/magazinecard/MagazineCardInfo;)V
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # Lcom/samsung/android/magazinecard/MagazineCardInfo;
 
     monitor-enter p0
 

@@ -69,7 +69,6 @@
 
 .method static synthetic access$100(Lcom/touchtype/personalizer/PersonalizerActivity;)Landroid/webkit/WebView;
     .locals 1
-    .param p0    # Lcom/touchtype/personalizer/PersonalizerActivity;
 
     iget-object v0, p0, Lcom/touchtype/personalizer/PersonalizerActivity;->webView:Landroid/webkit/WebView;
 
@@ -78,7 +77,6 @@
 
 .method static synthetic access$1000(Lcom/touchtype/personalizer/PersonalizerActivity;)Lcom/touchtype/personalizer/service/TwitterAuthenticator;
     .locals 1
-    .param p0    # Lcom/touchtype/personalizer/PersonalizerActivity;
 
     iget-object v0, p0, Lcom/touchtype/personalizer/PersonalizerActivity;->mTwitterAuthenticator:Lcom/touchtype/personalizer/service/TwitterAuthenticator;
 
@@ -87,7 +85,6 @@
 
 .method static synthetic access$200(Lcom/touchtype/personalizer/PersonalizerActivity;)Lcom/touchtype/personalizer/service/GmailAuthenticator;
     .locals 1
-    .param p0    # Lcom/touchtype/personalizer/PersonalizerActivity;
 
     iget-object v0, p0, Lcom/touchtype/personalizer/PersonalizerActivity;->mGmailAuthenticator:Lcom/touchtype/personalizer/service/GmailAuthenticator;
 
@@ -104,7 +101,6 @@
 
 .method static synthetic access$400(Lcom/touchtype/personalizer/PersonalizerActivity;)V
     .locals 0
-    .param p0    # Lcom/touchtype/personalizer/PersonalizerActivity;
 
     invoke-direct {p0}, Lcom/touchtype/personalizer/PersonalizerActivity;->finishFail()V
 
@@ -113,8 +109,6 @@
 
 .method static synthetic access$500(Lcom/touchtype/personalizer/PersonalizerActivity;Lcom/touchtype_fluency/service/util/PostParams;)V
     .locals 0
-    .param p0    # Lcom/touchtype/personalizer/PersonalizerActivity;
-    .param p1    # Lcom/touchtype_fluency/service/util/PostParams;
 
     invoke-direct {p0, p1}, Lcom/touchtype/personalizer/PersonalizerActivity;->finishSuccess(Lcom/touchtype_fluency/service/util/PostParams;)V
 
@@ -123,7 +117,6 @@
 
 .method static synthetic access$600(Lcom/touchtype/personalizer/PersonalizerActivity;)Z
     .locals 1
-    .param p0    # Lcom/touchtype/personalizer/PersonalizerActivity;
 
     iget-boolean v0, p0, Lcom/touchtype/personalizer/PersonalizerActivity;->isLoadingFinished:Z
 
@@ -132,8 +125,6 @@
 
 .method static synthetic access$602(Lcom/touchtype/personalizer/PersonalizerActivity;Z)Z
     .locals 0
-    .param p0    # Lcom/touchtype/personalizer/PersonalizerActivity;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/touchtype/personalizer/PersonalizerActivity;->isLoadingFinished:Z
 
@@ -142,7 +133,6 @@
 
 .method static synthetic access$700(Lcom/touchtype/personalizer/PersonalizerActivity;)Z
     .locals 1
-    .param p0    # Lcom/touchtype/personalizer/PersonalizerActivity;
 
     iget-boolean v0, p0, Lcom/touchtype/personalizer/PersonalizerActivity;->isRedirectedUrl:Z
 
@@ -151,8 +141,6 @@
 
 .method static synthetic access$702(Lcom/touchtype/personalizer/PersonalizerActivity;Z)Z
     .locals 0
-    .param p0    # Lcom/touchtype/personalizer/PersonalizerActivity;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/touchtype/personalizer/PersonalizerActivity;->isRedirectedUrl:Z
 
@@ -161,7 +149,6 @@
 
 .method static synthetic access$800(Lcom/touchtype/personalizer/PersonalizerActivity;)Landroid/widget/ProgressBar;
     .locals 1
-    .param p0    # Lcom/touchtype/personalizer/PersonalizerActivity;
 
     iget-object v0, p0, Lcom/touchtype/personalizer/PersonalizerActivity;->mProgressBar:Landroid/widget/ProgressBar;
 
@@ -170,7 +157,6 @@
 
 .method static synthetic access$900(Lcom/touchtype/personalizer/PersonalizerActivity;)Lcom/touchtype/personalizer/service/WeiboAuthenticator;
     .locals 1
-    .param p0    # Lcom/touchtype/personalizer/PersonalizerActivity;
 
     iget-object v0, p0, Lcom/touchtype/personalizer/PersonalizerActivity;->mWeiboAuthenticator:Lcom/touchtype/personalizer/service/WeiboAuthenticator;
 
@@ -179,8 +165,6 @@
 
 .method public static extractParameterValue(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const-string v2, ""
 
@@ -235,7 +219,6 @@
 
 .method private finishSuccess(Lcom/touchtype_fluency/service/util/PostParams;)V
     .locals 3
-    .param p1    # Lcom/touchtype_fluency/service/util/PostParams;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -260,7 +243,6 @@
 
 .method private getVerifier(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
@@ -277,7 +259,6 @@
 
 .method private start(Landroid/content/Intent;)V
     .locals 7
-    .param p1    # Landroid/content/Intent;
 
     const/4 v6, 0x0
 
@@ -367,7 +348,6 @@
 
 .method private startFacebook(Landroid/content/Intent;)V
     .locals 8
-    .param p1    # Landroid/content/Intent;
 
     invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
 
@@ -504,7 +484,6 @@
 
 .method private startGmail(Landroid/content/Intent;)V
     .locals 4
-    .param p1    # Landroid/content/Intent;
 
     const/4 v3, 0x1
 
@@ -561,7 +540,6 @@
 
 .method private startTwitter(Landroid/content/Intent;)V
     .locals 3
-    .param p1    # Landroid/content/Intent;
 
     const/4 v2, 0x1
 
@@ -606,7 +584,6 @@
 
 .method private startWeibo(Landroid/content/Intent;)V
     .locals 2
-    .param p1    # Landroid/content/Intent;
 
     iget-object v0, p0, Lcom/touchtype/personalizer/PersonalizerActivity;->webView:Landroid/webkit/WebView;
 
@@ -645,7 +622,6 @@
 # virtual methods
 .method public loadWebView(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/touchtype/personalizer/PersonalizerActivity;->webView:Landroid/webkit/WebView;
 
@@ -668,7 +644,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v2, -0x2
 

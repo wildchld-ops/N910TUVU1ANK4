@@ -28,7 +28,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/media/RemoteDisplayProviderProxy;Landroid/media/IRemoteDisplayProvider;)V
     .locals 1
-    .param p2    # Landroid/media/IRemoteDisplayProvider;
 
     iput-object p1, p0, Lcom/android/server/media/RemoteDisplayProviderProxy$Connection;->this$0:Lcom/android/server/media/RemoteDisplayProviderProxy;
 
@@ -49,8 +48,6 @@
 # virtual methods
 .method public adjustVolume(Ljava/lang/String;I)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     :try_start_0
     iget-object v1, p0, Lcom/android/server/media/RemoteDisplayProviderProxy$Connection;->mProvider:Landroid/media/IRemoteDisplayProvider;
@@ -95,7 +92,6 @@
 
 .method public connect(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     iget-object v1, p0, Lcom/android/server/media/RemoteDisplayProviderProxy$Connection;->mProvider:Landroid/media/IRemoteDisplayProvider;
@@ -121,7 +117,6 @@
 
 .method public disconnect(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     iget-object v1, p0, Lcom/android/server/media/RemoteDisplayProviderProxy$Connection;->mProvider:Landroid/media/IRemoteDisplayProvider;
@@ -167,7 +162,6 @@
 
 .method postStateChanged(Landroid/media/RemoteDisplayState;)V
     .locals 2
-    .param p1    # Landroid/media/RemoteDisplayState;
 
     iget-object v0, p0, Lcom/android/server/media/RemoteDisplayProviderProxy$Connection;->this$0:Lcom/android/server/media/RemoteDisplayProviderProxy;
 
@@ -237,7 +231,6 @@
 
 .method public setDiscoveryMode(I)V
     .locals 3
-    .param p1    # I
 
     :try_start_0
     iget-object v1, p0, Lcom/android/server/media/RemoteDisplayProviderProxy$Connection;->mProvider:Landroid/media/IRemoteDisplayProvider;
@@ -263,8 +256,6 @@
 
 .method public setVolume(Ljava/lang/String;I)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     :try_start_0
     iget-object v1, p0, Lcom/android/server/media/RemoteDisplayProviderProxy$Connection;->mProvider:Landroid/media/IRemoteDisplayProvider;

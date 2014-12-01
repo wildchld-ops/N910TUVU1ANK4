@@ -37,7 +37,6 @@
 # direct methods
 .method public constructor <init>(Landroid/renderscript/RenderScript;)V
     .locals 4
-    .param p1    # Landroid/renderscript/RenderScript;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -112,8 +111,6 @@
 
 .method private addToBuffer(ILandroid/renderscript/Matrix4f;)V
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/renderscript/Matrix4f;
 
     iget-object v1, p0, Landroid/renderscript/ProgramVertexFixedFunction$Constants;->mIOBuffer:Landroid/renderscript/FieldPacker;
 
@@ -176,7 +173,6 @@
 
 .method public setModelview(Landroid/renderscript/Matrix4f;)V
     .locals 1
-    .param p1    # Landroid/renderscript/Matrix4f;
 
     iget-object v0, p0, Landroid/renderscript/ProgramVertexFixedFunction$Constants;->mModel:Landroid/renderscript/Matrix4f;
 
@@ -191,7 +187,6 @@
 
 .method public setProjection(Landroid/renderscript/Matrix4f;)V
     .locals 1
-    .param p1    # Landroid/renderscript/Matrix4f;
 
     iget-object v0, p0, Landroid/renderscript/ProgramVertexFixedFunction$Constants;->mProjection:Landroid/renderscript/Matrix4f;
 
@@ -206,7 +201,6 @@
 
 .method public setTexture(Landroid/renderscript/Matrix4f;)V
     .locals 1
-    .param p1    # Landroid/renderscript/Matrix4f;
 
     iget-object v0, p0, Landroid/renderscript/ProgramVertexFixedFunction$Constants;->mTexture:Landroid/renderscript/Matrix4f;
 

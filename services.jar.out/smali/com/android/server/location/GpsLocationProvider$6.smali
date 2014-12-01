@@ -33,14 +33,6 @@
 # virtual methods
 .method public addCircularHardwareGeofence(IDDDIIII)Z
     .locals 1
-    .param p1    # I
-    .param p2    # D
-    .param p4    # D
-    .param p6    # D
-    .param p8    # I
-    .param p9    # I
-    .param p10    # I
-    .param p11    # I
 
     # invokes: Lcom/android/server/location/GpsLocationProvider;->native_add_geofence(IDDDIIII)Z
     invoke-static/range {p1 .. p11}, Lcom/android/server/location/GpsLocationProvider;->access$2300(IDDDIIII)Z
@@ -63,7 +55,6 @@
 
 .method public pauseHardwareGeofence(I)Z
     .locals 1
-    .param p1    # I
 
     # invokes: Lcom/android/server/location/GpsLocationProvider;->native_pause_geofence(I)Z
     invoke-static {p1}, Lcom/android/server/location/GpsLocationProvider;->access$2500(I)Z
@@ -75,7 +66,6 @@
 
 .method public removeHardwareGeofence(I)Z
     .locals 1
-    .param p1    # I
 
     # invokes: Lcom/android/server/location/GpsLocationProvider;->native_remove_geofence(I)Z
     invoke-static {p1}, Lcom/android/server/location/GpsLocationProvider;->access$2400(I)Z
@@ -87,8 +77,6 @@
 
 .method public resumeHardwareGeofence(II)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     # invokes: Lcom/android/server/location/GpsLocationProvider;->native_resume_geofence(II)Z
     invoke-static {p1, p2}, Lcom/android/server/location/GpsLocationProvider;->access$2600(II)Z

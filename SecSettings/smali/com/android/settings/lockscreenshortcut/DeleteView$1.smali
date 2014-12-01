@@ -33,7 +33,6 @@
 # virtual methods
 .method public onAnimationCancel(Landroid/animation/Animator;)V
     .locals 2
-    .param p1    # Landroid/animation/Animator;
 
     const/4 v1, 0x0
 
@@ -52,7 +51,6 @@
 
 .method public onAnimationEnd(Landroid/animation/Animator;)V
     .locals 1
-    .param p1    # Landroid/animation/Animator;
 
     iget-object v0, p0, Lcom/android/settings/lockscreenshortcut/DeleteView$1;->this$0:Lcom/android/settings/lockscreenshortcut/DeleteView;
 
@@ -73,14 +71,12 @@
 
 .method public onAnimationRepeat(Landroid/animation/Animator;)V
     .locals 0
-    .param p1    # Landroid/animation/Animator;
 
     return-void
 .end method
 
 .method public onAnimationStart(Landroid/animation/Animator;)V
     .locals 2
-    .param p1    # Landroid/animation/Animator;
 
     iget-object v0, p0, Lcom/android/settings/lockscreenshortcut/DeleteView$1;->this$0:Lcom/android/settings/lockscreenshortcut/DeleteView;
 

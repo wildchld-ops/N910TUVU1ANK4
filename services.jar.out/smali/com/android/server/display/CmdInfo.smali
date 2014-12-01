@@ -50,8 +50,6 @@
 
 .method public constructor <init>(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -82,7 +80,6 @@
 
 .method private constructor <init>(Landroid/os/Parcel;)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -97,8 +94,6 @@
 
 .method synthetic constructor <init>(Landroid/os/Parcel;Lcom/android/server/display/CmdInfo$1;)V
     .locals 0
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # Lcom/android/server/display/CmdInfo$1;
 
     invoke-direct {p0, p1}, Lcom/android/server/display/CmdInfo;-><init>(Landroid/os/Parcel;)V
 
@@ -107,7 +102,6 @@
 
 .method public constructor <init>(Lcom/android/server/display/CmdInfo$CmdType;)V
     .locals 1
-    .param p1    # Lcom/android/server/display/CmdInfo$CmdType;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -126,8 +120,6 @@
 
 .method public constructor <init>(Lcom/android/server/display/CmdInfo$CmdType;I)V
     .locals 1
-    .param p1    # Lcom/android/server/display/CmdInfo$CmdType;
-    .param p2    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -170,7 +162,6 @@
 
 .method public readFromParcel(Landroid/os/Parcel;)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
 
     :try_start_0
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
@@ -219,8 +210,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/server/display/CmdInfo;->cmdType:Lcom/android/server/display/CmdInfo$CmdType;
 

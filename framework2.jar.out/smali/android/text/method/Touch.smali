@@ -22,8 +22,6 @@
 
 .method public static getInitialScrollX(Landroid/widget/TextView;Landroid/text/Spannable;)I
     .locals 4
-    .param p0    # Landroid/widget/TextView;
-    .param p1    # Landroid/text/Spannable;
 
     const/4 v3, 0x0
 
@@ -58,8 +56,6 @@
 
 .method public static getInitialScrollY(Landroid/widget/TextView;Landroid/text/Spannable;)I
     .locals 4
-    .param p0    # Landroid/widget/TextView;
-    .param p1    # Landroid/text/Spannable;
 
     const/4 v3, 0x0
 
@@ -94,9 +90,6 @@
 
 .method public static onTouchEvent(Landroid/widget/TextView;Landroid/text/Spannable;Landroid/view/MotionEvent;)Z
     .locals 22
-    .param p0    # Landroid/widget/TextView;
-    .param p1    # Landroid/text/Spannable;
-    .param p2    # Landroid/view/MotionEvent;
 
     invoke-virtual/range {p2 .. p2}, Landroid/view/MotionEvent;->getActionMasked()I
 
@@ -677,10 +670,6 @@
 
 .method public static scrollTo(Landroid/widget/TextView;Landroid/text/Layout;II)V
     .locals 15
-    .param p0    # Landroid/widget/TextView;
-    .param p1    # Landroid/text/Layout;
-    .param p2    # I
-    .param p3    # I
 
     invoke-virtual {p0}, Landroid/widget/TextView;->getTotalPaddingLeft()I
 

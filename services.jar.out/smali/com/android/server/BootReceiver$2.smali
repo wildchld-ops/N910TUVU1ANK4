@@ -29,8 +29,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/BootReceiver;Ljava/lang/String;ILandroid/os/DropBoxManager;Landroid/content/SharedPreferences;Ljava/lang/String;Landroid/content/Context;)V
     .locals 0
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     iput-object p1, p0, Lcom/android/server/BootReceiver$2;->this$0:Lcom/android/server/BootReceiver;
 
@@ -51,8 +49,6 @@
 # virtual methods
 .method public onEvent(ILjava/lang/String;)V
     .locals 8
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     :try_start_0
     new-instance v0, Ljava/io/File;

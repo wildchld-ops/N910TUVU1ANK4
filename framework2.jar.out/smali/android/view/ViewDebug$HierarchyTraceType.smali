@@ -192,7 +192,6 @@
 
 .method public static valueOf(Ljava/lang/String;)Landroid/view/ViewDebug$HierarchyTraceType;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-class v0, Landroid/view/ViewDebug$HierarchyTraceType;
 

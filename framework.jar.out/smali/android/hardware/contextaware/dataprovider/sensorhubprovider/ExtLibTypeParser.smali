@@ -14,8 +14,6 @@
 
 .method private parseForActivityTracker([BI)I
     .locals 11
-    .param p1    # [B
-    .param p2    # I
 
     const/4 v8, -0x1
 
@@ -138,8 +136,6 @@
 
 .method private parseForPedometer([BI)I
     .locals 8
-    .param p1    # [B
-    .param p2    # I
 
     move v5, p2
 
@@ -214,8 +210,6 @@
 
 .method private parseForPositioning([BI)I
     .locals 8
-    .param p1    # [B
-    .param p2    # I
 
     move v5, p2
 
@@ -290,8 +284,6 @@
 
 .method private parseForSleepMonitorTracker([BI)I
     .locals 11
-    .param p1    # [B
-    .param p2    # I
 
     const/4 v8, -0x1
 
@@ -416,8 +408,6 @@
 # virtual methods
 .method public final parse([BI)I
     .locals 7
-    .param p1    # [B
-    .param p2    # I
 
     move v4, p2
 

@@ -40,7 +40,6 @@
 # virtual methods
 .method public createFromParcel(Landroid/os/Parcel;)Lcom/samsung/dmc/ux/db/ProcessInfo;
     .locals 3
-    .param p1    # Landroid/os/Parcel;
 
     new-instance v0, Lcom/samsung/dmc/ux/db/ProcessInfo;
 
@@ -119,7 +118,6 @@
 
 .method public newArray(I)[Lcom/samsung/dmc/ux/db/ProcessInfo;
     .locals 1
-    .param p1    # I
 
     new-array v0, p1, [Lcom/samsung/dmc/ux/db/ProcessInfo;
 

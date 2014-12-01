@@ -26,7 +26,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/recent/cardholder/RecentsPanelView;Landroid/view/View;)V
     .locals 0
-    .param p2    # Landroid/view/View;
 
     iput-object p1, p0, Lcom/android/systemui/recent/cardholder/RecentsPanelView$OnLongClickDelegate;->this$0:Lcom/android/systemui/recent/cardholder/RecentsPanelView;
 
@@ -41,7 +40,6 @@
 # virtual methods
 .method public onLongClick(Landroid/view/View;)Z
     .locals 1
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Lcom/android/systemui/recent/cardholder/RecentsPanelView$OnLongClickDelegate;->mOtherView:Landroid/view/View;
 

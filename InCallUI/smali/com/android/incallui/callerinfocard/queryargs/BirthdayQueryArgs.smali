@@ -6,8 +6,6 @@
 # direct methods
 .method public constructor <init>(ILjava/lang/Object;)V
     .locals 8
-    .param p1    # I
-    .param p2    # Ljava/lang/Object;
 
     const/4 v7, 0x3
 

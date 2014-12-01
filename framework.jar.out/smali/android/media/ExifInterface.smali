@@ -128,7 +128,6 @@
 
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -163,8 +162,6 @@
 
 .method private static convertRationalLatLonToFloat(Ljava/lang/String;Ljava/lang/String;)F
     .locals 16
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     const-string v12, ","
@@ -494,7 +491,6 @@
 # virtual methods
 .method public getAltitude(D)D
     .locals 8
-    .param p1    # D
 
     const/4 v4, 0x1
 
@@ -540,7 +536,6 @@
 
 .method public getAttribute(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/media/ExifInterface;->mAttributes:Ljava/util/HashMap;
 
@@ -555,8 +550,6 @@
 
 .method public getAttributeDouble(Ljava/lang/String;D)D
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # D
 
     iget-object v7, p0, Landroid/media/ExifInterface;->mAttributes:Ljava/util/HashMap;
 
@@ -624,8 +617,6 @@
 
 .method public getAttributeInt(Ljava/lang/String;I)I
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     iget-object v2, p0, Landroid/media/ExifInterface;->mAttributes:Ljava/util/HashMap;
 
@@ -800,7 +791,6 @@
 
 .method public getLatLong([F)Z
     .locals 8
-    .param p1    # [F
 
     const/4 v4, 0x1
 
@@ -1126,8 +1116,6 @@
 
 .method public setAttribute(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/media/ExifInterface;->mAttributes:Ljava/util/HashMap;
 

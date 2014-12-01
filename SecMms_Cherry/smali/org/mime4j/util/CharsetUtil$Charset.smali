@@ -28,9 +28,6 @@
 # direct methods
 .method private constructor <init>(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # [Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -53,10 +50,6 @@
 
 .method synthetic constructor <init>(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Lorg/mime4j/util/CharsetUtil$1;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # [Ljava/lang/String;
-    .param p4    # Lorg/mime4j/util/CharsetUtil$1;
 
     invoke-direct {p0, p1, p2, p3}, Lorg/mime4j/util/CharsetUtil$Charset;-><init>(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
 
@@ -65,7 +58,6 @@
 
 .method static synthetic access$100(Lorg/mime4j/util/CharsetUtil$Charset;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lorg/mime4j/util/CharsetUtil$Charset;
 
     iget-object v0, p0, Lorg/mime4j/util/CharsetUtil$Charset;->canonical:Ljava/lang/String;
 
@@ -74,7 +66,6 @@
 
 .method static synthetic access$200(Lorg/mime4j/util/CharsetUtil$Charset;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lorg/mime4j/util/CharsetUtil$Charset;
 
     iget-object v0, p0, Lorg/mime4j/util/CharsetUtil$Charset;->mime:Ljava/lang/String;
 
@@ -83,7 +74,6 @@
 
 .method static synthetic access$300(Lorg/mime4j/util/CharsetUtil$Charset;)[Ljava/lang/String;
     .locals 1
-    .param p0    # Lorg/mime4j/util/CharsetUtil$Charset;
 
     iget-object v0, p0, Lorg/mime4j/util/CharsetUtil$Charset;->aliases:[Ljava/lang/String;
 
@@ -94,7 +84,6 @@
 # virtual methods
 .method public compareTo(Ljava/lang/Object;)I
     .locals 3
-    .param p1    # Ljava/lang/Object;
 
     move-object v0, p1
 

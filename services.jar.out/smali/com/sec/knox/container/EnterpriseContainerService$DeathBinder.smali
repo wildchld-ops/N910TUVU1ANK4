@@ -28,7 +28,6 @@
 # direct methods
 .method public constructor <init>(Lcom/sec/knox/container/EnterpriseContainerService;I)V
     .locals 1
-    .param p2    # I
 
     iput-object p1, p0, Lcom/sec/knox/container/EnterpriseContainerService$DeathBinder;->this$0:Lcom/sec/knox/container/EnterpriseContainerService;
 

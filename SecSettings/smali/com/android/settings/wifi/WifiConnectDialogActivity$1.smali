@@ -36,7 +36,6 @@
 # virtual methods
 .method public onFailure(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/settings/wifi/WifiConnectDialogActivity$1;->this$0:Lcom/android/settings/wifi/WifiConnectDialogActivity;
 

@@ -16,7 +16,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
@@ -35,8 +34,6 @@
 # virtual methods
 .method public didReceiveData([BI)V
     .locals 3
-    .param p1    # [B
-    .param p2    # I
 
     iget-object v1, p0, Landroid/webkitsec/KeyStoreHandler;->mDataBuilder:Landroid/webkitsec/ByteArrayBuilder;
 
@@ -65,7 +62,6 @@
 
 .method public installCert(Landroid/content/Context;)V
     .locals 8
-    .param p1    # Landroid/content/Context;
 
     iget-object v4, p0, Landroid/webkitsec/KeyStoreHandler;->mMimeType:Ljava/lang/String;
 

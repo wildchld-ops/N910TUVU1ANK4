@@ -427,7 +427,7 @@
 
     aput-object p4, v1, v2
 
-    invoke-virtual {p0, p3}, Landroid/app/Fragment;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, p3}, Lcom/android/phone/CdmaCallForwardOptions;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v2
 
@@ -482,7 +482,7 @@
 
     const/16 v0, 0x64
 
-    invoke-virtual {p0, v0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->dismissDialog(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/CdmaCallForwardOptions;->dismissDialog(I)V
 
     :cond_1
     return-void
@@ -909,12 +909,12 @@
 
     if-ne v0, v1, :cond_4
 
-    invoke-virtual {p0, v2}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->dismissDialog(I)V
+    invoke-virtual {p0, v2}, Lcom/android/phone/CdmaCallForwardOptions;->dismissDialog(I)V
 
     :goto_2
     const/16 v0, 0xc8
 
-    invoke-virtual {p0, v0}, Lcom/android/phone/TimeConsumingPreferenceActivity;->showDialog(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/CdmaCallForwardOptions;->showDialog(I)V
 
     goto :goto_1
 
@@ -926,7 +926,7 @@
     :sswitch_1
     const/16 v0, 0x320
 
-    invoke-virtual {p0, v0}, Lcom/android/phone/TimeConsumingPreferenceActivity;->showDialog(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/CdmaCallForwardOptions;->showDialog(I)V
 
     goto :goto_1
 
@@ -937,12 +937,12 @@
 
     if-ne v0, v1, :cond_5
 
-    invoke-virtual {p0, v2}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->dismissDialog(I)V
+    invoke-virtual {p0, v2}, Lcom/android/phone/CdmaCallForwardOptions;->dismissDialog(I)V
 
     :goto_3
     const/16 v0, 0x12c
 
-    invoke-virtual {p0, v0}, Lcom/android/phone/TimeConsumingPreferenceActivity;->showDialog(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/CdmaCallForwardOptions;->showDialog(I)V
 
     goto :goto_1
 
@@ -956,7 +956,7 @@
 
     iget-object v1, p0, Lcom/android/phone/CdmaCallForwardOptions;->mAppState:Lcom/android/phone/CdmaCallForwardOptions$AppState;
 
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    invoke-virtual {v1}, Lcom/android/phone/CdmaCallForwardOptions$AppState;->ordinal()I
 
     move-result v1
 
@@ -1022,7 +1022,7 @@
 
     if-ne p1, v0, :cond_a
 
-    invoke-virtual {p0, v2}, Lcom/android/phone/TimeConsumingPreferenceActivity;->showDialog(I)V
+    invoke-virtual {p0, v2}, Lcom/android/phone/CdmaCallForwardOptions;->showDialog(I)V
 
     goto :goto_4
 
@@ -1031,7 +1031,7 @@
 
     if-ne p1, v0, :cond_b
 
-    invoke-virtual {p0, v3}, Lcom/android/phone/TimeConsumingPreferenceActivity;->showDialog(I)V
+    invoke-virtual {p0, v3}, Lcom/android/phone/CdmaCallForwardOptions;->showDialog(I)V
 
     goto :goto_4
 
@@ -1080,7 +1080,7 @@
     invoke-static {v0}, Lcom/android/phone/CdmaCallForwardOptions;->log(Ljava/lang/String;)V
 
     :cond_e
-    invoke-virtual {p0, v3}, Lcom/android/phone/TimeConsumingPreferenceActivity;->showDialog(I)V
+    invoke-virtual {p0, v3}, Lcom/android/phone/CdmaCallForwardOptions;->showDialog(I)V
 
     goto :goto_4
 
@@ -1116,7 +1116,7 @@
     invoke-static {v0}, Lcom/android/phone/CdmaCallForwardOptions;->log(Ljava/lang/String;)V
 
     :cond_11
-    invoke-virtual {p0, v2}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->dismissDialog(I)V
+    invoke-virtual {p0, v2}, Lcom/android/phone/CdmaCallForwardOptions;->dismissDialog(I)V
 
     goto/16 :goto_4
 
@@ -1481,7 +1481,7 @@
     goto :goto_0
 
     :cond_3
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/CdmaCallForwardOptions;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -1717,7 +1717,7 @@
     return-void
 
     :pswitch_2
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/CdmaCallForwardOptions;->finish()V
 
     goto :goto_0
 
@@ -1742,7 +1742,7 @@
 
     const/4 v2, 0x0
 
-    invoke-super {p0, p1}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/phone/TimeConsumingPreferenceActivity;->onCreate(Landroid/os/Bundle;)V
 
     const-string v0, "feature_chn_duos_gsm_cdma"
 
@@ -1767,7 +1767,7 @@
     :goto_0
     const v0, 0x7f060018
 
-    invoke-virtual {p0, v0}, Landroid/preference/PreferenceFragment;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/CdmaCallForwardOptions;->addPreferencesFromResource(I)V
 
     sget-boolean v0, Lcom/android/phone/CdmaCallForwardOptions;->DBG:Z
 
@@ -1778,13 +1778,13 @@
     invoke-static {v0}, Lcom/android/phone/CdmaCallForwardOptions;->log(Ljava/lang/String;)V
 
     :cond_0
-    invoke-virtual {p0}, Landroid/preference/PreferenceFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/phone/CdmaCallForwardOptions;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v1
 
     const-string v0, "button_cfu_key"
 
-    invoke-virtual {v1, v0}, Landroid/preference/PreferenceGroup;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {v1, v0}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -1794,7 +1794,7 @@
 
     const-string v0, "button_cfb_key"
 
-    invoke-virtual {v1, v0}, Landroid/preference/PreferenceGroup;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {v1, v0}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -1804,7 +1804,7 @@
 
     const-string v0, "button_cfnry_key"
 
-    invoke-virtual {v1, v0}, Landroid/preference/PreferenceGroup;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {v1, v0}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -1814,7 +1814,7 @@
 
     const-string v0, "button_cfnrc_key"
 
-    invoke-virtual {v1, v0}, Landroid/preference/PreferenceGroup;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {v1, v0}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -1824,7 +1824,7 @@
 
     const-string v0, "button_cfu_dis_key"
 
-    invoke-virtual {v1, v0}, Landroid/preference/PreferenceGroup;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {v1, v0}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -1834,7 +1834,7 @@
 
     const-string v0, "button_cfb_dis_key"
 
-    invoke-virtual {v1, v0}, Landroid/preference/PreferenceGroup;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {v1, v0}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -1844,7 +1844,7 @@
 
     const-string v0, "button_cfnry_dis_key"
 
-    invoke-virtual {v1, v0}, Landroid/preference/PreferenceGroup;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {v1, v0}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -1854,7 +1854,7 @@
 
     const-string v0, "button_cfnrc_dis_key"
 
-    invoke-virtual {v1, v0}, Landroid/preference/PreferenceGroup;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {v1, v0}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -1864,7 +1864,7 @@
 
     const-string v0, "cdma_cf_cancelall_key"
 
-    invoke-virtual {v1, v0}, Landroid/preference/PreferenceGroup;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {v1, v0}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -1874,7 +1874,7 @@
 
     const-string v0, "cdma_cf_busy_key"
 
-    invoke-virtual {v1, v0}, Landroid/preference/PreferenceGroup;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {v1, v0}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -1884,7 +1884,7 @@
 
     const-string v0, "cdma_cf_noreply_key"
 
-    invoke-virtual {v1, v0}, Landroid/preference/PreferenceGroup;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {v1, v0}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -1894,7 +1894,7 @@
 
     const-string v0, "cdma_cf_notrechable_key"
 
-    invoke-virtual {v1, v0}, Landroid/preference/PreferenceGroup;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {v1, v0}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -1904,7 +1904,7 @@
 
     const-string v0, "cdma_cf_unconditional_key"
 
-    invoke-virtual {v1, v0}, Landroid/preference/PreferenceGroup;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {v1, v0}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -1926,13 +1926,13 @@
 
     iget-object v0, p0, Lcom/android/phone/CdmaCallForwardOptions;->mButtonCFU:Lcom/android/phone/EditPhoneNumberPreference;
 
-    invoke-virtual {v0, v4}, Landroid/preference/DialogPreference;->setDialogTitle(I)V
+    invoke-virtual {v0, v4}, Lcom/android/phone/EditPhoneNumberPreference;->setDialogTitle(I)V
 
     iget-object v0, p0, Lcom/android/phone/CdmaCallForwardOptions;->mButtonCFU:Lcom/android/phone/EditPhoneNumberPreference;
 
     const v1, 0x7f090064
 
-    invoke-virtual {v0, v1}, Landroid/preference/DialogPreference;->setDialogMessage(I)V
+    invoke-virtual {v0, v1}, Lcom/android/phone/EditPhoneNumberPreference;->setDialogMessage(I)V
 
     :cond_1
     iget-object v0, p0, Lcom/android/phone/CdmaCallForwardOptions;->mButtonCFU_Dis:Lcom/android/phone/EditPhoneNumberPreference;
@@ -1953,13 +1953,13 @@
 
     iget-object v0, p0, Lcom/android/phone/CdmaCallForwardOptions;->mButtonCFU_Dis:Lcom/android/phone/EditPhoneNumberPreference;
 
-    invoke-virtual {v0, v4}, Landroid/preference/DialogPreference;->setDialogTitle(I)V
+    invoke-virtual {v0, v4}, Lcom/android/phone/EditPhoneNumberPreference;->setDialogTitle(I)V
 
     iget-object v0, p0, Lcom/android/phone/CdmaCallForwardOptions;->mButtonCFU_Dis:Lcom/android/phone/EditPhoneNumberPreference;
 
     const v1, 0x7f090064
 
-    invoke-virtual {v0, v1}, Landroid/preference/DialogPreference;->setDialogMessage(I)V
+    invoke-virtual {v0, v1}, Lcom/android/phone/EditPhoneNumberPreference;->setDialogMessage(I)V
 
     :cond_2
     iget-object v0, p0, Lcom/android/phone/CdmaCallForwardOptions;->mButtonCFB:Lcom/android/phone/EditPhoneNumberPreference;
@@ -1976,13 +1976,13 @@
 
     iget-object v0, p0, Lcom/android/phone/CdmaCallForwardOptions;->mButtonCFB:Lcom/android/phone/EditPhoneNumberPreference;
 
-    invoke-virtual {v0, v4}, Landroid/preference/DialogPreference;->setDialogTitle(I)V
+    invoke-virtual {v0, v4}, Lcom/android/phone/EditPhoneNumberPreference;->setDialogTitle(I)V
 
     iget-object v0, p0, Lcom/android/phone/CdmaCallForwardOptions;->mButtonCFB:Lcom/android/phone/EditPhoneNumberPreference;
 
     const v1, 0x7f09006a
 
-    invoke-virtual {v0, v1}, Landroid/preference/DialogPreference;->setDialogMessage(I)V
+    invoke-virtual {v0, v1}, Lcom/android/phone/EditPhoneNumberPreference;->setDialogMessage(I)V
 
     :cond_3
     iget-object v0, p0, Lcom/android/phone/CdmaCallForwardOptions;->mButtonCFB_Dis:Lcom/android/phone/EditPhoneNumberPreference;
@@ -2003,13 +2003,13 @@
 
     iget-object v0, p0, Lcom/android/phone/CdmaCallForwardOptions;->mButtonCFB_Dis:Lcom/android/phone/EditPhoneNumberPreference;
 
-    invoke-virtual {v0, v4}, Landroid/preference/DialogPreference;->setDialogTitle(I)V
+    invoke-virtual {v0, v4}, Lcom/android/phone/EditPhoneNumberPreference;->setDialogTitle(I)V
 
     iget-object v0, p0, Lcom/android/phone/CdmaCallForwardOptions;->mButtonCFB_Dis:Lcom/android/phone/EditPhoneNumberPreference;
 
     const v1, 0x7f09006a
 
-    invoke-virtual {v0, v1}, Landroid/preference/DialogPreference;->setDialogMessage(I)V
+    invoke-virtual {v0, v1}, Lcom/android/phone/EditPhoneNumberPreference;->setDialogMessage(I)V
 
     :cond_4
     iget-object v0, p0, Lcom/android/phone/CdmaCallForwardOptions;->mButtonCFNRy:Lcom/android/phone/EditPhoneNumberPreference;
@@ -2026,13 +2026,13 @@
 
     iget-object v0, p0, Lcom/android/phone/CdmaCallForwardOptions;->mButtonCFNRy:Lcom/android/phone/EditPhoneNumberPreference;
 
-    invoke-virtual {v0, v4}, Landroid/preference/DialogPreference;->setDialogTitle(I)V
+    invoke-virtual {v0, v4}, Lcom/android/phone/EditPhoneNumberPreference;->setDialogTitle(I)V
 
     iget-object v0, p0, Lcom/android/phone/CdmaCallForwardOptions;->mButtonCFNRy:Lcom/android/phone/EditPhoneNumberPreference;
 
     const v1, 0x7f090070
 
-    invoke-virtual {v0, v1}, Landroid/preference/DialogPreference;->setDialogMessage(I)V
+    invoke-virtual {v0, v1}, Lcom/android/phone/EditPhoneNumberPreference;->setDialogMessage(I)V
 
     :cond_5
     iget-object v0, p0, Lcom/android/phone/CdmaCallForwardOptions;->mButtonCFNRy_Dis:Lcom/android/phone/EditPhoneNumberPreference;
@@ -2053,13 +2053,13 @@
 
     iget-object v0, p0, Lcom/android/phone/CdmaCallForwardOptions;->mButtonCFNRy_Dis:Lcom/android/phone/EditPhoneNumberPreference;
 
-    invoke-virtual {v0, v4}, Landroid/preference/DialogPreference;->setDialogTitle(I)V
+    invoke-virtual {v0, v4}, Lcom/android/phone/EditPhoneNumberPreference;->setDialogTitle(I)V
 
     iget-object v0, p0, Lcom/android/phone/CdmaCallForwardOptions;->mButtonCFNRy_Dis:Lcom/android/phone/EditPhoneNumberPreference;
 
     const v1, 0x7f090070
 
-    invoke-virtual {v0, v1}, Landroid/preference/DialogPreference;->setDialogMessage(I)V
+    invoke-virtual {v0, v1}, Lcom/android/phone/EditPhoneNumberPreference;->setDialogMessage(I)V
 
     :cond_6
     iget-object v0, p0, Lcom/android/phone/CdmaCallForwardOptions;->mButtonCFNRc:Lcom/android/phone/EditPhoneNumberPreference;
@@ -2076,13 +2076,13 @@
 
     iget-object v0, p0, Lcom/android/phone/CdmaCallForwardOptions;->mButtonCFNRc:Lcom/android/phone/EditPhoneNumberPreference;
 
-    invoke-virtual {v0, v4}, Landroid/preference/DialogPreference;->setDialogTitle(I)V
+    invoke-virtual {v0, v4}, Lcom/android/phone/EditPhoneNumberPreference;->setDialogTitle(I)V
 
     iget-object v0, p0, Lcom/android/phone/CdmaCallForwardOptions;->mButtonCFNRc:Lcom/android/phone/EditPhoneNumberPreference;
 
     const v1, 0x7f090076
 
-    invoke-virtual {v0, v1}, Landroid/preference/DialogPreference;->setDialogMessage(I)V
+    invoke-virtual {v0, v1}, Lcom/android/phone/EditPhoneNumberPreference;->setDialogMessage(I)V
 
     :cond_7
     iget-object v0, p0, Lcom/android/phone/CdmaCallForwardOptions;->mButtonCFNRc_Dis:Lcom/android/phone/EditPhoneNumberPreference;
@@ -2103,13 +2103,13 @@
 
     iget-object v0, p0, Lcom/android/phone/CdmaCallForwardOptions;->mButtonCFNRc_Dis:Lcom/android/phone/EditPhoneNumberPreference;
 
-    invoke-virtual {v0, v4}, Landroid/preference/DialogPreference;->setDialogTitle(I)V
+    invoke-virtual {v0, v4}, Lcom/android/phone/EditPhoneNumberPreference;->setDialogTitle(I)V
 
     iget-object v0, p0, Lcom/android/phone/CdmaCallForwardOptions;->mButtonCFNRc_Dis:Lcom/android/phone/EditPhoneNumberPreference;
 
     const v1, 0x7f090076
 
-    invoke-virtual {v0, v1}, Landroid/preference/DialogPreference;->setDialogMessage(I)V
+    invoke-virtual {v0, v1}, Lcom/android/phone/EditPhoneNumberPreference;->setDialogMessage(I)V
 
     :cond_8
     iget-object v0, p0, Lcom/android/phone/CdmaCallForwardOptions;->mButtonCFCancel:Lcom/android/phone/EditPhoneNumberPreference;
@@ -2132,13 +2132,13 @@
 
     iget-object v0, p0, Lcom/android/phone/CdmaCallForwardOptions;->mButtonCFCancel:Lcom/android/phone/EditPhoneNumberPreference;
 
-    invoke-virtual {v0, v4}, Landroid/preference/DialogPreference;->setDialogTitle(I)V
+    invoke-virtual {v0, v4}, Lcom/android/phone/EditPhoneNumberPreference;->setDialogTitle(I)V
 
     iget-object v0, p0, Lcom/android/phone/CdmaCallForwardOptions;->mButtonCFCancel:Lcom/android/phone/EditPhoneNumberPreference;
 
     const v1, 0x7f0904e5
 
-    invoke-virtual {v0, v1}, Landroid/preference/DialogPreference;->setDialogMessage(I)V
+    invoke-virtual {v0, v1}, Lcom/android/phone/EditPhoneNumberPreference;->setDialogMessage(I)V
 
     :cond_9
     new-instance v0, Landroid/content/Intent;
@@ -2253,7 +2253,7 @@
     iput v0, p0, Lcom/android/phone/CdmaCallForwardOptions;->mpreferenceint:I
 
     :goto_1
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getActionBar()Landroid/app/ActionBar;
+    invoke-virtual {p0}, Lcom/android/phone/CdmaCallForwardOptions;->getActionBar()Landroid/app/ActionBar;
 
     move-result-object v0
 
@@ -2289,7 +2289,7 @@
 
     const/16 v0, 0xc8
 
-    invoke-virtual {p0, v0}, Lcom/android/phone/TimeConsumingPreferenceActivity;->showDialog(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/CdmaCallForwardOptions;->showDialog(I)V
 
     :cond_d
     iget-object v0, p0, Lcom/android/phone/CdmaCallForwardOptions;->mButtonCFCancel:Lcom/android/phone/EditPhoneNumberPreference;
@@ -2298,24 +2298,24 @@
 
     iget-object v0, p0, Lcom/android/phone/CdmaCallForwardOptions;->mButtonCFCancel:Lcom/android/phone/EditPhoneNumberPreference;
 
-    invoke-virtual {v0, v2}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v0, v2}, Lcom/android/phone/EditPhoneNumberPreference;->setEnabled(Z)V
 
     :cond_e
     iget-object v0, p0, Lcom/android/phone/CdmaCallForwardOptions;->mButtonCFBUSYExpand:Landroid/preference/PreferenceScreen;
 
-    invoke-virtual {v0, v2}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v0, v2}, Landroid/preference/PreferenceScreen;->setEnabled(Z)V
 
     iget-object v0, p0, Lcom/android/phone/CdmaCallForwardOptions;->mButtonCFNOREPLYExpand:Landroid/preference/PreferenceScreen;
 
-    invoke-virtual {v0, v2}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v0, v2}, Landroid/preference/PreferenceScreen;->setEnabled(Z)V
 
     iget-object v0, p0, Lcom/android/phone/CdmaCallForwardOptions;->mButtonCFNOTRECHABLEExpand:Landroid/preference/PreferenceScreen;
 
-    invoke-virtual {v0, v2}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v0, v2}, Landroid/preference/PreferenceScreen;->setEnabled(Z)V
 
     iget-object v0, p0, Lcom/android/phone/CdmaCallForwardOptions;->mButtonCFUNCONDITIONALExpand:Landroid/preference/PreferenceScreen;
 
-    invoke-virtual {v0, v2}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v0, v2}, Landroid/preference/PreferenceScreen;->setEnabled(Z)V
 
     :cond_f
     return-void
@@ -2422,7 +2422,7 @@
     :cond_1
     new-instance v1, Landroid/app/ProgressDialog;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/CdmaCallForwardOptions;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
 
@@ -2430,18 +2430,18 @@
 
     const v4, 0x7f09007b
 
-    invoke-virtual {p0, v4}, Landroid/app/Fragment;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v4}, Lcom/android/phone/CdmaCallForwardOptions;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v4
 
-    invoke-virtual {v1, v4}, Landroid/app/AlertDialog;->setTitle(Ljava/lang/CharSequence;)V
+    invoke-virtual {v1, v4}, Landroid/app/ProgressDialog;->setTitle(Ljava/lang/CharSequence;)V
 
     invoke-virtual {v1, v6}, Landroid/app/ProgressDialog;->setIndeterminate(Z)V
 
     sparse-switch p1, :sswitch_data_0
 
     :goto_0
-    invoke-virtual {v1}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
+    invoke-virtual {v1}, Landroid/app/ProgressDialog;->getWindow()Landroid/view/Window;
 
     move-result-object v4
 
@@ -2455,11 +2455,11 @@
     :sswitch_0
     iput-boolean v6, p0, Lcom/android/phone/CdmaCallForwardOptions;->mIsBusyDialogAvailable:Z
 
-    invoke-virtual {v1, v8}, Landroid/app/Dialog;->setCancelable(Z)V
+    invoke-virtual {v1, v8}, Landroid/app/ProgressDialog;->setCancelable(Z)V
 
     const v4, 0x7f09007e
 
-    invoke-virtual {p0, v4}, Landroid/app/Fragment;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v4}, Lcom/android/phone/CdmaCallForwardOptions;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v4
 
@@ -2468,7 +2468,7 @@
     goto :goto_0
 
     :sswitch_1
-    invoke-virtual {v1, v6}, Landroid/app/Dialog;->setCancelable(Z)V
+    invoke-virtual {v1, v6}, Landroid/app/ProgressDialog;->setCancelable(Z)V
 
     iget-object v4, p0, Lcom/android/phone/CdmaCallForwardOptions;->mNetworkServiceHandler:Landroid/os/Handler;
 
@@ -2478,11 +2478,11 @@
 
     move-result-object v4
 
-    invoke-virtual {v1, v4}, Landroid/app/Dialog;->setCancelMessage(Landroid/os/Message;)V
+    invoke-virtual {v1, v4}, Landroid/app/ProgressDialog;->setCancelMessage(Landroid/os/Message;)V
 
     const v4, 0x7f09007d
 
-    invoke-virtual {p0, v4}, Landroid/app/Fragment;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v4}, Lcom/android/phone/CdmaCallForwardOptions;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v4
 
@@ -2506,7 +2506,7 @@
     :cond_3
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/CdmaCallForwardOptions;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
 
@@ -2521,13 +2521,13 @@
     invoke-virtual {v0, v7, p0}, Landroid/app/AlertDialog$Builder;->setNeutralButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     :goto_2
-    invoke-virtual {p0, v3}, Landroid/app/Fragment;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v3}, Lcom/android/phone/CdmaCallForwardOptions;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v4
 
     invoke-virtual {v0, v4}, Landroid/app/AlertDialog$Builder;->setTitle(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0, v2}, Landroid/app/Fragment;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v2}, Lcom/android/phone/CdmaCallForwardOptions;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v4
 
@@ -2539,7 +2539,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1, v6}, Landroid/app/Dialog;->setCancelable(Z)V
+    invoke-virtual {v1, v6}, Landroid/app/AlertDialog;->setCancelable(Z)V
 
     goto :goto_1
 
@@ -2736,7 +2736,7 @@
     invoke-virtual {v1, v6, v7}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
     :goto_1
-    invoke-virtual {p0, v1}, Landroid/app/Fragment;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v1}, Lcom/android/phone/CdmaCallForwardOptions;->startActivity(Landroid/content/Intent;)V
 
     goto/16 :goto_0
 
@@ -2871,7 +2871,7 @@
 
     if-ne v0, v1, :cond_0
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/CdmaCallForwardOptions;->finish()V
 
     const/4 v1, 0x1
 
@@ -2879,7 +2879,7 @@
     return v1
 
     :cond_0
-    invoke-super {p0, p1}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
+    invoke-super {p0, p1}, Lcom/android/phone/TimeConsumingPreferenceActivity;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
 
     move-result v1
 
@@ -3169,11 +3169,11 @@
 
     if-eq v0, v2, :cond_0
 
-    invoke-virtual {p0}, Landroid/preference/PreferenceFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/phone/CdmaCallForwardOptions;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
-    invoke-virtual {v0, v2}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v0, v2}, Landroid/preference/PreferenceScreen;->setEnabled(Z)V
 
     :cond_0
     sget-boolean v0, Lcom/android/phone/CdmaCallForwardOptions;->DBG:Z
@@ -3328,7 +3328,7 @@
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
 
-    invoke-super {p0, p1}, Landroid/preference/PreferenceFragment;->onSaveInstanceState(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/phone/TimeConsumingPreferenceActivity;->onSaveInstanceState(Landroid/os/Bundle;)V
 
     sget-boolean v0, Lcom/android/phone/CdmaCallForwardOptions;->DBG:Z
 
@@ -3450,7 +3450,7 @@
 
     if-ne p2, v0, :cond_2
 
-    invoke-super {p0, p1, p2}, Landroid/app/Fragment;->startActivityForResult(Landroid/content/Intent;I)V
+    invoke-super {p0, p1, p2}, Lcom/android/phone/TimeConsumingPreferenceActivity;->startActivityForResult(Landroid/content/Intent;I)V
 
     :cond_1
     :goto_0
@@ -3483,7 +3483,7 @@
     invoke-static {v0}, Lcom/android/phone/CdmaCallForwardOptions;->log(Ljava/lang/String;)V
 
     :cond_4
-    invoke-super {p0, p1, p2}, Landroid/app/Fragment;->startActivityForResult(Landroid/content/Intent;I)V
+    invoke-super {p0, p1, p2}, Lcom/android/phone/TimeConsumingPreferenceActivity;->startActivityForResult(Landroid/content/Intent;I)V
 
     sget-object v0, Lcom/android/phone/CdmaCallForwardOptions$AppState;->WAITING_NUMBER_SELECT:Lcom/android/phone/CdmaCallForwardOptions$AppState;
 

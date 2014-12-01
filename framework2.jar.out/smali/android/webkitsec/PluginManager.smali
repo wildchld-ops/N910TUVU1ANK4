@@ -79,7 +79,6 @@
 
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -96,7 +95,6 @@
 
 .method private static containsPluginPermissionAndSignatures(Landroid/content/pm/PackageInfo;)Z
     .locals 12
-    .param p0    # Landroid/content/pm/PackageInfo;
 
     const/4 v10, 0x0
 
@@ -207,7 +205,6 @@
 
 .method public static declared-synchronized getInstance(Landroid/content/Context;)Landroid/webkitsec/PluginManager;
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     const-class v1, Landroid/webkitsec/PluginManager;
 
@@ -263,7 +260,6 @@
 # virtual methods
 .method containsPluginPermissionAndSignatures(Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     iget-object v3, p0, Landroid/webkitsec/PluginManager;->mContext:Landroid/content/Context;
 
@@ -322,8 +318,6 @@
 
 .method getPluginClass(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Class;
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -907,7 +901,6 @@
 
 .method getPluginsAPKName(Ljava/lang/String;)Ljava/lang/String;
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -982,7 +975,6 @@
 
 .method public refreshPlugins(Z)V
     .locals 3
-    .param p1    # Z
 
     sget-object v0, Landroid/webkitsec/BrowserFrame;->sJavaBridge:Landroid/webkitsec/JWebCoreJavaBridge;
 

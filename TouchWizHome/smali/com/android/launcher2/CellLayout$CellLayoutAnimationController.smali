@@ -17,8 +17,6 @@
 # direct methods
 .method public constructor <init>(Landroid/view/animation/Animation;F)V
     .locals 0
-    .param p1    # Landroid/view/animation/Animation;
-    .param p2    # F
 
     invoke-direct {p0, p1, p2}, Landroid/view/animation/LayoutAnimationController;-><init>(Landroid/view/animation/Animation;F)V
 
@@ -29,7 +27,6 @@
 # virtual methods
 .method protected getDelayForView(Landroid/view/View;)J
     .locals 4
-    .param p1    # Landroid/view/View;
 
     invoke-static {}, Ljava/lang/Math;->random()D
 

@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/dreams/DreamManagerService;Landroid/os/Looper;)V
     .locals 2
-    .param p2    # Landroid/os/Looper;
 
     iput-object p1, p0, Lcom/android/server/dreams/DreamManagerService$DreamHandler;->this$0:Lcom/android/server/dreams/DreamManagerService;
 

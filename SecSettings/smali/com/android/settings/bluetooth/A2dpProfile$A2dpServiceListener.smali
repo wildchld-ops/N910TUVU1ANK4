@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Lcom/android/settings/bluetooth/A2dpProfile;Lcom/android/settings/bluetooth/A2dpProfile$1;)V
     .locals 0
-    .param p1    # Lcom/android/settings/bluetooth/A2dpProfile;
-    .param p2    # Lcom/android/settings/bluetooth/A2dpProfile$1;
 
     invoke-direct {p0, p1}, Lcom/android/settings/bluetooth/A2dpProfile$A2dpServiceListener;-><init>(Lcom/android/settings/bluetooth/A2dpProfile;)V
 
@@ -46,8 +44,6 @@
 # virtual methods
 .method public onServiceConnected(ILandroid/bluetooth/BluetoothProfile;)V
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/bluetooth/BluetoothProfile;
 
     # getter for: Lcom/android/settings/bluetooth/A2dpProfile;->V:Z
     invoke-static {}, Lcom/android/settings/bluetooth/A2dpProfile;->access$000()Z
@@ -189,7 +185,6 @@
 
 .method public onServiceDisconnected(I)V
     .locals 2
-    .param p1    # I
 
     # getter for: Lcom/android/settings/bluetooth/A2dpProfile;->V:Z
     invoke-static {}, Lcom/android/settings/bluetooth/A2dpProfile;->access$000()Z

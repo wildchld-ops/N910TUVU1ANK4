@@ -74,7 +74,6 @@
 
 .method private static allowIndirectBuffers(Ljava/lang/String;)Z
     .locals 9
-    .param p0    # Ljava/lang/String;
 
     const/4 v7, 0x0
 
@@ -262,10 +261,6 @@
 
 .method public glColorPointer(IIILjava/nio/Buffer;)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/nio/Buffer;
 
     invoke-virtual {p4}, Ljava/nio/Buffer;->remaining()I
 
@@ -562,8 +557,6 @@
 
 .method public glGetPointerv(I[Ljava/nio/Buffer;)V
     .locals 2
-    .param p1    # I
-    .param p2    # [Ljava/nio/Buffer;
 
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
@@ -582,7 +575,6 @@
 
 .method public glGetString(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/google/android/gles_jni/GLImpl;->_glGetString(I)Ljava/lang/String;
 
@@ -743,10 +735,6 @@
 
 .method public glMatrixIndexPointerOES(IIILjava/nio/Buffer;)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/nio/Buffer;
 
     invoke-virtual {p4}, Ljava/nio/Buffer;->remaining()I
 
@@ -834,9 +822,6 @@
 
 .method public glNormalPointer(IILjava/nio/Buffer;)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/nio/Buffer;
 
     invoke-virtual {p3}, Ljava/nio/Buffer;->remaining()I
 
@@ -901,9 +886,6 @@
 
 .method public glPointSizePointerOES(IILjava/nio/Buffer;)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/nio/Buffer;
 
     invoke-virtual {p3}, Ljava/nio/Buffer;->remaining()I
 
@@ -993,10 +975,6 @@
 
 .method public glTexCoordPointer(IIILjava/nio/Buffer;)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/nio/Buffer;
 
     invoke-virtual {p4}, Ljava/nio/Buffer;->remaining()I
 
@@ -1150,10 +1128,6 @@
 
 .method public glVertexPointer(IIILjava/nio/Buffer;)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/nio/Buffer;
 
     invoke-virtual {p4}, Ljava/nio/Buffer;->remaining()I
 
@@ -1217,10 +1191,6 @@
 
 .method public glWeightPointerOES(IIILjava/nio/Buffer;)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/nio/Buffer;
 
     invoke-virtual {p4}, Ljava/nio/Buffer;->remaining()I
 

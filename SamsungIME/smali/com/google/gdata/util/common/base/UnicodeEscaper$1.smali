@@ -52,8 +52,6 @@
 
 .method private outputChars([CI)V
     .locals 3
-    .param p1    # [C
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -83,7 +81,6 @@
 # virtual methods
 .method public append(C)Ljava/lang/Appendable;
     .locals 4
-    .param p1    # C
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -255,7 +252,6 @@
 
 .method public append(Ljava/lang/CharSequence;)Ljava/lang/Appendable;
     .locals 2
-    .param p1    # Ljava/lang/CharSequence;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -277,9 +273,6 @@
 
 .method public append(Ljava/lang/CharSequence;II)Ljava/lang/Appendable;
     .locals 10
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

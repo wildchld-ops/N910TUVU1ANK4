@@ -13,7 +13,6 @@
 # direct methods
 .method public constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -26,9 +25,6 @@
 # virtual methods
 .method public addService(Ljava/lang/String;Landroid/os/IBinder;Z)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/IBinder;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -88,7 +84,6 @@
 
 .method public checkService(Ljava/lang/String;)Landroid/os/IBinder;
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -130,7 +125,6 @@
 
 .method public getService(Ljava/lang/String;)Landroid/os/IBinder;
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -248,7 +242,6 @@
 
 .method public setPermissionController(Landroid/os/IPermissionController;)V
     .locals 5
-    .param p1    # Landroid/os/IPermissionController;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

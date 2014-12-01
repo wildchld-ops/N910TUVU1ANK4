@@ -58,7 +58,6 @@
 
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
 
     const/4 v3, 0x0
 
@@ -155,7 +154,6 @@
 
 .method static synthetic access$000(Lcom/android/server/enterprise/billing/EnterpriseBillingEngine;)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/billing/EnterpriseBillingEngine;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/billing/EnterpriseBillingEngine;->handleAllprofiles()V
 
@@ -164,7 +162,6 @@
 
 .method private getApplicationsInfoOfContainer(I)Ljava/util/Map;
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -238,7 +235,6 @@
 
 .method public static declared-synchronized getInstance(Landroid/content/Context;)Lcom/android/server/enterprise/billing/EnterpriseBillingEngine;
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -406,8 +402,6 @@
 
 .method private sendEventToRIL(Ljava/lang/String;Ljava/lang/String;)V
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const-string v6, "EnterpriseBillingEngine"
 
@@ -549,8 +543,6 @@
 # virtual methods
 .method public addContainerToExceptionList(Ljava/lang/String;I)I
     .locals 13
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const-string v10, "EnterpriseBillingEngine"
 
@@ -768,7 +760,6 @@
 
 .method public addUIDListToExceptionList(Ljava/lang/String;Ljava/util/Map;)I
     .locals 12
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -969,7 +960,6 @@
 
 .method protected allowOnWifi(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "EnterpriseBillingEngine"
 
@@ -1026,7 +1016,6 @@
 
 .method protected allowRoaming(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "EnterpriseBillingEngine"
 
@@ -1083,7 +1072,6 @@
 
 .method protected disableApplicationOrContainer(Ljava/lang/String;)Z
     .locals 9
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -1365,7 +1353,6 @@
 
 .method protected enableApplicationOrContainer(Ljava/lang/String;)Z
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const-string v4, "EnterpriseBillingEngine"
 
@@ -1517,7 +1504,6 @@
 
 .method public getApnTypeForVpnProfile(Ljava/lang/String;)Ljava/lang/String;
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -1665,7 +1651,6 @@
 
 .method public getContainersForConnection(Ljava/lang/String;)Ljava/util/List;
     .locals 5
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2546,7 +2531,6 @@
 
 .method public getVpnProfilesForEnterpriseApn(Ljava/lang/String;)Ljava/util/List;
     .locals 5
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2681,7 +2665,6 @@
 
 .method protected handleProfile(Ljava/lang/String;)V
     .locals 12
-    .param p1    # Ljava/lang/String;
 
     const-string v9, "EnterpriseBillingEngine"
 
@@ -3143,7 +3126,6 @@
 
 .method protected informMappingChanged(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "EnterpriseBillingEngine"
 
@@ -3200,7 +3182,6 @@
 
 .method public isRoamingAllowed(Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -3332,7 +3313,6 @@
 
 .method public isSplitBillingEnabled(Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const-string v2, "EnterpriseBillingEngine"
 
@@ -3440,7 +3420,6 @@
 
 .method public isTurnedOn(Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const-string v2, "EnterpriseBillingEngine"
 
@@ -3570,7 +3549,6 @@
 
 .method public isWifiFallbackAllowed(Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -3702,7 +3680,6 @@
 
 .method protected profileActivationStatusChanged(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "com.android.server.enterprise.billing.mapping_modified"
 
@@ -3713,7 +3690,6 @@
 
 .method public removeAllUidByTAG(Ljava/lang/String;)Z
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     const-string v5, "EnterpriseBillingEngine"
 
@@ -3837,8 +3813,6 @@
 
 .method public removeContainerFromExceptionList(Ljava/lang/String;I)I
     .locals 13
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v6, 0x0
 
@@ -4056,7 +4030,6 @@
 
 .method public removeUIDListFromExceptionList(Ljava/lang/String;Ljava/util/Map;)I
     .locals 12
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -4257,8 +4230,6 @@
 
 .method public sendNotification(Landroid/content/Intent;Ljava/lang/String;)V
     .locals 7
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Ljava/lang/String;
     .annotation build Landroid/annotation/SuppressLint;
         value = {
             "NewApi"
@@ -4465,7 +4436,6 @@
 
 .method protected turnOn(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "EnterpriseBillingEngine"
 

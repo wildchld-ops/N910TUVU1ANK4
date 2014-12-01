@@ -27,7 +27,6 @@
 # virtual methods
 .method public isAccessibilityFocused(Ljava/lang/Object;)Z
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     invoke-static {p1}, Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompatJellyBean;->isAccessibilityFocused(Ljava/lang/Object;)Z
 
@@ -38,7 +37,6 @@
 
 .method public isVisibleToUser(Ljava/lang/Object;)Z
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     invoke-static {p1}, Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompatJellyBean;->isVisibleToUser(Ljava/lang/Object;)Z
 
@@ -49,8 +47,6 @@
 
 .method public setAccessibilityFocused(Ljava/lang/Object;Z)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Z
 
     invoke-static {p1, p2}, Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompatJellyBean;->setAccesibilityFocused(Ljava/lang/Object;Z)V
 
@@ -59,8 +55,6 @@
 
 .method public setVisibleToUser(Ljava/lang/Object;Z)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Z
 
     invoke-static {p1, p2}, Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompatJellyBean;->setVisibleToUser(Ljava/lang/Object;Z)V
 

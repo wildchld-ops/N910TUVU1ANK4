@@ -84,7 +84,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/fingerprint/FingerPrintManagerUI;)I
     .locals 1
-    .param p0    # Lcom/android/settings/fingerprint/FingerPrintManagerUI;
 
     iget v0, p0, Lcom/android/settings/fingerprint/FingerPrintManagerUI;->mEnrolledFingerStatus:I
 
@@ -114,7 +113,6 @@
 
 .method private static isSupportedOnehand(Landroid/content/Context;)Z
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     const/4 v0, 0x1
 
@@ -272,7 +270,6 @@
 # virtual methods
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onActivityCreated(Landroid/os/Bundle;)V
 
@@ -364,9 +361,6 @@
 
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 9
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const/4 v8, 0x0
 
@@ -649,8 +643,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
     .locals 6
-    .param p1    # Landroid/view/Menu;
-    .param p2    # Landroid/view/MenuInflater;
 
     const v1, 0x7f0908c9
 
@@ -754,9 +746,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 6
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const/4 v5, 0x0
 
@@ -813,10 +802,6 @@
 
 .method public onListItemClick(Landroid/widget/ListView;Landroid/view/View;IJ)V
     .locals 0
-    .param p1    # Landroid/widget/ListView;
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
 
     return-void
 .end method

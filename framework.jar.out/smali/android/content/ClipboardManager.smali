@@ -57,8 +57,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/os/Handler;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/Handler;
 
     invoke-direct {p0}, Landroid/text/ClipboardManager;-><init>()V
 
@@ -87,7 +85,6 @@
 
 .method static synthetic access$000(Landroid/content/ClipboardManager;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Landroid/content/ClipboardManager;
 
     iget-object v0, p0, Landroid/content/ClipboardManager;->mHandler:Landroid/os/Handler;
 
@@ -378,7 +375,6 @@
 # virtual methods
 .method public addPrimaryClipChangedListener(Landroid/content/ClipboardManager$OnPrimaryClipChangedListener;)V
     .locals 5
-    .param p1    # Landroid/content/ClipboardManager$OnPrimaryClipChangedListener;
 
     iget-object v2, p0, Landroid/content/ClipboardManager;->mPrimaryClipChangedListeners:Ljava/util/ArrayList;
 
@@ -621,7 +617,6 @@
 
 .method public removePrimaryClipChangedListener(Landroid/content/ClipboardManager$OnPrimaryClipChangedListener;)V
     .locals 4
-    .param p1    # Landroid/content/ClipboardManager$OnPrimaryClipChangedListener;
 
     iget-object v2, p0, Landroid/content/ClipboardManager;->mPrimaryClipChangedListeners:Ljava/util/ArrayList;
 
@@ -742,7 +737,6 @@
 
 .method public setPrimaryClip(Landroid/content/ClipData;)V
     .locals 9
-    .param p1    # Landroid/content/ClipData;
 
     if-eqz p1, :cond_0
 
@@ -1260,7 +1254,6 @@
 
 .method public setText(Ljava/lang/CharSequence;)V
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v0, 0x0
 

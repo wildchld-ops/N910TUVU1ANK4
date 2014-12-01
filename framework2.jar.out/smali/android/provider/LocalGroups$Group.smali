@@ -41,7 +41,6 @@
 
 .method public static restoreGroup(Landroid/database/Cursor;)Landroid/provider/LocalGroups$Group;
     .locals 3
-    .param p0    # Landroid/database/Cursor;
 
     if-nez p0, :cond_0
 
@@ -102,8 +101,6 @@
 
 .method public static restoreGroupById(Landroid/content/ContentResolver;J)Landroid/provider/LocalGroups$Group;
     .locals 8
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # J
 
     const/4 v7, 0x0
 
@@ -177,7 +174,6 @@
 # virtual methods
 .method public delete(Landroid/content/ContentResolver;)Z
     .locals 7
-    .param p1    # Landroid/content/ContentResolver;
 
     const/4 v0, 0x1
 
@@ -262,7 +258,6 @@
 
 .method public save(Landroid/content/ContentResolver;)Z
     .locals 4
-    .param p1    # Landroid/content/ContentResolver;
 
     const/4 v1, 0x0
 
@@ -298,7 +293,6 @@
 
 .method public setCount(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/provider/LocalGroups$Group;->count:I
 
@@ -307,7 +301,6 @@
 
 .method public setId(J)V
     .locals 0
-    .param p1    # J
 
     iput-wide p1, p0, Landroid/provider/LocalGroups$Group;->id:J
 
@@ -316,7 +309,6 @@
 
 .method public setTitle(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/provider/LocalGroups$Group;->title:Ljava/lang/String;
 
@@ -355,7 +347,6 @@
 
 .method public update(Landroid/content/ContentResolver;)Z
     .locals 8
-    .param p1    # Landroid/content/ContentResolver;
 
     const/4 v0, 0x1
 

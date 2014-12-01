@@ -85,7 +85,7 @@
 
     check-cast v1, Landroid/widget/RadioButton;
 
-    invoke-virtual {v1}, Landroid/view/View;->getId()I
+    invoke-virtual {v1}, Landroid/widget/RadioButton;->getId()I
 
     move-result v2
 
@@ -96,7 +96,7 @@
     move v2, v3
 
     :goto_1
-    invoke-virtual {v1, v2}, Landroid/widget/CompoundButton;->setChecked(Z)V
+    invoke-virtual {v1, v2}, Landroid/widget/RadioButton;->setChecked(Z)V
 
     goto :goto_0
 
@@ -142,7 +142,7 @@
 
     iget-object v2, v2, Lcom/android/phone/GlobalDataRoamingAccess$ListViewRadioButtonAdapter;->this$0:Lcom/android/phone/GlobalDataRoamingAccess;
 
-    invoke-virtual {v2}, Landroid/preference/DialogPreference;->getDialog()Landroid/app/Dialog;
+    invoke-virtual {v2}, Lcom/android/phone/GlobalDataRoamingAccess;->getDialog()Landroid/app/Dialog;
 
     move-result-object v2
 
@@ -152,7 +152,7 @@
 
     iget-object v2, v2, Lcom/android/phone/GlobalDataRoamingAccess$ListViewRadioButtonAdapter;->this$0:Lcom/android/phone/GlobalDataRoamingAccess;
 
-    invoke-virtual {v2}, Landroid/preference/DialogPreference;->getDialog()Landroid/app/Dialog;
+    invoke-virtual {v2}, Lcom/android/phone/GlobalDataRoamingAccess;->getDialog()Landroid/app/Dialog;
 
     move-result-object v2
 

@@ -153,7 +153,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -164,8 +163,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const v0, 0x1010353
 
@@ -176,9 +173,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 9
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/16 v8, 0xf
 
@@ -281,8 +275,6 @@
 
 .method static synthetic access$000(Landroid/widget/HorizontalScrollView;Landroid/os/Message;)V
     .locals 0
-    .param p0    # Landroid/widget/HorizontalScrollView;
-    .param p1    # Landroid/os/Message;
 
     invoke-direct {p0, p1}, Landroid/widget/HorizontalScrollView;->handleMessage(Landroid/os/Message;)V
 
@@ -326,9 +318,6 @@
 
 .method private static clamp(III)I
     .locals 1
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
 
     if-ge p1, p2, :cond_0
 
@@ -353,7 +342,6 @@
 
 .method private doScrollX(I)V
     .locals 2
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -377,7 +365,6 @@
 
 .method private drawQuickController(Landroid/graphics/Canvas;)V
     .locals 7
-    .param p1    # Landroid/graphics/Canvas;
 
     const/4 v6, 0x2
 
@@ -475,9 +462,6 @@
 
 .method private findFocusableViewInBounds(ZII)Landroid/view/View;
     .locals 11
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
 
     const/4 v10, 0x2
 
@@ -599,9 +583,6 @@
 
 .method private findFocusableViewInMyBounds(ZILandroid/view/View;)Landroid/view/View;
     .locals 4
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # Landroid/view/View;
 
     invoke-virtual {p0}, Landroid/view/View;->getHorizontalFadingEdgeLength()I
 
@@ -689,7 +670,6 @@
 
 .method private handleMessage(Landroid/os/Message;)V
     .locals 10
-    .param p1    # Landroid/os/Message;
 
     iget v6, p1, Landroid/os/Message;->what:I
 
@@ -1213,7 +1193,6 @@
 
 .method private hapticScrollTo(I)V
     .locals 2
-    .param p1    # I
 
     iget v0, p0, Landroid/widget/HorizontalScrollView;->mLastHapticScrollX:I
 
@@ -1262,8 +1241,6 @@
 
 .method private inChild(II)Z
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     const/4 v2, 0x0
 
@@ -1455,7 +1432,6 @@
 
 .method private isOffScreen(Landroid/view/View;)Z
     .locals 2
-    .param p1    # Landroid/view/View;
 
     const/4 v0, 0x0
 
@@ -1481,8 +1457,6 @@
 
 .method private static isViewDescendantOf(Landroid/view/View;Landroid/view/View;)Z
     .locals 3
-    .param p0    # Landroid/view/View;
-    .param p1    # Landroid/view/View;
 
     const/4 v1, 0x1
 
@@ -1517,8 +1491,6 @@
 
 .method private isWithinDeltaOfScreen(Landroid/view/View;I)Z
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     iget-object v0, p0, Landroid/widget/HorizontalScrollView;->mTempRect:Landroid/graphics/Rect;
 
@@ -1571,7 +1543,6 @@
 
 .method private onSecondaryPointerUp(Landroid/view/MotionEvent;)V
     .locals 5
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getAction()I
 
@@ -1648,9 +1619,6 @@
 
 .method private scrollAndFocus(III)Z
     .locals 8
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v4, 0x1
 
@@ -1721,7 +1689,6 @@
 
 .method private scrollToChild(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     iget-object v1, p0, Landroid/widget/HorizontalScrollView;->mTempRect:Landroid/graphics/Rect;
 
@@ -1749,8 +1716,6 @@
 
 .method private scrollToChildRect(Landroid/graphics/Rect;Z)Z
     .locals 3
-    .param p1    # Landroid/graphics/Rect;
-    .param p2    # Z
 
     const/4 v2, 0x0
 
@@ -1786,7 +1751,6 @@
 
 .method private setupQuickController(I)V
     .locals 12
-    .param p1    # I
 
     const v11, 0x1080609
 
@@ -2115,7 +2079,6 @@
 
 .method private showPointerIcon(I)Z
     .locals 4
-    .param p1    # I
 
     const/4 v1, -0x1
 
@@ -2163,7 +2126,6 @@
 # virtual methods
 .method public addView(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getChildCount()I
 
@@ -2187,8 +2149,6 @@
 
 .method public addView(Landroid/view/View;I)V
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getChildCount()I
 
@@ -2212,9 +2172,6 @@
 
 .method public addView(Landroid/view/View;ILandroid/view/ViewGroup$LayoutParams;)V
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # Landroid/view/ViewGroup$LayoutParams;
 
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getChildCount()I
 
@@ -2238,8 +2195,6 @@
 
 .method public addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/ViewGroup$LayoutParams;
 
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getChildCount()I
 
@@ -2263,7 +2218,6 @@
 
 .method public arrowScroll(I)Z
     .locals 11
-    .param p1    # I
 
     const/16 v10, 0x42
 
@@ -2635,7 +2589,6 @@
 
 .method protected computeScrollDeltaToGetChildRectOnScreen(Landroid/graphics/Rect;)I
     .locals 10
-    .param p1    # Landroid/graphics/Rect;
 
     const/4 v7, 0x0
 
@@ -2782,7 +2735,6 @@
 
 .method protected dispatchHoverEvent(Landroid/view/MotionEvent;)Z
     .locals 18
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual/range {p1 .. p1}, Landroid/view/MotionEvent;->getAction()I
 
@@ -3807,7 +3759,6 @@
 
 .method public dispatchKeyEvent(Landroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/KeyEvent;
 
     invoke-super {p0, p1}, Landroid/view/ViewGroup;->dispatchKeyEvent(Landroid/view/KeyEvent;)Z
 
@@ -3835,7 +3786,6 @@
 
 .method public dispatchTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 7
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v6, 0x0
 
@@ -3969,7 +3919,6 @@
 
 .method public draw(Landroid/graphics/Canvas;)V
     .locals 6
-    .param p1    # Landroid/graphics/Canvas;
 
     invoke-super {p0, p1}, Landroid/widget/FrameLayout;->draw(Landroid/graphics/Canvas;)V
 
@@ -4131,7 +4080,6 @@
 
 .method public executeKeyEvent(Landroid/view/KeyEvent;)Z
     .locals 8
-    .param p1    # Landroid/view/KeyEvent;
 
     const/4 v4, 0x0
 
@@ -4294,7 +4242,6 @@
 
 .method public fling(I)V
     .locals 17
-    .param p1    # I
 
     invoke-virtual/range {p0 .. p0}, Landroid/view/ViewGroup;->getChildCount()I
 
@@ -4422,7 +4369,6 @@
 
 .method public fullScroll(I)Z
     .locals 6
-    .param p1    # I
 
     const/4 v4, 0x0
 
@@ -4715,9 +4661,6 @@
 
 .method protected measureChild(Landroid/view/View;II)V
     .locals 6
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v5, 0x0
 
@@ -4748,11 +4691,6 @@
 
 .method protected measureChildWithMargins(Landroid/view/View;IIII)V
     .locals 5
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-virtual {p1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
@@ -4852,7 +4790,6 @@
 
 .method public onGenericMotionEvent(Landroid/view/MotionEvent;)Z
     .locals 6
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getSource()I
 
@@ -4962,7 +4899,6 @@
 
 .method public onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
     .locals 1
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
 
     invoke-super {p0, p1}, Landroid/widget/FrameLayout;->onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
 
@@ -5013,7 +4949,6 @@
 
 .method public onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
     .locals 2
-    .param p1    # Landroid/view/accessibility/AccessibilityNodeInfo;
 
     invoke-super {p0, p1}, Landroid/widget/FrameLayout;->onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
 
@@ -5070,7 +5005,6 @@
 
 .method public onInterceptTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 13
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v2, -0x1
 
@@ -5339,11 +5273,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 11
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     const/4 v9, 0x0
 
@@ -5554,8 +5483,6 @@
 
 .method protected onMeasure(II)V
     .locals 8
-    .param p1    # I
-    .param p2    # I
 
     invoke-super {p0, p1, p2}, Landroid/widget/FrameLayout;->onMeasure(II)V
 
@@ -5635,10 +5562,6 @@
 
 .method protected onOverScrolled(IIZZ)V
     .locals 9
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # Z
 
     const/4 v3, 0x0
 
@@ -5698,8 +5621,6 @@
 
 .method protected onRequestFocusInDescendants(ILandroid/graphics/Rect;)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/graphics/Rect;
 
     const/4 v1, 0x0
 
@@ -5766,7 +5687,6 @@
 
 .method protected onRestoreInstanceState(Landroid/os/Parcelable;)V
     .locals 3
-    .param p1    # Landroid/os/Parcelable;
 
     iget-object v1, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -5854,10 +5774,6 @@
 
 .method protected onSizeChanged(IIII)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-super {p0, p1, p2, p3, p4}, Landroid/widget/FrameLayout;->onSizeChanged(IIII)V
 
@@ -5907,7 +5823,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 26
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-direct/range {p0 .. p0}, Landroid/widget/HorizontalScrollView;->initVelocityTrackerIfNotExists()V
 
@@ -6665,7 +6580,6 @@
 
 .method public onWindowFocusChanged(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-super {p0, p1}, Landroid/view/ViewGroup;->onWindowFocusChanged(Z)V
 
@@ -6685,7 +6599,6 @@
 
 .method public pageScroll(I)Z
     .locals 7
-    .param p1    # I
 
     const/4 v4, 0x0
 
@@ -6801,8 +6714,6 @@
 
 .method public performAccessibilityAction(ILandroid/os/Bundle;)Z
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     const/4 v2, 0x1
 
@@ -6927,8 +6838,6 @@
 
 .method public requestChildFocus(Landroid/view/View;Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/View;
 
     iget-boolean v0, p0, Landroid/widget/HorizontalScrollView;->mIsLayoutDirty:Z
 
@@ -6949,9 +6858,6 @@
 
 .method public requestChildRectangleOnScreen(Landroid/view/View;Landroid/graphics/Rect;Z)Z
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/graphics/Rect;
-    .param p3    # Z
 
     invoke-virtual {p1}, Landroid/view/View;->getLeft()I
 
@@ -6984,7 +6890,6 @@
 
 .method public requestDisallowInterceptTouchEvent(Z)V
     .locals 0
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -7010,8 +6915,6 @@
 
 .method public scrollTo(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getChildCount()I
 
@@ -7089,7 +6992,6 @@
 
 .method public setFillViewport(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-boolean v0, p0, Landroid/widget/HorizontalScrollView;->mFillViewport:Z
 
@@ -7105,7 +7007,6 @@
 
 .method public setHoverScrollDelay(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/widget/HorizontalScrollView;->HOVERSCROLL_DELAY:I
 
@@ -7114,7 +7015,6 @@
 
 .method public setHoverScrollMode(Z)V
     .locals 1
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -7135,7 +7035,6 @@
 
 .method public setHoverScrollSpeed(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/widget/HorizontalScrollView;->HOVERSCROLL_SPEED:I
 
@@ -7144,7 +7043,6 @@
 
 .method public setOverScrollMode(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -7188,7 +7086,6 @@
 
 .method public setSmoothScrollingEnabled(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/widget/HorizontalScrollView;->mSmoothScrollingEnabled:Z
 
@@ -7197,7 +7094,6 @@
 
 .method public setTouchSlop(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/widget/HorizontalScrollView;->mTouchSlop:I
 
@@ -7214,8 +7110,6 @@
 
 .method public final smoothScrollBy(II)V
     .locals 11
-    .param p1    # I
-    .param p2    # I
 
     const/4 v10, 0x0
 
@@ -7321,8 +7215,6 @@
 
 .method public final smoothScrollTo(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget v0, p0, Landroid/view/View;->mScrollX:I
 
@@ -7339,8 +7231,6 @@
 
 .method public updateCustomEdgeGlow(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
     .locals 1
-    .param p1    # Landroid/graphics/drawable/Drawable;
-    .param p2    # Landroid/graphics/drawable/Drawable;
 
     iget-object v0, p0, Landroid/widget/HorizontalScrollView;->mEdgeGlowLeft:Landroid/widget/EdgeEffect;
 

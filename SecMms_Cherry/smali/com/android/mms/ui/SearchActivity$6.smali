@@ -36,7 +36,6 @@
 # virtual methods
 .method public onContentChanged(Lcom/android/mms/ui/MessageListAdapter;)V
     .locals 4
-    .param p1    # Lcom/android/mms/ui/MessageListAdapter;
 
     const-string v0, "Mms/SearchActivity"
 
@@ -73,7 +72,6 @@
 
 .method public onDataSetChanged(Lcom/android/mms/ui/MessageListAdapter;)V
     .locals 0
-    .param p1    # Lcom/android/mms/ui/MessageListAdapter;
 
     return-void
 .end method

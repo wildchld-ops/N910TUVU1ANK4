@@ -77,7 +77,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     const-wide/16 v1, -0x1
 
@@ -206,7 +205,6 @@
 
 .method static synthetic access$000(Lcom/android/server/NetworkTimeUpdateService;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/server/NetworkTimeUpdateService;
 
     iget-object v0, p0, Lcom/android/server/NetworkTimeUpdateService;->mHandler:Landroid/os/Handler;
 
@@ -215,8 +213,6 @@
 
 .method static synthetic access$102(Lcom/android/server/NetworkTimeUpdateService;J)J
     .locals 0
-    .param p0    # Lcom/android/server/NetworkTimeUpdateService;
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/android/server/NetworkTimeUpdateService;->mNitzTimeSetTime:J
 
@@ -225,8 +221,6 @@
 
 .method static synthetic access$202(Lcom/android/server/NetworkTimeUpdateService;J)J
     .locals 0
-    .param p0    # Lcom/android/server/NetworkTimeUpdateService;
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/android/server/NetworkTimeUpdateService;->mNitzZoneSetTime:J
 
@@ -235,8 +229,6 @@
 
 .method static synthetic access$300(Lcom/android/server/NetworkTimeUpdateService;I)V
     .locals 0
-    .param p0    # Lcom/android/server/NetworkTimeUpdateService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/NetworkTimeUpdateService;->onPollNetworkTime(I)V
 
@@ -270,7 +262,6 @@
 
 .method private onPollNetworkTime(I)V
     .locals 13
-    .param p1    # I
 
     const/4 v12, 0x0
 
@@ -522,7 +513,6 @@
 
 .method private resetAlarm(J)V
     .locals 7
-    .param p1    # J
 
     iget-object v4, p0, Lcom/android/server/NetworkTimeUpdateService;->mAlarmManager:Landroid/app/AlarmManager;
 

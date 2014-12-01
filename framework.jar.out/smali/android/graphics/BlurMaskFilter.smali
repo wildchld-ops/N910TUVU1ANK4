@@ -14,8 +14,6 @@
 # direct methods
 .method public constructor <init>(FLandroid/graphics/BlurMaskFilter$Blur;)V
     .locals 1
-    .param p1    # F
-    .param p2    # Landroid/graphics/BlurMaskFilter$Blur;
 
     invoke-direct {p0}, Landroid/graphics/MaskFilter;-><init>()V
 

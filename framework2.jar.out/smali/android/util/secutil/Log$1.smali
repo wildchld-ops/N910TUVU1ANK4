@@ -30,8 +30,6 @@
 # virtual methods
 .method public onTerribleFailure(Ljava/lang/String;Landroid/util/secutil/Log$TerribleFailure;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/util/secutil/Log$TerribleFailure;
 
     invoke-static {p1, p2}, Lcom/android/internal/os/RuntimeInit;->wtf(Ljava/lang/String;Ljava/lang/Throwable;)V
 

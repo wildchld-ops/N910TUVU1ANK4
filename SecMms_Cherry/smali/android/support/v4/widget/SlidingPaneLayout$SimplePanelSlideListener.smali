@@ -30,22 +30,18 @@
 # virtual methods
 .method public onPanelClosed(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     return-void
 .end method
 
 .method public onPanelOpened(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     return-void
 .end method
 
 .method public onPanelSlide(Landroid/view/View;F)V
     .locals 0
-    .param p1    # Landroid/view/View;
-    .param p2    # F
 
     return-void
 .end method

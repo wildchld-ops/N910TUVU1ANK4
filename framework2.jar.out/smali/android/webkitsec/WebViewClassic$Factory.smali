@@ -31,8 +31,6 @@
 # virtual methods
 .method public createWebView(Landroid/webkitsec/WebView;Landroid/webkitsec/WebView$PrivateAccess;)Landroid/webkitsec/WebViewProvider;
     .locals 1
-    .param p1    # Landroid/webkitsec/WebView;
-    .param p2    # Landroid/webkitsec/WebView$PrivateAccess;
 
     new-instance v0, Landroid/webkitsec/WebViewClassic;
 
@@ -43,7 +41,6 @@
 
 .method public findAddress(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Landroid/webkitsec/WebViewClassic;->findAddress(Ljava/lang/String;)Ljava/lang/String;
 
@@ -64,7 +61,6 @@
 
 .method public getDefaultUserAgent(Landroid/content/Context;)Ljava/lang/String;
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
 
@@ -115,7 +111,6 @@
 
 .method public getWebViewDatabase(Landroid/content/Context;)Landroid/webkitsec/WebViewDatabase;
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-static {p1}, Landroid/webkitsec/WebViewDatabaseClassic;->getInstance(Landroid/content/Context;)Landroid/webkitsec/WebViewDatabaseClassic;
 
@@ -126,7 +121,6 @@
 
 .method public setPlatformNotificationsEnabled(Z)V
     .locals 0
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 

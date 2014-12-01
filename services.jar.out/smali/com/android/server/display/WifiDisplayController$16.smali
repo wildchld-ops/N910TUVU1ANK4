@@ -36,7 +36,6 @@
 # virtual methods
 .method public onConnectionInfoAvailable(Landroid/net/wifi/p2p/WifiP2pInfo;)V
     .locals 3
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pInfo;
 
     if-eqz p1, :cond_1
 

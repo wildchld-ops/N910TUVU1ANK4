@@ -43,8 +43,6 @@
 
 .method synthetic constructor <init>(Lcom/android/mms/freemessage/FileTransfer;Lcom/android/mms/freemessage/FileTransfer$1;)V
     .locals 0
-    .param p1    # Lcom/android/mms/freemessage/FileTransfer;
-    .param p2    # Lcom/android/mms/freemessage/FileTransfer$1;
 
     invoke-direct {p0, p1}, Lcom/android/mms/freemessage/FileTransfer$MakeVcfFileAndSend;-><init>(Lcom/android/mms/freemessage/FileTransfer;)V
 
@@ -55,7 +53,6 @@
 # virtual methods
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [Landroid/net/Uri;
 
@@ -68,7 +65,6 @@
 
 .method protected varargs doInBackground([Landroid/net/Uri;)[B
     .locals 5
-    .param p1    # [Landroid/net/Uri;
 
     const/4 v0, 0x0
 
@@ -168,7 +164,6 @@
 
 .method protected bridge synthetic onPostExecute(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, [B
 
@@ -179,7 +174,6 @@
 
 .method protected onPostExecute([B)V
     .locals 2
-    .param p1    # [B
 
     iget-object v1, p0, Lcom/android/mms/freemessage/FileTransfer$MakeVcfFileAndSend;->mDialog:Landroid/app/ProgressDialog;
 

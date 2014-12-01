@@ -68,7 +68,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -79,8 +78,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const v0, 0x101006b
 
@@ -91,9 +88,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 9
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v8, -0x2
 
@@ -275,10 +269,6 @@
 
 .method static synthetic access$500(Landroid/widget/AutoCompleteTextView;Landroid/view/View;IJ)V
     .locals 0
-    .param p0    # Landroid/widget/AutoCompleteTextView;
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # J
 
     invoke-direct {p0, p1, p2, p3, p4}, Landroid/widget/AutoCompleteTextView;->performCompletion(Landroid/view/View;IJ)V
 
@@ -287,7 +277,6 @@
 
 .method static synthetic access$600(Landroid/widget/AutoCompleteTextView;)V
     .locals 0
-    .param p0    # Landroid/widget/AutoCompleteTextView;
 
     invoke-direct {p0}, Landroid/widget/AutoCompleteTextView;->onClickImpl()V
 
@@ -296,7 +285,6 @@
 
 .method static synthetic access$700(Landroid/widget/AutoCompleteTextView;)Landroid/widget/ListAdapter;
     .locals 1
-    .param p0    # Landroid/widget/AutoCompleteTextView;
 
     iget-object v0, p0, Landroid/widget/AutoCompleteTextView;->mAdapter:Landroid/widget/ListAdapter;
 
@@ -305,8 +293,6 @@
 
 .method static synthetic access$800(Landroid/widget/AutoCompleteTextView;I)V
     .locals 0
-    .param p0    # Landroid/widget/AutoCompleteTextView;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/widget/AutoCompleteTextView;->updateDropDownForFilter(I)V
 
@@ -413,9 +399,6 @@
 
 .method private performCompletion(Landroid/view/View;IJ)V
     .locals 9
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # J
 
     invoke-virtual {p0}, Landroid/widget/AutoCompleteTextView;->isPopupShowing()Z
 
@@ -532,7 +515,6 @@
 
 .method private updateDropDownForFilter(I)V
     .locals 4
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/view/View;->getWindowVisibility()I
 
@@ -616,7 +598,6 @@
 
 .method protected convertSelectionToString(Ljava/lang/Object;)Ljava/lang/CharSequence;
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     iget-object v0, p0, Landroid/widget/AutoCompleteTextView;->mFilter:Landroid/widget/Filter;
 
@@ -772,7 +753,6 @@
 
 .method public ensureImeVisible(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v1, p0, Landroid/widget/AutoCompleteTextView;->mPopup:Landroid/widget/ListPopupWindow;
 
@@ -1055,7 +1035,6 @@
 
 .method public onCommitCompletion(Landroid/view/inputmethod/CompletionInfo;)V
     .locals 2
-    .param p1    # Landroid/view/inputmethod/CompletionInfo;
 
     invoke-virtual {p0}, Landroid/widget/AutoCompleteTextView;->isPopupShowing()Z
 
@@ -1087,7 +1066,6 @@
 
 .method protected onDisplayHint(I)V
     .locals 1
-    .param p1    # I
 
     invoke-super {p0, p1}, Landroid/view/View;->onDisplayHint(I)V
 
@@ -1120,7 +1098,6 @@
 
 .method public onFilterComplete(I)V
     .locals 0
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/widget/AutoCompleteTextView;->updateDropDownForFilter(I)V
 
@@ -1129,9 +1106,6 @@
 
 .method protected onFocusChanged(ZILandroid/graphics/Rect;)V
     .locals 1
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # Landroid/graphics/Rect;
 
     invoke-super {p0, p1, p2, p3}, Landroid/widget/EditText;->onFocusChanged(ZILandroid/graphics/Rect;)V
 
@@ -1158,8 +1132,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x1
 
@@ -1244,8 +1216,6 @@
 
 .method public onKeyPreIme(ILandroid/view/KeyEvent;)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v1, 0x1
 
@@ -1333,8 +1303,6 @@
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v1, 0x1
 
@@ -1401,7 +1369,6 @@
 
 .method public onWindowFocusChanged(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-super {p0, p1}, Landroid/widget/TextView;->onWindowFocusChanged(Z)V
 
@@ -1437,8 +1404,6 @@
 
 .method protected performFiltering(Ljava/lang/CharSequence;I)V
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
 
     iget-object v0, p0, Landroid/widget/AutoCompleteTextView;->mFilter:Landroid/widget/Filter;
 
@@ -1490,7 +1455,6 @@
 
 .method protected replaceText(Ljava/lang/CharSequence;)V
     .locals 2
-    .param p1    # Ljava/lang/CharSequence;
 
     invoke-virtual {p0}, Landroid/widget/TextView;->clearComposingText()V
 
@@ -1585,7 +1549,6 @@
 
 .method public setCompletionHint(Ljava/lang/CharSequence;)V
     .locals 4
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v3, 0x0
 
@@ -1651,7 +1614,6 @@
 
 .method public setDropDownAlwaysVisible(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Landroid/widget/AutoCompleteTextView;->mPopup:Landroid/widget/ListPopupWindow;
 
@@ -1662,7 +1624,6 @@
 
 .method public setDropDownAnchor(I)V
     .locals 2
-    .param p1    # I
 
     iput p1, p0, Landroid/widget/AutoCompleteTextView;->mDropDownAnchorId:I
 
@@ -1677,7 +1638,6 @@
 
 .method public setDropDownAnimationStyle(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/widget/AutoCompleteTextView;->mPopup:Landroid/widget/ListPopupWindow;
 
@@ -1688,7 +1648,6 @@
 
 .method public setDropDownBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
     .locals 1
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     iget-object v0, p0, Landroid/widget/AutoCompleteTextView;->mPopup:Landroid/widget/ListPopupWindow;
 
@@ -1699,7 +1658,6 @@
 
 .method public setDropDownBackgroundResource(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Landroid/widget/AutoCompleteTextView;->mPopup:Landroid/widget/ListPopupWindow;
 
@@ -1718,7 +1676,6 @@
 
 .method public setDropDownDismissedOnCompletion(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/widget/AutoCompleteTextView;->mDropDownDismissedOnCompletion:Z
 
@@ -1727,7 +1684,6 @@
 
 .method public setDropDownHeight(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/widget/AutoCompleteTextView;->mPopup:Landroid/widget/ListPopupWindow;
 
@@ -1738,7 +1694,6 @@
 
 .method public setDropDownHorizontalOffset(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/widget/AutoCompleteTextView;->mPopup:Landroid/widget/ListPopupWindow;
 
@@ -1749,7 +1704,6 @@
 
 .method public setDropDownVerticalOffset(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/widget/AutoCompleteTextView;->mPopup:Landroid/widget/ListPopupWindow;
 
@@ -1760,7 +1714,6 @@
 
 .method public setDropDownWidth(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/widget/AutoCompleteTextView;->mPopup:Landroid/widget/ListPopupWindow;
 
@@ -1771,7 +1724,6 @@
 
 .method public setForceIgnoreOutsideTouch(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Landroid/widget/AutoCompleteTextView;->mPopup:Landroid/widget/ListPopupWindow;
 
@@ -1782,10 +1734,6 @@
 
 .method protected setFrame(IIII)Z
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-super {p0, p1, p2, p3, p4}, Landroid/widget/TextView;->setFrame(IIII)Z
 
@@ -1805,7 +1753,6 @@
 
 .method public setListSelection(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/widget/AutoCompleteTextView;->mPopup:Landroid/widget/ListPopupWindow;
 
@@ -1816,7 +1763,6 @@
 
 .method public setOnClickListener(Landroid/view/View$OnClickListener;)V
     .locals 1
-    .param p1    # Landroid/view/View$OnClickListener;
 
     iget-object v0, p0, Landroid/widget/AutoCompleteTextView;->mPassThroughClickListener:Landroid/widget/AutoCompleteTextView$PassThroughClickListener;
 
@@ -1828,7 +1774,6 @@
 
 .method public setOnDismissListener(Landroid/widget/AutoCompleteTextView$OnDismissListener;)V
     .locals 2
-    .param p1    # Landroid/widget/AutoCompleteTextView$OnDismissListener;
 
     const/4 v0, 0x0
 
@@ -1848,7 +1793,6 @@
 
 .method public setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
     .locals 0
-    .param p1    # Landroid/widget/AdapterView$OnItemClickListener;
 
     iput-object p1, p0, Landroid/widget/AutoCompleteTextView;->mItemClickListener:Landroid/widget/AdapterView$OnItemClickListener;
 
@@ -1857,7 +1801,6 @@
 
 .method public setOnItemSelectedListener(Landroid/widget/AdapterView$OnItemSelectedListener;)V
     .locals 0
-    .param p1    # Landroid/widget/AdapterView$OnItemSelectedListener;
 
     iput-object p1, p0, Landroid/widget/AutoCompleteTextView;->mItemSelectedListener:Landroid/widget/AdapterView$OnItemSelectedListener;
 
@@ -1866,8 +1809,6 @@
 
 .method public setText(Ljava/lang/CharSequence;Z)V
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Z
 
     if-eqz p2, :cond_0
 
@@ -1892,7 +1833,6 @@
 
 .method public setThreshold(I)V
     .locals 0
-    .param p1    # I
 
     if-gtz p1, :cond_0
 
@@ -1906,7 +1846,6 @@
 
 .method public setValidator(Landroid/widget/AutoCompleteTextView$Validator;)V
     .locals 0
-    .param p1    # Landroid/widget/AutoCompleteTextView$Validator;
 
     iput-object p1, p0, Landroid/widget/AutoCompleteTextView;->mValidator:Landroid/widget/AutoCompleteTextView$Validator;
 
@@ -2033,7 +1972,6 @@
 
 .method public twEnsureImeVisibleWithoutShowDropDown(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v1, p0, Landroid/widget/AutoCompleteTextView;->mPopup:Landroid/widget/ListPopupWindow;
 

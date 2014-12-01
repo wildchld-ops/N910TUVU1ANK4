@@ -22,7 +22,6 @@
 
 .method public static convertToPhotoringMTState(I)Lcom/android/services/telephony/common/PhotoringCommon$PhotoringMTState;
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 

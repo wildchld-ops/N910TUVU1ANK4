@@ -39,8 +39,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/appwidget/AppWidgetManager;Lcom/android/settings/AppWidgetLoader$ItemConstructor;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/appwidget/AppWidgetManager;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -66,7 +64,6 @@
 # virtual methods
 .method protected getItems(Landroid/content/Intent;)Ljava/util/List;
     .locals 6
-    .param p1    # Landroid/content/Intent;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -124,8 +121,6 @@
 
 .method putAppWidgetItems(Ljava/util/List;Ljava/util/List;Ljava/util/List;IZ)V
     .locals 7
-    .param p4    # I
-    .param p5    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -237,7 +232,6 @@
 
 .method putCustomAppWidgets(Ljava/util/List;Landroid/content/Intent;)V
     .locals 10
-    .param p2    # Landroid/content/Intent;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -463,7 +457,6 @@
 
 .method putInstalledAppWidgets(Ljava/util/List;I)V
     .locals 6
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

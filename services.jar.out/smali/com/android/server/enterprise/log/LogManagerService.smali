@@ -66,8 +66,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Lcom/android/server/enterprise/EnterpriseDeviceManagerService;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/server/enterprise/EnterpriseDeviceManagerService;
 
     invoke-direct {p0}, Landroid/app/enterprise/ILogManager$Stub;-><init>()V
 
@@ -104,8 +102,6 @@
 
 .method static synthetic access$000(Lcom/android/server/enterprise/log/LogManagerService;I)Lcom/android/server/enterprise/log/Logger;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/log/LogManagerService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/log/LogManagerService;->getLogger(I)Lcom/android/server/enterprise/log/Logger;
 
@@ -147,7 +143,6 @@
 
 .method private static createLogger(I)Lcom/android/server/enterprise/log/Logger;
     .locals 4
-    .param p0    # I
 
     const/4 v3, 0x0
 
@@ -221,7 +216,6 @@
 
 .method private getLogger(I)Lcom/android/server/enterprise/log/Logger;
     .locals 2
-    .param p1    # I
 
     if-eqz p1, :cond_0
 
@@ -316,7 +310,6 @@
 
 .method private isValidLogLevel(I)Z
     .locals 1
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -345,7 +338,6 @@
 
 .method private isValidLogType(I)Z
     .locals 5
-    .param p1    # I
 
     sget-object v0, Lcom/android/server/enterprise/log/LogManagerService;->LOGGER_TYPES:[I
 
@@ -380,7 +372,6 @@
 # virtual methods
 .method public copyLogs(Landroid/os/ParcelFileDescriptor;)I
     .locals 6
-    .param p1    # Landroid/os/ParcelFileDescriptor;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/log/LogManagerService;->checkCallingUidAccess()Z
 
@@ -458,7 +449,6 @@
 
 .method public disableLogging(I)I
     .locals 3
-    .param p1    # I
 
     invoke-direct {p0}, Lcom/android/server/enterprise/log/LogManagerService;->checkCallingUidAccess()Z
 
@@ -515,7 +505,6 @@
 
 .method public enableLogging(I)I
     .locals 3
-    .param p1    # I
 
     invoke-direct {p0}, Lcom/android/server/enterprise/log/LogManagerService;->checkCallingUidAccess()Z
 
@@ -572,7 +561,6 @@
 
 .method public getLogLevel(I)I
     .locals 2
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/log/LogManagerService;->isValidLogType(I)Z
 
@@ -606,7 +594,6 @@
 
 .method public isLoggingEnabled(I)Z
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/log/LogManagerService;->getLogger(I)Lcom/android/server/enterprise/log/Logger;
 
@@ -627,8 +614,6 @@
 
 .method public setLogLevel(II)I
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0}, Lcom/android/server/enterprise/log/LogManagerService;->checkCallingUidAccess()Z
 

@@ -40,7 +40,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/ui/AutoRetrievePreferenceActivity;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/AutoRetrievePreferenceActivity;
 
     invoke-direct {p0}, Lcom/android/mms/ui/AutoRetrievePreferenceActivity;->restoreDefaultPreferences()V
 
@@ -49,7 +48,6 @@
 
 .method private confirmRestoreDialog(Landroid/content/DialogInterface$OnClickListener;)V
     .locals 3
-    .param p1    # Landroid/content/DialogInterface$OnClickListener;
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
@@ -84,7 +82,6 @@
 
 .method private onAutoRetrievePreferenceTreeClick(Landroid/preference/Preference;)V
     .locals 5
-    .param p1    # Landroid/preference/Preference;
 
     const/4 v4, 0x1
 
@@ -217,8 +214,6 @@
 
 .method private removePreference(Landroid/preference/PreferenceGroup;Landroid/preference/Preference;)V
     .locals 0
-    .param p1    # Landroid/preference/PreferenceGroup;
-    .param p2    # Landroid/preference/Preference;
 
     if-eqz p1, :cond_0
 
@@ -280,9 +275,6 @@
 
 .method public static setAutoRetrieveValue(Landroid/content/Context;ZI)V
     .locals 7
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
-    .param p2    # I
 
     const/4 v6, 0x1
 
@@ -391,7 +383,6 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 6
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v5, 0x1
 
@@ -486,7 +477,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 1
-    .param p1    # Landroid/view/Menu;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreateOptionsMenu(Landroid/view/Menu;)Z
 
@@ -505,7 +495,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 2
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v0, 0x1
 
@@ -553,8 +542,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 1
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     const-string v0, "pref_key_mms_auto_retrieval_sim1"
 
@@ -611,8 +598,6 @@
 
 .method public sendBroadcastMMSRetrieveValue(ZI)V
     .locals 4
-    .param p1    # Z
-    .param p2    # I
 
     const-string v1, "Mms/AutoRetrievePreferenceActivity"
 

@@ -25,8 +25,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/enterprise/email/AccountsReceiver;Lcom/android/server/enterprise/email/AccountSMIMECertificate;J)V
     .locals 0
-    .param p2    # Lcom/android/server/enterprise/email/AccountSMIMECertificate;
-    .param p3    # J
 
     iput-object p1, p0, Lcom/android/server/enterprise/email/AccountsReceiver$SMIMEThread;->this$0:Lcom/android/server/enterprise/email/AccountsReceiver;
 

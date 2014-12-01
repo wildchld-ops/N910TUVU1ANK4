@@ -122,7 +122,6 @@
 
 .method public constructor <init>(Landroid/app/Application;)V
     .locals 2
-    .param p1    # Landroid/app/Application;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -143,7 +142,6 @@
 # virtual methods
 .method getBadgeCount(Landroid/content/ComponentName;)I
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
 
     const/4 v0, 0x0
 

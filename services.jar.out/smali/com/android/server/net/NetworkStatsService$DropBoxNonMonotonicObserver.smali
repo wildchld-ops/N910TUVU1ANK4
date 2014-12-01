@@ -44,8 +44,6 @@
 
 .method synthetic constructor <init>(Lcom/android/server/net/NetworkStatsService;Lcom/android/server/net/NetworkStatsService$1;)V
     .locals 0
-    .param p1    # Lcom/android/server/net/NetworkStatsService;
-    .param p2    # Lcom/android/server/net/NetworkStatsService$1;
 
     invoke-direct {p0, p1}, Lcom/android/server/net/NetworkStatsService$DropBoxNonMonotonicObserver;-><init>(Lcom/android/server/net/NetworkStatsService;)V
 
@@ -56,11 +54,6 @@
 # virtual methods
 .method public bridge synthetic foundNonMonotonic(Landroid/net/NetworkStats;ILandroid/net/NetworkStats;ILjava/lang/Object;)V
     .locals 6
-    .param p1    # Landroid/net/NetworkStats;
-    .param p2    # I
-    .param p3    # Landroid/net/NetworkStats;
-    .param p4    # I
-    .param p5    # Ljava/lang/Object;
 
     move-object v5, p5
 
@@ -83,11 +76,6 @@
 
 .method public foundNonMonotonic(Landroid/net/NetworkStats;ILandroid/net/NetworkStats;ILjava/lang/String;)V
     .locals 5
-    .param p1    # Landroid/net/NetworkStats;
-    .param p2    # I
-    .param p3    # Landroid/net/NetworkStats;
-    .param p4    # I
-    .param p5    # Ljava/lang/String;
 
     const/16 v4, 0xa
 

@@ -21,7 +21,6 @@
 # direct methods
 .method constructor <init>(Landroid/widget/ActivityChooserView;Landroid/view/View;)V
     .locals 0
-    .param p2    # Landroid/view/View;
 
     iput-object p1, p0, Landroid/widget/ActivityChooserView$4;->this$0:Landroid/widget/ActivityChooserView;
 

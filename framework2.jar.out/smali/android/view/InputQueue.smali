@@ -93,8 +93,6 @@
 
 .method private finishInputEvent(IZ)V
     .locals 4
-    .param p1    # I
-    .param p2    # Z
 
     iget-object v2, p0, Landroid/view/InputQueue;->mActiveEventArray:Landroid/util/SparseArray;
 
@@ -153,8 +151,6 @@
 
 .method private obtainActiveInputEvent(Ljava/lang/Object;Landroid/view/InputQueue$FinishedInputEventCallback;)Landroid/view/InputQueue$ActiveInputEvent;
     .locals 2
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Landroid/view/InputQueue$FinishedInputEventCallback;
 
     iget-object v1, p0, Landroid/view/InputQueue;->mActiveInputEventPool:Landroid/util/Pools$Pool;
 
@@ -182,7 +178,6 @@
 
 .method private recycleActiveInputEvent(Landroid/view/InputQueue$ActiveInputEvent;)V
     .locals 1
-    .param p1    # Landroid/view/InputQueue$ActiveInputEvent;
 
     invoke-virtual {p1}, Landroid/view/InputQueue$ActiveInputEvent;->recycle()V
 
@@ -207,7 +202,6 @@
 
 .method public dispose(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Landroid/view/InputQueue;->mCloseGuard:Ldalvik/system/CloseGuard;
 
@@ -278,10 +272,6 @@
 
 .method public sendInputEvent(Landroid/view/InputEvent;Ljava/lang/Object;ZLandroid/view/InputQueue$FinishedInputEventCallback;)V
     .locals 3
-    .param p1    # Landroid/view/InputEvent;
-    .param p2    # Ljava/lang/Object;
-    .param p3    # Z
-    .param p4    # Landroid/view/InputQueue$FinishedInputEventCallback;
 
     invoke-direct {p0, p2, p4}, Landroid/view/InputQueue;->obtainActiveInputEvent(Ljava/lang/Object;Landroid/view/InputQueue$FinishedInputEventCallback;)Landroid/view/InputQueue$ActiveInputEvent;
 

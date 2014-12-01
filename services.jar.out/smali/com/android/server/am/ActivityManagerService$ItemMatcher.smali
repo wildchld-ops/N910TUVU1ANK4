@@ -68,8 +68,6 @@
 # virtual methods
 .method build([Ljava/lang/String;I)I
     .locals 2
-    .param p1    # [Ljava/lang/String;
-    .param p2    # I
 
     :goto_0
     array-length v1, p1
@@ -101,7 +99,6 @@
 
 .method build(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     const/4 v5, 0x0
 
@@ -193,8 +190,6 @@
 
 .method match(Ljava/lang/Object;Landroid/content/ComponentName;)Z
     .locals 5
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Landroid/content/ComponentName;
 
     const/4 v3, 0x1
 

@@ -37,8 +37,6 @@
 # direct methods
 .method constructor <init>(ILandroid/renderscript/RenderScript;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Landroid/renderscript/RenderScript;
 
     invoke-direct {p0, p1, p2}, Landroid/renderscript/BaseObj;-><init>(ILandroid/renderscript/RenderScript;)V
 
@@ -47,7 +45,6 @@
 
 .method public static BLEND_ALPHA_DEPTH_NONE(Landroid/renderscript/RenderScript;)Landroid/renderscript/ProgramStore;
     .locals 4
-    .param p0    # Landroid/renderscript/RenderScript;
 
     const/4 v3, 0x0
 
@@ -87,7 +84,6 @@
 
 .method public static BLEND_ALPHA_DEPTH_TEST(Landroid/renderscript/RenderScript;)Landroid/renderscript/ProgramStore;
     .locals 3
-    .param p0    # Landroid/renderscript/RenderScript;
 
     iget-object v1, p0, Landroid/renderscript/RenderScript;->mProgramStore_BLEND_ALPHA_DEPTH_TEST:Landroid/renderscript/ProgramStore;
 
@@ -129,7 +125,6 @@
 
 .method public static BLEND_NONE_DEPTH_NONE(Landroid/renderscript/RenderScript;)Landroid/renderscript/ProgramStore;
     .locals 4
-    .param p0    # Landroid/renderscript/RenderScript;
 
     const/4 v3, 0x0
 
@@ -169,7 +164,6 @@
 
 .method public static BLEND_NONE_DEPTH_TEST(Landroid/renderscript/RenderScript;)Landroid/renderscript/ProgramStore;
     .locals 3
-    .param p0    # Landroid/renderscript/RenderScript;
 
     iget-object v1, p0, Landroid/renderscript/RenderScript;->mProgramStore_BLEND_NONE_DEPTH_TEST:Landroid/renderscript/ProgramStore;
 

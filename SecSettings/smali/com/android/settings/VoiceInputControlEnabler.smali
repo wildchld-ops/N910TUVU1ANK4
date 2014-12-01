@@ -53,8 +53,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/widget/Switch;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/widget/Switch;
 
     const/4 v2, 0x0
 
@@ -125,7 +123,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/VoiceInputControlEnabler;)Landroid/widget/Switch;
     .locals 1
-    .param p0    # Lcom/android/settings/VoiceInputControlEnabler;
 
     iget-object v0, p0, Lcom/android/settings/VoiceInputControlEnabler;->mSwitch:Landroid/widget/Switch;
 
@@ -134,7 +131,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/VoiceInputControlEnabler;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/settings/VoiceInputControlEnabler;
 
     iget-object v0, p0, Lcom/android/settings/VoiceInputControlEnabler;->mContext:Landroid/content/Context;
 
@@ -143,7 +139,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/VoiceInputControlEnabler;)V
     .locals 0
-    .param p0    # Lcom/android/settings/VoiceInputControlEnabler;
 
     invoke-direct {p0}, Lcom/android/settings/VoiceInputControlEnabler;->showAllOptionDisabledDialog()V
 
@@ -152,7 +147,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/VoiceInputControlEnabler;)Landroid/preference/PreferenceActivity$Header;
     .locals 1
-    .param p0    # Lcom/android/settings/VoiceInputControlEnabler;
 
     iget-object v0, p0, Lcom/android/settings/VoiceInputControlEnabler;->mHeader:Landroid/preference/PreferenceActivity$Header;
 
@@ -161,7 +155,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/VoiceInputControlEnabler;)I
     .locals 1
-    .param p0    # Lcom/android/settings/VoiceInputControlEnabler;
 
     iget v0, p0, Lcom/android/settings/VoiceInputControlEnabler;->mPosition:I
 
@@ -366,8 +359,6 @@
 
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 13
-    .param p1    # Landroid/widget/CompoundButton;
-    .param p2    # Z
 
     const/4 v10, 0x0
 
@@ -1015,8 +1006,6 @@
 
 .method public setHeaderPosition(Landroid/preference/PreferenceActivity$Header;I)V
     .locals 0
-    .param p1    # Landroid/preference/PreferenceActivity$Header;
-    .param p2    # I
 
     iput-object p1, p0, Lcom/android/settings/VoiceInputControlEnabler;->mHeader:Landroid/preference/PreferenceActivity$Header;
 
@@ -1027,7 +1016,6 @@
 
 .method public setSwitch(Landroid/widget/Switch;)V
     .locals 5
-    .param p1    # Landroid/widget/Switch;
 
     const/4 v4, 0x1
 
@@ -1190,7 +1178,6 @@
 
 .method public updateSwitch(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/settings/VoiceInputControlEnabler;->mSwitch:Landroid/widget/Switch;
 

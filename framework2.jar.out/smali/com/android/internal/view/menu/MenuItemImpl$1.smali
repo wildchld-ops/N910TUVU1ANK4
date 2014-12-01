@@ -36,7 +36,6 @@
 # virtual methods
 .method public onActionProviderVisibilityChanged(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/internal/view/menu/MenuItemImpl$1;->this$0:Lcom/android/internal/view/menu/MenuItemImpl;
 

@@ -51,8 +51,6 @@
 
 .method synthetic constructor <init>(Lcom/android/server/WiredAccessoryManager$WiredAccessoryObserver;Lcom/android/server/WiredAccessoryManager$1;)V
     .locals 0
-    .param p1    # Lcom/android/server/WiredAccessoryManager$WiredAccessoryObserver;
-    .param p2    # Lcom/android/server/WiredAccessoryManager$1;
 
     invoke-direct {p0, p1}, Lcom/android/server/WiredAccessoryManager$WiredAccessoryObserver$UsbAudioData;-><init>(Lcom/android/server/WiredAccessoryManager$WiredAccessoryObserver;)V
 
@@ -147,7 +145,6 @@
 
 .method public getSamplingRate(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x2
 
@@ -252,16 +249,6 @@
 
 .method public setUsbAudioData(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZII)V
     .locals 0
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Ljava/lang/String;
-    .param p7    # Z
-    .param p8    # Z
-    .param p9    # I
-    .param p10    # I
 
     iput p1, p0, Lcom/android/server/WiredAccessoryManager$WiredAccessoryObserver$UsbAudioData;->state:I
 

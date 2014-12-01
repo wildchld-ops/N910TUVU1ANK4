@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -53,9 +52,6 @@
 
 .method public setAudioContextInformation(Z[IZ)V
     .locals 5
-    .param p1    # Z
-    .param p2    # [I
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -133,7 +129,6 @@
 
 .method public setFramebufferContextInformation(Ljava/util/List;Z)V
     .locals 5
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

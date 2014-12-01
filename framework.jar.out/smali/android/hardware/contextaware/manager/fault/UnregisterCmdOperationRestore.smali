@@ -6,7 +6,6 @@
 # direct methods
 .method protected constructor <init>(Landroid/hardware/contextaware/manager/ContextManager;)V
     .locals 0
-    .param p1    # Landroid/hardware/contextaware/manager/ContextManager;
 
     invoke-direct {p0, p1}, Landroid/hardware/contextaware/manager/fault/RestoreTransaction;-><init>(Landroid/hardware/contextaware/manager/ContextManager;)V
 
@@ -25,9 +24,6 @@
 
 .method protected final runRestore(Landroid/hardware/contextaware/manager/ContextAwareService$Listener;ILandroid/hardware/contextaware/manager/IContextObserver;)V
     .locals 3
-    .param p1    # Landroid/hardware/contextaware/manager/ContextAwareService$Listener;
-    .param p2    # I
-    .param p3    # Landroid/hardware/contextaware/manager/IContextObserver;
 
     if-nez p1, :cond_0
 

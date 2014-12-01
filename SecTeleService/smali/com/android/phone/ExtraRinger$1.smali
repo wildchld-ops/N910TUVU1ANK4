@@ -130,7 +130,7 @@
 
     int-to-long v1, v1
 
-    invoke-virtual {p0, v0, v1, v2}, Landroid/os/Handler;->sendEmptyMessageDelayed(IJ)Z
+    invoke-virtual {p0, v0, v1, v2}, Lcom/android/phone/ExtraRinger$1;->sendEmptyMessageDelayed(IJ)Z
 
     goto :goto_0
 

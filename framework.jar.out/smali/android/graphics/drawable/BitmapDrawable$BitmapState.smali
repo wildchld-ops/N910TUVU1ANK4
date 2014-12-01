@@ -37,7 +37,6 @@
 # direct methods
 .method constructor <init>(Landroid/graphics/Bitmap;)V
     .locals 3
-    .param p1    # Landroid/graphics/Bitmap;
 
     const/4 v2, 0x0
 
@@ -70,7 +69,6 @@
 
 .method constructor <init>(Landroid/graphics/drawable/BitmapDrawable$BitmapState;)V
     .locals 2
-    .param p1    # Landroid/graphics/drawable/BitmapDrawable$BitmapState;
 
     iget-object v0, p1, Landroid/graphics/drawable/BitmapDrawable$BitmapState;->mBitmap:Landroid/graphics/Bitmap;
 
@@ -147,7 +145,6 @@
 
 .method public newDrawable(Landroid/content/res/Resources;)Landroid/graphics/drawable/Drawable;
     .locals 2
-    .param p1    # Landroid/content/res/Resources;
 
     new-instance v0, Landroid/graphics/drawable/BitmapDrawable;
 

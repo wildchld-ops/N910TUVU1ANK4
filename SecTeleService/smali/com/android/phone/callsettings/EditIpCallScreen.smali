@@ -60,7 +60,7 @@
     .locals 3
     .param p1    # Ljava/lang/String;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/EditIpCallScreen;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -153,7 +153,7 @@
 
     const v4, 0x7f0905c1
 
-    invoke-virtual {p0, v4}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v4}, Lcom/android/phone/callsettings/EditIpCallScreen;->getString(I)Ljava/lang/String;
 
     move-result-object v4
 
@@ -203,7 +203,7 @@
 
     iput-object v3, p0, Lcom/android/phone/callsettings/EditIpCallScreen;->titleString:Ljava/lang/CharSequence;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/EditIpCallScreen;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
 
@@ -245,7 +245,7 @@
 
     const v3, 0x7f0902fb
 
-    invoke-virtual {p0, v3}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v3}, Lcom/android/phone/callsettings/EditIpCallScreen;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -257,7 +257,7 @@
 
     iget-object v4, p0, Lcom/android/phone/callsettings/EditIpCallScreen;->prevString:Ljava/lang/String;
 
-    invoke-virtual {v3, v4}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {v3, v4}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
     iget-object v3, p0, Lcom/android/phone/callsettings/EditIpCallScreen;->mCreateEdit:Landroid/widget/EditText;
 
@@ -322,13 +322,13 @@
 
     invoke-static {v0, v1}, Lcom/android/phone/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/EditIpCallScreen;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v0
 
     invoke-virtual {v0}, Landroid/app/FragmentManager;->invalidateOptionsMenu()V
 
-    invoke-super {p0, p1}, Landroid/app/Fragment;->onConfigurationChanged(Landroid/content/res/Configuration;)V
+    invoke-super {p0, p1}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
     return-void
 .end method
@@ -345,7 +345,7 @@
 
     invoke-static {v4, v5}, Lcom/android/phone/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getActionBar()Landroid/app/ActionBar;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/EditIpCallScreen;->getActionBar()Landroid/app/ActionBar;
 
     move-result-object v0
 
@@ -386,7 +386,7 @@
 
     invoke-direct {v4, p0}, Lcom/android/phone/callsettings/EditIpCallScreen$1;-><init>(Lcom/android/phone/callsettings/EditIpCallScreen;)V
 
-    invoke-virtual {v1, v4}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v1, v4}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     const v4, 0x7f0a008d
 
@@ -398,13 +398,13 @@
 
     const v4, 0x7f090151
 
-    invoke-virtual {v3, v4}, Landroid/widget/TextView;->setText(I)V
+    invoke-virtual {v3, v4}, Landroid/widget/Button;->setText(I)V
 
     new-instance v4, Lcom/android/phone/callsettings/EditIpCallScreen$2;
 
     invoke-direct {v4, p0}, Lcom/android/phone/callsettings/EditIpCallScreen$2;-><init>(Lcom/android/phone/callsettings/EditIpCallScreen;)V
 
-    invoke-virtual {v3, v4}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v3, v4}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     :cond_1
     return-void
@@ -507,7 +507,7 @@
 
     invoke-interface {v1, v0}, Landroid/view/MenuItem;->setVisible(Z)Landroid/view/MenuItem;
 
-    invoke-super {p0, p1, p2}, Landroid/app/Fragment;->onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
+    invoke-super {p0, p1, p2}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
 
     return-void
 
@@ -552,7 +552,7 @@
 
     const/4 v5, 0x2
 
-    invoke-virtual {v4, v5}, Landroid/widget/TextView;->setInputType(I)V
+    invoke-virtual {v4, v5}, Landroid/widget/EditText;->setInputType(I)V
 
     iget-object v4, p0, Lcom/android/phone/callsettings/EditIpCallScreen;->mCreateEdit:Landroid/widget/EditText;
 
@@ -560,7 +560,7 @@
 
     iget-object v4, p0, Lcom/android/phone/callsettings/EditIpCallScreen;->mCreateEdit:Landroid/widget/EditText;
 
-    invoke-virtual {v4}, Landroid/view/View;->requestFocus()Z
+    invoke-virtual {v4}, Landroid/widget/EditText;->requestFocus()Z
 
     :cond_0
     iget-object v4, p0, Lcom/android/phone/callsettings/EditIpCallScreen;->handler:Landroid/os/Handler;
@@ -597,14 +597,14 @@
 
     iget-object v4, p0, Lcom/android/phone/callsettings/EditIpCallScreen;->mCreateEdit:Landroid/widget/EditText;
 
-    invoke-virtual {v4, v1}, Landroid/widget/TextView;->setFilters([Landroid/text/InputFilter;)V
+    invoke-virtual {v4, v1}, Landroid/widget/EditText;->setFilters([Landroid/text/InputFilter;)V
 
     :cond_1
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/EditIpCallScreen;->getActivity()Landroid/app/Activity;
 
     const-string v4, "input_method"
 
-    invoke-virtual {p0, v4}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v4}, Lcom/android/phone/callsettings/EditIpCallScreen;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v4
 
@@ -612,7 +612,7 @@
 
     iput-object v4, p0, Lcom/android/phone/callsettings/EditIpCallScreen;->imm:Landroid/view/inputmethod/InputMethodManager;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getArguments()Landroid/os/Bundle;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/EditIpCallScreen;->getArguments()Landroid/os/Bundle;
 
     move-result-object v0
 
@@ -702,11 +702,11 @@
 
     iget-object v5, p0, Lcom/android/phone/callsettings/EditIpCallScreen;->selectedMessage:Ljava/lang/String;
 
-    invoke-virtual {v4, v5}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {v4, v5}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
     iget-object v4, p0, Lcom/android/phone/callsettings/EditIpCallScreen;->mCreateEdit:Landroid/widget/EditText;
 
-    invoke-virtual {v4}, Landroid/widget/TextView;->length()I
+    invoke-virtual {v4}, Landroid/widget/EditText;->length()I
 
     move-result v2
 
@@ -774,7 +774,7 @@
 
     const v5, 0x7f09049e
 
-    invoke-virtual {p0, v5}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v5}, Lcom/android/phone/callsettings/EditIpCallScreen;->getString(I)Ljava/lang/String;
 
     move-result-object v5
 
@@ -788,7 +788,7 @@
 
     iput-object v4, p0, Lcom/android/phone/callsettings/EditIpCallScreen;->titleString:Ljava/lang/CharSequence;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/EditIpCallScreen;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
 
@@ -807,7 +807,7 @@
 
     iget-object v1, p0, Lcom/android/phone/callsettings/EditIpCallScreen;->mCreateEdit:Landroid/widget/EditText;
 
-    invoke-virtual {v1}, Landroid/view/View;->getWindowToken()Landroid/os/IBinder;
+    invoke-virtual {v1}, Landroid/widget/EditText;->getWindowToken()Landroid/os/IBinder;
 
     move-result-object v1
 
@@ -815,7 +815,7 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/view/inputmethod/InputMethodManager;->hideSoftInputFromWindow(Landroid/os/IBinder;I)Z
 
-    invoke-super {p0}, Landroid/preference/PreferenceFragment;->onDestroyView()V
+    invoke-super {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onDestroyView()V
 
     const-string v0, "CreateIpNumber"
 
@@ -886,7 +886,7 @@
 
     move-result v1
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/EditIpCallScreen;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v2
 
@@ -932,7 +932,7 @@
     invoke-interface {v2, v3}, Landroid/view/MenuItem;->setVisible(Z)Landroid/view/MenuItem;
 
     :goto_1
-    invoke-super {p0, p1}, Landroid/app/Fragment;->onPrepareOptionsMenu(Landroid/view/Menu;)V
+    invoke-super {p0, p1}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onPrepareOptionsMenu(Landroid/view/Menu;)V
 
     return-void
 
@@ -987,7 +987,7 @@
 .method public onResume()V
     .locals 1
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/EditIpCallScreen;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v0
 
@@ -1012,7 +1012,7 @@
     .locals 4
     .param p1    # Landroid/view/View;
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/EditIpCallScreen;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
 
@@ -1042,7 +1042,7 @@
 
     invoke-virtual {v0, v2, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/EditIpCallScreen;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -1059,7 +1059,7 @@
     .locals 3
     .param p1    # Landroid/view/View;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/EditIpCallScreen;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 

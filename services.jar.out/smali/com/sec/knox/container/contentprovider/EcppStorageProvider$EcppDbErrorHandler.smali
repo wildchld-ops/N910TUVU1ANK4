@@ -36,7 +36,6 @@
 # virtual methods
 .method public onCorruption(Landroid/database/sqlite/SQLiteDatabase;)V
     .locals 2
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
 
     const-string v0, "EcppStorageProvider"
 

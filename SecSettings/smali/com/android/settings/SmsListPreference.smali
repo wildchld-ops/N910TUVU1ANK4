@@ -18,8 +18,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/preference/ListPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -30,7 +28,6 @@
 # virtual methods
 .method protected onPrepareDialogBuilder(Landroid/app/AlertDialog$Builder;)V
     .locals 7
-    .param p1    # Landroid/app/AlertDialog$Builder;
 
     invoke-virtual {p0}, Landroid/preference/ListPreference;->getValue()Ljava/lang/String;
 
@@ -67,7 +64,6 @@
 
 .method public setEntryDrawables([Landroid/graphics/drawable/Drawable;)V
     .locals 0
-    .param p1    # [Landroid/graphics/drawable/Drawable;
 
     iput-object p1, p0, Lcom/android/settings/SmsListPreference;->mEntryDrawables:[Landroid/graphics/drawable/Drawable;
 

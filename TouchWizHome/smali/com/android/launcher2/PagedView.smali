@@ -443,7 +443,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -454,8 +453,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -466,9 +463,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 12
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Landroid/view/ViewGroup;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
@@ -1144,10 +1138,6 @@
 
 .method static synthetic access$500(Lcom/android/launcher2/PagedView;III)V
     .locals 0
-    .param p0    # Lcom/android/launcher2/PagedView;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/launcher2/PagedView;->snapToPageInternal(III)V
 
@@ -1156,7 +1146,6 @@
 
 .method static synthetic access$600(Lcom/android/launcher2/PagedView;)Z
     .locals 1
-    .param p0    # Lcom/android/launcher2/PagedView;
 
     iget-boolean v0, p0, Lcom/android/launcher2/PagedView;->mScrollByHover:Z
 
@@ -1165,7 +1154,6 @@
 
 .method static synthetic access$700(Lcom/android/launcher2/PagedView;)I
     .locals 1
-    .param p0    # Lcom/android/launcher2/PagedView;
 
     iget v0, p0, Lcom/android/launcher2/PagedView;->mHoverScrollDir:I
 
@@ -1174,7 +1162,6 @@
 
 .method static synthetic access$800(Lcom/android/launcher2/PagedView;)I
     .locals 1
-    .param p0    # Lcom/android/launcher2/PagedView;
 
     iget v0, p0, Lcom/android/launcher2/PagedView;->mCurrentPage:I
 
@@ -1183,7 +1170,6 @@
 
 .method private acquireVelocityTrackerAndAddMovement(Landroid/view/MotionEvent;)V
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-object v0, p0, Lcom/android/launcher2/PagedView;->mVelocityTracker:Landroid/view/VelocityTracker;
 
@@ -1269,7 +1255,6 @@
 
 .method private distanceInfluenceForSnapDuration(F)F
     .locals 4
-    .param p1    # F
 
     const/high16 v0, 0x3f000000
 
@@ -1296,9 +1281,6 @@
 
 .method private drawPage(Landroid/graphics/Canvas;Lcom/android/launcher2/PagedView$PageInfo;J)V
     .locals 5
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # Lcom/android/launcher2/PagedView$PageInfo;
-    .param p3    # J
 
     iget v3, p2, Lcom/android/launcher2/PagedView$PageInfo;->mIndex:I
 
@@ -1540,7 +1522,6 @@
 
 .method private findPageIndicatorHit(Landroid/view/DragEvent;)I
     .locals 10
-    .param p1    # Landroid/view/DragEvent;
 
     const/4 v4, -0x1
 
@@ -1619,7 +1600,6 @@
 
 .method private getCenterOfViewRelative(Landroid/view/View;)I
     .locals 7
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p0, p1}, Landroid/view/ViewGroup;->indexOfChild(Landroid/view/View;)I
 
@@ -1696,7 +1676,6 @@
 
 .method private getLowerBoundForScrollX(I)I
     .locals 5
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -1762,9 +1741,6 @@
 
 .method private getNearestScrollXForPage(III)I
     .locals 9
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     invoke-virtual {p0}, Lcom/android/launcher2/PagedView;->getPageTotWidth()I
 
@@ -1843,9 +1819,6 @@
 
 .method private getScrollXForPageIndex(III)I
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v3, 0x0
 
@@ -1966,7 +1939,6 @@
 
 .method private getSlotForScrollX(I)I
     .locals 4
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -2044,7 +2016,6 @@
 
 .method private isNewPageIndex(I)Z
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getChildCount()I
 
@@ -2065,7 +2036,6 @@
 
 .method private jumpToPageInternal(I)V
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/launcher2/PagedView;->getAdjustedPageIndex(I)I
 
@@ -2109,8 +2079,6 @@
 
 .method private loadAssociatedPages(IZ)V
     .locals 7
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v6, 0x1
 
@@ -2239,9 +2207,6 @@
 
 .method static mix(FFF)F
     .locals 2
-    .param p0    # F
-    .param p1    # F
-    .param p2    # F
 
     const/high16 v0, 0x3f800000
 
@@ -2333,7 +2298,6 @@
 
 .method private overScrollInfluenceCurve(F)F
     .locals 2
-    .param p1    # F
 
     const/high16 v1, 0x3f800000
 
@@ -2369,8 +2333,6 @@
 
 .method private scrollToNonLooped(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     const/4 v1, 0x1
 
@@ -2437,9 +2399,6 @@
 
 .method private snapToPageInternal(III)V
     .locals 9
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v8, 0x1
 
@@ -2607,8 +2566,6 @@
 
 .method private syncPageItemsInternal(IZ)V
     .locals 6
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v4, 0x0
 
@@ -2723,8 +2680,6 @@
 
 .method private transformPage(Lcom/android/launcher2/PagedView$PageInfo;J)V
     .locals 6
-    .param p1    # Lcom/android/launcher2/PagedView$PageInfo;
-    .param p2    # J
 
     const/high16 v5, 0x3f800000
 
@@ -2817,7 +2772,6 @@
 
 .method private updateMotionTracking(Landroid/view/MotionEvent;)V
     .locals 2
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getAction()I
 
@@ -2943,7 +2897,6 @@
 
 .method protected acceleratedOverScroll(F)V
     .locals 6
-    .param p1    # F
 
     const/4 v5, 0x0
 
@@ -3023,8 +2976,6 @@
 
 .method public addFocusables(Ljava/util/ArrayList;II)V
     .locals 2
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3133,9 +3084,6 @@
 
 .method protected animateClickFeedback(Landroid/view/View;Ljava/lang/Runnable;Ljava/lang/Runnable;)V
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # Ljava/lang/Runnable;
-    .param p3    # Ljava/lang/Runnable;
 
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
@@ -3238,7 +3186,6 @@
 
 .method protected checkLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Z
     .locals 1
-    .param p1    # Landroid/view/ViewGroup$LayoutParams;
 
     instance-of v0, p1, Landroid/widget/FrameLayout$LayoutParams;
 
@@ -3282,7 +3229,6 @@
 
 .method public clearLayout(Lcom/android/launcher2/Page;)V
     .locals 0
-    .param p1    # Lcom/android/launcher2/Page;
 
     invoke-interface {p1}, Lcom/android/launcher2/Page;->removeAllViewsOnPage()V
 
@@ -3491,7 +3437,6 @@
 
 .method protected dampedOverScroll(F)V
     .locals 6
-    .param p1    # F
 
     const/4 v5, 0x0
 
@@ -3587,7 +3532,6 @@
 
 .method protected determineScrollingStart(Landroid/view/MotionEvent;)V
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     const/high16 v0, 0x3f800000
 
@@ -3598,8 +3542,6 @@
 
 .method protected determineScrollingStart(Landroid/view/MotionEvent;F)V
     .locals 23
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # F
 
     invoke-virtual/range {p1 .. p1}, Landroid/view/MotionEvent;->getX()F
 
@@ -4340,7 +4282,6 @@
 
 .method public dispatchDragEvent(Landroid/view/DragEvent;)Z
     .locals 24
-    .param p1    # Landroid/view/DragEvent;
 
     invoke-static/range {p1 .. p1}, Lcom/android/launcher2/Launcher;->isInValidDragState(Landroid/view/DragEvent;)Z
 
@@ -4917,7 +4858,6 @@
 
 .method protected dispatchDraw(Landroid/graphics/Canvas;)V
     .locals 14
-    .param p1    # Landroid/graphics/Canvas;
 
     const/4 v13, 0x1
 
@@ -5161,8 +5101,6 @@
 
 .method public dispatchUnhandledMove(Landroid/view/View;I)Z
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     const/4 v0, 0x1
 
@@ -5224,7 +5162,6 @@
 
 .method public focusableViewAvailable(Landroid/view/View;)V
     .locals 4
-    .param p1    # Landroid/view/View;
 
     iget v3, p0, Lcom/android/launcher2/PagedView;->mCurrentPage:I
 
@@ -5276,7 +5213,6 @@
 
 .method public generateLayoutParams(Landroid/util/AttributeSet;)Landroid/view/ViewGroup$LayoutParams;
     .locals 2
-    .param p1    # Landroid/util/AttributeSet;
 
     new-instance v0, Landroid/widget/FrameLayout$LayoutParams;
 
@@ -5291,7 +5227,6 @@
 
 .method protected generateLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Landroid/view/ViewGroup$LayoutParams;
     .locals 1
-    .param p1    # Landroid/view/ViewGroup$LayoutParams;
 
     new-instance v0, Landroid/widget/FrameLayout$LayoutParams;
 
@@ -5302,7 +5237,6 @@
 
 .method protected getAdjustedPageIndex(I)I
     .locals 3
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -5351,7 +5285,6 @@
 
 .method protected getAssociatedLowerPageBound(I)I
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -5366,7 +5299,6 @@
 
 .method protected getAssociatedUpperPageBound(I)I
     .locals 3
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getChildCount()I
 
@@ -5385,7 +5317,6 @@
 
 .method protected getChildOffset(I)I
     .locals 2
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -5405,7 +5336,6 @@
 
 .method public getClosestPageForScrollX(I)I
     .locals 4
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/launcher2/PagedView;->getPageCount()I
 
@@ -5562,7 +5492,6 @@
 
 .method protected getInclusivePages(I)V
     .locals 11
-    .param p1    # I
 
     sget-object v9, Lcom/android/launcher2/PagedView;->sInclusivePages:Ljava/util/ArrayList;
 
@@ -5755,7 +5684,6 @@
 
 .method protected getNonLoopedMappedScrollX(I)I
     .locals 6
-    .param p1    # I
 
     move v0, p1
 
@@ -5787,7 +5715,6 @@
 
 .method public getNonLoopedScrollXForPageIndex(I)I
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/launcher2/PagedView;->getPageTotWidth()I
 
@@ -5800,7 +5727,6 @@
 
 .method getPageAt(I)Landroid/view/View;
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
@@ -5837,7 +5763,6 @@
 
 .method public getPageIndexForItemId(J)I
     .locals 6
-    .param p1    # J
 
     const/4 v0, 0x0
 
@@ -5899,7 +5824,6 @@
 
 .method protected getPageIndexForScrollX(I)I
     .locals 5
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/launcher2/PagedView;->getPageCount()I
 
@@ -5949,10 +5873,6 @@
 
 .method protected getPageIndicatorManager(Lcom/android/launcher2/PagedView;III)Lcom/android/launcher2/PageIndicatorManager;
     .locals 1
-    .param p1    # Lcom/android/launcher2/PagedView;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     new-instance v0, Lcom/android/launcher2/PageIndicatorManager;
 
@@ -6217,7 +6137,6 @@
 
 .method protected getRelativeChildOffset(I)I
     .locals 4
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -6283,7 +6202,6 @@
 
 .method protected getScrollProgress(Lcom/android/launcher2/PagedView$PageInfo;)F
     .locals 8
-    .param p1    # Lcom/android/launcher2/PagedView$PageInfo;
 
     const/high16 v7, 0x3f800000
 
@@ -6450,7 +6368,6 @@
 
 .method public hidePageIndicator(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/launcher2/PagedView;->mPageIndicatorManager:Lcom/android/launcher2/PageIndicatorManager;
 
@@ -6461,8 +6378,6 @@
 
 .method protected hitsNextPage(FF)Z
     .locals 4
-    .param p1    # F
-    .param p2    # F
 
     iget v2, p0, Lcom/android/launcher2/PagedView;->mCurrentPage:I
 
@@ -6506,8 +6421,6 @@
 
 .method protected hitsPreviousPage(FF)Z
     .locals 3
-    .param p1    # F
-    .param p2    # F
 
     iget v2, p0, Lcom/android/launcher2/PagedView;->mCurrentPage:I
 
@@ -6545,14 +6458,12 @@
 
 .method protected indexToPage(I)I
     .locals 0
-    .param p1    # I
 
     return p1
 .end method
 
 .method protected initCurrentPage(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/launcher2/PagedView;->mCurrentPage:I
 
@@ -6573,7 +6484,6 @@
 
 .method protected invalidatePageData(I)V
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -6584,8 +6494,6 @@
 
 .method protected invalidatePageData(IZ)V
     .locals 6
-    .param p1    # I
-    .param p2    # Z
 
     const/high16 v5, 0x40000000
 
@@ -6732,7 +6640,6 @@
 
 .method public isHoveringAreaX(F)I
     .locals 3
-    .param p1    # F
 
     invoke-virtual {p0}, Landroid/view/View;->getWidth()I
 
@@ -6790,7 +6697,6 @@
 
 .method public isHoveringAreaY(F)Z
     .locals 1
-    .param p1    # F
 
     iget v0, p0, Lcom/android/launcher2/PagedView;->mHoverScrollTop:I
 
@@ -6862,7 +6768,6 @@
 
 .method protected isPageAddedForDrag(I)Z
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -6871,7 +6776,6 @@
 
 .method public isPageConstructed(I)Z
     .locals 3
-    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -6935,7 +6839,6 @@
 
 .method protected isPageInclusive(I)Z
     .locals 2
-    .param p1    # I
 
     sget-object v0, Lcom/android/launcher2/PagedView;->sInclusivePages:Ljava/util/ArrayList;
 
@@ -6960,7 +6863,6 @@
 
 .method protected loadAssociatedPages(I)V
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -6999,7 +6901,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 1
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/view/View;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -7020,14 +6921,12 @@
 
 .method protected onDrawComplete(Landroid/graphics/Canvas;)V
     .locals 0
-    .param p1    # Landroid/graphics/Canvas;
 
     return-void
 .end method
 
 .method public onGenericMotionEvent(Landroid/view/MotionEvent;)Z
     .locals 5
-    .param p1    # Landroid/view/MotionEvent;
 
     const/16 v4, 0x9
 
@@ -7126,7 +7025,6 @@
 
 .method public onHoverEvent(Landroid/view/MotionEvent;)Z
     .locals 6
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v3, 0x1
 
@@ -7233,7 +7131,6 @@
 
 .method public onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
     .locals 2
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
 
     invoke-super {p0, p1}, Landroid/view/View;->onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
 
@@ -7269,7 +7166,6 @@
 
 .method public onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
     .locals 1
-    .param p1    # Landroid/view/accessibility/AccessibilityNodeInfo;
 
     invoke-super {p0, p1}, Landroid/view/View;->onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
 
@@ -7282,7 +7178,6 @@
 
 .method public onInterceptHoverEvent(Landroid/view/MotionEvent;)Z
     .locals 6
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v3, 0x1
 
@@ -7380,7 +7275,6 @@
 
 .method public onInterceptTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 11
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v3, 0x0
 
@@ -7959,11 +7853,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 19
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     move-object/from16 v0, p0
 
@@ -8375,7 +8264,6 @@
 
 .method public onLongClick(Landroid/view/View;)Z
     .locals 3
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Lcom/android/launcher2/PagedView;->mPageIndicatorManager:Lcom/android/launcher2/PageIndicatorManager;
 
@@ -8392,8 +8280,6 @@
 
 .method protected onMeasure(II)V
     .locals 25
-    .param p1    # I
-    .param p2    # I
 
     move-object/from16 v0, p0
 
@@ -9032,8 +8918,6 @@
 
 .method protected onRequestFocusInDescendants(ILandroid/graphics/Rect;)Z
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/graphics/Rect;
 
     invoke-virtual {p0}, Lcom/android/launcher2/PagedView;->getComingPage()I
 
@@ -9060,7 +8944,6 @@
 
 .method public onRestoreInstanceState(Landroid/os/Parcelable;)V
     .locals 2
-    .param p1    # Landroid/os/Parcelable;
 
     iget-boolean v1, p0, Lcom/android/launcher2/PagedView;->mIsDataReady:Z
 
@@ -9142,7 +9025,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 35
-    .param p1    # Landroid/view/MotionEvent;
 
     sget-boolean v31, Lcom/android/launcher2/Launcher;->isHelpAppRunning:Z
 
@@ -10439,14 +10321,12 @@
 
 .method protected onUnhandledTap(Landroid/view/MotionEvent;)V
     .locals 0
-    .param p1    # Landroid/view/MotionEvent;
 
     return-void
 .end method
 
 .method protected onViewAddedInPagedView(Landroid/view/View;)V
     .locals 4
-    .param p1    # Landroid/view/View;
 
     const/4 v3, 0x0
 
@@ -10512,7 +10392,6 @@
 
 .method public onViewRemovedInPagedView(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     const/high16 v0, -0x80000000
 
@@ -10545,7 +10424,6 @@
 
 .method public openHeadlines(Z)V
     .locals 2
-    .param p1    # Z
 
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
@@ -10562,7 +10440,6 @@
 
 .method protected overScroll(F)V
     .locals 0
-    .param p1    # F
 
     invoke-virtual {p0, p1}, Lcom/android/launcher2/PagedView;->dampedOverScroll(F)V
 
@@ -10796,8 +10673,6 @@
 
 .method public requestChildFocus(Landroid/view/View;Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/View;
 
     invoke-super {p0, p1, p2}, Landroid/view/ViewGroup;->requestChildFocus(Landroid/view/View;Landroid/view/View;)V
 
@@ -10837,9 +10712,6 @@
 
 .method public requestChildRectangleOnScreen(Landroid/view/View;Landroid/graphics/Rect;Z)Z
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/graphics/Rect;
-    .param p3    # Z
 
     invoke-virtual {p0, p1}, Landroid/view/ViewGroup;->indexOfChild(Landroid/view/View;)I
 
@@ -10877,7 +10749,6 @@
 
 .method public requestDisallowInterceptTouchEvent(Z)V
     .locals 2
-    .param p1    # Z
 
     const/4 v1, 0x0
 
@@ -10910,7 +10781,6 @@
 
 .method protected restoreCurrentPageFromState(Lcom/android/launcher2/PagedView$SavedState;)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/PagedView$SavedState;
 
     iget v0, p1, Lcom/android/launcher2/PagedView$SavedState;->currentPage:I
 
@@ -10925,7 +10795,6 @@
 
 .method final screenScrolled(I)V
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -10936,8 +10805,6 @@
 
 .method public scrollBy(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget v0, p0, Lcom/android/launcher2/PagedView;->mUnboundedScrollX:I
 
@@ -10956,7 +10823,6 @@
 
 .method public scrollByHover(Landroid/view/MotionEvent;)Z
     .locals 13
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v12, 0x2
 
@@ -11309,8 +11175,6 @@
 
 .method public scrollTo(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -11353,14 +11217,12 @@
 
 .method protected setAccessibilityFocusChange(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method protected setAllowLongPress(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/launcher2/PagedView;->mAllowLongPress:Z
 
@@ -11369,7 +11231,6 @@
 
 .method public setCurrentPage(I)V
     .locals 3
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/launcher2/PagedView;->abortScroll()V
 
@@ -11449,7 +11310,6 @@
 
 .method protected setCurrentPageIfNotSnapping(I)V
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -11460,8 +11320,6 @@
 
 .method protected setCurrentPageIfNotSnapping(IZ)V
     .locals 2
-    .param p1    # I
-    .param p2    # Z
 
     iget v0, p0, Lcom/android/launcher2/PagedView;->mNextPage:I
 
@@ -11528,7 +11386,6 @@
 
 .method public setDefaultTransitionEffect(Lcom/android/launcher2/PagedView$TransitionEffect;)V
     .locals 0
-    .param p1    # Lcom/android/launcher2/PagedView$TransitionEffect;
 
     iput-object p1, p0, Lcom/android/launcher2/PagedView;->mDefaultTransitionEffect:Lcom/android/launcher2/PagedView$TransitionEffect;
 
@@ -11553,7 +11410,6 @@
 
 .method public setHideItems(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/launcher2/PagedView;->mHideItems:Z
 
@@ -11694,7 +11550,6 @@
 
 .method public setHoveringSpenIcon(I)V
     .locals 2
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -11746,7 +11601,6 @@
 
 .method protected setLastPageNotify(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/launcher2/PagedView;->mLastPageNotify:I
 
@@ -11807,7 +11661,6 @@
 
 .method public setOnDragListener(Landroid/view/View$OnDragListener;)V
     .locals 3
-    .param p1    # Landroid/view/View$OnDragListener;
 
     invoke-virtual {p0}, Lcom/android/launcher2/PagedView;->getPageCount()I
 
@@ -11834,7 +11687,6 @@
 
 .method public setOnLongClickListener(Landroid/view/View$OnLongClickListener;)V
     .locals 3
-    .param p1    # Landroid/view/View$OnLongClickListener;
 
     iput-object p1, p0, Lcom/android/launcher2/PagedView;->mLongClickListener:Landroid/view/View$OnLongClickListener;
 
@@ -11863,7 +11715,6 @@
 
 .method public setPageBackgroundAlpha(F)V
     .locals 1
-    .param p1    # F
 
     iput p1, p0, Lcom/android/launcher2/PagedView;->mPageBackgroundAlpha:F
 
@@ -11878,7 +11729,6 @@
 
 .method protected setPageIndicatorTop(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/launcher2/PagedView;->mPageIndicatorManager:Lcom/android/launcher2/PageIndicatorManager;
 
@@ -11889,7 +11739,6 @@
 
 .method public setPageSwitchListener(Lcom/android/launcher2/PagedView$PageSwitchListener;)V
     .locals 3
-    .param p1    # Lcom/android/launcher2/PagedView$PageSwitchListener;
 
     iput-object p1, p0, Lcom/android/launcher2/PagedView;->mPageSwitchListener:Lcom/android/launcher2/PagedView$PageSwitchListener;
 
@@ -11915,7 +11764,6 @@
 
 .method public setPageZoom(F)V
     .locals 1
-    .param p1    # F
 
     iput p1, p0, Lcom/android/launcher2/PagedView;->mPageZoom:F
 
@@ -11930,7 +11778,6 @@
 
 .method public showPageIndicator(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/launcher2/PagedView;->mPageIndicatorManager:Lcom/android/launcher2/PageIndicatorManager;
 
@@ -11955,7 +11802,6 @@
 
 .method protected snapToPage(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Lcom/android/launcher2/PagedView;->PAGE_SNAP_ANIMATION_DURATION:I
 
@@ -11966,9 +11812,6 @@
 
 .method protected snapToPage(III)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     iget-boolean v0, p0, Lcom/android/launcher2/PagedView;->mLaidOutAfterViewTreeDirty:Z
 
@@ -11997,8 +11840,6 @@
 
 .method protected snapToPageFromFocusHelper(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     iput p2, p0, Lcom/android/launcher2/PagedView;->mLastFocusDir:I
 
@@ -12011,8 +11852,6 @@
 
 .method protected snapToPageWithDir(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget v0, p0, Lcom/android/launcher2/PagedView;->PAGE_SNAP_ANIMATION_DURATION:I
 
@@ -12023,8 +11862,6 @@
 
 .method protected snapToPageWithDur(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x1
 
@@ -12035,8 +11872,6 @@
 
 .method protected snapToPageWithVelocity(II)V
     .locals 9
-    .param p1    # I
-    .param p2    # I
 
     const/high16 v8, 0x3f800000
 
@@ -12156,7 +11991,6 @@
 
 .method protected syncPageWithQuickView(I)Z
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -12282,7 +12116,6 @@
 
 .method protected updateChildrenLayersEnabled(Lcom/android/launcher2/PagedView$LayerOptions;)V
     .locals 8
-    .param p1    # Lcom/android/launcher2/PagedView$LayerOptions;
 
     const/4 v7, 0x0
 
@@ -12463,8 +12296,6 @@
 
 .method updateIndicator(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/launcher2/PagedView;->mPageIndicatorManager:Lcom/android/launcher2/PageIndicatorManager;
 
@@ -12497,15 +12328,12 @@
 
 .method updateIndicatorWidth(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method protected updatePageTransform(Landroid/view/View;F)V
     .locals 0
-    .param p1    # Landroid/view/View;
-    .param p2    # F
 
     return-void
 .end method

@@ -67,7 +67,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;)V
 
@@ -82,8 +81,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -98,7 +95,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/prioritysender/PrioritySenderListItem;)V
     .locals 0
-    .param p0    # Lcom/android/mms/prioritysender/PrioritySenderListItem;
 
     invoke-direct {p0}, Lcom/android/mms/prioritysender/PrioritySenderListItem;->updateFromView()V
 
@@ -107,8 +103,6 @@
 
 .method private setAvatar(Landroid/graphics/drawable/Drawable;J)V
     .locals 9
-    .param p1    # Landroid/graphics/drawable/Drawable;
-    .param p2    # J
 
     const/4 v8, 0x0
 
@@ -296,9 +290,6 @@
 # virtual methods
 .method public bind(Landroid/content/Context;Landroid/database/Cursor;I)V
     .locals 10
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/database/Cursor;
-    .param p3    # I
 
     const/16 v8, 0x8
 
@@ -743,7 +734,6 @@
 
 .method public onUpdate(Lcom/android/mms/data/Contact;)V
     .locals 2
-    .param p1    # Lcom/android/mms/data/Contact;
 
     iget-object v0, p0, Lcom/android/mms/prioritysender/PrioritySenderListItem;->mContact:Lcom/android/mms/data/Contact;
 
@@ -775,7 +765,6 @@
 
 .method public onWindowFocusChanged(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-super {p0, p1}, Landroid/widget/LinearLayout;->onWindowFocusChanged(Z)V
 

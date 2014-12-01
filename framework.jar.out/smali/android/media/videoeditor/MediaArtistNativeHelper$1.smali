@@ -40,8 +40,6 @@
 # virtual methods
 .method public onThumbnail(Landroid/graphics/Bitmap;I)V
     .locals 2
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # I
 
     iget-object v0, p0, Landroid/media/videoeditor/MediaArtistNativeHelper$1;->val$result:[Landroid/graphics/Bitmap;
 

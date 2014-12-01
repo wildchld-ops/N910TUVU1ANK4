@@ -76,7 +76,6 @@
 
 .method private setCryptoKey(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/mms/ui/MessageDatabaseBackupActivity$CryptoKeyDialog;->mParentContext:Landroid/content/Context;
 
@@ -89,7 +88,6 @@
 
 .method private setupDialogView(Landroid/os/Bundle;)Landroid/view/View;
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 
@@ -161,24 +159,18 @@
 # virtual methods
 .method public afterTextChanged(Landroid/text/Editable;)V
     .locals 0
-    .param p1    # Landroid/text/Editable;
 
     return-void
 .end method
 
 .method public beforeTextChanged(Ljava/lang/CharSequence;III)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     return-void
 .end method
 
 .method public onCancel(Landroid/content/DialogInterface;)V
     .locals 1
-    .param p1    # Landroid/content/DialogInterface;
 
     const-string v0, ""
 
@@ -191,8 +183,6 @@
 
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 5
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     const v4, 0x7f0c058d
 
@@ -326,7 +316,6 @@
 
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/MessageDatabaseBackupActivity$CryptoKeyDialog;->setupDialogView(Landroid/os/Bundle;)Landroid/view/View;
 
@@ -383,10 +372,6 @@
 
 .method public onTextChanged(Ljava/lang/CharSequence;III)V
     .locals 5
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-virtual {p0}, Landroid/app/DialogFragment;->getDialog()Landroid/app/Dialog;
 
@@ -448,8 +433,6 @@
 
 .method public setData(Landroid/content/Context;I)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     iput-object p1, p0, Lcom/android/mms/ui/MessageDatabaseBackupActivity$CryptoKeyDialog;->mParentContext:Landroid/content/Context;
 

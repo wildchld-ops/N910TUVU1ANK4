@@ -24,7 +24,6 @@
 # direct methods
 .method public constructor <init>(Lcom/sec/android/app/camera/panorama360/core/MorphoImageStitcher;)V
     .locals 0
-    .param p1    # Lcom/sec/android/app/camera/panorama360/core/MorphoImageStitcher;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

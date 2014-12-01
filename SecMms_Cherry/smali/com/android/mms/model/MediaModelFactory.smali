@@ -26,9 +26,6 @@
 
 .method private static createEmptyTextModel(Landroid/content/Context;Lcom/android/mms/drm/DrmWrapper;Lcom/android/mms/model/RegionModel;)Lcom/android/mms/model/MediaModel;
     .locals 7
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/mms/drm/DrmWrapper;
-    .param p2    # Lcom/android/mms/model/RegionModel;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -68,7 +65,6 @@
 
 .method public static escapeXML(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "&lt;"
 
@@ -91,8 +87,6 @@
 
 .method private static findPart(Lcom/google/android/mms/pdu/PduBody;Ljava/lang/String;)Lcom/google/android/mms/pdu/PduPart;
     .locals 31
-    .param p0    # Lcom/google/android/mms/pdu/PduBody;
-    .param p1    # Ljava/lang/String;
 
     const/16 v24, 0x0
 
@@ -1489,10 +1483,6 @@
 
 .method public static getFreeMessageMediaModel(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Landroid/net/Uri;)Lcom/android/mms/model/MediaModel;
     .locals 7
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/net/Uri;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -1611,13 +1601,6 @@
 
 .method private static getGenericMediaModel(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Lorg/w3c/dom/smil/SMILMediaElement;Lcom/google/android/mms/pdu/PduPart;Lcom/android/mms/model/RegionModel;I)Lcom/android/mms/model/MediaModel;
     .locals 22
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lorg/w3c/dom/smil/SMILMediaElement;
-    .param p4    # Lcom/google/android/mms/pdu/PduPart;
-    .param p5    # Lcom/android/mms/model/RegionModel;
-    .param p6    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -2442,11 +2425,6 @@
 
 .method public static getMediaModel(Landroid/content/Context;Lorg/w3c/dom/smil/SMILMediaElement;Lcom/android/mms/model/LayoutModel;Lcom/google/android/mms/pdu/PduBody;I)Lcom/android/mms/model/MediaModel;
     .locals 14
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lorg/w3c/dom/smil/SMILMediaElement;
-    .param p2    # Lcom/android/mms/model/LayoutModel;
-    .param p3    # Lcom/google/android/mms/pdu/PduBody;
-    .param p4    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -2682,10 +2660,6 @@
 
 .method public static getRcsMediaModel(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Landroid/net/Uri;)Lcom/android/mms/model/MediaModel;
     .locals 7
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/net/Uri;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -2863,13 +2837,6 @@
 
 .method private static getRegionMediaModel(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Lorg/w3c/dom/smil/SMILRegionMediaElement;Lcom/android/mms/model/LayoutModel;Lcom/google/android/mms/pdu/PduPart;I)Lcom/android/mms/model/MediaModel;
     .locals 9
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lorg/w3c/dom/smil/SMILRegionMediaElement;
-    .param p4    # Lcom/android/mms/model/LayoutModel;
-    .param p5    # Lcom/google/android/mms/pdu/PduPart;
-    .param p6    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,

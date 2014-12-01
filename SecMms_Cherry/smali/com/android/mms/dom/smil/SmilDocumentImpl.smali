@@ -42,7 +42,6 @@
 
 .method public createElement(Ljava/lang/String;)Lorg/w3c/dom/Element;
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;
@@ -185,7 +184,6 @@
 
 .method public createEvent(Ljava/lang/String;)Lorg/w3c/dom/events/Event;
     .locals 3
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;
@@ -232,7 +230,6 @@
 
 .method public getActiveChildrenAt(F)Lorg/w3c/dom/NodeList;
     .locals 1
-    .param p1    # F
 
     iget-object v0, p0, Lcom/android/mms/dom/smil/SmilDocumentImpl;->mSeqTimeContainer:Lorg/w3c/dom/smil/ElementSequentialTimeContainer;
 
@@ -532,7 +529,6 @@
 
 .method public seekElement(F)V
     .locals 1
-    .param p1    # F
 
     iget-object v0, p0, Lcom/android/mms/dom/smil/SmilDocumentImpl;->mSeqTimeContainer:Lorg/w3c/dom/smil/ElementSequentialTimeContainer;
 
@@ -543,7 +539,6 @@
 
 .method public setBegin(Lorg/w3c/dom/smil/TimeList;)V
     .locals 1
-    .param p1    # Lorg/w3c/dom/smil/TimeList;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;
@@ -559,7 +554,6 @@
 
 .method public setDur(F)V
     .locals 1
-    .param p1    # F
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;
@@ -575,7 +569,6 @@
 
 .method public setEnd(Lorg/w3c/dom/smil/TimeList;)V
     .locals 1
-    .param p1    # Lorg/w3c/dom/smil/TimeList;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;
@@ -591,7 +584,6 @@
 
 .method public setFill(S)V
     .locals 1
-    .param p1    # S
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;
@@ -607,7 +599,6 @@
 
 .method public setFillDefault(S)V
     .locals 1
-    .param p1    # S
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;
@@ -623,7 +614,6 @@
 
 .method public setRepeatCount(F)V
     .locals 1
-    .param p1    # F
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;
@@ -639,7 +629,6 @@
 
 .method public setRepeatDur(F)V
     .locals 1
-    .param p1    # F
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;
@@ -655,7 +644,6 @@
 
 .method public setRestart(S)V
     .locals 1
-    .param p1    # S
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;

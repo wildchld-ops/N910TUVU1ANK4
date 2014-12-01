@@ -25,9 +25,6 @@
 
 .method public static hideBottom(Landroid/view/View;Landroid/view/View;I)V
     .locals 3
-    .param p0    # Landroid/view/View;
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -121,7 +118,6 @@
 
 .method public static isTranslate(Landroid/view/View;)Z
     .locals 6
-    .param p0    # Landroid/view/View;
 
     const/4 v1, 0x1
 
@@ -237,8 +233,6 @@
 
 .method public static showTop(Landroid/view/View;Landroid/view/View;)V
     .locals 6
-    .param p0    # Landroid/view/View;
-    .param p1    # Landroid/view/View;
 
     const/4 v3, 0x0
 

@@ -54,9 +54,6 @@
 
 .method private createServiceWithConstructor(Ljava/lang/String;[Ljava/lang/Class;[Ljava/lang/Object;)Ljava/lang/Object;
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/Class;
-    .param p3    # [Ljava/lang/Object;
 
     const/4 v5, 0x0
 
@@ -138,8 +135,6 @@
 
 .method private static final startDpmService(Landroid/content/Context;Lcom/android/server/ConnectivityService;)V
     .locals 9
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/server/ConnectivityService;
 
     const/4 v4, 0x0
 
@@ -288,7 +283,6 @@
 
 .method static final startEmergencyModeService(Landroid/content/Context;)V
     .locals 5
-    .param p0    # Landroid/content/Context;
 
     :try_start_0
     invoke-static {p0}, Lcom/sec/android/emergencymode/EmergencyManager;->getInstance(Landroid/content/Context;)Lcom/sec/android/emergencymode/EmergencyManager;
@@ -332,7 +326,6 @@
 
 .method static final startFingerprintService(Landroid/content/Context;)V
     .locals 6
-    .param p0    # Landroid/content/Context;
 
     new-instance v2, Lcom/android/internal/widget/LockPatternUtils;
 
@@ -403,7 +396,6 @@
 
 .method static final startSystemUi(Landroid/content/Context;)V
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -7213,8 +7205,6 @@
 
 .method reportWtf(Ljava/lang/String;Ljava/lang/Throwable;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Throwable;
 
     const-string v0, "SystemServer"
 

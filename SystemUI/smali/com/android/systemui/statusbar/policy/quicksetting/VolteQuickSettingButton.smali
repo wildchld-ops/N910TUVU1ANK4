@@ -58,7 +58,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 9
-    .param p1    # Landroid/content/Context;
 
     const/4 v8, 0x1
 
@@ -195,7 +194,6 @@
 
 .method static synthetic access$000(Lcom/android/systemui/statusbar/policy/quicksetting/VolteQuickSettingButton;)I
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/policy/quicksetting/VolteQuickSettingButton;
 
     iget v0, p0, Lcom/android/systemui/statusbar/policy/quicksetting/VolteQuickSettingButton;->isAirPlaneMode:I
 
@@ -204,8 +202,6 @@
 
 .method static synthetic access$002(Lcom/android/systemui/statusbar/policy/quicksetting/VolteQuickSettingButton;I)I
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/policy/quicksetting/VolteQuickSettingButton;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/systemui/statusbar/policy/quicksetting/VolteQuickSettingButton;->isAirPlaneMode:I
 
@@ -214,7 +210,6 @@
 
 .method static synthetic access$100(Lcom/android/systemui/statusbar/policy/quicksetting/VolteQuickSettingButton;)Z
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/policy/quicksetting/VolteQuickSettingButton;
 
     invoke-direct {p0}, Lcom/android/systemui/statusbar/policy/quicksetting/VolteQuickSettingButton;->getVoLTEEnabled()Z
 
@@ -225,8 +220,6 @@
 
 .method static synthetic access$202(Lcom/android/systemui/statusbar/policy/quicksetting/VolteQuickSettingButton;Z)Z
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/policy/quicksetting/VolteQuickSettingButton;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/systemui/statusbar/policy/quicksetting/VolteQuickSettingButton;->mInitialized:Z
 
@@ -235,7 +228,6 @@
 
 .method static synthetic access$300(Lcom/android/systemui/statusbar/policy/quicksetting/VolteQuickSettingButton;)Z
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/policy/quicksetting/VolteQuickSettingButton;
 
     iget-boolean v0, p0, Lcom/android/systemui/statusbar/policy/quicksetting/VolteQuickSettingButton;->mState:Z
 
@@ -244,8 +236,6 @@
 
 .method static synthetic access$302(Lcom/android/systemui/statusbar/policy/quicksetting/VolteQuickSettingButton;Z)Z
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/policy/quicksetting/VolteQuickSettingButton;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/systemui/statusbar/policy/quicksetting/VolteQuickSettingButton;->mState:Z
 
@@ -254,7 +244,6 @@
 
 .method static synthetic access$400(Lcom/android/systemui/statusbar/policy/quicksetting/VolteQuickSettingButton;)Z
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/policy/quicksetting/VolteQuickSettingButton;
 
     iget-boolean v0, p0, Lcom/android/systemui/statusbar/policy/quicksetting/VolteQuickSettingButton;->mMobileData:Z
 
@@ -263,8 +252,6 @@
 
 .method static synthetic access$402(Lcom/android/systemui/statusbar/policy/quicksetting/VolteQuickSettingButton;Z)Z
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/policy/quicksetting/VolteQuickSettingButton;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/systemui/statusbar/policy/quicksetting/VolteQuickSettingButton;->mMobileData:Z
 
@@ -273,7 +260,6 @@
 
 .method static synthetic access$500(Lcom/android/systemui/statusbar/policy/quicksetting/VolteQuickSettingButton;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/policy/quicksetting/VolteQuickSettingButton;
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/quicksetting/VolteQuickSettingButton;->mContentResolver:Landroid/content/ContentResolver;
 
@@ -282,7 +268,6 @@
 
 .method private static checkMccmnc(Ljava/lang/String;)Z
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -578,7 +563,6 @@
 
 .method public static manualIMSDeregister(Landroid/content/Context;)V
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     const/4 v1, 0x7
 
@@ -620,7 +604,6 @@
 
 .method public static manualIMSRegister(Landroid/content/Context;)V
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     const/4 v1, 0x7
 
@@ -750,7 +733,6 @@
 
 .method public onClick(Z)V
     .locals 8
-    .param p1    # Z
 
     const/4 v7, 0x0
 

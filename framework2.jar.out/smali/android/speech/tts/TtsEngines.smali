@@ -28,7 +28,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -39,8 +38,6 @@
 
 .method private getEngineInfo(Landroid/content/pm/ResolveInfo;Landroid/content/pm/PackageManager;)Landroid/speech/tts/TextToSpeech$EngineInfo;
     .locals 4
-    .param p1    # Landroid/content/pm/ResolveInfo;
-    .param p2    # Landroid/content/pm/PackageManager;
 
     iget-object v2, p1, Landroid/content/pm/ResolveInfo;->serviceInfo:Landroid/content/pm/ServiceInfo;
 
@@ -206,7 +203,6 @@
 
 .method private isSystemEngine(Landroid/content/pm/ServiceInfo;)Z
     .locals 2
-    .param p1    # Landroid/content/pm/ServiceInfo;
 
     iget-object v0, p1, Landroid/content/pm/ComponentInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
 
@@ -231,8 +227,6 @@
 
 .method private static parseEnginePrefFromList(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 8
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const/4 v6, 0x0
 
@@ -300,7 +294,6 @@
 
 .method public static parseLocalePref(Ljava/lang/String;)[Ljava/lang/String;
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -346,8 +339,6 @@
 
 .method private settingsActivityFromServiceInfo(Landroid/content/pm/ServiceInfo;Landroid/content/pm/PackageManager;)Ljava/lang/String;
     .locals 11
-    .param p1    # Landroid/content/pm/ServiceInfo;
-    .param p2    # Landroid/content/pm/PackageManager;
 
     const/4 v7, 0x0
 
@@ -668,9 +659,6 @@
 
 .method private updateValueInCommaSeparatedList(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 12
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const/16 v11, 0x2c
 
@@ -956,7 +944,6 @@
 
 .method public getEngineInfo(Ljava/lang/String;)Landroid/speech/tts/TextToSpeech$EngineInfo;
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     iget-object v3, p0, Landroid/speech/tts/TtsEngines;->mContext:Landroid/content/Context;
 
@@ -1137,7 +1124,6 @@
 
 .method public getLocalePrefForEngine(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Landroid/speech/tts/TtsEngines;->mContext:Landroid/content/Context;
 
@@ -1171,7 +1157,6 @@
 
 .method public getSettingsIntent(Ljava/lang/String;)Landroid/content/Intent;
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     iget-object v6, p0, Landroid/speech/tts/TtsEngines;->mContext:Landroid/content/Context;
 
@@ -1238,7 +1223,6 @@
 
 .method public isEngineInstalled(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -1262,8 +1246,6 @@
 
 .method public declared-synchronized updateLocalePrefForEngine(Ljava/lang/String;Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     monitor-enter p0
 

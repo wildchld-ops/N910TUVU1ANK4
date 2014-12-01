@@ -14,10 +14,6 @@
 
 .method public static getUserIcon(Landroid/content/Context;Landroid/os/UserManager;Landroid/content/pm/UserInfo;Landroid/content/res/Resources;)Landroid/graphics/drawable/Drawable;
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/os/UserManager;
-    .param p2    # Landroid/content/pm/UserInfo;
-    .param p3    # Landroid/content/res/Resources;
 
     const/4 v1, 0x0
 

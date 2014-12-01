@@ -33,8 +33,6 @@
 # virtual methods
 .method public onCallStateChanged(ILjava/lang/String;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -109,7 +107,6 @@
 
 .method public onServiceStateChanged(Landroid/telephony/ServiceState;)V
     .locals 2
-    .param p1    # Landroid/telephony/ServiceState;
 
     if-eqz p1, :cond_0
 

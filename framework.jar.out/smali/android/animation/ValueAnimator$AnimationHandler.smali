@@ -142,7 +142,6 @@
 
 .method synthetic constructor <init>(Landroid/animation/ValueAnimator$1;)V
     .locals 0
-    .param p1    # Landroid/animation/ValueAnimator$1;
 
     invoke-direct {p0}, Landroid/animation/ValueAnimator$AnimationHandler;-><init>()V
 
@@ -151,7 +150,6 @@
 
 .method private doAnimationFrame(J)V
     .locals 11
-    .param p1    # J
 
     :cond_0
     iget-object v7, p0, Landroid/animation/ValueAnimator$AnimationHandler;->mPendingAnimations:Ljava/util/ArrayList;

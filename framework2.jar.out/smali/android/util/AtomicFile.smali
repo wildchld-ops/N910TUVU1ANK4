@@ -12,7 +12,6 @@
 # direct methods
 .method public constructor <init>(Ljava/io/File;)V
     .locals 3
-    .param p1    # Ljava/io/File;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -67,7 +66,6 @@
 
 .method public failWrite(Ljava/io/FileOutputStream;)V
     .locals 3
-    .param p1    # Ljava/io/FileOutputStream;
 
     if-eqz p1, :cond_0
 
@@ -106,7 +104,6 @@
 
 .method public finishWrite(Ljava/io/FileOutputStream;)V
     .locals 3
-    .param p1    # Ljava/io/FileOutputStream;
 
     if-eqz p1, :cond_0
 
@@ -155,8 +152,6 @@
 
 .method logToFile(Ljava/io/PrintWriter;Ljava/lang/String;)V
     .locals 9
-    .param p1    # Ljava/io/PrintWriter;
-    .param p2    # Ljava/lang/String;
 
     const/4 v8, 0x5
 
@@ -366,7 +361,6 @@
 
 .method public openRead(Ljava/io/PrintWriter;)Ljava/io/FileInputStream;
     .locals 2
-    .param p1    # Ljava/io/PrintWriter;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/FileNotFoundException;

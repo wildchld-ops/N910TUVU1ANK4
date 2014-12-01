@@ -183,7 +183,6 @@
 
 .method private updateRadioButtons(Lcom/android/settings/location/RadioButtonPreference;)V
     .locals 3
-    .param p1    # Lcom/android/settings/location/RadioButtonPreference;
 
     const/4 v2, 0x1
 
@@ -277,8 +276,6 @@
 
 .method public onModeChanged(IZ)V
     .locals 10
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v5, 0x1
 
@@ -581,7 +578,6 @@
 
 .method public onRadioButtonClicked(Lcom/android/settings/location/RadioButtonPreference;)V
     .locals 2
-    .param p1    # Lcom/android/settings/location/RadioButtonPreference;
 
     const/4 v0, 0x0
 

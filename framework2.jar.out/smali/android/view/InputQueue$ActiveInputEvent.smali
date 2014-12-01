@@ -35,8 +35,6 @@
 
 .method synthetic constructor <init>(Landroid/view/InputQueue;Landroid/view/InputQueue$1;)V
     .locals 0
-    .param p1    # Landroid/view/InputQueue;
-    .param p2    # Landroid/view/InputQueue$1;
 
     invoke-direct {p0, p1}, Landroid/view/InputQueue$ActiveInputEvent;-><init>(Landroid/view/InputQueue;)V
 

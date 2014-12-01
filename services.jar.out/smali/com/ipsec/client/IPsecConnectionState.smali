@@ -95,8 +95,6 @@
 # virtual methods
 .method protected addIkeConfigurationVendorAttribute(I[B)V
     .locals 2
-    .param p1    # I
-    .param p2    # [B
 
     iget-object v0, p0, Lcom/ipsec/client/IPsecConnectionState;->mIkeCfgAttrs:Ljava/util/Vector;
 
@@ -122,8 +120,6 @@
 
 .method protected addRemoteAccessClientAddress(Lcom/ipsec/client/IPsecConnection$IPVersion;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Lcom/ipsec/client/IPsecConnection$IPVersion;
-    .param p2    # Ljava/lang/String;
 
     sget-object v3, Lcom/ipsec/client/IPsecConnection$IPVersion;->IP_VERSION_4:Lcom/ipsec/client/IPsecConnection$IPVersion;
 
@@ -221,8 +217,6 @@
 
 .method protected addRemoteAccessDnsAddress(Lcom/ipsec/client/IPsecConnection$IPVersion;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Lcom/ipsec/client/IPsecConnection$IPVersion;
-    .param p2    # Ljava/lang/String;
 
     sget-object v3, Lcom/ipsec/client/IPsecConnection$IPVersion;->IP_VERSION_4:Lcom/ipsec/client/IPsecConnection$IPVersion;
 
@@ -320,8 +314,6 @@
 
 .method protected addRemoteAccessSubnet(Lcom/ipsec/client/IPsecConnection$IPVersion;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Lcom/ipsec/client/IPsecConnection$IPVersion;
-    .param p2    # Ljava/lang/String;
 
     sget-object v3, Lcom/ipsec/client/IPsecConnection$IPVersion;->IP_VERSION_4:Lcom/ipsec/client/IPsecConnection$IPVersion;
 
@@ -427,7 +419,6 @@
 
 .method public getIkeCfgAttributes(I)Ljava/util/Vector;
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -525,7 +516,6 @@
 
 .method public getRemoteAccessClientAddress(Lcom/ipsec/client/IPsecConnection$IPVersion;)[Ljava/lang/String;
     .locals 5
-    .param p1    # Lcom/ipsec/client/IPsecConnection$IPVersion;
 
     const/4 v4, 0x0
 
@@ -630,7 +620,6 @@
 
 .method public getRemoteAccessDnsAddress(Lcom/ipsec/client/IPsecConnection$IPVersion;)[Ljava/lang/String;
     .locals 5
-    .param p1    # Lcom/ipsec/client/IPsecConnection$IPVersion;
 
     const/4 v4, 0x0
 
@@ -735,7 +724,6 @@
 
 .method public getRemoteAccessSubnets(Lcom/ipsec/client/IPsecConnection$IPVersion;)[Ljava/lang/String;
     .locals 5
-    .param p1    # Lcom/ipsec/client/IPsecConnection$IPVersion;
 
     const/4 v4, 0x0
 
@@ -872,7 +860,6 @@
 
 .method protected setGatewayIP(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -888,7 +875,6 @@
 
 .method protected setLocalIP(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -904,7 +890,6 @@
 
 .method protected setOwnIdentity(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -920,7 +905,6 @@
 
 .method protected setOwnIdentityType(Lcom/ipsec/client/IPsecConnection$IdentityType;)V
     .locals 0
-    .param p1    # Lcom/ipsec/client/IPsecConnection$IdentityType;
 
     iput-object p1, p0, Lcom/ipsec/client/IPsecConnectionState;->mOwnIdentityType:Lcom/ipsec/client/IPsecConnection$IdentityType;
 
@@ -929,7 +913,6 @@
 
 .method protected setRemoteIdentity(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -945,7 +928,6 @@
 
 .method protected setRemoteIdentityType(Lcom/ipsec/client/IPsecConnection$IdentityType;)V
     .locals 0
-    .param p1    # Lcom/ipsec/client/IPsecConnection$IdentityType;
 
     iput-object p1, p0, Lcom/ipsec/client/IPsecConnectionState;->mRemoteIdentityType:Lcom/ipsec/client/IPsecConnection$IdentityType;
 
@@ -954,7 +936,6 @@
 
 .method protected setVirtualAdapterMTU(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/ipsec/client/IPsecConnectionState;->mVirtualAdapterMtu:I
 
@@ -963,7 +944,6 @@
 
 .method protected setVirtualAdapterName(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 

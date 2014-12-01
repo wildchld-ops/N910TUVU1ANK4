@@ -28,8 +28,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/ResultReceiver;ILandroid/os/Bundle;)V
     .locals 0
-    .param p2    # I
-    .param p3    # Landroid/os/Bundle;
 
     iput-object p1, p0, Landroid/os/ResultReceiver$MyRunnable;->this$0:Landroid/os/ResultReceiver;
 

@@ -93,8 +93,6 @@
 
 .method private _dirChecker(Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     new-instance v0, Ljava/io/File;
 
@@ -130,8 +128,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/wifi/WifiCredService;Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiCredService;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/settings/wifi/WifiCredService;->readSdcard(Ljava/lang/String;)Ljava/lang/String;
 
@@ -142,7 +138,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/wifi/WifiCredService;)Landroid/net/wifi/WifiManager;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiCredService;
 
     iget-object v0, p0, Lcom/android/settings/wifi/WifiCredService;->mWifiManager:Landroid/net/wifi/WifiManager;
 
@@ -151,9 +146,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/wifi/WifiCredService;Ljava/lang/String;I)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/WifiCredService;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/settings/wifi/WifiCredService;->scheduleExpiryTimer(Ljava/lang/String;I)V
 
@@ -162,7 +154,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/wifi/WifiCredService;)Ljava/security/cert/X509Certificate;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiCredService;
 
     iget-object v0, p0, Lcom/android/settings/wifi/WifiCredService;->aaaCACert:Ljava/security/cert/X509Certificate;
 
@@ -171,8 +162,6 @@
 
 .method static synthetic access$502(Lcom/android/settings/wifi/WifiCredService;Ljava/security/cert/X509Certificate;)Ljava/security/cert/X509Certificate;
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/WifiCredService;
-    .param p1    # Ljava/security/cert/X509Certificate;
 
     iput-object p1, p0, Lcom/android/settings/wifi/WifiCredService;->aaaCACert:Ljava/security/cert/X509Certificate;
 
@@ -181,7 +170,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/wifi/WifiCredService;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiCredService;
 
     iget-object v0, p0, Lcom/android/settings/wifi/WifiCredService;->aaaCACertHash:Ljava/lang/String;
 
@@ -190,8 +178,6 @@
 
 .method static synthetic access$602(Lcom/android/settings/wifi/WifiCredService;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/WifiCredService;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/settings/wifi/WifiCredService;->aaaCACertHash:Ljava/lang/String;
 
@@ -200,7 +186,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/wifi/WifiCredService;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiCredService;
 
     iget-object v0, p0, Lcom/android/settings/wifi/WifiCredService;->CERT_PATH:Ljava/lang/String;
 
@@ -209,7 +194,6 @@
 
 .method private readSdcard(Ljava/lang/String;)Ljava/lang/String;
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -349,8 +333,6 @@
 
 .method private scheduleExpiryTimer(Ljava/lang/String;I)V
     .locals 12
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const-wide/16 v9, 0x0
 
@@ -629,7 +611,6 @@
 
 .method public loadCred(Ljava/lang/String;)Ljava/lang/String;
     .locals 19
-    .param p1    # Ljava/lang/String;
 
     const/16 v16, 0x0
 
@@ -863,7 +844,6 @@
 
 .method public onBind(Landroid/content/Intent;)Landroid/os/IBinder;
     .locals 1
-    .param p1    # Landroid/content/Intent;
 
     const/4 v0, 0x0
 
@@ -976,9 +956,6 @@
 
 .method public onStartCommand(Landroid/content/Intent;II)I
     .locals 1
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
-    .param p3    # I
 
     invoke-virtual {p0}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
 
@@ -993,8 +970,6 @@
 
 .method public unzip(Ljava/lang/String;Ljava/lang/String;)V
     .locals 13
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     :try_start_0
     new-instance v4, Ljava/io/FileInputStream;

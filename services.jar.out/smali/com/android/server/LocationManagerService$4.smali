@@ -33,8 +33,6 @@
 # virtual methods
 .method public onPackageDisappeared(Ljava/lang/String;I)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     iget-object v4, p0, Lcom/android/server/LocationManagerService$4;->this$0:Lcom/android/server/LocationManagerService;
 

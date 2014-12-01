@@ -58,12 +58,6 @@
 
 .method public constructor <init>(IILandroid/content/pm/ResolveInfo;Landroid/content/Intent;Ljava/lang/String;Ljava/lang/CharSequence;)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/pm/ResolveInfo;
-    .param p4    # Landroid/content/Intent;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Ljava/lang/CharSequence;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -156,7 +150,6 @@
 
 .method public setDominantColor(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/systemui/recent/TaskDescription;->mDominantColor:I
 
@@ -165,7 +158,6 @@
 
 .method public setIcon(Landroid/graphics/drawable/Drawable;)V
     .locals 0
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     iput-object p1, p0, Lcom/android/systemui/recent/TaskDescription;->mIcon:Landroid/graphics/drawable/Drawable;
 
@@ -174,7 +166,6 @@
 
 .method public setLabel(Ljava/lang/CharSequence;)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
 
     iput-object p1, p0, Lcom/android/systemui/recent/TaskDescription;->mLabel:Ljava/lang/CharSequence;
 
@@ -183,7 +174,6 @@
 
 .method public setLoaded(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/systemui/recent/TaskDescription;->mLoaded:Z
 
@@ -192,7 +182,6 @@
 
 .method public setThumbnail(Landroid/graphics/drawable/Drawable;)V
     .locals 0
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     iput-object p1, p0, Lcom/android/systemui/recent/TaskDescription;->mThumbnail:Landroid/graphics/drawable/Drawable;
 

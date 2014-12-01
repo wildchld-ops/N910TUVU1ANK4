@@ -33,7 +33,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 14
-    .param p1    # Landroid/os/Message;
 
     iget-object v1, p0, Lcom/android/mms/ui/ComposeMessageFragment$4;->this$0:Lcom/android/mms/ui/ComposeMessageFragment;
 

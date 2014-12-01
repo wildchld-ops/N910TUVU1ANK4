@@ -280,7 +280,7 @@
 
     packed-switch v0, :pswitch_data_0
 
-    invoke-virtual {p0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
+    invoke-virtual {p0}, [Ljava/lang/Object;->clone()Ljava/lang/Object;
 
     move-result-object v0
 
@@ -453,7 +453,7 @@
 
     new-instance v0, Lcom/google/common/collect/ImmutableSet$SerializedForm;
 
-    invoke-virtual {p0}, Lcom/google/common/collect/ImmutableCollection;->toArray()[Ljava/lang/Object;
+    invoke-virtual {p0}, Lcom/google/common/collect/ImmutableSet;->toArray()[Ljava/lang/Object;
 
     move-result-object v1
 

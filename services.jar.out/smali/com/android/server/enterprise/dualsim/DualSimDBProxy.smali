@@ -18,7 +18,6 @@
 # direct methods
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,7 +36,6 @@
 
 .method static getInstance(Landroid/content/Context;)Lcom/android/server/enterprise/dualsim/DualSimDBProxy;
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     sget-object v0, Lcom/android/server/enterprise/dualsim/DualSimDBProxy;->mDualSimDBProxy:Lcom/android/server/enterprise/dualsim/DualSimDBProxy;
 
@@ -59,8 +57,6 @@
 # virtual methods
 .method addCorporateSimcard(ILjava/lang/String;)Z
     .locals 5
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     iget-object v2, p0, Lcom/android/server/enterprise/dualsim/DualSimDBProxy;->mEdmStorageProvider:Lcom/android/server/enterprise/storage/EdmStorageProvider;
 
@@ -118,9 +114,6 @@
 
 .method addPhoneToSimcardWhiteList(ILjava/lang/String;Ljava/lang/String;)Z
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     iget-object v3, p0, Lcom/android/server/enterprise/dualsim/DualSimDBProxy;->mEdmStorageProvider:Lcom/android/server/enterprise/storage/EdmStorageProvider;
 
@@ -199,8 +192,6 @@
 
 .method clearWhiteList(ILjava/lang/String;)Z
     .locals 8
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v4, 0x1
 
@@ -292,7 +283,6 @@
 
 .method forceDataThroughSimcard(Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x1
 
@@ -418,8 +408,6 @@
 
 .method getWhiteListForSimcard(ILjava/lang/String;)Ljava/util/List;
     .locals 10
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -516,8 +504,6 @@
 
 .method isCorporateSimcard(ILjava/lang/String;)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/server/enterprise/dualsim/DualSimDBProxy;->mEdmStorageProvider:Lcom/android/server/enterprise/storage/EdmStorageProvider;
 
@@ -544,7 +530,6 @@
 
 .method isCorporateSimcard(Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/server/enterprise/dualsim/DualSimDBProxy;->mEdmStorageProvider:Lcom/android/server/enterprise/storage/EdmStorageProvider;
 
@@ -635,8 +620,6 @@
 
 .method removeCorporateSimcard(ILjava/lang/String;)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/server/enterprise/dualsim/DualSimDBProxy;->mEdmStorageProvider:Lcom/android/server/enterprise/storage/EdmStorageProvider;
 
@@ -653,9 +636,6 @@
 
 .method removePhoneFromSimcardWhiteList(ILjava/lang/String;Ljava/lang/String;)Z
     .locals 8
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const/4 v4, 0x1
 
@@ -709,7 +689,6 @@
 
 .method setActiveSimcardForMessaging(Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x1
 

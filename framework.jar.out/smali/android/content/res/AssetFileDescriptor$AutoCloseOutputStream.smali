@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/res/AssetFileDescriptor;)V
     .locals 4
-    .param p1    # Landroid/content/res/AssetFileDescriptor;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -78,7 +77,6 @@
 # virtual methods
 .method public write(I)V
     .locals 4
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -123,7 +121,6 @@
 
 .method public write([B)V
     .locals 5
-    .param p1    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -183,9 +180,6 @@
 
 .method public write([BII)V
     .locals 4
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

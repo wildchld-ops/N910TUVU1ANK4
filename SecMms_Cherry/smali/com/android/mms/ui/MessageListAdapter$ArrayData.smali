@@ -23,8 +23,6 @@
 # direct methods
 .method public constructor <init>(JLjava/lang/String;)V
     .locals 0
-    .param p1    # J
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -39,7 +37,6 @@
 # virtual methods
 .method public equals(Ljava/lang/Object;)Z
     .locals 6
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x0
 

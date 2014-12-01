@@ -23,10 +23,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/settings/LaunchApplication;Landroid/content/Context;Landroid/graphics/drawable/Drawable;Ljava/lang/CharSequence;Ljava/lang/CharSequence;)V
     .locals 1
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/graphics/drawable/Drawable;
-    .param p4    # Ljava/lang/CharSequence;
-    .param p5    # Ljava/lang/CharSequence;
 
     iput-object p1, p0, Lcom/android/settings/LaunchApplication$DefaultAppPreference;->this$0:Lcom/android/settings/LaunchApplication;
 
@@ -49,7 +45,6 @@
 # virtual methods
 .method protected onBindView(Landroid/view/View;)V
     .locals 5
-    .param p1    # Landroid/view/View;
 
     invoke-super {p0, p1}, Landroid/preference/Preference;->onBindView(Landroid/view/View;)V
 

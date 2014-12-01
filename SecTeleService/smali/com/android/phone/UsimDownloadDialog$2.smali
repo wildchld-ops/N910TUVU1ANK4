@@ -45,7 +45,7 @@
 
     const-string v4, "UsimDownload"
 
-    invoke-virtual {v3, v4, v1}, Landroid/content/ContextWrapper;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+    invoke-virtual {v3, v4, v1}, Lcom/android/phone/UsimDownloadDialog;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
 
     move-result-object v2
 

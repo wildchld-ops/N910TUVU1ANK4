@@ -120,7 +120,7 @@
 
     sget-object v0, Lcom/android/phone/LGTUwaCallServiceMgr$LgtCallType;->$VALUES:[Lcom/android/phone/LGTUwaCallServiceMgr$LgtCallType;
 
-    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
+    invoke-virtual {v0}, [Lcom/android/phone/LGTUwaCallServiceMgr$LgtCallType;->clone()Ljava/lang/Object;
 
     move-result-object v0
 

@@ -64,14 +64,6 @@
 
 .method public static apply(IIILandroid/graphics/Rect;IILandroid/graphics/Rect;I)V
     .locals 9
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/graphics/Rect;
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Landroid/graphics/Rect;
-    .param p7    # I
 
     sget-object v0, Landroid/support/v4/view/GravityCompat;->IMPL:Landroid/support/v4/view/GravityCompat$GravityCompatImpl;
 
@@ -98,12 +90,6 @@
 
 .method public static apply(IIILandroid/graphics/Rect;Landroid/graphics/Rect;I)V
     .locals 7
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/graphics/Rect;
-    .param p4    # Landroid/graphics/Rect;
-    .param p5    # I
 
     sget-object v0, Landroid/support/v4/view/GravityCompat;->IMPL:Landroid/support/v4/view/GravityCompat$GravityCompatImpl;
 
@@ -126,10 +112,6 @@
 
 .method public static applyDisplay(ILandroid/graphics/Rect;Landroid/graphics/Rect;I)V
     .locals 1
-    .param p0    # I
-    .param p1    # Landroid/graphics/Rect;
-    .param p2    # Landroid/graphics/Rect;
-    .param p3    # I
 
     sget-object v0, Landroid/support/v4/view/GravityCompat;->IMPL:Landroid/support/v4/view/GravityCompat$GravityCompatImpl;
 
@@ -140,8 +122,6 @@
 
 .method public static getAbsoluteGravity(II)I
     .locals 1
-    .param p0    # I
-    .param p1    # I
 
     sget-object v0, Landroid/support/v4/view/GravityCompat;->IMPL:Landroid/support/v4/view/GravityCompat$GravityCompatImpl;
 

@@ -35,7 +35,6 @@
 
 .method synthetic constructor <init>(Lcom/android/settings/widget/SettingsAppWidgetProvider$1;)V
     .locals 0
-    .param p1    # Lcom/android/settings/widget/SettingsAppWidgetProvider$1;
 
     invoke-direct {p0}, Lcom/android/settings/widget/SettingsAppWidgetProvider$LocationStateTracker;-><init>()V
 
@@ -46,7 +45,6 @@
 # virtual methods
 .method public getActualState(Landroid/content/Context;)I
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -93,7 +91,6 @@
 
 .method public getButtonImageId(Z)I
     .locals 1
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -145,8 +142,6 @@
 
 .method public onActualStateChange(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     invoke-virtual {p0, p1}, Lcom/android/settings/widget/SettingsAppWidgetProvider$LocationStateTracker;->getActualState(Landroid/content/Context;)I
 
@@ -159,8 +154,6 @@
 
 .method public requestStateChange(Landroid/content/Context;Z)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Z
 
     invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 

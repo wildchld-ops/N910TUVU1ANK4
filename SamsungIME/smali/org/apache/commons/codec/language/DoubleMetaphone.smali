@@ -249,7 +249,6 @@
 
 .method private cleanInput(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -279,8 +278,6 @@
 
 .method private conditionC0(Ljava/lang/String;I)Z
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v2, 0x1
 
@@ -366,8 +363,6 @@
 
 .method private conditionCH0(Ljava/lang/String;I)Z
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v8, 0x5
 
@@ -438,8 +433,6 @@
 
 .method private conditionCH1(Ljava/lang/String;I)Z
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v7, 0x0
 
@@ -554,8 +547,6 @@
 
 .method private conditionL0(Ljava/lang/String;I)Z
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v2, 0x4
 
@@ -644,8 +635,6 @@
 
 .method private conditionM0(Ljava/lang/String;I)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v0, 0x1
 
@@ -706,10 +695,6 @@
 
 .method private static contains(Ljava/lang/String;IILjava/lang/String;)Z
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -728,11 +713,6 @@
 
 .method private static contains(Ljava/lang/String;IILjava/lang/String;Ljava/lang/String;)Z
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     const/4 v0, 0x2
 
@@ -755,12 +735,6 @@
 
 .method private static contains(Ljava/lang/String;IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
 
     const/4 v0, 0x3
 
@@ -787,13 +761,6 @@
 
 .method private static contains(Ljava/lang/String;IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Ljava/lang/String;
 
     const/4 v0, 0x4
 
@@ -824,14 +791,6 @@
 
 .method private static contains(Ljava/lang/String;IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Ljava/lang/String;
-    .param p7    # Ljava/lang/String;
 
     const/4 v0, 0x5
 
@@ -866,15 +825,6 @@
 
 .method private static contains(Ljava/lang/String;IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Ljava/lang/String;
-    .param p7    # Ljava/lang/String;
-    .param p8    # Ljava/lang/String;
 
     const/4 v0, 0x6
 
@@ -913,10 +863,6 @@
 
 .method protected static contains(Ljava/lang/String;II[Ljava/lang/String;)Z
     .locals 5
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -964,9 +910,6 @@
 
 .method private handleAEIOUY(Ljava/lang/String;Lorg/apache/commons/codec/language/DoubleMetaphone$DoubleMetaphoneResult;I)I
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lorg/apache/commons/codec/language/DoubleMetaphone$DoubleMetaphoneResult;
-    .param p3    # I
 
     if-nez p3, :cond_0
 
@@ -982,9 +925,6 @@
 
 .method private handleC(Ljava/lang/String;Lorg/apache/commons/codec/language/DoubleMetaphone$DoubleMetaphoneResult;I)I
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lorg/apache/commons/codec/language/DoubleMetaphone$DoubleMetaphoneResult;
-    .param p3    # I
 
     const/4 v9, 0x1
 
@@ -1256,9 +1196,6 @@
 
 .method private handleCC(Ljava/lang/String;Lorg/apache/commons/codec/language/DoubleMetaphone$DoubleMetaphoneResult;I)I
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lorg/apache/commons/codec/language/DoubleMetaphone$DoubleMetaphoneResult;
-    .param p3    # I
 
     const/4 v2, 0x1
 
@@ -1347,9 +1284,6 @@
 
 .method private handleCH(Ljava/lang/String;Lorg/apache/commons/codec/language/DoubleMetaphone$DoubleMetaphoneResult;I)I
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lorg/apache/commons/codec/language/DoubleMetaphone$DoubleMetaphoneResult;
-    .param p3    # I
 
     const/16 v4, 0x58
 
@@ -1435,9 +1369,6 @@
 
 .method private handleD(Ljava/lang/String;Lorg/apache/commons/codec/language/DoubleMetaphone$DoubleMetaphoneResult;I)I
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lorg/apache/commons/codec/language/DoubleMetaphone$DoubleMetaphoneResult;
-    .param p3    # I
 
     const/16 v3, 0x54
 
@@ -1514,10 +1445,6 @@
 
 .method private handleG(Ljava/lang/String;Lorg/apache/commons/codec/language/DoubleMetaphone$DoubleMetaphoneResult;IZ)I
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lorg/apache/commons/codec/language/DoubleMetaphone$DoubleMetaphoneResult;
-    .param p3    # I
-    .param p4    # Z
 
     add-int/lit8 v0, p3, 0x1
 
@@ -1898,9 +1825,6 @@
 
 .method private handleGH(Ljava/lang/String;Lorg/apache/commons/codec/language/DoubleMetaphone$DoubleMetaphoneResult;I)I
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lorg/apache/commons/codec/language/DoubleMetaphone$DoubleMetaphoneResult;
-    .param p3    # I
 
     const/16 v9, 0x49
 
@@ -2077,9 +2001,6 @@
 
 .method private handleH(Ljava/lang/String;Lorg/apache/commons/codec/language/DoubleMetaphone$DoubleMetaphoneResult;I)I
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lorg/apache/commons/codec/language/DoubleMetaphone$DoubleMetaphoneResult;
-    .param p3    # I
 
     if-eqz p3, :cond_0
 
@@ -2125,10 +2046,6 @@
 
 .method private handleJ(Ljava/lang/String;Lorg/apache/commons/codec/language/DoubleMetaphone$DoubleMetaphoneResult;IZ)I
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lorg/apache/commons/codec/language/DoubleMetaphone$DoubleMetaphoneResult;
-    .param p3    # I
-    .param p4    # Z
 
     const/4 v2, 0x1
 
@@ -2321,9 +2238,6 @@
 
 .method private handleL(Ljava/lang/String;Lorg/apache/commons/codec/language/DoubleMetaphone$DoubleMetaphoneResult;I)I
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lorg/apache/commons/codec/language/DoubleMetaphone$DoubleMetaphoneResult;
-    .param p3    # I
 
     const/16 v1, 0x4c
 
@@ -2361,9 +2275,6 @@
 
 .method private handleP(Ljava/lang/String;Lorg/apache/commons/codec/language/DoubleMetaphone$DoubleMetaphoneResult;I)I
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lorg/apache/commons/codec/language/DoubleMetaphone$DoubleMetaphoneResult;
-    .param p3    # I
 
     add-int/lit8 v0, p3, 0x1
 
@@ -2416,10 +2327,6 @@
 
 .method private handleR(Ljava/lang/String;Lorg/apache/commons/codec/language/DoubleMetaphone$DoubleMetaphoneResult;IZ)I
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lorg/apache/commons/codec/language/DoubleMetaphone$DoubleMetaphoneResult;
-    .param p3    # I
-    .param p4    # Z
 
     const/4 v4, 0x2
 
@@ -2486,10 +2393,6 @@
 
 .method private handleS(Ljava/lang/String;Lorg/apache/commons/codec/language/DoubleMetaphone$DoubleMetaphoneResult;IZ)I
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lorg/apache/commons/codec/language/DoubleMetaphone$DoubleMetaphoneResult;
-    .param p3    # I
-    .param p4    # Z
 
     const/4 v4, 0x3
 
@@ -2738,9 +2641,6 @@
 
 .method private handleSC(Ljava/lang/String;Lorg/apache/commons/codec/language/DoubleMetaphone$DoubleMetaphoneResult;I)I
     .locals 12
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lorg/apache/commons/codec/language/DoubleMetaphone$DoubleMetaphoneResult;
-    .param p3    # I
 
     const/16 v11, 0x58
 
@@ -2875,9 +2775,6 @@
 
 .method private handleT(Ljava/lang/String;Lorg/apache/commons/codec/language/DoubleMetaphone$DoubleMetaphoneResult;I)I
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lorg/apache/commons/codec/language/DoubleMetaphone$DoubleMetaphoneResult;
-    .param p3    # I
 
     const/4 v7, 0x4
 
@@ -3018,9 +2915,6 @@
 
 .method private handleW(Ljava/lang/String;Lorg/apache/commons/codec/language/DoubleMetaphone$DoubleMetaphoneResult;I)I
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lorg/apache/commons/codec/language/DoubleMetaphone$DoubleMetaphoneResult;
-    .param p3    # I
 
     const/16 v7, 0x46
 
@@ -3185,9 +3079,6 @@
 
 .method private handleX(Ljava/lang/String;Lorg/apache/commons/codec/language/DoubleMetaphone$DoubleMetaphoneResult;I)I
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lorg/apache/commons/codec/language/DoubleMetaphone$DoubleMetaphoneResult;
-    .param p3    # I
 
     if-nez p3, :cond_0
 
@@ -3270,10 +3161,6 @@
 
 .method private handleZ(Ljava/lang/String;Lorg/apache/commons/codec/language/DoubleMetaphone$DoubleMetaphoneResult;IZ)I
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lorg/apache/commons/codec/language/DoubleMetaphone$DoubleMetaphoneResult;
-    .param p3    # I
-    .param p4    # Z
 
     add-int/lit8 v0, p3, 0x1
 
@@ -3365,7 +3252,6 @@
 
 .method private isSilentStart(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -3401,7 +3287,6 @@
 
 .method private isSlavoGermanic(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, -0x1
 
@@ -3451,7 +3336,6 @@
 
 .method private isVowel(C)Z
     .locals 2
-    .param p1    # C
 
     const-string v0, "AEIOUY"
 
@@ -3478,8 +3362,6 @@
 # virtual methods
 .method protected charAt(Ljava/lang/String;I)C
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     if-ltz p2, :cond_0
 
@@ -3505,7 +3387,6 @@
 
 .method public doubleMetaphone(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -3518,8 +3399,6 @@
 
 .method public doubleMetaphone(Ljava/lang/String;Z)Ljava/lang/String;
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const/16 v7, 0x4e
 
@@ -3912,7 +3791,6 @@
 
 .method public encode(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 2
-    .param p1    # Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/commons/codec/EncoderException;
@@ -3943,7 +3821,6 @@
 
 .method public encode(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lorg/apache/commons/codec/language/DoubleMetaphone;->doubleMetaphone(Ljava/lang/String;)Ljava/lang/String;
 
@@ -3962,8 +3839,6 @@
 
 .method public isDoubleMetaphoneEqual(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -3976,9 +3851,6 @@
 
 .method public isDoubleMetaphoneEqual(Ljava/lang/String;Ljava/lang/String;Z)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     invoke-virtual {p0, p1, p3}, Lorg/apache/commons/codec/language/DoubleMetaphone;->doubleMetaphone(Ljava/lang/String;Z)Ljava/lang/String;
 
@@ -3997,7 +3869,6 @@
 
 .method public setMaxCodeLen(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lorg/apache/commons/codec/language/DoubleMetaphone;->maxCodeLen:I
 

@@ -33,7 +33,6 @@
 # virtual methods
 .method public onEventConfigurationChanged(Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -45,7 +44,6 @@
 
 .method public onEventMappingChanged(Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

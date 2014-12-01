@@ -22,8 +22,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/renderscript/RenderScriptGL$SurfaceConfig;)V
     .locals 17
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/renderscript/RenderScriptGL$SurfaceConfig;
 
     invoke-direct/range {p0 .. p1}, Landroid/renderscript/RenderScript;-><init>(Landroid/content/Context;)V
 
@@ -195,7 +193,6 @@
 # virtual methods
 .method public bindProgramFragment(Landroid/renderscript/ProgramFragment;)V
     .locals 1
-    .param p1    # Landroid/renderscript/ProgramFragment;
 
     invoke-virtual {p0}, Landroid/renderscript/RenderScript;->validate()V
 
@@ -210,7 +207,6 @@
 
 .method public bindProgramRaster(Landroid/renderscript/ProgramRaster;)V
     .locals 1
-    .param p1    # Landroid/renderscript/ProgramRaster;
 
     invoke-virtual {p0}, Landroid/renderscript/RenderScript;->validate()V
 
@@ -225,7 +221,6 @@
 
 .method public bindProgramStore(Landroid/renderscript/ProgramStore;)V
     .locals 1
-    .param p1    # Landroid/renderscript/ProgramStore;
 
     invoke-virtual {p0}, Landroid/renderscript/RenderScript;->validate()V
 
@@ -240,7 +235,6 @@
 
 .method public bindProgramVertex(Landroid/renderscript/ProgramVertex;)V
     .locals 1
-    .param p1    # Landroid/renderscript/ProgramVertex;
 
     invoke-virtual {p0}, Landroid/renderscript/RenderScript;->validate()V
 
@@ -255,7 +249,6 @@
 
 .method public bindRootScript(Landroid/renderscript/Script;)V
     .locals 1
-    .param p1    # Landroid/renderscript/Script;
 
     invoke-virtual {p0}, Landroid/renderscript/RenderScript;->validate()V
 
@@ -306,9 +299,6 @@
 
 .method public setSurface(Landroid/view/SurfaceHolder;II)V
     .locals 1
-    .param p1    # Landroid/view/SurfaceHolder;
-    .param p2    # I
-    .param p3    # I
 
     invoke-virtual {p0}, Landroid/renderscript/RenderScript;->validate()V
 
@@ -332,9 +322,6 @@
 
 .method public setSurfaceTexture(Landroid/graphics/SurfaceTexture;II)V
     .locals 0
-    .param p1    # Landroid/graphics/SurfaceTexture;
-    .param p2    # I
-    .param p3    # I
 
     invoke-virtual {p0}, Landroid/renderscript/RenderScript;->validate()V
 

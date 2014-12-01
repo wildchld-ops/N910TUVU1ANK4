@@ -80,7 +80,6 @@
 
 .method private constructor <init>(Ljava/lang/String;II)V
     .locals 0
-    .param p3    # I
 
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
@@ -91,7 +90,6 @@
 
 .method public static getItemType(I)Lcom/sec/orca/shop/client/library/ShopConstants$ItemType;
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 

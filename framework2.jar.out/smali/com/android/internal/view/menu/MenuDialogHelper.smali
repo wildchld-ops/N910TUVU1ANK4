@@ -24,7 +24,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/internal/view/menu/MenuBuilder;)V
     .locals 1
-    .param p1    # Lcom/android/internal/view/menu/MenuBuilder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -56,8 +55,6 @@
 
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 3
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     iget-object v1, p0, Lcom/android/internal/view/menu/MenuDialogHelper;->mMenu:Lcom/android/internal/view/menu/MenuBuilder;
 
@@ -82,8 +79,6 @@
 
 .method public onCloseMenu(Lcom/android/internal/view/menu/MenuBuilder;Z)V
     .locals 1
-    .param p1    # Lcom/android/internal/view/menu/MenuBuilder;
-    .param p2    # Z
 
     if-nez p2, :cond_0
 
@@ -109,7 +104,6 @@
 
 .method public onDismiss(Landroid/content/DialogInterface;)V
     .locals 3
-    .param p1    # Landroid/content/DialogInterface;
 
     iget-object v0, p0, Lcom/android/internal/view/menu/MenuDialogHelper;->mPresenter:Lcom/android/internal/view/menu/ListMenuPresenter;
 
@@ -124,9 +118,6 @@
 
 .method public onKey(Landroid/content/DialogInterface;ILandroid/view/KeyEvent;)Z
     .locals 5
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
-    .param p3    # Landroid/view/KeyEvent;
 
     const/4 v3, 0x1
 
@@ -237,7 +228,6 @@
 
 .method public onOpenSubMenu(Lcom/android/internal/view/menu/MenuBuilder;)Z
     .locals 1
-    .param p1    # Lcom/android/internal/view/menu/MenuBuilder;
 
     iget-object v0, p0, Lcom/android/internal/view/menu/MenuDialogHelper;->mPresenterCallback:Lcom/android/internal/view/menu/MenuPresenter$Callback;
 
@@ -260,7 +250,6 @@
 
 .method public setPresenterCallback(Lcom/android/internal/view/menu/MenuPresenter$Callback;)V
     .locals 0
-    .param p1    # Lcom/android/internal/view/menu/MenuPresenter$Callback;
 
     iput-object p1, p0, Lcom/android/internal/view/menu/MenuDialogHelper;->mPresenterCallback:Lcom/android/internal/view/menu/MenuPresenter$Callback;
 
@@ -269,7 +258,6 @@
 
 .method public show(Landroid/os/IBinder;)V
     .locals 11
-    .param p1    # Landroid/os/IBinder;
 
     const/4 v10, 0x1
 
@@ -457,7 +445,6 @@
 
 .method public twSetContextMenuZOrderToTop(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/internal/view/menu/MenuDialogHelper;->mIsSetContextMenuZOrderToTop:Z
 

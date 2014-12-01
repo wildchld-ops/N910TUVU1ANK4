@@ -54,10 +54,6 @@
 # direct methods
 .method public constructor <init>(Landroid/media/MediaFocusControl;Landroid/app/PendingIntent;Landroid/content/ComponentName;Landroid/os/IBinder;)V
     .locals 6
-    .param p1    # Landroid/media/MediaFocusControl;
-    .param p2    # Landroid/app/PendingIntent;
-    .param p3    # Landroid/content/ComponentName;
-    .param p4    # Landroid/os/IBinder;
 
     const/4 v1, -0x1
 

@@ -144,7 +144,6 @@
 
 .method static synthetic access$000(Lcom/android/systemui/statusbar/PickUpBlackScreen;)Z
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/PickUpBlackScreen;
 
     iget-boolean v0, p0, Lcom/android/systemui/statusbar/PickUpBlackScreen;->mPickupEvent:Z
 
@@ -153,8 +152,6 @@
 
 .method static synthetic access$002(Lcom/android/systemui/statusbar/PickUpBlackScreen;Z)Z
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/PickUpBlackScreen;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/systemui/statusbar/PickUpBlackScreen;->mPickupEvent:Z
 
@@ -163,7 +160,6 @@
 
 .method static synthetic access$100(Lcom/android/systemui/statusbar/PickUpBlackScreen;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/PickUpBlackScreen;
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/PickUpBlackScreen;->mHandler:Landroid/os/Handler;
 
@@ -172,7 +168,6 @@
 
 .method static synthetic access$200(Lcom/android/systemui/statusbar/PickUpBlackScreen;)Landroid/widget/FrameLayout;
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/PickUpBlackScreen;
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/PickUpBlackScreen;->mPhonePutDown:Landroid/widget/FrameLayout;
 
@@ -181,7 +176,6 @@
 
 .method static synthetic access$300(Lcom/android/systemui/statusbar/PickUpBlackScreen;)[B
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/PickUpBlackScreen;
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/PickUpBlackScreen;->ivt:[B
 
@@ -190,7 +184,6 @@
 
 .method static synthetic access$400(Lcom/android/systemui/statusbar/PickUpBlackScreen;)Landroid/os/SystemVibrator;
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/PickUpBlackScreen;
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/PickUpBlackScreen;->mVibrator:Landroid/os/SystemVibrator;
 
@@ -199,7 +192,6 @@
 
 .method static synthetic access$500(Lcom/android/systemui/statusbar/PickUpBlackScreen;)V
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/PickUpBlackScreen;
 
     invoke-direct {p0}, Lcom/android/systemui/statusbar/PickUpBlackScreen;->sound()V
 
@@ -208,7 +200,6 @@
 
 .method private playTone(Landroid/net/Uri;)V
     .locals 6
-    .param p1    # Landroid/net/Uri;
 
     :try_start_0
     iget-object v3, p0, Lcom/android/systemui/statusbar/PickUpBlackScreen;->activity:Landroid/app/Activity;
@@ -419,7 +410,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 

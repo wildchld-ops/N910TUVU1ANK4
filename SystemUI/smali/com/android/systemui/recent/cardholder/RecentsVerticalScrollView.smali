@@ -6,8 +6,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v3, 0x0
 
@@ -56,7 +54,6 @@
 # virtual methods
 .method public addView(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     const/high16 v0, 0x43b40000
 
@@ -93,7 +90,6 @@
 
 .method protected createBottomStackInAnimationInternal(Landroid/view/View;)Landroid/view/animation/Animation;
     .locals 12
-    .param p1    # Landroid/view/View;
 
     const v2, 0x3f8ccccd
 
@@ -248,7 +244,6 @@
 
 .method protected createDisappearAnimation(Landroid/view/View;)Landroid/view/animation/Animation;
     .locals 6
-    .param p1    # Landroid/view/View;
 
     const/4 v5, 0x0
 
@@ -547,7 +542,6 @@
 
 .method public findViewForTask(I)Landroid/view/View;
     .locals 4
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -596,15 +590,12 @@
 
 .method protected getScrollDistance(FF)F
     .locals 0
-    .param p1    # F
-    .param p2    # F
 
     return p2
 .end method
 
 .method protected getScrollPosition(Landroid/view/View;)F
     .locals 1
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p1}, Landroid/view/View;->getY()F
 
@@ -635,23 +626,18 @@
 
 .method protected getScrollVelocity(FF)F
     .locals 0
-    .param p1    # F
-    .param p2    # F
 
     return p2
 .end method
 
 .method protected getSlideDistance(FF)F
     .locals 0
-    .param p1    # F
-    .param p2    # F
 
     return p1
 .end method
 
 .method protected getSlidePosition(Landroid/view/View;)F
     .locals 1
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p1}, Landroid/view/View;->getX()F
 
@@ -662,30 +648,24 @@
 
 .method protected getSlideVelocity(FF)F
     .locals 0
-    .param p1    # F
-    .param p2    # F
 
     return p1
 .end method
 
 .method protected optHide(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     return-void
 .end method
 
 .method protected optShow(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     return-void
 .end method
 
 .method protected setRotation(Landroid/view/View;F)V
     .locals 8
-    .param p1    # Landroid/view/View;
-    .param p2    # F
 
     const/high16 v4, 0x40000000
 
@@ -760,8 +740,6 @@
 
 .method protected setScrollPosition(Landroid/view/View;F)V
     .locals 0
-    .param p1    # Landroid/view/View;
-    .param p2    # F
 
     invoke-virtual {p1, p2}, Landroid/view/View;->setY(F)V
 
@@ -770,8 +748,6 @@
 
 .method protected setSlidePosition(Landroid/view/View;F)V
     .locals 0
-    .param p1    # Landroid/view/View;
-    .param p2    # F
 
     invoke-virtual {p1, p2}, Landroid/view/View;->setX(F)V
 

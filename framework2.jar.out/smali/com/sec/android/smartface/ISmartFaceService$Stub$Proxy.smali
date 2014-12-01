@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -106,8 +105,6 @@
 
 .method public register(Lcom/sec/android/smartface/ISmartFaceClient;I)Z
     .locals 7
-    .param p1    # Lcom/sec/android/smartface/ISmartFaceClient;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -189,8 +186,6 @@
 
 .method public registerAsync(Lcom/sec/android/smartface/ISmartFaceClient;I)V
     .locals 5
-    .param p1    # Lcom/sec/android/smartface/ISmartFaceClient;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -245,9 +240,6 @@
 
 .method public setValue(Lcom/sec/android/smartface/ISmartFaceClient;Ljava/lang/String;Ljava/lang/String;)V
     .locals 5
-    .param p1    # Lcom/sec/android/smartface/ISmartFaceClient;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -315,7 +307,6 @@
 
 .method public unregister(Lcom/sec/android/smartface/ISmartFaceClient;)V
     .locals 5
-    .param p1    # Lcom/sec/android/smartface/ISmartFaceClient;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -379,7 +370,6 @@
 
 .method public unregisterAsync(Lcom/sec/android/smartface/ISmartFaceClient;)V
     .locals 5
-    .param p1    # Lcom/sec/android/smartface/ISmartFaceClient;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

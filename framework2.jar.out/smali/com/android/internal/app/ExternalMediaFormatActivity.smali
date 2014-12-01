@@ -39,7 +39,6 @@
 
 .method static synthetic access$000(Lcom/android/internal/app/ExternalMediaFormatActivity;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/internal/app/ExternalMediaFormatActivity;
 
     iget-object v0, p0, Lcom/android/internal/app/ExternalMediaFormatActivity;->mPath:Ljava/lang/String;
 
@@ -48,7 +47,6 @@
 
 .method private isSDCard(Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -122,8 +120,6 @@
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 4
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     const/4 v2, -0x1
 
@@ -166,7 +162,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 6
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/internal/app/AlertActivity;->onCreate(Landroid/os/Bundle;)V
 

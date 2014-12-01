@@ -156,7 +156,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Landroid/net/wifi/IMsapWifiManager$Stub;-><init>()V
 
@@ -183,7 +182,6 @@
 
 .method private getString(Ljava/lang/String;)Ljava/lang/String;
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -274,8 +272,6 @@
 
 .method private getValue(Ljava/lang/String;[Ljava/lang/String;)[Ljava/lang/String;
     .locals 15
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/String;
 
     move-object/from16 v0, p2
 
@@ -396,7 +392,6 @@
 
 .method private hexToBytes(Ljava/lang/String;)[B
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     const/4 v5, 0x0
 
@@ -470,9 +465,6 @@
 # virtual methods
 .method public gasReq(IILjava/lang/String;)Z
     .locals 9
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     const/4 v4, 0x1
 
@@ -666,7 +658,6 @@
 
 .method public getBss(Ljava/lang/String;)Landroid/net/wifi/MsapBssInfo;
     .locals 25
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -1242,7 +1233,6 @@
 
 .method public notifyGasReqStatus(Ljava/lang/String;)V
     .locals 11
-    .param p1    # Ljava/lang/String;
 
     const/4 v10, 0x2
 
@@ -1412,7 +1402,6 @@
 
 .method public notifyGasResponse(Ljava/lang/String;)V
     .locals 24
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_1
 
@@ -2176,7 +2165,6 @@
 
 .method public notifyVenueServerAdded(Ljava/lang/String;)V
     .locals 18
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_1
 
@@ -2634,7 +2622,6 @@
 
 .method public notifyVenueServerDeleted(Ljava/lang/String;)V
     .locals 12
-    .param p1    # Ljava/lang/String;
 
     const/4 v10, 0x1
 

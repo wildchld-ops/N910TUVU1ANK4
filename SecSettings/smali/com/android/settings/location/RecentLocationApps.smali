@@ -38,7 +38,6 @@
 
 .method public constructor <init>(Landroid/preference/PreferenceActivity;)V
     .locals 1
-    .param p1    # Landroid/preference/PreferenceActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -55,7 +54,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/location/RecentLocationApps;)Landroid/preference/PreferenceActivity;
     .locals 1
-    .param p0    # Lcom/android/settings/location/RecentLocationApps;
 
     iget-object v0, p0, Lcom/android/settings/location/RecentLocationApps;->mActivity:Landroid/preference/PreferenceActivity;
 
@@ -64,10 +62,6 @@
 
 .method private createRecentLocationEntry(Landroid/graphics/drawable/Drawable;Ljava/lang/CharSequence;ZLandroid/preference/Preference$OnPreferenceClickListener;)Landroid/preference/Preference;
     .locals 3
-    .param p1    # Landroid/graphics/drawable/Drawable;
-    .param p2    # Ljava/lang/CharSequence;
-    .param p3    # Z
-    .param p4    # Landroid/preference/Preference$OnPreferenceClickListener;
 
     new-instance v0, Lcom/android/settings/location/LocationPreference;
 
@@ -102,8 +96,6 @@
 
 .method private getPreferenceFromOps(JLandroid/app/AppOpsManager$PackageOps;)Landroid/preference/Preference;
     .locals 14
-    .param p1    # J
-    .param p3    # Landroid/app/AppOpsManager$PackageOps;
 
     invoke-virtual/range {p3 .. p3}, Landroid/app/AppOpsManager$PackageOps;->getPackageName()Ljava/lang/String;
 

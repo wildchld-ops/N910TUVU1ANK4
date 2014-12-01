@@ -16,10 +16,6 @@
 # direct methods
 .method public constructor <init>(Landroid/filterfw/core/Filter;Ljava/lang/String;Ljava/lang/reflect/Field;Z)V
     .locals 1
-    .param p1    # Landroid/filterfw/core/Filter;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/reflect/Field;
-    .param p4    # Z
 
     invoke-direct {p0, p1, p2}, Landroid/filterfw/core/InputPort;-><init>(Landroid/filterfw/core/Filter;Ljava/lang/String;)V
 
@@ -169,7 +165,6 @@
 
 .method public pushFrame(Landroid/filterfw/core/Frame;)V
     .locals 1
-    .param p1    # Landroid/filterfw/core/Frame;
 
     const/4 v0, 0x0
 
@@ -180,8 +175,6 @@
 
 .method protected declared-synchronized setFieldFrame(Landroid/filterfw/core/Frame;Z)V
     .locals 2
-    .param p1    # Landroid/filterfw/core/Frame;
-    .param p2    # Z
 
     monitor-enter p0
 
@@ -237,7 +230,6 @@
 
 .method public setFrame(Landroid/filterfw/core/Frame;)V
     .locals 1
-    .param p1    # Landroid/filterfw/core/Frame;
 
     const/4 v0, 0x1
 
@@ -276,7 +268,6 @@
 
 .method public declared-synchronized transfer(Landroid/filterfw/core/FilterContext;)V
     .locals 4
-    .param p1    # Landroid/filterfw/core/FilterContext;
 
     monitor-enter p0
 

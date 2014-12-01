@@ -58,7 +58,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -69,8 +68,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/view/animation/Interpolator;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/view/animation/Interpolator;
 
     const/4 v0, 0x1
 
@@ -81,10 +78,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/view/animation/Interpolator;FF)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/view/animation/Interpolator;
-    .param p3    # F
-    .param p4    # F
 
     const/4 v0, 0x1
 
@@ -95,11 +88,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/view/animation/Interpolator;FFZ)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/view/animation/Interpolator;
-    .param p3    # F
-    .param p4    # F
-    .param p5    # Z
 
     invoke-direct {p0, p1, p2, p5}, Landroid/widget/OverScroller;-><init>(Landroid/content/Context;Landroid/view/animation/Interpolator;Z)V
 
@@ -108,9 +96,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/view/animation/Interpolator;Z)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/view/animation/Interpolator;
-    .param p3    # Z
 
     const/4 v2, 0x1
 
@@ -626,7 +611,6 @@
 
 .method public extendDuration(I)V
     .locals 1
-    .param p1    # I
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -643,14 +627,6 @@
 
 .method public fling(IIIIIIII)V
     .locals 11
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
 
     const/4 v9, 0x0
 
@@ -681,16 +657,6 @@
 
 .method public fling(IIIIIIIIII)V
     .locals 8
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
-    .param p9    # I
-    .param p10    # I
 
     iget-boolean v0, p0, Landroid/widget/OverScroller;->mFlywheel:Z
 
@@ -832,7 +798,6 @@
 
 .method public final forceFinished(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-boolean v0, p0, Landroid/widget/OverScroller;->USE_SET_INTEGRATOR_HAPTIC:Z
 
@@ -921,7 +886,6 @@
 
 .method public getCurrVelocity(Z)F
     .locals 1
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -1136,8 +1100,6 @@
 
 .method public isScrollingInDirection(FF)Z
     .locals 4
-    .param p1    # F
-    .param p2    # F
 
     iget-object v2, p0, Landroid/widget/OverScroller;->mScrollerX:Landroid/widget/OverScroller$SplineOverScroller;
 
@@ -1218,9 +1180,6 @@
 
 .method public notifyHorizontalEdgeReached(III)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     iget-boolean v0, p0, Landroid/widget/OverScroller;->USE_SET_INTEGRATOR_HAPTIC:Z
 
@@ -1258,9 +1217,6 @@
 
 .method public notifyVerticalEdgeReached(III)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     iget-boolean v0, p0, Landroid/widget/OverScroller;->USE_SET_INTEGRATOR_HAPTIC:Z
 
@@ -1298,7 +1254,6 @@
 
 .method public setFinalX(I)V
     .locals 1
-    .param p1    # I
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -1311,7 +1266,6 @@
 
 .method public setFinalY(I)V
     .locals 1
-    .param p1    # I
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -1324,7 +1278,6 @@
 
 .method public final setFriction(F)V
     .locals 1
-    .param p1    # F
 
     iget-object v0, p0, Landroid/widget/OverScroller;->mScrollerX:Landroid/widget/OverScroller$SplineOverScroller;
 
@@ -1339,8 +1292,6 @@
 
 .method public setHapticView(Landroid/view/View;Landroid/view/HapticPreDrawListener;)V
     .locals 0
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/HapticPreDrawListener;
 
     iput-object p1, p0, Landroid/widget/OverScroller;->mHapticView:Landroid/view/View;
 
@@ -1351,7 +1302,6 @@
 
 .method setInterpolator(Landroid/view/animation/Interpolator;)V
     .locals 0
-    .param p1    # Landroid/view/animation/Interpolator;
 
     iput-object p1, p0, Landroid/widget/OverScroller;->mInterpolator:Landroid/view/animation/Interpolator;
 
@@ -1360,7 +1310,6 @@
 
 .method public setIsListViewClient(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/widget/OverScroller;->mIsListViewClient:Z
 
@@ -1369,12 +1318,6 @@
 
 .method public springBack(IIIIII)Z
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     const/4 v2, 0x1
 
@@ -1408,10 +1351,6 @@
 
 .method public startScroll(IIII)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/16 v5, 0xfa
 
@@ -1432,11 +1371,6 @@
 
 .method public startScroll(IIIII)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     const/4 v0, 0x0
 

@@ -22,8 +22,6 @@
 # direct methods
 .method constructor <init>(CZ)V
     .locals 2
-    .param p1    # C
-    .param p2    # Z
 
     const/4 v1, 0x0
 
@@ -52,8 +50,6 @@
 
 .method constructor <init>(Landroid/graphics/PointF;Z)V
     .locals 2
-    .param p1    # Landroid/graphics/PointF;
-    .param p2    # Z
 
     const/4 v1, 0x0
 

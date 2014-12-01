@@ -6,7 +6,6 @@
 # direct methods
 .method constructor <init>(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Landroid/content/ContextWrapper;-><init>(Landroid/content/Context;)V
 
@@ -17,9 +16,6 @@
 # virtual methods
 .method public bindService(Landroid/content/Intent;Landroid/content/ServiceConnection;I)Z
     .locals 2
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Landroid/content/ServiceConnection;
-    .param p3    # I
 
     new-instance v0, Landroid/content/ReceiverCallNotAllowedException;
 
@@ -32,8 +28,6 @@
 
 .method public registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
     .locals 1
-    .param p1    # Landroid/content/BroadcastReceiver;
-    .param p2    # Landroid/content/IntentFilter;
 
     const/4 v0, 0x0
 
@@ -46,10 +40,6 @@
 
 .method public registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;Ljava/lang/String;Landroid/os/Handler;)Landroid/content/Intent;
     .locals 2
-    .param p1    # Landroid/content/BroadcastReceiver;
-    .param p2    # Landroid/content/IntentFilter;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Landroid/os/Handler;
 
     if-nez p1, :cond_0
 
@@ -73,11 +63,6 @@
 
 .method public registerReceiverAsUser(Landroid/content/BroadcastReceiver;Landroid/os/UserHandle;Landroid/content/IntentFilter;Ljava/lang/String;Landroid/os/Handler;)Landroid/content/Intent;
     .locals 6
-    .param p1    # Landroid/content/BroadcastReceiver;
-    .param p2    # Landroid/os/UserHandle;
-    .param p3    # Landroid/content/IntentFilter;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Landroid/os/Handler;
 
     if-nez p1, :cond_0
 

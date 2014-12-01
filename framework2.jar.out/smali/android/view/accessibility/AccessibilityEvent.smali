@@ -157,7 +157,6 @@
 
 .method public static eventTypeToString(I)Ljava/lang/String;
     .locals 5
-    .param p0    # I
 
     const/4 v4, 0x1
 
@@ -619,7 +618,6 @@
 
 .method public static obtain(I)Landroid/view/accessibility/AccessibilityEvent;
     .locals 1
-    .param p0    # I
 
     invoke-static {}, Landroid/view/accessibility/AccessibilityEvent;->obtain()Landroid/view/accessibility/AccessibilityEvent;
 
@@ -632,7 +630,6 @@
 
 .method public static obtain(Landroid/view/accessibility/AccessibilityEvent;)Landroid/view/accessibility/AccessibilityEvent;
     .locals 6
-    .param p0    # Landroid/view/accessibility/AccessibilityEvent;
 
     invoke-static {}, Landroid/view/accessibility/AccessibilityEvent;->obtain()Landroid/view/accessibility/AccessibilityEvent;
 
@@ -677,8 +674,6 @@
 
 .method private readAccessibilityRecordFromParcel(Landroid/view/accessibility/AccessibilityRecord;Landroid/os/Parcel;)V
     .locals 4
-    .param p1    # Landroid/view/accessibility/AccessibilityRecord;
-    .param p2    # Landroid/os/Parcel;
 
     const/4 v2, 0x0
 
@@ -823,9 +818,6 @@
 
 .method private writeAccessibilityRecordToParcel(Landroid/view/accessibility/AccessibilityRecord;Landroid/os/Parcel;I)V
     .locals 2
-    .param p1    # Landroid/view/accessibility/AccessibilityRecord;
-    .param p2    # Landroid/os/Parcel;
-    .param p3    # I
 
     iget v0, p1, Landroid/view/accessibility/AccessibilityRecord;->mBooleanProperties:I
 
@@ -920,7 +912,6 @@
 # virtual methods
 .method public appendRecord(Landroid/view/accessibility/AccessibilityRecord;)V
     .locals 1
-    .param p1    # Landroid/view/accessibility/AccessibilityRecord;
 
     invoke-virtual {p0}, Landroid/view/accessibility/AccessibilityRecord;->enforceNotSealed()V
 
@@ -1037,7 +1028,6 @@
 
 .method public getRecord(I)Landroid/view/accessibility/AccessibilityRecord;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/view/accessibility/AccessibilityEvent;->mRecords:Ljava/util/ArrayList;
 
@@ -1064,7 +1054,6 @@
 
 .method init(Landroid/view/accessibility/AccessibilityEvent;)V
     .locals 2
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
 
     invoke-super {p0, p1}, Landroid/view/accessibility/AccessibilityRecord;->init(Landroid/view/accessibility/AccessibilityRecord;)V
 
@@ -1097,7 +1086,6 @@
 
 .method public initFromParcel(Landroid/os/Parcel;)V
     .locals 5
-    .param p1    # Landroid/os/Parcel;
 
     const/4 v3, 0x1
 
@@ -1208,7 +1196,6 @@
 
 .method public setAction(I)V
     .locals 0
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/view/accessibility/AccessibilityRecord;->enforceNotSealed()V
 
@@ -1219,7 +1206,6 @@
 
 .method public setContentChangeTypes(I)V
     .locals 0
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/view/accessibility/AccessibilityRecord;->enforceNotSealed()V
 
@@ -1230,7 +1216,6 @@
 
 .method public setEventTime(J)V
     .locals 0
-    .param p1    # J
 
     invoke-virtual {p0}, Landroid/view/accessibility/AccessibilityRecord;->enforceNotSealed()V
 
@@ -1241,7 +1226,6 @@
 
 .method public setEventType(I)V
     .locals 0
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/view/accessibility/AccessibilityRecord;->enforceNotSealed()V
 
@@ -1252,7 +1236,6 @@
 
 .method public setMovementGranularity(I)V
     .locals 0
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/view/accessibility/AccessibilityRecord;->enforceNotSealed()V
 
@@ -1263,7 +1246,6 @@
 
 .method public setPackageName(Ljava/lang/CharSequence;)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
 
     invoke-virtual {p0}, Landroid/view/accessibility/AccessibilityRecord;->enforceNotSealed()V
 
@@ -1274,7 +1256,6 @@
 
 .method public setSealed(Z)V
     .locals 4
-    .param p1    # Z
 
     invoke-super {p0, p1}, Landroid/view/accessibility/AccessibilityRecord;->setSealed(Z)V
 
@@ -1393,8 +1374,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 5
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     const/4 v4, 0x0
 

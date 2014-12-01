@@ -330,7 +330,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/spam/SetupSpamNumberWriteForm;)V
     .locals 0
-    .param p0    # Lcom/android/mms/spam/SetupSpamNumberWriteForm;
 
     invoke-direct {p0}, Lcom/android/mms/spam/SetupSpamNumberWriteForm;->alertdialogSearch()V
 
@@ -339,11 +338,6 @@
 
 .method static synthetic access$1000(Lcom/android/mms/spam/SetupSpamNumberWriteForm;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;I)V
     .locals 0
-    .param p0    # Lcom/android/mms/spam/SetupSpamNumberWriteForm;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Integer;
-    .param p3    # Ljava/lang/Integer;
-    .param p4    # I
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/mms/spam/SetupSpamNumberWriteForm;->updateSpamNumber(Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;I)V
 
@@ -360,7 +354,6 @@
 
 .method static synthetic access$300(Lcom/android/mms/spam/SetupSpamNumberWriteForm;)V
     .locals 0
-    .param p0    # Lcom/android/mms/spam/SetupSpamNumberWriteForm;
 
     invoke-direct {p0}, Lcom/android/mms/spam/SetupSpamNumberWriteForm;->alertdialogMatchCriteria()V
 
@@ -369,7 +362,6 @@
 
 .method static synthetic access$400(Lcom/android/mms/spam/SetupSpamNumberWriteForm;)I
     .locals 1
-    .param p0    # Lcom/android/mms/spam/SetupSpamNumberWriteForm;
 
     iget v0, p0, Lcom/android/mms/spam/SetupSpamNumberWriteForm;->mLayoutDirection:I
 
@@ -378,7 +370,6 @@
 
 .method static synthetic access$500(Lcom/android/mms/spam/SetupSpamNumberWriteForm;)V
     .locals 0
-    .param p0    # Lcom/android/mms/spam/SetupSpamNumberWriteForm;
 
     invoke-direct {p0}, Lcom/android/mms/spam/SetupSpamNumberWriteForm;->showSip()V
 
@@ -387,7 +378,6 @@
 
 .method static synthetic access$600(Lcom/android/mms/spam/SetupSpamNumberWriteForm;)I
     .locals 1
-    .param p0    # Lcom/android/mms/spam/SetupSpamNumberWriteForm;
 
     iget v0, p0, Lcom/android/mms/spam/SetupSpamNumberWriteForm;->mMatchCriteria:I
 
@@ -396,8 +386,6 @@
 
 .method static synthetic access$602(Lcom/android/mms/spam/SetupSpamNumberWriteForm;I)I
     .locals 0
-    .param p0    # Lcom/android/mms/spam/SetupSpamNumberWriteForm;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/mms/spam/SetupSpamNumberWriteForm;->mMatchCriteria:I
 
@@ -406,7 +394,6 @@
 
 .method static synthetic access$700(Lcom/android/mms/spam/SetupSpamNumberWriteForm;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/spam/SetupSpamNumberWriteForm;
 
     iget-boolean v0, p0, Lcom/android/mms/spam/SetupSpamNumberWriteForm;->update_MODE:Z
 
@@ -415,9 +402,6 @@
 
 .method static synthetic access$800(Lcom/android/mms/spam/SetupSpamNumberWriteForm;Ljava/lang/String;I)I
     .locals 1
-    .param p0    # Lcom/android/mms/spam/SetupSpamNumberWriteForm;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/mms/spam/SetupSpamNumberWriteForm;->addSpamNumber(Ljava/lang/String;I)I
 
@@ -428,7 +412,6 @@
 
 .method static synthetic access$900(Lcom/android/mms/spam/SetupSpamNumberWriteForm;)I
     .locals 1
-    .param p0    # Lcom/android/mms/spam/SetupSpamNumberWriteForm;
 
     iget v0, p0, Lcom/android/mms/spam/SetupSpamNumberWriteForm;->update_ID:I
 
@@ -437,8 +420,6 @@
 
 .method private addSpamNumber(Ljava/lang/String;I)I
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v3, 0x1
 
@@ -689,8 +670,6 @@
 
 .method private checkAlreadyInUse(Ljava/lang/String;I)Z
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v3, 0x1
 
@@ -816,7 +795,6 @@
 
 .method private displayToast(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/mms/spam/SetupSpamNumberWriteForm;->mToast:Landroid/widget/Toast;
 
@@ -836,7 +814,6 @@
 
 .method private isAvaliableNumber(Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -878,7 +855,6 @@
 
 .method private isUnknownNumber(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -950,10 +926,6 @@
 
 .method private updateSpamNumber(Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;I)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Integer;
-    .param p3    # Ljava/lang/Integer;
-    .param p4    # I
 
     const/4 v5, 0x0
 
@@ -1016,9 +988,6 @@
 # virtual methods
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 8
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const/4 v3, 0x0
 
@@ -1255,7 +1224,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 7
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v6, 0x0
 
@@ -1521,7 +1489,6 @@
 
 .method protected onCreateDialog(I)Landroid/app/Dialog;
     .locals 5
-    .param p1    # I
 
     const v3, 0x7f0c02aa
 
@@ -1709,8 +1676,6 @@
 
 .method protected onPrepareDialog(ILandroid/app/Dialog;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/app/Dialog;
 
     invoke-super {p0, p1, p2}, Landroid/app/Activity;->onPrepareDialog(ILandroid/app/Dialog;)V
 
@@ -1782,7 +1747,6 @@
 
 .method protected onRestoreInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onRestoreInstanceState(Landroid/os/Bundle;)V
 
@@ -1824,7 +1788,6 @@
 
 .method protected onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onSaveInstanceState(Landroid/os/Bundle;)V
 
@@ -2075,7 +2038,6 @@
 
 .method public softkeyLeftRun(Landroid/view/View;)V
     .locals 9
-    .param p1    # Landroid/view/View;
 
     const/4 v8, 0x2
 
@@ -2432,7 +2394,6 @@
 
 .method public softkeyRightRun(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     const/4 v0, 0x0
 

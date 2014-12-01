@@ -212,10 +212,6 @@
 
 .method protected constructor <init>(Landroid/os/Looper;Landroid/content/Context;Landroid/media/VolumeController;Landroid/media/AudioService;)V
     .locals 10
-    .param p1    # Landroid/os/Looper;
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/media/VolumeController;
-    .param p4    # Landroid/media/AudioService;
 
     const/4 v4, 0x3
 
@@ -438,7 +434,6 @@
 
 .method static synthetic access$1100(Landroid/media/MediaFocusControl;)V
     .locals 0
-    .param p0    # Landroid/media/MediaFocusControl;
 
     invoke-direct {p0}, Landroid/media/MediaFocusControl;->onRcDisplayClear()V
 
@@ -447,9 +442,6 @@
 
 .method static synthetic access$1200(Landroid/media/MediaFocusControl;Landroid/media/MediaFocusControl$RemoteControlStackEntry;I)V
     .locals 0
-    .param p0    # Landroid/media/MediaFocusControl;
-    .param p1    # Landroid/media/MediaFocusControl$RemoteControlStackEntry;
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Landroid/media/MediaFocusControl;->onRcDisplayUpdate(Landroid/media/MediaFocusControl$RemoteControlStackEntry;I)V
 
@@ -458,7 +450,6 @@
 
 .method static synthetic access$1300(Landroid/media/MediaFocusControl;)V
     .locals 0
-    .param p0    # Landroid/media/MediaFocusControl;
 
     invoke-direct {p0}, Landroid/media/MediaFocusControl;->onReevaluateRemote()V
 
@@ -467,10 +458,6 @@
 
 .method static synthetic access$1400(Landroid/media/MediaFocusControl;III)V
     .locals 0
-    .param p0    # Landroid/media/MediaFocusControl;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Landroid/media/MediaFocusControl;->onNewPlaybackInfoForRcc(III)V
 
@@ -479,9 +466,6 @@
 
 .method static synthetic access$1500(Landroid/media/MediaFocusControl;ILandroid/media/IRemoteVolumeObserver;)V
     .locals 0
-    .param p0    # Landroid/media/MediaFocusControl;
-    .param p1    # I
-    .param p2    # Landroid/media/IRemoteVolumeObserver;
 
     invoke-direct {p0, p1, p2}, Landroid/media/MediaFocusControl;->onRegisterVolumeObserverForRcc(ILandroid/media/IRemoteVolumeObserver;)V
 
@@ -490,10 +474,6 @@
 
 .method static synthetic access$1600(Landroid/media/MediaFocusControl;IILandroid/media/MediaFocusControl$RccPlaybackState;)V
     .locals 0
-    .param p0    # Landroid/media/MediaFocusControl;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/media/MediaFocusControl$RccPlaybackState;
 
     invoke-direct {p0, p1, p2, p3}, Landroid/media/MediaFocusControl;->onNewPlaybackStateForRcc(IILandroid/media/MediaFocusControl$RccPlaybackState;)V
 
@@ -502,9 +482,6 @@
 
 .method static synthetic access$1700(Landroid/media/MediaFocusControl;IJ)V
     .locals 0
-    .param p0    # Landroid/media/MediaFocusControl;
-    .param p1    # I
-    .param p2    # J
 
     invoke-direct {p0, p1, p2, p3}, Landroid/media/MediaFocusControl;->onSetRemoteControlClientPlaybackPosition(IJ)V
 
@@ -513,10 +490,6 @@
 
 .method static synthetic access$1800(Landroid/media/MediaFocusControl;IILandroid/media/Rating;)V
     .locals 0
-    .param p0    # Landroid/media/MediaFocusControl;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/media/Rating;
 
     invoke-direct {p0, p1, p2, p3}, Landroid/media/MediaFocusControl;->onUpdateRemoteControlClientMetadata(IILandroid/media/Rating;)V
 
@@ -525,8 +498,6 @@
 
 .method static synthetic access$1900(Landroid/media/MediaFocusControl;I)V
     .locals 0
-    .param p0    # Landroid/media/MediaFocusControl;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/media/MediaFocusControl;->onPromoteRcc(I)V
 
@@ -535,7 +506,6 @@
 
 .method static synthetic access$200(Landroid/media/MediaFocusControl;)Landroid/media/MediaFocusControl$MediaEventHandler;
     .locals 1
-    .param p0    # Landroid/media/MediaFocusControl;
 
     iget-object v0, p0, Landroid/media/MediaFocusControl;->mEventHandler:Landroid/media/MediaFocusControl$MediaEventHandler;
 
@@ -544,10 +514,6 @@
 
 .method static synthetic access$2000(Landroid/media/MediaFocusControl;Landroid/media/IRemoteControlDisplay;II)V
     .locals 0
-    .param p0    # Landroid/media/MediaFocusControl;
-    .param p1    # Landroid/media/IRemoteControlDisplay;
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Landroid/media/MediaFocusControl;->onRcDisplayInitInfo(Landroid/media/IRemoteControlDisplay;II)V
 
@@ -556,7 +522,6 @@
 
 .method static synthetic access$2100(Landroid/media/MediaFocusControl;)V
     .locals 0
-    .param p0    # Landroid/media/MediaFocusControl;
 
     invoke-direct {p0}, Landroid/media/MediaFocusControl;->onReevaluateRemoteControlDisplays()V
 
@@ -565,10 +530,6 @@
 
 .method static synthetic access$2200(Landroid/media/MediaFocusControl;III)V
     .locals 0
-    .param p0    # Landroid/media/MediaFocusControl;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Landroid/media/MediaFocusControl;->onSetRemoteControlClientSetCommand(III)V
 
@@ -585,8 +546,6 @@
 
 .method static synthetic access$2402(Landroid/media/MediaFocusControl;Z)Z
     .locals 0
-    .param p0    # Landroid/media/MediaFocusControl;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/media/MediaFocusControl;->mIsRinging:Z
 
@@ -595,8 +554,6 @@
 
 .method static synthetic access$2502(Landroid/media/MediaFocusControl;Z)Z
     .locals 0
-    .param p0    # Landroid/media/MediaFocusControl;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/media/MediaFocusControl;->mIsRinging_2:Z
 
@@ -613,8 +570,6 @@
 
 .method static synthetic access$2700(Landroid/media/MediaFocusControl;Landroid/os/IBinder;)V
     .locals 0
-    .param p0    # Landroid/media/MediaFocusControl;
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0, p1}, Landroid/media/MediaFocusControl;->removeFocusStackEntryForClient(Landroid/os/IBinder;)V
 
@@ -623,9 +578,6 @@
 
 .method static synthetic access$2800(Landroid/media/MediaFocusControl;Ljava/lang/String;Z)V
     .locals 0
-    .param p0    # Landroid/media/MediaFocusControl;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Landroid/media/MediaFocusControl;->cleanupMediaButtonReceiverForPackage(Ljava/lang/String;Z)V
 
@@ -634,7 +586,6 @@
 
 .method static synthetic access$2900(Landroid/media/MediaFocusControl;)Landroid/os/PowerManager$WakeLock;
     .locals 1
-    .param p0    # Landroid/media/MediaFocusControl;
 
     iget-object v0, p0, Landroid/media/MediaFocusControl;->mMediaEventWakeLock:Landroid/os/PowerManager$WakeLock;
 
@@ -643,7 +594,6 @@
 
 .method static synthetic access$300(Landroid/media/MediaFocusControl;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Landroid/media/MediaFocusControl;
 
     iget-object v0, p0, Landroid/media/MediaFocusControl;->mContentResolver:Landroid/content/ContentResolver;
 
@@ -652,7 +602,6 @@
 
 .method static synthetic access$3000(Landroid/media/MediaFocusControl;)V
     .locals 0
-    .param p0    # Landroid/media/MediaFocusControl;
 
     invoke-direct {p0}, Landroid/media/MediaFocusControl;->postReevaluateRemote()V
 
@@ -673,7 +622,6 @@
 
 .method static synthetic access$3400(Landroid/media/MediaFocusControl;)Ljava/util/Stack;
     .locals 1
-    .param p0    # Landroid/media/MediaFocusControl;
 
     iget-object v0, p0, Landroid/media/MediaFocusControl;->mRCStack:Ljava/util/Stack;
 
@@ -682,7 +630,6 @@
 
 .method static synthetic access$3500(Landroid/media/MediaFocusControl;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Landroid/media/MediaFocusControl;
 
     iget-object v0, p0, Landroid/media/MediaFocusControl;->mRcDisplays:Ljava/util/ArrayList;
 
@@ -699,7 +646,6 @@
 
 .method static synthetic access$500(Landroid/media/MediaFocusControl;)V
     .locals 0
-    .param p0    # Landroid/media/MediaFocusControl;
 
     invoke-direct {p0}, Landroid/media/MediaFocusControl;->postReevaluateRemoteControlDisplays()V
 
@@ -746,7 +692,6 @@
 
 .method private checkRcdRegistrationAuthorization(Landroid/content/ComponentName;)I
     .locals 9
-    .param p1    # Landroid/content/ComponentName;
 
     iget-object v7, p0, Landroid/media/MediaFocusControl;->mContext:Landroid/content/Context;
 
@@ -847,7 +792,6 @@
 
 .method private checkUpdateRemoteControlDisplay_syncAfRcs(I)V
     .locals 11
-    .param p1    # I
 
     const/4 v10, 0x1
 
@@ -1303,8 +1247,6 @@
 
 .method private cleanupMediaButtonReceiverForPackage(Ljava/lang/String;Z)V
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     iget-object v6, p0, Landroid/media/MediaFocusControl;->mRCStack:Ljava/util/Stack;
 
@@ -1469,8 +1411,6 @@
 
 .method private dispatchMediaKeyEvent(Landroid/view/KeyEvent;Z)V
     .locals 16
-    .param p1    # Landroid/view/KeyEvent;
-    .param p2    # Z
 
     if-eqz p2, :cond_0
 
@@ -1669,8 +1609,6 @@
 
 .method private dispatchMediaKeyEventForCalls(Landroid/view/KeyEvent;Z)V
     .locals 11
-    .param p1    # Landroid/view/KeyEvent;
-    .param p2    # Z
 
     const/4 v2, 0x0
 
@@ -1744,7 +1682,6 @@
 
 .method private dumpFocusStack(Ljava/io/PrintWriter;)V
     .locals 3
-    .param p1    # Ljava/io/PrintWriter;
 
     const-string v1, "\nAudio Focus stack entries (last is top of stack):"
 
@@ -1798,7 +1735,6 @@
 
 .method private dumpRCCStack(Ljava/io/PrintWriter;)V
     .locals 6
-    .param p1    # Ljava/io/PrintWriter;
 
     const-string v2, "\nRemote Control Client stack entries (last is top of stack):"
 
@@ -2176,7 +2112,6 @@
 
 .method private dumpRCDList(Ljava/io/PrintWriter;)V
     .locals 5
-    .param p1    # Ljava/io/PrintWriter;
 
     const-string v2, "\nRemote Control Display list entries:"
 
@@ -2323,7 +2258,6 @@
 
 .method private dumpRCStack(Ljava/io/PrintWriter;)V
     .locals 5
-    .param p1    # Ljava/io/PrintWriter;
 
     const-string v2, "\nRemote Control stack entries (last is top of stack):"
 
@@ -2469,8 +2403,6 @@
 
 .method private enableRemoteControlDisplayForClient_syncRcStack(Landroid/media/IRemoteControlDisplay;Z)V
     .locals 5
-    .param p1    # Landroid/media/IRemoteControlDisplay;
-    .param p2    # Z
 
     iget-object v3, p0, Landroid/media/MediaFocusControl;->mRCStack:Ljava/util/Stack;
 
@@ -2522,8 +2454,6 @@
 
 .method private filterMediaKeyEvent(Landroid/view/KeyEvent;Z)V
     .locals 4
-    .param p1    # Landroid/view/KeyEvent;
-    .param p2    # Z
 
     invoke-static {p1}, Landroid/media/MediaFocusControl;->isValidMediaKeyEvent(Landroid/view/KeyEvent;)Z
 
@@ -2678,8 +2608,6 @@
 
 .method private filterVoiceInputKeyEvent(Landroid/view/KeyEvent;Z)V
     .locals 4
-    .param p1    # Landroid/view/KeyEvent;
-    .param p2    # Z
 
     const/4 v2, 0x1
 
@@ -2816,8 +2744,6 @@
 
 .method private isComponentInStringArray(Landroid/content/ComponentName;[Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # [Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -2863,7 +2789,6 @@
 
 .method private isCurrentRcController(Landroid/app/PendingIntent;)Z
     .locals 1
-    .param p1    # Landroid/app/PendingIntent;
 
     iget-object v0, p0, Landroid/media/MediaFocusControl;->mRCStack:Ljava/util/Stack;
 
@@ -2927,7 +2852,6 @@
 
 .method protected static isMediaKeyCode(I)Z
     .locals 1
-    .param p0    # I
 
     sparse-switch p0, :sswitch_data_0
 
@@ -2964,7 +2888,6 @@
 
 .method private static isPlaystateActive(I)Z
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -2993,7 +2916,6 @@
 
 .method private static isValidMediaKeyEvent(Landroid/view/KeyEvent;)Z
     .locals 1
-    .param p0    # Landroid/view/KeyEvent;
 
     if-nez p0, :cond_0
 
@@ -3016,7 +2938,6 @@
 
 .method private static isValidVoiceInputKeyCode(I)Z
     .locals 1
-    .param p0    # I
 
     const/16 v0, 0x4f
 
@@ -3068,9 +2989,6 @@
 
 .method private onNewPlaybackInfoForRcc(III)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     iget-object v4, p0, Landroid/media/MediaFocusControl;->mRCStack:Ljava/util/Stack;
 
@@ -3327,9 +3245,6 @@
 
 .method private onNewPlaybackStateForRcc(IILandroid/media/MediaFocusControl$RccPlaybackState;)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/media/MediaFocusControl$RccPlaybackState;
 
     iget-object v4, p0, Landroid/media/MediaFocusControl;->mRCStack:Ljava/util/Stack;
 
@@ -3446,7 +3361,6 @@
 
 .method private onPromoteRcc(I)V
     .locals 8
-    .param p1    # I
 
     sget-object v5, Landroid/media/MediaFocusControl;->mAudioFocusLock:Ljava/lang/Object;
 
@@ -3657,9 +3571,6 @@
 
 .method private onRcDisplayInitInfo(Landroid/media/IRemoteControlDisplay;II)V
     .locals 6
-    .param p1    # Landroid/media/IRemoteControlDisplay;
-    .param p2    # I
-    .param p3    # I
 
     iget-object v2, p0, Landroid/media/MediaFocusControl;->mRCStack:Ljava/util/Stack;
 
@@ -3766,8 +3677,6 @@
 
 .method private onRcDisplayUpdate(Landroid/media/MediaFocusControl$RemoteControlStackEntry;I)V
     .locals 6
-    .param p1    # Landroid/media/MediaFocusControl$RemoteControlStackEntry;
-    .param p2    # I
 
     iget-object v2, p0, Landroid/media/MediaFocusControl;->mRCStack:Ljava/util/Stack;
 
@@ -4199,8 +4108,6 @@
 
 .method private onRegisterVolumeObserverForRcc(ILandroid/media/IRemoteVolumeObserver;)V
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/media/IRemoteVolumeObserver;
 
     iget-object v4, p0, Landroid/media/MediaFocusControl;->mRCStack:Ljava/util/Stack;
 
@@ -4270,8 +4177,6 @@
 
 .method private onSetRemoteControlClientPlaybackPosition(IJ)V
     .locals 6
-    .param p1    # I
-    .param p2    # J
 
     iget-object v2, p0, Landroid/media/MediaFocusControl;->mRCStack:Ljava/util/Stack;
 
@@ -4371,9 +4276,6 @@
 
 .method private onSetRemoteControlClientSetCommand(III)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     iget-object v2, p0, Landroid/media/MediaFocusControl;->mRCStack:Ljava/util/Stack;
 
@@ -4473,9 +4375,6 @@
 
 .method private onUpdateRemoteControlClientMetadata(IILandroid/media/Rating;)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/media/Rating;
 
     iget-object v2, p0, Landroid/media/MediaFocusControl;->mRCStack:Ljava/util/Stack;
 
@@ -4607,7 +4506,6 @@
 
 .method private plugRemoteControlDisplaysIntoClient_syncRcStack(Landroid/media/IRemoteControlClient;)V
     .locals 6
-    .param p1    # Landroid/media/IRemoteControlClient;
 
     iget-object v3, p0, Landroid/media/MediaFocusControl;->mRcDisplays:Ljava/util/ArrayList;
 
@@ -4684,7 +4582,6 @@
 
 .method private postPromoteRcc(I)V
     .locals 7
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -4751,7 +4648,6 @@
 
 .method private propagateFocusLossFromGain_syncAf(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Landroid/media/MediaFocusControl;->mFocusStack:Ljava/util/Stack;
 
@@ -4782,9 +4678,6 @@
 
 .method private pushMediaButtonReceiver_syncAfRcs(Landroid/app/PendingIntent;Landroid/content/ComponentName;Landroid/os/IBinder;)Z
     .locals 10
-    .param p1    # Landroid/app/PendingIntent;
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # Landroid/os/IBinder;
 
     const/4 v6, 0x0
 
@@ -4921,7 +4814,6 @@
 
 .method private rcDisplayIsPluggedIn_syncRcStack(Landroid/media/IRemoteControlDisplay;)Z
     .locals 4
-    .param p1    # Landroid/media/IRemoteControlDisplay;
 
     iget-object v2, p0, Landroid/media/MediaFocusControl;->mRcDisplays:Ljava/util/ArrayList;
 
@@ -4974,10 +4866,6 @@
 
 .method private registerRemoteControlDisplay_int(Landroid/media/IRemoteControlDisplay;IILandroid/content/ComponentName;)V
     .locals 17
-    .param p1    # Landroid/media/IRemoteControlDisplay;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/content/ComponentName;
 
     sget-object v15, Landroid/media/MediaFocusControl;->mAudioFocusLock:Ljava/lang/Object;
 
@@ -5226,8 +5114,6 @@
 
 .method private removeFocusStackEntry(Ljava/lang/String;Z)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     iget-object v2, p0, Landroid/media/MediaFocusControl;->mFocusStack:Ljava/util/Stack;
 
@@ -5346,7 +5232,6 @@
 
 .method private removeFocusStackEntryForClient(Landroid/os/IBinder;)V
     .locals 6
-    .param p1    # Landroid/os/IBinder;
 
     iget-object v3, p0, Landroid/media/MediaFocusControl;->mFocusStack:Ljava/util/Stack;
 
@@ -5461,7 +5346,6 @@
 
 .method private removeMediaButtonReceiver_syncAfRcs(Landroid/app/PendingIntent;)V
     .locals 5
-    .param p1    # Landroid/app/PendingIntent;
 
     :try_start_0
     iget-object v3, p0, Landroid/media/MediaFocusControl;->mRCStack:Ljava/util/Stack;
@@ -5522,13 +5406,6 @@
 
 .method private static sendMsg(Landroid/os/Handler;IIIILjava/lang/Object;I)V
     .locals 3
-    .param p0    # Landroid/os/Handler;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Ljava/lang/Object;
-    .param p6    # I
 
     if-nez p2, :cond_1
 
@@ -5562,8 +5439,6 @@
 
 .method private sendSimulatedMediaButtonEvent(Landroid/view/KeyEvent;Z)V
     .locals 2
-    .param p1    # Landroid/view/KeyEvent;
-    .param p2    # Z
 
     const/4 v1, 0x0
 
@@ -5586,8 +5461,6 @@
 
 .method private sendVolumeUpdateToRemote(II)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
 
     if-nez p2, :cond_1
 
@@ -5689,7 +5562,6 @@
 
 .method private setNewRcClientGenerationOnClients_syncRcsCurrc(I)V
     .locals 5
-    .param p1    # I
 
     iget-object v3, p0, Landroid/media/MediaFocusControl;->mRCStack:Ljava/util/Stack;
 
@@ -5747,9 +5619,6 @@
 
 .method private setNewRcClientOnDisplays_syncRcsCurrc(ILandroid/app/PendingIntent;Z)V
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/app/PendingIntent;
-    .param p3    # Z
 
     iget-object v4, p0, Landroid/media/MediaFocusControl;->mRCStack:Ljava/util/Stack;
 
@@ -5834,9 +5703,6 @@
 
 .method private setNewRcClient_syncRcsCurrc(ILandroid/app/PendingIntent;Z)V
     .locals 0
-    .param p1    # I
-    .param p2    # Landroid/app/PendingIntent;
-    .param p3    # Z
 
     invoke-direct {p0, p1, p2, p3}, Landroid/media/MediaFocusControl;->setNewRcClientOnDisplays_syncRcsCurrc(ILandroid/app/PendingIntent;Z)V
 
@@ -5847,7 +5713,6 @@
 
 .method private startVoiceBasedInteractions(Z)V
     .locals 12
-    .param p1    # Z
 
     const/4 v8, 0x1
 
@@ -6071,9 +5936,6 @@
 
 .method private updateDisplaysOnRCCUpdate_syncRcsCurrc(Landroid/media/MediaFocusControl$RemoteControlStackEntry;ZZ)V
     .locals 6
-    .param p1    # Landroid/media/MediaFocusControl$RemoteControlStackEntry;
-    .param p2    # Z
-    .param p3    # Z
 
     iget-object v3, p0, Landroid/media/MediaFocusControl;->mRCStack:Ljava/util/Stack;
 
@@ -6180,7 +6042,6 @@
 
 .method private updateRemoteControlDisplay_syncAfRcs(I)V
     .locals 6
-    .param p1    # I
 
     iget-object v2, p0, Landroid/media/MediaFocusControl;->mRCStack:Ljava/util/Stack;
 
@@ -6263,8 +6124,6 @@
 # virtual methods
 .method protected abandonAudioFocus(Landroid/media/IAudioFocusDispatcher;Ljava/lang/String;)I
     .locals 5
-    .param p1    # Landroid/media/IAudioFocusDispatcher;
-    .param p2    # Ljava/lang/String;
 
     const/4 v4, 0x1
 
@@ -6351,9 +6210,6 @@
 
 .method protected adjustRemoteVolume(III)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v0, -0x1
 
@@ -6420,7 +6276,6 @@
 
 .method protected checkUpdateRemoteStateIfActive(I)Z
     .locals 9
-    .param p1    # I
 
     const/4 v4, 0x0
 
@@ -6662,7 +6517,6 @@
 
 .method protected dispatchMediaKeyEvent(Landroid/view/KeyEvent;)V
     .locals 1
-    .param p1    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x0
 
@@ -6673,7 +6527,6 @@
 
 .method protected dispatchMediaKeyEventUnderWakelock(Landroid/view/KeyEvent;)V
     .locals 1
-    .param p1    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x1
 
@@ -6684,7 +6537,6 @@
 
 .method protected dump(Ljava/io/PrintWriter;)V
     .locals 0
-    .param p1    # Ljava/io/PrintWriter;
 
     invoke-direct {p0, p1}, Landroid/media/MediaFocusControl;->dumpFocusStack(Ljava/io/PrintWriter;)V
 
@@ -6911,11 +6763,6 @@
 
 .method public onSendFinished(Landroid/app/PendingIntent;Landroid/content/Intent;ILjava/lang/String;Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/app/PendingIntent;
-    .param p2    # Landroid/content/Intent;
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
-    .param p5    # Landroid/os/Bundle;
 
     const/16 v0, 0x7bc
 
@@ -6931,7 +6778,6 @@
 
 .method protected registerMediaButtonEventReceiverForCalls(Landroid/content/ComponentName;)V
     .locals 2
-    .param p1    # Landroid/content/ComponentName;
 
     iget-object v0, p0, Landroid/media/MediaFocusControl;->mContext:Landroid/content/Context;
 
@@ -6976,9 +6822,6 @@
 
 .method protected registerMediaButtonIntent(Landroid/app/PendingIntent;Landroid/content/ComponentName;Landroid/os/IBinder;)V
     .locals 3
-    .param p1    # Landroid/app/PendingIntent;
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # Landroid/os/IBinder;
 
     const-string v0, "MediaFocusControl"
 
@@ -7059,9 +6902,6 @@
 
 .method protected registerRemoteControlClient(Landroid/app/PendingIntent;Landroid/media/IRemoteControlClient;Ljava/lang/String;)I
     .locals 11
-    .param p1    # Landroid/app/PendingIntent;
-    .param p2    # Landroid/media/IRemoteControlClient;
-    .param p3    # Ljava/lang/String;
 
     const/4 v3, -0x1
 
@@ -7283,9 +7123,6 @@
 
 .method protected registerRemoteControlDisplay(Landroid/media/IRemoteControlDisplay;II)Z
     .locals 4
-    .param p1    # Landroid/media/IRemoteControlDisplay;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v1, 0x0
 
@@ -7354,10 +7191,6 @@
 
 .method protected registerRemoteController(Landroid/media/IRemoteControlDisplay;IILandroid/content/ComponentName;)Z
     .locals 4
-    .param p1    # Landroid/media/IRemoteControlDisplay;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/content/ComponentName;
 
     invoke-direct {p0, p4}, Landroid/media/MediaFocusControl;->checkRcdRegistrationAuthorization(Landroid/content/ComponentName;)I
 
@@ -7424,8 +7257,6 @@
 
 .method protected registerRemoteVolumeObserverForRcc(ILandroid/media/IRemoteVolumeObserver;)V
     .locals 7
-    .param p1    # I
-    .param p2    # Landroid/media/IRemoteVolumeObserver;
 
     const/4 v4, 0x0
 
@@ -7448,9 +7279,6 @@
 
 .method protected remoteControlDisplayUsesBitmapSize(Landroid/media/IRemoteControlDisplay;II)V
     .locals 9
-    .param p1    # Landroid/media/IRemoteControlDisplay;
-    .param p2    # I
-    .param p3    # I
 
     iget-object v7, p0, Landroid/media/MediaFocusControl;->mRCStack:Ljava/util/Stack;
 
@@ -7596,8 +7424,6 @@
 
 .method protected remoteControlDisplayWantsPlaybackPositionSync(Landroid/media/IRemoteControlDisplay;Z)V
     .locals 9
-    .param p1    # Landroid/media/IRemoteControlDisplay;
-    .param p2    # Z
 
     iget-object v7, p0, Landroid/media/MediaFocusControl;->mRCStack:Ljava/util/Stack;
 
@@ -7726,12 +7552,6 @@
 
 .method protected requestAudioFocus(IILandroid/os/IBinder;Landroid/media/IAudioFocusDispatcher;Ljava/lang/String;Ljava/lang/String;)I
     .locals 15
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/os/IBinder;
-    .param p4    # Landroid/media/IAudioFocusDispatcher;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Ljava/lang/String;
 
     const-string v1, "MediaFocusControl"
 
@@ -8084,9 +7904,6 @@
 
 .method protected setPlaybackInfoForRcc(III)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     iget-object v0, p0, Landroid/media/MediaFocusControl;->mEventHandler:Landroid/media/MediaFocusControl$MediaEventHandler;
 
@@ -8111,10 +7928,6 @@
 
 .method protected setPlaybackStateForRcc(IIJF)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
-    .param p5    # F
 
     iget-object v0, p0, Landroid/media/MediaFocusControl;->mEventHandler:Landroid/media/MediaFocusControl$MediaEventHandler;
 
@@ -8139,9 +7952,6 @@
 
 .method protected setRemoteControlClientCommand(III)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v2, 0x0
 
@@ -8225,8 +8035,6 @@
 
 .method protected setRemoteControlClientPlaybackPosition(IJ)V
     .locals 7
-    .param p1    # I
-    .param p2    # J
 
     const/4 v2, 0x0
 
@@ -8310,7 +8118,6 @@
 
 .method protected setRemoteStreamVolume(I)V
     .locals 8
-    .param p1    # I
 
     const/4 v2, -0x1
 
@@ -8445,7 +8252,6 @@
 
 .method protected unregisterAudioFocusClient(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     sget-object v1, Landroid/media/MediaFocusControl;->mAudioFocusLock:Ljava/lang/Object;
 
@@ -8518,7 +8324,6 @@
 
 .method protected unregisterMediaButtonIntent(Landroid/app/PendingIntent;)V
     .locals 4
-    .param p1    # Landroid/app/PendingIntent;
 
     const-string v1, "MediaFocusControl"
 
@@ -8605,8 +8410,6 @@
 
 .method protected unregisterRemoteControlClient(Landroid/app/PendingIntent;Landroid/media/IRemoteControlClient;)V
     .locals 9
-    .param p1    # Landroid/app/PendingIntent;
-    .param p2    # Landroid/media/IRemoteControlClient;
 
     const/4 v4, 0x0
 
@@ -8755,7 +8558,6 @@
 
 .method protected unregisterRemoteControlDisplay(Landroid/media/IRemoteControlDisplay;)V
     .locals 9
-    .param p1    # Landroid/media/IRemoteControlDisplay;
 
     iget-object v7, p0, Landroid/media/MediaFocusControl;->mRCStack:Ljava/util/Stack;
 
@@ -8892,9 +8694,6 @@
 
 .method protected updateRemoteControlClientMetadata(IILandroid/media/Rating;)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/media/Rating;
 
     iget-object v0, p0, Landroid/media/MediaFocusControl;->mEventHandler:Landroid/media/MediaFocusControl$MediaEventHandler;
 

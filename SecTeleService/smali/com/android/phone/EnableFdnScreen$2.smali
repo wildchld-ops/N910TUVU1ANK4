@@ -39,7 +39,7 @@
 
     iget-object v0, p0, Lcom/android/phone/EnableFdnScreen$2;->this$0:Lcom/android/phone/EnableFdnScreen;
 
-    invoke-virtual {v0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {v0}, Lcom/android/phone/EnableFdnScreen;->finish()V
 
     return-void
 .end method

@@ -14,7 +14,6 @@
 
 .method public static setCallcardInfo(Lcom/android/incallui/CallerInfo;)V
     .locals 4
-    .param p0    # Lcom/android/incallui/CallerInfo;
 
     :try_start_0
     const-string v2, "OemExtendedApi3LM"

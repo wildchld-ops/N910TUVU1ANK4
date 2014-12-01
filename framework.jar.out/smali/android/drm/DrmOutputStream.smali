@@ -18,9 +18,6 @@
 # direct methods
 .method public constructor <init>(Landroid/drm/DrmManagerClient;Ljava/io/RandomAccessFile;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Landroid/drm/DrmManagerClient;
-    .param p2    # Ljava/io/RandomAccessFile;
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -179,7 +176,6 @@
 
 .method public write(I)V
     .locals 0
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -193,9 +189,6 @@
 
 .method public write([BII)V
     .locals 5
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

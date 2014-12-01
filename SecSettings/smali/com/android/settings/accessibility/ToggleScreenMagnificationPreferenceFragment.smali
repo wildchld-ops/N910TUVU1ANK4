@@ -45,7 +45,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/accessibility/ToggleScreenMagnificationPreferenceFragment;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/ToggleScreenMagnificationPreferenceFragment;
 
     invoke-virtual {p0}, Lcom/android/settings/SettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -56,7 +55,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/accessibility/ToggleScreenMagnificationPreferenceFragment;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/ToggleScreenMagnificationPreferenceFragment;
 
     invoke-virtual {p0}, Lcom/android/settings/SettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -67,7 +65,6 @@
 
 .method static synthetic access$1000(Lcom/android/settings/accessibility/ToggleScreenMagnificationPreferenceFragment;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/ToggleScreenMagnificationPreferenceFragment;
 
     invoke-virtual {p0}, Lcom/android/settings/SettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -78,7 +75,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/accessibility/ToggleScreenMagnificationPreferenceFragment;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/ToggleScreenMagnificationPreferenceFragment;
 
     invoke-virtual {p0}, Lcom/android/settings/SettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -89,7 +85,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/accessibility/ToggleScreenMagnificationPreferenceFragment;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/ToggleScreenMagnificationPreferenceFragment;
 
     invoke-virtual {p0}, Lcom/android/settings/SettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -100,7 +95,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/accessibility/ToggleScreenMagnificationPreferenceFragment;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/ToggleScreenMagnificationPreferenceFragment;
 
     invoke-virtual {p0}, Lcom/android/settings/SettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -111,7 +105,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/accessibility/ToggleScreenMagnificationPreferenceFragment;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/ToggleScreenMagnificationPreferenceFragment;
 
     invoke-virtual {p0}, Lcom/android/settings/SettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -122,7 +115,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/accessibility/ToggleScreenMagnificationPreferenceFragment;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/ToggleScreenMagnificationPreferenceFragment;
 
     invoke-virtual {p0}, Lcom/android/settings/SettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -133,7 +125,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/accessibility/ToggleScreenMagnificationPreferenceFragment;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/ToggleScreenMagnificationPreferenceFragment;
 
     invoke-virtual {p0}, Lcom/android/settings/SettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -144,8 +135,6 @@
 
 .method static synthetic access$800(Lcom/android/settings/accessibility/ToggleScreenMagnificationPreferenceFragment;I)V
     .locals 0
-    .param p0    # Lcom/android/settings/accessibility/ToggleScreenMagnificationPreferenceFragment;
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->showDialog(I)V
 
@@ -154,7 +143,6 @@
 
 .method static synthetic access$900(Lcom/android/settings/accessibility/ToggleScreenMagnificationPreferenceFragment;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/ToggleScreenMagnificationPreferenceFragment;
 
     invoke-virtual {p0}, Lcom/android/settings/SettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -167,8 +155,6 @@
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 5
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     const/4 v4, 0x1
 
@@ -493,7 +479,6 @@
 
 .method public onCreateDialog(I)Landroid/app/Dialog;
     .locals 8
-    .param p1    # I
 
     const v7, 0x7f091baf
 
@@ -869,8 +854,6 @@
 
 .method protected onPreferenceToggled(Ljava/lang/String;Z)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     invoke-virtual {p0}, Lcom/android/settings/SettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
 

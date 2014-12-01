@@ -1611,7 +1611,6 @@
 
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;)V
     .locals 6
-    .param p1    # Lcom/sec/android/app/camera/Camera;
 
     const/4 v5, 0x4
 
@@ -1860,7 +1859,6 @@
 
 .method public static getCameraHDRString(I)Ljava/lang/String;
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -1888,8 +1886,6 @@
 
 .method public static getDefaultVideoQuality(ILjava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p0    # I
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(Ljava/lang/String;)Ljava/lang/Integer;
 
@@ -1947,7 +1943,6 @@
 
 .method public static getEffectString(I)Ljava/lang/String;
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -2083,7 +2078,6 @@
 
 .method public static getExposuremeterString(I)Ljava/lang/String;
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -2119,8 +2113,6 @@
 
 .method private getExternalShootingModeString(ILjava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     invoke-static {p1, p2}, Lcom/sec/android/app/camera/PlugInShootingModesStorage;->getMode(ILjava/lang/String;)Lcom/sec/android/app/camera/PlugInShootingModesStorage$PlugInShootingMode;
 
@@ -2141,7 +2133,6 @@
 
 .method public static getFlashModeString(I)Ljava/lang/String;
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -2183,7 +2174,6 @@
 
 .method public static getFocusModeString(I)Ljava/lang/String;
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -2251,8 +2241,6 @@
 
 .method private getIntPreference(Ljava/lang/String;I)I
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     :try_start_0
     invoke-virtual {p0}, Lcom/sec/android/app/camera/CameraSettings;->getPreferences()Lcom/sec/android/app/camera/ComboPreferences;
@@ -2276,7 +2264,6 @@
 
 .method public static getIsoString(I)Ljava/lang/String;
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -2363,7 +2350,6 @@
 
 .method public static getModeString(I)Ljava/lang/String;
     .locals 1
-    .param p0    # I
 
     sparse-switch p0, :sswitch_data_0
 
@@ -2510,7 +2496,6 @@
 
 .method public static getQualityValue(I)I
     .locals 1
-    .param p0    # I
 
     const/16 v0, 0x60
 
@@ -2548,7 +2533,6 @@
 
 .method public static getRecordingFastFPSMode(I)Ljava/lang/String;
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -2585,7 +2569,6 @@
 
 .method public static getSceneModeString(I)Ljava/lang/String;
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -2693,7 +2676,6 @@
 
 .method public static getTouchMeteringModeString(I)Ljava/lang/String;
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -2737,7 +2719,6 @@
 
 .method public static getWhitebalanceString(I)Ljava/lang/String;
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -3149,7 +3130,6 @@
 
 .method public static isGlobal(Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "pref_camera_id_key"
 
@@ -4039,7 +4019,6 @@
 
 .method private resetCameraLocalSettings(I)V
     .locals 5
-    .param p1    # I
 
     const/4 v4, 0x4
 
@@ -4323,7 +4302,6 @@
 
 .method private setCameraMode(I)V
     .locals 4
-    .param p1    # I
 
     const/16 v3, 0x24
 
@@ -4388,7 +4366,6 @@
 
 .method private setDualMode(I)V
     .locals 3
-    .param p1    # I
 
     iget v0, p0, Lcom/sec/android/app/camera/CameraSettings;->mDualMode:I
 
@@ -4434,7 +4411,6 @@
 
 .method public static settingShootingModeToCommandId(I)I
     .locals 1
-    .param p0    # I
 
     const/4 v0, 0x0
 
@@ -4644,7 +4620,6 @@
 # virtual methods
 .method public addUriListInSecureMode(Landroid/net/Uri;)V
     .locals 1
-    .param p1    # Landroid/net/Uri;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/CameraSettings;->mUriListInSecureMode:Ljava/util/ArrayList;
 
@@ -4655,8 +4630,6 @@
 
 .method public androidBeamController(ZI)I
     .locals 8
-    .param p1    # Z
-    .param p2    # I
 
     const/4 v7, 0x5
 
@@ -5196,7 +5169,6 @@
 
 .method public getBurstDuration(I)I
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -5824,7 +5796,6 @@
 
 .method public getCameraShortcutMenuID(Ljava/lang/String;)I
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "flashmode"
 
@@ -7189,7 +7160,6 @@
 
 .method public getExposureValueResourceString(I)Ljava/lang/String;
     .locals 5
-    .param p1    # I
 
     const/4 v2, 0x1
 
@@ -8634,7 +8604,6 @@
 
 .method public getSettingValue(I)I
     .locals 2
-    .param p1    # I
 
     sparse-switch p1, :sswitch_data_0
 
@@ -9182,7 +9151,6 @@
 
 .method public getShootingModeGuideDialog(I)I
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/sec/android/app/camera/CameraSettings;->getShootingModeKey(I)Ljava/lang/String;
 
@@ -9199,7 +9167,6 @@
 
 .method public getShootingModeKey(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     const-string v0, ""
 
@@ -9352,7 +9319,6 @@
 
 .method public getShootingModeResourceString(I)Ljava/lang/String;
     .locals 3
-    .param p1    # I
 
     invoke-static {p1}, Lcom/sec/android/app/camera/CameraSettings;->settingShootingModeToCommandId(I)I
 
@@ -9877,7 +9843,6 @@
 
 .method public getShootingModeValueForISPset(I)I
     .locals 4
-    .param p1    # I
 
     const/4 v3, 0x2
 
@@ -10069,7 +10034,6 @@
 
 .method public getShortcutMenuID(Ljava/lang/String;)I
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lcom/sec/android/app/camera/CameraSettings;->getCameraShortcutMenuID(Ljava/lang/String;)I
 
@@ -10098,7 +10062,6 @@
 
 .method public getSideBarMenuOrderByCommandId(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     const/16 v0, 0x42
 
@@ -10311,7 +10274,6 @@
 
 .method public getTimeLapseFps(D)D
     .locals 2
-    .param p1    # D
 
     iget v0, p0, Lcom/sec/android/app/camera/CameraSettings;->mFastMotionSpeed:I
 
@@ -10768,8 +10730,6 @@
 
 .method protected handleNotification(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     iget-object v2, p0, Lcom/sec/android/app/camera/CameraSettings;->mObservers:Ljava/util/List;
 
@@ -10852,7 +10812,6 @@
 
 .method public initializeCameraMode(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v2, 0x1
 
@@ -11939,7 +11898,6 @@
 
 .method public isExternalShootingMode(I)Z
     .locals 1
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -12140,7 +12098,6 @@
 
 .method public isSupportedBackCamcorderResolutionFeature(I)Z
     .locals 5
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -12309,7 +12266,6 @@
 
 .method public isSupportedBackCameraResolutionFeature(I)Z
     .locals 4
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -12593,7 +12549,6 @@
 
 .method public isSupportedBackCameraShootingMode(I)Z
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -12771,7 +12726,6 @@
 
 .method public isSupportedFrontCamcorderResolutionFeature(I)Z
     .locals 5
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -12935,7 +12889,6 @@
 
 .method public isSupportedFrontCameraResolutionFeature(I)Z
     .locals 4
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -13171,7 +13124,6 @@
 
 .method public isSupportedFrontCameraShootingMode(I)Z
     .locals 2
-    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -13264,8 +13216,6 @@
 
 .method public isSupportedSlowMotionCamcorderResolution(II)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x1
 
@@ -13449,7 +13399,6 @@
 
 .method public varargs loadFromPreferences([I)V
     .locals 7
-    .param p1    # [I
 
     move-object v0, p1
 
@@ -14976,8 +14925,6 @@
 
 .method protected notifyCameraSettingsChanged(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/CameraSettings;->mNotificationHandler:Lcom/sec/android/app/camera/CameraSettings$NotificationHandler;
 
@@ -14996,9 +14943,6 @@
 
 .method protected notifyCameraSettingsChanged(IIZ)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     if-eqz p3, :cond_0
 
@@ -15225,8 +15169,6 @@
 
 .method public onSharedPreferenceChanged(Landroid/content/SharedPreferences;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Landroid/content/SharedPreferences;
-    .param p2    # Ljava/lang/String;
 
     return-void
 .end method
@@ -15543,7 +15485,6 @@
 
 .method public registerCameraSettingsChangedObserver(Lcom/sec/android/app/camera/CameraSettings$OnCameraSettingsChangedObserver;)V
     .locals 2
-    .param p1    # Lcom/sec/android/app/camera/CameraSettings$OnCameraSettingsChangedObserver;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/CameraSettings;->mObservers:Ljava/util/List;
 
@@ -15805,7 +15746,6 @@
 
 .method public resetMaxVideoDuration(I)V
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -16450,7 +16390,6 @@
 
 .method public setAttachCamcorderMode(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/CameraSettings;->mAttachCamcorderMode:Z
 
@@ -16459,7 +16398,6 @@
 
 .method public setAttachCameraMode(Z)V
     .locals 4
-    .param p1    # Z
 
     const/4 v3, 0x0
 
@@ -16501,7 +16439,6 @@
 
 .method public setAttachEmailMode(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/CameraSettings;->mAttachEmailMode:Z
 
@@ -16510,7 +16447,6 @@
 
 .method public setAttachMMSMode(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/CameraSettings;->mAttachMMSMode:Z
 
@@ -16519,7 +16455,6 @@
 
 .method public setAutoContrast(I)V
     .locals 3
-    .param p1    # I
 
     iget v0, p0, Lcom/sec/android/app/camera/CameraSettings;->mAutoContrast:I
 
@@ -16559,7 +16494,6 @@
 
 .method public setAutoNightDetectionMode(I)V
     .locals 6
-    .param p1    # I
 
     const/4 v5, 0x1
 
@@ -16653,7 +16587,6 @@
 
 .method public setBackCameraShootingModeOrder(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/CameraSettings;->getPreferences()Lcom/sec/android/app/camera/ComboPreferences;
 
@@ -16731,7 +16664,6 @@
 
 .method public setBeautyFaceMode(I)V
     .locals 3
-    .param p1    # I
 
     iget v0, p0, Lcom/sec/android/app/camera/CameraSettings;->mBeautyFaceMode:I
 
@@ -16775,7 +16707,6 @@
 
 .method public setBeautyLevel(I)V
     .locals 4
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/CameraSettings;->getPreferences()Lcom/sec/android/app/camera/ComboPreferences;
 
@@ -16847,7 +16778,6 @@
 
 .method public setBurstMode(I)V
     .locals 4
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/CameraSettings;->getPreferences()Lcom/sec/android/app/camera/ComboPreferences;
 
@@ -16921,7 +16851,6 @@
 
 .method public setBurstShotsGuideTextDialog(I)V
     .locals 4
-    .param p1    # I
 
     const-string v1, "pref_burst_shot_guide_text_dialog"
 
@@ -16975,7 +16904,6 @@
 
 .method public setBurstShotsStorageTextDialog(I)V
     .locals 4
-    .param p1    # I
 
     const-string v1, "pref_burst_shot_storage_text_dialog"
 
@@ -17029,7 +16957,6 @@
 
 .method public setCallStatus(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/CameraSettings;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -17057,7 +16984,6 @@
 
 .method public setCamcorderAntishake(I)V
     .locals 4
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/CameraSettings;->getPreferences()Lcom/sec/android/app/camera/ComboPreferences;
 
@@ -17129,7 +17055,6 @@
 
 .method public setCamcorderAudioRecording(I)V
     .locals 3
-    .param p1    # I
 
     iget v0, p0, Lcom/sec/android/app/camera/CameraSettings;->mCamcorderAudioRecording:I
 
@@ -17169,7 +17094,6 @@
 
 .method public setCamcorderAudioZoom(I)V
     .locals 4
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/CameraSettings;->getPreferences()Lcom/sec/android/app/camera/ComboPreferences;
 
@@ -17241,7 +17165,6 @@
 
 .method public setCamcorderQuality(I)V
     .locals 4
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/CameraSettings;->getPreferences()Lcom/sec/android/app/camera/ComboPreferences;
 
@@ -17313,7 +17236,6 @@
 
 .method public setCamcorderRecordingMode(I)V
     .locals 3
-    .param p1    # I
 
     iget v0, p0, Lcom/sec/android/app/camera/CameraSettings;->mRecordingMode:I
 
@@ -17357,7 +17279,6 @@
 
 .method public setCamcorderResolution(I)Z
     .locals 7
-    .param p1    # I
 
     const/16 v6, 0xbb9
 
@@ -17455,7 +17376,6 @@
 
 .method public setCamcorderResolutionChanged(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/CameraSettings;->mCamcorderResolutionChanged:Z
 
@@ -17464,7 +17384,6 @@
 
 .method public setCamcorderVideoDuration(I)V
     .locals 4
-    .param p1    # I
 
     const-string v1, "pref_camera_video_duration_key"
 
@@ -17524,7 +17443,6 @@
 
 .method public setCameraAntiShake(I)V
     .locals 4
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/CameraSettings;->getPreferences()Lcom/sec/android/app/camera/ComboPreferences;
 
@@ -17594,7 +17512,6 @@
 
 .method public setCameraDualEffect(I)V
     .locals 5
-    .param p1    # I
 
     const/4 v4, 0x0
 
@@ -17703,7 +17620,6 @@
 
 .method public setCameraEditableShortcutOrder(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/CameraSettings;->getPreferences()Lcom/sec/android/app/camera/ComboPreferences;
 
@@ -17773,7 +17689,6 @@
 
 .method public setCameraEffect(I)V
     .locals 4
-    .param p1    # I
 
     const/16 v3, 0x8
 
@@ -17842,7 +17757,6 @@
 
 .method public setCameraExposureMeter(I)V
     .locals 4
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/CameraSettings;->getPreferences()Lcom/sec/android/app/camera/ComboPreferences;
 
@@ -17912,7 +17826,6 @@
 
 .method public setCameraFocusMode(I)V
     .locals 4
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/CameraSettings;->getPreferences()Lcom/sec/android/app/camera/ComboPreferences;
 
@@ -17984,7 +17897,6 @@
 
 .method public setCameraHDR(I)V
     .locals 5
-    .param p1    # I
 
     const/16 v4, 0xc
 
@@ -18079,7 +17991,6 @@
 
 .method public setCameraISO(I)V
     .locals 3
-    .param p1    # I
 
     iget v0, p0, Lcom/sec/android/app/camera/CameraSettings;->mISO:I
 
@@ -18119,7 +18030,6 @@
 
 .method public setCameraId(I)V
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -18130,8 +18040,6 @@
 
 .method public setCameraId(IZ)V
     .locals 5
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v4, 0x1
 
@@ -18268,7 +18176,6 @@
 
 .method public setCameraModeForDualCamera(I)V
     .locals 2
-    .param p1    # I
 
     iget v0, p0, Lcom/sec/android/app/camera/CameraSettings;->mCameraMode:I
 
@@ -18292,7 +18199,6 @@
 
 .method public setCameraQuality(I)V
     .locals 4
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/CameraSettings;->getPreferences()Lcom/sec/android/app/camera/ComboPreferences;
 
@@ -18362,7 +18268,6 @@
 
 .method public setCameraResolution(I)Z
     .locals 7
-    .param p1    # I
 
     const/4 v6, 0x4
 
@@ -18592,7 +18497,6 @@
 
 .method public setCameraResolutionChanged(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/CameraSettings;->mCameraResolutionChanged:Z
 
@@ -18601,7 +18505,6 @@
 
 .method public setCameraResolutionForDual(I)Z
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/CameraSettings;->getPreferences()Lcom/sec/android/app/camera/ComboPreferences;
 
@@ -18624,7 +18527,6 @@
 
 .method public setCameraShutterSound(I)V
     .locals 5
-    .param p1    # I
 
     const/4 v4, 0x1
 
@@ -18710,7 +18612,6 @@
 
 .method public setCameraVoiceCommand(I)V
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -18721,8 +18622,6 @@
 
 .method public setCameraVoiceCommand(IZ)V
     .locals 5
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v4, 0x1
 
@@ -18893,8 +18792,6 @@
 
 .method public setCameraVoiceCommandBoth(IZ)V
     .locals 5
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v4, 0x1
 
@@ -19055,7 +18952,6 @@
 
 .method public setChangeDualEffectDialog(I)V
     .locals 4
-    .param p1    # I
 
     const-string v1, "pref_change_dual_effect_dialog"
 
@@ -19109,7 +19005,6 @@
 
 .method public setChangeStorageSettingDialog(I)V
     .locals 4
-    .param p1    # I
 
     const-string v1, "pref_change_storage_setting_dialog"
 
@@ -19163,7 +19058,6 @@
 
 .method public setCoverMode(Z)V
     .locals 7
-    .param p1    # Z
 
     const/16 v6, 0xbb9
 
@@ -19275,7 +19169,6 @@
 
 .method public setDataCheckEnable(Ljava/lang/Boolean;)V
     .locals 4
-    .param p1    # Ljava/lang/Boolean;
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/CameraSettings;->getPreferences()Lcom/sec/android/app/camera/ComboPreferences;
 
@@ -19349,7 +19242,6 @@
 
 .method public setDataWarningType(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "CameraSettings"
 
@@ -20004,7 +19896,6 @@
 
 .method public setDualCaptureMode(I)V
     .locals 4
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/CameraSettings;->getPreferences()Lcom/sec/android/app/camera/ComboPreferences;
 
@@ -20078,7 +19969,6 @@
 
 .method public setDualEffectLeftBottomX(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/app/camera/CameraSettings;->mDualLeftBottomX:I
 
@@ -20087,7 +19977,6 @@
 
 .method public setDualEffectLeftBottomY(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/app/camera/CameraSettings;->mDualLeftBottomY:I
 
@@ -20096,7 +19985,6 @@
 
 .method public setDualEffectLeftTopX(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/app/camera/CameraSettings;->mDualLeftTopX:I
 
@@ -20105,7 +19993,6 @@
 
 .method public setDualEffectLeftTopY(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/app/camera/CameraSettings;->mDualLeftTopY:I
 
@@ -20114,7 +20001,6 @@
 
 .method public setDualEffectRectHeight(I)V
     .locals 4
-    .param p1    # I
 
     const-string v1, "pref_camera_dual_rect_height"
 
@@ -20168,7 +20054,6 @@
 
 .method public setDualEffectRectWidth(I)V
     .locals 4
-    .param p1    # I
 
     const-string v1, "pref_camera_dual_rect_width"
 
@@ -20222,7 +20107,6 @@
 
 .method public setDualEffectRightBottomX(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/app/camera/CameraSettings;->mDualRightBottomX:I
 
@@ -20231,7 +20115,6 @@
 
 .method public setDualEffectRightBottomY(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/app/camera/CameraSettings;->mDualRightBottomY:I
 
@@ -20240,7 +20123,6 @@
 
 .method public setDualEffectRightTopX(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/app/camera/CameraSettings;->mDualRightTopX:I
 
@@ -20249,7 +20131,6 @@
 
 .method public setDualEffectRightTopY(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/app/camera/CameraSettings;->mDualRightTopY:I
 
@@ -20258,7 +20139,6 @@
 
 .method public setDualTrackingGuideDialog(I)V
     .locals 4
-    .param p1    # I
 
     const-string v1, "pref_dual_tracking_guide_dialog"
 
@@ -20312,7 +20192,6 @@
 
 .method public setEULAEnable(Ljava/lang/Boolean;)V
     .locals 4
-    .param p1    # Ljava/lang/Boolean;
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/CameraSettings;->getPreferences()Lcom/sec/android/app/camera/ComboPreferences;
 
@@ -20386,7 +20265,6 @@
 
 .method public setEasyMode(Z)V
     .locals 4
-    .param p1    # Z
 
     const/4 v3, 0x0
 
@@ -20466,8 +20344,6 @@
 
 .method public setEffectMode(II)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
 
     const/4 v4, 0x1
 
@@ -20521,7 +20397,6 @@
 
 .method public setEffectNotSupportedUHDPopup(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/app/camera/CameraSettings;->mEffectNotSupportedUHDPopup:I
 
@@ -20530,7 +20405,6 @@
 
 .method public setExposureValue(I)V
     .locals 3
-    .param p1    # I
 
     iget v0, p0, Lcom/sec/android/app/camera/CameraSettings;->mExposureValue:I
 
@@ -20570,7 +20444,6 @@
 
 .method public setEyeEnlargeLevel(I)V
     .locals 4
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/CameraSettings;->getPreferences()Lcom/sec/android/app/camera/ComboPreferences;
 
@@ -20642,7 +20515,6 @@
 
 .method public setFaceDetectionMode(I)V
     .locals 4
-    .param p1    # I
 
     const-string v1, "CameraSettings"
 
@@ -20738,7 +20610,6 @@
 
 .method public setFaceZoomHelpTextDialog(I)V
     .locals 4
-    .param p1    # I
 
     const-string v1, "pref_face_zoom_help_text_dialog"
 
@@ -20792,7 +20663,6 @@
 
 .method public setFastMotionSpeed(I)V
     .locals 3
-    .param p1    # I
 
     iget v0, p0, Lcom/sec/android/app/camera/CameraSettings;->mFastMotionSpeed:I
 
@@ -20832,7 +20702,6 @@
 
 .method public setFlashMode(I)V
     .locals 7
-    .param p1    # I
 
     const/16 v6, 0x6c
 
@@ -20978,7 +20847,6 @@
 
 .method public setFocusSelectMode(I)V
     .locals 3
-    .param p1    # I
 
     iget v0, p0, Lcom/sec/android/app/camera/CameraSettings;->mFocusSelectMode:I
 
@@ -21043,7 +20911,6 @@
 
 .method public setFocusSelectModeInAutoMode(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/app/camera/CameraSettings;->mFocusSelectModeWhenAutoMode:I
 
@@ -21052,7 +20919,6 @@
 
 .method public setFrontCameraShootingModeOrder(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/CameraSettings;->getPreferences()Lcom/sec/android/app/camera/ComboPreferences;
 
@@ -21130,7 +20996,6 @@
 
 .method public setFrontSideBarMenuOrder(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/CameraSettings;->getPreferences()Lcom/sec/android/app/camera/ComboPreferences;
 
@@ -21206,7 +21071,6 @@
 
 .method public setGPS(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/CameraSettings;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -21272,7 +21136,6 @@
 
 .method public setGolfDirection(I)V
     .locals 3
-    .param p1    # I
 
     const-string v1, "pref_golf_direction"
 
@@ -21304,7 +21167,6 @@
 
 .method public setGuideline(I)V
     .locals 4
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/CameraSettings;->getPreferences()Lcom/sec/android/app/camera/ComboPreferences;
 
@@ -21376,7 +21238,6 @@
 
 .method public setHRMSensorCaptureDialog(I)V
     .locals 4
-    .param p1    # I
 
     const-string v1, "pref_sensor_capture_dialog"
 
@@ -21430,7 +21291,6 @@
 
 .method public setHelpMode(I)V
     .locals 4
-    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -21700,7 +21560,6 @@
 
 .method public setLocationTagGuideDialog(I)V
     .locals 4
-    .param p1    # I
 
     const-string v1, "pref_location_tag_guide_dialog"
 
@@ -21754,7 +21613,6 @@
 
 .method public setLowBatteryStatus(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/CameraSettings;->mLowBattery:Z
 
@@ -21763,7 +21621,6 @@
 
 .method public setMaxRecordingSize(J)V
     .locals 0
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/sec/android/app/camera/CameraSettings;->mMaxMmsSize:J
 
@@ -21772,7 +21629,6 @@
 
 .method public setMode(I)V
     .locals 3
-    .param p1    # I
 
     iget v0, p0, Lcom/sec/android/app/camera/CameraSettings;->mMode:I
 
@@ -21812,7 +21668,6 @@
 
 .method public setOnDeviceHelpScreen(Z)V
     .locals 5
-    .param p1    # Z
 
     const/4 v4, 0x0
 
@@ -21861,7 +21716,6 @@
 
 .method public setOutFocusShotGuideDialog(I)V
     .locals 4
-    .param p1    # I
 
     const-string v1, "pref_out_focus_shot_guide_dialog"
 
@@ -21915,7 +21769,6 @@
 
 .method public setOutdoorVisibility(I)V
     .locals 3
-    .param p1    # I
 
     iget v0, p0, Lcom/sec/android/app/camera/CameraSettings;->mOutdoorVisibility:I
 
@@ -21969,7 +21822,6 @@
 
 .method public setQuickAccessDialog(I)V
     .locals 4
-    .param p1    # I
 
     const-string v1, "pref_quick_access_dialog"
 
@@ -22023,14 +21875,12 @@
 
 .method public setQuickAccessMode(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public setRemoteViewFinderLaunchEffectDownloadGuideDialog(I)V
     .locals 4
-    .param p1    # I
 
     const-string v1, "pref_remote_view_finder_launch_effect_download_guide_dialog"
 
@@ -22084,7 +21934,6 @@
 
 .method public setRemoteViewFinderLaunchEffectGuideDialog(I)V
     .locals 4
-    .param p1    # I
 
     const-string v1, "pref_remote_view_finder_launch_effect_guide_dialog"
 
@@ -22138,7 +21987,6 @@
 
 .method public setRemoteViewFinderLaunchGalleryGuideDialog(I)V
     .locals 4
-    .param p1    # I
 
     const-string v1, "pref_remote_view_finder_launch_gallery_guide_dialog"
 
@@ -22192,7 +22040,6 @@
 
 .method public setRemoteViewFinderLaunchHelpGuideDialog(I)V
     .locals 4
-    .param p1    # I
 
     const-string v1, "pref_remote_view_finder_launch_help_guide_dialog"
 
@@ -22246,7 +22093,6 @@
 
 .method public setRemoteViewFinderLaunchSettingsToTurnOnGPSDialog(I)V
     .locals 4
-    .param p1    # I
 
     const-string v1, "pref_remote_view_finder_launch_help_guide_dialog"
 
@@ -22300,7 +22146,6 @@
 
 .method public setRemoteViewFinderResetCameraGuideDialog(I)V
     .locals 4
-    .param p1    # I
 
     const-string v1, "pref_remote_view_finder_reset_camera_guide_dialog"
 
@@ -22354,7 +22199,6 @@
 
 .method public setRemoteViewFinderWifiDirectGuideDialog(I)V
     .locals 4
-    .param p1    # I
 
     const-string v1, "pref_remote_view_finder_wifi_direct_guide_dialog"
 
@@ -22408,7 +22252,6 @@
 
 .method public setRemoteViewfinderMode(I)V
     .locals 4
-    .param p1    # I
 
     const/16 v3, 0x63
 
@@ -22499,7 +22342,6 @@
 
 .method public setRequestedRecordingSize(J)V
     .locals 0
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/sec/android/app/camera/CameraSettings;->mRequestedRecordingSize:J
 
@@ -22508,7 +22350,6 @@
 
 .method public setReview(I)V
     .locals 4
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/CameraSettings;->getPreferences()Lcom/sec/android/app/camera/ComboPreferences;
 
@@ -22578,7 +22419,6 @@
 
 .method public setSaveRichtone(I)V
     .locals 4
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/CameraSettings;->getPreferences()Lcom/sec/android/app/camera/ComboPreferences;
 
@@ -22652,7 +22492,6 @@
 
 .method public setSceneMode(I)V
     .locals 3
-    .param p1    # I
 
     iget v0, p0, Lcom/sec/android/app/camera/CameraSettings;->mSceneMode:I
 
@@ -22694,7 +22533,6 @@
 
 .method public setScreenFlash(I)V
     .locals 3
-    .param p1    # I
 
     iget v0, p0, Lcom/sec/android/app/camera/CameraSettings;->mScreenFlash:I
 
@@ -22736,7 +22574,6 @@
 
 .method public setSecureMode(Z)V
     .locals 6
-    .param p1    # Z
 
     const/16 v5, 0x37
 
@@ -22852,7 +22689,6 @@
 
 .method public setSelfFlip(I)V
     .locals 5
-    .param p1    # I
 
     const/16 v4, 0x26
 
@@ -22951,7 +22787,6 @@
 
 .method public setSelfieContinuousValue(I)V
     .locals 5
-    .param p1    # I
 
     const/16 v4, 0x7d
 
@@ -23060,7 +22895,6 @@
 
 .method public setSelfieMode(I)V
     .locals 4
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/CameraSettings;->getPreferences()Lcom/sec/android/app/camera/ComboPreferences;
 
@@ -23134,7 +22968,6 @@
 
 .method public setSettingOverlayHelpDialog(I)V
     .locals 4
-    .param p1    # I
 
     const-string v1, "pref_setting_help_overlay_dialog"
 
@@ -23219,7 +23052,6 @@
 
 .method public varargs setSettingValuesAsDefault([I)V
     .locals 9
-    .param p1    # [I
 
     const/4 v8, 0x2
 
@@ -23435,7 +23267,6 @@
 
 .method public setShareMode(I)V
     .locals 3
-    .param p1    # I
 
     const/16 v2, 0x35
 
@@ -23463,7 +23294,6 @@
 
 .method public setShootingMode(I)V
     .locals 1
-    .param p1    # I
 
     const-string v0, ""
 
@@ -23478,8 +23308,6 @@
 
 .method public setShootingMode(ILjava/lang/String;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     if-nez p2, :cond_0
 
@@ -23497,8 +23325,6 @@
 
 .method public setShootingMode(IZ)V
     .locals 4
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v3, 0x1
 
@@ -23688,8 +23514,6 @@
 
 .method public setShootingModeGuideDialog(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0, p1}, Lcom/sec/android/app/camera/CameraSettings;->getShootingModeKey(I)Ljava/lang/String;
 
@@ -23729,7 +23553,6 @@
 
 .method public setShortcutLayoutReset(I)V
     .locals 3
-    .param p1    # I
 
     iget v0, p0, Lcom/sec/android/app/camera/CameraSettings;->mShortcutLayoutReset:I
 
@@ -23765,7 +23588,6 @@
 
 .method public setSideBarMenuOrder(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/CameraSettings;->getPreferences()Lcom/sec/android/app/camera/ComboPreferences;
 
@@ -23841,7 +23663,6 @@
 
 .method public setSideTouchGuideDialog(I)V
     .locals 4
-    .param p1    # I
 
     const-string v1, "pref_side_touch_guide_dialog"
 
@@ -23895,7 +23716,6 @@
 
 .method public setSideTouchMode(I)V
     .locals 4
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/CameraSettings;->getPreferences()Lcom/sec/android/app/camera/ComboPreferences;
 
@@ -23975,7 +23795,6 @@
 
 .method public setSlimFaceLevel(I)V
     .locals 4
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/CameraSettings;->getPreferences()Lcom/sec/android/app/camera/ComboPreferences;
 
@@ -24047,7 +23866,6 @@
 
 .method public setSlowMotionSpeed(I)V
     .locals 3
-    .param p1    # I
 
     iget v0, p0, Lcom/sec/android/app/camera/CameraSettings;->mSlowMotionSpeed:I
 
@@ -24087,7 +23905,6 @@
 
 .method public setSmartStablilizationDialog(I)V
     .locals 4
-    .param p1    # I
 
     const-string v1, "pref_smart_stabilization_dialog"
 
@@ -24141,7 +23958,6 @@
 
 .method public setSnapshotLimitationDialog(I)V
     .locals 4
-    .param p1    # I
 
     const-string v1, "pref_snap_shot_limitation_dialog"
 
@@ -24195,7 +24011,6 @@
 
 .method public setSoundShotMode(I)V
     .locals 3
-    .param p1    # I
 
     iget v0, p0, Lcom/sec/android/app/camera/CameraSettings;->mSoundShotMode:I
 
@@ -24239,7 +24054,6 @@
 
 .method public setStorage(I)V
     .locals 5
-    .param p1    # I
 
     const/16 v4, 0x16
 
@@ -24330,7 +24144,6 @@
 
 .method public setTemperatureHighToRecord(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/CameraSettings;->mIsTemperatureHighToRecord:Z
 
@@ -24339,7 +24152,6 @@
 
 .method public setTemperatureHighToUseFlash(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/CameraSettings;->mIsTemperatureHighToUseFlash:Z
 
@@ -24348,7 +24160,6 @@
 
 .method public setTemperatureLowToUseFlash(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/CameraSettings;->mIsTemperatureLowToUseFlash:Z
 
@@ -24357,7 +24168,6 @@
 
 .method public setTimer(I)V
     .locals 5
-    .param p1    # I
 
     const/4 v4, 0x6
 
@@ -24445,7 +24255,6 @@
 
 .method public setTorchLightStatus(I)V
     .locals 3
-    .param p1    # I
 
     iget v0, p0, Lcom/sec/android/app/camera/CameraSettings;->mTorchLight:I
 
@@ -24471,7 +24280,6 @@
 
 .method public setTouchToCapture(I)V
     .locals 4
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/CameraSettings;->getTouchToCapture()I
 
@@ -24551,7 +24359,6 @@
 
 .method public setTransitionAnimationScale(F)V
     .locals 2
-    .param p1    # F
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/CameraSettings;->getPreferences()Lcom/sec/android/app/camera/ComboPreferences;
 
@@ -24572,7 +24379,6 @@
 
 .method public setTrueDefaultSideMenu(Ljava/lang/String;Ljava/util/LinkedHashMap;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -24628,7 +24434,6 @@
 
 .method public setVideoAudiozoomDialog(I)V
     .locals 4
-    .param p1    # I
 
     const-string v1, "pref_video_audiozoom_dialog"
 
@@ -24682,7 +24487,6 @@
 
 .method public setVideoFhdResolutionDialog(I)V
     .locals 4
-    .param p1    # I
 
     const-string v1, "pref_video_fhd_resolution_dialog"
 
@@ -24736,7 +24540,6 @@
 
 .method public setVideoStabilisationDialog(I)V
     .locals 4
-    .param p1    # I
 
     const-string v1, "pref_video_stabilisation_dialog"
 
@@ -24790,7 +24593,6 @@
 
 .method public setVideoUhdResolutionDialog(I)V
     .locals 4
-    .param p1    # I
 
     const-string v1, "pref_video_uhd_resolution_dialog"
 
@@ -24844,7 +24646,6 @@
 
 .method public setVideoWqhdResolutionDialog(I)V
     .locals 4
-    .param p1    # I
 
     const-string v1, "pref_video_wqhd_resolution_dialog"
 
@@ -24898,7 +24699,6 @@
 
 .method public setVideocallPresetSelected(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/CameraSettings;->mVideocallPresetSelected:Z
 
@@ -24907,7 +24707,6 @@
 
 .method public setViewMode(I)V
     .locals 4
-    .param p1    # I
 
     iget v1, p0, Lcom/sec/android/app/camera/CameraSettings;->mViewModePreview:I
 
@@ -24965,7 +24764,6 @@
 
 .method public setVoiceGuide(I)V
     .locals 4
-    .param p1    # I
 
     const/16 v3, 0x59
 
@@ -25013,7 +24811,6 @@
 
 .method public setVolumeKeyAs(I)V
     .locals 4
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/CameraSettings;->getPreferences()Lcom/sec/android/app/camera/ComboPreferences;
 
@@ -25081,7 +24878,6 @@
 
 .method public setWhiteBalance(I)V
     .locals 3
-    .param p1    # I
 
     iget v0, p0, Lcom/sec/android/app/camera/CameraSettings;->mWB:I
 
@@ -25296,7 +25092,6 @@
 
 .method public setZoomValue(I)V
     .locals 3
-    .param p1    # I
 
     iget v0, p0, Lcom/sec/android/app/camera/CameraSettings;->mZoomValue:I
 
@@ -25336,7 +25131,6 @@
 
 .method public setZoomValueForced(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "CameraSettings"
 
@@ -25371,7 +25165,6 @@
 
 .method public setshowEditableShortcutGuideDialog(I)V
     .locals 4
-    .param p1    # I
 
     const-string v1, "pref_editable_shortcut_guide_dialog"
 
@@ -25425,7 +25218,6 @@
 
 .method public setshowLiveBeautyController(I)V
     .locals 4
-    .param p1    # I
 
     const-string v1, "pref_show_live_beauty_controller"
 
@@ -25479,7 +25271,6 @@
 
 .method public setshowTurnOnBurstShotHelpTextDialog(I)V
     .locals 4
-    .param p1    # I
 
     const-string v1, "pref_turn_on_burst_help_text_dialog"
 
@@ -25533,7 +25324,6 @@
 
 .method public unregisterCameraSettingsChangedObserver(Lcom/sec/android/app/camera/CameraSettings$OnCameraSettingsChangedObserver;)V
     .locals 2
-    .param p1    # Lcom/sec/android/app/camera/CameraSettings$OnCameraSettingsChangedObserver;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/CameraSettings;->mObservers:Ljava/util/List;
 
@@ -27306,8 +27096,6 @@
 
 .method updateDualCameraSetting(Ljava/lang/String;I)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const-string v1, "CameraSettings"
 

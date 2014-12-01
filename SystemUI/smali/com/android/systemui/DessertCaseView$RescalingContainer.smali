@@ -23,7 +23,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;)V
 
@@ -46,11 +45,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 11
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     sub-int v6, p4, p2
 
@@ -121,7 +115,6 @@
 
 .method public setDarkness(F)V
     .locals 3
-    .param p1    # F
 
     iput p1, p0, Lcom/android/systemui/DessertCaseView$RescalingContainer;->mDarkness:F
 
@@ -146,7 +139,6 @@
 
 .method public setView(Lcom/android/systemui/DessertCaseView;)V
     .locals 0
-    .param p1    # Lcom/android/systemui/DessertCaseView;
 
     invoke-virtual {p0, p1}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
 

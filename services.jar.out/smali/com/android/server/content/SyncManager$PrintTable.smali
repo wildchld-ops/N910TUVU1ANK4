@@ -32,7 +32,6 @@
 # direct methods
 .method constructor <init>(I)V
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -49,9 +48,6 @@
 
 .method private printRow(Ljava/io/PrintWriter;[Ljava/lang/String;[Ljava/lang/Object;)V
     .locals 6
-    .param p1    # Ljava/io/PrintWriter;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # [Ljava/lang/Object;
 
     const/4 v5, 0x0
 
@@ -114,9 +110,6 @@
 
 .method varargs set(II[Ljava/lang/Object;)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [Ljava/lang/Object;
 
     array-length v3, p3
 
@@ -230,7 +223,6 @@
 
 .method writeTo(Ljava/io/PrintWriter;)V
     .locals 13
-    .param p1    # Ljava/io/PrintWriter;
 
     const/4 v12, 0x0
 

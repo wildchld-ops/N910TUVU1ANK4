@@ -123,17 +123,6 @@
 
 .method public constructor <init>(Landroid/accounts/Account;IIILjava/lang/String;Landroid/os/Bundle;JJJJZ)V
     .locals 7
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Ljava/lang/String;
-    .param p6    # Landroid/os/Bundle;
-    .param p7    # J
-    .param p9    # J
-    .param p11    # J
-    .param p13    # J
-    .param p15    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -251,7 +240,6 @@
 
 .method constructor <init>(Lcom/android/server/content/SyncOperation;)V
     .locals 2
-    .param p1    # Lcom/android/server/content/SyncOperation;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -322,7 +310,6 @@
 
 .method private cleanBundle(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     const-string/jumbo v0, "upload"
 
@@ -373,8 +360,6 @@
 
 .method public static extrasToStringBuilder(Landroid/os/Bundle;Ljava/lang/StringBuilder;)V
     .locals 4
-    .param p0    # Landroid/os/Bundle;
-    .param p1    # Ljava/lang/StringBuilder;
 
     const-string v2, "["
 
@@ -435,8 +420,6 @@
 
 .method public static reasonToString(Landroid/content/pm/PackageManager;I)Ljava/lang/String;
     .locals 5
-    .param p0    # Landroid/content/pm/PackageManager;
-    .param p1    # I
 
     if-ltz p1, :cond_3
 
@@ -509,8 +492,6 @@
 
 .method private removeFalseExtra(Landroid/os/Bundle;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -674,7 +655,6 @@
 # virtual methods
 .method public compareTo(Ljava/lang/Object;)I
     .locals 13
-    .param p1    # Ljava/lang/Object;
 
     const-wide/16 v11, 0x0
 
@@ -746,8 +726,6 @@
 
 .method public dump(Landroid/content/pm/PackageManager;Z)Ljava/lang/String;
     .locals 4
-    .param p1    # Landroid/content/pm/PackageManager;
-    .param p2    # Z
 
     new-instance v1, Ljava/lang/StringBuilder;
 

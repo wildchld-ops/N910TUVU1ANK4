@@ -128,7 +128,6 @@
 # virtual methods
 .method public makeNewFallbackEventHandler(Landroid/content/Context;)Landroid/view/FallbackEventHandler;
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     new-instance v0, Lcom/android/internal/policy/impl/PhoneFallbackEventHandler;
 
@@ -139,7 +138,6 @@
 
 .method public makeNewLayoutInflater(Landroid/content/Context;)Landroid/view/LayoutInflater;
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     new-instance v0, Lcom/android/internal/policy/impl/PhoneLayoutInflater;
 
@@ -150,7 +148,6 @@
 
 .method public makeNewSubWindow(Landroid/content/Context;)Landroid/view/Window;
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     new-instance v0, Lcom/android/internal/policy/impl/SubPhoneWindow;
 
@@ -161,7 +158,6 @@
 
 .method public makeNewWindow(Landroid/content/Context;)Landroid/view/Window;
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     new-instance v0, Lcom/android/internal/policy/impl/PhoneWindow;
 
@@ -172,8 +168,6 @@
 
 .method public makeNewWindow(Landroid/content/Context;Z)Landroid/view/Window;
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Z
 
     if-eqz p2, :cond_0
 

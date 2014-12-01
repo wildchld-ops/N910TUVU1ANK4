@@ -189,8 +189,6 @@
 
 .method private constructor <init>(Landroid/content/Context;Landroid/os/storage/StorageVolume;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/storage/StorageVolume;
 
     const/4 v2, 0x0
 
@@ -248,9 +246,6 @@
 
 .method static synthetic access$000(Landroid/util/SparseLongArray;IJ)V
     .locals 0
-    .param p0    # Landroid/util/SparseLongArray;
-    .param p1    # I
-    .param p2    # J
 
     invoke-static {p0, p1, p2, p3}, Lcom/android/settings/deviceinfo/StorageMeasurement;->addValue(Landroid/util/SparseLongArray;IJ)V
 
@@ -259,7 +254,6 @@
 
 .method static synthetic access$1000(Lcom/android/settings/deviceinfo/StorageMeasurement;)V
     .locals 0
-    .param p0    # Lcom/android/settings/deviceinfo/StorageMeasurement;
 
     invoke-direct {p0}, Lcom/android/settings/deviceinfo/StorageMeasurement;->sendInternalApproximateUpdate()V
 
@@ -268,8 +262,6 @@
 
 .method static synthetic access$1102(Lcom/android/settings/deviceinfo/StorageMeasurement;J)J
     .locals 0
-    .param p0    # Lcom/android/settings/deviceinfo/StorageMeasurement;
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/android/settings/deviceinfo/StorageMeasurement;->totalMediaSize:J
 
@@ -278,8 +270,6 @@
 
 .method static synthetic access$1114(Lcom/android/settings/deviceinfo/StorageMeasurement;J)J
     .locals 2
-    .param p0    # Lcom/android/settings/deviceinfo/StorageMeasurement;
-    .param p1    # J
 
     iget-wide v0, p0, Lcom/android/settings/deviceinfo/StorageMeasurement;->totalMediaSize:J
 
@@ -292,7 +282,6 @@
 
 .method static synthetic access$1200(Lcom/android/settings/deviceinfo/StorageMeasurement;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/deviceinfo/StorageMeasurement;
 
     iget-boolean v0, p0, Lcom/android/settings/deviceinfo/StorageMeasurement;->mIsPrimary:Z
 
@@ -309,8 +298,6 @@
 
 .method static synthetic access$1400(Lcom/android/internal/app/IMediaContainerService;Ljava/io/File;)J
     .locals 2
-    .param p0    # Lcom/android/internal/app/IMediaContainerService;
-    .param p1    # Ljava/io/File;
 
     invoke-static {p0, p1}, Lcom/android/settings/deviceinfo/StorageMeasurement;->getDirectorySize(Lcom/android/internal/app/IMediaContainerService;Ljava/io/File;)J
 
@@ -321,9 +308,6 @@
 
 .method static synthetic access$1500(Lcom/android/settings/deviceinfo/StorageMeasurement;Lcom/android/internal/app/IMediaContainerService;Ljava/io/File;)J
     .locals 2
-    .param p0    # Lcom/android/settings/deviceinfo/StorageMeasurement;
-    .param p1    # Lcom/android/internal/app/IMediaContainerService;
-    .param p2    # Ljava/io/File;
 
     invoke-direct {p0, p1, p2}, Lcom/android/settings/deviceinfo/StorageMeasurement;->measureMisc(Lcom/android/internal/app/IMediaContainerService;Ljava/io/File;)J
 
@@ -334,8 +318,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/deviceinfo/StorageMeasurement;Lcom/android/settings/deviceinfo/StorageMeasurement$MeasurementDetails;)V
     .locals 0
-    .param p0    # Lcom/android/settings/deviceinfo/StorageMeasurement;
-    .param p1    # Lcom/android/settings/deviceinfo/StorageMeasurement$MeasurementDetails;
 
     invoke-direct {p0, p1}, Lcom/android/settings/deviceinfo/StorageMeasurement;->sendExactUpdate(Lcom/android/settings/deviceinfo/StorageMeasurement$MeasurementDetails;)V
 
@@ -344,7 +326,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/deviceinfo/StorageMeasurement;)Landroid/os/storage/StorageVolume;
     .locals 1
-    .param p0    # Lcom/android/settings/deviceinfo/StorageMeasurement;
 
     iget-object v0, p0, Lcom/android/settings/deviceinfo/StorageMeasurement;->mVolume:Landroid/os/storage/StorageVolume;
 
@@ -353,7 +334,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/deviceinfo/StorageMeasurement;)J
     .locals 2
-    .param p0    # Lcom/android/settings/deviceinfo/StorageMeasurement;
 
     iget-wide v0, p0, Lcom/android/settings/deviceinfo/StorageMeasurement;->mTotalSize:J
 
@@ -362,8 +342,6 @@
 
 .method static synthetic access$502(Lcom/android/settings/deviceinfo/StorageMeasurement;J)J
     .locals 0
-    .param p0    # Lcom/android/settings/deviceinfo/StorageMeasurement;
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/android/settings/deviceinfo/StorageMeasurement;->mTotalSize:J
 
@@ -372,7 +350,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/deviceinfo/StorageMeasurement;)J
     .locals 2
-    .param p0    # Lcom/android/settings/deviceinfo/StorageMeasurement;
 
     iget-wide v0, p0, Lcom/android/settings/deviceinfo/StorageMeasurement;->mAvailSize:J
 
@@ -381,8 +358,6 @@
 
 .method static synthetic access$602(Lcom/android/settings/deviceinfo/StorageMeasurement;J)J
     .locals 0
-    .param p0    # Lcom/android/settings/deviceinfo/StorageMeasurement;
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/android/settings/deviceinfo/StorageMeasurement;->mAvailSize:J
 
@@ -391,7 +366,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/deviceinfo/StorageMeasurement;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/settings/deviceinfo/StorageMeasurement;
 
     iget-object v0, p0, Lcom/android/settings/deviceinfo/StorageMeasurement;->_context:Landroid/content/Context;
 
@@ -400,7 +374,6 @@
 
 .method static synthetic access$800(Lcom/android/settings/deviceinfo/StorageMeasurement;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/deviceinfo/StorageMeasurement;
 
     iget-boolean v0, p0, Lcom/android/settings/deviceinfo/StorageMeasurement;->mIsInternal:Z
 
@@ -409,7 +382,6 @@
 
 .method static synthetic access$900(Lcom/android/settings/deviceinfo/StorageMeasurement;)J
     .locals 2
-    .param p0    # Lcom/android/settings/deviceinfo/StorageMeasurement;
 
     iget-wide v0, p0, Lcom/android/settings/deviceinfo/StorageMeasurement;->mSystemMemSize:J
 
@@ -418,8 +390,6 @@
 
 .method static synthetic access$902(Lcom/android/settings/deviceinfo/StorageMeasurement;J)J
     .locals 0
-    .param p0    # Lcom/android/settings/deviceinfo/StorageMeasurement;
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/android/settings/deviceinfo/StorageMeasurement;->mSystemMemSize:J
 
@@ -428,9 +398,6 @@
 
 .method private static addValue(Landroid/util/SparseLongArray;IJ)V
     .locals 2
-    .param p0    # Landroid/util/SparseLongArray;
-    .param p1    # I
-    .param p2    # J
 
     invoke-virtual {p0, p1}, Landroid/util/SparseLongArray;->get(I)J
 
@@ -445,8 +412,6 @@
 
 .method private static getDirectorySize(Lcom/android/internal/app/IMediaContainerService;Ljava/io/File;)J
     .locals 6
-    .param p0    # Lcom/android/internal/app/IMediaContainerService;
-    .param p1    # Ljava/io/File;
 
     :try_start_0
     invoke-virtual {p1}, Ljava/io/File;->toString()Ljava/lang/String;
@@ -494,8 +459,6 @@
 
 .method public static getInstance(Landroid/content/Context;Landroid/os/storage/StorageVolume;)Lcom/android/settings/deviceinfo/StorageMeasurement;
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/os/storage/StorageVolume;
 
     sget-object v2, Lcom/android/settings/deviceinfo/StorageMeasurement;->sInstances:Ljava/util/HashMap;
 
@@ -541,8 +504,6 @@
 
 .method private measureMisc(Lcom/android/internal/app/IMediaContainerService;Ljava/io/File;)J
     .locals 30
-    .param p1    # Lcom/android/internal/app/IMediaContainerService;
-    .param p2    # Ljava/io/File;
 
     new-instance v2, Ljava/util/ArrayList;
 
@@ -816,7 +777,6 @@
 
 .method private sendExactUpdate(Lcom/android/settings/deviceinfo/StorageMeasurement$MeasurementDetails;)V
     .locals 7
-    .param p1    # Lcom/android/settings/deviceinfo/StorageMeasurement$MeasurementDetails;
 
     iget-object v3, p0, Lcom/android/settings/deviceinfo/StorageMeasurement;->mReceiver:Ljava/lang/ref/WeakReference;
 
@@ -1060,7 +1020,6 @@
 
 .method public setReceiver(Lcom/android/settings/deviceinfo/StorageMeasurement$MeasurementReceiver;)V
     .locals 1
-    .param p1    # Lcom/android/settings/deviceinfo/StorageMeasurement$MeasurementReceiver;
 
     iget-object v0, p0, Lcom/android/settings/deviceinfo/StorageMeasurement;->mReceiver:Ljava/lang/ref/WeakReference;
 

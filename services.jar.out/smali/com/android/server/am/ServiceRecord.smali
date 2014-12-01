@@ -156,13 +156,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/am/ActivityManagerService;Lcom/android/internal/os/BatteryStatsImpl$Uid$Pkg$Serv;Landroid/content/ComponentName;Landroid/content/Intent$FilterComparison;Landroid/content/pm/ServiceInfo;ZLjava/lang/Runnable;)V
     .locals 2
-    .param p1    # Lcom/android/server/am/ActivityManagerService;
-    .param p2    # Lcom/android/internal/os/BatteryStatsImpl$Uid$Pkg$Serv;
-    .param p3    # Landroid/content/ComponentName;
-    .param p4    # Landroid/content/Intent$FilterComparison;
-    .param p5    # Landroid/content/pm/ServiceInfo;
-    .param p6    # Z
-    .param p7    # Ljava/lang/Runnable;
 
     invoke-direct {p0}, Landroid/os/Binder;-><init>()V
 
@@ -340,8 +333,6 @@
 
 .method dump(Ljava/io/PrintWriter;Ljava/lang/String;)V
     .locals 21
-    .param p1    # Ljava/io/PrintWriter;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual/range {p1 .. p2}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
@@ -1212,9 +1203,6 @@
 
 .method dumpStartList(Ljava/io/PrintWriter;Ljava/lang/String;Ljava/util/List;J)V
     .locals 5
-    .param p1    # Ljava/io/PrintWriter;
-    .param p2    # Ljava/lang/String;
-    .param p4    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1396,8 +1384,6 @@
 
 .method public findDeliveredStart(IZ)Lcom/android/server/am/ServiceRecord$StartItem;
     .locals 4
-    .param p1    # I
-    .param p2    # Z
 
     iget-object v3, p0, Lcom/android/server/am/ServiceRecord;->deliveredStarts:Ljava/util/ArrayList;
 
@@ -1622,8 +1608,6 @@
 
 .method public makeRestarting(IJ)V
     .locals 5
-    .param p1    # I
-    .param p2    # J
 
     iget-object v0, p0, Lcom/android/server/am/ServiceRecord;->restartTracker:Lcom/android/internal/app/ProcessStats$ServiceState;
 
@@ -1744,8 +1728,6 @@
 
 .method public retrieveAppBindingLocked(Landroid/content/Intent;Lcom/android/server/am/ProcessRecord;)Lcom/android/server/am/AppBindRecord;
     .locals 5
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Lcom/android/server/am/ProcessRecord;
 
     new-instance v2, Landroid/content/Intent$FilterComparison;
 

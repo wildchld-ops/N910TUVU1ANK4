@@ -67,7 +67,6 @@
 
 .method public constructor <init>(Landroid/net/wifi/p2p/WifiP2pConfigList;)V
     .locals 1
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pConfigList;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -186,7 +185,6 @@
 
 .method public getConfigIndex(I)Landroid/net/wifi/p2p/WifiP2pConfig;
     .locals 5
-    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -282,7 +280,6 @@
 
 .method public remove(Landroid/net/wifi/p2p/WifiP2pConfig;)Z
     .locals 1
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pConfig;
 
     if-nez p1, :cond_0
 
@@ -347,7 +344,6 @@
 
 .method public update(Landroid/net/wifi/p2p/WifiP2pConfig;)V
     .locals 3
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pConfig;
 
     if-nez p1, :cond_0
 
@@ -414,8 +410,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 3
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v2, p0, Landroid/net/wifi/p2p/WifiP2pConfigList;->mDevices:Ljava/util/Collection;
 

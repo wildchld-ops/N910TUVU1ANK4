@@ -33,7 +33,6 @@
 # virtual methods
 .method public onAnimationEnd(Landroid/animation/Animator;)V
     .locals 3
-    .param p1    # Landroid/animation/Animator;
 
     check-cast p1, Landroid/animation/ObjectAnimator;
 
@@ -63,7 +62,6 @@
 
 .method public onAnimationStart(Landroid/animation/Animator;)V
     .locals 3
-    .param p1    # Landroid/animation/Animator;
 
     check-cast p1, Landroid/animation/ObjectAnimator;
 

@@ -38,10 +38,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/wm/WindowManagerService;Landroid/os/IBinder;IZ)V
     .locals 2
-    .param p1    # Lcom/android/server/wm/WindowManagerService;
-    .param p2    # Landroid/os/IBinder;
-    .param p3    # I
-    .param p4    # Z
 
     const/4 v1, 0x0
 
@@ -74,8 +70,6 @@
 # virtual methods
 .method dump(Ljava/io/PrintWriter;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/io/PrintWriter;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 

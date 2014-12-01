@@ -108,7 +108,7 @@
     move v3, v4
 
     :goto_0
-    invoke-virtual {v6, v3}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+    invoke-virtual {v6, v3}, Lcom/android/phone/Use2GOnlyCheckBoxPreference;->setChecked(Z)V
 
     const-string v3, "feature_multisim"
 
@@ -203,7 +203,7 @@
 
     iget-object v3, p0, Lcom/android/phone/Use2GOnlyCheckBoxPreference$MyHandler;->this$0:Lcom/android/phone/Use2GOnlyCheckBoxPreference;
 
-    invoke-virtual {v3, v5}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v3, v5}, Lcom/android/phone/Use2GOnlyCheckBoxPreference;->setEnabled(Z)V
 
     goto :goto_1
 .end method
@@ -224,7 +224,7 @@
 
     iget-object v1, p0, Lcom/android/phone/Use2GOnlyCheckBoxPreference$MyHandler;->this$0:Lcom/android/phone/Use2GOnlyCheckBoxPreference;
 
-    invoke-virtual {v1, v4}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v1, v4}, Lcom/android/phone/Use2GOnlyCheckBoxPreference;->setEnabled(Z)V
 
     const-string v1, "Use2GOnlyCheckBoxPreference"
 
@@ -274,7 +274,7 @@
 
     aget-object v1, v1, v2
 
-    invoke-virtual {p0, v4}, Landroid/os/Handler;->obtainMessage(I)Landroid/os/Message;
+    invoke-virtual {p0, v4}, Lcom/android/phone/Use2GOnlyCheckBoxPreference$MyHandler;->obtainMessage(I)Landroid/os/Message;
 
     move-result-object v2
 
@@ -291,7 +291,7 @@
 
     move-result-object v1
 
-    invoke-virtual {p0, v4}, Landroid/os/Handler;->obtainMessage(I)Landroid/os/Message;
+    invoke-virtual {p0, v4}, Lcom/android/phone/Use2GOnlyCheckBoxPreference$MyHandler;->obtainMessage(I)Landroid/os/Message;
 
     move-result-object v2
 

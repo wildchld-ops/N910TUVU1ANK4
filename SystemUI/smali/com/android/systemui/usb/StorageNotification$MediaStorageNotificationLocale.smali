@@ -27,9 +27,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/usb/StorageNotification;IILandroid/app/Notification;)V
     .locals 0
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/app/Notification;
 
     iput-object p1, p0, Lcom/android/systemui/usb/StorageNotification$MediaStorageNotificationLocale;->this$0:Lcom/android/systemui/usb/StorageNotification;
 
@@ -46,7 +43,6 @@
 
 .method static synthetic access$400(Lcom/android/systemui/usb/StorageNotification$MediaStorageNotificationLocale;)I
     .locals 1
-    .param p0    # Lcom/android/systemui/usb/StorageNotification$MediaStorageNotificationLocale;
 
     iget v0, p0, Lcom/android/systemui/usb/StorageNotification$MediaStorageNotificationLocale;->mMediaStorageTitleId:I
 
@@ -55,7 +51,6 @@
 
 .method static synthetic access$500(Lcom/android/systemui/usb/StorageNotification$MediaStorageNotificationLocale;)I
     .locals 1
-    .param p0    # Lcom/android/systemui/usb/StorageNotification$MediaStorageNotificationLocale;
 
     iget v0, p0, Lcom/android/systemui/usb/StorageNotification$MediaStorageNotificationLocale;->mMediaStorageMessageId:I
 
@@ -64,7 +59,6 @@
 
 .method static synthetic access$600(Lcom/android/systemui/usb/StorageNotification$MediaStorageNotificationLocale;)Landroid/app/Notification;
     .locals 1
-    .param p0    # Lcom/android/systemui/usb/StorageNotification$MediaStorageNotificationLocale;
 
     iget-object v0, p0, Lcom/android/systemui/usb/StorageNotification$MediaStorageNotificationLocale;->mMediaStorageNotificationLocale:Landroid/app/Notification;
 

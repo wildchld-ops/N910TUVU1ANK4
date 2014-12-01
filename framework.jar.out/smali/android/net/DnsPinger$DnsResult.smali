@@ -25,8 +25,6 @@
 # direct methods
 .method constructor <init>(Landroid/net/DnsPinger;Ljava/net/InetAddress;J)V
     .locals 0
-    .param p2    # Ljava/net/InetAddress;
-    .param p3    # J
 
     iput-object p1, p0, Landroid/net/DnsPinger$DnsResult;->this$0:Landroid/net/DnsPinger;
 

@@ -42,7 +42,6 @@
 # direct methods
 .method private constructor <init>(Landroid/app/Activity;)V
     .locals 1
-    .param p1    # Landroid/app/Activity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -71,7 +70,6 @@
 
 .method public static from(Landroid/app/Activity;)Landroid/support/v4/app/ShareCompat$IntentReader;
     .locals 1
-    .param p0    # Landroid/app/Activity;
 
     new-instance v0, Landroid/support/v4/app/ShareCompat$IntentReader;
 
@@ -336,7 +334,6 @@
 
 .method public getStream(I)Landroid/net/Uri;
     .locals 3
-    .param p1    # I
 
     iget-object v0, p0, Landroid/support/v4/app/ShareCompat$IntentReader;->mStreams:Ljava/util/ArrayList;
 

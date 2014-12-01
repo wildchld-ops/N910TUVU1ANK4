@@ -56,8 +56,6 @@
 # virtual methods
 .method public compare(Landroid/media/MediaRouter$RouteInfo;Landroid/media/MediaRouter$RouteInfo;)I
     .locals 2
-    .param p1    # Landroid/media/MediaRouter$RouteInfo;
-    .param p2    # Landroid/media/MediaRouter$RouteInfo;
 
     invoke-virtual {p1}, Landroid/media/MediaRouter$RouteInfo;->getName()Ljava/lang/CharSequence;
 
@@ -84,8 +82,6 @@
 
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p1, Landroid/media/MediaRouter$RouteInfo;
 

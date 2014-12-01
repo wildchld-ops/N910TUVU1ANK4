@@ -59,7 +59,6 @@
 
 .method static synthetic access$000(Landroid/accounts/ChooseAccountTypeActivity;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Landroid/accounts/ChooseAccountTypeActivity;
 
     iget-object v0, p0, Landroid/accounts/ChooseAccountTypeActivity;->mAuthenticatorInfosToDisplay:Ljava/util/ArrayList;
 
@@ -68,8 +67,6 @@
 
 .method static synthetic access$100(Landroid/accounts/ChooseAccountTypeActivity;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Landroid/accounts/ChooseAccountTypeActivity;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Landroid/accounts/ChooseAccountTypeActivity;->setResultAndFinish(Ljava/lang/String;)V
 
@@ -241,7 +238,6 @@
 
 .method private setResultAndFinish(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Landroid/os/Bundle;
 
@@ -305,7 +301,6 @@
 # virtual methods
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 14
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v13, 0x0
 

@@ -39,7 +39,6 @@
 
 .method synthetic constructor <init>(Lcom/android/systemui/media/NotificationPlayer$1;)V
     .locals 0
-    .param p1    # Lcom/android/systemui/media/NotificationPlayer$1;
 
     invoke-direct {p0}, Lcom/android/systemui/media/NotificationPlayer$Command;-><init>()V
 

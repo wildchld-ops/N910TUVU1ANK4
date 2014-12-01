@@ -42,9 +42,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/launcher2/SurfaceWidgetConnection$Name;Lcom/android/launcher2/SurfaceWidgetView;Lcom/samsung/surfacewidget/SurfaceWidgetProviderInfo;)V
     .locals 2
-    .param p1    # Lcom/android/launcher2/SurfaceWidgetConnection$Name;
-    .param p2    # Lcom/android/launcher2/SurfaceWidgetView;
-    .param p3    # Lcom/samsung/surfacewidget/SurfaceWidgetProviderInfo;
 
     const/4 v0, 0x0
 
@@ -81,7 +78,6 @@
 
 .method static synthetic access$000(Lcom/android/launcher2/SurfaceWidgetConnection$ServiceConn;)Lcom/android/launcher2/SurfaceWidgetConnection$SurfaceInfo;
     .locals 1
-    .param p0    # Lcom/android/launcher2/SurfaceWidgetConnection$ServiceConn;
 
     iget-object v0, p0, Lcom/android/launcher2/SurfaceWidgetConnection$ServiceConn;->mSurfaceInfo:Lcom/android/launcher2/SurfaceWidgetConnection$SurfaceInfo;
 
@@ -104,8 +100,6 @@
 
 .method public bind(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     iget-boolean v0, p0, Lcom/android/launcher2/SurfaceWidgetConnection$ServiceConn;->mIsBound:Z
 
@@ -188,7 +182,6 @@
 
 .method public onDestroy(Z)V
     .locals 3
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -245,8 +238,6 @@
 
 .method public onKeyboardCompleted(ILjava/lang/String;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -303,9 +294,6 @@
 
 .method public onLauncherTiltChanged(FFF)V
     .locals 3
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -418,9 +406,6 @@
 
 .method public onPositionOffsetChanged(FFF)V
     .locals 2
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -508,8 +493,6 @@
 
 .method public onServiceConnected(Landroid/content/ComponentName;Landroid/os/IBinder;)V
     .locals 13
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Landroid/os/IBinder;
 
     # getter for: Lcom/android/launcher2/SurfaceWidgetConnection;->DEBUG:Z
     invoke-static {}, Lcom/android/launcher2/SurfaceWidgetConnection;->access$100()Z
@@ -790,7 +773,6 @@
 
 .method public onServiceDisconnected(Landroid/content/ComponentName;)V
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
 
     # getter for: Lcom/android/launcher2/SurfaceWidgetConnection;->DEBUG:Z
     invoke-static {}, Lcom/android/launcher2/SurfaceWidgetConnection;->access$100()Z
@@ -861,12 +843,6 @@
 
 .method public onSurfaceSizeChanged(Landroid/view/Surface;IIZII)V
     .locals 8
-    .param p1    # Landroid/view/Surface;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Z
-    .param p5    # I
-    .param p6    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -913,7 +889,6 @@
 
 .method public onSurfaceWidgetError(Ljava/lang/Exception;)V
     .locals 1
-    .param p1    # Ljava/lang/Exception;
 
     iget-object v0, p0, Lcom/android/launcher2/SurfaceWidgetConnection$ServiceConn;->mWidgetViewComm:Lcom/android/launcher2/SurfaceWidgetConnection$ServiceConn$WidgetViewCommunicator;
 
@@ -924,7 +899,6 @@
 
 .method public onVerticalTouch(Landroid/view/MotionEvent;)V
     .locals 2
-    .param p1    # Landroid/view/MotionEvent;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -949,7 +923,6 @@
 
 .method public onVisibilityChanged(Z)V
     .locals 2
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -984,7 +957,6 @@
 
 .method public resumeLater(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/launcher2/SurfaceWidgetConnection$ServiceConn;->mbResumeLater:Z
 
@@ -993,7 +965,6 @@
 
 .method public setFocus(Z)V
     .locals 3
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1060,7 +1031,6 @@
 
 .method public setUpdateTime(I)V
     .locals 3
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1117,7 +1087,6 @@
 
 .method public unbind(Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     iget-boolean v1, p0, Lcom/android/launcher2/SurfaceWidgetConnection$ServiceConn;->mIsBound:Z
 

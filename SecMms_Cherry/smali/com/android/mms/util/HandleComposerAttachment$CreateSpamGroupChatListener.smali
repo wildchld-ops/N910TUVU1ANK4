@@ -30,9 +30,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/mms/util/HandleComposerAttachment;IILandroid/content/Intent;)V
     .locals 0
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/content/Intent;
 
     iput-object p1, p0, Lcom/android/mms/util/HandleComposerAttachment$CreateSpamGroupChatListener;->this$0:Lcom/android/mms/util/HandleComposerAttachment;
 
@@ -51,8 +48,6 @@
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 13
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     check-cast p1, Landroid/app/AlertDialog;
 

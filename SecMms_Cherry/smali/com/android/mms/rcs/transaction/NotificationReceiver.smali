@@ -86,7 +86,6 @@
 
 .method public static getInviteStatus(Ljava/lang/String;)Z
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     sget-object v2, Lcom/android/mms/rcs/transaction/NotificationReceiver;->mChatInvitationList:Ljava/util/HashMap;
 
@@ -110,8 +109,6 @@
 
 .method public static setInviteStatus(Ljava/lang/String;Z)V
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Z
 
     sget-object v0, Lcom/android/mms/rcs/transaction/NotificationReceiver;->mChatInvitationList:Ljava/util/HashMap;
 
@@ -208,8 +205,6 @@
 
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 56
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     move-object/from16 v0, p1
 
@@ -3102,8 +3097,6 @@
 
 .method public register(Landroid/content/Context;Ljava/lang/Integer;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/Integer;
 
     new-instance v0, Landroid/content/IntentFilter;
 
@@ -3145,7 +3138,6 @@
 
 .method public unregister(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     invoke-virtual {p1, p0}, Landroid/content/Context;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 

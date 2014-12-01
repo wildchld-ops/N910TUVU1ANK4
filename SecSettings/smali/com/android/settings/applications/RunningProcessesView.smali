@@ -78,8 +78,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v4, -0x1
 
@@ -208,7 +206,6 @@
 # virtual methods
 .method public doCreate(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
@@ -374,8 +371,6 @@
 
 .method public doResume(Landroid/app/Fragment;Ljava/lang/Runnable;)Z
     .locals 2
-    .param p1    # Landroid/app/Fragment;
-    .param p2    # Ljava/lang/Runnable;
 
     const/4 v0, 0x1
 
@@ -408,9 +403,6 @@
 
 .method public onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
     .locals 3
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -444,7 +436,6 @@
 
 .method public onMovedToScrapHeap(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Lcom/android/settings/applications/RunningProcessesView;->mActiveItems:Ljava/util/HashMap;
 
@@ -455,7 +446,6 @@
 
 .method public onRefreshUi(I)V
     .locals 1
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -495,7 +485,6 @@
 
 .method refreshUi(Z)V
     .locals 15
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 

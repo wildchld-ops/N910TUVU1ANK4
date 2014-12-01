@@ -197,7 +197,7 @@
 
     const/16 v0, 0x64
 
-    invoke-virtual {p0, v0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->dismissDialog(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/CdmaCallWaitingSetting;->dismissDialog(I)V
 
     :cond_1
     return-void
@@ -396,12 +396,12 @@
 
     if-ne v0, v1, :cond_4
 
-    invoke-virtual {p0, v2}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->dismissDialog(I)V
+    invoke-virtual {p0, v2}, Lcom/android/phone/CdmaCallWaitingSetting;->dismissDialog(I)V
 
     :goto_2
     const/16 v0, 0xc8
 
-    invoke-virtual {p0, v0}, Lcom/android/phone/TimeConsumingPreferenceActivity;->showDialog(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/CdmaCallWaitingSetting;->showDialog(I)V
 
     goto :goto_1
 
@@ -413,7 +413,7 @@
     :sswitch_1
     const/16 v0, 0x320
 
-    invoke-virtual {p0, v0}, Lcom/android/phone/TimeConsumingPreferenceActivity;->showDialog(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/CdmaCallWaitingSetting;->showDialog(I)V
 
     goto :goto_1
 
@@ -424,12 +424,12 @@
 
     if-ne v0, v1, :cond_5
 
-    invoke-virtual {p0, v2}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->dismissDialog(I)V
+    invoke-virtual {p0, v2}, Lcom/android/phone/CdmaCallWaitingSetting;->dismissDialog(I)V
 
     :goto_3
     const/16 v0, 0x12c
 
-    invoke-virtual {p0, v0}, Lcom/android/phone/TimeConsumingPreferenceActivity;->showDialog(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/CdmaCallWaitingSetting;->showDialog(I)V
 
     goto :goto_1
 
@@ -443,7 +443,7 @@
 
     iget-object v1, p0, Lcom/android/phone/CdmaCallWaitingSetting;->mAppState:Lcom/android/phone/CdmaCallWaitingSetting$AppState;
 
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    invoke-virtual {v1}, Lcom/android/phone/CdmaCallWaitingSetting$AppState;->ordinal()I
 
     move-result v1
 
@@ -509,7 +509,7 @@
 
     if-ne p1, v0, :cond_a
 
-    invoke-virtual {p0, v2}, Lcom/android/phone/TimeConsumingPreferenceActivity;->showDialog(I)V
+    invoke-virtual {p0, v2}, Lcom/android/phone/CdmaCallWaitingSetting;->showDialog(I)V
 
     goto :goto_4
 
@@ -518,7 +518,7 @@
 
     if-ne p1, v0, :cond_b
 
-    invoke-virtual {p0, v3}, Lcom/android/phone/TimeConsumingPreferenceActivity;->showDialog(I)V
+    invoke-virtual {p0, v3}, Lcom/android/phone/CdmaCallWaitingSetting;->showDialog(I)V
 
     goto :goto_4
 
@@ -562,7 +562,7 @@
     invoke-static {v0}, Lcom/android/phone/CdmaCallWaitingSetting;->log(Ljava/lang/String;)V
 
     :cond_d
-    invoke-virtual {p0, v3}, Lcom/android/phone/TimeConsumingPreferenceActivity;->showDialog(I)V
+    invoke-virtual {p0, v3}, Lcom/android/phone/CdmaCallWaitingSetting;->showDialog(I)V
 
     goto :goto_4
 
@@ -598,7 +598,7 @@
     invoke-static {v0}, Lcom/android/phone/CdmaCallWaitingSetting;->log(Ljava/lang/String;)V
 
     :cond_10
-    invoke-virtual {p0, v2}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->dismissDialog(I)V
+    invoke-virtual {p0, v2}, Lcom/android/phone/CdmaCallWaitingSetting;->dismissDialog(I)V
 
     goto/16 :goto_4
 
@@ -787,7 +787,7 @@
     goto :goto_0
 
     :cond_3
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/CdmaCallWaitingSetting;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -900,7 +900,7 @@
     return-void
 
     :pswitch_2
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/CdmaCallWaitingSetting;->finish()V
 
     goto :goto_0
 
@@ -926,7 +926,7 @@
 
     const/4 v4, 0x0
 
-    invoke-super {p0, p1}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/phone/TimeConsumingPreferenceActivity;->onCreate(Landroid/os/Bundle;)V
 
     const-string v2, "feature_chn_duos_gsm_cdma"
 
@@ -951,7 +951,7 @@
     :goto_0
     const v2, 0x7f060017
 
-    invoke-virtual {p0, v2}, Landroid/preference/PreferenceFragment;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v2}, Lcom/android/phone/CdmaCallWaitingSetting;->addPreferencesFromResource(I)V
 
     sget-boolean v2, Lcom/android/phone/CdmaCallWaitingSetting;->DBG:Z
 
@@ -962,13 +962,13 @@
     invoke-static {v2}, Lcom/android/phone/CdmaCallWaitingSetting;->log(Ljava/lang/String;)V
 
     :cond_0
-    invoke-virtual {p0}, Landroid/preference/PreferenceFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/phone/CdmaCallWaitingSetting;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v1
 
     const-string v2, "button_cdma_cw_key"
 
-    invoke-virtual {v1, v2}, Landroid/preference/PreferenceGroup;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {v1, v2}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v2
 
@@ -978,7 +978,7 @@
 
     const-string v2, "button_cdma_cw_dis_key"
 
-    invoke-virtual {v1, v2}, Landroid/preference/PreferenceGroup;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {v1, v2}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v2
 
@@ -1004,11 +1004,11 @@
 
     iget-object v2, p0, Lcom/android/phone/CdmaCallWaitingSetting;->mButtonCW:Lcom/android/phone/EditPhoneNumberPreference;
 
-    invoke-virtual {v2, v6}, Landroid/preference/DialogPreference;->setDialogTitle(I)V
+    invoke-virtual {v2, v6}, Lcom/android/phone/EditPhoneNumberPreference;->setDialogTitle(I)V
 
     iget-object v2, p0, Lcom/android/phone/CdmaCallWaitingSetting;->mButtonCW:Lcom/android/phone/EditPhoneNumberPreference;
 
-    invoke-virtual {v2, v7}, Landroid/preference/DialogPreference;->setDialogMessage(I)V
+    invoke-virtual {v2, v7}, Lcom/android/phone/EditPhoneNumberPreference;->setDialogMessage(I)V
 
     :cond_1
     iget-object v2, p0, Lcom/android/phone/CdmaCallWaitingSetting;->mButtonCW_Dis:Lcom/android/phone/EditPhoneNumberPreference;
@@ -1029,11 +1029,11 @@
 
     iget-object v2, p0, Lcom/android/phone/CdmaCallWaitingSetting;->mButtonCW_Dis:Lcom/android/phone/EditPhoneNumberPreference;
 
-    invoke-virtual {v2, v6}, Landroid/preference/DialogPreference;->setDialogTitle(I)V
+    invoke-virtual {v2, v6}, Lcom/android/phone/EditPhoneNumberPreference;->setDialogTitle(I)V
 
     iget-object v2, p0, Lcom/android/phone/CdmaCallWaitingSetting;->mButtonCW_Dis:Lcom/android/phone/EditPhoneNumberPreference;
 
-    invoke-virtual {v2, v7}, Landroid/preference/DialogPreference;->setDialogMessage(I)V
+    invoke-virtual {v2, v7}, Lcom/android/phone/EditPhoneNumberPreference;->setDialogMessage(I)V
 
     :cond_2
     new-instance v2, Landroid/content/Intent;
@@ -1108,7 +1108,7 @@
     iput-boolean v2, p0, Lcom/android/phone/CdmaCallWaitingSetting;->mSetState_check:Z
 
     :goto_1
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getActionBar()Landroid/app/ActionBar;
+    invoke-virtual {p0}, Lcom/android/phone/CdmaCallWaitingSetting;->getActionBar()Landroid/app/ActionBar;
 
     move-result-object v0
 
@@ -1136,7 +1136,7 @@
     :cond_5
     const/16 v2, 0xc8
 
-    invoke-virtual {p0, v2}, Lcom/android/phone/TimeConsumingPreferenceActivity;->showDialog(I)V
+    invoke-virtual {p0, v2}, Lcom/android/phone/CdmaCallWaitingSetting;->showDialog(I)V
 
     iget-object v2, p0, Lcom/android/phone/CdmaCallWaitingSetting;->mButtonCW:Lcom/android/phone/EditPhoneNumberPreference;
 
@@ -1144,7 +1144,7 @@
 
     iget-object v2, p0, Lcom/android/phone/CdmaCallWaitingSetting;->mButtonCW:Lcom/android/phone/EditPhoneNumberPreference;
 
-    invoke-virtual {v2, v4}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v2, v4}, Lcom/android/phone/EditPhoneNumberPreference;->setEnabled(Z)V
 
     :cond_6
     iget-object v2, p0, Lcom/android/phone/CdmaCallWaitingSetting;->mButtonCW_Dis:Lcom/android/phone/EditPhoneNumberPreference;
@@ -1153,7 +1153,7 @@
 
     iget-object v2, p0, Lcom/android/phone/CdmaCallWaitingSetting;->mButtonCW_Dis:Lcom/android/phone/EditPhoneNumberPreference;
 
-    invoke-virtual {v2, v4}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v2, v4}, Lcom/android/phone/EditPhoneNumberPreference;->setEnabled(Z)V
 
     :cond_7
     return-void
@@ -1250,7 +1250,7 @@
     :cond_1
     new-instance v1, Landroid/app/ProgressDialog;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/CdmaCallWaitingSetting;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
 
@@ -1258,18 +1258,18 @@
 
     const v4, 0x7f09007b
 
-    invoke-virtual {p0, v4}, Landroid/app/Fragment;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v4}, Lcom/android/phone/CdmaCallWaitingSetting;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v4
 
-    invoke-virtual {v1, v4}, Landroid/app/AlertDialog;->setTitle(Ljava/lang/CharSequence;)V
+    invoke-virtual {v1, v4}, Landroid/app/ProgressDialog;->setTitle(Ljava/lang/CharSequence;)V
 
     invoke-virtual {v1, v6}, Landroid/app/ProgressDialog;->setIndeterminate(Z)V
 
     sparse-switch p1, :sswitch_data_0
 
     :goto_0
-    invoke-virtual {v1}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
+    invoke-virtual {v1}, Landroid/app/ProgressDialog;->getWindow()Landroid/view/Window;
 
     move-result-object v4
 
@@ -1283,11 +1283,11 @@
     :sswitch_0
     iput-boolean v6, p0, Lcom/android/phone/CdmaCallWaitingSetting;->mIsBusyDialogAvailable:Z
 
-    invoke-virtual {v1, v8}, Landroid/app/Dialog;->setCancelable(Z)V
+    invoke-virtual {v1, v8}, Landroid/app/ProgressDialog;->setCancelable(Z)V
 
     const v4, 0x7f09007e
 
-    invoke-virtual {p0, v4}, Landroid/app/Fragment;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v4}, Lcom/android/phone/CdmaCallWaitingSetting;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v4
 
@@ -1296,7 +1296,7 @@
     goto :goto_0
 
     :sswitch_1
-    invoke-virtual {v1, v6}, Landroid/app/Dialog;->setCancelable(Z)V
+    invoke-virtual {v1, v6}, Landroid/app/ProgressDialog;->setCancelable(Z)V
 
     iget-object v4, p0, Lcom/android/phone/CdmaCallWaitingSetting;->mNetworkServiceHandler:Landroid/os/Handler;
 
@@ -1306,11 +1306,11 @@
 
     move-result-object v4
 
-    invoke-virtual {v1, v4}, Landroid/app/Dialog;->setCancelMessage(Landroid/os/Message;)V
+    invoke-virtual {v1, v4}, Landroid/app/ProgressDialog;->setCancelMessage(Landroid/os/Message;)V
 
     const v4, 0x7f09007d
 
-    invoke-virtual {p0, v4}, Landroid/app/Fragment;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v4}, Lcom/android/phone/CdmaCallWaitingSetting;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v4
 
@@ -1334,7 +1334,7 @@
     :cond_3
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/CdmaCallWaitingSetting;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
 
@@ -1349,13 +1349,13 @@
     invoke-virtual {v0, v7, p0}, Landroid/app/AlertDialog$Builder;->setNeutralButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     :goto_2
-    invoke-virtual {p0, v3}, Landroid/app/Fragment;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v3}, Lcom/android/phone/CdmaCallWaitingSetting;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v4
 
     invoke-virtual {v0, v4}, Landroid/app/AlertDialog$Builder;->setTitle(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0, v2}, Landroid/app/Fragment;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v2}, Lcom/android/phone/CdmaCallWaitingSetting;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v4
 
@@ -1367,7 +1367,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1, v6}, Landroid/app/Dialog;->setCancelable(Z)V
+    invoke-virtual {v1, v6}, Landroid/app/AlertDialog;->setCancelable(Z)V
 
     goto :goto_1
 
@@ -1556,7 +1556,7 @@
     invoke-virtual {v1, v6, v7}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
     :goto_1
-    invoke-virtual {p0, v1}, Landroid/app/Fragment;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v1}, Lcom/android/phone/CdmaCallWaitingSetting;->startActivity(Landroid/content/Intent;)V
 
     goto/16 :goto_0
 
@@ -1610,7 +1610,7 @@
 
     if-ne v0, v1, :cond_0
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/CdmaCallWaitingSetting;->finish()V
 
     const/4 v1, 0x1
 
@@ -1618,7 +1618,7 @@
     return v1
 
     :cond_0
-    invoke-super {p0, p1}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
+    invoke-super {p0, p1}, Lcom/android/phone/TimeConsumingPreferenceActivity;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
 
     move-result v1
 
@@ -1760,11 +1760,11 @@
 
     if-eq v0, v1, :cond_0
 
-    invoke-virtual {p0}, Landroid/preference/PreferenceFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/phone/CdmaCallWaitingSetting;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
-    invoke-virtual {v0, v1}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->setEnabled(Z)V
 
     :cond_0
     sget-boolean v0, Lcom/android/phone/CdmaCallWaitingSetting;->DBG:Z
@@ -1811,7 +1811,7 @@
     .locals 2
     .param p1    # Landroid/os/Bundle;
 
-    invoke-super {p0, p1}, Landroid/preference/PreferenceFragment;->onSaveInstanceState(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/phone/TimeConsumingPreferenceActivity;->onSaveInstanceState(Landroid/os/Bundle;)V
 
     sget-boolean v0, Lcom/android/phone/CdmaCallWaitingSetting;->DBG:Z
 
@@ -1927,7 +1927,7 @@
     return-void
 
     :cond_2
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/CdmaCallWaitingSetting;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
@@ -2052,7 +2052,7 @@
 
     if-ne p2, v0, :cond_2
 
-    invoke-super {p0, p1, p2}, Landroid/app/Fragment;->startActivityForResult(Landroid/content/Intent;I)V
+    invoke-super {p0, p1, p2}, Lcom/android/phone/TimeConsumingPreferenceActivity;->startActivityForResult(Landroid/content/Intent;I)V
 
     :cond_1
     :goto_0
@@ -2085,7 +2085,7 @@
     invoke-static {v0}, Lcom/android/phone/CdmaCallWaitingSetting;->log(Ljava/lang/String;)V
 
     :cond_4
-    invoke-super {p0, p1, p2}, Landroid/app/Fragment;->startActivityForResult(Landroid/content/Intent;I)V
+    invoke-super {p0, p1, p2}, Lcom/android/phone/TimeConsumingPreferenceActivity;->startActivityForResult(Landroid/content/Intent;I)V
 
     sget-object v0, Lcom/android/phone/CdmaCallWaitingSetting$AppState;->WAITING_NUMBER_SELECT:Lcom/android/phone/CdmaCallWaitingSetting$AppState;
 

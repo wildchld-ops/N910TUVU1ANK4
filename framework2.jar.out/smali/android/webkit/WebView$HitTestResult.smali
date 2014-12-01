@@ -81,7 +81,6 @@
 
 .method public setExtra(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/webkit/WebView$HitTestResult;->mExtra:Ljava/lang/String;
 
@@ -90,7 +89,6 @@
 
 .method public setType(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/webkit/WebView$HitTestResult;->mType:I
 

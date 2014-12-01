@@ -53,11 +53,11 @@
 
     const v1, 0x7f060030
 
-    invoke-virtual {p0, v1}, Landroid/preference/PreferenceFragment;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v1}, Lcom/android/phone/KTHDVoiceSetting;->addPreferencesFromResource(I)V
 
     const-string v1, "kt_hd_voice"
 
-    invoke-virtual {p0, v1}, Landroid/preference/PreferenceFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v1}, Lcom/android/phone/KTHDVoiceSetting;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v1
 
@@ -67,7 +67,7 @@
 
     const-string v1, "kt_hd_voice_lte_pref"
 
-    invoke-virtual {p0, v1}, Landroid/preference/PreferenceFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v1}, Lcom/android/phone/KTHDVoiceSetting;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v1
 
@@ -75,7 +75,7 @@
 
     iput-object v1, p0, Lcom/android/phone/KTHDVoiceSetting;->mLTENetworkChecked:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getActionBar()Landroid/app/ActionBar;
+    invoke-virtual {p0}, Lcom/android/phone/KTHDVoiceSetting;->getActionBar()Landroid/app/ActionBar;
 
     move-result-object v0
 
@@ -121,7 +121,7 @@
 
     iget-object v5, p0, Lcom/android/phone/KTHDVoiceSetting;->mHDVoiceChecked:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v5}, Landroid/preference/TwoStatePreference;->isChecked()Z
+    invoke-virtual {v5}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
     move-result v4
 
@@ -168,13 +168,13 @@
 
     iget-object v5, p0, Lcom/android/phone/KTHDVoiceSetting;->mLTENetworkChecked:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v5, v4}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v5, v4}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     :cond_1
     :goto_0
     invoke-static {v4}, Lcom/android/phone/PhoneUtilsExt;->setHDVoiceNetworkPref(Z)V
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/KTHDVoiceSetting;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v5
 
@@ -188,7 +188,7 @@
 
     if-nez v2, :cond_6
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/KTHDVoiceSetting;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v5
 
@@ -211,7 +211,7 @@
 
     if-eqz v5, :cond_2
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/KTHDVoiceSetting;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v8
 
@@ -224,7 +224,7 @@
     :goto_2
     invoke-static {v8, v9, v5}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/KTHDVoiceSetting;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v8
 
@@ -248,11 +248,11 @@
     move v5, v7
 
     :goto_4
-    invoke-virtual {v8, v5}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+    invoke-virtual {v8, v5}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     iget-object v5, p0, Lcom/android/phone/KTHDVoiceSetting;->mLTENetworkChecked:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v5, v6}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v5, v6}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     :cond_2
     const-string v5, "interworking_hd_voice_by_intent"
@@ -289,7 +289,7 @@
 
     move-result-object v5
 
-    invoke-virtual {v5, v0}, Landroid/content/ContextWrapper;->sendBroadcast(Landroid/content/Intent;)V
+    invoke-virtual {v5, v0}, Lcom/android/phone/PhoneGlobals;->sendBroadcast(Landroid/content/Intent;)V
 
     new-instance v5, Ljava/lang/StringBuilder;
 
@@ -323,12 +323,12 @@
     :cond_5
     iget-object v5, p0, Lcom/android/phone/KTHDVoiceSetting;->mLTENetworkChecked:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v5, v6}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v5, v6}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     goto/16 :goto_0
 
     :cond_6
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/KTHDVoiceSetting;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v8
 
@@ -378,7 +378,7 @@
 
     if-ne p2, v5, :cond_13
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/KTHDVoiceSetting;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v9
 
@@ -386,7 +386,7 @@
 
     iget-object v5, p0, Lcom/android/phone/KTHDVoiceSetting;->mLTENetworkChecked:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v5}, Landroid/preference/TwoStatePreference;->isChecked()Z
+    invoke-virtual {v5}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
     move-result v5
 
@@ -397,7 +397,7 @@
     :goto_9
     invoke-static {v9, v10, v5}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/KTHDVoiceSetting;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v9
 
@@ -405,7 +405,7 @@
 
     iget-object v5, p0, Lcom/android/phone/KTHDVoiceSetting;->mLTENetworkChecked:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v5}, Landroid/preference/TwoStatePreference;->isChecked()Z
+    invoke-virtual {v5}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
     move-result v5
 
@@ -426,7 +426,7 @@
 
     iget-object v5, p0, Lcom/android/phone/KTHDVoiceSetting;->mLTENetworkChecked:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v5}, Landroid/preference/TwoStatePreference;->isChecked()Z
+    invoke-virtual {v5}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
     move-result v5
 
@@ -454,7 +454,7 @@
 
     move-result-object v5
 
-    invoke-virtual {v5, v0}, Landroid/content/ContextWrapper;->sendBroadcast(Landroid/content/Intent;)V
+    invoke-virtual {v5, v0}, Lcom/android/phone/PhoneGlobals;->sendBroadcast(Landroid/content/Intent;)V
 
     new-instance v5, Ljava/lang/StringBuilder;
 
@@ -504,7 +504,7 @@
     goto :goto_c
 
     :cond_13
-    invoke-super {p0, p1, p2}, Landroid/preference/PreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
+    invoke-super {p0, p1, p2}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
 
     move-result v7
 
@@ -524,7 +524,7 @@
 
     iput-boolean v7, p0, Lcom/android/phone/KTHDVoiceSetting;->fromSettingSearch:Z
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/KTHDVoiceSetting;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v6
 
@@ -534,7 +534,7 @@
 
     move-result v1
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/KTHDVoiceSetting;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v6
 
@@ -611,7 +611,7 @@
 
     sget-boolean v9, Lcom/android/phone/KTHDVoiceSetting;->mCheckValue:Z
 
-    invoke-virtual {v6, v9}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+    invoke-virtual {v6, v9}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     iput-boolean v8, p0, Lcom/android/phone/KTHDVoiceSetting;->fromSettingSearch:Z
 
@@ -647,7 +647,7 @@
 
     sget-boolean v9, Lcom/android/phone/KTHDVoiceSetting;->mCheckValue:Z
 
-    invoke-virtual {v6, v9}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+    invoke-virtual {v6, v9}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     iput-boolean v8, p0, Lcom/android/phone/KTHDVoiceSetting;->fromSettingSearch:Z
 
@@ -721,7 +721,7 @@
 
     if-eqz v6, :cond_b
 
-    invoke-virtual {p0}, Landroid/preference/PreferenceFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/phone/KTHDVoiceSetting;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v6
 
@@ -770,11 +770,11 @@
 
     iget-object v6, p0, Lcom/android/phone/KTHDVoiceSetting;->mHDVoiceChecked:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v6, v7}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v6, v7}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     iget-object v6, p0, Lcom/android/phone/KTHDVoiceSetting;->mLTENetworkChecked:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v6, v7}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v6, v7}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     :cond_5
     :goto_3
@@ -788,7 +788,7 @@
     move v6, v7
 
     :goto_4
-    invoke-virtual {v9, v6}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+    invoke-virtual {v9, v6}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     goto/16 :goto_0
 
@@ -805,7 +805,7 @@
     move v6, v8
 
     :goto_5
-    invoke-virtual {v9, v6}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+    invoke-virtual {v9, v6}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     if-eqz v4, :cond_a
 
@@ -816,7 +816,7 @@
     :goto_6
     iget-object v6, p0, Lcom/android/phone/KTHDVoiceSetting;->mLTENetworkChecked:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v6, v3}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v6, v3}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     goto/16 :goto_1
 
@@ -841,7 +841,7 @@
 
     if-eqz v6, :cond_3
 
-    invoke-virtual {p0}, Landroid/preference/PreferenceFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/phone/KTHDVoiceSetting;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v6
 
@@ -860,7 +860,7 @@
 
     iget-object v6, p0, Lcom/android/phone/KTHDVoiceSetting;->mHDVoiceChecked:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v6, v7}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v6, v7}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     :cond_d
     invoke-static {}, Lcom/android/phone/PhoneUtilsExt;->isKTSIM()Z
@@ -871,7 +871,7 @@
 
     iget-object v6, p0, Lcom/android/phone/KTHDVoiceSetting;->mLTENetworkChecked:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v6, v7}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v6, v7}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     goto :goto_3
 .end method

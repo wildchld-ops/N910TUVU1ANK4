@@ -81,7 +81,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v2}, Landroid/widget/TextView;->length()I
+    invoke-virtual {v2}, Landroid/widget/EditText;->length()I
 
     move-result v2
 
@@ -102,7 +102,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v2}, Landroid/widget/TextView;->length()I
+    invoke-virtual {v2}, Landroid/widget/EditText;->length()I
 
     move-result v2
 
@@ -123,7 +123,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Landroid/widget/TextView;->length()I
+    invoke-virtual {v0}, Landroid/widget/EditText;->length()I
 
     move-result v0
 
@@ -136,7 +136,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Landroid/widget/TextView;->length()I
+    invoke-virtual {v0}, Landroid/widget/EditText;->length()I
 
     move-result v0
 
@@ -169,7 +169,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0, v3}, Landroid/view/View;->setEnabled(Z)V
+    invoke-virtual {v0, v3}, Landroid/widget/LinearLayout;->setEnabled(Z)V
 
     :goto_0
     return-void
@@ -182,7 +182,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0, v3}, Landroid/view/View;->setEnabled(Z)V
+    invoke-virtual {v0, v3}, Landroid/widget/LinearLayout;->setEnabled(Z)V
 
     iget-object v0, p0, Lcom/android/phone/DsaPhoneNumber$3;->this$0:Lcom/android/phone/DsaPhoneNumber;
 
@@ -198,7 +198,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Landroid/view/View;->isEnabled()Z
+    invoke-virtual {v1}, Landroid/widget/LinearLayout;->isEnabled()Z
 
     move-result v1
 
@@ -233,7 +233,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0, v4}, Landroid/view/View;->setEnabled(Z)V
+    invoke-virtual {v0, v4}, Landroid/widget/LinearLayout;->setEnabled(Z)V
 
     goto :goto_0
 
@@ -245,7 +245,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0, v4}, Landroid/view/View;->setEnabled(Z)V
+    invoke-virtual {v0, v4}, Landroid/widget/LinearLayout;->setEnabled(Z)V
 
     iget-object v0, p0, Lcom/android/phone/DsaPhoneNumber$3;->this$0:Lcom/android/phone/DsaPhoneNumber;
 
@@ -261,7 +261,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Landroid/view/View;->isEnabled()Z
+    invoke-virtual {v1}, Landroid/widget/LinearLayout;->isEnabled()Z
 
     move-result v1
 

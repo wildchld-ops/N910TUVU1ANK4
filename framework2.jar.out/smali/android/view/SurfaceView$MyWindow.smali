@@ -34,7 +34,6 @@
 # direct methods
 .method public constructor <init>(Landroid/view/SurfaceView;)V
     .locals 1
-    .param p1    # Landroid/view/SurfaceView;
 
     const/4 v0, -0x1
 
@@ -57,7 +56,6 @@
 # virtual methods
 .method public dispatchAppVisibility(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
@@ -93,21 +91,12 @@
 
 .method public executeCommand(Ljava/lang/String;Ljava/lang/String;Landroid/os/ParcelFileDescriptor;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/os/ParcelFileDescriptor;
 
     return-void
 .end method
 
 .method public resized(Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Rect;ZLandroid/content/res/Configuration;)V
     .locals 3
-    .param p1    # Landroid/graphics/Rect;
-    .param p2    # Landroid/graphics/Rect;
-    .param p3    # Landroid/graphics/Rect;
-    .param p4    # Landroid/graphics/Rect;
-    .param p5    # Z
-    .param p6    # Landroid/content/res/Configuration;
 
     iget-object v1, p0, Landroid/view/SurfaceView$MyWindow;->mSurfaceView:Ljava/lang/ref/WeakReference;
 
@@ -204,8 +193,6 @@
 
 .method public windowFocusChanged(ZZ)V
     .locals 3
-    .param p1    # Z
-    .param p2    # Z
 
     const-string v0, "SurfaceView"
 

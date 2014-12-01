@@ -71,7 +71,6 @@
 # virtual methods
 .method public final getServiceCode(I)Ljava/lang/String;
     .locals 6
-    .param p1    # I
 
     const-string v1, ""
 
@@ -128,7 +127,6 @@
 
 .method public final getServiceOrdinal(Ljava/lang/String;)I
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x0
 

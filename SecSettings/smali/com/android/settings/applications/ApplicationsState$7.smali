@@ -36,7 +36,6 @@
 # virtual methods
 .method public filterApp(Landroid/content/pm/ApplicationInfo;)Z
     .locals 3
-    .param p1    # Landroid/content/pm/ApplicationInfo;
 
     iget v0, p1, Landroid/content/pm/ApplicationInfo;->flags:I
 

@@ -32,7 +32,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Landroid/view/ActionProvider;-><init>(Landroid/content/Context;)V
 
@@ -63,7 +62,6 @@
 
 .method static synthetic access$000(Landroid/app/MediaRouteActionProvider;)V
     .locals 0
-    .param p0    # Landroid/app/MediaRouteActionProvider;
 
     invoke-direct {p0}, Landroid/app/MediaRouteActionProvider;->refreshRoute()V
 
@@ -110,7 +108,6 @@
 
 .method public onCreateActionView(Landroid/view/MenuItem;)Landroid/view/View;
     .locals 4
-    .param p1    # Landroid/view/MenuItem;
 
     iget-object v0, p0, Landroid/app/MediaRouteActionProvider;->mButton:Landroid/app/MediaRouteButton;
 
@@ -198,7 +195,6 @@
 
 .method public setExtendedSettingsClickListener(Landroid/view/View$OnClickListener;)V
     .locals 1
-    .param p1    # Landroid/view/View$OnClickListener;
 
     iput-object p1, p0, Landroid/app/MediaRouteActionProvider;->mExtendedSettingsListener:Landroid/view/View$OnClickListener;
 
@@ -216,7 +212,6 @@
 
 .method public setRouteTypes(I)V
     .locals 3
-    .param p1    # I
 
     iget v0, p0, Landroid/app/MediaRouteActionProvider;->mRouteTypes:I
 

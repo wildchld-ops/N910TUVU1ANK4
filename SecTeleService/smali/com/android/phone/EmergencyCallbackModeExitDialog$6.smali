@@ -68,7 +68,7 @@
 
     iget-object v0, v0, Lcom/android/phone/EmergencyCallbackModeExitDialog;->mAlertDialog:Landroid/app/AlertDialog;
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->dismiss()V
+    invoke-virtual {v0}, Landroid/app/AlertDialog;->dismiss()V
 
     :cond_0
     iget-object v0, p0, Lcom/android/phone/EmergencyCallbackModeExitDialog$6;->this$0:Lcom/android/phone/EmergencyCallbackModeExitDialog;
@@ -81,7 +81,7 @@
 
     iget-object v0, v0, Lcom/android/phone/EmergencyCallbackModeExitDialog;->mProgressDialog:Landroid/app/ProgressDialog;
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->dismiss()V
+    invoke-virtual {v0}, Landroid/app/ProgressDialog;->dismiss()V
 
     :cond_1
     iget-object v0, p0, Lcom/android/phone/EmergencyCallbackModeExitDialog$6;->this$0:Lcom/android/phone/EmergencyCallbackModeExitDialog;
@@ -100,11 +100,11 @@
 
     move-result-object v2
 
-    invoke-virtual {v0, v1, v2}, Landroid/app/Activity;->setResult(ILandroid/content/Intent;)V
+    invoke-virtual {v0, v1, v2}, Lcom/android/phone/EmergencyCallbackModeExitDialog;->setResult(ILandroid/content/Intent;)V
 
     iget-object v0, p0, Lcom/android/phone/EmergencyCallbackModeExitDialog$6;->this$0:Lcom/android/phone/EmergencyCallbackModeExitDialog;
 
-    invoke-virtual {v0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {v0}, Lcom/android/phone/EmergencyCallbackModeExitDialog;->finish()V
 
     :cond_2
     return-void

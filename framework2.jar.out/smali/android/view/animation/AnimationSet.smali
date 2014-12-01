@@ -49,8 +49,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v2, 0x1
 
@@ -178,7 +176,6 @@
 
 .method public constructor <init>(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-direct {p0}, Landroid/view/animation/Animation;-><init>()V
 
@@ -219,8 +216,6 @@
 
 .method private setFlag(IZ)V
     .locals 2
-    .param p1    # I
-    .param p2    # Z
 
     if-eqz p2, :cond_0
 
@@ -249,7 +244,6 @@
 # virtual methods
 .method public addAnimation(Landroid/view/animation/Animation;)V
     .locals 9
-    .param p1    # Landroid/view/animation/Animation;
 
     const/4 v0, 0x0
 
@@ -646,8 +640,6 @@
 
 .method public getTransformation(JLandroid/view/animation/Transformation;)Z
     .locals 11
-    .param p1    # J
-    .param p3    # Landroid/view/animation/Transformation;
 
     const/4 v8, 0x0
 
@@ -837,10 +829,6 @@
 
 .method public initialize(IIII)V
     .locals 27
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-super/range {p0 .. p4}, Landroid/view/animation/Animation;->initialize(IIII)V
 
@@ -1148,10 +1136,6 @@
 
 .method public initializeInvalidateRegion(IIII)V
     .locals 13
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iget-object v7, p0, Landroid/view/animation/Animation;->mPreviousRegion:Landroid/graphics/RectF;
 
@@ -1305,7 +1289,6 @@
 
 .method public restrictDuration(J)V
     .locals 4
-    .param p1    # J
 
     invoke-super {p0, p1, p2}, Landroid/view/animation/Animation;->restrictDuration(J)V
 
@@ -1338,7 +1321,6 @@
 
 .method public scaleCurrentDuration(F)V
     .locals 4
-    .param p1    # F
 
     iget-object v0, p0, Landroid/view/animation/AnimationSet;->mAnimations:Ljava/util/ArrayList;
 
@@ -1369,7 +1351,6 @@
 
 .method public setDuration(J)V
     .locals 4
-    .param p1    # J
 
     iget v0, p0, Landroid/view/animation/AnimationSet;->mFlags:I
 
@@ -1392,7 +1373,6 @@
 
 .method public setFillAfter(Z)V
     .locals 1
-    .param p1    # Z
 
     iget v0, p0, Landroid/view/animation/AnimationSet;->mFlags:I
 
@@ -1407,7 +1387,6 @@
 
 .method public setFillBefore(Z)V
     .locals 1
-    .param p1    # Z
 
     iget v0, p0, Landroid/view/animation/AnimationSet;->mFlags:I
 
@@ -1422,7 +1401,6 @@
 
 .method public setRepeatMode(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/view/animation/AnimationSet;->mFlags:I
 
@@ -1437,7 +1415,6 @@
 
 .method public setStartOffset(J)V
     .locals 1
-    .param p1    # J
 
     iget v0, p0, Landroid/view/animation/AnimationSet;->mFlags:I
 
@@ -1452,7 +1429,6 @@
 
 .method public setStartTime(J)V
     .locals 5
-    .param p1    # J
 
     invoke-super {p0, p1, p2}, Landroid/view/animation/Animation;->setStartTime(J)V
 

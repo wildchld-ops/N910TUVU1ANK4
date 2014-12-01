@@ -151,7 +151,6 @@
 
 .method public getLength(I)I
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -201,7 +200,6 @@
 
 .method public getStartOffset(I)I
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x0
 

@@ -21,8 +21,6 @@
 # direct methods
 .method public constructor <init>(Landroid/service/wallpaper/WallpaperService$Engine;Landroid/view/InputChannel;Landroid/os/Looper;)V
     .locals 0
-    .param p2    # Landroid/view/InputChannel;
-    .param p3    # Landroid/os/Looper;
 
     iput-object p1, p0, Landroid/service/wallpaper/WallpaperService$Engine$WallpaperInputEventReceiver;->this$1:Landroid/service/wallpaper/WallpaperService$Engine;
 
@@ -35,7 +33,6 @@
 # virtual methods
 .method public onInputEvent(Landroid/view/InputEvent;)V
     .locals 4
-    .param p1    # Landroid/view/InputEvent;
 
     const/4 v2, 0x0
 

@@ -386,7 +386,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/SecuritySettings;)Landroid/preference/Preference;
     .locals 1
-    .param p0    # Lcom/android/settings/SecuritySettings;
 
     iget-object v0, p0, Lcom/android/settings/SecuritySettings;->RemoteControls:Landroid/preference/Preference;
 
@@ -395,7 +394,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/SecuritySettings;)Landroid/preference/CheckBoxPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/SecuritySettings;
 
     iget-object v0, p0, Lcom/android/settings/SecuritySettings;->mLockMyMobile:Landroid/preference/CheckBoxPreference;
 
@@ -404,8 +402,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/SecuritySettings;Z)V
     .locals 0
-    .param p0    # Lcom/android/settings/SecuritySettings;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/settings/SecuritySettings;->setNonMarketAppsAllowed(Z)V
 
@@ -414,7 +410,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/SecuritySettings;)Landroid/preference/CheckBoxPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/SecuritySettings;
 
     iget-object v0, p0, Lcom/android/settings/SecuritySettings;->mToggleAppInstallation:Landroid/preference/CheckBoxPreference;
 
@@ -423,7 +418,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/SecuritySettings;)V
     .locals 0
-    .param p0    # Lcom/android/settings/SecuritySettings;
 
     invoke-direct {p0}, Lcom/android/settings/SecuritySettings;->updateSIMLockEnable()V
 
@@ -3565,7 +3559,6 @@
 
 .method private isToggled(Landroid/preference/Preference;)Z
     .locals 1
-    .param p1    # Landroid/preference/Preference;
 
     check-cast p1, Landroid/preference/CheckBoxPreference;
 
@@ -3671,8 +3664,6 @@
 
 .method private removePreferenceByKey(Landroid/preference/PreferenceScreen;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
@@ -5309,8 +5300,6 @@
 
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 2
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     const/4 v1, 0x1
 
@@ -5338,7 +5327,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v3, 0x1
 

@@ -46,8 +46,6 @@
 # virtual methods
 .method public compare(Lcom/android/server/am/ProcessMemInfo;Lcom/android/server/am/ProcessMemInfo;)I
     .locals 6
-    .param p1    # Lcom/android/server/am/ProcessMemInfo;
-    .param p2    # Lcom/android/server/am/ProcessMemInfo;
 
     const/4 v1, 0x1
 
@@ -108,8 +106,6 @@
 
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p1, Lcom/android/server/am/ProcessMemInfo;
 

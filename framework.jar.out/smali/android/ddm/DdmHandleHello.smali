@@ -80,7 +80,6 @@
 
 .method private handleFEAT(Lorg/apache/harmony/dalvik/ddmc/Chunk;)Lorg/apache/harmony/dalvik/ddmc/Chunk;
     .locals 6
-    .param p1    # Lorg/apache/harmony/dalvik/ddmc/Chunk;
 
     invoke-static {}, Landroid/os/Debug;->getVmFeatureList()[Ljava/lang/String;
 
@@ -229,7 +228,6 @@
 
 .method private handleHELO(Lorg/apache/harmony/dalvik/ddmc/Chunk;)Lorg/apache/harmony/dalvik/ddmc/Chunk;
     .locals 10
-    .param p1    # Lorg/apache/harmony/dalvik/ddmc/Chunk;
 
     invoke-static {p1}, Landroid/ddm/DdmHandleHello;->wrapChunk(Lorg/apache/harmony/dalvik/ddmc/Chunk;)Ljava/nio/ByteBuffer;
 
@@ -377,7 +375,6 @@
 
 .method public static sendWAIT(I)V
     .locals 5
-    .param p0    # I
 
     const/4 v4, 0x1
 
@@ -416,7 +413,6 @@
 
 .method public handleChunk(Lorg/apache/harmony/dalvik/ddmc/Chunk;)Lorg/apache/harmony/dalvik/ddmc/Chunk;
     .locals 4
-    .param p1    # Lorg/apache/harmony/dalvik/ddmc/Chunk;
 
     iget v0, p1, Lorg/apache/harmony/dalvik/ddmc/Chunk;->type:I
 

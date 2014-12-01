@@ -25,7 +25,6 @@
 # direct methods
 .method public constructor <init>(Landroid/renderscript/RenderScript;)V
     .locals 0
-    .param p1    # Landroid/renderscript/RenderScript;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -252,7 +251,6 @@
 
 .method static getConstantInputType(Landroid/renderscript/RenderScript;)Landroid/renderscript/Type;
     .locals 4
-    .param p0    # Landroid/renderscript/RenderScript;
 
     new-instance v0, Landroid/renderscript/Element$Builder;
 
@@ -395,7 +393,6 @@
 
 .method public setTextureMatrixEnable(Z)Landroid/renderscript/ProgramVertexFixedFunction$Builder;
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/renderscript/ProgramVertexFixedFunction$Builder;->mTextureMatrixEnable:Z
 

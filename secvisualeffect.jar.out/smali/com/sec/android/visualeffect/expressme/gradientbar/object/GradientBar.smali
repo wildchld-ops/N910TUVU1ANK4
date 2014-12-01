@@ -47,11 +47,6 @@
 # direct methods
 .method public constructor <init>(IIIILcom/sec/android/visualeffect/expressme/gradientbar/object/GradientBar$BarType;)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Lcom/sec/android/visualeffect/expressme/gradientbar/object/GradientBar$BarType;
 
     const v4, 0x3f4ccccd
 
@@ -144,11 +139,6 @@
 # virtual methods
 .method public draw(Landroid/graphics/Canvas;D[IFZ)V
     .locals 14
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # D
-    .param p4    # [I
-    .param p5    # F
-    .param p6    # Z
 
     invoke-static/range {p2 .. p3}, Ljava/lang/Math;->sin(D)D
 
@@ -560,7 +550,6 @@
 
 .method public setDivY(F)V
     .locals 1
-    .param p1    # F
 
     const/4 v0, 0x0
 
@@ -573,8 +562,6 @@
 
 .method public setDivY(FF)V
     .locals 0
-    .param p1    # F
-    .param p2    # F
 
     iput p1, p0, Lcom/sec/android/visualeffect/expressme/gradientbar/object/GradientBar;->division1Y:F
 

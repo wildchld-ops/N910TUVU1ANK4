@@ -61,7 +61,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->dismiss()V
+    invoke-virtual {v0}, Landroid/app/AlertDialog;->dismiss()V
 
     :cond_0
     return-void

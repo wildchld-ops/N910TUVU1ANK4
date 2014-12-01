@@ -27,7 +27,6 @@
 
 .method synthetic constructor <init>(Landroid/graphics/ImageFilter$1;)V
     .locals 0
-    .param p1    # Landroid/graphics/ImageFilter$1;
 
     invoke-direct {p0}, Landroid/graphics/ImageFilter$ColorClampFilter;-><init>()V
 
@@ -38,10 +37,6 @@
 # virtual methods
 .method public setMaxColor(FFFF)V
     .locals 4
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
 
     const/high16 v3, 0x3f800000
 
@@ -100,10 +95,6 @@
 
 .method public setMinColor(FFFF)V
     .locals 4
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
 
     const/high16 v3, 0x3f800000
 

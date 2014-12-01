@@ -22,8 +22,6 @@
 # direct methods
 .method public constructor <init>(Landroid/net/IConnectivityManager;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Landroid/net/IConnectivityManager;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Landroid/net/ConnectivityManager;-><init>(Landroid/net/IConnectivityManager;Ljava/lang/String;)V
 
@@ -61,8 +59,6 @@
 
 .method public onSwitchDataNetworkCallback(IZ)V
     .locals 2
-    .param p1    # I
-    .param p2    # Z
 
     :try_start_0
     iget-object v1, p0, Landroid/net/MultiSimConnectivityManager;->mService:Landroid/net/IConnectivityManager;
@@ -84,7 +80,6 @@
 
 .method public onSwitchToSim1DataNetworkCallback(Z)V
     .locals 1
-    .param p1    # Z
 
     const/4 v0, 0x0
 
@@ -95,7 +90,6 @@
 
 .method public onSwitchToSim2DataNetworkCallback(Z)V
     .locals 1
-    .param p1    # Z
 
     const/4 v0, 0x1
 
@@ -106,7 +100,6 @@
 
 .method public setMobileDataEnabled(Z)V
     .locals 2
-    .param p1    # Z
 
     :try_start_0
     iget-object v1, p0, Landroid/net/MultiSimConnectivityManager;->mService:Landroid/net/IConnectivityManager;
@@ -128,7 +121,6 @@
 
 .method public switchDataNetwork(I)V
     .locals 1
-    .param p1    # I
 
     :try_start_0
     iget-object v0, p0, Landroid/net/MultiSimConnectivityManager;->mService:Landroid/net/IConnectivityManager;
@@ -148,7 +140,6 @@
 
 .method public switchDataNetworkForMMS(I)V
     .locals 1
-    .param p1    # I
 
     :try_start_0
     iget-object v0, p0, Landroid/net/MultiSimConnectivityManager;->mService:Landroid/net/IConnectivityManager;

@@ -41,7 +41,7 @@
 
     sget-object v13, Lcom/android/phone/CallNotifier$13;->$SwitchMap$com$android$phone$CallMessageConstants$RequestType:[I
 
-    invoke-virtual/range {p1 .. p1}, Ljava/lang/Enum;->ordinal()I
+    invoke-virtual/range {p1 .. p1}, Lcom/android/phone/CallMessageConstants$RequestType;->ordinal()I
 
     move-result v14
 
@@ -321,7 +321,7 @@
 
     move-result-object v13
 
-    invoke-virtual {v13}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v13}, Lcom/android/phone/PhoneGlobals;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v13
 
@@ -437,7 +437,7 @@
 
     move-result-object v13
 
-    invoke-virtual {v13}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v13}, Lcom/android/phone/PhoneGlobals;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v13
 
@@ -669,7 +669,7 @@
 
     move-result-object v13
 
-    invoke-virtual {v13}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v13}, Lcom/android/phone/PhoneGlobals;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v13
 
@@ -703,7 +703,7 @@
 
     move-result-object v13
 
-    invoke-virtual {v13}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v13}, Lcom/android/phone/PhoneGlobals;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v13
 
@@ -729,7 +729,7 @@
 
     move-result-object v13
 
-    invoke-virtual {v13}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v13}, Lcom/android/phone/PhoneGlobals;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v13
 

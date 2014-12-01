@@ -41,12 +41,6 @@
 # virtual methods
 .method public set(I[I[I[B[BI)V
     .locals 0
-    .param p1    # I
-    .param p2    # [I
-    .param p3    # [I
-    .param p4    # [B
-    .param p5    # [B
-    .param p6    # I
 
     iput p1, p0, Landroid/media/MediaCodec$CryptoInfo;->numSubSamples:I
 

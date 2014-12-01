@@ -18,8 +18,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Lcom/android/settings/common/ActionModeCallback$OnAcionModeListner;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/settings/common/ActionModeCallback$OnAcionModeListner;
 
     invoke-direct {p0, p1, p2}, Lcom/android/settings/common/ActionModeCallback;-><init>(Landroid/content/Context;Lcom/android/settings/common/ActionModeCallback$OnAcionModeListner;)V
 
@@ -30,8 +28,6 @@
 # virtual methods
 .method public onActionItemClicked(Landroid/view/ActionMode;Landroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # Landroid/view/ActionMode;
-    .param p2    # Landroid/view/MenuItem;
 
     invoke-interface {p2}, Landroid/view/MenuItem;->getItemId()I
 
@@ -66,8 +62,6 @@
 
 .method public onCreateActionMode(Landroid/view/ActionMode;Landroid/view/Menu;)Z
     .locals 3
-    .param p1    # Landroid/view/ActionMode;
-    .param p2    # Landroid/view/Menu;
 
     const/4 v2, 0x1
 
@@ -90,7 +84,6 @@
 
 .method public setOnDoneListner(Lcom/android/settings/toolbox/SelectModeCallback$OnDoneListner;)V
     .locals 0
-    .param p1    # Lcom/android/settings/toolbox/SelectModeCallback$OnDoneListner;
 
     iput-object p1, p0, Lcom/android/settings/toolbox/SelectModeCallback;->listner:Lcom/android/settings/toolbox/SelectModeCallback$OnDoneListner;
 
@@ -99,7 +92,6 @@
 
 .method public updateSelectionMenu(I)V
     .locals 5
-    .param p1    # I
 
     move v0, p1
 

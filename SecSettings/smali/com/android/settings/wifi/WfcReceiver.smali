@@ -20,7 +20,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/wifi/WfcReceiver;)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/WfcReceiver;
 
     invoke-direct {p0}, Lcom/android/settings/wifi/WfcReceiver;->updateVoWifiIfNeeded()V
 
@@ -29,7 +28,6 @@
 
 .method private addVoWifiApp(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     iget-object v2, p0, Lcom/android/settings/wifi/WfcReceiver;->mContext:Landroid/content/Context;
 
@@ -94,7 +92,6 @@
 
 .method private removeVoWifiApp(Ljava/lang/String;)V
     .locals 9
-    .param p1    # Ljava/lang/String;
 
     iget-object v7, p0, Lcom/android/settings/wifi/WfcReceiver;->mContext:Landroid/content/Context;
 
@@ -244,8 +241,6 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     const/4 v4, 0x1
 

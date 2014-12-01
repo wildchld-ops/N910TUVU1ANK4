@@ -61,7 +61,6 @@
 
 .method public toString(Ljava/lang/StringBuilder;)V
     .locals 2
-    .param p1    # Ljava/lang/StringBuilder;
 
     const-string v0, "isActive "
 

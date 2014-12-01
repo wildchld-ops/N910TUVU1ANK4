@@ -52,8 +52,6 @@
 
 .method synthetic constructor <init>(Landroid/view/AccessibilityInteractionController;Landroid/view/AccessibilityInteractionController$1;)V
     .locals 0
-    .param p1    # Landroid/view/AccessibilityInteractionController;
-    .param p2    # Landroid/view/AccessibilityInteractionController$1;
 
     invoke-direct {p0, p1}, Landroid/view/AccessibilityInteractionController$AccessibilityNodePrefetcher;-><init>(Landroid/view/AccessibilityInteractionController;)V
 
@@ -62,7 +60,6 @@
 
 .method private prefetchDescendantsOfRealNode(Landroid/view/View;Ljava/util/List;)V
     .locals 13
-    .param p1    # Landroid/view/View;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -242,8 +239,6 @@
 
 .method private prefetchDescendantsOfVirtualNode(Landroid/view/accessibility/AccessibilityNodeInfo;Landroid/view/accessibility/AccessibilityNodeProvider;Ljava/util/List;)V
     .locals 10
-    .param p1    # Landroid/view/accessibility/AccessibilityNodeInfo;
-    .param p2    # Landroid/view/accessibility/AccessibilityNodeProvider;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -341,7 +336,6 @@
 
 .method private prefetchPredecessorsOfRealNode(Landroid/view/View;Ljava/util/List;)V
     .locals 5
-    .param p1    # Landroid/view/View;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -395,9 +389,6 @@
 
 .method private prefetchPredecessorsOfVirtualNode(Landroid/view/accessibility/AccessibilityNodeInfo;Landroid/view/View;Landroid/view/accessibility/AccessibilityNodeProvider;Ljava/util/List;)V
     .locals 8
-    .param p1    # Landroid/view/accessibility/AccessibilityNodeInfo;
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/accessibility/AccessibilityNodeProvider;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -477,7 +468,6 @@
 
 .method private prefetchSiblingsOfRealNode(Landroid/view/View;Ljava/util/List;)V
     .locals 10
-    .param p1    # Landroid/view/View;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -603,9 +593,6 @@
 
 .method private prefetchSiblingsOfVirtualNode(Landroid/view/accessibility/AccessibilityNodeInfo;Landroid/view/View;Landroid/view/accessibility/AccessibilityNodeProvider;Ljava/util/List;)V
     .locals 17
-    .param p1    # Landroid/view/accessibility/AccessibilityNodeInfo;
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/accessibility/AccessibilityNodeProvider;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -727,9 +714,6 @@
 # virtual methods
 .method public prefetchAccessibilityNodeInfos(Landroid/view/View;IILjava/util/List;)V
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

@@ -97,7 +97,6 @@
 # virtual methods
 .method animate(Z)V
     .locals 12
-    .param p1    # Z
 
     const-wide/16 v10, 0xff
 
@@ -265,7 +264,6 @@
 
 .method public draw(Landroid/graphics/Canvas;)V
     .locals 1
-    .param p1    # Landroid/graphics/Canvas;
 
     iget-object v0, p0, Landroid/graphics/drawable/DrawableContainer;->mCurrDrawable:Landroid/graphics/drawable/Drawable;
 
@@ -553,7 +551,6 @@
 
 .method public getPadding(Landroid/graphics/Rect;)Z
     .locals 6
-    .param p1    # Landroid/graphics/Rect;
 
     iget-object v4, p0, Landroid/graphics/drawable/DrawableContainer;->mDrawableContainerState:Landroid/graphics/drawable/DrawableContainer$DrawableContainerState;
 
@@ -629,7 +626,6 @@
 
 .method public invalidateDrawable(Landroid/graphics/drawable/Drawable;)V
     .locals 1
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     iget-object v0, p0, Landroid/graphics/drawable/DrawableContainer;->mCurrDrawable:Landroid/graphics/drawable/Drawable;
 
@@ -771,7 +767,6 @@
 
 .method protected onBoundsChange(Landroid/graphics/Rect;)V
     .locals 1
-    .param p1    # Landroid/graphics/Rect;
 
     iget-object v0, p0, Landroid/graphics/drawable/DrawableContainer;->mLastDrawable:Landroid/graphics/drawable/Drawable;
 
@@ -796,7 +791,6 @@
 
 .method protected onLevelChange(I)Z
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/graphics/drawable/DrawableContainer;->mLastDrawable:Landroid/graphics/drawable/Drawable;
 
@@ -832,7 +826,6 @@
 
 .method protected onStateChange([I)Z
     .locals 1
-    .param p1    # [I
 
     iget-object v0, p0, Landroid/graphics/drawable/DrawableContainer;->mLastDrawable:Landroid/graphics/drawable/Drawable;
 
@@ -868,9 +861,6 @@
 
 .method public scheduleDrawable(Landroid/graphics/drawable/Drawable;Ljava/lang/Runnable;J)V
     .locals 1
-    .param p1    # Landroid/graphics/drawable/Drawable;
-    .param p2    # Ljava/lang/Runnable;
-    .param p3    # J
 
     iget-object v0, p0, Landroid/graphics/drawable/DrawableContainer;->mCurrDrawable:Landroid/graphics/drawable/Drawable;
 
@@ -894,7 +884,6 @@
 
 .method public selectDrawable(I)Z
     .locals 10
-    .param p1    # I
 
     const/4 v9, 0x0
 
@@ -1131,7 +1120,6 @@
 
 .method public setAlpha(I)V
     .locals 4
-    .param p1    # I
 
     iget v0, p0, Landroid/graphics/drawable/DrawableContainer;->mAlpha:I
 
@@ -1173,7 +1161,6 @@
 
 .method public setAutoMirrored(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Landroid/graphics/drawable/DrawableContainer;->mDrawableContainerState:Landroid/graphics/drawable/DrawableContainer$DrawableContainerState;
 
@@ -1201,7 +1188,6 @@
 
 .method public setColorFilter(Landroid/graphics/ColorFilter;)V
     .locals 1
-    .param p1    # Landroid/graphics/ColorFilter;
 
     iget-object v0, p0, Landroid/graphics/drawable/DrawableContainer;->mColorFilter:Landroid/graphics/ColorFilter;
 
@@ -1227,7 +1213,6 @@
 
 .method protected setConstantState(Landroid/graphics/drawable/DrawableContainer$DrawableContainerState;)V
     .locals 0
-    .param p1    # Landroid/graphics/drawable/DrawableContainer$DrawableContainerState;
 
     iput-object p1, p0, Landroid/graphics/drawable/DrawableContainer;->mDrawableContainerState:Landroid/graphics/drawable/DrawableContainer$DrawableContainerState;
 
@@ -1236,7 +1221,6 @@
 
 .method public setDither(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Landroid/graphics/drawable/DrawableContainer;->mDrawableContainerState:Landroid/graphics/drawable/DrawableContainer$DrawableContainerState;
 
@@ -1270,7 +1254,6 @@
 
 .method public setEnterFadeDuration(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/graphics/drawable/DrawableContainer;->mDrawableContainerState:Landroid/graphics/drawable/DrawableContainer$DrawableContainerState;
 
@@ -1281,7 +1264,6 @@
 
 .method public setExitFadeDuration(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/graphics/drawable/DrawableContainer;->mDrawableContainerState:Landroid/graphics/drawable/DrawableContainer$DrawableContainerState;
 
@@ -1292,8 +1274,6 @@
 
 .method public setVisible(ZZ)Z
     .locals 2
-    .param p1    # Z
-    .param p2    # Z
 
     invoke-super {p0, p1, p2}, Landroid/graphics/drawable/Drawable;->setVisible(ZZ)Z
 
@@ -1322,8 +1302,6 @@
 
 .method public unscheduleDrawable(Landroid/graphics/drawable/Drawable;Ljava/lang/Runnable;)V
     .locals 1
-    .param p1    # Landroid/graphics/drawable/Drawable;
-    .param p2    # Ljava/lang/Runnable;
 
     iget-object v0, p0, Landroid/graphics/drawable/DrawableContainer;->mCurrDrawable:Landroid/graphics/drawable/Drawable;
 

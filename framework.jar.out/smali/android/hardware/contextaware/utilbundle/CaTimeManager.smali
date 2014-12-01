@@ -63,7 +63,6 @@
 # virtual methods
 .method public final getTimeStampForUTC(J)J
     .locals 12
-    .param p1    # J
 
     new-instance v0, Ljava/util/SimpleTimeZone;
 
@@ -132,9 +131,6 @@
 
 .method public final getTimeStampForUTC(JJJ)J
     .locals 4
-    .param p1    # J
-    .param p3    # J
-    .param p5    # J
 
     sub-long v0, p1, p5
 
@@ -156,9 +152,6 @@
 
 .method public final getTimeStampForUTC24(JJJ)J
     .locals 4
-    .param p1    # J
-    .param p3    # J
-    .param p5    # J
 
     sub-long v0, p1, p5
 

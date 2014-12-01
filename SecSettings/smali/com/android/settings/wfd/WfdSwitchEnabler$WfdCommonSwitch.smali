@@ -27,7 +27,6 @@
 
 .method public setEnabled(Z)Z
     .locals 4
-    .param p1    # Z
 
     iget-object v1, p0, Lcom/android/settings/wfd/WfdSwitchEnabler$WfdCommonSwitch;->this$0:Lcom/android/settings/wfd/WfdSwitchEnabler;
 

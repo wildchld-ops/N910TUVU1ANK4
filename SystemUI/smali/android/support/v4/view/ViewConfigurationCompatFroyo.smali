@@ -14,7 +14,6 @@
 
 .method public static getScaledPagingTouchSlop(Landroid/view/ViewConfiguration;)I
     .locals 1
-    .param p0    # Landroid/view/ViewConfiguration;
 
     invoke-virtual {p0}, Landroid/view/ViewConfiguration;->getScaledPagingTouchSlop()I
 

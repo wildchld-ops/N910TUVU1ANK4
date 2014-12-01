@@ -37,7 +37,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -66,8 +65,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v1, 0x0
 
@@ -96,9 +93,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v1, 0x0
 
@@ -578,7 +572,6 @@
 
 .method protected onDraw(Landroid/graphics/Canvas;)V
     .locals 4
-    .param p1    # Landroid/graphics/Canvas;
 
     const/4 v3, 0x0
 
@@ -613,8 +606,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v3, 0x0
 
@@ -767,11 +758,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 2
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-super/range {p0 .. p5}, Landroid/view/View;->onLayout(ZIIII)V
 
@@ -835,7 +821,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 5
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v4, 0x1
 
@@ -1154,7 +1139,6 @@
 
 .method public setOnColorChangedListener(Lcom/android/settings/myprofile/GradientColorPickerView$OnColorChangedListener;)V
     .locals 0
-    .param p1    # Lcom/android/settings/myprofile/GradientColorPickerView$OnColorChangedListener;
 
     iput-object p1, p0, Lcom/android/settings/myprofile/GradientColorPickerView;->mOnColorChangedListener:Lcom/android/settings/myprofile/GradientColorPickerView$OnColorChangedListener;
 
@@ -1163,7 +1147,6 @@
 
 .method public setOnCustomColorSubmitListener(Lcom/android/settings/myprofile/GradientColorPickerView$OnCustomColorSubmitListener;)V
     .locals 0
-    .param p1    # Lcom/android/settings/myprofile/GradientColorPickerView$OnCustomColorSubmitListener;
 
     iput-object p1, p0, Lcom/android/settings/myprofile/GradientColorPickerView;->mOnCustomColorSubmitListener:Lcom/android/settings/myprofile/GradientColorPickerView$OnCustomColorSubmitListener;
 

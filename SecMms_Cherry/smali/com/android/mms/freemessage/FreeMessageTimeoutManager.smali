@@ -36,7 +36,6 @@
 
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -65,7 +64,6 @@
 
 .method public static getInstance(Landroid/content/Context;)Lcom/android/mms/freemessage/FreeMessageTimeoutManager;
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     const-string v0, "Mms/FreeMessageTimeoutManager"
 
@@ -91,9 +89,6 @@
 
 .method private makeAlarmIntent(JJI)Landroid/app/PendingIntent;
     .locals 5
-    .param p1    # J
-    .param p3    # J
-    .param p5    # I
 
     const-string v3, "Mms/FreeMessageTimeoutManager"
 
@@ -136,9 +131,6 @@
 # virtual methods
 .method public cancelAlarm(JJI)V
     .locals 4
-    .param p1    # J
-    .param p3    # J
-    .param p5    # I
 
     const-string v1, "Mms/FreeMessageTimeoutManager"
 
@@ -175,9 +167,6 @@
 
 .method public setAlarm(JJI)V
     .locals 10
-    .param p1    # J
-    .param p3    # J
-    .param p5    # I
 
     const-string v7, "Mms/FreeMessageTimeoutManager"
 

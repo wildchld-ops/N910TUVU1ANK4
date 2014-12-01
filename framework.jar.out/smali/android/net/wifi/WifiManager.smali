@@ -618,8 +618,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/net/wifi/IWifiManager;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/net/wifi/IWifiManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -634,7 +632,6 @@
 
 .method static synthetic access$000(I)Ljava/lang/Object;
     .locals 1
-    .param p0    # I
 
     invoke-static {p0}, Landroid/net/wifi/WifiManager;->removeListener(I)Ljava/lang/Object;
 
@@ -653,7 +650,6 @@
 
 .method static synthetic access$102(Lcom/android/internal/util/AsyncChannel;)Lcom/android/internal/util/AsyncChannel;
     .locals 0
-    .param p0    # Lcom/android/internal/util/AsyncChannel;
 
     sput-object p0, Landroid/net/wifi/WifiManager;->sAsyncChannel:Lcom/android/internal/util/AsyncChannel;
 
@@ -686,7 +682,6 @@
 
 .method static synthetic access$500(Landroid/net/wifi/WifiManager;)I
     .locals 1
-    .param p0    # Landroid/net/wifi/WifiManager;
 
     iget v0, p0, Landroid/net/wifi/WifiManager;->mActiveLockCount:I
 
@@ -695,7 +690,6 @@
 
 .method static synthetic access$508(Landroid/net/wifi/WifiManager;)I
     .locals 2
-    .param p0    # Landroid/net/wifi/WifiManager;
 
     iget v0, p0, Landroid/net/wifi/WifiManager;->mActiveLockCount:I
 
@@ -708,7 +702,6 @@
 
 .method static synthetic access$510(Landroid/net/wifi/WifiManager;)I
     .locals 2
-    .param p0    # Landroid/net/wifi/WifiManager;
 
     iget v0, p0, Landroid/net/wifi/WifiManager;->mActiveLockCount:I
 
@@ -721,8 +714,6 @@
 
 .method static synthetic access$520(Landroid/net/wifi/WifiManager;I)I
     .locals 1
-    .param p0    # Landroid/net/wifi/WifiManager;
-    .param p1    # I
 
     iget v0, p0, Landroid/net/wifi/WifiManager;->mActiveLockCount:I
 
@@ -735,7 +726,6 @@
 
 .method private addOrUpdateNetwork(Landroid/net/wifi/WifiConfiguration;)I
     .locals 2
-    .param p1    # Landroid/net/wifi/WifiConfiguration;
 
     :try_start_0
     iget-object v1, p0, Landroid/net/wifi/WifiManager;->mService:Landroid/net/wifi/IWifiManager;
@@ -759,8 +749,6 @@
 
 .method public static calculateSignalLevel(II)I
     .locals 7
-    .param p0    # I
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -849,8 +837,6 @@
 
 .method public static compareSignalLevel(II)I
     .locals 1
-    .param p0    # I
-    .param p1    # I
 
     sub-int v0, p0, p1
 
@@ -976,7 +962,6 @@
 
 .method private static putListener(Ljava/lang/Object;)I
     .locals 3
-    .param p0    # Ljava/lang/Object;
 
     if-nez p0, :cond_0
 
@@ -1020,7 +1005,6 @@
 
 .method private static removeListener(I)Ljava/lang/Object;
     .locals 3
-    .param p0    # I
 
     if-nez p0, :cond_0
 
@@ -1082,7 +1066,6 @@
 # virtual methods
 .method public addNetwork(Landroid/net/wifi/WifiConfiguration;)I
     .locals 1
-    .param p1    # Landroid/net/wifi/WifiConfiguration;
 
     const/4 v0, -0x1
 
@@ -1103,7 +1086,6 @@
 
 .method public addToBlacklist(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     iget-object v1, p0, Landroid/net/wifi/WifiManager;->mService:Landroid/net/wifi/IWifiManager;
@@ -1127,7 +1109,6 @@
 
 .method public callSECApi(Landroid/os/Message;)I
     .locals 2
-    .param p1    # Landroid/os/Message;
 
     iget v1, p1, Landroid/os/Message;->what:I
 
@@ -1160,7 +1141,6 @@
 
 .method public callSECStringApi(Landroid/os/Message;)Ljava/lang/String;
     .locals 2
-    .param p1    # Landroid/os/Message;
 
     :try_start_0
     iget-object v1, p0, Landroid/net/wifi/WifiManager;->mService:Landroid/net/wifi/IWifiManager;
@@ -1184,7 +1164,6 @@
 
 .method public cancelWps(Landroid/net/wifi/WifiManager$ActionListener;)V
     .locals 4
-    .param p1    # Landroid/net/wifi/WifiManager$ActionListener;
 
     invoke-direct {p0}, Landroid/net/wifi/WifiManager;->validateChannel()V
 
@@ -1247,8 +1226,6 @@
 
 .method public connect(ILandroid/net/wifi/WifiManager$ActionListener;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/net/wifi/WifiManager$ActionListener;
 
     if-gez p1, :cond_0
 
@@ -1278,8 +1255,6 @@
 
 .method public connect(Landroid/net/wifi/WifiConfiguration;Landroid/net/wifi/WifiManager$ActionListener;)V
     .locals 4
-    .param p1    # Landroid/net/wifi/WifiConfiguration;
-    .param p2    # Landroid/net/wifi/WifiManager$ActionListener;
 
     if-nez p1, :cond_0
 
@@ -1311,8 +1286,6 @@
 
 .method public connectHs20Ap(Landroid/os/Bundle;Landroid/net/wifi/WifiManager$ActionListener;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
-    .param p2    # Landroid/net/wifi/WifiManager$ActionListener;
 
     invoke-direct {p0}, Landroid/net/wifi/WifiManager;->validateChannel()V
 
@@ -1333,7 +1306,6 @@
 
 .method public createMulticastLock(Ljava/lang/String;)Landroid/net/wifi/WifiManager$MulticastLock;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Landroid/net/wifi/WifiManager$MulticastLock;
 
@@ -1346,8 +1318,6 @@
 
 .method public createWifiLock(ILjava/lang/String;)Landroid/net/wifi/WifiManager$WifiLock;
     .locals 2
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     new-instance v0, Landroid/net/wifi/WifiManager$WifiLock;
 
@@ -1360,7 +1330,6 @@
 
 .method public createWifiLock(Ljava/lang/String;)Landroid/net/wifi/WifiManager$WifiLock;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Landroid/net/wifi/WifiManager$WifiLock;
 
@@ -1375,8 +1344,6 @@
 
 .method public disable(ILandroid/net/wifi/WifiManager$ActionListener;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/net/wifi/WifiManager$ActionListener;
 
     if-gez p1, :cond_0
 
@@ -1406,7 +1373,6 @@
 
 .method public disableNetwork(I)Z
     .locals 2
-    .param p1    # I
 
     :try_start_0
     iget-object v1, p0, Landroid/net/wifi/WifiManager;->mService:Landroid/net/wifi/IWifiManager;
@@ -1470,8 +1436,6 @@
 
 .method public enableNetwork(IZ)Z
     .locals 2
-    .param p1    # I
-    .param p2    # Z
 
     :try_start_0
     iget-object v1, p0, Landroid/net/wifi/WifiManager;->mService:Landroid/net/wifi/IWifiManager;
@@ -1568,8 +1532,6 @@
 
 .method public forget(ILandroid/net/wifi/WifiManager$ActionListener;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/net/wifi/WifiManager$ActionListener;
 
     if-gez p1, :cond_0
 
@@ -2020,7 +1982,6 @@
 
 .method public getS69BssInfo(Ljava/lang/String;)Landroid/net/wifi/S69BssInfo;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     sget-boolean v1, Landroid/net/wifi/WifiManager;->DBG:Z
 
@@ -2055,8 +2016,6 @@
 
 .method public getS69PartMsg(II)Ljava/lang/String;
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     sget-boolean v1, Landroid/net/wifi/WifiManager;->DBG:Z
 
@@ -2138,7 +2097,6 @@
 
 .method public getSpecificNetwork(I)Landroid/net/wifi/WifiConfiguration;
     .locals 2
-    .param p1    # I
 
     :try_start_0
     iget-object v1, p0, Landroid/net/wifi/WifiManager;->mService:Landroid/net/wifi/IWifiManager;
@@ -2194,7 +2152,6 @@
 
 .method public getTxPacketCount(Landroid/net/wifi/WifiManager$TxPacketCountListener;)V
     .locals 4
-    .param p1    # Landroid/net/wifi/WifiManager$TxPacketCountListener;
 
     invoke-direct {p0}, Landroid/net/wifi/WifiManager;->validateChannel()V
 
@@ -2882,7 +2839,6 @@
 
 .method public modifyPasspointCred(Ljava/lang/String;)I
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     const-string v1, "modifyPasspointCred"
@@ -3007,7 +2963,6 @@
 
 .method public removeNetwork(I)Z
     .locals 2
-    .param p1    # I
 
     :try_start_0
     iget-object v1, p0, Landroid/net/wifi/WifiManager;->mService:Landroid/net/wifi/IWifiManager;
@@ -3031,7 +2986,6 @@
 
 .method public requestBatchedScan(Landroid/net/wifi/BatchedScanSettings;)Z
     .locals 4
-    .param p1    # Landroid/net/wifi/BatchedScanSettings;
 
     :try_start_0
     iget-object v1, p0, Landroid/net/wifi/WifiManager;->mService:Landroid/net/wifi/IWifiManager;
@@ -3061,8 +3015,6 @@
 
 .method public requestBatchedScan(Landroid/net/wifi/BatchedScanSettings;Landroid/os/WorkSource;)Z
     .locals 3
-    .param p1    # Landroid/net/wifi/BatchedScanSettings;
-    .param p2    # Landroid/os/WorkSource;
 
     :try_start_0
     iget-object v1, p0, Landroid/net/wifi/WifiManager;->mService:Landroid/net/wifi/IWifiManager;
@@ -3090,8 +3042,6 @@
 
 .method public save(Landroid/net/wifi/WifiConfiguration;Landroid/net/wifi/WifiManager$ActionListener;)V
     .locals 4
-    .param p1    # Landroid/net/wifi/WifiConfiguration;
-    .param p2    # Landroid/net/wifi/WifiManager$ActionListener;
 
     if-nez p1, :cond_0
 
@@ -3146,7 +3096,6 @@
 
 .method public sendS69LocationServiceRequest(Ljava/lang/String;)I
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -3188,8 +3137,6 @@
 
 .method public setCountryCode(Ljava/lang/String;Z)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     :try_start_0
     iget-object v0, p0, Landroid/net/wifi/WifiManager;->mService:Landroid/net/wifi/IWifiManager;
@@ -3209,7 +3156,6 @@
 
 .method public setCountryRev(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     iget-object v1, p0, Landroid/net/wifi/WifiManager;->mService:Landroid/net/wifi/IWifiManager;
@@ -3233,8 +3179,6 @@
 
 .method public setFrequencyBand(IZ)V
     .locals 1
-    .param p1    # I
-    .param p2    # Z
 
     :try_start_0
     iget-object v0, p0, Landroid/net/wifi/WifiManager;->mService:Landroid/net/wifi/IWifiManager;
@@ -3254,7 +3198,6 @@
 
 .method public setFullRoamScanPeriod(I)Z
     .locals 2
-    .param p1    # I
 
     :try_start_0
     iget-object v1, p0, Landroid/net/wifi/WifiManager;->mService:Landroid/net/wifi/IWifiManager;
@@ -3278,7 +3221,6 @@
 
 .method public setIsFmcNetwork(Z)Z
     .locals 2
-    .param p1    # Z
 
     :try_start_0
     iget-object v1, p0, Landroid/net/wifi/WifiManager;->mService:Landroid/net/wifi/IWifiManager;
@@ -3302,7 +3244,6 @@
 
 .method public setRoamBand(I)Z
     .locals 2
-    .param p1    # I
 
     :try_start_0
     iget-object v1, p0, Landroid/net/wifi/WifiManager;->mService:Landroid/net/wifi/IWifiManager;
@@ -3326,7 +3267,6 @@
 
 .method public setRoamDelta(I)Z
     .locals 2
-    .param p1    # I
 
     :try_start_0
     iget-object v1, p0, Landroid/net/wifi/WifiManager;->mService:Landroid/net/wifi/IWifiManager;
@@ -3350,7 +3290,6 @@
 
 .method public setRoamScanPeriod(I)Z
     .locals 2
-    .param p1    # I
 
     :try_start_0
     iget-object v1, p0, Landroid/net/wifi/WifiManager;->mService:Landroid/net/wifi/IWifiManager;
@@ -3374,7 +3313,6 @@
 
 .method public setRoamTrigger(I)Z
     .locals 2
-    .param p1    # I
 
     :try_start_0
     iget-object v1, p0, Landroid/net/wifi/WifiManager;->mService:Landroid/net/wifi/IWifiManager;
@@ -3480,8 +3418,6 @@
 
 .method public setTdlsEnabled(Ljava/net/InetAddress;Z)V
     .locals 2
-    .param p1    # Ljava/net/InetAddress;
-    .param p2    # Z
 
     :try_start_0
     iget-object v0, p0, Landroid/net/wifi/WifiManager;->mService:Landroid/net/wifi/IWifiManager;
@@ -3505,8 +3441,6 @@
 
 .method public setTdlsEnabledWithMacAddress(Ljava/lang/String;Z)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     :try_start_0
     iget-object v0, p0, Landroid/net/wifi/WifiManager;->mService:Landroid/net/wifi/IWifiManager;
@@ -3526,7 +3460,6 @@
 
 .method public setWifiApConfigTxPower(I)Z
     .locals 2
-    .param p1    # I
 
     :try_start_0
     iget-object v1, p0, Landroid/net/wifi/WifiManager;->mService:Landroid/net/wifi/IWifiManager;
@@ -3550,7 +3483,6 @@
 
 .method public setWifiApConfiguration(Landroid/net/wifi/WifiConfiguration;)Z
     .locals 2
-    .param p1    # Landroid/net/wifi/WifiConfiguration;
 
     :try_start_0
     iget-object v1, p0, Landroid/net/wifi/WifiManager;->mService:Landroid/net/wifi/IWifiManager;
@@ -3574,8 +3506,6 @@
 
 .method public setWifiApEnabled(Landroid/net/wifi/WifiConfiguration;Z)Z
     .locals 9
-    .param p1    # Landroid/net/wifi/WifiConfiguration;
-    .param p2    # Z
 
     const/4 v5, 0x0
 
@@ -3703,7 +3633,6 @@
 
 .method public setWifiApTimeOut(I)Z
     .locals 2
-    .param p1    # I
 
     :try_start_0
     iget-object v1, p0, Landroid/net/wifi/WifiManager;->mService:Landroid/net/wifi/IWifiManager;
@@ -3727,7 +3656,6 @@
 
 .method public setWifiDualbandAPConnection(I)Z
     .locals 3
-    .param p1    # I
 
     new-instance v1, Landroid/os/Message;
 
@@ -3761,7 +3689,6 @@
 
 .method public setWifiEnabled(Z)Z
     .locals 9
-    .param p1    # Z
 
     const/4 v8, 0x1
 
@@ -4016,7 +3943,6 @@
 
 .method public setWifiIBSSEnabled(Z)Z
     .locals 4
-    .param p1    # Z
 
     :try_start_0
     const-string v1, "WifiManager"
@@ -4108,7 +4034,6 @@
 
 .method public startPPPOE(Landroid/net/wifi/PPPOEConfig;)V
     .locals 3
-    .param p1    # Landroid/net/wifi/PPPOEConfig;
 
     :try_start_0
     const-string v1, "pppoe"
@@ -4165,7 +4090,6 @@
 
 .method public startScan(Landroid/os/WorkSource;)Z
     .locals 2
-    .param p1    # Landroid/os/WorkSource;
 
     :try_start_0
     iget-object v1, p0, Landroid/net/wifi/WifiManager;->mService:Landroid/net/wifi/IWifiManager;
@@ -4212,8 +4136,6 @@
 
 .method public startWps(Landroid/net/wifi/WpsInfo;Landroid/net/wifi/WifiManager$WpsListener;)V
     .locals 4
-    .param p1    # Landroid/net/wifi/WpsInfo;
-    .param p2    # Landroid/net/wifi/WifiManager$WpsListener;
 
     if-nez p1, :cond_0
 
@@ -4245,7 +4167,6 @@
 
 .method public stopBatchedScan(Landroid/net/wifi/BatchedScanSettings;)V
     .locals 1
-    .param p1    # Landroid/net/wifi/BatchedScanSettings;
 
     :try_start_0
     iget-object v0, p0, Landroid/net/wifi/WifiManager;->mService:Landroid/net/wifi/IWifiManager;
@@ -4319,7 +4240,6 @@
 
 .method public updateNetwork(Landroid/net/wifi/WifiConfiguration;)I
     .locals 1
-    .param p1    # Landroid/net/wifi/WifiConfiguration;
 
     if-eqz p1, :cond_0
 

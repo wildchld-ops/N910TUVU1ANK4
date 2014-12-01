@@ -92,8 +92,6 @@
 
 .method static synthetic access$000(Lcom/android/systemui/usb/StorageNotification;Z)V
     .locals 0
-    .param p0    # Lcom/android/systemui/usb/StorageNotification;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/systemui/usb/StorageNotification;->onUsbMassStorageConnectionChangedAsync(Z)V
 
@@ -102,7 +100,6 @@
 
 .method static synthetic access$100(Lcom/android/systemui/usb/StorageNotification;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/systemui/usb/StorageNotification;
 
     iget-object v0, p0, Lcom/android/systemui/usb/StorageNotification;->mAsyncEventHandler:Landroid/os/Handler;
 
@@ -111,8 +108,6 @@
 
 .method static synthetic access$1000(Lcom/android/systemui/usb/StorageNotification;Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Lcom/android/systemui/usb/StorageNotification;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/systemui/usb/StorageNotification;->isSDCard(Ljava/lang/String;)Z
 
@@ -123,14 +118,6 @@
 
 .method static synthetic access$1100(Lcom/android/systemui/usb/StorageNotification;IIIZZLandroid/app/PendingIntent;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/systemui/usb/StorageNotification;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Z
-    .param p5    # Z
-    .param p6    # Landroid/app/PendingIntent;
-    .param p7    # Ljava/lang/String;
 
     invoke-direct/range {p0 .. p7}, Lcom/android/systemui/usb/StorageNotification;->setMediaStorageNotification(IIIZZLandroid/app/PendingIntent;Ljava/lang/String;)V
 
@@ -139,10 +126,6 @@
 
 .method static synthetic access$200(Lcom/android/systemui/usb/StorageNotification;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/systemui/usb/StorageNotification;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/systemui/usb/StorageNotification;->onStorageStateChangedAsync(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
@@ -151,7 +134,6 @@
 
 .method static synthetic access$300(Lcom/android/systemui/usb/StorageNotification;)Ljava/util/HashMap;
     .locals 1
-    .param p0    # Lcom/android/systemui/usb/StorageNotification;
 
     iget-object v0, p0, Lcom/android/systemui/usb/StorageNotification;->MediaStorageMap:Ljava/util/HashMap;
 
@@ -160,7 +142,6 @@
 
 .method static synthetic access$700(Lcom/android/systemui/usb/StorageNotification;)Landroid/app/Notification;
     .locals 1
-    .param p0    # Lcom/android/systemui/usb/StorageNotification;
 
     iget-object v0, p0, Lcom/android/systemui/usb/StorageNotification;->mMediaStorageNotification:Landroid/app/Notification;
 
@@ -169,8 +150,6 @@
 
 .method static synthetic access$802(Lcom/android/systemui/usb/StorageNotification;Z)Z
     .locals 0
-    .param p0    # Lcom/android/systemui/usb/StorageNotification;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/systemui/usb/StorageNotification;->mReady:Z
 
@@ -221,7 +200,6 @@
 
 .method private hideNotification(I)V
     .locals 6
-    .param p1    # I
 
     const-string v3, "StorageNotification"
 
@@ -344,7 +322,6 @@
 
 .method private isSDCard(Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     iget-object v2, p0, Lcom/android/systemui/usb/StorageNotification;->mStorageVolumes:[Landroid/os/storage/StorageVolume;
 
@@ -413,7 +390,6 @@
 
 .method private isStorageRemovable(Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -463,7 +439,6 @@
 
 .method public static isTablet(Landroid/content/Context;)Z
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     const-string v1, "ro.build.characteristics"
 
@@ -511,7 +486,6 @@
 
 .method private isUsbHostDevice(Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     iget-object v2, p0, Lcom/android/systemui/usb/StorageNotification;->mStorageVolumes:[Landroid/os/storage/StorageVolume;
 
@@ -570,9 +544,6 @@
 
 .method private onStorageStateChangedAsync(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 21
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const-string v1, "StorageNotification"
 
@@ -1664,7 +1635,6 @@
 
 .method private onUsbMassStorageConnectionChangedAsync(Z)V
     .locals 6
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/systemui/usb/StorageNotification;->mUmsAvailable:Z
 
@@ -1747,13 +1717,6 @@
 
 .method private declared-synchronized setMediaStorageNotification(IIIZZLandroid/app/PendingIntent;Ljava/lang/String;)V
     .locals 13
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Z
-    .param p5    # Z
-    .param p6    # Landroid/app/PendingIntent;
-    .param p7    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -2068,12 +2031,6 @@
 
 .method private declared-synchronized setUsbStorageNotification(IIIZZLandroid/app/PendingIntent;)V
     .locals 12
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Z
-    .param p5    # Z
-    .param p6    # Landroid/app/PendingIntent;
 
     monitor-enter p0
 
@@ -2307,9 +2264,6 @@
 # virtual methods
 .method public dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     const-string v1, "persist.sys.setupwizard"
 
@@ -2342,9 +2296,6 @@
 
 .method public onStorageStateChanged(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/systemui/usb/StorageNotification;->mAsyncEventHandler:Landroid/os/Handler;
 
@@ -2507,7 +2458,6 @@
 
 .method updateUsbMassStorageNotification(Z)V
     .locals 18
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 

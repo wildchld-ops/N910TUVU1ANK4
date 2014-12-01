@@ -49,8 +49,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/mms/dom/smil/SmilDocumentImpl;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Lcom/android/mms/dom/smil/SmilDocumentImpl;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Lcom/android/mms/dom/smil/SmilElementImpl;-><init>(Lcom/android/mms/dom/smil/SmilDocumentImpl;Ljava/lang/String;)V
 
@@ -59,8 +57,6 @@
 
 .method private parseRegionLength(Ljava/lang/String;Z)I
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const/4 v5, 0x0
 
@@ -714,7 +710,6 @@
 
 .method public setBackgroundColor(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;
@@ -730,7 +725,6 @@
 
 .method public setFit(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;
@@ -793,7 +787,6 @@
 
 .method public setHeight(I)V
     .locals 3
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;
@@ -827,7 +820,6 @@
 
 .method public setId(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;
@@ -843,7 +835,6 @@
 
 .method public setLeft(I)V
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;
@@ -863,7 +854,6 @@
 
 .method public setTitle(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;
@@ -879,7 +869,6 @@
 
 .method public setTop(I)V
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;
@@ -899,7 +888,6 @@
 
 .method public setWidth(I)V
     .locals 3
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;
@@ -933,7 +921,6 @@
 
 .method public setZIndex(I)V
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;

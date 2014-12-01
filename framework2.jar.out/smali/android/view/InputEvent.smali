@@ -119,7 +119,6 @@
 
 .method public isFromSource(I)Z
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/view/InputEvent;->getSource()I
 

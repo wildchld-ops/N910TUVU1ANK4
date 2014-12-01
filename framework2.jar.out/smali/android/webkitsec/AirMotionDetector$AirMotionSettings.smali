@@ -25,8 +25,6 @@
 # direct methods
 .method public constructor <init>(Landroid/webkitsec/AirMotionDetector;Landroid/content/Context;I)V
     .locals 1
-    .param p2    # Landroid/content/Context;
-    .param p3    # I
 
     iput-object p1, p0, Landroid/webkitsec/AirMotionDetector$AirMotionSettings;->this$0:Landroid/webkitsec/AirMotionDetector;
 

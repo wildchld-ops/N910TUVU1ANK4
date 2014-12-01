@@ -16,8 +16,6 @@
 # direct methods
 .method private constructor <init>(ILandroid/renderscript/RenderScript;)V
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/renderscript/RenderScript;
 
     const/16 v2, 0x400
 
@@ -100,8 +98,6 @@
 
 .method public static create(Landroid/renderscript/RenderScript;Landroid/renderscript/Element;)Landroid/renderscript/ScriptIntrinsicLUT;
     .locals 3
-    .param p0    # Landroid/renderscript/RenderScript;
-    .param p1    # Landroid/renderscript/Element;
 
     const/4 v1, 0x3
 
@@ -122,8 +118,6 @@
 
 .method private validate(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     const/16 v0, 0xff
 
@@ -162,8 +156,6 @@
 # virtual methods
 .method public forEach(Landroid/renderscript/Allocation;Landroid/renderscript/Allocation;)V
     .locals 3
-    .param p1    # Landroid/renderscript/Allocation;
-    .param p2    # Landroid/renderscript/Allocation;
 
     const/4 v2, 0x0
 
@@ -205,8 +197,6 @@
 
 .method public setAlpha(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Landroid/renderscript/ScriptIntrinsicLUT;->validate(II)V
 
@@ -227,8 +217,6 @@
 
 .method public setBlue(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Landroid/renderscript/ScriptIntrinsicLUT;->validate(II)V
 
@@ -249,8 +237,6 @@
 
 .method public setGreen(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Landroid/renderscript/ScriptIntrinsicLUT;->validate(II)V
 
@@ -271,8 +257,6 @@
 
 .method public setRed(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Landroid/renderscript/ScriptIntrinsicLUT;->validate(II)V
 

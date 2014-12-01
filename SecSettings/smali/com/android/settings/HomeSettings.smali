@@ -91,7 +91,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/HomeSettings;)Landroid/app/enterprise/EnterpriseDeviceManager;
     .locals 1
-    .param p0    # Lcom/android/settings/HomeSettings;
 
     iget-object v0, p0, Lcom/android/settings/HomeSettings;->mEdm:Landroid/app/enterprise/EnterpriseDeviceManager;
 
@@ -100,8 +99,6 @@
 
 .method static synthetic access$002(Lcom/android/settings/HomeSettings;Landroid/app/enterprise/EnterpriseDeviceManager;)Landroid/app/enterprise/EnterpriseDeviceManager;
     .locals 0
-    .param p0    # Lcom/android/settings/HomeSettings;
-    .param p1    # Landroid/app/enterprise/EnterpriseDeviceManager;
 
     iput-object p1, p0, Lcom/android/settings/HomeSettings;->mEdm:Landroid/app/enterprise/EnterpriseDeviceManager;
 
@@ -290,7 +287,6 @@
 
 .method makeCurrentHome(Lcom/android/settings/HomeSettings$HomeAppPreference;)V
     .locals 5
-    .param p1    # Lcom/android/settings/HomeSettings$HomeAppPreference;
 
     iget-object v0, p0, Lcom/android/settings/HomeSettings;->mCurrentHome:Lcom/android/settings/HomeSettings$HomeAppPreference;
 
@@ -326,9 +322,6 @@
 
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     invoke-super {p0, p1, p2, p3}, Lcom/android/settings/SettingsPreferenceFragment;->onActivityResult(IILandroid/content/Intent;)V
 
@@ -402,7 +395,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 6
-    .param p1    # Landroid/os/Bundle;
 
     const/16 v5, 0x10
 
@@ -488,7 +480,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -542,7 +533,6 @@
 
 .method uninstallApp(Lcom/android/settings/HomeSettings$HomeAppPreference;)V
     .locals 6
-    .param p1    # Lcom/android/settings/HomeSettings$HomeAppPreference;
 
     const/4 v3, 0x0
 

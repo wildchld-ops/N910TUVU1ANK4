@@ -24,7 +24,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -43,7 +42,6 @@
 
 .method static synthetic access$000(Landroid/accounts/AbstractAccountAuthenticator;)V
     .locals 0
-    .param p0    # Landroid/accounts/AbstractAccountAuthenticator;
 
     invoke-direct {p0}, Landroid/accounts/AbstractAccountAuthenticator;->checkBinderPermission()V
 
@@ -52,11 +50,6 @@
 
 .method static synthetic access$100(Landroid/accounts/AbstractAccountAuthenticator;Landroid/accounts/IAccountAuthenticatorResponse;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Exception;)V
     .locals 0
-    .param p0    # Landroid/accounts/AbstractAccountAuthenticator;
-    .param p1    # Landroid/accounts/IAccountAuthenticatorResponse;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/Exception;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -129,10 +122,6 @@
 
 .method private handleException(Landroid/accounts/IAccountAuthenticatorResponse;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Exception;)V
     .locals 3
-    .param p1    # Landroid/accounts/IAccountAuthenticatorResponse;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/Exception;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -407,9 +396,6 @@
 
 .method public addAccountFromCredentials(Landroid/accounts/AccountAuthenticatorResponse;Landroid/accounts/Account;Landroid/os/Bundle;)Landroid/os/Bundle;
     .locals 2
-    .param p1    # Landroid/accounts/AccountAuthenticatorResponse;
-    .param p2    # Landroid/accounts/Account;
-    .param p3    # Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/accounts/NetworkErrorException;
@@ -444,8 +430,6 @@
 
 .method public getAccountCredentialsForCloning(Landroid/accounts/AccountAuthenticatorResponse;Landroid/accounts/Account;)Landroid/os/Bundle;
     .locals 2
-    .param p1    # Landroid/accounts/AccountAuthenticatorResponse;
-    .param p2    # Landroid/accounts/Account;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/accounts/NetworkErrorException;
@@ -469,8 +453,6 @@
 
 .method public getAccountRemovalAllowed(Landroid/accounts/AccountAuthenticatorResponse;Landroid/accounts/Account;)Landroid/os/Bundle;
     .locals 3
-    .param p1    # Landroid/accounts/AccountAuthenticatorResponse;
-    .param p2    # Landroid/accounts/Account;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/accounts/NetworkErrorException;

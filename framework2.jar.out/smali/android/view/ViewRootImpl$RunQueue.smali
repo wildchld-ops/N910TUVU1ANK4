@@ -52,7 +52,6 @@
 # virtual methods
 .method executeActions(Landroid/os/Handler;)V
     .locals 8
-    .param p1    # Landroid/os/Handler;
 
     iget-object v5, p0, Landroid/view/ViewRootImpl$RunQueue;->mActions:Ljava/util/ArrayList;
 
@@ -105,7 +104,6 @@
 
 .method post(Ljava/lang/Runnable;)V
     .locals 2
-    .param p1    # Ljava/lang/Runnable;
 
     const-wide/16 v0, 0x0
 
@@ -116,8 +114,6 @@
 
 .method postDelayed(Ljava/lang/Runnable;J)V
     .locals 3
-    .param p1    # Ljava/lang/Runnable;
-    .param p2    # J
 
     new-instance v0, Landroid/view/ViewRootImpl$RunQueue$HandlerAction;
 
@@ -154,7 +150,6 @@
 
 .method removeCallbacks(Ljava/lang/Runnable;)V
     .locals 4
-    .param p1    # Ljava/lang/Runnable;
 
     new-instance v1, Landroid/view/ViewRootImpl$RunQueue$HandlerAction;
 

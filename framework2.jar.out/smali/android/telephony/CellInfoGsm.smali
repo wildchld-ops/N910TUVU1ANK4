@@ -64,7 +64,6 @@
 
 .method private constructor <init>(Landroid/os/Parcel;)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0, p1}, Landroid/telephony/CellInfo;-><init>(Landroid/os/Parcel;)V
 
@@ -93,7 +92,6 @@
 
 .method public constructor <init>(Landroid/telephony/CellInfoGsm;)V
     .locals 1
-    .param p1    # Landroid/telephony/CellInfoGsm;
 
     invoke-direct {p0, p1}, Landroid/telephony/CellInfo;-><init>(Landroid/telephony/CellInfo;)V
 
@@ -118,7 +116,6 @@
 
 .method protected static createFromParcelBody(Landroid/os/Parcel;)Landroid/telephony/CellInfoGsm;
     .locals 1
-    .param p0    # Landroid/os/Parcel;
 
     new-instance v0, Landroid/telephony/CellInfoGsm;
 
@@ -129,7 +126,6 @@
 
 .method private static log(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "CellInfoGsm"
 
@@ -150,7 +146,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 6
-    .param p1    # Ljava/lang/Object;
 
     const/4 v3, 0x0
 
@@ -248,7 +243,6 @@
 
 .method public setCellIdentity(Landroid/telephony/CellIdentityGsm;)V
     .locals 0
-    .param p1    # Landroid/telephony/CellIdentityGsm;
 
     iput-object p1, p0, Landroid/telephony/CellInfoGsm;->mCellIdentityGsm:Landroid/telephony/CellIdentityGsm;
 
@@ -257,7 +251,6 @@
 
 .method public setCellSignalStrength(Landroid/telephony/CellSignalStrengthGsm;)V
     .locals 0
-    .param p1    # Landroid/telephony/CellSignalStrengthGsm;
 
     iput-object p1, p0, Landroid/telephony/CellInfoGsm;->mCellSignalStrengthGsm:Landroid/telephony/CellSignalStrengthGsm;
 
@@ -314,8 +307,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     const/4 v0, 0x1
 

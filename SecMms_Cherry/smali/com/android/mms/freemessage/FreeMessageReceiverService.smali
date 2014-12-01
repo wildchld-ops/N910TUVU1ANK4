@@ -62,7 +62,6 @@
 
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Landroid/app/IntentService;-><init>(Ljava/lang/String;)V
 
@@ -79,11 +78,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/freemessage/FreeMessageReceiverService;Landroid/net/Uri;Landroid/net/Uri;Ljava/lang/String;Z)Z
     .locals 1
-    .param p0    # Lcom/android/mms/freemessage/FreeMessageReceiverService;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Landroid/net/Uri;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Z
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/mms/freemessage/FreeMessageReceiverService;->createImageThumbnail(Landroid/net/Uri;Landroid/net/Uri;Ljava/lang/String;Z)Z
 
@@ -94,9 +88,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/freemessage/FreeMessageReceiverService;Landroid/net/Uri;Landroid/net/Uri;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/freemessage/FreeMessageReceiverService;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Landroid/net/Uri;
 
     invoke-direct {p0, p1, p2}, Lcom/android/mms/freemessage/FreeMessageReceiverService;->createVideoThumbnail(Landroid/net/Uri;Landroid/net/Uri;)Z
 
@@ -107,13 +98,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/freemessage/FreeMessageReceiverService;Landroid/content/Context;JLjava/lang/String;JLjava/lang/String;Ljava/lang/String;)Landroid/net/Uri;
     .locals 1
-    .param p0    # Lcom/android/mms/freemessage/FreeMessageReceiverService;
-    .param p1    # Landroid/content/Context;
-    .param p2    # J
-    .param p4    # Ljava/lang/String;
-    .param p5    # J
-    .param p7    # Ljava/lang/String;
-    .param p8    # Ljava/lang/String;
 
     invoke-direct/range {p0 .. p8}, Lcom/android/mms/freemessage/FreeMessageReceiverService;->storeContent(Landroid/content/Context;JLjava/lang/String;JLjava/lang/String;Ljava/lang/String;)Landroid/net/Uri;
 
@@ -124,9 +108,6 @@
 
 .method private creatOriginalThumbnail(Landroid/content/Context;Ljava/lang/Long;Ljava/lang/Long;)V
     .locals 9
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/Long;
-    .param p3    # Ljava/lang/Long;
 
     const-wide/16 v6, 0x0
 
@@ -283,10 +264,6 @@
 
 .method private createImageThumbnail(Landroid/net/Uri;Landroid/net/Uri;Ljava/lang/String;Z)Z
     .locals 15
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Landroid/net/Uri;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Z
 
     const/4 v1, 0x0
 
@@ -515,8 +492,6 @@
 
 .method private createVideoThumbnail(Landroid/net/Uri;Landroid/net/Uri;)Z
     .locals 5
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Landroid/net/Uri;
 
     invoke-virtual {p0}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
 
@@ -570,7 +545,6 @@
 
 .method private extractingAddress(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, -0x1
 
@@ -634,9 +608,6 @@
 
 .method private getNewReadStatus(Ljava/lang/String;Ljava/util/ArrayList;JZ)Ljava/lang/String;
     .locals 18
-    .param p1    # Ljava/lang/String;
-    .param p3    # J
-    .param p5    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -935,7 +906,6 @@
 
 .method private getSimpleSize(Landroid/net/Uri;)I
     .locals 11
-    .param p1    # Landroid/net/Uri;
 
     const/4 v6, 0x1
 
@@ -1085,11 +1055,6 @@
 
 .method private getThreadBySessionId(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/ArrayList;Z)Ljava/lang/Long;
     .locals 14
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p6    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1199,7 +1164,6 @@
 
 .method private handleAgentDataCleared(Landroid/os/Bundle;)V
     .locals 13
-    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "Mms/FreeMessageReceiverService"
 
@@ -1358,7 +1322,6 @@
 
 .method private handleAgentDataRemoved(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "Mms/FreeMessageReceiverService"
 
@@ -1373,7 +1336,6 @@
 
 .method private handleAsyncEndChat(Landroid/os/Bundle;)V
     .locals 7
-    .param p1    # Landroid/os/Bundle;
 
     const-string v5, "Mms/FreeMessageReceiverService"
 
@@ -1430,7 +1392,6 @@
 
 .method private handleAsyncEndChatReply(Landroid/os/Bundle;)V
     .locals 13
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v12, 0x1
 
@@ -1616,7 +1577,6 @@
 
 .method private handleEndChat(Landroid/os/Bundle;)V
     .locals 8
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v7, 0x0
 
@@ -1671,7 +1631,6 @@
 
 .method private handleFreeFileTransferAttached(Landroid/os/Bundle;)V
     .locals 42
-    .param p1    # Landroid/os/Bundle;
 
     const-string v2, "Mms/FreeMessageReceiverService"
 
@@ -1901,7 +1860,6 @@
 
 .method private handleGroupAnnounceChangeReceived(Landroid/os/Bundle;)V
     .locals 22
-    .param p1    # Landroid/os/Bundle;
 
     const-string v2, "Mms/FreeMessageReceiverService"
 
@@ -2190,7 +2148,6 @@
 
 .method private handleInit(Landroid/os/Bundle;)V
     .locals 24
-    .param p1    # Landroid/os/Bundle;
 
     const-string v2, "extra_receivers_list"
 
@@ -2422,7 +2379,6 @@
 
 .method private handleInitReply(Landroid/os/Bundle;)V
     .locals 24
-    .param p1    # Landroid/os/Bundle;
 
     const-string v3, "extra_receivers_list"
 
@@ -2717,7 +2673,6 @@
 
 .method private handleInvite(Landroid/os/Bundle;)V
     .locals 6
-    .param p1    # Landroid/os/Bundle;
 
     const-string v5, "extra_msg_id"
 
@@ -2762,7 +2717,6 @@
 
 .method private handleInviteChatReply(Landroid/os/Bundle;)V
     .locals 51
-    .param p1    # Landroid/os/Bundle;
 
     const-string v3, "extra_sent_time"
 
@@ -3461,7 +3415,6 @@
 
 .method private handleNotifyReadMessage(Landroid/os/Bundle;)V
     .locals 7
-    .param p1    # Landroid/os/Bundle;
 
     const-string v3, "extra_session_id"
 
@@ -3584,7 +3537,6 @@
 
 .method private handleOriginalReply(Landroid/os/Bundle;)V
     .locals 14
-    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "extra_local_file_path"
 
@@ -3696,7 +3648,6 @@
 
 .method private handleReadMessageAnswerBack(Landroid/os/Bundle;)V
     .locals 18
-    .param p1    # Landroid/os/Bundle;
 
     const-string v6, "status=2 AND date_sent<=?"
 
@@ -3899,7 +3850,6 @@
 
 .method private handleReceived(Landroid/os/Bundle;)V
     .locals 64
-    .param p1    # Landroid/os/Bundle;
 
     const-string v4, "Mms/FreeMessageReceiverService"
 
@@ -4569,7 +4519,6 @@
 
 .method private handleReplyReadMessage(Landroid/os/Bundle;)V
     .locals 6
-    .param p1    # Landroid/os/Bundle;
 
     const-string v3, "extra_req_id"
 
@@ -4620,7 +4569,6 @@
 
 .method private handleRequestUID(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     const-string v3, "extra_phone_number"
 
@@ -4657,7 +4605,6 @@
 
 .method private handleSend(Landroid/os/Bundle;)V
     .locals 22
-    .param p1    # Landroid/os/Bundle;
 
     const-string v7, "extra_receivers_list"
 
@@ -4877,7 +4824,6 @@
 
 .method private handleSendReply(Landroid/os/Bundle;)V
     .locals 43
-    .param p1    # Landroid/os/Bundle;
 
     const-string v3, "extra_receivers_list"
 
@@ -5571,7 +5517,6 @@
 
 .method private handleSendingTimeout(Landroid/os/Bundle;)V
     .locals 25
-    .param p1    # Landroid/os/Bundle;
 
     const-string v2, "Mms/FreeMessageReceiverService"
 
@@ -6125,10 +6070,6 @@
 
 .method private insertFileTrnasfersWithMedia(Landroid/content/Context;JLjava/lang/String;Ljava/util/ArrayList;Ljava/util/ArrayList;J)V
     .locals 36
-    .param p1    # Landroid/content/Context;
-    .param p2    # J
-    .param p4    # Ljava/lang/String;
-    .param p7    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -6325,15 +6266,6 @@
 
 .method private insertFreeFileTransfer(Landroid/content/Context;JLjava/lang/String;JLjava/lang/String;JLjava/lang/String;JZ)Landroid/net/Uri;
     .locals 13
-    .param p1    # Landroid/content/Context;
-    .param p2    # J
-    .param p4    # Ljava/lang/String;
-    .param p5    # J
-    .param p7    # Ljava/lang/String;
-    .param p8    # J
-    .param p10    # Ljava/lang/String;
-    .param p11    # J
-    .param p13    # Z
 
     const-string v10, "Mms/FreeMessageReceiverService"
 
@@ -6527,10 +6459,6 @@
 
 .method private insertMediaContent(Landroid/content/Context;I[Ljava/lang/String;J)Landroid/net/Uri;
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # [Ljava/lang/String;
-    .param p4    # J
 
     const-string v4, "Mms/FreeMessageReceiverService"
 
@@ -6624,15 +6552,6 @@
 
 .method private insertReceivedFileTransfer(Landroid/content/Context;JLjava/lang/String;Ljava/lang/Long;Ljava/lang/String;JJJZ)Landroid/os/Bundle;
     .locals 27
-    .param p1    # Landroid/content/Context;
-    .param p2    # J
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/Long;
-    .param p6    # Ljava/lang/String;
-    .param p7    # J
-    .param p9    # J
-    .param p11    # J
-    .param p13    # Z
 
     const-string v4, "Mms/FreeMessageReceiverService"
 
@@ -7161,15 +7080,6 @@
 
 .method private insertReceivedMessage(Landroid/content/Context;JLjava/lang/String;Ljava/lang/Long;Ljava/lang/String;ILjava/lang/String;JZ)Landroid/net/Uri;
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p2    # J
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/Long;
-    .param p6    # Ljava/lang/String;
-    .param p7    # I
-    .param p8    # Ljava/lang/String;
-    .param p9    # J
-    .param p11    # Z
 
     const-string v4, "Mms/FreeMessageReceiverService"
 
@@ -7281,13 +7191,6 @@
 
 .method private insertSendMessage(Landroid/content/Context;JLjava/lang/String;Ljava/lang/String;JIZ)V
     .locals 12
-    .param p1    # Landroid/content/Context;
-    .param p2    # J
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # J
-    .param p8    # I
-    .param p9    # Z
 
     new-instance v5, Landroid/content/ContentValues;
 
@@ -7575,12 +7478,6 @@
 
 .method private insertSystemMessage(JLjava/lang/String;Ljava/lang/String;Ljava/lang/String;JI)Landroid/net/Uri;
     .locals 10
-    .param p1    # J
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # J
-    .param p8    # I
 
     const-string v6, "Mms/FreeMessageReceiverService"
 
@@ -7751,12 +7648,6 @@
 
 .method private sendMessageHaveUpdatedSessionId(Ljava/util/ArrayList;JLjava/lang/String;Ljava/lang/String;JJI)V
     .locals 5
-    .param p2    # J
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # J
-    .param p8    # J
-    .param p10    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -7924,12 +7815,6 @@
 
 .method private storeContent(Landroid/content/Context;JLjava/lang/String;JLjava/lang/String;Ljava/lang/String;)Landroid/net/Uri;
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p2    # J
-    .param p4    # Ljava/lang/String;
-    .param p5    # J
-    .param p7    # Ljava/lang/String;
-    .param p8    # Ljava/lang/String;
 
     invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -8032,9 +7917,6 @@
 
 .method private updateContent(Landroid/content/Context;JLjava/lang/String;)V
     .locals 8
-    .param p1    # Landroid/content/Context;
-    .param p2    # J
-    .param p4    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -8095,11 +7977,6 @@
 
 .method private updateFreeFileTransfer(Landroid/content/Context;JLjava/lang/String;IJ)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # J
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
-    .param p6    # J
 
     new-instance v3, Landroid/content/ContentValues;
 
@@ -8240,10 +8117,6 @@
 
 .method private updateFromFakeSession(Landroid/content/Context;JLjava/lang/String;Ljava/util/ArrayList;I)Ljava/lang/String;
     .locals 28
-    .param p1    # Landroid/content/Context;
-    .param p2    # J
-    .param p4    # Ljava/lang/String;
-    .param p6    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -8484,11 +8357,6 @@
 
 .method private updateSendFileTransfer(Landroid/content/Context;Ljava/util/ArrayList;JLjava/lang/String;JJ)V
     .locals 17
-    .param p1    # Landroid/content/Context;
-    .param p3    # J
-    .param p5    # Ljava/lang/String;
-    .param p6    # J
-    .param p8    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -8635,12 +8503,6 @@
 
 .method private updateSendMessage(Landroid/content/Context;Ljava/util/ArrayList;JLjava/lang/String;Ljava/lang/String;JI)V
     .locals 17
-    .param p1    # Landroid/content/Context;
-    .param p3    # J
-    .param p5    # Ljava/lang/String;
-    .param p6    # Ljava/lang/String;
-    .param p7    # J
-    .param p9    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -8814,7 +8676,6 @@
 # virtual methods
 .method public isFailed(I)Z
     .locals 1
-    .param p1    # I
 
     const/16 v0, 0x1772
 
@@ -8898,7 +8759,6 @@
 
 .method protected onHandleIntent(Landroid/content/Intent;)V
     .locals 7
-    .param p1    # Landroid/content/Intent;
 
     if-nez p1, :cond_1
 
@@ -9470,7 +9330,6 @@
 
 .method public setFreeMessageStatus(Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     invoke-static {p1}, Landroid/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -9503,7 +9362,6 @@
 
 .method public setHandler(Landroid/os/Handler;)V
     .locals 0
-    .param p1    # Landroid/os/Handler;
 
     sput-object p1, Lcom/android/mms/freemessage/FreeMessageReceiverService;->mHandler:Landroid/os/Handler;
 
@@ -9512,16 +9370,6 @@
 
 .method public updateHistoryForFreeMessage(Landroid/content/Context;Ljava/lang/String;JJJLjava/lang/String;ILjava/lang/String;II)Z
     .locals 18
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # J
-    .param p5    # J
-    .param p7    # J
-    .param p9    # Ljava/lang/String;
-    .param p10    # I
-    .param p11    # Ljava/lang/String;
-    .param p12    # I
-    .param p13    # I
 
     const-string v15, "Mms/FreeMessageReceiverService"
 
@@ -9867,9 +9715,6 @@
 
 .method public updateMissedParticipant(Ljava/lang/String;JLjava/lang/String;)V
     .locals 28
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
-    .param p4    # Ljava/lang/String;
 
     invoke-virtual/range {p0 .. p0}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
 
@@ -10303,10 +10148,6 @@
 
 .method public updateParticipantInsertOrLeft(Ljava/lang/String;Ljava/util/ArrayList;IILjava/lang/Long;)V
     .locals 39
-    .param p1    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Ljava/lang/Long;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

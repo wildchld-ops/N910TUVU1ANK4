@@ -36,7 +36,6 @@
 # direct methods
 .method public constructor <init>(I)V
     .locals 0
-    .param p1    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -57,7 +56,6 @@
 
 .method handleViolation(Landroid/os/StrictMode$ViolationInfo;)V
     .locals 23
-    .param p1    # Landroid/os/StrictMode$ViolationInfo;
 
     if-eqz p1, :cond_0
 
@@ -649,7 +647,6 @@
 
 .method handleViolationWithTimingAttempt(Landroid/os/StrictMode$ViolationInfo;)V
     .locals 6
-    .param p1    # Landroid/os/StrictMode$ViolationInfo;
 
     const/4 v5, 0x1
 
@@ -769,7 +766,6 @@
 
 .method onCustomSlowCall(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget v1, p0, Landroid/os/StrictMode$AndroidBlockGuardPolicy;->mPolicyMask:I
 
@@ -919,7 +915,6 @@
 
 .method public setPolicyMask(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/os/StrictMode$AndroidBlockGuardPolicy;->mPolicyMask:I
 
@@ -928,7 +923,6 @@
 
 .method startHandlingViolationException(Ldalvik/system/BlockGuard$BlockGuardPolicyException;)V
     .locals 3
-    .param p1    # Ldalvik/system/BlockGuard$BlockGuardPolicyException;
 
     new-instance v0, Landroid/os/StrictMode$ViolationInfo;
 

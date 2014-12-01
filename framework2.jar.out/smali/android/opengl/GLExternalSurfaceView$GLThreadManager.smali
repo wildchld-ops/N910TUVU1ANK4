@@ -59,7 +59,6 @@
 
 .method synthetic constructor <init>(Landroid/opengl/GLExternalSurfaceView$1;)V
     .locals 0
-    .param p1    # Landroid/opengl/GLExternalSurfaceView$1;
 
     invoke-direct {p0}, Landroid/opengl/GLExternalSurfaceView$GLThreadManager;-><init>()V
 
@@ -140,7 +139,6 @@
 # virtual methods
 .method public declared-synchronized checkGLDriver(Ljavax/microedition/khronos/opengles/GL10;)V
     .locals 5
-    .param p1    # Ljavax/microedition/khronos/opengles/GL10;
 
     const/4 v1, 0x0
 
@@ -273,7 +271,6 @@
 
 .method public releaseEglContextLocked(Landroid/opengl/GLExternalSurfaceView$GLThread;)V
     .locals 1
-    .param p1    # Landroid/opengl/GLExternalSurfaceView$GLThread;
 
     iget-object v0, p0, Landroid/opengl/GLExternalSurfaceView$GLThreadManager;->mEglOwner:Landroid/opengl/GLExternalSurfaceView$GLThread;
 
@@ -347,7 +344,6 @@
 
 .method public declared-synchronized threadExiting(Landroid/opengl/GLExternalSurfaceView$GLThread;)V
     .locals 4
-    .param p1    # Landroid/opengl/GLExternalSurfaceView$GLThread;
 
     monitor-enter p0
 
@@ -410,7 +406,6 @@
 
 .method public tryAcquireEglContextLocked(Landroid/opengl/GLExternalSurfaceView$GLThread;)Z
     .locals 2
-    .param p1    # Landroid/opengl/GLExternalSurfaceView$GLThread;
 
     const/4 v0, 0x1
 

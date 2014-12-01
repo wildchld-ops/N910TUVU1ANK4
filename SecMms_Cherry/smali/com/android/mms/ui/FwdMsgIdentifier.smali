@@ -38,8 +38,6 @@
 
 .method public constructor <init>(JI)V
     .locals 0
-    .param p1    # J
-    .param p3    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -70,7 +68,6 @@
 
 .method public setMsgId(J)V
     .locals 0
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/android/mms/ui/FwdMsgIdentifier;->msgId:J
 
@@ -79,7 +76,6 @@
 
 .method public setMsgType(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/mms/ui/FwdMsgIdentifier;->msgType:I
 

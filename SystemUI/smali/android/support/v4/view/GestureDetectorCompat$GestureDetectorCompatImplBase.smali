@@ -108,9 +108,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/view/GestureDetector$OnGestureListener;Landroid/os/Handler;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/view/GestureDetector$OnGestureListener;
-    .param p3    # Landroid/os/Handler;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -150,7 +147,6 @@
 
 .method static synthetic access$000(Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase;)Landroid/view/MotionEvent;
     .locals 1
-    .param p0    # Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase;
 
     iget-object v0, p0, Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase;->mCurrentDownEvent:Landroid/view/MotionEvent;
 
@@ -159,7 +155,6 @@
 
 .method static synthetic access$100(Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase;)Landroid/view/GestureDetector$OnGestureListener;
     .locals 1
-    .param p0    # Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase;
 
     iget-object v0, p0, Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase;->mListener:Landroid/view/GestureDetector$OnGestureListener;
 
@@ -168,7 +163,6 @@
 
 .method static synthetic access$200(Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase;)V
     .locals 0
-    .param p0    # Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase;
 
     invoke-direct {p0}, Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase;->dispatchLongPress()V
 
@@ -177,7 +171,6 @@
 
 .method static synthetic access$300(Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase;)Landroid/view/GestureDetector$OnDoubleTapListener;
     .locals 1
-    .param p0    # Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase;
 
     iget-object v0, p0, Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase;->mDoubleTapListener:Landroid/view/GestureDetector$OnDoubleTapListener;
 
@@ -186,7 +179,6 @@
 
 .method static synthetic access$400(Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase;)Z
     .locals 1
-    .param p0    # Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase;
 
     iget-boolean v0, p0, Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase;->mStillDown:Z
 
@@ -195,8 +187,6 @@
 
 .method static synthetic access$502(Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase;Z)Z
     .locals 0
-    .param p0    # Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase;->mDeferConfirmSingleTap:Z
 
@@ -323,7 +313,6 @@
 
 .method private init(Landroid/content/Context;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
 
     if-nez p1, :cond_0
 
@@ -390,9 +379,6 @@
 
 .method private isConsideredDoubleTap(Landroid/view/MotionEvent;Landroid/view/MotionEvent;Landroid/view/MotionEvent;)Z
     .locals 7
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # Landroid/view/MotionEvent;
-    .param p3    # Landroid/view/MotionEvent;
 
     const/4 v2, 0x0
 
@@ -478,7 +464,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 41
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual/range {p1 .. p1}, Landroid/view/MotionEvent;->getAction()I
 
@@ -1741,7 +1726,6 @@
 
 .method public setIsLongpressEnabled(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase;->mIsLongpressEnabled:Z
 
@@ -1750,7 +1734,6 @@
 
 .method public setOnDoubleTapListener(Landroid/view/GestureDetector$OnDoubleTapListener;)V
     .locals 0
-    .param p1    # Landroid/view/GestureDetector$OnDoubleTapListener;
 
     iput-object p1, p0, Landroid/support/v4/view/GestureDetectorCompat$GestureDetectorCompatImplBase;->mDoubleTapListener:Landroid/view/GestureDetector$OnDoubleTapListener;
 

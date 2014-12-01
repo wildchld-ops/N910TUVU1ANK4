@@ -73,7 +73,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     const/high16 v2, -0x3d4c0000
 
@@ -110,8 +109,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/high16 v2, -0x3d4c0000
 
@@ -148,9 +145,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/high16 v2, -0x3d4c0000
 
@@ -187,10 +181,6 @@
 
 .method private drawArcs(Landroid/graphics/Canvas;Landroid/graphics/RectF;ZLandroid/graphics/Paint;)V
     .locals 7
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # Landroid/graphics/RectF;
-    .param p3    # Z
-    .param p4    # Landroid/graphics/Paint;
 
     iget-object v0, p0, Lcom/android/settings/personalvibration/BackgroundView;->bm01:Landroid/graphics/Bitmap;
 
@@ -739,7 +729,6 @@
 
 .method init(Landroid/graphics/Canvas;)V
     .locals 17
-    .param p1    # Landroid/graphics/Canvas;
 
     invoke-virtual/range {p0 .. p0}, Landroid/view/View;->getMeasuredHeight()I
 
@@ -1689,7 +1678,6 @@
 
 .method protected onDraw(Landroid/graphics/Canvas;)V
     .locals 8
-    .param p1    # Landroid/graphics/Canvas;
 
     const v7, 0x3fe66666
 
@@ -1826,7 +1814,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 10
-    .param p1    # Landroid/view/MotionEvent;
 
     const-string v4, "PersonalVibration"
 
@@ -2199,7 +2186,6 @@
 
 .method public setHandler(Landroid/os/Handler;)V
     .locals 0
-    .param p1    # Landroid/os/Handler;
 
     iput-object p1, p0, Lcom/android/settings/personalvibration/BackgroundView;->mHandler:Landroid/os/Handler;
 

@@ -61,8 +61,6 @@
 
 .method synthetic constructor <init>(Landroid/speech/SpeechRecognizer;Landroid/speech/SpeechRecognizer$1;)V
     .locals 0
-    .param p1    # Landroid/speech/SpeechRecognizer;
-    .param p2    # Landroid/speech/SpeechRecognizer$1;
 
     invoke-direct {p0, p1}, Landroid/speech/SpeechRecognizer$InternalListener;-><init>(Landroid/speech/SpeechRecognizer;)V
 
@@ -71,7 +69,6 @@
 
 .method static synthetic access$1000(Landroid/speech/SpeechRecognizer$InternalListener;)Landroid/speech/RecognitionListener;
     .locals 1
-    .param p0    # Landroid/speech/SpeechRecognizer$InternalListener;
 
     iget-object v0, p0, Landroid/speech/SpeechRecognizer$InternalListener;->mInternalListener:Landroid/speech/RecognitionListener;
 
@@ -80,8 +77,6 @@
 
 .method static synthetic access$1002(Landroid/speech/SpeechRecognizer$InternalListener;Landroid/speech/RecognitionListener;)Landroid/speech/RecognitionListener;
     .locals 0
-    .param p0    # Landroid/speech/SpeechRecognizer$InternalListener;
-    .param p1    # Landroid/speech/RecognitionListener;
 
     iput-object p1, p0, Landroid/speech/SpeechRecognizer$InternalListener;->mInternalListener:Landroid/speech/RecognitionListener;
 
@@ -108,7 +103,6 @@
 
 .method public onBufferReceived([B)V
     .locals 2
-    .param p1    # [B
 
     iget-object v0, p0, Landroid/speech/SpeechRecognizer$InternalListener;->mInternalHandler:Landroid/os/Handler;
 
@@ -141,7 +135,6 @@
 
 .method public onError(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v0, p0, Landroid/speech/SpeechRecognizer$InternalListener;->mInternalHandler:Landroid/os/Handler;
 
@@ -162,8 +155,6 @@
 
 .method public onEvent(ILandroid/os/Bundle;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     iget-object v0, p0, Landroid/speech/SpeechRecognizer$InternalListener;->mInternalHandler:Landroid/os/Handler;
 
@@ -180,7 +171,6 @@
 
 .method public onPartialResults(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     iget-object v0, p0, Landroid/speech/SpeechRecognizer$InternalListener;->mInternalHandler:Landroid/os/Handler;
 
@@ -197,7 +187,6 @@
 
 .method public onReadyForSpeech(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     iget-object v0, p0, Landroid/speech/SpeechRecognizer$InternalListener;->mInternalHandler:Landroid/os/Handler;
 
@@ -214,7 +203,6 @@
 
 .method public onResults(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     iget-object v0, p0, Landroid/speech/SpeechRecognizer$InternalListener;->mInternalHandler:Landroid/os/Handler;
 
@@ -231,7 +219,6 @@
 
 .method public onRmsChanged(F)V
     .locals 3
-    .param p1    # F
 
     iget-object v0, p0, Landroid/speech/SpeechRecognizer$InternalListener;->mInternalHandler:Landroid/os/Handler;
 

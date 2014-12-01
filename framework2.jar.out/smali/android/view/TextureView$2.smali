@@ -36,7 +36,6 @@
 # virtual methods
 .method public onFrameAvailable(Landroid/graphics/SurfaceTexture;)V
     .locals 2
-    .param p1    # Landroid/graphics/SurfaceTexture;
 
     iget-object v0, p0, Landroid/view/TextureView$2;->this$0:Landroid/view/TextureView;
 

@@ -30,7 +30,6 @@
 
 .method public constructor <init>(Lcom/visionobjects/resourcemanager/VOLanguagePackManager;)V
     .locals 0
-    .param p1    # Lcom/visionobjects/resourcemanager/VOLanguagePackManager;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -41,8 +40,6 @@
 
 .method private processUpdateFailure(Ljava/lang/String;I)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/visionobjects/resourcemanager/receiver/RMUpdateReceiver;->mlanguagePacksManager:Lcom/visionobjects/resourcemanager/VOLanguagePackManager;
 
@@ -53,7 +50,6 @@
 
 .method private processUpdateSuccess(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/visionobjects/resourcemanager/receiver/RMUpdateReceiver;->mlanguagePacksManager:Lcom/visionobjects/resourcemanager/VOLanguagePackManager;
 
@@ -88,8 +84,6 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     const/4 v5, -0x1
 

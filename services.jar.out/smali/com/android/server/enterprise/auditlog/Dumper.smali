@@ -52,10 +52,6 @@
 # direct methods
 .method public constructor <init>(JJLandroid/os/ParcelFileDescriptor;Ljava/util/ArrayList;Lcom/android/server/enterprise/auditlog/IObserver;)V
     .locals 2
-    .param p1    # J
-    .param p3    # J
-    .param p5    # Landroid/os/ParcelFileDescriptor;
-    .param p7    # Lcom/android/server/enterprise/auditlog/IObserver;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(JJ",
@@ -354,7 +350,6 @@
 
 .method private readFileLineByLine(Ljava/io/File;)V
     .locals 10
-    .param p1    # Ljava/io/File;
 
     const/4 v4, 0x0
 
@@ -621,7 +616,6 @@
 
 .method private readFullFile(Ljava/io/File;)V
     .locals 8
-    .param p1    # Ljava/io/File;
 
     const/4 v3, 0x0
 
@@ -1345,7 +1339,6 @@
 
 .method public setFilter(Lcom/android/server/enterprise/auditlog/Filter;)V
     .locals 0
-    .param p1    # Lcom/android/server/enterprise/auditlog/Filter;
 
     iput-object p1, p0, Lcom/android/server/enterprise/auditlog/Dumper;->mFilter:Lcom/android/server/enterprise/auditlog/Filter;
 
@@ -1354,7 +1347,6 @@
 
 .method public setPackageName(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/server/enterprise/auditlog/Dumper;->mPackageName:Ljava/lang/String;
 

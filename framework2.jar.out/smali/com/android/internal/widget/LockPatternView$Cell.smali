@@ -79,8 +79,6 @@
 
 .method private constructor <init>(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -95,8 +93,6 @@
 
 .method private static checkRange(II)V
     .locals 2
-    .param p0    # I
-    .param p1    # I
 
     const/4 v0, 0x2
 
@@ -133,8 +129,6 @@
 
 .method public static declared-synchronized of(II)Lcom/android/internal/widget/LockPatternView$Cell;
     .locals 2
-    .param p0    # I
-    .param p1    # I
 
     const-class v1, Lcom/android/internal/widget/LockPatternView$Cell;
 

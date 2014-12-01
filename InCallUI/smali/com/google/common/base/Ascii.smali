@@ -14,7 +14,6 @@
 
 .method public static isUpperCase(C)Z
     .locals 1
-    .param p0    # C
 
     const/16 v0, 0x41
 
@@ -37,7 +36,6 @@
 
 .method public static toLowerCase(C)C
     .locals 1
-    .param p0    # C
 
     invoke-static {p0}, Lcom/google/common/base/Ascii;->isUpperCase(C)Z
 
@@ -55,7 +53,6 @@
 
 .method public static toLowerCase(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 

@@ -137,7 +137,6 @@
 
 .method public onData(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/media/UnstyledTextExtractor;->mLine:Ljava/lang/StringBuilder;
 
@@ -148,7 +147,6 @@
 
 .method public onEnd(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     return-void
 .end method
@@ -218,16 +216,12 @@
 
 .method public onStart(Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method public onTimeStamp(J)V
     .locals 5
-    .param p1    # J
 
     iget-object v0, p0, Landroid/media/UnstyledTextExtractor;->mLine:Ljava/lang/StringBuilder;
 

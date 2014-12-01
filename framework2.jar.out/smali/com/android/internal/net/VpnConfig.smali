@@ -185,7 +185,6 @@
 
 .method public static getIntentForStatusPanel(Landroid/content/Context;)Landroid/app/PendingIntent;
     .locals 6
-    .param p0    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -220,8 +219,6 @@
 
 .method public static getIntentForStatusPanelAsUser(Landroid/content/Context;I)Landroid/app/PendingIntent;
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -258,9 +255,6 @@
 
 .method public static getIntentForStatusPanelEnterpriseVpn(Landroid/content/Context;Lcom/android/internal/net/VpnConfig;Z)Landroid/app/PendingIntent;
     .locals 9
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/internal/net/VpnConfig;
-    .param p2    # Z
 
     const/4 v4, 0x0
 
@@ -445,10 +439,6 @@
 
 .method public static getIntentForStatusPanelEnterpriseVpnAsUser(Landroid/content/Context;Lcom/android/internal/net/VpnConfig;ZI)Landroid/app/PendingIntent;
     .locals 12
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/internal/net/VpnConfig;
-    .param p2    # Z
-    .param p3    # I
 
     const/4 v4, 0x0
 
@@ -698,7 +688,6 @@
 
 .method public static getIntentForStatusPanelRefresh(Landroid/content/Context;)Landroid/app/PendingIntent;
     .locals 6
-    .param p0    # Landroid/content/Context;
 
     new-instance v2, Landroid/content/Intent;
 
@@ -739,8 +728,6 @@
 
 .method public static getIntentForStatusPanelRefreshAsUser(Landroid/content/Context;I)Landroid/app/PendingIntent;
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     new-instance v2, Landroid/content/Intent;
 
@@ -795,7 +782,6 @@
 # virtual methods
 .method public addLegacyAddresses(Ljava/lang/String;)V
     .locals 9
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p1}, Ljava/lang/String;->trim()Ljava/lang/String;
 
@@ -871,7 +857,6 @@
 
 .method public addLegacyRoutes(Ljava/lang/String;)V
     .locals 10
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p1}, Ljava/lang/String;->trim()Ljava/lang/String;
 
@@ -961,8 +946,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/internal/net/VpnConfig;->user:Ljava/lang/String;
 

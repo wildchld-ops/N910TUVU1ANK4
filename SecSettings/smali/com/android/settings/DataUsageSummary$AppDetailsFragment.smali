@@ -25,9 +25,6 @@
 
 .method public static show(Lcom/android/settings/DataUsageSummary;Lcom/android/settings/DataUsageSummary$AppItem;Ljava/lang/CharSequence;)V
     .locals 4
-    .param p0    # Lcom/android/settings/DataUsageSummary;
-    .param p1    # Lcom/android/settings/DataUsageSummary$AppItem;
-    .param p2    # Ljava/lang/CharSequence;
 
     invoke-virtual {p0}, Landroid/app/Fragment;->isAdded()Z
 

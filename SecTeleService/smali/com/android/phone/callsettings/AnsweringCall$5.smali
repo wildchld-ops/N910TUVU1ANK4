@@ -53,15 +53,15 @@
 
     move-result-object v1
 
-    invoke-virtual {v1, v0}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+    invoke-virtual {v1, v0}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     iget-object v1, p0, Lcom/android/phone/callsettings/AnsweringCall$5;->this$0:Lcom/android/phone/callsettings/AnsweringCall;
 
-    invoke-virtual {v1}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v1}, Lcom/android/phone/callsettings/AnsweringCall;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v1}, Landroid/app/Activity;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 

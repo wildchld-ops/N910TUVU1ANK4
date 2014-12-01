@@ -70,8 +70,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/app/SearchManager;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/app/SearchManager;
 
     const/high16 v3, 0x10000000
 
@@ -142,7 +140,6 @@
 
 .method static synthetic access$000(Landroid/app/SearchDialog;)Z
     .locals 1
-    .param p0    # Landroid/app/SearchDialog;
 
     invoke-direct {p0}, Landroid/app/SearchDialog;->onClosePressed()Z
 
@@ -303,12 +300,6 @@
 
 .method private createIntent(Ljava/lang/String;Landroid/net/Uri;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)Landroid/content/Intent;
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/net/Uri;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
-    .param p6    # Ljava/lang/String;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -378,10 +369,6 @@
 
 .method private doShow(Ljava/lang/String;ZLandroid/content/ComponentName;Landroid/os/Bundle;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # Landroid/content/ComponentName;
-    .param p4    # Landroid/os/Bundle;
 
     invoke-direct {p0, p3, p4}, Landroid/app/SearchDialog;->show(Landroid/content/ComponentName;Landroid/os/Bundle;)Z
 
@@ -411,7 +398,6 @@
 
 .method private isEmpty(Landroid/widget/AutoCompleteTextView;)Z
     .locals 1
-    .param p1    # Landroid/widget/AutoCompleteTextView;
 
     invoke-virtual {p1}, Landroid/widget/AutoCompleteTextView;->getText()Landroid/text/Editable;
 
@@ -436,7 +422,6 @@
 
 .method static isLandscapeMode(Landroid/content/Context;)Z
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -465,8 +450,6 @@
 
 .method private isOutOfBounds(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 4
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     invoke-virtual {p2}, Landroid/view/MotionEvent;->getX()F
 
@@ -528,7 +511,6 @@
 
 .method private launchIntent(Landroid/content/Intent;)V
     .locals 4
-    .param p1    # Landroid/content/Intent;
 
     if-nez p1, :cond_0
 
@@ -625,7 +607,6 @@
 
 .method static resolveDialogTheme(Landroid/content/Context;)I
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     new-instance v0, Landroid/util/TypedValue;
 
@@ -648,7 +629,6 @@
 
 .method private setUserQuery(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -674,8 +654,6 @@
 
 .method private show(Landroid/content/ComponentName;Landroid/os/Bundle;)Z
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Landroid/os/Bundle;
 
     iget-object v1, p0, Landroid/app/SearchDialog;->mContext:Landroid/content/Context;
 
@@ -1119,8 +1097,6 @@
 
 .method protected launchQuerySearch(ILjava/lang/String;)V
     .locals 8
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -1244,7 +1220,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v2, -0x1
 
@@ -1281,7 +1256,6 @@
 
 .method public onRestoreInstanceState(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     if-nez p1, :cond_1
 
@@ -1413,7 +1387,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-object v0, p0, Landroid/app/SearchDialog;->mSearchAutoComplete:Landroid/widget/AutoCompleteTextView;
 
@@ -1448,7 +1421,6 @@
 
 .method public setListSelection(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/app/SearchDialog;->mSearchAutoComplete:Landroid/widget/AutoCompleteTextView;
 
@@ -1459,7 +1431,6 @@
 
 .method public setWorking(Z)V
     .locals 3
-    .param p1    # Z
 
     const/4 v1, 0x0
 
@@ -1490,10 +1461,6 @@
 
 .method public show(Ljava/lang/String;ZLandroid/content/ComponentName;Landroid/os/Bundle;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # Landroid/content/ComponentName;
-    .param p4    # Landroid/os/Bundle;
 
     invoke-direct {p0, p1, p2, p3, p4}, Landroid/app/SearchDialog;->doShow(Ljava/lang/String;ZLandroid/content/ComponentName;Landroid/os/Bundle;)Z
 

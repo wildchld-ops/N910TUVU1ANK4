@@ -40,7 +40,6 @@
 # virtual methods
 .method public onMenuItemClick(Landroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # Landroid/view/MenuItem;
 
     iget-object v0, p0, Lcom/android/settings/DreamSettings$5;->val$onClick:Ljava/lang/Runnable;
 

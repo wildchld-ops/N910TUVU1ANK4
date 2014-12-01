@@ -56,8 +56,6 @@
 
 .method constructor <init>([Ljava/lang/String;I)V
     .locals 0
-    .param p1    # [Ljava/lang/String;
-    .param p2    # I
 
     invoke-direct {p0}, Ljava/util/AbstractList;-><init>()V
 
@@ -72,7 +70,6 @@
 # virtual methods
 .method public bridge synthetic get(I)Ljava/lang/Object;
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/net/Uri$PathSegments;->get(I)Ljava/lang/String;
 
@@ -83,7 +80,6 @@
 
 .method public get(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/net/Uri$PathSegments;->size:I
 

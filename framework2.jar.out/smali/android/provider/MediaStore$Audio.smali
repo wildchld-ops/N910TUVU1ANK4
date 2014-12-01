@@ -40,7 +40,6 @@
 
 .method public static keyFor(Ljava/lang/String;)Ljava/lang/String;
     .locals 8
-    .param p0    # Ljava/lang/String;
 
     const/16 v7, 0x2e
 

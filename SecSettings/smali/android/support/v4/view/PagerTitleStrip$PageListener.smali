@@ -37,8 +37,6 @@
 
 .method synthetic constructor <init>(Landroid/support/v4/view/PagerTitleStrip;Landroid/support/v4/view/PagerTitleStrip$1;)V
     .locals 0
-    .param p1    # Landroid/support/v4/view/PagerTitleStrip;
-    .param p2    # Landroid/support/v4/view/PagerTitleStrip$1;
 
     invoke-direct {p0, p1}, Landroid/support/v4/view/PagerTitleStrip$PageListener;-><init>(Landroid/support/v4/view/PagerTitleStrip;)V
 
@@ -49,8 +47,6 @@
 # virtual methods
 .method public onAdapterChanged(Landroid/support/v4/view/PagerAdapter;Landroid/support/v4/view/PagerAdapter;)V
     .locals 1
-    .param p1    # Landroid/support/v4/view/PagerAdapter;
-    .param p2    # Landroid/support/v4/view/PagerAdapter;
 
     iget-object v0, p0, Landroid/support/v4/view/PagerTitleStrip$PageListener;->this$0:Landroid/support/v4/view/PagerTitleStrip;
 
@@ -122,7 +118,6 @@
 
 .method public onPageScrollStateChanged(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/support/v4/view/PagerTitleStrip$PageListener;->mScrollState:I
 
@@ -131,9 +126,6 @@
 
 .method public onPageScrolled(IFI)V
     .locals 2
-    .param p1    # I
-    .param p2    # F
-    .param p3    # I
 
     const/high16 v0, 0x3f000000
 
@@ -155,7 +147,6 @@
 
 .method public onPageSelected(I)V
     .locals 4
-    .param p1    # I
 
     const/4 v0, 0x0
 

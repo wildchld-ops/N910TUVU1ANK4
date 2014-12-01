@@ -29,7 +29,6 @@
 # virtual methods
 .method consoleLogging(Ljava/lang/String;)Ljava/lang/String;
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x1
 
@@ -92,7 +91,6 @@
 
 .method fileLogging(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x1
 

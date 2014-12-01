@@ -186,7 +186,6 @@
 
 .method private backupContexts(Ljava/io/File;)V
     .locals 3
-    .param p1    # Ljava/io/File;
 
     new-instance v0, Ljava/io/File;
 
@@ -249,7 +248,6 @@
 
 .method private copyUpdate(Ljava/io/File;)V
     .locals 3
-    .param p1    # Ljava/io/File;
 
     new-instance v0, Ljava/io/File;
 
@@ -320,9 +318,6 @@
 
 .method private installFile(Ljava/io/File;Ljava/io/BufferedInputStream;I)V
     .locals 3
-    .param p1    # Ljava/io/File;
-    .param p2    # Ljava/io/BufferedInputStream;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -348,7 +343,6 @@
 
 .method private readChunkLengths(Ljava/io/BufferedInputStream;)[I
     .locals 3
-    .param p1    # Ljava/io/BufferedInputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -396,7 +390,6 @@
 
 .method private readInt(Ljava/io/BufferedInputStream;)I
     .locals 4
-    .param p1    # Ljava/io/BufferedInputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -430,7 +423,6 @@
 
 .method private setEnforcingMode(Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -603,8 +595,6 @@
 # virtual methods
 .method protected postInstall(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     :try_start_0
     invoke-direct {p0}, Lcom/android/server/updates/SELinuxPolicyInstallReceiver;->unpackBundle()V

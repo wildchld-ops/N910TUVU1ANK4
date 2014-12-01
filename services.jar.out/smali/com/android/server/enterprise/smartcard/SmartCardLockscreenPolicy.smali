@@ -45,7 +45,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -82,8 +81,6 @@
 
 .method private broadcastIntentAsUser(ZI)V
     .locals 5
-    .param p1    # Z
-    .param p2    # I
 
     new-instance v0, Landroid/content/Intent;
 
@@ -305,7 +302,6 @@
 
 .method public isAuthenticationEnabledAsUser(I)Z
     .locals 8
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -369,14 +365,12 @@
 
 .method public onAdminAdded(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onAdminRemoved(I)V
     .locals 6
-    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -466,7 +460,6 @@
 
 .method public onPreAdminRemoval(I)V
     .locals 5
-    .param p1    # I
 
     new-instance v1, Landroid/app/enterprise/ContextInfo;
 

@@ -142,11 +142,6 @@
 
 .method public constructor <init>(Landroid/content/res/Resources;Landroid/inputmethodservice/Keyboard$Row;IILandroid/content/res/XmlResourceParser;)V
     .locals 9
-    .param p1    # Landroid/content/res/Resources;
-    .param p2    # Landroid/inputmethodservice/Keyboard$Row;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Landroid/content/res/XmlResourceParser;
 
     const/4 v8, 0x3
 
@@ -441,7 +436,6 @@
 
 .method public constructor <init>(Landroid/inputmethodservice/Keyboard$Row;)V
     .locals 1
-    .param p1    # Landroid/inputmethodservice/Keyboard$Row;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -527,8 +521,6 @@
 
 .method public isInside(II)Z
     .locals 8
-    .param p1    # I
-    .param p2    # I
 
     const/4 v4, 0x1
 
@@ -681,7 +673,6 @@
 
 .method public onReleased(Z)V
     .locals 3
-    .param p1    # Z
 
     const/4 v1, 0x1
 
@@ -723,7 +714,6 @@
 
 .method parseCSV(Ljava/lang/String;)[I
     .locals 9
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -824,8 +814,6 @@
 
 .method public squaredDistanceFrom(II)I
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     iget v2, p0, Landroid/inputmethodservice/Keyboard$Key;->x:I
 

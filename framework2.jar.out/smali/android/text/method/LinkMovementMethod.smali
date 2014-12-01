@@ -38,9 +38,6 @@
 
 .method private action(ILandroid/widget/TextView;Landroid/text/Spannable;)Z
     .locals 25
-    .param p1    # I
-    .param p2    # Landroid/widget/TextView;
-    .param p3    # Landroid/text/Spannable;
 
     invoke-virtual/range {p2 .. p2}, Landroid/widget/TextView;->getLayout()Landroid/text/Layout;
 
@@ -404,8 +401,6 @@
 
 .method protected down(Landroid/widget/TextView;Landroid/text/Spannable;)Z
     .locals 1
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # Landroid/text/Spannable;
 
     const/4 v0, 0x3
 
@@ -430,11 +425,6 @@
 
 .method protected handleMovementKey(Landroid/widget/TextView;Landroid/text/Spannable;IILandroid/view/KeyEvent;)Z
     .locals 2
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # Landroid/text/Spannable;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x1
 
@@ -484,8 +474,6 @@
 
 .method public initialize(Landroid/widget/TextView;Landroid/text/Spannable;)V
     .locals 1
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # Landroid/text/Spannable;
 
     invoke-static {p2}, Landroid/text/Selection;->removeSelection(Landroid/text/Spannable;)V
 
@@ -498,8 +486,6 @@
 
 .method protected left(Landroid/widget/TextView;Landroid/text/Spannable;)Z
     .locals 1
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # Landroid/text/Spannable;
 
     const/4 v0, 0x2
 
@@ -524,9 +510,6 @@
 
 .method public onTakeFocus(Landroid/widget/TextView;Landroid/text/Spannable;I)V
     .locals 3
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # Landroid/text/Spannable;
-    .param p3    # I
 
     const/4 v2, 0x0
 
@@ -555,9 +538,6 @@
 
 .method public onTouchEvent(Landroid/widget/TextView;Landroid/text/Spannable;Landroid/view/MotionEvent;)Z
     .locals 10
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # Landroid/text/Spannable;
-    .param p3    # Landroid/view/MotionEvent;
 
     const/4 v7, 0x1
 
@@ -676,8 +656,6 @@
 
 .method protected right(Landroid/widget/TextView;Landroid/text/Spannable;)Z
     .locals 1
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # Landroid/text/Spannable;
 
     const/4 v0, 0x3
 
@@ -702,8 +680,6 @@
 
 .method protected up(Landroid/widget/TextView;Landroid/text/Spannable;)Z
     .locals 1
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # Landroid/text/Spannable;
 
     const/4 v0, 0x2
 

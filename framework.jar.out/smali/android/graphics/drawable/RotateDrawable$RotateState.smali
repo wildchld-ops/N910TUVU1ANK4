@@ -41,9 +41,6 @@
 # direct methods
 .method public constructor <init>(Landroid/graphics/drawable/RotateDrawable$RotateState;Landroid/graphics/drawable/RotateDrawable;Landroid/content/res/Resources;)V
     .locals 2
-    .param p1    # Landroid/graphics/drawable/RotateDrawable$RotateState;
-    .param p2    # Landroid/graphics/drawable/RotateDrawable;
-    .param p3    # Landroid/content/res/Resources;
 
     invoke-direct {p0}, Landroid/graphics/drawable/Drawable$ConstantState;-><init>()V
 
@@ -188,7 +185,6 @@
 
 .method public newDrawable(Landroid/content/res/Resources;)Landroid/graphics/drawable/Drawable;
     .locals 2
-    .param p1    # Landroid/content/res/Resources;
 
     new-instance v0, Landroid/graphics/drawable/RotateDrawable;
 

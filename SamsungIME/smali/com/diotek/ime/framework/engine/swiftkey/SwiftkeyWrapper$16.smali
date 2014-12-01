@@ -36,7 +36,6 @@
 # virtual methods
 .method public onPredictionsReady(Lcom/touchtype_fluency/Predictions;)V
     .locals 2
-    .param p1    # Lcom/touchtype_fluency/Predictions;
 
     const/16 v1, 0x14
 

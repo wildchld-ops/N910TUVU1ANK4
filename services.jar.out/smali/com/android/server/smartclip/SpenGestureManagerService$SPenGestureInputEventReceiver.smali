@@ -21,8 +21,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/smartclip/SpenGestureManagerService;Landroid/view/InputChannel;Landroid/os/Looper;)V
     .locals 0
-    .param p2    # Landroid/view/InputChannel;
-    .param p3    # Landroid/os/Looper;
 
     iput-object p1, p0, Lcom/android/server/smartclip/SpenGestureManagerService$SPenGestureInputEventReceiver;->this$0:Lcom/android/server/smartclip/SpenGestureManagerService;
 
@@ -33,7 +31,6 @@
 
 .method private disableSPenGestureView(Landroid/view/MotionEvent;)V
     .locals 3
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v2, 0x0
 
@@ -129,7 +126,6 @@
 # virtual methods
 .method public onInputEvent(Landroid/view/InputEvent;)V
     .locals 11
-    .param p1    # Landroid/view/InputEvent;
 
     const/4 v7, 0x2
 

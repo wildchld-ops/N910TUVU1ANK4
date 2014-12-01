@@ -68,7 +68,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;)V
 
@@ -79,8 +78,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -91,8 +88,6 @@
 
 .method private CMASMoreInfoInitActivityState(Landroid/os/Bundle;Landroid/content/Intent;)V
     .locals 12
-    .param p1    # Landroid/os/Bundle;
-    .param p2    # Landroid/content/Intent;
 
     const-wide/16 v10, 0x0
 
@@ -415,8 +410,6 @@
 
 .method public static createIntent(Landroid/content/Context;J)Landroid/content/Intent;
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
 
     const-string v2, "CMASMoreInfo"
 
@@ -492,7 +485,6 @@
 
 .method private declared-synchronized setIntent(Landroid/content/Intent;)V
     .locals 2
-    .param p1    # Landroid/content/Intent;
 
     monitor-enter p0
 
@@ -635,7 +627,6 @@
 # virtual methods
 .method public CMASMoreInfoInitialize(Landroid/os/Bundle;)V
     .locals 6
-    .param p1    # Landroid/os/Bundle;
 
     const-string v3, "CMASMoreInfo"
 
@@ -731,7 +722,6 @@
 
 .method public CMASMoreInfoSetData(Landroid/database/Cursor;)V
     .locals 14
-    .param p1    # Landroid/database/Cursor;
 
     const-string v11, "CMASMoreInfo"
 
@@ -1364,8 +1354,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;Landroid/content/Intent;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
-    .param p2    # Landroid/content/Intent;
 
     const-string v0, "CMASMoreInfo"
 
@@ -1406,7 +1394,6 @@
 
 .method protected onNewIntent(Landroid/content/Intent;)V
     .locals 12
-    .param p1    # Landroid/content/Intent;
 
     const-wide/16 v10, 0x0
 
@@ -1632,7 +1619,6 @@
 
 .method public setActivity(Landroid/app/Activity;)V
     .locals 2
-    .param p1    # Landroid/app/Activity;
 
     const-string v0, "CMASMoreInfo"
 

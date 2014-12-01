@@ -42,7 +42,6 @@
 
 .method public constructor <init>(Landroid/os/Parcel;)V
     .locals 3
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -89,9 +88,6 @@
 
 .method public constructor <init>([Landroid/view/textservice/SuggestionsInfo;[I[I)V
     .locals 3
-    .param p1    # [Landroid/view/textservice/SuggestionsInfo;
-    .param p2    # [I
-    .param p3    # [I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -166,7 +162,6 @@
 
 .method public getLengthAt(I)I
     .locals 1
-    .param p1    # I
 
     if-ltz p1, :cond_0
 
@@ -191,7 +186,6 @@
 
 .method public getOffsetAt(I)I
     .locals 1
-    .param p1    # I
 
     if-ltz p1, :cond_0
 
@@ -226,7 +220,6 @@
 
 .method public getSuggestionsInfoAt(I)Landroid/view/textservice/SuggestionsInfo;
     .locals 1
-    .param p1    # I
 
     if-ltz p1, :cond_0
 
@@ -251,8 +244,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 3
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v1, p0, Landroid/view/textservice/SentenceSuggestionsInfo;->mSuggestionsInfos:[Landroid/view/textservice/SuggestionsInfo;
 

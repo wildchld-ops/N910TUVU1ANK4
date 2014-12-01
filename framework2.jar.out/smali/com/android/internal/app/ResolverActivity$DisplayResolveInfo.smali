@@ -31,10 +31,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/internal/app/ResolverActivity;Landroid/content/pm/ResolveInfo;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Landroid/content/Intent;)V
     .locals 0
-    .param p2    # Landroid/content/pm/ResolveInfo;
-    .param p3    # Ljava/lang/CharSequence;
-    .param p4    # Ljava/lang/CharSequence;
-    .param p5    # Landroid/content/Intent;
 
     iput-object p1, p0, Lcom/android/internal/app/ResolverActivity$DisplayResolveInfo;->this$0:Lcom/android/internal/app/ResolverActivity;
 

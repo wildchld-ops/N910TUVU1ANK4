@@ -38,7 +38,6 @@
 
 .method synthetic constructor <init>(Lcom/android/server/accounts/AccountAuthenticatorCache$1;)V
     .locals 0
-    .param p1    # Lcom/android/server/accounts/AccountAuthenticatorCache$1;
 
     invoke-direct {p0}, Lcom/android/server/accounts/AccountAuthenticatorCache$MySerializer;-><init>()V
 
@@ -49,7 +48,6 @@
 # virtual methods
 .method public createFromXml(Lorg/xmlpull/v1/XmlPullParser;)Landroid/accounts/AuthenticatorDescription;
     .locals 2
-    .param p1    # Lorg/xmlpull/v1/XmlPullParser;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -74,7 +72,6 @@
 
 .method public bridge synthetic createFromXml(Lorg/xmlpull/v1/XmlPullParser;)Ljava/lang/Object;
     .locals 1
-    .param p1    # Lorg/xmlpull/v1/XmlPullParser;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -91,8 +88,6 @@
 
 .method public writeAsXml(Landroid/accounts/AuthenticatorDescription;Lorg/xmlpull/v1/XmlSerializer;)V
     .locals 3
-    .param p1    # Landroid/accounts/AuthenticatorDescription;
-    .param p2    # Lorg/xmlpull/v1/XmlSerializer;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -112,8 +107,6 @@
 
 .method public bridge synthetic writeAsXml(Ljava/lang/Object;Lorg/xmlpull/v1/XmlSerializer;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Lorg/xmlpull/v1/XmlSerializer;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

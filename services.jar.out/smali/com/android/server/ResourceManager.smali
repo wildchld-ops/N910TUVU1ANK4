@@ -60,7 +60,6 @@
 
 .method protected constructor <init>(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -71,12 +70,6 @@
 
 .method protected static declared-synchronized addBlacklistEntryToMac(Ljava/io/File;Ljava/lang/String;Ljava/lang/String;ILandroid/content/pm/ApplicationInfo;I)I
     .locals 37
-    .param p0    # Ljava/io/File;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Landroid/content/pm/ApplicationInfo;
-    .param p5    # I
 
     const-class v35, Lcom/android/server/ResourceManager;
 
@@ -998,12 +991,6 @@
 
 .method protected static declared-synchronized addWhitelistEntryToMac(Ljava/io/File;Ljava/lang/String;Ljava/lang/String;ILandroid/content/pm/ApplicationInfo;I)I
     .locals 37
-    .param p0    # Ljava/io/File;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Landroid/content/pm/ApplicationInfo;
-    .param p5    # I
 
     const-class v35, Lcom/android/server/ResourceManager;
 
@@ -1925,8 +1912,6 @@
 
 .method private static checkTrustedEntryExists(Lorg/w3c/dom/Element;Ljava/lang/String;)Lorg/w3c/dom/Element;
     .locals 4
-    .param p0    # Lorg/w3c/dom/Element;
-    .param p1    # Ljava/lang/String;
 
     if-nez p0, :cond_1
 
@@ -1988,8 +1973,6 @@
 
 .method private static checkUser(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 6
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const-string v5, ","
 
@@ -2032,7 +2015,6 @@
 
 .method public static declared-synchronized getInstance(Landroid/content/Context;)Lcom/android/server/ResourceManager;
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     const-class v1, Lcom/android/server/ResourceManager;
 
@@ -2068,8 +2050,6 @@
 
 .method private static getSignatureFromPackage(Ljava/lang/String;I)Ljava/util/ArrayList;
     .locals 8
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2145,7 +2125,6 @@
 
 .method private static getValidStr(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -2245,9 +2224,6 @@
 
 .method private loadContainerSetting(Ljava/lang/String;IZ)I
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Z
 
     const/4 v0, -0x1
 
@@ -2295,10 +2271,6 @@
 
 .method protected static declared-synchronized removeBlacklistEntryFromMac(Ljava/io/File;Ljava/lang/String;II)Z
     .locals 27
-    .param p0    # Ljava/io/File;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     const-class v23, Lcom/android/server/ResourceManager;
 
@@ -2873,8 +2845,6 @@
 
 .method private static removeUser(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 9
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const/4 v5, 0x0
 
@@ -2956,10 +2926,6 @@
 
 .method protected static declared-synchronized removeWhitelistEntryFromMac(Ljava/io/File;Ljava/lang/String;II)Z
     .locals 27
-    .param p0    # Ljava/io/File;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     const-class v23, Lcom/android/server/ResourceManager;
 
@@ -3536,10 +3502,6 @@
 # virtual methods
 .method public addAppToSBABlacklist(ILjava/lang/String;[Ljava/lang/String;I)I
     .locals 11
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # [Ljava/lang/String;
-    .param p4    # I
 
     const/4 v6, 0x0
 
@@ -3785,10 +3747,6 @@
 
 .method public addAppToWhitelist(ILjava/lang/String;[Ljava/lang/String;I)I
     .locals 11
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # [Ljava/lang/String;
-    .param p4    # I
 
     const/4 v6, 0x0
 
@@ -4034,8 +3992,6 @@
 
 .method public clearSBABlacklist(II)I
     .locals 9
-    .param p1    # I
-    .param p2    # I
 
     const/4 v6, -0x1
 
@@ -4110,8 +4066,6 @@
 
 .method public clearWhitelist(II)I
     .locals 9
-    .param p1    # I
-    .param p2    # I
 
     const/4 v6, -0x1
 
@@ -4186,8 +4140,6 @@
 
 .method public getPackagesFromSBABlacklist(II)[Ljava/lang/String;
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     sget v1, Lcom/android/server/ResourceManager;->SDCARD_TYPE:I
 
@@ -4216,7 +4168,6 @@
 
 .method public getPackagesFromSBAList(I)[Ljava/lang/String;
     .locals 2
-    .param p1    # I
 
     sget v1, Lcom/android/server/ResourceManager;->SDCARD_TYPE:I
 
@@ -4245,8 +4196,6 @@
 
 .method public getPackagesFromWhitelist(II)[Ljava/lang/String;
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     sget v1, Lcom/android/server/ResourceManager;->SDCARD_TYPE:I
 
@@ -4275,8 +4224,6 @@
 
 .method public isSBAApp(Ljava/lang/String;I)I
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v2, -0x1
 
@@ -4320,9 +4267,6 @@
 
 .method public isWhitelistApp(ILjava/lang/String;I)I
     .locals 4
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     const/4 v2, -0x1
 
@@ -4366,9 +4310,6 @@
 
 .method public removeAppFromSBABlacklist(ILjava/lang/String;I)I
     .locals 11
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     const/4 v6, -0x1
 
@@ -4504,9 +4445,6 @@
 
 .method public removeAppFromWhitelist(ILjava/lang/String;I)I
     .locals 11
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     const/4 v6, -0x1
 

@@ -12,9 +12,6 @@
 # direct methods
 .method constructor <init>(Landroid/speech/tts/TextToSpeechService$UtteranceProgressDispatcher;Ljava/lang/Object;J)V
     .locals 1
-    .param p1    # Landroid/speech/tts/TextToSpeechService$UtteranceProgressDispatcher;
-    .param p2    # Ljava/lang/Object;
-    .param p3    # J
 
     invoke-direct {p0, p1, p2}, Landroid/speech/tts/PlaybackQueueItem;-><init>(Landroid/speech/tts/TextToSpeechService$UtteranceProgressDispatcher;Ljava/lang/Object;)V
 
@@ -66,7 +63,6 @@
 
 .method stop(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Landroid/speech/tts/SilencePlaybackQueueItem;->mCondVar:Landroid/os/ConditionVariable;
 

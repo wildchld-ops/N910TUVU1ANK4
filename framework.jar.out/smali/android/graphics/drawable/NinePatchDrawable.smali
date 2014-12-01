@@ -55,12 +55,6 @@
 
 .method public constructor <init>(Landroid/content/res/Resources;Landroid/graphics/Bitmap;[BLandroid/graphics/Rect;Landroid/graphics/Rect;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Landroid/content/res/Resources;
-    .param p2    # Landroid/graphics/Bitmap;
-    .param p3    # [B
-    .param p4    # Landroid/graphics/Rect;
-    .param p5    # Landroid/graphics/Rect;
-    .param p6    # Ljava/lang/String;
 
     new-instance v0, Landroid/graphics/drawable/NinePatchDrawable$NinePatchState;
 
@@ -83,11 +77,6 @@
 
 .method public constructor <init>(Landroid/content/res/Resources;Landroid/graphics/Bitmap;[BLandroid/graphics/Rect;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Landroid/content/res/Resources;
-    .param p2    # Landroid/graphics/Bitmap;
-    .param p3    # [B
-    .param p4    # Landroid/graphics/Rect;
-    .param p5    # Ljava/lang/String;
 
     new-instance v0, Landroid/graphics/drawable/NinePatchDrawable$NinePatchState;
 
@@ -110,8 +99,6 @@
 
 .method public constructor <init>(Landroid/content/res/Resources;Landroid/graphics/NinePatch;)V
     .locals 2
-    .param p1    # Landroid/content/res/Resources;
-    .param p2    # Landroid/graphics/NinePatch;
 
     new-instance v0, Landroid/graphics/drawable/NinePatchDrawable$NinePatchState;
 
@@ -134,10 +121,6 @@
 
 .method public constructor <init>(Landroid/graphics/Bitmap;[BLandroid/graphics/Rect;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # [B
-    .param p3    # Landroid/graphics/Rect;
-    .param p4    # Ljava/lang/String;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -158,7 +141,6 @@
 
 .method public constructor <init>(Landroid/graphics/NinePatch;)V
     .locals 2
-    .param p1    # Landroid/graphics/NinePatch;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -179,8 +161,6 @@
 
 .method private constructor <init>(Landroid/graphics/drawable/NinePatchDrawable$NinePatchState;Landroid/content/res/Resources;)V
     .locals 1
-    .param p1    # Landroid/graphics/drawable/NinePatchDrawable$NinePatchState;
-    .param p2    # Landroid/content/res/Resources;
 
     invoke-direct {p0}, Landroid/graphics/drawable/Drawable;-><init>()V
 
@@ -199,9 +179,6 @@
 
 .method synthetic constructor <init>(Landroid/graphics/drawable/NinePatchDrawable$NinePatchState;Landroid/content/res/Resources;Landroid/graphics/drawable/NinePatchDrawable$1;)V
     .locals 0
-    .param p1    # Landroid/graphics/drawable/NinePatchDrawable$NinePatchState;
-    .param p2    # Landroid/content/res/Resources;
-    .param p3    # Landroid/graphics/drawable/NinePatchDrawable$1;
 
     invoke-direct {p0, p1, p2}, Landroid/graphics/drawable/NinePatchDrawable;-><init>(Landroid/graphics/drawable/NinePatchDrawable$NinePatchState;Landroid/content/res/Resources;)V
 
@@ -370,9 +347,6 @@
 
 .method private static scaleFromDensity(Landroid/graphics/Insets;II)Landroid/graphics/Insets;
     .locals 5
-    .param p0    # Landroid/graphics/Insets;
-    .param p1    # I
-    .param p2    # I
 
     iget v4, p0, Landroid/graphics/Insets;->left:I
 
@@ -407,8 +381,6 @@
 
 .method private setNinePatchState(Landroid/graphics/drawable/NinePatchDrawable$NinePatchState;Landroid/content/res/Resources;)V
     .locals 1
-    .param p1    # Landroid/graphics/drawable/NinePatchDrawable$NinePatchState;
-    .param p2    # Landroid/content/res/Resources;
 
     iput-object p1, p0, Landroid/graphics/drawable/NinePatchDrawable;->mNinePatchState:Landroid/graphics/drawable/NinePatchDrawable$NinePatchState;
 
@@ -463,7 +435,6 @@
 # virtual methods
 .method public draw(Landroid/graphics/Canvas;)V
     .locals 4
-    .param p1    # Landroid/graphics/Canvas;
 
     invoke-virtual {p0}, Landroid/graphics/drawable/NinePatchDrawable;->getBounds()Landroid/graphics/Rect;
 
@@ -675,7 +646,6 @@
 
 .method public getPadding(Landroid/graphics/Rect;)Z
     .locals 4
-    .param p1    # Landroid/graphics/Rect;
 
     invoke-direct {p0}, Landroid/graphics/drawable/NinePatchDrawable;->needsMirroring()Z
 
@@ -779,9 +749,6 @@
 
 .method public inflate(Landroid/content/res/Resources;Lorg/xmlpull/v1/XmlPullParser;Landroid/util/AttributeSet;)V
     .locals 14
-    .param p1    # Landroid/content/res/Resources;
-    .param p2    # Lorg/xmlpull/v1/XmlPullParser;
-    .param p3    # Landroid/util/AttributeSet;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -1044,7 +1011,6 @@
 
 .method public setAlpha(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/graphics/drawable/NinePatchDrawable;->mPaint:Landroid/graphics/Paint;
 
@@ -1071,7 +1037,6 @@
 
 .method public setAutoMirrored(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Landroid/graphics/drawable/NinePatchDrawable;->mNinePatchState:Landroid/graphics/drawable/NinePatchDrawable$NinePatchState;
 
@@ -1082,7 +1047,6 @@
 
 .method public setColorFilter(Landroid/graphics/ColorFilter;)V
     .locals 1
-    .param p1    # Landroid/graphics/ColorFilter;
 
     iget-object v0, p0, Landroid/graphics/drawable/NinePatchDrawable;->mPaint:Landroid/graphics/Paint;
 
@@ -1107,7 +1071,6 @@
 
 .method public setDither(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Landroid/graphics/drawable/NinePatchDrawable;->mPaint:Landroid/graphics/Paint;
 
@@ -1132,7 +1095,6 @@
 
 .method public setFilterBitmap(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-virtual {p0}, Landroid/graphics/drawable/NinePatchDrawable;->getPaint()Landroid/graphics/Paint;
 
@@ -1147,7 +1109,6 @@
 
 .method public setTargetDensity(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/graphics/drawable/NinePatchDrawable;->mTargetDensity:I
 
@@ -1175,7 +1136,6 @@
 
 .method public setTargetDensity(Landroid/graphics/Canvas;)V
     .locals 1
-    .param p1    # Landroid/graphics/Canvas;
 
     invoke-virtual {p1}, Landroid/graphics/Canvas;->getDensity()I
 
@@ -1188,7 +1148,6 @@
 
 .method public setTargetDensity(Landroid/util/DisplayMetrics;)V
     .locals 1
-    .param p1    # Landroid/util/DisplayMetrics;
 
     iget v0, p1, Landroid/util/DisplayMetrics;->densityDpi:I
 

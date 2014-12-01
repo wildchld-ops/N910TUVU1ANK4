@@ -20,7 +20,6 @@
 
 .method public static registerForRoamingStatusChanges(Landroid/content/Context;)V
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     const-string v1, "Mms/RoamStatusChangeReceiver"
 
@@ -58,7 +57,6 @@
 
 .method public static unRegisterForRoamingStatusChanges(Landroid/content/Context;)V
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     const-string v0, "Mms/RoamStatusChangeReceiver"
 
@@ -91,8 +89,6 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 8
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     const/4 v7, 0x0
 

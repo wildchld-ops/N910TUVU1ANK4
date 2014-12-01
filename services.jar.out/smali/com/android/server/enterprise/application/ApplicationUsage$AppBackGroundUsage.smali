@@ -41,8 +41,6 @@
 
 .method synthetic constructor <init>(Lcom/android/server/enterprise/application/ApplicationUsage;Lcom/android/server/enterprise/application/ApplicationUsage$1;)V
     .locals 0
-    .param p1    # Lcom/android/server/enterprise/application/ApplicationUsage;
-    .param p2    # Lcom/android/server/enterprise/application/ApplicationUsage$1;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/application/ApplicationUsage$AppBackGroundUsage;-><init>(Lcom/android/server/enterprise/application/ApplicationUsage;)V
 

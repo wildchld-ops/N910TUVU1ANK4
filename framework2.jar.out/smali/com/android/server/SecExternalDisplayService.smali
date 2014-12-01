@@ -108,7 +108,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -229,8 +228,6 @@
 
 .method private SecExternalDisplayInitWakeMode(Landroid/content/Context;I)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     const/4 v1, 0x0
 
@@ -345,7 +342,6 @@
 
 .method private SecExternalDisplaySetWakeLock(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/server/SecExternalDisplayService;->mWakeLock:Landroid/os/PowerManager$WakeLock;
 
@@ -432,7 +428,6 @@
 
 .method static synthetic access$100(Lcom/android/server/SecExternalDisplayService;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/server/SecExternalDisplayService;
 
     iget-object v0, p0, Lcom/android/server/SecExternalDisplayService;->mMHLHandler:Landroid/os/Handler;
 
@@ -441,7 +436,6 @@
 
 .method static synthetic access$200(Lcom/android/server/SecExternalDisplayService;)Landroid/app/AlertDialog;
     .locals 1
-    .param p0    # Lcom/android/server/SecExternalDisplayService;
 
     iget-object v0, p0, Lcom/android/server/SecExternalDisplayService;->mAlertDialog:Landroid/app/AlertDialog;
 
@@ -450,7 +444,6 @@
 
 .method static synthetic access$300(Lcom/android/server/SecExternalDisplayService;)I
     .locals 1
-    .param p0    # Lcom/android/server/SecExternalDisplayService;
 
     iget v0, p0, Lcom/android/server/SecExternalDisplayService;->mDockSurfaceParameter:I
 
@@ -459,8 +452,6 @@
 
 .method static synthetic access$302(Lcom/android/server/SecExternalDisplayService;I)I
     .locals 0
-    .param p0    # Lcom/android/server/SecExternalDisplayService;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/SecExternalDisplayService;->mDockSurfaceParameter:I
 
@@ -469,7 +460,6 @@
 
 .method static synthetic access$400(Lcom/android/server/SecExternalDisplayService;)Landroid/widget/CheckBox;
     .locals 1
-    .param p0    # Lcom/android/server/SecExternalDisplayService;
 
     iget-object v0, p0, Lcom/android/server/SecExternalDisplayService;->mDialogCheckBox:Landroid/widget/CheckBox;
 
@@ -563,7 +553,6 @@
 # virtual methods
 .method public SecExternalDisplayAlertMsg(I)V
     .locals 10
-    .param p1    # I
 
     const/4 v9, 0x1
 
@@ -795,9 +784,6 @@
 
 .method public SecExternalDisplayCreateSurface(Ljava/lang/String;II)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     invoke-static {}, Landroid/os/Binder;->getCallingUid()I
 
@@ -840,9 +826,6 @@
 
 .method public SecExternalDisplayDestroySurface(Ljava/lang/String;II)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     invoke-static {}, Landroid/os/Binder;->getCallingUid()I
 
@@ -943,7 +926,6 @@
 
 .method public SecExternalDisplayGetStatus(I)Z
     .locals 2
-    .param p1    # I
 
     invoke-static {}, Landroid/os/Binder;->getCallingUid()I
 
@@ -1053,7 +1035,6 @@
 
 .method public SecExternalDisplayRegisterEVF(Z)I
     .locals 2
-    .param p1    # Z
 
     invoke-static {}, Landroid/os/Binder;->getCallingUid()I
 
@@ -1083,7 +1064,6 @@
 
 .method public SecExternalDisplaySet3DMode(I)I
     .locals 2
-    .param p1    # I
 
     invoke-static {}, Landroid/os/Binder;->getCallingUid()I
 
@@ -1113,7 +1093,6 @@
 
 .method public SecExternalDisplaySetExternalUITransform(I)Z
     .locals 2
-    .param p1    # I
 
     invoke-static {}, Landroid/os/Binder;->getCallingUid()I
 
@@ -1143,7 +1122,6 @@
 
 .method public SecExternalDisplaySetForceMirrorMode(Z)Z
     .locals 2
-    .param p1    # Z
 
     invoke-static {}, Landroid/os/Binder;->getCallingUid()I
 
@@ -1173,8 +1151,6 @@
 
 .method public SecExternalDisplaySetGpuLock(Ljava/lang/String;I)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-static {}, Landroid/os/Binder;->getCallingUid()I
 
@@ -1215,7 +1191,6 @@
 
 .method public SecExternalDisplaySetOutputMode(I)Z
     .locals 2
-    .param p1    # I
 
     invoke-static {}, Landroid/os/Binder;->getCallingUid()I
 
@@ -1245,7 +1220,6 @@
 
 .method public SecExternalDisplaySetPause(Z)Z
     .locals 2
-    .param p1    # Z
 
     invoke-static {}, Landroid/os/Binder;->getCallingUid()I
 
@@ -1275,7 +1249,6 @@
 
 .method public SecExternalDisplaySetResolution(I)Z
     .locals 2
-    .param p1    # I
 
     invoke-static {}, Landroid/os/Binder;->getCallingUid()I
 
@@ -1313,8 +1286,6 @@
 
 .method public SecExternalDisplaySetStatus(IZ)Z
     .locals 2
-    .param p1    # I
-    .param p2    # Z
 
     invoke-static {}, Landroid/os/Binder;->getCallingUid()I
 
@@ -1344,7 +1315,6 @@
 
 .method public SecExternalDisplayToast(I)V
     .locals 4
-    .param p1    # I
 
     sget-boolean v1, Lcom/android/server/SecExternalDisplayService;->bIsLogEnabled:Z
 
@@ -1462,7 +1432,6 @@
 
 .method public SecExternalDisplayType(Z)Z
     .locals 2
-    .param p1    # Z
 
     invoke-static {}, Landroid/os/Binder;->getCallingUid()I
 
@@ -1500,7 +1469,6 @@
 
 .method public handleAlarm(Z)Z
     .locals 4
-    .param p1    # Z
 
     const/4 v3, 0x1
 
@@ -1631,7 +1599,6 @@
 
 .method public handleHDMIConnection(Z)Z
     .locals 5
-    .param p1    # Z
 
     const/4 v4, 0x1
 
@@ -1824,7 +1791,6 @@
 
 .method public handleSmartDockConnection(I)Z
     .locals 6
-    .param p1    # I
 
     const/4 v5, 0x0
 
@@ -2049,7 +2015,6 @@
 
 .method public handleWFDConnection(I)Z
     .locals 4
-    .param p1    # I
 
     const/4 v3, 0x1
 

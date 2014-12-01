@@ -311,7 +311,7 @@
 
     sget-object v0, Lcom/android/phone/rcs/RcsUtils$3;->$SwitchMap$com$android$services$telephony$common$RcsTransferConstants$SessionType:[I
 
-    invoke-virtual {p1}, Ljava/lang/Enum;->ordinal()I
+    invoke-virtual {p1}, Lcom/android/services/telephony/common/RcsTransferConstants$SessionType;->ordinal()I
 
     move-result v1
 

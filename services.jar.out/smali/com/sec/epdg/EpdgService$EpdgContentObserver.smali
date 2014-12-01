@@ -21,7 +21,6 @@
 # direct methods
 .method constructor <init>(Lcom/sec/epdg/EpdgService;Landroid/os/Handler;)V
     .locals 0
-    .param p2    # Landroid/os/Handler;
 
     iput-object p1, p0, Lcom/sec/epdg/EpdgService$EpdgContentObserver;->this$0:Lcom/sec/epdg/EpdgService;
 
@@ -34,8 +33,6 @@
 # virtual methods
 .method public onChange(ZLandroid/net/Uri;)V
     .locals 5
-    .param p1    # Z
-    .param p2    # Landroid/net/Uri;
 
     const/4 v4, 0x0
 

@@ -28,7 +28,6 @@
 
 .method private constructor <init>(Lcom/android/server/cocktailbar/utils/CocktailBarUtils$CocktailBarSettings;)V
     .locals 1
-    .param p1    # Lcom/android/server/cocktailbar/utils/CocktailBarUtils$CocktailBarSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -43,7 +42,6 @@
 
 .method public static getInstance(Lcom/android/server/cocktailbar/utils/CocktailBarUtils$CocktailBarSettings;)Lcom/android/server/cocktailbar/policy/CocktailBarPolicy;
     .locals 1
-    .param p0    # Lcom/android/server/cocktailbar/utils/CocktailBarUtils$CocktailBarSettings;
 
     sget-object v0, Lcom/android/server/cocktailbar/policy/CocktailBarPolicy;->mInstance:Lcom/android/server/cocktailbar/policy/CocktailBarPolicy;
 
@@ -65,8 +63,6 @@
 # virtual methods
 .method public canCloseCocktail(Lcom/samsung/android/cocktailbar/Cocktail;Lcom/android/server/cocktailbar/CocktailBarManagerServiceImpl$CocktailExtraInfo;)Z
     .locals 6
-    .param p1    # Lcom/samsung/android/cocktailbar/Cocktail;
-    .param p2    # Lcom/android/server/cocktailbar/CocktailBarManagerServiceImpl$CocktailExtraInfo;
 
     const/4 v2, 0x1
 
@@ -232,7 +228,6 @@
 
 .method public canSendUpdateIntent(Lcom/samsung/android/cocktailbar/Cocktail;)Z
     .locals 2
-    .param p1    # Lcom/samsung/android/cocktailbar/Cocktail;
 
     iget-object v0, p0, Lcom/android/server/cocktailbar/policy/CocktailBarPolicy;->mSettings:Lcom/android/server/cocktailbar/utils/CocktailBarUtils$CocktailBarSettings;
 
@@ -259,8 +254,6 @@
 
 .method public canShowCocktail(Lcom/samsung/android/cocktailbar/Cocktail;Lcom/android/server/cocktailbar/CocktailBarManagerServiceImpl$CocktailExtraInfo;)Z
     .locals 6
-    .param p1    # Lcom/samsung/android/cocktailbar/Cocktail;
-    .param p2    # Lcom/android/server/cocktailbar/CocktailBarManagerServiceImpl$CocktailExtraInfo;
 
     const/4 v2, 0x1
 
@@ -421,8 +414,6 @@
 
 .method public canUpdateCocktail(Lcom/samsung/android/cocktailbar/Cocktail;Lcom/android/server/cocktailbar/CocktailBarManagerServiceImpl$CocktailExtraInfo;)Z
     .locals 8
-    .param p1    # Lcom/samsung/android/cocktailbar/Cocktail;
-    .param p2    # Lcom/android/server/cocktailbar/CocktailBarManagerServiceImpl$CocktailExtraInfo;
 
     const/high16 v7, 0x10000
 
@@ -723,7 +714,6 @@
 
 .method public setCocktailMode(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/cocktailbar/policy/CocktailBarPolicy;->mCocktailMode:I
 

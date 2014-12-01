@@ -27,7 +27,6 @@
 # virtual methods
 .method public collapseActionView(Landroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-static {p1}, Landroid/support/v4/view/MenuItemCompatIcs;->collapseActionView(Landroid/view/MenuItem;)Z
 
@@ -38,7 +37,6 @@
 
 .method public expandActionView(Landroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-static {p1}, Landroid/support/v4/view/MenuItemCompatIcs;->expandActionView(Landroid/view/MenuItem;)Z
 
@@ -49,7 +47,6 @@
 
 .method public isActionViewExpanded(Landroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-static {p1}, Landroid/support/v4/view/MenuItemCompatIcs;->isActionViewExpanded(Landroid/view/MenuItem;)Z
 
@@ -60,8 +57,6 @@
 
 .method public setOnActionExpandListener(Landroid/view/MenuItem;Landroid/support/v4/view/MenuItemCompat$OnActionExpandListener;)Landroid/view/MenuItem;
     .locals 1
-    .param p1    # Landroid/view/MenuItem;
-    .param p2    # Landroid/support/v4/view/MenuItemCompat$OnActionExpandListener;
 
     if-nez p2, :cond_0
 

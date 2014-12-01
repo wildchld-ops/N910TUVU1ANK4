@@ -33,7 +33,6 @@
 
 .method public constructor <init>(Ljava/util/Locale;)V
     .locals 1
-    .param p1    # Ljava/util/Locale;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -48,7 +47,6 @@
 
 .method private checkOffsetIsValid(I)V
     .locals 4
-    .param p1    # I
 
     if-ltz p1, :cond_0
 
@@ -133,7 +131,6 @@
 
 .method private getFollowingOffset(I)I
     .locals 4
-    .param p1    # I
 
     iget-object v2, p0, Landroid/text/method/WordIterator;->mString:Ljava/lang/String;
 
@@ -179,7 +176,6 @@
 
 .method private getPreceedingOffset(I)I
     .locals 3
-    .param p1    # I
 
     :goto_0
     if-lez p1, :cond_0
@@ -215,7 +211,6 @@
 
 .method private isAfterLetterOrDigit(I)Z
     .locals 3
-    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -252,7 +247,6 @@
 
 .method private isNewLine(I)Z
     .locals 1
-    .param p1    # I
 
     const/16 v0, 0xa
 
@@ -288,7 +282,6 @@
 
 .method private isNotAfterSpace(I)Z
     .locals 3
-    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -325,7 +318,6 @@
 
 .method private isNotOnSpace(I)Z
     .locals 2
-    .param p1    # I
 
     if-ltz p1, :cond_0
 
@@ -362,7 +354,6 @@
 
 .method private isOnLetterOrDigit(I)Z
     .locals 2
-    .param p1    # I
 
     if-ltz p1, :cond_0
 
@@ -401,7 +392,6 @@
 # virtual methods
 .method public following(I)I
     .locals 3
-    .param p1    # I
 
     const/4 v1, -0x1
 
@@ -437,7 +427,6 @@
 
 .method public getBeginning(I)I
     .locals 3
-    .param p1    # I
 
     iget v1, p0, Landroid/text/method/WordIterator;->mOffsetShift:I
 
@@ -506,7 +495,6 @@
 
 .method public getBeginningSelection(I)I
     .locals 3
-    .param p1    # I
 
     iget v1, p0, Landroid/text/method/WordIterator;->mOffsetShift:I
 
@@ -556,7 +544,6 @@
 
 .method public getEnd(I)I
     .locals 3
-    .param p1    # I
 
     iget v1, p0, Landroid/text/method/WordIterator;->mOffsetShift:I
 
@@ -625,7 +612,6 @@
 
 .method public getEndSelection(I)I
     .locals 3
-    .param p1    # I
 
     iget v1, p0, Landroid/text/method/WordIterator;->mOffsetShift:I
 
@@ -675,7 +661,6 @@
 
 .method public preceding(I)I
     .locals 3
-    .param p1    # I
 
     const/4 v1, -0x1
 
@@ -711,9 +696,6 @@
 
 .method public setCharSequence(Ljava/lang/CharSequence;II)V
     .locals 3
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v1, 0x0
 

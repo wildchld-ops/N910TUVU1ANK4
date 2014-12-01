@@ -53,8 +53,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     const/4 v4, 0x0
 
@@ -199,7 +197,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/widget/MmsWidgetService$MmsFactory;)V
     .locals 0
-    .param p0    # Lcom/android/mms/widget/MmsWidgetService$MmsFactory;
 
     invoke-direct {p0}, Lcom/android/mms/widget/MmsWidgetService$MmsFactory;->notifyDataChanged()V
 
@@ -242,7 +239,6 @@
 
 .method private getDefaultAvatar(I)I
     .locals 2
-    .param p1    # I
 
     rem-int/lit8 v0, p1, 0x5
 
@@ -592,9 +588,6 @@
 
 .method private setAvatar(Landroid/widget/RemoteViews;Landroid/graphics/drawable/Drawable;J)V
     .locals 10
-    .param p1    # Landroid/widget/RemoteViews;
-    .param p2    # Landroid/graphics/drawable/Drawable;
-    .param p3    # J
 
     const v9, 0x7f0b03cb
 
@@ -784,7 +777,6 @@
 
 .method public getItemId(I)J
     .locals 2
-    .param p1    # I
 
     int-to-long v0, p1
 
@@ -835,7 +827,6 @@
 
 .method public getPriorityViewAt(I)Landroid/widget/RemoteViews;
     .locals 18
-    .param p1    # I
 
     const-string v13, "Mms/WidgetService"
 
@@ -1213,7 +1204,6 @@
 
 .method public getViewAt(I)Landroid/widget/RemoteViews;
     .locals 14
-    .param p1    # I
 
     const-string v8, "Mms/WidgetService"
 
@@ -2254,7 +2244,6 @@
 
 .method public onUpdate(Lcom/android/mms/data/Contact;)V
     .locals 3
-    .param p1    # Lcom/android/mms/data/Contact;
 
     const-string v0, "Mms/WidgetService"
 

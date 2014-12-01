@@ -50,7 +50,6 @@
 # direct methods
 .method private constructor <init>(Landroid/os/Handler;)V
     .locals 0
-    .param p1    # Landroid/os/Handler;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -61,7 +60,6 @@
 
 .method static synthetic access$000(Landroid/webkitsec/WebCoreThreadWatchdog;)Z
     .locals 1
-    .param p0    # Landroid/webkitsec/WebCoreThreadWatchdog;
 
     iget-boolean v0, p0, Landroid/webkitsec/WebCoreThreadWatchdog;->mPaused:Z
 
@@ -70,7 +68,6 @@
 
 .method static synthetic access$100(Landroid/webkitsec/WebCoreThreadWatchdog;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Landroid/webkitsec/WebCoreThreadWatchdog;
 
     iget-object v0, p0, Landroid/webkitsec/WebCoreThreadWatchdog;->mHandler:Landroid/os/Handler;
 
@@ -79,7 +76,6 @@
 
 .method static synthetic access$200(Landroid/webkitsec/WebCoreThreadWatchdog;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Landroid/webkitsec/WebCoreThreadWatchdog;
 
     iget-object v0, p0, Landroid/webkitsec/WebCoreThreadWatchdog;->mWebCoreThreadHandler:Landroid/os/Handler;
 
@@ -88,7 +84,6 @@
 
 .method static synthetic access$300(Landroid/webkitsec/WebCoreThreadWatchdog;)Ljava/util/Set;
     .locals 1
-    .param p0    # Landroid/webkitsec/WebCoreThreadWatchdog;
 
     iget-object v0, p0, Landroid/webkitsec/WebCoreThreadWatchdog;->mWebViews:Ljava/util/Set;
 
@@ -97,7 +92,6 @@
 
 .method private addWebView(Landroid/webkitsec/WebViewClassic;)V
     .locals 1
-    .param p1    # Landroid/webkitsec/WebViewClassic;
 
     iget-object v0, p0, Landroid/webkitsec/WebCoreThreadWatchdog;->mWebViews:Ljava/util/Set;
 
@@ -214,7 +208,6 @@
 
 .method public static declared-synchronized registerWebView(Landroid/webkitsec/WebViewClassic;)V
     .locals 2
-    .param p0    # Landroid/webkitsec/WebViewClassic;
 
     const-class v1, Landroid/webkitsec/WebCoreThreadWatchdog;
 
@@ -246,7 +239,6 @@
 
 .method private removeWebView(Landroid/webkitsec/WebViewClassic;)V
     .locals 1
-    .param p1    # Landroid/webkitsec/WebViewClassic;
 
     iget-object v0, p0, Landroid/webkitsec/WebCoreThreadWatchdog;->mWebViews:Ljava/util/Set;
 
@@ -343,7 +335,6 @@
 
 .method public static declared-synchronized start(Landroid/os/Handler;)Landroid/webkitsec/WebCoreThreadWatchdog;
     .locals 4
-    .param p0    # Landroid/os/Handler;
 
     const-class v1, Landroid/webkitsec/WebCoreThreadWatchdog;
 
@@ -389,7 +380,6 @@
 
 .method public static declared-synchronized unregisterWebView(Landroid/webkitsec/WebViewClassic;)V
     .locals 2
-    .param p0    # Landroid/webkitsec/WebViewClassic;
 
     const-class v1, Landroid/webkitsec/WebCoreThreadWatchdog;
 

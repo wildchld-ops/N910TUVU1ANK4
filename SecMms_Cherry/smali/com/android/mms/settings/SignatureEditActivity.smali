@@ -48,7 +48,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p1}, Landroid/view/View;->getId()I
 
@@ -149,7 +148,6 @@
 
 .method public setBaseContent(Landroid/content/Intent;)V
     .locals 1
-    .param p1    # Landroid/content/Intent;
 
     iget-object v0, p0, Lcom/android/mms/ui/EditTextActivity;->mContext:Landroid/content/Context;
 
@@ -164,7 +162,6 @@
 
 .method public setChangedString(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/mms/ui/EditTextActivity;->mContext:Landroid/content/Context;
 

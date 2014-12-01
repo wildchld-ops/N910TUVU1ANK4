@@ -800,7 +800,6 @@
 
 .method public static contains(Ljava/lang/String;)Z
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     if-eqz p0, :cond_0
 
@@ -831,7 +830,6 @@
 
 .method private static getExtension(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     const-string v1, "."
 
@@ -864,7 +862,6 @@
 
 .method public static getImMimeType(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/android/mms/rcs/RcsMimeTypeMap;->getMimeType(Ljava/lang/String;)Ljava/lang/String;
 
@@ -1062,7 +1059,6 @@
 
 .method public static getMimeType(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -1106,7 +1102,6 @@
 
 .method public static getRcsMimeType(Ljava/lang/String;)Lcom/android/mms/rcs/RcsMimeTypeMap$RcsMimeType;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -1140,9 +1135,6 @@
 
 .method private static insert(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     new-instance v0, Lcom/android/mms/rcs/RcsMimeTypeMap$RcsMimeType;
 

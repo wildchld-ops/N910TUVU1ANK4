@@ -14,16 +14,6 @@
 
 .method static add(Landroid/content/Context;Landroid/app/Notification;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Landroid/widget/RemoteViews;ILandroid/app/PendingIntent;Landroid/app/PendingIntent;Landroid/graphics/Bitmap;)Landroid/app/Notification;
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/app/Notification;
-    .param p2    # Ljava/lang/CharSequence;
-    .param p3    # Ljava/lang/CharSequence;
-    .param p4    # Ljava/lang/CharSequence;
-    .param p5    # Landroid/widget/RemoteViews;
-    .param p6    # I
-    .param p7    # Landroid/app/PendingIntent;
-    .param p8    # Landroid/app/PendingIntent;
-    .param p9    # Landroid/graphics/Bitmap;
 
     new-instance v1, Landroid/app/Notification$Builder;
 

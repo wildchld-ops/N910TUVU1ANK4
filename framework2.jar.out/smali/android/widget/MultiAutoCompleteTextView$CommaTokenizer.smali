@@ -30,8 +30,6 @@
 # virtual methods
 .method public findTokenEnd(Ljava/lang/CharSequence;I)I
     .locals 4
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
 
     move v0, p2
 
@@ -66,8 +64,6 @@
 
 .method public findTokenStart(Ljava/lang/CharSequence;I)I
     .locals 3
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
 
     move v0, p2
 
@@ -110,7 +106,6 @@
 
 .method public terminateToken(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
     .locals 7
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v1, 0x0
 

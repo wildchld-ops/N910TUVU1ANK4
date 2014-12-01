@@ -33,7 +33,6 @@
 # virtual methods
 .method public onDataActivity(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "[EPDGService]"
 
@@ -62,8 +61,6 @@
 
 .method public onDataConnectionStateChanged(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     const-string v0, "[EPDGService]"
 
@@ -106,7 +103,6 @@
 
 .method public onServiceStateChanged(Landroid/telephony/ServiceState;)V
     .locals 3
-    .param p1    # Landroid/telephony/ServiceState;
 
     const-string v0, "[EPDGService]"
 

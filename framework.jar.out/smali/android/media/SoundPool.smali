@@ -21,9 +21,6 @@
 # direct methods
 .method public constructor <init>(III)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -80,9 +77,6 @@
 
 .method public load(Landroid/content/Context;II)I
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # I
 
     iget-object v0, p0, Landroid/media/SoundPool;->mImpl:Landroid/media/SoundPool$SoundPoolDelegate;
 
@@ -95,8 +89,6 @@
 
 .method public load(Landroid/content/res/AssetFileDescriptor;I)I
     .locals 1
-    .param p1    # Landroid/content/res/AssetFileDescriptor;
-    .param p2    # I
 
     iget-object v0, p0, Landroid/media/SoundPool;->mImpl:Landroid/media/SoundPool$SoundPoolDelegate;
 
@@ -109,10 +101,6 @@
 
 .method public load(Ljava/io/FileDescriptor;JJI)I
     .locals 7
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # J
-    .param p4    # J
-    .param p6    # I
 
     iget-object v0, p0, Landroid/media/SoundPool;->mImpl:Landroid/media/SoundPool$SoundPoolDelegate;
 
@@ -133,8 +121,6 @@
 
 .method public load(Ljava/lang/String;I)I
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     iget-object v0, p0, Landroid/media/SoundPool;->mImpl:Landroid/media/SoundPool$SoundPoolDelegate;
 
@@ -147,7 +133,6 @@
 
 .method public final pause(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/media/SoundPool;->mImpl:Landroid/media/SoundPool$SoundPoolDelegate;
 
@@ -158,12 +143,6 @@
 
 .method public final play(IFFIIF)I
     .locals 7
-    .param p1    # I
-    .param p2    # F
-    .param p3    # F
-    .param p4    # I
-    .param p5    # I
-    .param p6    # F
 
     iget-object v0, p0, Landroid/media/SoundPool;->mImpl:Landroid/media/SoundPool$SoundPoolDelegate;
 
@@ -198,7 +177,6 @@
 
 .method public final resume(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/media/SoundPool;->mImpl:Landroid/media/SoundPool$SoundPoolDelegate;
 
@@ -209,8 +187,6 @@
 
 .method public final setLoop(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Landroid/media/SoundPool;->mImpl:Landroid/media/SoundPool$SoundPoolDelegate;
 
@@ -221,7 +197,6 @@
 
 .method public setOnLoadCompleteListener(Landroid/media/SoundPool$OnLoadCompleteListener;)V
     .locals 1
-    .param p1    # Landroid/media/SoundPool$OnLoadCompleteListener;
 
     iget-object v0, p0, Landroid/media/SoundPool;->mImpl:Landroid/media/SoundPool$SoundPoolDelegate;
 
@@ -232,8 +207,6 @@
 
 .method public final setPriority(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Landroid/media/SoundPool;->mImpl:Landroid/media/SoundPool$SoundPoolDelegate;
 
@@ -244,8 +217,6 @@
 
 .method public final setRate(IF)V
     .locals 1
-    .param p1    # I
-    .param p2    # F
 
     iget-object v0, p0, Landroid/media/SoundPool;->mImpl:Landroid/media/SoundPool$SoundPoolDelegate;
 
@@ -256,7 +227,6 @@
 
 .method public final setStreamType(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/media/SoundPool;->mImpl:Landroid/media/SoundPool$SoundPoolDelegate;
 
@@ -267,8 +237,6 @@
 
 .method public setVolume(IF)V
     .locals 0
-    .param p1    # I
-    .param p2    # F
 
     invoke-virtual {p0, p1, p2, p2}, Landroid/media/SoundPool;->setVolume(IFF)V
 
@@ -277,9 +245,6 @@
 
 .method public final setVolume(IFF)V
     .locals 1
-    .param p1    # I
-    .param p2    # F
-    .param p3    # F
 
     iget-object v0, p0, Landroid/media/SoundPool;->mImpl:Landroid/media/SoundPool$SoundPoolDelegate;
 
@@ -290,7 +255,6 @@
 
 .method public final stop(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/media/SoundPool;->mImpl:Landroid/media/SoundPool$SoundPoolDelegate;
 
@@ -301,7 +265,6 @@
 
 .method public final unload(I)Z
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/media/SoundPool;->mImpl:Landroid/media/SoundPool$SoundPoolDelegate;
 

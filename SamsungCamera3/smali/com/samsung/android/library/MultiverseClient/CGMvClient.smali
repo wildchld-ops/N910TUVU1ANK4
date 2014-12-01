@@ -334,7 +334,6 @@
 
 .method public Open(Landroid/content/Context;)Z
     .locals 5
-    .param p1    # Landroid/content/Context;
 
     const/4 v3, 0x0
 
@@ -429,9 +428,6 @@
 
 .method public SendMessage(III)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     iget-object v0, p0, Lcom/samsung/android/library/MultiverseClient/CGMvClient;->m_cLock:Ljava/util/concurrent/locks/ReentrantLock;
 
@@ -473,11 +469,6 @@
 
 .method public SendMessage(IIILjava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
 
     iget-object v2, p0, Lcom/samsung/android/library/MultiverseClient/CGMvClient;->m_cLock:Ljava/util/concurrent/locks/ReentrantLock;
 
@@ -532,7 +523,6 @@
 
 .method public ServiceRegister(I)Z
     .locals 3
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -613,7 +603,6 @@
 
 .method public ServiceUnregister(I)V
     .locals 2
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -669,7 +658,6 @@
 
 .method public handleMessage(Landroid/os/Message;)V
     .locals 5
-    .param p1    # Landroid/os/Message;
 
     iget-object v1, p0, Lcom/samsung/android/library/MultiverseClient/CGMvClient;->m_cLock:Ljava/util/concurrent/locks/ReentrantLock;
 
@@ -738,8 +726,6 @@
 
 .method public onServiceConnected(Landroid/content/ComponentName;Landroid/os/IBinder;)V
     .locals 1
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Landroid/os/IBinder;
 
     iget-object v0, p0, Lcom/samsung/android/library/MultiverseClient/CGMvClient;->m_cLock:Ljava/util/concurrent/locks/ReentrantLock;
 
@@ -775,7 +761,6 @@
 
 .method public onServiceDisconnected(Landroid/content/ComponentName;)V
     .locals 1
-    .param p1    # Landroid/content/ComponentName;
 
     iget-object v0, p0, Lcom/samsung/android/library/MultiverseClient/CGMvClient;->m_cLock:Ljava/util/concurrent/locks/ReentrantLock;
 

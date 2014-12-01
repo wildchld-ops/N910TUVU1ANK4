@@ -38,7 +38,6 @@
 
 .method synthetic constructor <init>(Lcom/android/mms/transaction/MessagingNotification$1;)V
     .locals 0
-    .param p1    # Lcom/android/mms/transaction/MessagingNotification$1;
 
     invoke-direct {p0}, Lcom/android/mms/transaction/MessagingNotification$NotificationInfoComparator;-><init>()V
 
@@ -49,8 +48,6 @@
 # virtual methods
 .method public compare(Lcom/android/mms/transaction/MessagingNotification$NotificationInfo;Lcom/android/mms/transaction/MessagingNotification$NotificationInfo;)I
     .locals 4
-    .param p1    # Lcom/android/mms/transaction/MessagingNotification$NotificationInfo;
-    .param p2    # Lcom/android/mms/transaction/MessagingNotification$NotificationInfo;
 
     invoke-virtual {p2}, Lcom/android/mms/transaction/MessagingNotification$NotificationInfo;->getTime()J
 
@@ -71,8 +68,6 @@
 
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p1, Lcom/android/mms/transaction/MessagingNotification$NotificationInfo;
 

@@ -154,7 +154,7 @@
 
     const/4 v5, 0x3
 
-    invoke-virtual {v4, v5}, Landroid/os/Handler;->obtainMessage(I)Landroid/os/Message;
+    invoke-virtual {v4, v5}, Lcom/android/phone/DataRoamingGuard$RoamHandler;->obtainMessage(I)Landroid/os/Message;
 
     move-result-object v4
 
@@ -530,7 +530,7 @@
 
     const v3, 0x7f04001e
 
-    invoke-virtual {p0, v3}, Landroid/app/Activity;->setContentView(I)V
+    invoke-virtual {p0, v3}, Lcom/android/phone/DataRoamingGuard;->setContentView(I)V
 
     invoke-static {}, Lcom/android/internal/telephony/PhoneFactory;->getDefaultPhone()Lcom/android/internal/telephony/Phone;
 
@@ -554,7 +554,7 @@
 
     iput-object v3, p0, Lcom/android/phone/DataRoamingGuard;->mRoamHandler:Lcom/android/phone/DataRoamingGuard$RoamHandler;
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/phone/DataRoamingGuard;->getIntent()Landroid/content/Intent;
 
     move-result-object v3
 
@@ -566,7 +566,7 @@
 
     if-eqz v3, :cond_0
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/phone/DataRoamingGuard;->getIntent()Landroid/content/Intent;
 
     move-result-object v3
 
@@ -581,7 +581,7 @@
     :cond_0
     const v3, 0x7f0a008f
 
-    invoke-virtual {p0, v3}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v3}, Lcom/android/phone/DataRoamingGuard;->findViewById(I)Landroid/view/View;
 
     move-result-object v2
 
@@ -589,11 +589,11 @@
 
     iget-object v3, p0, Lcom/android/phone/DataRoamingGuard;->mRoamListener:Landroid/view/View$OnClickListener;
 
-    invoke-virtual {v2, v3}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v2, v3}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     const v3, 0x7f0a001b
 
-    invoke-virtual {p0, v3}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v3}, Lcom/android/phone/DataRoamingGuard;->findViewById(I)Landroid/view/View;
 
     move-result-object v1
 
@@ -601,7 +601,7 @@
 
     iget-object v3, p0, Lcom/android/phone/DataRoamingGuard;->mCancelListener:Landroid/view/View$OnClickListener;
 
-    invoke-virtual {v1, v3}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v1, v3}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     iget-object v3, p0, Lcom/android/phone/DataRoamingGuard;->mPhone:Lcom/android/internal/telephony/Phone;
 
@@ -653,7 +653,7 @@
     invoke-static {v3, v6}, Lcom/android/phone/SprintPhoneExtension;->setSecureSettingValue(Ljava/lang/String;I)V
 
     :cond_2
-    invoke-virtual {p0}, Landroid/app/Activity;->getActionBar()Landroid/app/ActionBar;
+    invoke-virtual {p0}, Lcom/android/phone/DataRoamingGuard;->getActionBar()Landroid/app/ActionBar;
 
     move-result-object v0
 
@@ -705,7 +705,7 @@
     return v0
 
     :pswitch_0
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/DataRoamingGuard;->finish()V
 
     goto :goto_0
 
@@ -725,7 +725,7 @@
     invoke-direct {p0}, Lcom/android/phone/DataRoamingGuard;->setCdmaRoaming()V
 
     :cond_0
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/DataRoamingGuard;->finish()V
 
     goto :goto_0
 

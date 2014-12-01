@@ -38,10 +38,6 @@
 
 .method public static clear(Landroid/os/IBinder;Ljava/lang/String;II)V
     .locals 17
-    .param p0    # Landroid/os/IBinder;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     invoke-static {}, Lcom/samsung/android/security/CCManager;->isMdfEnforced()Z
 
@@ -199,7 +195,6 @@
 
 .method public static clear([C)V
     .locals 2
-    .param p0    # [C
 
     const/4 v0, 0x0
 
@@ -222,7 +217,6 @@
 
 .method public static getChars(Landroid/widget/TextView;)[C
     .locals 4
-    .param p0    # Landroid/widget/TextView;
 
     invoke-virtual {p0}, Landroid/widget/TextView;->getEditableText()Landroid/text/Editable;
 

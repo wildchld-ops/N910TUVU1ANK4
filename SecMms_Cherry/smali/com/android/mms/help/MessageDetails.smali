@@ -26,8 +26,6 @@
 
 .method public constructor <init>(Ljava/lang/String;I)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -40,9 +38,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;I)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -57,10 +52,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -119,7 +110,6 @@
 
 .method public setIcon(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/mms/help/MessageDetails;->mIcon:I
 
@@ -128,7 +118,6 @@
 
 .method public setName(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/mms/help/MessageDetails;->mFrom:Ljava/lang/String;
 
@@ -137,7 +126,6 @@
 
 .method public setNumber(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/mms/help/MessageDetails;->mNumber:Ljava/lang/String;
 
@@ -146,7 +134,6 @@
 
 .method public setSub(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/mms/help/MessageDetails;->mSub:Ljava/lang/String;
 
@@ -155,7 +142,6 @@
 
 .method public setTime(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/mms/help/MessageDetails;->mTime:Ljava/lang/String;
 

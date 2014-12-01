@@ -23,8 +23,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/mms/ui/EmoticonCustomView;Landroid/content/Context;[Ljava/lang/String;)V
     .locals 1
-    .param p2    # Landroid/content/Context;
-    .param p3    # [Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/mms/ui/EmoticonCustomView$EmoticonAdapter;->this$0:Lcom/android/mms/ui/EmoticonCustomView;
 
@@ -43,7 +41,6 @@
 
 .method static synthetic access$800(Lcom/android/mms/ui/EmoticonCustomView$EmoticonAdapter;)[Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/EmoticonCustomView$EmoticonAdapter;
 
     iget-object v0, p0, Lcom/android/mms/ui/EmoticonCustomView$EmoticonAdapter;->mEmoticonList:[Ljava/lang/String;
 
@@ -52,8 +49,6 @@
 
 .method private getItem(II)Ljava/util/ArrayList;
     .locals 5
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II)",
@@ -316,7 +311,6 @@
 
 .method public bridge synthetic getItem(I)Ljava/lang/Object;
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/mms/ui/EmoticonCustomView$EmoticonAdapter;->getItem(I)Ljava/util/ArrayList;
 
@@ -327,7 +321,6 @@
 
 .method public getItem(I)Ljava/util/ArrayList;
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -345,7 +338,6 @@
 
 .method public getItemId(I)J
     .locals 2
-    .param p1    # I
 
     int-to-long v0, p1
 
@@ -354,9 +346,6 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 8
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     const/4 v7, 0x1
 

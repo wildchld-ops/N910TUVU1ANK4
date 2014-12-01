@@ -189,7 +189,6 @@
 
 .method public static getGTalkDeviceId(J)Ljava/lang/String;
     .locals 2
-    .param p0    # J
 
     new-instance v0, Ljava/lang/StringBuilder;
 

@@ -40,7 +40,7 @@
 
     iget-object v0, p0, Lcom/android/phone/callsettings/IpNumberDelete$2;->this$0:Lcom/android/phone/callsettings/IpNumberDelete;
 
-    invoke-virtual {v0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {v0}, Lcom/android/phone/callsettings/IpNumberDelete;->finish()V
 
     return-void
 .end method

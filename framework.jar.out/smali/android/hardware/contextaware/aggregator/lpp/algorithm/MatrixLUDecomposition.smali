@@ -25,7 +25,6 @@
 # direct methods
 .method public constructor <init>(Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;)V
     .locals 17
-    .param p1    # Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -644,7 +643,6 @@
 
 .method public solve(Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;)Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;
     .locals 13
-    .param p1    # Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;
 
     invoke-virtual {p1}, Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;->getRowDimension()I
 

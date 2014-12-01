@@ -19,8 +19,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/widget/Switch;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/widget/Switch;
 
     invoke-direct {p0}, Landroid/preference/PreferenceActivity;-><init>()V
 
@@ -43,8 +41,6 @@
 # virtual methods
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 5
-    .param p1    # Landroid/widget/CompoundButton;
-    .param p2    # Z
 
     const/4 v4, 0x1
 
@@ -154,7 +150,6 @@
 
 .method public setSwitch(Landroid/widget/Switch;)V
     .locals 5
-    .param p1    # Landroid/widget/Switch;
 
     const/4 v4, 0x1
 

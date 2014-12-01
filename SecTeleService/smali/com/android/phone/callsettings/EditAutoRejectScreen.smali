@@ -241,7 +241,7 @@
     const/4 v1, 0x0
 
     :try_start_0
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/EditAutoRejectScreen;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 
@@ -280,7 +280,7 @@
     :catch_0
     move-exception v0
 
-    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
+    invoke-virtual {v0}, Landroid/database/sqlite/SQLiteDiskIOException;->printStackTrace()V
 
     move-object v2, v1
 
@@ -292,7 +292,7 @@
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/EditAutoRejectScreen;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -318,13 +318,13 @@
 
     invoke-direct {v2, p0}, Lcom/android/phone/callsettings/EditAutoRejectScreen$10;-><init>(Lcom/android/phone/callsettings/EditAutoRejectScreen;)V
 
-    invoke-virtual {v1, v2}, Landroid/app/Dialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
+    invoke-virtual {v1, v2}, Landroid/app/AlertDialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
     const/4 v2, 0x1
 
-    invoke-virtual {v1, v2}, Landroid/app/Dialog;->setCanceledOnTouchOutside(Z)V
+    invoke-virtual {v1, v2}, Landroid/app/AlertDialog;->setCanceledOnTouchOutside(Z)V
 
-    invoke-virtual {v1}, Landroid/app/Dialog;->show()V
+    invoke-virtual {v1}, Landroid/app/AlertDialog;->show()V
 
     return-void
 .end method
@@ -628,7 +628,7 @@
 
     const/4 v3, 0x0
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/EditAutoRejectScreen;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -718,7 +718,7 @@
 
     move-result-object v1
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/EditAutoRejectScreen;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 
@@ -804,7 +804,7 @@
     .locals 3
     .param p1    # Landroid/view/View;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/EditAutoRejectScreen;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -879,7 +879,7 @@
 
     aput-object v4, v2, v0
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/EditAutoRejectScreen;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -891,7 +891,7 @@
 
     move-result v6
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/EditAutoRejectScreen;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -913,7 +913,7 @@
 
     const v0, 0x7f090392
 
-    invoke-virtual {p0, v0}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lcom/android/phone/callsettings/EditAutoRejectScreen;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -921,7 +921,7 @@
 
     invoke-interface {v8}, Landroid/database/Cursor;->close()V
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/EditAutoRejectScreen;->finish()V
 
     :goto_0
     return-void
@@ -982,7 +982,7 @@
 
     const v3, 0x7f09038d
 
-    invoke-virtual {p0, v3}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v3}, Lcom/android/phone/callsettings/EditAutoRejectScreen;->getString(I)Ljava/lang/String;
 
     move-result-object v3
 
@@ -1013,7 +1013,7 @@
 
     const v0, 0x7f09038e
 
-    invoke-virtual {p0, v0}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lcom/android/phone/callsettings/EditAutoRejectScreen;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -1040,7 +1040,7 @@
 
     const v0, 0x7f09038f
 
-    invoke-virtual {p0, v0}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lcom/android/phone/callsettings/EditAutoRejectScreen;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -1086,11 +1086,11 @@
     invoke-direct {p0, v0, v3, v4, v5}, Lcom/android/phone/callsettings/EditAutoRejectScreen;->updateAutoRejectNumber(Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;I)V
 
     :goto_1
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/EditAutoRejectScreen;->getIntent()Landroid/content/Intent;
 
     move-result-object v9
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/EditAutoRejectScreen;->getActivity()Landroid/app/Activity;
 
     move-result-object v10
 
@@ -1179,7 +1179,7 @@
 
     const/16 v8, 0x64
 
-    invoke-super {p0, p1, p2, p3}, Landroid/preference/PreferenceFragment;->onActivityResult(IILandroid/content/Intent;)V
+    invoke-super {p0, p1, p2, p3}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onActivityResult(IILandroid/content/Intent;)V
 
     const-string v7, ""
 
@@ -1284,14 +1284,14 @@
     :cond_3
     iget-object v0, p0, Lcom/android/phone/callsettings/EditAutoRejectScreen;->editBox:Landroid/widget/EditText;
 
-    invoke-virtual {v0, v7}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {v0, v7}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
     goto :goto_0
 
     :pswitch_1
     if-ne p2, v0, :cond_8
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/EditAutoRejectScreen;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -1358,7 +1358,7 @@
     :cond_7
     iget-object v0, p0, Lcom/android/phone/callsettings/EditAutoRejectScreen;->editBox:Landroid/widget/EditText;
 
-    invoke-virtual {v0, v7}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {v0, v7}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
     goto :goto_2
 
@@ -1390,13 +1390,13 @@
 
     invoke-static {v0, v1}, Lcom/android/phone/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/EditAutoRejectScreen;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v0
 
     invoke-virtual {v0}, Landroid/app/FragmentManager;->invalidateOptionsMenu()V
 
-    invoke-super {p0, p1}, Landroid/app/Fragment;->onConfigurationChanged(Landroid/content/res/Configuration;)V
+    invoke-super {p0, p1}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
     const-string v0, "hardkeyboardhidden_no"
 
@@ -1441,13 +1441,13 @@
 
     const v2, 0x7f06001e
 
-    invoke-virtual {p0, v2}, Landroid/preference/PreferenceFragment;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v2}, Lcom/android/phone/callsettings/EditAutoRejectScreen;->addPreferencesFromResource(I)V
 
-    invoke-virtual {p0}, Landroid/preference/PreferenceFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/EditAutoRejectScreen;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v1
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getActionBar()Landroid/app/ActionBar;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/EditAutoRejectScreen;->getActionBar()Landroid/app/ActionBar;
 
     move-result-object v2
 
@@ -1466,7 +1466,7 @@
     invoke-virtual {v2, v4}, Landroid/app/ActionBar;->setDisplayHomeAsUpEnabled(Z)V
 
     :cond_0
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/EditAutoRejectScreen;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -1486,7 +1486,7 @@
 
     if-eqz v0, :cond_1
 
-    invoke-virtual {p0, v5}, Landroid/app/Fragment;->setHasOptionsMenu(Z)V
+    invoke-virtual {p0, v5}, Lcom/android/phone/callsettings/EditAutoRejectScreen;->setHasOptionsMenu(Z)V
 
     :goto_0
     return-void
@@ -1616,7 +1616,7 @@
 
     invoke-interface {v3, v1}, Landroid/view/MenuItem;->setVisible(Z)Landroid/view/MenuItem;
 
-    invoke-super {p0, p1, p2}, Landroid/app/Fragment;->onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
+    invoke-super {p0, p1, p2}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
 
     return-void
 
@@ -1657,7 +1657,7 @@
 
     const-string v4, "match_criteria_mode"
 
-    invoke-virtual {p0, v4}, Landroid/preference/PreferenceFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v4}, Lcom/android/phone/callsettings/EditAutoRejectScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v4
 
@@ -1667,17 +1667,17 @@
 
     iget-object v4, p0, Lcom/android/phone/callsettings/EditAutoRejectScreen;->mMatchCriteriaType:Landroid/preference/ListPreference;
 
-    invoke-virtual {v4, p0}, Landroid/preference/Preference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
+    invoke-virtual {v4, p0}, Landroid/preference/ListPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     iget-object v4, p0, Lcom/android/phone/callsettings/EditAutoRejectScreen;->mMatchCriteriaType:Landroid/preference/ListPreference;
 
-    invoke-virtual {v4, p0}, Landroid/preference/Preference;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
+    invoke-virtual {v4, p0}, Landroid/preference/ListPreference;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/EditAutoRejectScreen;->getActivity()Landroid/app/Activity;
 
     const-string v4, "input_method"
 
-    invoke-virtual {p0, v4}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v4}, Lcom/android/phone/callsettings/EditAutoRejectScreen;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v4
 
@@ -1711,7 +1711,7 @@
     :cond_0
     iget-object v4, p0, Lcom/android/phone/callsettings/EditAutoRejectScreen;->editBox:Landroid/widget/EditText;
 
-    invoke-virtual {v4}, Landroid/view/View;->requestFocus()Z
+    invoke-virtual {v4}, Landroid/widget/EditText;->requestFocus()Z
 
     iget-object v4, p0, Lcom/android/phone/callsettings/EditAutoRejectScreen;->editBox:Landroid/widget/EditText;
 
@@ -1719,7 +1719,7 @@
 
     invoke-direct {v5, p0}, Lcom/android/phone/callsettings/EditAutoRejectScreen$1;-><init>(Lcom/android/phone/callsettings/EditAutoRejectScreen;)V
 
-    invoke-virtual {v4, v5}, Landroid/view/View;->setOnFocusChangeListener(Landroid/view/View$OnFocusChangeListener;)V
+    invoke-virtual {v4, v5}, Landroid/widget/EditText;->setOnFocusChangeListener(Landroid/view/View$OnFocusChangeListener;)V
 
     iget-object v4, p0, Lcom/android/phone/callsettings/EditAutoRejectScreen;->editBox:Landroid/widget/EditText;
 
@@ -1727,7 +1727,7 @@
 
     invoke-direct {v5, p0}, Lcom/android/phone/callsettings/EditAutoRejectScreen$2;-><init>(Lcom/android/phone/callsettings/EditAutoRejectScreen;)V
 
-    invoke-virtual {v4, v5}, Landroid/widget/TextView;->addTextChangedListener(Landroid/text/TextWatcher;)V
+    invoke-virtual {v4, v5}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
     iget-object v4, p0, Lcom/android/phone/callsettings/EditAutoRejectScreen;->handler:Landroid/os/Handler;
 
@@ -1755,11 +1755,11 @@
 
     invoke-direct {v5, p0}, Lcom/android/phone/callsettings/EditAutoRejectScreen$4;-><init>(Lcom/android/phone/callsettings/EditAutoRejectScreen;)V
 
-    invoke-virtual {v4, v5}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v4, v5}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     const/4 v1, 0x0
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getArguments()Landroid/os/Bundle;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/EditAutoRejectScreen;->getArguments()Landroid/os/Bundle;
 
     move-result-object v0
 
@@ -1827,11 +1827,11 @@
 
     iget-object v5, p0, Lcom/android/phone/callsettings/EditAutoRejectScreen;->select_NUM:Ljava/lang/String;
 
-    invoke-virtual {v4, v5}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {v4, v5}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
     iget-object v4, p0, Lcom/android/phone/callsettings/EditAutoRejectScreen;->editBox:Landroid/widget/EditText;
 
-    invoke-virtual {v4}, Landroid/widget/TextView;->length()I
+    invoke-virtual {v4}, Landroid/widget/EditText;->length()I
 
     move-result v2
 
@@ -1873,7 +1873,7 @@
 .method public onDestroy()V
     .locals 2
 
-    invoke-super {p0}, Landroid/preference/PreferenceFragment;->onDestroy()V
+    invoke-super {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onDestroy()V
 
     const-string v0, "EditAutoRejectScreen"
 
@@ -1891,7 +1891,7 @@
 
     iget-object v1, p0, Lcom/android/phone/callsettings/EditAutoRejectScreen;->editBox:Landroid/widget/EditText;
 
-    invoke-virtual {v1}, Landroid/view/View;->getWindowToken()Landroid/os/IBinder;
+    invoke-virtual {v1}, Landroid/widget/EditText;->getWindowToken()Landroid/os/IBinder;
 
     move-result-object v1
 
@@ -1899,7 +1899,7 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/view/inputmethod/InputMethodManager;->hideSoftInputFromWindow(Landroid/os/IBinder;I)Z
 
-    invoke-super {p0}, Landroid/preference/PreferenceFragment;->onDestroyView()V
+    invoke-super {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onDestroyView()V
 
     const-string v0, "EditAutoRejectScreen"
 
@@ -1965,7 +1965,7 @@
 
     iget-object v1, p0, Lcom/android/phone/callsettings/EditAutoRejectScreen;->editBox:Landroid/widget/EditText;
 
-    invoke-virtual {v1}, Landroid/view/View;->getWindowToken()Landroid/os/IBinder;
+    invoke-virtual {v1}, Landroid/widget/EditText;->getWindowToken()Landroid/os/IBinder;
 
     move-result-object v1
 
@@ -2052,7 +2052,7 @@
 
     iget-object v1, p0, Lcom/android/phone/callsettings/EditAutoRejectScreen;->editBox:Landroid/widget/EditText;
 
-    invoke-virtual {v1}, Landroid/view/View;->getWindowToken()Landroid/os/IBinder;
+    invoke-virtual {v1}, Landroid/widget/EditText;->getWindowToken()Landroid/os/IBinder;
 
     move-result-object v1
 
@@ -2082,7 +2082,7 @@
 
     move-result v1
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/EditAutoRejectScreen;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v2
 
@@ -2128,7 +2128,7 @@
     invoke-interface {v2, v3}, Landroid/view/MenuItem;->setVisible(Z)Landroid/view/MenuItem;
 
     :goto_1
-    invoke-super {p0, p1}, Landroid/app/Fragment;->onPrepareOptionsMenu(Landroid/view/Menu;)V
+    invoke-super {p0, p1}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onPrepareOptionsMenu(Landroid/view/Menu;)V
 
     return-void
 
@@ -2196,7 +2196,7 @@
     invoke-virtual {v1, v2}, Landroid/app/ActionBar;->setDisplayHomeAsUpEnabled(Z)V
 
     :cond_0
-    invoke-virtual {p0}, Landroid/app/Fragment;->getFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/EditAutoRejectScreen;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v1
 
@@ -2216,7 +2216,7 @@
 
     iget-object v1, p0, Lcom/android/phone/callsettings/EditAutoRejectScreen;->editBox:Landroid/widget/EditText;
 
-    invoke-virtual {v1}, Landroid/view/View;->isFocused()Z
+    invoke-virtual {v1}, Landroid/widget/EditText;->isFocused()Z
 
     move-result v1
 
@@ -2249,13 +2249,13 @@
 
     if-eqz v1, :cond_3
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/EditAutoRejectScreen;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
     const v2, 0x7f0902dd
 
-    invoke-virtual {p0, v2}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v2}, Lcom/android/phone/callsettings/EditAutoRejectScreen;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2268,11 +2268,11 @@
     :cond_3
     const v1, 0x7f090789
 
-    invoke-virtual {p0, v1}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v1}, Lcom/android/phone/callsettings/EditAutoRejectScreen;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/EditAutoRejectScreen;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -2336,7 +2336,7 @@
 
     invoke-direct {v2, p0}, Lcom/android/phone/callsettings/EditAutoRejectScreen$6;-><init>(Lcom/android/phone/callsettings/EditAutoRejectScreen;)V
 
-    invoke-virtual {v1, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v1, v2}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     const v1, 0x7f0a008d
 
@@ -2354,7 +2354,7 @@
 
     invoke-direct {v2, p0}, Lcom/android/phone/callsettings/EditAutoRejectScreen$7;-><init>(Lcom/android/phone/callsettings/EditAutoRejectScreen;)V
 
-    invoke-virtual {v1, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v1, v2}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     :cond_0
     return-void

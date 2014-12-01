@@ -48,7 +48,7 @@
 
     iget-object v1, p0, Lcom/android/phone/EmergencyDialer$8;->this$0:Lcom/android/phone/EmergencyDialer;
 
-    invoke-virtual {v1}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v1}, Lcom/android/phone/EmergencyDialer;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
@@ -79,7 +79,7 @@
 
     iget-object v1, p0, Lcom/android/phone/EmergencyDialer$8;->this$0:Lcom/android/phone/EmergencyDialer;
 
-    invoke-virtual {v1}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v1}, Lcom/android/phone/EmergencyDialer;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 

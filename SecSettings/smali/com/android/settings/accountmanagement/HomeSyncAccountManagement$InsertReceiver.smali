@@ -27,8 +27,6 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     # getter for: Lcom/android/settings/accountmanagement/HomeSyncAccountManagement;->list:Landroid/widget/ListView;
     invoke-static {}, Lcom/android/settings/accountmanagement/HomeSyncAccountManagement;->access$000()Landroid/widget/ListView;

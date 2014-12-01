@@ -56,7 +56,6 @@
 
 .method public constructor <init>(I)V
     .locals 2
-    .param p1    # I
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -71,9 +70,6 @@
 
 .method private constructor <init>(ILandroid/net/SSLSessionCache;Z)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/net/SSLSessionCache;
-    .param p3    # Z
 
     const/4 v0, 0x0
 
@@ -114,7 +110,6 @@
 
 .method private static castToOpenSSLSocket(Ljava/net/Socket;)Lcom/android/org/conscrypt/OpenSSLSocketImpl;
     .locals 3
-    .param p0    # Ljava/net/Socket;
 
     instance-of v0, p0, Lcom/android/org/conscrypt/OpenSSLSocketImpl;
 
@@ -152,7 +147,6 @@
 
 .method public static getDefault(I)Ljavax/net/SocketFactory;
     .locals 3
-    .param p0    # I
 
     new-instance v0, Landroid/net/SSLCertificateSocketFactory;
 
@@ -167,8 +161,6 @@
 
 .method public static getDefault(ILandroid/net/SSLSessionCache;)Ljavax/net/ssl/SSLSocketFactory;
     .locals 2
-    .param p0    # I
-    .param p1    # Landroid/net/SSLSessionCache;
 
     new-instance v0, Landroid/net/SSLCertificateSocketFactory;
 
@@ -181,9 +173,6 @@
 
 .method public static getDefault([Ljavax/net/ssl/KeyManager;ILandroid/net/SSLSessionCache;)Ljavax/net/ssl/SSLSocketFactory;
     .locals 2
-    .param p0    # [Ljavax/net/ssl/KeyManager;
-    .param p1    # I
-    .param p2    # Landroid/net/SSLSessionCache;
 
     new-instance v0, Landroid/net/SSLCertificateSocketFactory;
 
@@ -293,8 +282,6 @@
 
 .method public static getHttpSocketFactory(ILandroid/net/SSLSessionCache;)Lorg/apache/http/conn/ssl/SSLSocketFactory;
     .locals 3
-    .param p0    # I
-    .param p1    # Landroid/net/SSLSessionCache;
 
     new-instance v0, Lorg/apache/http/conn/ssl/SSLSocketFactory;
 
@@ -311,9 +298,6 @@
 
 .method public static getHttpSocketFactory(ILandroid/net/SSLSessionCache;[Ljavax/net/ssl/KeyManager;)Lorg/apache/http/conn/ssl/SSLSocketFactory;
     .locals 2
-    .param p0    # I
-    .param p1    # Landroid/net/SSLSessionCache;
-    .param p2    # [Ljavax/net/ssl/KeyManager;
 
     new-instance v0, Landroid/net/SSLCertificateSocketFactory;
 
@@ -332,8 +316,6 @@
 
 .method public static getInsecure(ILandroid/net/SSLSessionCache;)Ljavax/net/ssl/SSLSocketFactory;
     .locals 2
-    .param p0    # I
-    .param p1    # Landroid/net/SSLSessionCache;
 
     new-instance v0, Landroid/net/SSLCertificateSocketFactory;
 
@@ -346,9 +328,6 @@
 
 .method public static getInsecure([Ljavax/net/ssl/KeyManager;ILandroid/net/SSLSessionCache;)Ljavax/net/ssl/SSLSocketFactory;
     .locals 2
-    .param p0    # [Ljavax/net/ssl/KeyManager;
-    .param p1    # I
-    .param p2    # Landroid/net/SSLSessionCache;
 
     new-instance v0, Landroid/net/SSLCertificateSocketFactory;
 
@@ -405,8 +384,6 @@
 
 .method private makeSocketFactory([Ljavax/net/ssl/KeyManager;[Ljavax/net/ssl/TrustManager;)Ljavax/net/ssl/SSLSocketFactory;
     .locals 4
-    .param p1    # [Ljavax/net/ssl/KeyManager;
-    .param p2    # [Ljavax/net/ssl/TrustManager;
 
     :try_start_0
     new-instance v1, Lcom/android/org/conscrypt/OpenSSLContextImpl;
@@ -454,7 +431,6 @@
 
 .method static varargs toLengthPrefixedList([[B)[B
     .locals 15
-    .param p0    # [[B
 
     array-length v12, p0
 
@@ -594,8 +570,6 @@
 
 .method public static verifyHostname(Ljava/net/Socket;Ljava/lang/String;)V
     .locals 5
-    .param p0    # Ljava/net/Socket;
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -721,8 +695,6 @@
 
 .method public createSocket(Ljava/lang/String;I)Ljava/net/Socket;
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -767,10 +739,6 @@
 
 .method public createSocket(Ljava/lang/String;ILjava/net/InetAddress;I)Ljava/net/Socket;
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Ljava/net/InetAddress;
-    .param p4    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -815,8 +783,6 @@
 
 .method public createSocket(Ljava/net/InetAddress;I)Ljava/net/Socket;
     .locals 2
-    .param p1    # Ljava/net/InetAddress;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -854,10 +820,6 @@
 
 .method public createSocket(Ljava/net/InetAddress;ILjava/net/InetAddress;I)Ljava/net/Socket;
     .locals 2
-    .param p1    # Ljava/net/InetAddress;
-    .param p2    # I
-    .param p3    # Ljava/net/InetAddress;
-    .param p4    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -895,10 +857,6 @@
 
 .method public createSocket(Ljava/net/Socket;Ljava/lang/String;IZ)Ljava/net/Socket;
     .locals 2
-    .param p1    # Ljava/net/Socket;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -943,7 +901,6 @@
 
 .method public getAlpnSelectedProtocol(Ljava/net/Socket;)[B
     .locals 1
-    .param p1    # Ljava/net/Socket;
 
     invoke-static {p1}, Landroid/net/SSLCertificateSocketFactory;->castToOpenSSLSocket(Ljava/net/Socket;)Lcom/android/org/conscrypt/OpenSSLSocketImpl;
 
@@ -972,7 +929,6 @@
 
 .method public getNpnSelectedProtocol(Ljava/net/Socket;)[B
     .locals 1
-    .param p1    # Ljava/net/Socket;
 
     invoke-static {p1}, Landroid/net/SSLCertificateSocketFactory;->castToOpenSSLSocket(Ljava/net/Socket;)Lcom/android/org/conscrypt/OpenSSLSocketImpl;
 
@@ -1001,7 +957,6 @@
 
 .method public setAlpnProtocols([[B)V
     .locals 1
-    .param p1    # [[B
 
     invoke-static {p1}, Landroid/net/SSLCertificateSocketFactory;->toLengthPrefixedList([[B)[B
 
@@ -1014,7 +969,6 @@
 
 .method public setChannelIdPrivateKey(Ljava/security/PrivateKey;)V
     .locals 0
-    .param p1    # Ljava/security/PrivateKey;
 
     iput-object p1, p0, Landroid/net/SSLCertificateSocketFactory;->mChannelIdPrivateKey:Ljava/security/PrivateKey;
 
@@ -1023,8 +977,6 @@
 
 .method public setHostname(Ljava/net/Socket;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/net/Socket;
-    .param p2    # Ljava/lang/String;
 
     invoke-static {p1}, Landroid/net/SSLCertificateSocketFactory;->castToOpenSSLSocket(Ljava/net/Socket;)Lcom/android/org/conscrypt/OpenSSLSocketImpl;
 
@@ -1037,7 +989,6 @@
 
 .method public setKeyManagers([Ljavax/net/ssl/KeyManager;)V
     .locals 1
-    .param p1    # [Ljavax/net/ssl/KeyManager;
 
     const/4 v0, 0x0
 
@@ -1052,7 +1003,6 @@
 
 .method public setNpnProtocols([[B)V
     .locals 1
-    .param p1    # [[B
 
     invoke-static {p1}, Landroid/net/SSLCertificateSocketFactory;->toLengthPrefixedList([[B)[B
 
@@ -1065,8 +1015,6 @@
 
 .method public setSoWriteTimeout(Ljava/net/Socket;I)V
     .locals 1
-    .param p1    # Ljava/net/Socket;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/net/SocketException;
@@ -1084,7 +1032,6 @@
 
 .method public setTrustManagers([Ljavax/net/ssl/TrustManager;)V
     .locals 1
-    .param p1    # [Ljavax/net/ssl/TrustManager;
 
     iput-object p1, p0, Landroid/net/SSLCertificateSocketFactory;->mTrustManagers:[Ljavax/net/ssl/TrustManager;
 
@@ -1097,8 +1044,6 @@
 
 .method public setUseSessionTickets(Ljava/net/Socket;Z)V
     .locals 1
-    .param p1    # Ljava/net/Socket;
-    .param p2    # Z
 
     invoke-static {p1}, Landroid/net/SSLCertificateSocketFactory;->castToOpenSSLSocket(Ljava/net/Socket;)Lcom/android/org/conscrypt/OpenSSLSocketImpl;
 

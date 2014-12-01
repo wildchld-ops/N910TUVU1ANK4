@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Landroid/app/Instrumentation;Ljava/lang/String;)V
     .locals 0
-    .param p2    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/app/Instrumentation$InstrumentationThread;->this$0:Landroid/app/Instrumentation;
 

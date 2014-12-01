@@ -27,9 +27,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/BackupManagerService;Lcom/android/internal/backup/IBackupTransport;Lcom/android/server/BackupManagerService$ActiveRestoreSession;Landroid/app/backup/IRestoreObserver;)V
     .locals 0
-    .param p2    # Lcom/android/internal/backup/IBackupTransport;
-    .param p3    # Lcom/android/server/BackupManagerService$ActiveRestoreSession;
-    .param p4    # Landroid/app/backup/IRestoreObserver;
 
     iput-object p1, p0, Lcom/android/server/BackupManagerService$RestoreGetSetsParams;->this$0:Lcom/android/server/BackupManagerService;
 

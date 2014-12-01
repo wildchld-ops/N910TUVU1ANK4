@@ -43,7 +43,7 @@
 
     const/16 v1, 0xc8
 
-    invoke-virtual {v0, v1}, Landroid/app/Activity;->showDialog(I)V
+    invoke-virtual {v0, v1}, Lcom/android/phone/NetworkSetting;->showDialog(I)V
 
     iget-object v0, p0, Lcom/android/phone/NetworkSetting$8;->this$0:Lcom/android/phone/NetworkSetting;
 

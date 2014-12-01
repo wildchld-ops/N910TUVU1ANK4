@@ -103,7 +103,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/safetycare/SafetyCareDisaster;)Landroid/widget/Switch;
     .locals 1
-    .param p0    # Lcom/android/settings/safetycare/SafetyCareDisaster;
 
     iget-object v0, p0, Lcom/android/settings/safetycare/SafetyCareDisaster;->mActionBarSwitch:Landroid/widget/Switch;
 
@@ -112,7 +111,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/safetycare/SafetyCareDisaster;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/safetycare/SafetyCareDisaster;
 
     invoke-virtual {p0}, Lcom/android/settings/SettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -123,7 +121,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/safetycare/SafetyCareDisaster;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/safetycare/SafetyCareDisaster;
 
     invoke-virtual {p0}, Lcom/android/settings/SettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -134,7 +131,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/safetycare/SafetyCareDisaster;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/settings/safetycare/SafetyCareDisaster;
 
     iget-object v0, p0, Lcom/android/settings/safetycare/SafetyCareDisaster;->mHelpDBItem:Ljava/lang/String;
 
@@ -143,10 +139,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/safetycare/SafetyCareDisaster;Ljava/lang/String;ZZ)V
     .locals 0
-    .param p0    # Lcom/android/settings/safetycare/SafetyCareDisaster;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # Z
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/settings/safetycare/SafetyCareDisaster;->sendIntent(Ljava/lang/String;ZZ)V
 
@@ -265,9 +257,6 @@
 
 .method private sendIntent(Ljava/lang/String;ZZ)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # Z
 
     const/4 v0, 0x0
 
@@ -318,7 +307,6 @@
 # virtual methods
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 6
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v5, 0x0
 
@@ -411,9 +399,6 @@
 
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     invoke-super {p0, p1, p2, p3}, Lcom/android/settings/SettingsPreferenceFragment;->onActivityResult(IILandroid/content/Intent;)V
 
@@ -433,8 +418,6 @@
 
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 8
-    .param p1    # Landroid/widget/CompoundButton;
-    .param p2    # Z
 
     const/4 v3, 0x1
 
@@ -781,8 +764,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 6
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     const/4 v2, 0x0
 

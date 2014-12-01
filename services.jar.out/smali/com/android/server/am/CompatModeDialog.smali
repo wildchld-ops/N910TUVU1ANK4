@@ -18,9 +18,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/am/ActivityManagerService;Landroid/content/Context;Landroid/content/pm/ApplicationInfo;)V
     .locals 2
-    .param p1    # Lcom/android/server/am/ActivityManagerService;
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/content/pm/ApplicationInfo;
 
     const/4 v1, 0x1
 

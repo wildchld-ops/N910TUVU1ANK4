@@ -136,7 +136,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -273,8 +272,6 @@
 
 .method static synthetic access$000(Lcom/android/incallui/cocktail/SecondScreenPanelView;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/incallui/cocktail/SecondScreenPanelView;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/incallui/cocktail/SecondScreenPanelView;->sendNoticeIntent(Ljava/lang/String;)V
 
@@ -283,7 +280,6 @@
 
 .method private init(Landroid/content/Context;)V
     .locals 9
-    .param p1    # Landroid/content/Context;
 
     const/16 v8, 0x8
 
@@ -1072,7 +1068,6 @@
 
 .method private sendNoticeIntent(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -1390,7 +1385,6 @@
 
 .method private updateTTS(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     iget-object v1, p0, Lcom/android/incallui/cocktail/SecondScreenPanelView;->mAccessibilityManager:Landroid/view/accessibility/AccessibilityManager;
 
@@ -1466,7 +1460,6 @@
 
 .method public onChronometerTick(Landroid/widget/Chronometer;)V
     .locals 6
-    .param p1    # Landroid/widget/Chronometer;
 
     invoke-virtual {p1}, Landroid/widget/Chronometer;->getBase()J
 
@@ -1485,7 +1478,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 5
-    .param p1    # Landroid/view/View;
 
     const/16 v4, 0x64
 
@@ -1708,7 +1700,6 @@
 
 .method public onOrientationChanged(I)V
     .locals 2
-    .param p1    # I
 
     const-string v0, "SecondScreenPanelView"
 
@@ -1727,7 +1718,6 @@
 
 .method public onPanelVisibilityChanged(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "SecondScreenPanelView"
 

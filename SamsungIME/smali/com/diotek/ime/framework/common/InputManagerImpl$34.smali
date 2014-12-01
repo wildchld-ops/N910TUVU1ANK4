@@ -33,8 +33,6 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     iget-object v1, p0, Lcom/diotek/ime/framework/common/InputManagerImpl$34;->this$0:Lcom/diotek/ime/framework/common/InputManagerImpl;
 

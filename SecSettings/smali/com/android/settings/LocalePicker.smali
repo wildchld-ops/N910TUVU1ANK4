@@ -57,7 +57,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/LocalePicker;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/settings/LocalePicker;
 
     iget-object v0, p0, Lcom/android/settings/LocalePicker;->mPrevHoverText:Ljava/lang/String;
 
@@ -66,8 +65,6 @@
 
 .method static synthetic access$002(Lcom/android/settings/LocalePicker;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/android/settings/LocalePicker;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/settings/LocalePicker;->mPrevHoverText:Ljava/lang/String;
 
@@ -76,7 +73,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/LocalePicker;)Landroid/speech/tts/TextToSpeech;
     .locals 1
-    .param p0    # Lcom/android/settings/LocalePicker;
 
     iget-object v0, p0, Lcom/android/settings/LocalePicker;->mTts:Landroid/speech/tts/TextToSpeech;
 
@@ -85,7 +81,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/LocalePicker;)Ljava/util/Locale;
     .locals 1
-    .param p0    # Lcom/android/settings/LocalePicker;
 
     iget-object v0, p0, Lcom/android/settings/LocalePicker;->mCurrentSystemTtsLocale:Ljava/util/Locale;
 
@@ -94,7 +89,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/LocalePicker;)Ljava/util/Locale;
     .locals 1
-    .param p0    # Lcom/android/settings/LocalePicker;
 
     iget-object v0, p0, Lcom/android/settings/LocalePicker;->mTargetLocale:Ljava/util/Locale;
 
@@ -441,9 +435,6 @@
 
 .method public findIndex(Landroid/widget/ListView;II)I
     .locals 5
-    .param p1    # Landroid/widget/ListView;
-    .param p2    # I
-    .param p3    # I
 
     new-instance v2, Landroid/graphics/Rect;
 
@@ -518,7 +509,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 8
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v7, 0x2
 
@@ -675,7 +665,6 @@
 
 .method public onCreateDialog(I)Landroid/app/Dialog;
     .locals 3
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 
@@ -696,9 +685,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 3
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     invoke-super {p0, p1, p2, p3}, Landroid/app/ListFragment;->onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
 
@@ -757,14 +743,12 @@
 
 .method public onInit(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onLocaleSelected(Ljava/util/Locale;)V
     .locals 1
-    .param p1    # Ljava/util/Locale;
 
     invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 
@@ -858,7 +842,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onSaveInstanceState(Landroid/os/Bundle;)V
 
@@ -882,7 +865,6 @@
 
 .method protected removeDialog(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/settings/LocalePicker;->mDialogFragment:Lcom/android/settings/SettingsPreferenceFragment$SettingsDialogFragment;
 
@@ -910,7 +892,6 @@
 
 .method protected showDialog(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/settings/LocalePicker;->mDialogFragment:Lcom/android/settings/SettingsPreferenceFragment$SettingsDialogFragment;
 

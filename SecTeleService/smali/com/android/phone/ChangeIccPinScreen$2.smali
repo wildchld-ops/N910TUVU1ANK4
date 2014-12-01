@@ -56,7 +56,7 @@
 
     move-result-object v8
 
-    invoke-virtual {v8}, Landroid/view/View;->requestFocus()Z
+    invoke-virtual {v8}, Landroid/widget/EditText;->requestFocus()Z
 
     :cond_0
     :goto_0
@@ -79,7 +79,7 @@
 
     move-result-object v8
 
-    invoke-virtual {v8}, Landroid/view/View;->requestFocus()Z
+    invoke-virtual {v8}, Landroid/widget/EditText;->requestFocus()Z
 
     goto :goto_0
 
@@ -100,7 +100,7 @@
 
     move-result-object v8
 
-    invoke-virtual {v8}, Landroid/view/View;->requestFocus()Z
+    invoke-virtual {v8}, Landroid/widget/Button;->requestFocus()Z
 
     goto :goto_0
 
@@ -246,11 +246,11 @@
 
     const/4 v9, 0x0
 
-    invoke-virtual {v8, v9}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v8, v9}, Landroid/widget/TextView;->setVisibility(I)V
 
     iget-object v8, p0, Lcom/android/phone/ChangeIccPinScreen$2;->this$0:Lcom/android/phone/ChangeIccPinScreen;
 
-    invoke-virtual {v8}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {v8}, Lcom/android/phone/ChangeIccPinScreen;->getResources()Landroid/content/res/Resources;
 
     move-result-object v6
 
@@ -307,7 +307,7 @@
 
     move-result-object v8
 
-    invoke-virtual {v8}, Landroid/view/View;->requestFocus()Z
+    invoke-virtual {v8}, Landroid/widget/Button;->requestFocus()Z
 
     goto/16 :goto_0
 

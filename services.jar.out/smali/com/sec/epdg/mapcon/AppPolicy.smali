@@ -68,7 +68,6 @@
 
 .method private fillPendingIntentResult(Z)Landroid/content/Intent;
     .locals 2
-    .param p1    # Z
 
     new-instance v0, Landroid/content/Intent;
 
@@ -83,7 +82,6 @@
 
 .method private getAppPolicy(Lcom/sec/epdg/mapcon/MapconConstants$MapconApnType;)Lcom/sec/epdg/mapcon/AppPolicy$PolicyDetails;
     .locals 1
-    .param p1    # Lcom/sec/epdg/mapcon/MapconConstants$MapconApnType;
 
     sget-object v0, Lcom/sec/epdg/mapcon/AppPolicy;->mAppPolicies:Ljava/util/EnumMap;
 
@@ -98,7 +96,6 @@
 
 .method private getCallingPackageName(Landroid/content/Context;)Ljava/lang/String;
     .locals 7
-    .param p1    # Landroid/content/Context;
 
     invoke-static {}, Landroid/os/Binder;->getCallingPid()I
 
@@ -175,10 +172,6 @@
 
 .method private sendX2XHandoverBroadcast(Landroid/content/Context;Lcom/sec/epdg/mapcon/MapconConstants$MapconApnType;Lcom/sec/epdg/mapcon/MapconConstants$MapconRat;Z)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/sec/epdg/mapcon/MapconConstants$MapconApnType;
-    .param p3    # Lcom/sec/epdg/mapcon/MapconConstants$MapconRat;
-    .param p4    # Z
 
     sget-object v2, Lcom/sec/epdg/mapcon/MapconConstants$MapconRat;->IWLAN:Lcom/sec/epdg/mapcon/MapconConstants$MapconRat;
 
@@ -247,9 +240,6 @@
 
 .method private sendX2XHandoverResultIntent(Landroid/content/Context;Landroid/app/PendingIntent;Z)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/app/PendingIntent;
-    .param p3    # Z
 
     if-eqz p2, :cond_0
 
@@ -344,7 +334,6 @@
 # virtual methods
 .method protected doesAppPolicyHasPreferredRat(Lcom/sec/epdg/mapcon/MapconConstants$MapconApnType;)Lcom/sec/epdg/mapcon/MapconConstants$MapconRat;
     .locals 2
-    .param p1    # Lcom/sec/epdg/mapcon/MapconConstants$MapconApnType;
 
     invoke-direct {p0, p1}, Lcom/sec/epdg/mapcon/AppPolicy;->getAppPolicy(Lcom/sec/epdg/mapcon/MapconConstants$MapconApnType;)Lcom/sec/epdg/mapcon/AppPolicy$PolicyDetails;
 
@@ -367,11 +356,6 @@
 
 .method protected notifyHandoverResult(Landroid/content/Context;Lcom/sec/epdg/mapcon/MapconConstants$MapconApnType;Lcom/sec/epdg/mapcon/MapconConstants$MapconRat;ZZ)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/sec/epdg/mapcon/MapconConstants$MapconApnType;
-    .param p3    # Lcom/sec/epdg/mapcon/MapconConstants$MapconRat;
-    .param p4    # Z
-    .param p5    # Z
 
     invoke-direct {p0, p2}, Lcom/sec/epdg/mapcon/AppPolicy;->getAppPolicy(Lcom/sec/epdg/mapcon/MapconConstants$MapconApnType;)Lcom/sec/epdg/mapcon/AppPolicy$PolicyDetails;
 
@@ -404,7 +388,6 @@
 
 .method protected resetAppPolicy(Lcom/sec/epdg/mapcon/MapconConstants$MapconApnType;)V
     .locals 1
-    .param p1    # Lcom/sec/epdg/mapcon/MapconConstants$MapconApnType;
 
     sget-object v0, Lcom/sec/epdg/mapcon/AppPolicy;->mAppPolicies:Ljava/util/EnumMap;
 
@@ -415,10 +398,6 @@
 
 .method protected setAppPolicy(Landroid/content/Context;Lcom/sec/epdg/mapcon/MapconConstants$MapconRat;Lcom/sec/epdg/mapcon/MapconConstants$MapconApnType;Landroid/app/PendingIntent;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/sec/epdg/mapcon/MapconConstants$MapconRat;
-    .param p3    # Lcom/sec/epdg/mapcon/MapconConstants$MapconApnType;
-    .param p4    # Landroid/app/PendingIntent;
 
     sget-object v0, Lcom/sec/epdg/mapcon/AppPolicy;->mAppPolicies:Ljava/util/EnumMap;
 

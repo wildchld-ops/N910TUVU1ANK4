@@ -39,7 +39,6 @@
 
 .method public static final decodeQuotedPrintable([B)[B
     .locals 9
-    .param p0    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/android/vcard/VCardUtils$DecoderException;

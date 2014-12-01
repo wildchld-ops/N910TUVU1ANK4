@@ -79,8 +79,6 @@
 
 .method public constructor <init>(II)V
     .locals 9
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;,
@@ -217,7 +215,6 @@
 
 .method static synthetic access$000(Landroid/media/audiofx/SoundAlive;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Landroid/media/audiofx/SoundAlive;
 
     iget-object v0, p0, Landroid/media/audiofx/SoundAlive;->mParamListenerLock:Ljava/lang/Object;
 
@@ -226,7 +223,6 @@
 
 .method static synthetic access$100(Landroid/media/audiofx/SoundAlive;)Landroid/media/audiofx/SoundAlive$OnParameterChangeListener;
     .locals 1
-    .param p0    # Landroid/media/audiofx/SoundAlive;
 
     iget-object v0, p0, Landroid/media/audiofx/SoundAlive;->mParamListener:Landroid/media/audiofx/SoundAlive$OnParameterChangeListener;
 
@@ -237,7 +233,6 @@
 # virtual methods
 .method public getBand(I)S
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;,
@@ -275,7 +270,6 @@
 
 .method public getBandFreqRange(S)[I
     .locals 4
-    .param p1    # S
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;,
@@ -311,7 +305,6 @@
 
 .method public getBandLevel(S)S
     .locals 5
-    .param p1    # S
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;,
@@ -372,7 +365,6 @@
 
 .method public getCenterFreq(S)I
     .locals 5
-    .param p1    # S
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;,
@@ -513,8 +505,6 @@
 
 .method public getParameter(I[B)I
     .locals 2
-    .param p1    # I
-    .param p2    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;
@@ -534,7 +524,6 @@
 
 .method public getPresetName(S)Ljava/lang/String;
     .locals 1
-    .param p1    # S
 
     if-ltz p1, :cond_0
 
@@ -636,7 +625,6 @@
 
 .method public getRoundedStrength(S)S
     .locals 5
-    .param p1    # S
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;,
@@ -674,8 +662,6 @@
 
 .method public setBandLevel(SS)V
     .locals 5
-    .param p1    # S
-    .param p2    # S
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;,
@@ -711,8 +697,6 @@
 
 .method public setHMT(II)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;,
@@ -750,7 +734,6 @@
 
 .method public setParameterListener(Landroid/media/audiofx/SoundAlive$OnParameterChangeListener;)V
     .locals 3
-    .param p1    # Landroid/media/audiofx/SoundAlive$OnParameterChangeListener;
 
     iget-object v1, p0, Landroid/media/audiofx/SoundAlive;->mParamListenerLock:Ljava/lang/Object;
 
@@ -792,7 +775,6 @@
 
 .method public setProperties(Landroid/media/audiofx/SoundAlive$Settings;)V
     .locals 7
-    .param p1    # Landroid/media/audiofx/SoundAlive$Settings;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;,
@@ -914,8 +896,6 @@
 
 .method public setSquarePostion(II)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;,
@@ -953,8 +933,6 @@
 
 .method public setStrength(SS)V
     .locals 5
-    .param p1    # S
-    .param p2    # S
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;,
@@ -992,7 +970,6 @@
 
 .method public usePreset(S)V
     .locals 1
-    .param p1    # S
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;,

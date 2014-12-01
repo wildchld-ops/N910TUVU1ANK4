@@ -50,7 +50,6 @@
 
 .method private getCallerName(I)Ljava/lang/String;
     .locals 4
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/app/Fragment;->getView()Landroid/view/View;
 
@@ -96,9 +95,6 @@
 
 .method private setPhotoImage(ZZZ)V
     .locals 4
-    .param p1    # Z
-    .param p2    # Z
-    .param p3    # Z
 
     const/16 v3, 0x8
 
@@ -248,7 +244,6 @@
 # virtual methods
 .method public getIconForLabel(I)I
     .locals 3
-    .param p1    # I
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -311,7 +306,6 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/incallui/CallCardFragment;->onActivityCreated(Landroid/os/Bundle;)V
 
@@ -320,9 +314,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 3
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const-string v1, "onCreateView..."
 
@@ -351,8 +342,6 @@
 
 .method public onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/os/Bundle;
 
     invoke-super {p0, p1, p2}, Lcom/android/incallui/CallCardFragment;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
 
@@ -487,11 +476,6 @@
 
 .method public setCallState(ILcom/android/services/telephony/common/Call$DisconnectCause;ZLjava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Lcom/android/services/telephony/common/Call$DisconnectCause;
-    .param p3    # Z
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
 
     invoke-super/range {p0 .. p5}, Lcom/android/incallui/CallCardFragment;->setCallState(ILcom/android/services/telephony/common/Call$DisconnectCause;ZLjava/lang/String;Ljava/lang/String;)V
 
@@ -519,17 +503,6 @@
 
 .method public setPrimary(Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;ILandroid/graphics/drawable/Drawable;ZZZZZ)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
-    .param p6    # Landroid/graphics/drawable/Drawable;
-    .param p7    # Z
-    .param p8    # Z
-    .param p9    # Z
-    .param p10    # Z
-    .param p11    # Z
 
     invoke-super/range {p0 .. p11}, Lcom/android/incallui/CallCardFragment;->setPrimary(Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;ILandroid/graphics/drawable/Drawable;ZZZZZ)V
 
@@ -546,8 +519,6 @@
 
 .method public setPrimaryCdnipNumber(ZLjava/lang/String;)V
     .locals 4
-    .param p1    # Z
-    .param p2    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/incallui/CallCardCoverFragment;->mPrimaryCdnipNumber:Landroid/widget/TextView;
 
@@ -639,8 +610,6 @@
 
 .method public setPrimaryCnapName(ZLjava/lang/String;)V
     .locals 2
-    .param p1    # Z
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/incallui/CallCardCoverFragment;->mPrimaryCnapNameContainer:Landroid/view/View;
 
@@ -711,8 +680,6 @@
 
 .method public setPrimaryImage(Landroid/graphics/drawable/Drawable;Z)V
     .locals 1
-    .param p1    # Landroid/graphics/drawable/Drawable;
-    .param p2    # Z
 
     const/4 v0, 0x0
 
@@ -731,14 +698,12 @@
 
 .method public setPrimaryLabel(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method public updateBgColorForCallState(I)V
     .locals 4
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -1319,7 +1284,6 @@
 
 .method public updateIncomingModifyCall(I)V
     .locals 1
-    .param p1    # I
 
     const-string v0, "updateIncomingModifyCall()"
 
@@ -1345,7 +1309,6 @@
 
 .method updateModifyCallState(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v2, p0, Lcom/android/incallui/CallCardCoverFragment;->mModifyCallText:Landroid/widget/TextView;
 

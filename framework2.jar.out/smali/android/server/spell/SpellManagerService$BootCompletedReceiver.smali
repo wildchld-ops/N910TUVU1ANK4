@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Landroid/server/spell/SpellManagerService;Landroid/server/spell/SpellManagerService$1;)V
     .locals 0
-    .param p1    # Landroid/server/spell/SpellManagerService;
-    .param p2    # Landroid/server/spell/SpellManagerService$1;
 
     invoke-direct {p0, p1}, Landroid/server/spell/SpellManagerService$BootCompletedReceiver;-><init>(Landroid/server/spell/SpellManagerService;)V
 
@@ -43,8 +41,6 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     iget-object v0, p0, Landroid/server/spell/SpellManagerService$BootCompletedReceiver;->this$0:Landroid/server/spell/SpellManagerService;
 

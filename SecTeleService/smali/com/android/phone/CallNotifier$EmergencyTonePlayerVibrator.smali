@@ -278,7 +278,7 @@
 
     const-string v4, "vibrator"
 
-    invoke-virtual {v3, v4}, Landroid/content/ContextWrapper;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v3, v4}, Lcom/android/phone/PhoneGlobals;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v3
 
@@ -304,7 +304,7 @@
 
     iget-object v3, p0, Lcom/android/phone/CallNotifier$EmergencyTonePlayerVibrator;->mVibratorThread:Lcom/android/phone/CallNotifier$EmergencyTonePlayerVibrator$VibratorThread;
 
-    invoke-virtual {v3}, Ljava/lang/Thread;->start()V
+    invoke-virtual {v3}, Lcom/android/phone/CallNotifier$EmergencyTonePlayerVibrator$VibratorThread;->start()V
 
     iget-object v3, p0, Lcom/android/phone/CallNotifier$EmergencyTonePlayerVibrator;->this$0:Lcom/android/phone/CallNotifier;
 

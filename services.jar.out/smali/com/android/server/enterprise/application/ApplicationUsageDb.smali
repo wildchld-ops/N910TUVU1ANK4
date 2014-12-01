@@ -32,7 +32,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -47,10 +46,6 @@
 
 .method private calculateLastUsageTime(JJJJ)J
     .locals 5
-    .param p1    # J
-    .param p3    # J
-    .param p5    # J
-    .param p7    # J
 
     const-wide/16 v3, 0x0
 
@@ -118,7 +113,6 @@
 
 .method private static createDmAppMgrTable(Landroid/database/sqlite/SQLiteDatabase;)V
     .locals 4
-    .param p0    # Landroid/database/sqlite/SQLiteDatabase;
 
     :try_start_0
     const-string v1, " (_id integer primary key autoincrement, pkgname text, lastpausetime long, applastservicestarttime long, applastservicestoptime long, totalusagetime long, launchcount integer, lastlaunchtime long );"
@@ -170,7 +164,6 @@
 
 .method private static getAppControlDB(Landroid/content/Context;)Landroid/database/sqlite/SQLiteDatabase;
     .locals 5
-    .param p0    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -219,8 +212,6 @@
 
 .method private static isTableExists(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;)Z
     .locals 4
-    .param p0    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -291,7 +282,6 @@
 # virtual methods
 .method public deletePackageFromDb(Ljava/lang/String;)Z
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -842,9 +832,6 @@
 
 .method public updateBackGroundUsageDetails(Ljava/lang/String;JJ)Z
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
-    .param p4    # J
 
     const/4 v5, 0x0
 
@@ -1060,10 +1047,6 @@
 
 .method public updateForeGroundUsageDetails(Ljava/lang/String;IJJ)Z
     .locals 11
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # J
-    .param p5    # J
 
     const/4 v6, 0x0
 

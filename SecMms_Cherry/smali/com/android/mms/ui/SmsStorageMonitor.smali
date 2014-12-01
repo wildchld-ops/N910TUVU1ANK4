@@ -100,8 +100,6 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     iput-object p1, p0, Lcom/android/mms/ui/SmsStorageMonitor;->mContext:Landroid/content/Context;
 

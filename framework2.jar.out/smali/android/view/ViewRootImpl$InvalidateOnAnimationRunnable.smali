@@ -99,7 +99,6 @@
 # virtual methods
 .method public addView(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     monitor-enter p0
 
@@ -126,7 +125,6 @@
 
 .method public addViewRect(Landroid/view/View$AttachInfo$InvalidateInfo;)V
     .locals 1
-    .param p1    # Landroid/view/View$AttachInfo$InvalidateInfo;
 
     monitor-enter p0
 
@@ -153,7 +151,6 @@
 
 .method public removeView(Landroid/view/View;)V
     .locals 6
-    .param p1    # Landroid/view/View;
 
     monitor-enter p0
 

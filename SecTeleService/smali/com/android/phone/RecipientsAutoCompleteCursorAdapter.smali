@@ -83,7 +83,7 @@
 
     const/4 v5, 0x0
 
-    invoke-virtual {v4, v5}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
+    invoke-virtual {v4, v5}, Landroid/widget/LinearLayout;->getChildAt(I)Landroid/view/View;
 
     move-result-object v4
 
@@ -95,7 +95,7 @@
 
     const/4 v4, 0x1
 
-    invoke-virtual {p1, v4}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
+    invoke-virtual {p1, v4}, Landroid/widget/LinearLayout;->getChildAt(I)Landroid/view/View;
 
     move-result-object v4
 
@@ -263,7 +263,7 @@
 
     invoke-direct {v7, v9, v9}, Landroid/widget/LinearLayout$LayoutParams;-><init>(II)V
 
-    invoke-virtual {v5, v6, v7}, Landroid/view/ViewGroup;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
+    invoke-virtual {v5, v6, v7}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
     iget-object v6, p0, Lcom/android/phone/RecipientsAutoCompleteCursorAdapter;->mNumber:Landroid/widget/TextView;
 
@@ -271,7 +271,7 @@
 
     invoke-direct {v7, v9, v9}, Landroid/widget/LinearLayout$LayoutParams;-><init>(II)V
 
-    invoke-virtual {v5, v6, v7}, Landroid/view/ViewGroup;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
+    invoke-virtual {v5, v6, v7}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
     return-object v5
 .end method
@@ -282,13 +282,13 @@
 
     const/4 v2, 0x0
 
-    invoke-virtual {p0}, Landroid/widget/CursorAdapter;->getFilterQueryProvider()Landroid/widget/FilterQueryProvider;
+    invoke-virtual {p0}, Lcom/android/phone/RecipientsAutoCompleteCursorAdapter;->getFilterQueryProvider()Landroid/widget/FilterQueryProvider;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {p0}, Landroid/widget/CursorAdapter;->getFilterQueryProvider()Landroid/widget/FilterQueryProvider;
+    invoke-virtual {p0}, Lcom/android/phone/RecipientsAutoCompleteCursorAdapter;->getFilterQueryProvider()Landroid/widget/FilterQueryProvider;
 
     move-result-object v0
 

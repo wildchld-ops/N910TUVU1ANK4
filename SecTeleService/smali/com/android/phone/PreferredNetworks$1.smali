@@ -125,7 +125,7 @@
 
     const v5, 0x7f0906ea
 
-    invoke-virtual {v4, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {v4, v5}, Lcom/android/phone/PreferredNetworks;->getString(I)Ljava/lang/String;
 
     move-result-object v4
 
@@ -153,7 +153,7 @@
 
     iget-object v4, p0, Lcom/android/phone/PreferredNetworks$1;->this$0:Lcom/android/phone/PreferredNetworks;
 
-    invoke-virtual {v4, v8}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {v4, v8}, Lcom/android/phone/PreferredNetworks;->getString(I)Ljava/lang/String;
 
     move-result-object v4
 
@@ -179,7 +179,7 @@
 
     const/4 v5, 0x1
 
-    invoke-virtual {v4, v5}, Landroid/app/Activity;->dismissDialog(I)V
+    invoke-virtual {v4, v5}, Lcom/android/phone/PreferredNetworks;->dismissDialog(I)V
 
     const-string v4, "PreferredNetworks"
 
@@ -191,7 +191,7 @@
 
     const/4 v5, 0x1
 
-    invoke-virtual {v4, v5}, Landroid/app/Activity;->removeDialog(I)V
+    invoke-virtual {v4, v5}, Lcom/android/phone/PreferredNetworks;->removeDialog(I)V
 
     iget-object v4, p0, Lcom/android/phone/PreferredNetworks$1;->this$0:Lcom/android/phone/PreferredNetworks;
 
@@ -215,7 +215,7 @@
 
     iget-object v4, p0, Lcom/android/phone/PreferredNetworks$1;->this$0:Lcom/android/phone/PreferredNetworks;
 
-    invoke-virtual {v4}, Landroid/app/Activity;->finish()V
+    invoke-virtual {v4}, Lcom/android/phone/PreferredNetworks;->finish()V
 
     goto :goto_0
 
@@ -230,7 +230,7 @@
 
     iget-object v4, p0, Lcom/android/phone/PreferredNetworks$1;->this$0:Lcom/android/phone/PreferredNetworks;
 
-    invoke-virtual {v4, v8}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {v4, v8}, Lcom/android/phone/PreferredNetworks;->getString(I)Ljava/lang/String;
 
     move-result-object v4
 

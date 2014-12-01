@@ -14,8 +14,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/preference/DialogPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -28,9 +26,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Landroid/preference/DialogPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
@@ -41,7 +36,6 @@
 # virtual methods
 .method protected onBindDialogView(Landroid/view/View;)V
     .locals 8
-    .param p1    # Landroid/view/View;
 
     const v7, 0x7f0800ac
 
@@ -185,7 +179,6 @@
 
 .method public setDialogLayoutResource(I)V
     .locals 0
-    .param p1    # I
 
     invoke-super {p0, p1}, Landroid/preference/DialogPreference;->setDialogLayoutResource(I)V
 
@@ -194,7 +187,6 @@
 
 .method public setPositiveButtonText(Ljava/lang/CharSequence;)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
 
     invoke-super {p0, p1}, Landroid/preference/DialogPreference;->setPositiveButtonText(Ljava/lang/CharSequence;)V
 

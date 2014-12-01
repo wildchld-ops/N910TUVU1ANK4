@@ -33,7 +33,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/16 v0, 0xc8
 
@@ -50,8 +49,6 @@
 
 .method static synthetic access$302(Lcom/android/providers/settings/SettingsProvider$SettingsCache;Z)Z
     .locals 0
-    .param p0    # Lcom/android/providers/settings/SettingsProvider$SettingsCache;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/providers/settings/SettingsProvider$SettingsCache;->mCacheFullyMatchesDisk:Z
 
@@ -60,9 +57,6 @@
 
 .method public static isRedundantSetValue(Lcom/android/providers/settings/SettingsProvider$SettingsCache;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 5
-    .param p0    # Lcom/android/providers/settings/SettingsProvider$SettingsCache;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v3, 0x1
 
@@ -153,8 +147,6 @@
 
 .method public static populate(Lcom/android/providers/settings/SettingsProvider$SettingsCache;Landroid/content/ContentValues;)V
     .locals 4
-    .param p0    # Lcom/android/providers/settings/SettingsProvider$SettingsCache;
-    .param p1    # Landroid/content/ContentValues;
 
     if-nez p0, :cond_0
 
@@ -194,10 +186,6 @@
 # virtual methods
 .method protected bridge synthetic entryRemoved(ZLjava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Z
-    .param p2    # Ljava/lang/Object;
-    .param p3    # Ljava/lang/Object;
-    .param p4    # Ljava/lang/Object;
 
     check-cast p2, Ljava/lang/String;
 
@@ -212,10 +200,6 @@
 
 .method protected entryRemoved(ZLjava/lang/String;Landroid/os/Bundle;Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Z
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/os/Bundle;
-    .param p4    # Landroid/os/Bundle;
 
     if-eqz p1, :cond_0
 
@@ -251,8 +235,6 @@
 
 .method public populate(Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -303,8 +285,6 @@
 
 .method public putIfAbsent(Ljava/lang/String;Ljava/lang/String;)Landroid/os/Bundle;
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     if-nez p2, :cond_3
 
@@ -366,7 +346,6 @@
 
 .method public setFullyMatchesDisk(Z)V
     .locals 1
-    .param p1    # Z
 
     monitor-enter p0
 

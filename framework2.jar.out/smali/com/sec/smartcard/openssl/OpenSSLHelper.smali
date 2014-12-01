@@ -81,7 +81,6 @@
 
 .method public getPrivateKey(Ljava/lang/String;)Ljava/security/PrivateKey;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const-string v2, "OpenSSLHelper"
 
@@ -128,7 +127,6 @@
 
 .method protected getSlotID(Ljava/lang/String;)J
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const-string v1, "OpenSSLHelper"
 
@@ -161,7 +159,6 @@
 
 .method public registerEngine(Ljava/lang/String;)Z
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x0
 

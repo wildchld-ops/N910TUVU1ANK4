@@ -38,7 +38,6 @@
 
 .method public isFeatureEnabled(I)Z
     .locals 3
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 

@@ -99,7 +99,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Lcom/samsung/android/toolbox/ITwToolBoxService$Stub;-><init>()V
 
@@ -205,8 +204,6 @@
 
 .method static synthetic access$002(Lcom/samsung/android/toolbox/TwToolBoxService;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxService;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/samsung/android/toolbox/TwToolBoxService;->mPackageList:Ljava/lang/String;
 
@@ -215,7 +212,6 @@
 
 .method static synthetic access$100(Lcom/samsung/android/toolbox/TwToolBoxService;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxService;
 
     iget-object v0, p0, Lcom/samsung/android/toolbox/TwToolBoxService;->mContentResolver:Landroid/content/ContentResolver;
 
@@ -248,8 +244,6 @@
 
 .method public isContain(II)Z
     .locals 5
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -313,7 +307,6 @@
 
 .method public registerCallback(Lcom/samsung/android/toolbox/ITwToolBoxServiceCallback;)Z
     .locals 1
-    .param p1    # Lcom/samsung/android/toolbox/ITwToolBoxServiceCallback;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -339,9 +332,6 @@
 
 .method public sendMessage(Ljava/lang/String;II)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -394,7 +384,6 @@
 
 .method public setToolList(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     sget-object v0, Lcom/samsung/android/toolbox/TwToolBoxService;->TAG:Ljava/lang/String;
 
@@ -407,7 +396,6 @@
 
 .method public unregisterCallback(Lcom/samsung/android/toolbox/ITwToolBoxServiceCallback;)Z
     .locals 1
-    .param p1    # Lcom/samsung/android/toolbox/ITwToolBoxServiceCallback;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

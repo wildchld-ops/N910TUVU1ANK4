@@ -48,7 +48,6 @@
 
 .method public constructor <init>(Landroid/content/IIntentSender;)V
     .locals 0
-    .param p1    # Landroid/content/IIntentSender;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -59,7 +58,6 @@
 
 .method public constructor <init>(Landroid/os/IBinder;)V
     .locals 1
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -74,7 +72,6 @@
 
 .method public static readIntentSenderOrNullFromParcel(Landroid/os/Parcel;)Landroid/content/IntentSender;
     .locals 2
-    .param p0    # Landroid/os/Parcel;
 
     invoke-virtual {p0}, Landroid/os/Parcel;->readStrongBinder()Landroid/os/IBinder;
 
@@ -97,8 +94,6 @@
 
 .method public static writeIntentSenderOrNullToParcel(Landroid/content/IntentSender;Landroid/os/Parcel;)V
     .locals 1
-    .param p0    # Landroid/content/IntentSender;
-    .param p1    # Landroid/os/Parcel;
 
     if-eqz p0, :cond_0
 
@@ -131,7 +126,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 2
-    .param p1    # Ljava/lang/Object;
 
     instance-of v0, p1, Landroid/content/IntentSender;
 
@@ -317,11 +311,6 @@
 
 .method public sendIntent(Landroid/content/Context;ILandroid/content/Intent;Landroid/content/IntentSender$OnFinished;Landroid/os/Handler;)V
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
-    .param p4    # Landroid/content/IntentSender$OnFinished;
-    .param p5    # Landroid/os/Handler;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/IntentSender$SendIntentException;
@@ -349,12 +338,6 @@
 
 .method public sendIntent(Landroid/content/Context;ILandroid/content/Intent;Landroid/content/IntentSender$OnFinished;Landroid/os/Handler;Ljava/lang/String;)V
     .locals 8
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
-    .param p4    # Landroid/content/IntentSender$OnFinished;
-    .param p5    # Landroid/os/Handler;
-    .param p6    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/IntentSender$SendIntentException;
@@ -480,8 +463,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v0, p0, Landroid/content/IntentSender;->mTarget:Landroid/content/IIntentSender;
 

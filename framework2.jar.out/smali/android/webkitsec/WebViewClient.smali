@@ -48,18 +48,12 @@
 # virtual methods
 .method public doUpdateVisitedHistory(Landroid/webkitsec/WebView;Ljava/lang/String;Z)V
     .locals 0
-    .param p1    # Landroid/webkitsec/WebView;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     return-void
 .end method
 
 .method public onFormResubmission(Landroid/webkitsec/WebView;Landroid/os/Message;Landroid/os/Message;)V
     .locals 0
-    .param p1    # Landroid/webkitsec/WebView;
-    .param p2    # Landroid/os/Message;
-    .param p3    # Landroid/os/Message;
 
     invoke-virtual {p2}, Landroid/os/Message;->sendToTarget()V
 
@@ -68,45 +62,30 @@
 
 .method public onLoadResource(Landroid/webkitsec/WebView;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Landroid/webkitsec/WebView;
-    .param p2    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method public onPageFinished(Landroid/webkitsec/WebView;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Landroid/webkitsec/WebView;
-    .param p2    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method public onPageStarted(Landroid/webkitsec/WebView;Ljava/lang/String;Landroid/graphics/Bitmap;)V
     .locals 0
-    .param p1    # Landroid/webkitsec/WebView;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/graphics/Bitmap;
 
     return-void
 .end method
 
 .method public onReceivedError(Landroid/webkitsec/WebView;ILjava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Landroid/webkitsec/WebView;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method public onReceivedHttpAuthRequest(Landroid/webkitsec/WebView;Landroid/webkitsec/HttpAuthHandler;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Landroid/webkitsec/WebView;
-    .param p2    # Landroid/webkitsec/HttpAuthHandler;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     invoke-virtual {p2}, Landroid/webkitsec/HttpAuthHandler;->cancel()V
 
@@ -115,35 +94,24 @@
 
 .method public onReceivedLoginRequest(Landroid/webkitsec/WebView;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Landroid/webkitsec/WebView;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method public onReceivedReaderData(Landroid/webkitsec/WebView;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Landroid/webkitsec/WebView;
-    .param p2    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method public onReceivedRecognizeData(Landroid/webkitsec/WebView;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Landroid/webkitsec/WebView;
-    .param p2    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method public onReceivedSslError(Landroid/webkitsec/WebView;Landroid/webkitsec/SslErrorHandler;Landroid/net/http/SslError;)V
     .locals 0
-    .param p1    # Landroid/webkitsec/WebView;
-    .param p2    # Landroid/webkitsec/SslErrorHandler;
-    .param p3    # Landroid/net/http/SslError;
 
     invoke-virtual {p2}, Landroid/webkitsec/SslErrorHandler;->cancel()V
 
@@ -152,10 +120,6 @@
 
 .method public onReceivedSslError(Landroid/webkitsec/WebView;Landroid/webkitsec/SslErrorHandler;Landroid/net/http/SslError;Z)V
     .locals 0
-    .param p1    # Landroid/webkitsec/WebView;
-    .param p2    # Landroid/webkitsec/SslErrorHandler;
-    .param p3    # Landroid/net/http/SslError;
-    .param p4    # Z
 
     invoke-virtual {p2}, Landroid/webkitsec/SslErrorHandler;->cancel()V
 
@@ -164,26 +128,18 @@
 
 .method public onScaleChanged(Landroid/webkitsec/WebView;FF)V
     .locals 0
-    .param p1    # Landroid/webkitsec/WebView;
-    .param p2    # F
-    .param p3    # F
 
     return-void
 .end method
 
 .method public onSpellCheckFinish(Landroid/webkitsec/WebView;I)V
     .locals 0
-    .param p1    # Landroid/webkitsec/WebView;
-    .param p2    # I
 
     return-void
 .end method
 
 .method public onTooManyRedirects(Landroid/webkitsec/WebView;Landroid/os/Message;Landroid/os/Message;)V
     .locals 0
-    .param p1    # Landroid/webkitsec/WebView;
-    .param p2    # Landroid/os/Message;
-    .param p3    # Landroid/os/Message;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -194,8 +150,6 @@
 
 .method public onUnhandledKeyEvent(Landroid/webkitsec/WebView;Landroid/view/KeyEvent;)V
     .locals 1
-    .param p1    # Landroid/webkitsec/WebView;
-    .param p2    # Landroid/view/KeyEvent;
 
     invoke-virtual {p1}, Landroid/view/View;->getViewRootImpl()Landroid/view/ViewRootImpl;
 
@@ -211,15 +165,12 @@
 
 .method public onUpdateUrl(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method public shouldInterceptRequest(Landroid/webkitsec/WebView;Ljava/lang/String;)Landroid/webkitsec/WebResourceResponse;
     .locals 1
-    .param p1    # Landroid/webkitsec/WebView;
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -228,8 +179,6 @@
 
 .method public shouldOverrideKeyEvent(Landroid/webkitsec/WebView;Landroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # Landroid/webkitsec/WebView;
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x0
 
@@ -238,8 +187,6 @@
 
 .method public shouldOverrideUrlLoading(Landroid/webkitsec/WebView;Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Landroid/webkitsec/WebView;
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 

@@ -32,8 +32,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;)V
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v7, 0x0
 
@@ -398,7 +396,6 @@
 
 .method public getHostValue(Ljava/lang/String;)Ljava/lang/Object;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-boolean v0, p0, Landroid/filterfw/core/NativeProgram;->mTornDown:Z
 
@@ -435,8 +432,6 @@
 
 .method public process([Landroid/filterfw/core/Frame;Landroid/filterfw/core/Frame;)V
     .locals 6
-    .param p1    # [Landroid/filterfw/core/Frame;
-    .param p2    # Landroid/filterfw/core/Frame;
 
     iget-boolean v3, p0, Landroid/filterfw/core/NativeProgram;->mTornDown:Z
 
@@ -582,8 +577,6 @@
 
 .method public setHostValue(Ljava/lang/String;Ljava/lang/Object;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Object;
 
     iget-boolean v0, p0, Landroid/filterfw/core/NativeProgram;->mTornDown:Z
 

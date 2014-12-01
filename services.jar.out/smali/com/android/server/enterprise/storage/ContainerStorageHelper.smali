@@ -30,8 +30,6 @@
 
 .method private constructor <init>(Landroid/content/Context;Landroid/database/DatabaseErrorHandler;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/database/DatabaseErrorHandler;
 
     const-string v2, "/data/system/container/databases/container.db"
 
@@ -60,8 +58,6 @@
 
 .method static declared-synchronized getInstance(Landroid/content/Context;Landroid/database/DatabaseErrorHandler;)Lcom/android/server/enterprise/storage/ContainerStorageHelper;
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/database/DatabaseErrorHandler;
 
     const-class v1, Lcom/android/server/enterprise/storage/ContainerStorageHelper;
 
@@ -121,7 +117,6 @@
 
 .method public onCreate(Landroid/database/sqlite/SQLiteDatabase;)V
     .locals 2
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
 
     sget-object v0, Lcom/android/server/enterprise/storage/ContainerStorageHelper;->TAG:Ljava/lang/String;
 
@@ -134,7 +129,6 @@
 
 .method public onOpen(Landroid/database/sqlite/SQLiteDatabase;)V
     .locals 0
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-super {p0, p1}, Landroid/database/sqlite/SQLiteOpenHelper;->onOpen(Landroid/database/sqlite/SQLiteDatabase;)V
 
@@ -143,9 +137,6 @@
 
 .method public onUpgrade(Landroid/database/sqlite/SQLiteDatabase;II)V
     .locals 4
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p2    # I
-    .param p3    # I
 
     sget-object v1, Lcom/android/server/enterprise/storage/ContainerStorageHelper;->TAG:Ljava/lang/String;
 
@@ -320,10 +311,6 @@
 
 .method select(Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
     .locals 11
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     invoke-virtual {p0}, Landroid/database/sqlite/SQLiteOpenHelper;->getReadableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 

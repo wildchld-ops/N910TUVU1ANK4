@@ -63,9 +63,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/inputmethodservice/KeyboardView;Landroid/view/View;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/inputmethodservice/KeyboardView;
-    .param p3    # Landroid/view/View;
 
     const/4 v4, 0x1
 
@@ -86,10 +83,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/inputmethodservice/KeyboardView;Landroid/view/View;Z)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/inputmethodservice/KeyboardView;
-    .param p3    # Landroid/view/View;
-    .param p4    # Z
 
     const/4 v5, 0x0
 
@@ -110,11 +103,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/inputmethodservice/KeyboardView;Landroid/view/View;Z[I)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/inputmethodservice/KeyboardView;
-    .param p3    # Landroid/view/View;
-    .param p4    # Z
-    .param p5    # [I
 
     const/4 v1, 0x0
 
@@ -303,8 +291,6 @@
 
 .method private createKeyboardsWithSpecificSize(II)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
 
     const v3, 0x1020493
 
@@ -415,8 +401,6 @@
 
 .method private handleCharacter(I[I)V
     .locals 1
-    .param p1    # I
-    .param p2    # [I
 
     iget-object v0, p0, Lcom/android/internal/widget/PasswordEntryKeyboardHelper;->mKeyboardView:Landroid/inputmethodservice/KeyboardView;
 
@@ -671,7 +655,6 @@
 
 .method private sendKeyEventsToTarget(I)V
     .locals 9
-    .param p1    # I
 
     iget-object v5, p0, Lcom/android/internal/widget/PasswordEntryKeyboardHelper;->mTargetView:Landroid/view/View;
 
@@ -801,8 +784,6 @@
 
 .method public onKey(I[I)V
     .locals 2
-    .param p1    # I
-    .param p2    # [I
 
     const/4 v0, -0x5
 
@@ -865,7 +846,6 @@
 
 .method public onPress(I)V
     .locals 0
-    .param p1    # I
 
     invoke-direct {p0}, Lcom/android/internal/widget/PasswordEntryKeyboardHelper;->performHapticFeedback()V
 
@@ -874,21 +854,18 @@
 
 .method public onRelease(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onText(Ljava/lang/CharSequence;)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
 
     return-void
 .end method
 
 .method public sendDownUpKeyEvents(I)V
     .locals 13
-    .param p1    # I
 
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 
@@ -949,7 +926,6 @@
 
 .method public setEnableHaptics(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/internal/widget/PasswordEntryKeyboardHelper;->mEnableHaptics:Z
 
@@ -958,7 +934,6 @@
 
 .method public setKeyboardMode(I)V
     .locals 5
-    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -1035,7 +1010,6 @@
 
 .method public setVibratePattern(I)V
     .locals 6
-    .param p1    # I
 
     const/4 v2, 0x0
 

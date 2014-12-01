@@ -36,7 +36,6 @@
 # virtual methods
 .method public onAnimationUpdate(Landroid/animation/ValueAnimator;)V
     .locals 1
-    .param p1    # Landroid/animation/ValueAnimator;
 
     iget-object v0, p0, Lcom/android/launcher2/AppWidgetResizeFrame$2;->this$0:Lcom/android/launcher2/AppWidgetResizeFrame;
 

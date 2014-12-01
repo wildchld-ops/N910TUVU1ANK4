@@ -27,7 +27,6 @@
 
 .method synthetic constructor <init>(Lcom/android/settings/bluetooth/BluetoothDeviceFilter$1;)V
     .locals 0
-    .param p1    # Lcom/android/settings/bluetooth/BluetoothDeviceFilter$1;
 
     invoke-direct {p0}, Lcom/android/settings/bluetooth/BluetoothDeviceFilter$TransferFilter;-><init>()V
 
@@ -38,8 +37,6 @@
 # virtual methods
 .method matches([Landroid/os/ParcelUuid;Landroid/bluetooth/BluetoothClass;)Z
     .locals 2
-    .param p1    # [Landroid/os/ParcelUuid;
-    .param p2    # Landroid/bluetooth/BluetoothClass;
 
     const/4 v0, 0x1
 

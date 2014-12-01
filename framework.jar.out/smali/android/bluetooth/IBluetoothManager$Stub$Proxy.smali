@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -45,7 +44,6 @@
 
 .method public disable(Z)Z
     .locals 7
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -123,7 +121,6 @@
 
 .method public disableRadio(I)Z
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -415,7 +412,6 @@
 
 .method public enableRadio(I)Z
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -822,7 +818,6 @@
 
 .method public putLogs(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -874,7 +869,6 @@
 
 .method public registerAdapter(Landroid/bluetooth/IBluetoothManagerCallback;)Landroid/bluetooth/IBluetooth;
     .locals 6
-    .param p1    # Landroid/bluetooth/IBluetoothManagerCallback;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -946,7 +940,6 @@
 
 .method public registerRadioMgrCallback(Landroid/bluetooth/IBluetoothRadioMgrCallback;)Z
     .locals 6
-    .param p1    # Landroid/bluetooth/IBluetoothRadioMgrCallback;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1021,7 +1014,6 @@
 
 .method public registerStateChangeCallback(Landroid/bluetooth/IBluetoothStateChangeCallback;)V
     .locals 5
-    .param p1    # Landroid/bluetooth/IBluetoothStateChangeCallback;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1085,7 +1077,6 @@
 
 .method public unregisterAdapter(Landroid/bluetooth/IBluetoothManagerCallback;)V
     .locals 5
-    .param p1    # Landroid/bluetooth/IBluetoothManagerCallback;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1149,7 +1140,6 @@
 
 .method public unregisterRadioMgrCallback(Landroid/bluetooth/IBluetoothRadioMgrCallback;)Z
     .locals 6
-    .param p1    # Landroid/bluetooth/IBluetoothRadioMgrCallback;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1224,7 +1214,6 @@
 
 .method public unregisterStateChangeCallback(Landroid/bluetooth/IBluetoothStateChangeCallback;)V
     .locals 5
-    .param p1    # Landroid/bluetooth/IBluetoothStateChangeCallback;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

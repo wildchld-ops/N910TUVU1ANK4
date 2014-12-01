@@ -42,8 +42,6 @@
 # virtual methods
 .method public onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 7
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     iget-object v4, p0, Lcom/android/incallui/CallCardVideoFragment$3;->this$0:Lcom/android/incallui/CallCardVideoFragment;
 

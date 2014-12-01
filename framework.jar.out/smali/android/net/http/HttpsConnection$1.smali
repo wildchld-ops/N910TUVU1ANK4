@@ -30,16 +30,12 @@
 # virtual methods
 .method public checkClientTrusted([Ljava/security/cert/X509Certificate;Ljava/lang/String;)V
     .locals 0
-    .param p1    # [Ljava/security/cert/X509Certificate;
-    .param p2    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method public checkServerTrusted([Ljava/security/cert/X509Certificate;Ljava/lang/String;)V
     .locals 0
-    .param p1    # [Ljava/security/cert/X509Certificate;
-    .param p2    # Ljava/lang/String;
 
     return-void
 .end method

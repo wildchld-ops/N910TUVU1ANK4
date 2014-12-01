@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -45,7 +44,6 @@
 
 .method public calculateSplitWindowSize(I)Landroid/graphics/Rect;
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -117,7 +115,6 @@
 
 .method public checkCenterBarRect(Landroid/graphics/Rect;)Landroid/graphics/Rect;
     .locals 6
-    .param p1    # Landroid/graphics/Rect;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -208,8 +205,6 @@
 
 .method public dispatchMinimizeEvent(Landroid/os/IBinder;Landroid/view/MotionEvent;)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Landroid/view/MotionEvent;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -282,11 +277,6 @@
 
 .method public findDockingWindowZone(IIIII)I
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -805,7 +795,6 @@
 
 .method public isSupportScaleApp(Landroid/content/pm/ActivityInfo;)Z
     .locals 7
-    .param p1    # Landroid/content/pm/ActivityInfo;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -892,7 +881,6 @@
 
 .method public launchExternalDisplay(Z)V
     .locals 5
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1000,8 +988,6 @@
 
 .method public notifyMultiDisplayState(ZZ)Z
     .locals 7
-    .param p1    # Z
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1091,9 +1077,6 @@
 
 .method public registerCallback(Landroid/os/IBinder;ILandroid/os/IBinder;)Z
     .locals 6
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # I
-    .param p3    # Landroid/os/IBinder;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1160,7 +1143,6 @@
 
 .method public setAppListPosition(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1212,7 +1194,6 @@
 
 .method public setCenterBarPoint(Landroid/graphics/Point;)V
     .locals 5
-    .param p1    # Landroid/graphics/Point;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1332,7 +1313,6 @@
 
 .method public setMultiDisplayState(Z)V
     .locals 5
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1391,7 +1371,6 @@
 
 .method public setMultiDisplayTarget(I)Z
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1454,7 +1433,6 @@
 
 .method public unRegisterCallback(Landroid/os/IBinder;)Z
     .locals 6
-    .param p1    # Landroid/os/IBinder;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

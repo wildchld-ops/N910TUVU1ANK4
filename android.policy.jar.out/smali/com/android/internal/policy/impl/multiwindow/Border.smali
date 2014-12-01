@@ -46,8 +46,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/view/WindowManager;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/view/WindowManager;
 
     const/4 v3, 0x0
 
@@ -342,10 +340,6 @@
 
 .method private drawBorderLine(Landroid/graphics/Canvas;IILandroid/graphics/Paint;)V
     .locals 14
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/graphics/Paint;
 
     if-nez p4, :cond_1
 
@@ -542,10 +536,6 @@
 # virtual methods
 .method public drawBorderBitmap(Landroid/graphics/Canvas;III)V
     .locals 6
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/4 v3, 0x2
 
@@ -725,9 +715,6 @@
 
 .method public drawBorderLine(Landroid/graphics/Canvas;II)V
     .locals 1
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # I
-    .param p3    # I
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/multiwindow/Border;->mBorderPaintInner:Landroid/graphics/Paint;
 
@@ -742,7 +729,6 @@
 
 .method public setFocus(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/multiwindow/Border;->mBorderPaintInner:Landroid/graphics/Paint;
 

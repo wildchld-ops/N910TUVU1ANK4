@@ -116,7 +116,6 @@
 
 .method public setShareViaAssetmngr(Landroid/content/res/AssetManager;)V
     .locals 0
-    .param p1    # Landroid/content/res/AssetManager;
 
     iput-object p1, p0, Lcom/samsung/app/share/via/external/ShareviaObj;->assetmngr:Landroid/content/res/AssetManager;
 
@@ -125,7 +124,6 @@
 
 .method public setShareViaAudioCodec(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/app/share/via/external/ShareviaObj;->audioCodecType:I
 
@@ -134,7 +132,6 @@
 
 .method public setShareViaAudioLength(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/app/share/via/external/ShareviaObj;->audioLength:I
 
@@ -143,7 +140,6 @@
 
 .method public setShareViaAudioOffset(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/app/share/via/external/ShareviaObj;->audioOffset:I
 
@@ -152,7 +148,6 @@
 
 .method public setShareViaEndTime(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/app/share/via/external/ShareviaObj;->endTime:I
 
@@ -161,7 +156,6 @@
 
 .method public setShareViaHeight(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/app/share/via/external/ShareviaObj;->outputHeight:I
 
@@ -170,7 +164,6 @@
 
 .method public setShareViaIconFileName(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/samsung/app/share/via/external/ShareviaObj;->iconFileName:Ljava/lang/String;
 
@@ -179,7 +172,6 @@
 
 .method public setShareViaInputFilename(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/samsung/app/share/via/external/ShareviaObj;->inputFileName:Ljava/lang/String;
 
@@ -188,7 +180,6 @@
 
 .method public setShareViaOutputFileResolution(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/app/share/via/external/ShareviaObj;->OutFileResolution:I
 
@@ -197,7 +188,6 @@
 
 .method public setShareViaOutputFilename(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/samsung/app/share/via/external/ShareviaObj;->outputFileName:Ljava/lang/String;
 
@@ -206,7 +196,6 @@
 
 .method public setShareViaStartTime(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/app/share/via/external/ShareviaObj;->startTime:I
 
@@ -215,7 +204,6 @@
 
 .method public setShareViaTranscodeMode(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/app/share/via/external/ShareviaObj;->transcodeMode:I
 
@@ -224,7 +212,6 @@
 
 .method public setShareViaVideoCodec(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/app/share/via/external/ShareviaObj;->videoCodecType:I
 
@@ -233,7 +220,6 @@
 
 .method public setShareViaWidth(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/app/share/via/external/ShareviaObj;->outputWidth:I
 
@@ -242,7 +228,6 @@
 
 .method public setShareViamaxDuration(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/app/share/via/external/ShareviaObj;->maxOutFileDuration:I
 
@@ -251,7 +236,6 @@
 
 .method public setShareViamaxSize(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/app/share/via/external/ShareviaObj;->maxOutFileSize:I
 

@@ -186,13 +186,6 @@
 
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;ILcom/sec/android/glview/TwGLViewGroup;Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;Lcom/sec/android/app/camera/MenuResourceDepot;II)V
     .locals 9
-    .param p1    # Lcom/sec/android/app/camera/Camera;
-    .param p2    # I
-    .param p3    # Lcom/sec/android/glview/TwGLViewGroup;
-    .param p4    # Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;
-    .param p5    # Lcom/sec/android/app/camera/MenuResourceDepot;
-    .param p6    # I
-    .param p7    # I
 
     const/4 v8, 0x0
 
@@ -219,14 +212,6 @@
 
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;ILcom/sec/android/glview/TwGLViewGroup;Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;Lcom/sec/android/app/camera/MenuResourceDepot;IIZ)V
     .locals 12
-    .param p1    # Lcom/sec/android/app/camera/Camera;
-    .param p2    # I
-    .param p3    # Lcom/sec/android/glview/TwGLViewGroup;
-    .param p4    # Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;
-    .param p5    # Lcom/sec/android/app/camera/MenuResourceDepot;
-    .param p6    # I
-    .param p7    # I
-    .param p8    # Z
 
     const/4 v7, 0x1
 
@@ -599,7 +584,6 @@
 
 .method static synthetic access$100(Lcom/sec/android/app/camera/glwidget/TwGLThumbnailListMenu;)Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLThumbnailListMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLThumbnailListMenu;->mResource:Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;
 
@@ -608,7 +592,6 @@
 
 .method static synthetic access$1000(Lcom/sec/android/app/camera/glwidget/TwGLThumbnailListMenu;)Z
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLThumbnailListMenu;
 
     iget-boolean v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLThumbnailListMenu;->mMute:Z
 
@@ -617,7 +600,6 @@
 
 .method static synthetic access$1100(Lcom/sec/android/app/camera/glwidget/TwGLThumbnailListMenu;)Lcom/sec/android/glview/TwGLList;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLThumbnailListMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLThumbnailListMenu;->mList:Lcom/sec/android/glview/TwGLList;
 
@@ -626,7 +608,6 @@
 
 .method static synthetic access$200(Lcom/sec/android/app/camera/glwidget/TwGLThumbnailListMenu;)Landroid/util/SparseArray;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLThumbnailListMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLThumbnailListMenu;->mItemList:Landroid/util/SparseArray;
 
@@ -635,7 +616,6 @@
 
 .method static synthetic access$300(Lcom/sec/android/app/camera/glwidget/TwGLThumbnailListMenu;)Lcom/sec/android/app/camera/Camera;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLThumbnailListMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLThumbnailListMenu;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -644,7 +624,6 @@
 
 .method static synthetic access$400(Lcom/sec/android/app/camera/glwidget/TwGLThumbnailListMenu;)Lcom/sec/android/glview/TwGLViewGroup;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLThumbnailListMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLThumbnailListMenu;->mGLParentView:Lcom/sec/android/glview/TwGLViewGroup;
 
@@ -653,7 +632,6 @@
 
 .method static synthetic access$500(Lcom/sec/android/app/camera/glwidget/TwGLThumbnailListMenu;)Lcom/sec/android/app/camera/MenuResourceDepot;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLThumbnailListMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLThumbnailListMenu;->mMenuResourceDepot:Lcom/sec/android/app/camera/MenuResourceDepot;
 
@@ -662,7 +640,6 @@
 
 .method static synthetic access$600(Lcom/sec/android/app/camera/glwidget/TwGLThumbnailListMenu;)Lcom/sec/android/app/camera/Camera;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLThumbnailListMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLThumbnailListMenu;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -794,7 +771,6 @@
 
 .method public onActivityTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 3
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v2, 0x1
 
@@ -843,7 +819,6 @@
 
 .method public onAnimationEnd(Landroid/view/animation/Animation;)Z
     .locals 5
-    .param p1    # Landroid/view/animation/Animation;
 
     const/4 v4, 0x0
 
@@ -960,7 +935,6 @@
 
 .method public onAnimationStart(Landroid/view/animation/Animation;)Z
     .locals 3
-    .param p1    # Landroid/view/animation/Animation;
 
     const/4 v0, 0x1
 
@@ -1012,7 +986,6 @@
 
 .method public onClick(Lcom/sec/android/glview/TwGLView;)Z
     .locals 4
-    .param p1    # Lcom/sec/android/glview/TwGLView;
 
     const/4 v0, 0x1
 
@@ -1127,8 +1100,6 @@
 
 .method public onTouch(Lcom/sec/android/glview/TwGLView;Landroid/view/MotionEvent;)Z
     .locals 3
-    .param p1    # Lcom/sec/android/glview/TwGLView;
-    .param p2    # Landroid/view/MotionEvent;
 
     const/4 v2, 0x0
 

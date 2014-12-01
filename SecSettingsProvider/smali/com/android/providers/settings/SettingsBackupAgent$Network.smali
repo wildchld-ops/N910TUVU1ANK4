@@ -64,7 +64,6 @@
 
 .method public static readFromStream(Ljava/io/BufferedReader;)Lcom/android/providers/settings/SettingsBackupAgent$Network;
     .locals 4
-    .param p0    # Ljava/io/BufferedReader;
 
     new-instance v2, Lcom/android/providers/settings/SettingsBackupAgent$Network;
 
@@ -115,7 +114,6 @@
 # virtual methods
 .method public equals(Ljava/lang/Object;)Z
     .locals 7
-    .param p1    # Ljava/lang/Object;
 
     const/4 v3, 0x1
 
@@ -207,7 +205,6 @@
 
 .method rememberLine(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x1
 
@@ -310,7 +307,6 @@
 
 .method public write(Ljava/io/Writer;)V
     .locals 4
-    .param p1    # Ljava/io/Writer;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

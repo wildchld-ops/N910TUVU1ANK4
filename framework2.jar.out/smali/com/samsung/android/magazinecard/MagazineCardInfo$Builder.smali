@@ -33,7 +33,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -110,7 +109,6 @@
 
 .method public setCardId(I)Lcom/samsung/android/magazinecard/MagazineCardInfo$Builder;
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/android/magazinecard/MagazineCardInfo$Builder;->mCardId:I
 
@@ -119,7 +117,6 @@
 
 .method public setCategory(I)Lcom/samsung/android/magazinecard/MagazineCardInfo$Builder;
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/android/magazinecard/MagazineCardInfo$Builder;->mCategory:I
 
@@ -128,7 +125,6 @@
 
 .method public setContentView(Landroid/widget/RemoteViews;)Lcom/samsung/android/magazinecard/MagazineCardInfo$Builder;
     .locals 0
-    .param p1    # Landroid/widget/RemoteViews;
 
     iput-object p1, p0, Lcom/samsung/android/magazinecard/MagazineCardInfo$Builder;->mContentView:Landroid/widget/RemoteViews;
 
@@ -137,7 +133,6 @@
 
 .method public setExpandedContentView(Landroid/widget/RemoteViews;)Lcom/samsung/android/magazinecard/MagazineCardInfo$Builder;
     .locals 0
-    .param p1    # Landroid/widget/RemoteViews;
 
     iput-object p1, p0, Lcom/samsung/android/magazinecard/MagazineCardInfo$Builder;->mExpandedContentView:Landroid/widget/RemoteViews;
 
@@ -146,7 +141,6 @@
 
 .method public setLaunchIntent(Landroid/app/PendingIntent;)Lcom/samsung/android/magazinecard/MagazineCardInfo$Builder;
     .locals 0
-    .param p1    # Landroid/app/PendingIntent;
 
     iput-object p1, p0, Lcom/samsung/android/magazinecard/MagazineCardInfo$Builder;->mLaunchIntent:Landroid/app/PendingIntent;
 
@@ -155,7 +149,6 @@
 
 .method public setSecurityLevel(I)Lcom/samsung/android/magazinecard/MagazineCardInfo$Builder;
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/android/magazinecard/MagazineCardInfo$Builder;->mSecurityLevel:I
 

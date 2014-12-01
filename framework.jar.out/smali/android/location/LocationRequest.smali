@@ -124,7 +124,6 @@
 
 .method public constructor <init>(Landroid/location/LocationRequest;)V
     .locals 5
-    .param p1    # Landroid/location/LocationRequest;
 
     const/4 v4, 0x0
 
@@ -219,7 +218,6 @@
 
 .method private static checkDisplacement(F)V
     .locals 3
-    .param p0    # F
 
     const/4 v0, 0x0
 
@@ -257,7 +255,6 @@
 
 .method private static checkInterval(J)V
     .locals 3
-    .param p0    # J
 
     const-wide/16 v0, 0x0
 
@@ -295,7 +292,6 @@
 
 .method private static checkProvider(Ljava/lang/String;)V
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     if-nez p0, :cond_0
 
@@ -329,7 +325,6 @@
 
 .method private static checkQuality(I)V
     .locals 3
-    .param p0    # I
 
     sparse-switch p0, :sswitch_data_0
 
@@ -385,10 +380,6 @@
 
 .method public static createFromDeprecatedCriteria(Landroid/location/Criteria;JFZ)Landroid/location/LocationRequest;
     .locals 4
-    .param p0    # Landroid/location/Criteria;
-    .param p1    # J
-    .param p3    # F
-    .param p4    # Z
 
     const-wide/16 v2, 0x0
 
@@ -484,10 +475,6 @@
 
 .method public static createFromDeprecatedProvider(Ljava/lang/String;JFZ)Landroid/location/LocationRequest;
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # J
-    .param p3    # F
-    .param p4    # Z
 
     const-wide/16 v2, 0x0
 
@@ -572,7 +559,6 @@
 
 .method public static qualityToString(I)Ljava/lang/String;
     .locals 1
-    .param p0    # I
 
     sparse-switch p0, :sswitch_data_0
 
@@ -734,7 +720,6 @@
 
 .method public setExpireAt(J)Landroid/location/LocationRequest;
     .locals 4
-    .param p1    # J
 
     const-wide/16 v2, 0x0
 
@@ -754,7 +739,6 @@
 
 .method public setExpireIn(J)Landroid/location/LocationRequest;
     .locals 8
-    .param p1    # J
 
     const-wide v6, 0x7fffffffffffffffL
 
@@ -794,7 +778,6 @@
 
 .method public setFastestInterval(J)Landroid/location/LocationRequest;
     .locals 1
-    .param p1    # J
 
     invoke-static {p1, p2}, Landroid/location/LocationRequest;->checkInterval(J)V
 
@@ -809,7 +792,6 @@
 
 .method public setHideFromAppOps(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/location/LocationRequest;->mHideFromAppOps:Z
 
@@ -818,7 +800,6 @@
 
 .method public setInterval(J)Landroid/location/LocationRequest;
     .locals 4
-    .param p1    # J
 
     invoke-static {p1, p2}, Landroid/location/LocationRequest;->checkInterval(J)V
 
@@ -846,7 +827,6 @@
 
 .method public setNumUpdates(I)Landroid/location/LocationRequest;
     .locals 3
-    .param p1    # I
 
     if-gtz p1, :cond_0
 
@@ -882,7 +862,6 @@
 
 .method public setProvider(Ljava/lang/String;)Landroid/location/LocationRequest;
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Landroid/location/LocationRequest;->checkProvider(Ljava/lang/String;)V
 
@@ -893,7 +872,6 @@
 
 .method public setQuality(I)Landroid/location/LocationRequest;
     .locals 0
-    .param p1    # I
 
     invoke-static {p1}, Landroid/location/LocationRequest;->checkQuality(I)V
 
@@ -904,7 +882,6 @@
 
 .method public setSmallestDisplacement(F)Landroid/location/LocationRequest;
     .locals 0
-    .param p1    # F
 
     invoke-static {p1}, Landroid/location/LocationRequest;->checkDisplacement(F)V
 
@@ -915,7 +892,6 @@
 
 .method public setWorkSource(Landroid/os/WorkSource;)V
     .locals 0
-    .param p1    # Landroid/os/WorkSource;
 
     iput-object p1, p0, Landroid/location/LocationRequest;->mWorkSource:Landroid/os/WorkSource;
 
@@ -1034,8 +1010,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 4
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     const/4 v1, 0x0
 

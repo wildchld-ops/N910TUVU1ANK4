@@ -88,7 +88,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -141,8 +140,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v1, 0x0
 
@@ -195,12 +192,6 @@
 
 .method private applyInsets(Landroid/view/View;Landroid/graphics/Rect;ZZZZ)Z
     .locals 4
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/graphics/Rect;
-    .param p3    # Z
-    .param p4    # Z
-    .param p5    # Z
-    .param p6    # Z
 
     const/4 v0, 0x0
 
@@ -275,7 +266,6 @@
 
 .method private init(Landroid/content/Context;)V
     .locals 7
-    .param p1    # Landroid/content/Context;
 
     const/4 v5, 0x0
 
@@ -408,7 +398,6 @@
 # virtual methods
 .method protected checkLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Z
     .locals 1
-    .param p1    # Landroid/view/ViewGroup$LayoutParams;
 
     instance-of v0, p1, Lcom/android/internal/widget/ActionBarOverlayLayout$LayoutParams;
 
@@ -417,7 +406,6 @@
 
 .method public draw(Landroid/graphics/Canvas;)V
     .locals 5
-    .param p1    # Landroid/graphics/Canvas;
 
     const/4 v1, 0x0
 
@@ -493,7 +481,6 @@
 
 .method protected fitSystemWindows(Landroid/graphics/Rect;)Z
     .locals 18
-    .param p1    # Landroid/graphics/Rect;
 
     invoke-virtual/range {p0 .. p0}, Lcom/android/internal/widget/ActionBarOverlayLayout;->pullChildren()V
 
@@ -998,7 +985,6 @@
 
 .method public bridge synthetic generateLayoutParams(Landroid/util/AttributeSet;)Landroid/view/ViewGroup$LayoutParams;
     .locals 1
-    .param p1    # Landroid/util/AttributeSet;
 
     invoke-virtual {p0, p1}, Lcom/android/internal/widget/ActionBarOverlayLayout;->generateLayoutParams(Landroid/util/AttributeSet;)Lcom/android/internal/widget/ActionBarOverlayLayout$LayoutParams;
 
@@ -1009,7 +995,6 @@
 
 .method protected generateLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Landroid/view/ViewGroup$LayoutParams;
     .locals 1
-    .param p1    # Landroid/view/ViewGroup$LayoutParams;
 
     new-instance v0, Lcom/android/internal/widget/ActionBarOverlayLayout$LayoutParams;
 
@@ -1020,7 +1005,6 @@
 
 .method public generateLayoutParams(Landroid/util/AttributeSet;)Lcom/android/internal/widget/ActionBarOverlayLayout$LayoutParams;
     .locals 2
-    .param p1    # Landroid/util/AttributeSet;
 
     new-instance v0, Lcom/android/internal/widget/ActionBarOverlayLayout$LayoutParams;
 
@@ -1035,11 +1019,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 14
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getChildCount()I
 
@@ -1139,8 +1118,6 @@
 
 .method protected onMeasure(II)V
     .locals 17
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual/range {p0 .. p0}, Lcom/android/internal/widget/ActionBarOverlayLayout;->pullChildren()V
 
@@ -1726,7 +1703,6 @@
 
 .method public onWindowSystemUiVisibilityChanged(I)V
     .locals 7
-    .param p1    # I
 
     const/4 v5, 0x0
 
@@ -1832,7 +1808,6 @@
 
 .method protected onWindowVisibilityChanged(I)V
     .locals 1
-    .param p1    # I
 
     invoke-super {p0, p1}, Landroid/view/View;->onWindowVisibilityChanged(I)V
 
@@ -1899,7 +1874,6 @@
 
 .method public setActionBar(Lcom/android/internal/app/ActionBarImpl;)V
     .locals 3
-    .param p1    # Lcom/android/internal/app/ActionBarImpl;
 
     iput-object p1, p0, Lcom/android/internal/widget/ActionBarOverlayLayout;->mActionBar:Lcom/android/internal/app/ActionBarImpl;
 
@@ -1931,7 +1905,6 @@
 
 .method public setOverlayMode(Z)V
     .locals 2
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/internal/widget/ActionBarOverlayLayout;->mOverlayMode:Z
 
@@ -1966,7 +1939,6 @@
 
 .method public setShowingForActionMode(Z)V
     .locals 2
-    .param p1    # Z
 
     if-eqz p1, :cond_1
 

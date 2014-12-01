@@ -102,7 +102,6 @@
 # virtual methods
 .method public getCurrentKeyUmlautString(Lcom/diotek/ime/framework/view/KeboardKeyInfo;)Ljava/lang/StringBuilder;
     .locals 14
-    .param p1    # Lcom/diotek/ime/framework/view/KeboardKeyInfo;
 
     const/4 v8, 0x0
 
@@ -368,7 +367,6 @@
 
 .method public getCurrentKeyUmlautString(Lcom/diotek/ime/framework/view/Keyboard$Key;)Ljava/lang/StringBuilder;
     .locals 16
-    .param p1    # Lcom/diotek/ime/framework/view/Keyboard$Key;
 
     const/4 v10, 0x0
 
@@ -724,7 +722,6 @@
 
 .method public getUmlautString(I)Ljava/lang/String;
     .locals 6
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -856,7 +853,6 @@
 
 .method public setInputLanguage(Lcom/diotek/ime/framework/common/Language;)V
     .locals 10
-    .param p1    # Lcom/diotek/ime/framework/common/Language;
 
     const/4 v9, 0x1
 

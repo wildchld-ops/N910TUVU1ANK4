@@ -45,7 +45,7 @@
 
     iget-object v2, p0, Lcom/android/phone/callsettings/AccessorySettings$2;->this$0:Lcom/android/phone/callsettings/AccessorySettings;
 
-    invoke-virtual {v2}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v2}, Lcom/android/phone/callsettings/AccessorySettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -66,7 +66,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v2}, Landroid/preference/TwoStatePreference;->isChecked()Z
+    invoke-virtual {v2}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
     move-result v2
 
@@ -93,14 +93,14 @@
 
     move-result-object v5
 
-    invoke-virtual {v5}, Landroid/preference/TwoStatePreference;->isChecked()Z
+    invoke-virtual {v5}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
     move-result v5
 
     if-nez v5, :cond_1
 
     :goto_1
-    invoke-virtual {v2, v3}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+    invoke-virtual {v2, v3}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     return-void
 

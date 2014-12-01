@@ -61,7 +61,6 @@
 
 .method static synthetic access$000(Lcom/diotek/ime/implement/setting/PhraseSettings;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/setting/PhraseSettings;
 
     iget-object v0, p0, Lcom/diotek/ime/implement/setting/PhraseSettings;->phraseList:Ljava/util/ArrayList;
 
@@ -70,8 +69,6 @@
 
 .method static synthetic access$100(Lcom/diotek/ime/implement/setting/PhraseSettings;Z)V
     .locals 0
-    .param p0    # Lcom/diotek/ime/implement/setting/PhraseSettings;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/diotek/ime/implement/setting/PhraseSettings;->setEnableState(Z)V
 
@@ -80,7 +77,6 @@
 
 .method static synthetic access$200(Lcom/diotek/ime/implement/setting/PhraseSettings;)Landroid/content/SharedPreferences;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/setting/PhraseSettings;
 
     iget-object v0, p0, Lcom/diotek/ime/implement/setting/PhraseSettings;->mSPref:Landroid/content/SharedPreferences;
 
@@ -89,7 +85,6 @@
 
 .method static synthetic access$300(Lcom/diotek/ime/implement/setting/PhraseSettings;)Lcom/diotek/ime/framework/common/InputManager;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/setting/PhraseSettings;
 
     iget-object v0, p0, Lcom/diotek/ime/implement/setting/PhraseSettings;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -98,7 +93,6 @@
 
 .method private setEnableState(Z)V
     .locals 6
-    .param p1    # Z
 
     const v5, 0x7f0800c2
 
@@ -298,7 +292,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 8
-    .param p1    # Landroid/os/Bundle;
 
     const/16 v7, 0xa
 
@@ -469,7 +462,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 3
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -684,7 +676,6 @@
 
 .method public stateSetScrollView(Z)V
     .locals 5
-    .param p1    # Z
 
     const/4 v3, 0x0
 

@@ -32,9 +32,6 @@
 
 .method constructor <init>(IIZ)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     invoke-direct {p0}, Landroid/webkitsec/HTML5VideoView;-><init>()V
 
@@ -65,7 +62,6 @@
 
 .method public static getSurfaceTexture(I)Landroid/graphics/SurfaceTexture;
     .locals 3
-    .param p0    # I
 
     const/4 v1, 0x1
 
@@ -112,7 +108,6 @@
 
 .method private setFrameAvailableListener(Landroid/graphics/SurfaceTexture$OnFrameAvailableListener;)V
     .locals 1
-    .param p1    # Landroid/graphics/SurfaceTexture$OnFrameAvailableListener;
 
     sget-object v0, Landroid/webkitsec/HTML5VideoInline;->mSurfaceTexture:Landroid/graphics/SurfaceTexture;
 
@@ -197,7 +192,6 @@
 
 .method public pauseAndDispatch(Landroid/webkitsec/HTML5VideoViewProxy;)V
     .locals 0
-    .param p1    # Landroid/webkitsec/HTML5VideoViewProxy;
 
     invoke-super {p0, p1}, Landroid/webkitsec/HTML5VideoView;->pauseAndDispatch(Landroid/webkitsec/HTML5VideoViewProxy;)V
 
@@ -206,7 +200,6 @@
 
 .method public prepareDataAndDisplayMode(Landroid/webkitsec/HTML5VideoViewProxy;)V
     .locals 3
-    .param p1    # Landroid/webkitsec/HTML5VideoViewProxy;
 
     invoke-super {p0, p1}, Landroid/webkitsec/HTML5VideoView;->prepareDataAndDisplayMode(Landroid/webkitsec/HTML5VideoViewProxy;)V
 

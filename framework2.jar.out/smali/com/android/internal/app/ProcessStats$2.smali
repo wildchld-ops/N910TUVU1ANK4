@@ -46,8 +46,6 @@
 # virtual methods
 .method public compare(Lcom/android/internal/app/ProcessStats$ProcessState;Lcom/android/internal/app/ProcessStats$ProcessState;)I
     .locals 4
-    .param p1    # Lcom/android/internal/app/ProcessStats$ProcessState;
-    .param p2    # Lcom/android/internal/app/ProcessStats$ProcessState;
 
     iget-wide v0, p1, Lcom/android/internal/app/ProcessStats$ProcessState;->mTmpTotalTime:J
 
@@ -83,8 +81,6 @@
 
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p1, Lcom/android/internal/app/ProcessStats$ProcessState;
 

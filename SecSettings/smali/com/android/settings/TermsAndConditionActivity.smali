@@ -46,7 +46,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/TermsAndConditionActivity;)Landroid/app/ProgressDialog;
     .locals 1
-    .param p0    # Lcom/android/settings/TermsAndConditionActivity;
 
     iget-object v0, p0, Lcom/android/settings/TermsAndConditionActivity;->loadingDialog:Landroid/app/ProgressDialog;
 
@@ -55,7 +54,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/TermsAndConditionActivity;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/settings/TermsAndConditionActivity;
 
     iget-object v0, p0, Lcom/android/settings/TermsAndConditionActivity;->s:Ljava/lang/String;
 
@@ -64,8 +62,6 @@
 
 .method static synthetic access$102(Lcom/android/settings/TermsAndConditionActivity;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/android/settings/TermsAndConditionActivity;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/settings/TermsAndConditionActivity;->s:Ljava/lang/String;
 
@@ -74,8 +70,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/TermsAndConditionActivity;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/settings/TermsAndConditionActivity;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/settings/TermsAndConditionActivity;->showPageOfText(Ljava/lang/String;)V
 
@@ -84,7 +78,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/TermsAndConditionActivity;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/settings/TermsAndConditionActivity;
 
     iget-object v0, p0, Lcom/android/settings/TermsAndConditionActivity;->mContext:Landroid/content/Context;
 
@@ -93,7 +86,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/TermsAndConditionActivity;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/settings/TermsAndConditionActivity;
 
     invoke-direct {p0}, Lcom/android/settings/TermsAndConditionActivity;->getFilePath()Ljava/lang/String;
 
@@ -104,7 +96,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/TermsAndConditionActivity;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/settings/TermsAndConditionActivity;
 
     iget-object v0, p0, Lcom/android/settings/TermsAndConditionActivity;->handler_loading:Landroid/os/Handler;
 
@@ -346,7 +337,6 @@
 
 .method private showPageOfText(Ljava/lang/String;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Lcom/android/settings/TermsAndConditionActivity;->getApplicationContext()Landroid/content/Context;
 
@@ -433,7 +423,6 @@
 # virtual methods
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 

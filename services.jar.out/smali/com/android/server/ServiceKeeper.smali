@@ -241,13 +241,6 @@
 
 .method private static checkForMethodAuthorization(Landroid/content/Context;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)Z
     .locals 13
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # I
 
     sget-object v9, Lcom/android/server/ServiceKeeper;->serviceTable:Ljava/util/Hashtable;
 
@@ -544,10 +537,6 @@
 
 .method private static checkForServiceAuthorization(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)Z
     .locals 9
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     const/4 v7, 0x1
 
@@ -692,7 +681,6 @@
 
 .method private static createAuthorizationTables(Lorg/w3c/dom/Element;)Z
     .locals 15
-    .param p0    # Lorg/w3c/dom/Element;
 
     const/4 v11, 0x1
 
@@ -1055,10 +1043,6 @@
 
 .method private static getAppinfo(Landroid/content/Context;Ljava/lang/String;II)Landroid/content/pm/ApplicationInfo;
     .locals 8
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     invoke-static {}, Landroid/os/Process;->myPid()I
 
@@ -1168,7 +1152,6 @@
 
 .method private static getAuthorizeFilePath([Ljava/io/File;)Ljava/lang/String;
     .locals 11
-    .param p0    # [Ljava/io/File;
 
     const/4 v10, 0x2
 
@@ -1437,9 +1420,6 @@
 
 .method public static getPackageName(Landroid/content/Context;II)Ljava/lang/String;
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # I
 
     invoke-static {}, Landroid/os/Process;->myPid()I
 
@@ -1484,7 +1464,6 @@
 
 .method private static getRelevantContainerType(Ljava/lang/String;)I
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "gsd"
 
@@ -1635,9 +1614,6 @@
 
 .method private static getagenttype(Landroid/content/pm/ApplicationInfo;II)I
     .locals 2
-    .param p0    # Landroid/content/pm/ApplicationInfo;
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x1
 
@@ -1661,9 +1637,6 @@
 
 .method private static getseinfo(Landroid/content/pm/ApplicationInfo;II)Ljava/lang/String;
     .locals 3
-    .param p0    # Landroid/content/pm/ApplicationInfo;
-    .param p1    # I
-    .param p2    # I
 
     invoke-static {}, Landroid/os/Process;->myPid()I
 
@@ -1699,11 +1672,6 @@
 
 .method public static isAuthorized(Landroid/content/Context;IILjava/lang/String;Ljava/lang/String;)I
     .locals 28
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     :try_start_0
     invoke-static {}, Landroid/os/Process;->myPid()I
@@ -2256,8 +2224,6 @@
 
 .method public static isContainerApp(Landroid/content/Context;I)Z
     .locals 7
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     :try_start_0
     invoke-static {p1}, Landroid/os/UserHandle;->getUserId(I)I
@@ -2344,7 +2310,6 @@
 
 .method private static loadFromAuthorizeFile(Ljava/lang/String;)Z
     .locals 13
-    .param p0    # Ljava/lang/String;
 
     const/4 v10, 0x1
 
@@ -2464,9 +2429,6 @@
 
 .method private static processMethodsUnderService(Lorg/w3c/dom/NodeList;Lcom/android/server/ServiceObject;Ljava/lang/String;)Z
     .locals 13
-    .param p0    # Lorg/w3c/dom/NodeList;
-    .param p1    # Lcom/android/server/ServiceObject;
-    .param p2    # Ljava/lang/String;
 
     const/4 v9, 0x0
 

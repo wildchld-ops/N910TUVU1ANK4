@@ -28,9 +28,6 @@
 # direct methods
 .method public constructor <init>(Landroid/animation/AnimatorSet;Landroid/animation/AnimatorSet$Node;I)V
     .locals 0
-    .param p1    # Landroid/animation/AnimatorSet;
-    .param p2    # Landroid/animation/AnimatorSet$Node;
-    .param p3    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -45,7 +42,6 @@
 
 .method private startIfReady(Landroid/animation/Animator;)V
     .locals 6
-    .param p1    # Landroid/animation/Animator;
 
     iget-object v4, p0, Landroid/animation/AnimatorSet$DependencyListener;->mAnimatorSet:Landroid/animation/AnimatorSet;
 
@@ -147,14 +143,12 @@
 # virtual methods
 .method public onAnimationCancel(Landroid/animation/Animator;)V
     .locals 0
-    .param p1    # Landroid/animation/Animator;
 
     return-void
 .end method
 
 .method public onAnimationEnd(Landroid/animation/Animator;)V
     .locals 2
-    .param p1    # Landroid/animation/Animator;
 
     iget v0, p0, Landroid/animation/AnimatorSet$DependencyListener;->mRule:I
 
@@ -170,14 +164,12 @@
 
 .method public onAnimationRepeat(Landroid/animation/Animator;)V
     .locals 0
-    .param p1    # Landroid/animation/Animator;
 
     return-void
 .end method
 
 .method public onAnimationStart(Landroid/animation/Animator;)V
     .locals 1
-    .param p1    # Landroid/animation/Animator;
 
     iget v0, p0, Landroid/animation/AnimatorSet$DependencyListener;->mRule:I
 

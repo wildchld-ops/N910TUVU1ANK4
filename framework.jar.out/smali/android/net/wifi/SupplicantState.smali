@@ -297,7 +297,6 @@
 
 .method static isConnecting(Landroid/net/wifi/SupplicantState;)Z
     .locals 2
-    .param p0    # Landroid/net/wifi/SupplicantState;
 
     sget-object v0, Landroid/net/wifi/SupplicantState$2;->$SwitchMap$android$net$wifi$SupplicantState:[I
 
@@ -350,7 +349,6 @@
 
 .method static isDriverActive(Landroid/net/wifi/SupplicantState;)Z
     .locals 2
-    .param p0    # Landroid/net/wifi/SupplicantState;
 
     sget-object v0, Landroid/net/wifi/SupplicantState$2;->$SwitchMap$android$net$wifi$SupplicantState:[I
 
@@ -403,7 +401,6 @@
 
 .method public static isHandshakeState(Landroid/net/wifi/SupplicantState;)Z
     .locals 2
-    .param p0    # Landroid/net/wifi/SupplicantState;
 
     sget-object v0, Landroid/net/wifi/SupplicantState$2;->$SwitchMap$android$net$wifi$SupplicantState:[I
 
@@ -456,7 +453,6 @@
 
 .method public static isValidState(Landroid/net/wifi/SupplicantState;)Z
     .locals 1
-    .param p0    # Landroid/net/wifi/SupplicantState;
 
     sget-object v0, Landroid/net/wifi/SupplicantState;->UNINITIALIZED:Landroid/net/wifi/SupplicantState;
 
@@ -479,7 +475,6 @@
 
 .method public static valueOf(Ljava/lang/String;)Landroid/net/wifi/SupplicantState;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-class v0, Landroid/net/wifi/SupplicantState;
 
@@ -518,8 +513,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     invoke-virtual {p0}, Landroid/net/wifi/SupplicantState;->name()Ljava/lang/String;
 

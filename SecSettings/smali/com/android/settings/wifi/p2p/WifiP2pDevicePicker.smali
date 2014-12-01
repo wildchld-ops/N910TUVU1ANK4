@@ -241,7 +241,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;)Landroid/net/wifi/p2p/WifiP2pManager;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;
 
     iget-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;->mWifiP2pManager:Landroid/net/wifi/p2p/WifiP2pManager;
 
@@ -250,7 +249,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;
 
     iget-boolean v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;->mReceivedStickyEnabled:Z
 
@@ -259,7 +257,6 @@
 
 .method static synthetic access$1000(Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;)Landroid/net/wifi/p2p/WifiP2pManager$Channel;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;
 
     iget-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;->mChannel:Landroid/net/wifi/p2p/WifiP2pManager$Channel;
 
@@ -268,8 +265,6 @@
 
 .method static synthetic access$102(Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;->mReceivedStickyEnabled:Z
 
@@ -278,8 +273,6 @@
 
 .method static synthetic access$1100(Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;I)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;->setP2pMenu(I)V
 
@@ -296,7 +289,6 @@
 
 .method static synthetic access$1300(Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;
 
     iget-boolean v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;->mIsRegisteredMotionListener:Z
 
@@ -305,8 +297,6 @@
 
 .method static synthetic access$1302(Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;->mIsRegisteredMotionListener:Z
 
@@ -315,7 +305,6 @@
 
 .method static synthetic access$1400(Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;)Landroid/hardware/motion/MRListener;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;
 
     iget-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;->mMotionListener:Landroid/hardware/motion/MRListener;
 
@@ -324,7 +313,6 @@
 
 .method static synthetic access$1500(Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;)Landroid/net/wifi/WifiManager;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;
 
     iget-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;->mWifiManager:Landroid/net/wifi/WifiManager;
 
@@ -333,7 +321,6 @@
 
 .method static synthetic access$1600(Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;)Landroid/net/wifi/p2p/WifiP2pGroup;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;
 
     iget-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;->mCreatedGroupInfo:Landroid/net/wifi/p2p/WifiP2pGroup;
 
@@ -342,8 +329,6 @@
 
 .method static synthetic access$1602(Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;Landroid/net/wifi/p2p/WifiP2pGroup;)Landroid/net/wifi/p2p/WifiP2pGroup;
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pGroup;
 
     iput-object p1, p0, Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;->mCreatedGroupInfo:Landroid/net/wifi/p2p/WifiP2pGroup;
 
@@ -352,7 +337,6 @@
 
 .method static synthetic access$1702(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;->mMultiConnectionComplete:Z
 
@@ -361,7 +345,6 @@
 
 .method static synthetic access$1800(Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;
 
     iget-boolean v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;->doNotFinish:Z
 
@@ -378,7 +361,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;
 
     invoke-direct {p0}, Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;->isP2pConnected()Z
 
@@ -389,7 +371,6 @@
 
 .method static synthetic access$2000(Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;)Landroid/app/AlertDialog;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;
 
     iget-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;->mCancelConnectDialog:Landroid/app/AlertDialog;
 
@@ -398,8 +379,6 @@
 
 .method static synthetic access$2002(Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;Landroid/app/AlertDialog;)Landroid/app/AlertDialog;
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;
-    .param p1    # Landroid/app/AlertDialog;
 
     iput-object p1, p0, Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;->mCancelConnectDialog:Landroid/app/AlertDialog;
 
@@ -408,8 +387,6 @@
 
 .method static synthetic access$2102(Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;Landroid/net/wifi/p2p/WifiP2pInfo;)Landroid/net/wifi/p2p/WifiP2pInfo;
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pInfo;
 
     iput-object p1, p0, Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;->mP2pInfo:Landroid/net/wifi/p2p/WifiP2pInfo;
 
@@ -418,7 +395,6 @@
 
 .method static synthetic access$2200(Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;
 
     iget-boolean v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;->mMultiConnect:Z
 
@@ -427,8 +403,6 @@
 
 .method static synthetic access$2202(Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;->mMultiConnect:Z
 
@@ -437,7 +411,6 @@
 
 .method static synthetic access$2300(Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;)Landroid/net/wifi/p2p/WifiP2pDeviceList;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;
 
     iget-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;->mSelectedPeers:Landroid/net/wifi/p2p/WifiP2pDeviceList;
 
@@ -446,8 +419,6 @@
 
 .method static synthetic access$2400(Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;Landroid/net/wifi/p2p/WifiP2pDevice;)Landroid/net/wifi/p2p/WifiP2pConfig;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pDevice;
 
     invoke-direct {p0, p1}, Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;->getPreferredConfig(Landroid/net/wifi/p2p/WifiP2pDevice;)Landroid/net/wifi/p2p/WifiP2pConfig;
 
@@ -458,7 +429,6 @@
 
 .method static synthetic access$2500(Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;)Landroid/content/SharedPreferences;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;
 
     iget-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;->mSharedPref:Landroid/content/SharedPreferences;
 
@@ -467,8 +437,6 @@
 
 .method static synthetic access$2502(Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;Landroid/content/SharedPreferences;)Landroid/content/SharedPreferences;
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;
-    .param p1    # Landroid/content/SharedPreferences;
 
     iput-object p1, p0, Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;->mSharedPref:Landroid/content/SharedPreferences;
 
@@ -477,7 +445,6 @@
 
 .method static synthetic access$2600(Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;)Landroid/app/AlertDialog;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;
 
     iget-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;->mScanDialog:Landroid/app/AlertDialog;
 
@@ -486,8 +453,6 @@
 
 .method static synthetic access$2602(Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;Landroid/app/AlertDialog;)Landroid/app/AlertDialog;
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;
-    .param p1    # Landroid/app/AlertDialog;
 
     iput-object p1, p0, Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;->mScanDialog:Landroid/app/AlertDialog;
 
@@ -496,7 +461,6 @@
 
 .method static synthetic access$2700(Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;
 
     invoke-direct {p0}, Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;->isP2pEnabled()Z
 
@@ -507,7 +471,6 @@
 
 .method static synthetic access$2800(Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;
 
     iget-boolean v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;->mMultiConnectClicked:Z
 
@@ -516,8 +479,6 @@
 
 .method static synthetic access$2802(Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;->mMultiConnectClicked:Z
 
@@ -526,8 +487,6 @@
 
 .method static synthetic access$2902(Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;Landroid/net/wifi/p2p/WifiP2pDevice;)Landroid/net/wifi/p2p/WifiP2pDevice;
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pDevice;
 
     iput-object p1, p0, Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;->mThisDevice:Landroid/net/wifi/p2p/WifiP2pDevice;
 
@@ -536,7 +495,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;)Lcom/android/settings/ProgressCategory;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;
 
     iget-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;->mPeersGroup:Lcom/android/settings/ProgressCategory;
 
@@ -545,7 +503,6 @@
 
 .method static synthetic access$3000(Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;
 
     iget-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;->mMultiConnectFooter:Landroid/widget/TextView;
 
@@ -554,8 +511,6 @@
 
 .method static synthetic access$3100(Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;Z)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;->useCustomActionBar(Z)V
 
@@ -564,7 +519,6 @@
 
 .method static synthetic access$3200(Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;
 
     invoke-direct {p0}, Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;->send()Z
 
@@ -575,8 +529,6 @@
 
 .method static synthetic access$3300(Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;I)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->showDialog(I)V
 
@@ -585,8 +537,6 @@
 
 .method static synthetic access$3400(Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;I)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->showDialog(I)V
 
@@ -595,8 +545,6 @@
 
 .method static synthetic access$3500(Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;I)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->showDialog(I)V
 
@@ -605,8 +553,6 @@
 
 .method static synthetic access$3600(Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;I)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->showDialog(I)V
 
@@ -615,7 +561,6 @@
 
 .method static synthetic access$3700(Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;)Landroid/preference/PreferenceGroup;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;
 
     iget-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;->mPeersBusy:Landroid/preference/PreferenceGroup;
 
@@ -624,7 +569,6 @@
 
 .method static synthetic access$3800(Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;)Landroid/preference/PreferenceGroup;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;
 
     iget-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;->mPeersConnected:Landroid/preference/PreferenceGroup;
 
@@ -633,7 +577,6 @@
 
 .method static synthetic access$3900(Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;
 
     iget-boolean v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;->isKmodelUI:Z
 
@@ -642,7 +585,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;
 
     invoke-direct {p0}, Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;->addThisDevicePreference()V
 
@@ -651,7 +593,6 @@
 
 .method static synthetic access$4000(Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;)Landroid/preference/PreferenceGroup;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;
 
     iget-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;->mNoDevicePref:Landroid/preference/PreferenceGroup;
 
@@ -660,8 +601,6 @@
 
 .method static synthetic access$4100(Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;Ljava/lang/String;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
@@ -672,8 +611,6 @@
 
 .method static synthetic access$4200(Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;I)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->showDialog(I)V
 
@@ -690,7 +627,6 @@
 
 .method static synthetic access$4302(Landroid/net/wifi/p2p/WifiP2pConfigList;)Landroid/net/wifi/p2p/WifiP2pConfigList;
     .locals 0
-    .param p0    # Landroid/net/wifi/p2p/WifiP2pConfigList;
 
     sput-object p0, Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;->mSelectedConfig:Landroid/net/wifi/p2p/WifiP2pConfigList;
 
@@ -699,7 +635,6 @@
 
 .method static synthetic access$4400(Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;)Landroid/speech/tts/TextToSpeech;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;
 
     iget-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;->mTextToSpeech:Landroid/speech/tts/TextToSpeech;
 
@@ -708,7 +643,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;
 
     iget-boolean v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;->isFirstTime:Z
 
@@ -725,7 +659,6 @@
 
 .method static synthetic access$602(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;->mInvited:Z
 
@@ -734,7 +667,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;
 
     iget-boolean v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;->mScanClicked:Z
 
@@ -743,9 +675,6 @@
 
 .method static synthetic access$800(Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;ZZ)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;
-    .param p1    # Z
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;->setScanTimer(ZZ)V
 
@@ -762,7 +691,6 @@
 
 .method static synthetic access$902(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker;->mMultiConnectInProgress:Z
 
@@ -1123,7 +1051,6 @@
 
 .method private getPreferredConfig(Landroid/net/wifi/p2p/WifiP2pDevice;)Landroid/net/wifi/p2p/WifiP2pConfig;
     .locals 3
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pDevice;
 
     const/4 v2, 0x0
 
@@ -3571,7 +3498,6 @@
 # virtual methods
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 12
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v10, 0x0
 
@@ -4019,7 +3945,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 2
-    .param p1    # Landroid/content/res/Configuration;
 
     const/4 v1, 0x2
 
@@ -4106,7 +4031,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 11
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v10, 0x0
 
@@ -4623,8 +4547,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
     .locals 7
-    .param p1    # Landroid/view/Menu;
-    .param p2    # Landroid/view/MenuInflater;
 
     const/4 v3, 0x2
 
@@ -5019,9 +4941,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 3
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const v1, 0x7f0402b3
 
@@ -5098,7 +5017,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 6
-    .param p1    # Landroid/view/MenuItem;
 
     const/16 v5, 0x8
 

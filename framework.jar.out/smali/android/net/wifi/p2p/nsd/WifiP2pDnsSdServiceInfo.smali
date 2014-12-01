@@ -79,7 +79,6 @@
 
 .method private static compressDnsName(Ljava/lang/String;)Ljava/lang/String;
     .locals 10
-    .param p0    # Ljava/lang/String;
 
     const/4 v9, 0x1
 
@@ -213,8 +212,6 @@
 
 .method private static createPtrServiceQuery(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 7
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x1
 
@@ -301,9 +298,6 @@
 
 .method static createRequest(Ljava/lang/String;II)Ljava/lang/String;
     .locals 7
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
-    .param p2    # I
 
     const/4 v6, 0x1
 
@@ -375,9 +369,6 @@
 
 .method private static createTxtServiceQuery(Ljava/lang/String;Ljava/lang/String;Landroid/net/nsd/DnsSdTxtRecord;)Ljava/lang/String;
     .locals 5
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/net/nsd/DnsSdTxtRecord;
 
     new-instance v1, Ljava/lang/StringBuffer;
 
@@ -460,8 +451,6 @@
 
 .method public static newInstance(Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)Landroid/net/wifi/p2p/nsd/WifiP2pDnsSdServiceInfo;
     .locals 6
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

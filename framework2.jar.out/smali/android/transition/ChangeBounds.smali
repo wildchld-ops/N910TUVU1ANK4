@@ -92,7 +92,6 @@
 
 .method private captureValues(Landroid/transition/TransitionValues;)V
     .locals 8
-    .param p1    # Landroid/transition/TransitionValues;
 
     iget-object v0, p1, Landroid/transition/TransitionValues;->view:Landroid/view/View;
 
@@ -179,7 +178,6 @@
 # virtual methods
 .method public captureEndValues(Landroid/transition/TransitionValues;)V
     .locals 0
-    .param p1    # Landroid/transition/TransitionValues;
 
     invoke-direct {p0, p1}, Landroid/transition/ChangeBounds;->captureValues(Landroid/transition/TransitionValues;)V
 
@@ -188,7 +186,6 @@
 
 .method public captureStartValues(Landroid/transition/TransitionValues;)V
     .locals 0
-    .param p1    # Landroid/transition/TransitionValues;
 
     invoke-direct {p0, p1}, Landroid/transition/ChangeBounds;->captureValues(Landroid/transition/TransitionValues;)V
 
@@ -197,9 +194,6 @@
 
 .method public createAnimator(Landroid/view/ViewGroup;Landroid/transition/TransitionValues;Landroid/transition/TransitionValues;)Landroid/animation/Animator;
     .locals 52
-    .param p1    # Landroid/view/ViewGroup;
-    .param p2    # Landroid/transition/TransitionValues;
-    .param p3    # Landroid/transition/TransitionValues;
 
     if-eqz p2, :cond_0
 
@@ -1387,7 +1381,6 @@
 
 .method public setReparent(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/transition/ChangeBounds;->mReparent:Z
 
@@ -1396,7 +1389,6 @@
 
 .method public setResizeClip(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/transition/ChangeBounds;->mResizeClip:Z
 

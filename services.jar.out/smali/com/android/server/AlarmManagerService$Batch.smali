@@ -58,7 +58,6 @@
 
 .method constructor <init>(Lcom/android/server/AlarmManagerService$Alarm;)V
     .locals 2
-    .param p1    # Lcom/android/server/AlarmManagerService$Alarm;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -87,7 +86,6 @@
 # virtual methods
 .method add(Lcom/android/server/AlarmManagerService$Alarm;)Z
     .locals 6
-    .param p1    # Lcom/android/server/AlarmManagerService$Alarm;
 
     const/4 v1, 0x0
 
@@ -146,8 +144,6 @@
 
 .method canHold(JJ)Z
     .locals 2
-    .param p1    # J
-    .param p3    # J
 
     iget-wide v0, p0, Lcom/android/server/AlarmManagerService$Batch;->end:J
 
@@ -174,7 +170,6 @@
 
 .method get(I)Lcom/android/server/AlarmManagerService$Alarm;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/AlarmManagerService$Batch;->alarms:Ljava/util/ArrayList;
 
@@ -189,7 +184,6 @@
 
 .method hasPackage(Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     iget-object v3, p0, Lcom/android/server/AlarmManagerService$Batch;->alarms:Ljava/util/ArrayList;
 
@@ -284,7 +278,6 @@
 
 .method remove(I)Z
     .locals 9
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -367,7 +360,6 @@
 
 .method remove(Landroid/app/PendingIntent;)Z
     .locals 9
-    .param p1    # Landroid/app/PendingIntent;
 
     const/4 v1, 0x0
 
@@ -446,7 +438,6 @@
 
 .method remove(Ljava/lang/String;)Z
     .locals 9
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 

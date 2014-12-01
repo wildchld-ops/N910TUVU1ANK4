@@ -17,7 +17,9 @@
 # static fields
 .field public static FEATURE_MULTIWINDOW:Ljava/lang/String;
 
-.field public static FEATURE_MULTIWINDOW_FREESTYLE:Ljava/lang/String;
+.field public static FEATURE_MULTIWINDOW_FREESTYLE_LAUNCH:Ljava/lang/String;
+
+.field public static FEATURE_MULTIWINDOW_TABLET:Ljava/lang/String;
 
 .field static FIELD_NAMES:[Ljava/lang/String;
 
@@ -136,21 +138,21 @@
     :catch_0
     move-exception v0
 
-    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
+    invoke-virtual {v0}, Ljava/lang/NoSuchFieldException;->printStackTrace()V
 
     goto :goto_1
 
     :catch_1
     move-exception v0
 
-    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
+    invoke-virtual {v0}, Ljava/lang/IllegalArgumentException;->printStackTrace()V
 
     goto :goto_1
 
     :catch_2
     move-exception v0
 
-    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
+    invoke-virtual {v0}, Ljava/lang/IllegalAccessException;->printStackTrace()V
 
     goto :goto_1
 

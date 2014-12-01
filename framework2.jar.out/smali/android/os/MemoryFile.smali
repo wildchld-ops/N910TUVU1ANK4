@@ -44,8 +44,6 @@
 
 .method public constructor <init>(Ljava/lang/String;I)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -89,7 +87,6 @@
 
 .method static synthetic access$200(Landroid/os/MemoryFile;)I
     .locals 1
-    .param p0    # Landroid/os/MemoryFile;
 
     iget v0, p0, Landroid/os/MemoryFile;->mLength:I
 
@@ -98,7 +95,6 @@
 
 .method public static getSize(Ljava/io/FileDescriptor;)I
     .locals 1
-    .param p0    # Ljava/io/FileDescriptor;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -215,7 +211,6 @@
 # virtual methods
 .method public declared-synchronized allowPurging(Z)Z
     .locals 3
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -395,10 +390,6 @@
 
 .method public readBytes([BIII)I
     .locals 7
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -477,10 +468,6 @@
 
 .method public writeBytes([BIII)V
     .locals 7
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

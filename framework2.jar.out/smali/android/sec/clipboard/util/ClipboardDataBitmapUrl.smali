@@ -14,9 +14,6 @@
 
 .method public static downloadSimpleBitmap(Ljava/lang/String;II)Landroid/graphics/Bitmap;
     .locals 12
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
-    .param p2    # I
 
     const/4 v8, 0x1
 
@@ -611,8 +608,6 @@
 
 .method private static findImageDegree(Landroid/content/ContentResolver;Landroid/net/Uri;)I
     .locals 14
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # Landroid/net/Uri;
 
     const/4 v13, -0x1
 
@@ -863,7 +858,6 @@
 
 .method private static getExifOrientation(Ljava/lang/String;)I
     .locals 8
-    .param p0    # Ljava/lang/String;
 
     const/4 v7, -0x1
 
@@ -944,9 +938,6 @@
 
 .method public static getFilePathBitmap(Ljava/lang/String;II)Landroid/graphics/Bitmap;
     .locals 6
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
-    .param p2    # I
 
     const/4 v4, 0x1
 
@@ -1045,10 +1036,6 @@
 
 .method public static getUriPathBitmap(Landroid/content/ContentResolver;Landroid/net/Uri;II)Landroid/graphics/Bitmap;
     .locals 8
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v6, 0x1
 
@@ -1175,8 +1162,6 @@
 
 .method private static rotateBitmap(Landroid/graphics/Bitmap;I)Landroid/graphics/Bitmap;
     .locals 9
-    .param p0    # Landroid/graphics/Bitmap;
-    .param p1    # I
 
     const/high16 v3, 0x40000000
 

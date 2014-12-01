@@ -40,7 +40,7 @@
 
     iget-object v0, p0, Lcom/android/phone/IccNetworkDepersonalizationPanel$4;->this$0:Lcom/android/phone/IccNetworkDepersonalizationPanel;
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->dismiss()V
+    invoke-virtual {v0}, Lcom/android/phone/IccNetworkDepersonalizationPanel;->dismiss()V
 
     return-void
 .end method

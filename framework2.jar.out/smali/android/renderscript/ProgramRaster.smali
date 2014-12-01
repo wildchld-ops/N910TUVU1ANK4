@@ -21,8 +21,6 @@
 # direct methods
 .method constructor <init>(ILandroid/renderscript/RenderScript;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/renderscript/RenderScript;
 
     invoke-direct {p0, p1, p2}, Landroid/renderscript/BaseObj;-><init>(ILandroid/renderscript/RenderScript;)V
 
@@ -39,7 +37,6 @@
 
 .method public static CULL_BACK(Landroid/renderscript/RenderScript;)Landroid/renderscript/ProgramRaster;
     .locals 2
-    .param p0    # Landroid/renderscript/RenderScript;
 
     iget-object v1, p0, Landroid/renderscript/RenderScript;->mProgramRaster_CULL_BACK:Landroid/renderscript/ProgramRaster;
 
@@ -67,7 +64,6 @@
 
 .method public static CULL_FRONT(Landroid/renderscript/RenderScript;)Landroid/renderscript/ProgramRaster;
     .locals 2
-    .param p0    # Landroid/renderscript/RenderScript;
 
     iget-object v1, p0, Landroid/renderscript/RenderScript;->mProgramRaster_CULL_FRONT:Landroid/renderscript/ProgramRaster;
 
@@ -95,7 +91,6 @@
 
 .method public static CULL_NONE(Landroid/renderscript/RenderScript;)Landroid/renderscript/ProgramRaster;
     .locals 2
-    .param p0    # Landroid/renderscript/RenderScript;
 
     iget-object v1, p0, Landroid/renderscript/RenderScript;->mProgramRaster_CULL_NONE:Landroid/renderscript/ProgramRaster;
 

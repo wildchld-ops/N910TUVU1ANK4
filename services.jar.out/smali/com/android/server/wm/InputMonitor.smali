@@ -29,7 +29,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/wm/WindowManagerService;)V
     .locals 1
-    .param p1    # Lcom/android/server/wm/WindowManagerService;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -50,7 +49,6 @@
 
 .method private addInputWindowHandleLw(Lcom/android/server/input/InputWindowHandle;)V
     .locals 3
-    .param p1    # Lcom/android/server/input/InputWindowHandle;
 
     iget-object v0, p0, Lcom/android/server/wm/InputMonitor;->mInputWindowHandles:[Lcom/android/server/input/InputWindowHandle;
 
@@ -101,14 +99,6 @@
 
 .method private addInputWindowHandleLw(Lcom/android/server/input/InputWindowHandle;Lcom/android/server/wm/WindowState;IIIZZZ)V
     .locals 17
-    .param p1    # Lcom/android/server/input/InputWindowHandle;
-    .param p2    # Lcom/android/server/wm/WindowState;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Z
-    .param p7    # Z
-    .param p8    # Z
 
     invoke-virtual/range {p2 .. p2}, Lcom/android/server/wm/WindowState;->toString()Ljava/lang/String;
 
@@ -1180,9 +1170,6 @@
 # virtual methods
 .method public dispatchUnhandledKey(Lcom/android/server/input/InputWindowHandle;Landroid/view/KeyEvent;I)Landroid/view/KeyEvent;
     .locals 2
-    .param p1    # Lcom/android/server/input/InputWindowHandle;
-    .param p2    # Landroid/view/KeyEvent;
-    .param p3    # I
 
     if-eqz p1, :cond_0
 
@@ -1248,9 +1235,6 @@
 
 .method public interceptKeyBeforeDispatching(Lcom/android/server/input/InputWindowHandle;Landroid/view/KeyEvent;I)J
     .locals 3
-    .param p1    # Lcom/android/server/input/InputWindowHandle;
-    .param p2    # Landroid/view/KeyEvent;
-    .param p3    # I
 
     if-eqz p1, :cond_0
 
@@ -1279,9 +1263,6 @@
 
 .method public interceptKeyBeforeQueueing(Landroid/view/KeyEvent;IZ)I
     .locals 1
-    .param p1    # Landroid/view/KeyEvent;
-    .param p2    # I
-    .param p3    # Z
 
     iget-object v0, p0, Lcom/android/server/wm/InputMonitor;->mService:Lcom/android/server/wm/WindowManagerService;
 
@@ -1296,9 +1277,6 @@
 
 .method public interceptKeyBeforeQuickAccess(IFF)V
     .locals 1
-    .param p1    # I
-    .param p2    # F
-    .param p3    # F
 
     iget-object v0, p0, Lcom/android/server/wm/InputMonitor;->mService:Lcom/android/server/wm/WindowManagerService;
 
@@ -1311,7 +1289,6 @@
 
 .method public interceptMotionBeforeQueueingWhenScreenOff(I)I
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/wm/InputMonitor;->mService:Lcom/android/server/wm/WindowManagerService;
 
@@ -1326,9 +1303,6 @@
 
 .method public notifyANR(Lcom/android/server/input/InputApplicationHandle;Lcom/android/server/input/InputWindowHandle;Ljava/lang/String;)J
     .locals 12
-    .param p1    # Lcom/android/server/input/InputApplicationHandle;
-    .param p2    # Lcom/android/server/input/InputWindowHandle;
-    .param p3    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -1623,31 +1597,24 @@
 
 .method public notifyCoverAttachedChanged(JZ)V
     .locals 0
-    .param p1    # J
-    .param p3    # Z
 
     return-void
 .end method
 
 .method public notifyGloveSwitchChanged(JZ)V
     .locals 0
-    .param p1    # J
-    .param p3    # Z
 
     return-void
 .end method
 
 .method public notifyHandSwitchChanged(JI)V
     .locals 0
-    .param p1    # J
-    .param p3    # I
 
     return-void
 .end method
 
 .method public notifyInputChannelBroken(Lcom/android/server/input/InputWindowHandle;)V
     .locals 5
-    .param p1    # Lcom/android/server/input/InputWindowHandle;
 
     if-nez p1, :cond_0
 
@@ -1713,8 +1680,6 @@
 
 .method public notifyLidSwitchChanged(JZ)V
     .locals 1
-    .param p1    # J
-    .param p3    # Z
 
     iget-object v0, p0, Lcom/android/server/wm/InputMonitor;->mService:Lcom/android/server/wm/WindowManagerService;
 
@@ -1727,8 +1692,6 @@
 
 .method public notifyPenSwitchChanged(JZ)V
     .locals 1
-    .param p1    # J
-    .param p3    # Z
 
     iget-object v0, p0, Lcom/android/server/wm/InputMonitor;->mService:Lcom/android/server/wm/WindowManagerService;
 
@@ -1741,7 +1704,6 @@
 
 .method public pauseDispatchingLw(Lcom/android/server/wm/WindowToken;)V
     .locals 2
-    .param p1    # Lcom/android/server/wm/WindowToken;
 
     const/4 v1, 0x1
 
@@ -1759,7 +1721,6 @@
 
 .method public resumeDispatchingLw(Lcom/android/server/wm/WindowToken;)V
     .locals 1
-    .param p1    # Lcom/android/server/wm/WindowToken;
 
     iget-boolean v0, p1, Lcom/android/server/wm/WindowToken;->paused:Z
 
@@ -1779,7 +1740,6 @@
 
 .method public setEventDispatchingLw(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-boolean v0, p0, Lcom/android/server/wm/InputMonitor;->mInputDispatchEnabled:Z
 
@@ -1795,7 +1755,6 @@
 
 .method public setFocusedAppLw(Lcom/android/server/wm/AppWindowToken;)V
     .locals 3
-    .param p1    # Lcom/android/server/wm/AppWindowToken;
 
     if-nez p1, :cond_0
 
@@ -1834,8 +1793,6 @@
 
 .method public setInputFocusLw(Lcom/android/server/wm/WindowState;Z)V
     .locals 2
-    .param p1    # Lcom/android/server/wm/WindowState;
-    .param p2    # Z
 
     const/4 v1, 0x0
 
@@ -1897,7 +1854,6 @@
 
 .method public updateInputWindowsLw(Z)V
     .locals 32
-    .param p1    # Z
 
     if-nez p1, :cond_0
 
@@ -2323,7 +2279,6 @@
 
 .method public waitForInputDevicesReady(J)Z
     .locals 2
-    .param p1    # J
 
     iget-object v1, p0, Lcom/android/server/wm/InputMonitor;->mInputDevicesReadyMonitor:Ljava/lang/Object;
 

@@ -80,7 +80,6 @@
 
 .method public readFromParcel(Landroid/os/Parcel;)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
@@ -99,7 +98,6 @@
 
 .method public setHtml(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/samsung/android/hermes/object/HermesHtml;->mHtml:Ljava/lang/String;
 
@@ -108,7 +106,6 @@
 
 .method public setText(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/samsung/android/hermes/object/HermesHtml;->mText:Ljava/lang/String;
 
@@ -117,8 +114,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/samsung/android/hermes/object/HermesHtml;->mText:Ljava/lang/String;
 

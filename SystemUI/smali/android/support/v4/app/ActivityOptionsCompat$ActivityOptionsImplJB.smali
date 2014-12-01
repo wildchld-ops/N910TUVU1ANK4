@@ -21,7 +21,6 @@
 # direct methods
 .method constructor <init>(Landroid/support/v4/app/ActivityOptionsCompatJB;)V
     .locals 0
-    .param p1    # Landroid/support/v4/app/ActivityOptionsCompatJB;
 
     invoke-direct {p0}, Landroid/support/v4/app/ActivityOptionsCompat;-><init>()V
 
@@ -46,7 +45,6 @@
 
 .method public update(Landroid/support/v4/app/ActivityOptionsCompat;)V
     .locals 3
-    .param p1    # Landroid/support/v4/app/ActivityOptionsCompat;
 
     instance-of v1, p1, Landroid/support/v4/app/ActivityOptionsCompat$ActivityOptionsImplJB;
 

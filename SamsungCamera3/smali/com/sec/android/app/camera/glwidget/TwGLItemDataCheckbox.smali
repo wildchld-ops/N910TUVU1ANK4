@@ -23,12 +23,6 @@
 # direct methods
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;FFFFI)V
     .locals 8
-    .param p1    # Lcom/sec/android/app/camera/Camera;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # I
 
     invoke-virtual {p1}, Lcom/sec/android/app/camera/Camera;->getGLContext()Lcom/sec/android/glview/TwGLContext;
 
@@ -193,10 +187,6 @@
 
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;FFI)V
     .locals 5
-    .param p1    # Lcom/sec/android/app/camera/Camera;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # I
 
     const/4 v4, 0x4
 
@@ -273,11 +263,6 @@
 
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;FFIZ)V
     .locals 5
-    .param p1    # Lcom/sec/android/app/camera/Camera;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # I
-    .param p5    # Z
 
     const/4 v4, 0x4
 
@@ -498,8 +483,6 @@
 
 .method public onCameraSettingsChanged(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLItemDataCheckbox;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 

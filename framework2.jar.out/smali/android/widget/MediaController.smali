@@ -88,7 +88,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x1
 
@@ -99,8 +98,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v1, 0x1
 
@@ -161,8 +158,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Z)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;)V
 
@@ -221,7 +216,6 @@
 
 .method static synthetic access$000(Landroid/widget/MediaController;)V
     .locals 0
-    .param p0    # Landroid/widget/MediaController;
 
     invoke-direct {p0}, Landroid/widget/MediaController;->updateFloatingWindowLayout()V
 
@@ -230,7 +224,6 @@
 
 .method static synthetic access$100(Landroid/widget/MediaController;)Z
     .locals 1
-    .param p0    # Landroid/widget/MediaController;
 
     iget-boolean v0, p0, Landroid/widget/MediaController;->mShowing:Z
 
@@ -239,7 +232,6 @@
 
 .method static synthetic access$1000(Landroid/widget/MediaController;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Landroid/widget/MediaController;
 
     iget-object v0, p0, Landroid/widget/MediaController;->mCurrentTime:Landroid/widget/TextView;
 
@@ -248,8 +240,6 @@
 
 .method static synthetic access$1100(Landroid/widget/MediaController;I)Ljava/lang/String;
     .locals 1
-    .param p0    # Landroid/widget/MediaController;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/widget/MediaController;->stringForTime(I)Ljava/lang/String;
 
@@ -260,7 +250,6 @@
 
 .method static synthetic access$1200(Landroid/widget/MediaController;)V
     .locals 0
-    .param p0    # Landroid/widget/MediaController;
 
     invoke-direct {p0}, Landroid/widget/MediaController;->updatePausePlay()V
 
@@ -269,7 +258,6 @@
 
 .method static synthetic access$200(Landroid/widget/MediaController;)Landroid/view/View;
     .locals 1
-    .param p0    # Landroid/widget/MediaController;
 
     iget-object v0, p0, Landroid/widget/MediaController;->mDecor:Landroid/view/View;
 
@@ -278,7 +266,6 @@
 
 .method static synthetic access$300(Landroid/widget/MediaController;)Landroid/view/WindowManager$LayoutParams;
     .locals 1
-    .param p0    # Landroid/widget/MediaController;
 
     iget-object v0, p0, Landroid/widget/MediaController;->mDecorLayoutParams:Landroid/view/WindowManager$LayoutParams;
 
@@ -287,7 +274,6 @@
 
 .method static synthetic access$400(Landroid/widget/MediaController;)Landroid/view/WindowManager;
     .locals 1
-    .param p0    # Landroid/widget/MediaController;
 
     iget-object v0, p0, Landroid/widget/MediaController;->mWindowManager:Landroid/view/WindowManager;
 
@@ -296,7 +282,6 @@
 
 .method static synthetic access$500(Landroid/widget/MediaController;)I
     .locals 1
-    .param p0    # Landroid/widget/MediaController;
 
     invoke-direct {p0}, Landroid/widget/MediaController;->setProgress()I
 
@@ -307,7 +292,6 @@
 
 .method static synthetic access$600(Landroid/widget/MediaController;)Z
     .locals 1
-    .param p0    # Landroid/widget/MediaController;
 
     iget-boolean v0, p0, Landroid/widget/MediaController;->mDragging:Z
 
@@ -316,8 +300,6 @@
 
 .method static synthetic access$602(Landroid/widget/MediaController;Z)Z
     .locals 0
-    .param p0    # Landroid/widget/MediaController;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/widget/MediaController;->mDragging:Z
 
@@ -326,7 +308,6 @@
 
 .method static synthetic access$700(Landroid/widget/MediaController;)Landroid/widget/MediaController$MediaPlayerControl;
     .locals 1
-    .param p0    # Landroid/widget/MediaController;
 
     iget-object v0, p0, Landroid/widget/MediaController;->mPlayer:Landroid/widget/MediaController$MediaPlayerControl;
 
@@ -335,7 +316,6 @@
 
 .method static synthetic access$800(Landroid/widget/MediaController;)V
     .locals 0
-    .param p0    # Landroid/widget/MediaController;
 
     invoke-direct {p0}, Landroid/widget/MediaController;->doPauseResume()V
 
@@ -344,7 +324,6 @@
 
 .method static synthetic access$900(Landroid/widget/MediaController;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Landroid/widget/MediaController;
 
     iget-object v0, p0, Landroid/widget/MediaController;->mHandler:Landroid/os/Handler;
 
@@ -453,7 +432,6 @@
 
 .method private initControllerView(Landroid/view/View;)V
     .locals 5
-    .param p1    # Landroid/view/View;
 
     const/4 v2, 0x0
 
@@ -984,7 +962,6 @@
 
 .method private stringForTime(I)Ljava/lang/String;
     .locals 11
-    .param p1    # I
 
     const/4 v10, 0x2
 
@@ -1213,7 +1190,6 @@
 # virtual methods
 .method public dispatchKeyEvent(Landroid/view/KeyEvent;)Z
     .locals 5
-    .param p1    # Landroid/view/KeyEvent;
 
     const/16 v4, 0xbb8
 
@@ -1486,7 +1462,6 @@
 
 .method public onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
     .locals 1
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
 
     invoke-super {p0, p1}, Landroid/widget/FrameLayout;->onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
 
@@ -1503,7 +1478,6 @@
 
 .method public onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
     .locals 1
-    .param p1    # Landroid/view/accessibility/AccessibilityNodeInfo;
 
     invoke-super {p0, p1}, Landroid/widget/FrameLayout;->onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
 
@@ -1520,7 +1494,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     const/16 v0, 0xbb8
 
@@ -1533,7 +1506,6 @@
 
 .method public onTrackballEvent(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     const/16 v0, 0xbb8
 
@@ -1546,7 +1518,6 @@
 
 .method public setAnchorView(Landroid/view/View;)V
     .locals 5
-    .param p1    # Landroid/view/View;
 
     const/4 v4, -0x1
 
@@ -1591,7 +1562,6 @@
 
 .method public setEnabled(Z)V
     .locals 4
-    .param p1    # Z
 
     const/4 v1, 0x1
 
@@ -1686,7 +1656,6 @@
 
 .method public setMediaPlayer(Landroid/widget/MediaController$MediaPlayerControl;)V
     .locals 0
-    .param p1    # Landroid/widget/MediaController$MediaPlayerControl;
 
     iput-object p1, p0, Landroid/widget/MediaController;->mPlayer:Landroid/widget/MediaController$MediaPlayerControl;
 
@@ -1697,8 +1666,6 @@
 
 .method public setPrevNextListeners(Landroid/view/View$OnClickListener;Landroid/view/View$OnClickListener;)V
     .locals 2
-    .param p1    # Landroid/view/View$OnClickListener;
-    .param p2    # Landroid/view/View$OnClickListener;
 
     const/4 v1, 0x0
 
@@ -1757,7 +1724,6 @@
 
 .method public show(I)V
     .locals 5
-    .param p1    # I
 
     const/4 v4, 0x1
 

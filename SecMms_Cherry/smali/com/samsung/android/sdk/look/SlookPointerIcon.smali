@@ -30,7 +30,6 @@
 
 .method static synthetic access$000(Lcom/samsung/android/sdk/look/SlookPointerIcon;)Landroid/graphics/drawable/Drawable;
     .locals 1
-    .param p0    # Lcom/samsung/android/sdk/look/SlookPointerIcon;
 
     iget-object v0, p0, Lcom/samsung/android/sdk/look/SlookPointerIcon;->mDrawable:Landroid/graphics/drawable/Drawable;
 
@@ -39,7 +38,6 @@
 
 .method private isSupport(I)Z
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/samsung/android/sdk/look/SlookPointerIcon;->mSlook:Lcom/samsung/android/sdk/look/Slook;
 
@@ -66,8 +64,6 @@
 # virtual methods
 .method public setHoverIcon(Landroid/view/View;Landroid/graphics/drawable/Drawable;)V
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/graphics/drawable/Drawable;
 
     const/4 v1, 0x1
 

@@ -33,7 +33,6 @@
 # virtual methods
 .method public onStatusChanged(I)V
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

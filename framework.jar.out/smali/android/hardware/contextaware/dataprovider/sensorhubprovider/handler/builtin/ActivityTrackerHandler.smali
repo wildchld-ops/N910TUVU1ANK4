@@ -172,8 +172,6 @@
 
 .method protected final initialize(Landroid/content/Context;Landroid/os/Looper;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/Looper;
 
     iget-object v0, p0, Landroid/hardware/contextaware/dataprovider/sensorhubprovider/handler/builtin/ActivityTrackerHandler;->mCurrentPosition:Landroid/hardware/contextaware/utilbundle/CaPassiveCurrentPositionManager;
 
@@ -191,15 +189,6 @@
 
 .method public final updatePassiveCurrentPosition(I[IDDDDFFI)V
     .locals 2
-    .param p1    # I
-    .param p2    # [I
-    .param p3    # D
-    .param p5    # D
-    .param p7    # D
-    .param p9    # D
-    .param p11    # F
-    .param p12    # F
-    .param p13    # I
 
     invoke-virtual {p0}, Landroid/hardware/contextaware/dataprovider/sensorhubprovider/SensorHubModeHandler;->isRunning()Z
 

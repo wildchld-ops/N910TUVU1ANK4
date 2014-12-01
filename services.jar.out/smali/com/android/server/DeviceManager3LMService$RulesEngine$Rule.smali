@@ -27,8 +27,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/DeviceManager3LMService$RulesEngine;Ljava/lang/String;Z)V
     .locals 1
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/util/regex/PatternSyntaxException;
@@ -54,7 +52,6 @@
 
 .method static synthetic access$300(Lcom/android/server/DeviceManager3LMService$RulesEngine$Rule;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/server/DeviceManager3LMService$RulesEngine$Rule;
 
     iget-object v0, p0, Lcom/android/server/DeviceManager3LMService$RulesEngine$Rule;->mRegexStr:Ljava/lang/String;
 
@@ -63,7 +60,6 @@
 
 .method static synthetic access$400(Lcom/android/server/DeviceManager3LMService$RulesEngine$Rule;)Z
     .locals 1
-    .param p0    # Lcom/android/server/DeviceManager3LMService$RulesEngine$Rule;
 
     iget-boolean v0, p0, Lcom/android/server/DeviceManager3LMService$RulesEngine$Rule;->mPermitted:Z
 
@@ -72,8 +68,6 @@
 
 .method static synthetic access$402(Lcom/android/server/DeviceManager3LMService$RulesEngine$Rule;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/DeviceManager3LMService$RulesEngine$Rule;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/DeviceManager3LMService$RulesEngine$Rule;->mPermitted:Z
 
@@ -82,7 +76,6 @@
 
 .method static synthetic access$500(Lcom/android/server/DeviceManager3LMService$RulesEngine$Rule;)Ljava/util/regex/Pattern;
     .locals 1
-    .param p0    # Lcom/android/server/DeviceManager3LMService$RulesEngine$Rule;
 
     iget-object v0, p0, Lcom/android/server/DeviceManager3LMService$RulesEngine$Rule;->mRegex:Ljava/util/regex/Pattern;
 

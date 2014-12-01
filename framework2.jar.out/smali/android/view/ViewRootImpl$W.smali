@@ -32,7 +32,6 @@
 # direct methods
 .method constructor <init>(Landroid/view/ViewRootImpl;)V
     .locals 1
-    .param p1    # Landroid/view/ViewRootImpl;
 
     invoke-direct {p0}, Landroid/view/IWindow$Stub;-><init>()V
 
@@ -51,7 +50,6 @@
 
 .method private static checkCallingPermission(Ljava/lang/String;)I
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     :try_start_0
     invoke-static {}, Landroid/app/ActivityManagerNative;->getDefault()Landroid/app/IActivityManager;
@@ -87,7 +85,6 @@
 # virtual methods
 .method public closeSystemDialogs(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Landroid/view/ViewRootImpl$W;->mViewAncestor:Ljava/lang/ref/WeakReference;
 
@@ -107,9 +104,6 @@
 
 .method public dispatchAirButtonHitTest(III)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     iget-object v1, p0, Landroid/view/ViewRootImpl$W;->mViewAncestor:Ljava/lang/ref/WeakReference;
 
@@ -129,7 +123,6 @@
 
 .method public dispatchAppVisibility(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v1, p0, Landroid/view/ViewRootImpl$W;->mViewAncestor:Ljava/lang/ref/WeakReference;
 
@@ -149,7 +142,6 @@
 
 .method public dispatchCocktailBarVisibilityChanged(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v1, p0, Landroid/view/ViewRootImpl$W;->mViewAncestor:Ljava/lang/ref/WeakReference;
 
@@ -169,7 +161,6 @@
 
 .method public dispatchCoverStateChanged(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v1, p0, Landroid/view/ViewRootImpl$W;->mViewAncestor:Ljava/lang/ref/WeakReference;
 
@@ -190,7 +181,6 @@
 
 .method public dispatchDragEvent(Landroid/view/DragEvent;)V
     .locals 2
-    .param p1    # Landroid/view/DragEvent;
 
     iget-object v1, p0, Landroid/view/ViewRootImpl$W;->mViewAncestor:Ljava/lang/ref/WeakReference;
 
@@ -229,7 +219,6 @@
 
 .method public dispatchScreenState(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v1, p0, Landroid/view/ViewRootImpl$W;->mViewAncestor:Ljava/lang/ref/WeakReference;
 
@@ -249,7 +238,6 @@
 
 .method public dispatchSmartClipDataExtractionEvent(Lcom/samsung/android/smartclip/SmartClipDataExtractionEvent;)V
     .locals 2
-    .param p1    # Lcom/samsung/android/smartclip/SmartClipDataExtractionEvent;
 
     iget-object v1, p0, Landroid/view/ViewRootImpl$W;->mViewAncestor:Ljava/lang/ref/WeakReference;
 
@@ -269,10 +257,6 @@
 
 .method public dispatchSystemUiVisibilityChanged(IIII)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iget-object v1, p0, Landroid/view/ViewRootImpl$W;->mViewAncestor:Ljava/lang/ref/WeakReference;
 
@@ -292,12 +276,6 @@
 
 .method public dispatchWallpaperCommand(Ljava/lang/String;IIILandroid/os/Bundle;Z)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Landroid/os/Bundle;
-    .param p6    # Z
 
     if-eqz p6, :cond_0
 
@@ -326,11 +304,6 @@
 
 .method public dispatchWallpaperOffsets(FFFFZ)V
     .locals 2
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # Z
 
     if-eqz p5, :cond_0
 
@@ -376,9 +349,6 @@
 
 .method public executeCommand(Ljava/lang/String;Ljava/lang/String;Landroid/os/ParcelFileDescriptor;)V
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/os/ParcelFileDescriptor;
 
     iget-object v5, p0, Landroid/view/ViewRootImpl$W;->mViewAncestor:Ljava/lang/ref/WeakReference;
 
@@ -542,8 +512,6 @@
 
 .method public moved(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget-object v1, p0, Landroid/view/ViewRootImpl$W;->mViewAncestor:Ljava/lang/ref/WeakReference;
 
@@ -563,7 +531,6 @@
 
 .method public multiWindowStyleChanged(Lcom/samsung/android/multiwindow/MultiWindowStyle;)V
     .locals 2
-    .param p1    # Lcom/samsung/android/multiwindow/MultiWindowStyle;
 
     iget-object v1, p0, Landroid/view/ViewRootImpl$W;->mViewAncestor:Ljava/lang/ref/WeakReference;
 
@@ -584,12 +551,6 @@
 
 .method public resized(Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Rect;ZLandroid/content/res/Configuration;)V
     .locals 7
-    .param p1    # Landroid/graphics/Rect;
-    .param p2    # Landroid/graphics/Rect;
-    .param p3    # Landroid/graphics/Rect;
-    .param p4    # Landroid/graphics/Rect;
-    .param p5    # Z
-    .param p6    # Landroid/content/res/Configuration;
 
     iget-object v1, p0, Landroid/view/ViewRootImpl$W;->mViewAncestor:Ljava/lang/ref/WeakReference;
 
@@ -621,8 +582,6 @@
 
 .method public windowFocusChanged(ZZ)V
     .locals 2
-    .param p1    # Z
-    .param p2    # Z
 
     iget-object v1, p0, Landroid/view/ViewRootImpl$W;->mViewAncestor:Ljava/lang/ref/WeakReference;
 

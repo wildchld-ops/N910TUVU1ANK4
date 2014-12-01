@@ -20,7 +20,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 14
-    .param p1    # Landroid/content/Context;
 
     const/4 v13, 0x7
 
@@ -192,7 +191,6 @@
 
 .method private beginningOfDay(Ljava/util/Calendar;)V
     .locals 2
-    .param p1    # Ljava/util/Calendar;
 
     const/4 v1, 0x0
 
@@ -219,7 +217,6 @@
 # virtual methods
 .method public getBoundary(I)J
     .locals 3
-    .param p1    # I
 
     const/4 v0, 0x4
 
@@ -248,7 +245,6 @@
 
 .method public getIndex(J)I
     .locals 4
-    .param p1    # J
 
     const/4 v1, 0x4
 
@@ -281,7 +277,6 @@
 
 .method public getLabel(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     if-ltz p1, :cond_0
 

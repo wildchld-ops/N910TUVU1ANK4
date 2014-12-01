@@ -334,7 +334,6 @@
 
 .method private static errorCallbackFromNative(I)V
     .locals 3
-    .param p0    # I
 
     const/4 v0, 0x0
 
@@ -377,7 +376,6 @@
 
 .method public static getDeviceName(I)Ljava/lang/String;
     .locals 1
-    .param p0    # I
 
     sparse-switch p0, :sswitch_data_0
 
@@ -572,7 +570,6 @@
 
 .method public static setErrorCallback(Landroid/media/AudioSystem$ErrorCallback;)V
     .locals 2
-    .param p0    # Landroid/media/AudioSystem$ErrorCallback;
 
     const-class v1, Landroid/media/AudioSystem;
 

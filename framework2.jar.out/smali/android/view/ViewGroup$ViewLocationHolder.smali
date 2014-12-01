@@ -97,8 +97,6 @@
 
 .method private init(Landroid/view/ViewGroup;Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/ViewGroup;
-    .param p2    # Landroid/view/View;
 
     iget-object v0, p0, Landroid/view/ViewGroup$ViewLocationHolder;->mLocation:Landroid/graphics/Rect;
 
@@ -119,8 +117,6 @@
 
 .method public static obtain(Landroid/view/ViewGroup;Landroid/view/View;)Landroid/view/ViewGroup$ViewLocationHolder;
     .locals 2
-    .param p0    # Landroid/view/ViewGroup;
-    .param p1    # Landroid/view/View;
 
     sget-object v1, Landroid/view/ViewGroup$ViewLocationHolder;->sPool:Landroid/util/Pools$SynchronizedPool;
 
@@ -146,7 +142,6 @@
 # virtual methods
 .method public compareTo(Landroid/view/ViewGroup$ViewLocationHolder;)I
     .locals 7
-    .param p1    # Landroid/view/ViewGroup$ViewLocationHolder;
 
     const/4 v1, 0x1
 
@@ -308,7 +303,6 @@
 
 .method public bridge synthetic compareTo(Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Landroid/view/ViewGroup$ViewLocationHolder;
 

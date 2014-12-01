@@ -54,7 +54,6 @@
 
 .method public constructor <init>(I)V
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -71,8 +70,6 @@
 
 .method public constructor <init>(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -89,7 +86,6 @@
 
 .method public constructor <init>(Landroid/os/Parcel;)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -136,18 +132,6 @@
 
 .method public drawLeadingMargin(Landroid/graphics/Canvas;Landroid/graphics/Paint;IIIIILjava/lang/CharSequence;IIZLandroid/text/Layout;)V
     .locals 8
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # Landroid/graphics/Paint;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # Ljava/lang/CharSequence;
-    .param p9    # I
-    .param p10    # I
-    .param p11    # Z
-    .param p12    # Landroid/text/Layout;
 
     check-cast p8, Landroid/text/Spanned;
 
@@ -274,7 +258,6 @@
 
 .method public getLeadingMargin(Z)I
     .locals 1
-    .param p1    # Z
 
     iget v0, p0, Landroid/text/style/BulletSpan;->mGapWidth:I
 
@@ -293,8 +276,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget v0, p0, Landroid/text/style/BulletSpan;->mGapWidth:I
 

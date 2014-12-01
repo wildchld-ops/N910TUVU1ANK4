@@ -31,7 +31,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
 
@@ -54,8 +53,6 @@
 
 .method static synthetic access$002(Lcom/android/settings/RestrictedSettingsFragment;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/RestrictedSettingsFragment;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/RestrictedSettingsFragment;->mChallengeSucceeded:Z
 
@@ -64,7 +61,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/RestrictedSettingsFragment;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/settings/RestrictedSettingsFragment;
 
     iget-object v0, p0, Lcom/android/settings/RestrictedSettingsFragment;->mRestrictionKey:Ljava/lang/String;
 
@@ -73,8 +69,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/RestrictedSettingsFragment;Landroid/preference/Preference;)V
     .locals 0
-    .param p0    # Lcom/android/settings/RestrictedSettingsFragment;
-    .param p1    # Landroid/preference/Preference;
 
     invoke-direct {p0, p1}, Lcom/android/settings/RestrictedSettingsFragment;->ensurePin(Landroid/preference/Preference;)V
 
@@ -83,7 +77,6 @@
 
 .method private ensurePin(Landroid/preference/Preference;)V
     .locals 5
-    .param p1    # Landroid/preference/Preference;
 
     iget-boolean v2, p0, Lcom/android/settings/RestrictedSettingsFragment;->mChallengeSucceeded:Z
 
@@ -168,7 +161,6 @@
 # virtual methods
 .method ensurePinRestrictedPreference(Landroid/preference/Preference;)Z
     .locals 1
-    .param p1    # Landroid/preference/Preference;
 
     iget-object v0, p0, Lcom/android/settings/RestrictedSettingsFragment;->mProtectedByRestictionsPrefs:Ljava/util/HashSet;
 
@@ -246,9 +238,6 @@
 
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const/4 v3, 0x0
 
@@ -362,7 +351,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v1, 0x0
 
@@ -472,7 +460,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/preference/PreferenceFragment;->onSaveInstanceState(Landroid/os/Bundle;)V
 
@@ -515,7 +502,6 @@
 
 .method protected protectByRestrictions(Landroid/preference/Preference;)V
     .locals 1
-    .param p1    # Landroid/preference/Preference;
 
     if-eqz p1, :cond_0
 
@@ -529,7 +515,6 @@
 
 .method protected protectByRestrictions(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Landroid/preference/PreferenceFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
@@ -542,8 +527,6 @@
 
 .method protected restrictionsPinCheck(Ljava/lang/String;Landroid/preference/Preference;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/preference/Preference;
 
     invoke-virtual {p0, p1}, Lcom/android/settings/RestrictedSettingsFragment;->shouldBePinProtected(Ljava/lang/String;)Z
 
@@ -570,7 +553,6 @@
 
 .method protected shouldBePinProtected(Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x1
 

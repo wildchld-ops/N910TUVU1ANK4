@@ -68,8 +68,6 @@
 
 .method static synthetic access$000(Lcom/android/systemui/media/RingtonePlayer;Landroid/os/UserHandle;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/systemui/media/RingtonePlayer;
-    .param p1    # Landroid/os/UserHandle;
 
     invoke-direct {p0, p1}, Lcom/android/systemui/media/RingtonePlayer;->getContextForUser(Landroid/os/UserHandle;)Landroid/content/Context;
 
@@ -80,7 +78,6 @@
 
 .method static synthetic access$100(Lcom/android/systemui/media/RingtonePlayer;)Ljava/util/HashMap;
     .locals 1
-    .param p0    # Lcom/android/systemui/media/RingtonePlayer;
 
     iget-object v0, p0, Lcom/android/systemui/media/RingtonePlayer;->mClients:Ljava/util/HashMap;
 
@@ -89,7 +86,6 @@
 
 .method static synthetic access$400(Lcom/android/systemui/media/RingtonePlayer;)Lcom/android/systemui/media/NotificationPlayer;
     .locals 1
-    .param p0    # Lcom/android/systemui/media/RingtonePlayer;
 
     iget-object v0, p0, Lcom/android/systemui/media/RingtonePlayer;->mAsyncPlayer:Lcom/android/systemui/media/NotificationPlayer;
 
@@ -98,7 +94,6 @@
 
 .method private getContextForUser(Landroid/os/UserHandle;)Landroid/content/Context;
     .locals 4
-    .param p1    # Landroid/os/UserHandle;
 
     :try_start_0
     iget-object v1, p0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
@@ -133,9 +128,6 @@
 # virtual methods
 .method public dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     const-string v2, "Clients:"
 

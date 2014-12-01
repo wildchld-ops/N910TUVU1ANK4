@@ -6,9 +6,9 @@
 # static fields
 .field private static enableQueried:Z
 
-.field private static isFreeStyleEnabled:Z
+.field private static isFreeStyle:Z
 
-.field private static isMultiWindowEnabled:Z
+.field private static isSplitStyle:Z
 
 .field private static mVersionCode:I
 
@@ -21,19 +21,19 @@
 
     const/4 v1, 0x0
 
-    const/4 v0, 0x3
+    const/4 v0, 0x2
 
     sput v0, Lcom/samsung/android/sdk/multiwindow/SMultiWindow;->mVersionCode:I
 
-    const-string v0, "1.2.3"
+    const-string v0, "1.1.1"
 
     sput-object v0, Lcom/samsung/android/sdk/multiwindow/SMultiWindow;->mVersionName:Ljava/lang/String;
 
     sput-boolean v1, Lcom/samsung/android/sdk/multiwindow/SMultiWindow;->enableQueried:Z
 
-    sput-boolean v1, Lcom/samsung/android/sdk/multiwindow/SMultiWindow;->isMultiWindowEnabled:Z
+    sput-boolean v1, Lcom/samsung/android/sdk/multiwindow/SMultiWindow;->isSplitStyle:Z
 
-    sput-boolean v1, Lcom/samsung/android/sdk/multiwindow/SMultiWindow;->isFreeStyleEnabled:Z
+    sput-boolean v1, Lcom/samsung/android/sdk/multiwindow/SMultiWindow;->isFreeStyle:Z
 
     return-void
 .end method
@@ -72,15 +72,27 @@
 
     move-result v1
 
-    sput-boolean v1, Lcom/samsung/android/sdk/multiwindow/SMultiWindow;->isMultiWindowEnabled:Z
+    sput-boolean v1, Lcom/samsung/android/sdk/multiwindow/SMultiWindow;->isSplitStyle:Z
 
-    sget-object v1, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator$PackageManager;->FEATURE_MULTIWINDOW_FREESTYLE:Ljava/lang/String;
+    sget-object v1, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator$PackageManager;->FEATURE_MULTIWINDOW_FREESTYLE_LAUNCH:Ljava/lang/String;
 
     invoke-interface {v0, v1}, Landroid/content/pm/IPackageManager;->hasSystemFeature(Ljava/lang/String;)Z
 
     move-result v1
 
-    sput-boolean v1, Lcom/samsung/android/sdk/multiwindow/SMultiWindow;->isFreeStyleEnabled:Z
+    sput-boolean v1, Lcom/samsung/android/sdk/multiwindow/SMultiWindow;->isFreeStyle:Z
+
+    sget-boolean v1, Lcom/samsung/android/sdk/multiwindow/SMultiWindow;->isFreeStyle:Z
+
+    if-nez v1, :cond_0
+
+    sget-object v1, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator$PackageManager;->FEATURE_MULTIWINDOW_TABLET:Ljava/lang/String;
+
+    invoke-interface {v0, v1}, Landroid/content/pm/IPackageManager;->hasSystemFeature(Ljava/lang/String;)Z
+
+    move-result v1
+
+    sput-boolean v1, Lcom/samsung/android/sdk/multiwindow/SMultiWindow;->isFreeStyle:Z
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -97,23 +109,38 @@
 
 # virtual methods
 .method public isFeatureEnabled(I)Z
-    .locals 1
+    .locals 2
     .param p1    # I
-
-    packed-switch p1, :pswitch_data_0
 
     const/4 v0, 0x0
 
+    packed-switch p1, :pswitch_data_0
+
+    :cond_0
     :goto_0
     return v0
 
     :pswitch_0
-    sget-boolean v0, Lcom/samsung/android/sdk/multiwindow/SMultiWindow;->isMultiWindowEnabled:Z
+    sget-boolean v1, Lcom/samsung/android/sdk/multiwindow/SMultiWindow;->isSplitStyle:Z
+
+    if-nez v1, :cond_1
+
+    sget-boolean v1, Lcom/samsung/android/sdk/multiwindow/SMultiWindow;->isFreeStyle:Z
+
+    if-eqz v1, :cond_0
+
+    :cond_1
+    const/4 v0, 0x1
 
     goto :goto_0
 
     :pswitch_1
-    sget-boolean v0, Lcom/samsung/android/sdk/multiwindow/SMultiWindow;->isFreeStyleEnabled:Z
+    sget-boolean v0, Lcom/samsung/android/sdk/multiwindow/SMultiWindow;->isSplitStyle:Z
+
+    goto :goto_0
+
+    :pswitch_2
+    sget-boolean v0, Lcom/samsung/android/sdk/multiwindow/SMultiWindow;->isFreeStyle:Z
 
     goto :goto_0
 
@@ -123,5 +150,6 @@
     .packed-switch 0x1
         :pswitch_0
         :pswitch_1
+        :pswitch_2
     .end packed-switch
 .end method

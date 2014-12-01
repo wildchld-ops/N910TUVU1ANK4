@@ -58,8 +58,6 @@
 
 .method public proceed(Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/webkitsec/BrowserFrame$1;->this$0:Landroid/webkitsec/BrowserFrame;
 

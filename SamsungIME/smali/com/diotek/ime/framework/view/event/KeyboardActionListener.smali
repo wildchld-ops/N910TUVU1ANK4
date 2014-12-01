@@ -33,8 +33,6 @@
 # virtual methods
 .method public onKey(I[I)V
     .locals 1
-    .param p1    # I
-    .param p2    # [I
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/event/KeyboardActionListener;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -45,7 +43,6 @@
 
 .method public onPress(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/event/KeyboardActionListener;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -56,7 +53,6 @@
 
 .method public onRelease(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/event/KeyboardActionListener;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -67,7 +63,6 @@
 
 .method public onText(Ljava/lang/CharSequence;)V
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/event/KeyboardActionListener;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 

@@ -36,7 +36,6 @@
 # virtual methods
 .method public onTouchModeChanged(Z)V
     .locals 4
-    .param p1    # Z
 
     if-nez p1, :cond_0
 

@@ -137,7 +137,6 @@
 
 .method public init(I)Z
     .locals 7
-    .param p1    # I
 
     const/4 v6, 0x1
 
@@ -252,7 +251,6 @@
 
 .method public read([B)I
     .locals 5
-    .param p1    # [B
 
     const/4 v0, 0x0
 

@@ -23,8 +23,6 @@
 # direct methods
 .method public constructor <init>(Landroid/media/audiofx/AudioEffect;Landroid/media/audiofx/AudioEffect;Landroid/os/Looper;)V
     .locals 0
-    .param p2    # Landroid/media/audiofx/AudioEffect;
-    .param p3    # Landroid/os/Looper;
 
     iput-object p1, p0, Landroid/media/audiofx/AudioEffect$NativeEventHandler;->this$0:Landroid/media/audiofx/AudioEffect;
 
@@ -39,7 +37,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 14
-    .param p1    # Landroid/os/Message;
 
     const/4 v10, 0x1
 

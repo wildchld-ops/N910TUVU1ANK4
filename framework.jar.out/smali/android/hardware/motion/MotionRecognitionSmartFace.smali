@@ -32,7 +32,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 8
-    .param p1    # Landroid/content/Context;
 
     const/4 v7, 0x1
 
@@ -115,7 +114,6 @@
 
 .method static synthetic access$000(Landroid/hardware/motion/MotionRecognitionSmartFace;)Z
     .locals 1
-    .param p0    # Landroid/hardware/motion/MotionRecognitionSmartFace;
 
     iget-boolean v0, p0, Landroid/hardware/motion/MotionRecognitionSmartFace;->mbOldFaceDetected:Z
 
@@ -124,8 +122,6 @@
 
 .method static synthetic access$002(Landroid/hardware/motion/MotionRecognitionSmartFace;Z)Z
     .locals 0
-    .param p0    # Landroid/hardware/motion/MotionRecognitionSmartFace;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/hardware/motion/MotionRecognitionSmartFace;->mbOldFaceDetected:Z
 
@@ -173,7 +169,6 @@
 
 .method public disableFaceDetector(Landroid/hardware/motion/MotionRecognitionSmartFace$eREASONOFSTARTSTOP;)V
     .locals 3
-    .param p1    # Landroid/hardware/motion/MotionRecognitionSmartFace$eREASONOFSTARTSTOP;
 
     iget-object v0, p0, Landroid/hardware/motion/MotionRecognitionSmartFace;->mIsReason:[Z
 
@@ -284,7 +279,6 @@
 
 .method public enableFaceDetector(Landroid/hardware/motion/MotionRecognitionSmartFace$eREASONOFSTARTSTOP;)V
     .locals 8
-    .param p1    # Landroid/hardware/motion/MotionRecognitionSmartFace$eREASONOFSTARTSTOP;
 
     const/4 v7, 0x1
 

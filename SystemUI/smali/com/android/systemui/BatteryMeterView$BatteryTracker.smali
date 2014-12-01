@@ -69,8 +69,6 @@
 
 .method synthetic constructor <init>(Lcom/android/systemui/BatteryMeterView;Lcom/android/systemui/BatteryMeterView$1;)V
     .locals 0
-    .param p1    # Lcom/android/systemui/BatteryMeterView;
-    .param p2    # Lcom/android/systemui/BatteryMeterView$1;
 
     invoke-direct {p0, p1}, Lcom/android/systemui/BatteryMeterView$BatteryTracker;-><init>(Lcom/android/systemui/BatteryMeterView;)V
 
@@ -81,8 +79,6 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 12
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     const/4 v8, 0x0
 

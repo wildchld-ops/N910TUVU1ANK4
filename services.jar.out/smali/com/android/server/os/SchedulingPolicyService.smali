@@ -24,9 +24,6 @@
 # virtual methods
 .method public requestPriority(III)I
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v2, 0x3
 

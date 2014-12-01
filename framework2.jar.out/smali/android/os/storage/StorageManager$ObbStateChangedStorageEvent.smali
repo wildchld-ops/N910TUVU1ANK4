@@ -25,8 +25,6 @@
 # direct methods
 .method public constructor <init>(Landroid/os/storage/StorageManager;Ljava/lang/String;I)V
     .locals 1
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     iput-object p1, p0, Landroid/os/storage/StorageManager$ObbStateChangedStorageEvent;->this$0:Landroid/os/storage/StorageManager;
 

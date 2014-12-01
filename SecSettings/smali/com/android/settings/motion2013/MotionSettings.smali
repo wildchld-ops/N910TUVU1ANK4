@@ -110,7 +110,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/motion2013/MotionSettings;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/motion2013/MotionSettings;
 
     iget-object v0, p0, Lcom/android/settings/motion2013/MotionSettings;->mResolver:Landroid/content/ContentResolver;
 
@@ -119,7 +118,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/motion2013/MotionSettings;)Landroid/widget/Switch;
     .locals 1
-    .param p0    # Lcom/android/settings/motion2013/MotionSettings;
 
     iget-object v0, p0, Lcom/android/settings/motion2013/MotionSettings;->mActionBarSwitch:Landroid/widget/Switch;
 
@@ -128,7 +126,6 @@
 
 .method private broadcastArcMotionQuickGlanceChanged(Z)V
     .locals 4
-    .param p1    # Z
 
     new-instance v0, Landroid/content/Intent;
 
@@ -173,8 +170,6 @@
 
 .method public static isAllOptionDisabled(Landroid/content/ContentResolver;Landroid/content/Context;)Z
     .locals 21
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # Landroid/content/Context;
 
     const/16 v19, 0x0
 
@@ -847,7 +842,6 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onActivityCreated(Landroid/os/Bundle;)V
 
@@ -877,8 +871,6 @@
 
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 4
-    .param p1    # Landroid/widget/CompoundButton;
-    .param p2    # Z
 
     const/4 v3, 0x1
 
@@ -1001,7 +993,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 17
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super/range {p0 .. p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -2012,8 +2003,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
     .locals 3
-    .param p1    # Landroid/view/Menu;
-    .param p2    # Landroid/view/MenuInflater;
 
     const/4 v2, 0x0
 
@@ -2051,7 +2040,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 3
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -2172,8 +2160,6 @@
 
 .method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
     .locals 6
-    .param p1    # Landroid/preference/Preference;
-    .param p2    # Ljava/lang/Object;
 
     const/4 v2, 0x1
 
@@ -2454,8 +2440,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 1
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     const/4 v0, 0x1
 

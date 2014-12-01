@@ -36,7 +36,6 @@
 # virtual methods
 .method public onEvent(Lcom/samsung/android/fingerprint/FingerprintEvent;)V
     .locals 5
-    .param p1    # Lcom/samsung/android/fingerprint/FingerprintEvent;
 
     move-object v1, p1
 

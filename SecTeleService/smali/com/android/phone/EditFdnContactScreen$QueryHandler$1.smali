@@ -278,7 +278,7 @@
 
     iget-object v4, p0, Lcom/android/phone/EditFdnContactScreen$QueryHandler$1;->mCurrentString:Ljava/lang/String;
 
-    invoke-virtual {v3, v4}, Landroid/widget/TextView;->setTextKeepState(Ljava/lang/CharSequence;)V
+    invoke-virtual {v3, v4}, Landroid/widget/EditText;->setTextKeepState(Ljava/lang/CharSequence;)V
 
     :cond_4
     const/4 v1, 0x0
@@ -371,7 +371,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v3, v0}, Landroid/widget/TextView;->setFilters([Landroid/text/InputFilter;)V
+    invoke-virtual {v3, v0}, Landroid/widget/EditText;->setFilters([Landroid/text/InputFilter;)V
 
     iput-boolean v7, p0, Lcom/android/phone/EditFdnContactScreen$QueryHandler$1;->needResetMaxLength:Z
 
@@ -408,7 +408,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v3, v0}, Landroid/widget/TextView;->setFilters([Landroid/text/InputFilter;)V
+    invoke-virtual {v3, v0}, Landroid/widget/EditText;->setFilters([Landroid/text/InputFilter;)V
 
     iput-boolean v6, p0, Lcom/android/phone/EditFdnContactScreen$QueryHandler$1;->needResetMaxLength:Z
 

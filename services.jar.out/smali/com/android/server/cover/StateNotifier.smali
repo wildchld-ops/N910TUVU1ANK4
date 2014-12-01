@@ -85,8 +85,6 @@
 
 .method public constructor <init>(Landroid/os/Looper;Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/os/Looper;
-    .param p2    # Landroid/content/Context;
 
     const/4 v3, 0x1
 
@@ -206,9 +204,6 @@
 
 .method static synthetic access$000(Lcom/android/server/cover/StateNotifier;Lcom/samsung/android/cover/CoverState;Z)V
     .locals 0
-    .param p0    # Lcom/android/server/cover/StateNotifier;
-    .param p1    # Lcom/samsung/android/cover/CoverState;
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/cover/StateNotifier;->handleSendCoverSwitchState(Lcom/samsung/android/cover/CoverState;Z)V
 
@@ -217,8 +212,6 @@
 
 .method static synthetic access$100(Lcom/android/server/cover/StateNotifier;Z)V
     .locals 0
-    .param p0    # Lcom/android/server/cover/StateNotifier;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/cover/StateNotifier;->handleSendCoverAttachState(Z)V
 
@@ -227,8 +220,6 @@
 
 .method static synthetic access$200(Lcom/android/server/cover/StateNotifier;Lcom/samsung/android/cover/CoverState;)V
     .locals 0
-    .param p0    # Lcom/android/server/cover/StateNotifier;
-    .param p1    # Lcom/samsung/android/cover/CoverState;
 
     invoke-direct {p0, p1}, Lcom/android/server/cover/StateNotifier;->handleUpdateSViewCoverService(Lcom/samsung/android/cover/CoverState;)V
 
@@ -237,7 +228,6 @@
 
 .method static synthetic access$300(Lcom/android/server/cover/StateNotifier;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/server/cover/StateNotifier;
 
     iget-object v0, p0, Lcom/android/server/cover/StateNotifier;->mListeners:Ljava/util/ArrayList;
 
@@ -246,7 +236,6 @@
 
 .method static synthetic access$400(Lcom/android/server/cover/StateNotifier;)Landroid/os/PowerManager$WakeLock;
     .locals 1
-    .param p0    # Lcom/android/server/cover/StateNotifier;
 
     iget-object v0, p0, Lcom/android/server/cover/StateNotifier;->mUpdateSViewCoverWakeLock:Landroid/os/PowerManager$WakeLock;
 
@@ -255,7 +244,6 @@
 
 .method private handleSendCoverAttachState(Z)V
     .locals 4
-    .param p1    # Z
 
     iget-object v3, p0, Lcom/android/server/cover/StateNotifier;->mListeners:Ljava/util/ArrayList;
 
@@ -318,8 +306,6 @@
 
 .method private handleSendCoverSwitchState(Lcom/samsung/android/cover/CoverState;Z)V
     .locals 4
-    .param p1    # Lcom/samsung/android/cover/CoverState;
-    .param p2    # Z
 
     iget-object v3, p0, Lcom/android/server/cover/StateNotifier;->mListeners:Ljava/util/ArrayList;
 
@@ -384,7 +370,6 @@
 
 .method private handleUpdateSViewCoverService(Lcom/samsung/android/cover/CoverState;)V
     .locals 4
-    .param p1    # Lcom/samsung/android/cover/CoverState;
 
     iget-object v0, p0, Lcom/android/server/cover/StateNotifier;->mSViewCoverBaseServiceDelegate:Lcom/samsung/android/cover/SViewCoverBaseServiceDelegate;
 
@@ -429,7 +414,6 @@
 
 .method private sendCoverAttachStateLocked(Z)V
     .locals 4
-    .param p1    # Z
 
     const/4 v1, 0x1
 
@@ -477,8 +461,6 @@
 
 .method private sendCoverSwitchStateLocked(Lcom/samsung/android/cover/CoverState;Z)V
     .locals 4
-    .param p1    # Lcom/samsung/android/cover/CoverState;
-    .param p2    # Z
 
     const/4 v1, 0x0
 
@@ -525,7 +507,6 @@
 
 .method private updatePowerStateLocked(Lcom/samsung/android/cover/CoverState;)V
     .locals 6
-    .param p1    # Lcom/samsung/android/cover/CoverState;
 
     const/4 v3, 0x0
 
@@ -719,7 +700,6 @@
 
 .method private updateSViewCoverServiceConnectionLocked(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/server/cover/StateNotifier;->mSViewCoverBaseServiceDelegate:Lcom/samsung/android/cover/SViewCoverBaseServiceDelegate;
 
@@ -745,7 +725,6 @@
 
 .method private updateSViewCoverServiceLocked(Lcom/samsung/android/cover/CoverState;)V
     .locals 3
-    .param p1    # Lcom/samsung/android/cover/CoverState;
 
     const-string v1, "CoverManager.StateNotifier"
 
@@ -787,9 +766,6 @@
 # virtual methods
 .method public dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     const-string v2, " Current StateNotifier state:"
 
@@ -932,9 +908,6 @@
 
 .method registerListenerCallback(Landroid/os/IBinder;Landroid/content/ComponentName;I)V
     .locals 9
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1098,7 +1071,6 @@
 
 .method unregisterCallback(Landroid/os/IBinder;)Z
     .locals 7
-    .param p1    # Landroid/os/IBinder;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1257,8 +1229,6 @@
 
 .method updateCoverAttachStateLocked(ZZ)V
     .locals 3
-    .param p1    # Z
-    .param p2    # Z
 
     sget-boolean v0, Lcom/android/server/cover/StateNotifier;->SAFE_DEBUG:Z
 
@@ -1333,8 +1303,6 @@
 
 .method updateCoverSwitchStateLocked(Lcom/samsung/android/cover/CoverState;Z)V
     .locals 3
-    .param p1    # Lcom/samsung/android/cover/CoverState;
-    .param p2    # Z
 
     sget-boolean v0, Lcom/android/server/cover/StateNotifier;->SAFE_DEBUG:Z
 

@@ -41,8 +41,6 @@
 
 .method synthetic constructor <init>(Landroid/os/Broadcaster;Landroid/os/Broadcaster$1;)V
     .locals 0
-    .param p1    # Landroid/os/Broadcaster;
-    .param p2    # Landroid/os/Broadcaster$1;
 
     invoke-direct {p0, p1}, Landroid/os/Broadcaster$Registration;-><init>(Landroid/os/Broadcaster;)V
 

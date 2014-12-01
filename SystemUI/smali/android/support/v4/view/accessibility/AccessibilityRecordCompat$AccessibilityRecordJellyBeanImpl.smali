@@ -27,9 +27,6 @@
 # virtual methods
 .method public setSource(Ljava/lang/Object;Landroid/view/View;I)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Landroid/view/View;
-    .param p3    # I
 
     invoke-static {p1, p2, p3}, Landroid/support/v4/view/accessibility/AccessibilityRecordCompatJellyBean;->setSource(Ljava/lang/Object;Landroid/view/View;I)V
 

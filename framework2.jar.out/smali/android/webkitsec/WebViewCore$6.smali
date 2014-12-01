@@ -36,16 +36,12 @@
 # virtual methods
 .method public invoke(Ljava/lang/String;Z)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     return-void
 .end method
 
 .method public invokeEvent(Ljava/lang/String;I)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     new-instance v0, Landroid/webkitsec/WebViewCore$InvokeEventparams;
 
@@ -66,8 +62,6 @@
 
 .method public invokeNotificationID(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     new-instance v0, Landroid/webkitsec/WebViewCore$InvokeNotifyID;
 

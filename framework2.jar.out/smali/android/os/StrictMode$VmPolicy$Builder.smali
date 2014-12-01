@@ -49,7 +49,6 @@
 
 .method public constructor <init>(Landroid/os/StrictMode$VmPolicy;)V
     .locals 1
-    .param p1    # Landroid/os/StrictMode$VmPolicy;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -74,7 +73,6 @@
 
 .method private enable(I)Landroid/os/StrictMode$VmPolicy$Builder;
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/os/StrictMode$VmPolicy$Builder;->mMask:I
 
@@ -239,8 +237,6 @@
 
 .method public setClassInstanceLimit(Ljava/lang/Class;I)Landroid/os/StrictMode$VmPolicy$Builder;
     .locals 2
-    .param p1    # Ljava/lang/Class;
-    .param p2    # I
 
     if-nez p1, :cond_0
 

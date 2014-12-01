@@ -34,10 +34,6 @@
 # direct methods
 .method constructor <init>(Landroid/view/Display;Landroid/util/DisplayMetrics;Landroid/view/SurfaceSession;[Ljava/lang/String;)V
     .locals 22
-    .param p1    # Landroid/view/Display;
-    .param p2    # Landroid/util/DisplayMetrics;
-    .param p3    # Landroid/view/SurfaceSession;
-    .param p4    # [Ljava/lang/String;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -634,8 +630,6 @@
 
 .method positionSurface(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget v0, p0, Lcom/android/server/wm/Watermark;->mLastDW:I
 

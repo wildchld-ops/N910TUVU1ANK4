@@ -22,7 +22,6 @@
 # direct methods
 .method private constructor <init>(I)V
     .locals 0
-    .param p1    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -33,8 +32,6 @@
 
 .method synthetic constructor <init>(ILandroid/security/KeyStoreParameter$1;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Landroid/security/KeyStoreParameter$1;
 
     invoke-direct {p0, p1}, Landroid/security/KeyStoreParameter;-><init>(I)V
 

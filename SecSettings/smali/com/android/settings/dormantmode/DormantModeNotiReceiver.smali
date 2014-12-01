@@ -20,7 +20,6 @@
 
 .method private cancelOnGoingAlarm(Landroid/content/Context;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
 
     const/4 v5, 0x0
 
@@ -59,9 +58,26 @@
     return-void
 .end method
 
+.method private hideDormant(Landroid/content/Context;)I
+    .locals 3
+
+    const/4 v2, 0x0
+
+    invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v0
+
+    const-string v1, "statusbar_hide_blocking"
+
+    invoke-static {v0, v1, v2}, Landroid/provider/Settings$Global;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+
+    move-result v1
+
+    return v1
+.end method
+
 .method private isSetTime(Landroid/content/Context;)Z
     .locals 9
-    .param p1    # Landroid/content/Context;
 
     const/4 v8, 0x0
 
@@ -167,7 +183,6 @@
 
 .method private setOnGoingAlarm(Landroid/content/Context;)V
     .locals 21
-    .param p1    # Landroid/content/Context;
 
     invoke-static {}, Ljava/util/Calendar;->getInstance()Ljava/util/Calendar;
 
@@ -603,7 +618,6 @@
 # virtual methods
 .method public notificationClear(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     const v1, 0x7f020684
 
@@ -622,7 +636,6 @@
 
 .method public notificationCreate(Landroid/content/Context;)V
     .locals 27
-    .param p1    # Landroid/content/Context;
 
     const v22, 0x7f020684
 
@@ -1083,8 +1096,6 @@
 
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
@@ -1168,6 +1179,24 @@
     move-result v3
 
     if-nez v3, :cond_2
+
+    invoke-direct {p0, p1}, Lcom/android/settings/dormantmode/DormantModeNotiReceiver;->hideDormant(Landroid/content/Context;)I
+
+    move-result v4
+
+    if-nez v4, :cond_1
+
+    new-instance v0, Ljava/io/File;
+
+    const-string v1, "/sdcard/alliance-tweak/show_dormant"
+
+    invoke-direct {v0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v0}, Ljava/io/File;->exists()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
 
     invoke-virtual {p0, p1}, Lcom/android/settings/dormantmode/DormantModeNotiReceiver;->notificationCreate(Landroid/content/Context;)V
 

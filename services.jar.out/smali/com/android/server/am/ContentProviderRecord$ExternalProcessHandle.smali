@@ -32,7 +32,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/am/ContentProviderRecord;Landroid/os/IBinder;)V
     .locals 4
-    .param p2    # Landroid/os/IBinder;
 
     iput-object p1, p0, Lcom/android/server/am/ContentProviderRecord$ExternalProcessHandle;->this$0:Lcom/android/server/am/ContentProviderRecord;
 
@@ -82,7 +81,6 @@
 
 .method static synthetic access$000(Lcom/android/server/am/ContentProviderRecord$ExternalProcessHandle;)I
     .locals 1
-    .param p0    # Lcom/android/server/am/ContentProviderRecord$ExternalProcessHandle;
 
     iget v0, p0, Lcom/android/server/am/ContentProviderRecord$ExternalProcessHandle;->mAcquisitionCount:I
 
@@ -91,7 +89,6 @@
 
 .method static synthetic access$008(Lcom/android/server/am/ContentProviderRecord$ExternalProcessHandle;)I
     .locals 2
-    .param p0    # Lcom/android/server/am/ContentProviderRecord$ExternalProcessHandle;
 
     iget v0, p0, Lcom/android/server/am/ContentProviderRecord$ExternalProcessHandle;->mAcquisitionCount:I
 
@@ -104,7 +101,6 @@
 
 .method static synthetic access$010(Lcom/android/server/am/ContentProviderRecord$ExternalProcessHandle;)I
     .locals 2
-    .param p0    # Lcom/android/server/am/ContentProviderRecord$ExternalProcessHandle;
 
     iget v0, p0, Lcom/android/server/am/ContentProviderRecord$ExternalProcessHandle;->mAcquisitionCount:I
 

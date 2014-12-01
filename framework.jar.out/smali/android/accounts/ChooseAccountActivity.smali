@@ -94,7 +94,6 @@
 
 .method private getDrawableForType(Ljava/lang/String;)Landroid/graphics/drawable/Drawable;
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const/4 v6, 0x5
 
@@ -252,7 +251,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 7
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v6, 0x1
 
@@ -381,10 +379,6 @@
 
 .method protected onListItemClick(Landroid/widget/ListView;Landroid/view/View;IJ)V
     .locals 5
-    .param p1    # Landroid/widget/ListView;
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
 
     iget-object v2, p0, Landroid/accounts/ChooseAccountActivity;->mAccounts:[Landroid/os/Parcelable;
 

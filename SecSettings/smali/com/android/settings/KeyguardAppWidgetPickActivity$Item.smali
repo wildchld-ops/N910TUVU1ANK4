@@ -44,8 +44,6 @@
 # direct methods
 .method constructor <init>(Landroid/content/Context;Ljava/lang/CharSequence;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/CharSequence;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -136,7 +134,6 @@
 
 .method loadWidgetPreview(Landroid/widget/ImageView;)V
     .locals 3
-    .param p1    # Landroid/widget/ImageView;
 
     new-instance v0, Lcom/android/settings/KeyguardAppWidgetPickActivity$Item$WidgetPreviewLoader;
 

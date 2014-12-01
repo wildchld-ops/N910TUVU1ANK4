@@ -16,8 +16,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -36,8 +34,6 @@
 # virtual methods
 .method protected getChildDrawingOrder(II)I
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget v0, p0, Lcom/android/systemui/statusbar/phone/PanelHolder;->mSelectedPanelIndex:I
 
@@ -70,7 +66,6 @@
 
 .method public getPanelIndex(Lcom/android/systemui/statusbar/phone/PanelView;)I
     .locals 3
-    .param p1    # Lcom/android/systemui/statusbar/phone/PanelView;
 
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getChildCount()I
 
@@ -117,7 +112,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 6
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v5, 0x2
 
@@ -206,7 +200,6 @@
 
 .method public setBar(Lcom/android/systemui/statusbar/phone/PanelBar;)V
     .locals 0
-    .param p1    # Lcom/android/systemui/statusbar/phone/PanelBar;
 
     iput-object p1, p0, Lcom/android/systemui/statusbar/phone/PanelHolder;->mBar:Lcom/android/systemui/statusbar/phone/PanelBar;
 
@@ -215,7 +208,6 @@
 
 .method public setSelectedPanel(Lcom/android/systemui/statusbar/phone/PanelView;)V
     .locals 1
-    .param p1    # Lcom/android/systemui/statusbar/phone/PanelView;
 
     invoke-virtual {p0, p1}, Lcom/android/systemui/statusbar/phone/PanelHolder;->getPanelIndex(Lcom/android/systemui/statusbar/phone/PanelView;)I
 

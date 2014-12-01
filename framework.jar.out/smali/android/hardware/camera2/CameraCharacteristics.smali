@@ -859,7 +859,6 @@
 
 .method public constructor <init>(Landroid/hardware/camera2/impl/CameraMetadataNative;)V
     .locals 0
-    .param p1    # Landroid/hardware/camera2/impl/CameraMetadataNative;
 
     invoke-direct {p0}, Landroid/hardware/camera2/CameraMetadata;-><init>()V
 

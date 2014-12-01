@@ -77,7 +77,6 @@
 
 .method static synthetic access$102(Ljavax/crypto/Cipher;)Ljavax/crypto/Cipher;
     .locals 0
-    .param p0    # Ljavax/crypto/Cipher;
 
     sput-object p0, Lcom/android/settings/wifi/WifiBackupRestore;->cipher:Ljavax/crypto/Cipher;
 
@@ -94,7 +93,6 @@
 
 .method static synthetic access$202(Ljavax/crypto/spec/SecretKeySpec;)Ljavax/crypto/spec/SecretKeySpec;
     .locals 0
-    .param p0    # Ljavax/crypto/spec/SecretKeySpec;
 
     sput-object p0, Lcom/android/settings/wifi/WifiBackupRestore;->key:Ljavax/crypto/spec/SecretKeySpec;
 
@@ -105,8 +103,6 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 

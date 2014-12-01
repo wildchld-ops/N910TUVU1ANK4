@@ -79,7 +79,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -106,8 +105,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Ljava/lang/Object;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/Object;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -134,7 +131,6 @@
 
 .method static synthetic access$100(Landroid/view/MenuInflater;)Landroid/content/Context;
     .locals 1
-    .param p0    # Landroid/view/MenuInflater;
 
     iget-object v0, p0, Landroid/view/MenuInflater;->mContext:Landroid/content/Context;
 
@@ -151,7 +147,6 @@
 
 .method static synthetic access$300(Landroid/view/MenuInflater;)[Ljava/lang/Object;
     .locals 1
-    .param p0    # Landroid/view/MenuInflater;
 
     iget-object v0, p0, Landroid/view/MenuInflater;->mActionProviderConstructorArguments:[Ljava/lang/Object;
 
@@ -160,7 +155,6 @@
 
 .method static synthetic access$400(Landroid/view/MenuInflater;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Landroid/view/MenuInflater;
 
     iget-object v0, p0, Landroid/view/MenuInflater;->mRealOwner:Ljava/lang/Object;
 
@@ -177,7 +171,6 @@
 
 .method static synthetic access$600(Landroid/view/MenuInflater;)[Ljava/lang/Object;
     .locals 1
-    .param p0    # Landroid/view/MenuInflater;
 
     iget-object v0, p0, Landroid/view/MenuInflater;->mActionViewConstructorArguments:[Ljava/lang/Object;
 
@@ -186,9 +179,6 @@
 
 .method private parseMenu(Lorg/xmlpull/v1/XmlPullParser;Landroid/util/AttributeSet;Landroid/view/Menu;)V
     .locals 10
-    .param p1    # Lorg/xmlpull/v1/XmlPullParser;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # Landroid/view/Menu;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -450,8 +440,6 @@
 # virtual methods
 .method public inflate(ILandroid/view/Menu;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/view/Menu;
 
     const/4 v2, 0x0
 

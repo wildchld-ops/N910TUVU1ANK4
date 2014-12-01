@@ -100,7 +100,7 @@
 
     move-result-object v6
 
-    invoke-virtual {v6}, Landroid/widget/CursorAdapter;->getCount()I
+    invoke-virtual {v6}, Landroid/widget/SimpleCursorAdapter;->getCount()I
 
     move-result v6
 
@@ -113,7 +113,7 @@
 
     move-result-object v6
 
-    invoke-virtual {v6, v2}, Landroid/widget/CursorAdapter;->getItem(I)Ljava/lang/Object;
+    invoke-virtual {v6, v2}, Landroid/widget/SimpleCursorAdapter;->getItem(I)Ljava/lang/Object;
 
     move-result-object v0
 

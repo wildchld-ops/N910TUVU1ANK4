@@ -106,7 +106,6 @@
 
 .method public constructor <init>(Landroid/webkitsec/HtmlComposerView;)V
     .locals 4
-    .param p1    # Landroid/webkitsec/HtmlComposerView;
 
     const/4 v3, 0x2
 
@@ -177,8 +176,6 @@
 
 .method public constructor <init>(Landroid/webkitsec/HtmlComposerView;I)V
     .locals 0
-    .param p1    # Landroid/webkitsec/HtmlComposerView;
-    .param p2    # I
 
     invoke-direct {p0, p1}, Landroid/webkitsec/HtmlComposerInputConnection;-><init>(Landroid/webkitsec/HtmlComposerView;)V
 
@@ -189,7 +186,6 @@
 
 .method private isBracketChar(Ljava/lang/CharSequence;)Z
     .locals 3
-    .param p1    # Ljava/lang/CharSequence;
 
     const-string v0, "<>{}[]()\u00ab\u00bb\u300a\u300b"
 
@@ -218,7 +214,6 @@
 
 .method private isThaiVowel(Ljava/lang/CharSequence;)Z
     .locals 5
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v3, 0x0
 
@@ -272,9 +267,6 @@
 
 .method private replaceTextToHtml(Ljava/lang/CharSequence;IZ)V
     .locals 11
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # Z
 
     const-string v8, "HtmlComposerInputConnection"
 
@@ -712,7 +704,6 @@
 
 .method public clearMetaKeyStates(I)Z
     .locals 2
-    .param p1    # I
 
     const-string v0, "HtmlComposerInputConnection"
 
@@ -727,7 +718,6 @@
 
 .method public commitCompletion(Landroid/view/inputmethod/CompletionInfo;)Z
     .locals 2
-    .param p1    # Landroid/view/inputmethod/CompletionInfo;
 
     const-string v0, "HtmlComposerInputConnection"
 
@@ -742,7 +732,6 @@
 
 .method public commitCorrection(Landroid/view/inputmethod/CorrectionInfo;)Z
     .locals 2
-    .param p1    # Landroid/view/inputmethod/CorrectionInfo;
 
     const-string v0, "HtmlComposerInputConnection"
 
@@ -757,8 +746,6 @@
 
 .method public commitText(Ljava/lang/CharSequence;I)Z
     .locals 11
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
 
     const v10, 0x1040bf6
 
@@ -1141,7 +1128,6 @@
 
 .method public convertBracket(Ljava/lang/CharSequence;)Ljava/lang/String;
     .locals 7
-    .param p1    # Ljava/lang/CharSequence;
 
     const/16 v6, 0x300b
 
@@ -1333,8 +1319,6 @@
 
 .method public deleteSurroundingText(II)Z
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     const/4 v2, 0x1
 
@@ -1507,8 +1491,6 @@
 
 .method public doExecute(Landroid/os/Bundle;Landroid/os/Bundle;)Landroid/os/Bundle;
     .locals 1
-    .param p1    # Landroid/os/Bundle;
-    .param p2    # Landroid/os/Bundle;
 
     const/4 v0, 0x0
 
@@ -1609,7 +1591,6 @@
 
 .method public getCursorCapsMode(I)I
     .locals 5
-    .param p1    # I
 
     const-string v3, "HtmlComposerInputConnection"
 
@@ -1642,8 +1623,6 @@
 
 .method public getExtractedText(Landroid/view/inputmethod/ExtractedTextRequest;I)Landroid/view/inputmethod/ExtractedText;
     .locals 10
-    .param p1    # Landroid/view/inputmethod/ExtractedTextRequest;
-    .param p2    # I
 
     const/4 v7, 0x0
 
@@ -1982,7 +1961,6 @@
 
 .method public getSelectedText(I)Ljava/lang/CharSequence;
     .locals 3
-    .param p1    # I
 
     const-string v1, "HtmlComposerInputConnection"
 
@@ -2011,7 +1989,6 @@
 
 .method getSpanData(Landroid/text/Spanned;)V
     .locals 10
-    .param p1    # Landroid/text/Spanned;
 
     const/high16 v9, 0x1000000
 
@@ -2179,8 +2156,6 @@
 
 .method public getTextAfterCursor(II)Ljava/lang/CharSequence;
     .locals 8
-    .param p1    # I
-    .param p2    # I
 
     iget-object v5, p0, Landroid/webkitsec/HtmlComposerInputConnection;->mTargetView:Landroid/webkitsec/HtmlComposerView;
 
@@ -2302,8 +2277,6 @@
 
 .method public getTextBeforeCursor(II)Ljava/lang/CharSequence;
     .locals 8
-    .param p1    # I
-    .param p2    # I
 
     iget-object v5, p0, Landroid/webkitsec/HtmlComposerInputConnection;->mTargetView:Landroid/webkitsec/HtmlComposerView;
 
@@ -2459,7 +2432,6 @@
 
 .method public isRTLText(Ljava/lang/String;)Z
     .locals 13
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -2745,7 +2717,6 @@
 
 .method public performContextMenuAction(I)Z
     .locals 4
-    .param p1    # I
 
     const-string v1, "HtmlComposerInputConnection"
 
@@ -2812,7 +2783,6 @@
 
 .method public performEditorAction(I)Z
     .locals 18
-    .param p1    # I
 
     const-string v1, "HtmlComposerInputConnection"
 
@@ -3067,8 +3037,6 @@
 
 .method public performPrivateCommand(Ljava/lang/String;Landroid/os/Bundle;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Bundle;
 
     const-string v0, "HtmlComposerInputConnection"
 
@@ -3119,7 +3087,6 @@
 
 .method public reportFullscreenMode(Z)Z
     .locals 1
-    .param p1    # Z
 
     const/4 v0, 0x0
 
@@ -3128,7 +3095,6 @@
 
 .method public sendKeyEvent(Landroid/view/KeyEvent;)Z
     .locals 13
-    .param p1    # Landroid/view/KeyEvent;
 
     const/4 v12, -0x1
 
@@ -3619,8 +3585,6 @@
 
 .method public setComposingRegion(II)Z
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -3685,8 +3649,6 @@
 
 .method public setComposingText(Ljava/lang/CharSequence;I)Z
     .locals 10
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
 
     iput-object p1, p0, Landroid/webkitsec/HtmlComposerInputConnection;->currCompText:Ljava/lang/CharSequence;
 
@@ -4252,8 +4214,6 @@
 
 .method public setSelection(II)Z
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x1
 
@@ -4371,7 +4331,6 @@
 
 .method public setTTSbeforeText(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/webkitsec/HtmlComposerInputConnection;->TTSbeforeText:Ljava/lang/String;
 
@@ -4380,7 +4339,6 @@
 
 .method public setTTSstart(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/webkitsec/HtmlComposerInputConnection;->TTSstart:I
 
@@ -4389,7 +4347,6 @@
 
 .method public setTTStext(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/webkitsec/HtmlComposerInputConnection;->TTStext:Ljava/lang/String;
 

@@ -32,13 +32,6 @@
 # direct methods
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;FFFFIF)V
     .locals 5
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # I
-    .param p7    # F
 
     const/4 v4, 0x0
 
@@ -131,14 +124,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;FFFFIFI)V
     .locals 5
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # I
-    .param p7    # F
-    .param p8    # I
 
     const/4 v4, 0x2
 
@@ -264,8 +249,6 @@
 
 .method public declared-synchronized contains(FF)Z
     .locals 1
-    .param p1    # F
-    .param p2    # F
 
     monitor-enter p0
 
@@ -278,8 +261,6 @@
 
 .method public declared-synchronized findViewByCoordinate(FF)Lcom/sec/android/glview/TwGLView;
     .locals 1
-    .param p1    # F
-    .param p2    # F
 
     monitor-enter p0
 
@@ -907,7 +888,6 @@
 
 .method public setColor(I)V
     .locals 4
-    .param p1    # I
 
     const/high16 v3, 0x437f0000
 
@@ -972,10 +952,6 @@
 
 .method public setRect(FFFF)V
     .locals 0
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
 
     invoke-virtual {p0, p1, p2}, Lcom/sec/android/glview/TwGLView;->translateAbsolute(FF)V
 
@@ -990,7 +966,6 @@
 
 .method public setThickness(F)V
     .locals 2
-    .param p1    # F
 
     iget-object v0, p0, Lcom/sec/android/glview/TwGLRectangle;->mThickness:[F
 

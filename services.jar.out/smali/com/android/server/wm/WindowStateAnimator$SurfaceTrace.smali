@@ -62,12 +62,6 @@
 
 .method public constructor <init>(Landroid/view/SurfaceSession;Ljava/lang/String;IIII)V
     .locals 3
-    .param p1    # Landroid/view/SurfaceSession;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/view/SurfaceControl$OutOfResourcesException;
@@ -366,7 +360,6 @@
 
 .method public setAlpha(F)V
     .locals 3
-    .param p1    # F
 
     iget v0, p0, Lcom/android/server/wm/WindowStateAnimator$SurfaceTrace;->mSurfaceTraceAlpha:F
 
@@ -432,7 +425,6 @@
 
 .method public setLayer(I)V
     .locals 5
-    .param p1    # I
 
     iget v2, p0, Lcom/android/server/wm/WindowStateAnimator$SurfaceTrace;->mLayer:I
 
@@ -535,7 +527,6 @@
 
 .method public setLayerStack(I)V
     .locals 3
-    .param p1    # I
 
     iget v0, p0, Lcom/android/server/wm/WindowStateAnimator$SurfaceTrace;->mLayerStack:I
 
@@ -599,8 +590,6 @@
 
 .method public setPosition(FF)V
     .locals 3
-    .param p1    # F
-    .param p2    # F
 
     iget-object v0, p0, Lcom/android/server/wm/WindowStateAnimator$SurfaceTrace;->mPosition:Landroid/graphics/PointF;
 
@@ -689,8 +678,6 @@
 
 .method public setSize(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/server/wm/WindowStateAnimator$SurfaceTrace;->mSize:Landroid/graphics/Point;
 
@@ -775,7 +762,6 @@
 
 .method public setWindowCrop(Landroid/graphics/Rect;)V
     .locals 3
-    .param p1    # Landroid/graphics/Rect;
 
     if-eqz p1, :cond_0
 

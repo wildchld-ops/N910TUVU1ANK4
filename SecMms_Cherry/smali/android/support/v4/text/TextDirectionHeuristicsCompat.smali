@@ -100,7 +100,6 @@
 
 .method static synthetic access$100(I)I
     .locals 1
-    .param p0    # I
 
     invoke-static {p0}, Landroid/support/v4/text/TextDirectionHeuristicsCompat;->isRtlTextOrFormat(I)I
 
@@ -111,7 +110,6 @@
 
 .method static synthetic access$200(I)I
     .locals 1
-    .param p0    # I
 
     invoke-static {p0}, Landroid/support/v4/text/TextDirectionHeuristicsCompat;->isRtlText(I)I
 
@@ -122,7 +120,6 @@
 
 .method private static isRtlText(I)I
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -153,7 +150,6 @@
 
 .method private static isRtlTextOrFormat(I)I
     .locals 1
-    .param p0    # I
 
     sparse-switch p0, :sswitch_data_0
 

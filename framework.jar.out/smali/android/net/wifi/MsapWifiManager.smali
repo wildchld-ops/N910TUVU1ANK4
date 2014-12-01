@@ -62,8 +62,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/net/wifi/IMsapWifiManager;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/net/wifi/IMsapWifiManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -114,9 +112,6 @@
 
 .method public gasReq(IILjava/lang/String;)Z
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -171,7 +166,6 @@
 
 .method public getBss(Ljava/lang/String;)Landroid/net/wifi/MsapBssInfo;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -280,7 +274,6 @@
 
 .method public notifyGasResponse(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     iget-object v1, p0, Landroid/net/wifi/MsapWifiManager;->mMsapService:Landroid/net/wifi/IMsapWifiManager;
@@ -319,7 +312,6 @@
 
 .method public notifyVenueServerAdded(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     iget-object v1, p0, Landroid/net/wifi/MsapWifiManager;->mMsapService:Landroid/net/wifi/IMsapWifiManager;
@@ -358,7 +350,6 @@
 
 .method public notifyVenueServerDeleted(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     iget-object v1, p0, Landroid/net/wifi/MsapWifiManager;->mMsapService:Landroid/net/wifi/IMsapWifiManager;

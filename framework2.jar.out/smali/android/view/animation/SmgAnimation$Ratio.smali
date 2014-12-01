@@ -87,7 +87,6 @@
 
 .method public static valueOf(Ljava/lang/String;)Landroid/view/animation/SmgAnimation$Ratio;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-class v0, Landroid/view/animation/SmgAnimation$Ratio;
 

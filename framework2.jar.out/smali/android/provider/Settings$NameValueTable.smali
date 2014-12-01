@@ -34,8 +34,6 @@
 
 .method public static getUriFor(Landroid/net/Uri;Ljava/lang/String;)Landroid/net/Uri;
     .locals 1
-    .param p0    # Landroid/net/Uri;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p0, p1}, Landroid/net/Uri;->withAppendedPath(Landroid/net/Uri;Ljava/lang/String;)Landroid/net/Uri;
 
@@ -46,10 +44,6 @@
 
 .method protected static putString(Landroid/content/ContentResolver;Landroid/net/Uri;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 5
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     :try_start_0
     new-instance v1, Landroid/content/ContentValues;

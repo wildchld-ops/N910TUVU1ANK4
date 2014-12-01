@@ -25,8 +25,6 @@
 # direct methods
 .method public constructor <init>(Lcom/diotek/ime/implement/setting/Xt9HwrDialogPreference;Landroid/graphics/drawable/Drawable;Ljava/lang/String;)V
     .locals 0
-    .param p2    # Landroid/graphics/drawable/Drawable;
-    .param p3    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/diotek/ime/implement/setting/Xt9HwrDialogPreference$ImageText;->this$0:Lcom/diotek/ime/implement/setting/Xt9HwrDialogPreference;
 

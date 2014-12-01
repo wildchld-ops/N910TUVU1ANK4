@@ -46,8 +46,6 @@
 
 .method public constructor <init>(Ljava/lang/String;I)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -180,7 +178,6 @@
 # virtual methods
 .method public addTrack(Landroid/media/MediaFormat;)I
     .locals 10
-    .param p1    # Landroid/media/MediaFormat;
 
     if-nez p1, :cond_0
 
@@ -397,8 +394,6 @@
 
 .method public setLocation(FF)V
     .locals 8
-    .param p1    # F
-    .param p2    # F
 
     const v7, 0x461c4000
 
@@ -526,7 +521,6 @@
 
 .method public setOrientationHint(I)V
     .locals 3
-    .param p1    # I
 
     if-eqz p1, :cond_0
 
@@ -658,9 +652,6 @@
 
 .method public writeSampleData(ILjava/nio/ByteBuffer;Landroid/media/MediaCodec$BufferInfo;)V
     .locals 8
-    .param p1    # I
-    .param p2    # Ljava/nio/ByteBuffer;
-    .param p3    # Landroid/media/MediaCodec$BufferInfo;
 
     if-ltz p1, :cond_0
 

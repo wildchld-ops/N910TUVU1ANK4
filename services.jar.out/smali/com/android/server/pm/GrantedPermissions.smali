@@ -23,7 +23,6 @@
 # direct methods
 .method constructor <init>(I)V
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -40,7 +39,6 @@
 
 .method constructor <init>(Lcom/android/server/pm/GrantedPermissions;)V
     .locals 1
-    .param p1    # Lcom/android/server/pm/GrantedPermissions;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -86,7 +84,6 @@
 # virtual methods
 .method setFlags(I)V
     .locals 1
-    .param p1    # I
 
     const v0, 0x60040001
 

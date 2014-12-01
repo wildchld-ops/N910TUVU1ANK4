@@ -41,8 +41,6 @@
 
 .method synthetic constructor <init>(Landroid/webkitsec/WebViewClassic;Landroid/webkitsec/WebViewClassic$1;)V
     .locals 0
-    .param p1    # Landroid/webkitsec/WebViewClassic;
-    .param p2    # Landroid/webkitsec/WebViewClassic$1;
 
     invoke-direct {p0, p1}, Landroid/webkitsec/WebViewClassic$SelectionHandleAlpha;-><init>(Landroid/webkitsec/WebViewClassic;)V
 
@@ -69,7 +67,6 @@
 
 .method public setAlpha(I)V
     .locals 1
-    .param p1    # I
 
     iput p1, p0, Landroid/webkitsec/WebViewClassic$SelectionHandleAlpha;->mAlpha:I
 
@@ -129,7 +126,6 @@
 
 .method public setTargetAlpha(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/webkitsec/WebViewClassic$SelectionHandleAlpha;->mTargetAlpha:I
 

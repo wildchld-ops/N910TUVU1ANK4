@@ -35,7 +35,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/pm/PersonaManagerService;Landroid/os/Looper;)V
     .locals 1
-    .param p2    # Landroid/os/Looper;
 
     iput-object p1, p0, Lcom/android/server/pm/PersonaManagerService$PersonaHandler;->this$0:Lcom/android/server/pm/PersonaManagerService;
 
@@ -51,7 +50,6 @@
 
 .method private filterTypeByContainerId(I)Lcom/sec/enterprise/knox/container/KnoxConfigurationType;
     .locals 6
-    .param p1    # I
 
     iget-object v5, p0, Lcom/android/server/pm/PersonaManagerService$PersonaHandler;->this$0:Lcom/android/server/pm/PersonaManagerService;
 
@@ -117,7 +115,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 99
-    .param p1    # Landroid/os/Message;
 
     const-string v4, "PersonaHandler"
 

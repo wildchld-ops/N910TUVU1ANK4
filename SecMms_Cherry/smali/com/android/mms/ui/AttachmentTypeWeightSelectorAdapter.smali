@@ -6,7 +6,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -23,9 +22,6 @@
 
 .method public constructor <init>(Landroid/content/Context;ZI)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Z
-    .param p3    # I
 
     invoke-static {p1, p2, p3}, Lcom/android/mms/ui/AttachmentTypeWeightSelectorAdapter;->getData(Landroid/content/Context;ZI)Ljava/util/List;
 
@@ -38,9 +34,6 @@
 
 .method protected static getData(Landroid/content/Context;ZI)Ljava/util/List;
     .locals 13
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

@@ -30,7 +30,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -53,7 +52,6 @@
 
 .method public static getAccessToken(Landroid/content/Context;)Ljava/lang/String;
     .locals 8
-    .param p0    # Landroid/content/Context;
 
     const/4 v3, 0x0
 
@@ -137,7 +135,6 @@
 
 .method public static getDuid(Landroid/content/Context;)Ljava/lang/String;
     .locals 8
-    .param p0    # Landroid/content/Context;
 
     const/4 v3, 0x0
 
@@ -221,7 +218,6 @@
 
 .method public static getMsisdn(Landroid/content/Context;)Ljava/lang/String;
     .locals 8
-    .param p0    # Landroid/content/Context;
 
     const/4 v3, 0x0
 
@@ -305,8 +301,6 @@
 
 .method public static declared-synchronized getServiceStatus(Landroid/content/Context;I)I
     .locals 11
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     const/4 v10, 0x1
 
@@ -474,8 +468,6 @@
 
 .method public static getSupportedFeatures(Landroid/content/Context;I)I
     .locals 9
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -595,8 +587,6 @@
 
 .method public static getUrl(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
     .locals 12
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -746,7 +736,6 @@
 
 .method public static isAuth(Landroid/content/Context;)Z
     .locals 8
-    .param p0    # Landroid/content/Context;
 
     const/4 v2, 0x0
 
@@ -826,8 +815,6 @@
 
 .method public static login(Landroid/content/Context;Ljava/lang/String;)V
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     sget-object v1, Lcom/sec/orca/easysignup/sdk/EasySignUpManager;->TAG:Ljava/lang/String;
 
@@ -856,8 +843,6 @@
 
 .method public static serviceOff(Landroid/content/Context;I)V
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     sget-object v1, Lcom/sec/orca/easysignup/sdk/EasySignUpManager;->TAG:Ljava/lang/String;
 
@@ -886,8 +871,6 @@
 
 .method public static serviceOn(Landroid/content/Context;I)V
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     sget-object v1, Lcom/sec/orca/easysignup/sdk/EasySignUpManager;->TAG:Ljava/lang/String;
 

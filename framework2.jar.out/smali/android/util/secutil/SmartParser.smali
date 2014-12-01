@@ -32,8 +32,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;Landroid/content/Context;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -52,9 +50,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Landroid/content/Context;I)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/Context;
-    .param p3    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -71,8 +66,6 @@
 
 .method private convertDateToMillis(Ljava/lang/String;I)Ljava/lang/String;
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v8, 0x3
 
@@ -458,7 +451,6 @@
 
 .method private convertTimeToMillis(Ljava/lang/String;)Ljava/lang/String;
     .locals 16
-    .param p1    # Ljava/lang/String;
 
     new-instance v12, Landroid/text/format/Time;
 
@@ -1982,7 +1974,6 @@
 
 .method private removeUnnecessary(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -1995,8 +1986,6 @@
 
 .method private removeUnnecessary(Ljava/lang/String;Z)Ljava/lang/String;
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -2103,7 +2092,6 @@
 
 .method public convertDayToInteger(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p1}, Ljava/lang/String;->length()I
 
@@ -2211,7 +2199,6 @@
 
 .method public init(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Landroid/util/secutil/SmartParsingData;
 

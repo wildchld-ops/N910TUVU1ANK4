@@ -121,7 +121,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/personalpage/PersonalPageTutorial;)V
     .locals 0
-    .param p0    # Lcom/android/settings/personalpage/PersonalPageTutorial;
 
     invoke-direct {p0}, Lcom/android/settings/personalpage/PersonalPageTutorial;->UpdateTutorialPage()V
 
@@ -130,7 +129,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/personalpage/PersonalPageTutorial;)Landroid/widget/LinearLayout;
     .locals 1
-    .param p0    # Lcom/android/settings/personalpage/PersonalPageTutorial;
 
     iget-object v0, p0, Lcom/android/settings/personalpage/PersonalPageTutorial;->mWelcomeTitleLayout:Landroid/widget/LinearLayout;
 
@@ -139,7 +137,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/personalpage/PersonalPageTutorial;)Landroid/widget/LinearLayout;
     .locals 1
-    .param p0    # Lcom/android/settings/personalpage/PersonalPageTutorial;
 
     iget-object v0, p0, Lcom/android/settings/personalpage/PersonalPageTutorial;->mWelcomeMsgLayout:Landroid/widget/LinearLayout;
 
@@ -148,7 +145,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/personalpage/PersonalPageTutorial;)Landroid/view/animation/Animation;
     .locals 1
-    .param p0    # Lcom/android/settings/personalpage/PersonalPageTutorial;
 
     iget-object v0, p0, Lcom/android/settings/personalpage/PersonalPageTutorial;->mAnimationSlideUpWithFadeInMsg:Landroid/view/animation/Animation;
 
@@ -368,14 +364,12 @@
 # virtual methods
 .method public onCompletion(Landroid/media/MediaPlayer;)V
     .locals 0
-    .param p1    # Landroid/media/MediaPlayer;
 
     return-void
 .end method
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v0, 0x1
 
@@ -423,9 +417,6 @@
 
 .method public onError(Landroid/media/MediaPlayer;II)Z
     .locals 3
-    .param p1    # Landroid/media/MediaPlayer;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v2, 0x0
 
@@ -452,8 +443,6 @@
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x4
 
@@ -497,7 +486,6 @@
 
 .method public onPrepared(Landroid/media/MediaPlayer;)V
     .locals 3
-    .param p1    # Landroid/media/MediaPlayer;
 
     const/4 v2, 0x0
 

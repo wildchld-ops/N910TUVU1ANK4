@@ -42,7 +42,6 @@
 # direct methods
 .method public constructor <init>(J)V
     .locals 2
-    .param p1    # J
 
     const/4 v1, 0x0
 
@@ -67,8 +66,6 @@
 
 .method public constructor <init>(Ljava/io/File;I)V
     .locals 10
-    .param p1    # Ljava/io/File;
-    .param p2    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -271,12 +268,6 @@
 
 .method public constructor <init>(Ljava/io/File;Ljava/io/File;Ljava/lang/String;JII)V
     .locals 4
-    .param p1    # Ljava/io/File;
-    .param p2    # Ljava/io/File;
-    .param p3    # Ljava/lang/String;
-    .param p4    # J
-    .param p6    # I
-    .param p7    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -438,9 +429,6 @@
 
 .method public constructor <init>(Ljava/io/File;Ljava/lang/String;J)V
     .locals 3
-    .param p1    # Ljava/io/File;
-    .param p2    # Ljava/lang/String;
-    .param p3    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -514,7 +502,6 @@
 # virtual methods
 .method public final compareTo(Lcom/android/server/DropBoxManagerService$EntryFile;)I
     .locals 7
-    .param p1    # Lcom/android/server/DropBoxManagerService$EntryFile;
 
     const/4 v2, 0x0
 
@@ -619,7 +606,6 @@
 
 .method public bridge synthetic compareTo(Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/android/server/DropBoxManagerService$EntryFile;
 

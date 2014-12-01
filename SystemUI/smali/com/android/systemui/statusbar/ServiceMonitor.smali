@@ -57,11 +57,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;ZLandroid/content/Context;Ljava/lang/String;Lcom/android/systemui/statusbar/ServiceMonitor$Callbacks;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # Landroid/content/Context;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Lcom/android/systemui/statusbar/ServiceMonitor$Callbacks;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -118,7 +113,6 @@
 
 .method static synthetic access$000(Lcom/android/systemui/statusbar/ServiceMonitor;)V
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/ServiceMonitor;
 
     invoke-direct {p0}, Lcom/android/systemui/statusbar/ServiceMonitor;->startService()V
 
@@ -127,7 +121,6 @@
 
 .method static synthetic access$100(Lcom/android/systemui/statusbar/ServiceMonitor;)V
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/ServiceMonitor;
 
     invoke-direct {p0}, Lcom/android/systemui/statusbar/ServiceMonitor;->continueStartService()V
 
@@ -136,7 +129,6 @@
 
 .method static synthetic access$1000(Lcom/android/systemui/statusbar/ServiceMonitor;)Z
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/ServiceMonitor;
 
     iget-boolean v0, p0, Lcom/android/systemui/statusbar/ServiceMonitor;->mBound:Z
 
@@ -145,7 +137,6 @@
 
 .method static synthetic access$1100(Lcom/android/systemui/statusbar/ServiceMonitor;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/ServiceMonitor;
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/ServiceMonitor;->mHandler:Landroid/os/Handler;
 
@@ -154,7 +145,6 @@
 
 .method static synthetic access$200(Lcom/android/systemui/statusbar/ServiceMonitor;)V
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/ServiceMonitor;
 
     invoke-direct {p0}, Lcom/android/systemui/statusbar/ServiceMonitor;->stopService()V
 
@@ -163,8 +153,6 @@
 
 .method static synthetic access$300(Lcom/android/systemui/statusbar/ServiceMonitor;Landroid/content/Intent;)V
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/ServiceMonitor;
-    .param p1    # Landroid/content/Intent;
 
     invoke-direct {p0, p1}, Lcom/android/systemui/statusbar/ServiceMonitor;->packageIntent(Landroid/content/Intent;)V
 
@@ -173,7 +161,6 @@
 
 .method static synthetic access$400(Lcom/android/systemui/statusbar/ServiceMonitor;)V
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/ServiceMonitor;
 
     invoke-direct {p0}, Lcom/android/systemui/statusbar/ServiceMonitor;->checkBound()V
 
@@ -182,8 +169,6 @@
 
 .method static synthetic access$500(Lcom/android/systemui/statusbar/ServiceMonitor;Landroid/content/ComponentName;)V
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/ServiceMonitor;
-    .param p1    # Landroid/content/ComponentName;
 
     invoke-direct {p0, p1}, Lcom/android/systemui/statusbar/ServiceMonitor;->serviceDisconnected(Landroid/content/ComponentName;)V
 
@@ -192,7 +177,6 @@
 
 .method static synthetic access$600(Lcom/android/systemui/statusbar/ServiceMonitor;)Z
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/ServiceMonitor;
 
     iget-boolean v0, p0, Lcom/android/systemui/statusbar/ServiceMonitor;->mDebug:Z
 
@@ -201,7 +185,6 @@
 
 .method static synthetic access$700(Lcom/android/systemui/statusbar/ServiceMonitor;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/ServiceMonitor;
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/ServiceMonitor;->mTag:Ljava/lang/String;
 
@@ -210,7 +193,6 @@
 
 .method static synthetic access$800(Lcom/android/systemui/statusbar/ServiceMonitor;)Landroid/content/ComponentName;
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/ServiceMonitor;
 
     invoke-direct {p0}, Lcom/android/systemui/statusbar/ServiceMonitor;->getComponentNameFromSetting()Landroid/content/ComponentName;
 
@@ -221,7 +203,6 @@
 
 .method static synthetic access$900(Lcom/android/systemui/statusbar/ServiceMonitor;)Landroid/content/ComponentName;
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/ServiceMonitor;
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/ServiceMonitor;->mServiceName:Landroid/content/ComponentName;
 
@@ -230,7 +211,6 @@
 
 .method private static bundleToString(Landroid/os/Bundle;)Ljava/lang/String;
     .locals 6
-    .param p0    # Landroid/os/Bundle;
 
     if-nez p0, :cond_0
 
@@ -519,7 +499,6 @@
 
 .method private packageIntent(Landroid/content/Intent;)V
     .locals 6
-    .param p1    # Landroid/content/Intent;
 
     const/4 v5, 0x2
 
@@ -679,7 +658,6 @@
 
 .method private serviceDisconnected(Landroid/content/ComponentName;)V
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
 
     iget-boolean v0, p0, Lcom/android/systemui/statusbar/ServiceMonitor;->mDebug:Z
 

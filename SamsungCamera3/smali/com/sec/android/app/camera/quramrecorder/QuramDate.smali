@@ -40,8 +40,6 @@
 
 .method public constructor <init>(Ljava/util/Date;Ljava/util/Calendar;)V
     .locals 0
-    .param p1    # Ljava/util/Date;
-    .param p2    # Ljava/util/Calendar;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -54,8 +52,6 @@
 # virtual methods
 .method public getDate(Ljava/util/Date;Ljava/util/Calendar;)V
     .locals 2
-    .param p1    # Ljava/util/Date;
-    .param p2    # Ljava/util/Calendar;
 
     const/4 v0, 0x1
 

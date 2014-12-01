@@ -40,7 +40,6 @@
 # virtual methods
 .method public createFromParcel(Landroid/os/Parcel;)Landroid/app/admin/ProxyDeviceAdminInfo;
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     new-instance v0, Landroid/app/admin/ProxyDeviceAdminInfo;
 
@@ -51,7 +50,6 @@
 
 .method public bridge synthetic createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     invoke-virtual {p0, p1}, Landroid/app/admin/ProxyDeviceAdminInfo$1;->createFromParcel(Landroid/os/Parcel;)Landroid/app/admin/ProxyDeviceAdminInfo;
 
@@ -62,7 +60,6 @@
 
 .method public newArray(I)[Landroid/app/admin/ProxyDeviceAdminInfo;
     .locals 1
-    .param p1    # I
 
     new-array v0, p1, [Landroid/app/admin/ProxyDeviceAdminInfo;
 
@@ -71,7 +68,6 @@
 
 .method public bridge synthetic newArray(I)[Ljava/lang/Object;
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/app/admin/ProxyDeviceAdminInfo$1;->newArray(I)[Landroid/app/admin/ProxyDeviceAdminInfo;
 

@@ -41,7 +41,6 @@
 # virtual methods
 .method public declared-synchronized handleMessage(Landroid/os/Message;)V
     .locals 7
-    .param p1    # Landroid/os/Message;
 
     monitor-enter p0
 
@@ -151,8 +150,6 @@
 
 .method public declared-synchronized send(Landroid/content/Intent;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Ljava/lang/String;
 
     monitor-enter p0
 

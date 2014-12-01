@@ -30,9 +30,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/pm/PackageManager;Lcom/android/server/content/SyncStorageEngine;Landroid/content/SyncAdaptersCache;)V
     .locals 1
-    .param p1    # Landroid/content/pm/PackageManager;
-    .param p2    # Lcom/android/server/content/SyncStorageEngine;
-    .param p3    # Landroid/content/SyncAdaptersCache;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -53,8 +50,6 @@
 
 .method private add(Lcom/android/server/content/SyncOperation;Lcom/android/server/content/SyncStorageEngine$PendingOperation;)Z
     .locals 13
-    .param p1    # Lcom/android/server/content/SyncOperation;
-    .param p2    # Lcom/android/server/content/SyncStorageEngine$PendingOperation;
 
     iget-object v12, p1, Lcom/android/server/content/SyncOperation;->key:Ljava/lang/String;
 
@@ -174,7 +169,6 @@
 # virtual methods
 .method public add(Lcom/android/server/content/SyncOperation;)Z
     .locals 1
-    .param p1    # Lcom/android/server/content/SyncOperation;
 
     const/4 v0, 0x0
 
@@ -187,7 +181,6 @@
 
 .method public addPendingOperations(I)V
     .locals 25
-    .param p1    # I
 
     move-object/from16 v0, p0
 
@@ -442,7 +435,6 @@
 
 .method public dump(Ljava/lang/StringBuilder;)V
     .locals 8
-    .param p1    # Ljava/lang/StringBuilder;
 
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
@@ -572,10 +564,6 @@
 
 .method public onBackoffChanged(Landroid/accounts/Account;ILjava/lang/String;J)V
     .locals 3
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # J
 
     iget-object v2, p0, Lcom/android/server/content/SyncQueue;->mOperationsMap:Ljava/util/HashMap;
 
@@ -637,9 +625,6 @@
 
 .method public onDelayUntilTimeChanged(Landroid/accounts/Account;Ljava/lang/String;J)V
     .locals 3
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # Ljava/lang/String;
-    .param p3    # J
 
     iget-object v2, p0, Lcom/android/server/content/SyncQueue;->mOperationsMap:Ljava/util/HashMap;
 
@@ -693,9 +678,6 @@
 
 .method public remove(Landroid/accounts/Account;ILjava/lang/String;)V
     .locals 6
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     iget-object v4, p0, Lcom/android/server/content/SyncQueue;->mOperationsMap:Ljava/util/HashMap;
 
@@ -799,7 +781,6 @@
 
 .method public remove(Lcom/android/server/content/SyncOperation;)V
     .locals 4
-    .param p1    # Lcom/android/server/content/SyncOperation;
 
     iget-object v2, p0, Lcom/android/server/content/SyncQueue;->mOperationsMap:Ljava/util/HashMap;
 
@@ -859,7 +840,6 @@
 
 .method public removeUser(I)V
     .locals 4
-    .param p1    # I
 
     new-instance v2, Ljava/util/ArrayList;
 

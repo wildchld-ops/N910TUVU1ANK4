@@ -40,7 +40,6 @@
 # virtual methods
 .method public onCancel(Landroid/content/DialogInterface;)V
     .locals 5
-    .param p1    # Landroid/content/DialogInterface;
 
     const/4 v4, 0x1
 

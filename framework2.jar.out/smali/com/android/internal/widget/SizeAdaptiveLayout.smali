@@ -56,7 +56,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Landroid/view/ViewGroup;-><init>(Landroid/content/Context;)V
 
@@ -67,8 +66,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/view/ViewGroup;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -79,9 +76,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Landroid/view/ViewGroup;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
@@ -92,7 +86,6 @@
 
 .method static synthetic access$000(Lcom/android/internal/widget/SizeAdaptiveLayout;)I
     .locals 1
-    .param p0    # Lcom/android/internal/widget/SizeAdaptiveLayout;
 
     iget v0, p0, Lcom/android/internal/widget/SizeAdaptiveLayout;->mCanceledAnimationCount:I
 
@@ -101,7 +94,6 @@
 
 .method static synthetic access$008(Lcom/android/internal/widget/SizeAdaptiveLayout;)I
     .locals 2
-    .param p0    # Lcom/android/internal/widget/SizeAdaptiveLayout;
 
     iget v0, p0, Lcom/android/internal/widget/SizeAdaptiveLayout;->mCanceledAnimationCount:I
 
@@ -114,7 +106,6 @@
 
 .method static synthetic access$010(Lcom/android/internal/widget/SizeAdaptiveLayout;)I
     .locals 2
-    .param p0    # Lcom/android/internal/widget/SizeAdaptiveLayout;
 
     iget v0, p0, Lcom/android/internal/widget/SizeAdaptiveLayout;->mCanceledAnimationCount:I
 
@@ -127,7 +118,6 @@
 
 .method static synthetic access$100(Lcom/android/internal/widget/SizeAdaptiveLayout;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/internal/widget/SizeAdaptiveLayout;
 
     iget-object v0, p0, Lcom/android/internal/widget/SizeAdaptiveLayout;->mLeavingView:Landroid/view/View;
 
@@ -136,8 +126,6 @@
 
 .method static synthetic access$102(Lcom/android/internal/widget/SizeAdaptiveLayout;Landroid/view/View;)Landroid/view/View;
     .locals 0
-    .param p0    # Lcom/android/internal/widget/SizeAdaptiveLayout;
-    .param p1    # Landroid/view/View;
 
     iput-object p1, p0, Lcom/android/internal/widget/SizeAdaptiveLayout;->mLeavingView:Landroid/view/View;
 
@@ -146,7 +134,6 @@
 
 .method static synthetic access$200(Lcom/android/internal/widget/SizeAdaptiveLayout;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/internal/widget/SizeAdaptiveLayout;
 
     iget-object v0, p0, Lcom/android/internal/widget/SizeAdaptiveLayout;->mModestyPanel:Landroid/view/View;
 
@@ -155,7 +142,6 @@
 
 .method static synthetic access$300(Lcom/android/internal/widget/SizeAdaptiveLayout;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/internal/widget/SizeAdaptiveLayout;
 
     iget-object v0, p0, Lcom/android/internal/widget/SizeAdaptiveLayout;->mEnteringView:Landroid/view/View;
 
@@ -164,8 +150,6 @@
 
 .method static synthetic access$302(Lcom/android/internal/widget/SizeAdaptiveLayout;Landroid/view/View;)Landroid/view/View;
     .locals 0
-    .param p0    # Lcom/android/internal/widget/SizeAdaptiveLayout;
-    .param p1    # Landroid/view/View;
 
     iput-object p1, p0, Lcom/android/internal/widget/SizeAdaptiveLayout;->mEnteringView:Landroid/view/View;
 
@@ -174,8 +158,6 @@
 
 .method private clampSizeToBounds(ILandroid/view/View;)I
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/view/View;
 
     invoke-virtual {p2}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
@@ -417,7 +399,6 @@
 
 .method private selectActiveChild(I)Landroid/view/View;
     .locals 12
-    .param p1    # I
 
     invoke-static {p1}, Landroid/view/View$MeasureSpec;->getMode(I)I
 
@@ -532,7 +513,6 @@
 # virtual methods
 .method protected checkLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Z
     .locals 1
-    .param p1    # Landroid/view/ViewGroup$LayoutParams;
 
     instance-of v0, p1, Lcom/android/internal/widget/SizeAdaptiveLayout$LayoutParams;
 
@@ -561,7 +541,6 @@
 
 .method public bridge synthetic generateLayoutParams(Landroid/util/AttributeSet;)Landroid/view/ViewGroup$LayoutParams;
     .locals 1
-    .param p1    # Landroid/util/AttributeSet;
 
     invoke-virtual {p0, p1}, Lcom/android/internal/widget/SizeAdaptiveLayout;->generateLayoutParams(Landroid/util/AttributeSet;)Lcom/android/internal/widget/SizeAdaptiveLayout$LayoutParams;
 
@@ -572,7 +551,6 @@
 
 .method protected bridge synthetic generateLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Landroid/view/ViewGroup$LayoutParams;
     .locals 1
-    .param p1    # Landroid/view/ViewGroup$LayoutParams;
 
     invoke-virtual {p0, p1}, Lcom/android/internal/widget/SizeAdaptiveLayout;->generateLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Lcom/android/internal/widget/SizeAdaptiveLayout$LayoutParams;
 
@@ -583,7 +561,6 @@
 
 .method public generateLayoutParams(Landroid/util/AttributeSet;)Lcom/android/internal/widget/SizeAdaptiveLayout$LayoutParams;
     .locals 2
-    .param p1    # Landroid/util/AttributeSet;
 
     new-instance v0, Lcom/android/internal/widget/SizeAdaptiveLayout$LayoutParams;
 
@@ -598,7 +575,6 @@
 
 .method protected generateLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Lcom/android/internal/widget/SizeAdaptiveLayout$LayoutParams;
     .locals 1
-    .param p1    # Landroid/view/ViewGroup$LayoutParams;
 
     new-instance v0, Lcom/android/internal/widget/SizeAdaptiveLayout$LayoutParams;
 
@@ -657,11 +633,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 9
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     const/4 v8, 0x1
 
@@ -814,8 +785,6 @@
 
 .method protected onMeasure(II)V
     .locals 10
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p2}, Lcom/android/internal/widget/SizeAdaptiveLayout;->selectActiveChild(I)Landroid/view/View;
 

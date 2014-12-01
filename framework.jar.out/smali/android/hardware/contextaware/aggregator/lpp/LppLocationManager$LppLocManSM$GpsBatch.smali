@@ -94,7 +94,6 @@
 
 .method static synthetic access$6800(Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM$GpsBatch;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM$GpsBatch;
 
     iget-object v0, p0, Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM$GpsBatch;->mListBatchLoc:Ljava/util/ArrayList;
 
@@ -413,7 +412,6 @@
 
 .method public processMessage(Landroid/os/Message;)Z
     .locals 11
-    .param p1    # Landroid/os/Message;
 
     const-string v7, "LppLocationManager"
 

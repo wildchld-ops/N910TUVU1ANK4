@@ -16,9 +16,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/am/ActivityManagerService;Landroid/content/Context;Lcom/android/server/am/ProcessRecord;)V
     .locals 6
-    .param p1    # Lcom/android/server/am/ActivityManagerService;
-    .param p2    # Landroid/content/Context;
-    .param p3    # Lcom/android/server/am/ProcessRecord;
 
     invoke-direct {p0, p2}, Lcom/android/server/am/BaseErrorDialog;-><init>(Landroid/content/Context;)V
 

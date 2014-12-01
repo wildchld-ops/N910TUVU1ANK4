@@ -44,7 +44,6 @@
 # virtual methods
 .method public addLifeCycleListener(Lcom/sec/android/app/camera/MonitoredActivity$LifeCycleListener;)V
     .locals 1
-    .param p1    # Lcom/sec/android/app/camera/MonitoredActivity$LifeCycleListener;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/MonitoredActivity;->mListeners:Ljava/util/ArrayList;
 
@@ -67,7 +66,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
@@ -196,7 +194,6 @@
 
 .method public removeLifeCycleListener(Lcom/sec/android/app/camera/MonitoredActivity$LifeCycleListener;)V
     .locals 1
-    .param p1    # Lcom/sec/android/app/camera/MonitoredActivity$LifeCycleListener;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/MonitoredActivity;->mListeners:Ljava/util/ArrayList;
 

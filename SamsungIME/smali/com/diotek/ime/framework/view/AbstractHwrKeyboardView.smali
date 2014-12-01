@@ -69,8 +69,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v3, 0x0
 
@@ -155,9 +153,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v3, 0x0
 
@@ -242,7 +237,6 @@
 
 .method static synthetic access$000(Lcom/diotek/ime/framework/view/AbstractHwrKeyboardView;)Lcom/diotek/ime/framework/view/AbstractKeyboardView$SwipeTracker;
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/view/AbstractHwrKeyboardView;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/AbstractHwrKeyboardView;->mSwipeTracker:Lcom/diotek/ime/framework/view/AbstractKeyboardView$SwipeTracker;
 
@@ -251,7 +245,6 @@
 
 .method static synthetic access$100(Lcom/diotek/ime/framework/view/AbstractHwrKeyboardView;)I
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/view/AbstractHwrKeyboardView;
 
     iget v0, p0, Lcom/diotek/ime/framework/view/AbstractHwrKeyboardView;->mSwipeThreshold:I
 
@@ -260,7 +253,6 @@
 
 .method static synthetic access$200(Lcom/diotek/ime/framework/view/AbstractHwrKeyboardView;)Z
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/view/AbstractHwrKeyboardView;
 
     iget-boolean v0, p0, Lcom/diotek/ime/framework/view/AbstractHwrKeyboardView;->mDisambiguateSwipe:Z
 
@@ -269,7 +261,6 @@
 
 .method static synthetic access$300(Lcom/diotek/ime/framework/view/AbstractHwrKeyboardView;)V
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/view/AbstractHwrKeyboardView;
 
     invoke-direct {p0}, Lcom/diotek/ime/framework/view/AbstractHwrKeyboardView;->swipeRight()V
 
@@ -278,7 +269,6 @@
 
 .method static synthetic access$400(Lcom/diotek/ime/framework/view/AbstractHwrKeyboardView;)V
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/view/AbstractHwrKeyboardView;
 
     invoke-direct {p0}, Lcom/diotek/ime/framework/view/AbstractHwrKeyboardView;->swipeLeft()V
 
@@ -287,7 +277,6 @@
 
 .method static synthetic access$500(Lcom/diotek/ime/framework/view/AbstractHwrKeyboardView;)V
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/view/AbstractHwrKeyboardView;
 
     invoke-direct {p0}, Lcom/diotek/ime/framework/view/AbstractHwrKeyboardView;->swipeUp()V
 
@@ -296,7 +285,6 @@
 
 .method static synthetic access$600(Lcom/diotek/ime/framework/view/AbstractHwrKeyboardView;)V
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/view/AbstractHwrKeyboardView;
 
     invoke-direct {p0}, Lcom/diotek/ime/framework/view/AbstractHwrKeyboardView;->swipeDown()V
 
@@ -305,7 +293,6 @@
 
 .method private changeXposInHwrPanel(I)I
     .locals 4
-    .param p1    # I
 
     const/high16 v3, 0x40000000
 
@@ -369,7 +356,6 @@
 
 .method private changeYposInHwrPanel(I)I
     .locals 4
-    .param p1    # I
 
     const/high16 v3, 0x40000000
 
@@ -433,7 +419,6 @@
 
 .method private drawRectForSelectedString(Lcom/diotek/ime/framework/engine/dhwr/RecognizedStringWrapper;)V
     .locals 6
-    .param p1    # Lcom/diotek/ime/framework/engine/dhwr/RecognizedStringWrapper;
 
     const/high16 v5, 0x41200000
 
@@ -473,7 +458,6 @@
 
 .method private getKeyIndexWithCode(I)I
     .locals 6
-    .param p1    # I
 
     const/4 v1, -0x1
 
@@ -519,9 +503,6 @@
 
 .method private init(Landroid/inputmethodservice/InputMethodService;Landroid/util/AttributeSet;I)V
     .locals 2
-    .param p1    # Landroid/inputmethodservice/InputMethodService;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     invoke-static {}, Lcom/diotek/ime/framework/engine/dhwr/RecognizedResultsController;->getInstance()Lcom/diotek/ime/framework/engine/dhwr/RecognizedResultsController;
 
@@ -602,7 +583,6 @@
 
 .method private pointToPath(Ljava/util/List;Landroid/graphics/Path;)V
     .locals 10
-    .param p2    # Landroid/graphics/Path;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -842,7 +822,6 @@
 
 .method public drawRecognizedString(Ljava/util/ArrayList;I)Z
     .locals 13
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1083,9 +1062,6 @@
 
 .method public handleHwrTouchCancel(IIJ)Z
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
 
     const/4 v1, -0x1
 
@@ -1156,9 +1132,6 @@
 
 .method public handleHwrTouchDown(IIJ)Z
     .locals 10
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
 
     const/4 v9, 0x1
 
@@ -1317,9 +1290,6 @@
 
 .method public handleHwrTouchMove(IIJ)Z
     .locals 21
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
 
     move-object/from16 v0, p0
 
@@ -1769,9 +1739,6 @@
 
 .method public handleHwrTouchUp(IIJ)Z
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
 
     const/4 v1, -0x1
 
@@ -1850,7 +1817,6 @@
 
 .method public invalidateDirtyRect(I)V
     .locals 0
-    .param p1    # I
 
     invoke-super {p0, p1}, Lcom/diotek/ime/framework/view/AbstractKeyboardView;->invalidateDirtyRect(I)V
 
@@ -1930,7 +1896,6 @@
 
 .method public invalidateKey(I)V
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -2033,7 +1998,6 @@
 
 .method public onDraw(Landroid/graphics/Canvas;)V
     .locals 5
-    .param p1    # Landroid/graphics/Canvas;
 
     const/4 v4, 0x0
 
@@ -2177,7 +2141,6 @@
 
 .method public onHwrPanelLongPressed(Landroid/graphics/Point;)V
     .locals 5
-    .param p1    # Landroid/graphics/Point;
 
     const/4 v4, 0x1
 
@@ -2220,8 +2183,6 @@
 
 .method protected onLongPress(Lcom/diotek/ime/framework/view/Keyboard$Key;I)Z
     .locals 1
-    .param p1    # Lcom/diotek/ime/framework/view/Keyboard$Key;
-    .param p2    # I
 
     invoke-super {p0, p1, p2}, Lcom/diotek/ime/framework/view/AbstractKeyboardView;->onLongPress(Lcom/diotek/ime/framework/view/Keyboard$Key;I)Z
 
@@ -2232,8 +2193,6 @@
 
 .method public onMeasure(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     invoke-super {p0, p1, p2}, Lcom/diotek/ime/framework/view/AbstractKeyboardView;->onMeasure(II)V
 
@@ -2242,11 +2201,6 @@
 
 .method public releaseTraceWithAnimation(JJIIZ)Z
     .locals 1
-    .param p1    # J
-    .param p3    # J
-    .param p5    # I
-    .param p6    # I
-    .param p7    # Z
 
     const/4 v0, 0x0
 
@@ -2255,7 +2209,6 @@
 
 .method public setHwrActionListener(Lcom/diotek/ime/framework/view/event/HwrActionListener;)V
     .locals 0
-    .param p1    # Lcom/diotek/ime/framework/view/event/HwrActionListener;
 
     iput-object p1, p0, Lcom/diotek/ime/framework/view/AbstractHwrKeyboardView;->mHwrActionListener:Lcom/diotek/ime/framework/view/event/HwrActionListener;
 
@@ -2264,7 +2217,6 @@
 
 .method public setHwrLongpressPoint(Landroid/graphics/Point;)V
     .locals 0
-    .param p1    # Landroid/graphics/Point;
 
     iput-object p1, p0, Lcom/diotek/ime/framework/view/AbstractHwrKeyboardView;->mHwrLongpressPoint:Landroid/graphics/Point;
 
@@ -2273,7 +2225,6 @@
 
 .method public setKeyboard(Lcom/diotek/ime/framework/view/DefaultKeyboard;)V
     .locals 8
-    .param p1    # Lcom/diotek/ime/framework/view/DefaultKeyboard;
 
     invoke-super {p0, p1}, Lcom/diotek/ime/framework/view/AbstractKeyboardView;->setKeyboard(Lcom/diotek/ime/framework/view/DefaultKeyboard;)V
 
@@ -2349,7 +2300,6 @@
 
 .method public setOnKeyboardActionListener(Lcom/diotek/ime/framework/view/AbstractKeyboardView$OnKeyboardActionListener;)V
     .locals 1
-    .param p1    # Lcom/diotek/ime/framework/view/AbstractKeyboardView$OnKeyboardActionListener;
 
     move-object v0, p1
 

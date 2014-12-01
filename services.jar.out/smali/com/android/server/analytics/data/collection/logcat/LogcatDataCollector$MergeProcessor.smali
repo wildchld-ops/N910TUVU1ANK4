@@ -81,8 +81,6 @@
 
 .method synthetic constructor <init>(Lcom/android/server/analytics/data/collection/logcat/LogcatDataCollector;Lcom/android/server/analytics/data/collection/logcat/LogcatDataCollector$1;)V
     .locals 0
-    .param p1    # Lcom/android/server/analytics/data/collection/logcat/LogcatDataCollector;
-    .param p2    # Lcom/android/server/analytics/data/collection/logcat/LogcatDataCollector$1;
 
     invoke-direct {p0, p1}, Lcom/android/server/analytics/data/collection/logcat/LogcatDataCollector$MergeProcessor;-><init>(Lcom/android/server/analytics/data/collection/logcat/LogcatDataCollector;)V
 
@@ -91,8 +89,6 @@
 
 .method static synthetic access$102(Lcom/android/server/analytics/data/collection/logcat/LogcatDataCollector$MergeProcessor;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/analytics/data/collection/logcat/LogcatDataCollector$MergeProcessor;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/analytics/data/collection/logcat/LogcatDataCollector$MergeProcessor;->bufferSwitch:Z
 
@@ -101,7 +97,6 @@
 
 .method static synthetic access$300(Lcom/android/server/analytics/data/collection/logcat/LogcatDataCollector$MergeProcessor;)Landroid/os/ConditionVariable;
     .locals 1
-    .param p0    # Lcom/android/server/analytics/data/collection/logcat/LogcatDataCollector$MergeProcessor;
 
     iget-object v0, p0, Lcom/android/server/analytics/data/collection/logcat/LogcatDataCollector$MergeProcessor;->mStartCondition:Landroid/os/ConditionVariable;
 
@@ -110,7 +105,6 @@
 
 .method static synthetic access$400(Lcom/android/server/analytics/data/collection/logcat/LogcatDataCollector$MergeProcessor;)Landroid/os/ConditionVariable;
     .locals 1
-    .param p0    # Lcom/android/server/analytics/data/collection/logcat/LogcatDataCollector$MergeProcessor;
 
     iget-object v0, p0, Lcom/android/server/analytics/data/collection/logcat/LogcatDataCollector$MergeProcessor;->mFinishCondition:Landroid/os/ConditionVariable;
 
@@ -119,7 +113,6 @@
 
 .method static synthetic access$500(Lcom/android/server/analytics/data/collection/logcat/LogcatDataCollector$MergeProcessor;)Landroid/os/ConditionVariable;
     .locals 1
-    .param p0    # Lcom/android/server/analytics/data/collection/logcat/LogcatDataCollector$MergeProcessor;
 
     iget-object v0, p0, Lcom/android/server/analytics/data/collection/logcat/LogcatDataCollector$MergeProcessor;->mMergeCondition:Landroid/os/ConditionVariable;
 
@@ -128,7 +121,6 @@
 
 .method static synthetic access$600(Lcom/android/server/analytics/data/collection/logcat/LogcatDataCollector$MergeProcessor;)Ljava/util/List;
     .locals 1
-    .param p0    # Lcom/android/server/analytics/data/collection/logcat/LogcatDataCollector$MergeProcessor;
 
     iget-object v0, p0, Lcom/android/server/analytics/data/collection/logcat/LogcatDataCollector$MergeProcessor;->buffer:Ljava/util/List;
 
@@ -159,7 +151,6 @@
 
 .method public processLogcatRecord(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-boolean v0, p0, Lcom/android/server/analytics/data/collection/logcat/LogcatDataCollector$MergeProcessor;->bufferSwitch:Z
 

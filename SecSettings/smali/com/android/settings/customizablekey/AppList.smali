@@ -34,7 +34,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/customizablekey/AppList;)Landroid/content/pm/PackageManager;
     .locals 1
-    .param p0    # Lcom/android/settings/customizablekey/AppList;
 
     iget-object v0, p0, Lcom/android/settings/customizablekey/AppList;->mPm:Landroid/content/pm/PackageManager;
 
@@ -45,7 +44,6 @@
 # virtual methods
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 9
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v4, 0x0
 
@@ -118,10 +116,6 @@
 
 .method public onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
     .locals 6
-    .param p1    # Landroid/widget/AdapterView;
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
 
     new-instance v1, Landroid/content/Intent;
 

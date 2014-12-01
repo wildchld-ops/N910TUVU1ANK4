@@ -25,8 +25,6 @@
 # direct methods
 .method public constructor <init>(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Landroid/widget/FrameLayout$LayoutParams;-><init>(II)V
 
@@ -73,7 +71,6 @@
 
 .method public setHeight(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/view/ViewGroup$LayoutParams;->height:I
 
@@ -82,7 +79,6 @@
 
 .method public setWidth(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/view/ViewGroup$LayoutParams;->width:I
 
@@ -91,7 +87,6 @@
 
 .method public setX(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/launcher2/HomeView$LayoutParams;->x:I
 
@@ -100,7 +95,6 @@
 
 .method public setY(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/launcher2/HomeView$LayoutParams;->y:I
 

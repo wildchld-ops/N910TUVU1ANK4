@@ -184,7 +184,7 @@
 
     sget-object v6, Lcom/android/phone/CallMessageNetwork$9;->$SwitchMap$com$android$phone$CallMessageConstants$RequestType:[I
 
-    invoke-virtual {v5}, Ljava/lang/Enum;->ordinal()I
+    invoke-virtual {v5}, Lcom/android/phone/CallMessageConstants$RequestType;->ordinal()I
 
     move-result v7
 

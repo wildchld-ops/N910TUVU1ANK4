@@ -39,8 +39,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/BackupManagerService;Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -70,7 +68,6 @@
 
 .method static synthetic access$2500(Lcom/android/server/BackupManagerService$ActiveRestoreSession;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/server/BackupManagerService$ActiveRestoreSession;
 
     iget-object v0, p0, Lcom/android/server/BackupManagerService$ActiveRestoreSession;->mPackageName:Ljava/lang/String;
 
@@ -79,7 +76,6 @@
 
 .method static synthetic access$2600(Lcom/android/server/BackupManagerService$ActiveRestoreSession;)Lcom/android/internal/backup/IBackupTransport;
     .locals 1
-    .param p0    # Lcom/android/server/BackupManagerService$ActiveRestoreSession;
 
     iget-object v0, p0, Lcom/android/server/BackupManagerService$ActiveRestoreSession;->mRestoreTransport:Lcom/android/internal/backup/IBackupTransport;
 
@@ -88,8 +84,6 @@
 
 .method static synthetic access$2602(Lcom/android/server/BackupManagerService$ActiveRestoreSession;Lcom/android/internal/backup/IBackupTransport;)Lcom/android/internal/backup/IBackupTransport;
     .locals 0
-    .param p0    # Lcom/android/server/BackupManagerService$ActiveRestoreSession;
-    .param p1    # Lcom/android/internal/backup/IBackupTransport;
 
     iput-object p1, p0, Lcom/android/server/BackupManagerService$ActiveRestoreSession;->mRestoreTransport:Lcom/android/internal/backup/IBackupTransport;
 
@@ -154,7 +148,6 @@
 
 .method public declared-synchronized getAvailableRestoreSets(Landroid/app/backup/IRestoreObserver;)I
     .locals 10
-    .param p1    # Landroid/app/backup/IRestoreObserver;
 
     const/4 v4, -0x1
 
@@ -311,8 +304,6 @@
 
 .method public declared-synchronized restoreAll(JLandroid/app/backup/IRestoreObserver;)I
     .locals 15
-    .param p1    # J
-    .param p3    # Landroid/app/backup/IRestoreObserver;
 
     monitor-enter p0
 
@@ -601,8 +592,6 @@
 
 .method public declared-synchronized restorePackage(Ljava/lang/String;Landroid/app/backup/IRestoreObserver;)I
     .locals 17
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/app/backup/IRestoreObserver;
 
     monitor-enter p0
 
@@ -1034,9 +1023,6 @@
 
 .method public declared-synchronized restoreSome(JLandroid/app/backup/IRestoreObserver;[Ljava/lang/String;)I
     .locals 22
-    .param p1    # J
-    .param p3    # Landroid/app/backup/IRestoreObserver;
-    .param p4    # [Ljava/lang/String;
 
     monitor-enter p0
 

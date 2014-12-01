@@ -38,7 +38,6 @@
 
 .method public static enableHardwareAcceleration(Landroid/inputmethodservice/InputMethodService;)Z
     .locals 3
-    .param p0    # Landroid/inputmethodservice/InputMethodService;
 
     const/4 v2, 0x0
 

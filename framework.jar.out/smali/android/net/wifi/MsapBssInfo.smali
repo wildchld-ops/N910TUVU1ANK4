@@ -60,15 +60,6 @@
 
 .method public constructor <init>(Ljava/lang/String;IIIILjava/lang/String;ILjava/lang/String;I)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Ljava/lang/String;
-    .param p7    # I
-    .param p8    # Ljava/lang/String;
-    .param p9    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -245,8 +236,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v0, p0, Landroid/net/wifi/MsapBssInfo;->BSSID:Ljava/lang/String;
 

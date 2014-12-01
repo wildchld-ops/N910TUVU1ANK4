@@ -40,8 +40,6 @@
 # virtual methods
 .method public compare(Ljava/io/File;Ljava/io/File;)I
     .locals 4
-    .param p1    # Ljava/io/File;
-    .param p2    # Ljava/io/File;
 
     invoke-virtual {p2}, Ljava/io/File;->lastModified()J
 
@@ -60,8 +58,6 @@
 
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p1, Ljava/io/File;
 

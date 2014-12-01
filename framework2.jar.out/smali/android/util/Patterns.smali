@@ -148,7 +148,6 @@
 
 .method public static final concatGroups(Ljava/util/regex/Matcher;)Ljava/lang/String;
     .locals 7
-    .param p0    # Ljava/util/regex/Matcher;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -218,7 +217,6 @@
 
 .method public static final digitsAndPlusOnly(Ljava/util/regex/Matcher;)Ljava/lang/String;
     .locals 6
-    .param p0    # Ljava/util/regex/Matcher;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -269,7 +267,6 @@
 
 .method public static final digitsPlusAndStarOnly(Ljava/util/regex/Matcher;)Ljava/lang/String;
     .locals 6
-    .param p0    # Ljava/util/regex/Matcher;
 
     new-instance v0, Ljava/lang/StringBuilder;
 

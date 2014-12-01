@@ -44,39 +44,30 @@
 
 .method public write(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public write(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method public write(Ljava/lang/String;II)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     return-void
 .end method
 
 .method public write([C)V
     .locals 0
-    .param p1    # [C
 
     return-void
 .end method
 
 .method public write([CII)V
     .locals 0
-    .param p1    # [C
-    .param p2    # I
-    .param p3    # I
 
     return-void
 .end method

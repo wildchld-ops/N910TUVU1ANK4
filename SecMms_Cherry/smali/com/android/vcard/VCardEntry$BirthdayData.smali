@@ -28,7 +28,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -45,7 +44,6 @@
 
 .method static synthetic access$2200(Lcom/android/vcard/VCardEntry$BirthdayData;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/vcard/VCardEntry$BirthdayData;
 
     iget-object v0, p0, Lcom/android/vcard/VCardEntry$BirthdayData;->mBirthday:Ljava/lang/String;
 
@@ -56,7 +54,6 @@
 # virtual methods
 .method public constructInsertOperation(Ljava/util/List;I)V
     .locals 6
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -203,7 +200,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 3
-    .param p1    # Ljava/lang/Object;
 
     if-ne p0, p1, :cond_0
 
@@ -289,7 +285,6 @@
 
 .method public setBirthdaySolarDate(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/vcard/VCardEntry$BirthdayData;->mBirthdaySolarDate:Ljava/lang/String;
 
@@ -298,7 +293,6 @@
 
 .method public setBirthdayType(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/vcard/VCardEntry$BirthdayData;->mBirthdaySolaType:Ljava/lang/String;
 

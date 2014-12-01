@@ -112,7 +112,6 @@
 
 .method public static isProfileId(J)Z
     .locals 2
-    .param p0    # J
 
     const-wide v0, 0x7fffffff80000000L
 

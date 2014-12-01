@@ -20,7 +20,6 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     const-string v2, "Mms/MmsPartExportActivity"
 

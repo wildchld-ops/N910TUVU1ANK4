@@ -23,8 +23,6 @@
 # direct methods
 .method public constructor <init>(Landroid/media/MediaPlayer;Landroid/media/MediaPlayer;Landroid/os/Looper;)V
     .locals 0
-    .param p2    # Landroid/media/MediaPlayer;
-    .param p3    # Landroid/os/Looper;
 
     iput-object p1, p0, Landroid/media/MediaPlayer$EventHandler;->this$0:Landroid/media/MediaPlayer;
 
@@ -39,7 +37,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 13
-    .param p1    # Landroid/os/Message;
 
     iget-object v8, p0, Landroid/media/MediaPlayer$EventHandler;->mMediaPlayer:Landroid/media/MediaPlayer;
 

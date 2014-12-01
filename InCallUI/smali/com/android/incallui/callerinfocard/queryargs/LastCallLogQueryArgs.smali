@@ -32,8 +32,6 @@
 
 .method public constructor <init>(ILjava/lang/Object;)V
     .locals 9
-    .param p1    # I
-    .param p2    # Ljava/lang/Object;
 
     const/4 v8, 0x4
 
@@ -280,7 +278,6 @@
 
 .method public static registerContentObserver(Landroid/content/Context;)V
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     const/4 v3, 0x1
 
@@ -323,7 +320,6 @@
 
 .method public static unregisterContentObserver(Landroid/content/Context;)V
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     sget-object v0, Lcom/android/incallui/callerinfocard/queryargs/LastCallLogQueryArgs;->mContentObserver:Landroid/database/ContentObserver;
 

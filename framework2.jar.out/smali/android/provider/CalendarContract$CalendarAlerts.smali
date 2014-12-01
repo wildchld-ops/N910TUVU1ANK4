@@ -71,10 +71,6 @@
 
 .method public static final alarmExists(Landroid/content/ContentResolver;JJJ)Z
     .locals 9
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # J
-    .param p3    # J
-    .param p5    # J
 
     const/4 v8, 0x1
 
@@ -158,8 +154,6 @@
 
 .method public static final findNextAlarmTime(Landroid/content/ContentResolver;J)J
     .locals 10
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # J
 
     const/4 v4, 0x1
 
@@ -249,12 +243,6 @@
 
 .method public static final insert(Landroid/content/ContentResolver;JJJJI)Landroid/net/Uri;
     .locals 6
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # J
-    .param p3    # J
-    .param p5    # J
-    .param p7    # J
-    .param p9    # I
 
     const/4 v5, 0x0
 
@@ -349,9 +337,6 @@
 
 .method public static final rescheduleMissedAlarms(Landroid/content/ContentResolver;Landroid/content/Context;Landroid/app/AlarmManager;)V
     .locals 17
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/app/AlarmManager;
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
@@ -465,9 +450,6 @@
 
 .method public static scheduleAlarm(Landroid/content/Context;Landroid/app/AlarmManager;J)V
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/app/AlarmManager;
-    .param p2    # J
 
     const/4 v3, 0x0
 

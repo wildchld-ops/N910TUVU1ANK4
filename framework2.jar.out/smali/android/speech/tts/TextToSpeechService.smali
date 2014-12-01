@@ -60,7 +60,6 @@
 
 .method static synthetic access$200(Landroid/speech/tts/TextToSpeechService;)Landroid/speech/tts/AudioPlaybackHandler;
     .locals 1
-    .param p0    # Landroid/speech/tts/TextToSpeechService;
 
     iget-object v0, p0, Landroid/speech/tts/TextToSpeechService;->mAudioPlaybackHandler:Landroid/speech/tts/AudioPlaybackHandler;
 
@@ -69,7 +68,6 @@
 
 .method static synthetic access$300(Landroid/speech/tts/TextToSpeechService;)Landroid/speech/tts/TextToSpeechService$CallbackMap;
     .locals 1
-    .param p0    # Landroid/speech/tts/TextToSpeechService;
 
     iget-object v0, p0, Landroid/speech/tts/TextToSpeechService;->mCallbacks:Landroid/speech/tts/TextToSpeechService$CallbackMap;
 
@@ -78,7 +76,6 @@
 
 .method static synthetic access$400(Landroid/speech/tts/TextToSpeechService;)[Ljava/lang/String;
     .locals 1
-    .param p0    # Landroid/speech/tts/TextToSpeechService;
 
     invoke-direct {p0}, Landroid/speech/tts/TextToSpeechService;->getSettingsLocale()[Ljava/lang/String;
 
@@ -89,7 +86,6 @@
 
 .method static synthetic access$500(Landroid/speech/tts/TextToSpeechService;)Ljava/lang/String;
     .locals 1
-    .param p0    # Landroid/speech/tts/TextToSpeechService;
 
     iget-object v0, p0, Landroid/speech/tts/TextToSpeechService;->mPackageName:Ljava/lang/String;
 
@@ -98,7 +94,6 @@
 
 .method static synthetic access$600(Landroid/speech/tts/TextToSpeechService;)I
     .locals 1
-    .param p0    # Landroid/speech/tts/TextToSpeechService;
 
     invoke-direct {p0}, Landroid/speech/tts/TextToSpeechService;->getDefaultSpeechRate()I
 
@@ -109,7 +104,6 @@
 
 .method static synthetic access$700(Landroid/speech/tts/TextToSpeechService;)Landroid/speech/tts/TextToSpeechService$SynthHandler;
     .locals 1
-    .param p0    # Landroid/speech/tts/TextToSpeechService;
 
     iget-object v0, p0, Landroid/speech/tts/TextToSpeechService;->mSynthHandler:Landroid/speech/tts/TextToSpeechService$SynthHandler;
 
@@ -132,8 +126,6 @@
 
 .method private getSecureSettingInt(Ljava/lang/String;I)I
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -168,7 +160,6 @@
 # virtual methods
 .method public onBind(Landroid/content/Intent;)Landroid/os/IBinder;
     .locals 2
-    .param p1    # Landroid/content/Intent;
 
     const-string v0, "android.intent.action.TTS_SERVICE"
 
@@ -289,9 +280,6 @@
 
 .method protected onGetFeaturesForLanguage(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/util/Set;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

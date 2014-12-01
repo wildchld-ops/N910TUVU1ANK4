@@ -34,11 +34,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/cover/StateNotifier;Landroid/os/IBinder;Landroid/content/ComponentName;III)V
     .locals 0
-    .param p2    # Landroid/os/IBinder;
-    .param p3    # Landroid/content/ComponentName;
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     iput-object p1, p0, Lcom/android/server/cover/StateNotifier$CoverStateListenerInfo;->this$0:Lcom/android/server/cover/StateNotifier;
 
@@ -130,7 +125,6 @@
 
 .method public onCoverAttachStateChanged(Z)V
     .locals 4
-    .param p1    # Z
 
     iget-object v2, p0, Lcom/android/server/cover/StateNotifier$CoverStateListenerInfo;->token:Landroid/os/IBinder;
 
@@ -182,7 +176,6 @@
 
 .method public onCoverSwitchStateChanged(Lcom/samsung/android/cover/CoverState;)V
     .locals 4
-    .param p1    # Lcom/samsung/android/cover/CoverState;
 
     iget-object v2, p0, Lcom/android/server/cover/StateNotifier$CoverStateListenerInfo;->token:Landroid/os/IBinder;
 
@@ -234,7 +227,6 @@
 
 .method public onCoverSwitchStateChanged(Z)V
     .locals 4
-    .param p1    # Z
 
     iget-object v2, p0, Lcom/android/server/cover/StateNotifier$CoverStateListenerInfo;->token:Landroid/os/IBinder;
 

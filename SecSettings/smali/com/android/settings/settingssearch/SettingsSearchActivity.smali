@@ -282,7 +282,6 @@
 
 .method static synthetic access$002(Ljava/util/ArrayList;)Ljava/util/ArrayList;
     .locals 0
-    .param p0    # Ljava/util/ArrayList;
 
     sput-object p0, Lcom/android/settings/settingssearch/SettingsSearchActivity;->mArrayResultList:Ljava/util/ArrayList;
 
@@ -299,7 +298,6 @@
 
 .method static synthetic access$1000(Lcom/android/settings/settingssearch/SettingsSearchActivity;)Landroid/widget/SearchView;
     .locals 1
-    .param p0    # Lcom/android/settings/settingssearch/SettingsSearchActivity;
 
     iget-object v0, p0, Lcom/android/settings/settingssearch/SettingsSearchActivity;->mSearchView:Landroid/widget/SearchView;
 
@@ -308,7 +306,6 @@
 
 .method static synthetic access$102(Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Ljava/lang/String;
 
     sput-object p0, Lcom/android/settings/settingssearch/SettingsSearchActivity;->mKeyWord:Ljava/lang/String;
 
@@ -317,7 +314,6 @@
 
 .method static synthetic access$1100(Lcom/android/settings/settingssearch/SettingsSearchActivity;)Landroid/widget/ListView;
     .locals 1
-    .param p0    # Lcom/android/settings/settingssearch/SettingsSearchActivity;
 
     iget-object v0, p0, Lcom/android/settings/settingssearch/SettingsSearchActivity;->mSearchListView:Landroid/widget/ListView;
 
@@ -358,7 +354,6 @@
 
 .method static synthetic access$202(Lcom/android/settings/settingssearch/SettingsSearchManager;)Lcom/android/settings/settingssearch/SettingsSearchManager;
     .locals 0
-    .param p0    # Lcom/android/settings/settingssearch/SettingsSearchManager;
 
     sput-object p0, Lcom/android/settings/settingssearch/SettingsSearchActivity;->mSearchManger:Lcom/android/settings/settingssearch/SettingsSearchManager;
 
@@ -367,9 +362,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/settingssearch/SettingsSearchActivity;Ljava/util/ArrayList;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/settings/settingssearch/SettingsSearchActivity;
-    .param p1    # Ljava/util/ArrayList;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Lcom/android/settings/settingssearch/SettingsSearchActivity;->updateList(Ljava/util/ArrayList;Ljava/lang/String;)V
 
@@ -402,7 +394,6 @@
 
 .method static synthetic access$602(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/settings/settingssearch/SettingsSearchActivity;->RESTORE_DB:Z
 
@@ -411,7 +402,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/settingssearch/SettingsSearchActivity;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/settingssearch/SettingsSearchActivity;
 
     iget-boolean v0, p0, Lcom/android/settings/settingssearch/SettingsSearchActivity;->isHistoryViewState:Z
 
@@ -420,8 +410,6 @@
 
 .method static synthetic access$702(Lcom/android/settings/settingssearch/SettingsSearchActivity;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/settingssearch/SettingsSearchActivity;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/settingssearch/SettingsSearchActivity;->isHistoryViewState:Z
 
@@ -430,7 +418,6 @@
 
 .method static synthetic access$800(Lcom/android/settings/settingssearch/SettingsSearchActivity;)V
     .locals 0
-    .param p0    # Lcom/android/settings/settingssearch/SettingsSearchActivity;
 
     invoke-direct {p0}, Lcom/android/settings/settingssearch/SettingsSearchActivity;->updateHistoryList()V
 
@@ -439,7 +426,6 @@
 
 .method static synthetic access$900(Lcom/android/settings/settingssearch/SettingsSearchActivity;)V
     .locals 0
-    .param p0    # Lcom/android/settings/settingssearch/SettingsSearchActivity;
 
     invoke-direct {p0}, Lcom/android/settings/settingssearch/SettingsSearchActivity;->displayProgressDialog()V
 
@@ -485,7 +471,6 @@
 
 .method private getHistoryDate(Ljava/lang/Long;)Ljava/lang/String;
     .locals 7
-    .param p1    # Ljava/lang/Long;
 
     const/4 v2, 0x0
 
@@ -958,7 +943,6 @@
 
 .method private updateList(Ljava/util/ArrayList;Ljava/lang/String;)V
     .locals 10
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1384,7 +1368,6 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 10
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v9, 0x0
 
@@ -1672,8 +1655,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v3, 0x0
 
@@ -1733,8 +1714,6 @@
 
 .method public onKeyLongPress(ILandroid/view/KeyEvent;)Z
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v1, 0x1
 
@@ -1814,8 +1793,6 @@
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x4
 
@@ -1850,7 +1827,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -1984,7 +1960,6 @@
 
 .method public onQueryTextChange(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     sput-object p1, Lcom/android/settings/settingssearch/SettingsSearchActivity;->mKeyWord:Ljava/lang/String;
 
@@ -2005,7 +1980,6 @@
 
 .method public onQueryTextSubmit(Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x0
 

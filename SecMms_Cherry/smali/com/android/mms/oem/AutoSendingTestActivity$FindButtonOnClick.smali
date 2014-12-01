@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Lcom/android/mms/oem/AutoSendingTestActivity;Lcom/android/mms/oem/AutoSendingTestActivity$1;)V
     .locals 0
-    .param p1    # Lcom/android/mms/oem/AutoSendingTestActivity;
-    .param p2    # Lcom/android/mms/oem/AutoSendingTestActivity$1;
 
     invoke-direct {p0, p1}, Lcom/android/mms/oem/AutoSendingTestActivity$FindButtonOnClick;-><init>(Lcom/android/mms/oem/AutoSendingTestActivity;)V
 
@@ -46,7 +44,6 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Lcom/android/mms/oem/AutoSendingTestActivity$FindButtonOnClick;->this$0:Lcom/android/mms/oem/AutoSendingTestActivity;
 

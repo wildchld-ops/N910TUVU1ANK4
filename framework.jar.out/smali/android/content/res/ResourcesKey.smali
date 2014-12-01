@@ -20,11 +20,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;ILandroid/content/res/Configuration;FLandroid/os/IBinder;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Landroid/content/res/Configuration;
-    .param p4    # F
-    .param p5    # Landroid/os/IBinder;
 
     const/4 v2, 0x0
 
@@ -111,7 +106,6 @@
 # virtual methods
 .method public equals(Ljava/lang/Object;)Z
     .locals 4
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x0
 

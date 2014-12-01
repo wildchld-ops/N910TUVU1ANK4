@@ -36,8 +36,6 @@
 # virtual methods
 .method public onFocusChange(Landroid/view/View;Z)V
     .locals 8
-    .param p1    # Landroid/view/View;
-    .param p2    # Z
 
     iget-object v1, p0, Lcom/android/mms/ui/ComposeMessageFragment$28;->this$0:Lcom/android/mms/ui/ComposeMessageFragment;
 

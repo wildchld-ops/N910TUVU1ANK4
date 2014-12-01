@@ -54,7 +54,6 @@
 
 .method public constructor <init>(Lcom/android/settings/settingssearch/SettingsSearchIntentReceiver;Z)V
     .locals 2
-    .param p2    # Z
 
     iput-object p1, p0, Lcom/android/settings/settingssearch/SettingsSearchIntentReceiver$InitTitleDBThread;->this$0:Lcom/android/settings/settingssearch/SettingsSearchIntentReceiver;
 

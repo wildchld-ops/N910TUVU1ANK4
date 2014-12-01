@@ -16,7 +16,6 @@
 # direct methods
 .method public constructor <init>(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     invoke-direct {p0, p1}, Landroid/view/View$DragShadowBuilder;-><init>(Landroid/view/View;)V
 
@@ -126,7 +125,6 @@
 
 .method public onDrawShadow(Landroid/graphics/Canvas;)V
     .locals 4
-    .param p1    # Landroid/graphics/Canvas;
 
     iget-object v1, p0, Lcom/android/settings/lockscreenshortcut/IconDragShadowBuilder;->mView:Ljava/lang/ref/WeakReference;
 
@@ -191,7 +189,6 @@
 
 .method public setOnDelete(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/lockscreenshortcut/IconDragShadowBuilder;->isOnDelete:Z
 
@@ -202,7 +199,6 @@
 
 .method public setShadowVisibility(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/lockscreenshortcut/IconDragShadowBuilder;->mVisibility:Z
 
@@ -211,7 +207,6 @@
 
 .method public setSurface(Landroid/view/Surface;)V
     .locals 0
-    .param p1    # Landroid/view/Surface;
 
     iput-object p1, p0, Lcom/android/settings/lockscreenshortcut/IconDragShadowBuilder;->mSurface:Landroid/view/Surface;
 

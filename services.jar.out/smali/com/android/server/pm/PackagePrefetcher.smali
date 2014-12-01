@@ -230,7 +230,6 @@
 
 .method static synthetic access$000(Lcom/android/server/pm/PackagePrefetcher;)Z
     .locals 1
-    .param p0    # Lcom/android/server/pm/PackagePrefetcher;
 
     iget-boolean v0, p0, Lcom/android/server/pm/PackagePrefetcher;->mScanFinished:Z
 
@@ -239,7 +238,6 @@
 
 .method static synthetic access$100(Lcom/android/server/pm/PackagePrefetcher;)[Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/server/pm/PackagePrefetcher;
 
     iget-object v0, p0, Lcom/android/server/pm/PackagePrefetcher;->nSeparateProcessesInner:[Ljava/lang/String;
 
@@ -248,7 +246,6 @@
 
 .method static synthetic access$200(Lcom/android/server/pm/PackagePrefetcher;)I
     .locals 1
-    .param p0    # Lcom/android/server/pm/PackagePrefetcher;
 
     iget v0, p0, Lcom/android/server/pm/PackagePrefetcher;->mParseFlags:I
 
@@ -257,9 +254,6 @@
 
 .method static synthetic access$300(Lcom/android/server/pm/PackagePrefetcher;Landroid/content/pm/PackageParser;Landroid/content/pm/PackageParser$Package;)Lcom/android/server/pm/PackagePrefetcher$PrefetchedPackage;
     .locals 1
-    .param p0    # Lcom/android/server/pm/PackagePrefetcher;
-    .param p1    # Landroid/content/pm/PackageParser;
-    .param p2    # Landroid/content/pm/PackageParser$Package;
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/pm/PackagePrefetcher;->preCollectCert(Landroid/content/pm/PackageParser;Landroid/content/pm/PackageParser$Package;)Lcom/android/server/pm/PackagePrefetcher$PrefetchedPackage;
 
@@ -270,7 +264,6 @@
 
 .method static synthetic access$400(Lcom/android/server/pm/PackagePrefetcher;)Ljava/util/HashMap;
     .locals 1
-    .param p0    # Lcom/android/server/pm/PackagePrefetcher;
 
     iget-object v0, p0, Lcom/android/server/pm/PackagePrefetcher;->mPrefetchedPackages:Ljava/util/HashMap;
 
@@ -279,8 +272,6 @@
 
 .method static synthetic access$502(Lcom/android/server/pm/PackagePrefetcher;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/pm/PackagePrefetcher;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/pm/PackagePrefetcher;->mReadPermissionsStarted:Z
 
@@ -289,7 +280,6 @@
 
 .method static synthetic access$600(Lcom/android/server/pm/PackagePrefetcher;)V
     .locals 0
-    .param p0    # Lcom/android/server/pm/PackagePrefetcher;
 
     invoke-direct {p0}, Lcom/android/server/pm/PackagePrefetcher;->readPermissions()V
 
@@ -298,8 +288,6 @@
 
 .method static synthetic access$702(Lcom/android/server/pm/PackagePrefetcher;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/pm/PackagePrefetcher;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/pm/PackagePrefetcher;->mReadPermissionsFinished:Z
 
@@ -404,8 +392,6 @@
 
 .method private preCollectCert(Landroid/content/pm/PackageParser;Landroid/content/pm/PackageParser$Package;)Lcom/android/server/pm/PackagePrefetcher$PrefetchedPackage;
     .locals 6
-    .param p1    # Landroid/content/pm/PackageParser;
-    .param p2    # Landroid/content/pm/PackageParser$Package;
 
     const/4 v5, 0x1
 
@@ -529,7 +515,6 @@
 
 .method private prefetchInner(Ljava/io/File;)V
     .locals 5
-    .param p1    # Ljava/io/File;
 
     invoke-virtual {p1}, Ljava/io/File;->list()[Ljava/lang/String;
 
@@ -592,8 +577,6 @@
 
 .method private readPermission(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)V
     .locals 12
-    .param p1    # Lorg/xmlpull/v1/XmlPullParser;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -970,7 +953,6 @@
 
 .method private readPermissionsFromXml(Ljava/io/File;)V
     .locals 22
-    .param p1    # Ljava/io/File;
 
     const/4 v13, 0x0
 
@@ -1829,9 +1811,6 @@
 
 .method private startPrefetch(Ljava/io/File;II)V
     .locals 4
-    .param p1    # Ljava/io/File;
-    .param p2    # I
-    .param p3    # I
 
     new-instance v0, Ljava/lang/Thread;
 
@@ -1926,7 +1905,6 @@
 
 .method getPrefetchedPackage(Ljava/lang/String;)Lcom/android/server/pm/PackagePrefetcher$PrefetchedPackage;
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -2091,7 +2069,6 @@
 
 .method setScanFinished(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/pm/PackagePrefetcher;->mScanFinished:Z
 

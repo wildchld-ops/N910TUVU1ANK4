@@ -25,7 +25,6 @@
 
 .method synthetic constructor <init>(Landroid/graphics/Atlas$1;)V
     .locals 0
-    .param p1    # Landroid/graphics/Atlas$1;
 
     invoke-direct {p0}, Landroid/graphics/Atlas$Policy;-><init>()V
 

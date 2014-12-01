@@ -90,9 +90,6 @@
 
 .method public write([CII)V
     .locals 3
-    .param p1    # [C
-    .param p2    # I
-    .param p3    # I
 
     const/4 v1, 0x0
 

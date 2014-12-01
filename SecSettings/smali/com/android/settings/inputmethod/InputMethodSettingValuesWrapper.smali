@@ -78,7 +78,6 @@
 
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -188,7 +187,6 @@
 
 .method private getEnabledValidSystemNonAuxAsciiCapableImeCount(Landroid/content/Context;)I
     .locals 6
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -260,7 +258,6 @@
 
 .method public static getInstance(Landroid/content/Context;)Lcom/android/settings/inputmethod/InputMethodSettingValuesWrapper;
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     sget-object v0, Lcom/android/settings/inputmethod/InputMethodSettingValuesWrapper;->sInstance:Lcom/android/settings/inputmethod/InputMethodSettingValuesWrapper;
 
@@ -304,7 +301,6 @@
 
 .method private isEnabledImi(Landroid/view/inputmethod/InputMethodInfo;)Z
     .locals 5
-    .param p1    # Landroid/view/inputmethod/InputMethodInfo;
 
     iget-object v4, p0, Lcom/android/settings/inputmethod/InputMethodSettingValuesWrapper;->mMethodMap:Ljava/util/HashMap;
 
@@ -473,7 +469,6 @@
 # virtual methods
 .method public getCurrentInputMethodName(Landroid/content/Context;)Ljava/lang/CharSequence;
     .locals 6
-    .param p1    # Landroid/content/Context;
 
     iget-object v3, p0, Lcom/android/settings/inputmethod/InputMethodSettingValuesWrapper;->mMethodMap:Ljava/util/HashMap;
 
@@ -591,8 +586,6 @@
 
 .method public isAlwaysCheckedIme(Landroid/view/inputmethod/InputMethodInfo;Landroid/content/Context;)Z
     .locals 6
-    .param p1    # Landroid/view/inputmethod/InputMethodInfo;
-    .param p2    # Landroid/content/Context;
 
     const/4 v3, 0x0
 
@@ -806,8 +799,6 @@
 
 .method public isValidSystemNonAuxAsciiCapableIme(Landroid/view/inputmethod/InputMethodInfo;Landroid/content/Context;)Z
     .locals 2
-    .param p1    # Landroid/view/inputmethod/InputMethodInfo;
-    .param p2    # Landroid/content/Context;
 
     const/4 v0, 0x1
 

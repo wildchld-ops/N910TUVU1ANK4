@@ -109,8 +109,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;I)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     const/16 v3, 0x12c
 
@@ -243,9 +241,6 @@
 
 .method public constructor <init>(Landroid/content/Context;IZ)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Z
 
     const/16 v3, 0x12c
 
@@ -380,7 +375,6 @@
 
 .method static synthetic access$000(Lcom/android/incallui/widget/incomingwidget/IncomingCallImageHandle;)Lcom/android/incallui/widget/incomingwidget/IncomingCallImageWidget;
     .locals 1
-    .param p0    # Lcom/android/incallui/widget/incomingwidget/IncomingCallImageHandle;
 
     iget-object v0, p0, Lcom/android/incallui/widget/incomingwidget/IncomingCallImageHandle;->mParent:Lcom/android/incallui/widget/incomingwidget/IncomingCallImageWidget;
 
@@ -389,7 +383,6 @@
 
 .method static synthetic access$100(Lcom/android/incallui/widget/incomingwidget/IncomingCallImageHandle;)Landroid/widget/ImageView;
     .locals 1
-    .param p0    # Lcom/android/incallui/widget/incomingwidget/IncomingCallImageHandle;
 
     iget-object v0, p0, Lcom/android/incallui/widget/incomingwidget/IncomingCallImageHandle;->mArrow:Landroid/widget/ImageView;
 
@@ -398,8 +391,6 @@
 
 .method static synthetic access$202(Lcom/android/incallui/widget/incomingwidget/IncomingCallImageHandle;Z)Z
     .locals 0
-    .param p0    # Lcom/android/incallui/widget/incomingwidget/IncomingCallImageHandle;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/incallui/widget/incomingwidget/IncomingCallImageHandle;->mDuringSwingAnimation:Z
 
@@ -408,7 +399,6 @@
 
 .method private handleEvent(Landroid/view/MotionEvent;)Z
     .locals 5
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v4, 0x0
 
@@ -863,7 +853,6 @@
 
 .method private showTarget(F)V
     .locals 10
-    .param p1    # F
 
     const/4 v9, 0x1
 
@@ -952,7 +941,6 @@
 
 .method private updateArrowLayout(Z)V
     .locals 7
-    .param p1    # Z
 
     const/4 v6, 0x6
 
@@ -1264,8 +1252,6 @@
 
 .method private updateMovingCircle(FF)V
     .locals 4
-    .param p1    # F
-    .param p2    # F
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -1348,10 +1334,6 @@
 
 .method public addTouchArea(IIII)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iput p1, p0, Lcom/android/incallui/widget/incomingwidget/IncomingCallImageHandle;->mTouchAreaLeftExtra:I
 
@@ -1419,7 +1401,6 @@
 
 .method public enableArrowAnimation(Z)V
     .locals 2
-    .param p1    # Z
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -1448,8 +1429,6 @@
 
 .method public getTargetProximityRatio(FF)D
     .locals 13
-    .param p1    # F
-    .param p2    # F
 
     iget-object v9, p0, Lcom/android/incallui/widget/incomingwidget/IncomingCallImageHandle;->mTargetCircle:Landroid/widget/ImageView;
 
@@ -1537,7 +1516,6 @@
 
 .method public isInTabCircle(Landroid/view/MotionEvent;)Z
     .locals 23
-    .param p1    # Landroid/view/MotionEvent;
 
     new-instance v18, Lcom/samsung/android/sdk/cover/ScoverManager;
 
@@ -1873,8 +1851,6 @@
 
 .method public isThresholdReached(FF)Z
     .locals 4
-    .param p1    # F
-    .param p2    # F
 
     invoke-virtual {p0, p1, p2}, Lcom/android/incallui/widget/incomingwidget/IncomingCallImageHandle;->getTargetProximityRatio(FF)D
 
@@ -1899,7 +1875,6 @@
 
 .method public log(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "IncomingCallImageHandle"
 
@@ -1910,8 +1885,6 @@
 
 .method public needToHideArrow(FF)Z
     .locals 4
-    .param p1    # F
-    .param p2    # F
 
     invoke-virtual {p0, p1, p2}, Lcom/android/incallui/widget/incomingwidget/IncomingCallImageHandle;->getTargetProximityRatio(FF)D
 
@@ -1948,7 +1921,6 @@
 
 .method public onHoverEvent(Landroid/view/MotionEvent;)Z
     .locals 5
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v4, 0x1
 
@@ -2048,7 +2020,6 @@
 
 .method public onInterceptHoverEvent(Landroid/view/MotionEvent;)Z
     .locals 4
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
@@ -2095,7 +2066,6 @@
 
 .method public onInterceptTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 5
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v4, 0x1
 
@@ -2153,7 +2123,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 2
-    .param p1    # Landroid/view/MotionEvent;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -2184,7 +2153,6 @@
 
 .method public processMoveEvent(Landroid/view/MotionEvent;)V
     .locals 6
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getX()F
 
@@ -2259,7 +2227,6 @@
 
 .method public setArrowBottomMargin(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/incallui/widget/incomingwidget/IncomingCallImageHandle;->mArrow:Landroid/widget/ImageView;
 
@@ -2280,7 +2247,6 @@
 
 .method public setArrowLeftMargin(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/incallui/widget/incomingwidget/IncomingCallImageHandle;->mArrow:Landroid/widget/ImageView;
 
@@ -2301,7 +2267,6 @@
 
 .method public setArrowRightMargin(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/incallui/widget/incomingwidget/IncomingCallImageHandle;->mArrow:Landroid/widget/ImageView;
 
@@ -2322,7 +2287,6 @@
 
 .method public setArrowTopMargin(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/incallui/widget/incomingwidget/IncomingCallImageHandle;->mArrow:Landroid/widget/ImageView;
 
@@ -2343,7 +2307,6 @@
 
 .method public setContentDescription(Ljava/lang/CharSequence;)V
     .locals 2
-    .param p1    # Ljava/lang/CharSequence;
 
     iget-object v0, p0, Lcom/android/incallui/widget/incomingwidget/IncomingCallImageHandle;->mHandleImageView:Landroid/widget/ImageView;
 
@@ -2360,7 +2323,6 @@
 
 .method public setHandleImageResource(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/incallui/widget/incomingwidget/IncomingCallImageHandle;->mHandleImageView:Landroid/widget/ImageView;
 
@@ -2371,7 +2333,6 @@
 
 .method public setHandleState(Lcom/android/incallui/widget/incomingwidget/IncomingCallImageHandle$HandleState;)V
     .locals 0
-    .param p1    # Lcom/android/incallui/widget/incomingwidget/IncomingCallImageHandle$HandleState;
 
     iput-object p1, p0, Lcom/android/incallui/widget/incomingwidget/IncomingCallImageHandle;->mHandleState:Lcom/android/incallui/widget/incomingwidget/IncomingCallImageHandle$HandleState;
 
@@ -2382,8 +2343,6 @@
 
 .method public setLeftHandleImageResource(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     iput p1, p0, Lcom/android/incallui/widget/incomingwidget/IncomingCallImageHandle;->mLeftHandleNormalRes:I
 
@@ -2394,8 +2353,6 @@
 
 .method public setLeftTabImageResource(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     iput p1, p0, Lcom/android/incallui/widget/incomingwidget/IncomingCallImageHandle;->mLeftTabNormalRes:I
 
@@ -2406,7 +2363,6 @@
 
 .method public setParent(Lcom/android/incallui/widget/incomingwidget/IncomingCallImageWidget;)V
     .locals 0
-    .param p1    # Lcom/android/incallui/widget/incomingwidget/IncomingCallImageWidget;
 
     iput-object p1, p0, Lcom/android/incallui/widget/incomingwidget/IncomingCallImageHandle;->mParent:Lcom/android/incallui/widget/incomingwidget/IncomingCallImageWidget;
 
@@ -2415,8 +2371,6 @@
 
 .method public setRightHandleImageResource(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     iput p1, p0, Lcom/android/incallui/widget/incomingwidget/IncomingCallImageHandle;->mRightHandleNormalRes:I
 
@@ -2427,8 +2381,6 @@
 
 .method public setRightTabImageResource(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     iput p1, p0, Lcom/android/incallui/widget/incomingwidget/IncomingCallImageHandle;->mRightTabNormalRes:I
 
@@ -2439,7 +2391,6 @@
 
 .method public setTabImageResource(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/incallui/widget/incomingwidget/IncomingCallImageHandle;->mTabCircle:Landroid/widget/ImageView;
 
@@ -2450,7 +2401,6 @@
 
 .method public setUseExternalArrowImage(Z)V
     .locals 2
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/incallui/widget/incomingwidget/IncomingCallImageHandle;->useExternalArrowImage:Z
 
@@ -2472,7 +2422,6 @@
 
 .method public setWidgetTypeTag(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/incallui/widget/incomingwidget/IncomingCallImageHandle;->mTag:Ljava/lang/String;
 
@@ -2481,7 +2430,6 @@
 
 .method public startAirMotionAnimation(Lcom/android/incallui/widget/incomingwidget/IncomingCallImageHandle$HandleState;)V
     .locals 9
-    .param p1    # Lcom/android/incallui/widget/incomingwidget/IncomingCallImageHandle$HandleState;
 
     const v2, 0x3dcccccd
 

@@ -6,7 +6,6 @@
 # direct methods
 .method public constructor <init>(Ljava/io/Writer;)V
     .locals 0
-    .param p1    # Ljava/io/Writer;
 
     invoke-direct {p0, p1}, Ljava/io/FilterWriter;-><init>(Ljava/io/Writer;)V
 
@@ -47,7 +46,6 @@
 
 .method public write(I)V
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -63,7 +61,6 @@
 
 .method public write(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -79,9 +76,6 @@
 
 .method public write(Ljava/lang/String;II)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -97,7 +91,6 @@
 
 .method public write([C)V
     .locals 1
-    .param p1    # [C
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -113,9 +106,6 @@
 
 .method public write([CII)V
     .locals 1
-    .param p1    # [C
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

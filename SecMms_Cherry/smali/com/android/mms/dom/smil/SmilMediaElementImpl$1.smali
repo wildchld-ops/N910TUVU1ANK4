@@ -21,7 +21,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/mms/dom/smil/SmilMediaElementImpl;Lorg/w3c/dom/smil/SMILElement;)V
     .locals 0
-    .param p2    # Lorg/w3c/dom/smil/SMILElement;
 
     iput-object p1, p0, Lcom/android/mms/dom/smil/SmilMediaElementImpl$1;->this$0:Lcom/android/mms/dom/smil/SmilMediaElementImpl;
 
@@ -32,7 +31,6 @@
 
 .method private createEvent(Ljava/lang/String;)Lorg/w3c/dom/events/Event;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -57,8 +55,6 @@
 
 .method private createEvent(Ljava/lang/String;I)Lorg/w3c/dom/events/Event;
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v3, 0x0
 
@@ -257,7 +253,6 @@
 
 .method public seekElement(F)V
     .locals 3
-    .param p1    # F
 
     const-string v1, "SmilMediaSeek"
 

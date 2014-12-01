@@ -36,9 +36,6 @@
 # virtual methods
 .method public onProgressChanged(Landroid/widget/SeekBar;IZ)V
     .locals 8
-    .param p1    # Landroid/widget/SeekBar;
-    .param p2    # I
-    .param p3    # Z
 
     if-nez p3, :cond_1
 
@@ -111,7 +108,6 @@
 
 .method public onStartTrackingTouch(Landroid/widget/SeekBar;)V
     .locals 2
-    .param p1    # Landroid/widget/SeekBar;
 
     iget-object v0, p0, Landroid/widget/MediaController$5;->this$0:Landroid/widget/MediaController;
 
@@ -142,7 +138,6 @@
 
 .method public onStopTrackingTouch(Landroid/widget/SeekBar;)V
     .locals 2
-    .param p1    # Landroid/widget/SeekBar;
 
     iget-object v0, p0, Landroid/widget/MediaController$5;->this$0:Landroid/widget/MediaController;
 

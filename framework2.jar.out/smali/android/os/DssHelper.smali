@@ -75,8 +75,6 @@
 # virtual methods
 .method public declared-synchronized addPackage(Ljava/lang/String;D)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # D
 
     monitor-enter p0
 
@@ -143,7 +141,6 @@
 
 .method public declared-synchronized getScalingFactor(Ljava/lang/String;)D
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -190,7 +187,6 @@
 
 .method public declared-synchronized isPackageExist(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -217,7 +213,6 @@
 
 .method public declared-synchronized removePackage(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 

@@ -57,7 +57,6 @@
 # virtual methods
 .method public __doWork(I)V
     .locals 15
-    .param p1    # I
 
     const/4 v10, 0x0
 

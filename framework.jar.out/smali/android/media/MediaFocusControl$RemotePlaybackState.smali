@@ -29,9 +29,6 @@
 # direct methods
 .method private constructor <init>(Landroid/media/MediaFocusControl;III)V
     .locals 1
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iput-object p1, p0, Landroid/media/MediaFocusControl$RemotePlaybackState;->this$0:Landroid/media/MediaFocusControl;
 
@@ -52,11 +49,6 @@
 
 .method synthetic constructor <init>(Landroid/media/MediaFocusControl;IIILandroid/media/MediaFocusControl$1;)V
     .locals 0
-    .param p1    # Landroid/media/MediaFocusControl;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Landroid/media/MediaFocusControl$1;
 
     invoke-direct {p0, p1, p2, p3, p4}, Landroid/media/MediaFocusControl$RemotePlaybackState;-><init>(Landroid/media/MediaFocusControl;III)V
 

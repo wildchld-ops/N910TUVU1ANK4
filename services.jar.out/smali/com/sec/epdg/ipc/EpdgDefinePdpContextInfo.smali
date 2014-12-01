@@ -30,11 +30,6 @@
 
 .method public constructor <init>(I[B[B[BI)V
     .locals 5
-    .param p1    # I
-    .param p2    # [B
-    .param p3    # [B
-    .param p4    # [B
-    .param p5    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

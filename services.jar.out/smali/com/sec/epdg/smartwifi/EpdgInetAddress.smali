@@ -18,7 +18,6 @@
 
 .method public static isIpv6(Ljava/net/InetAddress;)Z
     .locals 1
-    .param p0    # Ljava/net/InetAddress;
 
     invoke-virtual {p0}, Ljava/net/InetAddress;->getHostAddress()Ljava/lang/String;
 
@@ -33,9 +32,6 @@
 
 .method public static isPingable(Ljava/net/InetAddress;ILjava/lang/String;)Lcom/sec/epdg/smartwifi/PingStats;
     .locals 16
-    .param p0    # Ljava/net/InetAddress;
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     if-eqz p0, :cond_4
 

@@ -10,11 +10,6 @@
 # direct methods
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;FFII)V
     .locals 1
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # I
-    .param p5    # I
 
     invoke-direct/range {p0 .. p5}, Lcom/sec/android/glview/TwGLSelectButton;-><init>(Lcom/sec/android/glview/TwGLContext;FFII)V
 
@@ -27,12 +22,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;FFIII)V
     .locals 1
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     invoke-direct/range {p0 .. p6}, Lcom/sec/android/glview/TwGLSelectButton;-><init>(Lcom/sec/android/glview/TwGLContext;FFIII)V
 
@@ -45,9 +34,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;II)V
     .locals 1
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Lcom/sec/android/glview/TwGLSelectButton;-><init>(Lcom/sec/android/glview/TwGLContext;II)V
 
@@ -70,7 +56,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 4
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v1, 0x1
 
@@ -137,7 +122,6 @@
 
 .method public setRadioButtonId(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/glview/TwGLRadioButton;->mRadioButtonId:I
 

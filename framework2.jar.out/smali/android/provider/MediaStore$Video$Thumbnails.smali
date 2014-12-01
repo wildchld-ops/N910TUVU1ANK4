@@ -74,8 +74,6 @@
 
 .method public static cancelThumbnailRequest(Landroid/content/ContentResolver;J)V
     .locals 6
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # J
 
     sget-object v3, Landroid/provider/MediaStore$Video$Thumbnails;->EXTERNAL_CONTENT_URI:Landroid/net/Uri;
 
@@ -92,9 +90,6 @@
 
 .method public static cancelThumbnailRequest(Landroid/content/ContentResolver;JJ)V
     .locals 6
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # J
-    .param p3    # J
 
     sget-object v3, Landroid/provider/MediaStore$Video$Thumbnails;->EXTERNAL_CONTENT_URI:Landroid/net/Uri;
 
@@ -111,7 +106,6 @@
 
 .method public static getContentUri(Ljava/lang/String;)Landroid/net/Uri;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -146,10 +140,6 @@
 
 .method public static getThumbnail(Landroid/content/ContentResolver;JILandroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;
     .locals 9
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # J
-    .param p3    # I
-    .param p4    # Landroid/graphics/BitmapFactory$Options;
 
     const-wide/16 v3, 0x0
 
@@ -174,11 +164,6 @@
 
 .method public static getThumbnail(Landroid/content/ContentResolver;JJILandroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;
     .locals 9
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # J
-    .param p3    # J
-    .param p5    # I
-    .param p6    # Landroid/graphics/BitmapFactory$Options;
 
     sget-object v7, Landroid/provider/MediaStore$Video$Thumbnails;->EXTERNAL_CONTENT_URI:Landroid/net/Uri;
 

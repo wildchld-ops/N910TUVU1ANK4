@@ -95,7 +95,6 @@
 
 .method constructor <init>(Ljava/nio/ByteOrder;)V
     .locals 1
-    .param p1    # Ljava/nio/ByteOrder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -120,7 +119,6 @@
 # virtual methods
 .method protected addIfdData(Lcom/android/mms/exif/IfdData;)V
     .locals 2
-    .param p1    # Lcom/android/mms/exif/IfdData;
 
     iget-object v0, p0, Lcom/android/mms/exif/ExifData;->mIfdDatas:[Lcom/android/mms/exif/IfdData;
 
@@ -135,7 +133,6 @@
 
 .method protected addTag(Lcom/android/mms/exif/ExifTag;)Lcom/android/mms/exif/ExifTag;
     .locals 2
-    .param p1    # Lcom/android/mms/exif/ExifTag;
 
     if-eqz p1, :cond_0
 
@@ -158,8 +155,6 @@
 
 .method protected addTag(Lcom/android/mms/exif/ExifTag;I)Lcom/android/mms/exif/ExifTag;
     .locals 2
-    .param p1    # Lcom/android/mms/exif/ExifTag;
-    .param p2    # I
 
     if-eqz p1, :cond_0
 
@@ -202,7 +197,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 8
-    .param p1    # Ljava/lang/Object;
 
     const/4 v6, 0x1
 
@@ -431,7 +425,6 @@
 
 .method protected getAllTagsForIfd(I)Ljava/util/List;
     .locals 9
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -505,7 +498,6 @@
 
 .method protected getAllTagsForTagId(S)Ljava/util/List;
     .locals 7
-    .param p1    # S
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(S)",
@@ -577,7 +569,6 @@
 
 .method protected getIfdData(I)Lcom/android/mms/exif/IfdData;
     .locals 1
-    .param p1    # I
 
     invoke-static {p1}, Lcom/android/mms/exif/ExifTag;->isValidIfd(I)Z
 
@@ -600,7 +591,6 @@
 
 .method protected getOrCreateIfdData(I)Lcom/android/mms/exif/IfdData;
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/mms/exif/ExifData;->mIfdDatas:[Lcom/android/mms/exif/IfdData;
 
@@ -622,7 +612,6 @@
 
 .method protected getStrip(I)[B
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/mms/exif/ExifData;->mStripBytes:Ljava/util/ArrayList;
 
@@ -649,8 +638,6 @@
 
 .method protected getTag(SI)Lcom/android/mms/exif/ExifTag;
     .locals 2
-    .param p1    # S
-    .param p2    # I
 
     iget-object v1, p0, Lcom/android/mms/exif/ExifData;->mIfdDatas:[Lcom/android/mms/exif/IfdData;
 
@@ -852,8 +839,6 @@
 
 .method protected removeTag(SI)V
     .locals 2
-    .param p1    # S
-    .param p2    # I
 
     iget-object v1, p0, Lcom/android/mms/exif/ExifData;->mIfdDatas:[Lcom/android/mms/exif/IfdData;
 
@@ -888,7 +873,6 @@
 
 .method protected setCompressedThumbnail([B)V
     .locals 0
-    .param p1    # [B
 
     iput-object p1, p0, Lcom/android/mms/exif/ExifData;->mThumbnail:[B
 
@@ -897,8 +881,6 @@
 
 .method protected setStripBytes(I[B)V
     .locals 3
-    .param p1    # I
-    .param p2    # [B
 
     iget-object v1, p0, Lcom/android/mms/exif/ExifData;->mStripBytes:Ljava/util/ArrayList;
 

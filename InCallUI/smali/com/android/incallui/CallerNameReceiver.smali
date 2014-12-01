@@ -36,7 +36,6 @@
 
 .method private static log(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     sget-object v0, Lcom/android/incallui/CallerNameReceiver;->LOG_TAG:Ljava/lang/String;
 
@@ -49,8 +48,6 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     new-instance v0, Ljava/lang/StringBuilder;
 

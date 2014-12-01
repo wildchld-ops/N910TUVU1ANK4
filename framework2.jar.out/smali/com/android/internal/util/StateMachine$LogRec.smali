@@ -33,12 +33,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/internal/util/StateMachine;Landroid/os/Message;Ljava/lang/String;Lcom/android/internal/util/IState;Lcom/android/internal/util/IState;Lcom/android/internal/util/IState;)V
     .locals 0
-    .param p1    # Lcom/android/internal/util/StateMachine;
-    .param p2    # Landroid/os/Message;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Lcom/android/internal/util/IState;
-    .param p5    # Lcom/android/internal/util/IState;
-    .param p6    # Lcom/android/internal/util/IState;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -300,12 +294,6 @@
 
 .method public update(Lcom/android/internal/util/StateMachine;Landroid/os/Message;Ljava/lang/String;Lcom/android/internal/util/IState;Lcom/android/internal/util/IState;Lcom/android/internal/util/IState;)V
     .locals 2
-    .param p1    # Lcom/android/internal/util/StateMachine;
-    .param p2    # Landroid/os/Message;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Lcom/android/internal/util/IState;
-    .param p5    # Lcom/android/internal/util/IState;
-    .param p6    # Lcom/android/internal/util/IState;
 
     iput-object p1, p0, Lcom/android/internal/util/StateMachine$LogRec;->mSm:Lcom/android/internal/util/StateMachine;
 

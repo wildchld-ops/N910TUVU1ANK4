@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -45,7 +44,6 @@
 
 .method public checkConnection(Landroid/os/Bundle;)Landroid/os/Bundle;
     .locals 6
-    .param p1    # Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -136,7 +134,6 @@
 
 .method public connect(Landroid/os/Bundle;)Landroid/os/Bundle;
     .locals 6
-    .param p1    # Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -227,7 +224,6 @@
 
 .method public connectionState(Landroid/os/Bundle;)Landroid/os/Bundle;
     .locals 6
-    .param p1    # Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -318,7 +314,6 @@
 
 .method public disconnect(Landroid/os/Bundle;)Landroid/os/Bundle;
     .locals 6
-    .param p1    # Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -417,7 +412,6 @@
 
 .method public getLog(Landroid/os/Bundle;)Landroid/os/Bundle;
     .locals 6
-    .param p1    # Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -508,7 +502,6 @@
 
 .method public isConnected(Landroid/os/Bundle;)Landroid/os/Bundle;
     .locals 6
-    .param p1    # Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -599,7 +592,6 @@
 
 .method public registerCallback(Lcom/ipsec/client/IIPsecServiceCallback;)V
     .locals 5
-    .param p1    # Lcom/ipsec/client/IIPsecServiceCallback;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -663,7 +655,6 @@
 
 .method public startService(Landroid/os/Bundle;)Landroid/os/Bundle;
     .locals 6
-    .param p1    # Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -754,7 +745,6 @@
 
 .method public stopService(Landroid/os/Bundle;)Landroid/os/Bundle;
     .locals 6
-    .param p1    # Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -845,7 +835,6 @@
 
 .method public unregisterCallback(Lcom/ipsec/client/IIPsecServiceCallback;)V
     .locals 5
-    .param p1    # Lcom/ipsec/client/IIPsecServiceCallback;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

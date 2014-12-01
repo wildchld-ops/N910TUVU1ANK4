@@ -98,7 +98,6 @@
 
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -146,7 +145,6 @@
 
 .method public static getInstance(Landroid/content/Context;)Landroid/appwidget/AppWidgetManager;
     .locals 6
-    .param p0    # Landroid/content/Context;
 
     sget-object v4, Landroid/appwidget/AppWidgetManager;->sManagerCache:Ljava/util/WeakHashMap;
 
@@ -220,7 +218,6 @@
 
 .method private isRemovingKnoxApp(Ljava/lang/String;)Z
     .locals 10
-    .param p1    # Ljava/lang/String;
 
     const/4 v7, 0x0
 
@@ -313,8 +310,6 @@
 # virtual methods
 .method public bindAppWidgetId(ILandroid/content/ComponentName;)V
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
 
     :try_start_0
     sget-object v1, Landroid/appwidget/AppWidgetManager;->sService:Lcom/android/internal/appwidget/IAppWidgetService;
@@ -347,9 +342,6 @@
 
 .method public bindAppWidgetId(ILandroid/content/ComponentName;Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # Landroid/os/Bundle;
 
     :try_start_0
     sget-object v1, Landroid/appwidget/AppWidgetManager;->sService:Lcom/android/internal/appwidget/IAppWidgetService;
@@ -380,8 +372,6 @@
 
 .method public bindAppWidgetIdIfAllowed(ILandroid/content/ComponentName;)Z
     .locals 7
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
 
     iget-object v0, p0, Landroid/appwidget/AppWidgetManager;->mContext:Landroid/content/Context;
 
@@ -436,9 +426,6 @@
 
 .method public bindAppWidgetIdIfAllowed(ILandroid/content/ComponentName;Landroid/os/Bundle;)Z
     .locals 7
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # Landroid/os/Bundle;
 
     iget-object v0, p0, Landroid/appwidget/AppWidgetManager;->mContext:Landroid/content/Context;
 
@@ -493,10 +480,6 @@
 
 .method public bindRemoteViewsService(ILandroid/content/Intent;Landroid/os/IBinder;Landroid/os/UserHandle;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/content/Intent;
-    .param p3    # Landroid/os/IBinder;
-    .param p4    # Landroid/os/UserHandle;
 
     :try_start_0
     sget-object v1, Landroid/appwidget/AppWidgetManager;->sService:Lcom/android/internal/appwidget/IAppWidgetService;
@@ -525,7 +508,6 @@
 
 .method public getAppWidgetIds(Landroid/content/ComponentName;)[I
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
 
     :try_start_0
     sget-object v1, Landroid/appwidget/AppWidgetManager;->sService:Lcom/android/internal/appwidget/IAppWidgetService;
@@ -558,7 +540,6 @@
 
 .method public getAppWidgetInfo(I)Landroid/appwidget/AppWidgetProviderInfo;
     .locals 4
-    .param p1    # I
 
     :try_start_0
     sget-object v2, Landroid/appwidget/AppWidgetManager;->sService:Lcom/android/internal/appwidget/IAppWidgetService;
@@ -634,7 +615,6 @@
 
 .method public getAppWidgetOptions(I)Landroid/os/Bundle;
     .locals 3
-    .param p1    # I
 
     :try_start_0
     sget-object v1, Landroid/appwidget/AppWidgetManager;->sService:Lcom/android/internal/appwidget/IAppWidgetService;
@@ -688,7 +668,6 @@
 
 .method public getInstalledKnoxProviders(I)Ljava/util/List;
     .locals 8
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -855,7 +834,6 @@
 
 .method public getInstalledProviders(I)Ljava/util/List;
     .locals 8
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -1037,7 +1015,6 @@
 
 .method public getSecretAppWidgetInfo(I)Landroid/appwidget/AppWidgetProviderInfo;
     .locals 4
-    .param p1    # I
 
     :try_start_0
     sget-object v2, Landroid/appwidget/AppWidgetManager;->sService:Lcom/android/internal/appwidget/IAppWidgetService;
@@ -1113,7 +1090,6 @@
 
 .method public hasBindAppWidgetPermission(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     sget-object v1, Landroid/appwidget/AppWidgetManager;->sService:Lcom/android/internal/appwidget/IAppWidgetService;
@@ -1146,8 +1122,6 @@
 
 .method public notifyAppWidgetViewDataChanged(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x1
 
@@ -1164,8 +1138,6 @@
 
 .method public notifyAppWidgetViewDataChanged([II)V
     .locals 3
-    .param p1    # [I
-    .param p2    # I
 
     :try_start_0
     sget-object v1, Landroid/appwidget/AppWidgetManager;->sService:Lcom/android/internal/appwidget/IAppWidgetService;
@@ -1196,8 +1168,6 @@
 
 .method public partiallyUpdateAppWidget(ILandroid/widget/RemoteViews;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/widget/RemoteViews;
 
     const/4 v0, 0x1
 
@@ -1214,8 +1184,6 @@
 
 .method public partiallyUpdateAppWidget([ILandroid/widget/RemoteViews;)V
     .locals 3
-    .param p1    # [I
-    .param p2    # Landroid/widget/RemoteViews;
 
     :try_start_0
     sget-object v1, Landroid/appwidget/AppWidgetManager;->sService:Lcom/android/internal/appwidget/IAppWidgetService;
@@ -1246,8 +1214,6 @@
 
 .method public setBindAppWidgetPermission(Ljava/lang/String;Z)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     :try_start_0
     sget-object v1, Landroid/appwidget/AppWidgetManager;->sService:Lcom/android/internal/appwidget/IAppWidgetService;
@@ -1278,9 +1244,6 @@
 
 .method public unbindRemoteViewsService(ILandroid/content/Intent;Landroid/os/UserHandle;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/content/Intent;
-    .param p3    # Landroid/os/UserHandle;
 
     :try_start_0
     sget-object v1, Landroid/appwidget/AppWidgetManager;->sService:Lcom/android/internal/appwidget/IAppWidgetService;
@@ -1309,8 +1272,6 @@
 
 .method public updateAppWidget(ILandroid/widget/RemoteViews;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/widget/RemoteViews;
 
     const/4 v0, 0x1
 
@@ -1327,8 +1288,6 @@
 
 .method public updateAppWidget(Landroid/content/ComponentName;Landroid/widget/RemoteViews;)V
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Landroid/widget/RemoteViews;
 
     :try_start_0
     sget-object v1, Landroid/appwidget/AppWidgetManager;->sService:Lcom/android/internal/appwidget/IAppWidgetService;
@@ -1359,8 +1318,6 @@
 
 .method public updateAppWidget([ILandroid/widget/RemoteViews;)V
     .locals 3
-    .param p1    # [I
-    .param p2    # Landroid/widget/RemoteViews;
 
     :try_start_0
     sget-object v1, Landroid/appwidget/AppWidgetManager;->sService:Lcom/android/internal/appwidget/IAppWidgetService;
@@ -1391,8 +1348,6 @@
 
 .method public updateAppWidgetOptions(ILandroid/os/Bundle;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     :try_start_0
     sget-object v1, Landroid/appwidget/AppWidgetManager;->sService:Lcom/android/internal/appwidget/IAppWidgetService;

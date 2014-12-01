@@ -84,7 +84,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x1
 
@@ -163,7 +162,6 @@
 
 .method static synthetic access$000(Landroid/media/WFDUibcManager;)I
     .locals 1
-    .param p0    # Landroid/media/WFDUibcManager;
 
     iget v0, p0, Landroid/media/WFDUibcManager;->mOrientation:I
 
@@ -172,8 +170,6 @@
 
 .method static synthetic access$002(Landroid/media/WFDUibcManager;I)I
     .locals 0
-    .param p0    # Landroid/media/WFDUibcManager;
-    .param p1    # I
 
     iput p1, p0, Landroid/media/WFDUibcManager;->mOrientation:I
 
@@ -182,8 +178,6 @@
 
 .method static synthetic access$1002(Landroid/media/WFDUibcManager;Z)Z
     .locals 0
-    .param p0    # Landroid/media/WFDUibcManager;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/media/WFDUibcManager;->bSim:Z
 
@@ -192,8 +186,6 @@
 
 .method static synthetic access$1102(Landroid/media/WFDUibcManager;Z)Z
     .locals 0
-    .param p0    # Landroid/media/WFDUibcManager;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/media/WFDUibcManager;->bNum:Z
 
@@ -202,8 +194,6 @@
 
 .method static synthetic access$1202(Landroid/media/WFDUibcManager;Z)Z
     .locals 0
-    .param p0    # Landroid/media/WFDUibcManager;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/media/WFDUibcManager;->bScroll:Z
 
@@ -212,7 +202,6 @@
 
 .method static synthetic access$1300(Landroid/media/WFDUibcManager;)J
     .locals 2
-    .param p0    # Landroid/media/WFDUibcManager;
 
     iget-wide v0, p0, Landroid/media/WFDUibcManager;->mTouchDownTime:J
 
@@ -221,8 +210,6 @@
 
 .method static synthetic access$1302(Landroid/media/WFDUibcManager;J)J
     .locals 0
-    .param p0    # Landroid/media/WFDUibcManager;
-    .param p1    # J
 
     iput-wide p1, p0, Landroid/media/WFDUibcManager;->mTouchDownTime:J
 
@@ -231,7 +218,6 @@
 
 .method static synthetic access$1400(Landroid/media/WFDUibcManager;)F
     .locals 1
-    .param p0    # Landroid/media/WFDUibcManager;
 
     iget v0, p0, Landroid/media/WFDUibcManager;->mNegRs_X:F
 
@@ -240,7 +226,6 @@
 
 .method static synthetic access$1500(Landroid/media/WFDUibcManager;)F
     .locals 1
-    .param p0    # Landroid/media/WFDUibcManager;
 
     iget v0, p0, Landroid/media/WFDUibcManager;->mNegRs_Y:F
 
@@ -249,8 +234,6 @@
 
 .method static synthetic access$1602(Landroid/media/WFDUibcManager;Z)Z
     .locals 0
-    .param p0    # Landroid/media/WFDUibcManager;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/media/WFDUibcManager;->mSPCOrientation:Z
 
@@ -259,7 +242,6 @@
 
 .method static synthetic access$1700(Landroid/media/WFDUibcManager;)I
     .locals 1
-    .param p0    # Landroid/media/WFDUibcManager;
 
     iget v0, p0, Landroid/media/WFDUibcManager;->mCameraOrientation:I
 
@@ -268,8 +250,6 @@
 
 .method static synthetic access$1702(Landroid/media/WFDUibcManager;I)I
     .locals 0
-    .param p0    # Landroid/media/WFDUibcManager;
-    .param p1    # I
 
     iput p1, p0, Landroid/media/WFDUibcManager;->mCameraOrientation:I
 
@@ -278,8 +258,6 @@
 
 .method static synthetic access$1712(Landroid/media/WFDUibcManager;I)I
     .locals 1
-    .param p0    # Landroid/media/WFDUibcManager;
-    .param p1    # I
 
     iget v0, p0, Landroid/media/WFDUibcManager;->mCameraOrientation:I
 
@@ -292,7 +270,6 @@
 
 .method static synthetic access$1800(Landroid/media/WFDUibcManager;)Z
     .locals 1
-    .param p0    # Landroid/media/WFDUibcManager;
 
     iget-boolean v0, p0, Landroid/media/WFDUibcManager;->mCoupleShot:Z
 
@@ -301,7 +278,6 @@
 
 .method static synthetic access$1900(Landroid/media/WFDUibcManager;)I
     .locals 1
-    .param p0    # Landroid/media/WFDUibcManager;
 
     iget v0, p0, Landroid/media/WFDUibcManager;->mFlag:I
 
@@ -310,8 +286,6 @@
 
 .method static synthetic access$1902(Landroid/media/WFDUibcManager;I)I
     .locals 0
-    .param p0    # Landroid/media/WFDUibcManager;
-    .param p1    # I
 
     iput p1, p0, Landroid/media/WFDUibcManager;->mFlag:I
 
@@ -320,8 +294,6 @@
 
 .method static synthetic access$1976(Landroid/media/WFDUibcManager;I)I
     .locals 1
-    .param p0    # Landroid/media/WFDUibcManager;
-    .param p1    # I
 
     iget v0, p0, Landroid/media/WFDUibcManager;->mFlag:I
 
@@ -334,7 +306,6 @@
 
 .method static synthetic access$2000(Landroid/media/WFDUibcManager;)J
     .locals 2
-    .param p0    # Landroid/media/WFDUibcManager;
 
     iget-wide v0, p0, Landroid/media/WFDUibcManager;->mKeyDownTime:J
 
@@ -343,8 +314,6 @@
 
 .method static synthetic access$2002(Landroid/media/WFDUibcManager;J)J
     .locals 0
-    .param p0    # Landroid/media/WFDUibcManager;
-    .param p1    # J
 
     iput-wide p1, p0, Landroid/media/WFDUibcManager;->mKeyDownTime:J
 
@@ -353,7 +322,6 @@
 
 .method static synthetic access$2100(Landroid/media/WFDUibcManager;)I
     .locals 1
-    .param p0    # Landroid/media/WFDUibcManager;
 
     iget v0, p0, Landroid/media/WFDUibcManager;->mRepeatCnt:I
 
@@ -362,8 +330,6 @@
 
 .method static synthetic access$2102(Landroid/media/WFDUibcManager;I)I
     .locals 0
-    .param p0    # Landroid/media/WFDUibcManager;
-    .param p1    # I
 
     iput p1, p0, Landroid/media/WFDUibcManager;->mRepeatCnt:I
 
@@ -372,7 +338,6 @@
 
 .method static synthetic access$700(Landroid/media/WFDUibcManager;)Landroid/content/Context;
     .locals 1
-    .param p0    # Landroid/media/WFDUibcManager;
 
     iget-object v0, p0, Landroid/media/WFDUibcManager;->mContext:Landroid/content/Context;
 
@@ -381,7 +346,6 @@
 
 .method static synthetic access$800(Landroid/media/WFDUibcManager;)I
     .locals 1
-    .param p0    # Landroid/media/WFDUibcManager;
 
     iget v0, p0, Landroid/media/WFDUibcManager;->mMetaFlag:I
 
@@ -390,8 +354,6 @@
 
 .method static synthetic access$802(Landroid/media/WFDUibcManager;I)I
     .locals 0
-    .param p0    # Landroid/media/WFDUibcManager;
-    .param p1    # I
 
     iput p1, p0, Landroid/media/WFDUibcManager;->mMetaFlag:I
 
@@ -400,8 +362,6 @@
 
 .method static synthetic access$872(Landroid/media/WFDUibcManager;I)I
     .locals 1
-    .param p0    # Landroid/media/WFDUibcManager;
-    .param p1    # I
 
     iget v0, p0, Landroid/media/WFDUibcManager;->mMetaFlag:I
 
@@ -414,8 +374,6 @@
 
 .method static synthetic access$876(Landroid/media/WFDUibcManager;I)I
     .locals 1
-    .param p0    # Landroid/media/WFDUibcManager;
-    .param p1    # I
 
     iget v0, p0, Landroid/media/WFDUibcManager;->mMetaFlag:I
 
@@ -428,7 +386,6 @@
 
 .method static synthetic access$900(Landroid/media/WFDUibcManager;)Z
     .locals 1
-    .param p0    # Landroid/media/WFDUibcManager;
 
     iget-boolean v0, p0, Landroid/media/WFDUibcManager;->bCap:Z
 
@@ -437,8 +394,6 @@
 
 .method static synthetic access$902(Landroid/media/WFDUibcManager;Z)Z
     .locals 0
-    .param p0    # Landroid/media/WFDUibcManager;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/media/WFDUibcManager;->bCap:Z
 
@@ -449,7 +404,6 @@
 # virtual methods
 .method public setCoupleShotMode(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/media/WFDUibcManager;->mCoupleShot:Z
 
@@ -458,8 +412,6 @@
 
 .method public setUIBCNegotiagedResolution(FF)V
     .locals 0
-    .param p1    # F
-    .param p2    # F
 
     iput p1, p0, Landroid/media/WFDUibcManager;->mNegRs_X:F
 
@@ -540,7 +492,6 @@
 
 .method public start(I)Z
     .locals 5
-    .param p1    # I
 
     const-wide/16 v3, 0x0
 
@@ -694,7 +645,6 @@
 
 .method public stop(I)Z
     .locals 8
-    .param p1    # I
 
     const/4 v7, 0x1
 

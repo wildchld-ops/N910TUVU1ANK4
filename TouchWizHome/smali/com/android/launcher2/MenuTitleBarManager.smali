@@ -192,7 +192,6 @@
 
 .method static synthetic access$000(Lcom/android/launcher2/MenuTitleBarManager;)Landroid/view/ViewGroup;
     .locals 1
-    .param p0    # Lcom/android/launcher2/MenuTitleBarManager;
 
     iget-object v0, p0, Lcom/android/launcher2/MenuTitleBarManager;->mNormalTitleBar:Landroid/view/ViewGroup;
 
@@ -201,7 +200,6 @@
 
 .method private getSlideDownAnimation(Ljava/util/List;Landroid/view/View;)V
     .locals 7
-    .param p2    # Landroid/view/View;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -281,7 +279,6 @@
 
 .method private getSlideUpAnimation(Ljava/util/List;Landroid/view/View;)V
     .locals 7
-    .param p2    # Landroid/view/View;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -365,8 +362,6 @@
 # virtual methods
 .method public animateInTitleBar(Ljava/util/List;Landroid/view/View;Z)V
     .locals 5
-    .param p2    # Landroid/view/View;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -472,8 +467,6 @@
 
 .method public animateOutTitleBar(Ljava/util/List;Landroid/view/View;Z)V
     .locals 11
-    .param p2    # Landroid/view/View;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -723,8 +716,6 @@
 
 .method public changeTitleBar(Ljava/util/List;Landroid/view/View;Z)V
     .locals 1
-    .param p2    # Landroid/view/View;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -758,8 +749,6 @@
 
 .method public changeTitleBar(Ljava/util/List;Lcom/android/launcher2/MenuAppsGrid$State;Z)V
     .locals 1
-    .param p2    # Lcom/android/launcher2/MenuAppsGrid$State;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -783,8 +772,6 @@
 
 .method public changeTitleBar(Ljava/util/List;Lcom/android/launcher2/MenuWidgets$WidgetState;Z)V
     .locals 1
-    .param p2    # Lcom/android/launcher2/MenuWidgets$WidgetState;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -808,7 +795,6 @@
 
 .method public getActiveTitleBarForState(Lcom/android/launcher2/MenuAppsGrid$State;)Landroid/view/ViewGroup;
     .locals 9
-    .param p1    # Lcom/android/launcher2/MenuAppsGrid$State;
 
     const/4 v5, 0x0
 
@@ -1077,7 +1063,6 @@
 
 .method public getActiveTitleBarForState(Lcom/android/launcher2/MenuWidgets$WidgetState;)Landroid/view/ViewGroup;
     .locals 3
-    .param p1    # Lcom/android/launcher2/MenuWidgets$WidgetState;
 
     sget-object v1, Lcom/android/launcher2/MenuTitleBarManager$4;->$SwitchMap$com$android$launcher2$MenuWidgets$WidgetState:[I
 
@@ -1188,8 +1173,6 @@
 
 .method public hideEditBar(Landroid/animation/Animator;Lcom/android/launcher2/MenuStateAnimatorSet;)V
     .locals 3
-    .param p1    # Landroid/animation/Animator;
-    .param p2    # Lcom/android/launcher2/MenuStateAnimatorSet;
 
     invoke-virtual {p2}, Lcom/android/launcher2/MenuStateAnimatorSet;->end()V
 
@@ -1212,7 +1195,6 @@
 
 .method public init(Lcom/android/launcher2/MenuView;)V
     .locals 4
-    .param p1    # Lcom/android/launcher2/MenuView;
 
     iget-object v2, p0, Lcom/android/launcher2/MenuTitleBarManager;->mNormalTitleBar:Landroid/view/ViewGroup;
 
@@ -1375,7 +1357,6 @@
 
 .method public resetTitleBar(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     const/4 v0, 0x0
 
@@ -1390,7 +1371,6 @@
 
 .method public resetTitleBar(Lcom/android/launcher2/MenuAppsGrid$State;)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/MenuAppsGrid$State;
 
     invoke-virtual {p0, p1}, Lcom/android/launcher2/MenuTitleBarManager;->getActiveTitleBarForState(Lcom/android/launcher2/MenuAppsGrid$State;)Landroid/view/ViewGroup;
 
@@ -1403,7 +1383,6 @@
 
 .method public setEditBarClickListener(Lcom/android/launcher2/MenuAppsGrid$MenuEditTabClickListener;)V
     .locals 4
-    .param p1    # Lcom/android/launcher2/MenuAppsGrid$MenuEditTabClickListener;
 
     iget-object v1, p0, Lcom/android/launcher2/MenuTitleBarManager;->mEditTitleBar:Landroid/view/ViewGroup;
 
@@ -1487,8 +1466,6 @@
 
 .method public setTitleBarVisibility(Landroid/view/View;I)V
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     if-eqz p1, :cond_0
 
@@ -1504,8 +1481,6 @@
 
 .method public setTitleBarVisibility(Lcom/android/launcher2/MenuAppsGrid$State;I)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/MenuAppsGrid$State;
-    .param p2    # I
 
     invoke-virtual {p0, p1}, Lcom/android/launcher2/MenuTitleBarManager;->getActiveTitleBarForState(Lcom/android/launcher2/MenuAppsGrid$State;)Landroid/view/ViewGroup;
 
@@ -1518,12 +1493,6 @@
 
 .method public showEditBar(ZZZZLcom/android/launcher2/MenuStateAnimatorSet;Z)V
     .locals 8
-    .param p1    # Z
-    .param p2    # Z
-    .param p3    # Z
-    .param p4    # Z
-    .param p5    # Lcom/android/launcher2/MenuStateAnimatorSet;
-    .param p6    # Z
 
     iget-object v0, p0, Lcom/android/launcher2/MenuTitleBarManager;->mMenuEditBar:Lcom/android/launcher2/MenuEditBar;
 
@@ -1579,8 +1548,6 @@
 
 .method public slideDownTitleBar(Lcom/android/launcher2/MenuAppsGrid$State;Lcom/android/launcher2/MenuStateAnimatorSet;)V
     .locals 2
-    .param p1    # Lcom/android/launcher2/MenuAppsGrid$State;
-    .param p2    # Lcom/android/launcher2/MenuStateAnimatorSet;
 
     new-instance v0, Ljava/util/ArrayList;
 
@@ -1599,7 +1566,6 @@
 
 .method public slideDownTitleBar(Lcom/android/launcher2/MenuAppsGrid$State;Ljava/util/List;)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/MenuAppsGrid$State;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1622,8 +1588,6 @@
 
 .method public slideUpTitleBar(Lcom/android/launcher2/MenuAppsGrid$State;Lcom/android/launcher2/MenuStateAnimatorSet;)V
     .locals 2
-    .param p1    # Lcom/android/launcher2/MenuAppsGrid$State;
-    .param p2    # Lcom/android/launcher2/MenuStateAnimatorSet;
 
     new-instance v0, Ljava/util/ArrayList;
 
@@ -1642,7 +1606,6 @@
 
 .method public slideUpTitleBar(Lcom/android/launcher2/MenuAppsGrid$State;Ljava/util/List;)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/MenuAppsGrid$State;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

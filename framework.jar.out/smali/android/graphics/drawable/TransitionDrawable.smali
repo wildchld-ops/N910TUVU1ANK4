@@ -62,8 +62,6 @@
 
 .method private constructor <init>(Landroid/graphics/drawable/TransitionDrawable$TransitionState;Landroid/content/res/Resources;)V
     .locals 1
-    .param p1    # Landroid/graphics/drawable/TransitionDrawable$TransitionState;
-    .param p2    # Landroid/content/res/Resources;
 
     invoke-direct {p0, p1, p2}, Landroid/graphics/drawable/LayerDrawable;-><init>(Landroid/graphics/drawable/LayerDrawable$LayerState;Landroid/content/res/Resources;)V
 
@@ -80,9 +78,6 @@
 
 .method synthetic constructor <init>(Landroid/graphics/drawable/TransitionDrawable$TransitionState;Landroid/content/res/Resources;Landroid/graphics/drawable/TransitionDrawable$1;)V
     .locals 0
-    .param p1    # Landroid/graphics/drawable/TransitionDrawable$TransitionState;
-    .param p2    # Landroid/content/res/Resources;
-    .param p3    # Landroid/graphics/drawable/TransitionDrawable$1;
 
     invoke-direct {p0, p1, p2}, Landroid/graphics/drawable/TransitionDrawable;-><init>(Landroid/graphics/drawable/TransitionDrawable$TransitionState;Landroid/content/res/Resources;)V
 
@@ -91,8 +86,6 @@
 
 .method private constructor <init>(Landroid/graphics/drawable/TransitionDrawable$TransitionState;[Landroid/graphics/drawable/Drawable;)V
     .locals 1
-    .param p1    # Landroid/graphics/drawable/TransitionDrawable$TransitionState;
-    .param p2    # [Landroid/graphics/drawable/Drawable;
 
     invoke-direct {p0, p2, p1}, Landroid/graphics/drawable/LayerDrawable;-><init>([Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/LayerDrawable$LayerState;)V
 
@@ -109,7 +102,6 @@
 
 .method public constructor <init>([Landroid/graphics/drawable/Drawable;)V
     .locals 2
-    .param p1    # [Landroid/graphics/drawable/Drawable;
 
     const/4 v1, 0x0
 
@@ -126,8 +118,6 @@
 # virtual methods
 .method createConstantState(Landroid/graphics/drawable/LayerDrawable$LayerState;Landroid/content/res/Resources;)Landroid/graphics/drawable/LayerDrawable$LayerState;
     .locals 1
-    .param p1    # Landroid/graphics/drawable/LayerDrawable$LayerState;
-    .param p2    # Landroid/content/res/Resources;
 
     new-instance v0, Landroid/graphics/drawable/TransitionDrawable$TransitionState;
 
@@ -140,7 +130,6 @@
 
 .method public draw(Landroid/graphics/Canvas;)V
     .locals 14
-    .param p1    # Landroid/graphics/Canvas;
 
     const/high16 v13, 0x3f800000
 
@@ -339,7 +328,6 @@
 
 .method public reverseTransition(I)V
     .locals 9
-    .param p1    # I
 
     const/4 v2, 0x1
 
@@ -462,7 +450,6 @@
 
 .method public setCrossFadeEnabled(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/graphics/drawable/TransitionDrawable;->mCrossFade:Z
 
@@ -471,7 +458,6 @@
 
 .method public startTransition(I)V
     .locals 2
-    .param p1    # I
 
     const/4 v1, 0x0
 

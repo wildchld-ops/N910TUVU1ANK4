@@ -33,8 +33,6 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     # getter for: Lcom/android/server/SEAMService;->mSKLog:Lcom/android/server/SKLogger;
     invoke-static {}, Lcom/android/server/SEAMService;->access$100()Lcom/android/server/SKLogger;

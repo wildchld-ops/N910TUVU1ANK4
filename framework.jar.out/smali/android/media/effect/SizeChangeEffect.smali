@@ -6,12 +6,6 @@
 # direct methods
 .method public varargs constructor <init>(Landroid/media/effect/EffectContext;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Landroid/media/effect/EffectContext;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/Class;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # [Ljava/lang/Object;
 
     invoke-direct/range {p0 .. p6}, Landroid/media/effect/SingleFilterEffect;-><init>(Landroid/media/effect/EffectContext;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
@@ -22,10 +16,6 @@
 # virtual methods
 .method public apply(IIII)V
     .locals 9
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-virtual {p0}, Landroid/media/effect/FilterEffect;->beginGLEffect()V
 

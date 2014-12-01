@@ -83,7 +83,6 @@
 
 .method public constructor <init>(I)V
     .locals 0
-    .param p1    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -94,7 +93,6 @@
 
 .method public constructor <init>(Landroid/content/SyncStatusInfo;)V
     .locals 2
-    .param p1    # Landroid/content/SyncStatusInfo;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -180,7 +178,6 @@
 
 .method public constructor <init>(Landroid/os/Parcel;)V
     .locals 9
-    .param p1    # Landroid/os/Parcel;
 
     const/4 v8, 0x0
 
@@ -378,7 +375,6 @@
 
 .method private ensurePeriodicSyncTimeSize(I)V
     .locals 5
-    .param p1    # I
 
     iget-object v2, p0, Landroid/content/SyncStatusInfo;->periodicSyncTimes:Ljava/util/ArrayList;
 
@@ -442,7 +438,6 @@
 
 .method public getLastFailureMesgAsInt(I)I
     .locals 4
-    .param p1    # I
 
     iget-object v1, p0, Landroid/content/SyncStatusInfo;->lastFailureMesg:Ljava/lang/String;
 
@@ -487,7 +482,6 @@
 
 .method public getPeriodicSyncTime(I)J
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Landroid/content/SyncStatusInfo;->periodicSyncTimes:Ljava/util/ArrayList;
 
@@ -524,7 +518,6 @@
 
 .method public removePeriodicSyncTime(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/content/SyncStatusInfo;->periodicSyncTimes:Ljava/util/ArrayList;
 
@@ -548,8 +541,6 @@
 
 .method public setPeriodicSyncTime(IJ)V
     .locals 2
-    .param p1    # I
-    .param p2    # J
 
     invoke-direct {p0, p1}, Landroid/content/SyncStatusInfo;->ensurePeriodicSyncTimeSize(I)V
 
@@ -566,8 +557,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 8
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     const/4 v4, 0x1
 

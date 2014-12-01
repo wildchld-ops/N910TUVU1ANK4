@@ -14,12 +14,6 @@
 # direct methods
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;FFFFLandroid/graphics/Bitmap;)V
     .locals 7
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # Landroid/graphics/Bitmap;
 
     const/4 v2, 0x0
 
@@ -62,12 +56,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;FFFFLjava/lang/String;)V
     .locals 7
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -110,13 +98,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;FFFFZI)V
     .locals 7
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # Z
-    .param p7    # I
 
     const/4 v2, 0x0
 
@@ -171,12 +152,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;FFFF[B)V
     .locals 7
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # [B
 
     const/4 v2, 0x0
 
@@ -219,11 +194,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;FFFI)V
     .locals 2
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # I
 
     const/4 v1, 0x0
 
@@ -256,10 +226,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;FFI)V
     .locals 2
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # I
 
     const/4 v1, 0x0
 
@@ -292,10 +258,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;FFLandroid/graphics/Bitmap;)V
     .locals 2
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # Landroid/graphics/Bitmap;
 
     const/4 v1, 0x0
 
@@ -328,10 +290,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;FFLjava/lang/String;)V
     .locals 2
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -364,10 +322,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;FF[B)V
     .locals 2
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # [B
 
     const/4 v1, 0x0
 
@@ -400,8 +354,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;Landroid/graphics/Bitmap;)V
     .locals 2
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # Landroid/graphics/Bitmap;
 
     const/4 v1, 0x0
 
@@ -434,8 +386,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -468,8 +418,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;[B)V
     .locals 2
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # [B
 
     const/4 v1, 0x0
 
@@ -681,7 +629,6 @@
 
 .method public setFlip(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/sec/android/glview/TwGLImage;->mImage:Lcom/sec/android/glview/TwGLTexture;
 
@@ -697,7 +644,6 @@
 
 .method public setHeight(F)V
     .locals 1
-    .param p1    # F
 
     invoke-super {p0, p1}, Lcom/sec/android/glview/TwGLView;->setHeight(F)V
 
@@ -715,7 +661,6 @@
 
 .method public setImageResources(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -750,7 +695,6 @@
 
 .method public setImageResources(Landroid/graphics/Bitmap;)V
     .locals 3
-    .param p1    # Landroid/graphics/Bitmap;
 
     const/4 v2, 0x0
 
@@ -790,8 +734,6 @@
 
 .method public setResourceOffset(FF)Z
     .locals 5
-    .param p1    # F
-    .param p2    # F
 
     iget-object v2, p0, Lcom/sec/android/glview/TwGLImage;->mImage:Lcom/sec/android/glview/TwGLTexture;
 
@@ -885,7 +827,6 @@
 
 .method public setSampleSize(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/glview/TwGLImage;->mImage:Lcom/sec/android/glview/TwGLTexture;
 
@@ -925,8 +866,6 @@
 
 .method public setSize(FF)V
     .locals 1
-    .param p1    # F
-    .param p2    # F
 
     invoke-super {p0, p1, p2}, Lcom/sec/android/glview/TwGLView;->setSize(FF)V
 
@@ -944,7 +883,6 @@
 
 .method public setWidth(F)V
     .locals 1
-    .param p1    # F
 
     invoke-super {p0, p1}, Lcom/sec/android/glview/TwGLView;->setWidth(F)V
 

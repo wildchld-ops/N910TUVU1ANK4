@@ -36,7 +36,6 @@
 # virtual methods
 .method public onShow(Landroid/content/DialogInterface;)V
     .locals 4
-    .param p1    # Landroid/content/DialogInterface;
 
     iget-object v2, p0, Lcom/android/mms/ui/MessageDatabaseBackupActivity$CryptoKeyDialog$1;->this$1:Lcom/android/mms/ui/MessageDatabaseBackupActivity$CryptoKeyDialog;
 

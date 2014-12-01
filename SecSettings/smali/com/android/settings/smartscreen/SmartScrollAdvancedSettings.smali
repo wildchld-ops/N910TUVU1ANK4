@@ -91,7 +91,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/smartscreen/SmartScrollAdvancedSettings;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/smartscreen/SmartScrollAdvancedSettings;
 
     invoke-virtual {p0}, Lcom/android/settings/smartscreen/SmartScrollAdvancedSettings;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -102,8 +101,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/smartscreen/SmartScrollAdvancedSettings;I)V
     .locals 0
-    .param p0    # Lcom/android/settings/smartscreen/SmartScrollAdvancedSettings;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/settings/smartscreen/SmartScrollAdvancedSettings;->updateSmartScrollMode(I)V
 
@@ -112,7 +109,6 @@
 
 .method static synthetic access$1000(Lcom/android/settings/smartscreen/SmartScrollAdvancedSettings;)Landroid/preference/CheckBoxPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/smartscreen/SmartScrollAdvancedSettings;
 
     iget-object v0, p0, Lcom/android/settings/smartscreen/SmartScrollAdvancedSettings;->mSmartScrollWeb:Landroid/preference/CheckBoxPreference;
 
@@ -121,7 +117,6 @@
 
 .method static synthetic access$1100(Lcom/android/settings/smartscreen/SmartScrollAdvancedSettings;)Landroid/preference/CheckBoxPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/smartscreen/SmartScrollAdvancedSettings;
 
     iget-object v0, p0, Lcom/android/settings/smartscreen/SmartScrollAdvancedSettings;->mSmartScrollEmailList:Landroid/preference/CheckBoxPreference;
 
@@ -130,7 +125,6 @@
 
 .method static synthetic access$1200(Lcom/android/settings/smartscreen/SmartScrollAdvancedSettings;)Landroid/preference/CheckBoxPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/smartscreen/SmartScrollAdvancedSettings;
 
     iget-object v0, p0, Lcom/android/settings/smartscreen/SmartScrollAdvancedSettings;->mSmartScrollEmailBody:Landroid/preference/CheckBoxPreference;
 
@@ -139,7 +133,6 @@
 
 .method static synthetic access$1300(Lcom/android/settings/smartscreen/SmartScrollAdvancedSettings;)Landroid/preference/CheckBoxPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/smartscreen/SmartScrollAdvancedSettings;
 
     iget-object v0, p0, Lcom/android/settings/smartscreen/SmartScrollAdvancedSettings;->mSmartScrollReadersHub:Landroid/preference/CheckBoxPreference;
 
@@ -148,7 +141,6 @@
 
 .method static synthetic access$1400(Lcom/android/settings/smartscreen/SmartScrollAdvancedSettings;)Landroid/preference/CheckBoxPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/smartscreen/SmartScrollAdvancedSettings;
 
     iget-object v0, p0, Lcom/android/settings/smartscreen/SmartScrollAdvancedSettings;->mSmartScrollChrome:Landroid/preference/CheckBoxPreference;
 
@@ -157,7 +149,6 @@
 
 .method static synthetic access$1500(Lcom/android/settings/smartscreen/SmartScrollAdvancedSettings;)Landroid/preference/CheckBoxPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/smartscreen/SmartScrollAdvancedSettings;
 
     iget-object v0, p0, Lcom/android/settings/smartscreen/SmartScrollAdvancedSettings;->mSmartScrollGmailBody:Landroid/preference/CheckBoxPreference;
 
@@ -166,7 +157,6 @@
 
 .method static synthetic access$1600(Lcom/android/settings/smartscreen/SmartScrollAdvancedSettings;)Lcom/android/settings/RadioPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/smartscreen/SmartScrollAdvancedSettings;
 
     iget-object v0, p0, Lcom/android/settings/smartscreen/SmartScrollAdvancedSettings;->mRadioScrollMode0:Lcom/android/settings/RadioPreference;
 
@@ -175,7 +165,6 @@
 
 .method static synthetic access$1700(Lcom/android/settings/smartscreen/SmartScrollAdvancedSettings;)Lcom/android/settings/RadioPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/smartscreen/SmartScrollAdvancedSettings;
 
     iget-object v0, p0, Lcom/android/settings/smartscreen/SmartScrollAdvancedSettings;->mRadioScrollMode1:Lcom/android/settings/RadioPreference;
 
@@ -184,9 +173,6 @@
 
 .method static synthetic access$1800(Lcom/android/settings/smartscreen/SmartScrollAdvancedSettings;II)V
     .locals 0
-    .param p0    # Lcom/android/settings/smartscreen/SmartScrollAdvancedSettings;
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/settings/smartscreen/SmartScrollAdvancedSettings;->showAllOptionDisabledDialog(II)V
 
@@ -195,7 +181,6 @@
 
 .method static synthetic access$1900(Lcom/android/settings/smartscreen/SmartScrollAdvancedSettings;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/smartscreen/SmartScrollAdvancedSettings;
 
     invoke-virtual {p0}, Lcom/android/settings/smartscreen/SmartScrollAdvancedSettings;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -206,7 +191,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/smartscreen/SmartScrollAdvancedSettings;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/smartscreen/SmartScrollAdvancedSettings;
 
     iget-object v0, p0, Lcom/android/settings/smartscreen/SmartScrollAdvancedSettings;->mResolver:Landroid/content/ContentResolver;
 
@@ -215,7 +199,6 @@
 
 .method static synthetic access$2000(Lcom/android/settings/smartscreen/SmartScrollAdvancedSettings;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/smartscreen/SmartScrollAdvancedSettings;
 
     invoke-virtual {p0}, Lcom/android/settings/smartscreen/SmartScrollAdvancedSettings;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -226,9 +209,6 @@
 
 .method static synthetic access$2100(Lcom/android/settings/smartscreen/SmartScrollAdvancedSettings;Ljava/lang/String;Z)V
     .locals 0
-    .param p0    # Lcom/android/settings/smartscreen/SmartScrollAdvancedSettings;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/settings/smartscreen/SmartScrollAdvancedSettings;->broadcastStatusChanged(Ljava/lang/String;Z)V
 
@@ -237,7 +217,6 @@
 
 .method static synthetic access$2200(Lcom/android/settings/smartscreen/SmartScrollAdvancedSettings;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/smartscreen/SmartScrollAdvancedSettings;
 
     invoke-virtual {p0}, Lcom/android/settings/smartscreen/SmartScrollAdvancedSettings;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -248,7 +227,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/smartscreen/SmartScrollAdvancedSettings;)Landroid/widget/Switch;
     .locals 1
-    .param p0    # Lcom/android/settings/smartscreen/SmartScrollAdvancedSettings;
 
     iget-object v0, p0, Lcom/android/settings/smartscreen/SmartScrollAdvancedSettings;->mActionBarSwitch:Landroid/widget/Switch;
 
@@ -257,7 +235,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/smartscreen/SmartScrollAdvancedSettings;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/smartscreen/SmartScrollAdvancedSettings;
 
     invoke-virtual {p0}, Lcom/android/settings/smartscreen/SmartScrollAdvancedSettings;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -268,7 +245,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/smartscreen/SmartScrollAdvancedSettings;)Landroid/preference/Preference;
     .locals 1
-    .param p0    # Lcom/android/settings/smartscreen/SmartScrollAdvancedSettings;
 
     iget-object v0, p0, Lcom/android/settings/smartscreen/SmartScrollAdvancedSettings;->mSmartScrollType:Landroid/preference/Preference;
 
@@ -277,7 +253,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/smartscreen/SmartScrollAdvancedSettings;)Landroid/preference/Preference;
     .locals 1
-    .param p0    # Lcom/android/settings/smartscreen/SmartScrollAdvancedSettings;
 
     iget-object v0, p0, Lcom/android/settings/smartscreen/SmartScrollAdvancedSettings;->mSmartScrollSensitivity:Landroid/preference/Preference;
 
@@ -286,7 +261,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/smartscreen/SmartScrollAdvancedSettings;)Landroid/preference/Preference;
     .locals 1
-    .param p0    # Lcom/android/settings/smartscreen/SmartScrollAdvancedSettings;
 
     iget-object v0, p0, Lcom/android/settings/smartscreen/SmartScrollAdvancedSettings;->mSmartScrollUnit:Landroid/preference/Preference;
 
@@ -295,7 +269,6 @@
 
 .method static synthetic access$800(Lcom/android/settings/smartscreen/SmartScrollAdvancedSettings;)Landroid/preference/Preference;
     .locals 1
-    .param p0    # Lcom/android/settings/smartscreen/SmartScrollAdvancedSettings;
 
     iget-object v0, p0, Lcom/android/settings/smartscreen/SmartScrollAdvancedSettings;->mSmartScrollAcceleration:Landroid/preference/Preference;
 
@@ -304,7 +277,6 @@
 
 .method static synthetic access$900(Lcom/android/settings/smartscreen/SmartScrollAdvancedSettings;)Landroid/preference/CheckBoxPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/smartscreen/SmartScrollAdvancedSettings;
 
     iget-object v0, p0, Lcom/android/settings/smartscreen/SmartScrollAdvancedSettings;->mSmartScrollVisualFeedbackIcon:Landroid/preference/CheckBoxPreference;
 
@@ -313,8 +285,6 @@
 
 .method private broadcastStatusChanged(Ljava/lang/String;Z)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     new-instance v0, Landroid/content/Intent;
 
@@ -399,8 +369,6 @@
 
 .method private showAllOptionDisabledDialog(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
@@ -449,7 +417,6 @@
 
 .method private updateSmartScrollMode(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v2, 0x1
 
@@ -542,8 +509,6 @@
 
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 7
-    .param p1    # Landroid/widget/CompoundButton;
-    .param p2    # Z
 
     const/4 v3, 0x1
 
@@ -692,7 +657,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 7
-    .param p1    # Landroid/os/Bundle;
 
     const/16 v4, 0x10
 
@@ -1102,8 +1066,6 @@
 
 .method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
     .locals 6
-    .param p1    # Landroid/preference/Preference;
-    .param p2    # Ljava/lang/Object;
 
     const/4 v3, 0x0
 
@@ -1183,7 +1145,6 @@
 
 .method public onPreferenceClick(Landroid/preference/Preference;)Z
     .locals 5
-    .param p1    # Landroid/preference/Preference;
 
     iget-object v2, p0, Lcom/android/settings/smartscreen/SmartScrollAdvancedSettings;->mSmartScrollSensitivity:Landroid/preference/Preference;
 
@@ -1246,8 +1207,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 7
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     const/4 v3, 0x1
 

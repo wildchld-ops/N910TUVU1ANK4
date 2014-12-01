@@ -59,8 +59,6 @@
 
 .method public static fromContext(Landroid/content/Context;I)Landroid/content/Intent$ShortcutIconResource;
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     new-instance v0, Landroid/content/Intent$ShortcutIconResource;
 
@@ -105,8 +103,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v0, p0, Landroid/content/Intent$ShortcutIconResource;->packageName:Ljava/lang/String;
 

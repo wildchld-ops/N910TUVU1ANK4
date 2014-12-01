@@ -70,7 +70,6 @@
 
 .method public static isAutoMirrored(Landroid/graphics/drawable/Drawable;)Z
     .locals 1
-    .param p0    # Landroid/graphics/drawable/Drawable;
 
     sget-object v0, Landroid/support/v4/graphics/drawable/DrawableCompat;->IMPL:Landroid/support/v4/graphics/drawable/DrawableCompat$DrawableImpl;
 
@@ -83,7 +82,6 @@
 
 .method public static jumpToCurrentState(Landroid/graphics/drawable/Drawable;)V
     .locals 1
-    .param p0    # Landroid/graphics/drawable/Drawable;
 
     sget-object v0, Landroid/support/v4/graphics/drawable/DrawableCompat;->IMPL:Landroid/support/v4/graphics/drawable/DrawableCompat$DrawableImpl;
 
@@ -94,8 +92,6 @@
 
 .method public static setAutoMirrored(Landroid/graphics/drawable/Drawable;Z)V
     .locals 1
-    .param p0    # Landroid/graphics/drawable/Drawable;
-    .param p1    # Z
 
     sget-object v0, Landroid/support/v4/graphics/drawable/DrawableCompat;->IMPL:Landroid/support/v4/graphics/drawable/DrawableCompat$DrawableImpl;
 

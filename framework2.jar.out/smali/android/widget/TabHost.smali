@@ -68,7 +68,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     const/4 v2, 0x0
 
@@ -97,8 +96,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v4, 0x0
 
@@ -156,7 +153,6 @@
 
 .method static synthetic access$100(Landroid/widget/TabHost;)Landroid/widget/FrameLayout;
     .locals 1
-    .param p0    # Landroid/widget/TabHost;
 
     iget-object v0, p0, Landroid/widget/TabHost;->mTabContent:Landroid/widget/FrameLayout;
 
@@ -165,7 +161,6 @@
 
 .method static synthetic access$1000(Landroid/widget/TabHost;)Landroid/widget/TabWidget;
     .locals 1
-    .param p0    # Landroid/widget/TabHost;
 
     iget-object v0, p0, Landroid/widget/TabHost;->mTabWidget:Landroid/widget/TabWidget;
 
@@ -174,7 +169,6 @@
 
 .method static synthetic access$900(Landroid/widget/TabHost;)I
     .locals 1
-    .param p0    # Landroid/widget/TabHost;
 
     iget v0, p0, Landroid/widget/TabHost;->mTabLayoutId:I
 
@@ -294,7 +288,6 @@
 # virtual methods
 .method public addTab(Landroid/widget/TabHost$TabSpec;)V
     .locals 4
-    .param p1    # Landroid/widget/TabHost$TabSpec;
 
     const/4 v3, 0x0
 
@@ -403,7 +396,6 @@
 
 .method public dispatchKeyEvent(Landroid/view/KeyEvent;)Z
     .locals 6
-    .param p1    # Landroid/view/KeyEvent;
 
     invoke-super {p0, p1}, Landroid/view/ViewGroup;->dispatchKeyEvent(Landroid/view/KeyEvent;)Z
 
@@ -532,7 +524,6 @@
 
 .method public dispatchWindowFocusChanged(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Landroid/widget/TabHost;->mCurrentView:Landroid/view/View;
 
@@ -654,7 +645,6 @@
 
 .method public newTabSpec(Ljava/lang/String;)Landroid/widget/TabHost$TabSpec;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Landroid/widget/TabHost$TabSpec;
 
@@ -695,7 +685,6 @@
 
 .method public onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
     .locals 1
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
 
     invoke-super {p0, p1}, Landroid/widget/FrameLayout;->onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
 
@@ -712,7 +701,6 @@
 
 .method public onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
     .locals 1
-    .param p1    # Landroid/view/accessibility/AccessibilityNodeInfo;
 
     invoke-super {p0, p1}, Landroid/widget/FrameLayout;->onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
 
@@ -729,7 +717,6 @@
 
 .method public onTouchModeChanged(Z)V
     .locals 2
-    .param p1    # Z
 
     if-nez p1, :cond_1
 
@@ -770,14 +757,12 @@
 
 .method public sendAccessibilityEvent(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public setCurrentTab(I)V
     .locals 6
-    .param p1    # I
 
     const/4 v5, -0x1
 
@@ -953,7 +938,6 @@
 
 .method public setCurrentTabByTag(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -997,7 +981,6 @@
 
 .method public setOnTabChangedListener(Landroid/widget/TabHost$OnTabChangeListener;)V
     .locals 0
-    .param p1    # Landroid/widget/TabHost$OnTabChangeListener;
 
     iput-object p1, p0, Landroid/widget/TabHost;->mOnTabChangeListener:Landroid/widget/TabHost$OnTabChangeListener;
 
@@ -1072,7 +1055,6 @@
 
 .method public setup(Landroid/app/LocalActivityManager;)V
     .locals 0
-    .param p1    # Landroid/app/LocalActivityManager;
 
     invoke-virtual {p0}, Landroid/widget/TabHost;->setup()V
 

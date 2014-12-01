@@ -57,8 +57,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/settings/KeyguardAppWidgetPickActivity$Item;Landroid/content/Context;Landroid/widget/ImageView;)V
     .locals 2
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/widget/ImageView;
 
     iput-object p1, p0, Lcom/android/settings/KeyguardAppWidgetPickActivity$Item$WidgetPreviewLoader;->this$0:Lcom/android/settings/KeyguardAppWidgetPickActivity$Item;
 
@@ -121,11 +119,6 @@
 
 .method private getWidgetPreview(Landroid/content/ComponentName;IIII)Landroid/graphics/Bitmap;
     .locals 26
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-virtual/range {p1 .. p1}, Landroid/content/ComponentName;->getPackageName()Ljava/lang/String;
 
@@ -479,12 +472,6 @@
 
 .method private renderDrawableToBitmap(Landroid/graphics/drawable/Drawable;Landroid/graphics/Bitmap;IIII)V
     .locals 8
-    .param p1    # Landroid/graphics/drawable/Drawable;
-    .param p2    # Landroid/graphics/Bitmap;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     const/high16 v7, 0x3f800000
 
@@ -509,13 +496,6 @@
 
 .method private renderDrawableToBitmap(Landroid/graphics/drawable/Drawable;Landroid/graphics/Bitmap;IIIIF)V
     .locals 4
-    .param p1    # Landroid/graphics/drawable/Drawable;
-    .param p2    # Landroid/graphics/Bitmap;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # F
 
     if-eqz p2, :cond_0
 
@@ -551,7 +531,6 @@
 # virtual methods
 .method public bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [Ljava/lang/Void;
 
@@ -564,7 +543,6 @@
 
 .method public varargs doInBackground([Ljava/lang/Void;)Ljava/lang/Void;
     .locals 7
-    .param p1    # [Ljava/lang/Void;
 
     invoke-virtual {p0}, Landroid/os/AsyncTask;->isCancelled()Z
 
@@ -648,8 +626,6 @@
 
 .method public getFullResIcon(Landroid/content/res/Resources;I)Landroid/graphics/drawable/Drawable;
     .locals 3
-    .param p1    # Landroid/content/res/Resources;
-    .param p2    # I
 
     :try_start_0
     iget v2, p0, Lcom/android/settings/KeyguardAppWidgetPickActivity$Item$WidgetPreviewLoader;->mIconDpi:I
@@ -683,8 +659,6 @@
 
 .method public getFullResIcon(Ljava/lang/String;I)Landroid/graphics/drawable/Drawable;
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     :try_start_0
     iget-object v2, p0, Lcom/android/settings/KeyguardAppWidgetPickActivity$Item$WidgetPreviewLoader;->mPackageManager:Landroid/content/pm/PackageManager;
@@ -724,7 +698,6 @@
 
 .method public varargs onProgressUpdate([Landroid/graphics/Bitmap;)V
     .locals 2
-    .param p1    # [Landroid/graphics/Bitmap;
 
     invoke-virtual {p0}, Landroid/os/AsyncTask;->isCancelled()Z
 
@@ -746,7 +719,6 @@
 
 .method public bridge synthetic onProgressUpdate([Ljava/lang/Object;)V
     .locals 0
-    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [Landroid/graphics/Bitmap;
 

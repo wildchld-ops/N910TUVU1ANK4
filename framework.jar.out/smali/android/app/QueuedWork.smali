@@ -45,7 +45,6 @@
 
 .method public static add(Ljava/lang/Runnable;)V
     .locals 1
-    .param p0    # Ljava/lang/Runnable;
 
     sget-object v0, Landroid/app/QueuedWork;->sPendingWorkFinishers:Ljava/util/concurrent/ConcurrentLinkedQueue;
 
@@ -78,7 +77,6 @@
 
 .method public static remove(Ljava/lang/Runnable;)V
     .locals 1
-    .param p0    # Ljava/lang/Runnable;
 
     sget-object v0, Landroid/app/QueuedWork;->sPendingWorkFinishers:Ljava/util/concurrent/ConcurrentLinkedQueue;
 

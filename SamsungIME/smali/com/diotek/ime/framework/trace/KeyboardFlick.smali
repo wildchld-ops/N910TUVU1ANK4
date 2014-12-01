@@ -493,7 +493,6 @@
 
 .method private getDirectionIndex(I)I
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lcom/diotek/ime/framework/trace/KeyboardFlick;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -634,7 +633,6 @@
 # virtual methods
 .method public checkNeedMove(Landroid/view/MotionEvent;)I
     .locals 14
-    .param p1    # Landroid/view/MotionEvent;
 
     const-wide v12, 0x3fe999999999999aL
 
@@ -865,9 +863,6 @@
 
 .method public setDownPosition(Landroid/view/MotionEvent;ILcom/diotek/ime/framework/view/Keyboard$Key;)V
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # I
-    .param p3    # Lcom/diotek/ime/framework/view/Keyboard$Key;
 
     if-eqz p1, :cond_0
 
@@ -899,7 +894,6 @@
 
 .method public setFlickKeyIndex(I)V
     .locals 1
-    .param p1    # I
 
     iput p1, p0, Lcom/diotek/ime/framework/trace/KeyboardFlick;->mFlickKeyIndex:I
 

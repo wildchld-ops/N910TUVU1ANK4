@@ -44,8 +44,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/launcher2/AppIconView;Lcom/android/launcher2/BaseItem;)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/AppIconView;
-    .param p2    # Lcom/android/launcher2/BaseItem;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -68,7 +66,6 @@
 # virtual methods
 .method public onShadowGenerated(Landroid/graphics/Bitmap;)V
     .locals 3
-    .param p1    # Landroid/graphics/Bitmap;
 
     iget-object v2, p0, Lcom/android/launcher2/AppIconView$ShadowReadyCallback;->mItemRef:Ljava/lang/ref/WeakReference;
 

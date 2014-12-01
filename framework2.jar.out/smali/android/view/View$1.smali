@@ -42,7 +42,6 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 8
-    .param p1    # Landroid/view/View;
 
     iget-object v3, p0, Landroid/view/View$1;->mHandler:Ljava/lang/reflect/Method;
 

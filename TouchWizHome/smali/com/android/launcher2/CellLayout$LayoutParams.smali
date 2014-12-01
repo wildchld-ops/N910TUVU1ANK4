@@ -149,10 +149,6 @@
 
 .method public constructor <init>(IIII)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/4 v0, -0x1
 
@@ -175,8 +171,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x1
 
@@ -193,7 +187,6 @@
 
 .method public constructor <init>(Landroid/view/ViewGroup$LayoutParams;)V
     .locals 1
-    .param p1    # Landroid/view/ViewGroup$LayoutParams;
 
     const/4 v0, 0x1
 
@@ -210,7 +203,6 @@
 
 .method public constructor <init>(Lcom/android/launcher2/CellLayout$LayoutParams;)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/CellLayout$LayoutParams;
 
     invoke-direct {p0, p1}, Landroid/view/ViewGroup$MarginLayoutParams;-><init>(Landroid/view/ViewGroup$MarginLayoutParams;)V
 
@@ -241,8 +233,6 @@
 # virtual methods
 .method public containsPt(II)Z
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -314,7 +304,6 @@
 
 .method public setHeight(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/view/ViewGroup$LayoutParams;->height:I
 
@@ -323,7 +312,6 @@
 
 .method public setWidth(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/view/ViewGroup$LayoutParams;->width:I
 
@@ -332,7 +320,6 @@
 
 .method public setX(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/launcher2/CellLayout$LayoutParams;->x:I
 
@@ -341,7 +328,6 @@
 
 .method public setY(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/launcher2/CellLayout$LayoutParams;->y:I
 
@@ -350,10 +336,6 @@
 
 .method public setup(IIII)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iget-boolean v0, p0, Lcom/android/launcher2/CellLayout$LayoutParams;->isLockedToGrid:Z
 

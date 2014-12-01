@@ -72,7 +72,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/ClipboardService;I)V
     .locals 1
-    .param p2    # I
 
     iput-object p1, p0, Lcom/android/server/ClipboardService$PerUserClipboard;->this$0:Lcom/android/server/ClipboardService;
 

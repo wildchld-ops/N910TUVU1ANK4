@@ -25,10 +25,6 @@
 # direct methods
 .method protected constructor <init>(ILandroid/content/Context;Landroid/os/Looper;Ljava/util/concurrent/CopyOnWriteArrayList;Landroid/hardware/contextaware/dataprovider/sensorhubprovider/ISensorHubResetObservable;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/os/Looper;
-    .param p5    # Landroid/hardware/contextaware/dataprovider/sensorhubprovider/ISensorHubResetObservable;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -142,7 +138,6 @@
 
 .method protected final disableForStop(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
@@ -191,14 +186,12 @@
 
 .method protected final enableForStart(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method protected final getContextInfo(Landroid/hardware/contextaware/manager/ContextAwareService$Listener;)V
     .locals 1
-    .param p1    # Landroid/hardware/contextaware/manager/ContextAwareService$Listener;
 
     sget-object v0, Landroid/hardware/contextaware/manager/ContextAwareServiceErrors;->ERROR_NOT_SUPPORT_CMD:Landroid/hardware/contextaware/manager/ContextAwareServiceErrors;
 
@@ -255,7 +248,6 @@
 
 .method protected final getSubCollectionObj(Ljava/lang/String;)Landroid/hardware/contextaware/manager/ContextComponent;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -496,8 +488,6 @@
 
 .method public final start(Landroid/hardware/contextaware/manager/ContextAwareService$Listener;I)V
     .locals 3
-    .param p1    # Landroid/hardware/contextaware/manager/ContextAwareService$Listener;
-    .param p2    # I
 
     invoke-virtual {p0}, Landroid/hardware/contextaware/aggregator/Aggregator;->initializeFaultDetectionResult()V
 
@@ -543,8 +533,6 @@
 
 .method public final stop(Landroid/hardware/contextaware/manager/ContextAwareService$Listener;I)V
     .locals 3
-    .param p1    # Landroid/hardware/contextaware/manager/ContextAwareService$Listener;
-    .param p2    # I
 
     invoke-virtual {p0}, Landroid/hardware/contextaware/aggregator/Aggregator;->initializeFaultDetectionResult()V
 
@@ -655,8 +643,6 @@
 
 .method public final updateCmdProcessResult(Ljava/lang/String;Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Bundle;
 
     sget-object v0, Landroid/hardware/contextaware/ContextList$ContextType;->CMD_PROCESS_FAULT_DETECTION:Landroid/hardware/contextaware/ContextList$ContextType;
 

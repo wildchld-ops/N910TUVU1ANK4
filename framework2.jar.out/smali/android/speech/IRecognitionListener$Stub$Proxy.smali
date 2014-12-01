@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -94,7 +93,6 @@
 
 .method public onBufferReceived([B)V
     .locals 5
-    .param p1    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -179,7 +177,6 @@
 
 .method public onError(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -223,8 +220,6 @@
 
 .method public onEvent(ILandroid/os/Bundle;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -289,7 +284,6 @@
 
 .method public onPartialResults(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -352,7 +346,6 @@
 
 .method public onReadyForSpeech(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -415,7 +408,6 @@
 
 .method public onResults(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -478,7 +470,6 @@
 
 .method public onRmsChanged(F)V
     .locals 5
-    .param p1    # F
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

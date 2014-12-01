@@ -50,8 +50,6 @@
 # virtual methods
 .method public iterate(Lcom/android/launcher2/BaseItem;Ljava/lang/Integer;)Z
     .locals 2
-    .param p1    # Lcom/android/launcher2/BaseItem;
-    .param p2    # Ljava/lang/Integer;
 
     invoke-static {p1}, Lcom/android/launcher2/BaseItem;->isWidget(Lcom/android/launcher2/BaseItem;)Z
 
@@ -85,8 +83,6 @@
 
 .method public bridge synthetic iterate(Lcom/android/launcher2/BaseItem;Ljava/lang/Object;)Z
     .locals 1
-    .param p1    # Lcom/android/launcher2/BaseItem;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p2, Ljava/lang/Integer;
 

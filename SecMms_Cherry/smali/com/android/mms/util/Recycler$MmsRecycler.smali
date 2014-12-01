@@ -105,10 +105,6 @@
 
 .method private deleteMessagesOlderThanDate(Landroid/content/Context;JJI)V
     .locals 9
-    .param p1    # Landroid/content/Context;
-    .param p2    # J
-    .param p4    # J
-    .param p6    # I
 
     const/16 v0, 0xc8
 
@@ -247,8 +243,6 @@
 
 .method private deleteMessagesWithIds(Landroid/content/Context;Ljava/lang/String;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
 
     const-wide/16 v0, 0x0
 
@@ -317,11 +311,6 @@
 
 .method private getSegmentedLastDate(Landroid/content/Context;Landroid/content/ContentResolver;JJ[Ljava/lang/String;)J
     .locals 12
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/ContentResolver;
-    .param p3    # J
-    .param p5    # J
-    .param p7    # [Ljava/lang/String;
 
     const-wide/16 v10, 0x0
 
@@ -516,10 +505,6 @@
 
 .method private segmentedDelete(Landroid/content/Context;Landroid/content/ContentResolver;JJ)J
     .locals 12
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/ContentResolver;
-    .param p3    # J
-    .param p5    # J
 
     const/4 v11, 0x0
 
@@ -618,7 +603,6 @@
 # virtual methods
 .method protected anyThreadOverLimit(Landroid/content/Context;)Z
     .locals 14
-    .param p1    # Landroid/content/Context;
 
     const/4 v13, 0x0
 
@@ -819,9 +803,6 @@
 
 .method protected deleteMessagesForThread(Landroid/content/Context;JI)V
     .locals 19
-    .param p1    # Landroid/content/Context;
-    .param p2    # J
-    .param p4    # I
 
     const-string v2, "Mms/Recycler:MMS"
 
@@ -1401,8 +1382,6 @@
 
 .method public deleteOldMessagesInSameThreadAsMessage(Landroid/content/Context;Landroid/net/Uri;)V
     .locals 24
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/net/Uri;
 
     const-string v2, "Mms/Recycler:MMS"
 
@@ -2053,8 +2032,6 @@
 
 .method protected dumpMessage(Landroid/database/Cursor;Landroid/content/Context;)V
     .locals 5
-    .param p1    # Landroid/database/Cursor;
-    .param p2    # Landroid/content/Context;
 
     const/4 v2, 0x0
 
@@ -2089,7 +2066,6 @@
 
 .method protected getAllThreads(Landroid/content/Context;)Landroid/database/Cursor;
     .locals 8
-    .param p1    # Landroid/content/Context;
 
     const/4 v4, 0x0
 
@@ -2122,7 +2098,6 @@
 
 .method public getMessageLimit(Landroid/content/Context;)I
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     invoke-static {p1}, Landroid/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -2151,7 +2126,6 @@
 
 .method protected getThreadId(Landroid/database/Cursor;)J
     .locals 2
-    .param p1    # Landroid/database/Cursor;
 
     const/4 v0, 0x0
 
@@ -2164,8 +2138,6 @@
 
 .method public setMessageLimit(Landroid/content/Context;I)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     invoke-static {p1}, Landroid/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 

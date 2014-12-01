@@ -80,8 +80,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/graphics/drawable/Drawable;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/graphics/drawable/Drawable;
 
     invoke-direct {p0}, Landroid/graphics/drawable/Drawable;-><init>()V
 
@@ -139,7 +137,6 @@
 # virtual methods
 .method public draw(Landroid/graphics/Canvas;)V
     .locals 4
-    .param p1    # Landroid/graphics/Canvas;
 
     const v2, 0x3d4ccccd
 
@@ -307,7 +304,6 @@
 
 .method public onBoundsChange(Landroid/graphics/Rect;)V
     .locals 2
-    .param p1    # Landroid/graphics/Rect;
 
     iget-object v0, p0, Lcom/android/launcher2/NewPageDrawable;->mBounds:Landroid/graphics/Rect;
 
@@ -339,7 +335,6 @@
 
 .method protected onLevelChange(I)Z
     .locals 8
-    .param p1    # I
 
     const-wide/16 v6, 0xc8
 
@@ -451,7 +446,6 @@
 
 .method protected onStateChange([I)Z
     .locals 11
-    .param p1    # [I
 
     const-wide/16 v9, 0xc8
 
@@ -610,21 +604,18 @@
 
 .method public setAlpha(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public setColorFilter(Landroid/graphics/ColorFilter;)V
     .locals 0
-    .param p1    # Landroid/graphics/ColorFilter;
 
     return-void
 .end method
 
 .method public setOpenFactor(F)V
     .locals 0
-    .param p1    # F
 
     iput p1, p0, Lcom/android/launcher2/NewPageDrawable;->mOpenFactor:F
 
@@ -635,7 +626,6 @@
 
 .method public setScaleFactor(F)V
     .locals 6
-    .param p1    # F
 
     const/high16 v5, 0x40000000
 

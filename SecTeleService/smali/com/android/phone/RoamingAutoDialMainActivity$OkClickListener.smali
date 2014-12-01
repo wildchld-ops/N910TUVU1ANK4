@@ -51,7 +51,7 @@
 
     iget-object v0, p0, Lcom/android/phone/RoamingAutoDialMainActivity$OkClickListener;->this$0:Lcom/android/phone/RoamingAutoDialMainActivity;
 
-    invoke-virtual {v0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {v0}, Lcom/android/phone/RoamingAutoDialMainActivity;->finish()V
 
     return-void
 .end method

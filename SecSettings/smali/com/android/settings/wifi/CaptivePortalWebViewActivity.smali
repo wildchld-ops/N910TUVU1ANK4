@@ -51,7 +51,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/wifi/CaptivePortalWebViewActivity;)Lcom/android/settings/wifi/CaptivePortalWebViewActivity$CaptivePortalCheckTask;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/CaptivePortalWebViewActivity;
 
     iget-object v0, p0, Lcom/android/settings/wifi/CaptivePortalWebViewActivity;->mCaptiveCheckTask:Lcom/android/settings/wifi/CaptivePortalWebViewActivity$CaptivePortalCheckTask;
 
@@ -60,8 +59,6 @@
 
 .method static synthetic access$102(Lcom/android/settings/wifi/CaptivePortalWebViewActivity;Lcom/android/settings/wifi/CaptivePortalWebViewActivity$CaptivePortalCheckTask;)Lcom/android/settings/wifi/CaptivePortalWebViewActivity$CaptivePortalCheckTask;
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/CaptivePortalWebViewActivity;
-    .param p1    # Lcom/android/settings/wifi/CaptivePortalWebViewActivity$CaptivePortalCheckTask;
 
     iput-object p1, p0, Lcom/android/settings/wifi/CaptivePortalWebViewActivity;->mCaptiveCheckTask:Lcom/android/settings/wifi/CaptivePortalWebViewActivity$CaptivePortalCheckTask;
 
@@ -70,10 +67,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/wifi/CaptivePortalWebViewActivity;Landroid/webkit/WebView;Landroid/webkit/SslErrorHandler;Landroid/net/http/SslError;)Landroid/app/AlertDialog$Builder;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/CaptivePortalWebViewActivity;
-    .param p1    # Landroid/webkit/WebView;
-    .param p2    # Landroid/webkit/SslErrorHandler;
-    .param p3    # Landroid/net/http/SslError;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/settings/wifi/CaptivePortalWebViewActivity;->createSslOnErrorDialog(Landroid/webkit/WebView;Landroid/webkit/SslErrorHandler;Landroid/net/http/SslError;)Landroid/app/AlertDialog$Builder;
 
@@ -84,7 +77,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/wifi/CaptivePortalWebViewActivity;)Landroid/net/wifi/WifiManager;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/CaptivePortalWebViewActivity;
 
     iget-object v0, p0, Lcom/android/settings/wifi/CaptivePortalWebViewActivity;->mWifiManager:Landroid/net/wifi/WifiManager;
 
@@ -93,10 +85,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/wifi/CaptivePortalWebViewActivity;Landroid/webkit/WebView;Landroid/webkit/SslErrorHandler;Landroid/net/http/SslError;)Landroid/app/AlertDialog$Builder;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/CaptivePortalWebViewActivity;
-    .param p1    # Landroid/webkit/WebView;
-    .param p2    # Landroid/webkit/SslErrorHandler;
-    .param p3    # Landroid/net/http/SslError;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/settings/wifi/CaptivePortalWebViewActivity;->createPageInfoDialog(Landroid/webkit/WebView;Landroid/webkit/SslErrorHandler;Landroid/net/http/SslError;)Landroid/app/AlertDialog$Builder;
 
@@ -107,10 +95,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/wifi/CaptivePortalWebViewActivity;Landroid/webkit/WebView;Landroid/webkit/SslErrorHandler;Landroid/net/http/SslError;)Landroid/app/AlertDialog$Builder;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/CaptivePortalWebViewActivity;
-    .param p1    # Landroid/webkit/WebView;
-    .param p2    # Landroid/webkit/SslErrorHandler;
-    .param p3    # Landroid/net/http/SslError;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/settings/wifi/CaptivePortalWebViewActivity;->createSslCertificateDialog(Landroid/webkit/WebView;Landroid/webkit/SslErrorHandler;Landroid/net/http/SslError;)Landroid/app/AlertDialog$Builder;
 
@@ -121,9 +105,6 @@
 
 .method private createPageInfoDialog(Landroid/webkit/WebView;Landroid/webkit/SslErrorHandler;Landroid/net/http/SslError;)Landroid/app/AlertDialog$Builder;
     .locals 8
-    .param p1    # Landroid/webkit/WebView;
-    .param p2    # Landroid/webkit/SslErrorHandler;
-    .param p3    # Landroid/net/http/SslError;
 
     iget-object v5, p0, Lcom/android/settings/wifi/CaptivePortalWebViewActivity;->mContext:Landroid/content/Context;
 
@@ -216,9 +197,6 @@
 
 .method private createSslCertificateDialog(Landroid/webkit/WebView;Landroid/webkit/SslErrorHandler;Landroid/net/http/SslError;)Landroid/app/AlertDialog$Builder;
     .locals 6
-    .param p1    # Landroid/webkit/WebView;
-    .param p2    # Landroid/webkit/SslErrorHandler;
-    .param p3    # Landroid/net/http/SslError;
 
     invoke-virtual {p3}, Landroid/net/http/SslError;->getCertificate()Landroid/net/http/SslCertificate;
 
@@ -277,9 +255,6 @@
 
 .method private createSslOnErrorDialog(Landroid/webkit/WebView;Landroid/webkit/SslErrorHandler;Landroid/net/http/SslError;)Landroid/app/AlertDialog$Builder;
     .locals 4
-    .param p1    # Landroid/webkit/WebView;
-    .param p2    # Landroid/webkit/SslErrorHandler;
-    .param p3    # Landroid/net/http/SslError;
 
     new-instance v1, Landroid/app/AlertDialog$Builder;
 
@@ -356,7 +331,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 6
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v5, 0x0
 
@@ -518,7 +492,6 @@
 
 .method protected onRestoreInstanceState(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onRestoreInstanceState(Landroid/os/Bundle;)V
 
@@ -606,7 +579,6 @@
 
 .method protected onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     iget-object v0, p0, Lcom/android/settings/wifi/CaptivePortalWebViewActivity;->mWebview:Landroid/webkit/WebView;
 

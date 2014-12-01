@@ -150,7 +150,6 @@
 
 .method public static getFtAutoAccept(Landroid/content/Context;)I
     .locals 8
-    .param p0    # Landroid/content/Context;
 
     const/4 v2, 0x0
 
@@ -249,7 +248,6 @@
 
 .method public static isFtAutoAccept(Landroid/content/Context;)Ljava/lang/Boolean;
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     const-string v0, "root/application/1/im/ftautaccept"
 
@@ -262,7 +260,6 @@
 
 .method public static isFtAutoAcceptInHome(Landroid/content/Context;)Ljava/lang/Boolean;
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Lcom/android/mms/rcs/Configuration$Ft;->getFtAutoAccept(Landroid/content/Context;)I
 
@@ -312,7 +309,6 @@
 
 .method public static isFtAutoAcceptInRoaming(Landroid/content/Context;)Ljava/lang/Boolean;
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Lcom/android/mms/rcs/Configuration$Ft;->getFtAutoAccept(Landroid/content/Context;)I
 
@@ -373,7 +369,6 @@
 
 .method public static isSizeLimitExceeded(J)Z
     .locals 5
-    .param p0    # J
 
     const/4 v0, 0x0
 
@@ -423,7 +418,6 @@
 
 .method public static isWarnSizeTresholdExceeded(J)Z
     .locals 5
-    .param p0    # J
 
     const/4 v0, 0x0
 
@@ -457,7 +451,6 @@
 
 .method private static newFtAction(Ljava/lang/String;)Landroid/content/Intent;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -490,7 +483,6 @@
 
 .method public static setFtAutoAcceptInHome(Landroid/content/Context;)V
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     invoke-static {}, Lcom/android/mms/rcs/Configuration$Ft;->setFtAutoAcceptInHome()Landroid/content/Intent;
 
@@ -521,7 +513,6 @@
 
 .method public static setFtAutoAcceptInRoaming(Landroid/content/Context;)V
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     invoke-static {}, Lcom/android/mms/rcs/Configuration$Ft;->setFtAutoAcceptInRoaming()Landroid/content/Intent;
 
@@ -552,7 +543,6 @@
 
 .method public static setFtDisableAutoAccept(Landroid/content/Context;)V
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     invoke-static {}, Lcom/android/mms/rcs/Configuration$Ft;->setFtDisableAutoAccept()Landroid/content/Intent;
 
@@ -565,7 +555,6 @@
 
 .method public static setImFtMaxSize(J)V
     .locals 2
-    .param p0    # J
 
     const-wide/16 v0, 0x0
 
@@ -581,7 +570,6 @@
 
 .method public static setImFtWarnSize(J)V
     .locals 2
-    .param p0    # J
 
     const-wide/16 v0, 0x0
 

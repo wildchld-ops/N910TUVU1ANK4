@@ -46,7 +46,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -79,9 +78,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0}, Landroid/os/Binder;-><init>()V
 
@@ -154,7 +150,6 @@
 
 .method static synthetic access$000(Lcom/android/server/EntropyMixer;)V
     .locals 0
-    .param p0    # Lcom/android/server/EntropyMixer;
 
     invoke-direct {p0}, Lcom/android/server/EntropyMixer;->writeEntropy()V
 
@@ -163,7 +158,6 @@
 
 .method static synthetic access$100(Lcom/android/server/EntropyMixer;)V
     .locals 0
-    .param p0    # Lcom/android/server/EntropyMixer;
 
     invoke-direct {p0}, Lcom/android/server/EntropyMixer;->scheduleEntropyWriter()V
 

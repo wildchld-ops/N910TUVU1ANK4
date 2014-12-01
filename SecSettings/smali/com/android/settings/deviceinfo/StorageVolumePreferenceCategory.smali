@@ -91,8 +91,6 @@
 # direct methods
 .method private constructor <init>(Landroid/content/Context;Landroid/os/storage/StorageVolume;)V
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/storage/StorageVolume;
 
     const v6, 0x7f0900ee
 
@@ -293,7 +291,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/deviceinfo/StorageVolumePreferenceCategory;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/settings/deviceinfo/StorageVolumePreferenceCategory;
 
     iget-object v0, p0, Lcom/android/settings/deviceinfo/StorageVolumePreferenceCategory;->mUpdateHandler:Landroid/os/Handler;
 
@@ -302,7 +299,6 @@
 
 .method public static buildForInternal(Landroid/content/Context;)Lcom/android/settings/deviceinfo/StorageVolumePreferenceCategory;
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     new-instance v0, Lcom/android/settings/deviceinfo/StorageVolumePreferenceCategory;
 
@@ -315,8 +311,6 @@
 
 .method public static buildForPhysical(Landroid/content/Context;Landroid/os/storage/StorageVolume;)Lcom/android/settings/deviceinfo/StorageVolumePreferenceCategory;
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/os/storage/StorageVolume;
 
     const/4 v2, 0x0
 
@@ -404,8 +398,6 @@
 
 .method private buildItem(II)Lcom/android/settings/deviceinfo/StorageItemPreference;
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     new-instance v0, Lcom/android/settings/deviceinfo/StorageItemPreference;
 
@@ -420,9 +412,6 @@
 
 .method private buildItem(III)Lcom/android/settings/deviceinfo/StorageItemPreference;
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     iget-object v0, p0, Lcom/android/settings/deviceinfo/StorageVolumePreferenceCategory;->mVolume:Landroid/os/storage/StorageVolume;
 
@@ -458,7 +447,6 @@
 
 .method private formatSize(J)Ljava/lang/String;
     .locals 1
-    .param p1    # J
 
     invoke-virtual {p0}, Landroid/preference/Preference;->getContext()Landroid/content/Context;
 
@@ -473,7 +461,6 @@
 
 .method private getUsersExcluding(Landroid/content/pm/UserInfo;)Ljava/util/List;
     .locals 4
-    .param p1    # Landroid/content/pm/UserInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -727,7 +714,6 @@
 
 .method private static varargs totalValues(Ljava/util/HashMap;[Ljava/lang/String;)J
     .locals 8
-    .param p1    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -783,8 +769,6 @@
 
 .method private updatePreference(Lcom/android/settings/deviceinfo/StorageItemPreference;J)V
     .locals 5
-    .param p1    # Lcom/android/settings/deviceinfo/StorageItemPreference;
-    .param p2    # J
 
     const-wide/16 v1, 0x0
 
@@ -1374,7 +1358,6 @@
 
 .method private updateUsedSpace(Lcom/android/settings/deviceinfo/StorageMeasurement$MeasurementDetails;)V
     .locals 13
-    .param p1    # Lcom/android/settings/deviceinfo/StorageMeasurement$MeasurementDetails;
 
     const-string v9, "CHM"
 
@@ -2903,7 +2886,6 @@
 
 .method public mountToggleClicked(Landroid/preference/Preference;)Z
     .locals 1
-    .param p1    # Landroid/preference/Preference;
 
     iget-object v0, p0, Lcom/android/settings/deviceinfo/StorageVolumePreferenceCategory;->mMountTogglePreference:Landroid/preference/Preference;
 
@@ -2972,8 +2954,6 @@
 
 .method public onUsbStateChanged(ZLjava/lang/String;)V
     .locals 0
-    .param p1    # Z
-    .param p2    # Ljava/lang/String;
 
     iput-boolean p1, p0, Lcom/android/settings/deviceinfo/StorageVolumePreferenceCategory;->mUsbConnected:Z
 
@@ -2986,7 +2966,6 @@
 
 .method public setPrevFragment(Landroid/app/Fragment;)V
     .locals 0
-    .param p1    # Landroid/app/Fragment;
 
     iput-object p1, p0, Lcom/android/settings/deviceinfo/StorageVolumePreferenceCategory;->memoryScreen:Landroid/app/Fragment;
 
@@ -2995,7 +2974,6 @@
 
 .method public setUsedSpace(Z)V
     .locals 1
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/deviceinfo/StorageVolumePreferenceCategory;->mIsUsedSpace:Z
 
@@ -3008,8 +2986,6 @@
 
 .method public updateApproximate(JJ)V
     .locals 6
-    .param p1    # J
-    .param p3    # J
 
     iget-boolean v2, p0, Lcom/android/settings/deviceinfo/StorageVolumePreferenceCategory;->mIsUsedSpace:Z
 
@@ -3068,7 +3044,6 @@
 
 .method public updateDetails(Lcom/android/settings/deviceinfo/StorageMeasurement$MeasurementDetails;)V
     .locals 21
-    .param p1    # Lcom/android/settings/deviceinfo/StorageMeasurement$MeasurementDetails;
 
     move-object/from16 v0, p0
 

@@ -275,7 +275,6 @@
 
 .method static synthetic access$1000(Lcom/android/incallui/CallCardVideoFragment;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/incallui/CallCardVideoFragment;
 
     iget-object v0, p0, Lcom/android/incallui/CallCardVideoFragment;->mSmallTouchArea:Landroid/view/View;
 
@@ -284,7 +283,6 @@
 
 .method static synthetic access$1100(Lcom/android/incallui/CallCardVideoFragment;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/incallui/CallCardVideoFragment;
 
     iget-object v0, p0, Lcom/android/incallui/CallCardVideoFragment;->mResizedTouchArea:Landroid/view/View;
 
@@ -293,7 +291,6 @@
 
 .method static synthetic access$1200(Lcom/android/incallui/CallCardVideoFragment;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/incallui/CallCardVideoFragment;
 
     iget-object v0, p0, Lcom/android/incallui/CallCardVideoFragment;->mBigTouchArea:Landroid/view/View;
 
@@ -302,7 +299,6 @@
 
 .method static synthetic access$1300(Lcom/android/incallui/CallCardVideoFragment;)Lcom/android/incallui/vt/VideoCallManager;
     .locals 1
-    .param p0    # Lcom/android/incallui/CallCardVideoFragment;
 
     invoke-direct {p0}, Lcom/android/incallui/CallCardVideoFragment;->getVideoCallManager()Lcom/android/incallui/vt/VideoCallManager;
 
@@ -313,7 +309,6 @@
 
 .method static synthetic access$1400(Lcom/android/incallui/CallCardVideoFragment;)Landroid/view/ViewGroup;
     .locals 1
-    .param p0    # Lcom/android/incallui/CallCardVideoFragment;
 
     iget-object v0, p0, Lcom/android/incallui/CallCardVideoFragment;->mNearEndContainter:Landroid/view/ViewGroup;
 
@@ -322,7 +317,6 @@
 
 .method static synthetic access$1500(Lcom/android/incallui/CallCardVideoFragment;)Landroid/view/TextureView;
     .locals 1
-    .param p0    # Lcom/android/incallui/CallCardVideoFragment;
 
     iget-object v0, p0, Lcom/android/incallui/CallCardVideoFragment;->mNearEndView:Landroid/view/TextureView;
 
@@ -331,7 +325,6 @@
 
 .method static synthetic access$1600(Lcom/android/incallui/CallCardVideoFragment;)Landroid/view/TextureView;
     .locals 1
-    .param p0    # Lcom/android/incallui/CallCardVideoFragment;
 
     iget-object v0, p0, Lcom/android/incallui/CallCardVideoFragment;->mFarEndView:Landroid/view/TextureView;
 
@@ -340,7 +333,6 @@
 
 .method static synthetic access$1700(Lcom/android/incallui/CallCardVideoFragment;)I
     .locals 1
-    .param p0    # Lcom/android/incallui/CallCardVideoFragment;
 
     iget v0, p0, Lcom/android/incallui/CallCardVideoFragment;->mOrientation:I
 
@@ -349,7 +341,6 @@
 
 .method static synthetic access$1800(Lcom/android/incallui/CallCardVideoFragment;)I
     .locals 1
-    .param p0    # Lcom/android/incallui/CallCardVideoFragment;
 
     iget v0, p0, Lcom/android/incallui/CallCardVideoFragment;->mBottomOffsetForDrag:I
 
@@ -358,7 +349,6 @@
 
 .method static synthetic access$1900(Lcom/android/incallui/CallCardVideoFragment;)Landroid/view/ViewGroup;
     .locals 1
-    .param p0    # Lcom/android/incallui/CallCardVideoFragment;
 
     iget-object v0, p0, Lcom/android/incallui/CallCardVideoFragment;->mNearEndContainterTemplate:Landroid/view/ViewGroup;
 
@@ -367,8 +357,6 @@
 
 .method static synthetic access$2002(Lcom/android/incallui/CallCardVideoFragment;Z)Z
     .locals 0
-    .param p0    # Lcom/android/incallui/CallCardVideoFragment;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/incallui/CallCardVideoFragment;->mIsCameraViewMoved:Z
 
@@ -377,8 +365,6 @@
 
 .method static synthetic access$2100(Lcom/android/incallui/CallCardVideoFragment;Lcom/android/services/telephony/common/Call;)Z
     .locals 1
-    .param p0    # Lcom/android/incallui/CallCardVideoFragment;
-    .param p1    # Lcom/android/services/telephony/common/Call;
 
     invoke-direct {p0, p1}, Lcom/android/incallui/CallCardVideoFragment;->isCameraOffTx(Lcom/android/services/telephony/common/Call;)Z
 
@@ -389,7 +375,6 @@
 
 .method static synthetic access$2200(Lcom/android/incallui/CallCardVideoFragment;)Z
     .locals 1
-    .param p0    # Lcom/android/incallui/CallCardVideoFragment;
 
     iget-boolean v0, p0, Lcom/android/incallui/CallCardVideoFragment;->mZoomed:Z
 
@@ -398,8 +383,6 @@
 
 .method static synthetic access$2202(Lcom/android/incallui/CallCardVideoFragment;Z)Z
     .locals 0
-    .param p0    # Lcom/android/incallui/CallCardVideoFragment;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/incallui/CallCardVideoFragment;->mZoomed:Z
 
@@ -408,7 +391,6 @@
 
 .method static synthetic access$2300(Lcom/android/incallui/CallCardVideoFragment;)I
     .locals 1
-    .param p0    # Lcom/android/incallui/CallCardVideoFragment;
 
     iget v0, p0, Lcom/android/incallui/CallCardVideoFragment;->zoomGestureState:I
 
@@ -417,8 +399,6 @@
 
 .method static synthetic access$2302(Lcom/android/incallui/CallCardVideoFragment;I)I
     .locals 0
-    .param p0    # Lcom/android/incallui/CallCardVideoFragment;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/incallui/CallCardVideoFragment;->zoomGestureState:I
 
@@ -427,7 +407,6 @@
 
 .method static synthetic access$2400(Lcom/android/incallui/CallCardVideoFragment;)I
     .locals 1
-    .param p0    # Lcom/android/incallui/CallCardVideoFragment;
 
     iget v0, p0, Lcom/android/incallui/CallCardVideoFragment;->previousDist:I
 
@@ -436,8 +415,6 @@
 
 .method static synthetic access$2402(Lcom/android/incallui/CallCardVideoFragment;I)I
     .locals 0
-    .param p0    # Lcom/android/incallui/CallCardVideoFragment;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/incallui/CallCardVideoFragment;->previousDist:I
 
@@ -446,8 +423,6 @@
 
 .method static synthetic access$2500(Lcom/android/incallui/CallCardVideoFragment;Landroid/view/MotionEvent;)F
     .locals 1
-    .param p0    # Lcom/android/incallui/CallCardVideoFragment;
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-direct {p0, p1}, Lcom/android/incallui/CallCardVideoFragment;->spacing(Landroid/view/MotionEvent;)F
 
@@ -458,7 +433,6 @@
 
 .method static synthetic access$300(Lcom/android/incallui/CallCardVideoFragment;)Z
     .locals 1
-    .param p0    # Lcom/android/incallui/CallCardVideoFragment;
 
     invoke-direct {p0}, Lcom/android/incallui/CallCardVideoFragment;->isPossibleToHideBanner()Z
 
@@ -469,7 +443,6 @@
 
 .method static synthetic access$400(Lcom/android/incallui/CallCardVideoFragment;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/incallui/CallCardVideoFragment;
 
     iget-object v0, p0, Lcom/android/incallui/CallCardVideoFragment;->mHandler:Landroid/os/Handler;
 
@@ -478,7 +451,6 @@
 
 .method static synthetic access$500(Lcom/android/incallui/CallCardVideoFragment;)Landroid/view/ViewGroup;
     .locals 1
-    .param p0    # Lcom/android/incallui/CallCardVideoFragment;
 
     iget-object v0, p0, Lcom/android/incallui/CallCardVideoFragment;->mPrimaryCallBanner:Landroid/view/ViewGroup;
 
@@ -487,7 +459,6 @@
 
 .method static synthetic access$600(Lcom/android/incallui/CallCardVideoFragment;)Landroid/widget/RelativeLayout;
     .locals 1
-    .param p0    # Lcom/android/incallui/CallCardVideoFragment;
 
     iget-object v0, p0, Lcom/android/incallui/CallCardVideoFragment;->mModifyRequestLayout:Landroid/widget/RelativeLayout;
 
@@ -496,7 +467,6 @@
 
 .method static synthetic access$700(Lcom/android/incallui/CallCardVideoFragment;)Lcom/android/incallui/CallCardVideoFragment$DefaultImageTimer;
     .locals 1
-    .param p0    # Lcom/android/incallui/CallCardVideoFragment;
 
     iget-object v0, p0, Lcom/android/incallui/CallCardVideoFragment;->showImgTimer:Lcom/android/incallui/CallCardVideoFragment$DefaultImageTimer;
 
@@ -505,7 +475,6 @@
 
 .method static synthetic access$800(Lcom/android/incallui/CallCardVideoFragment;)Landroid/widget/ImageView;
     .locals 1
-    .param p0    # Lcom/android/incallui/CallCardVideoFragment;
 
     iget-object v0, p0, Lcom/android/incallui/CallCardVideoFragment;->mFarEndDocomoImage:Landroid/widget/ImageView;
 
@@ -514,8 +483,6 @@
 
 .method private copyParams(Landroid/view/ViewGroup;Landroid/view/ViewGroup;)V
     .locals 1
-    .param p1    # Landroid/view/ViewGroup;
-    .param p2    # Landroid/view/ViewGroup;
 
     if-eqz p2, :cond_0
 
@@ -533,7 +500,6 @@
 
 .method private getPhotoDrawable(Lcom/android/services/telephony/common/Call;)Landroid/graphics/drawable/Drawable;
     .locals 4
-    .param p1    # Lcom/android/services/telephony/common/Call;
 
     const/4 v1, 0x0
 
@@ -596,7 +562,6 @@
 
 .method private isCameraOffRx(Lcom/android/services/telephony/common/Call;)Z
     .locals 2
-    .param p1    # Lcom/android/services/telephony/common/Call;
 
     const/4 v1, 0x2
 
@@ -629,7 +594,6 @@
 
 .method private isCameraOffTx(Lcom/android/services/telephony/common/Call;)Z
     .locals 2
-    .param p1    # Lcom/android/services/telephony/common/Call;
 
     const/4 v0, 0x1
 
@@ -660,7 +624,6 @@
 
 .method private isConference(Lcom/android/services/telephony/common/Call;)Z
     .locals 1
-    .param p1    # Lcom/android/services/telephony/common/Call;
 
     if-eqz p1, :cond_0
 
@@ -683,7 +646,6 @@
 
 .method private isGenericConference(Lcom/android/services/telephony/common/Call;)Z
     .locals 1
-    .param p1    # Lcom/android/services/telephony/common/Call;
 
     if-eqz p1, :cond_0
 
@@ -810,7 +772,6 @@
 
 .method private isVideoShareRx(Lcom/android/services/telephony/common/Call;)Z
     .locals 2
-    .param p1    # Lcom/android/services/telephony/common/Call;
 
     const/4 v1, 0x2
 
@@ -843,7 +804,6 @@
 
 .method private isVideoShareTx(Lcom/android/services/telephony/common/Call;)Z
     .locals 2
-    .param p1    # Lcom/android/services/telephony/common/Call;
 
     const/4 v0, 0x1
 
@@ -1665,7 +1625,6 @@
 
 .method private showPrimaryCallBanner(Z)V
     .locals 1
-    .param p1    # Z
 
     if-eqz p1, :cond_3
 
@@ -1780,7 +1739,6 @@
 
 .method private spacing(Landroid/view/MotionEvent;)F
     .locals 6
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v5, 0x1
 
@@ -2085,7 +2043,6 @@
 
 .method private updateVideoBanner(I)V
     .locals 1
-    .param p1    # I
 
     const-string v0, "att_volte_ui"
 
@@ -4718,7 +4675,6 @@
 
 .method public getSurfaceViewHeight(I)I
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -4756,7 +4712,6 @@
 
 .method public getSurfaceViewWidth(I)I
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -4794,9 +4749,6 @@
 
 .method public manageSecondaryControlBtn(ZZZ)V
     .locals 2
-    .param p1    # Z
-    .param p2    # Z
-    .param p3    # Z
 
     iget-object v0, p0, Lcom/android/incallui/CallCardVideoFragment;->mSwapBtn:Landroid/view/View;
 
@@ -4826,7 +4778,6 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/incallui/CallCardFragment;->onActivityCreated(Landroid/os/Bundle;)V
 
@@ -4835,21 +4786,18 @@
 
 .method public onCameraEvent(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onCaptureAndRecordEvent(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onCastingEvent(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
@@ -5018,9 +4966,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 3
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const-string v1, "onCreateView..."
 
@@ -6094,7 +6039,6 @@
 
 .method public onSurfaceTextureUpdated(Landroid/graphics/SurfaceTexture;)V
     .locals 3
-    .param p1    # Landroid/graphics/SurfaceTexture;
 
     const/16 v2, 0x8
 
@@ -7017,16 +6961,12 @@
 
 .method public onVideoCallEvent(ILsiso/vt/VideoTelephonyData;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Lsiso/vt/VideoTelephonyData;
 
     return-void
 .end method
 
 .method public onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
     .locals 12
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/os/Bundle;
 
     const/16 v11, 0x8
 
@@ -8677,7 +8617,6 @@
 
 .method public setIndicatorVisible(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/incallui/CallCardVideoFragment;->mIndicatorArea:Landroid/view/ViewGroup;
 
@@ -8723,9 +8662,6 @@
 
 .method public setPrimaryCallElapsedTime(ZLjava/lang/String;J)V
     .locals 3
-    .param p1    # Z
-    .param p2    # Ljava/lang/String;
-    .param p3    # J
 
     const/4 v0, 0x0
 
@@ -8962,7 +8898,6 @@
 
 .method public setPrimaryLabel(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     return-void
 .end method
@@ -9831,7 +9766,6 @@
 
 .method public showIncomingHideButton(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/incallui/CallCardVideoFragment;->mIncomingHideButton:Landroid/widget/ToggleButton;
 
@@ -9877,7 +9811,6 @@
 
 .method public showModifyCall(Z)V
     .locals 2
-    .param p1    # Z
 
     const-string v0, "att_volte_ui"
 
@@ -10597,7 +10530,6 @@
 
 .method public updateConfUI(Z)V
     .locals 4
-    .param p1    # Z
 
     const/4 v3, 0x0
 

@@ -29,11 +29,6 @@
 # direct methods
 .method public constructor <init>(IIIII)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -52,7 +47,6 @@
 
 .method public constructor <init>(Landroid/hardware/usb/UsbDevice;)V
     .locals 1
-    .param p1    # Landroid/hardware/usb/UsbDevice;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -91,9 +85,6 @@
 
 .method private matches(III)Z
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v1, -0x1
 
@@ -137,7 +128,6 @@
 
 .method public static read(Lorg/xmlpull/v1/XmlPullParser;)Lcom/android/server/usb/UsbSettingsManager$DeviceFilter;
     .locals 10
-    .param p0    # Lorg/xmlpull/v1/XmlPullParser;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -256,7 +246,6 @@
 # virtual methods
 .method public equals(Ljava/lang/Object;)Z
     .locals 6
-    .param p1    # Ljava/lang/Object;
 
     const/4 v2, 0x1
 
@@ -427,7 +416,6 @@
 
 .method public matches(Landroid/hardware/usb/UsbDevice;)Z
     .locals 8
-    .param p1    # Landroid/hardware/usb/UsbDevice;
 
     const/4 v4, 0x1
 
@@ -531,7 +519,6 @@
 
 .method public matches(Lcom/android/server/usb/UsbSettingsManager$DeviceFilter;)Z
     .locals 4
-    .param p1    # Lcom/android/server/usb/UsbSettingsManager$DeviceFilter;
 
     const/4 v0, 0x0
 
@@ -658,7 +645,6 @@
 
 .method public write(Lorg/xmlpull/v1/XmlSerializer;)V
     .locals 4
-    .param p1    # Lorg/xmlpull/v1/XmlSerializer;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

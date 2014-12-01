@@ -50,8 +50,6 @@
 # direct methods
 .method public constructor <init>(Landroid/view/View;I)V
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -134,7 +132,6 @@
 
 .method public static modeToString(I)Ljava/lang/String;
     .locals 3
-    .param p0    # I
 
     if-nez p0, :cond_0
 
@@ -218,9 +215,6 @@
 # virtual methods
 .method protected applyModeBackground(IIZ)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/BarTransitions;->mBarBackground:Lcom/android/systemui/statusbar/phone/BarTransitions$BarBackgroundDrawable;
 
@@ -249,9 +243,6 @@
 
 .method protected onTransition(IIZ)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     invoke-virtual {p0, p1, p2, p3}, Lcom/android/systemui/statusbar/phone/BarTransitions;->applyModeBackground(IIZ)V
 
@@ -260,14 +251,12 @@
 
 .method public setContentVisible(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method protected setKnoxBg(Z)V
     .locals 2
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -292,8 +281,6 @@
 
 .method public transitionTo(IZ)V
     .locals 2
-    .param p1    # I
-    .param p2    # Z
 
     iget v1, p0, Lcom/android/systemui/statusbar/phone/BarTransitions;->mMode:I
 

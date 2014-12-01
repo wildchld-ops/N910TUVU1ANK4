@@ -57,8 +57,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v2, 0x0
 
@@ -136,7 +134,6 @@
 
 .method static synthetic access$400(Lcom/android/internal/policy/impl/sviewcover/SViewCoverWidget$MissedEvent;)V
     .locals 0
-    .param p0    # Lcom/android/internal/policy/impl/sviewcover/SViewCoverWidget$MissedEvent;
 
     invoke-direct {p0}, Lcom/android/internal/policy/impl/sviewcover/SViewCoverWidget$MissedEvent;->handleMissedEventUpdate()V
 
@@ -145,7 +142,6 @@
 
 .method static synthetic access$500(Lcom/android/internal/policy/impl/sviewcover/SViewCoverWidget$MissedEvent;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/sviewcover/SViewCoverWidget$MissedEvent;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/sviewcover/SViewCoverWidget$MissedEvent;->mHandler:Landroid/os/Handler;
 
@@ -154,7 +150,6 @@
 
 .method private getNumMissedEvent(Lcom/android/internal/policy/impl/sviewcover/SViewCoverWidget$NotiMode;)I
     .locals 5
-    .param p1    # Lcom/android/internal/policy/impl/sviewcover/SViewCoverWidget$NotiMode;
 
     const/4 v4, 0x1
 

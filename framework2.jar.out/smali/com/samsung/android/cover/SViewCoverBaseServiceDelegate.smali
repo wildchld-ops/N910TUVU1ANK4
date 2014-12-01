@@ -75,7 +75,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -122,7 +121,6 @@
 
 .method static synthetic access$000(Lcom/samsung/android/cover/SViewCoverBaseServiceDelegate;)Lcom/samsung/android/cover/SViewCoverBaseServiceDelegate$SViewCoverBaseState;
     .locals 1
-    .param p0    # Lcom/samsung/android/cover/SViewCoverBaseServiceDelegate;
 
     iget-object v0, p0, Lcom/samsung/android/cover/SViewCoverBaseServiceDelegate;->mSViewCoverBaseState:Lcom/samsung/android/cover/SViewCoverBaseServiceDelegate$SViewCoverBaseState;
 
@@ -131,7 +129,6 @@
 
 .method static synthetic access$100(Lcom/samsung/android/cover/SViewCoverBaseServiceDelegate;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/samsung/android/cover/SViewCoverBaseServiceDelegate;
 
     iget-object v0, p0, Lcom/samsung/android/cover/SViewCoverBaseServiceDelegate;->mPendingCommand:Ljava/util/ArrayList;
 
@@ -317,7 +314,6 @@
 
 .method public updateCoverState(Lcom/samsung/android/cover/CoverState;)V
     .locals 2
-    .param p1    # Lcom/samsung/android/cover/CoverState;
 
     iget-object v1, p0, Lcom/samsung/android/cover/SViewCoverBaseServiceDelegate;->mSViewCoverBaseService:Lcom/samsung/android/cover/SViewCoverBaseServiceWrapper;
 

@@ -406,10 +406,6 @@
 
 .method public constructor <init>(S[B[B[B)V
     .locals 2
-    .param p1    # S
-    .param p2    # [B
-    .param p3    # [B
-    .param p4    # [B
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -454,7 +450,6 @@
 
 .method public constructor <init>([B)V
     .locals 4
-    .param p1    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/nfc/FormatException;
@@ -522,7 +517,6 @@
 
 .method private static bytesToString([B)Ljava/lang/StringBuilder;
     .locals 9
-    .param p0    # [B
 
     new-instance v4, Ljava/lang/StringBuilder;
 
@@ -569,7 +563,6 @@
 
 .method public static createApplicationRecord(Ljava/lang/String;)Landroid/nfc/NdefRecord;
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     if-nez p0, :cond_0
 
@@ -618,9 +611,6 @@
 
 .method public static createExternal(Ljava/lang/String;Ljava/lang/String;[B)Landroid/nfc/NdefRecord;
     .locals 6
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # [B
 
     const/4 v5, 0x0
 
@@ -749,8 +739,6 @@
 
 .method public static createMime(Ljava/lang/String;[B)Landroid/nfc/NdefRecord;
     .locals 5
-    .param p0    # Ljava/lang/String;
-    .param p1    # [B
 
     if-nez p0, :cond_0
 
@@ -835,7 +823,6 @@
 
 .method public static createUri(Landroid/net/Uri;)Landroid/nfc/NdefRecord;
     .locals 9
-    .param p0    # Landroid/net/Uri;
 
     const/4 v8, 0x1
 
@@ -947,7 +934,6 @@
 
 .method public static createUri(Ljava/lang/String;)Landroid/nfc/NdefRecord;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
@@ -962,7 +948,6 @@
 
 .method private static ensureSanePayloadSize(J)V
     .locals 3
-    .param p0    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/nfc/FormatException;
@@ -1017,8 +1002,6 @@
 
 .method static parse(Ljava/nio/ByteBuffer;Z)[Landroid/nfc/NdefRecord;
     .locals 31
-    .param p0    # Ljava/nio/ByteBuffer;
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/nfc/FormatException;
@@ -1669,7 +1652,6 @@
 
 .method private toUri(Z)Landroid/net/Uri;
     .locals 11
-    .param p1    # Z
 
     const/4 v7, 0x0
 
@@ -1829,10 +1811,6 @@
 
 .method static validateTnf(S[B[B[B)Ljava/lang/String;
     .locals 4
-    .param p0    # S
-    .param p1    # [B
-    .param p2    # [B
-    .param p3    # [B
 
     const/4 v0, 0x0
 
@@ -1918,7 +1896,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 4
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x0
 
@@ -2331,9 +2308,6 @@
 
 .method writeToByteBuffer(Ljava/nio/ByteBuffer;ZZ)V
     .locals 7
-    .param p1    # Ljava/nio/ByteBuffer;
-    .param p2    # Z
-    .param p3    # Z
 
     const/4 v3, 0x1
 
@@ -2476,8 +2450,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-short v0, p0, Landroid/nfc/NdefRecord;->mTnf:S
 

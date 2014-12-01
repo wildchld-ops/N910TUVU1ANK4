@@ -14,9 +14,6 @@
 
 .method public static doAutoCorrection(IILandroid/view/inputmethod/InputConnection;)Z
     .locals 6
-    .param p0    # I
-    .param p1    # I
-    .param p2    # Landroid/view/inputmethod/InputConnection;
 
     new-instance v4, Landroid/view/inputmethod/ExtractedTextRequest;
 
@@ -72,10 +69,6 @@
 
 .method public static doAutoCorrection(Ljava/lang/CharSequence;IILandroid/view/inputmethod/InputConnection;)Z
     .locals 6
-    .param p0    # Ljava/lang/CharSequence;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/view/inputmethod/InputConnection;
 
     invoke-static {}, Lcom/diotek/ime/framework/input/ComposingTextManager;->hasComposing()Z
 
@@ -151,12 +144,6 @@
 
 .method public static doAutoCorrection(Ljava/lang/CharSequence;Ljava/lang/String;IIILandroid/view/inputmethod/InputConnection;)Z
     .locals 8
-    .param p0    # Ljava/lang/CharSequence;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Landroid/view/inputmethod/InputConnection;
 
     const/4 v5, 0x0
 
@@ -314,8 +301,6 @@
 
 .method public static doAutoCorrectionByTrace(Ljava/lang/CharSequence;Landroid/view/inputmethod/InputConnection;)Z
     .locals 3
-    .param p0    # Ljava/lang/CharSequence;
-    .param p1    # Landroid/view/inputmethod/InputConnection;
 
     const/4 v2, 0x1
 

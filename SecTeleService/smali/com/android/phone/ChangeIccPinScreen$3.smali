@@ -39,7 +39,7 @@
 
     iget-object v0, p0, Lcom/android/phone/ChangeIccPinScreen$3;->this$0:Lcom/android/phone/ChangeIccPinScreen;
 
-    invoke-virtual {v0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {v0}, Lcom/android/phone/ChangeIccPinScreen;->finish()V
 
     return-void
 .end method

@@ -98,9 +98,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/accessibility/AccessibilityManagerService;ILandroid/content/ComponentName;Landroid/accessibilityservice/AccessibilityServiceInfo;)V
     .locals 6
-    .param p2    # I
-    .param p3    # Landroid/content/ComponentName;
-    .param p4    # Landroid/accessibilityservice/AccessibilityServiceInfo;
 
     const/4 v5, 0x0
 
@@ -253,8 +250,6 @@
 
 .method static synthetic access$1900(Lcom/android/server/accessibility/AccessibilityManagerService$Service;I)Landroid/view/MagnificationSpec;
     .locals 1
-    .param p0    # Lcom/android/server/accessibility/AccessibilityManagerService$Service;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/accessibility/AccessibilityManagerService$Service;->getCompatibleMagnificationSpec(I)Landroid/view/MagnificationSpec;
 
@@ -265,8 +260,6 @@
 
 .method static synthetic access$3100(Lcom/android/server/accessibility/AccessibilityManagerService$Service;I)V
     .locals 0
-    .param p0    # Lcom/android/server/accessibility/AccessibilityManagerService$Service;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/accessibility/AccessibilityManagerService$Service;->notifyAccessibilityEventInternal(I)V
 
@@ -275,8 +268,6 @@
 
 .method static synthetic access$4000(Lcom/android/server/accessibility/AccessibilityManagerService$Service;I)V
     .locals 0
-    .param p0    # Lcom/android/server/accessibility/AccessibilityManagerService$Service;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/accessibility/AccessibilityManagerService$Service;->notifyGestureInternal(I)V
 
@@ -285,9 +276,6 @@
 
 .method static synthetic access$4100(Lcom/android/server/accessibility/AccessibilityManagerService$Service;Landroid/view/KeyEvent;I)V
     .locals 0
-    .param p0    # Lcom/android/server/accessibility/AccessibilityManagerService$Service;
-    .param p1    # Landroid/view/KeyEvent;
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/accessibility/AccessibilityManagerService$Service;->notifyKeyEventInternal(Landroid/view/KeyEvent;I)V
 
@@ -296,7 +284,6 @@
 
 .method static synthetic access$4200(Lcom/android/server/accessibility/AccessibilityManagerService$Service;)V
     .locals 0
-    .param p0    # Lcom/android/server/accessibility/AccessibilityManagerService$Service;
 
     invoke-direct {p0}, Lcom/android/server/accessibility/AccessibilityManagerService$Service;->notifyClearAccessibilityNodeInfoCacheInternal()V
 
@@ -363,7 +350,6 @@
 
 .method private getCompatibleMagnificationSpec(I)Landroid/view/MagnificationSpec;
     .locals 2
-    .param p1    # I
 
     :try_start_0
     iget-object v1, p0, Lcom/android/server/accessibility/AccessibilityManagerService$Service;->this$0:Lcom/android/server/accessibility/AccessibilityManagerService;
@@ -426,7 +412,6 @@
 
 .method private getConnectionLocked(I)Landroid/view/accessibility/IAccessibilityInteractionConnection;
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/server/accessibility/AccessibilityManagerService$Service;->this$0:Lcom/android/server/accessibility/AccessibilityManagerService;
 
@@ -484,7 +469,6 @@
 
 .method private notifyAccessibilityEventInternal(I)V
     .locals 6
-    .param p1    # I
 
     iget-object v3, p0, Lcom/android/server/accessibility/AccessibilityManagerService$Service;->this$0:Lcom/android/server/accessibility/AccessibilityManagerService;
 
@@ -661,7 +645,6 @@
 
 .method private notifyGestureInternal(I)V
     .locals 5
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/accessibility/AccessibilityManagerService$Service;->mServiceInterface:Landroid/accessibilityservice/IAccessibilityServiceClient;
 
@@ -718,8 +701,6 @@
 
 .method private notifyKeyEventInternal(Landroid/view/KeyEvent;I)V
     .locals 1
-    .param p1    # Landroid/view/KeyEvent;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/server/accessibility/AccessibilityManagerService$Service;->mKeyEventDispatcher:Lcom/android/server/accessibility/AccessibilityManagerService$Service$KeyEventDispatcher;
 
@@ -769,7 +750,6 @@
 
 .method private resolveAccessibilityWindowIdLocked(I)I
     .locals 1
-    .param p1    # I
 
     const/4 v0, -0x1
 
@@ -793,7 +773,6 @@
 
 .method private sendDownAndUpKeyEvents(I)V
     .locals 18
-    .param p1    # I
 
     invoke-static {}, Landroid/os/Binder;->clearCallingIdentity()J
 
@@ -1077,9 +1056,6 @@
 
 .method public dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/server/accessibility/AccessibilityManagerService$Service;->this$0:Lcom/android/server/accessibility/AccessibilityManagerService;
 
@@ -1266,12 +1242,6 @@
 
 .method public findAccessibilityNodeInfoByAccessibilityId(IJILandroid/view/accessibility/IAccessibilityInteractionConnectionCallback;IJ)Z
     .locals 15
-    .param p1    # I
-    .param p2    # J
-    .param p4    # I
-    .param p5    # Landroid/view/accessibility/IAccessibilityInteractionConnectionCallback;
-    .param p6    # I
-    .param p7    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1437,12 +1407,6 @@
 
 .method public findAccessibilityNodeInfosByText(IJLjava/lang/String;ILandroid/view/accessibility/IAccessibilityInteractionConnectionCallback;J)Z
     .locals 18
-    .param p1    # I
-    .param p2    # J
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
-    .param p6    # Landroid/view/accessibility/IAccessibilityInteractionConnectionCallback;
-    .param p7    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1636,12 +1600,6 @@
 
 .method public findAccessibilityNodeInfosByViewId(IJLjava/lang/String;ILandroid/view/accessibility/IAccessibilityInteractionConnectionCallback;J)Z
     .locals 18
-    .param p1    # I
-    .param p2    # J
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
-    .param p6    # Landroid/view/accessibility/IAccessibilityInteractionConnectionCallback;
-    .param p7    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1833,12 +1791,6 @@
 
 .method public findFocus(IJIILandroid/view/accessibility/IAccessibilityInteractionConnectionCallback;J)Z
     .locals 18
-    .param p1    # I
-    .param p2    # J
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Landroid/view/accessibility/IAccessibilityInteractionConnectionCallback;
-    .param p7    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2032,12 +1984,6 @@
 
 .method public focusSearch(IJIILandroid/view/accessibility/IAccessibilityInteractionConnectionCallback;J)Z
     .locals 18
-    .param p1    # I
-    .param p2    # J
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Landroid/view/accessibility/IAccessibilityInteractionConnectionCallback;
-    .param p7    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2295,7 +2241,6 @@
 
 .method public notifyAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
     .locals 9
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
 
     iget-object v5, p0, Lcom/android/server/accessibility/AccessibilityManagerService$Service;->this$0:Lcom/android/server/accessibility/AccessibilityManagerService;
 
@@ -2378,7 +2323,6 @@
 
 .method public notifyGesture(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/accessibility/AccessibilityManagerService$Service;->mInvocationHandler:Lcom/android/server/accessibility/AccessibilityManagerService$Service$InvocationHandler;
 
@@ -2397,8 +2341,6 @@
 
 .method public notifyKeyEvent(Landroid/view/KeyEvent;I)V
     .locals 3
-    .param p1    # Landroid/view/KeyEvent;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/server/accessibility/AccessibilityManagerService$Service;->mInvocationHandler:Lcom/android/server/accessibility/AccessibilityManagerService$Service$InvocationHandler;
 
@@ -2417,8 +2359,6 @@
 
 .method public onServiceConnected(Landroid/content/ComponentName;Landroid/os/IBinder;)V
     .locals 6
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Landroid/os/IBinder;
 
     iget-object v2, p0, Lcom/android/server/accessibility/AccessibilityManagerService$Service;->this$0:Lcom/android/server/accessibility/AccessibilityManagerService;
 
@@ -2549,20 +2489,12 @@
 
 .method public onServiceDisconnected(Landroid/content/ComponentName;)V
     .locals 0
-    .param p1    # Landroid/content/ComponentName;
 
     return-void
 .end method
 
 .method public performAccessibilityAction(IJILandroid/os/Bundle;ILandroid/view/accessibility/IAccessibilityInteractionConnectionCallback;J)Z
     .locals 20
-    .param p1    # I
-    .param p2    # J
-    .param p4    # I
-    .param p5    # Landroid/os/Bundle;
-    .param p6    # I
-    .param p7    # Landroid/view/accessibility/IAccessibilityInteractionConnectionCallback;
-    .param p8    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2753,7 +2685,6 @@
 
 .method public performGlobalAction(I)Z
     .locals 8
-    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -2937,7 +2868,6 @@
 
 .method public setDynamicallyConfigurableProperties(Landroid/accessibilityservice/AccessibilityServiceInfo;)V
     .locals 6
-    .param p1    # Landroid/accessibilityservice/AccessibilityServiceInfo;
 
     const/4 v2, 0x1
 
@@ -3099,8 +3029,6 @@
 
 .method public setOnKeyEventResult(ZI)V
     .locals 1
-    .param p1    # Z
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/server/accessibility/AccessibilityManagerService$Service;->mKeyEventDispatcher:Lcom/android/server/accessibility/AccessibilityManagerService$Service$KeyEventDispatcher;
 
@@ -3111,7 +3039,6 @@
 
 .method public setServiceInfo(Landroid/accessibilityservice/AccessibilityServiceInfo;)V
     .locals 7
-    .param p1    # Landroid/accessibilityservice/AccessibilityServiceInfo;
 
     invoke-static {}, Landroid/os/Binder;->clearCallingIdentity()J
 

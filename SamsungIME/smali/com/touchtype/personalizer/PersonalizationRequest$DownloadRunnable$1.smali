@@ -31,8 +31,6 @@
 
 .method static synthetic access$700(Lcom/touchtype/personalizer/PersonalizationRequest$DownloadRunnable$1;Ljava/io/File;)Z
     .locals 1
-    .param p0    # Lcom/touchtype/personalizer/PersonalizationRequest$DownloadRunnable$1;
-    .param p1    # Ljava/io/File;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/InterruptedException;
@@ -48,7 +46,6 @@
 
 .method private mergeModels(Ljava/io/File;)Z
     .locals 5
-    .param p1    # Ljava/io/File;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/InterruptedException;
@@ -216,7 +213,6 @@
 # virtual methods
 .method protected onDownload(Lcom/touchtype_fluency/util/HttpDownload;)V
     .locals 8
-    .param p1    # Lcom/touchtype_fluency/util/HttpDownload;
 
     iget-object v5, p0, Lcom/touchtype/personalizer/PersonalizationRequest$DownloadRunnable$1;->this$1:Lcom/touchtype/personalizer/PersonalizationRequest$DownloadRunnable;
 

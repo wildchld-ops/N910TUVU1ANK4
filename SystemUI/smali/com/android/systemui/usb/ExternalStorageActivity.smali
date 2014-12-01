@@ -137,8 +137,6 @@
 
 .method static synthetic access$000(Lcom/android/systemui/usb/ExternalStorageActivity;Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/systemui/usb/ExternalStorageActivity;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/systemui/usb/ExternalStorageActivity;->getSubSystem(Ljava/lang/String;)Ljava/lang/String;
 
@@ -149,7 +147,6 @@
 
 .method static synthetic access$100(Lcom/android/systemui/usb/ExternalStorageActivity;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/systemui/usb/ExternalStorageActivity;
 
     iget-object v0, p0, Lcom/android/systemui/usb/ExternalStorageActivity;->mSubSystem:Ljava/lang/String;
 
@@ -231,7 +228,6 @@
 
 .method private getSubSystem(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/systemui/usb/ExternalStorageActivity;->mStorageManager:Landroid/os/storage/StorageManager;
 
@@ -260,7 +256,6 @@
 
 .method private isSDCard(Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -334,8 +329,6 @@
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 4
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     const/4 v2, -0x1
 
@@ -378,7 +371,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 7
-    .param p1    # Landroid/os/Bundle;
 
     const v6, 0x1040757
 

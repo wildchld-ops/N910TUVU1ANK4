@@ -33,16 +33,6 @@
 # virtual methods
 .method public addCircularFence(IIDDDIIIILandroid/hardware/location/IGeofenceHardwareCallback;)Z
     .locals 15
-    .param p1    # I
-    .param p2    # I
-    .param p3    # D
-    .param p5    # D
-    .param p7    # D
-    .param p9    # I
-    .param p10    # I
-    .param p11    # I
-    .param p12    # I
-    .param p13    # Landroid/hardware/location/IGeofenceHardwareCallback;
 
     iget-object v1, p0, Landroid/hardware/location/GeofenceHardwareService$1;->this$0:Landroid/hardware/location/GeofenceHardwareService;
 
@@ -138,7 +128,6 @@
 
 .method public getStatusOfMonitoringType(I)I
     .locals 3
-    .param p1    # I
 
     iget-object v0, p0, Landroid/hardware/location/GeofenceHardwareService$1;->this$0:Landroid/hardware/location/GeofenceHardwareService;
 
@@ -169,8 +158,6 @@
 
 .method public pauseGeofence(II)Z
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Landroid/hardware/location/GeofenceHardwareService$1;->this$0:Landroid/hardware/location/GeofenceHardwareService;
 
@@ -214,8 +201,6 @@
 
 .method public registerForMonitorStateChangeCallback(ILandroid/hardware/location/IGeofenceHardwareMonitorCallback;)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/hardware/location/IGeofenceHardwareMonitorCallback;
 
     iget-object v0, p0, Landroid/hardware/location/GeofenceHardwareService$1;->this$0:Landroid/hardware/location/GeofenceHardwareService;
 
@@ -259,8 +244,6 @@
 
 .method public removeGeofence(II)Z
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Landroid/hardware/location/GeofenceHardwareService$1;->this$0:Landroid/hardware/location/GeofenceHardwareService;
 
@@ -304,9 +287,6 @@
 
 .method public resumeGeofence(III)Z
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     iget-object v0, p0, Landroid/hardware/location/GeofenceHardwareService$1;->this$0:Landroid/hardware/location/GeofenceHardwareService;
 
@@ -350,7 +330,6 @@
 
 .method public setFusedGeofenceHardware(Landroid/location/IFusedGeofenceHardware;)V
     .locals 1
-    .param p1    # Landroid/location/IFusedGeofenceHardware;
 
     iget-object v0, p0, Landroid/hardware/location/GeofenceHardwareService$1;->this$0:Landroid/hardware/location/GeofenceHardwareService;
 
@@ -366,7 +345,6 @@
 
 .method public setGpsGeofenceHardware(Landroid/location/IGpsGeofenceHardware;)V
     .locals 1
-    .param p1    # Landroid/location/IGpsGeofenceHardware;
 
     iget-object v0, p0, Landroid/hardware/location/GeofenceHardwareService$1;->this$0:Landroid/hardware/location/GeofenceHardwareService;
 
@@ -382,8 +360,6 @@
 
 .method public unregisterForMonitorStateChangeCallback(ILandroid/hardware/location/IGeofenceHardwareMonitorCallback;)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/hardware/location/IGeofenceHardwareMonitorCallback;
 
     iget-object v0, p0, Landroid/hardware/location/GeofenceHardwareService$1;->this$0:Landroid/hardware/location/GeofenceHardwareService;
 

@@ -16,8 +16,6 @@
 # virtual methods
 .method public final parse([BI)I
     .locals 10
-    .param p1    # [B
-    .param p2    # I
 
     const/4 v7, -0x1
 

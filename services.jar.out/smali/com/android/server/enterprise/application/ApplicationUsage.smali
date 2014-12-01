@@ -53,7 +53,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -122,9 +121,6 @@
 
 .method private calculateAvgPerMonth(ILjava/lang/String;I)I
     .locals 15
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     const/4 v2, 0x0
 
@@ -234,9 +230,6 @@
 
 .method private filterUnInstalledApps([Landroid/app/enterprise/AppInfoLastUsage;II)[Landroid/app/enterprise/AppInfoLastUsage;
     .locals 8
-    .param p1    # [Landroid/app/enterprise/AppInfoLastUsage;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v7, 0x1
 
@@ -325,8 +318,6 @@
 
 .method private getAppInstallTimeInMiliSec(Ljava/lang/String;I)J
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     iget-object v9, p0, Lcom/android/server/enterprise/application/ApplicationUsage;->mContext:Landroid/content/Context;
 
@@ -385,7 +376,6 @@
 
 .method private getMonth(J)I
     .locals 2
-    .param p1    # J
 
     const-string v1, "GMT+0"
 
@@ -414,7 +404,6 @@
 
 .method private getYear(J)I
     .locals 2
-    .param p1    # J
 
     const-string v1, "GMT+0"
 
@@ -679,7 +668,6 @@
 # virtual methods
 .method public _appLaunchCount(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     sget-object v2, Lcom/android/server/enterprise/application/ApplicationUsage;->mStatsLock:Ljava/lang/Object;
 
@@ -773,7 +761,6 @@
 
 .method public _appPauseTime(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     sget-object v2, Lcom/android/server/enterprise/application/ApplicationUsage;->mStatsLock:Ljava/lang/Object;
 
@@ -819,7 +806,6 @@
 
 .method public _appServiceStartTime(Landroid/app/ActivityManager$RunningServiceInfo;)V
     .locals 8
-    .param p1    # Landroid/app/ActivityManager$RunningServiceInfo;
 
     const-wide/16 v6, 0x0
 
@@ -960,7 +946,6 @@
 
 .method public _appServiceStopTime(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     sget-object v2, Lcom/android/server/enterprise/application/ApplicationUsage;->mStatsLock:Ljava/lang/Object;
 
@@ -1111,8 +1096,6 @@
 
 .method public appLaunchCount(Ljava/lang/String;I)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -1151,8 +1134,6 @@
 
 .method public appPauseTime(Ljava/lang/String;I)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -1191,7 +1172,6 @@
 
 .method public appServiceStartTime(Landroid/app/ActivityManager$RunningServiceInfo;)V
     .locals 2
-    .param p1    # Landroid/app/ActivityManager$RunningServiceInfo;
 
     sget-object v0, Lcom/android/server/enterprise/application/ApplicationUsage;->mUsageHandler:Landroid/os/Handler;
 
@@ -1208,8 +1188,6 @@
 
 .method public appServiceStopTime(Ljava/lang/String;I)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -1248,7 +1226,6 @@
 
 .method public deletePackageFromDb(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/server/enterprise/application/ApplicationUsage;->mContext:Landroid/content/Context;
 
@@ -1273,7 +1250,6 @@
 
 .method public getAllAppLastUsage(I)[Landroid/app/enterprise/AppInfoLastUsage;
     .locals 13
-    .param p1    # I
 
     iget-object v10, p0, Lcom/android/server/enterprise/application/ApplicationUsage;->mContext:Landroid/content/Context;
 
@@ -1430,7 +1406,6 @@
 
 .method public getAvgNoAppUsagePerMonth(I)[Landroid/app/enterprise/AppInfoLastUsage;
     .locals 23
-    .param p1    # I
 
     move-object/from16 v0, p0
 
@@ -1994,7 +1969,6 @@
 
 .method public getLastUsageTime(Ljava/lang/String;)J
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const-wide/16 v0, 0x0
 

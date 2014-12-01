@@ -24,7 +24,6 @@
 # direct methods
 .method public constructor <init>(Landroid/text/TextDirectionHeuristics$TextDirectionAlgorithm;)V
     .locals 0
-    .param p1    # Landroid/text/TextDirectionHeuristics$TextDirectionAlgorithm;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -35,9 +34,6 @@
 
 .method private doCheck(Ljava/lang/CharSequence;II)Z
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
 
     iget-object v0, p0, Landroid/text/TextDirectionHeuristics$TextDirectionHeuristicImpl;->mAlgorithm:Landroid/text/TextDirectionHeuristics$TextDirectionAlgorithm;
 
@@ -78,9 +74,6 @@
 
 .method public isRtl(Ljava/lang/CharSequence;II)Z
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
 
     if-eqz p1, :cond_0
 
@@ -125,9 +118,6 @@
 
 .method public isRtl([CII)Z
     .locals 1
-    .param p1    # [C
-    .param p2    # I
-    .param p3    # I
 
     invoke-static {p1}, Ljava/nio/CharBuffer;->wrap([C)Ljava/nio/CharBuffer;
 

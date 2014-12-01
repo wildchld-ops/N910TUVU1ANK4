@@ -60,9 +60,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/res/Resources;Landroid/content/ContentResolver;Ljava/util/HashMap;Ljava/util/ArrayList;I)V
     .locals 2
-    .param p1    # Landroid/content/res/Resources;
-    .param p2    # Landroid/content/ContentResolver;
-    .param p5    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -113,8 +110,6 @@
 
 .method private addSubtypeToHistory(Ljava/lang/String;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/internal/inputmethod/InputMethodUtils$InputMethodSettings;->loadInputMethodAndSubtypeHistoryLocked()Ljava/util/List;
 
@@ -157,7 +152,6 @@
 
 .method private static buildEnabledInputMethodsSettingString(Ljava/lang/StringBuilder;Landroid/util/Pair;)V
     .locals 5
-    .param p0    # Ljava/lang/StringBuilder;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -352,8 +346,6 @@
 
 .method private getEnabledSubtypeHashCodeForInputMethodAndSubtypeLocked(Ljava/util/List;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 12
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -551,7 +543,6 @@
 
 .method private getLastSubtypeForInputMethodLockedInternal(Ljava/lang/String;)Landroid/util/Pair;
     .locals 8
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -779,7 +770,6 @@
 
 .method private putEnabledInputMethodsStr(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/internal/inputmethod/InputMethodUtils$InputMethodSettings;->mResolver:Landroid/content/ContentResolver;
 
@@ -796,7 +786,6 @@
 
 .method private putSubtypeHistoryStr(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/internal/inputmethod/InputMethodUtils$InputMethodSettings;->mResolver:Landroid/content/ContentResolver;
 
@@ -811,8 +800,6 @@
 
 .method private saveSubtypeHistory(Ljava/util/List;Ljava/lang/String;Ljava/lang/String;)V
     .locals 8
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -937,8 +924,6 @@
 # virtual methods
 .method public appendAndPutEnabledInputMethodLocked(Ljava/lang/String;Z)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     if-eqz p2, :cond_0
 
@@ -990,8 +975,6 @@
 
 .method public buildAndPutEnabledInputMethodsStrRemovingIdLocked(Ljava/lang/StringBuilder;Ljava/util/List;Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Ljava/lang/StringBuilder;
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1242,9 +1225,6 @@
 
 .method public getEnabledInputMethodSubtypeListLocked(Landroid/content/Context;Landroid/view/inputmethod/InputMethodInfo;Z)Ljava/util/List;
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/view/inputmethod/InputMethodInfo;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1291,7 +1271,6 @@
 
 .method public getEnabledInputMethodSubtypeListLocked(Landroid/view/inputmethod/InputMethodInfo;)Ljava/util/List;
     .locals 11
-    .param p1    # Landroid/view/inputmethod/InputMethodInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1569,7 +1548,6 @@
 
 .method public getLastSubtypeForInputMethodLocked(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/internal/inputmethod/InputMethodUtils$InputMethodSettings;->getLastSubtypeForInputMethodLockedInternal(Ljava/lang/String;)Landroid/util/Pair;
 
@@ -1608,7 +1586,6 @@
 
 .method public getSelectedInputMethodSubtypeId(Ljava/lang/String;)I
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v2, p0, Lcom/android/internal/inputmethod/InputMethodUtils$InputMethodSettings;->mMethodMap:Ljava/util/HashMap;
 
@@ -1661,7 +1638,6 @@
 
 .method public putSelectedInputMethod(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/internal/inputmethod/InputMethodUtils$InputMethodSettings;->mResolver:Landroid/content/ContentResolver;
 
@@ -1676,7 +1652,6 @@
 
 .method public putSelectedSubtype(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/internal/inputmethod/InputMethodUtils$InputMethodSettings;->mResolver:Landroid/content/ContentResolver;
 
@@ -1691,8 +1666,6 @@
 
 .method public saveCurrentInputMethodAndSubtypeToHistory(Ljava/lang/String;Landroid/view/inputmethod/InputMethodSubtype;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/view/inputmethod/InputMethodSubtype;
 
     # getter for: Lcom/android/internal/inputmethod/InputMethodUtils;->NOT_A_SUBTYPE_ID_STR:Ljava/lang/String;
     invoke-static {}, Lcom/android/internal/inputmethod/InputMethodUtils;->access$100()Ljava/lang/String;
@@ -1724,7 +1697,6 @@
 
 .method public setCurrentUserId(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/internal/inputmethod/InputMethodUtils$InputMethodSettings;->mCurrentUserId:I
 

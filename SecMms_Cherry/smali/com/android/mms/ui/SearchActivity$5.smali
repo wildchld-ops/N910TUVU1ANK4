@@ -36,9 +36,6 @@
 # virtual methods
 .method public onKey(Landroid/content/DialogInterface;ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
-    .param p3    # Landroid/view/KeyEvent;
 
     const/16 v0, 0x52
 

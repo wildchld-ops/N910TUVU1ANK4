@@ -58,7 +58,6 @@
 # virtual methods
 .method public buttonPressDelayed(I)V
     .locals 3
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/widget/NumberPicker$PressedStateHelper;->cancel()V
 
@@ -83,7 +82,6 @@
 
 .method public buttonTapped(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/widget/NumberPicker$PressedStateHelper;->cancel()V
 

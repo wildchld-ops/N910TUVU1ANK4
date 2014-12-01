@@ -4704,7 +4704,6 @@
 
 .method public static isDecodingSupported(Ljava/lang/String;)Z
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     sget-object v0, Lorg/mime4j/util/CharsetUtil;->decodingSupported:Ljava/util/TreeSet;
 
@@ -4721,7 +4720,6 @@
 
 .method public static isEncodingSupported(Ljava/lang/String;)Z
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     sget-object v0, Lorg/mime4j/util/CharsetUtil;->encodingSupported:Ljava/util/TreeSet;
 
@@ -4738,7 +4736,6 @@
 
 .method public static toJavaCharset(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     sget-object v1, Lorg/mime4j/util/CharsetUtil;->charsetMap:Ljava/util/HashMap;
 
@@ -4770,7 +4767,6 @@
 
 .method public static toMimeCharset(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     sget-object v1, Lorg/mime4j/util/CharsetUtil;->charsetMap:Ljava/util/HashMap;
 

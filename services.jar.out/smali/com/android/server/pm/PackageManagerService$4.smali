@@ -40,8 +40,6 @@
 # virtual methods
 .method public compare(Landroid/content/pm/ResolveInfo;Landroid/content/pm/ResolveInfo;)I
     .locals 6
-    .param p1    # Landroid/content/pm/ResolveInfo;
-    .param p2    # Landroid/content/pm/ResolveInfo;
 
     const/4 v3, 0x1
 
@@ -128,8 +126,6 @@
 
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p1, Landroid/content/pm/ResolveInfo;
 

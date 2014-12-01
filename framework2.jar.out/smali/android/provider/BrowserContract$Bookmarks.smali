@@ -98,7 +98,6 @@
 
 .method public static final buildFolderUri(J)Landroid/net/Uri;
     .locals 1
-    .param p0    # J
 
     sget-object v0, Landroid/provider/BrowserContract$Bookmarks;->CONTENT_URI_DEFAULT_FOLDER:Landroid/net/Uri;
 

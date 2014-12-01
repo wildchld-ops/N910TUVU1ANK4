@@ -59,7 +59,7 @@
 
     iget-object v3, v3, Lcom/android/phone/callsettings/CallBarring;->editText:Landroid/widget/EditText;
 
-    invoke-virtual {v3}, Landroid/view/View;->getWindowToken()Landroid/os/IBinder;
+    invoke-virtual {v3}, Landroid/widget/EditText;->getWindowToken()Landroid/os/IBinder;
 
     move-result-object v3
 
@@ -95,7 +95,7 @@
     if-nez v3, :cond_0
 
     :goto_0
-    invoke-virtual {v0, v1}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+    invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     return-void
 

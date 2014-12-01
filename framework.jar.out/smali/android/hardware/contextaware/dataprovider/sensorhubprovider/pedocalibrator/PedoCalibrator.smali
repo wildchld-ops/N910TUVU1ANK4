@@ -98,7 +98,6 @@
 
 .method private debugPedoCalibrator(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/hardware/contextaware/dataprovider/sensorhubprovider/pedocalibrator/PedoCalibrator;->mPedoCalibListener:Landroid/hardware/contextaware/dataprovider/sensorhubprovider/pedocalibrator/IPedoCalibListener;
 
@@ -1188,7 +1187,6 @@
 
 .method private pedoCalLLHToXYZ([D)[D
     .locals 18
-    .param p1    # [D
 
     const/4 v14, 0x0
 
@@ -2081,8 +2079,6 @@
 
 .method private pedoCalStockDoubleArrayData(DD)V
     .locals 3
-    .param p1    # D
-    .param p3    # D
 
     iget-object v1, p0, Landroid/hardware/contextaware/dataprovider/sensorhubprovider/pedocalibrator/PedoCalibrator;->mPedoCalData:Landroid/hardware/contextaware/dataprovider/sensorhubprovider/pedocalibrator/PedoCalibrationData;
 
@@ -2235,7 +2231,6 @@
 # virtual methods
 .method countSameStepType(B)V
     .locals 2
-    .param p1    # B
 
     iget-object v0, p0, Landroid/hardware/contextaware/dataprovider/sensorhubprovider/pedocalibrator/PedoCalibrator;->mPedoCalData:Landroid/hardware/contextaware/dataprovider/sensorhubprovider/pedocalibrator/PedoCalibrationData;
 
@@ -2266,12 +2261,6 @@
 
 .method onGpsUpdate(IFDDDJ)V
     .locals 4
-    .param p1    # I
-    .param p2    # F
-    .param p3    # D
-    .param p5    # D
-    .param p7    # D
-    .param p9    # J
 
     iget-boolean v0, p0, Landroid/hardware/contextaware/dataprovider/sensorhubprovider/pedocalibrator/PedoCalibrator;->bNeedData:Z
 
@@ -2415,12 +2404,6 @@
 
 .method onStepInfoUpdate(IIIDDI)V
     .locals 11
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # D
-    .param p6    # D
-    .param p8    # I
 
     iget-object v7, p0, Landroid/hardware/contextaware/dataprovider/sensorhubprovider/pedocalibrator/PedoCalibrator;->mPedoCalData:Landroid/hardware/contextaware/dataprovider/sensorhubprovider/pedocalibrator/PedoCalibrationData;
 
@@ -2949,7 +2932,6 @@
 
 .method public pedoSetScaleFactorArray([D)V
     .locals 4
-    .param p1    # [D
 
     const/4 v0, 0x0
 
@@ -2976,7 +2958,6 @@
 
 .method registerListener(Landroid/hardware/contextaware/dataprovider/sensorhubprovider/pedocalibrator/IPedoCalibListener;)V
     .locals 0
-    .param p1    # Landroid/hardware/contextaware/dataprovider/sensorhubprovider/pedocalibrator/IPedoCalibListener;
 
     iput-object p1, p0, Landroid/hardware/contextaware/dataprovider/sensorhubprovider/pedocalibrator/PedoCalibrator;->mPedoCalibListener:Landroid/hardware/contextaware/dataprovider/sensorhubprovider/pedocalibrator/IPedoCalibListener;
 

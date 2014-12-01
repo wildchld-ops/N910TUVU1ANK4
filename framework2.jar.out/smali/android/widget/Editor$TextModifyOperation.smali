@@ -59,7 +59,6 @@
 
 .method public constructor <init>(Landroid/content/UndoOwner;)V
     .locals 0
-    .param p1    # Landroid/content/UndoOwner;
 
     invoke-direct {p0, p1}, Landroid/content/UndoOperation;-><init>(Landroid/content/UndoOwner;)V
 
@@ -68,8 +67,6 @@
 
 .method public constructor <init>(Landroid/os/Parcel;Ljava/lang/ClassLoader;)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # Ljava/lang/ClassLoader;
 
     invoke-direct {p0, p1, p2}, Landroid/content/UndoOperation;-><init>(Landroid/os/Parcel;Ljava/lang/ClassLoader;)V
 
@@ -202,8 +199,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget v0, p0, Landroid/widget/Editor$TextModifyOperation;->mRangeStart:I
 

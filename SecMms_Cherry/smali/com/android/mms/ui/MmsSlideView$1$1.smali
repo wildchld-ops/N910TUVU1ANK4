@@ -36,8 +36,6 @@
 # virtual methods
 .method public onSetContentView(Landroid/view/View;Landroid/widget/HoverPopupWindow;)Z
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/widget/HoverPopupWindow;
 
     iget-object v0, p0, Lcom/android/mms/ui/MmsSlideView$1$1;->this$1:Lcom/android/mms/ui/MmsSlideView$1;
 

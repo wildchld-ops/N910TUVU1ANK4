@@ -36,7 +36,6 @@
 # virtual methods
 .method public onPrintJobStateChanged(Landroid/print/PrintJobId;)V
     .locals 1
-    .param p1    # Landroid/print/PrintJobId;
 
     iget-object v0, p0, Lcom/android/settings/print/PrintJobSettingsFragment$1;->this$0:Lcom/android/settings/print/PrintJobSettingsFragment;
 

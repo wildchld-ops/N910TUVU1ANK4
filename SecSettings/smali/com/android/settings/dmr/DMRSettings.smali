@@ -188,9 +188,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/dmr/DMRSettings;Landroid/preference/PreferenceGroup;Ljava/util/Map;)V
     .locals 0
-    .param p0    # Lcom/android/settings/dmr/DMRSettings;
-    .param p1    # Landroid/preference/PreferenceGroup;
-    .param p2    # Ljava/util/Map;
 
     invoke-direct {p0, p1, p2}, Lcom/android/settings/dmr/DMRSettings;->registerPreferenceChangeListener(Landroid/preference/PreferenceGroup;Ljava/util/Map;)V
 
@@ -199,7 +196,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/dmr/DMRSettings;)V
     .locals 0
-    .param p0    # Lcom/android/settings/dmr/DMRSettings;
 
     invoke-direct {p0}, Lcom/android/settings/dmr/DMRSettings;->refreshPreferenceValues()V
 
@@ -208,8 +204,6 @@
 
 .method static synthetic access$202(Lcom/android/settings/dmr/DMRSettings;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/dmr/DMRSettings;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/dmr/DMRSettings;->bWifiPopupShown:Z
 
@@ -218,8 +212,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/dmr/DMRSettings;Ljava/lang/String;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Lcom/android/settings/dmr/DMRSettings;
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
@@ -230,7 +222,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/dmr/DMRSettings;)Landroid/preference/ListPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/dmr/DMRSettings;
 
     iget-object v0, p0, Lcom/android/settings/dmr/DMRSettings;->mAccessControl:Landroid/preference/ListPreference;
 
@@ -1551,7 +1542,6 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v4, 0x0
 
@@ -1600,7 +1590,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 7
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v5, 0x1
 
@@ -1828,8 +1817,6 @@
 
 .method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
     .locals 17
-    .param p1    # Landroid/preference/Preference;
-    .param p2    # Ljava/lang/Object;
 
     invoke-virtual/range {p1 .. p1}, Landroid/preference/Preference;->getKey()Ljava/lang/String;
 
@@ -2776,7 +2763,6 @@
 
 .method public onPreferenceClick(Landroid/preference/Preference;)Z
     .locals 9
-    .param p1    # Landroid/preference/Preference;
 
     const/4 v4, 0x1
 
@@ -3327,7 +3313,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "Settings"
 

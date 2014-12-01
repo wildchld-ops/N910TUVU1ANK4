@@ -93,8 +93,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Lcom/android/systemui/recent/multiwindow/MultiWindowTrayInfo;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/systemui/recent/multiwindow/MultiWindowTrayInfo;
 
     const/4 v3, 0x0
 
@@ -254,7 +252,6 @@
 
 .method private getExecutePriority(I)I
     .locals 5
-    .param p1    # I
 
     const/4 v3, 0x4
 
@@ -314,9 +311,6 @@
 
 .method private getRunningTaskCnt(ZZZ)I
     .locals 12
-    .param p1    # Z
-    .param p2    # Z
-    .param p3    # Z
 
     const/4 v11, 0x0
 
@@ -468,7 +462,6 @@
 # virtual methods
 .method public focusToSelectedApp(I)Z
     .locals 13
-    .param p1    # I
 
     const/4 v12, 0x0
 
@@ -665,8 +658,6 @@
 
 .method public getCurrentGuideRect(II)Landroid/graphics/Rect;
     .locals 11
-    .param p1    # I
-    .param p2    # I
 
     if-ltz p1, :cond_0
 
@@ -1201,8 +1192,6 @@
 
 .method public getCurrentZone(II)I
     .locals 10
-    .param p1    # I
-    .param p2    # I
 
     const/16 v6, 0xc
 
@@ -1420,7 +1409,6 @@
 
 .method public getRectByZone(I)Landroid/graphics/Rect;
     .locals 4
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/systemui/recent/multiwindow/AppListController;->mLock:Ljava/lang/Object;
 
@@ -1503,7 +1491,6 @@
 
 .method public getTaskAffinity(Landroid/content/ComponentName;)Ljava/lang/String;
     .locals 5
-    .param p1    # Landroid/content/ComponentName;
 
     const/4 v3, 0x0
 
@@ -1540,7 +1527,6 @@
 
 .method public getZoneByRect(Landroid/graphics/Rect;)I
     .locals 3
-    .param p1    # Landroid/graphics/Rect;
 
     iget-object v1, p0, Lcom/android/systemui/recent/multiwindow/AppListController;->mLock:Ljava/lang/Object;
 
@@ -1621,7 +1607,6 @@
 
 .method public isFullGuideLine(I)Z
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -1636,9 +1621,6 @@
 
 .method public isFullGuideLine(IZLcom/android/systemui/recent/TaskDescription;)Z
     .locals 11
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # Lcom/android/systemui/recent/TaskDescription;
 
     const/4 v8, 0x1
 
@@ -1797,7 +1779,6 @@
 
 .method public isLaunchingBlockedItem(I)Z
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -1810,8 +1791,6 @@
 
 .method public isLaunchingBlockedItem(IZ)Z
     .locals 12
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v8, 0x0
 
@@ -1993,7 +1972,6 @@
 
 .method public isPenWindowOnly(I)Z
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/systemui/recent/multiwindow/AppListController;->mMultiWindowTrayInfo:Lcom/android/systemui/recent/multiwindow/MultiWindowTrayInfo;
 
@@ -2006,7 +1984,6 @@
 
 .method public isSupportMultiWindow(Landroid/content/pm/ActivityInfo;)Z
     .locals 1
-    .param p1    # Landroid/content/pm/ActivityInfo;
 
     iget-object v0, p0, Lcom/android/systemui/recent/multiwindow/AppListController;->mApplicationInfos:Lcom/samsung/android/multiwindow/MultiWindowApplicationInfos;
 
@@ -2019,7 +1996,6 @@
 
 .method public isSupportScaleApp(Landroid/content/pm/ActivityInfo;)Z
     .locals 1
-    .param p1    # Landroid/content/pm/ActivityInfo;
 
     iget-object v0, p0, Lcom/android/systemui/recent/multiwindow/AppListController;->mApplicationInfos:Lcom/samsung/android/multiwindow/MultiWindowApplicationInfos;
 
@@ -2032,7 +2008,6 @@
 
 .method public isTemplateItem(I)Z
     .locals 5
-    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -2069,7 +2044,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 2
-    .param p1    # Landroid/content/res/Configuration;
 
     iget v0, p0, Lcom/android/systemui/recent/multiwindow/AppListController;->mDisplayOrientation:I
 
@@ -2089,7 +2063,6 @@
 
 .method public setMWTrayOpenState(Z)V
     .locals 4
-    .param p1    # Z
 
     iget-boolean v0, p0, Lcom/android/systemui/recent/multiwindow/AppListController;->mIsMWTrayOpen:Z
 
@@ -2129,7 +2102,6 @@
 
 .method public startActivitiesSafe([Landroid/content/Intent;)V
     .locals 8
-    .param p1    # [Landroid/content/Intent;
 
     :try_start_0
     iget-object v5, p0, Lcom/android/systemui/recent/multiwindow/AppListController;->mContext:Landroid/content/Context;
@@ -2220,7 +2192,6 @@
 
 .method public startActivity(I)Z
     .locals 1
-    .param p1    # I
 
     const/4 v0, -0x1
 
@@ -2233,9 +2204,6 @@
 
 .method public startActivity(III)Z
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v4, 0x0
 
@@ -2258,11 +2226,6 @@
 
 .method public startActivity(IIIZLcom/android/systemui/recent/TaskDescription;)Z
     .locals 30
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Z
-    .param p5    # Lcom/android/systemui/recent/TaskDescription;
 
     new-instance v16, Ljava/util/ArrayList;
 
@@ -3087,14 +3050,12 @@
 
 .method public startActivityForRecentApp(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public startActivitySafe(Landroid/content/Intent;)V
     .locals 4
-    .param p1    # Landroid/content/Intent;
 
     :try_start_0
     iget-object v1, p0, Lcom/android/systemui/recent/multiwindow/AppListController;->mContext:Landroid/content/Context;
@@ -3150,7 +3111,6 @@
 
 .method public startFreeStyleActivity(I)V
     .locals 1
-    .param p1    # I
 
     const/4 v0, -0x1
 
@@ -3161,9 +3121,6 @@
 
 .method public startFreeStyleActivity(III)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v0, 0x0
 
@@ -3174,10 +3131,6 @@
 
 .method public startFreeStyleActivity(IIIZ)V
     .locals 20
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Z
 
     const/4 v10, 0x0
 
@@ -3739,8 +3692,6 @@
 
 .method public startFreeStyleActivity(ILandroid/graphics/Rect;)V
     .locals 8
-    .param p1    # I
-    .param p2    # Landroid/graphics/Rect;
 
     const/4 v7, 0x1
 
@@ -3806,8 +3757,6 @@
 
 .method public startFreeStyleActivity(Lcom/android/systemui/recent/TaskDescription;Landroid/graphics/Rect;)V
     .locals 5
-    .param p1    # Lcom/android/systemui/recent/TaskDescription;
-    .param p2    # Landroid/graphics/Rect;
 
     new-instance v1, Landroid/content/Intent;
 
@@ -3847,7 +3796,6 @@
 
 .method public startRunningApp(I)V
     .locals 4
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/systemui/recent/multiwindow/AppListController;->mMultiWindowTrayInfo:Lcom/android/systemui/recent/multiwindow/MultiWindowTrayInfo;
 

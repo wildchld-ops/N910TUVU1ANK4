@@ -232,7 +232,6 @@
 
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -311,9 +310,6 @@
 
 .method private deleteTableRow(Ljava/lang/String;Ljava/lang/String;J)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # J
 
     new-instance v0, Landroid/content/ContentValues;
 
@@ -627,7 +623,6 @@
 
 .method static declared-synchronized getInstance(Landroid/content/Context;)Lcom/android/server/enterprise/EnterpriseMigrationManager;
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     const-class v1, Lcom/android/server/enterprise/EnterpriseMigrationManager;
 
@@ -927,7 +922,6 @@
 
 .method private makeDenyRule(Ljava/lang/String;)Ljava/lang/String;
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -998,9 +992,6 @@
 
 .method private updateBrowserProxy(Ljava/lang/String;JJ)Z
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
-    .param p4    # J
 
     const/4 v4, 0x1
 
@@ -1080,9 +1071,6 @@
 
 .method private updateContainerSettingsTable(Ljava/lang/String;JJ)Z
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
-    .param p4    # J
 
     new-instance v1, Landroid/content/ContentValues;
 
@@ -1166,7 +1154,6 @@
 
 .method private updateDefaultContainerApplications(J)Z
     .locals 13
-    .param p1    # J
 
     const/4 v9, 0x0
 
@@ -1475,8 +1462,6 @@
 
 .method private updateEmailPolicyPkgName(Ljava/lang/String;J)Z
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
 
     new-instance v0, Landroid/content/ContentValues;
 
@@ -1595,9 +1580,6 @@
 
 .method private updateFirewallRule(Landroid/app/enterprise/ContextInfo;Landroid/app/enterprise/ContextInfo;I)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Landroid/app/enterprise/ContextInfo;
-    .param p3    # I
 
     new-instance v2, Ljava/util/ArrayList;
 
@@ -1818,8 +1800,6 @@
 
 .method private updateFirewallTable(JJ)Z
     .locals 11
-    .param p1    # J
-    .param p3    # J
 
     const/4 v6, 0x1
 
@@ -2103,11 +2083,6 @@
 
 .method private updatePkgNameInApplicationTable(Ljava/lang/String;Ljava/lang/String;JJJ)Z
     .locals 13
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # J
-    .param p5    # J
-    .param p7    # J
 
     const/4 v8, 0x1
 
@@ -2642,9 +2617,6 @@
 
 .method private updateTableAdminUid(Ljava/lang/String;JJ)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
-    .param p4    # J
 
     const-string v3, "ADMIN_REF"
 
@@ -2754,9 +2726,6 @@
 
 .method private updateTableDefaultValues(Ljava/lang/String;JJ)Z
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
-    .param p4    # J
 
     new-instance v1, Landroid/content/ContentValues;
 
@@ -2877,9 +2846,6 @@
 
 .method private updateWhitelistInstallApp(Ljava/lang/String;JJ)Z
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
-    .param p4    # J
 
     new-instance v0, Landroid/content/ContentValues;
 
@@ -3022,7 +2988,6 @@
 # virtual methods
 .method public blockAdminToReceivePolicy(Z)Z
     .locals 7
-    .param p1    # Z
 
     invoke-direct {p0}, Lcom/android/server/enterprise/EnterpriseMigrationManager;->enforceMigrationAgentSecurityCheck()V
 
@@ -3137,7 +3102,6 @@
 
 .method public migrateApplicationDisablePolicy(I)Z
     .locals 25
-    .param p1    # I
 
     invoke-direct/range {p0 .. p0}, Lcom/android/server/enterprise/EnterpriseMigrationManager;->enforceMigrationAgentSecurityCheck()V
 
@@ -3680,8 +3644,6 @@
 
 .method public migrateEnterpriseDB(IZ)J
     .locals 22
-    .param p1    # I
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -4489,7 +4451,6 @@
 
 .method removePrefixPkgName(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string/jumbo v0, "sec_container_1."
 

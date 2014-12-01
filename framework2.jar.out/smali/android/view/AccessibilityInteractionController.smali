@@ -61,7 +61,6 @@
 # direct methods
 .method public constructor <init>(Landroid/view/ViewRootImpl;)V
     .locals 3
-    .param p1    # Landroid/view/ViewRootImpl;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -144,8 +143,6 @@
 
 .method static synthetic access$200(Landroid/view/AccessibilityInteractionController;Landroid/view/View;)Z
     .locals 1
-    .param p0    # Landroid/view/AccessibilityInteractionController;
-    .param p1    # Landroid/view/View;
 
     invoke-direct {p0, p1}, Landroid/view/AccessibilityInteractionController;->isShown(Landroid/view/View;)Z
 
@@ -156,8 +153,6 @@
 
 .method static synthetic access$300(Landroid/view/AccessibilityInteractionController;Landroid/os/Message;)V
     .locals 0
-    .param p0    # Landroid/view/AccessibilityInteractionController;
-    .param p1    # Landroid/os/Message;
 
     invoke-direct {p0, p1}, Landroid/view/AccessibilityInteractionController;->findAccessibilityNodeInfoByAccessibilityIdUiThread(Landroid/os/Message;)V
 
@@ -166,8 +161,6 @@
 
 .method static synthetic access$400(Landroid/view/AccessibilityInteractionController;Landroid/os/Message;)V
     .locals 0
-    .param p0    # Landroid/view/AccessibilityInteractionController;
-    .param p1    # Landroid/os/Message;
 
     invoke-direct {p0, p1}, Landroid/view/AccessibilityInteractionController;->perfromAccessibilityActionUiThread(Landroid/os/Message;)V
 
@@ -176,8 +169,6 @@
 
 .method static synthetic access$500(Landroid/view/AccessibilityInteractionController;Landroid/os/Message;)V
     .locals 0
-    .param p0    # Landroid/view/AccessibilityInteractionController;
-    .param p1    # Landroid/os/Message;
 
     invoke-direct {p0, p1}, Landroid/view/AccessibilityInteractionController;->findAccessibilityNodeInfosByViewIdUiThread(Landroid/os/Message;)V
 
@@ -186,8 +177,6 @@
 
 .method static synthetic access$600(Landroid/view/AccessibilityInteractionController;Landroid/os/Message;)V
     .locals 0
-    .param p0    # Landroid/view/AccessibilityInteractionController;
-    .param p1    # Landroid/os/Message;
 
     invoke-direct {p0, p1}, Landroid/view/AccessibilityInteractionController;->findAccessibilityNodeInfosByTextUiThread(Landroid/os/Message;)V
 
@@ -196,8 +185,6 @@
 
 .method static synthetic access$700(Landroid/view/AccessibilityInteractionController;Landroid/os/Message;)V
     .locals 0
-    .param p0    # Landroid/view/AccessibilityInteractionController;
-    .param p1    # Landroid/os/Message;
 
     invoke-direct {p0, p1}, Landroid/view/AccessibilityInteractionController;->findFocusUiThread(Landroid/os/Message;)V
 
@@ -206,8 +193,6 @@
 
 .method static synthetic access$800(Landroid/view/AccessibilityInteractionController;Landroid/os/Message;)V
     .locals 0
-    .param p0    # Landroid/view/AccessibilityInteractionController;
-    .param p1    # Landroid/os/Message;
 
     invoke-direct {p0, p1}, Landroid/view/AccessibilityInteractionController;->focusSearchUiThread(Landroid/os/Message;)V
 
@@ -216,8 +201,6 @@
 
 .method private applyAppScaleAndMagnificationSpecIfNeeded(Landroid/view/accessibility/AccessibilityNodeInfo;Landroid/view/MagnificationSpec;)V
     .locals 13
-    .param p1    # Landroid/view/accessibility/AccessibilityNodeInfo;
-    .param p2    # Landroid/view/MagnificationSpec;
 
     if-nez p1, :cond_1
 
@@ -411,7 +394,6 @@
 
 .method private applyAppScaleAndMagnificationSpecIfNeeded(Ljava/util/List;Landroid/view/MagnificationSpec;)V
     .locals 5
-    .param p2    # Landroid/view/MagnificationSpec;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -466,7 +448,6 @@
 
 .method private findAccessibilityNodeInfoByAccessibilityIdUiThread(Landroid/os/Message;)V
     .locals 12
-    .param p1    # Landroid/os/Message;
 
     iget v3, p1, Landroid/os/Message;->arg1:I
 
@@ -644,7 +625,6 @@
 
 .method private findAccessibilityNodeInfosByTextUiThread(Landroid/os/Message;)V
     .locals 21
-    .param p1    # Landroid/os/Message;
 
     move-object/from16 v0, p1
 
@@ -1005,7 +985,6 @@
 
 .method private findAccessibilityNodeInfosByViewIdUiThread(Landroid/os/Message;)V
     .locals 13
-    .param p1    # Landroid/os/Message;
 
     iget v3, p1, Landroid/os/Message;->arg1:I
 
@@ -1235,7 +1214,6 @@
 
 .method private findFocusUiThread(Landroid/os/Message;)V
     .locals 17
-    .param p1    # Landroid/os/Message;
 
     move-object/from16 v0, p1
 
@@ -1568,7 +1546,6 @@
 
 .method private findViewByAccessibilityId(I)Landroid/view/View;
     .locals 4
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -1604,7 +1581,6 @@
 
 .method private focusSearchUiThread(Landroid/os/Message;)V
     .locals 13
-    .param p1    # Landroid/os/Message;
 
     iget v4, p1, Landroid/os/Message;->arg1:I
 
@@ -1780,7 +1756,6 @@
 
 .method private isShown(Landroid/view/View;)Z
     .locals 1
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p1, Landroid/view/View;->mAttachInfo:Landroid/view/View$AttachInfo;
 
@@ -1811,7 +1786,6 @@
 
 .method private perfromAccessibilityActionUiThread(Landroid/os/Message;)V
     .locals 14
-    .param p1    # Landroid/os/Message;
 
     const/4 v12, -0x1
 
@@ -1978,8 +1952,6 @@
 
 .method private shouldApplyAppScaleAndMagnificationSpec(FLandroid/view/MagnificationSpec;)Z
     .locals 1
-    .param p1    # F
-    .param p2    # Landroid/view/MagnificationSpec;
 
     const/high16 v0, 0x3f800000
 
@@ -2011,13 +1983,6 @@
 # virtual methods
 .method public findAccessibilityNodeInfoByAccessibilityIdClientThread(JILandroid/view/accessibility/IAccessibilityInteractionConnectionCallback;IIJLandroid/view/MagnificationSpec;)V
     .locals 4
-    .param p1    # J
-    .param p3    # I
-    .param p4    # Landroid/view/accessibility/IAccessibilityInteractionConnectionCallback;
-    .param p5    # I
-    .param p6    # I
-    .param p7    # J
-    .param p9    # Landroid/view/MagnificationSpec;
 
     iget-object v2, p0, Landroid/view/AccessibilityInteractionController;->mHandler:Landroid/os/Handler;
 
@@ -2084,14 +2049,6 @@
 
 .method public findAccessibilityNodeInfosByTextClientThread(JLjava/lang/String;ILandroid/view/accessibility/IAccessibilityInteractionConnectionCallback;IIJLandroid/view/MagnificationSpec;)V
     .locals 4
-    .param p1    # J
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
-    .param p5    # Landroid/view/accessibility/IAccessibilityInteractionConnectionCallback;
-    .param p6    # I
-    .param p7    # I
-    .param p8    # J
-    .param p10    # Landroid/view/MagnificationSpec;
 
     iget-object v2, p0, Landroid/view/AccessibilityInteractionController;->mHandler:Landroid/os/Handler;
 
@@ -2160,14 +2117,6 @@
 
 .method public findAccessibilityNodeInfosByViewIdClientThread(JLjava/lang/String;ILandroid/view/accessibility/IAccessibilityInteractionConnectionCallback;IIJLandroid/view/MagnificationSpec;)V
     .locals 4
-    .param p1    # J
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
-    .param p5    # Landroid/view/accessibility/IAccessibilityInteractionConnectionCallback;
-    .param p6    # I
-    .param p7    # I
-    .param p8    # J
-    .param p10    # Landroid/view/MagnificationSpec;
 
     iget-object v2, p0, Landroid/view/AccessibilityInteractionController;->mHandler:Landroid/os/Handler;
 
@@ -2230,14 +2179,6 @@
 
 .method public findFocusClientThread(JIILandroid/view/accessibility/IAccessibilityInteractionConnectionCallback;IIJLandroid/view/MagnificationSpec;)V
     .locals 4
-    .param p1    # J
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Landroid/view/accessibility/IAccessibilityInteractionConnectionCallback;
-    .param p6    # I
-    .param p7    # I
-    .param p8    # J
-    .param p10    # Landroid/view/MagnificationSpec;
 
     iget-object v2, p0, Landroid/view/AccessibilityInteractionController;->mHandler:Landroid/os/Handler;
 
@@ -2306,14 +2247,6 @@
 
 .method public focusSearchClientThread(JIILandroid/view/accessibility/IAccessibilityInteractionConnectionCallback;IIJLandroid/view/MagnificationSpec;)V
     .locals 4
-    .param p1    # J
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Landroid/view/accessibility/IAccessibilityInteractionConnectionCallback;
-    .param p6    # I
-    .param p7    # I
-    .param p8    # J
-    .param p10    # Landroid/view/MagnificationSpec;
 
     iget-object v2, p0, Landroid/view/AccessibilityInteractionController;->mHandler:Landroid/os/Handler;
 
@@ -2376,14 +2309,6 @@
 
 .method public performAccessibilityActionClientThread(JILandroid/os/Bundle;ILandroid/view/accessibility/IAccessibilityInteractionConnectionCallback;IIJ)V
     .locals 4
-    .param p1    # J
-    .param p3    # I
-    .param p4    # Landroid/os/Bundle;
-    .param p5    # I
-    .param p6    # Landroid/view/accessibility/IAccessibilityInteractionConnectionCallback;
-    .param p7    # I
-    .param p8    # I
-    .param p9    # J
 
     iget-object v2, p0, Landroid/view/AccessibilityInteractionController;->mHandler:Landroid/os/Handler;
 

@@ -38,8 +38,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/hardware/scontext/provider/EventListener;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/hardware/scontext/provider/EventListener;
 
     const/16 v0, 0x18
 
@@ -84,7 +82,6 @@
 
 .method static synthetic access$100(Landroid/hardware/scontext/provider/caeprovider/ActivityLocationLoggingImpl;)Landroid/hardware/scontext/provider/caeprovider/ActivityLocationLoggingImpl$ExceptionMode;
     .locals 1
-    .param p0    # Landroid/hardware/scontext/provider/caeprovider/ActivityLocationLoggingImpl;
 
     iget-object v0, p0, Landroid/hardware/scontext/provider/caeprovider/ActivityLocationLoggingImpl;->mExceptionMode:Landroid/hardware/scontext/provider/caeprovider/ActivityLocationLoggingImpl$ExceptionMode;
 
@@ -93,8 +90,6 @@
 
 .method static synthetic access$102(Landroid/hardware/scontext/provider/caeprovider/ActivityLocationLoggingImpl;Landroid/hardware/scontext/provider/caeprovider/ActivityLocationLoggingImpl$ExceptionMode;)Landroid/hardware/scontext/provider/caeprovider/ActivityLocationLoggingImpl$ExceptionMode;
     .locals 0
-    .param p0    # Landroid/hardware/scontext/provider/caeprovider/ActivityLocationLoggingImpl;
-    .param p1    # Landroid/hardware/scontext/provider/caeprovider/ActivityLocationLoggingImpl$ExceptionMode;
 
     iput-object p1, p0, Landroid/hardware/scontext/provider/caeprovider/ActivityLocationLoggingImpl;->mExceptionMode:Landroid/hardware/scontext/provider/caeprovider/ActivityLocationLoggingImpl$ExceptionMode;
 
@@ -220,8 +215,6 @@
 
 .method public setProperty(ILandroid/os/Bundle;)V
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     const-string v0, "activity_location_logging_stop_period"
 

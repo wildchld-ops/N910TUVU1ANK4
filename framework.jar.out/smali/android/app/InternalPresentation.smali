@@ -6,8 +6,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/view/Display;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/view/Display;
 
     const/4 v0, 0x0
 
@@ -18,9 +16,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/view/Display;I)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/view/Display;
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Landroid/app/Presentation;-><init>(Landroid/content/Context;Landroid/view/Display;I)V
 

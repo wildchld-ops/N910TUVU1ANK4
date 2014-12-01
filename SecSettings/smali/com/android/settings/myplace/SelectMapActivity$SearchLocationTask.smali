@@ -44,8 +44,6 @@
 
 .method synthetic constructor <init>(Lcom/android/settings/myplace/SelectMapActivity;Lcom/android/settings/myplace/SelectMapActivity$1;)V
     .locals 0
-    .param p1    # Lcom/android/settings/myplace/SelectMapActivity;
-    .param p2    # Lcom/android/settings/myplace/SelectMapActivity$1;
 
     invoke-direct {p0, p1}, Lcom/android/settings/myplace/SelectMapActivity$SearchLocationTask;-><init>(Lcom/android/settings/myplace/SelectMapActivity;)V
 
@@ -56,7 +54,6 @@
 # virtual methods
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [Ljava/lang/String;
 
@@ -69,7 +66,6 @@
 
 .method protected varargs doInBackground([Ljava/lang/String;)Ljava/util/List;
     .locals 6
-    .param p1    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([",
@@ -130,7 +126,6 @@
 
 .method protected bridge synthetic onPostExecute(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Ljava/util/List;
 

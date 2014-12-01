@@ -26,7 +26,6 @@
 
 .method public update(Ljava/lang/String;)V
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     const/4 v7, 0x2
 

@@ -92,9 +92,6 @@
 
 .method protected constructor <init>(Landroid/content/Context;Lorg/apache/http/HttpHost;Landroid/net/http/RequestFeeder;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lorg/apache/http/HttpHost;
-    .param p3    # Landroid/net/http/RequestFeeder;
 
     const/4 v1, 0x0
 
@@ -205,10 +202,6 @@
 
 .method static getConnection(Landroid/content/Context;Lorg/apache/http/HttpHost;Lorg/apache/http/HttpHost;Landroid/net/http/RequestFeeder;)Landroid/net/http/Connection;
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lorg/apache/http/HttpHost;
-    .param p2    # Lorg/apache/http/HttpHost;
-    .param p3    # Landroid/net/http/RequestFeeder;
 
     invoke-virtual {p1}, Lorg/apache/http/HttpHost;->getSchemeName()Ljava/lang/String;
 
@@ -239,9 +232,6 @@
 
 .method private httpFailure(Landroid/net/http/Request;ILjava/lang/Exception;)Z
     .locals 5
-    .param p1    # Landroid/net/http/Request;
-    .param p2    # I
-    .param p3    # Ljava/lang/Exception;
 
     const/4 v2, 0x1
 
@@ -307,10 +297,6 @@
 
 .method private keepAlive(Lorg/apache/http/HttpEntity;Lorg/apache/http/ProtocolVersion;ILorg/apache/http/protocol/HttpContext;)Z
     .locals 7
-    .param p1    # Lorg/apache/http/HttpEntity;
-    .param p2    # Lorg/apache/http/ProtocolVersion;
-    .param p3    # I
-    .param p4    # Lorg/apache/http/protocol/HttpContext;
 
     const/4 v1, 0x1
 
@@ -396,7 +382,6 @@
 
 .method private openHttpConnection(Landroid/net/http/Request;)Z
     .locals 11
-    .param p1    # Landroid/net/http/Request;
 
     const/4 v5, 0x1
 
@@ -624,7 +609,6 @@
 
 .method processRequests(Landroid/net/http/Request;)V
     .locals 14
-    .param p1    # Landroid/net/http/Request;
 
     const/4 v10, 0x3
 
@@ -996,9 +980,6 @@
 
 .method setCanPersist(Lorg/apache/http/HttpEntity;Lorg/apache/http/ProtocolVersion;I)V
     .locals 1
-    .param p1    # Lorg/apache/http/HttpEntity;
-    .param p2    # Lorg/apache/http/ProtocolVersion;
-    .param p3    # I
 
     iget-object v0, p0, Landroid/net/http/Connection;->mHttpContext:Lorg/apache/http/protocol/HttpContext;
 
@@ -1013,7 +994,6 @@
 
 .method setCanPersist(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/net/http/Connection;->mCanPersist:Z
 

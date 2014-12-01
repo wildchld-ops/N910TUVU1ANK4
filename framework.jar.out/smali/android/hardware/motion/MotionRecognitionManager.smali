@@ -126,7 +126,6 @@
 # direct methods
 .method public constructor <init>(Landroid/os/Looper;)V
     .locals 3
-    .param p1    # Landroid/os/Looper;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -207,7 +206,6 @@
 
 .method protected static EncodeLog(Ljava/lang/String;)Ljava/lang/String;
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     const-string v3, "ro.debug_level"
 
@@ -280,7 +278,6 @@
 
 .method static synthetic access$000(Landroid/hardware/motion/MotionRecognitionManager;)Landroid/hardware/motion/IMotionRecognitionService;
     .locals 1
-    .param p0    # Landroid/hardware/motion/MotionRecognitionManager;
 
     iget-object v0, p0, Landroid/hardware/motion/MotionRecognitionManager;->motionService:Landroid/hardware/motion/IMotionRecognitionService;
 
@@ -289,7 +286,6 @@
 
 .method static synthetic access$100(Landroid/hardware/motion/MotionRecognitionManager;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Landroid/hardware/motion/MotionRecognitionManager;
 
     iget-object v0, p0, Landroid/hardware/motion/MotionRecognitionManager;->sListenerDelegates:Ljava/util/ArrayList;
 
@@ -306,7 +302,6 @@
 
 .method public static isValidMotionSensor(I)Z
     .locals 2
-    .param p0    # I
 
     const/4 v0, 0x1
 
@@ -338,7 +333,6 @@
 # virtual methods
 .method public registerListener(Landroid/hardware/motion/MRListener;)V
     .locals 2
-    .param p1    # Landroid/hardware/motion/MRListener;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -353,8 +347,6 @@
 
 .method public registerListener(Landroid/hardware/motion/MRListener;I)V
     .locals 1
-    .param p1    # Landroid/hardware/motion/MRListener;
-    .param p2    # I
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -367,9 +359,6 @@
 
 .method public registerListener(Landroid/hardware/motion/MRListener;ILandroid/os/Handler;)V
     .locals 2
-    .param p1    # Landroid/hardware/motion/MRListener;
-    .param p2    # I
-    .param p3    # Landroid/os/Handler;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -405,8 +394,6 @@
 
 .method public registerListener(Landroid/hardware/motion/MRListener;Landroid/os/Handler;)V
     .locals 1
-    .param p1    # Landroid/hardware/motion/MRListener;
-    .param p2    # Landroid/os/Handler;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -419,8 +406,6 @@
 
 .method public registerListenerEvent(Landroid/hardware/motion/MRListener;I)V
     .locals 1
-    .param p1    # Landroid/hardware/motion/MRListener;
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -431,10 +416,6 @@
 
 .method public registerListenerEvent(Landroid/hardware/motion/MRListener;IILandroid/os/Handler;)V
     .locals 14
-    .param p1    # Landroid/hardware/motion/MRListener;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/os/Handler;
 
     if-eqz p1, :cond_3
 
@@ -899,9 +880,6 @@
 
 .method public registerListenerEvent(Landroid/hardware/motion/MRListener;ILandroid/os/Handler;)V
     .locals 1
-    .param p1    # Landroid/hardware/motion/MRListener;
-    .param p2    # I
-    .param p3    # Landroid/os/Handler;
 
     const/4 v0, 0x0
 
@@ -941,8 +919,6 @@
 
 .method public setMotionAngle(Landroid/hardware/motion/MRListener;I)V
     .locals 0
-    .param p1    # Landroid/hardware/motion/MRListener;
-    .param p2    # I
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -951,12 +927,6 @@
 
 .method public setMotionTiltLevel(IIIIII)V
     .locals 8
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     :try_start_0
     iget-object v0, p0, Landroid/hardware/motion/MotionRecognitionManager;->motionService:Landroid/hardware/motion/IMotionRecognitionService;
@@ -1000,8 +970,6 @@
 
 .method public setSmartMotionAngle(Landroid/hardware/motion/MRListener;I)V
     .locals 7
-    .param p1    # Landroid/hardware/motion/MRListener;
-    .param p2    # I
 
     iget-object v5, p0, Landroid/hardware/motion/MotionRecognitionManager;->sListenerDelegates:Ljava/util/ArrayList;
 
@@ -1092,7 +1060,6 @@
 
 .method public unregisterListener(Landroid/hardware/motion/MRListener;)V
     .locals 10
-    .param p1    # Landroid/hardware/motion/MRListener;
 
     iget-object v7, p0, Landroid/hardware/motion/MotionRecognitionManager;->sListenerDelegates:Ljava/util/ArrayList;
 
@@ -1441,8 +1408,6 @@
 
 .method public unregisterListener(Landroid/hardware/motion/MRListener;I)V
     .locals 9
-    .param p1    # Landroid/hardware/motion/MRListener;
-    .param p2    # I
 
     iget-object v6, p0, Landroid/hardware/motion/MotionRecognitionManager;->sListenerDelegates:Ljava/util/ArrayList;
 
@@ -1573,8 +1538,6 @@
 
 .method public useMotionAlways(Landroid/hardware/motion/MRListener;Z)V
     .locals 0
-    .param p1    # Landroid/hardware/motion/MRListener;
-    .param p2    # Z
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 

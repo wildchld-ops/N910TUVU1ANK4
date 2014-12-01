@@ -79,8 +79,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/database/Cursor;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/database/Cursor;
 
     const/4 v2, 0x0
 
@@ -137,7 +135,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/ui/ConversationListAdapter;)Lcom/android/mms/hover/ListHoverController;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ConversationListAdapter;
 
     iget-object v0, p0, Lcom/android/mms/ui/ConversationListAdapter;->mListHoverController:Lcom/android/mms/hover/ListHoverController;
 
@@ -148,9 +145,6 @@
 # virtual methods
 .method public bindView(Landroid/view/View;Landroid/content/Context;Landroid/database/Cursor;)V
     .locals 6
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/database/Cursor;
 
     const/4 v2, 0x0
 
@@ -479,9 +473,6 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     move-object v0, p3
 
@@ -505,7 +496,6 @@
 
 .method public hasLockedMsg(J)Z
     .locals 2
-    .param p1    # J
 
     iget-object v0, p0, Lcom/android/mms/ui/ConversationListAdapter;->mHasLockedThreadList:Ljava/util/ArrayList;
 
@@ -532,7 +522,6 @@
 
 .method public isCheckedThreadId(J)Z
     .locals 2
-    .param p1    # J
 
     iget-object v0, p0, Lcom/android/mms/ui/ConversationListAdapter;->mCheckedList:Ljava/util/ArrayList;
 
@@ -549,7 +538,6 @@
 
 .method public isSPenInformationPreviewOn(Landroid/content/Context;)Z
     .locals 6
-    .param p1    # Landroid/content/Context;
 
     const/4 v2, 0x1
 
@@ -610,9 +598,6 @@
 
 .method public newView(Landroid/content/Context;Landroid/database/Cursor;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/database/Cursor;
-    .param p3    # Landroid/view/ViewGroup;
 
     iget-object v0, p0, Lcom/android/mms/ui/ConversationListAdapter;->mFactory:Landroid/view/LayoutInflater;
 
@@ -676,7 +661,6 @@
 
 .method public onMovedToScrapHeap(Landroid/view/View;)V
     .locals 4
-    .param p1    # Landroid/view/View;
 
     instance-of v1, p1, Lcom/android/mms/ui/ConversationListItem;
 
@@ -719,7 +703,6 @@
 
 .method public setAnimation(Lcom/android/mms/animation/MsgListAnimation;)V
     .locals 0
-    .param p1    # Lcom/android/mms/animation/MsgListAnimation;
 
     iput-object p1, p0, Lcom/android/mms/ui/ConversationListAdapter;->mMsgListAnimation:Lcom/android/mms/animation/MsgListAnimation;
 
@@ -728,7 +711,6 @@
 
 .method public setAnimationEnable(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/ConversationListAdapter;->mIsAnimationEnable:Z
 
@@ -737,7 +719,6 @@
 
 .method public setChecked(J)V
     .locals 2
-    .param p1    # J
 
     iget-object v0, p0, Lcom/android/mms/ui/ConversationListAdapter;->mCheckedList:Ljava/util/ArrayList;
 
@@ -856,7 +837,6 @@
 
 .method public setEnabled(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/ConversationListAdapter;->mEnabled:Z
 
@@ -865,7 +845,6 @@
 
 .method public setHasLockedMsg(J)V
     .locals 3
-    .param p1    # J
 
     iget-object v0, p0, Lcom/android/mms/ui/ConversationListAdapter;->mHasLockedThreadList:Ljava/util/ArrayList;
 
@@ -918,7 +897,6 @@
 
 .method public setListItemSelected(J)V
     .locals 0
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/android/mms/ui/ConversationListAdapter;->mSelectedThreadId:J
 
@@ -927,7 +905,6 @@
 
 .method public setMultiMode(Z)V
     .locals 1
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/ConversationListAdapter;->mIsMultiMode:Z
 
@@ -945,7 +922,6 @@
 
 .method public setOnContentChangedListener(Lcom/android/mms/ui/ConversationListAdapter$OnContentChangedListener;)V
     .locals 0
-    .param p1    # Lcom/android/mms/ui/ConversationListAdapter$OnContentChangedListener;
 
     iput-object p1, p0, Lcom/android/mms/ui/ConversationListAdapter;->mOnContentChangedListener:Lcom/android/mms/ui/ConversationListAdapter$OnContentChangedListener;
 
@@ -954,7 +930,6 @@
 
 .method public setSplitModePreference(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/ConversationListAdapter;->mSplitModePreference:Z
 
@@ -963,7 +938,6 @@
 
 .method public toggleCheckBox(J)Z
     .locals 3
-    .param p1    # J
 
     iget-object v1, p0, Lcom/android/mms/ui/ConversationListAdapter;->mCheckedList:Ljava/util/ArrayList;
 
@@ -1012,8 +986,6 @@
 
 .method public toggleCheckedChat(ILjava/lang/String;)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     if-eqz p2, :cond_0
 

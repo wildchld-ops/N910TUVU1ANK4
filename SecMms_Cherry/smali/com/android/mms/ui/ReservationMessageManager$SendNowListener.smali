@@ -26,7 +26,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/mms/ui/ReservationMessageManager;Lcom/android/mms/ui/MessageItem;)V
     .locals 4
-    .param p2    # Lcom/android/mms/ui/MessageItem;
 
     iput-object p1, p0, Lcom/android/mms/ui/ReservationMessageManager$SendNowListener;->this$0:Lcom/android/mms/ui/ReservationMessageManager;
 
@@ -240,8 +239,6 @@
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 15
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     const-string v1, "sms"
 

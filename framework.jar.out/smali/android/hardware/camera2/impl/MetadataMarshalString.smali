@@ -66,7 +66,6 @@
 
 .method public getNativeSize(I)I
     .locals 1
-    .param p1    # I
 
     const/4 v0, -0x1
 
@@ -75,7 +74,6 @@
 
 .method public isNativeTypeSupported(I)Z
     .locals 1
-    .param p1    # I
 
     if-nez p1, :cond_0
 
@@ -92,10 +90,6 @@
 
 .method public bridge synthetic marshal(Ljava/lang/Object;Ljava/nio/ByteBuffer;IZ)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/nio/ByteBuffer;
-    .param p3    # I
-    .param p4    # Z
 
     check-cast p1, Ljava/lang/String;
 
@@ -108,10 +102,6 @@
 
 .method public marshal(Ljava/lang/String;Ljava/nio/ByteBuffer;IZ)I
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/nio/ByteBuffer;
-    .param p3    # I
-    .param p4    # Z
 
     sget-object v1, Landroid/hardware/camera2/impl/MetadataMarshalString;->UTF8_CHARSET:Ljava/nio/charset/Charset;
 
@@ -137,8 +127,6 @@
 
 .method public bridge synthetic unmarshal(Ljava/nio/ByteBuffer;I)Ljava/lang/Object;
     .locals 1
-    .param p1    # Ljava/nio/ByteBuffer;
-    .param p2    # I
 
     invoke-virtual {p0, p1, p2}, Landroid/hardware/camera2/impl/MetadataMarshalString;->unmarshal(Ljava/nio/ByteBuffer;I)Ljava/lang/String;
 
@@ -149,8 +137,6 @@
 
 .method public unmarshal(Ljava/nio/ByteBuffer;I)Ljava/lang/String;
     .locals 6
-    .param p1    # Ljava/nio/ByteBuffer;
-    .param p2    # I
 
     const/4 v5, 0x0
 

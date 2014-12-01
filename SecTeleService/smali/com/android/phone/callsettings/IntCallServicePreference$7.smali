@@ -56,7 +56,7 @@
 
     iget-object v0, v0, Lcom/android/phone/callsettings/IntCallServicePreference;->mAutoLayout:Landroid/widget/LinearLayout;
 
-    invoke-virtual {v0}, Landroid/view/View;->isFocused()Z
+    invoke-virtual {v0}, Landroid/widget/LinearLayout;->isFocused()Z
 
     move-result v0
 
@@ -75,7 +75,7 @@
 
     iget-object v0, p0, Lcom/android/phone/callsettings/IntCallServicePreference$7;->this$0:Lcom/android/phone/callsettings/IntCallServicePreference;
 
-    invoke-virtual {v0}, Landroid/preference/DialogPreference;->getDialog()Landroid/app/Dialog;
+    invoke-virtual {v0}, Lcom/android/phone/callsettings/IntCallServicePreference;->getDialog()Landroid/app/Dialog;
 
     move-result-object v0
 

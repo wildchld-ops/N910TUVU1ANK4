@@ -101,7 +101,6 @@
 
 .method static synthetic access$000(Lcom/android/server/analytics/data/collection/input/InputEventDataCollector;)Lcom/android/server/analytics/data/collection/input/InputEventDataCollector;
     .locals 1
-    .param p0    # Lcom/android/server/analytics/data/collection/input/InputEventDataCollector;
 
     iget-object v0, p0, Lcom/android/server/analytics/data/collection/input/InputEventDataCollector;->mInstance:Lcom/android/server/analytics/data/collection/input/InputEventDataCollector;
 
@@ -110,8 +109,6 @@
 
 .method static synthetic access$100(Lcom/android/server/analytics/data/collection/input/InputEventDataCollector;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/server/analytics/data/collection/input/InputEventDataCollector;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/analytics/data/collection/input/InputEventDataCollector;->processInputEventLog(Ljava/lang/String;)V
 
@@ -123,8 +120,6 @@
 
 .method public static log(ILjava/lang/String;)V
     .locals 3
-    .param p0    # I
-    .param p1    # Ljava/lang/String;
 
     sget-object v0, Lcom/android/server/analytics/data/collection/input/InputEventDataCollector;->mInternalHandler:Landroid/os/Handler;
 
@@ -145,7 +140,6 @@
 
 .method private processInputEventLog(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     const/4 v5, 0x4
 
@@ -223,7 +217,6 @@
 
 .method private supportedLogGroups(I)Z
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/server/analytics/data/collection/input/InputEventDataCollector;->getSupportedLogGroups()I
 
@@ -264,7 +257,6 @@
 
 .method public registerLogCollectorCallback(Lcom/sec/analytics/data/collection/serviceif/LogCollector$LogCollectorCallback;)V
     .locals 0
-    .param p1    # Lcom/sec/analytics/data/collection/serviceif/LogCollector$LogCollectorCallback;
 
     iput-object p1, p0, Lcom/android/server/analytics/data/collection/input/InputEventDataCollector;->mCallback:Lcom/sec/analytics/data/collection/serviceif/LogCollector$LogCollectorCallback;
 
@@ -273,14 +265,12 @@
 
 .method public restartLogCollection(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public startLogCollection(I)V
     .locals 3
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/analytics/data/collection/input/InputEventDataCollector;->supportedLogGroups(I)Z
 
@@ -336,7 +326,6 @@
 
 .method public unregisterLogCollectorCallback(Lcom/sec/analytics/data/collection/serviceif/LogCollector$LogCollectorCallback;)V
     .locals 1
-    .param p1    # Lcom/sec/analytics/data/collection/serviceif/LogCollector$LogCollectorCallback;
 
     const/4 v0, 0x0
 

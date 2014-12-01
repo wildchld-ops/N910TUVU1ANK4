@@ -29,7 +29,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/wifi/WifiAPITest;)I
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiAPITest;
 
     iget v0, p0, Lcom/android/settings/wifi/WifiAPITest;->netid:I
 
@@ -38,8 +37,6 @@
 
 .method static synthetic access$002(Lcom/android/settings/wifi/WifiAPITest;I)I
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/WifiAPITest;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/settings/wifi/WifiAPITest;->netid:I
 
@@ -48,7 +45,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/wifi/WifiAPITest;)Landroid/net/wifi/WifiManager;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiAPITest;
 
     iget-object v0, p0, Lcom/android/settings/wifi/WifiAPITest;->mWifiManager:Landroid/net/wifi/WifiManager;
 
@@ -109,7 +105,6 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onCreate(Landroid/os/Bundle;)V
 
@@ -130,7 +125,6 @@
 
 .method public onPreferenceClick(Landroid/preference/Preference;)Z
     .locals 4
-    .param p1    # Landroid/preference/Preference;
 
     iget-object v2, p0, Lcom/android/settings/wifi/WifiAPITest;->mWifiDisconnect:Landroid/preference/Preference;
 
@@ -235,8 +229,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 1
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     invoke-super {p0, p1, p2}, Landroid/preference/PreferenceActivity;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
 

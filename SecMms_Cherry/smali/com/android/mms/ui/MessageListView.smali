@@ -62,7 +62,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
 
     const/4 v4, 0x0
 
@@ -121,8 +120,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v4, 0x0
 
@@ -181,7 +178,6 @@
 
 .method private KeyPressOnSearchTitle(Lcom/android/mms/ui/MessageListItem;)V
     .locals 5
-    .param p1    # Lcom/android/mms/ui/MessageListItem;
 
     const/4 v4, 0x1
 
@@ -249,10 +245,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/ui/MessageListView;Landroid/view/View;ILandroid/view/ViewGroup$LayoutParams;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/MessageListView;
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # Landroid/view/ViewGroup$LayoutParams;
 
     invoke-virtual {p0, p1, p2, p3}, Landroid/view/ViewGroup;->addViewInLayout(Landroid/view/View;ILandroid/view/ViewGroup$LayoutParams;)Z
 
@@ -296,7 +288,6 @@
 # virtual methods
 .method public dispatchTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 12
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getPointerCount()I
 
@@ -970,7 +961,6 @@
 
 .method protected onDraw(Landroid/graphics/Canvas;)V
     .locals 4
-    .param p1    # Landroid/graphics/Canvas;
 
     const/4 v3, 0x0
 
@@ -1021,8 +1011,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v3, 0x0
 
@@ -1136,8 +1124,6 @@
 
 .method public onKeyLongPress(ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     invoke-super {p0, p1, p2}, Landroid/view/View;->onKeyLongPress(ILandroid/view/KeyEvent;)Z
 
@@ -1148,8 +1134,6 @@
 
 .method public onKeyShortcut(ILandroid/view/KeyEvent;)Z
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     packed-switch p1, :pswitch_data_0
 
@@ -1212,8 +1196,6 @@
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v4, 0x0
 
@@ -1431,10 +1413,6 @@
 
 .method protected onSizeChanged(IIII)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     if-lez p2, :cond_0
 
@@ -1446,7 +1424,6 @@
 
 .method public setBackground(Landroid/graphics/drawable/Drawable;)V
     .locals 2
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     invoke-super {p0, p1}, Landroid/view/View;->setBackground(Landroid/graphics/drawable/Drawable;)V
 
@@ -1468,7 +1445,6 @@
 
 .method public setMsgThreadViewHandler(Landroid/os/Handler;)V
     .locals 0
-    .param p1    # Landroid/os/Handler;
 
     iput-object p1, p0, Lcom/android/mms/ui/MessageListView;->mHandler:Landroid/os/Handler;
 
@@ -1477,7 +1453,6 @@
 
 .method public setOnDeleteMsgAnimation(Lcom/android/mms/ui/MessageListView$OnDeleteMsgAnimationListener;)V
     .locals 0
-    .param p1    # Lcom/android/mms/ui/MessageListView$OnDeleteMsgAnimationListener;
 
     iput-object p1, p0, Lcom/android/mms/ui/MessageListView;->mOnDelAnimTotalListener:Lcom/android/mms/ui/MessageListView$OnDeleteMsgAnimationListener;
 
@@ -1486,7 +1461,6 @@
 
 .method public showContextMenuForChild(Landroid/view/View;)Z
     .locals 1
-    .param p1    # Landroid/view/View;
 
     iget-boolean v0, p0, Lcom/android/mms/ui/MessageListView;->isPinchZoom:Z
 
@@ -1507,7 +1481,6 @@
 
 .method public startDeleteMsgAnimation([I)V
     .locals 1
-    .param p1    # [I
 
     invoke-virtual {p0}, Lcom/android/mms/ui/MessageListView;->initDelAnimListView()V
 

@@ -66,7 +66,6 @@
 
 .method private constructor <init>(Landroid/content/res/Resources;)V
     .locals 1
-    .param p1    # Landroid/content/res/Resources;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -85,8 +84,6 @@
 
 .method private add(Ljava/lang/String;C)V
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # C
 
     const v8, 0xffff
 
@@ -250,10 +247,6 @@
 
 .method public static get(Ljava/lang/CharSequence;IILandroid/view/View;)Ljava/lang/String;
     .locals 1
-    .param p0    # Ljava/lang/CharSequence;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/view/View;
 
     invoke-static {p3}, Landroid/text/AutoText;->getInstance(Landroid/view/View;)Landroid/text/AutoText;
 
@@ -268,7 +261,6 @@
 
 .method private static getInstance(Landroid/view/View;)Landroid/text/AutoText;
     .locals 5
-    .param p0    # Landroid/view/View;
 
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
@@ -330,7 +322,6 @@
 
 .method public static getSize(Landroid/view/View;)I
     .locals 1
-    .param p0    # Landroid/view/View;
 
     invoke-static {p0}, Landroid/text/AutoText;->getInstance(Landroid/view/View;)Landroid/text/AutoText;
 
@@ -345,7 +336,6 @@
 
 .method private init(Landroid/content/res/Resources;)V
     .locals 12
-    .param p1    # Landroid/content/res/Resources;
 
     const v9, 0x10f0002
 
@@ -518,9 +508,6 @@
 
 .method private lookup(Ljava/lang/CharSequence;II)Ljava/lang/String;
     .locals 9
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v5, 0x0
 

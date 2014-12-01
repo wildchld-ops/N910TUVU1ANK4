@@ -22,12 +22,6 @@
 # direct methods
 .method public constructor <init>(Landroid/media/effect/EffectContext;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Class;)V
     .locals 0
-    .param p1    # Landroid/media/effect/EffectContext;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Ljava/lang/Class;
 
     invoke-direct {p0, p1, p2}, Landroid/media/effect/FilterEffect;-><init>(Landroid/media/effect/EffectContext;Ljava/lang/String;)V
 
@@ -44,7 +38,6 @@
 
 .method private createGraph(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     new-instance v1, Landroid/filterfw/io/TextGraphReader;
 
@@ -104,10 +97,6 @@
 # virtual methods
 .method public apply(IIII)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-virtual {p0}, Landroid/media/effect/FilterEffect;->beginGLEffect()V
 
@@ -224,8 +213,6 @@
 
 .method public setParameter(Ljava/lang/String;Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Object;
 
     return-void
 .end method

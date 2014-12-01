@@ -25,8 +25,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/am/ActiveServices;Lcom/android/server/am/ServiceRecord;Ljava/lang/String;)V
     .locals 0
-    .param p2    # Lcom/android/server/am/ServiceRecord;
-    .param p3    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/server/am/ActiveServices$ServiceLookupResult;->this$0:Lcom/android/server/am/ActiveServices;
 

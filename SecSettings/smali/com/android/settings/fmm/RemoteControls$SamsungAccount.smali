@@ -39,7 +39,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/fmm/RemoteControls$SamsungAccount;)Landroid/accounts/AuthenticatorDescription;
     .locals 1
-    .param p0    # Lcom/android/settings/fmm/RemoteControls$SamsungAccount;
 
     iget-object v0, p0, Lcom/android/settings/fmm/RemoteControls$SamsungAccount;->mSamsungDescription:Landroid/accounts/AuthenticatorDescription;
 
@@ -48,7 +47,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/fmm/RemoteControls$SamsungAccount;)I
     .locals 1
-    .param p0    # Lcom/android/settings/fmm/RemoteControls$SamsungAccount;
 
     iget v0, p0, Lcom/android/settings/fmm/RemoteControls$SamsungAccount;->returnvalue_sa:I
 
@@ -59,9 +57,6 @@
 # virtual methods
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 9
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const/4 v8, 0x0
 

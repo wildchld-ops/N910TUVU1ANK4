@@ -117,7 +117,6 @@
 
 .method public setContentDescription(I)Landroid/app/ActionBar$Tab;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/internal/app/ActionBarImpl$TabImpl;->this$0:Lcom/android/internal/app/ActionBarImpl;
 
@@ -143,7 +142,6 @@
 
 .method public setContentDescription(Ljava/lang/CharSequence;)Landroid/app/ActionBar$Tab;
     .locals 2
-    .param p1    # Ljava/lang/CharSequence;
 
     iput-object p1, p0, Lcom/android/internal/app/ActionBarImpl$TabImpl;->mContentDesc:Ljava/lang/CharSequence;
 
@@ -168,7 +166,6 @@
 
 .method public setCustomView(I)Landroid/app/ActionBar$Tab;
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/internal/app/ActionBarImpl$TabImpl;->this$0:Lcom/android/internal/app/ActionBarImpl;
 
@@ -195,7 +192,6 @@
 
 .method public setCustomView(Landroid/view/View;)Landroid/app/ActionBar$Tab;
     .locals 2
-    .param p1    # Landroid/view/View;
 
     iput-object p1, p0, Lcom/android/internal/app/ActionBarImpl$TabImpl;->mCustomView:Landroid/view/View;
 
@@ -220,7 +216,6 @@
 
 .method public setIcon(I)Landroid/app/ActionBar$Tab;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/internal/app/ActionBarImpl$TabImpl;->this$0:Lcom/android/internal/app/ActionBarImpl;
 
@@ -246,7 +241,6 @@
 
 .method public setIcon(Landroid/graphics/drawable/Drawable;)Landroid/app/ActionBar$Tab;
     .locals 2
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     iput-object p1, p0, Lcom/android/internal/app/ActionBarImpl$TabImpl;->mIcon:Landroid/graphics/drawable/Drawable;
 
@@ -271,7 +265,6 @@
 
 .method public setPosition(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/internal/app/ActionBarImpl$TabImpl;->mPosition:I
 
@@ -280,7 +273,6 @@
 
 .method public setTabListener(Landroid/app/ActionBar$TabListener;)Landroid/app/ActionBar$Tab;
     .locals 0
-    .param p1    # Landroid/app/ActionBar$TabListener;
 
     iput-object p1, p0, Lcom/android/internal/app/ActionBarImpl$TabImpl;->mCallback:Landroid/app/ActionBar$TabListener;
 
@@ -289,7 +281,6 @@
 
 .method public setTag(Ljava/lang/Object;)Landroid/app/ActionBar$Tab;
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     iput-object p1, p0, Lcom/android/internal/app/ActionBarImpl$TabImpl;->mTag:Ljava/lang/Object;
 
@@ -298,7 +289,6 @@
 
 .method public setText(I)Landroid/app/ActionBar$Tab;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/internal/app/ActionBarImpl$TabImpl;->this$0:Lcom/android/internal/app/ActionBarImpl;
 
@@ -324,7 +314,6 @@
 
 .method public setText(Ljava/lang/CharSequence;)Landroid/app/ActionBar$Tab;
     .locals 2
-    .param p1    # Ljava/lang/CharSequence;
 
     iput-object p1, p0, Lcom/android/internal/app/ActionBarImpl$TabImpl;->mText:Ljava/lang/CharSequence;
 

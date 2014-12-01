@@ -33,7 +33,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 3
-    .param p1    # Landroid/os/Message;
 
     # getter for: Lcom/android/settings/users/AppRestrictionsFragment;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/android/settings/users/AppRestrictionsFragment;->access$000()Ljava/lang/String;

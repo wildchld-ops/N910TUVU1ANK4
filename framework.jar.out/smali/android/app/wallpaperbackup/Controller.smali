@@ -126,8 +126,6 @@
 
 .method private createBackupFiles(Landroid/content/Context;Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/FileNotFoundException;,
@@ -183,8 +181,6 @@
 
 .method private createBackupFilesForMultiSim(Landroid/content/Context;Ljava/lang/String;)Z
     .locals 8
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/FileNotFoundException;,
@@ -295,8 +291,6 @@
 
 .method private createBackupWallpaperXmlFiles(Ljava/lang/String;Ljava/lang/String;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -332,7 +326,6 @@
 
 .method private deleteFiles(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     new-instance v1, Ljava/io/File;
@@ -363,7 +356,6 @@
 
 .method private getBackupWallpaperImageFilesPath(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -404,7 +396,6 @@
 
 .method private getBackupWallpaperImageFilesPathSim2(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -453,8 +444,6 @@
 
 .method private getRestoreWallpaperImageFilesPath(Ljava/lang/String;Landroid/app/wallpaperbackup/WallpaperUserPOJO;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/app/wallpaperbackup/WallpaperUserPOJO;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -485,7 +474,6 @@
 
 .method private hasFile(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -530,8 +518,6 @@
 
 .method public static saveBitmap(Ljava/lang/String;Landroid/graphics/Bitmap;)V
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # Landroid/graphics/Bitmap;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/FileNotFoundException;,
@@ -585,7 +571,6 @@
 # virtual methods
 .method public drawableToBitmap(Landroid/graphics/drawable/Drawable;)Landroid/graphics/Bitmap;
     .locals 6
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     const/4 v5, 0x0
 
@@ -638,8 +623,6 @@
 
 .method public getWallpaperDimensions(Landroid/content/Context;Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/FileNotFoundException;,
@@ -700,9 +683,6 @@
 
 .method public getWallpaperDimensionsForMultiSim(Landroid/content/Context;Ljava/lang/String;I)Z
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/FileNotFoundException;,
@@ -754,8 +734,6 @@
 
 .method public pushRestoreFiles(Landroid/content/Context;Ljava/lang/String;)V
     .locals 8
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;
@@ -858,9 +836,6 @@
 
 .method public startBackup(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
     .locals 12
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const-wide/16 v0, 0x0
 
@@ -1044,9 +1019,6 @@
 
 .method public startRestore(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     new-instance v2, Ljava/lang/StringBuilder;
 

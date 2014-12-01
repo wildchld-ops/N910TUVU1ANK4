@@ -20,8 +20,6 @@
 
 .method constructor <init>(Landroid/filterfw/core/FrameFormat;Landroid/filterfw/core/FrameManager;)V
     .locals 2
-    .param p1    # Landroid/filterfw/core/FrameFormat;
-    .param p2    # Landroid/filterfw/core/FrameManager;
 
     invoke-direct {p0, p1, p2}, Landroid/filterfw/core/Frame;-><init>(Landroid/filterfw/core/FrameFormat;Landroid/filterfw/core/FrameManager;)V
 
@@ -437,7 +435,6 @@
 
 .method public setBitmap(Landroid/graphics/Bitmap;)V
     .locals 5
-    .param p1    # Landroid/graphics/Bitmap;
 
     invoke-virtual {p0}, Landroid/filterfw/core/NativeFrame;->assertFrameMutable()V
 
@@ -536,9 +533,6 @@
 
 .method public setData(Ljava/nio/ByteBuffer;II)V
     .locals 4
-    .param p1    # Ljava/nio/ByteBuffer;
-    .param p2    # I
-    .param p3    # I
 
     invoke-virtual {p0}, Landroid/filterfw/core/NativeFrame;->assertFrameMutable()V
 
@@ -680,7 +674,6 @@
 
 .method public setDataFromFrame(Landroid/filterfw/core/Frame;)V
     .locals 3
-    .param p1    # Landroid/filterfw/core/Frame;
 
     invoke-virtual {p0}, Landroid/filterfw/core/NativeFrame;->getFormat()Landroid/filterfw/core/FrameFormat;
 
@@ -806,7 +799,6 @@
 
 .method public setFloats([F)V
     .locals 4
-    .param p1    # [F
 
     invoke-virtual {p0}, Landroid/filterfw/core/NativeFrame;->assertFrameMutable()V
 
@@ -905,7 +897,6 @@
 
 .method public setInts([I)V
     .locals 4
-    .param p1    # [I
 
     invoke-virtual {p0}, Landroid/filterfw/core/NativeFrame;->assertFrameMutable()V
 

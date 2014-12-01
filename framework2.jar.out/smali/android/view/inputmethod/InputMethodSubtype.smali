@@ -92,12 +92,6 @@
 
 .method public constructor <init>(IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
     .locals 8
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Z
 
     const/4 v7, 0x0
 
@@ -122,13 +116,6 @@
 
 .method public constructor <init>(IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZ)V
     .locals 9
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Z
-    .param p7    # Z
 
     const/4 v8, 0x0
 
@@ -155,14 +142,6 @@
 
 .method public constructor <init>(IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZI)V
     .locals 9
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Z
-    .param p7    # Z
-    .param p8    # I
 
     const/4 v8, 0x0
 
@@ -193,7 +172,6 @@
 
 .method constructor <init>(Landroid/os/Parcel;)V
     .locals 4
-    .param p1    # Landroid/os/Parcel;
 
     const/4 v3, 0x0
 
@@ -318,7 +296,6 @@
 
 .method private constructor <init>(Landroid/view/inputmethod/InputMethodSubtype$InputMethodSubtypeBuilder;)V
     .locals 6
-    .param p1    # Landroid/view/inputmethod/InputMethodSubtype$InputMethodSubtypeBuilder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -418,8 +395,6 @@
 
 .method synthetic constructor <init>(Landroid/view/inputmethod/InputMethodSubtype$InputMethodSubtypeBuilder;Landroid/view/inputmethod/InputMethodSubtype$1;)V
     .locals 0
-    .param p1    # Landroid/view/inputmethod/InputMethodSubtype$InputMethodSubtypeBuilder;
-    .param p2    # Landroid/view/inputmethod/InputMethodSubtype$1;
 
     invoke-direct {p0, p1}, Landroid/view/inputmethod/InputMethodSubtype;-><init>(Landroid/view/inputmethod/InputMethodSubtype$InputMethodSubtypeBuilder;)V
 
@@ -428,7 +403,6 @@
 
 .method private static constructLocaleFromString(Ljava/lang/String;)Ljava/util/Locale;
     .locals 7
-    .param p0    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -504,15 +478,6 @@
 
 .method private static getBuilder(IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZIZ)Landroid/view/inputmethod/InputMethodSubtype$InputMethodSubtypeBuilder;
     .locals 1
-    .param p0    # I
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Z
-    .param p6    # Z
-    .param p7    # I
-    .param p8    # Z
 
     new-instance v0, Landroid/view/inputmethod/InputMethodSubtype$InputMethodSubtypeBuilder;
 
@@ -678,12 +643,6 @@
 
 .method private static hashCodeInternal(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZZ)I
     .locals 7
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
-    .param p4    # Z
-    .param p5    # Z
 
     const/4 v6, 0x4
 
@@ -776,9 +735,6 @@
 
 .method public static sort(Landroid/content/Context;ILandroid/view/inputmethod/InputMethodInfo;Ljava/util/List;)Ljava/util/List;
     .locals 7
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # Landroid/view/inputmethod/InputMethodInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -870,7 +826,6 @@
 # virtual methods
 .method public containsExtraValueKey(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Landroid/view/inputmethod/InputMethodSubtype;->getExtraValueHashMap()Ljava/util/HashMap;
 
@@ -893,7 +848,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 5
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x1
 
@@ -1041,9 +995,6 @@
 
 .method public getDisplayName(Landroid/content/Context;Ljava/lang/String;Landroid/content/pm/ApplicationInfo;)Ljava/lang/CharSequence;
     .locals 8
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/content/pm/ApplicationInfo;
 
     iget-object v5, p0, Landroid/view/inputmethod/InputMethodSubtype;->mSubtypeLocale:Ljava/lang/String;
 
@@ -1187,7 +1138,6 @@
 
 .method public getExtraValueOf(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Landroid/view/inputmethod/InputMethodSubtype;->getExtraValueHashMap()Ljava/util/HashMap;
 
@@ -1268,8 +1218,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 3
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     const/4 v1, 0x1
 

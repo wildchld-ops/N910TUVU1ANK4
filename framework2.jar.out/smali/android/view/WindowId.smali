@@ -46,7 +46,6 @@
 
 .method public constructor <init>(Landroid/os/IBinder;)V
     .locals 1
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -61,7 +60,6 @@
 
 .method public constructor <init>(Landroid/view/IWindowId;)V
     .locals 0
-    .param p1    # Landroid/view/IWindowId;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -82,7 +80,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 2
-    .param p1    # Ljava/lang/Object;
 
     instance-of v0, p1, Landroid/view/WindowId;
 
@@ -164,7 +161,6 @@
 
 .method public registerFocusObserver(Landroid/view/WindowId$FocusObserver;)V
     .locals 3
-    .param p1    # Landroid/view/WindowId$FocusObserver;
 
     iget-object v1, p1, Landroid/view/WindowId$FocusObserver;->mRegistrations:Ljava/util/HashMap;
 
@@ -298,7 +294,6 @@
 
 .method public unregisterFocusObserver(Landroid/view/WindowId$FocusObserver;)V
     .locals 3
-    .param p1    # Landroid/view/WindowId$FocusObserver;
 
     iget-object v1, p1, Landroid/view/WindowId$FocusObserver;->mRegistrations:Ljava/util/HashMap;
 
@@ -363,8 +358,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v0, p0, Landroid/view/WindowId;->mToken:Landroid/view/IWindowId;
 

@@ -37,8 +37,6 @@
 
 .method synthetic constructor <init>(Lcom/android/server/enterprise/adapterlayer/PackageManagerAdapter;Lcom/android/server/enterprise/adapterlayer/PackageManagerAdapter$1;)V
     .locals 0
-    .param p1    # Lcom/android/server/enterprise/adapterlayer/PackageManagerAdapter;
-    .param p2    # Lcom/android/server/enterprise/adapterlayer/PackageManagerAdapter$1;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/adapterlayer/PackageManagerAdapter$ClearCacheObserver;-><init>(Lcom/android/server/enterprise/adapterlayer/PackageManagerAdapter;)V
 
@@ -49,8 +47,6 @@
 # virtual methods
 .method public onRemoveCompleted(Ljava/lang/String;Z)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     monitor-enter p0
 

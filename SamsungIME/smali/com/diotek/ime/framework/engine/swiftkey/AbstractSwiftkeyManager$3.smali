@@ -46,8 +46,6 @@
 # virtual methods
 .method public compare(Lcom/touchtype_fluency/Prediction;Lcom/touchtype_fluency/Prediction;)I
     .locals 4
-    .param p1    # Lcom/touchtype_fluency/Prediction;
-    .param p2    # Lcom/touchtype_fluency/Prediction;
 
     invoke-virtual {p1}, Lcom/touchtype_fluency/Prediction;->getProbability()D
 
@@ -84,8 +82,6 @@
 
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p1, Lcom/touchtype_fluency/Prediction;
 

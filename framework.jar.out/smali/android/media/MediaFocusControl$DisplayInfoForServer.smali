@@ -38,9 +38,6 @@
 # direct methods
 .method public constructor <init>(Landroid/media/MediaFocusControl;Landroid/media/IRemoteControlDisplay;II)V
     .locals 1
-    .param p2    # Landroid/media/IRemoteControlDisplay;
-    .param p3    # I
-    .param p4    # I
 
     const/4 v0, -0x1
 
@@ -77,7 +74,6 @@
 
 .method static synthetic access$1000(Landroid/media/MediaFocusControl$DisplayInfoForServer;)I
     .locals 1
-    .param p0    # Landroid/media/MediaFocusControl$DisplayInfoForServer;
 
     iget v0, p0, Landroid/media/MediaFocusControl$DisplayInfoForServer;->mArtworkExpectedHeight:I
 
@@ -86,8 +82,6 @@
 
 .method static synthetic access$1002(Landroid/media/MediaFocusControl$DisplayInfoForServer;I)I
     .locals 0
-    .param p0    # Landroid/media/MediaFocusControl$DisplayInfoForServer;
-    .param p1    # I
 
     iput p1, p0, Landroid/media/MediaFocusControl$DisplayInfoForServer;->mArtworkExpectedHeight:I
 
@@ -96,7 +90,6 @@
 
 .method static synthetic access$3300(Landroid/media/MediaFocusControl$DisplayInfoForServer;)Z
     .locals 1
-    .param p0    # Landroid/media/MediaFocusControl$DisplayInfoForServer;
 
     iget-boolean v0, p0, Landroid/media/MediaFocusControl$DisplayInfoForServer;->mWantsPositionSync:Z
 
@@ -105,8 +98,6 @@
 
 .method static synthetic access$3302(Landroid/media/MediaFocusControl$DisplayInfoForServer;Z)Z
     .locals 0
-    .param p0    # Landroid/media/MediaFocusControl$DisplayInfoForServer;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/media/MediaFocusControl$DisplayInfoForServer;->mWantsPositionSync:Z
 
@@ -115,7 +106,6 @@
 
 .method static synthetic access$600(Landroid/media/MediaFocusControl$DisplayInfoForServer;)Landroid/content/ComponentName;
     .locals 1
-    .param p0    # Landroid/media/MediaFocusControl$DisplayInfoForServer;
 
     iget-object v0, p0, Landroid/media/MediaFocusControl$DisplayInfoForServer;->mClientNotifListComp:Landroid/content/ComponentName;
 
@@ -124,8 +114,6 @@
 
 .method static synthetic access$602(Landroid/media/MediaFocusControl$DisplayInfoForServer;Landroid/content/ComponentName;)Landroid/content/ComponentName;
     .locals 0
-    .param p0    # Landroid/media/MediaFocusControl$DisplayInfoForServer;
-    .param p1    # Landroid/content/ComponentName;
 
     iput-object p1, p0, Landroid/media/MediaFocusControl$DisplayInfoForServer;->mClientNotifListComp:Landroid/content/ComponentName;
 
@@ -134,7 +122,6 @@
 
 .method static synthetic access$700(Landroid/media/MediaFocusControl$DisplayInfoForServer;)Z
     .locals 1
-    .param p0    # Landroid/media/MediaFocusControl$DisplayInfoForServer;
 
     iget-boolean v0, p0, Landroid/media/MediaFocusControl$DisplayInfoForServer;->mEnabled:Z
 
@@ -143,8 +130,6 @@
 
 .method static synthetic access$702(Landroid/media/MediaFocusControl$DisplayInfoForServer;Z)Z
     .locals 0
-    .param p0    # Landroid/media/MediaFocusControl$DisplayInfoForServer;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/media/MediaFocusControl$DisplayInfoForServer;->mEnabled:Z
 
@@ -153,7 +138,6 @@
 
 .method static synthetic access$800(Landroid/media/MediaFocusControl$DisplayInfoForServer;)Landroid/media/IRemoteControlDisplay;
     .locals 1
-    .param p0    # Landroid/media/MediaFocusControl$DisplayInfoForServer;
 
     iget-object v0, p0, Landroid/media/MediaFocusControl$DisplayInfoForServer;->mRcDisplay:Landroid/media/IRemoteControlDisplay;
 
@@ -162,7 +146,6 @@
 
 .method static synthetic access$900(Landroid/media/MediaFocusControl$DisplayInfoForServer;)I
     .locals 1
-    .param p0    # Landroid/media/MediaFocusControl$DisplayInfoForServer;
 
     iget v0, p0, Landroid/media/MediaFocusControl$DisplayInfoForServer;->mArtworkExpectedWidth:I
 
@@ -171,8 +154,6 @@
 
 .method static synthetic access$902(Landroid/media/MediaFocusControl$DisplayInfoForServer;I)I
     .locals 0
-    .param p0    # Landroid/media/MediaFocusControl$DisplayInfoForServer;
-    .param p1    # I
 
     iput p1, p0, Landroid/media/MediaFocusControl$DisplayInfoForServer;->mArtworkExpectedWidth:I
 

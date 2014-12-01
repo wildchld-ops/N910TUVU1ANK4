@@ -95,7 +95,6 @@
 
 .method protected setConnection(Lcom/ipsec/client/IPsecConnection;)V
     .locals 0
-    .param p1    # Lcom/ipsec/client/IPsecConnection;
 
     iput-object p1, p0, Lcom/ipsec/client/IPsecEventData;->mConnection:Lcom/ipsec/client/IPsecConnection;
 
@@ -104,7 +103,6 @@
 
 .method protected setError(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/ipsec/client/IPsecEventData;->mError:Ljava/lang/String;
 
@@ -113,7 +111,6 @@
 
 .method protected setIkeErrorValue(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/ipsec/client/IPsecEventData;->mIkeErrorValue:I
 

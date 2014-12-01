@@ -20,8 +20,6 @@
 
 .method public static getCapabilityBool(II)Z
     .locals 1
-    .param p0    # I
-    .param p1    # I
 
     invoke-static {}, Lcom/immersion/ImmVibe;->getInstance()Lcom/immersion/ImmVibe;
 
@@ -36,8 +34,6 @@
 
 .method public static getCapabilityInt32(II)I
     .locals 1
-    .param p0    # I
-    .param p1    # I
 
     invoke-static {}, Lcom/immersion/ImmVibe;->getInstance()Lcom/immersion/ImmVibe;
 
@@ -52,8 +48,6 @@
 
 .method public static getCapabilityString(II)Ljava/lang/String;
     .locals 1
-    .param p0    # I
-    .param p1    # I
 
     invoke-static {}, Lcom/immersion/ImmVibe;->getInstance()Lcom/immersion/ImmVibe;
 
@@ -82,7 +76,6 @@
 
 .method public static getState(I)I
     .locals 1
-    .param p0    # I
 
     invoke-static {}, Lcom/immersion/ImmVibe;->getInstance()Lcom/immersion/ImmVibe;
 
@@ -141,7 +134,6 @@
 
 .method public static newDevice(I)Lcom/immersion/Device;
     .locals 3
-    .param p0    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/RuntimeException;
@@ -209,7 +201,6 @@
 
 .method private static newDeviceInstanceForName(Ljava/lang/String;)Lcom/immersion/Device;
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -285,7 +276,6 @@
 
 .method public getCapabilityBool(I)Z
     .locals 2
-    .param p1    # I
 
     invoke-static {}, Lcom/immersion/ImmVibe;->getInstance()Lcom/immersion/ImmVibe;
 
@@ -302,7 +292,6 @@
 
 .method public getCapabilityInt32(I)I
     .locals 2
-    .param p1    # I
 
     invoke-static {}, Lcom/immersion/ImmVibe;->getInstance()Lcom/immersion/ImmVibe;
 
@@ -319,7 +308,6 @@
 
 .method public getCapabilityString(I)Ljava/lang/String;
     .locals 2
-    .param p1    # I
 
     invoke-static {}, Lcom/immersion/ImmVibe;->getInstance()Lcom/immersion/ImmVibe;
 
@@ -336,7 +324,6 @@
 
 .method public getPropertyBool(I)Z
     .locals 2
-    .param p1    # I
 
     invoke-static {}, Lcom/immersion/ImmVibe;->getInstance()Lcom/immersion/ImmVibe;
 
@@ -353,7 +340,6 @@
 
 .method public getPropertyInt32(I)I
     .locals 2
-    .param p1    # I
 
     invoke-static {}, Lcom/immersion/ImmVibe;->getInstance()Lcom/immersion/ImmVibe;
 
@@ -370,7 +356,6 @@
 
 .method public getPropertyString(I)Ljava/lang/String;
     .locals 2
-    .param p1    # I
 
     invoke-static {}, Lcom/immersion/ImmVibe;->getInstance()Lcom/immersion/ImmVibe;
 
@@ -403,8 +388,6 @@
 
 .method protected newEffectHandle(II)Lcom/immersion/EffectHandle;
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     new-instance v0, Lcom/immersion/EffectHandle;
 
@@ -415,8 +398,6 @@
 
 .method public playIVTEffect(Lcom/immersion/IVTBuffer;I)Lcom/immersion/EffectHandle;
     .locals 4
-    .param p1    # Lcom/immersion/IVTBuffer;
-    .param p2    # I
 
     iget v0, p0, Lcom/immersion/Device;->hDeviceHandle:I
 
@@ -443,9 +424,6 @@
 
 .method public playIVTEffectRepeat(Lcom/immersion/IVTBuffer;IB)Lcom/immersion/EffectHandle;
     .locals 4
-    .param p1    # Lcom/immersion/IVTBuffer;
-    .param p2    # I
-    .param p3    # B
 
     iget v0, p0, Lcom/immersion/Device;->hDeviceHandle:I
 
@@ -472,7 +450,6 @@
 
 .method public playMagSweepEffect(Lcom/immersion/MagSweepEffectDefinition;)Lcom/immersion/EffectHandle;
     .locals 10
-    .param p1    # Lcom/immersion/MagSweepEffectDefinition;
 
     iget v9, p0, Lcom/immersion/Device;->hDeviceHandle:I
 
@@ -523,7 +500,6 @@
 
 .method public playPeriodicEffect(Lcom/immersion/PeriodicEffectDefinition;)Lcom/immersion/EffectHandle;
     .locals 11
-    .param p1    # Lcom/immersion/PeriodicEffectDefinition;
 
     iget v10, p0, Lcom/immersion/Device;->hDeviceHandle:I
 
@@ -578,7 +554,6 @@
 
 .method public playWaveformEffect(Lcom/immersion/WaveformEffectDefinition;)Lcom/immersion/EffectHandle;
     .locals 8
-    .param p1    # Lcom/immersion/WaveformEffectDefinition;
 
     iget v7, p0, Lcom/immersion/Device;->hDeviceHandle:I
 
@@ -621,8 +596,6 @@
 
 .method public setPropertyBool(IZ)V
     .locals 2
-    .param p1    # I
-    .param p2    # Z
 
     invoke-static {}, Lcom/immersion/ImmVibe;->getInstance()Lcom/immersion/ImmVibe;
 
@@ -637,8 +610,6 @@
 
 .method public setPropertyInt32(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     invoke-static {}, Lcom/immersion/ImmVibe;->getInstance()Lcom/immersion/ImmVibe;
 
@@ -653,8 +624,6 @@
 
 .method public setPropertyString(ILjava/lang/String;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     invoke-static {}, Lcom/immersion/ImmVibe;->getInstance()Lcom/immersion/ImmVibe;
 

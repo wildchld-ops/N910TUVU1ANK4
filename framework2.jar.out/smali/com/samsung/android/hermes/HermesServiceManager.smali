@@ -86,7 +86,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;
@@ -127,10 +126,6 @@
 
 .method static synthetic access$200(Lcom/samsung/android/hermes/HermesServiceManager;Ljava/util/List;Ljava/lang/String;I)Ljava/lang/Object;
     .locals 1
-    .param p0    # Lcom/samsung/android/hermes/HermesServiceManager;
-    .param p1    # Ljava/util/List;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Lcom/samsung/android/hermes/HermesServiceManager;->extractEvent(Ljava/util/List;Ljava/lang/String;I)Ljava/lang/Object;
 
@@ -149,9 +144,6 @@
 
 .method static synthetic access$500(Lcom/samsung/android/hermes/HermesServiceManager;II)Z
     .locals 1
-    .param p0    # Lcom/samsung/android/hermes/HermesServiceManager;
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/samsung/android/hermes/HermesServiceManager;->hoverFilter(II)Z
 
@@ -162,8 +154,6 @@
 
 .method static synthetic access$600(Lcom/samsung/android/hermes/HermesServiceManager;I)Z
     .locals 1
-    .param p0    # Lcom/samsung/android/hermes/HermesServiceManager;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/samsung/android/hermes/HermesServiceManager;->clickFilter(I)Z
 
@@ -174,8 +164,6 @@
 
 .method static synthetic access$700(Lcom/samsung/android/hermes/HermesServiceManager;Ljava/util/ArrayList;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/samsung/android/hermes/HermesServiceManager;
-    .param p1    # Ljava/util/ArrayList;
 
     invoke-direct {p0, p1}, Lcom/samsung/android/hermes/HermesServiceManager;->makeJson(Ljava/util/ArrayList;)Ljava/lang/String;
 
@@ -186,9 +174,6 @@
 
 .method static synthetic access$800(Lcom/samsung/android/hermes/HermesServiceManager;Ljava/lang/String;Landroid/graphics/Rect;)V
     .locals 0
-    .param p0    # Lcom/samsung/android/hermes/HermesServiceManager;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/graphics/Rect;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;,
@@ -203,10 +188,6 @@
 
 .method private varargs analysis(ILjava/lang/Object;I[Ljava/lang/Object;)V
     .locals 8
-    .param p1    # I
-    .param p2    # Ljava/lang/Object;
-    .param p3    # I
-    .param p4    # [Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;,
@@ -327,9 +308,6 @@
 
 .method private varargs checkParamValidation(II[Ljava/lang/Object;)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;
@@ -458,7 +436,6 @@
 
 .method private clickFilter(I)Z
     .locals 2
-    .param p1    # I
 
     invoke-static {}, Lcom/samsung/android/hermes/HermesServiceManager$AnalyzerResultType;->values()[Lcom/samsung/android/hermes/HermesServiceManager$AnalyzerResultType;
 
@@ -512,9 +489,6 @@
 
 .method private createAppObject(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/Object;
 
     new-instance v0, Lorg/json/JSONObject;
 
@@ -550,8 +524,6 @@
 
 .method private createDataObject(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Object;
 
     new-instance v0, Lorg/json/JSONObject;
 
@@ -607,8 +579,6 @@
 
 .method private extractEvent(Ljava/util/List;Ljava/lang/String;I)Ljava/lang/Object;
     .locals 24
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -929,7 +899,6 @@
 
 .method private getAppType(Lcom/samsung/android/hermes/HermesServiceManager$AnalyzerResultType;)Lcom/samsung/android/hermes/HermesServiceManager$AppType;
     .locals 2
-    .param p1    # Lcom/samsung/android/hermes/HermesServiceManager$AnalyzerResultType;
 
     sget-object v0, Lcom/samsung/android/hermes/HermesServiceManager$3;->$SwitchMap$com$samsung$android$hermes$HermesServiceManager$AnalyzerResultType:[I
 
@@ -1001,7 +970,6 @@
 
 .method private static getLinkifyToPatternType(I)I
     .locals 3
-    .param p0    # I
 
     const/4 v0, 0x0
 
@@ -1086,7 +1054,6 @@
 
 .method private static getPatternTpAnalyzerResultType(I)Lcom/samsung/android/hermes/HermesServiceManager$AnalyzerResultType;
     .locals 1
-    .param p0    # I
 
     sparse-switch p0, :sswitch_data_0
 
@@ -1249,8 +1216,6 @@
 
 .method private hoverFilter(II)Z
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     invoke-static {}, Lcom/samsung/android/hermes/HermesServiceManager$AnalyzerResultType;->values()[Lcom/samsung/android/hermes/HermesServiceManager$AnalyzerResultType;
 
@@ -1579,9 +1544,6 @@
 
 .method private varargs makeRequestList(II[Ljava/lang/Object;)Lcom/samsung/android/hermes/KerykeionRequest;
     .locals 8
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [Ljava/lang/Object;
 
     new-instance v3, Lcom/samsung/android/hermes/KerykeionRequest;
 
@@ -1640,8 +1602,6 @@
 
 .method private startHermesTickerService(Ljava/lang/String;Landroid/graphics/Rect;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/graphics/Rect;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;,
@@ -1696,8 +1656,6 @@
 # virtual methods
 .method public analysis(ILjava/lang/Object;)V
     .locals 4
-    .param p1    # I
-    .param p2    # Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;,
@@ -1728,9 +1686,6 @@
 
 .method public analysis(ILjava/lang/Object;I)V
     .locals 4
-    .param p1    # I
-    .param p2    # Ljava/lang/Object;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;,
@@ -1759,10 +1714,6 @@
 
 .method public analysis(ILjava/lang/Object;II)V
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/Object;
-    .param p3    # I
-    .param p4    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;,
@@ -1789,10 +1740,6 @@
 
 .method public analysis(ILjava/lang/String;Landroid/net/Uri;I)V
     .locals 5
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/net/Uri;
-    .param p4    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;,
@@ -1883,10 +1830,6 @@
 
 .method public getSpannableString(ILjava/lang/String;ILandroid/graphics/Rect;)V
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Landroid/graphics/Rect;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;,
@@ -1913,11 +1856,6 @@
 
 .method public getSpannableString(ILjava/lang/String;ILandroid/graphics/Rect;I)V
     .locals 11
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Landroid/graphics/Rect;
-    .param p5    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;,
@@ -2039,7 +1977,6 @@
 
 .method public setHermesCallBack(Lcom/samsung/android/hermes/HermesServiceManager$IHermesCallBack;)V
     .locals 0
-    .param p1    # Lcom/samsung/android/hermes/HermesServiceManager$IHermesCallBack;
 
     iput-object p1, p0, Lcom/samsung/android/hermes/HermesServiceManager;->mIHermesCallBack:Lcom/samsung/android/hermes/HermesServiceManager$IHermesCallBack;
 
@@ -2048,8 +1985,6 @@
 
 .method public showHermes(Lcom/samsung/android/hermes/KerykeionResult;Landroid/graphics/Rect;)V
     .locals 3
-    .param p1    # Lcom/samsung/android/hermes/KerykeionResult;
-    .param p2    # Landroid/graphics/Rect;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/NullPointerException;
@@ -2094,9 +2029,6 @@
 
 .method public showHermes(Ljava/lang/String;Landroid/graphics/Rect;I)V
     .locals 15
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/graphics/Rect;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;
@@ -2246,7 +2178,6 @@
 
 .method public showHermes(Ljava/util/ArrayList;Landroid/graphics/Rect;)V
     .locals 2
-    .param p2    # Landroid/graphics/Rect;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2293,7 +2224,6 @@
 
 .method public training(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;,

@@ -215,8 +215,6 @@
 
 .method public static getDensity(II)I
     .locals 2
-    .param p0    # I
-    .param p1    # I
 
     const/4 v0, 0x4
 
@@ -277,7 +275,6 @@
 
 .method private static getIntensity(I)I
     .locals 1
-    .param p0    # I
 
     if-lez p0, :cond_1
 
@@ -296,8 +293,6 @@
 
 .method public static getSharpness(II)I
     .locals 2
-    .param p0    # I
-    .param p1    # I
 
     const/4 v0, 0x4
 
@@ -358,8 +353,6 @@
 
 .method public static getStrength(II)I
     .locals 2
-    .param p0    # I
-    .param p1    # I
 
     const/4 v0, 0x4
 

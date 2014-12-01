@@ -26,8 +26,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/display/DisplayManagerService;Landroid/view/SurfaceControl;)V
     .locals 1
-    .param p1    # Lcom/android/server/display/DisplayManagerService;
-    .param p2    # Landroid/view/SurfaceControl;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

@@ -32,7 +32,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/transaction/SimChangeReceiver;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/transaction/SimChangeReceiver;
 
     invoke-direct {p0}, Lcom/android/mms/transaction/SimChangeReceiver;->isOperatorChanged()Z
 
@@ -43,7 +42,6 @@
 
 .method public static isAirplaneModeOn(Landroid/content/Context;)Z
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -144,7 +142,6 @@
 
 .method private resetCmasSettings(Landroid/content/Context;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
 
     :try_start_0
     invoke-static {}, Lcom/android/mms/MmsApp;->getApplication()Lcom/android/mms/MmsApp;
@@ -202,8 +199,6 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     invoke-static {}, Lcom/android/mms/MmsConfig;->isKORCMASFeatureEnabled()Z
 

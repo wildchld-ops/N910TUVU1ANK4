@@ -68,7 +68,6 @@
 
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;)V
     .locals 8
-    .param p1    # Lcom/sec/android/app/camera/Camera;
 
     const/4 v1, 0x0
 
@@ -173,9 +172,6 @@
 
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;FF)V
     .locals 8
-    .param p1    # Lcom/sec/android/app/camera/Camera;
-    .param p2    # F
-    .param p3    # F
 
     const/4 v1, 0x0
 
@@ -288,12 +284,6 @@
 
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;FFFFLcom/sec/android/app/camera/glwidget/TwGLEditableSideBarDragDropBox;)V
     .locals 6
-    .param p1    # Lcom/sec/android/app/camera/Camera;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # Lcom/sec/android/app/camera/glwidget/TwGLEditableSideBarDragDropBox;
 
     invoke-virtual {p1}, Lcom/sec/android/app/camera/Camera;->getGLContext()Lcom/sec/android/glview/TwGLContext;
 
@@ -439,7 +429,6 @@
 
 .method static synthetic access$000(Lcom/sec/android/app/camera/glwidget/TwGLEditableSideBarDragDropBox;)Lcom/sec/android/glview/TwGLView$OnTouchListener;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLEditableSideBarDragDropBox;
 
     iget-object v0, p0, Lcom/sec/android/glview/TwGLView;->mOnTouchListener:Lcom/sec/android/glview/TwGLView$OnTouchListener;
 
@@ -448,7 +437,6 @@
 
 .method static synthetic access$100(Lcom/sec/android/app/camera/glwidget/TwGLEditableSideBarDragDropBox;)Lcom/sec/android/glview/TwGLView$OnTouchListener;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLEditableSideBarDragDropBox;
 
     iget-object v0, p0, Lcom/sec/android/glview/TwGLView;->mOnTouchListener:Lcom/sec/android/glview/TwGLView$OnTouchListener;
 
@@ -457,8 +445,6 @@
 
 .method static synthetic access$202(Lcom/sec/android/app/camera/glwidget/TwGLEditableSideBarDragDropBox;Z)Z
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLEditableSideBarDragDropBox;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLEditableSideBarDragDropBox;->mRelocating:Z
 
@@ -467,8 +453,6 @@
 
 .method private relocateItem(Lcom/sec/android/app/camera/glwidget/TwGLEditableSideBarDragDropBox;Lcom/sec/android/glview/TwGLView;)V
     .locals 7
-    .param p1    # Lcom/sec/android/app/camera/glwidget/TwGLEditableSideBarDragDropBox;
-    .param p2    # Lcom/sec/android/glview/TwGLView;
 
     const/4 v5, 0x0
 
@@ -567,7 +551,6 @@
 # virtual methods
 .method public addToFirst(Lcom/sec/android/glview/TwGLView;)V
     .locals 1
-    .param p1    # Lcom/sec/android/glview/TwGLView;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLEditableSideBarDragDropBox;->mPrevious:Lcom/sec/android/app/camera/glwidget/TwGLEditableSideBarDragDropBox;
 
@@ -590,7 +573,6 @@
 
 .method public addToLast(Lcom/sec/android/glview/TwGLView;)V
     .locals 1
-    .param p1    # Lcom/sec/android/glview/TwGLView;
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/glwidget/TwGLDragDropBox;->isEmpty()Z
 
@@ -624,7 +606,6 @@
 
 .method public addView(Lcom/sec/android/glview/TwGLView;)V
     .locals 3
-    .param p1    # Lcom/sec/android/glview/TwGLView;
 
     const/4 v2, 0x1
 
@@ -924,11 +905,6 @@
 
 .method public onDrag(Lcom/sec/android/glview/TwGLView;FFFF)V
     .locals 0
-    .param p1    # Lcom/sec/android/glview/TwGLView;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
 
     invoke-super/range {p0 .. p5}, Lcom/sec/android/app/camera/glwidget/TwGLDragDropBox;->onDrag(Lcom/sec/android/glview/TwGLView;FFFF)V
 
@@ -937,9 +913,6 @@
 
 .method public onDragEnd(Lcom/sec/android/glview/TwGLView;FF)V
     .locals 0
-    .param p1    # Lcom/sec/android/glview/TwGLView;
-    .param p2    # F
-    .param p3    # F
 
     invoke-super {p0, p1, p2, p3}, Lcom/sec/android/app/camera/glwidget/TwGLDragDropBox;->onDragEnd(Lcom/sec/android/glview/TwGLView;FF)V
 
@@ -948,9 +921,6 @@
 
 .method public onDragStart(Lcom/sec/android/glview/TwGLView;FF)V
     .locals 1
-    .param p1    # Lcom/sec/android/glview/TwGLView;
-    .param p2    # F
-    .param p3    # F
 
     invoke-super {p0, p1, p2, p3}, Lcom/sec/android/app/camera/glwidget/TwGLDragDropBox;->onDragStart(Lcom/sec/android/glview/TwGLView;FF)V
 
@@ -963,8 +933,6 @@
 
 .method protected onDrop(Lcom/sec/android/glview/TwGLView;Lcom/sec/android/app/camera/glwidget/TwGLDragDropBox;)V
     .locals 6
-    .param p1    # Lcom/sec/android/glview/TwGLView;
-    .param p2    # Lcom/sec/android/app/camera/glwidget/TwGLDragDropBox;
 
     const/4 v1, 0x4
 
@@ -1117,7 +1085,6 @@
 
 .method public onTouchOver(Lcom/sec/android/glview/TwGLView;)V
     .locals 1
-    .param p1    # Lcom/sec/android/glview/TwGLView;
 
     if-eqz p1, :cond_2
 
@@ -1154,7 +1121,6 @@
 
 .method public setFocusBGVisibility(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLEditableSideBarDragDropBox;->mFocusBG:Lcom/sec/android/glview/TwGLImage;
 
@@ -1170,7 +1136,6 @@
 
 .method public setNext(Lcom/sec/android/app/camera/glwidget/TwGLEditableSideBarDragDropBox;)V
     .locals 0
-    .param p1    # Lcom/sec/android/app/camera/glwidget/TwGLEditableSideBarDragDropBox;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLEditableSideBarDragDropBox;->mNext:Lcom/sec/android/app/camera/glwidget/TwGLEditableSideBarDragDropBox;
 
@@ -1179,7 +1144,6 @@
 
 .method public setNormalBGVisibility(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLEditableSideBarDragDropBox;->mNormalBG:Lcom/sec/android/glview/TwGLImage;
 
@@ -1195,7 +1159,6 @@
 
 .method public setOnSideBarBoxCancelListener(Lcom/sec/android/app/camera/glwidget/TwGLEditableSideBarDragDropBox$OnSideBarBoxCancelListener;)V
     .locals 0
-    .param p1    # Lcom/sec/android/app/camera/glwidget/TwGLEditableSideBarDragDropBox$OnSideBarBoxCancelListener;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLEditableSideBarDragDropBox;->mOnSideBarBoxCancelListener:Lcom/sec/android/app/camera/glwidget/TwGLEditableSideBarDragDropBox$OnSideBarBoxCancelListener;
 
@@ -1204,7 +1167,6 @@
 
 .method public setPrevious(Lcom/sec/android/app/camera/glwidget/TwGLEditableSideBarDragDropBox;)V
     .locals 0
-    .param p1    # Lcom/sec/android/app/camera/glwidget/TwGLEditableSideBarDragDropBox;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLEditableSideBarDragDropBox;->mPrevious:Lcom/sec/android/app/camera/glwidget/TwGLEditableSideBarDragDropBox;
 

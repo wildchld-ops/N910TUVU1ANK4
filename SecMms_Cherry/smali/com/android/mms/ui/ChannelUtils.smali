@@ -58,10 +58,6 @@
 
 .method public static addChannel(Landroid/content/Context;III)V
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     new-instance v0, Landroid/content/ContentValues;
 
@@ -168,10 +164,6 @@
 
 .method public static addChannel(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;I)Z
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     const/4 v1, 0x0
 
@@ -270,11 +262,6 @@
 
 .method public static addChannel(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;II)Z
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
 
     invoke-static {p0, p1, p4}, Lcom/android/mms/ui/ChannelUtils;->isChannelAvailable(Landroid/content/Context;Ljava/lang/String;I)Z
 
@@ -383,7 +370,6 @@
 
 .method public static appendId(Ljava/lang/Long;)Landroid/net/Uri;
     .locals 3
-    .param p0    # Ljava/lang/Long;
 
     sget-object v0, Lcom/android/mms/util/DummyFramework$Channels;->CONTENT_URI:Landroid/net/Uri;
 
@@ -400,8 +386,6 @@
 
 .method public static getChannelId(Landroid/content/Context;I)[S
     .locals 10
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     const/4 v4, 0x0
 
@@ -510,8 +494,6 @@
 
 .method public static getChannels(Landroid/content/Context;I)Landroid/database/Cursor;
     .locals 7
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -560,8 +542,6 @@
 
 .method public static getCheckedCount(Landroid/content/Context;I)I
     .locals 9
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     const/4 v4, 0x0
 
@@ -650,9 +630,6 @@
 
 .method public static getIdbyChannel(Landroid/content/Context;Ljava/lang/String;I)Ljava/lang/Long;
     .locals 9
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const-wide/16 v7, 0x0
 
@@ -785,9 +762,6 @@
 
 .method public static isChannelAvailable(Landroid/content/Context;Ljava/lang/String;I)Z
     .locals 9
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v8, 0x0
 
@@ -893,8 +867,6 @@
 
 .method private static isChannelEnabled(Ljava/lang/String;[S)Z
     .locals 7
-    .param p0    # Ljava/lang/String;
-    .param p1    # [S
 
     const/4 v3, 0x0
 
@@ -984,11 +956,6 @@
 
 .method public static modifyChannel(Landroid/content/Context;Ljava/lang/Long;Ljava/lang/String;Ljava/lang/String;I)Z
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/Long;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
 
     const/4 v3, 0x0
 
@@ -1029,12 +996,6 @@
 
 .method public static modifyChannel(Landroid/content/Context;Ljava/lang/Long;Ljava/lang/String;Ljava/lang/String;II)Z
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/Long;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
-    .param p5    # I
 
     const/4 v3, 0x0
 
@@ -1083,8 +1044,6 @@
 
 .method public static removeChannel(Landroid/content/Context;I)V
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     const-string v0, "Mms/ChannelUtils"
 
@@ -1141,9 +1100,6 @@
 
 .method public static removeChannel(Landroid/content/Context;Ljava/lang/String;I)V
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const-string v0, "Mms/ChannelUtils"
 
@@ -1232,8 +1188,6 @@
 
 .method private static resetAllCbChannelRange(ZI)V
     .locals 7
-    .param p0    # Z
-    .param p1    # I
 
     const/4 v6, 0x2
 
@@ -1520,8 +1474,6 @@
 
 .method public static setCbSettings(Landroid/content/Context;Landroid/content/SharedPreferences;)V
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/content/SharedPreferences;
 
     const/4 v0, 0x0
 
@@ -1532,9 +1484,6 @@
 
 .method public static setCbSettings(Landroid/content/Context;Landroid/content/SharedPreferences;I)V
     .locals 25
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/content/SharedPreferences;
-    .param p2    # I
 
     invoke-static/range {p2 .. p2}, Landroid/telephony/MultiSimSmsManager;->getDefault(I)Landroid/telephony/SmsManager;
 
@@ -2904,10 +2853,6 @@
 
 .method public static updateSubscription(Landroid/content/Context;III)V
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     new-instance v0, Landroid/content/ContentValues;
 

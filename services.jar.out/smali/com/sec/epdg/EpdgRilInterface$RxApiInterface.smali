@@ -25,7 +25,6 @@
 
 .method public static onRecvApnAttachRequest(Lcom/sec/epdg/EpdgRilInterface$ApnAttachRequest;)V
     .locals 5
-    .param p0    # Lcom/sec/epdg/EpdgRilInterface$ApnAttachRequest;
 
     const/4 v4, 0x0
 
@@ -54,7 +53,6 @@
 
 .method public static onRecvApnDetachRequest(Lcom/sec/epdg/EpdgRilInterface$ApnDetachRequest;)V
     .locals 5
-    .param p0    # Lcom/sec/epdg/EpdgRilInterface$ApnDetachRequest;
 
     const/4 v4, 0x0
 
@@ -83,7 +81,6 @@
 
 .method public static onRecvApnHandoverResult(Lcom/sec/epdg/EpdgRilInterface$ApnHandoverResponse;)V
     .locals 5
-    .param p0    # Lcom/sec/epdg/EpdgRilInterface$ApnHandoverResponse;
 
     const/4 v4, 0x0
 
@@ -112,7 +109,6 @@
 
 .method public static onRecvEpdgStatusQuery(I)V
     .locals 4
-    .param p0    # I
 
     invoke-static {}, Lcom/sec/epdg/EpdgService;->getEpdgServiceHandler()Landroid/os/Handler;
 

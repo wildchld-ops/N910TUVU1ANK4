@@ -274,7 +274,7 @@
     const/4 v0, 0x0
 
     :goto_0
-    invoke-virtual {p0}, Landroid/view/ViewGroup;->getChildCount()I
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyContactItemContainer;->getChildCount()I
 
     move-result v2
 
@@ -282,7 +282,7 @@
 
     iget-object v3, p0, Lcom/android/phone/EmergencyContactItemContainer;->mItems:[Lcom/android/phone/EmergencyContactItem;
 
-    invoke-virtual {p0, v0}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/phone/EmergencyContactItemContainer;->getChildAt(I)Landroid/view/View;
 
     move-result-object v2
 
@@ -307,7 +307,7 @@
 
     const v3, 0x7f0a00e7
 
-    invoke-virtual {p0, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v3}, Lcom/android/phone/EmergencyContactItemContainer;->findViewById(I)Landroid/view/View;
 
     move-result-object v3
 
@@ -317,7 +317,7 @@
 
     const v3, 0x7f0a00e8
 
-    invoke-virtual {p0, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v3}, Lcom/android/phone/EmergencyContactItemContainer;->findViewById(I)Landroid/view/View;
 
     move-result-object v3
 
@@ -327,7 +327,7 @@
 
     const v3, 0x7f0a00e9
 
-    invoke-virtual {p0, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v3}, Lcom/android/phone/EmergencyContactItemContainer;->findViewById(I)Landroid/view/View;
 
     move-result-object v3
 
@@ -337,7 +337,7 @@
 
     const v3, 0x7f0a00ea
 
-    invoke-virtual {p0, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v3}, Lcom/android/phone/EmergencyContactItemContainer;->findViewById(I)Landroid/view/View;
 
     move-result-object v3
 
@@ -576,7 +576,7 @@
 
     new-instance v4, Lcom/android/phone/EmergencyContactItemContainer$EmergencyContactAsyncQuery;
 
-    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyContactItemContainer;->getContext()Landroid/content/Context;
 
     move-result-object v5
 
@@ -597,7 +597,7 @@
 
     new-instance v4, Lcom/android/phone/EmergencyContactItemContainer$EmergencyContactAsyncQuery;
 
-    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyContactItemContainer;->getContext()Landroid/content/Context;
 
     move-result-object v5
 
@@ -914,7 +914,7 @@
     if-eqz v0, :cond_c
 
     :cond_a
-    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyContactItemContainer;->getContext()Landroid/content/Context;
 
     move-result-object v7
 
@@ -993,7 +993,7 @@
 .method protected onFinishInflate()V
     .locals 0
 
-    invoke-super {p0}, Landroid/view/View;->onFinishInflate()V
+    invoke-super {p0}, Landroid/widget/LinearLayout;->onFinishInflate()V
 
     invoke-direct {p0}, Lcom/android/phone/EmergencyContactItemContainer;->init()V
 
@@ -1088,7 +1088,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1, v5}, Landroid/widget/AbsListView;->twShowMultiChoiceMode(Z)V
+    invoke-virtual {v1, v5}, Landroid/widget/ListView;->twShowMultiChoiceMode(Z)V
 
     invoke-virtual {p1, v5}, Landroid/view/View;->performHapticFeedback(I)Z
 
@@ -1146,7 +1146,7 @@
     goto :goto_0
 
     :cond_1
-    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyContactItemContainer;->getContext()Landroid/content/Context;
 
     move-result-object v4
 
@@ -1209,7 +1209,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v4}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v4}, Lcom/android/phone/PhoneGlobals;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v4
 
@@ -1304,7 +1304,7 @@
 
     iget-object v4, p0, Lcom/android/phone/EmergencyContactItemContainer;->mEmergencyDialer:Lcom/android/phone/EmergencyDialer;
 
-    invoke-virtual {v4}, Landroid/app/Activity;->invalidateOptionsMenu()V
+    invoke-virtual {v4}, Lcom/android/phone/EmergencyDialer;->invalidateOptionsMenu()V
 
     iget-object v4, p0, Lcom/android/phone/EmergencyContactItemContainer;->mEmergencyDialer:Lcom/android/phone/EmergencyDialer;
 
@@ -1329,7 +1329,7 @@
 
     iget-object v0, p0, Lcom/android/phone/EmergencyContactItemContainer;->contact_id:[J
 
-    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyContactItemContainer;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -1347,7 +1347,7 @@
 
     iget-object v0, p0, Lcom/android/phone/EmergencyContactItemContainer;->contact_id:[J
 
-    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyContactItemContainer;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -1365,7 +1365,7 @@
 
     iget-object v0, p0, Lcom/android/phone/EmergencyContactItemContainer;->contact_id:[J
 
-    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyContactItemContainer;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -1383,7 +1383,7 @@
 
     iget-object v0, p0, Lcom/android/phone/EmergencyContactItemContainer;->contact_id:[J
 
-    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyContactItemContainer;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -1560,7 +1560,7 @@
 
     move-result-object v6
 
-    invoke-virtual {v6}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v6}, Lcom/android/phone/PhoneGlobals;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v6
 

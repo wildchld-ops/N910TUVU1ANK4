@@ -22,8 +22,6 @@
 # virtual methods
 .method public setBuffer([BI)V
     .locals 1
-    .param p1    # [B
-    .param p2    # I
 
     iput-object p1, p0, Lcom/sec/android/app/camera/quramrecorder/QuramAudioFrameData;->frameData:[B
 

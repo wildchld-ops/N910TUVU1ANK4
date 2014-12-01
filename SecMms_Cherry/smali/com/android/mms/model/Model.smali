@@ -35,7 +35,6 @@
 # virtual methods
 .method protected notifyModelChanged(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v2, p0, Lcom/android/mms/model/Model;->mModelChangedObservers:Ljava/util/ArrayList;
 
@@ -66,7 +65,6 @@
 
 .method public registerModelChangedObserver(Lcom/android/mms/model/IModelChangedObserver;)V
     .locals 1
-    .param p1    # Lcom/android/mms/model/IModelChangedObserver;
 
     iget-object v0, p0, Lcom/android/mms/model/Model;->mModelChangedObservers:Ljava/util/ArrayList;
 
@@ -88,7 +86,6 @@
 
 .method protected registerModelChangedObserverInDescendants(Lcom/android/mms/model/IModelChangedObserver;)V
     .locals 0
-    .param p1    # Lcom/android/mms/model/IModelChangedObserver;
 
     return-void
 .end method
@@ -113,7 +110,6 @@
 
 .method public unregisterModelChangedObserver(Lcom/android/mms/model/IModelChangedObserver;)V
     .locals 1
-    .param p1    # Lcom/android/mms/model/IModelChangedObserver;
 
     iget-object v0, p0, Lcom/android/mms/model/Model;->mModelChangedObservers:Ljava/util/ArrayList;
 
@@ -126,7 +122,6 @@
 
 .method protected unregisterModelChangedObserverInDescendants(Lcom/android/mms/model/IModelChangedObserver;)V
     .locals 0
-    .param p1    # Lcom/android/mms/model/IModelChangedObserver;
 
     return-void
 .end method

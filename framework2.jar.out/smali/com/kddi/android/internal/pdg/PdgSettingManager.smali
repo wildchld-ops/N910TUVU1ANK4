@@ -28,8 +28,6 @@
 
 .method public static getBoolean(Landroid/content/Context;I)Z
     .locals 12
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -240,7 +238,6 @@
 
 .method public static getFirstLaunch(Landroid/content/Context;)I
     .locals 10
-    .param p0    # Landroid/content/Context;
 
     new-instance v0, Ljava/lang/StringBuilder;
 

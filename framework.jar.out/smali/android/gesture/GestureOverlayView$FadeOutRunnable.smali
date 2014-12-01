@@ -38,8 +38,6 @@
 
 .method synthetic constructor <init>(Landroid/gesture/GestureOverlayView;Landroid/gesture/GestureOverlayView$1;)V
     .locals 0
-    .param p1    # Landroid/gesture/GestureOverlayView;
-    .param p2    # Landroid/gesture/GestureOverlayView$1;
 
     invoke-direct {p0, p1}, Landroid/gesture/GestureOverlayView$FadeOutRunnable;-><init>(Landroid/gesture/GestureOverlayView;)V
 

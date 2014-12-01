@@ -6,8 +6,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Lcom/android/mms/data/ContactList;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/mms/data/ContactList;
 
     invoke-static {p1, p2}, Lcom/android/mms/ui/ChooseContactSelectorAdapter;->getData(Landroid/content/Context;Lcom/android/mms/data/ContactList;)Ljava/util/List;
 
@@ -20,8 +18,6 @@
 
 .method protected static getData(Landroid/content/Context;Lcom/android/mms/data/ContactList;)Ljava/util/List;
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/mms/data/ContactList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

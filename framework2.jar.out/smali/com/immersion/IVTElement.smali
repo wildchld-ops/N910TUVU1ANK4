@@ -12,8 +12,6 @@
 # direct methods
 .method constructor <init>(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -26,7 +24,6 @@
 
 .method static newIVTElement([I)Lcom/immersion/IVTElement;
     .locals 12
-    .param p0    # [I
 
     const/4 v5, 0x5
 
@@ -211,7 +208,6 @@
 
 .method public setTime(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/immersion/IVTElement;->time:I
 
@@ -220,7 +216,6 @@
 
 .method public setType(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/immersion/IVTElement;->type:I
 

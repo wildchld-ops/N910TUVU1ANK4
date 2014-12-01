@@ -14,7 +14,6 @@
 
 .method public constructor <init>(I)V
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0}, Landroid/graphics/drawable/ShapeDrawable;-><init>()V
 
@@ -31,10 +30,6 @@
 # virtual methods
 .method protected inflateTag(Ljava/lang/String;Landroid/content/res/Resources;Lorg/xmlpull/v1/XmlPullParser;Landroid/util/AttributeSet;)Z
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/res/Resources;
-    .param p3    # Lorg/xmlpull/v1/XmlPullParser;
-    .param p4    # Landroid/util/AttributeSet;
 
     const-string v6, "corners"
 
@@ -167,7 +162,6 @@
 
 .method public setCornerRadii([F)V
     .locals 2
-    .param p1    # [F
 
     const/4 v1, 0x0
 
@@ -199,7 +193,6 @@
 
 .method public setCornerRadius(F)V
     .locals 4
-    .param p1    # F
 
     const/16 v3, 0x8
 

@@ -39,7 +39,6 @@
 # virtual methods
 .method public setOnClickListener(Landroid/view/View$OnClickListener;)V
     .locals 1
-    .param p1    # Landroid/view/View$OnClickListener;
 
     iget-object v0, p0, Lcom/android/systemui/recent/RecentsPanelView$AppListItemViewHolder;->iconView:Landroid/widget/ImageView;
 
@@ -54,7 +53,6 @@
 
 .method public setOnDragListener(Landroid/view/View$OnDragListener;)V
     .locals 1
-    .param p1    # Landroid/view/View$OnDragListener;
 
     iget-object v0, p0, Lcom/android/systemui/recent/RecentsPanelView$AppListItemViewHolder;->contentView:Landroid/widget/LinearLayout;
 
@@ -65,7 +63,6 @@
 
 .method public setOnTouchListener(Landroid/view/View$OnTouchListener;)V
     .locals 1
-    .param p1    # Landroid/view/View$OnTouchListener;
 
     iget-object v0, p0, Lcom/android/systemui/recent/RecentsPanelView$AppListItemViewHolder;->iconView:Landroid/widget/ImageView;
 

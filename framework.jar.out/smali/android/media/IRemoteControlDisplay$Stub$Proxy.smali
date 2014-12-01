@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -53,9 +52,6 @@
 
 .method public setAllMetadata(ILandroid/os/Bundle;Landroid/graphics/Bitmap;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
-    .param p3    # Landroid/graphics/Bitmap;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -141,8 +137,6 @@
 
 .method public setArtwork(ILandroid/graphics/Bitmap;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/graphics/Bitmap;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -207,9 +201,6 @@
 
 .method public setCommandToDisplay(III)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -257,9 +248,6 @@
 
 .method public setCurrentClientId(ILandroid/app/PendingIntent;Z)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/app/PendingIntent;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -338,7 +326,6 @@
 
 .method public setEnabled(Z)V
     .locals 5
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -392,8 +379,6 @@
 
 .method public setMetadata(ILandroid/os/Bundle;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -458,11 +443,6 @@
 
 .method public setPlaybackState(IIJJF)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
-    .param p5    # J
-    .param p7    # F
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -514,9 +494,6 @@
 
 .method public setTransportControlInfo(III)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

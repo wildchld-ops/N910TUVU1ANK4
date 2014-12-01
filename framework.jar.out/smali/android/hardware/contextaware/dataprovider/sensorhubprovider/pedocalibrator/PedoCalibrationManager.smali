@@ -68,9 +68,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/os/Looper;Landroid/hardware/contextaware/dataprovider/sensorhubprovider/pedocalibrator/IPedoCalibManagerListener;)V
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/Looper;
-    .param p3    # Landroid/hardware/contextaware/dataprovider/sensorhubprovider/pedocalibrator/IPedoCalibManagerListener;
 
     const/16 v6, 0x14
 
@@ -167,7 +164,6 @@
 
 .method static synthetic access$000(Landroid/hardware/contextaware/dataprovider/sensorhubprovider/pedocalibrator/PedoCalibrationManager;)Landroid/hardware/contextaware/dataprovider/sensorhubprovider/pedocalibrator/PedoCalibrator;
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/dataprovider/sensorhubprovider/pedocalibrator/PedoCalibrationManager;
 
     iget-object v0, p0, Landroid/hardware/contextaware/dataprovider/sensorhubprovider/pedocalibrator/PedoCalibrationManager;->mPedoCalibration:Landroid/hardware/contextaware/dataprovider/sensorhubprovider/pedocalibrator/PedoCalibrator;
 
@@ -176,7 +172,6 @@
 
 .method static synthetic access$100(Landroid/hardware/contextaware/dataprovider/sensorhubprovider/pedocalibrator/PedoCalibrationManager;)Landroid/location/LocationManager;
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/dataprovider/sensorhubprovider/pedocalibrator/PedoCalibrationManager;
 
     iget-object v0, p0, Landroid/hardware/contextaware/dataprovider/sensorhubprovider/pedocalibrator/PedoCalibrationManager;->mLocationManager:Landroid/location/LocationManager;
 
@@ -185,8 +180,6 @@
 
 .method static synthetic access$200(Landroid/hardware/contextaware/dataprovider/sensorhubprovider/pedocalibrator/PedoCalibrationManager;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Landroid/hardware/contextaware/dataprovider/sensorhubprovider/pedocalibrator/PedoCalibrationManager;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Landroid/hardware/contextaware/dataprovider/sensorhubprovider/pedocalibrator/PedoCalibrationManager;->debugMsg(Ljava/lang/String;)V
 
@@ -195,7 +188,6 @@
 
 .method static synthetic access$400(Landroid/hardware/contextaware/dataprovider/sensorhubprovider/pedocalibrator/PedoCalibrationManager;)F
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/dataprovider/sensorhubprovider/pedocalibrator/PedoCalibrationManager;
 
     iget v0, p0, Landroid/hardware/contextaware/dataprovider/sensorhubprovider/pedocalibrator/PedoCalibrationManager;->mHdop:F
 
@@ -204,8 +196,6 @@
 
 .method static synthetic access$402(Landroid/hardware/contextaware/dataprovider/sensorhubprovider/pedocalibrator/PedoCalibrationManager;F)F
     .locals 0
-    .param p0    # Landroid/hardware/contextaware/dataprovider/sensorhubprovider/pedocalibrator/PedoCalibrationManager;
-    .param p1    # F
 
     iput p1, p0, Landroid/hardware/contextaware/dataprovider/sensorhubprovider/pedocalibrator/PedoCalibrationManager;->mHdop:F
 
@@ -214,7 +204,6 @@
 
 .method static synthetic access$500(Landroid/hardware/contextaware/dataprovider/sensorhubprovider/pedocalibrator/PedoCalibrationManager;)[D
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/dataprovider/sensorhubprovider/pedocalibrator/PedoCalibrationManager;
 
     iget-object v0, p0, Landroid/hardware/contextaware/dataprovider/sensorhubprovider/pedocalibrator/PedoCalibrationManager;->mSfTable:[D
 
@@ -223,7 +212,6 @@
 
 .method static synthetic access$600(Landroid/hardware/contextaware/dataprovider/sensorhubprovider/pedocalibrator/PedoCalibrationManager;)V
     .locals 0
-    .param p0    # Landroid/hardware/contextaware/dataprovider/sensorhubprovider/pedocalibrator/PedoCalibrationManager;
 
     invoke-direct {p0}, Landroid/hardware/contextaware/dataprovider/sensorhubprovider/pedocalibrator/PedoCalibrationManager;->storeSFToFile()V
 
@@ -232,7 +220,6 @@
 
 .method static synthetic access$700(Landroid/hardware/contextaware/dataprovider/sensorhubprovider/pedocalibrator/PedoCalibrationManager;)Landroid/os/Looper;
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/dataprovider/sensorhubprovider/pedocalibrator/PedoCalibrationManager;
 
     iget-object v0, p0, Landroid/hardware/contextaware/dataprovider/sensorhubprovider/pedocalibrator/PedoCalibrationManager;->mLooper:Landroid/os/Looper;
 
@@ -241,14 +228,12 @@
 
 .method private debugFile(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method private debugMsg(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Landroid/hardware/contextaware/utilbundle/logger/CaLogger;->debug(Ljava/lang/String;)V
 
@@ -877,7 +862,6 @@
 
 .method public enable(I)V
     .locals 5
-    .param p1    # I
 
     const/4 v4, 0x1
 
@@ -952,7 +936,6 @@
 
 .method public onLocationChanged(Landroid/location/Location;)V
     .locals 6
-    .param p1    # Landroid/location/Location;
 
     invoke-virtual {p1}, Landroid/location/Location;->getProvider()Ljava/lang/String;
 
@@ -1090,35 +1073,24 @@
 
 .method public onProviderDisabled(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method public onProviderEnabled(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method public onStatusChanged(Ljava/lang/String;ILandroid/os/Bundle;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Landroid/os/Bundle;
 
     return-void
 .end method
 
 .method public onStepInfoUpdate(JJJDDJ)V
     .locals 4
-    .param p1    # J
-    .param p3    # J
-    .param p5    # J
-    .param p7    # D
-    .param p9    # D
-    .param p11    # J
 
     iget-object v2, p0, Landroid/hardware/contextaware/dataprovider/sensorhubprovider/pedocalibrator/PedoCalibrationManager;->mPedoCalibration:Landroid/hardware/contextaware/dataprovider/sensorhubprovider/pedocalibrator/PedoCalibrator;
 
@@ -1320,7 +1292,6 @@
 
 .method public setUserProfileGender(D)V
     .locals 2
-    .param p1    # D
 
     invoke-direct {p0}, Landroid/hardware/contextaware/dataprovider/sensorhubprovider/pedocalibrator/PedoCalibrationManager;->loadSFFromFile()V
 
@@ -1344,7 +1315,6 @@
 
 .method public setUserProfileHeight(D)V
     .locals 4
-    .param p1    # D
 
     invoke-direct {p0}, Landroid/hardware/contextaware/dataprovider/sensorhubprovider/pedocalibrator/PedoCalibrationManager;->loadSFFromFile()V
 
@@ -1372,7 +1342,6 @@
 
 .method public setUserProfileWeight(D)V
     .locals 4
-    .param p1    # D
 
     invoke-direct {p0}, Landroid/hardware/contextaware/dataprovider/sensorhubprovider/pedocalibrator/PedoCalibrationManager;->loadSFFromFile()V
 

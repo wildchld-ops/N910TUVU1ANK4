@@ -61,7 +61,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Landroid/app/enterprise/IApplicationPermissionControlPolicy$Stub;-><init>()V
 
@@ -92,8 +91,6 @@
 
 .method private declared-synchronized clearBWList(ILjava/lang/String;)V
     .locals 26
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -787,8 +784,6 @@
 
 .method private declared-synchronized createAdminMap(ILjava/lang/String;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -834,7 +829,6 @@
 
 .method private enforceOwnerOnlyAndAppPermisionControlPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/application/ApplicationPermissionControlPolicy;->getEDM()Landroid/app/enterprise/EnterpriseDeviceManager;
 
@@ -851,9 +845,6 @@
 
 .method private getAppPermissionControlBL(ILjava/lang/String;Ljava/util/List;Z)Ljava/util/List;
     .locals 11
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p4    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -1153,9 +1144,6 @@
 
 .method private getAppPermissionControlWL(ILjava/lang/String;Ljava/util/List;Z)Ljava/util/List;
     .locals 14
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p4    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -1515,7 +1503,6 @@
 
 .method private getEffectiveAllPackages(Ljava/lang/String;)Ljava/util/List;
     .locals 8
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1653,8 +1640,6 @@
 
 .method private getEffectiveBlacklist(ILjava/lang/String;)Ljava/util/List;
     .locals 9
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -1842,7 +1827,6 @@
 
 .method private getPackageNameForUid(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/enterprise/application/ApplicationPermissionControlPolicy;->mEdmStorageProvider:Lcom/android/server/enterprise/storage/EdmStorageProvider;
 
@@ -1855,7 +1839,6 @@
 
 .method private declared-synchronized getPackagesFromPermissionBlackWhiteList(Ljava/lang/String;)Ljava/util/List;
     .locals 11
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2163,7 +2146,6 @@
 
 .method private static getValidStr(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -2201,7 +2183,6 @@
 
 .method private declared-synchronized handleAdminAdded(I)V
     .locals 14
-    .param p1    # I
 
     monitor-enter p0
 
@@ -2458,7 +2439,6 @@
 
 .method private handleAdminRemoval(I)V
     .locals 1
-    .param p1    # I
 
     const-string v0, "Alllist"
 
@@ -2810,10 +2790,6 @@
 
 .method private declared-synchronized updateAppPermissionControlBW(ILjava/lang/String;Ljava/util/List;ZLjava/lang/String;)Ljava/util/List;
     .locals 12
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p4    # Z
-    .param p5    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -3035,11 +3011,6 @@
 
 .method private updateAppPermissionControlBWState(ILjava/lang/String;Ljava/lang/String;ZLjava/lang/String;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Z
-    .param p5    # Ljava/lang/String;
 
     if-eqz p4, :cond_2
 
@@ -3176,10 +3147,6 @@
 
 .method private declared-synchronized validateRequest(ILjava/lang/String;Ljava/util/List;ZLjava/lang/String;)Ljava/util/List;
     .locals 12
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p4    # Z
-    .param p5    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -3716,8 +3683,6 @@
 # virtual methods
 .method public addPackagesToPermissionBlackList(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Ljava/util/List;)Z
     .locals 12
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3935,8 +3900,6 @@
 
 .method public addPackagesToPermissionWhiteList(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Ljava/util/List;)Z
     .locals 12
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -4165,7 +4128,6 @@
 
 .method public clearPackagesFromPermissionBlackList(Landroid/app/enterprise/ContextInfo;)Z
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v0, 0x1
 
@@ -4190,7 +4152,6 @@
 
 .method public clearPackagesFromPermissionWhiteList(Landroid/app/enterprise/ContextInfo;)Z
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v0, 0x1
 
@@ -4215,8 +4176,6 @@
 
 .method public getApplicationGrantedPermissions(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Ljava/util/List;
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -4270,7 +4229,6 @@
 
 .method public getPackagesFromPermissionBlackList(Landroid/app/enterprise/ContextInfo;)Ljava/util/List;
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -4300,7 +4258,6 @@
 
 .method public getPackagesFromPermissionWhiteList(Landroid/app/enterprise/ContextInfo;)Ljava/util/List;
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -4330,8 +4287,6 @@
 
 .method public declared-synchronized getPermissionBlockedList(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Ljava/util/List;)Ljava/util/List;
     .locals 10
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -4754,7 +4709,6 @@
 
 .method public onAdminAdded(I)V
     .locals 0
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/application/ApplicationPermissionControlPolicy;->handleAdminAdded(I)V
 
@@ -4763,14 +4717,12 @@
 
 .method public onAdminRemoved(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onPreAdminRemoval(I)V
     .locals 0
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/application/ApplicationPermissionControlPolicy;->handleAdminRemoval(I)V
 
@@ -4779,8 +4731,6 @@
 
 .method public removePackagesFromPermissionBlackList(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Ljava/util/List;)Z
     .locals 12
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -5007,8 +4957,6 @@
 
 .method public removePackagesFromPermissionWhiteList(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Ljava/util/List;)Z
     .locals 12
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

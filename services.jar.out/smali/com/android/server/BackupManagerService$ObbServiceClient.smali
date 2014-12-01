@@ -35,7 +35,6 @@
 # virtual methods
 .method public setObbBinder(Lcom/android/internal/backup/IObbBackupService;)V
     .locals 0
-    .param p1    # Lcom/android/internal/backup/IObbBackupService;
 
     iput-object p1, p0, Lcom/android/server/BackupManagerService$ObbServiceClient;->mObbService:Lcom/android/internal/backup/IObbBackupService;
 

@@ -36,7 +36,6 @@
 # virtual methods
 .method public onComputeInternalInsets(Landroid/view/ViewTreeObserver$InternalInsetsInfo;)V
     .locals 5
-    .param p1    # Landroid/view/ViewTreeObserver$InternalInsetsInfo;
 
     iget-object v1, p0, Lcom/diotek/ime/framework/view/PopupKeyboardView$1;->this$0:Lcom/diotek/ime/framework/view/PopupKeyboardView;
 

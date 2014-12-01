@@ -47,7 +47,6 @@
 
 .method synthetic constructor <init>(Landroid/database/sqlite/SQLiteConnectionPool$1;)V
     .locals 0
-    .param p1    # Landroid/database/sqlite/SQLiteConnectionPool$1;
 
     invoke-direct {p0}, Landroid/database/sqlite/SQLiteConnectionPool$ConnectionWaiter;-><init>()V
 

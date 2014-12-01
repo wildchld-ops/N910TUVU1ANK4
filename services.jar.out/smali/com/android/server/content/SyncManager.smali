@@ -219,8 +219,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Z)V
     .locals 11
-    .param p1    # Landroid/content/Context;
-    .param p2    # Z
 
     const/4 v7, 0x1
 
@@ -583,7 +581,6 @@
 
 .method static synthetic access$000(Lcom/android/server/content/SyncManager;)Z
     .locals 1
-    .param p0    # Lcom/android/server/content/SyncManager;
 
     iget-boolean v0, p0, Lcom/android/server/content/SyncManager;->mStorageIsLow:Z
 
@@ -592,8 +589,6 @@
 
 .method static synthetic access$002(Lcom/android/server/content/SyncManager;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/content/SyncManager;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/content/SyncManager;->mStorageIsLow:Z
 
@@ -602,7 +597,6 @@
 
 .method static synthetic access$100(Lcom/android/server/content/SyncManager;)V
     .locals 0
-    .param p0    # Lcom/android/server/content/SyncManager;
 
     invoke-direct {p0}, Lcom/android/server/content/SyncManager;->sendCheckAlarmsMessage()V
 
@@ -611,8 +605,6 @@
 
 .method static synthetic access$1000(Lcom/android/server/content/SyncManager;I)V
     .locals 0
-    .param p0    # Lcom/android/server/content/SyncManager;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/content/SyncManager;->onUserStopping(I)V
 
@@ -621,7 +613,6 @@
 
 .method static synthetic access$1100(Lcom/android/server/content/SyncManager;)Landroid/os/PowerManager$WakeLock;
     .locals 1
-    .param p0    # Lcom/android/server/content/SyncManager;
 
     iget-object v0, p0, Lcom/android/server/content/SyncManager;->mHandleAlarmWakeLock:Landroid/os/PowerManager$WakeLock;
 
@@ -630,7 +621,6 @@
 
 .method static synthetic access$1200(Lcom/android/server/content/SyncManager;)V
     .locals 0
-    .param p0    # Lcom/android/server/content/SyncManager;
 
     invoke-direct {p0}, Lcom/android/server/content/SyncManager;->sendSyncAlarmMessage()V
 
@@ -639,9 +629,6 @@
 
 .method static synthetic access$1400(Lcom/android/server/content/SyncManager;Lcom/android/server/content/SyncManager$ActiveSyncContext;Landroid/content/SyncResult;)V
     .locals 0
-    .param p0    # Lcom/android/server/content/SyncManager;
-    .param p1    # Lcom/android/server/content/SyncManager$ActiveSyncContext;
-    .param p2    # Landroid/content/SyncResult;
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/content/SyncManager;->sendSyncFinishedOrCanceledMessage(Lcom/android/server/content/SyncManager$ActiveSyncContext;Landroid/content/SyncResult;)V
 
@@ -650,7 +637,6 @@
 
 .method static synthetic access$1500(Lcom/android/server/content/SyncManager;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/server/content/SyncManager;
 
     iget-object v0, p0, Lcom/android/server/content/SyncManager;->mContext:Landroid/content/Context;
 
@@ -659,7 +645,6 @@
 
 .method static synthetic access$200(Lcom/android/server/content/SyncManager;)Lcom/android/server/content/SyncManager$SyncHandler;
     .locals 1
-    .param p0    # Lcom/android/server/content/SyncManager;
 
     iget-object v0, p0, Lcom/android/server/content/SyncManager;->mSyncHandler:Lcom/android/server/content/SyncManager$SyncHandler;
 
@@ -668,7 +653,6 @@
 
 .method static synthetic access$2000(Lcom/android/server/content/SyncManager;)V
     .locals 0
-    .param p0    # Lcom/android/server/content/SyncManager;
 
     invoke-direct {p0}, Lcom/android/server/content/SyncManager;->doDatabaseCleanup()V
 
@@ -677,7 +661,6 @@
 
 .method static synthetic access$2100(Lcom/android/server/content/SyncManager;)Z
     .locals 1
-    .param p0    # Lcom/android/server/content/SyncManager;
 
     iget-boolean v0, p0, Lcom/android/server/content/SyncManager;->mBootCompleted:Z
 
@@ -686,8 +669,6 @@
 
 .method static synthetic access$2102(Lcom/android/server/content/SyncManager;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/content/SyncManager;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/content/SyncManager;->mBootCompleted:Z
 
@@ -696,7 +677,6 @@
 
 .method static synthetic access$2200(Lcom/android/server/content/SyncManager;)Landroid/os/PowerManager;
     .locals 1
-    .param p0    # Lcom/android/server/content/SyncManager;
 
     iget-object v0, p0, Lcom/android/server/content/SyncManager;->mPowerManager:Landroid/os/PowerManager;
 
@@ -705,7 +685,6 @@
 
 .method static synthetic access$2300(Lcom/android/server/content/SyncManager;)Landroid/os/PowerManager$WakeLock;
     .locals 1
-    .param p0    # Lcom/android/server/content/SyncManager;
 
     iget-object v0, p0, Lcom/android/server/content/SyncManager;->mSyncManagerWakeLock:Landroid/os/PowerManager$WakeLock;
 
@@ -714,8 +693,6 @@
 
 .method static synthetic access$2400(Lcom/android/server/content/SyncManager;Lcom/android/server/content/SyncManager$ActiveSyncContext;)Z
     .locals 1
-    .param p0    # Lcom/android/server/content/SyncManager;
-    .param p1    # Lcom/android/server/content/SyncManager$ActiveSyncContext;
 
     invoke-direct {p0, p1}, Lcom/android/server/content/SyncManager;->isSyncStillActive(Lcom/android/server/content/SyncManager$ActiveSyncContext;)Z
 
@@ -726,7 +703,6 @@
 
 .method static synthetic access$2500(Lcom/android/server/content/SyncManager;)[Landroid/accounts/AccountAndUser;
     .locals 1
-    .param p0    # Lcom/android/server/content/SyncManager;
 
     iget-object v0, p0, Lcom/android/server/content/SyncManager;->mRunningAccounts:[Landroid/accounts/AccountAndUser;
 
@@ -735,7 +711,6 @@
 
 .method static synthetic access$2600(Lcom/android/server/content/SyncManager;)I
     .locals 1
-    .param p0    # Lcom/android/server/content/SyncManager;
 
     iget v0, p0, Lcom/android/server/content/SyncManager;->mSyncRandomOffsetMillis:I
 
@@ -744,10 +719,6 @@
 
 .method static synthetic access$2700(Lcom/android/server/content/SyncManager;[Landroid/accounts/AccountAndUser;Landroid/accounts/Account;I)Z
     .locals 1
-    .param p0    # Lcom/android/server/content/SyncManager;
-    .param p1    # [Landroid/accounts/AccountAndUser;
-    .param p2    # Landroid/accounts/Account;
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/server/content/SyncManager;->containsAccountAndUser([Landroid/accounts/AccountAndUser;Landroid/accounts/Account;I)Z
 
@@ -766,7 +737,6 @@
 
 .method static synthetic access$2900(Lcom/android/server/content/SyncManager;)Landroid/os/UserManager;
     .locals 1
-    .param p0    # Lcom/android/server/content/SyncManager;
 
     iget-object v0, p0, Lcom/android/server/content/SyncManager;->mUserManager:Landroid/os/UserManager;
 
@@ -775,7 +745,6 @@
 
 .method static synthetic access$300(Lcom/android/server/content/SyncManager;)Landroid/net/ConnectivityManager;
     .locals 1
-    .param p0    # Lcom/android/server/content/SyncManager;
 
     invoke-direct {p0}, Lcom/android/server/content/SyncManager;->getConnectivityManager()Landroid/net/ConnectivityManager;
 
@@ -810,8 +779,6 @@
 
 .method static synthetic access$3300(Lcom/android/server/content/SyncManager;Lcom/android/server/content/SyncOperation;)V
     .locals 0
-    .param p0    # Lcom/android/server/content/SyncManager;
-    .param p1    # Lcom/android/server/content/SyncOperation;
 
     invoke-direct {p0, p1}, Lcom/android/server/content/SyncManager;->increaseBackoffSetting(Lcom/android/server/content/SyncOperation;)V
 
@@ -820,8 +787,6 @@
 
 .method static synthetic access$3400(Lcom/android/server/content/SyncManager;Lcom/android/server/content/SyncOperation;)V
     .locals 0
-    .param p0    # Lcom/android/server/content/SyncManager;
-    .param p1    # Lcom/android/server/content/SyncOperation;
 
     invoke-direct {p0, p1}, Lcom/android/server/content/SyncManager;->clearBackoffSetting(Lcom/android/server/content/SyncOperation;)V
 
@@ -830,9 +795,6 @@
 
 .method static synthetic access$3500(Lcom/android/server/content/SyncManager;Lcom/android/server/content/SyncOperation;J)V
     .locals 0
-    .param p0    # Lcom/android/server/content/SyncManager;
-    .param p1    # Lcom/android/server/content/SyncOperation;
-    .param p2    # J
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/server/content/SyncManager;->setDelayUntilTime(Lcom/android/server/content/SyncOperation;J)V
 
@@ -841,7 +803,6 @@
 
 .method static synthetic access$3600(Lcom/android/server/content/SyncManager;)Landroid/app/NotificationManager;
     .locals 1
-    .param p0    # Lcom/android/server/content/SyncManager;
 
     iget-object v0, p0, Lcom/android/server/content/SyncManager;->mNotificationMgr:Landroid/app/NotificationManager;
 
@@ -858,7 +819,6 @@
 
 .method static synthetic access$3800(Lcom/android/server/content/SyncManager;)Z
     .locals 1
-    .param p0    # Lcom/android/server/content/SyncManager;
 
     iget-boolean v0, p0, Lcom/android/server/content/SyncManager;->mNeedSyncActiveNotification:Z
 
@@ -867,8 +827,6 @@
 
 .method static synthetic access$3802(Lcom/android/server/content/SyncManager;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/content/SyncManager;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/content/SyncManager;->mNeedSyncActiveNotification:Z
 
@@ -877,7 +835,6 @@
 
 .method static synthetic access$3900(Lcom/android/server/content/SyncManager;)V
     .locals 0
-    .param p0    # Lcom/android/server/content/SyncManager;
 
     invoke-direct {p0}, Lcom/android/server/content/SyncManager;->ensureAlarmService()V
 
@@ -886,7 +843,6 @@
 
 .method static synthetic access$400(Lcom/android/server/content/SyncManager;)Z
     .locals 1
-    .param p0    # Lcom/android/server/content/SyncManager;
 
     iget-boolean v0, p0, Lcom/android/server/content/SyncManager;->mDataConnectionIsConnected:Z
 
@@ -895,7 +851,6 @@
 
 .method static synthetic access$4000(Lcom/android/server/content/SyncManager;)Landroid/app/PendingIntent;
     .locals 1
-    .param p0    # Lcom/android/server/content/SyncManager;
 
     iget-object v0, p0, Lcom/android/server/content/SyncManager;->mSyncAlarmIntent:Landroid/app/PendingIntent;
 
@@ -904,8 +859,6 @@
 
 .method static synthetic access$402(Lcom/android/server/content/SyncManager;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/content/SyncManager;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/content/SyncManager;->mDataConnectionIsConnected:Z
 
@@ -914,7 +867,6 @@
 
 .method static synthetic access$4100(Lcom/android/server/content/SyncManager;)Landroid/app/AlarmManager;
     .locals 1
-    .param p0    # Lcom/android/server/content/SyncManager;
 
     iget-object v0, p0, Lcom/android/server/content/SyncManager;->mAlarmService:Landroid/app/AlarmManager;
 
@@ -923,7 +875,6 @@
 
 .method static synthetic access$500(Lcom/android/server/content/SyncManager;)Z
     .locals 1
-    .param p0    # Lcom/android/server/content/SyncManager;
 
     invoke-direct {p0}, Lcom/android/server/content/SyncManager;->readDataConnectionState()Z
 
@@ -934,7 +885,6 @@
 
 .method static synthetic access$600(Lcom/android/server/content/SyncManager;)Lcom/android/server/content/SyncQueue;
     .locals 1
-    .param p0    # Lcom/android/server/content/SyncManager;
 
     iget-object v0, p0, Lcom/android/server/content/SyncManager;->mSyncQueue:Lcom/android/server/content/SyncQueue;
 
@@ -943,7 +893,6 @@
 
 .method static synthetic access$700(Lcom/android/server/content/SyncManager;)Lcom/android/server/content/SyncStorageEngine;
     .locals 1
-    .param p0    # Lcom/android/server/content/SyncManager;
 
     iget-object v0, p0, Lcom/android/server/content/SyncManager;->mSyncStorageEngine:Lcom/android/server/content/SyncStorageEngine;
 
@@ -952,8 +901,6 @@
 
 .method static synthetic access$800(Lcom/android/server/content/SyncManager;I)V
     .locals 0
-    .param p0    # Lcom/android/server/content/SyncManager;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/content/SyncManager;->onUserRemoved(I)V
 
@@ -962,8 +909,6 @@
 
 .method static synthetic access$900(Lcom/android/server/content/SyncManager;I)V
     .locals 0
-    .param p0    # Lcom/android/server/content/SyncManager;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/content/SyncManager;->onUserStarting(I)V
 
@@ -972,7 +917,6 @@
 
 .method private clearBackoffSetting(Lcom/android/server/content/SyncOperation;)V
     .locals 8
-    .param p1    # Lcom/android/server/content/SyncOperation;
 
     const-wide/16 v4, -0x1
 
@@ -1021,9 +965,6 @@
 
 .method private containsAccountAndUser([Landroid/accounts/AccountAndUser;Landroid/accounts/Account;I)Z
     .locals 3
-    .param p1    # [Landroid/accounts/AccountAndUser;
-    .param p2    # Landroid/accounts/Account;
-    .param p3    # I
 
     const/4 v0, 0x0
 
@@ -1118,8 +1059,6 @@
 
 .method private dumpDayStatistic(Ljava/io/PrintWriter;Lcom/android/server/content/SyncStorageEngine$DayStats;)V
     .locals 4
-    .param p1    # Ljava/io/PrintWriter;
-    .param p2    # Lcom/android/server/content/SyncStorageEngine$DayStats;
 
     const-string v0, "Success ("
 
@@ -1200,7 +1139,6 @@
 
 .method private dumpDayStatistics(Ljava/io/PrintWriter;)V
     .locals 12
-    .param p1    # Ljava/io/PrintWriter;
 
     const/4 v11, 0x6
 
@@ -1373,7 +1311,6 @@
 
 .method private dumpRecentHistory(Ljava/io/PrintWriter;)V
     .locals 57
-    .param p1    # Ljava/io/PrintWriter;
 
     move-object/from16 v0, p0
 
@@ -2980,7 +2917,6 @@
 
 .method private dumpSyncAdapters(Lcom/android/internal/util/IndentingPrintWriter;)V
     .locals 7
-    .param p1    # Lcom/android/internal/util/IndentingPrintWriter;
 
     invoke-virtual {p1}, Ljava/io/PrintWriter;->println()V
 
@@ -3077,8 +3013,6 @@
 
 .method private dumpTimeSec(Ljava/io/PrintWriter;J)V
     .locals 4
-    .param p1    # Ljava/io/PrintWriter;
-    .param p2    # J
 
     const-wide/16 v0, 0x3e8
 
@@ -3132,7 +3066,6 @@
 
 .method static formatTime(J)Ljava/lang/String;
     .locals 2
-    .param p0    # J
 
     new-instance v0, Landroid/text/format/Time;
 
@@ -3211,7 +3144,6 @@
 
 .method private getLastFailureMessage(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -3275,7 +3207,6 @@
 
 .method private increaseBackoffSetting(Lcom/android/server/content/SyncOperation;)V
     .locals 18
-    .param p1    # Lcom/android/server/content/SyncOperation;
 
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
@@ -3504,7 +3435,6 @@
 
 .method private isSyncStillActive(Lcom/android/server/content/SyncManager$ActiveSyncContext;)Z
     .locals 3
-    .param p1    # Lcom/android/server/content/SyncManager$ActiveSyncContext;
 
     iget-object v2, p0, Lcom/android/server/content/SyncManager;->mActiveSyncContexts:Ljava/util/ArrayList;
 
@@ -3540,8 +3470,6 @@
 
 .method private jitterize(JJ)J
     .locals 5
-    .param p1    # J
-    .param p3    # J
 
     new-instance v0, Ljava/util/Random;
 
@@ -3583,7 +3511,6 @@
 
 .method private onUserRemoved(I)V
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/server/content/SyncManager;->updateRunningAccounts()V
 
@@ -3620,7 +3547,6 @@
 
 .method private onUserStarting(I)V
     .locals 16
-    .param p1    # I
 
     invoke-static {}, Lcom/android/server/accounts/AccountManagerService;->getSingleton()Lcom/android/server/accounts/AccountManagerService;
 
@@ -3720,7 +3646,6 @@
 
 .method private onUserStopping(I)V
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -3763,9 +3688,6 @@
 
 .method private sendCancelSyncsMessage(Landroid/accounts/Account;ILjava/lang/String;)V
     .locals 3
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     const-string v1, "SyncManager"
 
@@ -3871,8 +3793,6 @@
 
 .method private sendSyncFinishedOrCanceledMessage(Lcom/android/server/content/SyncManager$ActiveSyncContext;Landroid/content/SyncResult;)V
     .locals 3
-    .param p1    # Lcom/android/server/content/SyncManager$ActiveSyncContext;
-    .param p2    # Landroid/content/SyncResult;
 
     const-string v1, "SyncManager"
 
@@ -3916,8 +3836,6 @@
 
 .method private setDelayUntilTime(Lcom/android/server/content/SyncOperation;J)V
     .locals 10
-    .param p1    # Lcom/android/server/content/SyncOperation;
-    .param p2    # J
 
     const-wide/16 v0, 0x3e8
 
@@ -3986,9 +3904,6 @@
 # virtual methods
 .method public cancelActiveSync(Landroid/accounts/Account;ILjava/lang/String;)V
     .locals 0
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/server/content/SyncManager;->sendCancelSyncsMessage(Landroid/accounts/Account;ILjava/lang/String;)V
 
@@ -4062,9 +3977,6 @@
 
 .method public clearScheduledSyncOperations(Landroid/accounts/Account;ILjava/lang/String;)V
     .locals 8
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     const-wide/16 v4, -0x1
 
@@ -4108,8 +4020,6 @@
 
 .method protected dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;)V
     .locals 2
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
 
     new-instance v0, Lcom/android/internal/util/IndentingPrintWriter;
 
@@ -4128,7 +4038,6 @@
 
 .method protected dumpSyncHistory(Ljava/io/PrintWriter;)V
     .locals 0
-    .param p1    # Ljava/io/PrintWriter;
 
     invoke-direct {p0, p1}, Lcom/android/server/content/SyncManager;->dumpRecentHistory(Ljava/io/PrintWriter;)V
 
@@ -4139,7 +4048,6 @@
 
 .method protected dumpSyncState(Ljava/io/PrintWriter;)V
     .locals 42
-    .param p1    # Ljava/io/PrintWriter;
 
     const-string v34, "data connected: "
 
@@ -6106,9 +6014,6 @@
 
 .method public getIsSyncable(Landroid/accounts/Account;ILjava/lang/String;)I
     .locals 10
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     const/4 v6, 0x0
 
@@ -6253,7 +6158,6 @@
 
 .method public getSyncAdapterTypes(I)[Landroid/content/SyncAdapterType;
     .locals 6
-    .param p1    # I
 
     iget-object v5, p0, Lcom/android/server/content/SyncManager;->mSyncAdapters:Landroid/content/SyncAdaptersCache;
 
@@ -6310,8 +6214,6 @@
 
 .method maybeRescheduleSync(Landroid/content/SyncResult;Lcom/android/server/content/SyncOperation;)V
     .locals 20
-    .param p1    # Landroid/content/SyncResult;
-    .param p2    # Lcom/android/server/content/SyncOperation;
 
     const-string v2, "SyncManager"
 
@@ -6696,10 +6598,6 @@
 
 .method public scheduleLocalSync(Landroid/accounts/Account;IILjava/lang/String;)V
     .locals 11
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
 
     new-instance v5, Landroid/os/Bundle;
 
@@ -6738,14 +6636,6 @@
 
 .method public scheduleSync(Landroid/accounts/Account;IILjava/lang/String;Landroid/os/Bundle;JJZ)V
     .locals 54
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
-    .param p5    # Landroid/os/Bundle;
-    .param p6    # J
-    .param p8    # J
-    .param p10    # Z
 
     const-string v2, "SyncManager"
 
@@ -7607,7 +7497,6 @@
 
 .method public scheduleSyncOperation(Lcom/android/server/content/SyncOperation;)V
     .locals 4
-    .param p1    # Lcom/android/server/content/SyncOperation;
 
     const/4 v3, 0x2
 

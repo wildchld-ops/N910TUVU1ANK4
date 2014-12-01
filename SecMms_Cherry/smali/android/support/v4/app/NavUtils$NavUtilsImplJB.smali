@@ -27,7 +27,6 @@
 # virtual methods
 .method public getParentActivityIntent(Landroid/app/Activity;)Landroid/content/Intent;
     .locals 1
-    .param p1    # Landroid/app/Activity;
 
     invoke-static {p1}, Landroid/support/v4/app/NavUtilsJB;->getParentActivityIntent(Landroid/app/Activity;)Landroid/content/Intent;
 
@@ -45,8 +44,6 @@
 
 .method public getParentActivityName(Landroid/content/Context;Landroid/content/pm/ActivityInfo;)Ljava/lang/String;
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/pm/ActivityInfo;
 
     invoke-static {p2}, Landroid/support/v4/app/NavUtilsJB;->getParentActivityName(Landroid/content/pm/ActivityInfo;)Ljava/lang/String;
 
@@ -64,8 +61,6 @@
 
 .method public navigateUpTo(Landroid/app/Activity;Landroid/content/Intent;)V
     .locals 0
-    .param p1    # Landroid/app/Activity;
-    .param p2    # Landroid/content/Intent;
 
     invoke-static {p1, p2}, Landroid/support/v4/app/NavUtilsJB;->navigateUpTo(Landroid/app/Activity;Landroid/content/Intent;)V
 
@@ -74,8 +69,6 @@
 
 .method public shouldUpRecreateTask(Landroid/app/Activity;Landroid/content/Intent;)Z
     .locals 1
-    .param p1    # Landroid/app/Activity;
-    .param p2    # Landroid/content/Intent;
 
     invoke-static {p1, p2}, Landroid/support/v4/app/NavUtilsJB;->shouldUpRecreateTask(Landroid/app/Activity;Landroid/content/Intent;)Z
 
@@ -86,7 +79,6 @@
 
 .method superGetParentActivityIntent(Landroid/app/Activity;)Landroid/content/Intent;
     .locals 1
-    .param p1    # Landroid/app/Activity;
 
     invoke-super {p0, p1}, Landroid/support/v4/app/NavUtils$NavUtilsImplBase;->getParentActivityIntent(Landroid/app/Activity;)Landroid/content/Intent;
 

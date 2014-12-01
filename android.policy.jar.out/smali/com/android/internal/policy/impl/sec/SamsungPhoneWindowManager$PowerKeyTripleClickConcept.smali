@@ -66,8 +66,6 @@
 
 .method synthetic constructor <init>(Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager$1;)V
     .locals 0
-    .param p1    # Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;
-    .param p2    # Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager$1;
 
     invoke-direct {p0, p1}, Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager$PowerKeyTripleClickConcept;-><init>(Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;)V
 
@@ -76,7 +74,6 @@
 
 .method static synthetic access$1100(Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager$PowerKeyTripleClickConcept;)Z
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager$PowerKeyTripleClickConcept;
 
     invoke-direct {p0}, Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager$PowerKeyTripleClickConcept;->isTripleClick()Z
 
@@ -87,7 +84,6 @@
 
 .method static synthetic access$1200(Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager$PowerKeyTripleClickConcept;)V
     .locals 0
-    .param p0    # Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager$PowerKeyTripleClickConcept;
 
     invoke-direct {p0}, Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager$PowerKeyTripleClickConcept;->reset()V
 
@@ -96,8 +92,6 @@
 
 .method static synthetic access$1300(Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager$PowerKeyTripleClickConcept;I)V
     .locals 0
-    .param p0    # Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager$PowerKeyTripleClickConcept;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager$PowerKeyTripleClickConcept;->addAction(I)V
 
@@ -106,7 +100,6 @@
 
 .method private addAction(I)V
     .locals 4
-    .param p1    # I
 
     monitor-enter p0
 

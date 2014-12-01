@@ -49,9 +49,6 @@
 # direct methods
 .method constructor <init>(Landroid/content/Context;Landroid/content/pm/ApplicationInfo;J)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/pm/ApplicationInfo;
-    .param p3    # J
 
     invoke-direct {p0}, Lcom/android/settings/applications/ApplicationsState$SizeInfo;-><init>()V
 
@@ -84,8 +81,6 @@
 # virtual methods
 .method ensureIconLocked(Landroid/content/Context;Landroid/content/pm/PackageManager;)Z
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/pm/PackageManager;
 
     const/4 v1, 0x0
 
@@ -162,7 +157,6 @@
 
 .method ensureLabel(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     iget-object v1, p0, Lcom/android/settings/applications/ApplicationsState$AppEntry;->label:Ljava/lang/String;
 

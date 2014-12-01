@@ -12,7 +12,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     const/high16 v3, 0x20000
 
@@ -71,8 +70,6 @@
 
 .method static synthetic access$002(Lcom/android/server/am/BaseErrorDialog;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/am/BaseErrorDialog;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/am/BaseErrorDialog;->mConsuming:Z
 
@@ -81,8 +78,6 @@
 
 .method static synthetic access$100(Lcom/android/server/am/BaseErrorDialog;Z)V
     .locals 0
-    .param p0    # Lcom/android/server/am/BaseErrorDialog;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/am/BaseErrorDialog;->setEnabled(Z)V
 
@@ -91,7 +86,6 @@
 
 .method private setEnabled(Z)V
     .locals 2
-    .param p1    # Z
 
     const v1, 0x1020019
 
@@ -139,7 +133,6 @@
 # virtual methods
 .method public dispatchKeyEvent(Landroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/KeyEvent;
 
     iget-boolean v0, p0, Lcom/android/server/am/BaseErrorDialog;->mConsuming:Z
 

@@ -18,7 +18,6 @@
 
 .method public static extractingAddress(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     const/4 v3, -0x1
 
@@ -80,7 +79,6 @@
 
 .method public static freeMessageTypeToFreeMessage(I)I
     .locals 1
-    .param p0    # I
 
     const/4 v0, 0x1
 
@@ -146,7 +144,6 @@
 
 .method public static rcsMessageTypeToFreeMessageType(I)I
     .locals 1
-    .param p0    # I
 
     const/4 v0, 0x5
 

@@ -93,7 +93,6 @@
 
 .method setCallingUserId(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/enterprise/email/LDAPAccountPolicy$LDAPServiceConnection;->mCallingUserId:I
 
@@ -102,7 +101,6 @@
 
 .method setReceiver(Landroid/content/BroadcastReceiver;)V
     .locals 0
-    .param p1    # Landroid/content/BroadcastReceiver;
 
     iput-object p1, p0, Lcom/android/server/enterprise/email/LDAPAccountPolicy$LDAPServiceConnection;->mLDAPInterfaceReceiver:Landroid/content/BroadcastReceiver;
 
@@ -111,7 +109,6 @@
 
 .method setService(Landroid/app/enterprise/ILDAPInterface;)V
     .locals 0
-    .param p1    # Landroid/app/enterprise/ILDAPInterface;
 
     iput-object p1, p0, Lcom/android/server/enterprise/email/LDAPAccountPolicy$LDAPServiceConnection;->mService:Landroid/app/enterprise/ILDAPInterface;
 
@@ -120,7 +117,6 @@
 
 .method setServiceConnection(Landroid/content/ServiceConnection;)V
     .locals 0
-    .param p1    # Landroid/content/ServiceConnection;
 
     iput-object p1, p0, Lcom/android/server/enterprise/email/LDAPAccountPolicy$LDAPServiceConnection;->mConnection:Landroid/content/ServiceConnection;
 

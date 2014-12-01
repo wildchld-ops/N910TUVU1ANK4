@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Landroid/service/dreams/DreamService;Landroid/service/dreams/DreamService$1;)V
     .locals 0
-    .param p1    # Landroid/service/dreams/DreamService;
-    .param p2    # Landroid/service/dreams/DreamService$1;
 
     invoke-direct {p0, p1}, Landroid/service/dreams/DreamService$DreamServiceWrapper;-><init>(Landroid/service/dreams/DreamService;)V
 
@@ -43,7 +41,6 @@
 # virtual methods
 .method public attach(Landroid/os/IBinder;)V
     .locals 2
-    .param p1    # Landroid/os/IBinder;
 
     iget-object v0, p0, Landroid/service/dreams/DreamService$DreamServiceWrapper;->this$0:Landroid/service/dreams/DreamService;
 

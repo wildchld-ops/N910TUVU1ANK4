@@ -33,7 +33,6 @@
 
 .method synthetic constructor <init>(Lcom/android/settings/TrustedCredentialsSettings$1;)V
     .locals 0
-    .param p1    # Lcom/android/settings/TrustedCredentialsSettings$1;
 
     invoke-direct {p0}, Lcom/android/settings/TrustedCredentialsSettings$ViewHolder;-><init>()V
 
@@ -42,7 +41,6 @@
 
 .method static synthetic access$1300(Lcom/android/settings/TrustedCredentialsSettings$ViewHolder;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/android/settings/TrustedCredentialsSettings$ViewHolder;
 
     iget-object v0, p0, Lcom/android/settings/TrustedCredentialsSettings$ViewHolder;->mSubjectPrimaryView:Landroid/widget/TextView;
 
@@ -51,8 +49,6 @@
 
 .method static synthetic access$1302(Lcom/android/settings/TrustedCredentialsSettings$ViewHolder;Landroid/widget/TextView;)Landroid/widget/TextView;
     .locals 0
-    .param p0    # Lcom/android/settings/TrustedCredentialsSettings$ViewHolder;
-    .param p1    # Landroid/widget/TextView;
 
     iput-object p1, p0, Lcom/android/settings/TrustedCredentialsSettings$ViewHolder;->mSubjectPrimaryView:Landroid/widget/TextView;
 
@@ -61,7 +57,6 @@
 
 .method static synthetic access$1400(Lcom/android/settings/TrustedCredentialsSettings$ViewHolder;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/android/settings/TrustedCredentialsSettings$ViewHolder;
 
     iget-object v0, p0, Lcom/android/settings/TrustedCredentialsSettings$ViewHolder;->mSubjectSecondaryView:Landroid/widget/TextView;
 
@@ -70,8 +65,6 @@
 
 .method static synthetic access$1402(Lcom/android/settings/TrustedCredentialsSettings$ViewHolder;Landroid/widget/TextView;)Landroid/widget/TextView;
     .locals 0
-    .param p0    # Lcom/android/settings/TrustedCredentialsSettings$ViewHolder;
-    .param p1    # Landroid/widget/TextView;
 
     iput-object p1, p0, Lcom/android/settings/TrustedCredentialsSettings$ViewHolder;->mSubjectSecondaryView:Landroid/widget/TextView;
 
@@ -80,7 +73,6 @@
 
 .method static synthetic access$1500(Lcom/android/settings/TrustedCredentialsSettings$ViewHolder;)Lcom/sec/android/touchwiz/widget/TwCheckBox;
     .locals 1
-    .param p0    # Lcom/android/settings/TrustedCredentialsSettings$ViewHolder;
 
     iget-object v0, p0, Lcom/android/settings/TrustedCredentialsSettings$ViewHolder;->mCheckBox:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
@@ -89,8 +81,6 @@
 
 .method static synthetic access$1502(Lcom/android/settings/TrustedCredentialsSettings$ViewHolder;Lcom/sec/android/touchwiz/widget/TwCheckBox;)Lcom/sec/android/touchwiz/widget/TwCheckBox;
     .locals 0
-    .param p0    # Lcom/android/settings/TrustedCredentialsSettings$ViewHolder;
-    .param p1    # Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
     iput-object p1, p0, Lcom/android/settings/TrustedCredentialsSettings$ViewHolder;->mCheckBox:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 

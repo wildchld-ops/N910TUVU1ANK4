@@ -17,7 +17,6 @@
 
 .method public constructor <init>(Landroid/os/Parcel;)V
     .locals 0
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Landroid/text/style/MetricAffectingSpan;-><init>()V
 
@@ -44,7 +43,6 @@
 
 .method public updateDrawState(Landroid/text/TextPaint;)V
     .locals 3
-    .param p1    # Landroid/text/TextPaint;
 
     iget v0, p1, Landroid/text/TextPaint;->baselineShift:I
 
@@ -67,7 +65,6 @@
 
 .method public updateMeasureState(Landroid/text/TextPaint;)V
     .locals 3
-    .param p1    # Landroid/text/TextPaint;
 
     iget v0, p1, Landroid/text/TextPaint;->baselineShift:I
 
@@ -90,8 +87,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 0
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     return-void
 .end method

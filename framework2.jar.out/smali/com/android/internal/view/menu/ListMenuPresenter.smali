@@ -48,8 +48,6 @@
 # direct methods
 .method public constructor <init>(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -62,8 +60,6 @@
 
 .method public constructor <init>(Landroid/content/Context;I)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -84,7 +80,6 @@
 
 .method static synthetic access$000(Lcom/android/internal/view/menu/ListMenuPresenter;)I
     .locals 1
-    .param p0    # Lcom/android/internal/view/menu/ListMenuPresenter;
 
     iget v0, p0, Lcom/android/internal/view/menu/ListMenuPresenter;->mItemIndexOffset:I
 
@@ -95,8 +90,6 @@
 # virtual methods
 .method public collapseItemActionView(Lcom/android/internal/view/menu/MenuBuilder;Lcom/android/internal/view/menu/MenuItemImpl;)Z
     .locals 1
-    .param p1    # Lcom/android/internal/view/menu/MenuBuilder;
-    .param p2    # Lcom/android/internal/view/menu/MenuItemImpl;
 
     const/4 v0, 0x0
 
@@ -105,8 +98,6 @@
 
 .method public expandItemActionView(Lcom/android/internal/view/menu/MenuBuilder;Lcom/android/internal/view/menu/MenuItemImpl;)Z
     .locals 1
-    .param p1    # Lcom/android/internal/view/menu/MenuBuilder;
-    .param p2    # Lcom/android/internal/view/menu/MenuItemImpl;
 
     const/4 v0, 0x0
 
@@ -158,7 +149,6 @@
 
 .method public getMenuView(Landroid/view/ViewGroup;)Lcom/android/internal/view/menu/MenuView;
     .locals 4
-    .param p1    # Landroid/view/ViewGroup;
 
     iget-object v1, p0, Lcom/android/internal/view/menu/ListMenuPresenter;->mMenuView:Lcom/android/internal/view/menu/ExpandedMenuView;
 
@@ -233,8 +223,6 @@
 
 .method public initForMenu(Landroid/content/Context;Lcom/android/internal/view/menu/MenuBuilder;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/internal/view/menu/MenuBuilder;
 
     iget v0, p0, Lcom/android/internal/view/menu/ListMenuPresenter;->mThemeRes:I
 
@@ -295,8 +283,6 @@
 
 .method public onCloseMenu(Lcom/android/internal/view/menu/MenuBuilder;Z)V
     .locals 1
-    .param p1    # Lcom/android/internal/view/menu/MenuBuilder;
-    .param p2    # Z
 
     iget-object v0, p0, Lcom/android/internal/view/menu/ListMenuPresenter;->mCallback:Lcom/android/internal/view/menu/MenuPresenter$Callback;
 
@@ -312,9 +298,6 @@
 
 .method public onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
     .locals 4
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -370,7 +353,6 @@
 
 .method public onRestoreInstanceState(Landroid/os/Parcelable;)V
     .locals 0
-    .param p1    # Landroid/os/Parcelable;
 
     check-cast p1, Landroid/os/Bundle;
 
@@ -403,7 +385,6 @@
 
 .method public onSubMenuSelected(Lcom/android/internal/view/menu/SubMenuBuilder;)Z
     .locals 2
-    .param p1    # Lcom/android/internal/view/menu/SubMenuBuilder;
 
     invoke-virtual {p1}, Lcom/android/internal/view/menu/MenuBuilder;->hasVisibleItems()Z
 
@@ -441,7 +422,6 @@
 
 .method public restoreHierarchyState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     const-string v1, "android:menu:list"
 
@@ -461,7 +441,6 @@
 
 .method public saveHierarchyState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     new-instance v0, Landroid/util/SparseArray;
 
@@ -485,7 +464,6 @@
 
 .method public setCallback(Lcom/android/internal/view/menu/MenuPresenter$Callback;)V
     .locals 0
-    .param p1    # Lcom/android/internal/view/menu/MenuPresenter$Callback;
 
     iput-object p1, p0, Lcom/android/internal/view/menu/ListMenuPresenter;->mCallback:Lcom/android/internal/view/menu/MenuPresenter$Callback;
 
@@ -494,7 +472,6 @@
 
 .method public setId(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/internal/view/menu/ListMenuPresenter;->mId:I
 
@@ -503,7 +480,6 @@
 
 .method public setItemIndexOffset(I)V
     .locals 1
-    .param p1    # I
 
     iput p1, p0, Lcom/android/internal/view/menu/ListMenuPresenter;->mItemIndexOffset:I
 
@@ -521,7 +497,6 @@
 
 .method public updateMenuView(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/internal/view/menu/ListMenuPresenter;->mAdapter:Lcom/android/internal/view/menu/ListMenuPresenter$MenuAdapter;
 

@@ -70,10 +70,6 @@
 
 .method private constructor <init>(IIIJ)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # J
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -90,11 +86,6 @@
 
 .method synthetic constructor <init>(IIIJLandroid/bluetooth/le/ScanSettings$1;)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # J
-    .param p6    # Landroid/bluetooth/le/ScanSettings$1;
 
     invoke-direct/range {p0 .. p5}, Landroid/bluetooth/le/ScanSettings;-><init>(IIIJ)V
 
@@ -103,7 +94,6 @@
 
 .method private constructor <init>(Landroid/os/Parcel;)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -136,8 +126,6 @@
 
 .method synthetic constructor <init>(Landroid/os/Parcel;Landroid/bluetooth/le/ScanSettings$1;)V
     .locals 0
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # Landroid/bluetooth/le/ScanSettings$1;
 
     invoke-direct {p0, p1}, Landroid/bluetooth/le/ScanSettings;-><init>(Landroid/os/Parcel;)V
 
@@ -188,8 +176,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget v0, p0, Landroid/bluetooth/le/ScanSettings;->mScanMode:I
 

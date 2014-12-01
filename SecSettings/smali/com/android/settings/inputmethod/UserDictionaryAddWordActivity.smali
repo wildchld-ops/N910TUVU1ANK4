@@ -18,8 +18,6 @@
 
 .method private reportBackToCaller(ILandroid/os/Bundle;)V
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
 
@@ -72,7 +70,6 @@
 # virtual methods
 .method public onClickCancel(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     const/4 v0, 0x1
 
@@ -87,7 +84,6 @@
 
 .method public onClickConfirm(Landroid/view/View;)V
     .locals 3
-    .param p1    # Landroid/view/View;
 
     new-instance v0, Landroid/os/Bundle;
 
@@ -108,7 +104,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 7
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
@@ -205,7 +200,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     iget-object v0, p0, Lcom/android/settings/inputmethod/UserDictionaryAddWordActivity;->mContents:Lcom/android/settings/inputmethod/UserDictionaryAddWordContents;
 

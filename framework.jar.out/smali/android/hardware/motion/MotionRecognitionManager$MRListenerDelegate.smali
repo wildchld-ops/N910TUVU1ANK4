@@ -31,9 +31,6 @@
 # direct methods
 .method constructor <init>(Landroid/hardware/motion/MotionRecognitionManager;Landroid/hardware/motion/MRListener;ILandroid/os/Handler;)V
     .locals 2
-    .param p2    # Landroid/hardware/motion/MRListener;
-    .param p3    # I
-    .param p4    # Landroid/os/Handler;
 
     iput-object p1, p0, Landroid/hardware/motion/MotionRecognitionManager$MRListenerDelegate;->this$0:Landroid/hardware/motion/MotionRecognitionManager;
 
@@ -80,7 +77,6 @@
 
 .method static synthetic access$200(Landroid/hardware/motion/MotionRecognitionManager$MRListenerDelegate;)Landroid/hardware/motion/MRListener;
     .locals 1
-    .param p0    # Landroid/hardware/motion/MotionRecognitionManager$MRListenerDelegate;
 
     iget-object v0, p0, Landroid/hardware/motion/MotionRecognitionManager$MRListenerDelegate;->mListener:Landroid/hardware/motion/MRListener;
 
@@ -127,7 +123,6 @@
 
 .method public motionCallback(Landroid/hardware/motion/MREvent;)V
     .locals 2
-    .param p1    # Landroid/hardware/motion/MREvent;
 
     invoke-static {}, Landroid/os/Message;->obtain()Landroid/os/Message;
 
@@ -148,7 +143,6 @@
 
 .method public setMotionEvents(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/hardware/motion/MotionRecognitionManager$MRListenerDelegate;->mMotionEvents:I
 

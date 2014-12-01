@@ -29,7 +29,6 @@
 # virtual methods
 .method public resultIndex(Ljava/util/Comparator;Ljava/lang/Object;Ljava/util/List;I)I
     .locals 1
-    .param p4    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",

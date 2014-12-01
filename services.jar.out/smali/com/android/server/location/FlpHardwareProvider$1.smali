@@ -46,7 +46,6 @@
 
 .method public injectDeviceContext(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/location/FlpHardwareProvider$1;->this$0:Lcom/android/server/location/FlpHardwareProvider;
 
@@ -58,7 +57,6 @@
 
 .method public injectDiagnosticData(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/server/location/FlpHardwareProvider$1;->this$0:Lcom/android/server/location/FlpHardwareProvider;
 
@@ -70,7 +68,6 @@
 
 .method public registerSink(Landroid/hardware/location/IFusedLocationHardwareSink;)V
     .locals 3
-    .param p1    # Landroid/hardware/location/IFusedLocationHardwareSink;
 
     iget-object v0, p0, Lcom/android/server/location/FlpHardwareProvider$1;->this$0:Lcom/android/server/location/FlpHardwareProvider;
 
@@ -124,7 +121,6 @@
 
 .method public requestBatchOfLocations(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/location/FlpHardwareProvider$1;->this$0:Lcom/android/server/location/FlpHardwareProvider;
 
@@ -136,8 +132,6 @@
 
 .method public startBatching(ILandroid/location/FusedBatchOptions;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/location/FusedBatchOptions;
 
     iget-object v0, p0, Lcom/android/server/location/FlpHardwareProvider$1;->this$0:Lcom/android/server/location/FlpHardwareProvider;
 
@@ -149,7 +143,6 @@
 
 .method public stopBatching(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/location/FlpHardwareProvider$1;->this$0:Lcom/android/server/location/FlpHardwareProvider;
 
@@ -187,7 +180,6 @@
 
 .method public unregisterSink(Landroid/hardware/location/IFusedLocationHardwareSink;)V
     .locals 3
-    .param p1    # Landroid/hardware/location/IFusedLocationHardwareSink;
 
     iget-object v0, p0, Lcom/android/server/location/FlpHardwareProvider$1;->this$0:Lcom/android/server/location/FlpHardwareProvider;
 
@@ -232,8 +224,6 @@
 
 .method public updateBatchingOptions(ILandroid/location/FusedBatchOptions;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/location/FusedBatchOptions;
 
     iget-object v0, p0, Lcom/android/server/location/FlpHardwareProvider$1;->this$0:Lcom/android/server/location/FlpHardwareProvider;
 

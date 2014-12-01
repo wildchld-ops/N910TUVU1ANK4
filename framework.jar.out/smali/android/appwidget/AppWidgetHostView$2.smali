@@ -36,7 +36,6 @@
 # virtual methods
 .method public onPress(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     const/16 v0, 0x5672
 

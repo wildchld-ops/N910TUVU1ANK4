@@ -14,8 +14,6 @@
 # direct methods
 .method constructor <init>(ILandroid/renderscript/RenderScript;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Landroid/renderscript/RenderScript;
 
     invoke-direct {p0, p1, p2}, Landroid/renderscript/Program;-><init>(ILandroid/renderscript/RenderScript;)V
 
@@ -26,7 +24,6 @@
 # virtual methods
 .method public getInput(I)Landroid/renderscript/Element;
     .locals 2
-    .param p1    # I
 
     if-ltz p1, :cond_0
 

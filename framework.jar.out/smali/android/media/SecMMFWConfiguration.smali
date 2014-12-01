@@ -26,7 +26,6 @@
 
 .method public static isEnabledFeature(I)Z
     .locals 3
-    .param p0    # I
 
     const/4 v1, 0x0
 

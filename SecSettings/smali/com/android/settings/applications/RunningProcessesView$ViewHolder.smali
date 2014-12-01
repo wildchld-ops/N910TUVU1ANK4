@@ -31,7 +31,6 @@
 # direct methods
 .method public constructor <init>(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -96,9 +95,6 @@
 # virtual methods
 .method public bind(Lcom/android/settings/applications/RunningState;Lcom/android/settings/applications/RunningState$BaseItem;Ljava/lang/StringBuilder;)Lcom/android/settings/applications/RunningProcessesView$ActiveItem;
     .locals 8
-    .param p1    # Lcom/android/settings/applications/RunningState;
-    .param p2    # Lcom/android/settings/applications/RunningState$BaseItem;
-    .param p3    # Ljava/lang/StringBuilder;
 
     iget-object v5, p1, Lcom/android/settings/applications/RunningState;->mLock:Ljava/lang/Object;
 

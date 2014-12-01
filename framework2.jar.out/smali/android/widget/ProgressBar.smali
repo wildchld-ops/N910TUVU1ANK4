@@ -130,7 +130,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -141,8 +140,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const v0, 0x1010077
 
@@ -153,9 +150,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v0, 0x0
 
@@ -166,10 +160,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;II)V
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
-    .param p4    # I
 
     const/4 v4, 0x1
 
@@ -427,7 +417,6 @@
 
 .method static synthetic access$000(Landroid/widget/ProgressBar;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Landroid/widget/ProgressBar;
 
     iget-object v0, p0, Landroid/widget/ProgressBar;->mRefreshData:Ljava/util/ArrayList;
 
@@ -436,11 +425,6 @@
 
 .method static synthetic access$100(Landroid/widget/ProgressBar;IIZZ)V
     .locals 0
-    .param p0    # Landroid/widget/ProgressBar;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # Z
 
     invoke-direct {p0, p1, p2, p3, p4}, Landroid/widget/ProgressBar;->doRefreshProgress(IIZZ)V
 
@@ -449,8 +433,6 @@
 
 .method static synthetic access$202(Landroid/widget/ProgressBar;Z)Z
     .locals 0
-    .param p0    # Landroid/widget/ProgressBar;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/widget/ProgressBar;->mRefreshIsPosted:Z
 
@@ -459,10 +441,6 @@
 
 .method private declared-synchronized doRefreshProgress(IIZZ)V
     .locals 12
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # Z
 
     const v11, 0x461c4000
 
@@ -726,9 +704,6 @@
 
 .method private declared-synchronized refreshProgress(IIZ)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     monitor-enter p0
 
@@ -844,8 +819,6 @@
 
 .method private tileify(Landroid/graphics/drawable/Drawable;Z)Landroid/graphics/drawable/Drawable;
     .locals 17
-    .param p1    # Landroid/graphics/drawable/Drawable;
-    .param p2    # Z
 
     move-object/from16 v0, p1
 
@@ -1051,7 +1024,6 @@
 
 .method private tileifyIndeterminate(Landroid/graphics/drawable/Drawable;)Landroid/graphics/drawable/Drawable;
     .locals 8
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     const/16 v7, 0x2710
 
@@ -1115,8 +1087,6 @@
 
 .method private updateDrawableBounds(II)V
     .locals 15
-    .param p1    # I
-    .param p2    # I
 
     iget v12, p0, Landroid/view/View;->mPaddingRight:I
 
@@ -1415,8 +1385,6 @@
 
 .method private updateDualDrawableBounds(II)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     iget-boolean v2, p0, Landroid/widget/ProgressBar;->mUseDualColorProgressBar:Z
 
@@ -1790,7 +1758,6 @@
 
 .method public final declared-synchronized incrementProgressBy(I)V
     .locals 1
-    .param p1    # I
 
     monitor-enter p0
 
@@ -1817,7 +1784,6 @@
 
 .method public final declared-synchronized incrementSecondaryProgressBy(I)V
     .locals 1
-    .param p1    # I
 
     monitor-enter p0
 
@@ -1844,7 +1810,6 @@
 
 .method public invalidateDrawable(Landroid/graphics/drawable/Drawable;)V
     .locals 7
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     iget-boolean v3, p0, Landroid/widget/ProgressBar;->mInDrawing:Z
 
@@ -2092,7 +2057,6 @@
 
 .method protected declared-synchronized onDraw(Landroid/graphics/Canvas;)V
     .locals 6
-    .param p1    # Landroid/graphics/Canvas;
 
     monitor-enter p0
 
@@ -2261,7 +2225,6 @@
 
 .method public onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
     .locals 1
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
 
     invoke-super {p0, p1}, Landroid/view/View;->onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
 
@@ -2286,7 +2249,6 @@
 
 .method public onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
     .locals 1
-    .param p1    # Landroid/view/accessibility/AccessibilityNodeInfo;
 
     invoke-super {p0, p1}, Landroid/view/View;->onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
 
@@ -2303,8 +2265,6 @@
 
 .method protected declared-synchronized onMeasure(II)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     monitor-enter p0
 
@@ -2398,8 +2358,6 @@
 
 .method onProgressRefresh(FZ)V
     .locals 1
-    .param p1    # F
-    .param p2    # Z
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -2421,7 +2379,6 @@
 
 .method public onResolveDrawables(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Landroid/widget/ProgressBar;->mCurrentDrawable:Landroid/graphics/drawable/Drawable;
 
@@ -2462,7 +2419,6 @@
 
 .method public onRestoreInstanceState(Landroid/os/Parcelable;)V
     .locals 2
-    .param p1    # Landroid/os/Parcelable;
 
     move-object v0, p1
 
@@ -2509,10 +2465,6 @@
 
 .method protected onSizeChanged(IIII)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-direct {p0, p1, p2}, Landroid/widget/ProgressBar;->updateDrawableBounds(II)V
 
@@ -2528,7 +2480,6 @@
 
 .method protected onSlidingRefresh(I)V
     .locals 9
-    .param p1    # I
 
     const v7, 0x102000d
 
@@ -2661,8 +2612,6 @@
 
 .method protected onVisibilityChanged(Landroid/view/View;I)V
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     invoke-super {p0, p1, p2}, Landroid/view/View;->onVisibilityChanged(Landroid/view/View;I)V
 
@@ -2706,7 +2655,6 @@
 
 .method public setDualColorProgress(I)Z
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -2731,7 +2679,6 @@
 
 .method protected setDualProgressDrawable(Landroid/graphics/drawable/Drawable;)V
     .locals 5
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     iget-object v2, p0, Landroid/widget/ProgressBar;->mDualColorProgressDrawable:Landroid/graphics/drawable/Drawable;
 
@@ -2911,7 +2858,6 @@
 
 .method public setExtSeekBar(Z)V
     .locals 3
-    .param p1    # Z
 
     const-string v0, "ProgressBar"
 
@@ -2942,7 +2888,6 @@
 
 .method public declared-synchronized setIndeterminate(Z)V
     .locals 1
-    .param p1    # Z
     .annotation runtime Landroid/view/RemotableViewMethod;
     .end annotation
 
@@ -3002,7 +2947,6 @@
 
 .method public setIndeterminateDrawable(Landroid/graphics/drawable/Drawable;)V
     .locals 2
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     if-eqz p1, :cond_0
 
@@ -3044,8 +2988,6 @@
 
 .method public setInterpolator(Landroid/content/Context;I)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     invoke-static {p1, p2}, Landroid/view/animation/AnimationUtils;->loadInterpolator(Landroid/content/Context;I)Landroid/view/animation/Interpolator;
 
@@ -3058,7 +3000,6 @@
 
 .method public setInterpolator(Landroid/view/animation/Interpolator;)V
     .locals 0
-    .param p1    # Landroid/view/animation/Interpolator;
 
     iput-object p1, p0, Landroid/widget/ProgressBar;->mInterpolator:Landroid/view/animation/Interpolator;
 
@@ -3067,7 +3008,6 @@
 
 .method public declared-synchronized setMasterVibrate(Z)V
     .locals 1
-    .param p1    # Z
     .annotation runtime Landroid/view/RemotableViewMethod;
     .end annotation
 
@@ -3092,7 +3032,6 @@
 
 .method public declared-synchronized setMax(I)V
     .locals 3
-    .param p1    # I
     .annotation runtime Landroid/view/RemotableViewMethod;
     .end annotation
 
@@ -3144,7 +3083,6 @@
 
 .method public setMin(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/widget/ProgressBar;->mMin:I
 
@@ -3153,7 +3091,6 @@
 
 .method public declared-synchronized setProgress(I)V
     .locals 3
-    .param p1    # I
     .annotation runtime Landroid/view/RemotableViewMethod;
     .end annotation
 
@@ -3207,8 +3144,6 @@
 
 .method protected declared-synchronized setProgress(IZ)V
     .locals 5
-    .param p1    # I
-    .param p2    # Z
     .annotation runtime Landroid/view/RemotableViewMethod;
     .end annotation
 
@@ -3468,7 +3403,6 @@
 
 .method public setProgressDrawable(Landroid/graphics/drawable/Drawable;)V
     .locals 6
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     const/4 v5, 0x0
 
@@ -3664,7 +3598,6 @@
 
 .method public declared-synchronized setSecondaryProgress(I)V
     .locals 3
-    .param p1    # I
     .annotation runtime Landroid/view/RemotableViewMethod;
     .end annotation
 
@@ -3725,7 +3658,6 @@
 
 .method public setUseDualColorProgressBar(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/widget/ProgressBar;->mUseDualColorProgressBar:Z
 
@@ -3734,7 +3666,6 @@
 
 .method public setVisibility(I)V
     .locals 1
-    .param p1    # I
     .annotation runtime Landroid/view/RemotableViewMethod;
     .end annotation
 
@@ -3921,7 +3852,6 @@
 
 .method protected verifyDrawable(Landroid/graphics/drawable/Drawable;)Z
     .locals 1
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     iget-object v0, p0, Landroid/widget/ProgressBar;->mProgressDrawable:Landroid/graphics/drawable/Drawable;
 

@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,12 +36,6 @@
 # virtual methods
 .method public add(Landroid/view/IWindow;ILandroid/view/WindowManager$LayoutParams;ILandroid/graphics/Rect;Landroid/view/InputChannel;)I
     .locals 6
-    .param p1    # Landroid/view/IWindow;
-    .param p2    # I
-    .param p3    # Landroid/view/WindowManager$LayoutParams;
-    .param p4    # I
-    .param p5    # Landroid/graphics/Rect;
-    .param p6    # Landroid/view/InputChannel;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -153,13 +146,6 @@
 
 .method public addToDisplay(Landroid/view/IWindow;ILandroid/view/WindowManager$LayoutParams;IILandroid/graphics/Rect;Landroid/view/InputChannel;)I
     .locals 6
-    .param p1    # Landroid/view/IWindow;
-    .param p2    # I
-    .param p3    # Landroid/view/WindowManager$LayoutParams;
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Landroid/graphics/Rect;
-    .param p7    # Landroid/view/InputChannel;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -272,12 +258,6 @@
 
 .method public addToDisplayWithoutInputChannel(Landroid/view/IWindow;ILandroid/view/WindowManager$LayoutParams;IILandroid/graphics/Rect;)I
     .locals 6
-    .param p1    # Landroid/view/IWindow;
-    .param p2    # I
-    .param p3    # Landroid/view/WindowManager$LayoutParams;
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Landroid/graphics/Rect;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -381,11 +361,6 @@
 
 .method public addWithoutInputChannel(Landroid/view/IWindow;ILandroid/view/WindowManager$LayoutParams;ILandroid/graphics/Rect;)I
     .locals 6
-    .param p1    # Landroid/view/IWindow;
-    .param p2    # I
-    .param p3    # Landroid/view/WindowManager$LayoutParams;
-    .param p4    # I
-    .param p5    # Landroid/graphics/Rect;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -495,7 +470,6 @@
 
 .method public dragRecipientEntered(Landroid/view/IWindow;)V
     .locals 5
-    .param p1    # Landroid/view/IWindow;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -559,7 +533,6 @@
 
 .method public dragRecipientExited(Landroid/view/IWindow;)V
     .locals 5
-    .param p1    # Landroid/view/IWindow;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -623,7 +596,6 @@
 
 .method public finishDrawing(Landroid/view/IWindow;)V
     .locals 5
-    .param p1    # Landroid/view/IWindow;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -687,8 +659,6 @@
 
 .method public getContentFrame(Landroid/view/IWindow;Landroid/graphics/Rect;)V
     .locals 5
-    .param p1    # Landroid/view/IWindow;
-    .param p2    # Landroid/graphics/Rect;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -761,8 +731,6 @@
 
 .method public getDisplayFrame(Landroid/view/IWindow;Landroid/graphics/Rect;)V
     .locals 5
-    .param p1    # Landroid/view/IWindow;
-    .param p2    # Landroid/graphics/Rect;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -903,7 +871,6 @@
 
 .method public getWindowId(Landroid/os/IBinder;)Landroid/view/IWindowId;
     .locals 6
-    .param p1    # Landroid/os/IBinder;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -963,9 +930,6 @@
 
 .method public onRectangleOnScreenRequested(Landroid/os/IBinder;Landroid/graphics/Rect;Z)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Landroid/graphics/Rect;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1052,7 +1016,6 @@
 
 .method public outOfMemory(Landroid/view/IWindow;)Z
     .locals 6
-    .param p1    # Landroid/view/IWindow;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1127,7 +1090,6 @@
 
 .method public performDeferredDestroy(Landroid/view/IWindow;)V
     .locals 5
-    .param p1    # Landroid/view/IWindow;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1191,13 +1153,6 @@
 
 .method public performDrag(Landroid/view/IWindow;Landroid/os/IBinder;FFFFLandroid/content/ClipData;)Z
     .locals 7
-    .param p1    # Landroid/view/IWindow;
-    .param p2    # Landroid/os/IBinder;
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # F
-    .param p7    # Landroid/content/ClipData;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1308,9 +1263,6 @@
 
 .method public performHapticFeedback(Landroid/view/IWindow;IZ)Z
     .locals 7
-    .param p1    # Landroid/view/IWindow;
-    .param p2    # I
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1404,11 +1356,6 @@
 
 .method public prepareDrag(Landroid/view/IWindow;IIILandroid/view/Surface;)Landroid/os/IBinder;
     .locals 6
-    .param p1    # Landroid/view/IWindow;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Landroid/view/Surface;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1491,21 +1438,6 @@
 
 .method public relayout(Landroid/view/IWindow;ILandroid/view/WindowManager$LayoutParams;IIIILandroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/content/res/Configuration;Landroid/view/Surface;Landroid/graphics/PointF;Landroid/graphics/Rect;)I
     .locals 7
-    .param p1    # Landroid/view/IWindow;
-    .param p2    # I
-    .param p3    # Landroid/view/WindowManager$LayoutParams;
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # Landroid/graphics/Rect;
-    .param p9    # Landroid/graphics/Rect;
-    .param p10    # Landroid/graphics/Rect;
-    .param p11    # Landroid/graphics/Rect;
-    .param p12    # Landroid/content/res/Configuration;
-    .param p13    # Landroid/view/Surface;
-    .param p14    # Landroid/graphics/PointF;
-    .param p15    # Landroid/graphics/Rect;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1690,7 +1622,6 @@
 
 .method public remove(Landroid/view/IWindow;)V
     .locals 5
-    .param p1    # Landroid/view/IWindow;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1754,8 +1685,6 @@
 
 .method public reportDropResult(Landroid/view/IWindow;Z)V
     .locals 5
-    .param p1    # Landroid/view/IWindow;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1828,13 +1757,6 @@
 
 .method public sendWallpaperCommand(Landroid/os/IBinder;Ljava/lang/String;IIILandroid/os/Bundle;Z)Landroid/os/Bundle;
     .locals 6
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Landroid/os/Bundle;
-    .param p7    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1949,7 +1871,6 @@
 
 .method public setInTouchMode(Z)V
     .locals 5
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2008,11 +1929,6 @@
 
 .method public setInsets(Landroid/view/IWindow;ILandroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Region;)V
     .locals 5
-    .param p1    # Landroid/view/IWindow;
-    .param p2    # I
-    .param p3    # Landroid/graphics/Rect;
-    .param p4    # Landroid/graphics/Rect;
-    .param p5    # Landroid/graphics/Region;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2138,8 +2054,6 @@
 
 .method public setTransparentRegion(Landroid/view/IWindow;Landroid/graphics/Region;)V
     .locals 5
-    .param p1    # Landroid/view/IWindow;
-    .param p2    # Landroid/graphics/Region;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2224,14 +2138,6 @@
 
 .method public setUniverseTransform(Landroid/os/IBinder;FFFFFFF)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # F
-    .param p7    # F
-    .param p8    # F
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2297,11 +2203,6 @@
 
 .method public setWallpaperPosition(Landroid/os/IBinder;FFFF)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2361,8 +2262,6 @@
 
 .method public wallpaperCommandComplete(Landroid/os/IBinder;Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2435,7 +2334,6 @@
 
 .method public wallpaperOffsetsComplete(Landroid/os/IBinder;)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

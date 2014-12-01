@@ -82,7 +82,6 @@
 # direct methods
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -153,8 +152,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/content/pm/PackageInfo;)V
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/pm/PackageInfo;
 
     invoke-direct {p0, p1}, Landroid/widget/AppSecurityPermissions;-><init>(Landroid/content/Context;)V
 
@@ -261,8 +258,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Ljava/lang/String;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Landroid/widget/AppSecurityPermissions;-><init>(Landroid/content/Context;)V
 
@@ -343,7 +338,6 @@
 
 .method private addPermToList(Ljava/util/List;Landroid/widget/AppSecurityPermissions$MyPermissionInfo;)V
     .locals 2
-    .param p2    # Landroid/widget/AppSecurityPermissions$MyPermissionInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -389,9 +383,6 @@
 
 .method private displayPermissions(Ljava/util/List;Landroid/widget/LinearLayout;IZ)V
     .locals 12
-    .param p2    # Landroid/widget/LinearLayout;
-    .param p3    # I
-    .param p4    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -544,8 +535,6 @@
 
 .method private extractPerms(Landroid/content/pm/PackageInfo;Ljava/util/Set;Landroid/content/pm/PackageInfo;)V
     .locals 21
-    .param p1    # Landroid/content/pm/PackageInfo;
-    .param p3    # Landroid/content/pm/PackageInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -924,7 +913,6 @@
 
 .method private getAllUsedPermissions(ILjava/util/Set;)V
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -971,10 +959,6 @@
 
 .method public static getPermissionItemView(Landroid/content/Context;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Z)Landroid/view/View;
     .locals 7
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Ljava/lang/CharSequence;
-    .param p3    # Z
 
     const/4 v3, 0x1
 
@@ -1049,14 +1033,6 @@
 
 .method private static getPermissionItemView(Landroid/content/Context;Landroid/view/LayoutInflater;Landroid/widget/AppSecurityPermissions$MyPermissionGroupInfo;Landroid/widget/AppSecurityPermissions$MyPermissionInfo;ZLjava/lang/CharSequence;Ljava/lang/String;Z)Landroid/widget/AppSecurityPermissions$PermissionItemView;
     .locals 7
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/widget/AppSecurityPermissions$MyPermissionGroupInfo;
-    .param p3    # Landroid/widget/AppSecurityPermissions$MyPermissionInfo;
-    .param p4    # Z
-    .param p5    # Ljava/lang/CharSequence;
-    .param p6    # Ljava/lang/String;
-    .param p7    # Z
 
     iget v1, p3, Landroid/content/pm/PermissionInfo;->flags:I
 
@@ -1099,11 +1075,6 @@
 
 .method private getPermissionItemView(Landroid/widget/AppSecurityPermissions$MyPermissionGroupInfo;Landroid/widget/AppSecurityPermissions$MyPermissionInfo;ZLjava/lang/CharSequence;Z)Landroid/widget/AppSecurityPermissions$PermissionItemView;
     .locals 8
-    .param p1    # Landroid/widget/AppSecurityPermissions$MyPermissionGroupInfo;
-    .param p2    # Landroid/widget/AppSecurityPermissions$MyPermissionInfo;
-    .param p3    # Z
-    .param p4    # Ljava/lang/CharSequence;
-    .param p5    # Z
 
     iget-object v0, p0, Landroid/widget/AppSecurityPermissions;->mContext:Landroid/content/Context;
 
@@ -1130,12 +1101,6 @@
 
 .method private static getPermissionItemViewOld(Landroid/content/Context;Landroid/view/LayoutInflater;Ljava/lang/CharSequence;Ljava/lang/CharSequence;ZLandroid/graphics/drawable/Drawable;)Landroid/view/View;
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Ljava/lang/CharSequence;
-    .param p3    # Ljava/lang/CharSequence;
-    .param p4    # Z
-    .param p5    # Landroid/graphics/drawable/Drawable;
 
     const v4, 0x1090038
 
@@ -1192,8 +1157,6 @@
 
 .method private getPermissionList(Landroid/widget/AppSecurityPermissions$MyPermissionGroupInfo;I)Ljava/util/List;
     .locals 1
-    .param p1    # Landroid/widget/AppSecurityPermissions$MyPermissionGroupInfo;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1241,7 +1204,6 @@
 
 .method private getPermissionsForPackage(Ljava/lang/String;Ljava/util/Set;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1299,8 +1261,6 @@
 
 .method private getPermissionsView(IZ)Landroid/view/View;
     .locals 6
-    .param p1    # I
-    .param p2    # Z
 
     iget-object v3, p0, Landroid/widget/AppSecurityPermissions;->mInflater:Landroid/view/LayoutInflater;
 
@@ -1348,9 +1308,6 @@
 
 .method private isDisplayablePermission(Landroid/content/pm/PermissionInfo;II)Z
     .locals 10
-    .param p1    # Landroid/content/pm/PermissionInfo;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v8, 0x0
 
@@ -1661,7 +1618,6 @@
 
 .method public getPermissionCount(I)I
     .locals 3
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -1718,7 +1674,6 @@
 
 .method public getPermissionsView(I)Landroid/view/View;
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 

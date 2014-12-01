@@ -16,8 +16,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/hardware/ISerialManager;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/hardware/ISerialManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -61,8 +59,6 @@
 
 .method public openSerialPort(Ljava/lang/String;I)Landroid/hardware/SerialPort;
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

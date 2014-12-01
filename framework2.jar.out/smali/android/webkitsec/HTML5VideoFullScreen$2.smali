@@ -36,10 +36,6 @@
 # virtual methods
 .method public surfaceChanged(Landroid/view/SurfaceHolder;III)V
     .locals 2
-    .param p1    # Landroid/view/SurfaceHolder;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iget-object v0, p0, Landroid/webkitsec/HTML5VideoFullScreen$2;->this$0:Landroid/webkitsec/HTML5VideoFullScreen;
 
@@ -107,7 +103,6 @@
 
 .method public surfaceCreated(Landroid/view/SurfaceHolder;)V
     .locals 2
-    .param p1    # Landroid/view/SurfaceHolder;
 
     iget-object v0, p0, Landroid/webkitsec/HTML5VideoFullScreen$2;->this$0:Landroid/webkitsec/HTML5VideoFullScreen;
 
@@ -131,7 +126,6 @@
 
 .method public surfaceDestroyed(Landroid/view/SurfaceHolder;)V
     .locals 3
-    .param p1    # Landroid/view/SurfaceHolder;
 
     const/4 v2, 0x0
 

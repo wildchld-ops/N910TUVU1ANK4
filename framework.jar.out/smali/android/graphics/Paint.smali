@@ -226,7 +226,6 @@
 
 .method public constructor <init>(I)V
     .locals 2
-    .param p1    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -269,7 +268,6 @@
 
 .method public constructor <init>(Landroid/graphics/Paint;)V
     .locals 1
-    .param p1    # Landroid/graphics/Paint;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -451,7 +449,6 @@
 
 .method private setClassVariablesFrom(Landroid/graphics/Paint;)V
     .locals 1
-    .param p1    # Landroid/graphics/Paint;
 
     iget-object v0, p1, Landroid/graphics/Paint;->mColorFilter:Landroid/graphics/ColorFilter;
 
@@ -548,11 +545,6 @@
 # virtual methods
 .method public addInnerShadowTextEffect(FFFIF)I
     .locals 1
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # I
-    .param p5    # F
 
     invoke-direct/range {p0 .. p5}, Landroid/graphics/Paint;->native_addInnerShadowTextEffect(FFFIF)I
 
@@ -563,12 +555,6 @@
 
 .method public addLinearGradientTextEffect(FF[I[F[FF)I
     .locals 7
-    .param p1    # F
-    .param p2    # F
-    .param p3    # [I
-    .param p4    # [F
-    .param p5    # [F
-    .param p6    # F
 
     const/4 v5, 0x0
 
@@ -693,9 +679,6 @@
 
 .method public addOuterGlowTextEffect(FIF)I
     .locals 7
-    .param p1    # F
-    .param p2    # I
-    .param p3    # F
 
     const/4 v3, 0x0
 
@@ -720,12 +703,6 @@
 
 .method public addOuterGlowTextEffect(FI[I[F[FF)I
     .locals 7
-    .param p1    # F
-    .param p2    # I
-    .param p3    # [I
-    .param p4    # [F
-    .param p5    # [F
-    .param p6    # F
 
     const/4 v5, 0x0
 
@@ -850,11 +827,6 @@
 
 .method public addOuterShadowTextEffect(FFFIF)I
     .locals 1
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # I
-    .param p5    # F
 
     invoke-direct/range {p0 .. p5}, Landroid/graphics/Paint;->native_addOuterShadowTextEffect(FFFIF)I
 
@@ -865,9 +837,6 @@
 
 .method public addStrokeTextEffect(FIF)I
     .locals 6
-    .param p1    # F
-    .param p2    # I
-    .param p3    # F
 
     const/4 v4, 0x0
 
@@ -890,11 +859,6 @@
 
 .method public addStrokeTextEffect(FIFII)I
     .locals 1
-    .param p1    # F
-    .param p2    # I
-    .param p3    # F
-    .param p4    # I
-    .param p5    # I
 
     invoke-direct/range {p0 .. p5}, Landroid/graphics/Paint;->native_addStrokeTextEffect(FIFII)I
 
@@ -908,12 +872,6 @@
 
 .method public breakText(Ljava/lang/CharSequence;IIZF[F)I
     .locals 7
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Z
-    .param p5    # F
-    .param p6    # [F
 
     const/4 v2, 0x0
 
@@ -1034,10 +992,6 @@
 
 .method public breakText(Ljava/lang/String;ZF[F)I
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # F
-    .param p4    # [F
 
     const/4 v8, 0x0
 
@@ -1133,11 +1087,6 @@
 
 .method public breakText([CIIF[F)I
     .locals 10
-    .param p1    # [C
-    .param p2    # I
-    .param p3    # I
-    .param p4    # F
-    .param p5    # [F
 
     const/4 v9, 0x0
 
@@ -1340,8 +1289,6 @@
 
 .method public getFillPath(Landroid/graphics/Path;Landroid/graphics/Path;)Z
     .locals 3
-    .param p1    # Landroid/graphics/Path;
-    .param p2    # Landroid/graphics/Path;
 
     iget v0, p0, Landroid/graphics/Paint;->mNativePaint:I
 
@@ -1512,10 +1459,6 @@
 
 .method public getTextBounds(Ljava/lang/String;IILandroid/graphics/Rect;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/graphics/Rect;
 
     or-int v0, p2, p3
 
@@ -1570,10 +1513,6 @@
 
 .method public getTextBounds([CIILandroid/graphics/Rect;)V
     .locals 6
-    .param p1    # [C
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/graphics/Rect;
 
     or-int v0, p2, p3
 
@@ -1663,13 +1602,6 @@
 
 .method public getTextGlyphs(Ljava/lang/String;IIIII[C)I
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # [C
 
     if-nez p1, :cond_0
 
@@ -1802,12 +1734,6 @@
 
 .method public getTextPath(Ljava/lang/String;IIFFLandroid/graphics/Path;)V
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # F
-    .param p5    # F
-    .param p6    # Landroid/graphics/Path;
 
     or-int v0, p2, p3
 
@@ -1857,12 +1783,6 @@
 
 .method public getTextPath([CIIFFLandroid/graphics/Path;)V
     .locals 8
-    .param p1    # [C
-    .param p2    # I
-    .param p3    # I
-    .param p4    # F
-    .param p5    # F
-    .param p6    # Landroid/graphics/Path;
 
     or-int v0, p2, p3
 
@@ -1907,14 +1827,6 @@
 
 .method public getTextRunAdvances(Ljava/lang/CharSequence;IIIII[FI)F
     .locals 11
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # [F
-    .param p8    # I
 
     if-nez p1, :cond_0
 
@@ -2134,14 +2046,6 @@
 
 .method public getTextRunAdvances(Ljava/lang/String;IIIII[FI)F
     .locals 15
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # [F
-    .param p8    # I
 
     if-nez p1, :cond_0
 
@@ -2361,14 +2265,6 @@
 
 .method public getTextRunAdvances([CIIIII[FI)F
     .locals 14
-    .param p1    # [C
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # [F
-    .param p8    # I
 
     if-nez p1, :cond_0
 
@@ -2582,12 +2478,6 @@
 
 .method public getTextRunCursor(Ljava/lang/CharSequence;IIIII)I
     .locals 8
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     const/4 v2, 0x0
 
@@ -2682,12 +2572,6 @@
 
 .method public getTextRunCursor(Ljava/lang/String;IIIII)I
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     or-int v0, p2, p3
 
@@ -2754,12 +2638,6 @@
 
 .method public getTextRunCursor([CIIIII)I
     .locals 9
-    .param p1    # [C
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     add-int v8, p2, p3
 
@@ -2835,10 +2713,6 @@
 
 .method public getTextWidths(Ljava/lang/CharSequence;II[F)I
     .locals 4
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # [F
 
     const/4 v1, 0x0
 
@@ -2969,10 +2843,6 @@
 
 .method public getTextWidths(Ljava/lang/String;II[F)I
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # [F
 
     if-nez p1, :cond_0
 
@@ -3108,8 +2978,6 @@
 
 .method public getTextWidths(Ljava/lang/String;[F)I
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # [F
 
     const/4 v0, 0x0
 
@@ -3126,10 +2994,6 @@
 
 .method public getTextWidths([CII[F)I
     .locals 9
-    .param p1    # [C
-    .param p2    # I
-    .param p3    # I
-    .param p4    # [F
 
     if-nez p1, :cond_0
 
@@ -3451,9 +3315,6 @@
 
 .method public measureText(Ljava/lang/CharSequence;II)F
     .locals 5
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v4, 0x0
 
@@ -3573,7 +3434,6 @@
 
 .method public measureText(Ljava/lang/String;)F
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -3654,9 +3514,6 @@
 
 .method public measureText(Ljava/lang/String;II)F
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     if-nez p1, :cond_0
 
@@ -3763,9 +3620,6 @@
 
 .method public measureText([CII)F
     .locals 4
-    .param p1    # [C
-    .param p2    # I
-    .param p3    # I
 
     if-nez p1, :cond_0
 
@@ -3865,7 +3719,6 @@
 
 .method public removeTextEffect(I)V
     .locals 0
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/graphics/Paint;->native_removeTextEffect(I)V
 
@@ -3946,7 +3799,6 @@
 
 .method public set(Landroid/graphics/Paint;)V
     .locals 2
-    .param p1    # Landroid/graphics/Paint;
 
     if-eq p0, p1, :cond_0
 
@@ -3997,10 +3849,6 @@
 
 .method public setARGB(IIII)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     shl-int/lit8 v0, p1, 0x18
 
@@ -4027,7 +3875,6 @@
 
 .method public setBidiFlags(I)V
     .locals 3
-    .param p1    # I
 
     and-int/lit8 p1, p1, 0x7
 
@@ -4070,7 +3917,6 @@
 
 .method public setColorFilter(Landroid/graphics/ColorFilter;)Landroid/graphics/ColorFilter;
     .locals 2
-    .param p1    # Landroid/graphics/ColorFilter;
 
     const/4 v0, 0x0
 
@@ -4090,7 +3936,6 @@
 
 .method public setCompatibilityScaling(F)V
     .locals 5
-    .param p1    # F
 
     const/high16 v4, 0x3f800000
 
@@ -4147,7 +3992,6 @@
 
 .method public setMaskFilter(Landroid/graphics/MaskFilter;)Landroid/graphics/MaskFilter;
     .locals 2
-    .param p1    # Landroid/graphics/MaskFilter;
 
     const/4 v0, 0x0
 
@@ -4167,7 +4011,6 @@
 
 .method public setPathEffect(Landroid/graphics/PathEffect;)Landroid/graphics/PathEffect;
     .locals 2
-    .param p1    # Landroid/graphics/PathEffect;
 
     const/4 v0, 0x0
 
@@ -4187,7 +4030,6 @@
 
 .method public setRasterizer(Landroid/graphics/Rasterizer;)Landroid/graphics/Rasterizer;
     .locals 2
-    .param p1    # Landroid/graphics/Rasterizer;
 
     const/4 v0, 0x0
 
@@ -4207,7 +4049,6 @@
 
 .method public setShader(Landroid/graphics/Shader;)Landroid/graphics/Shader;
     .locals 2
-    .param p1    # Landroid/graphics/Shader;
 
     const/4 v0, 0x0
 
@@ -4227,10 +4068,6 @@
 
 .method public setShadowLayer(FFFI)V
     .locals 1
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # I
 
     const/4 v0, 0x0
 
@@ -4266,7 +4103,6 @@
 
 .method public setStrokeCap(Landroid/graphics/Paint$Cap;)V
     .locals 2
-    .param p1    # Landroid/graphics/Paint$Cap;
 
     iget v0, p0, Landroid/graphics/Paint;->mNativePaint:I
 
@@ -4279,7 +4115,6 @@
 
 .method public setStrokeJoin(Landroid/graphics/Paint$Join;)V
     .locals 2
-    .param p1    # Landroid/graphics/Paint$Join;
 
     iget v0, p0, Landroid/graphics/Paint;->mNativePaint:I
 
@@ -4298,7 +4133,6 @@
 
 .method public setStyle(Landroid/graphics/Paint$Style;)V
     .locals 2
-    .param p1    # Landroid/graphics/Paint$Style;
 
     iget v0, p0, Landroid/graphics/Paint;->mNativePaint:I
 
@@ -4314,7 +4148,6 @@
 
 .method public setTextAlign(Landroid/graphics/Paint$Align;)V
     .locals 2
-    .param p1    # Landroid/graphics/Paint$Align;
 
     iget v0, p0, Landroid/graphics/Paint;->mNativePaint:I
 
@@ -4327,7 +4160,6 @@
 
 .method public setTextEffectOpacity(F)V
     .locals 0
-    .param p1    # F
 
     invoke-direct {p0, p1}, Landroid/graphics/Paint;->native_setTextEffectOpacity(F)V
 
@@ -4336,7 +4168,6 @@
 
 .method public setTextLocale(Ljava/util/Locale;)V
     .locals 2
-    .param p1    # Ljava/util/Locale;
 
     if-nez p1, :cond_0
 
@@ -4385,7 +4216,6 @@
 
 .method public setTypeface(Landroid/graphics/Typeface;)Landroid/graphics/Typeface;
     .locals 3
-    .param p1    # Landroid/graphics/Typeface;
 
     const/4 v0, 0x0
 
@@ -4434,7 +4264,6 @@
 
 .method public setXfermode(Landroid/graphics/Xfermode;)Landroid/graphics/Xfermode;
     .locals 2
-    .param p1    # Landroid/graphics/Xfermode;
 
     const/4 v0, 0x0
 

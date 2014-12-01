@@ -69,12 +69,6 @@
 # virtual methods
 .method public final attach(Landroid/content/Context;Landroid/app/ActivityThread;Ljava/lang/String;Landroid/os/IBinder;Landroid/app/Application;Ljava/lang/Object;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/app/ActivityThread;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Landroid/os/IBinder;
-    .param p5    # Landroid/app/Application;
-    .param p6    # Ljava/lang/Object;
 
     invoke-virtual {p0, p1}, Landroid/app/Service;->attachBaseContext(Landroid/content/Context;)V
 
@@ -115,9 +109,6 @@
 
 .method protected dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     const-string v0, "nothing to dump"
 
@@ -147,7 +138,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 0
-    .param p1    # Landroid/content/res/Configuration;
 
     return-void
 .end method
@@ -172,15 +162,12 @@
 
 .method public onRebind(Landroid/content/Intent;)V
     .locals 0
-    .param p1    # Landroid/content/Intent;
 
     return-void
 .end method
 
 .method public onStart(Landroid/content/Intent;I)V
     .locals 0
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -189,9 +176,6 @@
 
 .method public onStartCommand(Landroid/content/Intent;II)I
     .locals 1
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
-    .param p3    # I
 
     invoke-virtual {p0, p1, p3}, Landroid/app/Service;->onStart(Landroid/content/Intent;I)V
 
@@ -212,21 +196,18 @@
 
 .method public onTaskRemoved(Landroid/content/Intent;)V
     .locals 0
-    .param p1    # Landroid/content/Intent;
 
     return-void
 .end method
 
 .method public onTrimMemory(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onUnbind(Landroid/content/Intent;)Z
     .locals 1
-    .param p1    # Landroid/content/Intent;
 
     const/4 v0, 0x0
 
@@ -235,7 +216,6 @@
 
 .method public final setForeground(Z)V
     .locals 3
-    .param p1    # Z
 
     const-string v0, "Service"
 
@@ -272,8 +252,6 @@
 
 .method public final startForeground(ILandroid/app/Notification;)V
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/app/Notification;
 
     :try_start_0
     iget-object v0, p0, Landroid/app/Service;->mActivityManager:Landroid/app/IActivityManager;
@@ -307,7 +285,6 @@
 
 .method public final stopForeground(Z)V
     .locals 6
-    .param p1    # Z
 
     :try_start_0
     iget-object v0, p0, Landroid/app/Service;->mActivityManager:Landroid/app/IActivityManager;
@@ -351,7 +328,6 @@
 
 .method public final stopSelf(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v0, p0, Landroid/app/Service;->mActivityManager:Landroid/app/IActivityManager;
 
@@ -386,7 +362,6 @@
 
 .method public final stopSelfResult(I)Z
     .locals 4
-    .param p1    # I
 
     const/4 v0, 0x0
 

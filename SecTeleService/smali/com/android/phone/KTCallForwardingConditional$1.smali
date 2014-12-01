@@ -101,7 +101,7 @@
 
     move-result-object v5
 
-    invoke-virtual {v5, v9}, Landroid/os/Handler;->obtainMessage(I)Landroid/os/Message;
+    invoke-virtual {v5, v9}, Lcom/android/phone/KTCallForwardingConditional$MyHandler;->obtainMessage(I)Landroid/os/Message;
 
     move-result-object v5
 
@@ -113,7 +113,7 @@
 
     iget-object v5, p0, Lcom/android/phone/KTCallForwardingConditional$1;->this$0:Lcom/android/phone/KTCallForwardingConditional;
 
-    invoke-virtual {v5}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v5}, Lcom/android/phone/KTCallForwardingConditional;->getActivity()Landroid/app/Activity;
 
     move-result-object v5
 
@@ -123,7 +123,7 @@
 
     const v8, 0x7f090640
 
-    invoke-virtual {v7, v8}, Landroid/app/Fragment;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {v7, v8}, Lcom/android/phone/KTCallForwardingConditional;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v7
 

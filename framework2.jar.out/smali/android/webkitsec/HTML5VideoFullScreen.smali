@@ -72,10 +72,6 @@
 # direct methods
 .method constructor <init>(Landroid/content/Context;IIZ)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Z
 
     const/4 v1, 0x0
 
@@ -138,7 +134,6 @@
 
 .method static synthetic access$000(Landroid/webkitsec/HTML5VideoFullScreen;)I
     .locals 1
-    .param p0    # Landroid/webkitsec/HTML5VideoFullScreen;
 
     iget v0, p0, Landroid/webkitsec/HTML5VideoFullScreen;->mVideoWidth:I
 
@@ -147,8 +142,6 @@
 
 .method static synthetic access$002(Landroid/webkitsec/HTML5VideoFullScreen;I)I
     .locals 0
-    .param p0    # Landroid/webkitsec/HTML5VideoFullScreen;
-    .param p1    # I
 
     iput p1, p0, Landroid/webkitsec/HTML5VideoFullScreen;->mVideoWidth:I
 
@@ -157,7 +150,6 @@
 
 .method static synthetic access$100(Landroid/webkitsec/HTML5VideoFullScreen;)I
     .locals 1
-    .param p0    # Landroid/webkitsec/HTML5VideoFullScreen;
 
     iget v0, p0, Landroid/webkitsec/HTML5VideoFullScreen;->mVideoHeight:I
 
@@ -174,7 +166,6 @@
 
 .method static synthetic access$1002(Landroid/widget/FrameLayout;)Landroid/widget/FrameLayout;
     .locals 0
-    .param p0    # Landroid/widget/FrameLayout;
 
     sput-object p0, Landroid/webkitsec/HTML5VideoFullScreen;->mLayout:Landroid/widget/FrameLayout;
 
@@ -183,8 +174,6 @@
 
 .method static synthetic access$102(Landroid/webkitsec/HTML5VideoFullScreen;I)I
     .locals 0
-    .param p0    # Landroid/webkitsec/HTML5VideoFullScreen;
-    .param p1    # I
 
     iput p1, p0, Landroid/webkitsec/HTML5VideoFullScreen;->mVideoHeight:I
 
@@ -201,7 +190,6 @@
 
 .method static synthetic access$1102(Landroid/view/View;)Landroid/view/View;
     .locals 0
-    .param p0    # Landroid/view/View;
 
     sput-object p0, Landroid/webkitsec/HTML5VideoFullScreen;->mProgressView:Landroid/view/View;
 
@@ -210,8 +198,6 @@
 
 .method static synthetic access$1202(Landroid/webkitsec/HTML5VideoFullScreen;I)I
     .locals 0
-    .param p0    # Landroid/webkitsec/HTML5VideoFullScreen;
-    .param p1    # I
 
     iput p1, p0, Landroid/webkitsec/HTML5VideoFullScreen;->mCurrentBufferPercentage:I
 
@@ -220,7 +206,6 @@
 
 .method static synthetic access$200(Landroid/webkitsec/HTML5VideoFullScreen;)Landroid/widget/MediaController;
     .locals 1
-    .param p0    # Landroid/webkitsec/HTML5VideoFullScreen;
 
     iget-object v0, p0, Landroid/webkitsec/HTML5VideoFullScreen;->mMediaController:Landroid/widget/MediaController;
 
@@ -229,8 +214,6 @@
 
 .method static synthetic access$202(Landroid/webkitsec/HTML5VideoFullScreen;Landroid/widget/MediaController;)Landroid/widget/MediaController;
     .locals 0
-    .param p0    # Landroid/webkitsec/HTML5VideoFullScreen;
-    .param p1    # Landroid/widget/MediaController;
 
     iput-object p1, p0, Landroid/webkitsec/HTML5VideoFullScreen;->mMediaController:Landroid/widget/MediaController;
 
@@ -239,7 +222,6 @@
 
 .method static synthetic access$300(Landroid/webkitsec/HTML5VideoFullScreen;)Z
     .locals 1
-    .param p0    # Landroid/webkitsec/HTML5VideoFullScreen;
 
     iget-boolean v0, p0, Landroid/webkitsec/HTML5VideoFullScreen;->mIsMiniMode:Z
 
@@ -248,8 +230,6 @@
 
 .method static synthetic access$402(Landroid/webkitsec/HTML5VideoFullScreen;Landroid/view/SurfaceHolder;)Landroid/view/SurfaceHolder;
     .locals 0
-    .param p0    # Landroid/webkitsec/HTML5VideoFullScreen;
-    .param p1    # Landroid/view/SurfaceHolder;
 
     iput-object p1, p0, Landroid/webkitsec/HTML5VideoFullScreen;->mSurfaceHolder:Landroid/view/SurfaceHolder;
 
@@ -258,8 +238,6 @@
 
 .method static synthetic access$502(Landroid/webkitsec/HTML5VideoFullScreen;I)I
     .locals 0
-    .param p0    # Landroid/webkitsec/HTML5VideoFullScreen;
-    .param p1    # I
 
     iput p1, p0, Landroid/webkitsec/HTML5VideoFullScreen;->mFullScreenMode:I
 
@@ -268,7 +246,6 @@
 
 .method static synthetic access$600(Landroid/webkitsec/HTML5VideoFullScreen;)V
     .locals 0
-    .param p0    # Landroid/webkitsec/HTML5VideoFullScreen;
 
     invoke-direct {p0}, Landroid/webkitsec/HTML5VideoFullScreen;->prepareForFullScreen()V
 
@@ -277,8 +254,6 @@
 
 .method static synthetic access$702(Landroid/webkitsec/HTML5VideoFullScreen;Z)Z
     .locals 0
-    .param p0    # Landroid/webkitsec/HTML5VideoFullScreen;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/webkitsec/HTML5VideoFullScreen;->mPlayingWhenDestroyed:Z
 
@@ -287,7 +262,6 @@
 
 .method static synthetic access$800(Landroid/webkitsec/HTML5VideoFullScreen;)Landroid/webkitsec/HTML5VideoFullScreen$VideoSurfaceView;
     .locals 1
-    .param p0    # Landroid/webkitsec/HTML5VideoFullScreen;
 
     iget-object v0, p0, Landroid/webkitsec/HTML5VideoFullScreen;->mVideoSurfaceView:Landroid/webkitsec/HTML5VideoFullScreen$VideoSurfaceView;
 
@@ -296,7 +270,6 @@
 
 .method static synthetic access$900(Landroid/webkitsec/HTML5VideoFullScreen;)Landroid/view/SurfaceView;
     .locals 1
-    .param p0    # Landroid/webkitsec/HTML5VideoFullScreen;
 
     invoke-direct {p0}, Landroid/webkitsec/HTML5VideoFullScreen;->getSurfaceView()Landroid/view/SurfaceView;
 
@@ -373,7 +346,6 @@
 
 .method private setMediaController(Landroid/widget/MediaController;)V
     .locals 0
-    .param p1    # Landroid/widget/MediaController;
 
     iput-object p1, p0, Landroid/webkitsec/HTML5VideoFullScreen;->mMediaController:Landroid/widget/MediaController;
 
@@ -475,9 +447,6 @@
 
 .method public enterFullScreenVideoState(ILandroid/webkitsec/HTML5VideoViewProxy;Landroid/webkitsec/WebViewClassic;)V
     .locals 8
-    .param p1    # I
-    .param p2    # Landroid/webkitsec/HTML5VideoViewProxy;
-    .param p3    # Landroid/webkitsec/WebViewClassic;
 
     const/4 v7, -0x1
 
@@ -724,7 +693,6 @@
 
 .method public onPrepared(Landroid/media/MediaPlayer;)V
     .locals 9
-    .param p1    # Landroid/media/MediaPlayer;
 
     const/4 v6, 0x3
 
@@ -1013,8 +981,6 @@
 
 .method public onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     iget-boolean v0, p0, Landroid/webkitsec/HTML5VideoFullScreen;->mIsMiniMode:Z
 
@@ -1067,7 +1033,6 @@
 
 .method protected switchProgressView(Z)V
     .locals 2
-    .param p1    # Z
 
     sget-object v0, Landroid/webkitsec/HTML5VideoFullScreen;->mProgressView:Landroid/view/View;
 

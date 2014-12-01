@@ -39,21 +39,18 @@
 # virtual methods
 .method public onActive(Landroid/hardware/camera2/CameraDevice;)V
     .locals 0
-    .param p1    # Landroid/hardware/camera2/CameraDevice;
 
     return-void
 .end method
 
 .method public onBusy(Landroid/hardware/camera2/CameraDevice;)V
     .locals 0
-    .param p1    # Landroid/hardware/camera2/CameraDevice;
 
     return-void
 .end method
 
 .method public onClosed(Landroid/hardware/camera2/CameraDevice;)V
     .locals 0
-    .param p1    # Landroid/hardware/camera2/CameraDevice;
 
     return-void
 .end method
@@ -66,7 +63,6 @@
 
 .method public onIdle(Landroid/hardware/camera2/CameraDevice;)V
     .locals 0
-    .param p1    # Landroid/hardware/camera2/CameraDevice;
 
     return-void
 .end method
@@ -76,7 +72,6 @@
 
 .method public onUnconfigured(Landroid/hardware/camera2/CameraDevice;)V
     .locals 0
-    .param p1    # Landroid/hardware/camera2/CameraDevice;
 
     return-void
 .end method

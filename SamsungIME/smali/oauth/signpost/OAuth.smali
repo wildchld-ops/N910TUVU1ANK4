@@ -66,7 +66,6 @@
 
 .method public static addQueryParameters(Ljava/lang/String;Ljava/util/Map;)Ljava/lang/String;
     .locals 6
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -137,8 +136,6 @@
 
 .method public static varargs addQueryParameters(Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;
     .locals 5
-    .param p0    # Ljava/lang/String;
-    .param p1    # [Ljava/lang/String;
 
     const-string v3, "?"
 
@@ -242,8 +239,6 @@
 
 .method public static debugOut(Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "debug"
 
@@ -291,7 +286,6 @@
 
 .method public static decodeForm(Ljava/io/InputStream;)Loauth/signpost/http/HttpParameters;
     .locals 4
-    .param p0    # Ljava/io/InputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -339,7 +333,6 @@
 
 .method public static decodeForm(Ljava/lang/String;)Loauth/signpost/http/HttpParameters;
     .locals 9
-    .param p0    # Ljava/lang/String;
 
     new-instance v6, Loauth/signpost/http/HttpParameters;
 
@@ -456,7 +449,6 @@
 
 .method public static formEncode(Ljava/util/Collection;Ljava/io/OutputStream;)V
     .locals 4
-    .param p1    # Ljava/io/OutputStream;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T::",
@@ -559,7 +551,6 @@
 
 .method public static isEmpty(Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     if-eqz p0, :cond_0
 
@@ -583,7 +574,6 @@
 
 .method public static oauthHeaderToParamsMap(Ljava/lang/String;)Loauth/signpost/http/HttpParameters;
     .locals 11
-    .param p0    # Ljava/lang/String;
 
     new-instance v6, Loauth/signpost/http/HttpParameters;
 
@@ -669,7 +659,6 @@
 
 .method public static percentDecode(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     if-nez p0, :cond_0
 
@@ -706,7 +695,6 @@
 
 .method public static percentEncode(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     if-nez p0, :cond_0
 
@@ -727,7 +715,6 @@
 
 .method public static varargs prepareOAuthHeader([Ljava/lang/String;)Ljava/lang/String;
     .locals 5
-    .param p0    # [Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -825,7 +812,6 @@
 
 .method public static final safeToString(Ljava/lang/Object;)Ljava/lang/String;
     .locals 1
-    .param p0    # Ljava/lang/Object;
 
     if-nez p0, :cond_0
 
@@ -844,8 +830,6 @@
 
 .method public static toHeaderElement(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 

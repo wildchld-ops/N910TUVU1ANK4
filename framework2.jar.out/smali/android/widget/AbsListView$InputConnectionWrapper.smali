@@ -28,7 +28,6 @@
 # direct methods
 .method public constructor <init>(Landroid/widget/AbsListView;Landroid/view/inputmethod/EditorInfo;)V
     .locals 0
-    .param p2    # Landroid/view/inputmethod/EditorInfo;
 
     iput-object p1, p0, Landroid/widget/AbsListView$InputConnectionWrapper;->this$0:Landroid/widget/AbsListView;
 
@@ -85,7 +84,6 @@
 
 .method public clearMetaKeyStates(I)Z
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0}, Landroid/widget/AbsListView$InputConnectionWrapper;->getTarget()Landroid/view/inputmethod/InputConnection;
 
@@ -100,7 +98,6 @@
 
 .method public commitCompletion(Landroid/view/inputmethod/CompletionInfo;)Z
     .locals 1
-    .param p1    # Landroid/view/inputmethod/CompletionInfo;
 
     invoke-direct {p0}, Landroid/widget/AbsListView$InputConnectionWrapper;->getTarget()Landroid/view/inputmethod/InputConnection;
 
@@ -115,7 +112,6 @@
 
 .method public commitCorrection(Landroid/view/inputmethod/CorrectionInfo;)Z
     .locals 1
-    .param p1    # Landroid/view/inputmethod/CorrectionInfo;
 
     invoke-direct {p0}, Landroid/widget/AbsListView$InputConnectionWrapper;->getTarget()Landroid/view/inputmethod/InputConnection;
 
@@ -130,8 +126,6 @@
 
 .method public commitText(Ljava/lang/CharSequence;I)Z
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
 
     invoke-direct {p0}, Landroid/widget/AbsListView$InputConnectionWrapper;->getTarget()Landroid/view/inputmethod/InputConnection;
 
@@ -146,8 +140,6 @@
 
 .method public deleteSurroundingText(II)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0}, Landroid/widget/AbsListView$InputConnectionWrapper;->getTarget()Landroid/view/inputmethod/InputConnection;
 
@@ -203,7 +195,6 @@
 
 .method public getCursorCapsMode(I)I
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/widget/AbsListView$InputConnectionWrapper;->mTarget:Landroid/view/inputmethod/InputConnection;
 
@@ -226,8 +217,6 @@
 
 .method public getExtractedText(Landroid/view/inputmethod/ExtractedTextRequest;I)Landroid/view/inputmethod/ExtractedText;
     .locals 1
-    .param p1    # Landroid/view/inputmethod/ExtractedTextRequest;
-    .param p2    # I
 
     invoke-direct {p0}, Landroid/widget/AbsListView$InputConnectionWrapper;->getTarget()Landroid/view/inputmethod/InputConnection;
 
@@ -242,7 +231,6 @@
 
 .method public getSelectedText(I)Ljava/lang/CharSequence;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/widget/AbsListView$InputConnectionWrapper;->mTarget:Landroid/view/inputmethod/InputConnection;
 
@@ -265,8 +253,6 @@
 
 .method public getTextAfterCursor(II)Ljava/lang/CharSequence;
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Landroid/widget/AbsListView$InputConnectionWrapper;->mTarget:Landroid/view/inputmethod/InputConnection;
 
@@ -289,8 +275,6 @@
 
 .method public getTextBeforeCursor(II)Ljava/lang/CharSequence;
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Landroid/widget/AbsListView$InputConnectionWrapper;->mTarget:Landroid/view/inputmethod/InputConnection;
 
@@ -313,7 +297,6 @@
 
 .method public performContextMenuAction(I)Z
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0}, Landroid/widget/AbsListView$InputConnectionWrapper;->getTarget()Landroid/view/inputmethod/InputConnection;
 
@@ -328,7 +311,6 @@
 
 .method public performEditorAction(I)Z
     .locals 4
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -369,8 +351,6 @@
 
 .method public performPrivateCommand(Ljava/lang/String;Landroid/os/Bundle;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Bundle;
 
     invoke-direct {p0}, Landroid/widget/AbsListView$InputConnectionWrapper;->getTarget()Landroid/view/inputmethod/InputConnection;
 
@@ -385,7 +365,6 @@
 
 .method public reportFullscreenMode(Z)Z
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Landroid/widget/AbsListView$InputConnectionWrapper;->this$0:Landroid/widget/AbsListView;
 
@@ -403,7 +382,6 @@
 
 .method public sendKeyEvent(Landroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/KeyEvent;
 
     iget-object v0, p0, Landroid/widget/AbsListView$InputConnectionWrapper;->this$0:Landroid/widget/AbsListView;
 
@@ -421,8 +399,6 @@
 
 .method public setComposingRegion(II)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0}, Landroid/widget/AbsListView$InputConnectionWrapper;->getTarget()Landroid/view/inputmethod/InputConnection;
 
@@ -437,8 +413,6 @@
 
 .method public setComposingText(Ljava/lang/CharSequence;I)Z
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
 
     invoke-direct {p0}, Landroid/widget/AbsListView$InputConnectionWrapper;->getTarget()Landroid/view/inputmethod/InputConnection;
 
@@ -453,8 +427,6 @@
 
 .method public setSelection(II)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0}, Landroid/widget/AbsListView$InputConnectionWrapper;->getTarget()Landroid/view/inputmethod/InputConnection;
 

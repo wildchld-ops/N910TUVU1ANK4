@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Lcom/android/internal/app/MediaRouteControllerDialog;Lcom/android/internal/app/MediaRouteControllerDialog$1;)V
     .locals 0
-    .param p1    # Lcom/android/internal/app/MediaRouteControllerDialog;
-    .param p2    # Lcom/android/internal/app/MediaRouteControllerDialog$1;
 
     invoke-direct {p0, p1}, Lcom/android/internal/app/MediaRouteControllerDialog$MediaRouterCallback;-><init>(Lcom/android/internal/app/MediaRouteControllerDialog;)V
 
@@ -43,8 +41,6 @@
 # virtual methods
 .method public onRouteChanged(Landroid/media/MediaRouter;Landroid/media/MediaRouter$RouteInfo;)V
     .locals 1
-    .param p1    # Landroid/media/MediaRouter;
-    .param p2    # Landroid/media/MediaRouter$RouteInfo;
 
     iget-object v0, p0, Lcom/android/internal/app/MediaRouteControllerDialog$MediaRouterCallback;->this$0:Lcom/android/internal/app/MediaRouteControllerDialog;
 
@@ -56,10 +52,6 @@
 
 .method public onRouteGrouped(Landroid/media/MediaRouter;Landroid/media/MediaRouter$RouteInfo;Landroid/media/MediaRouter$RouteGroup;I)V
     .locals 1
-    .param p1    # Landroid/media/MediaRouter;
-    .param p2    # Landroid/media/MediaRouter$RouteInfo;
-    .param p3    # Landroid/media/MediaRouter$RouteGroup;
-    .param p4    # I
 
     iget-object v0, p0, Lcom/android/internal/app/MediaRouteControllerDialog$MediaRouterCallback;->this$0:Lcom/android/internal/app/MediaRouteControllerDialog;
 
@@ -71,9 +63,6 @@
 
 .method public onRouteUngrouped(Landroid/media/MediaRouter;Landroid/media/MediaRouter$RouteInfo;Landroid/media/MediaRouter$RouteGroup;)V
     .locals 1
-    .param p1    # Landroid/media/MediaRouter;
-    .param p2    # Landroid/media/MediaRouter$RouteInfo;
-    .param p3    # Landroid/media/MediaRouter$RouteGroup;
 
     iget-object v0, p0, Lcom/android/internal/app/MediaRouteControllerDialog$MediaRouterCallback;->this$0:Lcom/android/internal/app/MediaRouteControllerDialog;
 
@@ -85,9 +74,6 @@
 
 .method public onRouteUnselected(Landroid/media/MediaRouter;ILandroid/media/MediaRouter$RouteInfo;)V
     .locals 1
-    .param p1    # Landroid/media/MediaRouter;
-    .param p2    # I
-    .param p3    # Landroid/media/MediaRouter$RouteInfo;
 
     iget-object v0, p0, Lcom/android/internal/app/MediaRouteControllerDialog$MediaRouterCallback;->this$0:Lcom/android/internal/app/MediaRouteControllerDialog;
 
@@ -99,8 +85,6 @@
 
 .method public onRouteVolumeChanged(Landroid/media/MediaRouter;Landroid/media/MediaRouter$RouteInfo;)V
     .locals 1
-    .param p1    # Landroid/media/MediaRouter;
-    .param p2    # Landroid/media/MediaRouter$RouteInfo;
 
     iget-object v0, p0, Lcom/android/internal/app/MediaRouteControllerDialog$MediaRouterCallback;->this$0:Lcom/android/internal/app/MediaRouteControllerDialog;
 

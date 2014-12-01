@@ -215,7 +215,6 @@
 
 .method public getTrackFormat(I)Landroid/media/MediaFormat;
     .locals 2
-    .param p1    # I
 
     new-instance v0, Landroid/media/MediaFormat;
 
@@ -245,8 +244,6 @@
 
 .method public final setDataSource(Landroid/content/Context;Landroid/net/Uri;Ljava/util/Map;)V
     .locals 9
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/net/Uri;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -409,7 +406,6 @@
 
 .method public final setDataSource(Ljava/io/FileDescriptor;)V
     .locals 6
-    .param p1    # Ljava/io/FileDescriptor;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -439,7 +435,6 @@
 
 .method public final setDataSource(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -455,7 +450,6 @@
 
 .method public final setDataSource(Ljava/lang/String;Ljava/util/Map;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

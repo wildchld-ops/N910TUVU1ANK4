@@ -75,8 +75,6 @@
 # direct methods
 .method constructor <init>(Landroid/content/Context;Landroid/bluetooth/BluetoothProfile$ServiceListener;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/bluetooth/BluetoothProfile$ServiceListener;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -137,7 +135,6 @@
 
 .method static synthetic access$000(Landroid/bluetooth/BluetoothInputDevice;)Landroid/content/ServiceConnection;
     .locals 1
-    .param p0    # Landroid/bluetooth/BluetoothInputDevice;
 
     iget-object v0, p0, Landroid/bluetooth/BluetoothInputDevice;->mConnection:Landroid/content/ServiceConnection;
 
@@ -146,7 +143,6 @@
 
 .method static synthetic access$100(Landroid/bluetooth/BluetoothInputDevice;)Landroid/bluetooth/IBluetoothInputDevice;
     .locals 1
-    .param p0    # Landroid/bluetooth/BluetoothInputDevice;
 
     iget-object v0, p0, Landroid/bluetooth/BluetoothInputDevice;->mService:Landroid/bluetooth/IBluetoothInputDevice;
 
@@ -155,8 +151,6 @@
 
 .method static synthetic access$102(Landroid/bluetooth/BluetoothInputDevice;Landroid/bluetooth/IBluetoothInputDevice;)Landroid/bluetooth/IBluetoothInputDevice;
     .locals 0
-    .param p0    # Landroid/bluetooth/BluetoothInputDevice;
-    .param p1    # Landroid/bluetooth/IBluetoothInputDevice;
 
     iput-object p1, p0, Landroid/bluetooth/BluetoothInputDevice;->mService:Landroid/bluetooth/IBluetoothInputDevice;
 
@@ -165,7 +159,6 @@
 
 .method static synthetic access$200(Landroid/bluetooth/BluetoothInputDevice;)Landroid/content/Context;
     .locals 1
-    .param p0    # Landroid/bluetooth/BluetoothInputDevice;
 
     iget-object v0, p0, Landroid/bluetooth/BluetoothInputDevice;->mContext:Landroid/content/Context;
 
@@ -174,7 +167,6 @@
 
 .method static synthetic access$300(Landroid/bluetooth/BluetoothInputDevice;)Landroid/bluetooth/BluetoothProfile$ServiceListener;
     .locals 1
-    .param p0    # Landroid/bluetooth/BluetoothInputDevice;
 
     iget-object v0, p0, Landroid/bluetooth/BluetoothInputDevice;->mServiceListener:Landroid/bluetooth/BluetoothProfile$ServiceListener;
 
@@ -207,7 +199,6 @@
 
 .method private isValidDevice(Landroid/bluetooth/BluetoothDevice;)Z
     .locals 2
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
 
     const/4 v0, 0x0
 
@@ -235,7 +226,6 @@
 
 .method private static log(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "BluetoothInputDevice"
 
@@ -339,7 +329,6 @@
 
 .method public connect(Landroid/bluetooth/BluetoothDevice;)Z
     .locals 5
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
 
     const/4 v1, 0x0
 
@@ -449,7 +438,6 @@
 
 .method public disconnect(Landroid/bluetooth/BluetoothDevice;)Z
     .locals 5
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
 
     const/4 v1, 0x0
 
@@ -722,7 +710,6 @@
 
 .method public getConnectionState(Landroid/bluetooth/BluetoothDevice;)I
     .locals 5
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
 
     const/4 v1, 0x0
 
@@ -806,7 +793,6 @@
 
 .method public getDevicesMatchingConnectionStates([I)Ljava/util/List;
     .locals 4
-    .param p1    # [I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([I)",
@@ -899,7 +885,6 @@
 
 .method public getPriority(Landroid/bluetooth/BluetoothDevice;)I
     .locals 5
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
 
     const/4 v1, 0x0
 
@@ -983,7 +968,6 @@
 
 .method public getProtocolMode(Landroid/bluetooth/BluetoothDevice;)Z
     .locals 5
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
 
     const/4 v1, 0x0
 
@@ -1067,10 +1051,6 @@
 
 .method public getReport(Landroid/bluetooth/BluetoothDevice;BBI)Z
     .locals 5
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
-    .param p2    # B
-    .param p3    # B
-    .param p4    # I
 
     const/4 v1, 0x0
 
@@ -1154,8 +1134,6 @@
 
 .method public sendData(Landroid/bluetooth/BluetoothDevice;Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
-    .param p2    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -1269,8 +1247,6 @@
 
 .method public setPriority(Landroid/bluetooth/BluetoothDevice;I)Z
     .locals 5
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
-    .param p2    # I
 
     const/4 v1, 0x0
 
@@ -1399,8 +1375,6 @@
 
 .method public setProtocolMode(Landroid/bluetooth/BluetoothDevice;I)Z
     .locals 5
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
-    .param p2    # I
 
     const/4 v1, 0x0
 
@@ -1510,9 +1484,6 @@
 
 .method public setReport(Landroid/bluetooth/BluetoothDevice;BLjava/lang/String;)Z
     .locals 5
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
-    .param p2    # B
-    .param p3    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -1636,7 +1607,6 @@
 
 .method public virtualUnplug(Landroid/bluetooth/BluetoothDevice;)Z
     .locals 5
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
 
     const/4 v1, 0x0
 

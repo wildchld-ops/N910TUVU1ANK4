@@ -31,9 +31,6 @@
 
 .method private handleNativeEvent(ILjava/lang/String;[Ljava/lang/String;)Z
     .locals 21
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # [Ljava/lang/String;
 
     const/4 v7, 0x1
 
@@ -992,9 +989,6 @@
 
 .method private removeRequestMap(IILcom/android/server/NsdService$ClientInfo;)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Lcom/android/server/NsdService$ClientInfo;
 
     # getter for: Lcom/android/server/NsdService$ClientInfo;->mClientIds:Landroid/util/SparseArray;
     invoke-static {p3}, Lcom/android/server/NsdService$ClientInfo;->access$1200(Lcom/android/server/NsdService$ClientInfo;)Landroid/util/SparseArray;
@@ -1019,7 +1013,6 @@
 
 .method private requestLimitReached(Lcom/android/server/NsdService$ClientInfo;)Z
     .locals 3
-    .param p1    # Lcom/android/server/NsdService$ClientInfo;
 
     # getter for: Lcom/android/server/NsdService$ClientInfo;->mClientIds:Landroid/util/SparseArray;
     invoke-static {p1}, Lcom/android/server/NsdService$ClientInfo;->access$1200(Lcom/android/server/NsdService$ClientInfo;)Landroid/util/SparseArray;
@@ -1069,9 +1062,6 @@
 
 .method private storeRequestMap(IILcom/android/server/NsdService$ClientInfo;)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Lcom/android/server/NsdService$ClientInfo;
 
     # getter for: Lcom/android/server/NsdService$ClientInfo;->mClientIds:Landroid/util/SparseArray;
     invoke-static {p3}, Lcom/android/server/NsdService$ClientInfo;->access$1200(Lcom/android/server/NsdService$ClientInfo;)Landroid/util/SparseArray;
@@ -1169,7 +1159,6 @@
 
 .method public processMessage(Landroid/os/Message;)Z
     .locals 13
-    .param p1    # Landroid/os/Message;
 
     const v12, 0x6000a
 

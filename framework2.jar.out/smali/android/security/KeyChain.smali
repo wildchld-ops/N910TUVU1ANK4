@@ -57,7 +57,6 @@
 
 .method public static bind(Landroid/content/Context;)Landroid/security/KeyChain$KeyChainConnection;
     .locals 8
-    .param p0    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/InterruptedException;
@@ -141,13 +140,6 @@
 
 .method public static choosePrivateKeyAlias(Landroid/app/Activity;Landroid/security/KeyChainAliasCallback;[Ljava/lang/String;[Ljava/security/Principal;Ljava/lang/String;ILjava/lang/String;)V
     .locals 5
-    .param p0    # Landroid/app/Activity;
-    .param p1    # Landroid/security/KeyChainAliasCallback;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # [Ljava/security/Principal;
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
-    .param p6    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -311,7 +303,6 @@
 
 .method private static ensureNotOnMainThread(Landroid/content/Context;)V
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     invoke-static {}, Landroid/os/Looper;->myLooper()Landroid/os/Looper;
 
@@ -339,8 +330,6 @@
 
 .method public static getCertificateChain(Landroid/content/Context;Ljava/lang/String;)[Ljava/security/cert/X509Certificate;
     .locals 10
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/security/KeyChainException;,
@@ -518,8 +507,6 @@
 
 .method public static getPrivateKey(Landroid/content/Context;Ljava/lang/String;)Ljava/security/PrivateKey;
     .locals 9
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/security/KeyChainException;,
@@ -681,7 +668,6 @@
 
 .method public static isBoundKeyAlgorithm(Ljava/lang/String;)Z
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     invoke-static {}, Lcom/sec/tima_keychain/TimaKeychain;->isTimaKeystoreAndCCMEnabledForCaller()Z
 
@@ -733,7 +719,6 @@
 
 .method public static isKeyAlgorithmSupported(Ljava/lang/String;)Z
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     sget-object v1, Ljava/util/Locale;->US:Ljava/util/Locale;
 
@@ -779,7 +764,6 @@
 
 .method private static toCertificate([B)Ljava/security/cert/X509Certificate;
     .locals 5
-    .param p0    # [B
 
     if-nez p0, :cond_0
 

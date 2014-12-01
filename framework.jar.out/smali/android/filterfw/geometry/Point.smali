@@ -20,8 +20,6 @@
 
 .method public constructor <init>(FF)V
     .locals 0
-    .param p1    # F
-    .param p2    # F
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -78,7 +76,6 @@
 
 .method public distanceTo(Landroid/filterfw/geometry/Point;)F
     .locals 1
-    .param p1    # Landroid/filterfw/geometry/Point;
 
     invoke-virtual {p1, p0}, Landroid/filterfw/geometry/Point;->minus(Landroid/filterfw/geometry/Point;)Landroid/filterfw/geometry/Point;
 
@@ -121,8 +118,6 @@
 
 .method public minus(FF)Landroid/filterfw/geometry/Point;
     .locals 3
-    .param p1    # F
-    .param p2    # F
 
     new-instance v0, Landroid/filterfw/geometry/Point;
 
@@ -141,7 +136,6 @@
 
 .method public minus(Landroid/filterfw/geometry/Point;)Landroid/filterfw/geometry/Point;
     .locals 2
-    .param p1    # Landroid/filterfw/geometry/Point;
 
     iget v0, p1, Landroid/filterfw/geometry/Point;->x:F
 
@@ -156,8 +150,6 @@
 
 .method public mult(FF)Landroid/filterfw/geometry/Point;
     .locals 3
-    .param p1    # F
-    .param p2    # F
 
     new-instance v0, Landroid/filterfw/geometry/Point;
 
@@ -188,8 +180,6 @@
 
 .method public plus(FF)Landroid/filterfw/geometry/Point;
     .locals 3
-    .param p1    # F
-    .param p2    # F
 
     new-instance v0, Landroid/filterfw/geometry/Point;
 
@@ -208,7 +198,6 @@
 
 .method public plus(Landroid/filterfw/geometry/Point;)Landroid/filterfw/geometry/Point;
     .locals 2
-    .param p1    # Landroid/filterfw/geometry/Point;
 
     iget v0, p1, Landroid/filterfw/geometry/Point;->x:F
 
@@ -223,7 +212,6 @@
 
 .method public rotated(F)Landroid/filterfw/geometry/Point;
     .locals 8
-    .param p1    # F
 
     new-instance v0, Landroid/filterfw/geometry/Point;
 
@@ -290,7 +278,6 @@
 
 .method public rotated90(I)Landroid/filterfw/geometry/Point;
     .locals 5
-    .param p1    # I
 
     iget v1, p0, Landroid/filterfw/geometry/Point;->x:F
 
@@ -321,8 +308,6 @@
 
 .method public rotatedAround(Landroid/filterfw/geometry/Point;F)Landroid/filterfw/geometry/Point;
     .locals 1
-    .param p1    # Landroid/filterfw/geometry/Point;
-    .param p2    # F
 
     invoke-virtual {p0, p1}, Landroid/filterfw/geometry/Point;->minus(Landroid/filterfw/geometry/Point;)Landroid/filterfw/geometry/Point;
 
@@ -341,7 +326,6 @@
 
 .method public scaledTo(F)Landroid/filterfw/geometry/Point;
     .locals 1
-    .param p1    # F
 
     invoke-virtual {p0}, Landroid/filterfw/geometry/Point;->length()F
 
@@ -358,8 +342,6 @@
 
 .method public set(FF)V
     .locals 0
-    .param p1    # F
-    .param p2    # F
 
     iput p1, p0, Landroid/filterfw/geometry/Point;->x:F
 
@@ -370,7 +352,6 @@
 
 .method public times(F)Landroid/filterfw/geometry/Point;
     .locals 3
-    .param p1    # F
 
     new-instance v0, Landroid/filterfw/geometry/Point;
 

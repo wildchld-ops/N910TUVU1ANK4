@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Lcom/android/mms/spam/SetupSpamKeywordList;Lcom/android/mms/spam/SetupSpamKeywordList$1;)V
     .locals 0
-    .param p1    # Lcom/android/mms/spam/SetupSpamKeywordList;
-    .param p2    # Lcom/android/mms/spam/SetupSpamKeywordList$1;
 
     invoke-direct {p0, p1}, Lcom/android/mms/spam/SetupSpamKeywordList$SpamMenuClickListener;-><init>(Lcom/android/mms/spam/SetupSpamKeywordList;)V
 
@@ -46,7 +44,6 @@
 # virtual methods
 .method public onMenuItemClick(Landroid/view/MenuItem;)Z
     .locals 2
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v0, 0x1
 

@@ -34,7 +34,6 @@
 
 .method public static get(Landroid/nfc/NfcAdapter;)Landroid/nfc/NfcUtility;
     .locals 4
-    .param p0    # Landroid/nfc/NfcAdapter;
 
     invoke-virtual {p0}, Landroid/nfc/NfcAdapter;->getContext()Landroid/content/Context;
 
@@ -124,7 +123,6 @@
 
 .method private static initServivce(Landroid/nfc/NfcAdapter;)V
     .locals 1
-    .param p0    # Landroid/nfc/NfcAdapter;
 
     invoke-virtual {p0}, Landroid/nfc/NfcAdapter;->getNfcUtilityInterface()Landroid/nfc/INfcUtility;
 
@@ -142,8 +140,6 @@
 # virtual methods
 .method public waitSimBoot(Landroid/nfc/NfcUtility$NfcUtilityCallback;Z)Z
     .locals 4
-    .param p1    # Landroid/nfc/NfcUtility$NfcUtilityCallback;
-    .param p2    # Z
 
     const/4 v1, 0x0
 

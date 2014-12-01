@@ -41,7 +41,6 @@
 # direct methods
 .method public constructor <init>(Landroid/accounts/AccountManager;Landroid/os/Handler;)V
     .locals 1
-    .param p2    # Landroid/os/Handler;
 
     iput-object p1, p0, Landroid/accounts/AccountManager$BaseFutureTask;->this$0:Landroid/accounts/AccountManager;
 
@@ -64,8 +63,6 @@
 
 .method static synthetic access$700(Landroid/accounts/AccountManager$BaseFutureTask;Ljava/lang/Object;)V
     .locals 0
-    .param p0    # Landroid/accounts/AccountManager$BaseFutureTask;
-    .param p1    # Ljava/lang/Object;
 
     invoke-virtual {p0, p1}, Landroid/accounts/AccountManager$BaseFutureTask;->set(Ljava/lang/Object;)V
 
@@ -74,8 +71,6 @@
 
 .method static synthetic access$800(Landroid/accounts/AccountManager$BaseFutureTask;Ljava/lang/Throwable;)V
     .locals 0
-    .param p0    # Landroid/accounts/AccountManager$BaseFutureTask;
-    .param p1    # Ljava/lang/Throwable;
 
     invoke-virtual {p0, p1}, Landroid/accounts/AccountManager$BaseFutureTask;->setException(Ljava/lang/Throwable;)V
 
@@ -110,7 +105,6 @@
 
 .method protected postRunnableToHandler(Ljava/lang/Runnable;)V
     .locals 2
-    .param p1    # Ljava/lang/Runnable;
 
     iget-object v1, p0, Landroid/accounts/AccountManager$BaseFutureTask;->mHandler:Landroid/os/Handler;
 

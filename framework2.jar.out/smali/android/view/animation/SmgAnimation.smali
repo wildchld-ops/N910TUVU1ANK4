@@ -67,8 +67,6 @@
 
 .method public static compareTo(Landroid/view/animation/SmgAnimation;Landroid/view/animation/SmgAnimation;)Z
     .locals 3
-    .param p0    # Landroid/view/animation/SmgAnimation;
-    .param p1    # Landroid/view/animation/SmgAnimation;
 
     const/4 v0, 0x0
 

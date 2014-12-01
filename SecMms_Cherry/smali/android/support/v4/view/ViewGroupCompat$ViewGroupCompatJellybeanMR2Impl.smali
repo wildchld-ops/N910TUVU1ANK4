@@ -27,7 +27,6 @@
 # virtual methods
 .method public getLayoutMode(Landroid/view/ViewGroup;)I
     .locals 1
-    .param p1    # Landroid/view/ViewGroup;
 
     invoke-static {p1}, Landroid/support/v4/view/ViewGroupCompatJellybeanMR2;->getLayoutMode(Landroid/view/ViewGroup;)I
 
@@ -38,8 +37,6 @@
 
 .method public setLayoutMode(Landroid/view/ViewGroup;I)V
     .locals 0
-    .param p1    # Landroid/view/ViewGroup;
-    .param p2    # I
 
     invoke-static {p1, p2}, Landroid/support/v4/view/ViewGroupCompatJellybeanMR2;->setLayoutMode(Landroid/view/ViewGroup;I)V
 

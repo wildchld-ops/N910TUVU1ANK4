@@ -36,8 +36,6 @@
 # virtual methods
 .method public onPictureTaken([BLcom/sec/android/seccamera/SecCamera;)V
     .locals 16
-    .param p1    # [B
-    .param p2    # Lcom/sec/android/seccamera/SecCamera;
 
     const-string v14, "QuickShot"
 

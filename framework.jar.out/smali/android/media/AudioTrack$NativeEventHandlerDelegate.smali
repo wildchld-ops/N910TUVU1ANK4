@@ -23,9 +23,6 @@
 # direct methods
 .method constructor <init>(Landroid/media/AudioTrack;Landroid/media/AudioTrack;Landroid/media/AudioTrack$OnPlaybackPositionUpdateListener;Landroid/os/Handler;)V
     .locals 6
-    .param p2    # Landroid/media/AudioTrack;
-    .param p3    # Landroid/media/AudioTrack$OnPlaybackPositionUpdateListener;
-    .param p4    # Landroid/os/Handler;
 
     iput-object p1, p0, Landroid/media/AudioTrack$NativeEventHandlerDelegate;->this$0:Landroid/media/AudioTrack;
 

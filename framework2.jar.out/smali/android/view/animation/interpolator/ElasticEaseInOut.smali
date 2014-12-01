@@ -23,8 +23,6 @@
 
 .method public constructor <init>(FF)V
     .locals 0
-    .param p1    # F
-    .param p2    # F
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,8 +35,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v2, 0x0
 
@@ -73,9 +69,6 @@
 
 .method private inout(FFF)F
     .locals 11
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
 
     const-wide/high16 v9, 0x4000000000000000L
 
@@ -242,7 +235,6 @@
 # virtual methods
 .method public getInterpolation(F)F
     .locals 2
-    .param p1    # F
 
     iget v0, p0, Landroid/view/animation/interpolator/ElasticEaseInOut;->amplitude:F
 

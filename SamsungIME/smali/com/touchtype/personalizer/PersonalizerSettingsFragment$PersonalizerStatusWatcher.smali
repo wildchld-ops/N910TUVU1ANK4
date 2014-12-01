@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Lcom/touchtype/personalizer/PersonalizerSettingsFragment;Lcom/touchtype/personalizer/PersonalizerSettingsFragment$1;)V
     .locals 0
-    .param p1    # Lcom/touchtype/personalizer/PersonalizerSettingsFragment;
-    .param p2    # Lcom/touchtype/personalizer/PersonalizerSettingsFragment$1;
 
     invoke-direct {p0, p1}, Lcom/touchtype/personalizer/PersonalizerSettingsFragment$PersonalizerStatusWatcher;-><init>(Lcom/touchtype/personalizer/PersonalizerSettingsFragment;)V
 

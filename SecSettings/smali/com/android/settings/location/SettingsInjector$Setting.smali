@@ -27,8 +27,6 @@
 # direct methods
 .method private constructor <init>(Lcom/android/settings/location/SettingsInjector;Lcom/android/settings/location/InjectedSetting;Landroid/preference/Preference;)V
     .locals 0
-    .param p2    # Lcom/android/settings/location/InjectedSetting;
-    .param p3    # Landroid/preference/Preference;
 
     iput-object p1, p0, Lcom/android/settings/location/SettingsInjector$Setting;->this$0:Lcom/android/settings/location/SettingsInjector;
 
@@ -43,10 +41,6 @@
 
 .method synthetic constructor <init>(Lcom/android/settings/location/SettingsInjector;Lcom/android/settings/location/InjectedSetting;Landroid/preference/Preference;Lcom/android/settings/location/SettingsInjector$1;)V
     .locals 0
-    .param p1    # Lcom/android/settings/location/SettingsInjector;
-    .param p2    # Lcom/android/settings/location/InjectedSetting;
-    .param p3    # Landroid/preference/Preference;
-    .param p4    # Lcom/android/settings/location/SettingsInjector$1;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/settings/location/SettingsInjector$Setting;-><init>(Lcom/android/settings/location/SettingsInjector;Lcom/android/settings/location/InjectedSetting;Landroid/preference/Preference;)V
 
@@ -57,7 +51,6 @@
 # virtual methods
 .method public equals(Ljava/lang/Object;)Z
     .locals 2
-    .param p1    # Ljava/lang/Object;
 
     if-eq p0, p1, :cond_0
 

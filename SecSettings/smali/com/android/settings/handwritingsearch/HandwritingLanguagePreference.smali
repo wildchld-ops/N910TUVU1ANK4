@@ -99,7 +99,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/handwritingsearch/HandwritingLanguagePreference;)V
     .locals 0
-    .param p0    # Lcom/android/settings/handwritingsearch/HandwritingLanguagePreference;
 
     invoke-direct {p0}, Lcom/android/settings/handwritingsearch/HandwritingLanguagePreference;->updateList()V
 
@@ -108,7 +107,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/handwritingsearch/HandwritingLanguagePreference;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/settings/handwritingsearch/HandwritingLanguagePreference;
 
     iget-object v0, p0, Lcom/android/settings/handwritingsearch/HandwritingLanguagePreference;->mContext:Landroid/content/Context;
 
@@ -117,7 +115,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/handwritingsearch/HandwritingLanguagePreference;)Landroid/widget/ListView;
     .locals 1
-    .param p0    # Lcom/android/settings/handwritingsearch/HandwritingLanguagePreference;
 
     iget-object v0, p0, Lcom/android/settings/handwritingsearch/HandwritingLanguagePreference;->mListView:Landroid/widget/ListView;
 
@@ -126,7 +123,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/handwritingsearch/HandwritingLanguagePreference;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/settings/handwritingsearch/HandwritingLanguagePreference;
 
     invoke-direct {p0}, Lcom/android/settings/handwritingsearch/HandwritingLanguagePreference;->getDescriptionString()Ljava/lang/String;
 
@@ -137,7 +133,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/handwritingsearch/HandwritingLanguagePreference;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/android/settings/handwritingsearch/HandwritingLanguagePreference;
 
     iget-object v0, p0, Lcom/android/settings/handwritingsearch/HandwritingLanguagePreference;->mTextView:Landroid/widget/TextView;
 
@@ -240,9 +235,6 @@
 
 .method private static getDisplayName(Ljava/util/Locale;[Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p0    # Ljava/util/Locale;
-    .param p1    # [Ljava/lang/String;
-    .param p2    # [Ljava/lang/String;
 
     invoke-virtual {p0}, Ljava/util/Locale;->toString()Ljava/lang/String;
 
@@ -283,7 +275,6 @@
 
 .method public static getLocaleInfoAdapter(Landroid/content/Context;)[Lcom/android/settings/handwritingsearch/HandwritingLanguagePreference$LanguageInfo;
     .locals 27
-    .param p0    # Landroid/content/Context;
 
     new-instance v24, Lcom/android/settings/handwritingsearch/RMHelper;
 
@@ -840,8 +831,6 @@
 
 .method public static getLocaleInfoAdapter(Landroid/content/Context;[Ljava/lang/String;)[Lcom/android/settings/handwritingsearch/HandwritingLanguagePreference$LanguageInfo;
     .locals 28
-    .param p0    # Landroid/content/Context;
-    .param p1    # [Ljava/lang/String;
 
     move-object/from16 v0, p1
 
@@ -1471,7 +1460,6 @@
 
 .method private setListValue(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -1521,7 +1509,6 @@
 
 .method private static toTitleCase(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
@@ -1756,7 +1743,6 @@
 # virtual methods
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "HandwritingLanguagePreference"
 
@@ -1799,9 +1785,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 3
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const v1, 0x7f040111
 

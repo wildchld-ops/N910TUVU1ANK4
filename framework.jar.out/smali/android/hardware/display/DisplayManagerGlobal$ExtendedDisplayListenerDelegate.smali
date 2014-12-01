@@ -21,8 +21,6 @@
 # direct methods
 .method public constructor <init>(Landroid/hardware/display/ExtendedDisplayListener;Landroid/os/Handler;)V
     .locals 3
-    .param p1    # Landroid/hardware/display/ExtendedDisplayListener;
-    .param p2    # Landroid/os/Handler;
 
     if-eqz p2, :cond_0
 
@@ -63,7 +61,6 @@
 
 .method public handleMessage(Landroid/os/Message;)V
     .locals 3
-    .param p1    # Landroid/os/Message;
 
     iget v0, p1, Landroid/os/Message;->what:I
 
@@ -181,8 +178,6 @@
 
 .method public sendDisplayEvent(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     const/4 v1, 0x0
 

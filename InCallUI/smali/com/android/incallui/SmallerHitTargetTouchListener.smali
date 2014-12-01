@@ -23,8 +23,6 @@
 # virtual methods
 .method public onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 15
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     invoke-virtual/range {p2 .. p2}, Landroid/view/MotionEvent;->getAction()I
 

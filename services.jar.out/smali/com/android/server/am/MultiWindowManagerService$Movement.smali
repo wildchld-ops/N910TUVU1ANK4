@@ -25,8 +25,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/am/MultiWindowManagerService;FF)V
     .locals 1
-    .param p2    # F
-    .param p3    # F
 
     const/4 v0, 0x0
 

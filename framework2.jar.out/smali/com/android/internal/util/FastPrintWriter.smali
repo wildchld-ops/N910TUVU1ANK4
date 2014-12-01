@@ -46,7 +46,6 @@
 
 .method public constructor <init>(Landroid/util/Printer;)V
     .locals 1
-    .param p1    # Landroid/util/Printer;
 
     const/16 v0, 0x200
 
@@ -57,8 +56,6 @@
 
 .method public constructor <init>(Landroid/util/Printer;I)V
     .locals 3
-    .param p1    # Landroid/util/Printer;
-    .param p2    # I
 
     const/4 v2, 0x1
 
@@ -108,7 +105,6 @@
 
 .method public constructor <init>(Ljava/io/OutputStream;)V
     .locals 2
-    .param p1    # Ljava/io/OutputStream;
 
     const/4 v0, 0x0
 
@@ -121,8 +117,6 @@
 
 .method public constructor <init>(Ljava/io/OutputStream;Z)V
     .locals 1
-    .param p1    # Ljava/io/OutputStream;
-    .param p2    # Z
 
     const/16 v0, 0x2000
 
@@ -133,9 +127,6 @@
 
 .method public constructor <init>(Ljava/io/OutputStream;ZI)V
     .locals 2
-    .param p1    # Ljava/io/OutputStream;
-    .param p2    # Z
-    .param p3    # I
 
     const/4 v1, 0x0
 
@@ -189,7 +180,6 @@
 
 .method public constructor <init>(Ljava/io/Writer;)V
     .locals 2
-    .param p1    # Ljava/io/Writer;
 
     const/4 v0, 0x0
 
@@ -202,8 +192,6 @@
 
 .method public constructor <init>(Ljava/io/Writer;Z)V
     .locals 1
-    .param p1    # Ljava/io/Writer;
-    .param p2    # Z
 
     const/16 v0, 0x2000
 
@@ -214,9 +202,6 @@
 
 .method public constructor <init>(Ljava/io/Writer;ZI)V
     .locals 2
-    .param p1    # Ljava/io/Writer;
-    .param p2    # Z
-    .param p3    # I
 
     const/4 v1, 0x0
 
@@ -264,7 +249,6 @@
 
 .method private appendLocked(C)V
     .locals 2
-    .param p1    # C
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -297,9 +281,6 @@
 
 .method private appendLocked(Ljava/lang/String;II)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -361,9 +342,6 @@
 
 .method private appendLocked([CII)V
     .locals 5
-    .param p1    # [C
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -681,7 +659,6 @@
 
 .method private final initEncoder(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/UnsupportedEncodingException;
@@ -729,9 +706,6 @@
 # virtual methods
 .method public append(Ljava/lang/CharSequence;II)Ljava/io/PrintWriter;
     .locals 3
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
 
     if-nez p1, :cond_0
 
@@ -759,9 +733,6 @@
 
 .method public bridge synthetic append(Ljava/lang/CharSequence;II)Ljava/io/Writer;
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -777,9 +748,6 @@
 
 .method public bridge synthetic append(Ljava/lang/CharSequence;II)Ljava/lang/Appendable;
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -973,7 +941,6 @@
 
 .method public print(C)V
     .locals 2
-    .param p1    # C
 
     iget-object v1, p0, Ljava/io/Writer;->lock:Ljava/lang/Object;
 
@@ -1008,7 +975,6 @@
 
 .method public print(I)V
     .locals 1
-    .param p1    # I
 
     if-nez p1, :cond_0
 
@@ -1027,7 +993,6 @@
 
 .method public print(J)V
     .locals 2
-    .param p1    # J
 
     const-wide/16 v0, 0x0
 
@@ -1050,7 +1015,6 @@
 
 .method public print(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -1104,7 +1068,6 @@
 
 .method public print([C)V
     .locals 3
-    .param p1    # [C
 
     iget-object v1, p0, Ljava/io/Writer;->lock:Ljava/lang/Object;
 
@@ -1196,7 +1159,6 @@
 
 .method public println(C)V
     .locals 0
-    .param p1    # C
 
     invoke-virtual {p0, p1}, Lcom/android/internal/util/FastPrintWriter;->print(C)V
 
@@ -1207,7 +1169,6 @@
 
 .method public println(I)V
     .locals 1
-    .param p1    # I
 
     if-nez p1, :cond_0
 
@@ -1226,7 +1187,6 @@
 
 .method public println(J)V
     .locals 2
-    .param p1    # J
 
     const-wide/16 v0, 0x0
 
@@ -1249,7 +1209,6 @@
 
 .method public println([C)V
     .locals 0
-    .param p1    # [C
 
     invoke-virtual {p0, p1}, Lcom/android/internal/util/FastPrintWriter;->print([C)V
 
@@ -1286,7 +1245,6 @@
 
 .method public write(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Ljava/io/Writer;->lock:Ljava/lang/Object;
 
@@ -1323,7 +1281,6 @@
 
 .method public write(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Ljava/io/Writer;->lock:Ljava/lang/Object;
 
@@ -1364,9 +1321,6 @@
 
 .method public write(Ljava/lang/String;II)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     iget-object v1, p0, Ljava/io/Writer;->lock:Ljava/lang/Object;
 
@@ -1401,9 +1355,6 @@
 
 .method public write([CII)V
     .locals 2
-    .param p1    # [C
-    .param p2    # I
-    .param p3    # I
 
     iget-object v1, p0, Ljava/io/Writer;->lock:Ljava/lang/Object;
 

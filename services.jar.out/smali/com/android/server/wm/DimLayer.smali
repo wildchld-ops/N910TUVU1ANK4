@@ -42,8 +42,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/wm/WindowManagerService;Lcom/android/server/wm/TaskStack;)V
     .locals 9
-    .param p1    # Lcom/android/server/wm/WindowManagerService;
-    .param p2    # Lcom/android/server/wm/TaskStack;
 
     const/4 v0, -0x1
 
@@ -154,7 +152,6 @@
 
 .method private durationEndsEarlier(J)Z
     .locals 6
-    .param p1    # J
 
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 
@@ -219,7 +216,6 @@
 
 .method private setAlpha(F)V
     .locals 3
-    .param p1    # F
 
     const/4 v2, 0x0
 
@@ -359,7 +355,6 @@
 
 .method hide(J)V
     .locals 2
-    .param p1    # J
 
     const/4 v1, 0x0
 
@@ -434,8 +429,6 @@
 
 .method public printTo(Ljava/lang/String;Ljava/io/PrintWriter;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/io/PrintWriter;
 
     invoke-virtual {p2, p1}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
@@ -544,7 +537,6 @@
 
 .method setAnimateTargetWindow(Lcom/android/server/wm/WindowState;)V
     .locals 0
-    .param p1    # Lcom/android/server/wm/WindowState;
 
     iput-object p1, p0, Lcom/android/server/wm/DimLayer;->mTargetWin:Lcom/android/server/wm/WindowState;
 
@@ -553,7 +545,6 @@
 
 .method setBounds(Landroid/graphics/Rect;)V
     .locals 10
-    .param p1    # Landroid/graphics/Rect;
 
     const/high16 v9, 0x3f000000
 
@@ -730,8 +721,6 @@
 
 .method setBoundsOffsetTo(II)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     iget-object v1, p0, Lcom/android/server/wm/DimLayer;->mBounds:Landroid/graphics/Rect;
 
@@ -812,7 +801,6 @@
 
 .method setLayer(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Lcom/android/server/wm/DimLayer;->mLayer:I
 
@@ -851,9 +839,6 @@
 
 .method show(IFJ)V
     .locals 19
-    .param p1    # I
-    .param p2    # F
-    .param p3    # J
 
     move-object/from16 v0, p0
 

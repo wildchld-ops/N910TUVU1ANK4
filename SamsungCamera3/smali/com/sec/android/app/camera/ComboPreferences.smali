@@ -63,7 +63,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -117,7 +116,6 @@
 
 .method static synthetic access$000(Lcom/sec/android/app/camera/ComboPreferences;)Landroid/content/SharedPreferences;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/ComboPreferences;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/ComboPreferences;->mPrefGlobal:Landroid/content/SharedPreferences;
 
@@ -126,7 +124,6 @@
 
 .method static synthetic access$100(Lcom/sec/android/app/camera/ComboPreferences;)Landroid/content/SharedPreferences;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/ComboPreferences;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/ComboPreferences;->mPrefLocal:Landroid/content/SharedPreferences;
 
@@ -135,7 +132,6 @@
 
 .method public static get(Landroid/content/Context;)Lcom/sec/android/app/camera/ComboPreferences;
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     sget-object v1, Lcom/sec/android/app/camera/ComboPreferences;->sMap:Ljava/util/WeakHashMap;
 
@@ -168,7 +164,6 @@
 # virtual methods
 .method public contains(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -229,8 +224,6 @@
 
 .method public getBoolean(Ljava/lang/String;Z)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     invoke-static {p1}, Lcom/sec/android/app/camera/CameraSettings;->isGlobal(Ljava/lang/String;)Z
 
@@ -268,8 +261,6 @@
 
 .method public getFloat(Ljava/lang/String;F)F
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # F
 
     invoke-static {p1}, Lcom/sec/android/app/camera/CameraSettings;->isGlobal(Ljava/lang/String;)Z
 
@@ -315,8 +306,6 @@
 
 .method public getInt(Ljava/lang/String;I)I
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-static {p1}, Lcom/sec/android/app/camera/CameraSettings;->isGlobal(Ljava/lang/String;)Z
 
@@ -362,8 +351,6 @@
 
 .method public getLong(Ljava/lang/String;J)J
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
 
     invoke-static {p1}, Lcom/sec/android/app/camera/CameraSettings;->isGlobal(Ljava/lang/String;)Z
 
@@ -401,8 +388,6 @@
 
 .method public getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-static {p1}, Lcom/sec/android/app/camera/CameraSettings;->isGlobal(Ljava/lang/String;)Z
 
@@ -440,7 +425,6 @@
 
 .method public getStringSet(Ljava/lang/String;Ljava/util/Set;)Ljava/util/Set;
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -465,8 +449,6 @@
 
 .method public onSharedPreferenceChanged(Landroid/content/SharedPreferences;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Landroid/content/SharedPreferences;
-    .param p2    # Ljava/lang/String;
 
     iget-object v2, p0, Lcom/sec/android/app/camera/ComboPreferences;->mListeners:Ljava/util/concurrent/CopyOnWriteArrayList;
 
@@ -497,7 +479,6 @@
 
 .method public registerOnSharedPreferenceChangeListener(Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;)V
     .locals 1
-    .param p1    # Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/ComboPreferences;->mListeners:Ljava/util/concurrent/CopyOnWriteArrayList;
 
@@ -508,8 +489,6 @@
 
 .method public setLocalId(Landroid/content/Context;I)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -585,7 +564,6 @@
 
 .method public unregisterOnSharedPreferenceChangeListener(Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;)V
     .locals 1
-    .param p1    # Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/ComboPreferences;->mListeners:Ljava/util/concurrent/CopyOnWriteArrayList;
 

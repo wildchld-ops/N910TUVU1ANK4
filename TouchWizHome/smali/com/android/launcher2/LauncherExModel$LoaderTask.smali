@@ -51,10 +51,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/launcher2/LauncherExModel;ZZZZ)V
     .locals 3
-    .param p2    # Z
-    .param p3    # Z
-    .param p4    # Z
-    .param p5    # Z
 
     iput-object p1, p0, Lcom/android/launcher2/LauncherExModel$LoaderTask;->this$0:Lcom/android/launcher2/LauncherExModel;
 
@@ -111,7 +107,6 @@
 
 .method static synthetic access$100(Lcom/android/launcher2/LauncherExModel$LoaderTask;)V
     .locals 0
-    .param p0    # Lcom/android/launcher2/LauncherExModel$LoaderTask;
 
     invoke-direct {p0}, Lcom/android/launcher2/LauncherExModel$LoaderTask;->runBindFestivalPage()V
 
@@ -120,7 +115,6 @@
 
 .method static synthetic access$1000(Lcom/android/launcher2/LauncherExModel$LoaderTask;)Z
     .locals 1
-    .param p0    # Lcom/android/launcher2/LauncherExModel$LoaderTask;
 
     iget-boolean v0, p0, Lcom/android/launcher2/LauncherExModel$LoaderTask;->mIsFestival:Z
 
@@ -129,7 +123,6 @@
 
 .method static synthetic access$200(Lcom/android/launcher2/LauncherExModel$LoaderTask;)V
     .locals 0
-    .param p0    # Lcom/android/launcher2/LauncherExModel$LoaderTask;
 
     invoke-direct {p0}, Lcom/android/launcher2/LauncherExModel$LoaderTask;->runBindSecretPage()V
 
@@ -138,8 +131,6 @@
 
 .method static synthetic access$302(Lcom/android/launcher2/LauncherExModel$LoaderTask;Z)Z
     .locals 0
-    .param p0    # Lcom/android/launcher2/LauncherExModel$LoaderTask;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/launcher2/LauncherExModel$LoaderTask;->mStep1Finished:Z
 
@@ -148,7 +139,6 @@
 
 .method static synthetic access$600(Lcom/android/launcher2/LauncherExModel$LoaderTask;)Lcom/android/launcher2/LauncherModel$Callbacks;
     .locals 1
-    .param p0    # Lcom/android/launcher2/LauncherExModel$LoaderTask;
 
     invoke-direct {p0}, Lcom/android/launcher2/LauncherExModel$LoaderTask;->getLoaderTaskCallbacks()Lcom/android/launcher2/LauncherModel$Callbacks;
 
@@ -159,7 +149,6 @@
 
 .method static synthetic access$800(Lcom/android/launcher2/LauncherExModel$LoaderTask;)Z
     .locals 1
-    .param p0    # Lcom/android/launcher2/LauncherExModel$LoaderTask;
 
     iget-boolean v0, p0, Lcom/android/launcher2/LauncherExModel$LoaderTask;->mStopped:Z
 
@@ -168,7 +157,6 @@
 
 .method static synthetic access$900(Lcom/android/launcher2/LauncherExModel$LoaderTask;)Z
     .locals 1
-    .param p0    # Lcom/android/launcher2/LauncherExModel$LoaderTask;
 
     iget-boolean v0, p0, Lcom/android/launcher2/LauncherExModel$LoaderTask;->mIsSecret:Z
 
@@ -2553,9 +2541,6 @@
 
 .method private checkItemPlacement([[[Lcom/android/launcher2/HomeItem;[[[Lcom/android/launcher2/HomeItem;Lcom/android/launcher2/HomeItem;)Z
     .locals 11
-    .param p1    # [[[Lcom/android/launcher2/HomeItem;
-    .param p2    # [[[Lcom/android/launcher2/HomeItem;
-    .param p3    # Lcom/android/launcher2/HomeItem;
 
     const/4 v6, 0x1
 

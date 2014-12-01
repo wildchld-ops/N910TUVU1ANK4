@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(I)V
     .locals 0
-    .param p1    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -32,7 +31,6 @@
 
 .method static synthetic access$900(Landroid/text/HtmlToSpannedConverter$Header;)I
     .locals 1
-    .param p0    # Landroid/text/HtmlToSpannedConverter$Header;
 
     iget v0, p0, Landroid/text/HtmlToSpannedConverter$Header;->mLevel:I
 

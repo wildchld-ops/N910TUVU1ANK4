@@ -95,24 +95,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/am/BroadcastQueue;Landroid/content/Intent;Lcom/android/server/am/ProcessRecord;Ljava/lang/String;IILjava/lang/String;Ljava/lang/String;ILjava/util/List;Landroid/content/IIntentReceiver;ILjava/lang/String;Landroid/os/Bundle;ZZZI)V
     .locals 2
-    .param p1    # Lcom/android/server/am/BroadcastQueue;
-    .param p2    # Landroid/content/Intent;
-    .param p3    # Lcom/android/server/am/ProcessRecord;
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
-    .param p6    # I
-    .param p7    # Ljava/lang/String;
-    .param p8    # Ljava/lang/String;
-    .param p9    # I
-    .param p10    # Ljava/util/List;
-    .param p11    # Landroid/content/IIntentReceiver;
-    .param p12    # I
-    .param p13    # Ljava/lang/String;
-    .param p14    # Landroid/os/Bundle;
-    .param p15    # Z
-    .param p16    # Z
-    .param p17    # Z
-    .param p18    # I
 
     invoke-direct {p0}, Landroid/os/Binder;-><init>()V
 
@@ -189,8 +171,6 @@
 # virtual methods
 .method dump(Ljava/io/PrintWriter;Ljava/lang/String;)V
     .locals 20
-    .param p1    # Ljava/io/PrintWriter;
-    .param p2    # Ljava/lang/String;
 
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 

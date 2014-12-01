@@ -14,7 +14,6 @@
 
 .method public static escapeHtml(Ljava/lang/CharSequence;)Ljava/lang/String;
     .locals 1
-    .param p0    # Ljava/lang/CharSequence;
 
     invoke-static {p0}, Landroid/text/Html;->escapeHtml(Ljava/lang/CharSequence;)Ljava/lang/String;
 

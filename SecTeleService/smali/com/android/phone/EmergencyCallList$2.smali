@@ -66,7 +66,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {v0, v1}, Lcom/android/phone/EmergencyCallList;->startActivity(Landroid/content/Intent;)V
 
     return-void
 .end method

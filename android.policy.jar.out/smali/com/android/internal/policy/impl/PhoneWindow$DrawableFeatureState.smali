@@ -37,7 +37,6 @@
 # direct methods
 .method constructor <init>(I)V
     .locals 1
-    .param p1    # I
 
     const/16 v0, 0xff
 

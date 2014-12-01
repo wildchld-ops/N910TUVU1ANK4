@@ -16,9 +16,6 @@
 # direct methods
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;Lcom/sec/android/app/camera/glwidget/TwGLModeMenuDragDropBox;Lcom/sec/android/glview/TwGLView;)V
     .locals 1
-    .param p1    # Lcom/sec/android/app/camera/Camera;
-    .param p2    # Lcom/sec/android/app/camera/glwidget/TwGLModeMenuDragDropBox;
-    .param p3    # Lcom/sec/android/glview/TwGLView;
 
     invoke-virtual {p1}, Lcom/sec/android/app/camera/Camera;->getGLContext()Lcom/sec/android/glview/TwGLContext;
 
@@ -48,8 +45,6 @@
 
 .method static synthetic access$002(Lcom/sec/android/app/camera/glwidget/TwGLModeMenuDragDropBox;Z)Z
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLModeMenuDragDropBox;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLModeMenuDragDropBox;->mRelocating:Z
 
@@ -58,8 +53,6 @@
 
 .method private relocateItem(Lcom/sec/android/app/camera/glwidget/TwGLModeMenuDragDropBox;Lcom/sec/android/glview/TwGLView;)V
     .locals 8
-    .param p1    # Lcom/sec/android/app/camera/glwidget/TwGLModeMenuDragDropBox;
-    .param p2    # Lcom/sec/android/glview/TwGLView;
 
     const/4 v7, 0x1
 
@@ -221,7 +214,6 @@
 # virtual methods
 .method public addToFirst(Lcom/sec/android/glview/TwGLView;)V
     .locals 1
-    .param p1    # Lcom/sec/android/glview/TwGLView;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLModeMenuDragDropBox;->mPrevious:Lcom/sec/android/app/camera/glwidget/TwGLModeMenuDragDropBox;
 
@@ -244,7 +236,6 @@
 
 .method public addToLast(Lcom/sec/android/glview/TwGLView;)V
     .locals 1
-    .param p1    # Lcom/sec/android/glview/TwGLView;
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/glwidget/TwGLDragDropBox;->isEmpty()Z
 
@@ -278,7 +269,6 @@
 
 .method public addView(Lcom/sec/android/glview/TwGLView;)V
     .locals 3
-    .param p1    # Lcom/sec/android/glview/TwGLView;
 
     const/4 v2, 0x0
 
@@ -475,8 +465,6 @@
 
 .method protected onDrop(Lcom/sec/android/glview/TwGLView;Lcom/sec/android/app/camera/glwidget/TwGLDragDropBox;)V
     .locals 2
-    .param p1    # Lcom/sec/android/glview/TwGLView;
-    .param p2    # Lcom/sec/android/app/camera/glwidget/TwGLDragDropBox;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLModeMenuDragDropBox;->mPrevious:Lcom/sec/android/app/camera/glwidget/TwGLModeMenuDragDropBox;
 
@@ -534,7 +522,6 @@
 
 .method public onTouchOver(Lcom/sec/android/glview/TwGLView;)V
     .locals 1
-    .param p1    # Lcom/sec/android/glview/TwGLView;
 
     if-nez p1, :cond_1
 
@@ -595,7 +582,6 @@
 
 .method public setNext(Lcom/sec/android/app/camera/glwidget/TwGLModeMenuDragDropBox;)V
     .locals 0
-    .param p1    # Lcom/sec/android/app/camera/glwidget/TwGLModeMenuDragDropBox;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLModeMenuDragDropBox;->mNext:Lcom/sec/android/app/camera/glwidget/TwGLModeMenuDragDropBox;
 
@@ -604,7 +590,6 @@
 
 .method public setPrevious(Lcom/sec/android/app/camera/glwidget/TwGLModeMenuDragDropBox;)V
     .locals 0
-    .param p1    # Lcom/sec/android/app/camera/glwidget/TwGLModeMenuDragDropBox;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLModeMenuDragDropBox;->mPrevious:Lcom/sec/android/app/camera/glwidget/TwGLModeMenuDragDropBox;
 

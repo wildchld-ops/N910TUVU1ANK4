@@ -14,10 +14,6 @@
 
 .method private getColorTransferValue(IIDD)I
     .locals 12
-    .param p1    # I
-    .param p2    # I
-    .param p3    # D
-    .param p5    # D
 
     const/4 v4, 0x0
 
@@ -98,10 +94,6 @@
 
 .method private getMaxMinColorTransferValue(IIDD)[I
     .locals 7
-    .param p1    # I
-    .param p2    # I
-    .param p3    # D
-    .param p5    # D
 
     const/4 v2, 0x1
 
@@ -182,9 +174,6 @@
 
 .method private getMaxMinColorTrnasferValueGreen(IDD)[I
     .locals 6
-    .param p1    # I
-    .param p2    # D
-    .param p4    # D
 
     const/4 v5, 0x1
 
@@ -418,9 +407,6 @@
 
 .method private getMaxMinColorTrnasferValueMagenta(IDD)[I
     .locals 6
-    .param p1    # I
-    .param p2    # D
-    .param p4    # D
 
     const/4 v5, 0x1
 
@@ -654,9 +640,6 @@
 
 .method private getMaxMinColorTrnasferValueRed(IDD)[I
     .locals 6
-    .param p1    # I
-    .param p2    # D
-    .param p4    # D
 
     const/4 v5, 0x1
 
@@ -890,7 +873,6 @@
 
 .method private roundHalfUp(D)I
     .locals 3
-    .param p1    # D
 
     const/4 v0, 0x0
 
@@ -911,11 +893,6 @@
 # virtual methods
 .method public getColorTransferValue(IIIDD)I
     .locals 8
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # D
-    .param p6    # D
 
     const/4 v3, 0x5
 

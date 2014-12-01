@@ -1114,11 +1114,6 @@
 
 .method public static glVertexAttribIPointer(IIIILjava/nio/Buffer;)V
     .locals 6
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/nio/Buffer;
 
     invoke-virtual {p4}, Ljava/nio/Buffer;->remaining()I
 

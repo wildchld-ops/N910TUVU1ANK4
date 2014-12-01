@@ -277,7 +277,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v0}, Lcom/android/phone/PhoneGlobals;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -392,7 +392,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v0}, Lcom/android/phone/PhoneGlobals;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v9
 
@@ -518,7 +518,7 @@
 
     iget-object v0, p0, Lcom/android/phone/CallTime;->mTimerCallback:Lcom/android/phone/CallTime$PeriodicTimerCallback;
 
-    invoke-virtual {p0, v0}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/CallTime;->removeCallbacks(Ljava/lang/Runnable;)V
 
     const/4 v0, 0x0
 
@@ -600,7 +600,7 @@
     :cond_0
     iget-object v6, p0, Lcom/android/phone/CallTime;->mTimerCallback:Lcom/android/phone/CallTime$PeriodicTimerCallback;
 
-    invoke-virtual {p0, v6, v0, v1}, Landroid/os/Handler;->postAtTime(Ljava/lang/Runnable;J)Z
+    invoke-virtual {p0, v6, v0, v1}, Lcom/android/phone/CallTime;->postAtTime(Ljava/lang/Runnable;J)Z
 
     iput-wide v0, p0, Lcom/android/phone/CallTime;->mLastReportedTime:J
 
@@ -703,7 +703,7 @@
 
     const-string v7, "phoneTrace"
 
-    invoke-virtual {v4, v7, v6}, Landroid/content/ContextWrapper;->getDir(Ljava/lang/String;I)Ljava/io/File;
+    invoke-virtual {v4, v7, v6}, Lcom/android/phone/PhoneGlobals;->getDir(Ljava/lang/String;I)Ljava/io/File;
 
     move-result-object v2
 

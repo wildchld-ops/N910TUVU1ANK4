@@ -31,11 +31,11 @@
 
     const v0, 0x7f060033
 
-    invoke-virtual {p0, v0}, Landroid/preference/PreferenceFragment;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/callsettings/LGTPhotoRingSetting;->addPreferencesFromResource(I)V
 
     const-string v0, "lgu_photoring_block_all_pref"
 
-    invoke-virtual {p0, v0}, Landroid/preference/PreferenceFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/phone/callsettings/LGTPhotoRingSetting;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -45,7 +45,7 @@
 
     const-string v0, "photoring_block_list"
 
-    invoke-virtual {p0, v0}, Landroid/preference/PreferenceFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/phone/callsettings/LGTPhotoRingSetting;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -55,7 +55,7 @@
 
     iget-object v0, p0, Lcom/android/phone/callsettings/LGTPhotoRingSetting;->mPhotoringRejectAll:Landroid/preference/SwitchPreference;
 
-    invoke-virtual {v0, p0}, Landroid/preference/Preference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
+    invoke-virtual {v0, p0}, Landroid/preference/SwitchPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     return-void
 .end method
@@ -83,7 +83,7 @@
 
     if-ne p1, v2, :cond_0
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/LGTPhotoRingSetting;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v5
 
@@ -101,7 +101,7 @@
     if-eqz v1, :cond_2
 
     :goto_1
-    invoke-virtual {v2, v4}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v2, v4}, Landroid/preference/PreferenceScreen;->setEnabled(Z)V
 
     :cond_0
     return v3
@@ -128,7 +128,7 @@
 
     invoke-super {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onResume()V
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/LGTPhotoRingSetting;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -145,16 +145,16 @@
     move v0, v1
 
     :goto_0
-    invoke-virtual {v4, v0}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+    invoke-virtual {v4, v0}, Landroid/preference/SwitchPreference;->setChecked(Z)V
 
     iget-object v0, p0, Lcom/android/phone/callsettings/LGTPhotoRingSetting;->mPhotoringblockList:Landroid/preference/PreferenceScreen;
 
     if-lez v9, :cond_2
 
     :goto_1
-    invoke-virtual {v0, v3}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v0, v3}, Landroid/preference/PreferenceScreen;->setEnabled(Z)V
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/LGTPhotoRingSetting;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -171,7 +171,7 @@
     move-result-object v6
 
     :try_start_0
-    invoke-virtual {p0}, Landroid/app/Fragment;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/LGTPhotoRingSetting;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -210,7 +210,7 @@
     :goto_2
     iget-object v0, p0, Lcom/android/phone/callsettings/LGTPhotoRingSetting;->mPhotoringblockList:Landroid/preference/PreferenceScreen;
 
-    invoke-virtual {v0, v8}, Landroid/preference/Preference;->setTitle(Ljava/lang/CharSequence;)V
+    invoke-virtual {v0, v8}, Landroid/preference/PreferenceScreen;->setTitle(Ljava/lang/CharSequence;)V
     :try_end_0
     .catch Landroid/content/res/Resources$NotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 

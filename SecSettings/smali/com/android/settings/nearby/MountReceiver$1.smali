@@ -23,7 +23,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/settings/nearby/MountReceiver;Landroid/os/Looper;Landroid/content/Context;)V
     .locals 0
-    .param p2    # Landroid/os/Looper;
 
     iput-object p1, p0, Lcom/android/settings/nearby/MountReceiver$1;->this$0:Lcom/android/settings/nearby/MountReceiver;
 
@@ -38,7 +37,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 10
-    .param p1    # Landroid/os/Message;
 
     const/4 v9, 0x1
 

@@ -196,7 +196,6 @@
 
 .method private ToggleAllCheck(Z)V
     .locals 3
-    .param p1    # Z
 
     sget-object v2, Lcom/android/settings/myplace/MyPlaceListDelelete;->mlistView:Landroid/widget/ListView;
 
@@ -270,7 +269,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/myplace/MyPlaceListDelelete;)Landroid/widget/ListPopupWindow;
     .locals 1
-    .param p0    # Lcom/android/settings/myplace/MyPlaceListDelelete;
 
     iget-object v0, p0, Lcom/android/settings/myplace/MyPlaceListDelelete;->listpopup:Landroid/widget/ListPopupWindow;
 
@@ -279,8 +277,6 @@
 
 .method static synthetic access$202(Lcom/android/settings/myplace/MyPlaceListDelelete;Landroid/widget/ListPopupWindow;)Landroid/widget/ListPopupWindow;
     .locals 0
-    .param p0    # Lcom/android/settings/myplace/MyPlaceListDelelete;
-    .param p1    # Landroid/widget/ListPopupWindow;
 
     iput-object p1, p0, Lcom/android/settings/myplace/MyPlaceListDelelete;->listpopup:Landroid/widget/ListPopupWindow;
 
@@ -289,7 +285,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/myplace/MyPlaceListDelelete;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/settings/myplace/MyPlaceListDelelete;
 
     iget-object v0, p0, Lcom/android/settings/myplace/MyPlaceListDelelete;->select:Ljava/util/ArrayList;
 
@@ -298,8 +293,6 @@
 
 .method static synthetic access$302(Lcom/android/settings/myplace/MyPlaceListDelelete;Ljava/util/ArrayList;)Ljava/util/ArrayList;
     .locals 0
-    .param p0    # Lcom/android/settings/myplace/MyPlaceListDelelete;
-    .param p1    # Ljava/util/ArrayList;
 
     iput-object p1, p0, Lcom/android/settings/myplace/MyPlaceListDelelete;->select:Ljava/util/ArrayList;
 
@@ -308,7 +301,6 @@
 
 .method static synthetic access$402(Landroid/view/MenuItem;)Landroid/view/MenuItem;
     .locals 0
-    .param p0    # Landroid/view/MenuItem;
 
     sput-object p0, Lcom/android/settings/myplace/MyPlaceListDelelete;->mItem_trash:Landroid/view/MenuItem;
 
@@ -317,8 +309,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/myplace/MyPlaceListDelelete;Z)V
     .locals 0
-    .param p0    # Lcom/android/settings/myplace/MyPlaceListDelelete;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/settings/myplace/MyPlaceListDelelete;->ToggleAllCheck(Z)V
 
@@ -604,7 +594,6 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 6
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v5, 0x1
 
@@ -828,7 +817,6 @@
 
 .method public onAttach(Landroid/app/Activity;)V
     .locals 2
-    .param p1    # Landroid/app/Activity;
 
     invoke-static {}, Lcom/android/settings/Utils;->isSupportMenuTreeForK()Z
 
@@ -870,7 +858,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     sget-object v1, Lcom/android/settings/myplace/MyPlaceListDelelete;->mSelectAllCheck:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
@@ -905,7 +892,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 1
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/app/ListFragment;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -920,8 +906,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
     .locals 7
-    .param p1    # Landroid/view/Menu;
-    .param p2    # Landroid/view/MenuInflater;
 
     const v6, 0x7f0901ba
 
@@ -1018,9 +1002,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 2
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const/4 v1, 0x0
 
@@ -1102,10 +1083,6 @@
 
 .method public onListItemClick(Landroid/widget/ListView;Landroid/view/View;IJ)V
     .locals 2
-    .param p1    # Landroid/widget/ListView;
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
 
     invoke-static {}, Lcom/android/settings/Utils;->isSupportMenuTreeForK()Z
 
@@ -1199,7 +1176,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 9
-    .param p1    # Landroid/view/MenuItem;
 
     const v8, 0x7f090b6d
 
@@ -1327,7 +1303,6 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)V
     .locals 4
-    .param p1    # Landroid/view/Menu;
 
     const/4 v3, 0x0
 

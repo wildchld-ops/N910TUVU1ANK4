@@ -44,12 +44,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/display/OverlayDisplayAdapter;Ljava/lang/String;IIIIZ)V
     .locals 2
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # Z
 
     iput-object p1, p0, Lcom/android/server/display/OverlayDisplayAdapter$OverlayDisplayHandle;->this$0:Lcom/android/server/display/OverlayDisplayAdapter;
 
@@ -93,7 +87,6 @@
 
 .method static synthetic access$200(Lcom/android/server/display/OverlayDisplayAdapter$OverlayDisplayHandle;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/server/display/OverlayDisplayAdapter$OverlayDisplayHandle;
 
     iget-object v0, p0, Lcom/android/server/display/OverlayDisplayAdapter$OverlayDisplayHandle;->mName:Ljava/lang/String;
 
@@ -102,7 +95,6 @@
 
 .method static synthetic access$300(Lcom/android/server/display/OverlayDisplayAdapter$OverlayDisplayHandle;)I
     .locals 1
-    .param p0    # Lcom/android/server/display/OverlayDisplayAdapter$OverlayDisplayHandle;
 
     iget v0, p0, Lcom/android/server/display/OverlayDisplayAdapter$OverlayDisplayHandle;->mWidth:I
 
@@ -111,7 +103,6 @@
 
 .method static synthetic access$400(Lcom/android/server/display/OverlayDisplayAdapter$OverlayDisplayHandle;)I
     .locals 1
-    .param p0    # Lcom/android/server/display/OverlayDisplayAdapter$OverlayDisplayHandle;
 
     iget v0, p0, Lcom/android/server/display/OverlayDisplayAdapter$OverlayDisplayHandle;->mHeight:I
 
@@ -120,7 +111,6 @@
 
 .method static synthetic access$500(Lcom/android/server/display/OverlayDisplayAdapter$OverlayDisplayHandle;)I
     .locals 1
-    .param p0    # Lcom/android/server/display/OverlayDisplayAdapter$OverlayDisplayHandle;
 
     iget v0, p0, Lcom/android/server/display/OverlayDisplayAdapter$OverlayDisplayHandle;->mDensityDpi:I
 
@@ -129,7 +119,6 @@
 
 .method static synthetic access$600(Lcom/android/server/display/OverlayDisplayAdapter$OverlayDisplayHandle;)I
     .locals 1
-    .param p0    # Lcom/android/server/display/OverlayDisplayAdapter$OverlayDisplayHandle;
 
     iget v0, p0, Lcom/android/server/display/OverlayDisplayAdapter$OverlayDisplayHandle;->mGravity:I
 
@@ -138,7 +127,6 @@
 
 .method static synthetic access$700(Lcom/android/server/display/OverlayDisplayAdapter$OverlayDisplayHandle;)Z
     .locals 1
-    .param p0    # Lcom/android/server/display/OverlayDisplayAdapter$OverlayDisplayHandle;
 
     iget-boolean v0, p0, Lcom/android/server/display/OverlayDisplayAdapter$OverlayDisplayHandle;->mSecure:Z
 
@@ -147,7 +135,6 @@
 
 .method static synthetic access$800(Lcom/android/server/display/OverlayDisplayAdapter$OverlayDisplayHandle;)Lcom/android/server/display/OverlayDisplayWindow;
     .locals 1
-    .param p0    # Lcom/android/server/display/OverlayDisplayAdapter$OverlayDisplayHandle;
 
     iget-object v0, p0, Lcom/android/server/display/OverlayDisplayAdapter$OverlayDisplayHandle;->mWindow:Lcom/android/server/display/OverlayDisplayWindow;
 
@@ -156,8 +143,6 @@
 
 .method static synthetic access$802(Lcom/android/server/display/OverlayDisplayAdapter$OverlayDisplayHandle;Lcom/android/server/display/OverlayDisplayWindow;)Lcom/android/server/display/OverlayDisplayWindow;
     .locals 0
-    .param p0    # Lcom/android/server/display/OverlayDisplayAdapter$OverlayDisplayHandle;
-    .param p1    # Lcom/android/server/display/OverlayDisplayWindow;
 
     iput-object p1, p0, Lcom/android/server/display/OverlayDisplayAdapter$OverlayDisplayHandle;->mWindow:Lcom/android/server/display/OverlayDisplayWindow;
 
@@ -196,7 +181,6 @@
 
 .method public dumpLocked(Ljava/io/PrintWriter;)V
     .locals 5
-    .param p1    # Ljava/io/PrintWriter;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -367,8 +351,6 @@
 
 .method public onWindowCreated(Landroid/graphics/SurfaceTexture;F)V
     .locals 11
-    .param p1    # Landroid/graphics/SurfaceTexture;
-    .param p2    # F
 
     iget-object v0, p0, Lcom/android/server/display/OverlayDisplayAdapter$OverlayDisplayHandle;->this$0:Lcom/android/server/display/OverlayDisplayAdapter;
 

@@ -149,7 +149,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/VoiceInputControlSettings;)V
     .locals 0
-    .param p0    # Lcom/android/settings/VoiceInputControlSettings;
 
     invoke-direct {p0}, Lcom/android/settings/VoiceInputControlSettings;->updateUIVoiceInputControl()V
 
@@ -158,8 +157,6 @@
 
 .method static synthetic access$102(Lcom/android/settings/VoiceInputControlSettings;I)I
     .locals 0
-    .param p0    # Lcom/android/settings/VoiceInputControlSettings;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/settings/VoiceInputControlSettings;->mHelpState:I
 
@@ -168,7 +165,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/VoiceInputControlSettings;)V
     .locals 0
-    .param p0    # Lcom/android/settings/VoiceInputControlSettings;
 
     invoke-direct {p0}, Lcom/android/settings/VoiceInputControlSettings;->showHelpStep1Dialog()V
 
@@ -177,7 +173,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/VoiceInputControlSettings;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/VoiceInputControlSettings;
 
     iget-boolean v0, p0, Lcom/android/settings/VoiceInputControlSettings;->mIsFromHelp:Z
 
@@ -186,7 +181,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/VoiceInputControlSettings;)V
     .locals 0
-    .param p0    # Lcom/android/settings/VoiceInputControlSettings;
 
     invoke-direct {p0}, Lcom/android/settings/VoiceInputControlSettings;->showHelpStep2Dialog()V
 
@@ -195,7 +189,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/VoiceInputControlSettings;)V
     .locals 0
-    .param p0    # Lcom/android/settings/VoiceInputControlSettings;
 
     invoke-direct {p0}, Lcom/android/settings/VoiceInputControlSettings;->setTabletView()V
 
@@ -204,7 +197,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/VoiceInputControlSettings;)Landroid/widget/Switch;
     .locals 1
-    .param p0    # Lcom/android/settings/VoiceInputControlSettings;
 
     iget-object v0, p0, Lcom/android/settings/VoiceInputControlSettings;->mActionBarSwitch:Landroid/widget/Switch;
 
@@ -213,7 +205,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/VoiceInputControlSettings;)Lcom/android/settings/helpdialog/TwHelpDialog;
     .locals 1
-    .param p0    # Lcom/android/settings/VoiceInputControlSettings;
 
     iget-object v0, p0, Lcom/android/settings/VoiceInputControlSettings;->mHelpStep2Dialog:Lcom/android/settings/helpdialog/TwHelpDialog;
 
@@ -222,8 +213,6 @@
 
 .method static synthetic access$802(Lcom/android/settings/VoiceInputControlSettings;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/VoiceInputControlSettings;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/VoiceInputControlSettings;->mIsAutoHapticDialogShowing:Z
 
@@ -252,7 +241,6 @@
 
 .method private getSwitch(Landroid/view/View;)Landroid/view/View;
     .locals 7
-    .param p1    # Landroid/view/View;
 
     const/4 v3, 0x0
 
@@ -452,7 +440,6 @@
 
 .method private setPreferenceStatusBasedOnEasyMode(Landroid/preference/CheckBoxPreference;)V
     .locals 1
-    .param p1    # Landroid/preference/CheckBoxPreference;
 
     iget-object v0, p0, Lcom/android/settings/VoiceInputControlSettings;->mCamera:Landroid/preference/CheckBoxPreference;
 
@@ -1611,8 +1598,6 @@
 
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 10
-    .param p1    # Landroid/widget/CompoundButton;
-    .param p2    # Z
 
     const/4 v7, 0x1
 
@@ -1813,7 +1798,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 1
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -1849,7 +1833,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 12
-    .param p1    # Landroid/os/Bundle;
 
     const/16 v9, 0x10
 
@@ -2230,8 +2213,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
     .locals 3
-    .param p1    # Landroid/view/Menu;
-    .param p2    # Landroid/view/MenuInflater;
 
     const/4 v2, 0x0
 
@@ -2317,7 +2298,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 3
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -2440,8 +2420,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 6
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     const/4 v2, 0x1
 
@@ -3110,7 +3088,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v1, 0x1
 

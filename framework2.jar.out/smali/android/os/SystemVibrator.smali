@@ -64,7 +64,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Landroid/os/Vibrator;-><init>()V
 
@@ -272,7 +271,6 @@
 
 .method public setMagnitude(I)V
     .locals 1
-    .param p1    # I
 
     :try_start_0
     iget-object v0, p0, Landroid/os/SystemVibrator;->mService:Landroid/os/IVibratorService;
@@ -292,9 +290,6 @@
 
 .method public vibrate(ILjava/lang/String;J)V
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # J
 
     const-string v0, "Vibrator"
 
@@ -345,10 +340,6 @@
 
 .method public vibrate(ILjava/lang/String;JI)V
     .locals 8
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # J
-    .param p5    # I
 
     const-string v0, "Vibrator"
 
@@ -449,10 +440,6 @@
 
 .method public vibrate(ILjava/lang/String;[JI)V
     .locals 7
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # [J
-    .param p4    # I
 
     const-string v0, "Vibrator"
 
@@ -554,7 +541,6 @@
 
 .method public vibrate(J)V
     .locals 6
-    .param p1    # J
 
     const-string v0, "Vibrator"
 
@@ -613,8 +599,6 @@
 
 .method public vibrate(JLandroid/os/SystemVibrator$MagnitudeType;)V
     .locals 7
-    .param p1    # J
-    .param p3    # Landroid/os/SystemVibrator$MagnitudeType;
 
     const-string v0, "Vibrator"
 
@@ -723,8 +707,6 @@
 
 .method public vibrate([JI)V
     .locals 3
-    .param p1    # [J
-    .param p2    # I
 
     const-string v0, "Vibrator"
 
@@ -777,9 +759,6 @@
 
 .method public vibrate([JII)V
     .locals 8
-    .param p1    # [J
-    .param p2    # I
-    .param p3    # I
 
     const-string v0, "Vibrator"
 
@@ -901,9 +880,6 @@
 
 .method public vibrate([JILandroid/os/SystemVibrator$MagnitudeType;)V
     .locals 8
-    .param p1    # [J
-    .param p2    # I
-    .param p3    # Landroid/os/SystemVibrator$MagnitudeType;
 
     const-string v0, "Vibrator"
 
@@ -1031,7 +1007,6 @@
 
 .method public vibrateCall(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "Vibrator"
 
@@ -1105,7 +1080,6 @@
 
 .method public vibrateImmVibe(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "Vibrator"
 
@@ -1154,8 +1128,6 @@
 
 .method public vibrateImmVibe(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     const-string v0, "Vibrator"
 
@@ -1239,8 +1211,6 @@
 
 .method public vibrateImmVibe(ILandroid/os/SystemVibrator$MagnitudeType;)V
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/os/SystemVibrator$MagnitudeType;
 
     const-string v0, "Vibrator"
 
@@ -1332,7 +1302,6 @@
 
 .method public vibrateImmVibe([B)V
     .locals 3
-    .param p1    # [B
 
     const-string v0, "Vibrator"
 
@@ -1381,8 +1350,6 @@
 
 .method public vibrateImmVibe([BI)V
     .locals 3
-    .param p1    # [B
-    .param p2    # I
 
     const-string v0, "Vibrator"
 
@@ -1456,8 +1423,6 @@
 
 .method public vibrateImmVibe([BLandroid/os/SystemVibrator$MagnitudeType;)V
     .locals 4
-    .param p1    # [B
-    .param p2    # Landroid/os/SystemVibrator$MagnitudeType;
 
     const-string v0, "Vibrator"
 
@@ -1539,7 +1504,6 @@
 
 .method public vibrateNotification(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "Vibrator"
 

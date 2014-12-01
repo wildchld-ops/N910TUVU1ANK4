@@ -100,7 +100,6 @@
 
 .method private static CablDaemonControl(Ljava/lang/String;)V
     .locals 7
-    .param p0    # Ljava/lang/String;
 
     const/4 v5, 0x0
 
@@ -173,7 +172,6 @@
 
 .method private static _setmDNIeUIMode(I)Z
     .locals 1
-    .param p0    # I
 
     const-string v0, "/sys/class/mdnie/mdnie/scenario"
 
@@ -186,7 +184,6 @@
 
 .method public static enableFastGloveMode(Z)Z
     .locals 4
-    .param p0    # Z
 
     const/4 v1, 0x1
 
@@ -250,7 +247,6 @@
 
 .method public static enableGloveMode(Z)Z
     .locals 5
-    .param p0    # Z
 
     const/4 v2, 0x1
 
@@ -329,7 +325,6 @@
 
 .method public static enableHandgripEvent(Z)Z
     .locals 3
-    .param p0    # Z
 
     :try_start_0
     const-string v2, "/sys/class/sec/tsp/cmd"
@@ -365,7 +360,6 @@
 
 .method public static enableHoverEvent(Z)Z
     .locals 3
-    .param p0    # Z
 
     invoke-static {}, Lcom/samsung/android/feature/FloatingFeature;->getInstance()Lcom/samsung/android/feature/FloatingFeature;
 
@@ -414,7 +408,6 @@
 
 .method public static enableISPFirmwareUpdate(Z)Z
     .locals 2
-    .param p0    # Z
 
     const-string v1, "/sys/class/camera/rear/rear_checkApp"
 
@@ -437,7 +430,6 @@
 
 .method public static enableShowBriefingInformation(Z)Z
     .locals 3
-    .param p0    # Z
 
     :try_start_0
     const-string v2, "/sys/class/sec/tsp/cmd"
@@ -700,7 +692,6 @@
 
 .method public static setAmoledACL(Z)Z
     .locals 2
-    .param p0    # Z
 
     const-string v1, "/sys/class/lcd/panel/power_reduce"
 
@@ -723,7 +714,6 @@
 
 .method public static setAmoledVideoGamma(Z)Z
     .locals 1
-    .param p0    # Z
 
     const/4 v0, 0x0
 
@@ -732,8 +722,6 @@
 
 .method public static setBatteryADC(Ljava/lang/String;Z)V
     .locals 8
-    .param p0    # Ljava/lang/String;
-    .param p1    # Z
 
     const/4 v5, 0x0
 
@@ -849,8 +837,6 @@
 
 .method public static setBatteryUse(IZ)V
     .locals 2
-    .param p0    # I
-    .param p1    # Z
 
     packed-switch p0, :pswitch_data_0
 
@@ -927,7 +913,6 @@
 
 .method public static setEPenSavingmode(I)Z
     .locals 1
-    .param p0    # I
 
     sget-object v0, Lcom/sec/android/hardware/SecHardwareInterface;->EPEN_SAVINGMODE_PATH:Ljava/lang/String;
 
@@ -940,7 +925,6 @@
 
 .method public static setEPenType(I)Z
     .locals 1
-    .param p0    # I
 
     sget-object v0, Lcom/sec/android/hardware/SecHardwareInterface;->EPEN_TYPE_PATH:Ljava/lang/String;
 
@@ -953,7 +937,6 @@
 
 .method public static setEpenHandType(I)V
     .locals 6
-    .param p0    # I
 
     const-string v4, "/sys/class/sec/sec_epen/epen_hand"
 
@@ -1043,7 +1026,6 @@
 
 .method public static setMaxCPUFreq(Ljava/lang/String;)V
     .locals 6
-    .param p0    # Ljava/lang/String;
 
     const-string v4, "/sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq"
 
@@ -1117,7 +1099,6 @@
 
 .method public static setPlayVideoSpeed(Z)Z
     .locals 1
-    .param p0    # Z
 
     const/4 v0, 0x0
 
@@ -1126,14 +1107,12 @@
 
 .method public static setPowerSaveFPS(Z)V
     .locals 0
-    .param p0    # Z
 
     return-void
 .end method
 
 .method private static setReadingMode(Z)V
     .locals 2
-    .param p0    # Z
 
     if-eqz p0, :cond_0
 
@@ -1158,7 +1137,6 @@
 
 .method public static setTconUIMode(I)Z
     .locals 1
-    .param p0    # I
 
     const-string v0, "/sys/class/tcon/tcon/mode"
 
@@ -1171,7 +1149,6 @@
 
 .method public static setTorchLight(I)V
     .locals 8
-    .param p0    # I
 
     const/4 v2, 0x0
 
@@ -1401,7 +1378,6 @@
 
 .method public static setTorchLight(Z)V
     .locals 1
-    .param p0    # Z
 
     if-eqz p0, :cond_0
 
@@ -1422,7 +1398,6 @@
 
 .method public static setTouchJitterFilter(Z)Z
     .locals 1
-    .param p0    # Z
 
     const/4 v0, 0x0
 
@@ -1431,8 +1406,6 @@
 
 .method public static setmDNIeColorBlind(Z[I)Z
     .locals 1
-    .param p0    # Z
-    .param p1    # [I
 
     const/4 v0, 0x0
 
@@ -1441,7 +1414,6 @@
 
 .method public static setmDNIeNegative(Z)Z
     .locals 1
-    .param p0    # Z
 
     const/4 v0, 0x0
 
@@ -1450,7 +1422,6 @@
 
 .method public static setmDNIeOutDoor(Z)Z
     .locals 2
-    .param p0    # Z
 
     const-string v1, "/sys/class/mdnie/mdnie/outdoor"
 
@@ -1473,7 +1444,6 @@
 
 .method public static setmDNIeReadingMode(I)Z
     .locals 1
-    .param p0    # I
 
     if-nez p0, :cond_0
 
@@ -1498,7 +1468,6 @@
 
 .method public static setmDNIeUIMode(I)Z
     .locals 1
-    .param p0    # I
 
     invoke-static {}, Lcom/sec/android/hardware/SecHardwareInterface;->isReadingMode()Z
 
@@ -1521,7 +1490,6 @@
 
 .method public static setmDNIeUserMode(I)Z
     .locals 1
-    .param p0    # I
 
     const-string v0, "/sys/class/mdnie/mdnie/mode"
 
@@ -1534,8 +1502,6 @@
 
 .method private static sysfsWrite(Ljava/lang/String;I)Z
     .locals 6
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
 
     const/4 v4, 0x0
 
@@ -1615,8 +1581,6 @@
 
 .method private static sysfsWrite(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 6
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/FileNotFoundException;

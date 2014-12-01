@@ -17,7 +17,6 @@
 # direct methods
 .method constructor <init>(I)V
     .locals 0
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/LinkActionChooserFragment$Action;-><init>(I)V
 
@@ -28,9 +27,6 @@
 # virtual methods
 .method public execute(Landroid/app/Activity;Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Landroid/app/Activity;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const-string v2, "clipboardEx"
 

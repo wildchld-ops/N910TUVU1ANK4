@@ -213,7 +213,6 @@
 
 .method static synthetic access$300(Landroid/os/AsyncTask;)Ljava/util/concurrent/atomic/AtomicBoolean;
     .locals 1
-    .param p0    # Landroid/os/AsyncTask;
 
     iget-object v0, p0, Landroid/os/AsyncTask;->mTaskInvoked:Ljava/util/concurrent/atomic/AtomicBoolean;
 
@@ -222,8 +221,6 @@
 
 .method static synthetic access$400(Landroid/os/AsyncTask;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Landroid/os/AsyncTask;
-    .param p1    # Ljava/lang/Object;
 
     invoke-direct {p0, p1}, Landroid/os/AsyncTask;->postResult(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -234,8 +231,6 @@
 
 .method static synthetic access$500(Landroid/os/AsyncTask;Ljava/lang/Object;)V
     .locals 0
-    .param p0    # Landroid/os/AsyncTask;
-    .param p1    # Ljava/lang/Object;
 
     invoke-direct {p0, p1}, Landroid/os/AsyncTask;->postResultIfNotInvoked(Ljava/lang/Object;)V
 
@@ -244,8 +239,6 @@
 
 .method static synthetic access$600(Landroid/os/AsyncTask;Ljava/lang/Object;)V
     .locals 0
-    .param p0    # Landroid/os/AsyncTask;
-    .param p1    # Ljava/lang/Object;
 
     invoke-direct {p0, p1}, Landroid/os/AsyncTask;->finish(Ljava/lang/Object;)V
 
@@ -254,7 +247,6 @@
 
 .method public static execute(Ljava/lang/Runnable;)V
     .locals 1
-    .param p0    # Ljava/lang/Runnable;
 
     sget-object v0, Landroid/os/AsyncTask;->sDefaultExecutor:Ljava/util/concurrent/Executor;
 
@@ -357,7 +349,6 @@
 
 .method public static setDefaultExecutor(Ljava/util/concurrent/Executor;)V
     .locals 0
-    .param p0    # Ljava/util/concurrent/Executor;
 
     sput-object p0, Landroid/os/AsyncTask;->sDefaultExecutor:Ljava/util/concurrent/Executor;
 
@@ -368,7 +359,6 @@
 # virtual methods
 .method public final cancel(Z)Z
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Landroid/os/AsyncTask;->mCancelled:Ljava/util/concurrent/atomic/AtomicBoolean;
 
@@ -414,7 +404,6 @@
 
 .method public final varargs executeOnExecutor(Ljava/util/concurrent/Executor;[Ljava/lang/Object;)Landroid/os/AsyncTask;
     .locals 2
-    .param p1    # Ljava/util/concurrent/Executor;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -511,8 +500,6 @@
 
 .method public final get(JLjava/util/concurrent/TimeUnit;)Ljava/lang/Object;
     .locals 1
-    .param p1    # J
-    .param p3    # Ljava/util/concurrent/TimeUnit;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(J",

@@ -68,7 +68,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Landroid/view/View;->requestFocus()Z
+    invoke-virtual {v0}, Landroid/widget/EditText;->requestFocus()Z
 
     return-void
 .end method

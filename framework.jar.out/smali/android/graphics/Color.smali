@@ -330,9 +330,6 @@
 
 .method public static HSBtoColor(FFF)I
     .locals 13
-    .param p0    # F
-    .param p1    # F
-    .param p2    # F
 
     const/high16 v12, 0x437f0000
 
@@ -490,7 +487,6 @@
 
 .method public static HSBtoColor([F)I
     .locals 3
-    .param p0    # [F
 
     const/4 v0, 0x0
 
@@ -513,8 +509,6 @@
 
 .method public static HSVToColor(I[F)I
     .locals 2
-    .param p0    # I
-    .param p1    # [F
 
     array-length v0, p1
 
@@ -540,7 +534,6 @@
 
 .method public static HSVToColor([F)I
     .locals 1
-    .param p0    # [F
 
     const/16 v0, 0xff
 
@@ -553,10 +546,6 @@
 
 .method public static RGBToHSV(III[F)V
     .locals 2
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [F
 
     array-length v0, p3
 
@@ -580,7 +569,6 @@
 
 .method public static alpha(I)I
     .locals 1
-    .param p0    # I
 
     ushr-int/lit8 v0, p0, 0x18
 
@@ -589,10 +577,6 @@
 
 .method public static argb(IIII)I
     .locals 2
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     shl-int/lit8 v0, p0, 0x18
 
@@ -611,7 +595,6 @@
 
 .method public static blue(I)I
     .locals 1
-    .param p0    # I
 
     and-int/lit16 v0, p0, 0xff
 
@@ -620,7 +603,6 @@
 
 .method public static brightness(I)F
     .locals 6
-    .param p0    # I
 
     shr-int/lit8 v4, p0, 0x10
 
@@ -651,8 +633,6 @@
 
 .method public static colorToHSV(I[F)V
     .locals 3
-    .param p0    # I
-    .param p1    # [F
 
     shr-int/lit8 v0, p0, 0x10
 
@@ -671,7 +651,6 @@
 
 .method public static getHtmlColor(Ljava/lang/String;)I
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     const/4 v2, -0x1
 
@@ -718,7 +697,6 @@
 
 .method public static green(I)I
     .locals 1
-    .param p0    # I
 
     shr-int/lit8 v0, p0, 0x8
 
@@ -729,7 +707,6 @@
 
 .method public static hue(I)F
     .locals 11
-    .param p0    # I
 
     shr-int/lit8 v10, p0, 0x10
 
@@ -838,7 +815,6 @@
 
 .method public static parseColor(Ljava/lang/String;)I
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -932,7 +908,6 @@
 
 .method public static red(I)I
     .locals 1
-    .param p0    # I
 
     shr-int/lit8 v0, p0, 0x10
 
@@ -943,9 +918,6 @@
 
 .method public static rgb(III)I
     .locals 2
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
 
     const/high16 v0, -0x1000000
 
@@ -964,7 +936,6 @@
 
 .method public static saturation(I)F
     .locals 8
-    .param p0    # I
 
     shr-int/lit8 v6, p0, 0x10
 

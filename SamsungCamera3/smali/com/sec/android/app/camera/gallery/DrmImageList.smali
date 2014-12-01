@@ -57,10 +57,6 @@
 
 .method public constructor <init>(Landroid/content/ContentResolver;Landroid/net/Uri;ILjava/lang/String;)V
     .locals 6
-    .param p1    # Landroid/content/ContentResolver;
-    .param p2    # Landroid/net/Uri;
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -107,7 +103,6 @@
 
 .method protected loadImageFromCursor(Landroid/database/Cursor;)Lcom/sec/android/app/camera/gallery/BaseImage;
     .locals 17
-    .param p1    # Landroid/database/Cursor;
 
     const/4 v1, 0x0
 

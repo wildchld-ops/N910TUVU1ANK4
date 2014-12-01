@@ -49,8 +49,6 @@
 
 .method public constructor <init>(Landroid/database/Cursor;Landroid/net/Uri;)V
     .locals 0
-    .param p1    # Landroid/database/Cursor;
-    .param p2    # Landroid/net/Uri;
 
     invoke-direct {p0, p1}, Landroid/database/CursorWrapper;-><init>(Landroid/database/Cursor;)V
 
@@ -61,7 +59,6 @@
 
 .method private getErrorCode(I)J
     .locals 2
-    .param p1    # I
 
     const/16 v0, 0x190
 
@@ -235,7 +232,6 @@
 
 .method private getPausedReason(I)J
     .locals 2
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -271,7 +267,6 @@
 
 .method private getUnderlyingLong(Ljava/lang/String;)J
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-super {p0, p1}, Landroid/database/CursorWrapper;->getColumnIndex(Ljava/lang/String;)I
 
@@ -286,7 +281,6 @@
 
 .method private getUnderlyingString(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-super {p0, p1}, Landroid/database/CursorWrapper;->getColumnIndex(Ljava/lang/String;)I
 
@@ -301,7 +295,6 @@
 
 .method private isLongColumn(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     # getter for: Landroid/app/DownloadManager;->LONG_COLUMNS:Ljava/util/Set;
     invoke-static {}, Landroid/app/DownloadManager;->access$100()Ljava/util/Set;
@@ -317,7 +310,6 @@
 
 .method private translateLong(Ljava/lang/String;)J
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Landroid/app/DownloadManager$SecCursorTranslator;->isLongColumn(Ljava/lang/String;)Z
 
@@ -589,7 +581,6 @@
 
 .method private translateString(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Landroid/app/DownloadManager$SecCursorTranslator;->isLongColumn(Ljava/lang/String;)Z
 
@@ -809,7 +800,6 @@
 # virtual methods
 .method public getBlob(I)[B
     .locals 1
-    .param p1    # I
 
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
@@ -833,7 +823,6 @@
 
 .method public getColumnIndex(Ljava/lang/String;)I
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     # getter for: Landroid/app/DownloadManager;->SEC_COLUMNS:[Ljava/lang/String;
     invoke-static {}, Landroid/app/DownloadManager;->access$000()[Ljava/lang/String;
@@ -853,7 +842,6 @@
 
 .method public getColumnIndexOrThrow(Ljava/lang/String;)I
     .locals 4
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;
@@ -898,7 +886,6 @@
 
 .method public getColumnName(I)Ljava/lang/String;
     .locals 4
-    .param p1    # I
 
     # getter for: Landroid/app/DownloadManager;->SEC_COLUMNS:[Ljava/lang/String;
     invoke-static {}, Landroid/app/DownloadManager;->access$000()[Ljava/lang/String;
@@ -996,7 +983,6 @@
 
 .method public getDouble(I)D
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/app/DownloadManager$SecCursorTranslator;->getLong(I)J
 
@@ -1009,7 +995,6 @@
 
 .method public getFloat(I)F
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/app/DownloadManager$SecCursorTranslator;->getDouble(I)D
 
@@ -1022,7 +1007,6 @@
 
 .method public getInt(I)I
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/app/DownloadManager$SecCursorTranslator;->getLong(I)J
 
@@ -1035,7 +1019,6 @@
 
 .method public getLong(I)J
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/app/DownloadManager$SecCursorTranslator;->getColumnName(I)Ljava/lang/String;
 
@@ -1050,7 +1033,6 @@
 
 .method public getReason(I)J
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/app/DownloadManager$SecCursorTranslator;->translateStatus(I)I
 
@@ -1086,7 +1068,6 @@
 
 .method public getShort(I)S
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/app/DownloadManager$SecCursorTranslator;->getLong(I)J
 
@@ -1101,7 +1082,6 @@
 
 .method public getString(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/app/DownloadManager$SecCursorTranslator;->getColumnName(I)Ljava/lang/String;
 
@@ -1116,7 +1096,6 @@
 
 .method public translateStatus(I)I
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x2
 

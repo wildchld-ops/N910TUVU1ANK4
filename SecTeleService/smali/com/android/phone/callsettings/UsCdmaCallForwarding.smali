@@ -78,11 +78,11 @@
 
     const v1, 0x7f06004c
 
-    invoke-virtual {p0, v1}, Landroid/preference/PreferenceFragment;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v1}, Lcom/android/phone/callsettings/UsCdmaCallForwarding;->addPreferencesFromResource(I)V
 
     const-string v1, "us_cdma_call_forwarding_activate_preference"
 
-    invoke-virtual {p0, v1}, Landroid/preference/PreferenceFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v1}, Lcom/android/phone/callsettings/UsCdmaCallForwarding;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v1
 
@@ -92,7 +92,7 @@
 
     const-string v1, "us_cdma_call_forwarding_deactivate_preference"
 
-    invoke-virtual {p0, v1}, Landroid/preference/PreferenceFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v1}, Lcom/android/phone/callsettings/UsCdmaCallForwarding;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v1
 
@@ -106,7 +106,7 @@
 
     invoke-direct {v2, p0}, Lcom/android/phone/callsettings/UsCdmaCallForwarding$1;-><init>(Lcom/android/phone/callsettings/UsCdmaCallForwarding;)V
 
-    invoke-virtual {v1, v2}, Landroid/preference/Preference;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
+    invoke-virtual {v1, v2}, Landroid/preference/PreferenceScreen;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
 
     iget-object v1, p0, Lcom/android/phone/callsettings/UsCdmaCallForwarding;->mDeactivatePreferences:Landroid/preference/PreferenceScreen;
 
@@ -114,9 +114,9 @@
 
     invoke-direct {v2, p0}, Lcom/android/phone/callsettings/UsCdmaCallForwarding$2;-><init>(Lcom/android/phone/callsettings/UsCdmaCallForwarding;)V
 
-    invoke-virtual {v1, v2}, Landroid/preference/Preference;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
+    invoke-virtual {v1, v2}, Landroid/preference/PreferenceScreen;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getActionBar()Landroid/app/ActionBar;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/UsCdmaCallForwarding;->getActionBar()Landroid/app/ActionBar;
 
     move-result-object v0
 
@@ -138,7 +138,7 @@
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/UsCdmaCallForwarding;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
 
@@ -150,7 +150,7 @@
 
     const/4 v4, 0x0
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/UsCdmaCallForwarding;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v5
 
@@ -162,7 +162,7 @@
 
     aput-object v5, v2, v4
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/UsCdmaCallForwarding;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v4
 
@@ -199,7 +199,7 @@
     packed-switch p1, :pswitch_data_0
 
     :goto_0
-    invoke-virtual {p0, v3}, Landroid/app/Fragment;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v3}, Lcom/android/phone/callsettings/UsCdmaCallForwarding;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v4
 

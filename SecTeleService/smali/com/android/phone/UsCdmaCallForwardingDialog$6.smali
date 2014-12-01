@@ -155,7 +155,7 @@
 
     iget-object v1, p0, Lcom/android/phone/UsCdmaCallForwardingDialog$6;->this$0:Lcom/android/phone/UsCdmaCallForwardingDialog;
 
-    invoke-virtual {v1}, Landroid/app/Activity;->finish()V
+    invoke-virtual {v1}, Lcom/android/phone/UsCdmaCallForwardingDialog;->finish()V
 
     :goto_0
     return-void

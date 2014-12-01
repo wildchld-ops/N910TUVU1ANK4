@@ -84,7 +84,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/mirrorlink/MirrorLinkAppDetail;)Lcom/mirrorlink/android/service/IMirrorlinkManager;
     .locals 1
-    .param p0    # Lcom/android/settings/mirrorlink/MirrorLinkAppDetail;
 
     iget-object v0, p0, Lcom/android/settings/mirrorlink/MirrorLinkAppDetail;->mservice:Lcom/mirrorlink/android/service/IMirrorlinkManager;
 
@@ -93,8 +92,6 @@
 
 .method static synthetic access$002(Lcom/android/settings/mirrorlink/MirrorLinkAppDetail;Lcom/mirrorlink/android/service/IMirrorlinkManager;)Lcom/mirrorlink/android/service/IMirrorlinkManager;
     .locals 0
-    .param p0    # Lcom/android/settings/mirrorlink/MirrorLinkAppDetail;
-    .param p1    # Lcom/mirrorlink/android/service/IMirrorlinkManager;
 
     iput-object p1, p0, Lcom/android/settings/mirrorlink/MirrorLinkAppDetail;->mservice:Lcom/mirrorlink/android/service/IMirrorlinkManager;
 
@@ -103,7 +100,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/mirrorlink/MirrorLinkAppDetail;)Lcom/android/settings/mirrorlink/MirrorLinkAppDetail$MirrorlinkListener;
     .locals 1
-    .param p0    # Lcom/android/settings/mirrorlink/MirrorLinkAppDetail;
 
     iget-object v0, p0, Lcom/android/settings/mirrorlink/MirrorLinkAppDetail;->mMirrorlinkListener:Lcom/android/settings/mirrorlink/MirrorLinkAppDetail$MirrorlinkListener;
 
@@ -112,8 +108,6 @@
 
 .method static synthetic access$102(Lcom/android/settings/mirrorlink/MirrorLinkAppDetail;Lcom/android/settings/mirrorlink/MirrorLinkAppDetail$MirrorlinkListener;)Lcom/android/settings/mirrorlink/MirrorLinkAppDetail$MirrorlinkListener;
     .locals 0
-    .param p0    # Lcom/android/settings/mirrorlink/MirrorLinkAppDetail;
-    .param p1    # Lcom/android/settings/mirrorlink/MirrorLinkAppDetail$MirrorlinkListener;
 
     iput-object p1, p0, Lcom/android/settings/mirrorlink/MirrorLinkAppDetail;->mMirrorlinkListener:Lcom/android/settings/mirrorlink/MirrorLinkAppDetail$MirrorlinkListener;
 
@@ -122,7 +116,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/mirrorlink/MirrorLinkAppDetail;)Lcom/android/settings/mirrorlink/MirrorLinkAppDetail$MlApp;
     .locals 1
-    .param p0    # Lcom/android/settings/mirrorlink/MirrorLinkAppDetail;
 
     iget-object v0, p0, Lcom/android/settings/mirrorlink/MirrorLinkAppDetail;->mAppInfo:Lcom/android/settings/mirrorlink/MirrorLinkAppDetail$MlApp;
 
@@ -131,8 +124,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/mirrorlink/MirrorLinkAppDetail;Lcom/android/settings/mirrorlink/MirrorLinkAppDetail$MlApp;)V
     .locals 0
-    .param p0    # Lcom/android/settings/mirrorlink/MirrorLinkAppDetail;
-    .param p1    # Lcom/android/settings/mirrorlink/MirrorLinkAppDetail$MlApp;
 
     invoke-direct {p0, p1}, Lcom/android/settings/mirrorlink/MirrorLinkAppDetail;->updateAppInfo(Lcom/android/settings/mirrorlink/MirrorLinkAppDetail$MlApp;)V
 
@@ -141,7 +132,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/mirrorlink/MirrorLinkAppDetail;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Lcom/android/settings/mirrorlink/MirrorLinkAppDetail;
 
     iget-object v0, p0, Lcom/android/settings/mirrorlink/MirrorLinkAppDetail;->lock:Ljava/lang/Object;
 
@@ -150,8 +140,6 @@
 
 .method static synthetic access$602(Lcom/android/settings/mirrorlink/MirrorLinkAppDetail;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/mirrorlink/MirrorLinkAppDetail;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/mirrorlink/MirrorLinkAppDetail;->mResult:Z
 
@@ -210,7 +198,6 @@
 
 .method private updateAppInfo(Lcom/android/settings/mirrorlink/MirrorLinkAppDetail$MlApp;)V
     .locals 6
-    .param p1    # Lcom/android/settings/mirrorlink/MirrorLinkAppDetail$MlApp;
 
     const v5, -0x777778
 
@@ -428,7 +415,6 @@
 # virtual methods
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -538,8 +524,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
     .locals 3
-    .param p1    # Landroid/view/Menu;
-    .param p2    # Landroid/view/MenuInflater;
 
     const/4 v2, 0x2
 
@@ -570,9 +554,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 7
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const/4 v6, 0x0
 
@@ -790,7 +771,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 3
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 

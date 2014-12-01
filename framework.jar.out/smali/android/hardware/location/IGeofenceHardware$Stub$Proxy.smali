@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,16 +36,6 @@
 # virtual methods
 .method public addCircularFence(IIDDDIIIILandroid/hardware/location/IGeofenceHardwareCallback;)Z
     .locals 7
-    .param p1    # I
-    .param p2    # I
-    .param p3    # D
-    .param p5    # D
-    .param p7    # D
-    .param p9    # I
-    .param p10    # I
-    .param p11    # I
-    .param p12    # I
-    .param p13    # Landroid/hardware/location/IGeofenceHardwareCallback;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -219,7 +208,6 @@
 
 .method public getStatusOfMonitoringType(I)I
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -275,8 +263,6 @@
 
 .method public pauseGeofence(II)Z
     .locals 6
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -341,8 +327,6 @@
 
 .method public registerForMonitorStateChangeCallback(ILandroid/hardware/location/IGeofenceHardwareMonitorCallback;)Z
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/hardware/location/IGeofenceHardwareMonitorCallback;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -419,8 +403,6 @@
 
 .method public removeGeofence(II)Z
     .locals 6
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -485,9 +467,6 @@
 
 .method public resumeGeofence(III)Z
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -554,7 +533,6 @@
 
 .method public setFusedGeofenceHardware(Landroid/location/IFusedGeofenceHardware;)V
     .locals 5
-    .param p1    # Landroid/location/IFusedGeofenceHardware;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -618,7 +596,6 @@
 
 .method public setGpsGeofenceHardware(Landroid/location/IGpsGeofenceHardware;)V
     .locals 5
-    .param p1    # Landroid/location/IGpsGeofenceHardware;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -682,8 +659,6 @@
 
 .method public unregisterForMonitorStateChangeCallback(ILandroid/hardware/location/IGeofenceHardwareMonitorCallback;)Z
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/hardware/location/IGeofenceHardwareMonitorCallback;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

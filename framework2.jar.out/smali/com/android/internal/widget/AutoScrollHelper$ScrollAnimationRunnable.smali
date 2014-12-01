@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Lcom/android/internal/widget/AutoScrollHelper;Lcom/android/internal/widget/AutoScrollHelper$1;)V
     .locals 0
-    .param p1    # Lcom/android/internal/widget/AutoScrollHelper;
-    .param p2    # Lcom/android/internal/widget/AutoScrollHelper$1;
 
     invoke-direct {p0, p1}, Lcom/android/internal/widget/AutoScrollHelper$ScrollAnimationRunnable;-><init>(Lcom/android/internal/widget/AutoScrollHelper;)V
 

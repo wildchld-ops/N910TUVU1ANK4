@@ -33,8 +33,6 @@
 # virtual methods
 .method public onDataConnectionStateChanged(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     invoke-super {p0, p1, p2}, Landroid/telephony/PhoneStateListener;->onDataConnectionStateChanged(II)V
 

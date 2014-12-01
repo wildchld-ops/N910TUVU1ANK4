@@ -367,13 +367,6 @@
 
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;ILcom/sec/android/glview/TwGLViewGroup;Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;Lcom/sec/android/app/camera/MenuResourceDepot;II)V
     .locals 7
-    .param p1    # Lcom/sec/android/app/camera/Camera;
-    .param p2    # I
-    .param p3    # Lcom/sec/android/glview/TwGLViewGroup;
-    .param p4    # Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;
-    .param p5    # Lcom/sec/android/app/camera/MenuResourceDepot;
-    .param p6    # I
-    .param p7    # I
 
     const/4 v6, 0x1
 
@@ -920,9 +913,6 @@
 
 .method private initSettingList(Lcom/sec/android/glview/TwGLViewGroup;Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;Ljava/util/HashMap;I)V
     .locals 11
-    .param p1    # Lcom/sec/android/glview/TwGLViewGroup;
-    .param p2    # Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;
-    .param p4    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1611,7 +1601,6 @@
 
 .method public onActivityTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 2
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v1, 0x1
 
@@ -1631,7 +1620,6 @@
 
 .method public onAnimationEnd(Landroid/view/animation/Animation;)Z
     .locals 1
-    .param p1    # Landroid/view/animation/Animation;
 
     const/4 v0, 0x0
 
@@ -1640,7 +1628,6 @@
 
 .method public onAnimationStart(Landroid/view/animation/Animation;)Z
     .locals 1
-    .param p1    # Landroid/view/animation/Animation;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -1686,14 +1673,12 @@
 
 .method public onCancelDragItemInDragDropBox(Lcom/sec/android/glview/TwGLView;)V
     .locals 0
-    .param p1    # Lcom/sec/android/glview/TwGLView;
 
     return-void
 .end method
 
 .method public onDragEndItemInDragDropBox(Lcom/sec/android/glview/TwGLView;)V
     .locals 1
-    .param p1    # Lcom/sec/android/glview/TwGLView;
 
     const/4 v0, 0x4
 
@@ -1712,11 +1697,6 @@
 
 .method public onDragItemInDragDropBox(Lcom/sec/android/glview/TwGLView;FFFF)V
     .locals 3
-    .param p1    # Lcom/sec/android/glview/TwGLView;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
 
     sget v1, Lcom/sec/android/app/camera/glwidget/TwGLFavoriteSettingsMenu;->SIDEBAR_BOUNDARY_LINE:I
 
@@ -1789,7 +1769,6 @@
 
 .method public onDragStartItemInDragDropBox(Lcom/sec/android/glview/TwGLView;)V
     .locals 3
-    .param p1    # Lcom/sec/android/glview/TwGLView;
 
     const/4 v1, 0x0
 
@@ -1864,7 +1843,6 @@
 
 .method public onOrientationChanged(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLFavoriteSettingsMenu;->mOrientation:I
 
@@ -1893,7 +1871,6 @@
 
 .method public onShortcutBoxCancelListener(Lcom/sec/android/glview/TwGLView;)V
     .locals 1
-    .param p1    # Lcom/sec/android/glview/TwGLView;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -2567,7 +2544,6 @@
 
 .method public setEditableSideBarBlueAreaVisibility(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLFavoriteSettingsMenu;->mEditableSideBarAreaBlueBg:Lcom/sec/android/glview/TwGLImage;
 
@@ -2583,7 +2559,6 @@
 
 .method public setSelectedMenuId(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLFavoriteSettingsMenu;->mSelectedMenuId:I
 

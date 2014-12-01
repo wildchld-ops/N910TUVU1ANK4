@@ -90,7 +90,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 8
-    .param p1    # Landroid/content/Context;
 
     const-wide/16 v6, 0x0
 
@@ -358,7 +357,6 @@
 
 .method static synthetic access$000(Lcom/android/server/wifioffload/WifiOffloadService;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/server/wifioffload/WifiOffloadService;
 
     iget-object v0, p0, Lcom/android/server/wifioffload/WifiOffloadService;->mPackageName:Ljava/lang/String;
 
@@ -367,8 +365,6 @@
 
 .method static synthetic access$100(Lcom/android/server/wifioffload/WifiOffloadService;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/server/wifioffload/WifiOffloadService;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/wifioffload/WifiOffloadService;->checkWifiOffloadConditions(Ljava/lang/String;)V
 
@@ -377,7 +373,6 @@
 
 .method static synthetic access$1000(Lcom/android/server/wifioffload/WifiOffloadService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/wifioffload/WifiOffloadService;
 
     iget-boolean v0, p0, Lcom/android/server/wifioffload/WifiOffloadService;->mShowWifiPopupEnabled:Z
 
@@ -386,8 +381,6 @@
 
 .method static synthetic access$1002(Lcom/android/server/wifioffload/WifiOffloadService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/wifioffload/WifiOffloadService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/wifioffload/WifiOffloadService;->mShowWifiPopupEnabled:Z
 
@@ -396,7 +389,6 @@
 
 .method static synthetic access$200(Lcom/android/server/wifioffload/WifiOffloadService;)V
     .locals 0
-    .param p0    # Lcom/android/server/wifioffload/WifiOffloadService;
 
     invoke-direct {p0}, Lcom/android/server/wifioffload/WifiOffloadService;->startWifiOffloadActivity()V
 
@@ -405,7 +397,6 @@
 
 .method static synthetic access$300(Lcom/android/server/wifioffload/WifiOffloadService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/wifioffload/WifiOffloadService;
 
     iget-boolean v0, p0, Lcom/android/server/wifioffload/WifiOffloadService;->mWifiEnabled:Z
 
@@ -414,8 +405,6 @@
 
 .method static synthetic access$302(Lcom/android/server/wifioffload/WifiOffloadService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/wifioffload/WifiOffloadService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/wifioffload/WifiOffloadService;->mWifiEnabled:Z
 
@@ -424,8 +413,6 @@
 
 .method static synthetic access$402(Lcom/android/server/wifioffload/WifiOffloadService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/wifioffload/WifiOffloadService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/wifioffload/WifiOffloadService;->isTimerRunning:Z
 
@@ -434,8 +421,6 @@
 
 .method static synthetic access$502(Lcom/android/server/wifioffload/WifiOffloadService;J)J
     .locals 0
-    .param p0    # Lcom/android/server/wifioffload/WifiOffloadService;
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/android/server/wifioffload/WifiOffloadService;->mLatestWifiScanTime:J
 
@@ -444,7 +429,6 @@
 
 .method static synthetic access$600(Lcom/android/server/wifioffload/WifiOffloadService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/wifioffload/WifiOffloadService;
 
     iget-boolean v0, p0, Lcom/android/server/wifioffload/WifiOffloadService;->mWifiConnectedToAP:Z
 
@@ -453,8 +437,6 @@
 
 .method static synthetic access$602(Lcom/android/server/wifioffload/WifiOffloadService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/wifioffload/WifiOffloadService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/wifioffload/WifiOffloadService;->mWifiConnectedToAP:Z
 
@@ -463,7 +445,6 @@
 
 .method static synthetic access$700(Lcom/android/server/wifioffload/WifiOffloadService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/wifioffload/WifiOffloadService;
 
     iget-boolean v0, p0, Lcom/android/server/wifioffload/WifiOffloadService;->mMobileHotSpotEnabled:Z
 
@@ -472,8 +453,6 @@
 
 .method static synthetic access$702(Lcom/android/server/wifioffload/WifiOffloadService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/wifioffload/WifiOffloadService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/wifioffload/WifiOffloadService;->mMobileHotSpotEnabled:Z
 
@@ -482,7 +461,6 @@
 
 .method static synthetic access$800(Lcom/android/server/wifioffload/WifiOffloadService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/wifioffload/WifiOffloadService;
 
     iget-boolean v0, p0, Lcom/android/server/wifioffload/WifiOffloadService;->mAirPlaneModeEnabled:Z
 
@@ -491,8 +469,6 @@
 
 .method static synthetic access$802(Lcom/android/server/wifioffload/WifiOffloadService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/wifioffload/WifiOffloadService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/wifioffload/WifiOffloadService;->mAirPlaneModeEnabled:Z
 
@@ -501,7 +477,6 @@
 
 .method static synthetic access$900(Lcom/android/server/wifioffload/WifiOffloadService;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/server/wifioffload/WifiOffloadService;
 
     iget-object v0, p0, Lcom/android/server/wifioffload/WifiOffloadService;->mContext:Landroid/content/Context;
 
@@ -510,7 +485,6 @@
 
 .method private addDumpLogs(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/server/wifioffload/WifiOffloadService;->mWifiOffloadLog:Ljava/lang/StringBuilder;
 
@@ -637,9 +611,6 @@
 
 .method private calculateDataUsageforInterface(ILjava/lang/String;Landroid/net/NetworkTemplate;)J
     .locals 10
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/net/NetworkTemplate;
 
     invoke-direct {p0, p1, p3}, Lcom/android/server/wifioffload/WifiOffloadService;->getDataUsageForUid(ILandroid/net/NetworkTemplate;)J
 
@@ -794,7 +765,6 @@
 
 .method private checkWifiOffloadConditions(Ljava/lang/String;)V
     .locals 9
-    .param p1    # Ljava/lang/String;
 
     const/4 v8, 0x0
 
@@ -1188,7 +1158,6 @@
 
 .method private static getActiveSubscriberId(Landroid/content/Context;)Ljava/lang/String;
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     const-string/jumbo v1, "phone"
 
@@ -1215,7 +1184,6 @@
 
 .method private getAppLaunchCount(Ljava/lang/String;)I
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     const/4 v7, 0x0
 
@@ -1560,8 +1528,6 @@
 
 .method private getDataUsageForUid(ILandroid/net/NetworkTemplate;)J
     .locals 13
-    .param p1    # I
-    .param p2    # Landroid/net/NetworkTemplate;
 
     const/4 v9, 0x0
 
@@ -1773,7 +1739,6 @@
 
 .method private getListOfDependentPackageNamesForDataUsage(Ljava/lang/String;)Ljava/util/List;
     .locals 2
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1806,7 +1771,6 @@
 
 .method private insertDataUsage(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const-string v1, "WifiOffloadServiceNew"
 
@@ -1861,7 +1825,6 @@
 
 .method private isAppBlackListed(Ljava/lang/String;)Z
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     iget-object v6, p0, Lcom/android/server/wifioffload/WifiOffloadService;->mContext:Landroid/content/Context;
 
@@ -1927,7 +1890,6 @@
 
 .method private isAppDataUsageLimitExceeded(Ljava/lang/String;)Z
     .locals 13
-    .param p1    # Ljava/lang/String;
 
     const/4 v12, 0x1
 
@@ -2387,7 +2349,6 @@
 
 .method private isAppInBackground(Ljava/lang/String;)Z
     .locals 11
-    .param p1    # Ljava/lang/String;
 
     iget-object v8, p0, Lcom/android/server/wifioffload/WifiOffloadService;->mContext:Landroid/content/Context;
 
@@ -2533,7 +2494,6 @@
 
 .method private isTimerRunning(I)Z
     .locals 4
-    .param p1    # I
 
     iget-boolean v0, p0, Lcom/android/server/wifioffload/WifiOffloadService;->isTimerRunning:Z
 
@@ -2624,8 +2584,6 @@
 
 .method private updateAppLaunchCount(Ljava/lang/String;I)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     new-instance v2, Landroid/content/ContentValues;
 
@@ -2680,7 +2638,6 @@
 # virtual methods
 .method public checkAppForWiFiOffloading(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/server/wifioffload/WifiOffloadService;->mPackageName:Ljava/lang/String;
 
@@ -2760,7 +2717,6 @@
 
 .method public checkAppNeedsMoveToFront(I)V
     .locals 5
-    .param p1    # I
 
     const-string v2, "WifiOffloadServiceNew"
 
@@ -2814,9 +2770,6 @@
 
 .method protected dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     const-string v0, "WifiOffloadServiceNew"
 

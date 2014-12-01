@@ -69,7 +69,7 @@
 
     move-result v1
 
-    invoke-virtual {v0, v1}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+    invoke-virtual {v0, v1}, Landroid/preference/SwitchPreference;->setChecked(Z)V
 
     return-void
 .end method
@@ -247,7 +247,7 @@
 
     iget-object v3, p0, Lcom/android/phone/AssistedDialingEnabler;->mSwitchPreference:Landroid/preference/SwitchPreference;
 
-    invoke-virtual {v3}, Landroid/preference/TwoStatePreference;->isChecked()Z
+    invoke-virtual {v3}, Landroid/preference/SwitchPreference;->isChecked()Z
 
     move-result v3
 
@@ -259,7 +259,7 @@
     :cond_0
     iget-object v3, p0, Lcom/android/phone/AssistedDialingEnabler;->mSwitchPreference:Landroid/preference/SwitchPreference;
 
-    invoke-virtual {v3, v0}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+    invoke-virtual {v3, v0}, Landroid/preference/SwitchPreference;->setChecked(Z)V
 
     iget-object v3, p0, Lcom/android/phone/AssistedDialingEnabler;->mContext:Landroid/content/Context;
 
@@ -301,7 +301,7 @@
 
     iget-object v0, p0, Lcom/android/phone/AssistedDialingEnabler;->mSwitch:Landroid/widget/Switch;
 
-    invoke-virtual {v0, v2}, Landroid/widget/CompoundButton;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
+    invoke-virtual {v0, v2}, Landroid/widget/Switch;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
     :cond_0
     iget-object v0, p0, Lcom/android/phone/AssistedDialingEnabler;->mSwitchPreference:Landroid/preference/SwitchPreference;
@@ -310,7 +310,7 @@
 
     iget-object v0, p0, Lcom/android/phone/AssistedDialingEnabler;->mSwitchPreference:Landroid/preference/SwitchPreference;
 
-    invoke-virtual {v0, v2}, Landroid/preference/Preference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
+    invoke-virtual {v0, v2}, Landroid/preference/SwitchPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     :cond_1
     return-void
@@ -331,7 +331,7 @@
 
     iget-object v0, p0, Lcom/android/phone/AssistedDialingEnabler;->mSwitch:Landroid/widget/Switch;
 
-    invoke-virtual {v0, p0}, Landroid/widget/CompoundButton;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
+    invoke-virtual {v0, p0}, Landroid/widget/Switch;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
     :cond_0
     iget-object v0, p0, Lcom/android/phone/AssistedDialingEnabler;->mSwitchPreference:Landroid/preference/SwitchPreference;
@@ -340,7 +340,7 @@
 
     iget-object v0, p0, Lcom/android/phone/AssistedDialingEnabler;->mSwitchPreference:Landroid/preference/SwitchPreference;
 
-    invoke-virtual {v0, p0}, Landroid/preference/Preference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
+    invoke-virtual {v0, p0}, Landroid/preference/SwitchPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     iget-object v0, p0, Lcom/android/phone/AssistedDialingEnabler;->mSwitchPreference:Landroid/preference/SwitchPreference;
 
@@ -350,7 +350,7 @@
 
     move-result v1
 
-    invoke-virtual {v0, v1}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+    invoke-virtual {v0, v1}, Landroid/preference/SwitchPreference;->setChecked(Z)V
 
     :cond_1
     return-void

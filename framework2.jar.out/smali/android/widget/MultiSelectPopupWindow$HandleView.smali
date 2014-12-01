@@ -82,8 +82,6 @@
 # direct methods
 .method public constructor <init>(Landroid/widget/MultiSelectPopupWindow;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
     .locals 6
-    .param p2    # Landroid/graphics/drawable/Drawable;
-    .param p3    # Landroid/graphics/drawable/Drawable;
 
     const/4 v5, 0x1
 
@@ -374,7 +372,6 @@
 
 .method protected onDraw(Landroid/graphics/Canvas;)V
     .locals 5
-    .param p1    # Landroid/graphics/Canvas;
 
     const/4 v4, 0x0
 
@@ -411,8 +408,6 @@
 
 .method protected onMeasure(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Landroid/widget/MultiSelectPopupWindow$HandleView;->mDrawable:Landroid/graphics/drawable/Drawable;
 
@@ -433,7 +428,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 15
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual/range {p1 .. p1}, Landroid/view/MotionEvent;->getActionMasked()I
 
@@ -799,9 +793,6 @@
 
 .method protected positionAtCursorOffset(IZZ)V
     .locals 7
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # Z
 
     const/4 v4, 0x1
 
@@ -1284,10 +1275,6 @@
 
 .method public updatePosition(IIZZ)V
     .locals 10
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # Z
 
     invoke-virtual {p0}, Landroid/widget/MultiSelectPopupWindow$HandleView;->getCurrentCursorOffset()I
 

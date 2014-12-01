@@ -23,11 +23,6 @@
 # direct methods
 .method public constructor <init>(Landroid/speech/tts/TextToSpeechService;Ljava/lang/Object;IILandroid/os/Bundle;Landroid/net/Uri;)V
     .locals 6
-    .param p2    # Ljava/lang/Object;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Landroid/os/Bundle;
-    .param p6    # Landroid/net/Uri;
 
     iput-object p1, p0, Landroid/speech/tts/TextToSpeechService$AudioSpeechItem;->this$0:Landroid/speech/tts/TextToSpeechService;
 

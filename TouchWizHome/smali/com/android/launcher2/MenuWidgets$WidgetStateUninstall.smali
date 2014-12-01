@@ -33,8 +33,6 @@
 
 .method synthetic constructor <init>(Lcom/android/launcher2/MenuWidgets;Lcom/android/launcher2/MenuWidgets$1;)V
     .locals 0
-    .param p1    # Lcom/android/launcher2/MenuWidgets;
-    .param p2    # Lcom/android/launcher2/MenuWidgets$1;
 
     invoke-direct {p0, p1}, Lcom/android/launcher2/MenuWidgets$WidgetStateUninstall;-><init>(Lcom/android/launcher2/MenuWidgets;)V
 
@@ -45,7 +43,6 @@
 # virtual methods
 .method public enter(Lcom/android/launcher2/MenuWidgets$WidgetState;Ljava/util/List;)V
     .locals 8
-    .param p1    # Lcom/android/launcher2/MenuWidgets$WidgetState;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -176,7 +173,6 @@
 
 .method public exit(Lcom/android/launcher2/MenuWidgets$WidgetState;Ljava/util/List;)V
     .locals 6
-    .param p1    # Lcom/android/launcher2/MenuWidgets$WidgetState;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -259,8 +255,6 @@
 
 .method public onClickWidget(Lcom/android/launcher2/HomePendingItem;Landroid/view/View;)V
     .locals 3
-    .param p1    # Lcom/android/launcher2/HomePendingItem;
-    .param p2    # Landroid/view/View;
 
     iget-object v0, p0, Lcom/android/launcher2/MenuWidgets$WidgetStateUninstall;->this$0:Lcom/android/launcher2/MenuWidgets;
 

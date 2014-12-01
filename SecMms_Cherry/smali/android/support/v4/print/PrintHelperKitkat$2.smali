@@ -64,7 +64,6 @@
 
 .method static synthetic access$100(Landroid/support/v4/print/PrintHelperKitkat$2;)V
     .locals 0
-    .param p0    # Landroid/support/v4/print/PrintHelperKitkat$2;
 
     invoke-direct {p0}, Landroid/support/v4/print/PrintHelperKitkat$2;->cancelLoad()V
 
@@ -137,11 +136,6 @@
 
 .method public onLayout(Landroid/print/PrintAttributes;Landroid/print/PrintAttributes;Landroid/os/CancellationSignal;Landroid/print/PrintDocumentAdapter$LayoutResultCallback;Landroid/os/Bundle;)V
     .locals 9
-    .param p1    # Landroid/print/PrintAttributes;
-    .param p2    # Landroid/print/PrintAttributes;
-    .param p3    # Landroid/os/CancellationSignal;
-    .param p4    # Landroid/print/PrintDocumentAdapter$LayoutResultCallback;
-    .param p5    # Landroid/os/Bundle;
 
     const/4 v8, 0x0
 
@@ -229,10 +223,6 @@
 
 .method public onWrite([Landroid/print/PageRange;Landroid/os/ParcelFileDescriptor;Landroid/os/CancellationSignal;Landroid/print/PrintDocumentAdapter$WriteResultCallback;)V
     .locals 9
-    .param p1    # [Landroid/print/PageRange;
-    .param p2    # Landroid/os/ParcelFileDescriptor;
-    .param p3    # Landroid/os/CancellationSignal;
-    .param p4    # Landroid/print/PrintDocumentAdapter$WriteResultCallback;
 
     new-instance v4, Landroid/print/pdf/PrintedPdfDocument;
 

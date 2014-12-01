@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Lcom/android/mms/ui/ManageSDMessages;Lcom/android/mms/ui/ManageSDMessages$1;)V
     .locals 0
-    .param p1    # Lcom/android/mms/ui/ManageSDMessages;
-    .param p2    # Lcom/android/mms/ui/ManageSDMessages$1;
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/ManageSDMessages$SaveRunnable;-><init>(Lcom/android/mms/ui/ManageSDMessages;)V
 

@@ -62,10 +62,6 @@
 
 .method private constructor <init>(IFFF)V
     .locals 0
-    .param p1    # I
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -100,10 +96,6 @@
 
 .method public static obtain(IFFF)Landroid/view/accessibility/AccessibilityNodeInfo$RangeInfo;
     .locals 2
-    .param p0    # I
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
 
     sget-object v1, Landroid/view/accessibility/AccessibilityNodeInfo$RangeInfo;->sPool:Landroid/util/Pools$SynchronizedPool;
 
@@ -128,7 +120,6 @@
 
 .method public static obtain(Landroid/view/accessibility/AccessibilityNodeInfo$RangeInfo;)Landroid/view/accessibility/AccessibilityNodeInfo$RangeInfo;
     .locals 4
-    .param p0    # Landroid/view/accessibility/AccessibilityNodeInfo$RangeInfo;
 
     iget v0, p0, Landroid/view/accessibility/AccessibilityNodeInfo$RangeInfo;->mType:I
 

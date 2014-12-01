@@ -99,7 +99,7 @@
 
     const v1, 0x7f040074
 
-    invoke-virtual {p0, v1}, Landroid/preference/DialogPreference;->setDialogLayoutResource(I)V
+    invoke-virtual {p0, v1}, Lcom/android/phone/EditPhoneNumberPreference;->setDialogLayoutResource(I)V
 
     new-instance v1, Landroid/content/Intent;
 
@@ -323,7 +323,7 @@
 
     iget-object v1, p0, Lcom/android/phone/EditPhoneNumberPreference;->editText:Landroid/widget/EditText;
 
-    invoke-virtual {v1}, Landroid/widget/TextView;->length()I
+    invoke-virtual {v1}, Landroid/widget/EditText;->length()I
 
     move-result v0
 
@@ -346,9 +346,9 @@
 
     if-eqz p2, :cond_0
 
-    invoke-virtual {p2, v0}, Landroid/widget/TextView;->setEnabled(Z)V
+    invoke-virtual {p2, v0}, Landroid/widget/EditText;->setEnabled(Z)V
 
-    invoke-virtual {p2, v0}, Landroid/view/View;->setFocusable(Z)V
+    invoke-virtual {p2, v0}, Landroid/widget/EditText;->setFocusable(Z)V
 
     :cond_0
     return-void
@@ -396,7 +396,7 @@
 
     iget-object v1, p0, Lcom/android/phone/EditPhoneNumberPreference;->editText:Landroid/widget/EditText;
 
-    invoke-virtual {v1, v2}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v1, v2}, Landroid/widget/EditText;->setVisibility(I)V
 
     iget-object v1, p0, Lcom/android/phone/EditPhoneNumberPreference;->mGetDefaultNumberListener:Lcom/android/phone/EditPhoneNumberPreference$GetDefaultNumberListener;
 
@@ -438,7 +438,7 @@
 
     iget-object v2, p0, Lcom/android/phone/EditPhoneNumberPreference;->mPhoneNumber:Ljava/lang/String;
 
-    invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {v1, v2}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
     invoke-virtual {p0}, Lcom/android/phone/EditPhoneNumberPreference;->makeCursorPosition()V
 
@@ -448,7 +448,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v1, v2}, Landroid/widget/TextView;->setMovementMethod(Landroid/text/method/MovementMethod;)V
+    invoke-virtual {v1, v2}, Landroid/widget/EditText;->setMovementMethod(Landroid/text/method/MovementMethod;)V
 
     iget-object v1, p0, Lcom/android/phone/EditPhoneNumberPreference;->editText:Landroid/widget/EditText;
 
@@ -456,13 +456,13 @@
 
     move-result-object v2
 
-    invoke-virtual {v1, v2}, Landroid/widget/TextView;->setKeyListener(Landroid/text/method/KeyListener;)V
+    invoke-virtual {v1, v2}, Landroid/widget/EditText;->setKeyListener(Landroid/text/method/KeyListener;)V
 
     iget-object v1, p0, Lcom/android/phone/EditPhoneNumberPreference;->editText:Landroid/widget/EditText;
 
     iget-object v2, p0, Lcom/android/phone/EditPhoneNumberPreference;->mDialogFocusChangeListener:Landroid/view/View$OnFocusChangeListener;
 
-    invoke-virtual {v1, v2}, Landroid/view/View;->setOnFocusChangeListener(Landroid/view/View$OnFocusChangeListener;)V
+    invoke-virtual {v1, v2}, Landroid/widget/EditText;->setOnFocusChangeListener(Landroid/view/View$OnFocusChangeListener;)V
 
     :cond_1
     iget-object v1, p0, Lcom/android/phone/EditPhoneNumberPreference;->mContactPickButton:Landroid/widget/Button;
@@ -475,7 +475,7 @@
 
     invoke-direct {v2, p0}, Lcom/android/phone/EditPhoneNumberPreference$1;-><init>(Lcom/android/phone/EditPhoneNumberPreference;)V
 
-    invoke-virtual {v1, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v1, v2}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     :cond_2
     iget-boolean v1, p0, Lcom/android/phone/EditPhoneNumberPreference;->mIsContactsBtn:Z
@@ -490,7 +490,7 @@
 
     const/16 v2, 0x8
 
-    invoke-virtual {v1, v2}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v1, v2}, Landroid/widget/Button;->setVisibility(I)V
 
     :cond_3
     return-void
@@ -507,7 +507,7 @@
     .locals 5
     .param p1    # Landroid/view/View;
 
-    invoke-super {p0, p1}, Landroid/preference/Preference;->onBindView(Landroid/view/View;)V
+    invoke-super {p0, p1}, Landroid/preference/EditTextPreference;->onBindView(Landroid/view/View;)V
 
     const v3, 0x1020010
 
@@ -533,7 +533,7 @@
 
     if-nez v3, :cond_1
 
-    invoke-virtual {p0}, Landroid/preference/Preference;->getSummary()Ljava/lang/CharSequence;
+    invoke-virtual {p0}, Lcom/android/phone/EditPhoneNumberPreference;->getSummary()Ljava/lang/CharSequence;
 
     move-result-object v0
 
@@ -545,13 +545,13 @@
     const/4 v2, 0x0
 
     :goto_1
-    invoke-virtual {v1}, Landroid/view/View;->getVisibility()I
+    invoke-virtual {v1}, Landroid/widget/TextView;->getVisibility()I
 
     move-result v3
 
     if-eq v2, v3, :cond_0
 
-    invoke-virtual {v1, v2}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v1, v2}, Landroid/widget/TextView;->setVisibility(I)V
 
     :cond_0
     return-void
@@ -566,7 +566,7 @@
 
     if-nez v3, :cond_3
 
-    invoke-virtual {p0}, Landroid/preference/Preference;->getSummary()Ljava/lang/CharSequence;
+    invoke-virtual {p0}, Lcom/android/phone/EditPhoneNumberPreference;->getSummary()Ljava/lang/CharSequence;
 
     move-result-object v0
 
@@ -579,7 +579,7 @@
     goto :goto_2
 
     :cond_4
-    invoke-virtual {p0}, Landroid/preference/Preference;->getSummary()Ljava/lang/CharSequence;
+    invoke-virtual {p0}, Lcom/android/phone/EditPhoneNumberPreference;->getSummary()Ljava/lang/CharSequence;
 
     move-result-object v0
 
@@ -627,7 +627,7 @@
     :cond_1
     iput p2, p0, Lcom/android/phone/EditPhoneNumberPreference;->mButtonClicked:I
 
-    invoke-super {p0, p1, p2}, Landroid/preference/DialogPreference;->onClick(Landroid/content/DialogInterface;I)V
+    invoke-super {p0, p1, p2}, Landroid/preference/EditTextPreference;->onClick(Landroid/content/DialogInterface;I)V
 
     return-void
 
@@ -694,7 +694,7 @@
 
     move-result-object v0
 
-    invoke-virtual {p0, v0}, Landroid/preference/EditTextPreference;->setText(Ljava/lang/String;)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/EditPhoneNumberPreference;->setText(Ljava/lang/String;)V
 
     :goto_1
     iget-object v0, p0, Lcom/android/phone/EditPhoneNumberPreference;->mDialogOnClosedListener:Lcom/android/phone/EditPhoneNumberPreference$OnDialogClosedListener;
@@ -735,7 +735,7 @@
 
     iget-object v0, p0, Lcom/android/phone/EditPhoneNumberPreference;->editText:Landroid/widget/EditText;
 
-    invoke-virtual {v0, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {v0, p1}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
     invoke-virtual {p0}, Lcom/android/phone/EditPhoneNumberPreference;->makeCursorPosition()V
 
@@ -798,7 +798,7 @@
 
     move-result-object v0
 
-    invoke-virtual {p0, v0}, Landroid/preference/Preference;->getPersistedString(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lcom/android/phone/EditPhoneNumberPreference;->getPersistedString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p2
 
@@ -819,7 +819,7 @@
 
     iput-object p1, p0, Lcom/android/phone/EditPhoneNumberPreference;->mEncodedText:Ljava/lang/String;
 
-    invoke-super {p0, p1}, Landroid/preference/Preference;->persistString(Ljava/lang/String;)Z
+    invoke-super {p0, p1}, Landroid/preference/EditTextPreference;->persistString(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -922,9 +922,9 @@
 
     move-result-object v0
 
-    invoke-virtual {p0, v0}, Landroid/preference/EditTextPreference;->setText(Ljava/lang/String;)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/EditPhoneNumberPreference;->setText(Ljava/lang/String;)V
 
-    invoke-virtual {p0}, Landroid/preference/Preference;->notifyChanged()V
+    invoke-virtual {p0}, Lcom/android/phone/EditPhoneNumberPreference;->notifyChanged()V
 
     return-object p0
 .end method
@@ -941,7 +941,7 @@
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {p0}, Landroid/preference/Preference;->notifyChanged()V
+    invoke-virtual {p0}, Lcom/android/phone/EditPhoneNumberPreference;->notifyChanged()V
 
     :cond_0
     return-object p0
@@ -957,9 +957,9 @@
 
     move-result-object v0
 
-    invoke-virtual {p0, v0}, Landroid/preference/EditTextPreference;->setText(Ljava/lang/String;)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/EditPhoneNumberPreference;->setText(Ljava/lang/String;)V
 
-    invoke-virtual {p0}, Landroid/preference/Preference;->notifyChanged()V
+    invoke-virtual {p0}, Lcom/android/phone/EditPhoneNumberPreference;->notifyChanged()V
 
     return-object p0
 .end method
@@ -1069,9 +1069,9 @@
 
     const/4 v3, 0x0
 
-    invoke-super {p0, p1}, Landroid/preference/DialogPreference;->showDialog(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Landroid/preference/EditTextPreference;->showDialog(Landroid/os/Bundle;)V
 
-    invoke-virtual {p0}, Landroid/preference/DialogPreference;->getDialog()Landroid/app/Dialog;
+    invoke-virtual {p0}, Lcom/android/phone/EditPhoneNumberPreference;->getDialog()Landroid/app/Dialog;
 
     move-result-object v1
 
@@ -1083,7 +1083,7 @@
 
     invoke-virtual {v0, v1}, Landroid/view/Window;->setSoftInputMode(I)V
 
-    invoke-virtual {p0}, Landroid/preference/DialogPreference;->getDialog()Landroid/app/Dialog;
+    invoke-virtual {p0}, Lcom/android/phone/EditPhoneNumberPreference;->getDialog()Landroid/app/Dialog;
 
     move-result-object v1
 
@@ -1116,7 +1116,7 @@
     move v1, v2
 
     :goto_0
-    invoke-virtual {v4, v1}, Landroid/widget/TextView;->setEnabled(Z)V
+    invoke-virtual {v4, v1}, Landroid/widget/Button;->setEnabled(Z)V
 
     :goto_1
     iget-object v1, p0, Lcom/android/phone/EditPhoneNumberPreference;->editText:Landroid/widget/EditText;
@@ -1125,7 +1125,7 @@
 
     invoke-direct {v2, p0}, Lcom/android/phone/EditPhoneNumberPreference$2;-><init>(Lcom/android/phone/EditPhoneNumberPreference;)V
 
-    invoke-virtual {v1, v2}, Landroid/widget/TextView;->addTextChangedListener(Landroid/text/TextWatcher;)V
+    invoke-virtual {v1, v2}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
     :goto_2
     return-void
@@ -1153,7 +1153,7 @@
     if-nez v4, :cond_2
 
     :goto_3
-    invoke-virtual {v1, v2}, Landroid/widget/TextView;->setEnabled(Z)V
+    invoke-virtual {v1, v2}, Landroid/widget/Button;->setEnabled(Z)V
 
     goto :goto_1
 
@@ -1178,7 +1178,7 @@
     if-nez v4, :cond_4
 
     :goto_4
-    invoke-virtual {v1, v2}, Landroid/widget/TextView;->setEnabled(Z)V
+    invoke-virtual {v1, v2}, Landroid/widget/Button;->setEnabled(Z)V
 
     iget-object v1, p0, Lcom/android/phone/EditPhoneNumberPreference;->editText:Landroid/widget/EditText;
 
@@ -1186,7 +1186,7 @@
 
     invoke-direct {v2, p0}, Lcom/android/phone/EditPhoneNumberPreference$3;-><init>(Lcom/android/phone/EditPhoneNumberPreference;)V
 
-    invoke-virtual {v1, v2}, Landroid/widget/TextView;->addTextChangedListener(Landroid/text/TextWatcher;)V
+    invoke-virtual {v1, v2}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
     goto :goto_2
 

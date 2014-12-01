@@ -58,7 +58,6 @@
 
 .method public setUseIshSaveFileOption(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/rcs/Features;->mIshSaveFile:Z
 
@@ -67,7 +66,6 @@
 
 .method public setUsePermanentOption(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/rcs/Features;->mPermanentDisable:Z
 
@@ -76,7 +74,6 @@
 
 .method public setUseTimestampOption(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/rcs/Features;->mTimestamp:Z
 
@@ -85,7 +82,6 @@
 
 .method public setUseTrafficOption(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/rcs/Features;->mTrafficSettings:Z
 

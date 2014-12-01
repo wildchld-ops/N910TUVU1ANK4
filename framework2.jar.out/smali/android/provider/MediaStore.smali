@@ -96,7 +96,6 @@
 
 .method public static getMediaProviderDbLogUri(Ljava/lang/String;)Landroid/net/Uri;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -143,7 +142,6 @@
 
 .method public static getPlaylistsSaveUri(Ljava/lang/String;)Landroid/net/Uri;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -178,7 +176,6 @@
 
 .method public static getPlaylistsSyncUri(Ljava/lang/String;)Landroid/net/Uri;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -213,7 +210,6 @@
 
 .method public static getRestoreImagesUri(Ljava/lang/String;)Landroid/net/Uri;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -248,7 +244,6 @@
 
 .method public static getRestoreSdcardUri(Ljava/lang/String;)Landroid/net/Uri;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -283,7 +278,6 @@
 
 .method public static getVersion(Landroid/content/Context;)Ljava/lang/String;
     .locals 7
-    .param p0    # Landroid/content/Context;
 
     const/4 v2, 0x0
 

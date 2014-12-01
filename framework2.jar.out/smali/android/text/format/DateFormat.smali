@@ -99,9 +99,6 @@
 
 .method private static appendQuotedText(Landroid/text/SpannableStringBuilder;II)I
     .locals 4
-    .param p0    # Landroid/text/SpannableStringBuilder;
-    .param p1    # I
-    .param p2    # I
 
     const/16 v3, 0x27
 
@@ -186,8 +183,6 @@
 
 .method public static format(Ljava/lang/CharSequence;J)Ljava/lang/CharSequence;
     .locals 1
-    .param p0    # Ljava/lang/CharSequence;
-    .param p1    # J
 
     new-instance v0, Ljava/util/Date;
 
@@ -202,8 +197,6 @@
 
 .method public static format(Ljava/lang/CharSequence;Ljava/util/Calendar;)Ljava/lang/CharSequence;
     .locals 10
-    .param p0    # Ljava/lang/CharSequence;
-    .param p1    # Ljava/util/Calendar;
 
     new-instance v7, Landroid/text/SpannableStringBuilder;
 
@@ -468,8 +461,6 @@
 
 .method public static format(Ljava/lang/CharSequence;Ljava/util/Date;)Ljava/lang/CharSequence;
     .locals 2
-    .param p0    # Ljava/lang/CharSequence;
-    .param p1    # Ljava/util/Date;
 
     new-instance v0, Ljava/util/GregorianCalendar;
 
@@ -486,8 +477,6 @@
 
 .method private static formatZoneOffset(II)Ljava/lang/String;
     .locals 6
-    .param p0    # I
-    .param p1    # I
 
     const/4 v5, 0x2
 
@@ -542,8 +531,6 @@
 
 .method public static getBestDateTimePattern(Ljava/util/Locale;Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p0    # Ljava/util/Locale;
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Ljava/util/Locale;->toString()Ljava/lang/String;
 
@@ -558,7 +545,6 @@
 
 .method public static getDateFormat(Landroid/content/Context;)Ljava/text/DateFormat;
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -579,8 +565,6 @@
 
 .method public static getDateFormatForSetting(Landroid/content/Context;Ljava/lang/String;)Ljava/text/DateFormat;
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p0, p1}, Landroid/text/format/DateFormat;->getDateFormatStringForSetting(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
 
@@ -595,7 +579,6 @@
 
 .method public static getDateFormatOrder(Landroid/content/Context;)[C
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Landroid/text/format/DateFormat;->getDateFormatString(Landroid/content/Context;)Ljava/lang/String;
 
@@ -610,7 +593,6 @@
 
 .method private static getDateFormatString(Landroid/content/Context;)Ljava/lang/String;
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -631,8 +613,6 @@
 
 .method private static getDateFormatStringForSetting(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
     .locals 10
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const/4 v6, 0x3
 
@@ -837,10 +817,6 @@
 
 .method private static getDayOfWeekString(Llibcore/icu/LocaleData;III)Ljava/lang/String;
     .locals 2
-    .param p0    # Llibcore/icu/LocaleData;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/16 v1, 0x63
 
@@ -913,7 +889,6 @@
 
 .method public static getLongDateFormat(Landroid/content/Context;)Ljava/text/DateFormat;
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     const/4 v0, 0x1
 
@@ -926,7 +901,6 @@
 
 .method public static getMediumDateFormat(Landroid/content/Context;)Ljava/text/DateFormat;
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     const/4 v0, 0x2
 
@@ -939,10 +913,6 @@
 
 .method private static getMonthString(Llibcore/icu/LocaleData;III)Ljava/lang/String;
     .locals 2
-    .param p0    # Llibcore/icu/LocaleData;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/16 v1, 0x4c
 
@@ -1028,7 +998,6 @@
 
 .method public static getTimeFormat(Landroid/content/Context;)Ljava/text/DateFormat;
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     new-instance v0, Ljava/text/SimpleDateFormat;
 
@@ -1043,7 +1012,6 @@
 
 .method public static getTimeFormatString(Landroid/content/Context;)Ljava/lang/String;
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -1078,8 +1046,6 @@
 
 .method private static getTimeZoneString(Ljava/util/Calendar;I)Ljava/lang/String;
     .locals 5
-    .param p0    # Ljava/util/Calendar;
-    .param p1    # I
 
     const/16 v4, 0x10
 
@@ -1136,8 +1102,6 @@
 
 .method private static getYearString(II)Ljava/lang/String;
     .locals 5
-    .param p0    # I
-    .param p1    # I
 
     const/4 v1, 0x2
 
@@ -1180,8 +1144,6 @@
 
 .method public static hasDesignator(Ljava/lang/CharSequence;C)Z
     .locals 6
-    .param p0    # Ljava/lang/CharSequence;
-    .param p1    # C
 
     const/4 v4, 0x0
 
@@ -1230,7 +1192,6 @@
 
 .method public static hasSeconds(Ljava/lang/CharSequence;)Z
     .locals 1
-    .param p0    # Ljava/lang/CharSequence;
 
     const/16 v0, 0x73
 
@@ -1243,7 +1204,6 @@
 
 .method public static is24HourFormat(Landroid/content/Context;)Z
     .locals 7
-    .param p0    # Landroid/content/Context;
 
     invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -1390,9 +1350,6 @@
 
 .method private static skipQuotedText(Ljava/lang/CharSequence;II)I
     .locals 4
-    .param p0    # Ljava/lang/CharSequence;
-    .param p1    # I
-    .param p2    # I
 
     const/16 v3, 0x27
 
@@ -1455,8 +1412,6 @@
 
 .method private static zeroPad(II)Ljava/lang/String;
     .locals 5
-    .param p0    # I
-    .param p1    # I
 
     invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
 

@@ -184,7 +184,7 @@
 
     invoke-direct {p0, v1, v2}, Lcom/android/phone/InCallSoundEQListPreference;->log(Ljava/lang/String;Z)V
 
-    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
+    invoke-virtual {v0}, Landroid/content/ActivityNotFoundException;->printStackTrace()V
 
     goto :goto_0
 .end method
@@ -192,7 +192,7 @@
 .method private init()V
     .locals 1
 
-    invoke-virtual {p0}, Landroid/preference/Preference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/InCallSoundEQListPreference;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -249,7 +249,7 @@
 
     invoke-direct {v0, p0}, Lcom/android/phone/InCallSoundEQListPreference$5;-><init>(Lcom/android/phone/InCallSoundEQListPreference;)V
 
-    invoke-virtual {p0, v0}, Landroid/preference/Preference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/InCallSoundEQListPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     return-void
 .end method
@@ -260,7 +260,7 @@
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Landroid/preference/Preference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/InCallSoundEQListPreference;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -358,7 +358,7 @@
     return-void
 
     :cond_0
-    invoke-super {p0, p1}, Landroid/preference/DialogPreference;->showDialog(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Landroid/preference/ListPreference;->showDialog(Landroid/os/Bundle;)V
 
     goto :goto_0
 .end method
@@ -407,19 +407,19 @@
 
     move-result-object v3
 
-    invoke-virtual {p0, v3}, Landroid/preference/ListPreference;->setValue(Ljava/lang/String;)V
+    invoke-virtual {p0, v3}, Lcom/android/phone/InCallSoundEQListPreference;->setValue(Ljava/lang/String;)V
 
-    invoke-virtual {p0}, Landroid/preference/ListPreference;->getValue()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/android/phone/InCallSoundEQListPreference;->getValue()Ljava/lang/String;
 
     move-result-object v4
 
-    invoke-virtual {p0, v4}, Landroid/preference/ListPreference;->findIndexOfValue(Ljava/lang/String;)I
+    invoke-virtual {p0, v4}, Lcom/android/phone/InCallSoundEQListPreference;->findIndexOfValue(Ljava/lang/String;)I
 
     move-result v2
 
     aget-object v4, v0, v2
 
-    invoke-virtual {p0, v4}, Landroid/preference/ListPreference;->setSummary(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, v4}, Lcom/android/phone/InCallSoundEQListPreference;->setSummary(Ljava/lang/CharSequence;)V
 
     return-void
 .end method

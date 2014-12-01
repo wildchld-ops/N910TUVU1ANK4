@@ -78,11 +78,6 @@
 
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;FFLcom/sec/android/glview/TwGLView;Lcom/sec/android/glview/TwGLView$OnTouchListener;)V
     .locals 1
-    .param p1    # Lcom/sec/android/app/camera/Camera;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # Lcom/sec/android/glview/TwGLView;
-    .param p5    # Lcom/sec/android/glview/TwGLView$OnTouchListener;
 
     invoke-virtual {p1}, Lcom/sec/android/app/camera/Camera;->getGLContext()Lcom/sec/android/glview/TwGLContext;
 
@@ -97,8 +92,6 @@
 
 .method private relocateItem(Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenuDragDropBox;Lcom/sec/android/glview/TwGLView;)V
     .locals 7
-    .param p1    # Lcom/sec/android/app/camera/glwidget/TwGLEditableShortcutMenuDragDropBox;
-    .param p2    # Lcom/sec/android/glview/TwGLView;
 
     const/4 v5, 0x0
 
@@ -201,8 +194,6 @@
 
 .method private translateDragShadowCenterToTouchPoint(FF)V
     .locals 7
-    .param p1    # F
-    .param p2    # F
 
     const/high16 v6, 0x40000000
 
@@ -327,7 +318,6 @@
 # virtual methods
 .method public addView(Lcom/sec/android/glview/TwGLView;)V
     .locals 3
-    .param p1    # Lcom/sec/android/glview/TwGLView;
 
     const/4 v2, 0x0
 
@@ -505,11 +495,6 @@
 
 .method public onDrag(Lcom/sec/android/glview/TwGLView;FFFF)V
     .locals 0
-    .param p1    # Lcom/sec/android/glview/TwGLView;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
 
     invoke-super/range {p0 .. p5}, Lcom/sec/android/app/camera/glwidget/TwGLDragDropBox;->onDrag(Lcom/sec/android/glview/TwGLView;FFFF)V
 
@@ -518,9 +503,6 @@
 
 .method public onDragEnd(Lcom/sec/android/glview/TwGLView;FF)V
     .locals 0
-    .param p1    # Lcom/sec/android/glview/TwGLView;
-    .param p2    # F
-    .param p3    # F
 
     invoke-super {p0, p1, p2, p3}, Lcom/sec/android/app/camera/glwidget/TwGLDragDropBox;->onDragEnd(Lcom/sec/android/glview/TwGLView;FF)V
 
@@ -529,9 +511,6 @@
 
 .method public onDragStart(Lcom/sec/android/glview/TwGLView;FF)V
     .locals 12
-    .param p1    # Lcom/sec/android/glview/TwGLView;
-    .param p2    # F
-    .param p3    # F
 
     const/4 v11, 0x1
 
@@ -631,8 +610,6 @@
 
 .method protected onDrop(Lcom/sec/android/glview/TwGLView;Lcom/sec/android/app/camera/glwidget/TwGLDragDropBox;)V
     .locals 2
-    .param p1    # Lcom/sec/android/glview/TwGLView;
-    .param p2    # Lcom/sec/android/app/camera/glwidget/TwGLDragDropBox;
 
     check-cast p1, Lcom/sec/android/app/camera/glwidget/TwGLItem;
 
@@ -661,7 +638,6 @@
 
 .method public setOnShortcutBoxCancelListener(Lcom/sec/android/app/camera/glwidget/TwGLEditQuickSettingsMenuDragDropBox$OnShortcutBoxCancelListener;)V
     .locals 0
-    .param p1    # Lcom/sec/android/app/camera/glwidget/TwGLEditQuickSettingsMenuDragDropBox$OnShortcutBoxCancelListener;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLEditQuickSettingsMenuDragDropBox;->mOnShortcutBoxCancelListener:Lcom/sec/android/app/camera/glwidget/TwGLEditQuickSettingsMenuDragDropBox$OnShortcutBoxCancelListener;
 

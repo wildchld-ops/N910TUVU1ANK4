@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Lcom/android/internal/util/StateMachine$SmHandler;Lcom/android/internal/util/StateMachine$1;)V
     .locals 0
-    .param p1    # Lcom/android/internal/util/StateMachine$SmHandler;
-    .param p2    # Lcom/android/internal/util/StateMachine$1;
 
     invoke-direct {p0, p1}, Lcom/android/internal/util/StateMachine$SmHandler$QuittingState;-><init>(Lcom/android/internal/util/StateMachine$SmHandler;)V
 
@@ -43,7 +41,6 @@
 # virtual methods
 .method public processMessage(Landroid/os/Message;)Z
     .locals 1
-    .param p1    # Landroid/os/Message;
 
     const/4 v0, 0x0
 

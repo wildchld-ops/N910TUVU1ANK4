@@ -22,7 +22,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/customizablekey/CustomizableKeySettings;)V
     .locals 0
-    .param p0    # Lcom/android/settings/customizablekey/CustomizableKeySettings;
 
     invoke-direct {p0}, Lcom/android/settings/customizablekey/CustomizableKeySettings;->updateUI()V
 
@@ -31,7 +30,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/customizablekey/CustomizableKeySettings;)V
     .locals 0
-    .param p0    # Lcom/android/settings/customizablekey/CustomizableKeySettings;
 
     invoke-direct {p0}, Lcom/android/settings/customizablekey/CustomizableKeySettings;->resetCustomizableKey()V
 
@@ -156,7 +154,6 @@
 # virtual methods
 .method public getApplicationName(Ljava/lang/String;)Ljava/lang/String;
     .locals 12
-    .param p1    # Ljava/lang/String;
 
     const/4 v11, 0x0
 
@@ -271,7 +268,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -316,7 +312,6 @@
 
 .method public onCreateDialog(I)Landroid/app/Dialog;
     .locals 5
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -418,8 +413,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 4
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     const/4 v1, 0x1
 

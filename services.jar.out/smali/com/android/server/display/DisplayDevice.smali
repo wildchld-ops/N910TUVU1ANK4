@@ -22,8 +22,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/display/DisplayAdapter;Landroid/os/IBinder;)V
     .locals 1
-    .param p1    # Lcom/android/server/display/DisplayAdapter;
-    .param p2    # Landroid/os/IBinder;
 
     const/4 v0, -0x1
 
@@ -56,7 +54,6 @@
 
 .method public dumpLocked(Ljava/io/PrintWriter;)V
     .locals 2
-    .param p1    # Ljava/io/PrintWriter;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -258,7 +255,6 @@
 
 .method public final populateViewportLocked(Lcom/android/server/display/DisplayViewport;)V
     .locals 4
-    .param p1    # Lcom/android/server/display/DisplayViewport;
 
     const/4 v1, 0x1
 
@@ -352,7 +348,6 @@
 
 .method public final setLayerStackInTransactionLocked(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Lcom/android/server/display/DisplayDevice;->mCurrentLayerStack:I
 
@@ -370,9 +365,6 @@
 
 .method public final setProjectionInTransactionLocked(ILandroid/graphics/Rect;Landroid/graphics/Rect;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/graphics/Rect;
-    .param p3    # Landroid/graphics/Rect;
 
     iget v0, p0, Lcom/android/server/display/DisplayDevice;->mCurrentOrientation:I
 
@@ -445,7 +437,6 @@
 
 .method public final setSurfaceInTransactionLocked(Landroid/view/Surface;)V
     .locals 1
-    .param p1    # Landroid/view/Surface;
 
     iget-object v0, p0, Lcom/android/server/display/DisplayDevice;->mCurrentSurface:Landroid/view/Surface;
 

@@ -110,8 +110,6 @@
 
 .method synthetic constructor <init>(Lcom/android/settings/CredentialStorage;Lcom/android/settings/CredentialStorage$1;)V
     .locals 0
-    .param p1    # Lcom/android/settings/CredentialStorage;
-    .param p2    # Lcom/android/settings/CredentialStorage$1;
 
     invoke-direct {p0, p1}, Lcom/android/settings/CredentialStorage$ConfigureKeyGuardDialog;-><init>(Lcom/android/settings/CredentialStorage;)V
 
@@ -122,8 +120,6 @@
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 1
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     const/4 v0, -0x1
 
@@ -144,7 +140,6 @@
 
 .method public onDismiss(Landroid/content/DialogInterface;)V
     .locals 3
-    .param p1    # Landroid/content/DialogInterface;
 
     const/4 v2, 0x0
 

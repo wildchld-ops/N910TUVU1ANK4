@@ -138,7 +138,7 @@
 
     const v3, 0x7f09000c
 
-    invoke-virtual {v0, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {v0, v3}, Lcom/android/phone/PhoneGlobals;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -181,7 +181,7 @@
 
     const v3, 0x7f09000a
 
-    invoke-virtual {v0, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {v0, v3}, Lcom/android/phone/PhoneGlobals;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 

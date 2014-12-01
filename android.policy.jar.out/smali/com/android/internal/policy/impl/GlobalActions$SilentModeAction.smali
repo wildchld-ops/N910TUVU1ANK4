@@ -31,8 +31,6 @@
 # direct methods
 .method constructor <init>(Landroid/media/AudioManager;Landroid/os/Handler;)V
     .locals 1
-    .param p1    # Landroid/media/AudioManager;
-    .param p2    # Landroid/os/Handler;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -60,14 +58,12 @@
 
 .method private indexToRingerMode(I)I
     .locals 0
-    .param p1    # I
 
     return p1
 .end method
 
 .method private ringerModeToIndex(I)I
     .locals 0
-    .param p1    # I
 
     return p1
 .end method
@@ -76,10 +72,6 @@
 # virtual methods
 .method public create(Landroid/content/Context;Landroid/view/View;Landroid/view/ViewGroup;Landroid/view/LayoutInflater;)Landroid/view/View;
     .locals 10
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
-    .param p4    # Landroid/view/LayoutInflater;
 
     const/16 v9, 0x8
 
@@ -229,7 +221,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 6
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p1}, Landroid/view/View;->getTag()Ljava/lang/Object;
 

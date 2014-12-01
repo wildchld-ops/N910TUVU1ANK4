@@ -35,8 +35,6 @@
 # direct methods
 .method public constructor <init>(Landroid/widget/TextView;Landroid/view/View;I)V
     .locals 2
-    .param p2    # Landroid/view/View;
-    .param p3    # I
 
     iput-object p1, p0, Landroid/widget/TextView$MoreInfoHPW;->this$0:Landroid/widget/TextView;
 
@@ -341,7 +339,6 @@
 
 .method protected setInstanceByType(I)V
     .locals 1
-    .param p1    # I
 
     invoke-super {p0, p1}, Landroid/widget/HoverPopupWindow;->setInstanceByType(I)V
 

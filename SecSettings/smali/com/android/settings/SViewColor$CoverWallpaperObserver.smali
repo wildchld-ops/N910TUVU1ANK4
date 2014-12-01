@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/settings/SViewColor;Landroid/os/Handler;)V
     .locals 0
-    .param p2    # Landroid/os/Handler;
 
     iput-object p1, p0, Lcom/android/settings/SViewColor$CoverWallpaperObserver;->this$0:Lcom/android/settings/SViewColor;
 
@@ -34,7 +33,6 @@
 # virtual methods
 .method public onChange(Z)V
     .locals 5
-    .param p1    # Z
 
     const/4 v0, 0x0
 

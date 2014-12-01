@@ -39,7 +39,6 @@
 
 .method public constructor <init>(Lcom/android/server/pm/Installer;Ljava/lang/String;)V
     .locals 7
-    .param p2    # Ljava/lang/String;
 
     const/4 v6, 0x1
 
@@ -115,7 +114,6 @@
 
 .method private convertCmdStrToInt(Ljava/lang/String;)I
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -177,7 +175,6 @@
 
 .method public getExtra(I)Ljava/lang/String;
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;

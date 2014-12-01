@@ -36,7 +36,6 @@
 # virtual methods
 .method public final onLocationChanged(Landroid/location/Location;)V
     .locals 11
-    .param p1    # Landroid/location/Location;
 
     const/4 v8, 0x3
 
@@ -272,7 +271,6 @@
 
 .method public final onProviderDisabled(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/hardware/contextaware/dataprovider/androidprovider/RawGpsProvider$1;->this$0:Landroid/hardware/contextaware/dataprovider/androidprovider/RawGpsProvider;
 
@@ -338,7 +336,6 @@
 
 .method public final onProviderEnabled(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/hardware/contextaware/dataprovider/androidprovider/RawGpsProvider$1;->this$0:Landroid/hardware/contextaware/dataprovider/androidprovider/RawGpsProvider;
 
@@ -404,9 +401,6 @@
 
 .method public final onStatusChanged(Ljava/lang/String;ILandroid/os/Bundle;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Landroid/os/Bundle;
 
     iget-object v0, p0, Landroid/hardware/contextaware/dataprovider/androidprovider/RawGpsProvider$1;->this$0:Landroid/hardware/contextaware/dataprovider/androidprovider/RawGpsProvider;
 

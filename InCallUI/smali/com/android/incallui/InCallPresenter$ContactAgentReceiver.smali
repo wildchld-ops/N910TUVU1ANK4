@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Lcom/android/incallui/InCallPresenter;Lcom/android/incallui/InCallPresenter$1;)V
     .locals 0
-    .param p1    # Lcom/android/incallui/InCallPresenter;
-    .param p2    # Lcom/android/incallui/InCallPresenter$1;
 
     invoke-direct {p0, p1}, Lcom/android/incallui/InCallPresenter$ContactAgentReceiver;-><init>(Lcom/android/incallui/InCallPresenter;)V
 
@@ -43,8 +41,6 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 11
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     const/4 v10, -0x1
 

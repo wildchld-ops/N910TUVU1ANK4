@@ -291,7 +291,6 @@
 
 .method static synthetic access$000(Landroid/transition/Transition;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Landroid/transition/Transition;
 
     iget-object v0, p0, Landroid/transition/Transition;->mCurrentAnimators:Ljava/util/ArrayList;
 
@@ -300,8 +299,6 @@
 
 .method private captureHierarchy(Landroid/view/View;Z)V
     .locals 12
-    .param p1    # Landroid/view/View;
-    .param p2    # Z
 
     if-nez p1, :cond_1
 
@@ -608,8 +605,6 @@
 
 .method private excludeId(Ljava/util/ArrayList;IZ)Ljava/util/ArrayList;
     .locals 1
-    .param p2    # I
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -654,8 +649,6 @@
 
 .method private excludeType(Ljava/util/ArrayList;Ljava/lang/Class;Z)Ljava/util/ArrayList;
     .locals 0
-    .param p2    # Ljava/lang/Class;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -694,8 +687,6 @@
 
 .method private excludeView(Ljava/util/ArrayList;Landroid/view/View;Z)Ljava/util/ArrayList;
     .locals 0
-    .param p2    # Landroid/view/View;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -769,7 +760,6 @@
 
 .method private runAnimator(Landroid/animation/Animator;Landroid/util/ArrayMap;)V
     .locals 1
-    .param p1    # Landroid/animation/Animator;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -800,7 +790,6 @@
 # virtual methods
 .method public addListener(Landroid/transition/Transition$TransitionListener;)Landroid/transition/Transition;
     .locals 1
-    .param p1    # Landroid/transition/Transition$TransitionListener;
 
     iget-object v0, p0, Landroid/transition/Transition;->mListeners:Ljava/util/ArrayList;
 
@@ -822,7 +811,6 @@
 
 .method public addTarget(I)Landroid/transition/Transition;
     .locals 2
-    .param p1    # I
 
     if-lez p1, :cond_0
 
@@ -840,7 +828,6 @@
 
 .method public addTarget(Landroid/view/View;)Landroid/transition/Transition;
     .locals 1
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Landroid/transition/Transition;->mTargets:Ljava/util/ArrayList;
 
@@ -851,7 +838,6 @@
 
 .method protected animate(Landroid/animation/Animator;)V
     .locals 4
-    .param p1    # Landroid/animation/Animator;
 
     const-wide/16 v2, 0x0
 
@@ -999,8 +985,6 @@
 
 .method captureValues(Landroid/view/ViewGroup;Z)V
     .locals 5
-    .param p1    # Landroid/view/ViewGroup;
-    .param p2    # Z
 
     invoke-virtual {p0, p2}, Landroid/transition/Transition;->clearValues(Z)V
 
@@ -1191,7 +1175,6 @@
 
 .method clearValues(Z)V
     .locals 1
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -1300,9 +1283,6 @@
 
 .method public createAnimator(Landroid/view/ViewGroup;Landroid/transition/TransitionValues;Landroid/transition/TransitionValues;)Landroid/animation/Animator;
     .locals 1
-    .param p1    # Landroid/view/ViewGroup;
-    .param p2    # Landroid/transition/TransitionValues;
-    .param p3    # Landroid/transition/TransitionValues;
 
     const/4 v0, 0x0
 
@@ -1311,9 +1291,6 @@
 
 .method protected createAnimators(Landroid/view/ViewGroup;Landroid/transition/TransitionValuesMaps;Landroid/transition/TransitionValuesMaps;)V
     .locals 40
-    .param p1    # Landroid/view/ViewGroup;
-    .param p2    # Landroid/transition/TransitionValuesMaps;
-    .param p3    # Landroid/transition/TransitionValuesMaps;
 
     new-instance v7, Landroid/util/ArrayMap;
 
@@ -2587,8 +2564,6 @@
 
 .method public excludeChildren(IZ)Landroid/transition/Transition;
     .locals 1
-    .param p1    # I
-    .param p2    # Z
 
     iget-object v0, p0, Landroid/transition/Transition;->mTargetIdChildExcludes:Ljava/util/ArrayList;
 
@@ -2603,8 +2578,6 @@
 
 .method public excludeChildren(Landroid/view/View;Z)Landroid/transition/Transition;
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Z
 
     iget-object v0, p0, Landroid/transition/Transition;->mTargetChildExcludes:Ljava/util/ArrayList;
 
@@ -2619,8 +2592,6 @@
 
 .method public excludeChildren(Ljava/lang/Class;Z)Landroid/transition/Transition;
     .locals 1
-    .param p1    # Ljava/lang/Class;
-    .param p2    # Z
 
     iget-object v0, p0, Landroid/transition/Transition;->mTargetTypeChildExcludes:Ljava/util/ArrayList;
 
@@ -2635,8 +2606,6 @@
 
 .method public excludeTarget(IZ)Landroid/transition/Transition;
     .locals 1
-    .param p1    # I
-    .param p2    # Z
 
     iget-object v0, p0, Landroid/transition/Transition;->mTargetIdExcludes:Ljava/util/ArrayList;
 
@@ -2651,8 +2620,6 @@
 
 .method public excludeTarget(Landroid/view/View;Z)Landroid/transition/Transition;
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Z
 
     iget-object v0, p0, Landroid/transition/Transition;->mTargetExcludes:Ljava/util/ArrayList;
 
@@ -2667,8 +2634,6 @@
 
 .method public excludeTarget(Ljava/lang/Class;Z)Landroid/transition/Transition;
     .locals 1
-    .param p1    # Ljava/lang/Class;
-    .param p2    # Z
 
     iget-object v0, p0, Landroid/transition/Transition;->mTargetTypeExcludes:Ljava/util/ArrayList;
 
@@ -2757,8 +2722,6 @@
 
 .method public getTransitionValues(Landroid/view/View;Z)Landroid/transition/TransitionValues;
     .locals 8
-    .param p1    # Landroid/view/View;
-    .param p2    # Z
 
     iget-object v7, p0, Landroid/transition/Transition;->mParent:Landroid/transition/TransitionSet;
 
@@ -2847,8 +2810,6 @@
 
 .method isValidTarget(Landroid/view/View;J)Z
     .locals 8
-    .param p1    # Landroid/view/View;
-    .param p2    # J
 
     const/4 v5, 0x1
 
@@ -3131,7 +3092,6 @@
 
 .method playTransition(Landroid/view/ViewGroup;)V
     .locals 19
-    .param p1    # Landroid/view/ViewGroup;
 
     invoke-static {}, Landroid/transition/Transition;->getRunningAnimators()Landroid/util/ArrayMap;
 
@@ -3385,7 +3345,6 @@
 
 .method public removeListener(Landroid/transition/Transition$TransitionListener;)Landroid/transition/Transition;
     .locals 1
-    .param p1    # Landroid/transition/Transition$TransitionListener;
 
     iget-object v0, p0, Landroid/transition/Transition;->mListeners:Ljava/util/ArrayList;
 
@@ -3417,7 +3376,6 @@
 
 .method public removeTarget(I)Landroid/transition/Transition;
     .locals 1
-    .param p1    # I
 
     if-lez p1, :cond_0
 
@@ -3431,7 +3389,6 @@
 
 .method public removeTarget(Landroid/view/View;)Landroid/transition/Transition;
     .locals 1
-    .param p1    # Landroid/view/View;
 
     if-eqz p1, :cond_0
 
@@ -3583,7 +3540,6 @@
 
 .method setCanRemoveViews(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/transition/Transition;->mCanRemoveViews:Z
 
@@ -3592,7 +3548,6 @@
 
 .method public setDuration(J)Landroid/transition/Transition;
     .locals 0
-    .param p1    # J
 
     iput-wide p1, p0, Landroid/transition/Transition;->mDuration:J
 
@@ -3601,7 +3556,6 @@
 
 .method public setInterpolator(Landroid/animation/TimeInterpolator;)Landroid/transition/Transition;
     .locals 0
-    .param p1    # Landroid/animation/TimeInterpolator;
 
     iput-object p1, p0, Landroid/transition/Transition;->mInterpolator:Landroid/animation/TimeInterpolator;
 
@@ -3610,7 +3564,6 @@
 
 .method setSceneRoot(Landroid/view/ViewGroup;)Landroid/transition/Transition;
     .locals 0
-    .param p1    # Landroid/view/ViewGroup;
 
     iput-object p1, p0, Landroid/transition/Transition;->mSceneRoot:Landroid/view/ViewGroup;
 
@@ -3619,7 +3572,6 @@
 
 .method public setStartDelay(J)Landroid/transition/Transition;
     .locals 0
-    .param p1    # J
 
     iput-wide p1, p0, Landroid/transition/Transition;->mStartDelay:J
 
@@ -3703,7 +3655,6 @@
 
 .method toString(Ljava/lang/String;)Ljava/lang/String;
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const-wide/16 v5, -0x1
 

@@ -65,7 +65,6 @@
 # direct methods
 .method constructor <init>(Landroid/content/pm/PermissionGroupInfo;)V
     .locals 1
-    .param p1    # Landroid/content/pm/PermissionGroupInfo;
 
     invoke-direct {p0, p1}, Landroid/content/pm/PermissionGroupInfo;-><init>(Landroid/content/pm/PermissionGroupInfo;)V
 
@@ -98,7 +97,6 @@
 
 .method constructor <init>(Landroid/content/pm/PermissionInfo;)V
     .locals 1
-    .param p1    # Landroid/content/pm/PermissionInfo;
 
     invoke-direct {p0}, Landroid/content/pm/PermissionGroupInfo;-><init>()V
 
@@ -141,7 +139,6 @@
 # virtual methods
 .method public loadGroupIcon(Landroid/content/pm/PackageManager;)Landroid/graphics/drawable/Drawable;
     .locals 3
-    .param p1    # Landroid/content/pm/PackageManager;
 
     iget v1, p0, Landroid/content/pm/PackageItemInfo;->icon:I
 

@@ -72,7 +72,6 @@
 # direct methods
 .method constructor <init>(Landroid/widget/TextView;)V
     .locals 3
-    .param p1    # Landroid/widget/TextView;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
@@ -164,7 +163,6 @@
 
 .method public handleMessage(Landroid/os/Message;)V
     .locals 2
-    .param p1    # Landroid/os/Message;
 
     const/4 v1, 0x2
 
@@ -310,7 +308,6 @@
 
 .method start(I)V
     .locals 7
-    .param p1    # I
 
     const/4 v6, 0x1
 

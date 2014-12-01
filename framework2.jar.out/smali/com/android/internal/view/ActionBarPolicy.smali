@@ -32,7 +32,6 @@
 
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -43,7 +42,6 @@
 
 .method public static get(Landroid/content/Context;)Lcom/android/internal/view/ActionBarPolicy;
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     new-instance v0, Lcom/android/internal/view/ActionBarPolicy;
 

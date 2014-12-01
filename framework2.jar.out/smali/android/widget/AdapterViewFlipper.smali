@@ -41,7 +41,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     const/4 v2, 0x1
 
@@ -84,8 +83,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/16 v4, 0x2710
 
@@ -150,8 +147,6 @@
 
 .method static synthetic access$002(Landroid/widget/AdapterViewFlipper;Z)Z
     .locals 0
-    .param p0    # Landroid/widget/AdapterViewFlipper;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/widget/AdapterViewFlipper;->mUserPresent:Z
 
@@ -160,7 +155,6 @@
 
 .method static synthetic access$100(Landroid/widget/AdapterViewFlipper;)V
     .locals 0
-    .param p0    # Landroid/widget/AdapterViewFlipper;
 
     invoke-direct {p0}, Landroid/widget/AdapterViewFlipper;->updateRunning()V
 
@@ -169,8 +163,6 @@
 
 .method static synthetic access$200(Landroid/widget/AdapterViewFlipper;Z)V
     .locals 0
-    .param p0    # Landroid/widget/AdapterViewFlipper;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Landroid/widget/AdapterViewFlipper;->updateRunning(Z)V
 
@@ -179,7 +171,6 @@
 
 .method static synthetic access$300(Landroid/widget/AdapterViewFlipper;)Z
     .locals 1
-    .param p0    # Landroid/widget/AdapterViewFlipper;
 
     iget-boolean v0, p0, Landroid/widget/AdapterViewFlipper;->mRunning:Z
 
@@ -198,7 +189,6 @@
 
 .method private updateRunning(Z)V
     .locals 5
-    .param p1    # Z
 
     const/4 v2, 0x1
 
@@ -367,7 +357,6 @@
 
 .method public onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
     .locals 1
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
 
     invoke-super {p0, p1}, Landroid/widget/AdapterViewAnimator;->onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
 
@@ -384,7 +373,6 @@
 
 .method public onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
     .locals 1
-    .param p1    # Landroid/view/accessibility/AccessibilityNodeInfo;
 
     invoke-super {p0, p1}, Landroid/widget/AdapterViewAnimator;->onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
 
@@ -401,7 +389,6 @@
 
 .method protected onWindowVisibilityChanged(I)V
     .locals 2
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -426,7 +413,6 @@
 
 .method public setAdapter(Landroid/widget/Adapter;)V
     .locals 0
-    .param p1    # Landroid/widget/Adapter;
 
     invoke-super {p0, p1}, Landroid/widget/AdapterViewAnimator;->setAdapter(Landroid/widget/Adapter;)V
 
@@ -437,7 +423,6 @@
 
 .method public setAutoStart(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/widget/AdapterViewFlipper;->mAutoStart:Z
 
@@ -446,7 +431,6 @@
 
 .method public setFlipInterval(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/widget/AdapterViewFlipper;->mFlipInterval:I
 

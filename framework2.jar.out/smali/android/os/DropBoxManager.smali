@@ -48,7 +48,6 @@
 
 .method public constructor <init>(Lcom/android/internal/os/IDropBoxManagerService;)V
     .locals 0
-    .param p1    # Lcom/android/internal/os/IDropBoxManagerService;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -61,9 +60,6 @@
 # virtual methods
 .method public addData(Ljava/lang/String;[BI)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # [B
-    .param p3    # I
 
     if-nez p2, :cond_0
 
@@ -106,9 +102,6 @@
 
 .method public addFile(Ljava/lang/String;Ljava/io/File;I)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/io/File;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -168,8 +161,6 @@
 
 .method public addText(Ljava/lang/String;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     :try_start_0
     iget-object v0, p0, Landroid/os/DropBoxManager;->mService:Lcom/android/internal/os/IDropBoxManagerService;
@@ -195,8 +186,6 @@
 
 .method public getNextEntry(Ljava/lang/String;J)Landroid/os/DropBoxManager$Entry;
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
 
     :try_start_0
     iget-object v1, p0, Landroid/os/DropBoxManager;->mService:Lcom/android/internal/os/IDropBoxManagerService;
@@ -220,7 +209,6 @@
 
 .method public isTagEnabled(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     iget-object v1, p0, Landroid/os/DropBoxManager;->mService:Lcom/android/internal/os/IDropBoxManagerService;

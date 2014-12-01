@@ -36,7 +36,6 @@
 # virtual methods
 .method public onAnimationUpdate(Landroid/animation/ValueAnimator;)V
     .locals 4
-    .param p1    # Landroid/animation/ValueAnimator;
 
     iget-object v1, p0, Lcom/sec/android/visualeffect/circleunlock/CircleUnlockEffect$1;->this$0:Lcom/sec/android/visualeffect/circleunlock/CircleUnlockEffect;
 

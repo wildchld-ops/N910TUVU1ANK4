@@ -33,10 +33,6 @@
 # direct methods
 .method public constructor <init>(Landroid/widget/RemoteViews;Landroid/os/IBinder;ILandroid/app/PendingIntent;Landroid/app/PendingIntent;)V
     .locals 1
-    .param p2    # Landroid/os/IBinder;
-    .param p3    # I
-    .param p4    # Landroid/app/PendingIntent;
-    .param p5    # Landroid/app/PendingIntent;
 
     iput-object p1, p0, Landroid/widget/RemoteViews$SetOnLongClickPendingIntent;->this$0:Landroid/widget/RemoteViews;
 
@@ -57,7 +53,6 @@
 
 .method public constructor <init>(Landroid/widget/RemoteViews;Landroid/os/Parcel;)V
     .locals 1
-    .param p2    # Landroid/os/Parcel;
 
     iput-object p1, p0, Landroid/widget/RemoteViews$SetOnLongClickPendingIntent;->this$0:Landroid/widget/RemoteViews;
 
@@ -96,9 +91,6 @@
 # virtual methods
 .method public apply(Landroid/view/View;Landroid/view/ViewGroup;Landroid/widget/RemoteViews$OnClickHandler;)V
     .locals 5
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/widget/RemoteViews$OnClickHandler;
 
     iget v4, p0, Landroid/widget/RemoteViews$SetOnLongClickPendingIntent;->viewId:I
 
@@ -148,8 +140,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     const/4 v1, 0x0
 

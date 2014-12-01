@@ -57,9 +57,6 @@
 
 .method public static insertLog(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     sput-object p0, Lcom/android/incallui/utils/AppLogging;->mContext:Landroid/content/Context;
 
@@ -70,8 +67,6 @@
 
 .method static insertLog(Ljava/lang/String;Ljava/lang/String;)V
     .locals 6
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Lcom/android/incallui/utils/AppLogging;->getVersionOfContextProviders()I
 

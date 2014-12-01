@@ -28,10 +28,6 @@
 
 .method private static withinStyle(Ljava/lang/StringBuilder;Ljava/lang/CharSequence;II)V
     .locals 5
-    .param p0    # Ljava/lang/StringBuilder;
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
 
     const/16 v4, 0x20
 
@@ -157,8 +153,6 @@
 # virtual methods
 .method public configureMenuItem(Landroid/view/MenuItem;Landroid/support/v4/app/ShareCompat$IntentBuilder;)V
     .locals 1
-    .param p1    # Landroid/view/MenuItem;
-    .param p2    # Landroid/support/v4/app/ShareCompat$IntentBuilder;
 
     invoke-virtual {p2}, Landroid/support/v4/app/ShareCompat$IntentBuilder;->createChooserIntent()Landroid/content/Intent;
 
@@ -171,7 +165,6 @@
 
 .method public escapeHtml(Ljava/lang/CharSequence;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/CharSequence;
 
     new-instance v0, Ljava/lang/StringBuilder;
 

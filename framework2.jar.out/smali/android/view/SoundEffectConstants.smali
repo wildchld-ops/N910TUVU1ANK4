@@ -26,7 +26,6 @@
 
 .method public static getContantForFocusDirection(I)I
     .locals 2
-    .param p0    # I
 
     sparse-switch p0, :sswitch_data_0
 

@@ -45,7 +45,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/recent/multiwindowUtils/MultiWindowTrayInfo;Landroid/content/pm/ResolveInfo;)V
     .locals 5
-    .param p2    # Landroid/content/pm/ResolveInfo;
 
     const/4 v2, 0x0
 
@@ -145,8 +144,6 @@
 
 .method constructor <init>(Lcom/android/systemui/recent/multiwindowUtils/MultiWindowTrayInfo;Ljava/util/List;Ljava/lang/String;Z)V
     .locals 6
-    .param p3    # Ljava/lang/String;
-    .param p4    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -735,7 +732,6 @@
 
 .method public setTaskId(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/systemui/recent/multiwindowUtils/MultiWindowTrayInfo$LaunchItem;->mTaskId:I
 
@@ -744,7 +740,6 @@
 
 .method public setThumbnail(Landroid/graphics/Bitmap;)V
     .locals 0
-    .param p1    # Landroid/graphics/Bitmap;
 
     iput-object p1, p0, Lcom/android/systemui/recent/multiwindowUtils/MultiWindowTrayInfo$LaunchItem;->mTumbnail:Landroid/graphics/Bitmap;
 
@@ -753,7 +748,6 @@
 
 .method public setTitle(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/systemui/recent/multiwindowUtils/MultiWindowTrayInfo$LaunchItem;->mTitle:Ljava/lang/CharSequence;
 
@@ -762,7 +756,6 @@
 
 .method public updateResolveInfo(Landroid/content/pm/ResolveInfo;)V
     .locals 5
-    .param p1    # Landroid/content/pm/ResolveInfo;
 
     const/4 v0, 0x0
 

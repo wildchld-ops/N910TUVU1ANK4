@@ -33,7 +33,7 @@
 
     iput-object p2, p0, Lcom/android/phone/callsettings/CaptureImageViewer$ImageAdapter;->mContext:Landroid/content/Context;
 
-    const v0, 0x7f02030b
+    const v0, 0x7f02030a
 
     iput v0, p0, Lcom/android/phone/callsettings/CaptureImageViewer$ImageAdapter;->mGalleryItemBackground:I
 
@@ -330,7 +330,7 @@
 
     iget-object v5, v0, Lcom/android/phone/callsettings/CaptureImageViewer$ImageAdapter;->this$0:Lcom/android/phone/callsettings/CaptureImageViewer;
 
-    invoke-virtual {v5}, Landroid/app/Fragment;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {v5}, Lcom/android/phone/callsettings/CaptureImageViewer;->getResources()Landroid/content/res/Resources;
 
     move-result-object v5
 
@@ -348,7 +348,7 @@
 
     iget-object v5, v0, Lcom/android/phone/callsettings/CaptureImageViewer$ImageAdapter;->this$0:Lcom/android/phone/callsettings/CaptureImageViewer;
 
-    invoke-virtual {v5}, Landroid/app/Fragment;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {v5}, Lcom/android/phone/callsettings/CaptureImageViewer;->getResources()Landroid/content/res/Resources;
 
     move-result-object v5
 
@@ -366,7 +366,7 @@
 
     iget-object v5, v0, Lcom/android/phone/callsettings/CaptureImageViewer$ImageAdapter;->this$0:Lcom/android/phone/callsettings/CaptureImageViewer;
 
-    invoke-virtual {v5}, Landroid/app/Fragment;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {v5}, Lcom/android/phone/callsettings/CaptureImageViewer;->getResources()Landroid/content/res/Resources;
 
     move-result-object v5
 
@@ -390,7 +390,7 @@
 
     move-object/from16 v0, v20
 
-    invoke-virtual {v0, v5}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+    invoke-virtual {v0, v5}, Landroid/widget/ImageView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
     move-object/from16 v0, v20
 
@@ -402,7 +402,7 @@
 
     move/from16 v4, v22
 
-    invoke-virtual {v0, v1, v2, v3, v4}, Landroid/view/View;->setPadding(IIII)V
+    invoke-virtual {v0, v1, v2, v3, v4}, Landroid/widget/ImageView;->setPadding(IIII)V
 
     move-object/from16 v0, p0
 
@@ -410,7 +410,7 @@
 
     move-object/from16 v0, v20
 
-    invoke-virtual {v0, v5}, Landroid/view/View;->setBackgroundResource(I)V
+    invoke-virtual {v0, v5}, Landroid/widget/ImageView;->setBackgroundResource(I)V
 
     return-object v20
 
@@ -479,7 +479,7 @@
 
     move-object/from16 v1, v24
 
-    invoke-virtual {v0, v1}, Ljava/io/InputStream;->read([B)I
+    invoke-virtual {v0, v1}, Ljava/io/FileInputStream;->read([B)I
 
     move-result v5
 
@@ -540,7 +540,7 @@
 
     :goto_3
     :try_start_6
-    invoke-virtual {v15}, Ljava/lang/Throwable;->printStackTrace()V
+    invoke-virtual {v15}, Ljava/io/FileNotFoundException;->printStackTrace()V
     :try_end_6
     .catchall {:try_start_6 .. :try_end_6} :catchall_1
 
@@ -556,7 +556,7 @@
     :catch_2
     move-exception v15
 
-    invoke-virtual {v15}, Ljava/lang/Throwable;->printStackTrace()V
+    invoke-virtual {v15}, Ljava/io/IOException;->printStackTrace()V
 
     goto/16 :goto_1
 
@@ -576,7 +576,7 @@
     :catch_3
     move-exception v15
 
-    invoke-virtual {v15}, Ljava/lang/Throwable;->printStackTrace()V
+    invoke-virtual {v15}, Ljava/io/IOException;->printStackTrace()V
 
     goto/16 :goto_1
 
@@ -585,7 +585,7 @@
 
     :goto_4
     :try_start_9
-    invoke-virtual {v15}, Ljava/lang/Throwable;->printStackTrace()V
+    invoke-virtual {v15}, Ljava/io/IOException;->printStackTrace()V
     :try_end_9
     .catchall {:try_start_9 .. :try_end_9} :catchall_1
 
@@ -601,7 +601,7 @@
     :catch_5
     move-exception v15
 
-    invoke-virtual {v15}, Ljava/lang/Throwable;->printStackTrace()V
+    invoke-virtual {v15}, Ljava/io/IOException;->printStackTrace()V
 
     goto/16 :goto_1
 
@@ -623,7 +623,7 @@
     :catch_6
     move-exception v15
 
-    invoke-virtual {v15}, Ljava/lang/Throwable;->printStackTrace()V
+    invoke-virtual {v15}, Ljava/io/IOException;->printStackTrace()V
 
     goto :goto_6
 

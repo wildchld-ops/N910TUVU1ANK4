@@ -12,9 +12,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;IZ)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Z
 
     invoke-direct {p0, p1}, Landroid/preference/Preference;-><init>(Landroid/content/Context;)V
 

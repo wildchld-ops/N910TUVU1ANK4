@@ -102,8 +102,6 @@
 
 .method protected lookup(Landroid/view/KeyEvent;Landroid/text/Spannable;)I
     .locals 7
-    .param p1    # Landroid/view/KeyEvent;
-    .param p2    # Landroid/text/Spannable;
 
     invoke-static {p2, p1}, Landroid/text/method/DialerKeyListener;->getMetaState(Ljava/lang/CharSequence;Landroid/view/KeyEvent;)I
 

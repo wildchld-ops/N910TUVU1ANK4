@@ -43,7 +43,6 @@
 # virtual methods
 .method public onAnimationCancel(Landroid/animation/Animator;)V
     .locals 1
-    .param p1    # Landroid/animation/Animator;
 
     const/4 v0, 0x1
 
@@ -54,7 +53,6 @@
 
 .method public onAnimationEnd(Landroid/animation/Animator;)V
     .locals 5
-    .param p1    # Landroid/animation/Animator;
 
     iget-boolean v3, p0, Landroid/animation/AnimatorSet$1;->canceled:Z
 

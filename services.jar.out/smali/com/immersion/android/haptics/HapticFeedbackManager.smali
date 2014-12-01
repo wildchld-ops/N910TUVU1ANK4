@@ -68,8 +68,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/os/Looper;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/Looper;
 
     const/4 v0, 0x0
 
@@ -80,9 +78,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/os/Looper;Z)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/Looper;
-    .param p3    # Z
 
     const/4 v2, 0x0
 
@@ -177,7 +172,6 @@
 
 .method static synthetic access$000(Lcom/immersion/android/haptics/HapticFeedbackManager;)Landroid/os/Looper;
     .locals 1
-    .param p0    # Lcom/immersion/android/haptics/HapticFeedbackManager;
 
     iget-object v0, p0, Lcom/immersion/android/haptics/HapticFeedbackManager;->mLooper:Landroid/os/Looper;
 
@@ -186,7 +180,6 @@
 
 .method static synthetic access$100(Lcom/immersion/android/haptics/HapticFeedbackManager;)Z
     .locals 1
-    .param p0    # Lcom/immersion/android/haptics/HapticFeedbackManager;
 
     iget-boolean v0, p0, Lcom/immersion/android/haptics/HapticFeedbackManager;->mCalledFromProxy:Z
 
@@ -195,7 +188,6 @@
 
 .method static synthetic access$200(Lcom/immersion/android/haptics/HapticFeedbackManager;)Z
     .locals 1
-    .param p0    # Lcom/immersion/android/haptics/HapticFeedbackManager;
 
     iget-boolean v0, p0, Lcom/immersion/android/haptics/HapticFeedbackManager;->mCanUseTouchSenseAPI:Z
 
@@ -204,7 +196,6 @@
 
 .method static synthetic access$300(Lcom/immersion/android/haptics/HapticFeedbackManager;)Z
     .locals 1
-    .param p0    # Lcom/immersion/android/haptics/HapticFeedbackManager;
 
     iget-boolean v0, p0, Lcom/immersion/android/haptics/HapticFeedbackManager;->mBootedAndInitialized:Z
 
@@ -213,8 +204,6 @@
 
 .method static synthetic access$302(Lcom/immersion/android/haptics/HapticFeedbackManager;Z)Z
     .locals 0
-    .param p0    # Lcom/immersion/android/haptics/HapticFeedbackManager;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/immersion/android/haptics/HapticFeedbackManager;->mBootedAndInitialized:Z
 
@@ -223,7 +212,6 @@
 
 .method static synthetic access$400(Lcom/immersion/android/haptics/HapticFeedbackManager;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/immersion/android/haptics/HapticFeedbackManager;
 
     iget-object v0, p0, Lcom/immersion/android/haptics/HapticFeedbackManager;->mContext:Landroid/content/Context;
 
@@ -232,7 +220,6 @@
 
 .method static synthetic access$500(Lcom/immersion/android/haptics/HapticFeedbackManager;)Landroid/os/Vibrator;
     .locals 1
-    .param p0    # Lcom/immersion/android/haptics/HapticFeedbackManager;
 
     iget-object v0, p0, Lcom/immersion/android/haptics/HapticFeedbackManager;->mVibrator:Landroid/os/Vibrator;
 
@@ -241,8 +228,6 @@
 
 .method static synthetic access$502(Lcom/immersion/android/haptics/HapticFeedbackManager;Landroid/os/Vibrator;)Landroid/os/Vibrator;
     .locals 0
-    .param p0    # Lcom/immersion/android/haptics/HapticFeedbackManager;
-    .param p1    # Landroid/os/Vibrator;
 
     iput-object p1, p0, Lcom/immersion/android/haptics/HapticFeedbackManager;->mVibrator:Landroid/os/Vibrator;
 
@@ -251,7 +236,6 @@
 
 .method static synthetic access$600(Lcom/immersion/android/haptics/HapticFeedbackManager;)V
     .locals 0
-    .param p0    # Lcom/immersion/android/haptics/HapticFeedbackManager;
 
     invoke-direct {p0}, Lcom/immersion/android/haptics/HapticFeedbackManager;->immVibeInitialize()V
 
@@ -260,7 +244,6 @@
 
 .method static synthetic access$700(Lcom/immersion/android/haptics/HapticFeedbackManager;)Lcom/immersion/android/haptics/HapticFeedbackTheme;
     .locals 1
-    .param p0    # Lcom/immersion/android/haptics/HapticFeedbackManager;
 
     iget-object v0, p0, Lcom/immersion/android/haptics/HapticFeedbackManager;->mActiveTheme:Lcom/immersion/android/haptics/HapticFeedbackTheme;
 
@@ -269,8 +252,6 @@
 
 .method static synthetic access$802(Lcom/immersion/android/haptics/HapticFeedbackManager;I)I
     .locals 0
-    .param p0    # Lcom/immersion/android/haptics/HapticFeedbackManager;
-    .param p1    # I
 
     iput p1, p0, Lcom/immersion/android/haptics/HapticFeedbackManager;->mCurrentUserID:I
 
@@ -279,8 +260,6 @@
 
 .method static getLongIntArray(Landroid/content/res/Resources;I)[J
     .locals 5
-    .param p0    # Landroid/content/res/Resources;
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/content/res/Resources;->getIntArray(I)[I
 
@@ -1331,7 +1310,6 @@
 
 .method public cancel(I)V
     .locals 4
-    .param p1    # I
 
     :try_start_0
     iget-boolean v1, p0, Lcom/immersion/android/haptics/HapticFeedbackManager;->mCanUseTouchSenseAPI:Z
@@ -1462,7 +1440,6 @@
 
 .method protected deviceForEffectId(I)I
     .locals 1
-    .param p1    # I
 
     const/16 v0, 0x63ce
 
@@ -1585,7 +1562,6 @@
 
 .method public declared-synchronized loadActiveTheme(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -1970,8 +1946,6 @@
 
 .method public performHapticFeedback(IZ)Z
     .locals 2
-    .param p1    # I
-    .param p2    # Z
 
     const-string v0, "HapticFeedbackManager"
 
@@ -1990,12 +1964,6 @@
 
 .method public performHapticFeedback(IZ[JLcom/immersion/IVTBuffer;II)Z
     .locals 8
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # [J
-    .param p4    # Lcom/immersion/IVTBuffer;
-    .param p5    # I
-    .param p6    # I
 
     const/4 v2, 0x1
 
@@ -2209,9 +2177,6 @@
 
 .method public performHapticFeedback(Landroid/view/WindowManagerPolicy$WindowState;IZ)Z
     .locals 2
-    .param p1    # Landroid/view/WindowManagerPolicy$WindowState;
-    .param p2    # I
-    .param p3    # Z
 
     const-string v0, "HapticFeedbackManager"
 
@@ -2232,10 +2197,6 @@
 
 .method public performHapticFeedback(Landroid/view/WindowManagerPolicy$WindowState;IZI)Z
     .locals 10
-    .param p1    # Landroid/view/WindowManagerPolicy$WindowState;
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # I
 
     const/4 v9, 0x4
 

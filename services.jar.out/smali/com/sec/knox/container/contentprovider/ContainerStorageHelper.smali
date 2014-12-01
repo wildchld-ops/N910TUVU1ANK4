@@ -26,8 +26,6 @@
 
 .method private constructor <init>(Landroid/content/Context;Landroid/database/DatabaseErrorHandler;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/database/DatabaseErrorHandler;
 
     const-string v2, "/data/system/container/databases/container.db"
 
@@ -54,8 +52,6 @@
 
 .method public static declared-synchronized getInstance(Landroid/content/Context;Landroid/database/DatabaseErrorHandler;)Lcom/sec/knox/container/contentprovider/ContainerStorageHelper;
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/database/DatabaseErrorHandler;
 
     const-class v3, Lcom/sec/knox/container/contentprovider/ContainerStorageHelper;
 
@@ -178,7 +174,6 @@
 
 .method public onCreate(Landroid/database/sqlite/SQLiteDatabase;)V
     .locals 2
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
 
     sget-object v0, Lcom/sec/knox/container/contentprovider/ContainerStorageHelper;->TAG:Ljava/lang/String;
 
@@ -209,7 +204,6 @@
 
 .method public onOpen(Landroid/database/sqlite/SQLiteDatabase;)V
     .locals 0
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-super {p0, p1}, Landroid/database/sqlite/SQLiteOpenHelper;->onOpen(Landroid/database/sqlite/SQLiteDatabase;)V
 
@@ -218,9 +212,6 @@
 
 .method public onUpgrade(Landroid/database/sqlite/SQLiteDatabase;II)V
     .locals 4
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p2    # I
-    .param p3    # I
 
     sget-object v1, Lcom/sec/knox/container/contentprovider/ContainerStorageHelper;->TAG:Ljava/lang/String;
 

@@ -44,7 +44,7 @@
 
     const v2, 0x7f090227
 
-    invoke-virtual {v1, v2}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {v1, v2}, Lcom/android/phone/sip/SipSettings;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -65,7 +65,7 @@
 
     const v2, 0x7f09022d
 
-    invoke-virtual {v1, v2}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {v1, v2}, Lcom/android/phone/sip/SipSettings;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -98,7 +98,7 @@
 
     aput-object p3, v3, v4
 
-    invoke-virtual {v1, v2, v3}, Landroid/app/Fragment;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {v1, v2, v3}, Lcom/android/phone/sip/SipSettings;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -115,7 +115,7 @@
 
     const v2, 0x7f090228
 
-    invoke-virtual {v1, v2}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {v1, v2}, Lcom/android/phone/sip/SipSettings;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -131,7 +131,7 @@
 
     const v2, 0x7f09022f
 
-    invoke-virtual {v1, v2}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {v1, v2}, Lcom/android/phone/sip/SipSettings;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -147,7 +147,7 @@
 
     const v2, 0x7f090230
 
-    invoke-virtual {v1, v2}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {v1, v2}, Lcom/android/phone/sip/SipSettings;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -159,7 +159,7 @@
     :pswitch_4
     iget-object v0, p0, Lcom/android/phone/sip/SipSettings$11;->this$0:Lcom/android/phone/sip/SipSettings;
 
-    # invokes: Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getApplicationContext()Landroid/content/Context;
+    # invokes: Lcom/android/phone/sip/SipSettings;->getApplicationContext()Landroid/content/Context;
     invoke-static {v0}, Lcom/android/phone/sip/SipSettings;->access$1600(Lcom/android/phone/sip/SipSettings;)Landroid/content/Context;
 
     move-result-object v0
@@ -176,7 +176,7 @@
 
     const v2, 0x7f09022b
 
-    invoke-virtual {v1, v2}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {v1, v2}, Lcom/android/phone/sip/SipSettings;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -192,7 +192,7 @@
 
     const v2, 0x7f09022a
 
-    invoke-virtual {v1, v2}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {v1, v2}, Lcom/android/phone/sip/SipSettings;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -208,7 +208,7 @@
 
     const v2, 0x7f09022c
 
-    invoke-virtual {v1, v2}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {v1, v2}, Lcom/android/phone/sip/SipSettings;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 

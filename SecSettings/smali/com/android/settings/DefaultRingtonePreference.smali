@@ -14,8 +14,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/preference/RingtonePreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -56,9 +54,6 @@
 
 .method public onActivityResult(IILandroid/content/Intent;)Z
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const/4 v3, 0x1
 
@@ -113,7 +108,6 @@
 
 .method protected onPrepareRingtonePickerIntent(Landroid/content/Intent;)V
     .locals 3
-    .param p1    # Landroid/content/Intent;
 
     const/4 v2, 0x1
 
@@ -182,7 +176,6 @@
 
 .method protected onSaveRingtone(Landroid/net/Uri;)V
     .locals 10
-    .param p1    # Landroid/net/Uri;
 
     const/4 v2, 0x2
 
@@ -354,7 +347,6 @@
 
 .method public setObject(Lcom/android/settings/SoundSettings;)V
     .locals 0
-    .param p1    # Lcom/android/settings/SoundSettings;
 
     iput-object p1, p0, Lcom/android/settings/DefaultRingtonePreference;->mRingtone:Lcom/android/settings/SoundSettings;
 

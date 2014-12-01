@@ -38,9 +38,6 @@
 # direct methods
 .method private constructor <init>(Landroid/content/Context;Ljava/lang/String;J)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # J
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -69,15 +66,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Ljava/lang/String;JLjava/lang/String;Ljava/lang/String;Ljava/lang/String;III)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # J
-    .param p5    # Ljava/lang/String;
-    .param p6    # Ljava/lang/String;
-    .param p7    # Ljava/lang/String;
-    .param p8    # I
-    .param p9    # I
-    .param p10    # I
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/mms/rcs/transaction/ImBaseBundle;-><init>(Landroid/content/Context;Ljava/lang/String;J)V
 
@@ -141,7 +129,6 @@
 
 .method public constructor <init>(Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

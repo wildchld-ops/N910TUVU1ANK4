@@ -79,7 +79,7 @@
 
     iget-object v9, p0, Lcom/android/phone/GestureCallAcceptActivity;->mLearnAboutDialog:Landroid/app/AlertDialog;
 
-    invoke-virtual {v9}, Landroid/app/Dialog;->dismiss()V
+    invoke-virtual {v9}, Landroid/app/AlertDialog;->dismiss()V
 
     iput-object v12, p0, Lcom/android/phone/GestureCallAcceptActivity;->mLearnAboutDialog:Landroid/app/AlertDialog;
 
@@ -114,7 +114,7 @@
 
     check-cast v6, Landroid/widget/TextView;
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/GestureCallAcceptActivity;->getResources()Landroid/content/res/Resources;
 
     move-result-object v9
 
@@ -124,7 +124,7 @@
 
     move-result-object v7
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/GestureCallAcceptActivity;->getResources()Landroid/content/res/Resources;
 
     move-result-object v9
 
@@ -191,7 +191,7 @@
 
     iget-object v9, p0, Lcom/android/phone/GestureCallAcceptActivity;->mLearnAboutDialog:Landroid/app/AlertDialog;
 
-    invoke-virtual {v9}, Landroid/app/Dialog;->show()V
+    invoke-virtual {v9}, Landroid/app/AlertDialog;->show()V
 
     return-void
 .end method
@@ -238,7 +238,7 @@
 
     invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onCreate(Landroid/os/Bundle;)V
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/GestureCallAcceptActivity;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v5
 
@@ -252,7 +252,7 @@
 
     iget-object v5, p0, Lcom/android/phone/GestureCallAcceptActivity;->mActivity:Landroid/app/Activity;
 
-    invoke-virtual {v5}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {v5}, Landroid/app/Activity;->getResources()Landroid/content/res/Resources;
 
     move-result-object v5
 
@@ -264,7 +264,7 @@
 
     iget-object v5, p0, Lcom/android/phone/GestureCallAcceptActivity;->actionBarSwitch:Landroid/widget/Switch;
 
-    invoke-virtual {v5, v9, v9, v3, v9}, Landroid/widget/TextView;->setPadding(IIII)V
+    invoke-virtual {v5, v9, v9, v3, v9}, Landroid/widget/Switch;->setPadding(IIII)V
 
     iget-object v5, p0, Lcom/android/phone/GestureCallAcceptActivity;->mActivity:Landroid/app/Activity;
 
@@ -290,7 +290,7 @@
 
     invoke-virtual {v5, v6, v7}, Landroid/app/ActionBar;->setCustomView(Landroid/view/View;Landroid/app/ActionBar$LayoutParams;)V
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getActionBar()Landroid/app/ActionBar;
+    invoke-virtual {p0}, Lcom/android/phone/GestureCallAcceptActivity;->getActionBar()Landroid/app/ActionBar;
 
     move-result-object v0
 
@@ -313,11 +313,11 @@
 
     const v5, 0x7f060021
 
-    invoke-virtual {p0, v5}, Landroid/preference/PreferenceActivity;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v5}, Lcom/android/phone/GestureCallAcceptActivity;->addPreferencesFromResource(I)V
 
     const-string v5, "auto_start_speaker_pref_key"
 
-    invoke-virtual {p0, v5}, Landroid/preference/PreferenceActivity;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v5}, Lcom/android/phone/GestureCallAcceptActivity;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v5
 
@@ -327,7 +327,7 @@
 
     const-string v5, "layout_inflater"
 
-    invoke-virtual {p0, v5}, Landroid/app/Activity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v5}, Lcom/android/phone/GestureCallAcceptActivity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v2
 
@@ -362,7 +362,7 @@
     invoke-virtual {v1}, Landroid/graphics/drawable/AnimationDrawable;->start()V
 
     :cond_1
-    invoke-virtual {p0}, Landroid/app/ListActivity;->getListView()Landroid/widget/ListView;
+    invoke-virtual {p0}, Lcom/android/phone/GestureCallAcceptActivity;->getListView()Landroid/widget/ListView;
 
     move-result-object v5
 
@@ -388,7 +388,7 @@
 
     invoke-direct {v6, p0}, Lcom/android/phone/GestureCallAcceptActivity$1;-><init>(Lcom/android/phone/GestureCallAcceptActivity;)V
 
-    invoke-virtual {v5, v6}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v5, v6}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     :cond_2
     return-void
@@ -412,7 +412,7 @@
 
     packed-switch v0, :pswitch_data_0
 
-    invoke-super {p0, p1}, Landroid/app/Activity;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
+    invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
 
     move-result v0
 
@@ -420,7 +420,7 @@
     return v0
 
     :pswitch_0
-    invoke-virtual {p0}, Landroid/app/Activity;->onBackPressed()V
+    invoke-virtual {p0}, Lcom/android/phone/GestureCallAcceptActivity;->onBackPressed()V
 
     const/4 v0, 0x1
 
@@ -437,7 +437,7 @@
 .method protected onPause()V
     .locals 1
 
-    invoke-super {p0}, Landroid/app/Activity;->onPause()V
+    invoke-super {p0}, Landroid/preference/PreferenceActivity;->onPause()V
 
     iget-object v0, p0, Lcom/android/phone/GestureCallAcceptActivity;->mGestureCallAcceptEnabler:Lcom/android/phone/GestureCallAcceptEnabler;
 
@@ -454,7 +454,7 @@
 
     iget-object v0, p0, Lcom/android/phone/GestureCallAcceptActivity;->mLearnAboutDialog:Landroid/app/AlertDialog;
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->dismiss()V
+    invoke-virtual {v0}, Landroid/app/AlertDialog;->dismiss()V
 
     const/4 v0, 0x0
 
@@ -507,7 +507,7 @@
 
     iget-object v1, p0, Lcom/android/phone/GestureCallAcceptActivity;->mAutoStartSpeaker:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v1}, Landroid/preference/TwoStatePreference;->isChecked()Z
+    invoke-virtual {v1}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
     move-result v1
 
@@ -536,7 +536,7 @@
 .method protected onResume()V
     .locals 1
 
-    invoke-super {p0}, Landroid/app/Activity;->onResume()V
+    invoke-super {p0}, Landroid/preference/PreferenceActivity;->onResume()V
 
     iget-object v0, p0, Lcom/android/phone/GestureCallAcceptActivity;->mGestureCallAcceptEnabler:Lcom/android/phone/GestureCallAcceptEnabler;
 
@@ -601,7 +601,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Landroid/app/Dialog;->show()V
+    invoke-virtual {v1}, Landroid/app/AlertDialog;->show()V
 
     return-void
 .end method
@@ -619,7 +619,7 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/GestureCallAcceptActivity;->startActivity(Landroid/content/Intent;)V
 
     return-void
 .end method

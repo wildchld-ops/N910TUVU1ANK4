@@ -1637,7 +1637,6 @@
 
 .method static synthetic access$002(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mEnabledMagnification:Z
 
@@ -1646,9 +1645,6 @@
 
 .method static synthetic access$1000(Lcom/diotek/ime/framework/common/InputManagerImpl;Landroid/view/inputmethod/EditorInfo;Z)V
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/common/InputManagerImpl;
-    .param p1    # Landroid/view/inputmethod/EditorInfo;
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/diotek/ime/framework/common/InputManagerImpl;->startInputViewContinue(Landroid/view/inputmethod/EditorInfo;Z)V
 
@@ -1657,8 +1653,6 @@
 
 .method static synthetic access$102(Lcom/diotek/ime/framework/common/InputManagerImpl;Z)Z
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/common/InputManagerImpl;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mIsNeedNewInputViewForNormalKeyboard:Z
 
@@ -1667,8 +1661,6 @@
 
 .method static synthetic access$1102(Lcom/diotek/ime/framework/common/InputManagerImpl;Z)Z
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/common/InputManagerImpl;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mOrientationChanged:Z
 
@@ -1677,8 +1669,6 @@
 
 .method static synthetic access$1200(Lcom/diotek/ime/framework/common/InputManagerImpl;Z)V
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/common/InputManagerImpl;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/diotek/ime/framework/common/InputManagerImpl;->setTSPExtendedMode(Z)V
 
@@ -1687,7 +1677,6 @@
 
 .method static synthetic access$1300(Lcom/diotek/ime/framework/common/InputManagerImpl;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/common/InputManagerImpl;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mStartDelayHandler:Landroid/os/Handler;
 
@@ -1696,7 +1685,6 @@
 
 .method static synthetic access$1400(Lcom/diotek/ime/framework/common/InputManagerImpl;)Lcom/diotek/ime/framework/input/InputController;
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/common/InputManagerImpl;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mInputController:Lcom/diotek/ime/framework/input/InputController;
 
@@ -1705,7 +1693,6 @@
 
 .method static synthetic access$1500(Lcom/diotek/ime/framework/common/InputManagerImpl;)Z
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/common/InputManagerImpl;
 
     iget-boolean v0, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mIsSwiftKeyMode:Z
 
@@ -1714,7 +1701,6 @@
 
 .method static synthetic access$1600(Lcom/diotek/ime/framework/common/InputManagerImpl;)Lcom/diotek/ime/framework/repository/Repository;
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/common/InputManagerImpl;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mRepository:Lcom/diotek/ime/framework/repository/Repository;
 
@@ -1723,7 +1709,6 @@
 
 .method static synthetic access$1700(Lcom/diotek/ime/framework/common/InputManagerImpl;)Z
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/common/InputManagerImpl;
 
     iget-boolean v0, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mDontShowZoomPinchGuideConsecutively:Z
 
@@ -1732,7 +1717,6 @@
 
 .method static synthetic access$1800(Lcom/diotek/ime/framework/common/InputManagerImpl;)Lcom/diotek/ime/framework/inputmode/InputModeManager;
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/common/InputManagerImpl;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mInputModeManager:Lcom/diotek/ime/framework/inputmode/InputModeManager;
 
@@ -1749,7 +1733,6 @@
 
 .method static synthetic access$200(Lcom/diotek/ime/framework/common/InputManagerImpl;)Lcom/diotek/ime/framework/view/ViewController;
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/common/InputManagerImpl;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mViewController:Lcom/diotek/ime/framework/view/ViewController;
 
@@ -1758,7 +1741,6 @@
 
 .method static synthetic access$2000(Lcom/diotek/ime/framework/common/InputManagerImpl;)Z
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/common/InputManagerImpl;
 
     iget-boolean v0, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mDontShowTraceGuideConsecutively:Z
 
@@ -1767,7 +1749,6 @@
 
 .method static synthetic access$2100(Lcom/diotek/ime/framework/common/InputManagerImpl;)Z
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/common/InputManagerImpl;
 
     iget-boolean v0, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mIsPredictionOn:Z
 
@@ -1776,7 +1757,6 @@
 
 .method static synthetic access$2200(Lcom/diotek/ime/framework/common/InputManagerImpl;)V
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/common/InputManagerImpl;
 
     invoke-direct {p0}, Lcom/diotek/ime/framework/common/InputManagerImpl;->updateSetupWizardState()V
 
@@ -1785,7 +1765,6 @@
 
 .method static synthetic access$2300(Lcom/diotek/ime/framework/common/InputManagerImpl;)Z
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/common/InputManagerImpl;
 
     iget-boolean v0, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mDontShowSwiftkeyGuideConsecutively:Z
 
@@ -1794,7 +1773,6 @@
 
 .method static synthetic access$2400(Lcom/diotek/ime/framework/common/InputManagerImpl;)Z
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/common/InputManagerImpl;
 
     iget-boolean v0, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mIsKorMode:Z
 
@@ -1803,7 +1781,6 @@
 
 .method static synthetic access$2500(Lcom/diotek/ime/framework/common/InputManagerImpl;)Z
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/common/InputManagerImpl;
 
     iget-boolean v0, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mDontShowXt9PersonalizerConsecutively:Z
 
@@ -1812,7 +1789,6 @@
 
 .method static synthetic access$2600(Lcom/diotek/ime/framework/common/InputManagerImpl;)Z
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/common/InputManagerImpl;
 
     iget-boolean v0, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mDontShowOneHandedGuideConsecutively:Z
 
@@ -1821,7 +1797,6 @@
 
 .method static synthetic access$2700(Lcom/diotek/ime/framework/common/InputManagerImpl;)Z
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/common/InputManagerImpl;
 
     iget-boolean v0, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mIsOrientationLandscape:Z
 
@@ -1830,7 +1805,6 @@
 
 .method static synthetic access$2800(Lcom/diotek/ime/framework/common/InputManagerImpl;)Z
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/common/InputManagerImpl;
 
     iget-boolean v0, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mDontShowGestureGuideConsecutively:Z
 
@@ -1839,7 +1813,6 @@
 
 .method static synthetic access$2900(Lcom/diotek/ime/framework/common/InputManagerImpl;)V
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/common/InputManagerImpl;
 
     invoke-direct {p0}, Lcom/diotek/ime/framework/common/InputManagerImpl;->updateCandidates()V
 
@@ -1848,7 +1821,6 @@
 
 .method static synthetic access$300(Lcom/diotek/ime/framework/common/InputManagerImpl;)I
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/common/InputManagerImpl;
 
     iget v0, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mCountOfTriedInputOCR:I
 
@@ -1857,7 +1829,6 @@
 
 .method static synthetic access$3000(Lcom/diotek/ime/framework/common/InputManagerImpl;)V
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/common/InputManagerImpl;
 
     invoke-direct {p0}, Lcom/diotek/ime/framework/common/InputManagerImpl;->buildSuggestions()V
 
@@ -1866,8 +1837,6 @@
 
 .method static synthetic access$302(Lcom/diotek/ime/framework/common/InputManagerImpl;I)I
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/common/InputManagerImpl;
-    .param p1    # I
 
     iput p1, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mCountOfTriedInputOCR:I
 
@@ -1876,7 +1845,6 @@
 
 .method static synthetic access$308(Lcom/diotek/ime/framework/common/InputManagerImpl;)I
     .locals 2
-    .param p0    # Lcom/diotek/ime/framework/common/InputManagerImpl;
 
     iget v0, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mCountOfTriedInputOCR:I
 
@@ -1889,7 +1857,6 @@
 
 .method static synthetic access$3100(Lcom/diotek/ime/framework/common/InputManagerImpl;)V
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/common/InputManagerImpl;
 
     invoke-direct {p0}, Lcom/diotek/ime/framework/common/InputManagerImpl;->updateAfterScreenUnlock()V
 
@@ -1898,7 +1865,6 @@
 
 .method static synthetic access$3200(Lcom/diotek/ime/framework/common/InputManagerImpl;)V
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/common/InputManagerImpl;
 
     invoke-direct {p0}, Lcom/diotek/ime/framework/common/InputManagerImpl;->updateAfterScreenlock()V
 
@@ -1907,7 +1873,6 @@
 
 .method static synthetic access$3300(Lcom/diotek/ime/framework/common/InputManagerImpl;)Lcom/diotek/ime/framework/effect/SoundEffectController;
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/common/InputManagerImpl;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mSoundEffectController:Lcom/diotek/ime/framework/effect/SoundEffectController;
 
@@ -1924,7 +1889,6 @@
 
 .method static synthetic access$3472(I)I
     .locals 1
-    .param p0    # I
 
     sget v0, Lcom/diotek/ime/framework/common/InputManagerImpl;->keyboardState:I
 
@@ -1937,7 +1901,6 @@
 
 .method static synthetic access$3476(I)I
     .locals 1
-    .param p0    # I
 
     sget v0, Lcom/diotek/ime/framework/common/InputManagerImpl;->keyboardState:I
 
@@ -1950,7 +1913,6 @@
 
 .method static synthetic access$3500(Lcom/diotek/ime/framework/common/InputManagerImpl;)Z
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/common/InputManagerImpl;
 
     iget-boolean v0, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->BT_DEBUG:Z
 
@@ -1967,7 +1929,6 @@
 
 .method static synthetic access$3602(I)I
     .locals 0
-    .param p0    # I
 
     sput p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mBTKeyboardCount:I
 
@@ -2000,8 +1961,6 @@
 
 .method static synthetic access$3700(Lcom/diotek/ime/framework/common/InputManagerImpl;Z)V
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/common/InputManagerImpl;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/diotek/ime/framework/common/InputManagerImpl;->settingHWKeyboardConnection(Z)V
 
@@ -2010,7 +1969,6 @@
 
 .method static synthetic access$3800(Lcom/diotek/ime/framework/common/InputManagerImpl;)Lcom/sec/android/inputmethod/plugin/ocr/OCRHelper;
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/common/InputManagerImpl;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mOCRHelper:Lcom/sec/android/inputmethod/plugin/ocr/OCRHelper;
 
@@ -2019,7 +1977,6 @@
 
 .method static synthetic access$3900(Lcom/diotek/ime/framework/common/InputManagerImpl;)Landroid/content/pm/PackageInfo;
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/common/InputManagerImpl;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mOCRPackageInfo:Landroid/content/pm/PackageInfo;
 
@@ -2028,8 +1985,6 @@
 
 .method static synthetic access$3902(Lcom/diotek/ime/framework/common/InputManagerImpl;Landroid/content/pm/PackageInfo;)Landroid/content/pm/PackageInfo;
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/common/InputManagerImpl;
-    .param p1    # Landroid/content/pm/PackageInfo;
 
     iput-object p1, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mOCRPackageInfo:Landroid/content/pm/PackageInfo;
 
@@ -2046,7 +2001,6 @@
 
 .method static synthetic access$4000(Lcom/diotek/ime/framework/common/InputManagerImpl;)Landroid/content/BroadcastReceiver;
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/common/InputManagerImpl;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mOcrSIPTextReceiver:Landroid/content/BroadcastReceiver;
 
@@ -2055,7 +2009,6 @@
 
 .method static synthetic access$4100(Lcom/diotek/ime/framework/common/InputManagerImpl;)Z
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/common/InputManagerImpl;
 
     iget-boolean v0, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mIsRegisteredOcrSIPTextReceiver:Z
 
@@ -2064,8 +2017,6 @@
 
 .method static synthetic access$4102(Lcom/diotek/ime/framework/common/InputManagerImpl;Z)Z
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/common/InputManagerImpl;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mIsRegisteredOcrSIPTextReceiver:Z
 
@@ -2074,7 +2025,6 @@
 
 .method static synthetic access$4200(Lcom/diotek/ime/framework/common/InputManagerImpl;)V
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/common/InputManagerImpl;
 
     invoke-direct {p0}, Lcom/diotek/ime/framework/common/InputManagerImpl;->cancelGuidePopupMessage()V
 
@@ -2083,7 +2033,6 @@
 
 .method static synthetic access$4300(Lcom/diotek/ime/framework/common/InputManagerImpl;)V
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/common/InputManagerImpl;
 
     invoke-direct {p0}, Lcom/diotek/ime/framework/common/InputManagerImpl;->cancelPredictionWordMessage()V
 
@@ -2124,8 +2073,6 @@
 
 .method static synthetic access$4602(Lcom/diotek/ime/framework/common/InputManagerImpl;Z)Z
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/common/InputManagerImpl;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mDocKeyboardConnected:Z
 
@@ -2142,7 +2089,6 @@
 
 .method static synthetic access$4702(I)I
     .locals 0
-    .param p0    # I
 
     sput p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mUSBKeyboardCount:I
 
@@ -2175,8 +2121,6 @@
 
 .method static synthetic access$4802(Lcom/diotek/ime/framework/common/InputManagerImpl;I)I
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/common/InputManagerImpl;
-    .param p1    # I
 
     iput p1, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mFocusZoneInfo:I
 
@@ -2185,7 +2129,6 @@
 
 .method static synthetic access$4900(Lcom/diotek/ime/framework/common/InputManagerImpl;)Lcom/diotek/ime/framework/view/TipsDialog;
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/common/InputManagerImpl;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mTipsDialog:Lcom/diotek/ime/framework/view/TipsDialog;
 
@@ -2194,7 +2137,6 @@
 
 .method static synthetic access$500(Lcom/diotek/ime/framework/common/InputManagerImpl;)Z
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/common/InputManagerImpl;
 
     iget-boolean v0, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->isGetOcrString:Z
 
@@ -2203,7 +2145,6 @@
 
 .method static synthetic access$5000(Lcom/diotek/ime/framework/common/InputManagerImpl;)Lcom/diotek/ime/framework/common/Language;
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/common/InputManagerImpl;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mCurrentInputLanguage:Lcom/diotek/ime/framework/common/Language;
 
@@ -2212,7 +2153,6 @@
 
 .method static synthetic access$5100(Lcom/diotek/ime/framework/common/InputManagerImpl;)Lcom/diotek/ime/framework/common/ShiftStateController;
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/common/InputManagerImpl;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mShiftStateController:Lcom/diotek/ime/framework/common/ShiftStateController;
 
@@ -2221,7 +2161,6 @@
 
 .method static synthetic access$5200(Lcom/diotek/ime/framework/common/InputManagerImpl;)Z
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/common/InputManagerImpl;
 
     iget-boolean v0, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mShowKeyboardAfterClipboardClosed:Z
 
@@ -2230,8 +2169,6 @@
 
 .method static synthetic access$5202(Lcom/diotek/ime/framework/common/InputManagerImpl;Z)Z
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/common/InputManagerImpl;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mShowKeyboardAfterClipboardClosed:Z
 
@@ -2240,7 +2177,6 @@
 
 .method static synthetic access$5300(Lcom/diotek/ime/framework/common/InputManagerImpl;)V
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/common/InputManagerImpl;
 
     invoke-direct {p0}, Lcom/diotek/ime/framework/common/InputManagerImpl;->receiveScreenlock()V
 
@@ -2249,7 +2185,6 @@
 
 .method static synthetic access$5400(Lcom/diotek/ime/framework/common/InputManagerImpl;)V
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/common/InputManagerImpl;
 
     invoke-direct {p0}, Lcom/diotek/ime/framework/common/InputManagerImpl;->receiveScreenUnlock()V
 
@@ -2258,7 +2193,6 @@
 
 .method static synthetic access$5500(Lcom/diotek/ime/framework/common/InputManagerImpl;)Landroid/app/enterprise/EnterpriseDeviceManager;
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/common/InputManagerImpl;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mEdm:Landroid/app/enterprise/EnterpriseDeviceManager;
 
@@ -2267,8 +2201,6 @@
 
 .method static synthetic access$5600(Lcom/diotek/ime/framework/common/InputManagerImpl;I)Z
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/common/InputManagerImpl;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/diotek/ime/framework/common/InputManagerImpl;->isPopupInputMethod(I)Z
 
@@ -2279,7 +2211,6 @@
 
 .method static synthetic access$5700(Lcom/diotek/ime/framework/common/InputManagerImpl;)Z
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/common/InputManagerImpl;
 
     iget-boolean v0, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mShowKeyboardAfterScreenUnlockd:Z
 
@@ -2288,8 +2219,6 @@
 
 .method static synthetic access$5702(Lcom/diotek/ime/framework/common/InputManagerImpl;Z)Z
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/common/InputManagerImpl;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mShowKeyboardAfterScreenUnlockd:Z
 
@@ -2298,7 +2227,6 @@
 
 .method static synthetic access$5800(Lcom/diotek/ime/framework/common/InputManagerImpl;)Z
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/common/InputManagerImpl;
 
     iget-boolean v0, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mIsScreenLock:Z
 
@@ -2307,8 +2235,6 @@
 
 .method static synthetic access$5802(Lcom/diotek/ime/framework/common/InputManagerImpl;Z)Z
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/common/InputManagerImpl;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mIsScreenLock:Z
 
@@ -2317,8 +2243,6 @@
 
 .method static synthetic access$5902(Lcom/diotek/ime/framework/common/InputManagerImpl;Z)Z
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/common/InputManagerImpl;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mIsCalling:Z
 
@@ -2327,7 +2251,6 @@
 
 .method static synthetic access$600(Lcom/diotek/ime/framework/common/InputManagerImpl;)Z
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/common/InputManagerImpl;
 
     iget-boolean v0, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mIsDisableLoopOfOcr:Z
 
@@ -2336,7 +2259,6 @@
 
 .method static synthetic access$6000(Lcom/diotek/ime/framework/common/InputManagerImpl;)Z
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/common/InputManagerImpl;
 
     invoke-direct {p0}, Lcom/diotek/ime/framework/common/InputManagerImpl;->isChangeToHwrAvailable()Z
 
@@ -2347,7 +2269,6 @@
 
 .method static synthetic access$6100(Lcom/diotek/ime/framework/common/InputManagerImpl;)Landroid/app/KeyguardManager;
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/common/InputManagerImpl;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mKeyguardManager:Landroid/app/KeyguardManager;
 
@@ -2356,8 +2277,6 @@
 
 .method static synthetic access$6102(Lcom/diotek/ime/framework/common/InputManagerImpl;Landroid/app/KeyguardManager;)Landroid/app/KeyguardManager;
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/common/InputManagerImpl;
-    .param p1    # Landroid/app/KeyguardManager;
 
     iput-object p1, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mKeyguardManager:Landroid/app/KeyguardManager;
 
@@ -2366,7 +2285,6 @@
 
 .method static synthetic access$6200(Lcom/diotek/ime/framework/common/InputManagerImpl;)Z
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/common/InputManagerImpl;
 
     iget-boolean v0, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mIsFlatMode:Z
 
@@ -2375,8 +2293,6 @@
 
 .method static synthetic access$6202(Lcom/diotek/ime/framework/common/InputManagerImpl;Z)Z
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/common/InputManagerImpl;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mIsFlatMode:Z
 
@@ -2385,7 +2301,6 @@
 
 .method static synthetic access$6300(Lcom/diotek/ime/framework/common/InputManagerImpl;)I
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/common/InputManagerImpl;
 
     iget v0, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mPreUseOneHandSettingValue:I
 
@@ -2394,8 +2309,6 @@
 
 .method static synthetic access$6400(Lcom/diotek/ime/framework/common/InputManagerImpl;Z)V
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/common/InputManagerImpl;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/diotek/ime/framework/common/InputManagerImpl;->changeToOneHandKeyboard(Z)V
 
@@ -2404,8 +2317,6 @@
 
 .method static synthetic access$6502(Lcom/diotek/ime/framework/common/InputManagerImpl;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/common/InputManagerImpl;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mAlternativeChar:Ljava/lang/String;
 
@@ -2414,8 +2325,6 @@
 
 .method static synthetic access$6602(Lcom/diotek/ime/framework/common/InputManagerImpl;Z)Z
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/common/InputManagerImpl;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mIsHwUmlautPopupShown:Z
 
@@ -2424,7 +2333,6 @@
 
 .method static synthetic access$6700(Lcom/diotek/ime/framework/common/InputManagerImpl;)Lcom/diotek/ime/framework/engine/InputEngineManager;
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/common/InputManagerImpl;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mEngineManager:Lcom/diotek/ime/framework/engine/InputEngineManager;
 
@@ -2433,7 +2341,6 @@
 
 .method static synthetic access$6800(Lcom/diotek/ime/framework/common/InputManagerImpl;)V
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/common/InputManagerImpl;
 
     invoke-direct {p0}, Lcom/diotek/ime/framework/common/InputManagerImpl;->readAnyScreenRunning()V
 
@@ -2442,8 +2349,6 @@
 
 .method static synthetic access$6900(Lcom/diotek/ime/framework/common/InputManagerImpl;Z)V
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/common/InputManagerImpl;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/diotek/ime/framework/common/InputManagerImpl;->changeOneHandMode(Z)V
 
@@ -2452,7 +2357,6 @@
 
 .method static synthetic access$700(Lcom/diotek/ime/framework/common/InputManagerImpl;)Z
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/common/InputManagerImpl;
 
     iget-boolean v0, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mIsStartInputViewDelayed:Z
 
@@ -2461,8 +2365,6 @@
 
 .method static synthetic access$702(Lcom/diotek/ime/framework/common/InputManagerImpl;Z)Z
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/common/InputManagerImpl;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mIsStartInputViewDelayed:Z
 
@@ -2471,7 +2373,6 @@
 
 .method static synthetic access$800(Lcom/diotek/ime/framework/common/InputManagerImpl;)Landroid/view/inputmethod/EditorInfo;
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/common/InputManagerImpl;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mDelayedEditorInfo:Landroid/view/inputmethod/EditorInfo;
 
@@ -2480,8 +2381,6 @@
 
 .method static synthetic access$802(Lcom/diotek/ime/framework/common/InputManagerImpl;Landroid/view/inputmethod/EditorInfo;)Landroid/view/inputmethod/EditorInfo;
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/common/InputManagerImpl;
-    .param p1    # Landroid/view/inputmethod/EditorInfo;
 
     iput-object p1, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mDelayedEditorInfo:Landroid/view/inputmethod/EditorInfo;
 
@@ -2490,7 +2389,6 @@
 
 .method static synthetic access$900(Lcom/diotek/ime/framework/common/InputManagerImpl;)Z
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/common/InputManagerImpl;
 
     iget-boolean v0, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mDelayedRestarting:Z
 
@@ -2670,7 +2568,6 @@
 
 .method private changeOneHandMode(Z)V
     .locals 5
-    .param p1    # Z
 
     const/4 v4, 0x1
 
@@ -2766,7 +2663,6 @@
 
 .method private changeToOneHandKeyboard(Z)V
     .locals 6
-    .param p1    # Z
 
     const/4 v5, 0x1
 
@@ -3953,7 +3849,6 @@
 
 .method private getAutoReplacementValue(Lcom/diotek/ime/framework/common/Language;)V
     .locals 5
-    .param p1    # Lcom/diotek/ime/framework/common/Language;
 
     const/4 v1, 0x0
 
@@ -4247,7 +4142,6 @@
 
 .method private getDefaultInputLanguage(Landroid/view/inputmethod/EditorInfo;)I
     .locals 17
-    .param p1    # Landroid/view/inputmethod/EditorInfo;
 
     move-object/from16 v0, p0
 
@@ -8318,8 +8212,6 @@
 
 .method private initDefaultLanguage(ILcom/diotek/ime/framework/common/Language;)V
     .locals 21
-    .param p1    # I
-    .param p2    # Lcom/diotek/ime/framework/common/Language;
 
     invoke-static {}, Lcom/diotek/ime/framework/repository/EditorStatus;->isUrlInputType()Z
 
@@ -9179,8 +9071,6 @@
 
 .method private initInputTypeWithPrivateImeOptions(Ljava/lang/String;Z)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const/4 v1, 0x1
 
@@ -11296,7 +11186,6 @@
 
 .method private initRestartingPasswordMode(Z)Z
     .locals 4
-    .param p1    # Z
 
     const/4 v2, 0x0
 
@@ -11539,7 +11428,6 @@
 
 .method private isDefaultAutoReplacementOff(I)Z
     .locals 1
-    .param p1    # I
 
     sparse-switch p1, :sswitch_data_0
 
@@ -11589,8 +11477,6 @@
 
 .method private isNeedInvalidateSpaceKey(Landroid/view/View;ZLjava/util/ArrayList;)Z
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -11732,7 +11618,6 @@
 
 .method private isNeedToChangeToFloatingKeyboardModeForcely(I)Z
     .locals 4
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -11786,7 +11671,6 @@
 
 .method private isNotUseAltGrKey(Lcom/diotek/ime/framework/common/Language;)Z
     .locals 4
-    .param p1    # Lcom/diotek/ime/framework/common/Language;
 
     const/4 v0, 0x1
 
@@ -11918,7 +11802,6 @@
 
 .method private isPopupInputMethod(I)Z
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mInputModeManager:Lcom/diotek/ime/framework/inputmode/InputModeManager;
 
@@ -11931,7 +11814,6 @@
 
 .method private isShownDiscoverabilityInKor(I)Z
     .locals 5
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -12249,7 +12131,6 @@
 
 .method public static declared-synchronized newInstance(Landroid/content/Context;)Lcom/diotek/ime/framework/common/InputManager;
     .locals 8
-    .param p0    # Landroid/content/Context;
 
     const/4 v3, 0x0
 
@@ -12818,8 +12699,6 @@
 
 .method private resetSelectedLanguage(ILcom/diotek/ime/framework/common/Language;)V
     .locals 11
-    .param p1    # I
-    .param p2    # Lcom/diotek/ime/framework/common/Language;
 
     const/high16 v10, 0x656e0000
 
@@ -13107,8 +12986,6 @@
 
 .method private setDateTimeInputModeWithVariation(IZ)V
     .locals 2
-    .param p1    # I
-    .param p2    # Z
 
     sget-boolean v0, Lcom/diotek/ime/framework/util/Debug;->DEBUG:Z
 
@@ -13193,8 +13070,6 @@
 
 .method private setDefaultInputModeWithFlags(IZ)V
     .locals 4
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v3, 0x1
 
@@ -13360,8 +13235,6 @@
 
 .method private setDefaultInputModeWithInputType(IZ)V
     .locals 6
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v5, 0x3
 
@@ -13471,8 +13344,6 @@
 
 .method private setDefaultInputModeWithVariation(IZ)V
     .locals 6
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v3, 0x1
 
@@ -14101,7 +13972,6 @@
 
 .method private setExistTextBeforeCursor(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-static {}, Lcom/diotek/ime/framework/sidesync/SideSyncManager;->getInstance()Lcom/diotek/ime/framework/sidesync/SideSyncManager;
 
@@ -14172,7 +14042,6 @@
 
 .method private setFullWidthMode(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mInputController:Lcom/diotek/ime/framework/input/InputController;
 
@@ -14183,7 +14052,6 @@
 
 .method private setHandGripCondition(Z)V
     .locals 0
-    .param p1    # Z
 
     invoke-static {p1}, Lcom/sec/android/hardware/SecHardwareInterface;->enableHandgripEvent(Z)Z
 
@@ -14192,7 +14060,6 @@
 
 .method private setInputData(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -14400,7 +14267,6 @@
 
 .method private setInputMethodSubTypeValue(Lcom/diotek/ime/framework/common/Language;)V
     .locals 3
-    .param p1    # Lcom/diotek/ime/framework/common/Language;
 
     invoke-virtual {p0}, Lcom/diotek/ime/framework/common/InputManagerImpl;->getSharedPreferences()Landroid/content/SharedPreferences;
 
@@ -14431,7 +14297,6 @@
 
 .method private setInputMethodValueFromSettings(Z)V
     .locals 24
-    .param p1    # Z
 
     invoke-virtual/range {p0 .. p0}, Lcom/diotek/ime/framework/common/InputManagerImpl;->getSharedPreferences()Landroid/content/SharedPreferences;
 
@@ -15665,8 +15530,6 @@
 
 .method private setInputModeWithEditorType(Landroid/view/inputmethod/EditorInfo;Z)V
     .locals 4
-    .param p1    # Landroid/view/inputmethod/EditorInfo;
-    .param p2    # Z
 
     const/4 v3, 0x0
 
@@ -15710,8 +15573,6 @@
 
 .method private setInputModeWithImeOptions(IZ)V
     .locals 4
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v3, 0x0
 
@@ -15896,8 +15757,6 @@
 
 .method private setInputModeWithInputType(IZ)V
     .locals 5
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v4, 0x0
 
@@ -16079,8 +15938,6 @@
 
 .method private setInputModeWithPrivateImeOptions(Ljava/lang/String;Z)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const/4 v2, 0x0
 
@@ -16157,7 +16014,6 @@
 
 .method private setInputType(I)V
     .locals 5
-    .param p1    # I
 
     const/16 v4, 0x8
 
@@ -16483,7 +16339,6 @@
 
 .method private setMDPLimitCondition(Z)V
     .locals 3
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -16572,7 +16427,6 @@
 
 .method private setNotUseAltGrKeyInCountry(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mIsNotUseAltGrKeyInCountry:Z
 
@@ -16581,8 +16435,6 @@
 
 .method private setNumberInputModeWithFlags(IZ)V
     .locals 3
-    .param p1    # I
-    .param p2    # Z
 
     const/16 v0, 0x2000
 
@@ -16668,8 +16520,6 @@
 
 .method private setNumberInputModeWithInputType(IZ)V
     .locals 4
-    .param p1    # I
-    .param p2    # Z
 
     and-int/lit16 v1, p1, 0xff0
 
@@ -16718,8 +16568,6 @@
 
 .method private setNumberInputModeWithVariation(IZ)V
     .locals 3
-    .param p1    # I
-    .param p2    # Z
 
     if-nez p1, :cond_1
 
@@ -16786,7 +16634,6 @@
 
 .method private setPhoneInputMode(Z)V
     .locals 6
-    .param p1    # Z
 
     const/16 v5, 0x8
 
@@ -17137,7 +16984,6 @@
 
 .method private setSuggestionActiveIndex(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mInputController:Lcom/diotek/ime/framework/input/InputController;
 
@@ -17183,7 +17029,6 @@
 
 .method private setTSPExtendedMode(Z)V
     .locals 10
-    .param p1    # Z
 
     sget-boolean v6, Lcom/diotek/ime/framework/util/Debug;->INFO:Z
 
@@ -17740,7 +17585,6 @@
 
 .method private settingHWKeyboardConnection(Z)V
     .locals 12
-    .param p1    # Z
 
     const/4 v11, 0x0
 
@@ -18062,8 +17906,6 @@
 
 .method private startInputForHWKeyboard(Landroid/view/inputmethod/EditorInfo;Z)V
     .locals 10
-    .param p1    # Landroid/view/inputmethod/EditorInfo;
-    .param p2    # Z
 
     const/high16 v9, 0x656e0000
 
@@ -18416,8 +18258,6 @@
 
 .method private startInputViewContinue(Landroid/view/inputmethod/EditorInfo;Z)V
     .locals 26
-    .param p1    # Landroid/view/inputmethod/EditorInfo;
-    .param p2    # Z
 
     move-object/from16 v0, p0
 
@@ -22258,7 +22098,6 @@
 
 .method private uncheckAllLanguages(Landroid/content/SharedPreferences$Editor;)V
     .locals 6
-    .param p1    # Landroid/content/SharedPreferences$Editor;
 
     const/4 v5, 0x0
 
@@ -22365,7 +22204,6 @@
 
 .method private unregisterReceiver(Landroid/content/BroadcastReceiver;)V
     .locals 4
-    .param p1    # Landroid/content/BroadcastReceiver;
 
     :try_start_0
     sget-object v1, Lcom/diotek/ime/framework/common/InputManagerImpl;->sContext:Landroid/content/Context;
@@ -22643,7 +22481,6 @@
 
 .method private updateCapsLockStateForLanguage(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mShiftStateController:Lcom/diotek/ime/framework/common/ShiftStateController;
 
@@ -23001,7 +22838,6 @@
 
 .method private updateSystemSettingsForKeytapFeedback(Landroid/content/SharedPreferences;)V
     .locals 3
-    .param p1    # Landroid/content/SharedPreferences;
 
     const/4 v2, 0x1
 
@@ -23046,7 +22882,6 @@
 # virtual methods
 .method public FrequencyUpdateHanja(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mSIPResolver:Lcom/sec/android/inputmethod/databases/SIPResolver;
 
@@ -23137,7 +22972,6 @@
 
 .method public addWordIntoTypoList(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -23154,7 +22988,6 @@
 
 .method public afterConfigrationChanged(Landroid/content/res/Configuration;)V
     .locals 9
-    .param p1    # Landroid/content/res/Configuration;
 
     const/4 v4, 0x1
 
@@ -23445,8 +23278,6 @@
 
 .method public appPrivateCommand(Ljava/lang/String;Landroid/os/Bundle;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Bundle;
 
     const/4 v1, 0x1
 
@@ -23610,7 +23441,6 @@
 
 .method public beforeConfigrationChanged(Landroid/content/res/Configuration;)Z
     .locals 18
-    .param p1    # Landroid/content/res/Configuration;
 
     sget-boolean v14, Lcom/diotek/ime/framework/util/Debug;->DEBUG:Z
 
@@ -24428,7 +24258,6 @@
 
 .method public buildSuggestions(I)V
     .locals 4
-    .param p1    # I
 
     const/16 v3, 0x29
 
@@ -24495,7 +24324,6 @@
 
 .method public changeInputMethodInKorMode(I)V
     .locals 5
-    .param p1    # I
 
     iget-object v2, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mRepository:Lcom/diotek/ime/framework/repository/Repository;
 
@@ -24560,7 +24388,6 @@
 
 .method public changeToFloatingKeyboardModeForEasyMode(I)V
     .locals 1
-    .param p1    # I
 
     iget-boolean v0, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mNeedMakeNewViewForFloating:Z
 
@@ -24584,7 +24411,6 @@
 
 .method public changeToFullWidthSwitchMode(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mInputController:Lcom/diotek/ime/framework/input/InputController;
 
@@ -24604,7 +24430,6 @@
 
 .method public changeToNormalKeyboardModeForEasyMode(I)V
     .locals 1
-    .param p1    # I
 
     const/16 v0, 0x8
 
@@ -24684,8 +24509,6 @@
 
 .method public computeCurrentKeyCode(II)I
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mInputController:Lcom/diotek/ime/framework/input/InputController;
 
@@ -24698,7 +24521,6 @@
 
 .method public computeInsets(Landroid/inputmethodservice/InputMethodService$Insets;)V
     .locals 16
-    .param p1    # Landroid/inputmethodservice/InputMethodService$Insets;
 
     move-object/from16 v0, p0
 
@@ -25288,8 +25110,6 @@
 
 .method public createKeyMapForMinikeyboard(Ljava/util/List;II)V
     .locals 1
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -25368,7 +25188,6 @@
 
 .method protected dismissPopupForSystemDialogs(Landroid/content/Intent;)V
     .locals 9
-    .param p1    # Landroid/content/Intent;
 
     const/4 v7, 0x0
 
@@ -25509,7 +25328,6 @@
 
 .method public dispatchTouchEventOnSoftInputPanel(Landroid/view/MotionEvent;)V
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     sget-object v0, Lcom/diotek/ime/framework/common/InputManagerImpl;->sService:Lcom/diotek/ime/framework/common/AbstractInputMethod;
 
@@ -25529,7 +25347,6 @@
 
 .method public displayCompletions([Landroid/view/inputmethod/CompletionInfo;)V
     .locals 14
-    .param p1    # [Landroid/view/inputmethod/CompletionInfo;
 
     const/4 v13, 0x0
 
@@ -25689,7 +25506,6 @@
 
 .method public doRecaptureWord(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mIsRacaptureWord:Z
 
@@ -25698,9 +25514,6 @@
 
 .method public dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     new-instance v1, Landroid/util/PrintWriterPrinter;
 
@@ -26551,7 +26364,6 @@
 
 .method public finishComposing(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mInputController:Lcom/diotek/ime/framework/input/InputController;
 
@@ -26666,7 +26478,6 @@
 
 .method public finishInputView(Z)V
     .locals 8
-    .param p1    # Z
 
     const/16 v7, 0x8
 
@@ -26876,7 +26687,6 @@
 
 .method public getCandidateView(Z)Landroid/view/View;
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mViewController:Lcom/diotek/ime/framework/view/ViewController;
 
@@ -27293,7 +27103,6 @@
 
 .method public getCurrentKeyUmlautString(Lcom/diotek/ime/framework/view/KeboardKeyInfo;)Ljava/lang/StringBuilder;
     .locals 1
-    .param p1    # Lcom/diotek/ime/framework/view/KeboardKeyInfo;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mUmlautManager:Lcom/diotek/ime/framework/input/umlaut/UmlautManager;
 
@@ -27316,7 +27125,6 @@
 
 .method public getCurrentMemory(Ljava/lang/String;)V
     .locals 10
-    .param p1    # Ljava/lang/String;
 
     const/4 v7, 0x1
 
@@ -27691,7 +27499,6 @@
 
 .method public getFractionOrientedWidth(I)I
     .locals 3
-    .param p1    # I
 
     iget v0, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mDeviceWidth:I
 
@@ -27714,7 +27521,6 @@
 
 .method public getFractionOrientedheight(I)I
     .locals 3
-    .param p1    # I
 
     iget v0, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mDeviceHeight:I
 
@@ -27885,7 +27691,6 @@
 
 .method public getInputView(Z)Landroid/view/View;
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mViewController:Lcom/diotek/ime/framework/view/ViewController;
 
@@ -27922,7 +27727,6 @@
 
 .method public getKeyPositions([Landroid/graphics/Rect;)I
     .locals 1
-    .param p1    # [Landroid/graphics/Rect;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mInputController:Lcom/diotek/ime/framework/input/InputController;
 
@@ -27945,7 +27749,6 @@
 
 .method public getKeyboardKeyList(Z)Ljava/util/List;
     .locals 1
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(Z)",
@@ -27977,7 +27780,6 @@
 
 .method public getLabelFromCurrentView(I)Ljava/lang/CharSequence;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mViewController:Lcom/diotek/ime/framework/view/ViewController;
 
@@ -28146,7 +27948,6 @@
 
 .method public getNextTipsDlg(I)I
     .locals 4
-    .param p1    # I
 
     const/4 v2, -0x1
 
@@ -28244,7 +28045,6 @@
 
 .method public getPrevTipsDlg(I)I
     .locals 4
-    .param p1    # I
 
     const/4 v2, -0x1
 
@@ -28372,7 +28172,6 @@
 
 .method public getSelectedLanguageId(I)I
     .locals 3
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/diotek/ime/framework/common/InputManagerImpl;->getSelectedLanguageList()[Lcom/diotek/ime/framework/common/Language;
 
@@ -28490,7 +28289,6 @@
 
 .method public getSelectedLanguageScriptType(I)I
     .locals 3
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/diotek/ime/framework/common/InputManagerImpl;->getSelectedLanguageList()[Lcom/diotek/ime/framework/common/Language;
 
@@ -28928,7 +28726,6 @@
 
 .method public getViewFromDecoreView(I)Landroid/view/View;
     .locals 1
-    .param p1    # I
 
     sget-object v0, Lcom/diotek/ime/framework/common/InputManagerImpl;->sContext:Landroid/content/Context;
 
@@ -29464,8 +29261,6 @@
 
 .method public handleRangeChange(ZZ)V
     .locals 1
-    .param p1    # Z
-    .param p2    # Z
 
     iget-object v0, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mInputController:Lcom/diotek/ime/framework/input/InputController;
 
@@ -29493,8 +29288,6 @@
 
 .method public inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/view/ViewGroup;
 
     const/4 v1, 0x0
 
@@ -29537,8 +29330,6 @@
 
 .method public declared-synchronized inflateWithCache(ILandroid/view/ViewGroup;)Landroid/view/View;
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/view/ViewGroup;
 
     monitor-enter p0
 
@@ -29646,7 +29437,6 @@
 
 .method public initHwrPanel(Landroid/widget/FrameLayout;)V
     .locals 2
-    .param p1    # Landroid/widget/FrameLayout;
 
     const/4 v0, 0x1
 
@@ -29971,7 +29761,6 @@
 
 .method public initModulesWithService(Lcom/diotek/ime/framework/common/AbstractInputMethod;)V
     .locals 12
-    .param p1    # Lcom/diotek/ime/framework/common/AbstractInputMethod;
 
     const/4 v11, 0x2
 
@@ -30839,8 +30628,6 @@
 
 .method public insertLog(Ljava/lang/String;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-boolean v2, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mIsSurveyModeEnabled:Z
 
@@ -30954,7 +30741,6 @@
 
 .method public invalidateKey(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mViewController:Lcom/diotek/ime/framework/view/ViewController;
 
@@ -31019,7 +30805,6 @@
 
 .method public isAvailableLanguage(I)Z
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mInputController:Lcom/diotek/ime/framework/input/InputController;
 
@@ -31380,7 +31165,6 @@
 
 .method public isContainInTypoList(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -31989,7 +31773,6 @@
 
 .method public isEnableAutoCorrection(C)Z
     .locals 5
-    .param p1    # C
 
     const/4 v2, 0x0
 
@@ -32236,7 +32019,6 @@
 
 .method public isEnglishUSTypeCountry(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "US"
 
@@ -32751,8 +32533,6 @@
 
 .method public isHwDpadKey(ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     packed-switch p1, :pswitch_data_0
 
@@ -32877,7 +32657,6 @@
 
 .method public isInstallableLanguage(I)Z
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mInputController:Lcom/diotek/ime/framework/input/InputController;
 
@@ -32991,7 +32770,6 @@
 
 .method public isLatinLanguageID(I)Z
     .locals 8
-    .param p1    # I
 
     const/4 v5, 0x1
 
@@ -33178,7 +32956,6 @@
 
 .method public isNumberMyanmar(I)Z
     .locals 1
-    .param p1    # I
 
     const/16 v0, 0x1040
 
@@ -34250,8 +34027,6 @@
 
 .method public isThisKeyEnable(ILjava/lang/CharSequence;)Z
     .locals 26
-    .param p1    # I
-    .param p2    # Ljava/lang/CharSequence;
 
     invoke-virtual/range {p0 .. p0}, Lcom/diotek/ime/framework/common/InputManagerImpl;->isCurrentCarModeKnobSIP()Z
 
@@ -36432,7 +36207,6 @@
 
 .method public makeAutoReplacePrefKey(Lcom/diotek/ime/framework/common/Language;)Ljava/lang/String;
     .locals 2
-    .param p1    # Lcom/diotek/ime/framework/common/Language;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -36463,7 +36237,6 @@
 
 .method public makeSelectLanguagePrefKey(I)Ljava/lang/String;
     .locals 2
-    .param p1    # I
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -36490,7 +36263,6 @@
 
 .method public makeSelectLanguagePrefKey(Lcom/diotek/ime/framework/common/Language;)Ljava/lang/String;
     .locals 1
-    .param p1    # Lcom/diotek/ime/framework/common/Language;
 
     invoke-virtual {p1}, Lcom/diotek/ime/framework/common/Language;->getId()I
 
@@ -36505,9 +36277,6 @@
 
 .method public moveTrace(FFJ)V
     .locals 1
-    .param p1    # F
-    .param p2    # F
-    .param p3    # J
 
     iget-object v0, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mEngineManager:Lcom/diotek/ime/framework/engine/InputEngineManager;
 
@@ -36912,7 +36681,6 @@
 
 .method public onHwrPanelLongPressed(Landroid/graphics/Point;)Z
     .locals 13
-    .param p1    # Landroid/graphics/Point;
 
     const/4 v11, 0x1
 
@@ -37038,9 +36806,6 @@
 
 .method public onHwrTouchCancel(IIJ)Z
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
 
     const/4 v0, 0x0
 
@@ -37060,9 +36825,6 @@
 
 .method public onHwrTouchDown(IIJ)Z
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
 
     const/4 v0, 0x0
 
@@ -37082,9 +36844,6 @@
 
 .method public onHwrTouchMove(IIJ)Z
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
 
     const/4 v0, 0x0
 
@@ -37104,9 +36863,6 @@
 
 .method public onHwrTouchUp(IIJ)Z
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
 
     const/4 v0, 0x0
 
@@ -37126,8 +36882,6 @@
 
 .method public onKey(I[I)V
     .locals 13
-    .param p1    # I
-    .param p2    # [I
 
     const/4 v12, 0x2
 
@@ -37668,8 +37422,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x0
 
@@ -37693,8 +37445,6 @@
 
 .method public onKeyDownBeforeCallingSuperMethod(ILandroid/view/KeyEvent;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mInputController:Lcom/diotek/ime/framework/input/InputController;
 
@@ -37710,8 +37460,6 @@
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x0
 
@@ -37731,7 +37479,6 @@
 
 .method public onPress(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mInputController:Lcom/diotek/ime/framework/input/InputController;
 
@@ -37747,7 +37494,6 @@
 
 .method public onRelease(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mInputController:Lcom/diotek/ime/framework/input/InputController;
 
@@ -37763,7 +37509,6 @@
 
 .method public onText(Ljava/lang/CharSequence;)V
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mSideSyncManager:Lcom/diotek/ime/framework/sidesync/SideSyncManager;
 
@@ -37838,8 +37583,6 @@
 
 .method public pickSuggestionManually(ILjava/lang/CharSequence;)V
     .locals 4
-    .param p1    # I
-    .param p2    # Ljava/lang/CharSequence;
 
     if-gez p1, :cond_0
 
@@ -37904,7 +37647,6 @@
 
 .method public playSoundEffect(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mSoundEffectController:Lcom/diotek/ime/framework/effect/SoundEffectController;
 
@@ -37915,8 +37657,6 @@
 
 .method public playSoundEffect(IZ)V
     .locals 1
-    .param p1    # I
-    .param p2    # Z
 
     iget-object v0, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mSoundEffectController:Lcom/diotek/ime/framework/effect/SoundEffectController;
 
@@ -37927,8 +37667,6 @@
 
 .method public playVibrateEffect(IZ)V
     .locals 1
-    .param p1    # I
-    .param p2    # Z
 
     iget-object v0, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mVibrateController:Lcom/diotek/ime/framework/effect/VibrateController;
 
@@ -37939,9 +37677,6 @@
 
 .method public playVibrateEffect(IZZ)V
     .locals 1
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # Z
 
     iget-object v0, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mVibrateController:Lcom/diotek/ime/framework/effect/VibrateController;
 
@@ -38047,7 +37782,6 @@
 
 .method public previewTrace(Z)V
     .locals 6
-    .param p1    # Z
 
     const/16 v5, 0x33
 
@@ -38096,7 +37830,6 @@
 
 .method public processKnobKeyEvents(Landroid/view/KeyEvent;)V
     .locals 6
-    .param p1    # Landroid/view/KeyEvent;
 
     const/4 v3, 0x0
 
@@ -38252,9 +37985,6 @@
 
 .method public releaseTrace(FFJ)V
     .locals 1
-    .param p1    # F
-    .param p2    # F
-    .param p3    # J
 
     iget-object v0, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mEngineManager:Lcom/diotek/ime/framework/engine/InputEngineManager;
 
@@ -38389,7 +38119,6 @@
 
 .method public removeTerm(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mInputController:Lcom/diotek/ime/framework/input/InputController;
 
@@ -38405,7 +38134,6 @@
 
 .method public requestHideSelf(I)V
     .locals 1
-    .param p1    # I
 
     sget-object v0, Lcom/diotek/ime/framework/common/InputManagerImpl;->sService:Lcom/diotek/ime/framework/common/AbstractInputMethod;
 
@@ -38471,7 +38199,6 @@
 
 .method public searchHanjaDirectly(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Lcom/diotek/ime/framework/common/InputManagerImpl;->getCurrentInputConnection()Landroid/view/inputmethod/InputConnection;
 
@@ -38509,7 +38236,6 @@
 
 .method public sendBroadcaseSIPShown(Z)V
     .locals 3
-    .param p1    # Z
 
     sget-boolean v1, Lcom/diotek/ime/framework/util/Debug;->INFO:Z
 
@@ -38546,7 +38272,6 @@
 
 .method public sendDownUpKeyEvents(I)V
     .locals 1
-    .param p1    # I
 
     sget-object v0, Lcom/diotek/ime/framework/common/InputManagerImpl;->sService:Lcom/diotek/ime/framework/common/AbstractInputMethod;
 
@@ -38676,7 +38401,6 @@
 
 .method public sendInputMethodType(I)V
     .locals 3
-    .param p1    # I
 
     new-instance v0, Landroid/content/Intent;
 
@@ -38705,7 +38429,6 @@
 
 .method public sendSideSyncShiftState(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mSideSyncManager:Lcom/diotek/ime/framework/sidesync/SideSyncManager;
 
@@ -38716,7 +38439,6 @@
 
 .method public sendTalkbackDescription(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mViewController:Lcom/diotek/ime/framework/view/ViewController;
 
@@ -38783,8 +38505,6 @@
 
 .method public sendTouchEvent(Landroid/view/MotionEvent;Z)V
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # Z
 
     iget-object v0, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mViewController:Lcom/diotek/ime/framework/view/ViewController;
 
@@ -38815,7 +38535,6 @@
 
 .method public setBackingView(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     iput-object p1, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mBackingView:Landroid/view/View;
 
@@ -38824,7 +38543,6 @@
 
 .method public setCandidateExpandDismissedByTouchInterceptor(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mIsCandidateExpandDismissByTouchInterceptor:Z
 
@@ -38833,7 +38551,6 @@
 
 .method public setCandidateExpandedFlag(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mIsCandidateExpanded:Z
 
@@ -38842,7 +38559,6 @@
 
 .method public setCandidateView(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     if-eqz p1, :cond_0
 
@@ -39232,7 +38948,6 @@
 
 .method public setCandidatesDelayed(Ljava/util/ArrayList;I)V
     .locals 5
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -39303,7 +39018,6 @@
 
 .method public setCandidatesViewShown(Z)V
     .locals 20
-    .param p1    # Z
 
     move-object/from16 v0, p0
 
@@ -40752,7 +40466,6 @@
 
 .method public setCandidateviewStatus(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mCandidateviewStatus:I
 
@@ -40761,7 +40474,6 @@
 
 .method public setCarInDrivingMode(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mIsDrivingMode:Z
 
@@ -40770,7 +40482,6 @@
 
 .method public setCheckDontShowPinchZoomGuide(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mDontShowPinchZoomGuide:Z
 
@@ -40779,7 +40490,6 @@
 
 .method public setCheckDontShowPredictiveTextGuide(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mIsCheckDontShowPredictiveTextGuide:Z
 
@@ -40788,7 +40498,6 @@
 
 .method public setCloseWb(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mIsCloseWb:Z
 
@@ -40797,7 +40506,6 @@
 
 .method public setCompletions([Landroid/view/inputmethod/CompletionInfo;)V
     .locals 5
-    .param p1    # [Landroid/view/inputmethod/CompletionInfo;
 
     iput-object p1, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mCompletions:[Landroid/view/inputmethod/CompletionInfo;
 
@@ -40895,7 +40603,6 @@
 
 .method public setContextAwareUniqueID(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mInputController:Lcom/diotek/ime/framework/input/InputController;
 
@@ -40911,7 +40618,6 @@
 
 .method public setCtrlPressedState(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mIsCtrlPressed:Z
 
@@ -40920,7 +40626,6 @@
 
 .method public setCurrentThaiVowelPageNum(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mViewController:Lcom/diotek/ime/framework/view/ViewController;
 
@@ -40931,7 +40636,6 @@
 
 .method public setCursorMoveByComposingText(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mIscurMoveByComposingText:Z
 
@@ -40990,7 +40694,6 @@
 
 .method public setDontShowEmptyShortcutsGuideConsecutively(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mDontShowEmptyShortcutsGuideConsecutively:Z
 
@@ -40999,7 +40702,6 @@
 
 .method public setDontShowGestureGuideConsecutively(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mDontShowGestureGuideConsecutively:Z
 
@@ -41008,7 +40710,6 @@
 
 .method public setDontShowOneHandedGuideConsecutively(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mDontShowOneHandedGuideConsecutively:Z
 
@@ -41017,7 +40718,6 @@
 
 .method public setDontShowPenDetectionGuideConsecutively(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mDontShowPenDetectionGuideConsecutively:Z
 
@@ -41026,7 +40726,6 @@
 
 .method public setDontShowSwiftkeyGuideConsecutively(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mDontShowSwiftkeyGuideConsecutively:Z
 
@@ -41035,7 +40734,6 @@
 
 .method public setDontShowTipTraceGuideConsecutively(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mDontShowTipTraceGuideConsecutively:Z
 
@@ -41044,7 +40742,6 @@
 
 .method public setDontShowTraceGuideConsecutively(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mDontShowTraceGuideConsecutively:Z
 
@@ -41053,7 +40750,6 @@
 
 .method public setDontShowXt9PersonalizerAttentionConsecutively(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mDontShowXt9PersonalizerConsecutively:Z
 
@@ -41062,7 +40758,6 @@
 
 .method public setDontShowZoomPinchGuideConsecutively(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mDontShowZoomPinchGuideConsecutively:Z
 
@@ -41071,7 +40766,6 @@
 
 .method public setEmojiPredictionEnabled(Z)V
     .locals 2
-    .param p1    # Z
 
     invoke-static {}, Lcom/diotek/ime/framework/repository/EditorStatus;->isPasswordInputType()Z
 
@@ -41123,7 +40817,6 @@
 
 .method public setEmoticonCategory(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mRepository:Lcom/diotek/ime/framework/repository/Repository;
 
@@ -41182,8 +40875,6 @@
 
 .method public setEmoticonPopupKey(Lcom/diotek/ime/framework/view/Keyboard$Key;Ljava/lang/CharSequence;)V
     .locals 1
-    .param p1    # Lcom/diotek/ime/framework/view/Keyboard$Key;
-    .param p2    # Ljava/lang/CharSequence;
 
     if-eqz p1, :cond_0
 
@@ -41276,7 +40967,6 @@
 
 .method public setExtractArea(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     iput-object p1, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mExtractArea:Landroid/view/View;
 
@@ -41316,7 +41006,6 @@
 
 .method public setFocusOnCandidateView(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mIsFocusOnCandidateView:Z
 
@@ -41325,7 +41014,6 @@
 
 .method public setGetOcrString(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->isGetOcrString:Z
 
@@ -41356,7 +41044,6 @@
 
 .method public setHanjaStaus(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mISHnaja:Z
 
@@ -41365,7 +41052,6 @@
 
 .method public setHardwareAcceleratedDrawingEnabled(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mIsHardwareAcceleratedDrawingEnabled:Z
 
@@ -41374,8 +41060,6 @@
 
 .method public setHwrCandidateStatus(IZ)V
     .locals 1
-    .param p1    # I
-    .param p2    # Z
 
     iget-object v0, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mInputController:Lcom/diotek/ime/framework/input/InputController;
 
@@ -41391,10 +41075,6 @@
 
 .method public setHwrPanelRect(IIII)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iget-object v0, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mInputController:Lcom/diotek/ime/framework/input/InputController;
 
@@ -41405,7 +41085,6 @@
 
 .method public setInMultiTapInput(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mInMultiTapInput:Z
 
@@ -41414,7 +41093,6 @@
 
 .method public setInputFieldChanged(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mInputFieldChanged:Z
 
@@ -41423,7 +41101,6 @@
 
 .method public setInputMethod(I)V
     .locals 13
-    .param p1    # I
 
     iget-object v10, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mInputModeManager:Lcom/diotek/ime/framework/inputmode/InputModeManager;
 
@@ -42560,7 +42237,6 @@
 
 .method public setInputRange(I)V
     .locals 5
-    .param p1    # I
 
     iget-object v2, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mInputModeManager:Lcom/diotek/ime/framework/inputmode/InputModeManager;
 
@@ -42616,7 +42292,6 @@
 
 .method public setInputView(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     sget-object v1, Lcom/diotek/ime/framework/common/InputManagerImpl;->sService:Lcom/diotek/ime/framework/common/AbstractInputMethod;
 
@@ -42653,7 +42328,6 @@
 
 .method public setIsCurrentCarModeKnobSip(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mIsCurrentCarModeKnobSip:Z
 
@@ -42662,7 +42336,6 @@
 
 .method public setIsCurrentCarModeTouchSip(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mIsCurrentCarModeTouchSip:Z
 
@@ -42671,7 +42344,6 @@
 
 .method public setIsHwPhonepad(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mIsHwPhonepad:Z
 
@@ -42680,7 +42352,6 @@
 
 .method public setIsPendingUpdateCandidateView(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mIsPendingUpdateCandidateView:Z
 
@@ -42689,7 +42360,6 @@
 
 .method public setIsPrivateImeOptionsCSC(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mInputController:Lcom/diotek/ime/framework/input/InputController;
 
@@ -42707,7 +42377,6 @@
 
 .method public setIsUserSelecting(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mIsUserSelecting:Z
 
@@ -42716,7 +42385,6 @@
 
 .method public setKeyboard(Lcom/diotek/ime/framework/view/Keyboard;)V
     .locals 1
-    .param p1    # Lcom/diotek/ime/framework/view/Keyboard;
 
     iput-object p1, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mBackupKeyboard:Lcom/diotek/ime/framework/view/Keyboard;
 
@@ -42729,8 +42397,6 @@
 
 .method public setKeyboardSize(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mInputController:Lcom/diotek/ime/framework/input/InputController;
 
@@ -42741,7 +42407,6 @@
 
 .method public setLangPopupShown(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mIsLangPopupShown:Z
 
@@ -42750,8 +42415,6 @@
 
 .method public setLanguage(IZ)V
     .locals 10
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v9, 0x2
 
@@ -43104,7 +42767,6 @@
 
 .method public setMultiTouchPreviewEnabled(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mIsMultiTouchPreviewEnabled:Z
 
@@ -43113,7 +42775,6 @@
 
 .method public setMultiWindowArrangeSplit(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-boolean v0, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mIsMultiWindowArrangeSplit:Z
 
@@ -43131,7 +42792,6 @@
 
 .method public setNeedToHideKeyboard(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mNeedToHideKeyboard:Z
 
@@ -43140,7 +42800,6 @@
 
 .method public setNeedToRemoveKPMEx(Z)V
     .locals 0
-    .param p1    # Z
 
     sput-boolean p1, Lcom/diotek/ime/framework/common/InputManagerImpl;->mIsNeedToRemoveKPMEx:Z
 
@@ -43149,7 +42808,6 @@
 
 .method public setNeedToRemoveLPMHistory(Z)V
     .locals 0
-    .param p1    # Z
 
     sput-boolean p1, Lcom/diotek/ime/framework/common/InputManagerImpl;->mIsNeedToRemoveLPMHistory:Z
 
@@ -43158,7 +42816,6 @@
 
 .method public setOneHandBgDim(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mViewController:Lcom/diotek/ime/framework/view/ViewController;
 
@@ -43169,7 +42826,6 @@
 
 .method public setOneHandKeypadRightSet(Z)V
     .locals 3
-    .param p1    # Z
 
     const-string v0, "UnifiedSetting"
 
@@ -43235,7 +42891,6 @@
 
 .method public setPhoneticSpellLayout(Ljava/util/ArrayList;Z)V
     .locals 3
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -43327,7 +42982,6 @@
 
 .method public setPopupDialog(Landroid/app/Dialog;)V
     .locals 0
-    .param p1    # Landroid/app/Dialog;
 
     invoke-direct {p0}, Lcom/diotek/ime/framework/common/InputManagerImpl;->dismissPopupDialog()V
 
@@ -43338,7 +42992,6 @@
 
 .method public setPreOneHandSettingValue(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mPreUseOneHandSettingValue:I
 
@@ -43347,7 +43000,6 @@
 
 .method public setPredictionModeForExceptionLanguage(Landroid/view/inputmethod/EditorInfo;)V
     .locals 4
-    .param p1    # Landroid/view/inputmethod/EditorInfo;
 
     const/4 v3, 0x1
 
@@ -43470,7 +43122,6 @@
 
 .method public setPridictionFlag(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mIsPredictionOn:Z
 
@@ -43479,7 +43130,6 @@
 
 .method public setProdictionWord(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mInputController:Lcom/diotek/ime/framework/input/InputController;
 
@@ -43529,7 +43179,6 @@
 
 .method public setRestartLangPopup(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mRestartLangPopup:Z
 
@@ -43538,8 +43187,6 @@
 
 .method public setSelectionBgOnCandidateList(IZ)V
     .locals 3
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v2, 0x0
 
@@ -43560,7 +43207,6 @@
 
 .method public setSideSynShiftState(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mShiftStateController:Lcom/diotek/ime/framework/common/ShiftStateController;
 
@@ -43604,7 +43250,6 @@
 
 .method public setSideSyncKeyLanguage(I)V
     .locals 4
-    .param p1    # I
 
     iget-object v2, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mCurrentInputLanguage:Lcom/diotek/ime/framework/common/Language;
 
@@ -43687,7 +43332,6 @@
 
 .method public setSideSyncLanguage(I)V
     .locals 13
-    .param p1    # I
 
     const/4 v12, 0x1
 
@@ -43881,7 +43525,6 @@
 
 .method public setSideSyncPredictiveText(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x1
 
@@ -43909,7 +43552,6 @@
 
 .method public setSideSyncShiftPressedState(Z)V
     .locals 13
-    .param p1    # Z
 
     if-eqz p1, :cond_1
 
@@ -44021,7 +43663,6 @@
 
 .method public setSoundEffectController(Lcom/diotek/ime/framework/effect/SoundEffectController;)V
     .locals 2
-    .param p1    # Lcom/diotek/ime/framework/effect/SoundEffectController;
 
     iput-object p1, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mSoundEffectController:Lcom/diotek/ime/framework/effect/SoundEffectController;
 
@@ -44040,7 +43681,6 @@
 
 .method public setSpaceLanguageChange(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mUseSpaceLanguageChange:Z
 
@@ -44080,7 +43720,6 @@
 
 .method public setSymforVO(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mIsVOSym:Z
 
@@ -44089,7 +43728,6 @@
 
 .method public setTipsDialogDismissed(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mIsTipsDialogDismissed:Z
 
@@ -44098,7 +43736,6 @@
 
 .method public setVibrateController(Lcom/diotek/ime/framework/effect/VibrateController;)V
     .locals 2
-    .param p1    # Lcom/diotek/ime/framework/effect/VibrateController;
 
     iput-object p1, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mVibrateController:Lcom/diotek/ime/framework/effect/VibrateController;
 
@@ -44117,7 +43754,6 @@
 
 .method public setXt9DBController(Lcom/diotek/ime/framework/engine/xt9/Xt9DBController;)V
     .locals 0
-    .param p1    # Lcom/diotek/ime/framework/engine/xt9/Xt9DBController;
 
     iput-object p1, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mDBController:Lcom/diotek/ime/framework/engine/xt9/Xt9DBController;
 
@@ -44132,7 +43768,6 @@
 
 .method public setXt9NextWordPrediction(Z)V
     .locals 4
-    .param p1    # Z
 
     const/4 v1, 0x0
 
@@ -44172,7 +43807,6 @@
 
 .method public setXt9Recapture(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mXt9Recapture:Z
 
@@ -44181,7 +43815,6 @@
 
 .method public setmIsFullSeclectedTextState(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mIsFullSeclectedTextState:Z
 
@@ -44190,7 +43823,6 @@
 
 .method public showDiscoverability(I)V
     .locals 4
-    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -44907,7 +44539,6 @@
 
 .method public showKeyboardAfterClipboardClosed(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mShowKeyboardAfterClipboardClosed:Z
 
@@ -44946,7 +44577,6 @@
 
 .method public showModeChangePopupKeyboard(I)V
     .locals 4
-    .param p1    # I
 
     const/16 v3, 0x2f
 
@@ -45127,8 +44757,6 @@
 
 .method public showSwiftkeyRemoveTermDialog(Ljava/lang/String;I)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v4, 0x1
 
@@ -45591,8 +45219,6 @@
 
 .method public showXt9_9RemoveTermDialog(Ljava/lang/String;I)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mViewController:Lcom/diotek/ime/framework/view/ViewController;
 
@@ -45608,7 +45234,6 @@
 
 .method public startHwLongPressPopup(Ljava/lang/Class;Ljava/lang/CharSequence;)V
     .locals 4
-    .param p2    # Ljava/lang/CharSequence;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -45654,8 +45279,6 @@
 
 .method public startInput(Landroid/view/inputmethod/EditorInfo;Z)V
     .locals 4
-    .param p1    # Landroid/view/inputmethod/EditorInfo;
-    .param p2    # Z
 
     const/4 v2, 0x1
 
@@ -45798,8 +45421,6 @@
 
 .method public startInputView(Landroid/view/inputmethod/EditorInfo;Z)V
     .locals 18
-    .param p1    # Landroid/view/inputmethod/EditorInfo;
-    .param p2    # Z
 
     invoke-virtual/range {p0 .. p0}, Lcom/diotek/ime/framework/common/InputManagerImpl;->getSharedPreferences()Landroid/content/SharedPreferences;
 
@@ -47115,9 +46736,6 @@
 
 .method public startTrace(FFJ)V
     .locals 1
-    .param p1    # F
-    .param p2    # F
-    .param p3    # J
 
     iget-object v0, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mEngineManager:Lcom/diotek/ime/framework/engine/InputEngineManager;
 
@@ -47152,7 +46770,6 @@
 
 .method public suggestionPicked(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mInputController:Lcom/diotek/ime/framework/input/InputController;
 
@@ -47232,7 +46849,6 @@
 
 .method public toggleLanguage(Z)V
     .locals 12
-    .param p1    # Z
 
     const/16 v11, 0x8
 
@@ -47769,8 +47385,6 @@
 
 .method public translatelanguageID(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 12
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v3, -0x1
 
@@ -47869,8 +47483,6 @@
 
 .method public translatelanguageName(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v1, -0x1
 
@@ -48001,7 +47613,6 @@
 
 .method public updateAcuteAccentState(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mInputController:Lcom/diotek/ime/framework/input/InputController;
 
@@ -48029,7 +47640,6 @@
 
 .method public updateCandidates(I)V
     .locals 4
-    .param p1    # I
 
     const/16 v3, 0x14
 
@@ -48159,7 +47769,6 @@
 
 .method public updateEmoticonPopupKey(Ljava/lang/CharSequence;)V
     .locals 2
-    .param p1    # Ljava/lang/CharSequence;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mEmoticonPopupKey:Lcom/diotek/ime/framework/view/Keyboard$Key;
 
@@ -48389,7 +47998,6 @@
 
 .method public updatePhoneticSpell(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mInputController:Lcom/diotek/ime/framework/input/InputController;
 
@@ -48507,12 +48115,6 @@
 
 .method public updateSelection(IIIIII)V
     .locals 24
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     sub-int v19, p4, p3
 
@@ -50732,8 +50334,6 @@
 
 .method public updateSpellView(Ljava/lang/CharSequence;Z)V
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Z
 
     if-nez p2, :cond_0
 
@@ -50759,7 +50359,6 @@
 
 .method public updateSytemOneHandOperationSetting(Z)V
     .locals 5
-    .param p1    # Z
 
     const/4 v1, 0x1
 
@@ -50842,7 +50441,6 @@
 
 .method public updateThaiKeyboardView(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/diotek/ime/framework/common/InputManagerImpl;->mViewController:Lcom/diotek/ime/framework/view/ViewController;
 
@@ -50857,7 +50455,6 @@
 
 .method public updateTipsPopupCheckBoxStatus(Z)V
     .locals 3
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -50920,7 +50517,6 @@
 
 .method public updateVOHWRSuggestion(I)V
     .locals 4
-    .param p1    # I
 
     const/16 v3, 0x32
 
@@ -51075,7 +50671,6 @@
 
 .method public viewClicked(Z)V
     .locals 6
-    .param p1    # Z
 
     const/4 v5, 0x3
 

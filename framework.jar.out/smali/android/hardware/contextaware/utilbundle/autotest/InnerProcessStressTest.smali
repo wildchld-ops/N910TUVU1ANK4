@@ -6,7 +6,6 @@
 # direct methods
 .method protected constructor <init>(I)V
     .locals 0
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/hardware/contextaware/utilbundle/autotest/CaAutoTest;-><init>(I)V
 

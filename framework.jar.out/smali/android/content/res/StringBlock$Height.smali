@@ -38,7 +38,6 @@
 
 .method public constructor <init>(I)V
     .locals 0
-    .param p1    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -51,12 +50,6 @@
 # virtual methods
 .method public chooseHeight(Ljava/lang/CharSequence;IIIILandroid/graphics/Paint$FontMetricsInt;)V
     .locals 8
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Landroid/graphics/Paint$FontMetricsInt;
 
     const/4 v7, 0x0
 
@@ -81,13 +74,6 @@
 
 .method public chooseHeight(Ljava/lang/CharSequence;IIIILandroid/graphics/Paint$FontMetricsInt;Landroid/text/TextPaint;)V
     .locals 7
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Landroid/graphics/Paint$FontMetricsInt;
-    .param p7    # Landroid/text/TextPaint;
 
     const/4 v6, 0x0
 

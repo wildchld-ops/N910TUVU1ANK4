@@ -20,7 +20,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 7
-    .param p1    # Landroid/content/Context;
 
     const/4 v6, 0x4
 
@@ -127,7 +126,6 @@
 # virtual methods
 .method public createIconThumbnail(Landroid/graphics/drawable/Drawable;)Landroid/graphics/drawable/Drawable;
     .locals 14
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     const/4 v13, 0x0
 
@@ -336,7 +334,6 @@
 
 .method public getDpi(I)I
     .locals 2
-    .param p1    # I
 
     move v0, p1
 

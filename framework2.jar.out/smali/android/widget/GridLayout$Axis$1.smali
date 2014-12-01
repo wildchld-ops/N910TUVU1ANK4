@@ -152,7 +152,6 @@
 
 .method walk(I)V
     .locals 7
-    .param p1    # I
 
     iget-object v4, p0, Landroid/widget/GridLayout$Axis$1;->visited:[I
 

@@ -37,7 +37,6 @@
 
 .method synthetic constructor <init>(Lcom/android/settings/search/SearchListAdapter$1;)V
     .locals 0
-    .param p1    # Lcom/android/settings/search/SearchListAdapter$1;
 
     invoke-direct {p0}, Lcom/android/settings/search/SearchListAdapter$SearchItemHolder;-><init>()V
 

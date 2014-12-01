@@ -45,7 +45,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
+    invoke-virtual {v1}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
 
     move-result-object v0
 
@@ -53,7 +53,7 @@
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->isShowing()Z
+    invoke-virtual {v0}, Landroid/app/ProgressDialog;->isShowing()Z
 
     move-result v1
 
@@ -65,7 +65,7 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->dismiss()V
+    invoke-virtual {v0}, Landroid/app/ProgressDialog;->dismiss()V
 
     iget-object v1, p0, Lcom/android/phone/KTCallWaiting$2;->val$NoResponse:Landroid/widget/Toast;
 

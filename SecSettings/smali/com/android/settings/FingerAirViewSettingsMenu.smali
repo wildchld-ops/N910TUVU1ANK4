@@ -56,7 +56,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/FingerAirViewSettingsMenu;)Landroid/widget/Switch;
     .locals 1
-    .param p0    # Lcom/android/settings/FingerAirViewSettingsMenu;
 
     iget-object v0, p0, Lcom/android/settings/FingerAirViewSettingsMenu;->mActionBarSwitch:Landroid/widget/Switch;
 
@@ -65,7 +64,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/FingerAirViewSettingsMenu;)Landroid/preference/PreferenceScreen;
     .locals 1
-    .param p0    # Lcom/android/settings/FingerAirViewSettingsMenu;
 
     iget-object v0, p0, Lcom/android/settings/FingerAirViewSettingsMenu;->mInforamtionPreview2014:Landroid/preference/PreferenceScreen;
 
@@ -74,8 +72,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/FingerAirViewSettingsMenu;Z)V
     .locals 0
-    .param p0    # Lcom/android/settings/FingerAirViewSettingsMenu;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/settings/FingerAirViewSettingsMenu;->broadcastFingerAirViewChanged(Z)V
 
@@ -84,7 +80,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/FingerAirViewSettingsMenu;)Landroid/preference/SwitchPreferenceScreen;
     .locals 1
-    .param p0    # Lcom/android/settings/FingerAirViewSettingsMenu;
 
     iget-object v0, p0, Lcom/android/settings/FingerAirViewSettingsMenu;->mMagnifier:Landroid/preference/SwitchPreferenceScreen;
 
@@ -93,7 +88,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/FingerAirViewSettingsMenu;)Landroid/preference/SwitchPreferenceScreen;
     .locals 1
-    .param p0    # Lcom/android/settings/FingerAirViewSettingsMenu;
 
     iget-object v0, p0, Lcom/android/settings/FingerAirViewSettingsMenu;->mInforamtionPreview:Landroid/preference/SwitchPreferenceScreen;
 
@@ -102,7 +96,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/FingerAirViewSettingsMenu;)Landroid/preference/CheckBoxPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/FingerAirViewSettingsMenu;
 
     iget-object v0, p0, Lcom/android/settings/FingerAirViewSettingsMenu;->mSoundAndHapticFeedback:Landroid/preference/CheckBoxPreference;
 
@@ -111,7 +104,6 @@
 
 .method private broadcastFingerAirViewChanged(Z)V
     .locals 2
-    .param p1    # Z
 
     new-instance v0, Landroid/content/Intent;
 
@@ -134,7 +126,6 @@
 
 .method public static isAllOptionDisabled(Landroid/content/ContentResolver;)Z
     .locals 9
-    .param p0    # Landroid/content/ContentResolver;
 
     const/4 v6, 0x1
 
@@ -366,8 +357,6 @@
 # virtual methods
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 4
-    .param p1    # Landroid/widget/CompoundButton;
-    .param p2    # Z
 
     const/4 v3, 0x1
 
@@ -456,7 +445,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 14
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -1108,8 +1096,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
     .locals 3
-    .param p1    # Landroid/view/Menu;
-    .param p2    # Landroid/view/MenuInflater;
 
     const/4 v2, 0x0
 
@@ -1147,7 +1133,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 3
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -1226,8 +1211,6 @@
 
 .method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
     .locals 8
-    .param p1    # Landroid/preference/Preference;
-    .param p2    # Ljava/lang/Object;
 
     const v4, 0x7f09099d
 
@@ -1367,8 +1350,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 7
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     const/4 v3, 0x0
 

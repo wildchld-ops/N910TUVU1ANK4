@@ -57,7 +57,6 @@
 # direct methods
 .method public constructor <init>(J)V
     .locals 1
-    .param p1    # J
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -100,10 +99,6 @@
 
 .method private findOrCreateHistory(Lcom/android/server/net/NetworkIdentitySet;III)Landroid/net/NetworkStatsHistory;
     .locals 7
-    .param p1    # Lcom/android/server/net/NetworkIdentitySet;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     new-instance v1, Lcom/android/server/net/NetworkStatsCollection$Key;
 
@@ -167,9 +162,6 @@
 
 .method private noteRecordedHistory(JJJ)V
     .locals 2
-    .param p1    # J
-    .param p3    # J
-    .param p5    # J
 
     iget-wide v0, p0, Lcom/android/server/net/NetworkStatsCollection;->mStartMillis:J
 
@@ -204,8 +196,6 @@
 
 .method private recordHistory(Lcom/android/server/net/NetworkStatsCollection$Key;Landroid/net/NetworkStatsHistory;)V
     .locals 8
-    .param p1    # Lcom/android/server/net/NetworkStatsCollection$Key;
-    .param p2    # Landroid/net/NetworkStatsHistory;
 
     invoke-virtual {p2}, Landroid/net/NetworkStatsHistory;->size()I
 
@@ -263,9 +253,6 @@
 
 .method private static templateMatches(Landroid/net/NetworkTemplate;Lcom/android/server/net/NetworkIdentitySet;I)Z
     .locals 5
-    .param p0    # Landroid/net/NetworkTemplate;
-    .param p1    # Lcom/android/server/net/NetworkIdentitySet;
-    .param p2    # I
 
     const/4 v2, 0x1
 
@@ -330,7 +317,6 @@
 
 .method public dump(Lcom/android/internal/util/IndentingPrintWriter;)V
     .locals 5
-    .param p1    # Lcom/android/internal/util/IndentingPrintWriter;
 
     invoke-static {}, Lcom/google/android/collect/Lists;->newArrayList()Ljava/util/ArrayList;
 
@@ -463,11 +449,6 @@
 
 .method public getHistory(Landroid/net/NetworkTemplate;IIII)Landroid/net/NetworkStatsHistory;
     .locals 10
-    .param p1    # Landroid/net/NetworkTemplate;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     const-wide/high16 v6, -0x8000000000000000L
 
@@ -494,13 +475,6 @@
 
 .method public getHistory(Landroid/net/NetworkTemplate;IIIIJJ)Landroid/net/NetworkStatsHistory;
     .locals 10
-    .param p1    # Landroid/net/NetworkTemplate;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # J
-    .param p8    # J
 
     new-instance v0, Landroid/net/NetworkStatsHistory;
 
@@ -605,9 +579,6 @@
 
 .method public getSummary(Landroid/net/NetworkTemplate;JJ)Landroid/net/NetworkStats;
     .locals 13
-    .param p1    # Landroid/net/NetworkTemplate;
-    .param p2    # J
-    .param p4    # J
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
@@ -784,7 +755,6 @@
 
 .method public read(Ljava/io/DataInputStream;)V
     .locals 16
-    .param p1    # Ljava/io/DataInputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -927,7 +897,6 @@
 
 .method public read(Ljava/io/InputStream;)V
     .locals 1
-    .param p1    # Ljava/io/InputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -945,7 +914,6 @@
 
 .method public readLegacyNetwork(Ljava/io/File;)V
     .locals 13
-    .param p1    # Ljava/io/File;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1132,8 +1100,6 @@
 
 .method public readLegacyUid(Ljava/io/File;Z)V
     .locals 20
-    .param p1    # Ljava/io/File;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1391,7 +1357,6 @@
 
 .method public recordCollection(Lcom/android/server/net/NetworkStatsCollection;)V
     .locals 4
-    .param p1    # Lcom/android/server/net/NetworkStatsCollection;
 
     iget-object v2, p1, Lcom/android/server/net/NetworkStatsCollection;->mStats:Ljava/util/HashMap;
 
@@ -1438,13 +1403,6 @@
 
 .method public recordData(Lcom/android/server/net/NetworkIdentitySet;IIIJJLandroid/net/NetworkStats$Entry;)V
     .locals 11
-    .param p1    # Lcom/android/server/net/NetworkIdentitySet;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # J
-    .param p7    # J
-    .param p9    # Landroid/net/NetworkStats$Entry;
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/server/net/NetworkStatsCollection;->findOrCreateHistory(Lcom/android/server/net/NetworkIdentitySet;III)Landroid/net/NetworkStatsHistory;
 
@@ -1485,7 +1443,6 @@
 
 .method public removeUids([I)V
     .locals 8
-    .param p1    # [I
 
     const/4 v7, 0x0
 
@@ -1592,7 +1549,6 @@
 
 .method public write(Ljava/io/DataOutputStream;)V
     .locals 8
-    .param p1    # Ljava/io/DataOutputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

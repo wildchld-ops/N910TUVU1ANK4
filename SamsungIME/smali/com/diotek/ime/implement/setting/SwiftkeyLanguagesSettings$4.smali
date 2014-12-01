@@ -36,7 +36,6 @@
 # virtual methods
 .method public onComplete(Lcom/touchtype_fluency/util/RefreshListener$RefreshResult;)V
     .locals 2
-    .param p1    # Lcom/touchtype_fluency/util/RefreshListener$RefreshResult;
 
     iget-object v0, p0, Lcom/diotek/ime/implement/setting/SwiftkeyLanguagesSettings$4;->this$0:Lcom/diotek/ime/implement/setting/SwiftkeyLanguagesSettings;
 

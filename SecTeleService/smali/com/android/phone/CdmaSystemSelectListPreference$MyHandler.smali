@@ -131,7 +131,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v3, v4}, Landroid/preference/ListPreference;->setValue(Ljava/lang/String;)V
+    invoke-virtual {v3, v4}, Lcom/android/phone/CdmaSystemSelectListPreference;->setValue(Ljava/lang/String;)V
 
     :cond_2
     :goto_0
@@ -157,7 +157,7 @@
 
     iget-object v2, p0, Lcom/android/phone/CdmaSystemSelectListPreference$MyHandler;->this$0:Lcom/android/phone/CdmaSystemSelectListPreference;
 
-    invoke-virtual {v2}, Landroid/preference/ListPreference;->getValue()Ljava/lang/String;
+    invoke-virtual {v2}, Lcom/android/phone/CdmaSystemSelectListPreference;->getValue()Ljava/lang/String;
 
     move-result-object v2
 
@@ -165,7 +165,7 @@
 
     iget-object v2, p0, Lcom/android/phone/CdmaSystemSelectListPreference$MyHandler;->this$0:Lcom/android/phone/CdmaSystemSelectListPreference;
 
-    invoke-virtual {v2}, Landroid/preference/ListPreference;->getValue()Ljava/lang/String;
+    invoke-virtual {v2}, Lcom/android/phone/CdmaSystemSelectListPreference;->getValue()Ljava/lang/String;
 
     move-result-object v2
 
@@ -209,7 +209,7 @@
 
     const/4 v3, 0x0
 
-    invoke-virtual {p0, v3}, Landroid/os/Handler;->obtainMessage(I)Landroid/os/Message;
+    invoke-virtual {p0, v3}, Lcom/android/phone/CdmaSystemSelectListPreference$MyHandler;->obtainMessage(I)Landroid/os/Message;
 
     move-result-object v3
 
@@ -229,7 +229,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Landroid/preference/ListPreference;->setValue(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lcom/android/phone/CdmaSystemSelectListPreference;->setValue(Ljava/lang/String;)V
 
     iget-object v0, p0, Lcom/android/phone/CdmaSystemSelectListPreference$MyHandler;->this$0:Lcom/android/phone/CdmaSystemSelectListPreference;
 
@@ -259,7 +259,7 @@
 
     const/4 v1, 0x1
 
-    invoke-virtual {p0, v1}, Landroid/os/Handler;->obtainMessage(I)Landroid/os/Message;
+    invoke-virtual {p0, v1}, Lcom/android/phone/CdmaSystemSelectListPreference$MyHandler;->obtainMessage(I)Landroid/os/Message;
 
     move-result-object v1
 

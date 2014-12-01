@@ -17,18 +17,6 @@
 # direct methods
 .method protected constructor <init>(Lcom/sec/android/app/camera/gallery/BaseImageList;Landroid/content/ContentResolver;JILandroid/net/Uri;Ljava/lang/String;JLjava/lang/String;JLjava/lang/String;Ljava/lang/String;I)V
     .locals 0
-    .param p1    # Lcom/sec/android/app/camera/gallery/BaseImageList;
-    .param p2    # Landroid/content/ContentResolver;
-    .param p3    # J
-    .param p5    # I
-    .param p6    # Landroid/net/Uri;
-    .param p7    # Ljava/lang/String;
-    .param p8    # J
-    .param p10    # Ljava/lang/String;
-    .param p11    # J
-    .param p13    # Ljava/lang/String;
-    .param p14    # Ljava/lang/String;
-    .param p15    # I
 
     invoke-direct/range {p0 .. p15}, Lcom/sec/android/app/camera/gallery/Image;-><init>(Lcom/sec/android/app/camera/gallery/BaseImageList;Landroid/content/ContentResolver;JILandroid/net/Uri;Ljava/lang/String;JLjava/lang/String;JLjava/lang/String;Ljava/lang/String;I)V
 
@@ -87,7 +75,6 @@
 
 .method public thumbBitmap(Z)Landroid/graphics/Bitmap;
     .locals 2
-    .param p1    # Z
 
     sget v0, Lcom/sec/android/app/camera/gallery/IImage;->THUMBNAIL_TARGET_SIZE:I
 

@@ -22,9 +22,6 @@
 # virtual methods
 .method public assertActivityRequiresPermission(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     new-instance v1, Landroid/content/Intent;
 
@@ -118,8 +115,6 @@
 
 .method public assertReadingContentUriRequiresPermission(Landroid/net/Uri;Ljava/lang/String;)V
     .locals 7
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Ljava/lang/String;
 
     :try_start_0
     invoke-virtual {p0}, Landroid/test/AndroidTestCase;->getContext()Landroid/content/Context;
@@ -217,8 +212,6 @@
 
 .method public assertWritingContentUriRequiresPermission(Landroid/net/Uri;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Ljava/lang/String;
 
     :try_start_0
     invoke-virtual {p0}, Landroid/test/AndroidTestCase;->getContext()Landroid/content/Context;
@@ -439,7 +432,6 @@
 
 .method public setContext(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     iput-object p1, p0, Landroid/test/AndroidTestCase;->mContext:Landroid/content/Context;
 
@@ -448,7 +440,6 @@
 
 .method public setTestContext(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     iput-object p1, p0, Landroid/test/AndroidTestCase;->mTestContext:Landroid/content/Context;
 

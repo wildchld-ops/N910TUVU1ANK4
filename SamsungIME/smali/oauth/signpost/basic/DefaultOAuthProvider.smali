@@ -10,9 +10,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2, p3}, Loauth/signpost/AbstractOAuthProvider;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
@@ -23,8 +20,6 @@
 # virtual methods
 .method protected closeConnection(Loauth/signpost/http/HttpRequest;Loauth/signpost/http/HttpResponse;)V
     .locals 1
-    .param p1    # Loauth/signpost/http/HttpRequest;
-    .param p2    # Loauth/signpost/http/HttpResponse;
 
     invoke-interface {p1}, Loauth/signpost/http/HttpRequest;->unwrap()Ljava/lang/Object;
 
@@ -42,7 +37,6 @@
 
 .method protected createRequest(Ljava/lang/String;)Loauth/signpost/http/HttpRequest;
     .locals 3
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/net/MalformedURLException;,
@@ -83,7 +77,6 @@
 
 .method protected sendRequest(Loauth/signpost/http/HttpRequest;)Loauth/signpost/http/HttpResponse;
     .locals 2
-    .param p1    # Loauth/signpost/http/HttpRequest;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

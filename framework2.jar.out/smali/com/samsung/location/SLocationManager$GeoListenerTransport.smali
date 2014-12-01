@@ -29,7 +29,6 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/location/SLocationManager;Lcom/samsung/location/SGeofenceListener;)V
     .locals 1
-    .param p2    # Lcom/samsung/location/SGeofenceListener;
 
     iput-object p1, p0, Lcom/samsung/location/SLocationManager$GeoListenerTransport;->this$0:Lcom/samsung/location/SLocationManager;
 
@@ -48,7 +47,6 @@
 
 .method private _handleMessage(Landroid/os/Message;)V
     .locals 3
-    .param p1    # Landroid/os/Message;
 
     iget v0, p1, Landroid/os/Message;->what:I
 
@@ -78,8 +76,6 @@
 
 .method static synthetic access$100(Lcom/samsung/location/SLocationManager$GeoListenerTransport;Landroid/os/Message;)V
     .locals 0
-    .param p0    # Lcom/samsung/location/SLocationManager$GeoListenerTransport;
-    .param p1    # Landroid/os/Message;
 
     invoke-direct {p0, p1}, Lcom/samsung/location/SLocationManager$GeoListenerTransport;->_handleMessage(Landroid/os/Message;)V
 
@@ -90,8 +86,6 @@
 # virtual methods
 .method public onGeofenceDetected(ILandroid/location/Location;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/location/Location;
 
     invoke-static {}, Landroid/os/Message;->obtain()Landroid/os/Message;
 

@@ -34,9 +34,6 @@
 # direct methods
 .method public constructor <init>(Lcom/sec/android/app/camera/CommonEngine;Lcom/sec/android/app/camera/CeRequestQueue;I)V
     .locals 0
-    .param p1    # Lcom/sec/android/app/camera/CommonEngine;
-    .param p2    # Lcom/sec/android/app/camera/CeRequestQueue;
-    .param p3    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

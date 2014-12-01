@@ -30,9 +30,6 @@
 # direct methods
 .method constructor <init>(Lcom/voovio/sweep/Sweep;ILcom/voovio/sweep/ResourceManager;I)V
     .locals 0
-    .param p2    # I
-    .param p3    # Lcom/voovio/sweep/ResourceManager;
-    .param p4    # I
 
     iput-object p1, p0, Lcom/voovio/sweep/Sweep$DecodeImageRunnable;->this$0:Lcom/voovio/sweep/Sweep;
 

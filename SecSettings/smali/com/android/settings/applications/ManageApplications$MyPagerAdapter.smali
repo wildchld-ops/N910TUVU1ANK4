@@ -42,9 +42,6 @@
 # virtual methods
 .method public destroyItem(Landroid/view/ViewGroup;ILjava/lang/Object;)V
     .locals 0
-    .param p1    # Landroid/view/ViewGroup;
-    .param p2    # I
-    .param p3    # Ljava/lang/Object;
 
     check-cast p3, Landroid/view/View;
 
@@ -68,7 +65,6 @@
 
 .method public getItemPosition(Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     invoke-super {p0, p1}, Landroid/support/v4/view/PagerAdapter;->getItemPosition(Ljava/lang/Object;)I
 
@@ -79,7 +75,6 @@
 
 .method public getPageTitle(I)Ljava/lang/CharSequence;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/settings/applications/ManageApplications$MyPagerAdapter;->this$0:Lcom/android/settings/applications/ManageApplications;
 
@@ -101,8 +96,6 @@
 
 .method public instantiateItem(Landroid/view/ViewGroup;I)Ljava/lang/Object;
     .locals 5
-    .param p1    # Landroid/view/ViewGroup;
-    .param p2    # I
 
     iget-object v2, p0, Lcom/android/settings/applications/ManageApplications$MyPagerAdapter;->this$0:Lcom/android/settings/applications/ManageApplications;
 
@@ -153,8 +146,6 @@
 
 .method public isViewFromObject(Landroid/view/View;Ljava/lang/Object;)Z
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Ljava/lang/Object;
 
     if-ne p1, p2, :cond_0
 
@@ -171,7 +162,6 @@
 
 .method public onPageScrollStateChanged(I)V
     .locals 2
-    .param p1    # I
 
     if-nez p1, :cond_0
 
@@ -187,16 +177,12 @@
 
 .method public onPageScrolled(IFI)V
     .locals 0
-    .param p1    # I
-    .param p2    # F
-    .param p3    # I
 
     return-void
 .end method
 
 .method public onPageSelected(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/settings/applications/ManageApplications$MyPagerAdapter;->mCurPos:I
 

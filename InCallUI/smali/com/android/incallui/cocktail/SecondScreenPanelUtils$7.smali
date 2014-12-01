@@ -30,7 +30,6 @@
 # virtual methods
 .method public onCancel(Landroid/content/DialogInterface;)V
     .locals 0
-    .param p1    # Landroid/content/DialogInterface;
 
     invoke-static {}, Lcom/android/incallui/cocktail/SecondScreenPanelUtils;->dismissWaitingCallDialog()V
 

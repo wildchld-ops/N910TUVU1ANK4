@@ -23,8 +23,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/mms/exif/ExifTag;I)V
     .locals 0
-    .param p1    # Lcom/android/mms/exif/ExifTag;
-    .param p2    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

@@ -16,8 +16,6 @@
 # direct methods
 .method public constructor <init>(Landroid/media/effect/EffectContext;Ljava/lang/String;)V
     .locals 8
-    .param p1    # Landroid/media/effect/EffectContext;
-    .param p2    # Ljava/lang/String;
 
     const-string v3, "@import android.filterpacks.base;\n@import android.filterpacks.videoproc;\n@import android.filterpacks.videosrc;\n\n@filter GLTextureSource foreground {\n  texId = 0;\n  width = 0;\n  height = 0;\n  repeatFrame = true;\n}\n\n@filter MediaSource background {\n  sourceUrl = \"no_file_specified\";\n  waitForNewFrame = false;\n  sourceIsUrl = true;\n}\n\n@filter BackDropperFilter replacer {\n  autowbToggle = 1;\n}\n\n@filter GLTextureTarget output {\n  texId = 0;\n}\n\n@connect foreground[frame]  => replacer[video];\n@connect background[video]  => replacer[background];\n@connect replacer[video]    => output[frame];\n"
 
@@ -64,7 +62,6 @@
 
 .method static synthetic access$000(Landroid/media/effect/effects/BackDropperEffect;)Landroid/media/effect/EffectUpdateListener;
     .locals 1
-    .param p0    # Landroid/media/effect/effects/BackDropperEffect;
 
     iget-object v0, p0, Landroid/media/effect/effects/BackDropperEffect;->mEffectListener:Landroid/media/effect/EffectUpdateListener;
 
@@ -75,8 +72,6 @@
 # virtual methods
 .method public setParameter(Ljava/lang/String;Ljava/lang/Object;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Object;
 
     const-string v1, "source"
 
@@ -128,7 +123,6 @@
 
 .method public setUpdateListener(Landroid/media/effect/EffectUpdateListener;)V
     .locals 0
-    .param p1    # Landroid/media/effect/EffectUpdateListener;
 
     iput-object p1, p0, Landroid/media/effect/effects/BackDropperEffect;->mEffectListener:Landroid/media/effect/EffectUpdateListener;
 

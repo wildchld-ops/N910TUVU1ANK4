@@ -72,10 +72,6 @@
 
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;ILcom/sec/android/glview/TwGLViewGroup;Lcom/sec/android/app/camera/MenuResourceDepot;)V
     .locals 9
-    .param p1    # Lcom/sec/android/app/camera/Camera;
-    .param p2    # I
-    .param p3    # Lcom/sec/android/glview/TwGLViewGroup;
-    .param p4    # Lcom/sec/android/app/camera/MenuResourceDepot;
 
     const/4 v8, 0x0
 
@@ -156,7 +152,6 @@
 
 .method static synthetic access$000(Lcom/sec/android/app/camera/glwidget/TwGLReviewMenu;)Lcom/sec/android/app/camera/Camera;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLReviewMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -165,7 +160,6 @@
 
 .method static synthetic access$100(Lcom/sec/android/app/camera/glwidget/TwGLReviewMenu;)Landroid/net/Uri;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLReviewMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLReviewMenu;->content_uri:Landroid/net/Uri;
 
@@ -174,7 +168,6 @@
 
 .method static synthetic access$200(Lcom/sec/android/app/camera/glwidget/TwGLReviewMenu;)Ljava/lang/Runnable;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLReviewMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLReviewMenu;->mReviewTimeOutCallback:Ljava/lang/Runnable;
 
@@ -183,7 +176,6 @@
 
 .method static synthetic access$300(Lcom/sec/android/app/camera/glwidget/TwGLReviewMenu;)Lcom/sec/android/app/camera/Camera;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLReviewMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -192,7 +184,6 @@
 
 .method static synthetic access$400(Lcom/sec/android/app/camera/glwidget/TwGLReviewMenu;)Lcom/sec/android/app/camera/Camera;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLReviewMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -301,8 +292,6 @@
 
 .method public showImage(Landroid/graphics/Bitmap;I)V
     .locals 13
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # I
 
     const/4 v2, 0x0
 
@@ -591,10 +580,6 @@
 
 .method public showReviewImage(Landroid/graphics/Bitmap;IZI)V
     .locals 1
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # I
 
     if-eqz p3, :cond_1
 
@@ -633,9 +618,6 @@
 
 .method public showReviewImage(Landroid/net/Uri;II)V
     .locals 5
-    .param p1    # Landroid/net/Uri;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v0, 0x0
 
@@ -721,11 +703,6 @@
 
 .method public showReviewRecodingImage(Landroid/graphics/Bitmap;IZILandroid/net/Uri;)V
     .locals 7
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # I
-    .param p5    # Landroid/net/Uri;
 
     const/16 v4, 0x10e
 

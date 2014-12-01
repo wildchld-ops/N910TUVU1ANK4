@@ -223,8 +223,6 @@
 
 .method public static getAltitude(FF)F
     .locals 7
-    .param p0    # F
-    .param p1    # F
 
     const v0, 0x3e42dcae
 
@@ -253,9 +251,6 @@
 
 .method public static getAngleChange([F[F[F)V
     .locals 30
-    .param p0    # [F
-    .param p1    # [F
-    .param p2    # [F
 
     const/4 v11, 0x0
 
@@ -642,7 +637,6 @@
 
 .method private static getDelay(I)I
     .locals 1
-    .param p0    # I
 
     const/4 v0, -0x1
 
@@ -686,7 +680,6 @@
 
 .method public static getInclination([F)F
     .locals 4
-    .param p0    # [F
 
     const/4 v2, 0x5
 
@@ -778,8 +771,6 @@
 
 .method public static getOrientation([F[F)[F
     .locals 9
-    .param p0    # [F
-    .param p1    # [F
 
     const/16 v8, 0x9
 
@@ -910,8 +901,6 @@
 
 .method public static getQuaternionFromVector([F[F)V
     .locals 8
-    .param p0    # [F
-    .param p1    # [F
 
     const/4 v7, 0x3
 
@@ -1001,10 +990,6 @@
 
 .method public static getRotationMatrix([F[F[F[F)Z
     .locals 27
-    .param p0    # [F
-    .param p1    # [F
-    .param p2    # [F
-    .param p3    # [F
 
     const/16 v20, 0x0
 
@@ -1531,8 +1516,6 @@
 
 .method public static getRotationMatrixFromVector([F[F)V
     .locals 18
-    .param p0    # [F
-    .param p1    # [F
 
     const/4 v14, 0x0
 
@@ -1846,10 +1829,6 @@
 
 .method public static remapCoordinateSystem([FII[F)Z
     .locals 4
-    .param p0    # [F
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [F
 
     if-ne p0, p3, :cond_2
 
@@ -1912,10 +1891,6 @@
 
 .method private static remapCoordinateSystemImpl([FII[F)Z
     .locals 22
-    .param p0    # [F
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [F
 
     move-object/from16 v0, p3
 
@@ -2200,8 +2175,6 @@
 # virtual methods
 .method public cancelTriggerSensor(Landroid/hardware/TriggerEventListener;Landroid/hardware/Sensor;)Z
     .locals 1
-    .param p1    # Landroid/hardware/TriggerEventListener;
-    .param p2    # Landroid/hardware/Sensor;
 
     const/4 v0, 0x1
 
@@ -2217,7 +2190,6 @@
 
 .method public flush(Landroid/hardware/SensorEventListener;)Z
     .locals 1
-    .param p1    # Landroid/hardware/SensorEventListener;
 
     invoke-virtual {p0, p1}, Landroid/hardware/SensorManager;->flushImpl(Landroid/hardware/SensorEventListener;)Z
 
@@ -2231,7 +2203,6 @@
 
 .method public getDefaultSensor(I)Landroid/hardware/Sensor;
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/hardware/SensorManager;->getSensorList(I)Ljava/util/List;
 
@@ -2274,7 +2245,6 @@
 
 .method public getSensorList(I)Ljava/util/List;
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -2388,9 +2358,6 @@
 
 .method public registerListener(Landroid/hardware/SensorEventListener;Landroid/hardware/Sensor;I)Z
     .locals 1
-    .param p1    # Landroid/hardware/SensorEventListener;
-    .param p2    # Landroid/hardware/Sensor;
-    .param p3    # I
 
     const/4 v0, 0x0
 
@@ -2403,10 +2370,6 @@
 
 .method public registerListener(Landroid/hardware/SensorEventListener;Landroid/hardware/Sensor;II)Z
     .locals 7
-    .param p1    # Landroid/hardware/SensorEventListener;
-    .param p2    # Landroid/hardware/Sensor;
-    .param p3    # I
-    .param p4    # I
 
     invoke-static {p3}, Landroid/hardware/SensorManager;->getDelay(I)I
 
@@ -2433,11 +2396,6 @@
 
 .method public registerListener(Landroid/hardware/SensorEventListener;Landroid/hardware/Sensor;IILandroid/os/Handler;)Z
     .locals 7
-    .param p1    # Landroid/hardware/SensorEventListener;
-    .param p2    # Landroid/hardware/Sensor;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Landroid/os/Handler;
 
     invoke-static {p3}, Landroid/hardware/SensorManager;->getDelay(I)I
 
@@ -2464,10 +2422,6 @@
 
 .method public registerListener(Landroid/hardware/SensorEventListener;Landroid/hardware/Sensor;ILandroid/os/Handler;)Z
     .locals 7
-    .param p1    # Landroid/hardware/SensorEventListener;
-    .param p2    # Landroid/hardware/Sensor;
-    .param p3    # I
-    .param p4    # Landroid/os/Handler;
 
     const/4 v5, 0x0
 
@@ -2494,8 +2448,6 @@
 
 .method public registerListener(Landroid/hardware/SensorListener;I)Z
     .locals 1
-    .param p1    # Landroid/hardware/SensorListener;
-    .param p2    # I
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -2510,9 +2462,6 @@
 
 .method public registerListener(Landroid/hardware/SensorListener;II)Z
     .locals 1
-    .param p1    # Landroid/hardware/SensorListener;
-    .param p2    # I
-    .param p3    # I
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -2532,8 +2481,6 @@
 
 .method public requestTriggerSensor(Landroid/hardware/TriggerEventListener;Landroid/hardware/Sensor;)Z
     .locals 1
-    .param p1    # Landroid/hardware/TriggerEventListener;
-    .param p2    # Landroid/hardware/Sensor;
 
     invoke-virtual {p0, p1, p2}, Landroid/hardware/SensorManager;->requestTriggerSensorImpl(Landroid/hardware/TriggerEventListener;Landroid/hardware/Sensor;)Z
 
@@ -2547,7 +2494,6 @@
 
 .method public unregisterListener(Landroid/hardware/SensorEventListener;)V
     .locals 1
-    .param p1    # Landroid/hardware/SensorEventListener;
 
     if-nez p1, :cond_0
 
@@ -2564,8 +2510,6 @@
 
 .method public unregisterListener(Landroid/hardware/SensorEventListener;Landroid/hardware/Sensor;)V
     .locals 0
-    .param p1    # Landroid/hardware/SensorEventListener;
-    .param p2    # Landroid/hardware/Sensor;
 
     if-eqz p1, :cond_0
 
@@ -2583,7 +2527,6 @@
 
 .method public unregisterListener(Landroid/hardware/SensorListener;)V
     .locals 1
-    .param p1    # Landroid/hardware/SensorListener;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -2596,8 +2539,6 @@
 
 .method public unregisterListener(Landroid/hardware/SensorListener;I)V
     .locals 1
-    .param p1    # Landroid/hardware/SensorListener;
-    .param p2    # I
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 

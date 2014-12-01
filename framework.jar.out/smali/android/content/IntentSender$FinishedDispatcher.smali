@@ -36,9 +36,6 @@
 # direct methods
 .method constructor <init>(Landroid/content/IntentSender;Landroid/content/IntentSender$OnFinished;Landroid/os/Handler;)V
     .locals 0
-    .param p1    # Landroid/content/IntentSender;
-    .param p2    # Landroid/content/IntentSender$OnFinished;
-    .param p3    # Landroid/os/Handler;
 
     invoke-direct {p0}, Landroid/content/IIntentReceiver$Stub;-><init>()V
 
@@ -55,13 +52,6 @@
 # virtual methods
 .method public performReceive(Landroid/content/Intent;ILjava/lang/String;Landroid/os/Bundle;ZZI)V
     .locals 1
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Landroid/os/Bundle;
-    .param p5    # Z
-    .param p6    # Z
-    .param p7    # I
 
     iput-object p1, p0, Landroid/content/IntentSender$FinishedDispatcher;->mIntent:Landroid/content/Intent;
 

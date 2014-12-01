@@ -261,7 +261,6 @@
 
 .method public constructor <init>(Z)V
     .locals 4
-    .param p1    # Z
 
     const/4 v3, 0x6
 
@@ -334,10 +333,6 @@
 
 .method private collectStats(Ljava/lang/String;IZ[ILjava/util/ArrayList;)[I
     .locals 27
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # [I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1094,7 +1089,6 @@
 
 .method private getCpuSpeedTimes([J)[J
     .locals 14
-    .param p1    # [J
 
     move-object v7, p1
 
@@ -1232,8 +1226,6 @@
 
 .method private getName(Lcom/android/internal/os/ProcessStats$Stats;Ljava/lang/String;)V
     .locals 5
-    .param p1    # Lcom/android/internal/os/ProcessStats$Stats;
-    .param p2    # Ljava/lang/String;
 
     iget-object v2, p1, Lcom/android/internal/os/ProcessStats$Stats;->name:Ljava/lang/String;
 
@@ -1337,18 +1329,6 @@
 
 .method private printProcessCPU(Ljava/io/PrintWriter;Ljava/lang/String;ILjava/lang/String;IIIIIIII)V
     .locals 7
-    .param p1    # Ljava/io/PrintWriter;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
-    .param p9    # I
-    .param p10    # I
-    .param p11    # I
-    .param p12    # I
 
     invoke-virtual {p1, p2}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
@@ -1535,9 +1515,6 @@
 
 .method private printRatio(Ljava/io/PrintWriter;JJ)V
     .locals 10
-    .param p1    # Ljava/io/PrintWriter;
-    .param p2    # J
-    .param p4    # J
 
     const-wide/16 v8, 0xa
 
@@ -1577,8 +1554,6 @@
 
 .method private readFile(Ljava/lang/String;C)Ljava/lang/String;
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # C
 
     invoke-static {}, Landroid/os/StrictMode;->allowThreadDiskReads()Landroid/os/StrictMode$ThreadPolicy;
 
@@ -1907,7 +1882,6 @@
 
 .method public getCpuTimeForPid(I)J
     .locals 8
-    .param p1    # I
 
     const/4 v6, 0x0
 
@@ -2100,7 +2074,6 @@
 
 .method public final getStats(I)Lcom/android/internal/os/ProcessStats$Stats;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/internal/os/ProcessStats;->mProcStats:Ljava/util/ArrayList;
 
@@ -2163,7 +2136,6 @@
 
 .method public final getWorkingStats(I)Lcom/android/internal/os/ProcessStats$Stats;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/internal/os/ProcessStats;->mWorkingProcs:Ljava/util/ArrayList;
 
@@ -2190,16 +2162,12 @@
 
 .method public onLoadChanged(FFF)V
     .locals 0
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
 
     return-void
 .end method
 
 .method public onMeasureProcessName(Ljava/lang/String;)I
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -2250,7 +2218,6 @@
 
 .method public final printCurrentState(J)Ljava/lang/String;
     .locals 29
-    .param p1    # J
 
     invoke-virtual/range {p0 .. p0}, Lcom/android/internal/os/ProcessStats;->buildWorkingProcs()V
 

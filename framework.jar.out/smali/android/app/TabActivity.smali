@@ -74,8 +74,6 @@
 
 .method protected onChildTitleChanged(Landroid/app/Activity;Ljava/lang/CharSequence;)V
     .locals 2
-    .param p1    # Landroid/app/Activity;
-    .param p2    # Ljava/lang/CharSequence;
 
     invoke-virtual {p0}, Landroid/app/TabActivity;->getLocalActivityManager()Landroid/app/LocalActivityManager;
 
@@ -148,7 +146,6 @@
 
 .method protected onPostCreate(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/ActivityGroup;->onPostCreate(Landroid/os/Bundle;)V
 
@@ -176,7 +173,6 @@
 
 .method protected onRestoreInstanceState(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/ActivityGroup;->onRestoreInstanceState(Landroid/os/Bundle;)V
 
@@ -233,7 +229,6 @@
 
 .method protected onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/ActivityGroup;->onSaveInstanceState(Landroid/os/Bundle;)V
 
@@ -255,7 +250,6 @@
 
 .method public setDefaultTab(I)V
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -268,7 +262,6 @@
 
 .method public setDefaultTab(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/app/TabActivity;->mDefaultTab:Ljava/lang/String;
 

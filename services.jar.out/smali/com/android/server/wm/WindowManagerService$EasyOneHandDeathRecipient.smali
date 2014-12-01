@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Lcom/android/server/wm/WindowManagerService;Lcom/android/server/wm/WindowManagerService$1;)V
     .locals 0
-    .param p1    # Lcom/android/server/wm/WindowManagerService;
-    .param p2    # Lcom/android/server/wm/WindowManagerService$1;
 
     invoke-direct {p0, p1}, Lcom/android/server/wm/WindowManagerService$EasyOneHandDeathRecipient;-><init>(Lcom/android/server/wm/WindowManagerService;)V
 

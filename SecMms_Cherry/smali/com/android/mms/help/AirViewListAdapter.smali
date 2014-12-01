@@ -38,8 +38,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;ILjava/util/ArrayList;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -85,7 +83,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/help/AirViewListAdapter;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/mms/help/AirViewListAdapter;
 
     iget-object v0, p0, Lcom/android/mms/help/AirViewListAdapter;->mContext:Landroid/content/Context;
 
@@ -96,9 +93,6 @@
 # virtual methods
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 10
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     move-object v5, p2
 

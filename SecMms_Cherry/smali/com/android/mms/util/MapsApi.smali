@@ -24,7 +24,6 @@
 # direct methods
 .method public constructor <init>(Landroid/app/Activity;)V
     .locals 0
-    .param p1    # Landroid/app/Activity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -53,7 +52,6 @@
 
 .method public handleOnLocationChanged(Landroid/location/Location;)Ljava/lang/String;
     .locals 23
-    .param p1    # Landroid/location/Location;
 
     const/16 v16, 0x0
 
@@ -313,8 +311,6 @@
 
 .method public setLocation(DD)V
     .locals 0
-    .param p1    # D
-    .param p3    # D
 
     iput-wide p1, p0, Lcom/android/mms/util/MapsApi;->lat:D
 

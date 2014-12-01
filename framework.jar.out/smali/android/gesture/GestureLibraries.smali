@@ -23,7 +23,6 @@
 
 .method public static fromFile(Ljava/io/File;)Landroid/gesture/GestureLibrary;
     .locals 1
-    .param p0    # Ljava/io/File;
 
     new-instance v0, Landroid/gesture/GestureLibraries$FileGestureLibrary;
 
@@ -34,7 +33,6 @@
 
 .method public static fromFile(Ljava/lang/String;)Landroid/gesture/GestureLibrary;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     new-instance v0, Ljava/io/File;
 
@@ -49,8 +47,6 @@
 
 .method public static fromPrivateFile(Landroid/content/Context;Ljava/lang/String;)Landroid/gesture/GestureLibrary;
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Landroid/content/Context;->getFileStreamPath(Ljava/lang/String;)Ljava/io/File;
 
@@ -65,8 +61,6 @@
 
 .method public static fromRawResource(Landroid/content/Context;I)Landroid/gesture/GestureLibrary;
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     new-instance v0, Landroid/gesture/GestureLibraries$ResourceGestureLibrary;
 

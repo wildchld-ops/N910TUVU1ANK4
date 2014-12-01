@@ -712,7 +712,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v4}, Landroid/content/ContextWrapper;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {v4}, Lcom/android/phone/PhoneGlobals;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v2
 
@@ -1261,7 +1261,7 @@
 
     move-result-object v8
 
-    invoke-virtual {v8}, Landroid/content/ContextWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {v8}, Lcom/android/phone/PhoneGlobals;->getResources()Landroid/content/res/Resources;
 
     move-result-object v8
 
@@ -1437,7 +1437,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v3}, Landroid/content/ContextWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {v3}, Lcom/android/phone/PhoneGlobals;->getResources()Landroid/content/res/Resources;
 
     move-result-object v2
 
@@ -1604,7 +1604,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v3}, Landroid/content/ContextWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {v3}, Lcom/android/phone/PhoneGlobals;->getResources()Landroid/content/res/Resources;
 
     move-result-object v2
 
@@ -1734,7 +1734,7 @@
 
     const/4 v3, 0x1
 
-    invoke-virtual {v2, v3}, Landroid/os/Handler;->obtainMessage(I)Landroid/os/Message;
+    invoke-virtual {v2, v3}, Lcom/android/phone/SprintPhoneExtension$MyHandler;->obtainMessage(I)Landroid/os/Message;
 
     move-result-object v2
 
@@ -1864,7 +1864,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v2, v0}, Landroid/content/ContextWrapper;->startService(Landroid/content/Intent;)Landroid/content/ComponentName;
+    invoke-virtual {v2, v0}, Lcom/android/phone/PhoneGlobals;->startService(Landroid/content/Intent;)Landroid/content/ComponentName;
 
     return-void
 .end method
@@ -1882,7 +1882,7 @@
 
     move-result-object v7
 
-    invoke-virtual {v7}, Landroid/content/ContextWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {v7}, Lcom/android/phone/PhoneGlobals;->getResources()Landroid/content/res/Resources;
 
     move-result-object v7
 
@@ -2053,7 +2053,7 @@
 
     sget-object v2, Lcom/android/phone/SprintPhoneExtension;->mHandler:Lcom/android/phone/SprintPhoneExtension$MyHandler;
 
-    invoke-virtual {v2, v7}, Landroid/os/Handler;->obtainMessage(I)Landroid/os/Message;
+    invoke-virtual {v2, v7}, Lcom/android/phone/SprintPhoneExtension$MyHandler;->obtainMessage(I)Landroid/os/Message;
 
     move-result-object v2
 
@@ -2080,7 +2080,7 @@
 
     sget-object v2, Lcom/android/phone/SprintPhoneExtension;->mHandler:Lcom/android/phone/SprintPhoneExtension$MyHandler;
 
-    invoke-virtual {v2, v7}, Landroid/os/Handler;->obtainMessage(I)Landroid/os/Message;
+    invoke-virtual {v2, v7}, Lcom/android/phone/SprintPhoneExtension$MyHandler;->obtainMessage(I)Landroid/os/Message;
 
     move-result-object v2
 
@@ -2550,7 +2550,7 @@
 
     const/4 v3, 0x3
 
-    invoke-virtual {v2, v3}, Landroid/os/Handler;->obtainMessage(I)Landroid/os/Message;
+    invoke-virtual {v2, v3}, Lcom/android/phone/SprintPhoneExtension$MyHandler;->obtainMessage(I)Landroid/os/Message;
 
     move-result-object v2
 
@@ -2576,7 +2576,7 @@
 
     const/4 v2, 0x3
 
-    invoke-virtual {v1, v2}, Landroid/os/Handler;->obtainMessage(I)Landroid/os/Message;
+    invoke-virtual {v1, v2}, Lcom/android/phone/SprintPhoneExtension$MyHandler;->obtainMessage(I)Landroid/os/Message;
 
     move-result-object v1
 

@@ -222,7 +222,6 @@
 # virtual methods
 .method createAlertDialog(I)Landroid/app/AlertDialog;
     .locals 4
-    .param p1    # I
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
@@ -393,7 +392,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 6
-    .param p1    # Landroid/os/Bundle;
 
     const v5, 0x7f091814
 
@@ -566,8 +564,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 7
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     const/4 v6, 0x1
 

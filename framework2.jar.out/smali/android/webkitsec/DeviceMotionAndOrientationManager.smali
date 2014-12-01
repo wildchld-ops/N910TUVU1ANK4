@@ -38,7 +38,6 @@
 
 .method public constructor <init>(Landroid/webkitsec/WebViewCore;)V
     .locals 0
-    .param p1    # Landroid/webkitsec/WebViewCore;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -63,10 +62,6 @@
 # virtual methods
 .method public onMotionChange(Ljava/lang/Double;Ljava/lang/Double;Ljava/lang/Double;D)V
     .locals 12
-    .param p1    # Ljava/lang/Double;
-    .param p2    # Ljava/lang/Double;
-    .param p3    # Ljava/lang/Double;
-    .param p4    # D
 
     iget-object v0, p0, Landroid/webkitsec/DeviceMotionAndOrientationManager;->mWebViewCore:Landroid/webkitsec/WebViewCore;
 
@@ -145,9 +140,6 @@
 
 .method public onOrientationChange(Ljava/lang/Double;Ljava/lang/Double;Ljava/lang/Double;)V
     .locals 11
-    .param p1    # Ljava/lang/Double;
-    .param p2    # Ljava/lang/Double;
-    .param p3    # Ljava/lang/Double;
 
     const/4 v7, 0x1
 
@@ -223,12 +215,6 @@
 
 .method public setMockOrientation(ZDZDZD)V
     .locals 10
-    .param p1    # Z
-    .param p2    # D
-    .param p4    # Z
-    .param p5    # D
-    .param p7    # Z
-    .param p8    # D
 
     sget-boolean v0, Landroid/webkitsec/DeviceMotionAndOrientationManager;->$assertionsDisabled:Z
 

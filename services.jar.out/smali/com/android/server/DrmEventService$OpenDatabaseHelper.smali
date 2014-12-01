@@ -27,7 +27,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/DrmEventService;Landroid/content/Context;)V
     .locals 3
-    .param p2    # Landroid/content/Context;
 
     iput-object p1, p0, Lcom/android/server/DrmEventService$OpenDatabaseHelper;->this$0:Lcom/android/server/DrmEventService;
 
@@ -46,14 +45,12 @@
 # virtual methods
 .method public onCreate(Landroid/database/sqlite/SQLiteDatabase;)V
     .locals 0
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
 
     return-void
 .end method
 
 .method public onOpen(Landroid/database/sqlite/SQLiteDatabase;)V
     .locals 0
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-super {p0, p1}, Landroid/database/sqlite/SQLiteOpenHelper;->onOpen(Landroid/database/sqlite/SQLiteDatabase;)V
 
@@ -62,9 +59,6 @@
 
 .method public onUpgrade(Landroid/database/sqlite/SQLiteDatabase;II)V
     .locals 3
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p2    # I
-    .param p3    # I
 
     sget-boolean v0, Lcom/android/server/DrmEventService;->isLogEnabled:Z
 

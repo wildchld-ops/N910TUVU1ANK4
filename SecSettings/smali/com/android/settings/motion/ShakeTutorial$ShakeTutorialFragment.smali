@@ -125,7 +125,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/motion/ShakeTutorial$ShakeTutorialFragment;)V
     .locals 0
-    .param p0    # Lcom/android/settings/motion/ShakeTutorial$ShakeTutorialFragment;
 
     invoke-direct {p0}, Lcom/android/settings/motion/ShakeTutorial$ShakeTutorialFragment;->updateAnimation()V
 
@@ -134,7 +133,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/motion/ShakeTutorial$ShakeTutorialFragment;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/motion/ShakeTutorial$ShakeTutorialFragment;
 
     iget-boolean v0, p0, Lcom/android/settings/motion/ShakeTutorial$ShakeTutorialFragment;->mCanShake:Z
 
@@ -143,8 +141,6 @@
 
 .method static synthetic access$102(Lcom/android/settings/motion/ShakeTutorial$ShakeTutorialFragment;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/motion/ShakeTutorial$ShakeTutorialFragment;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/motion/ShakeTutorial$ShakeTutorialFragment;->mCanShake:Z
 
@@ -161,7 +157,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/motion/ShakeTutorial$ShakeTutorialFragment;)Landroid/hardware/motion/MRListener;
     .locals 1
-    .param p0    # Lcom/android/settings/motion/ShakeTutorial$ShakeTutorialFragment;
 
     iget-object v0, p0, Lcom/android/settings/motion/ShakeTutorial$ShakeTutorialFragment;->mMotionListener:Landroid/hardware/motion/MRListener;
 
@@ -170,7 +165,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/motion/ShakeTutorial$ShakeTutorialFragment;)V
     .locals 0
-    .param p0    # Lcom/android/settings/motion/ShakeTutorial$ShakeTutorialFragment;
 
     invoke-direct {p0}, Lcom/android/settings/motion/ShakeTutorial$ShakeTutorialFragment;->removeBTPreference()V
 
@@ -179,7 +173,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/motion/ShakeTutorial$ShakeTutorialFragment;)Lcom/android/settings/motion/ShakeTutorial$ShakeTutorialFragment$ShakeTutorialProgressCategory;
     .locals 1
-    .param p0    # Lcom/android/settings/motion/ShakeTutorial$ShakeTutorialFragment;
 
     iget-object v0, p0, Lcom/android/settings/motion/ShakeTutorial$ShakeTutorialFragment;->mAvailableDevicesCategory:Lcom/android/settings/motion/ShakeTutorial$ShakeTutorialFragment$ShakeTutorialProgressCategory;
 
@@ -188,7 +181,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/motion/ShakeTutorial$ShakeTutorialFragment;)V
     .locals 0
-    .param p0    # Lcom/android/settings/motion/ShakeTutorial$ShakeTutorialFragment;
 
     invoke-direct {p0}, Lcom/android/settings/motion/ShakeTutorial$ShakeTutorialFragment;->addBTPreference()V
 
@@ -197,7 +189,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/motion/ShakeTutorial$ShakeTutorialFragment;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/settings/motion/ShakeTutorial$ShakeTutorialFragment;
 
     iget-object v0, p0, Lcom/android/settings/motion/ShakeTutorial$ShakeTutorialFragment;->mHandler:Landroid/os/Handler;
 
@@ -206,7 +197,6 @@
 
 .method static synthetic access$800(Lcom/android/settings/motion/ShakeTutorial$ShakeTutorialFragment;)V
     .locals 0
-    .param p0    # Lcom/android/settings/motion/ShakeTutorial$ShakeTutorialFragment;
 
     invoke-direct {p0}, Lcom/android/settings/motion/ShakeTutorial$ShakeTutorialFragment;->stopAnimation()V
 
@@ -417,7 +407,6 @@
 # virtual methods
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v4, 0x1
 
@@ -537,7 +526,6 @@
 
 .method public onAttach(Landroid/app/Activity;)V
     .locals 2
-    .param p1    # Landroid/app/Activity;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onAttach(Landroid/app/Activity;)V
 
@@ -559,7 +547,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v1, 0x1
 
@@ -596,8 +583,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
     .locals 4
-    .param p1    # Landroid/view/Menu;
-    .param p2    # Landroid/view/MenuInflater;
 
     const/4 v3, 0x1
 
@@ -628,7 +613,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 2
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v0, 0x1
 

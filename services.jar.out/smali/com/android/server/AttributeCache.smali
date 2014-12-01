@@ -47,7 +47,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -70,7 +69,6 @@
 
 .method public static init(Landroid/content/Context;)V
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     sget-object v0, Lcom/android/server/AttributeCache;->sInstance:Lcom/android/server/AttributeCache;
 
@@ -98,10 +96,6 @@
 # virtual methods
 .method public get(Ljava/lang/String;I[II)Lcom/android/server/AttributeCache$Entry;
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # [I
-    .param p4    # I
 
     const/4 v6, 0x0
 
@@ -270,7 +264,6 @@
 
 .method public removePackage(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -295,7 +288,6 @@
 
 .method public updateConfiguration(Landroid/content/res/Configuration;)V
     .locals 2
-    .param p1    # Landroid/content/res/Configuration;
 
     monitor-enter p0
 

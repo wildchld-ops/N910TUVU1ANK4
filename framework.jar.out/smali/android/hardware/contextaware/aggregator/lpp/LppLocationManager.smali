@@ -184,7 +184,6 @@
 
 .method static synthetic access$1100(Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager;)Landroid/hardware/contextaware/aggregator/lpp/LppLocationManagerListener;
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager;
 
     iget-object v0, p0, Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager;->mListener:Landroid/hardware/contextaware/aggregator/lpp/LppLocationManagerListener;
 
@@ -193,7 +192,6 @@
 
 .method static synthetic access$1200(Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager;)Landroid/location/LocationListener;
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager;
 
     iget-object v0, p0, Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager;->mFindGps:Landroid/location/LocationListener;
 
@@ -202,7 +200,6 @@
 
 .method static synthetic access$1300(Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager;)Landroid/location/LocationManager;
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager;
 
     iget-object v0, p0, Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager;->mLocMgr:Landroid/location/LocationManager;
 
@@ -211,8 +208,6 @@
 
 .method static synthetic access$1302(Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager;Landroid/location/LocationManager;)Landroid/location/LocationManager;
     .locals 0
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager;
-    .param p1    # Landroid/location/LocationManager;
 
     iput-object p1, p0, Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager;->mLocMgr:Landroid/location/LocationManager;
 
@@ -221,7 +216,6 @@
 
 .method static synthetic access$1500(Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager;)Landroid/location/Location;
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager;
 
     iget-object v0, p0, Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager;->mLocMostAccGps:Landroid/location/Location;
 
@@ -230,8 +224,6 @@
 
 .method static synthetic access$1502(Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager;Landroid/location/Location;)Landroid/location/Location;
     .locals 0
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager;
-    .param p1    # Landroid/location/Location;
 
     iput-object p1, p0, Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager;->mLocMostAccGps:Landroid/location/Location;
 
@@ -240,7 +232,6 @@
 
 .method static synthetic access$1600(Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager;)Landroid/location/Location;
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager;
 
     iget-object v0, p0, Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager;->mLocNw:Landroid/location/Location;
 
@@ -249,8 +240,6 @@
 
 .method static synthetic access$1602(Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager;Landroid/location/Location;)Landroid/location/Location;
     .locals 0
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager;
-    .param p1    # Landroid/location/Location;
 
     iput-object p1, p0, Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager;->mLocNw:Landroid/location/Location;
 
@@ -259,7 +248,6 @@
 
 .method static synthetic access$1700(Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager;)Landroid/content/Context;
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager;
 
     iget-object v0, p0, Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager;->mContext:Landroid/content/Context;
 
@@ -268,7 +256,6 @@
 
 .method static synthetic access$1800(Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager;)Landroid/location/LocationListener;
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager;
 
     iget-object v0, p0, Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager;->mLocLnr:Landroid/location/LocationListener;
 
@@ -277,8 +264,6 @@
 
 .method static synthetic access$1902(Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager;J)J
     .locals 0
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager;
-    .param p1    # J
 
     iput-wide p1, p0, Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager;->mTimeRequest:J
 
@@ -287,7 +272,6 @@
 
 .method static synthetic access$2100(Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager;)J
     .locals 2
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager;
 
     iget-wide v0, p0, Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager;->mGpsTimeout:J
 
@@ -296,7 +280,6 @@
 
 .method static synthetic access$2200(Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager;
 
     iget-object v0, p0, Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager;->mListLoc:Ljava/util/ArrayList;
 
@@ -305,7 +288,6 @@
 
 .method static synthetic access$2300(Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager;)Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager;
 
     iget-object v0, p0, Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager;->mStateMachine:Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;
 
@@ -314,7 +296,6 @@
 
 .method static synthetic access$2500(Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager;)Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$GpsStatusListener;
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager;
 
     iget-object v0, p0, Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager;->mGpsStatusLnr:Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$GpsStatusListener;
 
@@ -323,7 +304,6 @@
 
 .method static synthetic access$4900(Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager;)I
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager;
 
     iget v0, p0, Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager;->mLppResolution:I
 
@@ -332,7 +312,6 @@
 
 .method static synthetic access$5800(Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager;
 
     iget-object v0, p0, Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager;->mListPassiveLoc:Ljava/util/ArrayList;
 
@@ -341,7 +320,6 @@
 
 .method static synthetic access$6700(Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager;)Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$PassiveSM;
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager;
 
     iget-object v0, p0, Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager;->mPassiveSM:Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$PassiveSM;
 
@@ -350,7 +328,6 @@
 
 .method static synthetic access$8300(Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager;)Landroid/location/Location;
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager;
 
     iget-object v0, p0, Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager;->mLastLoc:Landroid/location/Location;
 
@@ -359,8 +336,6 @@
 
 .method static synthetic access$8302(Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager;Landroid/location/Location;)Landroid/location/Location;
     .locals 0
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager;
-    .param p1    # Landroid/location/Location;
 
     iput-object p1, p0, Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager;->mLastLoc:Landroid/location/Location;
 
@@ -369,8 +344,6 @@
 
 .method static synthetic access$8400(Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager;Landroid/location/Location;)Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LocValidity;
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager;
-    .param p1    # Landroid/location/Location;
 
     invoke-direct {p0, p1}, Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager;->locValidCheckNw(Landroid/location/Location;)Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LocValidity;
 
@@ -381,8 +354,6 @@
 
 .method static synthetic access$8500(Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager;Landroid/location/Location;)Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LocValidity;
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager;
-    .param p1    # Landroid/location/Location;
 
     invoke-direct {p0, p1}, Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager;->locValidCheckGps(Landroid/location/Location;)Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LocValidity;
 
@@ -393,8 +364,6 @@
 
 .method static synthetic access$8600(Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager;Landroid/location/Location;)V
     .locals 0
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager;
-    .param p1    # Landroid/location/Location;
 
     invoke-direct {p0, p1}, Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager;->setMostAccLocGps(Landroid/location/Location;)V
 
@@ -403,7 +372,6 @@
 
 .method private locValidCheckGps(Landroid/location/Location;)Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LocValidity;
     .locals 6
-    .param p1    # Landroid/location/Location;
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
@@ -503,7 +471,6 @@
 
 .method private locValidCheckNw(Landroid/location/Location;)Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LocValidity;
     .locals 3
-    .param p1    # Landroid/location/Location;
 
     invoke-virtual {p1}, Landroid/location/Location;->getAccuracy()F
 
@@ -554,7 +521,6 @@
 
 .method private setMostAccLocGps(Landroid/location/Location;)V
     .locals 2
-    .param p1    # Landroid/location/Location;
 
     const-string v0, "LppLocationManager"
 
@@ -600,10 +566,6 @@
 
 .method public static validPassDist(DDDD)Z
     .locals 23
-    .param p0    # D
-    .param p2    # D
-    .param p4    # D
-    .param p6    # D
 
     const-wide v1, 0x40b8e30000000000L
 
@@ -846,7 +808,6 @@
 
 .method public locRequest(I)V
     .locals 5
-    .param p1    # I
 
     const-string v1, "LppLocationManager"
 
@@ -1049,7 +1010,6 @@
 
 .method public sendStatus(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager;->mListener:Landroid/hardware/contextaware/aggregator/lpp/LppLocationManagerListener;
 
@@ -1060,7 +1020,6 @@
 
 .method public setLppResolution(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager;->mLppResolution:I
 
@@ -1069,8 +1028,6 @@
 
 .method public start(Landroid/hardware/contextaware/aggregator/lpp/LppConfig;Landroid/hardware/contextaware/aggregator/lpp/LppLocationManagerListener;)V
     .locals 2
-    .param p1    # Landroid/hardware/contextaware/aggregator/lpp/LppConfig;
-    .param p2    # Landroid/hardware/contextaware/aggregator/lpp/LppLocationManagerListener;
 
     const-string v0, "LppLocationManager"
 

@@ -34,7 +34,6 @@
 # direct methods
 .method private constructor <init>(Lcom/android/settings/TrustedCredentialsSettings;Lcom/android/settings/TrustedCredentialsSettings$CertHolder;)V
     .locals 0
-    .param p2    # Lcom/android/settings/TrustedCredentialsSettings$CertHolder;
 
     iput-object p1, p0, Lcom/android/settings/TrustedCredentialsSettings$AliasOperation;->this$0:Lcom/android/settings/TrustedCredentialsSettings;
 
@@ -47,9 +46,6 @@
 
 .method synthetic constructor <init>(Lcom/android/settings/TrustedCredentialsSettings;Lcom/android/settings/TrustedCredentialsSettings$CertHolder;Lcom/android/settings/TrustedCredentialsSettings$1;)V
     .locals 0
-    .param p1    # Lcom/android/settings/TrustedCredentialsSettings;
-    .param p2    # Lcom/android/settings/TrustedCredentialsSettings$CertHolder;
-    .param p3    # Lcom/android/settings/TrustedCredentialsSettings$1;
 
     invoke-direct {p0, p1, p2}, Lcom/android/settings/TrustedCredentialsSettings$AliasOperation;-><init>(Lcom/android/settings/TrustedCredentialsSettings;Lcom/android/settings/TrustedCredentialsSettings$CertHolder;)V
 
@@ -60,7 +56,6 @@
 # virtual methods
 .method protected varargs doInBackground([Ljava/lang/Void;)Ljava/lang/Boolean;
     .locals 6
-    .param p1    # [Ljava/lang/Void;
 
     const/4 v5, 0x0
 
@@ -213,7 +208,6 @@
 
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [Ljava/lang/Void;
 
@@ -226,7 +220,6 @@
 
 .method protected onPostExecute(Ljava/lang/Boolean;)V
     .locals 3
-    .param p1    # Ljava/lang/Boolean;
 
     iget-object v0, p0, Lcom/android/settings/TrustedCredentialsSettings$AliasOperation;->mCertHolder:Lcom/android/settings/TrustedCredentialsSettings$CertHolder;
 
@@ -249,7 +242,6 @@
 
 .method protected bridge synthetic onPostExecute(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Ljava/lang/Boolean;
 

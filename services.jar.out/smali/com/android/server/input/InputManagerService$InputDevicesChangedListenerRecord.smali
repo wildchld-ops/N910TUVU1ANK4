@@ -28,8 +28,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/input/InputManagerService;ILandroid/hardware/input/IInputDevicesChangedListener;)V
     .locals 0
-    .param p2    # I
-    .param p3    # Landroid/hardware/input/IInputDevicesChangedListener;
 
     iput-object p1, p0, Lcom/android/server/input/InputManagerService$InputDevicesChangedListenerRecord;->this$0:Lcom/android/server/input/InputManagerService;
 
@@ -59,7 +57,6 @@
 
 .method public notifyInputDevicesChanged([I)V
     .locals 4
-    .param p1    # [I
 
     :try_start_0
     iget-object v1, p0, Lcom/android/server/input/InputManagerService$InputDevicesChangedListenerRecord;->mListener:Landroid/hardware/input/IInputDevicesChangedListener;

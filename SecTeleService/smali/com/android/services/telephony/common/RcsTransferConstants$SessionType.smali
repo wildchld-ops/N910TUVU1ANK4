@@ -172,7 +172,7 @@
 
     sget-object v0, Lcom/android/services/telephony/common/RcsTransferConstants$SessionType;->$VALUES:[Lcom/android/services/telephony/common/RcsTransferConstants$SessionType;
 
-    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
+    invoke-virtual {v0}, [Lcom/android/services/telephony/common/RcsTransferConstants$SessionType;->clone()Ljava/lang/Object;
 
     move-result-object v0
 

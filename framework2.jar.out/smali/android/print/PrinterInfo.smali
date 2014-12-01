@@ -68,7 +68,6 @@
 
 .method private constructor <init>(Landroid/os/Parcel;)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
 
     const/4 v1, 0x0
 
@@ -113,8 +112,6 @@
 
 .method synthetic constructor <init>(Landroid/os/Parcel;Landroid/print/PrinterInfo$1;)V
     .locals 0
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # Landroid/print/PrinterInfo$1;
 
     invoke-direct {p0, p1}, Landroid/print/PrinterInfo;-><init>(Landroid/os/Parcel;)V
 
@@ -123,7 +120,6 @@
 
 .method synthetic constructor <init>(Landroid/print/PrinterInfo$1;)V
     .locals 0
-    .param p1    # Landroid/print/PrinterInfo$1;
 
     invoke-direct {p0}, Landroid/print/PrinterInfo;-><init>()V
 
@@ -132,7 +128,6 @@
 
 .method private constructor <init>(Landroid/print/PrinterInfo;)V
     .locals 0
-    .param p1    # Landroid/print/PrinterInfo;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -143,8 +138,6 @@
 
 .method static synthetic access$102(Landroid/print/PrinterInfo;Landroid/print/PrinterId;)Landroid/print/PrinterId;
     .locals 0
-    .param p0    # Landroid/print/PrinterInfo;
-    .param p1    # Landroid/print/PrinterId;
 
     iput-object p1, p0, Landroid/print/PrinterInfo;->mId:Landroid/print/PrinterId;
 
@@ -153,8 +146,6 @@
 
 .method static synthetic access$202(Landroid/print/PrinterInfo;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Landroid/print/PrinterInfo;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/print/PrinterInfo;->mName:Ljava/lang/String;
 
@@ -163,8 +154,6 @@
 
 .method static synthetic access$302(Landroid/print/PrinterInfo;I)I
     .locals 0
-    .param p0    # Landroid/print/PrinterInfo;
-    .param p1    # I
 
     iput p1, p0, Landroid/print/PrinterInfo;->mStatus:I
 
@@ -173,8 +162,6 @@
 
 .method static synthetic access$402(Landroid/print/PrinterInfo;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Landroid/print/PrinterInfo;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/print/PrinterInfo;->mDescription:Ljava/lang/String;
 
@@ -183,8 +170,6 @@
 
 .method static synthetic access$502(Landroid/print/PrinterInfo;Landroid/print/PrinterCapabilitiesInfo;)Landroid/print/PrinterCapabilitiesInfo;
     .locals 0
-    .param p0    # Landroid/print/PrinterInfo;
-    .param p1    # Landroid/print/PrinterCapabilitiesInfo;
 
     iput-object p1, p0, Landroid/print/PrinterInfo;->mCapabilities:Landroid/print/PrinterCapabilitiesInfo;
 
@@ -195,7 +180,6 @@
 # virtual methods
 .method public copyFrom(Landroid/print/PrinterInfo;)V
     .locals 2
-    .param p1    # Landroid/print/PrinterInfo;
 
     if-ne p0, p1, :cond_0
 
@@ -264,7 +248,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 5
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x1
 
@@ -605,8 +588,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v0, p0, Landroid/print/PrinterInfo;->mId:Landroid/print/PrinterId;
 

@@ -34,7 +34,6 @@
 
 .method private constructor <init>(Landroid/graphics/drawable/ShapeDrawable$ShapeState;)V
     .locals 1
-    .param p1    # Landroid/graphics/drawable/ShapeDrawable$ShapeState;
 
     invoke-direct {p0}, Landroid/graphics/drawable/Drawable;-><init>()V
 
@@ -49,8 +48,6 @@
 
 .method synthetic constructor <init>(Landroid/graphics/drawable/ShapeDrawable$ShapeState;Landroid/graphics/drawable/ShapeDrawable$1;)V
     .locals 0
-    .param p1    # Landroid/graphics/drawable/ShapeDrawable$ShapeState;
-    .param p2    # Landroid/graphics/drawable/ShapeDrawable$1;
 
     invoke-direct {p0, p1}, Landroid/graphics/drawable/ShapeDrawable;-><init>(Landroid/graphics/drawable/ShapeDrawable$ShapeState;)V
 
@@ -59,7 +56,6 @@
 
 .method public constructor <init>(Landroid/graphics/drawable/shapes/Shape;)V
     .locals 1
-    .param p1    # Landroid/graphics/drawable/shapes/Shape;
 
     const/4 v0, 0x0
 
@@ -76,8 +72,6 @@
 
 .method private static modulateAlpha(II)I
     .locals 2
-    .param p0    # I
-    .param p1    # I
 
     ushr-int/lit8 v1, p1, 0x7
 
@@ -151,7 +145,6 @@
 # virtual methods
 .method public draw(Landroid/graphics/Canvas;)V
     .locals 6
-    .param p1    # Landroid/graphics/Canvas;
 
     invoke-virtual {p0}, Landroid/graphics/drawable/ShapeDrawable;->getBounds()Landroid/graphics/Rect;
 
@@ -341,7 +334,6 @@
 
 .method public getPadding(Landroid/graphics/Rect;)Z
     .locals 1
-    .param p1    # Landroid/graphics/Rect;
 
     iget-object v0, p0, Landroid/graphics/drawable/ShapeDrawable;->mShapeState:Landroid/graphics/drawable/ShapeDrawable$ShapeState;
 
@@ -400,9 +392,6 @@
 
 .method public inflate(Landroid/content/res/Resources;Lorg/xmlpull/v1/XmlPullParser;Landroid/util/AttributeSet;)V
     .locals 12
-    .param p1    # Landroid/content/res/Resources;
-    .param p2    # Lorg/xmlpull/v1/XmlPullParser;
-    .param p3    # Landroid/util/AttributeSet;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -547,10 +536,6 @@
 
 .method protected inflateTag(Ljava/lang/String;Landroid/content/res/Resources;Lorg/xmlpull/v1/XmlPullParser;Landroid/util/AttributeSet;)Z
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/res/Resources;
-    .param p3    # Lorg/xmlpull/v1/XmlPullParser;
-    .param p4    # Landroid/util/AttributeSet;
 
     const/4 v1, 0x1
 
@@ -709,7 +694,6 @@
 
 .method protected onBoundsChange(Landroid/graphics/Rect;)V
     .locals 0
-    .param p1    # Landroid/graphics/Rect;
 
     invoke-super {p0, p1}, Landroid/graphics/drawable/Drawable;->onBoundsChange(Landroid/graphics/Rect;)V
 
@@ -720,9 +704,6 @@
 
 .method protected onDraw(Landroid/graphics/drawable/shapes/Shape;Landroid/graphics/Canvas;Landroid/graphics/Paint;)V
     .locals 0
-    .param p1    # Landroid/graphics/drawable/shapes/Shape;
-    .param p2    # Landroid/graphics/Canvas;
-    .param p3    # Landroid/graphics/Paint;
 
     invoke-virtual {p1, p2, p3}, Landroid/graphics/drawable/shapes/Shape;->draw(Landroid/graphics/Canvas;Landroid/graphics/Paint;)V
 
@@ -731,7 +712,6 @@
 
 .method public setAlpha(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/graphics/drawable/ShapeDrawable;->mShapeState:Landroid/graphics/drawable/ShapeDrawable$ShapeState;
 
@@ -744,7 +724,6 @@
 
 .method public setColorFilter(Landroid/graphics/ColorFilter;)V
     .locals 1
-    .param p1    # Landroid/graphics/ColorFilter;
 
     iget-object v0, p0, Landroid/graphics/drawable/ShapeDrawable;->mShapeState:Landroid/graphics/drawable/ShapeDrawable$ShapeState;
 
@@ -759,7 +738,6 @@
 
 .method public setDither(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Landroid/graphics/drawable/ShapeDrawable;->mShapeState:Landroid/graphics/drawable/ShapeDrawable$ShapeState;
 
@@ -774,7 +752,6 @@
 
 .method public setIntrinsicHeight(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/graphics/drawable/ShapeDrawable;->mShapeState:Landroid/graphics/drawable/ShapeDrawable$ShapeState;
 
@@ -787,7 +764,6 @@
 
 .method public setIntrinsicWidth(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/graphics/drawable/ShapeDrawable;->mShapeState:Landroid/graphics/drawable/ShapeDrawable$ShapeState;
 
@@ -800,10 +776,6 @@
 
 .method public setPadding(IIII)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     or-int v0, p1, p2
 
@@ -851,7 +823,6 @@
 
 .method public setPadding(Landroid/graphics/Rect;)V
     .locals 2
-    .param p1    # Landroid/graphics/Rect;
 
     if-nez p1, :cond_0
 
@@ -893,7 +864,6 @@
 
 .method public setShaderFactory(Landroid/graphics/drawable/ShapeDrawable$ShaderFactory;)V
     .locals 1
-    .param p1    # Landroid/graphics/drawable/ShapeDrawable$ShaderFactory;
 
     iget-object v0, p0, Landroid/graphics/drawable/ShapeDrawable;->mShapeState:Landroid/graphics/drawable/ShapeDrawable$ShapeState;
 
@@ -904,7 +874,6 @@
 
 .method public setShape(Landroid/graphics/drawable/shapes/Shape;)V
     .locals 1
-    .param p1    # Landroid/graphics/drawable/shapes/Shape;
 
     iget-object v0, p0, Landroid/graphics/drawable/ShapeDrawable;->mShapeState:Landroid/graphics/drawable/ShapeDrawable$ShapeState;
 

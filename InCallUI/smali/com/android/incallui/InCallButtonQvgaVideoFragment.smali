@@ -92,7 +92,6 @@
 
 .method static synthetic access$100(Lcom/android/incallui/InCallButtonQvgaVideoFragment;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/incallui/InCallButtonQvgaVideoFragment;
 
     iget-object v0, p0, Lcom/android/incallui/InCallButtonQvgaVideoFragment;->mHandler:Landroid/os/Handler;
 
@@ -101,7 +100,6 @@
 
 .method static synthetic access$200(Lcom/android/incallui/InCallButtonQvgaVideoFragment;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/incallui/InCallButtonQvgaVideoFragment;
 
     iget-object v0, p0, Lcom/android/incallui/InCallButtonQvgaVideoFragment;->mButtonContainer:Landroid/view/View;
 
@@ -110,7 +108,6 @@
 
 .method static synthetic access$300(Lcom/android/incallui/InCallButtonQvgaVideoFragment;)Z
     .locals 1
-    .param p0    # Lcom/android/incallui/InCallButtonQvgaVideoFragment;
 
     invoke-direct {p0}, Lcom/android/incallui/InCallButtonQvgaVideoFragment;->isPossibleToHideButton()Z
 
@@ -256,7 +253,6 @@
 
 .method private showButtonContainer(Z)V
     .locals 4
-    .param p1    # Z
 
     const/4 v1, 0x1
 
@@ -295,7 +291,6 @@
 
 .method private showOutgoingButtons(Z)V
     .locals 3
-    .param p1    # Z
 
     const/16 v2, 0x8
 
@@ -364,7 +359,6 @@
 
 .method private showPrimaryCallBanner(Z)V
     .locals 2
-    .param p1    # Z
 
     if-eqz p1, :cond_2
 
@@ -423,8 +417,6 @@
 
 .method private startAnimation(Landroid/view/View;Z)V
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # Z
 
     if-nez p1, :cond_0
 
@@ -567,7 +559,6 @@
 
 .method private updateButtonState(I)V
     .locals 1
-    .param p1    # I
 
     const-string v0, "ims_ui_for_kor"
 
@@ -613,7 +604,6 @@
 # virtual methods
 .method public displayDialpad(Z)V
     .locals 2
-    .param p1    # Z
 
     const/16 v1, 0x64
 
@@ -648,8 +638,6 @@
 
 .method public displayDialpad(ZZ)V
     .locals 2
-    .param p1    # Z
-    .param p2    # Z
 
     const/16 v1, 0x64
 
@@ -684,7 +672,6 @@
 
 .method public enableSwitchButton(Z)V
     .locals 2
-    .param p1    # Z
 
     const/4 v0, 0x1
 
@@ -804,7 +791,6 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/incallui/CallButtonFragment;->onActivityCreated(Landroid/os/Bundle;)V
 
@@ -813,7 +799,6 @@
 
 .method public onCameraEvent(I)V
     .locals 4
-    .param p1    # I
 
     const/4 v3, 0x1
 
@@ -944,22 +929,18 @@
 
 .method public onCaptureAndRecordEvent(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onCastingEvent(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 4
-    .param p1    # Landroid/widget/CompoundButton;
-    .param p2    # Z
 
     invoke-virtual {p1}, Landroid/view/View;->getId()I
 
@@ -1019,7 +1000,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 8
-    .param p1    # Landroid/view/View;
 
     const/4 v7, 0x1
 
@@ -1245,9 +1225,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 3
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const-string v1, "onCreateView..."
 
@@ -1337,7 +1314,6 @@
 
 .method protected onFinishInflate(Landroid/view/View;)V
     .locals 5
-    .param p1    # Landroid/view/View;
 
     const v4, 0x7f09014d
 
@@ -1536,7 +1512,6 @@
 
 .method public onOpenCloseDialpad(Z)V
     .locals 2
-    .param p1    # Z
 
     const/16 v1, 0x64
 
@@ -1587,15 +1562,12 @@
 
 .method public onVideoCallEvent(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onVideoCallEvent(ILsiso/vt/VideoTelephonyData;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Lsiso/vt/VideoTelephonyData;
 
     return-void
 .end method
@@ -1630,7 +1602,6 @@
 
 .method public setCallState(I)V
     .locals 0
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/incallui/InCallButtonQvgaVideoFragment;->toggleButtonContainer()V
 
@@ -1641,7 +1612,6 @@
 
 .method public setEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-super {p0, p1}, Lcom/android/incallui/CallButtonFragment;->setEnabled(Z)V
 
@@ -1695,7 +1665,6 @@
 
 .method public setHideShowButton(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/incallui/InCallButtonQvgaVideoFragment;->mHideShowToggleButton:Landroid/widget/ToggleButton;
 
@@ -1753,7 +1722,6 @@
 
 .method public setVisibleByDialpad(Z)V
     .locals 3
-    .param p1    # Z
 
     const/4 v0, 0x1
 
@@ -1807,7 +1775,6 @@
 
 .method public showCallBannerByMenu(Z)V
     .locals 4
-    .param p1    # Z
 
     const/16 v3, 0x64
 
@@ -1894,7 +1861,6 @@
 
 .method public showCameraEffectPanel(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v1, p0, Lcom/android/incallui/InCallButtonQvgaVideoFragment;->mPreviewEffectContainer:Lcom/android/incallui/vt/PreviewEffectUI;
 
@@ -1948,7 +1914,6 @@
 
 .method public showDialPadButton(Z)V
     .locals 2
-    .param p1    # Z
 
     const/4 v1, 0x1
 
@@ -1976,14 +1941,12 @@
 
 .method public showEncryptCall(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method public showLeftDialPadButton(Z)V
     .locals 2
-    .param p1    # Z
 
     const/4 v1, 0x1
 
@@ -2011,7 +1974,6 @@
 
 .method public showModifyCall(Z)V
     .locals 2
-    .param p1    # Z
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -2063,7 +2025,6 @@
 
 .method public showMute(Z)V
     .locals 2
-    .param p1    # Z
 
     const/4 v1, 0x1
 
@@ -2091,7 +2052,6 @@
 
 .method public showSeekBar(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/incallui/InCallButtonQvgaVideoFragment;->mVTSeekBar:Lcom/android/incallui/vt/VTSeekBar;
 
@@ -2114,7 +2074,6 @@
 
 .method public showStopButton(Z)V
     .locals 3
-    .param p1    # Z
 
     const/4 v1, 0x1
 
@@ -2182,7 +2141,6 @@
 
 .method public showSwitchButton(Z)V
     .locals 2
-    .param p1    # Z
 
     const/4 v1, 0x1
 
@@ -2357,7 +2315,6 @@
 
 .method public updateSwitchButtonLayout(Z)V
     .locals 5
-    .param p1    # Z
 
     new-instance v2, Ljava/lang/StringBuilder;
 

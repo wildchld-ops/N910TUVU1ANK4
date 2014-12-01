@@ -23,7 +23,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/mms/glance/GlanceDBHelper;Landroid/content/Context;)V
     .locals 3
-    .param p2    # Landroid/content/Context;
 
     iput-object p1, p0, Lcom/android/mms/glance/GlanceDBHelper$DatabaseHelper;->this$0:Lcom/android/mms/glance/GlanceDBHelper;
 
@@ -44,7 +43,6 @@
 # virtual methods
 .method public onCreate(Landroid/database/sqlite/SQLiteDatabase;)V
     .locals 2
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
 
     const-string v0, "Mms/GlanceDBHelper"
 
@@ -69,9 +67,6 @@
 
 .method public onUpgrade(Landroid/database/sqlite/SQLiteDatabase;II)V
     .locals 2
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p2    # I
-    .param p3    # I
 
     const-string v0, "Mms/GlanceDBHelper"
 

@@ -629,8 +629,6 @@
 
 .method private preconnect(Landroid/filterfw/core/OutputPort;Landroid/filterfw/core/InputPort;)V
     .locals 2
-    .param p1    # Landroid/filterfw/core/OutputPort;
-    .param p2    # Landroid/filterfw/core/InputPort;
 
     iget-object v1, p0, Landroid/filterfw/core/FilterGraph;->mPreconnections:Ljava/util/HashMap;
 
@@ -658,7 +656,6 @@
 
 .method private readyForProcessing(Landroid/filterfw/core/Filter;Ljava/util/Set;)Z
     .locals 5
-    .param p1    # Landroid/filterfw/core/Filter;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -725,7 +722,6 @@
 
 .method private removeFilter(Landroid/filterfw/core/Filter;)V
     .locals 2
-    .param p1    # Landroid/filterfw/core/Filter;
 
     iget-object v0, p0, Landroid/filterfw/core/FilterGraph;->mFilters:Ljava/util/HashSet;
 
@@ -878,7 +874,6 @@
 
 .method private runTypeCheckOn(Landroid/filterfw/core/Filter;)V
     .locals 9
-    .param p1    # Landroid/filterfw/core/Filter;
 
     const/4 v8, 0x0
 
@@ -1088,7 +1083,6 @@
 
 .method private updateOutputs(Landroid/filterfw/core/Filter;)V
     .locals 8
-    .param p1    # Landroid/filterfw/core/Filter;
 
     invoke-virtual {p1}, Landroid/filterfw/core/Filter;->getOutputPorts()Ljava/util/Collection;
 
@@ -1175,7 +1169,6 @@
 # virtual methods
 .method public addFilter(Landroid/filterfw/core/Filter;)Z
     .locals 2
-    .param p1    # Landroid/filterfw/core/Filter;
 
     invoke-virtual {p0, p1}, Landroid/filterfw/core/FilterGraph;->containsFilter(Landroid/filterfw/core/Filter;)Z
 
@@ -1253,7 +1246,6 @@
 
 .method public closeFilters(Landroid/filterfw/core/FilterContext;)V
     .locals 4
-    .param p1    # Landroid/filterfw/core/FilterContext;
 
     iget-boolean v2, p0, Landroid/filterfw/core/FilterGraph;->mLogVerbose:Z
 
@@ -1299,10 +1291,6 @@
 
 .method public connect(Landroid/filterfw/core/Filter;Ljava/lang/String;Landroid/filterfw/core/Filter;Ljava/lang/String;)V
     .locals 5
-    .param p1    # Landroid/filterfw/core/Filter;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/filterfw/core/Filter;
-    .param p4    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -1441,10 +1429,6 @@
 
 .method public connect(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Landroid/filterfw/core/FilterGraph;->getFilter(Ljava/lang/String;)Landroid/filterfw/core/Filter;
 
@@ -1527,7 +1511,6 @@
 
 .method public containsFilter(Landroid/filterfw/core/Filter;)Z
     .locals 1
-    .param p1    # Landroid/filterfw/core/Filter;
 
     iget-object v0, p0, Landroid/filterfw/core/FilterGraph;->mFilters:Ljava/util/HashSet;
 
@@ -1570,7 +1553,6 @@
 
 .method public getFilter(Ljava/lang/String;)Landroid/filterfw/core/Filter;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/filterfw/core/FilterGraph;->mNameMap:Ljava/util/HashMap;
 
@@ -1610,7 +1592,6 @@
 
 .method public setAutoBranchMode(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/filterfw/core/FilterGraph;->mAutoBranchMode:I
 
@@ -1619,7 +1600,6 @@
 
 .method public setDiscardUnconnectedOutputs(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/filterfw/core/FilterGraph;->mDiscardUnconnectedOutputs:Z
 
@@ -1628,7 +1608,6 @@
 
 .method public setTypeCheckMode(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/filterfw/core/FilterGraph;->mTypeCheckMode:I
 
@@ -1656,7 +1635,6 @@
 
 .method public tearDown(Landroid/filterfw/core/FilterContext;)V
     .locals 3
-    .param p1    # Landroid/filterfw/core/FilterContext;
 
     iget-object v2, p0, Landroid/filterfw/core/FilterGraph;->mFilters:Ljava/util/HashSet;
 

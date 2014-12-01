@@ -14,7 +14,6 @@
 # direct methods
 .method public constructor <init>(Lcom/sec/epdg/IEpdgManager;)V
     .locals 2
-    .param p1    # Lcom/sec/epdg/IEpdgManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -43,7 +42,6 @@
 # virtual methods
 .method public connect(Ljava/lang/String;)I
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     iget-object v1, p0, Lcom/sec/epdg/EpdgManager;->mService:Lcom/sec/epdg/IEpdgManager;
@@ -71,7 +69,6 @@
 
 .method public disconnect(Ljava/lang/String;)I
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     iget-object v1, p0, Lcom/sec/epdg/EpdgManager;->mService:Lcom/sec/epdg/IEpdgManager;
@@ -99,7 +96,6 @@
 
 .method public enableTestRilAdapter(Z)I
     .locals 2
-    .param p1    # Z
 
     :try_start_0
     iget-object v1, p0, Lcom/sec/epdg/EpdgManager;->mService:Lcom/sec/epdg/IEpdgManager;
@@ -146,8 +142,6 @@
 
 .method public sendEventToStateMachine(II)I
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     :try_start_0
     iget-object v1, p0, Lcom/sec/epdg/EpdgManager;->mService:Lcom/sec/epdg/IEpdgManager;
@@ -175,9 +169,6 @@
 
 .method public startHandOverLteToWifi(ILjava/lang/String;Landroid/app/PendingIntent;)I
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/app/PendingIntent;
 
     :try_start_0
     iget-object v1, p0, Lcom/sec/epdg/EpdgManager;->mService:Lcom/sec/epdg/IEpdgManager;
@@ -205,9 +196,6 @@
 
 .method public startHandOverWifiToLte(ILjava/lang/String;Landroid/app/PendingIntent;)I
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/app/PendingIntent;
 
     :try_start_0
     iget-object v1, p0, Lcom/sec/epdg/EpdgManager;->mService:Lcom/sec/epdg/IEpdgManager;

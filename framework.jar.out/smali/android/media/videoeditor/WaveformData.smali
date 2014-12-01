@@ -37,7 +37,6 @@
 
 .method constructor <init>(Ljava/lang/String;)V
     .locals 11
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

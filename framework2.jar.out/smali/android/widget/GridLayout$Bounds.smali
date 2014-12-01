@@ -35,7 +35,6 @@
 
 .method synthetic constructor <init>(Landroid/widget/GridLayout$1;)V
     .locals 0
-    .param p1    # Landroid/widget/GridLayout$1;
 
     invoke-direct {p0}, Landroid/widget/GridLayout$Bounds;-><init>()V
 
@@ -46,11 +45,6 @@
 # virtual methods
 .method protected getOffset(Landroid/widget/GridLayout;Landroid/view/View;Landroid/widget/GridLayout$Alignment;IZ)I
     .locals 2
-    .param p1    # Landroid/widget/GridLayout;
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/widget/GridLayout$Alignment;
-    .param p4    # I
-    .param p5    # Z
 
     iget v0, p0, Landroid/widget/GridLayout$Bounds;->before:I
 
@@ -69,8 +63,6 @@
 
 .method protected include(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget v0, p0, Landroid/widget/GridLayout$Bounds;->before:I
 
@@ -93,10 +85,6 @@
 
 .method protected final include(Landroid/widget/GridLayout;Landroid/view/View;Landroid/widget/GridLayout$Spec;Landroid/widget/GridLayout$Axis;)V
     .locals 6
-    .param p1    # Landroid/widget/GridLayout;
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/widget/GridLayout$Spec;
-    .param p4    # Landroid/widget/GridLayout$Axis;
 
     iget v4, p0, Landroid/widget/GridLayout$Bounds;->flexibility:I
 
@@ -153,7 +141,6 @@
 
 .method protected size(Z)I
     .locals 2
-    .param p1    # Z
 
     if-nez p1, :cond_0
 

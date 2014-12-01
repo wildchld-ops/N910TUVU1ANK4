@@ -60,7 +60,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     sget-object v0, Landroid/os/AsyncTask;->THREAD_POOL_EXECUTOR:Ljava/util/concurrent/Executor;
 
@@ -71,8 +70,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Ljava/util/concurrent/Executor;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/util/concurrent/Executor;
 
     invoke-direct {p0, p1}, Landroid/content/Loader;-><init>(Landroid/content/Context;)V
 
@@ -183,10 +180,6 @@
 
 .method public dump(Ljava/lang/String;Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/io/FileDescriptor;
-    .param p3    # Ljava/io/PrintWriter;
-    .param p4    # [Ljava/lang/String;
 
     invoke-super {p0, p1, p2, p3, p4}, Landroid/content/Loader;->dump(Ljava/lang/String;Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
 
@@ -516,7 +509,6 @@
 
 .method public setUpdateThrottle(J)V
     .locals 2
-    .param p1    # J
 
     iput-wide p1, p0, Landroid/content/AsyncTaskLoader;->mUpdateThrottle:J
 

@@ -197,7 +197,7 @@
 
     const-string v1, "connectivity"
 
-    invoke-virtual {p0, v1}, Landroid/app/Activity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v1}, Lcom/android/phone/Enhanced4GLTE;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -217,7 +217,7 @@
 
     iget-object v1, p0, Lcom/android/phone/Enhanced4GLTE;->mStandardData:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v1}, Landroid/preference/TwoStatePreference;->isChecked()Z
+    invoke-virtual {v1}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
     move-result v1
 
@@ -230,7 +230,7 @@
     return-void
 
     :cond_1
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/Enhanced4GLTE;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -242,7 +242,7 @@
 
     iget-object v1, p0, Lcom/android/phone/Enhanced4GLTE;->mStandardData:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v1, v3}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+    invoke-virtual {v1, v3}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     iget-object v1, p0, Lcom/android/phone/Enhanced4GLTE;->mWarnDialog:Landroid/app/AlertDialog;
 
@@ -250,7 +250,7 @@
 
     iget-object v1, p0, Lcom/android/phone/Enhanced4GLTE;->mWarnDialog:Landroid/app/AlertDialog;
 
-    invoke-virtual {v1}, Landroid/app/Dialog;->isShowing()Z
+    invoke-virtual {v1}, Landroid/app/AlertDialog;->isShowing()Z
 
     move-result v1
 
@@ -308,7 +308,7 @@
 
     const-string v1, "connectivity"
 
-    invoke-virtual {p0, v1}, Landroid/app/Activity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v1}, Lcom/android/phone/Enhanced4GLTE;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -358,7 +358,7 @@
 
     move-result v1
 
-    invoke-virtual {v0, v1}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+    invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     invoke-direct {p0}, Lcom/android/phone/Enhanced4GLTE;->getMobileDataEnabled()Z
 
@@ -366,7 +366,7 @@
 
     if-eqz v0, :cond_1
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/Enhanced4GLTE;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -385,7 +385,7 @@
     return-void
 
     :cond_1
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/Enhanced4GLTE;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -414,15 +414,15 @@
 
     const v4, 0x7f06001f
 
-    invoke-virtual {p0, v4}, Landroid/preference/PreferenceActivity;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v4}, Lcom/android/phone/Enhanced4GLTE;->addPreferencesFromResource(I)V
 
-    invoke-virtual {p0}, Landroid/preference/PreferenceActivity;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/phone/Enhanced4GLTE;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v2
 
     const-string v4, "standard_data_key"
 
-    invoke-virtual {v2, v4}, Landroid/preference/PreferenceGroup;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {v2, v4}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v4
 
@@ -432,7 +432,7 @@
 
     const-string v4, "enhanced_4glte_services_key"
 
-    invoke-virtual {v2, v4}, Landroid/preference/PreferenceGroup;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {v2, v4}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v4
 
@@ -442,7 +442,7 @@
 
     const-string v4, "user_capabilities_exchange_key"
 
-    invoke-virtual {v2, v4}, Landroid/preference/PreferenceGroup;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {v2, v4}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v4
 
@@ -492,7 +492,7 @@
 
     iget-object v4, p0, Lcom/android/phone/Enhanced4GLTE;->mUCEEnabled:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v2, v4}, Landroid/preference/PreferenceGroup;->removePreference(Landroid/preference/Preference;)Z
+    invoke-virtual {v2, v4}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
     :cond_0
     new-instance v1, Landroid/content/IntentFilter;
@@ -505,7 +505,7 @@
 
     iget-object v4, p0, Lcom/android/phone/Enhanced4GLTE;->mEnhanced4GLTEReceiver:Landroid/content/BroadcastReceiver;
 
-    invoke-virtual {p0, v4, v1}, Landroid/content/ContextWrapper;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
+    invoke-virtual {p0, v4, v1}, Lcom/android/phone/Enhanced4GLTE;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
     :try_start_0
     iget-object v4, p0, Lcom/android/phone/Enhanced4GLTE;->mInterfaceForGeneral:Lcom/samsung/commonimsinterface/imsinterface/IMSInterfaceForGeneral;
@@ -522,7 +522,7 @@
 
     :cond_1
     :goto_0
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/Enhanced4GLTE;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v4
 
@@ -547,7 +547,7 @@
     :catch_0
     move-exception v0
 
-    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
+    invoke-virtual {v0}, Lcom/samsung/commonimsinterface/imscommon/IMSException;->printStackTrace()V
 
     goto :goto_0
 .end method
@@ -567,7 +567,7 @@
 
     if-eqz v1, :cond_0
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/Enhanced4GLTE;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -600,7 +600,7 @@
     :catch_0
     move-exception v0
 
-    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
+    invoke-virtual {v0}, Lcom/samsung/commonimsinterface/imscommon/IMSException;->printStackTrace()V
 
     goto :goto_0
 .end method
@@ -617,7 +617,7 @@
 
     if-ne v0, v1, :cond_0
 
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/Enhanced4GLTE;->finish()V
 
     const/4 v1, 0x1
 
@@ -625,7 +625,7 @@
     return v1
 
     :cond_0
-    invoke-super {p0, p1}, Landroid/app/Activity;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
+    invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
 
     move-result v1
 
@@ -635,9 +635,9 @@
 .method protected onPause()V
     .locals 2
 
-    invoke-super {p0}, Landroid/app/Activity;->onPause()V
+    invoke-super {p0}, Landroid/preference/PreferenceActivity;->onPause()V
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/Enhanced4GLTE;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -694,13 +694,13 @@
 
     iget-object v6, p0, Lcom/android/phone/Enhanced4GLTE;->mVoLTEEnabled:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v6}, Landroid/preference/TwoStatePreference;->isChecked()Z
+    invoke-virtual {v6}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
     move-result v6
 
     if-eqz v6, :cond_4
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/Enhanced4GLTE;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v6
 
@@ -729,14 +729,14 @@
 
     sget-boolean v7, Lcom/android/phone/PhoneGlobals;->mUCEToggleEnabled:Z
 
-    invoke-virtual {v6, v7}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v6, v7}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     :goto_1
     if-nez v2, :cond_3
 
     iget-object v6, p0, Lcom/android/phone/Enhanced4GLTE;->mVoLTEEnabled:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v6, v4}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v6, v4}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     sput-boolean v5, Lcom/android/phone/Enhanced4GLTE;->forcingVolteMenuEnable:Z
 
@@ -760,7 +760,7 @@
     goto :goto_0
 
     :cond_4
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/Enhanced4GLTE;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v6
 
@@ -787,7 +787,7 @@
     :cond_5
     iget-object v6, p0, Lcom/android/phone/Enhanced4GLTE;->mUCEEnabled:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v6, v4}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v6, v4}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     goto :goto_1
 
@@ -808,13 +808,13 @@
 
     iget-object v6, p0, Lcom/android/phone/Enhanced4GLTE;->mUCEEnabled:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v6}, Landroid/preference/TwoStatePreference;->isChecked()Z
+    invoke-virtual {v6}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
     move-result v6
 
     if-eqz v6, :cond_9
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/Enhanced4GLTE;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v6
 
@@ -844,7 +844,7 @@
 
     iget-object v6, p0, Lcom/android/phone/Enhanced4GLTE;->mUCEEnabled:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v6, v4}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v6, v4}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     sput-boolean v4, Lcom/android/phone/PhoneGlobals;->mUCEToggleEnabled:Z
 
@@ -854,7 +854,7 @@
 
     invoke-direct {v3, v4}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {p0, v3}, Landroid/content/ContextWrapper;->sendBroadcast(Landroid/content/Intent;)V
+    invoke-virtual {p0, v3}, Lcom/android/phone/Enhanced4GLTE;->sendBroadcast(Landroid/content/Intent;)V
 
     new-instance v0, Landroid/content/Intent;
 
@@ -868,7 +868,7 @@
 
     const-string v6, "Capability_Discovery"
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/Enhanced4GLTE;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v4
 
@@ -889,7 +889,7 @@
 
     invoke-virtual {v0, v4, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Bundle;)Landroid/content/Intent;
 
-    invoke-virtual {p0, v0}, Landroid/content/ContextWrapper;->sendBroadcast(Landroid/content/Intent;)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/Enhanced4GLTE;->sendBroadcast(Landroid/content/Intent;)V
 
     :cond_8
     move v4, v5
@@ -897,7 +897,7 @@
     goto/16 :goto_0
 
     :cond_9
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/Enhanced4GLTE;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v6
 
@@ -936,7 +936,7 @@
 
     const/4 v3, 0x1
 
-    invoke-super {p0}, Landroid/app/Activity;->onResume()V
+    invoke-super {p0}, Landroid/preference/PreferenceActivity;->onResume()V
 
     const-string v2, "Enhanced4GLTE"
 
@@ -944,7 +944,7 @@
 
     invoke-static {v2, v5}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/Enhanced4GLTE;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v2
 
@@ -970,7 +970,7 @@
 
     iget-object v5, p0, Lcom/android/phone/Enhanced4GLTE;->mVoLTEEnabled:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/Enhanced4GLTE;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 
@@ -985,7 +985,7 @@
     move v2, v3
 
     :goto_0
-    invoke-virtual {v5, v2}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+    invoke-virtual {v5, v2}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     invoke-static {}, Lcom/android/phone/PhoneGlobals;->getInstance()Lcom/android/phone/PhoneGlobals;
 
@@ -1043,7 +1043,7 @@
     :cond_1
     iget-object v2, p0, Lcom/android/phone/Enhanced4GLTE;->mVoLTEEnabled:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v2, v4}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v2, v4}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     :cond_2
     :goto_1
@@ -1053,7 +1053,7 @@
 
     iget-object v5, p0, Lcom/android/phone/Enhanced4GLTE;->mUCEEnabled:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/Enhanced4GLTE;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 
@@ -1068,7 +1068,7 @@
     move v2, v3
 
     :goto_2
-    invoke-virtual {v5, v2}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+    invoke-virtual {v5, v2}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     iget-object v2, p0, Lcom/android/phone/Enhanced4GLTE;->mUCEEnabled:Landroid/preference/CheckBoxPreference;
 
@@ -1082,14 +1082,14 @@
 
     iget-object v5, p0, Lcom/android/phone/Enhanced4GLTE;->mVoLTEEnabled:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v5}, Landroid/preference/TwoStatePreference;->isChecked()Z
+    invoke-virtual {v5}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
     move-result v5
 
     if-eqz v5, :cond_7
 
     :goto_3
-    invoke-virtual {v2, v3}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v2, v3}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     :cond_3
     return-void
@@ -1102,7 +1102,7 @@
     :cond_5
     iget-object v2, p0, Lcom/android/phone/Enhanced4GLTE;->mVoLTEEnabled:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v2, v3}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v2, v3}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     goto :goto_1
 

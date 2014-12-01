@@ -58,7 +58,6 @@
 
 .method public static declared-synchronized getInstance(Landroid/content/Context;)Lcom/android/server/enterprise/adapterlayer/PackageManagerAdapter;
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     const-class v1, Lcom/android/server/enterprise/adapterlayer/PackageManagerAdapter;
 
@@ -108,7 +107,6 @@
 
 .method public static getPackageInfo(Landroid/net/Uri;)Landroid/content/pm/PackageParser$Package;
     .locals 6
-    .param p0    # Landroid/net/Uri;
 
     const/4 v5, 0x0
 
@@ -146,7 +144,6 @@
 
 .method private static getValidStr(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -192,7 +189,6 @@
 # virtual methods
 .method public clearApplicationCacheFiles(Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -298,8 +294,6 @@
 
 .method public clearApplicationUserData(Ljava/lang/String;I)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v2, 0x0
 
@@ -378,7 +372,6 @@
 
 .method public clearUserData(Ljava/lang/String;)Z
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -521,8 +514,6 @@
 
 .method public clearUserData(Ljava/lang/String;I)Z
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v3, 0x0
 
@@ -659,8 +650,6 @@
 
 .method public deletePackage(Ljava/lang/String;I)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     new-instance v0, Lcom/android/server/enterprise/adapterlayer/PackageManagerAdapter$PackageDeleteObserver;
 
@@ -720,9 +709,6 @@
 
 .method public deletePackageAsUser(Ljava/lang/String;II)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v2, 0x0
 
@@ -797,8 +783,6 @@
 
 .method public getAllWidgets(Ljava/lang/String;I)Ljava/util/Map;
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -850,8 +834,6 @@
 
 .method public getApplicationEnabledSetting(Ljava/lang/String;I)I
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v1, 0x0
 
@@ -877,9 +859,6 @@
 
 .method public getApplicationInfo(Ljava/lang/String;II)Landroid/content/pm/ApplicationInfo;
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v0, 0x0
 
@@ -905,8 +884,6 @@
 
 .method public getApplicationPackageInfo(Ljava/lang/String;Landroid/net/Uri;)Lcom/android/server/enterprise/adapterlayer/PackageManagerAdapter$ApplicationPackageInfo;
     .locals 11
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/net/Uri;
 
     new-instance v4, Lcom/android/server/enterprise/adapterlayer/PackageManagerAdapter$ApplicationPackageInfo;
 
@@ -1125,7 +1102,6 @@
 
 .method public getApplicationPackageStats(Ljava/lang/String;)Landroid/content/pm/PackageStats;
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -1224,8 +1200,6 @@
 
 .method public getComponentEnabledSetting(Landroid/content/ComponentName;I)I
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # I
 
     const/4 v1, 0x0
 
@@ -1251,7 +1225,6 @@
 
 .method public getGrantedPermissions(Ljava/lang/String;)Ljava/util/List;
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1281,8 +1254,6 @@
 
 .method public getInstalledApplications(II)Ljava/util/List;
     .locals 4
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II)",
@@ -1325,7 +1296,6 @@
 
 .method public getInstalledWidgetProviders(I)Ljava/util/List;
     .locals 7
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -1413,9 +1383,6 @@
 
 .method public getPackageInfo(Ljava/lang/String;II)Landroid/content/pm/PackageInfo;
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v1, 0x0
 
@@ -1441,8 +1408,6 @@
 
 .method public getPackageSizeInfo(Ljava/lang/String;I)Landroid/content/pm/PackageStats;
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v2, 0x0
 
@@ -1522,7 +1487,6 @@
 
 .method public getPkgInfo(Ljava/lang/String;)Landroid/content/pm/PackageInfo;
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -1585,7 +1549,6 @@
 
 .method public getProcessCpuUsage(I)J
     .locals 9
-    .param p1    # I
 
     const-wide/16 v5, 0x0
 
@@ -1684,8 +1647,6 @@
 
 .method public getTopCpuUsageProcesses(IZ)Ljava/util/List;
     .locals 13
-    .param p1    # I
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(IZ)",
@@ -1896,8 +1857,6 @@
 
 .method public installExistingPackageAsUserForMDM(Ljava/lang/String;I)I
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1915,8 +1874,6 @@
 
 .method public installPackage(Ljava/io/File;I)Ljava/lang/String;
     .locals 4
-    .param p1    # Ljava/io/File;
-    .param p2    # I
 
     const/4 v1, 0x0
 
@@ -1991,9 +1948,6 @@
 
 .method public installPackage(Ljava/io/File;Lcom/android/server/enterprise/adapterlayer/PackageManagerAdapter$InstallationCallback;I)V
     .locals 4
-    .param p1    # Ljava/io/File;
-    .param p2    # Lcom/android/server/enterprise/adapterlayer/PackageManagerAdapter$InstallationCallback;
-    .param p3    # I
 
     sget-object v0, Lcom/android/server/enterprise/adapterlayer/PackageManagerAdapter;->mContext:Landroid/content/Context;
 
@@ -2255,7 +2209,6 @@
 
 .method public revokeExternalPermissions(Landroid/content/pm/ResolveInfo;Ljava/util/List;)I
     .locals 1
-    .param p1    # Landroid/content/pm/ResolveInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2284,7 +2237,6 @@
 
 .method public revokePermissionEDM(Ljava/lang/String;Ljava/util/List;)Ljava/util/List;
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2317,7 +2269,6 @@
 
 .method public rollbackPermission(Ljava/lang/String;Ljava/util/List;)Ljava/util/List;
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2350,11 +2301,6 @@
 
 .method public setApplicationEnabledSetting(Ljava/lang/String;IIILjava/lang/String;)Z
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Ljava/lang/String;
 
     const/4 v7, 0x1
 
@@ -2388,7 +2334,6 @@
 
 .method public setBackupEnabled(Z)V
     .locals 2
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2434,10 +2379,6 @@
 
 .method public setComponentEnabledSetting(Landroid/content/ComponentName;III)Z
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/4 v1, 0x1
 
@@ -2461,7 +2402,6 @@
 
 .method public setLicensePermissions(Ljava/lang/String;)I
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

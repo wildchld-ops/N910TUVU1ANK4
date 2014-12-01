@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -74,7 +73,6 @@
 
 .method public setContentType(I)Landroid/print/PrintDocumentInfo$Builder;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/print/PrintDocumentInfo$Builder;->mPrototype:Landroid/print/PrintDocumentInfo;
 
@@ -86,7 +84,6 @@
 
 .method public setPageCount(I)Landroid/print/PrintDocumentInfo$Builder;
     .locals 2
-    .param p1    # I
 
     if-gez p1, :cond_0
 

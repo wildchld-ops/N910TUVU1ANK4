@@ -59,8 +59,6 @@
 
 .method synthetic constructor <init>(Lcom/android/settings/wifi/WifiSettings;Lcom/android/settings/wifi/WifiSettings$1;)V
     .locals 0
-    .param p1    # Lcom/android/settings/wifi/WifiSettings;
-    .param p2    # Lcom/android/settings/wifi/WifiSettings$1;
 
     invoke-direct {p0, p1}, Lcom/android/settings/wifi/WifiSettings$Multimap;-><init>(Lcom/android/settings/wifi/WifiSettings;)V
 

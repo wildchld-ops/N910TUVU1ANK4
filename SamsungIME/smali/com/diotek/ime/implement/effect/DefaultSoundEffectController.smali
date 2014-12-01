@@ -220,7 +220,6 @@
 
 .method public playKeySound(I)V
     .locals 8
-    .param p1    # I
 
     iget-boolean v0, p0, Lcom/diotek/ime/implement/effect/DefaultSoundEffectController;->mSoundEffectOn:Z
 
@@ -298,8 +297,6 @@
 
 .method public playKeySound(IZ)V
     .locals 0
-    .param p1    # I
-    .param p2    # Z
 
     return-void
 .end method
@@ -325,7 +322,6 @@
 
 .method public setSoundEffectOn(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/implement/effect/DefaultSoundEffectController;->mSoundEffectOn:Z
 

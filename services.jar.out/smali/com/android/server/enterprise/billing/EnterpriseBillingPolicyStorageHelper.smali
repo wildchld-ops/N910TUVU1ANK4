@@ -112,7 +112,6 @@
 
 .method protected constructor <init>(Landroid/content/Context;)V
     .locals 14
-    .param p1    # Landroid/content/Context;
 
     const/4 v3, 0x0
 
@@ -230,12 +229,6 @@
 
 .method private addProfile(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;II)I
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
-    .param p6    # I
 
     const-string v2, "EnterpriseBillingPolicyStorage"
 
@@ -334,12 +327,6 @@
 
 .method private addProfileforCurrentcontainer(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;II)I
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
-    .param p6    # I
 
     const-string v2, "EnterpriseBillingPolicyStorage"
 
@@ -454,7 +441,6 @@
 
 .method private checkForProfileAndDeleteSettings(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     const-string v1, "EnterpriseBillingPolicyStorage"
 
@@ -538,7 +524,6 @@
 
 .method private checkIfProfileIsthere(Ljava/lang/String;)Z
     .locals 10
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -635,7 +620,6 @@
 
 .method private getEapn(Ljava/lang/String;)Ljava/lang/String;
     .locals 11
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x1
 
@@ -766,8 +750,6 @@
 
 .method private insertProfileSettings(Ljava/lang/String;I)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const-string v3, "EnterpriseBillingPolicyStorage"
 
@@ -841,7 +823,6 @@
 
 .method private isProfileSettingsAvailable(Ljava/lang/String;)Z
     .locals 10
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -896,8 +877,6 @@
 # virtual methods
 .method protected activateProfile(Ljava/lang/String;Z)Z
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const/4 v4, 0x1
 
@@ -1010,8 +989,6 @@
 
 .method protected addActiveApnToProfile(Ljava/lang/String;Lcom/sec/enterprise/knox/billing/EnterpriseApn;)Z
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/sec/enterprise/knox/billing/EnterpriseApn;
 
     const/4 v0, 0x0
 
@@ -1126,9 +1103,6 @@
 
 .method protected addApplicationToProfile(Ljava/lang/String;Ljava/lang/String;I)I
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     const/4 v0, 0x0
 
@@ -1193,9 +1167,6 @@
 
 .method protected addContainerToProfile(ILjava/lang/String;I)I
     .locals 5
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     const/4 v0, -0x1
 
@@ -1264,8 +1235,6 @@
 
 .method protected addEapnProfileMapping(Ljava/lang/String;Ljava/lang/String;)I
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v4, 0x1
 
@@ -1376,9 +1345,6 @@
 
 .method protected addProfile(Lcom/sec/enterprise/knox/billing/EnterpriseBillingProfile;II)I
     .locals 10
-    .param p1    # Lcom/sec/enterprise/knox/billing/EnterpriseBillingProfile;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v9, 0x0
 
@@ -1504,9 +1470,6 @@
 
 .method protected addProfileforCurrentcontainer(Lcom/sec/enterprise/knox/billing/EnterpriseBillingProfile;II)I
     .locals 10
-    .param p1    # Lcom/sec/enterprise/knox/billing/EnterpriseBillingProfile;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v9, 0x0
 
@@ -1642,9 +1605,6 @@
 
 .method public addToUIDExceptionList(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const-string v2, "EnterpriseBillingPolicyStorage"
 
@@ -1774,11 +1734,6 @@
 
 .method public addVpnProfile(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;II)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
-    .param p5    # I
 
     const-string v3, "EnterpriseBillingPolicyStorage"
 
@@ -1903,8 +1858,6 @@
 
 .method protected allowRoaming(Ljava/lang/String;Z)I
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const/4 v3, 0x1
 
@@ -1987,8 +1940,6 @@
 
 .method protected allowWifiFallback(Ljava/lang/String;Z)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const/4 v3, 0x1
 
@@ -2065,7 +2016,6 @@
 
 .method protected clearActiveApnProfile(Ljava/lang/String;)I
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     const-string v1, "EnterpriseBillingPolicyStorage"
 
@@ -2136,7 +2086,6 @@
 
 .method protected clearEapnProfile(Ljava/lang/String;)I
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     const-string v3, "EnterpriseBillingPolicyStorage"
 
@@ -2223,7 +2172,6 @@
 
 .method protected deleteActiveProfileApn(Ljava/lang/String;)Z
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x1
 
@@ -2302,7 +2250,6 @@
 
 .method protected getActiveApnForProfile(Ljava/lang/String;)Lcom/sec/enterprise/knox/billing/EnterpriseApn;
     .locals 13
-    .param p1    # Ljava/lang/String;
 
     const/4 v12, 0x2
 
@@ -2429,7 +2376,6 @@
 
 .method protected getApplicationsUsingProfile(Ljava/lang/String;)Ljava/util/List;
     .locals 11
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2543,7 +2489,6 @@
 
 .method protected getAssignedEapn(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "EnterpriseBillingPolicyStorage"
 
@@ -2576,7 +2521,6 @@
 
 .method protected getAssignedProfile(Ljava/lang/String;)Ljava/lang/String;
     .locals 11
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x1
 
@@ -2763,7 +2707,6 @@
 
 .method protected getAvailableProfiles(I)Ljava/util/List;
     .locals 14
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -2927,7 +2870,6 @@
 
 .method protected getBillingProfileForVpnEngine(Ljava/lang/String;)Ljava/lang/String;
     .locals 11
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x1
 
@@ -3034,7 +2976,6 @@
 
 .method public getBillingProfileName(Ljava/lang/String;)Ljava/lang/String;
     .locals 11
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x1
 
@@ -3141,7 +3082,6 @@
 
 .method protected getContainersUsingProfile(Ljava/lang/String;)Ljava/util/List;
     .locals 11
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3460,7 +3400,6 @@
 
 .method protected getDefaultApnType(Ljava/lang/String;)Ljava/lang/String;
     .locals 11
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x1
 
@@ -3687,7 +3626,6 @@
 
 .method protected getMatchingApn(Ljava/lang/String;Ljava/util/List;)Lcom/sec/enterprise/knox/billing/EnterpriseApn;
     .locals 12
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -4016,7 +3954,6 @@
 
 .method protected getProfile(Ljava/lang/String;)Lcom/sec/enterprise/knox/billing/EnterpriseBillingProfile;
     .locals 14
-    .param p1    # Ljava/lang/String;
 
     const/4 v13, 0x0
 
@@ -4166,7 +4103,6 @@
 
 .method protected getProfileForApplication(Ljava/lang/String;)Lcom/sec/enterprise/knox/billing/EnterpriseBillingProfile;
     .locals 12
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x1
 
@@ -4262,7 +4198,6 @@
 
 .method protected getProfileForContainer(I)Lcom/sec/enterprise/knox/billing/EnterpriseBillingProfile;
     .locals 12
-    .param p1    # I
 
     const/4 v4, 0x1
 
@@ -4376,7 +4311,6 @@
 
 .method protected getProfiles(I)[Ljava/lang/String;
     .locals 13
-    .param p1    # I
 
     const/4 v4, 0x1
 
@@ -4508,7 +4442,6 @@
 
 .method protected getVpnEngineDetailsForBillingProfile(Ljava/lang/String;)Ljava/util/List;
     .locals 13
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -4661,7 +4594,6 @@
 
 .method protected getVpnProfileDetailsIfAddedToSplitBilling(Ljava/lang/String;)Lcom/android/server/enterprise/billing/EnterpriseBillingPolicyStorageHelper$EnterpriseBillingVpnEngineDetail;
     .locals 10
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "EnterpriseBillingPolicyStorage"
 
@@ -4801,7 +4733,6 @@
 
 .method protected getVpnProfilesforBillingProfile(Ljava/lang/String;)Ljava/util/List;
     .locals 11
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -4930,7 +4861,6 @@
 
 .method protected hasMappings(Ljava/lang/String;)Z
     .locals 10
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -5015,8 +4945,6 @@
 
 .method protected isContainerOperationAllowed(Landroid/app/enterprise/ContextInfo;I)Z
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # I
 
     const-string v2, "EnterpriseBillingPolicyStorage"
 
@@ -5178,8 +5106,6 @@
 
 .method protected isMappingExists(Ljava/lang/String;I)Z
     .locals 11
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v10, 0x1
 
@@ -5302,7 +5228,6 @@
 
 .method protected isProfileActive(Ljava/lang/String;)Z
     .locals 12
-    .param p1    # Ljava/lang/String;
 
     const/4 v5, 0x0
 
@@ -5489,7 +5414,6 @@
 
 .method protected isProfileAvailable(Ljava/lang/String;)Z
     .locals 10
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x1
 
@@ -5593,7 +5517,6 @@
 
 .method protected isProfileMapped(Ljava/lang/String;)Z
     .locals 10
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x1
 
@@ -5694,7 +5617,6 @@
 
 .method protected isProfileTurnedOn(Ljava/lang/String;)Z
     .locals 12
-    .param p1    # Ljava/lang/String;
 
     const/4 v5, 0x0
 
@@ -5763,8 +5685,6 @@
 
 .method protected isProfileValidForACreator(Ljava/lang/String;I)Z
     .locals 11
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v4, 0x2
 
@@ -5909,8 +5829,6 @@
 
 .method protected isProfileValidForAnAdmin(Ljava/lang/String;I)Z
     .locals 11
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v4, 0x2
 
@@ -6053,7 +5971,6 @@
 
 .method protected isRoamingAllowed(Ljava/lang/String;)Z
     .locals 12
-    .param p1    # Ljava/lang/String;
 
     const/4 v5, 0x0
 
@@ -6150,7 +6067,6 @@
 
 .method protected isSomeOtherProfileActive(Ljava/lang/String;)Z
     .locals 11
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x1
 
@@ -6263,7 +6179,6 @@
 
 .method protected isWifiFallbackAllowed(Ljava/lang/String;)Z
     .locals 12
-    .param p1    # Ljava/lang/String;
 
     const/4 v5, 0x0
 
@@ -6360,7 +6275,6 @@
 
 .method protected isuIdsameasCreatorId(I)Z
     .locals 11
-    .param p1    # I
 
     const/4 v6, 0x1
 
@@ -6491,7 +6405,6 @@
 
 .method protected removeApplicationFromProfile(Ljava/lang/String;)I
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -6568,7 +6481,6 @@
 
 .method protected removeContainerFromProfile(I)I
     .locals 9
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -6663,9 +6575,6 @@
 
 .method public removeFromUIDExceptionList(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const-string v2, "EnterpriseBillingPolicyStorage"
 
@@ -6813,7 +6722,6 @@
 
 .method protected removeProfile(Ljava/lang/String;)I
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     const-string v1, "EnterpriseBillingPolicyStorage"
 
@@ -6901,7 +6809,6 @@
 
 .method protected removeProfileMapping(Ljava/lang/String;)I
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     const-string v1, "EnterpriseBillingPolicyStorage"
 
@@ -7012,7 +6919,6 @@
 
 .method protected removeUidByTAG(Ljava/lang/String;)Z
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x1
 
@@ -7122,7 +7028,6 @@
 
 .method public removeVpnProfile(Ljava/lang/String;)Z
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x1
 
@@ -7201,8 +7106,6 @@
 
 .method protected setDefaultApnType(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v3, 0x1
 
@@ -7303,8 +7206,6 @@
 
 .method protected turnOnProfile(Ljava/lang/String;Z)I
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const/4 v3, 0x1
 
@@ -7353,8 +7254,6 @@
 
 .method protected updateProfile(Lcom/sec/enterprise/knox/billing/EnterpriseBillingProfile;I)I
     .locals 4
-    .param p1    # Lcom/sec/enterprise/knox/billing/EnterpriseBillingProfile;
-    .param p2    # I
 
     const-string v1, "EnterpriseBillingPolicyStorage"
 

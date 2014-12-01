@@ -97,7 +97,7 @@
 
     add-long/2addr v0, v2
 
-    invoke-virtual {p0, v6, v0, v1}, Landroid/os/Handler;->sendEmptyMessageAtTime(IJ)Z
+    invoke-virtual {p0, v6, v0, v1}, Lcom/android/phone/CallNotifier$UpgradeTonePlayer$1;->sendEmptyMessageAtTime(IJ)Z
 
     goto :goto_0
 
@@ -120,7 +120,7 @@
 
     invoke-static {v0, v1}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-virtual {p0, v4}, Landroid/os/Handler;->sendEmptyMessage(I)Z
+    invoke-virtual {p0, v4}, Lcom/android/phone/CallNotifier$UpgradeTonePlayer$1;->sendEmptyMessage(I)Z
 
     iget-object v0, p0, Lcom/android/phone/CallNotifier$UpgradeTonePlayer$1;->this$1:Lcom/android/phone/CallNotifier$UpgradeTonePlayer;
 
@@ -144,7 +144,7 @@
 
     add-long/2addr v1, v3
 
-    invoke-virtual {p0, v0, v1, v2}, Landroid/os/Handler;->sendEmptyMessageAtTime(IJ)Z
+    invoke-virtual {p0, v0, v1, v2}, Lcom/android/phone/CallNotifier$UpgradeTonePlayer$1;->sendEmptyMessageAtTime(IJ)Z
 
     iget-object v0, p0, Lcom/android/phone/CallNotifier$UpgradeTonePlayer$1;->this$1:Lcom/android/phone/CallNotifier$UpgradeTonePlayer;
 
@@ -234,7 +234,7 @@
 
     add-long/2addr v0, v2
 
-    invoke-virtual {p0, v4, v0, v1}, Landroid/os/Handler;->sendEmptyMessageAtTime(IJ)Z
+    invoke-virtual {p0, v4, v0, v1}, Lcom/android/phone/CallNotifier$UpgradeTonePlayer$1;->sendEmptyMessageAtTime(IJ)Z
 
     goto/16 :goto_0
 
@@ -264,7 +264,7 @@
     goto/16 :goto_0
 
     :cond_3
-    invoke-virtual {p0, v4}, Landroid/os/Handler;->sendEmptyMessage(I)Z
+    invoke-virtual {p0, v4}, Lcom/android/phone/CallNotifier$UpgradeTonePlayer$1;->sendEmptyMessage(I)Z
 
     iget-object v0, p0, Lcom/android/phone/CallNotifier$UpgradeTonePlayer$1;->this$1:Lcom/android/phone/CallNotifier$UpgradeTonePlayer;
 
@@ -304,11 +304,11 @@
 
     const-wide/16 v0, 0x12c
 
-    invoke-virtual {p0, v6, v0, v1}, Landroid/os/Handler;->sendEmptyMessageDelayed(IJ)Z
+    invoke-virtual {p0, v6, v0, v1}, Lcom/android/phone/CallNotifier$UpgradeTonePlayer$1;->sendEmptyMessageDelayed(IJ)Z
 
     const-wide/16 v0, 0x1d6
 
-    invoke-virtual {p0, v4, v0, v1}, Landroid/os/Handler;->sendEmptyMessageDelayed(IJ)Z
+    invoke-virtual {p0, v4, v0, v1}, Lcom/android/phone/CallNotifier$UpgradeTonePlayer$1;->sendEmptyMessageDelayed(IJ)Z
 
     iget-object v0, p0, Lcom/android/phone/CallNotifier$UpgradeTonePlayer$1;->this$1:Lcom/android/phone/CallNotifier$UpgradeTonePlayer;
 

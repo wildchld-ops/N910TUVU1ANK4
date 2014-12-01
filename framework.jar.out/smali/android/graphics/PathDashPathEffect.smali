@@ -14,10 +14,6 @@
 # direct methods
 .method public constructor <init>(Landroid/graphics/Path;FFLandroid/graphics/PathDashPathEffect$Style;)V
     .locals 2
-    .param p1    # Landroid/graphics/Path;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # Landroid/graphics/PathDashPathEffect$Style;
 
     invoke-direct {p0}, Landroid/graphics/PathEffect;-><init>()V
 

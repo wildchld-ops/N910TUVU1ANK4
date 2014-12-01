@@ -175,9 +175,6 @@
 
 .method static synthetic access$000(Landroid/os/Parcel;Landroid/text/Spannable;Ljava/lang/Object;)V
     .locals 0
-    .param p0    # Landroid/os/Parcel;
-    .param p1    # Landroid/text/Spannable;
-    .param p2    # Ljava/lang/Object;
 
     invoke-static {p0, p1, p2}, Landroid/text/TextUtils;->readSpan(Landroid/os/Parcel;Landroid/text/Spannable;Ljava/lang/Object;)V
 
@@ -186,11 +183,6 @@
 
 .method public static commaEllipsize(Ljava/lang/CharSequence;Landroid/text/TextPaint;FLjava/lang/String;Ljava/lang/String;)Ljava/lang/CharSequence;
     .locals 6
-    .param p0    # Ljava/lang/CharSequence;
-    .param p1    # Landroid/text/TextPaint;
-    .param p2    # F
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     sget-object v5, Landroid/text/TextDirectionHeuristics;->FIRSTSTRONG_LTR:Landroid/text/TextDirectionHeuristic;
 
@@ -213,12 +205,6 @@
 
 .method public static commaEllipsize(Ljava/lang/CharSequence;Landroid/text/TextPaint;FLjava/lang/String;Ljava/lang/String;Landroid/text/TextDirectionHeuristic;)Ljava/lang/CharSequence;
     .locals 22
-    .param p0    # Ljava/lang/CharSequence;
-    .param p1    # Landroid/text/TextPaint;
-    .param p2    # F
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Landroid/text/TextDirectionHeuristic;
 
     invoke-static {}, Landroid/text/MeasuredText;->obtain()Landroid/text/MeasuredText;
 
@@ -470,7 +456,6 @@
 
 .method public static varargs concat([Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
     .locals 9
-    .param p0    # [Ljava/lang/CharSequence;
 
     const/4 v1, 0x0
 
@@ -597,12 +582,6 @@
 
 .method public static copySpansFrom(Landroid/text/Spanned;IILjava/lang/Class;Landroid/text/Spannable;I)V
     .locals 8
-    .param p0    # Landroid/text/Spanned;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/Class;
-    .param p4    # Landroid/text/Spannable;
-    .param p5    # I
 
     if-nez p3, :cond_0
 
@@ -670,9 +649,6 @@
 
 .method public static delimitedStringContains(Ljava/lang/String;CLjava/lang/String;)Z
     .locals 6
-    .param p0    # Ljava/lang/String;
-    .param p1    # C
-    .param p2    # Ljava/lang/String;
 
     const/4 v3, 0x1
 
@@ -750,9 +726,6 @@
 
 .method static doesNotNeedBidi(Ljava/lang/CharSequence;II)Z
     .locals 3
-    .param p0    # Ljava/lang/CharSequence;
-    .param p1    # I
-    .param p2    # I
 
     move v0, p1
 
@@ -785,9 +758,6 @@
 
 .method static doesNotNeedBidi([CII)Z
     .locals 4
-    .param p0    # [C
-    .param p1    # I
-    .param p2    # I
 
     move v1, p1
 
@@ -820,9 +790,6 @@
 
 .method public static dumpSpans(Ljava/lang/CharSequence;Landroid/util/Printer;Ljava/lang/String;)V
     .locals 7
-    .param p0    # Ljava/lang/CharSequence;
-    .param p1    # Landroid/util/Printer;
-    .param p2    # Ljava/lang/String;
 
     instance-of v4, p0, Landroid/text/Spanned;
 
@@ -996,10 +963,6 @@
 
 .method public static ellipsize(Ljava/lang/CharSequence;Landroid/text/TextPaint;FLandroid/text/TextUtils$TruncateAt;)Ljava/lang/CharSequence;
     .locals 6
-    .param p0    # Ljava/lang/CharSequence;
-    .param p1    # Landroid/text/TextPaint;
-    .param p2    # F
-    .param p3    # Landroid/text/TextUtils$TruncateAt;
 
     const/4 v4, 0x0
 
@@ -1022,12 +985,6 @@
 
 .method public static ellipsize(Ljava/lang/CharSequence;Landroid/text/TextPaint;FLandroid/text/TextUtils$TruncateAt;ZLandroid/text/TextUtils$EllipsizeCallback;)Ljava/lang/CharSequence;
     .locals 8
-    .param p0    # Ljava/lang/CharSequence;
-    .param p1    # Landroid/text/TextPaint;
-    .param p2    # F
-    .param p3    # Landroid/text/TextUtils$TruncateAt;
-    .param p4    # Z
-    .param p5    # Landroid/text/TextUtils$EllipsizeCallback;
 
     sget-object v0, Landroid/text/TextUtils$TruncateAt;->END_SMALL:Landroid/text/TextUtils$TruncateAt;
 
@@ -1080,14 +1037,6 @@
 
 .method public static ellipsize(Ljava/lang/CharSequence;Landroid/text/TextPaint;FLandroid/text/TextUtils$TruncateAt;ZLandroid/text/TextUtils$EllipsizeCallback;Landroid/text/TextDirectionHeuristic;Ljava/lang/String;)Ljava/lang/CharSequence;
     .locals 24
-    .param p0    # Ljava/lang/CharSequence;
-    .param p1    # Landroid/text/TextPaint;
-    .param p2    # F
-    .param p3    # Landroid/text/TextUtils$TruncateAt;
-    .param p4    # Z
-    .param p5    # Landroid/text/TextUtils$EllipsizeCallback;
-    .param p6    # Landroid/text/TextDirectionHeuristic;
-    .param p7    # Ljava/lang/String;
 
     invoke-interface/range {p0 .. p0}, Ljava/lang/CharSequence;->length()I
 
@@ -1507,8 +1456,6 @@
 
 .method public static equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
     .locals 6
-    .param p0    # Ljava/lang/CharSequence;
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v2, 0x1
 
@@ -1582,8 +1529,6 @@
 
 .method public static varargs expandTemplate(Ljava/lang/CharSequence;[Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
     .locals 7
-    .param p0    # Ljava/lang/CharSequence;
-    .param p1    # [Ljava/lang/CharSequence;
 
     const/16 v6, 0x5e
 
@@ -1763,9 +1708,6 @@
 
 .method public static getCapsMode(Ljava/lang/CharSequence;II)I
     .locals 10
-    .param p0    # Ljava/lang/CharSequence;
-    .param p1    # I
-    .param p2    # I
 
     const/16 v9, 0x27
 
@@ -1958,11 +1900,6 @@
 
 .method public static getChars(Ljava/lang/CharSequence;II[CI)V
     .locals 4
-    .param p0    # Ljava/lang/CharSequence;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [C
-    .param p4    # I
 
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -2042,7 +1979,6 @@
 
 .method private static getLayoutDirectionFromFirstChar(Ljava/util/Locale;)I
     .locals 2
-    .param p0    # Ljava/util/Locale;
 
     const/4 v0, 0x0
 
@@ -2079,7 +2015,6 @@
 
 .method public static getLayoutDirectionFromLocale(Ljava/util/Locale;)I
     .locals 4
-    .param p0    # Ljava/util/Locale;
 
     const/4 v1, 0x1
 
@@ -2150,8 +2085,6 @@
 
 .method public static getOffsetAfter(Ljava/lang/CharSequence;I)I
     .locals 9
-    .param p0    # Ljava/lang/CharSequence;
-    .param p1    # I
 
     invoke-interface {p0}, Ljava/lang/CharSequence;->length()I
 
@@ -2269,8 +2202,6 @@
 
 .method public static getOffsetBefore(Ljava/lang/CharSequence;I)I
     .locals 8
-    .param p0    # Ljava/lang/CharSequence;
-    .param p1    # I
 
     const/4 v6, 0x0
 
@@ -2388,9 +2319,6 @@
 
 .method public static getPrefixCharForIndian(Landroid/text/TextPaint;Ljava/lang/CharSequence;[C)[C
     .locals 16
-    .param p0    # Landroid/text/TextPaint;
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # [C
 
     const/4 v12, 0x0
 
@@ -2619,9 +2547,6 @@
 
 .method public static getReverse(Ljava/lang/CharSequence;II)Ljava/lang/CharSequence;
     .locals 1
-    .param p0    # Ljava/lang/CharSequence;
-    .param p1    # I
-    .param p2    # I
 
     new-instance v0, Landroid/text/TextUtils$Reverser;
 
@@ -2632,7 +2557,6 @@
 
 .method public static getTrimmedLength(Ljava/lang/CharSequence;)I
     .locals 5
-    .param p0    # Ljava/lang/CharSequence;
 
     const/16 v4, 0x20
 
@@ -2681,7 +2605,6 @@
 
 .method public static htmlEncode(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -2763,8 +2686,6 @@
 
 .method public static indexOf(Ljava/lang/CharSequence;C)I
     .locals 1
-    .param p0    # Ljava/lang/CharSequence;
-    .param p1    # C
 
     const/4 v0, 0x0
 
@@ -2777,9 +2698,6 @@
 
 .method public static indexOf(Ljava/lang/CharSequence;CI)I
     .locals 2
-    .param p0    # Ljava/lang/CharSequence;
-    .param p1    # C
-    .param p2    # I
 
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -2812,10 +2730,6 @@
 
 .method public static indexOf(Ljava/lang/CharSequence;CII)I
     .locals 8
-    .param p0    # Ljava/lang/CharSequence;
-    .param p1    # C
-    .param p2    # I
-    .param p3    # I
 
     const/4 v6, -0x1
 
@@ -2922,8 +2836,6 @@
 
 .method public static indexOf(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)I
     .locals 2
-    .param p0    # Ljava/lang/CharSequence;
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v0, 0x0
 
@@ -2940,9 +2852,6 @@
 
 .method public static indexOf(Ljava/lang/CharSequence;Ljava/lang/CharSequence;I)I
     .locals 1
-    .param p0    # Ljava/lang/CharSequence;
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
 
     invoke-interface {p0}, Ljava/lang/CharSequence;->length()I
 
@@ -2957,10 +2866,6 @@
 
 .method public static indexOf(Ljava/lang/CharSequence;Ljava/lang/CharSequence;II)I
     .locals 5
-    .param p0    # Ljava/lang/CharSequence;
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v4, 0x0
 
@@ -3012,8 +2917,6 @@
 
 .method public static indexOfWordPrefix(Ljava/lang/CharSequence;[C)I
     .locals 7
-    .param p0    # Ljava/lang/CharSequence;
-    .param p1    # [C
 
     const/4 v4, -0x1
 
@@ -3112,7 +3015,6 @@
 
 .method public static isArabicChar(C)Z
     .locals 1
-    .param p0    # C
 
     const/16 v0, 0x600
 
@@ -3154,7 +3056,6 @@
 
 .method public static isDigitsOnly(Ljava/lang/CharSequence;)Z
     .locals 3
-    .param p0    # Ljava/lang/CharSequence;
 
     invoke-interface {p0}, Ljava/lang/CharSequence;->length()I
 
@@ -3193,7 +3094,6 @@
 
 .method public static isEmojiChar(C)Z
     .locals 1
-    .param p0    # C
 
     const v0, 0xdbb8
 
@@ -3216,7 +3116,6 @@
 
 .method public static isEmpty(Ljava/lang/CharSequence;)Z
     .locals 1
-    .param p0    # Ljava/lang/CharSequence;
 
     if-eqz p0, :cond_0
 
@@ -3240,7 +3139,6 @@
 
 .method public static isGraphic(C)Z
     .locals 2
-    .param p0    # C
 
     invoke-static {p0}, Ljava/lang/Character;->getType(C)I
 
@@ -3285,7 +3183,6 @@
 
 .method public static isGraphic(Ljava/lang/CharSequence;)Z
     .locals 4
-    .param p0    # Ljava/lang/CharSequence;
 
     invoke-interface {p0}, Ljava/lang/CharSequence;->length()I
 
@@ -3348,7 +3245,6 @@
 
 .method public static isHalant(C)Z
     .locals 1
-    .param p0    # C
 
     const/16 v0, 0x94d
 
@@ -3404,7 +3300,6 @@
 
 .method public static isIndianChar(C)Z
     .locals 1
-    .param p0    # C
 
     const/16 v0, 0x900
 
@@ -3427,7 +3322,6 @@
 
 .method public static isKhmerChar(C)Z
     .locals 1
-    .param p0    # C
 
     const/16 v0, 0x1780
 
@@ -3450,7 +3344,6 @@
 
 .method public static isKhmerCoengSign(C)Z
     .locals 1
-    .param p0    # C
 
     const/16 v0, 0x17d2
 
@@ -3469,7 +3362,6 @@
 
 .method public static isKhmerVowel(C)Z
     .locals 1
-    .param p0    # C
 
     const/16 v0, 0x17b6
 
@@ -3492,7 +3384,6 @@
 
 .method public static isLaoChar(C)Z
     .locals 1
-    .param p0    # C
 
     const/16 v0, 0xe81
 
@@ -3525,7 +3416,6 @@
 
 .method public static isLaoVowel(C)Z
     .locals 1
-    .param p0    # C
 
     const/16 v0, 0xeb1
 
@@ -3562,7 +3452,6 @@
 
 .method public static isMyanmarChar(C)Z
     .locals 1
-    .param p0    # C
 
     const/16 v0, 0x1000
 
@@ -3585,7 +3474,6 @@
 
 .method public static isOdiaVowel(C)Z
     .locals 1
-    .param p0    # C
 
     sparse-switch p0, :sswitch_data_0
 
@@ -3612,7 +3500,6 @@
 
 .method public static isPrintableAscii(C)Z
     .locals 3
-    .param p0    # C
 
     const/16 v0, 0x20
 
@@ -3649,7 +3536,6 @@
 
 .method public static isPrintableAsciiOnly(Ljava/lang/CharSequence;)Z
     .locals 3
-    .param p0    # Ljava/lang/CharSequence;
 
     invoke-interface {p0}, Ljava/lang/CharSequence;->length()I
 
@@ -3688,7 +3574,6 @@
 
 .method public static isThaiChar(C)Z
     .locals 1
-    .param p0    # C
 
     const/16 v0, 0xe01
 
@@ -3711,7 +3596,6 @@
 
 .method public static isThaiVowel(C)Z
     .locals 1
-    .param p0    # C
 
     const/16 v0, 0xe31
 
@@ -3778,8 +3662,6 @@
 
 .method public static join(Ljava/lang/CharSequence;Ljava/lang/Iterable;)Ljava/lang/String;
     .locals 5
-    .param p0    # Ljava/lang/CharSequence;
-    .param p1    # Ljava/lang/Iterable;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -3826,8 +3708,6 @@
 
 .method public static join(Ljava/lang/CharSequence;[Ljava/lang/Object;)Ljava/lang/String;
     .locals 7
-    .param p0    # Ljava/lang/CharSequence;
-    .param p1    # [Ljava/lang/Object;
 
     new-instance v4, Ljava/lang/StringBuilder;
 
@@ -3872,8 +3752,6 @@
 
 .method public static lastIndexOf(Ljava/lang/CharSequence;C)I
     .locals 1
-    .param p0    # Ljava/lang/CharSequence;
-    .param p1    # C
 
     invoke-interface {p0}, Ljava/lang/CharSequence;->length()I
 
@@ -3890,9 +3768,6 @@
 
 .method public static lastIndexOf(Ljava/lang/CharSequence;CI)I
     .locals 2
-    .param p0    # Ljava/lang/CharSequence;
-    .param p1    # C
-    .param p2    # I
 
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -3923,10 +3798,6 @@
 
 .method public static lastIndexOf(Ljava/lang/CharSequence;CII)I
     .locals 9
-    .param p0    # Ljava/lang/CharSequence;
-    .param p1    # C
-    .param p2    # I
-    .param p3    # I
 
     const/4 v7, -0x1
 
@@ -4055,7 +3926,6 @@
 
 .method static obtain(I)[C
     .locals 3
-    .param p0    # I
 
     sget-object v2, Landroid/text/TextUtils;->sLock:Ljava/lang/Object;
 
@@ -4101,8 +3971,6 @@
 
 .method public static packRangeInLong(II)J
     .locals 4
-    .param p0    # I
-    .param p1    # I
 
     int-to-long v0, p0
 
@@ -4119,9 +3987,6 @@
 
 .method private static readSpan(Landroid/os/Parcel;Landroid/text/Spannable;Ljava/lang/Object;)V
     .locals 3
-    .param p0    # Landroid/os/Parcel;
-    .param p1    # Landroid/text/Spannable;
-    .param p2    # Ljava/lang/Object;
 
     invoke-virtual {p0}, Landroid/os/Parcel;->readInt()I
 
@@ -4142,7 +4007,6 @@
 
 .method static recycle([C)V
     .locals 2
-    .param p0    # [C
 
     array-length v0, p0
 
@@ -4177,11 +4041,6 @@
 
 .method public static regionMatches(Ljava/lang/CharSequence;ILjava/lang/CharSequence;II)Z
     .locals 5
-    .param p0    # Ljava/lang/CharSequence;
-    .param p1    # I
-    .param p2    # Ljava/lang/CharSequence;
-    .param p3    # I
-    .param p4    # I
 
     mul-int/lit8 v3, p4, 0x2
 
@@ -4229,7 +4088,6 @@
 
 .method public static removeEmptySpans([Ljava/lang/Object;Landroid/text/Spanned;Ljava/lang/Class;)[Ljava/lang/Object;
     .locals 9
-    .param p1    # Landroid/text/Spanned;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -4327,9 +4185,6 @@
 
 .method public static replace(Ljava/lang/CharSequence;[Ljava/lang/String;[Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
     .locals 8
-    .param p0    # Ljava/lang/CharSequence;
-    .param p1    # [Ljava/lang/String;
-    .param p2    # [Ljava/lang/CharSequence;
 
     new-instance v3, Landroid/text/SpannableStringBuilder;
 
@@ -4406,12 +4261,6 @@
 
 .method private static setPara(Landroid/text/MeasuredText;Landroid/text/TextPaint;Ljava/lang/CharSequence;IILandroid/text/TextDirectionHeuristic;)F
     .locals 8
-    .param p0    # Landroid/text/MeasuredText;
-    .param p1    # Landroid/text/TextPaint;
-    .param p2    # Ljava/lang/CharSequence;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Landroid/text/TextDirectionHeuristic;
 
     const/4 v6, 0x0
 
@@ -4487,8 +4336,6 @@
 
 .method public static split(Ljava/lang/String;Ljava/lang/String;)[Ljava/lang/String;
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
@@ -4513,8 +4360,6 @@
 
 .method public static split(Ljava/lang/String;Ljava/util/regex/Pattern;)[Ljava/lang/String;
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/util/regex/Pattern;
 
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
@@ -4539,7 +4384,6 @@
 
 .method public static stringOrSpannedString(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
     .locals 1
-    .param p0    # Ljava/lang/CharSequence;
 
     if-nez p0, :cond_1
 
@@ -4576,9 +4420,6 @@
 
 .method public static substring(Ljava/lang/CharSequence;II)Ljava/lang/String;
     .locals 4
-    .param p0    # Ljava/lang/CharSequence;
-    .param p1    # I
-    .param p2    # I
 
     const/4 v3, 0x0
 
@@ -4643,7 +4484,6 @@
 
 .method public static unpackRangeEndFromLong(J)I
     .locals 2
-    .param p0    # J
 
     const-wide v0, 0xffffffffL
 
@@ -4656,7 +4496,6 @@
 
 .method public static unpackRangeStartFromLong(J)I
     .locals 2
-    .param p0    # J
 
     const/16 v0, 0x20
 
@@ -4669,9 +4508,6 @@
 
 .method public static writeToParcel(Ljava/lang/CharSequence;Landroid/os/Parcel;I)V
     .locals 12
-    .param p0    # Ljava/lang/CharSequence;
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     const/4 v11, 0x1
 
@@ -4830,9 +4666,6 @@
 
 .method private static writeWhere(Landroid/os/Parcel;Landroid/text/Spanned;Ljava/lang/Object;)V
     .locals 1
-    .param p0    # Landroid/os/Parcel;
-    .param p1    # Landroid/text/Spanned;
-    .param p2    # Ljava/lang/Object;
 
     invoke-interface {p1, p2}, Landroid/text/Spanned;->getSpanStart(Ljava/lang/Object;)I
 

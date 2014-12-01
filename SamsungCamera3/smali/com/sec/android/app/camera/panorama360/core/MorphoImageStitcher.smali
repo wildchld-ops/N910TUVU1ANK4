@@ -474,10 +474,6 @@
 # virtual methods
 .method public attach([BI[I[I)I
     .locals 7
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # [I
-    .param p4    # [I
 
     const/4 v6, 0x0
 
@@ -526,12 +522,6 @@
 
 .method public convertImage(Landroid/graphics/Bitmap;[BIIILjava/lang/String;)I
     .locals 9
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # [B
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Ljava/lang/String;
 
     const/4 v8, 0x0
 
@@ -570,10 +560,6 @@
 
 .method public createOutputImage(Landroid/graphics/Rect;Ljava/lang/Object;[IZ)I
     .locals 10
-    .param p1    # Landroid/graphics/Rect;
-    .param p2    # Ljava/lang/Object;
-    .param p3    # [I
-    .param p4    # Z
 
     const/4 v9, 0x0
 
@@ -614,11 +600,6 @@
 
 .method public decodeJpeg(Ljava/lang/String;[BLjava/lang/String;II)I
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # [B
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
-    .param p5    # I
 
     const/4 v7, 0x0
 
@@ -655,12 +636,6 @@
 
 .method public decodePostview(Ljava/lang/String;[I[I[I[I[I)I
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # [I
-    .param p3    # [I
-    .param p4    # [I
-    .param p5    # [I
-    .param p6    # [I
 
     const/4 v8, 0x0
 
@@ -776,7 +751,6 @@
 
 .method public getBoundingRect(Landroid/graphics/Rect;)I
     .locals 7
-    .param p1    # Landroid/graphics/Rect;
 
     const/4 v6, 0x0
 
@@ -831,7 +805,6 @@
 
 .method public getClippingRect(Landroid/graphics/Rect;)I
     .locals 7
-    .param p1    # Landroid/graphics/Rect;
 
     const/4 v6, 0x0
 
@@ -886,7 +859,6 @@
 
 .method public getContentType(Ljava/lang/String;)I
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Lcom/sec/android/app/camera/panorama360/core/MorphoImageStitcher;->nativeGetContentType(Ljava/lang/String;)I
 
@@ -897,7 +869,6 @@
 
 .method public getGalleryDataOfAppSeg([B)I
     .locals 2
-    .param p1    # [B
 
     const/4 v0, 0x0
 
@@ -922,7 +893,6 @@
 
 .method public getGuideType([I)I
     .locals 2
-    .param p1    # [I
 
     const/4 v0, 0x0
 
@@ -947,8 +917,6 @@
 
 .method public getImage([BLandroid/graphics/Rect;)I
     .locals 8
-    .param p1    # [B
-    .param p2    # Landroid/graphics/Rect;
 
     const/4 v7, 0x0
 
@@ -985,7 +953,6 @@
 
 .method public getIsShootable([I)I
     .locals 2
-    .param p1    # [I
 
     const/4 v0, 0x0
 
@@ -1010,7 +977,6 @@
 
 .method public getIsStop([I)I
     .locals 2
-    .param p1    # [I
 
     const/4 v0, 0x0
 
@@ -1035,8 +1001,6 @@
 
 .method public getPolesDispPosition(Landroid/graphics/Point;Landroid/graphics/Point;)I
     .locals 7
-    .param p1    # Landroid/graphics/Point;
-    .param p2    # Landroid/graphics/Point;
 
     const/4 v6, 0x2
 
@@ -1087,8 +1051,6 @@
 
 .method public getPostviewParam(Lcom/sec/android/app/camera/panorama360/core/MorphoImageStitcher$ViewParam;Lcom/sec/android/app/camera/panorama360/core/MorphoImageStitcher$ViewParam;)I
     .locals 2
-    .param p1    # Lcom/sec/android/app/camera/panorama360/core/MorphoImageStitcher$ViewParam;
-    .param p2    # Lcom/sec/android/app/camera/panorama360/core/MorphoImageStitcher$ViewParam;
 
     const/4 v0, 0x0
 
@@ -1113,10 +1075,6 @@
 
 .method public getPreviewImage(II[B[B)I
     .locals 7
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [B
-    .param p4    # [B
 
     const/4 v6, 0x0
 
@@ -1151,7 +1109,6 @@
 
 .method public getProjectionType([I)I
     .locals 2
-    .param p1    # [I
 
     const/4 v0, 0x0
 
@@ -1176,9 +1133,6 @@
 
 .method public getThumbnailImage(Landroid/graphics/Bitmap;II)I
     .locals 2
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v0, 0x0
 
@@ -1203,8 +1157,6 @@
 
 .method public getUseSensorAssist(I[I)I
     .locals 2
-    .param p1    # I
-    .param p2    # [I
 
     const/4 v0, 0x0
 
@@ -1229,7 +1181,6 @@
 
 .method public getUsedHeapSize([I)I
     .locals 2
-    .param p1    # [I
 
     const/4 v0, 0x0
 
@@ -1264,8 +1215,6 @@
 
 .method public initialize(Lcom/sec/android/app/camera/panorama360/core/MorphoImageStitcher$PanoramaInitParam;[I)I
     .locals 2
-    .param p1    # Lcom/sec/android/app/camera/panorama360/core/MorphoImageStitcher$PanoramaInitParam;
-    .param p2    # [I
 
     const/4 v0, 0x0
 
@@ -1318,10 +1267,6 @@
 
 .method public registerStillImage([BIILjava/lang/String;)I
     .locals 7
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
 
     const/4 v6, 0x0
 
@@ -1380,10 +1325,6 @@
 
 .method public renderPostview(DDDI)I
     .locals 10
-    .param p1    # D
-    .param p3    # D
-    .param p5    # D
-    .param p7    # I
 
     const/4 v9, 0x0
 
@@ -1418,10 +1359,6 @@
 
 .method public renderPostviewAngle(DDDI)I
     .locals 10
-    .param p1    # D
-    .param p3    # D
-    .param p5    # D
-    .param p7    # I
 
     const/4 v9, 0x0
 
@@ -1456,7 +1393,6 @@
 
 .method public renderPostviewDefault(I)I
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -1481,11 +1417,6 @@
 
 .method public renderPreview([BIIII)I
     .locals 8
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     const/4 v7, 0x0
 
@@ -1536,13 +1467,6 @@
 
 .method public renderPreviewWithAnimation([BIIIIII)I
     .locals 10
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
 
     const/4 v9, 0x0
 
@@ -1583,7 +1507,6 @@
 
 .method public resetGL(I)I
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -1608,13 +1531,6 @@
 
 .method public saveCreatedOutputImage(Ljava/lang/String;I[ILjava/lang/String;Ljava/lang/String;ZLcom/sec/android/app/camera/panorama360/core/MorphoImageStitcher$ExifData;)I
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # [I
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Z
-    .param p7    # Lcom/sec/android/app/camera/panorama360/core/MorphoImageStitcher$ExifData;
 
     const/4 v9, 0x0
 
@@ -1655,12 +1571,6 @@
 
 .method public saveJpeg(Ljava/lang/String;[BLjava/lang/String;III)I
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # [B
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     const/4 v8, 0x0
 
@@ -1699,13 +1609,6 @@
 
 .method public saveOutputJpeg(Ljava/lang/String;Landroid/graphics/Rect;I[ILjava/lang/String;Ljava/lang/String;Z)I
     .locals 13
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/graphics/Rect;
-    .param p3    # I
-    .param p4    # [I
-    .param p5    # Ljava/lang/String;
-    .param p6    # Ljava/lang/String;
-    .param p7    # Z
 
     const/4 v12, 0x0
 
@@ -1752,8 +1655,6 @@
 
 .method public saveRegisteredImage(Z[Ljava/lang/Object;)I
     .locals 2
-    .param p1    # Z
-    .param p2    # [Ljava/lang/Object;
 
     const/4 v0, 0x0
 
@@ -1778,8 +1679,6 @@
 
 .method public setAngleMatrix([DI)I
     .locals 2
-    .param p1    # [D
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -1804,7 +1703,6 @@
 
 .method public setDrawBgBlankMode(I)I
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -1829,9 +1727,6 @@
 
 .method public setGalleryData(Lcom/sec/android/app/camera/panorama360/core/MorphoImageStitcher$GalleryData;II)I
     .locals 2
-    .param p1    # Lcom/sec/android/app/camera/panorama360/core/MorphoImageStitcher$GalleryData;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v0, 0x0
 
@@ -1856,8 +1751,6 @@
 
 .method public setGuideImage(ILandroid/graphics/Bitmap;)I
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/graphics/Bitmap;
 
     const/4 v0, 0x0
 
@@ -1882,7 +1775,6 @@
 
 .method public setGuideType(I)I
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -1907,7 +1799,6 @@
 
 .method public setListenerFromNative(Landroid/app/Activity;)I
     .locals 2
-    .param p1    # Landroid/app/Activity;
 
     const/4 v0, 0x0
 
@@ -1932,7 +1823,6 @@
 
 .method public setMotionlessThreshold(I)I
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -1957,8 +1847,6 @@
 
 .method public setPostviewData(II)I
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -1983,8 +1871,6 @@
 
 .method public setPostviewParam(Lcom/sec/android/app/camera/panorama360/core/MorphoImageStitcher$ViewParam;Lcom/sec/android/app/camera/panorama360/core/MorphoImageStitcher$ViewParam;)I
     .locals 2
-    .param p1    # Lcom/sec/android/app/camera/panorama360/core/MorphoImageStitcher$ViewParam;
-    .param p2    # Lcom/sec/android/app/camera/panorama360/core/MorphoImageStitcher$ViewParam;
 
     const/4 v0, 0x0
 
@@ -2009,7 +1895,6 @@
 
 .method public setProjectionType(I)I
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -2034,7 +1919,6 @@
 
 .method public setScene(I)I
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -2059,7 +1943,6 @@
 
 .method public setTextureShrinkRatio(I)I
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -2084,7 +1967,6 @@
 
 .method public setUseReplayMode(I)I
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -2109,8 +1991,6 @@
 
 .method public setUseSensorAssist(II)I
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -2135,7 +2015,6 @@
 
 .method public setUseSensorThreshold(I)I
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -2160,7 +2039,6 @@
 
 .method public setUseThreshold(I)I
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -2185,7 +2063,6 @@
 
 .method public start(I)I
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x0
 

@@ -18,10 +18,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/display/DisplayManagerService$SyncRoot;Landroid/content/Context;Landroid/os/Handler;Lcom/android/server/display/DisplayAdapter$Listener;)V
     .locals 6
-    .param p1    # Lcom/android/server/display/DisplayManagerService$SyncRoot;
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/os/Handler;
-    .param p4    # Lcom/android/server/display/DisplayAdapter$Listener;
 
     const-string v5, "HeadlessDisplayAdapter"
 

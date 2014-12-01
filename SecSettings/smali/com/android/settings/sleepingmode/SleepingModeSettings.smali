@@ -75,7 +75,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/sleepingmode/SleepingModeSettings;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/settings/sleepingmode/SleepingModeSettings;
 
     iget-object v0, p0, Lcom/android/settings/sleepingmode/SleepingModeSettings;->mContext:Landroid/content/Context;
 
@@ -84,7 +83,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/sleepingmode/SleepingModeSettings;)Landroid/widget/Button;
     .locals 1
-    .param p0    # Lcom/android/settings/sleepingmode/SleepingModeSettings;
 
     iget-object v0, p0, Lcom/android/settings/sleepingmode/SleepingModeSettings;->mTimeFromBtn:Landroid/widget/Button;
 
@@ -93,9 +91,6 @@
 
 .method static synthetic access$1000(Lcom/android/settings/sleepingmode/SleepingModeSettings;II)V
     .locals 0
-    .param p0    # Lcom/android/settings/sleepingmode/SleepingModeSettings;
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/settings/sleepingmode/SleepingModeSettings;->setEndTime(II)V
 
@@ -104,8 +99,6 @@
 
 .method static synthetic access$102(Lcom/android/settings/sleepingmode/SleepingModeSettings;Landroid/widget/Button;)Landroid/widget/Button;
     .locals 0
-    .param p0    # Lcom/android/settings/sleepingmode/SleepingModeSettings;
-    .param p1    # Landroid/widget/Button;
 
     iput-object p1, p0, Lcom/android/settings/sleepingmode/SleepingModeSettings;->mTimeFromBtn:Landroid/widget/Button;
 
@@ -114,8 +107,6 @@
 
 .method static synthetic access$1100(Lcom/android/settings/sleepingmode/SleepingModeSettings;I)V
     .locals 0
-    .param p0    # Lcom/android/settings/sleepingmode/SleepingModeSettings;
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->showDialog(I)V
 
@@ -124,7 +115,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/sleepingmode/SleepingModeSettings;)I
     .locals 1
-    .param p0    # Lcom/android/settings/sleepingmode/SleepingModeSettings;
 
     iget v0, p0, Lcom/android/settings/sleepingmode/SleepingModeSettings;->mStarthour:I
 
@@ -133,7 +123,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/sleepingmode/SleepingModeSettings;)I
     .locals 1
-    .param p0    # Lcom/android/settings/sleepingmode/SleepingModeSettings;
 
     iget v0, p0, Lcom/android/settings/sleepingmode/SleepingModeSettings;->mStartmin:I
 
@@ -142,9 +131,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/sleepingmode/SleepingModeSettings;II)V
     .locals 0
-    .param p0    # Lcom/android/settings/sleepingmode/SleepingModeSettings;
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/settings/sleepingmode/SleepingModeSettings;->setStartTime(II)V
 
@@ -153,7 +139,6 @@
 
 .method static synthetic access$502(I)I
     .locals 0
-    .param p0    # I
 
     sput p0, Lcom/android/settings/sleepingmode/SleepingModeSettings;->DIALOG_CURRENT_TIMEPICKER:I
 
@@ -162,8 +147,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/sleepingmode/SleepingModeSettings;I)V
     .locals 0
-    .param p0    # Lcom/android/settings/sleepingmode/SleepingModeSettings;
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->showDialog(I)V
 
@@ -172,7 +155,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/sleepingmode/SleepingModeSettings;)Landroid/widget/Button;
     .locals 1
-    .param p0    # Lcom/android/settings/sleepingmode/SleepingModeSettings;
 
     iget-object v0, p0, Lcom/android/settings/sleepingmode/SleepingModeSettings;->mTimeToBtn:Landroid/widget/Button;
 
@@ -181,8 +163,6 @@
 
 .method static synthetic access$702(Lcom/android/settings/sleepingmode/SleepingModeSettings;Landroid/widget/Button;)Landroid/widget/Button;
     .locals 0
-    .param p0    # Lcom/android/settings/sleepingmode/SleepingModeSettings;
-    .param p1    # Landroid/widget/Button;
 
     iput-object p1, p0, Lcom/android/settings/sleepingmode/SleepingModeSettings;->mTimeToBtn:Landroid/widget/Button;
 
@@ -191,7 +171,6 @@
 
 .method static synthetic access$800(Lcom/android/settings/sleepingmode/SleepingModeSettings;)I
     .locals 1
-    .param p0    # Lcom/android/settings/sleepingmode/SleepingModeSettings;
 
     iget v0, p0, Lcom/android/settings/sleepingmode/SleepingModeSettings;->mEndhour:I
 
@@ -200,7 +179,6 @@
 
 .method static synthetic access$900(Lcom/android/settings/sleepingmode/SleepingModeSettings;)I
     .locals 1
-    .param p0    # Lcom/android/settings/sleepingmode/SleepingModeSettings;
 
     iget v0, p0, Lcom/android/settings/sleepingmode/SleepingModeSettings;->mEndmin:I
 
@@ -209,8 +187,6 @@
 
 .method private setEndTime(II)V
     .locals 9
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0}, Lcom/android/settings/SettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -287,8 +263,6 @@
 
 .method private setStartTime(II)V
     .locals 9
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0}, Lcom/android/settings/SettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -593,7 +567,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v0, 0x1
 
@@ -642,7 +615,6 @@
 
 .method public onCreateDialog(I)Landroid/app/Dialog;
     .locals 7
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -789,9 +761,6 @@
 
 .method public onTimeSet(Landroid/widget/TimePicker;II)V
     .locals 4
-    .param p1    # Landroid/widget/TimePicker;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v3, 0x1
 

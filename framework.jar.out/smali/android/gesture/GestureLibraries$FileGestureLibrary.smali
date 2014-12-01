@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Ljava/io/File;)V
     .locals 0
-    .param p1    # Ljava/io/File;
 
     invoke-direct {p0}, Landroid/gesture/GestureLibrary;-><init>()V
 

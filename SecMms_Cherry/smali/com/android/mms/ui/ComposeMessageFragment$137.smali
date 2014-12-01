@@ -36,8 +36,6 @@
 # virtual methods
 .method public onActionItemClicked(Landroid/view/ActionMode;Landroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # Landroid/view/ActionMode;
-    .param p2    # Landroid/view/MenuItem;
 
     const/4 v0, 0x0
 
@@ -46,8 +44,6 @@
 
 .method public onCreateActionMode(Landroid/view/ActionMode;Landroid/view/Menu;)Z
     .locals 2
-    .param p1    # Landroid/view/ActionMode;
-    .param p2    # Landroid/view/Menu;
 
     const/4 v1, 0x1
 
@@ -61,7 +57,6 @@
 
 .method public onDestroyActionMode(Landroid/view/ActionMode;)V
     .locals 2
-    .param p1    # Landroid/view/ActionMode;
 
     iget-object v0, p0, Lcom/android/mms/ui/ComposeMessageFragment$137;->this$0:Lcom/android/mms/ui/ComposeMessageFragment;
 
@@ -75,8 +70,6 @@
 
 .method public onPrepareActionMode(Landroid/view/ActionMode;Landroid/view/Menu;)Z
     .locals 1
-    .param p1    # Landroid/view/ActionMode;
-    .param p2    # Landroid/view/Menu;
 
     const/4 v0, 0x1
 

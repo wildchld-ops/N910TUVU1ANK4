@@ -103,7 +103,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v1, 0x1
 
@@ -142,7 +141,6 @@
 
 .method private createListView(Lcom/android/internal/app/AlertController;)V
     .locals 10
-    .param p1    # Lcom/android/internal/app/AlertController;
 
     const v4, 0x1020014
 
@@ -358,7 +356,6 @@
 # virtual methods
 .method public apply(Lcom/android/internal/app/AlertController;)V
     .locals 6
-    .param p1    # Lcom/android/internal/app/AlertController;
 
     const/4 v3, 0x0
 

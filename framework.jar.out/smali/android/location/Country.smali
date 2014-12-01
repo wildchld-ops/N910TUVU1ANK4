@@ -52,7 +52,6 @@
 
 .method public constructor <init>(Landroid/location/Country;)V
     .locals 2
-    .param p1    # Landroid/location/Country;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -73,8 +72,6 @@
 
 .method public constructor <init>(Ljava/lang/String;I)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -115,9 +112,6 @@
 
 .method private constructor <init>(Ljava/lang/String;IJ)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # J
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -154,10 +148,6 @@
 
 .method synthetic constructor <init>(Ljava/lang/String;IJLandroid/location/Country$1;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # J
-    .param p5    # Landroid/location/Country$1;
 
     invoke-direct {p0, p1, p2, p3, p4}, Landroid/location/Country;-><init>(Ljava/lang/String;IJ)V
 
@@ -176,7 +166,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 5
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x1
 
@@ -230,7 +219,6 @@
 
 .method public equalsIgnoreSource(Landroid/location/Country;)Z
     .locals 2
-    .param p1    # Landroid/location/Country;
 
     if-eqz p1, :cond_0
 
@@ -370,8 +358,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v0, p0, Landroid/location/Country;->mCountryIso:Ljava/lang/String;
 

@@ -36,7 +36,6 @@
 # virtual methods
 .method public onMenuItemActionCollapse(Landroid/view/MenuItem;)Z
     .locals 3
-    .param p1    # Landroid/view/MenuItem;
 
     # getter for: Lcom/android/mms/ui/BoxListFrame;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/android/mms/ui/BoxListFrame;->access$500()Ljava/lang/String;
@@ -104,7 +103,6 @@
 
 .method public onMenuItemActionExpand(Landroid/view/MenuItem;)Z
     .locals 3
-    .param p1    # Landroid/view/MenuItem;
 
     # getter for: Lcom/android/mms/ui/BoxListFrame;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/android/mms/ui/BoxListFrame;->access$500()Ljava/lang/String;

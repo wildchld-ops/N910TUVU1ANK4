@@ -35,8 +35,6 @@
 # direct methods
 .method constructor <init>(Landroid/location/LocationManager;Landroid/location/LocationListener;Landroid/os/Looper;)V
     .locals 1
-    .param p2    # Landroid/location/LocationListener;
-    .param p3    # Landroid/os/Looper;
 
     iput-object p1, p0, Landroid/location/LocationManager$ListenerTransport;->this$0:Landroid/location/LocationManager;
 
@@ -67,7 +65,6 @@
 
 .method private _handleMessage(Landroid/os/Message;)V
     .locals 8
-    .param p1    # Landroid/os/Message;
 
     iget v6, p1, Landroid/os/Message;->what:I
 
@@ -179,8 +176,6 @@
 
 .method static synthetic access$000(Landroid/location/LocationManager$ListenerTransport;Landroid/os/Message;)V
     .locals 0
-    .param p0    # Landroid/location/LocationManager$ListenerTransport;
-    .param p1    # Landroid/os/Message;
 
     invoke-direct {p0, p1}, Landroid/location/LocationManager$ListenerTransport;->_handleMessage(Landroid/os/Message;)V
 
@@ -191,7 +186,6 @@
 # virtual methods
 .method public onLocationChanged(Landroid/location/Location;)V
     .locals 2
-    .param p1    # Landroid/location/Location;
 
     invoke-static {}, Landroid/os/Message;->obtain()Landroid/os/Message;
 
@@ -212,7 +206,6 @@
 
 .method public onProviderDisabled(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Landroid/os/Message;->obtain()Landroid/os/Message;
 
@@ -233,7 +226,6 @@
 
 .method public onProviderEnabled(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Landroid/os/Message;->obtain()Landroid/os/Message;
 
@@ -254,9 +246,6 @@
 
 .method public onStatusChanged(Ljava/lang/String;ILandroid/os/Bundle;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Landroid/os/Bundle;
 
     invoke-static {}, Landroid/os/Message;->obtain()Landroid/os/Message;
 

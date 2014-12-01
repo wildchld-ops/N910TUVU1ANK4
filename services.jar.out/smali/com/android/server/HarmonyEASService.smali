@@ -48,7 +48,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
 
     const/4 v4, 0x0
 
@@ -143,8 +142,6 @@
 
 .method static synthetic access$000(Lcom/android/server/HarmonyEASService;I)V
     .locals 0
-    .param p0    # Lcom/android/server/HarmonyEASService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/HarmonyEASService;->saveHash(I)V
 
@@ -153,9 +150,6 @@
 
 .method private declared-synchronized addHashForPackage(Ljava/lang/String;Ljava/lang/String;I)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     monitor-enter p0
 
@@ -202,8 +196,6 @@
 
 .method private declared-synchronized addPackageAsUnknown(Ljava/lang/String;I)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     monitor-enter p0
 
@@ -268,7 +260,6 @@
 
 .method private getAppDetailsOfUserId(I)Lcom/android/server/HarmonyEASService$ThirdPartyAppDetails;
     .locals 2
-    .param p1    # I
 
     monitor-enter p0
 
@@ -325,8 +316,6 @@
 
 .method private loadHashVaues(Lcom/android/server/HarmonyEASService$ThirdPartyAppDetails;I)V
     .locals 17
-    .param p1    # Lcom/android/server/HarmonyEASService$ThirdPartyAppDetails;
-    .param p2    # I
 
     const/4 v2, 0x0
 
@@ -634,7 +623,6 @@
 
 .method private static makeJournaledFile(I)Lcom/android/internal/util/JournaledFile;
     .locals 6
-    .param p0    # I
 
     if-nez p0, :cond_0
 
@@ -693,7 +681,6 @@
 
 .method private saveHash(I)V
     .locals 20
-    .param p1    # I
 
     invoke-direct/range {p0 .. p1}, Lcom/android/server/HarmonyEASService;->getAppDetailsOfUserId(I)Lcom/android/server/HarmonyEASService$ThirdPartyAppDetails;
 
@@ -1008,7 +995,6 @@
 # virtual methods
 .method clearDataForUser(I)V
     .locals 3
-    .param p1    # I
 
     monitor-enter p0
 
@@ -1062,8 +1048,6 @@
 
 .method public getHashValueFromPackageName(Ljava/lang/String;I)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-direct {p0, p2}, Lcom/android/server/HarmonyEASService;->getAppDetailsOfUserId(I)Lcom/android/server/HarmonyEASService$ThirdPartyAppDetails;
 
@@ -1100,8 +1084,6 @@
 
 .method public getPackageNameFromHash(Ljava/lang/String;I)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-direct {p0, p2}, Lcom/android/server/HarmonyEASService;->getAppDetailsOfUserId(I)Lcom/android/server/HarmonyEASService$ThirdPartyAppDetails;
 
@@ -1138,7 +1120,6 @@
 
 .method public getThirdPartyApps(I)Ljava/util/List;
     .locals 3
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -1168,7 +1149,6 @@
 
 .method public getUnknownSourcesPackages(I)Ljava/util/List;
     .locals 3
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -1194,7 +1174,6 @@
 
 .method handlePackagesChanged(I)V
     .locals 10
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -1314,7 +1293,6 @@
 
 .method declared-synchronized handleUserChanged(I)V
     .locals 1
-    .param p1    # I
 
     monitor-enter p0
 
@@ -1348,8 +1326,6 @@
 
 .method public isPackageUnknownSource(Ljava/lang/String;I)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v1, 0x0
 
@@ -1373,8 +1349,6 @@
 
 .method public removeInstallationPackage(Ljava/lang/String;I)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-static {}, Landroid/os/Binder;->getCallingUid()I
 
@@ -1438,8 +1412,6 @@
 
 .method public removeInstallationPackageExtras(Ljava/lang/String;I)V
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-direct {p0, p2}, Lcom/android/server/HarmonyEASService;->getAppDetailsOfUserId(I)Lcom/android/server/HarmonyEASService$ThirdPartyAppDetails;
 
@@ -1509,10 +1481,6 @@
 
 .method public setInstallationPackageHashValue(Ljava/lang/String;Ljava/lang/String;II)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
 
     const/4 v4, 0x1
 
@@ -1607,9 +1575,6 @@
 
 .method public setInstallationPackageUnknown(Ljava/lang/String;II)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v4, 0x1
 

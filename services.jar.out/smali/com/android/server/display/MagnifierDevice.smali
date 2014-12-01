@@ -22,11 +22,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/display/DisplayAdapter;Landroid/os/IBinder;Landroid/view/Surface;Ljava/lang/String;Lcom/android/server/display/MagnifierDisplayPolicy;)V
     .locals 2
-    .param p1    # Lcom/android/server/display/DisplayAdapter;
-    .param p2    # Landroid/os/IBinder;
-    .param p3    # Landroid/view/Surface;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Lcom/android/server/display/MagnifierDisplayPolicy;
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/display/DisplayDevice;-><init>(Lcom/android/server/display/DisplayAdapter;Landroid/os/IBinder;)V
 
@@ -186,7 +181,6 @@
 
 .method public setSurface(Landroid/view/Surface;)V
     .locals 0
-    .param p1    # Landroid/view/Surface;
 
     iput-object p1, p0, Lcom/android/server/display/MagnifierDevice;->mSurface:Landroid/view/Surface;
 

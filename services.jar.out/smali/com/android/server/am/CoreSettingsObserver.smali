@@ -56,7 +56,6 @@
 
 .method public constructor <init>(Lcom/android/server/am/ActivityManagerService;)V
     .locals 1
-    .param p1    # Lcom/android/server/am/ActivityManagerService;
 
     iget-object v0, p1, Lcom/android/server/am/ActivityManagerService;->mHandler:Landroid/os/Handler;
 
@@ -127,7 +126,6 @@
 
 .method private populateCoreSettings(Landroid/os/Bundle;)V
     .locals 11
-    .param p1    # Landroid/os/Bundle;
 
     iget-object v8, p0, Lcom/android/server/am/CoreSettingsObserver;->mActivityManagerService:Lcom/android/server/am/ActivityManagerService;
 
@@ -313,7 +311,6 @@
 
 .method public onChange(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v1, p0, Lcom/android/server/am/CoreSettingsObserver;->mActivityManagerService:Lcom/android/server/am/ActivityManagerService;
 

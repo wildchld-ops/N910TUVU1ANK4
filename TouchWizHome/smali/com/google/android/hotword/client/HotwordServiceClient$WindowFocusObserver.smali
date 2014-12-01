@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Lcom/google/android/hotword/client/HotwordServiceClient;Lcom/google/android/hotword/client/HotwordServiceClient$1;)V
     .locals 0
-    .param p1    # Lcom/google/android/hotword/client/HotwordServiceClient;
-    .param p2    # Lcom/google/android/hotword/client/HotwordServiceClient$1;
 
     invoke-direct {p0, p1}, Lcom/google/android/hotword/client/HotwordServiceClient$WindowFocusObserver;-><init>(Lcom/google/android/hotword/client/HotwordServiceClient;)V
 
@@ -43,7 +41,6 @@
 # virtual methods
 .method public onFocusGained(Landroid/view/WindowId;)V
     .locals 2
-    .param p1    # Landroid/view/WindowId;
 
     iget-object v0, p0, Lcom/google/android/hotword/client/HotwordServiceClient$WindowFocusObserver;->this$0:Lcom/google/android/hotword/client/HotwordServiceClient;
 
@@ -62,7 +59,6 @@
 
 .method public onFocusLost(Landroid/view/WindowId;)V
     .locals 2
-    .param p1    # Landroid/view/WindowId;
 
     iget-object v0, p0, Lcom/google/android/hotword/client/HotwordServiceClient$WindowFocusObserver;->this$0:Lcom/google/android/hotword/client/HotwordServiceClient;
 

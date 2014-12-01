@@ -40,7 +40,6 @@
 # virtual methods
 .method public onCancel(Landroid/content/DialogInterface;)V
     .locals 3
-    .param p1    # Landroid/content/DialogInterface;
 
     iget-object v0, p0, Lcom/android/settings/location/LocationSettings$7;->this$0:Lcom/android/settings/location/LocationSettings;
 

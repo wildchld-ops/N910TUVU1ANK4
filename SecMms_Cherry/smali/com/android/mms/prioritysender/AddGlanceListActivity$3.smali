@@ -36,7 +36,6 @@
 # virtual methods
 .method public onContentChanged(Lcom/android/mms/prioritysender/AddGlanceListAdapter;)V
     .locals 2
-    .param p1    # Lcom/android/mms/prioritysender/AddGlanceListAdapter;
 
     const-string v0, "Mms/AddGlanceListActivity"
 

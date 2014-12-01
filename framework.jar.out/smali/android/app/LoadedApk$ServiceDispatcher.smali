@@ -58,10 +58,6 @@
 # direct methods
 .method constructor <init>(Landroid/content/ServiceConnection;Landroid/content/Context;Landroid/os/Handler;I)V
     .locals 2
-    .param p1    # Landroid/content/ServiceConnection;
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/os/Handler;
-    .param p4    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -104,8 +100,6 @@
 # virtual methods
 .method public connected(Landroid/content/ComponentName;Landroid/os/IBinder;)V
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Landroid/os/IBinder;
 
     iget-object v0, p0, Landroid/app/LoadedApk$ServiceDispatcher;->mActivityThread:Landroid/os/Handler;
 
@@ -132,8 +126,6 @@
 
 .method public death(Landroid/content/ComponentName;Landroid/os/IBinder;)V
     .locals 5
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Landroid/os/IBinder;
 
     const/4 v4, 0x1
 
@@ -209,8 +201,6 @@
 
 .method public doConnected(Landroid/content/ComponentName;Landroid/os/IBinder;)V
     .locals 6
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Landroid/os/IBinder;
 
     monitor-enter p0
 
@@ -347,8 +337,6 @@
 
 .method public doDeath(Landroid/content/ComponentName;Landroid/os/IBinder;)V
     .locals 1
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Landroid/os/IBinder;
 
     iget-object v0, p0, Landroid/app/LoadedApk$ServiceDispatcher;->mConnection:Landroid/content/ServiceConnection;
 
@@ -459,7 +447,6 @@
 
 .method setUnbindLocation(Ljava/lang/RuntimeException;)V
     .locals 0
-    .param p1    # Ljava/lang/RuntimeException;
 
     iput-object p1, p0, Landroid/app/LoadedApk$ServiceDispatcher;->mUnbindLocation:Ljava/lang/RuntimeException;
 
@@ -468,8 +455,6 @@
 
 .method validate(Landroid/content/Context;Landroid/os/Handler;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/Handler;
 
     iget-object v0, p0, Landroid/app/LoadedApk$ServiceDispatcher;->mContext:Landroid/content/Context;
 

@@ -26,7 +26,6 @@
 # direct methods
 .method public constructor <init>(Landroid/inputmethodservice/InputMethodService;)V
     .locals 1
-    .param p1    # Landroid/inputmethodservice/InputMethodService;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -230,7 +229,6 @@
 
 .method public register(Lcom/google/android/voiceime/VoiceRecognitionTrigger$Listener;)V
     .locals 3
-    .param p1    # Lcom/google/android/voiceime/VoiceRecognitionTrigger$Listener;
 
     new-instance v1, Lcom/google/android/voiceime/VoiceRecognitionTrigger$1;
 
@@ -267,7 +265,6 @@
 
 .method public startVoiceRecognition(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/google/android/voiceime/VoiceRecognitionTrigger;->mTrigger:Lcom/google/android/voiceime/Trigger;
 
@@ -283,7 +280,6 @@
 
 .method public unregister(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     iget-object v0, p0, Lcom/google/android/voiceime/VoiceRecognitionTrigger;->mReceiver:Landroid/content/BroadcastReceiver;
 

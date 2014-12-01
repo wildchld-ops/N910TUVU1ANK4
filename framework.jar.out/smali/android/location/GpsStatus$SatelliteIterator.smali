@@ -38,7 +38,6 @@
 # direct methods
 .method constructor <init>(Landroid/location/GpsStatus;[Landroid/location/GpsSatellite;)V
     .locals 1
-    .param p2    # [Landroid/location/GpsSatellite;
 
     iput-object p1, p0, Landroid/location/GpsStatus$SatelliteIterator;->this$0:Landroid/location/GpsStatus;
 

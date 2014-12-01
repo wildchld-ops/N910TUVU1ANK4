@@ -35,9 +35,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;Landroid/location/ILocationManager;Lcom/android/internal/location/ProviderProperties;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/location/ILocationManager;
-    .param p3    # Lcom/android/internal/location/ProviderProperties;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -111,9 +108,6 @@
 
 .method public dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     const-string v0, ""
 
@@ -124,8 +118,6 @@
 
 .method public dump(Ljava/io/PrintWriter;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/io/PrintWriter;
-    .param p2    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -354,7 +346,6 @@
 
 .method public getStatus(Landroid/os/Bundle;)I
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     iget-boolean v0, p0, Lcom/android/server/location/MockProvider;->mHasStatus:Z
 
@@ -395,8 +386,6 @@
 
 .method public sendExtraCommand(Ljava/lang/String;Landroid/os/Bundle;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Bundle;
 
     const/4 v0, 0x0
 
@@ -405,7 +394,6 @@
 
 .method public setLocation(Landroid/location/Location;)V
     .locals 4
-    .param p1    # Landroid/location/Location;
 
     iget-object v1, p0, Lcom/android/server/location/MockProvider;->mLocation:Landroid/location/Location;
 
@@ -448,17 +436,12 @@
 
 .method public setRequest(Lcom/android/internal/location/ProviderRequest;Landroid/os/WorkSource;)V
     .locals 0
-    .param p1    # Lcom/android/internal/location/ProviderRequest;
-    .param p2    # Landroid/os/WorkSource;
 
     return-void
 .end method
 
 .method public setStatus(ILandroid/os/Bundle;J)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
-    .param p3    # J
 
     iput p1, p0, Lcom/android/server/location/MockProvider;->mStatus:I
 

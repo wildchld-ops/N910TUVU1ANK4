@@ -129,8 +129,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 4
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-boolean v2, p0, Lcom/android/internal/location/ProviderRequest;->reportLocation:Z
 

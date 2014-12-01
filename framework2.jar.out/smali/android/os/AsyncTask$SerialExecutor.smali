@@ -49,7 +49,6 @@
 
 .method synthetic constructor <init>(Landroid/os/AsyncTask$1;)V
     .locals 0
-    .param p1    # Landroid/os/AsyncTask$1;
 
     invoke-direct {p0}, Landroid/os/AsyncTask$SerialExecutor;-><init>()V
 
@@ -60,7 +59,6 @@
 # virtual methods
 .method public declared-synchronized execute(Ljava/lang/Runnable;)V
     .locals 2
-    .param p1    # Ljava/lang/Runnable;
 
     monitor-enter p0
 

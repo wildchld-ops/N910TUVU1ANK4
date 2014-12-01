@@ -50,10 +50,6 @@
 # virtual methods
 .method public getPrintJobInfos(Landroid/print/IPrintSpooler;Landroid/content/ComponentName;II)Ljava/util/List;
     .locals 6
-    .param p1    # Landroid/print/IPrintSpooler;
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # I
-    .param p4    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

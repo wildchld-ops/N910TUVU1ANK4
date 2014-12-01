@@ -46,7 +46,6 @@
 
 .method synthetic constructor <init>(Landroid/support/v4/print/PrintHelper$1;)V
     .locals 0
-    .param p1    # Landroid/support/v4/print/PrintHelper$1;
 
     invoke-direct {p0}, Landroid/support/v4/print/PrintHelper$PrintHelperStubImpl;-><init>()V
 
@@ -81,23 +80,18 @@
 
 .method public printBitmap(Ljava/lang/String;Landroid/graphics/Bitmap;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/graphics/Bitmap;
 
     return-void
 .end method
 
 .method public printBitmap(Ljava/lang/String;Landroid/net/Uri;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/net/Uri;
 
     return-void
 .end method
 
 .method public setColorMode(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/support/v4/print/PrintHelper$PrintHelperStubImpl;->mColorMode:I
 
@@ -106,7 +100,6 @@
 
 .method public setOrientation(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/support/v4/print/PrintHelper$PrintHelperStubImpl;->mOrientation:I
 
@@ -115,7 +108,6 @@
 
 .method public setScaleMode(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/support/v4/print/PrintHelper$PrintHelperStubImpl;->mScaleMode:I
 

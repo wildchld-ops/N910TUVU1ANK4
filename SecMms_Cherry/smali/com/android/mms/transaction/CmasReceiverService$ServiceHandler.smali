@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/mms/transaction/CmasReceiverService;Landroid/os/Looper;)V
     .locals 0
-    .param p2    # Landroid/os/Looper;
 
     iput-object p1, p0, Lcom/android/mms/transaction/CmasReceiverService$ServiceHandler;->this$0:Lcom/android/mms/transaction/CmasReceiverService;
 
@@ -34,7 +33,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 7
-    .param p1    # Landroid/os/Message;
 
     iget v3, p1, Landroid/os/Message;->arg1:I
 

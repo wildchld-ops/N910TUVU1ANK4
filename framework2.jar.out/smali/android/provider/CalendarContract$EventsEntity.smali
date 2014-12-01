@@ -54,8 +54,6 @@
 
 .method public static newEntityIterator(Landroid/database/Cursor;Landroid/content/ContentProviderClient;)Landroid/content/EntityIterator;
     .locals 1
-    .param p0    # Landroid/database/Cursor;
-    .param p1    # Landroid/content/ContentProviderClient;
 
     new-instance v0, Landroid/provider/CalendarContract$EventsEntity$EntityIteratorImpl;
 
@@ -66,8 +64,6 @@
 
 .method public static newEntityIterator(Landroid/database/Cursor;Landroid/content/ContentResolver;)Landroid/content/EntityIterator;
     .locals 1
-    .param p0    # Landroid/database/Cursor;
-    .param p1    # Landroid/content/ContentResolver;
 
     new-instance v0, Landroid/provider/CalendarContract$EventsEntity$EntityIteratorImpl;
 

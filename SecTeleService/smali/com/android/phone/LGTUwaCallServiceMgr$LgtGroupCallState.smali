@@ -188,7 +188,7 @@
 
     sget-object v0, Lcom/android/phone/LGTUwaCallServiceMgr$LgtGroupCallState;->$VALUES:[Lcom/android/phone/LGTUwaCallServiceMgr$LgtGroupCallState;
 
-    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
+    invoke-virtual {v0}, [Lcom/android/phone/LGTUwaCallServiceMgr$LgtGroupCallState;->clone()Ljava/lang/Object;
 
     move-result-object v0
 

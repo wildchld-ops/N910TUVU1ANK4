@@ -77,8 +77,6 @@
 # direct methods
 .method constructor <init>(Landroid/content/Context;Landroid/bluetooth/BluetoothProfile$ServiceListener;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/bluetooth/BluetoothProfile$ServiceListener;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -139,7 +137,6 @@
 
 .method static synthetic access$000(Landroid/bluetooth/BluetoothHealth;)Landroid/content/ServiceConnection;
     .locals 1
-    .param p0    # Landroid/bluetooth/BluetoothHealth;
 
     iget-object v0, p0, Landroid/bluetooth/BluetoothHealth;->mConnection:Landroid/content/ServiceConnection;
 
@@ -148,7 +145,6 @@
 
 .method static synthetic access$100(Landroid/bluetooth/BluetoothHealth;)Landroid/bluetooth/IBluetoothHealth;
     .locals 1
-    .param p0    # Landroid/bluetooth/BluetoothHealth;
 
     iget-object v0, p0, Landroid/bluetooth/BluetoothHealth;->mService:Landroid/bluetooth/IBluetoothHealth;
 
@@ -157,8 +153,6 @@
 
 .method static synthetic access$102(Landroid/bluetooth/BluetoothHealth;Landroid/bluetooth/IBluetoothHealth;)Landroid/bluetooth/IBluetoothHealth;
     .locals 0
-    .param p0    # Landroid/bluetooth/BluetoothHealth;
-    .param p1    # Landroid/bluetooth/IBluetoothHealth;
 
     iput-object p1, p0, Landroid/bluetooth/BluetoothHealth;->mService:Landroid/bluetooth/IBluetoothHealth;
 
@@ -167,7 +161,6 @@
 
 .method static synthetic access$200(Landroid/bluetooth/BluetoothHealth;)Landroid/content/Context;
     .locals 1
-    .param p0    # Landroid/bluetooth/BluetoothHealth;
 
     iget-object v0, p0, Landroid/bluetooth/BluetoothHealth;->mContext:Landroid/content/Context;
 
@@ -176,7 +169,6 @@
 
 .method static synthetic access$300(Landroid/bluetooth/BluetoothHealth;)Landroid/bluetooth/BluetoothProfile$ServiceListener;
     .locals 1
-    .param p0    # Landroid/bluetooth/BluetoothHealth;
 
     iget-object v0, p0, Landroid/bluetooth/BluetoothHealth;->mServiceListener:Landroid/bluetooth/BluetoothProfile$ServiceListener;
 
@@ -185,10 +177,6 @@
 
 .method private checkAppParam(Ljava/lang/String;IILandroid/bluetooth/BluetoothHealthCallback;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/bluetooth/BluetoothHealthCallback;
 
     const/16 v3, 0xc
 
@@ -267,7 +255,6 @@
 
 .method private isValidDevice(Landroid/bluetooth/BluetoothDevice;)Z
     .locals 2
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
 
     const/4 v0, 0x0
 
@@ -295,7 +282,6 @@
 
 .method private static log(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "BluetoothHealth"
 
@@ -399,9 +385,6 @@
 
 .method public connectChannelToSink(Landroid/bluetooth/BluetoothDevice;Landroid/bluetooth/BluetoothHealthAppConfiguration;I)Z
     .locals 3
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
-    .param p2    # Landroid/bluetooth/BluetoothHealthAppConfiguration;
-    .param p3    # I
 
     iget-object v1, p0, Landroid/bluetooth/BluetoothHealth;->mService:Landroid/bluetooth/IBluetoothHealth;
 
@@ -473,8 +456,6 @@
 
 .method public connectChannelToSource(Landroid/bluetooth/BluetoothDevice;Landroid/bluetooth/BluetoothHealthAppConfiguration;)Z
     .locals 3
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
-    .param p2    # Landroid/bluetooth/BluetoothHealthAppConfiguration;
 
     iget-object v1, p0, Landroid/bluetooth/BluetoothHealth;->mService:Landroid/bluetooth/IBluetoothHealth;
 
@@ -546,9 +527,6 @@
 
 .method public disconnectChannel(Landroid/bluetooth/BluetoothDevice;Landroid/bluetooth/BluetoothHealthAppConfiguration;I)Z
     .locals 3
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
-    .param p2    # Landroid/bluetooth/BluetoothHealthAppConfiguration;
-    .param p3    # I
 
     iget-object v1, p0, Landroid/bluetooth/BluetoothHealth;->mService:Landroid/bluetooth/IBluetoothHealth;
 
@@ -783,7 +761,6 @@
 
 .method public getConnectionState(Landroid/bluetooth/BluetoothDevice;)I
     .locals 3
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
 
     iget-object v1, p0, Landroid/bluetooth/BluetoothHealth;->mService:Landroid/bluetooth/IBluetoothHealth;
 
@@ -853,7 +830,6 @@
 
 .method public getDevicesMatchingConnectionStates([I)Ljava/util/List;
     .locals 4
-    .param p1    # [I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([I)",
@@ -946,8 +922,6 @@
 
 .method public getMainChannelFd(Landroid/bluetooth/BluetoothDevice;Landroid/bluetooth/BluetoothHealthAppConfiguration;)Landroid/os/ParcelFileDescriptor;
     .locals 3
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
-    .param p2    # Landroid/bluetooth/BluetoothHealthAppConfiguration;
 
     iget-object v1, p0, Landroid/bluetooth/BluetoothHealth;->mService:Landroid/bluetooth/IBluetoothHealth;
 
@@ -1019,11 +993,6 @@
 
 .method public registerAppConfiguration(Ljava/lang/String;IIILandroid/bluetooth/BluetoothHealthCallback;)Z
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Landroid/bluetooth/BluetoothHealthCallback;
 
     const/4 v2, 0x0
 
@@ -1109,9 +1078,6 @@
 
 .method public registerSinkAppConfiguration(Ljava/lang/String;ILandroid/bluetooth/BluetoothHealthCallback;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Landroid/bluetooth/BluetoothHealthCallback;
 
     invoke-direct {p0}, Landroid/bluetooth/BluetoothHealth;->isEnabled()Z
 
@@ -1149,7 +1115,6 @@
 
 .method public unregisterAppConfiguration(Landroid/bluetooth/BluetoothHealthAppConfiguration;)Z
     .locals 4
-    .param p1    # Landroid/bluetooth/BluetoothHealthAppConfiguration;
 
     const/4 v1, 0x0
 

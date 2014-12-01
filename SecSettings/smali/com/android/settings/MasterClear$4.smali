@@ -40,8 +40,6 @@
 # virtual methods
 .method public compare(Landroid/widget/TextView;Landroid/widget/TextView;)I
     .locals 3
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # Landroid/widget/TextView;
 
     invoke-static {}, Ljava/text/Collator;->getInstance()Ljava/text/Collator;
 
@@ -72,8 +70,6 @@
 
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p1, Landroid/widget/TextView;
 

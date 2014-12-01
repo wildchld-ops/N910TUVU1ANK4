@@ -149,7 +149,6 @@
 
 .method private getBooleanProperty(I)Z
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/view/accessibility/AccessibilityRecord;->mBooleanProperties:I
 
@@ -228,7 +227,6 @@
 
 .method public static obtain(Landroid/view/accessibility/AccessibilityRecord;)Landroid/view/accessibility/AccessibilityRecord;
     .locals 1
-    .param p0    # Landroid/view/accessibility/AccessibilityRecord;
 
     invoke-static {}, Landroid/view/accessibility/AccessibilityRecord;->obtain()Landroid/view/accessibility/AccessibilityRecord;
 
@@ -241,8 +239,6 @@
 
 .method private setBooleanProperty(IZ)V
     .locals 2
-    .param p1    # I
-    .param p2    # Z
 
     if-eqz p2, :cond_0
 
@@ -569,7 +565,6 @@
 
 .method init(Landroid/view/accessibility/AccessibilityRecord;)V
     .locals 2
-    .param p1    # Landroid/view/accessibility/AccessibilityRecord;
 
     iget-boolean v0, p1, Landroid/view/accessibility/AccessibilityRecord;->mSealed:Z
 
@@ -798,7 +793,6 @@
 
 .method public setAddedCount(I)V
     .locals 0
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/view/accessibility/AccessibilityRecord;->enforceNotSealed()V
 
@@ -809,7 +803,6 @@
 
 .method public setBeforeText(Ljava/lang/CharSequence;)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
 
     invoke-virtual {p0}, Landroid/view/accessibility/AccessibilityRecord;->enforceNotSealed()V
 
@@ -820,7 +813,6 @@
 
 .method public setChecked(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-virtual {p0}, Landroid/view/accessibility/AccessibilityRecord;->enforceNotSealed()V
 
@@ -833,7 +825,6 @@
 
 .method public setClassName(Ljava/lang/CharSequence;)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
 
     invoke-virtual {p0}, Landroid/view/accessibility/AccessibilityRecord;->enforceNotSealed()V
 
@@ -844,7 +835,6 @@
 
 .method public setConnectionId(I)V
     .locals 0
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/view/accessibility/AccessibilityRecord;->enforceNotSealed()V
 
@@ -855,7 +845,6 @@
 
 .method public setContentDescription(Ljava/lang/CharSequence;)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
 
     invoke-virtual {p0}, Landroid/view/accessibility/AccessibilityRecord;->enforceNotSealed()V
 
@@ -866,7 +855,6 @@
 
 .method public setCurrentItemIndex(I)V
     .locals 0
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/view/accessibility/AccessibilityRecord;->enforceNotSealed()V
 
@@ -877,7 +865,6 @@
 
 .method public setEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-virtual {p0}, Landroid/view/accessibility/AccessibilityRecord;->enforceNotSealed()V
 
@@ -890,7 +877,6 @@
 
 .method public setFromIndex(I)V
     .locals 0
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/view/accessibility/AccessibilityRecord;->enforceNotSealed()V
 
@@ -901,7 +887,6 @@
 
 .method public setFullScreen(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-virtual {p0}, Landroid/view/accessibility/AccessibilityRecord;->enforceNotSealed()V
 
@@ -914,7 +899,6 @@
 
 .method public setItemCount(I)V
     .locals 0
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/view/accessibility/AccessibilityRecord;->enforceNotSealed()V
 
@@ -925,7 +909,6 @@
 
 .method public setMaxScrollX(I)V
     .locals 0
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/view/accessibility/AccessibilityRecord;->enforceNotSealed()V
 
@@ -936,7 +919,6 @@
 
 .method public setMaxScrollY(I)V
     .locals 0
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/view/accessibility/AccessibilityRecord;->enforceNotSealed()V
 
@@ -947,7 +929,6 @@
 
 .method public setParcelableData(Landroid/os/Parcelable;)V
     .locals 0
-    .param p1    # Landroid/os/Parcelable;
 
     invoke-virtual {p0}, Landroid/view/accessibility/AccessibilityRecord;->enforceNotSealed()V
 
@@ -958,7 +939,6 @@
 
 .method public setPassword(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-virtual {p0}, Landroid/view/accessibility/AccessibilityRecord;->enforceNotSealed()V
 
@@ -971,7 +951,6 @@
 
 .method public setRemovedCount(I)V
     .locals 0
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/view/accessibility/AccessibilityRecord;->enforceNotSealed()V
 
@@ -982,7 +961,6 @@
 
 .method public setScrollX(I)V
     .locals 0
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/view/accessibility/AccessibilityRecord;->enforceNotSealed()V
 
@@ -993,7 +971,6 @@
 
 .method public setScrollY(I)V
     .locals 0
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/view/accessibility/AccessibilityRecord;->enforceNotSealed()V
 
@@ -1004,7 +981,6 @@
 
 .method public setScrollable(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-virtual {p0}, Landroid/view/accessibility/AccessibilityRecord;->enforceNotSealed()V
 
@@ -1017,7 +993,6 @@
 
 .method public setSealed(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/view/accessibility/AccessibilityRecord;->mSealed:Z
 
@@ -1026,7 +1001,6 @@
 
 .method public setSource(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     const/4 v0, -0x1
 
@@ -1037,8 +1011,6 @@
 
 .method public setSource(Landroid/view/View;I)V
     .locals 4
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     const/4 v3, -0x1
 
@@ -1104,7 +1076,6 @@
 
 .method public setToIndex(I)V
     .locals 0
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/view/accessibility/AccessibilityRecord;->enforceNotSealed()V
 
@@ -1115,7 +1086,6 @@
 
 .method public setWindowId(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/view/accessibility/AccessibilityRecord;->mSourceWindowId:I
 

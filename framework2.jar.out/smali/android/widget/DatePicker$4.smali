@@ -36,7 +36,6 @@
 # virtual methods
 .method public onTextUpdated(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
     .locals 9
-    .param p1    # Ljava/lang/CharSequence;
 
     const-string v2, ""
 

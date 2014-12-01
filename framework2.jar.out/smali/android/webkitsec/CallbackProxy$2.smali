@@ -40,7 +40,6 @@
 # virtual methods
 .method public onCancel(Landroid/content/DialogInterface;)V
     .locals 1
-    .param p1    # Landroid/content/DialogInterface;
 
     iget-object v0, p0, Landroid/webkitsec/CallbackProxy$2;->val$res:Landroid/webkitsec/JsResult;
 

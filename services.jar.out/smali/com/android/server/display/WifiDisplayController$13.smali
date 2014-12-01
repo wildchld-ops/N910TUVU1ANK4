@@ -44,7 +44,6 @@
 # virtual methods
 .method public onFailure(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/display/WifiDisplayController$13;->this$0:Lcom/android/server/display/WifiDisplayController;
 

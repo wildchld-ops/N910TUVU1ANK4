@@ -21,7 +21,6 @@
 # direct methods
 .method constructor <init>(Lorg/w3c/dom/smil/SMILElement;)V
     .locals 0
-    .param p1    # Lorg/w3c/dom/smil/SMILElement;
 
     invoke-direct {p0, p1}, Lcom/android/mms/dom/smil/ElementTimeContainerImpl;-><init>(Lorg/w3c/dom/smil/SMILElement;)V
 
@@ -30,7 +29,6 @@
 
 .method private getElementTime(Lorg/w3c/dom/Node;)Lorg/w3c/dom/smil/ElementTime;
     .locals 6
-    .param p1    # Lorg/w3c/dom/Node;
 
     move-object v3, p1
 
@@ -78,7 +76,6 @@
 # virtual methods
 .method public getActiveChildrenAt(F)Lorg/w3c/dom/NodeList;
     .locals 22
-    .param p1    # F
 
     new-instance v3, Ljava/util/ArrayList;
 
@@ -436,7 +433,6 @@
 
 .method public setEndSync(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;

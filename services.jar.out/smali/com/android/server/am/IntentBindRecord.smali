@@ -36,8 +36,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/am/ServiceRecord;Landroid/content/Intent$FilterComparison;)V
     .locals 1
-    .param p1    # Lcom/android/server/am/ServiceRecord;
-    .param p2    # Landroid/content/Intent$FilterComparison;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -124,8 +122,6 @@
 
 .method dump(Ljava/io/PrintWriter;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/io/PrintWriter;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
@@ -144,8 +140,6 @@
 
 .method dumpInService(Ljava/io/PrintWriter;Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/io/PrintWriter;
-    .param p2    # Ljava/lang/String;
 
     const/16 v5, 0x7d
 

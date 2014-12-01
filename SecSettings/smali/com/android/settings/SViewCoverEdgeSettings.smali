@@ -43,7 +43,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/SViewCoverEdgeSettings;)Landroid/widget/Switch;
     .locals 1
-    .param p0    # Lcom/android/settings/SViewCoverEdgeSettings;
 
     iget-object v0, p0, Lcom/android/settings/SViewCoverEdgeSettings;->mActionBarSwitch:Landroid/widget/Switch;
 
@@ -52,7 +51,6 @@
 
 .method private setButtonEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/settings/SViewCoverEdgeSettings;->mWallpaperBtn1:Landroid/widget/RadioButton;
 
@@ -77,8 +75,6 @@
 # virtual methods
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 3
-    .param p1    # Landroid/widget/CompoundButton;
-    .param p2    # Z
 
     invoke-virtual {p0}, Lcom/android/settings/SettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -127,7 +123,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 9
-    .param p1    # Landroid/os/Bundle;
 
     const/16 v6, 0x10
 
@@ -241,9 +236,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 7
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const/4 v4, 0x0
 

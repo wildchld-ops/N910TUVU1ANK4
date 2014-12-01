@@ -186,7 +186,6 @@
 
 .method public static process(Lcom/android/server/enterprise/utils/IOExceptionHandler$IOProcessor;Z)V
     .locals 1
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<S:",

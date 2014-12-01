@@ -27,7 +27,6 @@
 # virtual methods
 .method public getImportantForAccessibility(Landroid/view/View;)I
     .locals 1
-    .param p1    # Landroid/view/View;
 
     invoke-static {p1}, Landroid/support/v4/view/ViewCompatJB;->getImportantForAccessibility(Landroid/view/View;)I
 
@@ -38,7 +37,6 @@
 
 .method public postInvalidateOnAnimation(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     invoke-static {p1}, Landroid/support/v4/view/ViewCompatJB;->postInvalidateOnAnimation(Landroid/view/View;)V
 
@@ -47,8 +45,6 @@
 
 .method public postOnAnimation(Landroid/view/View;Ljava/lang/Runnable;)V
     .locals 0
-    .param p1    # Landroid/view/View;
-    .param p2    # Ljava/lang/Runnable;
 
     invoke-static {p1, p2}, Landroid/support/v4/view/ViewCompatJB;->postOnAnimation(Landroid/view/View;Ljava/lang/Runnable;)V
 
@@ -57,8 +53,6 @@
 
 .method public setImportantForAccessibility(Landroid/view/View;I)V
     .locals 0
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     invoke-static {p1, p2}, Landroid/support/v4/view/ViewCompatJB;->setImportantForAccessibility(Landroid/view/View;I)V
 

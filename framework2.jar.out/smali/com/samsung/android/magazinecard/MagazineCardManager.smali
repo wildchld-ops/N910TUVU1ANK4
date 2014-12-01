@@ -38,7 +38,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -69,7 +68,6 @@
 
 .method private getAppName(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -107,7 +105,6 @@
 
 .method private getComponentName(Ljava/lang/String;)Landroid/content/ComponentName;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -215,7 +212,6 @@
 
 .method private setTimeStamp(Lcom/samsung/android/magazinecard/MagazineCardInfo;)V
     .locals 4
-    .param p1    # Lcom/samsung/android/magazinecard/MagazineCardInfo;
 
     iget-wide v0, p1, Lcom/samsung/android/magazinecard/MagazineCardInfo;->mTimeStamp:J
 
@@ -239,7 +235,6 @@
 # virtual methods
 .method public addCard(Lcom/samsung/android/magazinecard/MagazineCardInfo;)Z
     .locals 8
-    .param p1    # Lcom/samsung/android/magazinecard/MagazineCardInfo;
 
     const/4 v7, 0x0
 
@@ -353,7 +348,6 @@
 
 .method public getCard(I)Lcom/samsung/android/magazinecard/MagazineCardRecord;
     .locals 6
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -423,8 +417,6 @@
 
 .method public getCardRecordIdList(IZ)[I
     .locals 6
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v2, 0x0
 
@@ -514,7 +506,6 @@
 
 .method public isCardExist(I)Z
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -527,8 +518,6 @@
 
 .method public isCardExist(Ljava/lang/String;I)Z
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v3, 0x0
 
@@ -670,7 +659,6 @@
 
 .method public removeAllCard(Ljava/lang/String;)Z
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x1
 
@@ -783,7 +771,6 @@
 
 .method public removeCard(I)Z
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -796,8 +783,6 @@
 
 .method public removeCard(Ljava/lang/String;I)Z
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v3, 0x1
 
@@ -899,7 +884,6 @@
 
 .method public updateCard(Lcom/samsung/android/magazinecard/MagazineCardInfo;)Z
     .locals 1
-    .param p1    # Lcom/samsung/android/magazinecard/MagazineCardInfo;
 
     const/4 v0, 0x0
 
@@ -912,8 +896,6 @@
 
 .method public updateCard(Ljava/lang/String;Lcom/samsung/android/magazinecard/MagazineCardInfo;)Z
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/samsung/android/magazinecard/MagazineCardInfo;
 
     const/4 v3, 0x1
 

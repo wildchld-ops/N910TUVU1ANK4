@@ -22,10 +22,6 @@
 
 .method static synthetic access$000([IIII)I
     .locals 1
-    .param p0    # [I
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     invoke-static {p0, p1, p2, p3}, Lcom/google/common/primitives/Ints;->indexOf([IIII)I
 
@@ -36,10 +32,6 @@
 
 .method static synthetic access$100([IIII)I
     .locals 1
-    .param p0    # [I
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     invoke-static {p0, p1, p2, p3}, Lcom/google/common/primitives/Ints;->lastIndexOf([IIII)I
 
@@ -50,7 +42,6 @@
 
 .method public static varargs asList([I)Ljava/util/List;
     .locals 1
-    .param p0    # [I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([I)",
@@ -82,17 +73,12 @@
 
 .method public static hashCode(I)I
     .locals 0
-    .param p0    # I
 
     return p0
 .end method
 
 .method private static indexOf([IIII)I
     .locals 2
-    .param p0    # [I
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     move v0, p2
 
@@ -119,10 +105,6 @@
 
 .method private static lastIndexOf([IIII)I
     .locals 2
-    .param p0    # [I
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     add-int/lit8 v0, p3, -0x1
 
@@ -149,7 +131,6 @@
 
 .method public static saturatedCast(J)I
     .locals 2
-    .param p0    # J
 
     const-wide/32 v0, 0x7fffffff
 

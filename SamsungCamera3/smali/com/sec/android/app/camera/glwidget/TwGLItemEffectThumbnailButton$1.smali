@@ -36,7 +36,6 @@
 # virtual methods
 .method public onClick(Lcom/sec/android/glview/TwGLView;)Z
     .locals 8
-    .param p1    # Lcom/sec/android/glview/TwGLView;
 
     const/4 v4, 0x1
 

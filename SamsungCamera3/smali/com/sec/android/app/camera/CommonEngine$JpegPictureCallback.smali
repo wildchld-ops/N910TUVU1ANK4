@@ -38,8 +38,6 @@
 # virtual methods
 .method public onPictureTaken([BLcom/sec/android/seccamera/SecCamera;)V
     .locals 6
-    .param p1    # [B
-    .param p2    # Lcom/sec/android/seccamera/SecCamera;
 
     const/4 v5, 0x1
 
@@ -346,7 +344,6 @@
 
 .method public setLocation(Landroid/location/Location;)V
     .locals 0
-    .param p1    # Landroid/location/Location;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/CommonEngine$JpegPictureCallback;->mLocation:Landroid/location/Location;
 

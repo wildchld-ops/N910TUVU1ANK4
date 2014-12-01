@@ -190,7 +190,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/lockscreenshortcut/ExpandAppList;)I
     .locals 1
-    .param p0    # Lcom/android/settings/lockscreenshortcut/ExpandAppList;
 
     iget v0, p0, Lcom/android/settings/lockscreenshortcut/ExpandAppList;->t_appNo:I
 
@@ -199,7 +198,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/lockscreenshortcut/ExpandAppList;)Landroid/content/pm/PackageManager;
     .locals 1
-    .param p0    # Lcom/android/settings/lockscreenshortcut/ExpandAppList;
 
     iget-object v0, p0, Lcom/android/settings/lockscreenshortcut/ExpandAppList;->mPm:Landroid/content/pm/PackageManager;
 
@@ -210,10 +208,6 @@
 # virtual methods
 .method public AppOrdering(Ljava/util/List;[I[Ljava/lang/String;[II)I
     .locals 7
-    .param p2    # [I
-    .param p3    # [Ljava/lang/String;
-    .param p4    # [I
-    .param p5    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -335,9 +329,6 @@
 
 .method public MakeList(Ljava/util/List;Ljava/util/ArrayList;II[I)V
     .locals 10
-    .param p3    # I
-    .param p4    # I
-    .param p5    # [I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -529,11 +520,6 @@
 
 .method public SortingList([Ljava/lang/String;[I[Ljava/lang/String;Ljava/lang/String;I)I
     .locals 5
-    .param p1    # [Ljava/lang/String;
-    .param p2    # [I
-    .param p3    # [Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
 
     const/4 v0, 0x0
 
@@ -630,7 +616,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 37
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super/range {p0 .. p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
@@ -1358,10 +1343,6 @@
 
 .method public onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
     .locals 4
-    .param p1    # Landroid/widget/AdapterView;
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
 
     new-instance v0, Landroid/content/Intent;
 

@@ -19,11 +19,6 @@
 # direct methods
 .method constructor <init>(Landroid/content/IntentFilter;I[Landroid/content/ComponentName;Landroid/content/ComponentName;Z)V
     .locals 6
-    .param p1    # Landroid/content/IntentFilter;
-    .param p2    # I
-    .param p3    # [Landroid/content/ComponentName;
-    .param p4    # Landroid/content/ComponentName;
-    .param p5    # Z
 
     invoke-direct {p0, p1}, Landroid/content/IntentFilter;-><init>(Landroid/content/IntentFilter;)V
 
@@ -48,7 +43,6 @@
 
 .method constructor <init>(Lorg/xmlpull/v1/XmlPullParser;)V
     .locals 1
-    .param p1    # Lorg/xmlpull/v1/XmlPullParser;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -71,8 +65,6 @@
 # virtual methods
 .method public onReadTag(Ljava/lang/String;Lorg/xmlpull/v1/XmlPullParser;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lorg/xmlpull/v1/XmlPullParser;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -185,8 +177,6 @@
 
 .method public writeToXml(Lorg/xmlpull/v1/XmlSerializer;Z)V
     .locals 2
-    .param p1    # Lorg/xmlpull/v1/XmlSerializer;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

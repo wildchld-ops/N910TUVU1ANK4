@@ -22,7 +22,6 @@
 
 .method public static wrap(Landroid/text/style/CharacterStyle;)Landroid/text/style/CharacterStyle;
     .locals 1
-    .param p0    # Landroid/text/style/CharacterStyle;
 
     instance-of v0, p0, Landroid/text/style/MetricAffectingSpan;
 

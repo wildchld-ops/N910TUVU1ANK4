@@ -102,7 +102,7 @@
 
     iget-object v1, p0, Lcom/android/phone/TPhoneService$4;->this$0:Lcom/android/phone/TPhoneService;
 
-    invoke-virtual {v1, v0}, Landroid/content/ContextWrapper;->sendBroadcast(Landroid/content/Intent;)V
+    invoke-virtual {v1, v0}, Lcom/android/phone/TPhoneService;->sendBroadcast(Landroid/content/Intent;)V
 
     iget-object v1, p0, Lcom/android/phone/TPhoneService$4;->this$0:Lcom/android/phone/TPhoneService;
 
@@ -142,7 +142,7 @@
 
     iget-object v1, p0, Lcom/android/phone/TPhoneService$4;->this$0:Lcom/android/phone/TPhoneService;
 
-    invoke-virtual {v1, v0}, Landroid/content/ContextWrapper;->sendBroadcast(Landroid/content/Intent;)V
+    invoke-virtual {v1, v0}, Lcom/android/phone/TPhoneService;->sendBroadcast(Landroid/content/Intent;)V
 
     :goto_1
     iget-object v1, p0, Lcom/android/phone/TPhoneService$4;->this$0:Lcom/android/phone/TPhoneService;
@@ -186,7 +186,7 @@
 
     iget-object v1, p0, Lcom/android/phone/TPhoneService$4;->this$0:Lcom/android/phone/TPhoneService;
 
-    invoke-virtual {v1, v0}, Landroid/content/ContextWrapper;->sendBroadcast(Landroid/content/Intent;)V
+    invoke-virtual {v1, v0}, Lcom/android/phone/TPhoneService;->sendBroadcast(Landroid/content/Intent;)V
 
     goto :goto_1
 

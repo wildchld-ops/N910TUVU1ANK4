@@ -63,9 +63,6 @@
 # virtual methods
 .method collect(FJLjava/lang/String;)F
     .locals 8
-    .param p1    # F
-    .param p2    # J
-    .param p4    # Ljava/lang/String;
 
     const/4 v6, 0x0
 
@@ -407,7 +404,6 @@
 
 .method reset(I)V
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x0
 

@@ -46,7 +46,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -74,9 +73,6 @@
 
 .method public delete(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)I
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # [Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -126,8 +122,6 @@
 
 .method public insert(Ljava/lang/String;Landroid/content/ContentValues;)Landroid/net/Uri;
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/ContentValues;
 
     const/4 v4, 0x0
 
@@ -209,11 +203,6 @@
 
 .method public query(Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # [Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
 
     const/4 v8, 0x0
 
@@ -277,10 +266,6 @@
 
 .method public update(Ljava/lang/String;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)I
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/ContentValues;
-    .param p3    # Ljava/lang/String;
-    .param p4    # [Ljava/lang/String;
 
     const/4 v1, 0x0
 

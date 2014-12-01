@@ -121,7 +121,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     const/4 v2, 0x1
 
@@ -180,8 +179,6 @@
 
 .method static synthetic access$102(Landroid/app/Notification$Builder;I)I
     .locals 0
-    .param p0    # Landroid/app/Notification$Builder;
-    .param p1    # I
 
     iput p1, p0, Landroid/app/Notification$Builder;->mFlags:I
 
@@ -190,8 +187,6 @@
 
 .method static synthetic access$300(Landroid/app/Notification$Builder;I)Landroid/widget/RemoteViews;
     .locals 1
-    .param p0    # Landroid/app/Notification$Builder;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/app/Notification$Builder;->applyStandardTemplateWithActions(I)Landroid/widget/RemoteViews;
 
@@ -202,7 +197,6 @@
 
 .method static synthetic access$400(Landroid/app/Notification$Builder;)Ljava/lang/CharSequence;
     .locals 1
-    .param p0    # Landroid/app/Notification$Builder;
 
     iget-object v0, p0, Landroid/app/Notification$Builder;->mSubText:Ljava/lang/CharSequence;
 
@@ -211,8 +205,6 @@
 
 .method static synthetic access$502(Landroid/app/Notification$Builder;Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
     .locals 0
-    .param p0    # Landroid/app/Notification$Builder;
-    .param p1    # Landroid/graphics/Bitmap;
 
     iput-object p1, p0, Landroid/app/Notification$Builder;->mLargeIcon:Landroid/graphics/Bitmap;
 
@@ -221,7 +213,6 @@
 
 .method static synthetic access$600(Landroid/app/Notification$Builder;)Ljava/lang/CharSequence;
     .locals 1
-    .param p0    # Landroid/app/Notification$Builder;
 
     iget-object v0, p0, Landroid/app/Notification$Builder;->mContentText:Ljava/lang/CharSequence;
 
@@ -230,8 +221,6 @@
 
 .method static synthetic access$602(Landroid/app/Notification$Builder;Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
     .locals 0
-    .param p0    # Landroid/app/Notification$Builder;
-    .param p1    # Ljava/lang/CharSequence;
 
     iput-object p1, p0, Landroid/app/Notification$Builder;->mContentText:Ljava/lang/CharSequence;
 
@@ -240,8 +229,6 @@
 
 .method private applyStandardTemplate(IZ)Landroid/widget/RemoteViews;
     .locals 19
-    .param p1    # I
-    .param p2    # Z
 
     new-instance v1, Landroid/widget/RemoteViews;
 
@@ -804,7 +791,6 @@
 
 .method private applyStandardTemplateWithActions(I)Landroid/widget/RemoteViews;
     .locals 7
-    .param p1    # I
 
     const v6, 0x1020377
 
@@ -866,7 +852,6 @@
 
 .method private generateActionButton(Landroid/app/Notification$Action;)Landroid/widget/RemoteViews;
     .locals 7
-    .param p1    # Landroid/app/Notification$Action;
 
     const v1, 0x1020376
 
@@ -1025,8 +1010,6 @@
 
 .method private setFlag(IZ)V
     .locals 2
-    .param p1    # I
-    .param p2    # Z
 
     if-eqz p2, :cond_0
 
@@ -1055,9 +1038,6 @@
 # virtual methods
 .method public addAction(ILjava/lang/CharSequence;Landroid/app/PendingIntent;)Landroid/app/Notification$Builder;
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/CharSequence;
-    .param p3    # Landroid/app/PendingIntent;
 
     iget-object v0, p0, Landroid/app/Notification$Builder;->mActions:Ljava/util/ArrayList;
 
@@ -1076,7 +1056,6 @@
 
 .method public addExtras(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "android.title"
 
@@ -1154,7 +1133,6 @@
 
 .method public addKind(Ljava/lang/String;)Landroid/app/Notification$Builder;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/app/Notification$Builder;->mKindList:Ljava/util/ArrayList;
 
@@ -1221,7 +1199,6 @@
 
 .method public buildInto(Landroid/app/Notification;)Landroid/app/Notification;
     .locals 2
-    .param p1    # Landroid/app/Notification;
 
     invoke-virtual {p0}, Landroid/app/Notification$Builder;->build()Landroid/app/Notification;
 
@@ -1468,7 +1445,6 @@
 
 .method public setAutoCancel(Z)Landroid/app/Notification$Builder;
     .locals 1
-    .param p1    # Z
 
     const/16 v0, 0x10
 
@@ -1479,7 +1455,6 @@
 
 .method public setContent(Landroid/widget/RemoteViews;)Landroid/app/Notification$Builder;
     .locals 0
-    .param p1    # Landroid/widget/RemoteViews;
 
     iput-object p1, p0, Landroid/app/Notification$Builder;->mContentView:Landroid/widget/RemoteViews;
 
@@ -1488,7 +1463,6 @@
 
 .method public setContentInfo(Ljava/lang/CharSequence;)Landroid/app/Notification$Builder;
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
 
     invoke-static {p1}, Landroid/app/Notification;->safeCharSequence(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
 
@@ -1501,7 +1475,6 @@
 
 .method public setContentIntent(Landroid/app/PendingIntent;)Landroid/app/Notification$Builder;
     .locals 0
-    .param p1    # Landroid/app/PendingIntent;
 
     iput-object p1, p0, Landroid/app/Notification$Builder;->mContentIntent:Landroid/app/PendingIntent;
 
@@ -1510,7 +1483,6 @@
 
 .method public setContentText(Ljava/lang/CharSequence;)Landroid/app/Notification$Builder;
     .locals 3
-    .param p1    # Ljava/lang/CharSequence;
 
     invoke-static {p1}, Landroid/app/Notification;->safeCharSequence(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
 
@@ -1550,7 +1522,6 @@
 
 .method public setContentTitle(Ljava/lang/CharSequence;)Landroid/app/Notification$Builder;
     .locals 3
-    .param p1    # Ljava/lang/CharSequence;
 
     invoke-static {p1}, Landroid/app/Notification;->safeCharSequence(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
 
@@ -1590,7 +1561,6 @@
 
 .method public setDefaults(I)Landroid/app/Notification$Builder;
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/app/Notification$Builder;->mDefaults:I
 
@@ -1599,7 +1569,6 @@
 
 .method public setDeleteIntent(Landroid/app/PendingIntent;)Landroid/app/Notification$Builder;
     .locals 0
-    .param p1    # Landroid/app/PendingIntent;
 
     iput-object p1, p0, Landroid/app/Notification$Builder;->mDeleteIntent:Landroid/app/PendingIntent;
 
@@ -1608,7 +1577,6 @@
 
 .method public setExtras(Landroid/os/Bundle;)Landroid/app/Notification$Builder;
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     iput-object p1, p0, Landroid/app/Notification$Builder;->mExtras:Landroid/os/Bundle;
 
@@ -1617,8 +1585,6 @@
 
 .method public setFullScreenIntent(Landroid/app/PendingIntent;Z)Landroid/app/Notification$Builder;
     .locals 1
-    .param p1    # Landroid/app/PendingIntent;
-    .param p2    # Z
 
     iput-object p1, p0, Landroid/app/Notification$Builder;->mFullScreenIntent:Landroid/app/PendingIntent;
 
@@ -1631,7 +1597,6 @@
 
 .method public setLargeIcon(Landroid/graphics/Bitmap;)Landroid/app/Notification$Builder;
     .locals 0
-    .param p1    # Landroid/graphics/Bitmap;
 
     iput-object p1, p0, Landroid/app/Notification$Builder;->mLargeIcon:Landroid/graphics/Bitmap;
 
@@ -1640,9 +1605,6 @@
 
 .method public setLights(III)Landroid/app/Notification$Builder;
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     iput p1, p0, Landroid/app/Notification$Builder;->mLedArgb:I
 
@@ -1655,7 +1617,6 @@
 
 .method public setNumber(I)Landroid/app/Notification$Builder;
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/app/Notification$Builder;->mNumber:I
 
@@ -1664,7 +1625,6 @@
 
 .method public setOngoing(Z)Landroid/app/Notification$Builder;
     .locals 1
-    .param p1    # Z
 
     const/4 v0, 0x2
 
@@ -1675,7 +1635,6 @@
 
 .method public setOnlyAlertOnce(Z)Landroid/app/Notification$Builder;
     .locals 1
-    .param p1    # Z
 
     const/16 v0, 0x8
 
@@ -1686,7 +1645,6 @@
 
 .method public setPriority(I)Landroid/app/Notification$Builder;
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/app/Notification$Builder;->mPriority:I
 
@@ -1695,9 +1653,6 @@
 
 .method public setProgress(IIZ)Landroid/app/Notification$Builder;
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     iput p1, p0, Landroid/app/Notification$Builder;->mProgressMax:I
 
@@ -1710,7 +1665,6 @@
 
 .method public setShowWhen(Z)Landroid/app/Notification$Builder;
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/app/Notification$Builder;->mShowWhen:Z
 
@@ -1719,7 +1673,6 @@
 
 .method public setSmallIcon(I)Landroid/app/Notification$Builder;
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/app/Notification$Builder;->mSmallIcon:I
 
@@ -1728,8 +1681,6 @@
 
 .method public setSmallIcon(II)Landroid/app/Notification$Builder;
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     iput p1, p0, Landroid/app/Notification$Builder;->mSmallIcon:I
 
@@ -1740,7 +1691,6 @@
 
 .method public setSound(Landroid/net/Uri;)Landroid/app/Notification$Builder;
     .locals 1
-    .param p1    # Landroid/net/Uri;
 
     iput-object p1, p0, Landroid/app/Notification$Builder;->mSound:Landroid/net/Uri;
 
@@ -1753,8 +1703,6 @@
 
 .method public setSound(Landroid/net/Uri;I)Landroid/app/Notification$Builder;
     .locals 0
-    .param p1    # Landroid/net/Uri;
-    .param p2    # I
 
     iput-object p1, p0, Landroid/app/Notification$Builder;->mSound:Landroid/net/Uri;
 
@@ -1765,7 +1713,6 @@
 
 .method public setStyle(Landroid/app/Notification$Style;)Landroid/app/Notification$Builder;
     .locals 1
-    .param p1    # Landroid/app/Notification$Style;
 
     iget-object v0, p0, Landroid/app/Notification$Builder;->mStyle:Landroid/app/Notification$Style;
 
@@ -1787,7 +1734,6 @@
 
 .method public setSubText(Ljava/lang/CharSequence;)Landroid/app/Notification$Builder;
     .locals 2
-    .param p1    # Ljava/lang/CharSequence;
 
     invoke-static {p1}, Landroid/app/Notification;->safeCharSequence(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
 
@@ -1823,7 +1769,6 @@
 
 .method public setTicker(Ljava/lang/CharSequence;)Landroid/app/Notification$Builder;
     .locals 3
-    .param p1    # Ljava/lang/CharSequence;
 
     invoke-static {p1}, Landroid/app/Notification;->safeCharSequence(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
 
@@ -1863,8 +1808,6 @@
 
 .method public setTicker(Ljava/lang/CharSequence;Landroid/widget/RemoteViews;)Landroid/app/Notification$Builder;
     .locals 3
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Landroid/widget/RemoteViews;
 
     invoke-static {p1}, Landroid/app/Notification;->safeCharSequence(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
 
@@ -1906,7 +1849,6 @@
 
 .method public setUsesChronometer(Z)Landroid/app/Notification$Builder;
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/app/Notification$Builder;->mUseChronometer:Z
 
@@ -1915,7 +1857,6 @@
 
 .method public setVibrate([J)Landroid/app/Notification$Builder;
     .locals 0
-    .param p1    # [J
 
     iput-object p1, p0, Landroid/app/Notification$Builder;->mVibrate:[J
 
@@ -1924,7 +1865,6 @@
 
 .method public setWhen(J)Landroid/app/Notification$Builder;
     .locals 0
-    .param p1    # J
 
     iput-wide p1, p0, Landroid/app/Notification$Builder;->mWhen:J
 

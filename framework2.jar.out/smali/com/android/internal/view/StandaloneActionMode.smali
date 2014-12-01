@@ -34,10 +34,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Lcom/android/internal/widget/ActionBarContextView;Landroid/view/ActionMode$Callback;Z)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/internal/widget/ActionBarContextView;
-    .param p3    # Landroid/view/ActionMode$Callback;
-    .param p4    # Z
 
     invoke-direct {p0}, Landroid/view/ActionMode;-><init>()V
 
@@ -200,23 +196,18 @@
 
 .method public onCloseMenu(Lcom/android/internal/view/menu/MenuBuilder;Z)V
     .locals 0
-    .param p1    # Lcom/android/internal/view/menu/MenuBuilder;
-    .param p2    # Z
 
     return-void
 .end method
 
 .method public onCloseSubMenu(Lcom/android/internal/view/menu/SubMenuBuilder;)V
     .locals 0
-    .param p1    # Lcom/android/internal/view/menu/SubMenuBuilder;
 
     return-void
 .end method
 
 .method public onMenuItemSelected(Lcom/android/internal/view/menu/MenuBuilder;Landroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # Lcom/android/internal/view/menu/MenuBuilder;
-    .param p2    # Landroid/view/MenuItem;
 
     iget-object v0, p0, Lcom/android/internal/view/StandaloneActionMode;->mCallback:Landroid/view/ActionMode$Callback;
 
@@ -229,7 +220,6 @@
 
 .method public onMenuModeChange(Lcom/android/internal/view/menu/MenuBuilder;)V
     .locals 1
-    .param p1    # Lcom/android/internal/view/menu/MenuBuilder;
 
     invoke-virtual {p0}, Lcom/android/internal/view/StandaloneActionMode;->invalidate()V
 
@@ -242,7 +232,6 @@
 
 .method public onSubMenuSelected(Lcom/android/internal/view/menu/SubMenuBuilder;)Z
     .locals 3
-    .param p1    # Lcom/android/internal/view/menu/SubMenuBuilder;
 
     const/4 v2, 0x1
 
@@ -269,7 +258,6 @@
 
 .method public setCustomView(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Lcom/android/internal/view/StandaloneActionMode;->mContextView:Lcom/android/internal/widget/ActionBarContextView;
 
@@ -294,7 +282,6 @@
 
 .method public setSubtitle(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/internal/view/StandaloneActionMode;->mContext:Landroid/content/Context;
 
@@ -309,7 +296,6 @@
 
 .method public setSubtitle(Ljava/lang/CharSequence;)V
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
 
     iget-object v0, p0, Lcom/android/internal/view/StandaloneActionMode;->mContextView:Lcom/android/internal/widget/ActionBarContextView;
 
@@ -320,7 +306,6 @@
 
 .method public setTitle(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/internal/view/StandaloneActionMode;->mContext:Landroid/content/Context;
 
@@ -335,7 +320,6 @@
 
 .method public setTitle(Ljava/lang/CharSequence;)V
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
 
     iget-object v0, p0, Lcom/android/internal/view/StandaloneActionMode;->mContextView:Lcom/android/internal/widget/ActionBarContextView;
 
@@ -346,7 +330,6 @@
 
 .method public setTitleOptionalHint(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-super {p0, p1}, Landroid/view/ActionMode;->setTitleOptionalHint(Z)V
 

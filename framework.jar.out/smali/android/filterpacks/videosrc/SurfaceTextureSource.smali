@@ -129,7 +129,6 @@
 
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const/16 v1, 0x10
 
@@ -184,7 +183,6 @@
 
 .method static synthetic access$100(Landroid/filterpacks/videosrc/SurfaceTextureSource;)Landroid/os/ConditionVariable;
     .locals 1
-    .param p0    # Landroid/filterpacks/videosrc/SurfaceTextureSource;
 
     iget-object v0, p0, Landroid/filterpacks/videosrc/SurfaceTextureSource;->mNewFrameAvailable:Landroid/os/ConditionVariable;
 
@@ -213,7 +211,6 @@
 # virtual methods
 .method public close(Landroid/filterfw/core/FilterContext;)V
     .locals 3
-    .param p1    # Landroid/filterfw/core/FilterContext;
 
     const/4 v2, 0x0
 
@@ -243,8 +240,6 @@
 
 .method public fieldPortValueUpdated(Ljava/lang/String;Landroid/filterfw/core/FilterContext;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/filterfw/core/FilterContext;
 
     const-string/jumbo v0, "width"
 
@@ -277,7 +272,6 @@
 
 .method public open(Landroid/filterfw/core/FilterContext;)V
     .locals 2
-    .param p1    # Landroid/filterfw/core/FilterContext;
 
     sget-boolean v0, Landroid/filterpacks/videosrc/SurfaceTextureSource;->mLogVerbose:Z
 
@@ -323,7 +317,6 @@
 
 .method protected prepare(Landroid/filterfw/core/FilterContext;)V
     .locals 5
-    .param p1    # Landroid/filterfw/core/FilterContext;
 
     sget-boolean v0, Landroid/filterpacks/videosrc/SurfaceTextureSource;->mLogVerbose:Z
 
@@ -369,7 +362,6 @@
 
 .method public process(Landroid/filterfw/core/FilterContext;)V
     .locals 12
-    .param p1    # Landroid/filterfw/core/FilterContext;
 
     const/4 v1, 0x0
 
@@ -576,7 +568,6 @@
 
 .method public tearDown(Landroid/filterfw/core/FilterContext;)V
     .locals 1
-    .param p1    # Landroid/filterfw/core/FilterContext;
 
     iget-object v0, p0, Landroid/filterpacks/videosrc/SurfaceTextureSource;->mMediaFrame:Landroid/filterfw/core/GLFrame;
 

@@ -87,7 +87,6 @@
 
 .method public constructor <init>(I)V
     .locals 2
-    .param p1    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -118,15 +117,12 @@
 # virtual methods
 .method public onCallForwardingIndicatorChanged(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method public onCallStateChanged(ILjava/lang/String;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     return-void
 .end method
@@ -148,44 +144,36 @@
 
 .method public onCellLocationChanged(Landroid/telephony/CellLocation;)V
     .locals 0
-    .param p1    # Landroid/telephony/CellLocation;
 
     return-void
 .end method
 
 .method public onDataActivity(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onDataConnectionStateChanged(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onDataConnectionStateChanged(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     return-void
 .end method
 
 .method public onDunDataActivity(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onDunDataConnectionStateChanged(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     return-void
 .end method
@@ -198,28 +186,24 @@
 
 .method public onMessageWaitingIndicatorChanged(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method public onOtaspChanged(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onServiceStateChanged(Landroid/telephony/ServiceState;)V
     .locals 0
-    .param p1    # Landroid/telephony/ServiceState;
 
     return-void
 .end method
 
 .method public onSignalStrengthChanged(I)V
     .locals 0
-    .param p1    # I
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -228,7 +212,6 @@
 
 .method public onSignalStrengthsChanged(Landroid/telephony/SignalStrength;)V
     .locals 0
-    .param p1    # Landroid/telephony/SignalStrength;
 
     return-void
 .end method

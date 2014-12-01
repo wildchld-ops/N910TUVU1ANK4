@@ -29,8 +29,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/incallui/help/VoiceAndVideoCallTutorial;JJ)V
     .locals 2
-    .param p2    # J
-    .param p4    # J
 
     const/4 v1, 0x1
 
@@ -69,7 +67,6 @@
 
 .method public onTick(J)V
     .locals 4
-    .param p1    # J
 
     const/4 v3, 0x1
 

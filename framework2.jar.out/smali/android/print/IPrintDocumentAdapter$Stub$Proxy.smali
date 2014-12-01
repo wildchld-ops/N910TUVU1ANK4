@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -135,11 +134,6 @@
 
 .method public layout(Landroid/print/PrintAttributes;Landroid/print/PrintAttributes;Landroid/print/ILayoutResultCallback;Landroid/os/Bundle;I)V
     .locals 5
-    .param p1    # Landroid/print/PrintAttributes;
-    .param p2    # Landroid/print/PrintAttributes;
-    .param p3    # Landroid/print/ILayoutResultCallback;
-    .param p4    # Landroid/os/Bundle;
-    .param p5    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -254,7 +248,6 @@
 
 .method public setObserver(Landroid/print/IPrintDocumentAdapterObserver;)V
     .locals 5
-    .param p1    # Landroid/print/IPrintDocumentAdapterObserver;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -348,10 +341,6 @@
 
 .method public write([Landroid/print/PageRange;Landroid/os/ParcelFileDescriptor;Landroid/print/IWriteResultCallback;I)V
     .locals 5
-    .param p1    # [Landroid/print/PageRange;
-    .param p2    # Landroid/os/ParcelFileDescriptor;
-    .param p3    # Landroid/print/IWriteResultCallback;
-    .param p4    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

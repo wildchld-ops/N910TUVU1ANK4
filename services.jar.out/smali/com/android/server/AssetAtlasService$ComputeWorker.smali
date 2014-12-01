@@ -54,11 +54,6 @@
 # direct methods
 .method constructor <init>(IIILjava/util/List;ILjava/util/List;Ljava/util/concurrent/CountDownLatch;)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p5    # I
-    .param p7    # Ljava/util/concurrent/CountDownLatch;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(III",
@@ -114,10 +109,6 @@
 
 .method private packBitmaps(Landroid/graphics/Atlas$Type;IILandroid/graphics/Atlas$Entry;)I
     .locals 7
-    .param p1    # Landroid/graphics/Atlas$Type;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/graphics/Atlas$Entry;
 
     const/4 v4, 0x0
 

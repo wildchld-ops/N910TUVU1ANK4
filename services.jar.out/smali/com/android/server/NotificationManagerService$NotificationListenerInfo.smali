@@ -34,10 +34,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/NotificationManagerService;Landroid/service/notification/INotificationListener;Landroid/content/ComponentName;ILandroid/content/ServiceConnection;)V
     .locals 1
-    .param p2    # Landroid/service/notification/INotificationListener;
-    .param p3    # Landroid/content/ComponentName;
-    .param p4    # I
-    .param p5    # Landroid/content/ServiceConnection;
 
     iput-object p1, p0, Lcom/android/server/NotificationManagerService$NotificationListenerInfo;->this$0:Lcom/android/server/NotificationManagerService;
 
@@ -60,10 +56,6 @@
 
 .method public constructor <init>(Lcom/android/server/NotificationManagerService;Landroid/service/notification/INotificationListener;Landroid/content/ComponentName;IZ)V
     .locals 1
-    .param p2    # Landroid/service/notification/INotificationListener;
-    .param p3    # Landroid/content/ComponentName;
-    .param p4    # I
-    .param p5    # Z
 
     iput-object p1, p0, Lcom/android/server/NotificationManagerService$NotificationListenerInfo;->this$0:Lcom/android/server/NotificationManagerService;
 
@@ -102,7 +94,6 @@
 
 .method enabledAndUserMatches(Landroid/service/notification/StatusBarNotification;)Z
     .locals 5
-    .param p1    # Landroid/service/notification/StatusBarNotification;
 
     const/4 v2, 0x1
 
@@ -186,7 +177,6 @@
 
 .method public notifyPostedIfUserMatch(Landroid/service/notification/StatusBarNotification;)V
     .locals 4
-    .param p1    # Landroid/service/notification/StatusBarNotification;
 
     invoke-virtual {p0, p1}, Lcom/android/server/NotificationManagerService$NotificationListenerInfo;->enabledAndUserMatches(Landroid/service/notification/StatusBarNotification;)Z
 
@@ -239,7 +229,6 @@
 
 .method public notifyRemovedIfUserMatch(Landroid/service/notification/StatusBarNotification;)V
     .locals 4
-    .param p1    # Landroid/service/notification/StatusBarNotification;
 
     invoke-virtual {p0, p1}, Lcom/android/server/NotificationManagerService$NotificationListenerInfo;->enabledAndUserMatches(Landroid/service/notification/StatusBarNotification;)Z
 

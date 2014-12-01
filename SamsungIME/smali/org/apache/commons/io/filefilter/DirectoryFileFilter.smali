@@ -41,7 +41,6 @@
 # virtual methods
 .method public accept(Ljava/io/File;)Z
     .locals 1
-    .param p1    # Ljava/io/File;
 
     invoke-virtual {p1}, Ljava/io/File;->isDirectory()Z
 

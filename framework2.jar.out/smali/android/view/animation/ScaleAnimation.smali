@@ -46,10 +46,6 @@
 # direct methods
 .method public constructor <init>(FFFF)V
     .locals 2
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
 
     const/4 v1, 0x0
 
@@ -102,12 +98,6 @@
 
 .method public constructor <init>(FFFFFF)V
     .locals 2
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # F
 
     const/4 v0, 0x0
 
@@ -166,14 +156,6 @@
 
 .method public constructor <init>(FFFFIFIF)V
     .locals 2
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # I
-    .param p6    # F
-    .param p7    # I
-    .param p8    # F
 
     const/4 v1, 0x0
 
@@ -232,8 +214,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v6, 0x4
 
@@ -478,8 +458,6 @@
 # virtual methods
 .method protected applyTransformation(FLandroid/view/animation/Transformation;)V
     .locals 8
-    .param p1    # F
-    .param p2    # Landroid/view/animation/Transformation;
 
     const/4 v7, 0x0
 
@@ -586,10 +564,6 @@
 
 .method public initialize(IIII)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-super {p0, p1, p2, p3, p4}, Landroid/view/animation/Animation;->initialize(IIII)V
 
@@ -690,11 +664,6 @@
 
 .method resolveScale(FIIII)F
     .locals 3
-    .param p1    # F
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     const/4 v1, 0x6
 

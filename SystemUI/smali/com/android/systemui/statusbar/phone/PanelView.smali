@@ -120,8 +120,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/high16 v2, 0x43160000
 
@@ -184,8 +182,6 @@
 
 .method static synthetic access$000(Lcom/android/systemui/statusbar/phone/PanelView;J)V
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/phone/PanelView;
-    .param p1    # J
 
     invoke-direct {p0, p1, p2}, Lcom/android/systemui/statusbar/phone/PanelView;->animationTick(J)V
 
@@ -194,7 +190,6 @@
 
 .method static synthetic access$100(Lcom/android/systemui/statusbar/phone/PanelView;)Landroid/animation/TimeAnimator;
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/phone/PanelView;
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/PanelView;->mTimeAnimator:Landroid/animation/TimeAnimator;
 
@@ -203,7 +198,6 @@
 
 .method static synthetic access$1000(Lcom/android/systemui/statusbar/phone/PanelView;)Lcom/android/systemui/statusbar/phone/PanelView$FlingTracker;
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/phone/PanelView;
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/PanelView;->mVelocityTracker:Lcom/android/systemui/statusbar/phone/PanelView$FlingTracker;
 
@@ -212,8 +206,6 @@
 
 .method static synthetic access$1002(Lcom/android/systemui/statusbar/phone/PanelView;Lcom/android/systemui/statusbar/phone/PanelView$FlingTracker;)Lcom/android/systemui/statusbar/phone/PanelView$FlingTracker;
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/phone/PanelView;
-    .param p1    # Lcom/android/systemui/statusbar/phone/PanelView$FlingTracker;
 
     iput-object p1, p0, Lcom/android/systemui/statusbar/phone/PanelView;->mVelocityTracker:Lcom/android/systemui/statusbar/phone/PanelView$FlingTracker;
 
@@ -222,8 +214,6 @@
 
 .method static synthetic access$1100(Lcom/android/systemui/statusbar/phone/PanelView;Landroid/view/MotionEvent;)V
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/phone/PanelView;
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-direct {p0, p1}, Lcom/android/systemui/statusbar/phone/PanelView;->trackMovement(Landroid/view/MotionEvent;)V
 
@@ -232,7 +222,6 @@
 
 .method static synthetic access$1200(Lcom/android/systemui/statusbar/phone/PanelView;)F
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/phone/PanelView;
 
     iget v0, p0, Lcom/android/systemui/statusbar/phone/PanelView;->mTouchOffset:F
 
@@ -241,8 +230,6 @@
 
 .method static synthetic access$1202(Lcom/android/systemui/statusbar/phone/PanelView;F)F
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/phone/PanelView;
-    .param p1    # F
 
     iput p1, p0, Lcom/android/systemui/statusbar/phone/PanelView;->mTouchOffset:F
 
@@ -251,7 +238,6 @@
 
 .method static synthetic access$1300(Lcom/android/systemui/statusbar/phone/PanelView;)F
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/phone/PanelView;
 
     iget v0, p0, Lcom/android/systemui/statusbar/phone/PanelView;->mExpandedHeight:F
 
@@ -260,7 +246,6 @@
 
 .method static synthetic access$1400(Lcom/android/systemui/statusbar/phone/PanelView;)Z
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/phone/PanelView;
 
     iget-boolean v0, p0, Lcom/android/systemui/statusbar/phone/PanelView;->mJustPeeked:Z
 
@@ -269,8 +254,6 @@
 
 .method static synthetic access$1402(Lcom/android/systemui/statusbar/phone/PanelView;Z)Z
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/phone/PanelView;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/systemui/statusbar/phone/PanelView;->mJustPeeked:Z
 
@@ -279,7 +262,6 @@
 
 .method static synthetic access$1500(Lcom/android/systemui/statusbar/phone/PanelView;)V
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/phone/PanelView;
 
     invoke-direct {p0}, Lcom/android/systemui/statusbar/phone/PanelView;->runPeekAnimation()V
 
@@ -288,7 +270,6 @@
 
 .method static synthetic access$1600(Lcom/android/systemui/statusbar/phone/PanelView;)F
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/phone/PanelView;
 
     iget v0, p0, Lcom/android/systemui/statusbar/phone/PanelView;->mPeekHeight:F
 
@@ -297,7 +278,6 @@
 
 .method static synthetic access$1700(Lcom/android/systemui/statusbar/phone/PanelView;)Landroid/animation/ObjectAnimator;
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/phone/PanelView;
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/PanelView;->mPeekAnimator:Landroid/animation/ObjectAnimator;
 
@@ -306,7 +286,6 @@
 
 .method static synthetic access$1800(Lcom/android/systemui/statusbar/phone/PanelView;)F
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/phone/PanelView;
 
     iget v0, p0, Lcom/android/systemui/statusbar/phone/PanelView;->mExpandedFraction:F
 
@@ -315,7 +294,6 @@
 
 .method static synthetic access$1900(Lcom/android/systemui/statusbar/phone/PanelView;)F
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/phone/PanelView;
 
     iget v0, p0, Lcom/android/systemui/statusbar/phone/PanelView;->mFlingGestureMaxXVelocityPx:F
 
@@ -324,7 +302,6 @@
 
 .method static synthetic access$2000(Lcom/android/systemui/statusbar/phone/PanelView;)F
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/phone/PanelView;
 
     iget v0, p0, Lcom/android/systemui/statusbar/phone/PanelView;->mFlingGestureMaxOutputVelocityPx:F
 
@@ -333,8 +310,6 @@
 
 .method static synthetic access$202(Lcom/android/systemui/statusbar/phone/PanelView;Z)Z
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/phone/PanelView;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/systemui/statusbar/phone/PanelView;->mRubberbanding:Z
 
@@ -343,7 +318,6 @@
 
 .method static synthetic access$2100(Lcom/android/systemui/statusbar/phone/PanelView;)F
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/phone/PanelView;
 
     iget v0, p0, Lcom/android/systemui/statusbar/phone/PanelView;->mFlingGestureMinDistPx:F
 
@@ -352,7 +326,6 @@
 
 .method static synthetic access$2200(Lcom/android/systemui/statusbar/phone/PanelView;)F
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/phone/PanelView;
 
     iget v0, p0, Lcom/android/systemui/statusbar/phone/PanelView;->mFlingExpandMinVelocityPx:F
 
@@ -361,8 +334,6 @@
 
 .method static synthetic access$302(Lcom/android/systemui/statusbar/phone/PanelView;Z)Z
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/phone/PanelView;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/systemui/statusbar/phone/PanelView;->mClosing:Z
 
@@ -371,7 +342,6 @@
 
 .method static synthetic access$400(Lcom/android/systemui/statusbar/phone/PanelView;)I
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/phone/PanelView;
 
     iget v0, p0, Lcom/android/systemui/statusbar/phone/PanelView;->mTrackingPointer:I
 
@@ -380,8 +350,6 @@
 
 .method static synthetic access$402(Lcom/android/systemui/statusbar/phone/PanelView;I)I
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/phone/PanelView;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/systemui/statusbar/phone/PanelView;->mTrackingPointer:I
 
@@ -390,7 +358,6 @@
 
 .method static synthetic access$500(Lcom/android/systemui/statusbar/phone/PanelView;)[I
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/phone/PanelView;
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/PanelView;->mAbsPos:[I
 
@@ -399,8 +366,6 @@
 
 .method static synthetic access$602(Lcom/android/systemui/statusbar/phone/PanelView;Z)Z
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/phone/PanelView;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/systemui/statusbar/phone/PanelView;->mTracking:Z
 
@@ -409,7 +374,6 @@
 
 .method static synthetic access$700(Lcom/android/systemui/statusbar/phone/PanelView;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/phone/PanelView;
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/PanelView;->mHandleView:Landroid/view/View;
 
@@ -418,7 +382,6 @@
 
 .method static synthetic access$800(Lcom/android/systemui/statusbar/phone/PanelView;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/phone/PanelView;
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/PanelView;->mSecHandleView:Landroid/view/View;
 
@@ -427,7 +390,6 @@
 
 .method static synthetic access$900(Lcom/android/systemui/statusbar/phone/PanelView;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/phone/PanelView;
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/PanelView;->mHandleBottom:Landroid/view/View;
 
@@ -436,7 +398,6 @@
 
 .method private animationTick(J)V
     .locals 9
-    .param p1    # J
 
     const/4 v6, 0x0
 
@@ -1002,8 +963,6 @@
 
 .method private final varargs logf(Ljava/lang/String;[Ljava/lang/Object;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/Object;
 
     sget-object v1, Lcom/android/systemui/statusbar/phone/PanelView;->TAG:Ljava/lang/String;
 
@@ -1115,7 +1074,6 @@
 
 .method private trackMovement(Landroid/view/MotionEvent;)V
     .locals 4
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getRawX()F
 
@@ -1215,9 +1173,6 @@
 
 .method public dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     const-string v1, "[PanelView(%s): expandedHeight=%f fullHeight=%f closing=%s tracking=%s rubberbanding=%s justPeeked=%s peekAnim=%s%s timeAnim=%s%s]"
 
@@ -1419,8 +1374,6 @@
 
 .method public fling(FZ)V
     .locals 2
-    .param p1    # F
-    .param p2    # Z
 
     iput p1, p0, Lcom/android/systemui/statusbar/phone/PanelView;->mVel:F
 
@@ -1635,11 +1588,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 0
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-super/range {p0 .. p5}, Landroid/widget/FrameLayout;->onLayout(ZIIII)V
 
@@ -1648,8 +1596,6 @@
 
 .method protected onMeasure(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     invoke-super {p0, p1, p2}, Landroid/widget/FrameLayout;->onMeasure(II)V
 
@@ -1721,7 +1667,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/PanelView;->mHandleView:Landroid/view/View;
 
@@ -1734,14 +1679,12 @@
 
 .method protected onViewAdded(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     return-void
 .end method
 
 .method public setBar(Lcom/android/systemui/statusbar/phone/PanelBar;)V
     .locals 0
-    .param p1    # Lcom/android/systemui/statusbar/phone/PanelBar;
 
     iput-object p1, p0, Lcom/android/systemui/statusbar/phone/PanelView;->mBar:Lcom/android/systemui/statusbar/phone/PanelBar;
 
@@ -1750,7 +1693,6 @@
 
 .method public setExpandedFraction(F)V
     .locals 3
-    .param p1    # F
 
     invoke-static {p1}, Ljava/lang/Float;->isNaN(F)Z
 
@@ -1784,7 +1726,6 @@
 
 .method public setExpandedHeight(F)V
     .locals 2
-    .param p1    # F
 
     const/4 v0, 0x0
 
@@ -1816,7 +1757,6 @@
 
 .method public setExpandedHeightInternal(F)V
     .locals 5
-    .param p1    # F
 
     const/4 v1, 0x0
 
@@ -1902,7 +1842,6 @@
 
 .method public setRubberbandingEnabled(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/systemui/statusbar/phone/PanelView;->mRubberbandingEnabled:Z
 

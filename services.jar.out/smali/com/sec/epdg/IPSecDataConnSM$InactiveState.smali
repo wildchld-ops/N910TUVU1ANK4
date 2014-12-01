@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Lcom/sec/epdg/IPSecDataConnSM;Lcom/sec/epdg/IPSecDataConnSM$1;)V
     .locals 0
-    .param p1    # Lcom/sec/epdg/IPSecDataConnSM;
-    .param p2    # Lcom/sec/epdg/IPSecDataConnSM$1;
 
     invoke-direct {p0, p1}, Lcom/sec/epdg/IPSecDataConnSM$InactiveState;-><init>(Lcom/sec/epdg/IPSecDataConnSM;)V
 
@@ -83,7 +81,6 @@
 
 .method public processMessage(Landroid/os/Message;)Z
     .locals 8
-    .param p1    # Landroid/os/Message;
 
     const/4 v2, 0x0
 

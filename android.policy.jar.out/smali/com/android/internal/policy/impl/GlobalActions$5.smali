@@ -21,11 +21,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/internal/policy/impl/GlobalActions;IIIII)V
     .locals 6
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     iput-object p1, p0, Lcom/android/internal/policy/impl/GlobalActions$5;->this$0:Lcom/android/internal/policy/impl/GlobalActions;
 
@@ -50,7 +45,6 @@
 # virtual methods
 .method protected changeStateFromPress(Z)V
     .locals 1
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -455,7 +449,6 @@
 
 .method onToggle(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method

@@ -23,8 +23,6 @@
 # direct methods
 .method private constructor <init>(ILjava/lang/String;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,8 +35,6 @@
 
 .method static synthetic access$000(Landroid/content/Context;Ljava/lang/String;)Landroid/provider/GeocodedLocation$PhoneNumber;
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p0, p1}, Landroid/provider/GeocodedLocation$PhoneNumber;->getActualPhoneNumber(Landroid/content/Context;Ljava/lang/String;)Landroid/provider/GeocodedLocation$PhoneNumber;
 
@@ -49,7 +45,6 @@
 
 .method static synthetic access$100(Landroid/provider/GeocodedLocation$PhoneNumber;)I
     .locals 1
-    .param p0    # Landroid/provider/GeocodedLocation$PhoneNumber;
 
     iget v0, p0, Landroid/provider/GeocodedLocation$PhoneNumber;->type:I
 
@@ -58,7 +53,6 @@
 
 .method static synthetic access$200(Landroid/provider/GeocodedLocation$PhoneNumber;)Ljava/lang/String;
     .locals 1
-    .param p0    # Landroid/provider/GeocodedLocation$PhoneNumber;
 
     iget-object v0, p0, Landroid/provider/GeocodedLocation$PhoneNumber;->actualNumber:Ljava/lang/String;
 
@@ -67,8 +61,6 @@
 
 .method private static getActualPhoneNumber(Landroid/content/Context;Ljava/lang/String;)Landroid/provider/GeocodedLocation$PhoneNumber;
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -130,7 +122,6 @@
 
 .method private static getChineseActualPhoneNumber(Ljava/lang/String;)Landroid/provider/GeocodedLocation$PhoneNumber;
     .locals 10
-    .param p0    # Ljava/lang/String;
 
     const/16 v9, 0x8
 

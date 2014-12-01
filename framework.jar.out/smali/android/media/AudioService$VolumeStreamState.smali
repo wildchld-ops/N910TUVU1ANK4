@@ -56,8 +56,6 @@
 # direct methods
 .method private constructor <init>(Landroid/media/AudioService;Ljava/lang/String;I)V
     .locals 4
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     iput-object p1, p0, Landroid/media/AudioService$VolumeStreamState;->this$0:Landroid/media/AudioService;
 
@@ -113,10 +111,6 @@
 
 .method synthetic constructor <init>(Landroid/media/AudioService;Ljava/lang/String;ILandroid/media/AudioService$1;)V
     .locals 0
-    .param p1    # Landroid/media/AudioService;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Landroid/media/AudioService$1;
 
     invoke-direct {p0, p1, p2, p3}, Landroid/media/AudioService$VolumeStreamState;-><init>(Landroid/media/AudioService;Ljava/lang/String;I)V
 
@@ -125,7 +119,6 @@
 
 .method static synthetic access$1900(Landroid/media/AudioService$VolumeStreamState;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Landroid/media/AudioService$VolumeStreamState;
 
     iget-object v0, p0, Landroid/media/AudioService$VolumeStreamState;->mDeathHandlers:Ljava/util/ArrayList;
 
@@ -134,7 +127,6 @@
 
 .method static synthetic access$300(Landroid/media/AudioService$VolumeStreamState;)Z
     .locals 1
-    .param p0    # Landroid/media/AudioService$VolumeStreamState;
 
     invoke-direct {p0}, Landroid/media/AudioService$VolumeStreamState;->isMuted()Z
 
@@ -145,8 +137,6 @@
 
 .method static synthetic access$500(Landroid/media/AudioService$VolumeStreamState;Ljava/io/PrintWriter;)V
     .locals 0
-    .param p0    # Landroid/media/AudioService$VolumeStreamState;
-    .param p1    # Ljava/io/PrintWriter;
 
     invoke-direct {p0, p1}, Landroid/media/AudioService$VolumeStreamState;->dump(Ljava/io/PrintWriter;)V
 
@@ -155,7 +145,6 @@
 
 .method static synthetic access$600(Landroid/media/AudioService$VolumeStreamState;)Ljava/lang/String;
     .locals 1
-    .param p0    # Landroid/media/AudioService$VolumeStreamState;
 
     iget-object v0, p0, Landroid/media/AudioService$VolumeStreamState;->mVolumeIndexSettingName:Ljava/lang/String;
 
@@ -164,7 +153,6 @@
 
 .method static synthetic access$6300(Landroid/media/AudioService$VolumeStreamState;)I
     .locals 1
-    .param p0    # Landroid/media/AudioService$VolumeStreamState;
 
     iget v0, p0, Landroid/media/AudioService$VolumeStreamState;->mIndexMax:I
 
@@ -173,7 +161,6 @@
 
 .method static synthetic access$700(Landroid/media/AudioService$VolumeStreamState;)Ljava/util/concurrent/ConcurrentHashMap;
     .locals 1
-    .param p0    # Landroid/media/AudioService$VolumeStreamState;
 
     iget-object v0, p0, Landroid/media/AudioService$VolumeStreamState;->mIndex:Ljava/util/concurrent/ConcurrentHashMap;
 
@@ -182,7 +169,6 @@
 
 .method static synthetic access$800(Landroid/media/AudioService$VolumeStreamState;)I
     .locals 1
-    .param p0    # Landroid/media/AudioService$VolumeStreamState;
 
     iget v0, p0, Landroid/media/AudioService$VolumeStreamState;->mStreamType:I
 
@@ -191,7 +177,6 @@
 
 .method private dump(Ljava/io/PrintWriter;)V
     .locals 5
-    .param p1    # Ljava/io/PrintWriter;
 
     const-string v3, "   Mute count: "
 
@@ -313,8 +298,6 @@
 
 .method private getDeathHandler(Landroid/os/IBinder;Z)Landroid/media/AudioService$VolumeStreamState$VolumeDeathHandler;
     .locals 6
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Z
 
     iget-object v4, p0, Landroid/media/AudioService$VolumeStreamState;->mDeathHandlers:Ljava/util/ArrayList;
 
@@ -378,7 +361,6 @@
 
 .method private getValidIndex(I)I
     .locals 1
-    .param p1    # I
 
     if-gez p1, :cond_1
 
@@ -533,8 +515,6 @@
 # virtual methods
 .method public adjustIndex(II)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0, p2}, Landroid/media/AudioService$VolumeStreamState;->getIndex(I)I
 
@@ -697,7 +677,6 @@
 
 .method public applyDeviceVolume(I)V
     .locals 4
-    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -812,7 +791,6 @@
 
 .method public getIndex(I)I
     .locals 4
-    .param p1    # I
 
     const-class v2, Landroid/media/AudioService$VolumeStreamState;
 
@@ -876,7 +854,6 @@
 
 .method public getSettingNameForDevice(I)Ljava/lang/String;
     .locals 4
-    .param p1    # I
 
     iget-object v0, p0, Landroid/media/AudioService$VolumeStreamState;->mVolumeIndexSettingName:Ljava/lang/String;
 
@@ -929,8 +906,6 @@
 
 .method public mute(Landroid/os/IBinder;Z)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Z
 
     const-class v2, Landroid/media/AudioService$VolumeStreamState;
 
@@ -1175,7 +1150,6 @@
 
 .method public setAllIndexes(Landroid/media/AudioService$VolumeStreamState;)V
     .locals 9
-    .param p1    # Landroid/media/AudioService$VolumeStreamState;
 
     const-class v7, Landroid/media/AudioService$VolumeStreamState;
 
@@ -1368,8 +1342,6 @@
 
 .method public setIndex(II)Z
     .locals 11
-    .param p1    # I
-    .param p2    # I
 
     const/4 v5, 0x1
 

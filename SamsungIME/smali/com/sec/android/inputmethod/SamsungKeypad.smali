@@ -107,7 +107,6 @@
 
 .method static synthetic access$000(Lcom/sec/android/inputmethod/SamsungKeypad;)Lcom/diotek/ime/framework/common/InputManager;
     .locals 1
-    .param p0    # Lcom/sec/android/inputmethod/SamsungKeypad;
 
     iget-object v0, p0, Lcom/sec/android/inputmethod/SamsungKeypad;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -215,9 +214,6 @@
 # virtual methods
 .method protected dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     invoke-super {p0, p1, p2, p3}, Landroid/inputmethodservice/InputMethodService;->dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
 
@@ -250,8 +246,6 @@
 
 .method public onAppPrivateCommand(Ljava/lang/String;Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Bundle;
 
     invoke-super {p0, p1, p2}, Landroid/inputmethodservice/InputMethodService;->onAppPrivateCommand(Ljava/lang/String;Landroid/os/Bundle;)V
 
@@ -277,7 +271,6 @@
 
 .method public onComputeInsets(Landroid/inputmethodservice/InputMethodService$Insets;)V
     .locals 1
-    .param p1    # Landroid/inputmethodservice/InputMethodService$Insets;
 
     invoke-super {p0, p1}, Landroid/inputmethodservice/InputMethodService;->onComputeInsets(Landroid/inputmethodservice/InputMethodService$Insets;)V
 
@@ -295,7 +288,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 2
-    .param p1    # Landroid/content/res/Configuration;
 
     iget-object v1, p0, Lcom/sec/android/inputmethod/SamsungKeypad;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -570,7 +562,6 @@
 
 .method public onCurrentInputMethodSubtypeChanged(Landroid/view/inputmethod/InputMethodSubtype;)V
     .locals 0
-    .param p1    # Landroid/view/inputmethod/InputMethodSubtype;
 
     invoke-super {p0, p1}, Landroid/inputmethodservice/InputMethodService;->onCurrentInputMethodSubtypeChanged(Landroid/view/inputmethod/InputMethodSubtype;)V
 
@@ -591,7 +582,6 @@
 
 .method public onDisplayCompletions([Landroid/view/inputmethod/CompletionInfo;)V
     .locals 2
-    .param p1    # [Landroid/view/inputmethod/CompletionInfo;
 
     invoke-super {p0, p1}, Landroid/inputmethodservice/InputMethodService;->onDisplayCompletions([Landroid/view/inputmethod/CompletionInfo;)V
 
@@ -710,7 +700,6 @@
 
 .method public onFinishInputView(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-super {p0, p1}, Landroid/inputmethodservice/InputMethodService;->onFinishInputView(Z)V
 
@@ -723,8 +712,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 13
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     :try_start_0
     invoke-virtual {p2}, Landroid/view/KeyEvent;->getSource()I
@@ -1973,8 +1960,6 @@
 
 .method public onKeyLongPress(ILandroid/view/KeyEvent;)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     iget-object v1, p0, Lcom/sec/android/inputmethod/SamsungKeypad;->mRepository:Lcom/diotek/ime/framework/repository/Repository;
 
@@ -2069,9 +2054,6 @@
 
 .method public onKeyMultiple(IILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/view/KeyEvent;
 
     invoke-super {p0, p1, p2, p3}, Landroid/inputmethodservice/InputMethodService;->onKeyMultiple(IILandroid/view/KeyEvent;)Z
 
@@ -2082,8 +2064,6 @@
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 9
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/16 v6, 0x3d
 
@@ -2539,8 +2519,6 @@
 
 .method public onStartInput(Landroid/view/inputmethod/EditorInfo;Z)V
     .locals 2
-    .param p1    # Landroid/view/inputmethod/EditorInfo;
-    .param p2    # Z
 
     sget-boolean v0, Lcom/diotek/ime/framework/util/Debug;->DEBUG:Z
 
@@ -2574,8 +2552,6 @@
 
 .method public onStartInputView(Landroid/view/inputmethod/EditorInfo;Z)V
     .locals 11
-    .param p1    # Landroid/view/inputmethod/EditorInfo;
-    .param p2    # Z
 
     const/4 v6, 0x1
 
@@ -2897,12 +2873,6 @@
 
 .method public onUpdateSelection(IIIIII)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     sget-boolean v0, Lcom/diotek/ime/framework/util/Debug;->DEBUG:Z
 
@@ -3004,7 +2974,6 @@
 
 .method public onViewClicked(Z)V
     .locals 2
-    .param p1    # Z
 
     sget-boolean v0, Lcom/diotek/ime/framework/util/Debug;->DEBUG:Z
 
@@ -3093,7 +3062,6 @@
 
 .method public setCandidatesView(Landroid/view/View;)V
     .locals 7
-    .param p1    # Landroid/view/View;
 
     const/4 v6, -0x1
 
@@ -3260,7 +3228,6 @@
 
 .method public setCandidatesViewShown(Z)V
     .locals 0
-    .param p1    # Z
 
     invoke-super {p0, p1}, Landroid/inputmethodservice/InputMethodService;->setCandidatesViewShown(Z)V
 

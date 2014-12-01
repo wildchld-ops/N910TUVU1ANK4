@@ -148,7 +148,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 13
-    .param p1    # Landroid/content/Context;
 
     const/4 v12, 0x0
 
@@ -412,7 +411,6 @@
 
 .method static synthetic access$000(Lcom/android/internal/widget/ScrollingTabContainerView;)Landroid/widget/LinearLayout;
     .locals 1
-    .param p0    # Lcom/android/internal/widget/ScrollingTabContainerView;
 
     iget-object v0, p0, Lcom/android/internal/widget/ScrollingTabContainerView;->mTabLayout:Landroid/widget/LinearLayout;
 
@@ -421,7 +419,6 @@
 
 .method static synthetic access$100(Lcom/android/internal/widget/ScrollingTabContainerView;)Z
     .locals 1
-    .param p0    # Lcom/android/internal/widget/ScrollingTabContainerView;
 
     iget-boolean v0, p0, Lcom/android/internal/widget/ScrollingTabContainerView;->mtwTabLayoutMoveAniEnabled:Z
 
@@ -438,7 +435,6 @@
 
 .method static synthetic access$202(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/internal/widget/ScrollingTabContainerView;->mtwEnablePreDraw:Z
 
@@ -447,7 +443,6 @@
 
 .method static synthetic access$500(Lcom/android/internal/widget/ScrollingTabContainerView;)Z
     .locals 1
-    .param p0    # Lcom/android/internal/widget/ScrollingTabContainerView;
 
     iget-boolean v0, p0, Lcom/android/internal/widget/ScrollingTabContainerView;->mIsInTouchMode:Z
 
@@ -456,8 +451,6 @@
 
 .method static synthetic access$502(Lcom/android/internal/widget/ScrollingTabContainerView;Z)Z
     .locals 0
-    .param p0    # Lcom/android/internal/widget/ScrollingTabContainerView;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/internal/widget/ScrollingTabContainerView;->mIsInTouchMode:Z
 
@@ -466,7 +459,6 @@
 
 .method static synthetic access$600(Lcom/android/internal/widget/ScrollingTabContainerView;)I
     .locals 1
-    .param p0    # Lcom/android/internal/widget/ScrollingTabContainerView;
 
     iget v0, p0, Lcom/android/internal/widget/ScrollingTabContainerView;->mSelectedTabIndex:I
 
@@ -475,7 +467,6 @@
 
 .method static synthetic access$700(Lcom/android/internal/widget/ScrollingTabContainerView;)Z
     .locals 1
-    .param p0    # Lcom/android/internal/widget/ScrollingTabContainerView;
 
     iget-boolean v0, p0, Lcom/android/internal/widget/ScrollingTabContainerView;->mIsParentThemeDeviceDefault:Z
 
@@ -484,7 +475,6 @@
 
 .method static synthetic access$800(Lcom/android/internal/widget/ScrollingTabContainerView;)Z
     .locals 1
-    .param p0    # Lcom/android/internal/widget/ScrollingTabContainerView;
 
     invoke-direct {p0}, Lcom/android/internal/widget/ScrollingTabContainerView;->isCollapsed()Z
 
@@ -495,9 +485,6 @@
 
 .method static synthetic access$900(Lcom/android/internal/widget/ScrollingTabContainerView;Landroid/app/ActionBar$Tab;Z)Lcom/android/internal/widget/ScrollingTabContainerView$TabView;
     .locals 1
-    .param p0    # Lcom/android/internal/widget/ScrollingTabContainerView;
-    .param p1    # Landroid/app/ActionBar$Tab;
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/internal/widget/ScrollingTabContainerView;->createTabView(Landroid/app/ActionBar$Tab;Z)Lcom/android/internal/widget/ScrollingTabContainerView$TabView;
 
@@ -574,8 +561,6 @@
 
 .method private createTabView(Landroid/app/ActionBar$Tab;Z)Lcom/android/internal/widget/ScrollingTabContainerView$TabView;
     .locals 7
-    .param p1    # Landroid/app/ActionBar$Tab;
-    .param p2    # Z
 
     const/4 v6, 0x0
 
@@ -788,9 +773,6 @@
 # virtual methods
 .method public addTab(Landroid/app/ActionBar$Tab;IZ)V
     .locals 6
-    .param p1    # Landroid/app/ActionBar$Tab;
-    .param p2    # I
-    .param p3    # Z
 
     const/4 v5, 0x0
 
@@ -844,8 +826,6 @@
 
 .method public addTab(Landroid/app/ActionBar$Tab;Z)V
     .locals 6
-    .param p1    # Landroid/app/ActionBar$Tab;
-    .param p2    # Z
 
     const/4 v5, 0x0
 
@@ -899,7 +879,6 @@
 
 .method public animateToTab(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/internal/widget/ScrollingTabContainerView;->mTabLayout:Landroid/widget/LinearLayout;
 
@@ -931,7 +910,6 @@
 
 .method public animateToVisibility(I)V
     .locals 7
-    .param p1    # I
 
     const-wide/16 v5, 0xc8
 
@@ -1024,7 +1002,6 @@
 
 .method public dispatchHoverEvent(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual {p0}, Landroid/view/View;->isEnabled()Z
 
@@ -1051,7 +1028,6 @@
 
 .method public dispatchTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual {p0}, Landroid/view/View;->isEnabled()Z
 
@@ -1137,7 +1113,6 @@
 
 .method protected onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 5
-    .param p1    # Landroid/content/res/Configuration;
 
     const/4 v4, 0x0
 
@@ -1242,9 +1217,6 @@
 
 .method public onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
     .locals 2
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1279,8 +1251,6 @@
 
 .method public onMeasure(II)V
     .locals 28
-    .param p1    # I
-    .param p2    # I
 
     invoke-static/range {p1 .. p1}, Landroid/view/View$MeasureSpec;->getMode(I)I
 
@@ -2068,10 +2038,6 @@
 
 .method protected onSizeChanged(IIII)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-super {p0, p1, p2, p3, p4}, Landroid/widget/HorizontalScrollView;->onSizeChanged(IIII)V
 
@@ -2080,7 +2046,6 @@
 
 .method public onWindowFocusChanged(Z)V
     .locals 6
-    .param p1    # Z
 
     const/4 v5, 0x0
 
@@ -2168,7 +2133,6 @@
 
 .method public removeTabAt(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/internal/widget/ScrollingTabContainerView;->mTabLayout:Landroid/widget/LinearLayout;
 
@@ -2201,7 +2165,6 @@
 
 .method public setAllowCollapse(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/internal/widget/ScrollingTabContainerView;->mAllowCollapse:Z
 
@@ -2210,7 +2173,6 @@
 
 .method public setContentHeight(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/internal/widget/ScrollingTabContainerView;->mContentHeight:I
 
@@ -2221,7 +2183,6 @@
 
 .method public setTabSelected(I)V
     .locals 12
-    .param p1    # I
 
     const/4 v11, 0x0
 
@@ -2465,7 +2426,6 @@
 
 .method public twSetSCTabMoveEnabled(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/internal/widget/ScrollingTabContainerView;->mtwTabLayoutMoveAniEnabled:Z
 
@@ -2474,7 +2434,6 @@
 
 .method public updateTab(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/internal/widget/ScrollingTabContainerView;->mTabLayout:Landroid/widget/LinearLayout;
 

@@ -46,8 +46,6 @@
 # virtual methods
 .method public final compare(Ljava/lang/Integer;Ljava/lang/Integer;)I
     .locals 2
-    .param p1    # Ljava/lang/Integer;
-    .param p2    # Ljava/lang/Integer;
 
     invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
 
@@ -64,8 +62,6 @@
 
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p1, Ljava/lang/Integer;
 

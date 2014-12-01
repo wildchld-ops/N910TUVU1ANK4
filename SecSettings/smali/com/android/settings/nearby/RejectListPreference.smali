@@ -34,8 +34,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -68,7 +66,6 @@
 
 .method static synthetic access$002(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/settings/nearby/RejectListPreference;->isEmptyPopup:Z
 
@@ -123,7 +120,6 @@
 # virtual methods
 .method protected onPrepareDialogBuilder(Landroid/app/AlertDialog$Builder;)V
     .locals 3
-    .param p1    # Landroid/app/AlertDialog$Builder;
 
     const-string v0, "RejectListPreference"
 
@@ -140,7 +136,6 @@
 
 .method public setEnabler(Lcom/android/settings/nearby/NearbyEnabler;)V
     .locals 0
-    .param p1    # Lcom/android/settings/nearby/NearbyEnabler;
 
     iput-object p1, p0, Lcom/android/settings/nearby/RejectListPreference;->mEnabler:Lcom/android/settings/nearby/NearbyEnabler;
 
@@ -149,7 +144,6 @@
 
 .method protected showDialog(Landroid/os/Bundle;)V
     .locals 7
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v6, 0x1
 

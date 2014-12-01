@@ -223,7 +223,6 @@
 
 .method private getConvertedCategory(I)I
     .locals 6
-    .param p1    # I
 
     const/4 v5, 0x6
 
@@ -547,7 +546,6 @@
 # virtual methods
 .method public getCategoryByKeyCode(I)I
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -624,7 +622,6 @@
 
 .method public getEmoticonMapByCategory(I)Ljava/util/ArrayList;
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",

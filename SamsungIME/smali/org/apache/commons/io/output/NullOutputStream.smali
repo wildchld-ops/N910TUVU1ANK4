@@ -32,14 +32,12 @@
 # virtual methods
 .method public write(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public write([B)V
     .locals 0
-    .param p1    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -51,9 +49,6 @@
 
 .method public write([BII)V
     .locals 0
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
 
     return-void
 .end method

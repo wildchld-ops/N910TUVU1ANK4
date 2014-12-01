@@ -153,7 +153,6 @@
 
 .method public static valueOf(Ljava/lang/String;)Landroid/text/TextUtils$TruncateAt;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-class v0, Landroid/text/TextUtils$TruncateAt;
 

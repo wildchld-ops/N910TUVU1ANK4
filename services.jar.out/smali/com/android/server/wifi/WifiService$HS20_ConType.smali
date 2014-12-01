@@ -103,7 +103,6 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/android/server/wifi/WifiService$HS20_ConType;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-class v0, Lcom/android/server/wifi/WifiService$HS20_ConType;
 

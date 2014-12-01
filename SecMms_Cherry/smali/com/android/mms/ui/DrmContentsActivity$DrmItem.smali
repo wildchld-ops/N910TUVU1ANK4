@@ -35,8 +35,6 @@
 
 .method synthetic constructor <init>(Lcom/android/mms/ui/DrmContentsActivity;Lcom/android/mms/ui/DrmContentsActivity$1;)V
     .locals 0
-    .param p1    # Lcom/android/mms/ui/DrmContentsActivity;
-    .param p2    # Lcom/android/mms/ui/DrmContentsActivity$1;
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/DrmContentsActivity$DrmItem;-><init>(Lcom/android/mms/ui/DrmContentsActivity;)V
 
@@ -63,8 +61,6 @@
 
 .method public setStringOnItem(Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/mms/ui/DrmContentsActivity$DrmItem;->mDrmFilePath:Ljava/lang/String;
 

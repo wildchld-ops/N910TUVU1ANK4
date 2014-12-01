@@ -137,7 +137,6 @@
 
 .method static synthetic access$000(Lcom/sec/android/app/camera/CropImage;)Lcom/sec/android/app/camera/gallery/IImage;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/CropImage;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/CropImage;->mImage:Lcom/sec/android/app/camera/gallery/IImage;
 
@@ -146,7 +145,6 @@
 
 .method static synthetic access$100(Lcom/sec/android/app/camera/CropImage;)Landroid/graphics/Bitmap;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/CropImage;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/CropImage;->mBitmap:Landroid/graphics/Bitmap;
 
@@ -155,8 +153,6 @@
 
 .method static synthetic access$102(Lcom/sec/android/app/camera/CropImage;Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/CropImage;
-    .param p1    # Landroid/graphics/Bitmap;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/CropImage;->mBitmap:Landroid/graphics/Bitmap;
 
@@ -165,7 +161,6 @@
 
 .method static synthetic access$200(Lcom/sec/android/app/camera/CropImage;)Lcom/sec/android/app/camera/CropImageView;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/CropImage;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/CropImage;->mImageView:Lcom/sec/android/app/camera/CropImageView;
 
@@ -174,7 +169,6 @@
 
 .method static synthetic access$300(Lcom/sec/android/app/camera/CropImage;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/CropImage;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/CropImage;->mHandler:Landroid/os/Handler;
 
@@ -183,8 +177,6 @@
 
 .method static synthetic access$400(Lcom/sec/android/app/camera/CropImage;Landroid/graphics/Bitmap;)V
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/CropImage;
-    .param p1    # Landroid/graphics/Bitmap;
 
     invoke-direct {p0, p1}, Lcom/sec/android/app/camera/CropImage;->saveOutput(Landroid/graphics/Bitmap;)V
 
@@ -193,7 +185,6 @@
 
 .method static synthetic access$500(Lcom/sec/android/app/camera/CropImage;)V
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/CropImage;
 
     invoke-direct {p0}, Lcom/sec/android/app/camera/CropImage;->onSaveClicked()V
 
@@ -202,7 +193,6 @@
 
 .method static synthetic access$600(Lcom/sec/android/app/camera/CropImage;)Lcom/sec/android/app/camera/gallery/IImageList;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/CropImage;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/CropImage;->mAllImages:Lcom/sec/android/app/camera/gallery/IImageList;
 
@@ -211,7 +201,6 @@
 
 .method static synthetic access$700(Lcom/sec/android/app/camera/CropImage;)I
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/CropImage;
 
     iget v0, p0, Lcom/sec/android/app/camera/CropImage;->mAspectX:I
 
@@ -220,7 +209,6 @@
 
 .method static synthetic access$800(Lcom/sec/android/app/camera/CropImage;)I
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/CropImage;
 
     iget v0, p0, Lcom/sec/android/app/camera/CropImage;->mAspectY:I
 
@@ -936,7 +924,6 @@
 
 .method private saveOutput(Landroid/graphics/Bitmap;)V
     .locals 25
-    .param p1    # Landroid/graphics/Bitmap;
 
     move-object/from16 v0, p0
 
@@ -1478,7 +1465,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 0
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -1487,7 +1473,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v2, 0x1
 
@@ -1561,8 +1546,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v1, 0x1
 

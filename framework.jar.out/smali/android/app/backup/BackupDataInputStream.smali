@@ -16,7 +16,6 @@
 # direct methods
 .method constructor <init>(Landroid/app/backup/BackupDataInput;)V
     .locals 0
-    .param p1    # Landroid/app/backup/BackupDataInput;
 
     invoke-direct {p0}, Ljava/io/InputStream;-><init>()V
 
@@ -69,7 +68,6 @@
 
 .method public read([B)I
     .locals 3
-    .param p1    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -91,9 +89,6 @@
 
 .method public read([BII)I
     .locals 1
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

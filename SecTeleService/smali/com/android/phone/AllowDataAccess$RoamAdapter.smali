@@ -101,7 +101,7 @@
     :goto_0
     const v4, 0x7f0a009b
 
-    invoke-virtual {v3, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    invoke-virtual {v3, v4}, Landroid/widget/RelativeLayout;->findViewById(I)Landroid/view/View;
 
     move-result-object v2
 
@@ -117,7 +117,7 @@
 
     const v4, 0x7f0a010b
 
-    invoke-virtual {v3, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    invoke-virtual {v3, v4}, Landroid/widget/RelativeLayout;->findViewById(I)Landroid/view/View;
 
     move-result-object v1
 
@@ -149,7 +149,7 @@
     const/4 v0, 0x1
 
     :cond_0
-    invoke-virtual {v1, v0}, Landroid/widget/CompoundButton;->setChecked(Z)V
+    invoke-virtual {v1, v0}, Landroid/widget/RadioButton;->setChecked(Z)V
 
     return-object v3
 

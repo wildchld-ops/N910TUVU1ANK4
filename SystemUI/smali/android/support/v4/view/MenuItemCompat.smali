@@ -83,7 +83,6 @@
 
 .method public static collapseActionView(Landroid/view/MenuItem;)Z
     .locals 1
-    .param p0    # Landroid/view/MenuItem;
 
     instance-of v0, p0, Landroid/support/v4/internal/view/SupportMenuItem;
 
@@ -110,7 +109,6 @@
 
 .method public static expandActionView(Landroid/view/MenuItem;)Z
     .locals 1
-    .param p0    # Landroid/view/MenuItem;
 
     instance-of v0, p0, Landroid/support/v4/internal/view/SupportMenuItem;
 
@@ -137,7 +135,6 @@
 
 .method public static getActionProvider(Landroid/view/MenuItem;)Landroid/support/v4/view/ActionProvider;
     .locals 2
-    .param p0    # Landroid/view/MenuItem;
 
     instance-of v0, p0, Landroid/support/v4/internal/view/SupportMenuItem;
 
@@ -166,7 +163,6 @@
 
 .method public static getActionView(Landroid/view/MenuItem;)Landroid/view/View;
     .locals 1
-    .param p0    # Landroid/view/MenuItem;
 
     instance-of v0, p0, Landroid/support/v4/internal/view/SupportMenuItem;
 
@@ -193,7 +189,6 @@
 
 .method public static isActionViewExpanded(Landroid/view/MenuItem;)Z
     .locals 1
-    .param p0    # Landroid/view/MenuItem;
 
     instance-of v0, p0, Landroid/support/v4/internal/view/SupportMenuItem;
 
@@ -220,8 +215,6 @@
 
 .method public static setActionProvider(Landroid/view/MenuItem;Landroid/support/v4/view/ActionProvider;)Landroid/view/MenuItem;
     .locals 2
-    .param p0    # Landroid/view/MenuItem;
-    .param p1    # Landroid/support/v4/view/ActionProvider;
 
     instance-of v0, p0, Landroid/support/v4/internal/view/SupportMenuItem;
 
@@ -248,8 +241,6 @@
 
 .method public static setActionView(Landroid/view/MenuItem;I)Landroid/view/MenuItem;
     .locals 1
-    .param p0    # Landroid/view/MenuItem;
-    .param p1    # I
 
     instance-of v0, p0, Landroid/support/v4/internal/view/SupportMenuItem;
 
@@ -276,8 +267,6 @@
 
 .method public static setActionView(Landroid/view/MenuItem;Landroid/view/View;)Landroid/view/MenuItem;
     .locals 1
-    .param p0    # Landroid/view/MenuItem;
-    .param p1    # Landroid/view/View;
 
     instance-of v0, p0, Landroid/support/v4/internal/view/SupportMenuItem;
 
@@ -304,8 +293,6 @@
 
 .method public static setOnActionExpandListener(Landroid/view/MenuItem;Landroid/support/v4/view/MenuItemCompat$OnActionExpandListener;)Landroid/view/MenuItem;
     .locals 1
-    .param p0    # Landroid/view/MenuItem;
-    .param p1    # Landroid/support/v4/view/MenuItemCompat$OnActionExpandListener;
 
     instance-of v0, p0, Landroid/support/v4/internal/view/SupportMenuItem;
 
@@ -332,8 +319,6 @@
 
 .method public static setShowAsAction(Landroid/view/MenuItem;I)V
     .locals 1
-    .param p0    # Landroid/view/MenuItem;
-    .param p1    # I
 
     instance-of v0, p0, Landroid/support/v4/internal/view/SupportMenuItem;
 

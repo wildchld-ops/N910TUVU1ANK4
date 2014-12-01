@@ -27,7 +27,6 @@
 # virtual methods
 .method public getDragToOpenListener(Ljava/lang/Object;)Landroid/view/View$OnTouchListener;
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     invoke-static {p1}, Landroid/support/v4/widget/PopupMenuCompatKitKat;->getDragToOpenListener(Ljava/lang/Object;)Landroid/view/View$OnTouchListener;
 

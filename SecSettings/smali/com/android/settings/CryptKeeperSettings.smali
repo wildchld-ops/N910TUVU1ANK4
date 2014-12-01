@@ -80,7 +80,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/CryptKeeperSettings;)Landroid/dirEncryption/DirEncryptionManager;
     .locals 1
-    .param p0    # Lcom/android/settings/CryptKeeperSettings;
 
     iget-object v0, p0, Lcom/android/settings/CryptKeeperSettings;->mDem:Landroid/dirEncryption/DirEncryptionManager;
 
@@ -89,7 +88,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/CryptKeeperSettings;)Landroid/widget/Button;
     .locals 1
-    .param p0    # Lcom/android/settings/CryptKeeperSettings;
 
     iget-object v0, p0, Lcom/android/settings/CryptKeeperSettings;->mInitiateButton:Landroid/widget/Button;
 
@@ -98,8 +96,6 @@
 
 .method static synthetic access$1000(Lcom/android/settings/CryptKeeperSettings;I)Z
     .locals 1
-    .param p0    # Lcom/android/settings/CryptKeeperSettings;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/settings/CryptKeeperSettings;->runKeyguardConfirmation(I)Z
 
@@ -110,7 +106,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/CryptKeeperSettings;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/settings/CryptKeeperSettings;
 
     iget-object v0, p0, Lcom/android/settings/CryptKeeperSettings;->mPowerWarning:Landroid/view/View;
 
@@ -119,7 +114,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/CryptKeeperSettings;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/android/settings/CryptKeeperSettings;
 
     iget-object v0, p0, Lcom/android/settings/CryptKeeperSettings;->mBatteryWarning:Landroid/widget/TextView;
 
@@ -128,7 +122,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/CryptKeeperSettings;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/settings/CryptKeeperSettings;
 
     iget-object v0, p0, Lcom/android/settings/CryptKeeperSettings;->mSDcardOngoingWarning:Landroid/view/View;
 
@@ -137,7 +130,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/CryptKeeperSettings;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/android/settings/CryptKeeperSettings;
 
     iget-object v0, p0, Lcom/android/settings/CryptKeeperSettings;->mPasswordWarning:Landroid/widget/TextView;
 
@@ -146,7 +138,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/CryptKeeperSettings;)Landroid/app/Activity;
     .locals 1
-    .param p0    # Lcom/android/settings/CryptKeeperSettings;
 
     iget-object v0, p0, Lcom/android/settings/CryptKeeperSettings;->mParent:Landroid/app/Activity;
 
@@ -155,8 +146,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/CryptKeeperSettings;I)I
     .locals 1
-    .param p0    # Lcom/android/settings/CryptKeeperSettings;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/settings/CryptKeeperSettings;->upgradeQualityForEncryption(I)I
 
@@ -167,7 +156,6 @@
 
 .method static synthetic access$800(Lcom/android/settings/CryptKeeperSettings;)Landroid/app/Fragment;
     .locals 1
-    .param p0    # Lcom/android/settings/CryptKeeperSettings;
 
     iget-object v0, p0, Lcom/android/settings/CryptKeeperSettings;->mThis:Landroid/app/Fragment;
 
@@ -176,11 +164,6 @@
 
 .method static synthetic access$900(Lcom/android/settings/CryptKeeperSettings;Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/CryptKeeperSettings;
-    .param p1    # Landroid/app/Fragment;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Landroid/os/Bundle;
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/settings/CryptKeeperSettings;->startFragment(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;)Z
 
@@ -191,7 +174,6 @@
 
 .method private runKeyguardConfirmation(I)Z
     .locals 6
-    .param p1    # I
 
     new-instance v3, Lcom/android/internal/widget/LockPatternUtils;
 
@@ -311,10 +293,6 @@
 
 .method private startFragment(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;)Z
     .locals 7
-    .param p1    # Landroid/app/Fragment;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Landroid/os/Bundle;
 
     iget-object v1, p0, Lcom/android/settings/CryptKeeperSettings;->mParent:Landroid/app/Activity;
 
@@ -391,7 +369,6 @@
 
 .method private upgradeQualityForEncryption(I)I
     .locals 6
-    .param p1    # I
 
     const/high16 v5, 0x20000
 
@@ -446,7 +423,6 @@
 # virtual methods
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onActivityCreated(Landroid/os/Bundle;)V
 
@@ -455,9 +431,6 @@
 
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     invoke-super {p0, p1, p2, p3}, Landroid/app/Fragment;->onActivityResult(IILandroid/content/Intent;)V
 
@@ -495,7 +468,6 @@
 
 .method public onAttach(Landroid/app/Activity;)V
     .locals 2
-    .param p1    # Landroid/app/Activity;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onAttach(Landroid/app/Activity;)V
 
@@ -514,9 +486,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 6
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const/4 v2, 0x0
 

@@ -36,15 +36,12 @@
 # virtual methods
 .method public onAccuracyChanged(Landroid/hardware/Sensor;I)V
     .locals 0
-    .param p1    # Landroid/hardware/Sensor;
-    .param p2    # I
 
     return-void
 .end method
 
 .method public onSensorChanged(Landroid/hardware/SensorEvent;)V
     .locals 6
-    .param p1    # Landroid/hardware/SensorEvent;
 
     const/4 v5, 0x1
 
@@ -195,7 +192,6 @@
 
 .method public setInputKeys(Z)V
     .locals 10
-    .param p1    # Z
 
     const/4 v4, 0x0
 

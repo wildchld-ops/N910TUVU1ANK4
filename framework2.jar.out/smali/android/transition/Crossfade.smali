@@ -60,7 +60,6 @@
 
 .method static synthetic access$000(Landroid/transition/Crossfade;)I
     .locals 1
-    .param p0    # Landroid/transition/Crossfade;
 
     iget v0, p0, Landroid/transition/Crossfade;->mFadeBehavior:I
 
@@ -69,7 +68,6 @@
 
 .method private captureValues(Landroid/transition/TransitionValues;)V
     .locals 8
-    .param p1    # Landroid/transition/TransitionValues;
 
     const/4 v7, 0x0
 
@@ -169,7 +167,6 @@
 # virtual methods
 .method public captureEndValues(Landroid/transition/TransitionValues;)V
     .locals 0
-    .param p1    # Landroid/transition/TransitionValues;
 
     invoke-direct {p0, p1}, Landroid/transition/Crossfade;->captureValues(Landroid/transition/TransitionValues;)V
 
@@ -178,7 +175,6 @@
 
 .method public captureStartValues(Landroid/transition/TransitionValues;)V
     .locals 0
-    .param p1    # Landroid/transition/TransitionValues;
 
     invoke-direct {p0, p1}, Landroid/transition/Crossfade;->captureValues(Landroid/transition/TransitionValues;)V
 
@@ -187,9 +183,6 @@
 
 .method public createAnimator(Landroid/view/ViewGroup;Landroid/transition/TransitionValues;Landroid/transition/TransitionValues;)Landroid/animation/Animator;
     .locals 21
-    .param p1    # Landroid/view/ViewGroup;
-    .param p2    # Landroid/transition/TransitionValues;
-    .param p3    # Landroid/transition/TransitionValues;
 
     if-eqz p2, :cond_0
 
@@ -602,7 +595,6 @@
 
 .method public setFadeBehavior(I)Landroid/transition/Crossfade;
     .locals 1
-    .param p1    # I
 
     if-ltz p1, :cond_0
 
@@ -618,7 +610,6 @@
 
 .method public setResizeBehavior(I)Landroid/transition/Crossfade;
     .locals 1
-    .param p1    # I
 
     if-ltz p1, :cond_0
 

@@ -15,8 +15,6 @@
 # direct methods
 .method protected constructor <init>(Lcom/android/mms/dom/DocumentImpl;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Lcom/android/mms/dom/DocumentImpl;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/mms/dom/NodeImpl;-><init>(Lcom/android/mms/dom/DocumentImpl;)V
 
@@ -35,7 +33,6 @@
 # virtual methods
 .method public getAttribute(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lcom/android/mms/dom/ElementImpl;->getAttributeNode(Ljava/lang/String;)Lorg/w3c/dom/Attr;
 
@@ -55,8 +52,6 @@
 
 .method public getAttributeNS(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -65,7 +60,6 @@
 
 .method public getAttributeNode(Ljava/lang/String;)Lorg/w3c/dom/Attr;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/mms/dom/ElementImpl;->mAttributes:Lorg/w3c/dom/NamedNodeMap;
 
@@ -80,8 +74,6 @@
 
 .method public getAttributeNodeNS(Ljava/lang/String;Ljava/lang/String;)Lorg/w3c/dom/Attr;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -98,7 +90,6 @@
 
 .method public getElementsByTagName(Ljava/lang/String;)Lorg/w3c/dom/NodeList;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Lcom/android/mms/dom/NodeListImpl;
 
@@ -111,8 +102,6 @@
 
 .method public getElementsByTagNameNS(Ljava/lang/String;Ljava/lang/String;)Lorg/w3c/dom/NodeList;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -153,7 +142,6 @@
 
 .method public hasAttribute(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lcom/android/mms/dom/ElementImpl;->getAttributeNode(Ljava/lang/String;)Lorg/w3c/dom/Attr;
 
@@ -174,8 +162,6 @@
 
 .method public hasAttributeNS(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -206,7 +192,6 @@
 
 .method public removeAttribute(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;
@@ -218,8 +203,6 @@
 
 .method public removeAttributeNS(Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;
@@ -231,7 +214,6 @@
 
 .method public removeAttributeNode(Lorg/w3c/dom/Attr;)Lorg/w3c/dom/Attr;
     .locals 1
-    .param p1    # Lorg/w3c/dom/Attr;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;
@@ -245,8 +227,6 @@
 
 .method public setAttribute(Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;
@@ -277,9 +257,6 @@
 
 .method public setAttributeNS(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;
@@ -291,7 +268,6 @@
 
 .method public setAttributeNode(Lorg/w3c/dom/Attr;)Lorg/w3c/dom/Attr;
     .locals 1
-    .param p1    # Lorg/w3c/dom/Attr;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;
@@ -305,7 +281,6 @@
 
 .method public setAttributeNodeNS(Lorg/w3c/dom/Attr;)Lorg/w3c/dom/Attr;
     .locals 1
-    .param p1    # Lorg/w3c/dom/Attr;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;
@@ -319,8 +294,6 @@
 
 .method public setIdAttribute(Ljava/lang/String;Z)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;
@@ -340,9 +313,6 @@
 
 .method public setIdAttributeNS(Ljava/lang/String;Ljava/lang/String;Z)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;
@@ -362,8 +332,6 @@
 
 .method public setIdAttributeNode(Lorg/w3c/dom/Attr;Z)V
     .locals 3
-    .param p1    # Lorg/w3c/dom/Attr;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;

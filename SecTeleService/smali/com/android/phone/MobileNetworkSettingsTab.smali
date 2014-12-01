@@ -90,7 +90,7 @@
 
     invoke-virtual {v1, v0, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
-    invoke-virtual {p0, v1}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v1}, Lcom/android/phone/MobileNetworkSettingsTab;->startActivity(Landroid/content/Intent;)V
 
     return-void
 .end method
@@ -166,7 +166,7 @@
 
     move-result-object v4
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/MobileNetworkSettingsTab;->getResources()Landroid/content/res/Resources;
 
     move-result-object v5
 
@@ -204,7 +204,7 @@
 
     check-cast v1, Landroid/widget/ImageView;
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/MobileNetworkSettingsTab;->getResources()Landroid/content/res/Resources;
 
     move-result-object v2
 
@@ -253,7 +253,7 @@
 
     move-result-object v4
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/MobileNetworkSettingsTab;->getResources()Landroid/content/res/Resources;
 
     move-result-object v5
 
@@ -293,7 +293,7 @@
 
     check-cast v1, Landroid/widget/ImageView;
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/MobileNetworkSettingsTab;->getResources()Landroid/content/res/Resources;
 
     move-result-object v2
 
@@ -347,9 +347,9 @@
 
     const/4 v3, 0x0
 
-    invoke-super {p0, p1}, Landroid/app/ActivityGroup;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Landroid/app/TabActivity;->onCreate(Landroid/os/Bundle;)V
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/phone/MobileNetworkSettingsTab;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
 
@@ -385,7 +385,7 @@
 
     invoke-static {v0, v1}, Lcom/android/phone/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getActionBar()Landroid/app/ActionBar;
+    invoke-virtual {p0}, Lcom/android/phone/MobileNetworkSettingsTab;->getActionBar()Landroid/app/ActionBar;
 
     move-result-object v0
 
@@ -405,7 +405,7 @@
 
     iget-object v0, p0, Lcom/android/phone/MobileNetworkSettingsTab;->mActionBar:Landroid/app/ActionBar;
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/MobileNetworkSettingsTab;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -418,7 +418,7 @@
     invoke-virtual {v0, v1}, Landroid/app/ActionBar;->setTitle(Ljava/lang/CharSequence;)V
 
     :cond_0
-    invoke-virtual {p0}, Landroid/app/TabActivity;->getTabHost()Landroid/widget/TabHost;
+    invoke-virtual {p0}, Lcom/android/phone/MobileNetworkSettingsTab;->getTabHost()Landroid/widget/TabHost;
 
     move-result-object v0
 
@@ -451,13 +451,13 @@
 
     const/4 v2, 0x1
 
-    invoke-super {p0, p1}, Landroid/app/Activity;->onCreateOptionsMenu(Landroid/view/Menu;)Z
+    invoke-super {p0, p1}, Landroid/app/TabActivity;->onCreateOptionsMenu(Landroid/view/Menu;)Z
 
     iget-boolean v0, p0, Lcom/android/phone/MobileNetworkSettingsTab;->mIsPreferredNetworks:Z
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/MobileNetworkSettingsTab;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -497,7 +497,7 @@
 
     if-ne v0, v2, :cond_0
 
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/MobileNetworkSettingsTab;->finish()V
 
     :goto_0
     return v1
@@ -510,7 +510,7 @@
     goto :goto_0
 
     :cond_1
-    invoke-super {p0, p1}, Landroid/app/Activity;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
+    invoke-super {p0, p1}, Landroid/app/TabActivity;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
 
     move-result v1
 
@@ -525,7 +525,7 @@
 
     const/4 v1, 0x0
 
-    invoke-super {p0, p1}, Landroid/app/Activity;->onPrepareOptionsMenu(Landroid/view/Menu;)Z
+    invoke-super {p0, p1}, Landroid/app/TabActivity;->onPrepareOptionsMenu(Landroid/view/Menu;)Z
 
     iget-boolean v0, p0, Lcom/android/phone/MobileNetworkSettingsTab;->mIsPreferredNetworks:Z
 
@@ -568,7 +568,7 @@
     sput v0, Lcom/android/phone/MobileNetworkSettingsTab;->mActiveSimId:I
 
     :goto_0
-    invoke-virtual {p0}, Landroid/app/Activity;->invalidateOptionsMenu()V
+    invoke-virtual {p0}, Lcom/android/phone/MobileNetworkSettingsTab;->invalidateOptionsMenu()V
 
     const-string v0, "MobileNetworkSettingsTab"
 

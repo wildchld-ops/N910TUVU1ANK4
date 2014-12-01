@@ -10,8 +10,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/Throwable;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Throwable;
 
     invoke-direct {p0, p1}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
 
@@ -22,7 +20,6 @@
 
 .method public constructor <init>(Ljava/lang/Throwable;)V
     .locals 1
-    .param p1    # Ljava/lang/Throwable;
 
     if-nez p1, :cond_0
 

@@ -202,11 +202,11 @@
 
     aget-object v1, v0, v2
 
-    invoke-virtual {v1, v9}, Ljava/text/DateFormat;->setLenient(Z)V
+    invoke-virtual {v1, v9}, Ljava/text/SimpleDateFormat;->setLenient(Z)V
 
     sget-object v4, Lcom/android/phone/util/PhoneDateUtils;->UTC_TIMEZONE:Ljava/util/TimeZone;
 
-    invoke-virtual {v1, v4}, Ljava/text/DateFormat;->setTimeZone(Ljava/util/TimeZone;)V
+    invoke-virtual {v1, v4}, Ljava/text/SimpleDateFormat;->setTimeZone(Ljava/util/TimeZone;)V
 
     add-int/lit8 v2, v2, 0x1
 
@@ -217,7 +217,7 @@
 
     sget-object v5, Lcom/android/phone/util/PhoneDateUtils;->UTC_TIMEZONE:Ljava/util/TimeZone;
 
-    invoke-virtual {v4, v5}, Ljava/text/DateFormat;->setTimeZone(Ljava/util/TimeZone;)V
+    invoke-virtual {v4, v5}, Ljava/text/SimpleDateFormat;->setTimeZone(Ljava/util/TimeZone;)V
 
     sget-object v4, Lcom/android/phone/util/PhoneDateUtils;->FORMAT_WITHOUT_YEAR_MONTH_FIRST:Ljava/text/DateFormat;
 

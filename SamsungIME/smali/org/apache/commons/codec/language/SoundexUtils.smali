@@ -14,7 +14,6 @@
 
 .method static clean(Ljava/lang/String;)Ljava/lang/String;
     .locals 7
-    .param p0    # Ljava/lang/String;
 
     if-eqz p0, :cond_0
 
@@ -99,9 +98,6 @@
 
 .method static difference(Lorg/apache/commons/codec/StringEncoder;Ljava/lang/String;Ljava/lang/String;)I
     .locals 2
-    .param p0    # Lorg/apache/commons/codec/StringEncoder;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/commons/codec/EncoderException;
@@ -125,8 +121,6 @@
 
 .method static differenceEncoded(Ljava/lang/String;Ljava/lang/String;)I
     .locals 5
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     if-eqz p0, :cond_0
 

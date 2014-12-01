@@ -1865,7 +1865,7 @@
 
     const v3, 0x7f090a1d
 
-    const v7, 0x7f0202f7
+    const v7, 0x7f0202f6
 
     const/16 v4, 0x8
 
@@ -1956,7 +1956,7 @@
 
     iget-object v1, p0, Lcom/android/phone/UsimDownload;->mImageView2:Landroid/widget/ImageView;
 
-    const v2, 0x7f0202ff
+    const v2, 0x7f0202fe
 
     invoke-virtual {v1, v2}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -3001,7 +3001,7 @@
 
     iget-object v1, p0, Lcom/android/phone/UsimDownload;->mImageView2:Landroid/widget/ImageView;
 
-    const v2, 0x7f0202ff
+    const v2, 0x7f0202fe
 
     invoke-virtual {v1, v2}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -3054,7 +3054,7 @@
 
     iget-object v1, p0, Lcom/android/phone/UsimDownload;->mImageView2:Landroid/widget/ImageView;
 
-    const v2, 0x7f0202ff
+    const v2, 0x7f0202fe
 
     invoke-virtual {v1, v2}, Landroid/widget/ImageView;->setImageResource(I)V
 

@@ -25,7 +25,6 @@
 # direct methods
 .method public constructor <init>(I)V
     .locals 0
-    .param p1    # I
 
     invoke-direct {p0, p1, p1, p1}, Lcom/arm/streamline/StreamlineAnnotate$Color;-><init>(III)V
 
@@ -34,9 +33,6 @@
 
 .method public constructor <init>(III)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

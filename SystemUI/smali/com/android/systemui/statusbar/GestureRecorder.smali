@@ -59,7 +59,6 @@
 
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -92,7 +91,6 @@
 # virtual methods
 .method public add(Landroid/view/MotionEvent;)V
     .locals 3
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-object v1, p0, Lcom/android/systemui/statusbar/GestureRecorder;->mGestures:Ljava/util/LinkedList;
 
@@ -150,9 +148,6 @@
 
 .method public dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     invoke-virtual {p0}, Lcom/android/systemui/statusbar/GestureRecorder;->save()V
 
@@ -370,8 +365,6 @@
 
 .method public tag(JLjava/lang/String;)V
     .locals 1
-    .param p1    # J
-    .param p3    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -382,9 +375,6 @@
 
 .method public tag(JLjava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p1    # J
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/systemui/statusbar/GestureRecorder;->mGestures:Ljava/util/LinkedList;
 
@@ -433,7 +423,6 @@
 
 .method public tag(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 
@@ -448,8 +437,6 @@
 
 .method public tag(Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 

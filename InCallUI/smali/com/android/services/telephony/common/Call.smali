@@ -772,8 +772,6 @@
 
 .method synthetic constructor <init>(Landroid/os/Parcel;Lcom/android/services/telephony/common/Call$1;)V
     .locals 0
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # Lcom/android/services/telephony/common/Call$1;
 
     invoke-direct {p0, p1}, Lcom/android/services/telephony/common/Call;-><init>(Landroid/os/Parcel;)V
 
@@ -784,7 +782,6 @@
 # virtual methods
 .method public can(I)Z
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Lcom/android/services/telephony/common/Call;->mCapabilities:I
 
@@ -1229,7 +1226,6 @@
 
 .method public setDisconnectCause(Lcom/android/services/telephony/common/Call$DisconnectCause;)V
     .locals 0
-    .param p1    # Lcom/android/services/telephony/common/Call$DisconnectCause;
 
     iput-object p1, p0, Lcom/android/services/telephony/common/Call;->mDisconnectCause:Lcom/android/services/telephony/common/Call$DisconnectCause;
 
@@ -1238,7 +1234,6 @@
 
 .method public setSipErrorCode(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/services/telephony/common/Call;->mSipErrorCode:I
 
@@ -1247,7 +1242,6 @@
 
 .method public setState(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/services/telephony/common/Call;->mState:I
 
@@ -1556,8 +1550,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget v0, p0, Lcom/android/services/telephony/common/Call;->mCallId:I
 

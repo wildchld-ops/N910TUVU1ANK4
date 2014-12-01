@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -32,8 +31,6 @@
 
 .method private log(Ljava/lang/String;Z)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const-string v0, "CsVTStackStateListener"
 
@@ -46,8 +43,6 @@
 # virtual methods
 .method public onStateChanged(Lsiso/vt/VTManager$VTEventForUI;Lsiso/vt/VideoTelephonyData;)V
     .locals 4
-    .param p1    # Lsiso/vt/VTManager$VTEventForUI;
-    .param p2    # Lsiso/vt/VideoTelephonyData;
 
     new-instance v2, Ljava/lang/StringBuilder;
 

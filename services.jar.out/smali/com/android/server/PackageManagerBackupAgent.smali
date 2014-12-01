@@ -78,7 +78,6 @@
 # direct methods
 .method constructor <init>(Landroid/content/pm/PackageManager;Ljava/util/List;)V
     .locals 1
-    .param p1    # Landroid/content/pm/PackageManager;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -121,7 +120,6 @@
 
 .method private parseStateFile(Landroid/os/ParcelFileDescriptor;)V
     .locals 10
-    .param p1    # Landroid/os/ParcelFileDescriptor;
 
     const/4 v8, 0x0
 
@@ -259,7 +257,6 @@
 
 .method private static readSignatureArray(Ljava/io/DataInputStream;)[Landroid/content/pm/Signature;
     .locals 9
-    .param p0    # Ljava/io/DataInputStream;
 
     const/4 v6, 0x0
 
@@ -352,9 +349,6 @@
 
 .method private static writeEntity(Landroid/app/backup/BackupDataOutput;Ljava/lang/String;[B)V
     .locals 1
-    .param p0    # Landroid/app/backup/BackupDataOutput;
-    .param p1    # Ljava/lang/String;
-    .param p2    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -374,8 +368,6 @@
 
 .method private static writeSignatureArray(Ljava/io/DataOutputStream;[Landroid/content/pm/Signature;)V
     .locals 6
-    .param p0    # Ljava/io/DataOutputStream;
-    .param p1    # [Landroid/content/pm/Signature;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -417,7 +409,6 @@
 
 .method private writeStateFile(Ljava/util/List;Landroid/os/ParcelFileDescriptor;)V
     .locals 7
-    .param p2    # Landroid/os/ParcelFileDescriptor;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -501,8 +492,6 @@
 # virtual methods
 .method public getNewMetada(I[Landroid/content/pm/Signature;)Lcom/android/server/PackageManagerBackupAgent$Metadata;
     .locals 1
-    .param p1    # I
-    .param p2    # [Landroid/content/pm/Signature;
 
     new-instance v0, Lcom/android/server/PackageManagerBackupAgent$Metadata;
 
@@ -513,7 +502,6 @@
 
 .method public getRestoredMetadata(Ljava/lang/String;)Lcom/android/server/PackageManagerBackupAgent$Metadata;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/server/PackageManagerBackupAgent;->mRestoredSignatures:Ljava/util/HashMap;
 
@@ -589,9 +577,6 @@
 
 .method public onBackup(Landroid/os/ParcelFileDescriptor;Landroid/app/backup/BackupDataOutput;Landroid/os/ParcelFileDescriptor;)V
     .locals 11
-    .param p1    # Landroid/os/ParcelFileDescriptor;
-    .param p2    # Landroid/app/backup/BackupDataOutput;
-    .param p3    # Landroid/os/ParcelFileDescriptor;
 
     new-instance v4, Ljava/io/ByteArrayOutputStream;
 
@@ -915,9 +900,6 @@
 
 .method public onRestore(Landroid/app/backup/BackupDataInput;ILandroid/os/ParcelFileDescriptor;)V
     .locals 16
-    .param p1    # Landroid/app/backup/BackupDataInput;
-    .param p2    # I
-    .param p3    # Landroid/os/ParcelFileDescriptor;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

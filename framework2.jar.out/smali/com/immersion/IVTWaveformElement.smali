@@ -10,8 +10,6 @@
 # direct methods
 .method public constructor <init>(ILcom/immersion/WaveformEffectDefinition;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Lcom/immersion/WaveformEffectDefinition;
 
     const/4 v0, 0x3
 
@@ -114,7 +112,6 @@
 
 .method public setDefinition(Lcom/immersion/WaveformEffectDefinition;)V
     .locals 0
-    .param p1    # Lcom/immersion/WaveformEffectDefinition;
 
     iput-object p1, p0, Lcom/immersion/IVTWaveformElement;->definition:Lcom/immersion/WaveformEffectDefinition;
 

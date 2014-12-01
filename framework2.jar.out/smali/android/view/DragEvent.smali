@@ -100,13 +100,6 @@
 
 .method private init(IFFLandroid/content/ClipDescription;Landroid/content/ClipData;Ljava/lang/Object;Z)V
     .locals 0
-    .param p1    # I
-    .param p2    # F
-    .param p3    # F
-    .param p4    # Landroid/content/ClipDescription;
-    .param p5    # Landroid/content/ClipData;
-    .param p6    # Ljava/lang/Object;
-    .param p7    # Z
 
     iput p1, p0, Landroid/view/DragEvent;->mAction:I
 
@@ -151,13 +144,6 @@
 
 .method public static obtain(IFFLjava/lang/Object;Landroid/content/ClipDescription;Landroid/content/ClipData;Z)Landroid/view/DragEvent;
     .locals 10
-    .param p0    # I
-    .param p1    # F
-    .param p2    # F
-    .param p3    # Ljava/lang/Object;
-    .param p4    # Landroid/content/ClipDescription;
-    .param p5    # Landroid/content/ClipData;
-    .param p6    # Z
 
     sget-object v9, Landroid/view/DragEvent;->gRecyclerLock:Ljava/lang/Object;
 
@@ -257,7 +243,6 @@
 
 .method public static obtain(Landroid/view/DragEvent;)Landroid/view/DragEvent;
     .locals 7
-    .param p0    # Landroid/view/DragEvent;
 
     iget v0, p0, Landroid/view/DragEvent;->mAction:I
 
@@ -590,8 +575,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 3
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     const/4 v1, 0x1
 

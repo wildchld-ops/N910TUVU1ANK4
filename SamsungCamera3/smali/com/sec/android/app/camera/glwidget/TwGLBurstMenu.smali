@@ -808,11 +808,6 @@
 
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;ILcom/sec/android/glview/TwGLViewGroup;Lcom/sec/android/app/camera/MenuResourceDepot;I)V
     .locals 14
-    .param p1    # Lcom/sec/android/app/camera/Camera;
-    .param p2    # I
-    .param p3    # Lcom/sec/android/glview/TwGLViewGroup;
-    .param p4    # Lcom/sec/android/app/camera/MenuResourceDepot;
-    .param p5    # I
 
     const/4 v6, 0x6
 
@@ -1325,7 +1320,6 @@
 
 .method static synthetic access$000(Lcom/sec/android/app/camera/glwidget/TwGLBurstMenu;)Lcom/sec/android/app/camera/glwidget/TwGLBurstMenu$OnBurstCaptureCancelListener;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLBurstMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLBurstMenu;->mListener:Lcom/sec/android/app/camera/glwidget/TwGLBurstMenu$OnBurstCaptureCancelListener;
 
@@ -1334,7 +1328,6 @@
 
 .method static synthetic access$100(Lcom/sec/android/app/camera/glwidget/TwGLBurstMenu;)I
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLBurstMenu;
 
     iget v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLBurstMenu;->mStoreCount:I
 
@@ -1343,8 +1336,6 @@
 
 .method static synthetic access$102(Lcom/sec/android/app/camera/glwidget/TwGLBurstMenu;I)I
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLBurstMenu;
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLBurstMenu;->mStoreCount:I
 
@@ -1353,7 +1344,6 @@
 
 .method static synthetic access$200(Lcom/sec/android/app/camera/glwidget/TwGLBurstMenu;)I
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLBurstMenu;
 
     iget v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLBurstMenu;->mCaptureCount:I
 
@@ -1362,7 +1352,6 @@
 
 .method static synthetic access$300(Lcom/sec/android/app/camera/glwidget/TwGLBurstMenu;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLBurstMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLBurstMenu;->mBurstMsgHandler:Landroid/os/Handler;
 
@@ -1371,8 +1360,6 @@
 
 .method static synthetic access$402(Lcom/sec/android/app/camera/glwidget/TwGLBurstMenu;Z)Z
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLBurstMenu;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLBurstMenu;->mIsBusrtShotSavingCompleted:Z
 
@@ -1381,7 +1368,6 @@
 
 .method static synthetic access$500(Lcom/sec/android/app/camera/glwidget/TwGLBurstMenu;)Lcom/sec/android/app/camera/Camera;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLBurstMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLBurstMenu;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -1390,8 +1376,6 @@
 
 .method static synthetic access$602(Lcom/sec/android/app/camera/glwidget/TwGLBurstMenu;Ljava/lang/Thread;)Ljava/lang/Thread;
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLBurstMenu;
-    .param p1    # Ljava/lang/Thread;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLBurstMenu;->mDBupdateThread:Ljava/lang/Thread;
 
@@ -1400,7 +1384,6 @@
 
 .method static synthetic access$700(Lcom/sec/android/app/camera/glwidget/TwGLBurstMenu;)Lcom/sec/android/app/camera/Camera;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLBurstMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLBurstMenu;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -1409,7 +1392,6 @@
 
 .method static synthetic access$800(Lcom/sec/android/app/camera/glwidget/TwGLBurstMenu;)Lcom/sec/android/app/camera/Camera;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLBurstMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLBurstMenu;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -1418,7 +1400,6 @@
 
 .method static synthetic access$900(Lcom/sec/android/app/camera/glwidget/TwGLBurstMenu;)Lcom/sec/android/app/camera/Camera;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLBurstMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLBurstMenu;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -1761,7 +1742,6 @@
 
 .method protected calculateOrientationForPicture(I)I
     .locals 3
-    .param p1    # I
 
     move v0, p1
 
@@ -1886,7 +1866,6 @@
 
 .method public convertToExifInterfaceOrientation(I)I
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -2052,8 +2031,6 @@
 
 .method public deNormalize(FI)F
     .locals 2
-    .param p1    # F
-    .param p2    # I
 
     const/high16 v0, 0x447a0000
 
@@ -2132,8 +2109,6 @@
 
 .method getBitmap(ILandroid/net/Uri;)Landroid/graphics/Bitmap;
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/net/Uri;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/FileNotFoundException;
@@ -3258,7 +3233,6 @@
 
 .method public lastImageUpdate(Landroid/content/ContentValues;)V
     .locals 18
-    .param p1    # Landroid/content/ContentValues;
 
     const/4 v5, 0x0
 
@@ -3691,8 +3665,6 @@
 
 .method public onCameraSettingsChanged(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     const-string v0, "TwGLBurstMenu"
 
@@ -3739,8 +3711,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/16 v4, 0x1b
 
@@ -4003,8 +3973,6 @@
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v2, 0x4
 
@@ -4122,7 +4090,6 @@
 
 .method public onOrientationChanged(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLBurstMenu;->mOrientation:I
 
@@ -4311,8 +4278,6 @@
 
 .method public onTouch(Lcom/sec/android/glview/TwGLView;Landroid/view/MotionEvent;)Z
     .locals 2
-    .param p1    # Lcom/sec/android/glview/TwGLView;
-    .param p2    # Landroid/view/MotionEvent;
 
     const-string v0, "TwGLBurstMenu"
 
@@ -4630,7 +4595,6 @@
 
 .method public setBestGroupMode(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLBurstMenu;->mBestFaceMode:Z
 
@@ -4639,7 +4603,6 @@
 
 .method public setBestPic(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLBurstMenu;->mBestPicNum:I
 
@@ -4648,7 +4611,6 @@
 
 .method public setBestPicMode(Z)V
     .locals 1
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLBurstMenu;->mBestPicMode:Z
 
@@ -4661,7 +4623,6 @@
 
 .method public setBurstCapturing(Z)V
     .locals 1
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLBurstMenu;->mIsBurstCapturing:Z
 
@@ -4829,7 +4790,6 @@
 
 .method public setGifMakerMode(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLBurstMenu;->mGifMakerMode:Z
 
@@ -4838,7 +4798,6 @@
 
 .method public setOnBurstCaptureCancelledListener(Lcom/sec/android/app/camera/glwidget/TwGLBurstMenu$OnBurstCaptureCancelListener;)V
     .locals 0
-    .param p1    # Lcom/sec/android/app/camera/glwidget/TwGLBurstMenu$OnBurstCaptureCancelListener;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLBurstMenu;->mListener:Lcom/sec/android/app/camera/glwidget/TwGLBurstMenu$OnBurstCaptureCancelListener;
 
@@ -4847,7 +4806,6 @@
 
 .method public setPostCaptureProgress(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "TwGLBurstMenu"
 
@@ -4876,9 +4834,6 @@
 
 .method public setPostCaptureProgressImage(Landroid/graphics/Bitmap;ILandroid/net/Uri;)V
     .locals 2
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # I
-    .param p3    # Landroid/net/Uri;
 
     invoke-static {p1, p2}, Lcom/sec/android/app/camera/Util;->rotate(Landroid/graphics/Bitmap;I)Landroid/graphics/Bitmap;
 
@@ -4916,7 +4871,6 @@
 
 .method public setPostCaptureProgressMax(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLBurstMenu;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -5355,7 +5309,6 @@
 
 .method public storeBurstStrings([B)V
     .locals 11
-    .param p1    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/FileNotFoundException;

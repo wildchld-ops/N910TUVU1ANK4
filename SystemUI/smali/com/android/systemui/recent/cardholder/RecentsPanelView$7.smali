@@ -36,8 +36,6 @@
 # virtual methods
 .method public onDrag(Landroid/view/View;Landroid/view/DragEvent;)Z
     .locals 24
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/DragEvent;
 
     new-instance v16, Landroid/util/DisplayMetrics;
 

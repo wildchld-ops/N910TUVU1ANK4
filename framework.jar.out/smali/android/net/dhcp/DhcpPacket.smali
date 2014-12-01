@@ -129,13 +129,6 @@
 # direct methods
 .method protected constructor <init>(ILjava/net/InetAddress;Ljava/net/InetAddress;Ljava/net/InetAddress;Ljava/net/InetAddress;[BZ)V
     .locals 0
-    .param p1    # I
-    .param p2    # Ljava/net/InetAddress;
-    .param p3    # Ljava/net/InetAddress;
-    .param p4    # Ljava/net/InetAddress;
-    .param p5    # Ljava/net/InetAddress;
-    .param p6    # [B
-    .param p7    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -158,18 +151,6 @@
 
 .method public static buildAckPacket(IIZLjava/net/InetAddress;Ljava/net/InetAddress;[BLjava/lang/Integer;Ljava/net/InetAddress;Ljava/net/InetAddress;Ljava/net/InetAddress;Ljava/util/List;Ljava/net/InetAddress;Ljava/lang/String;)Ljava/nio/ByteBuffer;
     .locals 7
-    .param p0    # I
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # Ljava/net/InetAddress;
-    .param p4    # Ljava/net/InetAddress;
-    .param p5    # [B
-    .param p6    # Ljava/lang/Integer;
-    .param p7    # Ljava/net/InetAddress;
-    .param p8    # Ljava/net/InetAddress;
-    .param p9    # Ljava/net/InetAddress;
-    .param p11    # Ljava/net/InetAddress;
-    .param p12    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(IIZ",
@@ -240,11 +221,6 @@
 
 .method public static buildDiscoverPacket(II[BZ[B)Ljava/nio/ByteBuffer;
     .locals 3
-    .param p0    # I
-    .param p1    # I
-    .param p2    # [B
-    .param p3    # Z
-    .param p4    # [B
 
     new-instance v0, Landroid/net/dhcp/DhcpDiscoverPacket;
 
@@ -265,11 +241,6 @@
 
 .method public static buildNakPacket(IILjava/net/InetAddress;Ljava/net/InetAddress;[B)Ljava/nio/ByteBuffer;
     .locals 7
-    .param p0    # I
-    .param p1    # I
-    .param p2    # Ljava/net/InetAddress;
-    .param p3    # Ljava/net/InetAddress;
-    .param p4    # [B
 
     new-instance v0, Landroid/net/dhcp/DhcpNakPacket;
 
@@ -306,18 +277,6 @@
 
 .method public static buildOfferPacket(IIZLjava/net/InetAddress;Ljava/net/InetAddress;[BLjava/lang/Integer;Ljava/net/InetAddress;Ljava/net/InetAddress;Ljava/net/InetAddress;Ljava/util/List;Ljava/net/InetAddress;Ljava/lang/String;)Ljava/nio/ByteBuffer;
     .locals 7
-    .param p0    # I
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # Ljava/net/InetAddress;
-    .param p4    # Ljava/net/InetAddress;
-    .param p5    # [B
-    .param p6    # Ljava/lang/Integer;
-    .param p7    # Ljava/net/InetAddress;
-    .param p8    # Ljava/net/InetAddress;
-    .param p9    # Ljava/net/InetAddress;
-    .param p11    # Ljava/net/InetAddress;
-    .param p12    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(IIZ",
@@ -388,15 +347,6 @@
 
 .method public static buildRequestPacket(IILjava/net/InetAddress;Z[BLjava/net/InetAddress;Ljava/net/InetAddress;[BLjava/lang/String;)Ljava/nio/ByteBuffer;
     .locals 4
-    .param p0    # I
-    .param p1    # I
-    .param p2    # Ljava/net/InetAddress;
-    .param p3    # Z
-    .param p4    # [B
-    .param p5    # Ljava/net/InetAddress;
-    .param p6    # Ljava/net/InetAddress;
-    .param p7    # [B
-    .param p8    # Ljava/lang/String;
 
     new-instance v0, Landroid/net/dhcp/DhcpRequestPacket;
 
@@ -423,10 +373,6 @@
 
 .method private checksum(Ljava/nio/ByteBuffer;III)I
     .locals 14
-    .param p1    # Ljava/nio/ByteBuffer;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     move/from16 v11, p2
 
@@ -543,8 +489,6 @@
 
 .method public static decodeFullPacket(Ljava/nio/ByteBuffer;I)Landroid/net/dhcp/DhcpPacket;
     .locals 60
-    .param p0    # Ljava/nio/ByteBuffer;
-    .param p1    # I
 
     new-instance v20, Ljava/util/ArrayList;
 
@@ -1291,8 +1235,6 @@
 
 .method public static decodeFullPacket([BI)Landroid/net/dhcp/DhcpPacket;
     .locals 3
-    .param p0    # [B
-    .param p1    # I
 
     invoke-static {p0}, Ljava/nio/ByteBuffer;->wrap([B)Ljava/nio/ByteBuffer;
 
@@ -1313,7 +1255,6 @@
 
 .method private intAbs(S)I
     .locals 2
-    .param p1    # S
 
     if-gez p1, :cond_0
 
@@ -1332,7 +1273,6 @@
 
 .method public static macToString([B)Ljava/lang/String;
     .locals 5
-    .param p0    # [B
 
     const-string v2, ""
 
@@ -1428,8 +1368,6 @@
 
 .method private static readAsciiString(Ljava/nio/ByteBuffer;I)Ljava/lang/String;
     .locals 5
-    .param p0    # Ljava/nio/ByteBuffer;
-    .param p1    # I
 
     new-array v0, p1, [B
 
@@ -1450,7 +1388,6 @@
 
 .method private static readIpAddress(Ljava/nio/ByteBuffer;)Ljava/net/InetAddress;
     .locals 4
-    .param p0    # Ljava/nio/ByteBuffer;
 
     const/4 v2, 0x0
 
@@ -1482,9 +1419,6 @@
 # virtual methods
 .method protected addTlv(Ljava/nio/ByteBuffer;BB)V
     .locals 1
-    .param p1    # Ljava/nio/ByteBuffer;
-    .param p2    # B
-    .param p3    # B
 
     invoke-virtual {p1, p2}, Ljava/nio/ByteBuffer;->put(B)Ljava/nio/ByteBuffer;
 
@@ -1499,9 +1433,6 @@
 
 .method protected addTlv(Ljava/nio/ByteBuffer;BLjava/lang/Integer;)V
     .locals 1
-    .param p1    # Ljava/nio/ByteBuffer;
-    .param p2    # B
-    .param p3    # Ljava/lang/Integer;
 
     if-eqz p3, :cond_0
 
@@ -1523,9 +1454,6 @@
 
 .method protected addTlv(Ljava/nio/ByteBuffer;BLjava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/nio/ByteBuffer;
-    .param p2    # B
-    .param p3    # Ljava/lang/String;
 
     if-eqz p3, :cond_0
 
@@ -1566,9 +1494,6 @@
 
 .method protected addTlv(Ljava/nio/ByteBuffer;BLjava/net/InetAddress;)V
     .locals 1
-    .param p1    # Ljava/nio/ByteBuffer;
-    .param p2    # B
-    .param p3    # Ljava/net/InetAddress;
 
     if-eqz p3, :cond_0
 
@@ -1584,8 +1509,6 @@
 
 .method protected addTlv(Ljava/nio/ByteBuffer;BLjava/util/List;)V
     .locals 3
-    .param p1    # Ljava/nio/ByteBuffer;
-    .param p2    # B
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1649,9 +1572,6 @@
 
 .method protected addTlv(Ljava/nio/ByteBuffer;B[B)V
     .locals 1
-    .param p1    # Ljava/nio/ByteBuffer;
-    .param p2    # B
-    .param p3    # [B
 
     if-eqz p3, :cond_0
 
@@ -1671,7 +1591,6 @@
 
 .method protected addTlvEnd(Ljava/nio/ByteBuffer;)V
     .locals 1
-    .param p1    # Ljava/nio/ByteBuffer;
 
     const/4 v0, -0x1
 
@@ -1688,14 +1607,6 @@
 
 .method protected fillInPacket(ILjava/net/InetAddress;Ljava/net/InetAddress;SSLjava/nio/ByteBuffer;BZ)V
     .locals 14
-    .param p1    # I
-    .param p2    # Ljava/net/InetAddress;
-    .param p3    # Ljava/net/InetAddress;
-    .param p4    # S
-    .param p5    # S
-    .param p6    # Ljava/nio/ByteBuffer;
-    .param p7    # B
-    .param p8    # Z
 
     invoke-virtual/range {p2 .. p2}, Ljava/net/InetAddress;->getAddress()[B
 

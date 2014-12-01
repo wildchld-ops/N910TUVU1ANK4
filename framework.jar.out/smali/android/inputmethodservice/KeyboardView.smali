@@ -258,8 +258,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const v0, 0x10104c7
 
@@ -270,9 +268,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 12
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Landroid/view/View;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
@@ -740,8 +735,6 @@
 
 .method static synthetic access$100(Landroid/inputmethodservice/KeyboardView;I)V
     .locals 0
-    .param p0    # Landroid/inputmethodservice/KeyboardView;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/inputmethodservice/KeyboardView;->showKey(I)V
 
@@ -750,7 +743,6 @@
 
 .method static synthetic access$1000(Landroid/inputmethodservice/KeyboardView;)I
     .locals 1
-    .param p0    # Landroid/inputmethodservice/KeyboardView;
 
     iget v0, p0, Landroid/inputmethodservice/KeyboardView;->mStartX:I
 
@@ -759,7 +751,6 @@
 
 .method static synthetic access$1100(Landroid/inputmethodservice/KeyboardView;)I
     .locals 1
-    .param p0    # Landroid/inputmethodservice/KeyboardView;
 
     iget v0, p0, Landroid/inputmethodservice/KeyboardView;->mStartY:I
 
@@ -768,11 +759,6 @@
 
 .method static synthetic access$1200(Landroid/inputmethodservice/KeyboardView;IIIJ)V
     .locals 0
-    .param p0    # Landroid/inputmethodservice/KeyboardView;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # J
 
     invoke-direct/range {p0 .. p5}, Landroid/inputmethodservice/KeyboardView;->detectAndSendKey(IIIJ)V
 
@@ -781,7 +767,6 @@
 
 .method static synthetic access$1300(Landroid/inputmethodservice/KeyboardView;)Landroid/inputmethodservice/KeyboardView$OnKeyboardActionListener;
     .locals 1
-    .param p0    # Landroid/inputmethodservice/KeyboardView;
 
     iget-object v0, p0, Landroid/inputmethodservice/KeyboardView;->mKeyboardActionListener:Landroid/inputmethodservice/KeyboardView$OnKeyboardActionListener;
 
@@ -790,7 +775,6 @@
 
 .method static synthetic access$1400(Landroid/inputmethodservice/KeyboardView;)V
     .locals 0
-    .param p0    # Landroid/inputmethodservice/KeyboardView;
 
     invoke-direct {p0}, Landroid/inputmethodservice/KeyboardView;->dismissPopupKeyboard()V
 
@@ -799,7 +783,6 @@
 
 .method static synthetic access$200(Landroid/inputmethodservice/KeyboardView;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Landroid/inputmethodservice/KeyboardView;
 
     iget-object v0, p0, Landroid/inputmethodservice/KeyboardView;->mPreviewText:Landroid/widget/TextView;
 
@@ -808,7 +791,6 @@
 
 .method static synthetic access$300(Landroid/inputmethodservice/KeyboardView;)Z
     .locals 1
-    .param p0    # Landroid/inputmethodservice/KeyboardView;
 
     invoke-direct {p0}, Landroid/inputmethodservice/KeyboardView;->repeatKey()Z
 
@@ -819,8 +801,6 @@
 
 .method static synthetic access$400(Landroid/inputmethodservice/KeyboardView;Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p0    # Landroid/inputmethodservice/KeyboardView;
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-direct {p0, p1}, Landroid/inputmethodservice/KeyboardView;->openPopupIfRequired(Landroid/view/MotionEvent;)Z
 
@@ -831,7 +811,6 @@
 
 .method static synthetic access$500(Landroid/inputmethodservice/KeyboardView;)Z
     .locals 1
-    .param p0    # Landroid/inputmethodservice/KeyboardView;
 
     iget-boolean v0, p0, Landroid/inputmethodservice/KeyboardView;->mPossiblePoly:Z
 
@@ -840,7 +819,6 @@
 
 .method static synthetic access$600(Landroid/inputmethodservice/KeyboardView;)Landroid/inputmethodservice/KeyboardView$SwipeTracker;
     .locals 1
-    .param p0    # Landroid/inputmethodservice/KeyboardView;
 
     iget-object v0, p0, Landroid/inputmethodservice/KeyboardView;->mSwipeTracker:Landroid/inputmethodservice/KeyboardView$SwipeTracker;
 
@@ -849,7 +827,6 @@
 
 .method static synthetic access$700(Landroid/inputmethodservice/KeyboardView;)I
     .locals 1
-    .param p0    # Landroid/inputmethodservice/KeyboardView;
 
     iget v0, p0, Landroid/inputmethodservice/KeyboardView;->mSwipeThreshold:I
 
@@ -858,7 +835,6 @@
 
 .method static synthetic access$800(Landroid/inputmethodservice/KeyboardView;)Z
     .locals 1
-    .param p0    # Landroid/inputmethodservice/KeyboardView;
 
     iget-boolean v0, p0, Landroid/inputmethodservice/KeyboardView;->mDisambiguateSwipe:Z
 
@@ -867,7 +843,6 @@
 
 .method static synthetic access$900(Landroid/inputmethodservice/KeyboardView;)I
     .locals 1
-    .param p0    # Landroid/inputmethodservice/KeyboardView;
 
     iget v0, p0, Landroid/inputmethodservice/KeyboardView;->mDownKey:I
 
@@ -876,7 +851,6 @@
 
 .method private adjustCase(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
     .locals 2
-    .param p1    # Ljava/lang/CharSequence;
 
     iget-object v0, p0, Landroid/inputmethodservice/KeyboardView;->mKeyboard:Landroid/inputmethodservice/Keyboard;
 
@@ -922,8 +896,6 @@
 
 .method private checkMultiTap(JI)V
     .locals 6
-    .param p1    # J
-    .param p3    # I
 
     const-wide/16 v4, 0x320
 
@@ -1002,7 +974,6 @@
 
 .method private computeProximityThreshold(Landroid/inputmethodservice/Keyboard;)V
     .locals 7
-    .param p1    # Landroid/inputmethodservice/Keyboard;
 
     if-nez p1, :cond_1
 
@@ -1076,10 +1047,6 @@
 
 .method private detectAndSendKey(IIIJ)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # J
 
     const/4 v4, 0x0
 
@@ -1199,9 +1166,6 @@
 
 .method private getKeyIndices(II[I)I
     .locals 21
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [I
 
     move-object/from16 v0, p0
 
@@ -1484,7 +1448,6 @@
 
 .method private getPreviewText(Landroid/inputmethodservice/Keyboard$Key;)Ljava/lang/CharSequence;
     .locals 4
-    .param p1    # Landroid/inputmethodservice/Keyboard$Key;
 
     const/4 v0, 0x0
 
@@ -2294,8 +2257,6 @@
 
 .method private onModifiedTouchEvent(Landroid/view/MotionEvent;Z)Z
     .locals 12
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # Z
 
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getX()F
 
@@ -2847,7 +2808,6 @@
 
 .method private openPopupIfRequired(Landroid/view/MotionEvent;)Z
     .locals 4
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v1, 0x0
 
@@ -2967,8 +2927,6 @@
 
 .method private sendAccessibilityEventForUnicodeCharacter(II)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     const/4 v3, 0x1
 
@@ -3172,7 +3130,6 @@
 
 .method private showKey(I)V
     .locals 14
-    .param p1    # I
 
     const/4 v13, 0x2
 
@@ -3571,7 +3528,6 @@
 
 .method private showPreview(I)V
     .locals 13
-    .param p1    # I
 
     const/4 v7, 0x1
 
@@ -3837,7 +3793,6 @@
 
 .method public invalidateKey(I)V
     .locals 7
-    .param p1    # I
 
     iget-object v1, p0, Landroid/inputmethodservice/KeyboardView;->mKeys:[Landroid/inputmethodservice/Keyboard$Key;
 
@@ -3977,7 +3932,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     invoke-direct {p0}, Landroid/inputmethodservice/KeyboardView;->dismissPopupKeyboard()V
 
@@ -3996,7 +3950,6 @@
 
 .method public onDraw(Landroid/graphics/Canvas;)V
     .locals 3
-    .param p1    # Landroid/graphics/Canvas;
 
     const/4 v2, 0x0
 
@@ -4029,7 +3982,6 @@
 
 .method public onHoverEvent(Landroid/view/MotionEvent;)Z
     .locals 3
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v1, 0x1
 
@@ -4103,7 +4055,6 @@
 
 .method protected onLongPress(Landroid/inputmethodservice/Keyboard$Key;)Z
     .locals 14
-    .param p1    # Landroid/inputmethodservice/Keyboard$Key;
 
     const v4, 0x1020026
 
@@ -4414,8 +4365,6 @@
 
 .method public onMeasure(II)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     iget-object v1, p0, Landroid/inputmethodservice/KeyboardView;->mKeyboard:Landroid/inputmethodservice/Keyboard;
 
@@ -4487,10 +4436,6 @@
 
 .method public onSizeChanged(IIII)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-super {p0, p1, p2, p3, p4}, Landroid/view/View;->onSizeChanged(IIII)V
 
@@ -4512,7 +4457,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 14
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v4, 0x0
 
@@ -4628,7 +4572,6 @@
 
 .method public setKeyboard(Landroid/inputmethodservice/Keyboard;)V
     .locals 3
-    .param p1    # Landroid/inputmethodservice/Keyboard;
 
     const/4 v2, 0x1
 
@@ -4684,7 +4627,6 @@
 
 .method public setOnKeyboardActionListener(Landroid/inputmethodservice/KeyboardView$OnKeyboardActionListener;)V
     .locals 0
-    .param p1    # Landroid/inputmethodservice/KeyboardView$OnKeyboardActionListener;
 
     iput-object p1, p0, Landroid/inputmethodservice/KeyboardView;->mKeyboardActionListener:Landroid/inputmethodservice/KeyboardView$OnKeyboardActionListener;
 
@@ -4693,8 +4635,6 @@
 
 .method public setPopupOffset(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iput p1, p0, Landroid/inputmethodservice/KeyboardView;->mMiniKeyboardOffsetX:I
 
@@ -4718,7 +4658,6 @@
 
 .method public setPopupParent(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     iput-object p1, p0, Landroid/inputmethodservice/KeyboardView;->mPopupParent:Landroid/view/View;
 
@@ -4727,7 +4666,6 @@
 
 .method public setPreviewEnabled(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/inputmethodservice/KeyboardView;->mShowPreview:Z
 
@@ -4736,7 +4674,6 @@
 
 .method public setProximityCorrectionEnabled(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/inputmethodservice/KeyboardView;->mProximityCorrectOn:Z
 
@@ -4745,7 +4682,6 @@
 
 .method public setShifted(Z)Z
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Landroid/inputmethodservice/KeyboardView;->mKeyboard:Landroid/inputmethodservice/Keyboard;
 
@@ -4774,7 +4710,6 @@
 
 .method public setVerticalCorrection(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method

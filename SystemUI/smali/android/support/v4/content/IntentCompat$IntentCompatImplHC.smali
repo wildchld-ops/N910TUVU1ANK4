@@ -27,7 +27,6 @@
 # virtual methods
 .method public makeMainActivity(Landroid/content/ComponentName;)Landroid/content/Intent;
     .locals 1
-    .param p1    # Landroid/content/ComponentName;
 
     invoke-static {p1}, Landroid/support/v4/content/IntentCompatHoneycomb;->makeMainActivity(Landroid/content/ComponentName;)Landroid/content/Intent;
 
@@ -38,7 +37,6 @@
 
 .method public makeRestartActivityTask(Landroid/content/ComponentName;)Landroid/content/Intent;
     .locals 1
-    .param p1    # Landroid/content/ComponentName;
 
     invoke-static {p1}, Landroid/support/v4/content/IntentCompatHoneycomb;->makeRestartActivityTask(Landroid/content/ComponentName;)Landroid/content/Intent;
 

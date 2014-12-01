@@ -17,7 +17,6 @@
 
 .method private isDuplicatedMode(I)Z
     .locals 9
-    .param p1    # I
 
     const/4 v7, 0x0
 
@@ -90,9 +89,6 @@
 
 .method private parse([BILjava/lang/String;)I
     .locals 4
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     const/4 v2, -0x1
 
@@ -126,9 +122,6 @@
 
 .method private parseDuplicatedMode(I[BI)I
     .locals 10
-    .param p1    # I
-    .param p2    # [B
-    .param p3    # I
 
     const/4 v7, -0x1
 
@@ -247,7 +240,6 @@
 
 .method protected final getParserKey(I)Ljava/lang/String;
     .locals 6
-    .param p1    # I
 
     const/4 v4, 0x0
 
@@ -336,8 +328,6 @@
 
 .method public final parse([BI)I
     .locals 11
-    .param p1    # [B
-    .param p2    # I
 
     const/4 v8, -0x1
 

@@ -10,8 +10,6 @@
 # direct methods
 .method constructor <init>(Ljava/lang/String;Lde/congrace/exp4j/CustomOperator;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lde/congrace/exp4j/CustomOperator;
 
     invoke-direct {p0, p1}, Lde/congrace/exp4j/CalculationToken;-><init>(Ljava/lang/String;)V
 
@@ -44,7 +42,6 @@
 # virtual methods
 .method varargs applyOperation([D)D
     .locals 2
-    .param p1    # [D
 
     iget-object v0, p0, Lde/congrace/exp4j/OperatorToken;->operation:Lde/congrace/exp4j/CustomOperator;
 
@@ -57,7 +54,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 3
-    .param p1    # Ljava/lang/Object;
 
     instance-of v1, p1, Lde/congrace/exp4j/OperatorToken;
 
@@ -176,7 +172,6 @@
 
 .method mutateStackForInfixTranslation(Ljava/util/Stack;Ljava/lang/StringBuilder;)V
     .locals 4
-    .param p2    # Ljava/lang/StringBuilder;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

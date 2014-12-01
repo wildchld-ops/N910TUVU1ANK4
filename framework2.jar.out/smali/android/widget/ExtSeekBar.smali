@@ -36,7 +36,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -47,8 +46,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const v0, 0x101052d
 
@@ -59,9 +56,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v1, 0x0
 
@@ -386,7 +380,6 @@
 
 .method public setChangeSeekbarColor(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/widget/ExtSeekBar;->mEnableChangeColor:Z
 
@@ -397,7 +390,6 @@
 
 .method public setProgress(I)V
     .locals 3
-    .param p1    # I
 
     sget-boolean v0, Landroid/widget/ExtSeekBar;->LOGD:Z
 
@@ -435,8 +427,6 @@
 
 .method public setProgress(IZ)V
     .locals 3
-    .param p1    # I
-    .param p2    # Z
 
     sget-boolean v0, Landroid/widget/ExtSeekBar;->LOGD:Z
 

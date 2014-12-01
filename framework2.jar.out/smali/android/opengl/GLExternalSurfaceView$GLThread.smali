@@ -66,7 +66,6 @@
 # direct methods
 .method constructor <init>(Landroid/opengl/GLExternalSurfaceView;Landroid/opengl/GLExternalSurfaceView$Renderer;)V
     .locals 3
-    .param p2    # Landroid/opengl/GLExternalSurfaceView$Renderer;
 
     const/4 v2, 0x1
 
@@ -99,8 +98,6 @@
 
 .method static synthetic access$1202(Landroid/opengl/GLExternalSurfaceView$GLThread;Z)Z
     .locals 0
-    .param p0    # Landroid/opengl/GLExternalSurfaceView$GLThread;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/opengl/GLExternalSurfaceView$GLThread;->mExited:Z
 
@@ -1846,8 +1843,6 @@
 
 .method public onWindowResize(II)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     # getter for: Landroid/opengl/GLExternalSurfaceView;->sGLThreadManager:Landroid/opengl/GLExternalSurfaceView$GLThreadManager;
     invoke-static {}, Landroid/opengl/GLExternalSurfaceView;->access$800()Landroid/opengl/GLExternalSurfaceView$GLThreadManager;
@@ -1998,7 +1993,6 @@
 
 .method public queueEvent(Ljava/lang/Runnable;)V
     .locals 2
-    .param p1    # Ljava/lang/Runnable;
 
     if-nez p1, :cond_0
 
@@ -2263,7 +2257,6 @@
 
 .method public setRenderMode(I)V
     .locals 2
-    .param p1    # I
 
     if-ltz p1, :cond_0
 

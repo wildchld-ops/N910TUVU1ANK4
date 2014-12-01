@@ -208,8 +208,6 @@
 
 .method public constructor <init>(Landroid/webkitsec/WebViewClassic;Landroid/webkitsec/CallbackProxy;)V
     .locals 3
-    .param p1    # Landroid/webkitsec/WebViewClassic;
-    .param p2    # Landroid/webkitsec/CallbackProxy;
 
     const/4 v2, 0x1
 
@@ -272,7 +270,6 @@
 
 .method static synthetic access$000(Landroid/webkitsec/ZoomManager;)Landroid/webkitsec/TiltListener;
     .locals 1
-    .param p0    # Landroid/webkitsec/ZoomManager;
 
     iget-object v0, p0, Landroid/webkitsec/ZoomManager;->mTiltListener:Landroid/webkitsec/TiltListener;
 
@@ -281,7 +278,6 @@
 
 .method static synthetic access$1000(Landroid/webkitsec/ZoomManager;)F
     .locals 1
-    .param p0    # Landroid/webkitsec/ZoomManager;
 
     iget v0, p0, Landroid/webkitsec/ZoomManager;->mFocusX:F
 
@@ -290,8 +286,6 @@
 
 .method static synthetic access$1002(Landroid/webkitsec/ZoomManager;F)F
     .locals 0
-    .param p0    # Landroid/webkitsec/ZoomManager;
-    .param p1    # F
 
     iput p1, p0, Landroid/webkitsec/ZoomManager;->mFocusX:F
 
@@ -300,7 +294,6 @@
 
 .method static synthetic access$1100(Landroid/webkitsec/ZoomManager;)F
     .locals 1
-    .param p0    # Landroid/webkitsec/ZoomManager;
 
     iget v0, p0, Landroid/webkitsec/ZoomManager;->mFocusY:F
 
@@ -309,8 +302,6 @@
 
 .method static synthetic access$1102(Landroid/webkitsec/ZoomManager;F)F
     .locals 0
-    .param p0    # Landroid/webkitsec/ZoomManager;
-    .param p1    # F
 
     iput p1, p0, Landroid/webkitsec/ZoomManager;->mFocusY:F
 
@@ -319,7 +310,6 @@
 
 .method static synthetic access$1200(Landroid/webkitsec/ZoomManager;)J
     .locals 2
-    .param p0    # Landroid/webkitsec/ZoomManager;
 
     iget-wide v0, p0, Landroid/webkitsec/ZoomManager;->mStartTimePannigCheck:J
 
@@ -328,8 +318,6 @@
 
 .method static synthetic access$1202(Landroid/webkitsec/ZoomManager;J)J
     .locals 0
-    .param p0    # Landroid/webkitsec/ZoomManager;
-    .param p1    # J
 
     iput-wide p1, p0, Landroid/webkitsec/ZoomManager;->mStartTimePannigCheck:J
 
@@ -338,7 +326,6 @@
 
 .method static synthetic access$1500(Landroid/webkitsec/ZoomManager;)Landroid/webkitsec/MouseWheelListener;
     .locals 1
-    .param p0    # Landroid/webkitsec/ZoomManager;
 
     iget-object v0, p0, Landroid/webkitsec/ZoomManager;->mMouseWheelListener:Landroid/webkitsec/MouseWheelListener;
 
@@ -347,7 +334,6 @@
 
 .method static synthetic access$1600(Landroid/webkitsec/ZoomManager;)Z
     .locals 1
-    .param p0    # Landroid/webkitsec/ZoomManager;
 
     iget-boolean v0, p0, Landroid/webkitsec/ZoomManager;->mPinchToZoomAnimating:Z
 
@@ -356,8 +342,6 @@
 
 .method static synthetic access$1602(Landroid/webkitsec/ZoomManager;Z)Z
     .locals 0
-    .param p0    # Landroid/webkitsec/ZoomManager;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/webkitsec/ZoomManager;->mPinchToZoomAnimating:Z
 
@@ -374,8 +358,6 @@
 
 .method static synthetic access$1802(Landroid/webkitsec/ZoomManager;I)I
     .locals 0
-    .param p0    # Landroid/webkitsec/ZoomManager;
-    .param p1    # I
 
     iput p1, p0, Landroid/webkitsec/ZoomManager;->mAnchorX:I
 
@@ -384,7 +366,6 @@
 
 .method static synthetic access$1900(Landroid/webkitsec/ZoomManager;)F
     .locals 1
-    .param p0    # Landroid/webkitsec/ZoomManager;
 
     iget v0, p0, Landroid/webkitsec/ZoomManager;->mZoomCenterX:F
 
@@ -393,7 +374,6 @@
 
 .method static synthetic access$200(Landroid/webkitsec/ZoomManager;)Landroid/webkitsec/WebViewClassic;
     .locals 1
-    .param p0    # Landroid/webkitsec/ZoomManager;
 
     iget-object v0, p0, Landroid/webkitsec/ZoomManager;->mWebView:Landroid/webkitsec/WebViewClassic;
 
@@ -402,8 +382,6 @@
 
 .method static synthetic access$2002(Landroid/webkitsec/ZoomManager;I)I
     .locals 0
-    .param p0    # Landroid/webkitsec/ZoomManager;
-    .param p1    # I
 
     iput p1, p0, Landroid/webkitsec/ZoomManager;->mAnchorY:I
 
@@ -412,7 +390,6 @@
 
 .method static synthetic access$2100(Landroid/webkitsec/ZoomManager;)F
     .locals 1
-    .param p0    # Landroid/webkitsec/ZoomManager;
 
     iget v0, p0, Landroid/webkitsec/ZoomManager;->mZoomCenterY:F
 
@@ -421,7 +398,6 @@
 
 .method static synthetic access$2200(Landroid/webkitsec/ZoomManager;)F
     .locals 1
-    .param p0    # Landroid/webkitsec/ZoomManager;
 
     iget v0, p0, Landroid/webkitsec/ZoomManager;->mTextWrapScale:F
 
@@ -430,10 +406,6 @@
 
 .method static synthetic access$2300(Landroid/webkitsec/ZoomManager;FZZ)V
     .locals 0
-    .param p0    # Landroid/webkitsec/ZoomManager;
-    .param p1    # F
-    .param p2    # Z
-    .param p3    # Z
 
     invoke-direct {p0, p1, p2, p3}, Landroid/webkitsec/ZoomManager;->setZoomScale(FZZ)V
 
@@ -442,7 +414,6 @@
 
 .method static synthetic access$300(Landroid/webkitsec/ZoomManager;)F
     .locals 1
-    .param p0    # Landroid/webkitsec/ZoomManager;
 
     iget v0, p0, Landroid/webkitsec/ZoomManager;->mMinZoomScale:F
 
@@ -451,7 +422,6 @@
 
 .method static synthetic access$400(Landroid/webkitsec/ZoomManager;)F
     .locals 1
-    .param p0    # Landroid/webkitsec/ZoomManager;
 
     iget v0, p0, Landroid/webkitsec/ZoomManager;->mMaxZoomScale:F
 
@@ -460,7 +430,6 @@
 
 .method static synthetic access$500(Landroid/webkitsec/ZoomManager;)F
     .locals 1
-    .param p0    # Landroid/webkitsec/ZoomManager;
 
     iget v0, p0, Landroid/webkitsec/ZoomManager;->mActualScale:F
 
@@ -469,8 +438,6 @@
 
 .method static synthetic access$602(Landroid/webkitsec/ZoomManager;Z)Z
     .locals 0
-    .param p0    # Landroid/webkitsec/ZoomManager;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/webkitsec/ZoomManager;->mInitialZoomOverview:Z
 
@@ -479,8 +446,6 @@
 
 .method static synthetic access$702(Landroid/webkitsec/ZoomManager;Z)Z
     .locals 0
-    .param p0    # Landroid/webkitsec/ZoomManager;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/webkitsec/ZoomManager;->mIsZooming:Z
 
@@ -489,7 +454,6 @@
 
 .method static synthetic access$800(Landroid/webkitsec/ZoomManager;)Landroid/webkitsec/ZoomManager$FocusMovementQueue;
     .locals 1
-    .param p0    # Landroid/webkitsec/ZoomManager;
 
     iget-object v0, p0, Landroid/webkitsec/ZoomManager;->mFocusMovementQueue:Landroid/webkitsec/ZoomManager$FocusMovementQueue;
 
@@ -498,7 +462,6 @@
 
 .method private animateBlockZoom(Landroid/graphics/Canvas;)V
     .locals 14
-    .param p1    # Landroid/graphics/Canvas;
 
     const/4 v13, 0x0
 
@@ -697,8 +660,6 @@
 
 .method public static final exceedsMinScaleIncrement(FF)Z
     .locals 2
-    .param p0    # F
-    .param p1    # F
 
     sub-float v0, p0, p1
 
@@ -873,7 +834,6 @@
 
 .method private setDefaultZoomScale(F)V
     .locals 6
-    .param p1    # F
 
     const-wide/16 v4, 0x0
 
@@ -1024,7 +984,6 @@
 
 .method private setZoomOverviewWidth(I)V
     .locals 2
-    .param p1    # I
 
     if-nez p1, :cond_0
 
@@ -1051,9 +1010,6 @@
 
 .method private setZoomScale(FZZ)V
     .locals 17
-    .param p1    # F
-    .param p2    # Z
-    .param p3    # Z
 
     move-object/from16 v0, p0
 
@@ -1429,8 +1385,6 @@
 
 .method private setupZoomOverviewWidth(Landroid/webkitsec/WebViewCore$DrawData;I)Z
     .locals 4
-    .param p1    # Landroid/webkitsec/WebViewCore$DrawData;
-    .param p2    # I
 
     iget-object v2, p0, Landroid/webkitsec/ZoomManager;->mWebView:Landroid/webkitsec/WebViewClassic;
 
@@ -1496,9 +1450,6 @@
 
 .method private startSmoothZoomAnimation(ZZF)V
     .locals 31
-    .param p1    # Z
-    .param p2    # Z
-    .param p3    # F
 
     const/16 v20, 0x0
 
@@ -2525,7 +2476,6 @@
 
 .method private zoom(F)Z
     .locals 4
-    .param p1    # F
 
     const/high16 v2, 0x3f000000
 
@@ -2918,7 +2868,6 @@
 
 .method public SetIsActionPU(Z)V
     .locals 3
-    .param p1    # Z
 
     sget-boolean v0, Landroid/webkitsec/DebugFlags;->WEB_TOUCH_LOG:Z
 
@@ -2961,7 +2910,6 @@
 
 .method public animateZoom(Landroid/graphics/Canvas;)V
     .locals 14
-    .param p1    # Landroid/graphics/Canvas;
 
     const/4 v13, 0x0
 
@@ -3358,7 +3306,6 @@
 
 .method final computeReadingLevelScale(F)F
     .locals 3
-    .param p1    # F
 
     iget-object v1, p0, Landroid/webkitsec/ZoomManager;->mWebView:Landroid/webkitsec/WebViewClassic;
 
@@ -3409,7 +3356,6 @@
 
 .method public final computeScaleWithLimits(F)F
     .locals 1
-    .param p1    # F
 
     iget v0, p0, Landroid/webkitsec/ZoomManager;->mMinZoomScale:F
 
@@ -3691,8 +3637,6 @@
 
 .method public handleDoubleTap(FF)V
     .locals 7
-    .param p1    # F
-    .param p2    # F
 
     const/4 v3, 0x1
 
@@ -3898,7 +3842,6 @@
 
 .method public init(F)V
     .locals 1
-    .param p1    # F
 
     sget-boolean v0, Landroid/webkitsec/ZoomManager;->$assertionsDisabled:Z
 
@@ -4038,7 +3981,6 @@
 
 .method public final isScaleOverLimits(F)Z
     .locals 1
-    .param p1    # F
 
     iget v0, p0, Landroid/webkitsec/ZoomManager;->mMinZoomScale:F
 
@@ -4154,7 +4096,6 @@
 
 .method public onFirstLayout(Landroid/webkitsec/WebViewCore$DrawData;)V
     .locals 10
-    .param p1    # Landroid/webkitsec/WebViewCore$DrawData;
 
     const/4 v7, 0x1
 
@@ -4452,7 +4393,6 @@
 
 .method public onNewPicture(Landroid/webkitsec/WebViewCore$DrawData;)Z
     .locals 11
-    .param p1    # Landroid/webkitsec/WebViewCore$DrawData;
 
     const/4 v7, 0x1
 
@@ -4696,7 +4636,6 @@
 
 .method onPageFinished(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -4707,10 +4646,6 @@
 
 .method public onSizeChanged(IIII)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/4 v2, 0x1
 
@@ -4901,7 +4836,6 @@
 
 .method public refreshZoomScale(Z)V
     .locals 2
-    .param p1    # Z
 
     iget v0, p0, Landroid/webkitsec/ZoomManager;->mActualScale:F
 
@@ -4937,7 +4871,6 @@
 
 .method public restoreZoomState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     const/high16 v1, 0x3f800000
 
@@ -4978,7 +4911,6 @@
 
 .method public saveZoomState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     const-string/jumbo v0, "scale"
 
@@ -5013,7 +4945,6 @@
 
 .method setEdgeZoom(Z)V
     .locals 10
-    .param p1    # Z
 
     const/4 v5, 0x1
 
@@ -5128,7 +5059,6 @@
 
 .method public setHandleMoveEvForZooming(Z)V
     .locals 3
-    .param p1    # Z
 
     const-string v0, "ZoomManager"
 
@@ -5169,7 +5099,6 @@
 
 .method public final setInitialScaleInPercent(I)V
     .locals 2
-    .param p1    # I
 
     int-to-float v0, p1
 
@@ -5184,8 +5113,6 @@
 
 .method public final setZoomCenter(FF)V
     .locals 0
-    .param p1    # F
-    .param p2    # F
 
     iput p1, p0, Landroid/webkitsec/ZoomManager;->mZoomCenterX:F
 
@@ -5196,8 +5123,6 @@
 
 .method public setZoomScale(FZ)V
     .locals 1
-    .param p1    # F
-    .param p2    # Z
 
     const/4 v0, 0x0
 
@@ -5208,8 +5133,6 @@
 
 .method public startZoomAnimation(FZ)Z
     .locals 5
-    .param p1    # F
-    .param p2    # Z
 
     const/4 v1, 0x1
 
@@ -5350,7 +5273,6 @@
 
 .method public updateDefaultZoomDensity(F)V
     .locals 6
-    .param p1    # F
 
     sget-boolean v2, Landroid/webkitsec/ZoomManager;->$assertionsDisabled:Z
 
@@ -5419,7 +5341,6 @@
 
 .method public updateDoubleTapZoom(I)V
     .locals 5
-    .param p1    # I
 
     const/4 v2, 0x1
 
@@ -5486,7 +5407,6 @@
 
 .method public updateMultiTouchSupport(Landroid/content/Context;)V
     .locals 7
-    .param p1    # Landroid/content/Context;
 
     const/4 v4, 0x1
 
@@ -5671,9 +5591,6 @@
 
 .method public updateZoomRange(Landroid/webkitsec/WebViewCore$ViewState;II)V
     .locals 5
-    .param p1    # Landroid/webkitsec/WebViewCore$ViewState;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v2, 0x1
 
@@ -5797,7 +5714,6 @@
 
 .method public willScaleTriggerZoom(F)Z
     .locals 1
-    .param p1    # F
 
     iget v0, p0, Landroid/webkitsec/ZoomManager;->mActualScale:F
 

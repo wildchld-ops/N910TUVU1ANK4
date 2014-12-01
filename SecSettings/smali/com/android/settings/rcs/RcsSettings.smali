@@ -99,7 +99,6 @@
 # virtual methods
 .method public updateRcsSettingsVisibility(Z)V
     .locals 3
-    .param p1    # Z
 
     sget-object v0, Lcom/android/settings/rcs/RcsSettings;->mRcsSettingsPreference:Landroid/preference/Preference;
 

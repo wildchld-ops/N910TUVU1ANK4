@@ -38,10 +38,6 @@
 # direct methods
 .method constructor <init>(IIILandroid/graphics/Atlas$SlicePolicy$SplitDecision;)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/graphics/Atlas$SlicePolicy$SplitDecision;
 
     const/4 v2, 0x1
 
@@ -120,11 +116,6 @@
 
 .method private insert(Landroid/graphics/Atlas$SlicePolicy$Cell;Landroid/graphics/Atlas$SlicePolicy$Cell;IILandroid/graphics/Atlas$Entry;)Z
     .locals 9
-    .param p1    # Landroid/graphics/Atlas$SlicePolicy$Cell;
-    .param p2    # Landroid/graphics/Atlas$SlicePolicy$Cell;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Landroid/graphics/Atlas$Entry;
 
     const/4 v6, 0x0
 
@@ -309,9 +300,6 @@
 # virtual methods
 .method pack(IILandroid/graphics/Atlas$Entry;)Landroid/graphics/Atlas$Entry;
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/graphics/Atlas$Entry;
 
     iget-object v0, p0, Landroid/graphics/Atlas$SlicePolicy;->mRoot:Landroid/graphics/Atlas$SlicePolicy$Cell;
 

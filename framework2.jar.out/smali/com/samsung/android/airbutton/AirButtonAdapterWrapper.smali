@@ -18,9 +18,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Lcom/samsung/android/sdk/look/airbutton/SlookAirButtonAdapter;Lcom/samsung/android/airbutton/Attributes;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/samsung/android/sdk/look/airbutton/SlookAirButtonAdapter;
-    .param p3    # Lcom/samsung/android/airbutton/Attributes;
 
     const/4 v3, 0x1
 
@@ -106,7 +103,6 @@
 
 .method private getListView(I)Landroid/view/View;
     .locals 12
-    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -461,7 +457,6 @@
 
 .method private getMenuView(I)Landroid/view/View;
     .locals 13
-    .param p1    # I
 
     const/4 v12, 0x0
 
@@ -670,7 +665,6 @@
 
 .method public getView(I)Landroid/view/View;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/samsung/android/airbutton/AirButtonAdapterWrapper;->mAttrs:Lcom/samsung/android/airbutton/Attributes;
 

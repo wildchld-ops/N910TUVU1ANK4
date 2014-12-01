@@ -535,7 +535,6 @@
 
 .method public static getSupportedResolutions(I)[Landroid/util/Pair;
     .locals 11
-    .param p0    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)[",

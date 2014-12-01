@@ -44,8 +44,6 @@
 
 .method synthetic constructor <init>(Lcom/android/server/enterprise/log/FileLogger;Lcom/android/server/enterprise/log/FileLogger$1;)V
     .locals 0
-    .param p1    # Lcom/android/server/enterprise/log/FileLogger;
-    .param p2    # Lcom/android/server/enterprise/log/FileLogger$1;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/log/FileLogger$LogFileWriter;-><init>(Lcom/android/server/enterprise/log/FileLogger;)V
 
@@ -56,7 +54,6 @@
 # virtual methods
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [Ljava/util/concurrent/CountDownLatch;
 
@@ -69,7 +66,6 @@
 
 .method protected varargs doInBackground([Ljava/util/concurrent/CountDownLatch;)Ljava/lang/Void;
     .locals 8
-    .param p1    # [Ljava/util/concurrent/CountDownLatch;
 
     const/4 v7, 0x0
 

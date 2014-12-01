@@ -14,8 +14,6 @@
 
 .method public static final beginDocument(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)V
     .locals 4
-    .param p0    # Lorg/xmlpull/v1/XmlPullParser;
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -102,8 +100,6 @@
 
 .method public static final convertValueToBoolean(Ljava/lang/CharSequence;Z)Z
     .locals 2
-    .param p0    # Ljava/lang/CharSequence;
-    .param p1    # Z
 
     const/4 v0, 0x0
 
@@ -148,8 +144,6 @@
 
 .method public static final convertValueToInt(Ljava/lang/CharSequence;I)I
     .locals 9
-    .param p0    # Ljava/lang/CharSequence;
-    .param p1    # I
 
     const/4 v6, 0x0
 
@@ -261,9 +255,6 @@
 
 .method public static final convertValueToList(Ljava/lang/CharSequence;[Ljava/lang/String;I)I
     .locals 2
-    .param p0    # Ljava/lang/CharSequence;
-    .param p1    # [Ljava/lang/String;
-    .param p2    # I
 
     if-eqz p0, :cond_1
 
@@ -298,8 +289,6 @@
 
 .method public static convertValueToUnsignedInt(Ljava/lang/String;I)I
     .locals 0
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
 
     if-nez p0, :cond_0
 
@@ -316,7 +305,6 @@
 
 .method public static final nextElement(Lorg/xmlpull/v1/XmlPullParser;)V
     .locals 2
-    .param p0    # Lorg/xmlpull/v1/XmlPullParser;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -343,8 +331,6 @@
 
 .method public static nextElementWithin(Lorg/xmlpull/v1/XmlPullParser;I)Z
     .locals 4
-    .param p0    # Lorg/xmlpull/v1/XmlPullParser;
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -395,7 +381,6 @@
 
 .method public static parseUnsignedIntAttribute(Ljava/lang/CharSequence;)I
     .locals 7
-    .param p0    # Ljava/lang/CharSequence;
 
     invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
@@ -485,8 +470,6 @@
 
 .method public static readBooleanAttribute(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)Z
     .locals 2
-    .param p0    # Lorg/xmlpull/v1/XmlPullParser;
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -503,8 +486,6 @@
 
 .method public static readIntAttribute(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)I
     .locals 5
-    .param p0    # Lorg/xmlpull/v1/XmlPullParser;
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -572,7 +553,6 @@
 
 .method public static final readListXml(Ljava/io/InputStream;)Ljava/util/ArrayList;
     .locals 2
-    .param p0    # Ljava/io/InputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -603,8 +583,6 @@
 
 .method public static readLongAttribute(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)J
     .locals 5
-    .param p0    # Lorg/xmlpull/v1/XmlPullParser;
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -672,9 +650,6 @@
 
 .method public static readLongAttribute(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;J)J
     .locals 3
-    .param p0    # Lorg/xmlpull/v1/XmlPullParser;
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
 
     const/4 v2, 0x0
 
@@ -700,7 +675,6 @@
 
 .method public static final readMapXml(Ljava/io/InputStream;)Ljava/util/HashMap;
     .locals 2
-    .param p0    # Ljava/io/InputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -731,7 +705,6 @@
 
 .method public static final readSetXml(Ljava/io/InputStream;)Ljava/util/HashSet;
     .locals 2
-    .param p0    # Ljava/io/InputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -762,9 +735,6 @@
 
 .method public static final readThisIntArrayXml(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;[Ljava/lang/String;)[I
     .locals 8
-    .param p0    # Lorg/xmlpull/v1/XmlPullParser;
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -1020,9 +990,6 @@
 
 .method public static final readThisListXml(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;[Ljava/lang/String;)Ljava/util/ArrayList;
     .locals 6
-    .param p0    # Lorg/xmlpull/v1/XmlPullParser;
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -1147,9 +1114,6 @@
 
 .method public static final readThisMapXml(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;[Ljava/lang/String;)Ljava/util/HashMap;
     .locals 6
-    .param p0    # Lorg/xmlpull/v1/XmlPullParser;
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -1311,8 +1275,6 @@
 
 .method private static final readThisPrimitiveValueXml(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)Ljava/lang/Object;
     .locals 4
-    .param p0    # Lorg/xmlpull/v1/XmlPullParser;
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -1523,9 +1485,6 @@
 
 .method public static final readThisSetXml(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;[Ljava/lang/String;)Ljava/util/HashSet;
     .locals 6
-    .param p0    # Lorg/xmlpull/v1/XmlPullParser;
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -1650,8 +1609,6 @@
 
 .method private static final readThisValueXml(Lorg/xmlpull/v1/XmlPullParser;[Ljava/lang/String;)Ljava/lang/Object;
     .locals 12
-    .param p0    # Lorg/xmlpull/v1/XmlPullParser;
-    .param p1    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -2118,8 +2075,6 @@
 
 .method public static final readValueXml(Lorg/xmlpull/v1/XmlPullParser;[Ljava/lang/String;)Ljava/lang/Object;
     .locals 4
-    .param p0    # Lorg/xmlpull/v1/XmlPullParser;
-    .param p1    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -2228,7 +2183,6 @@
 
 .method public static skipCurrentTag(Lorg/xmlpull/v1/XmlPullParser;)V
     .locals 3
-    .param p0    # Lorg/xmlpull/v1/XmlPullParser;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -2265,9 +2219,6 @@
 
 .method public static writeBooleanAttribute(Lorg/xmlpull/v1/XmlSerializer;Ljava/lang/String;Z)V
     .locals 2
-    .param p0    # Lorg/xmlpull/v1/XmlSerializer;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -2287,9 +2238,6 @@
 
 .method public static final writeByteArrayXml([BLjava/lang/String;Lorg/xmlpull/v1/XmlSerializer;)V
     .locals 9
-    .param p0    # [B
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lorg/xmlpull/v1/XmlSerializer;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -2403,9 +2351,6 @@
 
 .method public static final writeIntArrayXml([ILjava/lang/String;Lorg/xmlpull/v1/XmlSerializer;)V
     .locals 5
-    .param p0    # [I
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lorg/xmlpull/v1/XmlSerializer;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -2487,9 +2432,6 @@
 
 .method public static writeIntAttribute(Lorg/xmlpull/v1/XmlSerializer;Ljava/lang/String;I)V
     .locals 2
-    .param p0    # Lorg/xmlpull/v1/XmlSerializer;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -2509,8 +2451,6 @@
 
 .method public static final writeListXml(Ljava/util/List;Ljava/io/OutputStream;)V
     .locals 4
-    .param p0    # Ljava/util/List;
-    .param p1    # Ljava/io/OutputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -2549,9 +2489,6 @@
 
 .method public static final writeListXml(Ljava/util/List;Ljava/lang/String;Lorg/xmlpull/v1/XmlSerializer;)V
     .locals 4
-    .param p0    # Ljava/util/List;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lorg/xmlpull/v1/XmlSerializer;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -2615,9 +2552,6 @@
 
 .method public static writeLongAttribute(Lorg/xmlpull/v1/XmlSerializer;Ljava/lang/String;J)V
     .locals 2
-    .param p0    # Lorg/xmlpull/v1/XmlSerializer;
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -2637,8 +2571,6 @@
 
 .method public static final writeMapXml(Ljava/util/Map;Ljava/io/OutputStream;)V
     .locals 4
-    .param p0    # Ljava/util/Map;
-    .param p1    # Ljava/io/OutputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -2677,9 +2609,6 @@
 
 .method public static final writeMapXml(Ljava/util/Map;Ljava/lang/String;Lorg/xmlpull/v1/XmlSerializer;)V
     .locals 6
-    .param p0    # Ljava/util/Map;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lorg/xmlpull/v1/XmlSerializer;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -2759,9 +2688,6 @@
 
 .method public static final writeSetXml(Ljava/util/Set;Ljava/lang/String;Lorg/xmlpull/v1/XmlSerializer;)V
     .locals 4
-    .param p0    # Ljava/util/Set;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lorg/xmlpull/v1/XmlSerializer;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -2825,9 +2751,6 @@
 
 .method public static final writeValueXml(Ljava/lang/Object;Ljava/lang/String;Lorg/xmlpull/v1/XmlSerializer;)V
     .locals 4
-    .param p0    # Ljava/lang/Object;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lorg/xmlpull/v1/XmlSerializer;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,

@@ -89,7 +89,6 @@
 # direct methods
 .method public constructor <init>(Landroid/view/MenuInflater;Landroid/view/Menu;)V
     .locals 0
-    .param p2    # Landroid/view/Menu;
 
     iput-object p1, p0, Landroid/view/MenuInflater$MenuState;->this$0:Landroid/view/MenuInflater;
 
@@ -104,7 +103,6 @@
 
 .method static synthetic access$000(Landroid/view/MenuInflater$MenuState;)Landroid/view/ActionProvider;
     .locals 1
-    .param p0    # Landroid/view/MenuInflater$MenuState;
 
     iget-object v0, p0, Landroid/view/MenuInflater$MenuState;->itemActionProvider:Landroid/view/ActionProvider;
 
@@ -113,7 +111,6 @@
 
 .method private getShortcut(Ljava/lang/String;)C
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -132,8 +129,6 @@
 
 .method private newInstance(Ljava/lang/String;[Ljava/lang/Class;[Ljava/lang/Object;)Ljava/lang/Object;
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p3    # [Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -209,7 +204,6 @@
 
 .method private setItem(Landroid/view/MenuItem;)V
     .locals 7
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v4, 0x1
 
@@ -471,7 +465,6 @@
 
 .method public readGroup(Landroid/util/AttributeSet;)V
     .locals 5
-    .param p1    # Landroid/util/AttributeSet;
 
     const/4 v4, 0x1
 
@@ -541,7 +534,6 @@
 
 .method public readItem(Landroid/util/AttributeSet;)V
     .locals 9
-    .param p1    # Landroid/util/AttributeSet;
 
     const/16 v8, 0xb
 

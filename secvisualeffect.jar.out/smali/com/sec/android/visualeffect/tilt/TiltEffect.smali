@@ -18,7 +18,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;)V
 
@@ -35,8 +34,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -53,9 +50,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
@@ -72,7 +66,6 @@
 
 .method static synthetic access$000(Lcom/sec/android/visualeffect/tilt/TiltEffect;)Landroid/widget/ImageView;
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/tilt/TiltEffect;
 
     iget-object v0, p0, Lcom/sec/android/visualeffect/tilt/TiltEffect;->mAlphaImageView:Landroid/widget/ImageView;
 
@@ -157,7 +150,6 @@
 # virtual methods
 .method public changeBackground(Landroid/graphics/Bitmap;)V
     .locals 2
-    .param p1    # Landroid/graphics/Bitmap;
 
     if-nez p1, :cond_0
 
@@ -177,7 +169,6 @@
 
 .method public handleSensorEvent(Landroid/hardware/SensorEvent;)V
     .locals 2
-    .param p1    # Landroid/hardware/SensorEvent;
 
     iget-object v0, p1, Landroid/hardware/SensorEvent;->sensor:Landroid/hardware/Sensor;
 
@@ -199,7 +190,6 @@
 
 .method public onWindowFocusChanged(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-super {p0, p1}, Landroid/view/ViewGroup;->onWindowFocusChanged(Z)V
 
@@ -212,7 +202,6 @@
 
 .method public setAlphaImageResources(Landroid/graphics/Bitmap;)V
     .locals 2
-    .param p1    # Landroid/graphics/Bitmap;
 
     if-nez p1, :cond_0
 
@@ -232,7 +221,6 @@
 
 .method public setTiltEnable(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/sec/android/visualeffect/tilt/TiltEffect;->mTiltAlphaProvider:Lcom/sec/android/visualeffect/tilt/TiltAlphaProvider;
 

@@ -38,9 +38,6 @@
 # direct methods
 .method constructor <init>(Landroid/hardware/sensorhub/SensorHubManager;Landroid/hardware/sensorhub/SensorHubEventListener;Landroid/hardware/sensorhub/SensorHub;Landroid/os/Handler;)V
     .locals 2
-    .param p2    # Landroid/hardware/sensorhub/SensorHubEventListener;
-    .param p3    # Landroid/hardware/sensorhub/SensorHub;
-    .param p4    # Landroid/os/Handler;
 
     iput-object p1, p0, Landroid/hardware/sensorhub/SensorHubManager$ListenerDelegate;->this$0:Landroid/hardware/sensorhub/SensorHubManager;
 
@@ -85,7 +82,6 @@
 
 .method static synthetic access$100(Landroid/hardware/sensorhub/SensorHubManager$ListenerDelegate;)Landroid/hardware/sensorhub/SensorHubEventListener;
     .locals 1
-    .param p0    # Landroid/hardware/sensorhub/SensorHubManager$ListenerDelegate;
 
     iget-object v0, p0, Landroid/hardware/sensorhub/SensorHubManager$ListenerDelegate;->mSensorHubEventListener:Landroid/hardware/sensorhub/SensorHubEventListener;
 
@@ -96,7 +92,6 @@
 # virtual methods
 .method addSensorHub(Landroid/hardware/sensorhub/SensorHub;)V
     .locals 3
-    .param p1    # Landroid/hardware/sensorhub/SensorHub;
 
     iget-object v0, p0, Landroid/hardware/sensorhub/SensorHubManager$ListenerDelegate;->mSensorHubs:Landroid/util/SparseBooleanArray;
 
@@ -142,7 +137,6 @@
 
 .method hasSensorHub(Landroid/hardware/sensorhub/SensorHub;)Z
     .locals 2
-    .param p1    # Landroid/hardware/sensorhub/SensorHub;
 
     iget-object v0, p0, Landroid/hardware/sensorhub/SensorHubManager$ListenerDelegate;->mSensorHubs:Landroid/util/SparseBooleanArray;
 
@@ -159,11 +153,6 @@
 
 .method onGetSensorHubDataLocked(Landroid/hardware/sensorhub/SensorHub;[BI[F[J)V
     .locals 7
-    .param p1    # Landroid/hardware/sensorhub/SensorHub;
-    .param p2    # [B
-    .param p3    # I
-    .param p4    # [F
-    .param p5    # [J
 
     const/4 v6, 0x0
 
@@ -309,7 +298,6 @@
 
 .method removeSensorHub(Landroid/hardware/sensorhub/SensorHub;)I
     .locals 2
-    .param p1    # Landroid/hardware/sensorhub/SensorHub;
 
     iget-object v0, p0, Landroid/hardware/sensorhub/SensorHubManager$ListenerDelegate;->mSensorHubs:Landroid/util/SparseBooleanArray;
 

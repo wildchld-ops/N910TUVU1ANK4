@@ -48,8 +48,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v2, 0x0
 
@@ -102,7 +100,6 @@
 
 .method static synthetic access$100(Landroid/preference/VolumePreference;)Landroid/preference/VolumePreference$SeekBarVolumizer;
     .locals 1
-    .param p0    # Landroid/preference/VolumePreference;
 
     iget-object v0, p0, Landroid/preference/VolumePreference;->mSeekBarVolumizer:Landroid/preference/VolumePreference$SeekBarVolumizer;
 
@@ -111,7 +108,6 @@
 
 .method static synthetic access$200(Landroid/preference/VolumePreference;)I
     .locals 1
-    .param p0    # Landroid/preference/VolumePreference;
 
     iget v0, p0, Landroid/preference/VolumePreference;->mDisplayType:I
 
@@ -120,7 +116,6 @@
 
 .method static synthetic access$300(Landroid/preference/VolumePreference;)I
     .locals 1
-    .param p0    # Landroid/preference/VolumePreference;
 
     iget v0, p0, Landroid/preference/VolumePreference;->mProfileMode:I
 
@@ -129,7 +124,6 @@
 
 .method static synthetic access$400(Landroid/preference/VolumePreference;)I
     .locals 1
-    .param p0    # Landroid/preference/VolumePreference;
 
     iget v0, p0, Landroid/preference/VolumePreference;->mEditMode:I
 
@@ -138,7 +132,6 @@
 
 .method static synthetic access$800(Landroid/preference/VolumePreference;)Z
     .locals 1
-    .param p0    # Landroid/preference/VolumePreference;
 
     invoke-direct {p0}, Landroid/preference/VolumePreference;->requestAudioFocus()Z
 
@@ -149,7 +142,6 @@
 
 .method static synthetic access$900(Landroid/preference/VolumePreference;)Z
     .locals 1
-    .param p0    # Landroid/preference/VolumePreference;
 
     iget-boolean v0, p0, Landroid/preference/VolumePreference;->mVoiceCapable:Z
 
@@ -344,7 +336,6 @@
 
 .method protected onBindDialogView(Landroid/view/View;)V
     .locals 5
-    .param p1    # Landroid/view/View;
 
     const/4 v4, 0x0
 
@@ -445,7 +436,6 @@
 
 .method protected onDialogClosed(Z)V
     .locals 3
-    .param p1    # Z
 
     invoke-super {p0, p1}, Landroid/preference/DialogPreference;->onDialogClosed(Z)V
 
@@ -548,9 +538,6 @@
 
 .method public onKey(Landroid/view/View;ILandroid/view/KeyEvent;)Z
     .locals 6
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # Landroid/view/KeyEvent;
 
     const/4 v2, 0x0
 
@@ -648,7 +635,6 @@
 
 .method protected onRestoreInstanceState(Landroid/os/Parcelable;)V
     .locals 3
-    .param p1    # Landroid/os/Parcelable;
 
     if-eqz p1, :cond_0
 
@@ -699,7 +685,6 @@
 
 .method protected onSampleStarting(Landroid/preference/VolumePreference$SeekBarVolumizer;)V
     .locals 1
-    .param p1    # Landroid/preference/VolumePreference$SeekBarVolumizer;
 
     iget-object v0, p0, Landroid/preference/VolumePreference;->mSeekBarVolumizer:Landroid/preference/VolumePreference$SeekBarVolumizer;
 
@@ -758,7 +743,6 @@
 
 .method public setDisplayType(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "VolumePreference"
 
@@ -789,7 +773,6 @@
 
 .method public setStreamType(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "VolumePreference"
 

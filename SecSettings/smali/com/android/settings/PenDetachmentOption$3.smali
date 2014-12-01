@@ -36,8 +36,6 @@
 # virtual methods
 .method public onDrag(Landroid/view/View;Landroid/view/DragEvent;)Z
     .locals 8
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/DragEvent;
 
     const/high16 v7, 0x3f800000
 

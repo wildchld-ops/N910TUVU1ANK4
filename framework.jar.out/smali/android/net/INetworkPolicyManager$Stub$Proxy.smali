@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -170,7 +169,6 @@
 
 .method public getNetworkQuotaInfo(Landroid/net/NetworkState;)Landroid/net/NetworkQuotaInfo;
     .locals 6
-    .param p1    # Landroid/net/NetworkState;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -321,7 +319,6 @@
 
 .method public getUidPolicy(I)I
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -377,7 +374,6 @@
 
 .method public getUidsWithPolicy(I)[I
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -433,7 +429,6 @@
 
 .method public isNetworkMetered(Landroid/net/NetworkState;)Z
     .locals 7
-    .param p1    # Landroid/net/NetworkState;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -520,7 +515,6 @@
 
 .method public isUidForeground(I)Z
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -583,7 +577,6 @@
 
 .method public registerListener(Landroid/net/INetworkPolicyListener;)V
     .locals 5
-    .param p1    # Landroid/net/INetworkPolicyListener;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -647,7 +640,6 @@
 
 .method public setLimitBackground(Z)V
     .locals 5
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -706,7 +698,6 @@
 
 .method public setNetworkPolicies([Landroid/net/NetworkPolicy;)V
     .locals 5
-    .param p1    # [Landroid/net/NetworkPolicy;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -760,7 +751,6 @@
 
 .method public setRestrictBackground(Z)V
     .locals 5
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -819,7 +809,6 @@
 
 .method public setRestrictBackgroundByPco(Z)V
     .locals 5
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -878,8 +867,6 @@
 
 .method public setUidAllowedForData(II)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -933,8 +920,6 @@
 
 .method public setUidPolicy(II)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -988,7 +973,6 @@
 
 .method public snoozeLimit(Landroid/net/NetworkTemplate;)V
     .locals 5
-    .param p1    # Landroid/net/NetworkTemplate;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1059,7 +1043,6 @@
 
 .method public unregisterListener(Landroid/net/INetworkPolicyListener;)V
     .locals 5
-    .param p1    # Landroid/net/INetworkPolicyListener;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

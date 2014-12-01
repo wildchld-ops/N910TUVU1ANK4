@@ -27,9 +27,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/enterprise/container/EnterpriseContainerPolicy;IILcom/sec/enterprise/knox/IEnterpriseContainerCallback;)V
     .locals 0
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Lcom/sec/enterprise/knox/IEnterpriseContainerCallback;
 
     iput-object p1, p0, Lcom/android/server/enterprise/container/EnterpriseContainerPolicy$ContainerServiceCallback;->this$0:Lcom/android/server/enterprise/container/EnterpriseContainerPolicy;
 
@@ -48,8 +45,6 @@
 # virtual methods
 .method public updateStatus(ILandroid/os/Bundle;)V
     .locals 11
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     # getter for: Lcom/android/server/enterprise/container/EnterpriseContainerPolicy;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/android/server/enterprise/container/EnterpriseContainerPolicy;->access$200()Ljava/lang/String;

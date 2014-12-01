@@ -74,7 +74,6 @@
 
 .method protected static registerForImageGalleryResponse(Landroid/os/Handler;)V
     .locals 0
-    .param p0    # Landroid/os/Handler;
 
     sput-object p0, Lcom/android/incallui/vt/PickImageFromGallery;->myHandler:Landroid/os/Handler;
 
@@ -95,7 +94,6 @@
 # virtual methods
 .method public displayToast(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -110,7 +108,6 @@
 
 .method public getFileUri(Ljava/lang/String;)Landroid/net/Uri;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     new-instance v1, Ljava/io/File;
 
@@ -141,7 +138,6 @@
 
 .method public log(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     sget-object v0, Lcom/android/incallui/vt/PickImageFromGallery;->LOG_TAG:Ljava/lang/String;
 
@@ -152,9 +148,6 @@
 
 .method protected onActivityResult(IILandroid/content/Intent;)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const/4 v5, -0x1
 
@@ -308,7 +301,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 1
-    .param p1    # Landroid/content/res/Configuration;
 
     const-string v0, "Ignore onConfigurationChanged for PickImageFromGallery"
 
@@ -321,7 +313,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 13
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 

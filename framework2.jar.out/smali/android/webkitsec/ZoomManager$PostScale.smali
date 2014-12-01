@@ -30,9 +30,6 @@
 # direct methods
 .method public constructor <init>(Landroid/webkitsec/ZoomManager;ZZZ)V
     .locals 0
-    .param p2    # Z
-    .param p3    # Z
-    .param p4    # Z
 
     iput-object p1, p0, Landroid/webkitsec/ZoomManager$PostScale;->this$0:Landroid/webkitsec/ZoomManager;
 

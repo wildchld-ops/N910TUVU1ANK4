@@ -47,9 +47,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;ILjava/util/ArrayList;Z)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p4    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -148,9 +145,6 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 9
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     const/16 v8, 0x8
 
@@ -301,7 +295,6 @@
 
 .method public isChecked(I)Z
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/mms/ui/AttachmentListAdapter;->mCheckStates:Landroid/util/SparseBooleanArray;
 
@@ -316,8 +309,6 @@
 
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 2
-    .param p1    # Landroid/widget/CompoundButton;
-    .param p2    # Z
 
     if-eqz p2, :cond_0
 
@@ -341,8 +332,6 @@
 
 .method public onCheckedChanged(Lcom/sec/android/touchwiz/widget/TwCompoundButton;Z)V
     .locals 6
-    .param p1    # Lcom/sec/android/touchwiz/widget/TwCompoundButton;
-    .param p2    # Z
 
     const/4 v5, 0x1
 
@@ -433,7 +422,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p1}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
@@ -452,8 +440,6 @@
 
 .method public setChecked(IZ)V
     .locals 3
-    .param p1    # I
-    .param p2    # Z
 
     iget-object v1, p0, Lcom/android/mms/ui/AttachmentListAdapter;->mCheckStates:Landroid/util/SparseBooleanArray;
 
@@ -519,7 +505,6 @@
 
 .method public setSaveButton(Landroid/widget/Button;)V
     .locals 2
-    .param p1    # Landroid/widget/Button;
 
     iput-object p1, p0, Lcom/android/mms/ui/AttachmentListAdapter;->mSaveButton:Landroid/widget/Button;
 
@@ -534,7 +519,6 @@
 
 .method public setSelectAllCheckbox(Lcom/sec/android/touchwiz/widget/TwCheckBox;)V
     .locals 0
-    .param p1    # Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
     iput-object p1, p0, Lcom/android/mms/ui/AttachmentListAdapter;->mSelectAllCheckbox:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
@@ -543,7 +527,6 @@
 
 .method public toggle(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/mms/ui/AttachmentListAdapter;->isChecked(I)Z
 

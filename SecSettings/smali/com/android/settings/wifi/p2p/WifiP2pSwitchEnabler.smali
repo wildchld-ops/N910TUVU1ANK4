@@ -22,8 +22,6 @@
 # direct methods
 .method static synthetic access$000(Lcom/android/settings/wifi/p2p/WifiP2pSwitchEnabler;I)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/p2p/WifiP2pSwitchEnabler;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/settings/wifi/p2p/WifiP2pSwitchEnabler;->handleP2pStateChanged(I)V
 
@@ -32,7 +30,6 @@
 
 .method private handleP2pStateChanged(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -187,8 +184,6 @@
 # virtual methods
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 2
-    .param p1    # Landroid/widget/CompoundButton;
-    .param p2    # Z
 
     iget-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pSwitchEnabler;->mWifiP2pManager:Landroid/net/wifi/p2p/WifiP2pManager;
 
@@ -258,8 +253,6 @@
 
 .method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
     .locals 4
-    .param p1    # Landroid/preference/Preference;
-    .param p2    # Ljava/lang/Object;
 
     const/4 v1, 0x0
 

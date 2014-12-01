@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Landroid/opengl/GLSurfaceView;Z)V
     .locals 8
-    .param p2    # Z
 
     const/16 v2, 0x8
 

@@ -53,8 +53,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/settings/applications/AppOpsState;Landroid/content/pm/ApplicationInfo;)V
     .locals 2
-    .param p1    # Lcom/android/settings/applications/AppOpsState;
-    .param p2    # Landroid/content/pm/ApplicationInfo;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -89,8 +87,6 @@
 # virtual methods
 .method public addOp(Lcom/android/settings/applications/AppOpsState$AppOpEntry;Landroid/app/AppOpsManager$OpEntry;)V
     .locals 2
-    .param p1    # Lcom/android/settings/applications/AppOpsState$AppOpEntry;
-    .param p2    # Landroid/app/AppOpsManager$OpEntry;
 
     iget-object v0, p0, Lcom/android/settings/applications/AppOpsState$AppEntry;->mOps:Landroid/util/SparseArray;
 
@@ -226,7 +222,6 @@
 
 .method public getOpSwitch(I)Lcom/android/settings/applications/AppOpsState$AppOpEntry;
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/settings/applications/AppOpsState$AppEntry;->mOpSwitches:Landroid/util/SparseArray;
 
@@ -245,7 +240,6 @@
 
 .method public hasOp(I)Z
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/settings/applications/AppOpsState$AppEntry;->mOps:Landroid/util/SparseArray;
 
@@ -268,7 +262,6 @@
 
 .method loadLabel(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     iget-object v1, p0, Lcom/android/settings/applications/AppOpsState$AppEntry;->mLabel:Ljava/lang/String;
 

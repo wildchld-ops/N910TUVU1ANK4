@@ -75,7 +75,7 @@
 
     iget-object v2, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions$8;->this$0:Lcom/android/phone/GsmUmtsAdditionalCallOptions;
 
-    # invokes: Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    # invokes: Lcom/android/phone/GsmUmtsAdditionalCallOptions;->getContentResolver()Landroid/content/ContentResolver;
     invoke-static {v2}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->access$2300(Lcom/android/phone/GsmUmtsAdditionalCallOptions;)Landroid/content/ContentResolver;
 
     move-result-object v2

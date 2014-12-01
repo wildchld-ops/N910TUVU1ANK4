@@ -120,7 +120,6 @@
 
 .method private handleHPDS(Lorg/apache/harmony/dalvik/ddmc/Chunk;)Lorg/apache/harmony/dalvik/ddmc/Chunk;
     .locals 6
-    .param p1    # Lorg/apache/harmony/dalvik/ddmc/Chunk;
 
     invoke-static {p1}, Landroid/ddm/DdmHandleHeap;->wrapChunk(Lorg/apache/harmony/dalvik/ddmc/Chunk;)Ljava/nio/ByteBuffer;
 
@@ -192,7 +191,6 @@
 
 .method private handleHPDU(Lorg/apache/harmony/dalvik/ddmc/Chunk;)Lorg/apache/harmony/dalvik/ddmc/Chunk;
     .locals 12
-    .param p1    # Lorg/apache/harmony/dalvik/ddmc/Chunk;
 
     const/4 v11, 0x0
 
@@ -264,7 +262,6 @@
 
 .method private handleHPGC(Lorg/apache/harmony/dalvik/ddmc/Chunk;)Lorg/apache/harmony/dalvik/ddmc/Chunk;
     .locals 1
-    .param p1    # Lorg/apache/harmony/dalvik/ddmc/Chunk;
 
     invoke-static {}, Ljava/lang/System;->gc()V
 
@@ -275,7 +272,6 @@
 
 .method private handleHPIF(Lorg/apache/harmony/dalvik/ddmc/Chunk;)Lorg/apache/harmony/dalvik/ddmc/Chunk;
     .locals 5
-    .param p1    # Lorg/apache/harmony/dalvik/ddmc/Chunk;
 
     invoke-static {p1}, Landroid/ddm/DdmHandleHeap;->wrapChunk(Lorg/apache/harmony/dalvik/ddmc/Chunk;)Ljava/nio/ByteBuffer;
 
@@ -310,8 +306,6 @@
 
 .method private handleHPSGNHSG(Lorg/apache/harmony/dalvik/ddmc/Chunk;Z)Lorg/apache/harmony/dalvik/ddmc/Chunk;
     .locals 6
-    .param p1    # Lorg/apache/harmony/dalvik/ddmc/Chunk;
-    .param p2    # Z
 
     invoke-static {p1}, Landroid/ddm/DdmHandleHeap;->wrapChunk(Lorg/apache/harmony/dalvik/ddmc/Chunk;)Ljava/nio/ByteBuffer;
 
@@ -350,7 +344,6 @@
 
 .method private handleREAE(Lorg/apache/harmony/dalvik/ddmc/Chunk;)Lorg/apache/harmony/dalvik/ddmc/Chunk;
     .locals 3
-    .param p1    # Lorg/apache/harmony/dalvik/ddmc/Chunk;
 
     invoke-static {p1}, Landroid/ddm/DdmHandleHeap;->wrapChunk(Lorg/apache/harmony/dalvik/ddmc/Chunk;)Ljava/nio/ByteBuffer;
 
@@ -379,7 +372,6 @@
 
 .method private handleREAL(Lorg/apache/harmony/dalvik/ddmc/Chunk;)Lorg/apache/harmony/dalvik/ddmc/Chunk;
     .locals 5
-    .param p1    # Lorg/apache/harmony/dalvik/ddmc/Chunk;
 
     invoke-static {}, Lorg/apache/harmony/dalvik/ddmc/DdmVmInternal;->getRecentAllocations()[B
 
@@ -400,7 +392,6 @@
 
 .method private handleREAQ(Lorg/apache/harmony/dalvik/ddmc/Chunk;)Lorg/apache/harmony/dalvik/ddmc/Chunk;
     .locals 5
-    .param p1    # Lorg/apache/harmony/dalvik/ddmc/Chunk;
 
     const/4 v1, 0x1
 
@@ -509,7 +500,6 @@
 
 .method public handleChunk(Lorg/apache/harmony/dalvik/ddmc/Chunk;)Lorg/apache/harmony/dalvik/ddmc/Chunk;
     .locals 4
-    .param p1    # Lorg/apache/harmony/dalvik/ddmc/Chunk;
 
     iget v0, p1, Lorg/apache/harmony/dalvik/ddmc/Chunk;->type:I
 

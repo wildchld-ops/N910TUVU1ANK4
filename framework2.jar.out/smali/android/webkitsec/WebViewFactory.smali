@@ -46,8 +46,6 @@
 
 .method private static getFactoryByName(Ljava/lang/String;Ljava/lang/ClassLoader;)Landroid/webkitsec/WebViewFactoryProvider;
     .locals 5
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/ClassLoader;
 
     const/4 v2, 0x1
 

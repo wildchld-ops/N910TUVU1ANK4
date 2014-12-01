@@ -46,7 +46,7 @@
 
     iget-object v0, p0, Lcom/android/phone/CallFeaturesSetting$15;->this$0:Lcom/android/phone/CallFeaturesSetting;
 
-    # invokes: Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    # invokes: Lcom/android/phone/CallFeaturesSetting;->getContentResolver()Landroid/content/ContentResolver;
     invoke-static {v0}, Lcom/android/phone/CallFeaturesSetting;->access$2800(Lcom/android/phone/CallFeaturesSetting;)Landroid/content/ContentResolver;
 
     move-result-object v0

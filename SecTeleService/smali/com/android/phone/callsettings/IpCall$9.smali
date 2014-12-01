@@ -47,7 +47,7 @@
 
     iget-object v3, v3, Lcom/android/phone/callsettings/IpCall;->listView:Landroid/widget/ListView;
 
-    invoke-virtual {v3}, Landroid/widget/AdapterView;->getCount()I
+    invoke-virtual {v3}, Landroid/widget/ListView;->getCount()I
 
     move-result v1
 
@@ -58,7 +58,7 @@
 
     iget-object v3, v3, Lcom/android/phone/callsettings/IpCall;->listView:Landroid/widget/ListView;
 
-    invoke-virtual {v3, v1}, Landroid/widget/AbsListView;->isItemChecked(I)Z
+    invoke-virtual {v3, v1}, Landroid/widget/ListView;->isItemChecked(I)Z
 
     move-result v3
 
@@ -182,7 +182,7 @@
 
     const v5, 0x7f09038c
 
-    invoke-virtual {v4, v5}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {v4, v5}, Lcom/android/phone/callsettings/IpCall;->getString(I)Ljava/lang/String;
 
     move-result-object v4
 
@@ -196,7 +196,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v3}, Landroid/widget/BaseAdapter;->notifyDataSetInvalidated()V
+    invoke-virtual {v3}, Lcom/android/phone/callsettings/IpCall$IPCallAdapter;->notifyDataSetInvalidated()V
 
     iget-object v3, p0, Lcom/android/phone/callsettings/IpCall$9;->this$0:Lcom/android/phone/callsettings/IpCall;
 
@@ -204,7 +204,7 @@
 
     const/16 v4, 0x8
 
-    invoke-virtual {v3, v4}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v3, v4}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
     iget-object v3, p0, Lcom/android/phone/callsettings/IpCall$9;->this$0:Lcom/android/phone/callsettings/IpCall;
 
@@ -237,7 +237,7 @@
 
     iget-object v3, v3, Lcom/android/phone/callsettings/IpCall;->emptyText:Landroid/widget/FrameLayout;
 
-    invoke-virtual {v3, v7}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v3, v7}, Landroid/widget/FrameLayout;->setVisibility(I)V
 
     goto :goto_1
 .end method

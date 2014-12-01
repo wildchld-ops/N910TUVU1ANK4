@@ -16,7 +16,6 @@
 # direct methods
 .method public varargs constructor <init>([Landroid/animation/Keyframe$FloatKeyframe;)V
     .locals 1
-    .param p1    # [Landroid/animation/Keyframe$FloatKeyframe;
 
     invoke-direct {p0, p1}, Landroid/animation/KeyframeSet;-><init>([Landroid/animation/Keyframe;)V
 
@@ -100,7 +99,6 @@
 
 .method public getFloatValue(F)F
     .locals 13
-    .param p1    # F
 
     const/4 v12, 0x1
 
@@ -537,7 +535,6 @@
 
 .method public getValue(F)Ljava/lang/Object;
     .locals 1
-    .param p1    # F
 
     invoke-virtual {p0, p1}, Landroid/animation/FloatKeyframeSet;->getFloatValue(F)F
 

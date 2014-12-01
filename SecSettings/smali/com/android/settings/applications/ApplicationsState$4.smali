@@ -50,8 +50,6 @@
 # virtual methods
 .method public compare(Lcom/android/settings/applications/ApplicationsState$AppEntry;Lcom/android/settings/applications/ApplicationsState$AppEntry;)I
     .locals 4
-    .param p1    # Lcom/android/settings/applications/ApplicationsState$AppEntry;
-    .param p2    # Lcom/android/settings/applications/ApplicationsState$AppEntry;
 
     iget-wide v0, p1, Lcom/android/settings/applications/ApplicationsState$AppEntry;->internalSize:J
 
@@ -95,8 +93,6 @@
 
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p1, Lcom/android/settings/applications/ApplicationsState$AppEntry;
 

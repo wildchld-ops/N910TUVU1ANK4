@@ -21,7 +21,6 @@
 # direct methods
 .method constructor <init>(Landroid/media/MediaRouter$RouteCategory;)V
     .locals 1
-    .param p1    # Landroid/media/MediaRouter$RouteCategory;
 
     invoke-direct {p0, p1}, Landroid/media/MediaRouter$RouteInfo;-><init>(Landroid/media/MediaRouter$RouteCategory;)V
 
@@ -42,8 +41,6 @@
 
 .method private setPlaybackInfoOnRcc(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Landroid/media/MediaRouter$UserRouteInfo;->mRcc:Landroid/media/RemoteControlClient;
 
@@ -159,7 +156,6 @@
 
 .method public requestSetVolume(I)V
     .locals 2
-    .param p1    # I
 
     iget v0, p0, Landroid/media/MediaRouter$UserRouteInfo;->mVolumeHandling:I
 
@@ -193,7 +189,6 @@
 
 .method public requestUpdateVolume(I)V
     .locals 2
-    .param p1    # I
 
     iget v0, p0, Landroid/media/MediaRouter$UserRouteInfo;->mVolumeHandling:I
 
@@ -227,7 +222,6 @@
 
 .method public setDescription(Ljava/lang/CharSequence;)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
 
     iput-object p1, p0, Landroid/media/MediaRouter$UserRouteInfo;->mDescription:Ljava/lang/CharSequence;
 
@@ -238,7 +232,6 @@
 
 .method public setIconDrawable(Landroid/graphics/drawable/Drawable;)V
     .locals 0
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     iput-object p1, p0, Landroid/media/MediaRouter$UserRouteInfo;->mIcon:Landroid/graphics/drawable/Drawable;
 
@@ -247,7 +240,6 @@
 
 .method public setIconResource(I)V
     .locals 1
-    .param p1    # I
 
     sget-object v0, Landroid/media/MediaRouter;->sStatic:Landroid/media/MediaRouter$Static;
 
@@ -264,7 +256,6 @@
 
 .method public setName(I)V
     .locals 1
-    .param p1    # I
 
     iput p1, p0, Landroid/media/MediaRouter$UserRouteInfo;->mNameResId:I
 
@@ -279,7 +270,6 @@
 
 .method public setName(Ljava/lang/CharSequence;)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
 
     iput-object p1, p0, Landroid/media/MediaRouter$UserRouteInfo;->mName:Ljava/lang/CharSequence;
 
@@ -290,7 +280,6 @@
 
 .method public setPlaybackStream(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/media/MediaRouter$UserRouteInfo;->mPlaybackStream:I
 
@@ -308,7 +297,6 @@
 
 .method public setPlaybackType(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/media/MediaRouter$UserRouteInfo;->mPlaybackType:I
 
@@ -326,7 +314,6 @@
 
 .method public setRemoteControlClient(Landroid/media/RemoteControlClient;)V
     .locals 0
-    .param p1    # Landroid/media/RemoteControlClient;
 
     iput-object p1, p0, Landroid/media/MediaRouter$UserRouteInfo;->mRcc:Landroid/media/RemoteControlClient;
 
@@ -337,7 +324,6 @@
 
 .method public setStatus(Ljava/lang/CharSequence;)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
 
     invoke-virtual {p0, p1}, Landroid/media/MediaRouter$UserRouteInfo;->setStatusInt(Ljava/lang/CharSequence;)V
 
@@ -346,7 +332,6 @@
 
 .method public setVolume(I)V
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -388,7 +373,6 @@
 
 .method public setVolumeCallback(Landroid/media/MediaRouter$VolumeCallback;)V
     .locals 1
-    .param p1    # Landroid/media/MediaRouter$VolumeCallback;
 
     new-instance v0, Landroid/media/MediaRouter$VolumeCallbackInfo;
 
@@ -401,7 +385,6 @@
 
 .method public setVolumeHandling(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/media/MediaRouter$UserRouteInfo;->mVolumeHandling:I
 
@@ -419,7 +402,6 @@
 
 .method public setVolumeMax(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/media/MediaRouter$UserRouteInfo;->mVolumeMax:I
 

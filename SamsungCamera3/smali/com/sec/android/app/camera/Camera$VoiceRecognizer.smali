@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Lcom/sec/android/app/camera/Camera;Lcom/sec/android/app/camera/Camera$1;)V
     .locals 0
-    .param p1    # Lcom/sec/android/app/camera/Camera;
-    .param p2    # Lcom/sec/android/app/camera/Camera$1;
 
     invoke-direct {p0, p1}, Lcom/sec/android/app/camera/Camera$VoiceRecognizer;-><init>(Lcom/sec/android/app/camera/Camera;)V
 
@@ -46,7 +44,6 @@
 # virtual methods
 .method public onResults([Ljava/lang/String;)V
     .locals 10
-    .param p1    # [Ljava/lang/String;
 
     const/16 v9, 0x82
 

@@ -21,7 +21,6 @@
 # direct methods
 .method constructor <init>(Lcom/sec/android/app/camera/ExternalFilterLoader;Landroid/os/Handler;)V
     .locals 0
-    .param p2    # Landroid/os/Handler;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/ExternalFilterLoader$1;->this$0:Lcom/sec/android/app/camera/ExternalFilterLoader;
 
@@ -34,7 +33,6 @@
 # virtual methods
 .method public onChange(Z)V
     .locals 2
-    .param p1    # Z
 
     # getter for: Lcom/sec/android/app/camera/ExternalFilterLoader;->mExternalEffects:Ljava/util/ArrayList;
     invoke-static {}, Lcom/sec/android/app/camera/ExternalFilterLoader;->access$000()Ljava/util/ArrayList;

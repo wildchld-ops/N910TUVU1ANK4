@@ -178,7 +178,6 @@
 
 .method public setCharMaxOccurrencesCount(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/knox/container/contentprovider/ContainerPasswordStateInfo;->mCharMaxOccurrencesCount:I
 
@@ -187,7 +186,6 @@
 
 .method public setCharSeqLength(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/knox/container/contentprovider/ContainerPasswordStateInfo;->mCharSeqLength:I
 
@@ -196,7 +194,6 @@
 
 .method public setContainerId(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/knox/container/contentprovider/ContainerPasswordStateInfo;->mContainerId:I
 
@@ -205,7 +202,6 @@
 
 .method public setDigitSeqLength(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/knox/container/contentprovider/ContainerPasswordStateInfo;->mDigitSeqLength:I
 
@@ -214,7 +210,6 @@
 
 .method public setPasswordLength(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/knox/container/contentprovider/ContainerPasswordStateInfo;->mLength:I
 
@@ -223,7 +218,6 @@
 
 .method public setPasswordLetters(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/knox/container/contentprovider/ContainerPasswordStateInfo;->mLetters:I
 
@@ -232,7 +226,6 @@
 
 .method public setPasswordLowercase(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/knox/container/contentprovider/ContainerPasswordStateInfo;->mLowercase:I
 
@@ -241,7 +234,6 @@
 
 .method public setPasswordNonLetter(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/knox/container/contentprovider/ContainerPasswordStateInfo;->mNonLetter:I
 
@@ -250,7 +242,6 @@
 
 .method public setPasswordNumeric(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/knox/container/contentprovider/ContainerPasswordStateInfo;->mNumeric:I
 
@@ -259,7 +250,6 @@
 
 .method public setPasswordQuality(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/knox/container/contentprovider/ContainerPasswordStateInfo;->mQuality:I
 
@@ -268,7 +258,6 @@
 
 .method public setPasswordSimple(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/knox/container/contentprovider/ContainerPasswordStateInfo;->mSimplePassword:Z
 
@@ -277,7 +266,6 @@
 
 .method public setPasswordSymbols(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/knox/container/contentprovider/ContainerPasswordStateInfo;->mSymbols:I
 
@@ -286,7 +274,6 @@
 
 .method public setPasswordUppercase(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/knox/container/contentprovider/ContainerPasswordStateInfo;->mUppercase:I
 

@@ -51,7 +51,6 @@
 
 .method public constructor <init>(I)V
     .locals 6
-    .param p1    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -116,8 +115,6 @@
 # virtual methods
 .method public putExtra(Landroid/content/Intent;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/launcher2/CatEventDownload;->instance:Ljava/lang/Object;
 

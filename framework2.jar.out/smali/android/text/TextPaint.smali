@@ -38,7 +38,6 @@
 
 .method public constructor <init>(I)V
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/graphics/Paint;-><init>(I)V
 
@@ -55,7 +54,6 @@
 
 .method public constructor <init>(Landroid/graphics/Paint;)V
     .locals 1
-    .param p1    # Landroid/graphics/Paint;
 
     invoke-direct {p0, p1}, Landroid/graphics/Paint;-><init>(Landroid/graphics/Paint;)V
 
@@ -74,7 +72,6 @@
 # virtual methods
 .method public set(Landroid/text/TextPaint;)V
     .locals 1
-    .param p1    # Landroid/text/TextPaint;
 
     invoke-super {p0, p1}, Landroid/graphics/Paint;->set(Landroid/graphics/Paint;)V
 
@@ -111,8 +108,6 @@
 
 .method public setUnderlineText(IF)V
     .locals 0
-    .param p1    # I
-    .param p2    # F
 
     iput p1, p0, Landroid/text/TextPaint;->underlineColor:I
 

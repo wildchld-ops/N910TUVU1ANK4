@@ -55,7 +55,6 @@
 # virtual methods
 .method public sendResult(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

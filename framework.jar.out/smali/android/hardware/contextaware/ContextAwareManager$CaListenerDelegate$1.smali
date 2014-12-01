@@ -23,7 +23,6 @@
 # direct methods
 .method constructor <init>(Landroid/hardware/contextaware/ContextAwareManager$CaListenerDelegate;Landroid/os/Looper;Landroid/hardware/contextaware/ContextAwareManager;)V
     .locals 0
-    .param p2    # Landroid/os/Looper;
 
     iput-object p1, p0, Landroid/hardware/contextaware/ContextAwareManager$CaListenerDelegate$1;->this$1:Landroid/hardware/contextaware/ContextAwareManager$CaListenerDelegate;
 
@@ -38,7 +37,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 3
-    .param p1    # Landroid/os/Message;
 
     iget-object v2, p0, Landroid/hardware/contextaware/ContextAwareManager$CaListenerDelegate$1;->this$1:Landroid/hardware/contextaware/ContextAwareManager$CaListenerDelegate;
 

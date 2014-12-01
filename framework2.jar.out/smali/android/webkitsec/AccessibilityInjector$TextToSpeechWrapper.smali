@@ -61,7 +61,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 7
-    .param p1    # Landroid/content/Context;
 
     const/4 v4, 0x0
 
@@ -208,7 +207,6 @@
 
 .method static synthetic access$600(Landroid/webkitsec/AccessibilityInjector$TextToSpeechWrapper;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Landroid/webkitsec/AccessibilityInjector$TextToSpeechWrapper;
 
     iget-object v0, p0, Landroid/webkitsec/AccessibilityInjector$TextToSpeechWrapper;->mTtsLock:Ljava/lang/Object;
 
@@ -217,7 +215,6 @@
 
 .method static synthetic access$700(Landroid/webkitsec/AccessibilityInjector$TextToSpeechWrapper;)Z
     .locals 1
-    .param p0    # Landroid/webkitsec/AccessibilityInjector$TextToSpeechWrapper;
 
     iget-boolean v0, p0, Landroid/webkitsec/AccessibilityInjector$TextToSpeechWrapper;->mShutdown:Z
 
@@ -234,8 +231,6 @@
 
 .method static synthetic access$902(Landroid/webkitsec/AccessibilityInjector$TextToSpeechWrapper;Z)Z
     .locals 0
-    .param p0    # Landroid/webkitsec/AccessibilityInjector$TextToSpeechWrapper;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/webkitsec/AccessibilityInjector$TextToSpeechWrapper;->mReady:Z
 
@@ -433,8 +428,6 @@
 
 .method public speak(Ljava/lang/String;ILjava/util/HashMap;)I
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation runtime Landroid/webkitsec/JavascriptInterface;
     .end annotation
 

@@ -30,7 +30,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/high16 v0, -0x80000000
 
@@ -59,7 +58,6 @@
 
 .method private static getFontSizeNames(Landroid/content/Context;)[Ljava/lang/String;
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     invoke-static {}, Lcom/android/mms/MmsConfig;->getEnableSupport7StepFontSize()Z
 
@@ -98,9 +96,6 @@
 # virtual methods
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     if-nez p2, :cond_1
 

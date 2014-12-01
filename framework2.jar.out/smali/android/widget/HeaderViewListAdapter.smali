@@ -65,7 +65,6 @@
 
 .method public constructor <init>(Ljava/util/ArrayList;Ljava/util/ArrayList;Landroid/widget/ListAdapter;)V
     .locals 1
-    .param p3    # Landroid/widget/ListAdapter;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -314,7 +313,6 @@
 
 .method public getItem(I)Ljava/lang/Object;
     .locals 5
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/widget/HeaderViewListAdapter;->getHeadersCount()I
 
@@ -393,7 +391,6 @@
 
 .method public getItemId(I)J
     .locals 5
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/widget/HeaderViewListAdapter;->getHeadersCount()I
 
@@ -432,7 +429,6 @@
 
 .method public getItemViewType(I)I
     .locals 4
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/widget/HeaderViewListAdapter;->getHeadersCount()I
 
@@ -471,9 +467,6 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     invoke-virtual {p0}, Landroid/widget/HeaderViewListAdapter;->getHeadersCount()I
 
@@ -631,7 +624,6 @@
 
 .method public isEnabled(I)Z
     .locals 5
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/widget/HeaderViewListAdapter;->getHeadersCount()I
 
@@ -710,7 +702,6 @@
 
 .method public registerDataSetObserver(Landroid/database/DataSetObserver;)V
     .locals 1
-    .param p1    # Landroid/database/DataSetObserver;
 
     iget-object v0, p0, Landroid/widget/HeaderViewListAdapter;->mAdapter:Landroid/widget/ListAdapter;
 
@@ -726,7 +717,6 @@
 
 .method public removeFooter(Landroid/view/View;)Z
     .locals 5
-    .param p1    # Landroid/view/View;
 
     const/4 v3, 0x1
 
@@ -796,7 +786,6 @@
 
 .method public removeHeader(Landroid/view/View;)Z
     .locals 5
-    .param p1    # Landroid/view/View;
 
     const/4 v3, 0x1
 
@@ -866,7 +855,6 @@
 
 .method public unregisterDataSetObserver(Landroid/database/DataSetObserver;)V
     .locals 1
-    .param p1    # Landroid/database/DataSetObserver;
 
     iget-object v0, p0, Landroid/widget/HeaderViewListAdapter;->mAdapter:Landroid/widget/ListAdapter;
 

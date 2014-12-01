@@ -36,7 +36,6 @@
 # virtual methods
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 0
-    .param p1    # Landroid/content/res/Configuration;
 
     return-void
 .end method
@@ -55,7 +54,6 @@
 
 .method public onTrimMemory(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "SamsungIME"
 

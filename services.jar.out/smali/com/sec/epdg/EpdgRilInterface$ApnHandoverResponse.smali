@@ -21,8 +21,6 @@
 # direct methods
 .method public constructor <init>(IZ)V
     .locals 0
-    .param p1    # I
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Lcom/sec/epdg/EpdgRilInterface$BaseRxRequest;-><init>(I)V
 

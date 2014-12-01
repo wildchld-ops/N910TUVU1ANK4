@@ -62,9 +62,6 @@
 
 .method private constructor <init>(Ljava/lang/String;ZZ)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -75,7 +72,6 @@
 
 .method public static createByCodecName(Ljava/lang/String;)Landroid/media/MediaCodec;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -88,7 +84,6 @@
 
 .method public static createDecoderByType(Ljava/lang/String;)Landroid/media/MediaCodec;
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     new-instance v0, Landroid/media/MediaCodec;
 
@@ -103,7 +98,6 @@
 
 .method public static createEncoderByType(Ljava/lang/String;)Landroid/media/MediaCodec;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     const/4 v1, 0x1
 
@@ -149,10 +143,6 @@
 # virtual methods
 .method public configure(Landroid/media/MediaFormat;Landroid/view/Surface;Landroid/media/MediaCrypto;I)V
     .locals 10
-    .param p1    # Landroid/media/MediaFormat;
-    .param p2    # Landroid/view/Surface;
-    .param p3    # Landroid/media/MediaCrypto;
-    .param p4    # I
 
     invoke-virtual {p1}, Landroid/media/MediaFormat;->getMap()Ljava/util/Map;
 
@@ -334,7 +324,6 @@
 
 .method public final setParameters(Landroid/os/Bundle;)V
     .locals 6
-    .param p1    # Landroid/os/Bundle;
 
     if-nez p1, :cond_0
 

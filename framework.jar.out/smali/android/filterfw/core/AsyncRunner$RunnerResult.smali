@@ -39,8 +39,6 @@
 
 .method synthetic constructor <init>(Landroid/filterfw/core/AsyncRunner;Landroid/filterfw/core/AsyncRunner$1;)V
     .locals 0
-    .param p1    # Landroid/filterfw/core/AsyncRunner;
-    .param p2    # Landroid/filterfw/core/AsyncRunner$1;
 
     invoke-direct {p0, p1}, Landroid/filterfw/core/AsyncRunner$RunnerResult;-><init>(Landroid/filterfw/core/AsyncRunner;)V
 

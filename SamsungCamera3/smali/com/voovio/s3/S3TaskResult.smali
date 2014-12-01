@@ -37,7 +37,6 @@
 # virtual methods
 .method public addTask(Lcom/voovio/s3/S3Task;)V
     .locals 1
-    .param p1    # Lcom/voovio/s3/S3Task;
 
     iget-object v0, p0, Lcom/voovio/s3/S3TaskResult;->tasks:Ljava/util/ArrayList;
 
@@ -84,7 +83,6 @@
 
 .method public setErrorMessage(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/voovio/s3/S3TaskResult;->errorMessage:Ljava/lang/String;
 

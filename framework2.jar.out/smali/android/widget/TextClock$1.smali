@@ -21,7 +21,6 @@
 # direct methods
 .method constructor <init>(Landroid/widget/TextClock;Landroid/os/Handler;)V
     .locals 0
-    .param p2    # Landroid/os/Handler;
 
     iput-object p1, p0, Landroid/widget/TextClock$1;->this$0:Landroid/widget/TextClock;
 
@@ -34,7 +33,6 @@
 # virtual methods
 .method public onChange(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Landroid/widget/TextClock$1;->this$0:Landroid/widget/TextClock;
 
@@ -51,8 +49,6 @@
 
 .method public onChange(ZLandroid/net/Uri;)V
     .locals 1
-    .param p1    # Z
-    .param p2    # Landroid/net/Uri;
 
     iget-object v0, p0, Landroid/widget/TextClock$1;->this$0:Landroid/widget/TextClock;
 

@@ -36,7 +36,6 @@
 # virtual methods
 .method public onSideButtonClicked(Landroid/view/MotionEvent;)V
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-object v0, p0, Lcom/samsung/android/airbutton/AirButtonImpl$1;->this$0:Lcom/samsung/android/airbutton/AirButtonImpl;
 

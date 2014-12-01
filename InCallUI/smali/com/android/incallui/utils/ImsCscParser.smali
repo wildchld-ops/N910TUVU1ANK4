@@ -30,7 +30,6 @@
 
 .method private getNetworkName(Ljava/lang/String;)Ljava/lang/String;
     .locals 9
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -142,8 +141,6 @@
 # virtual methods
 .method public getValueFromMPS(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 11
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v2, 0x0
 

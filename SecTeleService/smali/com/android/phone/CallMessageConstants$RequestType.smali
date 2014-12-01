@@ -206,7 +206,7 @@
 
     sget-object v0, Lcom/android/phone/CallMessageConstants$RequestType;->$VALUES:[Lcom/android/phone/CallMessageConstants$RequestType;
 
-    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
+    invoke-virtual {v0}, [Lcom/android/phone/CallMessageConstants$RequestType;->clone()Ljava/lang/Object;
 
     move-result-object v0
 

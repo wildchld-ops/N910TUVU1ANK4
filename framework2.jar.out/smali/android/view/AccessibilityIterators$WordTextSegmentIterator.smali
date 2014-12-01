@@ -21,7 +21,6 @@
 # direct methods
 .method private constructor <init>(Ljava/util/Locale;)V
     .locals 1
-    .param p1    # Ljava/util/Locale;
 
     const/4 v0, 0x0
 
@@ -32,7 +31,6 @@
 
 .method public static getInstance(Ljava/util/Locale;)Landroid/view/AccessibilityIterators$WordTextSegmentIterator;
     .locals 1
-    .param p0    # Ljava/util/Locale;
 
     sget-object v0, Landroid/view/AccessibilityIterators$WordTextSegmentIterator;->sInstance:Landroid/view/AccessibilityIterators$WordTextSegmentIterator;
 
@@ -52,7 +50,6 @@
 
 .method private isEndBoundary(I)Z
     .locals 1
-    .param p1    # I
 
     if-lez p1, :cond_1
 
@@ -92,7 +89,6 @@
 
 .method private isLetterOrDigit(I)Z
     .locals 2
-    .param p1    # I
 
     if-ltz p1, :cond_0
 
@@ -125,7 +121,6 @@
 
 .method private isStartBoundary(I)Z
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/view/AccessibilityIterators$WordTextSegmentIterator;->isLetterOrDigit(I)Z
 
@@ -159,7 +154,6 @@
 # virtual methods
 .method public following(I)[I
     .locals 6
-    .param p1    # I
 
     const/4 v5, -0x1
 
@@ -239,7 +233,6 @@
 
 .method protected onLocaleChanged(Ljava/util/Locale;)V
     .locals 1
-    .param p1    # Ljava/util/Locale;
 
     invoke-static {p1}, Ljava/text/BreakIterator;->getWordInstance(Ljava/util/Locale;)Ljava/text/BreakIterator;
 
@@ -252,7 +245,6 @@
 
 .method public preceding(I)[I
     .locals 6
-    .param p1    # I
 
     const/4 v5, -0x1
 

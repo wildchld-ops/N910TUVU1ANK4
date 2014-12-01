@@ -64,12 +64,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;J)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # J
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
@@ -96,7 +90,6 @@
 
 .method private static getSubType(Ljava/lang/String;)Ljava/lang/String;
     .locals 11
-    .param p0    # Ljava/lang/String;
 
     const/16 v10, 0x3b
 
@@ -245,7 +238,6 @@
 
 .method static isDownLoadableContent(Ljava/lang/String;)Z
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     const/4 v1, 0x1
 
@@ -351,7 +343,6 @@
 
 .method private static isOMAorDRMMimeType(Ljava/lang/String;)Z
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     sget-object v0, Landroid/webkitsec/DownloadFileHandler;->MIME_APPLICATION_VND_OMA_DD_XML:Ljava/lang/String;
 
@@ -407,8 +398,6 @@
 # virtual methods
 .method public didReceiveData([BI)V
     .locals 3
-    .param p1    # [B
-    .param p2    # I
 
     iget-object v1, p0, Landroid/webkitsec/DownloadFileHandler;->mDataBuilder:Landroid/webkitsec/ByteArrayBuilder;
 

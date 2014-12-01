@@ -118,7 +118,7 @@
 
     check-cast v3, Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v3, v7}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v3, v7}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     add-int/lit8 v1, v1, 0x1
 
@@ -127,7 +127,7 @@
     :cond_0
     iget-object v3, p0, Lcom/android/phone/callsettings/CallBarring$16;->this$0:Lcom/android/phone/callsettings/CallBarring;
 
-    invoke-virtual {v3}, Landroid/app/Fragment;->isAdded()Z
+    invoke-virtual {v3}, Lcom/android/phone/callsettings/CallBarring;->isAdded()Z
 
     move-result v3
 

@@ -52,7 +52,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -63,8 +62,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -75,9 +72,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 12
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v11, 0x0
 
@@ -281,7 +275,6 @@
 
 .method private computeMeasurements(I)Z
     .locals 9
-    .param p1    # I
 
     const/4 v7, 0x1
 
@@ -347,7 +340,6 @@
 # virtual methods
 .method protected onDraw(Landroid/graphics/Canvas;)V
     .locals 14
-    .param p1    # Landroid/graphics/Canvas;
 
     iget-object v4, p0, Lcom/android/internal/widget/SubtitleView;->mLayout:Landroid/text/StaticLayout;
 
@@ -543,11 +535,6 @@
 
 .method public onLayout(ZIIII)V
     .locals 1
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     sub-int v0, p4, p2
 
@@ -558,8 +545,6 @@
 
 .method protected onMeasure(II)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
 
     const/high16 v6, 0x1000000
 
@@ -618,7 +603,6 @@
 
 .method public setAlignment(Landroid/text/Layout$Alignment;)V
     .locals 1
-    .param p1    # Landroid/text/Layout$Alignment;
 
     iget-object v0, p0, Lcom/android/internal/widget/SubtitleView;->mAlignment:Landroid/text/Layout$Alignment;
 
@@ -640,7 +624,6 @@
 
 .method public setBackgroundColor(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/internal/widget/SubtitleView;->mBackgroundColor:I
 
@@ -651,7 +634,6 @@
 
 .method public setEdgeColor(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/internal/widget/SubtitleView;->mEdgeColor:I
 
@@ -662,7 +644,6 @@
 
 .method public setEdgeType(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/internal/widget/SubtitleView;->mEdgeType:I
 
@@ -673,7 +654,6 @@
 
 .method public setForegroundColor(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/internal/widget/SubtitleView;->mForegroundColor:I
 
@@ -684,7 +664,6 @@
 
 .method public setStyle(I)V
     .locals 5
-    .param p1    # I
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -741,7 +720,6 @@
 
 .method public setText(I)V
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
@@ -758,7 +736,6 @@
 
 .method public setText(Ljava/lang/CharSequence;)V
     .locals 2
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v1, 0x0
 
@@ -779,7 +756,6 @@
 
 .method public setTextSize(F)V
     .locals 2
-    .param p1    # F
 
     iget-object v0, p0, Lcom/android/internal/widget/SubtitleView;->mTextPaint:Landroid/text/TextPaint;
 
@@ -821,7 +797,6 @@
 
 .method public setTypeface(Landroid/graphics/Typeface;)V
     .locals 1
-    .param p1    # Landroid/graphics/Typeface;
 
     iget-object v0, p0, Lcom/android/internal/widget/SubtitleView;->mTextPaint:Landroid/text/TextPaint;
 

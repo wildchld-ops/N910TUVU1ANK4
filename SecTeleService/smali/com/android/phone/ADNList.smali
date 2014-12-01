@@ -260,7 +260,7 @@
     const v0, 0x7f090160
 
     :cond_3
-    invoke-virtual {p0}, Landroid/app/Fragment;->isResumed()Z
+    invoke-virtual {p0}, Lcom/android/phone/ADNList;->isResumed()Z
 
     move-result v4
 
@@ -274,13 +274,13 @@
     invoke-virtual {v4, v0}, Landroid/widget/TextView;->setText(I)V
 
     :goto_1
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/ADNList;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
 
     if-eqz v4, :cond_4
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/ADNList;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
 
@@ -290,7 +290,7 @@
 
     if-eqz v4, :cond_4
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/ADNList;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
 
@@ -311,7 +311,7 @@
     return-void
 
     :cond_5
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/ADNList;->getActivity()Landroid/app/Activity;
 
     move-result-object v5
 
@@ -396,7 +396,7 @@
 
     move-object v7, v2
 
-    invoke-virtual/range {v0 .. v7}, Landroid/content/AsyncQueryHandler;->startQuery(ILjava/lang/Object;Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual/range {v0 .. v7}, Lcom/android/phone/ADNList$QueryHandler;->startQuery(ILjava/lang/Object;Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)V
 
     invoke-direct {p0, v8}, Lcom/android/phone/ADNList;->displayProgress(Z)V
 
@@ -426,7 +426,7 @@
 
     iget-object v0, p0, Lcom/android/phone/ADNList;->mCursorAdapter:Landroid/widget/CursorAdapter;
 
-    invoke-virtual {p0, v0}, Landroid/app/ListFragment;->setListAdapter(Landroid/widget/ListAdapter;)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/ADNList;->setListAdapter(Landroid/widget/ListAdapter;)V
 
     :goto_0
     iget v0, p0, Lcom/android/phone/ADNList;->mInitialSelection:I
@@ -445,21 +445,21 @@
 
     iget v0, p0, Lcom/android/phone/ADNList;->mInitialSelection:I
 
-    invoke-virtual {p0, v0}, Landroid/app/ListFragment;->setSelection(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/ADNList;->setSelection(I)V
 
-    invoke-virtual {p0}, Landroid/app/ListFragment;->getListView()Landroid/widget/ListView;
+    invoke-virtual {p0}, Lcom/android/phone/ADNList;->getListView()Landroid/widget/ListView;
 
     move-result-object v0
 
     const/4 v1, 0x1
 
-    invoke-virtual {v0, v1}, Landroid/widget/AdapterView;->setFocusableInTouchMode(Z)V
+    invoke-virtual {v0, v1}, Landroid/widget/ListView;->setFocusableInTouchMode(Z)V
 
-    invoke-virtual {p0}, Landroid/app/ListFragment;->getListView()Landroid/widget/ListView;
+    invoke-virtual {p0}, Lcom/android/phone/ADNList;->getListView()Landroid/widget/ListView;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Landroid/view/View;->requestFocus()Z
+    invoke-virtual {v0}, Landroid/widget/ListView;->requestFocus()Z
 
     :cond_0
     return-void
@@ -479,7 +479,7 @@
 .method protected getActionBar()Landroid/app/ActionBar;
     .locals 1
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/ADNList;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -497,7 +497,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v0}, Lcom/android/phone/PhoneGlobals;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -507,7 +507,7 @@
 .method protected getIntent()Landroid/content/Intent;
     .locals 1
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/ADNList;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -522,7 +522,7 @@
     .locals 1
     .param p1    # Ljava/lang/String;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/ADNList;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -561,7 +561,7 @@
 
     new-instance v0, Landroid/widget/SimpleCursorAdapter;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/ADNList;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -588,9 +588,9 @@
 
     invoke-virtual {p0, v0, v1}, Lcom/android/phone/ADNList;->log(Ljava/lang/String;Z)V
 
-    invoke-super {p0, p1}, Landroid/app/Fragment;->onActivityCreated(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Landroid/app/ListFragment;->onActivityCreated(Landroid/os/Bundle;)V
 
-    invoke-virtual {p0, v1}, Landroid/app/Fragment;->setHasOptionsMenu(Z)V
+    invoke-virtual {p0, v1}, Lcom/android/phone/ADNList;->setHasOptionsMenu(Z)V
 
     return-void
 .end method
@@ -605,7 +605,7 @@
 
     invoke-virtual {p0, v0, v1}, Lcom/android/phone/ADNList;->log(Ljava/lang/String;Z)V
 
-    invoke-super {p0, p1}, Landroid/app/Fragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Landroid/app/ListFragment;->onCreate(Landroid/os/Bundle;)V
 
     return-void
 .end method
@@ -670,7 +670,7 @@
 .method public onPause()V
     .locals 0
 
-    invoke-super {p0}, Landroid/app/Fragment;->onPause()V
+    invoke-super {p0}, Landroid/app/ListFragment;->onPause()V
 
     return-void
 .end method
@@ -678,9 +678,9 @@
 .method public onResume()V
     .locals 1
 
-    invoke-super {p0}, Landroid/app/Fragment;->onResume()V
+    invoke-super {p0}, Landroid/app/ListFragment;->onResume()V
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/ADNList;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -696,7 +696,7 @@
 .method public onStop()V
     .locals 1
 
-    invoke-super {p0}, Landroid/app/Fragment;->onStop()V
+    invoke-super {p0}, Landroid/app/ListFragment;->onStop()V
 
     iget-object v0, p0, Lcom/android/phone/ADNList;->mCursor:Landroid/database/Cursor;
 

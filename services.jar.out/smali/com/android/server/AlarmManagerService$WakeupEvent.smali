@@ -27,9 +27,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/AlarmManagerService;JILjava/lang/String;)V
     .locals 0
-    .param p2    # J
-    .param p4    # I
-    .param p5    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/server/AlarmManagerService$WakeupEvent;->this$0:Lcom/android/server/AlarmManagerService;
 

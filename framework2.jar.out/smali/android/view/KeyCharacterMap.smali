@@ -433,7 +433,6 @@
 
 .method private constructor <init>(I)V
     .locals 0
-    .param p1    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -444,7 +443,6 @@
 
 .method private constructor <init>(Landroid/os/Parcel;)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -483,8 +481,6 @@
 
 .method synthetic constructor <init>(Landroid/os/Parcel;Landroid/view/KeyCharacterMap$1;)V
     .locals 0
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # Landroid/view/KeyCharacterMap$1;
 
     invoke-direct {p0, p1}, Landroid/view/KeyCharacterMap;-><init>(Landroid/os/Parcel;)V
 
@@ -493,8 +489,6 @@
 
 .method private static addCombining(II)V
     .locals 1
-    .param p0    # I
-    .param p1    # I
 
     sget-object v0, Landroid/view/KeyCharacterMap;->sCombiningToAccent:Landroid/util/SparseIntArray;
 
@@ -509,9 +503,6 @@
 
 .method private static addDeadKey(III)V
     .locals 4
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
 
     sget-object v2, Landroid/view/KeyCharacterMap;->sAccentToCombining:Landroid/util/SparseIntArray;
 
@@ -543,7 +534,6 @@
 
 .method public static deviceHasKey(I)Z
     .locals 3
-    .param p0    # I
 
     const/4 v2, 0x0
 
@@ -568,7 +558,6 @@
 
 .method public static deviceHasKeys([I)[Z
     .locals 1
-    .param p0    # [I
 
     invoke-static {}, Landroid/hardware/input/InputManager;->getInstance()Landroid/hardware/input/InputManager;
 
@@ -583,8 +572,6 @@
 
 .method public static getDeadChar(II)I
     .locals 9
-    .param p0    # I
-    .param p1    # I
 
     const/4 v8, -0x1
 
@@ -708,7 +695,6 @@
 
 .method public static load(I)Landroid/view/KeyCharacterMap;
     .locals 5
-    .param p0    # I
 
     invoke-static {}, Landroid/hardware/input/InputManager;->getInstance()Landroid/hardware/input/InputManager;
 
@@ -826,8 +812,6 @@
 
 .method public get(II)I
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     invoke-static {p2}, Landroid/view/KeyEvent;->normalizeMetaState(I)I
 
@@ -857,7 +841,6 @@
 
 .method public getDisplayLabel(I)C
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/view/KeyCharacterMap;->mPtr:I
 
@@ -870,7 +853,6 @@
 
 .method public getEvents([C)[Landroid/view/KeyEvent;
     .locals 2
-    .param p1    # [C
 
     if-nez p1, :cond_0
 
@@ -894,8 +876,6 @@
 
 .method public getFallbackAction(II)Landroid/view/KeyCharacterMap$FallbackAction;
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     invoke-static {}, Landroid/view/KeyCharacterMap$FallbackAction;->obtain()Landroid/view/KeyCharacterMap$FallbackAction;
 
@@ -934,8 +914,6 @@
 
 .method public getKeyData(ILandroid/view/KeyCharacterMap$KeyData;)Z
     .locals 7
-    .param p1    # I
-    .param p2    # Landroid/view/KeyCharacterMap$KeyData;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -1045,8 +1023,6 @@
 
 .method public getMatch(I[C)C
     .locals 1
-    .param p1    # I
-    .param p2    # [C
 
     const/4 v0, 0x0
 
@@ -1059,9 +1035,6 @@
 
 .method public getMatch(I[CI)C
     .locals 2
-    .param p1    # I
-    .param p2    # [C
-    .param p3    # I
 
     if-nez p2, :cond_0
 
@@ -1117,7 +1090,6 @@
 
 .method public getNumber(I)C
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/view/KeyCharacterMap;->mPtr:I
 
@@ -1130,7 +1102,6 @@
 
 .method public isPrintingKey(I)Z
     .locals 2
-    .param p1    # I
 
     iget v1, p0, Landroid/view/KeyCharacterMap;->mPtr:I
 
@@ -1168,8 +1139,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     if-nez p1, :cond_0
 

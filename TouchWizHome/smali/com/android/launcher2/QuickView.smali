@@ -147,7 +147,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -158,8 +157,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -170,9 +167,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v2, 0x0
 
@@ -336,9 +330,6 @@
 
 .method private setAniRects([Landroid/graphics/Rect;II)V
     .locals 15
-    .param p1    # [Landroid/graphics/Rect;
-    .param p2    # I
-    .param p3    # I
 
     iget-object v8, p0, Lcom/android/launcher2/QuickView;->mQVProvider:Lcom/android/launcher2/QuickView$QuickViewInfoProvider;
 
@@ -735,8 +726,6 @@
 
 .method protected drop(II)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
 
     iget-object v1, p0, Lcom/android/launcher2/QuickView;->mDraggingView:Landroid/view/View;
 
@@ -898,8 +887,6 @@
 
 .method protected getTouchedIndex(II)I
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     const/4 v2, -0x1
 
@@ -974,7 +961,6 @@
 
 .method protected init(Lcom/android/launcher2/QuickView$QuickViewInfoProvider;)Landroid/widget/FrameLayout$LayoutParams;
     .locals 3
-    .param p1    # Lcom/android/launcher2/QuickView$QuickViewInfoProvider;
 
     invoke-virtual {p0}, Landroid/view/ViewGroup;->removeAllViews()V
 
@@ -1096,7 +1082,6 @@
 
 .method protected isAvailableRect(Landroid/graphics/Rect;)Z
     .locals 1
-    .param p1    # Landroid/graphics/Rect;
 
     const/4 v0, 0x0
 
@@ -1109,8 +1094,6 @@
 
 .method protected isAvailableRect(Landroid/graphics/Rect;I)Z
     .locals 2
-    .param p1    # Landroid/graphics/Rect;
-    .param p2    # I
 
     iget v0, p1, Landroid/graphics/Rect;->right:I
 
@@ -1470,7 +1453,6 @@
 
 .method protected setCloseEndRect(I)V
     .locals 4
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getChildCount()I
 
@@ -1518,7 +1500,6 @@
 
 .method public setCurrentPage(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/launcher2/QuickView;->mCurrentPage:I
 
@@ -1527,7 +1508,6 @@
 
 .method protected setOpenStartRect(I)V
     .locals 4
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getChildCount()I
 
@@ -1575,7 +1555,6 @@
 
 .method public setSecretQuickViewMode(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/launcher2/QuickView;->mIsSecretQuickView:Z
 
@@ -1584,7 +1563,6 @@
 
 .method protected startDrag(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     const/4 v0, 0x2
 
@@ -1649,7 +1627,6 @@
 
 .method protected updateParamsIfNeeded(Z)V
     .locals 2
-    .param p1    # Z
 
     const/4 v1, 0x0
 

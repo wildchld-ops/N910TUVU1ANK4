@@ -33,8 +33,6 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     # setter for: Lcom/android/settings/powersavingmode/PowerNotiDataDialog;->mContext:Landroid/content/Context;
     invoke-static {p1}, Lcom/android/settings/powersavingmode/PowerNotiDataDialog;->access$002(Landroid/content/Context;)Landroid/content/Context;

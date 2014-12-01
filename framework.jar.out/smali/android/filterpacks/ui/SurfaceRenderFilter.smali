@@ -50,7 +50,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x2
 
@@ -205,7 +204,6 @@
 # virtual methods
 .method public close(Landroid/filterfw/core/FilterContext;)V
     .locals 1
-    .param p1    # Landroid/filterfw/core/FilterContext;
 
     iget-object v0, p0, Landroid/filterpacks/ui/SurfaceRenderFilter;->mSurfaceView:Landroid/filterfw/core/FilterSurfaceView;
 
@@ -216,8 +214,6 @@
 
 .method public fieldPortValueUpdated(Ljava/lang/String;Landroid/filterfw/core/FilterContext;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/filterfw/core/FilterContext;
 
     invoke-direct {p0}, Landroid/filterpacks/ui/SurfaceRenderFilter;->updateTargetRect()V
 
@@ -226,7 +222,6 @@
 
 .method public open(Landroid/filterfw/core/FilterContext;)V
     .locals 2
-    .param p1    # Landroid/filterfw/core/FilterContext;
 
     iget-object v0, p0, Landroid/filterpacks/ui/SurfaceRenderFilter;->mSurfaceView:Landroid/filterfw/core/FilterSurfaceView;
 
@@ -245,7 +240,6 @@
 
 .method public prepare(Landroid/filterfw/core/FilterContext;)V
     .locals 6
-    .param p1    # Landroid/filterfw/core/FilterContext;
 
     const/4 v5, 0x3
 
@@ -314,7 +308,6 @@
 
 .method public process(Landroid/filterfw/core/FilterContext;)V
     .locals 10
-    .param p1    # Landroid/filterfw/core/FilterContext;
 
     const/4 v9, 0x3
 
@@ -574,10 +567,6 @@
 
 .method public declared-synchronized surfaceChanged(Landroid/view/SurfaceHolder;III)V
     .locals 5
-    .param p1    # Landroid/view/SurfaceHolder;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     monitor-enter p0
 
@@ -621,7 +610,6 @@
 
 .method public declared-synchronized surfaceCreated(Landroid/view/SurfaceHolder;)V
     .locals 1
-    .param p1    # Landroid/view/SurfaceHolder;
 
     monitor-enter p0
 
@@ -646,7 +634,6 @@
 
 .method public declared-synchronized surfaceDestroyed(Landroid/view/SurfaceHolder;)V
     .locals 1
-    .param p1    # Landroid/view/SurfaceHolder;
 
     monitor-enter p0
 
@@ -671,7 +658,6 @@
 
 .method public tearDown(Landroid/filterfw/core/FilterContext;)V
     .locals 1
-    .param p1    # Landroid/filterfw/core/FilterContext;
 
     iget-object v0, p0, Landroid/filterpacks/ui/SurfaceRenderFilter;->mScreen:Landroid/filterfw/core/GLFrame;
 

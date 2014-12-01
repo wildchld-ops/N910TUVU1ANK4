@@ -36,7 +36,6 @@
 # virtual methods
 .method public onChanged(Landroid/media/SubtitleTrack$RenderingWidget;)V
     .locals 1
-    .param p1    # Landroid/media/SubtitleTrack$RenderingWidget;
 
     iget-object v0, p0, Landroid/widget/VideoView$8;->this$0:Landroid/widget/VideoView;
 

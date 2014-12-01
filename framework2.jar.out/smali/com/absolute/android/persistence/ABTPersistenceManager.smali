@@ -48,7 +48,6 @@
 
 .method public constructor <init>(Lcom/absolute/android/persistence/IABTPersistence;)V
     .locals 2
-    .param p1    # Lcom/absolute/android/persistence/IABTPersistence;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -86,7 +85,6 @@
 
 .method static synthetic access$102(Lcom/absolute/android/persistence/ABTPersistenceManager;)Lcom/absolute/android/persistence/ABTPersistenceManager;
     .locals 0
-    .param p0    # Lcom/absolute/android/persistence/ABTPersistenceManager;
 
     sput-object p0, Lcom/absolute/android/persistence/ABTPersistenceManager;->s_persistenceManager:Lcom/absolute/android/persistence/ABTPersistenceManager;
 
@@ -95,8 +93,6 @@
 
 .method static synthetic access$200(Lcom/absolute/android/persistence/ABTPersistenceManager;Lcom/absolute/android/persistence/IABTPersistence;)V
     .locals 0
-    .param p0    # Lcom/absolute/android/persistence/ABTPersistenceManager;
-    .param p1    # Lcom/absolute/android/persistence/IABTPersistence;
 
     invoke-direct {p0, p1}, Lcom/absolute/android/persistence/ABTPersistenceManager;->setService(Lcom/absolute/android/persistence/IABTPersistence;)V
 
@@ -105,7 +101,6 @@
 
 .method public static getPersistenceService(Landroid/content/Context;)Lcom/absolute/android/persistence/ABTPersistenceManager;
     .locals 4
-    .param p0    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/InterruptedException;
@@ -190,7 +185,6 @@
 
 .method private setService(Lcom/absolute/android/persistence/IABTPersistence;)V
     .locals 0
-    .param p1    # Lcom/absolute/android/persistence/IABTPersistence;
 
     iput-object p1, p0, Lcom/absolute/android/persistence/ABTPersistenceManager;->m_service:Lcom/absolute/android/persistence/IABTPersistence;
 
@@ -199,7 +193,6 @@
 
 .method public static stateToString(I)Ljava/lang/String;
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -237,13 +230,6 @@
 # virtual methods
 .method public downloadApk(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/absolute/android/persistence/IABTDownloadReceiver;I)V
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Lcom/absolute/android/persistence/IABTDownloadReceiver;
-    .param p7    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -337,11 +323,6 @@
 
 .method public getAppInfo(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/absolute/android/persistence/IABTGetAppInfoReceiver;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Lcom/absolute/android/persistence/IABTGetAppInfoReceiver;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -367,7 +348,6 @@
 
 .method public getApplicationProfile(Ljava/lang/String;)Lcom/absolute/android/persistence/AppProfile;
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -419,7 +399,6 @@
 
 .method public getLog(Ljava/lang/String;)Lcom/absolute/android/persistence/IABTPersistenceLog;
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -454,9 +433,6 @@
 
 .method public getPersistedFile(Ljava/lang/String;Ljava/lang/String;Z)Lcom/absolute/android/persistence/IABTPersistedFile;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -508,9 +484,6 @@
 
 .method public install(Lcom/absolute/android/persistence/AppProfile;Ljava/lang/String;Lcom/absolute/android/persistence/IABTResultReceiver;)V
     .locals 1
-    .param p1    # Lcom/absolute/android/persistence/AppProfile;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/absolute/android/persistence/IABTResultReceiver;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -526,8 +499,6 @@
 
 .method public invokeMethodAsSystem(Lcom/absolute/android/persistence/MethodSpec;Lcom/absolute/android/persistence/IABTResultReceiver;)V
     .locals 1
-    .param p1    # Lcom/absolute/android/persistence/MethodSpec;
-    .param p2    # Lcom/absolute/android/persistence/IABTResultReceiver;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -558,9 +529,6 @@
 
 .method public registerPing(Ljava/lang/String;Lcom/absolute/android/persistence/IABTPing;I)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/absolute/android/persistence/IABTPing;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -576,7 +544,6 @@
 
 .method public setAllPersistence(Z)V
     .locals 1
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -592,7 +559,6 @@
 
 .method public setApplicationProfile(Lcom/absolute/android/persistence/AppProfile;)V
     .locals 1
-    .param p1    # Lcom/absolute/android/persistence/AppProfile;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -608,8 +574,6 @@
 
 .method public setPersistence(Ljava/lang/String;Z)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -625,7 +589,6 @@
 
 .method public setState(I)V
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -656,9 +619,6 @@
 
 .method public uninstall(Ljava/lang/String;ZLcom/absolute/android/persistence/IABTResultReceiver;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # Lcom/absolute/android/persistence/IABTResultReceiver;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -674,7 +634,6 @@
 
 .method public unregisterPing(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

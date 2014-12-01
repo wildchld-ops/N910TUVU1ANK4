@@ -8859,7 +8859,6 @@
 
 .method protected constructor <init>(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -8886,8 +8885,6 @@
 
 .method private addToken(Ljava/lang/StringBuilder;Ljava/util/ArrayList;I)V
     .locals 2
-    .param p1    # Ljava/lang/StringBuilder;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -8918,7 +8915,6 @@
 
 .method private checkPolyphone(Ljava/lang/String;)I
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, -0x1
 
@@ -9150,7 +9146,6 @@
 
 .method private getToken(C)Lcom/android/mms/encoding/HanziToPinyin$Token;
     .locals 13
-    .param p1    # C
 
     const/4 v12, 0x3
 
@@ -9350,7 +9345,6 @@
 
 .method private pinyinSuffixType(C)I
     .locals 12
-    .param p1    # C
 
     const/4 v6, 0x0
 
@@ -9497,7 +9491,6 @@
 # virtual methods
 .method public get(Ljava/lang/String;)Ljava/util/ArrayList;
     .locals 9
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -9663,7 +9656,6 @@
 
 .method public getPinyin(C)Ljava/lang/String;
     .locals 14
-    .param p1    # C
 
     const/4 v13, 0x3
 
@@ -9939,7 +9931,6 @@
 
 .method protected getTokenIncludingSpecialSuffix(C)Lcom/android/mms/encoding/HanziToPinyin$Token;
     .locals 14
-    .param p1    # C
 
     const/4 v13, 0x3
 

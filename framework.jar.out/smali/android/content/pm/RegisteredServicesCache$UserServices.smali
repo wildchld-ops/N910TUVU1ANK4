@@ -76,7 +76,6 @@
 
 .method synthetic constructor <init>(Landroid/content/pm/RegisteredServicesCache$1;)V
     .locals 0
-    .param p1    # Landroid/content/pm/RegisteredServicesCache$1;
 
     invoke-direct {p0}, Landroid/content/pm/RegisteredServicesCache$UserServices;-><init>()V
 

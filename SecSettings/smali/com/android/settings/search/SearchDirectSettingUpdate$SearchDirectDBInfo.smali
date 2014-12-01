@@ -47,7 +47,6 @@
 
 .method synthetic constructor <init>(Lcom/android/settings/search/SearchDirectSettingUpdate$1;)V
     .locals 0
-    .param p1    # Lcom/android/settings/search/SearchDirectSettingUpdate$1;
 
     invoke-direct {p0}, Lcom/android/settings/search/SearchDirectSettingUpdate$SearchDirectDBInfo;-><init>()V
 

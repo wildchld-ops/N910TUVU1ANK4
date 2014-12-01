@@ -30,7 +30,6 @@
 # virtual methods
 .method public onAudioFocusChange(I)V
     .locals 8
-    .param p1    # I
 
     const/4 v6, 0x0
 
@@ -108,8 +107,6 @@
 
 .method public onMediaButtonDown(ILandroid/view/KeyEvent;)Z
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v1, 0x1
 
@@ -163,8 +160,6 @@
 
 .method public onMediaButtonUp(ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x1
 

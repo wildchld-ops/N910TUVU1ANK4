@@ -39,7 +39,6 @@
 # direct methods
 .method public constructor <init>(Landroid/app/Activity;)V
     .locals 3
-    .param p1    # Landroid/app/Activity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -185,8 +184,6 @@
 
 .method public onSwitcherChanged(Landroid/widget/CompoundButton;Z)Z
     .locals 1
-    .param p1    # Landroid/widget/CompoundButton;
-    .param p2    # Z
 
     iget-boolean v0, p0, Lcom/android/settings/guide/GuiderBase;->mIsSwitcherOn:Z
 
@@ -272,7 +269,6 @@
 
 .method public showHelpDialog(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/guide/GuiderBase;->mIsSwitcherOn:Z
 

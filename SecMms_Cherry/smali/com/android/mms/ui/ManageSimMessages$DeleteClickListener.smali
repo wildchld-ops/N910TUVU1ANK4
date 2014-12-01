@@ -26,7 +26,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/mms/ui/ManageSimMessages;[I)V
     .locals 1
-    .param p2    # [I
 
     iput-object p1, p0, Lcom/android/mms/ui/ManageSimMessages$DeleteClickListener;->this$0:Lcom/android/mms/ui/ManageSimMessages;
 
@@ -55,7 +54,6 @@
 
 .method static synthetic access$1800(Lcom/android/mms/ui/ManageSimMessages$DeleteClickListener;)[I
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ManageSimMessages$DeleteClickListener;
 
     iget-object v0, p0, Lcom/android/mms/ui/ManageSimMessages$DeleteClickListener;->mCheckedList:[I
 
@@ -66,8 +64,6 @@
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 2
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/mms/ui/ManageSimMessages$DeleteClickListener;->mCheckedList:[I
 

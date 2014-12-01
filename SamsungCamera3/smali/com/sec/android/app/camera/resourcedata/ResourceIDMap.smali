@@ -9724,7 +9724,6 @@
 
 .method public get(I)Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/resourcedata/ResourceIDMap;->mResourceIDs:Ljava/util/HashMap;
 
@@ -9755,7 +9754,6 @@
 
 .method public getResourceIDByIndex(I)Lcom/sec/android/app/camera/resourcedata/ResourceIDMap$ResourceIDSet;
     .locals 2
-    .param p1    # I
 
     new-instance v0, Ljava/util/ArrayList;
 

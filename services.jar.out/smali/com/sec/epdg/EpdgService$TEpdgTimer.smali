@@ -80,7 +80,6 @@
 
 .method public onTick(J)V
     .locals 2
-    .param p1    # J
 
     const-string v0, "[EPDGService]"
 

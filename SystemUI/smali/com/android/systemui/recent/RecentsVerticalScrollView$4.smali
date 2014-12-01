@@ -44,7 +44,6 @@
 # virtual methods
 .method public onLongClick(Landroid/view/View;)Z
     .locals 4
-    .param p1    # Landroid/view/View;
 
     iget-object v1, p0, Lcom/android/systemui/recent/RecentsVerticalScrollView$4;->val$view:Landroid/view/View;
 

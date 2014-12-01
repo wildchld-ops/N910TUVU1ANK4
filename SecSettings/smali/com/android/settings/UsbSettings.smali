@@ -60,7 +60,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/UsbSettings;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/settings/UsbSettings;
 
     iget-object v0, p0, Lcom/android/settings/UsbSettings;->mContext:Landroid/content/Context;
 
@@ -69,8 +68,6 @@
 
 .method static synthetic access$002(Lcom/android/settings/UsbSettings;Landroid/content/Context;)Landroid/content/Context;
     .locals 0
-    .param p0    # Lcom/android/settings/UsbSettings;
-    .param p1    # Landroid/content/Context;
 
     iput-object p1, p0, Lcom/android/settings/UsbSettings;->mContext:Landroid/content/Context;
 
@@ -79,7 +76,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/UsbSettings;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/UsbSettings;
 
     iget-boolean v0, p0, Lcom/android/settings/UsbSettings;->mUSBConnected:Z
 
@@ -88,8 +84,6 @@
 
 .method static synthetic access$102(Lcom/android/settings/UsbSettings;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/UsbSettings;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/UsbSettings;->mUSBConnected:Z
 
@@ -98,7 +92,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/UsbSettings;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/UsbSettings;
 
     iget-boolean v0, p0, Lcom/android/settings/UsbSettings;->mDisplayState:Z
 
@@ -107,8 +100,6 @@
 
 .method static synthetic access$202(Lcom/android/settings/UsbSettings;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/UsbSettings;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/UsbSettings;->mDisplayState:Z
 
@@ -117,8 +108,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/UsbSettings;Z)V
     .locals 0
-    .param p0    # Lcom/android/settings/UsbSettings;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/settings/UsbSettings;->switchDisplay(Z)V
 
@@ -127,7 +116,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/UsbSettings;)Landroid/hardware/usb/UsbManager;
     .locals 1
-    .param p0    # Lcom/android/settings/UsbSettings;
 
     iget-object v0, p0, Lcom/android/settings/UsbSettings;->mUsbManager:Landroid/hardware/usb/UsbManager;
 
@@ -136,7 +124,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/UsbSettings;)Landroid/os/storage/StorageManager;
     .locals 1
-    .param p0    # Lcom/android/settings/UsbSettings;
 
     iget-object v0, p0, Lcom/android/settings/UsbSettings;->mStorageManager:Landroid/os/storage/StorageManager;
 
@@ -145,7 +132,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/UsbSettings;)Landroid/os/storage/StorageEventListener;
     .locals 1
-    .param p0    # Lcom/android/settings/UsbSettings;
 
     iget-object v0, p0, Lcom/android/settings/UsbSettings;->mStorageListener:Landroid/os/storage/StorageEventListener;
 
@@ -154,7 +140,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/UsbSettings;)V
     .locals 0
-    .param p0    # Lcom/android/settings/UsbSettings;
 
     invoke-direct {p0}, Lcom/android/settings/UsbSettings;->setDefaultMode()V
 
@@ -201,7 +186,6 @@
 
 .method private switchDisplay(Z)V
     .locals 3
-    .param p1    # Z
 
     const/4 v2, 0x0
 
@@ -244,7 +228,6 @@
 # virtual methods
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -304,7 +287,6 @@
 
 .method public onCreateDialog(I)Landroid/app/Dialog;
     .locals 7
-    .param p1    # I
 
     const v6, 0x7f090d62
 
@@ -490,9 +472,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 3
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const v1, 0x7f040263
 

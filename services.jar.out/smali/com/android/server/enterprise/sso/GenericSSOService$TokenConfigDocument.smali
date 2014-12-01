@@ -37,7 +37,6 @@
 # direct methods
 .method constructor <init>(Lorg/w3c/dom/Document;)V
     .locals 1
-    .param p1    # Lorg/w3c/dom/Document;
 
     const/4 v0, 0x0
 
@@ -66,8 +65,6 @@
 
 .method static synthetic access$1100(Lcom/android/server/enterprise/sso/GenericSSOService$TokenConfigDocument;Ljava/lang/String;)Lorg/w3c/dom/Node;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/sso/GenericSSOService$TokenConfigDocument;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/sso/GenericSSOService$TokenConfigDocument;->getSSOTokenNode(Ljava/lang/String;)Lorg/w3c/dom/Node;
 
@@ -78,7 +75,6 @@
 
 .method static synthetic access$600(Lcom/android/server/enterprise/sso/GenericSSOService$TokenConfigDocument;)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/sso/GenericSSOService$TokenConfigDocument;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/sso/GenericSSOService$TokenConfigDocument;->update()V
 
@@ -87,7 +83,6 @@
 
 .method static synthetic access$800(Lcom/android/server/enterprise/sso/GenericSSOService$TokenConfigDocument;)Lorg/w3c/dom/Node;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/sso/GenericSSOService$TokenConfigDocument;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/sso/GenericSSOService$TokenConfigDocument;->getUserCertificate()Lorg/w3c/dom/Node;
 
@@ -98,7 +93,6 @@
 
 .method static synthetic access$900(Lcom/android/server/enterprise/sso/GenericSSOService$TokenConfigDocument;)Lorg/w3c/dom/Node;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/sso/GenericSSOService$TokenConfigDocument;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/sso/GenericSSOService$TokenConfigDocument;->getDeviceCertificate()Lorg/w3c/dom/Node;
 
@@ -117,7 +111,6 @@
 
 .method private getSSOTokenNode(Ljava/lang/String;)Lorg/w3c/dom/Node;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 

@@ -120,8 +120,6 @@
 
 .method public putBoolean(Ljava/lang/String;Z)Landroid/content/SharedPreferences$Editor;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     invoke-static {p1}, Lcom/sec/android/app/camera/CameraSettings;->isGlobal(Ljava/lang/String;)Z
 
@@ -146,8 +144,6 @@
 
 .method public putFloat(Ljava/lang/String;F)Landroid/content/SharedPreferences$Editor;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # F
 
     invoke-static {p1}, Lcom/sec/android/app/camera/CameraSettings;->isGlobal(Ljava/lang/String;)Z
 
@@ -172,8 +168,6 @@
 
 .method public putInt(Ljava/lang/String;I)Landroid/content/SharedPreferences$Editor;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-static {p1}, Lcom/sec/android/app/camera/CameraSettings;->isGlobal(Ljava/lang/String;)Z
 
@@ -198,8 +192,6 @@
 
 .method public putLong(Ljava/lang/String;J)Landroid/content/SharedPreferences$Editor;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
 
     invoke-static {p1}, Lcom/sec/android/app/camera/CameraSettings;->isGlobal(Ljava/lang/String;)Z
 
@@ -224,8 +216,6 @@
 
 .method public putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-static {p1}, Lcom/sec/android/app/camera/CameraSettings;->isGlobal(Ljava/lang/String;)Z
 
@@ -250,7 +240,6 @@
 
 .method public putStringSet(Ljava/lang/String;Ljava/util/Set;)Landroid/content/SharedPreferences$Editor;
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -272,7 +261,6 @@
 
 .method public remove(Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/ComboPreferences$MyEditor;->mEditorGlobal:Landroid/content/SharedPreferences$Editor;
 

@@ -107,8 +107,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/accounts/IAccountManager;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/accounts/IAccountManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -145,9 +143,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/accounts/IAccountManager;Landroid/os/Handler;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/accounts/IAccountManager;
-    .param p3    # Landroid/os/Handler;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -174,7 +169,6 @@
 
 .method static synthetic access$000(Landroid/accounts/AccountManager;)Landroid/accounts/IAccountManager;
     .locals 1
-    .param p0    # Landroid/accounts/AccountManager;
 
     iget-object v0, p0, Landroid/accounts/AccountManager;->mService:Landroid/accounts/IAccountManager;
 
@@ -183,7 +177,6 @@
 
 .method static synthetic access$1300(Landroid/accounts/AccountManager;)Ljava/util/HashMap;
     .locals 1
-    .param p0    # Landroid/accounts/AccountManager;
 
     iget-object v0, p0, Landroid/accounts/AccountManager;->mAccountsUpdatedListeners:Ljava/util/HashMap;
 
@@ -192,10 +185,6 @@
 
 .method static synthetic access$1400(Landroid/accounts/AccountManager;Landroid/os/Handler;Landroid/accounts/OnAccountsUpdateListener;[Landroid/accounts/Account;)V
     .locals 0
-    .param p0    # Landroid/accounts/AccountManager;
-    .param p1    # Landroid/os/Handler;
-    .param p2    # Landroid/accounts/OnAccountsUpdateListener;
-    .param p3    # [Landroid/accounts/Account;
 
     invoke-direct {p0, p1, p2, p3}, Landroid/accounts/AccountManager;->postToHandler(Landroid/os/Handler;Landroid/accounts/OnAccountsUpdateListener;[Landroid/accounts/Account;)V
 
@@ -204,7 +193,6 @@
 
 .method static synthetic access$200(Landroid/accounts/AccountManager;)V
     .locals 0
-    .param p0    # Landroid/accounts/AccountManager;
 
     invoke-direct {p0}, Landroid/accounts/AccountManager;->ensureNotOnMainThread()V
 
@@ -213,10 +201,6 @@
 
 .method static synthetic access$300(Landroid/accounts/AccountManager;Landroid/os/Handler;Landroid/accounts/AccountManagerCallback;Landroid/accounts/AccountManagerFuture;)V
     .locals 0
-    .param p0    # Landroid/accounts/AccountManager;
-    .param p1    # Landroid/os/Handler;
-    .param p2    # Landroid/accounts/AccountManagerCallback;
-    .param p3    # Landroid/accounts/AccountManagerFuture;
 
     invoke-direct {p0, p1, p2, p3}, Landroid/accounts/AccountManager;->postToHandler(Landroid/os/Handler;Landroid/accounts/AccountManagerCallback;Landroid/accounts/AccountManagerFuture;)V
 
@@ -225,9 +209,6 @@
 
 .method static synthetic access$400(Landroid/accounts/AccountManager;ILjava/lang/String;)Ljava/lang/Exception;
     .locals 1
-    .param p0    # Landroid/accounts/AccountManager;
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Landroid/accounts/AccountManager;->convertErrorToException(ILjava/lang/String;)Ljava/lang/Exception;
 
@@ -238,7 +219,6 @@
 
 .method static synthetic access$600(Landroid/accounts/AccountManager;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Landroid/accounts/AccountManager;
 
     iget-object v0, p0, Landroid/accounts/AccountManager;->mMainHandler:Landroid/os/Handler;
 
@@ -247,8 +227,6 @@
 
 .method private convertErrorToException(ILjava/lang/String;)Ljava/lang/Exception;
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x3
 
@@ -351,7 +329,6 @@
 
 .method public static get(Landroid/content/Context;)Landroid/accounts/AccountManager;
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     if-nez p0, :cond_0
 
@@ -377,13 +354,6 @@
 
 .method public static newChooseAccountIntent(Landroid/accounts/Account;Ljava/util/ArrayList;[Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;[Ljava/lang/String;Landroid/os/Bundle;)Landroid/content/Intent;
     .locals 4
-    .param p0    # Landroid/accounts/Account;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # Z
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # [Ljava/lang/String;
-    .param p7    # Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -469,7 +439,6 @@
 
 .method private postToHandler(Landroid/os/Handler;Landroid/accounts/AccountManagerCallback;Landroid/accounts/AccountManagerFuture;)V
     .locals 1
-    .param p1    # Landroid/os/Handler;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -501,9 +470,6 @@
 
 .method private postToHandler(Landroid/os/Handler;Landroid/accounts/OnAccountsUpdateListener;[Landroid/accounts/Account;)V
     .locals 3
-    .param p1    # Landroid/os/Handler;
-    .param p2    # Landroid/accounts/OnAccountsUpdateListener;
-    .param p3    # [Landroid/accounts/Account;
 
     const/4 v2, 0x0
 
@@ -531,7 +497,6 @@
 
 .method public static sanitizeResult(Landroid/os/Bundle;)Landroid/os/Bundle;
     .locals 3
-    .param p0    # Landroid/os/Bundle;
 
     if-eqz p0, :cond_0
 
@@ -578,12 +543,6 @@
 # virtual methods
 .method public addAccount(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Landroid/os/Bundle;Landroid/app/Activity;Landroid/accounts/AccountManagerCallback;Landroid/os/Handler;)Landroid/accounts/AccountManagerFuture;
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # [Ljava/lang/String;
-    .param p4    # Landroid/os/Bundle;
-    .param p5    # Landroid/app/Activity;
-    .param p7    # Landroid/os/Handler;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -665,9 +624,6 @@
 
 .method public addAccountExplicitly(Landroid/accounts/Account;Ljava/lang/String;Landroid/os/Bundle;)Z
     .locals 3
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/os/Bundle;
 
     if-nez p1, :cond_0
 
@@ -703,9 +659,6 @@
 
 .method public addOnAccountsUpdatedListener(Landroid/accounts/OnAccountsUpdateListener;Landroid/os/Handler;Z)V
     .locals 5
-    .param p1    # Landroid/accounts/OnAccountsUpdateListener;
-    .param p2    # Landroid/os/Handler;
-    .param p3    # Z
 
     if-nez p1, :cond_0
 
@@ -799,8 +752,6 @@
 
 .method public addSharedAccount(Landroid/accounts/Account;Landroid/os/UserHandle;)Z
     .locals 4
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # Landroid/os/UserHandle;
 
     :try_start_0
     iget-object v2, p0, Landroid/accounts/AccountManager;->mService:Landroid/accounts/IAccountManager;
@@ -829,9 +780,6 @@
 
 .method public blockingGetAuthToken(Landroid/accounts/Account;Ljava/lang/String;Z)Ljava/lang/String;
     .locals 9
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/accounts/OperationCanceledException;,
@@ -982,7 +930,6 @@
 
 .method public clearPassword(Landroid/accounts/Account;)V
     .locals 3
-    .param p1    # Landroid/accounts/Account;
 
     if-nez p1, :cond_0
 
@@ -1016,10 +963,6 @@
 
 .method public confirmCredentials(Landroid/accounts/Account;Landroid/os/Bundle;Landroid/app/Activity;Landroid/accounts/AccountManagerCallback;Landroid/os/Handler;)Landroid/accounts/AccountManagerFuture;
     .locals 7
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # Landroid/os/Bundle;
-    .param p3    # Landroid/app/Activity;
-    .param p5    # Landroid/os/Handler;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1064,11 +1007,6 @@
 
 .method public confirmCredentialsAsUser(Landroid/accounts/Account;Landroid/os/Bundle;Landroid/app/Activity;Landroid/accounts/AccountManagerCallback;Landroid/os/Handler;Landroid/os/UserHandle;)Landroid/accounts/AccountManagerFuture;
     .locals 9
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # Landroid/os/Bundle;
-    .param p3    # Landroid/app/Activity;
-    .param p5    # Landroid/os/Handler;
-    .param p6    # Landroid/os/UserHandle;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1131,9 +1069,6 @@
 
 .method public editProperties(Ljava/lang/String;Landroid/app/Activity;Landroid/accounts/AccountManagerCallback;Landroid/os/Handler;)Landroid/accounts/AccountManagerFuture;
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/app/Activity;
-    .param p4    # Landroid/os/Handler;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1214,7 +1149,6 @@
 
 .method public getAccountsByType(Ljava/lang/String;)[Landroid/accounts/Account;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Landroid/os/Process;->myUserHandle()Landroid/os/UserHandle;
 
@@ -1229,9 +1163,6 @@
 
 .method public getAccountsByTypeAndFeatures(Ljava/lang/String;[Ljava/lang/String;Landroid/accounts/AccountManagerCallback;Landroid/os/Handler;)Landroid/accounts/AccountManagerFuture;
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/String;
-    .param p4    # Landroid/os/Handler;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1285,8 +1216,6 @@
 
 .method public getAccountsByTypeAsUser(Ljava/lang/String;Landroid/os/UserHandle;)[Landroid/accounts/Account;
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/UserHandle;
 
     :try_start_0
     iget-object v1, p0, Landroid/accounts/AccountManager;->mService:Landroid/accounts/IAccountManager;
@@ -1315,8 +1244,6 @@
 
 .method public getAccountsByTypeForPackage(Ljava/lang/String;Ljava/lang/String;)[Landroid/accounts/Account;
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     :try_start_0
     iget-object v1, p0, Landroid/accounts/AccountManager;->mService:Landroid/accounts/IAccountManager;
@@ -1341,8 +1268,6 @@
 
 .method public getAccountsForPackage(Ljava/lang/String;I)[Landroid/accounts/Account;
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     :try_start_0
     iget-object v1, p0, Landroid/accounts/AccountManager;->mService:Landroid/accounts/IAccountManager;
@@ -1367,11 +1292,6 @@
 
 .method public getAuthToken(Landroid/accounts/Account;Ljava/lang/String;Landroid/os/Bundle;Landroid/app/Activity;Landroid/accounts/AccountManagerCallback;Landroid/os/Handler;)Landroid/accounts/AccountManagerFuture;
     .locals 8
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/os/Bundle;
-    .param p4    # Landroid/app/Activity;
-    .param p6    # Landroid/os/Handler;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1458,11 +1378,6 @@
 
 .method public getAuthToken(Landroid/accounts/Account;Ljava/lang/String;Landroid/os/Bundle;ZLandroid/accounts/AccountManagerCallback;Landroid/os/Handler;)Landroid/accounts/AccountManagerFuture;
     .locals 9
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/os/Bundle;
-    .param p4    # Z
-    .param p6    # Landroid/os/Handler;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1551,10 +1466,6 @@
 
 .method public getAuthToken(Landroid/accounts/Account;Ljava/lang/String;ZLandroid/accounts/AccountManagerCallback;Landroid/os/Handler;)Landroid/accounts/AccountManagerFuture;
     .locals 7
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
-    .param p5    # Landroid/os/Handler;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1600,13 +1511,6 @@
 
 .method public getAuthTokenByFeatures(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Landroid/app/Activity;Landroid/os/Bundle;Landroid/os/Bundle;Landroid/accounts/AccountManagerCallback;Landroid/os/Handler;)Landroid/accounts/AccountManagerFuture;
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # [Ljava/lang/String;
-    .param p4    # Landroid/app/Activity;
-    .param p5    # Landroid/os/Bundle;
-    .param p6    # Landroid/os/Bundle;
-    .param p8    # Landroid/os/Handler;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1681,9 +1585,6 @@
 
 .method public getAuthTokenLabel(Ljava/lang/String;Ljava/lang/String;Landroid/accounts/AccountManagerCallback;Landroid/os/Handler;)Landroid/accounts/AccountManagerFuture;
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p4    # Landroid/os/Handler;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1788,7 +1689,6 @@
 
 .method public getPassword(Landroid/accounts/Account;)Ljava/lang/String;
     .locals 3
-    .param p1    # Landroid/accounts/Account;
 
     if-nez p1, :cond_0
 
@@ -1824,7 +1724,6 @@
 
 .method public getSharedAccounts(Landroid/os/UserHandle;)[Landroid/accounts/Account;
     .locals 3
-    .param p1    # Landroid/os/UserHandle;
 
     :try_start_0
     iget-object v1, p0, Landroid/accounts/AccountManager;->mService:Landroid/accounts/IAccountManager;
@@ -1853,8 +1752,6 @@
 
 .method public getUserData(Landroid/accounts/Account;Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -1901,9 +1798,6 @@
 
 .method public hasFeatures(Landroid/accounts/Account;[Ljava/lang/String;Landroid/accounts/AccountManagerCallback;Landroid/os/Handler;)Landroid/accounts/AccountManagerFuture;
     .locals 6
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # [Ljava/lang/String;
-    .param p4    # Landroid/os/Handler;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1968,8 +1862,6 @@
 
 .method public invalidateAuthToken(Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -2006,8 +1898,6 @@
 
 .method public peekAuthToken(Landroid/accounts/Account;Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -2054,8 +1944,6 @@
 
 .method public removeAccount(Landroid/accounts/Account;Landroid/accounts/AccountManagerCallback;Landroid/os/Handler;)Landroid/accounts/AccountManagerFuture;
     .locals 2
-    .param p1    # Landroid/accounts/Account;
-    .param p3    # Landroid/os/Handler;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2097,7 +1985,6 @@
 
 .method public removeOnAccountsUpdatedListener(Landroid/accounts/OnAccountsUpdateListener;)V
     .locals 3
-    .param p1    # Landroid/accounts/OnAccountsUpdateListener;
 
     if-nez p1, :cond_0
 
@@ -2170,8 +2057,6 @@
 
 .method public removeSharedAccount(Landroid/accounts/Account;Landroid/os/UserHandle;)Z
     .locals 4
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # Landroid/os/UserHandle;
 
     :try_start_0
     iget-object v2, p0, Landroid/accounts/AccountManager;->mService:Landroid/accounts/IAccountManager;
@@ -2200,9 +2085,6 @@
 
 .method public setAuthToken(Landroid/accounts/Account;Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -2247,8 +2129,6 @@
 
 .method public setPassword(Landroid/accounts/Account;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -2282,9 +2162,6 @@
 
 .method public setUserData(Landroid/accounts/Account;Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -2329,10 +2206,6 @@
 
 .method public updateAppPermission(Landroid/accounts/Account;Ljava/lang/String;IZ)V
     .locals 2
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Z
 
     :try_start_0
     iget-object v1, p0, Landroid/accounts/AccountManager;->mService:Landroid/accounts/IAccountManager;
@@ -2355,11 +2228,6 @@
 
 .method public updateCredentials(Landroid/accounts/Account;Ljava/lang/String;Landroid/os/Bundle;Landroid/app/Activity;Landroid/accounts/AccountManagerCallback;Landroid/os/Handler;)Landroid/accounts/AccountManagerFuture;
     .locals 9
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/os/Bundle;
-    .param p4    # Landroid/app/Activity;
-    .param p6    # Landroid/os/Handler;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

@@ -66,7 +66,6 @@
 
 .method static synthetic access$100(Landroid/widget/Editor$SelectionModifierCursorController;)Landroid/widget/Editor$SelectionStartHandleView;
     .locals 1
-    .param p0    # Landroid/widget/Editor$SelectionModifierCursorController;
 
     iget-object v0, p0, Landroid/widget/Editor$SelectionModifierCursorController;->mStartHandle:Landroid/widget/Editor$SelectionStartHandleView;
 
@@ -75,7 +74,6 @@
 
 .method static synthetic access$200(Landroid/widget/Editor$SelectionModifierCursorController;)Landroid/widget/Editor$SelectionEndHandleView;
     .locals 1
-    .param p0    # Landroid/widget/Editor$SelectionModifierCursorController;
 
     iget-object v0, p0, Landroid/widget/Editor$SelectionModifierCursorController;->mEndHandle:Landroid/widget/Editor$SelectionEndHandleView;
 
@@ -84,7 +82,6 @@
 
 .method static synthetic access$400(Landroid/widget/Editor$SelectionModifierCursorController;)V
     .locals 0
-    .param p0    # Landroid/widget/Editor$SelectionModifierCursorController;
 
     invoke-direct {p0}, Landroid/widget/Editor$SelectionModifierCursorController;->updatePosition()V
 
@@ -438,7 +435,6 @@
 
 .method private updateMinAndMaxOffsets(Landroid/view/MotionEvent;)V
     .locals 6
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getPointerCount()I
 
@@ -852,7 +848,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)V
     .locals 15
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual/range {p1 .. p1}, Landroid/view/MotionEvent;->getActionMasked()I
 
@@ -1103,7 +1098,6 @@
 
 .method public onTouchModeChanged(Z)V
     .locals 0
-    .param p1    # Z
 
     if-nez p1, :cond_0
 

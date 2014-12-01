@@ -40,7 +40,6 @@
 # virtual methods
 .method public bindStream(Ljava/io/OutputStream;)Ljava/io/OutputStream;
     .locals 2
-    .param p1    # Ljava/io/OutputStream;
 
     invoke-direct {p0}, Lorg/apache/commons/io/output/DemuxOutputStream;->getStream()Ljava/io/OutputStream;
 
@@ -95,7 +94,6 @@
 
 .method public write(I)V
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

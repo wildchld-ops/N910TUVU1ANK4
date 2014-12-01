@@ -100,7 +100,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -179,9 +178,6 @@
 
 .method static synthetic access$100(Lcom/android/server/analytics/data/collection/application/CrashAnrDetector;Ljava/lang/String;J)V
     .locals 0
-    .param p0    # Lcom/android/server/analytics/data/collection/application/CrashAnrDetector;
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/server/analytics/data/collection/application/CrashAnrDetector;->processDropBoxEntry(Ljava/lang/String;J)V
 
@@ -190,7 +186,6 @@
 
 .method static synthetic access$200(Lcom/android/server/analytics/data/collection/application/CrashAnrDetector;)V
     .locals 0
-    .param p0    # Lcom/android/server/analytics/data/collection/application/CrashAnrDetector;
 
     invoke-direct {p0}, Lcom/android/server/analytics/data/collection/application/CrashAnrDetector;->updateAppInfoList()V
 
@@ -199,8 +194,6 @@
 
 .method private broadcastEvent(Ljava/lang/String;Ljava/lang/String;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v6, 0x1
 
@@ -314,7 +307,6 @@
 
 .method private convertStreamToString(Ljava/io/InputStream;)Ljava/lang/String;
     .locals 5
-    .param p1    # Ljava/io/InputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -382,7 +374,6 @@
 
 .method private getColumnForTag(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string/jumbo v0, "system_app_crash"
 
@@ -474,7 +465,6 @@
 
 .method private final declared-synchronized getPackageName(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -530,8 +520,6 @@
 
 .method private processDropBoxEntry(Ljava/lang/String;J)V
     .locals 15
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
 
     invoke-direct {p0}, Lcom/android/server/analytics/data/collection/application/CrashAnrDetector;->getDropBoxManager()Landroid/os/DropBoxManager;
 

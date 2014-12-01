@@ -20,12 +20,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;JZLandroid/net/Uri;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # J
-    .param p6    # Z
-    .param p7    # Landroid/net/Uri;
 
     const/4 v2, 0x0
 
@@ -54,13 +48,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;JZLandroid/net/Uri;I)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # J
-    .param p6    # Z
-    .param p7    # Landroid/net/Uri;
-    .param p8    # I
 
     const/4 v2, 0x0
 
@@ -119,14 +106,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;JZLandroid/net/Uri;Ljava/lang/String;I)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # J
-    .param p6    # Z
-    .param p7    # Landroid/net/Uri;
-    .param p8    # Ljava/lang/String;
-    .param p9    # I
 
     invoke-direct/range {p0 .. p7}, Lcom/android/mms/transaction/SmsSingleRecipientSender;-><init>(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;JZLandroid/net/Uri;)V
 
@@ -139,7 +118,6 @@
 
 .method private EncodeNonGSMCharater(Ljava/lang/String;)Ljava/lang/String;
     .locals 9
-    .param p1    # Ljava/lang/String;
 
     iget v7, p0, Lcom/android/mms/transaction/SmsMessageSender;->mUserSelectedEncodingType:I
 
@@ -318,7 +296,6 @@
 
 .method private createMessages(Landroid/telephony/SmsManager;)Ljava/util/ArrayList;
     .locals 5
-    .param p1    # Landroid/telephony/SmsManager;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -685,8 +662,6 @@
 
 .method private divideMessageWithEmailCommon(Ljava/lang/String;Ljava/lang/String;)Ljava/util/ArrayList;
     .locals 11
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -894,8 +869,6 @@
 
 .method private divideMessageWithIS41Email(Ljava/lang/String;Ljava/lang/String;)Ljava/util/ArrayList;
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1042,10 +1015,6 @@
 
 .method private getSendInfoLog(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)Ljava/lang/String;
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
 
     const/4 v1, 0x1
 
@@ -1240,7 +1209,6 @@
 
 .method private log(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "Mms"
 
@@ -1271,8 +1239,6 @@
 # virtual methods
 .method public fragmentTextWithEmail(Ljava/lang/String;I)Ljava/util/ArrayList;
     .locals 11
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1554,7 +1520,6 @@
 
 .method public sendMessage(J)Z
     .locals 26
-    .param p1    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/google/android/mms/MmsException;

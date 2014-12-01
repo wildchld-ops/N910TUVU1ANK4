@@ -1090,7 +1090,6 @@
 
 .method synthetic constructor <init>(Landroid/hardware/camera2/CaptureRequest$1;)V
     .locals 0
-    .param p1    # Landroid/hardware/camera2/CaptureRequest$1;
 
     invoke-direct {p0}, Landroid/hardware/camera2/CaptureRequest;-><init>()V
 
@@ -1099,7 +1098,6 @@
 
 .method private constructor <init>(Landroid/hardware/camera2/CaptureRequest;)V
     .locals 2
-    .param p1    # Landroid/hardware/camera2/CaptureRequest;
 
     invoke-direct {p0}, Landroid/hardware/camera2/CameraMetadata;-><init>()V
 
@@ -1130,8 +1128,6 @@
 
 .method synthetic constructor <init>(Landroid/hardware/camera2/CaptureRequest;Landroid/hardware/camera2/CaptureRequest$1;)V
     .locals 0
-    .param p1    # Landroid/hardware/camera2/CaptureRequest;
-    .param p2    # Landroid/hardware/camera2/CaptureRequest$1;
 
     invoke-direct {p0, p1}, Landroid/hardware/camera2/CaptureRequest;-><init>(Landroid/hardware/camera2/CaptureRequest;)V
 
@@ -1140,7 +1136,6 @@
 
 .method private constructor <init>(Landroid/hardware/camera2/impl/CameraMetadataNative;)V
     .locals 1
-    .param p1    # Landroid/hardware/camera2/impl/CameraMetadataNative;
 
     invoke-direct {p0}, Landroid/hardware/camera2/CameraMetadata;-><init>()V
 
@@ -1157,8 +1152,6 @@
 
 .method synthetic constructor <init>(Landroid/hardware/camera2/impl/CameraMetadataNative;Landroid/hardware/camera2/CaptureRequest$1;)V
     .locals 0
-    .param p1    # Landroid/hardware/camera2/impl/CameraMetadataNative;
-    .param p2    # Landroid/hardware/camera2/CaptureRequest$1;
 
     invoke-direct {p0, p1}, Landroid/hardware/camera2/CaptureRequest;-><init>(Landroid/hardware/camera2/impl/CameraMetadataNative;)V
 
@@ -1167,7 +1160,6 @@
 
 .method static synthetic access$200(Landroid/hardware/camera2/CaptureRequest;)Ljava/util/HashSet;
     .locals 1
-    .param p0    # Landroid/hardware/camera2/CaptureRequest;
 
     iget-object v0, p0, Landroid/hardware/camera2/CaptureRequest;->mSurfaceSet:Ljava/util/HashSet;
 
@@ -1176,7 +1168,6 @@
 
 .method static synthetic access$300(Landroid/hardware/camera2/CaptureRequest;)Landroid/hardware/camera2/impl/CameraMetadataNative;
     .locals 1
-    .param p0    # Landroid/hardware/camera2/CaptureRequest;
 
     iget-object v0, p0, Landroid/hardware/camera2/CaptureRequest;->mSettings:Landroid/hardware/camera2/impl/CameraMetadataNative;
 
@@ -1185,8 +1176,6 @@
 
 .method static synthetic access$402(Landroid/hardware/camera2/CaptureRequest;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
-    .param p0    # Landroid/hardware/camera2/CaptureRequest;
-    .param p1    # Ljava/lang/Object;
 
     iput-object p1, p0, Landroid/hardware/camera2/CaptureRequest;->mUserTag:Ljava/lang/Object;
 
@@ -1195,7 +1184,6 @@
 
 .method private equals(Landroid/hardware/camera2/CaptureRequest;)Z
     .locals 2
-    .param p1    # Landroid/hardware/camera2/CaptureRequest;
 
     if-eqz p1, :cond_0
 
@@ -1252,7 +1240,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     instance-of v0, p1, Landroid/hardware/camera2/CaptureRequest;
 
@@ -1320,7 +1307,6 @@
 
 .method public readFromParcel(Landroid/os/Parcel;)V
     .locals 7
-    .param p1    # Landroid/os/Parcel;
 
     iget-object v6, p0, Landroid/hardware/camera2/CaptureRequest;->mSettings:Landroid/hardware/camera2/impl/CameraMetadataNative;
 
@@ -1372,8 +1358,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v0, p0, Landroid/hardware/camera2/CaptureRequest;->mSettings:Landroid/hardware/camera2/impl/CameraMetadataNative;
 

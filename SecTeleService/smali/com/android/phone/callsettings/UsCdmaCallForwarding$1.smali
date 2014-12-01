@@ -49,7 +49,7 @@
 
     iget-object v0, p0, Lcom/android/phone/callsettings/UsCdmaCallForwarding$1;->this$0:Lcom/android/phone/callsettings/UsCdmaCallForwarding;
 
-    invoke-virtual {v0, v2}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->showDialog(I)V
+    invoke-virtual {v0, v2}, Lcom/android/phone/callsettings/UsCdmaCallForwarding;->showDialog(I)V
 
     return v2
 .end method

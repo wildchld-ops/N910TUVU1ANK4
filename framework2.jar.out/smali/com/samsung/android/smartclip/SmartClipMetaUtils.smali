@@ -32,8 +32,6 @@
 
 .method public static addMetaTag(Landroid/view/View;Lcom/samsung/android/sdk/look/smartclip/SlookSmartClipMetaTag;)Z
     .locals 3
-    .param p0    # Landroid/view/View;
-    .param p1    # Lcom/samsung/android/sdk/look/smartclip/SlookSmartClipMetaTag;
 
     const/4 v0, 0x0
 
@@ -67,7 +65,6 @@
 
 .method public static clearAllMetaTag(Landroid/view/View;)Z
     .locals 1
-    .param p0    # Landroid/view/View;
 
     if-nez p0, :cond_0
 
@@ -86,9 +83,6 @@
 
 .method public static extractDefaultSmartClipData(Landroid/view/View;Lcom/samsung/android/sdk/look/smartclip/SlookSmartClipDataElement;Lcom/samsung/android/sdk/look/smartclip/SlookSmartClipCroppedArea;)I
     .locals 1
-    .param p0    # Landroid/view/View;
-    .param p1    # Lcom/samsung/android/sdk/look/smartclip/SlookSmartClipDataElement;
-    .param p2    # Lcom/samsung/android/sdk/look/smartclip/SlookSmartClipCroppedArea;
 
     if-nez p0, :cond_0
 
@@ -107,8 +101,6 @@
 
 .method public static getChromeViewClassNameFromManifest(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -203,7 +195,6 @@
 
 .method public static getScreenPointOfView(Landroid/view/View;)Landroid/graphics/Point;
     .locals 3
-    .param p0    # Landroid/view/View;
 
     new-instance v1, Landroid/graphics/Point;
 
@@ -232,7 +223,6 @@
 
 .method public static getScreenRectOfView(Landroid/view/View;)Landroid/graphics/Rect;
     .locals 4
-    .param p0    # Landroid/view/View;
 
     new-instance v1, Landroid/graphics/Rect;
 
@@ -275,8 +265,6 @@
 
 .method public static isInstanceOf(Ljava/lang/Object;Ljava/lang/String;)Z
     .locals 4
-    .param p0    # Ljava/lang/Object;
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -322,7 +310,6 @@
 
 .method public static isValidMetaTag(Lcom/samsung/android/sdk/look/smartclip/SlookSmartClipMetaTag;)Z
     .locals 5
-    .param p0    # Lcom/samsung/android/sdk/look/smartclip/SlookSmartClipMetaTag;
 
     const/4 v1, 0x0
 
@@ -383,8 +370,6 @@
 
 .method public static removeMetaTag(Landroid/view/View;Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Landroid/view/View;
-    .param p1    # Ljava/lang/String;
 
     if-eqz p0, :cond_0
 
@@ -406,8 +391,6 @@
 
 .method public static setDataExtractionListener(Landroid/view/View;Lcom/samsung/android/smartclip/SmartClipDataExtractionListener;)Z
     .locals 1
-    .param p0    # Landroid/view/View;
-    .param p1    # Lcom/samsung/android/smartclip/SmartClipDataExtractionListener;
 
     if-nez p0, :cond_0
 
@@ -426,8 +409,6 @@
 
 .method public static setIntentMetaTag(Landroid/view/View;Landroid/content/Intent;)Z
     .locals 7
-    .param p0    # Landroid/view/View;
-    .param p1    # Landroid/content/Intent;
 
     const/4 v5, 0x1
 
@@ -513,8 +494,6 @@
 
 .method public static setPendingExtractionResult(Landroid/view/View;Lcom/samsung/android/sdk/look/smartclip/SlookSmartClipDataElement;)Z
     .locals 4
-    .param p0    # Landroid/view/View;
-    .param p1    # Lcom/samsung/android/sdk/look/smartclip/SlookSmartClipDataElement;
 
     const/4 v3, 0x0
 
@@ -556,8 +535,6 @@
 
 .method public static setSmartClipTag(Landroid/view/View;Lcom/samsung/android/sdk/look/smartclip/SlookSmartClipMetaTag;)Z
     .locals 2
-    .param p0    # Landroid/view/View;
-    .param p1    # Lcom/samsung/android/sdk/look/smartclip/SlookSmartClipMetaTag;
 
     if-eqz p1, :cond_0
 

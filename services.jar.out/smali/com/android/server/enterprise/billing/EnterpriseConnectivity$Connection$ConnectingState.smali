@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;Lcom/android/server/enterprise/billing/EnterpriseConnectivity$1;)V
     .locals 0
-    .param p1    # Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;
-    .param p2    # Lcom/android/server/enterprise/billing/EnterpriseConnectivity$1;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection$ConnectingState;-><init>(Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;)V
 
@@ -69,7 +67,6 @@
 
 .method public processMessage(Landroid/os/Message;)Z
     .locals 5
-    .param p1    # Landroid/os/Message;
 
     iget-object v1, p0, Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection$ConnectingState;->this$1:Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;
 

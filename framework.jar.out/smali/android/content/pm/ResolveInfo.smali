@@ -86,7 +86,6 @@
 
 .method public constructor <init>(Landroid/content/pm/ResolveInfo;)V
     .locals 1
-    .param p1    # Landroid/content/pm/ResolveInfo;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -151,7 +150,6 @@
 
 .method private constructor <init>(Landroid/os/Parcel;)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
 
     const/4 v1, 0x0
 
@@ -316,8 +314,6 @@
 
 .method synthetic constructor <init>(Landroid/os/Parcel;Landroid/content/pm/ResolveInfo$1;)V
     .locals 0
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # Landroid/content/pm/ResolveInfo$1;
 
     invoke-direct {p0, p1}, Landroid/content/pm/ResolveInfo;-><init>(Landroid/os/Parcel;)V
 
@@ -376,8 +372,6 @@
 
 .method public dump(Landroid/util/Printer;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Landroid/util/Printer;
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/content/pm/ResolveInfo;->filter:Landroid/content/IntentFilter;
 
@@ -789,7 +783,6 @@
 
 .method public loadIcon(Landroid/content/pm/PackageManager;)Landroid/graphics/drawable/Drawable;
     .locals 6
-    .param p1    # Landroid/content/pm/PackageManager;
 
     iget-object v3, p0, Landroid/content/pm/ResolveInfo;->resolvePackageName:Ljava/lang/String;
 
@@ -883,7 +876,6 @@
 
 .method public loadLabel(Landroid/content/pm/PackageManager;)Ljava/lang/CharSequence;
     .locals 9
-    .param p1    # Landroid/content/pm/PackageManager;
 
     iget-object v6, p0, Landroid/content/pm/ResolveInfo;->activityInfo:Landroid/content/pm/ActivityInfo;
 
@@ -1155,8 +1147,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 3
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     const/4 v0, 0x1
 

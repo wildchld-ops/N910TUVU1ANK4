@@ -207,7 +207,6 @@
 
 .method public constructor <init>(Landroid/content/pm/ActivityInfo;)V
     .locals 1
-    .param p1    # Landroid/content/pm/ActivityInfo;
 
     invoke-direct {p0, p1}, Landroid/content/pm/ComponentInfo;-><init>(Landroid/content/pm/ComponentInfo;)V
 
@@ -268,7 +267,6 @@
 
 .method private constructor <init>(Landroid/os/Parcel;)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0, p1}, Landroid/content/pm/ComponentInfo;-><init>(Landroid/os/Parcel;)V
 
@@ -351,8 +349,6 @@
 
 .method synthetic constructor <init>(Landroid/os/Parcel;Landroid/content/pm/ActivityInfo$1;)V
     .locals 0
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # Landroid/content/pm/ActivityInfo$1;
 
     invoke-direct {p0, p1}, Landroid/content/pm/ActivityInfo;-><init>(Landroid/os/Parcel;)V
 
@@ -361,7 +357,6 @@
 
 .method public static activityInfoConfigToNative(I)I
     .locals 3
-    .param p0    # I
 
     const/4 v1, 0x0
 
@@ -409,8 +404,6 @@
 
 .method public dump(Landroid/util/Printer;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Landroid/util/Printer;
-    .param p2    # Ljava/lang/String;
 
     invoke-super {p0, p1, p2}, Landroid/content/pm/ComponentInfo;->dumpFront(Landroid/util/Printer;Ljava/lang/String;)V
 
@@ -767,8 +760,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     invoke-super {p0, p1, p2}, Landroid/content/pm/ComponentInfo;->writeToParcel(Landroid/os/Parcel;I)V
 

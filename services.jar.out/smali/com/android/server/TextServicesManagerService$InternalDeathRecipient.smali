@@ -36,12 +36,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/TextServicesManagerService;Lcom/android/server/TextServicesManagerService$SpellCheckerBindGroup;Lcom/android/internal/textservice/ITextServicesSessionListener;Ljava/lang/String;Lcom/android/internal/textservice/ISpellCheckerSessionListener;ILandroid/os/Bundle;)V
     .locals 0
-    .param p2    # Lcom/android/server/TextServicesManagerService$SpellCheckerBindGroup;
-    .param p3    # Lcom/android/internal/textservice/ITextServicesSessionListener;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Lcom/android/internal/textservice/ISpellCheckerSessionListener;
-    .param p6    # I
-    .param p7    # Landroid/os/Bundle;
 
     iput-object p1, p0, Lcom/android/server/TextServicesManagerService$InternalDeathRecipient;->this$0:Lcom/android/server/TextServicesManagerService;
 
@@ -64,7 +58,6 @@
 
 .method static synthetic access$1100(Lcom/android/server/TextServicesManagerService$InternalDeathRecipient;)Lcom/android/server/TextServicesManagerService$SpellCheckerBindGroup;
     .locals 1
-    .param p0    # Lcom/android/server/TextServicesManagerService$InternalDeathRecipient;
 
     iget-object v0, p0, Lcom/android/server/TextServicesManagerService$InternalDeathRecipient;->mGroup:Lcom/android/server/TextServicesManagerService$SpellCheckerBindGroup;
 
@@ -87,7 +80,6 @@
 
 .method public hasSpellCheckerListener(Lcom/android/internal/textservice/ISpellCheckerSessionListener;)Z
     .locals 2
-    .param p1    # Lcom/android/internal/textservice/ISpellCheckerSessionListener;
 
     invoke-interface {p1}, Lcom/android/internal/textservice/ISpellCheckerSessionListener;->asBinder()Landroid/os/IBinder;
 

@@ -119,7 +119,6 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/sec/android/app/camera/ImageManager$DataLocation;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-class v0, Lcom/sec/android/app/camera/ImageManager$DataLocation;
 

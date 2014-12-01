@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Landroid/app/ActivityThread;Landroid/app/ActivityThread$1;)V
     .locals 0
-    .param p1    # Landroid/app/ActivityThread;
-    .param p2    # Landroid/app/ActivityThread$1;
 
     invoke-direct {p0, p1}, Landroid/app/ActivityThread$Idler;-><init>(Landroid/app/ActivityThread;)V
 

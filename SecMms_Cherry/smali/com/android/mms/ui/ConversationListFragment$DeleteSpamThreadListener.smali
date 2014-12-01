@@ -30,8 +30,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/mms/ui/ConversationListFragment;Lcom/android/mms/data/Conversation;Ljava/lang/Long;)V
     .locals 2
-    .param p2    # Lcom/android/mms/data/Conversation;
-    .param p3    # Ljava/lang/Long;
 
     iput-object p1, p0, Lcom/android/mms/ui/ConversationListFragment$DeleteSpamThreadListener;->this$0:Lcom/android/mms/ui/ConversationListFragment;
 
@@ -52,8 +50,6 @@
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 9
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     const/4 v2, 0x1
 
@@ -151,7 +147,6 @@
 
 .method public setDeleteSpamThread(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/ConversationListFragment$DeleteSpamThreadListener;->mDeleteSpamThread:Z
 

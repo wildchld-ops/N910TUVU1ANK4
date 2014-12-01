@@ -37,7 +37,6 @@
 # virtual methods
 .method public onChange(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController$MobileDataObserver;->this$0:Lcom/android/systemui/statusbar/policy/NetworkController;
 

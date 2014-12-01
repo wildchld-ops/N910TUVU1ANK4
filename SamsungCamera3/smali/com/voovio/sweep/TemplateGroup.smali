@@ -90,7 +90,6 @@
 
 .method private constructor <init>(Landroid/os/Parcel;)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Lcom/voovio/sweep/TemplateGroup;-><init>()V
 
@@ -127,7 +126,6 @@
 # virtual methods
 .method addTemplate(Lcom/voovio/sweep/Template;)V
     .locals 2
-    .param p1    # Lcom/voovio/sweep/Template;
 
     invoke-virtual {p1}, Lcom/voovio/sweep/Template;->getImageAspect()Ljava/lang/String;
 
@@ -206,7 +204,6 @@
 
 .method getTemplate(I)Lcom/voovio/sweep/Template;
     .locals 8
-    .param p1    # I
 
     const/4 v7, 0x2
 
@@ -329,7 +326,6 @@
 
 .method setImageAspect(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/voovio/sweep/TemplateGroup;->m_strImageAspect:Ljava/lang/String;
 
@@ -338,7 +334,6 @@
 
 .method setName(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/voovio/sweep/TemplateGroup;->m_strName:Ljava/lang/String;
 
@@ -347,8 +342,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/voovio/sweep/TemplateGroup;->m_strName:Ljava/lang/String;
 

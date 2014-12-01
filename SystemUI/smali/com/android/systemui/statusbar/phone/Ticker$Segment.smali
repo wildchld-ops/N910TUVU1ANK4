@@ -33,9 +33,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/statusbar/phone/Ticker;Landroid/service/notification/StatusBarNotification;Landroid/graphics/drawable/Drawable;Ljava/lang/CharSequence;)V
     .locals 3
-    .param p2    # Landroid/service/notification/StatusBarNotification;
-    .param p3    # Landroid/graphics/drawable/Drawable;
-    .param p4    # Ljava/lang/CharSequence;
 
     iput-object p1, p0, Lcom/android/systemui/statusbar/phone/Ticker$Segment;->this$0:Lcom/android/systemui/statusbar/phone/Ticker;
 
@@ -209,7 +206,6 @@
 
 .method getLayout(Ljava/lang/CharSequence;)Landroid/text/StaticLayout;
     .locals 8
-    .param p1    # Ljava/lang/CharSequence;
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/Ticker$Segment;->this$0:Lcom/android/systemui/statusbar/phone/Ticker;
 
@@ -389,9 +385,6 @@
 
 .method rtrim(Ljava/lang/CharSequence;II)Ljava/lang/CharSequence;
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
 
     :goto_0
     if-le p3, p2, :cond_0

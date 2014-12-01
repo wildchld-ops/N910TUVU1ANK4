@@ -41,7 +41,7 @@
 
     const-string v2, "input_method"
 
-    invoke-virtual {v1, v2}, Landroid/app/Activity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v1, v2}, Lcom/android/phone/PreferredNetworkDetailView;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 

@@ -25,9 +25,6 @@
 # direct methods
 .method public constructor <init>(Landroid/database/Cursor;ILjava/lang/CharSequence;)V
     .locals 3
-    .param p1    # Landroid/database/Cursor;
-    .param p2    # I
-    .param p3    # Ljava/lang/CharSequence;
 
     invoke-direct {p0}, Landroid/database/DataSetObserver;-><init>()V
 
@@ -107,8 +104,6 @@
 # virtual methods
 .method protected compare(Ljava/lang/String;Ljava/lang/String;)I
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p1}, Ljava/lang/String;->length()I
 
@@ -141,7 +136,6 @@
 
 .method public getPositionForSection(I)I
     .locals 17
-    .param p1    # I
 
     move-object/from16 v0, p0
 
@@ -337,7 +331,6 @@
 
 .method public getSectionForPosition(I)I
     .locals 7
-    .param p1    # I
 
     iget-object v5, p0, Landroid/widget/AlphabetIndexer;->mDataCursor:Landroid/database/Cursor;
 
@@ -432,7 +425,6 @@
 
 .method public setCursor(Landroid/database/Cursor;)V
     .locals 1
-    .param p1    # Landroid/database/Cursor;
 
     iget-object v0, p0, Landroid/widget/AlphabetIndexer;->mDataCursor:Landroid/database/Cursor;
 

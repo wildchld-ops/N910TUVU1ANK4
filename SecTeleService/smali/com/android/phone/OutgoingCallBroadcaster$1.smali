@@ -162,7 +162,7 @@
     :pswitch_2
     iget-object v0, p0, Lcom/android/phone/OutgoingCallBroadcaster$1;->this$0:Lcom/android/phone/OutgoingCallBroadcaster;
 
-    invoke-virtual {v0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {v0}, Lcom/android/phone/OutgoingCallBroadcaster;->finish()V
 
     goto :goto_0
 

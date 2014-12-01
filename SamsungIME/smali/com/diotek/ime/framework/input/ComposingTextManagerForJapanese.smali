@@ -87,7 +87,6 @@
 
 .method public static append(I)Z
     .locals 5
-    .param p0    # I
 
     const/4 v4, 0x1
 
@@ -137,7 +136,6 @@
 
 .method public static append(Lcom/diotek/ime/framework/input/StrSegment;)Z
     .locals 2
-    .param p0    # Lcom/diotek/ime/framework/input/StrSegment;
 
     const/4 v1, 0x1
 
@@ -194,7 +192,6 @@
 
 .method private static convertHalftoFull(Ljava/lang/String;)Ljava/lang/String;
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     invoke-virtual {p0}, Ljava/lang/String;->toCharArray()[C
 
@@ -231,8 +228,6 @@
 
 .method public static delete(IZ)I
     .locals 4
-    .param p0    # I
-    .param p1    # Z
 
     sget-object v2, Lcom/diotek/ime/framework/input/ComposingTextManagerForJapanese;->mCursor:[I
 
@@ -320,7 +315,6 @@
 
 .method public static deleteForward(I)I
     .locals 3
-    .param p0    # I
 
     sget-object v2, Lcom/diotek/ime/framework/input/ComposingTextManagerForJapanese;->mCursor:[I
 
@@ -362,9 +356,6 @@
 
 .method public static deleteStrSegment(III)V
     .locals 16
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
 
     const/4 v13, 0x3
 
@@ -745,10 +736,6 @@
 
 .method private static deleteStrSegment0(IIII)V
     .locals 4
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     sget-object v3, Lcom/diotek/ime/framework/input/ComposingTextManagerForJapanese;->mStringLayer:[Ljava/util/ArrayList;
 
@@ -837,7 +824,6 @@
 
 .method public static getCursor(I)I
     .locals 1
-    .param p0    # I
 
     sget-object v0, Lcom/diotek/ime/framework/input/ComposingTextManagerForJapanese;->mCursor:[I
 
@@ -848,8 +834,6 @@
 
 .method public static getStrSegment(II)Lcom/diotek/ime/framework/input/StrSegment;
     .locals 4
-    .param p0    # I
-    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -902,8 +886,6 @@
 
 .method public static getVerbatim(II)Ljava/lang/String;
     .locals 5
-    .param p0    # I
-    .param p1    # I
 
     if-ltz p0, :cond_0
 
@@ -1157,8 +1139,6 @@
 
 .method private static included(II)I
     .locals 5
-    .param p0    # I
-    .param p1    # I
 
     if-nez p1, :cond_1
 
@@ -1205,9 +1185,6 @@
 
 .method public static insertStrSegment(IILcom/diotek/ime/framework/input/StrSegment;)V
     .locals 10
-    .param p0    # I
-    .param p1    # I
-    .param p2    # Lcom/diotek/ime/framework/input/StrSegment;
 
     sget-object v7, Lcom/diotek/ime/framework/input/ComposingTextManagerForJapanese;->mStringLayer:[Ljava/util/ArrayList;
 
@@ -1322,8 +1299,6 @@
 
 .method public static insertStrSegment(ILcom/diotek/ime/framework/input/StrSegment;)V
     .locals 3
-    .param p0    # I
-    .param p1    # Lcom/diotek/ime/framework/input/StrSegment;
 
     sget-object v1, Lcom/diotek/ime/framework/input/ComposingTextManagerForJapanese;->mCursor:[I
 
@@ -1404,10 +1379,6 @@
 
 .method private static modifyUpper(IIII)V
     .locals 17
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v13, 0x2
 
@@ -1718,8 +1689,6 @@
 
 .method public static moveCursor(II)I
     .locals 2
-    .param p0    # I
-    .param p1    # I
 
     sget-object v1, Lcom/diotek/ime/framework/input/ComposingTextManagerForJapanese;->mCursor:[I
 
@@ -1736,8 +1705,6 @@
 
 .method public static replaceStrSegment(I[Lcom/diotek/ime/framework/input/StrSegment;)V
     .locals 3
-    .param p0    # I
-    .param p1    # [Lcom/diotek/ime/framework/input/StrSegment;
 
     sget-object v1, Lcom/diotek/ime/framework/input/ComposingTextManagerForJapanese;->mCursor:[I
 
@@ -1762,9 +1729,6 @@
 
 .method public static replaceStrSegment(I[Lcom/diotek/ime/framework/input/StrSegment;I)V
     .locals 3
-    .param p0    # I
-    .param p1    # [Lcom/diotek/ime/framework/input/StrSegment;
-    .param p2    # I
 
     sget-object v1, Lcom/diotek/ime/framework/input/ComposingTextManagerForJapanese;->mCursor:[I
 
@@ -1789,10 +1753,6 @@
 
 .method protected static replaceStrSegment0(I[Lcom/diotek/ime/framework/input/StrSegment;II)V
     .locals 4
-    .param p0    # I
-    .param p1    # [Lcom/diotek/ime/framework/input/StrSegment;
-    .param p2    # I
-    .param p3    # I
 
     sget-object v2, Lcom/diotek/ime/framework/input/ComposingTextManagerForJapanese;->mStringLayer:[Ljava/util/ArrayList;
 
@@ -1867,7 +1827,6 @@
 
 .method public static setBlockPrediction(Z)V
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/diotek/ime/framework/input/ComposingTextManagerForJapanese;->mHasPrediction:Z
 
@@ -1876,8 +1835,6 @@
 
 .method public static setCursor(II)I
     .locals 5
-    .param p0    # I
-    .param p1    # I
 
     const/4 v3, 0x2
 
@@ -2057,7 +2014,6 @@
 
 .method public static setCursorChangingOnComposing(I)V
     .locals 1
-    .param p0    # I
 
     if-nez p0, :cond_0
 
@@ -2078,7 +2034,6 @@
 
 .method public static size(I)I
     .locals 1
-    .param p0    # I
 
     sget-object v0, Lcom/diotek/ime/framework/input/ComposingTextManagerForJapanese;->mStringLayer:[Ljava/util/ArrayList;
 
@@ -2093,7 +2048,6 @@
 
 .method public static toString(I)Ljava/lang/String;
     .locals 2
-    .param p0    # I
 
     const/4 v0, 0x0
 
@@ -2116,9 +2070,6 @@
 
 .method public static toString(III)Ljava/lang/String;
     .locals 6
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
 
     :try_start_0
     new-instance v0, Ljava/lang/StringBuffer;
@@ -2324,7 +2275,6 @@
 
 .method public getStringLayer(I)Ljava/util/ArrayList;
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",

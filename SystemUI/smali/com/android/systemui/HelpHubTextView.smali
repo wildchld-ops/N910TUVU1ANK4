@@ -55,7 +55,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
 
@@ -100,8 +99,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -112,9 +109,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/TextView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
@@ -222,8 +216,6 @@
 
 .method private Changespecialchartointeger(Ljava/lang/String;Landroid/util/AttributeSet;)V
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v9, 0x0
 
@@ -317,8 +309,6 @@
 
 .method private Changespecialchartostring(Ljava/lang/String;Landroid/util/AttributeSet;)V
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v9, 0x0
 
@@ -412,8 +402,6 @@
 
 .method private CheckInteger(Ljava/lang/String;Landroid/util/AttributeSet;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v2, 0x0
 
@@ -457,8 +445,6 @@
 
 .method private CheckNewLine(Ljava/lang/String;Landroid/util/AttributeSet;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v2, 0x1
 
@@ -499,8 +485,6 @@
 
 .method private CheckString(Ljava/lang/String;Landroid/util/AttributeSet;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v2, 0x0
 
@@ -544,7 +528,6 @@
 
 .method private IntegerHtmlText(Landroid/content/res/TypedArray;)V
     .locals 4
-    .param p1    # Landroid/content/res/TypedArray;
 
     const/4 v3, 0x0
 
@@ -593,7 +576,6 @@
 
 .method private IntegerinitSelfResources(Landroid/util/AttributeSet;)V
     .locals 6
-    .param p1    # Landroid/util/AttributeSet;
 
     const/16 v5, 0x9
 
@@ -639,7 +621,6 @@
 
 .method private NewLineHtmlText(Landroid/content/res/TypedArray;)V
     .locals 4
-    .param p1    # Landroid/content/res/TypedArray;
 
     const/4 v3, 0x0
 
@@ -688,7 +669,6 @@
 
 .method private NewLineinitSelfResources(Landroid/util/AttributeSet;)V
     .locals 6
-    .param p1    # Landroid/util/AttributeSet;
 
     const/16 v5, 0xb
 
@@ -734,7 +714,6 @@
 
 .method private StringHtmlText(Landroid/content/res/TypedArray;)V
     .locals 4
-    .param p1    # Landroid/content/res/TypedArray;
 
     const/4 v3, 0x0
 
@@ -783,7 +762,6 @@
 
 .method private StringinitSelfResources(Landroid/util/AttributeSet;)V
     .locals 8
-    .param p1    # Landroid/util/AttributeSet;
 
     const/16 v7, 0xa
 
@@ -837,7 +815,6 @@
 
 .method static synthetic access$000(Lcom/android/systemui/HelpHubTextView;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/systemui/HelpHubTextView;
 
     iget-object v0, p0, Lcom/android/systemui/HelpHubTextView;->mContext:Landroid/content/Context;
 
@@ -846,7 +823,6 @@
 
 .method static synthetic access$100(Lcom/android/systemui/HelpHubTextView;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/systemui/HelpHubTextView;
 
     iget-object v0, p0, Lcom/android/systemui/HelpHubTextView;->mDrawables:Ljava/util/ArrayList;
 
@@ -855,7 +831,6 @@
 
 .method static synthetic access$200(Lcom/android/systemui/HelpHubTextView;)V
     .locals 0
-    .param p0    # Lcom/android/systemui/HelpHubTextView;
 
     invoke-direct {p0}, Lcom/android/systemui/HelpHubTextView;->invalidateDrawables()V
 
@@ -864,7 +839,6 @@
 
 .method private applyImages(Ljava/lang/String;)Ljava/lang/String;
     .locals 13
-    .param p1    # Ljava/lang/String;
 
     new-instance v9, Ljava/lang/StringBuffer;
 
@@ -1046,7 +1020,6 @@
 
 .method private applyInteger(Ljava/lang/String;)Ljava/lang/String;
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     new-instance v4, Ljava/lang/StringBuffer;
 
@@ -1118,7 +1091,6 @@
 
 .method private applyNewLine(Ljava/lang/String;)Ljava/lang/String;
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     new-instance v6, Ljava/lang/StringBuffer;
 
@@ -1219,7 +1191,6 @@
 
 .method private applyString(Ljava/lang/String;)Ljava/lang/String;
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     new-instance v4, Ljava/lang/StringBuffer;
 
@@ -1291,7 +1262,6 @@
 
 .method private checkspecialcharacterforinteger(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "$d"
 
@@ -1316,7 +1286,6 @@
 
 .method private checkspecialcharacterforstring(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "$s"
 
@@ -1341,7 +1310,6 @@
 
 .method private initHtmlText(Landroid/content/res/TypedArray;)V
     .locals 4
-    .param p1    # Landroid/content/res/TypedArray;
 
     const/4 v2, 0x0
 
@@ -1400,7 +1368,6 @@
 
 .method private initImgPadding(Landroid/content/res/TypedArray;)V
     .locals 3
-    .param p1    # Landroid/content/res/TypedArray;
 
     const/4 v2, 0x0
 
@@ -1460,7 +1427,6 @@
 
 .method private initSelfResources(Landroid/util/AttributeSet;)V
     .locals 11
-    .param p1    # Landroid/util/AttributeSet;
 
     const/high16 v10, -0x40800000
 
@@ -1819,7 +1785,6 @@
 
 .method protected onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 4
-    .param p1    # Landroid/content/res/Configuration;
 
     const/4 v3, 0x0
 
@@ -1865,7 +1830,6 @@
 
 .method public setImgGravity(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/systemui/HelpHubTextView;->mInsideImageGravity:I
 
@@ -1876,7 +1840,6 @@
 
 .method public setImgHeight(I)V
     .locals 1
-    .param p1    # I
 
     int-to-float v0, p1
 
@@ -1889,7 +1852,6 @@
 
 .method public setImgPadding(Landroid/graphics/Rect;)V
     .locals 1
-    .param p1    # Landroid/graphics/Rect;
 
     iget-object v0, p0, Lcom/android/systemui/HelpHubTextView;->mInsideImagePadding:Landroid/graphics/Rect;
 
@@ -1902,7 +1864,6 @@
 
 .method public setImgPaddingBottom(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/systemui/HelpHubTextView;->mInsideImagePadding:Landroid/graphics/Rect;
 
@@ -1915,7 +1876,6 @@
 
 .method public setImgPaddingLeft(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/systemui/HelpHubTextView;->mInsideImagePadding:Landroid/graphics/Rect;
 
@@ -1928,7 +1888,6 @@
 
 .method public setImgPaddingRight(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/systemui/HelpHubTextView;->mInsideImagePadding:Landroid/graphics/Rect;
 
@@ -1941,7 +1900,6 @@
 
 .method public setImgPaddingTop(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/systemui/HelpHubTextView;->mInsideImagePadding:Landroid/graphics/Rect;
 
@@ -1954,7 +1912,6 @@
 
 .method public setImgWidth(I)V
     .locals 1
-    .param p1    # I
 
     int-to-float v0, p1
 

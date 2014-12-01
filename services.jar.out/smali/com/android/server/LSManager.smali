@@ -148,7 +148,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 7
-    .param p1    # Landroid/content/Context;
 
     const/4 v6, 0x1
 
@@ -428,7 +427,6 @@
 
 .method public static bs2l(Ljava/util/BitSet;)J
     .locals 5
-    .param p0    # Ljava/util/BitSet;
 
     const-wide/16 v1, 0x0
 
@@ -469,7 +467,6 @@
 
 .method private decryptData(Landroid/os/storage/sensitive/SensitiveDataParcel;)[B
     .locals 11
-    .param p1    # Landroid/os/storage/sensitive/SensitiveDataParcel;
 
     const/16 v10, 0x24
 
@@ -647,7 +644,6 @@
 
 .method private encryptData(Landroid/os/storage/sensitive/SensitiveDataParcel;)[B
     .locals 19
-    .param p1    # Landroid/os/storage/sensitive/SensitiveDataParcel;
 
     invoke-static {}, Ljava/util/UUID;->randomUUID()Ljava/util/UUID;
 
@@ -1025,7 +1021,6 @@
 
 .method public static l2bs(J)Ljava/util/BitSet;
     .locals 6
-    .param p0    # J
 
     const-wide/16 v4, 0x0
 
@@ -1065,8 +1060,6 @@
 
 .method private re_encrypt([BLjava/lang/String;)V
     .locals 12
-    .param p1    # [B
-    .param p2    # Ljava/lang/String;
 
     const/4 v9, 0x1
 
@@ -1500,7 +1493,6 @@
 # virtual methods
 .method public processParcel(Landroid/os/storage/sensitive/SensitiveDataParcel;)[B
     .locals 4
-    .param p1    # Landroid/os/storage/sensitive/SensitiveDataParcel;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1651,7 +1643,6 @@
 
 .method public setPassword([B)V
     .locals 6
-    .param p1    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

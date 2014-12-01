@@ -61,8 +61,6 @@
 
 .method private addTextViewToControl(Landroid/widget/TextView;F)V
     .locals 2
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # F
 
     iget-object v0, p0, Lcom/android/mms/ui/TextSizeController;->mTextViews:Ljava/util/List;
 
@@ -98,7 +96,6 @@
 
 .method private applyScale(F)V
     .locals 1
-    .param p1    # F
 
     const/high16 v0, 0x3f000000
 
@@ -124,7 +121,6 @@
 # virtual methods
 .method public addTextViewToControl(Landroid/widget/TextView;)V
     .locals 1
-    .param p1    # Landroid/widget/TextView;
 
     invoke-virtual {p1}, Landroid/widget/TextView;->getTextSize()F
 
@@ -137,7 +133,6 @@
 
 .method public onScale(Landroid/view/ScaleGestureDetector;)Z
     .locals 2
-    .param p1    # Landroid/view/ScaleGestureDetector;
 
     invoke-virtual {p1}, Landroid/view/ScaleGestureDetector;->getScaleFactor()F
 
@@ -170,7 +165,6 @@
 
 .method public onScaleBegin(Landroid/view/ScaleGestureDetector;)Z
     .locals 1
-    .param p1    # Landroid/view/ScaleGestureDetector;
 
     const/4 v0, 0x1
 
@@ -179,7 +173,6 @@
 
 .method public onScaleEnd(Landroid/view/ScaleGestureDetector;)V
     .locals 0
-    .param p1    # Landroid/view/ScaleGestureDetector;
 
     return-void
 .end method

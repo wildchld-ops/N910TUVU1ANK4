@@ -97,8 +97,6 @@
 # virtual methods
 .method public addCpuTimeLocked(II)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     iget-wide v0, p0, Lcom/android/internal/os/BatteryStatsImpl$Uid$Proc;->mUserTime:J
 
@@ -121,8 +119,6 @@
 
 .method public addExcessiveCpu(JJ)V
     .locals 2
-    .param p1    # J
-    .param p3    # J
 
     iget-object v1, p0, Lcom/android/internal/os/BatteryStatsImpl$Uid$Proc;->mExcessivePower:Ljava/util/ArrayList;
 
@@ -156,8 +152,6 @@
 
 .method public addExcessiveWake(JJ)V
     .locals 2
-    .param p1    # J
-    .param p3    # J
 
     iget-object v1, p0, Lcom/android/internal/os/BatteryStatsImpl$Uid$Proc;->mExcessivePower:Ljava/util/ArrayList;
 
@@ -191,7 +185,6 @@
 
 .method public addForegroundTimeLocked(J)V
     .locals 2
-    .param p1    # J
 
     iget-wide v0, p0, Lcom/android/internal/os/BatteryStatsImpl$Uid$Proc;->mForegroundTime:J
 
@@ -204,7 +197,6 @@
 
 .method public addSpeedStepTimes([J)V
     .locals 6
-    .param p1    # [J
 
     const/4 v3, 0x0
 
@@ -344,7 +336,6 @@
 
 .method public getExcessivePower(I)Landroid/os/BatteryStats$Uid$Proc$ExcessivePower;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/internal/os/BatteryStatsImpl$Uid$Proc;->mExcessivePower:Ljava/util/ArrayList;
 
@@ -369,7 +360,6 @@
 
 .method public getForegroundTime(I)J
     .locals 4
-    .param p1    # I
 
     const/4 v2, 0x1
 
@@ -408,7 +398,6 @@
 
 .method public getStarts(I)I
     .locals 2
-    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -447,7 +436,6 @@
 
 .method public getSystemTime(I)J
     .locals 4
-    .param p1    # I
 
     const/4 v2, 0x1
 
@@ -486,8 +474,6 @@
 
 .method public getTimeAtCpuSpeedStep(II)J
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     const-wide/16 v1, 0x0
 
@@ -515,7 +501,6 @@
 
 .method public getUserTime(I)J
     .locals 4
-    .param p1    # I
 
     const/4 v2, 0x1
 
@@ -566,16 +551,12 @@
 
 .method public plug(JJJ)V
     .locals 0
-    .param p1    # J
-    .param p3    # J
-    .param p5    # J
 
     return-void
 .end method
 
 .method readExcessivePowerFromParcelLocked(Landroid/os/Parcel;)Z
     .locals 6
-    .param p1    # Landroid/os/Parcel;
 
     const/4 v3, 0x1
 
@@ -669,7 +650,6 @@
 
 .method readFromParcelLocked(Landroid/os/Parcel;)V
     .locals 7
-    .param p1    # Landroid/os/Parcel;
 
     const-wide/16 v5, 0x0
 
@@ -814,9 +794,6 @@
 
 .method public unplug(JJJ)V
     .locals 2
-    .param p1    # J
-    .param p3    # J
-    .param p5    # J
 
     iget-wide v0, p0, Lcom/android/internal/os/BatteryStatsImpl$Uid$Proc;->mUserTime:J
 
@@ -839,7 +816,6 @@
 
 .method writeExcessivePowerToParcelLocked(Landroid/os/Parcel;)V
     .locals 5
-    .param p1    # Landroid/os/Parcel;
 
     iget-object v3, p0, Lcom/android/internal/os/BatteryStatsImpl$Uid$Proc;->mExcessivePower:Ljava/util/ArrayList;
 
@@ -893,7 +869,6 @@
 
 .method writeToParcelLocked(Landroid/os/Parcel;)V
     .locals 4
-    .param p1    # Landroid/os/Parcel;
 
     iget-wide v2, p0, Lcom/android/internal/os/BatteryStatsImpl$Uid$Proc;->mUserTime:J
 

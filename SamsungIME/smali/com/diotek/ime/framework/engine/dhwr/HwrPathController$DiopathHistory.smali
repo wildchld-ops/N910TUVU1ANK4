@@ -183,8 +183,6 @@
 
 .method public Push(II)Z
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/diotek/ime/framework/engine/dhwr/HwrPathController$DiopathHistory;->mStackUndo:Ljava/util/List;
 

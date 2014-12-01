@@ -28,7 +28,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/wifi/WifiScanModeActivity;)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/WifiScanModeActivity;
 
     invoke-direct {p0}, Lcom/android/settings/wifi/WifiScanModeActivity;->doNegativeClick()V
 
@@ -37,7 +36,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/wifi/WifiScanModeActivity;)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/WifiScanModeActivity;
 
     invoke-direct {p0}, Lcom/android/settings/wifi/WifiScanModeActivity;->doPositiveClick()V
 
@@ -130,7 +128,6 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
@@ -239,7 +236,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onSaveInstanceState(Landroid/os/Bundle;)V
 

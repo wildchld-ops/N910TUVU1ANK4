@@ -18,7 +18,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -58,7 +57,6 @@
 
 .method public getConnectedDevices(I)Ljava/util/List;
     .locals 8
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -166,8 +164,6 @@
 
 .method public getConnectionState(Landroid/bluetooth/BluetoothDevice;I)I
     .locals 5
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
-    .param p2    # I
 
     const-string v3, "BluetoothManager"
 
@@ -215,8 +211,6 @@
 
 .method public getDevicesMatchingConnectionStates(I[I)Ljava/util/List;
     .locals 8
-    .param p1    # I
-    .param p2    # [I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I[I)",
@@ -314,8 +308,6 @@
 
 .method public openGattServer(Landroid/content/Context;Landroid/bluetooth/BluetoothGattServerCallback;)Landroid/bluetooth/BluetoothGattServer;
     .locals 8
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/bluetooth/BluetoothGattServerCallback;
 
     const/4 v5, 0x0
 

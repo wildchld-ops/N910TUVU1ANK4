@@ -55,8 +55,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/pm/PersonaManagerService;ILjava/util/Set;I)V
     .locals 3
-    .param p2    # I
-    .param p4    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -139,8 +137,6 @@
 
 .method private deletePackage(ILjava/lang/String;)Z
     .locals 5
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const-string v2, "PersonaManagerService"
 
@@ -293,7 +289,6 @@
 
 .method private setInstalledPkgList(ILjava/util/Set;)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -397,7 +392,6 @@
 
 .method private unInstallPackages(ILjava/util/Set;)V
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",

@@ -64,7 +64,6 @@
 # virtual methods
 .method public parse(Ljava/lang/String;)V
     .locals 21
-    .param p1    # Ljava/lang/String;
 
     const-string v18, "-->"
 

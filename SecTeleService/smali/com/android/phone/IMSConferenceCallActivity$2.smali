@@ -62,7 +62,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Landroid/view/View;->requestFocus()Z
+    invoke-virtual {v0}, Landroid/widget/AutoCompleteTextView;->requestFocus()Z
 
     iget-object v0, p0, Lcom/android/phone/IMSConferenceCallActivity$2;->this$0:Lcom/android/phone/IMSConferenceCallActivity;
 

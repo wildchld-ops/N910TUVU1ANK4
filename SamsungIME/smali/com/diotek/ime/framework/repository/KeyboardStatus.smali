@@ -366,7 +366,6 @@
 
 .method public static setAccuteState(Z)V
     .locals 1
-    .param p0    # Z
 
     sget-object v0, Lcom/diotek/ime/framework/repository/KeyboardStatus;->sInstance:Lcom/diotek/ime/framework/repository/KeyboardStatus;
 
@@ -388,7 +387,6 @@
 
 .method public static setFirstKeyboardChangeTap(Z)V
     .locals 1
-    .param p0    # Z
 
     sget-object v0, Lcom/diotek/ime/framework/repository/KeyboardStatus;->sInstance:Lcom/diotek/ime/framework/repository/KeyboardStatus;
 
@@ -410,7 +408,6 @@
 
 .method public static setFirstLanguageChangeTap(Z)V
     .locals 1
-    .param p0    # Z
 
     sget-object v0, Lcom/diotek/ime/framework/repository/KeyboardStatus;->sInstance:Lcom/diotek/ime/framework/repository/KeyboardStatus;
 
@@ -432,7 +429,6 @@
 
 .method public static setHardwareQwertyKeyInput(Z)V
     .locals 1
-    .param p0    # Z
 
     sget-object v0, Lcom/diotek/ime/framework/repository/KeyboardStatus;->sInstance:Lcom/diotek/ime/framework/repository/KeyboardStatus;
 
@@ -454,7 +450,6 @@
 
 .method public static setHoldDelay(I)V
     .locals 1
-    .param p0    # I
 
     sget-object v0, Lcom/diotek/ime/framework/repository/KeyboardStatus;->sInstance:Lcom/diotek/ime/framework/repository/KeyboardStatus;
 
@@ -476,7 +471,6 @@
 
 .method public static setIfSetupWizardRunning(Z)V
     .locals 1
-    .param p0    # Z
 
     sget-object v0, Lcom/diotek/ime/framework/repository/KeyboardStatus;->sInstance:Lcom/diotek/ime/framework/repository/KeyboardStatus;
 
@@ -498,7 +492,6 @@
 
 .method public static setLetterMode(Z)V
     .locals 1
-    .param p0    # Z
 
     sget-object v0, Lcom/diotek/ime/framework/repository/KeyboardStatus;->sInstance:Lcom/diotek/ime/framework/repository/KeyboardStatus;
 
@@ -520,7 +513,6 @@
 
 .method public static setMMKeyFirstTap(Z)V
     .locals 1
-    .param p0    # Z
 
     sget-object v0, Lcom/diotek/ime/framework/repository/KeyboardStatus;->sInstance:Lcom/diotek/ime/framework/repository/KeyboardStatus;
 
@@ -542,7 +534,6 @@
 
 .method public static setPhoneticSpellLayout(Z)V
     .locals 1
-    .param p0    # Z
 
     sget-object v0, Lcom/diotek/ime/framework/repository/KeyboardStatus;->sInstance:Lcom/diotek/ime/framework/repository/KeyboardStatus;
 

@@ -90,8 +90,6 @@
 
 .method static synthetic access$000(Landroid/os/Message;Landroid/os/Parcel;)V
     .locals 0
-    .param p0    # Landroid/os/Message;
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0, p1}, Landroid/os/Message;->readFromParcel(Landroid/os/Parcel;)V
 
@@ -155,7 +153,6 @@
 
 .method public static obtain(Landroid/os/Handler;)Landroid/os/Message;
     .locals 1
-    .param p0    # Landroid/os/Handler;
 
     invoke-static {}, Landroid/os/Message;->obtain()Landroid/os/Message;
 
@@ -168,8 +165,6 @@
 
 .method public static obtain(Landroid/os/Handler;I)Landroid/os/Message;
     .locals 1
-    .param p0    # Landroid/os/Handler;
-    .param p1    # I
 
     invoke-static {}, Landroid/os/Message;->obtain()Landroid/os/Message;
 
@@ -184,10 +179,6 @@
 
 .method public static obtain(Landroid/os/Handler;III)Landroid/os/Message;
     .locals 1
-    .param p0    # Landroid/os/Handler;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     invoke-static {}, Landroid/os/Message;->obtain()Landroid/os/Message;
 
@@ -206,11 +197,6 @@
 
 .method public static obtain(Landroid/os/Handler;IIILjava/lang/Object;)Landroid/os/Message;
     .locals 1
-    .param p0    # Landroid/os/Handler;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/Object;
 
     invoke-static {}, Landroid/os/Message;->obtain()Landroid/os/Message;
 
@@ -231,9 +217,6 @@
 
 .method public static obtain(Landroid/os/Handler;ILjava/lang/Object;)Landroid/os/Message;
     .locals 1
-    .param p0    # Landroid/os/Handler;
-    .param p1    # I
-    .param p2    # Ljava/lang/Object;
 
     invoke-static {}, Landroid/os/Message;->obtain()Landroid/os/Message;
 
@@ -250,8 +233,6 @@
 
 .method public static obtain(Landroid/os/Handler;Ljava/lang/Runnable;)Landroid/os/Message;
     .locals 1
-    .param p0    # Landroid/os/Handler;
-    .param p1    # Ljava/lang/Runnable;
 
     invoke-static {}, Landroid/os/Message;->obtain()Landroid/os/Message;
 
@@ -266,7 +247,6 @@
 
 .method public static obtain(Landroid/os/Message;)Landroid/os/Message;
     .locals 3
-    .param p0    # Landroid/os/Message;
 
     invoke-static {}, Landroid/os/Message;->obtain()Landroid/os/Message;
 
@@ -318,7 +298,6 @@
 
 .method private readFromParcel(Landroid/os/Parcel;)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
@@ -416,7 +395,6 @@
 
 .method public copyFrom(Landroid/os/Message;)V
     .locals 1
-    .param p1    # Landroid/os/Message;
 
     iget v0, p1, Landroid/os/Message;->flags:I
 
@@ -635,7 +613,6 @@
 
 .method public setAsynchronous(Z)V
     .locals 1
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -660,7 +637,6 @@
 
 .method public setData(Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     iput-object p1, p0, Landroid/os/Message;->data:Landroid/os/Bundle;
 
@@ -669,7 +645,6 @@
 
 .method public setTarget(Landroid/os/Handler;)V
     .locals 0
-    .param p1    # Landroid/os/Handler;
 
     iput-object p1, p0, Landroid/os/Message;->target:Landroid/os/Handler;
 
@@ -692,7 +667,6 @@
 
 .method toString(J)Ljava/lang/String;
     .locals 3
-    .param p1    # J
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -824,8 +798,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 4
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v2, p0, Landroid/os/Message;->callback:Ljava/lang/Runnable;
 

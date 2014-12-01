@@ -27,14 +27,12 @@
 # virtual methods
 .method public onCoverAttachStateChanged(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method public onCoverSwitchStateChanged(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method

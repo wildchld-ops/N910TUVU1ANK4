@@ -112,9 +112,6 @@
 
 .method private static final clamp(III)I
     .locals 0
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
 
     if-ge p0, p1, :cond_0
 
@@ -136,7 +133,6 @@
 
 .method private static extractSpannedStrings(Ljava/lang/CharSequence;)Ljava/util/List;
     .locals 11
-    .param p0    # Ljava/lang/CharSequence;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -252,7 +248,6 @@
 
 .method private static getQuestionMarksInParens(I)Ljava/lang/String;
     .locals 4
-    .param p0    # I
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -300,7 +295,6 @@
 
 .method private hasStarredContact(Landroid/os/Bundle;)Z
     .locals 16
-    .param p1    # Landroid/os/Bundle;
 
     if-nez p1, :cond_1
 
@@ -594,7 +588,6 @@
 
 .method private static priorityBumpMap(I)I
     .locals 8
-    .param p0    # I
 
     const/16 v0, 0xa
 
@@ -659,8 +652,6 @@
 # virtual methods
 .method public getScore(Landroid/app/Notification;I)I
     .locals 3
-    .param p1    # Landroid/app/Notification;
-    .param p2    # I
 
     if-eqz p1, :cond_0
 
@@ -695,7 +686,6 @@
 
 .method public initialize(Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x1
 

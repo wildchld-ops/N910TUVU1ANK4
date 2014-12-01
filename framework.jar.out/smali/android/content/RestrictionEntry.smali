@@ -62,7 +62,6 @@
 
 .method public constructor <init>(Landroid/os/Parcel;)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -119,8 +118,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -137,8 +134,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Z)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -155,8 +150,6 @@
 
 .method public constructor <init>(Ljava/lang/String;[Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -173,8 +166,6 @@
 
 .method private equalArrays([Ljava/lang/String;[Ljava/lang/String;)Z
     .locals 4
-    .param p1    # [Ljava/lang/String;
-    .param p2    # [Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -218,7 +209,6 @@
 
 .method private readArray(Landroid/os/Parcel;)[Ljava/lang/String;
     .locals 4
-    .param p1    # Landroid/os/Parcel;
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
@@ -247,8 +237,6 @@
 
 .method private writeArray(Landroid/os/Parcel;[Ljava/lang/String;)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # [Ljava/lang/String;
 
     if-nez p2, :cond_1
 
@@ -292,7 +280,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 5
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x1
 
@@ -525,7 +512,6 @@
 
 .method public setAllSelectedStrings([Ljava/lang/String;)V
     .locals 0
-    .param p1    # [Ljava/lang/String;
 
     iput-object p1, p0, Landroid/content/RestrictionEntry;->currentValues:[Ljava/lang/String;
 
@@ -534,8 +520,6 @@
 
 .method public setChoiceEntries(Landroid/content/Context;I)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -552,7 +536,6 @@
 
 .method public setChoiceEntries([Ljava/lang/String;)V
     .locals 0
-    .param p1    # [Ljava/lang/String;
 
     iput-object p1, p0, Landroid/content/RestrictionEntry;->choices:[Ljava/lang/String;
 
@@ -561,8 +544,6 @@
 
 .method public setChoiceValues(Landroid/content/Context;I)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -579,7 +560,6 @@
 
 .method public setChoiceValues([Ljava/lang/String;)V
     .locals 0
-    .param p1    # [Ljava/lang/String;
 
     iput-object p1, p0, Landroid/content/RestrictionEntry;->values:[Ljava/lang/String;
 
@@ -588,7 +568,6 @@
 
 .method public setDescription(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/content/RestrictionEntry;->description:Ljava/lang/String;
 
@@ -597,7 +576,6 @@
 
 .method public setSelectedState(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-static {p1}, Ljava/lang/Boolean;->toString(Z)Ljava/lang/String;
 
@@ -610,7 +588,6 @@
 
 .method public setSelectedString(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/content/RestrictionEntry;->currentValue:Ljava/lang/String;
 
@@ -619,7 +596,6 @@
 
 .method public setTitle(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/content/RestrictionEntry;->title:Ljava/lang/String;
 
@@ -628,7 +604,6 @@
 
 .method public setType(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/content/RestrictionEntry;->type:I
 
@@ -693,8 +668,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget v0, p0, Landroid/content/RestrictionEntry;->type:I
 

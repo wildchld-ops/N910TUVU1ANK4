@@ -616,8 +616,6 @@
 
 .method private constructor <init>(Ljava/lang/String;III)V
     .locals 0
-    .param p3    # I
-    .param p4    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II)V"
@@ -635,7 +633,6 @@
 
 .method public static valueOf(Ljava/lang/String;)Landroid/renderscript/Element$DataType;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-class v0, Landroid/renderscript/Element$DataType;
 

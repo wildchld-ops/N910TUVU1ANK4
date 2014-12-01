@@ -59,7 +59,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/safetyzone/SafetyZoneSettings;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/safetyzone/SafetyZoneSettings;
 
     invoke-virtual {p0}, Lcom/android/settings/SettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -78,7 +77,6 @@
 
 .method static synthetic access$1000(Lcom/android/settings/safetyzone/SafetyZoneSettings;)V
     .locals 0
-    .param p0    # Lcom/android/settings/safetyzone/SafetyZoneSettings;
 
     invoke-direct {p0}, Lcom/android/settings/safetyzone/SafetyZoneSettings;->showSafetyZoneEnableDialog()V
 
@@ -87,7 +85,6 @@
 
 .method static synthetic access$102(I)I
     .locals 0
-    .param p0    # I
 
     sput p0, Lcom/android/settings/safetyzone/SafetyZoneSettings;->mEditPosition:I
 
@@ -96,7 +93,6 @@
 
 .method static synthetic access$1100(Lcom/android/settings/safetyzone/SafetyZoneSettings;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/safetyzone/SafetyZoneSettings;
 
     invoke-virtual {p0}, Lcom/android/settings/SettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -107,7 +103,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/safetyzone/SafetyZoneSettings;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/android/settings/safetyzone/SafetyZoneSettings;
 
     iget-object v0, p0, Lcom/android/settings/safetyzone/SafetyZoneSettings;->mEditName:Landroid/widget/TextView;
 
@@ -116,7 +111,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/safetyzone/SafetyZoneSettings;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/safetyzone/SafetyZoneSettings;
 
     invoke-direct {p0}, Lcom/android/settings/safetyzone/SafetyZoneSettings;->updateAccessPointList()Z
 
@@ -127,7 +121,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/safetyzone/SafetyZoneSettings;)Landroid/content/Intent;
     .locals 1
-    .param p0    # Lcom/android/settings/safetyzone/SafetyZoneSettings;
 
     iget-object v0, p0, Lcom/android/settings/safetyzone/SafetyZoneSettings;->apData:Landroid/content/Intent;
 
@@ -136,8 +129,6 @@
 
 .method static synthetic access$402(Lcom/android/settings/safetyzone/SafetyZoneSettings;Landroid/content/Intent;)Landroid/content/Intent;
     .locals 0
-    .param p0    # Lcom/android/settings/safetyzone/SafetyZoneSettings;
-    .param p1    # Landroid/content/Intent;
 
     iput-object p1, p0, Lcom/android/settings/safetyzone/SafetyZoneSettings;->apData:Landroid/content/Intent;
 
@@ -146,7 +137,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/safetyzone/SafetyZoneSettings;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/safetyzone/SafetyZoneSettings;
 
     invoke-virtual {p0}, Lcom/android/settings/SettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -157,7 +147,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/safetyzone/SafetyZoneSettings;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/safetyzone/SafetyZoneSettings;
 
     invoke-virtual {p0}, Lcom/android/settings/SettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -168,7 +157,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/safetyzone/SafetyZoneSettings;)Landroid/widget/Switch;
     .locals 1
-    .param p0    # Lcom/android/settings/safetyzone/SafetyZoneSettings;
 
     iget-object v0, p0, Lcom/android/settings/safetyzone/SafetyZoneSettings;->mActionBarSwitch:Landroid/widget/Switch;
 
@@ -177,7 +165,6 @@
 
 .method static synthetic access$800(Lcom/android/settings/safetyzone/SafetyZoneSettings;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/safetyzone/SafetyZoneSettings;
 
     invoke-virtual {p0}, Lcom/android/settings/SettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -188,7 +175,6 @@
 
 .method static synthetic access$900(Lcom/android/settings/safetyzone/SafetyZoneSettings;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/safetyzone/SafetyZoneSettings;
 
     invoke-virtual {p0}, Lcom/android/settings/SettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -706,7 +692,6 @@
 # virtual methods
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 8
-    .param p1    # Landroid/os/Bundle;
 
     const/16 v6, 0x10
 
@@ -797,9 +782,6 @@
 
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 15
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const-string v10, "SafetyZoneSettings"
 
@@ -1462,8 +1444,6 @@
 
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 9
-    .param p1    # Landroid/widget/CompoundButton;
-    .param p2    # Z
 
     const/4 v4, 0x1
 
@@ -2183,7 +2163,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 6
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v5, 0x1
 
@@ -2307,9 +2286,6 @@
 
 .method public onCreateContextMenu(Landroid/view/ContextMenu;Landroid/view/View;Landroid/view/ContextMenu$ContextMenuInfo;)V
     .locals 4
-    .param p1    # Landroid/view/ContextMenu;
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ContextMenu$ContextMenuInfo;
 
     const/4 v3, 0x0
 
@@ -2367,8 +2343,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
     .locals 3
-    .param p1    # Landroid/view/Menu;
-    .param p2    # Landroid/view/MenuInflater;
 
     const/4 v2, 0x0
 
@@ -2461,8 +2435,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 9
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     const/4 v6, 0x0
 
@@ -2680,7 +2652,6 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)V
     .locals 6
-    .param p1    # Landroid/view/Menu;
 
     const/4 v5, 0x0
 

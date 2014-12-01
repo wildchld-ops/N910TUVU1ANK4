@@ -32,7 +32,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -338,7 +337,6 @@
 
 .method public setReferenceCounted(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/os/UpdateLock;->mRefCounted:Z
 

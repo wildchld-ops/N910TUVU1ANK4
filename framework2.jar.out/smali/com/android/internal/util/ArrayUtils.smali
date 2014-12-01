@@ -95,8 +95,6 @@
 
 .method public static appendInt([II)[I
     .locals 5
-    .param p0    # [I
-    .param p1    # I
 
     const/4 v4, 0x0
 
@@ -144,8 +142,6 @@
 
 .method public static contains([II)Z
     .locals 5
-    .param p0    # [I
-    .param p1    # I
 
     move-object v0, p0
 
@@ -323,9 +319,6 @@
 
 .method public static equals([B[BI)Z
     .locals 5
-    .param p0    # [B
-    .param p1    # [B
-    .param p2    # I
 
     const/4 v1, 0x1
 
@@ -388,7 +381,6 @@
 
 .method public static idealBooleanArraySize(I)I
     .locals 1
-    .param p0    # I
 
     invoke-static {p0}, Lcom/android/internal/util/ArrayUtils;->idealByteArraySize(I)I
 
@@ -399,7 +391,6 @@
 
 .method public static idealByteArraySize(I)I
     .locals 3
-    .param p0    # I
 
     const/4 v2, 0x1
 
@@ -431,7 +422,6 @@
 
 .method public static idealCharArraySize(I)I
     .locals 1
-    .param p0    # I
 
     mul-int/lit8 v0, p0, 0x2
 
@@ -446,7 +436,6 @@
 
 .method public static idealFloatArraySize(I)I
     .locals 1
-    .param p0    # I
 
     mul-int/lit8 v0, p0, 0x4
 
@@ -461,7 +450,6 @@
 
 .method public static idealIntArraySize(I)I
     .locals 1
-    .param p0    # I
 
     mul-int/lit8 v0, p0, 0x4
 
@@ -476,7 +464,6 @@
 
 .method public static idealLongArraySize(I)I
     .locals 1
-    .param p0    # I
 
     mul-int/lit8 v0, p0, 0x8
 
@@ -491,7 +478,6 @@
 
 .method public static idealObjectArraySize(I)I
     .locals 1
-    .param p0    # I
 
     mul-int/lit8 v0, p0, 0x4
 
@@ -506,7 +492,6 @@
 
 .method public static idealShortArraySize(I)I
     .locals 1
-    .param p0    # I
 
     mul-int/lit8 v0, p0, 0x2
 
@@ -642,8 +627,6 @@
 
 .method public static removeInt([II)[I
     .locals 5
-    .param p0    # [I
-    .param p1    # I
 
     const/4 v4, 0x0
 
@@ -703,7 +686,6 @@
 
 .method public static total([J)J
     .locals 7
-    .param p0    # [J
 
     const-wide/16 v3, 0x0
 

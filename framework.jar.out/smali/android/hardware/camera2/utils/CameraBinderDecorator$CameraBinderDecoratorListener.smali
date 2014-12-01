@@ -28,7 +28,6 @@
 
 .method synthetic constructor <init>(Landroid/hardware/camera2/utils/CameraBinderDecorator$1;)V
     .locals 0
-    .param p1    # Landroid/hardware/camera2/utils/CameraBinderDecorator$1;
 
     invoke-direct {p0}, Landroid/hardware/camera2/utils/CameraBinderDecorator$CameraBinderDecoratorListener;-><init>()V
 
@@ -39,9 +38,6 @@
 # virtual methods
 .method public onAfterInvocation(Ljava/lang/reflect/Method;[Ljava/lang/Object;Ljava/lang/Object;)V
     .locals 6
-    .param p1    # Ljava/lang/reflect/Method;
-    .param p2    # [Ljava/lang/Object;
-    .param p3    # Ljava/lang/Object;
 
     const/4 v4, 0x2
 
@@ -177,17 +173,12 @@
 
 .method public onBeforeInvocation(Ljava/lang/reflect/Method;[Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/reflect/Method;
-    .param p2    # [Ljava/lang/Object;
 
     return-void
 .end method
 
 .method public onCatchException(Ljava/lang/reflect/Method;[Ljava/lang/Object;Ljava/lang/Throwable;)Z
     .locals 3
-    .param p1    # Ljava/lang/reflect/Method;
-    .param p2    # [Ljava/lang/Object;
-    .param p3    # Ljava/lang/Throwable;
 
     instance-of v0, p3, Landroid/os/DeadObjectException;
 
@@ -224,8 +215,6 @@
 
 .method public onFinally(Ljava/lang/reflect/Method;[Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/reflect/Method;
-    .param p2    # [Ljava/lang/Object;
 
     return-void
 .end method

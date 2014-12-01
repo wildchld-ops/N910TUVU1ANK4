@@ -39,14 +39,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/display/OverlayDisplayAdapter;Landroid/os/IBinder;Ljava/lang/String;IIFIZLandroid/graphics/SurfaceTexture;)V
     .locals 0
-    .param p2    # Landroid/os/IBinder;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
-    .param p5    # I
-    .param p6    # F
-    .param p7    # I
-    .param p8    # Z
-    .param p9    # Landroid/graphics/SurfaceTexture;
 
     iput-object p1, p0, Lcom/android/server/display/OverlayDisplayAdapter$OverlayDisplayDevice;->this$0:Lcom/android/server/display/OverlayDisplayAdapter;
 

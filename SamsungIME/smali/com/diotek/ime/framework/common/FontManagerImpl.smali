@@ -76,8 +76,6 @@
 
 .method private setFont(Ljava/lang/String;Landroid/graphics/Typeface;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/graphics/Typeface;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/common/FontManagerImpl;->mTypefaceFontSet:Ljava/util/HashMap;
 
@@ -90,7 +88,6 @@
 # virtual methods
 .method public addWordIntoTypoList(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     return-void
 .end method
@@ -103,8 +100,6 @@
 
 .method public getFont(Ljava/lang/String;Landroid/graphics/Typeface;)Landroid/graphics/Typeface;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/graphics/Typeface;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/common/FontManagerImpl;->mTypefaceFontSet:Ljava/util/HashMap;
 
@@ -147,7 +142,6 @@
 
 .method public initialize(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     const-string v0, "DROIDSANS_BOLD"
 
@@ -259,7 +253,6 @@
 
 .method public isContainInTypoList(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -268,7 +261,6 @@
 
 .method public refreshContextBuffer(Z)I
     .locals 1
-    .param p1    # Z
 
     const/4 v0, -0x1
 

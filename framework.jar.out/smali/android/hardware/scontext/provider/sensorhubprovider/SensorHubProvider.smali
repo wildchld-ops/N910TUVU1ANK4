@@ -18,10 +18,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/hardware/scontext/provider/EventListener;II)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/hardware/scontext/provider/EventListener;
-    .param p3    # I
-    .param p4    # I
 
     invoke-direct {p0, p1}, Landroid/hardware/scontext/provider/Provider;-><init>(Landroid/content/Context;)V
 
@@ -62,7 +58,6 @@
 
 .method static synthetic access$000(Landroid/hardware/scontext/provider/sensorhubprovider/SensorHubProvider;)Landroid/hardware/scontext/provider/EventListener;
     .locals 1
-    .param p0    # Landroid/hardware/scontext/provider/sensorhubprovider/SensorHubProvider;
 
     iget-object v0, p0, Landroid/hardware/scontext/provider/sensorhubprovider/SensorHubProvider;->mListener:Landroid/hardware/scontext/provider/EventListener;
 
@@ -117,7 +112,6 @@
 
 .method public parse(Landroid/os/Bundle;)Landroid/os/Bundle;
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     return-object p1
 .end method
@@ -144,16 +138,12 @@
 
 .method public setProperty(ILandroid/os/Bundle;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     return-void
 .end method
 
 .method public setReferenceData(I[B)Z
     .locals 1
-    .param p1    # I
-    .param p2    # [B
 
     const/4 v0, 0x0
 

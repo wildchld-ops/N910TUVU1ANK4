@@ -34,7 +34,6 @@
 # direct methods
 .method constructor <init>(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -57,7 +56,6 @@
 # virtual methods
 .method addInstance(I)Z
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/launcher2/SurfaceWidgetPackageManager$SurfaceWidgetInfoInstances;->instanceExists(I)Z
 
@@ -139,7 +137,6 @@
 
 .method instanceExists(I)Z
     .locals 3
-    .param p1    # I
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -168,7 +165,6 @@
 
 .method removeInstance(I)Z
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/launcher2/SurfaceWidgetPackageManager$SurfaceWidgetInfoInstances;->mInstances:Ljava/util/List;
 

@@ -60,7 +60,6 @@
 # direct methods
 .method constructor <init>(I)V
     .locals 2
-    .param p1    # I
 
     const/4 v1, -0x1
 
@@ -95,9 +94,6 @@
 
 .method private setDescription(Landroid/content/Context;II)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v5, 0x1
 
@@ -172,8 +168,6 @@
 # virtual methods
 .method public loadIcon(Landroid/content/Context;Lcom/android/settings/applications/RunningState;)Landroid/graphics/drawable/Drawable;
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/settings/applications/RunningState;
 
     iget-object v1, p0, Lcom/android/settings/applications/RunningState$MergedItem;->mUser:Lcom/android/settings/applications/RunningState$UserState;
 
@@ -232,8 +226,6 @@
 
 .method update(Landroid/content/Context;Z)Z
     .locals 10
-    .param p1    # Landroid/content/Context;
-    .param p2    # Z
 
     iput-boolean p2, p0, Lcom/android/settings/applications/RunningState$BaseItem;->mBackground:Z
 
@@ -454,7 +446,6 @@
 
 .method updateSize(Landroid/content/Context;)Z
     .locals 9
-    .param p1    # Landroid/content/Context;
 
     const/4 v8, 0x0
 

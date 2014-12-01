@@ -23,7 +23,6 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/cocktailbar/CocktailBarManager;Lcom/samsung/android/cocktailbar/CocktailBarManager$ShowListener;)V
     .locals 0
-    .param p2    # Lcom/samsung/android/cocktailbar/CocktailBarManager$ShowListener;
 
     iput-object p1, p0, Lcom/samsung/android/cocktailbar/CocktailBarManager$CocktailBarShowDelegate;->this$0:Lcom/samsung/android/cocktailbar/CocktailBarManager;
 
@@ -38,7 +37,6 @@
 # virtual methods
 .method public onShown(Landroid/os/IBinder;)V
     .locals 1
-    .param p1    # Landroid/os/IBinder;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

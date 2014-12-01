@@ -219,7 +219,6 @@
 # virtual methods
 .method public addOperation(Landroid/content/UndoOperation;I)V
     .locals 4
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -331,7 +330,6 @@
 
 .method public beginUpdate(Ljava/lang/CharSequence;)V
     .locals 2
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v1, 0x0
 
@@ -374,7 +372,6 @@
 
 .method public commitState(Landroid/content/UndoOwner;)I
     .locals 4
-    .param p1    # Landroid/content/UndoOwner;
 
     const/4 v3, 0x0
 
@@ -456,7 +453,6 @@
 
 .method public countRedos([Landroid/content/UndoOwner;)I
     .locals 3
-    .param p1    # [Landroid/content/UndoOwner;
 
     if-nez p1, :cond_1
 
@@ -492,7 +488,6 @@
 
 .method public countUndos([Landroid/content/UndoOwner;)I
     .locals 3
-    .param p1    # [Landroid/content/UndoOwner;
 
     if-nez p1, :cond_1
 
@@ -560,8 +555,6 @@
 
 .method findNextState(Ljava/util/ArrayList;[Landroid/content/UndoOwner;I)I
     .locals 4
-    .param p2    # [Landroid/content/UndoOwner;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -623,8 +616,6 @@
 
 .method findPrevState(Ljava/util/ArrayList;[Landroid/content/UndoOwner;I)I
     .locals 4
-    .param p2    # [Landroid/content/UndoOwner;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -686,8 +677,6 @@
 
 .method public forgetRedos([Landroid/content/UndoOwner;I)I
     .locals 4
-    .param p1    # [Landroid/content/UndoOwner;
-    .param p2    # I
 
     if-gez p2, :cond_0
 
@@ -748,8 +737,6 @@
 
 .method public forgetUndos([Landroid/content/UndoOwner;I)I
     .locals 4
-    .param p1    # [Landroid/content/UndoOwner;
-    .param p2    # I
 
     if-gez p2, :cond_0
 
@@ -818,7 +805,6 @@
 
 .method public getLastOperation(I)Landroid/content/UndoOperation;
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -838,8 +824,6 @@
 
 .method public getLastOperation(Landroid/content/UndoOwner;I)Landroid/content/UndoOperation;
     .locals 1
-    .param p1    # Landroid/content/UndoOwner;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -861,8 +845,6 @@
 
 .method public getLastOperation(Ljava/lang/Class;Landroid/content/UndoOwner;I)Landroid/content/UndoOperation;
     .locals 4
-    .param p2    # Landroid/content/UndoOwner;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -968,8 +950,6 @@
 
 .method public getOwner(Ljava/lang/String;Ljava/lang/Object;)Landroid/content/UndoOwner;
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Object;
 
     if-nez p1, :cond_0
 
@@ -1086,7 +1066,6 @@
 
 .method public getRedoLabel([Landroid/content/UndoOwner;)Ljava/lang/CharSequence;
     .locals 2
-    .param p1    # [Landroid/content/UndoOwner;
 
     invoke-virtual {p0, p1}, Landroid/content/UndoManager;->getTopRedo([Landroid/content/UndoOwner;)Landroid/content/UndoManager$UndoState;
 
@@ -1109,7 +1088,6 @@
 
 .method getTopRedo([Landroid/content/UndoOwner;)Landroid/content/UndoManager$UndoState;
     .locals 4
-    .param p1    # [Landroid/content/UndoOwner;
 
     const/4 v1, 0x0
 
@@ -1149,7 +1127,6 @@
 
 .method getTopUndo([Landroid/content/UndoOwner;)Landroid/content/UndoManager$UndoState;
     .locals 4
-    .param p1    # [Landroid/content/UndoOwner;
 
     const/4 v1, 0x0
 
@@ -1189,7 +1166,6 @@
 
 .method public getUndoLabel([Landroid/content/UndoOwner;)Ljava/lang/CharSequence;
     .locals 2
-    .param p1    # [Landroid/content/UndoOwner;
 
     invoke-virtual {p0, p1}, Landroid/content/UndoManager;->getTopUndo([Landroid/content/UndoOwner;)Landroid/content/UndoManager$UndoState;
 
@@ -1220,7 +1196,6 @@
 
 .method public hasOperation(Landroid/content/UndoOwner;)Z
     .locals 2
-    .param p1    # Landroid/content/UndoOwner;
 
     iget-object v0, p0, Landroid/content/UndoManager;->mWorking:Landroid/content/UndoManager$UndoState;
 
@@ -1272,8 +1247,6 @@
 
 .method matchOwners(Landroid/content/UndoManager$UndoState;[Landroid/content/UndoOwner;)Z
     .locals 3
-    .param p1    # Landroid/content/UndoManager$UndoState;
-    .param p2    # [Landroid/content/UndoOwner;
 
     const/4 v1, 0x1
 
@@ -1311,8 +1284,6 @@
 
 .method public redo([Landroid/content/UndoOwner;I)I
     .locals 5
-    .param p1    # [Landroid/content/UndoOwner;
-    .param p2    # I
 
     iget-object v3, p0, Landroid/content/UndoManager;->mWorking:Landroid/content/UndoManager$UndoState;
 
@@ -1376,14 +1347,12 @@
 
 .method removeOwner(Landroid/content/UndoOwner;)V
     .locals 0
-    .param p1    # Landroid/content/UndoOwner;
 
     return-void
 .end method
 
 .method public restoreInstanceState(Landroid/os/Parcelable;)V
     .locals 8
-    .param p1    # Landroid/os/Parcelable;
 
     const/4 v7, 0x0
 
@@ -1468,7 +1437,6 @@
 
 .method restoreOwner(Landroid/os/Parcel;)Landroid/content/UndoOwner;
     .locals 4
-    .param p1    # Landroid/os/Parcel;
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
@@ -1626,8 +1594,6 @@
 
 .method saveOwner(Landroid/content/UndoOwner;Landroid/os/Parcel;)V
     .locals 2
-    .param p1    # Landroid/content/UndoOwner;
-    .param p2    # Landroid/os/Parcel;
 
     iget v0, p1, Landroid/content/UndoOwner;->mStateSeq:I
 
@@ -1670,7 +1636,6 @@
 
 .method public setHistorySize(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -1704,7 +1669,6 @@
 
 .method public setUndoLabel(Ljava/lang/CharSequence;)V
     .locals 2
-    .param p1    # Ljava/lang/CharSequence;
 
     iget-object v0, p0, Landroid/content/UndoManager;->mWorking:Landroid/content/UndoManager$UndoState;
 
@@ -1728,7 +1692,6 @@
 
 .method public suggestUndoLabel(Ljava/lang/CharSequence;)V
     .locals 2
-    .param p1    # Ljava/lang/CharSequence;
 
     iget-object v0, p0, Landroid/content/UndoManager;->mWorking:Landroid/content/UndoManager$UndoState;
 
@@ -1752,8 +1715,6 @@
 
 .method public uncommitState(ILandroid/content/UndoOwner;)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/content/UndoOwner;
 
     const/4 v2, 0x1
 
@@ -1827,8 +1788,6 @@
 
 .method public undo([Landroid/content/UndoOwner;I)I
     .locals 6
-    .param p1    # [Landroid/content/UndoOwner;
-    .param p2    # I
 
     iget-object v4, p0, Landroid/content/UndoManager;->mWorking:Landroid/content/UndoManager$UndoState;
 

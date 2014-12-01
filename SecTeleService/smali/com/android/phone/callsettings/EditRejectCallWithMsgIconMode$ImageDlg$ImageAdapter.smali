@@ -90,7 +90,7 @@
 
     const-string v3, "layout_inflater"
 
-    invoke-virtual {v2, v3}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v2, v3}, Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 

@@ -97,7 +97,6 @@
 # virtual methods
 .method public addMovement(Landroid/view/MotionEvent;)V
     .locals 6
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/PanelView$FlingTracker;->mEventBuf:Ljava/util/ArrayDeque;
 
@@ -139,7 +138,6 @@
 
 .method public computeCurrentVelocity(J)V
     .locals 13
-    .param p1    # J
 
     const/4 v9, 0x0
 

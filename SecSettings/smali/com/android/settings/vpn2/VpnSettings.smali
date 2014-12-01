@@ -105,8 +105,6 @@
 
 .method static synthetic access$000(Landroid/security/KeyStore;[I)Ljava/util/List;
     .locals 1
-    .param p0    # Landroid/security/KeyStore;
-    .param p1    # [I
 
     invoke-static {p0, p1}, Lcom/android/settings/vpn2/VpnSettings;->loadVpnProfiles(Landroid/security/KeyStore;[I)Ljava/util/List;
 
@@ -117,7 +115,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/vpn2/VpnSettings;)Ljava/util/HashMap;
     .locals 1
-    .param p0    # Lcom/android/settings/vpn2/VpnSettings;
 
     iget-object v0, p0, Lcom/android/settings/vpn2/VpnSettings;->mPreferences:Ljava/util/HashMap;
 
@@ -126,8 +123,6 @@
 
 .method static synthetic access$302(Lcom/android/settings/vpn2/VpnSettings;Ljava/util/HashMap;)Ljava/util/HashMap;
     .locals 0
-    .param p0    # Lcom/android/settings/vpn2/VpnSettings;
-    .param p1    # Ljava/util/HashMap;
 
     iput-object p1, p0, Lcom/android/settings/vpn2/VpnSettings;->mPreferences:Ljava/util/HashMap;
 
@@ -166,7 +161,6 @@
 
 .method private connect(Lcom/android/internal/net/VpnProfile;)V
     .locals 4
-    .param p1    # Lcom/android/internal/net/VpnProfile;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;
@@ -205,7 +199,6 @@
 
 .method private copyString(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p1}, Ljava/lang/String;->toCharArray()[C
 
@@ -236,7 +229,6 @@
 
 .method private disconnect(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/settings/vpn2/VpnSettings;->mInfo:Lcom/android/internal/net/LegacyVpnInfo;
 
@@ -275,8 +267,6 @@
 
 .method private static varargs loadVpnProfiles(Landroid/security/KeyStore;[I)Ljava/util/List;
     .locals 10
-    .param p0    # Landroid/security/KeyStore;
-    .param p1    # [I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -415,7 +405,6 @@
 
 .method private static wipeByteArray([B)V
     .locals 2
-    .param p0    # [B
 
     const/4 v0, 0x0
 
@@ -450,7 +439,6 @@
 
 .method public handleMessage(Landroid/os/Message;)Z
     .locals 6
-    .param p1    # Landroid/os/Message;
 
     const/4 v5, 0x0
 
@@ -542,8 +530,6 @@
 
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 15
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     const/4 v11, -0x1
 
@@ -918,7 +904,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 2
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -949,7 +934,6 @@
 
 .method public onContextItemSelected(Landroid/view/MenuItem;)Z
     .locals 6
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v2, 0x1
 
@@ -1144,7 +1128,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 7
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -1238,9 +1221,6 @@
 
 .method public onCreateContextMenu(Landroid/view/ContextMenu;Landroid/view/View;Landroid/view/ContextMenu$ContextMenuInfo;)V
     .locals 7
-    .param p1    # Landroid/view/ContextMenu;
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ContextMenu$ContextMenuInfo;
 
     const v6, 0x7f090c2a
 
@@ -1334,8 +1314,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
     .locals 1
-    .param p1    # Landroid/view/Menu;
-    .param p2    # Landroid/view/MenuInflater;
 
     invoke-super {p0, p1, p2}, Lcom/android/settings/SettingsPreferenceFragment;->onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
 
@@ -1348,9 +1326,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 6
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const/4 v5, 0x0
 
@@ -1485,7 +1460,6 @@
 
 .method public onDismiss(Landroid/content/DialogInterface;)V
     .locals 3
-    .param p1    # Landroid/content/DialogInterface;
 
     instance-of v1, p1, Lcom/android/settings/vpn2/VpnDialog;
 
@@ -1513,7 +1487,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 8
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v0, 0x0
 
@@ -1676,7 +1649,6 @@
 
 .method public onPreferenceClick(Landroid/preference/Preference;)Z
     .locals 8
-    .param p1    # Landroid/preference/Preference;
 
     const/4 v7, 0x1
 
@@ -1814,7 +1786,6 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)V
     .locals 4
-    .param p1    # Landroid/view/Menu;
 
     const v3, 0x7f0b07ee
 
@@ -2185,7 +2156,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     iget-object v1, p0, Lcom/android/settings/vpn2/VpnSettings;->mDialog:Lcom/android/settings/vpn2/VpnDialog;
 

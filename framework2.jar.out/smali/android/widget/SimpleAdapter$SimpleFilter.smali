@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Landroid/widget/SimpleAdapter;Landroid/widget/SimpleAdapter$1;)V
     .locals 0
-    .param p1    # Landroid/widget/SimpleAdapter;
-    .param p2    # Landroid/widget/SimpleAdapter$1;
 
     invoke-direct {p0, p1}, Landroid/widget/SimpleAdapter$SimpleFilter;-><init>(Landroid/widget/SimpleAdapter;)V
 
@@ -43,7 +41,6 @@
 # virtual methods
 .method protected performFiltering(Ljava/lang/CharSequence;)Landroid/widget/Filter$FilterResults;
     .locals 19
-    .param p1    # Ljava/lang/CharSequence;
 
     new-instance v10, Landroid/widget/Filter$FilterResults;
 
@@ -264,8 +261,6 @@
 
 .method protected publishResults(Ljava/lang/CharSequence;Landroid/widget/Filter$FilterResults;)V
     .locals 2
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Landroid/widget/Filter$FilterResults;
 
     iget-object v1, p0, Landroid/widget/SimpleAdapter$SimpleFilter;->this$0:Landroid/widget/SimpleAdapter;
 

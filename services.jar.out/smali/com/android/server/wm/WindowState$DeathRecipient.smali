@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Lcom/android/server/wm/WindowState;Lcom/android/server/wm/WindowState$1;)V
     .locals 0
-    .param p1    # Lcom/android/server/wm/WindowState;
-    .param p2    # Lcom/android/server/wm/WindowState$1;
 
     invoke-direct {p0, p1}, Lcom/android/server/wm/WindowState$DeathRecipient;-><init>(Lcom/android/server/wm/WindowState;)V
 

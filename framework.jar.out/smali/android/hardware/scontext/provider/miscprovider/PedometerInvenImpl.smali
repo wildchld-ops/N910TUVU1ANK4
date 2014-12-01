@@ -59,8 +59,6 @@
 # direct methods
 .method constructor <init>(Landroid/content/Context;Landroid/hardware/scontext/provider/EventListener;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/hardware/scontext/provider/EventListener;
 
     const/4 v4, 0x0
 
@@ -183,7 +181,6 @@
 
 .method static synthetic access$100(Landroid/hardware/scontext/provider/miscprovider/PedometerInvenImpl;)Z
     .locals 1
-    .param p0    # Landroid/hardware/scontext/provider/miscprovider/PedometerInvenImpl;
 
     iget-boolean v0, p0, Landroid/hardware/scontext/provider/miscprovider/PedometerInvenImpl;->mIsStarted:Z
 
@@ -192,7 +189,6 @@
 
 .method static synthetic access$200(Landroid/hardware/scontext/provider/miscprovider/PedometerInvenImpl;)Ljava/lang/String;
     .locals 1
-    .param p0    # Landroid/hardware/scontext/provider/miscprovider/PedometerInvenImpl;
 
     iget-object v0, p0, Landroid/hardware/scontext/provider/miscprovider/PedometerInvenImpl;->mPrefix:Ljava/lang/String;
 
@@ -201,9 +197,6 @@
 
 .method static synthetic access$300(Landroid/hardware/scontext/provider/miscprovider/PedometerInvenImpl;Landroid/hardware/scontext/provider/miscprovider/PedometerInvenImpl$InterruptMode;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Landroid/hardware/scontext/provider/miscprovider/PedometerInvenImpl;
-    .param p1    # Landroid/hardware/scontext/provider/miscprovider/PedometerInvenImpl$InterruptMode;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Landroid/hardware/scontext/provider/miscprovider/PedometerInvenImpl;->parseCadence(Landroid/hardware/scontext/provider/miscprovider/PedometerInvenImpl$InterruptMode;Ljava/lang/String;)V
 
@@ -212,7 +205,6 @@
 
 .method static synthetic access$400(Landroid/hardware/scontext/provider/miscprovider/PedometerInvenImpl;)[J
     .locals 1
-    .param p0    # Landroid/hardware/scontext/provider/miscprovider/PedometerInvenImpl;
 
     iget-object v0, p0, Landroid/hardware/scontext/provider/miscprovider/PedometerInvenImpl;->mTimeStamp:[J
 
@@ -221,8 +213,6 @@
 
 .method static synthetic access$502(Landroid/hardware/scontext/provider/miscprovider/PedometerInvenImpl;Landroid/hardware/scontext/provider/miscprovider/PedometerInvenImpl$InterruptMode;)Landroid/hardware/scontext/provider/miscprovider/PedometerInvenImpl$InterruptMode;
     .locals 0
-    .param p0    # Landroid/hardware/scontext/provider/miscprovider/PedometerInvenImpl;
-    .param p1    # Landroid/hardware/scontext/provider/miscprovider/PedometerInvenImpl$InterruptMode;
 
     iput-object p1, p0, Landroid/hardware/scontext/provider/miscprovider/PedometerInvenImpl;->mPrevInterrupt:Landroid/hardware/scontext/provider/miscprovider/PedometerInvenImpl$InterruptMode;
 
@@ -231,12 +221,6 @@
 
 .method private getCalcultatedData(I[J[JIJ[J)Landroid/os/Bundle;
     .locals 35
-    .param p1    # I
-    .param p2    # [J
-    .param p3    # [J
-    .param p4    # I
-    .param p5    # J
-    .param p7    # [J
 
     new-instance v23, Landroid/os/Bundle;
 
@@ -756,8 +740,6 @@
 
 .method private parseCadence(Landroid/hardware/scontext/provider/miscprovider/PedometerInvenImpl$InterruptMode;Ljava/lang/String;)V
     .locals 35
-    .param p1    # Landroid/hardware/scontext/provider/miscprovider/PedometerInvenImpl$InterruptMode;
-    .param p2    # Ljava/lang/String;
 
     if-nez p2, :cond_1
 
@@ -1692,7 +1674,6 @@
 
 .method setLoggingMode(Z)V
     .locals 9
-    .param p1    # Z
 
     const/4 v7, 0x1
 
@@ -1931,9 +1912,6 @@
 
 .method setProperty(IDD)V
     .locals 6
-    .param p1    # I
-    .param p2    # D
-    .param p4    # D
 
     iget-object v0, p0, Landroid/hardware/scontext/provider/miscprovider/PedometerInvenImpl;->mPedometerEngine:Landroid/hardware/scontext/provider/miscprovider/lib/PedometerEngine;
 

@@ -47,8 +47,6 @@
 
 .method public static buildNameAndNumber(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     move-object v0, p1
 
@@ -103,7 +101,6 @@
 
 .method public static filterPhoneNumber(Ljava/lang/String;)Ljava/lang/String;
     .locals 6
-    .param p0    # Ljava/lang/String;
 
     if-nez p0, :cond_0
 
@@ -157,7 +154,6 @@
 
 .method public static isPhoneNumber(Ljava/lang/String;)Z
     .locals 6
-    .param p0    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -218,7 +214,6 @@
 
 .method public static isValid(Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/android/mms/ui/RecipientList$Recipient;->isPhoneNumber(Ljava/lang/String;)Z
 

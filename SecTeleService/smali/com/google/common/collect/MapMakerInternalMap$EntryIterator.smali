@@ -65,7 +65,7 @@
         }
     .end annotation
 
-    invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$HashIterator;->nextEntry()Lcom/google/common/collect/MapMakerInternalMap$WriteThroughEntry;
+    invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$EntryIterator;->nextEntry()Lcom/google/common/collect/MapMakerInternalMap$WriteThroughEntry;
 
     move-result-object v0
 

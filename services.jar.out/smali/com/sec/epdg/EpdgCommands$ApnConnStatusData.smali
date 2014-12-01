@@ -27,10 +27,6 @@
 # direct methods
 .method public constructor <init>(IZZLcom/sec/epdg/EpdgRilInterface$IWlanLinkProperties;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # Z
-    .param p4    # Lcom/sec/epdg/EpdgRilInterface$IWlanLinkProperties;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

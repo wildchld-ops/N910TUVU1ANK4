@@ -36,8 +36,6 @@
 # virtual methods
 .method public onActivityCreated(Landroid/app/Activity;Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/app/Activity;
-    .param p2    # Landroid/os/Bundle;
 
     const-string v0, "FingerprintManager"
 
@@ -50,7 +48,6 @@
 
 .method public onActivityDestroyed(Landroid/app/Activity;)V
     .locals 2
-    .param p1    # Landroid/app/Activity;
 
     const-string v0, "FingerprintManager"
 
@@ -87,7 +84,6 @@
 
 .method public onActivityPaused(Landroid/app/Activity;)V
     .locals 3
-    .param p1    # Landroid/app/Activity;
 
     const-string v0, "FingerprintManager"
 
@@ -132,7 +128,6 @@
 
 .method public onActivityResumed(Landroid/app/Activity;)V
     .locals 2
-    .param p1    # Landroid/app/Activity;
 
     const-string v0, "FingerprintManager"
 
@@ -145,8 +140,6 @@
 
 .method public onActivitySaveInstanceState(Landroid/app/Activity;Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/app/Activity;
-    .param p2    # Landroid/os/Bundle;
 
     const-string v0, "FingerprintManager"
 
@@ -159,7 +152,6 @@
 
 .method public onActivityStarted(Landroid/app/Activity;)V
     .locals 2
-    .param p1    # Landroid/app/Activity;
 
     const-string v0, "FingerprintManager"
 
@@ -172,7 +164,6 @@
 
 .method public onActivityStopped(Landroid/app/Activity;)V
     .locals 3
-    .param p1    # Landroid/app/Activity;
 
     const-string v0, "FingerprintManager"
 

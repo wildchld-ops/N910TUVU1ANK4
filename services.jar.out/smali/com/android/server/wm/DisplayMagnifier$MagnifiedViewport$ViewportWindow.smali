@@ -49,7 +49,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/wm/DisplayMagnifier$MagnifiedViewport;Landroid/content/Context;)V
     .locals 13
-    .param p2    # Landroid/content/Context;
 
     iput-object p1, p0, Lcom/android/server/wm/DisplayMagnifier$MagnifiedViewport$ViewportWindow;->this$1:Lcom/android/server/wm/DisplayMagnifier$MagnifiedViewport;
 
@@ -495,7 +494,6 @@
 
 .method public invalidate(Landroid/graphics/Rect;)V
     .locals 1
-    .param p1    # Landroid/graphics/Rect;
 
     if-eqz p1, :cond_0
 
@@ -545,7 +543,6 @@
 
 .method public setAlpha(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/wm/DisplayMagnifier$MagnifiedViewport$ViewportWindow;->this$1:Lcom/android/server/wm/DisplayMagnifier$MagnifiedViewport;
 
@@ -593,7 +590,6 @@
 
 .method public setBounds(Landroid/graphics/Region;)V
     .locals 2
-    .param p1    # Landroid/graphics/Region;
 
     iget-object v0, p0, Lcom/android/server/wm/DisplayMagnifier$MagnifiedViewport$ViewportWindow;->this$1:Lcom/android/server/wm/DisplayMagnifier$MagnifiedViewport;
 
@@ -647,8 +643,6 @@
 
 .method public setShown(ZZ)V
     .locals 4
-    .param p1    # Z
-    .param p2    # Z
 
     iget-object v1, p0, Lcom/android/server/wm/DisplayMagnifier$MagnifiedViewport$ViewportWindow;->this$1:Lcom/android/server/wm/DisplayMagnifier$MagnifiedViewport;
 

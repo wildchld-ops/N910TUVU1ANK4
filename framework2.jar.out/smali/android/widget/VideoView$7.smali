@@ -36,10 +36,6 @@
 # virtual methods
 .method public surfaceChanged(Landroid/view/SurfaceHolder;III)V
     .locals 6
-    .param p1    # Landroid/view/SurfaceHolder;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/4 v2, 0x1
 
@@ -144,7 +140,6 @@
 
 .method public surfaceCreated(Landroid/view/SurfaceHolder;)V
     .locals 1
-    .param p1    # Landroid/view/SurfaceHolder;
 
     iget-object v0, p0, Landroid/widget/VideoView$7;->this$0:Landroid/widget/VideoView;
 
@@ -161,7 +156,6 @@
 
 .method public surfaceDestroyed(Landroid/view/SurfaceHolder;)V
     .locals 2
-    .param p1    # Landroid/view/SurfaceHolder;
 
     iget-object v0, p0, Landroid/widget/VideoView$7;->this$0:Landroid/widget/VideoView;
 

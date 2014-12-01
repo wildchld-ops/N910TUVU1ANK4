@@ -23,8 +23,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/settings/ReadingMode;Landroid/os/Handler;Landroid/content/Context;)V
     .locals 0
-    .param p2    # Landroid/os/Handler;
-    .param p3    # Landroid/content/Context;
 
     iput-object p1, p0, Lcom/android/settings/ReadingMode$SettingsObserver;->this$0:Lcom/android/settings/ReadingMode;
 
@@ -39,7 +37,6 @@
 # virtual methods
 .method public onChange(Z)V
     .locals 4
-    .param p1    # Z
 
     const/4 v0, 0x1
 

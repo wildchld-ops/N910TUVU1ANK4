@@ -14,7 +14,6 @@
 # direct methods
 .method public constructor <init>([Landroid/database/Cursor;)V
     .locals 3
-    .param p1    # [Landroid/database/Cursor;
 
     invoke-direct {p0}, Landroid/database/AbstractCursor;-><init>()V
 
@@ -144,7 +143,6 @@
 
 .method public getBlob(I)[B
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/database/MergeCursor;->mCursor:Landroid/database/Cursor;
 
@@ -220,7 +218,6 @@
 
 .method public getDouble(I)D
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Landroid/database/MergeCursor;->mCursor:Landroid/database/Cursor;
 
@@ -233,7 +230,6 @@
 
 .method public getFloat(I)F
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/database/MergeCursor;->mCursor:Landroid/database/Cursor;
 
@@ -246,7 +242,6 @@
 
 .method public getInt(I)I
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/database/MergeCursor;->mCursor:Landroid/database/Cursor;
 
@@ -259,7 +254,6 @@
 
 .method public getLong(I)J
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Landroid/database/MergeCursor;->mCursor:Landroid/database/Cursor;
 
@@ -272,7 +266,6 @@
 
 .method public getShort(I)S
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/database/MergeCursor;->mCursor:Landroid/database/Cursor;
 
@@ -285,7 +278,6 @@
 
 .method public getString(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/database/MergeCursor;->mCursor:Landroid/database/Cursor;
 
@@ -298,7 +290,6 @@
 
 .method public getType(I)I
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/database/MergeCursor;->mCursor:Landroid/database/Cursor;
 
@@ -311,7 +302,6 @@
 
 .method public isNull(I)Z
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/database/MergeCursor;->mCursor:Landroid/database/Cursor;
 
@@ -324,8 +314,6 @@
 
 .method public onMove(II)Z
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     const/4 v4, 0x0
 
@@ -409,7 +397,6 @@
 
 .method public registerContentObserver(Landroid/database/ContentObserver;)V
     .locals 3
-    .param p1    # Landroid/database/ContentObserver;
 
     iget-object v2, p0, Landroid/database/MergeCursor;->mCursors:[Landroid/database/Cursor;
 
@@ -443,7 +430,6 @@
 
 .method public registerDataSetObserver(Landroid/database/DataSetObserver;)V
     .locals 3
-    .param p1    # Landroid/database/DataSetObserver;
 
     iget-object v2, p0, Landroid/database/MergeCursor;->mCursors:[Landroid/database/Cursor;
 
@@ -522,7 +508,6 @@
 
 .method public unregisterContentObserver(Landroid/database/ContentObserver;)V
     .locals 3
-    .param p1    # Landroid/database/ContentObserver;
 
     iget-object v2, p0, Landroid/database/MergeCursor;->mCursors:[Landroid/database/Cursor;
 
@@ -556,7 +541,6 @@
 
 .method public unregisterDataSetObserver(Landroid/database/DataSetObserver;)V
     .locals 3
-    .param p1    # Landroid/database/DataSetObserver;
 
     iget-object v2, p0, Landroid/database/MergeCursor;->mCursors:[Landroid/database/Cursor;
 

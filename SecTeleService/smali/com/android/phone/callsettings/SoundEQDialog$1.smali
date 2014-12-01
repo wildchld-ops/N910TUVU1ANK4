@@ -54,7 +54,7 @@
 
     iget-object v1, p0, Lcom/android/phone/callsettings/SoundEQDialog$1;->this$0:Lcom/android/phone/callsettings/SoundEQDialog;
 
-    invoke-virtual {v1}, Landroid/app/Activity;->finish()V
+    invoke-virtual {v1}, Lcom/android/phone/callsettings/SoundEQDialog;->finish()V
 
     :cond_0
     return-void

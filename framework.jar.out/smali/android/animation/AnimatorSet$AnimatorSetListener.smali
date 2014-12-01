@@ -26,7 +26,6 @@
 # direct methods
 .method constructor <init>(Landroid/animation/AnimatorSet;Landroid/animation/AnimatorSet;)V
     .locals 0
-    .param p2    # Landroid/animation/AnimatorSet;
 
     iput-object p1, p0, Landroid/animation/AnimatorSet$AnimatorSetListener;->this$0:Landroid/animation/AnimatorSet;
 
@@ -41,7 +40,6 @@
 # virtual methods
 .method public onAnimationCancel(Landroid/animation/Animator;)V
     .locals 4
-    .param p1    # Landroid/animation/Animator;
 
     iget-object v2, p0, Landroid/animation/AnimatorSet$AnimatorSetListener;->this$0:Landroid/animation/AnimatorSet;
 
@@ -105,7 +103,6 @@
 
 .method public onAnimationEnd(Landroid/animation/Animator;)V
     .locals 10
-    .param p1    # Landroid/animation/Animator;
 
     const/4 v9, 0x0
 
@@ -236,14 +233,12 @@
 
 .method public onAnimationRepeat(Landroid/animation/Animator;)V
     .locals 0
-    .param p1    # Landroid/animation/Animator;
 
     return-void
 .end method
 
 .method public onAnimationStart(Landroid/animation/Animator;)V
     .locals 0
-    .param p1    # Landroid/animation/Animator;
 
     return-void
 .end method

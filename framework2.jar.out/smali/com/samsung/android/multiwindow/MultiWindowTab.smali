@@ -40,8 +40,6 @@
 
 .method public constructor <init>(ILandroid/content/ComponentName;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -54,7 +52,6 @@
 
 .method public constructor <init>(Landroid/os/Parcel;)V
     .locals 0
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -65,7 +62,6 @@
 
 .method public constructor <init>(Lcom/samsung/android/multiwindow/MultiWindowTab;)V
     .locals 0
-    .param p1    # Lcom/samsung/android/multiwindow/MultiWindowTab;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -76,7 +72,6 @@
 
 .method private readFromParcel(Landroid/os/Parcel;)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
@@ -132,7 +127,6 @@
 
 .method public setComponentName(Landroid/content/ComponentName;)V
     .locals 0
-    .param p1    # Landroid/content/ComponentName;
 
     iput-object p1, p0, Lcom/samsung/android/multiwindow/MultiWindowTab;->mComponentName:Landroid/content/ComponentName;
 
@@ -141,7 +135,6 @@
 
 .method public setStackId(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/android/multiwindow/MultiWindowTab;->mStackId:I
 
@@ -150,7 +143,6 @@
 
 .method public setTo(Lcom/samsung/android/multiwindow/MultiWindowTab;)V
     .locals 1
-    .param p1    # Lcom/samsung/android/multiwindow/MultiWindowTab;
 
     iget v0, p1, Lcom/samsung/android/multiwindow/MultiWindowTab;->mStackId:I
 
@@ -219,8 +211,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget v0, p0, Lcom/samsung/android/multiwindow/MultiWindowTab;->mStackId:I
 

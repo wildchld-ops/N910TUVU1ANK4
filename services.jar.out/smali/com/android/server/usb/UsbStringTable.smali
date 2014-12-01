@@ -669,9 +669,6 @@
 # virtual methods
 .method public findString(III)Ljava/lang/String;
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     iget-object v4, p0, Lcom/android/server/usb/UsbStringTable;->UsbClassSet:Ljava/util/HashSet;
 

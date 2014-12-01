@@ -51,11 +51,6 @@
 
 .method public constructor <init>(Landroid/content/Context;ILcom/android/mms/transaction/TransactionSettings;Ljava/lang/String;I)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Lcom/android/mms/transaction/TransactionSettings;
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/google/android/mms/MmsException;
@@ -152,8 +147,6 @@
 
 .method private getContentLocation(Landroid/content/Context;Landroid/net/Uri;)Ljava/lang/String;
     .locals 10
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/net/Uri;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/google/android/mms/MmsException;
@@ -277,8 +270,6 @@
 
 .method private static isDuplicateMessage(Landroid/content/Context;Lcom/google/android/mms/pdu/RetrieveConf;)Z
     .locals 13
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/google/android/mms/pdu/RetrieveConf;
 
     invoke-virtual {p1}, Lcom/google/android/mms/pdu/RetrieveConf;->getMessageId()[B
 
@@ -455,7 +446,6 @@
 
 .method private sendAcknowledgeInd(Lcom/google/android/mms/pdu/RetrieveConf;)V
     .locals 6
-    .param p1    # Lcom/google/android/mms/pdu/RetrieveConf;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/google/android/mms/MmsException;,
@@ -569,10 +559,6 @@
 
 .method private static updateContentLocation(Landroid/content/Context;Landroid/net/Uri;Ljava/lang/String;Z)V
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     const/4 v4, 0x0
 

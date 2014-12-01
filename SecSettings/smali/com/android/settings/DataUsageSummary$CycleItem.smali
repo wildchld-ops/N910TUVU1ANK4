@@ -38,9 +38,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;JJ)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # J
-    .param p4    # J
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -59,7 +56,6 @@
 
 .method constructor <init>(Ljava/lang/CharSequence;)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -72,7 +68,6 @@
 # virtual methods
 .method public compareTo(Lcom/android/settings/DataUsageSummary$CycleItem;)I
     .locals 4
-    .param p1    # Lcom/android/settings/DataUsageSummary$CycleItem;
 
     iget-wide v0, p0, Lcom/android/settings/DataUsageSummary$CycleItem;->start:J
 
@@ -87,7 +82,6 @@
 
 .method public bridge synthetic compareTo(Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/android/settings/DataUsageSummary$CycleItem;
 
@@ -100,7 +94,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 6
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x0
 

@@ -340,8 +340,6 @@
 
 .method private constructor <init>(Landroid/content/Context;Ljava/io/File;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/io/File;
 
     const/4 v3, 0x0
 
@@ -530,7 +528,6 @@
 
 .method private appendPendingOperationLocked(Lcom/android/server/content/SyncStorageEngine$PendingOperation;)V
     .locals 8
-    .param p1    # Lcom/android/server/content/SyncStorageEngine$PendingOperation;
 
     const/4 v7, 0x2
 
@@ -679,7 +676,6 @@
 
 .method public static calculateDefaultFlexTime(J)J
     .locals 4
-    .param p0    # J
 
     const-wide/16 v0, 0x5
 
@@ -717,7 +713,6 @@
 
 .method private createCopyPairOfAuthorityWithSyncStatusLocked(Lcom/android/server/content/SyncStorageEngine$AuthorityInfo;)Landroid/util/Pair;
     .locals 3
-    .param p1    # Lcom/android/server/content/SyncStorageEngine$AuthorityInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -754,8 +749,6 @@
 
 .method private extrasToXml(Lorg/xmlpull/v1/XmlSerializer;Landroid/os/Bundle;)V
     .locals 6
-    .param p1    # Lorg/xmlpull/v1/XmlSerializer;
-    .param p2    # Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -965,7 +958,6 @@
 
 .method private static flattenBundle(Landroid/os/Bundle;)[B
     .locals 3
-    .param p0    # Landroid/os/Bundle;
 
     const/4 v0, 0x0
 
@@ -998,10 +990,6 @@
 
 .method private getAuthorityLocked(Landroid/accounts/Account;ILjava/lang/String;Ljava/lang/String;)Lcom/android/server/content/SyncStorageEngine$AuthorityInfo;
     .locals 5
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -1049,9 +1037,6 @@
 
 .method private getAuthorityLocked(Landroid/content/ComponentName;ILjava/lang/String;)Lcom/android/server/content/SyncStorageEngine$AuthorityInfo;
     .locals 2
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/server/content/SyncStorageEngine;->mServices:Ljava/util/HashMap;
 
@@ -1151,7 +1136,6 @@
 
 .method private getCurrentSyncs(I)Ljava/util/List;
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -1187,7 +1171,6 @@
 
 .method private getCurrentSyncsLocked(I)Ljava/util/List;
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -1222,8 +1205,6 @@
 
 .method static getIntColumn(Landroid/database/Cursor;Ljava/lang/String;)I
     .locals 1
-    .param p0    # Landroid/database/Cursor;
-    .param p1    # Ljava/lang/String;
 
     invoke-interface {p0, p1}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
 
@@ -1238,8 +1219,6 @@
 
 .method static getLongColumn(Landroid/database/Cursor;Ljava/lang/String;)J
     .locals 2
-    .param p0    # Landroid/database/Cursor;
-    .param p1    # Ljava/lang/String;
 
     invoke-interface {p0, p1}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
 
@@ -1254,11 +1233,6 @@
 
 .method private getOrCreateAuthorityLocked(Landroid/accounts/Account;ILjava/lang/String;IZ)Lcom/android/server/content/SyncStorageEngine$AuthorityInfo;
     .locals 4
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
-    .param p5    # Z
 
     new-instance v1, Landroid/accounts/AccountAndUser;
 
@@ -1328,10 +1302,6 @@
 
 .method private getOrCreateAuthorityLocked(Landroid/content/ComponentName;IIZ)Lcom/android/server/content/SyncStorageEngine$AuthorityInfo;
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Z
 
     iget-object v2, p0, Lcom/android/server/content/SyncStorageEngine;->mServices:Ljava/util/HashMap;
 
@@ -1393,7 +1363,6 @@
 
 .method private getOrCreateSyncStatusLocked(I)Landroid/content/SyncStatusInfo;
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/server/content/SyncStorageEngine;->mSyncStatus:Landroid/util/SparseArray;
 
@@ -1440,7 +1409,6 @@
 
 .method public static init(Landroid/content/Context;)V
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     sget-object v1, Lcom/android/server/content/SyncStorageEngine;->sSyncStorageEngine:Lcom/android/server/content/SyncStorageEngine;
 
@@ -1465,7 +1433,6 @@
 
 .method private maybeDeleteLegacyPendingInfoLocked(Ljava/io/File;)V
     .locals 2
-    .param p1    # Ljava/io/File;
 
     new-instance v0, Ljava/io/File;
 
@@ -1611,7 +1578,6 @@
 
 .method public static newTestInstance(Landroid/content/Context;)Lcom/android/server/content/SyncStorageEngine;
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     new-instance v0, Lcom/android/server/content/SyncStorageEngine;
 
@@ -1626,8 +1592,6 @@
 
 .method private parseAuthority(Lorg/xmlpull/v1/XmlPullParser;I)Lcom/android/server/content/SyncStorageEngine$AuthorityInfo;
     .locals 16
-    .param p1    # Lorg/xmlpull/v1/XmlPullParser;
-    .param p2    # I
 
     const/4 v9, 0x0
 
@@ -2033,8 +1997,6 @@
 
 .method private parseExtra(Lorg/xmlpull/v1/XmlPullParser;Landroid/os/Bundle;)V
     .locals 7
-    .param p1    # Lorg/xmlpull/v1/XmlPullParser;
-    .param p2    # Landroid/os/Bundle;
 
     const/4 v6, 0x0
 
@@ -2215,7 +2177,6 @@
 
 .method private parseListenForTickles(Lorg/xmlpull/v1/XmlPullParser;)V
     .locals 8
-    .param p1    # Lorg/xmlpull/v1/XmlPullParser;
 
     const/4 v7, 0x0
 
@@ -2294,8 +2255,6 @@
 
 .method private parsePeriodicSync(Lorg/xmlpull/v1/XmlPullParser;Lcom/android/server/content/SyncStorageEngine$AuthorityInfo;)Landroid/content/PeriodicSync;
     .locals 13
-    .param p1    # Lorg/xmlpull/v1/XmlPullParser;
-    .param p2    # Lcom/android/server/content/SyncStorageEngine$AuthorityInfo;
 
     const/4 v0, 0x0
 
@@ -4912,10 +4871,6 @@
 
 .method private removeAuthorityLocked(Landroid/accounts/Account;ILjava/lang/String;Z)V
     .locals 4
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Z
 
     iget-object v2, p0, Lcom/android/server/content/SyncStorageEngine;->mAccounts:Ljava/util/HashMap;
 
@@ -4957,7 +4912,6 @@
 
 .method private reportChange(I)V
     .locals 6
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -5091,11 +5045,6 @@
 
 .method private requestSync(Landroid/accounts/Account;IILjava/lang/String;Landroid/os/Bundle;)V
     .locals 6
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
-    .param p5    # Landroid/os/Bundle;
 
     invoke-static {}, Landroid/os/Process;->myUid()I
 
@@ -5134,7 +5083,6 @@
 
 .method private static unflattenBundle([B)Landroid/os/Bundle;
     .locals 5
-    .param p0    # [B
 
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
@@ -5185,9 +5133,6 @@
 
 .method private updateOrRemovePeriodicSync(Landroid/content/PeriodicSync;IZ)V
     .locals 16
-    .param p1    # Landroid/content/PeriodicSync;
-    .param p2    # I
-    .param p3    # Z
 
     move-object/from16 v0, p0
 
@@ -6144,8 +6089,6 @@
 
 .method private writePendingOperationLocked(Lcom/android/server/content/SyncStorageEngine$PendingOperation;Lorg/xmlpull/v1/XmlSerializer;)V
     .locals 3
-    .param p1    # Lcom/android/server/content/SyncStorageEngine$PendingOperation;
-    .param p2    # Lorg/xmlpull/v1/XmlSerializer;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -6659,7 +6602,6 @@
 # virtual methods
 .method public addActiveSync(Lcom/android/server/content/SyncManager$ActiveSyncContext;)Landroid/content/SyncInfo;
     .locals 8
-    .param p1    # Lcom/android/server/content/SyncManager$ActiveSyncContext;
 
     iget-object v7, p0, Lcom/android/server/content/SyncStorageEngine;->mAuthorities:Landroid/util/SparseArray;
 
@@ -6729,8 +6671,6 @@
 
 .method public addPeriodicSync(Landroid/content/PeriodicSync;I)V
     .locals 1
-    .param p1    # Landroid/content/PeriodicSync;
-    .param p2    # I
 
     const/4 v0, 0x1
 
@@ -6741,8 +6681,6 @@
 
 .method public addStatusChangeListener(ILandroid/content/ISyncStatusObserver;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/content/ISyncStatusObserver;
 
     iget-object v1, p0, Lcom/android/server/content/SyncStorageEngine;->mAuthorities:Landroid/util/SparseArray;
 
@@ -6773,7 +6711,6 @@
 
 .method public clearAllBackoffsLocked(Lcom/android/server/content/SyncQueue;)V
     .locals 14
-    .param p1    # Lcom/android/server/content/SyncQueue;
 
     const-wide/16 v12, -0x1
 
@@ -6963,7 +6900,6 @@
 
 .method public deleteFromPending(Lcom/android/server/content/SyncStorageEngine$PendingOperation;)Z
     .locals 12
-    .param p1    # Lcom/android/server/content/SyncStorageEngine$PendingOperation;
 
     const/4 v5, 0x0
 
@@ -7119,8 +7055,6 @@
 
 .method public doDatabaseCleanup([Landroid/accounts/Account;I)V
     .locals 11
-    .param p1    # [Landroid/accounts/Account;
-    .param p2    # I
 
     iget-object v9, p0, Lcom/android/server/content/SyncStorageEngine;->mAuthorities:Landroid/util/SparseArray;
 
@@ -7317,7 +7251,6 @@
 
 .method public dumpPendingOperations(Ljava/lang/StringBuilder;)V
     .locals 5
-    .param p1    # Ljava/lang/StringBuilder;
 
     const-string v2, "Pending Ops: "
 
@@ -7466,7 +7399,6 @@
 
 .method public getAuthority(I)Lcom/android/server/content/SyncStorageEngine$AuthorityInfo;
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/server/content/SyncStorageEngine;->mAuthorities:Landroid/util/SparseArray;
 
@@ -7497,9 +7429,6 @@
 
 .method public getBackoff(Landroid/accounts/Account;ILjava/lang/String;)Landroid/util/Pair;
     .locals 7
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -7651,9 +7580,6 @@
 
 .method public getCopyOfAuthorityWithSyncStatus(Landroid/accounts/Account;ILjava/lang/String;)Landroid/util/Pair;
     .locals 8
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -7710,7 +7636,6 @@
 
 .method public getCurrentSyncsCopy(I)Ljava/util/List;
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -7817,9 +7742,6 @@
 
 .method public getDelayUntilTime(Landroid/accounts/Account;ILjava/lang/String;)J
     .locals 4
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     iget-object v3, p0, Lcom/android/server/content/SyncStorageEngine;->mAuthorities:Landroid/util/SparseArray;
 
@@ -7860,9 +7782,6 @@
 
 .method public getIsSyncable(Landroid/accounts/Account;ILjava/lang/String;)I
     .locals 5
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     const/4 v2, -0x1
 
@@ -7947,7 +7866,6 @@
 
 .method public getMasterSyncAutomatically(I)Z
     .locals 3
-    .param p1    # I
 
     iget-object v2, p0, Lcom/android/server/content/SyncStorageEngine;->mAuthorities:Landroid/util/SparseArray;
 
@@ -8055,9 +7973,6 @@
 
 .method public getPeriodicSyncs(Landroid/accounts/Account;ILjava/lang/String;)Ljava/util/List;
     .locals 6
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -8136,9 +8051,6 @@
 
 .method public getStatusByAccountAndAuthority(Landroid/accounts/Account;ILjava/lang/String;)Landroid/content/SyncStatusInfo;
     .locals 8
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -8240,9 +8152,6 @@
 
 .method public getSyncAutomatically(Landroid/accounts/Account;ILjava/lang/String;)Z
     .locals 6
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     const/4 v2, 0x1
 
@@ -8466,7 +8375,6 @@
 
 .method public handleMessage(Landroid/os/Message;)V
     .locals 2
-    .param p1    # Landroid/os/Message;
 
     iget v0, p1, Landroid/os/Message;->what:I
 
@@ -8526,7 +8434,6 @@
 
 .method public insertIntoPending(Lcom/android/server/content/SyncStorageEngine$PendingOperation;)Lcom/android/server/content/SyncStorageEngine$PendingOperation;
     .locals 10
-    .param p1    # Lcom/android/server/content/SyncStorageEngine$PendingOperation;
 
     iget-object v9, p0, Lcom/android/server/content/SyncStorageEngine;->mAuthorities:Landroid/util/SparseArray;
 
@@ -8619,14 +8526,6 @@
 
 .method public insertStartSyncEvent(Landroid/accounts/Account;IILjava/lang/String;JIZLandroid/os/Bundle;)J
     .locals 8
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
-    .param p5    # J
-    .param p7    # I
-    .param p8    # Z
-    .param p9    # Landroid/os/Bundle;
 
     iget-object v6, p0, Lcom/android/server/content/SyncStorageEngine;->mAuthorities:Landroid/util/SparseArray;
 
@@ -8751,9 +8650,6 @@
 
 .method public isSyncActive(Landroid/accounts/Account;ILjava/lang/String;)Z
     .locals 5
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     iget-object v4, p0, Lcom/android/server/content/SyncStorageEngine;->mAuthorities:Landroid/util/SparseArray;
 
@@ -8835,9 +8731,6 @@
 
 .method public isSyncPending(Landroid/accounts/Account;ILjava/lang/String;)Z
     .locals 7
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     iget-object v5, p0, Lcom/android/server/content/SyncStorageEngine;->mAuthorities:Landroid/util/SparseArray;
 
@@ -8934,8 +8827,6 @@
 
 .method public removeActiveSync(Landroid/content/SyncInfo;I)V
     .locals 2
-    .param p1    # Landroid/content/SyncInfo;
-    .param p2    # I
 
     iget-object v1, p0, Lcom/android/server/content/SyncStorageEngine;->mAuthorities:Landroid/util/SparseArray;
 
@@ -8969,9 +8860,6 @@
 
 .method public removeAuthority(Landroid/accounts/Account;ILjava/lang/String;)V
     .locals 2
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/server/content/SyncStorageEngine;->mAuthorities:Landroid/util/SparseArray;
 
@@ -8998,8 +8886,6 @@
 
 .method public removePeriodicSync(Landroid/content/PeriodicSync;I)V
     .locals 1
-    .param p1    # Landroid/content/PeriodicSync;
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -9010,7 +8896,6 @@
 
 .method public removeStatusChangeListener(Landroid/content/ISyncStatusObserver;)V
     .locals 2
-    .param p1    # Landroid/content/ISyncStatusObserver;
 
     iget-object v1, p0, Lcom/android/server/content/SyncStorageEngine;->mAuthorities:Landroid/util/SparseArray;
 
@@ -9047,11 +8932,6 @@
 
 .method public setBackoff(Landroid/accounts/Account;ILjava/lang/String;JJ)V
     .locals 15
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # J
-    .param p6    # J
 
     const/4 v11, 0x0
 
@@ -9245,10 +9125,6 @@
 
 .method public setDelayUntilTime(Landroid/accounts/Account;ILjava/lang/String;J)V
     .locals 9
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # J
 
     const/4 v8, 0x1
 
@@ -9308,10 +9184,6 @@
 
 .method public setIsSyncable(Landroid/accounts/Account;ILjava/lang/String;I)V
     .locals 9
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
 
     const/4 v8, 0x1
 
@@ -9405,8 +9277,6 @@
 
 .method public setMasterSyncAutomatically(ZI)V
     .locals 7
-    .param p1    # Z
-    .param p2    # I
 
     const/4 v1, 0x0
 
@@ -9493,7 +9363,6 @@
 
 .method protected setOnSyncRequestListener(Lcom/android/server/content/SyncStorageEngine$OnSyncRequestListener;)V
     .locals 1
-    .param p1    # Lcom/android/server/content/SyncStorageEngine$OnSyncRequestListener;
 
     iget-object v0, p0, Lcom/android/server/content/SyncStorageEngine;->mSyncRequestListener:Lcom/android/server/content/SyncStorageEngine$OnSyncRequestListener;
 
@@ -9507,9 +9376,6 @@
 
 .method public setPeriodicSyncTime(ILandroid/content/PeriodicSync;J)V
     .locals 7
-    .param p1    # I
-    .param p2    # Landroid/content/PeriodicSync;
-    .param p3    # J
 
     const/4 v1, 0x0
 
@@ -9615,10 +9481,6 @@
 
 .method public setSyncAutomatically(Landroid/accounts/Account;ILjava/lang/String;Z)V
     .locals 8
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Z
 
     iget-object v7, p0, Lcom/android/server/content/SyncStorageEngine;->mAuthorities:Landroid/util/SparseArray;
 
@@ -9697,11 +9559,6 @@
 
 .method public stopSyncEvent(JJLjava/lang/String;JJ)V
     .locals 17
-    .param p1    # J
-    .param p3    # J
-    .param p5    # Ljava/lang/String;
-    .param p6    # J
-    .param p8    # J
 
     move-object/from16 v0, p0
 

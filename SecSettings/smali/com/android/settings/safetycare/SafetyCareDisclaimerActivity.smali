@@ -36,7 +36,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/safetycare/SafetyCareDisclaimerActivity;)V
     .locals 0
-    .param p0    # Lcom/android/settings/safetycare/SafetyCareDisclaimerActivity;
 
     invoke-direct {p0}, Lcom/android/settings/safetycare/SafetyCareDisclaimerActivity;->prepareFinishActivity()V
 
@@ -45,7 +44,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/safetycare/SafetyCareDisclaimerActivity;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/safetycare/SafetyCareDisclaimerActivity;
 
     iget-boolean v0, p0, Lcom/android/settings/safetycare/SafetyCareDisclaimerActivity;->mEmerOnly:Z
 
@@ -54,7 +52,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/safetycare/SafetyCareDisclaimerActivity;)Lcom/sec/android/touchwiz/widget/TwCheckBox;
     .locals 1
-    .param p0    # Lcom/android/settings/safetycare/SafetyCareDisclaimerActivity;
 
     iget-object v0, p0, Lcom/android/settings/safetycare/SafetyCareDisclaimerActivity;->mCheck1:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
@@ -63,7 +60,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/safetycare/SafetyCareDisclaimerActivity;)Lcom/sec/android/touchwiz/widget/TwCheckBox;
     .locals 1
-    .param p0    # Lcom/android/settings/safetycare/SafetyCareDisclaimerActivity;
 
     iget-object v0, p0, Lcom/android/settings/safetycare/SafetyCareDisclaimerActivity;->mCheck2:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
@@ -72,7 +68,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/safetycare/SafetyCareDisclaimerActivity;)Lcom/sec/android/touchwiz/widget/TwCheckBox;
     .locals 1
-    .param p0    # Lcom/android/settings/safetycare/SafetyCareDisclaimerActivity;
 
     iget-object v0, p0, Lcom/android/settings/safetycare/SafetyCareDisclaimerActivity;->mCheck3:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
@@ -81,7 +76,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/safetycare/SafetyCareDisclaimerActivity;)Lcom/sec/android/touchwiz/widget/TwCheckBox;
     .locals 1
-    .param p0    # Lcom/android/settings/safetycare/SafetyCareDisclaimerActivity;
 
     iget-object v0, p0, Lcom/android/settings/safetycare/SafetyCareDisclaimerActivity;->mCheck4:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
@@ -122,7 +116,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 12
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
@@ -910,8 +903,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     invoke-virtual {p2}, Landroid/view/KeyEvent;->getKeyCode()I
 
@@ -939,7 +930,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 

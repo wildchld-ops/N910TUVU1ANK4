@@ -62,8 +62,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Lcom/android/incallui/AudioModeProvider;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/incallui/AudioModeProvider;
 
     const/16 v2, 0x20
 
@@ -178,7 +176,6 @@
 
 .method static synthetic access$000(Lcom/android/incallui/ProximitySensor;)Landroid/hardware/Sensor;
     .locals 1
-    .param p0    # Lcom/android/incallui/ProximitySensor;
 
     iget-object v0, p0, Lcom/android/incallui/ProximitySensor;->mProximitySensor:Landroid/hardware/Sensor;
 
@@ -187,7 +184,6 @@
 
 .method static synthetic access$100(Lcom/android/incallui/ProximitySensor;)Lcom/android/incallui/AudioModeProvider;
     .locals 1
-    .param p0    # Lcom/android/incallui/ProximitySensor;
 
     iget-object v0, p0, Lcom/android/incallui/ProximitySensor;->mAudioModeProvider:Lcom/android/incallui/AudioModeProvider;
 
@@ -196,7 +192,6 @@
 
 .method private getCallToShow(Lcom/android/incallui/CallList;)Lcom/android/services/telephony/common/Call;
     .locals 1
-    .param p1    # Lcom/android/incallui/CallList;
 
     if-nez p1, :cond_1
 
@@ -848,7 +843,6 @@
 
 .method public onAudioMode(I)V
     .locals 0
-    .param p1    # I
 
     invoke-direct {p0}, Lcom/android/incallui/ProximitySensor;->updateProximitySensorMode()V
 
@@ -857,7 +851,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 2
-    .param p1    # Landroid/content/res/Configuration;
 
     const/4 v0, 0x1
 
@@ -880,14 +873,12 @@
 
 .method public onCoverStatusChanged(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method public onDialpadVisible(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/incallui/ProximitySensor;->mDialpadVisible:Z
 
@@ -898,7 +889,6 @@
 
 .method public onInCallShowing(Z)V
     .locals 3
-    .param p1    # Z
 
     const/4 v2, 0x0
 
@@ -952,14 +942,12 @@
 
 .method public onMute(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method public onSideSyncCallForwardStateChanged(Z)V
     .locals 0
-    .param p1    # Z
 
     invoke-direct {p0}, Lcom/android/incallui/ProximitySensor;->updateProximitySensorMode()V
 
@@ -968,8 +956,6 @@
 
 .method public onStateChange(Lcom/android/incallui/InCallPresenter$InCallState;Lcom/android/incallui/CallList;)V
     .locals 4
-    .param p1    # Lcom/android/incallui/InCallPresenter$InCallState;
-    .param p2    # Lcom/android/incallui/CallList;
 
     const/4 v1, 0x0
 
@@ -1033,14 +1019,12 @@
 
 .method public onSupportedAudioMode(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public orientationChanged(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/incallui/ProximitySensor;->mOrientation:I
 
@@ -1086,7 +1070,6 @@
 
 .method public updateProximitySensorModeForCover(Z)V
     .locals 2
-    .param p1    # Z
 
     new-instance v0, Ljava/lang/StringBuilder;
 

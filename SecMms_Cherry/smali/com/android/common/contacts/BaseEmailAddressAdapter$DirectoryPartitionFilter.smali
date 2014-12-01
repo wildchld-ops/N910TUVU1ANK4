@@ -27,8 +27,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/common/contacts/BaseEmailAddressAdapter;IJ)V
     .locals 0
-    .param p2    # I
-    .param p3    # J
 
     iput-object p1, p0, Lcom/android/common/contacts/BaseEmailAddressAdapter$DirectoryPartitionFilter;->this$0:Lcom/android/common/contacts/BaseEmailAddressAdapter;
 
@@ -67,7 +65,6 @@
 
 .method protected performFiltering(Ljava/lang/CharSequence;)Landroid/widget/Filter$FilterResults;
     .locals 8
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v3, 0x0
 
@@ -149,8 +146,6 @@
 
 .method protected publishResults(Ljava/lang/CharSequence;Landroid/widget/Filter$FilterResults;)V
     .locals 3
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Landroid/widget/Filter$FilterResults;
 
     iget-object v0, p2, Landroid/widget/Filter$FilterResults;->values:Ljava/lang/Object;
 
@@ -175,7 +170,6 @@
 
 .method public declared-synchronized setLimit(I)V
     .locals 1
-    .param p1    # I
 
     monitor-enter p0
 

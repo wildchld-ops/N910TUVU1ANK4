@@ -14,9 +14,6 @@
 
 .method public static readProcLines(Ljava/lang/String;[Ljava/lang/String;[J)V
     .locals 0
-    .param p0    # Ljava/lang/String;
-    .param p1    # [Ljava/lang/String;
-    .param p2    # [J
 
     invoke-static {p0, p1, p2}, Landroid/os/Process;->readProcLines(Ljava/lang/String;[Ljava/lang/String;[J)V
 
@@ -25,7 +22,6 @@
 
 .method public static updateAccountManagerCache(I)V
     .locals 3
-    .param p0    # I
 
     invoke-static {}, Lcom/android/server/accounts/AccountManagerService;->getSingleton()Lcom/android/server/accounts/AccountManagerService;
 

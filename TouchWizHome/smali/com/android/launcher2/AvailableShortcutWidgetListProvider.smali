@@ -41,7 +41,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -62,7 +61,6 @@
 
 .method static synthetic access$000(Lcom/android/launcher2/AvailableShortcutWidgetListProvider;)Lcom/android/launcher2/PkgResCache;
     .locals 1
-    .param p0    # Lcom/android/launcher2/AvailableShortcutWidgetListProvider;
 
     iget-object v0, p0, Lcom/android/launcher2/AvailableShortcutWidgetListProvider;->mPkgResCache:Lcom/android/launcher2/PkgResCache;
 
@@ -73,7 +71,6 @@
 # virtual methods
 .method public getAvailableWidget(Landroid/content/ComponentName;)Lcom/android/launcher2/AvailableWidget;
     .locals 4
-    .param p1    # Landroid/content/ComponentName;
 
     invoke-virtual {p0}, Lcom/android/launcher2/AvailableShortcutWidgetListProvider;->getAvailableWidgets()Ljava/util/List;
 

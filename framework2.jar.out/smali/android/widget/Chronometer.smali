@@ -51,7 +51,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -64,8 +63,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -76,9 +73,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v3, 0x0
 
@@ -125,7 +119,6 @@
 
 .method static synthetic access$000(Landroid/widget/Chronometer;)Z
     .locals 1
-    .param p0    # Landroid/widget/Chronometer;
 
     iget-boolean v0, p0, Landroid/widget/Chronometer;->mRunning:Z
 
@@ -134,8 +127,6 @@
 
 .method static synthetic access$100(Landroid/widget/Chronometer;J)V
     .locals 0
-    .param p0    # Landroid/widget/Chronometer;
-    .param p1    # J
 
     invoke-direct {p0, p1, p2}, Landroid/widget/Chronometer;->updateText(J)V
 
@@ -221,7 +212,6 @@
 
 .method private declared-synchronized updateText(J)V
     .locals 8
-    .param p1    # J
 
     monitor-enter p0
 
@@ -420,7 +410,6 @@
 
 .method public onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
     .locals 1
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
 
     invoke-super {p0, p1}, Landroid/widget/TextView;->onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
 
@@ -437,7 +426,6 @@
 
 .method public onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
     .locals 1
-    .param p1    # Landroid/view/accessibility/AccessibilityNodeInfo;
 
     invoke-super {p0, p1}, Landroid/widget/TextView;->onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
 
@@ -454,7 +442,6 @@
 
 .method protected onWindowVisibilityChanged(I)V
     .locals 1
-    .param p1    # I
 
     invoke-super {p0, p1}, Landroid/view/View;->onWindowVisibilityChanged(I)V
 
@@ -477,7 +464,6 @@
 
 .method public setBase(J)V
     .locals 2
-    .param p1    # J
     .annotation runtime Landroid/view/RemotableViewMethod;
     .end annotation
 
@@ -496,7 +482,6 @@
 
 .method public setFormat(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
     .annotation runtime Landroid/view/RemotableViewMethod;
     .end annotation
 
@@ -526,7 +511,6 @@
 
 .method public setOnChronometerTickListener(Landroid/widget/Chronometer$OnChronometerTickListener;)V
     .locals 0
-    .param p1    # Landroid/widget/Chronometer$OnChronometerTickListener;
 
     iput-object p1, p0, Landroid/widget/Chronometer;->mOnChronometerTickListener:Landroid/widget/Chronometer$OnChronometerTickListener;
 
@@ -535,7 +519,6 @@
 
 .method public setStarted(Z)V
     .locals 0
-    .param p1    # Z
     .annotation runtime Landroid/view/RemotableViewMethod;
     .end annotation
 

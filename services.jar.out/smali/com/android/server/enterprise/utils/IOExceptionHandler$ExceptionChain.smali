@@ -133,7 +133,6 @@
 # virtual methods
 .method public chainException(Ljava/lang/Exception;)V
     .locals 1
-    .param p1    # Ljava/lang/Exception;
 
     iget-object v0, p0, Lcom/android/server/enterprise/utils/IOExceptionHandler$ExceptionChain;->exceptions:Ljava/util/ArrayList;
 
@@ -144,7 +143,6 @@
 
 .method public printStackTrace(Ljava/io/PrintStream;)V
     .locals 5
-    .param p1    # Ljava/io/PrintStream;
 
     monitor-enter p1
 
@@ -224,7 +222,6 @@
 
 .method public printStackTrace(Ljava/io/PrintWriter;)V
     .locals 5
-    .param p1    # Ljava/io/PrintWriter;
 
     monitor-enter p1
 

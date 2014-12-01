@@ -46,9 +46,6 @@
 # direct methods
 .method constructor <init>(Landroid/content/Context;Ljava/util/HashMap;Landroid/hardware/scontext/provider/EventListener;I)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p3    # Landroid/hardware/scontext/provider/EventListener;
-    .param p4    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -149,7 +146,6 @@
 # virtual methods
 .method getProvider(I)Landroid/hardware/scontext/provider/Provider;
     .locals 5
-    .param p1    # I
 
     iget-object v1, p0, Landroid/hardware/scontext/SContextProvider;->mServiceMap:Ljava/util/HashMap;
 

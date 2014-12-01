@@ -26,7 +26,6 @@
 # direct methods
 .method private constructor <init>(Lcom/android/mms/transaction/CscParser;Ljava/lang/String;)V
     .locals 0
-    .param p2    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/mms/transaction/CscParser$Get_DefaultToneUri_MediaStore;->this$0:Lcom/android/mms/transaction/CscParser;
 
@@ -39,9 +38,6 @@
 
 .method synthetic constructor <init>(Lcom/android/mms/transaction/CscParser;Ljava/lang/String;Lcom/android/mms/transaction/CscParser$1;)V
     .locals 0
-    .param p1    # Lcom/android/mms/transaction/CscParser;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/android/mms/transaction/CscParser$1;
 
     invoke-direct {p0, p1, p2}, Lcom/android/mms/transaction/CscParser$Get_DefaultToneUri_MediaStore;-><init>(Lcom/android/mms/transaction/CscParser;Ljava/lang/String;)V
 

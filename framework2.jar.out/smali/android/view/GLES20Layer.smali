@@ -28,9 +28,6 @@
 
 .method constructor <init>(IIZ)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     invoke-direct {p0, p1, p2, p3}, Landroid/view/HardwareLayer;-><init>(IIZ)V
 
@@ -56,7 +53,6 @@
 
 .method public copyInto(Landroid/graphics/Bitmap;)Z
     .locals 2
-    .param p1    # Landroid/graphics/Bitmap;
 
     iget v0, p0, Landroid/view/GLES20Layer;->mLayer:I
 
@@ -111,7 +107,6 @@
 
 .method setImageFilter(Landroid/graphics/ImageFilter;)V
     .locals 5
-    .param p1    # Landroid/graphics/ImageFilter;
 
     iget v2, p0, Landroid/view/GLES20Layer;->mLayer:I
 
@@ -165,7 +160,6 @@
 
 .method setImageFilterClipRect(Landroid/graphics/Rect;)V
     .locals 5
-    .param p1    # Landroid/graphics/Rect;
 
     const/4 v1, 0x0
 
@@ -200,7 +194,6 @@
 
 .method setLayerPaint(Landroid/graphics/Paint;)V
     .locals 2
-    .param p1    # Landroid/graphics/Paint;
 
     if-eqz p1, :cond_0
 

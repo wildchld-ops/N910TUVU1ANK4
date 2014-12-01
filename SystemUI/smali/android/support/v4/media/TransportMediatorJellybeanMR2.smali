@@ -44,10 +44,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/media/AudioManager;Landroid/view/View;Landroid/support/v4/media/TransportMediatorCallback;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/media/AudioManager;
-    .param p3    # Landroid/view/View;
-    .param p4    # Landroid/support/v4/media/TransportMediatorCallback;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -307,7 +303,6 @@
 
 .method public onPlaybackPositionUpdate(J)V
     .locals 1
-    .param p1    # J
 
     iget-object v0, p0, Landroid/support/v4/media/TransportMediatorJellybeanMR2;->mTransportCallback:Landroid/support/v4/media/TransportMediatorCallback;
 
@@ -341,9 +336,6 @@
 
 .method public refreshState(ZJI)V
     .locals 3
-    .param p1    # Z
-    .param p2    # J
-    .param p4    # I
 
     iget-object v0, p0, Landroid/support/v4/media/TransportMediatorJellybeanMR2;->mRemoteControl:Landroid/media/RemoteControlClient;
 

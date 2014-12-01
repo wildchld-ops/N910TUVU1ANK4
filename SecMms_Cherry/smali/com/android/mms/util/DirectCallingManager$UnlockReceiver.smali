@@ -37,8 +37,6 @@
 
 .method synthetic constructor <init>(Lcom/android/mms/util/DirectCallingManager;Lcom/android/mms/util/DirectCallingManager$1;)V
     .locals 0
-    .param p1    # Lcom/android/mms/util/DirectCallingManager;
-    .param p2    # Lcom/android/mms/util/DirectCallingManager$1;
 
     invoke-direct {p0, p1}, Lcom/android/mms/util/DirectCallingManager$UnlockReceiver;-><init>(Lcom/android/mms/util/DirectCallingManager;)V
 
@@ -57,8 +55,6 @@
 
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
@@ -164,7 +160,6 @@
 
 .method public setRegistered(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/util/DirectCallingManager$UnlockReceiver;->mIsRegistered:Z
 

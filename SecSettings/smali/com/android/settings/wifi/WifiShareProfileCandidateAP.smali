@@ -40,11 +40,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V
     .locals 9
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
 
     invoke-direct {p0, p1}, Landroid/preference/Preference;-><init>(Landroid/content/Context;)V
 
@@ -333,7 +328,6 @@
 
 .method private decryptSsid(Ljava/lang/String;)Ljava/lang/String;
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -437,7 +431,6 @@
 
 .method private getSecurity(Landroid/net/wifi/ScanResult;)I
     .locals 4
-    .param p1    # Landroid/net/wifi/ScanResult;
 
     iget-object v2, p1, Landroid/net/wifi/ScanResult;->capabilities:Ljava/lang/String;
 
@@ -486,7 +479,6 @@
 
 .method private getSecurityPSK(Landroid/net/wifi/ScanResult;)I
     .locals 2
-    .param p1    # Landroid/net/wifi/ScanResult;
 
     iget-object v0, p1, Landroid/net/wifi/ScanResult;->capabilities:Ljava/lang/String;
 
@@ -511,7 +503,6 @@
 
 .method private getSecurityPSK(Landroid/net/wifi/WifiConfiguration;)I
     .locals 2
-    .param p1    # Landroid/net/wifi/WifiConfiguration;
 
     iget-object v0, p1, Landroid/net/wifi/WifiConfiguration;->allowedKeyManagement:Ljava/util/BitSet;
 
@@ -538,7 +529,6 @@
 # virtual methods
 .method public compareTo(Landroid/preference/Preference;)I
     .locals 3
-    .param p1    # Landroid/preference/Preference;
 
     instance-of v1, p1, Lcom/android/settings/wifi/WifiShareProfileCandidateAP;
 
@@ -565,7 +555,6 @@
 
 .method public bridge synthetic compareTo(Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Landroid/preference/Preference;
 
@@ -578,7 +567,6 @@
 
 .method protected onBindView(Landroid/view/View;)V
     .locals 3
-    .param p1    # Landroid/view/View;
 
     iget-object v1, p0, Lcom/android/settings/wifi/WifiShareProfileCandidateAP;->ssid:Ljava/lang/String;
 

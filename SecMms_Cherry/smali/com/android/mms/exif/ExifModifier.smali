@@ -41,8 +41,6 @@
 # direct methods
 .method protected constructor <init>(Ljava/nio/ByteBuffer;Lcom/android/mms/exif/ExifInterface;)V
     .locals 5
-    .param p1    # Ljava/nio/ByteBuffer;
-    .param p2    # Lcom/android/mms/exif/ExifInterface;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -176,8 +174,6 @@
 
 .method private writeTagValue(Lcom/android/mms/exif/ExifTag;I)V
     .locals 7
-    .param p1    # Lcom/android/mms/exif/ExifTag;
-    .param p2    # I
 
     const/4 v6, 0x0
 
@@ -710,7 +706,6 @@
 
 .method public modifyTag(Lcom/android/mms/exif/ExifTag;)V
     .locals 1
-    .param p1    # Lcom/android/mms/exif/ExifTag;
 
     iget-object v0, p0, Lcom/android/mms/exif/ExifModifier;->mTagToModified:Lcom/android/mms/exif/ExifData;
 

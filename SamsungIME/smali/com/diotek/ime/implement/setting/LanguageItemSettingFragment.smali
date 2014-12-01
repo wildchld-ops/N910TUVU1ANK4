@@ -58,7 +58,6 @@
 
 .method private initInputMethodTypes(Landroid/content/res/Resources;)Z
     .locals 2
-    .param p1    # Landroid/content/res/Resources;
 
     const-string v0, "ko"
 
@@ -335,7 +334,6 @@
 # virtual methods
 .method protected changeInputMethodType(Landroid/preference/Preference;)V
     .locals 10
-    .param p1    # Landroid/preference/Preference;
 
     const/4 v9, 0x0
 
@@ -439,7 +437,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 12
-    .param p1    # Landroid/os/Bundle;
 
     const/16 v11, 0x400
 
@@ -770,9 +767,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 3
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const v1, 0x7f030080
 

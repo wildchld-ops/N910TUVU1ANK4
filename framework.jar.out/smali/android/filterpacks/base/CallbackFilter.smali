@@ -39,7 +39,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Landroid/filterfw/core/Filter;-><init>(Ljava/lang/String;)V
 
@@ -54,7 +53,6 @@
 # virtual methods
 .method public prepare(Landroid/filterfw/core/FilterContext;)V
     .locals 2
-    .param p1    # Landroid/filterfw/core/FilterContext;
 
     iget-boolean v0, p0, Landroid/filterpacks/base/CallbackFilter;->mCallbacksOnUiThread:Z
 
@@ -76,7 +74,6 @@
 
 .method public process(Landroid/filterfw/core/FilterContext;)V
     .locals 6
-    .param p1    # Landroid/filterfw/core/FilterContext;
 
     const-string v1, "frame"
 

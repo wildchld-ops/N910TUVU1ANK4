@@ -30,7 +30,6 @@
 # direct methods
 .method constructor <init>(Landroid/content/Intent;)V
     .locals 0
-    .param p1    # Landroid/content/Intent;
 
     invoke-direct {p0}, Landroid/service/wallpaper/IWallpaperConnection$Stub;-><init>()V
 
@@ -43,7 +42,6 @@
 # virtual methods
 .method public attachEngine(Landroid/service/wallpaper/IWallpaperEngine;)V
     .locals 1
-    .param p1    # Landroid/service/wallpaper/IWallpaperEngine;
 
     monitor-enter p0
 
@@ -227,15 +225,12 @@
 
 .method public engineShown(Landroid/service/wallpaper/IWallpaperEngine;)V
     .locals 0
-    .param p1    # Landroid/service/wallpaper/IWallpaperEngine;
 
     return-void
 .end method
 
 .method public onServiceConnected(Landroid/content/ComponentName;Landroid/os/IBinder;)V
     .locals 10
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Landroid/os/IBinder;
 
     # getter for: Landroid/app/wallpaperbackup/LivePreview;->mWallpaperConnection:Landroid/app/wallpaperbackup/LivePreview$WallpaperConnection;
     invoke-static {}, Landroid/app/wallpaperbackup/LivePreview;->access$100()Landroid/app/wallpaperbackup/LivePreview$WallpaperConnection;
@@ -306,7 +301,6 @@
 
 .method public onServiceDisconnected(Landroid/content/ComponentName;)V
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
 
     const/4 v0, 0x0
 
@@ -353,7 +347,6 @@
 
 .method public setWallpaper(Ljava/lang/String;)Landroid/os/ParcelFileDescriptor;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 

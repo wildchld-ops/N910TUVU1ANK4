@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -45,13 +44,6 @@
 
 .method public findAccessibilityNodeInfoByAccessibilityId(JILandroid/view/accessibility/IAccessibilityInteractionConnectionCallback;IIJLandroid/view/MagnificationSpec;)V
     .locals 5
-    .param p1    # J
-    .param p3    # I
-    .param p4    # Landroid/view/accessibility/IAccessibilityInteractionConnectionCallback;
-    .param p5    # I
-    .param p6    # I
-    .param p7    # J
-    .param p9    # Landroid/view/MagnificationSpec;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -135,14 +127,6 @@
 
 .method public findAccessibilityNodeInfosByText(JLjava/lang/String;ILandroid/view/accessibility/IAccessibilityInteractionConnectionCallback;IIJLandroid/view/MagnificationSpec;)V
     .locals 5
-    .param p1    # J
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
-    .param p5    # Landroid/view/accessibility/IAccessibilityInteractionConnectionCallback;
-    .param p6    # I
-    .param p7    # I
-    .param p8    # J
-    .param p10    # Landroid/view/MagnificationSpec;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -228,14 +212,6 @@
 
 .method public findAccessibilityNodeInfosByViewId(JLjava/lang/String;ILandroid/view/accessibility/IAccessibilityInteractionConnectionCallback;IIJLandroid/view/MagnificationSpec;)V
     .locals 5
-    .param p1    # J
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
-    .param p5    # Landroid/view/accessibility/IAccessibilityInteractionConnectionCallback;
-    .param p6    # I
-    .param p7    # I
-    .param p8    # J
-    .param p10    # Landroid/view/MagnificationSpec;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -321,14 +297,6 @@
 
 .method public findFocus(JIILandroid/view/accessibility/IAccessibilityInteractionConnectionCallback;IIJLandroid/view/MagnificationSpec;)V
     .locals 5
-    .param p1    # J
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Landroid/view/accessibility/IAccessibilityInteractionConnectionCallback;
-    .param p6    # I
-    .param p7    # I
-    .param p8    # J
-    .param p10    # Landroid/view/MagnificationSpec;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -414,14 +382,6 @@
 
 .method public focusSearch(JIILandroid/view/accessibility/IAccessibilityInteractionConnectionCallback;IIJLandroid/view/MagnificationSpec;)V
     .locals 5
-    .param p1    # J
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Landroid/view/accessibility/IAccessibilityInteractionConnectionCallback;
-    .param p6    # I
-    .param p7    # I
-    .param p8    # J
-    .param p10    # Landroid/view/MagnificationSpec;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -515,14 +475,6 @@
 
 .method public performAccessibilityAction(JILandroid/os/Bundle;ILandroid/view/accessibility/IAccessibilityInteractionConnectionCallback;IIJ)V
     .locals 5
-    .param p1    # J
-    .param p3    # I
-    .param p4    # Landroid/os/Bundle;
-    .param p5    # I
-    .param p6    # Landroid/view/accessibility/IAccessibilityInteractionConnectionCallback;
-    .param p7    # I
-    .param p8    # I
-    .param p9    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

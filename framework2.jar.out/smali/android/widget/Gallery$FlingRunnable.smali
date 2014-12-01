@@ -48,8 +48,6 @@
 
 .method static synthetic access$100(Landroid/widget/Gallery$FlingRunnable;Z)V
     .locals 0
-    .param p0    # Landroid/widget/Gallery$FlingRunnable;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Landroid/widget/Gallery$FlingRunnable;->endFling(Z)V
 
@@ -58,7 +56,6 @@
 
 .method static synthetic access$200(Landroid/widget/Gallery$FlingRunnable;)Landroid/widget/Scroller;
     .locals 1
-    .param p0    # Landroid/widget/Gallery$FlingRunnable;
 
     iget-object v0, p0, Landroid/widget/Gallery$FlingRunnable;->mScroller:Landroid/widget/Scroller;
 
@@ -67,7 +64,6 @@
 
 .method private endFling(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Landroid/widget/Gallery$FlingRunnable;->mScroller:Landroid/widget/Scroller;
 
@@ -315,7 +311,6 @@
 
 .method public startUsingDistance(I)V
     .locals 6
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -355,7 +350,6 @@
 
 .method public startUsingVelocity(I)V
     .locals 9
-    .param p1    # I
 
     const v6, 0x7fffffff
 
@@ -404,7 +398,6 @@
 
 .method public stop(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Landroid/widget/Gallery$FlingRunnable;->this$0:Landroid/widget/Gallery;
 

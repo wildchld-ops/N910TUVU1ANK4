@@ -39,7 +39,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/wm/DragState;)V
     .locals 3
-    .param p1    # Lcom/android/server/wm/DragState;
 
     const/4 v1, 0x0
 
@@ -108,7 +107,6 @@
 
 .method private stepDropAnimation(J)Z
     .locals 8
-    .param p1    # J
 
     const/4 v0, 0x0
 
@@ -671,7 +669,6 @@
 
 .method public setAnimation(Landroid/view/animation/Animation;)V
     .locals 3
-    .param p1    # Landroid/view/animation/Animation;
 
     const/4 v0, 0x0
 
@@ -702,7 +699,6 @@
 
 .method stepAnimationLocked(J)Z
     .locals 6
-    .param p1    # J
 
     const/4 v0, 0x1
 

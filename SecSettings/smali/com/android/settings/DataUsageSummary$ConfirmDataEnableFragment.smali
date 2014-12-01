@@ -25,7 +25,6 @@
 
 .method public static show(Lcom/android/settings/DataUsageSummary;)Landroid/app/DialogFragment;
     .locals 3
-    .param p0    # Lcom/android/settings/DataUsageSummary;
 
     invoke-virtual {p0}, Landroid/app/Fragment;->isAdded()Z
 
@@ -62,7 +61,6 @@
 # virtual methods
 .method public onCancel(Landroid/content/DialogInterface;)V
     .locals 2
-    .param p1    # Landroid/content/DialogInterface;
 
     invoke-virtual {p0}, Landroid/app/Fragment;->getTargetFragment()Landroid/app/Fragment;
 
@@ -83,7 +81,6 @@
 
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 

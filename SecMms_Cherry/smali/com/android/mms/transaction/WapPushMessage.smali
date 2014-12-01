@@ -183,7 +183,6 @@
 
 .method private hasProtocol(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "://"
 
@@ -968,7 +967,6 @@
 
 .method private parseTag(I)V
     .locals 3
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;
@@ -1123,7 +1121,6 @@
 
 .method private readString(Ljava/lang/StringBuffer;)I
     .locals 7
-    .param p1    # Ljava/lang/StringBuffer;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;
@@ -1232,7 +1229,6 @@
 
 .method public static slActionToPriority(I)I
     .locals 1
-    .param p0    # I
 
     const/4 v0, 0x3
 
@@ -1346,7 +1342,6 @@
 
 .method public parse([B)V
     .locals 19
-    .param p1    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;
@@ -1653,7 +1648,6 @@
 
 .method public parsepushaddress(Landroid/content/Intent;)V
     .locals 1
-    .param p1    # Landroid/content/Intent;
 
     const-string v0, "origaddr"
 
@@ -1668,7 +1662,6 @@
 
 .method public setSimIdentifier(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "gsm/WapPushMessage _ MULTISIM"
 

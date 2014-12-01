@@ -37,12 +37,6 @@
 # direct methods
 .method public constructor <init>(Landroid/widget/RemoteViews;ILandroid/content/ClipData;Landroid/app/PendingIntent;Landroid/app/PendingIntent;Landroid/app/PendingIntent;Z)V
     .locals 1
-    .param p2    # I
-    .param p3    # Landroid/content/ClipData;
-    .param p4    # Landroid/app/PendingIntent;
-    .param p5    # Landroid/app/PendingIntent;
-    .param p6    # Landroid/app/PendingIntent;
-    .param p7    # Z
 
     iput-object p1, p0, Landroid/widget/RemoteViews$SetOnLongClickDragable;->this$0:Landroid/widget/RemoteViews;
 
@@ -67,7 +61,6 @@
 
 .method public constructor <init>(Landroid/widget/RemoteViews;Landroid/os/Parcel;)V
     .locals 3
-    .param p2    # Landroid/os/Parcel;
 
     iput-object p1, p0, Landroid/widget/RemoteViews$SetOnLongClickDragable;->this$0:Landroid/widget/RemoteViews;
 
@@ -183,9 +176,6 @@
 # virtual methods
 .method public apply(Landroid/view/View;Landroid/view/ViewGroup;Landroid/widget/RemoteViews$OnClickHandler;)V
     .locals 4
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/widget/RemoteViews$OnClickHandler;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/widget/RemoteViews$ActionException;
@@ -235,8 +225,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 5
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     const/4 v1, 0x1
 

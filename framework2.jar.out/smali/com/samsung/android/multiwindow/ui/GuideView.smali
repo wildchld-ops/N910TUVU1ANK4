@@ -40,7 +40,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -89,8 +88,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/os/IBinder;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/IBinder;
 
     const/4 v1, 0x0
 
@@ -141,7 +138,6 @@
 
 .method public constructor <init>(Landroid/view/View;)V
     .locals 3
-    .param p1    # Landroid/view/View;
 
     const/4 v2, 0x0
 
@@ -536,7 +532,6 @@
 
 .method protected onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 0
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/view/View;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -547,7 +542,6 @@
 
 .method public setDimAmount(F)V
     .locals 0
-    .param p1    # F
 
     iput p1, p0, Lcom/samsung/android/multiwindow/ui/GuideView;->mDimAmount:F
 
@@ -556,7 +550,6 @@
 
 .method public setFakeHeaderResource(I)V
     .locals 4
-    .param p1    # I
 
     iget v2, p0, Lcom/samsung/android/multiwindow/ui/GuideView;->mFakeHeaderResourceId:I
 
@@ -624,7 +617,6 @@
 
 .method public setGuideBitmap(Landroid/graphics/Bitmap;)V
     .locals 2
-    .param p1    # Landroid/graphics/Bitmap;
 
     new-instance v0, Landroid/graphics/drawable/BitmapDrawable;
 
@@ -651,7 +643,6 @@
 
 .method public setGuideResource(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Lcom/samsung/android/multiwindow/ui/GuideView;->mGuideResourceId:I
 
@@ -674,7 +665,6 @@
 
 .method public setPrivateFlags(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/android/multiwindow/ui/GuideView;->mPrivateFlag:I
 
@@ -683,7 +673,6 @@
 
 .method public setWindowType(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/android/multiwindow/ui/GuideView;->mWindowType:I
 
@@ -692,10 +681,6 @@
 
 .method public show(IIII)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/4 v5, 0x0
 
@@ -716,11 +701,6 @@
 
 .method public show(IIIIZ)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Z
 
     const/4 v3, 0x1
 

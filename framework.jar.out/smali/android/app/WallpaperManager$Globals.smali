@@ -35,7 +35,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/Looper;)V
     .locals 2
-    .param p1    # Landroid/os/Looper;
 
     invoke-direct {p0}, Landroid/app/IWallpaperManagerCallback$Stub;-><init>()V
 
@@ -62,8 +61,6 @@
 
 .method static synthetic access$002(Landroid/app/WallpaperManager$Globals;Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
     .locals 0
-    .param p0    # Landroid/app/WallpaperManager$Globals;
-    .param p1    # Landroid/graphics/Bitmap;
 
     iput-object p1, p0, Landroid/app/WallpaperManager$Globals;->mWallpaper:Landroid/graphics/Bitmap;
 
@@ -72,8 +69,6 @@
 
 .method static synthetic access$102(Landroid/app/WallpaperManager$Globals;Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
     .locals 0
-    .param p0    # Landroid/app/WallpaperManager$Globals;
-    .param p1    # Landroid/graphics/Bitmap;
 
     iput-object p1, p0, Landroid/app/WallpaperManager$Globals;->mDefaultWallpaper:Landroid/graphics/Bitmap;
 
@@ -82,7 +77,6 @@
 
 .method static synthetic access$300(Landroid/app/WallpaperManager$Globals;)Landroid/app/IWallpaperManager;
     .locals 1
-    .param p0    # Landroid/app/WallpaperManager$Globals;
 
     iget-object v0, p0, Landroid/app/WallpaperManager$Globals;->mService:Landroid/app/IWallpaperManager;
 
@@ -91,7 +85,6 @@
 
 .method private getCompressedVersion(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const-string v0, ".jpg"
 
@@ -146,7 +139,6 @@
 
 .method private getCurrentWallpaperLocked(Landroid/content/Context;)Landroid/graphics/Bitmap;
     .locals 10
-    .param p1    # Landroid/content/Context;
 
     const/4 v8, 0x0
 
@@ -277,7 +269,6 @@
 
 .method private getDefaultWallpaperLocked(Landroid/content/Context;)Landroid/graphics/Bitmap;
     .locals 27
-    .param p1    # Landroid/content/Context;
 
     const/4 v12, 0x0
 
@@ -899,8 +890,6 @@
 
 .method public getWallpaperLockedForMultiSim(Landroid/content/Context;I)Landroid/graphics/Bitmap;
     .locals 10
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     const/4 v8, 0x0
 
@@ -1043,8 +1032,6 @@
 
 .method public peekWallpaperBitmap(Landroid/content/Context;Z)Landroid/graphics/Bitmap;
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Z
 
     monitor-enter p0
 

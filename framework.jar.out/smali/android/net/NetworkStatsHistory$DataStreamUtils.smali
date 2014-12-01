@@ -25,7 +25,6 @@
 
 .method public static readFullLongArray(Ljava/io/DataInputStream;)[J
     .locals 5
-    .param p0    # Ljava/io/DataInputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -75,7 +74,6 @@
 
 .method public static readVarLong(Ljava/io/DataInputStream;)J
     .locals 6
-    .param p0    # Ljava/io/DataInputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -126,7 +124,6 @@
 
 .method public static readVarLongArray(Ljava/io/DataInputStream;)[J
     .locals 5
-    .param p0    # Ljava/io/DataInputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -180,8 +177,6 @@
 
 .method public static writeVarLong(Ljava/io/DataOutputStream;J)V
     .locals 4
-    .param p0    # Ljava/io/DataOutputStream;
-    .param p1    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -223,9 +218,6 @@
 
 .method public static writeVarLongArray(Ljava/io/DataOutputStream;[JI)V
     .locals 3
-    .param p0    # Ljava/io/DataOutputStream;
-    .param p1    # [J
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

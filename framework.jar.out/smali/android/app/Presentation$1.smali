@@ -21,8 +21,6 @@
 # direct methods
 .method constructor <init>(Landroid/content/Context;ILandroid/view/WindowManagerImpl;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     iput-object p3, p0, Landroid/app/Presentation$1;->val$displayWindowManager:Landroid/view/WindowManagerImpl;
 
@@ -35,7 +33,6 @@
 # virtual methods
 .method public getSystemService(Ljava/lang/String;)Ljava/lang/Object;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string/jumbo v0, "window"
 

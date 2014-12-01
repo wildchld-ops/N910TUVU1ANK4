@@ -40,7 +40,6 @@
 # direct methods
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;)V
     .locals 2
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
 
     const/4 v1, 0x1
 
@@ -65,9 +64,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;FF)V
     .locals 2
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # F
-    .param p3    # F
 
     const/4 v1, 0x1
 
@@ -92,11 +88,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;FFFF)V
     .locals 2
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
 
     const/4 v1, 0x1
 
@@ -121,9 +112,6 @@
 
 .method private static final findDragDropBox(Lcom/sec/android/glview/TwGLView;FF)Lcom/sec/android/app/camera/glwidget/TwGLDragDropBox;
     .locals 7
-    .param p0    # Lcom/sec/android/glview/TwGLView;
-    .param p1    # F
-    .param p2    # F
 
     const/4 v4, 0x0
 
@@ -202,7 +190,6 @@
 # virtual methods
 .method public addView(Lcom/sec/android/glview/TwGLView;)V
     .locals 1
-    .param p1    # Lcom/sec/android/glview/TwGLView;
 
     invoke-virtual {p1}, Lcom/sec/android/glview/TwGLView;->resetTranslate()V
 
@@ -219,7 +206,6 @@
 
 .method public addViewToDrag(Lcom/sec/android/glview/TwGLView;)V
     .locals 0
-    .param p1    # Lcom/sec/android/glview/TwGLView;
 
     invoke-virtual {p1}, Lcom/sec/android/glview/TwGLView;->resetTranslate()V
 
@@ -266,8 +252,6 @@
 
 .method public contains(FF)Z
     .locals 3
-    .param p1    # F
-    .param p2    # F
 
     invoke-virtual {p0}, Lcom/sec/android/glview/TwGLView;->getClipRect()Landroid/graphics/Rect;
 
@@ -389,11 +373,6 @@
 
 .method public onDrag(Lcom/sec/android/glview/TwGLView;FFFF)V
     .locals 9
-    .param p1    # Lcom/sec/android/glview/TwGLView;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
 
     const/4 v5, 0x0
 
@@ -534,9 +513,6 @@
 
 .method public onDragEnd(Lcom/sec/android/glview/TwGLView;FF)V
     .locals 6
-    .param p1    # Lcom/sec/android/glview/TwGLView;
-    .param p2    # F
-    .param p3    # F
 
     const/4 v5, 0x0
 
@@ -646,9 +622,6 @@
 
 .method public onDragStart(Lcom/sec/android/glview/TwGLView;FF)V
     .locals 3
-    .param p1    # Lcom/sec/android/glview/TwGLView;
-    .param p2    # F
-    .param p3    # F
 
     const/4 v2, 0x0
 
@@ -707,8 +680,6 @@
 
 .method protected onDrop(Lcom/sec/android/glview/TwGLView;Lcom/sec/android/app/camera/glwidget/TwGLDragDropBox;)V
     .locals 2
-    .param p1    # Lcom/sec/android/glview/TwGLView;
-    .param p2    # Lcom/sec/android/app/camera/glwidget/TwGLDragDropBox;
 
     const/4 v1, 0x0
 
@@ -764,7 +735,6 @@
 
 .method public onTouchOver(Lcom/sec/android/glview/TwGLView;)V
     .locals 0
-    .param p1    # Lcom/sec/android/glview/TwGLView;
 
     return-void
 .end method
@@ -785,7 +755,6 @@
 
 .method public setDraggable(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLDragDropBox;->mDraggable:Z
 
@@ -794,7 +763,6 @@
 
 .method public setDroppability(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLDragDropBox;->mDroppable:Z
 
@@ -829,7 +797,6 @@
 
 .method public setOnDragDropBoxListener(Lcom/sec/android/app/camera/glwidget/TwGLDragDropBox$OnDragDropBoxListener;)V
     .locals 0
-    .param p1    # Lcom/sec/android/app/camera/glwidget/TwGLDragDropBox$OnDragDropBoxListener;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLDragDropBox;->mOnDragDropBoxListener:Lcom/sec/android/app/camera/glwidget/TwGLDragDropBox$OnDragDropBoxListener;
 
@@ -838,7 +805,6 @@
 
 .method public setOnDragListener(Lcom/sec/android/glview/TwGLView$OnDragListener;)V
     .locals 0
-    .param p1    # Lcom/sec/android/glview/TwGLView$OnDragListener;
 
     iput-object p1, p0, Lcom/sec/android/glview/TwGLView;->mOnDragListener:Lcom/sec/android/glview/TwGLView$OnDragListener;
 
@@ -847,7 +813,6 @@
 
 .method public setOnDropListener(Lcom/sec/android/app/camera/glwidget/TwGLDragDropBox$OnDropListener;)V
     .locals 0
-    .param p1    # Lcom/sec/android/app/camera/glwidget/TwGLDragDropBox$OnDropListener;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLDragDropBox;->mOnDropListener:Lcom/sec/android/app/camera/glwidget/TwGLDragDropBox$OnDropListener;
 

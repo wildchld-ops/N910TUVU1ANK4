@@ -120,7 +120,6 @@
 
 .method constructor <init>(Landroid/webkitsec/WebViewClassic;)V
     .locals 3
-    .param p1    # Landroid/webkitsec/WebViewClassic;
 
     const/4 v2, 0x0
 
@@ -249,7 +248,6 @@
 
 .method private drawMagnifierContents(Landroid/graphics/Canvas;)V
     .locals 11
-    .param p1    # Landroid/graphics/Canvas;
 
     const/4 v10, 0x1
 
@@ -428,8 +426,6 @@
 
 .method private setShowXY(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     iput p1, p0, Landroid/webkitsec/WebMagnifier;->mSrcX:I
 
@@ -1017,8 +1013,6 @@
 
 .method move(II)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
 
     const/16 v4, 0xa5
 
@@ -1078,7 +1072,6 @@
 
 .method protected onDraw(Landroid/graphics/Canvas;)V
     .locals 9
-    .param p1    # Landroid/graphics/Canvas;
 
     const/4 v8, -0x1
 
@@ -1208,7 +1201,6 @@
 
 .method setWebView(Landroid/webkitsec/WebView;)V
     .locals 1
-    .param p1    # Landroid/webkitsec/WebView;
 
     if-nez p1, :cond_0
 
@@ -1239,8 +1231,6 @@
 
 .method declared-synchronized show(II)V
     .locals 23
-    .param p1    # I
-    .param p2    # I
 
     monitor-enter p0
 
@@ -1592,10 +1582,6 @@
 
 .method show(IILandroid/graphics/Rect;F)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/graphics/Rect;
-    .param p4    # F
 
     sput-object p3, Landroid/webkitsec/WebMagnifier;->mRectCurSel:Landroid/graphics/Rect;
 

@@ -60,8 +60,6 @@
 
 .method private static sendAPNM(Ljava/lang/String;I)V
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
 
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
@@ -104,8 +102,6 @@
 
 .method public static setAppName(Ljava/lang/String;I)V
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
 
     if-eqz p0, :cond_0
 
@@ -143,7 +139,6 @@
 
 .method public handleChunk(Lorg/apache/harmony/dalvik/ddmc/Chunk;)Lorg/apache/harmony/dalvik/ddmc/Chunk;
     .locals 1
-    .param p1    # Lorg/apache/harmony/dalvik/ddmc/Chunk;
 
     const/4 v0, 0x0
 

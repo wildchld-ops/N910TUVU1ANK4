@@ -36,7 +36,6 @@
 # virtual methods
 .method public onContentChanged(Lcom/android/mms/ui/ReservationMessageListAdapter;)V
     .locals 2
-    .param p1    # Lcom/android/mms/ui/ReservationMessageListAdapter;
 
     const-string v0, "Mms/ReservationMessageManager"
 

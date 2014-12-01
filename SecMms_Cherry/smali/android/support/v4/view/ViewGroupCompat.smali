@@ -88,7 +88,6 @@
 
 .method public static getLayoutMode(Landroid/view/ViewGroup;)I
     .locals 1
-    .param p0    # Landroid/view/ViewGroup;
 
     sget-object v0, Landroid/support/v4/view/ViewGroupCompat;->IMPL:Landroid/support/v4/view/ViewGroupCompat$ViewGroupCompatImpl;
 
@@ -101,9 +100,6 @@
 
 .method public static onRequestSendAccessibilityEvent(Landroid/view/ViewGroup;Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)Z
     .locals 1
-    .param p0    # Landroid/view/ViewGroup;
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/accessibility/AccessibilityEvent;
 
     sget-object v0, Landroid/support/v4/view/ViewGroupCompat;->IMPL:Landroid/support/v4/view/ViewGroupCompat$ViewGroupCompatImpl;
 
@@ -116,8 +112,6 @@
 
 .method public static setLayoutMode(Landroid/view/ViewGroup;I)V
     .locals 1
-    .param p0    # Landroid/view/ViewGroup;
-    .param p1    # I
 
     sget-object v0, Landroid/support/v4/view/ViewGroupCompat;->IMPL:Landroid/support/v4/view/ViewGroupCompat$ViewGroupCompatImpl;
 
@@ -128,8 +122,6 @@
 
 .method public static setMotionEventSplittingEnabled(Landroid/view/ViewGroup;Z)V
     .locals 1
-    .param p0    # Landroid/view/ViewGroup;
-    .param p1    # Z
 
     sget-object v0, Landroid/support/v4/view/ViewGroupCompat;->IMPL:Landroid/support/v4/view/ViewGroupCompat$ViewGroupCompatImpl;
 

@@ -120,17 +120,17 @@
 
     const-string v11, "sip_settings_category_key"
 
-    invoke-virtual {v8, v11}, Landroid/preference/PreferenceFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {v8, v11}, Lcom/android/phone/CallFeaturesSetting;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v6
 
     iget-object v8, p0, Lcom/android/phone/CallFeaturesSetting$23;->this$0:Lcom/android/phone/CallFeaturesSetting;
 
-    invoke-virtual {v8}, Landroid/preference/PreferenceFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {v8}, Lcom/android/phone/CallFeaturesSetting;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v4
 
-    invoke-virtual {v4}, Landroid/preference/PreferenceGroup;->getPreferenceCount()I
+    invoke-virtual {v4}, Landroid/preference/PreferenceScreen;->getPreferenceCount()I
 
     move-result v1
 
@@ -139,7 +139,7 @@
     :goto_0
     if-ge v2, v1, :cond_3
 
-    invoke-virtual {v4, v2}, Landroid/preference/PreferenceGroup;->getPreference(I)Landroid/preference/Preference;
+    invoke-virtual {v4, v2}, Landroid/preference/PreferenceScreen;->getPreference(I)Landroid/preference/Preference;
 
     move-result-object v3
 
@@ -177,7 +177,7 @@
 
     iget-object v8, p0, Lcom/android/phone/CallFeaturesSetting$23;->this$0:Lcom/android/phone/CallFeaturesSetting;
 
-    # invokes: Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    # invokes: Lcom/android/phone/CallFeaturesSetting;->getContentResolver()Landroid/content/ContentResolver;
     invoke-static {v8}, Lcom/android/phone/CallFeaturesSetting;->access$3700(Lcom/android/phone/CallFeaturesSetting;)Landroid/content/ContentResolver;
 
     move-result-object v8

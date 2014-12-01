@@ -62,7 +62,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -117,7 +116,6 @@
 
 .method public getSHA256(Ljava/lang/String;)Ljava/lang/String;
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -278,7 +276,6 @@
 
 .method public setAC(Lcom/android/mms/transaction/StatisticsBuilder$Action;)Lcom/android/mms/transaction/StatisticsBuilder;
     .locals 4
-    .param p1    # Lcom/android/mms/transaction/StatisticsBuilder$Action;
 
     iget-object v0, p0, Lcom/android/mms/transaction/StatisticsBuilder;->mDataSet:Ljava/util/TreeSet;
 
@@ -299,7 +296,6 @@
 
 .method public setBearer(Lcom/android/mms/transaction/StatisticsBuilder$Bearer;)Lcom/android/mms/transaction/StatisticsBuilder;
     .locals 4
-    .param p1    # Lcom/android/mms/transaction/StatisticsBuilder$Bearer;
 
     iget-object v0, p0, Lcom/android/mms/transaction/StatisticsBuilder;->mDataSet:Ljava/util/TreeSet;
 
@@ -320,7 +316,6 @@
 
 .method public setBytesIn(I)Lcom/android/mms/transaction/StatisticsBuilder;
     .locals 4
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/mms/transaction/StatisticsBuilder;->mDataSet:Ljava/util/TreeSet;
 
@@ -341,7 +336,6 @@
 
 .method public setBytesOut(I)Lcom/android/mms/transaction/StatisticsBuilder;
     .locals 4
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/mms/transaction/StatisticsBuilder;->mDataSet:Ljava/util/TreeSet;
 
@@ -362,7 +356,6 @@
 
 .method public setDIR(Lcom/android/mms/transaction/StatisticsBuilder$Direction;)Lcom/android/mms/transaction/StatisticsBuilder;
     .locals 4
-    .param p1    # Lcom/android/mms/transaction/StatisticsBuilder$Direction;
 
     iget-object v0, p0, Lcom/android/mms/transaction/StatisticsBuilder;->mDataSet:Ljava/util/TreeSet;
 
@@ -383,8 +376,6 @@
 
 .method public setDate(Lcom/android/mms/transaction/StatisticsBuilder$Field;Ljava/util/Date;)Lcom/android/mms/transaction/StatisticsBuilder;
     .locals 4
-    .param p1    # Lcom/android/mms/transaction/StatisticsBuilder$Field;
-    .param p2    # Ljava/util/Date;
 
     new-instance v0, Ljava/text/SimpleDateFormat;
 
@@ -409,7 +400,6 @@
 
 .method public setHashedPM(Ljava/lang/String;)Lcom/android/mms/transaction/StatisticsBuilder;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/mms/transaction/StatisticsBuilder;->mDataSet:Ljava/util/TreeSet;
 
@@ -426,7 +416,6 @@
 
 .method public setMSG(Ljava/lang/String;)Lcom/android/mms/transaction/StatisticsBuilder;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/mms/transaction/StatisticsBuilder;->mDataSet:Ljava/util/TreeSet;
 
@@ -443,7 +432,6 @@
 
 .method public setOK(Z)Lcom/android/mms/transaction/StatisticsBuilder;
     .locals 4
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/mms/transaction/StatisticsBuilder;->mDataSet:Ljava/util/TreeSet;
 
@@ -464,7 +452,6 @@
 
 .method public setPM(Ljava/lang/String;)Lcom/android/mms/transaction/StatisticsBuilder;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/mms/transaction/StatisticsBuilder;->mDataSet:Ljava/util/TreeSet;
 
@@ -485,7 +472,6 @@
 
 .method public setRSSI(I)Lcom/android/mms/transaction/StatisticsBuilder;
     .locals 4
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/mms/transaction/StatisticsBuilder;->mDataSet:Ljava/util/TreeSet;
 
@@ -506,7 +492,6 @@
 
 .method public setSVC(Lcom/android/mms/transaction/StatisticsBuilder$Service;)Lcom/android/mms/transaction/StatisticsBuilder;
     .locals 4
-    .param p1    # Lcom/android/mms/transaction/StatisticsBuilder$Service;
 
     iget-object v0, p0, Lcom/android/mms/transaction/StatisticsBuilder;->mDataSet:Ljava/util/TreeSet;
 

@@ -23,9 +23,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;Landroid/view/InputChannel;Landroid/os/Looper;Lcom/android/internal/policy/impl/spengesture/SPenGestureView;)V
     .locals 0
-    .param p2    # Landroid/view/InputChannel;
-    .param p3    # Landroid/os/Looper;
-    .param p4    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView;
 
     iput-object p1, p0, Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager$SPenGestureInputEventReceiver;->this$0:Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;
 
@@ -38,7 +35,6 @@
 
 .method private disableSPenGestureView(Landroid/view/MotionEvent;)V
     .locals 3
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager$SPenGestureInputEventReceiver;->this$0:Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;
 
@@ -114,7 +110,6 @@
 # virtual methods
 .method public onInputEvent(Landroid/view/InputEvent;)V
     .locals 6
-    .param p1    # Landroid/view/InputEvent;
 
     const/4 v5, 0x2
 

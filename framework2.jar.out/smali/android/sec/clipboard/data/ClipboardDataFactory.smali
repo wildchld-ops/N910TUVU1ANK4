@@ -14,7 +14,6 @@
 
 .method public static CreateClipBoardData(I)Landroid/sec/clipboard/data/ClipboardData;
     .locals 1
-    .param p0    # I
 
     const/4 v0, 0x0
 

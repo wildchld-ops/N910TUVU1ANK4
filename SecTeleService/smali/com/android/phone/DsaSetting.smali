@@ -421,7 +421,7 @@
 
     iget-object v2, p0, Lcom/android/phone/DsaSetting;->mActivateHandler:Lcom/android/phone/DsaSetting$ActivateHandler;
 
-    invoke-virtual {v2, v7, v1, v7}, Landroid/os/Handler;->obtainMessage(III)Landroid/os/Message;
+    invoke-virtual {v2, v7, v1, v7}, Lcom/android/phone/DsaSetting$ActivateHandler;->obtainMessage(III)Landroid/os/Message;
 
     move-result-object v5
 
@@ -442,7 +442,7 @@
 
     iget-object v4, p0, Lcom/android/phone/DsaSetting;->mActivateHandler:Lcom/android/phone/DsaSetting$ActivateHandler;
 
-    invoke-virtual {v4, v5, v1, v5}, Landroid/os/Handler;->obtainMessage(III)Landroid/os/Message;
+    invoke-virtual {v4, v5, v1, v5}, Lcom/android/phone/DsaSetting$ActivateHandler;->obtainMessage(III)Landroid/os/Message;
 
     move-result-object v5
 
@@ -459,7 +459,7 @@
 
     iget-object v1, p0, Lcom/android/phone/DsaSetting;->mActivateHandler:Lcom/android/phone/DsaSetting$ActivateHandler;
 
-    invoke-virtual {v1, v6}, Landroid/os/Handler;->obtainMessage(I)Landroid/os/Message;
+    invoke-virtual {v1, v6}, Lcom/android/phone/DsaSetting$ActivateHandler;->obtainMessage(I)Landroid/os/Message;
 
     move-result-object v1
 
@@ -472,7 +472,7 @@
 
     iget-object v2, p0, Lcom/android/phone/DsaSetting;->mActivateHandler:Lcom/android/phone/DsaSetting$ActivateHandler;
 
-    invoke-virtual {v2, v6}, Landroid/os/Handler;->obtainMessage(I)Landroid/os/Message;
+    invoke-virtual {v2, v6}, Lcom/android/phone/DsaSetting$ActivateHandler;->obtainMessage(I)Landroid/os/Message;
 
     move-result-object v2
 

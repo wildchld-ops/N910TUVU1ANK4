@@ -64,8 +64,6 @@
 
 .method constructor <init>(Landroid/content/Context;Landroid/hardware/scontext/provider/EventListener;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/hardware/scontext/provider/EventListener;
 
     invoke-direct {p0, p1, p2}, Landroid/hardware/scontext/provider/miscprovider/PedometerVendorImpl;-><init>(Landroid/content/Context;Landroid/hardware/scontext/provider/EventListener;)V
 
@@ -170,8 +168,6 @@
 
 .method static synthetic access$000(Landroid/hardware/scontext/provider/miscprovider/PedometerAdspImpl;Landroid/hardware/SensorEvent;)V
     .locals 0
-    .param p0    # Landroid/hardware/scontext/provider/miscprovider/PedometerAdspImpl;
-    .param p1    # Landroid/hardware/SensorEvent;
 
     invoke-direct {p0, p1}, Landroid/hardware/scontext/provider/miscprovider/PedometerAdspImpl;->parseEvent(Landroid/hardware/SensorEvent;)V
 
@@ -180,7 +176,6 @@
 
 .method private bytesToLong([B)J
     .locals 3
-    .param p1    # [B
 
     const/16 v1, 0x8
 
@@ -201,8 +196,6 @@
 
 .method private convertFloatToByteArray(FI)[B
     .locals 4
-    .param p1    # F
-    .param p2    # I
 
     new-array v0, p2, [B
 
@@ -253,12 +246,6 @@
 
 .method private getCalcultatedData(I[J[JIJ[J)Landroid/os/Bundle;
     .locals 35
-    .param p1    # I
-    .param p2    # [J
-    .param p3    # [J
-    .param p4    # I
-    .param p5    # J
-    .param p7    # [J
 
     new-instance v23, Landroid/os/Bundle;
 
@@ -713,7 +700,6 @@
 
 .method private parseEvent(Landroid/hardware/SensorEvent;)V
     .locals 37
-    .param p1    # Landroid/hardware/SensorEvent;
 
     if-nez p1, :cond_0
 
@@ -1856,7 +1842,6 @@
 
 .method declared-synchronized setLoggingMode(Z)V
     .locals 4
-    .param p1    # Z
 
     monitor-enter p0
 
@@ -1929,9 +1914,6 @@
 
 .method setProperty(IDD)V
     .locals 6
-    .param p1    # I
-    .param p2    # D
-    .param p4    # D
 
     iget-object v0, p0, Landroid/hardware/scontext/provider/miscprovider/PedometerAdspImpl;->mPedometerEngine:Landroid/hardware/scontext/provider/miscprovider/lib/PedometerEngine;
 

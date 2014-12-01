@@ -68,7 +68,6 @@
 
 .method private constructor <init>(Landroid/os/Parcel;)V
     .locals 5
-    .param p1    # Landroid/os/Parcel;
 
     const/4 v1, 0x1
 
@@ -227,8 +226,6 @@
 
 .method synthetic constructor <init>(Landroid/os/Parcel;Landroid/os/storage/StorageVolume$1;)V
     .locals 0
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # Landroid/os/storage/StorageVolume$1;
 
     invoke-direct {p0, p1}, Landroid/os/storage/StorageVolume;-><init>(Landroid/os/Parcel;)V
 
@@ -237,15 +234,6 @@
 
 .method public constructor <init>(Ljava/io/File;IZZZIZJLandroid/os/UserHandle;)V
     .locals 1
-    .param p1    # Ljava/io/File;
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # Z
-    .param p5    # Z
-    .param p6    # I
-    .param p7    # Z
-    .param p8    # J
-    .param p10    # Landroid/os/UserHandle;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -280,17 +268,6 @@
 
 .method public constructor <init>(Ljava/io/File;IZZZIZJLandroid/os/UserHandle;Ljava/lang/String;Z)V
     .locals 0
-    .param p1    # Ljava/io/File;
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # Z
-    .param p5    # Z
-    .param p6    # I
-    .param p7    # Z
-    .param p8    # J
-    .param p10    # Landroid/os/UserHandle;
-    .param p11    # Ljava/lang/String;
-    .param p12    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -321,9 +298,6 @@
 
 .method public static fromTemplate(Landroid/os/storage/StorageVolume;Ljava/io/File;Landroid/os/UserHandle;)Landroid/os/storage/StorageVolume;
     .locals 13
-    .param p0    # Landroid/os/storage/StorageVolume;
-    .param p1    # Ljava/io/File;
-    .param p2    # Landroid/os/UserHandle;
 
     new-instance v0, Landroid/os/storage/StorageVolume;
 
@@ -374,7 +348,6 @@
 
 .method public dump(Lcom/android/internal/util/IndentingPrintWriter;)V
     .locals 3
-    .param p1    # Lcom/android/internal/util/IndentingPrintWriter;
 
     const-string v0, "StorageVolume:"
 
@@ -515,7 +488,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 3
-    .param p1    # Ljava/lang/Object;
 
     instance-of v1, p1, Landroid/os/storage/StorageVolume;
 
@@ -556,7 +528,6 @@
 
 .method public getDescription(Landroid/content/Context;)Ljava/lang/String;
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -752,7 +723,6 @@
 
 .method public setActivitySecureContainer(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/os/storage/StorageVolume;->mActivitySecureContainer:Z
 
@@ -761,7 +731,6 @@
 
 .method public setState(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/os/storage/StorageVolume;->mState:Ljava/lang/String;
 
@@ -770,7 +739,6 @@
 
 .method public setStorageId(I)V
     .locals 1
-    .param p1    # I
 
     add-int/lit8 v0, p1, 0x1
 
@@ -785,7 +753,6 @@
 
 .method public setSubSystem(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/os/storage/StorageVolume;->mSubSystem:Ljava/lang/String;
 
@@ -794,7 +761,6 @@
 
 .method public setUserLabel(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/os/storage/StorageVolume;->mUserLabel:Ljava/lang/String;
 
@@ -803,7 +769,6 @@
 
 .method public setUuid(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/os/storage/StorageVolume;->mUuid:Ljava/lang/String;
 
@@ -836,8 +801,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 5
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     const/4 v1, 0x1
 

@@ -42,9 +42,6 @@
 
 .method public constructor <init>(Landroid/nfc/NdefMessage;[Landroid/net/Uri;I)V
     .locals 0
-    .param p1    # Landroid/nfc/NdefMessage;
-    .param p2    # [Landroid/net/Uri;
-    .param p3    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -69,8 +66,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 3
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     const/4 v1, 0x0
 

@@ -87,7 +87,6 @@
 
 .method static synthetic access$000(Lcom/android/launcher2/ChainIterable;)Ljava/lang/Iterable;
     .locals 1
-    .param p0    # Lcom/android/launcher2/ChainIterable;
 
     iget-object v0, p0, Lcom/android/launcher2/ChainIterable;->mIterables:Ljava/lang/Iterable;
 

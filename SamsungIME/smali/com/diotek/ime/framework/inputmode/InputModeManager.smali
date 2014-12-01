@@ -298,7 +298,6 @@
 
 .method private getSoftFuncKbdIndexByKeycode(I)I
     .locals 5
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -340,9 +339,6 @@
 
 .method private getValideDigitEditMMKeyCode([III)I
     .locals 6
-    .param p1    # [I
-    .param p2    # I
-    .param p3    # I
 
     array-length v4, p1
 
@@ -400,7 +396,6 @@
 
 .method private isChangedMMKeyInputMode(I)Z
     .locals 3
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -546,7 +541,6 @@
 
 .method private setInputRangeForSoftFuncKbd(I)V
     .locals 2
-    .param p1    # I
 
     rsub-int v0, p1, -0xa1
 
@@ -584,7 +578,6 @@
 # virtual methods
 .method public checkAndChangeInputMethod(Lcom/diotek/ime/framework/common/Language;)V
     .locals 13
-    .param p1    # Lcom/diotek/ime/framework/common/Language;
 
     const/high16 v12, 0x62670000
 
@@ -2890,7 +2883,6 @@
 
 .method public getNextInputRange(Z)I
     .locals 7
-    .param p1    # Z
 
     const/4 v6, 0x0
 
@@ -2976,7 +2968,6 @@
 
 .method public getPreviousInputRange(Z)I
     .locals 6
-    .param p1    # Z
 
     invoke-static {}, Lcom/diotek/ime/framework/repository/InputModeStatus;->getInputMethodStatus()I
 
@@ -3068,8 +3059,6 @@
 
 .method public getValidMMCodes(II)[I
     .locals 31
-    .param p1    # I
-    .param p2    # I
 
     move-object/from16 v0, p0
 
@@ -4349,10 +4338,6 @@
 
 .method public getValidRanges(IIIZ)[I
     .locals 11
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Z
 
     const/4 v9, 0x3
 
@@ -5715,7 +5700,6 @@
 
 .method public isHandwritingInputMode(I)Z
     .locals 3
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -6377,7 +6361,6 @@
 
 .method public isPopupInputMethod(I)Z
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x7
 
@@ -6773,7 +6756,6 @@
 
 .method public setChineseStrokeModeOn(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/inputmode/InputModeManager;->mIsChineseStrokeModeOn:Z
 
@@ -6782,7 +6764,6 @@
 
 .method public setEnterForWebNavigation(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/inputmode/InputModeManager;->mIsEnterForWebNavigation:Z
 
@@ -6791,7 +6772,6 @@
 
 .method public setFloatingToQwertyTransition(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/inputmode/InputModeManager;->mFloatingToQwerty:Z
 
@@ -6894,7 +6874,6 @@
 
 .method public setHwrPreviousInputRange(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/diotek/ime/framework/inputmode/InputModeManager;->mHwrPreviousInputRange:I
 
@@ -6903,7 +6882,6 @@
 
 .method public setInputLanguage(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/diotek/ime/framework/inputmode/InputModeManager;->mInputLanguage:I
 
@@ -6912,7 +6890,6 @@
 
 .method public setInputMethod(I)V
     .locals 17
-    .param p1    # I
 
     invoke-static {}, Lcom/diotek/ime/framework/repository/InputModeStatus;->getInputMethodStatus()I
 
@@ -7268,7 +7245,6 @@
 
 .method public setInputMethodKor(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/diotek/ime/framework/inputmode/InputModeManager;->mInputMethodKor:I
 
@@ -7277,7 +7253,6 @@
 
 .method public setInputMethodOfEachLanguage(Lcom/diotek/ime/framework/common/Language;)V
     .locals 4
-    .param p1    # Lcom/diotek/ime/framework/common/Language;
 
     const/16 v0, 0xf
 
@@ -7360,7 +7335,6 @@
 
 .method public setInputRange(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Lcom/diotek/ime/framework/inputmode/InputModeManager;->mInputRange:I
 
@@ -7395,7 +7369,6 @@
 
 .method public setNeedUpdateKeyboardView(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/inputmode/InputModeManager;->mNeedUpdateKeyboardView:Z
 
@@ -7404,7 +7377,6 @@
 
 .method public setPrevInputMethod(I)V
     .locals 0
-    .param p1    # I
 
     sput p1, Lcom/diotek/ime/framework/inputmode/InputModeManager;->mPrevInputMethod:I
 
@@ -7413,7 +7385,6 @@
 
 .method public setPrevSoftFuncKeyCode(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/diotek/ime/framework/inputmode/InputModeManager;->mPrevSoftFuncKbdKeyCode:I
 
@@ -7422,7 +7393,6 @@
 
 .method public setQickCangjieMode(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/inputmode/InputModeManager;->mIsQuickCangieMode:Z
 
@@ -7431,7 +7401,6 @@
 
 .method public setSecondarySymbolStatus(I)V
     .locals 9
-    .param p1    # I
 
     const/4 v8, -0x1
 
@@ -7551,7 +7520,6 @@
 
 .method public setSoftFuncKbdIndex(I)V
     .locals 1
-    .param p1    # I
 
     if-gez p1, :cond_0
 
@@ -7593,7 +7561,6 @@
 
 .method public setSoftFuncKbdIndexByKeycode(I)V
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/diotek/ime/framework/inputmode/InputModeManager;->getSoftFuncKbdIndexByKeycode(I)I
 

@@ -38,8 +38,6 @@
 
 .method synthetic constructor <init>(Landroid/widget/HorizontalListView;Landroid/widget/HorizontalListView$1;)V
     .locals 0
-    .param p1    # Landroid/widget/HorizontalListView;
-    .param p2    # Landroid/widget/HorizontalListView$1;
 
     invoke-direct {p0, p1}, Landroid/widget/HorizontalListView$FocusSelector;-><init>(Landroid/widget/HorizontalListView;)V
 
@@ -64,8 +62,6 @@
 
 .method public setup(II)Landroid/widget/HorizontalListView$FocusSelector;
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     iput p1, p0, Landroid/widget/HorizontalListView$FocusSelector;->mPosition:I
 

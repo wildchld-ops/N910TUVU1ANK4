@@ -32,8 +32,6 @@
 
 .method public static decodeB(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/UnsupportedEncodingException;
@@ -53,7 +51,6 @@
 
 .method public static decodeBase64(Ljava/lang/String;)[B
     .locals 6
-    .param p0    # Ljava/lang/String;
 
     new-instance v1, Ljava/io/ByteArrayOutputStream;
 
@@ -108,7 +105,6 @@
 
 .method public static decodeBaseQuotedPrintable(Ljava/lang/String;)[B
     .locals 6
-    .param p0    # Ljava/lang/String;
 
     new-instance v1, Ljava/io/ByteArrayOutputStream;
 
@@ -163,7 +159,6 @@
 
 .method public static decodeEncodedWords(Ljava/lang/String;)Ljava/lang/String;
     .locals 15
-    .param p0    # Ljava/lang/String;
 
     const/4 v11, -0x1
 
@@ -548,8 +543,6 @@
 
 .method public static decodeQ(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 5
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/UnsupportedEncodingException;

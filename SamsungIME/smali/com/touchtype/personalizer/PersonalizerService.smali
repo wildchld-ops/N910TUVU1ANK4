@@ -292,7 +292,6 @@
 
 .method static synthetic access$1200(Lcom/touchtype/personalizer/PersonalizerService;)I
     .locals 1
-    .param p0    # Lcom/touchtype/personalizer/PersonalizerService;
 
     iget v0, p0, Lcom/touchtype/personalizer/PersonalizerService;->mDeleteTryCount:I
 
@@ -301,7 +300,6 @@
 
 .method static synthetic access$1208(Lcom/touchtype/personalizer/PersonalizerService;)I
     .locals 2
-    .param p0    # Lcom/touchtype/personalizer/PersonalizerService;
 
     iget v0, p0, Lcom/touchtype/personalizer/PersonalizerService;->mDeleteTryCount:I
 
@@ -322,7 +320,6 @@
 
 .method static synthetic access$1400(Lcom/touchtype/personalizer/PersonalizerService;)Ljava/lang/Runnable;
     .locals 1
-    .param p0    # Lcom/touchtype/personalizer/PersonalizerService;
 
     iget-object v0, p0, Lcom/touchtype/personalizer/PersonalizerService;->mDeleteRemoteTimedTask:Ljava/lang/Runnable;
 
@@ -331,7 +328,6 @@
 
 .method static synthetic access$1500(Lcom/touchtype/personalizer/PersonalizerService;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/touchtype/personalizer/PersonalizerService;
 
     iget-object v0, p0, Lcom/touchtype/personalizer/PersonalizerService;->mHandler:Landroid/os/Handler;
 
@@ -340,7 +336,6 @@
 
 .method static synthetic access$1600(Lcom/touchtype/personalizer/PersonalizerService;)Z
     .locals 1
-    .param p0    # Lcom/touchtype/personalizer/PersonalizerService;
 
     iget-boolean v0, p0, Lcom/touchtype/personalizer/PersonalizerService;->mGotSmsProgress:Z
 
@@ -349,8 +344,6 @@
 
 .method static synthetic access$1602(Lcom/touchtype/personalizer/PersonalizerService;Z)Z
     .locals 0
-    .param p0    # Lcom/touchtype/personalizer/PersonalizerService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/touchtype/personalizer/PersonalizerService;->mGotSmsProgress:Z
 
@@ -359,7 +352,6 @@
 
 .method static synthetic access$1800(Lcom/touchtype/personalizer/PersonalizerService;)Ljava/lang/Runnable;
     .locals 1
-    .param p0    # Lcom/touchtype/personalizer/PersonalizerService;
 
     iget-object v0, p0, Lcom/touchtype/personalizer/PersonalizerService;->mSmsTimedTask:Ljava/lang/Runnable;
 
@@ -368,11 +360,6 @@
 
 .method static synthetic access$200(Lcom/touchtype/personalizer/PersonalizerService;ILjava/lang/String;IZ)V
     .locals 0
-    .param p0    # Lcom/touchtype/personalizer/PersonalizerService;
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Z
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/touchtype/personalizer/PersonalizerService;->createNotification(ILjava/lang/String;IZ)V
 
@@ -381,7 +368,6 @@
 
 .method static synthetic access$2100(Lcom/touchtype/personalizer/PersonalizerService;)I
     .locals 1
-    .param p0    # Lcom/touchtype/personalizer/PersonalizerService;
 
     iget v0, p0, Lcom/touchtype/personalizer/PersonalizerService;->mSmsTryCount:I
 
@@ -390,7 +376,6 @@
 
 .method static synthetic access$2108(Lcom/touchtype/personalizer/PersonalizerService;)I
     .locals 2
-    .param p0    # Lcom/touchtype/personalizer/PersonalizerService;
 
     iget v0, p0, Lcom/touchtype/personalizer/PersonalizerService;->mSmsTryCount:I
 
@@ -403,7 +388,6 @@
 
 .method static synthetic access$2200(Lcom/touchtype/personalizer/PersonalizerService;)Z
     .locals 1
-    .param p0    # Lcom/touchtype/personalizer/PersonalizerService;
 
     iget-boolean v0, p0, Lcom/touchtype/personalizer/PersonalizerService;->mGotContactsProgress:Z
 
@@ -412,8 +396,6 @@
 
 .method static synthetic access$2202(Lcom/touchtype/personalizer/PersonalizerService;Z)Z
     .locals 0
-    .param p0    # Lcom/touchtype/personalizer/PersonalizerService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/touchtype/personalizer/PersonalizerService;->mGotContactsProgress:Z
 
@@ -422,7 +404,6 @@
 
 .method static synthetic access$2400(Lcom/touchtype/personalizer/PersonalizerService;)Ljava/lang/Runnable;
     .locals 1
-    .param p0    # Lcom/touchtype/personalizer/PersonalizerService;
 
     iget-object v0, p0, Lcom/touchtype/personalizer/PersonalizerService;->mContactsTimedTask:Ljava/lang/Runnable;
 
@@ -431,7 +412,6 @@
 
 .method static synthetic access$2700(Lcom/touchtype/personalizer/PersonalizerService;)I
     .locals 1
-    .param p0    # Lcom/touchtype/personalizer/PersonalizerService;
 
     iget v0, p0, Lcom/touchtype/personalizer/PersonalizerService;->mContactsTryCount:I
 
@@ -440,7 +420,6 @@
 
 .method static synthetic access$2708(Lcom/touchtype/personalizer/PersonalizerService;)I
     .locals 2
-    .param p0    # Lcom/touchtype/personalizer/PersonalizerService;
 
     iget v0, p0, Lcom/touchtype/personalizer/PersonalizerService;->mContactsTryCount:I
 
@@ -453,10 +432,6 @@
 
 .method static synthetic access$300(Lcom/touchtype/personalizer/PersonalizerService;IIZ)V
     .locals 0
-    .param p0    # Lcom/touchtype/personalizer/PersonalizerService;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     invoke-direct {p0, p1, p2, p3}, Lcom/touchtype/personalizer/PersonalizerService;->setPersonalizerState(IIZ)V
 
@@ -465,9 +440,6 @@
 
 .method static synthetic access$400(Lcom/touchtype/personalizer/PersonalizerService;IJ)V
     .locals 0
-    .param p0    # Lcom/touchtype/personalizer/PersonalizerService;
-    .param p1    # I
-    .param p2    # J
 
     invoke-direct {p0, p1, p2, p3}, Lcom/touchtype/personalizer/PersonalizerService;->setPersonalizerLastRun(IJ)V
 
@@ -476,7 +448,6 @@
 
 .method static synthetic access$500(Lcom/touchtype/personalizer/PersonalizerService;)V
     .locals 0
-    .param p0    # Lcom/touchtype/personalizer/PersonalizerService;
 
     invoke-direct {p0}, Lcom/touchtype/personalizer/PersonalizerService;->writeStoredState()V
 
@@ -485,7 +456,6 @@
 
 .method static synthetic access$600(Lcom/touchtype/personalizer/PersonalizerService;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/touchtype/personalizer/PersonalizerService;
 
     iget-object v0, p0, Lcom/touchtype/personalizer/PersonalizerService;->mContext:Landroid/content/Context;
 
@@ -494,7 +464,6 @@
 
 .method static synthetic access$700(Lcom/touchtype/personalizer/PersonalizerService;)V
     .locals 0
-    .param p0    # Lcom/touchtype/personalizer/PersonalizerService;
 
     invoke-direct {p0}, Lcom/touchtype/personalizer/PersonalizerService;->disableRemotePersonalizers()V
 
@@ -503,7 +472,6 @@
 
 .method static synthetic access$800(Lcom/touchtype/personalizer/PersonalizerService;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/touchtype/personalizer/PersonalizerService;
 
     iget-object v0, p0, Lcom/touchtype/personalizer/PersonalizerService;->mPersonalizerHandler:Landroid/os/Handler;
 
@@ -512,7 +480,6 @@
 
 .method static synthetic access$900(Lcom/touchtype/personalizer/PersonalizerService;)Lcom/touchtype/personalizer/PersonalizationRequest;
     .locals 1
-    .param p0    # Lcom/touchtype/personalizer/PersonalizerService;
 
     iget-object v0, p0, Lcom/touchtype/personalizer/PersonalizerService;->mRequest:Lcom/touchtype/personalizer/PersonalizationRequest;
 
@@ -521,8 +488,6 @@
 
 .method static synthetic access$902(Lcom/touchtype/personalizer/PersonalizerService;Lcom/touchtype/personalizer/PersonalizationRequest;)Lcom/touchtype/personalizer/PersonalizationRequest;
     .locals 0
-    .param p0    # Lcom/touchtype/personalizer/PersonalizerService;
-    .param p1    # Lcom/touchtype/personalizer/PersonalizationRequest;
 
     iput-object p1, p0, Lcom/touchtype/personalizer/PersonalizerService;->mRequest:Lcom/touchtype/personalizer/PersonalizationRequest;
 
@@ -531,10 +496,6 @@
 
 .method private createNotification(ILjava/lang/String;IZ)V
     .locals 10
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Z
 
     const/4 v9, 0x1
 
@@ -804,7 +765,6 @@
 
 .method private getPersonalizerPreviousState(I)I
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/touchtype/personalizer/PersonalizerService;->mPersonalizerPreviousState:Ljava/util/HashMap;
 
@@ -827,7 +787,6 @@
 
 .method private init(Landroid/content/Intent;)V
     .locals 12
-    .param p1    # Landroid/content/Intent;
 
     if-eqz p1, :cond_0
 
@@ -1204,8 +1163,6 @@
 
 .method private setPersonalizerLastRun(IJ)V
     .locals 3
-    .param p1    # I
-    .param p2    # J
 
     iget-object v0, p0, Lcom/touchtype/personalizer/PersonalizerService;->mPersonalizerLastRun:Ljava/util/HashMap;
 
@@ -1224,8 +1181,6 @@
 
 .method private setPersonalizerPreviousState(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/touchtype/personalizer/PersonalizerService;->mPersonalizerPreviousState:Ljava/util/HashMap;
 
@@ -1244,9 +1199,6 @@
 
 .method private setPersonalizerState(IIZ)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     iget-object v0, p0, Lcom/touchtype/personalizer/PersonalizerService;->mPersonalizerState:Ljava/util/HashMap;
 
@@ -1598,7 +1550,6 @@
 
 .method public getPersonalizerLastRun(I)J
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/touchtype/personalizer/PersonalizerService;->mPersonalizerLastRun:Ljava/util/HashMap;
 
@@ -1621,7 +1572,6 @@
 
 .method public getPersonalizerState(I)I
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/touchtype/personalizer/PersonalizerService;->mPersonalizerState:Ljava/util/HashMap;
 
@@ -1644,7 +1594,6 @@
 
 .method public onBind(Landroid/content/Intent;)Landroid/os/IBinder;
     .locals 1
-    .param p1    # Landroid/content/Intent;
 
     iget-object v0, p0, Lcom/touchtype/personalizer/PersonalizerService;->mBinder:Landroid/os/IBinder;
 
@@ -1743,7 +1692,6 @@
 
 .method protected onHandleIntent(Landroid/content/Intent;)V
     .locals 0
-    .param p1    # Landroid/content/Intent;
 
     invoke-direct {p0, p1}, Lcom/touchtype/personalizer/PersonalizerService;->init(Landroid/content/Intent;)V
 
@@ -1752,9 +1700,6 @@
 
 .method public onStartCommand(Landroid/content/Intent;II)I
     .locals 1
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0, p1}, Lcom/touchtype/personalizer/PersonalizerService;->init(Landroid/content/Intent;)V
 
@@ -1765,7 +1710,6 @@
 
 .method public setFailed(I)V
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x2
 

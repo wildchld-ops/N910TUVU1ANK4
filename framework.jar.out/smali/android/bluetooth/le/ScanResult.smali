@@ -44,10 +44,6 @@
 
 .method public constructor <init>(Landroid/bluetooth/BluetoothDevice;[BIJ)V
     .locals 0
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
-    .param p2    # [B
-    .param p3    # I
-    .param p4    # J
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -64,7 +60,6 @@
 
 .method private constructor <init>(Landroid/os/Parcel;)V
     .locals 0
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -75,8 +70,6 @@
 
 .method synthetic constructor <init>(Landroid/os/Parcel;Landroid/bluetooth/le/ScanResult$1;)V
     .locals 0
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # Landroid/bluetooth/le/ScanResult$1;
 
     invoke-direct {p0, p1}, Landroid/bluetooth/le/ScanResult;-><init>(Landroid/os/Parcel;)V
 
@@ -85,7 +78,6 @@
 
 .method private readFromParcel(Landroid/os/Parcel;)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
 
     const/4 v1, 0x1
 
@@ -146,7 +138,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 7
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x1
 
@@ -373,8 +364,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 3
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     const/4 v2, 0x1
 

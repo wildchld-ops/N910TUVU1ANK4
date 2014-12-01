@@ -36,7 +36,6 @@
 # virtual methods
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 3
-    .param p1    # Landroid/content/res/Configuration;
 
     iget-object v0, p0, Landroid/app/ActivityThread$2;->this$0:Landroid/app/ActivityThread;
 
@@ -114,7 +113,6 @@
 
 .method public onTrimMemory(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method

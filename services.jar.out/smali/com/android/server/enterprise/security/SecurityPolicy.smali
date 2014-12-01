@@ -96,7 +96,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
 
     const/4 v4, 0x0
 
@@ -183,7 +182,6 @@
 
 .method static synthetic access$000(Lcom/android/server/enterprise/security/SecurityPolicy;)Landroid/os/PersonaManager;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/security/SecurityPolicy;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/security/SecurityPolicy;->getService()Landroid/os/PersonaManager;
 
@@ -202,7 +200,6 @@
 
 .method static synthetic access$200(Lcom/android/server/enterprise/security/SecurityPolicy;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/security/SecurityPolicy;
 
     iget-object v0, p0, Lcom/android/server/enterprise/security/SecurityPolicy;->mContext:Landroid/content/Context;
 
@@ -211,8 +208,6 @@
 
 .method static synthetic access$300(Lcom/android/server/enterprise/security/SecurityPolicy;Z)Z
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/security/SecurityPolicy;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/security/SecurityPolicy;->saveDeviceBootMode(Z)Z
 
@@ -223,7 +218,6 @@
 
 .method static synthetic access$400(Lcom/android/server/enterprise/security/SecurityPolicy;)Z
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/security/SecurityPolicy;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/security/SecurityPolicy;->isLastBootInSafeMode()Z
 
@@ -234,7 +228,6 @@
 
 .method static synthetic access$600(Lcom/android/server/enterprise/security/SecurityPolicy;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/security/SecurityPolicy;
 
     iget-object v0, p0, Lcom/android/server/enterprise/security/SecurityPolicy;->mHandler:Landroid/os/Handler;
 
@@ -243,8 +236,6 @@
 
 .method static synthetic access$702(Lcom/android/server/enterprise/security/SecurityPolicy;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/security/SecurityPolicy;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/enterprise/security/SecurityPolicy;->mMediaFormatRet:Z
 
@@ -253,7 +244,6 @@
 
 .method static synthetic access$900(Lcom/android/server/enterprise/security/SecurityPolicy;)Landroid/security/KeyStore;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/security/SecurityPolicy;
 
     iget-object v0, p0, Lcom/android/server/enterprise/security/SecurityPolicy;->mKeyStore:Landroid/security/KeyStore;
 
@@ -262,7 +252,6 @@
 
 .method private static convertPemToX509([B)Ljava/security/cert/X509Certificate;
     .locals 8
-    .param p0    # [B
 
     const/4 v4, 0x0
 
@@ -364,9 +353,6 @@
 
 .method private deleteCertificateFromNativeKeystore(Ljava/security/cert/Certificate;Ljava/lang/String;I)Z
     .locals 1
-    .param p1    # Ljava/security/cert/Certificate;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     const/4 v0, 0x0
 
@@ -379,10 +365,6 @@
 
 .method private deleteCertificateFromNativeKeystoreAsUser(Ljava/security/cert/Certificate;Ljava/lang/String;II)Z
     .locals 11
-    .param p1    # Ljava/security/cert/Certificate;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
 
     const/4 v5, 0x1
 
@@ -533,9 +515,6 @@
 
 .method private enableRebootBannerInternal(Landroid/app/enterprise/ContextInfo;ZLjava/lang/String;)Z
     .locals 6
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
-    .param p3    # Ljava/lang/String;
 
     const/4 v2, 0x1
 
@@ -582,7 +561,6 @@
 
 .method private enforceOwnerOnlyAndSecurityPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/security/SecurityPolicy;->getEDM()Landroid/app/enterprise/EnterpriseDeviceManager;
 
@@ -599,7 +577,6 @@
 
 .method private enforceSecurityPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/security/SecurityPolicy;->getEDM()Landroid/app/enterprise/EnterpriseDeviceManager;
 
@@ -1117,8 +1094,6 @@
 
 .method private getNativeInstalledCertificate(Ljava/lang/String;Ljava/lang/String;)Landroid/app/enterprise/CertificateInfo;
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -1182,8 +1157,6 @@
 
 .method private getNativeInstalledCertificateNames(Ljava/lang/String;I)Ljava/util/List;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1207,9 +1180,6 @@
 
 .method private getNativeInstalledCertificateNamesAsUser(Ljava/lang/String;II)Ljava/util/List;
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1272,8 +1242,6 @@
 
 .method private getNativeInstalledCertificates(Ljava/lang/String;I)Ljava/util/List;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1297,9 +1265,6 @@
 
 .method private getNativeInstalledCertificatesAsUser(Ljava/lang/String;II)Ljava/util/List;
     .locals 17
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1498,7 +1463,6 @@
 
 .method private getSystemCertificates(Z)Ljava/util/List;
     .locals 8
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(Z)",
@@ -1581,7 +1545,6 @@
 
 .method private getValidStr(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -1623,7 +1586,6 @@
 
 .method private isBannerApp(I)Z
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/server/enterprise/security/SecurityPolicy;->mContext:Landroid/content/Context;
 
@@ -1656,7 +1618,6 @@
 
 .method private static isCa(Ljava/security/cert/Certificate;)Z
     .locals 9
-    .param p0    # Ljava/security/cert/Certificate;
 
     const/4 v7, 0x0
 
@@ -1774,7 +1735,6 @@
 
 .method private isNativeKeyStoreUnlockedAsUser(I)Z
     .locals 5
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -1833,7 +1793,6 @@
 
 .method private isUserRestrictedFolder(Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -1921,9 +1880,6 @@
 
 .method private listRecursively(Ljava/io/File;ILjava/io/PrintWriter;)V
     .locals 9
-    .param p1    # Ljava/io/File;
-    .param p2    # I
-    .param p3    # Ljava/io/PrintWriter;
 
     invoke-virtual {p1}, Ljava/io/File;->isDirectory()Z
 
@@ -2062,7 +2018,6 @@
 
 .method private removeAndroidCertificate(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Landroid/os/Binder;->clearCallingIdentity()J
 
@@ -2204,9 +2159,6 @@
 
 .method private removeNativeCertificate(Ljava/lang/String;Ljava/lang/String;I)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     const/4 v0, 0x0
 
@@ -2292,7 +2244,6 @@
 
 .method private saveDeviceBootMode(Z)Z
     .locals 7
-    .param p1    # Z
 
     const/4 v2, 0x1
 
@@ -2372,7 +2323,6 @@
 
 .method private validateKeystoreParam(I)Z
     .locals 3
-    .param p1    # I
 
     const/4 v0, 0x7
 
@@ -2402,9 +2352,6 @@
 # virtual methods
 .method public changeCredentialStoragePassword(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/security/SecurityPolicy;->enforceOwnerOnlyAndSecurityPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -2415,7 +2362,6 @@
 
 .method public clearInstalledCertificates(Landroid/app/enterprise/ContextInfo;)Z
     .locals 9
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/security/SecurityPolicy;->enforceOwnerOnlyAndSecurityPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -2514,9 +2460,6 @@
 
 .method public deleteCertificateFromKeystore(Landroid/app/enterprise/ContextInfo;Landroid/app/enterprise/CertificateInfo;I)Z
     .locals 12
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Landroid/app/enterprise/CertificateInfo;
-    .param p3    # I
 
     const/4 v11, 0x4
 
@@ -2726,9 +2669,6 @@
 
 .method public deleteCertificateFromUserKeystore(Landroid/app/enterprise/ContextInfo;Landroid/app/enterprise/CertificateInfo;I)Z
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Landroid/app/enterprise/CertificateInfo;
-    .param p3    # I
 
     const/4 v0, 0x0
 
@@ -2737,8 +2677,6 @@
 
 .method public enableRebootBanner(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     const/4 v0, 0x0
 
@@ -2751,9 +2689,6 @@
 
 .method public enableRebootBannerWithText(Landroid/app/enterprise/ContextInfo;ZLjava/lang/String;)Z
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/server/enterprise/security/SecurityPolicy;->enableRebootBannerInternal(Landroid/app/enterprise/ContextInfo;ZLjava/lang/String;)Z
 
@@ -2764,9 +2699,6 @@
 
 .method public formatInternalStorage(Landroid/app/enterprise/ContextInfo;ZZ)Z
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
-    .param p3    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/security/SecurityPolicy;->enforceSecurityPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -2777,9 +2709,6 @@
 
 .method public formatSelective(Landroid/app/enterprise/ContextInfo;[Ljava/lang/String;[Ljava/lang/String;)[Ljava/lang/String;
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # [Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -2788,8 +2717,6 @@
 
 .method public formatStorageCard(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 6
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     const/4 v4, 0x1
 
@@ -2851,9 +2778,6 @@
 
 .method public getCertificatesFromKeystore(Landroid/app/enterprise/ContextInfo;II)Ljava/util/List;
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3060,8 +2984,6 @@
 
 .method public getCertificatesFromUserKeystore(Landroid/app/enterprise/ContextInfo;I)Ljava/util/List;
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3081,7 +3003,6 @@
 
 .method public getCredentialStorageStatus(Landroid/app/enterprise/ContextInfo;)I
     .locals 9
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/security/SecurityPolicy;->enforceSecurityPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -3205,7 +3126,6 @@
 
 .method public getDeviceLastAccessDate(Landroid/app/enterprise/ContextInfo;)Ljava/lang/String;
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-static {p1}, Lcom/android/server/enterprise/EnterpriseDeviceManagerService;->getCallingOrCurrentUserId(Landroid/app/enterprise/ContextInfo;)I
 
@@ -3224,8 +3144,6 @@
 
 .method public getFileNamesOnDevice(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Ljava/util/List;
     .locals 4
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3319,8 +3237,6 @@
 
 .method public getFileNamesWithAttributes(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Ljava/util/List;
     .locals 4
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3422,9 +3338,6 @@
 
 .method public getFileNamesWithAttributesRecursive(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 12
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const/4 v10, 0x1
 
@@ -3657,8 +3570,6 @@
 
 .method public getInstalledCertificate(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Landroid/app/enterprise/CertificateInfo;
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/security/SecurityPolicy;->enforceOwnerOnlyAndSecurityPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -3688,8 +3599,6 @@
 
 .method public getInstalledCertificateNames(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Ljava/util/List;
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3730,7 +3639,6 @@
 
 .method public getInstalledCertificates(Landroid/app/enterprise/ContextInfo;)Ljava/util/List;
     .locals 4
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3798,7 +3706,6 @@
 
 .method public getRebootBannerText(Landroid/app/enterprise/ContextInfo;)Ljava/lang/String;
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-static {p1}, Lcom/android/server/enterprise/EnterpriseDeviceManagerService;->getCallingOrCurrentUserId(Landroid/app/enterprise/ContextInfo;)I
 
@@ -3846,8 +3753,6 @@
 
 .method public getRequireDeviceEncryption(Landroid/app/enterprise/ContextInfo;Landroid/content/ComponentName;)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Landroid/content/ComponentName;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/security/SecurityPolicy;->enforceOwnerOnlyAndSecurityPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -3928,8 +3833,6 @@
 
 .method public getRequireStorageCardEncryption(Landroid/app/enterprise/ContextInfo;Landroid/content/ComponentName;)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Landroid/content/ComponentName;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/security/SecurityPolicy;->enforceOwnerOnlyAndSecurityPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -4010,7 +3913,6 @@
 
 .method public getSystemCertificates(Landroid/app/enterprise/ContextInfo;)Ljava/util/List;
     .locals 8
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -4087,11 +3989,6 @@
 
 .method public installCertificate(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;[BLjava/lang/String;Ljava/lang/String;)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # [B
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/security/SecurityPolicy;->enforceOwnerOnlyAndSecurityPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -4191,12 +4088,6 @@
 
 .method public installCertificateToKeystore(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;[BLjava/lang/String;Ljava/lang/String;I)Z
     .locals 11
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # [B
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # I
 
     and-int/lit8 v2, p6, 0x3
 
@@ -4310,12 +4201,6 @@
 
 .method public installCertificateToUserKeystore(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;[BLjava/lang/String;Ljava/lang/String;I)Z
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # [B
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # I
 
     const/4 v0, 0x0
 
@@ -4324,9 +4209,6 @@
 
 .method public installCertificateWithType(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;[B)V
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # [B
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/security/SecurityPolicy;->enforceOwnerOnlyAndSecurityPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -4422,7 +4304,6 @@
 
 .method public installCertificatesFromSdCard(Landroid/app/enterprise/ContextInfo;)V
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/security/SecurityPolicy;->enforceOwnerOnlyAndSecurityPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -4503,14 +4384,12 @@
 
 .method public installKeyPair(Ljava/security/KeyPair;)V
     .locals 0
-    .param p1    # Ljava/security/KeyPair;
 
     return-void
 .end method
 
 .method public isDodBannerVisible(Landroid/app/enterprise/ContextInfo;)Z
     .locals 4
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-static {p1}, Lcom/android/server/enterprise/EnterpriseDeviceManagerService;->getCallingOrCurrentUserId(Landroid/app/enterprise/ContextInfo;)I
 
@@ -4547,7 +4426,6 @@
 
 .method public isExternalStorageEncrypted(Landroid/app/enterprise/ContextInfo;)Z
     .locals 6
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/security/SecurityPolicy;->enforceOwnerOnlyAndSecurityPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -4602,7 +4480,6 @@
 
 .method public isInternalStorageEncrypted(Landroid/app/enterprise/ContextInfo;)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v4, 0x0
 
@@ -4666,7 +4543,6 @@
 
 .method public isRebootBannerEnabled(I)Z
     .locals 7
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -4713,7 +4589,6 @@
 
 .method public isRebootBannerEnabled(Landroid/app/enterprise/ContextInfo;)Z
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-static {p1}, Lcom/android/server/enterprise/EnterpriseDeviceManagerService;->getCallingOrCurrentUserId(Landroid/app/enterprise/ContextInfo;)I
 
@@ -4728,9 +4603,6 @@
 
 .method public lockoutDevice(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;)V
     .locals 11
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -4905,28 +4777,24 @@
 
 .method public onAdminAdded(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onAdminRemoved(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onPreAdminRemoval(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public powerOffDevice(Landroid/app/enterprise/ContextInfo;)V
     .locals 4
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/security/SecurityPolicy;->enforceSecurityPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -4955,9 +4823,6 @@
 
 .method public readFile(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Landroid/os/ParcelFileDescriptor;)Z
     .locals 11
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/os/ParcelFileDescriptor;
 
     const/4 v8, 0x0
 
@@ -5207,8 +5072,6 @@
 
 .method public removeAccountsByType(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 15
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     if-nez p2, :cond_0
 
@@ -5327,9 +5190,6 @@
 
 .method public removeCertificate(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/security/SecurityPolicy;->enforceOwnerOnlyAndSecurityPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -5373,7 +5233,6 @@
 
 .method public removeDeviceLockout(Landroid/app/enterprise/ContextInfo;)V
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v4, 0x0
 
@@ -5414,7 +5273,6 @@
 
 .method public resetCredentialStorage(Landroid/app/enterprise/ContextInfo;)Z
     .locals 10
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/security/SecurityPolicy;->enforceSecurityPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -5514,8 +5372,6 @@
 
 .method public setCredentialStoragePassword(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/security/SecurityPolicy;->enforceOwnerOnlyAndSecurityPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -5526,8 +5382,6 @@
 
 .method public setDeviceLastAccessDate(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     iget v3, p1, Landroid/app/enterprise/ContextInfo;->mCallerUid:I
 
@@ -5570,8 +5424,6 @@
 
 .method public setDodBannerVisibleStatus(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 6
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     const/4 v3, 0x0
 
@@ -5625,8 +5477,6 @@
 
 .method public setExternalStorageEncryption(Landroid/app/enterprise/ContextInfo;Z)V
     .locals 6
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/security/SecurityPolicy;->enforceOwnerOnlyAndSecurityPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -5716,8 +5566,6 @@
 
 .method public setInternalStorageEncryption(Landroid/app/enterprise/ContextInfo;Z)V
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/security/SecurityPolicy;->enforceOwnerOnlyAndSecurityPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -5852,9 +5700,6 @@
 
 .method public setRequireDeviceEncryption(Landroid/app/enterprise/ContextInfo;Landroid/content/ComponentName;Z)V
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/security/SecurityPolicy;->enforceOwnerOnlyAndSecurityPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -5929,9 +5774,6 @@
 
 .method public setRequireStorageCardEncryption(Landroid/app/enterprise/ContextInfo;Landroid/content/ComponentName;Z)V
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/security/SecurityPolicy;->enforceOwnerOnlyAndSecurityPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -6006,7 +5848,6 @@
 
 .method public startBannerService(I)V
     .locals 4
-    .param p1    # I
 
     sget-object v2, Lcom/android/server/enterprise/security/SecurityPolicy;->mBannerMap:Ljava/util/Map;
 
@@ -6099,8 +5940,6 @@
 
 .method public unlockCredentialStorage(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 8
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/security/SecurityPolicy;->enforceOwnerOnlyAndSecurityPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 

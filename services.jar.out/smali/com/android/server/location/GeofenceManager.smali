@@ -69,8 +69,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Lcom/android/server/location/LocationBlacklist;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/server/location/LocationBlacklist;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -145,7 +143,6 @@
 
 .method static synthetic access$000(Lcom/android/server/location/GeofenceManager;)V
     .locals 0
-    .param p0    # Lcom/android/server/location/GeofenceManager;
 
     invoke-direct {p0}, Lcom/android/server/location/GeofenceManager;->updateFences()V
 
@@ -278,8 +275,6 @@
 
 .method private sendIntent(Landroid/app/PendingIntent;Landroid/content/Intent;)V
     .locals 9
-    .param p1    # Landroid/app/PendingIntent;
-    .param p2    # Landroid/content/Intent;
 
     const/4 v8, 0x0
 
@@ -323,7 +318,6 @@
 
 .method private sendIntentEnter(Landroid/app/PendingIntent;)V
     .locals 4
-    .param p1    # Landroid/app/PendingIntent;
 
     const-string v1, "GeofenceManager"
 
@@ -364,7 +358,6 @@
 
 .method private sendIntentExit(Landroid/app/PendingIntent;)V
     .locals 4
-    .param p1    # Landroid/app/PendingIntent;
 
     const-string v1, "GeofenceManager"
 
@@ -996,12 +989,6 @@
 # virtual methods
 .method public addFence(Landroid/location/LocationRequest;Landroid/location/Geofence;Landroid/app/PendingIntent;IILjava/lang/String;)V
     .locals 11
-    .param p1    # Landroid/location/LocationRequest;
-    .param p2    # Landroid/location/Geofence;
-    .param p3    # Landroid/app/PendingIntent;
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Ljava/lang/String;
 
     const-string v2, "GeofenceManager"
 
@@ -1159,7 +1146,6 @@
 
 .method public dump(Ljava/io/PrintWriter;)V
     .locals 3
-    .param p1    # Ljava/io/PrintWriter;
 
     const-string v2, "  Geofences:"
 
@@ -1216,7 +1202,6 @@
 
 .method public onLocationChanged(Landroid/location/Location;)V
     .locals 3
-    .param p1    # Landroid/location/Location;
 
     iget-object v1, p0, Lcom/android/server/location/GeofenceManager;->mLock:Ljava/lang/Object;
 
@@ -1269,25 +1254,18 @@
 
 .method public onProviderDisabled(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method public onProviderEnabled(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method public onSendFinished(Landroid/app/PendingIntent;Landroid/content/Intent;ILjava/lang/String;Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/app/PendingIntent;
-    .param p2    # Landroid/content/Intent;
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
-    .param p5    # Landroid/os/Bundle;
 
     iget-object v0, p0, Lcom/android/server/location/GeofenceManager;->mWakeLock:Landroid/os/PowerManager$WakeLock;
 
@@ -1298,17 +1276,12 @@
 
 .method public onStatusChanged(Ljava/lang/String;ILandroid/os/Bundle;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Landroid/os/Bundle;
 
     return-void
 .end method
 
 .method public removeFence(Landroid/location/Geofence;Landroid/app/PendingIntent;)V
     .locals 5
-    .param p1    # Landroid/location/Geofence;
-    .param p2    # Landroid/app/PendingIntent;
 
     const-string v2, "GeofenceManager"
 
@@ -1416,7 +1389,6 @@
 
 .method public removeFence(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const-string v2, "GeofenceManager"
 

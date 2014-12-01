@@ -22,10 +22,6 @@
 
 .method public static dumpAsync(Landroid/os/Handler;Lcom/android/internal/util/DumpUtils$Dump;Ljava/io/PrintWriter;J)V
     .locals 2
-    .param p0    # Landroid/os/Handler;
-    .param p1    # Lcom/android/internal/util/DumpUtils$Dump;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # J
 
     new-instance v0, Ljava/io/StringWriter;
 

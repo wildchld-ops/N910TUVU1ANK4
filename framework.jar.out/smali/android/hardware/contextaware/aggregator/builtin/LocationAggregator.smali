@@ -30,8 +30,6 @@
 # direct methods
 .method public constructor <init>(ILjava/util/concurrent/CopyOnWriteArrayList;Landroid/hardware/contextaware/dataprovider/sensorhubprovider/ISensorHubResetObservable;)V
     .locals 6
-    .param p1    # I
-    .param p3    # Landroid/hardware/contextaware/dataprovider/sensorhubprovider/ISensorHubResetObservable;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -75,12 +73,6 @@
 
 .method private notifyLocationContext(JJ[D[FZI)V
     .locals 5
-    .param p1    # J
-    .param p3    # J
-    .param p5    # [D
-    .param p6    # [F
-    .param p7    # Z
-    .param p8    # I
 
     invoke-virtual {p0}, Landroid/hardware/contextaware/aggregator/builtin/LocationAggregator;->getContextValueNames()[Ljava/lang/String;
 
@@ -217,7 +209,6 @@
 
 .method private receiveApdrNoti(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v2, 0x1
 
@@ -252,8 +243,6 @@
 
 .method private requestGpsData(JJ)V
     .locals 22
-    .param p1    # J
-    .param p3    # J
 
     const/4 v1, 0x3
 
@@ -501,12 +490,6 @@
 
 .method private setCurLocationforHubApdr(JJDDDF)V
     .locals 0
-    .param p1    # J
-    .param p3    # J
-    .param p5    # D
-    .param p7    # D
-    .param p9    # D
-    .param p11    # F
 
     iput-wide p1, p0, Landroid/hardware/contextaware/aggregator/builtin/LocationAggregator;->mCurSysTime:J
 
@@ -525,7 +508,6 @@
 
 .method private updateApdrData(Landroid/os/Bundle;)V
     .locals 8
-    .param p1    # Landroid/os/Bundle;
 
     invoke-direct {p0}, Landroid/hardware/contextaware/aggregator/builtin/LocationAggregator;->isFilterInitialized()Z
 
@@ -581,7 +563,6 @@
 
 .method private updateRawGpsData(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     invoke-static {}, Landroid/hardware/contextaware/utilbundle/logger/CaLogger;->trace()V
 
@@ -604,7 +585,6 @@
 
 .method private updateRawSatelliteData(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v2, 0x1
 
@@ -667,7 +647,6 @@
 
 .method private updateRawWpsData(Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     invoke-static {}, Landroid/hardware/contextaware/utilbundle/logger/CaLogger;->trace()V
 
@@ -846,7 +825,6 @@
 
 .method public final setPropertyValue(ILjava/lang/Object;)Z
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -1052,8 +1030,6 @@
 
 .method public final updateContext(Ljava/lang/String;Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Bundle;
 
     if-nez p2, :cond_1
 

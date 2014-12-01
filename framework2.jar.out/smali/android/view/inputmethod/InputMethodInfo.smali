@@ -63,8 +63,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/content/pm/ResolveInfo;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/pm/ResolveInfo;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -81,8 +79,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/content/pm/ResolveInfo;Ljava/util/Map;)V
     .locals 24
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/pm/ResolveInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -764,11 +760,6 @@
 
 .method public constructor <init>(Landroid/content/pm/ResolveInfo;ZLjava/lang/String;Ljava/util/List;IZ)V
     .locals 4
-    .param p1    # Landroid/content/pm/ResolveInfo;
-    .param p2    # Z
-    .param p3    # Ljava/lang/String;
-    .param p5    # I
-    .param p6    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -832,7 +823,6 @@
 
 .method constructor <init>(Landroid/os/Parcel;)V
     .locals 3
-    .param p1    # Landroid/os/Parcel;
 
     const/4 v2, 0x0
 
@@ -917,10 +907,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/CharSequence;Ljava/lang/String;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/CharSequence;
-    .param p4    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -945,9 +931,6 @@
 
 .method private static buildDummyResolveInfo(Ljava/lang/String;Ljava/lang/String;Ljava/lang/CharSequence;)Landroid/content/pm/ResolveInfo;
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/CharSequence;
 
     const/4 v3, 0x1
 
@@ -996,8 +979,6 @@
 
 .method public dump(Landroid/util/Printer;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Landroid/util/Printer;
-    .param p2    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -1114,7 +1095,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 3
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x0
 
@@ -1230,7 +1210,6 @@
 
 .method public getSubtypeAt(I)Landroid/view/inputmethod/InputMethodSubtype;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/view/inputmethod/InputMethodInfo;->mSubtypes:Ljava/util/ArrayList;
 
@@ -1277,7 +1256,6 @@
 
 .method public isDefault(Landroid/content/Context;)Z
     .locals 5
-    .param p1    # Landroid/content/Context;
 
     const/4 v2, 0x0
 
@@ -1326,7 +1304,6 @@
 
 .method public loadIcon(Landroid/content/pm/PackageManager;)Landroid/graphics/drawable/Drawable;
     .locals 1
-    .param p1    # Landroid/content/pm/PackageManager;
 
     iget-object v0, p0, Landroid/view/inputmethod/InputMethodInfo;->mService:Landroid/content/pm/ResolveInfo;
 
@@ -1339,7 +1316,6 @@
 
 .method public loadLabel(Landroid/content/pm/PackageManager;)Ljava/lang/CharSequence;
     .locals 1
-    .param p1    # Landroid/content/pm/PackageManager;
 
     iget-object v0, p0, Landroid/view/inputmethod/InputMethodInfo;->mService:Landroid/content/pm/ResolveInfo;
 
@@ -1404,8 +1380,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 3
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     const/4 v1, 0x1
 

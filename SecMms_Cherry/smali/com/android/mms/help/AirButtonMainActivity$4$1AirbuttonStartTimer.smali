@@ -23,8 +23,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/mms/help/AirButtonMainActivity$4;JJ)V
     .locals 0
-    .param p2    # J
-    .param p4    # J
 
     iput-object p1, p0, Lcom/android/mms/help/AirButtonMainActivity$4$1AirbuttonStartTimer;->this$1:Lcom/android/mms/help/AirButtonMainActivity$4;
 
@@ -55,14 +53,12 @@
 
 .method public onTick(J)V
     .locals 0
-    .param p1    # J
 
     return-void
 .end method
 
 .method public setView(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     iput-object p1, p0, Lcom/android/mms/help/AirButtonMainActivity$4$1AirbuttonStartTimer;->mView:Landroid/view/View;
 

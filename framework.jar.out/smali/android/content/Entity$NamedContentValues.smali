@@ -23,8 +23,6 @@
 # direct methods
 .method public constructor <init>(Landroid/net/Uri;Landroid/content/ContentValues;)V
     .locals 0
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Landroid/content/ContentValues;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

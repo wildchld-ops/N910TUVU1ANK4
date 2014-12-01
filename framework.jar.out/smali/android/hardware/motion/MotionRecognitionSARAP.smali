@@ -79,7 +79,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
 
     const/4 v4, 0x0
 
@@ -212,8 +211,6 @@
 
 .method static synthetic access$002(Landroid/hardware/motion/MotionRecognitionSARAP;Z)Z
     .locals 0
-    .param p0    # Landroid/hardware/motion/MotionRecognitionSARAP;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/hardware/motion/MotionRecognitionSARAP;->mbProximity:Z
 
@@ -222,7 +219,6 @@
 
 .method static synthetic access$100(Landroid/hardware/motion/MotionRecognitionSARAP;)V
     .locals 0
-    .param p0    # Landroid/hardware/motion/MotionRecognitionSARAP;
 
     invoke-direct {p0}, Landroid/hardware/motion/MotionRecognitionSARAP;->acquire()V
 
@@ -285,9 +281,6 @@
 
 .method private checkFlat(FFF)I
     .locals 7
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
 
     const/4 v2, -0x1
 
@@ -513,7 +506,6 @@
 
 .method private updatePollingTime(J)V
     .locals 5
-    .param p1    # J
 
     iget-object v0, p0, Landroid/hardware/motion/MotionRecognitionSARAP;->mAlarm:Landroid/app/AlarmManager;
 
@@ -639,7 +631,6 @@
 
 .method protected enableSARBackOff(J)V
     .locals 5
-    .param p1    # J
 
     iget-object v1, p0, Landroid/hardware/motion/MotionRecognitionSARAP;->mAutoPowerOffLock:Ljava/lang/Object;
 
@@ -710,8 +701,6 @@
 
 .method public onAccuracyChanged(Landroid/hardware/Sensor;I)V
     .locals 0
-    .param p1    # Landroid/hardware/Sensor;
-    .param p2    # I
 
     return-void
 .end method
@@ -721,7 +710,6 @@
 
 .method public onSensorChanged(Landroid/hardware/SensorEvent;)V
     .locals 6
-    .param p1    # Landroid/hardware/SensorEvent;
 
     const/4 v5, 0x1
 

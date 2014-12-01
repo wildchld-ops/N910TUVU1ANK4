@@ -55,8 +55,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v4, 0x0
 
@@ -109,7 +107,6 @@
 
 .method static synthetic access$000(Lcom/android/systemui/recent/RecentsHorizontalScrollView;)Lcom/android/systemui/recent/RecentsCallback;
     .locals 1
-    .param p0    # Lcom/android/systemui/recent/RecentsHorizontalScrollView;
 
     iget-object v0, p0, Lcom/android/systemui/recent/RecentsHorizontalScrollView;->mCallback:Lcom/android/systemui/recent/RecentsCallback;
 
@@ -118,7 +115,6 @@
 
 .method static synthetic access$100(Lcom/android/systemui/recent/RecentsHorizontalScrollView;)I
     .locals 1
-    .param p0    # Lcom/android/systemui/recent/RecentsHorizontalScrollView;
 
     invoke-direct {p0}, Lcom/android/systemui/recent/RecentsHorizontalScrollView;->scrollPositionOfMostRecent()I
 
@@ -129,7 +125,6 @@
 
 .method static synthetic access$200(Lcom/android/systemui/recent/RecentsHorizontalScrollView;)Landroid/widget/LinearLayout;
     .locals 1
-    .param p0    # Lcom/android/systemui/recent/RecentsHorizontalScrollView;
 
     iget-object v0, p0, Lcom/android/systemui/recent/RecentsHorizontalScrollView;->mLinearLayout:Landroid/widget/LinearLayout;
 
@@ -138,7 +133,6 @@
 
 .method static synthetic access$300(Lcom/android/systemui/recent/RecentsHorizontalScrollView;)V
     .locals 0
-    .param p0    # Lcom/android/systemui/recent/RecentsHorizontalScrollView;
 
     invoke-direct {p0}, Lcom/android/systemui/recent/RecentsHorizontalScrollView;->update()V
 
@@ -147,7 +141,6 @@
 
 .method private addToRecycledViews(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Lcom/android/systemui/recent/RecentsHorizontalScrollView;->mRecycledViews:Ljava/util/HashSet;
 
@@ -169,8 +162,6 @@
 
 .method private adjustViewPadding(Landroid/view/View;I)V
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     if-eqz p1, :cond_0
 
@@ -212,8 +203,6 @@
 
 .method private setOverScrollEffectPadding(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     return-void
 .end method
@@ -750,7 +739,6 @@
 # virtual methods
 .method public canChildBeDismissed(Landroid/view/View;)Z
     .locals 1
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Lcom/android/systemui/recent/RecentsHorizontalScrollView;->mCallback:Lcom/android/systemui/recent/RecentsCallback;
 
@@ -773,7 +761,6 @@
 
 .method public dismissChild(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Lcom/android/systemui/recent/RecentsHorizontalScrollView;->mSwipeHelper:Lcom/android/systemui/SwipeHelper;
 
@@ -786,11 +773,6 @@
 
 .method public drawFadedEdges(Landroid/graphics/Canvas;IIII)V
     .locals 13
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     iget-object v0, p0, Lcom/android/systemui/recent/RecentsHorizontalScrollView;->mFadedEdgeDrawHelper:Lcom/android/systemui/recent/FadedEdgeDrawHelper;
 
@@ -834,7 +816,6 @@
 
 .method public findViewForTask(I)Landroid/view/View;
     .locals 4
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -881,7 +862,6 @@
 
 .method public getChildAtPosition(Landroid/view/MotionEvent;)Landroid/view/View;
     .locals 6
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getX()F
 
@@ -980,7 +960,6 @@
 
 .method public getChildContentView(Landroid/view/View;)Landroid/view/View;
     .locals 1
-    .param p1    # Landroid/view/View;
 
     const v0, 0x7f08010b
 
@@ -1070,7 +1049,6 @@
 
 .method public onBeginDrag(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     const/4 v0, 0x1
 
@@ -1081,7 +1059,6 @@
 
 .method public onChildDismissed(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     invoke-direct {p0, p1}, Lcom/android/systemui/recent/RecentsHorizontalScrollView;->addToRecycledViews(Landroid/view/View;)V
 
@@ -1110,7 +1087,6 @@
 
 .method protected onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 3
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/view/View;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -1151,7 +1127,6 @@
 
 .method public onDragCancelled(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     return-void
 .end method
@@ -1196,7 +1171,6 @@
 
 .method public onInterceptTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 2
-    .param p1    # Landroid/view/MotionEvent;
 
     sget-boolean v0, Lcom/android/systemui/recent/RecentsHorizontalScrollView;->DEBUG:Z
 
@@ -1237,10 +1211,6 @@
 
 .method protected onScrollChanged(IIII)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-super {p0, p1, p2, p3, p4}, Landroid/view/View;->onScrollChanged(IIII)V
 
@@ -1258,10 +1228,6 @@
 
 .method protected onSizeChanged(IIII)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-super {p0, p1, p2, p3, p4}, Landroid/widget/HorizontalScrollView;->onSizeChanged(IIII)V
 
@@ -1300,7 +1266,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-object v0, p0, Lcom/android/systemui/recent/RecentsHorizontalScrollView;->mSwipeHelper:Lcom/android/systemui/SwipeHelper;
 
@@ -1383,7 +1348,6 @@
 
 .method public removeViewInLayout(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p0, p1}, Lcom/android/systemui/recent/RecentsHorizontalScrollView;->dismissChild(Landroid/view/View;)V
 
@@ -1392,7 +1356,6 @@
 
 .method public setAdapter(Lcom/android/systemui/recent/RecentsPanelView$TaskDescriptionAdapter;)V
     .locals 8
-    .param p1    # Lcom/android/systemui/recent/RecentsPanelView$TaskDescriptionAdapter;
 
     const/high16 v7, -0x80000000
 
@@ -1487,7 +1450,6 @@
 
 .method public setCallback(Lcom/android/systemui/recent/RecentsCallback;)V
     .locals 0
-    .param p1    # Lcom/android/systemui/recent/RecentsCallback;
 
     iput-object p1, p0, Lcom/android/systemui/recent/RecentsHorizontalScrollView;->mCallback:Lcom/android/systemui/recent/RecentsCallback;
 
@@ -1496,7 +1458,6 @@
 
 .method public setLayoutTransition(Landroid/animation/LayoutTransition;)V
     .locals 1
-    .param p1    # Landroid/animation/LayoutTransition;
 
     iget-object v0, p0, Lcom/android/systemui/recent/RecentsHorizontalScrollView;->mLinearLayout:Landroid/widget/LinearLayout;
 
@@ -1507,7 +1468,6 @@
 
 .method public setMinSwipeAlpha(F)V
     .locals 1
-    .param p1    # F
 
     iget-object v0, p0, Lcom/android/systemui/recent/RecentsHorizontalScrollView;->mSwipeHelper:Lcom/android/systemui/SwipeHelper;
 
@@ -1518,7 +1478,6 @@
 
 .method public setOnScrollListener(Ljava/lang/Runnable;)V
     .locals 0
-    .param p1    # Ljava/lang/Runnable;
 
     iput-object p1, p0, Lcom/android/systemui/recent/RecentsHorizontalScrollView;->mOnScrollListener:Ljava/lang/Runnable;
 
@@ -1527,7 +1486,6 @@
 
 .method public setVisibility(I)V
     .locals 0
-    .param p1    # I
 
     invoke-super {p0, p1}, Landroid/view/View;->setVisibility(I)V
 
@@ -1536,7 +1494,6 @@
 
 .method public startAnimation(Landroid/view/animation/Animation;)V
     .locals 0
-    .param p1    # Landroid/view/animation/Animation;
 
     invoke-super {p0, p1}, Landroid/view/View;->startAnimation(Landroid/view/animation/Animation;)V
 

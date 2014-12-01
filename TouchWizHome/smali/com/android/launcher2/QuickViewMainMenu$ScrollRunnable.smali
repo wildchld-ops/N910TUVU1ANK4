@@ -48,7 +48,6 @@
 
 .method static synthetic access$000(Lcom/android/launcher2/QuickViewMainMenu$ScrollRunnable;)I
     .locals 1
-    .param p0    # Lcom/android/launcher2/QuickViewMainMenu$ScrollRunnable;
 
     iget v0, p0, Lcom/android/launcher2/QuickViewMainMenu$ScrollRunnable;->mState:I
 

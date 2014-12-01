@@ -661,8 +661,6 @@
 
 .method public static CheckAvailbleCallRejectList(Landroid/content/Context;Ljava/lang/String;)Z
     .locals 11
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const/4 v10, 0x1
 
@@ -743,9 +741,6 @@
 
 .method public static GetStrFitsInPixel(Ljava/lang/String;Landroid/graphics/Paint;I)Ljava/lang/String;
     .locals 5
-    .param p0    # Ljava/lang/String;
-    .param p1    # Landroid/graphics/Paint;
-    .param p2    # I
 
     const/4 v4, 0x0
 
@@ -796,8 +791,6 @@
 
 .method public static GetStrPixelWidth(Ljava/lang/String;Landroid/graphics/Paint;)I
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Landroid/graphics/Paint;
 
     const/4 v0, 0x0
 
@@ -812,7 +805,6 @@
 
 .method public static HasKeyboard(Landroid/content/Context;)Z
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Lcom/android/mms/ui/SipHandler;->getInputMethodManager(Landroid/content/Context;)Landroid/view/inputmethod/InputMethodManager;
 
@@ -837,7 +829,6 @@
 
 .method public static LanguageSize(Ljava/lang/String;)I
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "Mms/MessageUtils"
 
@@ -1337,8 +1328,6 @@
 
 .method public static SaveBitmapToFile(Landroid/graphics/Bitmap;Ljava/lang/String;)V
     .locals 6
-    .param p0    # Landroid/graphics/Bitmap;
-    .param p1    # Ljava/lang/String;
 
     new-instance v1, Ljava/io/File;
 
@@ -1463,9 +1452,6 @@
 
 .method public static SpamMessageFilterForVIPMode(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v5, 0x1
 
@@ -1577,8 +1563,6 @@
 
 .method public static SpamNumberisAlreadInUse(Landroid/content/Context;Ljava/lang/String;)Z
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -1612,9 +1596,6 @@
 
 .method public static calibrationDone(Landroid/app/Activity;Ljava/lang/String;Z)V
     .locals 2
-    .param p0    # Landroid/app/Activity;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     invoke-static {p0}, Lcom/android/mms/ui/MessageUtils;->getSharedPreference(Landroid/app/Activity;)Landroid/content/SharedPreferences;
 
@@ -1633,7 +1614,6 @@
 
 .method public static canAddToContacts(Lcom/android/mms/data/Contact;)Z
     .locals 4
-    .param p0    # Lcom/android/mms/data/Contact;
 
     const/4 v2, 0x0
 
@@ -1703,9 +1683,6 @@
 
 .method public static checkCallBlockAlreadyInUse(Landroid/content/Context;Ljava/lang/String;Z)Z
     .locals 13
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const/4 v12, 0x0
 
@@ -1939,8 +1916,6 @@
 
 .method public static checkReadReport(Landroid/content/Context;J)Z
     .locals 12
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
 
     const/4 v4, 0x0
 
@@ -2091,9 +2066,6 @@
 
 .method public static checkRingtoneIsValid(Landroid/content/Context;Ljava/lang/String;Z)Ljava/lang/String;
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const/4 v0, 0x0
 
@@ -2106,10 +2078,6 @@
 
 .method public static checkRingtoneIsValid(Landroid/content/Context;Ljava/lang/String;ZI)Ljava/lang/String;
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # I
 
     const-string v2, "content://"
 
@@ -2290,10 +2258,6 @@
 
 .method private static confirmReadReportDialog(Landroid/content/Context;Landroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnCancelListener;)V
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/content/DialogInterface$OnClickListener;
-    .param p2    # Landroid/content/DialogInterface$OnClickListener;
-    .param p3    # Landroid/content/DialogInterface$OnCancelListener;
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
@@ -2328,11 +2292,6 @@
 
 .method private static confirmReadReportDialogForSCover(Landroid/content/Context;Landroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnCancelListener;Lcom/samsung/android/sdk/cover/ScoverManager;)V
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/content/DialogInterface$OnClickListener;
-    .param p2    # Landroid/content/DialogInterface$OnClickListener;
-    .param p3    # Landroid/content/DialogInterface$OnCancelListener;
-    .param p4    # Lcom/samsung/android/sdk/cover/ScoverManager;
 
     const/4 v4, -0x2
 
@@ -2426,7 +2385,6 @@
 
 .method public static convertCharToSpace(Ljava/lang/String;)Ljava/lang/String;
     .locals 11
-    .param p0    # Ljava/lang/String;
 
     const v10, 0xdfff
 
@@ -2629,7 +2587,6 @@
 
 .method public static convertToFreeMessage(Ljava/lang/String;)Ljava/util/ArrayList;
     .locals 2
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2716,7 +2673,6 @@
 
 .method public static convertToFreeMessageFormat(Ljava/lang/String;)Ljava/lang/String;
     .locals 10
-    .param p0    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -2960,7 +2916,6 @@
 
 .method public static convertToFreeMessageMapCapsFormat(Ljava/lang/String;)Ljava/lang/String;
     .locals 10
-    .param p0    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -3377,7 +3332,6 @@
 
 .method public static convertToNumberWithPlus(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     move-object v0, p0
 
@@ -3487,9 +3441,6 @@
 
 .method public static copyBackgroundFile(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 16
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v7, 0x0
 
@@ -3818,9 +3769,6 @@
 
 .method public static copyPartDrmCheck(Landroid/content/Context;Lcom/google/android/mms/pdu/PduPart;Ljava/lang/String;)Z
     .locals 30
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/google/android/mms/pdu/PduPart;
-    .param p2    # Ljava/lang/String;
 
     const/16 v29, 0x0
 
@@ -4533,7 +4481,6 @@
 
 .method public static createAddContactIntent(Landroid/net/Uri;)Landroid/content/Intent;
     .locals 3
-    .param p0    # Landroid/net/Uri;
 
     const/4 v0, 0x0
 
@@ -4588,7 +4535,6 @@
 
 .method public static createAddContactIntent(Ljava/lang/String;)Landroid/content/Intent;
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -4643,8 +4589,6 @@
 
 .method public static createVideoThumbnail(Landroid/content/Context;Landroid/net/Uri;)Landroid/graphics/Bitmap;
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
 
     const/4 v0, 0x0
 
@@ -4706,9 +4650,6 @@
 
 .method public static createVideoThumbnailAt(Landroid/content/Context;Landroid/net/Uri;J)Landroid/graphics/Bitmap;
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # J
 
     const/4 v0, 0x0
 
@@ -4768,8 +4709,6 @@
 
 .method public static createblockNumberSettingDialog(Landroid/content/Context;Lcom/android/mms/data/Contact;)V
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/mms/data/Contact;
 
     const/4 v0, 0x0
 
@@ -4780,9 +4719,6 @@
 
 .method public static createblockNumberSettingDialog(Landroid/content/Context;Lcom/android/mms/data/Contact;Ljava/lang/Runnable;)V
     .locals 9
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/mms/data/Contact;
-    .param p2    # Ljava/lang/Runnable;
 
     const/4 v8, 0x2
 
@@ -4975,7 +4911,6 @@
 
 .method public static displayFixedGMTInRoamingState(Landroid/content/Context;)Z
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -5043,8 +4978,6 @@
 
 .method public static doBoost(Landroid/content/Context;I)V
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     if-nez p0, :cond_0
 
@@ -5086,9 +5019,6 @@
 
 .method public static existInVIPModeList(Landroid/content/Context;Ljava/lang/String;I)Z
     .locals 12
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v2, 0x0
 
@@ -5255,8 +5185,6 @@
 
 .method public static extractEncStr(Landroid/content/Context;Lcom/google/android/mms/pdu/EncodedStringValue;)Ljava/lang/String;
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/google/android/mms/pdu/EncodedStringValue;
 
     if-eqz p1, :cond_0
 
@@ -5275,9 +5203,6 @@
 
 .method public static extractEncStrFromCursor(Landroid/database/Cursor;II)Ljava/lang/String;
     .locals 4
-    .param p0    # Landroid/database/Cursor;
-    .param p1    # I
-    .param p2    # I
 
     invoke-interface {p0, p1}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
 
@@ -5326,9 +5251,6 @@
 
 .method private static extractIdsToAddresses(Landroid/content/Context;Ljava/lang/String;Z)Ljava/lang/StringBuilder;
     .locals 18
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     new-instance v8, Ljava/lang/StringBuilder;
 
@@ -5490,7 +5412,6 @@
 
 .method public static extractNumber(Ljava/lang/String;)Ljava/lang/String;
     .locals 7
-    .param p0    # Ljava/lang/String;
 
     const-string v2, ""
 
@@ -5570,7 +5491,6 @@
 
 .method public static extractUris([Landroid/text/style/URLSpan;)Ljava/util/ArrayList;
     .locals 4
-    .param p0    # [Landroid/text/style/URLSpan;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([",
@@ -5612,7 +5532,6 @@
 
 .method public static extractingAddress(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     const/4 v3, -0x1
 
@@ -5674,7 +5593,6 @@
 
 .method public static findCmasServiceCategoryFromServiceCategory(I)I
     .locals 8
-    .param p0    # I
 
     const/16 v7, 0x1004
 
@@ -5792,8 +5710,6 @@
 
 .method public static formaTimetoSpam(Landroid/content/Context;J)Ljava/lang/String;
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
 
     const-string v0, ""
 
@@ -5820,7 +5736,6 @@
 
 .method public static formatDate(J)Ljava/lang/String;
     .locals 10
-    .param p0    # J
 
     const/4 v9, 0x2
 
@@ -5883,8 +5798,6 @@
 
 .method public static formatDate(Landroid/content/Context;J)Ljava/lang/String;
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
 
     const/16 v1, 0x14
 
@@ -5913,8 +5826,6 @@
 
 .method public static formatDateForLocal(Landroid/content/Context;J)Ljava/lang/String;
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
 
     const/16 v0, 0x14
 
@@ -5929,8 +5840,6 @@
 
 .method public static formatDateTime(Landroid/content/Context;J)Ljava/lang/String;
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
 
     const/16 v0, 0x15
 
@@ -5943,9 +5852,6 @@
 
 .method private static formatDateTime2(Landroid/content/Context;JI)Ljava/lang/String;
     .locals 26
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
-    .param p3    # I
 
     invoke-static/range {p0 .. p0}, Lcom/android/mms/ui/MessageUtils;->getDateFormatOrder(Landroid/content/Context;)[C
 
@@ -6584,10 +6490,6 @@
 
 .method private static formatDateTime2(Landroid/content/Context;JIZ)Ljava/lang/String;
     .locals 28
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
-    .param p3    # I
-    .param p4    # Z
 
     invoke-static/range {p0 .. p0}, Lcom/android/mms/ui/MessageUtils;->getDateFormatOrder(Landroid/content/Context;)[C
 
@@ -7222,7 +7124,6 @@
 
 .method public static formatMessage_smiley(Ljava/lang/String;)Ljava/lang/CharSequence;
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     new-instance v0, Landroid/text/SpannableStringBuilder;
 
@@ -7250,8 +7151,6 @@
 
 .method public static formatTime(Landroid/content/Context;J)Ljava/lang/String;
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
 
     const/4 v1, 0x1
 
@@ -7280,8 +7179,6 @@
 
 .method public static formatTimeForLocal(Landroid/content/Context;J)Ljava/lang/String;
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
 
     const/4 v0, 0x1
 
@@ -7294,8 +7191,6 @@
 
 .method public static formatTimeStampString(Landroid/content/Context;J)Ljava/lang/String;
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
 
     const/4 v0, 0x0
 
@@ -7308,9 +7203,6 @@
 
 .method public static formatTimeStampString(Landroid/content/Context;JZ)Ljava/lang/String;
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
-    .param p3    # Z
 
     const/4 v2, 0x0
 
@@ -7413,9 +7305,6 @@
 
 .method public static formatTimeStampStringForLocal(Landroid/content/Context;JZ)Ljava/lang/String;
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
-    .param p3    # Z
 
     new-instance v2, Landroid/text/format/Time;
 
@@ -7472,8 +7361,6 @@
 
 .method public static getAddressByFreeMessageThreadId(Landroid/content/Context;J)Ljava/lang/String;
     .locals 12
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
 
     const/4 v11, 0x1
 
@@ -7592,8 +7479,6 @@
 
 .method public static getAddressByThreadId(Landroid/content/Context;J)Ljava/lang/String;
     .locals 13
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
 
     const/4 v1, 0x0
 
@@ -7745,7 +7630,6 @@
 
 .method public static getAllFreeMessageSessionIds(Landroid/content/Context;)Ljava/util/ArrayList;
     .locals 9
-    .param p0    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -7831,7 +7715,6 @@
 
 .method public static getAppRestrictBackground(Landroid/content/Context;)Z
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -7840,8 +7723,6 @@
 
 .method public static getApplicationIcon(Landroid/content/Context;Ljava/lang/String;)Landroid/graphics/drawable/Drawable;
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -7885,7 +7766,6 @@
 
 .method public static getAttachmentType(Lcom/android/mms/model/SlideshowModel;)I
     .locals 6
-    .param p0    # Lcom/android/mms/model/SlideshowModel;
 
     const/4 v3, 0x4
 
@@ -7999,7 +7879,6 @@
 
 .method public static getAutoSmsEnabled(Landroid/content/Context;)Ljava/lang/String;
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -8029,7 +7908,6 @@
 
 .method public static getAutoSmsType(Landroid/content/Context;)Ljava/lang/String;
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -8123,8 +8001,6 @@
 
 .method public static getBitmapFromFile(Ljava/lang/String;Z)Landroid/graphics/Bitmap;
     .locals 5
-    .param p0    # Ljava/lang/String;
-    .param p1    # Z
 
     const/4 v3, 0x0
 
@@ -8179,8 +8055,6 @@
 
 .method public static getBitmapFromUri(Landroid/content/Context;Landroid/net/Uri;)Landroid/graphics/Bitmap;
     .locals 7
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
 
     const/4 v0, 0x0
 
@@ -8305,9 +8179,6 @@
 
 .method static getBufferUnicodeString([BII)Ljava/lang/String;
     .locals 8
-    .param p0    # [B
-    .param p1    # I
-    .param p2    # I
 
     const/4 v4, 0x0
 
@@ -8416,7 +8287,6 @@
 
 .method private static getCertainityTextID(I)I
     .locals 1
-    .param p0    # I
 
     const v0, 0x7f0c01f2
 
@@ -8446,8 +8316,6 @@
 
 .method public static getCheckedOnOff(Landroid/app/Activity;Ljava/lang/String;)Z
     .locals 2
-    .param p0    # Landroid/app/Activity;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/android/mms/ui/MessageUtils;->getSharedPreference(Landroid/app/Activity;)Landroid/content/SharedPreferences;
 
@@ -8464,7 +8332,6 @@
 
 .method public static getCidTextIndex(Lcom/android/mms/model/SlideshowModel;)I
     .locals 14
-    .param p0    # Lcom/android/mms/model/SlideshowModel;
 
     new-instance v2, Ljava/util/ArrayList;
 
@@ -8635,7 +8502,6 @@
 
 .method private static getCmaeCategoryTextID(I)I
     .locals 3
-    .param p0    # I
 
     const/4 v2, 0x4
 
@@ -8780,7 +8646,6 @@
 
 .method public static getCmasServiceCategory(I)I
     .locals 8
-    .param p0    # I
 
     const/16 v7, 0x68
 
@@ -8916,7 +8781,6 @@
 
 .method public static getCmasServiceCategoryStringId(Ljava/lang/String;)I
     .locals 6
-    .param p0    # Ljava/lang/String;
 
     const/4 v5, 0x7
 
@@ -9188,8 +9052,6 @@
 
 .method public static getContactImage(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     invoke-static {p0}, Lcom/android/mms/ui/MessageUtils;->initContactImage(Landroid/content/Context;)V
 
@@ -9209,8 +9071,6 @@
 
 .method public static getContactImageId(Landroid/content/Context;I)Ljava/lang/String;
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     invoke-static {p0}, Lcom/android/mms/ui/MessageUtils;->initContactImage(Landroid/content/Context;)V
 
@@ -9230,7 +9090,6 @@
 
 .method public static getContactListFromRecipientsDB(Ljava/lang/String;)Lcom/android/mms/data/ContactList;
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     const/4 v4, 0x1
 
@@ -9286,10 +9145,6 @@
 
 .method public static getConvName(Ljava/lang/String;CILandroid/graphics/Paint;)Ljava/lang/String;
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # C
-    .param p2    # I
-    .param p3    # Landroid/graphics/Paint;
 
     if-nez p0, :cond_1
 
@@ -9343,9 +9198,6 @@
 
 .method public static getConvName(Ljava/util/List;CILandroid/graphics/Paint;)Ljava/lang/String;
     .locals 14
-    .param p1    # C
-    .param p2    # I
-    .param p3    # Landroid/graphics/Paint;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -9650,8 +9502,6 @@
 
 .method public static getCopyToSimMenuName(Landroid/content/Context;I)Ljava/lang/String;
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     const v2, 0x7f0c0019
 
@@ -9714,7 +9564,6 @@
 
 .method public static getCoverType(Landroid/content/Context;)I
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     new-instance v0, Lcom/samsung/android/sdk/cover/ScoverManager;
 
@@ -9733,7 +9582,6 @@
 
 .method private static getDateFormatOrder(Landroid/content/Context;)[C
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -9783,7 +9631,6 @@
 
 .method public static getDayOfWeekString(I)Ljava/lang/String;
     .locals 4
-    .param p0    # I
 
     invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
 
@@ -9935,9 +9782,6 @@
 
 .method public static getDrmMimeSavedStringRsrc(Landroid/content/Context;JZ)I
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
-    .param p3    # Z
 
     const v0, 0x7f0c035d
 
@@ -9967,10 +9811,6 @@
 
 .method public static getErrorDialog(Landroid/content/Context;ILjava/lang/String;Ljava/lang/String;)Landroid/app/Dialog;
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
@@ -9998,7 +9838,6 @@
 
 .method private static getErrorStringID(I)I
     .locals 1
-    .param p0    # I
 
     const v0, 0x7f0c0316
 
@@ -10067,7 +9906,6 @@
 
 .method public static getExpiryTime(Landroid/content/Context;)Ljava/lang/String;
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Landroid/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -10086,7 +9924,6 @@
 
 .method public static getExpiryTimeLong(Landroid/content/Context;)J
     .locals 7
-    .param p0    # Landroid/content/Context;
 
     const-wide/32 v2, 0x2a300
 
@@ -10168,8 +10005,6 @@
 
 .method public static getExtension(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p0, p1}, Lcom/android/mms/ui/MessageUtils;->isMatchedExcensionWithMimeType(Ljava/lang/String;Ljava/lang/String;)Z
 
@@ -10315,8 +10150,6 @@
 
 .method public static getFileNameFromUri(Landroid/app/Activity;Landroid/net/Uri;)Ljava/lang/String;
     .locals 10
-    .param p0    # Landroid/app/Activity;
-    .param p1    # Landroid/net/Uri;
 
     const/4 v4, 0x0
 
@@ -10413,7 +10246,6 @@
 
 .method public static getFirstAttachmentType(Lcom/android/mms/model/SlideshowModel;)I
     .locals 5
-    .param p0    # Lcom/android/mms/model/SlideshowModel;
 
     const/4 v3, 0x1
 
@@ -10507,7 +10339,6 @@
 
 .method public static getFormattedNumber(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -10558,11 +10389,6 @@
 
 .method private static getFreeFTMessageDetails(Landroid/content/Context;Landroid/database/Cursor;ZLcom/android/mms/ui/MessageItem;Ljava/lang/Boolean;)Ljava/lang/String;
     .locals 15
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/database/Cursor;
-    .param p2    # Z
-    .param p3    # Lcom/android/mms/ui/MessageItem;
-    .param p4    # Ljava/lang/Boolean;
 
     new-instance v7, Ljava/lang/StringBuilder;
 
@@ -10879,11 +10705,6 @@
 
 .method private static getFreeMessageDetails(Landroid/content/Context;Landroid/database/Cursor;ZLcom/android/mms/ui/MessageItem;Ljava/lang/Boolean;)Ljava/lang/String;
     .locals 12
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/database/Cursor;
-    .param p2    # Z
-    .param p3    # Lcom/android/mms/ui/MessageItem;
-    .param p4    # Ljava/lang/Boolean;
 
     new-instance v5, Ljava/lang/StringBuilder;
 
@@ -11184,8 +11005,6 @@
 
 .method public static getFtByMsgId(Landroid/content/Context;Ljava/lang/Long;)Landroid/database/Cursor;
     .locals 7
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/Long;
 
     const/4 v2, 0x0
 
@@ -11352,7 +11171,6 @@
 
 .method public static getMaxLengthEmailAdress(Lcom/android/mms/data/ContactList;)I
     .locals 9
-    .param p0    # Lcom/android/mms/data/ContactList;
 
     const/4 v3, 0x0
 
@@ -11502,12 +11320,6 @@
 
 .method public static getMessageDetails(Landroid/content/Context;Landroid/database/Cursor;ILcom/android/mms/ui/MessageItem;ZZ)Ljava/lang/String;
     .locals 7
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/database/Cursor;
-    .param p2    # I
-    .param p3    # Lcom/android/mms/ui/MessageItem;
-    .param p4    # Z
-    .param p5    # Z
 
     const/4 v3, 0x0
 
@@ -11817,8 +11629,6 @@
 
 .method public static getMimeTypeFromUri(Landroid/app/Activity;Landroid/net/Uri;)Ljava/lang/String;
     .locals 16
-    .param p0    # Landroid/app/Activity;
-    .param p1    # Landroid/net/Uri;
 
     const-string v12, ""
 
@@ -12080,7 +11890,6 @@
 
 .method public static getMmsDeliveryTimeLong(Landroid/content/Context;)J
     .locals 6
-    .param p0    # Landroid/content/Context;
 
     const-wide/16 v2, 0x0
 
@@ -12138,7 +11947,6 @@
 
 .method public static getMmsPiority(Landroid/content/Context;)I
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Landroid/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -12194,8 +12002,6 @@
 
 .method public static getMmsRecipients(Landroid/content/Context;Lcom/android/mms/ui/MessageItem;)Ljava/util/ArrayList;
     .locals 8
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/mms/ui/MessageItem;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -12262,7 +12068,6 @@
 
 .method public static getMmsReportAllowed(Landroid/content/Context;)I
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Landroid/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -12293,9 +12098,6 @@
 
 .method public static getMsgIdByMediaId(Landroid/content/Context;Ljava/lang/Long;Ljava/lang/Long;)Landroid/database/Cursor;
     .locals 7
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/Long;
-    .param p2    # Ljava/lang/Long;
 
     const/4 v2, 0x0
 
@@ -12383,12 +12185,6 @@
 
 .method private static getMultimediaMessageDetails(Landroid/content/Context;Landroid/database/Cursor;IZLcom/android/mms/ui/MessageItem;Z)Ljava/lang/String;
     .locals 41
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/database/Cursor;
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # Lcom/android/mms/ui/MessageItem;
-    .param p5    # Z
 
     const/16 v34, 0x0
 
@@ -13921,9 +13717,6 @@
 
 .method public static getMultimediaMessageNotificationDetails(Landroid/content/Context;JZ)Ljava/lang/String;
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
-    .param p3    # Z
 
     invoke-static {p0, p1, p2, p3}, Lcom/android/mms/ui/MessageUtils;->getNotificationIndDetails(Landroid/content/Context;JZ)Ljava/lang/String;
 
@@ -13934,7 +13727,6 @@
 
 .method public static getNameWithPhoneNumber(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/android/mms/data/Contact;->getContactName(Ljava/lang/String;)Ljava/lang/String;
 
@@ -14079,9 +13871,6 @@
 
 .method private static getNotificationIndDetails(Landroid/content/Context;JZ)Ljava/lang/String;
     .locals 17
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
-    .param p3    # Z
 
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -14404,10 +14193,6 @@
 
 .method private static getNotificationIndDetails(Landroid/content/Context;Landroid/database/Cursor;ZLcom/android/mms/ui/MessageItem;)Ljava/lang/String;
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/database/Cursor;
-    .param p2    # Z
-    .param p3    # Lcom/android/mms/ui/MessageItem;
 
     const-wide/16 v0, 0x0
 
@@ -14438,8 +14223,6 @@
 
 .method static getNumberProvinceAndCity(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
     .locals 56
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;
@@ -15958,8 +15741,6 @@
 
 .method public static getPathFromUri(Landroid/content/ContentResolver;Landroid/net/Uri;)Ljava/lang/String;
     .locals 11
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # Landroid/net/Uri;
 
     const/4 v10, 0x0
 
@@ -16084,7 +15865,6 @@
 
 .method public static getPhoneNumber(Ljava/lang/String;)Ljava/lang/String;
     .locals 6
-    .param p0    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -16157,8 +15937,6 @@
 
 .method public static getPhoneNumberLocator(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -16233,7 +16011,6 @@
 
 .method public static getPresenceIcon(I)I
     .locals 5
-    .param p0    # I
 
     const/4 v4, 0x5
 
@@ -16411,8 +16188,6 @@
 
 .method private static getPriorityDescription(Landroid/content/Context;I)Ljava/lang/String;
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -16460,8 +16235,6 @@
 
 .method public static getPriorityType(Landroid/content/Context;J)I
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
 
     sget-object v3, Landroid/provider/Telephony$Mms;->CONTENT_URI:Landroid/net/Uri;
 
@@ -16521,8 +16294,6 @@
 
 .method public static getRcsAddressByThreadId(Landroid/content/Context;J)Ljava/lang/String;
     .locals 12
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
 
     const/4 v1, 0x0
 
@@ -16659,8 +16430,6 @@
 
 .method public static getRcsDbId(Landroid/content/Context;Landroid/net/Uri;)J
     .locals 8
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
 
     const/4 v2, 0x0
 
@@ -16732,11 +16501,6 @@
 
 .method private static getRcsFTMessageDetails(Landroid/content/Context;Landroid/database/Cursor;ZLcom/android/mms/ui/MessageItem;Ljava/lang/Boolean;)Ljava/lang/String;
     .locals 25
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/database/Cursor;
-    .param p2    # Z
-    .param p3    # Lcom/android/mms/ui/MessageItem;
-    .param p4    # Ljava/lang/Boolean;
 
     new-instance v16, Ljava/lang/StringBuilder;
 
@@ -17344,8 +17108,6 @@
 
 .method public static getRcsFtSessionId(Landroid/content/Context;Landroid/net/Uri;)J
     .locals 8
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
 
     const/4 v2, 0x0
 
@@ -17417,11 +17179,6 @@
 
 .method private static getRcsMessageDetails(Landroid/content/Context;Landroid/database/Cursor;ZLcom/android/mms/ui/MessageItem;Ljava/lang/Boolean;)Ljava/lang/String;
     .locals 22
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/database/Cursor;
-    .param p2    # Z
-    .param p3    # Lcom/android/mms/ui/MessageItem;
-    .param p4    # Ljava/lang/Boolean;
 
     new-instance v14, Ljava/lang/StringBuilder;
 
@@ -18088,8 +17845,6 @@
 
 .method public static getRecipientIdsByChatId(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
     .locals 11
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const/4 v10, 0x0
 
@@ -18206,8 +17961,6 @@
 
 .method public static getRecipientIdsBySessionId(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
     .locals 11
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -18310,8 +18063,6 @@
 
 .method public static getRecipientIdsByThreadId(Landroid/content/Context;J)Ljava/lang/String;
     .locals 11
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
 
     const/4 v1, 0x0
 
@@ -18444,9 +18195,6 @@
 
 .method public static getRecipientsByIds(Landroid/content/Context;Ljava/lang/String;Z)Ljava/lang/String;
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     sget-object v2, Lcom/android/mms/ui/MessageUtils;->sRecipientAddress:Ljava/util/Map;
 
@@ -18502,8 +18250,6 @@
 
 .method public static getRecipientsFromPDU(Landroid/net/Uri;Landroid/content/Context;)Ljava/lang/String;
     .locals 7
-    .param p0    # Landroid/net/Uri;
-    .param p1    # Landroid/content/Context;
 
     const/4 v3, 0x0
 
@@ -18602,8 +18348,6 @@
 
 .method public static getReplyAllCount(Landroid/content/Context;Lcom/android/mms/ui/MessageItem;Ljava/util/ArrayList;)Z
     .locals 20
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/mms/ui/MessageItem;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -18901,8 +18645,6 @@
 
 .method public static getResponseStatus(Landroid/content/Context;J)I
     .locals 9
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
 
     const/4 v8, 0x0
 
@@ -19011,7 +18753,6 @@
 
 .method private static getResponseTypeTextID(I)I
     .locals 3
-    .param p0    # I
 
     const/4 v2, 0x4
 
@@ -19099,8 +18840,6 @@
 
 .method public static getRingtone(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
@@ -19139,10 +18878,6 @@
 
 .method private static getSAEAlertMessageDetails(Landroid/content/Context;Landroid/database/Cursor;ZLcom/android/mms/ui/MessageItem;)Ljava/lang/String;
     .locals 11
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/database/Cursor;
-    .param p2    # Z
-    .param p3    # Lcom/android/mms/ui/MessageItem;
 
     const/16 v10, 0xa
 
@@ -19353,10 +19088,6 @@
 
 .method public static getScaleFactor(IIII)F
     .locals 5
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/high16 v2, 0x3f800000
 
@@ -19473,10 +19204,6 @@
 
 .method public static getSendIcon(Landroid/content/Context;IZZ)I
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # Z
 
     const/4 v3, 0x0
 
@@ -19597,8 +19324,6 @@
 
 .method public static getSenderInformation(Landroid/content/Context;Lcom/android/mms/ui/MessageItem;)Ljava/lang/String;
     .locals 12
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/mms/ui/MessageItem;
 
     const/4 v0, 0x0
 
@@ -19782,8 +19507,6 @@
 
 .method public static getSessionIdByThreadId(Landroid/content/Context;Ljava/lang/Long;)Ljava/lang/String;
     .locals 8
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/Long;
 
     const/4 v2, 0x0
 
@@ -19861,7 +19584,6 @@
 
 .method private static getSeverityTextID(I)I
     .locals 1
-    .param p0    # I
 
     const v0, 0x7f0c01f2
 
@@ -19891,7 +19613,6 @@
 
 .method private static getSharedPreference(Landroid/app/Activity;)Landroid/content/SharedPreferences;
     .locals 2
-    .param p0    # Landroid/app/Activity;
 
     const-string v0, "com.android.mms"
 
@@ -19906,7 +19627,6 @@
 
 .method public static getSimCountryCode(Lcom/android/i18n/phonenumbers/PhoneNumberUtil;)Ljava/lang/String;
     .locals 4
-    .param p0    # Lcom/android/i18n/phonenumbers/PhoneNumberUtil;
 
     invoke-static {}, Lcom/android/mms/MmsApp;->getApplication()Lcom/android/mms/MmsApp;
 
@@ -19937,10 +19657,6 @@
 
 .method public static getSimIcon(Landroid/content/Context;IIZ)I
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -20031,8 +19747,6 @@
 
 .method public static getSimName(Landroid/content/Context;I)Ljava/lang/String;
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -20139,9 +19853,6 @@
 
 .method public static getSmsSentTime(Landroid/content/Context;JZ)J
     .locals 10
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
-    .param p3    # Z
 
     const-string v0, "Mms/MessageUtils"
 
@@ -20265,7 +19976,6 @@
 
 .method public static getSsmsInfo(Landroid/content/Context;)Landroid/content/ContentValues;
     .locals 10
-    .param p0    # Landroid/content/Context;
 
     const/4 v3, 0x0
 
@@ -20431,11 +20141,6 @@
 
 .method private static getTextMessageDetails(Landroid/content/Context;Landroid/database/Cursor;ZLcom/android/mms/ui/MessageItem;Ljava/lang/Boolean;)Ljava/lang/String;
     .locals 40
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/database/Cursor;
-    .param p2    # Z
-    .param p3    # Lcom/android/mms/ui/MessageItem;
-    .param p4    # Ljava/lang/Boolean;
 
     new-instance v21, Ljava/lang/StringBuilder;
 
@@ -22070,8 +21775,6 @@
 
 .method public static getThreadIdBySessionId(Landroid/content/Context;Ljava/lang/String;)J
     .locals 10
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -22153,8 +21856,6 @@
 
 .method public static getThreadTypeByThreadId(Landroid/content/Context;J)I
     .locals 9
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
 
     const/4 v2, 0x0
 
@@ -22234,7 +21935,6 @@
 
 .method private static getUrgencyTextID(I)I
     .locals 1
-    .param p0    # I
 
     const v0, 0x7f0c01f2
 
@@ -22264,7 +21964,6 @@
 
 .method public static getValidPhoneNumber(Ljava/lang/String;)Ljava/lang/String;
     .locals 6
-    .param p0    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -22340,8 +22039,6 @@
 
 .method public static getViewTitleString(Landroid/content/Context;J)Ljava/lang/String;
     .locals 8
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
 
     const-wide/16 v5, 0x0
 
@@ -22446,8 +22143,6 @@
 
 .method public static getViewTitleStrings(Landroid/content/Context;J)Ljava/util/ArrayList;
     .locals 12
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -22752,11 +22447,6 @@
 
 .method public static handleReadReport(Landroid/content/Context;[Ljava/lang/Long;ILjava/lang/Runnable;Z)V
     .locals 44
-    .param p0    # Landroid/content/Context;
-    .param p1    # [Ljava/lang/Long;
-    .param p2    # I
-    .param p3    # Ljava/lang/Runnable;
-    .param p4    # Z
 
     new-instance v39, Ljava/lang/StringBuilder;
 
@@ -23485,11 +23175,6 @@
 
 .method public static handleReadReportDataOne(Landroid/content/Context;JILjava/lang/Runnable;Lcom/samsung/android/sdk/cover/ScoverManager;)V
     .locals 27
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
-    .param p3    # I
-    .param p4    # Ljava/lang/Runnable;
-    .param p5    # Lcom/samsung/android/sdk/cover/ScoverManager;
 
     const-wide/16 v5, 0x0
 
@@ -23909,11 +23594,6 @@
 
 .method public static handleReadReportOne(Landroid/content/Context;JILjava/lang/Runnable;Lcom/samsung/android/sdk/cover/ScoverManager;)V
     .locals 31
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
-    .param p3    # I
-    .param p4    # Ljava/lang/Runnable;
-    .param p5    # Lcom/samsung/android/sdk/cover/ScoverManager;
 
     const-wide/16 v4, 0x0
 
@@ -24287,10 +23967,6 @@
 
 .method public static handleReadReportOneForMmsWithoutConfirmDlg(Landroid/content/Context;JILjava/lang/Runnable;)V
     .locals 15
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
-    .param p3    # I
-    .param p4    # Ljava/lang/Runnable;
 
     const-wide/16 v2, 0x0
 
@@ -24529,10 +24205,6 @@
 
 .method public static handleReadReportOneForSmsWithoutConfirmDlg(Landroid/content/Context;JILjava/lang/Runnable;)V
     .locals 20
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
-    .param p3    # I
-    .param p4    # Ljava/lang/Runnable;
 
     const-wide/16 v2, 0x0
 
@@ -24829,11 +24501,6 @@
 
 .method public static handleReadReportWithoutConfirmDlg(Landroid/content/Context;JILjava/lang/Runnable;Z)V
     .locals 35
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
-    .param p3    # I
-    .param p4    # Ljava/lang/Runnable;
-    .param p5    # Z
 
     const-string v32, ""
 
@@ -25608,7 +25275,6 @@
 
 .method public static hasFreeMessage(Landroid/content/Context;)Z
     .locals 8
-    .param p0    # Landroid/content/Context;
 
     const/4 v2, 0x0
 
@@ -25686,7 +25352,6 @@
 
 .method public static hasNonGSMCharater(Ljava/lang/String;)Z
     .locals 6
-    .param p0    # Ljava/lang/String;
 
     move-object v0, p0
 
@@ -25743,7 +25408,6 @@
 
 .method public static hasNonGSMCharaterExceptKorean(Ljava/lang/String;)Z
     .locals 8
-    .param p0    # Ljava/lang/String;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -25862,8 +25526,6 @@
 
 .method public static haveEmailContact(Landroid/content/Context;Ljava/lang/String;)Z
     .locals 11
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const/4 v10, 0x1
 
@@ -25958,7 +25620,6 @@
 
 .method public static declared-synchronized initContactImage(Landroid/content/Context;)V
     .locals 5
-    .param p0    # Landroid/content/Context;
 
     const-class v2, Lcom/android/mms/ui/MessageUtils;
 
@@ -26138,7 +25799,6 @@
 
 .method public static isAlias(Ljava/lang/String;)Z
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -26200,7 +25860,6 @@
 
 .method public static isAliasAddress(Lcom/android/mms/data/ContactList;)Z
     .locals 7
-    .param p0    # Lcom/android/mms/data/ContactList;
 
     const/4 v5, 0x0
 
@@ -26250,7 +25909,6 @@
 
 .method public static isAllowTextMessaging(Landroid/content/Context;)Z
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     const-string v1, "device_policy"
 
@@ -26279,7 +25937,6 @@
 
 .method public static isAlphaNumeric(Ljava/lang/String;)Z
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     invoke-virtual {p0}, Ljava/lang/String;->toCharArray()[C
 
@@ -26339,7 +25996,6 @@
 
 .method public static isAlphabet(Ljava/lang/String;)Z
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     invoke-virtual {p0}, Ljava/lang/String;->toCharArray()[C
 
@@ -26402,8 +26058,6 @@
 
 .method public static isAnimatedImage(Landroid/content/ContentResolver;Landroid/net/Uri;)Z
     .locals 10
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # Landroid/net/Uri;
 
     const/4 v6, 0x0
 
@@ -26832,7 +26486,6 @@
 
 .method public static isArabic(C)Z
     .locals 1
-    .param p0    # C
 
     invoke-static {p0}, Lcom/android/mms/ui/MessageUtils;->isArabic(I)Z
 
@@ -26843,7 +26496,6 @@
 
 .method public static isArabic(I)Z
     .locals 3
-    .param p0    # I
 
     const/4 v1, 0x1
 
@@ -26893,7 +26545,6 @@
 
 .method public static isAttachSupportedType(Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     invoke-static {}, Lcom/android/mms/MmsConfig;->getMmsEnabled()Z
 
@@ -26953,8 +26604,6 @@
 
 .method public static isAvailableApp(Landroid/content/Context;Ljava/lang/String;)Z
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x1
 
@@ -26982,7 +26631,6 @@
 
 .method public static isCBMessageAddress(Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "CBmessages"
 
@@ -27005,8 +26653,6 @@
 
 .method public static isCalibrationDone(Landroid/app/Activity;Ljava/lang/String;)Z
     .locals 2
-    .param p0    # Landroid/app/Activity;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/android/mms/ui/MessageUtils;->getSharedPreference(Landroid/app/Activity;)Landroid/content/SharedPreferences;
 
@@ -27023,7 +26669,6 @@
 
 .method public static isCalledPartyBCDNumber(Ljava/lang/String;)Z
     .locals 6
-    .param p0    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -27105,7 +26750,6 @@
 
 .method public static isCmasPrefix(Ljava/lang/String;)Z
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -27144,7 +26788,6 @@
 
 .method public static isCmasSender(Ljava/lang/String;)Z
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -27183,7 +26826,6 @@
 
 .method public static isContactMessage(Ljava/lang/String;)Z
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     const/16 v4, 0x1b
 
@@ -27223,7 +26865,6 @@
 
 .method public static isContainKoreanChar(Ljava/lang/String;)Z
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -27279,7 +26920,6 @@
 
 .method private static isContentUri(Landroid/net/Uri;)Z
     .locals 2
-    .param p0    # Landroid/net/Uri;
 
     if-nez p0, :cond_0
 
@@ -27304,8 +26944,6 @@
 
 .method private static isContentUriAvailable(Landroid/content/Context;Landroid/net/Uri;)Z
     .locals 9
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
 
     const/4 v7, 0x1
 
@@ -27384,7 +27022,6 @@
 
 .method public static isCoverOpened(Landroid/content/Context;)Z
     .locals 8
-    .param p0    # Landroid/content/Context;
 
     new-instance v0, Lcom/samsung/android/sdk/cover/Scover;
 
@@ -27499,7 +27136,6 @@
 
 .method public static isDeviceLockedWithSecure(Landroid/content/Context;)Z
     .locals 7
-    .param p0    # Landroid/content/Context;
 
     const/4 v3, 0x0
 
@@ -27571,8 +27207,6 @@
 
 .method public static isDrmRingtoneWithRights(Landroid/content/Context;J)Z
     .locals 18
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
 
     const/4 v9, 0x0
 
@@ -27787,10 +27421,6 @@
 
 .method public static isDuplicatedTransactionId(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Z)Z
     .locals 9
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     const/4 v2, 0x0
 
@@ -27897,7 +27527,6 @@
 
 .method public static isEmailAddress(Ljava/lang/String;)Z
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     if-eqz p0, :cond_0
 
@@ -27926,8 +27555,6 @@
 
 .method public static isEmergencyContact(Landroid/content/Context;Ljava/lang/String;)Z
     .locals 13
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const/4 v11, 0x1
 
@@ -28080,7 +27707,6 @@
 
 .method public static isEmergencyMode(Landroid/content/Context;)Z
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     const/4 v0, 0x1
 
@@ -28109,7 +27735,6 @@
 
 .method public static isEmergencyPhoneNumber(Ljava/lang/String;)Z
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -28258,7 +27883,6 @@
 
 .method public static isHebrew(C)Z
     .locals 1
-    .param p0    # C
 
     invoke-static {p0}, Lcom/android/mms/ui/MessageUtils;->isHebrew(I)Z
 
@@ -28269,7 +27893,6 @@
 
 .method public static isHebrew(I)Z
     .locals 3
-    .param p0    # I
 
     const/4 v1, 0x1
 
@@ -28302,7 +27925,6 @@
 
 .method public static isInCall(Landroid/content/Context;)Z
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -28342,8 +27964,6 @@
 
 .method public static isIndexValid(I[F)Z
     .locals 1
-    .param p0    # I
-    .param p1    # [F
 
     if-eqz p1, :cond_0
 
@@ -28366,8 +27986,6 @@
 
 .method public static isIndexValid(I[I)Z
     .locals 1
-    .param p0    # I
-    .param p1    # [I
 
     if-eqz p1, :cond_0
 
@@ -28390,8 +28008,6 @@
 
 .method public static isIndexValid(I[Ljava/lang/String;)Z
     .locals 1
-    .param p0    # I
-    .param p1    # [Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -28414,8 +28030,6 @@
 
 .method public static isIntentAvailable(Landroid/content/Context;Ljava/lang/String;)Z
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -28450,7 +28064,6 @@
 
 .method public static isInternationalRoaming(Landroid/content/Context;)Z
     .locals 8
-    .param p0    # Landroid/content/Context;
 
     const/4 v4, 0x0
 
@@ -28599,9 +28212,6 @@
 
 .method public static isInvalidRecipientsAsKTSMSDeliveryReadReport(ZLcom/android/mms/data/Conversation;Lcom/android/mms/data/ContactList;)Z
     .locals 8
-    .param p0    # Z
-    .param p1    # Lcom/android/mms/data/Conversation;
-    .param p2    # Lcom/android/mms/data/ContactList;
 
     const/4 v5, 0x1
 
@@ -28723,7 +28333,6 @@
 
 .method public static isKioskModeEnabled(Landroid/content/Context;)Z
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -28760,7 +28369,6 @@
 
 .method public static isKnoxExist(Landroid/content/Context;)Z
     .locals 5
-    .param p0    # Landroid/content/Context;
 
     const-string v3, "persona"
 
@@ -28821,7 +28429,6 @@
 
 .method public static isKnoxMode(Landroid/content/Context;)Z
     .locals 6
-    .param p0    # Landroid/content/Context;
 
     const-string v3, "persona"
 
@@ -28884,7 +28491,6 @@
 
 .method public static isLocalNumber(Ljava/lang/String;)Z
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -28930,7 +28536,6 @@
 
 .method public static isLocaleRTL(Ljava/util/Locale;)Z
     .locals 9
-    .param p0    # Ljava/util/Locale;
 
     const-string v0, "ar"
 
@@ -29098,9 +28703,6 @@
 
 .method public static isLockmessage(Ljava/lang/String;JLandroid/content/ContentResolver;)J
     .locals 11
-    .param p0    # Ljava/lang/String;
-    .param p1    # J
-    .param p3    # Landroid/content/ContentResolver;
 
     const-wide/16 v9, 0x0
 
@@ -29299,8 +28901,6 @@
 
 .method public static isMatchedExcensionWithMimeType(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Lcom/android/mms/util/MessageMimeTypeMap;->getSingleton()Lcom/android/mms/util/MessageMimeTypeMap;
 
@@ -29323,8 +28923,6 @@
 
 .method public static isMessageExist(Landroid/content/Context;Landroid/net/Uri;)Z
     .locals 8
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
 
     const/4 v2, 0x0
 
@@ -29407,7 +29005,6 @@
 
 .method public static isNameAndNumber(Ljava/lang/String;)Z
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -29444,7 +29041,6 @@
 
 .method public static isNumberCanAddToContact(Ljava/lang/String;)Z
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -29497,7 +29093,6 @@
 
 .method public static isNumberCanAddToPrioritySender(Lcom/android/mms/data/Contact;)Z
     .locals 2
-    .param p0    # Lcom/android/mms/data/Contact;
 
     invoke-virtual {p0}, Lcom/android/mms/data/Contact;->getNumber()Ljava/lang/String;
 
@@ -29531,7 +29126,6 @@
 
 .method public static isNumeric(Ljava/lang/String;)Z
     .locals 6
-    .param p0    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -29660,7 +29254,6 @@
 
 .method public static isPhoneNumber(Ljava/lang/String;)Z
     .locals 6
-    .param p0    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -29723,7 +29316,6 @@
 
 .method public static isPhoneNumberStartWithPlus(Ljava/lang/String;)Z
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -29759,7 +29351,6 @@
 
 .method public static isPhoneNumberWithPlus(Ljava/lang/String;)Z
     .locals 6
-    .param p0    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -29829,10 +29420,6 @@
 
 .method public static isSafeMessageForKor(Landroid/content/Context;Lcom/google/android/mms/pdu/GenericPdu;Landroid/net/Uri;Landroid/net/Uri;)Z
     .locals 22
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/google/android/mms/pdu/GenericPdu;
-    .param p2    # Landroid/net/Uri;
-    .param p3    # Landroid/net/Uri;
 
     const/16 v19, 0x0
 
@@ -30167,8 +29754,6 @@
 
 .method public static isSimActive(Landroid/content/Context;I)Z
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     const/4 v2, 0x1
 
@@ -30335,7 +29920,6 @@
 
 .method public static isSpecialChar(C)Z
     .locals 5
-    .param p0    # C
 
     const/16 v4, 0x25
 
@@ -30379,7 +29963,6 @@
 
 .method public static isSupportedUri(Ljava/lang/CharSequence;)Z
     .locals 1
-    .param p0    # Ljava/lang/CharSequence;
 
     if-eqz p0, :cond_1
 
@@ -30429,7 +30012,6 @@
 
 .method public static isTextRTL(Ljava/lang/CharSequence;)Z
     .locals 7
-    .param p0    # Ljava/lang/CharSequence;
 
     const/4 v5, 0x1
 
@@ -30512,7 +30094,6 @@
 
 .method public static isUltraPowerSavingMode(Landroid/content/Context;)Z
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     const/4 v0, 0x1
 
@@ -30541,8 +30122,6 @@
 
 .method public static isVIPModeBlackNumberMessage(Landroid/content/Context;Ljava/lang/String;)Z
     .locals 18
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const/4 v15, 0x0
 
@@ -30797,8 +30376,6 @@
 
 .method public static isVIPModeBlackStringMessage(Landroid/content/Context;Ljava/lang/String;)Z
     .locals 14
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -30934,7 +30511,6 @@
 
 .method public static isVIPModeOn(Landroid/content/Context;)I
     .locals 14
-    .param p0    # Landroid/content/Context;
 
     const/4 v2, 0x0
 
@@ -31077,8 +30653,6 @@
 
 .method public static isVIPModeWhiteNumberMessage(Landroid/content/Context;Ljava/lang/String;)Z
     .locals 14
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -31214,7 +30788,6 @@
 
 .method public static isVZWHiddenContact(Ljava/lang/String;)Z
     .locals 7
-    .param p0    # Ljava/lang/String;
 
     const/4 v3, 0x1
 
@@ -31323,8 +30896,6 @@
 
 .method public static isValidAddress(Ljava/lang/String;Z)Z
     .locals 5
-    .param p0    # Ljava/lang/String;
-    .param p1    # Z
 
     const/4 v1, 0x1
 
@@ -31540,7 +31111,6 @@
 
 .method public static isValidMmsAddress(Ljava/lang/String;)Z
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/android/mms/ui/MessageUtils;->parseMmsAddress(Ljava/lang/String;)Ljava/lang/String;
 
@@ -31561,7 +31131,6 @@
 
 .method public static isValidSmsAddress(Ljava/lang/String;)Z
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/android/mms/ui/MessageUtils;->isEmailAddress(Ljava/lang/String;)Z
 
@@ -31596,8 +31165,6 @@
 
 .method public static isValidSmsEmailAddress(Ljava/lang/String;Z)Z
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Z
 
     const-string v0, "Mms/MessageUtils"
 
@@ -31646,8 +31213,6 @@
 
 .method public static isValideFile(Landroid/content/Context;Landroid/net/Uri;)Z
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
 
     const/4 v2, 0x0
 
@@ -31809,7 +31374,6 @@
 
 .method public static isValideFile(Ljava/lang/String;)Z
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -31880,7 +31444,6 @@
 
 .method public static isVzwPhoneNumber(Ljava/lang/String;)Z
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -31909,7 +31472,6 @@
 
 .method public static isWapBrowserAvailable(Landroid/content/Context;)Z
     .locals 8
-    .param p0    # Landroid/content/Context;
 
     const/4 v4, 0x0
 
@@ -31965,7 +31527,6 @@
 
 .method public static isWapPushMessageAddress(Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "Pushmessage"
 
@@ -31988,8 +31549,6 @@
 
 .method public static joinContents(Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;
     .locals 7
-    .param p0    # Ljava/lang/String;
-    .param p1    # [Ljava/lang/String;
 
     new-instance v4, Ljava/lang/StringBuilder;
 
@@ -32059,8 +31618,6 @@
 
 .method public static launchCallMessagePopup(Landroid/content/Context;Ljava/lang/String;)V
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -32119,8 +31676,6 @@
 
 .method public static makeCall(Landroid/content/Context;Ljava/lang/String;)V
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -32133,9 +31688,6 @@
 
 .method public static makeCall(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -32146,9 +31698,6 @@
 
 .method public static makeCall(Landroid/content/Context;Ljava/lang/String;Z)V
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const/4 v0, 0x0
 
@@ -32159,10 +31708,6 @@
 
 .method public static makeCall(Landroid/content/Context;Ljava/lang/String;ZLjava/lang/String;)V
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # Ljava/lang/String;
 
     const/4 v5, 0x1
 
@@ -32270,9 +31815,6 @@
 
 .method public static makeCallFromNoti(Landroid/content/Context;Ljava/lang/String;Z)Landroid/content/Intent;
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const/4 v2, 0x0
 
@@ -32359,8 +31901,6 @@
 
 .method public static makeDial(Landroid/content/Context;Ljava/lang/String;)V
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -32422,8 +31962,6 @@
 
 .method public static makePhotoringCall(Landroid/content/Context;Ljava/lang/String;)V
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -32508,14 +32046,6 @@
 
 .method private static makeSpamReportHeader(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JLjava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # J
-    .param p6    # Ljava/lang/String;
-    .param p7    # Ljava/lang/String;
-    .param p8    # Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuffer;
 
@@ -33036,8 +32566,6 @@
 
 .method public static makeVideoCall(Landroid/content/Context;Ljava/lang/String;)V
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -33099,9 +32627,6 @@
 
 .method public static markMmsAsRead(Landroid/content/Context;JZ)V
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
-    .param p3    # Z
 
     const/4 v4, 0x1
 
@@ -33161,8 +32686,6 @@
 
 .method public static markSmsAsRead(Landroid/content/Context;J)V
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
 
     const/4 v4, 0x1
 
@@ -33217,8 +32740,6 @@
 
 .method public static markWpmAsRead(Landroid/content/Context;J)V
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
 
     const/4 v5, 0x1
 
@@ -33279,9 +32800,6 @@
 
 .method static mobileHeaderSearch([BII)I
     .locals 5
-    .param p0    # [B
-    .param p1    # I
-    .param p2    # I
 
     const/4 v2, 0x0
 
@@ -33338,9 +32856,6 @@
 
 .method public static openComposerWithDropObject(Landroid/net/Uri;Landroid/content/ClipData;Landroid/content/ClipDescription;)V
     .locals 5
-    .param p0    # Landroid/net/Uri;
-    .param p1    # Landroid/content/ClipData;
-    .param p2    # Landroid/content/ClipDescription;
 
     invoke-static {}, Lcom/android/mms/MmsApp;->getApplication()Lcom/android/mms/MmsApp;
 
@@ -33391,9 +32906,6 @@
 
 .method private static openMedia(Landroid/content/Context;Lcom/android/mms/model/SlideModel;Lcom/android/mms/model/MediaModel;)V
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/mms/model/SlideModel;
-    .param p2    # Lcom/android/mms/model/MediaModel;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -33560,10 +33072,6 @@
 
 .method private static openMedia(Landroid/content/Context;Lcom/android/mms/model/SlideModel;Lcom/android/mms/model/MediaModel;Z)V
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/mms/model/SlideModel;
-    .param p2    # Lcom/android/mms/model/MediaModel;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -33730,8 +33238,6 @@
 
 .method public static openModel(Landroid/content/Context;Lcom/android/mms/model/Model;)V
     .locals 18
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/mms/model/Model;
 
     if-nez p1, :cond_1
 
@@ -34173,7 +33679,6 @@
 
 .method public static parseMmsAddress(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -34236,7 +33741,6 @@
 
 .method private static parsePhoneNumberForMms(Ljava/lang/String;)Ljava/lang/String;
     .locals 8
-    .param p0    # Ljava/lang/String;
 
     const/4 v5, 0x0
 
@@ -34321,7 +33825,6 @@
 
 .method public static parseSmsAddress(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -34375,9 +33878,6 @@
 
 .method public static pickAttachmentImageOrVideoFile(Landroid/app/Activity;Ljava/lang/String;I)V
     .locals 2
-    .param p0    # Landroid/app/Activity;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     new-instance v0, Landroid/content/Intent;
 
@@ -34397,9 +33897,6 @@
 
 .method public static queryCount(Landroid/content/ContentResolver;Landroid/net/Uri;Ljava/lang/String;)I
     .locals 9
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Ljava/lang/String;
 
     const/4 v8, 0x0
 
@@ -34477,10 +33974,6 @@
 
 .method public static queryCount(Landroid/content/ContentResolver;Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;)I
     .locals 9
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const/4 v7, 0x0
 
@@ -34566,7 +34059,6 @@
 
 .method public static readUnsignedInt([B)J
     .locals 11
-    .param p0    # [B
 
     const/4 v8, 0x0
 
@@ -34623,7 +34115,6 @@
 
 .method public static readUnsignedShort([B)I
     .locals 3
-    .param p0    # [B
 
     const/4 v2, 0x0
 
@@ -34646,10 +34137,6 @@
 
 .method public static recordSound(Landroid/content/Context;ILcom/android/mms/model/SlideshowModel;Z)V
     .locals 7
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # Lcom/android/mms/model/SlideshowModel;
-    .param p3    # Z
 
     const/4 v6, 0x0
 
@@ -34755,9 +34242,6 @@
 
 .method public static registerAsCallBlockNumber(Landroid/content/Context;Ljava/lang/String;Z)Z
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const/4 v2, 0x0
 
@@ -34852,8 +34336,6 @@
 
 .method public static registerAsSpamNumber(Landroid/content/Context;Ljava/lang/String;)Z
     .locals 8
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const/4 v7, 0x1
 
@@ -35030,8 +34512,6 @@
 
 .method public static registerToCalendar(Landroid/app/Activity;Ljava/lang/String;)V
     .locals 4
-    .param p0    # Landroid/app/Activity;
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -35066,8 +34546,6 @@
 
 .method public static reportAsSpam(Lcom/android/mms/ui/MessageItem;Landroid/content/Context;)V
     .locals 28
-    .param p0    # Lcom/android/mms/ui/MessageItem;
-    .param p1    # Landroid/content/Context;
 
     new-instance v24, Lcom/google/android/mms/pdu/SendReq;
 
@@ -35654,12 +35132,6 @@
 
 .method public static resizeImageAsync(Landroid/content/Context;Landroid/net/Uri;Landroid/os/Handler;Lcom/android/mms/ui/MessageUtils$ResizeImageResultCallback;ZZ)V
     .locals 9
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Landroid/os/Handler;
-    .param p3    # Lcom/android/mms/ui/MessageUtils$ResizeImageResultCallback;
-    .param p4    # Z
-    .param p5    # Z
 
     invoke-static {p0}, Lcom/android/mms/util/TelephonyPermission;->getInstance(Landroid/content/Context;)Lcom/android/mms/util/TelephonyPermission;
 
@@ -35710,8 +35182,6 @@
 
 .method public static saveRingtone(Landroid/content/Context;J)Z
     .locals 10
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
 
     const/4 v5, 0x1
 
@@ -35816,8 +35286,6 @@
 
 .method public static searchShortStr(Landroid/content/Context;Ljava/lang/String;)Lcom/android/mms/data/ContactList;
     .locals 12
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x1
 
@@ -35995,8 +35463,6 @@
 
 .method public static selectAudio(Landroid/content/Context;I)V
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -36042,8 +35508,6 @@
 
 .method public static selectImage(Landroid/content/Context;I)V
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     const-string v0, "image/*"
 
@@ -36054,9 +35518,6 @@
 
 .method private static selectMediaByType(Landroid/content/Context;ILjava/lang/String;)V
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     instance-of v2, p0, Landroid/app/Activity;
 
@@ -36086,8 +35547,6 @@
 
 .method public static selectVideo(Landroid/content/Context;I)V
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     const-string v0, "video/*"
 
@@ -36098,10 +35557,6 @@
 
 .method public static sendCallSpamReport(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;J)V
     .locals 15
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # J
 
     const-string v2, "Mms/MessageUtils"
 
@@ -36328,9 +35783,6 @@
 
 .method public static sendMessageSpamReport(Landroid/content/Context;Ljava/lang/String;J)V
     .locals 41
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
 
     invoke-static/range {p0 .. p0}, Lcom/android/mms/model/SlideshowModel;->createNew(Landroid/content/Context;)Lcom/android/mms/model/SlideshowModel;
 
@@ -37059,10 +36511,6 @@
 
 .method public static sendNotiToOtherApp(Landroid/content/Context;Landroid/net/Uri;Ljava/lang/String;Ljava/lang/String;)V
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     invoke-static {}, Lcom/android/mms/MmsConfig;->getEnableNotificationBoradcastReceivedMsg()Z
 
@@ -37170,8 +36618,6 @@
 
 .method public static setAutoSmsEnabled(Landroid/content/Context;Ljava/lang/String;)V
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -37186,8 +36632,6 @@
 
 .method public static setAutoSmsType(Landroid/content/Context;Ljava/lang/String;)V
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -37202,7 +36646,6 @@
 
 .method public static setChameleonPreset(Landroid/content/Context;)Z
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -37211,9 +36654,6 @@
 
 .method public static setCheckedOnOff(Landroid/app/Activity;Ljava/lang/String;Z)V
     .locals 2
-    .param p0    # Landroid/app/Activity;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     invoke-static {p0}, Lcom/android/mms/ui/MessageUtils;->getSharedPreference(Landroid/app/Activity;)Landroid/content/SharedPreferences;
 
@@ -37232,9 +36672,6 @@
 
 .method public static setComponent(Landroid/content/Context;Ljava/lang/String;Z)V
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const/4 v1, 0x1
 
@@ -37263,8 +36700,6 @@
 
 .method public static setComponentFreeMessage(Landroid/content/Context;Z)V
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
 
     const/4 v0, 0x1
 
@@ -37360,8 +36795,6 @@
 
 .method public static setDefaultSoundSetting(Landroid/content/SharedPreferences;I)V
     .locals 4
-    .param p0    # Landroid/content/SharedPreferences;
-    .param p1    # I
 
     invoke-interface {p0}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
 
@@ -37432,8 +36865,6 @@
 
 .method public static setExpiryTime(Landroid/content/Context;Ljava/lang/String;)Z
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p0}, Landroid/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -37456,7 +36887,6 @@
 
 .method public static setHideIndicatorBar(Landroid/app/Activity;)V
     .locals 3
-    .param p0    # Landroid/app/Activity;
 
     invoke-virtual {p0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
 
@@ -37497,7 +36927,6 @@
 
 .method public static setIndicatorBar(Landroid/app/Activity;)V
     .locals 3
-    .param p0    # Landroid/app/Activity;
 
     const/16 v2, 0x400
 
@@ -37530,11 +36959,6 @@
 
 .method public static setIntentforDrop(Landroid/net/Uri;Landroid/content/Intent;Landroid/content/ClipData;Landroid/content/ClipDescription;Landroid/app/Activity;)Z
     .locals 10
-    .param p0    # Landroid/net/Uri;
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Landroid/content/ClipData;
-    .param p3    # Landroid/content/ClipDescription;
-    .param p4    # Landroid/app/Activity;
 
     invoke-virtual {p2}, Landroid/content/ClipData;->getItemCount()I
 
@@ -37808,8 +37232,6 @@
 
 .method public static setMaximumLengthforWB(Landroid/widget/EditText;I)V
     .locals 2
-    .param p0    # Landroid/widget/EditText;
-    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -37826,9 +37248,6 @@
 
 .method public static showDiscardDraftConfirmDialog(Landroid/content/Context;Landroid/content/DialogInterface$OnKeyListener;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog;
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/content/DialogInterface$OnKeyListener;
-    .param p2    # Landroid/content/DialogInterface$OnClickListener;
 
     invoke-static {}, Landroid/util/GateConfig;->isGateEnabled()Z
 
@@ -37882,12 +37301,6 @@
 
 .method public static showErrorDialog(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Landroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnCancelListener;Landroid/content/DialogInterface$OnDismissListener;)Landroid/app/AlertDialog;
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/content/DialogInterface$OnClickListener;
-    .param p4    # Landroid/content/DialogInterface$OnCancelListener;
-    .param p5    # Landroid/content/DialogInterface$OnDismissListener;
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
@@ -37928,11 +37341,6 @@
 
 .method public static showErrorDialog(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Landroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnCancelListener;)V
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/content/DialogInterface$OnClickListener;
-    .param p4    # Landroid/content/DialogInterface$OnCancelListener;
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
@@ -37963,7 +37371,6 @@
 
 .method private static showFailtoOpenModelDialog(Landroid/content/Context;)V
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
@@ -38004,9 +37411,6 @@
 
 .method public static showInputMothodConfirmDialog(Landroid/content/Context;Landroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnClickListener;)V
     .locals 7
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/content/DialogInterface$OnClickListener;
-    .param p2    # Landroid/content/DialogInterface$OnClickListener;
 
     const v6, 0x7f0c0003
 
@@ -38109,9 +37513,6 @@
 
 .method public static showLinksContextMenu(Landroid/app/Activity;Ljava/lang/String;Ljava/lang/String;)Landroid/app/DialogFragment;
     .locals 13
-    .param p0    # Landroid/app/Activity;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -38325,7 +37726,6 @@
 
 .method public static showPDPResetDialog(Landroid/content/Context;)V
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Lcom/android/mms/ui/MessagingPreferenceActivity;->getPDP_PARAM(Landroid/content/Context;)Z
 
@@ -38355,9 +37755,6 @@
 
 .method public static showSaveDraftConfirmDialog(Landroid/content/Context;Landroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnClickListener;)V
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/content/DialogInterface$OnClickListener;
-    .param p2    # Landroid/content/DialogInterface$OnClickListener;
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
@@ -38402,8 +37799,6 @@
 
 .method static streamToBytes(Ljava/io/InputStream;I)[B
     .locals 3
-    .param p0    # Ljava/io/InputStream;
-    .param p1    # I
 
     new-array v0, p1, [B
 
@@ -38427,9 +37822,6 @@
 
 .method static teleBinarySearch([BII)I
     .locals 6
-    .param p0    # [B
-    .param p1    # I
-    .param p2    # I
 
     const/4 v2, 0x0
 
@@ -38512,7 +37904,6 @@
 
 .method public static unicodeToUTF16(Ljava/lang/String;)Ljava/lang/String;
     .locals 14
-    .param p0    # Ljava/lang/String;
 
     const-string v0, ""
 
@@ -38681,9 +38072,6 @@
 
 .method public static unregisterAsCallBlockNumber(Landroid/content/Context;Ljava/lang/String;Z)Z
     .locals 18
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     if-eqz p0, :cond_0
 
@@ -39023,8 +38411,6 @@
 
 .method public static unregisterSpamNumber(Landroid/content/Context;Ljava/lang/String;)Z
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -39180,11 +38566,6 @@
 
 .method public static viewMediaContents(Landroid/content/Context;Lcom/android/mms/model/SlideshowModel;IIZ)V
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/mms/model/SlideshowModel;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -39271,10 +38652,6 @@
 
 .method public static viewMmsMessageAttachment(Landroid/content/Context;Landroid/net/Uri;Lcom/android/mms/model/SlideshowModel;Z)V
     .locals 8
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Lcom/android/mms/model/SlideshowModel;
-    .param p3    # Z
 
     if-nez p2, :cond_0
 
@@ -39380,9 +38757,6 @@
 
 .method public static viewMmsMessageAttachment(Landroid/content/Context;Lcom/android/mms/data/WorkingMessage;Z)V
     .locals 7
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/mms/data/WorkingMessage;
-    .param p2    # Z
 
     const/4 v5, 0x0
 
@@ -39480,9 +38854,6 @@
 
 .method public static viewMmsMessageAttachment(Landroid/content/Context;Lcom/android/mms/ui/MessageItem;Z)V
     .locals 14
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/mms/ui/MessageItem;
-    .param p2    # Z
 
     iget-object v5, p1, Lcom/android/mms/ui/MessageItem;->mMessageUri:Landroid/net/Uri;
 
@@ -39624,8 +38995,6 @@
 
 .method public static viewSimpleSlideshow(Landroid/content/Context;Lcom/android/mms/model/SlideshowModel;)V
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/mms/model/SlideshowModel;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

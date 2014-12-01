@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -45,7 +44,6 @@
 
 .method public getCardLoginAttemptRemain(Lcom/sec/smartcard/pinservice/ISmartCardInfoCallback;)V
     .locals 5
-    .param p1    # Lcom/sec/smartcard/pinservice/ISmartCardInfoCallback;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -117,7 +115,6 @@
 
 .method public getPin(Lcom/sec/smartcard/pinservice/ISmartCardGetPinCallback;)V
     .locals 5
-    .param p1    # Lcom/sec/smartcard/pinservice/ISmartCardGetPinCallback;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -361,8 +358,6 @@
 
 .method public registerCard([CLcom/sec/smartcard/pinservice/ISmartCardRegisterCallback;)V
     .locals 5
-    .param p1    # [C
-    .param p2    # Lcom/sec/smartcard/pinservice/ISmartCardRegisterCallback;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -477,8 +472,6 @@
 
 .method public unRegisterCard([CLcom/sec/smartcard/pinservice/ISmartCardRegisterCallback;)V
     .locals 5
-    .param p1    # [C
-    .param p2    # Lcom/sec/smartcard/pinservice/ISmartCardRegisterCallback;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -544,8 +537,6 @@
 
 .method public verifyCard([CLcom/sec/smartcard/pinservice/ISmartCardVerifyCallback;)V
     .locals 5
-    .param p1    # [C
-    .param p2    # Lcom/sec/smartcard/pinservice/ISmartCardVerifyCallback;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

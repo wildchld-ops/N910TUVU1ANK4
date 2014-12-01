@@ -28,8 +28,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/mms/ui/ComposeMenu;Lcom/android/mms/ui/MessageOptions;Lcom/android/mms/ui/MessageItem;)V
     .locals 1
-    .param p2    # Lcom/android/mms/ui/MessageOptions;
-    .param p3    # Lcom/android/mms/ui/MessageItem;
 
     const/4 v0, 0x0
 
@@ -52,8 +50,6 @@
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 3
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/mms/ui/ComposeMenu$CmasForwardListener;->mMessageOpt:Lcom/android/mms/ui/MessageOptions;
 

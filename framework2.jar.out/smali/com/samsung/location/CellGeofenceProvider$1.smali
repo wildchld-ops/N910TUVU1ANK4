@@ -33,7 +33,6 @@
 # virtual methods
 .method public addCellGeofence(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/samsung/location/CellGeofenceProvider$1;->this$0:Lcom/samsung/location/CellGeofenceProvider;
 
@@ -45,8 +44,6 @@
 
 .method public enableCellGeofence(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/samsung/location/CellGeofenceProvider$1;->this$0:Lcom/samsung/location/CellGeofenceProvider;
 
@@ -58,7 +55,6 @@
 
 .method public initCellGeofence(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/samsung/location/CellGeofenceProvider$1;->this$0:Lcom/samsung/location/CellGeofenceProvider;
 
@@ -70,7 +66,6 @@
 
 .method public removeCellGeofence(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/samsung/location/CellGeofenceProvider$1;->this$0:Lcom/samsung/location/CellGeofenceProvider;
 
@@ -82,7 +77,6 @@
 
 .method public startCollectCell(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/samsung/location/CellGeofenceProvider$1;->this$0:Lcom/samsung/location/CellGeofenceProvider;
 
@@ -94,7 +88,6 @@
 
 .method public stopCollectCell(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/samsung/location/CellGeofenceProvider$1;->this$0:Lcom/samsung/location/CellGeofenceProvider;
 
@@ -106,10 +99,6 @@
 
 .method public syncCellGeofence([II[II)V
     .locals 1
-    .param p1    # [I
-    .param p2    # I
-    .param p3    # [I
-    .param p4    # I
 
     iget-object v0, p0, Lcom/samsung/location/CellGeofenceProvider$1;->this$0:Lcom/samsung/location/CellGeofenceProvider;
 

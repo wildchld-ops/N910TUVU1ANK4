@@ -70,8 +70,6 @@
 # virtual methods
 .method public playMmsNotice(Landroid/content/Context;I)Z
     .locals 9
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     const/4 v0, 0x0
 

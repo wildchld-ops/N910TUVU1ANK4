@@ -23,7 +23,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;I)V
     .locals 1
-    .param p2    # I
 
     iput-object p1, p0, Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy$PersonaObserver;->this$0:Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;
 
@@ -40,7 +39,6 @@
 
 .method static synthetic access$1700(Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy$PersonaObserver;)I
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy$PersonaObserver;
 
     iget v0, p0, Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy$PersonaObserver;->mContainerId:I
 
@@ -49,9 +47,6 @@
 
 .method static synthetic access$1800(Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy$PersonaObserver;ILjava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy$PersonaObserver;
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy$PersonaObserver;->sendIntentBroadcastForContainer(ILjava/lang/String;)V
 
@@ -60,8 +55,6 @@
 
 .method private sendIntentBroadcastForContainer(ILjava/lang/String;)V
     .locals 4
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     # getter for: Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;->access$200()Ljava/lang/String;
@@ -156,7 +149,6 @@
 
 .method public onKeyGuardStateChanged(Z)V
     .locals 2
-    .param p1    # Z
 
     # getter for: Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;->access$200()Ljava/lang/String;
@@ -202,8 +194,6 @@
 
 .method public onStateChange(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy$PersonaObserver;->this$0:Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;
 

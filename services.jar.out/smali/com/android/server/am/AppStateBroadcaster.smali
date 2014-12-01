@@ -124,9 +124,6 @@
 
 .method private static broadcastAppExit(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     if-eqz p0, :cond_0
 
@@ -172,9 +169,6 @@
 
 .method private static broadcastAppState(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     if-eqz p0, :cond_0
 
@@ -252,7 +246,6 @@
 
 .method public static enableIntentBroadcast(Landroid/content/Context;Lcom/android/internal/app/ProcessMap;)V
     .locals 1
-    .param p0    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -279,7 +272,6 @@
 
 .method private static isKnownRunning(Ljava/lang/String;)Z
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -314,7 +306,6 @@
 
 .method private static isPackageNameNull(Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     if-nez p0, :cond_0
 
@@ -331,7 +322,6 @@
 
 .method private static logOriginFunction(Ljava/lang/String;)V
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/Throwable;
 
@@ -391,9 +381,6 @@
 
 .method private static packageRunning(Landroid/content/Context;Ljava/lang/String;I)V
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v1, 0x0
 
@@ -455,10 +442,6 @@
 
 .method private static packageStopped(Landroid/content/Context;Ljava/lang/String;II)V
     .locals 7
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v4, 0x0
 
@@ -581,7 +564,6 @@
 
 .method private static populateRunningProcesses(Landroid/content/Context;Lcom/android/internal/app/ProcessMap;)V
     .locals 6
-    .param p0    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -651,8 +633,6 @@
 
 .method public static sendApplicationFocusGain(Landroid/content/Context;Ljava/lang/String;)V
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     sget-boolean v0, Lcom/android/server/am/AppStateBroadcaster;->sBroadcastEnabled:Z
 
@@ -700,8 +680,6 @@
 
 .method public static sendApplicationFocusLoss(Landroid/content/Context;Ljava/lang/String;)V
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     sget-boolean v0, Lcom/android/server/am/AppStateBroadcaster;->sBroadcastEnabled:Z
 
@@ -735,9 +713,6 @@
 
 .method public static sendApplicationStart(Landroid/content/Context;Ljava/lang/String;I)V
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     sget-boolean v0, Lcom/android/server/am/AppStateBroadcaster;->sBroadcastEnabled:Z
 
@@ -757,10 +732,6 @@
 
 .method public static sendApplicationStop(Landroid/content/Context;Ljava/lang/String;II)V
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     sget-boolean v0, Lcom/android/server/am/AppStateBroadcaster;->sBroadcastEnabled:Z
 
@@ -788,7 +759,6 @@
 
 .method private static stripPackageName(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     move-object v1, p0
 

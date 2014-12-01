@@ -44,7 +44,6 @@
 
 .method public constructor <init>(Landroid/os/Parcel;)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -79,10 +78,6 @@
 
 .method public constructor <init>(Ljava/lang/Integer;Ljava/lang/String;Lcom/sec/ims/client/notification/RcsInputBoxType;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/Integer;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/sec/ims/client/notification/RcsInputBoxType;
-    .param p4    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -149,9 +144,6 @@
 
 .method public static make(Ljava/lang/String;Ljava/lang/Integer;Lcom/sec/ims/client/notification/RcsInputBoxType;)Lcom/sec/ims/client/notification/RcsInputBox;
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/Integer;
-    .param p2    # Lcom/sec/ims/client/notification/RcsInputBoxType;
 
     new-instance v0, Lcom/sec/ims/client/notification/RcsInputBox;
 
@@ -164,10 +156,6 @@
 
 .method public static make(Ljava/lang/String;Ljava/lang/Integer;Lcom/sec/ims/client/notification/RcsInputBoxType;Ljava/lang/String;)Lcom/sec/ims/client/notification/RcsInputBox;
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/Integer;
-    .param p2    # Lcom/sec/ims/client/notification/RcsInputBoxType;
-    .param p3    # Ljava/lang/String;
 
     new-instance v0, Lcom/sec/ims/client/notification/RcsInputBox;
 
@@ -188,7 +176,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 4
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x0
 
@@ -298,7 +285,6 @@
 
 .method public setText(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Lcom/sec/ims/client/notification/RcsInputBox;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -347,8 +333,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/sec/ims/client/notification/RcsInputBox;->mLabel:Ljava/lang/String;
 

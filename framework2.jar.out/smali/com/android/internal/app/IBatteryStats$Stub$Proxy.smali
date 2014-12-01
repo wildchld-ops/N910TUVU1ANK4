@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -310,7 +309,6 @@
 
 .method public noteFullWifiLockAcquired(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -362,7 +360,6 @@
 
 .method public noteFullWifiLockAcquiredFromSource(Landroid/os/WorkSource;)V
     .locals 5
-    .param p1    # Landroid/os/WorkSource;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -433,7 +430,6 @@
 
 .method public noteFullWifiLockReleased(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -485,7 +481,6 @@
 
 .method public noteFullWifiLockReleasedFromSource(Landroid/os/WorkSource;)V
     .locals 5
-    .param p1    # Landroid/os/WorkSource;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -605,8 +600,6 @@
 
 .method public noteNetworkInterfaceType(Ljava/lang/String;I)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -709,8 +702,6 @@
 
 .method public notePhoneDataConnectionState(IZ)V
     .locals 5
-    .param p1    # I
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -869,7 +860,6 @@
 
 .method public notePhoneSignalStrength(Landroid/telephony/SignalStrength;)V
     .locals 5
-    .param p1    # Landroid/telephony/SignalStrength;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -940,7 +930,6 @@
 
 .method public notePhoneState(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -992,7 +981,6 @@
 
 .method public noteScreenBrightness(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1142,7 +1130,6 @@
 
 .method public noteStartGps(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1194,8 +1181,6 @@
 
 .method public noteStartSensor(II)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1249,10 +1234,6 @@
 
 .method public noteStartWakelock(IILjava/lang/String;I)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1310,10 +1291,6 @@
 
 .method public noteStartWakelockFromSource(Landroid/os/WorkSource;ILjava/lang/String;I)V
     .locals 5
-    .param p1    # Landroid/os/WorkSource;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1390,7 +1367,6 @@
 
 .method public noteStopGps(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1442,8 +1418,6 @@
 
 .method public noteStopSensor(II)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1497,10 +1471,6 @@
 
 .method public noteStopWakelock(IILjava/lang/String;I)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1558,10 +1528,6 @@
 
 .method public noteStopWakelockFromSource(Landroid/os/WorkSource;ILjava/lang/String;I)V
     .locals 5
-    .param p1    # Landroid/os/WorkSource;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1638,8 +1604,6 @@
 
 .method public noteUserActivity(II)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1693,7 +1657,6 @@
 
 .method public noteVibratorOff(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1745,8 +1708,6 @@
 
 .method public noteVibratorOn(IJ)V
     .locals 5
-    .param p1    # I
-    .param p2    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1800,8 +1761,6 @@
 
 .method public noteWifiBatchedScanStartedFromSource(Landroid/os/WorkSource;I)V
     .locals 5
-    .param p1    # Landroid/os/WorkSource;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1874,7 +1833,6 @@
 
 .method public noteWifiBatchedScanStoppedFromSource(Landroid/os/WorkSource;)V
     .locals 5
-    .param p1    # Landroid/os/WorkSource;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1945,7 +1903,6 @@
 
 .method public noteWifiMulticastDisabled(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1997,7 +1954,6 @@
 
 .method public noteWifiMulticastDisabledFromSource(Landroid/os/WorkSource;)V
     .locals 5
-    .param p1    # Landroid/os/WorkSource;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2068,7 +2024,6 @@
 
 .method public noteWifiMulticastEnabled(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2120,7 +2075,6 @@
 
 .method public noteWifiMulticastEnabledFromSource(Landroid/os/WorkSource;)V
     .locals 5
-    .param p1    # Landroid/os/WorkSource;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2289,7 +2243,6 @@
 
 .method public noteWifiRunning(Landroid/os/WorkSource;)V
     .locals 5
-    .param p1    # Landroid/os/WorkSource;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2360,8 +2313,6 @@
 
 .method public noteWifiRunningChanged(Landroid/os/WorkSource;Landroid/os/WorkSource;)V
     .locals 5
-    .param p1    # Landroid/os/WorkSource;
-    .param p2    # Landroid/os/WorkSource;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2453,7 +2404,6 @@
 
 .method public noteWifiScanStarted(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2505,7 +2455,6 @@
 
 .method public noteWifiScanStartedFromSource(Landroid/os/WorkSource;)V
     .locals 5
-    .param p1    # Landroid/os/WorkSource;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2576,7 +2525,6 @@
 
 .method public noteWifiScanStopped(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2628,7 +2576,6 @@
 
 .method public noteWifiScanStoppedFromSource(Landroid/os/WorkSource;)V
     .locals 5
-    .param p1    # Landroid/os/WorkSource;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2699,7 +2646,6 @@
 
 .method public noteWifiStopped(Landroid/os/WorkSource;)V
     .locals 5
-    .param p1    # Landroid/os/WorkSource;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2770,12 +2716,6 @@
 
 .method public setBatteryState(IIIIII)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

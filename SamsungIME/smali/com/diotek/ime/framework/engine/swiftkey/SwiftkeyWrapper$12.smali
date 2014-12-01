@@ -30,8 +30,6 @@
 # virtual methods
 .method public log(Lcom/touchtype_fluency/LoggingListener$Level;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Lcom/touchtype_fluency/LoggingListener$Level;
-    .param p2    # Ljava/lang/String;
 
     sget-object v0, Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyWrapper$23;->$SwitchMap$com$touchtype_fluency$LoggingListener$Level:[I
 

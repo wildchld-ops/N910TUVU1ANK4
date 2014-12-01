@@ -45,7 +45,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -56,8 +55,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -68,9 +65,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const v3, 0x7f0e0004
 
@@ -166,7 +160,6 @@
 
 .method private setChildrenAlpha(F)V
     .locals 3
-    .param p1    # F
 
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getChildCount()I
 
@@ -195,8 +188,6 @@
 # virtual methods
 .method public applyCellSpan(II)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
 
     const/4 v6, 0x2
 
@@ -268,8 +259,6 @@
 
 .method public applyHighLightLabel(Ljava/lang/String;Ljava/lang/String;)V
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const v6, 0x7f090015
 
@@ -363,7 +352,6 @@
 
 .method public applyLabel(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const v1, 0x7f090015
 
@@ -384,10 +372,6 @@
 
 .method applyPreview(Lcom/android/launcher2/FastBitmapDrawable;IZZ)V
     .locals 3
-    .param p1    # Lcom/android/launcher2/FastBitmapDrawable;
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # Z
 
     iget-object v0, p0, Lcom/android/launcher2/PagedViewWidget;->mImage:Landroid/widget/ImageView;
 
@@ -455,7 +439,6 @@
 
 .method public draw(Landroid/graphics/Canvas;)V
     .locals 11
-    .param p1    # Landroid/graphics/Canvas;
 
     const/4 v10, 0x0
 
@@ -582,7 +565,6 @@
 
 .method public drawShadow(Landroid/graphics/Canvas;)V
     .locals 4
-    .param p1    # Landroid/graphics/Canvas;
 
     iget-object v1, p0, Lcom/android/launcher2/PagedViewWidget;->mShadowMixin:Lcom/android/launcher2/DynamicShadowMixin;
 
@@ -650,8 +632,6 @@
 
 .method public invalidateChildInParent([ILandroid/graphics/Rect;)Landroid/view/ViewParent;
     .locals 2
-    .param p1    # [I
-    .param p2    # Landroid/graphics/Rect;
 
     invoke-super {p0, p1, p2}, Landroid/view/ViewGroup;->invalidateChildInParent([ILandroid/graphics/Rect;)Landroid/view/ViewParent;
 
@@ -678,7 +658,6 @@
 
 .method public isDeleteRequested(Landroid/view/MotionEvent;)Z
     .locals 8
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getAction()I
 
@@ -746,7 +725,6 @@
 
 .method protected onSetAlpha(I)Z
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -755,7 +733,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-super {p0, p1}, Landroid/view/View;->onTouchEvent(Landroid/view/MotionEvent;)Z
 
@@ -771,7 +748,6 @@
 
 .method public setCellSpanVisible(Z)V
     .locals 2
-    .param p1    # Z
 
     const v1, 0x7f090016
 
@@ -801,7 +777,6 @@
 
 .method public setChecked(Z)V
     .locals 1
-    .param p1    # Z
 
     const/4 v0, 0x1
 
@@ -812,8 +787,6 @@
 
 .method setChecked(ZZ)V
     .locals 6
-    .param p1    # Z
-    .param p2    # Z
 
     iget-boolean v2, p0, Lcom/android/launcher2/PagedViewWidget;->mIsChecked:Z
 
@@ -896,7 +869,6 @@
 
 .method public setLabelVisible(Z)V
     .locals 2
-    .param p1    # Z
 
     const v1, 0x7f090015
 
@@ -926,7 +898,6 @@
 
 .method public setOverlay(Landroid/graphics/drawable/Drawable;)V
     .locals 1
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     iget-object v0, p0, Lcom/android/launcher2/PagedViewWidget;->mOverlay:Landroid/graphics/drawable/Drawable;
 

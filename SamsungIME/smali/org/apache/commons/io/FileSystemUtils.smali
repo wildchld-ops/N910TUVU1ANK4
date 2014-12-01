@@ -206,7 +206,6 @@
 
 .method public static freeSpace(Ljava/lang/String;)J
     .locals 3
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -228,7 +227,6 @@
 
 .method public static freeSpaceKb(Ljava/lang/String;)J
     .locals 3
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -252,9 +250,6 @@
 # virtual methods
 .method freeSpaceOS(Ljava/lang/String;IZ)J
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -341,9 +336,6 @@
 
 .method freeSpaceUnix(Ljava/lang/String;ZZ)J
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -612,7 +604,6 @@
 
 .method freeSpaceWindows(Ljava/lang/String;)J
     .locals 9
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -752,7 +743,6 @@
 
 .method openProcess([Ljava/lang/String;)Ljava/lang/Process;
     .locals 1
-    .param p1    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -772,8 +762,6 @@
 
 .method parseBytes(Ljava/lang/String;Ljava/lang/String;)J
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -862,8 +850,6 @@
 
 .method parseDir(Ljava/lang/String;Ljava/lang/String;)J
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1018,8 +1004,6 @@
 
 .method performCommand([Ljava/lang/String;I)Ljava/util/List;
     .locals 12
-    .param p1    # [Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

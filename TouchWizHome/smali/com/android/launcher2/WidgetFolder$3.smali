@@ -36,8 +36,6 @@
 # virtual methods
 .method public run(Lcom/android/launcher2/WidgetFolder$AppsCustomizeAsyncTask;Lcom/android/launcher2/WidgetFolder$AsyncTaskPageData;)V
     .locals 4
-    .param p1    # Lcom/android/launcher2/WidgetFolder$AppsCustomizeAsyncTask;
-    .param p2    # Lcom/android/launcher2/WidgetFolder$AsyncTaskPageData;
 
     # getter for: Lcom/android/launcher2/WidgetFolder;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/android/launcher2/WidgetFolder;->access$000()Ljava/lang/String;

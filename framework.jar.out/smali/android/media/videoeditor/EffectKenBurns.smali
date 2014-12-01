@@ -34,12 +34,6 @@
 
 .method public constructor <init>(Landroid/media/videoeditor/MediaItem;Ljava/lang/String;Landroid/graphics/Rect;Landroid/graphics/Rect;JJ)V
     .locals 7
-    .param p1    # Landroid/media/videoeditor/MediaItem;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/graphics/Rect;
-    .param p4    # Landroid/graphics/Rect;
-    .param p5    # J
-    .param p7    # J
 
     move-object v0, p0
 
@@ -116,8 +110,6 @@
 
 .method getKenBurnsSettings(Landroid/graphics/Rect;Landroid/graphics/Rect;)V
     .locals 1
-    .param p1    # Landroid/graphics/Rect;
-    .param p2    # Landroid/graphics/Rect;
 
     invoke-virtual {p0}, Landroid/media/videoeditor/EffectKenBurns;->getStartRect()Landroid/graphics/Rect;
 

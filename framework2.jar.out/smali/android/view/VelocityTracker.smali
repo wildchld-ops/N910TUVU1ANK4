@@ -49,7 +49,6 @@
 
 .method private constructor <init>(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -116,7 +115,6 @@
 
 .method public static obtain(Ljava/lang/String;)Landroid/view/VelocityTracker;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     if-nez p0, :cond_0
 
@@ -139,7 +137,6 @@
 # virtual methods
 .method public addMovement(Landroid/view/MotionEvent;)V
     .locals 2
-    .param p1    # Landroid/view/MotionEvent;
 
     if-nez p1, :cond_0
 
@@ -171,7 +168,6 @@
 
 .method public computeCurrentVelocity(I)V
     .locals 2
-    .param p1    # I
 
     iget v0, p0, Landroid/view/VelocityTracker;->mPtr:I
 
@@ -184,8 +180,6 @@
 
 .method public computeCurrentVelocity(IF)V
     .locals 1
-    .param p1    # I
-    .param p2    # F
 
     iget v0, p0, Landroid/view/VelocityTracker;->mPtr:I
 
@@ -232,8 +226,6 @@
 
 .method public getEstimator(ILandroid/view/VelocityTracker$Estimator;)Z
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/view/VelocityTracker$Estimator;
 
     if-nez p2, :cond_0
 
@@ -271,7 +263,6 @@
 
 .method public getXVelocity(I)F
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/view/VelocityTracker;->mPtr:I
 
@@ -298,7 +289,6 @@
 
 .method public getYVelocity(I)F
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/view/VelocityTracker;->mPtr:I
 

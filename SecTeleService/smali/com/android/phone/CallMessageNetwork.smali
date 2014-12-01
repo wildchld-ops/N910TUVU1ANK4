@@ -135,7 +135,7 @@
     :catch_0
     move-exception v0
 
-    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
+    invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
 
     goto :goto_0
 .end method
@@ -189,7 +189,7 @@
     :catch_0
     move-exception v0
 
-    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
+    invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
 
     goto :goto_0
 .end method
@@ -324,7 +324,7 @@
 
     move-result-object v2
 
-    invoke-virtual {p1, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p1, v1, v2}, Ljava/util/LinkedHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     :cond_0
     const-string v1, "user_device_id"
@@ -337,19 +337,19 @@
 
     move-result-object v2
 
-    invoke-virtual {p1, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p1, v1, v2}, Ljava/util/LinkedHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     const-string v1, "user_device_type"
 
     const-string v2, "A"
 
-    invoke-virtual {p1, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p1, v1, v2}, Ljava/util/LinkedHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     const-string v1, "app_type"
 
     const-string v2, "OEM"
 
-    invoke-virtual {p1, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p1, v1, v2}, Ljava/util/LinkedHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     const-string v1, "device_model"
 
@@ -357,7 +357,7 @@
 
     move-result-object v2
 
-    invoke-virtual {p1, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p1, v1, v2}, Ljava/util/LinkedHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     return-void
 .end method
@@ -905,7 +905,7 @@
 
     invoke-direct {v0, p0, p1}, Lcom/android/phone/CallMessageNetwork$5;-><init>(Lcom/android/phone/CallMessageNetwork;Ljava/lang/String;)V
 
-    invoke-virtual {v0}, Ljava/lang/Thread;->start()V
+    invoke-virtual {v0}, Lcom/android/phone/CallMessageNetwork$5;->start()V
 
     return-void
 .end method
@@ -917,7 +917,7 @@
 
     invoke-direct {v0, p0}, Lcom/android/phone/CallMessageNetwork$7;-><init>(Lcom/android/phone/CallMessageNetwork;)V
 
-    invoke-virtual {v0}, Ljava/lang/Thread;->start()V
+    invoke-virtual {v0}, Lcom/android/phone/CallMessageNetwork$7;->start()V
 
     return-void
 .end method
@@ -932,7 +932,7 @@
 
     invoke-direct {v0, p0, p1, p2, p3}, Lcom/android/phone/CallMessageNetwork$6;-><init>(Lcom/android/phone/CallMessageNetwork;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    invoke-virtual {v0}, Ljava/lang/Thread;->start()V
+    invoke-virtual {v0}, Lcom/android/phone/CallMessageNetwork$6;->start()V
 
     return-void
 .end method
@@ -944,7 +944,7 @@
 
     invoke-direct {v0, p0}, Lcom/android/phone/CallMessageNetwork$2;-><init>(Lcom/android/phone/CallMessageNetwork;)V
 
-    invoke-virtual {v0}, Ljava/lang/Thread;->start()V
+    invoke-virtual {v0}, Lcom/android/phone/CallMessageNetwork$2;->start()V
 
     return-void
 .end method
@@ -1014,7 +1014,7 @@
 
     invoke-direct {v0, p0, p1, p2, p3}, Lcom/android/phone/CallMessageNetwork$4;-><init>(Lcom/android/phone/CallMessageNetwork;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    invoke-virtual {v0}, Ljava/lang/Thread;->start()V
+    invoke-virtual {v0}, Lcom/android/phone/CallMessageNetwork$4;->start()V
 
     return-void
 .end method
@@ -1027,7 +1027,7 @@
 
     invoke-direct {v0, p0, p1}, Lcom/android/phone/CallMessageNetwork$3;-><init>(Lcom/android/phone/CallMessageNetwork;Ljava/lang/String;)V
 
-    invoke-virtual {v0}, Ljava/lang/Thread;->start()V
+    invoke-virtual {v0}, Lcom/android/phone/CallMessageNetwork$3;->start()V
 
     return-void
 .end method

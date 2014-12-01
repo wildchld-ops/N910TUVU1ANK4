@@ -45,7 +45,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -56,8 +55,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const v0, 0x10103c8
 
@@ -68,9 +65,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v4, 0x0
 
@@ -106,7 +100,6 @@
 
 .method private setBasePadding(Z)V
     .locals 1
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -243,10 +236,6 @@
 
 .method protected internalSetPadding(IIII)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-super {p0, p1, p2, p3, p4}, Landroid/view/View;->internalSetPadding(IIII)V
 
@@ -271,7 +260,6 @@
 
 .method protected onCreateDrawableState(I)[I
     .locals 2
-    .param p1    # I
 
     add-int/lit8 v1, p1, 0x1
 
@@ -295,7 +283,6 @@
 
 .method protected onDraw(Landroid/graphics/Canvas;)V
     .locals 12
-    .param p1    # Landroid/graphics/Canvas;
 
     invoke-super {p0, p1}, Landroid/widget/TextView;->onDraw(Landroid/graphics/Canvas;)V
 
@@ -396,7 +383,6 @@
 
 .method public onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
     .locals 1
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
 
     invoke-super {p0, p1}, Landroid/widget/TextView;->onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
 
@@ -417,7 +403,6 @@
 
 .method public onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
     .locals 1
-    .param p1    # Landroid/view/accessibility/AccessibilityNodeInfo;
 
     invoke-super {p0, p1}, Landroid/widget/TextView;->onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
 
@@ -442,7 +427,6 @@
 
 .method public onRtlPropertiesChanged(I)V
     .locals 0
-    .param p1    # I
 
     invoke-super {p0, p1}, Landroid/widget/TextView;->onRtlPropertiesChanged(I)V
 
@@ -453,7 +437,6 @@
 
 .method public setCheckMarkDrawable(I)V
     .locals 3
-    .param p1    # I
 
     if-eqz p1, :cond_0
 
@@ -491,7 +474,6 @@
 
 .method public setCheckMarkDrawable(Landroid/graphics/drawable/Drawable;)V
     .locals 4
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     const/4 v1, 0x1
 
@@ -581,7 +563,6 @@
 
 .method public setChecked(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-boolean v0, p0, Landroid/widget/CheckedTextView;->mChecked:Z
 

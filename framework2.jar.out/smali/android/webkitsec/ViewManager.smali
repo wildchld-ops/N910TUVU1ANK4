@@ -41,7 +41,6 @@
 # direct methods
 .method constructor <init>(Landroid/webkitsec/WebViewClassic;)V
     .locals 6
-    .param p1    # Landroid/webkitsec/WebViewClassic;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -90,8 +89,6 @@
 
 .method static synthetic access$000(Landroid/webkitsec/ViewManager;Landroid/webkitsec/ViewManager$ChildView;)V
     .locals 0
-    .param p0    # Landroid/webkitsec/ViewManager;
-    .param p1    # Landroid/webkitsec/ViewManager$ChildView;
 
     invoke-direct {p0, p1}, Landroid/webkitsec/ViewManager;->requestLayout(Landroid/webkitsec/ViewManager$ChildView;)V
 
@@ -100,7 +97,6 @@
 
 .method static synthetic access$200(Landroid/webkitsec/ViewManager;)Landroid/webkitsec/WebViewClassic;
     .locals 1
-    .param p0    # Landroid/webkitsec/ViewManager;
 
     iget-object v0, p0, Landroid/webkitsec/ViewManager;->mWebView:Landroid/webkitsec/WebViewClassic;
 
@@ -109,7 +105,6 @@
 
 .method static synthetic access$300(Landroid/webkitsec/ViewManager;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Landroid/webkitsec/ViewManager;
 
     iget-object v0, p0, Landroid/webkitsec/ViewManager;->mChildren:Ljava/util/ArrayList;
 
@@ -118,7 +113,6 @@
 
 .method static synthetic access$400(Landroid/webkitsec/ViewManager;)Z
     .locals 1
-    .param p0    # Landroid/webkitsec/ViewManager;
 
     iget-boolean v0, p0, Landroid/webkitsec/ViewManager;->mReadyToDraw:Z
 
@@ -127,8 +121,6 @@
 
 .method static synthetic access$402(Landroid/webkitsec/ViewManager;Z)Z
     .locals 0
-    .param p0    # Landroid/webkitsec/ViewManager;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/webkitsec/ViewManager;->mReadyToDraw:Z
 
@@ -137,7 +129,6 @@
 
 .method private requestLayout(Landroid/webkitsec/ViewManager$ChildView;)V
     .locals 13
-    .param p1    # Landroid/webkitsec/ViewManager$ChildView;
 
     const/16 v12, 0x800
 
@@ -532,8 +523,6 @@
 
 .method hitTest(II)Landroid/webkitsec/ViewManager$ChildView;
     .locals 5
-    .param p1    # I
-    .param p2    # I
 
     const/4 v2, 0x0
 

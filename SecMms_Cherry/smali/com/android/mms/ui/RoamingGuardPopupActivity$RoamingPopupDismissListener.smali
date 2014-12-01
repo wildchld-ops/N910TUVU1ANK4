@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Lcom/android/mms/ui/RoamingGuardPopupActivity;Lcom/android/mms/ui/RoamingGuardPopupActivity$1;)V
     .locals 0
-    .param p1    # Lcom/android/mms/ui/RoamingGuardPopupActivity;
-    .param p2    # Lcom/android/mms/ui/RoamingGuardPopupActivity$1;
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/RoamingGuardPopupActivity$RoamingPopupDismissListener;-><init>(Lcom/android/mms/ui/RoamingGuardPopupActivity;)V
 
@@ -46,7 +44,6 @@
 # virtual methods
 .method public onDismiss(Landroid/content/DialogInterface;)V
     .locals 1
-    .param p1    # Landroid/content/DialogInterface;
 
     iget-object v0, p0, Lcom/android/mms/ui/RoamingGuardPopupActivity$RoamingPopupDismissListener;->this$0:Lcom/android/mms/ui/RoamingGuardPopupActivity;
 

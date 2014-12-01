@@ -144,8 +144,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/encryption/CryptSDCardSettings;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/settings/encryption/CryptSDCardSettings;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/settings/encryption/CryptSDCardSettings;->log(Ljava/lang/String;)V
 
@@ -154,7 +152,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/encryption/CryptSDCardSettings;)Landroid/dirEncryption/DirEncryptionManager;
     .locals 1
-    .param p0    # Lcom/android/settings/encryption/CryptSDCardSettings;
 
     iget-object v0, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mDem:Landroid/dirEncryption/DirEncryptionManager;
 
@@ -163,7 +160,6 @@
 
 .method static synthetic access$1000(Lcom/android/settings/encryption/CryptSDCardSettings;)V
     .locals 0
-    .param p0    # Lcom/android/settings/encryption/CryptSDCardSettings;
 
     invoke-direct {p0}, Lcom/android/settings/encryption/CryptSDCardSettings;->applyEncryptionUpdates()V
 
@@ -172,7 +168,6 @@
 
 .method static synthetic access$1100(Lcom/android/settings/encryption/CryptSDCardSettings;)Landroid/widget/Button;
     .locals 1
-    .param p0    # Lcom/android/settings/encryption/CryptSDCardSettings;
 
     iget-object v0, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mApplyButton:Landroid/widget/Button;
 
@@ -181,8 +176,6 @@
 
 .method static synthetic access$1202(Lcom/android/settings/encryption/CryptSDCardSettings;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/encryption/CryptSDCardSettings;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mApplyButtonSelected:Z
 
@@ -191,7 +184,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/encryption/CryptSDCardSettings;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/settings/encryption/CryptSDCardSettings;
 
     iget-object v0, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mHandler:Landroid/os/Handler;
 
@@ -200,7 +192,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/encryption/CryptSDCardSettings;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Lcom/android/settings/encryption/CryptSDCardSettings;
 
     iget-object v0, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mSync:Ljava/lang/Object;
 
@@ -209,7 +200,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/encryption/CryptSDCardSettings;)V
     .locals 0
-    .param p0    # Lcom/android/settings/encryption/CryptSDCardSettings;
 
     invoke-direct {p0}, Lcom/android/settings/encryption/CryptSDCardSettings;->enableAllUI()V
 
@@ -218,7 +208,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/encryption/CryptSDCardSettings;)V
     .locals 0
-    .param p0    # Lcom/android/settings/encryption/CryptSDCardSettings;
 
     invoke-direct {p0}, Lcom/android/settings/encryption/CryptSDCardSettings;->disableAllUI()V
 
@@ -227,7 +216,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/encryption/CryptSDCardSettings;)Landroid/widget/Button;
     .locals 1
-    .param p0    # Lcom/android/settings/encryption/CryptSDCardSettings;
 
     iget-object v0, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mEnableDisableButton:Landroid/widget/Button;
 
@@ -236,7 +224,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/encryption/CryptSDCardSettings;)Landroid/app/Fragment;
     .locals 1
-    .param p0    # Lcom/android/settings/encryption/CryptSDCardSettings;
 
     iget-object v0, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mThis:Landroid/app/Fragment;
 
@@ -245,11 +232,6 @@
 
 .method static synthetic access$800(Lcom/android/settings/encryption/CryptSDCardSettings;Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/encryption/CryptSDCardSettings;
-    .param p1    # Landroid/app/Fragment;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Landroid/os/Bundle;
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/settings/encryption/CryptSDCardSettings;->startFragment(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;)Z
 
@@ -260,8 +242,6 @@
 
 .method static synthetic access$902(Lcom/android/settings/encryption/CryptSDCardSettings;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/encryption/CryptSDCardSettings;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mEnableDisableButtonSelected:Z
 
@@ -390,7 +370,6 @@
 
 .method private dipToFixel(I)I
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mParent:Landroid/app/Activity;
 
@@ -620,7 +599,6 @@
 
 .method private log(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "CryptKeeperSDSettings"
 
@@ -880,7 +858,6 @@
 
 .method private runKeyguardConfirmation(I)Z
     .locals 6
-    .param p1    # I
 
     iget-object v3, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mDem:Landroid/dirEncryption/DirEncryptionManager;
 
@@ -1190,10 +1167,6 @@
 
 .method private startFragment(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;)Z
     .locals 7
-    .param p1    # Landroid/app/Fragment;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Landroid/os/Bundle;
 
     iget-object v1, p0, Lcom/android/settings/encryption/CryptSDCardSettings;->mParent:Landroid/app/Activity;
 
@@ -3311,7 +3284,6 @@
 
 .method private upgradeQualityForEncryption(I)I
     .locals 6
-    .param p1    # I
 
     const/high16 v5, 0x20000
 
@@ -3366,9 +3338,6 @@
 # virtual methods
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     invoke-super {p0, p1, p2, p3}, Landroid/preference/PreferenceFragment;->onActivityResult(IILandroid/content/Intent;)V
 
@@ -3446,7 +3415,6 @@
 
 .method public onAttach(Landroid/app/Activity;)V
     .locals 1
-    .param p1    # Landroid/app/Activity;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onAttach(Landroid/app/Activity;)V
 
@@ -3463,9 +3431,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 4
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const/4 v3, 0x0
 

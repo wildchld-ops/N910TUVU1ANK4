@@ -89,7 +89,6 @@
 # virtual methods
 .method public addListener(Lcom/android/incallui/AudioModeProvider$AudioModeListener;)V
     .locals 1
-    .param p1    # Lcom/android/incallui/AudioModeProvider$AudioModeListener;
 
     iget-object v0, p0, Lcom/android/incallui/AudioModeProvider;->mListeners:Ljava/util/List;
 
@@ -153,8 +152,6 @@
 
 .method public onAudioModeChange(IZ)V
     .locals 4
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v1, 0x0
 
@@ -248,7 +245,6 @@
 
 .method public onSupportedAudioModeChange(I)V
     .locals 3
-    .param p1    # I
 
     iput p1, p0, Lcom/android/incallui/AudioModeProvider;->mSupportedModes:I
 
@@ -289,7 +285,6 @@
 
 .method public onVoicePrivacyModeChange(Z)V
     .locals 1
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/incallui/AudioModeProvider;->mVoicePrivacyState:Z
 
@@ -304,7 +299,6 @@
 
 .method public removeListener(Lcom/android/incallui/AudioModeProvider$AudioModeListener;)V
     .locals 1
-    .param p1    # Lcom/android/incallui/AudioModeProvider$AudioModeListener;
 
     iget-object v0, p0, Lcom/android/incallui/AudioModeProvider;->mListeners:Ljava/util/List;
 

@@ -45,8 +45,6 @@
 
 .method synthetic constructor <init>(Lcom/android/mms/prioritysender/AddThreadListActivity;Lcom/android/mms/prioritysender/AddThreadListActivity$1;)V
     .locals 0
-    .param p1    # Lcom/android/mms/prioritysender/AddThreadListActivity;
-    .param p2    # Lcom/android/mms/prioritysender/AddThreadListActivity$1;
 
     invoke-direct {p0, p1}, Lcom/android/mms/prioritysender/AddThreadListActivity$ModeCallback;-><init>(Lcom/android/mms/prioritysender/AddThreadListActivity;)V
 
@@ -55,7 +53,6 @@
 
 .method static synthetic access$500(Lcom/android/mms/prioritysender/AddThreadListActivity$ModeCallback;)Landroid/view/Menu;
     .locals 1
-    .param p0    # Lcom/android/mms/prioritysender/AddThreadListActivity$ModeCallback;
 
     iget-object v0, p0, Lcom/android/mms/prioritysender/AddThreadListActivity$ModeCallback;->mOptionMenu:Landroid/view/Menu;
 
@@ -66,8 +63,6 @@
 # virtual methods
 .method public onActionItemClicked(Landroid/view/ActionMode;Landroid/view/MenuItem;)Z
     .locals 14
-    .param p1    # Landroid/view/ActionMode;
-    .param p2    # Landroid/view/MenuItem;
 
     invoke-interface/range {p2 .. p2}, Landroid/view/MenuItem;->getItemId()I
 
@@ -206,8 +201,6 @@
 
 .method public onCreateActionMode(Landroid/view/ActionMode;Landroid/view/Menu;)Z
     .locals 4
-    .param p1    # Landroid/view/ActionMode;
-    .param p2    # Landroid/view/Menu;
 
     iget-object v1, p0, Lcom/android/mms/prioritysender/AddThreadListActivity$ModeCallback;->this$0:Lcom/android/mms/prioritysender/AddThreadListActivity;
 
@@ -347,7 +340,6 @@
 
 .method public onDestroyActionMode(Landroid/view/ActionMode;)V
     .locals 2
-    .param p1    # Landroid/view/ActionMode;
 
     const-string v0, "Mms/AddThreadListActivity"
 
@@ -373,10 +365,6 @@
 
 .method public onItemCheckedStateChanged(Landroid/view/ActionMode;IJZ)V
     .locals 5
-    .param p1    # Landroid/view/ActionMode;
-    .param p2    # I
-    .param p3    # J
-    .param p5    # Z
 
     iget-object v3, p0, Lcom/android/mms/prioritysender/AddThreadListActivity$ModeCallback;->this$0:Lcom/android/mms/prioritysender/AddThreadListActivity;
 
@@ -494,7 +482,6 @@
 
 .method public onPopupItemClick(I)Z
     .locals 5
-    .param p1    # I
 
     const/4 v4, 0x1
 
@@ -612,8 +599,6 @@
 
 .method public onPrepareActionMode(Landroid/view/ActionMode;Landroid/view/Menu;)Z
     .locals 6
-    .param p1    # Landroid/view/ActionMode;
-    .param p2    # Landroid/view/Menu;
 
     const/4 v5, 0x0
 

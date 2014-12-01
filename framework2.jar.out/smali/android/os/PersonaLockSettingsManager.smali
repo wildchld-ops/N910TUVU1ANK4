@@ -26,8 +26,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Lcom/android/internal/widget/ILockSettings;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/internal/widget/ILockSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

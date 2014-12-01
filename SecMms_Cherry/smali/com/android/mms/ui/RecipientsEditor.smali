@@ -37,8 +37,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v1, 0x0
 
@@ -85,7 +83,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/ui/RecipientsEditor;)Lcom/android/mms/ui/ComposeMessageFragment;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/RecipientsEditor;
 
     iget-object v0, p0, Lcom/android/mms/ui/RecipientsEditor;->mComposer:Lcom/android/mms/ui/ComposeMessageFragment;
 
@@ -94,8 +91,6 @@
 
 .method static synthetic access$102(Lcom/android/mms/ui/RecipientsEditor;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/ui/RecipientsEditor;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/RecipientsEditor;->isInvalidCharSelection:Z
 
@@ -104,7 +99,6 @@
 
 .method public static contactToToken(Lcom/android/mms/data/Contact;)Ljava/lang/CharSequence;
     .locals 5
-    .param p0    # Lcom/android/mms/data/Contact;
 
     new-instance v1, Landroid/text/SpannableString;
 
@@ -235,7 +229,6 @@
 
 .method public constructContactsFromValidRecipients(Z)Lcom/android/mms/data/ContactList;
     .locals 5
-    .param p1    # Z
 
     new-instance v2, Lcom/android/mms/data/ContactList;
 
@@ -369,7 +362,6 @@
 
 .method public focusSearch(I)Landroid/view/View;
     .locals 2
-    .param p1    # I
 
     invoke-super {p0, p1}, Landroid/view/View;->focusSearch(I)Landroid/view/View;
 
@@ -423,7 +415,6 @@
 
 .method public formatInvalidNumbers(Z)Ljava/lang/String;
     .locals 4
-    .param p1    # Z
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -670,7 +661,6 @@
 
 .method public hasInvalidRecipient(Z)Z
     .locals 4
-    .param p1    # Z
 
     const/4 v2, 0x1
 
@@ -725,7 +715,6 @@
 
 .method public hasValidRecipient(Z)Z
     .locals 3
-    .param p1    # Z
 
     iget-object v2, p0, Lcom/android/mms/ui/RecipientsEditor;->mRecipients:Ljava/util/List;
 
@@ -781,7 +770,6 @@
 
 .method public onHoverEvent(Landroid/view/MotionEvent;)Z
     .locals 5
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v2, 0x1
 
@@ -883,11 +871,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 1
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     if-eqz p1, :cond_0
 
@@ -921,8 +904,6 @@
 
 .method public onPrivateIMECommand(Ljava/lang/String;Landroid/os/Bundle;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Bundle;
 
     iget-object v0, p0, Lcom/android/mms/ui/RecipientsEditor;->m_PICListener:Lcom/android/mms/ui/OnPrivateIMECommandListener;
 
@@ -947,7 +928,6 @@
 
 .method public populate(Lcom/android/mms/data/ContactList;)V
     .locals 4
-    .param p1    # Lcom/android/mms/data/ContactList;
 
     new-instance v2, Landroid/text/SpannableStringBuilder;
 
@@ -1014,7 +994,6 @@
 
 .method public setComposer(Lcom/android/mms/ui/ComposeMessageFragment;)V
     .locals 0
-    .param p1    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     iput-object p1, p0, Lcom/android/mms/ui/RecipientsEditor;->mComposer:Lcom/android/mms/ui/ComposeMessageFragment;
 
@@ -1023,7 +1002,6 @@
 
 .method public setErrorFlag(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/RecipientsEditor;->mIsErrorSet:Z
 
@@ -1032,7 +1010,6 @@
 
 .method public setInvalidChar(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/RecipientsEditor;->isInvalidCharSelection:Z
 
@@ -1041,7 +1018,6 @@
 
 .method public setOnPrivateIMECommandListener(Lcom/android/mms/ui/OnPrivateIMECommandListener;)V
     .locals 0
-    .param p1    # Lcom/android/mms/ui/OnPrivateIMECommandListener;
 
     iput-object p1, p0, Lcom/android/mms/ui/RecipientsEditor;->m_PICListener:Lcom/android/mms/ui/OnPrivateIMECommandListener;
 
@@ -1050,7 +1026,6 @@
 
 .method public setRecipients([Ljava/lang/String;)V
     .locals 5
-    .param p1    # [Ljava/lang/String;
 
     iget-object v4, p0, Lcom/android/mms/ui/RecipientsEditor;->mRecipients:Ljava/util/List;
 

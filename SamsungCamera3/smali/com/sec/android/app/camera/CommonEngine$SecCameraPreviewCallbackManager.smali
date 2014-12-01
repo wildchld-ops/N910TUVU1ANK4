@@ -65,7 +65,6 @@
 
 .method private releasePreviewBuffer([B)V
     .locals 2
-    .param p1    # [B
 
     if-nez p1, :cond_1
 
@@ -117,9 +116,6 @@
 
 .method public initBuffers(III)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const-wide v4, 0x3ff028f5c28f5c29L
 
@@ -188,8 +184,6 @@
 
 .method public onPreviewFrame([BLcom/sec/android/seccamera/SecCamera;)V
     .locals 3
-    .param p1    # [B
-    .param p2    # Lcom/sec/android/seccamera/SecCamera;
 
     const/16 v2, 0xf0
 
@@ -330,7 +324,6 @@
 
 .method public setPreviewBuffer(Lcom/sec/android/seccamera/SecCamera;)V
     .locals 3
-    .param p1    # Lcom/sec/android/seccamera/SecCamera;
 
     if-eqz p1, :cond_1
 

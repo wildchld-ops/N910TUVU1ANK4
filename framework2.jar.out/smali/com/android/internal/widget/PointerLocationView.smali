@@ -85,7 +85,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 9
-    .param p1    # Landroid/content/Context;
 
     const/high16 v8, 0x40000000
 
@@ -380,13 +379,6 @@
 
 .method private drawOval(Landroid/graphics/Canvas;FFFFFLandroid/graphics/Paint;)V
     .locals 5
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # F
-    .param p7    # Landroid/graphics/Paint;
 
     const/high16 v4, 0x40000000
 
@@ -451,12 +443,6 @@
 
 .method private logCoords(Ljava/lang/String;IILandroid/view/MotionEvent$PointerCoords;ILandroid/view/MotionEvent;)V
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/view/MotionEvent$PointerCoords;
-    .param p5    # I
-    .param p6    # Landroid/view/MotionEvent;
 
     invoke-virtual {p6, p3}, Landroid/view/MotionEvent;->getToolType(I)I
 
@@ -962,8 +948,6 @@
 
 .method private logInputDeviceState(ILjava/lang/String;)V
     .locals 4
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/internal/widget/PointerLocationView;->mIm:Landroid/hardware/input/InputManager;
 
@@ -1062,8 +1046,6 @@
 
 .method private logMotionEvent(Ljava/lang/String;Landroid/view/MotionEvent;)V
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/view/MotionEvent;
 
     invoke-virtual {p2}, Landroid/view/MotionEvent;->getAction()I
 
@@ -1148,7 +1130,6 @@
 
 .method private static shouldLogKey(I)Z
     .locals 2
-    .param p0    # I
 
     const/4 v0, 0x1
 
@@ -1192,7 +1173,6 @@
 # virtual methods
 .method public addPointerEvent(Landroid/view/MotionEvent;)V
     .locals 16
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual/range {p1 .. p1}, Landroid/view/MotionEvent;->getAction()I
 
@@ -1928,7 +1908,6 @@
 
 .method protected onDraw(Landroid/graphics/Canvas;)V
     .locals 39
-    .param p1    # Landroid/graphics/Canvas;
 
     invoke-virtual/range {p0 .. p0}, Landroid/view/View;->getWidth()I
 
@@ -3806,7 +3785,6 @@
 
 .method public onGenericMotionEvent(Landroid/view/MotionEvent;)Z
     .locals 2
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getSource()I
 
@@ -3855,7 +3833,6 @@
 
 .method public onInputDeviceAdded(I)V
     .locals 1
-    .param p1    # I
 
     const-string v0, "Device Added"
 
@@ -3866,7 +3843,6 @@
 
 .method public onInputDeviceChanged(I)V
     .locals 1
-    .param p1    # I
 
     const-string v0, "Device Changed"
 
@@ -3877,7 +3853,6 @@
 
 .method public onInputDeviceRemoved(I)V
     .locals 1
-    .param p1    # I
 
     const-string v0, "Device Removed"
 
@@ -3888,8 +3863,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     invoke-static {p1}, Lcom/android/internal/widget/PointerLocationView;->shouldLogKey(I)Z
 
@@ -3976,8 +3949,6 @@
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     invoke-static {p1}, Lcom/android/internal/widget/PointerLocationView;->shouldLogKey(I)Z
 
@@ -4022,8 +3993,6 @@
 
 .method protected onMeasure(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     invoke-super {p0, p1, p2}, Landroid/view/View;->onMeasure(II)V
 
@@ -4054,7 +4023,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual {p0, p1}, Lcom/android/internal/widget/PointerLocationView;->addPointerEvent(Landroid/view/MotionEvent;)V
 
@@ -4080,7 +4048,6 @@
 
 .method public onTrackballEvent(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     const-string v0, "Trackball"
 
@@ -4093,7 +4060,6 @@
 
 .method public setPrintCoords(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/internal/widget/PointerLocationView;->mPrintCoords:Z
 

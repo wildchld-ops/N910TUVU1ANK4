@@ -30,9 +30,6 @@
 
 .method static synthetic access$000(Landroid/content/Context;Lcom/google/android/mms/pdu/GenericPdu;I)J
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/google/android/mms/pdu/GenericPdu;
-    .param p2    # I
 
     invoke-static {p0, p1, p2}, Lcom/android/mms/transaction/PushReceiver;->findThreadId(Landroid/content/Context;Lcom/google/android/mms/pdu/GenericPdu;I)J
 
@@ -43,11 +40,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/transaction/PushReceiver;Landroid/content/Context;IILjava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/mms/transaction/PushReceiver;
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/mms/transaction/PushReceiver;->saveReportToSms(Landroid/content/Context;IILjava/lang/String;)V
 
@@ -56,8 +48,6 @@
 
 .method static synthetic access$200(Landroid/content/Context;Lcom/google/android/mms/pdu/NotificationInd;)Z
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/google/android/mms/pdu/NotificationInd;
 
     invoke-static {p0, p1}, Lcom/android/mms/transaction/PushReceiver;->isDuplicateNotification(Landroid/content/Context;Lcom/google/android/mms/pdu/NotificationInd;)Z
 
@@ -68,9 +58,6 @@
 
 .method private static findThreadId(Landroid/content/Context;Lcom/google/android/mms/pdu/GenericPdu;I)J
     .locals 11
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/google/android/mms/pdu/GenericPdu;
-    .param p2    # I
 
     const/4 v5, 0x0
 
@@ -279,8 +266,6 @@
 
 .method private static getMmsDeliveryReportText(Landroid/content/Context;I)Ljava/lang/String;
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     const-string v0, ""
 
@@ -339,8 +324,6 @@
 
 .method private static getMmsReadReportText(Landroid/content/Context;I)Ljava/lang/String;
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     const-string v0, ""
 
@@ -380,8 +363,6 @@
 
 .method private static isDuplicateNotification(Landroid/content/Context;Lcom/google/android/mms/pdu/NotificationInd;)Z
     .locals 12
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/google/android/mms/pdu/NotificationInd;
 
     const/4 v10, 0x1
 
@@ -467,10 +448,6 @@
 
 .method private saveReportToSms(Landroid/content/Context;IILjava/lang/String;)V
     .locals 14
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
 
     const-string v11, "Mms:transaction"
 
@@ -743,8 +720,6 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 11
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     const/4 v10, 0x1
 

@@ -36,7 +36,6 @@
 # virtual methods
 .method public onAlphaChanged(F)V
     .locals 1
-    .param p1    # F
 
     iget-object v0, p0, Lcom/sec/android/visualeffect/tilt/TiltEffect$1;->this$0:Lcom/sec/android/visualeffect/tilt/TiltEffect;
 

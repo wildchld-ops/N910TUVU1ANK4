@@ -22,7 +22,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -33,8 +32,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -55,7 +52,6 @@
 # virtual methods
 .method public bindContactHeader(Lcom/android/mms/data/ContactList;)Z
     .locals 6
-    .param p1    # Lcom/android/mms/data/ContactList;
 
     const/4 v3, 0x0
 
@@ -230,7 +226,6 @@
 
 .method public setContactList(Lcom/android/mms/data/ContactList;)V
     .locals 0
-    .param p1    # Lcom/android/mms/data/ContactList;
 
     iput-object p1, p0, Lcom/android/mms/ui/MessageContactHeader;->mContactList:Lcom/android/mms/data/ContactList;
 
@@ -239,7 +234,6 @@
 
 .method public setDisplayName(Ljava/lang/CharSequence;)V
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
 
     iget-object v0, p0, Lcom/android/mms/ui/MessageContactHeader;->mNameView:Landroid/widget/TextView;
 

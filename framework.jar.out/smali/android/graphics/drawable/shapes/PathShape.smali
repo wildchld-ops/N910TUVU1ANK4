@@ -18,9 +18,6 @@
 # direct methods
 .method public constructor <init>(Landroid/graphics/Path;FF)V
     .locals 0
-    .param p1    # Landroid/graphics/Path;
-    .param p2    # F
-    .param p3    # F
 
     invoke-direct {p0}, Landroid/graphics/drawable/shapes/Shape;-><init>()V
 
@@ -92,8 +89,6 @@
 
 .method public draw(Landroid/graphics/Canvas;Landroid/graphics/Paint;)V
     .locals 2
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # Landroid/graphics/Paint;
 
     invoke-virtual {p1}, Landroid/graphics/Canvas;->save()I
 
@@ -114,8 +109,6 @@
 
 .method protected onResize(FF)V
     .locals 1
-    .param p1    # F
-    .param p2    # F
 
     iget v0, p0, Landroid/graphics/drawable/shapes/PathShape;->mStdWidth:F
 

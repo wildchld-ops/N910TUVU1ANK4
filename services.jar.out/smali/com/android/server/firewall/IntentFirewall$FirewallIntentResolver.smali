@@ -58,7 +58,6 @@
 
 .method synthetic constructor <init>(Lcom/android/server/firewall/IntentFirewall$1;)V
     .locals 0
-    .param p1    # Lcom/android/server/firewall/IntentFirewall$1;
 
     invoke-direct {p0}, Lcom/android/server/firewall/IntentFirewall$FirewallIntentResolver;-><init>()V
 
@@ -69,8 +68,6 @@
 # virtual methods
 .method public addComponentFilter(Landroid/content/ComponentName;Lcom/android/server/firewall/IntentFirewall$Rule;)V
     .locals 2
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Lcom/android/server/firewall/IntentFirewall$Rule;
 
     iget-object v1, p0, Lcom/android/server/firewall/IntentFirewall$FirewallIntentResolver;->mRulesByComponent:Landroid/util/ArrayMap;
 
@@ -97,8 +94,6 @@
 
 .method protected bridge synthetic allowFilterResult(Landroid/content/IntentFilter;Ljava/util/List;)Z
     .locals 1
-    .param p1    # Landroid/content/IntentFilter;
-    .param p2    # Ljava/util/List;
 
     check-cast p1, Lcom/android/server/firewall/IntentFirewall$FirewallIntentFilter;
 
@@ -111,7 +106,6 @@
 
 .method protected allowFilterResult(Lcom/android/server/firewall/IntentFirewall$FirewallIntentFilter;Ljava/util/List;)Z
     .locals 1
-    .param p1    # Lcom/android/server/firewall/IntentFirewall$FirewallIntentFilter;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -147,8 +141,6 @@
 
 .method protected bridge synthetic isPackageForFilter(Ljava/lang/String;Landroid/content/IntentFilter;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/IntentFilter;
 
     check-cast p2, Lcom/android/server/firewall/IntentFirewall$FirewallIntentFilter;
 
@@ -161,8 +153,6 @@
 
 .method protected isPackageForFilter(Ljava/lang/String;Lcom/android/server/firewall/IntentFirewall$FirewallIntentFilter;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/server/firewall/IntentFirewall$FirewallIntentFilter;
 
     const/4 v0, 0x1
 
@@ -171,7 +161,6 @@
 
 .method protected bridge synthetic newArray(I)[Landroid/content/IntentFilter;
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/server/firewall/IntentFirewall$FirewallIntentResolver;->newArray(I)[Lcom/android/server/firewall/IntentFirewall$FirewallIntentFilter;
 
@@ -182,7 +171,6 @@
 
 .method protected newArray(I)[Lcom/android/server/firewall/IntentFirewall$FirewallIntentFilter;
     .locals 1
-    .param p1    # I
 
     new-array v0, p1, [Lcom/android/server/firewall/IntentFirewall$FirewallIntentFilter;
 
@@ -191,9 +179,6 @@
 
 .method protected newResult(Lcom/android/server/firewall/IntentFirewall$FirewallIntentFilter;II)Lcom/android/server/firewall/IntentFirewall$Rule;
     .locals 1
-    .param p1    # Lcom/android/server/firewall/IntentFirewall$FirewallIntentFilter;
-    .param p2    # I
-    .param p3    # I
 
     # getter for: Lcom/android/server/firewall/IntentFirewall$FirewallIntentFilter;->rule:Lcom/android/server/firewall/IntentFirewall$Rule;
     invoke-static {p1}, Lcom/android/server/firewall/IntentFirewall$FirewallIntentFilter;->access$200(Lcom/android/server/firewall/IntentFirewall$FirewallIntentFilter;)Lcom/android/server/firewall/IntentFirewall$Rule;
@@ -205,9 +190,6 @@
 
 .method protected bridge synthetic newResult(Landroid/content/IntentFilter;II)Ljava/lang/Object;
     .locals 1
-    .param p1    # Landroid/content/IntentFilter;
-    .param p2    # I
-    .param p3    # I
 
     check-cast p1, Lcom/android/server/firewall/IntentFirewall$FirewallIntentFilter;
 
@@ -220,7 +202,6 @@
 
 .method public queryByComponent(Landroid/content/ComponentName;Ljava/util/List;)V
     .locals 2
-    .param p1    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

@@ -64,7 +64,6 @@
 
 .method private constructor <init>(Landroid/os/Parcel;)V
     .locals 6
-    .param p1    # Landroid/os/Parcel;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/security/InvalidAlgorithmParameterException;
@@ -233,8 +232,6 @@
 
 .method synthetic constructor <init>(Landroid/os/Parcel;Landroid/content/pm/ContainerEncryptionParams$1;)V
     .locals 0
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # Landroid/content/pm/ContainerEncryptionParams$1;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/security/InvalidAlgorithmParameterException;
@@ -248,9 +245,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Ljava/security/spec/AlgorithmParameterSpec;Ljavax/crypto/SecretKey;)V
     .locals 14
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/security/spec/AlgorithmParameterSpec;
-    .param p3    # Ljavax/crypto/SecretKey;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/security/InvalidAlgorithmParameterException;
@@ -286,16 +280,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Ljava/security/spec/AlgorithmParameterSpec;Ljavax/crypto/SecretKey;Ljava/lang/String;Ljava/security/spec/AlgorithmParameterSpec;Ljavax/crypto/SecretKey;[BJJJ)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/security/spec/AlgorithmParameterSpec;
-    .param p3    # Ljavax/crypto/SecretKey;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/security/spec/AlgorithmParameterSpec;
-    .param p6    # Ljavax/crypto/SecretKey;
-    .param p7    # [B
-    .param p8    # J
-    .param p10    # J
-    .param p12    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/security/InvalidAlgorithmParameterException;
@@ -398,8 +382,6 @@
 
 .method private static final isSecretKeyEqual(Ljavax/crypto/SecretKey;Ljavax/crypto/SecretKey;)Z
     .locals 5
-    .param p0    # Ljavax/crypto/SecretKey;
-    .param p1    # Ljavax/crypto/SecretKey;
 
     const/4 v2, 0x0
 
@@ -475,7 +457,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 7
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x1
 
@@ -959,8 +940,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     const/4 v1, 0x1
 

@@ -26,12 +26,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;ILandroid/database/Cursor;[Ljava/lang/String;[ILcom/android/settings/UserDictionarySettings;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Landroid/database/Cursor;
-    .param p4    # [Ljava/lang/String;
-    .param p5    # [I
-    .param p6    # Lcom/android/settings/UserDictionarySettings;
 
     invoke-direct/range {p0 .. p5}, Landroid/widget/SimpleCursorAdapter;-><init>(Landroid/content/Context;ILandroid/database/Cursor;[Ljava/lang/String;[I)V
 
@@ -73,7 +67,6 @@
 # virtual methods
 .method public getPositionForSection(I)I
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/settings/UserDictionarySettings$MyAdapter;->mIndexer:Landroid/widget/AlphabetIndexer;
 
@@ -96,7 +89,6 @@
 
 .method public getSectionForPosition(I)I
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/settings/UserDictionarySettings$MyAdapter;->mIndexer:Landroid/widget/AlphabetIndexer;
 

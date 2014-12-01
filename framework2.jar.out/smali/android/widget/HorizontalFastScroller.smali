@@ -248,7 +248,6 @@
 
 .method public constructor <init>(Landroid/widget/AbsHorizontalListView;)V
     .locals 19
-    .param p1    # Landroid/widget/AbsHorizontalListView;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -802,7 +801,6 @@
 
 .method static synthetic access$000(Landroid/widget/HorizontalFastScroller;)Landroid/widget/AbsHorizontalListView;
     .locals 1
-    .param p0    # Landroid/widget/HorizontalFastScroller;
 
     iget-object v0, p0, Landroid/widget/HorizontalFastScroller;->mList:Landroid/widget/AbsHorizontalListView;
 
@@ -811,7 +809,6 @@
 
 .method static synthetic access$100(Landroid/widget/HorizontalFastScroller;)V
     .locals 0
-    .param p0    # Landroid/widget/HorizontalFastScroller;
 
     invoke-direct {p0}, Landroid/widget/HorizontalFastScroller;->beginDrag()V
 
@@ -820,7 +817,6 @@
 
 .method static synthetic access$200(Landroid/widget/HorizontalFastScroller;)F
     .locals 1
-    .param p0    # Landroid/widget/HorizontalFastScroller;
 
     iget v0, p0, Landroid/widget/HorizontalFastScroller;->mInitialTouchY:F
 
@@ -829,8 +825,6 @@
 
 .method static synthetic access$300(Landroid/widget/HorizontalFastScroller;F)F
     .locals 1
-    .param p0    # Landroid/widget/HorizontalFastScroller;
-    .param p1    # F
 
     invoke-direct {p0, p1}, Landroid/widget/HorizontalFastScroller;->getPosFromMotionEvent(F)F
 
@@ -841,8 +835,6 @@
 
 .method static synthetic access$400(Landroid/widget/HorizontalFastScroller;F)V
     .locals 0
-    .param p0    # Landroid/widget/HorizontalFastScroller;
-    .param p1    # F
 
     invoke-direct {p0, p1}, Landroid/widget/HorizontalFastScroller;->scrollTo(F)V
 
@@ -851,8 +843,6 @@
 
 .method static synthetic access$502(Landroid/widget/HorizontalFastScroller;Z)Z
     .locals 0
-    .param p0    # Landroid/widget/HorizontalFastScroller;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/widget/HorizontalFastScroller;->mHasPendingDrag:Z
 
@@ -861,8 +851,6 @@
 
 .method static synthetic access$600(Landroid/widget/HorizontalFastScroller;I)V
     .locals 0
-    .param p0    # Landroid/widget/HorizontalFastScroller;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/widget/HorizontalFastScroller;->setState(I)V
 
@@ -871,7 +859,6 @@
 
 .method static synthetic access$700(Landroid/widget/HorizontalFastScroller;)Z
     .locals 1
-    .param p0    # Landroid/widget/HorizontalFastScroller;
 
     iget-boolean v0, p0, Landroid/widget/HorizontalFastScroller;->mShowingPrimary:Z
 
@@ -880,8 +867,6 @@
 
 .method static synthetic access$702(Landroid/widget/HorizontalFastScroller;Z)Z
     .locals 0
-    .param p0    # Landroid/widget/HorizontalFastScroller;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/widget/HorizontalFastScroller;->mShowingPrimary:Z
 
@@ -890,8 +875,6 @@
 
 .method private static animateAlpha(Landroid/view/View;F)Landroid/animation/Animator;
     .locals 3
-    .param p0    # Landroid/view/View;
-    .param p1    # F
 
     sget-object v0, Landroid/view/View;->ALPHA:Landroid/util/Property;
 
@@ -912,8 +895,6 @@
 
 .method private static animateBounds(Landroid/view/View;Landroid/graphics/Rect;)Landroid/animation/Animator;
     .locals 9
-    .param p0    # Landroid/view/View;
-    .param p1    # Landroid/graphics/Rect;
 
     const/4 v8, 0x1
 
@@ -992,8 +973,6 @@
 
 .method private static animateScaleX(Landroid/view/View;F)Landroid/animation/Animator;
     .locals 3
-    .param p0    # Landroid/view/View;
-    .param p1    # F
 
     sget-object v0, Landroid/view/View;->SCALE_X:Landroid/util/Property;
 
@@ -1014,8 +993,6 @@
 
 .method private applyLayout(Landroid/view/View;Landroid/graphics/Rect;)V
     .locals 4
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/graphics/Rect;
 
     iget v0, p2, Landroid/graphics/Rect;->left:I
 
@@ -1144,8 +1121,6 @@
 
 .method private createPreviewTextView(Landroid/content/Context;Landroid/content/res/TypedArray;)Landroid/widget/TextView;
     .locals 8
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/res/TypedArray;
 
     const/4 v7, 0x0
 
@@ -1216,9 +1191,6 @@
 
 .method private getPosFromItemCount(III)F
     .locals 15
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     iget-object v13, p0, Landroid/widget/HorizontalFastScroller;->mSectionIndexer:Landroid/widget/SectionIndexer;
 
@@ -1473,7 +1445,6 @@
 
 .method private getPosFromMotionEvent(F)F
     .locals 11
-    .param p1    # F
 
     const/4 v8, 0x0
 
@@ -1629,8 +1600,6 @@
 
 .method private static varargs groupAnimatorOfFloat(Landroid/util/Property;F[Landroid/view/View;)Landroid/animation/Animator;
     .locals 7
-    .param p1    # F
-    .param p2    # [Landroid/view/View;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1694,8 +1663,6 @@
 
 .method private isPointInside(FF)Z
     .locals 1
-    .param p1    # F
-    .param p2    # F
 
     invoke-direct {p0, p1}, Landroid/widget/HorizontalFastScroller;->isPointInsideX(F)Z
 
@@ -1727,7 +1694,6 @@
 
 .method private isPointInsideX(F)Z
     .locals 3
-    .param p1    # F
 
     const/4 v0, 0x1
 
@@ -1778,7 +1744,6 @@
 
 .method private isPointInsideY(F)Z
     .locals 4
-    .param p1    # F
 
     iget-object v3, p0, Landroid/widget/HorizontalFastScroller;->mThumbImage:Landroid/widget/ImageView;
 
@@ -1925,9 +1890,6 @@
 
 .method private measureFloating(Landroid/view/View;Landroid/graphics/Rect;Landroid/graphics/Rect;)V
     .locals 17
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/graphics/Rect;
-    .param p3    # Landroid/graphics/Rect;
 
     if-nez p2, :cond_0
 
@@ -2028,8 +1990,6 @@
 
 .method private measurePreview(Landroid/view/View;Landroid/graphics/Rect;)V
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/graphics/Rect;
 
     iget-object v0, p0, Landroid/widget/HorizontalFastScroller;->mTempMargins:Landroid/graphics/Rect;
 
@@ -2091,10 +2051,6 @@
 
 .method private measureViewToSide(Landroid/view/View;Landroid/view/View;Landroid/graphics/Rect;Landroid/graphics/Rect;)V
     .locals 17
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/graphics/Rect;
-    .param p4    # Landroid/graphics/Rect;
 
     if-nez p3, :cond_0
 
@@ -2335,7 +2291,6 @@
 
 .method private scrollTo(F)V
     .locals 23
-    .param p1    # F
 
     const/16 v20, 0x0
 
@@ -2799,7 +2754,6 @@
 
 .method private setState(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Landroid/widget/HorizontalFastScroller;->mList:Landroid/widget/AbsHorizontalListView;
 
@@ -2876,7 +2830,6 @@
 
 .method private setThumbPos(F)V
     .locals 21
-    .param p1    # F
 
     move-object/from16 v0, p0
 
@@ -3045,7 +2998,6 @@
 
 .method private transitionPreviewLayout(I)Z
     .locals 21
-    .param p1    # I
 
     move-object/from16 v0, p0
 
@@ -3880,8 +3832,6 @@
 
 .method private updateLongList(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     if-lez p1, :cond_1
 
@@ -3966,7 +3916,6 @@
 
 .method public onInterceptHoverEvent(Landroid/view/MotionEvent;)Z
     .locals 4
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v3, 0x0
 
@@ -4023,7 +3972,6 @@
 
 .method public onInterceptTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 3
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v0, 0x0
 
@@ -4123,7 +4071,6 @@
 
 .method public onItemCountChanged(I)V
     .locals 5
-    .param p1    # I
 
     iget-object v3, p0, Landroid/widget/HorizontalFastScroller;->mList:Landroid/widget/AbsHorizontalListView;
 
@@ -4171,9 +4118,6 @@
 
 .method public onScroll(III)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v3, 0x2
 
@@ -4245,10 +4189,6 @@
 
 .method public onSizeChanged(IIII)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-virtual {p0}, Landroid/widget/HorizontalFastScroller;->updateLayout()V
 
@@ -4257,7 +4197,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 6
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v5, 0x2
 
@@ -4463,7 +4402,6 @@
 
 .method public setAlwaysShow(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-boolean v0, p0, Landroid/widget/HorizontalFastScroller;->mAlwaysShow:Z
 
@@ -4479,7 +4417,6 @@
 
 .method public setEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-boolean v0, p0, Landroid/widget/HorizontalFastScroller;->mEnabled:Z
 
@@ -4495,7 +4432,6 @@
 
 .method public setScrollBarStyle(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/widget/HorizontalFastScroller;->mScrollBarStyle:I
 
@@ -4511,7 +4447,6 @@
 
 .method public setScrollbarPosition(I)V
     .locals 8
-    .param p1    # I
 
     const/4 v5, 0x0
 

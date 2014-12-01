@@ -34,10 +34,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/launcher2/HotseatSwapAnimator;Lcom/android/launcher2/AnimationLayer$Anim;Landroid/view/View;[I[I)V
     .locals 3
-    .param p2    # Lcom/android/launcher2/AnimationLayer$Anim;
-    .param p3    # Landroid/view/View;
-    .param p4    # [I
-    .param p5    # [I
 
     const/4 v2, 0x1
 
@@ -80,7 +76,6 @@
 # virtual methods
 .method public onAnimationEnd(Landroid/animation/Animator;)V
     .locals 2
-    .param p1    # Landroid/animation/Animator;
 
     iget-object v1, p0, Lcom/android/launcher2/HotseatSwapAnimator$OverlayFadeAdapter;->this$0:Lcom/android/launcher2/HotseatSwapAnimator;
 
@@ -106,7 +101,6 @@
 
 .method public onAnimationUpdate(Landroid/animation/ValueAnimator;)V
     .locals 5
-    .param p1    # Landroid/animation/ValueAnimator;
 
     invoke-virtual {p1}, Landroid/animation/ValueAnimator;->getAnimatedValue()Ljava/lang/Object;
 

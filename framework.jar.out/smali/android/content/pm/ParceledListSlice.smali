@@ -73,8 +73,6 @@
 
 .method private constructor <init>(Landroid/os/Parcel;Ljava/lang/ClassLoader;)V
     .locals 11
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # Ljava/lang/ClassLoader;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -402,9 +400,6 @@
 
 .method synthetic constructor <init>(Landroid/os/Parcel;Ljava/lang/ClassLoader;Landroid/content/pm/ParceledListSlice$1;)V
     .locals 0
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # Ljava/lang/ClassLoader;
-    .param p3    # Landroid/content/pm/ParceledListSlice$1;
 
     invoke-direct {p0, p1, p2}, Landroid/content/pm/ParceledListSlice;-><init>(Landroid/os/Parcel;Ljava/lang/ClassLoader;)V
 
@@ -446,7 +441,6 @@
 
 .method static synthetic access$200(Landroid/content/pm/ParceledListSlice;)Ljava/util/List;
     .locals 1
-    .param p0    # Landroid/content/pm/ParceledListSlice;
 
     iget-object v0, p0, Landroid/content/pm/ParceledListSlice;->mList:Ljava/util/List;
 
@@ -510,8 +504,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 8
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     const/4 v7, 0x0
 

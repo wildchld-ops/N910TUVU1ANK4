@@ -6,8 +6,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;I)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Landroid/appwidget/AppWidgetHost;-><init>(Landroid/content/Context;I)V
 
@@ -18,9 +16,6 @@
 # virtual methods
 .method protected onCreateView(Landroid/content/Context;ILandroid/appwidget/AppWidgetProviderInfo;)Landroid/appwidget/AppWidgetHostView;
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Landroid/appwidget/AppWidgetProviderInfo;
 
     new-instance v0, Lcom/android/launcher2/LauncherAppWidgetHostView;
 

@@ -25,9 +25,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/systemui/statusbar/GestureRecorder$Gesture;JLjava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p2    # J
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/systemui/statusbar/GestureRecorder$Gesture$TagRecord;->this$1:Lcom/android/systemui/statusbar/GestureRecorder$Gesture;
 

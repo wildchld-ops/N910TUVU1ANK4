@@ -49,8 +49,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/internal/policy/impl/MultiPhoneWindow;Landroid/content/Context;I)V
     .locals 4
-    .param p2    # Landroid/content/Context;
-    .param p3    # I
 
     const/4 v3, 0x0
 
@@ -102,8 +100,6 @@
 
 .method private adjustPenWindowSize(Landroid/graphics/Rect;F)V
     .locals 9
-    .param p1    # Landroid/graphics/Rect;
-    .param p2    # F
 
     const/4 v3, 0x0
 
@@ -615,7 +611,6 @@
 
 .method private dispatchOutSideTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 5
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v1, 0x1
 
@@ -827,7 +822,6 @@
 
 .method private drawBorder(Landroid/graphics/Canvas;)V
     .locals 8
-    .param p1    # Landroid/graphics/Canvas;
 
     const/4 v7, -0x1
 
@@ -1070,9 +1064,6 @@
 
 .method private resizePenWindow(ZLandroid/view/MotionEvent;Lcom/samsung/android/multiwindow/MultiWindowStyle;)V
     .locals 14
-    .param p1    # Z
-    .param p2    # Landroid/view/MotionEvent;
-    .param p3    # Lcom/samsung/android/multiwindow/MultiWindowStyle;
 
     iget-object v8, p0, Lcom/android/internal/policy/impl/MultiPhoneWindow$MultiPhoneDecorView;->this$0:Lcom/android/internal/policy/impl/MultiPhoneWindow;
 
@@ -1971,7 +1962,6 @@
 # virtual methods
 .method public dispatchCoverStateChanged(Z)V
     .locals 4
-    .param p1    # Z
 
     if-eqz p1, :cond_1
 
@@ -2040,7 +2030,6 @@
 
 .method protected dispatchDraw(Landroid/graphics/Canvas;)V
     .locals 0
-    .param p1    # Landroid/graphics/Canvas;
 
     invoke-super {p0, p1}, Landroid/view/ViewGroup;->dispatchDraw(Landroid/graphics/Canvas;)V
 
@@ -2051,7 +2040,6 @@
 
 .method protected dispatchHoverEvent(Landroid/view/MotionEvent;)Z
     .locals 13
-    .param p1    # Landroid/view/MotionEvent;
 
     const/16 v9, 0x8
 
@@ -2677,7 +2665,6 @@
 
 .method public dispatchTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 8
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v7, 0x0
 
@@ -3421,7 +3408,6 @@
 
 .method public draw(Landroid/graphics/Canvas;)V
     .locals 2
-    .param p1    # Landroid/graphics/Canvas;
 
     invoke-super {p0, p1}, Lcom/android/internal/policy/impl/PhoneWindow$DecorView;->draw(Landroid/graphics/Canvas;)V
 
@@ -3585,7 +3571,6 @@
 
 .method public onWindowFocusChanged(Z)V
     .locals 2
-    .param p1    # Z
 
     const/4 v1, 0x1
 
@@ -3657,7 +3642,6 @@
 
 .method public setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
     .locals 5
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     const/4 v4, 0x1
 

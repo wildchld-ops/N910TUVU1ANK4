@@ -78,7 +78,6 @@
 
 .method public setAccessProcedure(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p1}, Ljava/lang/String;->trim()Ljava/lang/String;
 
@@ -91,7 +90,6 @@
 
 .method public setAccesslocation(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p1}, Ljava/lang/String;->trim()Ljava/lang/String;
 
@@ -104,7 +102,6 @@
 
 .method public setComment(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/net/wifi/Message;->comment:Ljava/lang/String;
 
@@ -113,7 +110,6 @@
 
 .method public setLoginURL(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p1}, Ljava/lang/String;->trim()Ljava/lang/String;
 
@@ -141,7 +137,6 @@
 
 .method public setLogoffURL(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p1}, Ljava/lang/String;->trim()Ljava/lang/String;
 
@@ -169,7 +164,6 @@
 
 .method public setMessageType(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p1}, Ljava/lang/String;->trim()Ljava/lang/String;
 
@@ -190,7 +184,6 @@
 
 .method public setNextURL(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     new-instance v1, Ljava/net/URI;
@@ -214,7 +207,6 @@
 
 .method public setResponseCode(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p1}, Ljava/lang/String;->trim()Ljava/lang/String;
 

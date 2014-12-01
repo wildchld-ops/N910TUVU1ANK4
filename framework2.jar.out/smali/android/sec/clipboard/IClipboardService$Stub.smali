@@ -92,7 +92,6 @@
 
 .method public static asInterface(Landroid/os/IBinder;)Landroid/sec/clipboard/IClipboardService;
     .locals 2
-    .param p0    # Landroid/os/IBinder;
 
     if-nez p0, :cond_0
 
@@ -136,10 +135,6 @@
 
 .method public onTransact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
     .locals 8
-    .param p1    # I
-    .param p2    # Landroid/os/Parcel;
-    .param p3    # Landroid/os/Parcel;
-    .param p4    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

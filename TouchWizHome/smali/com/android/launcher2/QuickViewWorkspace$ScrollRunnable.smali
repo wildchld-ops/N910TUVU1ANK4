@@ -48,7 +48,6 @@
 
 .method static synthetic access$200(Lcom/android/launcher2/QuickViewWorkspace$ScrollRunnable;)I
     .locals 1
-    .param p0    # Lcom/android/launcher2/QuickViewWorkspace$ScrollRunnable;
 
     iget v0, p0, Lcom/android/launcher2/QuickViewWorkspace$ScrollRunnable;->mState:I
 

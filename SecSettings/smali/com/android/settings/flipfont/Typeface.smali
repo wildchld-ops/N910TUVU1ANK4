@@ -129,7 +129,6 @@
 
 .method public setFontPackageName(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/settings/flipfont/Typeface;->mFontPackageName:Ljava/lang/String;
 
@@ -138,7 +137,6 @@
 
 .method public setName(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/settings/flipfont/Typeface;->mName:Ljava/lang/String;
 
@@ -147,7 +145,6 @@
 
 .method public setTypefaceFilename(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/settings/flipfont/Typeface;->mTypefaceFilename:Ljava/lang/String;
 

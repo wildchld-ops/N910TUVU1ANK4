@@ -159,9 +159,6 @@
 
 .method constructor <init>(Landroid/content/Context;Lcom/android/server/wifi/WifiService;Landroid/os/Looper;)V
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/server/wifi/WifiService;
-    .param p3    # Landroid/os/Looper;
 
     const/4 v6, 0x1
 
@@ -479,7 +476,6 @@
 
 .method static synthetic access$000(Lcom/android/server/wifi/WifiController;)V
     .locals 0
-    .param p0    # Lcom/android/server/wifi/WifiController;
 
     invoke-direct {p0}, Lcom/android/server/wifi/WifiController;->readStayAwakeConditions()V
 
@@ -488,7 +484,6 @@
 
 .method static synthetic access$100(Lcom/android/server/wifi/WifiController;)V
     .locals 0
-    .param p0    # Lcom/android/server/wifi/WifiController;
 
     invoke-direct {p0}, Lcom/android/server/wifi/WifiController;->readWifiIdleTime()V
 
@@ -505,7 +500,6 @@
 
 .method static synthetic access$1100(Lcom/android/server/wifi/WifiController;)J
     .locals 2
-    .param p0    # Lcom/android/server/wifi/WifiController;
 
     iget-wide v0, p0, Lcom/android/server/wifi/WifiController;->mIdleMillis:J
 
@@ -514,8 +508,6 @@
 
 .method static synthetic access$1200(Lcom/android/server/wifi/WifiController;Landroid/os/Message;)V
     .locals 0
-    .param p0    # Lcom/android/server/wifi/WifiController;
-    .param p1    # Landroid/os/Message;
 
     invoke-virtual {p0, p1}, Lcom/android/internal/util/StateMachine;->deferMessage(Landroid/os/Message;)V
 
@@ -524,7 +516,6 @@
 
 .method static synthetic access$1300(Lcom/android/server/wifi/WifiController;)Lcom/android/server/wifi/WifiController$ApStaDisabledState;
     .locals 1
-    .param p0    # Lcom/android/server/wifi/WifiController;
 
     iget-object v0, p0, Lcom/android/server/wifi/WifiController;->mApStaDisabledState:Lcom/android/server/wifi/WifiController$ApStaDisabledState;
 
@@ -533,8 +524,6 @@
 
 .method static synthetic access$1400(Lcom/android/server/wifi/WifiController;Lcom/android/internal/util/IState;)V
     .locals 0
-    .param p0    # Lcom/android/server/wifi/WifiController;
-    .param p1    # Lcom/android/internal/util/IState;
 
     invoke-virtual {p0, p1}, Lcom/android/internal/util/StateMachine;->transitionTo(Lcom/android/internal/util/IState;)V
 
@@ -543,7 +532,6 @@
 
 .method static synthetic access$1500(Lcom/android/server/wifi/WifiController;)Z
     .locals 1
-    .param p0    # Lcom/android/server/wifi/WifiController;
 
     iget-boolean v0, p0, Lcom/android/server/wifi/WifiController;->mFirstUserSignOnSeen:Z
 
@@ -552,8 +540,6 @@
 
 .method static synthetic access$1502(Lcom/android/server/wifi/WifiController;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/wifi/WifiController;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/wifi/WifiController;->mFirstUserSignOnSeen:Z
 
@@ -562,8 +548,6 @@
 
 .method static synthetic access$1600(Lcom/android/server/wifi/WifiController;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/server/wifi/WifiController;
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lcom/android/internal/util/StateMachine;->log(Ljava/lang/String;)V
 
@@ -572,8 +556,6 @@
 
 .method static synthetic access$1700(Lcom/android/server/wifi/WifiController;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/server/wifi/WifiController;
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lcom/android/internal/util/StateMachine;->loge(Ljava/lang/String;)V
 
@@ -582,8 +564,6 @@
 
 .method static synthetic access$1800(Lcom/android/server/wifi/WifiController;Lcom/android/internal/util/IState;)V
     .locals 0
-    .param p0    # Lcom/android/server/wifi/WifiController;
-    .param p1    # Lcom/android/internal/util/IState;
 
     invoke-virtual {p0, p1}, Lcom/android/internal/util/StateMachine;->transitionTo(Lcom/android/internal/util/IState;)V
 
@@ -592,8 +572,6 @@
 
 .method static synthetic access$1900(Lcom/android/server/wifi/WifiController;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/server/wifi/WifiController;
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lcom/android/internal/util/StateMachine;->log(Ljava/lang/String;)V
 
@@ -602,7 +580,6 @@
 
 .method static synthetic access$200(Lcom/android/server/wifi/WifiController;)V
     .locals 0
-    .param p0    # Lcom/android/server/wifi/WifiController;
 
     invoke-direct {p0}, Lcom/android/server/wifi/WifiController;->readWifiSleepPolicy()V
 
@@ -611,8 +588,6 @@
 
 .method static synthetic access$2000(Lcom/android/server/wifi/WifiController;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/server/wifi/WifiController;
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lcom/android/internal/util/StateMachine;->log(Ljava/lang/String;)V
 
@@ -621,8 +596,6 @@
 
 .method static synthetic access$2100(Lcom/android/server/wifi/WifiController;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/server/wifi/WifiController;
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lcom/android/internal/util/StateMachine;->logd(Ljava/lang/String;)V
 
@@ -631,7 +604,6 @@
 
 .method static synthetic access$2200(Lcom/android/server/wifi/WifiController;)Lcom/android/server/wifi/WifiController$DeviceActiveState;
     .locals 1
-    .param p0    # Lcom/android/server/wifi/WifiController;
 
     iget-object v0, p0, Lcom/android/server/wifi/WifiController;->mDeviceActiveState:Lcom/android/server/wifi/WifiController$DeviceActiveState;
 
@@ -640,8 +612,6 @@
 
 .method static synthetic access$2300(Lcom/android/server/wifi/WifiController;Lcom/android/internal/util/IState;)V
     .locals 0
-    .param p0    # Lcom/android/server/wifi/WifiController;
-    .param p1    # Lcom/android/internal/util/IState;
 
     invoke-virtual {p0, p1}, Lcom/android/internal/util/StateMachine;->transitionTo(Lcom/android/internal/util/IState;)V
 
@@ -650,7 +620,6 @@
 
 .method static synthetic access$2400(Lcom/android/server/wifi/WifiController;)V
     .locals 0
-    .param p0    # Lcom/android/server/wifi/WifiController;
 
     invoke-direct {p0}, Lcom/android/server/wifi/WifiController;->checkLocksAndTransitionWhenDeviceIdle()V
 
@@ -659,7 +628,6 @@
 
 .method static synthetic access$2500(Lcom/android/server/wifi/WifiController;)Lcom/android/server/wifi/WifiTrafficPoller;
     .locals 1
-    .param p0    # Lcom/android/server/wifi/WifiController;
 
     iget-object v0, p0, Lcom/android/server/wifi/WifiController;->mWifiTrafficPoller:Lcom/android/server/wifi/WifiTrafficPoller;
 
@@ -668,7 +636,6 @@
 
 .method static synthetic access$2600(Lcom/android/server/wifi/WifiController;)Lcom/android/server/wifi/WifiController$StaDisabledWithScanState;
     .locals 1
-    .param p0    # Lcom/android/server/wifi/WifiController;
 
     iget-object v0, p0, Lcom/android/server/wifi/WifiController;->mStaDisabledWithScanState:Lcom/android/server/wifi/WifiController$StaDisabledWithScanState;
 
@@ -677,8 +644,6 @@
 
 .method static synthetic access$2700(Lcom/android/server/wifi/WifiController;Lcom/android/internal/util/IState;)V
     .locals 0
-    .param p0    # Lcom/android/server/wifi/WifiController;
-    .param p1    # Lcom/android/internal/util/IState;
 
     invoke-virtual {p0, p1}, Lcom/android/internal/util/StateMachine;->transitionTo(Lcom/android/internal/util/IState;)V
 
@@ -687,8 +652,6 @@
 
 .method static synthetic access$2800(Lcom/android/server/wifi/WifiController;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/server/wifi/WifiController;
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lcom/android/internal/util/StateMachine;->loge(Ljava/lang/String;)V
 
@@ -697,8 +660,6 @@
 
 .method static synthetic access$2900(Lcom/android/server/wifi/WifiController;Lcom/android/internal/util/IState;)V
     .locals 0
-    .param p0    # Lcom/android/server/wifi/WifiController;
-    .param p1    # Lcom/android/internal/util/IState;
 
     invoke-virtual {p0, p1}, Lcom/android/internal/util/StateMachine;->transitionTo(Lcom/android/internal/util/IState;)V
 
@@ -707,7 +668,6 @@
 
 .method static synthetic access$300(Lcom/android/server/wifi/WifiController;)Landroid/app/PendingIntent;
     .locals 1
-    .param p0    # Lcom/android/server/wifi/WifiController;
 
     iget-object v0, p0, Lcom/android/server/wifi/WifiController;->mIdleIntent:Landroid/app/PendingIntent;
 
@@ -716,7 +676,6 @@
 
 .method static synthetic access$3000(Lcom/android/server/wifi/WifiController;)Lcom/android/server/wifi/WifiController$IbssEnabledState;
     .locals 1
-    .param p0    # Lcom/android/server/wifi/WifiController;
 
     iget-object v0, p0, Lcom/android/server/wifi/WifiController;->mIbssEnabledState:Lcom/android/server/wifi/WifiController$IbssEnabledState;
 
@@ -725,8 +684,6 @@
 
 .method static synthetic access$3100(Lcom/android/server/wifi/WifiController;Lcom/android/internal/util/IState;)V
     .locals 0
-    .param p0    # Lcom/android/server/wifi/WifiController;
-    .param p1    # Lcom/android/internal/util/IState;
 
     invoke-virtual {p0, p1}, Lcom/android/internal/util/StateMachine;->transitionTo(Lcom/android/internal/util/IState;)V
 
@@ -735,8 +692,6 @@
 
 .method static synthetic access$3200(Lcom/android/server/wifi/WifiController;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/server/wifi/WifiController;
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lcom/android/internal/util/StateMachine;->loge(Ljava/lang/String;)V
 
@@ -745,8 +700,6 @@
 
 .method static synthetic access$3300(Lcom/android/server/wifi/WifiController;Lcom/android/internal/util/IState;)V
     .locals 0
-    .param p0    # Lcom/android/server/wifi/WifiController;
-    .param p1    # Lcom/android/internal/util/IState;
 
     invoke-virtual {p0, p1}, Lcom/android/internal/util/StateMachine;->transitionTo(Lcom/android/internal/util/IState;)V
 
@@ -755,8 +708,6 @@
 
 .method static synthetic access$3400(Lcom/android/server/wifi/WifiController;Lcom/android/internal/util/IState;)V
     .locals 0
-    .param p0    # Lcom/android/server/wifi/WifiController;
-    .param p1    # Lcom/android/internal/util/IState;
 
     invoke-virtual {p0, p1}, Lcom/android/internal/util/StateMachine;->transitionTo(Lcom/android/internal/util/IState;)V
 
@@ -765,7 +716,6 @@
 
 .method static synthetic access$3500(Lcom/android/server/wifi/WifiController;)Lcom/android/server/wifi/WifiController$ApEnabledState;
     .locals 1
-    .param p0    # Lcom/android/server/wifi/WifiController;
 
     iget-object v0, p0, Lcom/android/server/wifi/WifiController;->mApEnabledState:Lcom/android/server/wifi/WifiController$ApEnabledState;
 
@@ -774,8 +724,6 @@
 
 .method static synthetic access$3600(Lcom/android/server/wifi/WifiController;Lcom/android/internal/util/IState;)V
     .locals 0
-    .param p0    # Lcom/android/server/wifi/WifiController;
-    .param p1    # Lcom/android/internal/util/IState;
 
     invoke-virtual {p0, p1}, Lcom/android/internal/util/StateMachine;->transitionTo(Lcom/android/internal/util/IState;)V
 
@@ -784,7 +732,6 @@
 
 .method static synthetic access$3700(Lcom/android/server/wifi/WifiController;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/server/wifi/WifiController;
 
     iget-object v0, p0, Lcom/android/server/wifi/WifiController;->mContext:Landroid/content/Context;
 
@@ -793,8 +740,6 @@
 
 .method static synthetic access$3800(Lcom/android/server/wifi/WifiController;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/server/wifi/WifiController;
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lcom/android/internal/util/StateMachine;->log(Ljava/lang/String;)V
 
@@ -803,8 +748,6 @@
 
 .method static synthetic access$3900(Lcom/android/server/wifi/WifiController;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/server/wifi/WifiController;
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lcom/android/internal/util/StateMachine;->log(Ljava/lang/String;)V
 
@@ -813,7 +756,6 @@
 
 .method static synthetic access$400(Lcom/android/server/wifi/WifiController;)Landroid/app/AlarmManager;
     .locals 1
-    .param p0    # Lcom/android/server/wifi/WifiController;
 
     iget-object v0, p0, Lcom/android/server/wifi/WifiController;->mAlarmManager:Landroid/app/AlarmManager;
 
@@ -822,8 +764,6 @@
 
 .method static synthetic access$4000(Lcom/android/server/wifi/WifiController;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/server/wifi/WifiController;
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lcom/android/internal/util/StateMachine;->log(Ljava/lang/String;)V
 
@@ -832,7 +772,6 @@
 
 .method static synthetic access$4100(Lcom/android/server/wifi/WifiController;)J
     .locals 2
-    .param p0    # Lcom/android/server/wifi/WifiController;
 
     iget-wide v0, p0, Lcom/android/server/wifi/WifiController;->mReEnableDelayMillis:J
 
@@ -841,8 +780,6 @@
 
 .method static synthetic access$4200(Lcom/android/server/wifi/WifiController;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/server/wifi/WifiController;
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lcom/android/internal/util/StateMachine;->log(Ljava/lang/String;)V
 
@@ -851,8 +788,6 @@
 
 .method static synthetic access$4300(Lcom/android/server/wifi/WifiController;Lcom/android/internal/util/IState;)V
     .locals 0
-    .param p0    # Lcom/android/server/wifi/WifiController;
-    .param p1    # Lcom/android/internal/util/IState;
 
     invoke-virtual {p0, p1}, Lcom/android/internal/util/StateMachine;->transitionTo(Lcom/android/internal/util/IState;)V
 
@@ -861,8 +796,6 @@
 
 .method static synthetic access$4400(Lcom/android/server/wifi/WifiController;Lcom/android/internal/util/IState;)V
     .locals 0
-    .param p0    # Lcom/android/server/wifi/WifiController;
-    .param p1    # Lcom/android/internal/util/IState;
 
     invoke-virtual {p0, p1}, Lcom/android/internal/util/StateMachine;->transitionTo(Lcom/android/internal/util/IState;)V
 
@@ -871,8 +804,6 @@
 
 .method static synthetic access$4500(Lcom/android/server/wifi/WifiController;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/server/wifi/WifiController;
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lcom/android/internal/util/StateMachine;->loge(Ljava/lang/String;)V
 
@@ -881,8 +812,6 @@
 
 .method static synthetic access$4600(Lcom/android/server/wifi/WifiController;Lcom/android/internal/util/IState;)V
     .locals 0
-    .param p0    # Lcom/android/server/wifi/WifiController;
-    .param p1    # Lcom/android/internal/util/IState;
 
     invoke-virtual {p0, p1}, Lcom/android/internal/util/StateMachine;->transitionTo(Lcom/android/internal/util/IState;)V
 
@@ -891,7 +820,6 @@
 
 .method static synthetic access$4700(Lcom/android/server/wifi/WifiController;)Lcom/android/server/wifi/WifiController$EcmState;
     .locals 1
-    .param p0    # Lcom/android/server/wifi/WifiController;
 
     iget-object v0, p0, Lcom/android/server/wifi/WifiController;->mEcmState:Lcom/android/server/wifi/WifiController$EcmState;
 
@@ -900,8 +828,6 @@
 
 .method static synthetic access$4800(Lcom/android/server/wifi/WifiController;Lcom/android/internal/util/IState;)V
     .locals 0
-    .param p0    # Lcom/android/server/wifi/WifiController;
-    .param p1    # Lcom/android/internal/util/IState;
 
     invoke-virtual {p0, p1}, Lcom/android/internal/util/StateMachine;->transitionTo(Lcom/android/internal/util/IState;)V
 
@@ -910,8 +836,6 @@
 
 .method static synthetic access$4900(Lcom/android/server/wifi/WifiController;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/server/wifi/WifiController;
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lcom/android/internal/util/StateMachine;->logd(Ljava/lang/String;)V
 
@@ -920,7 +844,6 @@
 
 .method static synthetic access$500(Lcom/android/server/wifi/WifiController;)Z
     .locals 1
-    .param p0    # Lcom/android/server/wifi/WifiController;
 
     iget-boolean v0, p0, Lcom/android/server/wifi/WifiController;->mScreenOff:Z
 
@@ -929,8 +852,6 @@
 
 .method static synthetic access$5000(Lcom/android/server/wifi/WifiController;Lcom/android/internal/util/IState;)V
     .locals 0
-    .param p0    # Lcom/android/server/wifi/WifiController;
-    .param p1    # Lcom/android/internal/util/IState;
 
     invoke-virtual {p0, p1}, Lcom/android/internal/util/StateMachine;->transitionTo(Lcom/android/internal/util/IState;)V
 
@@ -939,8 +860,6 @@
 
 .method static synthetic access$502(Lcom/android/server/wifi/WifiController;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/wifi/WifiController;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/wifi/WifiController;->mScreenOff:Z
 
@@ -949,8 +868,6 @@
 
 .method static synthetic access$5100(Lcom/android/server/wifi/WifiController;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/server/wifi/WifiController;
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lcom/android/internal/util/StateMachine;->loge(Ljava/lang/String;)V
 
@@ -959,8 +876,6 @@
 
 .method static synthetic access$5200(Lcom/android/server/wifi/WifiController;Lcom/android/internal/util/IState;)V
     .locals 0
-    .param p0    # Lcom/android/server/wifi/WifiController;
-    .param p1    # Lcom/android/internal/util/IState;
 
     invoke-virtual {p0, p1}, Lcom/android/internal/util/StateMachine;->transitionTo(Lcom/android/internal/util/IState;)V
 
@@ -969,8 +884,6 @@
 
 .method static synthetic access$5300(Lcom/android/server/wifi/WifiController;Lcom/android/internal/util/IState;)V
     .locals 0
-    .param p0    # Lcom/android/server/wifi/WifiController;
-    .param p1    # Lcom/android/internal/util/IState;
 
     invoke-virtual {p0, p1}, Lcom/android/internal/util/StateMachine;->transitionTo(Lcom/android/internal/util/IState;)V
 
@@ -979,8 +892,6 @@
 
 .method static synthetic access$5400(Lcom/android/server/wifi/WifiController;Lcom/android/internal/util/IState;)V
     .locals 0
-    .param p0    # Lcom/android/server/wifi/WifiController;
-    .param p1    # Lcom/android/internal/util/IState;
 
     invoke-virtual {p0, p1}, Lcom/android/internal/util/StateMachine;->transitionTo(Lcom/android/internal/util/IState;)V
 
@@ -989,8 +900,6 @@
 
 .method static synthetic access$5500(Lcom/android/server/wifi/WifiController;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/server/wifi/WifiController;
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lcom/android/internal/util/StateMachine;->log(Ljava/lang/String;)V
 
@@ -999,8 +908,6 @@
 
 .method static synthetic access$5600(Lcom/android/server/wifi/WifiController;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/server/wifi/WifiController;
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lcom/android/internal/util/StateMachine;->logd(Ljava/lang/String;)V
 
@@ -1009,8 +916,6 @@
 
 .method static synthetic access$5700(Lcom/android/server/wifi/WifiController;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/server/wifi/WifiController;
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lcom/android/internal/util/StateMachine;->log(Ljava/lang/String;)V
 
@@ -1019,8 +924,6 @@
 
 .method static synthetic access$5800(Lcom/android/server/wifi/WifiController;Lcom/android/internal/util/IState;)V
     .locals 0
-    .param p0    # Lcom/android/server/wifi/WifiController;
-    .param p1    # Lcom/android/internal/util/IState;
 
     invoke-virtual {p0, p1}, Lcom/android/internal/util/StateMachine;->transitionTo(Lcom/android/internal/util/IState;)V
 
@@ -1029,8 +932,6 @@
 
 .method static synthetic access$5900(Lcom/android/server/wifi/WifiController;Lcom/android/internal/util/IState;)V
     .locals 0
-    .param p0    # Lcom/android/server/wifi/WifiController;
-    .param p1    # Lcom/android/internal/util/IState;
 
     invoke-virtual {p0, p1}, Lcom/android/internal/util/StateMachine;->transitionTo(Lcom/android/internal/util/IState;)V
 
@@ -1039,7 +940,6 @@
 
 .method static synthetic access$600(Lcom/android/server/wifi/WifiController;)Z
     .locals 1
-    .param p0    # Lcom/android/server/wifi/WifiController;
 
     iget-boolean v0, p0, Lcom/android/server/wifi/WifiController;->mDeviceIdle:Z
 
@@ -1048,8 +948,6 @@
 
 .method static synthetic access$6000(Lcom/android/server/wifi/WifiController;Lcom/android/internal/util/IState;)V
     .locals 0
-    .param p0    # Lcom/android/server/wifi/WifiController;
-    .param p1    # Lcom/android/internal/util/IState;
 
     invoke-virtual {p0, p1}, Lcom/android/internal/util/StateMachine;->transitionTo(Lcom/android/internal/util/IState;)V
 
@@ -1058,8 +956,6 @@
 
 .method static synthetic access$602(Lcom/android/server/wifi/WifiController;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/wifi/WifiController;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/wifi/WifiController;->mDeviceIdle:Z
 
@@ -1068,8 +964,6 @@
 
 .method static synthetic access$6100(Lcom/android/server/wifi/WifiController;Lcom/android/internal/util/IState;)V
     .locals 0
-    .param p0    # Lcom/android/server/wifi/WifiController;
-    .param p1    # Lcom/android/internal/util/IState;
 
     invoke-virtual {p0, p1}, Lcom/android/internal/util/StateMachine;->transitionTo(Lcom/android/internal/util/IState;)V
 
@@ -1078,8 +972,6 @@
 
 .method static synthetic access$6200(Lcom/android/server/wifi/WifiController;Lcom/android/internal/util/IState;)V
     .locals 0
-    .param p0    # Lcom/android/server/wifi/WifiController;
-    .param p1    # Lcom/android/internal/util/IState;
 
     invoke-virtual {p0, p1}, Lcom/android/internal/util/StateMachine;->transitionTo(Lcom/android/internal/util/IState;)V
 
@@ -1088,8 +980,6 @@
 
 .method static synthetic access$6300(Lcom/android/server/wifi/WifiController;Lcom/android/internal/util/IState;)V
     .locals 0
-    .param p0    # Lcom/android/server/wifi/WifiController;
-    .param p1    # Lcom/android/internal/util/IState;
 
     invoke-virtual {p0, p1}, Lcom/android/internal/util/StateMachine;->transitionTo(Lcom/android/internal/util/IState;)V
 
@@ -1098,8 +988,6 @@
 
 .method static synthetic access$6400(Lcom/android/server/wifi/WifiController;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/server/wifi/WifiController;
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lcom/android/internal/util/StateMachine;->loge(Ljava/lang/String;)V
 
@@ -1108,8 +996,6 @@
 
 .method static synthetic access$6500(Lcom/android/server/wifi/WifiController;Lcom/android/internal/util/IState;)V
     .locals 0
-    .param p0    # Lcom/android/server/wifi/WifiController;
-    .param p1    # Lcom/android/internal/util/IState;
 
     invoke-virtual {p0, p1}, Lcom/android/internal/util/StateMachine;->transitionTo(Lcom/android/internal/util/IState;)V
 
@@ -1118,8 +1004,6 @@
 
 .method static synthetic access$6600(Lcom/android/server/wifi/WifiController;Lcom/android/internal/util/IState;)V
     .locals 0
-    .param p0    # Lcom/android/server/wifi/WifiController;
-    .param p1    # Lcom/android/internal/util/IState;
 
     invoke-virtual {p0, p1}, Lcom/android/internal/util/StateMachine;->transitionTo(Lcom/android/internal/util/IState;)V
 
@@ -1128,8 +1012,6 @@
 
 .method static synthetic access$6700(Lcom/android/server/wifi/WifiController;Lcom/android/internal/util/IState;)V
     .locals 0
-    .param p0    # Lcom/android/server/wifi/WifiController;
-    .param p1    # Lcom/android/internal/util/IState;
 
     invoke-virtual {p0, p1}, Lcom/android/internal/util/StateMachine;->transitionTo(Lcom/android/internal/util/IState;)V
 
@@ -1138,8 +1020,6 @@
 
 .method static synthetic access$6800(Lcom/android/server/wifi/WifiController;Lcom/android/internal/util/IState;)V
     .locals 0
-    .param p0    # Lcom/android/server/wifi/WifiController;
-    .param p1    # Lcom/android/internal/util/IState;
 
     invoke-virtual {p0, p1}, Lcom/android/internal/util/StateMachine;->transitionTo(Lcom/android/internal/util/IState;)V
 
@@ -1148,8 +1028,6 @@
 
 .method static synthetic access$6900(Lcom/android/server/wifi/WifiController;Lcom/android/internal/util/IState;)V
     .locals 0
-    .param p0    # Lcom/android/server/wifi/WifiController;
-    .param p1    # Lcom/android/internal/util/IState;
 
     invoke-virtual {p0, p1}, Lcom/android/internal/util/StateMachine;->transitionTo(Lcom/android/internal/util/IState;)V
 
@@ -1158,7 +1036,6 @@
 
 .method static synthetic access$700(Lcom/android/server/wifi/WifiController;)V
     .locals 0
-    .param p0    # Lcom/android/server/wifi/WifiController;
 
     invoke-direct {p0}, Lcom/android/server/wifi/WifiController;->updateBatteryWorkSource()V
 
@@ -1167,7 +1044,6 @@
 
 .method static synthetic access$800(Lcom/android/server/wifi/WifiController;)I
     .locals 1
-    .param p0    # Lcom/android/server/wifi/WifiController;
 
     iget v0, p0, Lcom/android/server/wifi/WifiController;->mPluggedType:I
 
@@ -1176,8 +1052,6 @@
 
 .method static synthetic access$802(Lcom/android/server/wifi/WifiController;I)I
     .locals 0
-    .param p0    # Lcom/android/server/wifi/WifiController;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/wifi/WifiController;->mPluggedType:I
 
@@ -1186,8 +1060,6 @@
 
 .method static synthetic access$900(Lcom/android/server/wifi/WifiController;I)Z
     .locals 1
-    .param p0    # Lcom/android/server/wifi/WifiController;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/wifi/WifiController;->shouldWifiStayAwake(I)Z
 
@@ -1297,7 +1169,6 @@
 
 .method private initializeAndRegisterForSettingsChange(Landroid/os/Looper;)V
     .locals 1
-    .param p1    # Landroid/os/Looper;
 
     new-instance v0, Landroid/os/Handler;
 
@@ -1609,7 +1480,6 @@
 
 .method private registerForStayAwakeModeChange(Landroid/os/Handler;)V
     .locals 4
-    .param p1    # Landroid/os/Handler;
 
     new-instance v0, Lcom/android/server/wifi/WifiController$2;
 
@@ -1636,7 +1506,6 @@
 
 .method private registerForWifiIdleTimeChange(Landroid/os/Handler;)V
     .locals 4
-    .param p1    # Landroid/os/Handler;
 
     new-instance v0, Lcom/android/server/wifi/WifiController$3;
 
@@ -1663,7 +1532,6 @@
 
 .method private registerForWifiSleepPolicyChange(Landroid/os/Handler;)V
     .locals 4
-    .param p1    # Landroid/os/Handler;
 
     new-instance v0, Lcom/android/server/wifi/WifiController$4;
 
@@ -1690,7 +1558,6 @@
 
 .method private shouldDeviceStayAwake(I)Z
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Lcom/android/server/wifi/WifiController;->mStayAwakeConditions:I
 
@@ -1711,7 +1578,6 @@
 
 .method private shouldWifiStayAwake(I)Z
     .locals 3
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -1771,9 +1637,6 @@
 # virtual methods
 .method public dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     invoke-super {p0, p1, p2, p3}, Lcom/android/internal/util/StateMachine;->dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
 

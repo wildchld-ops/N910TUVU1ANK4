@@ -40,8 +40,6 @@
 # virtual methods
 .method public compare(Lcom/android/mms/data/Contact;Lcom/android/mms/data/Contact;)I
     .locals 4
-    .param p1    # Lcom/android/mms/data/Contact;
-    .param p2    # Lcom/android/mms/data/Contact;
 
     :try_start_0
     invoke-virtual {p1}, Lcom/android/mms/data/Contact;->getName()Ljava/lang/String;
@@ -95,8 +93,6 @@
 
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p1, Lcom/android/mms/data/Contact;
 

@@ -27,16 +27,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/wm/WindowManagerService;Landroid/os/Looper;Landroid/view/InputEventReceiver$Factory;Ljava/lang/String;IIIZZZ)V
     .locals 5
-    .param p1    # Lcom/android/server/wm/WindowManagerService;
-    .param p2    # Landroid/os/Looper;
-    .param p3    # Landroid/view/InputEventReceiver$Factory;
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # Z
-    .param p9    # Z
-    .param p10    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -207,7 +197,6 @@
 
 .method private getLayerLw(I)I
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/wm/FakeWindowImpl;->mService:Lcom/android/server/wm/WindowManagerService;
 
@@ -281,8 +270,6 @@
 
 .method layout(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     const/4 v1, 0x0
 

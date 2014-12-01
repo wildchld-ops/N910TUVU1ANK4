@@ -25,7 +25,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/storage/StorageManager;Landroid/os/storage/StorageEventListener;)V
     .locals 2
-    .param p2    # Landroid/os/storage/StorageEventListener;
 
     iput-object p1, p0, Landroid/os/storage/StorageManager$ListenerDelegate;->this$0:Landroid/os/storage/StorageManager;
 
@@ -59,7 +58,6 @@
 
 .method sendShareAvailabilityChanged(Z)V
     .locals 3
-    .param p1    # Z
 
     new-instance v0, Landroid/os/storage/StorageManager$UmsConnectionChangedStorageEvent;
 
@@ -80,9 +78,6 @@
 
 .method sendStorageStateChanged(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     new-instance v0, Landroid/os/storage/StorageManager$StorageStateChangedStorageEvent;
 

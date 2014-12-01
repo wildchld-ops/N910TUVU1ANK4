@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Landroid/hardware/scontext/provider/miscprovider/PedometerImpl;Landroid/hardware/scontext/provider/miscprovider/PedometerImpl$1;)V
     .locals 0
-    .param p1    # Landroid/hardware/scontext/provider/miscprovider/PedometerImpl;
-    .param p2    # Landroid/hardware/scontext/provider/miscprovider/PedometerImpl$1;
 
     invoke-direct {p0, p1}, Landroid/hardware/scontext/provider/miscprovider/PedometerImpl$CustomTimer;-><init>(Landroid/hardware/scontext/provider/miscprovider/PedometerImpl;)V
 

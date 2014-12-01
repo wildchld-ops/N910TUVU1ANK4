@@ -46,8 +46,6 @@
 
 .method public constructor <init>(Landroid/app/Activity;Lcom/android/mms/ui/ComposeMessageFragment;)V
     .locals 0
-    .param p1    # Landroid/app/Activity;
-    .param p2    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -60,7 +58,6 @@
 
 .method public static EncodeGreekCharater(Ljava/lang/String;)Ljava/lang/String;
     .locals 9
-    .param p0    # Ljava/lang/String;
 
     if-eqz p0, :cond_0
 
@@ -154,7 +151,6 @@
 
 .method public static MappingGreekCharater(Ljava/lang/String;)Ljava/lang/String;
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     move-object v0, p0
 
@@ -322,7 +318,6 @@
 
 .method private static convertGreekCharacter(C)C
     .locals 1
-    .param p0    # C
 
     move v0, p0
 
@@ -465,7 +460,6 @@
 
 .method public static convertGreekSmallLetterToCapital(Ljava/lang/String;)Ljava/lang/String;
     .locals 6
-    .param p0    # Ljava/lang/String;
 
     move-object v3, p0
 
@@ -531,7 +525,6 @@
 
 .method public static isAccentedGerrkCahr(C)Z
     .locals 1
-    .param p0    # C
 
     sparse-switch p0, :sswitch_data_0
 
@@ -574,7 +567,6 @@
 
 .method public static isGreekInput(C)Z
     .locals 1
-    .param p0    # C
 
     const/16 v0, 0x386
 
@@ -616,7 +608,6 @@
 
 .method public static isGreekSmallLetter(C)Z
     .locals 1
-    .param p0    # C
 
     const/16 v0, 0x3b1
 
@@ -653,7 +644,6 @@
 
 .method private setUpperCase(Z)V
     .locals 6
-    .param p1    # Z
 
     :try_start_0
     const-string v3, "Mms/GreekInputHandler"
@@ -858,8 +848,6 @@
 
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     const-string v2, "AxT9IME.inputLanguage"
 

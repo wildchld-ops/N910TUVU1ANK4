@@ -39,7 +39,6 @@
 
 .method synthetic constructor <init>(Landroid/transition/Visibility$1;)V
     .locals 0
-    .param p1    # Landroid/transition/Visibility$1;
 
     invoke-direct {p0}, Landroid/transition/Visibility$VisibilityInfo;-><init>()V
 

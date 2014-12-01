@@ -61,8 +61,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Lcom/android/mms/ui/SweepHandler$ListCheckInterface;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/mms/ui/SweepHandler$ListCheckInterface;
 
     const/4 v1, 0x0
 
@@ -126,9 +124,6 @@
 
 .method private adjustDrawableBound(Landroid/graphics/drawable/Drawable;II)V
     .locals 4
-    .param p1    # Landroid/graphics/drawable/Drawable;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v3, 0x0
 
@@ -208,11 +203,6 @@
 
 .method private drawFadingText(Landroid/graphics/Canvas;Ljava/lang/String;FFF)V
     .locals 10
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # Ljava/lang/String;
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
 
     const-string v7, "SweepHandler"
 
@@ -676,8 +666,6 @@
 
 .method private setupDrawablesBound(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     const/4 v2, 0x0
 
@@ -738,7 +726,6 @@
 # virtual methods
 .method public onDefineSweepAction(I)Lcom/sec/android/touchwiz/widget/TwSweepActionListView$SweepActionBarInfo;
     .locals 5
-    .param p1    # I
 
     const/4 v4, 0x1
 
@@ -780,12 +767,6 @@
 
 .method public onDrawSweepActionBar(Landroid/content/Context;IFILandroid/graphics/Rect;Landroid/graphics/Canvas;)V
     .locals 12
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # F
-    .param p4    # I
-    .param p5    # Landroid/graphics/Rect;
-    .param p6    # Landroid/graphics/Canvas;
 
     iget-boolean v1, p0, Lcom/android/mms/ui/SweepHandler;->isVoiceCallAvailabe:Z
 
@@ -1236,9 +1217,6 @@
 
 .method public onListShouldDrawSelector(IFI)Z
     .locals 4
-    .param p1    # I
-    .param p2    # F
-    .param p3    # I
 
     const/4 v0, 0x1
 

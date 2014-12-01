@@ -54,8 +54,6 @@
 
 .method public SetAlternateFormat(ILandroid/sec/clipboard/data/ClipboardData;)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/sec/clipboard/data/ClipboardData;
 
     invoke-super {p0, p1, p2}, Landroid/sec/clipboard/data/ClipboardData;->SetAlternateFormat(ILandroid/sec/clipboard/data/ClipboardData;)Z
 
@@ -155,7 +153,6 @@
 
 .method public SetSmartClip(Lcom/samsung/android/smartclip/SmartClipDataRepositoryImpl;)Z
     .locals 1
-    .param p1    # Lcom/samsung/android/smartclip/SmartClipDataRepositoryImpl;
 
     if-nez p1, :cond_0
 
@@ -224,7 +221,6 @@
 
 .method protected readFormSource(Landroid/os/Parcel;)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     const-class v0, Ljava/lang/String;
 
@@ -305,7 +301,6 @@
 
 .method public setBmpImagePath(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -352,8 +347,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 4
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     sget-boolean v2, Landroid/sec/clipboard/data/ClipboardDefine;->DEBUG:Z
 

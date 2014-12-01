@@ -38,8 +38,6 @@
 
 .method public constructor <init>(Landroid/graphics/Path;Z)V
     .locals 1
-    .param p1    # Landroid/graphics/Path;
-    .param p2    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -124,9 +122,6 @@
 
 .method public getMatrix(FLandroid/graphics/Matrix;I)Z
     .locals 2
-    .param p1    # F
-    .param p2    # Landroid/graphics/Matrix;
-    .param p3    # I
 
     iget v0, p0, Landroid/graphics/PathMeasure;->native_instance:I
 
@@ -141,9 +136,6 @@
 
 .method public getPosTan(F[F[F)Z
     .locals 2
-    .param p1    # F
-    .param p2    # [F
-    .param p3    # [F
 
     const/4 v1, 0x2
 
@@ -179,10 +171,6 @@
 
 .method public getSegment(FFLandroid/graphics/Path;Z)Z
     .locals 2
-    .param p1    # F
-    .param p2    # F
-    .param p3    # Landroid/graphics/Path;
-    .param p4    # Z
 
     iget v0, p0, Landroid/graphics/PathMeasure;->native_instance:I
 
@@ -223,8 +211,6 @@
 
 .method public setPath(Landroid/graphics/Path;Z)V
     .locals 2
-    .param p1    # Landroid/graphics/Path;
-    .param p2    # Z
 
     iput-object p1, p0, Landroid/graphics/PathMeasure;->mPath:Landroid/graphics/Path;
 

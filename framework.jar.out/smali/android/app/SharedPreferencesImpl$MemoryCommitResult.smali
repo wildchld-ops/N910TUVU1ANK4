@@ -76,7 +76,6 @@
 
 .method synthetic constructor <init>(Landroid/app/SharedPreferencesImpl$1;)V
     .locals 0
-    .param p1    # Landroid/app/SharedPreferencesImpl$1;
 
     invoke-direct {p0}, Landroid/app/SharedPreferencesImpl$MemoryCommitResult;-><init>()V
 
@@ -87,7 +86,6 @@
 # virtual methods
 .method public setDiskWriteResult(Z)V
     .locals 1
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/app/SharedPreferencesImpl$MemoryCommitResult;->writeToDiskResult:Z
 

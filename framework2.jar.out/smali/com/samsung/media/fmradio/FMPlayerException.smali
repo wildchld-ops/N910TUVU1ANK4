@@ -32,9 +32,6 @@
 # direct methods
 .method public constructor <init>(ILjava/lang/String;Ljava/lang/Throwable;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/Throwable;
 
     invoke-direct {p0}, Ljava/lang/Exception;-><init>()V
 

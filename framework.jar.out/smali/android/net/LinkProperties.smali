@@ -131,7 +131,6 @@
 
 .method public constructor <init>(Landroid/net/LinkProperties;)V
     .locals 6
-    .param p1    # Landroid/net/LinkProperties;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -319,7 +318,6 @@
 
 .method private routeWithInterface(Landroid/net/RouteInfo;)Landroid/net/RouteInfo;
     .locals 4
-    .param p1    # Landroid/net/RouteInfo;
 
     new-instance v0, Landroid/net/RouteInfo;
 
@@ -342,7 +340,6 @@
 # virtual methods
 .method public addDns(Ljava/net/InetAddress;)V
     .locals 1
-    .param p1    # Ljava/net/InetAddress;
 
     if-eqz p1, :cond_0
 
@@ -356,7 +353,6 @@
 
 .method public addLinkAddress(Landroid/net/LinkAddress;)Z
     .locals 1
-    .param p1    # Landroid/net/LinkAddress;
 
     if-eqz p1, :cond_0
 
@@ -385,7 +381,6 @@
 
 .method public addRoute(Landroid/net/RouteInfo;)V
     .locals 4
-    .param p1    # Landroid/net/RouteInfo;
 
     if-eqz p1, :cond_1
 
@@ -454,7 +449,6 @@
 
 .method public addStackedLink(Landroid/net/LinkProperties;)Z
     .locals 2
-    .param p1    # Landroid/net/LinkProperties;
 
     if-eqz p1, :cond_0
 
@@ -519,7 +513,6 @@
 
 .method public compareAddresses(Landroid/net/LinkProperties;)Landroid/net/LinkProperties$CompareResult;
     .locals 5
-    .param p1    # Landroid/net/LinkProperties;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -592,7 +585,6 @@
 
 .method public compareAllRoutes(Landroid/net/LinkProperties;)Landroid/net/LinkProperties$CompareResult;
     .locals 4
-    .param p1    # Landroid/net/LinkProperties;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -663,7 +655,6 @@
 
 .method public compareDnses(Landroid/net/LinkProperties;)Landroid/net/LinkProperties$CompareResult;
     .locals 5
-    .param p1    # Landroid/net/LinkProperties;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -744,7 +735,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 4
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x1
 
@@ -1466,7 +1456,6 @@
 
 .method public isIdenticalAddresses(Landroid/net/LinkProperties;)Z
     .locals 4
-    .param p1    # Landroid/net/LinkProperties;
 
     invoke-virtual {p1}, Landroid/net/LinkProperties;->getAddresses()Ljava/util/Collection;
 
@@ -1501,7 +1490,6 @@
 
 .method public isIdenticalDnses(Landroid/net/LinkProperties;)Z
     .locals 5
-    .param p1    # Landroid/net/LinkProperties;
 
     const/4 v2, 0x0
 
@@ -1556,7 +1544,6 @@
 
 .method public isIdenticalHttpProxy(Landroid/net/LinkProperties;)Z
     .locals 2
-    .param p1    # Landroid/net/LinkProperties;
 
     invoke-virtual {p0}, Landroid/net/LinkProperties;->getHttpProxy()Landroid/net/ProxyProperties;
 
@@ -1598,7 +1585,6 @@
 
 .method public isIdenticalInterfaceName(Landroid/net/LinkProperties;)Z
     .locals 2
-    .param p1    # Landroid/net/LinkProperties;
 
     invoke-virtual {p0}, Landroid/net/LinkProperties;->getInterfaceName()Ljava/lang/String;
 
@@ -1617,7 +1603,6 @@
 
 .method public isIdenticalMtu(Landroid/net/LinkProperties;)Z
     .locals 2
-    .param p1    # Landroid/net/LinkProperties;
 
     invoke-virtual {p0}, Landroid/net/LinkProperties;->getMtu()I
 
@@ -1642,7 +1627,6 @@
 
 .method public isIdenticalRoutes(Landroid/net/LinkProperties;)Z
     .locals 3
-    .param p1    # Landroid/net/LinkProperties;
 
     invoke-virtual {p1}, Landroid/net/LinkProperties;->getRoutes()Ljava/util/Collection;
 
@@ -1677,7 +1661,6 @@
 
 .method public isIdenticalStackedLinks(Landroid/net/LinkProperties;)Z
     .locals 6
-    .param p1    # Landroid/net/LinkProperties;
 
     const/4 v3, 0x0
 
@@ -1752,7 +1735,6 @@
 
 .method public removeLinkAddress(Landroid/net/LinkAddress;)Z
     .locals 1
-    .param p1    # Landroid/net/LinkAddress;
 
     iget-object v0, p0, Landroid/net/LinkProperties;->mLinkAddresses:Ljava/util/Collection;
 
@@ -1765,7 +1747,6 @@
 
 .method public removeStackedLink(Landroid/net/LinkProperties;)Z
     .locals 4
-    .param p1    # Landroid/net/LinkProperties;
 
     const/4 v1, 0x0
 
@@ -1799,7 +1780,6 @@
 
 .method public setDomains(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/net/LinkProperties;->mDomains:Ljava/lang/String;
 
@@ -1808,7 +1788,6 @@
 
 .method public setHttpProxy(Landroid/net/ProxyProperties;)V
     .locals 0
-    .param p1    # Landroid/net/ProxyProperties;
 
     iput-object p1, p0, Landroid/net/LinkProperties;->mHttpProxy:Landroid/net/ProxyProperties;
 
@@ -1817,7 +1796,6 @@
 
 .method public setInterfaceName(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/net/LinkProperties;->mIfaceName:Ljava/lang/String;
 
@@ -1907,7 +1885,6 @@
 
 .method public setMtu(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/net/LinkProperties;->mMtu:I
 
@@ -2403,8 +2380,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 6
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     invoke-virtual {p0}, Landroid/net/LinkProperties;->getInterfaceName()Ljava/lang/String;
 

@@ -24,7 +24,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -45,7 +44,6 @@
 
 .method static synthetic access$000(Lcom/android/incallui/cover/CoverDialog;)Lcom/android/incallui/cover/CoverCall;
     .locals 1
-    .param p0    # Lcom/android/incallui/cover/CoverDialog;
 
     iget-object v0, p0, Lcom/android/incallui/cover/CoverDialog;->mCallCardCovered:Lcom/android/incallui/cover/CoverCall;
 
@@ -54,8 +52,6 @@
 
 .method static synthetic access$002(Lcom/android/incallui/cover/CoverDialog;Lcom/android/incallui/cover/CoverCall;)Lcom/android/incallui/cover/CoverCall;
     .locals 0
-    .param p0    # Lcom/android/incallui/cover/CoverDialog;
-    .param p1    # Lcom/android/incallui/cover/CoverCall;
 
     iput-object p1, p0, Lcom/android/incallui/cover/CoverDialog;->mCallCardCovered:Lcom/android/incallui/cover/CoverCall;
 
@@ -64,7 +60,6 @@
 
 .method static synthetic access$100(Lcom/android/incallui/cover/CoverDialog;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/incallui/cover/CoverDialog;
 
     iget-object v0, p0, Lcom/android/incallui/cover/CoverDialog;->mContext:Landroid/content/Context;
 
@@ -272,9 +267,6 @@
 
 .method private showDialog(Lcom/samsung/android/sdk/cover/ScoverManager;II)V
     .locals 10
-    .param p1    # Lcom/samsung/android/sdk/cover/ScoverManager;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v9, 0x0
 
@@ -667,8 +659,6 @@
 
 .method public declared-synchronized manageDialog(Lcom/samsung/android/sdk/cover/ScoverManager;Z)V
     .locals 7
-    .param p1    # Lcom/samsung/android/sdk/cover/ScoverManager;
-    .param p2    # Z
 
     const/4 v2, 0x1
 
@@ -789,7 +779,6 @@
 
 .method public setCoverScreenTime(Z)V
     .locals 5
-    .param p1    # Z
 
     iget-object v2, p0, Lcom/android/incallui/cover/CoverDialog;->mClearCoverDialog:Lcom/android/incallui/cover/CoverDialog$ClearCoverDialog;
 

@@ -42,7 +42,6 @@
 
 .method public static clear(Z)V
     .locals 3
-    .param p0    # Z
 
     const/4 v2, 0x0
 
@@ -127,7 +126,6 @@
 
 .method public static returnTexture(I)V
     .locals 2
-    .param p0    # I
 
     sget-object v0, Lcom/voovio/sweep/TexturePool;->m_aTextureIDs:[I
 

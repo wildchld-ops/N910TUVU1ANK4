@@ -27,7 +27,6 @@
 # virtual methods
 .method public getCapabilities(Landroid/accessibilityservice/AccessibilityServiceInfo;)I
     .locals 1
-    .param p1    # Landroid/accessibilityservice/AccessibilityServiceInfo;
 
     invoke-static {p1}, Landroid/support/v4/accessibilityservice/AccessibilityServiceInfoCompatJellyBeanMr2;->getCapabilities(Landroid/accessibilityservice/AccessibilityServiceInfo;)I
 

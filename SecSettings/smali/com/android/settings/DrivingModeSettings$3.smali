@@ -40,7 +40,6 @@
 # virtual methods
 .method public onDismiss(Landroid/content/DialogInterface;)V
     .locals 3
-    .param p1    # Landroid/content/DialogInterface;
 
     iget-object v1, p0, Lcom/android/settings/DrivingModeSettings$3;->val$checkBox:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 

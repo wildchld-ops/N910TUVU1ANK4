@@ -22,14 +22,12 @@
 
 .method public updateDrawState(Landroid/text/TextPaint;)V
     .locals 0
-    .param p1    # Landroid/text/TextPaint;
 
     return-void
 .end method
 
 .method public updateMeasureState(Landroid/text/TextPaint;)V
     .locals 0
-    .param p1    # Landroid/text/TextPaint;
 
     return-void
 .end method

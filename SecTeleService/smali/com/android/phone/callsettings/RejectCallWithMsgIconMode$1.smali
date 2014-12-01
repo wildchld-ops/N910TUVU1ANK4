@@ -81,7 +81,7 @@
 
     iget-object v2, v2, Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;->mGridView:Landroid/widget/GridView;
 
-    invoke-virtual {v2}, Landroid/view/ViewGroup;->getChildCount()I
+    invoke-virtual {v2}, Landroid/widget/GridView;->getChildCount()I
 
     move-result v2
 
@@ -91,13 +91,13 @@
 
     iget-object v2, v2, Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;->mGridView:Landroid/widget/GridView;
 
-    invoke-virtual {v2, v0}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
+    invoke-virtual {v2, v0}, Landroid/widget/GridView;->getChildAt(I)Landroid/view/View;
 
     move-result-object v1
 
     check-cast v1, Landroid/view/ViewGroup;
 
-    invoke-virtual {v1}, Landroid/view/View;->clearAnimation()V
+    invoke-virtual {v1}, Landroid/view/ViewGroup;->clearAnimation()V
 
     iget-object v2, p0, Lcom/android/phone/callsettings/RejectCallWithMsgIconMode$1;->this$0:Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;
 
@@ -121,7 +121,7 @@
 
     const/4 v2, 0x4
 
-    invoke-virtual {v1, v2}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v1, v2}, Landroid/view/ViewGroup;->setVisibility(I)V
 
     :goto_1
     add-int/lit8 v0, v0, 0x1
@@ -131,7 +131,7 @@
     :cond_0
     const/4 v2, 0x0
 
-    invoke-virtual {v1, v2}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v1, v2}, Landroid/view/ViewGroup;->setVisibility(I)V
 
     goto :goto_1
 
@@ -147,7 +147,7 @@
 
     iget-object v2, v2, Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;->mAdapter:Lcom/android/phone/callsettings/RejectCallWithMsgIconModeAdapter;
 
-    invoke-virtual {v2}, Landroid/widget/BaseAdapter;->notifyDataSetChanged()V
+    invoke-virtual {v2}, Lcom/android/phone/callsettings/RejectCallWithMsgIconModeAdapter;->notifyDataSetChanged()V
 
     :cond_2
     return-void

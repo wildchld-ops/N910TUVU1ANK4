@@ -25,8 +25,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/settings/users/AppRestrictionsFragment;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/settings/users/AppRestrictionsFragment$ExcludeAppInfo;->this$0:Lcom/android/settings/users/AppRestrictionsFragment;
 

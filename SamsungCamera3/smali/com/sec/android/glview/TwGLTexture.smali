@@ -54,9 +54,6 @@
 # direct methods
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;FF)V
     .locals 2
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # F
-    .param p3    # F
 
     const/4 v0, 0x0
 
@@ -97,10 +94,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;FFF)V
     .locals 2
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
 
     const/4 v0, 0x0
 
@@ -141,11 +134,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;FFFF)V
     .locals 2
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
 
     const/4 v0, 0x0
 
@@ -186,12 +174,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;FFFFF)V
     .locals 2
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # F
 
     const/4 v0, 0x0
 
@@ -232,8 +214,6 @@
 
 .method static synthetic access$002(Lcom/sec/android/glview/TwGLTexture;Z)Z
     .locals 0
-    .param p0    # Lcom/sec/android/glview/TwGLTexture;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/glview/TwGLTexture;->mAsyncLodingInProgress:Z
 
@@ -1794,7 +1774,6 @@
 
 .method public setFlip(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/glview/TwGLTexture;->mFlip:Z
 
@@ -2125,8 +2104,6 @@
 
 .method public declared-synchronized updateTexture(Landroid/graphics/Bitmap;Z)Z
     .locals 3
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # Z
 
     const/4 v0, 0x1
 

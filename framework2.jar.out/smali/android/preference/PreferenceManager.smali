@@ -95,8 +95,6 @@
 # direct methods
 .method public constructor <init>(Landroid/app/Activity;I)V
     .locals 2
-    .param p1    # Landroid/app/Activity;
-    .param p2    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -115,7 +113,6 @@
 
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -192,7 +189,6 @@
 
 .method public static getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Landroid/preference/PreferenceManager;->getDefaultSharedPreferencesName(Landroid/content/Context;)Ljava/lang/String;
 
@@ -219,7 +215,6 @@
 
 .method private static getDefaultSharedPreferencesName(Landroid/content/Context;)Ljava/lang/String;
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -248,7 +243,6 @@
 
 .method private init(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     iput-object p1, p0, Landroid/preference/PreferenceManager;->mContext:Landroid/content/Context;
 
@@ -263,7 +257,6 @@
 
 .method private queryIntentActivities(Landroid/content/Intent;)Ljava/util/List;
     .locals 2
-    .param p1    # Landroid/content/Intent;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -293,9 +286,6 @@
 
 .method public static setDefaultValues(Landroid/content/Context;IZ)V
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # Z
 
     invoke-static {p0}, Landroid/preference/PreferenceManager;->getDefaultSharedPreferencesName(Landroid/content/Context;)Ljava/lang/String;
 
@@ -312,11 +302,6 @@
 
 .method public static setDefaultValues(Landroid/content/Context;Ljava/lang/String;IIZ)V
     .locals 7
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Z
 
     const/4 v5, 0x0
 
@@ -380,7 +365,6 @@
 
 .method private setNoCommit(Z)V
     .locals 2
-    .param p1    # Z
 
     if-nez p1, :cond_0
 
@@ -415,7 +399,6 @@
 # virtual methods
 .method addPreferencesScreen(Landroid/content/DialogInterface;)V
     .locals 1
-    .param p1    # Landroid/content/DialogInterface;
 
     monitor-enter p0
 
@@ -451,7 +434,6 @@
 
 .method public createPreferenceScreen(Landroid/content/Context;)Landroid/preference/PreferenceScreen;
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     new-instance v0, Landroid/preference/PreferenceScreen;
 
@@ -530,9 +512,6 @@
 
 .method dispatchActivityResult(IILandroid/content/Intent;)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     monitor-enter p0
 
@@ -653,7 +632,6 @@
 
 .method dispatchNewIntent(Landroid/content/Intent;)V
     .locals 0
-    .param p1    # Landroid/content/Intent;
 
     invoke-direct {p0}, Landroid/preference/PreferenceManager;->dismissAllScreens()V
 
@@ -662,7 +640,6 @@
 
 .method public findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
 
     iget-object v0, p0, Landroid/preference/PreferenceManager;->mPreferenceScreen:Landroid/preference/PreferenceScreen;
 
@@ -859,8 +836,6 @@
 
 .method inflateFromIntent(Landroid/content/Intent;Landroid/preference/PreferenceScreen;)Landroid/preference/PreferenceScreen;
     .locals 13
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Landroid/preference/PreferenceScreen;
 
     invoke-direct {p0, p1}, Landroid/preference/PreferenceManager;->queryIntentActivities(Landroid/content/Intent;)Ljava/util/List;
 
@@ -1036,9 +1011,6 @@
 
 .method public inflateFromResource(Landroid/content/Context;ILandroid/preference/PreferenceScreen;)Landroid/preference/PreferenceScreen;
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Landroid/preference/PreferenceScreen;
 
     const/4 v1, 0x1
 
@@ -1065,7 +1037,6 @@
 
 .method registerOnActivityDestroyListener(Landroid/preference/PreferenceManager$OnActivityDestroyListener;)V
     .locals 1
-    .param p1    # Landroid/preference/PreferenceManager$OnActivityDestroyListener;
 
     monitor-enter p0
 
@@ -1110,7 +1081,6 @@
 
 .method registerOnActivityResultListener(Landroid/preference/PreferenceManager$OnActivityResultListener;)V
     .locals 1
-    .param p1    # Landroid/preference/PreferenceManager$OnActivityResultListener;
 
     monitor-enter p0
 
@@ -1155,7 +1125,6 @@
 
 .method registerOnActivityStopListener(Landroid/preference/PreferenceManager$OnActivityStopListener;)V
     .locals 1
-    .param p1    # Landroid/preference/PreferenceManager$OnActivityStopListener;
 
     monitor-enter p0
 
@@ -1200,7 +1169,6 @@
 
 .method removePreferencesScreen(Landroid/content/DialogInterface;)V
     .locals 1
-    .param p1    # Landroid/content/DialogInterface;
 
     monitor-enter p0
 
@@ -1235,7 +1203,6 @@
 
 .method setFragment(Landroid/preference/PreferenceFragment;)V
     .locals 0
-    .param p1    # Landroid/preference/PreferenceFragment;
 
     iput-object p1, p0, Landroid/preference/PreferenceManager;->mFragment:Landroid/preference/PreferenceFragment;
 
@@ -1244,7 +1211,6 @@
 
 .method setOnPreferenceTreeClickListener(Landroid/preference/PreferenceManager$OnPreferenceTreeClickListener;)V
     .locals 0
-    .param p1    # Landroid/preference/PreferenceManager$OnPreferenceTreeClickListener;
 
     iput-object p1, p0, Landroid/preference/PreferenceManager;->mOnPreferenceTreeClickListener:Landroid/preference/PreferenceManager$OnPreferenceTreeClickListener;
 
@@ -1253,7 +1219,6 @@
 
 .method setPreferences(Landroid/preference/PreferenceScreen;)Z
     .locals 1
-    .param p1    # Landroid/preference/PreferenceScreen;
 
     iget-object v0, p0, Landroid/preference/PreferenceManager;->mPreferenceScreen:Landroid/preference/PreferenceScreen;
 
@@ -1274,7 +1239,6 @@
 
 .method public setSharedPreferencesMode(I)V
     .locals 1
-    .param p1    # I
 
     iput p1, p0, Landroid/preference/PreferenceManager;->mSharedPreferencesMode:I
 
@@ -1287,7 +1251,6 @@
 
 .method public setSharedPreferencesName(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/preference/PreferenceManager;->mSharedPreferencesName:Ljava/lang/String;
 
@@ -1318,7 +1281,6 @@
 
 .method unregisterOnActivityDestroyListener(Landroid/preference/PreferenceManager$OnActivityDestroyListener;)V
     .locals 1
-    .param p1    # Landroid/preference/PreferenceManager$OnActivityDestroyListener;
 
     monitor-enter p0
 
@@ -1348,7 +1310,6 @@
 
 .method unregisterOnActivityResultListener(Landroid/preference/PreferenceManager$OnActivityResultListener;)V
     .locals 1
-    .param p1    # Landroid/preference/PreferenceManager$OnActivityResultListener;
 
     monitor-enter p0
 
@@ -1378,7 +1339,6 @@
 
 .method unregisterOnActivityStopListener(Landroid/preference/PreferenceManager$OnActivityStopListener;)V
     .locals 1
-    .param p1    # Landroid/preference/PreferenceManager$OnActivityStopListener;
 
     monitor-enter p0
 

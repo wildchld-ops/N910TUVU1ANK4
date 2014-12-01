@@ -68,7 +68,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 12
-    .param p1    # Landroid/content/Context;
 
     const/4 v11, 0x3
 
@@ -257,7 +256,6 @@
 
 .method static synthetic access$000(Lcom/sec/android/visualeffect/particlespace/particle/ParticleEffect;)Z
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/particlespace/particle/ParticleEffect;
 
     invoke-direct {p0}, Lcom/sec/android/visualeffect/particlespace/particle/ParticleEffect;->isAvailableRect()Z
 
@@ -268,7 +266,6 @@
 
 .method static synthetic access$100(Lcom/sec/android/visualeffect/particlespace/particle/ParticleEffect;)I
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/particlespace/particle/ParticleEffect;
 
     iget v0, p0, Lcom/sec/android/visualeffect/particlespace/particle/ParticleEffect;->drawingLeft:I
 
@@ -277,7 +274,6 @@
 
 .method static synthetic access$200(Lcom/sec/android/visualeffect/particlespace/particle/ParticleEffect;)I
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/particlespace/particle/ParticleEffect;
 
     iget v0, p0, Lcom/sec/android/visualeffect/particlespace/particle/ParticleEffect;->drawingMargin:I
 
@@ -286,7 +282,6 @@
 
 .method static synthetic access$300(Lcom/sec/android/visualeffect/particlespace/particle/ParticleEffect;)I
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/particlespace/particle/ParticleEffect;
 
     iget v0, p0, Lcom/sec/android/visualeffect/particlespace/particle/ParticleEffect;->drawingTop:I
 
@@ -295,7 +290,6 @@
 
 .method static synthetic access$400(Lcom/sec/android/visualeffect/particlespace/particle/ParticleEffect;)I
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/particlespace/particle/ParticleEffect;
 
     iget v0, p0, Lcom/sec/android/visualeffect/particlespace/particle/ParticleEffect;->drawingRight:I
 
@@ -304,7 +298,6 @@
 
 .method static synthetic access$500(Lcom/sec/android/visualeffect/particlespace/particle/ParticleEffect;)I
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/particlespace/particle/ParticleEffect;
 
     iget v0, p0, Lcom/sec/android/visualeffect/particlespace/particle/ParticleEffect;->drawingBottom:I
 
@@ -313,7 +306,6 @@
 
 .method static synthetic access$600(Lcom/sec/android/visualeffect/particlespace/particle/ParticleEffect;)Z
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/particlespace/particle/ParticleEffect;
 
     iget-boolean v0, p0, Lcom/sec/android/visualeffect/particlespace/particle/ParticleEffect;->isDrawing:Z
 
@@ -322,7 +314,6 @@
 
 .method static synthetic access$700(Lcom/sec/android/visualeffect/particlespace/particle/ParticleEffect;)Z
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/particlespace/particle/ParticleEffect;
 
     iget-boolean v0, p0, Lcom/sec/android/visualeffect/particlespace/particle/ParticleEffect;->isPaused:Z
 
@@ -331,7 +322,6 @@
 
 .method static synthetic access$800(Lcom/sec/android/visualeffect/particlespace/particle/ParticleEffect;)I
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/particlespace/particle/ParticleEffect;
 
     iget v0, p0, Lcom/sec/android/visualeffect/particlespace/particle/ParticleEffect;->drawingDelayTime:I
 
@@ -467,10 +457,6 @@
 # virtual methods
 .method public addDots(IFFI)V
     .locals 15
-    .param p1    # I
-    .param p2    # F
-    .param p3    # F
-    .param p4    # I
 
     iget-object v5, p0, Lcom/sec/android/visualeffect/particlespace/particle/ParticleEffect;->particleAliveList:Ljava/util/ArrayList;
 
@@ -685,7 +671,6 @@
 
 .method protected onDraw(Landroid/graphics/Canvas;)V
     .locals 7
-    .param p1    # Landroid/graphics/Canvas;
 
     invoke-super {p0, p1}, Landroid/view/View;->onDraw(Landroid/graphics/Canvas;)V
 

@@ -110,7 +110,6 @@
 
 .method private getKeyValue(I)I
     .locals 2
-    .param p1    # I
 
     move v0, p1
 
@@ -126,7 +125,6 @@
 
 .method private hasStackIndexCache(I)Z
     .locals 3
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -171,7 +169,6 @@
 # virtual methods
 .method public dump(I)V
     .locals 5
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -260,7 +257,6 @@
 
 .method public hasCache(I)Z
     .locals 3
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/systemui/recent/cardholder/RecentTasksCache;->getKeyValue(I)I
 
@@ -301,7 +297,6 @@
 
 .method public loadBottomStackIndex(I)I
     .locals 2
-    .param p1    # I
 
     iget v0, p0, Lcom/android/systemui/recent/cardholder/RecentTasksCache;->mOrientation:I
 
@@ -350,7 +345,6 @@
 
 .method public loadCache(I)Landroid/util/SparseArray;
     .locals 3
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -404,7 +398,6 @@
 
 .method public loadTopStackIndex(I)I
     .locals 2
-    .param p1    # I
 
     iget v0, p0, Lcom/android/systemui/recent/cardholder/RecentTasksCache;->mOrientation:I
 
@@ -453,9 +446,6 @@
 
 .method public saveCache(Ljava/util/ArrayList;III)Z
     .locals 21
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -794,7 +784,6 @@
 
 .method public setOrientation(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/systemui/recent/cardholder/RecentTasksCache;->mOrientation:I
 

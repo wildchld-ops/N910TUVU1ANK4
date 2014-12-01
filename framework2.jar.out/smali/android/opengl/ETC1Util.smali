@@ -22,11 +22,6 @@
 
 .method public static compressTexture(Ljava/nio/Buffer;IIII)Landroid/opengl/ETC1Util$ETC1Texture;
     .locals 7
-    .param p0    # Ljava/nio/Buffer;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-static {p1, p2}, Landroid/opengl/ETC1;->getEncodedDataSize(II)I
 
@@ -65,7 +60,6 @@
 
 .method public static createTexture(Ljava/io/InputStream;)Landroid/opengl/ETC1Util$ETC1Texture;
     .locals 12
-    .param p0    # Ljava/io/InputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -250,12 +244,6 @@
 
 .method public static loadTexture(IIIIILandroid/opengl/ETC1Util$ETC1Texture;)V
     .locals 24
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Landroid/opengl/ETC1Util$ETC1Texture;
 
     const/16 v1, 0x1907
 
@@ -400,12 +388,6 @@
 
 .method public static loadTexture(IIIIILjava/io/InputStream;)V
     .locals 6
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Ljava/io/InputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -433,8 +415,6 @@
 
 .method public static writeTexture(Landroid/opengl/ETC1Util$ETC1Texture;Ljava/io/OutputStream;)V
     .locals 11
-    .param p0    # Landroid/opengl/ETC1Util$ETC1Texture;
-    .param p1    # Ljava/io/OutputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

@@ -78,15 +78,6 @@
 
 .method public constructor <init>(Landroid/net/NetworkTemplate;ILjava/lang/String;JJJJZZ)V
     .locals 1
-    .param p1    # Landroid/net/NetworkTemplate;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # J
-    .param p6    # J
-    .param p8    # J
-    .param p10    # J
-    .param p12    # Z
-    .param p13    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -129,12 +120,6 @@
 
 .method public constructor <init>(Landroid/net/NetworkTemplate;ILjava/lang/String;JJZ)V
     .locals 14
-    .param p1    # Landroid/net/NetworkTemplate;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # J
-    .param p6    # J
-    .param p8    # Z
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -165,7 +150,6 @@
 
 .method public constructor <init>(Landroid/os/Parcel;)V
     .locals 5
-    .param p1    # Landroid/os/Parcel;
 
     const/4 v1, 0x1
 
@@ -268,7 +252,6 @@
 
 .method public compareTo(Landroid/net/NetworkPolicy;)I
     .locals 4
-    .param p1    # Landroid/net/NetworkPolicy;
 
     const-wide/16 v2, -0x1
 
@@ -314,7 +297,6 @@
 
 .method public bridge synthetic compareTo(Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Landroid/net/NetworkPolicy;
 
@@ -335,7 +317,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 6
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x0
 
@@ -541,7 +522,6 @@
 
 .method public isOverLimit(J)Z
     .locals 4
-    .param p1    # J
 
     const-wide/16 v0, 0xbb8
 
@@ -574,7 +554,6 @@
 
 .method public isOverWarning(J)Z
     .locals 4
-    .param p1    # J
 
     iget-wide v0, p0, Landroid/net/NetworkPolicy;->warningBytes:J
 
@@ -715,8 +694,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 5
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     const/4 v1, 0x1
 

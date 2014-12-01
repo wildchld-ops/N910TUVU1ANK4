@@ -38,8 +38,6 @@
 
 .method synthetic constructor <init>(Lcom/ipsec/client/IPsecClient;Lcom/ipsec/client/IPsecClient$1;)V
     .locals 0
-    .param p1    # Lcom/ipsec/client/IPsecClient;
-    .param p2    # Lcom/ipsec/client/IPsecClient$1;
 
     invoke-direct {p0, p1}, Lcom/ipsec/client/IPsecClient$IPsecServiceConnection;-><init>(Lcom/ipsec/client/IPsecClient;)V
 
@@ -50,8 +48,6 @@
 # virtual methods
 .method public onServiceConnected(Landroid/content/ComponentName;Landroid/os/IBinder;)V
     .locals 12
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Landroid/os/IBinder;
 
     const/4 v11, 0x0
 
@@ -414,7 +410,6 @@
 
 .method public onServiceDisconnected(Landroid/content/ComponentName;)V
     .locals 8
-    .param p1    # Landroid/content/ComponentName;
 
     const/4 v7, 0x0
 

@@ -148,8 +148,6 @@
 
 .method static synthetic access$000(Lcom/android/server/analytics/data/collection/logcat/LogcatDataCollector;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/server/analytics/data/collection/logcat/LogcatDataCollector;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/analytics/data/collection/logcat/LogcatDataCollector;->invokeLogCollectorCallback(Ljava/lang/String;)V
 
@@ -158,7 +156,6 @@
 
 .method private getFilterSpecs(I)Ljava/util/List;
     .locals 9
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -269,9 +266,6 @@
 
 .method private internalStartLogCollection(IZLcom/android/server/analytics/data/collection/logcat/LogcatDataCollector$MergeProcessor;)V
     .locals 7
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # Lcom/android/server/analytics/data/collection/logcat/LogcatDataCollector$MergeProcessor;
 
     iput p1, p0, Lcom/android/server/analytics/data/collection/logcat/LogcatDataCollector;->mLogGroups:I
 
@@ -312,7 +306,6 @@
 
 .method private invokeLogCollectorCallback(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     iget-object v3, p0, Lcom/android/server/analytics/data/collection/logcat/LogcatDataCollector;->mParser:Lcom/android/server/analytics/data/collection/logcat/LogcatReader$LogcatRecordParser;
 
@@ -459,7 +452,6 @@
 
 .method private supportedLogGroups(I)Z
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/server/analytics/data/collection/logcat/LogcatDataCollector;->getSupportedLogGroups()I
 
@@ -500,7 +492,6 @@
 
 .method public registerLogCollectorCallback(Lcom/sec/analytics/data/collection/serviceif/LogCollector$LogCollectorCallback;)V
     .locals 0
-    .param p1    # Lcom/sec/analytics/data/collection/serviceif/LogCollector$LogCollectorCallback;
 
     iput-object p1, p0, Lcom/android/server/analytics/data/collection/logcat/LogcatDataCollector;->mCallback:Lcom/sec/analytics/data/collection/serviceif/LogCollector$LogCollectorCallback;
 
@@ -509,7 +500,6 @@
 
 .method public restartLogCollection(I)V
     .locals 8
-    .param p1    # I
 
     const/4 v7, 0x1
 
@@ -631,7 +621,6 @@
 
 .method public startLogCollection(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -699,7 +688,6 @@
 
 .method public unregisterLogCollectorCallback(Lcom/sec/analytics/data/collection/serviceif/LogCollector$LogCollectorCallback;)V
     .locals 1
-    .param p1    # Lcom/sec/analytics/data/collection/serviceif/LogCollector$LogCollectorCallback;
 
     const/4 v0, 0x0
 

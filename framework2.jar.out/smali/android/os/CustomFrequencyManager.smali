@@ -131,8 +131,6 @@
 
 .method public constructor <init>(Landroid/os/ICustomFrequencyManager;Landroid/os/Handler;)V
     .locals 1
-    .param p1    # Landroid/os/ICustomFrequencyManager;
-    .param p2    # Landroid/os/Handler;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -149,7 +147,6 @@
 
 .method static synthetic access$000(Ljava/lang/Exception;)V
     .locals 0
-    .param p0    # Ljava/lang/Exception;
 
     invoke-static {p0}, Landroid/os/CustomFrequencyManager;->printExceptionTrace(Ljava/lang/Exception;)V
 
@@ -166,7 +163,6 @@
 
 .method static synthetic access$202(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Landroid/os/CustomFrequencyManager;->infinitGPUServing:Z
 
@@ -175,7 +171,6 @@
 
 .method static synthetic access$302(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Landroid/os/CustomFrequencyManager;->infinitSysBusReqServing:Z
 
@@ -184,7 +179,6 @@
 
 .method static synthetic access$402(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Landroid/os/CustomFrequencyManager;->infinitLCDFrameReqServing:Z
 
@@ -193,7 +187,6 @@
 
 .method static synthetic access$502(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Landroid/os/CustomFrequencyManager;->infinitCPUCoreServing:Z
 
@@ -202,7 +195,6 @@
 
 .method static synthetic access$602(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Landroid/os/CustomFrequencyManager;->infinitCPUBoostServing:Z
 
@@ -244,8 +236,6 @@
 
 .method public static logOnEng(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     sget-boolean v0, Landroid/os/CustomFrequencyManager;->DEBUG:Z
 
@@ -259,10 +249,6 @@
 
 .method private newFrequencyRequest(IIJLjava/lang/String;)Landroid/os/CustomFrequencyManager$FrequencyRequest;
     .locals 7
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
-    .param p5    # Ljava/lang/String;
 
     const-string v0, "CustomFrequencyManager"
 
@@ -481,7 +467,6 @@
 
 .method private static printExceptionTrace(Ljava/lang/Exception;)V
     .locals 1
-    .param p0    # Ljava/lang/Exception;
 
     sget-boolean v0, Landroid/os/CustomFrequencyManager;->DEBUG:Z
 
@@ -497,7 +482,6 @@
 # virtual methods
 .method public getRemainUsageTime(I)I
     .locals 3
-    .param p1    # I
 
     const/4 v1, -0x1
 
@@ -754,7 +738,6 @@
 
 .method public mpdUpdate(I)V
     .locals 4
-    .param p1    # I
 
     iget-object v1, p0, Landroid/os/CustomFrequencyManager;->mService:Landroid/os/ICustomFrequencyManager;
 
@@ -805,11 +788,6 @@
 
 .method public newFrequencyRequest(IIJLjava/lang/String;Landroid/content/Context;)Landroid/os/CustomFrequencyManager$FrequencyRequest;
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
-    .param p5    # Ljava/lang/String;
-    .param p6    # Landroid/content/Context;
 
     sget-object v2, Landroid/os/CustomFrequencyManager;->lock:Ljava/lang/Object;
 
@@ -842,8 +820,6 @@
 
 .method public notifyWmAniationState(JZ)V
     .locals 2
-    .param p1    # J
-    .param p3    # Z
 
     iget-object v1, p0, Landroid/os/CustomFrequencyManager;->mService:Landroid/os/ICustomFrequencyManager;
 
@@ -872,7 +848,6 @@
 
 .method public onTopAppChanged(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v1, p0, Landroid/os/CustomFrequencyManager;->mService:Landroid/os/ICustomFrequencyManager;
 
@@ -917,8 +892,6 @@
 
 .method public requestCPUUpdate(II)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     iget-object v1, p0, Landroid/os/CustomFrequencyManager;->mService:Landroid/os/ICustomFrequencyManager;
 
@@ -979,8 +952,6 @@
 
 .method public reviewPackage(Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v1, p0, Landroid/os/CustomFrequencyManager;->mService:Landroid/os/ICustomFrequencyManager;
 
@@ -1009,8 +980,6 @@
 
 .method public sendCommandToSSRM(Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v1, p0, Landroid/os/CustomFrequencyManager;->mService:Landroid/os/ICustomFrequencyManager;
 
@@ -1039,7 +1008,6 @@
 
 .method public setHglPolicy(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Landroid/os/CustomFrequencyManager;->mService:Landroid/os/ICustomFrequencyManager;
 

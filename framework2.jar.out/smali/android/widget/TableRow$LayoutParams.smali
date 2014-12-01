@@ -63,7 +63,6 @@
 
 .method public constructor <init>(I)V
     .locals 0
-    .param p1    # I
 
     invoke-direct {p0}, Landroid/widget/TableRow$LayoutParams;-><init>()V
 
@@ -74,8 +73,6 @@
 
 .method public constructor <init>(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Landroid/widget/LinearLayout$LayoutParams;-><init>(II)V
 
@@ -98,9 +95,6 @@
 
 .method public constructor <init>(IIF)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # F
 
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/LinearLayout$LayoutParams;-><init>(IIF)V
 
@@ -123,8 +117,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v3, 0x1
 
@@ -172,7 +164,6 @@
 
 .method public constructor <init>(Landroid/view/ViewGroup$LayoutParams;)V
     .locals 1
-    .param p1    # Landroid/view/ViewGroup$LayoutParams;
 
     invoke-direct {p0, p1}, Landroid/widget/LinearLayout$LayoutParams;-><init>(Landroid/view/ViewGroup$LayoutParams;)V
 
@@ -187,7 +178,6 @@
 
 .method public constructor <init>(Landroid/view/ViewGroup$MarginLayoutParams;)V
     .locals 1
-    .param p1    # Landroid/view/ViewGroup$MarginLayoutParams;
 
     invoke-direct {p0, p1}, Landroid/widget/LinearLayout$LayoutParams;-><init>(Landroid/view/ViewGroup$MarginLayoutParams;)V
 
@@ -202,7 +192,6 @@
 
 .method static synthetic access$200(Landroid/widget/TableRow$LayoutParams;)[I
     .locals 1
-    .param p0    # Landroid/widget/TableRow$LayoutParams;
 
     iget-object v0, p0, Landroid/widget/TableRow$LayoutParams;->mOffset:[I
 
@@ -213,9 +202,6 @@
 # virtual methods
 .method protected setBaseAttributes(Landroid/content/res/TypedArray;II)V
     .locals 1
-    .param p1    # Landroid/content/res/TypedArray;
-    .param p2    # I
-    .param p3    # I
 
     invoke-virtual {p1, p2}, Landroid/content/res/TypedArray;->hasValue(I)Z
 

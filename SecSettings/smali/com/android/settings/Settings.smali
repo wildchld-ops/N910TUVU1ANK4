@@ -3770,7 +3770,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/Settings;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/Settings;
 
     iget-boolean v0, p0, Lcom/android/settings/Settings;->mBatteryPresent:Z
 
@@ -3779,8 +3778,6 @@
 
 .method static synthetic access$002(Lcom/android/settings/Settings;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/Settings;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/Settings;->mBatteryPresent:Z
 
@@ -3789,8 +3786,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/Settings;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/settings/Settings;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/settings/Settings;->switchToParent(Ljava/lang/String;)V
 
@@ -3799,7 +3794,6 @@
 
 .method static synthetic access$1200(Lcom/android/settings/Settings;)Landroid/support/v4/view/ViewPager;
     .locals 1
-    .param p0    # Lcom/android/settings/Settings;
 
     iget-object v0, p0, Lcom/android/settings/Settings;->pager:Landroid/support/v4/view/ViewPager;
 
@@ -3808,8 +3802,6 @@
 
 .method static synthetic access$1302(Lcom/android/settings/Settings;Landroid/preference/PreferenceActivity$Header;)Landroid/preference/PreferenceActivity$Header;
     .locals 0
-    .param p0    # Lcom/android/settings/Settings;
-    .param p1    # Landroid/preference/PreferenceActivity$Header;
 
     iput-object p1, p0, Lcom/android/settings/Settings;->mFirstHeader:Landroid/preference/PreferenceActivity$Header;
 
@@ -3818,8 +3810,6 @@
 
 .method static synthetic access$1402(Lcom/android/settings/Settings;Landroid/preference/PreferenceActivity$Header;)Landroid/preference/PreferenceActivity$Header;
     .locals 0
-    .param p0    # Lcom/android/settings/Settings;
-    .param p1    # Landroid/preference/PreferenceActivity$Header;
 
     iput-object p1, p0, Lcom/android/settings/Settings;->mLastHeader:Landroid/preference/PreferenceActivity$Header;
 
@@ -3836,7 +3826,6 @@
 
 .method static synthetic access$1600(Lcom/android/settings/Settings;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/Settings;
 
     iget-boolean v0, p0, Lcom/android/settings/Settings;->mOpenSearchHierarchy:Z
 
@@ -3877,7 +3866,6 @@
 
 .method static synthetic access$2302(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/settings/Settings;->mDirectSettingEnabler:Z
 
@@ -3910,7 +3898,6 @@
 
 .method static synthetic access$2602(I)I
     .locals 0
-    .param p0    # I
 
     sput p0, Lcom/android/settings/Settings;->mWifiSummaryId:I
 
@@ -3919,7 +3906,6 @@
 
 .method static synthetic access$2700(Lcom/android/settings/Settings;)I
     .locals 1
-    .param p0    # Lcom/android/settings/Settings;
 
     iget v0, p0, Lcom/android/settings/Settings;->currentSoundProfile:I
 
@@ -3928,8 +3914,6 @@
 
 .method static synthetic access$2702(Lcom/android/settings/Settings;I)I
     .locals 0
-    .param p0    # Lcom/android/settings/Settings;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/settings/Settings;->currentSoundProfile:I
 
@@ -3938,7 +3922,6 @@
 
 .method static synthetic access$2800(Lcom/android/settings/Settings;)I
     .locals 1
-    .param p0    # Lcom/android/settings/Settings;
 
     iget v0, p0, Lcom/android/settings/Settings;->prevSoundProfile:I
 
@@ -3947,8 +3930,6 @@
 
 .method static synthetic access$2802(Lcom/android/settings/Settings;I)I
     .locals 0
-    .param p0    # Lcom/android/settings/Settings;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/settings/Settings;->prevSoundProfile:I
 
@@ -3957,7 +3938,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/Settings;)Landroid/preference/PreferenceActivity$Header;
     .locals 1
-    .param p0    # Lcom/android/settings/Settings;
 
     iget-object v0, p0, Lcom/android/settings/Settings;->mParentHeader:Landroid/preference/PreferenceActivity$Header;
 
@@ -3966,8 +3946,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/Settings;Ljava/util/List;)V
     .locals 0
-    .param p0    # Lcom/android/settings/Settings;
-    .param p1    # Ljava/util/List;
 
     invoke-direct {p0, p1}, Lcom/android/settings/Settings;->updateHeaderList(Ljava/util/List;)V
 
@@ -4201,7 +4179,6 @@
 
 .method private getPersonalIntent(Landroid/content/ComponentName;)Landroid/content/Intent;
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -5143,7 +5120,6 @@
 
 .method private getVoiceControlIntent(Landroid/preference/PreferenceActivity$Header;)Z
     .locals 6
-    .param p1    # Landroid/preference/PreferenceActivity$Header;
 
     const/4 v4, 0x1
 
@@ -6074,7 +6050,6 @@
 
 .method private switchFragmentClass(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     move-object v0, p1
 
@@ -6100,7 +6075,6 @@
 
 .method private switchToHeaderLocal(Landroid/preference/PreferenceActivity$Header;)V
     .locals 1
-    .param p1    # Landroid/preference/PreferenceActivity$Header;
 
     const/4 v0, 0x1
 
@@ -6237,7 +6211,6 @@
 
 .method private switchTopLevelHeaderId(I)I
     .locals 2
-    .param p1    # I
 
     const/4 v0, -0x1
 
@@ -10646,7 +10619,6 @@
 # virtual methods
 .method public dispatchKeyEvent(Landroid/view/KeyEvent;)Z
     .locals 3
-    .param p1    # Landroid/view/KeyEvent;
 
     invoke-static {p0}, Lcom/android/settings/guide/GuideFragment;->isInGuideMode(Landroid/app/Activity;)Z
 
@@ -10799,7 +10771,6 @@
 
 .method protected getStartingFragmentClass(Landroid/content/Intent;)Ljava/lang/String;
     .locals 2
-    .param p1    # Landroid/content/Intent;
 
     iget-object v1, p0, Lcom/android/settings/Settings;->mFragmentClass:Ljava/lang/String;
 
@@ -10885,7 +10856,6 @@
 
 .method public highlightHeader(I)V
     .locals 4
-    .param p1    # I
 
     if-eqz p1, :cond_0
 
@@ -10937,7 +10907,6 @@
 
 .method public highlightHeaderWithoutScroll(I)V
     .locals 4
-    .param p1    # I
 
     if-eqz p1, :cond_0
 
@@ -10973,7 +10942,6 @@
 
 .method protected isValidFragment(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -11012,7 +10980,6 @@
 
 .method public onAccountsUpdated([Landroid/accounts/Account;)V
     .locals 1
-    .param p1    # [Landroid/accounts/Account;
 
     iget-object v0, p0, Lcom/android/settings/Settings;->mAuthenticatorHelper:Lcom/android/settings/accounts/AuthenticatorHelper;
 
@@ -11029,9 +10996,6 @@
 
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const/16 v4, 0x1610
 
@@ -11118,7 +11082,6 @@
 
 .method public onAttachFragment(Landroid/app/Fragment;)V
     .locals 1
-    .param p1    # Landroid/app/Fragment;
 
     invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onAttachFragment(Landroid/app/Fragment;)V
 
@@ -11853,10 +11816,6 @@
 
 .method public onBuildStartFragmentIntent(Ljava/lang/String;Landroid/os/Bundle;II)Landroid/content/Intent;
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Bundle;
-    .param p3    # I
-    .param p4    # I
 
     const/4 v9, 0x0
 
@@ -15328,8 +15287,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/16 v0, 0x54
 
@@ -15368,8 +15325,6 @@
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     invoke-super {p0, p1, p2}, Landroid/preference/PreferenceActivity;->onKeyUp(ILandroid/view/KeyEvent;)Z
 
@@ -15397,10 +15352,6 @@
 
 .method protected onListItemClick(Landroid/widget/ListView;Landroid/view/View;IJ)V
     .locals 3
-    .param p1    # Landroid/widget/ListView;
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
 
     invoke-virtual {p2}, Landroid/view/View;->getId()I
 
@@ -15506,7 +15457,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 4
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v3, 0x0
 
@@ -16039,7 +15989,6 @@
 
 .method protected onRestoreInstanceState(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     const-wide/16 v2, -0x1
 
@@ -16345,7 +16294,6 @@
 
 .method protected onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onSaveInstanceState(Landroid/os/Bundle;)V
 
@@ -16459,7 +16407,6 @@
 
 .method public setListAdapter(Landroid/widget/ListAdapter;)V
     .locals 4
-    .param p1    # Landroid/widget/ListAdapter;
 
     if-nez p1, :cond_0
 
@@ -16496,7 +16443,6 @@
 
 .method public setSearchHierarchyOpen(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/Settings;->mOpenSearchHierarchy:Z
 
@@ -16505,7 +16451,6 @@
 
 .method public shouldUpRecreateTask(Landroid/content/Intent;)Z
     .locals 2
-    .param p1    # Landroid/content/Intent;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -16522,12 +16467,6 @@
 
 .method public startWithFragment(Ljava/lang/String;Landroid/os/Bundle;Landroid/app/Fragment;III)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Bundle;
-    .param p3    # Landroid/app/Fragment;
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     const/16 v5, 0x160f
 

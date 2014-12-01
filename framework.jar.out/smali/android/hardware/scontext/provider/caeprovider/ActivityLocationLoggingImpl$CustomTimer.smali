@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Landroid/hardware/scontext/provider/caeprovider/ActivityLocationLoggingImpl;Landroid/hardware/scontext/provider/caeprovider/ActivityLocationLoggingImpl$1;)V
     .locals 0
-    .param p1    # Landroid/hardware/scontext/provider/caeprovider/ActivityLocationLoggingImpl;
-    .param p2    # Landroid/hardware/scontext/provider/caeprovider/ActivityLocationLoggingImpl$1;
 
     invoke-direct {p0, p1}, Landroid/hardware/scontext/provider/caeprovider/ActivityLocationLoggingImpl$CustomTimer;-><init>(Landroid/hardware/scontext/provider/caeprovider/ActivityLocationLoggingImpl;)V
 

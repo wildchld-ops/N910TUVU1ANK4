@@ -308,9 +308,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;FF)V
     .locals 12
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # F
-    .param p3    # F
 
     const/4 v11, 0x0
 
@@ -621,7 +618,6 @@
 
 .method static synthetic access$000(Lcom/sec/android/app/camera/glwidget/TwGLAudioRecordIndicator;)[I
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLAudioRecordIndicator;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLAudioRecordIndicator;->mMicImageArray:[I
 
@@ -630,7 +626,6 @@
 
 .method static synthetic access$100(Lcom/sec/android/app/camera/glwidget/TwGLAudioRecordIndicator;)Lcom/sec/android/glview/TwGLImage;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLAudioRecordIndicator;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLAudioRecordIndicator;->mRecordAmpIndicatorMicImage:Lcom/sec/android/glview/TwGLImage;
 
@@ -690,7 +685,6 @@
 
 .method public setRecoringAmplitude([I)V
     .locals 5
-    .param p1    # [I
 
     const/4 v4, 0x5
 

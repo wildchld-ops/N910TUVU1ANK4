@@ -29,8 +29,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/widget/Switch;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/widget/Switch;
 
     const/4 v2, 0x0
 
@@ -73,8 +71,6 @@
 
 .method private putIntToFile(Ljava/lang/String;Ljava/lang/String;)I
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -275,8 +271,6 @@
 # virtual methods
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 6
-    .param p1    # Landroid/widget/CompoundButton;
-    .param p2    # Z
 
     const/4 v5, 0x1
 
@@ -386,7 +380,6 @@
 
 .method public setSwitch(Landroid/widget/Switch;)V
     .locals 5
-    .param p1    # Landroid/widget/Switch;
 
     const/4 v4, 0x0
 

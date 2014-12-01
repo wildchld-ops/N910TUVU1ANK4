@@ -24,7 +24,6 @@
 # virtual methods
 .method public onCancel(Landroid/content/DialogInterface;)V
     .locals 1
-    .param p1    # Landroid/content/DialogInterface;
 
     iget-object v0, p0, Lcom/android/settings/safetycare/SafetyCareSettings$7;->this$0:Lcom/android/settings/safetycare/SafetyCareSettings;
 

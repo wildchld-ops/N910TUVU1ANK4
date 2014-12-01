@@ -60,7 +60,6 @@
 
 .method public getNaturalHeight(I)I
     .locals 5
-    .param p1    # I
 
     iget-object v2, p0, Lcom/android/systemui/ExpandHelper$ViewScaler;->mView:Landroid/view/View;
 
@@ -117,7 +116,6 @@
 
 .method public setHeight(F)V
     .locals 2
-    .param p1    # F
 
     iget-object v1, p0, Lcom/android/systemui/ExpandHelper$ViewScaler;->mView:Landroid/view/View;
 
@@ -142,7 +140,6 @@
 
 .method public setView(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     iput-object p1, p0, Lcom/android/systemui/ExpandHelper$ViewScaler;->mView:Landroid/view/View;
 

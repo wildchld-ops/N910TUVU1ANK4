@@ -27,28 +27,24 @@
 # virtual methods
 .method public onEnabledChanged(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method public onFontScaleChanged(F)V
     .locals 0
-    .param p1    # F
 
     return-void
 .end method
 
 .method public onLocaleChanged(Ljava/util/Locale;)V
     .locals 0
-    .param p1    # Ljava/util/Locale;
 
     return-void
 .end method
 
 .method public onUserStyleChanged(Landroid/view/accessibility/CaptioningManager$CaptionStyle;)V
     .locals 0
-    .param p1    # Landroid/view/accessibility/CaptioningManager$CaptionStyle;
 
     return-void
 .end method

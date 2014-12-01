@@ -63,7 +63,6 @@
 
 .method synthetic constructor <init>(Lcom/android/launcher2/PkgResCache$1;)V
     .locals 0
-    .param p1    # Lcom/android/launcher2/PkgResCache$1;
 
     invoke-direct {p0}, Lcom/android/launcher2/PkgResCache$PkgEntry;-><init>()V
 
@@ -72,7 +71,6 @@
 
 .method static synthetic access$000(Lcom/android/launcher2/PkgResCache$PkgEntry;)Landroid/util/SparseArray;
     .locals 1
-    .param p0    # Lcom/android/launcher2/PkgResCache$PkgEntry;
 
     iget-object v0, p0, Lcom/android/launcher2/PkgResCache$PkgEntry;->mBitmaps:Landroid/util/SparseArray;
 
@@ -81,7 +79,6 @@
 
 .method static synthetic access$200(Lcom/android/launcher2/PkgResCache$PkgEntry;)Landroid/util/SparseArray;
     .locals 1
-    .param p0    # Lcom/android/launcher2/PkgResCache$PkgEntry;
 
     iget-object v0, p0, Lcom/android/launcher2/PkgResCache$PkgEntry;->mStrings:Landroid/util/SparseArray;
 

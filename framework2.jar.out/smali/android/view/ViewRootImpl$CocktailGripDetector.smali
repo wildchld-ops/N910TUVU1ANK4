@@ -99,7 +99,6 @@
 
 .method public checkGrip(Landroid/view/MotionEvent;)Z
     .locals 5
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v1, 0x0
 

@@ -41,7 +41,6 @@
 
 .method synthetic constructor <init>(Lcom/android/settings/GridSettings$1;)V
     .locals 0
-    .param p1    # Lcom/android/settings/GridSettings$1;
 
     invoke-direct {p0}, Lcom/android/settings/GridSettings$HeaderAdapter$HeaderViewHolder;-><init>()V
 

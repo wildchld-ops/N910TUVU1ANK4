@@ -36,7 +36,6 @@
 # virtual methods
 .method public onResult(Ljava/lang/Integer;)V
     .locals 2
-    .param p1    # Ljava/lang/Integer;
 
     invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
 

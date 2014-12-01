@@ -54,8 +54,6 @@
 # virtual methods
 .method public edmAddOrUpdate(Landroid/net/wifi/WifiConfiguration;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Landroid/net/wifi/WifiConfiguration;
-    .param p2    # Ljava/lang/String;
 
     :try_start_0
     invoke-static {}, Landroid/sec/enterprise/EnterpriseDeviceManager$EDMProxyServiceHelper;->getService()Landroid/sec/enterprise/IEDMProxy;
@@ -120,8 +118,6 @@
 
 .method public getAllowUserProfiles(ZI)Z
     .locals 4
-    .param p1    # Z
-    .param p2    # I
 
     :try_start_0
     invoke-static {}, Landroid/sec/enterprise/EnterpriseDeviceManager$EDMProxyServiceHelper;->getService()Landroid/sec/enterprise/IEDMProxy;
@@ -352,7 +348,6 @@
 
 .method public getWifiSsidRestrictionList(I)Ljava/util/List;
     .locals 4
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -432,7 +427,6 @@
 
 .method public removeNetworkConfiguration(Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     invoke-static {}, Landroid/sec/enterprise/EnterpriseDeviceManager$EDMProxyServiceHelper;->getService()Landroid/sec/enterprise/IEDMProxy;

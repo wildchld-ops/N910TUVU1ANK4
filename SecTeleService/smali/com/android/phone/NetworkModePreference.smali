@@ -1080,7 +1080,7 @@
 
     if-eqz v0, :cond_c
 
-    invoke-virtual {p0}, Landroid/preference/ListPreference;->getValue()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/android/phone/NetworkModePreference;->getValue()Ljava/lang/String;
 
     move-result-object v0
 
@@ -1158,7 +1158,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0, p0}, Landroid/app/Dialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
+    invoke-virtual {v0, p0}, Landroid/app/AlertDialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
     goto/16 :goto_1
 
@@ -1239,7 +1239,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0, p0}, Landroid/app/Dialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
+    invoke-virtual {v0, p0}, Landroid/app/AlertDialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
     goto/16 :goto_1
 
@@ -1320,7 +1320,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0, p0}, Landroid/app/Dialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
+    invoke-virtual {v0, p0}, Landroid/app/AlertDialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
     goto/16 :goto_1
 
@@ -1351,7 +1351,7 @@
 
     invoke-static {v0, v1, v4}, Lcom/android/phone/Log;->i(Ljava/lang/String;Ljava/lang/String;Z)I
 
-    invoke-virtual {p0}, Landroid/preference/ListPreference;->getValue()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/android/phone/NetworkModePreference;->getValue()Ljava/lang/String;
 
     move-result-object v0
 
@@ -1441,7 +1441,7 @@
     goto/16 :goto_1
 
     :cond_f
-    invoke-virtual {p0}, Landroid/preference/ListPreference;->getValue()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/android/phone/NetworkModePreference;->getValue()Ljava/lang/String;
 
     move-result-object v0
 
@@ -1491,12 +1491,12 @@
 
     move-result-object v0
 
-    invoke-virtual {v0, p0}, Landroid/app/Dialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
+    invoke-virtual {v0, p0}, Landroid/app/AlertDialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
     goto/16 :goto_1
 
     :cond_10
-    invoke-virtual {p0}, Landroid/preference/ListPreference;->getValue()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/android/phone/NetworkModePreference;->getValue()Ljava/lang/String;
 
     move-result-object v0
 
@@ -1573,7 +1573,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0, p0}, Landroid/app/Dialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
+    invoke-virtual {v0, p0}, Landroid/app/AlertDialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
     goto/16 :goto_1
 
@@ -1602,7 +1602,7 @@
 
     invoke-static {v0, v1, v4}, Lcom/android/phone/Log;->i(Ljava/lang/String;Ljava/lang/String;Z)I
 
-    invoke-virtual {p0, v5}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {p0, v5}, Lcom/android/phone/NetworkModePreference;->setEnabled(Z)V
 
     invoke-static {}, Lcom/sec/android/app/CscFeature;->getInstance()Lcom/sec/android/app/CscFeature;
 
@@ -1793,7 +1793,7 @@
 
     iget-object v2, p0, Lcom/android/phone/NetworkModePreference;->mHandler:Lcom/android/phone/NetworkModePreference$MyHandler;
 
-    invoke-virtual {v2, v4}, Landroid/os/Handler;->obtainMessage(I)Landroid/os/Message;
+    invoke-virtual {v2, v4}, Lcom/android/phone/NetworkModePreference$MyHandler;->obtainMessage(I)Landroid/os/Message;
 
     move-result-object v2
 
@@ -2638,11 +2638,11 @@
 
     const v0, 0x7f08001d
 
-    invoke-virtual {p0, v0}, Landroid/preference/ListPreference;->setEntries(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/NetworkModePreference;->setEntries(I)V
 
     const v0, 0x7f08001e
 
-    invoke-virtual {p0, v0}, Landroid/preference/ListPreference;->setEntryValues(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/NetworkModePreference;->setEntryValues(I)V
 
     :goto_0
     return-void
@@ -2658,11 +2658,11 @@
 
     const v0, 0x7f080021
 
-    invoke-virtual {p0, v0}, Landroid/preference/ListPreference;->setEntries(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/NetworkModePreference;->setEntries(I)V
 
     const v0, 0x7f080022
 
-    invoke-virtual {p0, v0}, Landroid/preference/ListPreference;->setEntryValues(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/NetworkModePreference;->setEntryValues(I)V
 
     goto :goto_0
 
@@ -2677,11 +2677,11 @@
 
     const v0, 0x7f08001b
 
-    invoke-virtual {p0, v0}, Landroid/preference/ListPreference;->setEntries(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/NetworkModePreference;->setEntries(I)V
 
     const v0, 0x7f08001c
 
-    invoke-virtual {p0, v0}, Landroid/preference/ListPreference;->setEntryValues(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/NetworkModePreference;->setEntryValues(I)V
 
     goto :goto_0
 
@@ -2696,11 +2696,11 @@
 
     const v0, 0x7f080045
 
-    invoke-virtual {p0, v0}, Landroid/preference/ListPreference;->setEntries(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/NetworkModePreference;->setEntries(I)V
 
     const v0, 0x7f080046
 
-    invoke-virtual {p0, v0}, Landroid/preference/ListPreference;->setEntryValues(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/NetworkModePreference;->setEntryValues(I)V
 
     goto :goto_0
 
@@ -2715,11 +2715,11 @@
 
     const v0, 0x7f080049
 
-    invoke-virtual {p0, v0}, Landroid/preference/ListPreference;->setEntries(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/NetworkModePreference;->setEntries(I)V
 
     const v0, 0x7f08004a
 
-    invoke-virtual {p0, v0}, Landroid/preference/ListPreference;->setEntryValues(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/NetworkModePreference;->setEntryValues(I)V
 
     goto :goto_0
 
@@ -2734,11 +2734,11 @@
 
     const v0, 0x7f080037
 
-    invoke-virtual {p0, v0}, Landroid/preference/ListPreference;->setEntries(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/NetworkModePreference;->setEntries(I)V
 
     const v0, 0x7f080038
 
-    invoke-virtual {p0, v0}, Landroid/preference/ListPreference;->setEntryValues(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/NetworkModePreference;->setEntryValues(I)V
 
     goto :goto_0
 
@@ -2753,11 +2753,11 @@
 
     const v0, 0x7f080039
 
-    invoke-virtual {p0, v0}, Landroid/preference/ListPreference;->setEntries(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/NetworkModePreference;->setEntries(I)V
 
     const v0, 0x7f08003a
 
-    invoke-virtual {p0, v0}, Landroid/preference/ListPreference;->setEntryValues(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/NetworkModePreference;->setEntryValues(I)V
 
     goto :goto_0
 
@@ -2797,11 +2797,11 @@
     :cond_7
     const v0, 0x7f08003b
 
-    invoke-virtual {p0, v0}, Landroid/preference/ListPreference;->setEntries(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/NetworkModePreference;->setEntries(I)V
 
     const v0, 0x7f08003c
 
-    invoke-virtual {p0, v0}, Landroid/preference/ListPreference;->setEntryValues(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/NetworkModePreference;->setEntryValues(I)V
 
     goto/16 :goto_0
 
@@ -2816,11 +2816,11 @@
 
     const v0, 0x7f08003f
 
-    invoke-virtual {p0, v0}, Landroid/preference/ListPreference;->setEntries(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/NetworkModePreference;->setEntries(I)V
 
     const v0, 0x7f080040
 
-    invoke-virtual {p0, v0}, Landroid/preference/ListPreference;->setEntryValues(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/NetworkModePreference;->setEntryValues(I)V
 
     goto/16 :goto_0
 
@@ -2835,22 +2835,22 @@
 
     const v0, 0x7f080019
 
-    invoke-virtual {p0, v0}, Landroid/preference/ListPreference;->setEntries(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/NetworkModePreference;->setEntries(I)V
 
     const v0, 0x7f08001a
 
-    invoke-virtual {p0, v0}, Landroid/preference/ListPreference;->setEntryValues(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/NetworkModePreference;->setEntryValues(I)V
 
     goto/16 :goto_0
 
     :cond_a
     const v0, 0x7f080017
 
-    invoke-virtual {p0, v0}, Landroid/preference/ListPreference;->setEntries(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/NetworkModePreference;->setEntries(I)V
 
     const v0, 0x7f080018
 
-    invoke-virtual {p0, v0}, Landroid/preference/ListPreference;->setEntryValues(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/NetworkModePreference;->setEntryValues(I)V
 
     goto/16 :goto_0
 .end method
@@ -2868,11 +2868,11 @@
 
     const v0, 0x7f080029
 
-    invoke-virtual {p0, v0}, Landroid/preference/ListPreference;->setEntries(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/NetworkModePreference;->setEntries(I)V
 
     const v0, 0x7f08002a
 
-    invoke-virtual {p0, v0}, Landroid/preference/ListPreference;->setEntryValues(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/NetworkModePreference;->setEntryValues(I)V
 
     :goto_0
     return-void
@@ -2888,11 +2888,11 @@
 
     const v0, 0x7f08001f
 
-    invoke-virtual {p0, v0}, Landroid/preference/ListPreference;->setEntries(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/NetworkModePreference;->setEntries(I)V
 
     const v0, 0x7f080020
 
-    invoke-virtual {p0, v0}, Landroid/preference/ListPreference;->setEntryValues(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/NetworkModePreference;->setEntryValues(I)V
 
     goto :goto_0
 
@@ -2907,11 +2907,11 @@
 
     const v0, 0x7f08002b
 
-    invoke-virtual {p0, v0}, Landroid/preference/ListPreference;->setEntries(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/NetworkModePreference;->setEntries(I)V
 
     const v0, 0x7f08002c
 
-    invoke-virtual {p0, v0}, Landroid/preference/ListPreference;->setEntryValues(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/NetworkModePreference;->setEntryValues(I)V
 
     goto :goto_0
 
@@ -2926,11 +2926,11 @@
 
     const v0, 0x7f080017
 
-    invoke-virtual {p0, v0}, Landroid/preference/ListPreference;->setEntries(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/NetworkModePreference;->setEntries(I)V
 
     const v0, 0x7f080018
 
-    invoke-virtual {p0, v0}, Landroid/preference/ListPreference;->setEntryValues(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/NetworkModePreference;->setEntryValues(I)V
 
     goto :goto_0
 
@@ -2945,11 +2945,11 @@
 
     const v0, 0x7f080041
 
-    invoke-virtual {p0, v0}, Landroid/preference/ListPreference;->setEntries(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/NetworkModePreference;->setEntries(I)V
 
     const v0, 0x7f080042
 
-    invoke-virtual {p0, v0}, Landroid/preference/ListPreference;->setEntryValues(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/NetworkModePreference;->setEntryValues(I)V
 
     goto :goto_0
 
@@ -2964,11 +2964,11 @@
 
     const v0, 0x7f080043
 
-    invoke-virtual {p0, v0}, Landroid/preference/ListPreference;->setEntries(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/NetworkModePreference;->setEntries(I)V
 
     const v0, 0x7f080044
 
-    invoke-virtual {p0, v0}, Landroid/preference/ListPreference;->setEntryValues(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/NetworkModePreference;->setEntryValues(I)V
 
     goto :goto_0
 
@@ -2983,11 +2983,11 @@
 
     const v0, 0x7f080047
 
-    invoke-virtual {p0, v0}, Landroid/preference/ListPreference;->setEntries(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/NetworkModePreference;->setEntries(I)V
 
     const v0, 0x7f080048
 
-    invoke-virtual {p0, v0}, Landroid/preference/ListPreference;->setEntryValues(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/NetworkModePreference;->setEntryValues(I)V
 
     goto :goto_0
 
@@ -3002,11 +3002,11 @@
 
     const v0, 0x7f08002f
 
-    invoke-virtual {p0, v0}, Landroid/preference/ListPreference;->setEntries(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/NetworkModePreference;->setEntries(I)V
 
     const v0, 0x7f080030
 
-    invoke-virtual {p0, v0}, Landroid/preference/ListPreference;->setEntryValues(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/NetworkModePreference;->setEntryValues(I)V
 
     goto/16 :goto_0
 
@@ -3021,11 +3021,11 @@
 
     const v0, 0x7f080031
 
-    invoke-virtual {p0, v0}, Landroid/preference/ListPreference;->setEntries(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/NetworkModePreference;->setEntries(I)V
 
     const v0, 0x7f080032
 
-    invoke-virtual {p0, v0}, Landroid/preference/ListPreference;->setEntryValues(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/NetworkModePreference;->setEntryValues(I)V
 
     goto/16 :goto_0
 
@@ -3065,11 +3065,11 @@
     :cond_9
     const v0, 0x7f080033
 
-    invoke-virtual {p0, v0}, Landroid/preference/ListPreference;->setEntries(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/NetworkModePreference;->setEntries(I)V
 
     const v0, 0x7f080034
 
-    invoke-virtual {p0, v0}, Landroid/preference/ListPreference;->setEntryValues(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/NetworkModePreference;->setEntryValues(I)V
 
     goto/16 :goto_0
 
@@ -3084,11 +3084,11 @@
 
     const v0, 0x7f08003d
 
-    invoke-virtual {p0, v0}, Landroid/preference/ListPreference;->setEntries(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/NetworkModePreference;->setEntries(I)V
 
     const v0, 0x7f08003e
 
-    invoke-virtual {p0, v0}, Landroid/preference/ListPreference;->setEntryValues(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/NetworkModePreference;->setEntryValues(I)V
 
     goto/16 :goto_0
 
@@ -3103,11 +3103,11 @@
 
     const v0, 0x7f08002d
 
-    invoke-virtual {p0, v0}, Landroid/preference/ListPreference;->setEntries(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/NetworkModePreference;->setEntries(I)V
 
     const v0, 0x7f08002e
 
-    invoke-virtual {p0, v0}, Landroid/preference/ListPreference;->setEntryValues(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/NetworkModePreference;->setEntryValues(I)V
 
     goto/16 :goto_0
 
@@ -3122,11 +3122,11 @@
 
     const v0, 0x7f080023
 
-    invoke-virtual {p0, v0}, Landroid/preference/ListPreference;->setEntries(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/NetworkModePreference;->setEntries(I)V
 
     const v0, 0x7f080024
 
-    invoke-virtual {p0, v0}, Landroid/preference/ListPreference;->setEntryValues(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/NetworkModePreference;->setEntryValues(I)V
 
     goto/16 :goto_0
 
@@ -3141,11 +3141,11 @@
 
     const v0, 0x7f080025
 
-    invoke-virtual {p0, v0}, Landroid/preference/ListPreference;->setEntries(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/NetworkModePreference;->setEntries(I)V
 
     const v0, 0x7f080026
 
-    invoke-virtual {p0, v0}, Landroid/preference/ListPreference;->setEntryValues(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/NetworkModePreference;->setEntryValues(I)V
 
     goto/16 :goto_0
 
@@ -3160,22 +3160,22 @@
 
     const v0, 0x7f080035
 
-    invoke-virtual {p0, v0}, Landroid/preference/ListPreference;->setEntries(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/NetworkModePreference;->setEntries(I)V
 
     const v0, 0x7f080036
 
-    invoke-virtual {p0, v0}, Landroid/preference/ListPreference;->setEntryValues(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/NetworkModePreference;->setEntryValues(I)V
 
     goto/16 :goto_0
 
     :cond_f
     const v0, 0x7f080027
 
-    invoke-virtual {p0, v0}, Landroid/preference/ListPreference;->setEntries(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/NetworkModePreference;->setEntries(I)V
 
     const v0, 0x7f080028
 
-    invoke-virtual {p0, v0}, Landroid/preference/ListPreference;->setEntryValues(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/NetworkModePreference;->setEntryValues(I)V
 
     goto/16 :goto_0
 .end method
@@ -3382,13 +3382,13 @@
 
     move-result-object v1
 
-    invoke-virtual {p0, v1}, Landroid/preference/ListPreference;->findIndexOfValue(Ljava/lang/String;)I
+    invoke-virtual {p0, v1}, Lcom/android/phone/NetworkModePreference;->findIndexOfValue(Ljava/lang/String;)I
 
     move-result v1
 
     aget-object v0, v0, v1
 
-    invoke-virtual {p0, v0}, Landroid/preference/ListPreference;->setSummary(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/NetworkModePreference;->setSummary(Ljava/lang/CharSequence;)V
 
     :goto_0
     iget-object v0, p0, Lcom/android/phone/NetworkModePreference;->mPhoneV2:[Lcom/android/internal/telephony/Phone;
@@ -3401,7 +3401,7 @@
 
     iget-object v2, p0, Lcom/android/phone/NetworkModePreference;->mHandler:Lcom/android/phone/NetworkModePreference$MyHandler;
 
-    invoke-virtual {v2, v3}, Landroid/os/Handler;->obtainMessage(I)Landroid/os/Message;
+    invoke-virtual {v2, v3}, Lcom/android/phone/NetworkModePreference$MyHandler;->obtainMessage(I)Landroid/os/Message;
 
     move-result-object v2
 
@@ -3444,13 +3444,13 @@
 
     move-result-object v1
 
-    invoke-virtual {p0, v1}, Landroid/preference/ListPreference;->findIndexOfValue(Ljava/lang/String;)I
+    invoke-virtual {p0, v1}, Lcom/android/phone/NetworkModePreference;->findIndexOfValue(Ljava/lang/String;)I
 
     move-result v1
 
     aget-object v0, v0, v1
 
-    invoke-virtual {p0, v0}, Landroid/preference/ListPreference;->setSummary(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/NetworkModePreference;->setSummary(Ljava/lang/CharSequence;)V
 
     goto :goto_0
 
@@ -3471,13 +3471,13 @@
 
     move-result-object v1
 
-    invoke-virtual {p0, v1}, Landroid/preference/ListPreference;->findIndexOfValue(Ljava/lang/String;)I
+    invoke-virtual {p0, v1}, Lcom/android/phone/NetworkModePreference;->findIndexOfValue(Ljava/lang/String;)I
 
     move-result v1
 
     aget-object v0, v0, v1
 
-    invoke-virtual {p0, v0}, Landroid/preference/ListPreference;->setSummary(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/NetworkModePreference;->setSummary(Ljava/lang/CharSequence;)V
 
     goto :goto_0
 .end method
@@ -3560,7 +3560,7 @@
 
     invoke-static {v1, v2}, Lcom/android/phone/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-virtual {p0, v4}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {p0, v4}, Lcom/android/phone/NetworkModePreference;->setEnabled(Z)V
 
     :goto_1
     return-void
@@ -3616,7 +3616,7 @@
     if-nez v1, :cond_5
 
     :cond_2
-    invoke-virtual {p0, v4}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {p0, v4}, Lcom/android/phone/NetworkModePreference;->setEnabled(Z)V
 
     iget v1, p0, Lcom/android/phone/NetworkModePreference;->mActivePhone:I
 
@@ -3656,7 +3656,7 @@
     goto :goto_1
 
     :cond_5
-    invoke-virtual {p0, v5}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {p0, v5}, Lcom/android/phone/NetworkModePreference;->setEnabled(Z)V
 
     goto :goto_1
 .end method
@@ -3717,7 +3717,7 @@
     if-ne v2, v6, :cond_3
 
     :cond_0
-    invoke-virtual {p0, v5}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {p0, v5}, Lcom/android/phone/NetworkModePreference;->setEnabled(Z)V
 
     :goto_0
     invoke-static {}, Lcom/android/services/telephony/common/PhoneFeature;->isCHNCMCC()Z
@@ -3753,13 +3753,13 @@
     if-nez v2, :cond_2
 
     :cond_1
-    invoke-virtual {p0, v5}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {p0, v5}, Lcom/android/phone/NetworkModePreference;->setEnabled(Z)V
 
     :cond_2
     return-void
 
     :cond_3
-    invoke-virtual {p0, v6}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {p0, v6}, Lcom/android/phone/NetworkModePreference;->setEnabled(Z)V
 
     goto :goto_0
 .end method
@@ -3821,7 +3821,7 @@
     if-ne v0, v5, :cond_2
 
     :cond_1
-    invoke-virtual {p0, v4}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {p0, v4}, Lcom/android/phone/NetworkModePreference;->setEnabled(Z)V
 
     iput-boolean v5, p0, Lcom/android/phone/NetworkModePreference;->mIsActiveSimDisable:Z
 
@@ -3834,7 +3834,7 @@
 
     iget-object v3, p0, Lcom/android/phone/NetworkModePreference;->mHandler:Lcom/android/phone/NetworkModePreference$MyHandler;
 
-    invoke-virtual {v3, v4}, Landroid/os/Handler;->obtainMessage(I)Landroid/os/Message;
+    invoke-virtual {v3, v4}, Lcom/android/phone/NetworkModePreference$MyHandler;->obtainMessage(I)Landroid/os/Message;
 
     move-result-object v3
 
@@ -3882,7 +3882,7 @@
 
     iget-object v3, p0, Lcom/android/phone/NetworkModePreference;->mOtherHandler:Lcom/android/phone/NetworkModePreference$MyHandler2;
 
-    invoke-virtual {v3, v4}, Landroid/os/Handler;->obtainMessage(I)Landroid/os/Message;
+    invoke-virtual {v3, v4}, Lcom/android/phone/NetworkModePreference$MyHandler2;->obtainMessage(I)Landroid/os/Message;
 
     move-result-object v3
 
@@ -3898,7 +3898,7 @@
 
     iget-object v3, p0, Lcom/android/phone/NetworkModePreference;->mHandler:Lcom/android/phone/NetworkModePreference$MyHandler;
 
-    invoke-virtual {v3, v4}, Landroid/os/Handler;->obtainMessage(I)Landroid/os/Message;
+    invoke-virtual {v3, v4}, Lcom/android/phone/NetworkModePreference$MyHandler;->obtainMessage(I)Landroid/os/Message;
 
     move-result-object v3
 
@@ -3928,7 +3928,7 @@
 
     iget v2, p0, Lcom/android/phone/NetworkModePreference;->mNetworkType:I
 
-    invoke-virtual {p0}, Landroid/preference/ListPreference;->getValue()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/android/phone/NetworkModePreference;->getValue()Ljava/lang/String;
 
     move-result-object v3
 
@@ -4010,18 +4010,18 @@
 
     move-result-object v2
 
-    invoke-virtual {p0, v2}, Landroid/preference/ListPreference;->findIndexOfValue(Ljava/lang/String;)I
+    invoke-virtual {p0, v2}, Lcom/android/phone/NetworkModePreference;->findIndexOfValue(Ljava/lang/String;)I
 
     move-result v2
 
-    invoke-virtual {p0, v2}, Landroid/preference/ListPreference;->setValueIndex(I)V
+    invoke-virtual {p0, v2}, Lcom/android/phone/NetworkModePreference;->setValueIndex(I)V
 
     :cond_2
     :goto_0
     return-void
 
     :cond_3
-    invoke-virtual {p0}, Landroid/preference/ListPreference;->getValue()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/android/phone/NetworkModePreference;->getValue()Ljava/lang/String;
 
     move-result-object v2
 
@@ -4254,7 +4254,7 @@
 
     const/16 v3, 0x64
 
-    invoke-virtual {v2, v3}, Landroid/app/Activity;->showDialog(I)V
+    invoke-virtual {v2, v3}, Lcom/android/phone/MobileNetworkSettings;->showDialog(I)V
 
     iget-object v2, p0, Lcom/android/phone/NetworkModePreference;->mHandler:Lcom/android/phone/NetworkModePreference$MyHandler;
 
@@ -4264,7 +4264,7 @@
 
     const-wide/16 v4, 0x2710
 
-    invoke-virtual {v2, v3, v4, v5}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
+    invoke-virtual {v2, v3, v4, v5}, Lcom/android/phone/NetworkModePreference$MyHandler;->postDelayed(Ljava/lang/Runnable;J)Z
 
     goto/16 :goto_0
 
@@ -4455,7 +4455,7 @@
 
     const/16 v3, 0x64
 
-    invoke-virtual {v2, v3}, Landroid/app/Activity;->showDialog(I)V
+    invoke-virtual {v2, v3}, Lcom/android/phone/MobileNetworkSettings;->showDialog(I)V
 
     iget-object v2, p0, Lcom/android/phone/NetworkModePreference;->mHandler:Lcom/android/phone/NetworkModePreference$MyHandler;
 
@@ -4465,7 +4465,7 @@
 
     const-wide/16 v4, 0x2710
 
-    invoke-virtual {v2, v3, v4, v5}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
+    invoke-virtual {v2, v3, v4, v5}, Lcom/android/phone/NetworkModePreference$MyHandler;->postDelayed(Ljava/lang/Runnable;J)Z
 
     goto/16 :goto_0
 

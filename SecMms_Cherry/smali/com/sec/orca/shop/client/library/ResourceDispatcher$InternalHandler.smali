@@ -31,8 +31,6 @@
 # direct methods
 .method constructor <init>(Lcom/sec/orca/shop/client/library/ResourceDispatcher;Lcom/sec/orca/shop/client/library/ResourceDispatcher;Landroid/os/Looper;)V
     .locals 0
-    .param p2    # Lcom/sec/orca/shop/client/library/ResourceDispatcher;
-    .param p3    # Landroid/os/Looper;
 
     iput-object p1, p0, Lcom/sec/orca/shop/client/library/ResourceDispatcher$InternalHandler;->this$0:Lcom/sec/orca/shop/client/library/ResourceDispatcher;
 
@@ -53,7 +51,6 @@
 
 .method private requestRedraw(Lcom/sec/orca/shop/client/library/AbstractResourceDispatcherTask;Z)V
     .locals 1
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -97,7 +94,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 10
-    .param p1    # Landroid/os/Message;
 
     const/16 v8, 0x64
 
@@ -323,7 +319,6 @@
 
 .method runOnUiThread(Lcom/sec/orca/shop/client/library/AbstractResourceDispatcherTask;Ljava/util/concurrent/Callable;J)V
     .locals 3
-    .param p3    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

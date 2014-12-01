@@ -79,7 +79,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->dismiss()V
+    invoke-virtual {v0}, Landroid/app/AlertDialog;->dismiss()V
 
     # setter for: Lcom/android/phone/PhoneUtils;->mMmiDialog:Landroid/app/AlertDialog;
     invoke-static {v2}, Lcom/android/phone/PhoneUtils;->access$1502(Landroid/app/AlertDialog;)Landroid/app/AlertDialog;

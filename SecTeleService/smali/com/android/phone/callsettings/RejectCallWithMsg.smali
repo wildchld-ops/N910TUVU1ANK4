@@ -639,7 +639,7 @@
 
     invoke-virtual {v3, v4, v5}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/RejectCallWithMsg;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v4
 
@@ -784,7 +784,7 @@
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/RejectCallWithMsg;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -846,7 +846,7 @@
     if-eqz v0, :cond_0
 
     :try_start_0
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/RejectCallWithMsg;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
@@ -896,7 +896,7 @@
     .locals 3
     .param p1    # Ljava/lang/String;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/RejectCallWithMsg;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -918,7 +918,7 @@
 
     const-string v5, "_id desc"
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/RejectCallWithMsg;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -957,7 +957,7 @@
 
     const/4 v3, 0x3
 
-    invoke-virtual {v2, v3}, Landroid/widget/AbsListView;->setChoiceMode(I)V
+    invoke-virtual {v2, v3}, Landroid/widget/ListView;->setChoiceMode(I)V
 
     new-instance v2, Lcom/android/phone/callsettings/RejectCallWithMsg$ActionModeCallback;
 
@@ -971,7 +971,7 @@
 
     iget-object v3, p0, Lcom/android/phone/callsettings/RejectCallWithMsg;->mModeCallback:Lcom/android/phone/callsettings/RejectCallWithMsg$ActionModeCallback;
 
-    invoke-virtual {v2, v3}, Landroid/widget/AbsListView;->setMultiChoiceModeListener(Landroid/widget/AbsListView$MultiChoiceModeListener;)V
+    invoke-virtual {v2, v3}, Landroid/widget/ListView;->setMultiChoiceModeListener(Landroid/widget/AbsListView$MultiChoiceModeListener;)V
 
     const v2, 0x7f0a01f1
 
@@ -995,7 +995,7 @@
 
     iget-object v2, p0, Lcom/android/phone/callsettings/RejectCallWithMsg;->mSelectAll:Landroid/widget/LinearLayout;
 
-    invoke-virtual {v2, v4}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v2, v4}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
     const v2, 0x7f0a011a
 
@@ -1032,7 +1032,7 @@
 
     iget-object v2, p0, Lcom/android/phone/callsettings/RejectCallWithMsg;->mEmptyViewBackground:Landroid/widget/ImageView;
 
-    invoke-virtual {v2}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+    invoke-virtual {v2}, Landroid/widget/ImageView;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v1
 
@@ -1044,7 +1044,7 @@
 
     iget-object v2, p0, Lcom/android/phone/callsettings/RejectCallWithMsg;->mEmptyViewBackground:Landroid/widget/ImageView;
 
-    const v3, 0x7f02023a
+    const v3, 0x7f020239
 
     invoke-virtual {v2, v3}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -1059,7 +1059,7 @@
 
     iget-object v2, p0, Lcom/android/phone/callsettings/RejectCallWithMsg;->emptyText:Landroid/widget/FrameLayout;
 
-    invoke-virtual {v2, v4}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v2, v4}, Landroid/widget/FrameLayout;->setVisibility(I)V
 
     const/4 v2, 0x2
 
@@ -1067,12 +1067,12 @@
 
     iget-object v2, p0, Lcom/android/phone/callsettings/RejectCallWithMsg;->mListView:Landroid/widget/ListView;
 
-    invoke-virtual {v2, v5}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v2, v5}, Landroid/widget/ListView;->setVisibility(I)V
 
     :goto_1
     new-instance v2, Lcom/android/phone/callsettings/RejectCallWithMsg$RejectMessageAdapter;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/RejectCallWithMsg;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
 
@@ -1094,7 +1094,7 @@
 
     invoke-direct {v3, p0}, Lcom/android/phone/callsettings/RejectCallWithMsg$3;-><init>(Lcom/android/phone/callsettings/RejectCallWithMsg;)V
 
-    invoke-virtual {v2, v3}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v2, v3}, Landroid/widget/LinearLayout;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     const-string v2, "add_panel"
 
@@ -1120,25 +1120,25 @@
 
     invoke-direct {v3, p0}, Lcom/android/phone/callsettings/RejectCallWithMsg$4;-><init>(Lcom/android/phone/callsettings/RejectCallWithMsg;)V
 
-    invoke-virtual {v2, v3}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v2, v3}, Landroid/widget/LinearLayout;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     iget-object v2, p0, Lcom/android/phone/callsettings/RejectCallWithMsg;->createLayout:Landroid/widget/LinearLayout;
 
-    invoke-virtual {v2, v5}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v2, v5}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
     :cond_1
     iget-object v2, p0, Lcom/android/phone/callsettings/RejectCallWithMsg;->mListView:Landroid/widget/ListView;
 
     iget-object v3, p0, Lcom/android/phone/callsettings/RejectCallWithMsg;->mItemClickListener:Landroid/widget/AdapterView$OnItemClickListener;
 
-    invoke-virtual {v2, v3}, Landroid/widget/AdapterView;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
+    invoke-virtual {v2, v3}, Landroid/widget/ListView;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
 
     return-void
 
     :cond_2
     iget-object v2, p0, Lcom/android/phone/callsettings/RejectCallWithMsg;->mEmptyViewBackground:Landroid/widget/ImageView;
 
-    const v3, 0x7f02023b
+    const v3, 0x7f02023a
 
     invoke-virtual {v2, v3}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -1147,11 +1147,11 @@
     :cond_3
     iget-object v2, p0, Lcom/android/phone/callsettings/RejectCallWithMsg;->emptyText:Landroid/widget/FrameLayout;
 
-    invoke-virtual {v2, v5}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v2, v5}, Landroid/widget/FrameLayout;->setVisibility(I)V
 
     iget-object v2, p0, Lcom/android/phone/callsettings/RejectCallWithMsg;->mListView:Landroid/widget/ListView;
 
-    invoke-virtual {v2, v4}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v2, v4}, Landroid/widget/ListView;->setVisibility(I)V
 
     goto :goto_1
 .end method
@@ -1182,9 +1182,9 @@
 .method private refreshRejectList()V
     .locals 7
 
-    const v6, 0x7f02023b
+    const v6, 0x7f02023a
 
-    const v5, 0x7f02023a
+    const v5, 0x7f020239
 
     const/16 v4, 0x8
 
@@ -1207,7 +1207,7 @@
     :cond_0
     iget-object v2, p0, Lcom/android/phone/callsettings/RejectCallWithMsg;->mEmptyViewBackground:Landroid/widget/ImageView;
 
-    invoke-virtual {v2}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+    invoke-virtual {v2}, Landroid/widget/ImageView;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v1
 
@@ -1232,7 +1232,7 @@
 
     iget-object v2, p0, Lcom/android/phone/callsettings/RejectCallWithMsg;->emptyText:Landroid/widget/FrameLayout;
 
-    invoke-virtual {v2, v4}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v2, v4}, Landroid/widget/FrameLayout;->setVisibility(I)V
 
     const/4 v2, 0x2
 
@@ -1240,7 +1240,7 @@
 
     iget-object v2, p0, Lcom/android/phone/callsettings/RejectCallWithMsg;->mListView:Landroid/widget/ListView;
 
-    invoke-virtual {v2, v3}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v2, v3}, Landroid/widget/ListView;->setVisibility(I)V
 
     :goto_1
     iget-object v2, p0, Lcom/android/phone/callsettings/RejectCallWithMsg;->mRejectMsgAdpater:Lcom/android/phone/callsettings/RejectCallWithMsg$RejectMessageAdapter;
@@ -1249,7 +1249,7 @@
 
     new-instance v2, Lcom/android/phone/callsettings/RejectCallWithMsg$RejectMessageAdapter;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/RejectCallWithMsg;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
 
@@ -1279,11 +1279,11 @@
     :cond_4
     iget-object v2, p0, Lcom/android/phone/callsettings/RejectCallWithMsg;->emptyText:Landroid/widget/FrameLayout;
 
-    invoke-virtual {v2, v3}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v2, v3}, Landroid/widget/FrameLayout;->setVisibility(I)V
 
     iget-object v2, p0, Lcom/android/phone/callsettings/RejectCallWithMsg;->mListView:Landroid/widget/ListView;
 
-    invoke-virtual {v2, v4}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v2, v4}, Landroid/widget/ListView;->setVisibility(I)V
 
     const/4 v2, 0x1
 
@@ -1295,14 +1295,14 @@
 
     iget-object v2, p0, Lcom/android/phone/callsettings/RejectCallWithMsg;->emptyText:Landroid/widget/FrameLayout;
 
-    invoke-virtual {v2, v5}, Landroid/view/View;->setBackgroundResource(I)V
+    invoke-virtual {v2, v5}, Landroid/widget/FrameLayout;->setBackgroundResource(I)V
 
     goto :goto_1
 
     :cond_5
     iget-object v2, p0, Lcom/android/phone/callsettings/RejectCallWithMsg;->emptyText:Landroid/widget/FrameLayout;
 
-    invoke-virtual {v2, v6}, Landroid/view/View;->setBackgroundResource(I)V
+    invoke-virtual {v2, v6}, Landroid/widget/FrameLayout;->setBackgroundResource(I)V
 
     goto :goto_1
 .end method
@@ -1492,17 +1492,17 @@
     aget-object v2, v2, v7
 
     :goto_3
-    invoke-virtual {p0}, Landroid/app/Fragment;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/RejectCallWithMsg;->getResources()Landroid/content/res/Resources;
 
     move-result-object v7
 
     const-string v8, "string"
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/RejectCallWithMsg;->getActivity()Landroid/app/Activity;
 
     move-result-object v9
 
-    invoke-virtual {v9}, Landroid/content/ContextWrapper;->getPackageName()Ljava/lang/String;
+    invoke-virtual {v9}, Landroid/app/Activity;->getPackageName()Ljava/lang/String;
 
     move-result-object v9
 
@@ -1510,7 +1510,7 @@
 
     move-result v2
 
-    invoke-virtual {p0, v2}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v2}, Lcom/android/phone/callsettings/RejectCallWithMsg;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1558,7 +1558,7 @@
 
     invoke-direct {p0}, Lcom/android/phone/callsettings/RejectCallWithMsg;->updateTitleBar()V
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/RejectCallWithMsg;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v0
 
@@ -1579,7 +1579,7 @@
     :goto_0
     iget-object v1, p0, Lcom/android/phone/callsettings/RejectCallWithMsg;->mListView:Landroid/widget/ListView;
 
-    invoke-virtual {v1}, Landroid/widget/AdapterView;->getCount()I
+    invoke-virtual {v1}, Landroid/widget/ListView;->getCount()I
 
     move-result v1
 
@@ -1587,7 +1587,7 @@
 
     iget-object v1, p0, Lcom/android/phone/callsettings/RejectCallWithMsg;->mListView:Landroid/widget/ListView;
 
-    invoke-virtual {v1, v0}, Landroid/widget/AbsListView;->isItemChecked(I)Z
+    invoke-virtual {v1, v0}, Landroid/widget/ListView;->isItemChecked(I)Z
 
     move-result v1
 
@@ -1613,7 +1613,7 @@
 
     iget-object v4, p0, Lcom/android/phone/callsettings/RejectCallWithMsg;->mListView:Landroid/widget/ListView;
 
-    invoke-virtual {v4}, Landroid/widget/AdapterView;->getCount()I
+    invoke-virtual {v4}, Landroid/widget/ListView;->getCount()I
 
     move-result v4
 
@@ -1622,7 +1622,7 @@
     :goto_1
     invoke-interface {v1, v2}, Landroid/widget/Checkable;->setChecked(Z)V
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/RejectCallWithMsg;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v1
 
@@ -1639,7 +1639,7 @@
 .method private updateItem(Ljava/lang/String;)V
     .locals 6
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->isAdded()Z
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/RejectCallWithMsg;->isAdded()Z
 
     move-result v0
 
@@ -1695,7 +1695,7 @@
 
     move-object v1, p0
 
-    invoke-virtual/range {v0 .. v5}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->startFragment(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;I)Z
+    invoke-virtual/range {v0 .. v5}, Lcom/android/phone/callsettings/RejectCallWithMsg;->startFragment(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;I)Z
 
     goto :goto_0
 .end method
@@ -1796,7 +1796,7 @@
 
     move-result-object v0
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/RejectCallWithMsg;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 
@@ -1823,7 +1823,7 @@
     :cond_0
     const v1, 0x7f0902f8
 
-    invoke-virtual {p0, v1}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v1}, Lcom/android/phone/callsettings/RejectCallWithMsg;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -1852,7 +1852,7 @@
 
     const v2, 0x7f09091e
 
-    invoke-virtual {p0, v2}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v2}, Lcom/android/phone/callsettings/RejectCallWithMsg;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1920,7 +1920,7 @@
 
     if-ne v1, v2, :cond_3
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/RejectCallWithMsg;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -1932,7 +1932,7 @@
     return-void
 
     :cond_3
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/RejectCallWithMsg;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -2010,7 +2010,7 @@
 
     move-object v1, p0
 
-    invoke-virtual/range {v0 .. v5}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->startFragment(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;I)Z
+    invoke-virtual/range {v0 .. v5}, Lcom/android/phone/callsettings/RejectCallWithMsg;->startFragment(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;I)Z
 
     return-void
 .end method
@@ -2020,9 +2020,9 @@
 
     const/4 v3, 0x0
 
-    invoke-super {p0, p1, p2, p3}, Landroid/preference/PreferenceFragment;->onActivityResult(IILandroid/content/Intent;)V
+    invoke-super {p0, p1, p2, p3}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onActivityResult(IILandroid/content/Intent;)V
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->isAdded()Z
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/RejectCallWithMsg;->isAdded()Z
 
     move-result v0
 
@@ -2093,18 +2093,18 @@
 
     iget-object v0, p0, Lcom/android/phone/callsettings/RejectCallWithMsg;->mEmptyViewBackground:Landroid/widget/ImageView;
 
-    const v1, 0x7f02023a
+    const v1, 0x7f020239
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
     :goto_1
-    invoke-virtual {p0}, Landroid/app/Fragment;->getFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/RejectCallWithMsg;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v0
 
     invoke-virtual {v0}, Landroid/app/FragmentManager;->invalidateOptionsMenu()V
 
-    invoke-super {p0, p1}, Landroid/app/Fragment;->onConfigurationChanged(Landroid/content/res/Configuration;)V
+    invoke-super {p0, p1}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
     return-void
 
@@ -2116,7 +2116,7 @@
     :cond_1
     iget-object v0, p0, Lcom/android/phone/callsettings/RejectCallWithMsg;->mEmptyViewBackground:Landroid/widget/ImageView;
 
-    const v1, 0x7f02023b
+    const v1, 0x7f02023a
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -2131,7 +2131,7 @@
 
     invoke-super {p0, p1}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getActionBar()Landroid/app/ActionBar;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/RejectCallWithMsg;->getActionBar()Landroid/app/ActionBar;
 
     move-result-object v0
 
@@ -2140,9 +2140,9 @@
     invoke-virtual {v0, v2}, Landroid/app/ActionBar;->setDisplayHomeAsUpEnabled(Z)V
 
     :cond_0
-    invoke-virtual {p0, v2}, Landroid/app/Fragment;->setHasOptionsMenu(Z)V
+    invoke-virtual {p0, v2}, Lcom/android/phone/callsettings/RejectCallWithMsg;->setHasOptionsMenu(Z)V
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/RejectCallWithMsg;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
@@ -2154,7 +2154,7 @@
 
     const-string v1, "audio"
 
-    invoke-virtual {p0, v1}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v1}, Lcom/android/phone/callsettings/RejectCallWithMsg;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -2162,7 +2162,7 @@
 
     iput-object v1, p0, Lcom/android/phone/callsettings/RejectCallWithMsg;->mAudioManager:Landroid/media/AudioManager;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/RejectCallWithMsg;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -2194,7 +2194,7 @@
     .param p1    # Landroid/view/Menu;
     .param p2    # Landroid/view/MenuInflater;
 
-    invoke-super {p0, p1, p2}, Landroid/app/Fragment;->onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
+    invoke-super {p0, p1, p2}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
 
     return-void
 .end method
@@ -2274,9 +2274,9 @@
 .method public onDestroy()V
     .locals 2
 
-    invoke-super {p0}, Landroid/preference/PreferenceFragment;->onDestroy()V
+    invoke-super {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onDestroy()V
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/RejectCallWithMsg;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -2325,7 +2325,7 @@
     :sswitch_1
     const/4 v2, 0x0
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/RejectCallWithMsg;->getActivity()Landroid/app/Activity;
 
     move-result-object v6
 
@@ -2344,7 +2344,7 @@
     :cond_1
     if-eqz v2, :cond_0
 
-    invoke-virtual {v2}, Landroid/widget/AbsListView;->getSelectedView()Landroid/view/View;
+    invoke-virtual {v2}, Landroid/widget/ListView;->getSelectedView()Landroid/view/View;
 
     move-result-object v6
 
@@ -2352,7 +2352,7 @@
 
     if-eqz v6, :cond_0
 
-    invoke-virtual {v2}, Landroid/widget/AbsListView;->getSelectedView()Landroid/view/View;
+    invoke-virtual {v2}, Landroid/widget/ListView;->getSelectedView()Landroid/view/View;
 
     move-result-object v1
 
@@ -2360,7 +2360,7 @@
 
     if-eqz v1, :cond_0
 
-    invoke-virtual {v1}, Landroid/view/ViewGroup;->getChildCount()I
+    invoke-virtual {v1}, Landroid/widget/LinearLayout;->getChildCount()I
 
     move-result v0
 
@@ -2369,7 +2369,7 @@
     :goto_2
     if-ge v3, v0, :cond_0
 
-    invoke-virtual {v1, v3}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
+    invoke-virtual {v1, v3}, Landroid/widget/LinearLayout;->getChildAt(I)Landroid/view/View;
 
     move-result-object v5
 
@@ -2483,13 +2483,13 @@
 
     iget-object v1, p0, Lcom/android/phone/callsettings/RejectCallWithMsg;->mListView:Landroid/widget/ListView;
 
-    invoke-virtual {v1, v0}, Landroid/widget/AbsListView;->twShowMultiChoiceMode(Z)V
+    invoke-virtual {v1, v0}, Landroid/widget/ListView;->twShowMultiChoiceMode(Z)V
 
     iput-boolean v0, p0, Lcom/android/phone/callsettings/RejectCallWithMsg;->mEnableClickSound:Z
 
     iget-object v1, p0, Lcom/android/phone/callsettings/RejectCallWithMsg;->mRejectMsgAdpater:Lcom/android/phone/callsettings/RejectCallWithMsg$RejectMessageAdapter;
 
-    invoke-virtual {v1}, Landroid/widget/BaseAdapter;->notifyDataSetInvalidated()V
+    invoke-virtual {v1}, Lcom/android/phone/callsettings/RejectCallWithMsg$RejectMessageAdapter;->notifyDataSetInvalidated()V
 
     goto :goto_0
 
@@ -2566,7 +2566,7 @@
 
     const/4 v2, 0x1
 
-    invoke-super {p0, p1}, Landroid/app/Fragment;->onPrepareOptionsMenu(Landroid/view/Menu;)V
+    invoke-super {p0, p1}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onPrepareOptionsMenu(Landroid/view/Menu;)V
 
     iget-object v1, p0, Lcom/android/phone/callsettings/RejectCallWithMsg;->handler:Landroid/os/Handler;
 
@@ -2670,7 +2670,7 @@
     move v1, v2
 
     :goto_2
-    invoke-virtual {v4, v1}, Landroid/view/View;->setEnabled(Z)V
+    invoke-virtual {v4, v1}, Landroid/widget/LinearLayout;->setEnabled(Z)V
 
     iget v1, p0, Lcom/android/phone/callsettings/RejectCallWithMsg;->mState:I
 
@@ -2678,7 +2678,7 @@
 
     iget-object v1, p0, Lcom/android/phone/callsettings/RejectCallWithMsg;->createLayout:Landroid/widget/LinearLayout;
 
-    invoke-virtual {v1, v3}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v1, v3}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
     :goto_3
     invoke-interface {p1, v2}, Landroid/view/Menu;->findItem(I)Landroid/view/MenuItem;
@@ -2700,7 +2700,7 @@
 
     const/16 v2, 0x8
 
-    invoke-virtual {v1, v2}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v1, v2}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
     :cond_4
     invoke-direct {p0}, Lcom/android/phone/callsettings/RejectCallWithMsg;->updateTitleBar()V
@@ -2727,7 +2727,7 @@
 
     const/16 v4, 0x8
 
-    invoke-virtual {v1, v4}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v1, v4}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
     goto :goto_3
 .end method
@@ -2768,7 +2768,7 @@
 
     iget-object v2, p0, Lcom/android/phone/callsettings/RejectCallWithMsg;->mDeleteDlg:Landroid/app/AlertDialog;
 
-    invoke-virtual {v2}, Landroid/app/Dialog;->isShowing()Z
+    invoke-virtual {v2}, Landroid/app/AlertDialog;->isShowing()Z
 
     move-result v2
 
@@ -2776,7 +2776,7 @@
 
     iget-object v2, p0, Lcom/android/phone/callsettings/RejectCallWithMsg;->mDeleteDlg:Landroid/app/AlertDialog;
 
-    invoke-virtual {v2}, Landroid/app/Dialog;->dismiss()V
+    invoke-virtual {v2}, Landroid/app/AlertDialog;->dismiss()V
 
     :cond_1
     iget v2, p0, Lcom/android/phone/callsettings/RejectCallWithMsg;->mState:I
@@ -2787,7 +2787,7 @@
 
     const/16 v2, 0x64
 
-    invoke-virtual {p0, v2}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->removeDialog(I)V
+    invoke-virtual {p0, v2}, Lcom/android/phone/callsettings/RejectCallWithMsg;->removeDialog(I)V
 
     iput v0, p0, Lcom/android/phone/callsettings/RejectCallWithMsg;->mState:I
 
@@ -2848,7 +2848,7 @@
 
     iget-object v0, p0, Lcom/android/phone/callsettings/RejectCallWithMsg;->mSelectAll:Landroid/widget/LinearLayout;
 
-    invoke-virtual {v0, v4}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v4}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
     :cond_4
     iget-object v0, p0, Lcom/android/phone/callsettings/RejectCallWithMsg;->rejectMsgList:Ljava/util/ArrayList;
@@ -2861,7 +2861,7 @@
 
     iget-object v0, p0, Lcom/android/phone/callsettings/RejectCallWithMsg;->mSelectAll:Landroid/widget/LinearLayout;
 
-    invoke-virtual {v0, v4}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v4}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
     iput v1, p0, Lcom/android/phone/callsettings/RejectCallWithMsg;->mState:I
 
@@ -2987,7 +2987,7 @@
 
     const v7, 0x7f09038d
 
-    invoke-virtual {p0, v7}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v7}, Lcom/android/phone/callsettings/RejectCallWithMsg;->getString(I)Ljava/lang/String;
 
     move-result-object v7
 
@@ -3019,7 +3019,7 @@
 
     const v6, 0x7f090391
 
-    invoke-virtual {p0, v6}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v6}, Lcom/android/phone/callsettings/RejectCallWithMsg;->getString(I)Ljava/lang/String;
 
     move-result-object v6
 
@@ -3054,7 +3054,7 @@
 
     const v6, 0x7f090391
 
-    invoke-virtual {p0, v6}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v6}, Lcom/android/phone/callsettings/RejectCallWithMsg;->getString(I)Ljava/lang/String;
 
     move-result-object v6
 
@@ -3125,7 +3125,7 @@
     :goto_2
     iget-object v6, p0, Lcom/android/phone/callsettings/RejectCallWithMsg;->mRejectMsgAdpater:Lcom/android/phone/callsettings/RejectCallWithMsg$RejectMessageAdapter;
 
-    invoke-virtual {v6}, Landroid/widget/BaseAdapter;->notifyDataSetInvalidated()V
+    invoke-virtual {v6}, Lcom/android/phone/callsettings/RejectCallWithMsg$RejectMessageAdapter;->notifyDataSetInvalidated()V
 
     iget-object v6, p0, Lcom/android/phone/callsettings/RejectCallWithMsg;->rejectMsgList:Ljava/util/ArrayList;
 
@@ -3139,13 +3139,13 @@
 
     const/16 v7, 0x8
 
-    invoke-virtual {v6, v7}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v6, v7}, Landroid/widget/FrameLayout;->setVisibility(I)V
 
     iget-object v6, p0, Lcom/android/phone/callsettings/RejectCallWithMsg;->mListView:Landroid/widget/ListView;
 
     const/4 v7, 0x0
 
-    invoke-virtual {v6, v7}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v6, v7}, Landroid/widget/ListView;->setVisibility(I)V
 
     :goto_3
     const/4 v6, 0x2
@@ -3164,7 +3164,7 @@
 
     if-ne v6, v7, :cond_0
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/RejectCallWithMsg;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v6
 
@@ -3290,13 +3290,13 @@
 
     const/4 v7, 0x0
 
-    invoke-virtual {v6, v7}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v6, v7}, Landroid/widget/FrameLayout;->setVisibility(I)V
 
     iget-object v6, p0, Lcom/android/phone/callsettings/RejectCallWithMsg;->mListView:Landroid/widget/ListView;
 
     const/16 v7, 0x8
 
-    invoke-virtual {v6, v7}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v6, v7}, Landroid/widget/ListView;->setVisibility(I)V
 
     goto/16 :goto_3
 .end method
@@ -3325,7 +3325,7 @@
 
     iget-object v1, p0, Lcom/android/phone/callsettings/RejectCallWithMsg;->mListView:Landroid/widget/ListView;
 
-    invoke-virtual {v1, v0, v2}, Landroid/widget/AbsListView;->setItemChecked(IZ)V
+    invoke-virtual {v1, v0, v2}, Landroid/widget/ListView;->setItemChecked(IZ)V
 
     add-int/lit8 v0, v0, 0x1
 
@@ -3425,7 +3425,7 @@
 
     iget-object v0, p0, Lcom/android/phone/callsettings/RejectCallWithMsg;->mListView:Landroid/widget/ListView;
 
-    invoke-virtual {v0}, Landroid/widget/AbsListView;->clearChoices()V
+    invoke-virtual {v0}, Landroid/widget/ListView;->clearChoices()V
 
     iget-object v0, p0, Lcom/android/phone/callsettings/RejectCallWithMsg;->mCheckedItemPositions:Ljava/util/ArrayList;
 
@@ -3433,7 +3433,7 @@
 
     iget-object v0, p0, Lcom/android/phone/callsettings/RejectCallWithMsg;->mRejectMsgAdpater:Lcom/android/phone/callsettings/RejectCallWithMsg$RejectMessageAdapter;
 
-    invoke-virtual {v0}, Landroid/widget/BaseAdapter;->notifyDataSetChanged()V
+    invoke-virtual {v0}, Lcom/android/phone/callsettings/RejectCallWithMsg$RejectMessageAdapter;->notifyDataSetChanged()V
 
     iget-object v0, p0, Lcom/android/phone/callsettings/RejectCallWithMsg;->mModeCallback:Lcom/android/phone/callsettings/RejectCallWithMsg$ActionModeCallback;
 

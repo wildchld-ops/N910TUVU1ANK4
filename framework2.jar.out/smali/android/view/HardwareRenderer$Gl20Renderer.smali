@@ -47,7 +47,6 @@
 
 .method constructor <init>(Z)V
     .locals 1
-    .param p1    # Z
 
     const/4 v0, 0x2
 
@@ -58,7 +57,6 @@
 
 .method static synthetic access$500(Ljavax/microedition/khronos/egl/EGLContext;)V
     .locals 0
-    .param p0    # Ljavax/microedition/khronos/egl/EGLContext;
 
     invoke-static {p0}, Landroid/view/HardwareRenderer$Gl20Renderer;->usePbufferSurface(Ljavax/microedition/khronos/egl/EGLContext;)V
 
@@ -75,7 +73,6 @@
 
 .method static synthetic access$602(Ljavax/microedition/khronos/egl/EGLSurface;)Ljavax/microedition/khronos/egl/EGLSurface;
     .locals 0
-    .param p0    # Ljavax/microedition/khronos/egl/EGLSurface;
 
     sput-object p0, Landroid/view/HardwareRenderer$Gl20Renderer;->sPbuffer:Ljavax/microedition/khronos/egl/EGLSurface;
 
@@ -84,7 +81,6 @@
 
 .method static synthetic access$700(Landroid/view/View;)V
     .locals 0
-    .param p0    # Landroid/view/View;
 
     invoke-static {p0}, Landroid/view/HardwareRenderer$Gl20Renderer;->destroyHardwareLayer(Landroid/view/View;)V
 
@@ -93,7 +89,6 @@
 
 .method static synthetic access$800(Landroid/view/View;)V
     .locals 0
-    .param p0    # Landroid/view/View;
 
     invoke-static {p0}, Landroid/view/HardwareRenderer$Gl20Renderer;->destroyResources(Landroid/view/View;)V
 
@@ -102,7 +97,6 @@
 
 .method static create(Z)Landroid/view/HardwareRenderer;
     .locals 1
-    .param p0    # Z
 
     invoke-static {}, Landroid/view/GLES20Canvas;->isAvailable()Z
 
@@ -125,7 +119,6 @@
 
 .method private static destroyHardwareLayer(Landroid/view/View;)V
     .locals 4
-    .param p0    # Landroid/view/View;
 
     const/4 v3, 0x1
 
@@ -164,7 +157,6 @@
 
 .method private static destroyResources(Landroid/view/View;)V
     .locals 4
-    .param p0    # Landroid/view/View;
 
     invoke-virtual {p0}, Landroid/view/View;->destroyHardwareResources()V
 
@@ -201,8 +193,6 @@
 
 .method private drawCurrentFrame(II)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     const/4 v4, 0x2
 
@@ -303,8 +293,6 @@
 
 .method private drawGraph(II)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -374,8 +362,6 @@
 
 .method private drawThreshold(II)V
     .locals 8
-    .param p1    # I
-    .param p2    # I
 
     const/4 v1, 0x0
 
@@ -452,8 +438,6 @@
 
 .method private initProfileDrawData(Landroid/view/View$AttachInfo;Landroid/view/HardwareRenderer$GraphDataProvider;)V
     .locals 6
-    .param p1    # Landroid/view/View$AttachInfo;
-    .param p2    # Landroid/view/HardwareRenderer$GraphDataProvider;
 
     const/4 v5, 0x1
 
@@ -539,7 +523,6 @@
 
 .method static startTrimMemory(I)V
     .locals 2
-    .param p0    # I
 
     sget-object v1, Landroid/view/HardwareRenderer$Gl20Renderer;->sEgl:Ljavax/microedition/khronos/egl/EGL10;
 
@@ -594,7 +577,6 @@
 
 .method private static usePbufferSurface(Ljavax/microedition/khronos/egl/EGLContext;)V
     .locals 5
-    .param p0    # Ljavax/microedition/khronos/egl/EGLContext;
 
     sget-object v1, Landroid/view/HardwareRenderer$Gl20Renderer;->sPbufferLock:[Ljava/lang/Object;
 
@@ -690,7 +672,6 @@
 
 .method cancelLayerUpdate(Landroid/view/HardwareLayer;)V
     .locals 1
-    .param p1    # Landroid/view/HardwareLayer;
 
     iget-object v0, p0, Landroid/view/HardwareRenderer$Gl20Renderer;->mGlCanvas:Landroid/view/GLES20Canvas;
 
@@ -701,7 +682,6 @@
 
 .method countOverdraw(Landroid/view/HardwareCanvas;)V
     .locals 1
-    .param p1    # Landroid/view/HardwareCanvas;
 
     check-cast p1, Landroid/view/GLES20Canvas;
 
@@ -728,7 +708,6 @@
 
 .method public createDisplayList(Ljava/lang/String;)Landroid/view/DisplayList;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Landroid/view/GLES20DisplayList;
 
@@ -739,9 +718,6 @@
 
 .method public createHardwareLayer(IIZ)Landroid/view/HardwareLayer;
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     new-instance v0, Landroid/view/GLES20RenderLayer;
 
@@ -752,7 +728,6 @@
 
 .method createHardwareLayer(Z)Landroid/view/HardwareLayer;
     .locals 1
-    .param p1    # Z
 
     new-instance v0, Landroid/view/GLES20TextureLayer;
 
@@ -763,7 +738,6 @@
 
 .method createManagedContext(Ljavax/microedition/khronos/egl/EGLContext;)Landroid/opengl/ManagedEGLContext;
     .locals 2
-    .param p1    # Ljavax/microedition/khronos/egl/EGLContext;
 
     new-instance v0, Landroid/view/HardwareRenderer$Gl20Renderer$Gl20RendererEglContext;
 
@@ -776,7 +750,6 @@
 
 .method public createSurfaceTexture(Landroid/view/HardwareLayer;)Landroid/graphics/SurfaceTexture;
     .locals 1
-    .param p1    # Landroid/view/HardwareLayer;
 
     check-cast p1, Landroid/view/GLES20TextureLayer;
 
@@ -789,7 +762,6 @@
 
 .method destroy(Z)V
     .locals 3
-    .param p1    # Z
 
     const/4 v2, 0x0
 
@@ -826,7 +798,6 @@
 
 .method destroyHardwareResources(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     if-eqz p1, :cond_0
 
@@ -842,7 +813,6 @@
 
 .method destroyLayers(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     if-eqz p1, :cond_0
 
@@ -858,7 +828,6 @@
 
 .method drawProfileData(Landroid/view/View$AttachInfo;)V
     .locals 23
-    .param p1    # Landroid/view/View$AttachInfo;
 
     move-object/from16 v0, p0
 
@@ -1236,7 +1205,6 @@
 
 .method getConfig(Z)[I
     .locals 9
-    .param p1    # Z
 
     const/16 v8, 0x3038
 
@@ -1359,7 +1327,6 @@
 
 .method getOverdraw(Landroid/view/HardwareCanvas;)F
     .locals 1
-    .param p1    # Landroid/view/HardwareCanvas;
 
     check-cast p1, Landroid/view/GLES20Canvas;
 
@@ -1471,7 +1438,6 @@
 
 .method onPreDraw(Landroid/graphics/Rect;)I
     .locals 1
-    .param p1    # Landroid/graphics/Rect;
 
     iget-object v0, p0, Landroid/view/HardwareRenderer$Gl20Renderer;->mGlCanvas:Landroid/view/GLES20Canvas;
 
@@ -1484,7 +1450,6 @@
 
 .method pushLayerUpdate(Landroid/view/HardwareLayer;)V
     .locals 1
-    .param p1    # Landroid/view/HardwareLayer;
 
     iget-object v0, p0, Landroid/view/HardwareRenderer$Gl20Renderer;->mGlCanvas:Landroid/view/GLES20Canvas;
 
@@ -1495,7 +1460,6 @@
 
 .method safelyRun(Ljava/lang/Runnable;)Z
     .locals 8
-    .param p1    # Ljava/lang/Runnable;
 
     const/4 v3, 0x1
 
@@ -1592,8 +1556,6 @@
 
 .method setSurfaceTexture(Landroid/view/HardwareLayer;Landroid/graphics/SurfaceTexture;)V
     .locals 0
-    .param p1    # Landroid/view/HardwareLayer;
-    .param p2    # Landroid/graphics/SurfaceTexture;
 
     check-cast p1, Landroid/view/GLES20TextureLayer;
 

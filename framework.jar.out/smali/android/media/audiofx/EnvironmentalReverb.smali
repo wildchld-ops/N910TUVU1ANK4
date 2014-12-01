@@ -63,8 +63,6 @@
 
 .method public constructor <init>(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;,
@@ -96,7 +94,6 @@
 
 .method static synthetic access$000(Landroid/media/audiofx/EnvironmentalReverb;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Landroid/media/audiofx/EnvironmentalReverb;
 
     iget-object v0, p0, Landroid/media/audiofx/EnvironmentalReverb;->mParamListenerLock:Ljava/lang/Object;
 
@@ -105,7 +102,6 @@
 
 .method static synthetic access$100(Landroid/media/audiofx/EnvironmentalReverb;)Landroid/media/audiofx/EnvironmentalReverb$OnParameterChangeListener;
     .locals 1
-    .param p0    # Landroid/media/audiofx/EnvironmentalReverb;
 
     iget-object v0, p0, Landroid/media/audiofx/EnvironmentalReverb;->mParamListener:Landroid/media/audiofx/EnvironmentalReverb$OnParameterChangeListener;
 
@@ -513,7 +509,6 @@
 
 .method public setDecayHFRatio(S)V
     .locals 2
-    .param p1    # S
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;,
@@ -539,7 +534,6 @@
 
 .method public setDecayTime(I)V
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;,
@@ -565,7 +559,6 @@
 
 .method public setDensity(S)V
     .locals 2
-    .param p1    # S
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;,
@@ -591,7 +584,6 @@
 
 .method public setDiffusion(S)V
     .locals 2
-    .param p1    # S
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;,
@@ -617,7 +609,6 @@
 
 .method public setParameterListener(Landroid/media/audiofx/EnvironmentalReverb$OnParameterChangeListener;)V
     .locals 3
-    .param p1    # Landroid/media/audiofx/EnvironmentalReverb$OnParameterChangeListener;
 
     iget-object v1, p0, Landroid/media/audiofx/EnvironmentalReverb;->mParamListenerLock:Ljava/lang/Object;
 
@@ -659,7 +650,6 @@
 
 .method public setProperties(Landroid/media/audiofx/EnvironmentalReverb$Settings;)V
     .locals 5
-    .param p1    # Landroid/media/audiofx/EnvironmentalReverb$Settings;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;,
@@ -787,7 +777,6 @@
 
 .method public setReflectionsDelay(I)V
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;,
@@ -813,7 +802,6 @@
 
 .method public setReflectionsLevel(S)V
     .locals 2
-    .param p1    # S
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;,
@@ -839,7 +827,6 @@
 
 .method public setReverbDelay(I)V
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;,
@@ -865,7 +852,6 @@
 
 .method public setReverbLevel(S)V
     .locals 2
-    .param p1    # S
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;,
@@ -891,7 +877,6 @@
 
 .method public setRoomHFLevel(S)V
     .locals 2
-    .param p1    # S
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;,
@@ -917,7 +902,6 @@
 
 .method public setRoomLevel(S)V
     .locals 2
-    .param p1    # S
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;,

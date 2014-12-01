@@ -36,7 +36,6 @@
 # virtual methods
 .method public onMenuVisibilityChanged(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v1, p0, Lcom/android/settings/wifi/mobileap/WifiApSettings$4;->this$0:Lcom/android/settings/wifi/mobileap/WifiApSettings;
 

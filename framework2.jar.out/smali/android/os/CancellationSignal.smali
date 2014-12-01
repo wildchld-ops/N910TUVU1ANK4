@@ -46,7 +46,6 @@
 
 .method public static fromTransport(Landroid/os/ICancellationSignal;)Landroid/os/CancellationSignal;
     .locals 1
-    .param p0    # Landroid/os/ICancellationSignal;
 
     instance-of v0, p0, Landroid/os/CancellationSignal$Transport;
 
@@ -231,7 +230,6 @@
 
 .method public setOnCancelListener(Landroid/os/CancellationSignal$OnCancelListener;)V
     .locals 1
-    .param p1    # Landroid/os/CancellationSignal$OnCancelListener;
 
     monitor-enter p0
 
@@ -283,7 +281,6 @@
 
 .method public setRemote(Landroid/os/ICancellationSignal;)V
     .locals 1
-    .param p1    # Landroid/os/ICancellationSignal;
 
     monitor-enter p0
 

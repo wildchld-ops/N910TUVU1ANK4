@@ -83,7 +83,7 @@
 
     const-string v2, "input_method"
 
-    invoke-virtual {v1, v2}, Landroid/app/Activity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v1, v2}, Lcom/android/phone/IMSConferenceCallActivity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -107,7 +107,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Landroid/view/View;->getWindowToken()Landroid/os/IBinder;
+    invoke-virtual {v1}, Landroid/widget/AutoCompleteTextView;->getWindowToken()Landroid/os/IBinder;
 
     move-result-object v1
 
@@ -128,7 +128,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Landroid/app/Activity;->finish()V
+    invoke-virtual {v1}, Lcom/android/phone/IMSConferenceCallActivity;->finish()V
 
     goto :goto_0
 
@@ -165,7 +165,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Landroid/app/Dialog;->dismiss()V
+    invoke-virtual {v1}, Landroid/app/AlertDialog;->dismiss()V
 
     iget-object v1, p0, Lcom/android/phone/IMSConferenceCallActivity$1;->this$0:Lcom/android/phone/IMSConferenceCallActivity;
 

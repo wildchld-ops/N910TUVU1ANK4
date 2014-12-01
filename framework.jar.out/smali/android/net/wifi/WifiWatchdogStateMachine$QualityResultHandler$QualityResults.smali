@@ -262,7 +262,6 @@
 
 .method public setDataRate1(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/net/wifi/WifiWatchdogStateMachine$QualityResultHandler$QualityResults;->mDataRate1:I
 
@@ -271,7 +270,6 @@
 
 .method public setDataRate2(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/net/wifi/WifiWatchdogStateMachine$QualityResultHandler$QualityResults;->mDataRate2:I
 
@@ -280,7 +278,6 @@
 
 .method public setQuality(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/net/wifi/WifiWatchdogStateMachine$QualityResultHandler$QualityResults;->mQuality:I
 
@@ -289,7 +286,6 @@
 
 .method public setRSSI1(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/net/wifi/WifiWatchdogStateMachine$QualityResultHandler$QualityResults;->mRSSI1:I
 
@@ -298,7 +294,6 @@
 
 .method public setRSSI2(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/net/wifi/WifiWatchdogStateMachine$QualityResultHandler$QualityResults;->mRSSI2:I
 
@@ -307,7 +302,6 @@
 
 .method public setTime(J)V
     .locals 0
-    .param p1    # J
 
     iput-wide p1, p0, Landroid/net/wifi/WifiWatchdogStateMachine$QualityResultHandler$QualityResults;->mTime:J
 
@@ -316,12 +310,6 @@
 
 .method public setValues(JIIIII)V
     .locals 0
-    .param p1    # J
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
 
     iput-wide p1, p0, Landroid/net/wifi/WifiWatchdogStateMachine$QualityResultHandler$QualityResults;->mTime:J
 

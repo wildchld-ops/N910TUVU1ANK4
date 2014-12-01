@@ -37,7 +37,6 @@
 # direct methods
 .method public constructor <init>(Ljava/util/ArrayList;Ljava/lang/String;)V
     .locals 0
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -69,7 +68,6 @@
 # virtual methods
 .method public createResultFile(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -185,7 +183,6 @@
 
 .method public generateResultXML(Ljava/io/File;)V
     .locals 8
-    .param p1    # Ljava/io/File;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

@@ -44,11 +44,6 @@
 # direct methods
 .method public constructor <init>(Landroid/mtp/MtpDatabase;Landroid/content/IContentProvider;Ljava/lang/String;Ljava/lang/String;[I)V
     .locals 5
-    .param p1    # Landroid/mtp/MtpDatabase;
-    .param p2    # Landroid/content/IContentProvider;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # [I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -133,7 +128,6 @@
 
 .method private createProperty(ILjava/util/ArrayList;)Landroid/mtp/MtpPropertyGroup$Property;
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -362,7 +356,6 @@
 
 .method private static nameFromPath(Ljava/lang/String;)Ljava/lang/String;
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -399,8 +392,6 @@
 
 .method private queryAudio(ILjava/lang/String;)Ljava/lang/String;
     .locals 11
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v10, 0x0
 
@@ -515,7 +506,6 @@
 
 .method private queryGenre(I)Ljava/lang/String;
     .locals 11
-    .param p1    # I
 
     const/4 v10, 0x0
 
@@ -631,8 +621,6 @@
 
 .method private queryLong(ILjava/lang/String;)Ljava/lang/Long;
     .locals 10
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v9, 0x0
 
@@ -741,8 +729,6 @@
 
 .method private queryString(ILjava/lang/String;)Ljava/lang/String;
     .locals 11
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v10, 0x0
 
@@ -855,9 +841,6 @@
 # virtual methods
 .method getPropertyList(III)Landroid/mtp/MtpPropertyList;
     .locals 32
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v2, 0x1
 

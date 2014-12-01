@@ -22,9 +22,6 @@
 # direct methods
 .method constructor <init>(ILandroid/renderscript/RenderScript;Ljava/io/InputStream;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Landroid/renderscript/RenderScript;
-    .param p3    # Ljava/io/InputStream;
 
     invoke-direct {p0, p1, p2}, Landroid/renderscript/BaseObj;-><init>(ILandroid/renderscript/RenderScript;)V
 
@@ -35,9 +32,6 @@
 
 .method public static createFromAsset(Landroid/renderscript/RenderScript;Landroid/content/res/AssetManager;Ljava/lang/String;)Landroid/renderscript/FileA3D;
     .locals 5
-    .param p0    # Landroid/renderscript/RenderScript;
-    .param p1    # Landroid/content/res/AssetManager;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p0}, Landroid/renderscript/RenderScript;->validate()V
 
@@ -85,8 +79,6 @@
 
 .method public static createFromFile(Landroid/renderscript/RenderScript;Ljava/io/File;)Landroid/renderscript/FileA3D;
     .locals 1
-    .param p0    # Landroid/renderscript/RenderScript;
-    .param p1    # Ljava/io/File;
 
     invoke-virtual {p1}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
@@ -101,8 +93,6 @@
 
 .method public static createFromFile(Landroid/renderscript/RenderScript;Ljava/lang/String;)Landroid/renderscript/FileA3D;
     .locals 5
-    .param p0    # Landroid/renderscript/RenderScript;
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Landroid/renderscript/RenderScript;->nFileA3DCreateFromFile(Ljava/lang/String;)I
 
@@ -148,9 +138,6 @@
 
 .method public static createFromResource(Landroid/renderscript/RenderScript;Landroid/content/res/Resources;I)Landroid/renderscript/FileA3D;
     .locals 8
-    .param p0    # Landroid/renderscript/RenderScript;
-    .param p1    # Landroid/content/res/Resources;
-    .param p2    # I
 
     invoke-virtual {p0}, Landroid/renderscript/RenderScript;->validate()V
 
@@ -330,7 +317,6 @@
 # virtual methods
 .method public getIndexEntry(I)Landroid/renderscript/FileA3D$IndexEntry;
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/renderscript/FileA3D;->getIndexEntryCount()I
 

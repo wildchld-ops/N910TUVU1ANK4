@@ -28,8 +28,6 @@
 
 .method public static getRetryTime(IJ)J
     .locals 5
-    .param p0    # I
-    .param p1    # J
 
     const-wide/16 v0, 0x0
 
@@ -109,9 +107,6 @@
 
 .method public static isAvailableForRetry(Ljava/lang/Long;Landroid/content/Context;I)Z
     .locals 16
-    .param p0    # Ljava/lang/Long;
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     const/4 v13, 0x0
 
@@ -434,7 +429,6 @@
 
 .method public static registerAlarmReceiverWithPendingMessages(Landroid/content/Context;)V
     .locals 27
-    .param p0    # Landroid/content/Context;
 
     const/4 v3, 0x5
 
@@ -1034,9 +1028,6 @@
 
 .method public static setResumeRetryFT(Landroid/content/Context;Ljava/lang/Long;I)V
     .locals 17
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/Long;
-    .param p2    # I
 
     sget-object v1, Lcom/android/mms/rcs/transaction/RcsTransaction$RcsFTRetry;->CONTENT_URI:Landroid/net/Uri;
 
@@ -1221,8 +1212,6 @@
 
 .method public static unregisterAlarmReciver(Ljava/lang/Long;Landroid/content/Context;)V
     .locals 13
-    .param p0    # Ljava/lang/Long;
-    .param p1    # Landroid/content/Context;
 
     const/4 v4, 0x0
 

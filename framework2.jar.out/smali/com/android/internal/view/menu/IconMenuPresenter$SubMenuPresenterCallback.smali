@@ -36,8 +36,6 @@
 # virtual methods
 .method public onCloseMenu(Lcom/android/internal/view/menu/MenuBuilder;Z)V
     .locals 2
-    .param p1    # Lcom/android/internal/view/menu/MenuBuilder;
-    .param p2    # Z
 
     iget-object v0, p0, Lcom/android/internal/view/menu/IconMenuPresenter$SubMenuPresenterCallback;->this$0:Lcom/android/internal/view/menu/IconMenuPresenter;
 
@@ -69,7 +67,6 @@
 
 .method public onOpenSubMenu(Lcom/android/internal/view/menu/MenuBuilder;)Z
     .locals 2
-    .param p1    # Lcom/android/internal/view/menu/MenuBuilder;
 
     if-eqz p1, :cond_0
 

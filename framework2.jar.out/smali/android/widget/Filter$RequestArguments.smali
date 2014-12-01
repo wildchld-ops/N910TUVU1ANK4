@@ -33,7 +33,6 @@
 
 .method synthetic constructor <init>(Landroid/widget/Filter$1;)V
     .locals 0
-    .param p1    # Landroid/widget/Filter$1;
 
     invoke-direct {p0}, Landroid/widget/Filter$RequestArguments;-><init>()V
 

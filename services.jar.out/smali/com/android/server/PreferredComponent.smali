@@ -46,11 +46,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/PreferredComponent$Callbacks;I[Landroid/content/ComponentName;Landroid/content/ComponentName;Z)V
     .locals 8
-    .param p1    # Lcom/android/server/PreferredComponent$Callbacks;
-    .param p2    # I
-    .param p3    # [Landroid/content/ComponentName;
-    .param p4    # Landroid/content/ComponentName;
-    .param p5    # Z
 
     const/4 v7, 0x0
 
@@ -156,8 +151,6 @@
 
 .method public constructor <init>(Lcom/android/server/PreferredComponent$Callbacks;Lorg/xmlpull/v1/XmlPullParser;)V
     .locals 18
-    .param p1    # Lcom/android/server/PreferredComponent$Callbacks;
-    .param p2    # Lorg/xmlpull/v1/XmlPullParser;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -680,9 +673,6 @@
 # virtual methods
 .method public dump(Ljava/io/PrintWriter;Ljava/lang/String;Ljava/lang/Object;)V
     .locals 2
-    .param p1    # Ljava/io/PrintWriter;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/Object;
 
     invoke-virtual {p1, p2}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
@@ -775,7 +765,6 @@
 
 .method public sameSet(Ljava/util/List;I)Z
     .locals 11
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -885,8 +874,6 @@
 
 .method public writeToXml(Lorg/xmlpull/v1/XmlSerializer;Z)V
     .locals 5
-    .param p1    # Lorg/xmlpull/v1/XmlSerializer;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

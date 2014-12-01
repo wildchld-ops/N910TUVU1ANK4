@@ -16,7 +16,6 @@
 # direct methods
 .method public constructor <init>(Landroid/hardware/usb/UsbDevice;)V
     .locals 0
-    .param p1    # Landroid/hardware/usb/UsbDevice;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -27,9 +26,6 @@
 
 .method private static checkBounds([BII)V
     .locals 3
-    .param p0    # [B
-    .param p1    # I
-    .param p2    # I
 
     if-eqz p0, :cond_1
 
@@ -94,10 +90,6 @@
 # virtual methods
 .method public bulkTransfer(Landroid/hardware/usb/UsbEndpoint;[BII)I
     .locals 6
-    .param p1    # Landroid/hardware/usb/UsbEndpoint;
-    .param p2    # [B
-    .param p3    # I
-    .param p4    # I
 
     const/4 v3, 0x0
 
@@ -120,11 +112,6 @@
 
 .method public bulkTransfer(Landroid/hardware/usb/UsbEndpoint;[BIII)I
     .locals 6
-    .param p1    # Landroid/hardware/usb/UsbEndpoint;
-    .param p2    # [B
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-static {p2, p3, p4}, Landroid/hardware/usb/UsbDeviceConnection;->checkBounds([BII)V
 
@@ -151,8 +138,6 @@
 
 .method public claimInterface(Landroid/hardware/usb/UsbInterface;Z)Z
     .locals 1
-    .param p1    # Landroid/hardware/usb/UsbInterface;
-    .param p2    # Z
 
     invoke-virtual {p1}, Landroid/hardware/usb/UsbInterface;->getId()I
 
@@ -175,13 +160,6 @@
 
 .method public controlTransfer(IIII[BII)I
     .locals 9
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # [B
-    .param p6    # I
-    .param p7    # I
 
     const/4 v6, 0x0
 
@@ -210,14 +188,6 @@
 
 .method public controlTransfer(IIII[BIII)I
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # [B
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
 
     invoke-static {p5, p6, p7}, Landroid/hardware/usb/UsbDeviceConnection;->checkBounds([BII)V
 
@@ -260,8 +230,6 @@
 
 .method open(Ljava/lang/String;Landroid/os/ParcelFileDescriptor;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/ParcelFileDescriptor;
 
     invoke-virtual {p2}, Landroid/os/ParcelFileDescriptor;->getFileDescriptor()Ljava/io/FileDescriptor;
 
@@ -276,7 +244,6 @@
 
 .method public releaseInterface(Landroid/hardware/usb/UsbInterface;)Z
     .locals 1
-    .param p1    # Landroid/hardware/usb/UsbInterface;
 
     invoke-virtual {p1}, Landroid/hardware/usb/UsbInterface;->getId()I
 

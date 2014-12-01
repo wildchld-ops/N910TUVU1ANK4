@@ -13,17 +13,6 @@
 # direct methods
 .method protected constructor <init>(Lcom/sec/android/app/camera/gallery/BaseImageList;Landroid/content/ContentResolver;JILandroid/net/Uri;Ljava/lang/String;JLjava/lang/String;JLjava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Lcom/sec/android/app/camera/gallery/BaseImageList;
-    .param p2    # Landroid/content/ContentResolver;
-    .param p3    # J
-    .param p5    # I
-    .param p6    # Landroid/net/Uri;
-    .param p7    # Ljava/lang/String;
-    .param p8    # J
-    .param p10    # Ljava/lang/String;
-    .param p11    # J
-    .param p13    # Ljava/lang/String;
-    .param p14    # Ljava/lang/String;
 
     invoke-direct/range {p0 .. p14}, Lcom/sec/android/app/camera/gallery/BaseImage;-><init>(Lcom/sec/android/app/camera/gallery/BaseImageList;Landroid/content/ContentResolver;JILandroid/net/Uri;Ljava/lang/String;JLjava/lang/String;JLjava/lang/String;Ljava/lang/String;)V
 
@@ -34,7 +23,6 @@
 # virtual methods
 .method public equals(Ljava/lang/Object;)Z
     .locals 2
-    .param p1    # Ljava/lang/Object;
 
     if-eqz p1, :cond_0
 
@@ -68,10 +56,6 @@
 
 .method public fullSizeBitmap(IIZZ)Landroid/graphics/Bitmap;
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # Z
 
     iget-object v0, p0, Lcom/sec/android/app/camera/gallery/BaseImage;->mDataPath:Ljava/lang/String;
 
@@ -202,7 +186,6 @@
 
 .method public rotateImageBy(I)Z
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -211,7 +194,6 @@
 
 .method public thumbBitmap(Z)Landroid/graphics/Bitmap;
     .locals 2
-    .param p1    # Z
 
     sget v0, Lcom/sec/android/app/camera/gallery/VideoObject;->THUMBNAIL_TARGET_SIZE:I
 

@@ -38,8 +38,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/systemui/recent/multiwindowUtils/MultiWindowTrayInfo$LaunchItem;I)V
     .locals 0
-    .param p1    # Lcom/android/systemui/recent/multiwindowUtils/MultiWindowTrayInfo$LaunchItem;
-    .param p2    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -54,7 +52,6 @@
 # virtual methods
 .method public compareTo(Lcom/android/systemui/recent/multiwindowUtils/MultiWindowTrayInfo$OrderedItem;)I
     .locals 2
-    .param p1    # Lcom/android/systemui/recent/multiwindowUtils/MultiWindowTrayInfo$OrderedItem;
 
     iget v0, p0, Lcom/android/systemui/recent/multiwindowUtils/MultiWindowTrayInfo$OrderedItem;->mOrder:I
 
@@ -82,7 +79,6 @@
 
 .method public bridge synthetic compareTo(Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/android/systemui/recent/multiwindowUtils/MultiWindowTrayInfo$OrderedItem;
 

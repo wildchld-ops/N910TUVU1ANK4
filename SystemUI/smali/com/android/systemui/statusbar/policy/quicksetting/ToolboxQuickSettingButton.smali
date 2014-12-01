@@ -27,7 +27,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 8
-    .param p1    # Landroid/content/Context;
 
     const v2, 0x7f0b012e
 
@@ -100,7 +99,6 @@
 
 .method static synthetic access$000(Lcom/android/systemui/statusbar/policy/quicksetting/ToolboxQuickSettingButton;)Z
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/policy/quicksetting/ToolboxQuickSettingButton;
 
     invoke-direct {p0}, Lcom/android/systemui/statusbar/policy/quicksetting/ToolboxQuickSettingButton;->getToolboxEnabled()Z
 
@@ -181,7 +179,6 @@
 
 .method private setToolboxEnabled(Z)V
     .locals 4
-    .param p1    # Z
 
     const/4 v0, 0x1
 
@@ -320,7 +317,6 @@
 
 .method public onClick(Z)V
     .locals 4
-    .param p1    # Z
 
     invoke-virtual {p0}, Lcom/android/systemui/statusbar/policy/quicksetting/QuickSettingButton;->isEnabledScreenReaderService()Z
 
@@ -521,7 +517,6 @@
 
 .method public userSwitched(Landroid/content/pm/UserInfo;)V
     .locals 5
-    .param p1    # Landroid/content/pm/UserInfo;
 
     const/4 v4, 0x0
 

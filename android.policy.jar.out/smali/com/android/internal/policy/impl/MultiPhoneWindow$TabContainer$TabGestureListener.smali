@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Lcom/android/internal/policy/impl/MultiPhoneWindow$TabContainer;Lcom/android/internal/policy/impl/MultiPhoneWindow$1;)V
     .locals 0
-    .param p1    # Lcom/android/internal/policy/impl/MultiPhoneWindow$TabContainer;
-    .param p2    # Lcom/android/internal/policy/impl/MultiPhoneWindow$1;
 
     invoke-direct {p0, p1}, Lcom/android/internal/policy/impl/MultiPhoneWindow$TabContainer$TabGestureListener;-><init>(Lcom/android/internal/policy/impl/MultiPhoneWindow$TabContainer;)V
 
@@ -43,7 +41,6 @@
 # virtual methods
 .method public onLongPress(Landroid/view/MotionEvent;)V
     .locals 4
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v3, 0x1
 

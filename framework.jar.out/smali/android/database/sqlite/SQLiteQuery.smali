@@ -14,9 +14,6 @@
 # direct methods
 .method constructor <init>(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Landroid/os/CancellationSignal;)V
     .locals 1
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/os/CancellationSignal;
 
     const/4 v0, 0x0
 
@@ -31,10 +28,6 @@
 # virtual methods
 .method fillWindow(Landroid/database/CursorWindow;IIZ)I
     .locals 11
-    .param p1    # Landroid/database/CursorWindow;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Z
 
     invoke-virtual {p0}, Landroid/database/sqlite/SQLiteQuery;->acquireReference()V
 

@@ -31,11 +31,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/internal/widget/SignView;FFJIF)V
     .locals 0
-    .param p2    # F
-    .param p3    # F
-    .param p4    # J
-    .param p6    # I
-    .param p7    # F
 
     iput-object p1, p0, Lcom/android/internal/widget/SignView$SignatureInput;->this$0:Lcom/android/internal/widget/SignView;
 

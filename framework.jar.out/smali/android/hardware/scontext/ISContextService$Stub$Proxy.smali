@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -45,8 +44,6 @@
 
 .method public changeParameters(Landroid/os/IBinder;Landroid/hardware/scontext/SContextProperty;)Z
     .locals 7
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Landroid/hardware/scontext/SContextProperty;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -204,8 +201,6 @@
 
 .method public initializeSContextService(Landroid/os/IBinder;I)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -259,8 +254,6 @@
 
 .method public registerCallback(Landroid/os/IBinder;Landroid/hardware/scontext/SContextProperty;)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Landroid/hardware/scontext/SContextProperty;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -333,8 +326,6 @@
 
 .method public requestToUpdate(Landroid/os/IBinder;I)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -388,8 +379,6 @@
 
 .method public setReferenceData(I[B)Z
     .locals 6
-    .param p1    # I
-    .param p2    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -454,8 +443,6 @@
 
 .method public unregisterCallback(Landroid/os/IBinder;I)Z
     .locals 6
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

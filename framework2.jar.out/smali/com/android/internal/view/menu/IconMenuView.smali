@@ -84,8 +84,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 8
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v7, -0x1
 
@@ -248,7 +246,6 @@
 
 .method static synthetic access$000(Lcom/android/internal/view/menu/IconMenuView;)Lcom/android/internal/view/menu/MenuBuilder;
     .locals 1
-    .param p0    # Lcom/android/internal/view/menu/IconMenuView;
 
     iget-object v0, p0, Lcom/android/internal/view/menu/IconMenuView;->mMenu:Lcom/android/internal/view/menu/MenuBuilder;
 
@@ -257,7 +254,6 @@
 
 .method private calculateItemFittingMetadata(I)V
     .locals 7
-    .param p1    # I
 
     iget v3, p0, Lcom/android/internal/view/menu/IconMenuView;->mMaxItemsPerRow:I
 
@@ -382,7 +378,6 @@
 
 .method private layoutItems(I)V
     .locals 4
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getChildCount()I
 
@@ -442,8 +437,6 @@
 
 .method private layoutItemsUsingGravity(II)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     div-int v2, p2, p1
 
@@ -481,8 +474,6 @@
 
 .method private positionChildren(II)V
     .locals 23
-    .param p1    # I
-    .param p2    # I
 
     move-object/from16 v0, p0
 
@@ -858,7 +849,6 @@
 
 .method private setChildrenCaptionMode(Z)V
     .locals 2
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/internal/view/menu/IconMenuView;->mLastChildrenCaptionMode:Z
 
@@ -889,7 +879,6 @@
 
 .method private setCycleShortcutCaptionMode(Z)V
     .locals 1
-    .param p1    # Z
 
     const/4 v0, 0x0
 
@@ -916,7 +905,6 @@
 # virtual methods
 .method protected checkLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Z
     .locals 1
-    .param p1    # Landroid/view/ViewGroup$LayoutParams;
 
     instance-of v0, p1, Lcom/android/internal/view/menu/IconMenuView$LayoutParams;
 
@@ -969,7 +957,6 @@
 
 .method public dispatchKeyEvent(Landroid/view/KeyEvent;)Z
     .locals 3
-    .param p1    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x1
 
@@ -1037,7 +1024,6 @@
 
 .method public bridge synthetic generateLayoutParams(Landroid/util/AttributeSet;)Landroid/view/ViewGroup$LayoutParams;
     .locals 1
-    .param p1    # Landroid/util/AttributeSet;
 
     invoke-virtual {p0, p1}, Lcom/android/internal/view/menu/IconMenuView;->generateLayoutParams(Landroid/util/AttributeSet;)Lcom/android/internal/view/menu/IconMenuView$LayoutParams;
 
@@ -1048,7 +1034,6 @@
 
 .method public generateLayoutParams(Landroid/util/AttributeSet;)Lcom/android/internal/view/menu/IconMenuView$LayoutParams;
     .locals 2
-    .param p1    # Landroid/util/AttributeSet;
 
     new-instance v0, Lcom/android/internal/view/menu/IconMenuView$LayoutParams;
 
@@ -1127,7 +1112,6 @@
 
 .method public initialize(Lcom/android/internal/view/menu/MenuBuilder;)V
     .locals 0
-    .param p1    # Lcom/android/internal/view/menu/MenuBuilder;
 
     iput-object p1, p0, Lcom/android/internal/view/menu/IconMenuView;->mMenu:Lcom/android/internal/view/menu/MenuBuilder;
 
@@ -1136,7 +1120,6 @@
 
 .method public invokeItem(Lcom/android/internal/view/menu/MenuItemImpl;)Z
     .locals 2
-    .param p1    # Lcom/android/internal/view/menu/MenuItemImpl;
 
     iget-object v0, p0, Lcom/android/internal/view/menu/IconMenuView;->mMenu:Lcom/android/internal/view/menu/MenuBuilder;
 
@@ -1190,7 +1173,6 @@
 
 .method protected onDraw(Landroid/graphics/Canvas;)V
     .locals 4
-    .param p1    # Landroid/graphics/Canvas;
 
     iget-object v0, p0, Lcom/android/internal/view/menu/IconMenuView;->mHorizontalDivider:Landroid/graphics/drawable/Drawable;
 
@@ -1257,11 +1239,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 7
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getChildCount()I
 
@@ -1302,8 +1279,6 @@
 
 .method protected onMeasure(II)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
 
     const v3, 0x7fffffff
 
@@ -1353,7 +1328,6 @@
 
 .method protected onRestoreInstanceState(Landroid/os/Parcelable;)V
     .locals 4
-    .param p1    # Landroid/os/Parcelable;
 
     move-object v0, p1
 
@@ -1441,7 +1415,6 @@
 
 .method public onWindowFocusChanged(Z)V
     .locals 1
-    .param p1    # Z
 
     if-nez p1, :cond_0
 
@@ -1493,7 +1466,6 @@
 
 .method setNumActualItemsShown(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/internal/view/menu/IconMenuView;->mNumActualItemsShown:I
 

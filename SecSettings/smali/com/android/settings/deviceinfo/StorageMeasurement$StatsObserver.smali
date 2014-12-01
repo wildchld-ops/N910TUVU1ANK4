@@ -29,11 +29,6 @@
 # direct methods
 .method public constructor <init>(ZLcom/android/settings/deviceinfo/StorageMeasurement$MeasurementDetails;ILandroid/os/Message;I)V
     .locals 0
-    .param p1    # Z
-    .param p2    # Lcom/android/settings/deviceinfo/StorageMeasurement$MeasurementDetails;
-    .param p3    # I
-    .param p4    # Landroid/os/Message;
-    .param p5    # I
 
     invoke-direct {p0}, Landroid/content/pm/IPackageStatsObserver$Stub;-><init>()V
 
@@ -52,7 +47,6 @@
 
 .method private addStatsLocked(Landroid/content/pm/PackageStats;)V
     .locals 13
-    .param p1    # Landroid/content/pm/PackageStats;
 
     iget-boolean v6, p0, Lcom/android/settings/deviceinfo/StorageMeasurement$StatsObserver;->mIsInternal:Z
 
@@ -194,8 +188,6 @@
 # virtual methods
 .method public onGetStatsCompleted(Landroid/content/pm/PackageStats;Z)V
     .locals 2
-    .param p1    # Landroid/content/pm/PackageStats;
-    .param p2    # Z
 
     iget-object v1, p0, Lcom/android/settings/deviceinfo/StorageMeasurement$StatsObserver;->mDetails:Lcom/android/settings/deviceinfo/StorageMeasurement$MeasurementDetails;
 

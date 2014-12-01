@@ -81,8 +81,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Lcom/android/server/accessibility/AccessibilityManagerService;)V
     .locals 8
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/server/accessibility/AccessibilityManagerService;
 
     const/4 v5, 0x1
 
@@ -280,7 +278,6 @@
 
 .method static synthetic access$400(Lcom/android/server/accessibility/OverlayMagnifier;)Landroid/hardware/display/IDisplayManager;
     .locals 1
-    .param p0    # Lcom/android/server/accessibility/OverlayMagnifier;
 
     iget-object v0, p0, Lcom/android/server/accessibility/OverlayMagnifier;->mDisplayManager:Landroid/hardware/display/IDisplayManager;
 
@@ -289,7 +286,6 @@
 
 .method static synthetic access$500(Lcom/android/server/accessibility/OverlayMagnifier;)V
     .locals 0
-    .param p0    # Lcom/android/server/accessibility/OverlayMagnifier;
 
     invoke-direct {p0}, Lcom/android/server/accessibility/OverlayMagnifier;->hideMagnifier()V
 
@@ -298,7 +294,6 @@
 
 .method static synthetic access$600(Lcom/android/server/accessibility/OverlayMagnifier;)V
     .locals 0
-    .param p0    # Lcom/android/server/accessibility/OverlayMagnifier;
 
     invoke-direct {p0}, Lcom/android/server/accessibility/OverlayMagnifier;->setMagnificationSettings()V
 
@@ -307,7 +302,6 @@
 
 .method static synthetic access$700(Lcom/android/server/accessibility/OverlayMagnifier;)Z
     .locals 1
-    .param p0    # Lcom/android/server/accessibility/OverlayMagnifier;
 
     iget-boolean v0, p0, Lcom/android/server/accessibility/OverlayMagnifier;->mCoverState:Z
 
@@ -316,8 +310,6 @@
 
 .method static synthetic access$702(Lcom/android/server/accessibility/OverlayMagnifier;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/accessibility/OverlayMagnifier;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/accessibility/OverlayMagnifier;->mCoverState:Z
 
@@ -593,7 +585,6 @@
 
 .method public onAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
     .locals 1
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
 
     iget-object v0, p0, Lcom/android/server/accessibility/OverlayMagnifier;->mNext:Lcom/android/server/accessibility/EventStreamTransformation;
 
@@ -656,9 +647,6 @@
 
 .method public onMotionEvent(Landroid/view/MotionEvent;Landroid/view/MotionEvent;I)V
     .locals 5
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # Landroid/view/MotionEvent;
-    .param p3    # I
 
     iget-boolean v3, p0, Lcom/android/server/accessibility/OverlayMagnifier;->mCoverState:Z
 
@@ -788,7 +776,6 @@
 
 .method public setNext(Lcom/android/server/accessibility/EventStreamTransformation;)V
     .locals 0
-    .param p1    # Lcom/android/server/accessibility/EventStreamTransformation;
 
     iput-object p1, p0, Lcom/android/server/accessibility/OverlayMagnifier;->mNext:Lcom/android/server/accessibility/EventStreamTransformation;
 

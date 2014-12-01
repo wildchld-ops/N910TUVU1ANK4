@@ -74,8 +74,6 @@
 
 .method public constructor <init>(ILandroid/graphics/Rect;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/graphics/Rect;
 
     const/4 v0, 0x0
 
@@ -104,9 +102,6 @@
 
 .method public constructor <init>(ILandroid/graphics/Rect;I)V
     .locals 0
-    .param p1    # I
-    .param p2    # Landroid/graphics/Rect;
-    .param p3    # I
 
     invoke-direct {p0, p1, p2}, Lcom/samsung/android/smartclip/SmartClipDataExtractionEvent;-><init>(ILandroid/graphics/Rect;)V
 
@@ -127,7 +122,6 @@
 
 .method public readFromParcel(Landroid/os/Parcel;)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
@@ -166,8 +160,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget v0, p0, Lcom/samsung/android/smartclip/SmartClipDataExtractionEvent;->mRequestId:I
 

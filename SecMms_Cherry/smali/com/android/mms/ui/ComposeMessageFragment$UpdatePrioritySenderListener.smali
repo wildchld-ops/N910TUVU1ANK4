@@ -32,8 +32,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/mms/ui/ComposeMessageFragment;ZLcom/android/mms/data/Contact;)V
     .locals 0
-    .param p2    # Z
-    .param p3    # Lcom/android/mms/data/Contact;
 
     iput-object p1, p0, Lcom/android/mms/ui/ComposeMessageFragment$UpdatePrioritySenderListener;->this$0:Lcom/android/mms/ui/ComposeMessageFragment;
 
@@ -50,8 +48,6 @@
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 19
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     check-cast p1, Landroid/app/AlertDialog;
 

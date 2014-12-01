@@ -31,7 +31,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -60,7 +59,6 @@
 
 .method private enforceEmailAccountPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
     .locals 6
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     iget v1, p1, Landroid/app/enterprise/ContextInfo;->mContainerId:I
 
@@ -130,7 +128,6 @@
 
 .method private fillInEmailAccountData(Lcom/android/server/enterprise/email/AccountMetaData;)Landroid/app/enterprise/Account;
     .locals 6
-    .param p1    # Lcom/android/server/enterprise/email/AccountMetaData;
 
     const/4 v5, -0x1
 
@@ -336,7 +333,6 @@
 
 .method private getValidIncomingProtocol(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Lcom/android/server/enterprise/email/SettingsUtils;->getValidStr(Ljava/lang/String;)Ljava/lang/String;
 
@@ -394,7 +390,6 @@
 
 .method private getValidOutgoingProtocol(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Lcom/android/server/enterprise/email/SettingsUtils;->getValidStr(Ljava/lang/String;)Ljava/lang/String;
 
@@ -444,11 +439,6 @@
 
 .method private updateAccount(Landroid/app/enterprise/ContextInfo;Lcom/android/server/enterprise/email/AccountMetaData;JZLjava/lang/String;)J
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Lcom/android/server/enterprise/email/AccountMetaData;
-    .param p3    # J
-    .param p5    # Z
-    .param p6    # Ljava/lang/String;
 
     const/4 v4, 0x1
 
@@ -505,18 +495,6 @@
 # virtual methods
 .method public addNewAccount(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)J
     .locals 21
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
-    .param p6    # Ljava/lang/String;
-    .param p7    # Ljava/lang/String;
-    .param p8    # Ljava/lang/String;
-    .param p9    # Ljava/lang/String;
-    .param p10    # I
-    .param p11    # Ljava/lang/String;
-    .param p12    # Ljava/lang/String;
 
     const-string v0, "EmailAccountPolicy"
 
@@ -575,26 +553,6 @@
 
 .method public addNewAccount_ex(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;ZZZZZZLjava/lang/String;Z)J
     .locals 21
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
-    .param p6    # Ljava/lang/String;
-    .param p7    # Ljava/lang/String;
-    .param p8    # Ljava/lang/String;
-    .param p9    # Ljava/lang/String;
-    .param p10    # I
-    .param p11    # Ljava/lang/String;
-    .param p12    # Ljava/lang/String;
-    .param p13    # Z
-    .param p14    # Z
-    .param p15    # Z
-    .param p16    # Z
-    .param p17    # Z
-    .param p18    # Z
-    .param p19    # Ljava/lang/String;
-    .param p20    # Z
 
     invoke-direct/range {p0 .. p1}, Lcom/android/server/enterprise/email/EmailAccountPolicy;->enforceEmailAccountPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -1035,8 +993,6 @@
 
 .method public addNewAccount_new(Landroid/app/enterprise/ContextInfo;Landroid/app/enterprise/EmailAccount;)J
     .locals 29
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Landroid/app/enterprise/EmailAccount;
 
     const-string v3, "EmailAccountPolicy"
 
@@ -1662,8 +1618,6 @@
 
 .method public deleteAccount(Landroid/app/enterprise/ContextInfo;J)Z
     .locals 10
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # J
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/email/EmailAccountPolicy;->enforceEmailAccountPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -1797,8 +1751,6 @@
 
 .method public getAccountDetails(Landroid/app/enterprise/ContextInfo;J)Landroid/app/enterprise/Account;
     .locals 4
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # J
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/email/EmailAccountPolicy;->enforceEmailAccountPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -1855,10 +1807,6 @@
 
 .method public getAccountId(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)J
     .locals 8
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/email/EmailAccountPolicy;->enforceEmailAccountPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -1887,7 +1835,6 @@
 
 .method public getAllEmailAccounts(Landroid/app/enterprise/ContextInfo;)[Landroid/app/enterprise/Account;
     .locals 12
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/email/EmailAccountPolicy;->enforceEmailAccountPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -2021,8 +1968,6 @@
 
 .method public getSecurityInComingServerPassword(Landroid/app/enterprise/ContextInfo;J)Ljava/lang/String;
     .locals 9
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # J
 
     invoke-direct {p0}, Lcom/android/server/enterprise/email/EmailAccountPolicy;->getEDM()Landroid/app/enterprise/EnterpriseDeviceManager;
 
@@ -2103,8 +2048,6 @@
 
 .method public getSecurityOutGoingServerPassword(Landroid/app/enterprise/ContextInfo;J)Ljava/lang/String;
     .locals 9
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # J
 
     invoke-direct {p0}, Lcom/android/server/enterprise/email/EmailAccountPolicy;->getEDM()Landroid/app/enterprise/EnterpriseDeviceManager;
 
@@ -2185,31 +2128,24 @@
 
 .method public onAdminAdded(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onAdminRemoved(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onPreAdminRemoval(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public removePendingAccount(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 9
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/email/EmailAccountPolicy;->enforceEmailAccountPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -2272,7 +2208,6 @@
 
 .method public sendAccountsChangedBroadcast(Landroid/app/enterprise/ContextInfo;)V
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/email/EmailAccountPolicy;->enforceEmailAccountPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -2297,9 +2232,6 @@
 
 .method public setAccountName(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;J)Z
     .locals 9
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # J
 
     const/4 v5, 0x0
 
@@ -2390,9 +2322,6 @@
 
 .method public setAlwaysVibrateOnEmailNotification(Landroid/app/enterprise/ContextInfo;ZJ)Z
     .locals 10
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
-    .param p3    # J
 
     const/4 v7, 0x1
 
@@ -2512,8 +2441,6 @@
 
 .method public setAsDefaultAccount(Landroid/app/enterprise/ContextInfo;J)Z
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # J
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/email/EmailAccountPolicy;->enforceEmailAccountPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -2564,9 +2491,6 @@
 
 .method public setEmailAddress(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;J)J
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # J
 
     const-wide/16 v0, -0x1
 
@@ -2657,9 +2581,6 @@
 
 .method public setInComingProtocol(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;J)Z
     .locals 9
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # J
 
     const/4 v5, 0x0
 
@@ -2741,9 +2662,6 @@
 
 .method public setInComingServerAcceptAllCertificates(Landroid/app/enterprise/ContextInfo;ZJ)Z
     .locals 9
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
-    .param p3    # J
 
     const/4 v5, 0x0
 
@@ -2813,9 +2731,6 @@
 
 .method public setInComingServerAddress(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;J)J
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # J
 
     const-wide/16 v0, -0x1
 
@@ -2891,9 +2806,6 @@
 
 .method public setInComingServerLogin(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;J)J
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # J
 
     const-wide/16 v3, -0x1
 
@@ -2939,9 +2851,6 @@
 
 .method public setInComingServerPassword(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;J)Z
     .locals 11
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # J
 
     const/4 v5, 0x1
 
@@ -3005,9 +2914,6 @@
 
 .method public setInComingServerPathPrefix(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;J)Z
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # J
 
     const/4 v2, 0x0
 
@@ -3038,9 +2944,6 @@
 
 .method public setInComingServerPort(Landroid/app/enterprise/ContextInfo;IJ)Z
     .locals 9
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # I
-    .param p3    # J
 
     const/4 v5, 0x0
 
@@ -3118,9 +3021,6 @@
 
 .method public setInComingServerSSL(Landroid/app/enterprise/ContextInfo;ZJ)Z
     .locals 9
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
-    .param p3    # J
 
     const/4 v5, 0x0
 
@@ -3190,9 +3090,6 @@
 
 .method public setOutGoingProtocol(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;J)Z
     .locals 4
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # J
 
     const/4 v3, 0x0
 
@@ -3232,9 +3129,6 @@
 
 .method public setOutGoingServerAcceptAllCertificates(Landroid/app/enterprise/ContextInfo;ZJ)Z
     .locals 9
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
-    .param p3    # J
 
     const/4 v5, 0x0
 
@@ -3326,9 +3220,6 @@
 
 .method public setOutGoingServerAddress(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;J)J
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # J
 
     const-wide/16 v0, -0x1
 
@@ -3404,9 +3295,6 @@
 
 .method public setOutGoingServerLogin(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;J)J
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # J
 
     const-wide/16 v3, -0x1
 
@@ -3446,9 +3334,6 @@
 
 .method public setOutGoingServerPassword(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;J)Z
     .locals 11
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # J
 
     const/4 v5, 0x0
 
@@ -3512,9 +3397,6 @@
 
 .method public setOutGoingServerPathPrefix(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;J)Z
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # J
 
     const/4 v2, 0x0
 
@@ -3545,9 +3427,6 @@
 
 .method public setOutGoingServerPort(Landroid/app/enterprise/ContextInfo;IJ)Z
     .locals 9
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # I
-    .param p3    # J
 
     const/4 v5, 0x0
 
@@ -3625,9 +3504,6 @@
 
 .method public setOutGoingServerSSL(Landroid/app/enterprise/ContextInfo;ZJ)Z
     .locals 9
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
-    .param p3    # J
 
     const/4 v5, 0x0
 
@@ -3719,8 +3595,6 @@
 
 .method public setSecurityInComingServerPassword(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)J
     .locals 10
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/email/EmailAccountPolicy;->getEDM()Landroid/app/enterprise/EnterpriseDeviceManager;
 
@@ -3823,8 +3697,6 @@
 
 .method public setSecurityOutGoingServerPassword(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)J
     .locals 10
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/email/EmailAccountPolicy;->getEDM()Landroid/app/enterprise/EnterpriseDeviceManager;
 
@@ -3927,9 +3799,6 @@
 
 .method public setSenderName(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;J)Z
     .locals 9
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # J
 
     const/4 v5, 0x0
 
@@ -4020,9 +3889,6 @@
 
 .method public setSignature(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;J)Z
     .locals 9
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # J
 
     const/4 v5, 0x0
 
@@ -4113,9 +3979,6 @@
 
 .method public setSilentVibrateOnEmailNotification(Landroid/app/enterprise/ContextInfo;ZJ)Z
     .locals 10
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
-    .param p3    # J
 
     const/4 v7, 0x1
 
@@ -4235,9 +4098,6 @@
 
 .method public setSyncInterval(Landroid/app/enterprise/ContextInfo;IJ)Z
     .locals 4
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # I
-    .param p3    # J
 
     const/4 v3, 0x0
 

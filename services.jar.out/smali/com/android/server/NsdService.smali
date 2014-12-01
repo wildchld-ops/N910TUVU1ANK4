@@ -126,7 +126,6 @@
 
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 7
-    .param p1    # Landroid/content/Context;
 
     const/4 v1, 0x1
 
@@ -215,7 +214,6 @@
 
 .method static synthetic access$000(I)Ljava/lang/String;
     .locals 1
-    .param p0    # I
 
     invoke-static {p0}, Lcom/android/server/NsdService;->cmdToString(I)Ljava/lang/String;
 
@@ -226,7 +224,6 @@
 
 .method static synthetic access$100(Lcom/android/server/NsdService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/NsdService;
 
     invoke-direct {p0}, Lcom/android/server/NsdService;->isNsdEnabled()Z
 
@@ -237,7 +234,6 @@
 
 .method static synthetic access$1000(Lcom/android/server/NsdService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/NsdService;
 
     invoke-direct {p0}, Lcom/android/server/NsdService;->startMDnsDaemon()Z
 
@@ -248,7 +244,6 @@
 
 .method static synthetic access$1100(Lcom/android/server/NsdService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/NsdService;
 
     invoke-direct {p0}, Lcom/android/server/NsdService;->stopMDnsDaemon()Z
 
@@ -259,7 +254,6 @@
 
 .method static synthetic access$1300(Lcom/android/server/NsdService;)Landroid/util/SparseArray;
     .locals 1
-    .param p0    # Lcom/android/server/NsdService;
 
     iget-object v0, p0, Lcom/android/server/NsdService;->mIdToClientInfoMap:Landroid/util/SparseArray;
 
@@ -268,7 +262,6 @@
 
 .method static synthetic access$1600(Lcom/android/server/NsdService;)I
     .locals 1
-    .param p0    # Lcom/android/server/NsdService;
 
     invoke-direct {p0}, Lcom/android/server/NsdService;->getUniqueId()I
 
@@ -279,9 +272,6 @@
 
 .method static synthetic access$1700(Lcom/android/server/NsdService;ILjava/lang/String;)Z
     .locals 1
-    .param p0    # Lcom/android/server/NsdService;
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/NsdService;->discoverServices(ILjava/lang/String;)Z
 
@@ -292,10 +282,6 @@
 
 .method static synthetic access$1800(Lcom/android/server/NsdService;Landroid/os/Message;ILjava/lang/Object;)V
     .locals 0
-    .param p0    # Lcom/android/server/NsdService;
-    .param p1    # Landroid/os/Message;
-    .param p2    # I
-    .param p3    # Ljava/lang/Object;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/server/NsdService;->replyToMessage(Landroid/os/Message;ILjava/lang/Object;)V
 
@@ -304,8 +290,6 @@
 
 .method static synthetic access$1900(Lcom/android/server/NsdService;I)Z
     .locals 1
-    .param p0    # Lcom/android/server/NsdService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/NsdService;->stopServiceDiscovery(I)Z
 
@@ -316,7 +300,6 @@
 
 .method static synthetic access$200(Lcom/android/server/NsdService;)Lcom/android/server/NsdService$NsdStateMachine;
     .locals 1
-    .param p0    # Lcom/android/server/NsdService;
 
     iget-object v0, p0, Lcom/android/server/NsdService;->mNsdStateMachine:Lcom/android/server/NsdService$NsdStateMachine;
 
@@ -325,9 +308,6 @@
 
 .method static synthetic access$2000(Lcom/android/server/NsdService;Landroid/os/Message;I)V
     .locals 0
-    .param p0    # Lcom/android/server/NsdService;
-    .param p1    # Landroid/os/Message;
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/NsdService;->replyToMessage(Landroid/os/Message;I)V
 
@@ -336,9 +316,6 @@
 
 .method static synthetic access$2100(Lcom/android/server/NsdService;ILandroid/net/nsd/NsdServiceInfo;)Z
     .locals 1
-    .param p0    # Lcom/android/server/NsdService;
-    .param p1    # I
-    .param p2    # Landroid/net/nsd/NsdServiceInfo;
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/NsdService;->registerService(ILandroid/net/nsd/NsdServiceInfo;)Z
 
@@ -349,8 +326,6 @@
 
 .method static synthetic access$2200(Lcom/android/server/NsdService;I)Z
     .locals 1
-    .param p0    # Lcom/android/server/NsdService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/NsdService;->unregisterService(I)Z
 
@@ -361,9 +336,6 @@
 
 .method static synthetic access$2400(Lcom/android/server/NsdService;ILandroid/net/nsd/NsdServiceInfo;)Z
     .locals 1
-    .param p0    # Lcom/android/server/NsdService;
-    .param p1    # I
-    .param p2    # Landroid/net/nsd/NsdServiceInfo;
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/NsdService;->resolveService(ILandroid/net/nsd/NsdServiceInfo;)Z
 
@@ -374,8 +346,6 @@
 
 .method static synthetic access$2600(Lcom/android/server/NsdService;I)Z
     .locals 1
-    .param p0    # Lcom/android/server/NsdService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/NsdService;->stopResolveService(I)Z
 
@@ -386,9 +356,6 @@
 
 .method static synthetic access$2700(Lcom/android/server/NsdService;ILjava/lang/String;)Z
     .locals 1
-    .param p0    # Lcom/android/server/NsdService;
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/NsdService;->getAddrInfo(ILjava/lang/String;)Z
 
@@ -399,8 +366,6 @@
 
 .method static synthetic access$2800(Lcom/android/server/NsdService;I)Z
     .locals 1
-    .param p0    # Lcom/android/server/NsdService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/NsdService;->stopGetAddrInfo(I)Z
 
@@ -411,7 +376,6 @@
 
 .method static synthetic access$2900(Lcom/android/server/NsdService;)Ljava/util/concurrent/CountDownLatch;
     .locals 1
-    .param p0    # Lcom/android/server/NsdService;
 
     iget-object v0, p0, Lcom/android/server/NsdService;->mNativeDaemonConnected:Ljava/util/concurrent/CountDownLatch;
 
@@ -420,7 +384,6 @@
 
 .method static synthetic access$300(Lcom/android/server/NsdService;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/server/NsdService;
 
     iget-object v0, p0, Lcom/android/server/NsdService;->mContext:Landroid/content/Context;
 
@@ -429,7 +392,6 @@
 
 .method static synthetic access$500(Lcom/android/server/NsdService;)Ljava/util/HashMap;
     .locals 1
-    .param p0    # Lcom/android/server/NsdService;
 
     iget-object v0, p0, Lcom/android/server/NsdService;->mClients:Ljava/util/HashMap;
 
@@ -438,10 +400,6 @@
 
 .method static synthetic access$600(Lcom/android/server/NsdService;Landroid/os/Message;II)V
     .locals 0
-    .param p0    # Lcom/android/server/NsdService;
-    .param p1    # Landroid/os/Message;
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/server/NsdService;->replyToMessage(Landroid/os/Message;II)V
 
@@ -450,8 +408,6 @@
 
 .method static synthetic access$700(Lcom/android/server/NsdService;Z)V
     .locals 0
-    .param p0    # Lcom/android/server/NsdService;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/NsdService;->sendNsdStateChangeBroadcast(Z)V
 
@@ -460,7 +416,6 @@
 
 .method private static cmdToString(I)Ljava/lang/String;
     .locals 1
-    .param p0    # I
 
     const/high16 v0, 0x60000
 
@@ -489,7 +444,6 @@
 
 .method public static create(Landroid/content/Context;)Lcom/android/server/NsdService;
     .locals 2
-    .param p0    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/InterruptedException;
@@ -509,8 +463,6 @@
 
 .method private discoverServices(ILjava/lang/String;)Z
     .locals 8
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v1, 0x1
 
@@ -614,8 +566,6 @@
 
 .method private getAddrInfo(ILjava/lang/String;)Z
     .locals 8
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v1, 0x1
 
@@ -783,7 +733,6 @@
 
 .method private obtainMessage(Landroid/os/Message;)Landroid/os/Message;
     .locals 2
-    .param p1    # Landroid/os/Message;
 
     invoke-static {}, Landroid/os/Message;->obtain()Landroid/os/Message;
 
@@ -798,8 +747,6 @@
 
 .method private registerService(ILandroid/net/nsd/NsdServiceInfo;)Z
     .locals 8
-    .param p1    # I
-    .param p2    # Landroid/net/nsd/NsdServiceInfo;
 
     const/4 v1, 0x1
 
@@ -927,8 +874,6 @@
 
 .method private replyToMessage(Landroid/os/Message;I)V
     .locals 2
-    .param p1    # Landroid/os/Message;
-    .param p2    # I
 
     iget-object v1, p1, Landroid/os/Message;->replyTo:Landroid/os/Messenger;
 
@@ -953,9 +898,6 @@
 
 .method private replyToMessage(Landroid/os/Message;II)V
     .locals 2
-    .param p1    # Landroid/os/Message;
-    .param p2    # I
-    .param p3    # I
 
     iget-object v1, p1, Landroid/os/Message;->replyTo:Landroid/os/Messenger;
 
@@ -982,9 +924,6 @@
 
 .method private replyToMessage(Landroid/os/Message;ILjava/lang/Object;)V
     .locals 2
-    .param p1    # Landroid/os/Message;
-    .param p2    # I
-    .param p3    # Ljava/lang/Object;
 
     iget-object v1, p1, Landroid/os/Message;->replyTo:Landroid/os/Messenger;
 
@@ -1011,8 +950,6 @@
 
 .method private resolveService(ILandroid/net/nsd/NsdServiceInfo;)Z
     .locals 8
-    .param p1    # I
-    .param p2    # Landroid/net/nsd/NsdServiceInfo;
 
     const/4 v1, 0x1
 
@@ -1134,7 +1071,6 @@
 
 .method private sendNsdStateChangeBroadcast(Z)V
     .locals 3
-    .param p1    # Z
 
     new-instance v0, Landroid/content/Intent;
 
@@ -1240,7 +1176,6 @@
 
 .method private stopGetAddrInfo(I)Z
     .locals 8
-    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -1395,7 +1330,6 @@
 
 .method private stopResolveService(I)Z
     .locals 8
-    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -1485,7 +1419,6 @@
 
 .method private stopServiceDiscovery(I)Z
     .locals 8
-    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -1575,7 +1508,6 @@
 
 .method private unregisterService(I)Z
     .locals 8
-    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -1665,8 +1597,6 @@
 
 .method private updateService(ILandroid/net/nsd/DnsSdTxtRecord;)Z
     .locals 8
-    .param p1    # I
-    .param p2    # Landroid/net/nsd/DnsSdTxtRecord;
 
     const/4 v2, 0x1
 
@@ -1793,9 +1723,6 @@
 # virtual methods
 .method public dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     iget-object v2, p0, Lcom/android/server/NsdService;->mContext:Landroid/content/Context;
 
@@ -1914,7 +1841,6 @@
 
 .method public setEnabled(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/server/NsdService;->mContext:Landroid/content/Context;
 

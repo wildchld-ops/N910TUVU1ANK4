@@ -82,7 +82,6 @@
 
 .method public constructor <init>(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -105,8 +104,6 @@
 
 .method static synthetic access$002(Lcom/samsung/android/writingbuddy/PopupCue;Z)Z
     .locals 0
-    .param p0    # Lcom/samsung/android/writingbuddy/PopupCue;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/android/writingbuddy/PopupCue;->mIsAirButtonClicked:Z
 
@@ -115,8 +112,6 @@
 
 .method private computePosition(ILandroid/view/MotionEvent;)V
     .locals 29
-    .param p1    # I
-    .param p2    # Landroid/view/MotionEvent;
 
     const/4 v4, 0x0
 
@@ -786,8 +781,6 @@
 
 .method private convertDPtoPX(FLandroid/util/DisplayMetrics;)I
     .locals 3
-    .param p1    # F
-    .param p2    # Landroid/util/DisplayMetrics;
 
     move-object v0, p2
 
@@ -1030,7 +1023,6 @@
 
 .method private getRectInWindow(Landroid/view/View;)Landroid/graphics/Rect;
     .locals 7
-    .param p1    # Landroid/view/View;
 
     const/4 v6, 0x1
 
@@ -1084,7 +1076,6 @@
 
 .method private getRectOnScreen(Landroid/view/View;)Landroid/graphics/Rect;
     .locals 7
-    .param p1    # Landroid/view/View;
 
     const/4 v6, 0x1
 
@@ -1175,7 +1166,6 @@
 
 .method private getVisibleRectInWindow(Landroid/view/View;)Landroid/graphics/Rect;
     .locals 10
-    .param p1    # Landroid/view/View;
 
     invoke-direct {p0, p1}, Lcom/samsung/android/writingbuddy/PopupCue;->getRectInWindow(Landroid/view/View;)Landroid/graphics/Rect;
 
@@ -1341,7 +1331,6 @@
 
 .method private getVisibleRectOnScreen(Landroid/view/View;)Landroid/graphics/Rect;
     .locals 10
-    .param p1    # Landroid/view/View;
 
     invoke-direct {p0, p1}, Lcom/samsung/android/writingbuddy/PopupCue;->getRectOnScreen(Landroid/view/View;)Landroid/graphics/Rect;
 
@@ -1541,9 +1530,6 @@
 
 .method private pointInView(Landroid/view/View;FF)Z
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # F
-    .param p3    # F
 
     const/4 v2, 0x0
 
@@ -1602,7 +1588,6 @@
 # virtual methods
 .method public dismiss(Z)V
     .locals 6
-    .param p1    # Z
 
     const/4 v4, 0x0
 
@@ -1744,8 +1729,6 @@
 
 .method public isPointInPopup(FF)Z
     .locals 2
-    .param p1    # F
-    .param p2    # F
 
     const/4 v1, 0x0
 
@@ -1846,7 +1829,6 @@
 
 .method public setOnHoverListener(Landroid/view/View$OnHoverListener;)V
     .locals 1
-    .param p1    # Landroid/view/View$OnHoverListener;
 
     iput-object p1, p0, Lcom/samsung/android/writingbuddy/PopupCue;->mHoverListner:Landroid/view/View$OnHoverListener;
 
@@ -1864,7 +1846,6 @@
 
 .method public setOnTouchListener(Landroid/view/View$OnTouchListener;)V
     .locals 1
-    .param p1    # Landroid/view/View$OnTouchListener;
 
     iput-object p1, p0, Lcom/samsung/android/writingbuddy/PopupCue;->mTouchListner:Landroid/view/View$OnTouchListener;
 
@@ -1882,8 +1863,6 @@
 
 .method public setPosition(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     iput p1, p0, Lcom/samsung/android/writingbuddy/PopupCue;->mPopupPosX:I
 
@@ -1894,8 +1873,6 @@
 
 .method public setSize(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     iput p1, p0, Lcom/samsung/android/writingbuddy/PopupCue;->mPopupWidth:I
 
@@ -1906,7 +1883,6 @@
 
 .method public setWindowToken(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     iput-object p1, p0, Lcom/samsung/android/writingbuddy/PopupCue;->mWindowToken:Landroid/os/IBinder;
 
@@ -1915,8 +1891,6 @@
 
 .method public show(ILandroid/view/MotionEvent;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/view/MotionEvent;
 
     iput p1, p0, Lcom/samsung/android/writingbuddy/PopupCue;->mType:I
 
@@ -1971,7 +1945,6 @@
 
 .method public switchCueButton(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/samsung/android/writingbuddy/PopupCue;->mCueContainerView:Lcom/samsung/android/writingbuddy/PopupCue$CueContainer;
 
@@ -1982,7 +1955,6 @@
 
 .method public updatePopupPosition(Landroid/view/MotionEvent;)V
     .locals 3
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-object v1, p0, Lcom/samsung/android/writingbuddy/PopupCue;->mCueContainerView:Lcom/samsung/android/writingbuddy/PopupCue$CueContainer;
 

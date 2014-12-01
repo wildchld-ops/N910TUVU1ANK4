@@ -234,7 +234,6 @@
 
 .method private addPublicKeyLocked(Ljava/security/PublicKey;)J
     .locals 6
-    .param p1    # Ljava/security/PublicKey;
 
     invoke-direct {p0, p1}, Lcom/android/server/pm/KeySetManager;->getIdForPublicKeyLocked(Ljava/security/PublicKey;)J
 
@@ -297,7 +296,6 @@
 
 .method private getIdByKeySetLocked(Landroid/content/pm/KeySet;)J
     .locals 4
-    .param p1    # Landroid/content/pm/KeySet;
 
     const/4 v0, 0x0
 
@@ -346,7 +344,6 @@
 
 .method private getIdForPublicKeyLocked(Ljava/security/PublicKey;)J
     .locals 6
-    .param p1    # Ljava/security/PublicKey;
 
     new-instance v1, Ljava/lang/String;
 
@@ -468,7 +465,6 @@
 
 .method private getKnownKeySetsByPackageNameLocked(Ljava/lang/String;)Ljava/util/Set;
     .locals 9
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -576,8 +572,6 @@
 # virtual methods
 .method public addDefinedKeySetToPackage(Ljava/lang/String;Ljava/util/Set;Ljava/lang/String;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -657,7 +651,6 @@
 
 .method public addSigningKeySetToPackage(Ljava/lang/String;Ljava/util/Set;)V
     .locals 15
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -807,9 +800,6 @@
 
 .method public dump(Ljava/io/PrintWriter;Ljava/lang/String;Lcom/android/server/pm/PackageManagerService$DumpState;)V
     .locals 17
-    .param p1    # Ljava/io/PrintWriter;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/android/server/pm/PackageManagerService$DumpState;
 
     move-object/from16 v0, p0
 
@@ -1143,7 +1133,6 @@
 
 .method public encodePublicKey(Ljava/security/PublicKey;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/security/PublicKey;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1169,7 +1158,6 @@
 
 .method public getIdByKeySet(Landroid/content/pm/KeySet;)J
     .locals 4
-    .param p1    # Landroid/content/pm/KeySet;
 
     iget-object v1, p0, Lcom/android/server/pm/KeySetManager;->mLockObject:Ljava/lang/Object;
 
@@ -1196,8 +1184,6 @@
 
 .method public getKeySetByAliasAndPackageName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/pm/KeySet;
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v4, p0, Lcom/android/server/pm/KeySetManager;->mLockObject:Ljava/lang/Object;
 
@@ -1279,7 +1265,6 @@
 
 .method public getKeySetById(J)Landroid/content/pm/KeySet;
     .locals 2
-    .param p1    # J
 
     iget-object v1, p0, Lcom/android/server/pm/KeySetManager;->mLockObject:Ljava/lang/Object;
 
@@ -1310,7 +1295,6 @@
 
 .method public getSigningKeySetsByPackageName(Ljava/lang/String;)Ljava/util/Set;
     .locals 10
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1411,8 +1395,6 @@
 
 .method public packageIsSignedBy(Ljava/lang/String;Landroid/content/pm/KeySet;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/pm/KeySet;
 
     iget-object v4, p0, Lcom/android/server/pm/KeySetManager;->mLockObject:Ljava/lang/Object;
 
@@ -1480,7 +1462,6 @@
 
 .method readIdentifierLPw(Lorg/xmlpull/v1/XmlPullParser;)J
     .locals 2
-    .param p1    # Lorg/xmlpull/v1/XmlPullParser;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;
@@ -1504,7 +1485,6 @@
 
 .method readKeySetListLPw(Lorg/xmlpull/v1/XmlPullParser;)V
     .locals 11
-    .param p1    # Lorg/xmlpull/v1/XmlPullParser;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -1618,7 +1598,6 @@
 
 .method readKeySetsLPw(Lorg/xmlpull/v1/XmlPullParser;)V
     .locals 5
-    .param p1    # Lorg/xmlpull/v1/XmlPullParser;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -1681,7 +1660,6 @@
 
 .method readKeysLPw(Lorg/xmlpull/v1/XmlPullParser;)V
     .locals 7
-    .param p1    # Lorg/xmlpull/v1/XmlPullParser;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -1790,7 +1768,6 @@
 
 .method readPublicKeyLPw(Lorg/xmlpull/v1/XmlPullParser;)V
     .locals 7
-    .param p1    # Lorg/xmlpull/v1/XmlPullParser;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;
@@ -1831,7 +1808,6 @@
 
 .method public removeAppKeySetData(Ljava/lang/String;)V
     .locals 14
-    .param p1    # Ljava/lang/String;
 
     iget-object v11, p0, Lcom/android/server/pm/KeySetManager;->mLockObject:Ljava/lang/Object;
 
@@ -2111,7 +2087,6 @@
 
 .method writeKeySetManagerLPr(Lorg/xmlpull/v1/XmlSerializer;)V
     .locals 4
-    .param p1    # Lorg/xmlpull/v1/XmlSerializer;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -2173,7 +2148,6 @@
 
 .method writeKeySetsLPr(Lorg/xmlpull/v1/XmlSerializer;)V
     .locals 10
-    .param p1    # Lorg/xmlpull/v1/XmlSerializer;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -2281,7 +2255,6 @@
 
 .method writePublicKeysLPr(Lorg/xmlpull/v1/XmlSerializer;)V
     .locals 8
-    .param p1    # Lorg/xmlpull/v1/XmlSerializer;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

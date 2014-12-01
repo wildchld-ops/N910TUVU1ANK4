@@ -24,9 +24,6 @@
 # direct methods
 .method public constructor <init>(Landroid/graphics/Shader;Landroid/graphics/Shader;Landroid/graphics/PorterDuff$Mode;)V
     .locals 4
-    .param p1    # Landroid/graphics/Shader;
-    .param p2    # Landroid/graphics/Shader;
-    .param p3    # Landroid/graphics/PorterDuff$Mode;
 
     invoke-direct {p0}, Landroid/graphics/Shader;-><init>()V
 
@@ -71,9 +68,6 @@
 
 .method public constructor <init>(Landroid/graphics/Shader;Landroid/graphics/Shader;Landroid/graphics/Xfermode;)V
     .locals 5
-    .param p1    # Landroid/graphics/Shader;
-    .param p2    # Landroid/graphics/Shader;
-    .param p3    # Landroid/graphics/Xfermode;
 
     const/4 v2, 0x0
 

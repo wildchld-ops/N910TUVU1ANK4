@@ -71,8 +71,6 @@
 
 .method public setFixedSize(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
@@ -85,7 +83,6 @@
 
 .method public setFormat(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/view/ViewRootImpl$TakenSurfaceHolder;->this$0:Landroid/view/ViewRootImpl;
 
@@ -100,7 +97,6 @@
 
 .method public setKeepScreenOn(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Landroid/view/ViewRootImpl$TakenSurfaceHolder;->this$0:Landroid/view/ViewRootImpl;
 
@@ -115,7 +111,6 @@
 
 .method public setType(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/view/ViewRootImpl$TakenSurfaceHolder;->this$0:Landroid/view/ViewRootImpl;
 

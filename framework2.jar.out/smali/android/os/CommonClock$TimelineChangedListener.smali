@@ -35,8 +35,6 @@
 
 .method synthetic constructor <init>(Landroid/os/CommonClock;Landroid/os/CommonClock$1;)V
     .locals 0
-    .param p1    # Landroid/os/CommonClock;
-    .param p2    # Landroid/os/CommonClock$1;
 
     invoke-direct {p0, p1}, Landroid/os/CommonClock$TimelineChangedListener;-><init>(Landroid/os/CommonClock;)V
 
@@ -47,10 +45,6 @@
 # virtual methods
 .method protected onTransact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/os/Parcel;
-    .param p3    # Landroid/os/Parcel;
-    .param p4    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

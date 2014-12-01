@@ -48,8 +48,6 @@
 
 .method public constructor <init>(Lcom/android/server/am/ActivityManagerService;Lcom/android/server/am/ActivityRecord;Landroid/os/IBinder;)V
     .locals 1
-    .param p2    # Lcom/android/server/am/ActivityRecord;
-    .param p3    # Landroid/os/IBinder;
 
     const/4 v0, 0x0
 

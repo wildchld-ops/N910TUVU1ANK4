@@ -36,7 +36,6 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 6
-    .param p1    # Landroid/view/View;
 
     iget-object v3, p0, Lcom/diotek/ime/implement/setting/HelpIntegration$5;->this$0:Lcom/diotek/ime/implement/setting/HelpIntegration;
 

@@ -37,8 +37,6 @@
 
 .method synthetic constructor <init>(Lcom/android/settings/wifi/WifiSettings;Lcom/android/settings/wifi/WifiSettings$1;)V
     .locals 0
-    .param p1    # Lcom/android/settings/wifi/WifiSettings;
-    .param p2    # Lcom/android/settings/wifi/WifiSettings$1;
 
     invoke-direct {p0, p1}, Lcom/android/settings/wifi/WifiSettings$Scanner;-><init>(Lcom/android/settings/wifi/WifiSettings;)V
 
@@ -71,7 +69,6 @@
 
 .method public handleMessage(Landroid/os/Message;)V
     .locals 7
-    .param p1    # Landroid/os/Message;
 
     const-wide/16 v5, 0x2710
 

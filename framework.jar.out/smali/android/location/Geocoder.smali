@@ -16,7 +16,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
 
@@ -29,8 +28,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Ljava/util/Locale;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/util/Locale;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -107,9 +104,6 @@
 # virtual methods
 .method public getFromLocation(DDI)Ljava/util/List;
     .locals 10
-    .param p1    # D
-    .param p3    # D
-    .param p5    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(DDI)",
@@ -248,8 +242,6 @@
 
 .method public getFromLocationName(Ljava/lang/String;I)Ljava/util/List;
     .locals 15
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -331,12 +323,6 @@
 
 .method public getFromLocationName(Ljava/lang/String;IDDDD)Ljava/util/List;
     .locals 17
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # D
-    .param p5    # D
-    .param p7    # D
-    .param p9    # D
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

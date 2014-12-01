@@ -23,10 +23,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/settings/nearby/ListItemListener;Landroid/app/Dialog;Landroid/content/Context;Z)V
     .locals 1
-    .param p1    # Lcom/android/settings/nearby/ListItemListener;
-    .param p2    # Landroid/app/Dialog;
-    .param p3    # Landroid/content/Context;
-    .param p4    # Z
 
     const/4 v0, 0x0
 
@@ -57,7 +53,6 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 9
-    .param p1    # Landroid/view/View;
 
     const-string v5, "DeleteButtonListener"
 

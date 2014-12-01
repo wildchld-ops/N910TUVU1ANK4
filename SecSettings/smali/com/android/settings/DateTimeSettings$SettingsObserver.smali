@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/settings/DateTimeSettings;Landroid/os/Handler;)V
     .locals 0
-    .param p2    # Landroid/os/Handler;
 
     iput-object p1, p0, Lcom/android/settings/DateTimeSettings$SettingsObserver;->this$0:Lcom/android/settings/DateTimeSettings;
 
@@ -34,7 +33,6 @@
 # virtual methods
 .method public onChange(Z)V
     .locals 7
-    .param p1    # Z
 
     const/4 v2, 0x1
 

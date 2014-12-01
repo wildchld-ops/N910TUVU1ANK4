@@ -42,8 +42,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/MediaFormatSd;I)Z
     .locals 1
-    .param p0    # Lcom/android/settings/MediaFormatSd;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/settings/MediaFormatSd;->runKeyguardConfirmation(I)Z
 
@@ -54,7 +52,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/MediaFormatSd;)V
     .locals 0
-    .param p0    # Lcom/android/settings/MediaFormatSd;
 
     invoke-direct {p0}, Lcom/android/settings/MediaFormatSd;->establishFinalConfirmationState()V
 
@@ -153,7 +150,6 @@
 
 .method private runKeyguardConfirmation(I)Z
     .locals 3
-    .param p1    # I
 
     new-instance v0, Lcom/android/settings/ChooseLockSettingsHelper;
 
@@ -182,9 +178,6 @@
 # virtual methods
 .method protected onActivityResult(IILandroid/content/Intent;)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     invoke-super {p0, p1, p2, p3}, Landroid/app/Activity;->onActivityResult(IILandroid/content/Intent;)V
 
@@ -219,7 +212,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v0, 0x0
 

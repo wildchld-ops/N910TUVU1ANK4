@@ -43,8 +43,6 @@
 # virtual methods
 .method public packageInstalled(Ljava/lang/String;I)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     monitor-enter p0
 

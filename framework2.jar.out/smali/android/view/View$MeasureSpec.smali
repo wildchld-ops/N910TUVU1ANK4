@@ -37,8 +37,6 @@
 
 .method static adjust(II)I
     .locals 2
-    .param p0    # I
-    .param p1    # I
 
     add-int v0, p0, p1
 
@@ -59,7 +57,6 @@
 
 .method public static getMode(I)I
     .locals 1
-    .param p0    # I
 
     const/high16 v0, -0x40000000
 
@@ -70,7 +67,6 @@
 
 .method public static getSize(I)I
     .locals 1
-    .param p0    # I
 
     const v0, 0x3fffffff
 
@@ -81,8 +77,6 @@
 
 .method public static makeMeasureSpec(II)I
     .locals 2
-    .param p0    # I
-    .param p1    # I
 
     # getter for: Landroid/view/View;->sUseBrokenMakeMeasureSpec:Z
     invoke-static {}, Landroid/view/View;->access$2600()Z
@@ -112,7 +106,6 @@
 
 .method public static toString(I)Ljava/lang/String;
     .locals 5
-    .param p0    # I
 
     invoke-static {p0}, Landroid/view/View$MeasureSpec;->getMode(I)I
 

@@ -37,7 +37,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 1
-    .param p1    # Landroid/os/Message;
 
     iget-object v0, p0, Lcom/samsung/location/SLocationManager$GeoListenerTransport$1;->this$1:Lcom/samsung/location/SLocationManager$GeoListenerTransport;
 

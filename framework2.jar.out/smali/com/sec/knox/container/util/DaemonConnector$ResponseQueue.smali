@@ -38,7 +38,6 @@
 # direct methods
 .method constructor <init>(I)V
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -57,8 +56,6 @@
 # virtual methods
 .method public add(ILcom/sec/knox/container/util/DaemonEvent;)V
     .locals 8
-    .param p1    # I
-    .param p2    # Lcom/sec/knox/container/util/DaemonEvent;
 
     const/4 v0, 0x0
 
@@ -286,9 +283,6 @@
 
 .method public dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     const-string v2, "Pending requests:"
 
@@ -374,9 +368,6 @@
 
 .method public remove(IILjava/lang/String;)Lcom/sec/knox/container/util/DaemonEvent;
     .locals 10
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     const/4 v1, 0x0
 

@@ -26,8 +26,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/content/pm/IPersonaFileHandler;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/pm/IPersonaFileHandler;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,10 +40,6 @@
 # virtual methods
 .method public changeEncryptionKey(ILjava/lang/String;Ljava/lang/String;Z)Z
     .locals 7
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Z
 
     :try_start_0
     iget-object v0, p0, Landroid/os/PersonaFileManager;->mService:Landroid/content/pm/IPersonaFileHandler;
@@ -85,9 +79,6 @@
 
 .method public createPartition(ILjava/lang/String;Z)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaFileManager;->mService:Landroid/content/pm/IPersonaFileHandler;
@@ -119,7 +110,6 @@
 
 .method public isEncrypted(I)Z
     .locals 3
-    .param p1    # I
 
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaFileManager;->mService:Landroid/content/pm/IPersonaFileHandler;
@@ -149,9 +139,6 @@
 
 .method public mount(ILjava/lang/String;Z)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     const/4 v0, 0x0
 
@@ -164,10 +151,6 @@
 
 .method public mountFS(ILjava/lang/String;ZZ)Z
     .locals 7
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
-    .param p4    # Z
 
     :try_start_0
     iget-object v0, p0, Landroid/os/PersonaFileManager;->mService:Landroid/content/pm/IPersonaFileHandler;
@@ -207,8 +190,6 @@
 
 .method public removePartition(IZ)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Z
 
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaFileManager;->mService:Landroid/content/pm/IPersonaFileHandler;
@@ -238,7 +219,6 @@
 
 .method public unmount(I)Z
     .locals 3
-    .param p1    # I
 
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaFileManager;->mService:Landroid/content/pm/IPersonaFileHandler;

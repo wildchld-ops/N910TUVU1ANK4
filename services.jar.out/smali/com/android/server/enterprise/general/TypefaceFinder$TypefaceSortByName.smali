@@ -46,8 +46,6 @@
 # virtual methods
 .method public compare(Lcom/android/server/enterprise/general/Typeface;Lcom/android/server/enterprise/general/Typeface;)I
     .locals 2
-    .param p1    # Lcom/android/server/enterprise/general/Typeface;
-    .param p2    # Lcom/android/server/enterprise/general/Typeface;
 
     invoke-virtual {p1}, Lcom/android/server/enterprise/general/Typeface;->getName()Ljava/lang/String;
 
@@ -66,8 +64,6 @@
 
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p1, Lcom/android/server/enterprise/general/Typeface;
 

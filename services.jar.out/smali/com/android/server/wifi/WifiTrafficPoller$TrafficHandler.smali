@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Lcom/android/server/wifi/WifiTrafficPoller;Lcom/android/server/wifi/WifiTrafficPoller$1;)V
     .locals 0
-    .param p1    # Lcom/android/server/wifi/WifiTrafficPoller;
-    .param p2    # Lcom/android/server/wifi/WifiTrafficPoller$1;
 
     invoke-direct {p0, p1}, Lcom/android/server/wifi/WifiTrafficPoller$TrafficHandler;-><init>(Lcom/android/server/wifi/WifiTrafficPoller;)V
 
@@ -43,7 +41,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 7
-    .param p1    # Landroid/os/Message;
 
     const-wide/16 v5, 0x3e8
 

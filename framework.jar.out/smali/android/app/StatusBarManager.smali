@@ -91,7 +91,6 @@
 
 .method constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -157,7 +156,6 @@
 
 .method public static windowStateToString(I)Ljava/lang/String;
     .locals 1
-    .param p0    # I
 
     const/4 v0, 0x1
 
@@ -194,7 +192,6 @@
 # virtual methods
 .method public blockRecentWindow(Z)V
     .locals 3
-    .param p1    # Z
 
     :try_start_0
     invoke-direct {p0}, Landroid/app/StatusBarManager;->getService()Lcom/android/internal/statusbar/IStatusBarService;
@@ -249,7 +246,6 @@
 
 .method public disable(I)V
     .locals 4
-    .param p1    # I
 
     :try_start_0
     invoke-direct {p0}, Landroid/app/StatusBarManager;->getService()Lcom/android/internal/statusbar/IStatusBarService;
@@ -285,8 +281,6 @@
 
 .method public disableAsUser(II)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
 
     invoke-static {}, Landroid/os/Binder;->getCallingUid()I
 
@@ -393,7 +387,6 @@
 
 .method public getAllNotificationsForBridge(Z)Ljava/util/List;
     .locals 3
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(Z)",
@@ -494,7 +487,6 @@
 
 .method public removeIcon(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     invoke-direct {p0}, Landroid/app/StatusBarManager;->getService()Lcom/android/internal/statusbar/IStatusBarService;
@@ -522,7 +514,6 @@
 
 .method public setCallBackground(I)V
     .locals 3
-    .param p1    # I
 
     :try_start_0
     invoke-direct {p0}, Landroid/app/StatusBarManager;->getService()Lcom/android/internal/statusbar/IStatusBarService;
@@ -550,10 +541,6 @@
 
 .method public setIcon(Ljava/lang/String;IILjava/lang/String;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
 
     :try_start_0
     invoke-direct {p0}, Landroid/app/StatusBarManager;->getService()Lcom/android/internal/statusbar/IStatusBarService;
@@ -595,8 +582,6 @@
 
 .method public setIconVisibility(Ljava/lang/String;Z)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     :try_start_0
     invoke-direct {p0}, Landroid/app/StatusBarManager;->getService()Lcom/android/internal/statusbar/IStatusBarService;
@@ -624,7 +609,6 @@
 
 .method public setMaxBrightness(I)V
     .locals 3
-    .param p1    # I
 
     :try_start_0
     invoke-direct {p0}, Landroid/app/StatusBarManager;->getService()Lcom/android/internal/statusbar/IStatusBarService;
@@ -652,7 +636,6 @@
 
 .method public setPanelExpandState(Z)V
     .locals 3
-    .param p1    # Z
 
     :try_start_0
     invoke-direct {p0}, Landroid/app/StatusBarManager;->getService()Lcom/android/internal/statusbar/IStatusBarService;
@@ -680,7 +663,6 @@
 
 .method public setTransGradationMode(Z)V
     .locals 3
-    .param p1    # Z
 
     :try_start_0
     invoke-direct {p0}, Landroid/app/StatusBarManager;->getService()Lcom/android/internal/statusbar/IStatusBarService;
@@ -708,8 +690,6 @@
 
 .method public setTransGradationModeColor(ZI)V
     .locals 3
-    .param p1    # Z
-    .param p2    # I
 
     :try_start_0
     invoke-direct {p0}, Landroid/app/StatusBarManager;->getService()Lcom/android/internal/statusbar/IStatusBarService;
@@ -737,7 +717,6 @@
 
 .method public setTransGradationModeColorWindow(Z)V
     .locals 3
-    .param p1    # Z
 
     :try_start_0
     invoke-direct {p0}, Landroid/app/StatusBarManager;->getService()Lcom/android/internal/statusbar/IStatusBarService;
@@ -765,7 +744,6 @@
 
 .method public setTransGradationModeWindow(Z)V
     .locals 3
-    .param p1    # Z
 
     :try_start_0
     invoke-direct {p0}, Landroid/app/StatusBarManager;->getService()Lcom/android/internal/statusbar/IStatusBarService;
@@ -793,7 +771,6 @@
 
 .method public setUseWindowTransGradation(Z)V
     .locals 3
-    .param p1    # Z
 
     :try_start_0
     invoke-direct {p0}, Landroid/app/StatusBarManager;->getService()Lcom/android/internal/statusbar/IStatusBarService;

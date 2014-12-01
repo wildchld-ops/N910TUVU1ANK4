@@ -82,7 +82,6 @@
 
 .method private finishDelayedAndShowLockScreen(I)V
     .locals 10
-    .param p1    # I
 
     const-string v6, "window"
 
@@ -169,9 +168,6 @@
 # virtual methods
 .method public createItem(Landroid/content/Context;Landroid/appwidget/AppWidgetProviderInfo;Landroid/os/Bundle;)Lcom/android/settings/KeyguardAppWidgetPickActivity$Item;
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/appwidget/AppWidgetProviderInfo;
-    .param p3    # Landroid/os/Bundle;
 
     iget-object v1, p2, Landroid/appwidget/AppWidgetProviderInfo;->label:Ljava/lang/String;
 
@@ -210,9 +206,6 @@
 
 .method public bridge synthetic createItem(Landroid/content/Context;Landroid/appwidget/AppWidgetProviderInfo;Landroid/os/Bundle;)Ljava/lang/Object;
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/appwidget/AppWidgetProviderInfo;
-    .param p3    # Landroid/os/Bundle;
 
     invoke-virtual {p0, p1, p2, p3}, Lcom/android/settings/KeyguardAppWidgetPickActivity;->createItem(Landroid/content/Context;Landroid/appwidget/AppWidgetProviderInfo;Landroid/os/Bundle;)Lcom/android/settings/KeyguardAppWidgetPickActivity$Item;
 
@@ -223,9 +216,6 @@
 
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 10
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const/16 v9, 0x7e
 
@@ -341,7 +331,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 7
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v6, 0x0
 
@@ -541,9 +530,6 @@
 
 .method public onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
     .locals 10
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -653,8 +639,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x0
 
@@ -682,8 +666,6 @@
 
 .method setResultData(ILandroid/content/Intent;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/content/Intent;
 
     if-eqz p2, :cond_0
 
@@ -712,8 +694,6 @@
 
 .method startActivityForResultSafely(Landroid/content/Intent;I)V
     .locals 4
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
 
     const v2, 0x7f09080f
 

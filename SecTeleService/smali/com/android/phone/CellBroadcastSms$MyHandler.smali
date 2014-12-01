@@ -119,7 +119,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v3, v5}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+    invoke-virtual {v3, v5}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     iget-object v3, p0, Lcom/android/phone/CellBroadcastSms$MyHandler;->this$0:Lcom/android/phone/CellBroadcastSms;
 

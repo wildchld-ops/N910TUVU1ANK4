@@ -57,9 +57,6 @@
 # virtual methods
 .method public printNextItem(Ljava/io/PrintWriter;Landroid/os/BatteryStats$HistoryItem;J)V
     .locals 3
-    .param p1    # Ljava/io/PrintWriter;
-    .param p2    # Landroid/os/BatteryStats$HistoryItem;
-    .param p3    # J
 
     const-string v0, "  "
 
@@ -498,9 +495,6 @@
 
 .method public printNextItemCheckin(Ljava/io/PrintWriter;Landroid/os/BatteryStats$HistoryItem;J)V
     .locals 2
-    .param p1    # Ljava/io/PrintWriter;
-    .param p2    # Landroid/os/BatteryStats$HistoryItem;
-    .param p3    # J
 
     iget-wide v0, p2, Landroid/os/BatteryStats$HistoryItem;->time:J
 

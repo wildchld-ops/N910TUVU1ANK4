@@ -95,7 +95,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/NotificationStation;)V
     .locals 0
-    .param p0    # Lcom/android/settings/NotificationStation;
 
     invoke-direct {p0}, Lcom/android/settings/NotificationStation;->refreshList()V
 
@@ -112,7 +111,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/NotificationStation;)Ljava/lang/Runnable;
     .locals 1
-    .param p0    # Lcom/android/settings/NotificationStation;
 
     iget-object v0, p0, Lcom/android/settings/NotificationStation;->mRefreshListRunnable:Ljava/lang/Runnable;
 
@@ -121,8 +119,6 @@
 
 .method static synthetic access$500(Ljava/lang/String;[Ljava/lang/Object;)V
     .locals 0
-    .param p0    # Ljava/lang/String;
-    .param p1    # [Ljava/lang/Object;
 
     invoke-static {p0, p1}, Lcom/android/settings/NotificationStation;->logd(Ljava/lang/String;[Ljava/lang/Object;)V
 
@@ -131,8 +127,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/NotificationStation;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/settings/NotificationStation;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/settings/NotificationStation;->startApplicationDetailsActivity(Ljava/lang/String;)V
 
@@ -141,8 +135,6 @@
 
 .method private getResourcesForUserPackage(Ljava/lang/String;I)Landroid/content/res/Resources;
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v1, 0x0
 
@@ -211,9 +203,6 @@
 
 .method private loadIconDrawable(Ljava/lang/String;II)Landroid/graphics/drawable/Drawable;
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v3, 0x0
 
@@ -763,8 +752,6 @@
 
 .method private loadPackageIconDrawable(Ljava/lang/String;I)Landroid/graphics/drawable/Drawable;
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -788,7 +775,6 @@
 
 .method private loadPackageName(Ljava/lang/String;)Ljava/lang/CharSequence;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     iget-object v1, p0, Lcom/android/settings/NotificationStation;->mPm:Landroid/content/pm/PackageManager;
@@ -821,8 +807,6 @@
 
 .method private static varargs logd(Ljava/lang/String;[Ljava/lang/Object;)V
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # [Ljava/lang/Object;
 
     sget-object v0, Lcom/android/settings/NotificationStation;->TAG:Ljava/lang/String;
 
@@ -895,7 +879,6 @@
 
 .method private startApplicationDetailsActivity(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -928,7 +911,6 @@
 # virtual methods
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     const-string v1, "onActivityCreated(%s)"
 
@@ -965,7 +947,6 @@
 
 .method public onAttach(Landroid/app/Activity;)V
     .locals 5
-    .param p1    # Landroid/app/Activity;
 
     const-string v0, "onAttach(%s)"
 
@@ -1053,7 +1034,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     const-string v1, "onCreate(%s)"
 

@@ -21,7 +21,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/internal/os/BatteryStatsImpl;Ljava/lang/String;)V
     .locals 0
-    .param p2    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/internal/os/BatteryStatsImpl$1;->this$0:Lcom/android/internal/os/BatteryStatsImpl;
 

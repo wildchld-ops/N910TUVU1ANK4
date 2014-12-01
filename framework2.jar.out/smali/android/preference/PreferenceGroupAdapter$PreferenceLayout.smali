@@ -46,7 +46,6 @@
 
 .method synthetic constructor <init>(Landroid/preference/PreferenceGroupAdapter$1;)V
     .locals 0
-    .param p1    # Landroid/preference/PreferenceGroupAdapter$1;
 
     invoke-direct {p0}, Landroid/preference/PreferenceGroupAdapter$PreferenceLayout;-><init>()V
 
@@ -55,8 +54,6 @@
 
 .method static synthetic access$202(Landroid/preference/PreferenceGroupAdapter$PreferenceLayout;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Landroid/preference/PreferenceGroupAdapter$PreferenceLayout;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/preference/PreferenceGroupAdapter$PreferenceLayout;->name:Ljava/lang/String;
 
@@ -65,8 +62,6 @@
 
 .method static synthetic access$302(Landroid/preference/PreferenceGroupAdapter$PreferenceLayout;I)I
     .locals 0
-    .param p0    # Landroid/preference/PreferenceGroupAdapter$PreferenceLayout;
-    .param p1    # I
 
     iput p1, p0, Landroid/preference/PreferenceGroupAdapter$PreferenceLayout;->resId:I
 
@@ -75,8 +70,6 @@
 
 .method static synthetic access$402(Landroid/preference/PreferenceGroupAdapter$PreferenceLayout;I)I
     .locals 0
-    .param p0    # Landroid/preference/PreferenceGroupAdapter$PreferenceLayout;
-    .param p1    # I
 
     iput p1, p0, Landroid/preference/PreferenceGroupAdapter$PreferenceLayout;->widgetResId:I
 
@@ -87,7 +80,6 @@
 # virtual methods
 .method public compareTo(Landroid/preference/PreferenceGroupAdapter$PreferenceLayout;)I
     .locals 3
-    .param p1    # Landroid/preference/PreferenceGroupAdapter$PreferenceLayout;
 
     iget-object v1, p0, Landroid/preference/PreferenceGroupAdapter$PreferenceLayout;->name:Ljava/lang/String;
 
@@ -138,7 +130,6 @@
 
 .method public bridge synthetic compareTo(Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Landroid/preference/PreferenceGroupAdapter$PreferenceLayout;
 

@@ -153,7 +153,6 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/android/mms/rcs/transaction/NotificationReceiver$NotificationStatus;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-class v0, Lcom/android/mms/rcs/transaction/NotificationReceiver$NotificationStatus;
 

@@ -10,7 +10,6 @@
 # direct methods
 .method public constructor <init>(Landroid/os/Binder;)V
     .locals 0
-    .param p1    # Landroid/os/Binder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

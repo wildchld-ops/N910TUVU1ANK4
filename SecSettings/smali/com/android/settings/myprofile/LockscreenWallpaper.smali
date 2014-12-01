@@ -30,7 +30,6 @@
 
 .method public static isLiveWallpaper(Landroid/content/Context;)Z
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     const/4 v0, 0x0
 

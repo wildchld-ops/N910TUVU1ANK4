@@ -103,7 +103,6 @@
 
 .method public static valueOf(Ljava/lang/String;)Landroid/security/KeyStore$State;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-class v0, Landroid/security/KeyStore$State;
 

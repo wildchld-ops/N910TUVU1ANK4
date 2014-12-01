@@ -31,7 +31,6 @@
 # virtual methods
 .method public getService(Landroid/app/ContextImpl;)Ljava/lang/Object;
     .locals 4
-    .param p1    # Landroid/app/ContextImpl;
 
     # getter for: Landroid/app/ContextImpl;->mDisplay:Landroid/view/Display;
     invoke-static {p1}, Landroid/app/ContextImpl;->access$100(Landroid/app/ContextImpl;)Landroid/view/Display;

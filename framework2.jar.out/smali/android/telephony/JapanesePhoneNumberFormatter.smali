@@ -1246,7 +1246,6 @@
 
 .method public static format(Landroid/text/Editable;)V
     .locals 13
-    .param p0    # Landroid/text/Editable;
 
     const/4 v12, 0x3
 

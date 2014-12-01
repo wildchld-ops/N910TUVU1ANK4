@@ -184,7 +184,6 @@
 
 .method public constructor <init>(Landroid/app/Activity;)V
     .locals 2
-    .param p1    # Landroid/app/Activity;
 
     const/4 v1, 0x1
 
@@ -213,7 +212,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v1, 0x1
 
@@ -240,8 +238,6 @@
 
 .method private static checkDefaultRingtoneProperUri(Landroid/content/Context;I)V
     .locals 22
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     invoke-static/range {p1 .. p1}, Landroid/media/RingtoneManager;->getDefaultSoundUriField(I)Ljava/lang/String;
 
@@ -762,8 +758,6 @@
 
 .method public static convertSettingForType(II)I
     .locals 4
-    .param p0    # I
-    .param p1    # I
 
     const/16 v1, 0x10
 
@@ -807,8 +801,6 @@
 
 .method public static getActualDefaultRingtoneUri(Landroid/content/Context;I)Landroid/net/Uri;
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -866,7 +858,6 @@
 
 .method private static getDefaultSoundConstantPathField(I)Ljava/lang/String;
     .locals 3
-    .param p0    # I
 
     const-string v0, "_CONSTANT_PATH"
 
@@ -996,7 +987,6 @@
 
 .method private static getDefaultSoundUriField(I)Ljava/lang/String;
     .locals 1
-    .param p0    # I
 
     sparse-switch p0, :sswitch_data_0
 
@@ -1042,7 +1032,6 @@
 
 .method public static getDefaultType(Landroid/net/Uri;)I
     .locals 2
-    .param p0    # Landroid/net/Uri;
 
     const/4 v0, -0x1
 
@@ -1120,7 +1109,6 @@
 
 .method public static getDefaultUri(I)Landroid/net/Uri;
     .locals 1
-    .param p0    # I
 
     and-int/lit8 v0, p0, 0x1
 
@@ -1249,9 +1237,6 @@
 
 .method public static getRingtone(Landroid/content/Context;ILandroid/net/Uri;)Landroid/media/Ringtone;
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # Landroid/net/Uri;
 
     :try_start_0
     new-instance v1, Landroid/media/Ringtone;
@@ -1347,8 +1332,6 @@
 
 .method public static getRingtone(Landroid/content/Context;Landroid/net/Uri;)Landroid/media/Ringtone;
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
 
     const/4 v0, -0x1
 
@@ -1361,9 +1344,6 @@
 
 .method private static getRingtone(Landroid/content/Context;Landroid/net/Uri;I)Landroid/media/Ringtone;
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # I
 
     :try_start_0
     new-instance v1, Landroid/media/Ringtone;
@@ -1459,10 +1439,6 @@
 
 .method private static getRingtone(Landroid/content/Context;Landroid/net/Uri;II)Landroid/media/Ringtone;
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # I
-    .param p3    # I
 
     :try_start_0
     new-instance v1, Landroid/media/Ringtone;
@@ -1563,7 +1539,6 @@
 
 .method private static getSettingForType(I)Ljava/lang/String;
     .locals 1
-    .param p0    # I
 
     and-int/lit8 v0, p0, 0x1
 
@@ -1627,7 +1602,6 @@
 
 .method private static getUriFromCursor(Landroid/database/Cursor;)Landroid/net/Uri;
     .locals 4
-    .param p0    # Landroid/database/Cursor;
 
     const/4 v1, 0x2
 
@@ -1665,7 +1639,6 @@
 
 .method public static getValidRingtoneUri(Landroid/content/Context;)Landroid/net/Uri;
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     new-instance v0, Landroid/media/RingtoneManager;
 
@@ -1695,8 +1668,6 @@
 
 .method private static getValidRingtoneUriFromCursorAndClose(Landroid/content/Context;Landroid/database/Cursor;)Landroid/net/Uri;
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/database/Cursor;
 
     if-eqz p1, :cond_1
 
@@ -1726,7 +1697,6 @@
 
 .method public static isDefault(Landroid/net/Uri;)Z
     .locals 2
-    .param p0    # Landroid/net/Uri;
 
     invoke-static {p0}, Landroid/media/RingtoneManager;->getDefaultType(Landroid/net/Uri;)I
 
@@ -1749,11 +1719,6 @@
 
 .method private query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
     .locals 6
-    .param p1    # Landroid/net/Uri;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # [Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/media/RingtoneManager;->mActivity:Landroid/app/Activity;
 
@@ -1804,9 +1769,6 @@
 
 .method public static setActualDefaultRingtoneUri(Landroid/content/Context;ILandroid/net/Uri;)V
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # Landroid/net/Uri;
 
     invoke-static {}, Landroid/os/UserHandle;->getCallingUserId()I
 
@@ -1819,10 +1781,6 @@
 
 .method public static setActualDefaultRingtoneUri(Landroid/content/Context;ILandroid/net/Uri;I)V
     .locals 17
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # Landroid/net/Uri;
-    .param p3    # I
 
     invoke-static/range {p1 .. p1}, Landroid/media/RingtoneManager;->getSettingForType(I)Ljava/lang/String;
 
@@ -2270,7 +2228,6 @@
 
 .method private setFilterColumnsList(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Landroid/media/RingtoneManager;->mFilterColumns:Ljava/util/List;
 
@@ -2390,7 +2347,6 @@
 
 .method public getRingtone(I)Landroid/media/Ringtone;
     .locals 3
-    .param p1    # I
 
     iget-boolean v0, p0, Landroid/media/RingtoneManager;->mStopPreviousRingtone:Z
 
@@ -2428,8 +2384,6 @@
 
 .method public getRingtone(II)Landroid/media/Ringtone;
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     iget-boolean v0, p0, Landroid/media/RingtoneManager;->mStopPreviousRingtone:Z
 
@@ -2467,7 +2421,6 @@
 
 .method public getRingtonePosition(Landroid/net/Uri;)I
     .locals 11
-    .param p1    # Landroid/net/Uri;
 
     const/4 v7, -0x1
 
@@ -2600,7 +2553,6 @@
 
 .method public getRingtoneUri(I)Landroid/net/Uri;
     .locals 3
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -2688,7 +2640,6 @@
 
 .method public setIncludeDrm(Z)V
     .locals 2
-    .param p1    # Z
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -2706,7 +2657,6 @@
 
 .method public setStopPreviousRingtone(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/media/RingtoneManager;->mStopPreviousRingtone:Z
 
@@ -2715,7 +2665,6 @@
 
 .method public setType(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Landroid/media/RingtoneManager;->mCursor:Landroid/database/Cursor;
 

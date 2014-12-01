@@ -87,8 +87,6 @@
 
 .method private action_down(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iput p1, p0, Lcom/android/internal/policy/impl/MultiPhoneWindow$MultiPhoneWindowListener;->lastMoveX:I
 
@@ -142,8 +140,6 @@
 
 .method private action_minimize_move(II)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
 
     iget v4, p0, Lcom/android/internal/policy/impl/MultiPhoneWindow$MultiPhoneWindowListener;->dockingMoveX:I
 
@@ -286,8 +282,6 @@
 
 .method private action_move(II)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
 
     iget v4, p0, Lcom/android/internal/policy/impl/MultiPhoneWindow$MultiPhoneWindowListener;->lastMoveX:I
 
@@ -443,8 +437,6 @@
 
 .method private action_up(II)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     iget v2, p0, Lcom/android/internal/policy/impl/MultiPhoneWindow$MultiPhoneWindowListener;->lastMoveX:I
 
@@ -567,7 +559,6 @@
 
 .method private minimizeIconPressed(Z)V
     .locals 3
-    .param p1    # Z
 
     const/4 v2, 0x1
 
@@ -735,7 +726,6 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/MultiPhoneWindow$MultiPhoneWindowListener;->this$0:Lcom/android/internal/policy/impl/MultiPhoneWindow;
 
@@ -751,8 +741,6 @@
 
 .method public onDrag(Landroid/view/View;Landroid/view/DragEvent;)Z
     .locals 7
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/DragEvent;
 
     const/4 v2, 0x0
 
@@ -902,8 +890,6 @@
 
 .method public onHover(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 4
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     const/4 v3, 0x0
 
@@ -973,7 +959,6 @@
 
 .method public onLongClick(Landroid/view/View;)Z
     .locals 4
-    .param p1    # Landroid/view/View;
 
     const/4 v0, 0x0
 
@@ -1099,8 +1084,6 @@
 
 .method public onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 9
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     const/4 v8, 0x4
 

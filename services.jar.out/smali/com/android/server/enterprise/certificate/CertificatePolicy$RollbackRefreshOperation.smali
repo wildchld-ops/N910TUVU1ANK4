@@ -36,7 +36,6 @@
 # direct methods
 .method private constructor <init>(Lcom/android/server/enterprise/certificate/CertificatePolicy;I)V
     .locals 1
-    .param p2    # I
 
     iput-object p1, p0, Lcom/android/server/enterprise/certificate/CertificatePolicy$RollbackRefreshOperation;->this$0:Lcom/android/server/enterprise/certificate/CertificatePolicy;
 
@@ -53,8 +52,6 @@
 
 .method private constructor <init>(Lcom/android/server/enterprise/certificate/CertificatePolicy;II)V
     .locals 3
-    .param p2    # I
-    .param p3    # I
 
     iput-object p1, p0, Lcom/android/server/enterprise/certificate/CertificatePolicy$RollbackRefreshOperation;->this$0:Lcom/android/server/enterprise/certificate/CertificatePolicy;
 
@@ -107,10 +104,6 @@
 
 .method synthetic constructor <init>(Lcom/android/server/enterprise/certificate/CertificatePolicy;IILcom/android/server/enterprise/certificate/CertificatePolicy$1;)V
     .locals 0
-    .param p1    # Lcom/android/server/enterprise/certificate/CertificatePolicy;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Lcom/android/server/enterprise/certificate/CertificatePolicy$1;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/server/enterprise/certificate/CertificatePolicy$RollbackRefreshOperation;-><init>(Lcom/android/server/enterprise/certificate/CertificatePolicy;II)V
 
@@ -119,9 +112,6 @@
 
 .method synthetic constructor <init>(Lcom/android/server/enterprise/certificate/CertificatePolicy;ILcom/android/server/enterprise/certificate/CertificatePolicy$1;)V
     .locals 0
-    .param p1    # Lcom/android/server/enterprise/certificate/CertificatePolicy;
-    .param p2    # I
-    .param p3    # Lcom/android/server/enterprise/certificate/CertificatePolicy$1;
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/enterprise/certificate/CertificatePolicy$RollbackRefreshOperation;-><init>(Lcom/android/server/enterprise/certificate/CertificatePolicy;I)V
 
@@ -130,7 +120,6 @@
 
 .method private refreshNativeKeyStore(I)V
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -141,8 +130,6 @@
 
 .method private refreshNativeKeyStoreAsUser(II)V
     .locals 21
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct/range {p0 .. p1}, Lcom/android/server/enterprise/certificate/CertificatePolicy$RollbackRefreshOperation;->selectNativeKeystoreUid(I)Ljava/lang/String;
 
@@ -914,7 +901,6 @@
 
 .method private rollbackNativeKeyStore(I)V
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -925,8 +911,6 @@
 
 .method private rollbackNativeKeyStoreAsUser(II)V
     .locals 18
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct/range {p0 .. p1}, Lcom/android/server/enterprise/certificate/CertificatePolicy$RollbackRefreshOperation;->selectNativeKeystoreUid(I)Ljava/lang/String;
 
@@ -1449,7 +1433,6 @@
 
 .method private selectNativeKeystoreUid(I)Ljava/lang/String;
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -1477,7 +1460,6 @@
 # virtual methods
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [[Ljava/lang/Integer;
 
@@ -1490,7 +1472,6 @@
 
 .method protected varargs doInBackground([[Ljava/lang/Integer;)Ljava/lang/Void;
     .locals 10
-    .param p1    # [[Ljava/lang/Integer;
 
     iget v7, p0, Lcom/android/server/enterprise/certificate/CertificatePolicy$RollbackRefreshOperation;->mPriority:I
 

@@ -25,8 +25,6 @@
 # direct methods
 .method public constructor <init>(Landroid/webkitsec/BrowserFrame;Ljava/lang/Object;Z)V
     .locals 0
-    .param p2    # Ljava/lang/Object;
-    .param p3    # Z
 
     iput-object p1, p0, Landroid/webkitsec/BrowserFrame$JSObject;->this$0:Landroid/webkitsec/BrowserFrame;
 

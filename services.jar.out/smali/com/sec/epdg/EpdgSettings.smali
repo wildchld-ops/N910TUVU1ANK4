@@ -108,23 +108,6 @@
 
 .method public static getInstance(IIIIIZIILjava/lang/String;ZZZZLjava/lang/String;Ljava/lang/String;ZZ)Lcom/sec/epdg/EpdgSettings;
     .locals 18
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Z
-    .param p6    # I
-    .param p7    # I
-    .param p8    # Ljava/lang/String;
-    .param p9    # Z
-    .param p10    # Z
-    .param p11    # Z
-    .param p12    # Z
-    .param p13    # Ljava/lang/String;
-    .param p14    # Ljava/lang/String;
-    .param p15    # Z
-    .param p16    # Z
 
     sget-object v0, Lcom/sec/epdg/EpdgSettings;->mEpdgSettings:Lcom/sec/epdg/EpdgSettings;
 
@@ -182,23 +165,6 @@
 
 .method private updateVariableValues(IIIIIZIILjava/lang/String;ZZZZLjava/lang/String;Ljava/lang/String;ZZ)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Z
-    .param p7    # I
-    .param p8    # I
-    .param p9    # Ljava/lang/String;
-    .param p10    # Z
-    .param p11    # Z
-    .param p12    # Z
-    .param p13    # Z
-    .param p14    # Ljava/lang/String;
-    .param p15    # Ljava/lang/String;
-    .param p16    # Z
-    .param p17    # Z
 
     iput p1, p0, Lcom/sec/epdg/EpdgSettings;->mWifiLevel:I
 

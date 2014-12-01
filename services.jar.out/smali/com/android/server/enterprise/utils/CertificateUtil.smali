@@ -63,8 +63,6 @@
 
 .method public static convertStoreTypeToSystemUidAsUser(II)I
     .locals 2
-    .param p0    # I
-    .param p1    # I
 
     const/4 v0, -0x1
 
@@ -94,7 +92,6 @@
 
 .method public static convertStoreTypeToUid(I)I
     .locals 2
-    .param p0    # I
 
     const/4 v0, -0x1
 
@@ -120,8 +117,6 @@
 
 .method private extractPkcs12([BLjava/lang/String;)Z
     .locals 10
-    .param p1    # [B
-    .param p2    # Ljava/lang/String;
 
     const/4 v6, 0x0
 
@@ -228,7 +223,6 @@
 
 .method private declared-synchronized installFrom(Ljava/security/KeyStore$PrivateKeyEntry;)Z
     .locals 17
-    .param p1    # Ljava/security/KeyStore$PrivateKeyEntry;
 
     monitor-enter p0
 
@@ -490,7 +484,6 @@
 
 .method private isCa(Ljava/security/cert/X509Certificate;)Z
     .locals 7
-    .param p1    # Ljava/security/cert/X509Certificate;
 
     const/4 v5, 0x0
 
@@ -551,7 +544,6 @@
 
 .method private parseCert([B)Z
     .locals 12
-    .param p1    # [B
 
     const/4 v8, 0x0
 
@@ -728,10 +720,6 @@
 # virtual methods
 .method public install(Ljava/lang/String;[BLjava/lang/String;Ljava/lang/String;)Z
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # [B
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     const/4 v5, 0x7
 
@@ -756,12 +744,6 @@
 
 .method public installAsUser(Ljava/lang/String;[BLjava/lang/String;Ljava/lang/String;II)Z
     .locals 11
-    .param p1    # Ljava/lang/String;
-    .param p2    # [B
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
-    .param p6    # I
 
     const/4 v10, 0x1
 

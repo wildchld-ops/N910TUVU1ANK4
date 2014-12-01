@@ -40,7 +40,6 @@
 # direct methods
 .method public constructor <init>(F)V
     .locals 2
-    .param p1    # F
 
     const/4 v1, 0x0
 
@@ -129,7 +128,6 @@
 # virtual methods
 .method public draw(Landroid/graphics/Canvas;)V
     .locals 6
-    .param p1    # Landroid/graphics/Canvas;
 
     iget-boolean v2, p0, Lcom/sec/android/visualeffect/particlespace/particle/Particle;->isUnlocked:Z
 
@@ -264,9 +262,6 @@
 
 .method public initialize(FFI)V
     .locals 7
-    .param p1    # F
-    .param p2    # F
-    .param p3    # I
 
     const/high16 v6, 0x40000000
 
@@ -429,7 +424,6 @@
 
 .method public unlock(F)V
     .locals 1
-    .param p1    # F
 
     const/4 v0, 0x1
 

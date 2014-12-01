@@ -220,11 +220,11 @@
 
     move-object/from16 v20, v0
 
-    invoke-virtual/range {v20 .. v20}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual/range {v20 .. v20}, Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;->getActivity()Landroid/app/Activity;
 
     move-result-object v20
 
-    invoke-virtual/range {v20 .. v20}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual/range {v20 .. v20}, Landroid/app/Activity;->getResources()Landroid/content/res/Resources;
 
     move-result-object v20
 
@@ -309,7 +309,7 @@
 
     move-object/from16 v20, v0
 
-    invoke-virtual/range {v20 .. v20}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual/range {v20 .. v20}, Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;->getActivity()Landroid/app/Activity;
 
     move-result-object v20
 
@@ -446,7 +446,7 @@
 
     move-object/from16 v20, v0
 
-    invoke-virtual/range {v20 .. v20}, Landroid/app/Fragment;->getResources()Landroid/content/res/Resources;
+    invoke-virtual/range {v20 .. v20}, Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;->getResources()Landroid/content/res/Resources;
 
     move-result-object v20
 
@@ -468,7 +468,7 @@
 
     move-object/from16 v20, v0
 
-    invoke-virtual/range {v20 .. v20}, Landroid/app/Fragment;->getResources()Landroid/content/res/Resources;
+    invoke-virtual/range {v20 .. v20}, Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;->getResources()Landroid/content/res/Resources;
 
     move-result-object v20
 
@@ -596,7 +596,7 @@
 
     move-object/from16 v20, v0
 
-    invoke-virtual/range {v20 .. v20}, Landroid/app/Fragment;->getResources()Landroid/content/res/Resources;
+    invoke-virtual/range {v20 .. v20}, Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;->getResources()Landroid/content/res/Resources;
 
     move-result-object v20
 
@@ -674,7 +674,7 @@
 
     const/16 v21, 0x0
 
-    invoke-virtual/range {v20 .. v21}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual/range {v20 .. v21}, Landroid/view/ViewGroup;->setVisibility(I)V
 
     move-object/from16 v0, v19
 
@@ -694,7 +694,7 @@
 
     const/16 v21, 0x0
 
-    invoke-virtual/range {v20 .. v21}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual/range {v20 .. v21}, Landroid/widget/TextView;->setVisibility(I)V
 
     move-object/from16 v0, p0
 
@@ -771,7 +771,7 @@
 
     move-object/from16 v20, v0
 
-    invoke-virtual/range {v20 .. v20}, Landroid/app/Fragment;->getResources()Landroid/content/res/Resources;
+    invoke-virtual/range {v20 .. v20}, Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;->getResources()Landroid/content/res/Resources;
 
     move-result-object v20
 
@@ -793,7 +793,7 @@
 
     move-object/from16 v20, v0
 
-    invoke-virtual/range {v20 .. v20}, Landroid/app/Fragment;->getResources()Landroid/content/res/Resources;
+    invoke-virtual/range {v20 .. v20}, Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;->getResources()Landroid/content/res/Resources;
 
     move-result-object v20
 
@@ -931,7 +931,7 @@
 
     move-object/from16 v20, v0
 
-    invoke-virtual/range {v20 .. v20}, Landroid/app/Fragment;->getResources()Landroid/content/res/Resources;
+    invoke-virtual/range {v20 .. v20}, Lcom/android/phone/callsettings/RejectCallWithMsgIconMode;->getResources()Landroid/content/res/Resources;
 
     move-result-object v20
 
@@ -976,7 +976,7 @@
 
     const/16 v21, 0x0
 
-    invoke-virtual/range {v20 .. v21}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual/range {v20 .. v21}, Landroid/view/ViewGroup;->setVisibility(I)V
 
     move-object/from16 v0, v19
 
@@ -1004,7 +1004,7 @@
 
     const/16 v21, 0x4
 
-    invoke-virtual/range {v20 .. v21}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual/range {v20 .. v21}, Landroid/widget/TextView;->setVisibility(I)V
 
     :goto_7
     move-object/from16 v0, v19
@@ -1043,7 +1043,7 @@
 
     const/16 v21, 0x0
 
-    invoke-virtual/range {v20 .. v21}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual/range {v20 .. v21}, Landroid/widget/TextView;->setVisibility(I)V
 
     move-object/from16 v0, v19
 
@@ -1066,7 +1066,7 @@
 
     const/16 v21, 0x8
 
-    invoke-virtual/range {v20 .. v21}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual/range {v20 .. v21}, Landroid/view/ViewGroup;->setVisibility(I)V
 
     goto/16 :goto_4
 

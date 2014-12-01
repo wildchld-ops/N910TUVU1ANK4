@@ -46,7 +46,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Landroid/content/IClipboard$Stub;-><init>()V
 
@@ -132,8 +131,6 @@
 
 .method static synthetic access$000(Lcom/android/server/ClipboardService;I)V
     .locals 0
-    .param p0    # Lcom/android/server/ClipboardService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/ClipboardService;->removeClipboard(I)V
 
@@ -142,8 +139,6 @@
 
 .method private final addActiveOwnerLocked(ILjava/lang/String;)V
     .locals 12
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     invoke-static {}, Landroid/app/AppGlobals;->getPackageManager()Landroid/content/pm/IPackageManager;
 
@@ -389,8 +384,6 @@
 
 .method private final checkDataOwnerLocked(Landroid/content/ClipData;I)V
     .locals 3
-    .param p1    # Landroid/content/ClipData;
-    .param p2    # I
 
     invoke-virtual {p1}, Landroid/content/ClipData;->getItemCount()I
 
@@ -417,8 +410,6 @@
 
 .method private final checkItemOwnerLocked(Landroid/content/ClipData$Item;I)V
     .locals 2
-    .param p1    # Landroid/content/ClipData$Item;
-    .param p2    # I
 
     invoke-virtual {p1}, Landroid/content/ClipData$Item;->getUri()Landroid/net/Uri;
 
@@ -457,8 +448,6 @@
 
 .method private final checkUriOwnerLocked(Landroid/net/Uri;I)V
     .locals 5
-    .param p1    # Landroid/net/Uri;
-    .param p2    # I
 
     const-string v2, "content"
 
@@ -729,7 +718,6 @@
 
 .method private getClipboard(I)Lcom/android/server/ClipboardService$PerUserClipboard;
     .locals 3
-    .param p1    # I
 
     iget-object v2, p0, Lcom/android/server/ClipboardService;->mClipboards:Landroid/util/SparseArray;
 
@@ -799,8 +787,6 @@
 
 .method private final grantItemLocked(Landroid/content/ClipData$Item;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Landroid/content/ClipData$Item;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p1}, Landroid/content/ClipData$Item;->getUri()Landroid/net/Uri;
 
@@ -839,8 +825,6 @@
 
 .method private final grantUriLocked(Landroid/net/Uri;Ljava/lang/String;)V
     .locals 8
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Ljava/lang/String;
 
     invoke-static {}, Landroid/os/Binder;->clearCallingIdentity()J
 
@@ -886,7 +870,6 @@
 
 .method private removeClipboard(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/server/ClipboardService;->mClipboards:Landroid/util/SparseArray;
 
@@ -913,7 +896,6 @@
 
 .method private final revokeItemLocked(Landroid/content/ClipData$Item;)V
     .locals 2
-    .param p1    # Landroid/content/ClipData$Item;
 
     invoke-virtual {p1}, Landroid/content/ClipData$Item;->getUri()Landroid/net/Uri;
 
@@ -952,7 +934,6 @@
 
 .method private final revokeUriLocked(Landroid/net/Uri;)V
     .locals 5
-    .param p1    # Landroid/net/Uri;
 
     invoke-static {}, Landroid/os/Binder;->clearCallingIdentity()J
 
@@ -992,7 +973,6 @@
 # virtual methods
 .method public UpdateClipboardDB(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Lcom/android/server/ClipboardService;->mContainerID:I
 
@@ -1006,8 +986,6 @@
 
 .method public addPrimaryClipChangedListener(Landroid/content/IOnPrimaryClipChangedListener;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Landroid/content/IOnPrimaryClipChangedListener;
-    .param p2    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -1068,7 +1046,6 @@
 
 .method public getPrimaryClip(Ljava/lang/String;)Landroid/content/ClipData;
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -1254,7 +1231,6 @@
 
 .method public getPrimaryClipDescription(Ljava/lang/String;)Landroid/content/ClipDescription;
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -1436,7 +1412,6 @@
 
 .method public hasClipboardText(Ljava/lang/String;)Z
     .locals 9
-    .param p1    # Ljava/lang/String;
 
     const/4 v6, 0x1
 
@@ -1701,7 +1676,6 @@
 
 .method public hasPrimaryClip(Ljava/lang/String;)Z
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x1
 
@@ -1860,10 +1834,6 @@
 
 .method public onTransact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/os/Parcel;
-    .param p3    # Landroid/os/Parcel;
-    .param p4    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1898,7 +1868,6 @@
 
 .method public removePrimaryClipChangedListener(Landroid/content/IOnPrimaryClipChangedListener;)V
     .locals 1
-    .param p1    # Landroid/content/IOnPrimaryClipChangedListener;
 
     monitor-enter p0
 
@@ -1943,8 +1912,6 @@
 
 .method public setPrimaryClip(Landroid/content/ClipData;Ljava/lang/String;)V
     .locals 15
-    .param p1    # Landroid/content/ClipData;
-    .param p2    # Ljava/lang/String;
 
     monitor-enter p0
 

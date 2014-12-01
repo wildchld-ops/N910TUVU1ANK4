@@ -36,9 +36,6 @@
 # virtual methods
 .method public onEditorAction(Landroid/widget/TextView;ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # I
-    .param p3    # Landroid/view/KeyEvent;
 
     iget-object v0, p0, Lcom/android/settings/myplace/SelectMapActivity$4;->this$0:Lcom/android/settings/myplace/SelectMapActivity;
 

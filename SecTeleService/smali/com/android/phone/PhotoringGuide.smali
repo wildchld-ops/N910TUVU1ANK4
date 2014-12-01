@@ -65,9 +65,9 @@
 
     const/4 v1, -0x1
 
-    invoke-virtual {p0, v1, v0}, Landroid/app/Activity;->setResult(ILandroid/content/Intent;)V
+    invoke-virtual {p0, v1, v0}, Lcom/android/phone/PhotoringGuide;->setResult(ILandroid/content/Intent;)V
 
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/PhotoringGuide;->finish()V
 
     return-void
 .end method
@@ -123,7 +123,7 @@
 
     const-string v1, ""
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/PhotoringGuide;->getResources()Landroid/content/res/Resources;
 
     move-result-object v2
 
@@ -228,7 +228,7 @@
     :pswitch_1
     iget-object v0, p0, Lcom/android/phone/PhotoringGuide;->mcbAgree:Landroid/widget/CheckBox;
 
-    invoke-virtual {v0}, Landroid/widget/CompoundButton;->isChecked()Z
+    invoke-virtual {v0}, Landroid/widget/CheckBox;->isChecked()Z
 
     move-result v0
 
@@ -236,13 +236,13 @@
 
     iget-object v0, p0, Lcom/android/phone/PhotoringGuide;->mcbPInfo:Landroid/widget/CheckBox;
 
-    invoke-virtual {v0}, Landroid/widget/CompoundButton;->isChecked()Z
+    invoke-virtual {v0}, Landroid/widget/CheckBox;->isChecked()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/PhotoringGuide;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -257,7 +257,7 @@
     :pswitch_2
     new-instance v0, Landroid/content/Intent;
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getBaseContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/PhotoringGuide;->getBaseContext()Landroid/content/Context;
 
     move-result-object v2
 
@@ -269,14 +269,14 @@
 
     invoke-virtual {v0, v2, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/PhotoringGuide;->startActivity(Landroid/content/Intent;)V
 
     goto :goto_0
 
     :pswitch_3
     new-instance v1, Landroid/content/Intent;
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getBaseContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/PhotoringGuide;->getBaseContext()Landroid/content/Context;
 
     move-result-object v2
 
@@ -288,7 +288,7 @@
 
     invoke-virtual {v1, v2, v0}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    invoke-virtual {p0, v1}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v1}, Lcom/android/phone/PhotoringGuide;->startActivity(Landroid/content/Intent;)V
 
     goto :goto_0
 
@@ -297,7 +297,7 @@
 
     iget-object v3, p0, Lcom/android/phone/PhotoringGuide;->mcbAgree:Landroid/widget/CheckBox;
 
-    invoke-virtual {v3}, Landroid/widget/CompoundButton;->isChecked()Z
+    invoke-virtual {v3}, Landroid/widget/CheckBox;->isChecked()Z
 
     move-result v3
 
@@ -305,14 +305,14 @@
 
     iget-object v3, p0, Lcom/android/phone/PhotoringGuide;->mcbPInfo:Landroid/widget/CheckBox;
 
-    invoke-virtual {v3}, Landroid/widget/CompoundButton;->isChecked()Z
+    invoke-virtual {v3}, Landroid/widget/CheckBox;->isChecked()Z
 
     move-result v3
 
     if-eqz v3, :cond_1
 
     :goto_1
-    invoke-virtual {v2, v0}, Landroid/widget/TextView;->setEnabled(Z)V
+    invoke-virtual {v2, v0}, Landroid/widget/Button;->setEnabled(Z)V
 
     goto :goto_0
 
@@ -346,7 +346,7 @@
 
     invoke-super {p0, p1}, Lcom/android/internal/app/AlertActivity;->onCreate(Landroid/os/Bundle;)V
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getBaseContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/PhotoringGuide;->getBaseContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -444,31 +444,31 @@
 
     iget-object v1, p0, Lcom/android/phone/PhotoringGuide;->mbtnClose:Landroid/widget/Button;
 
-    invoke-virtual {v1, v3}, Landroid/widget/TextView;->setEnabled(Z)V
+    invoke-virtual {v1, v3}, Landroid/widget/Button;->setEnabled(Z)V
 
     iget-object v1, p0, Lcom/android/phone/PhotoringGuide;->mcbAgree:Landroid/widget/CheckBox;
 
-    invoke-virtual {v1, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v1, p0}, Landroid/widget/CheckBox;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     iget-object v1, p0, Lcom/android/phone/PhotoringGuide;->mcbPInfo:Landroid/widget/CheckBox;
 
-    invoke-virtual {v1, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v1, p0}, Landroid/widget/CheckBox;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     iget-object v1, p0, Lcom/android/phone/PhotoringGuide;->mbtnAgree:Landroid/widget/ImageView;
 
-    invoke-virtual {v1, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v1, p0}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     iget-object v1, p0, Lcom/android/phone/PhotoringGuide;->mbtnPInfo:Landroid/widget/ImageView;
 
-    invoke-virtual {v1, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v1, p0}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     iget-object v1, p0, Lcom/android/phone/PhotoringGuide;->mbtnClose:Landroid/widget/Button;
 
-    invoke-virtual {v1, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v1, p0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    iget-object v0, p0, Lcom/android/internal/app/AlertActivity;->mAlertParams:Lcom/android/internal/app/AlertController$AlertParams;
+    iget-object v0, p0, Lcom/android/phone/PhotoringGuide;->mAlertParams:Lcom/android/internal/app/AlertController$AlertParams;
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/PhotoringGuide;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -484,13 +484,13 @@
 
     iput-object v1, v0, Lcom/android/internal/app/AlertController$AlertParams;->mView:Landroid/view/View;
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
+    invoke-virtual {p0}, Lcom/android/phone/PhotoringGuide;->getWindow()Landroid/view/Window;
 
     move-result-object v1
 
     invoke-virtual {v1, v3}, Landroid/view/Window;->setCloseOnTouchOutside(Z)V
 
-    invoke-virtual {p0}, Lcom/android/internal/app/AlertActivity;->setupAlert()V
+    invoke-virtual {p0}, Lcom/android/phone/PhotoringGuide;->setupAlert()V
 
     invoke-direct {p0}, Lcom/android/phone/PhotoringGuide;->createThreadAndDialog()V
 
@@ -506,7 +506,7 @@
 
     iget-object v0, p0, Lcom/android/phone/PhotoringGuide;->loadingDialog:Landroid/app/ProgressDialog;
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->isShowing()Z
+    invoke-virtual {v0}, Landroid/app/ProgressDialog;->isShowing()Z
 
     move-result v0
 
@@ -514,14 +514,14 @@
 
     iget-object v0, p0, Lcom/android/phone/PhotoringGuide;->loadingDialog:Landroid/app/ProgressDialog;
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->dismiss()V
+    invoke-virtual {v0}, Landroid/app/ProgressDialog;->dismiss()V
 
     const/4 v0, 0x0
 
     iput-object v0, p0, Lcom/android/phone/PhotoringGuide;->loadingDialog:Landroid/app/ProgressDialog;
 
     :cond_0
-    invoke-super {p0}, Landroid/app/Activity;->onDestroy()V
+    invoke-super {p0}, Lcom/android/internal/app/AlertActivity;->onDestroy()V
 
     return-void
 .end method

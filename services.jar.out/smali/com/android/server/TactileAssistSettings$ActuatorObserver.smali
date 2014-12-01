@@ -23,7 +23,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/TactileAssistSettings;I)V
     .locals 1
-    .param p2    # I
 
     iput-object p1, p0, Lcom/android/server/TactileAssistSettings$ActuatorObserver;->this$0:Lcom/android/server/TactileAssistSettings;
 
@@ -42,7 +41,6 @@
 # virtual methods
 .method public onChange(Z)V
     .locals 7
-    .param p1    # Z
 
     const/4 v6, 0x0
 

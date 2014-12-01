@@ -103,7 +103,7 @@
 
     move-object/from16 v1, v37
 
-    invoke-virtual {v0, v2, v1}, Landroid/os/Handler;->obtainMessage(ILjava/lang/Object;)Landroid/os/Message;
+    invoke-virtual {v0, v2, v1}, Lcom/android/phone/PhoneInterfaceManager$MainThreadHandler;->obtainMessage(ILjava/lang/Object;)Landroid/os/Message;
 
     move-result-object v11
 
@@ -237,7 +237,7 @@
 
     move-object/from16 v1, v37
 
-    invoke-virtual {v0, v2, v1}, Landroid/os/Handler;->obtainMessage(ILjava/lang/Object;)Landroid/os/Message;
+    invoke-virtual {v0, v2, v1}, Lcom/android/phone/PhoneInterfaceManager$MainThreadHandler;->obtainMessage(ILjava/lang/Object;)Landroid/os/Message;
 
     move-result-object v11
 
@@ -482,7 +482,7 @@
 
     move-object/from16 v1, v37
 
-    invoke-virtual {v0, v4, v1}, Landroid/os/Handler;->obtainMessage(ILjava/lang/Object;)Landroid/os/Message;
+    invoke-virtual {v0, v4, v1}, Lcom/android/phone/PhoneInterfaceManager$MainThreadHandler;->obtainMessage(ILjava/lang/Object;)Landroid/os/Message;
 
     move-result-object v4
 
@@ -491,7 +491,7 @@
     if-eqz v24, :cond_0
 
     :try_start_2
-    invoke-virtual/range {v24 .. v24}, Ljava/io/FilterOutputStream;->close()V
+    invoke-virtual/range {v24 .. v24}, Ljava/io/DataOutputStream;->close()V
     :try_end_2
     .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_0
 
@@ -527,7 +527,7 @@
     # invokes: Lcom/android/phone/PhoneInterfaceManager;->log(Ljava/lang/String;)V
     invoke-static {v2, v3}, Lcom/android/phone/PhoneInterfaceManager;->access$100(Lcom/android/phone/PhoneInterfaceManager;Ljava/lang/String;)V
 
-    invoke-virtual/range {v28 .. v28}, Ljava/lang/Throwable;->printStackTrace()V
+    invoke-virtual/range {v28 .. v28}, Ljava/io/IOException;->printStackTrace()V
 
     goto/16 :goto_0
 
@@ -1096,7 +1096,7 @@
 
     move-object/from16 v1, v37
 
-    invoke-virtual {v0, v2, v1}, Landroid/os/Handler;->obtainMessage(ILjava/lang/Object;)Landroid/os/Message;
+    invoke-virtual {v0, v2, v1}, Lcom/android/phone/PhoneInterfaceManager$MainThreadHandler;->obtainMessage(ILjava/lang/Object;)Landroid/os/Message;
 
     move-result-object v11
 
@@ -1188,7 +1188,7 @@
 
     move-object/from16 v1, v37
 
-    invoke-virtual {v0, v4, v1}, Landroid/os/Handler;->obtainMessage(ILjava/lang/Object;)Landroid/os/Message;
+    invoke-virtual {v0, v4, v1}, Lcom/android/phone/PhoneInterfaceManager$MainThreadHandler;->obtainMessage(ILjava/lang/Object;)Landroid/os/Message;
 
     move-result-object v4
 
@@ -1197,7 +1197,7 @@
     if-eqz v27, :cond_0
 
     :try_start_a
-    invoke-virtual/range {v27 .. v27}, Ljava/io/FilterOutputStream;->close()V
+    invoke-virtual/range {v27 .. v27}, Ljava/io/DataOutputStream;->close()V
     :try_end_a
     .catch Ljava/io/IOException; {:try_start_a .. :try_end_a} :catch_3
 
@@ -1233,7 +1233,7 @@
     # invokes: Lcom/android/phone/PhoneInterfaceManager;->log(Ljava/lang/String;)V
     invoke-static {v2, v3}, Lcom/android/phone/PhoneInterfaceManager;->access$100(Lcom/android/phone/PhoneInterfaceManager;Ljava/lang/String;)V
 
-    invoke-virtual/range {v28 .. v28}, Ljava/lang/Throwable;->printStackTrace()V
+    invoke-virtual/range {v28 .. v28}, Ljava/io/IOException;->printStackTrace()V
 
     goto/16 :goto_0
 
@@ -1798,7 +1798,7 @@
 
     move-object/from16 v1, v37
 
-    invoke-virtual {v0, v2, v1}, Landroid/os/Handler;->obtainMessage(ILjava/lang/Object;)Landroid/os/Message;
+    invoke-virtual {v0, v2, v1}, Lcom/android/phone/PhoneInterfaceManager$MainThreadHandler;->obtainMessage(ILjava/lang/Object;)Landroid/os/Message;
 
     move-result-object v11
 
@@ -1889,7 +1889,7 @@
 
     move-object/from16 v1, v37
 
-    invoke-virtual {v0, v4, v1}, Landroid/os/Handler;->obtainMessage(ILjava/lang/Object;)Landroid/os/Message;
+    invoke-virtual {v0, v4, v1}, Lcom/android/phone/PhoneInterfaceManager$MainThreadHandler;->obtainMessage(ILjava/lang/Object;)Landroid/os/Message;
 
     move-result-object v4
 
@@ -1898,7 +1898,7 @@
     if-eqz v26, :cond_0
 
     :try_start_10
-    invoke-virtual/range {v26 .. v26}, Ljava/io/FilterOutputStream;->close()V
+    invoke-virtual/range {v26 .. v26}, Ljava/io/DataOutputStream;->close()V
     :try_end_10
     .catch Ljava/io/IOException; {:try_start_10 .. :try_end_10} :catch_6
 
@@ -1934,7 +1934,7 @@
     # invokes: Lcom/android/phone/PhoneInterfaceManager;->log(Ljava/lang/String;)V
     invoke-static {v2, v3}, Lcom/android/phone/PhoneInterfaceManager;->access$100(Lcom/android/phone/PhoneInterfaceManager;Ljava/lang/String;)V
 
-    invoke-virtual/range {v28 .. v28}, Ljava/lang/Throwable;->printStackTrace()V
+    invoke-virtual/range {v28 .. v28}, Ljava/io/IOException;->printStackTrace()V
 
     goto/16 :goto_0
 
@@ -2220,7 +2220,7 @@
 
     move-object/from16 v1, v37
 
-    invoke-virtual {v0, v4, v1}, Landroid/os/Handler;->obtainMessage(ILjava/lang/Object;)Landroid/os/Message;
+    invoke-virtual {v0, v4, v1}, Lcom/android/phone/PhoneInterfaceManager$MainThreadHandler;->obtainMessage(ILjava/lang/Object;)Landroid/os/Message;
 
     move-result-object v4
 
@@ -2229,7 +2229,7 @@
     if-eqz v25, :cond_0
 
     :try_start_15
-    invoke-virtual/range {v25 .. v25}, Ljava/io/FilterOutputStream;->close()V
+    invoke-virtual/range {v25 .. v25}, Ljava/io/DataOutputStream;->close()V
     :try_end_15
     .catch Ljava/io/IOException; {:try_start_15 .. :try_end_15} :catch_8
 
@@ -2265,7 +2265,7 @@
     # invokes: Lcom/android/phone/PhoneInterfaceManager;->log(Ljava/lang/String;)V
     invoke-static {v2, v3}, Lcom/android/phone/PhoneInterfaceManager;->access$100(Lcom/android/phone/PhoneInterfaceManager;Ljava/lang/String;)V
 
-    invoke-virtual/range {v28 .. v28}, Ljava/lang/Throwable;->printStackTrace()V
+    invoke-virtual/range {v28 .. v28}, Ljava/io/IOException;->printStackTrace()V
 
     goto/16 :goto_0
 
@@ -2290,7 +2290,7 @@
     :catch_9
     move-exception v28
 
-    invoke-virtual/range {v28 .. v28}, Ljava/lang/Throwable;->printStackTrace()V
+    invoke-virtual/range {v28 .. v28}, Ljava/io/IOException;->printStackTrace()V
 
     goto :goto_18
 
@@ -2540,7 +2540,7 @@
 
     move-object/from16 v1, v37
 
-    invoke-virtual {v0, v2, v1}, Landroid/os/Handler;->obtainMessage(ILjava/lang/Object;)Landroid/os/Message;
+    invoke-virtual {v0, v2, v1}, Lcom/android/phone/PhoneInterfaceManager$MainThreadHandler;->obtainMessage(ILjava/lang/Object;)Landroid/os/Message;
 
     move-result-object v11
 
@@ -2969,7 +2969,7 @@
 
     move-object/from16 v1, v37
 
-    invoke-virtual {v0, v2, v1}, Landroid/os/Handler;->obtainMessage(ILjava/lang/Object;)Landroid/os/Message;
+    invoke-virtual {v0, v2, v1}, Lcom/android/phone/PhoneInterfaceManager$MainThreadHandler;->obtainMessage(ILjava/lang/Object;)Landroid/os/Message;
 
     move-result-object v11
 
@@ -3062,7 +3062,7 @@
 
     move-object/from16 v1, v37
 
-    invoke-virtual {v0, v2, v1}, Landroid/os/Handler;->obtainMessage(ILjava/lang/Object;)Landroid/os/Message;
+    invoke-virtual {v0, v2, v1}, Lcom/android/phone/PhoneInterfaceManager$MainThreadHandler;->obtainMessage(ILjava/lang/Object;)Landroid/os/Message;
 
     move-result-object v11
 
@@ -3149,7 +3149,7 @@
 
     move-object/from16 v1, v37
 
-    invoke-virtual {v0, v2, v1}, Landroid/os/Handler;->obtainMessage(ILjava/lang/Object;)Landroid/os/Message;
+    invoke-virtual {v0, v2, v1}, Lcom/android/phone/PhoneInterfaceManager$MainThreadHandler;->obtainMessage(ILjava/lang/Object;)Landroid/os/Message;
 
     move-result-object v11
 
@@ -3235,7 +3235,7 @@
 
     move-object/from16 v1, v37
 
-    invoke-virtual {v0, v2, v1}, Landroid/os/Handler;->obtainMessage(ILjava/lang/Object;)Landroid/os/Message;
+    invoke-virtual {v0, v2, v1}, Lcom/android/phone/PhoneInterfaceManager$MainThreadHandler;->obtainMessage(ILjava/lang/Object;)Landroid/os/Message;
 
     move-result-object v11
 
@@ -3346,7 +3346,7 @@
 
     iget-object v2, v2, Lcom/android/phone/PhoneInterfaceManager;->mApp:Lcom/android/phone/PhoneGlobals;
 
-    invoke-virtual {v2}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v2}, Lcom/android/phone/PhoneGlobals;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v2
 
@@ -3417,7 +3417,7 @@
 
     iget-object v2, v2, Lcom/android/phone/PhoneInterfaceManager;->mApp:Lcom/android/phone/PhoneGlobals;
 
-    invoke-virtual {v2}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v2}, Lcom/android/phone/PhoneGlobals;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v2
 
@@ -3488,7 +3488,7 @@
 
     iget-object v2, v2, Lcom/android/phone/PhoneInterfaceManager;->mApp:Lcom/android/phone/PhoneGlobals;
 
-    invoke-virtual {v2}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v2}, Lcom/android/phone/PhoneGlobals;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v2
 

@@ -22,12 +22,6 @@
 # direct methods
 .method public constructor <init>(FFFFFZ)V
     .locals 0
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # Z
 
     invoke-direct {p0}, Landroid/view/animation/Animation;-><init>()V
 
@@ -50,8 +44,6 @@
 # virtual methods
 .method protected applyTransformation(FLandroid/view/animation/Transformation;)V
     .locals 8
-    .param p1    # F
-    .param p2    # Landroid/view/animation/Transformation;
 
     iget v4, p0, Lcom/android/systemui/recent/cardholder/Rotate3dAnimation;->mFromDegrees:F
 
@@ -104,10 +96,6 @@
 
 .method public initialize(IIII)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-super {p0, p1, p2, p3, p4}, Landroid/view/animation/Animation;->initialize(IIII)V
 

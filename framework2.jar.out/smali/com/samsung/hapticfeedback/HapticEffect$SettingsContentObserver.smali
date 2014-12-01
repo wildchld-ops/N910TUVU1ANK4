@@ -23,7 +23,6 @@
 # direct methods
 .method public constructor <init>(Lcom/samsung/hapticfeedback/HapticEffect;Landroid/os/Handler;)V
     .locals 1
-    .param p2    # Landroid/os/Handler;
 
     iput-object p1, p0, Lcom/samsung/hapticfeedback/HapticEffect$SettingsContentObserver;->this$0:Lcom/samsung/hapticfeedback/HapticEffect;
 
@@ -40,7 +39,6 @@
 # virtual methods
 .method public onChange(Z)V
     .locals 3
-    .param p1    # Z
 
     invoke-super {p0, p1}, Landroid/database/ContentObserver;->onChange(Z)V
 
@@ -63,7 +61,6 @@
 
 .method public setContext(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     iput-object p1, p0, Lcom/samsung/hapticfeedback/HapticEffect$SettingsContentObserver;->mContext:Landroid/content/Context;
 

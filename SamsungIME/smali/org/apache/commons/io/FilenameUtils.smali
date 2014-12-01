@@ -68,8 +68,6 @@
 
 .method public static concat(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 5
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -174,8 +172,6 @@
 
 .method private static doGetFullPath(Ljava/lang/String;Z)Ljava/lang/String;
     .locals 5
-    .param p0    # Ljava/lang/String;
-    .param p1    # Z
 
     const/4 v3, 0x0
 
@@ -250,8 +246,6 @@
 
 .method private static doGetPath(Ljava/lang/String;I)Ljava/lang/String;
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -297,8 +291,6 @@
 
 .method private static doNormalize(Ljava/lang/String;Z)Ljava/lang/String;
     .locals 13
-    .param p0    # Ljava/lang/String;
-    .param p1    # Z
 
     const/4 v7, 0x0
 
@@ -620,8 +612,6 @@
 
 .method public static equals(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -636,10 +626,6 @@
 
 .method public static equals(Ljava/lang/String;Ljava/lang/String;ZLorg/apache/commons/io/IOCase;)Z
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # Lorg/apache/commons/io/IOCase;
 
     if-eqz p0, :cond_0
 
@@ -697,8 +683,6 @@
 
 .method public static equalsNormalized(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -713,8 +697,6 @@
 
 .method public static equalsNormalizedOnSystem(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -729,8 +711,6 @@
 
 .method public static equalsOnSystem(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -745,7 +725,6 @@
 
 .method public static getBaseName(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Lorg/apache/commons/io/FilenameUtils;->getName(Ljava/lang/String;)Ljava/lang/String;
 
@@ -760,7 +739,6 @@
 
 .method public static getExtension(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     if-nez p0, :cond_0
 
@@ -794,7 +772,6 @@
 
 .method public static getFullPath(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -807,7 +784,6 @@
 
 .method public static getFullPathNoEndSeparator(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -820,7 +796,6 @@
 
 .method public static getName(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     if-nez p0, :cond_0
 
@@ -845,7 +820,6 @@
 
 .method public static getPath(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -858,7 +832,6 @@
 
 .method public static getPathNoEndSeparator(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -871,7 +844,6 @@
 
 .method public static getPrefix(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -926,7 +898,6 @@
 
 .method public static getPrefixLength(Ljava/lang/String;)I
     .locals 11
-    .param p0    # Ljava/lang/String;
 
     const/16 v10, 0x2f
 
@@ -1152,7 +1123,6 @@
 
 .method public static indexOfExtension(Ljava/lang/String;)I
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     const/4 v2, -0x1
 
@@ -1184,7 +1154,6 @@
 
 .method public static indexOfLastSeparator(Ljava/lang/String;)I
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     if-nez p0, :cond_0
 
@@ -1215,8 +1184,6 @@
 
 .method public static isExtension(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -1262,8 +1229,6 @@
 
 .method public static isExtension(Ljava/lang/String;Ljava/util/Collection;)Z
     .locals 6
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/util/Collection;
 
     const/4 v2, 0x1
 
@@ -1336,8 +1301,6 @@
 
 .method public static isExtension(Ljava/lang/String;[Ljava/lang/String;)Z
     .locals 6
-    .param p0    # Ljava/lang/String;
-    .param p1    # [Ljava/lang/String;
 
     const/4 v2, 0x1
 
@@ -1407,7 +1370,6 @@
 
 .method private static isSeparator(C)Z
     .locals 1
-    .param p0    # C
 
     const/16 v0, 0x2f
 
@@ -1451,7 +1413,6 @@
 
 .method public static normalize(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -1464,7 +1425,6 @@
 
 .method public static normalizeNoEndSeparator(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -1477,7 +1437,6 @@
 
 .method public static removeExtension(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     if-nez p0, :cond_1
 
@@ -1507,7 +1466,6 @@
 
 .method public static separatorsToSystem(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     if-nez p0, :cond_0
 
@@ -1539,7 +1497,6 @@
 
 .method public static separatorsToUnix(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     const/16 v2, 0x5c
 
@@ -1569,7 +1526,6 @@
 
 .method public static separatorsToWindows(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     const/16 v2, 0x2f
 
@@ -1599,7 +1555,6 @@
 
 .method static splitOnTokens(Ljava/lang/String;)[Ljava/lang/String;
     .locals 8
-    .param p0    # Ljava/lang/String;
 
     const/16 v7, 0x3f
 
@@ -1766,8 +1721,6 @@
 
 .method public static wildcardMatch(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     sget-object v0, Lorg/apache/commons/io/IOCase;->SENSITIVE:Lorg/apache/commons/io/IOCase;
 
@@ -1780,9 +1733,6 @@
 
 .method public static wildcardMatch(Ljava/lang/String;Ljava/lang/String;Lorg/apache/commons/io/IOCase;)Z
     .locals 11
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lorg/apache/commons/io/IOCase;
 
     const/4 v8, 0x1
 
@@ -1997,8 +1947,6 @@
 
 .method public static wildcardMatchOnSystem(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     sget-object v0, Lorg/apache/commons/io/IOCase;->SYSTEM:Lorg/apache/commons/io/IOCase;
 

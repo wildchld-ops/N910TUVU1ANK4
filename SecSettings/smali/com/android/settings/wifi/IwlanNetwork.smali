@@ -22,10 +22,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Lorg/json/JSONObject;ZLjava/lang/String;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lorg/json/JSONObject;
-    .param p3    # Z
-    .param p4    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Landroid/preference/Preference;-><init>(Landroid/content/Context;)V
 
@@ -119,7 +115,6 @@
 
 .method protected onBindView(Landroid/view/View;)V
     .locals 3
-    .param p1    # Landroid/view/View;
 
     const v2, -0x777778
 

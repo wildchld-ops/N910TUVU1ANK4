@@ -60,7 +60,6 @@
 
 .method public onBindSuccess(I)V
     .locals 11
-    .param p1    # I
 
     const/4 v7, 0x0
 

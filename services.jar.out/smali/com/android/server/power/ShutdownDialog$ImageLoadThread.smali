@@ -56,8 +56,6 @@
 
 .method synthetic constructor <init>(Lcom/android/server/power/ShutdownDialog;Lcom/android/server/power/ShutdownDialog$1;)V
     .locals 0
-    .param p1    # Lcom/android/server/power/ShutdownDialog;
-    .param p2    # Lcom/android/server/power/ShutdownDialog$1;
 
     invoke-direct {p0, p1}, Lcom/android/server/power/ShutdownDialog$ImageLoadThread;-><init>(Lcom/android/server/power/ShutdownDialog;)V
 
@@ -66,7 +64,6 @@
 
 .method static synthetic access$1700(Lcom/android/server/power/ShutdownDialog$ImageLoadThread;)Z
     .locals 1
-    .param p0    # Lcom/android/server/power/ShutdownDialog$ImageLoadThread;
 
     iget-boolean v0, p0, Lcom/android/server/power/ShutdownDialog$ImageLoadThread;->coverOpen:Z
 
@@ -75,8 +72,6 @@
 
 .method static synthetic access$1702(Lcom/android/server/power/ShutdownDialog$ImageLoadThread;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/power/ShutdownDialog$ImageLoadThread;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/power/ShutdownDialog$ImageLoadThread;->coverOpen:Z
 
@@ -85,8 +80,6 @@
 
 .method static synthetic access$1802(Lcom/android/server/power/ShutdownDialog$ImageLoadThread;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/power/ShutdownDialog$ImageLoadThread;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/power/ShutdownDialog$ImageLoadThread;->coverStateDirty:Z
 
@@ -95,9 +88,6 @@
 
 .method private chooseQmg(Lcom/android/server/power/LibQmg;Lcom/android/server/power/LibQmg;Lcom/android/server/power/LibQmg;)Lcom/android/server/power/LibQmg;
     .locals 4
-    .param p1    # Lcom/android/server/power/LibQmg;
-    .param p2    # Lcom/android/server/power/LibQmg;
-    .param p3    # Lcom/android/server/power/LibQmg;
 
     iget-boolean v0, p0, Lcom/android/server/power/ShutdownDialog$ImageLoadThread;->coverOpen:Z
 
@@ -147,8 +137,6 @@
 
 .method private frameLoadLoop(Lcom/android/server/power/LibQmg;Lcom/android/server/power/LibQmg;)V
     .locals 7
-    .param p1    # Lcom/android/server/power/LibQmg;
-    .param p2    # Lcom/android/server/power/LibQmg;
 
     move-object v2, p1
 
@@ -360,7 +348,6 @@
 
 .method private getSCoverState(Lcom/samsung/android/cover/CoverManager;)Z
     .locals 3
-    .param p1    # Lcom/samsung/android/cover/CoverManager;
 
     invoke-virtual {p1}, Lcom/samsung/android/cover/CoverManager;->getCoverState()Lcom/samsung/android/cover/CoverState;
 

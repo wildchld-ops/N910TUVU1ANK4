@@ -80,8 +80,6 @@
 
 .method private createStackChunk([Ljava/lang/StackTraceElement;I)Lorg/apache/harmony/dalvik/ddmc/Chunk;
     .locals 8
-    .param p1    # [Ljava/lang/StackTraceElement;
-    .param p2    # I
 
     const/4 v7, 0x0
 
@@ -265,7 +263,6 @@
 
 .method private handleSTKL(Lorg/apache/harmony/dalvik/ddmc/Chunk;)Lorg/apache/harmony/dalvik/ddmc/Chunk;
     .locals 5
-    .param p1    # Lorg/apache/harmony/dalvik/ddmc/Chunk;
 
     invoke-static {p1}, Landroid/ddm/DdmHandleThread;->wrapChunk(Lorg/apache/harmony/dalvik/ddmc/Chunk;)Ljava/nio/ByteBuffer;
 
@@ -302,7 +299,6 @@
 
 .method private handleTHEN(Lorg/apache/harmony/dalvik/ddmc/Chunk;)Lorg/apache/harmony/dalvik/ddmc/Chunk;
     .locals 3
-    .param p1    # Lorg/apache/harmony/dalvik/ddmc/Chunk;
 
     invoke-static {p1}, Landroid/ddm/DdmHandleThread;->wrapChunk(Lorg/apache/harmony/dalvik/ddmc/Chunk;)Ljava/nio/ByteBuffer;
 
@@ -331,7 +327,6 @@
 
 .method private handleTHST(Lorg/apache/harmony/dalvik/ddmc/Chunk;)Lorg/apache/harmony/dalvik/ddmc/Chunk;
     .locals 6
-    .param p1    # Lorg/apache/harmony/dalvik/ddmc/Chunk;
 
     invoke-static {p1}, Landroid/ddm/DdmHandleThread;->wrapChunk(Lorg/apache/harmony/dalvik/ddmc/Chunk;)Ljava/nio/ByteBuffer;
 
@@ -408,7 +403,6 @@
 
 .method public handleChunk(Lorg/apache/harmony/dalvik/ddmc/Chunk;)Lorg/apache/harmony/dalvik/ddmc/Chunk;
     .locals 4
-    .param p1    # Lorg/apache/harmony/dalvik/ddmc/Chunk;
 
     iget v0, p1, Lorg/apache/harmony/dalvik/ddmc/Chunk;->type:I
 

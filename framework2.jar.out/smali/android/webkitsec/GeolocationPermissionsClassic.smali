@@ -67,8 +67,6 @@
 
 .method static synthetic access$100(Landroid/webkitsec/GeolocationPermissionsClassic;Landroid/os/Message;)V
     .locals 0
-    .param p0    # Landroid/webkitsec/GeolocationPermissionsClassic;
-    .param p1    # Landroid/os/Message;
 
     invoke-direct {p0, p1}, Landroid/webkitsec/GeolocationPermissionsClassic;->postUIMessage(Landroid/os/Message;)V
 
@@ -77,7 +75,6 @@
 
 .method static synthetic access$200(Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Landroid/webkitsec/GeolocationPermissionsClassic;->nativeGetAllowed(Ljava/lang/String;)Z
 
@@ -88,7 +85,6 @@
 
 .method static synthetic access$300(Ljava/lang/String;)V
     .locals 0
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Landroid/webkitsec/GeolocationPermissionsClassic;->nativeClear(Ljava/lang/String;)V
 
@@ -97,7 +93,6 @@
 
 .method static synthetic access$400(Ljava/lang/String;)V
     .locals 0
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Landroid/webkitsec/GeolocationPermissionsClassic;->nativeAllow(Ljava/lang/String;)V
 
@@ -148,7 +143,6 @@
 
 .method private declared-synchronized postMessage(Landroid/os/Message;)V
     .locals 1
-    .param p1    # Landroid/os/Message;
 
     monitor-enter p0
 
@@ -199,7 +193,6 @@
 
 .method private postUIMessage(Landroid/os/Message;)V
     .locals 1
-    .param p1    # Landroid/os/Message;
 
     iget-object v0, p0, Landroid/webkitsec/GeolocationPermissionsClassic;->mUIHandler:Landroid/os/Handler;
 
@@ -217,7 +210,6 @@
 # virtual methods
 .method public allow(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -234,7 +226,6 @@
 
 .method public clear(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -352,7 +343,6 @@
 
 .method public getAllowed(Ljava/lang/String;Landroid/webkitsec/ValueCallback;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

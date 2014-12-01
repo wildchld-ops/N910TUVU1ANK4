@@ -244,7 +244,6 @@
 
 .method public static formatElapsedTime(J)Ljava/lang/String;
     .locals 1
-    .param p0    # J
 
     const/4 v0, 0x0
 
@@ -257,8 +256,6 @@
 
 .method public static formatElapsedTime(JZ)Ljava/lang/String;
     .locals 1
-    .param p0    # J
-    .param p2    # Z
 
     const/4 v0, 0x0
 
@@ -271,8 +268,6 @@
 
 .method public static formatElapsedTime(Ljava/lang/StringBuilder;J)Ljava/lang/String;
     .locals 14
-    .param p0    # Ljava/lang/StringBuilder;
-    .param p1    # J
 
     const-wide/16 v2, 0x0
 
@@ -351,9 +346,6 @@
 
 .method public static formatElapsedTime(Ljava/lang/StringBuilder;JZ)Ljava/lang/String;
     .locals 14
-    .param p0    # Ljava/lang/StringBuilder;
-    .param p1    # J
-    .param p3    # Z
 
     const-wide/16 v2, 0x0
 
@@ -428,10 +420,6 @@
 
 .method private static formatElapsedTime(Ljava/lang/StringBuilder;Ljava/lang/String;JJ)Ljava/lang/String;
     .locals 4
-    .param p0    # Ljava/lang/StringBuilder;
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
-    .param p4    # J
 
     const/4 v3, 0x0
 
@@ -510,11 +498,6 @@
 
 .method private static formatElapsedTime(Ljava/lang/StringBuilder;Ljava/lang/String;JJJ)Ljava/lang/String;
     .locals 5
-    .param p0    # Ljava/lang/StringBuilder;
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
-    .param p4    # J
-    .param p6    # J
 
     const/16 v4, 0x8
 
@@ -656,7 +639,6 @@
 
 .method private static toTwoDigitChar(J)Ljava/lang/String;
     .locals 4
-    .param p0    # J
 
     const-string v0, "%02d"
 

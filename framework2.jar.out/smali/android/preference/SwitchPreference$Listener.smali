@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Landroid/preference/SwitchPreference;Landroid/preference/SwitchPreference$1;)V
     .locals 0
-    .param p1    # Landroid/preference/SwitchPreference;
-    .param p2    # Landroid/preference/SwitchPreference$1;
 
     invoke-direct {p0, p1}, Landroid/preference/SwitchPreference$Listener;-><init>(Landroid/preference/SwitchPreference;)V
 
@@ -46,8 +44,6 @@
 # virtual methods
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 2
-    .param p1    # Landroid/widget/CompoundButton;
-    .param p2    # Z
 
     iget-object v0, p0, Landroid/preference/SwitchPreference$Listener;->this$0:Landroid/preference/SwitchPreference;
 

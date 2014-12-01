@@ -73,7 +73,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/fingerprint/FingerprintDisclaimer;)Lcom/sec/android/touchwiz/widget/TwCheckBox;
     .locals 1
-    .param p0    # Lcom/android/settings/fingerprint/FingerprintDisclaimer;
 
     iget-object v0, p0, Lcom/android/settings/fingerprint/FingerprintDisclaimer;->mDoNotShow:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
@@ -411,7 +410,6 @@
 
 .method private sendIntentToKnoxKeyguard(I)V
     .locals 4
-    .param p1    # I
 
     new-instance v0, Landroid/content/Intent;
 
@@ -444,9 +442,6 @@
 # virtual methods
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     invoke-super {p0, p1, p2, p3}, Landroid/app/Activity;->onActivityResult(IILandroid/content/Intent;)V
 
@@ -1011,8 +1006,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x4
 

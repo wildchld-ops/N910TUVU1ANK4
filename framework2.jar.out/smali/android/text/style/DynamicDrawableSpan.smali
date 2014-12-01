@@ -41,7 +41,6 @@
 
 .method protected constructor <init>(I)V
     .locals 0
-    .param p1    # I
 
     invoke-direct {p0}, Landroid/text/style/ReplacementSpan;-><init>()V
 
@@ -86,15 +85,6 @@
 # virtual methods
 .method public draw(Landroid/graphics/Canvas;Ljava/lang/CharSequence;IIFIIILandroid/graphics/Paint;)V
     .locals 4
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # Ljava/lang/CharSequence;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # F
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
-    .param p9    # Landroid/graphics/Paint;
 
     invoke-direct {p0}, Landroid/text/style/DynamicDrawableSpan;->getCachedDrawable()Landroid/graphics/drawable/Drawable;
 
@@ -141,11 +131,6 @@
 
 .method public getSize(Landroid/graphics/Paint;Ljava/lang/CharSequence;IILandroid/graphics/Paint$FontMetricsInt;)I
     .locals 4
-    .param p1    # Landroid/graphics/Paint;
-    .param p2    # Ljava/lang/CharSequence;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Landroid/graphics/Paint$FontMetricsInt;
 
     const/4 v3, 0x0
 

@@ -40,7 +40,6 @@
 # direct methods
 .method public constructor <init>(Landroid/widget/LinearLayout;)V
     .locals 1
-    .param p1    # Landroid/widget/LinearLayout;
 
     invoke-direct {p0}, Ljava/util/ArrayList;-><init>()V
 
@@ -63,7 +62,6 @@
 # virtual methods
 .method public add(Lcom/android/mms/ui/MmsSlideView;)Z
     .locals 1
-    .param p1    # Lcom/android/mms/ui/MmsSlideView;
 
     iget-object v0, p0, Lcom/android/mms/ui/MessageListItem$MmsSlideGroup;->mThumbnailContainer:Landroid/widget/LinearLayout;
 
@@ -78,7 +76,6 @@
 
 .method public bridge synthetic add(Ljava/lang/Object;)Z
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/android/mms/ui/MmsSlideView;
 
@@ -91,7 +88,6 @@
 
 .method public addLinks(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/mms/ui/MessageListItem$MmsSlideGroup;->mTextProperty:Lcom/android/mms/ui/MessageListItem$BodyTextViewProperty;
 
@@ -110,8 +106,6 @@
 
 .method public initMmsThumbnail(ILcom/android/mms/ui/MessageItem;)V
     .locals 12
-    .param p1    # I
-    .param p2    # Lcom/android/mms/ui/MessageItem;
 
     iput p1, p0, Lcom/android/mms/ui/MessageListItem$MmsSlideGroup;->mVisiblePageCount:I
 
@@ -277,7 +271,6 @@
 
 .method public present(Lcom/android/mms/ui/MessageListItem;)V
     .locals 1
-    .param p1    # Lcom/android/mms/ui/MessageListItem;
 
     const/4 v0, 0x0
 
@@ -288,8 +281,6 @@
 
 .method public present(Lcom/android/mms/ui/MessageListItem;Z)V
     .locals 10
-    .param p1    # Lcom/android/mms/ui/MessageListItem;
-    .param p2    # Z
 
     const/4 v8, 0x0
 
@@ -466,8 +457,6 @@
 
 .method public setBodyTextSize(IF)V
     .locals 3
-    .param p1    # I
-    .param p2    # F
 
     iget-object v2, p0, Lcom/android/mms/ui/MessageListItem$MmsSlideGroup;->mTextProperty:Lcom/android/mms/ui/MessageListItem$BodyTextViewProperty;
 
@@ -508,7 +497,6 @@
 
 .method public setTextMaxWidth(I)V
     .locals 3
-    .param p1    # I
 
     invoke-virtual {p0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
@@ -552,7 +540,6 @@
 
 .method public setTextOnTouchListener(Landroid/view/View$OnTouchListener;)V
     .locals 3
-    .param p1    # Landroid/view/View$OnTouchListener;
 
     iget-object v2, p0, Lcom/android/mms/ui/MessageListItem$MmsSlideGroup;->mTextProperty:Lcom/android/mms/ui/MessageListItem$BodyTextViewProperty;
 

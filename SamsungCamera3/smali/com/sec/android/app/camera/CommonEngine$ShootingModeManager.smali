@@ -113,8 +113,6 @@
 
 .method synthetic constructor <init>(Lcom/sec/android/app/camera/CommonEngine;Lcom/sec/android/app/camera/CommonEngine$1;)V
     .locals 0
-    .param p1    # Lcom/sec/android/app/camera/CommonEngine;
-    .param p2    # Lcom/sec/android/app/camera/CommonEngine$1;
 
     invoke-direct {p0, p1}, Lcom/sec/android/app/camera/CommonEngine$ShootingModeManager;-><init>(Lcom/sec/android/app/camera/CommonEngine;)V
 
@@ -123,10 +121,6 @@
 
 .method static synthetic access$1800(Lcom/sec/android/app/camera/CommonEngine$ShootingModeManager;[BLcom/sec/android/seccamera/SecCamera;Landroid/location/Location;)V
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/CommonEngine$ShootingModeManager;
-    .param p1    # [B
-    .param p2    # Lcom/sec/android/seccamera/SecCamera;
-    .param p3    # Landroid/location/Location;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/sec/android/app/camera/CommonEngine$ShootingModeManager;->startSavePicture([BLcom/sec/android/seccamera/SecCamera;Landroid/location/Location;)V
 
@@ -135,9 +129,6 @@
 
 .method static synthetic access$2200(Lcom/sec/android/app/camera/CommonEngine$ShootingModeManager;[BLandroid/location/Location;)Z
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/CommonEngine$ShootingModeManager;
-    .param p1    # [B
-    .param p2    # Landroid/location/Location;
 
     invoke-direct {p0, p1, p2}, Lcom/sec/android/app/camera/CommonEngine$ShootingModeManager;->storeImage([BLandroid/location/Location;)Z
 
@@ -148,7 +139,6 @@
 
 .method static synthetic access$4700(Lcom/sec/android/app/camera/CommonEngine$ShootingModeManager;)I
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/CommonEngine$ShootingModeManager;
 
     iget v0, p0, Lcom/sec/android/app/camera/CommonEngine$ShootingModeManager;->mContinuousFileSequence:I
 
@@ -157,8 +147,6 @@
 
 .method static synthetic access$4702(Lcom/sec/android/app/camera/CommonEngine$ShootingModeManager;I)I
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/CommonEngine$ShootingModeManager;
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/app/camera/CommonEngine$ShootingModeManager;->mContinuousFileSequence:I
 
@@ -167,7 +155,6 @@
 
 .method static synthetic access$4710(Lcom/sec/android/app/camera/CommonEngine$ShootingModeManager;)I
     .locals 2
-    .param p0    # Lcom/sec/android/app/camera/CommonEngine$ShootingModeManager;
 
     iget v0, p0, Lcom/sec/android/app/camera/CommonEngine$ShootingModeManager;->mContinuousFileSequence:I
 
@@ -180,8 +167,6 @@
 
 .method static synthetic access$602(Lcom/sec/android/app/camera/CommonEngine$ShootingModeManager;Landroid/content/ContentResolver;)Landroid/content/ContentResolver;
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/CommonEngine$ShootingModeManager;
-    .param p1    # Landroid/content/ContentResolver;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/CommonEngine$ShootingModeManager;->mContentResolver:Landroid/content/ContentResolver;
 
@@ -190,9 +175,6 @@
 
 .method private final startSavePicture([BLcom/sec/android/seccamera/SecCamera;Landroid/location/Location;)V
     .locals 5
-    .param p1    # [B
-    .param p2    # Lcom/sec/android/seccamera/SecCamera;
-    .param p3    # Landroid/location/Location;
 
     const-wide/16 v3, 0x400
 
@@ -240,8 +222,6 @@
 
 .method private declared-synchronized storeImage([BLandroid/location/Location;)Z
     .locals 39
-    .param p1    # [B
-    .param p2    # Landroid/location/Location;
 
     monitor-enter p0
 
@@ -5909,8 +5889,6 @@
 
 .method public onPictureTaken([BLcom/sec/android/seccamera/SecCamera;)V
     .locals 8
-    .param p1    # [B
-    .param p2    # Lcom/sec/android/seccamera/SecCamera;
 
     const-wide/16 v6, 0x400
 
@@ -6328,7 +6306,6 @@
 
 .method public setLocation(Landroid/location/Location;)V
     .locals 0
-    .param p1    # Landroid/location/Location;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/CommonEngine$ShootingModeManager;->mLocation:Landroid/location/Location;
 
@@ -6337,7 +6314,6 @@
 
 .method public setShootingMode(I)V
     .locals 7
-    .param p1    # I
 
     const/16 v3, 0x22
 

@@ -20,12 +20,6 @@
 # direct methods
 .method public constructor <init>([BIIIII)V
     .locals 0
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -96,7 +90,6 @@
 
 .method public setActuatorIndex(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/immersion/WaveformEffectDefinition;->nActuatorIndex:I
 
@@ -105,7 +98,6 @@
 
 .method public setBitDepth(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/immersion/WaveformEffectDefinition;->nBitDepth:I
 
@@ -114,7 +106,6 @@
 
 .method public setData([B)V
     .locals 0
-    .param p1    # [B
 
     iput-object p1, p0, Lcom/immersion/WaveformEffectDefinition;->pData:[B
 
@@ -123,7 +114,6 @@
 
 .method public setDataSize(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/immersion/WaveformEffectDefinition;->nDataSize:I
 
@@ -132,7 +122,6 @@
 
 .method public setMagnitude(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/immersion/WaveformEffectDefinition;->nMagnitude:I
 
@@ -141,7 +130,6 @@
 
 .method public setSampleRate(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/immersion/WaveformEffectDefinition;->nSampleRate:I
 

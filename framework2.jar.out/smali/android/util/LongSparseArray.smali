@@ -57,7 +57,6 @@
 
 .method public constructor <init>(I)V
     .locals 2
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -152,7 +151,6 @@
 # virtual methods
 .method public append(JLjava/lang/Object;)V
     .locals 7
-    .param p1    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(JTE;)V"
@@ -353,7 +351,6 @@
 
 .method public delete(J)V
     .locals 3
-    .param p1    # J
 
     iget-object v1, p0, Landroid/util/LongSparseArray;->mKeys:[J
 
@@ -389,7 +386,6 @@
 
 .method public get(J)Ljava/lang/Object;
     .locals 1
-    .param p1    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(J)TE;"
@@ -407,7 +403,6 @@
 
 .method public get(JLjava/lang/Object;)Ljava/lang/Object;
     .locals 3
-    .param p1    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(JTE;)TE;"
@@ -446,7 +441,6 @@
 
 .method public indexOfKey(J)I
     .locals 2
-    .param p1    # J
 
     iget-boolean v0, p0, Landroid/util/LongSparseArray;->mGarbage:Z
 
@@ -510,7 +504,6 @@
 
 .method public keyAt(I)J
     .locals 2
-    .param p1    # I
 
     iget-boolean v0, p0, Landroid/util/LongSparseArray;->mGarbage:Z
 
@@ -528,7 +521,6 @@
 
 .method public put(JLjava/lang/Object;)V
     .locals 8
-    .param p1    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(JTE;)V"
@@ -696,7 +688,6 @@
 
 .method public remove(J)V
     .locals 0
-    .param p1    # J
 
     invoke-virtual {p0, p1, p2}, Landroid/util/LongSparseArray;->delete(J)V
 
@@ -705,7 +696,6 @@
 
 .method public removeAt(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Landroid/util/LongSparseArray;->mValues:[Ljava/lang/Object;
 
@@ -731,7 +721,6 @@
 
 .method public setValueAt(ILjava/lang/Object;)V
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(ITE;)V"
@@ -852,7 +841,6 @@
 
 .method public valueAt(I)Ljava/lang/Object;
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)TE;"

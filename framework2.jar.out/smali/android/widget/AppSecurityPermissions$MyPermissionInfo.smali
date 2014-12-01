@@ -27,7 +27,6 @@
 # direct methods
 .method constructor <init>(Landroid/content/pm/PermissionInfo;)V
     .locals 0
-    .param p1    # Landroid/content/pm/PermissionInfo;
 
     invoke-direct {p0, p1}, Landroid/content/pm/PermissionInfo;-><init>(Landroid/content/pm/PermissionInfo;)V
 

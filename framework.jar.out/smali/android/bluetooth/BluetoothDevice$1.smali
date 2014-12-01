@@ -59,7 +59,6 @@
 
 .method public onBluetoothServiceUp(Landroid/bluetooth/IBluetooth;)V
     .locals 2
-    .param p1    # Landroid/bluetooth/IBluetooth;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

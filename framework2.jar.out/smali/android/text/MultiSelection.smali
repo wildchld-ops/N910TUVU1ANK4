@@ -70,9 +70,6 @@
 
 .method public static final addMultiSelection(Landroid/text/Spannable;II)V
     .locals 3
-    .param p0    # Landroid/text/Spannable;
-    .param p1    # I
-    .param p2    # I
 
     const/4 v2, 0x0
 
@@ -106,7 +103,6 @@
 
 .method public static final clearMultiSelection(Landroid/text/Spannable;)V
     .locals 6
-    .param p0    # Landroid/text/Spannable;
 
     const/4 v5, 0x0
 
@@ -175,7 +171,6 @@
 
 .method public static final getMultiSelectionCount(Landroid/text/Spannable;)I
     .locals 4
-    .param p0    # Landroid/text/Spannable;
 
     const/4 v1, 0x0
 
@@ -198,7 +193,6 @@
 
 .method public static final getMultiSelectionEnd(Landroid/text/Spannable;)[I
     .locals 6
-    .param p0    # Landroid/text/Spannable;
 
     const/4 v3, 0x0
 
@@ -243,7 +237,6 @@
 
 .method public static final getMultiSelectionStart(Landroid/text/Spannable;)[I
     .locals 6
-    .param p0    # Landroid/text/Spannable;
 
     const/4 v3, 0x0
 
@@ -288,7 +281,6 @@
 
 .method public static final getSelectionEnd(Ljava/lang/CharSequence;)I
     .locals 1
-    .param p0    # Ljava/lang/CharSequence;
 
     instance-of v0, p0, Landroid/text/Spanned;
 
@@ -313,7 +305,6 @@
 
 .method public static final getSelectionStart(Ljava/lang/CharSequence;)I
     .locals 1
-    .param p0    # Ljava/lang/CharSequence;
 
     instance-of v0, p0, Landroid/text/Spanned;
 
@@ -354,7 +345,6 @@
 
 .method public static final removeCurSelection(Landroid/text/Spannable;)V
     .locals 1
-    .param p0    # Landroid/text/Spannable;
 
     sget-object v0, Landroid/text/MultiSelection;->CURRENT_SELECTION_START:Ljava/lang/Object;
 
@@ -369,9 +359,6 @@
 
 .method public static final removeMultiSelection(Landroid/text/Spannable;II)Z
     .locals 6
-    .param p0    # Landroid/text/Spannable;
-    .param p1    # I
-    .param p2    # I
 
     const/4 v5, 0x1
 
@@ -428,7 +415,6 @@
 
 .method public static final selectAll(Landroid/text/Spannable;)V
     .locals 2
-    .param p0    # Landroid/text/Spannable;
 
     const/4 v0, 0x0
 
@@ -443,7 +429,6 @@
 
 .method public static final setIsMultiSelectingText(Z)V
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Landroid/text/MultiSelection;->mIsSelecting:Z
 
@@ -452,7 +437,6 @@
 
 .method public static final setNeedToScroll(Z)V
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Landroid/text/MultiSelection;->mNeedToScroll:Z
 
@@ -461,9 +445,6 @@
 
 .method public static setSelection(Landroid/text/Spannable;II)V
     .locals 22
-    .param p0    # Landroid/text/Spannable;
-    .param p1    # I
-    .param p2    # I
 
     move/from16 v0, p1
 
@@ -833,7 +814,6 @@
 
 .method public static final setTextViewHovered(Z)V
     .locals 1
-    .param p0    # Z
 
     const/4 v0, -0x1
 
@@ -844,8 +824,6 @@
 
 .method public static final setTextViewHovered(ZI)V
     .locals 0
-    .param p0    # Z
-    .param p1    # I
 
     sput-boolean p0, Landroid/text/MultiSelection;->mIsTextViewHovered:Z
 

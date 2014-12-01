@@ -131,7 +131,6 @@
 
 .method static synthetic access$000(Lcom/android/systemui/recent/cardholder/CardHolderRecentsActivity;)Lcom/android/systemui/recent/cardholder/RecentsPanelView;
     .locals 1
-    .param p0    # Lcom/android/systemui/recent/cardholder/CardHolderRecentsActivity;
 
     iget-object v0, p0, Lcom/android/systemui/recent/cardholder/CardHolderRecentsActivity;->mRecentsPanel:Lcom/android/systemui/recent/cardholder/RecentsPanelView;
 
@@ -140,7 +139,6 @@
 
 .method static synthetic access$100(Lcom/android/systemui/recent/cardholder/CardHolderRecentsActivity;)Z
     .locals 1
-    .param p0    # Lcom/android/systemui/recent/cardholder/CardHolderRecentsActivity;
 
     iget-boolean v0, p0, Lcom/android/systemui/recent/cardholder/CardHolderRecentsActivity;->mOnActivityCreated:Z
 
@@ -149,7 +147,6 @@
 
 .method static synthetic access$200(Lcom/android/systemui/recent/cardholder/CardHolderRecentsActivity;)Z
     .locals 1
-    .param p0    # Lcom/android/systemui/recent/cardholder/CardHolderRecentsActivity;
 
     iget-boolean v0, p0, Lcom/android/systemui/recent/cardholder/CardHolderRecentsActivity;->mShowing:Z
 
@@ -158,7 +155,6 @@
 
 .method static synthetic access$300(Lcom/android/systemui/recent/cardholder/CardHolderRecentsActivity;)Z
     .locals 1
-    .param p0    # Lcom/android/systemui/recent/cardholder/CardHolderRecentsActivity;
 
     iget-boolean v0, p0, Lcom/android/systemui/recent/cardholder/CardHolderRecentsActivity;->mForeground:Z
 
@@ -167,8 +163,6 @@
 
 .method static synthetic access$302(Lcom/android/systemui/recent/cardholder/CardHolderRecentsActivity;Z)Z
     .locals 0
-    .param p0    # Lcom/android/systemui/recent/cardholder/CardHolderRecentsActivity;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/systemui/recent/cardholder/CardHolderRecentsActivity;->mForeground:Z
 
@@ -177,7 +171,6 @@
 
 .method static synthetic access$400(Lcom/android/systemui/recent/cardholder/CardHolderRecentsActivity;)V
     .locals 0
-    .param p0    # Lcom/android/systemui/recent/cardholder/CardHolderRecentsActivity;
 
     invoke-direct {p0}, Lcom/android/systemui/recent/cardholder/CardHolderRecentsActivity;->updateState()V
 
@@ -186,7 +179,6 @@
 
 .method public static forceOpaqueBackground(Landroid/content/Context;)Z
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Landroid/app/WallpaperManager;->getInstance(Landroid/content/Context;)Landroid/app/WallpaperManager;
 
@@ -211,8 +203,6 @@
 
 .method private handleIntent(Landroid/content/Intent;Z)V
     .locals 6
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Z
 
     const/4 v2, 0x1
 
@@ -505,7 +495,6 @@
 
 .method private updateWallpaperVisibility(Z)V
     .locals 4
-    .param p1    # Z
 
     const/high16 v2, 0x100000
 
@@ -860,7 +849,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 1
-    .param p1    # Landroid/content/res/Configuration;
 
     iget-object v0, p0, Lcom/android/systemui/recent/cardholder/CardHolderRecentsActivity;->mRecentsPanel:Lcom/android/systemui/recent/cardholder/RecentsPanelView;
 
@@ -873,7 +861,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 8
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v3, 0x1
 
@@ -1220,7 +1207,6 @@
 
 .method protected onNewIntent(Landroid/content/Intent;)V
     .locals 1
-    .param p1    # Landroid/content/Intent;
 
     const/4 v0, 0x1
 
@@ -1334,7 +1320,6 @@
 
 .method protected onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "STATUSBAR-RecentsPanel"
 

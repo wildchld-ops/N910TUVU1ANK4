@@ -12,8 +12,6 @@
 # direct methods
 .method private constructor <init>(ILandroid/renderscript/RenderScript;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/renderscript/RenderScript;
 
     invoke-direct {p0, p1, p2}, Landroid/renderscript/ScriptIntrinsic;-><init>(ILandroid/renderscript/RenderScript;)V
 
@@ -34,7 +32,6 @@
 
 .method public static create(Landroid/renderscript/RenderScript;)Landroid/renderscript/ScriptIntrinsicColorMatrix;
     .locals 3
-    .param p0    # Landroid/renderscript/RenderScript;
 
     const/4 v1, 0x2
 
@@ -53,8 +50,6 @@
 
 .method public static create(Landroid/renderscript/RenderScript;Landroid/renderscript/Element;)Landroid/renderscript/ScriptIntrinsicColorMatrix;
     .locals 1
-    .param p0    # Landroid/renderscript/RenderScript;
-    .param p1    # Landroid/renderscript/Element;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -89,8 +84,6 @@
 # virtual methods
 .method public forEach(Landroid/renderscript/Allocation;Landroid/renderscript/Allocation;)V
     .locals 2
-    .param p1    # Landroid/renderscript/Allocation;
-    .param p2    # Landroid/renderscript/Allocation;
 
     invoke-virtual {p1}, Landroid/renderscript/Allocation;->getElement()Landroid/renderscript/Element;
 
@@ -393,10 +386,6 @@
 
 .method public setAdd(FFFF)V
     .locals 2
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
 
     iget-object v1, p0, Landroid/renderscript/ScriptIntrinsicColorMatrix;->mAdd:Landroid/renderscript/Float4;
 
@@ -453,7 +442,6 @@
 
 .method public setAdd(Landroid/renderscript/Float4;)V
     .locals 3
-    .param p1    # Landroid/renderscript/Float4;
 
     iget-object v1, p0, Landroid/renderscript/ScriptIntrinsicColorMatrix;->mAdd:Landroid/renderscript/Float4;
 
@@ -510,7 +498,6 @@
 
 .method public setColorMatrix(Landroid/renderscript/Matrix3f;)V
     .locals 1
-    .param p1    # Landroid/renderscript/Matrix3f;
 
     iget-object v0, p0, Landroid/renderscript/ScriptIntrinsicColorMatrix;->mMatrix:Landroid/renderscript/Matrix4f;
 
@@ -523,7 +510,6 @@
 
 .method public setColorMatrix(Landroid/renderscript/Matrix4f;)V
     .locals 1
-    .param p1    # Landroid/renderscript/Matrix4f;
 
     iget-object v0, p0, Landroid/renderscript/ScriptIntrinsicColorMatrix;->mMatrix:Landroid/renderscript/Matrix4f;
 

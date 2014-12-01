@@ -292,7 +292,7 @@
     if-eqz v1, :cond_2
 
     :try_start_2
-    invoke-virtual {v1}, Ljava/io/FilterOutputStream;->close()V
+    invoke-virtual {v1}, Ljava/io/DataOutputStream;->close()V
     :try_end_2
     .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_0
 
@@ -375,7 +375,7 @@
     # invokes: Lcom/android/phone/NetworkQueryService;->log(Ljava/lang/String;)V
     invoke-static {v3}, Lcom/android/phone/NetworkQueryService;->access$600(Ljava/lang/String;)V
 
-    invoke-virtual {v2}, Ljava/lang/Throwable;->printStackTrace()V
+    invoke-virtual {v2}, Ljava/io/IOException;->printStackTrace()V
 
     goto :goto_0
 
@@ -394,7 +394,7 @@
     if-eqz v1, :cond_2
 
     :try_start_6
-    invoke-virtual {v1}, Ljava/io/FilterOutputStream;->close()V
+    invoke-virtual {v1}, Ljava/io/DataOutputStream;->close()V
     :try_end_6
     .catch Ljava/io/IOException; {:try_start_6 .. :try_end_6} :catch_2
 
@@ -424,7 +424,7 @@
     # invokes: Lcom/android/phone/NetworkQueryService;->log(Ljava/lang/String;)V
     invoke-static {v3}, Lcom/android/phone/NetworkQueryService;->access$600(Ljava/lang/String;)V
 
-    invoke-virtual {v2}, Ljava/lang/Throwable;->printStackTrace()V
+    invoke-virtual {v2}, Ljava/io/IOException;->printStackTrace()V
 
     goto :goto_0
 
@@ -434,7 +434,7 @@
     if-eqz v1, :cond_4
 
     :try_start_7
-    invoke-virtual {v1}, Ljava/io/FilterOutputStream;->close()V
+    invoke-virtual {v1}, Ljava/io/DataOutputStream;->close()V
     :try_end_7
     .catch Ljava/io/IOException; {:try_start_7 .. :try_end_7} :catch_3
 
@@ -466,7 +466,7 @@
     # invokes: Lcom/android/phone/NetworkQueryService;->log(Ljava/lang/String;)V
     invoke-static {v4}, Lcom/android/phone/NetworkQueryService;->access$600(Ljava/lang/String;)V
 
-    invoke-virtual {v2}, Ljava/lang/Throwable;->printStackTrace()V
+    invoke-virtual {v2}, Ljava/io/IOException;->printStackTrace()V
 
     goto :goto_1
 

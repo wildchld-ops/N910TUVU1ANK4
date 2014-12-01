@@ -38,7 +38,6 @@
 # direct methods
 .method constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -95,7 +94,6 @@
 # virtual methods
 .method public getIndex(Lcom/android/systemui/recent/multiwindow/SmartClipNewFileName$IndexMode;)I
     .locals 3
-    .param p1    # Lcom/android/systemui/recent/multiwindow/SmartClipNewFileName$IndexMode;
 
     const/16 v2, 0x14
 
@@ -153,7 +151,6 @@
 
 .method public saveIndex(Lcom/android/systemui/recent/multiwindow/SmartClipNewFileName$IndexMode;)V
     .locals 5
-    .param p1    # Lcom/android/systemui/recent/multiwindow/SmartClipNewFileName$IndexMode;
 
     iget-object v2, p0, Lcom/android/systemui/recent/multiwindow/SmartClipNewFileName;->mContext:Landroid/content/Context;
 

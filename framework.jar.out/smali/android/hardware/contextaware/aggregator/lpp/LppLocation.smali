@@ -86,7 +86,6 @@
 
 .method public constructor <init>(Landroid/hardware/contextaware/aggregator/lpp/LppLocation;)V
     .locals 2
-    .param p1    # Landroid/hardware/contextaware/aggregator/lpp/LppLocation;
 
     const-wide/16 v0, 0x0
 
@@ -125,7 +124,6 @@
 
 .method public constructor <init>(Landroid/location/Location;)V
     .locals 7
-    .param p1    # Landroid/location/Location;
 
     const/4 v2, 0x1
 
@@ -306,8 +304,6 @@
 # virtual methods
 .method public PosPropation(DD)V
     .locals 11
-    .param p1    # D
-    .param p3    # D
 
     iget-boolean v7, p0, Landroid/hardware/contextaware/aggregator/lpp/LppLocation;->Updated:Z
 
@@ -435,7 +431,6 @@
 
 .method public distanceTo(Landroid/hardware/contextaware/aggregator/lpp/LppLocation;)D
     .locals 10
-    .param p1    # Landroid/hardware/contextaware/aggregator/lpp/LppLocation;
 
     invoke-virtual {p0}, Landroid/hardware/contextaware/aggregator/lpp/LppLocation;->getPosEastLocal()D
 
@@ -690,7 +685,6 @@
 
 .method public set(Landroid/hardware/contextaware/aggregator/lpp/LppLocation;)V
     .locals 7
-    .param p1    # Landroid/hardware/contextaware/aggregator/lpp/LppLocation;
 
     iget-object v0, p0, Landroid/hardware/contextaware/aggregator/lpp/LppLocation;->loc:Landroid/location/Location;
 
@@ -735,7 +729,6 @@
 
 .method public set(Landroid/location/Location;)V
     .locals 2
-    .param p1    # Landroid/location/Location;
 
     if-nez p1, :cond_0
 
@@ -764,7 +757,6 @@
 
 .method public setAltitude(D)V
     .locals 1
-    .param p1    # D
 
     iget-object v0, p0, Landroid/hardware/contextaware/aggregator/lpp/LppLocation;->loc:Landroid/location/Location;
 
@@ -779,7 +771,6 @@
 
 .method public setLatitude(D)V
     .locals 1
-    .param p1    # D
 
     iget-object v0, p0, Landroid/hardware/contextaware/aggregator/lpp/LppLocation;->loc:Landroid/location/Location;
 
@@ -794,7 +785,6 @@
 
 .method public setLongitude(D)V
     .locals 1
-    .param p1    # D
 
     iget-object v0, p0, Landroid/hardware/contextaware/aggregator/lpp/LppLocation;->loc:Landroid/location/Location;
 
@@ -809,7 +799,6 @@
 
 .method public setMovingStatus(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/hardware/contextaware/aggregator/lpp/LppLocation;->movingStatus:I
 
@@ -818,9 +807,6 @@
 
 .method public setOrigin(DDD)V
     .locals 1
-    .param p1    # D
-    .param p3    # D
-    .param p5    # D
 
     iput-wide p1, p0, Landroid/hardware/contextaware/aggregator/lpp/LppLocation;->mOrgLat:D
 
@@ -849,7 +835,6 @@
 
 .method public setSystemTime(J)V
     .locals 7
-    .param p1    # J
 
     iget-wide v2, p0, Landroid/hardware/contextaware/aggregator/lpp/LppLocation;->Capturedtime:J
 

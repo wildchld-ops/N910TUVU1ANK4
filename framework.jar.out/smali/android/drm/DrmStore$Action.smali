@@ -45,7 +45,6 @@
 
 .method static isValid(I)Z
     .locals 1
-    .param p0    # I
 
     const/4 v0, 0x0
 

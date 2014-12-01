@@ -94,7 +94,6 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/sec/android/vector/DRAW_PATH_TYPE;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-class v0, Lcom/sec/android/vector/DRAW_PATH_TYPE;
 

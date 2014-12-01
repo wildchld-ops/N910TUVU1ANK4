@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Lcom/android/systemui/recent/cardholder/RecentsPanelView;Lcom/android/systemui/recent/cardholder/RecentsPanelView$1;)V
     .locals 0
-    .param p1    # Lcom/android/systemui/recent/cardholder/RecentsPanelView;
-    .param p2    # Lcom/android/systemui/recent/cardholder/RecentsPanelView$1;
 
     invoke-direct {p0, p1}, Lcom/android/systemui/recent/cardholder/RecentsPanelView$OnClickLaunchButton;-><init>(Lcom/android/systemui/recent/cardholder/RecentsPanelView;)V
 
@@ -46,7 +44,6 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 9
-    .param p1    # Landroid/view/View;
 
     iget-object v5, p0, Lcom/android/systemui/recent/cardholder/RecentsPanelView$OnClickLaunchButton;->this$0:Lcom/android/systemui/recent/cardholder/RecentsPanelView;
 

@@ -89,8 +89,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;J)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # J
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -139,8 +137,6 @@
 
 .method public constructor <init>(Landroid/content/Context;JLjava/util/ArrayList;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -347,7 +343,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/rcs/transaction/RcsFileTransfer;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/mms/rcs/transaction/RcsFileTransfer;
 
     iget-object v0, p0, Lcom/android/mms/rcs/transaction/RcsFileTransfer;->mFiles:Ljava/util/ArrayList;
 
@@ -356,7 +351,6 @@
 
 .method static synthetic access$1000(Lcom/android/mms/rcs/transaction/RcsFileTransfer;)Ljava/util/HashMap;
     .locals 1
-    .param p0    # Lcom/android/mms/rcs/transaction/RcsFileTransfer;
 
     iget-object v0, p0, Lcom/android/mms/rcs/transaction/RcsFileTransfer;->mFilesHashMap:Ljava/util/HashMap;
 
@@ -365,8 +359,6 @@
 
 .method static synthetic access$102(Lcom/android/mms/rcs/transaction/RcsFileTransfer;Ljava/util/ArrayList;)Ljava/util/ArrayList;
     .locals 0
-    .param p0    # Lcom/android/mms/rcs/transaction/RcsFileTransfer;
-    .param p1    # Ljava/util/ArrayList;
 
     iput-object p1, p0, Lcom/android/mms/rcs/transaction/RcsFileTransfer;->mFiles:Ljava/util/ArrayList;
 
@@ -375,7 +367,6 @@
 
 .method static synthetic access$1100(Lcom/android/mms/rcs/transaction/RcsFileTransfer;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/mms/rcs/transaction/RcsFileTransfer;
 
     iget-object v0, p0, Lcom/android/mms/rcs/transaction/RcsFileTransfer;->recipients:Ljava/util/ArrayList;
 
@@ -384,7 +375,6 @@
 
 .method static synthetic access$1500(Lcom/android/mms/rcs/transaction/RcsFileTransfer;)I
     .locals 1
-    .param p0    # Lcom/android/mms/rcs/transaction/RcsFileTransfer;
 
     iget v0, p0, Lcom/android/mms/rcs/transaction/RcsFileTransfer;->mSelectedResizeType:I
 
@@ -393,8 +383,6 @@
 
 .method static synthetic access$1502(Lcom/android/mms/rcs/transaction/RcsFileTransfer;I)I
     .locals 0
-    .param p0    # Lcom/android/mms/rcs/transaction/RcsFileTransfer;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/mms/rcs/transaction/RcsFileTransfer;->mSelectedResizeType:I
 
@@ -403,9 +391,6 @@
 
 .method static synthetic access$1600(Lcom/android/mms/rcs/transaction/RcsFileTransfer;[Ljava/lang/String;I)V
     .locals 0
-    .param p0    # Lcom/android/mms/rcs/transaction/RcsFileTransfer;
-    .param p1    # [Ljava/lang/String;
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/mms/rcs/transaction/RcsFileTransfer;->savePreferences([Ljava/lang/String;I)V
 
@@ -414,8 +399,6 @@
 
 .method static synthetic access$1700(Lcom/android/mms/rcs/transaction/RcsFileTransfer;Ljava/util/ArrayList;)V
     .locals 0
-    .param p0    # Lcom/android/mms/rcs/transaction/RcsFileTransfer;
-    .param p1    # Ljava/util/ArrayList;
 
     invoke-direct {p0, p1}, Lcom/android/mms/rcs/transaction/RcsFileTransfer;->ImageResize(Ljava/util/ArrayList;)V
 
@@ -424,8 +407,6 @@
 
 .method static synthetic access$1802(Lcom/android/mms/rcs/transaction/RcsFileTransfer;Landroid/app/AlertDialog;)Landroid/app/AlertDialog;
     .locals 0
-    .param p0    # Lcom/android/mms/rcs/transaction/RcsFileTransfer;
-    .param p1    # Landroid/app/AlertDialog;
 
     iput-object p1, p0, Lcom/android/mms/rcs/transaction/RcsFileTransfer;->mAttachErrorDialog:Landroid/app/AlertDialog;
 
@@ -434,10 +415,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/rcs/transaction/RcsFileTransfer;Ljava/lang/String;II)Landroid/net/Uri;
     .locals 1
-    .param p0    # Lcom/android/mms/rcs/transaction/RcsFileTransfer;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/mms/rcs/transaction/RcsFileTransfer;->getResizedImageUri(Ljava/lang/String;II)Landroid/net/Uri;
 
@@ -448,7 +425,6 @@
 
 .method static synthetic access$300(Lcom/android/mms/rcs/transaction/RcsFileTransfer;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/mms/rcs/transaction/RcsFileTransfer;
 
     iget-object v0, p0, Lcom/android/mms/rcs/transaction/RcsFileTransfer;->mContext:Landroid/content/Context;
 
@@ -457,7 +433,6 @@
 
 .method static synthetic access$400(Lcom/android/mms/rcs/transaction/RcsFileTransfer;)J
     .locals 2
-    .param p0    # Lcom/android/mms/rcs/transaction/RcsFileTransfer;
 
     iget-wide v0, p0, Lcom/android/mms/rcs/transaction/RcsFileTransfer;->mThreadId:J
 
@@ -466,8 +441,6 @@
 
 .method static synthetic access$500(Lcom/android/mms/rcs/transaction/RcsFileTransfer;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/mms/rcs/transaction/RcsFileTransfer;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/mms/rcs/transaction/RcsFileTransfer;->validateImageFile(Ljava/lang/String;)V
 
@@ -476,7 +449,6 @@
 
 .method static synthetic access$600(Lcom/android/mms/rcs/transaction/RcsFileTransfer;)V
     .locals 0
-    .param p0    # Lcom/android/mms/rcs/transaction/RcsFileTransfer;
 
     invoke-direct {p0}, Lcom/android/mms/rcs/transaction/RcsFileTransfer;->validateFiles()V
 
@@ -485,7 +457,6 @@
 
 .method static synthetic access$700(Lcom/android/mms/rcs/transaction/RcsFileTransfer;)Landroid/app/ProgressDialog;
     .locals 1
-    .param p0    # Lcom/android/mms/rcs/transaction/RcsFileTransfer;
 
     iget-object v0, p0, Lcom/android/mms/rcs/transaction/RcsFileTransfer;->mAttachmentProgressDialog:Landroid/app/ProgressDialog;
 
@@ -494,8 +465,6 @@
 
 .method static synthetic access$702(Lcom/android/mms/rcs/transaction/RcsFileTransfer;Landroid/app/ProgressDialog;)Landroid/app/ProgressDialog;
     .locals 0
-    .param p0    # Lcom/android/mms/rcs/transaction/RcsFileTransfer;
-    .param p1    # Landroid/app/ProgressDialog;
 
     iput-object p1, p0, Lcom/android/mms/rcs/transaction/RcsFileTransfer;->mAttachmentProgressDialog:Landroid/app/ProgressDialog;
 
@@ -504,8 +473,6 @@
 
 .method static synthetic access$800(Lcom/android/mms/rcs/transaction/RcsFileTransfer;[Landroid/net/Uri;)Landroid/net/Uri;
     .locals 1
-    .param p0    # Lcom/android/mms/rcs/transaction/RcsFileTransfer;
-    .param p1    # [Landroid/net/Uri;
 
     invoke-direct {p0, p1}, Lcom/android/mms/rcs/transaction/RcsFileTransfer;->createAndWriteContacts([Landroid/net/Uri;)Landroid/net/Uri;
 
@@ -566,7 +533,6 @@
 
 .method private createAndWriteContacts([Landroid/net/Uri;)Landroid/net/Uri;
     .locals 23
-    .param p1    # [Landroid/net/Uri;
 
     const/16 v19, 0x0
 
@@ -1269,7 +1235,6 @@
 
 .method private static deleteDirectory(Ljava/io/File;)Z
     .locals 3
-    .param p0    # Ljava/io/File;
 
     invoke-virtual {p0}, Ljava/io/File;->exists()Z
 
@@ -1330,7 +1295,6 @@
 
 .method public static exifOrientationToDegrees(I)F
     .locals 1
-    .param p0    # I
 
     const/4 v0, 0x6
 
@@ -1367,7 +1331,6 @@
 
 .method public static getExtension(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     const-string v1, "."
 
@@ -1400,9 +1363,6 @@
 
 .method private getResizedImageUri(Ljava/lang/String;II)Landroid/net/Uri;
     .locals 19
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v9, 0x0
 
@@ -1718,8 +1678,6 @@
 
 .method public static getRotatedDegree(Landroid/net/Uri;Landroid/content/Context;)I
     .locals 11
-    .param p0    # Landroid/net/Uri;
-    .param p1    # Landroid/content/Context;
 
     const/4 v8, 0x0
 
@@ -1855,10 +1813,6 @@
 
 .method private imageResizeByResolution(Ljava/lang/String;III)Landroid/net/Uri;
     .locals 19
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     if-eqz p1, :cond_0
 
@@ -2210,9 +2164,6 @@
 
 .method private imageResizeBySampleSize(ILjava/lang/String;Ljava/io/File;)Landroid/graphics/Bitmap;
     .locals 11
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/io/File;
 
     const/4 v10, 0x0
 
@@ -2354,7 +2305,6 @@
 
 .method private static isMediaUri(Landroid/net/Uri;)Z
     .locals 3
-    .param p0    # Landroid/net/Uri;
 
     invoke-virtual {p0}, Landroid/net/Uri;->getAuthority()Ljava/lang/String;
 
@@ -2435,7 +2385,6 @@
 
 .method private resizeFilePath(Ljava/lang/String;)Ljava/lang/String;
     .locals 17
-    .param p1    # Ljava/lang/String;
 
     const-string v15, "/"
 
@@ -2793,8 +2742,6 @@
 
 .method private savePreferences([Ljava/lang/String;I)V
     .locals 3
-    .param p1    # [Ljava/lang/String;
-    .param p2    # I
 
     if-gez p2, :cond_1
 
@@ -2826,8 +2773,6 @@
 
 .method private showErorDialogOnUiThread(Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/mms/rcs/transaction/RcsFileTransfer;->mContext:Landroid/content/Context;
 
@@ -3490,7 +3435,6 @@
 
 .method private validateImageFile(Ljava/lang/String;)V
     .locals 16
-    .param p1    # Ljava/lang/String;
 
     const/4 v6, 0x0
 
@@ -3803,8 +3747,6 @@
 
 .method private writeContactToStream(Ljava/io/OutputStream;Landroid/net/Uri;)Z
     .locals 10
-    .param p1    # Ljava/io/OutputStream;
-    .param p2    # Landroid/net/Uri;
 
     const/4 v7, 0x0
 
@@ -3970,7 +3912,6 @@
 # virtual methods
 .method public VcfFileAndSendTask(Landroid/net/Uri;)V
     .locals 3
-    .param p1    # Landroid/net/Uri;
 
     if-eqz p1, :cond_0
 
@@ -4006,7 +3947,6 @@
 
 .method public createDirIfNotExists(Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x1
 
@@ -4040,7 +3980,6 @@
 
 .method public hasParticipantsInChat(Ljava/util/ArrayList;[Ljava/lang/String;)Z
     .locals 5
-    .param p2    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -4110,7 +4049,6 @@
 
 .method public postFileSelector(Landroid/content/Intent;)V
     .locals 11
-    .param p1    # Landroid/content/Intent;
 
     invoke-virtual {p1}, Landroid/content/Intent;->getExtras()Landroid/os/Bundle;
 
@@ -4272,7 +4210,6 @@
 
 .method public removeActualParticipants(Ljava/util/ArrayList;[Ljava/lang/String;)Ljava/util/ArrayList;
     .locals 6
-    .param p2    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -4326,7 +4263,6 @@
 
 .method public resizeImageLargeFile(Ljava/lang/String;)Landroid/net/Uri;
     .locals 26
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -4866,7 +4802,6 @@
 
 .method public setComposer(Lcom/android/mms/ui/ComposeMessageFragment;)V
     .locals 0
-    .param p1    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     iput-object p1, p0, Lcom/android/mms/rcs/transaction/RcsFileTransfer;->mComposer:Lcom/android/mms/ui/ComposeMessageFragment;
 
@@ -4875,7 +4810,6 @@
 
 .method public setHandler(Landroid/os/Handler;)V
     .locals 0
-    .param p1    # Landroid/os/Handler;
 
     sput-object p1, Lcom/android/mms/rcs/transaction/RcsFileTransfer;->mHandler:Landroid/os/Handler;
 

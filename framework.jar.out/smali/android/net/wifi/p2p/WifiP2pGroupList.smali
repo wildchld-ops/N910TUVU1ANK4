@@ -72,8 +72,6 @@
 
 .method constructor <init>(Landroid/net/wifi/p2p/WifiP2pGroupList;Landroid/net/wifi/p2p/WifiP2pGroupList$GroupDeleteListener;)V
     .locals 5
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pGroupList;
-    .param p2    # Landroid/net/wifi/p2p/WifiP2pGroupList$GroupDeleteListener;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -140,7 +138,6 @@
 
 .method static synthetic access$000(Landroid/net/wifi/p2p/WifiP2pGroupList;)Landroid/net/wifi/p2p/WifiP2pGroupList$GroupDeleteListener;
     .locals 1
-    .param p0    # Landroid/net/wifi/p2p/WifiP2pGroupList;
 
     iget-object v0, p0, Landroid/net/wifi/p2p/WifiP2pGroupList;->mListener:Landroid/net/wifi/p2p/WifiP2pGroupList$GroupDeleteListener;
 
@@ -149,7 +146,6 @@
 
 .method static synthetic access$100(Landroid/net/wifi/p2p/WifiP2pGroupList;)Z
     .locals 1
-    .param p0    # Landroid/net/wifi/p2p/WifiP2pGroupList;
 
     iget-boolean v0, p0, Landroid/net/wifi/p2p/WifiP2pGroupList;->isClearCalled:Z
 
@@ -160,7 +156,6 @@
 # virtual methods
 .method add(Landroid/net/wifi/p2p/WifiP2pGroup;)V
     .locals 2
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pGroup;
 
     iget-object v0, p0, Landroid/net/wifi/p2p/WifiP2pGroupList;->mGroups:Landroid/util/LruCache;
 
@@ -211,7 +206,6 @@
 
 .method contains(I)Z
     .locals 4
-    .param p1    # I
 
     iget-object v3, p0, Landroid/net/wifi/p2p/WifiP2pGroupList;->mGroups:Landroid/util/LruCache;
 
@@ -292,7 +286,6 @@
 
 .method getNetworkId(Ljava/lang/String;)I
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, -0x1
 
@@ -363,8 +356,6 @@
 
 .method getNetworkId(Ljava/lang/String;Ljava/lang/String;)I
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v3, -0x1
 
@@ -447,7 +438,6 @@
 
 .method getOwnerAddr(I)Ljava/lang/String;
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Landroid/net/wifi/p2p/WifiP2pGroupList;->mGroups:Landroid/util/LruCache;
 
@@ -480,7 +470,6 @@
 
 .method remove(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Landroid/net/wifi/p2p/WifiP2pGroupList;->mGroups:Landroid/util/LruCache;
 
@@ -495,7 +484,6 @@
 
 .method remove(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Landroid/net/wifi/p2p/WifiP2pGroupList;->getNetworkId(Ljava/lang/String;)I
 
@@ -560,8 +548,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 4
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v3, p0, Landroid/net/wifi/p2p/WifiP2pGroupList;->mGroups:Landroid/util/LruCache;
 

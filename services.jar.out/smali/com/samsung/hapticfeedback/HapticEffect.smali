@@ -92,7 +92,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     const/4 v3, 0x1
 
@@ -165,9 +164,6 @@
 
 .method public constructor <init>(Landroid/content/Context;II)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v5, 0x1
 
@@ -311,7 +307,6 @@
 
 .method private InitializeLib(Landroid/content/Context;)V
     .locals 10
-    .param p1    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -409,8 +404,6 @@
 
 .method static synthetic access$002(Lcom/samsung/hapticfeedback/HapticEffect;Z)Z
     .locals 0
-    .param p0    # Lcom/samsung/hapticfeedback/HapticEffect;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/hapticfeedback/HapticEffect;->mEnableInSettingMenu:Z
 
@@ -419,8 +412,6 @@
 
 .method static synthetic access$100(Lcom/samsung/hapticfeedback/HapticEffect;Landroid/content/Context;)Z
     .locals 1
-    .param p0    # Lcom/samsung/hapticfeedback/HapticEffect;
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Lcom/samsung/hapticfeedback/HapticEffect;->isEnableSettingMenu(Landroid/content/Context;)Z
 
@@ -431,7 +422,6 @@
 
 .method private isEnableSettingMenu(Landroid/content/Context;)Z
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     const/4 v1, 0x1
 
@@ -902,7 +892,6 @@
 
 .method public playEffect(I)V
     .locals 3
-    .param p1    # I
 
     :try_start_0
     iget-object v1, p0, Lcom/samsung/hapticfeedback/HapticEffect;->mDevice:Lcom/immersion/Device;
@@ -936,7 +925,6 @@
 
 .method public playEffect(Lcom/immersion/MagSweepEffectDefinition;)V
     .locals 1
-    .param p1    # Lcom/immersion/MagSweepEffectDefinition;
 
     iget-object v0, p0, Lcom/samsung/hapticfeedback/HapticEffect;->mDevice:Lcom/immersion/Device;
 
@@ -947,7 +935,6 @@
 
 .method public playEffect(Lcom/immersion/PeriodicEffectDefinition;)V
     .locals 1
-    .param p1    # Lcom/immersion/PeriodicEffectDefinition;
 
     iget-object v0, p0, Lcom/samsung/hapticfeedback/HapticEffect;->mDevice:Lcom/immersion/Device;
 
@@ -958,7 +945,6 @@
 
 .method public playEffectByDistance(D)V
     .locals 4
-    .param p1    # D
 
     iget-boolean v0, p0, Lcom/samsung/hapticfeedback/HapticEffect;->mEnableInSettingMenu:Z
 
@@ -1012,8 +998,6 @@
 
 .method public playEffectByDistance(DF)V
     .locals 4
-    .param p1    # D
-    .param p3    # F
 
     iget-boolean v0, p0, Lcom/samsung/hapticfeedback/HapticEffect;->mEnableInSettingMenu:Z
 
@@ -1067,10 +1051,6 @@
 
 .method public playEffectByDistance(FFFF)V
     .locals 6
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
 
     iget-boolean v0, p0, Lcom/samsung/hapticfeedback/HapticEffect;->mEnableInSettingMenu:Z
 
@@ -1152,11 +1132,6 @@
 
 .method public playEffectByDistance(FFFFF)V
     .locals 6
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
 
     iget-boolean v0, p0, Lcom/samsung/hapticfeedback/HapticEffect;->mEnableInSettingMenu:Z
 
@@ -1260,7 +1235,6 @@
 
 .method public setEffectType(Ljava/lang/String;)V
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -1409,7 +1383,6 @@
 
 .method public setEffectType([B)V
     .locals 4
-    .param p1    # [B
 
     new-instance v3, Lcom/immersion/IVTBuffer;
 
@@ -1455,7 +1428,6 @@
 
 .method public setIntensityLevel(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/hapticfeedback/HapticEffect;->InsLevel:I
 
@@ -1464,12 +1436,6 @@
 
 .method public setMagEffectType(IIIIII)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     iget-object v0, p0, Lcom/samsung/hapticfeedback/HapticEffect;->m_MagSweepEffectDefinition:Lcom/immersion/MagSweepEffectDefinition;
 
@@ -1500,7 +1466,6 @@
 
 .method public setMagEffectType(Lcom/immersion/MagSweepEffectDefinition;)V
     .locals 2
-    .param p1    # Lcom/immersion/MagSweepEffectDefinition;
 
     iget-object v0, p0, Lcom/samsung/hapticfeedback/HapticEffect;->m_MagSweepEffectDefinition:Lcom/immersion/MagSweepEffectDefinition;
 
@@ -1555,7 +1520,6 @@
 
 .method public setMagEffectType([I)V
     .locals 2
-    .param p1    # [I
 
     iget-object v0, p0, Lcom/samsung/hapticfeedback/HapticEffect;->m_MagSweepEffectDefinition:Lcom/immersion/MagSweepEffectDefinition;
 
@@ -1610,7 +1574,6 @@
 
 .method public setMagIntensity(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/samsung/hapticfeedback/HapticEffect;->m_MagSweepEffectDefinition:Lcom/immersion/MagSweepEffectDefinition;
 
@@ -1621,7 +1584,6 @@
 
 .method public setPlayEffectStrength(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/hapticfeedback/HapticEffect;->effectStrength:I
 

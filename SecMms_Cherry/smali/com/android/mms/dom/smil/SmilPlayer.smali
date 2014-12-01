@@ -104,7 +104,6 @@
 
 .method private declared-synchronized actionEntry(Lcom/android/mms/dom/smil/SmilPlayer$TimelineEntry;)V
     .locals 2
-    .param p1    # Lcom/android/mms/dom/smil/SmilPlayer$TimelineEntry;
 
     monitor-enter p0
 
@@ -436,7 +435,6 @@
 
 .method private declared-synchronized getOffsetTime(Lorg/w3c/dom/smil/ElementTime;)D
     .locals 7
-    .param p1    # Lorg/w3c/dom/smil/ElementTime;
 
     monitor-enter p0
 
@@ -509,9 +507,6 @@
 
 .method private getParTimeline(Lorg/w3c/dom/smil/ElementParallelTimeContainer;DD)Ljava/util/ArrayList;
     .locals 27
-    .param p1    # Lorg/w3c/dom/smil/ElementParallelTimeContainer;
-    .param p2    # D
-    .param p4    # D
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -722,9 +717,6 @@
 
 .method private getSeqTimeline(Lorg/w3c/dom/smil/ElementSequentialTimeContainer;DD)Ljava/util/ArrayList;
     .locals 29
-    .param p1    # Lorg/w3c/dom/smil/ElementSequentialTimeContainer;
-    .param p2    # D
-    .param p4    # D
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -943,9 +935,6 @@
 
 .method private getTimeline(Lorg/w3c/dom/smil/ElementTime;DD)Ljava/util/ArrayList;
     .locals 17
-    .param p1    # Lorg/w3c/dom/smil/ElementTime;
-    .param p2    # D
-    .param p4    # D
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1130,7 +1119,6 @@
 
 .method private declared-synchronized isBeginOfSlide(Lcom/android/mms/dom/smil/SmilPlayer$TimelineEntry;)Z
     .locals 1
-    .param p1    # Lcom/android/mms/dom/smil/SmilPlayer$TimelineEntry;
 
     monitor-enter p0
 
@@ -1926,7 +1914,6 @@
 
 .method private declared-synchronized waitForEntry(J)V
     .locals 10
-    .param p1    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/InterruptedException;
@@ -2239,7 +2226,6 @@
 
 .method public declared-synchronized init(Lorg/w3c/dom/smil/ElementTime;)V
     .locals 6
-    .param p1    # Lorg/w3c/dom/smil/ElementTime;
 
     monitor-enter p0
 
@@ -3029,7 +3015,6 @@
 
 .method public declared-synchronized seek(I)V
     .locals 4
-    .param p1    # I
 
     monitor-enter p0
 
@@ -3078,7 +3063,6 @@
 
 .method public setPlayerState(Lcom/android/mms/dom/smil/SmilPlayer$SmilPlayerState;)V
     .locals 0
-    .param p1    # Lcom/android/mms/dom/smil/SmilPlayer$SmilPlayerState;
 
     iput-object p1, p0, Lcom/android/mms/dom/smil/SmilPlayer;->mState:Lcom/android/mms/dom/smil/SmilPlayer$SmilPlayerState;
 

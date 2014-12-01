@@ -201,8 +201,6 @@
 
 .method private updatePosition(II)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
 
     const/4 v6, 0x0
 
@@ -406,10 +404,6 @@
 
 .method public updatePosition(IIZZ)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # Z
 
     invoke-virtual {p0}, Landroid/widget/Editor$PinnedPopupWindow;->isShowing()Z
 

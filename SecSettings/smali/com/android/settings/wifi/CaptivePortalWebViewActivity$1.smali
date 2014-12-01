@@ -33,8 +33,6 @@
 # virtual methods
 .method public onProgressChanged(Landroid/webkit/WebView;I)V
     .locals 1
-    .param p1    # Landroid/webkit/WebView;
-    .param p2    # I
 
     # getter for: Lcom/android/settings/wifi/CaptivePortalWebViewActivity;->mProgressBar:Landroid/widget/ProgressBar;
     invoke-static {}, Lcom/android/settings/wifi/CaptivePortalWebViewActivity;->access$000()Landroid/widget/ProgressBar;

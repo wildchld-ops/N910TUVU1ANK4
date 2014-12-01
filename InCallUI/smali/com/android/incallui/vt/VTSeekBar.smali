@@ -30,8 +30,6 @@
 # direct methods
 .method public constructor <init>(Landroid/view/View;Landroid/app/Activity;)V
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/app/Activity;
 
     const/4 v0, 0x0
 
@@ -84,7 +82,6 @@
 
 .method static synthetic access$000(Lcom/android/incallui/vt/VTSeekBar;)I
     .locals 1
-    .param p0    # Lcom/android/incallui/vt/VTSeekBar;
 
     iget v0, p0, Lcom/android/incallui/vt/VTSeekBar;->mSeekBarSelection:I
 
@@ -93,7 +90,6 @@
 
 .method static synthetic access$100(Lcom/android/incallui/vt/VTSeekBar;)Lcom/android/incallui/vt/VTSeekBar$SeekBarTimer;
     .locals 1
-    .param p0    # Lcom/android/incallui/vt/VTSeekBar;
 
     iget-object v0, p0, Lcom/android/incallui/vt/VTSeekBar;->mSeekbarCntDwn:Lcom/android/incallui/vt/VTSeekBar$SeekBarTimer;
 
@@ -102,7 +98,6 @@
 
 .method static synthetic access$200(Lcom/android/incallui/vt/VTSeekBar;)Landroid/app/Activity;
     .locals 1
-    .param p0    # Lcom/android/incallui/vt/VTSeekBar;
 
     iget-object v0, p0, Lcom/android/incallui/vt/VTSeekBar;->mActivity:Landroid/app/Activity;
 
@@ -111,7 +106,6 @@
 
 .method static synthetic access$300(Lcom/android/incallui/vt/VTSeekBar;)Landroid/widget/FrameLayout;
     .locals 1
-    .param p0    # Lcom/android/incallui/vt/VTSeekBar;
 
     iget-object v0, p0, Lcom/android/incallui/vt/VTSeekBar;->mSeekBarLayout:Landroid/widget/FrameLayout;
 
@@ -122,7 +116,6 @@
 # virtual methods
 .method public showSeekBar(I)V
     .locals 9
-    .param p1    # I
 
     new-instance v0, Ljava/lang/StringBuilder;
 

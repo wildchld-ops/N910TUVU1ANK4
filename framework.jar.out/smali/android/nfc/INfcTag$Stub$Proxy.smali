@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -45,7 +44,6 @@
 
 .method public canMakeReadOnly(I)Z
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -108,7 +106,6 @@
 
 .method public close(I)I
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -164,8 +161,6 @@
 
 .method public connect(II)I
     .locals 6
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -223,8 +218,6 @@
 
 .method public formatNdef(I[B)I
     .locals 6
-    .param p1    # I
-    .param p2    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -350,7 +343,6 @@
 
 .method public getMaxTransceiveLength(I)I
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -406,7 +398,6 @@
 
 .method public getTechList(I)[I
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -462,7 +453,6 @@
 
 .method public getTimeout(I)I
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -518,7 +508,6 @@
 
 .method public isNdef(I)Z
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -581,7 +570,6 @@
 
 .method public isPresent(I)Z
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -644,7 +632,6 @@
 
 .method public ndefIsWritable(I)Z
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -707,7 +694,6 @@
 
 .method public ndefMakeReadOnly(I)I
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -763,7 +749,6 @@
 
 .method public ndefRead(I)Landroid/nfc/NdefMessage;
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -835,8 +820,6 @@
 
 .method public ndefWrite(ILandroid/nfc/NdefMessage;)I
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/nfc/NdefMessage;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -913,7 +896,6 @@
 
 .method public reconnect(I)I
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -969,7 +951,6 @@
 
 .method public rediscover(I)Landroid/nfc/Tag;
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1090,8 +1071,6 @@
 
 .method public setTimeout(II)I
     .locals 6
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1149,9 +1128,6 @@
 
 .method public transceive(I[BZ)Landroid/nfc/TransceiveResult;
     .locals 6
-    .param p1    # I
-    .param p2    # [B
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

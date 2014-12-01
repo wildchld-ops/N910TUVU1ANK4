@@ -27,7 +27,6 @@
 # direct methods
 .method constructor <init>(Ljava/lang/Class;Ljava/lang/String;)V
     .locals 0
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Landroid/util/Property;-><init>(Ljava/lang/Class;Ljava/lang/String;)V
 
@@ -38,7 +37,6 @@
 # virtual methods
 .method public get(Lcom/android/launcher2/PagedView;)Ljava/lang/Float;
     .locals 1
-    .param p1    # Lcom/android/launcher2/PagedView;
 
     invoke-virtual {p1}, Lcom/android/launcher2/PagedView;->getPageBackgroundAlpha()F
 
@@ -53,7 +51,6 @@
 
 .method public bridge synthetic get(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/android/launcher2/PagedView;
 
@@ -66,8 +63,6 @@
 
 .method public set(Lcom/android/launcher2/PagedView;Ljava/lang/Float;)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/PagedView;
-    .param p2    # Ljava/lang/Float;
 
     invoke-virtual {p2}, Ljava/lang/Float;->floatValue()F
 
@@ -80,8 +75,6 @@
 
 .method public bridge synthetic set(Ljava/lang/Object;Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p1, Lcom/android/launcher2/PagedView;
 

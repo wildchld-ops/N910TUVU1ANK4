@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/pm/PackageParser$Service;)V
     .locals 0
-    .param p1    # Landroid/content/pm/PackageParser$Service;
 
     invoke-direct {p0}, Landroid/content/pm/PackageParser$IntentInfo;-><init>()V
 

@@ -145,7 +145,7 @@
 
     const v0, 0x7f0a01a8
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/phone/PhotoringPhraseList;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -155,7 +155,7 @@
 
     const v0, 0x7f0a01a9
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/phone/PhotoringPhraseList;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -165,7 +165,7 @@
 
     const v0, 0x7f0a01ab
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/phone/PhotoringPhraseList;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -175,7 +175,7 @@
 
     const v0, 0x7f0a01ac
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/phone/PhotoringPhraseList;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -185,7 +185,7 @@
 
     const v0, 0x7f0a01a5
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/phone/PhotoringPhraseList;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -195,7 +195,7 @@
 
     const v0, 0x7f0a01a6
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/phone/PhotoringPhraseList;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -475,9 +475,9 @@
 
     const/4 v2, -0x1
 
-    invoke-virtual {p0, v2, v1}, Landroid/app/Activity;->setResult(ILandroid/content/Intent;)V
+    invoke-virtual {p0, v2, v1}, Lcom/android/phone/PhotoringPhraseList;->setResult(ILandroid/content/Intent;)V
 
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/PhotoringPhraseList;->finish()V
 
     return-void
 
@@ -507,7 +507,7 @@
 
     invoke-static {v2, v3}, Landroid/util/secutil/Log;->secI(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-virtual {p0}, Landroid/app/Activity;->invalidateOptionsMenu()V
+    invoke-virtual {p0}, Lcom/android/phone/PhotoringPhraseList;->invalidateOptionsMenu()V
 
     iget-object v2, p0, Lcom/android/phone/PhotoringPhraseList;->maRecent:Ljava/util/ArrayList;
 
@@ -517,7 +517,7 @@
 
     invoke-virtual {v2}, Ljava/util/ArrayList;->clear()V
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/PhotoringPhraseList;->getResources()Landroid/content/res/Resources;
 
     move-result-object v2
 
@@ -533,15 +533,15 @@
 
     const v2, 0x7f090813
 
-    invoke-virtual {p0, v2}, Landroid/app/Activity;->setTitle(I)V
+    invoke-virtual {p0, v2}, Lcom/android/phone/PhotoringPhraseList;->setTitle(I)V
 
     iget-object v2, p0, Lcom/android/phone/PhotoringPhraseList;->mcbSelectAll:Landroid/widget/CheckBox;
 
-    invoke-virtual {v2, v6}, Landroid/widget/CompoundButton;->setChecked(Z)V
+    invoke-virtual {v2, v6}, Landroid/widget/CheckBox;->setChecked(Z)V
 
     iget-object v2, p0, Lcom/android/phone/PhotoringPhraseList;->mllSelectAll:Landroid/widget/LinearLayout;
 
-    invoke-virtual {v2, v6}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v2, v6}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
     :goto_0
     iget-object v2, p0, Lcom/android/phone/PhotoringPhraseList;->mllSelectAll:Landroid/widget/LinearLayout;
@@ -550,7 +550,7 @@
 
     invoke-direct {v3, p0}, Lcom/android/phone/PhotoringPhraseList$1;-><init>(Lcom/android/phone/PhotoringPhraseList;)V
 
-    invoke-virtual {v2, v3}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v2, v3}, Landroid/widget/LinearLayout;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     invoke-direct {p0, v4}, Lcom/android/phone/PhotoringPhraseList;->loadData(I)V
 
@@ -583,7 +583,7 @@
 
     invoke-direct {v3, p0, v4, v5}, Lcom/android/phone/PhotoringPhraseList$ListViewItemClickListner;-><init>(Lcom/android/phone/PhotoringPhraseList;Ljava/util/ArrayList;Landroid/widget/ListView;)V
 
-    invoke-virtual {v2, v3}, Landroid/widget/AdapterView;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
+    invoke-virtual {v2, v3}, Landroid/widget/ListView;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
 
     iget-object v2, p0, Lcom/android/phone/PhotoringPhraseList;->maRecent:Ljava/util/ArrayList;
 
@@ -595,11 +595,11 @@
 
     iget-object v2, p0, Lcom/android/phone/PhotoringPhraseList;->mtvRecent:Landroid/widget/TextView;
 
-    invoke-virtual {v2, v6}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v2, v6}, Landroid/widget/TextView;->setVisibility(I)V
 
     iget-object v2, p0, Lcom/android/phone/PhotoringPhraseList;->mlvRecent:Landroid/widget/ListView;
 
-    invoke-virtual {v2, v7}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v2, v7}, Landroid/widget/ListView;->setVisibility(I)V
 
     :goto_2
     invoke-direct {p0, v6}, Lcom/android/phone/PhotoringPhraseList;->loadData(I)V
@@ -633,7 +633,7 @@
 
     invoke-direct {v3, p0, v4, v5}, Lcom/android/phone/PhotoringPhraseList$ListViewItemClickListner;-><init>(Lcom/android/phone/PhotoringPhraseList;Ljava/util/ArrayList;Landroid/widget/ListView;)V
 
-    invoke-virtual {v2, v3}, Landroid/widget/AdapterView;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
+    invoke-virtual {v2, v3}, Landroid/widget/ListView;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
 
     iget-object v2, p0, Lcom/android/phone/PhotoringPhraseList;->maPhrases:Ljava/util/ArrayList;
 
@@ -645,17 +645,17 @@
 
     iget-object v2, p0, Lcom/android/phone/PhotoringPhraseList;->mtvPhrases:Landroid/widget/TextView;
 
-    invoke-virtual {v2, v6}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v2, v6}, Landroid/widget/TextView;->setVisibility(I)V
 
     iget-object v2, p0, Lcom/android/phone/PhotoringPhraseList;->mlvPhrases:Landroid/widget/ListView;
 
-    invoke-virtual {v2, v7}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v2, v7}, Landroid/widget/ListView;->setVisibility(I)V
 
     :cond_0
     :goto_4
     const v2, 0x7f0a01a4
 
-    invoke-virtual {p0, v2}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v2}, Lcom/android/phone/PhotoringPhraseList;->findViewById(I)Landroid/view/View;
 
     move-result-object v2
 
@@ -665,7 +665,7 @@
 
     const v4, 0x7f0a01a7
 
-    invoke-virtual {p0, v4}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v4}, Lcom/android/phone/PhotoringPhraseList;->findViewById(I)Landroid/view/View;
 
     move-result-object v4
 
@@ -676,11 +676,11 @@
     :cond_1
     const v2, 0x7f0907fd
 
-    invoke-virtual {p0, v2}, Landroid/app/Activity;->setTitle(I)V
+    invoke-virtual {p0, v2}, Lcom/android/phone/PhotoringPhraseList;->setTitle(I)V
 
     iget-object v2, p0, Lcom/android/phone/PhotoringPhraseList;->mllSelectAll:Landroid/widget/LinearLayout;
 
-    invoke-virtual {v2, v7}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v2, v7}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
     goto/16 :goto_0
 
@@ -694,15 +694,15 @@
     :cond_3
     iget-object v2, p0, Lcom/android/phone/PhotoringPhraseList;->mtvRecent:Landroid/widget/TextView;
 
-    invoke-virtual {v2, v7}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v2, v7}, Landroid/widget/TextView;->setVisibility(I)V
 
     iget-object v2, p0, Lcom/android/phone/PhotoringPhraseList;->mlvRecent:Landroid/widget/ListView;
 
-    invoke-virtual {v2, v6}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v2, v6}, Landroid/widget/ListView;->setVisibility(I)V
 
     iget-object v2, p0, Lcom/android/phone/PhotoringPhraseList;->mlvRecent:Landroid/widget/ListView;
 
-    invoke-virtual {v2}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+    invoke-virtual {v2}, Landroid/widget/ListView;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v0
 
@@ -720,7 +720,7 @@
 
     iget-object v2, p0, Lcom/android/phone/PhotoringPhraseList;->mlvRecent:Landroid/widget/ListView;
 
-    invoke-virtual {v2, v0}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+    invoke-virtual {v2, v0}, Landroid/widget/ListView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
     goto :goto_2
 
@@ -734,15 +734,15 @@
     :cond_5
     iget-object v2, p0, Lcom/android/phone/PhotoringPhraseList;->mtvPhrases:Landroid/widget/TextView;
 
-    invoke-virtual {v2, v7}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v2, v7}, Landroid/widget/TextView;->setVisibility(I)V
 
     iget-object v2, p0, Lcom/android/phone/PhotoringPhraseList;->mlvPhrases:Landroid/widget/ListView;
 
-    invoke-virtual {v2, v6}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v2, v6}, Landroid/widget/ListView;->setVisibility(I)V
 
     iget-object v2, p0, Lcom/android/phone/PhotoringPhraseList;->mlvPhrases:Landroid/widget/ListView;
 
-    invoke-virtual {v2}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+    invoke-virtual {v2}, Landroid/widget/ListView;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v0
 
@@ -760,7 +760,7 @@
 
     iget-object v2, p0, Lcom/android/phone/PhotoringPhraseList;->mlvPhrases:Landroid/widget/ListView;
 
-    invoke-virtual {v2, v0}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+    invoke-virtual {v2, v0}, Landroid/widget/ListView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
     iget v2, p0, Lcom/android/phone/PhotoringPhraseList;->mScreenMode:I
 
@@ -768,7 +768,7 @@
 
     iget-object v2, p0, Lcom/android/phone/PhotoringPhraseList;->mlvPhrases:Landroid/widget/ListView;
 
-    invoke-virtual {p0, v2}, Landroid/app/Activity;->registerForContextMenu(Landroid/view/View;)V
+    invoke-virtual {p0, v2}, Lcom/android/phone/PhotoringPhraseList;->registerForContextMenu(Landroid/view/View;)V
 
     goto :goto_4
 .end method
@@ -807,7 +807,7 @@
 
     invoke-virtual {v0, v1, p1, p2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;J)Landroid/content/Intent;
 
-    invoke-virtual {p0, v0, v2}, Landroid/app/Activity;->startActivityForResult(Landroid/content/Intent;I)V
+    invoke-virtual {p0, v0, v2}, Lcom/android/phone/PhotoringPhraseList;->startActivityForResult(Landroid/content/Intent;I)V
 
     const/4 v0, 0x1
 
@@ -920,7 +920,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;J)Landroid/content/Intent;
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/PhotoringPhraseList;->startActivity(Landroid/content/Intent;)V
 
     iput-boolean v4, p0, Lcom/android/phone/PhotoringPhraseList;->bCallSetupViewsOnResume:Z
 
@@ -1028,7 +1028,7 @@
 
     const v1, 0x7f04006e
 
-    invoke-virtual {p0, v1}, Landroid/app/Activity;->setContentView(I)V
+    invoke-virtual {p0, v1}, Lcom/android/phone/PhotoringPhraseList;->setContentView(I)V
 
     const/4 v1, 0x0
 
@@ -1036,7 +1036,7 @@
 
     invoke-direct {p0}, Lcom/android/phone/PhotoringPhraseList;->initScreen()V
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getActionBar()Landroid/app/ActionBar;
+    invoke-virtual {p0}, Lcom/android/phone/PhotoringPhraseList;->getActionBar()Landroid/app/ActionBar;
 
     move-result-object v0
 
@@ -1232,7 +1232,7 @@
 
     if-ne v2, v3, :cond_0
 
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/PhotoringPhraseList;->finish()V
 
     :goto_0
     return v0
@@ -1258,7 +1258,7 @@
 
     invoke-virtual {v2, v3, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    invoke-virtual {p0, v2}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v2}, Lcom/android/phone/PhotoringPhraseList;->startActivity(Landroid/content/Intent;)V
 
     iput-boolean v0, p0, Lcom/android/phone/PhotoringPhraseList;->bCallSetupViewsOnResume:Z
 

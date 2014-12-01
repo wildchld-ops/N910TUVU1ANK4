@@ -34,8 +34,6 @@
 
 .method public constructor <init>(Landroid/app/Activity;Lcom/android/mms/ui/ComposeMessageFragment;)V
     .locals 1
-    .param p1    # Landroid/app/Activity;
-    .param p2    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     const/4 v0, 0x0
 
@@ -54,7 +52,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/ui/SipHandler;)Lcom/android/mms/ui/ComposeMessageFragment;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SipHandler;
 
     iget-object v0, p0, Lcom/android/mms/ui/SipHandler;->mComposer:Lcom/android/mms/ui/ComposeMessageFragment;
 
@@ -63,7 +60,6 @@
 
 .method public static getInputMethodManager(Landroid/content/Context;)Landroid/view/inputmethod/InputMethodManager;
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     const-string v0, "input_method"
 
@@ -140,8 +136,6 @@
 
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     const-string v0, "ResponseAxT9Info"
 
@@ -207,7 +201,6 @@
 
 .method public setOnScreen(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/SipHandler;->mIsOnScreen:Z
 
@@ -216,7 +209,6 @@
 
 .method public setSipVisible(Z)V
     .locals 0
-    .param p1    # Z
 
     sput-boolean p1, Lcom/android/mms/ui/SipHandler;->sIsSipVisible:Z
 
@@ -225,7 +217,6 @@
 
 .method public setSoftInputMode(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/mms/ui/SipHandler;->mActivity:Landroid/app/Activity;
 
@@ -287,8 +278,6 @@
 
 .method public showSipDelayed(Landroid/os/Handler;I)V
     .locals 4
-    .param p1    # Landroid/os/Handler;
-    .param p2    # I
 
     const-string v1, "Mms/SipHandler"
 

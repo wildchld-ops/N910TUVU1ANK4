@@ -12,8 +12,6 @@
 # direct methods
 .method public constructor <init>(Landroid/filterfw/core/Program;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Landroid/filterfw/core/Program;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -95,7 +93,6 @@
 
 .method public setValue(Ljava/lang/Object;)V
     .locals 3
-    .param p1    # Ljava/lang/Object;
 
     iget-object v0, p0, Landroid/filterfw/core/ProgramVariable;->mProgram:Landroid/filterfw/core/Program;
 

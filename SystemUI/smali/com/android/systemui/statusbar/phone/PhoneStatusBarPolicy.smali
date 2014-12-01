@@ -46,7 +46,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 8
-    .param p1    # Landroid/content/Context;
 
     const/4 v7, 0x0
 
@@ -260,8 +259,6 @@
 
 .method static synthetic access$000(Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy;Landroid/content/Intent;)V
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy;
-    .param p1    # Landroid/content/Intent;
 
     invoke-direct {p0, p1}, Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy;->updateAlarm(Landroid/content/Intent;)V
 
@@ -270,8 +267,6 @@
 
 .method static synthetic access$100(Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy;Landroid/content/Intent;)V
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy;
-    .param p1    # Landroid/content/Intent;
 
     invoke-direct {p0, p1}, Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy;->updateSyncState(Landroid/content/Intent;)V
 
@@ -280,8 +275,6 @@
 
 .method static synthetic access$200(Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy;Landroid/content/Intent;)V
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy;
-    .param p1    # Landroid/content/Intent;
 
     invoke-direct {p0, p1}, Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy;->updateBluetooth(Landroid/content/Intent;)V
 
@@ -290,7 +283,6 @@
 
 .method static synthetic access$300(Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy;)V
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy;
 
     invoke-direct {p0}, Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy;->updateVolume()V
 
@@ -299,8 +291,6 @@
 
 .method static synthetic access$400(Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy;Landroid/content/Intent;)V
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy;
-    .param p1    # Landroid/content/Intent;
 
     invoke-direct {p0, p1}, Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy;->updateSimState(Landroid/content/Intent;)V
 
@@ -309,8 +299,6 @@
 
 .method static synthetic access$500(Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy;Landroid/content/Intent;)V
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy;
-    .param p1    # Landroid/content/Intent;
 
     invoke-direct {p0, p1}, Lcom/android/systemui/statusbar/phone/PhoneStatusBarPolicy;->updateTTY(Landroid/content/Intent;)V
 
@@ -319,7 +307,6 @@
 
 .method private final updateAlarm(Landroid/content/Intent;)V
     .locals 3
-    .param p1    # Landroid/content/Intent;
 
     const-string v1, "alarmSet"
 
@@ -340,7 +327,6 @@
 
 .method private final updateBluetooth(Landroid/content/Intent;)V
     .locals 7
-    .param p1    # Landroid/content/Intent;
 
     const/4 v5, 0x0
 
@@ -450,7 +436,6 @@
 
 .method private final updateSimState(Landroid/content/Intent;)V
     .locals 3
-    .param p1    # Landroid/content/Intent;
 
     const-string v2, "ss"
 
@@ -549,14 +534,12 @@
 
 .method private final updateSyncState(Landroid/content/Intent;)V
     .locals 0
-    .param p1    # Landroid/content/Intent;
 
     return-void
 .end method
 
 .method private final updateTTY(Landroid/content/Intent;)V
     .locals 8
-    .param p1    # Landroid/content/Intent;
 
     const/4 v7, 0x0
 

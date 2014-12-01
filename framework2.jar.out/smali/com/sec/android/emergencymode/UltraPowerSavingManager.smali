@@ -34,7 +34,6 @@
 
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -45,7 +44,6 @@
 
 .method public static declared-synchronized getInstance(Landroid/content/Context;)Lcom/sec/android/emergencymode/UltraPowerSavingManager;
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     const-class v1, Lcom/sec/android/emergencymode/UltraPowerSavingManager;
 

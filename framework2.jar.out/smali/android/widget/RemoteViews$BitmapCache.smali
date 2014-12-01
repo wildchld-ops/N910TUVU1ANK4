@@ -44,7 +44,6 @@
 
 .method public constructor <init>(Landroid/os/Parcel;)V
     .locals 4
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -87,7 +86,6 @@
 # virtual methods
 .method public addBitmapMemory(Landroid/widget/RemoteViews$MemoryUsageCounter;)V
     .locals 2
-    .param p1    # Landroid/widget/RemoteViews$MemoryUsageCounter;
 
     const/4 v0, 0x0
 
@@ -120,7 +118,6 @@
 
 .method public assimilate(Landroid/widget/RemoteViews$BitmapCache;)V
     .locals 5
-    .param p1    # Landroid/widget/RemoteViews$BitmapCache;
 
     iget-object v1, p1, Landroid/widget/RemoteViews$BitmapCache;->mBitmaps:Ljava/util/ArrayList;
 
@@ -162,7 +159,6 @@
 
 .method public getBitmapForId(I)Landroid/graphics/Bitmap;
     .locals 1
-    .param p1    # I
 
     const/4 v0, -0x1
 
@@ -196,7 +192,6 @@
 
 .method public getBitmapId(Landroid/graphics/Bitmap;)I
     .locals 1
-    .param p1    # Landroid/graphics/Bitmap;
 
     if-nez p1, :cond_0
 
@@ -240,8 +235,6 @@
 
 .method public writeBitmapsToParcel(Landroid/os/Parcel;I)V
     .locals 3
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v2, p0, Landroid/widget/RemoteViews$BitmapCache;->mBitmaps:Ljava/util/ArrayList;
 

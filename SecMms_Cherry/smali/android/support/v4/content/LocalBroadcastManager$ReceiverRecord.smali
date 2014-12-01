@@ -25,8 +25,6 @@
 # direct methods
 .method constructor <init>(Landroid/content/IntentFilter;Landroid/content/BroadcastReceiver;)V
     .locals 0
-    .param p1    # Landroid/content/IntentFilter;
-    .param p2    # Landroid/content/BroadcastReceiver;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

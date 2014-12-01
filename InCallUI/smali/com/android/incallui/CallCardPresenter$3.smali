@@ -44,8 +44,6 @@
 # virtual methods
 .method public onContactInfoComplete(ILcom/android/incallui/ContactInfoCache$ContactCacheEntry;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Lcom/android/incallui/ContactInfoCache$ContactCacheEntry;
 
     const-string v0, "ecid_enable"
 
@@ -118,8 +116,6 @@
 
 .method public onImageLoadComplete(ILcom/android/incallui/ContactInfoCache$ContactCacheEntry;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Lcom/android/incallui/ContactInfoCache$ContactCacheEntry;
 
     iget-object v0, p0, Lcom/android/incallui/CallCardPresenter$3;->this$0:Lcom/android/incallui/CallCardPresenter;
 

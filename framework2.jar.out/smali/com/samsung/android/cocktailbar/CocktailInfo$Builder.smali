@@ -31,7 +31,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -104,7 +103,6 @@
 
 .method public setCategory(I)Lcom/samsung/android/cocktailbar/CocktailInfo$Builder;
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/android/cocktailbar/CocktailInfo$Builder;->mCategory:I
 
@@ -113,7 +111,6 @@
 
 .method public setContentInfo(Landroid/os/Bundle;)Lcom/samsung/android/cocktailbar/CocktailInfo$Builder;
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     iput-object p1, p0, Lcom/samsung/android/cocktailbar/CocktailInfo$Builder;->mContentInfo:Landroid/os/Bundle;
 
@@ -122,7 +119,6 @@
 
 .method public setContentView(Landroid/widget/RemoteViews;)Lcom/samsung/android/cocktailbar/CocktailInfo$Builder;
     .locals 0
-    .param p1    # Landroid/widget/RemoteViews;
 
     iput-object p1, p0, Lcom/samsung/android/cocktailbar/CocktailInfo$Builder;->mContentView:Landroid/widget/RemoteViews;
 
@@ -131,7 +127,6 @@
 
 .method public setDiplayPolicy(I)Lcom/samsung/android/cocktailbar/CocktailInfo$Builder;
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/android/cocktailbar/CocktailInfo$Builder;->mDisplayPolicy:I
 
@@ -140,7 +135,6 @@
 
 .method public setOrientation(I)Lcom/samsung/android/cocktailbar/CocktailInfo$Builder;
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/android/cocktailbar/CocktailInfo$Builder;->mOrientation:I
 

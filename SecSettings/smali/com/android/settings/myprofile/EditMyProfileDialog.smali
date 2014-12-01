@@ -62,7 +62,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/myprofile/EditMyProfileDialog;)Lcom/android/settings/myprofile/EditMyProfileDialog$OnProfileTextChangedListener;
     .locals 1
-    .param p0    # Lcom/android/settings/myprofile/EditMyProfileDialog;
 
     iget-object v0, p0, Lcom/android/settings/myprofile/EditMyProfileDialog;->mOnProfileTextChangedListener:Lcom/android/settings/myprofile/EditMyProfileDialog$OnProfileTextChangedListener;
 
@@ -71,7 +70,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/myprofile/EditMyProfileDialog;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/android/settings/myprofile/EditMyProfileDialog;
 
     iget-object v0, p0, Lcom/android/settings/myprofile/EditMyProfileDialog;->mLabelEditMyProfile:Landroid/widget/TextView;
 
@@ -80,7 +78,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/myprofile/EditMyProfileDialog;)Landroid/widget/EditText;
     .locals 1
-    .param p0    # Lcom/android/settings/myprofile/EditMyProfileDialog;
 
     iget-object v0, p0, Lcom/android/settings/myprofile/EditMyProfileDialog;->mEditMyProfile:Landroid/widget/EditText;
 
@@ -89,8 +86,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/myprofile/EditMyProfileDialog;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/settings/myprofile/EditMyProfileDialog;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/settings/myprofile/EditMyProfileDialog;->saveProfileTextToDB(Ljava/lang/String;)V
 
@@ -99,8 +94,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/myprofile/EditMyProfileDialog;I)V
     .locals 0
-    .param p0    # Lcom/android/settings/myprofile/EditMyProfileDialog;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/settings/myprofile/EditMyProfileDialog;->updateLabel(I)V
 
@@ -128,7 +121,6 @@
 
 .method private init(Landroid/view/View;)V
     .locals 5
-    .param p1    # Landroid/view/View;
 
     iget-object v2, p0, Lcom/android/settings/myprofile/EditMyProfileDialog;->mResources:Landroid/content/res/Resources;
 
@@ -209,7 +201,6 @@
 
 .method private saveProfileTextToDB(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/settings/myprofile/EditMyProfileDialog;->mContentResolver:Landroid/content/ContentResolver;
 
@@ -244,7 +235,6 @@
 
 .method private updateLabel(I)V
     .locals 3
-    .param p1    # I
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -314,7 +304,6 @@
 # virtual methods
 .method public onAttach(Landroid/app/Activity;)V
     .locals 5
-    .param p1    # Landroid/app/Activity;
 
     invoke-super {p0, p1}, Landroid/app/DialogFragment;->onAttach(Landroid/app/Activity;)V
 
@@ -365,7 +354,6 @@
 
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 

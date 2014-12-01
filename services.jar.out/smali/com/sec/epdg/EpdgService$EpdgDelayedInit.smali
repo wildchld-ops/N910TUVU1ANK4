@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Lcom/sec/epdg/EpdgService;Lcom/sec/epdg/EpdgService$1;)V
     .locals 0
-    .param p1    # Lcom/sec/epdg/EpdgService;
-    .param p2    # Lcom/sec/epdg/EpdgService$1;
 
     invoke-direct {p0, p1}, Lcom/sec/epdg/EpdgService$EpdgDelayedInit;-><init>(Lcom/sec/epdg/EpdgService;)V
 

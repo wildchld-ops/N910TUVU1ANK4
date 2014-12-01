@@ -307,7 +307,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/accessibility/AccessibilitySettingsVision;)V
     .locals 0
-    .param p0    # Lcom/android/settings/accessibility/AccessibilitySettingsVision;
 
     invoke-direct {p0}, Lcom/android/settings/accessibility/AccessibilitySettingsVision;->loadInstalledServices()V
 
@@ -316,7 +315,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/accessibility/AccessibilitySettingsVision;)V
     .locals 0
-    .param p0    # Lcom/android/settings/accessibility/AccessibilitySettingsVision;
 
     invoke-direct {p0}, Lcom/android/settings/accessibility/AccessibilitySettingsVision;->updateVisionService()V
 
@@ -325,7 +323,6 @@
 
 .method static synthetic access$1000(Lcom/android/settings/accessibility/AccessibilitySettingsVision;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/AccessibilitySettingsVision;
 
     invoke-virtual {p0}, Lcom/android/settings/accessibility/AccessibilitySettingsVision;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -336,7 +333,6 @@
 
 .method static synthetic access$1100(Lcom/android/settings/accessibility/AccessibilitySettingsVision;)Landroid/preference/CheckBoxPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/AccessibilitySettingsVision;
 
     iget-object v0, p0, Lcom/android/settings/accessibility/AccessibilitySettingsVision;->mHighContrastCheckbox:Landroid/preference/CheckBoxPreference;
 
@@ -345,7 +341,6 @@
 
 .method static synthetic access$1200(Lcom/android/settings/accessibility/AccessibilitySettingsVision;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/AccessibilitySettingsVision;
 
     invoke-virtual {p0}, Lcom/android/settings/accessibility/AccessibilitySettingsVision;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -356,7 +351,6 @@
 
 .method static synthetic access$1300(Lcom/android/settings/accessibility/AccessibilitySettingsVision;)Landroid/preference/SwitchPreferenceScreen;
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/AccessibilitySettingsVision;
 
     iget-object v0, p0, Lcom/android/settings/accessibility/AccessibilitySettingsVision;->mColorBlind:Landroid/preference/SwitchPreferenceScreen;
 
@@ -365,7 +359,6 @@
 
 .method static synthetic access$1400(Lcom/android/settings/accessibility/AccessibilitySettingsVision;)V
     .locals 0
-    .param p0    # Lcom/android/settings/accessibility/AccessibilitySettingsVision;
 
     invoke-direct {p0}, Lcom/android/settings/accessibility/AccessibilitySettingsVision;->isPowerSavingEnabled()V
 
@@ -374,7 +367,6 @@
 
 .method static synthetic access$1500(Lcom/android/settings/accessibility/AccessibilitySettingsVision;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/AccessibilitySettingsVision;
 
     invoke-virtual {p0}, Lcom/android/settings/accessibility/AccessibilitySettingsVision;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -385,7 +377,6 @@
 
 .method static synthetic access$1600(Lcom/android/settings/accessibility/AccessibilitySettingsVision;)Landroid/preference/SwitchPreferenceScreen;
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/AccessibilitySettingsVision;
 
     iget-object v0, p0, Lcom/android/settings/accessibility/AccessibilitySettingsVision;->mNotificationReminder:Landroid/preference/SwitchPreferenceScreen;
 
@@ -394,7 +385,6 @@
 
 .method static synthetic access$1700(Lcom/android/settings/accessibility/AccessibilitySettingsVision;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/AccessibilitySettingsVision;
 
     invoke-virtual {p0}, Lcom/android/settings/accessibility/AccessibilitySettingsVision;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -405,7 +395,6 @@
 
 .method static synthetic access$1800(Lcom/android/settings/accessibility/AccessibilitySettingsVision;)Landroid/preference/SwitchPreferenceScreen;
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/AccessibilitySettingsVision;
 
     iget-object v0, p0, Lcom/android/settings/accessibility/AccessibilitySettingsVision;->mGlobalGesturePreferenceScreen:Landroid/preference/SwitchPreferenceScreen;
 
@@ -414,7 +403,6 @@
 
 .method static synthetic access$1900(Lcom/android/settings/accessibility/AccessibilitySettingsVision;)Lcom/android/settings/FontSizeListPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/AccessibilitySettingsVision;
 
     iget-object v0, p0, Lcom/android/settings/accessibility/AccessibilitySettingsVision;->mFontSizePref:Lcom/android/settings/FontSizeListPreference;
 
@@ -423,7 +411,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/accessibility/AccessibilitySettingsVision;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/AccessibilitySettingsVision;
 
     iget-object v0, p0, Lcom/android/settings/accessibility/AccessibilitySettingsVision;->mHandler:Landroid/os/Handler;
 
@@ -432,8 +419,6 @@
 
 .method static synthetic access$2000(Lcom/android/settings/accessibility/AccessibilitySettingsVision;I)V
     .locals 0
-    .param p0    # Lcom/android/settings/accessibility/AccessibilitySettingsVision;
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/settings/accessibility/AccessibilitySettingsVision;->removeDialog(I)V
 
@@ -442,7 +427,6 @@
 
 .method static synthetic access$2100(Lcom/android/settings/accessibility/AccessibilitySettingsVision;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/AccessibilitySettingsVision;
 
     invoke-virtual {p0}, Lcom/android/settings/accessibility/AccessibilitySettingsVision;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -453,7 +437,6 @@
 
 .method static synthetic access$2200(Lcom/android/settings/accessibility/AccessibilitySettingsVision;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/AccessibilitySettingsVision;
 
     invoke-virtual {p0}, Lcom/android/settings/accessibility/AccessibilitySettingsVision;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -464,7 +447,6 @@
 
 .method static synthetic access$2300(Lcom/android/settings/accessibility/AccessibilitySettingsVision;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/AccessibilitySettingsVision;
 
     invoke-virtual {p0}, Lcom/android/settings/accessibility/AccessibilitySettingsVision;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -475,7 +457,6 @@
 
 .method static synthetic access$2400(Lcom/android/settings/accessibility/AccessibilitySettingsVision;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/AccessibilitySettingsVision;
 
     invoke-virtual {p0}, Lcom/android/settings/accessibility/AccessibilitySettingsVision;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -486,7 +467,6 @@
 
 .method static synthetic access$2500(Lcom/android/settings/accessibility/AccessibilitySettingsVision;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/AccessibilitySettingsVision;
 
     invoke-virtual {p0}, Lcom/android/settings/accessibility/AccessibilitySettingsVision;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -497,7 +477,6 @@
 
 .method static synthetic access$2600(Lcom/android/settings/accessibility/AccessibilitySettingsVision;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/AccessibilitySettingsVision;
 
     invoke-virtual {p0}, Lcom/android/settings/accessibility/AccessibilitySettingsVision;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -508,7 +487,6 @@
 
 .method static synthetic access$2700(Lcom/android/settings/accessibility/AccessibilitySettingsVision;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/AccessibilitySettingsVision;
 
     invoke-virtual {p0}, Lcom/android/settings/accessibility/AccessibilitySettingsVision;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -519,7 +497,6 @@
 
 .method static synthetic access$2800(Lcom/android/settings/accessibility/AccessibilitySettingsVision;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/AccessibilitySettingsVision;
 
     invoke-virtual {p0}, Lcom/android/settings/accessibility/AccessibilitySettingsVision;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -530,7 +507,6 @@
 
 .method static synthetic access$2900(Lcom/android/settings/accessibility/AccessibilitySettingsVision;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/AccessibilitySettingsVision;
 
     invoke-virtual {p0}, Lcom/android/settings/accessibility/AccessibilitySettingsVision;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -541,7 +517,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/accessibility/AccessibilitySettingsVision;)Ljava/lang/Runnable;
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/AccessibilitySettingsVision;
 
     iget-object v0, p0, Lcom/android/settings/accessibility/AccessibilitySettingsVision;->mUpdateRunnable:Ljava/lang/Runnable;
 
@@ -550,7 +525,6 @@
 
 .method static synthetic access$3000(Lcom/android/settings/accessibility/AccessibilitySettingsVision;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/AccessibilitySettingsVision;
 
     invoke-virtual {p0}, Lcom/android/settings/accessibility/AccessibilitySettingsVision;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -561,7 +535,6 @@
 
 .method static synthetic access$3100(Lcom/android/settings/accessibility/AccessibilitySettingsVision;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/AccessibilitySettingsVision;
 
     invoke-virtual {p0}, Lcom/android/settings/accessibility/AccessibilitySettingsVision;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -572,7 +545,6 @@
 
 .method static synthetic access$3200(Lcom/android/settings/accessibility/AccessibilitySettingsVision;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/AccessibilitySettingsVision;
 
     invoke-virtual {p0}, Lcom/android/settings/accessibility/AccessibilitySettingsVision;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -583,7 +555,6 @@
 
 .method static synthetic access$3300(Lcom/android/settings/accessibility/AccessibilitySettingsVision;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/AccessibilitySettingsVision;
 
     invoke-virtual {p0}, Lcom/android/settings/accessibility/AccessibilitySettingsVision;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -594,7 +565,6 @@
 
 .method static synthetic access$3400(Lcom/android/settings/accessibility/AccessibilitySettingsVision;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/AccessibilitySettingsVision;
 
     invoke-virtual {p0}, Lcom/android/settings/accessibility/AccessibilitySettingsVision;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -605,7 +575,6 @@
 
 .method static synthetic access$3500(Lcom/android/settings/accessibility/AccessibilitySettingsVision;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/AccessibilitySettingsVision;
 
     iget-boolean v0, p0, Lcom/android/settings/accessibility/AccessibilitySettingsVision;->checkSetupWizard:Z
 
@@ -614,7 +583,6 @@
 
 .method static synthetic access$3600(Lcom/android/settings/accessibility/AccessibilitySettingsVision;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/AccessibilitySettingsVision;
 
     invoke-virtual {p0}, Lcom/android/settings/accessibility/AccessibilitySettingsVision;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -625,7 +593,6 @@
 
 .method static synthetic access$3700(Lcom/android/settings/accessibility/AccessibilitySettingsVision;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/AccessibilitySettingsVision;
 
     invoke-virtual {p0}, Lcom/android/settings/accessibility/AccessibilitySettingsVision;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -636,7 +603,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/accessibility/AccessibilitySettingsVision;)V
     .locals 0
-    .param p0    # Lcom/android/settings/accessibility/AccessibilitySettingsVision;
 
     invoke-direct {p0}, Lcom/android/settings/accessibility/AccessibilitySettingsVision;->updateExclusiveTalkback()V
 
@@ -645,7 +611,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/accessibility/AccessibilitySettingsVision;)V
     .locals 0
-    .param p0    # Lcom/android/settings/accessibility/AccessibilitySettingsVision;
 
     invoke-direct {p0}, Lcom/android/settings/accessibility/AccessibilitySettingsVision;->updateSettingsScreen()V
 
@@ -654,7 +619,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/accessibility/AccessibilitySettingsVision;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/AccessibilitySettingsVision;
 
     invoke-virtual {p0}, Lcom/android/settings/accessibility/AccessibilitySettingsVision;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -665,7 +629,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/accessibility/AccessibilitySettingsVision;)Landroid/preference/SwitchPreferenceScreen;
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/AccessibilitySettingsVision;
 
     iget-object v0, p0, Lcom/android/settings/accessibility/AccessibilitySettingsVision;->mDisplayMagnificationPreferenceScreen:Landroid/preference/SwitchPreferenceScreen;
 
@@ -674,7 +637,6 @@
 
 .method static synthetic access$800(Lcom/android/settings/accessibility/AccessibilitySettingsVision;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/AccessibilitySettingsVision;
 
     invoke-virtual {p0}, Lcom/android/settings/accessibility/AccessibilitySettingsVision;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -685,7 +647,6 @@
 
 .method static synthetic access$900(Lcom/android/settings/accessibility/AccessibilitySettingsVision;)Landroid/preference/SwitchPreferenceScreen;
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/AccessibilitySettingsVision;
 
     iget-object v0, p0, Lcom/android/settings/accessibility/AccessibilitySettingsVision;->mMagnifierPreferenceScreen:Landroid/preference/SwitchPreferenceScreen;
 
@@ -2838,7 +2799,6 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onActivityCreated(Landroid/os/Bundle;)V
 
@@ -2868,9 +2828,6 @@
 
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     invoke-super {p0, p1, p2, p3}, Lcom/android/settings/SettingsPreferenceFragment;->onActivityResult(IILandroid/content/Intent;)V
 
@@ -2906,7 +2863,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 3
-    .param p1    # Landroid/content/res/Configuration;
 
     :try_start_0
     iget-object v1, p0, Lcom/android/settings/accessibility/AccessibilitySettingsVision;->mCurConfig:Landroid/content/res/Configuration;
@@ -2942,7 +2898,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v2, 0x1
 
@@ -3742,8 +3697,6 @@
 
 .method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
     .locals 13
-    .param p1    # Landroid/preference/Preference;
-    .param p2    # Ljava/lang/Object;
 
     iget-object v10, p0, Lcom/android/settings/accessibility/AccessibilitySettingsVision;->mFontSizePref:Lcom/android/settings/FontSizeListPreference;
 
@@ -4695,7 +4648,6 @@
 
 .method public onPreferenceClick(Landroid/preference/Preference;)Z
     .locals 2
-    .param p1    # Landroid/preference/Preference;
 
     const-string v0, "AccessibilitySettings_Vision"
 

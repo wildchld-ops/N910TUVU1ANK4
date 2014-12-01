@@ -21,8 +21,6 @@
 # direct methods
 .method private constructor <init>(Landroid/support/v4/text/TextDirectionHeuristicsCompat$TextDirectionAlgorithm;Z)V
     .locals 0
-    .param p1    # Landroid/support/v4/text/TextDirectionHeuristicsCompat$TextDirectionAlgorithm;
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Landroid/support/v4/text/TextDirectionHeuristicsCompat$TextDirectionHeuristicImpl;-><init>(Landroid/support/v4/text/TextDirectionHeuristicsCompat$TextDirectionAlgorithm;)V
 
@@ -33,9 +31,6 @@
 
 .method synthetic constructor <init>(Landroid/support/v4/text/TextDirectionHeuristicsCompat$TextDirectionAlgorithm;ZLandroid/support/v4/text/TextDirectionHeuristicsCompat$1;)V
     .locals 0
-    .param p1    # Landroid/support/v4/text/TextDirectionHeuristicsCompat$TextDirectionAlgorithm;
-    .param p2    # Z
-    .param p3    # Landroid/support/v4/text/TextDirectionHeuristicsCompat$1;
 
     invoke-direct {p0, p1, p2}, Landroid/support/v4/text/TextDirectionHeuristicsCompat$TextDirectionHeuristicInternal;-><init>(Landroid/support/v4/text/TextDirectionHeuristicsCompat$TextDirectionAlgorithm;Z)V
 

@@ -40,14 +40,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;FFFFFII)V
     .locals 11
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # F
-    .param p7    # I
-    .param p8    # I
 
     invoke-direct/range {p0 .. p5}, Lcom/sec/android/glview/TwGLView;-><init>(Lcom/sec/android/glview/TwGLContext;FFFF)V
 
@@ -254,7 +246,6 @@
 
 .method public setColor(I)V
     .locals 1
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/glview/TwGLTriangle;->mColor:I
 
@@ -267,8 +258,6 @@
 
 .method public setSize(FF)V
     .locals 1
-    .param p1    # F
-    .param p2    # F
 
     invoke-super {p0, p1, p2}, Lcom/sec/android/glview/TwGLView;->setSize(FF)V
 
@@ -285,7 +274,6 @@
 
 .method public setThickness(I)V
     .locals 1
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/glview/TwGLTriangle;->mThickness:I
 

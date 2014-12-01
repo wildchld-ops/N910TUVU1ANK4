@@ -61,8 +61,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/preference/SeekBarDialogPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -85,7 +83,6 @@
 
 .method private StringToLongArray(Ljava/lang/String;)[J
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -153,7 +150,6 @@
 
 .method private setHapticFeedbackVibrationIntensity(I)V
     .locals 3
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/preference/Preference;->getContext()Landroid/content/Context;
 
@@ -200,7 +196,6 @@
 
 .method private setIncomingCallVibrationIntensity(I)V
     .locals 3
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/preference/Preference;->getContext()Landroid/content/Context;
 
@@ -247,7 +242,6 @@
 
 .method private setNotificationVibrationIntensity(I)V
     .locals 3
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/preference/Preference;->getContext()Landroid/content/Context;
 
@@ -296,7 +290,6 @@
 # virtual methods
 .method protected onBindDialogView(Landroid/view/View;)V
     .locals 13
-    .param p1    # Landroid/view/View;
 
     const v12, 0x7f0b047a
 
@@ -623,7 +616,6 @@
 
 .method protected onDialogClosed(Z)V
     .locals 3
-    .param p1    # Z
 
     invoke-super {p0, p1}, Landroid/preference/DialogPreference;->onDialogClosed(Z)V
 
@@ -810,9 +802,6 @@
 
 .method public onKey(Landroid/view/View;ILandroid/view/KeyEvent;)Z
     .locals 5
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # Landroid/view/KeyEvent;
 
     const/4 v2, 0x1
 
@@ -923,9 +912,6 @@
 
 .method public onProgressChanged(Landroid/widget/SeekBar;IZ)V
     .locals 10
-    .param p1    # Landroid/widget/SeekBar;
-    .param p2    # I
-    .param p3    # Z
 
     const/4 v2, 0x0
 
@@ -1054,14 +1040,12 @@
 
 .method public onStartTrackingTouch(Landroid/widget/SeekBar;)V
     .locals 0
-    .param p1    # Landroid/widget/SeekBar;
 
     return-void
 .end method
 
 .method public onStopTrackingTouch(Landroid/widget/SeekBar;)V
     .locals 0
-    .param p1    # Landroid/widget/SeekBar;
 
     return-void
 .end method

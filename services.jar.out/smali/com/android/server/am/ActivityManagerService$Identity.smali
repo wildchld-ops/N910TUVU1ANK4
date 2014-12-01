@@ -25,8 +25,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/am/ActivityManagerService;II)V
     .locals 0
-    .param p2    # I
-    .param p3    # I
 
     iput-object p1, p0, Lcom/android/server/am/ActivityManagerService$Identity;->this$0:Lcom/android/server/am/ActivityManagerService;
 

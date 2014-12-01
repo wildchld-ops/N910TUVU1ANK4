@@ -28,7 +28,6 @@
 # direct methods
 .method constructor <init>(Lcom/sec/orca/shop/client/library/BitmapLruCacheLoader;I)V
     .locals 0
-    .param p2    # I
 
     iput-object p1, p0, Lcom/sec/orca/shop/client/library/BitmapLruCacheLoader$1;->this$0:Lcom/sec/orca/shop/client/library/BitmapLruCacheLoader;
 

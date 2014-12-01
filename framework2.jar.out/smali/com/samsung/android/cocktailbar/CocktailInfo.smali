@@ -82,8 +82,6 @@
 
 .method static synthetic access$002(Lcom/samsung/android/cocktailbar/CocktailInfo;I)I
     .locals 0
-    .param p0    # Lcom/samsung/android/cocktailbar/CocktailInfo;
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/android/cocktailbar/CocktailInfo;->mOrientation:I
 
@@ -92,8 +90,6 @@
 
 .method static synthetic access$102(Lcom/samsung/android/cocktailbar/CocktailInfo;I)I
     .locals 0
-    .param p0    # Lcom/samsung/android/cocktailbar/CocktailInfo;
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/android/cocktailbar/CocktailInfo;->mDisplayPolicy:I
 
@@ -102,8 +98,6 @@
 
 .method static synthetic access$202(Lcom/samsung/android/cocktailbar/CocktailInfo;I)I
     .locals 0
-    .param p0    # Lcom/samsung/android/cocktailbar/CocktailInfo;
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/android/cocktailbar/CocktailInfo;->mCategory:I
 
@@ -112,8 +106,6 @@
 
 .method static synthetic access$302(Lcom/samsung/android/cocktailbar/CocktailInfo;Landroid/widget/RemoteViews;)Landroid/widget/RemoteViews;
     .locals 0
-    .param p0    # Lcom/samsung/android/cocktailbar/CocktailInfo;
-    .param p1    # Landroid/widget/RemoteViews;
 
     iput-object p1, p0, Lcom/samsung/android/cocktailbar/CocktailInfo;->mContentView:Landroid/widget/RemoteViews;
 
@@ -122,8 +114,6 @@
 
 .method static synthetic access$402(Lcom/samsung/android/cocktailbar/CocktailInfo;I)I
     .locals 0
-    .param p0    # Lcom/samsung/android/cocktailbar/CocktailInfo;
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/android/cocktailbar/CocktailInfo;->mUserId:I
 
@@ -132,8 +122,6 @@
 
 .method static synthetic access$502(Lcom/samsung/android/cocktailbar/CocktailInfo;Landroid/os/Bundle;)Landroid/os/Bundle;
     .locals 0
-    .param p0    # Lcom/samsung/android/cocktailbar/CocktailInfo;
-    .param p1    # Landroid/os/Bundle;
 
     iput-object p1, p0, Lcom/samsung/android/cocktailbar/CocktailInfo;->mContentInfo:Landroid/os/Bundle;
 
@@ -254,7 +242,6 @@
 
 .method public readFromParcel(Landroid/os/Parcel;)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     const-class v0, Landroid/widget/RemoteViews;
 
@@ -305,7 +292,6 @@
 
 .method public setCategory(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/android/cocktailbar/CocktailInfo;->mCategory:I
 
@@ -314,8 +300,6 @@
 
 .method public updateContentView(Landroid/widget/RemoteViews;Z)V
     .locals 1
-    .param p1    # Landroid/widget/RemoteViews;
-    .param p2    # Z
 
     if-eqz p2, :cond_0
 
@@ -338,8 +322,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/samsung/android/cocktailbar/CocktailInfo;->mContentView:Landroid/widget/RemoteViews;
 

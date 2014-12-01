@@ -36,12 +36,6 @@
 # virtual methods
 .method public checkComponentPermission(Landroid/content/Intent;Ljava/lang/String;IIIZ)I
     .locals 9
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Z
 
     iget-object v0, p0, Lcom/android/server/am/ActivityManagerService$IntentFirewallInterface;->this$0:Lcom/android/server/am/ActivityManagerService;
 

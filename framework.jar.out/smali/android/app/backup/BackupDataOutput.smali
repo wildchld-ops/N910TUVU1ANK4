@@ -10,7 +10,6 @@
 # direct methods
 .method public constructor <init>(Ljava/io/FileDescriptor;)V
     .locals 3
-    .param p1    # Ljava/io/FileDescriptor;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -107,7 +106,6 @@
 
 .method public setKeyPrefix(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget v0, p0, Landroid/app/backup/BackupDataOutput;->mBackupWriter:I
 
@@ -118,8 +116,6 @@
 
 .method public writeEntityData([BI)I
     .locals 4
-    .param p1    # [B
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -168,8 +164,6 @@
 
 .method public writeEntityHeader(Ljava/lang/String;I)I
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

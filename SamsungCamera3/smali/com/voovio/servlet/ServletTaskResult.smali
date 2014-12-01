@@ -44,7 +44,6 @@
 
 .method public setErrorMessage(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/voovio/servlet/ServletTaskResult;->strErrorMessage:Ljava/lang/String;
 
@@ -53,7 +52,6 @@
 
 .method public setResponse(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/voovio/servlet/ServletTaskResult;->strResponse:Ljava/lang/String;
 

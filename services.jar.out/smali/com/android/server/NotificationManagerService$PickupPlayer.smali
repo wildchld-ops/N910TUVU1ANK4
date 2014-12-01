@@ -107,8 +107,6 @@
 
 .method synthetic constructor <init>(Lcom/android/server/NotificationManagerService;Lcom/android/server/NotificationManagerService$1;)V
     .locals 0
-    .param p1    # Lcom/android/server/NotificationManagerService;
-    .param p2    # Lcom/android/server/NotificationManagerService$1;
 
     invoke-direct {p0, p1}, Lcom/android/server/NotificationManagerService$PickupPlayer;-><init>(Lcom/android/server/NotificationManagerService;)V
 
@@ -117,7 +115,6 @@
 
 .method static synthetic access$2400(Lcom/android/server/NotificationManagerService$PickupPlayer;)V
     .locals 0
-    .param p0    # Lcom/android/server/NotificationManagerService$PickupPlayer;
 
     invoke-direct {p0}, Lcom/android/server/NotificationManagerService$PickupPlayer;->unregister()V
 
@@ -126,7 +123,6 @@
 
 .method static synthetic access$2700(Lcom/android/server/NotificationManagerService$PickupPlayer;)V
     .locals 0
-    .param p0    # Lcom/android/server/NotificationManagerService$PickupPlayer;
 
     invoke-direct {p0}, Lcom/android/server/NotificationManagerService$PickupPlayer;->register()V
 
@@ -135,7 +131,6 @@
 
 .method static synthetic access$5500(Lcom/android/server/NotificationManagerService$PickupPlayer;)[B
     .locals 1
-    .param p0    # Lcom/android/server/NotificationManagerService$PickupPlayer;
 
     iget-object v0, p0, Lcom/android/server/NotificationManagerService$PickupPlayer;->ivt:[B
 
@@ -424,7 +419,6 @@
 # virtual methods
 .method public setPickupMotionEnabled(Z)V
     .locals 3
-    .param p1    # Z
 
     const-string v0, "STATUSBAR-NotificationService"
 

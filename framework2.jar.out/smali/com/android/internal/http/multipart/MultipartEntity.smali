@@ -48,7 +48,6 @@
 
 .method public constructor <init>([Lcom/android/internal/http/multipart/Part;)V
     .locals 2
-    .param p1    # [Lcom/android/internal/http/multipart/Part;
 
     invoke-direct {p0}, Lorg/apache/http/entity/AbstractHttpEntity;-><init>()V
 
@@ -82,8 +81,6 @@
 
 .method public constructor <init>([Lcom/android/internal/http/multipart/Part;Lorg/apache/http/params/HttpParams;)V
     .locals 2
-    .param p1    # [Lcom/android/internal/http/multipart/Part;
-    .param p2    # Lorg/apache/http/params/HttpParams;
 
     invoke-direct {p0}, Lorg/apache/http/entity/AbstractHttpEntity;-><init>()V
 
@@ -386,7 +383,6 @@
 
 .method public writeTo(Ljava/io/OutputStream;)V
     .locals 2
-    .param p1    # Ljava/io/OutputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

@@ -67,7 +67,6 @@
 
 .method private static getAbsolutePath(Ljava/io/File;)Ljava/lang/String;
     .locals 1
-    .param p0    # Ljava/io/File;
 
     if-eqz p0, :cond_0
 
@@ -139,7 +138,6 @@
 # virtual methods
 .method hideIme(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Landroid/app/NativeActivity;->mIMM:Landroid/view/inputmethod/InputMethodManager;
 
@@ -156,7 +154,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 1
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -174,7 +171,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 16
-    .param p1    # Landroid/os/Bundle;
 
     const-string v13, "main"
 
@@ -620,7 +616,6 @@
 
 .method public onInputQueueCreated(Landroid/view/InputQueue;)V
     .locals 2
-    .param p1    # Landroid/view/InputQueue;
 
     iget-boolean v0, p0, Landroid/app/NativeActivity;->mDestroyed:Z
 
@@ -642,7 +637,6 @@
 
 .method public onInputQueueDestroyed(Landroid/view/InputQueue;)V
     .locals 2
-    .param p1    # Landroid/view/InputQueue;
 
     iget-boolean v0, p0, Landroid/app/NativeActivity;->mDestroyed:Z
 
@@ -707,7 +701,6 @@
 
 .method protected onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onSaveInstanceState(Landroid/os/Bundle;)V
 
@@ -753,7 +746,6 @@
 
 .method public onWindowFocusChanged(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onWindowFocusChanged(Z)V
 
@@ -771,8 +763,6 @@
 
 .method setWindowFlags(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0}, Landroid/app/NativeActivity;->getWindow()Landroid/view/Window;
 
@@ -785,7 +775,6 @@
 
 .method setWindowFormat(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/app/NativeActivity;->getWindow()Landroid/view/Window;
 
@@ -798,7 +787,6 @@
 
 .method showIme(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Landroid/app/NativeActivity;->mIMM:Landroid/view/inputmethod/InputMethodManager;
 
@@ -811,10 +799,6 @@
 
 .method public surfaceChanged(Landroid/view/SurfaceHolder;III)V
     .locals 6
-    .param p1    # Landroid/view/SurfaceHolder;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iget-boolean v0, p0, Landroid/app/NativeActivity;->mDestroyed:Z
 
@@ -844,7 +828,6 @@
 
 .method public surfaceCreated(Landroid/view/SurfaceHolder;)V
     .locals 2
-    .param p1    # Landroid/view/SurfaceHolder;
 
     iget-boolean v0, p0, Landroid/app/NativeActivity;->mDestroyed:Z
 
@@ -866,7 +849,6 @@
 
 .method public surfaceDestroyed(Landroid/view/SurfaceHolder;)V
     .locals 1
-    .param p1    # Landroid/view/SurfaceHolder;
 
     const/4 v0, 0x0
 
@@ -886,7 +868,6 @@
 
 .method public surfaceRedrawNeeded(Landroid/view/SurfaceHolder;)V
     .locals 2
-    .param p1    # Landroid/view/SurfaceHolder;
 
     iget-boolean v0, p0, Landroid/app/NativeActivity;->mDestroyed:Z
 

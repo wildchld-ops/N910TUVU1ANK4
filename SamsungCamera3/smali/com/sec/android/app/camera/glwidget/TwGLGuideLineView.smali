@@ -52,10 +52,6 @@
 
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;IILcom/sec/android/app/camera/PreviewFrameLayout;)V
     .locals 9
-    .param p1    # Lcom/sec/android/app/camera/Camera;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Lcom/sec/android/app/camera/PreviewFrameLayout;
 
     const v8, 0x7f090006
 
@@ -208,8 +204,6 @@
 # virtual methods
 .method public declared-synchronized contains(FF)Z
     .locals 1
-    .param p1    # F
-    .param p2    # F
 
     monitor-enter p0
 
@@ -222,8 +216,6 @@
 
 .method public declared-synchronized findViewByCoordinate(FF)Lcom/sec/android/glview/TwGLView;
     .locals 1
-    .param p1    # F
-    .param p2    # F
 
     monitor-enter p0
 
@@ -236,7 +228,6 @@
 
 .method public handleGuidelineSettingsChanged(I)V
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -259,7 +250,6 @@
 
 .method public setGuideLineSize(Lcom/sec/android/app/camera/PreviewFrameLayout;)V
     .locals 10
-    .param p1    # Lcom/sec/android/app/camera/PreviewFrameLayout;
 
     const v6, 0x7f0a0006
 

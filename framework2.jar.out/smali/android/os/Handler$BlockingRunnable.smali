@@ -26,7 +26,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/Runnable;)V
     .locals 0
-    .param p1    # Ljava/lang/Runnable;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -39,8 +38,6 @@
 # virtual methods
 .method public postAndWait(Landroid/os/Handler;J)Z
     .locals 9
-    .param p1    # Landroid/os/Handler;
-    .param p2    # J
 
     const-wide/16 v7, 0x0
 

@@ -78,7 +78,6 @@
 
 .method static synthetic access$100(Landroid/widget/MultiSelectPopupWindow;)Z
     .locals 1
-    .param p0    # Landroid/widget/MultiSelectPopupWindow;
 
     invoke-direct {p0}, Landroid/widget/MultiSelectPopupWindow;->isShareViaEnable()Z
 
@@ -89,7 +88,6 @@
 
 .method static synthetic access$1000(Landroid/widget/MultiSelectPopupWindow;)Landroid/graphics/drawable/Drawable;
     .locals 1
-    .param p0    # Landroid/widget/MultiSelectPopupWindow;
 
     iget-object v0, p0, Landroid/widget/MultiSelectPopupWindow;->mSelectHandleRight:Landroid/graphics/drawable/Drawable;
 
@@ -98,8 +96,6 @@
 
 .method static synthetic access$1002(Landroid/widget/MultiSelectPopupWindow;Landroid/graphics/drawable/Drawable;)Landroid/graphics/drawable/Drawable;
     .locals 0
-    .param p0    # Landroid/widget/MultiSelectPopupWindow;
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     iput-object p1, p0, Landroid/widget/MultiSelectPopupWindow;->mSelectHandleRight:Landroid/graphics/drawable/Drawable;
 
@@ -108,9 +104,6 @@
 
 .method static synthetic access$1100(Landroid/widget/MultiSelectPopupWindow;II)Z
     .locals 1
-    .param p0    # Landroid/widget/MultiSelectPopupWindow;
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Landroid/widget/MultiSelectPopupWindow;->isPositionVisible(II)Z
 
@@ -121,7 +114,6 @@
 
 .method static synthetic access$200(Landroid/widget/MultiSelectPopupWindow;)Z
     .locals 1
-    .param p0    # Landroid/widget/MultiSelectPopupWindow;
 
     invoke-direct {p0}, Landroid/widget/MultiSelectPopupWindow;->isDictionaryEnable()Z
 
@@ -132,7 +124,6 @@
 
 .method static synthetic access$300(Landroid/widget/MultiSelectPopupWindow;)Z
     .locals 1
-    .param p0    # Landroid/widget/MultiSelectPopupWindow;
 
     invoke-direct {p0}, Landroid/widget/MultiSelectPopupWindow;->isTranslatorEnabled()Z
 
@@ -143,7 +134,6 @@
 
 .method static synthetic access$400(Landroid/widget/MultiSelectPopupWindow;)Landroid/widget/MultiSelectPopupWindow$PositionListener;
     .locals 1
-    .param p0    # Landroid/widget/MultiSelectPopupWindow;
 
     invoke-direct {p0}, Landroid/widget/MultiSelectPopupWindow;->getPositionListener()Landroid/widget/MultiSelectPopupWindow$PositionListener;
 
@@ -154,8 +144,6 @@
 
 .method static synthetic access$600(Landroid/widget/MultiSelectPopupWindow;I)Z
     .locals 1
-    .param p0    # Landroid/widget/MultiSelectPopupWindow;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/widget/MultiSelectPopupWindow;->isOffsetVisible(I)Z
 
@@ -166,7 +154,6 @@
 
 .method static synthetic access$900(Landroid/widget/MultiSelectPopupWindow;)Landroid/graphics/drawable/Drawable;
     .locals 1
-    .param p0    # Landroid/widget/MultiSelectPopupWindow;
 
     iget-object v0, p0, Landroid/widget/MultiSelectPopupWindow;->mSelectHandleLeft:Landroid/graphics/drawable/Drawable;
 
@@ -175,8 +162,6 @@
 
 .method static synthetic access$902(Landroid/widget/MultiSelectPopupWindow;Landroid/graphics/drawable/Drawable;)Landroid/graphics/drawable/Drawable;
     .locals 0
-    .param p0    # Landroid/widget/MultiSelectPopupWindow;
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     iput-object p1, p0, Landroid/widget/MultiSelectPopupWindow;->mSelectHandleLeft:Landroid/graphics/drawable/Drawable;
 
@@ -296,7 +281,6 @@
 
 .method private isOffsetVisible(I)Z
     .locals 6
-    .param p1    # I
 
     sget-object v4, Landroid/widget/MultiSelectPopupWindow;->mTextView:Landroid/widget/TextView;
 
@@ -351,8 +335,6 @@
 
 .method private isPositionVisible(II)Z
     .locals 11
-    .param p1    # I
-    .param p2    # I
 
     const/4 v10, 0x0
 
@@ -618,7 +600,6 @@
 # virtual methods
 .method public changeCurrentSelectedView(Landroid/widget/TextView;)V
     .locals 1
-    .param p1    # Landroid/widget/TextView;
 
     sget-object v0, Landroid/widget/MultiSelectPopupWindow;->mTextView:Landroid/widget/TextView;
 

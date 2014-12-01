@@ -158,7 +158,6 @@
 
 .method private constructor <init>(Landroid/os/Parcel;)V
     .locals 4
-    .param p1    # Landroid/os/Parcel;
 
     const/4 v1, 0x1
 
@@ -397,8 +396,6 @@
 
 .method synthetic constructor <init>(Landroid/os/Parcel;Lcom/absolute/android/persistence/AppProfile$1;)V
     .locals 0
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # Lcom/absolute/android/persistence/AppProfile$1;
 
     invoke-direct {p0, p1}, Lcom/absolute/android/persistence/AppProfile;-><init>(Landroid/os/Parcel;)V
 
@@ -407,21 +404,6 @@
 
 .method public constructor <init>(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;IIZZLjava/lang/String;Ljava/lang/String;Z[Ljava/lang/String;IILjava/util/HashMap;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # I
-    .param p7    # I
-    .param p8    # Z
-    .param p9    # Z
-    .param p10    # Ljava/lang/String;
-    .param p11    # Ljava/lang/String;
-    .param p12    # Z
-    .param p13    # [Ljava/lang/String;
-    .param p14    # I
-    .param p15    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -637,8 +619,6 @@
 
 .method private static areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
     .locals 2
-    .param p0    # Ljava/lang/Object;
-    .param p1    # Ljava/lang/Object;
 
     const/4 v0, 0x1
 
@@ -961,7 +941,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 5
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x1
 
@@ -1332,7 +1311,6 @@
 
 .method public setAccessKey(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/absolute/android/persistence/AppProfile;->m_accessKey:Ljava/lang/String;
 
@@ -1341,7 +1319,6 @@
 
 .method public setCheckRunningSecs(I)V
     .locals 1
-    .param p1    # I
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1372,7 +1349,6 @@
 
 .method public setIsMonitored(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -1385,7 +1361,6 @@
 
 .method public setIsPersisted(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -1398,7 +1373,6 @@
 
 .method public setMaxRestartAttempts(I)V
     .locals 1
-    .param p1    # I
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1411,7 +1385,6 @@
 
 .method public setMaxUpdateAttempts(I)V
     .locals 1
-    .param p1    # I
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1424,7 +1397,6 @@
 
 .method public setMonitorIntents([Ljava/lang/String;)V
     .locals 0
-    .param p1    # [Ljava/lang/String;
 
     iput-object p1, p0, Lcom/absolute/android/persistence/AppProfile;->m_monitorIntents:[Ljava/lang/String;
 
@@ -1433,7 +1405,6 @@
 
 .method public setRestartIntent(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/absolute/android/persistence/AppProfile;->m_restartIntent:Ljava/lang/String;
 
@@ -1442,7 +1413,6 @@
 
 .method public setStartOnInstall(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -1455,7 +1425,6 @@
 
 .method public setStartOnInstallIntent(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/absolute/android/persistence/AppProfile;->m_startOnInstallIntent:Ljava/lang/String;
 
@@ -1464,7 +1433,6 @@
 
 .method public setUpdateIpAddress(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/absolute/android/persistence/AppProfile;->m_updateIpAddress:Ljava/lang/String;
 
@@ -1473,7 +1441,6 @@
 
 .method public setUpdateRetryMinutes(I)V
     .locals 1
-    .param p1    # I
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1486,7 +1453,6 @@
 
 .method public setUpdateUrl(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/absolute/android/persistence/AppProfile;->m_updateUrl:Ljava/lang/String;
 
@@ -1495,7 +1461,6 @@
 
 .method public setVersion(I)V
     .locals 2
-    .param p1    # I
 
     if-nez p1, :cond_0
 
@@ -1973,8 +1938,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 3
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     const/4 v1, 0x1
 

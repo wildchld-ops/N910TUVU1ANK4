@@ -12,7 +12,6 @@
 # direct methods
 .method constructor <init>(Z)V
     .locals 3
-    .param p1    # Z
 
     invoke-direct {p0}, Landroid/view/GLES20Layer;-><init>()V
 
@@ -59,7 +58,6 @@
 # virtual methods
 .method end(Landroid/graphics/Canvas;)V
     .locals 0
-    .param p1    # Landroid/graphics/Canvas;
 
     return-void
 .end method
@@ -117,16 +115,12 @@
 
 .method redrawLater(Landroid/view/DisplayList;Landroid/graphics/Rect;)V
     .locals 0
-    .param p1    # Landroid/view/DisplayList;
-    .param p2    # Landroid/graphics/Rect;
 
     return-void
 .end method
 
 .method resize(II)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0}, Landroid/view/GLES20TextureLayer;->isValid()Z
 
@@ -137,7 +131,6 @@
 
 .method setOpaque(Z)V
     .locals 2
-    .param p1    # Z
 
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
@@ -150,7 +143,6 @@
 
 .method setSurfaceTexture(Landroid/graphics/SurfaceTexture;)V
     .locals 2
-    .param p1    # Landroid/graphics/SurfaceTexture;
 
     iget-object v0, p0, Landroid/view/GLES20TextureLayer;->mSurface:Landroid/graphics/SurfaceTexture;
 
@@ -174,7 +166,6 @@
 
 .method setTransform(Landroid/graphics/Matrix;)V
     .locals 2
-    .param p1    # Landroid/graphics/Matrix;
 
     iget v0, p0, Landroid/view/GLES20Layer;->mLayer:I
 
@@ -187,7 +178,6 @@
 
 .method start(Landroid/graphics/Canvas;)Landroid/view/HardwareCanvas;
     .locals 1
-    .param p1    # Landroid/graphics/Canvas;
 
     const/4 v0, 0x0
 
@@ -196,8 +186,6 @@
 
 .method start(Landroid/graphics/Canvas;Landroid/graphics/Rect;)Landroid/view/HardwareCanvas;
     .locals 1
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # Landroid/graphics/Rect;
 
     const/4 v0, 0x0
 
@@ -206,9 +194,6 @@
 
 .method update(IIZ)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     invoke-super {p0, p1, p2, p3}, Landroid/view/HardwareLayer;->update(IIZ)V
 

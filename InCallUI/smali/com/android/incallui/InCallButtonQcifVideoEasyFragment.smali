@@ -16,7 +16,6 @@
 # virtual methods
 .method protected onFinishInflate(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     const/4 v0, 0x0
 
@@ -31,7 +30,6 @@
 
 .method public showDecorationButton(Z)V
     .locals 1
-    .param p1    # Z
 
     const/4 v0, 0x0
 

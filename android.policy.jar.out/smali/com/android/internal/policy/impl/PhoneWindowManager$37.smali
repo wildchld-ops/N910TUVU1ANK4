@@ -37,7 +37,6 @@
 # virtual methods
 .method public sendResult(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "WindowManager"
 

@@ -36,9 +36,6 @@
 # virtual methods
 .method public onItemSelected(Landroid/view/View;ILjava/lang/Object;)V
     .locals 5
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # Ljava/lang/Object;
 
     invoke-static {}, Lcom/android/mms/MmsConfig;->getEnableContextServiceEnable()Z
 

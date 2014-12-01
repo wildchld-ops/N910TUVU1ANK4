@@ -136,7 +136,7 @@
 
     sget-object v0, Lcom/android/phone/callsettings/CallBarring$AppState;->$VALUES:[Lcom/android/phone/callsettings/CallBarring$AppState;
 
-    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
+    invoke-virtual {v0}, [Lcom/android/phone/callsettings/CallBarring$AppState;->clone()Ljava/lang/Object;
 
     move-result-object v0
 

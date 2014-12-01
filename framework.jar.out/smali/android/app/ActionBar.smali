@@ -169,35 +169,30 @@
 
 .method public setHomeActionContentDescription(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public setHomeActionContentDescription(Ljava/lang/CharSequence;)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
 
     return-void
 .end method
 
 .method public setHomeAsUpIndicator(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public setHomeAsUpIndicator(Landroid/graphics/drawable/Drawable;)V
     .locals 0
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     return-void
 .end method
 
 .method public setHomeButtonEnabled(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
@@ -225,14 +220,12 @@
 
 .method public setSplitBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
     .locals 0
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     return-void
 .end method
 
 .method public setStackedBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
     .locals 0
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     return-void
 .end method
@@ -254,21 +247,18 @@
 
 .method public twPutTabsOnTop(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method public twSetDisplayActionBarDisabledWithAnimation(J)V
     .locals 0
-    .param p1    # J
 
     return-void
 .end method
 
 .method public twSetDisplayActionBarEnabledWithAnimation(J)V
     .locals 0
-    .param p1    # J
 
     return-void
 .end method
@@ -281,7 +271,6 @@
 
 .method public twSetTabMoveAnimationEnabled(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method

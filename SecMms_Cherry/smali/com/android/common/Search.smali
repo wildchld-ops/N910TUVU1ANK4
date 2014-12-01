@@ -20,9 +20,6 @@
 
 .method public static getSuggestions(Landroid/content/Context;Landroid/app/SearchableInfo;Ljava/lang/String;)Landroid/database/Cursor;
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/app/SearchableInfo;
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, -0x1
 
@@ -35,10 +32,6 @@
 
 .method public static getSuggestions(Landroid/content/Context;Landroid/app/SearchableInfo;Ljava/lang/String;I)Landroid/database/Cursor;
     .locals 9
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/app/SearchableInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     const/4 v2, 0x0
 

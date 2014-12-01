@@ -62,7 +62,6 @@
 
 .method public constructor <init>(Landroid/net/wifi/p2p/WifiP2pDeviceList;)V
     .locals 5
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pDeviceList;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -171,7 +170,6 @@
 
 .method private validateDevice(Landroid/net/wifi/p2p/WifiP2pDevice;)V
     .locals 2
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pDevice;
 
     if-nez p1, :cond_0
 
@@ -206,7 +204,6 @@
 
 .method private validateDeviceAddress(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -264,7 +261,6 @@
 
 .method public get(Ljava/lang/String;)Landroid/net/wifi/p2p/WifiP2pDevice;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -334,7 +330,6 @@
 
 .method public isGroupOwner(Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Landroid/net/wifi/p2p/WifiP2pDeviceList;->validateDeviceAddress(Ljava/lang/String;)V
 
@@ -382,7 +377,6 @@
 
 .method public remove(Ljava/lang/String;)Landroid/net/wifi/p2p/WifiP2pDevice;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     invoke-direct {p0, p1}, Landroid/net/wifi/p2p/WifiP2pDeviceList;->validateDeviceAddress(Ljava/lang/String;)V
@@ -410,7 +404,6 @@
 
 .method public remove(Landroid/net/wifi/p2p/WifiP2pDevice;)Z
     .locals 3
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pDevice;
 
     const/4 v0, 0x0
 
@@ -442,7 +435,6 @@
 
 .method public remove(Landroid/net/wifi/p2p/WifiP2pDeviceList;)Z
     .locals 4
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pDeviceList;
 
     const/4 v2, 0x0
 
@@ -534,7 +526,6 @@
 
 .method public update(Landroid/net/wifi/p2p/WifiP2pDevice;)V
     .locals 2
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pDevice;
 
     invoke-virtual {p0, p1}, Landroid/net/wifi/p2p/WifiP2pDeviceList;->updateSupplicantDetails(Landroid/net/wifi/p2p/WifiP2pDevice;)V
 
@@ -557,8 +548,6 @@
 
 .method updateGroupCapability(Ljava/lang/String;I)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -588,8 +577,6 @@
 
 .method updateStatus(Ljava/lang/String;I)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -619,7 +606,6 @@
 
 .method updateSupplicantDetails(Landroid/net/wifi/p2p/WifiP2pDevice;)V
     .locals 3
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pDevice;
 
     if-eqz p1, :cond_0
 
@@ -698,8 +684,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 3
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v2, p0, Landroid/net/wifi/p2p/WifiP2pDeviceList;->mDevices:Ljava/util/HashMap;
 

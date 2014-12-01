@@ -10,7 +10,6 @@
 # direct methods
 .method public constructor <init>(Landroid/filterfw/core/FilterGraph;)V
     .locals 1
-    .param p1    # Landroid/filterfw/core/FilterGraph;
 
     invoke-direct {p0, p1}, Landroid/filterfw/core/Scheduler;-><init>(Landroid/filterfw/core/FilterGraph;)V
 

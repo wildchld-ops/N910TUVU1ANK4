@@ -208,8 +208,6 @@
 
 .method private makeWakeKeyRefCount(ZLjava/lang/String;)Z
     .locals 10
-    .param p1    # Z
-    .param p2    # Ljava/lang/String;
 
     const-string v7, ","
 
@@ -523,7 +521,6 @@
 
 .method private writeWakeKeyString(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     new-instance v1, Ljava/io/File;
 
@@ -689,8 +686,6 @@
 # virtual methods
 .method public setWakeKeyDynamically(ZLjava/lang/String;)V
     .locals 3
-    .param p1    # Z
-    .param p2    # Ljava/lang/String;
 
     const-string v0, "WAKEKEY"
 

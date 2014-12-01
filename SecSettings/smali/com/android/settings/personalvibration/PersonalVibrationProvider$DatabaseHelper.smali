@@ -17,7 +17,6 @@
 # direct methods
 .method constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     const-string v0, "personalvibration.db"
 
@@ -34,7 +33,6 @@
 # virtual methods
 .method initDB(Landroid/database/sqlite/SQLiteDatabase;)V
     .locals 6
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
 
     const/4 v5, 0x0
 
@@ -259,7 +257,6 @@
 
 .method public onCreate(Landroid/database/sqlite/SQLiteDatabase;)V
     .locals 1
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
 
     const-string v0, "CREATE TABLE registerinfo (_id INTEGER PRIMARY KEY  AUTOINCREMENT  NOT NULL , vibration_name VARCHAR NOT NULL , vibration_pattern VARCHAR NOT NULL ,vibration_type INTEGER NOT NULL)"
 
@@ -272,9 +269,6 @@
 
 .method public onUpgrade(Landroid/database/sqlite/SQLiteDatabase;II)V
     .locals 3
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p2    # I
-    .param p3    # I
 
     const-string v0, "PersonalVibrationProvider"
 

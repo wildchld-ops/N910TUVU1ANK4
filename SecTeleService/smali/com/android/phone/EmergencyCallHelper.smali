@@ -124,7 +124,7 @@
 
     const/4 v0, 0x4
 
-    invoke-virtual {p0, v0}, Landroid/os/Handler;->removeMessages(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/EmergencyCallHelper;->removeMessages(I)V
 
     return-void
 .end method
@@ -187,7 +187,7 @@
 
     iget-object v1, p0, Lcom/android/phone/EmergencyCallHelper;->mApp:Lcom/android/phone/PhoneGlobals;
 
-    invoke-virtual {v1}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v1}, Lcom/android/phone/PhoneGlobals;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
@@ -531,7 +531,7 @@
     if-eqz v5, :cond_d
 
     :cond_6
-    invoke-virtual {p0, v8}, Landroid/os/Handler;->removeMessages(I)V
+    invoke-virtual {p0, v8}, Lcom/android/phone/EmergencyCallHelper;->removeMessages(I)V
 
     const-string v5, "feature_multisim"
 
@@ -547,7 +547,7 @@
 
     if-eqz v4, :cond_9
 
-    invoke-virtual {p0, v8, v9, v10}, Landroid/os/Handler;->sendEmptyMessageDelayed(IJ)Z
+    invoke-virtual {p0, v8, v9, v10}, Lcom/android/phone/EmergencyCallHelper;->sendEmptyMessageDelayed(IJ)Z
 
     goto :goto_0
 
@@ -562,7 +562,7 @@
     goto :goto_2
 
     :cond_9
-    invoke-virtual {p0, v8, v11, v12}, Landroid/os/Handler;->sendEmptyMessageDelayed(IJ)Z
+    invoke-virtual {p0, v8, v11, v12}, Lcom/android/phone/EmergencyCallHelper;->sendEmptyMessageDelayed(IJ)Z
 
     goto :goto_0
 
@@ -586,12 +586,12 @@
     if-ne v5, v4, :cond_c
 
     :cond_b
-    invoke-virtual {p0, v8, v9, v10}, Landroid/os/Handler;->sendEmptyMessageDelayed(IJ)Z
+    invoke-virtual {p0, v8, v9, v10}, Lcom/android/phone/EmergencyCallHelper;->sendEmptyMessageDelayed(IJ)Z
 
     goto/16 :goto_0
 
     :cond_c
-    invoke-virtual {p0, v8, v11, v12}, Landroid/os/Handler;->sendEmptyMessageDelayed(IJ)Z
+    invoke-virtual {p0, v8, v11, v12}, Lcom/android/phone/EmergencyCallHelper;->sendEmptyMessageDelayed(IJ)Z
 
     goto/16 :goto_0
 
@@ -718,7 +718,7 @@
     if-eqz v3, :cond_c
 
     :cond_1
-    invoke-virtual {p0, v7}, Landroid/os/Handler;->removeMessages(I)V
+    invoke-virtual {p0, v7}, Lcom/android/phone/EmergencyCallHelper;->removeMessages(I)V
 
     const-string v3, "feature_multisim"
 
@@ -734,7 +734,7 @@
 
     if-eqz v3, :cond_8
 
-    invoke-virtual {p0, v7, v9, v10}, Landroid/os/Handler;->sendEmptyMessageDelayed(IJ)Z
+    invoke-virtual {p0, v7, v9, v10}, Lcom/android/phone/EmergencyCallHelper;->sendEmptyMessageDelayed(IJ)Z
 
     :goto_2
     return-void
@@ -799,7 +799,7 @@
     :cond_8
     const-wide/16 v3, 0x1b58
 
-    invoke-virtual {p0, v7, v3, v4}, Landroid/os/Handler;->sendEmptyMessageDelayed(IJ)Z
+    invoke-virtual {p0, v7, v3, v4}, Lcom/android/phone/EmergencyCallHelper;->sendEmptyMessageDelayed(IJ)Z
 
     goto :goto_2
 
@@ -823,14 +823,14 @@
     if-ne v3, v4, :cond_b
 
     :cond_a
-    invoke-virtual {p0, v7, v9, v10}, Landroid/os/Handler;->sendEmptyMessageDelayed(IJ)Z
+    invoke-virtual {p0, v7, v9, v10}, Lcom/android/phone/EmergencyCallHelper;->sendEmptyMessageDelayed(IJ)Z
 
     goto :goto_2
 
     :cond_b
     const-wide/16 v3, 0x1b58
 
-    invoke-virtual {p0, v7, v3, v4}, Landroid/os/Handler;->sendEmptyMessageDelayed(IJ)Z
+    invoke-virtual {p0, v7, v3, v4}, Lcom/android/phone/EmergencyCallHelper;->sendEmptyMessageDelayed(IJ)Z
 
     goto :goto_2
 
@@ -843,11 +843,11 @@
 
     if-eqz v3, :cond_d
 
-    invoke-virtual {p0, v8}, Landroid/os/Handler;->removeMessages(I)V
+    invoke-virtual {p0, v8}, Lcom/android/phone/EmergencyCallHelper;->removeMessages(I)V
 
     const-wide/16 v3, 0x7d0
 
-    invoke-virtual {p0, v8, v3, v4}, Landroid/os/Handler;->sendEmptyMessageDelayed(IJ)Z
+    invoke-virtual {p0, v8, v3, v4}, Lcom/android/phone/EmergencyCallHelper;->sendEmptyMessageDelayed(IJ)Z
 
     goto :goto_2
 
@@ -954,7 +954,7 @@
     :goto_0
     iget-object v4, p0, Lcom/android/phone/EmergencyCallHelper;->mApp:Lcom/android/phone/PhoneGlobals;
 
-    invoke-virtual {v4}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v4}, Lcom/android/phone/PhoneGlobals;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v4
 
@@ -1142,7 +1142,7 @@
 
     iget-object v1, p0, Lcom/android/phone/EmergencyCallHelper;->mApp:Lcom/android/phone/PhoneGlobals;
 
-    invoke-virtual {v1}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v1}, Lcom/android/phone/PhoneGlobals;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
@@ -1160,7 +1160,7 @@
 
     iget-object v1, p0, Lcom/android/phone/EmergencyCallHelper;->mApp:Lcom/android/phone/PhoneGlobals;
 
-    invoke-virtual {v1}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v1}, Lcom/android/phone/PhoneGlobals;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
@@ -1182,7 +1182,7 @@
 
     sget-object v2, Landroid/os/UserHandle;->ALL:Landroid/os/UserHandle;
 
-    invoke-virtual {v1, v0, v2}, Landroid/content/ContextWrapper;->sendBroadcastAsUser(Landroid/content/Intent;Landroid/os/UserHandle;)V
+    invoke-virtual {v1, v0, v2}, Lcom/android/phone/PhoneGlobals;->sendBroadcastAsUser(Landroid/content/Intent;Landroid/os/UserHandle;)V
 
     :goto_0
     return-void
@@ -1325,7 +1325,7 @@
 
     iget-object v1, p0, Lcom/android/phone/EmergencyCallHelper;->mApp:Lcom/android/phone/PhoneGlobals;
 
-    invoke-virtual {v1, v0}, Landroid/content/ContextWrapper;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {v1, v0}, Lcom/android/phone/PhoneGlobals;->startActivity(Landroid/content/Intent;)V
 
     return-void
 .end method
@@ -1335,11 +1335,11 @@
 
     const/4 v2, 0x4
 
-    invoke-virtual {p0, v2}, Landroid/os/Handler;->removeMessages(I)V
+    invoke-virtual {p0, v2}, Lcom/android/phone/EmergencyCallHelper;->removeMessages(I)V
 
     sget-wide v0, Lcom/android/phone/EmergencyCallHelper;->TIME_BETWEEN_RETRIES:J
 
-    invoke-virtual {p0, v2, v0, v1}, Landroid/os/Handler;->sendEmptyMessageDelayed(IJ)Z
+    invoke-virtual {p0, v2, v0, v1}, Lcom/android/phone/EmergencyCallHelper;->sendEmptyMessageDelayed(IJ)Z
 
     return-void
 .end method
@@ -1445,7 +1445,7 @@
 
     const-string v2, "power"
 
-    invoke-virtual {v1, v2}, Landroid/content/ContextWrapper;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v1, v2}, Lcom/android/phone/PhoneGlobals;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -1481,7 +1481,7 @@
 
     iget-object v1, p0, Lcom/android/phone/EmergencyCallHelper;->mApp:Lcom/android/phone/PhoneGlobals;
 
-    invoke-virtual {v1}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v1}, Lcom/android/phone/PhoneGlobals;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
@@ -1522,7 +1522,7 @@
 
     const/4 v0, 0x3
 
-    invoke-virtual {p0, v0}, Landroid/os/Handler;->removeMessages(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/EmergencyCallHelper;->removeMessages(I)V
 
     return-void
 .end method
@@ -1541,7 +1541,7 @@
     :cond_0
     const/4 v0, 0x2
 
-    invoke-virtual {p0, v0}, Landroid/os/Handler;->removeMessages(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/EmergencyCallHelper;->removeMessages(I)V
 
     return-void
 .end method
@@ -1644,7 +1644,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v3}, Landroid/app/Dialog;->isShowing()Z
+    invoke-virtual {v3}, Landroid/app/ProgressDialog;->isShowing()Z
 
     move-result v3
 
@@ -1744,9 +1744,9 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-virtual {p0, v2}, Landroid/os/Handler;->removeMessages(I)V
+    invoke-virtual {p0, v2}, Lcom/android/phone/EmergencyCallHelper;->removeMessages(I)V
 
-    invoke-virtual {p0, v2}, Landroid/os/Handler;->sendEmptyMessage(I)Z
+    invoke-virtual {p0, v2}, Lcom/android/phone/EmergencyCallHelper;->sendEmptyMessage(I)Z
 
     return-void
 .end method
@@ -1794,11 +1794,11 @@
     iput-boolean v1, p0, Lcom/android/phone/EmergencyCallHelper;->isIMSreg:Z
 
     :cond_0
-    invoke-virtual {p0, v3, p1}, Landroid/os/Handler;->obtainMessage(ILjava/lang/Object;)Landroid/os/Message;
+    invoke-virtual {p0, v3, p1}, Lcom/android/phone/EmergencyCallHelper;->obtainMessage(ILjava/lang/Object;)Landroid/os/Message;
 
     move-result-object v0
 
-    invoke-virtual {p0, v0}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
+    invoke-virtual {p0, v0}, Lcom/android/phone/EmergencyCallHelper;->sendMessage(Landroid/os/Message;)Z
 
     return-void
 .end method
@@ -1844,11 +1844,11 @@
 
     const/4 v2, 0x0
 
-    invoke-virtual {p0, v1, p2, v2, p1}, Landroid/os/Handler;->obtainMessage(IIILjava/lang/Object;)Landroid/os/Message;
+    invoke-virtual {p0, v1, p2, v2, p1}, Lcom/android/phone/EmergencyCallHelper;->obtainMessage(IIILjava/lang/Object;)Landroid/os/Message;
 
     move-result-object v0
 
-    invoke-virtual {p0, v0}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
+    invoke-virtual {p0, v0}, Lcom/android/phone/EmergencyCallHelper;->sendMessage(Landroid/os/Message;)Z
 
     return-void
 .end method

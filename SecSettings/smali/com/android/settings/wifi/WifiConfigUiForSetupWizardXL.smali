@@ -36,7 +36,6 @@
 # direct methods
 .method static synthetic access$000(Lcom/android/settings/wifi/WifiConfigUiForSetupWizardXL;)Landroid/view/inputmethod/InputMethodManager;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiConfigUiForSetupWizardXL;
 
     iget-object v0, p0, Lcom/android/settings/wifi/WifiConfigUiForSetupWizardXL;->mInputMethodManager:Landroid/view/inputmethod/InputMethodManager;
 
@@ -45,7 +44,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/wifi/WifiConfigUiForSetupWizardXL;)Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiConfigUiForSetupWizardXL;
 
     iget-object v0, p0, Lcom/android/settings/wifi/WifiConfigUiForSetupWizardXL;->mActivity:Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;
 
@@ -96,8 +94,6 @@
 
 .method public onFocusChange(Landroid/view/View;Z)V
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # Z
 
     const/4 v0, 0x0
 
@@ -119,7 +115,6 @@
 
 .method public requestFocusAndShowKeyboard(I)V
     .locals 7
-    .param p1    # I
 
     const/4 v6, 0x0
 
@@ -227,7 +222,6 @@
 
 .method public setCancelButton(Ljava/lang/CharSequence;)V
     .locals 2
-    .param p1    # Ljava/lang/CharSequence;
 
     iget-object v0, p0, Lcom/android/settings/wifi/WifiConfigUiForSetupWizardXL;->mCancelButton:Landroid/widget/Button;
 
@@ -240,14 +234,12 @@
 
 .method public setForgetButton(Ljava/lang/CharSequence;)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
 
     return-void
 .end method
 
 .method public setSubmitButton(Ljava/lang/CharSequence;)V
     .locals 2
-    .param p1    # Ljava/lang/CharSequence;
 
     iget-object v0, p0, Lcom/android/settings/wifi/WifiConfigUiForSetupWizardXL;->mConnectButton:Landroid/widget/Button;
 
@@ -264,7 +256,6 @@
 
 .method public setTitle(I)V
     .locals 2
-    .param p1    # I
 
     const-string v0, "SetupWizard"
 
@@ -277,7 +268,6 @@
 
 .method public setTitle(Ljava/lang/CharSequence;)V
     .locals 2
-    .param p1    # Ljava/lang/CharSequence;
 
     const-string v0, "SetupWizard"
 

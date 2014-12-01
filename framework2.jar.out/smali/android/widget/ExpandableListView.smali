@@ -173,7 +173,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -184,8 +183,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const v0, 0x101006f
 
@@ -196,9 +193,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v4, -0x2
 
@@ -341,7 +335,6 @@
 
 .method private getAbsoluteFlatPosition(I)I
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/widget/ListView;->getHeaderViewsCount()I
 
@@ -354,7 +347,6 @@
 
 .method private getChildOrGroupId(Landroid/widget/ExpandableListPosition;)J
     .locals 3
-    .param p1    # Landroid/widget/ExpandableListPosition;
 
     iget v0, p1, Landroid/widget/ExpandableListPosition;->type:I
 
@@ -389,7 +381,6 @@
 
 .method private getFlatPositionForConnector(I)I
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/widget/ListView;->getHeaderViewsCount()I
 
@@ -402,7 +393,6 @@
 
 .method private getIndicator(Landroid/widget/ExpandableListConnector$PositionMetadata;)Landroid/graphics/drawable/Drawable;
     .locals 9
-    .param p1    # Landroid/widget/ExpandableListConnector$PositionMetadata;
 
     const/4 v6, 0x2
 
@@ -514,7 +504,6 @@
 
 .method public static getPackedPositionChild(J)I
     .locals 7
-    .param p0    # J
 
     const-wide v5, 0xffffffffL
 
@@ -546,8 +535,6 @@
 
 .method public static getPackedPositionForChild(II)J
     .locals 6
-    .param p0    # I
-    .param p1    # I
 
     const-wide/high16 v0, -0x8000000000000000L
 
@@ -576,7 +563,6 @@
 
 .method public static getPackedPositionForGroup(I)J
     .locals 4
-    .param p0    # I
 
     int-to-long v0, p0
 
@@ -593,7 +579,6 @@
 
 .method public static getPackedPositionGroup(J)I
     .locals 3
-    .param p0    # J
 
     const-wide v0, 0xffffffffL
 
@@ -622,7 +607,6 @@
 
 .method public static getPackedPositionType(J)I
     .locals 4
-    .param p0    # J
 
     const-wide/high16 v2, -0x8000000000000000L
 
@@ -672,7 +656,6 @@
 
 .method private isHeaderOrFooterPosition(I)Z
     .locals 3
-    .param p1    # I
 
     iget v1, p0, Landroid/widget/AdapterView;->mItemCount:I
 
@@ -864,7 +847,6 @@
 # virtual methods
 .method public collapseGroup(I)Z
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Landroid/widget/ExpandableListView;->mConnector:Landroid/widget/ExpandableListConnector;
 
@@ -886,9 +868,6 @@
 
 .method createContextMenuInfo(Landroid/view/View;IJ)Landroid/view/ContextMenu$ContextMenuInfo;
     .locals 9
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # J
 
     invoke-direct {p0, p2}, Landroid/widget/ExpandableListView;->isHeaderOrFooterPosition(I)Z
 
@@ -939,7 +918,6 @@
 
 .method protected dispatchDraw(Landroid/graphics/Canvas;)V
     .locals 30
-    .param p1    # Landroid/graphics/Canvas;
 
     invoke-super/range {p0 .. p1}, Landroid/widget/ListView;->dispatchDraw(Landroid/graphics/Canvas;)V
 
@@ -1496,9 +1474,6 @@
 
 .method drawDivider(Landroid/graphics/Canvas;Landroid/graphics/Rect;I)V
     .locals 6
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # Landroid/graphics/Rect;
-    .param p3    # I
 
     iget v4, p0, Landroid/widget/AdapterView;->mFirstPosition:I
 
@@ -1563,7 +1538,6 @@
 
 .method public expandGroup(I)Z
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -1576,8 +1550,6 @@
 
 .method public expandGroup(IZ)Z
     .locals 7
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v6, -0x1
 
@@ -1668,7 +1640,6 @@
 
 .method public getExpandableListPosition(I)J
     .locals 5
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/widget/ExpandableListView;->isHeaderOrFooterPosition(I)Z
 
@@ -1705,7 +1676,6 @@
 
 .method public getFlatListPosition(J)I
     .locals 4
-    .param p1    # J
 
     invoke-static {p1, p2}, Landroid/widget/ExpandableListPosition;->obtainPosition(J)Landroid/widget/ExpandableListPosition;
 
@@ -1807,9 +1777,6 @@
 
 .method handleItemClick(Landroid/view/View;IJ)Z
     .locals 12
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # J
 
     iget-object v0, p0, Landroid/widget/ExpandableListView;->mConnector:Landroid/widget/ExpandableListConnector;
 
@@ -1989,7 +1956,6 @@
 
 .method public isGroupExpanded(I)Z
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/widget/ExpandableListView;->mConnector:Landroid/widget/ExpandableListConnector;
 
@@ -2002,7 +1968,6 @@
 
 .method public onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
     .locals 1
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
 
     invoke-super {p0, p1}, Landroid/widget/ListView;->onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
 
@@ -2019,7 +1984,6 @@
 
 .method public onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
     .locals 1
-    .param p1    # Landroid/view/accessibility/AccessibilityNodeInfo;
 
     invoke-super {p0, p1}, Landroid/widget/ListView;->onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
 
@@ -2036,7 +2000,6 @@
 
 .method public onRestoreInstanceState(Landroid/os/Parcelable;)V
     .locals 3
-    .param p1    # Landroid/os/Parcelable;
 
     instance-of v1, p1, Landroid/widget/ExpandableListView$SavedState;
 
@@ -2078,7 +2041,6 @@
 
 .method public onRtlPropertiesChanged(I)V
     .locals 0
-    .param p1    # I
 
     invoke-direct {p0}, Landroid/widget/ExpandableListView;->resolveIndicator()V
 
@@ -2119,9 +2081,6 @@
 
 .method public performItemClick(Landroid/view/View;IJ)Z
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # J
 
     invoke-direct {p0, p2}, Landroid/widget/ExpandableListView;->isHeaderOrFooterPosition(I)Z
 
@@ -2150,7 +2109,6 @@
 
 .method public bridge synthetic setAdapter(Landroid/widget/Adapter;)V
     .locals 0
-    .param p1    # Landroid/widget/Adapter;
 
     check-cast p1, Landroid/widget/ListAdapter;
 
@@ -2161,7 +2119,6 @@
 
 .method public setAdapter(Landroid/widget/ExpandableListAdapter;)V
     .locals 1
-    .param p1    # Landroid/widget/ExpandableListAdapter;
 
     iput-object p1, p0, Landroid/widget/ExpandableListView;->mAdapter:Landroid/widget/ExpandableListAdapter;
 
@@ -2190,7 +2147,6 @@
 
 .method public setAdapter(Landroid/widget/ListAdapter;)V
     .locals 2
-    .param p1    # Landroid/widget/ListAdapter;
 
     new-instance v0, Ljava/lang/RuntimeException;
 
@@ -2203,7 +2159,6 @@
 
 .method public setChildDivider(Landroid/graphics/drawable/Drawable;)V
     .locals 0
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     iput-object p1, p0, Landroid/widget/ExpandableListView;->mChildDivider:Landroid/graphics/drawable/Drawable;
 
@@ -2212,7 +2167,6 @@
 
 .method public setChildIndicator(Landroid/graphics/drawable/Drawable;)V
     .locals 0
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     iput-object p1, p0, Landroid/widget/ExpandableListView;->mChildIndicator:Landroid/graphics/drawable/Drawable;
 
@@ -2221,8 +2175,6 @@
 
 .method public setChildIndicatorBounds(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     iput p1, p0, Landroid/widget/ExpandableListView;->mChildIndicatorLeft:I
 
@@ -2235,8 +2187,6 @@
 
 .method public setChildIndicatorBoundsRelative(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     iput p1, p0, Landroid/widget/ExpandableListView;->mChildIndicatorStart:I
 
@@ -2249,7 +2199,6 @@
 
 .method public setGroupIndicator(Landroid/graphics/drawable/Drawable;)V
     .locals 2
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     iput-object p1, p0, Landroid/widget/ExpandableListView;->mGroupIndicator:Landroid/graphics/drawable/Drawable;
 
@@ -2279,8 +2228,6 @@
 
 .method public setIndicatorBounds(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     iput p1, p0, Landroid/widget/ExpandableListView;->mIndicatorLeft:I
 
@@ -2293,8 +2240,6 @@
 
 .method public setIndicatorBoundsRelative(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     iput p1, p0, Landroid/widget/ExpandableListView;->mIndicatorStart:I
 
@@ -2307,7 +2252,6 @@
 
 .method public setOnChildClickListener(Landroid/widget/ExpandableListView$OnChildClickListener;)V
     .locals 0
-    .param p1    # Landroid/widget/ExpandableListView$OnChildClickListener;
 
     iput-object p1, p0, Landroid/widget/ExpandableListView;->mOnChildClickListener:Landroid/widget/ExpandableListView$OnChildClickListener;
 
@@ -2316,7 +2260,6 @@
 
 .method public setOnGroupClickListener(Landroid/widget/ExpandableListView$OnGroupClickListener;)V
     .locals 0
-    .param p1    # Landroid/widget/ExpandableListView$OnGroupClickListener;
 
     iput-object p1, p0, Landroid/widget/ExpandableListView;->mOnGroupClickListener:Landroid/widget/ExpandableListView$OnGroupClickListener;
 
@@ -2325,7 +2268,6 @@
 
 .method public setOnGroupCollapseListener(Landroid/widget/ExpandableListView$OnGroupCollapseListener;)V
     .locals 0
-    .param p1    # Landroid/widget/ExpandableListView$OnGroupCollapseListener;
 
     iput-object p1, p0, Landroid/widget/ExpandableListView;->mOnGroupCollapseListener:Landroid/widget/ExpandableListView$OnGroupCollapseListener;
 
@@ -2334,7 +2276,6 @@
 
 .method public setOnGroupExpandListener(Landroid/widget/ExpandableListView$OnGroupExpandListener;)V
     .locals 0
-    .param p1    # Landroid/widget/ExpandableListView$OnGroupExpandListener;
 
     iput-object p1, p0, Landroid/widget/ExpandableListView;->mOnGroupExpandListener:Landroid/widget/ExpandableListView$OnGroupExpandListener;
 
@@ -2343,7 +2284,6 @@
 
 .method public setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
     .locals 0
-    .param p1    # Landroid/widget/AdapterView$OnItemClickListener;
 
     invoke-super {p0, p1}, Landroid/widget/AdapterView;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
 
@@ -2352,9 +2292,6 @@
 
 .method public setSelectedChild(IIZ)Z
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     invoke-static {p1, p2}, Landroid/widget/ExpandableListPosition;->obtainChildPosition(II)Landroid/widget/ExpandableListPosition;
 
@@ -2416,7 +2353,6 @@
 
 .method public setSelectedGroup(I)V
     .locals 4
-    .param p1    # I
 
     invoke-static {p1}, Landroid/widget/ExpandableListPosition;->obtainGroupPosition(I)Landroid/widget/ExpandableListPosition;
 

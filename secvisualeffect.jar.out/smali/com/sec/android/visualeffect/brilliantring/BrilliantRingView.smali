@@ -38,10 +38,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;III)V
     .locals 9
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-direct {p0, p1}, Landroid/opengl/GLSurfaceView;-><init>(Landroid/content/Context;)V
 
@@ -189,7 +185,6 @@
 # virtual methods
 .method public changeBackground(Landroid/graphics/Bitmap;)V
     .locals 2
-    .param p1    # Landroid/graphics/Bitmap;
 
     const-string v0, "BrilliantRing_BrilliantRingView"
 
@@ -233,7 +228,6 @@
 
 .method public handleSensorEvent(Landroid/hardware/SensorEvent;)Z
     .locals 1
-    .param p1    # Landroid/hardware/SensorEvent;
 
     iget-object v0, p0, Lcom/sec/android/visualeffect/brilliantring/BrilliantRingView;->mRenderer:Lcom/sec/android/visualeffect/brilliantring/BrilliantRingRenderer;
 
@@ -251,7 +245,6 @@
 
 .method public handleTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 3
-    .param p1    # Landroid/view/MotionEvent;
 
     const-string v0, "BrilliantRing_BrilliantRingView"
 
@@ -325,7 +318,6 @@
 
 .method protected onWindowVisibilityChanged(I)V
     .locals 0
-    .param p1    # I
 
     if-nez p1, :cond_0
 
@@ -389,8 +381,6 @@
 
 .method public sendDragSoundInfo(Landroid/media/SoundPool;I)V
     .locals 1
-    .param p1    # Landroid/media/SoundPool;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/sec/android/visualeffect/brilliantring/BrilliantRingView;->mRenderer:Lcom/sec/android/visualeffect/brilliantring/BrilliantRingRenderer;
 
@@ -401,7 +391,6 @@
 
 .method public setBackground(Landroid/graphics/Bitmap;)V
     .locals 2
-    .param p1    # Landroid/graphics/Bitmap;
 
     const-string v0, "BrilliantRing_BrilliantRingView"
 
@@ -418,7 +407,6 @@
 
 .method public setParentWindowFocusState(Z)V
     .locals 2
-    .param p1    # Z
 
     const-string v0, "BrilliantRing_BrilliantRingView"
 
@@ -435,7 +423,6 @@
 
 .method public setResourcesBitmap(Landroid/graphics/Bitmap;)V
     .locals 1
-    .param p1    # Landroid/graphics/Bitmap;
 
     iget-object v0, p0, Lcom/sec/android/visualeffect/brilliantring/BrilliantRingView;->mRenderer:Lcom/sec/android/visualeffect/brilliantring/BrilliantRingRenderer;
 
@@ -446,8 +433,6 @@
 
 .method public settingsForImageType(ILandroid/graphics/Bitmap;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/graphics/Bitmap;
 
     iget-object v0, p0, Lcom/sec/android/visualeffect/brilliantring/BrilliantRingView;->mRenderer:Lcom/sec/android/visualeffect/brilliantring/BrilliantRingRenderer;
 
@@ -479,8 +464,6 @@
 
 .method public showUnlockAffordance(JLandroid/graphics/Rect;)V
     .locals 1
-    .param p1    # J
-    .param p3    # Landroid/graphics/Rect;
 
     iget-object v0, p0, Lcom/sec/android/visualeffect/brilliantring/BrilliantRingView;->mRenderer:Lcom/sec/android/visualeffect/brilliantring/BrilliantRingRenderer;
 

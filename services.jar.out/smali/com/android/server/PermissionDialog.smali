@@ -34,11 +34,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Lcom/android/server/AppOpsService;IILjava/lang/String;)V
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/server/AppOpsService;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/BasePermissionDialog;-><init>(Landroid/content/Context;)V
 
@@ -210,7 +205,6 @@
 
 .method static synthetic access$000(Lcom/android/server/PermissionDialog;)I
     .locals 1
-    .param p0    # Lcom/android/server/PermissionDialog;
 
     iget v0, p0, Lcom/android/server/PermissionDialog;->mCode:I
 
@@ -219,7 +213,6 @@
 
 .method static synthetic access$100(Lcom/android/server/PermissionDialog;)I
     .locals 1
-    .param p0    # Lcom/android/server/PermissionDialog;
 
     iget v0, p0, Lcom/android/server/PermissionDialog;->mUid:I
 
@@ -228,7 +221,6 @@
 
 .method static synthetic access$200(Lcom/android/server/PermissionDialog;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/server/PermissionDialog;
 
     iget-object v0, p0, Lcom/android/server/PermissionDialog;->mPackageName:Ljava/lang/String;
 
@@ -237,7 +229,6 @@
 
 .method static synthetic access$300(Lcom/android/server/PermissionDialog;)Lcom/android/server/AppOpsService;
     .locals 1
-    .param p0    # Lcom/android/server/PermissionDialog;
 
     iget-object v0, p0, Lcom/android/server/PermissionDialog;->mService:Lcom/android/server/AppOpsService;
 
@@ -246,7 +237,6 @@
 
 .method private getAppName(Ljava/lang/String;)Ljava/lang/String;
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x0
 

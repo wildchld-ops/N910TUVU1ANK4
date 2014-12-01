@@ -1561,10 +1561,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;II)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -1641,11 +1637,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;III)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -1737,12 +1728,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;III)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -1763,7 +1748,6 @@
 
 .method static createFromParcel(Landroid/os/Parcel;)Landroid/print/PrintAttributes$MediaSize;
     .locals 7
-    .param p0    # Landroid/os/Parcel;
 
     new-instance v0, Landroid/print/PrintAttributes$MediaSize;
 
@@ -1798,7 +1782,6 @@
 
 .method public static getStandardMediaSizeById(Ljava/lang/String;)Landroid/print/PrintAttributes$MediaSize;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     sget-object v0, Landroid/print/PrintAttributes$MediaSize;->sIdToMediaSizeMap:Ljava/util/Map;
 
@@ -1907,7 +1890,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 5
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x1
 
@@ -1986,7 +1968,6 @@
 
 .method public getLabel(Landroid/content/pm/PackageManager;)Ljava/lang/String;
     .locals 5
-    .param p1    # Landroid/content/pm/PackageManager;
 
     iget-object v2, p0, Landroid/print/PrintAttributes$MediaSize;->mPackageName:Ljava/lang/String;
 
@@ -2238,7 +2219,6 @@
 
 .method writeToParcel(Landroid/os/Parcel;)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     iget-object v0, p0, Landroid/print/PrintAttributes$MediaSize;->mId:Ljava/lang/String;
 

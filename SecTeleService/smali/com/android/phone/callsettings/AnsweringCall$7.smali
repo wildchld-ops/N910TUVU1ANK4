@@ -48,7 +48,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0, v1}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+    invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     iget-object v0, p0, Lcom/android/phone/callsettings/AnsweringCall$7;->this$0:Lcom/android/phone/callsettings/AnsweringCall;
 
@@ -57,7 +57,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0, v1}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     return-void
 .end method

@@ -27,7 +27,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/Binder;Ljava/lang/String;Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 0
-    .param p2    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/os/Binder$1;->this$0:Landroid/os/Binder;
 

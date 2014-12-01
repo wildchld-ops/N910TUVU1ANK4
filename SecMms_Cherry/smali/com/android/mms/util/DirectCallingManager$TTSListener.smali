@@ -37,8 +37,6 @@
 
 .method synthetic constructor <init>(Lcom/android/mms/util/DirectCallingManager;Lcom/android/mms/util/DirectCallingManager$1;)V
     .locals 0
-    .param p1    # Lcom/android/mms/util/DirectCallingManager;
-    .param p2    # Lcom/android/mms/util/DirectCallingManager$1;
 
     invoke-direct {p0, p1}, Lcom/android/mms/util/DirectCallingManager$TTSListener;-><init>(Lcom/android/mms/util/DirectCallingManager;)V
 
@@ -49,7 +47,6 @@
 # virtual methods
 .method public onInit(I)V
     .locals 8
-    .param p1    # I
 
     const/4 v7, 0x1
 
@@ -285,7 +282,6 @@
 
 .method public onUtteranceCompleted(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "Mms/DirectCallingManager"
 

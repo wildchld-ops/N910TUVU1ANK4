@@ -41,7 +41,6 @@
 # direct methods
 .method public constructor <init>(Lcom/diotek/ime/framework/view/tracker/KeyDetector;)V
     .locals 1
-    .param p1    # Lcom/diotek/ime/framework/view/tracker/KeyDetector;
 
     const/4 v0, -0x1
 
@@ -58,7 +57,6 @@
 
 .method static synthetic access$000(Lcom/diotek/ime/framework/view/tracker/PointerTracker$KeyState;)I
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/view/tracker/PointerTracker$KeyState;
 
     iget v0, p0, Lcom/diotek/ime/framework/view/tracker/PointerTracker$KeyState;->mDownKey:I
 
@@ -67,8 +65,6 @@
 
 .method private onMoveKeyInternal(II)I
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iput p1, p0, Lcom/diotek/ime/framework/view/tracker/PointerTracker$KeyState;->mLastX:I
 
@@ -87,8 +83,6 @@
 
 .method private onMoveKeyInternalOnDownKey(II)I
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iput p1, p0, Lcom/diotek/ime/framework/view/tracker/PointerTracker$KeyState;->mLastX:I
 
@@ -183,9 +177,6 @@
 
 .method public onDownKey(IIJ)I
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
 
     iput p1, p0, Lcom/diotek/ime/framework/view/tracker/PointerTracker$KeyState;->mStartX:I
 
@@ -214,8 +205,6 @@
 
 .method public onMoveKey(II)I
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/diotek/ime/framework/view/tracker/PointerTracker$KeyState;->onMoveKeyInternal(II)I
 
@@ -226,9 +215,6 @@
 
 .method public onMoveToNewKey(III)I
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     invoke-static {}, Lcom/diotek/ime/framework/util/HiddenDrawingNumber;->addMoveKeyCount()V
 
@@ -310,8 +296,6 @@
 
 .method public onUpKey(II)I
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x1
 
@@ -326,8 +310,6 @@
 
 .method public setKeyIndexAndNearbyCodes(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/tracker/PointerTracker$KeyState;->mKeyDetector:Lcom/diotek/ime/framework/view/tracker/KeyDetector;
 

@@ -583,7 +583,7 @@
 
     move-result-object v20
 
-    invoke-virtual/range {v20 .. v20}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual/range {v20 .. v20}, Lcom/android/phone/PhoneGlobals;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v20
 
@@ -1067,7 +1067,7 @@
 
     move-result-object v20
 
-    invoke-virtual/range {v20 .. v20}, Landroid/content/ContextWrapper;->getBaseContext()Landroid/content/Context;
+    invoke-virtual/range {v20 .. v20}, Lcom/android/phone/PhoneGlobals;->getBaseContext()Landroid/content/Context;
 
     move-result-object v20
 

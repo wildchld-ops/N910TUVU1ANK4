@@ -22,9 +22,6 @@
 # direct methods
 .method public constructor <init>(I[BI)V
     .locals 3
-    .param p1    # I
-    .param p2    # [B
-    .param p3    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -70,7 +67,6 @@
 
 .method private isValidStatusCode(I)Z
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x1
 

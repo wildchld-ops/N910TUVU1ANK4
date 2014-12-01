@@ -159,7 +159,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     const/4 v2, 0x0
 
@@ -228,8 +227,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v2, 0x0
 
@@ -298,7 +295,6 @@
 
 .method private SlideShowFrameRunnable(Lcom/android/mms/model/SlideshowModel;)V
     .locals 3
-    .param p1    # Lcom/android/mms/model/SlideshowModel;
 
     const-string v1, "Mms/SlideshowFrame"
 
@@ -321,7 +317,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/ui/SlideshowFrame;)Lcom/android/mms/ui/MessageItem;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SlideshowFrame;
 
     iget-object v0, p0, Lcom/android/mms/ui/SlideshowFrame;->mMsgItem:Lcom/android/mms/ui/MessageItem;
 
@@ -330,7 +325,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/ui/SlideshowFrame;)Lcom/android/mms/ui/ViewTitleHeader;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SlideshowFrame;
 
     iget-object v0, p0, Lcom/android/mms/ui/SlideshowFrame;->mViewTitleHeader:Lcom/android/mms/ui/ViewTitleHeader;
 
@@ -339,7 +333,6 @@
 
 .method static synthetic access$1000(Lcom/android/mms/ui/SlideshowFrame;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SlideshowFrame;
 
     iget-boolean v0, p0, Lcom/android/mms/ui/SlideshowFrame;->mFirstLaunched:Z
 
@@ -348,8 +341,6 @@
 
 .method static synthetic access$1002(Lcom/android/mms/ui/SlideshowFrame;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/ui/SlideshowFrame;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/SlideshowFrame;->mFirstLaunched:Z
 
@@ -358,7 +349,6 @@
 
 .method static synthetic access$1100(Lcom/android/mms/ui/SlideshowFrame;)Ljava/lang/Runnable;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SlideshowFrame;
 
     iget-object v0, p0, Lcom/android/mms/ui/SlideshowFrame;->mSmilPlayerStart:Ljava/lang/Runnable;
 
@@ -367,7 +357,6 @@
 
 .method static synthetic access$1200(Lcom/android/mms/ui/SlideshowFrame;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SlideshowFrame;
 
     iget-object v0, p0, Lcom/android/mms/ui/SlideshowFrame;->mHandler:Landroid/os/Handler;
 
@@ -376,7 +365,6 @@
 
 .method static synthetic access$1300(Lcom/android/mms/ui/SlideshowFrame;)Landroid/app/Activity;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SlideshowFrame;
 
     iget-object v0, p0, Lcom/android/mms/ui/SlideshowFrame;->mActivity:Landroid/app/Activity;
 
@@ -385,7 +373,6 @@
 
 .method static synthetic access$1400(Lcom/android/mms/ui/SlideshowFrame;)Lcom/android/mms/model/SlideshowModel;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SlideshowFrame;
 
     iget-object v0, p0, Lcom/android/mms/ui/SlideshowFrame;->model:Lcom/android/mms/model/SlideshowModel;
 
@@ -394,7 +381,6 @@
 
 .method static synthetic access$1500(Lcom/android/mms/ui/SlideshowFrame;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/SlideshowFrame;
 
     invoke-direct {p0}, Lcom/android/mms/ui/SlideshowFrame;->releaseWakeLock()V
 
@@ -403,7 +389,6 @@
 
 .method static synthetic access$1600(Lcom/android/mms/ui/SlideshowFrame;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SlideshowFrame;
 
     iget-boolean v0, p0, Lcom/android/mms/ui/SlideshowFrame;->isOnCall:Z
 
@@ -412,8 +397,6 @@
 
 .method static synthetic access$1602(Lcom/android/mms/ui/SlideshowFrame;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/ui/SlideshowFrame;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/SlideshowFrame;->isOnCall:Z
 
@@ -422,7 +405,6 @@
 
 .method static synthetic access$1700(Lcom/android/mms/ui/SlideshowFrame;)Landroid/media/AudioManager;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SlideshowFrame;
 
     iget-object v0, p0, Lcom/android/mms/ui/SlideshowFrame;->mAudioManager:Landroid/media/AudioManager;
 
@@ -431,7 +413,6 @@
 
 .method static synthetic access$1800(Lcom/android/mms/ui/SlideshowFrame;)I
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SlideshowFrame;
 
     iget v0, p0, Lcom/android/mms/ui/SlideshowFrame;->mVolumeLevel:I
 
@@ -440,8 +421,6 @@
 
 .method static synthetic access$1802(Lcom/android/mms/ui/SlideshowFrame;I)I
     .locals 0
-    .param p0    # Lcom/android/mms/ui/SlideshowFrame;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/mms/ui/SlideshowFrame;->mVolumeLevel:I
 
@@ -450,7 +429,6 @@
 
 .method static synthetic access$1900(Lcom/android/mms/ui/SlideshowFrame;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SlideshowFrame;
 
     iget-boolean v0, p0, Lcom/android/mms/ui/SlideshowFrame;->mIsPreview:Z
 
@@ -459,8 +437,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/ui/SlideshowFrame;Lcom/android/mms/model/SlideshowModel;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/SlideshowFrame;
-    .param p1    # Lcom/android/mms/model/SlideshowModel;
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/SlideshowFrame;->SlideShowFrameRunnable(Lcom/android/mms/model/SlideshowModel;)V
 
@@ -469,7 +445,6 @@
 
 .method static synthetic access$2000(Lcom/android/mms/ui/SlideshowFrame;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SlideshowFrame;
 
     iget-object v0, p0, Lcom/android/mms/ui/SlideshowFrame;->mContext:Landroid/content/Context;
 
@@ -478,7 +453,6 @@
 
 .method static synthetic access$300(Lcom/android/mms/ui/SlideshowFrame;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/SlideshowFrame;
 
     invoke-direct {p0}, Lcom/android/mms/ui/SlideshowFrame;->accquireWakeLock()V
 
@@ -487,7 +461,6 @@
 
 .method static synthetic access$400(Lcom/android/mms/ui/SlideshowFrame;)Lcom/android/mms/dom/smil/SmilPlayer;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SlideshowFrame;
 
     iget-object v0, p0, Lcom/android/mms/ui/SlideshowFrame;->mSmilPlayer:Lcom/android/mms/dom/smil/SmilPlayer;
 
@@ -496,8 +469,6 @@
 
 .method static synthetic access$402(Lcom/android/mms/ui/SlideshowFrame;Lcom/android/mms/dom/smil/SmilPlayer;)Lcom/android/mms/dom/smil/SmilPlayer;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/SlideshowFrame;
-    .param p1    # Lcom/android/mms/dom/smil/SmilPlayer;
 
     iput-object p1, p0, Lcom/android/mms/ui/SlideshowFrame;->mSmilPlayer:Lcom/android/mms/dom/smil/SmilPlayer;
 
@@ -506,7 +477,6 @@
 
 .method static synthetic access$500(Lcom/android/mms/ui/SlideshowFrame;)Lcom/android/mms/ui/SlideshowPresenter;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SlideshowFrame;
 
     iget-object v0, p0, Lcom/android/mms/ui/SlideshowFrame;->mPresenter:Lcom/android/mms/ui/SlideshowPresenter;
 
@@ -515,7 +485,6 @@
 
 .method static synthetic access$600(Lcom/android/mms/ui/SlideshowFrame;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/SlideshowFrame;
 
     invoke-direct {p0}, Lcom/android/mms/ui/SlideshowFrame;->initMediaController()V
 
@@ -524,7 +493,6 @@
 
 .method static synthetic access$700(Lcom/android/mms/ui/SlideshowFrame;)Lcom/android/mms/ui/MmsPlayerController;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SlideshowFrame;
 
     iget-object v0, p0, Lcom/android/mms/ui/SlideshowFrame;->mMediaController:Lcom/android/mms/ui/MmsPlayerController;
 
@@ -533,7 +501,6 @@
 
 .method static synthetic access$800(Lcom/android/mms/ui/SlideshowFrame;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/SlideshowFrame;
 
     invoke-direct {p0}, Lcom/android/mms/ui/SlideshowFrame;->updateControlButtons()V
 
@@ -542,7 +509,6 @@
 
 .method static synthetic access$900(Lcom/android/mms/ui/SlideshowFrame;)Lorg/w3c/dom/smil/SMILDocument;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SlideshowFrame;
 
     iget-object v0, p0, Lcom/android/mms/ui/SlideshowFrame;->mSmilDoc:Lorg/w3c/dom/smil/SMILDocument;
 
@@ -551,8 +517,6 @@
 
 .method static synthetic access$902(Lcom/android/mms/ui/SlideshowFrame;Lorg/w3c/dom/smil/SMILDocument;)Lorg/w3c/dom/smil/SMILDocument;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/SlideshowFrame;
-    .param p1    # Lorg/w3c/dom/smil/SMILDocument;
 
     iput-object p1, p0, Lcom/android/mms/ui/SlideshowFrame;->mSmilDoc:Lorg/w3c/dom/smil/SMILDocument;
 
@@ -590,9 +554,6 @@
 
 .method private static confirmDeleteDialog(Landroid/content/Context;Lcom/android/mms/ui/SlideshowFrame$DeleteMessageListener;Z)V
     .locals 7
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/mms/ui/SlideshowFrame$DeleteMessageListener;
-    .param p2    # Z
 
     const/4 v6, 0x0
 
@@ -763,9 +724,6 @@
 
 .method private getCachedMessageItem(Landroid/net/Uri;JLjava/lang/String;)Lcom/android/mms/ui/MessageItem;
     .locals 11
-    .param p1    # Landroid/net/Uri;
-    .param p2    # J
-    .param p4    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/mms/ui/SlideshowFrame;->mActivity:Landroid/app/Activity;
 
@@ -943,7 +901,6 @@
 
 .method private getHasDRMMediaNRightInSlide(Lcom/android/mms/model/SlideshowModel;)Z
     .locals 8
-    .param p1    # Lcom/android/mms/model/SlideshowModel;
 
     const/4 v0, 0x0
 
@@ -1102,7 +1059,6 @@
 
 .method private isMessageExist(J)Z
     .locals 2
-    .param p1    # J
 
     sget-object v1, Landroid/provider/Telephony$Mms;->CONTENT_URI:Landroid/net/Uri;
 
@@ -1119,7 +1075,6 @@
 
 .method private isMessageExist(Landroid/net/Uri;)Z
     .locals 5
-    .param p1    # Landroid/net/Uri;
 
     const/4 v1, 0x0
 
@@ -1167,7 +1122,6 @@
 
 .method private makeOutgoingCall(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -1221,7 +1175,6 @@
 
 .method private declared-synchronized setIntent(Landroid/content/Intent;)V
     .locals 2
-    .param p1    # Landroid/content/Intent;
 
     monitor-enter p0
 
@@ -1250,8 +1203,6 @@
 
 .method private showDrmGetRightsPopup(Lcom/android/mms/model/SlideshowModel;Ljava/lang/Runnable;)V
     .locals 12
-    .param p1    # Lcom/android/mms/model/SlideshowModel;
-    .param p2    # Ljava/lang/Runnable;
 
     const/4 v3, 0x0
 
@@ -1373,7 +1324,6 @@
 
 .method private startActivity(Landroid/content/Intent;)V
     .locals 3
-    .param p1    # Landroid/content/Intent;
 
     const-string v0, "Mms/SlideshowFrame"
 
@@ -1456,10 +1406,6 @@
 
 .method private touchListener(IIII)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/16 v5, 0x14
 
@@ -1728,7 +1674,6 @@
 
 .method public dispatchTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 6
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v1, 0x1
 
@@ -1849,7 +1794,6 @@
 
 .method public handleEvent(Lorg/w3c/dom/events/Event;)V
     .locals 3
-    .param p1    # Lorg/w3c/dom/events/Event;
 
     move-object v0, p1
 
@@ -1866,7 +1810,6 @@
 
 .method public declared-synchronized markAsRead(Ljava/lang/Runnable;)V
     .locals 8
-    .param p1    # Ljava/lang/Runnable;
 
     monitor-enter p0
 
@@ -1966,9 +1909,6 @@
 
 .method protected onActivityResult(IILandroid/content/Intent;)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const-string v2, "Mms/SlideshowFrame"
 
@@ -2047,7 +1987,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 3
-    .param p1    # Landroid/content/res/Configuration;
 
     iget v0, p1, Landroid/content/res/Configuration;->orientation:I
 
@@ -2128,8 +2067,6 @@
 
 .method public onCreate(Landroid/os/Bundle;Landroid/content/Intent;)V
     .locals 22
-    .param p1    # Landroid/os/Bundle;
-    .param p2    # Landroid/content/Intent;
 
     const-string v2, "Mms/SlideshowFrame"
 
@@ -3066,8 +3003,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const-string v0, "Mms/SlideshowFrame"
 
@@ -3174,8 +3109,6 @@
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v2, 0x0
 
@@ -3259,7 +3192,6 @@
 
 .method public onNewIntent(Landroid/content/Intent;)V
     .locals 21
-    .param p1    # Landroid/content/Intent;
 
     const-string v2, "Mms/SlideshowFrame"
 
@@ -3858,7 +3790,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 8
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v1, 0x0
 
@@ -4093,7 +4024,6 @@
 
 .method public onOptionsMenuClosed(Landroid/view/Menu;)V
     .locals 1
-    .param p1    # Landroid/view/Menu;
 
     iget-object v0, p0, Lcom/android/mms/ui/SlideshowFrame;->mMediaController:Lcom/android/mms/ui/MmsPlayerController;
 
@@ -4166,7 +4096,6 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)Z
     .locals 3
-    .param p1    # Landroid/view/Menu;
 
     const/4 v2, 0x0
 
@@ -4534,7 +4463,6 @@
 
 .method public onWindowFocusChanged(Z)V
     .locals 4
-    .param p1    # Z
 
     const-string v0, "Mms/SlideshowFrame"
 
@@ -4588,7 +4516,6 @@
 
 .method public setActivity(Landroid/app/Activity;)V
     .locals 2
-    .param p1    # Landroid/app/Activity;
 
     const-string v0, "Mms/SlideshowFrame"
 
@@ -4603,7 +4530,6 @@
 
 .method public setOnCloseListener(Lcom/android/mms/ui/OnEventListener;)V
     .locals 0
-    .param p1    # Lcom/android/mms/ui/OnEventListener;
 
     iput-object p1, p0, Lcom/android/mms/ui/SlideshowFrame;->mOnCloseListener:Lcom/android/mms/ui/OnEventListener;
 

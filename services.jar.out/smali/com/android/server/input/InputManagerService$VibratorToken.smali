@@ -32,9 +32,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/input/InputManagerService;ILandroid/os/IBinder;I)V
     .locals 0
-    .param p2    # I
-    .param p3    # Landroid/os/IBinder;
-    .param p4    # I
 
     iput-object p1, p0, Lcom/android/server/input/InputManagerService$VibratorToken;->this$0:Lcom/android/server/input/InputManagerService;
 

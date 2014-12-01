@@ -43,7 +43,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/Display;)Landroid/content/res/Configuration;
     .locals 1
-    .param p0    # Lcom/android/settings/Display;
 
     iget-object v0, p0, Lcom/android/settings/Display;->mCurConfig:Landroid/content/res/Configuration;
 
@@ -52,7 +51,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/Display;)V
     .locals 0
-    .param p0    # Lcom/android/settings/Display;
 
     invoke-direct {p0}, Lcom/android/settings/Display;->updateFontScale()V
 
@@ -97,7 +95,6 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     :try_start_0
     invoke-static {}, Landroid/app/ActivityManagerNative;->getDefault()Landroid/app/IActivityManager;
@@ -123,7 +120,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 9
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v8, 0x2
 

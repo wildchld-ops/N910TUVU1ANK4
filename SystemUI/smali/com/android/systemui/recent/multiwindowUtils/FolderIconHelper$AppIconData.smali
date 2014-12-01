@@ -41,7 +41,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/res/Resources;)V
     .locals 6
-    .param p1    # Landroid/content/res/Resources;
 
     const/4 v5, 0x0
 
@@ -152,7 +151,6 @@
 
 .method static synthetic access$000(Lcom/android/systemui/recent/multiwindowUtils/FolderIconHelper$AppIconData;)Landroid/graphics/Rect;
     .locals 1
-    .param p0    # Lcom/android/systemui/recent/multiwindowUtils/FolderIconHelper$AppIconData;
 
     iget-object v0, p0, Lcom/android/systemui/recent/multiwindowUtils/FolderIconHelper$AppIconData;->FOLDER_ICON_RECT:Landroid/graphics/Rect;
 
@@ -161,8 +159,6 @@
 
 .method private getIconCordFromRes(Landroid/content/res/Resources;I)F
     .locals 2
-    .param p1    # Landroid/content/res/Resources;
-    .param p2    # I
 
     invoke-virtual {p1, p2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -179,7 +175,6 @@
 
 .method private resolveValue(F)F
     .locals 4
-    .param p1    # F
 
     const/4 v1, 0x1
 
@@ -297,7 +292,6 @@
 # virtual methods
 .method public getAppIconPositions(Landroid/content/res/Resources;)[[[F
     .locals 65
-    .param p1    # Landroid/content/res/Resources;
 
     const v60, 0x7f0d00f8
 

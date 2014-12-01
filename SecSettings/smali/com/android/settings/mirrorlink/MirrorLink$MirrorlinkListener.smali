@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Lcom/android/settings/mirrorlink/MirrorLink;Lcom/android/settings/mirrorlink/MirrorLink$1;)V
     .locals 0
-    .param p1    # Lcom/android/settings/mirrorlink/MirrorLink;
-    .param p2    # Lcom/android/settings/mirrorlink/MirrorLink$1;
 
     invoke-direct {p0, p1}, Lcom/android/settings/mirrorlink/MirrorLink$MirrorlinkListener;-><init>(Lcom/android/settings/mirrorlink/MirrorLink;)V
 
@@ -43,8 +41,6 @@
 # virtual methods
 .method public notifyRevocationCheckResult(Ljava/lang/String;I)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const-string v0, "MirrorLink"
 

@@ -186,7 +186,6 @@
 
 .method private execute(Ljava/lang/String;)I
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/DrsService;->transaction(Ljava/lang/String;)Ljava/lang/String;
 
@@ -231,8 +230,6 @@
 
 .method private readBytes([BI)Z
     .locals 6
-    .param p1    # [B
-    .param p2    # I
 
     const/4 v3, 0x0
 
@@ -350,7 +347,6 @@
 
 .method private declared-synchronized transaction(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -431,7 +427,6 @@
 
 .method private writeCommand(Ljava/lang/String;)Z
     .locals 9
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x1
 
@@ -515,7 +510,6 @@
 # virtual methods
 .method public relabelAppDir(Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/16 v4, 0x2c
 

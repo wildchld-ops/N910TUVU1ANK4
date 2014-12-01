@@ -37,10 +37,6 @@
 # direct methods
 .method public constructor <init>(Ljava/io/File;Ljava/lang/String;JJ)V
     .locals 14
-    .param p1    # Ljava/io/File;
-    .param p2    # Ljava/lang/String;
-    .param p3    # J
-    .param p5    # J
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -199,7 +195,6 @@
 
 .method private getActiveName(J)Ljava/lang/String;
     .locals 11
-    .param p1    # J
 
     const/4 v6, 0x0
 
@@ -289,7 +284,6 @@
 
 .method private getListDirectory(Ljava/io/File;)[Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/io/File;
 
     const/4 v0, 0x0
 
@@ -327,8 +321,6 @@
 
 .method private static readFile(Ljava/io/File;Lcom/android/internal/util/FileRotator$Reader;)V
     .locals 3
-    .param p0    # Ljava/io/File;
-    .param p1    # Lcom/android/internal/util/FileRotator$Reader;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -362,7 +354,6 @@
 
 .method private static rethrowAsIoException(Ljava/lang/Throwable;)Ljava/io/IOException;
     .locals 2
-    .param p0    # Ljava/lang/Throwable;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -391,8 +382,6 @@
 
 .method private rewriteSingle(Lcom/android/internal/util/FileRotator$Rewriter;Ljava/lang/String;)V
     .locals 6
-    .param p1    # Lcom/android/internal/util/FileRotator$Rewriter;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -525,8 +514,6 @@
 
 .method private static writeFile(Ljava/io/File;Lcom/android/internal/util/FileRotator$Writer;)V
     .locals 3
-    .param p0    # Ljava/io/File;
-    .param p1    # Lcom/android/internal/util/FileRotator$Writer;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -568,9 +555,6 @@
 # virtual methods
 .method public combineActive(Lcom/android/internal/util/FileRotator$Reader;Lcom/android/internal/util/FileRotator$Writer;J)V
     .locals 1
-    .param p1    # Lcom/android/internal/util/FileRotator$Reader;
-    .param p2    # Lcom/android/internal/util/FileRotator$Writer;
-    .param p3    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -642,7 +626,6 @@
 
 .method public dumpAll(Ljava/io/OutputStream;)V
     .locals 11
-    .param p1    # Ljava/io/OutputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -742,7 +725,6 @@
 
 .method public maybeRotate(J)V
     .locals 14
-    .param p1    # J
 
     iget-wide v12, p0, Lcom/android/internal/util/FileRotator;->mRotateAgeMillis:J
 
@@ -847,9 +829,6 @@
 
 .method public readMatching(Lcom/android/internal/util/FileRotator$Reader;JJ)V
     .locals 9
-    .param p1    # Lcom/android/internal/util/FileRotator$Reader;
-    .param p2    # J
-    .param p4    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -922,8 +901,6 @@
 
 .method public rewriteActive(Lcom/android/internal/util/FileRotator$Rewriter;J)V
     .locals 1
-    .param p1    # Lcom/android/internal/util/FileRotator$Rewriter;
-    .param p2    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -941,7 +918,6 @@
 
 .method public rewriteAll(Lcom/android/internal/util/FileRotator$Rewriter;)V
     .locals 7
-    .param p1    # Lcom/android/internal/util/FileRotator$Rewriter;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

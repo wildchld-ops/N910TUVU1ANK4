@@ -50,7 +50,6 @@
 
 .method private constructor <init>(Landroid/os/Parcel;)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
 
     const/4 v0, 0x1
 
@@ -111,8 +110,6 @@
 
 .method synthetic constructor <init>(Landroid/os/Parcel;Landroid/accounts/AuthenticatorDescription$1;)V
     .locals 0
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # Landroid/accounts/AuthenticatorDescription$1;
 
     invoke-direct {p0, p1}, Landroid/accounts/AuthenticatorDescription;-><init>(Landroid/os/Parcel;)V
 
@@ -121,7 +118,6 @@
 
 .method private constructor <init>(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -148,12 +144,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;IIII)V
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     const/4 v7, 0x0
 
@@ -178,13 +168,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;IIIIZ)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -229,7 +212,6 @@
 
 .method public static newKey(Ljava/lang/String;)Landroid/accounts/AuthenticatorDescription;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     if-nez p0, :cond_0
 
@@ -261,7 +243,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 3
-    .param p1    # Ljava/lang/Object;
 
     if-ne p1, p0, :cond_0
 
@@ -341,8 +322,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v0, p0, Landroid/accounts/AuthenticatorDescription;->type:Ljava/lang/String;
 

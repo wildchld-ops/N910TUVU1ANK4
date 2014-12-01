@@ -25,7 +25,6 @@
 # direct methods
 .method public constructor <init>(Landroid/telephony/TelephonyManager;Landroid/os/Bundle;)V
     .locals 1
-    .param p2    # Landroid/os/Bundle;
 
     iput-object p1, p0, Landroid/telephony/TelephonyManager$GbaBootstrappingResponse;->this$0:Landroid/telephony/TelephonyManager;
 

@@ -83,8 +83,6 @@
 
 .method synthetic constructor <init>(Lcom/android/server/power/DisplayPowerState;Lcom/android/server/power/DisplayPowerState$1;)V
     .locals 0
-    .param p1    # Lcom/android/server/power/DisplayPowerState;
-    .param p2    # Lcom/android/server/power/DisplayPowerState$1;
 
     invoke-direct {p0, p1}, Lcom/android/server/power/DisplayPowerState$PhotonicModulator;-><init>(Lcom/android/server/power/DisplayPowerState;)V
 
@@ -93,7 +91,6 @@
 
 .method static synthetic access$1300(Lcom/android/server/power/DisplayPowerState$PhotonicModulator;)Lcom/android/server/power/PowerManagerService$TimeMeasurement;
     .locals 1
-    .param p0    # Lcom/android/server/power/DisplayPowerState$PhotonicModulator;
 
     iget-object v0, p0, Lcom/android/server/power/DisplayPowerState$PhotonicModulator;->mPhotonicModulatorTimeMeasurement:Lcom/android/server/power/PowerManagerService$TimeMeasurement;
 
@@ -102,7 +99,6 @@
 
 .method static synthetic access$1400(Lcom/android/server/power/DisplayPowerState$PhotonicModulator;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Lcom/android/server/power/DisplayPowerState$PhotonicModulator;
 
     iget-object v0, p0, Lcom/android/server/power/DisplayPowerState$PhotonicModulator;->mLock:Ljava/lang/Object;
 
@@ -111,7 +107,6 @@
 
 .method static synthetic access$1500(Lcom/android/server/power/DisplayPowerState$PhotonicModulator;)Z
     .locals 1
-    .param p0    # Lcom/android/server/power/DisplayPowerState$PhotonicModulator;
 
     iget-boolean v0, p0, Lcom/android/server/power/DisplayPowerState$PhotonicModulator;->mPendingOn:Z
 
@@ -120,7 +115,6 @@
 
 .method static synthetic access$1600(Lcom/android/server/power/DisplayPowerState$PhotonicModulator;)Z
     .locals 1
-    .param p0    # Lcom/android/server/power/DisplayPowerState$PhotonicModulator;
 
     iget-boolean v0, p0, Lcom/android/server/power/DisplayPowerState$PhotonicModulator;->mActualOn:Z
 
@@ -129,8 +123,6 @@
 
 .method static synthetic access$1602(Lcom/android/server/power/DisplayPowerState$PhotonicModulator;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/power/DisplayPowerState$PhotonicModulator;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/power/DisplayPowerState$PhotonicModulator;->mActualOn:Z
 
@@ -139,7 +131,6 @@
 
 .method static synthetic access$1700(Lcom/android/server/power/DisplayPowerState$PhotonicModulator;)I
     .locals 1
-    .param p0    # Lcom/android/server/power/DisplayPowerState$PhotonicModulator;
 
     iget v0, p0, Lcom/android/server/power/DisplayPowerState$PhotonicModulator;->mPendingBacklight:I
 
@@ -148,7 +139,6 @@
 
 .method static synthetic access$1800(Lcom/android/server/power/DisplayPowerState$PhotonicModulator;)I
     .locals 1
-    .param p0    # Lcom/android/server/power/DisplayPowerState$PhotonicModulator;
 
     iget v0, p0, Lcom/android/server/power/DisplayPowerState$PhotonicModulator;->mActualBacklight:I
 
@@ -157,8 +147,6 @@
 
 .method static synthetic access$1802(Lcom/android/server/power/DisplayPowerState$PhotonicModulator;I)I
     .locals 0
-    .param p0    # Lcom/android/server/power/DisplayPowerState$PhotonicModulator;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/power/DisplayPowerState$PhotonicModulator;->mActualBacklight:I
 
@@ -167,8 +155,6 @@
 
 .method static synthetic access$1902(Lcom/android/server/power/DisplayPowerState$PhotonicModulator;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/power/DisplayPowerState$PhotonicModulator;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/power/DisplayPowerState$PhotonicModulator;->mChangeInProgress:Z
 
@@ -179,7 +165,6 @@
 # virtual methods
 .method public dump(Ljava/io/PrintWriter;)V
     .locals 2
-    .param p1    # Ljava/io/PrintWriter;
 
     invoke-virtual {p1}, Ljava/io/PrintWriter;->println()V
 
@@ -302,8 +287,6 @@
 
 .method public setState(ZI)Z
     .locals 5
-    .param p1    # Z
-    .param p2    # I
 
     const/4 v0, 0x1
 

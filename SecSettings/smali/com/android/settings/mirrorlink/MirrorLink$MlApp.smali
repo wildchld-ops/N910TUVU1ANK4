@@ -31,7 +31,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -92,7 +91,6 @@
 
 .method public setEntityName(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/settings/mirrorlink/MirrorLink$MlApp;->mEntityName:Ljava/lang/String;
 
@@ -101,7 +99,6 @@
 
 .method public setNonRestricted(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/settings/mirrorlink/MirrorLink$MlApp;->mNonRestricted:Ljava/lang/String;
 
@@ -110,7 +107,6 @@
 
 .method public setRestricted(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/settings/mirrorlink/MirrorLink$MlApp;->mRestricted:Ljava/lang/String;
 
@@ -119,7 +115,6 @@
 
 .method public setStatus(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/settings/mirrorlink/MirrorLink$MlApp;->mStatus:Ljava/lang/String;
 
@@ -128,7 +123,6 @@
 
 .method public setValidDate(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/settings/mirrorlink/MirrorLink$MlApp;->mValidDate:Ljava/lang/String;
 

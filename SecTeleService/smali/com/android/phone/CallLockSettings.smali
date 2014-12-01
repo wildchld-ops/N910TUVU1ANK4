@@ -170,7 +170,7 @@
 
     iget-object v2, p0, Lcom/android/phone/CallLockSettings;->mPin:Ljava/lang/String;
 
-    invoke-virtual {v1, v2}, Landroid/preference/EditTextPreference;->setText(Ljava/lang/String;)V
+    invoke-virtual {v1, v2}, Lcom/android/phone/EditPinPreference;->setText(Ljava/lang/String;)V
 
     const-string v0, ""
 
@@ -214,7 +214,7 @@
     :cond_0
     iget-object v1, p0, Lcom/android/phone/CallLockSettings;->mPinDialog:Lcom/android/phone/EditPinPreference;
 
-    invoke-virtual {v1, v0}, Landroid/preference/DialogPreference;->setDialogMessage(Ljava/lang/CharSequence;)V
+    invoke-virtual {v1, v0}, Lcom/android/phone/EditPinPreference;->setDialogMessage(Ljava/lang/CharSequence;)V
 
     return-void
 
@@ -223,7 +223,7 @@
 
     const-string v2, ""
 
-    invoke-virtual {v1, v2}, Landroid/preference/EditTextPreference;->setText(Ljava/lang/String;)V
+    invoke-virtual {v1, v2}, Lcom/android/phone/EditPinPreference;->setText(Ljava/lang/String;)V
 
     iget-object v1, p0, Lcom/android/phone/CallLockSettings;->mRes:Landroid/content/res/Resources;
 
@@ -239,7 +239,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v1, v2}, Landroid/preference/DialogPreference;->setDialogTitle(Ljava/lang/CharSequence;)V
+    invoke-virtual {v1, v2}, Lcom/android/phone/EditPinPreference;->setDialogTitle(Ljava/lang/CharSequence;)V
 
     goto :goto_0
 
@@ -258,7 +258,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v1, v2}, Landroid/preference/DialogPreference;->setDialogTitle(Ljava/lang/CharSequence;)V
+    invoke-virtual {v1, v2}, Lcom/android/phone/EditPinPreference;->setDialogTitle(Ljava/lang/CharSequence;)V
 
     goto :goto_0
 
@@ -277,7 +277,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v1, v2}, Landroid/preference/DialogPreference;->setDialogTitle(Ljava/lang/CharSequence;)V
+    invoke-virtual {v1, v2}, Lcom/android/phone/EditPinPreference;->setDialogTitle(Ljava/lang/CharSequence;)V
 
     goto :goto_0
 
@@ -296,7 +296,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v1, v2}, Landroid/preference/DialogPreference;->setDialogTitle(Ljava/lang/CharSequence;)V
+    invoke-virtual {v1, v2}, Lcom/android/phone/EditPinPreference;->setDialogTitle(Ljava/lang/CharSequence;)V
 
     goto :goto_0
 
@@ -343,7 +343,7 @@
 
     invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onCreate(Landroid/os/Bundle;)V
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/phone/CallLockSettings;->getIntent()Landroid/content/Intent;
 
     move-result-object v1
 
@@ -355,7 +355,7 @@
 
     iput-boolean v2, p0, Lcom/android/phone/CallLockSettings;->mOutBarring:Z
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
+    invoke-virtual {p0}, Lcom/android/phone/CallLockSettings;->getWindow()Landroid/view/Window;
 
     move-result-object v2
 
@@ -365,11 +365,11 @@
 
     const v2, 0x7f060009
 
-    invoke-virtual {p0, v2}, Landroid/preference/PreferenceActivity;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v2}, Lcom/android/phone/CallLockSettings;->addPreferencesFromResource(I)V
 
     const-string v2, "call_lock_dialog"
 
-    invoke-virtual {p0, v2}, Landroid/preference/PreferenceActivity;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v2}, Lcom/android/phone/CallLockSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v2
 
@@ -414,7 +414,7 @@
     :cond_0
     const-string v2, "keyguard"
 
-    invoke-virtual {p0, v2}, Landroid/app/Activity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v2}, Lcom/android/phone/CallLockSettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v2
 
@@ -465,19 +465,19 @@
 
     invoke-virtual {v2, p0}, Lcom/android/phone/EditPinPreference;->setOnPinEnteredListener(Lcom/android/phone/EditPinPreference$OnPinEnteredListener;)V
 
-    invoke-virtual {p0}, Landroid/preference/PreferenceActivity;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/phone/CallLockSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v2
 
-    invoke-virtual {v2, v5}, Landroid/preference/Preference;->setPersistent(Z)V
+    invoke-virtual {v2, v5}, Landroid/preference/PreferenceScreen;->setPersistent(Z)V
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/CallLockSettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v2
 
     iput-object v2, p0, Lcom/android/phone/CallLockSettings;->mRes:Landroid/content/res/Resources;
 
-    invoke-virtual {p0, v6}, Landroid/app/Activity;->setResult(I)V
+    invoke-virtual {p0, v6}, Lcom/android/phone/CallLockSettings;->setResult(I)V
 
     return-void
 
@@ -547,7 +547,7 @@
 
     invoke-virtual {v1, v2, v3, v4}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
 
-    invoke-super {p0}, Landroid/app/Activity;->onPause()V
+    invoke-super {p0}, Landroid/preference/PreferenceActivity;->onPause()V
 
     iget-boolean v1, p0, Lcom/android/phone/CallLockSettings;->mOutBarring:Z
 
@@ -565,7 +565,7 @@
 
     invoke-virtual {v1, v5}, Lcom/android/phone/CallController;->setBarringPopup(Z)V
 
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/CallLockSettings;->finish()V
 
     :cond_0
     return-void
@@ -605,15 +605,15 @@
     :cond_0
     const/16 v5, 0x65
 
-    invoke-virtual {p0, v5}, Landroid/app/Activity;->setResult(I)V
+    invoke-virtual {p0, v5}, Lcom/android/phone/CallLockSettings;->setResult(I)V
 
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/CallLockSettings;->finish()V
 
     :goto_0
     return-void
 
     :cond_1
-    invoke-virtual {p1}, Landroid/preference/EditTextPreference;->getText()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/android/phone/EditPinPreference;->getText()Ljava/lang/String;
 
     move-result-object v5
 
@@ -661,11 +661,11 @@
 
     const/16 v5, 0x64
 
-    invoke-virtual {p0, v5}, Landroid/app/Activity;->setResult(I)V
+    invoke-virtual {p0, v5}, Lcom/android/phone/CallLockSettings;->setResult(I)V
 
     const-string v5, ""
 
-    invoke-virtual {p1, v5}, Landroid/preference/EditTextPreference;->setText(Ljava/lang/String;)V
+    invoke-virtual {p1, v5}, Lcom/android/phone/EditPinPreference;->setText(Ljava/lang/String;)V
 
     invoke-static {}, Lcom/android/phone/PhoneGlobals;->getInstance()Lcom/android/phone/PhoneGlobals;
 
@@ -737,11 +737,11 @@
 
     move-result-object v5
 
-    invoke-virtual {v5, v3}, Landroid/content/ContextWrapper;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {v5, v3}, Lcom/android/phone/PhoneGlobals;->startActivity(Landroid/content/Intent;)V
 
     :cond_3
     :goto_1
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/CallLockSettings;->finish()V
 
     goto/16 :goto_0
 
@@ -1000,7 +1000,7 @@
 .method protected onResume()V
     .locals 3
 
-    invoke-super {p0}, Landroid/app/Activity;->onResume()V
+    invoke-super {p0}, Landroid/preference/PreferenceActivity;->onResume()V
 
     invoke-static {}, Lcom/android/phone/PhoneGlobals;->getInstance()Lcom/android/phone/PhoneGlobals;
 
@@ -1066,7 +1066,7 @@
 
     iget-object v1, p0, Lcom/android/phone/CallLockSettings;->mPinDialog:Lcom/android/phone/EditPinPreference;
 
-    invoke-virtual {v1}, Landroid/preference/EditTextPreference;->getEditText()Landroid/widget/EditText;
+    invoke-virtual {v1}, Lcom/android/phone/EditPinPreference;->getEditText()Landroid/widget/EditText;
 
     move-result-object v1
 

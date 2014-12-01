@@ -23,8 +23,6 @@
 
 .method private removePreferenceByKey(Landroid/preference/PreferenceScreen;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Landroid/preference/PreferenceGroup;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
@@ -42,7 +40,6 @@
 # virtual methods
 .method public getEntryByValue(I)Ljava/lang/CharSequence;
     .locals 6
-    .param p1    # I
 
     iget-object v4, p0, Lcom/android/settings/SecurityPolicySettings;->mPrefNetwork:Landroid/preference/ListPreference;
 
@@ -98,7 +95,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -163,8 +159,6 @@
 
 .method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
     .locals 6
-    .param p1    # Landroid/preference/Preference;
-    .param p2    # Ljava/lang/Object;
 
     invoke-virtual {p1}, Landroid/preference/Preference;->getKey()Ljava/lang/String;
 
@@ -240,8 +234,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 7
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     const/4 v3, 0x1
 

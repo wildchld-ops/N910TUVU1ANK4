@@ -40,7 +40,6 @@
 
 .method static synthetic access$000(Lcom/android/systemui/settings/SettingsUI;)Lcom/android/systemui/settings/BrightnessDialog;
     .locals 1
-    .param p0    # Lcom/android/systemui/settings/SettingsUI;
 
     iget-object v0, p0, Lcom/android/systemui/settings/SettingsUI;->mBrightnessDialog:Lcom/android/systemui/settings/BrightnessDialog;
 
@@ -49,8 +48,6 @@
 
 .method static synthetic access$002(Lcom/android/systemui/settings/SettingsUI;Lcom/android/systemui/settings/BrightnessDialog;)Lcom/android/systemui/settings/BrightnessDialog;
     .locals 0
-    .param p0    # Lcom/android/systemui/settings/SettingsUI;
-    .param p1    # Lcom/android/systemui/settings/BrightnessDialog;
 
     iput-object p1, p0, Lcom/android/systemui/settings/SettingsUI;->mBrightnessDialog:Lcom/android/systemui/settings/BrightnessDialog;
 
@@ -61,9 +58,6 @@
 # virtual methods
 .method public dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     const-string v0, "mBrightnessDialog="
 

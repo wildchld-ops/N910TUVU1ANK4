@@ -112,13 +112,6 @@
 
 .method constructor <init>(Landroid/content/Context;Ljava/util/ArrayList;Landroid/os/Handler;Ljava/lang/String;Lcom/android/settings/fuelgauge/PowerUsageDetail$DrainType;ILandroid/os/BatteryStats$Uid;[D)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p3    # Landroid/os/Handler;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Lcom/android/settings/fuelgauge/PowerUsageDetail$DrainType;
-    .param p6    # I
-    .param p7    # Landroid/os/BatteryStats$Uid;
-    .param p8    # [D
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -193,7 +186,6 @@
 # virtual methods
 .method public compareTo(Lcom/android/settings/fuelgauge/BatterySipper;)I
     .locals 4
-    .param p1    # Lcom/android/settings/fuelgauge/BatterySipper;
 
     invoke-virtual {p1}, Lcom/android/settings/fuelgauge/BatterySipper;->getSortValue()D
 
@@ -212,7 +204,6 @@
 
 .method public bridge synthetic compareTo(Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/android/settings/fuelgauge/BatterySipper;
 
@@ -233,7 +224,6 @@
 
 .method getQuickNameIconForUid(Landroid/os/BatteryStats$Uid;)V
     .locals 7
-    .param p1    # Landroid/os/BatteryStats$Uid;
 
     invoke-virtual {p1}, Landroid/os/BatteryStats$Uid;->getUid()I
 

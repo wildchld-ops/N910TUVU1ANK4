@@ -73,7 +73,7 @@
 
     iget v2, p0, Lcom/android/phone/callsettings/AutoRejectVideoCallList$AutoRejectAdapter$4;->val$position:I
 
-    invoke-virtual {v1, v2}, Landroid/widget/AbsListView;->isItemChecked(I)Z
+    invoke-virtual {v1, v2}, Landroid/widget/ListView;->isItemChecked(I)Z
 
     move-result v0
 
@@ -93,7 +93,7 @@
     const/4 v1, 0x1
 
     :goto_0
-    invoke-virtual {v2, v3, v1}, Landroid/widget/AbsListView;->setItemChecked(IZ)V
+    invoke-virtual {v2, v3, v1}, Landroid/widget/ListView;->setItemChecked(IZ)V
 
     :cond_0
     return-void

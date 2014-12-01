@@ -51,8 +51,6 @@
 
 .method private constructor <init>(Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Landroid/net/Uri$AbstractPart;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -61,9 +59,6 @@
 
 .method synthetic constructor <init>(Ljava/lang/String;Ljava/lang/String;Landroid/net/Uri$1;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/net/Uri$1;
 
     invoke-direct {p0, p1, p2}, Landroid/net/Uri$Part;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -72,8 +67,6 @@
 
 .method static from(Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri$Part;
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     if-nez p0, :cond_0
 
@@ -121,7 +114,6 @@
 
 .method static fromDecoded(Ljava/lang/String;)Landroid/net/Uri$Part;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     # getter for: Landroid/net/Uri;->NOT_CACHED:Ljava/lang/String;
     invoke-static {}, Landroid/net/Uri;->access$300()Ljava/lang/String;
@@ -137,7 +129,6 @@
 
 .method static fromEncoded(Ljava/lang/String;)Landroid/net/Uri$Part;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     # getter for: Landroid/net/Uri;->NOT_CACHED:Ljava/lang/String;
     invoke-static {}, Landroid/net/Uri;->access$300()Ljava/lang/String;
@@ -153,7 +144,6 @@
 
 .method static nonNull(Landroid/net/Uri$Part;)Landroid/net/Uri$Part;
     .locals 0
-    .param p0    # Landroid/net/Uri$Part;
 
     if-nez p0, :cond_0
 
@@ -165,7 +155,6 @@
 
 .method static readFrom(Landroid/os/Parcel;)Landroid/net/Uri$Part;
     .locals 4
-    .param p0    # Landroid/os/Parcel;
 
     invoke-virtual {p0}, Landroid/os/Parcel;->readInt()I
 

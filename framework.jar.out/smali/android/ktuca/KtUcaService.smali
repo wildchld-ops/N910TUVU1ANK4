@@ -20,7 +20,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Landroid/ktuca/IKtUcaIF$Stub;-><init>()V
 
@@ -79,7 +78,6 @@
 
 .method static synthetic access$000(Landroid/ktuca/KtUcaService;)Landroid/ktuca/KtUcaServiceJni;
     .locals 1
-    .param p0    # Landroid/ktuca/KtUcaService;
 
     iget-object v0, p0, Landroid/ktuca/KtUcaService;->KtUcaServiceJni:Landroid/ktuca/KtUcaServiceJni;
 
@@ -88,8 +86,6 @@
 
 .method static synthetic access$002(Landroid/ktuca/KtUcaService;Landroid/ktuca/KtUcaServiceJni;)Landroid/ktuca/KtUcaServiceJni;
     .locals 0
-    .param p0    # Landroid/ktuca/KtUcaService;
-    .param p1    # Landroid/ktuca/KtUcaServiceJni;
 
     iput-object p1, p0, Landroid/ktuca/KtUcaService;->KtUcaServiceJni:Landroid/ktuca/KtUcaServiceJni;
 
@@ -98,7 +94,6 @@
 
 .method static synthetic access$100(Landroid/ktuca/KtUcaService;)[B
     .locals 1
-    .param p0    # Landroid/ktuca/KtUcaService;
 
     iget-object v0, p0, Landroid/ktuca/KtUcaService;->mChannel:[B
 
@@ -107,7 +102,6 @@
 
 .method static synthetic access$200(Landroid/ktuca/KtUcaService;)[I
     .locals 1
-    .param p0    # Landroid/ktuca/KtUcaService;
 
     iget-object v0, p0, Landroid/ktuca/KtUcaService;->mChannelLen:[I
 
@@ -118,9 +112,6 @@
 # virtual methods
 .method public KUCA_CHInit(B[B[I)J
     .locals 5
-    .param p1    # B
-    .param p2    # [B
-    .param p3    # [I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -168,8 +159,6 @@
 
 .method public KUCA_Close([BB)J
     .locals 5
-    .param p1    # [B
-    .param p2    # B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -217,8 +206,6 @@
 
 .method public KUCA_CloseT([BB)J
     .locals 4
-    .param p1    # [B
-    .param p2    # B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -250,7 +237,6 @@
 
 .method public KUCA_KUH_Establish(B)J
     .locals 5
-    .param p1    # B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -298,7 +284,6 @@
 
 .method public KUCA_KUH_Release(B)J
     .locals 4
-    .param p1    # B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -330,11 +315,6 @@
 
 .method public KUCA_KUH_Transmit(B[BI[B[I)J
     .locals 4
-    .param p1    # B
-    .param p2    # [B
-    .param p3    # I
-    .param p4    # [B
-    .param p5    # [I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -366,9 +346,6 @@
 
 .method public KUCA_Open([B[B[I)J
     .locals 5
-    .param p1    # [B
-    .param p2    # [B
-    .param p3    # [I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -416,9 +393,6 @@
 
 .method public KUCA_OpenT([B[B[I)J
     .locals 4
-    .param p1    # [B
-    .param p2    # [B
-    .param p3    # [I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -450,11 +424,6 @@
 
 .method public KUCA_Transmit([B[BI[B[I)J
     .locals 5
-    .param p1    # [B
-    .param p2    # [B
-    .param p3    # I
-    .param p4    # [B
-    .param p5    # [I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -502,9 +471,6 @@
 
 .method public KUCA_UCAVersion([B[B[I)J
     .locals 5
-    .param p1    # [B
-    .param p2    # [B
-    .param p3    # [I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -552,11 +518,6 @@
 
 .method public KUCA_getHandle([B[B[B[B[I)J
     .locals 8
-    .param p1    # [B
-    .param p2    # [B
-    .param p3    # [B
-    .param p4    # [B
-    .param p5    # [I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -614,11 +575,6 @@
 
 .method public KUCA_getICCID([B[B[II[B)J
     .locals 5
-    .param p1    # [B
-    .param p2    # [B
-    .param p3    # [I
-    .param p4    # I
-    .param p5    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -666,11 +622,6 @@
 
 .method public KUCA_getIMSI([B[B[II[B)J
     .locals 5
-    .param p1    # [B
-    .param p2    # [B
-    .param p3    # [I
-    .param p4    # I
-    .param p5    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -718,11 +669,6 @@
 
 .method public KUCA_getMDN([B[B[II[B)J
     .locals 5
-    .param p1    # [B
-    .param p2    # [B
-    .param p3    # [I
-    .param p4    # I
-    .param p5    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -770,11 +716,6 @@
 
 .method public KUCA_getMODEL([B[B[II[B)J
     .locals 5
-    .param p1    # [B
-    .param p2    # [B
-    .param p3    # [I
-    .param p4    # I
-    .param p5    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -822,11 +763,6 @@
 
 .method public KUCA_getMSISDN([B[B[II[B)J
     .locals 8
-    .param p1    # [B
-    .param p2    # [B
-    .param p3    # [I
-    .param p4    # I
-    .param p5    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -884,11 +820,6 @@
 
 .method public KUCA_getPUID([B[B[II[B)J
     .locals 5
-    .param p1    # [B
-    .param p2    # [B
-    .param p3    # [I
-    .param p4    # I
-    .param p5    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -936,10 +867,6 @@
 
 .method public KUCA_getPinStatus([BI[B[I)J
     .locals 5
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # [B
-    .param p4    # [I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -987,9 +914,6 @@
 
 .method public KUCA_getSIMInfo([B[B[I)J
     .locals 5
-    .param p1    # [B
-    .param p2    # [B
-    .param p3    # [I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1037,8 +961,6 @@
 
 .method public KUCA_getSimStatus([B[B)J
     .locals 5
-    .param p1    # [B
-    .param p2    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1086,7 +1008,6 @@
 
 .method public KUCA_printCHInfo(B)J
     .locals 5
-    .param p1    # B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1134,11 +1055,6 @@
 
 .method public KUCA_usimAUTH([B[B[B[B[I)J
     .locals 5
-    .param p1    # [B
-    .param p2    # [B
-    .param p3    # [B
-    .param p4    # [B
-    .param p5    # [I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1186,11 +1102,6 @@
 
 .method public KUCA_verifyPin([BILjava/lang/String;[B[I)J
     .locals 5
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # [B
-    .param p5    # [I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

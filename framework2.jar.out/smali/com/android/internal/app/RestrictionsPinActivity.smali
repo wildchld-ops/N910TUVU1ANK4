@@ -41,8 +41,6 @@
 
 .method static synthetic access$000(Lcom/android/internal/app/RestrictionsPinActivity;I)Z
     .locals 1
-    .param p0    # Lcom/android/internal/app/RestrictionsPinActivity;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/internal/app/RestrictionsPinActivity;->updatePinTimer(I)Z
 
@@ -53,7 +51,6 @@
 
 .method private updatePinTimer(I)Z
     .locals 7
-    .param p1    # I
 
     const/4 v6, 0x0
 
@@ -169,17 +166,12 @@
 # virtual methods
 .method public afterTextChanged(Landroid/text/Editable;)V
     .locals 0
-    .param p1    # Landroid/text/Editable;
 
     return-void
 .end method
 
 .method public beforeTextChanged(Ljava/lang/CharSequence;III)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     return-void
 .end method
@@ -280,7 +272,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Lcom/android/internal/app/RestrictionsPinActivity;->mOkButton:Landroid/widget/Button;
 
@@ -308,7 +299,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/internal/app/AlertActivity;->onCreate(Landroid/os/Bundle;)V
 
@@ -339,9 +329,6 @@
 
 .method public onEditorAction(Landroid/widget/TextView;ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # I
-    .param p3    # Landroid/view/KeyEvent;
 
     invoke-virtual {p0}, Lcom/android/internal/app/RestrictionsPinActivity;->performPositiveButtonAction()V
 
@@ -401,10 +388,6 @@
 
 .method public onTextChanged(Ljava/lang/CharSequence;III)V
     .locals 3
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iget-object v1, p0, Lcom/android/internal/app/RestrictionsPinActivity;->mPinText:Landroid/widget/EditText;
 
@@ -494,7 +477,6 @@
 
 .method protected setPositiveButtonState(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/internal/app/RestrictionsPinActivity;->mOkButton:Landroid/widget/Button;
 

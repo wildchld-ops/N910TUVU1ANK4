@@ -133,8 +133,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v1, 0x0
 
@@ -163,7 +161,6 @@
 
 .method static synthetic access$000(Lcom/android/incallui/cover/CoverCall;)V
     .locals 0
-    .param p0    # Lcom/android/incallui/cover/CoverCall;
 
     invoke-direct {p0}, Lcom/android/incallui/cover/CoverCall;->dismissPopupWindow()V
 
@@ -172,7 +169,6 @@
 
 .method static synthetic access$100(Lcom/android/incallui/cover/CoverCall;)Landroid/widget/ImageView;
     .locals 1
-    .param p0    # Lcom/android/incallui/cover/CoverCall;
 
     iget-object v0, p0, Lcom/android/incallui/cover/CoverCall;->mRejectCallWithMsgOpenIcon:Landroid/widget/ImageView;
 
@@ -181,9 +177,6 @@
 
 .method static synthetic access$200(Lcom/android/incallui/cover/CoverCall;Ljava/lang/String;Z)V
     .locals 0
-    .param p0    # Lcom/android/incallui/cover/CoverCall;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/incallui/cover/CoverCall;->log(Ljava/lang/String;Z)V
 
@@ -853,7 +846,6 @@
 
 .method private getCallToShow(Lcom/android/incallui/CallList;)Lcom/android/services/telephony/common/Call;
     .locals 1
-    .param p1    # Lcom/android/incallui/CallList;
 
     if-nez p1, :cond_1
 
@@ -886,7 +878,6 @@
 
 .method private getCallerName(I)Ljava/lang/String;
     .locals 4
-    .param p1    # I
 
     iget-object v3, p0, Lcom/android/incallui/cover/CoverCall;->mContext:Landroid/content/Context;
 
@@ -1381,9 +1372,6 @@
 
 .method private managePhotoWidget(ZZZ)V
     .locals 5
-    .param p1    # Z
-    .param p2    # Z
-    .param p3    # Z
 
     const/16 v4, 0x8
 
@@ -2075,7 +2063,6 @@
 
 .method private showEndCallView(Z)V
     .locals 3
-    .param p1    # Z
 
     const/4 v2, 0x1
 
@@ -2110,7 +2097,6 @@
 
 .method private showInCallView(Z)V
     .locals 6
-    .param p1    # Z
 
     const/4 v2, 0x1
 
@@ -2245,7 +2231,6 @@
 
 .method private showIncomingCallView(Z)V
     .locals 2
-    .param p1    # Z
 
     const/16 v1, 0x8
 
@@ -2457,7 +2442,6 @@
 
 .method private updateCallStateLabel(I)V
     .locals 1
-    .param p1    # I
 
     const/16 v0, 0x9
 
@@ -2822,7 +2806,6 @@
 
 .method private updateScreen(I)V
     .locals 7
-    .param p1    # I
 
     const/16 v6, 0x8
 
@@ -3210,7 +3193,6 @@
 
 .method public getIconForLabel(I)I
     .locals 3
-    .param p1    # I
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -3279,7 +3261,6 @@
 
 .method manageCallEndTimeBlink(I)V
     .locals 4
-    .param p1    # I
 
     const/16 v3, 0x64
 
@@ -3327,7 +3308,6 @@
 
 .method managePeriodAnimation(I)V
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -3376,8 +3356,6 @@
 
 .method public manageRecordInfo(ZZ)V
     .locals 3
-    .param p1    # Z
-    .param p2    # Z
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -3587,7 +3565,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 5
-    .param p1    # Landroid/view/View;
 
     const/4 v1, 0x1
 
@@ -4214,8 +4191,6 @@
 
 .method public onGrabbedStateChange(Landroid/view/View;I)V
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     packed-switch p2, :pswitch_data_0
 
@@ -4249,7 +4224,6 @@
 
 .method public onLongClick(Landroid/view/View;)Z
     .locals 6
-    .param p1    # Landroid/view/View;
 
     const/4 v2, 0x0
 
@@ -4620,7 +4594,6 @@
 
 .method public rejectCallWithMessage(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Lcom/android/incallui/AnswerPresenter;->getInstance()Lcom/android/incallui/AnswerPresenter;
 
@@ -4675,7 +4648,6 @@
 
 .method public setBgScreenVisiblity(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/incallui/cover/CoverCall;->mBackgroundScreen:Landroid/widget/FrameLayout;
 
@@ -4734,11 +4706,6 @@
 
 .method public setCallState(ILcom/android/services/telephony/common/Call$DisconnectCause;ZLjava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Lcom/android/services/telephony/common/Call$DisconnectCause;
-    .param p3    # Z
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -4840,8 +4807,6 @@
 
 .method protected setDrawableToImageView(Landroid/widget/ImageView;Landroid/graphics/drawable/Drawable;)V
     .locals 1
-    .param p1    # Landroid/widget/ImageView;
-    .param p2    # Landroid/graphics/drawable/Drawable;
 
     const/4 v0, 0x0
 
@@ -4875,17 +4840,6 @@
 
 .method public setPrimary(Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;ILandroid/graphics/drawable/Drawable;ZZZZZ)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
-    .param p6    # Landroid/graphics/drawable/Drawable;
-    .param p7    # Z
-    .param p8    # Z
-    .param p9    # Z
-    .param p10    # Z
-    .param p11    # Z
 
     const-string v0, "Setting primary call"
 
@@ -4976,9 +4930,6 @@
 
 .method public setPrimaryCallElapsedTime(ZLjava/lang/String;J)V
     .locals 2
-    .param p1    # Z
-    .param p2    # Ljava/lang/String;
-    .param p3    # J
 
     const/4 v0, 0x0
 
@@ -5177,8 +5128,6 @@
 
 .method public setPrimaryImage(Landroid/graphics/drawable/Drawable;Z)V
     .locals 3
-    .param p1    # Landroid/graphics/drawable/Drawable;
-    .param p2    # Z
 
     const/4 v2, 0x0
 
@@ -5230,7 +5179,6 @@
 
 .method public setPrimaryLabelAsImage(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -5276,8 +5224,6 @@
 
 .method public setPrimaryName(Ljava/lang/String;Z)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -5340,7 +5286,6 @@
 
 .method public setPrimaryPhoneNumber(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -5417,7 +5362,6 @@
 
 .method public showPrimaryNsriSecureCallTitle(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/incallui/cover/CoverCall;->mPrimaryNsriSecureCallTitle:Landroid/widget/TextView;
 
@@ -5443,7 +5387,6 @@
 
 .method public showRejectCallWithMessage(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/incallui/cover/CoverCall;->mRejectCallWithMsgDrawer:Lcom/android/incallui/widget/incomingwidget/RejectCallWithMessageDrawer;
 
@@ -6015,7 +5958,6 @@
 
 .method updateCallButton(I)V
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -6538,7 +6480,6 @@
 
 .method public updateModifyCallState(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v2, p0, Lcom/android/incallui/cover/CoverCall;->mModifyCallText:Landroid/widget/TextView;
 

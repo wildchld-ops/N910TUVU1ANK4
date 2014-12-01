@@ -25,7 +25,6 @@
 # direct methods
 .method public constructor <init>(Landroid/app/BarBeamService;Landroid/os/Handler;)V
     .locals 0
-    .param p2    # Landroid/os/Handler;
 
     iput-object p1, p0, Landroid/app/BarBeamService$CheckStatusThread;->this$0:Landroid/app/BarBeamService;
 

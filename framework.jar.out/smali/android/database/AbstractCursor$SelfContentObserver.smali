@@ -30,7 +30,6 @@
 # direct methods
 .method public constructor <init>(Landroid/database/AbstractCursor;)V
     .locals 1
-    .param p1    # Landroid/database/AbstractCursor;
 
     const/4 v0, 0x0
 
@@ -57,7 +56,6 @@
 
 .method public onChange(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v1, p0, Landroid/database/AbstractCursor$SelfContentObserver;->mCursor:Ljava/lang/ref/WeakReference;
 

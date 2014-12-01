@@ -10,8 +10,6 @@
 # direct methods
 .method constructor <init>(Landroid/filterfw/core/FrameFormat;Landroid/filterfw/core/FrameManager;)V
     .locals 1
-    .param p1    # Landroid/filterfw/core/FrameFormat;
-    .param p2    # Landroid/filterfw/core/FrameManager;
 
     invoke-direct {p0, p1, p2}, Landroid/filterfw/core/Frame;-><init>(Landroid/filterfw/core/FrameFormat;Landroid/filterfw/core/FrameManager;)V
 
@@ -26,7 +24,6 @@
 
 .method private initWithFormat(Landroid/filterfw/core/FrameFormat;)V
     .locals 3
-    .param p1    # Landroid/filterfw/core/FrameFormat;
 
     invoke-virtual {p1}, Landroid/filterfw/core/FrameFormat;->getLength()I
 
@@ -92,7 +89,6 @@
 
 .method private setFormatObjectClass(Ljava/lang/Class;)V
     .locals 2
-    .param p1    # Ljava/lang/Class;
 
     invoke-virtual {p0}, Landroid/filterfw/core/SimpleFrame;->getFormat()Landroid/filterfw/core/FrameFormat;
 
@@ -111,8 +107,6 @@
 
 .method static wrapObject(Ljava/lang/Object;Landroid/filterfw/core/FrameManager;)Landroid/filterfw/core/SimpleFrame;
     .locals 3
-    .param p0    # Ljava/lang/Object;
-    .param p1    # Landroid/filterfw/core/FrameManager;
 
     const/4 v2, 0x1
 
@@ -247,7 +241,6 @@
 
 .method public setBitmap(Landroid/graphics/Bitmap;)V
     .locals 0
-    .param p1    # Landroid/graphics/Bitmap;
 
     invoke-virtual {p0}, Landroid/filterfw/core/SimpleFrame;->assertFrameMutable()V
 
@@ -258,9 +251,6 @@
 
 .method public setData(Ljava/nio/ByteBuffer;II)V
     .locals 1
-    .param p1    # Ljava/nio/ByteBuffer;
-    .param p2    # I
-    .param p3    # I
 
     invoke-virtual {p0}, Landroid/filterfw/core/SimpleFrame;->assertFrameMutable()V
 
@@ -279,7 +269,6 @@
 
 .method public setFloats([F)V
     .locals 0
-    .param p1    # [F
 
     invoke-virtual {p0}, Landroid/filterfw/core/SimpleFrame;->assertFrameMutable()V
 
@@ -290,7 +279,6 @@
 
 .method protected setGenericObjectValue(Ljava/lang/Object;)V
     .locals 4
-    .param p1    # Ljava/lang/Object;
 
     invoke-virtual {p0}, Landroid/filterfw/core/SimpleFrame;->getFormat()Landroid/filterfw/core/FrameFormat;
 
@@ -385,7 +373,6 @@
 
 .method public setInts([I)V
     .locals 0
-    .param p1    # [I
 
     invoke-virtual {p0}, Landroid/filterfw/core/SimpleFrame;->assertFrameMutable()V
 

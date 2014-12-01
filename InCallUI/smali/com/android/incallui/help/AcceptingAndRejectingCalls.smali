@@ -188,7 +188,6 @@
 
 .method static synthetic access$000(Lcom/android/incallui/help/AcceptingAndRejectingCalls;)I
     .locals 1
-    .param p0    # Lcom/android/incallui/help/AcceptingAndRejectingCalls;
 
     iget v0, p0, Lcom/android/incallui/help/AcceptingAndRejectingCalls;->mCurrentPeriodMarkIndex:I
 
@@ -197,8 +196,6 @@
 
 .method static synthetic access$002(Lcom/android/incallui/help/AcceptingAndRejectingCalls;I)I
     .locals 0
-    .param p0    # Lcom/android/incallui/help/AcceptingAndRejectingCalls;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/incallui/help/AcceptingAndRejectingCalls;->mCurrentPeriodMarkIndex:I
 
@@ -207,7 +204,6 @@
 
 .method static synthetic access$008(Lcom/android/incallui/help/AcceptingAndRejectingCalls;)I
     .locals 2
-    .param p0    # Lcom/android/incallui/help/AcceptingAndRejectingCalls;
 
     iget v0, p0, Lcom/android/incallui/help/AcceptingAndRejectingCalls;->mCurrentPeriodMarkIndex:I
 
@@ -220,7 +216,6 @@
 
 .method static synthetic access$100(Lcom/android/incallui/help/AcceptingAndRejectingCalls;)[I
     .locals 1
-    .param p0    # Lcom/android/incallui/help/AcceptingAndRejectingCalls;
 
     iget-object v0, p0, Lcom/android/incallui/help/AcceptingAndRejectingCalls;->mPeriodMarkList:[I
 
@@ -229,7 +224,6 @@
 
 .method static synthetic access$1000(Lcom/android/incallui/help/AcceptingAndRejectingCalls;)Landroid/view/animation/Animation;
     .locals 1
-    .param p0    # Lcom/android/incallui/help/AcceptingAndRejectingCalls;
 
     iget-object v0, p0, Lcom/android/incallui/help/AcceptingAndRejectingCalls;->mFadingAnimation:Landroid/view/animation/Animation;
 
@@ -238,7 +232,6 @@
 
 .method static synthetic access$1100(Lcom/android/incallui/help/AcceptingAndRejectingCalls;)V
     .locals 0
-    .param p0    # Lcom/android/incallui/help/AcceptingAndRejectingCalls;
 
     invoke-direct {p0}, Lcom/android/incallui/help/AcceptingAndRejectingCalls;->showToast()V
 
@@ -247,7 +240,6 @@
 
 .method static synthetic access$200(Lcom/android/incallui/help/AcceptingAndRejectingCalls;)Landroid/widget/ImageView;
     .locals 1
-    .param p0    # Lcom/android/incallui/help/AcceptingAndRejectingCalls;
 
     iget-object v0, p0, Lcom/android/incallui/help/AcceptingAndRejectingCalls;->mPeriodMark:Landroid/widget/ImageView;
 
@@ -256,7 +248,6 @@
 
 .method static synthetic access$308(Lcom/android/incallui/help/AcceptingAndRejectingCalls;)I
     .locals 2
-    .param p0    # Lcom/android/incallui/help/AcceptingAndRejectingCalls;
 
     iget v0, p0, Lcom/android/incallui/help/AcceptingAndRejectingCalls;->callTimerCount:I
 
@@ -269,7 +260,6 @@
 
 .method static synthetic access$400(Lcom/android/incallui/help/AcceptingAndRejectingCalls;)V
     .locals 0
-    .param p0    # Lcom/android/incallui/help/AcceptingAndRejectingCalls;
 
     invoke-direct {p0}, Lcom/android/incallui/help/AcceptingAndRejectingCalls;->dispCallDuration()V
 
@@ -278,7 +268,6 @@
 
 .method static synthetic access$500(Lcom/android/incallui/help/AcceptingAndRejectingCalls;)Landroid/widget/ImageView;
     .locals 1
-    .param p0    # Lcom/android/incallui/help/AcceptingAndRejectingCalls;
 
     iget-object v0, p0, Lcom/android/incallui/help/AcceptingAndRejectingCalls;->mHelpTabView:Landroid/widget/ImageView;
 
@@ -287,7 +276,6 @@
 
 .method static synthetic access$600(Lcom/android/incallui/help/AcceptingAndRejectingCalls;)Landroid/view/animation/Animation;
     .locals 1
-    .param p0    # Lcom/android/incallui/help/AcceptingAndRejectingCalls;
 
     iget-object v0, p0, Lcom/android/incallui/help/AcceptingAndRejectingCalls;->mFlashingAnimation:Landroid/view/animation/Animation;
 
@@ -296,7 +284,6 @@
 
 .method static synthetic access$700(Lcom/android/incallui/help/AcceptingAndRejectingCalls;)I
     .locals 1
-    .param p0    # Lcom/android/incallui/help/AcceptingAndRejectingCalls;
 
     iget v0, p0, Lcom/android/incallui/help/AcceptingAndRejectingCalls;->mBubbleCount:I
 
@@ -305,7 +292,6 @@
 
 .method static synthetic access$708(Lcom/android/incallui/help/AcceptingAndRejectingCalls;)I
     .locals 2
-    .param p0    # Lcom/android/incallui/help/AcceptingAndRejectingCalls;
 
     iget v0, p0, Lcom/android/incallui/help/AcceptingAndRejectingCalls;->mBubbleCount:I
 
@@ -318,7 +304,6 @@
 
 .method static synthetic access$800(Lcom/android/incallui/help/AcceptingAndRejectingCalls;)Landroid/widget/ImageView;
     .locals 1
-    .param p0    # Lcom/android/incallui/help/AcceptingAndRejectingCalls;
 
     iget-object v0, p0, Lcom/android/incallui/help/AcceptingAndRejectingCalls;->mHelpTapAccept:Landroid/widget/ImageView;
 
@@ -327,7 +312,6 @@
 
 .method static synthetic access$900(Lcom/android/incallui/help/AcceptingAndRejectingCalls;)Landroid/widget/ImageView;
     .locals 1
-    .param p0    # Lcom/android/incallui/help/AcceptingAndRejectingCalls;
 
     iget-object v0, p0, Lcom/android/incallui/help/AcceptingAndRejectingCalls;->mHelpTapReject:Landroid/widget/ImageView;
 
@@ -336,7 +320,6 @@
 
 .method private animationInit(Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     const v3, 0x7f050003
 
@@ -1007,7 +990,6 @@
 
 .method private setIncomingCallTutorialMode(Lcom/android/incallui/help/AcceptingAndRejectingCalls$IncomingCallTutorialStep;)V
     .locals 7
-    .param p1    # Lcom/android/incallui/help/AcceptingAndRejectingCalls$IncomingCallTutorialStep;
 
     const v6, 0x7f0a001b
 
@@ -1771,7 +1753,6 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p1}, Landroid/view/View;->getId()I
 
@@ -1803,7 +1784,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 2
-    .param p1    # Landroid/content/res/Configuration;
 
     const-string v0, "AcceptingAndRejectingCalls"
 
@@ -1872,7 +1852,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
@@ -1956,8 +1935,6 @@
 
 .method public onGrabbedStateChange(Landroid/view/View;I)V
     .locals 0
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     return-void
 .end method
@@ -2004,8 +1981,6 @@
 
 .method public onTrigger(Landroid/view/View;I)V
     .locals 4
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     const/4 v3, 0x1
 

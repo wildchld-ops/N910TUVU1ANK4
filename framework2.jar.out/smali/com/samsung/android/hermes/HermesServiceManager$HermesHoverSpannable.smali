@@ -23,7 +23,6 @@
 # direct methods
 .method public constructor <init>(Lcom/samsung/android/hermes/HermesServiceManager;Lcom/samsung/android/hermes/KerykeionResult;)V
     .locals 1
-    .param p2    # Lcom/samsung/android/hermes/KerykeionResult;
 
     iput-object p1, p0, Lcom/samsung/android/hermes/HermesServiceManager$HermesHoverSpannable;->this$0:Lcom/samsung/android/hermes/HermesServiceManager;
 
@@ -42,7 +41,6 @@
 # virtual methods
 .method public onHoverEnter(Landroid/view/View;)V
     .locals 7
-    .param p1    # Landroid/view/View;
 
     # getter for: Lcom/samsung/android/hermes/HermesServiceManager;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/samsung/android/hermes/HermesServiceManager;->access$400()Ljava/lang/String;
@@ -94,14 +92,12 @@
 
 .method public onHoverExit(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     return-void
 .end method
 
 .method public updateDrawState(Landroid/text/TextPaint;)V
     .locals 1
-    .param p1    # Landroid/text/TextPaint;
 
     const v0, -0xffff01
 

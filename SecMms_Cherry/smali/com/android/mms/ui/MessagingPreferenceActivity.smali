@@ -728,7 +728,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/ui/MessagingPreferenceActivity;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/MessagingPreferenceActivity;
 
     invoke-direct {p0}, Lcom/android/mms/ui/MessagingPreferenceActivity;->setVibrateMenu()V
 
@@ -737,7 +736,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/ui/MessagingPreferenceActivity;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/MessagingPreferenceActivity;
 
     invoke-direct {p0}, Lcom/android/mms/ui/MessagingPreferenceActivity;->setPreferenceSummary()V
 
@@ -746,7 +744,6 @@
 
 .method static synthetic access$1000(Lcom/android/mms/ui/MessagingPreferenceActivity;)Landroid/preference/EditTextPreference;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/MessagingPreferenceActivity;
 
     iget-object v0, p0, Lcom/android/mms/ui/MessagingPreferenceActivity;->mSmscAddrPref:Landroid/preference/EditTextPreference;
 
@@ -755,7 +752,6 @@
 
 .method static synthetic access$1100(Lcom/android/mms/ui/MessagingPreferenceActivity;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/MessagingPreferenceActivity;
 
     invoke-direct {p0}, Lcom/android/mms/ui/MessagingPreferenceActivity;->refreshSIMPreferences()V
 
@@ -764,7 +760,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/ui/MessagingPreferenceActivity;)Landroid/preference/Preference;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/MessagingPreferenceActivity;
 
     iget-object v0, p0, Lcom/android/mms/ui/MessagingPreferenceActivity;->mManageSDPref:Landroid/preference/Preference;
 
@@ -773,8 +768,6 @@
 
 .method static synthetic access$202(Lcom/android/mms/ui/MessagingPreferenceActivity;Landroid/preference/Preference;)Landroid/preference/Preference;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/MessagingPreferenceActivity;
-    .param p1    # Landroid/preference/Preference;
 
     iput-object p1, p0, Lcom/android/mms/ui/MessagingPreferenceActivity;->mManageSDPref:Landroid/preference/Preference;
 
@@ -783,7 +776,6 @@
 
 .method static synthetic access$300(Lcom/android/mms/ui/MessagingPreferenceActivity;)Landroid/os/AsyncTask;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/MessagingPreferenceActivity;
 
     iget-object v0, p0, Lcom/android/mms/ui/MessagingPreferenceActivity;->mTaskGetPermanentDisabledState:Landroid/os/AsyncTask;
 
@@ -792,8 +784,6 @@
 
 .method static synthetic access$302(Lcom/android/mms/ui/MessagingPreferenceActivity;Landroid/os/AsyncTask;)Landroid/os/AsyncTask;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/MessagingPreferenceActivity;
-    .param p1    # Landroid/os/AsyncTask;
 
     iput-object p1, p0, Lcom/android/mms/ui/MessagingPreferenceActivity;->mTaskGetPermanentDisabledState:Landroid/os/AsyncTask;
 
@@ -802,7 +792,6 @@
 
 .method static synthetic access$400(Lcom/android/mms/ui/MessagingPreferenceActivity;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/MessagingPreferenceActivity;
 
     invoke-direct {p0}, Lcom/android/mms/ui/MessagingPreferenceActivity;->restoreDefaultPreferences()V
 
@@ -811,7 +800,6 @@
 
 .method static synthetic access$500(Lcom/android/mms/ui/MessagingPreferenceActivity;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/MessagingPreferenceActivity;
 
     invoke-direct {p0}, Lcom/android/mms/ui/MessagingPreferenceActivity;->updateGroupMmsPreference()V
 
@@ -820,7 +808,6 @@
 
 .method static synthetic access$600(Lcom/android/mms/ui/MessagingPreferenceActivity;)Lcom/android/mms/util/Recycler;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/MessagingPreferenceActivity;
 
     iget-object v0, p0, Lcom/android/mms/ui/MessagingPreferenceActivity;->mSmsRecycler:Lcom/android/mms/util/Recycler;
 
@@ -829,7 +816,6 @@
 
 .method static synthetic access$700(Lcom/android/mms/ui/MessagingPreferenceActivity;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/MessagingPreferenceActivity;
 
     invoke-direct {p0}, Lcom/android/mms/ui/MessagingPreferenceActivity;->setSmsDisplayLimit()V
 
@@ -838,7 +824,6 @@
 
 .method static synthetic access$800(Lcom/android/mms/ui/MessagingPreferenceActivity;)Lcom/android/mms/util/Recycler;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/MessagingPreferenceActivity;
 
     iget-object v0, p0, Lcom/android/mms/ui/MessagingPreferenceActivity;->mMmsRecycler:Lcom/android/mms/util/Recycler;
 
@@ -847,7 +832,6 @@
 
 .method static synthetic access$900(Lcom/android/mms/ui/MessagingPreferenceActivity;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/MessagingPreferenceActivity;
 
     invoke-direct {p0}, Lcom/android/mms/ui/MessagingPreferenceActivity;->setMmsDisplayLimit()V
 
@@ -892,7 +876,6 @@
 
 .method private backupNetworkStatus(Landroid/content/SharedPreferences;)V
     .locals 3
-    .param p1    # Landroid/content/SharedPreferences;
 
     const/4 v2, 0x0
 
@@ -950,8 +933,6 @@
 
 .method public static changeAutoDeleteOption(Landroid/content/Context;Z)Z
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
 
     const/4 v3, 0x1
 
@@ -993,9 +974,6 @@
 
 .method public static changeCBMessgesOption(Landroid/content/Context;ZI)Z
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
-    .param p2    # I
 
     const/4 v4, 0x1
 
@@ -1049,8 +1027,6 @@
 
 .method public static changeCallbackOption(Landroid/content/Context;Z)Z
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
 
     const/4 v3, 0x1
 
@@ -1092,8 +1068,6 @@
 
 .method public static changeCallbackString(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p0}, Landroid/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -1131,8 +1105,6 @@
 
 .method public static changeDelayOption(Landroid/content/Context;Z)Z
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
 
     const/4 v3, 0x1
 
@@ -1174,8 +1146,6 @@
 
 .method public static changeFreeMessageOption(Landroid/content/Context;Z)Z
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
 
     const/4 v3, 0x1
 
@@ -1217,8 +1187,6 @@
 
 .method public static changeNotificationOption(Landroid/content/Context;Z)Z
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
 
     const/4 v3, 0x1
 
@@ -1260,8 +1228,6 @@
 
 .method public static changePushMessgesOption(Landroid/content/Context;Z)Z
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
 
     const/4 v3, 0x1
 
@@ -1303,8 +1269,6 @@
 
 .method public static changeSignOption(Landroid/content/Context;Z)Z
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
 
     const/4 v3, 0x1
 
@@ -1346,8 +1310,6 @@
 
 .method public static changeSpamOption(Landroid/content/Context;Z)Z
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
 
     const/4 v3, 0x1
 
@@ -1408,7 +1370,6 @@
 
 .method private confirmGroupMmsDialog(Landroid/content/DialogInterface$OnClickListener;)V
     .locals 3
-    .param p1    # Landroid/content/DialogInterface$OnClickListener;
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
@@ -1439,7 +1400,6 @@
 
 .method private confirmRestoreDialog(Landroid/content/DialogInterface$OnClickListener;)V
     .locals 3
-    .param p1    # Landroid/content/DialogInterface$OnClickListener;
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
@@ -1474,7 +1434,6 @@
 
 .method private confirmSDcardDialog(Landroid/content/DialogInterface$OnClickListener;)V
     .locals 3
-    .param p1    # Landroid/content/DialogInterface$OnClickListener;
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
@@ -1501,7 +1460,6 @@
 
 .method public static convertCreationMode(Ljava/lang/String;)I
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "restricted"
 
@@ -1554,7 +1512,6 @@
 
 .method public static getApnOnOff(Landroid/content/Context;)Z
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Landroid/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -1585,7 +1542,6 @@
 
 .method public static getAutoDeleteOption(Landroid/content/Context;)Z
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Landroid/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -1604,7 +1560,6 @@
 
 .method public static getAutoDownloadStatus(Landroid/content/Context;)Z
     .locals 5
-    .param p0    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -1636,7 +1591,6 @@
 
 .method public static getBubbleBackgroundStyle(Landroid/content/Context;)I
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Landroid/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -1655,7 +1609,6 @@
 
 .method public static getBubbleReceiveStyle(Landroid/content/Context;)I
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Landroid/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -1676,7 +1629,6 @@
 
 .method public static getBubbleSentStyle(Landroid/content/Context;)I
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Landroid/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -1697,7 +1649,6 @@
 
 .method public static getBubbleStyle(Landroid/content/Context;)I
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Landroid/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -1716,7 +1667,6 @@
 
 .method public static getCBMessagesOption(Landroid/content/Context;)Z
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Landroid/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -1735,8 +1685,6 @@
 
 .method public static getCBMessagesOption(Landroid/content/Context;I)Z
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -1785,7 +1733,6 @@
 
 .method public static getCMASTestOnOff(Landroid/content/Context;)Z
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Landroid/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -1808,7 +1755,6 @@
 
 .method public static getCallbackEnabled(Landroid/content/SharedPreferences;)Z
     .locals 3
-    .param p0    # Landroid/content/SharedPreferences;
 
     const-string v1, "pref_key_enable_callback"
 
@@ -1823,7 +1769,6 @@
 
 .method public static getCallbackNumber(Landroid/content/SharedPreferences;)Ljava/lang/String;
     .locals 3
-    .param p0    # Landroid/content/SharedPreferences;
 
     const-string v1, "pref_key_callback_text"
 
@@ -1838,7 +1783,6 @@
 
 .method public static getCallbackOption(Landroid/content/Context;)Z
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Landroid/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -1857,7 +1801,6 @@
 
 .method public static getCallbackString(Landroid/content/Context;)Ljava/lang/String;
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Landroid/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -1876,7 +1819,6 @@
 
 .method public static getDelayOption(Landroid/content/Context;)Z
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Landroid/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -1895,7 +1837,6 @@
 
 .method public static getDelaySendingLength(Landroid/content/Context;)I
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Landroid/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -1918,7 +1859,6 @@
 
 .method public static getEnableDelaySending(Landroid/content/Context;)Z
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     invoke-static {}, Lcom/android/mms/MmsConfig;->getEnableDelaySending()Z
 
@@ -1949,7 +1889,6 @@
 
 .method public static getEnableFontSizeChangeByVolumeKey(Landroid/content/Context;)Z
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     invoke-static {}, Lcom/android/mms/MmsConfig;->getEnableFontSizeByVolumeKey()Z
 
@@ -1980,7 +1919,6 @@
 
 .method public static getEnablePrioritySender(Landroid/content/Context;)Z
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Landroid/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -1999,7 +1937,6 @@
 
 .method public static getExpiryTime(Landroid/content/Context;)I
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Landroid/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -2060,7 +1997,6 @@
 
 .method public static getFavoriteEmoticons(Landroid/content/Context;)[Ljava/lang/String;
     .locals 9
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Landroid/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -2126,8 +2062,6 @@
 
 .method public static getFontSizeName(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p0}, Landroid/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -2144,7 +2078,6 @@
 
 .method public static getInputmode(Landroid/content/Context;)I
     .locals 5
-    .param p0    # Landroid/content/Context;
 
     const/4 v2, 0x2
 
@@ -2199,7 +2132,6 @@
 
 .method public static getIsGroupMmsEnabled(Landroid/content/Context;)Z
     .locals 8
-    .param p0    # Landroid/content/Context;
 
     const/4 v4, 0x1
 
@@ -2295,7 +2227,6 @@
 
 .method public static getMmsViewMode(Landroid/content/Context;)I
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Landroid/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -2330,7 +2261,6 @@
 
 .method public static getNotificationEnabled(Landroid/content/Context;)Z
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Landroid/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -2349,7 +2279,6 @@
 
 .method public static getNotificationOption(Landroid/content/Context;)Z
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Landroid/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -2368,7 +2297,6 @@
 
 .method public static getPDP_PARAM(Landroid/content/Context;)Z
     .locals 5
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Landroid/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -2417,7 +2345,6 @@
 
 .method public static getPushMessagesOption(Landroid/content/Context;)Z
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Landroid/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -2436,7 +2363,6 @@
 
 .method public static getRcsEnableFTAutoHome(Landroid/content/Context;)Z
     .locals 5
-    .param p0    # Landroid/content/Context;
 
     const/4 v4, 0x0
 
@@ -2483,7 +2409,6 @@
 
 .method public static getRcsEnableFTAutoRoming(Landroid/content/Context;)Z
     .locals 5
-    .param p0    # Landroid/content/Context;
 
     const/4 v4, 0x0
 
@@ -2530,7 +2455,6 @@
 
 .method public static getRcsEnabledImageSizeAsk(Landroid/content/Context;)Z
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Landroid/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -2557,7 +2481,6 @@
 
 .method public static getRcsEnabledValue(Landroid/content/SharedPreferences;)Z
     .locals 2
-    .param p0    # Landroid/content/SharedPreferences;
 
     const-string v0, "pref_key_enable_alias"
 
@@ -2572,7 +2495,6 @@
 
 .method public static getRecoverViewModeFlag(Landroid/content/Context;)Z
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     sget-boolean v0, Lcom/android/mms/ui/MessagingPreferenceActivity;->recoverFlag:Z
 
@@ -2581,7 +2503,6 @@
 
 .method public static getRoamingAutoDownloadStatus(Landroid/content/Context;)Z
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Landroid/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -2600,7 +2521,6 @@
 
 .method public static getSelectedImageSizeIndexByPref(Landroid/content/Context;)I
     .locals 6
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Landroid/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -2650,7 +2570,6 @@
 
 .method public static getServiceLoading(Landroid/content/Context;)I
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Landroid/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -2673,7 +2592,6 @@
 
 .method public static getServiceLoading(Ljava/lang/String;)I
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "Mms/MessagingPreferenceActivity"
 
@@ -2731,7 +2649,6 @@
 
 .method private getServiceLoadingActionName(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -2767,7 +2684,6 @@
 
 .method public static getSignOption(Landroid/content/Context;)Z
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Landroid/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -2786,7 +2702,6 @@
 
 .method public static getSignatureEnabled(Landroid/content/Context;)Z
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Landroid/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -2805,7 +2720,6 @@
 
 .method public static getSignatureEnabledValue(Landroid/content/SharedPreferences;)Z
     .locals 2
-    .param p0    # Landroid/content/SharedPreferences;
 
     const-string v0, "pref_key_enable_signature"
 
@@ -2820,7 +2734,6 @@
 
 .method public static getSignatureString(Landroid/content/Context;)Ljava/lang/String;
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Landroid/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -2839,7 +2752,6 @@
 
 .method public static getSpamFilterUnknown(Landroid/content/Context;)Z
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Landroid/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -2858,7 +2770,6 @@
 
 .method public static getSpamOption(Landroid/content/Context;)Z
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Landroid/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -2877,7 +2788,6 @@
 
 .method public static getTextFieldColor(Landroid/content/Context;)I
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Landroid/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -2900,7 +2810,6 @@
 
 .method private static getTextFieldColor(Ljava/lang/String;)I
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "white"
 
@@ -2923,7 +2832,6 @@
 
 .method public static getURLlinkOption(Landroid/content/Context;)Z
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Landroid/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -2942,7 +2850,6 @@
 
 .method public static isShowMyTyping(Landroid/content/Context;)Z
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     const/4 v1, 0x1
 
@@ -3319,8 +3226,6 @@
 
 .method private removePreference(Landroid/preference/PreferenceGroup;Landroid/preference/Preference;)V
     .locals 0
-    .param p1    # Landroid/preference/PreferenceGroup;
-    .param p2    # Landroid/preference/Preference;
 
     if-eqz p1, :cond_0
 
@@ -3509,7 +3414,6 @@
 
 .method private restoreNetworkStatus(Landroid/content/SharedPreferences;)V
     .locals 3
-    .param p1    # Landroid/content/SharedPreferences;
 
     invoke-interface {p1}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
 
@@ -3557,8 +3461,6 @@
 
 .method public static setApnOnOff(Landroid/content/Context;Z)V
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
 
     invoke-static {p0}, Landroid/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -3579,8 +3481,6 @@
 
 .method public static setAutoDownloadStatus(Landroid/content/Context;Ljava/lang/String;)V
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p0}, Landroid/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -3656,8 +3556,6 @@
 
 .method public static setCMASTestOnOff(Landroid/content/Context;Z)V
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
 
     invoke-static {p0}, Landroid/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -3692,7 +3590,6 @@
 
 .method private setCallbackNumber(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -3737,7 +3634,6 @@
 
 .method private setCallbackNumberSummary(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/mms/ui/MessagingPreferenceActivity;->mCallbackNumberPref:Landroid/preference/EditTextPreference;
 
@@ -3784,7 +3680,6 @@
 
 .method private setCmasReminderSummary(Landroid/content/SharedPreferences;)V
     .locals 9
-    .param p1    # Landroid/content/SharedPreferences;
 
     const/4 v8, 0x2
 
@@ -3870,8 +3765,6 @@
 
 .method public static setDefaultPreference(Landroid/content/Context;Z)V
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
 
     const/4 v2, 0x1
 
@@ -3898,8 +3791,6 @@
 
 .method public static setFontSizeName(Landroid/content/Context;Ljava/lang/String;)V
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p0}, Landroid/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -3942,7 +3833,6 @@
 
 .method public static setFreeMessageOption(Landroid/content/Context;)V
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Landroid/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -3965,7 +3855,6 @@
 
 .method private setMessageDealySummary(Landroid/content/SharedPreferences;)V
     .locals 8
-    .param p1    # Landroid/content/SharedPreferences;
 
     const/4 v7, 0x3
 
@@ -4063,7 +3952,6 @@
 
 .method private setMessageRepetitionSummary(Landroid/content/SharedPreferences;)V
     .locals 9
-    .param p1    # Landroid/content/SharedPreferences;
 
     const/4 v8, 0x2
 
@@ -4176,8 +4064,6 @@
 
 .method public static setMmsViewMode(Landroid/content/Context;I)V
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     invoke-static {p0}, Landroid/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -4212,8 +4098,6 @@
 
 .method public static setPDP_PARAM(Landroid/content/Context;Z)V
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
 
     const-string v2, "Mms/MessagingPreferenceActivity"
 
@@ -5130,9 +5014,6 @@
 
 .method public static setRcsAutoAccept(Landroid/content/Context;ZZ)V
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
-    .param p2    # Z
 
     const-string v2, "Mms/MessagingPreferenceActivity"
 
@@ -5189,8 +5070,6 @@
 
 .method public static setRcsEnabledImageSizeAsk(Landroid/content/Context;Z)V
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
 
     invoke-static {p0}, Landroid/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -5211,8 +5090,6 @@
 
 .method public static setRecoverViewModeFlag(Landroid/content/Context;Z)V
     .locals 0
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
 
     sput-boolean p1, Lcom/android/mms/ui/MessagingPreferenceActivity;->recoverFlag:Z
 
@@ -5221,7 +5098,6 @@
 
 .method private setServiceLoadingSummary(Landroid/content/SharedPreferences;)V
     .locals 4
-    .param p1    # Landroid/content/SharedPreferences;
 
     invoke-static {}, Lcom/android/mms/MmsConfig;->getEnableServiceLoading()Z
 
@@ -5257,8 +5133,6 @@
 
 .method public static setSignatureString(Landroid/content/Context;Ljava/lang/String;)V
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p0}, Landroid/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -5318,7 +5192,6 @@
 
 .method private setSmscSummary(Landroid/content/SharedPreferences;)V
     .locals 4
-    .param p1    # Landroid/content/SharedPreferences;
 
     invoke-static {}, Landroid/telephony/TelephonyManager;->getDefault()Landroid/telephony/TelephonyManager;
 
@@ -5605,7 +5478,6 @@
 
 .method private showCMASExplainDialog(Landroid/content/DialogInterface$OnClickListener;)V
     .locals 2
-    .param p1    # Landroid/content/DialogInterface$OnClickListener;
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
@@ -5827,8 +5699,6 @@
 
 .method public static updateFavoriteEmoticon(Landroid/content/Context;Ljava/lang/String;)V
     .locals 10
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p0}, Landroid/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -5939,7 +5809,6 @@
 
 .method public static useSplitView(Landroid/content/Context;)Z
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     invoke-static {}, Lcom/android/mms/MmsConfig;->getEnableSplitMode()Z
 
@@ -5972,7 +5841,6 @@
 # virtual methods
 .method public addPreferencesFromResource(I)V
     .locals 0
-    .param p1    # I
 
     invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->addPreferencesFromResource(I)V
 
@@ -5981,8 +5849,6 @@
 
 .method public changeURLlinkOption(Landroid/content/Context;Z)Z
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Z
 
     const/4 v4, 0x1
 
@@ -6077,7 +5943,6 @@
 
 .method public findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
 
     invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
@@ -6108,7 +5973,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 6
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onCreate(Landroid/os/Bundle;)V
 
@@ -6304,7 +6168,6 @@
 
 .method protected onCreateDialog(I)Landroid/app/Dialog;
     .locals 3
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -6366,7 +6229,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 3
-    .param p1    # Landroid/view/Menu;
 
     const/4 v2, 0x1
 
@@ -6474,8 +6336,6 @@
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     packed-switch p1, :pswitch_data_0
 
@@ -6504,7 +6364,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 2
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v0, 0x1
 
@@ -6596,8 +6455,6 @@
 
 .method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
     .locals 2
-    .param p1    # Landroid/preference/Preference;
-    .param p2    # Ljava/lang/Object;
 
     iget-object v1, p0, Lcom/android/mms/ui/MessagingPreferenceActivity;->mCallbackNumberPref:Landroid/preference/EditTextPreference;
 
@@ -6629,8 +6486,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 13
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     const/4 v12, 0x1
 
@@ -7293,8 +7148,6 @@
 
 .method public onSharedPreferenceChanged(Landroid/content/SharedPreferences;Ljava/lang/String;)V
     .locals 5
-    .param p1    # Landroid/content/SharedPreferences;
-    .param p2    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -7503,7 +7356,6 @@
 
 .method public onWindowFocusChanged(Z)V
     .locals 9
-    .param p1    # Z
 
     invoke-static {}, Lcom/android/mms/MmsConfig;->isUnknownURLlink()Z
 
@@ -8828,7 +8680,6 @@
 
 .method public setPreferenceScreen(Landroid/preference/PreferenceScreen;)V
     .locals 0
-    .param p1    # Landroid/preference/PreferenceScreen;
 
     invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->setPreferenceScreen(Landroid/preference/PreferenceScreen;)V
 

@@ -128,7 +128,6 @@
 
 .method public constructor <init>(Landroid/hardware/contextaware/aggregator/lpp/ApdrData;)V
     .locals 2
-    .param p1    # Landroid/hardware/contextaware/aggregator/lpp/ApdrData;
 
     const/4 v1, 0x3
 
@@ -165,7 +164,6 @@
 # virtual methods
 .method public set(Landroid/hardware/contextaware/aggregator/lpp/ApdrData;)V
     .locals 5
-    .param p1    # Landroid/hardware/contextaware/aggregator/lpp/ApdrData;
 
     const/4 v4, 0x3
 

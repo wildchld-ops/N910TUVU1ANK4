@@ -56,8 +56,6 @@
 # virtual methods
 .method public compare(Landroid/speech/tts/TextToSpeech$EngineInfo;Landroid/speech/tts/TextToSpeech$EngineInfo;)I
     .locals 2
-    .param p1    # Landroid/speech/tts/TextToSpeech$EngineInfo;
-    .param p2    # Landroid/speech/tts/TextToSpeech$EngineInfo;
 
     iget-boolean v0, p1, Landroid/speech/tts/TextToSpeech$EngineInfo;->system:Z
 
@@ -97,8 +95,6 @@
 
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p1, Landroid/speech/tts/TextToSpeech$EngineInfo;
 

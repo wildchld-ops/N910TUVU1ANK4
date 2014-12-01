@@ -43,7 +43,6 @@
 # direct methods
 .method protected constructor <init>(Landroid/renderscript/RenderScript;)V
     .locals 3
-    .param p1    # Landroid/renderscript/RenderScript;
 
     const/4 v2, 0x0
 
@@ -88,7 +87,6 @@
 # virtual methods
 .method public addConstant(Landroid/renderscript/Type;)Landroid/renderscript/Program$BaseProgramBuilder;
     .locals 2
-    .param p1    # Landroid/renderscript/Type;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;
@@ -146,7 +144,6 @@
 
 .method public addTexture(Landroid/renderscript/Program$TextureType;)Landroid/renderscript/Program$BaseProgramBuilder;
     .locals 2
-    .param p1    # Landroid/renderscript/Program$TextureType;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;
@@ -180,8 +177,6 @@
 
 .method public addTexture(Landroid/renderscript/Program$TextureType;Ljava/lang/String;)Landroid/renderscript/Program$BaseProgramBuilder;
     .locals 2
-    .param p1    # Landroid/renderscript/Program$TextureType;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;
@@ -246,7 +241,6 @@
 
 .method protected initProgram(Landroid/renderscript/Program;)V
     .locals 4
-    .param p1    # Landroid/renderscript/Program;
 
     const/4 v3, 0x0
 
@@ -329,8 +323,6 @@
 
 .method public setShader(Landroid/content/res/Resources;I)Landroid/renderscript/Program$BaseProgramBuilder;
     .locals 10
-    .param p1    # Landroid/content/res/Resources;
-    .param p2    # I
 
     invoke-virtual {p1, p2}, Landroid/content/res/Resources;->openRawResource(I)Ljava/io/InputStream;
 
@@ -438,7 +430,6 @@
 
 .method public setShader(Ljava/lang/String;)Landroid/renderscript/Program$BaseProgramBuilder;
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/renderscript/Program$BaseProgramBuilder;->mShader:Ljava/lang/String;
 

@@ -230,7 +230,7 @@
     :try_start_0
     iget-object v1, p0, Lcom/android/phone/EmergencyCallList;->mWindowManager:Landroid/view/IWindowManager;
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getComponentName()Landroid/content/ComponentName;
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyCallList;->getComponentName()Landroid/content/ComponentName;
 
     move-result-object v2
 
@@ -302,7 +302,7 @@
     :try_start_0
     iget-object v1, p0, Lcom/android/phone/EmergencyCallList;->mWindowManager:Landroid/view/IWindowManager;
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getComponentName()Landroid/content/ComponentName;
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyCallList;->getComponentName()Landroid/content/ComponentName;
 
     move-result-object v2
 
@@ -704,7 +704,7 @@
 
     if-ne v7, v10, :cond_1
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyCallList;->getResources()Landroid/content/res/Resources;
 
     move-result-object v7
 
@@ -716,7 +716,7 @@
 
     iput-object v7, p0, Lcom/android/phone/EmergencyCallList;->mNameList:[Ljava/lang/String;
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyCallList;->getResources()Landroid/content/res/Resources;
 
     move-result-object v7
 
@@ -732,7 +732,7 @@
     return-void
 
     :cond_1
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyCallList;->getResources()Landroid/content/res/Resources;
 
     move-result-object v7
 
@@ -744,7 +744,7 @@
 
     iput-object v7, p0, Lcom/android/phone/EmergencyCallList;->mNameList:[Ljava/lang/String;
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyCallList;->getResources()Landroid/content/res/Resources;
 
     move-result-object v7
 
@@ -767,7 +767,7 @@
 
     if-eqz v8, :cond_3
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyCallList;->getResources()Landroid/content/res/Resources;
 
     move-result-object v7
 
@@ -779,7 +779,7 @@
 
     iput-object v7, p0, Lcom/android/phone/EmergencyCallList;->mNameList:[Ljava/lang/String;
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyCallList;->getResources()Landroid/content/res/Resources;
 
     move-result-object v7
 
@@ -824,7 +824,7 @@
     if-nez v7, :cond_6
 
     :cond_4
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyCallList;->getResources()Landroid/content/res/Resources;
 
     move-result-object v7
 
@@ -836,7 +836,7 @@
 
     iput-object v7, p0, Lcom/android/phone/EmergencyCallList;->mNameList:[Ljava/lang/String;
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyCallList;->getResources()Landroid/content/res/Resources;
 
     move-result-object v7
 
@@ -856,7 +856,7 @@
     goto :goto_1
 
     :cond_6
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyCallList;->getResources()Landroid/content/res/Resources;
 
     move-result-object v7
 
@@ -868,7 +868,7 @@
 
     iput-object v7, p0, Lcom/android/phone/EmergencyCallList;->mNameList:[Ljava/lang/String;
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyCallList;->getResources()Landroid/content/res/Resources;
 
     move-result-object v7
 
@@ -987,7 +987,7 @@
 
     if-nez v3, :cond_8
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyCallList;->getResources()Landroid/content/res/Resources;
 
     move-result-object v7
 
@@ -999,7 +999,7 @@
 
     iput-object v7, p0, Lcom/android/phone/EmergencyCallList;->mNameList:[Ljava/lang/String;
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyCallList;->getResources()Landroid/content/res/Resources;
 
     move-result-object v7
 
@@ -1014,7 +1014,7 @@
     goto/16 :goto_0
 
     :cond_8
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyCallList;->getResources()Landroid/content/res/Resources;
 
     move-result-object v7
 
@@ -1026,7 +1026,7 @@
 
     iput-object v7, p0, Lcom/android/phone/EmergencyCallList;->mNameList:[Ljava/lang/String;
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyCallList;->getResources()Landroid/content/res/Resources;
 
     move-result-object v7
 
@@ -1049,7 +1049,7 @@
 
     if-eqz v8, :cond_a
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyCallList;->getResources()Landroid/content/res/Resources;
 
     move-result-object v7
 
@@ -1061,7 +1061,7 @@
 
     iput-object v7, p0, Lcom/android/phone/EmergencyCallList;->mNameList:[Ljava/lang/String;
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyCallList;->getResources()Landroid/content/res/Resources;
 
     move-result-object v7
 
@@ -1100,7 +1100,7 @@
     if-nez v1, :cond_d
 
     :cond_b
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyCallList;->getResources()Landroid/content/res/Resources;
 
     move-result-object v7
 
@@ -1112,7 +1112,7 @@
 
     iput-object v7, p0, Lcom/android/phone/EmergencyCallList;->mNameList:[Ljava/lang/String;
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyCallList;->getResources()Landroid/content/res/Resources;
 
     move-result-object v7
 
@@ -1132,7 +1132,7 @@
     goto :goto_2
 
     :cond_d
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyCallList;->getResources()Landroid/content/res/Resources;
 
     move-result-object v7
 
@@ -1144,7 +1144,7 @@
 
     iput-object v7, p0, Lcom/android/phone/EmergencyCallList;->mNameList:[Ljava/lang/String;
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyCallList;->getResources()Landroid/content/res/Resources;
 
     move-result-object v7
 
@@ -1171,9 +1171,9 @@
 
     const/4 v4, 0x1
 
-    invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Landroid/app/ListActivity;->onCreate(Landroid/os/Bundle;)V
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getActionBar()Landroid/app/ActionBar;
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyCallList;->getActionBar()Landroid/app/ActionBar;
 
     move-result-object v0
 
@@ -1190,7 +1190,7 @@
     invoke-virtual {v0, v5}, Landroid/app/ActionBar;->setDisplayShowHomeEnabled(Z)V
 
     :cond_0
-    invoke-virtual {p0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyCallList;->getWindow()Landroid/view/Window;
 
     move-result-object v2
 
@@ -1214,7 +1214,7 @@
 
     iput v2, v1, Landroid/view/WindowManager$LayoutParams;->privateFlags:I
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyCallList;->getWindow()Landroid/view/Window;
 
     move-result-object v2
 
@@ -1226,7 +1226,7 @@
 
     invoke-direct {v2, v3}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {p0, v2}, Landroid/content/ContextWrapper;->sendBroadcast(Landroid/content/Intent;)V
+    invoke-virtual {p0, v2}, Lcom/android/phone/EmergencyCallList;->sendBroadcast(Landroid/content/Intent;)V
 
     const-string v2, "window"
 
@@ -1353,7 +1353,7 @@
 
     if-ne p1, v1, :cond_1
 
-    invoke-super {p0, p1, p2}, Landroid/app/Activity;->onKeyDown(ILandroid/view/KeyEvent;)Z
+    invoke-super {p0, p1, p2}, Landroid/app/ListActivity;->onKeyDown(ILandroid/view/KeyEvent;)Z
 
     move-result v0
 
@@ -1370,7 +1370,7 @@
     sparse-switch p1, :sswitch_data_0
 
     :cond_3
-    invoke-super {p0, p1, p2}, Landroid/app/Activity;->onKeyDown(ILandroid/view/KeyEvent;)Z
+    invoke-super {p0, p1, p2}, Landroid/app/ListActivity;->onKeyDown(ILandroid/view/KeyEvent;)Z
 
     move-result v0
 
@@ -1428,7 +1428,7 @@
 
     invoke-virtual {v2, v5}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
 
-    invoke-virtual {p0, v2}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v2}, Lcom/android/phone/EmergencyCallList;->startActivity(Landroid/content/Intent;)V
 
     :goto_0
     return-void
@@ -1454,7 +1454,7 @@
 
     if-eqz v3, :cond_1
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyCallList;->getResources()Landroid/content/res/Resources;
 
     move-result-object v5
 
@@ -1470,7 +1470,7 @@
 
     if-eqz v5, :cond_1
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyCallList;->getResources()Landroid/content/res/Resources;
 
     move-result-object v5
 
@@ -1542,7 +1542,7 @@
     :goto_1
     if-eqz v4, :cond_3
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyCallList;->getResources()Landroid/content/res/Resources;
 
     move-result-object v5
 
@@ -1604,11 +1604,11 @@
 
     const v6, 0x7f09054b
 
-    invoke-virtual {v5, v6}, Landroid/app/Dialog;->setTitle(I)V
+    invoke-virtual {v5, v6}, Landroid/app/AlertDialog;->setTitle(I)V
 
     iget-object v5, p0, Lcom/android/phone/EmergencyCallList;->mDialAlertDialog:Landroid/app/AlertDialog;
 
-    invoke-virtual {v5}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
+    invoke-virtual {v5}, Landroid/app/AlertDialog;->getWindow()Landroid/view/Window;
 
     move-result-object v5
 
@@ -1618,7 +1618,7 @@
 
     iget-object v5, p0, Lcom/android/phone/EmergencyCallList;->mDialAlertDialog:Landroid/app/AlertDialog;
 
-    invoke-virtual {v5}, Landroid/app/Dialog;->show()V
+    invoke-virtual {v5}, Landroid/app/AlertDialog;->show()V
 
     goto/16 :goto_0
 
@@ -1628,7 +1628,7 @@
     goto :goto_1
 
     :cond_3
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyCallList;->getResources()Landroid/content/res/Resources;
 
     move-result-object v5
 
@@ -1741,7 +1741,7 @@
     :cond_1
     const-string v2, "lock"
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyCallList;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v3
 
@@ -1772,17 +1772,17 @@
 
     iget-object v2, p0, Lcom/android/phone/EmergencyCallList;->mDialAlertDialog:Landroid/app/AlertDialog;
 
-    invoke-virtual {v2}, Landroid/app/Dialog;->dismiss()V
+    invoke-virtual {v2}, Landroid/app/AlertDialog;->dismiss()V
 
     :cond_4
-    invoke-super {p0}, Landroid/app/Activity;->onPause()V
+    invoke-super {p0}, Landroid/app/ListActivity;->onPause()V
 
     return-void
 
     :cond_5
     const-string v2, "statusbar"
 
-    invoke-virtual {p0, v2}, Landroid/app/Activity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v2}, Lcom/android/phone/EmergencyCallList;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -1804,7 +1804,7 @@
 
     const/4 v11, 0x1
 
-    invoke-super {p0}, Landroid/app/Activity;->onResume()V
+    invoke-super {p0}, Landroid/app/ListActivity;->onResume()V
 
     const-string v8, "ota_mode_disable_expand"
 
@@ -1840,7 +1840,7 @@
 
     const-string v8, "statusbar"
 
-    invoke-virtual {p0, v8}, Landroid/app/Activity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v8}, Lcom/android/phone/EmergencyCallList;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v5
 
@@ -1862,7 +1862,7 @@
 
     const-string v8, "lock"
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyCallList;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v9
 
@@ -1886,7 +1886,7 @@
 
     const-string v8, "statusbar"
 
-    invoke-virtual {p0, v8}, Landroid/app/Activity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v8}, Lcom/android/phone/EmergencyCallList;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v6
 
@@ -1907,11 +1907,11 @@
 
     invoke-direct {v8, p0, v9, v10}, Landroid/widget/ArrayAdapter;-><init>(Landroid/content/Context;I[Ljava/lang/Object;)V
 
-    invoke-virtual {p0, v8}, Landroid/app/ListActivity;->setListAdapter(Landroid/widget/ListAdapter;)V
+    invoke-virtual {p0, v8}, Lcom/android/phone/EmergencyCallList;->setListAdapter(Landroid/widget/ListAdapter;)V
 
     const v8, 0x7f09054b
 
-    invoke-virtual {p0, v8}, Landroid/app/Activity;->setTitle(I)V
+    invoke-virtual {p0, v8}, Lcom/android/phone/EmergencyCallList;->setTitle(I)V
 
     invoke-static {}, Lcom/android/phone/PhoneGlobals;->getInstance()Lcom/android/phone/PhoneGlobals;
 
@@ -1919,7 +1919,7 @@
 
     const-string v9, "phone"
 
-    invoke-virtual {v8, v9}, Landroid/content/ContextWrapper;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v8, v9}, Lcom/android/phone/PhoneGlobals;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v7
 
@@ -1985,7 +1985,7 @@
     :cond_4
     const-string v8, "statusbar"
 
-    invoke-virtual {p0, v8}, Landroid/app/Activity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v8}, Lcom/android/phone/EmergencyCallList;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v5
 

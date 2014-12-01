@@ -112,8 +112,6 @@
 
 .method private constructor <init>(Ljava/lang/String;IJLcom/android/settings/guide/GuideFragment$GuideModes;)V
     .locals 0
-    .param p3    # J
-    .param p5    # Lcom/android/settings/guide/GuideFragment$GuideModes;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(J",
@@ -133,7 +131,6 @@
 
 .method static fromId(J)Lcom/android/settings/guide/GuideFragment$SettingsHeader;
     .locals 7
-    .param p0    # J
 
     sget-object v4, Lcom/android/settings/guide/GuideFragment$SettingsHeader;->NONE:Lcom/android/settings/guide/GuideFragment$SettingsHeader;
 

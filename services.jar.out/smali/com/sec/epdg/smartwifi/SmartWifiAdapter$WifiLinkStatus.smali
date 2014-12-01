@@ -102,8 +102,6 @@
 
 .method private constructor <init>(Ljava/lang/String;IILjava/lang/String;)V
     .locals 0
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -123,7 +121,6 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/sec/epdg/smartwifi/SmartWifiAdapter$WifiLinkStatus;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-class v0, Lcom/sec/epdg/smartwifi/SmartWifiAdapter$WifiLinkStatus;
 

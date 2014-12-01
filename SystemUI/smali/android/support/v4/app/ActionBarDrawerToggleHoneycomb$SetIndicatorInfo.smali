@@ -25,7 +25,6 @@
 # direct methods
 .method constructor <init>(Landroid/app/Activity;)V
     .locals 14
-    .param p1    # Landroid/app/Activity;
 
     const v13, 0x102002c
 

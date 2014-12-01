@@ -72,7 +72,6 @@
 
 .method public constructor <init>(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v2, 0x1
 
@@ -101,8 +100,6 @@
 
 .method public constructor <init>(ILjava/lang/String;)V
     .locals 4
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v3, 0x2
 
@@ -148,7 +145,6 @@
 
 .method constructor <init>(Landroid/os/Parcel;)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -175,7 +171,6 @@
 
 .method public constructor <init>(Landroid/os/WorkSource;)V
     .locals 2
-    .param p1    # Landroid/os/WorkSource;
 
     const/4 v1, 0x0
 
@@ -241,8 +236,6 @@
 
 .method private static addWork(Landroid/os/WorkSource;I)Landroid/os/WorkSource;
     .locals 1
-    .param p0    # Landroid/os/WorkSource;
-    .param p1    # I
 
     if-nez p0, :cond_0
 
@@ -263,9 +256,6 @@
 
 .method private static addWork(Landroid/os/WorkSource;ILjava/lang/String;)Landroid/os/WorkSource;
     .locals 1
-    .param p0    # Landroid/os/WorkSource;
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     if-nez p0, :cond_0
 
@@ -286,9 +276,6 @@
 
 .method private compare(Landroid/os/WorkSource;II)I
     .locals 3
-    .param p1    # Landroid/os/WorkSource;
-    .param p2    # I
-    .param p3    # I
 
     iget-object v1, p0, Landroid/os/WorkSource;->mUids:[I
 
@@ -323,8 +310,6 @@
 
 .method private insert(II)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
 
     const/4 v3, 0x0
 
@@ -435,9 +420,6 @@
 
 .method private insert(IILjava/lang/String;)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     const/4 v3, 0x4
 
@@ -600,7 +582,6 @@
 
 .method private removeUids(Landroid/os/WorkSource;)Z
     .locals 9
-    .param p1    # Landroid/os/WorkSource;
 
     iget v0, p0, Landroid/os/WorkSource;->mNum:I
 
@@ -668,7 +649,6 @@
 
 .method private removeUidsAndNames(Landroid/os/WorkSource;)Z
     .locals 11
-    .param p1    # Landroid/os/WorkSource;
 
     iget v0, p0, Landroid/os/WorkSource;->mNum:I
 
@@ -773,9 +753,6 @@
 
 .method private updateLocked(Landroid/os/WorkSource;ZZ)Z
     .locals 3
-    .param p1    # Landroid/os/WorkSource;
-    .param p2    # Z
-    .param p3    # Z
 
     iget-object v0, p0, Landroid/os/WorkSource;->mNames:[Ljava/lang/String;
 
@@ -900,9 +877,6 @@
 
 .method private updateUidsAndNamesLocked(Landroid/os/WorkSource;ZZ)Z
     .locals 11
-    .param p1    # Landroid/os/WorkSource;
-    .param p2    # Z
-    .param p3    # Z
 
     iget v0, p1, Landroid/os/WorkSource;->mNum:I
 
@@ -1078,9 +1052,6 @@
 
 .method private updateUidsLocked(Landroid/os/WorkSource;ZZ)Z
     .locals 12
-    .param p1    # Landroid/os/WorkSource;
-    .param p2    # Z
-    .param p3    # Z
 
     const/4 v11, 0x0
 
@@ -1290,7 +1261,6 @@
 # virtual methods
 .method public add(I)Z
     .locals 5
-    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -1365,8 +1335,6 @@
 
 .method public add(ILjava/lang/String;)Z
     .locals 5
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v2, 0x1
 
@@ -1460,7 +1428,6 @@
 
 .method public add(Landroid/os/WorkSource;)Z
     .locals 3
-    .param p1    # Landroid/os/WorkSource;
 
     sget-object v1, Landroid/os/WorkSource;->sTmpWorkSource:Landroid/os/WorkSource;
 
@@ -1491,7 +1458,6 @@
 
 .method public addReturningNewbs(I)Landroid/os/WorkSource;
     .locals 4
-    .param p1    # I
 
     sget-object v1, Landroid/os/WorkSource;->sTmpWorkSource:Landroid/os/WorkSource;
 
@@ -1536,7 +1502,6 @@
 
 .method public addReturningNewbs(Landroid/os/WorkSource;)Landroid/os/WorkSource;
     .locals 3
-    .param p1    # Landroid/os/WorkSource;
 
     sget-object v1, Landroid/os/WorkSource;->sTmpWorkSource:Landroid/os/WorkSource;
 
@@ -1650,7 +1615,6 @@
 
 .method public diff(Landroid/os/WorkSource;)Z
     .locals 9
-    .param p1    # Landroid/os/WorkSource;
 
     const/4 v6, 0x1
 
@@ -1711,7 +1675,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     instance-of v0, p1, Landroid/os/WorkSource;
 
@@ -1738,7 +1701,6 @@
 
 .method public get(I)I
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/os/WorkSource;->mUids:[I
 
@@ -1749,7 +1711,6 @@
 
 .method public getName(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/os/WorkSource;->mNames:[Ljava/lang/String;
 
@@ -1834,7 +1795,6 @@
 
 .method public remove(Landroid/os/WorkSource;)Z
     .locals 3
-    .param p1    # Landroid/os/WorkSource;
 
     iget v0, p0, Landroid/os/WorkSource;->mNum:I
 
@@ -1965,7 +1925,6 @@
 
 .method public set(I)V
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -1997,8 +1956,6 @@
 
 .method public set(ILjava/lang/String;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v2, 0x2
 
@@ -2045,7 +2002,6 @@
 
 .method public set(Landroid/os/WorkSource;)V
     .locals 5
-    .param p1    # Landroid/os/WorkSource;
 
     const/4 v4, 0x0
 
@@ -2155,7 +2111,6 @@
 
 .method public setReturningDiffs(Landroid/os/WorkSource;)[Landroid/os/WorkSource;
     .locals 4
-    .param p1    # Landroid/os/WorkSource;
 
     const/4 v0, 0x0
 
@@ -2340,8 +2295,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget v0, p0, Landroid/os/WorkSource;->mNum:I
 

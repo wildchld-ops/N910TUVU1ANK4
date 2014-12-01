@@ -122,8 +122,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;I)V
     .locals 3
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # I
 
     const/16 v2, 0xd7
 
@@ -192,9 +190,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;II)V
     .locals 3
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # I
-    .param p3    # I
 
     const/16 v2, 0xd7
 
@@ -265,10 +260,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;III)V
     .locals 3
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/16 v2, 0xd7
 
@@ -341,11 +332,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;IIII)V
     .locals 3
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     const/16 v2, 0xd7
 
@@ -420,12 +406,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;IIIII)V
     .locals 3
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     const/16 v2, 0xd7
 
@@ -502,8 +482,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # Ljava/lang/String;
 
     const/16 v2, 0xd7
 
@@ -568,9 +546,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;Ljava/lang/String;I)V
     .locals 3
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     const/16 v2, 0xd7
 
@@ -637,10 +612,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;Ljava/lang/String;II)V
     .locals 3
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
 
     const/16 v2, 0xd7
 
@@ -709,11 +680,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;Ljava/lang/String;III)V
     .locals 3
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     const/16 v2, 0xd7
 
@@ -784,12 +750,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;Ljava/lang/String;IIII)V
     .locals 3
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     const/16 v2, 0xd7
 
@@ -862,7 +822,6 @@
 
 .method static synthetic access$000(Lcom/sec/android/app/camera/glwidget/TwGLToast;)Lcom/sec/android/app/camera/glwidget/TwGLToast$OnToastDisplayListener;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLToast;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLToast;->mOnToastDisplayListener:Lcom/sec/android/app/camera/glwidget/TwGLToast$OnToastDisplayListener;
 
@@ -1568,7 +1527,6 @@
 
 .method public setAnimationEnable(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLToast;->mAnimationEnable:Z
 
@@ -1577,7 +1535,6 @@
 
 .method public setDuration(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLToast;->mDuration:I
 
@@ -1586,7 +1543,6 @@
 
 .method public setOnToastDisplayListener(Lcom/sec/android/app/camera/glwidget/TwGLToast$OnToastDisplayListener;)V
     .locals 0
-    .param p1    # Lcom/sec/android/app/camera/glwidget/TwGLToast$OnToastDisplayListener;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLToast;->mOnToastDisplayListener:Lcom/sec/android/app/camera/glwidget/TwGLToast$OnToastDisplayListener;
 
@@ -1595,7 +1551,6 @@
 
 .method public setParentView(Lcom/sec/android/glview/TwGLView;)V
     .locals 0
-    .param p1    # Lcom/sec/android/glview/TwGLView;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLToast;->mParentView:Lcom/sec/android/glview/TwGLView;
 
@@ -1604,7 +1559,6 @@
 
 .method public setText(I)V
     .locals 1
-    .param p1    # I
 
     invoke-static {p1}, Lcom/sec/android/glview/TwGLContext;->getString(I)Ljava/lang/String;
 
@@ -1619,8 +1573,6 @@
 
 .method public setText(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     invoke-static {p1}, Lcom/sec/android/glview/TwGLContext;->getString(I)Ljava/lang/String;
 
@@ -1637,9 +1589,6 @@
 
 .method public setText(III)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     invoke-static {p1}, Lcom/sec/android/glview/TwGLContext;->getString(I)Ljava/lang/String;
 
@@ -1658,7 +1607,6 @@
 
 .method public setText(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLToast;->mText:Ljava/lang/String;
 
@@ -1669,8 +1617,6 @@
 
 .method public setText(Ljava/lang/String;I)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     iput-object p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLToast;->mText:Ljava/lang/String;
 
@@ -1683,9 +1629,6 @@
 
 .method public setText(Ljava/lang/String;II)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     iput-object p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLToast;->mText:Ljava/lang/String;
 
@@ -1700,8 +1643,6 @@
 
 .method public setToastAlign(II)V
     .locals 11
-    .param p1    # I
-    .param p2    # I
 
     const/high16 v10, 0x40000000
 

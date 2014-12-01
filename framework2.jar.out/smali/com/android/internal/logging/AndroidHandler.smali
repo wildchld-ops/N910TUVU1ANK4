@@ -37,7 +37,6 @@
 
 .method static getAndroidLevel(Ljava/util/logging/Level;)I
     .locals 2
-    .param p0    # Ljava/util/logging/Level;
 
     invoke-virtual {p0}, Ljava/util/logging/Level;->intValue()I
 
@@ -92,7 +91,6 @@
 
 .method public publish(Ljava/util/logging/LogRecord;)V
     .locals 6
-    .param p1    # Ljava/util/logging/LogRecord;
 
     invoke-virtual {p1}, Ljava/util/logging/LogRecord;->getLevel()Ljava/util/logging/Level;
 
@@ -149,10 +147,6 @@
 
 .method public publish(Ljava/util/logging/Logger;Ljava/lang/String;Ljava/util/logging/Level;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/util/logging/Logger;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/util/logging/Level;
-    .param p4    # Ljava/lang/String;
 
     invoke-static {p3}, Lcom/android/internal/logging/AndroidHandler;->getAndroidLevel(Ljava/util/logging/Level;)I
 

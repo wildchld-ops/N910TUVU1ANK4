@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -108,7 +107,6 @@
 
 .method public getApplicationElements(Ljava/lang/String;)Landroid/os/Bundle;
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -229,7 +227,6 @@
 
 .method public performRevocationCheck(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -341,7 +338,6 @@
 
 .method public registerListener(Lcom/mirrorlink/android/service/IMirrorlinkListener;)V
     .locals 5
-    .param p1    # Lcom/mirrorlink/android/service/IMirrorlinkListener;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -405,7 +401,6 @@
 
 .method public setDevMode(Z)V
     .locals 5
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -464,7 +459,6 @@
 
 .method public unRegisterListener(Lcom/mirrorlink/android/service/IMirrorlinkListener;)V
     .locals 5
-    .param p1    # Lcom/mirrorlink/android/service/IMirrorlinkListener;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -528,7 +522,6 @@
 
 .method public writeTerminalVersion(Z)V
     .locals 5
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

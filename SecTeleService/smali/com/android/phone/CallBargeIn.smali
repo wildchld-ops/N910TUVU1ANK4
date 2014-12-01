@@ -43,7 +43,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v4}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v4}, Lcom/android/phone/PhoneGlobals;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v4
 
@@ -70,7 +70,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v4}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v4}, Lcom/android/phone/PhoneGlobals;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v4
 
@@ -176,7 +176,7 @@
 
     const-wide/16 v6, 0x3e8
 
-    invoke-virtual {p0, v5, v6, v7}, Landroid/os/Handler;->sendEmptyMessageDelayed(IJ)Z
+    invoke-virtual {p0, v5, v6, v7}, Lcom/android/phone/CallBargeIn;->sendEmptyMessageDelayed(IJ)Z
 
     goto :goto_0
 
@@ -428,7 +428,7 @@
 
     move-wide/from16 v2, v20
 
-    invoke-virtual {v0, v1, v2, v3}, Landroid/os/Handler;->sendEmptyMessageDelayed(IJ)Z
+    invoke-virtual {v0, v1, v2, v3}, Lcom/android/phone/CallBargeIn;->sendEmptyMessageDelayed(IJ)Z
 
     goto :goto_0
 
@@ -521,7 +521,7 @@
 
     move-result-object v19
 
-    invoke-virtual/range {v19 .. v19}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual/range {v19 .. v19}, Lcom/android/phone/PhoneGlobals;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v19
 
@@ -573,7 +573,7 @@
 
     move-result-object v19
 
-    invoke-virtual/range {v19 .. v19}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual/range {v19 .. v19}, Lcom/android/phone/PhoneGlobals;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v19
 
@@ -725,7 +725,7 @@
 
     invoke-virtual {v11, v0, v13}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    invoke-virtual {v7, v11}, Landroid/content/ContextWrapper;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {v7, v11}, Lcom/android/phone/PhoneGlobals;->startActivity(Landroid/content/Intent;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -734,7 +734,7 @@
     :catch_0
     move-exception v9
 
-    invoke-virtual {v9}, Ljava/lang/Throwable;->printStackTrace()V
+    invoke-virtual {v9}, Ljava/lang/Exception;->printStackTrace()V
 
     goto :goto_1
 
@@ -1002,7 +1002,7 @@
 
     const-string v8, "audio"
 
-    invoke-virtual {v0, v8}, Landroid/content/ContextWrapper;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v0, v8}, Lcom/android/phone/PhoneGlobals;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v1
 

@@ -120,7 +120,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/rcs/transaction/ImTransactionService;)V
     .locals 0
-    .param p0    # Lcom/android/mms/rcs/transaction/ImTransactionService;
 
     invoke-direct {p0}, Lcom/android/mms/rcs/transaction/ImTransactionService;->acquireWakeLock()V
 
@@ -129,7 +128,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/rcs/transaction/ImTransactionService;)Ljava/util/HashMap;
     .locals 1
-    .param p0    # Lcom/android/mms/rcs/transaction/ImTransactionService;
 
     iget-object v0, p0, Lcom/android/mms/rcs/transaction/ImTransactionService;->mProcessingTransaction:Ljava/util/HashMap;
 
@@ -138,7 +136,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/rcs/transaction/ImTransactionService;)Lcom/android/mms/rcs/transaction/ImTransactionService$ServiceHandler;
     .locals 1
-    .param p0    # Lcom/android/mms/rcs/transaction/ImTransactionService;
 
     iget-object v0, p0, Lcom/android/mms/rcs/transaction/ImTransactionService;->mServiceHandler:Lcom/android/mms/rcs/transaction/ImTransactionService$ServiceHandler;
 
@@ -147,8 +144,6 @@
 
 .method static synthetic access$300(Lcom/android/mms/rcs/transaction/ImTransactionService;I)V
     .locals 0
-    .param p0    # Lcom/android/mms/rcs/transaction/ImTransactionService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/mms/rcs/transaction/ImTransactionService;->stopSelfIfIdle(I)V
 
@@ -264,10 +259,6 @@
 
 .method private runningPendingTransaction(ILcom/android/mms/rcs/transaction/ImBaseBundle;Ljava/lang/String;Z)V
     .locals 7
-    .param p1    # I
-    .param p2    # Lcom/android/mms/rcs/transaction/ImBaseBundle;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Z
 
     const/4 v6, 0x2
 
@@ -512,7 +503,6 @@
 
 .method private stopSelfIfIdle(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
@@ -521,7 +511,6 @@
 # virtual methods
 .method public onBind(Landroid/content/Intent;)Landroid/os/IBinder;
     .locals 1
-    .param p1    # Landroid/content/Intent;
 
     const/4 v0, 0x0
 
@@ -605,9 +594,6 @@
 
 .method public onStartCommand(Landroid/content/Intent;II)I
     .locals 22
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
-    .param p3    # I
 
     if-nez p1, :cond_0
 

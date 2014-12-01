@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Lcom/android/settings/bluetooth/PbapServerProfile;Lcom/android/settings/bluetooth/PbapServerProfile$1;)V
     .locals 0
-    .param p1    # Lcom/android/settings/bluetooth/PbapServerProfile;
-    .param p2    # Lcom/android/settings/bluetooth/PbapServerProfile$1;
 
     invoke-direct {p0, p1}, Lcom/android/settings/bluetooth/PbapServerProfile$PbapServiceListener;-><init>(Lcom/android/settings/bluetooth/PbapServerProfile;)V
 
@@ -46,7 +44,6 @@
 # virtual methods
 .method public onServiceConnected(Landroid/bluetooth/BluetoothPbap;)V
     .locals 2
-    .param p1    # Landroid/bluetooth/BluetoothPbap;
 
     # getter for: Lcom/android/settings/bluetooth/PbapServerProfile;->V:Z
     invoke-static {}, Lcom/android/settings/bluetooth/PbapServerProfile;->access$000()Z

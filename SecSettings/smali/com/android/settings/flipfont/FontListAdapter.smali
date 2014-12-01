@@ -43,7 +43,6 @@
 # direct methods
 .method constructor <init>(Landroid/content/Context;)V
     .locals 11
-    .param p1    # Landroid/content/Context;
 
     const/4 v7, 0x0
 
@@ -283,8 +282,6 @@
 
 .method private getFont(Ljava/lang/String;Ljava/lang/String;)Landroid/graphics/Typeface;
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v5, 0x0
 
@@ -400,8 +397,6 @@
 
 .method private getFontfromCR(Ljava/lang/String;Ljava/lang/String;)Landroid/graphics/Typeface;
     .locals 15
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -807,7 +802,6 @@
 
 .method public static getInstanceFontListAdapter(Landroid/content/Context;)Lcom/android/settings/flipfont/FontListAdapter;
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     sget-object v0, Lcom/android/settings/flipfont/FontListAdapter;->mFontListAdapter:Lcom/android/settings/flipfont/FontListAdapter;
 
@@ -827,8 +821,6 @@
 
 .method private setFont(ILandroid/widget/TextView;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/widget/TextView;
 
     iget-object v1, p0, Lcom/android/settings/flipfont/FontListAdapter;->mTypefaces:Ljava/util/Vector;
 
@@ -862,7 +854,6 @@
 
 .method public getFontName(I)Ljava/lang/String;
     .locals 5
-    .param p1    # I
 
     const v4, 0x7f090c5f
 
@@ -1233,7 +1224,6 @@
 
 .method public getItem(I)Ljava/lang/Object;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/settings/flipfont/FontListAdapter;->mTypefaceFiles:Ljava/util/Vector;
 
@@ -1246,7 +1236,6 @@
 
 .method public getItemId(I)J
     .locals 2
-    .param p1    # I
 
     int-to-long v0, p1
 
@@ -1255,9 +1244,6 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 8
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     iget-object v5, p0, Lcom/android/settings/flipfont/FontListAdapter;->mInflater:Landroid/view/LayoutInflater;
 

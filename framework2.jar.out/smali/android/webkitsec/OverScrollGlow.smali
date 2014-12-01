@@ -22,7 +22,6 @@
 # direct methods
 .method public constructor <init>(Landroid/webkitsec/WebViewClassic;)V
     .locals 2
-    .param p1    # Landroid/webkitsec/WebViewClassic;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -63,12 +62,6 @@
 # virtual methods
 .method public absorbGlow(IIIIII)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     if-gtz p6, :cond_0
 
@@ -222,7 +215,6 @@
 
 .method public drawEdgeGlows(Landroid/graphics/Canvas;)Z
     .locals 10
-    .param p1    # Landroid/graphics/Canvas;
 
     const/4 v9, 0x0
 
@@ -502,12 +494,6 @@
 
 .method public pullGlow(IIIIII)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     const/4 v5, 0x0
 
@@ -723,8 +709,6 @@
 
 .method public setOverScrollDeltas(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     iput p1, p0, Landroid/webkitsec/OverScrollGlow;->mOverScrollDeltaX:I
 

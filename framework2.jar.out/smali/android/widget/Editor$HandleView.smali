@@ -110,10 +110,6 @@
 # direct methods
 .method public constructor <init>(Landroid/widget/Editor;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
     .locals 7
-    .param p2    # Landroid/graphics/drawable/Drawable;
-    .param p3    # Landroid/graphics/drawable/Drawable;
-    .param p4    # Landroid/graphics/drawable/Drawable;
-    .param p5    # Landroid/graphics/drawable/Drawable;
 
     const/4 v2, 0x5
 
@@ -245,7 +241,6 @@
 
 .method private addPositionToTouchUpFilter(I)V
     .locals 4
-    .param p1    # I
 
     iget v0, p0, Landroid/widget/Editor$HandleView;->mPreviousOffsetIndex:I
 
@@ -406,7 +401,6 @@
 
 .method private startTouchUpFilter(I)V
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -612,7 +606,6 @@
 
 .method protected onDraw(Landroid/graphics/Canvas;)V
     .locals 5
-    .param p1    # Landroid/graphics/Canvas;
 
     const/4 v4, 0x0
 
@@ -651,8 +644,6 @@
 
 .method protected onMeasure(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Landroid/widget/Editor$HandleView;->mDrawable:Landroid/graphics/drawable/Drawable;
 
@@ -673,7 +664,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 17
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual/range {p1 .. p1}, Landroid/view/MotionEvent;->getActionMasked()I
 
@@ -1384,8 +1374,6 @@
 
 .method protected positionAtCursorOffset(IZ)V
     .locals 8
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v5, 0x1
 
@@ -1703,7 +1691,6 @@
 
 .method showActionPopupWindow(I)V
     .locals 4
-    .param p1    # I
 
     iget-object v0, p0, Landroid/widget/Editor$HandleView;->mActionPopupWindow:Landroid/widget/Editor$ActionPopupWindow;
 
@@ -1763,7 +1750,6 @@
 
 .method showNewActionPopupWindow(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v0, p0, Landroid/widget/Editor$HandleView;->mNewActionPopupWindow:Landroid/widget/Editor$NewActionPopupWindow;
 
@@ -1859,10 +1845,6 @@
 
 .method public updatePosition(IIZZ)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # Z
 
     const/4 v6, 0x0
 

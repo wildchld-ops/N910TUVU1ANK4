@@ -29,9 +29,6 @@
 # direct methods
 .method public constructor <init>(Landroid/graphics/drawable/Drawable;Ljava/lang/String;Ljava/lang/Object;)V
     .locals 2
-    .param p1    # Landroid/graphics/drawable/Drawable;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/Object;
 
     const/4 v0, 0x0
 
@@ -69,10 +66,6 @@
 
 .method public constructor <init>(Landroid/graphics/drawable/Drawable;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;)V
     .locals 2
-    .param p1    # Landroid/graphics/drawable/Drawable;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/Object;
 
     const/4 v0, 0x0
 
@@ -112,8 +105,6 @@
 
 .method public constructor <init>(Landroid/view/View;Ljava/lang/Object;)V
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # Ljava/lang/Object;
 
     const/4 v0, 0x0
 
@@ -191,9 +182,6 @@
 
 .method public set(Landroid/graphics/drawable/Drawable;Ljava/lang/String;Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Landroid/graphics/drawable/Drawable;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/Object;
 
     iput-object p1, p0, Lcom/samsung/android/sdk/look/airbutton/SlookAirButtonAdapter$AirButtonItem;->mImage:Landroid/graphics/drawable/Drawable;
 
@@ -206,10 +194,6 @@
 
 .method public set(Landroid/graphics/drawable/Drawable;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Landroid/graphics/drawable/Drawable;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/Object;
 
     iput-object p1, p0, Lcom/samsung/android/sdk/look/airbutton/SlookAirButtonAdapter$AirButtonItem;->mImage:Landroid/graphics/drawable/Drawable;
 
@@ -224,8 +208,6 @@
 
 .method public set(Landroid/view/View;Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Landroid/view/View;
-    .param p2    # Ljava/lang/Object;
 
     iput-object p1, p0, Lcom/samsung/android/sdk/look/airbutton/SlookAirButtonAdapter$AirButtonItem;->mView:Landroid/view/View;
 

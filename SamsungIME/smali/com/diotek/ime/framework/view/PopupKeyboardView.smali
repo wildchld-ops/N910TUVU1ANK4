@@ -108,7 +108,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     const/4 v1, 0x1
 
@@ -233,7 +232,6 @@
 
 .method static synthetic access$000(Lcom/diotek/ime/framework/view/PopupKeyboardView;)Landroid/widget/FrameLayout;
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/view/PopupKeyboardView;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/PopupKeyboardView;->mCandidateFrame:Landroid/widget/FrameLayout;
 
@@ -242,7 +240,6 @@
 
 .method static synthetic access$100(Lcom/diotek/ime/framework/view/PopupKeyboardView;)Z
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/view/PopupKeyboardView;
 
     iget-boolean v0, p0, Lcom/diotek/ime/framework/view/PopupKeyboardView;->mCandidateShown:Z
 
@@ -251,7 +248,6 @@
 
 .method static synthetic access$200(Lcom/diotek/ime/framework/view/PopupKeyboardView;)I
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/view/PopupKeyboardView;
 
     iget v0, p0, Lcom/diotek/ime/framework/view/PopupKeyboardView;->mCandidateViewHeight:I
 
@@ -260,7 +256,6 @@
 
 .method static synthetic access$300(Lcom/diotek/ime/framework/view/PopupKeyboardView;)I
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/view/PopupKeyboardView;
 
     iget v0, p0, Lcom/diotek/ime/framework/view/PopupKeyboardView;->mMoveHandlerHeight:I
 
@@ -269,7 +264,6 @@
 
 .method static synthetic access$400(Lcom/diotek/ime/framework/view/PopupKeyboardView;)Lcom/diotek/ime/framework/common/InputManager;
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/view/PopupKeyboardView;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/PopupKeyboardView;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -278,7 +272,6 @@
 
 .method static synthetic access$500(Lcom/diotek/ime/framework/view/PopupKeyboardView;)Z
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/view/PopupKeyboardView;
 
     iget-boolean v0, p0, Lcom/diotek/ime/framework/view/PopupKeyboardView;->mFloatingMoveButtonTouched:Z
 
@@ -287,8 +280,6 @@
 
 .method static synthetic access$502(Lcom/diotek/ime/framework/view/PopupKeyboardView;Z)Z
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/view/PopupKeyboardView;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/view/PopupKeyboardView;->mFloatingMoveButtonTouched:Z
 
@@ -297,7 +288,6 @@
 
 .method static synthetic access$600(Lcom/diotek/ime/framework/view/PopupKeyboardView;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/view/PopupKeyboardView;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/PopupKeyboardView;->mFloatingMoveButton:Landroid/view/View;
 
@@ -306,7 +296,6 @@
 
 .method static synthetic access$700(Lcom/diotek/ime/framework/view/PopupKeyboardView;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/view/PopupKeyboardView;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/PopupKeyboardView;->mSplitLeftMoveButton:Landroid/view/View;
 
@@ -315,7 +304,6 @@
 
 .method static synthetic access$800(Lcom/diotek/ime/framework/view/PopupKeyboardView;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/view/PopupKeyboardView;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/PopupKeyboardView;->mSplitRightMoveButton:Landroid/view/View;
 
@@ -620,7 +608,6 @@
 
 .method private getValidLocation(Landroid/graphics/Point;)Landroid/graphics/Point;
     .locals 4
-    .param p1    # Landroid/graphics/Point;
 
     iget v1, p1, Landroid/graphics/Point;->y:I
 
@@ -756,8 +743,6 @@
 
 .method private setCandidateView(Landroid/view/View;Landroid/view/View;)V
     .locals 5
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/View;
 
     const v1, 0x7f080055
 
@@ -800,8 +785,6 @@
 
 .method private setInputView(Landroid/view/View;Landroid/view/View;)V
     .locals 4
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/View;
 
     const v1, 0x7f080056
 
@@ -1091,7 +1074,6 @@
 
 .method private updateFloatingKeyboard(Landroid/graphics/Point;)V
     .locals 6
-    .param p1    # Landroid/graphics/Point;
 
     const/4 v3, 0x0
 
@@ -1334,7 +1316,6 @@
 
 .method private updateSplitKeybord(Landroid/graphics/Point;)V
     .locals 11
-    .param p1    # Landroid/graphics/Point;
 
     const/4 v1, 0x0
 
@@ -1991,7 +1972,6 @@
 
 .method public getKeyboardCurrentLocationY(Z)I
     .locals 2
-    .param p1    # Z
 
     iget-boolean v0, p0, Lcom/diotek/ime/framework/view/PopupKeyboardView;->mIsUsedFloatingMoveButton:Z
 
@@ -2084,8 +2064,6 @@
 
 .method public getScreenToWindowLocation(Landroid/view/View;Landroid/graphics/Point;)Landroid/graphics/Point;
     .locals 6
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/graphics/Point;
 
     invoke-virtual {p0, p1}, Lcom/diotek/ime/framework/view/PopupKeyboardView;->getViewLocationOnScreen(Landroid/view/View;)Landroid/graphics/Point;
 
@@ -2166,7 +2144,6 @@
 
 .method public getViewLocationInWindow(Landroid/view/View;)Landroid/graphics/Point;
     .locals 4
-    .param p1    # Landroid/view/View;
 
     const/4 v2, -0x1
 
@@ -2195,7 +2172,6 @@
 
 .method public getViewLocationOnScreen(Landroid/view/View;)Landroid/graphics/Point;
     .locals 4
-    .param p1    # Landroid/view/View;
 
     const/4 v2, -0x1
 
@@ -2397,10 +2373,6 @@
 
 .method public init(Landroid/view/View;Landroid/view/View;Landroid/view/View;Landroid/view/View;)V
     .locals 10
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/View;
-    .param p4    # Landroid/view/View;
 
     iput-object p2, p0, Lcom/diotek/ime/framework/view/PopupKeyboardView;->mSplitRightView:Landroid/view/View;
 
@@ -3622,7 +3594,6 @@
 
 .method protected onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 3
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/view/View;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -3686,8 +3657,6 @@
 
 .method protected onMeasure(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     invoke-static {p1}, Landroid/view/View$MeasureSpec;->getSize(I)I
 
@@ -3702,7 +3671,6 @@
 
 .method protected onWindowVisibilityChanged(I)V
     .locals 4
-    .param p1    # I
 
     const/4 v3, 0x1
 
@@ -3941,8 +3909,6 @@
 
 .method public setCandidateView(ILandroid/view/View;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/View;
 
     packed-switch p1, :pswitch_data_0
 
@@ -3989,7 +3955,6 @@
 
 .method public setCurrentLocation(Landroid/graphics/Point;)V
     .locals 1
-    .param p1    # Landroid/graphics/Point;
 
     invoke-direct {p0, p1}, Lcom/diotek/ime/framework/view/PopupKeyboardView;->getValidLocation(Landroid/graphics/Point;)Landroid/graphics/Point;
 
@@ -4002,7 +3967,6 @@
 
 .method public setMovingDownPoint(Landroid/graphics/Point;)V
     .locals 0
-    .param p1    # Landroid/graphics/Point;
 
     iput-object p1, p0, Lcom/diotek/ime/framework/view/PopupKeyboardView;->mMovingDownPoint:Landroid/graphics/Point;
 
@@ -4365,7 +4329,6 @@
 
 .method public updateCurrentLocation(Z)V
     .locals 4
-    .param p1    # Z
 
     new-instance v1, Landroid/graphics/Point;
 
@@ -4759,8 +4722,6 @@
 
 .method public updateKeyboard(II)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     const/4 v5, 0x7
 
@@ -4839,8 +4800,6 @@
 
 .method public updateKeyboardSideSync(II)V
     .locals 8
-    .param p1    # I
-    .param p2    # I
 
     new-instance v4, Landroid/graphics/Rect;
 
@@ -5059,7 +5018,6 @@
 
 .method public updateSplitLeftWidth(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/diotek/ime/framework/view/PopupKeyboardView;->mSplitLeftkeyboardWidth:I
 
@@ -5068,7 +5026,6 @@
 
 .method public updateSplitRightWidth(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Lcom/diotek/ime/framework/view/PopupKeyboardView;->mSplitRightkeyboardWidth:I
 

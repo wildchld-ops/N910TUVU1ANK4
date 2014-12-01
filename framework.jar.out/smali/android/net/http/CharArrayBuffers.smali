@@ -18,9 +18,6 @@
 
 .method static containsIgnoreCaseTrimmed(Lorg/apache/http/util/CharArrayBuffer;ILjava/lang/String;)Z
     .locals 10
-    .param p0    # Lorg/apache/http/util/CharArrayBuffer;
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v7, 0x1
 
@@ -112,8 +109,6 @@
 
 .method static setLowercaseIndexOf(Lorg/apache/http/util/CharArrayBuffer;I)I
     .locals 6
-    .param p0    # Lorg/apache/http/util/CharArrayBuffer;
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -165,7 +160,6 @@
 
 .method private static toLower(C)C
     .locals 1
-    .param p0    # C
 
     const/16 v0, 0x41
 

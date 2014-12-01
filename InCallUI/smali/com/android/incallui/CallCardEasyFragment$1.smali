@@ -36,7 +36,6 @@
 # virtual methods
 .method public onPrepared(Landroid/media/MediaPlayer;)V
     .locals 7
-    .param p1    # Landroid/media/MediaPlayer;
 
     const/4 v6, 0x1
 

@@ -50,10 +50,6 @@
 # direct methods
 .method constructor <init>(Landroid/accounts/Account;ILjava/lang/String;I)V
     .locals 9
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
 
     const-wide/32 v4, 0x15180
 
@@ -116,9 +112,6 @@
 
 .method constructor <init>(Landroid/content/ComponentName;II)V
     .locals 9
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # I
-    .param p3    # I
 
     const-wide/32 v4, 0x15180
 
@@ -181,7 +174,6 @@
 
 .method constructor <init>(Lcom/android/server/content/SyncStorageEngine$AuthorityInfo;)V
     .locals 4
-    .param p1    # Lcom/android/server/content/SyncStorageEngine$AuthorityInfo;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

@@ -36,7 +36,6 @@
 # virtual methods
 .method public onInit(I)V
     .locals 2
-    .param p1    # I
 
     const-string v0, "ToggleFeaturePreferenceFragment"
 

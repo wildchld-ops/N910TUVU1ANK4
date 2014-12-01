@@ -36,7 +36,6 @@
 # virtual methods
 .method public getDrawable(Ljava/lang/String;)Landroid/graphics/drawable/Drawable;
     .locals 14
-    .param p1    # Ljava/lang/String;
 
     const/4 v10, 0x0
 

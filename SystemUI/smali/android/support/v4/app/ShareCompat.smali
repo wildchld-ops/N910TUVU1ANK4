@@ -86,9 +86,6 @@
 
 .method public static configureMenuItem(Landroid/view/Menu;ILandroid/support/v4/app/ShareCompat$IntentBuilder;)V
     .locals 4
-    .param p0    # Landroid/view/Menu;
-    .param p1    # I
-    .param p2    # Landroid/support/v4/app/ShareCompat$IntentBuilder;
 
     invoke-interface {p0, p1}, Landroid/view/Menu;->findItem(I)Landroid/view/MenuItem;
 
@@ -134,8 +131,6 @@
 
 .method public static configureMenuItem(Landroid/view/MenuItem;Landroid/support/v4/app/ShareCompat$IntentBuilder;)V
     .locals 1
-    .param p0    # Landroid/view/MenuItem;
-    .param p1    # Landroid/support/v4/app/ShareCompat$IntentBuilder;
 
     sget-object v0, Landroid/support/v4/app/ShareCompat;->IMPL:Landroid/support/v4/app/ShareCompat$ShareCompatImpl;
 
@@ -146,7 +141,6 @@
 
 .method public static getCallingActivity(Landroid/app/Activity;)Landroid/content/ComponentName;
     .locals 3
-    .param p0    # Landroid/app/Activity;
 
     invoke-virtual {p0}, Landroid/app/Activity;->getCallingActivity()Landroid/content/ComponentName;
 
@@ -172,7 +166,6 @@
 
 .method public static getCallingPackage(Landroid/app/Activity;)Ljava/lang/String;
     .locals 3
-    .param p0    # Landroid/app/Activity;
 
     invoke-virtual {p0}, Landroid/app/Activity;->getCallingPackage()Ljava/lang/String;
 

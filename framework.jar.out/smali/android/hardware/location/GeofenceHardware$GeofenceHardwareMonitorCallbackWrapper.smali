@@ -32,7 +32,6 @@
 # direct methods
 .method constructor <init>(Landroid/hardware/location/GeofenceHardware;Landroid/hardware/location/GeofenceHardwareMonitorCallback;)V
     .locals 1
-    .param p2    # Landroid/hardware/location/GeofenceHardwareMonitorCallback;
 
     iput-object p1, p0, Landroid/hardware/location/GeofenceHardware$GeofenceHardwareMonitorCallbackWrapper;->this$0:Landroid/hardware/location/GeofenceHardware;
 
@@ -51,9 +50,6 @@
 # virtual methods
 .method public onMonitoringSystemChange(IZLandroid/location/Location;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # Landroid/location/Location;
 
     iget-object v1, p0, Landroid/hardware/location/GeofenceHardware$GeofenceHardwareMonitorCallbackWrapper;->mCallback:Ljava/lang/ref/WeakReference;
 

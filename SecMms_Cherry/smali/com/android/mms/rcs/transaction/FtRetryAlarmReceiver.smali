@@ -38,7 +38,6 @@
 
 .method public static setIsFromBootAction(Z)V
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/mms/rcs/transaction/FtRetryAlarmReceiver;->isFromBootAction:Z
 
@@ -49,8 +48,6 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     const-string v3, "Mms/FtRetryAlarmReceiver"
 

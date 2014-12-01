@@ -85,7 +85,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v4}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v4}, Lcom/android/phone/PhoneGlobals;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v4
 
@@ -110,7 +110,7 @@
 
     move-result-object v5
 
-    invoke-virtual {v5}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v5}, Lcom/android/phone/PhoneGlobals;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v5
 
@@ -147,7 +147,7 @@
 
     move-result-object v5
 
-    invoke-virtual {v5}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v5}, Lcom/android/phone/PhoneGlobals;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v5
 
@@ -162,7 +162,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v14, v4}, Ljava/text/Format;->format(Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {v14, v4}, Ljava/text/DateFormat;->format(Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v13
 
@@ -351,7 +351,7 @@
 
     const v5, 0x7f09000c
 
-    invoke-virtual {v4, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {v4, v5}, Lcom/android/phone/PhoneGlobals;->getString(I)Ljava/lang/String;
 
     move-result-object v20
 
@@ -442,7 +442,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v4}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v4}, Lcom/android/phone/PhoneGlobals;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v4
 
@@ -573,7 +573,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v4}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v4}, Lcom/android/phone/PhoneGlobals;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v4
 
@@ -644,7 +644,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v4}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v4}, Lcom/android/phone/PhoneGlobals;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v4
 
@@ -676,7 +676,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v4}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v4}, Lcom/android/phone/PhoneGlobals;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v4
 
@@ -739,7 +739,7 @@
     :goto_4
     const v4, 0x7f0a015c
 
-    const v5, 0x7f0202f6
+    const v5, 0x7f0202f5
 
     move-object/from16 v0, v25
 
@@ -878,7 +878,7 @@
 
     const v5, 0x7f09000a
 
-    invoke-virtual {v4, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {v4, v5}, Lcom/android/phone/PhoneGlobals;->getString(I)Ljava/lang/String;
 
     move-result-object v20
 
@@ -1005,7 +1005,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v4}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v4}, Lcom/android/phone/PhoneGlobals;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v4
 
@@ -1037,7 +1037,7 @@
     :cond_e
     const v4, 0x7f0a00b9
 
-    const v5, 0x7f0202f6
+    const v5, 0x7f0202f5
 
     move-object/from16 v0, v25
 

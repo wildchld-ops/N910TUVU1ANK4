@@ -30,9 +30,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/am/MultiWindowManagerService;Landroid/os/IBinder;ILandroid/os/IBinder;)V
     .locals 0
-    .param p2    # Landroid/os/IBinder;
-    .param p3    # I
-    .param p4    # Landroid/os/IBinder;
 
     iput-object p1, p0, Lcom/android/server/am/MultiWindowManagerService$CallbackDeathRecipient;->this$0:Lcom/android/server/am/MultiWindowManagerService;
 

@@ -63,7 +63,6 @@
 
 .method private backCorruption(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const-string v1, ":memory"
 
@@ -199,7 +198,6 @@
 
 .method private deleteDatabaseFile(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const-string v1, ":memory:"
 
@@ -293,7 +291,6 @@
 # virtual methods
 .method public onCorruption(Landroid/database/sqlite/SQLiteDatabase;)V
     .locals 13
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {p1}, Landroid/database/sqlite/SQLiteDatabase;->getPath()Ljava/lang/String;
 

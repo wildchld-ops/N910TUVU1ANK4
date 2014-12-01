@@ -258,7 +258,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -297,8 +296,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -385,7 +382,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/ui/CMASViewer;)Lcom/android/mms/data/Conversation;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/CMASViewer;
 
     iget-object v0, p0, Lcom/android/mms/ui/CMASViewer;->mConversation:Lcom/android/mms/data/Conversation;
 
@@ -394,7 +390,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/ui/CMASViewer;)Landroid/app/Activity;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/CMASViewer;
 
     iget-object v0, p0, Lcom/android/mms/ui/CMASViewer;->mActivity:Landroid/app/Activity;
 
@@ -403,7 +398,6 @@
 
 .method static synthetic access$1000(Lcom/android/mms/ui/CMASViewer;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/CMASViewer;
 
     iget-object v0, p0, Lcom/android/mms/ui/CMASViewer;->cmas_alert_type_tv:Landroid/widget/TextView;
 
@@ -412,7 +406,6 @@
 
 .method static synthetic access$1100(Lcom/android/mms/ui/CMASViewer;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/CMASViewer;
 
     iget-object v0, p0, Lcom/android/mms/ui/CMASViewer;->cmas_date_time_tv:Landroid/widget/TextView;
 
@@ -421,7 +414,6 @@
 
 .method static synthetic access$1200(Lcom/android/mms/ui/CMASViewer;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/CMASViewer;
 
     iget-object v0, p0, Lcom/android/mms/ui/CMASViewer;->cmas_msg_expiry_tv:Landroid/widget/TextView;
 
@@ -430,7 +422,6 @@
 
 .method static synthetic access$1300(Lcom/android/mms/ui/CMASViewer;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/CMASViewer;
 
     invoke-direct {p0}, Lcom/android/mms/ui/CMASViewer;->CmasViewerSetTxtSize()V
 
@@ -439,7 +430,6 @@
 
 .method static synthetic access$1400(Lcom/android/mms/ui/CMASViewer;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/CMASViewer;
 
     invoke-direct {p0}, Lcom/android/mms/ui/CMASViewer;->finishTask()V
 
@@ -448,7 +438,6 @@
 
 .method static synthetic access$1500(Lcom/android/mms/ui/CMASViewer;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/CMASViewer;
 
     iget-object v0, p0, Lcom/android/mms/ui/CMASViewer;->mContext:Landroid/content/Context;
 
@@ -457,7 +446,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/ui/CMASViewer;)J
     .locals 2
-    .param p0    # Lcom/android/mms/ui/CMASViewer;
 
     iget-wide v0, p0, Lcom/android/mms/ui/CMASViewer;->msgId:J
 
@@ -466,8 +454,6 @@
 
 .method static synthetic access$202(Lcom/android/mms/ui/CMASViewer;J)J
     .locals 0
-    .param p0    # Lcom/android/mms/ui/CMASViewer;
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/android/mms/ui/CMASViewer;->msgId:J
 
@@ -476,7 +462,6 @@
 
 .method static synthetic access$300(Lcom/android/mms/ui/CMASViewer;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/CMASViewer;
 
     iget-object v0, p0, Lcom/android/mms/ui/CMASViewer;->msgText:Ljava/lang/String;
 
@@ -485,8 +470,6 @@
 
 .method static synthetic access$302(Lcom/android/mms/ui/CMASViewer;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/CMASViewer;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/mms/ui/CMASViewer;->msgText:Ljava/lang/String;
 
@@ -495,7 +478,6 @@
 
 .method static synthetic access$400(Lcom/android/mms/ui/CMASViewer;)J
     .locals 2
-    .param p0    # Lcom/android/mms/ui/CMASViewer;
 
     iget-wide v0, p0, Lcom/android/mms/ui/CMASViewer;->msgDate:J
 
@@ -504,8 +486,6 @@
 
 .method static synthetic access$402(Lcom/android/mms/ui/CMASViewer;J)J
     .locals 0
-    .param p0    # Lcom/android/mms/ui/CMASViewer;
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/android/mms/ui/CMASViewer;->msgDate:J
 
@@ -514,7 +494,6 @@
 
 .method static synthetic access$500(Lcom/android/mms/ui/CMASViewer;)I
     .locals 1
-    .param p0    # Lcom/android/mms/ui/CMASViewer;
 
     iget v0, p0, Lcom/android/mms/ui/CMASViewer;->msgServiceCategory:I
 
@@ -523,8 +502,6 @@
 
 .method static synthetic access$502(Lcom/android/mms/ui/CMASViewer;I)I
     .locals 0
-    .param p0    # Lcom/android/mms/ui/CMASViewer;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/mms/ui/CMASViewer;->msgServiceCategory:I
 
@@ -533,7 +510,6 @@
 
 .method static synthetic access$600(Lcom/android/mms/ui/CMASViewer;)J
     .locals 2
-    .param p0    # Lcom/android/mms/ui/CMASViewer;
 
     iget-wide v0, p0, Lcom/android/mms/ui/CMASViewer;->msgExpiry:J
 
@@ -542,8 +518,6 @@
 
 .method static synthetic access$602(Lcom/android/mms/ui/CMASViewer;J)J
     .locals 0
-    .param p0    # Lcom/android/mms/ui/CMASViewer;
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/android/mms/ui/CMASViewer;->msgExpiry:J
 
@@ -552,7 +526,6 @@
 
 .method static synthetic access$700(Lcom/android/mms/ui/CMASViewer;)I
     .locals 1
-    .param p0    # Lcom/android/mms/ui/CMASViewer;
 
     iget v0, p0, Lcom/android/mms/ui/CMASViewer;->mLocked:I
 
@@ -561,8 +534,6 @@
 
 .method static synthetic access$702(Lcom/android/mms/ui/CMASViewer;I)I
     .locals 0
-    .param p0    # Lcom/android/mms/ui/CMASViewer;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/mms/ui/CMASViewer;->mLocked:I
 
@@ -571,7 +542,6 @@
 
 .method static synthetic access$800(Lcom/android/mms/ui/CMASViewer;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/CMASViewer;
 
     iget-object v0, p0, Lcom/android/mms/ui/CMASViewer;->cmas_text_tv:Landroid/widget/TextView;
 
@@ -580,7 +550,6 @@
 
 .method static synthetic access$900(Lcom/android/mms/ui/CMASViewer;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/CMASViewer;
 
     iget-object v0, p0, Lcom/android/mms/ui/CMASViewer;->cmas_data_tv:Landroid/widget/TextView;
 
@@ -589,7 +558,6 @@
 
 .method private confirmDeleteThread(J)V
     .locals 3
-    .param p1    # J
 
     const-string v0, "CMASViewer"
 
@@ -624,7 +592,6 @@
 
 .method private copyToClipboard(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/mms/ui/CMASViewer;->mActivity:Landroid/app/Activity;
 
@@ -665,8 +632,6 @@
 
 .method public static createIntent(Landroid/content/Context;J)Landroid/content/Intent;
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
 
     new-instance v0, Landroid/content/Intent;
 
@@ -742,8 +707,6 @@
 
 .method public static createIntentForNoti(Landroid/content/Context;J)Landroid/content/Intent;
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
 
     new-instance v0, Landroid/content/Intent;
 
@@ -918,8 +881,6 @@
 
 .method private initActivityState(Landroid/os/Bundle;Landroid/content/Intent;)V
     .locals 10
-    .param p1    # Landroid/os/Bundle;
-    .param p2    # Landroid/content/Intent;
 
     const-wide/16 v8, 0x0
 
@@ -1209,8 +1170,6 @@
 
 .method private lockMessage(JZ)V
     .locals 8
-    .param p1    # J
-    .param p3    # Z
 
     const/4 v5, 0x0
 
@@ -1303,7 +1262,6 @@
 
 .method private declared-synchronized setIntent(Landroid/content/Intent;)V
     .locals 2
-    .param p1    # Landroid/content/Intent;
 
     monitor-enter p0
 
@@ -1527,7 +1485,6 @@
 # virtual methods
 .method public configurationChanged(Landroid/content/res/Configuration;)V
     .locals 0
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-direct {p0}, Lcom/android/mms/ui/CMASViewer;->finishTask()V
 
@@ -1553,7 +1510,6 @@
 
 .method public dispatchKeyEvent(Landroid/view/KeyEvent;)Z
     .locals 5
-    .param p1    # Landroid/view/KeyEvent;
 
     const/4 v1, 0x1
 
@@ -1684,7 +1640,6 @@
 
 .method public initialize(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     invoke-direct {p0}, Lcom/android/mms/ui/CMASViewer;->getIntent()Landroid/content/Intent;
 
@@ -1812,7 +1767,6 @@
 
 .method public onContextItemSelected(Landroid/view/MenuItem;)Z
     .locals 5
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v1, 0x0
 
@@ -1929,8 +1883,6 @@
 
 .method public onCreate(Landroid/os/Bundle;Landroid/content/Intent;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
-    .param p2    # Landroid/content/Intent;
 
     invoke-direct {p0, p2}, Lcom/android/mms/ui/CMASViewer;->setIntent(Landroid/content/Intent;)V
 
@@ -2037,7 +1989,6 @@
 
 .method public onNewIntent(Landroid/content/Intent;)V
     .locals 10
-    .param p1    # Landroid/content/Intent;
 
     const-wide/16 v8, 0x0
 
@@ -2250,7 +2201,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 3
-    .param p1    # Landroid/view/MenuItem;
 
     const-string v0, "CMASViewer"
 
@@ -2336,7 +2286,6 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)Z
     .locals 4
-    .param p1    # Landroid/view/Menu;
 
     const/4 v3, 0x1
 
@@ -2458,7 +2407,6 @@
 
 .method public setActivity(Landroid/app/Activity;)V
     .locals 2
-    .param p1    # Landroid/app/Activity;
 
     const-string v0, "CMASViewer"
 
@@ -2473,7 +2421,6 @@
 
 .method public setConversationList(Lcom/android/mms/ui/ConversationListFragment;)V
     .locals 2
-    .param p1    # Lcom/android/mms/ui/ConversationListFragment;
 
     const-string v0, "CMASViewer"
 
@@ -2561,7 +2508,6 @@
 
 .method public setOnStateChangedListener(Lcom/android/mms/ui/OnEventListener;)V
     .locals 0
-    .param p1    # Lcom/android/mms/ui/OnEventListener;
 
     iput-object p1, p0, Lcom/android/mms/ui/CMASViewer;->mOnStateChangeListener:Lcom/android/mms/ui/OnEventListener;
 

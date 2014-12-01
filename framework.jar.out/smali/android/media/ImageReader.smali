@@ -61,10 +61,6 @@
 
 .method protected constructor <init>(IIII)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/4 v1, 0x1
 
@@ -157,7 +153,6 @@
 
 .method static synthetic access$1000(Landroid/media/ImageReader;)I
     .locals 1
-    .param p0    # Landroid/media/ImageReader;
 
     iget v0, p0, Landroid/media/ImageReader;->mNumPlanes:I
 
@@ -166,7 +161,6 @@
 
 .method static synthetic access$300(Landroid/media/ImageReader;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Landroid/media/ImageReader;
 
     iget-object v0, p0, Landroid/media/ImageReader;->mListenerLock:Ljava/lang/Object;
 
@@ -175,7 +169,6 @@
 
 .method static synthetic access$400(Landroid/media/ImageReader;)Landroid/media/ImageReader$OnImageAvailableListener;
     .locals 1
-    .param p0    # Landroid/media/ImageReader;
 
     iget-object v0, p0, Landroid/media/ImageReader;->mListener:Landroid/media/ImageReader$OnImageAvailableListener;
 
@@ -184,8 +177,6 @@
 
 .method static synthetic access$500(Landroid/media/ImageReader;Landroid/media/Image;)V
     .locals 0
-    .param p0    # Landroid/media/ImageReader;
-    .param p1    # Landroid/media/Image;
 
     invoke-direct {p0, p1}, Landroid/media/ImageReader;->releaseImage(Landroid/media/Image;)V
 
@@ -194,7 +185,6 @@
 
 .method static synthetic access$600(Landroid/media/ImageReader;)I
     .locals 1
-    .param p0    # Landroid/media/ImageReader;
 
     iget v0, p0, Landroid/media/ImageReader;->mFormat:I
 
@@ -203,7 +193,6 @@
 
 .method static synthetic access$700(Landroid/media/ImageReader;)I
     .locals 1
-    .param p0    # Landroid/media/ImageReader;
 
     iget v0, p0, Landroid/media/ImageReader;->mWidth:I
 
@@ -212,7 +201,6 @@
 
 .method static synthetic access$800(Landroid/media/ImageReader;)I
     .locals 1
-    .param p0    # Landroid/media/ImageReader;
 
     iget v0, p0, Landroid/media/ImageReader;->mHeight:I
 
@@ -221,7 +209,6 @@
 
 .method private acquireNextSurfaceImage(Landroid/media/ImageReader$SurfaceImage;)I
     .locals 4
-    .param p1    # Landroid/media/ImageReader$SurfaceImage;
 
     invoke-direct {p0, p1}, Landroid/media/ImageReader;->nativeImageSetup(Landroid/media/Image;)I
 
@@ -358,10 +345,6 @@
 
 .method public static newInstance(IIII)Landroid/media/ImageReader;
     .locals 1
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     new-instance v0, Landroid/media/ImageReader;
 
@@ -372,7 +355,6 @@
 
 .method private static postEventFromNative(Ljava/lang/Object;)V
     .locals 5
-    .param p0    # Ljava/lang/Object;
 
     move-object v2, p0
 
@@ -423,7 +405,6 @@
 
 .method private releaseImage(Landroid/media/Image;)V
     .locals 3
-    .param p1    # Landroid/media/Image;
 
     instance-of v1, p1, Landroid/media/ImageReader$SurfaceImage;
 
@@ -704,8 +685,6 @@
 
 .method public setOnImageAvailableListener(Landroid/media/ImageReader$OnImageAvailableListener;Landroid/os/Handler;)V
     .locals 4
-    .param p1    # Landroid/media/ImageReader$OnImageAvailableListener;
-    .param p2    # Landroid/os/Handler;
 
     iget-object v2, p0, Landroid/media/ImageReader;->mListenerLock:Ljava/lang/Object;
 

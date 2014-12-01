@@ -55,11 +55,11 @@
 
     move-result-object v2
 
-    invoke-virtual {v0, v1, v2}, Landroid/app/Activity;->setResult(ILandroid/content/Intent;)V
+    invoke-virtual {v0, v1, v2}, Lcom/android/phone/EmergencyCallbackModeExitDialog;->setResult(ILandroid/content/Intent;)V
 
     iget-object v0, p0, Lcom/android/phone/EmergencyCallbackModeExitDialog$3;->this$0:Lcom/android/phone/EmergencyCallbackModeExitDialog;
 
-    invoke-virtual {v0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {v0}, Lcom/android/phone/EmergencyCallbackModeExitDialog;->finish()V
 
     return-void
 .end method

@@ -20,8 +20,6 @@
 # direct methods
 .method public constructor <init>(Ljava/io/Writer;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/io/Writer;
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, -0x1
 
@@ -32,9 +30,6 @@
 
 .method public constructor <init>(Ljava/io/Writer;Ljava/lang/String;I)V
     .locals 1
-    .param p1    # Ljava/io/Writer;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     invoke-direct {p0, p1}, Ljava/io/PrintWriter;-><init>(Ljava/io/Writer;)V
 
@@ -145,8 +140,6 @@
 
 .method public printHexPair(Ljava/lang/String;I)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -187,8 +180,6 @@
 
 .method public printPair(Ljava/lang/String;Ljava/lang/Object;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Object;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -229,9 +220,6 @@
 
 .method public write([CII)V
     .locals 11
-    .param p1    # [C
-    .param p2    # I
-    .param p3    # I
 
     const/4 v10, 0x0
 

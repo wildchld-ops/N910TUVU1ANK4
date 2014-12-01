@@ -33,7 +33,6 @@
 # virtual methods
 .method public setProxyPort(I)V
     .locals 3
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

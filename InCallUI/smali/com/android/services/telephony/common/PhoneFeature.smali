@@ -136,7 +136,6 @@
 
 .method public static hasFeature(Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     if-eqz p0, :cond_0
 
@@ -354,7 +353,6 @@
 
 .method public static hasPutUpDownMotionFeature(Landroid/content/Context;)Z
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -449,7 +447,6 @@
 
 .method public static hasSensorHub(Landroid/content/Context;)Z
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -1013,7 +1010,6 @@
 
 .method public static makeFeature(Landroid/content/Context;)V
     .locals 0
-    .param p0    # Landroid/content/Context;
 
     sput-object p0, Lcom/android/services/telephony/common/PhoneFeature;->mContext:Landroid/content/Context;
 
@@ -1138,9 +1134,9 @@
 .method public static makeFeatureForCanada()V
     .locals 8
 
-    const/4 v2, 0x1
-
     const/4 v1, 0x0
+
+    const/4 v2, 0x1
 
     const-string v0, "d2vl"
 
@@ -4718,7 +4714,13 @@
 
     const-string v6, "gesture_callaccept"
 
-    invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    const-string v7, "SEC_FLOATING_FEATURE_SETTINGS_SUPPORT_AIR_MOTION"
+
+    invoke-static {v7}, Lcom/android/services/telephony/common/PhoneFeature$Floating;->getEnableStatus(Ljava/lang/String;)Z
+
+    move-result v7
+
+    invoke-static {v7}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v7
 

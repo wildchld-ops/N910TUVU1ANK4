@@ -17,8 +17,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;I)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/mms/rcs/transaction/RcsBaseTransaction;-><init>(Landroid/content/Context;I)V
 
@@ -37,9 +35,6 @@
 
 .method public onMessageReceived(Ljava/lang/String;JZ)V
     .locals 25
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
-    .param p4    # Z
 
     const-string v3, "Mms/RcsChatReceiveTransaction"
 
@@ -469,7 +464,6 @@
 
 .method public update(Lcom/android/mms/rcs/transaction/ImObservable;)V
     .locals 2
-    .param p1    # Lcom/android/mms/rcs/transaction/ImObservable;
 
     const-string v0, "Mms/RcsChatReceiveTransaction"
 

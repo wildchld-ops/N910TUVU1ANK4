@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,8 +36,6 @@
 # virtual methods
 .method public addNotification(Landroid/os/IBinder;Landroid/service/notification/StatusBarNotification;)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Landroid/service/notification/StatusBarNotification;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -275,7 +272,6 @@
 
 .method public blockRecentWindow(Z)V
     .locals 5
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -370,7 +366,6 @@
 
 .method public disable(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -504,7 +499,6 @@
 
 .method public removeIcon(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -548,7 +542,6 @@
 
 .method public removeNotification(Landroid/os/IBinder;)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -592,7 +585,6 @@
 
 .method public setCallBackground(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -636,8 +628,6 @@
 
 .method public setHardKeyboardStatus(ZZ)V
     .locals 5
-    .param p1    # Z
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -705,8 +695,6 @@
 
 .method public setIcon(ILcom/android/internal/statusbar/StatusBarIcon;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Lcom/android/internal/statusbar/StatusBarIcon;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -771,9 +759,6 @@
 
 .method public setImeWindowStatus(Landroid/os/IBinder;II)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -821,7 +806,6 @@
 
 .method public setMaxBrightness(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -865,7 +849,6 @@
 
 .method public setMultiWindowBg(Z)V
     .locals 5
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -919,7 +902,6 @@
 
 .method public setSemiTransparentMode(Z)V
     .locals 5
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -973,8 +955,6 @@
 
 .method public setSystemUiVisibility(II)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1020,7 +1000,6 @@
 
 .method public setTransGradationMode(Z)V
     .locals 5
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1074,7 +1053,6 @@
 
 .method public setUseWindowTrans(Z)V
     .locals 5
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1128,7 +1106,6 @@
 
 .method public setWindowSemiTransparentMode(Z)V
     .locals 5
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1182,8 +1159,6 @@
 
 .method public setWindowState(II)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1229,7 +1204,6 @@
 
 .method public setWindowTransGradationMode(Z)V
     .locals 5
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1406,7 +1380,6 @@
 
 .method public topAppWindowChanged(Z)V
     .locals 5
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1460,8 +1433,6 @@
 
 .method public updateNotification(Landroid/os/IBinder;Landroid/service/notification/StatusBarNotification;)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Landroid/service/notification/StatusBarNotification;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

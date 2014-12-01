@@ -28,8 +28,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -131,15 +129,12 @@
 # virtual methods
 .method public setOrientation(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public updateState(Landroid/content/Context;Lcom/android/services/telephony/common/Call;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/services/telephony/common/Call;
 
     sget-object v0, Lcom/android/incallui/rcs/RcsInvitation;->LOG_TAG:Ljava/lang/String;
 

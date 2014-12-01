@@ -31,8 +31,6 @@
 
 .method protected newEffectHandle(II)Lcom/immersion/EffectHandle;
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     new-instance v0, Lcom/immersion/android/EffectHandle;
 

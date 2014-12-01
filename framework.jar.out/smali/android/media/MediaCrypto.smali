@@ -22,8 +22,6 @@
 
 .method public constructor <init>(Ljava/util/UUID;[B)V
     .locals 1
-    .param p1    # Ljava/util/UUID;
-    .param p2    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/media/MediaCryptoException;
@@ -43,7 +41,6 @@
 
 .method private static final getByteArrayFromUUID(Ljava/util/UUID;)[B
     .locals 9
-    .param p0    # Ljava/util/UUID;
 
     invoke-virtual {p0}, Ljava/util/UUID;->getMostSignificantBits()J
 
@@ -100,7 +97,6 @@
 
 .method public static final isCryptoSchemeSupported(Ljava/util/UUID;)Z
     .locals 1
-    .param p0    # Ljava/util/UUID;
 
     invoke-static {p0}, Landroid/media/MediaCrypto;->getByteArrayFromUUID(Ljava/util/UUID;)[B
 

@@ -40,7 +40,6 @@
 
 .method synthetic constructor <init>(Landroid/widget/RemoteViews$1;)V
     .locals 0
-    .param p1    # Landroid/widget/RemoteViews$1;
 
     invoke-direct {p0}, Landroid/widget/RemoteViews$Action;-><init>()V
 
@@ -106,14 +105,12 @@
 
 .method public setBitmapCache(Landroid/widget/RemoteViews$BitmapCache;)V
     .locals 0
-    .param p1    # Landroid/widget/RemoteViews$BitmapCache;
 
     return-void
 .end method
 
 .method public updateMemoryUsageEstimate(Landroid/widget/RemoteViews$MemoryUsageCounter;)V
     .locals 0
-    .param p1    # Landroid/widget/RemoteViews$MemoryUsageCounter;
 
     return-void
 .end method

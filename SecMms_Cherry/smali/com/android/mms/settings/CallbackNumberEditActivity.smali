@@ -63,7 +63,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/settings/CallbackNumberEditActivity;)V
     .locals 0
-    .param p0    # Lcom/android/mms/settings/CallbackNumberEditActivity;
 
     invoke-direct {p0}, Lcom/android/mms/settings/CallbackNumberEditActivity;->callbackSipHide()V
 
@@ -72,7 +71,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/settings/CallbackNumberEditActivity;)Landroid/widget/EditText;
     .locals 1
-    .param p0    # Lcom/android/mms/settings/CallbackNumberEditActivity;
 
     iget-object v0, p0, Lcom/android/mms/settings/CallbackNumberEditActivity;->mEditCallback:Landroid/widget/EditText;
 
@@ -81,7 +79,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/settings/CallbackNumberEditActivity;)V
     .locals 0
-    .param p0    # Lcom/android/mms/settings/CallbackNumberEditActivity;
 
     invoke-direct {p0}, Lcom/android/mms/settings/CallbackNumberEditActivity;->showToast()V
 
@@ -112,7 +109,6 @@
 
 .method public static disableOkButton(I)V
     .locals 2
-    .param p0    # I
 
     sget-object v0, Lcom/android/mms/settings/CallbackNumberEditActivity;->mSaveButton:Landroid/widget/Button;
 
@@ -250,7 +246,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p1}, Landroid/view/View;->getId()I
 
@@ -282,7 +277,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 0
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -293,7 +287,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 9
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v8, 0x0
 
@@ -537,7 +530,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 

@@ -55,7 +55,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/print/UserState$PrinterDiscoverySessionMediator;Landroid/os/Looper;)V
     .locals 2
-    .param p2    # Landroid/os/Looper;
 
     iput-object p1, p0, Lcom/android/server/print/UserState$PrinterDiscoverySessionMediator$SessionHandler;->this$1:Lcom/android/server/print/UserState$PrinterDiscoverySessionMediator;
 
@@ -72,7 +71,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 9
-    .param p1    # Landroid/os/Message;
 
     iget v8, p1, Landroid/os/Message;->what:I
 

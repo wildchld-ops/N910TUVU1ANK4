@@ -39,7 +39,6 @@
 # virtual methods
 .method public onTimaViolation(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     # getter for: Lcom/android/server/enterprise/isl/EnterpriseISLPolicy;->mAdminIdList:Ljava/util/List;
     invoke-static {}, Lcom/android/server/enterprise/isl/EnterpriseISLPolicy;->access$1000()Ljava/util/List;

@@ -43,7 +43,6 @@
 
 .method static synthetic access$300(Lcom/android/server/accessibility/TouchExplorer$InjectedPointerTracker;)Landroid/view/MotionEvent;
     .locals 1
-    .param p0    # Lcom/android/server/accessibility/TouchExplorer$InjectedPointerTracker;
 
     iget-object v0, p0, Lcom/android/server/accessibility/TouchExplorer$InjectedPointerTracker;->mLastInjectedHoverEventForClick:Landroid/view/MotionEvent;
 
@@ -52,8 +51,6 @@
 
 .method static synthetic access$302(Lcom/android/server/accessibility/TouchExplorer$InjectedPointerTracker;Landroid/view/MotionEvent;)Landroid/view/MotionEvent;
     .locals 0
-    .param p0    # Lcom/android/server/accessibility/TouchExplorer$InjectedPointerTracker;
-    .param p1    # Landroid/view/MotionEvent;
 
     iput-object p1, p0, Lcom/android/server/accessibility/TouchExplorer$InjectedPointerTracker;->mLastInjectedHoverEventForClick:Landroid/view/MotionEvent;
 
@@ -118,7 +115,6 @@
 
 .method public isInjectedPointerDown(I)Z
     .locals 3
-    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -141,7 +137,6 @@
 
 .method public onMotionEvent(Landroid/view/MotionEvent;)V
     .locals 5
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v4, 0x1
 

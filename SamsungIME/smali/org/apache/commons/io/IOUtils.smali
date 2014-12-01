@@ -58,7 +58,6 @@
 
 .method public static closeQuietly(Ljava/io/InputStream;)V
     .locals 1
-    .param p0    # Ljava/io/InputStream;
 
     if-eqz p0, :cond_0
 
@@ -79,7 +78,6 @@
 
 .method public static closeQuietly(Ljava/io/OutputStream;)V
     .locals 1
-    .param p0    # Ljava/io/OutputStream;
 
     if-eqz p0, :cond_0
 
@@ -100,7 +98,6 @@
 
 .method public static closeQuietly(Ljava/io/Reader;)V
     .locals 1
-    .param p0    # Ljava/io/Reader;
 
     if-eqz p0, :cond_0
 
@@ -121,7 +118,6 @@
 
 .method public static closeQuietly(Ljava/io/Writer;)V
     .locals 1
-    .param p0    # Ljava/io/Writer;
 
     if-eqz p0, :cond_0
 
@@ -142,8 +138,6 @@
 
 .method public static contentEquals(Ljava/io/InputStream;Ljava/io/InputStream;)Z
     .locals 7
-    .param p0    # Ljava/io/InputStream;
-    .param p1    # Ljava/io/InputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -214,8 +208,6 @@
 
 .method public static contentEquals(Ljava/io/Reader;Ljava/io/Reader;)Z
     .locals 7
-    .param p0    # Ljava/io/Reader;
-    .param p1    # Ljava/io/Reader;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -286,8 +278,6 @@
 
 .method public static copy(Ljava/io/InputStream;Ljava/io/OutputStream;)I
     .locals 4
-    .param p0    # Ljava/io/InputStream;
-    .param p1    # Ljava/io/OutputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -317,8 +307,6 @@
 
 .method public static copy(Ljava/io/Reader;Ljava/io/Writer;)I
     .locals 4
-    .param p0    # Ljava/io/Reader;
-    .param p1    # Ljava/io/Writer;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -348,8 +336,6 @@
 
 .method public static copy(Ljava/io/InputStream;Ljava/io/Writer;)V
     .locals 1
-    .param p0    # Ljava/io/InputStream;
-    .param p1    # Ljava/io/Writer;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -367,9 +353,6 @@
 
 .method public static copy(Ljava/io/InputStream;Ljava/io/Writer;Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/io/InputStream;
-    .param p1    # Ljava/io/Writer;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -395,8 +378,6 @@
 
 .method public static copy(Ljava/io/Reader;Ljava/io/OutputStream;)V
     .locals 1
-    .param p0    # Ljava/io/Reader;
-    .param p1    # Ljava/io/OutputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -416,9 +397,6 @@
 
 .method public static copy(Ljava/io/Reader;Ljava/io/OutputStream;Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/io/Reader;
-    .param p1    # Ljava/io/OutputStream;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -446,8 +424,6 @@
 
 .method public static copyLarge(Ljava/io/InputStream;Ljava/io/OutputStream;)J
     .locals 6
-    .param p0    # Ljava/io/InputStream;
-    .param p1    # Ljava/io/OutputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -487,8 +463,6 @@
 
 .method public static copyLarge(Ljava/io/Reader;Ljava/io/Writer;)J
     .locals 6
-    .param p0    # Ljava/io/Reader;
-    .param p1    # Ljava/io/Writer;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -528,8 +502,6 @@
 
 .method public static lineIterator(Ljava/io/InputStream;Ljava/lang/String;)Lorg/apache/commons/io/LineIterator;
     .locals 2
-    .param p0    # Ljava/io/InputStream;
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -561,7 +533,6 @@
 
 .method public static lineIterator(Ljava/io/Reader;)Lorg/apache/commons/io/LineIterator;
     .locals 1
-    .param p0    # Ljava/io/Reader;
 
     new-instance v0, Lorg/apache/commons/io/LineIterator;
 
@@ -572,7 +543,6 @@
 
 .method public static readLines(Ljava/io/InputStream;)Ljava/util/List;
     .locals 2
-    .param p0    # Ljava/io/InputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -592,8 +562,6 @@
 
 .method public static readLines(Ljava/io/InputStream;Ljava/lang/String;)Ljava/util/List;
     .locals 2
-    .param p0    # Ljava/io/InputStream;
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -623,7 +591,6 @@
 
 .method public static readLines(Ljava/io/Reader;)Ljava/util/List;
     .locals 3
-    .param p0    # Ljava/io/Reader;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -659,7 +626,6 @@
 
 .method public static toByteArray(Ljava/io/InputStream;)[B
     .locals 2
-    .param p0    # Ljava/io/InputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -681,7 +647,6 @@
 
 .method public static toByteArray(Ljava/io/Reader;)[B
     .locals 2
-    .param p0    # Ljava/io/Reader;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -703,8 +668,6 @@
 
 .method public static toByteArray(Ljava/io/Reader;Ljava/lang/String;)[B
     .locals 2
-    .param p0    # Ljava/io/Reader;
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -726,7 +689,6 @@
 
 .method public static toByteArray(Ljava/lang/String;)[B
     .locals 1
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -742,7 +704,6 @@
 
 .method public static toCharArray(Ljava/io/InputStream;)[C
     .locals 2
-    .param p0    # Ljava/io/InputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -764,8 +725,6 @@
 
 .method public static toCharArray(Ljava/io/InputStream;Ljava/lang/String;)[C
     .locals 2
-    .param p0    # Ljava/io/InputStream;
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -787,7 +746,6 @@
 
 .method public static toCharArray(Ljava/io/Reader;)[C
     .locals 2
-    .param p0    # Ljava/io/Reader;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -809,7 +767,6 @@
 
 .method public static toInputStream(Ljava/lang/String;)Ljava/io/InputStream;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     invoke-virtual {p0}, Ljava/lang/String;->getBytes()[B
 
@@ -824,8 +781,6 @@
 
 .method public static toInputStream(Ljava/lang/String;Ljava/lang/String;)Ljava/io/InputStream;
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -855,7 +810,6 @@
 
 .method public static toString(Ljava/io/InputStream;)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/io/InputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -877,8 +831,6 @@
 
 .method public static toString(Ljava/io/InputStream;Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/io/InputStream;
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -900,7 +852,6 @@
 
 .method public static toString(Ljava/io/Reader;)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/io/Reader;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -922,7 +873,6 @@
 
 .method public static toString([B)Ljava/lang/String;
     .locals 1
-    .param p0    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -938,8 +888,6 @@
 
 .method public static toString([BLjava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p0    # [B
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -965,8 +913,6 @@
 
 .method public static write(Ljava/lang/String;Ljava/io/OutputStream;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/io/OutputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -987,9 +933,6 @@
 
 .method public static write(Ljava/lang/String;Ljava/io/OutputStream;Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/io/OutputStream;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1018,8 +961,6 @@
 
 .method public static write(Ljava/lang/String;Ljava/io/Writer;)V
     .locals 0
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/io/Writer;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1036,8 +977,6 @@
 
 .method public static write(Ljava/lang/StringBuffer;Ljava/io/OutputStream;)V
     .locals 1
-    .param p0    # Ljava/lang/StringBuffer;
-    .param p1    # Ljava/io/OutputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1062,9 +1001,6 @@
 
 .method public static write(Ljava/lang/StringBuffer;Ljava/io/OutputStream;Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/StringBuffer;
-    .param p1    # Ljava/io/OutputStream;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1097,8 +1033,6 @@
 
 .method public static write(Ljava/lang/StringBuffer;Ljava/io/Writer;)V
     .locals 1
-    .param p0    # Ljava/lang/StringBuffer;
-    .param p1    # Ljava/io/Writer;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1119,8 +1053,6 @@
 
 .method public static write([BLjava/io/OutputStream;)V
     .locals 0
-    .param p0    # [B
-    .param p1    # Ljava/io/OutputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1137,8 +1069,6 @@
 
 .method public static write([BLjava/io/Writer;)V
     .locals 1
-    .param p0    # [B
-    .param p1    # Ljava/io/Writer;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1159,9 +1089,6 @@
 
 .method public static write([BLjava/io/Writer;Ljava/lang/String;)V
     .locals 1
-    .param p0    # [B
-    .param p1    # Ljava/io/Writer;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1190,8 +1117,6 @@
 
 .method public static write([CLjava/io/OutputStream;)V
     .locals 1
-    .param p0    # [C
-    .param p1    # Ljava/io/OutputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1216,9 +1141,6 @@
 
 .method public static write([CLjava/io/OutputStream;Ljava/lang/String;)V
     .locals 1
-    .param p0    # [C
-    .param p1    # Ljava/io/OutputStream;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1251,8 +1173,6 @@
 
 .method public static write([CLjava/io/Writer;)V
     .locals 0
-    .param p0    # [C
-    .param p1    # Ljava/io/Writer;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1269,9 +1189,6 @@
 
 .method public static writeLines(Ljava/util/Collection;Ljava/lang/String;Ljava/io/OutputStream;)V
     .locals 3
-    .param p0    # Ljava/util/Collection;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/io/OutputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1328,10 +1245,6 @@
 
 .method public static writeLines(Ljava/util/Collection;Ljava/lang/String;Ljava/io/OutputStream;Ljava/lang/String;)V
     .locals 3
-    .param p0    # Ljava/util/Collection;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/io/OutputStream;
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1392,9 +1305,6 @@
 
 .method public static writeLines(Ljava/util/Collection;Ljava/lang/String;Ljava/io/Writer;)V
     .locals 3
-    .param p0    # Ljava/util/Collection;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/io/Writer;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

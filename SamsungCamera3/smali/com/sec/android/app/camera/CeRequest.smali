@@ -202,8 +202,6 @@
 
 .method public constructor <init>(ILjava/lang/Object;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/Object;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -224,8 +222,6 @@
 
 .method public static obtainCeRequest(ILjava/lang/Object;)Lcom/sec/android/app/camera/CeRequest;
     .locals 4
-    .param p0    # I
-    .param p1    # Ljava/lang/Object;
 
     const/4 v3, 0x1
 
@@ -291,7 +287,6 @@
 # virtual methods
 .method public equals(Ljava/lang/Object;)Z
     .locals 3
-    .param p1    # Ljava/lang/Object;
 
     const/4 v0, 0x0
 
@@ -343,7 +338,6 @@
 
 .method public setRequest(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/app/camera/CeRequest;->mRequest:I
 

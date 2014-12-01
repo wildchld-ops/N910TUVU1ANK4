@@ -33,7 +33,6 @@
 # virtual methods
 .method public onAnimationEnd(Landroid/animation/Animator;)V
     .locals 5
-    .param p1    # Landroid/animation/Animator;
 
     iget-object v3, p0, Lcom/android/mms/animation/MsgListSelectionAnimation$4;->this$0:Lcom/android/mms/animation/MsgListSelectionAnimation;
 

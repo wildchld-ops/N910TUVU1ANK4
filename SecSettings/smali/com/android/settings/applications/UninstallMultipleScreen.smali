@@ -130,7 +130,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/applications/UninstallMultipleScreen;)Landroid/widget/ListView;
     .locals 1
-    .param p0    # Lcom/android/settings/applications/UninstallMultipleScreen;
 
     iget-object v0, p0, Lcom/android/settings/applications/UninstallMultipleScreen;->mAppListView:Landroid/widget/ListView;
 
@@ -139,7 +138,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/applications/UninstallMultipleScreen;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/settings/applications/UninstallMultipleScreen;
 
     iget-object v0, p0, Lcom/android/settings/applications/UninstallMultipleScreen;->mDownloadedAppsList:Ljava/util/ArrayList;
 
@@ -148,7 +146,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/applications/UninstallMultipleScreen;)Landroid/widget/CheckBox;
     .locals 1
-    .param p0    # Lcom/android/settings/applications/UninstallMultipleScreen;
 
     iget-object v0, p0, Lcom/android/settings/applications/UninstallMultipleScreen;->mSelectAllButton:Landroid/widget/CheckBox;
 
@@ -157,7 +154,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/applications/UninstallMultipleScreen;)Landroid/view/MenuItem;
     .locals 1
-    .param p0    # Lcom/android/settings/applications/UninstallMultipleScreen;
 
     iget-object v0, p0, Lcom/android/settings/applications/UninstallMultipleScreen;->mDone:Landroid/view/MenuItem;
 
@@ -166,7 +162,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/applications/UninstallMultipleScreen;)Ljava/util/List;
     .locals 1
-    .param p0    # Lcom/android/settings/applications/UninstallMultipleScreen;
 
     iget-object v0, p0, Lcom/android/settings/applications/UninstallMultipleScreen;->selectedPackages:Ljava/util/List;
 
@@ -175,7 +170,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/applications/UninstallMultipleScreen;)Landroid/app/ProgressDialog;
     .locals 1
-    .param p0    # Lcom/android/settings/applications/UninstallMultipleScreen;
 
     iget-object v0, p0, Lcom/android/settings/applications/UninstallMultipleScreen;->mProgressDialog:Landroid/app/ProgressDialog;
 
@@ -184,8 +178,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/applications/UninstallMultipleScreen;Ljava/util/List;)V
     .locals 0
-    .param p0    # Lcom/android/settings/applications/UninstallMultipleScreen;
-    .param p1    # Ljava/util/List;
 
     invoke-direct {p0, p1}, Lcom/android/settings/applications/UninstallMultipleScreen;->UninstallPackages(Ljava/util/List;)V
 
@@ -194,7 +186,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/applications/UninstallMultipleScreen;)Lcom/android/settings/applications/UninstallMultipleScreen$AppAdapter;
     .locals 1
-    .param p0    # Lcom/android/settings/applications/UninstallMultipleScreen;
 
     iget-object v0, p0, Lcom/android/settings/applications/UninstallMultipleScreen;->mAdapter:Lcom/android/settings/applications/UninstallMultipleScreen$AppAdapter;
 
@@ -403,7 +394,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 0
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -414,7 +404,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
@@ -503,7 +492,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 3
-    .param p1    # Landroid/view/Menu;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreateOptionsMenu(Landroid/view/Menu;)Z
 
@@ -536,7 +524,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 2
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v0, 0x1
 
@@ -574,8 +561,6 @@
 
 .method public packageDeleted(Ljava/lang/String;I)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

@@ -56,8 +56,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/widget/Switch;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/widget/Switch;
 
     const/4 v0, 0x0
 
@@ -118,8 +116,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Lcom/sec/android/touchwiz/widget/TwCheckBox;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
     const/4 v0, 0x0
 
@@ -178,7 +174,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/ToddlerModeSwitchEnabler;)Landroid/app/AlertDialog;
     .locals 1
-    .param p0    # Lcom/android/settings/ToddlerModeSwitchEnabler;
 
     iget-object v0, p0, Lcom/android/settings/ToddlerModeSwitchEnabler;->mAlertDialog:Landroid/app/AlertDialog;
 
@@ -187,7 +182,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/ToddlerModeSwitchEnabler;)Lcom/sec/android/touchwiz/widget/TwCheckBox;
     .locals 1
-    .param p0    # Lcom/android/settings/ToddlerModeSwitchEnabler;
 
     iget-object v0, p0, Lcom/android/settings/ToddlerModeSwitchEnabler;->mCheck:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
@@ -196,7 +190,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/ToddlerModeSwitchEnabler;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/settings/ToddlerModeSwitchEnabler;
 
     iget-object v0, p0, Lcom/android/settings/ToddlerModeSwitchEnabler;->mContext:Landroid/content/Context;
 
@@ -205,7 +198,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/ToddlerModeSwitchEnabler;)Landroid/widget/Switch;
     .locals 1
-    .param p0    # Lcom/android/settings/ToddlerModeSwitchEnabler;
 
     iget-object v0, p0, Lcom/android/settings/ToddlerModeSwitchEnabler;->mSwitch:Landroid/widget/Switch;
 
@@ -214,8 +206,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/ToddlerModeSwitchEnabler;Z)V
     .locals 0
-    .param p0    # Lcom/android/settings/ToddlerModeSwitchEnabler;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/settings/ToddlerModeSwitchEnabler;->setMode(Z)V
 
@@ -224,7 +214,6 @@
 
 .method public static isToddlerModeOn(Landroid/content/Context;)Z
     .locals 5
-    .param p0    # Landroid/content/Context;
 
     const/4 v0, 0x1
 
@@ -255,7 +244,6 @@
 
 .method private setMode(Z)V
     .locals 7
-    .param p1    # Z
 
     const/4 v1, 0x1
 
@@ -453,7 +441,6 @@
 
 .method private showConfirmPopup(Z)V
     .locals 5
-    .param p1    # Z
 
     const/4 v1, 0x0
 
@@ -576,8 +563,6 @@
 # virtual methods
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 3
-    .param p1    # Landroid/widget/CompoundButton;
-    .param p2    # Z
 
     const-string v0, "ToddlerModeSwitchEnabler"
 
@@ -676,8 +661,6 @@
 
 .method public onCheckedChanged(Lcom/sec/android/touchwiz/widget/TwCompoundButton;Z)V
     .locals 3
-    .param p1    # Lcom/sec/android/touchwiz/widget/TwCompoundButton;
-    .param p2    # Z
 
     const-string v0, "ToddlerModeSwitchEnabler"
 
@@ -919,7 +902,6 @@
 
 .method public setCheckBox(Lcom/sec/android/touchwiz/widget/TwCheckBox;)V
     .locals 2
-    .param p1    # Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
     iget-object v0, p0, Lcom/android/settings/ToddlerModeSwitchEnabler;->mCheck:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 

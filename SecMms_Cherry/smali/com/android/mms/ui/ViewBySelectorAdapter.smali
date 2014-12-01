@@ -26,9 +26,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;ZZ)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Z
-    .param p3    # Z
 
     invoke-static {p1, p2, p3}, Lcom/android/mms/ui/ViewBySelectorAdapter;->getData(Landroid/content/Context;ZZ)Ljava/util/List;
 
@@ -41,9 +38,6 @@
 
 .method protected static addItem(Ljava/util/List;Ljava/lang/String;Landroid/graphics/drawable/Drawable;I)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/graphics/drawable/Drawable;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -68,9 +62,6 @@
 
 .method protected static getData(Landroid/content/Context;ZZ)Ljava/util/List;
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -150,7 +141,6 @@
 # virtual methods
 .method public buttonToCommand(I)I
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/widget/ArrayAdapter;->getItem(I)Ljava/lang/Object;
 

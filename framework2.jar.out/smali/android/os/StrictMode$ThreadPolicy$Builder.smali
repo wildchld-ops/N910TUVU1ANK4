@@ -35,7 +35,6 @@
 
 .method public constructor <init>(Landroid/os/StrictMode$ThreadPolicy;)V
     .locals 1
-    .param p1    # Landroid/os/StrictMode$ThreadPolicy;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -52,7 +51,6 @@
 
 .method private disable(I)Landroid/os/StrictMode$ThreadPolicy$Builder;
     .locals 2
-    .param p1    # I
 
     iget v0, p0, Landroid/os/StrictMode$ThreadPolicy$Builder;->mMask:I
 
@@ -67,7 +65,6 @@
 
 .method private enable(I)Landroid/os/StrictMode$ThreadPolicy$Builder;
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/os/StrictMode$ThreadPolicy$Builder;->mMask:I
 

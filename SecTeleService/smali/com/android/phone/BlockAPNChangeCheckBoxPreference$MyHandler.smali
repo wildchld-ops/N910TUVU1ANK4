@@ -86,7 +86,7 @@
 
     iget-object v2, p0, Lcom/android/phone/BlockAPNChangeCheckBoxPreference$MyHandler;->this$0:Lcom/android/phone/BlockAPNChangeCheckBoxPreference;
 
-    invoke-virtual {v2, v1}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+    invoke-virtual {v2, v1}, Lcom/android/phone/BlockAPNChangeCheckBoxPreference;->setChecked(Z)V
 
     goto :goto_0
 

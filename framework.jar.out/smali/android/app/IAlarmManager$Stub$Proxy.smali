@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -53,7 +52,6 @@
 
 .method public remove(Landroid/app/PendingIntent;)V
     .locals 5
-    .param p1    # Landroid/app/PendingIntent;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -124,12 +122,6 @@
 
 .method public set(IJJJLandroid/app/PendingIntent;Landroid/os/WorkSource;)V
     .locals 5
-    .param p1    # I
-    .param p2    # J
-    .param p4    # J
-    .param p6    # J
-    .param p8    # Landroid/app/PendingIntent;
-    .param p9    # Landroid/os/WorkSource;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -229,7 +221,6 @@
 
 .method public setAutoPowerUp(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -281,7 +272,6 @@
 
 .method public setTime(J)V
     .locals 5
-    .param p1    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -333,7 +323,6 @@
 
 .method public setTimeZone(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -385,8 +374,6 @@
 
 .method public shutdownTimeAfterFakeOff(ZI)I
     .locals 6
-    .param p1    # Z
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

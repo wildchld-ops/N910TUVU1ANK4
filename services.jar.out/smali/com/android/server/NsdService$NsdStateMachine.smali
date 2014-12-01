@@ -35,7 +35,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/NsdService;Ljava/lang/String;)V
     .locals 2
-    .param p2    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/server/NsdService$NsdStateMachine;->this$0:Lcom/android/server/NsdService;
 
@@ -105,7 +104,6 @@
 
 .method static synthetic access$1400(Lcom/android/server/NsdService$NsdStateMachine;)Lcom/android/server/NsdService$NsdStateMachine$DisabledState;
     .locals 1
-    .param p0    # Lcom/android/server/NsdService$NsdStateMachine;
 
     iget-object v0, p0, Lcom/android/server/NsdService$NsdStateMachine;->mDisabledState:Lcom/android/server/NsdService$NsdStateMachine$DisabledState;
 
@@ -114,8 +112,6 @@
 
 .method static synthetic access$1500(Lcom/android/server/NsdService$NsdStateMachine;Lcom/android/internal/util/IState;)V
     .locals 0
-    .param p0    # Lcom/android/server/NsdService$NsdStateMachine;
-    .param p1    # Lcom/android/internal/util/IState;
 
     invoke-virtual {p0, p1}, Lcom/android/internal/util/StateMachine;->transitionTo(Lcom/android/internal/util/IState;)V
 
@@ -124,7 +120,6 @@
 
 .method static synthetic access$800(Lcom/android/server/NsdService$NsdStateMachine;)Lcom/android/server/NsdService$NsdStateMachine$EnabledState;
     .locals 1
-    .param p0    # Lcom/android/server/NsdService$NsdStateMachine;
 
     iget-object v0, p0, Lcom/android/server/NsdService$NsdStateMachine;->mEnabledState:Lcom/android/server/NsdService$NsdStateMachine$EnabledState;
 
@@ -133,8 +128,6 @@
 
 .method static synthetic access$900(Lcom/android/server/NsdService$NsdStateMachine;Lcom/android/internal/util/IState;)V
     .locals 0
-    .param p0    # Lcom/android/server/NsdService$NsdStateMachine;
-    .param p1    # Lcom/android/internal/util/IState;
 
     invoke-virtual {p0, p1}, Lcom/android/internal/util/StateMachine;->transitionTo(Lcom/android/internal/util/IState;)V
 
@@ -180,7 +173,6 @@
 # virtual methods
 .method protected getWhatToString(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     # invokes: Lcom/android/server/NsdService;->cmdToString(I)Ljava/lang/String;
     invoke-static {p1}, Lcom/android/server/NsdService;->access$000(I)Ljava/lang/String;

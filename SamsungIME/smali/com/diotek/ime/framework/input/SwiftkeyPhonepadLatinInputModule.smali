@@ -333,8 +333,6 @@
 
 .method private processMultiTap(I[I)V
     .locals 20
-    .param p1    # I
-    .param p2    # [I
 
     move-object/from16 v0, p0
 
@@ -1336,8 +1334,6 @@
 
 .method private processSingleTap(I[I)V
     .locals 4
-    .param p1    # I
-    .param p2    # [I
 
     const/4 v3, 0x0
 
@@ -1539,8 +1535,6 @@
 
 .method private processWordSeparator(I[I)V
     .locals 10
-    .param p1    # I
-    .param p2    # [I
 
     const/16 v9, 0x20
 
@@ -1808,8 +1802,6 @@
 
 .method public onCharacterKey(I[I)V
     .locals 9
-    .param p1    # I
-    .param p2    # [I
 
     const/4 v5, 0x0
 
@@ -1971,16 +1963,12 @@
 
 .method public onHwrPanelLongPressed(ILjava/lang/String;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method public pickSuggestionManually(ILjava/lang/CharSequence;)V
     .locals 13
-    .param p1    # I
-    .param p2    # Ljava/lang/CharSequence;
 
     iget-object v11, p0, Lcom/diotek/ime/framework/input/AbstractInputModule;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -2327,16 +2315,12 @@
 
 .method public previewTrace(IZ)V
     .locals 0
-    .param p1    # I
-    .param p2    # Z
 
     return-void
 .end method
 
 .method protected processSymbolicKey(I[I)V
     .locals 6
-    .param p1    # I
-    .param p2    # [I
 
     const/4 v5, 0x0
 
@@ -2492,7 +2476,6 @@
 
 .method public toUpperCaseOfTurkish(I)I
     .locals 1
-    .param p1    # I
 
     const/16 v0, 0x69
 

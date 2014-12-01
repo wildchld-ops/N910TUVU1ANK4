@@ -90,7 +90,6 @@
 # direct methods
 .method private constructor <init>(Landroid/hardware/input/IInputManager;)V
     .locals 1
-    .param p1    # Landroid/hardware/input/IInputManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -113,8 +112,6 @@
 
 .method static synthetic access$100(Landroid/hardware/input/InputManager;[I)V
     .locals 0
-    .param p0    # Landroid/hardware/input/InputManager;
-    .param p1    # [I
 
     invoke-direct {p0, p1}, Landroid/hardware/input/InputManager;->onInputDevicesChanged([I)V
 
@@ -123,7 +120,6 @@
 
 .method static synthetic access$200(Landroid/hardware/input/InputManager;)Landroid/hardware/input/IInputManager;
     .locals 1
-    .param p0    # Landroid/hardware/input/InputManager;
 
     iget-object v0, p0, Landroid/hardware/input/InputManager;->mIm:Landroid/hardware/input/IInputManager;
 
@@ -132,8 +128,6 @@
 
 .method private static containsDeviceId([II)Z
     .locals 2
-    .param p0    # [I
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -164,7 +158,6 @@
 
 .method private findInputDeviceListenerLocked(Landroid/hardware/input/InputManager$InputDeviceListener;)I
     .locals 3
-    .param p1    # Landroid/hardware/input/InputManager$InputDeviceListener;
 
     iget-object v2, p0, Landroid/hardware/input/InputManager;->mInputDeviceListeners:Ljava/util/ArrayList;
 
@@ -266,7 +259,6 @@
 
 .method private onInputDevicesChanged([I)V
     .locals 8
-    .param p1    # [I
 
     iget-object v6, p0, Landroid/hardware/input/InputManager;->mInputDevicesLock:Ljava/lang/Object;
 
@@ -479,8 +471,6 @@
 
 .method private sendMessageToInputDeviceListenersLocked(II)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     iget-object v3, p0, Landroid/hardware/input/InputManager;->mInputDeviceListeners:Ljava/util/ArrayList;
 
@@ -521,8 +511,6 @@
 # virtual methods
 .method public addKeyboardLayoutForInputDevice(Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -595,8 +583,6 @@
 
 .method public deviceHasKeys(I[I)[Z
     .locals 3
-    .param p1    # I
-    .param p2    # [I
 
     array-length v1, p2
 
@@ -622,7 +608,6 @@
 
 .method public deviceHasKeys([I)[Z
     .locals 1
-    .param p1    # [I
 
     const/4 v0, -0x1
 
@@ -635,7 +620,6 @@
 
 .method public getCurrentKeyboardLayoutForInputDevice(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -728,7 +712,6 @@
 
 .method public getInputDevice(I)Landroid/view/InputDevice;
     .locals 6
-    .param p1    # I
 
     iget-object v4, p0, Landroid/hardware/input/InputManager;->mInputDevicesLock:Ljava/lang/Object;
 
@@ -813,7 +796,6 @@
 
 .method public getInputDeviceByDescriptor(Ljava/lang/String;)Landroid/view/InputDevice;
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -926,7 +908,6 @@
 
 .method public getInputDeviceBySourceType(I)Landroid/view/InputDevice;
     .locals 8
-    .param p1    # I
 
     iget-object v7, p0, Landroid/hardware/input/InputManager;->mInputDevicesLock:Ljava/lang/Object;
 
@@ -1073,7 +1054,6 @@
 
 .method public getInputDeviceVibrator(I)Landroid/os/Vibrator;
     .locals 1
-    .param p1    # I
 
     new-instance v0, Landroid/hardware/input/InputManager$InputDeviceVibrator;
 
@@ -1084,7 +1064,6 @@
 
 .method public getKeyboardLayout(Ljava/lang/String;)Landroid/hardware/input/KeyboardLayout;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -1156,7 +1135,6 @@
 
 .method public getKeyboardLayoutsForInputDevice(Ljava/lang/String;)[Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -1203,7 +1181,6 @@
 
 .method public getPointerSpeed(Landroid/content/Context;)I
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -1231,9 +1208,6 @@
 
 .method public getScanCodeState(III)I
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     :try_start_0
     iget-object v1, p0, Landroid/hardware/input/InputManager;->mIm:Landroid/hardware/input/IInputManager;
@@ -1257,8 +1231,6 @@
 
 .method public injectInputEvent(Landroid/view/InputEvent;I)Z
     .locals 3
-    .param p1    # Landroid/view/InputEvent;
-    .param p2    # I
 
     const/4 v1, 0x0
 
@@ -1317,7 +1289,6 @@
 
 .method public monitorInput(Ljava/lang/String;)Landroid/view/InputChannel;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     iget-object v1, p0, Landroid/hardware/input/InputManager;->mIm:Landroid/hardware/input/IInputManager;
@@ -1341,8 +1312,6 @@
 
 .method public monitorInputEx(Ljava/lang/String;Z)Landroid/view/InputChannel;
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     :try_start_0
     iget-object v1, p0, Landroid/hardware/input/InputManager;->mIm:Landroid/hardware/input/IInputManager;
@@ -1366,8 +1335,6 @@
 
 .method public registerInputDeviceListener(Landroid/hardware/input/InputManager$InputDeviceListener;Landroid/os/Handler;)V
     .locals 4
-    .param p1    # Landroid/hardware/input/InputManager$InputDeviceListener;
-    .param p2    # Landroid/os/Handler;
 
     if-nez p1, :cond_0
 
@@ -1416,8 +1383,6 @@
 
 .method public removeKeyboardLayoutForInputDevice(Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -1465,8 +1430,6 @@
 
 .method public setCurrentKeyboardLayoutForInputDevice(Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -1514,7 +1477,6 @@
 
 .method public setDoNotUseVelocity(Z)I
     .locals 2
-    .param p1    # Z
 
     :try_start_0
     iget-object v1, p0, Landroid/hardware/input/InputManager;->mIm:Landroid/hardware/input/IInputManager;
@@ -1538,7 +1500,6 @@
 
 .method public setFlipCoverTouchEnabled(Z)V
     .locals 3
-    .param p1    # Z
 
     :try_start_0
     iget-object v1, p0, Landroid/hardware/input/InputManager;->mIm:Landroid/hardware/input/IInputManager;
@@ -1564,7 +1525,6 @@
 
 .method public setLedState(Z)I
     .locals 2
-    .param p1    # Z
 
     :try_start_0
     iget-object v1, p0, Landroid/hardware/input/InputManager;->mIm:Landroid/hardware/input/IInputManager;
@@ -1588,8 +1548,6 @@
 
 .method public setMonitorChannelFilter(Landroid/view/InputChannel;I)V
     .locals 1
-    .param p1    # Landroid/view/InputChannel;
-    .param p2    # I
 
     :try_start_0
     iget-object v0, p0, Landroid/hardware/input/InputManager;->mIm:Landroid/hardware/input/IInputManager;
@@ -1609,10 +1567,6 @@
 
 .method public setPointerBounds(FFFF)V
     .locals 3
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
 
     :try_start_0
     iget-object v1, p0, Landroid/hardware/input/InputManager;->mIm:Landroid/hardware/input/IInputManager;
@@ -1638,8 +1592,6 @@
 
 .method public setPointerSpeed(Landroid/content/Context;I)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     const/4 v0, -0x7
 
@@ -1672,7 +1624,6 @@
 
 .method public setStartedShutdown(Z)V
     .locals 1
-    .param p1    # Z
 
     :try_start_0
     iget-object v0, p0, Landroid/hardware/input/InputManager;->mIm:Landroid/hardware/input/IInputManager;
@@ -1692,9 +1643,6 @@
 
 .method public setWakeKeyDynamically(Ljava/lang/String;ZLjava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # Ljava/lang/String;
 
     :try_start_0
     iget-object v0, p0, Landroid/hardware/input/InputManager;->mIm:Landroid/hardware/input/IInputManager;
@@ -1714,7 +1662,6 @@
 
 .method public tryPointerSpeed(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v1, -0x7
 
@@ -1758,7 +1705,6 @@
 
 .method public unregisterInputDeviceListener(Landroid/hardware/input/InputManager$InputDeviceListener;)V
     .locals 4
-    .param p1    # Landroid/hardware/input/InputManager$InputDeviceListener;
 
     if-nez p1, :cond_0
 

@@ -43,7 +43,7 @@
 
     iget-object v0, p0, Lcom/android/phone/AutomaticConnectionsSettings$2;->this$0:Lcom/android/phone/AutomaticConnectionsSettings;
 
-    invoke-virtual {v0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v0}, Lcom/android/phone/AutomaticConnectionsSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -58,7 +58,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0, v2}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+    invoke-virtual {v0, v2}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     iget-object v0, p0, Lcom/android/phone/AutomaticConnectionsSettings$2;->this$0:Lcom/android/phone/AutomaticConnectionsSettings;
 

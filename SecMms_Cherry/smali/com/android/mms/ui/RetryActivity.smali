@@ -46,7 +46,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/ui/RetryActivity;)Landroid/net/Uri;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/RetryActivity;
 
     iget-object v0, p0, Lcom/android/mms/ui/RetryActivity;->mUri:Landroid/net/Uri;
 
@@ -55,7 +54,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/ui/RetryActivity;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/RetryActivity;
 
     invoke-direct {p0}, Lcom/android/mms/ui/RetryActivity;->moveMessageToFail()V
 
@@ -64,7 +62,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/ui/RetryActivity;)I
     .locals 1
-    .param p0    # Lcom/android/mms/ui/RetryActivity;
 
     iget v0, p0, Lcom/android/mms/ui/RetryActivity;->mError:I
 
@@ -193,7 +190,6 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
@@ -259,7 +255,6 @@
 
 .method protected onNewIntent(Landroid/content/Intent;)V
     .locals 2
-    .param p1    # Landroid/content/Intent;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onNewIntent(Landroid/content/Intent;)V
 

@@ -30,7 +30,6 @@
 # direct methods
 .method constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     const/4 v2, 0x1
 
@@ -123,8 +122,6 @@
 
 .method static synthetic access$000(Lcom/android/server/ConsumerIrService;Z)Z
     .locals 1
-    .param p0    # Lcom/android/server/ConsumerIrService;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/ConsumerIrService;->swtichLED(Z)Z
 
@@ -135,7 +132,6 @@
 
 .method private blinkLED(I)V
     .locals 4
-    .param p1    # I
 
     const-string v0, "ConsumerIrService"
 
@@ -219,7 +215,6 @@
 
 .method private swtichLED(Z)Z
     .locals 7
-    .param p1    # Z
 
     const/4 v3, 0x0
 
@@ -493,9 +488,6 @@
 
 .method public transmit(Ljava/lang/String;I[I)V
     .locals 16
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # [I
 
     move-object/from16 v0, p0
 

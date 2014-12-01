@@ -25,9 +25,6 @@
 # direct methods
 .method public constructor <init>(IJF)V
     .locals 0
-    .param p1    # I
-    .param p2    # J
-    .param p4    # F
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

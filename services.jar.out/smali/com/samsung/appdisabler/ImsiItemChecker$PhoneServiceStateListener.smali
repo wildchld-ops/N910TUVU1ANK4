@@ -33,8 +33,6 @@
 
 .method synthetic constructor <init>(Lcom/samsung/appdisabler/ImsiItemChecker;Lcom/samsung/appdisabler/ImsiItemChecker$1;)V
     .locals 0
-    .param p1    # Lcom/samsung/appdisabler/ImsiItemChecker;
-    .param p2    # Lcom/samsung/appdisabler/ImsiItemChecker$1;
 
     invoke-direct {p0, p1}, Lcom/samsung/appdisabler/ImsiItemChecker$PhoneServiceStateListener;-><init>(Lcom/samsung/appdisabler/ImsiItemChecker;)V
 
@@ -45,7 +43,6 @@
 # virtual methods
 .method public onServiceStateChanged(Landroid/telephony/ServiceState;)V
     .locals 1
-    .param p1    # Landroid/telephony/ServiceState;
 
     invoke-super {p0, p1}, Landroid/telephony/PhoneStateListener;->onServiceStateChanged(Landroid/telephony/ServiceState;)V
 

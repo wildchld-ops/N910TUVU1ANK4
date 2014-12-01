@@ -36,7 +36,6 @@
 # virtual methods
 .method public onComputeInternalInsets(Landroid/view/ViewTreeObserver$InternalInsetsInfo;)V
     .locals 2
-    .param p1    # Landroid/view/ViewTreeObserver$InternalInsetsInfo;
 
     iget-object v0, p0, Landroid/webkitsec/WebSelectDialog$1;->this$0:Landroid/webkitsec/WebSelectDialog;
 

@@ -36,7 +36,6 @@
 # virtual methods
 .method public onChangedMagnificationState(Z)V
     .locals 2
-    .param p1    # Z
 
     # setter for: Lcom/diotek/ime/framework/common/InputManagerImpl;->mEnabledMagnification:Z
     invoke-static {p1}, Lcom/diotek/ime/framework/common/InputManagerImpl;->access$002(Z)Z

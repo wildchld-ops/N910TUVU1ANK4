@@ -12,8 +12,6 @@
 # direct methods
 .method public constructor <init>(Loauth/signpost/http/HttpRequest;Loauth/signpost/http/HttpParameters;)V
     .locals 0
-    .param p1    # Loauth/signpost/http/HttpRequest;
-    .param p2    # Loauth/signpost/http/HttpParameters;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

@@ -31,9 +31,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/display/LocalDisplayAdapter;Landroid/os/IBinder;ILandroid/view/SurfaceControl$PhysicalDisplayInfo;)V
     .locals 1
-    .param p2    # Landroid/os/IBinder;
-    .param p3    # I
-    .param p4    # Landroid/view/SurfaceControl$PhysicalDisplayInfo;
 
     iput-object p1, p0, Lcom/android/server/display/LocalDisplayAdapter$LocalDisplayDevice;->this$0:Lcom/android/server/display/LocalDisplayAdapter;
 
@@ -89,7 +86,6 @@
 
 .method public dumpLocked(Ljava/io/PrintWriter;)V
     .locals 2
-    .param p1    # Ljava/io/PrintWriter;
 
     invoke-super {p0, p1}, Lcom/android/server/display/DisplayDevice;->dumpLocked(Ljava/io/PrintWriter;)V
 
@@ -386,7 +382,6 @@
 
 .method public updatePhysicalDisplayInfoLocked(Landroid/view/SurfaceControl$PhysicalDisplayInfo;)Z
     .locals 2
-    .param p1    # Landroid/view/SurfaceControl$PhysicalDisplayInfo;
 
     const/4 v0, 0x1
 

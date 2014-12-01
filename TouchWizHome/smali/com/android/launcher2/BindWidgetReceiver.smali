@@ -50,10 +50,6 @@
 
 .method private bindWidget(Landroid/content/Context;Landroid/content/Intent;IZ)Z
     .locals 10
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
-    .param p3    # I
-    .param p4    # Z
 
     const/4 v9, 0x1
 
@@ -169,10 +165,6 @@
 
 .method private static findEmptyCell(Landroid/content/Context;[II[I)Z
     .locals 22
-    .param p0    # Landroid/content/Context;
-    .param p1    # [I
-    .param p2    # I
-    .param p3    # [I
 
     sget v2, Lcom/android/launcher2/BindWidgetReceiver;->mCountX:I
 
@@ -396,8 +388,6 @@
 # virtual methods
 .method public bindWidget(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 26
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     const-string v23, "componentName"
 
@@ -1045,8 +1035,6 @@
 
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     if-eqz p2, :cond_0
 
@@ -1115,8 +1103,6 @@
 
 .method public unBindWidget(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 25
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     const-string v2, "appWidgetId"
 

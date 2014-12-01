@@ -739,7 +739,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/users/AppRestrictionsFragment;)V
     .locals 0
-    .param p0    # Lcom/android/settings/users/AppRestrictionsFragment;
 
     invoke-direct {p0}, Lcom/android/settings/users/AppRestrictionsFragment;->populateApps()V
 
@@ -748,7 +747,6 @@
 
 .method static synthetic access$1000(Lcom/android/settings/users/AppRestrictionsFragment;)V
     .locals 0
-    .param p0    # Lcom/android/settings/users/AppRestrictionsFragment;
 
     invoke-direct {p0}, Lcom/android/settings/users/AppRestrictionsFragment;->fetchAndMergeApps()V
 
@@ -757,7 +755,6 @@
 
 .method static synthetic access$1400(Lcom/android/settings/users/AppRestrictionsFragment;)Lcom/android/settings/users/AppRestrictionsFragment$AppRestrictionsPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/users/AppRestrictionsFragment;
 
     iget-object v0, p0, Lcom/android/settings/users/AppRestrictionsFragment;->mClickedCheckBoxPref:Lcom/android/settings/users/AppRestrictionsFragment$AppRestrictionsPreference;
 
@@ -766,9 +763,6 @@
 
 .method static synthetic access$1500(Lcom/android/settings/users/AppRestrictionsFragment;Ljava/lang/String;Z)V
     .locals 0
-    .param p0    # Lcom/android/settings/users/AppRestrictionsFragment;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/settings/users/AppRestrictionsFragment;->applyUserAppState(Ljava/lang/String;Z)V
 
@@ -777,9 +771,6 @@
 
 .method static synthetic access$1600(Lcom/android/settings/users/AppRestrictionsFragment;Ljava/lang/String;Z)V
     .locals 0
-    .param p0    # Lcom/android/settings/users/AppRestrictionsFragment;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/settings/users/AppRestrictionsFragment;->updateAllEntries(Ljava/lang/String;Z)V
 
@@ -788,7 +779,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/users/AppRestrictionsFragment;)V
     .locals 0
-    .param p0    # Lcom/android/settings/users/AppRestrictionsFragment;
 
     invoke-direct {p0}, Lcom/android/settings/users/AppRestrictionsFragment;->removeProgressDialog()V
 
@@ -797,11 +787,6 @@
 
 .method static synthetic access$2000(Lcom/android/settings/users/AppRestrictionsFragment;Lcom/android/settings/users/AppRestrictionsFragment$AppRestrictionsPreference;Ljava/lang/String;Ljava/util/ArrayList;Z)V
     .locals 0
-    .param p0    # Lcom/android/settings/users/AppRestrictionsFragment;
-    .param p1    # Lcom/android/settings/users/AppRestrictionsFragment$AppRestrictionsPreference;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/util/ArrayList;
-    .param p4    # Z
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/settings/users/AppRestrictionsFragment;->openRestrictionDetail(Lcom/android/settings/users/AppRestrictionsFragment$AppRestrictionsPreference;Ljava/lang/String;Ljava/util/ArrayList;Z)V
 
@@ -810,8 +795,6 @@
 
 .method static synthetic access$2100(Lcom/android/settings/users/AppRestrictionsFragment;Lcom/android/settings/users/AppRestrictionsFragment$AppRestrictionsPreference;)I
     .locals 1
-    .param p0    # Lcom/android/settings/users/AppRestrictionsFragment;
-    .param p1    # Lcom/android/settings/users/AppRestrictionsFragment$AppRestrictionsPreference;
 
     invoke-direct {p0, p1}, Lcom/android/settings/users/AppRestrictionsFragment;->generateCustomActivityRequestCode(Lcom/android/settings/users/AppRestrictionsFragment$AppRestrictionsPreference;)I
 
@@ -822,7 +805,6 @@
 
 .method static synthetic access$2200(Lcom/android/settings/users/AppRestrictionsFragment;)Landroid/preference/CheckBoxPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/users/AppRestrictionsFragment;
 
     iget-object v0, p0, Lcom/android/settings/users/AppRestrictionsFragment;->mMobileData:Landroid/preference/CheckBoxPreference;
 
@@ -831,7 +813,6 @@
 
 .method static synthetic access$2300(Lcom/android/settings/users/AppRestrictionsFragment;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/users/AppRestrictionsFragment;
 
     invoke-virtual {p0}, Lcom/android/settings/SettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -842,7 +823,6 @@
 
 .method static synthetic access$2400(Lcom/android/settings/users/AppRestrictionsFragment;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/users/AppRestrictionsFragment;
 
     invoke-virtual {p0}, Lcom/android/settings/SettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -853,7 +833,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/users/AppRestrictionsFragment;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/users/AppRestrictionsFragment;
 
     iget-boolean v0, p0, Lcom/android/settings/users/AppRestrictionsFragment;->mAppListChanged:Z
 
@@ -862,8 +841,6 @@
 
 .method static synthetic access$302(Lcom/android/settings/users/AppRestrictionsFragment;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/users/AppRestrictionsFragment;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/users/AppRestrictionsFragment;->mAppListChanged:Z
 
@@ -872,7 +849,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/users/AppRestrictionsFragment;)V
     .locals 0
-    .param p0    # Lcom/android/settings/users/AppRestrictionsFragment;
 
     invoke-direct {p0}, Lcom/android/settings/users/AppRestrictionsFragment;->applyUserAppsStates()V
 
@@ -881,8 +857,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/users/AppRestrictionsFragment;Landroid/content/Intent;)V
     .locals 0
-    .param p0    # Lcom/android/settings/users/AppRestrictionsFragment;
-    .param p1    # Landroid/content/Intent;
 
     invoke-direct {p0, p1}, Lcom/android/settings/users/AppRestrictionsFragment;->onPackageChanged(Landroid/content/Intent;)V
 
@@ -891,7 +865,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/users/AppRestrictionsFragment;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/settings/users/AppRestrictionsFragment;
 
     iget-object v0, p0, Lcom/android/settings/users/AppRestrictionsFragment;->mUninstallingPackages:Ljava/util/ArrayList;
 
@@ -900,7 +873,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/users/AppRestrictionsFragment;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/users/AppRestrictionsFragment;
 
     iget-boolean v0, p0, Lcom/android/settings/users/AppRestrictionsFragment;->mIsDeleteCallDone:Z
 
@@ -909,7 +881,6 @@
 
 .method static synthetic access$800(Lcom/android/settings/users/AppRestrictionsFragment;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/settings/users/AppRestrictionsFragment;
 
     iget-object v0, p0, Lcom/android/settings/users/AppRestrictionsFragment;->mHandler:Landroid/os/Handler;
 
@@ -1627,8 +1598,6 @@
 
 .method private applyUserAppState(Ljava/lang/String;Z)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const/high16 v5, 0x800000
 
@@ -2150,7 +2119,6 @@
 
 .method private disableUiForPackage(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/settings/users/AppRestrictionsFragment;->getKeyForPackage(Ljava/lang/String;)Ljava/lang/String;
 
@@ -3124,9 +3092,6 @@
 
 .method private findInArray([Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # [Ljava/lang/String;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -3156,7 +3121,6 @@
 
 .method private generateCustomActivityRequestCode(Lcom/android/settings/users/AppRestrictionsFragment$AppRestrictionsPreference;)I
     .locals 2
-    .param p1    # Lcom/android/settings/users/AppRestrictionsFragment$AppRestrictionsPreference;
 
     iget v0, p0, Lcom/android/settings/users/AppRestrictionsFragment;->mCustomRequestCode:I
 
@@ -3181,9 +3145,6 @@
 
 .method private getAppInfoForUser(Ljava/lang/String;ILandroid/os/UserHandle;)Landroid/content/pm/ApplicationInfo;
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Landroid/os/UserHandle;
 
     :try_start_0
     iget-object v2, p0, Lcom/android/settings/users/AppRestrictionsFragment;->mIPm:Landroid/content/pm/IPackageManager;
@@ -3517,7 +3478,6 @@
 
 .method private getRestrictionEntry(Ljava/lang/String;)Landroid/content/RestrictionEntry;
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -3865,7 +3825,6 @@
 
 .method private isPlatformSigned(Landroid/content/pm/PackageInfo;)Z
     .locals 3
-    .param p1    # Landroid/content/pm/PackageInfo;
 
     const/4 v0, 0x0
 
@@ -3899,7 +3858,6 @@
 
 .method private isSystemPackage(Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -4080,7 +4038,6 @@
 
 .method private onPackageChanged(Landroid/content/Intent;)V
     .locals 4
-    .param p1    # Landroid/content/Intent;
 
     invoke-virtual {p1}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
@@ -4150,7 +4107,6 @@
 
 .method private onRemoveUserClicked(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/settings/users/AppRestrictionsFragment;->mUserLock:Ljava/lang/Object;
 
@@ -5687,7 +5643,6 @@
 
 .method private removeRestrictionsForApp(Lcom/android/settings/users/AppRestrictionsFragment$AppRestrictionsPreference;)V
     .locals 3
-    .param p1    # Lcom/android/settings/users/AppRestrictionsFragment$AppRestrictionsPreference;
 
     # getter for: Lcom/android/settings/users/AppRestrictionsFragment$AppRestrictionsPreference;->mChildren:Ljava/util/List;
     invoke-static {p1}, Lcom/android/settings/users/AppRestrictionsFragment$AppRestrictionsPreference;->access$1900(Lcom/android/settings/users/AppRestrictionsFragment$AppRestrictionsPreference;)Ljava/util/List;
@@ -5780,7 +5735,6 @@
 
 .method private resolveInfoListHasPackage(Ljava/util/List;Ljava/lang/String;)Z
     .locals 3
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -5833,7 +5787,6 @@
 
 .method private setRestrictionEntry(Landroid/content/RestrictionEntry;)V
     .locals 3
-    .param p1    # Landroid/content/RestrictionEntry;
 
     new-instance v0, Ljava/util/ArrayList;
 
@@ -6421,7 +6374,6 @@
 
 .method protected init(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 
@@ -6962,8 +6914,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
     .locals 4
-    .param p1    # Landroid/view/Menu;
-    .param p2    # Landroid/view/MenuInflater;
 
     const/4 v3, 0x1
 
@@ -7020,7 +6970,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 3
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v1, 0x1
 
@@ -7677,7 +7626,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/preference/PreferenceFragment;->onSaveInstanceState(Landroid/os/Bundle;)V
 

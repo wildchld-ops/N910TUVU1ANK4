@@ -36,9 +36,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/settings/myplace/MyPlaceListDelelete;Landroid/content/Context;I[Ljava/lang/String;)V
     .locals 1
-    .param p2    # Landroid/content/Context;
-    .param p3    # I
-    .param p4    # [Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/settings/myplace/MyPlaceListDelelete$MyPlaceActionModeAdapter;->this$0:Lcom/android/settings/myplace/MyPlaceListDelelete;
 
@@ -63,9 +60,6 @@
 # virtual methods
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     if-nez p2, :cond_0
 
@@ -126,7 +120,6 @@
 
 .method public setChecked(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/settings/myplace/MyPlaceListDelelete$MyPlaceActionModeAdapter;->isCheckedConfrim:[Z
 
@@ -151,8 +144,6 @@
 
 .method public setChecked(IZ)V
     .locals 1
-    .param p1    # I
-    .param p2    # Z
 
     iget-object v0, p0, Lcom/android/settings/myplace/MyPlaceListDelelete$MyPlaceActionModeAdapter;->isCheckedConfrim:[Z
 

@@ -36,13 +36,6 @@
 # direct methods
 .method public constructor <init>(Landroid/graphics/Bitmap;IIFIFI)V
     .locals 13
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # F
-    .param p5    # I
-    .param p6    # F
-    .param p7    # I
 
     invoke-direct {p0}, Landroid/graphics/drawable/Drawable;-><init>()V
 
@@ -265,8 +258,6 @@
 
 .method public static getInstance(Landroid/content/Context;Landroid/graphics/Bitmap;)Lcom/android/settings/users/CircleFramedDrawable;
     .locals 10
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/graphics/Bitmap;
 
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -323,7 +314,6 @@
 # virtual methods
 .method public draw(Landroid/graphics/Canvas;)V
     .locals 8
-    .param p1    # Landroid/graphics/Canvas;
 
     const/high16 v6, 0x40000000
 
@@ -525,14 +515,12 @@
 
 .method public setAlpha(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public setColorFilter(Landroid/graphics/ColorFilter;)V
     .locals 0
-    .param p1    # Landroid/graphics/ColorFilter;
 
     return-void
 .end method

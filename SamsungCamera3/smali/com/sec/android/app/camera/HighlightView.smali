@@ -68,7 +68,6 @@
 # direct methods
 .method public constructor <init>(Landroid/view/View;)V
     .locals 3
-    .param p1    # Landroid/view/View;
 
     const/4 v1, 0x0
 
@@ -219,7 +218,6 @@
 # virtual methods
 .method protected draw(Landroid/graphics/Canvas;)V
     .locals 29
-    .param p1    # Landroid/graphics/Canvas;
 
     move-object/from16 v0, p0
 
@@ -1002,8 +1000,6 @@
 
 .method public getHit(FF)I
     .locals 12
-    .param p1    # F
-    .param p2    # F
 
     invoke-direct {p0}, Lcom/sec/android/app/camera/HighlightView;->computeLayout()Landroid/graphics/Rect;
 
@@ -1296,8 +1292,6 @@
 
 .method growBy(FF)V
     .locals 8
-    .param p1    # F
-    .param p2    # F
 
     const/high16 v1, 0x41c80000
 
@@ -1602,9 +1596,6 @@
 
 .method handleMotion(IFF)V
     .locals 7
-    .param p1    # I
-    .param p2    # F
-    .param p3    # F
 
     const/4 v3, -0x1
 
@@ -1764,8 +1755,6 @@
 
 .method moveBy(FF)V
     .locals 7
-    .param p1    # F
-    .param p2    # F
 
     const/16 v6, -0xa
 
@@ -1866,7 +1855,6 @@
 
 .method public setFocus(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/HighlightView;->mIsFocused:Z
 
@@ -1875,7 +1863,6 @@
 
 .method public setHidden(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/HighlightView;->mHidden:Z
 
@@ -1884,7 +1871,6 @@
 
 .method public setMode(Lcom/sec/android/app/camera/HighlightView$ModifyMode;)V
     .locals 1
-    .param p1    # Lcom/sec/android/app/camera/HighlightView$ModifyMode;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/HighlightView;->mMode:Lcom/sec/android/app/camera/HighlightView$ModifyMode;
 
@@ -1902,11 +1888,6 @@
 
 .method public setup(Landroid/graphics/Matrix;Landroid/graphics/Rect;Landroid/graphics/RectF;ZZ)V
     .locals 4
-    .param p1    # Landroid/graphics/Matrix;
-    .param p2    # Landroid/graphics/Rect;
-    .param p3    # Landroid/graphics/RectF;
-    .param p4    # Z
-    .param p5    # Z
 
     const/16 v3, 0x7d
 

@@ -77,7 +77,6 @@
 # virtual methods
 .method public add(Lcom/google/android/util/AbstractMessageParser$Token;)V
     .locals 2
-    .param p1    # Lcom/google/android/util/AbstractMessageParser$Token;
 
     invoke-virtual {p0}, Lcom/google/android/util/AbstractMessageParser$Part;->isMedia()Z
 
@@ -201,7 +200,6 @@
 
 .method public getType(Z)Ljava/lang/String;
     .locals 2
-    .param p1    # Z
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -278,7 +276,6 @@
 
 .method public setMeText(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/google/android/util/AbstractMessageParser$Part;->meText:Ljava/lang/String;
 

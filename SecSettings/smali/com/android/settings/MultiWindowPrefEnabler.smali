@@ -35,8 +35,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/preference/SwitchPreference;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/preference/SwitchPreference;
 
     const/4 v0, 0x0
 
@@ -65,7 +63,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/MultiWindowPrefEnabler;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/settings/MultiWindowPrefEnabler;
 
     iget-object v0, p0, Lcom/android/settings/MultiWindowPrefEnabler;->mContext:Landroid/content/Context;
 
@@ -74,7 +71,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/MultiWindowPrefEnabler;)Landroid/preference/SwitchPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/MultiWindowPrefEnabler;
 
     iget-object v0, p0, Lcom/android/settings/MultiWindowPrefEnabler;->mSwitch:Landroid/preference/SwitchPreference;
 
@@ -83,7 +79,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/MultiWindowPrefEnabler;)V
     .locals 0
-    .param p0    # Lcom/android/settings/MultiWindowPrefEnabler;
 
     invoke-direct {p0}, Lcom/android/settings/MultiWindowPrefEnabler;->removeEnabledScreenReaderValue()V
 
@@ -300,8 +295,6 @@
 # virtual methods
 .method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
     .locals 5
-    .param p1    # Landroid/preference/Preference;
-    .param p2    # Ljava/lang/Object;
 
     const/4 v2, 0x1
 

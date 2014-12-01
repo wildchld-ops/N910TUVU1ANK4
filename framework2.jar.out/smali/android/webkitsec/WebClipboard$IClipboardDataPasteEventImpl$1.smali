@@ -33,7 +33,6 @@
 # virtual methods
 .method public onClipboardDataPaste(Landroid/sec/clipboard/data/ClipboardData;)V
     .locals 2
-    .param p1    # Landroid/sec/clipboard/data/ClipboardData;
 
     sget-object v0, Ljava/lang/System;->out:Ljava/io/PrintStream;
 

@@ -45,7 +45,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/wfd/WfdPickerDialog;)Landroid/widget/Button;
     .locals 1
-    .param p0    # Lcom/android/settings/wfd/WfdPickerDialog;
 
     iget-object v0, p0, Lcom/android/settings/wfd/WfdPickerDialog;->mScanBtn:Landroid/widget/Button;
 
@@ -54,8 +53,6 @@
 
 .method static synthetic access$002(Lcom/android/settings/wfd/WfdPickerDialog;Landroid/widget/Button;)Landroid/widget/Button;
     .locals 0
-    .param p0    # Lcom/android/settings/wfd/WfdPickerDialog;
-    .param p1    # Landroid/widget/Button;
 
     iput-object p1, p0, Lcom/android/settings/wfd/WfdPickerDialog;->mScanBtn:Landroid/widget/Button;
 
@@ -64,7 +61,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/wfd/WfdPickerDialog;)Landroid/hardware/display/DisplayManager;
     .locals 1
-    .param p0    # Lcom/android/settings/wfd/WfdPickerDialog;
 
     iget-object v0, p0, Lcom/android/settings/wfd/WfdPickerDialog;->mDisplayManager:Landroid/hardware/display/DisplayManager;
 
@@ -199,14 +195,12 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     return-void
 .end method
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 7
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
@@ -325,8 +319,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     invoke-super {p0, p1, p2}, Landroid/app/Activity;->onKeyDown(ILandroid/view/KeyEvent;)Z
 

@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -98,7 +97,6 @@
 
 .method public estimateNoiseFloorLevel(I)I
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -596,7 +594,6 @@
 
 .method public muteAudio(Z)I
     .locals 6
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -659,7 +656,6 @@
 
 .method public registerCallback(Lcom/broadcom/fm/fmreceiver/IFmReceiverCallback;)V
     .locals 5
-    .param p1    # Lcom/broadcom/fm/fmreceiver/IFmReceiverCallback;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -723,10 +719,6 @@
 
 .method public seekRdsStation(IIII)J
     .locals 7
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -788,8 +780,6 @@
 
 .method public seekStation(II)J
     .locals 7
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -900,14 +890,6 @@
 
 .method public seekStationCombo(IIIIIZII)I
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Z
-    .param p7    # I
-    .param p8    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -984,7 +966,6 @@
 
 .method public setAudioMode(I)I
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1040,7 +1021,6 @@
 
 .method public setAudioPath(I)I
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1096,7 +1076,6 @@
 
 .method public setCOS(I)I
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1152,7 +1131,6 @@
 
 .method public setDeemPhasis(I)I
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1208,7 +1186,6 @@
 
 .method public setFMIntenna(Z)I
     .locals 6
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1271,7 +1248,6 @@
 
 .method public setFMVolume(I)I
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1327,8 +1303,6 @@
 
 .method public setLiveAudioPolling(ZI)I
     .locals 6
-    .param p1    # Z
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1393,7 +1367,6 @@
 
 .method public setPiEccMode(I)I
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1449,10 +1422,6 @@
 
 .method public setRdsMode(IIII)I
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1514,7 +1483,6 @@
 
 .method public setRfMute(Z)I
     .locals 6
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1577,7 +1545,6 @@
 
 .method public setSnrThreshold(I)I
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1633,7 +1600,6 @@
 
 .method public setStepSize(I)I
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1689,7 +1655,6 @@
 
 .method public setWorldRegion(I)I
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1745,7 +1710,6 @@
 
 .method public tuneRadio(I)I
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1801,7 +1765,6 @@
 
 .method public turnOffRadio(Z)I
     .locals 6
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1864,8 +1827,6 @@
 
 .method public turnOnRadio(I[C)I
     .locals 6
-    .param p1    # I
-    .param p2    # [C
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1925,7 +1886,6 @@
 
 .method public unregisterCallback(Lcom/broadcom/fm/fmreceiver/IFmReceiverCallback;)V
     .locals 5
-    .param p1    # Lcom/broadcom/fm/fmreceiver/IFmReceiverCallback;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

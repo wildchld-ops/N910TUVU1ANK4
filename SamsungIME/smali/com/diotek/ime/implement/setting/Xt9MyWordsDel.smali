@@ -107,7 +107,6 @@
 
 .method static synthetic access$000(Lcom/diotek/ime/implement/setting/Xt9MyWordsDel;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/setting/Xt9MyWordsDel;
 
     iget-object v0, p0, Lcom/diotek/ime/implement/setting/Xt9MyWordsDel;->mWordlist:Ljava/util/ArrayList;
 
@@ -116,7 +115,6 @@
 
 .method static synthetic access$100(Lcom/diotek/ime/implement/setting/Xt9MyWordsDel;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/setting/Xt9MyWordsDel;
 
     iget-object v0, p0, Lcom/diotek/ime/implement/setting/Xt9MyWordsDel;->mDeletingWordsList:Ljava/util/ArrayList;
 
@@ -125,8 +123,6 @@
 
 .method static synthetic access$200(Lcom/diotek/ime/implement/setting/Xt9MyWordsDel;Z)V
     .locals 0
-    .param p0    # Lcom/diotek/ime/implement/setting/Xt9MyWordsDel;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/diotek/ime/implement/setting/Xt9MyWordsDel;->setDoneMenuEnabled(Z)V
 
@@ -135,7 +131,6 @@
 
 .method static synthetic access$300(Lcom/diotek/ime/implement/setting/Xt9MyWordsDel;)Z
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/setting/Xt9MyWordsDel;
 
     iget-boolean v0, p0, Lcom/diotek/ime/implement/setting/Xt9MyWordsDel;->mAllSelected:Z
 
@@ -144,8 +139,6 @@
 
 .method static synthetic access$302(Lcom/diotek/ime/implement/setting/Xt9MyWordsDel;Z)Z
     .locals 0
-    .param p0    # Lcom/diotek/ime/implement/setting/Xt9MyWordsDel;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/implement/setting/Xt9MyWordsDel;->mAllSelected:Z
 
@@ -154,7 +147,6 @@
 
 .method static synthetic access$400(Lcom/diotek/ime/implement/setting/Xt9MyWordsDel;)Lcom/diotek/ime/implement/setting/adapter/CheckboxArrayAdapter;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/setting/Xt9MyWordsDel;
 
     iget-object v0, p0, Lcom/diotek/ime/implement/setting/Xt9MyWordsDel;->mSelectallAdpter:Lcom/diotek/ime/implement/setting/adapter/CheckboxArrayAdapter;
 
@@ -163,7 +155,6 @@
 
 .method static synthetic access$500(Lcom/diotek/ime/implement/setting/Xt9MyWordsDel;)Landroid/widget/ListView;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/setting/Xt9MyWordsDel;
 
     iget-object v0, p0, Lcom/diotek/ime/implement/setting/Xt9MyWordsDel;->mDisplayView:Landroid/widget/ListView;
 
@@ -172,7 +163,6 @@
 
 .method static synthetic access$600(Lcom/diotek/ime/implement/setting/Xt9MyWordsDel;)Landroid/widget/ListView;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/setting/Xt9MyWordsDel;
 
     iget-object v0, p0, Lcom/diotek/ime/implement/setting/Xt9MyWordsDel;->mSelectallview:Landroid/widget/ListView;
 
@@ -181,7 +171,6 @@
 
 .method static synthetic access$700(Lcom/diotek/ime/implement/setting/Xt9MyWordsDel;)Lcom/diotek/ime/framework/common/InputManager;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/setting/Xt9MyWordsDel;
 
     iget-object v0, p0, Lcom/diotek/ime/implement/setting/Xt9MyWordsDel;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -190,8 +179,6 @@
 
 .method static synthetic access$800(Lcom/diotek/ime/implement/setting/Xt9MyWordsDel;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/diotek/ime/implement/setting/Xt9MyWordsDel;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/diotek/ime/implement/setting/Xt9MyWordsDel;->removeWordFromUserModel(Ljava/lang/String;)V
 
@@ -200,7 +187,6 @@
 
 .method static synthetic access$900(Lcom/diotek/ime/implement/setting/Xt9MyWordsDel;)Lcom/diotek/ime/framework/engine/xt9/Xt9DBController;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/setting/Xt9MyWordsDel;
 
     iget-object v0, p0, Lcom/diotek/ime/implement/setting/Xt9MyWordsDel;->mXt9DBController:Lcom/diotek/ime/framework/engine/xt9/Xt9DBController;
 
@@ -513,7 +499,6 @@
 
 .method private removeWordFromUserModel(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyWrapper;->getSwiftKeySession()Lcom/touchtype_fluency/util/SwiftKeySession;
 
@@ -540,7 +525,6 @@
 
 .method private setDoneMenuEnabled(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/diotek/ime/implement/setting/Xt9MyWordsDel;->mMenu:Landroid/view/Menu;
 
@@ -564,7 +548,6 @@
 # virtual methods
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 3
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -605,7 +588,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 14
-    .param p1    # Landroid/os/Bundle;
 
     const v13, 0x7f03009f
 
@@ -960,7 +942,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 3
-    .param p1    # Landroid/view/Menu;
 
     const/4 v2, 0x1
 
@@ -1007,7 +988,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 2
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v0, 0x1
 

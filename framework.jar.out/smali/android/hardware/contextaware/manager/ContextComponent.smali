@@ -47,8 +47,6 @@
 
 .method private notifyObserver(Ljava/lang/String;Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Bundle;
 
     invoke-virtual {p0}, Landroid/hardware/contextaware/manager/ContextComponent;->display()V
 
@@ -95,7 +93,6 @@
 
 .method protected disableForStop(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
@@ -114,7 +111,6 @@
 
 .method protected enableForStart(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
@@ -129,7 +125,6 @@
 
 .method protected getContextInfo(Landroid/hardware/contextaware/manager/ContextAwareService$Listener;)V
     .locals 0
-    .param p1    # Landroid/hardware/contextaware/manager/ContextAwareService$Listener;
 
     return-void
 .end method
@@ -245,8 +240,6 @@
 
 .method public notifyCmdProcessResultObserver(Ljava/lang/String;Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Bundle;
 
     iget-object v0, p0, Landroid/hardware/contextaware/manager/ContextComponent;->mContextObserver:Landroid/hardware/contextaware/manager/ContextObserverManager;
 
@@ -323,7 +316,6 @@
 
 .method public final registerCmdProcessResultObserver(Landroid/hardware/contextaware/manager/fault/ICmdProcessResultObserver;)V
     .locals 1
-    .param p1    # Landroid/hardware/contextaware/manager/fault/ICmdProcessResultObserver;
 
     iget-object v0, p0, Landroid/hardware/contextaware/manager/ContextComponent;->mContextObserver:Landroid/hardware/contextaware/manager/ContextObserverManager;
 
@@ -334,7 +326,6 @@
 
 .method public final registerObserver(Landroid/hardware/contextaware/manager/IContextObserver;)V
     .locals 1
-    .param p1    # Landroid/hardware/contextaware/manager/IContextObserver;
 
     iget-object v0, p0, Landroid/hardware/contextaware/manager/ContextComponent;->mContextObserver:Landroid/hardware/contextaware/manager/ContextObserverManager;
 
@@ -359,7 +350,6 @@
 
 .method protected final setProperty(ILjava/lang/Object;)Z
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -389,7 +379,6 @@
 
 .method public setPropertyValue(ILjava/lang/Object;)Z
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -423,7 +412,6 @@
 
 .method public final unregisterCmdProcessResultObserver(Landroid/hardware/contextaware/manager/fault/ICmdProcessResultObserver;)V
     .locals 1
-    .param p1    # Landroid/hardware/contextaware/manager/fault/ICmdProcessResultObserver;
 
     iget-object v0, p0, Landroid/hardware/contextaware/manager/ContextComponent;->mContextObserver:Landroid/hardware/contextaware/manager/ContextObserverManager;
 
@@ -434,7 +422,6 @@
 
 .method public final unregisterObserver(Landroid/hardware/contextaware/manager/IContextObserver;)V
     .locals 1
-    .param p1    # Landroid/hardware/contextaware/manager/IContextObserver;
 
     iget-object v0, p0, Landroid/hardware/contextaware/manager/ContextComponent;->mContextObserver:Landroid/hardware/contextaware/manager/ContextObserverManager;
 

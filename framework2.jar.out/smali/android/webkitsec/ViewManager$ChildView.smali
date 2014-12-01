@@ -41,7 +41,6 @@
 
 .method static synthetic access$100(Landroid/webkitsec/ViewManager$ChildView;)V
     .locals 0
-    .param p0    # Landroid/webkitsec/ViewManager$ChildView;
 
     invoke-direct {p0}, Landroid/webkitsec/ViewManager$ChildView;->attachViewOnUIThread()V
 
@@ -50,7 +49,6 @@
 
 .method static synthetic access$500(Landroid/webkitsec/ViewManager$ChildView;)V
     .locals 0
-    .param p0    # Landroid/webkitsec/ViewManager$ChildView;
 
     invoke-direct {p0}, Landroid/webkitsec/ViewManager$ChildView;->removeViewOnUIThread()V
 
@@ -137,10 +135,6 @@
 # virtual methods
 .method attachView(IIII)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iget-object v0, p0, Landroid/webkitsec/ViewManager$ChildView;->mView:Landroid/view/View;
 
@@ -201,10 +195,6 @@
 
 .method setBounds(IIII)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iput p1, p0, Landroid/webkitsec/ViewManager$ChildView;->x:I
 

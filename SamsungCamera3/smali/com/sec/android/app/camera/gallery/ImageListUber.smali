@@ -47,8 +47,6 @@
 # direct methods
 .method public constructor <init>([Lcom/sec/android/app/camera/gallery/IImageList;I)V
     .locals 8
-    .param p1    # [Lcom/sec/android/app/camera/gallery/IImageList;
-    .param p2    # I
 
     const/4 v7, 0x0
 
@@ -150,7 +148,6 @@
 
 .method private modifySkipCountForDeletedImage(I)V
     .locals 9
-    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -290,8 +287,6 @@
 
 .method private removeImage(Lcom/sec/android/app/camera/gallery/IImage;I)Z
     .locals 2
-    .param p1    # Lcom/sec/android/app/camera/gallery/IImage;
-    .param p2    # I
 
     invoke-interface {p1}, Lcom/sec/android/app/camera/gallery/IImage;->getContainer()Lcom/sec/android/app/camera/gallery/IImageList;
 
@@ -420,7 +415,6 @@
 
 .method public getImageAt(I)Lcom/sec/android/app/camera/gallery/IImage;
     .locals 14
-    .param p1    # I
 
     if-ltz p1, :cond_0
 
@@ -585,7 +579,6 @@
 
 .method public getImageForUri(Landroid/net/Uri;)Lcom/sec/android/app/camera/gallery/IImage;
     .locals 5
-    .param p1    # Landroid/net/Uri;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/gallery/ImageListUber;->mSubList:[Lcom/sec/android/app/camera/gallery/IImageList;
 
@@ -620,7 +613,6 @@
 
 .method public declared-synchronized getImageIndex(Lcom/sec/android/app/camera/gallery/IImage;)I
     .locals 14
-    .param p1    # Lcom/sec/android/app/camera/gallery/IImage;
 
     const/4 v11, -0x1
 
@@ -791,7 +783,6 @@
 
 .method public removeImage(Lcom/sec/android/app/camera/gallery/IImage;)Z
     .locals 1
-    .param p1    # Lcom/sec/android/app/camera/gallery/IImage;
 
     invoke-virtual {p0, p1}, Lcom/sec/android/app/camera/gallery/ImageListUber;->getImageIndex(Lcom/sec/android/app/camera/gallery/IImage;)I
 
@@ -806,7 +797,6 @@
 
 .method public removeImageAt(I)Z
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/sec/android/app/camera/gallery/ImageListUber;->getImageAt(I)Lcom/sec/android/app/camera/gallery/IImage;
 

@@ -141,7 +141,6 @@
 # direct methods
 .method constructor <init>(Landroid/app/admin/DeviceAdminInfo;)V
     .locals 5
-    .param p1    # Landroid/app/admin/DeviceAdminInfo;
 
     const/4 v0, 0x0
 
@@ -250,8 +249,6 @@
 # virtual methods
 .method dump(Ljava/lang/String;Ljava/io/PrintWriter;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/io/PrintWriter;
 
     invoke-virtual {p2, p1}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
@@ -718,7 +715,6 @@
 
 .method readFromXml(Lorg/xmlpull/v1/XmlPullParser;)V
     .locals 11
-    .param p1    # Lorg/xmlpull/v1/XmlPullParser;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -1649,7 +1645,6 @@
 
 .method writeToXml(Lorg/xmlpull/v1/XmlSerializer;)V
     .locals 6
-    .param p1    # Lorg/xmlpull/v1/XmlSerializer;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;,

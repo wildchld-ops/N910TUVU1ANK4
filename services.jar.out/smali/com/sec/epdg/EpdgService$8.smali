@@ -33,8 +33,6 @@
 # virtual methods
 .method public processFastPath(Landroid/content/Context;Landroid/content/Intent;)Ljava/lang/Object;
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -45,7 +43,6 @@
 
 .method public processSlowPath(Ljava/lang/Object;)V
     .locals 11
-    .param p1    # Ljava/lang/Object;
 
     const/4 v10, 0x3
 

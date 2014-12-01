@@ -21,7 +21,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/settings/BrightnessController;Landroid/content/Context;)V
     .locals 0
-    .param p2    # Landroid/content/Context;
 
     iput-object p1, p0, Lcom/android/systemui/settings/BrightnessController$1;->this$0:Lcom/android/systemui/settings/BrightnessController;
 
@@ -34,7 +33,6 @@
 # virtual methods
 .method public onUserSwitched(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/systemui/settings/BrightnessController$1;->this$0:Lcom/android/systemui/settings/BrightnessController;
 

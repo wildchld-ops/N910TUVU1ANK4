@@ -33,7 +33,6 @@
 # direct methods
 .method public constructor <init>(Landroid/webkitsec/WebViewClassic;)V
     .locals 2
-    .param p1    # Landroid/webkitsec/WebViewClassic;
 
     invoke-direct {p0}, Landroid/graphics/drawable/Drawable;-><init>()V
 
@@ -71,7 +70,6 @@
 # virtual methods
 .method public draw(Landroid/graphics/Canvas;)V
     .locals 14
-    .param p1    # Landroid/graphics/Canvas;
 
     const/4 v13, 0x1
 
@@ -279,21 +277,18 @@
 
 .method public setAlpha(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public setColorFilter(Landroid/graphics/ColorFilter;)V
     .locals 0
-    .param p1    # Landroid/graphics/ColorFilter;
 
     return-void
 .end method
 
 .method public setProgress(F)V
     .locals 2
-    .param p1    # F
 
     iput p1, p0, Landroid/webkitsec/WebViewClassic$FocusTransitionDrawable;->mProgress:F
 

@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Lcom/sec/epdg/IPSecAdapter;Landroid/os/Looper;)V
     .locals 0
-    .param p2    # Landroid/os/Looper;
 
     iput-object p1, p0, Lcom/sec/epdg/IPSecAdapter$IpSecAdapterHandler;->this$0:Lcom/sec/epdg/IPSecAdapter;
 
@@ -34,7 +33,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 3
-    .param p1    # Landroid/os/Message;
 
     iget v0, p1, Landroid/os/Message;->what:I
 

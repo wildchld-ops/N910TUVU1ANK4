@@ -117,7 +117,6 @@
 # direct methods
 .method public constructor <init>(Landroid/app/Activity;)V
     .locals 6
-    .param p1    # Landroid/app/Activity;
 
     const/4 v5, 0x1
 
@@ -213,7 +212,6 @@
 
 .method public constructor <init>(Landroid/app/Dialog;)V
     .locals 3
-    .param p1    # Landroid/app/Dialog;
 
     const/4 v2, 0x1
 
@@ -286,7 +284,6 @@
 
 .method static synthetic access$000(Lcom/android/internal/app/ActionBarImpl;)Z
     .locals 1
-    .param p0    # Lcom/android/internal/app/ActionBarImpl;
 
     iget-boolean v0, p0, Lcom/android/internal/app/ActionBarImpl;->mContentAnimations:Z
 
@@ -295,7 +292,6 @@
 
 .method static synthetic access$100(Lcom/android/internal/app/ActionBarImpl;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/internal/app/ActionBarImpl;
 
     iget-object v0, p0, Lcom/android/internal/app/ActionBarImpl;->mContentView:Landroid/view/View;
 
@@ -304,7 +300,6 @@
 
 .method static synthetic access$1000(Lcom/android/internal/app/ActionBarImpl;)Lcom/android/internal/widget/ActionBarContextView;
     .locals 1
-    .param p0    # Lcom/android/internal/app/ActionBarImpl;
 
     iget-object v0, p0, Lcom/android/internal/app/ActionBarImpl;->mContextView:Lcom/android/internal/widget/ActionBarContextView;
 
@@ -313,7 +308,6 @@
 
 .method static synthetic access$1100(Lcom/android/internal/app/ActionBarImpl;)Lcom/android/internal/widget/ActionBarView;
     .locals 1
-    .param p0    # Lcom/android/internal/app/ActionBarImpl;
 
     iget-object v0, p0, Lcom/android/internal/app/ActionBarImpl;->mActionView:Lcom/android/internal/widget/ActionBarView;
 
@@ -322,7 +316,6 @@
 
 .method static synthetic access$1200(Lcom/android/internal/app/ActionBarImpl;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/internal/app/ActionBarImpl;
 
     iget-object v0, p0, Lcom/android/internal/app/ActionBarImpl;->mContext:Landroid/content/Context;
 
@@ -331,7 +324,6 @@
 
 .method static synthetic access$1300(Lcom/android/internal/app/ActionBarImpl;)Lcom/android/internal/widget/ScrollingTabContainerView;
     .locals 1
-    .param p0    # Lcom/android/internal/app/ActionBarImpl;
 
     iget-object v0, p0, Lcom/android/internal/app/ActionBarImpl;->mTabScrollView:Lcom/android/internal/widget/ScrollingTabContainerView;
 
@@ -340,7 +332,6 @@
 
 .method static synthetic access$200(Lcom/android/internal/app/ActionBarImpl;)Lcom/android/internal/widget/ActionBarContainer;
     .locals 1
-    .param p0    # Lcom/android/internal/app/ActionBarImpl;
 
     iget-object v0, p0, Lcom/android/internal/app/ActionBarImpl;->mContainerView:Lcom/android/internal/widget/ActionBarContainer;
 
@@ -349,7 +340,6 @@
 
 .method static synthetic access$300(Lcom/android/internal/app/ActionBarImpl;)Lcom/android/internal/widget/ActionBarContainer;
     .locals 1
-    .param p0    # Lcom/android/internal/app/ActionBarImpl;
 
     iget-object v0, p0, Lcom/android/internal/app/ActionBarImpl;->mSplitView:Lcom/android/internal/widget/ActionBarContainer;
 
@@ -358,7 +348,6 @@
 
 .method static synthetic access$400(Lcom/android/internal/app/ActionBarImpl;)I
     .locals 1
-    .param p0    # Lcom/android/internal/app/ActionBarImpl;
 
     iget v0, p0, Lcom/android/internal/app/ActionBarImpl;->mContextDisplayMode:I
 
@@ -367,8 +356,6 @@
 
 .method static synthetic access$502(Lcom/android/internal/app/ActionBarImpl;Landroid/animation/Animator;)Landroid/animation/Animator;
     .locals 0
-    .param p0    # Lcom/android/internal/app/ActionBarImpl;
-    .param p1    # Landroid/animation/Animator;
 
     iput-object p1, p0, Lcom/android/internal/app/ActionBarImpl;->mCurrentShowAnim:Landroid/animation/Animator;
 
@@ -377,7 +364,6 @@
 
 .method static synthetic access$600(Lcom/android/internal/app/ActionBarImpl;)Lcom/android/internal/widget/ActionBarOverlayLayout;
     .locals 1
-    .param p0    # Lcom/android/internal/app/ActionBarImpl;
 
     iget-object v0, p0, Lcom/android/internal/app/ActionBarImpl;->mOverlayLayout:Lcom/android/internal/widget/ActionBarOverlayLayout;
 
@@ -386,7 +372,6 @@
 
 .method static synthetic access$700(Lcom/android/internal/app/ActionBarImpl;)Z
     .locals 1
-    .param p0    # Lcom/android/internal/app/ActionBarImpl;
 
     iget-boolean v0, p0, Lcom/android/internal/app/ActionBarImpl;->mHiddenByApp:Z
 
@@ -395,7 +380,6 @@
 
 .method static synthetic access$800(Lcom/android/internal/app/ActionBarImpl;)Z
     .locals 1
-    .param p0    # Lcom/android/internal/app/ActionBarImpl;
 
     iget-boolean v0, p0, Lcom/android/internal/app/ActionBarImpl;->mHiddenBySystem:Z
 
@@ -404,9 +388,6 @@
 
 .method static synthetic access$900(ZZZ)Z
     .locals 1
-    .param p0    # Z
-    .param p1    # Z
-    .param p2    # Z
 
     invoke-static {p0, p1, p2}, Lcom/android/internal/app/ActionBarImpl;->checkShowingFlags(ZZZ)Z
 
@@ -417,9 +398,6 @@
 
 .method private static checkShowingFlags(ZZZ)Z
     .locals 1
-    .param p0    # Z
-    .param p1    # Z
-    .param p2    # Z
 
     const/4 v0, 0x1
 
@@ -474,8 +452,6 @@
 
 .method private configureTab(Landroid/app/ActionBar$Tab;I)V
     .locals 6
-    .param p1    # Landroid/app/ActionBar$Tab;
-    .param p2    # I
 
     move-object v3, p1
 
@@ -628,7 +604,6 @@
 
 .method private init(Landroid/view/View;)V
     .locals 7
-    .param p1    # Landroid/view/View;
 
     const/4 v5, 0x0
 
@@ -829,7 +804,6 @@
 
 .method private setHasEmbeddedTabs(Z)V
     .locals 8
-    .param p1    # Z
 
     const/4 v7, 0x0
 
@@ -1007,7 +981,6 @@
 
 .method private updateVisibility(Z)V
     .locals 4
-    .param p1    # Z
 
     iget-boolean v1, p0, Lcom/android/internal/app/ActionBarImpl;->mHiddenByApp:Z
 
@@ -1053,7 +1026,6 @@
 # virtual methods
 .method public addOnMenuVisibilityListener(Landroid/app/ActionBar$OnMenuVisibilityListener;)V
     .locals 1
-    .param p1    # Landroid/app/ActionBar$OnMenuVisibilityListener;
 
     iget-object v0, p0, Lcom/android/internal/app/ActionBarImpl;->mMenuVisibilityListeners:Ljava/util/ArrayList;
 
@@ -1064,7 +1036,6 @@
 
 .method public addTab(Landroid/app/ActionBar$Tab;)V
     .locals 1
-    .param p1    # Landroid/app/ActionBar$Tab;
 
     iget-object v0, p0, Lcom/android/internal/app/ActionBarImpl;->mTabs:Ljava/util/ArrayList;
 
@@ -1079,8 +1050,6 @@
 
 .method public addTab(Landroid/app/ActionBar$Tab;I)V
     .locals 1
-    .param p1    # Landroid/app/ActionBar$Tab;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/internal/app/ActionBarImpl;->mTabs:Ljava/util/ArrayList;
 
@@ -1095,9 +1064,6 @@
 
 .method public addTab(Landroid/app/ActionBar$Tab;IZ)V
     .locals 1
-    .param p1    # Landroid/app/ActionBar$Tab;
-    .param p2    # I
-    .param p3    # Z
 
     invoke-direct {p0}, Lcom/android/internal/app/ActionBarImpl;->ensureTabsExist()V
 
@@ -1117,8 +1083,6 @@
 
 .method public addTab(Landroid/app/ActionBar$Tab;Z)V
     .locals 1
-    .param p1    # Landroid/app/ActionBar$Tab;
-    .param p2    # Z
 
     invoke-direct {p0}, Lcom/android/internal/app/ActionBarImpl;->ensureTabsExist()V
 
@@ -1144,7 +1108,6 @@
 
 .method animateToMode(Z)V
     .locals 4
-    .param p1    # Z
 
     const/4 v2, 0x0
 
@@ -1262,7 +1225,6 @@
 
 .method public dispatchMenuVisibilityChanged(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-boolean v2, p0, Lcom/android/internal/app/ActionBarImpl;->mLastMenuVisibility:Z
 
@@ -1302,7 +1264,6 @@
 
 .method public doHide(Z)V
     .locals 12
-    .param p1    # Z
 
     const/4 v8, 0x2
 
@@ -1500,7 +1461,6 @@
 
 .method public doShow(Z)V
     .locals 12
-    .param p1    # Z
 
     const/4 v11, 0x2
 
@@ -1772,7 +1732,6 @@
 
 .method public enableContentAnimations(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/internal/app/ActionBarImpl;->mContentAnimations:Z
 
@@ -1947,7 +1906,6 @@
 
 .method public getTabAt(I)Landroid/app/ActionBar$Tab;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/internal/app/ActionBarImpl;->mTabs:Ljava/util/ArrayList;
 
@@ -2191,7 +2149,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 1
-    .param p1    # Landroid/content/res/Configuration;
 
     iget-object v0, p0, Lcom/android/internal/app/ActionBarImpl;->mContext:Landroid/content/Context;
 
@@ -2218,7 +2175,6 @@
 
 .method public removeOnMenuVisibilityListener(Landroid/app/ActionBar$OnMenuVisibilityListener;)V
     .locals 1
-    .param p1    # Landroid/app/ActionBar$OnMenuVisibilityListener;
 
     iget-object v0, p0, Lcom/android/internal/app/ActionBarImpl;->mMenuVisibilityListeners:Ljava/util/ArrayList;
 
@@ -2229,7 +2185,6 @@
 
 .method public removeTab(Landroid/app/ActionBar$Tab;)V
     .locals 1
-    .param p1    # Landroid/app/ActionBar$Tab;
 
     invoke-virtual {p1}, Landroid/app/ActionBar$Tab;->getPosition()I
 
@@ -2242,7 +2197,6 @@
 
 .method public removeTabAt(I)V
     .locals 7
-    .param p1    # I
 
     iget-object v4, p0, Lcom/android/internal/app/ActionBarImpl;->mTabScrollView:Lcom/android/internal/widget/ScrollingTabContainerView;
 
@@ -2353,7 +2307,6 @@
 
 .method public selectTab(Landroid/app/ActionBar$Tab;)V
     .locals 4
-    .param p1    # Landroid/app/ActionBar$Tab;
 
     const/4 v1, -0x1
 
@@ -2481,7 +2434,6 @@
 
 .method public setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
     .locals 1
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     iget-object v0, p0, Lcom/android/internal/app/ActionBarImpl;->mContainerView:Lcom/android/internal/widget/ActionBarContainer;
 
@@ -2492,7 +2444,6 @@
 
 .method public setCustomView(I)V
     .locals 3
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/internal/app/ActionBarImpl;->getThemedContext()Landroid/content/Context;
 
@@ -2517,7 +2468,6 @@
 
 .method public setCustomView(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Lcom/android/internal/app/ActionBarImpl;->mActionView:Lcom/android/internal/widget/ActionBarView;
 
@@ -2528,8 +2478,6 @@
 
 .method public setCustomView(Landroid/view/View;Landroid/app/ActionBar$LayoutParams;)V
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/app/ActionBar$LayoutParams;
 
     invoke-virtual {p1, p2}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
@@ -2542,7 +2490,6 @@
 
 .method public setDefaultDisplayHomeAsUpEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-boolean v0, p0, Lcom/android/internal/app/ActionBarImpl;->mDisplayHomeAsUpSet:Z
 
@@ -2556,7 +2503,6 @@
 
 .method public setDisplayHomeAsUpEnabled(Z)V
     .locals 2
-    .param p1    # Z
 
     const/4 v1, 0x4
 
@@ -2577,7 +2523,6 @@
 
 .method public setDisplayOptions(I)V
     .locals 1
-    .param p1    # I
 
     and-int/lit8 v0, p1, 0x4
 
@@ -2597,8 +2542,6 @@
 
 .method public setDisplayOptions(II)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     iget-object v1, p0, Lcom/android/internal/app/ActionBarImpl;->mActionView:Lcom/android/internal/widget/ActionBarView;
 
@@ -2632,7 +2575,6 @@
 
 .method public setDisplayShowCustomEnabled(Z)V
     .locals 2
-    .param p1    # Z
 
     const/16 v1, 0x10
 
@@ -2653,7 +2595,6 @@
 
 .method public setDisplayShowHomeEnabled(Z)V
     .locals 2
-    .param p1    # Z
 
     const/4 v1, 0x2
 
@@ -2674,7 +2615,6 @@
 
 .method public setDisplayShowTitleEnabled(Z)V
     .locals 2
-    .param p1    # Z
 
     const/16 v1, 0x8
 
@@ -2695,7 +2635,6 @@
 
 .method public setDisplayUseLogoEnabled(Z)V
     .locals 2
-    .param p1    # Z
 
     const/4 v1, 0x1
 
@@ -2716,7 +2655,6 @@
 
 .method public setHomeActionContentDescription(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/internal/app/ActionBarImpl;->mActionView:Lcom/android/internal/widget/ActionBarView;
 
@@ -2727,7 +2665,6 @@
 
 .method public setHomeActionContentDescription(Ljava/lang/CharSequence;)V
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
 
     iget-object v0, p0, Lcom/android/internal/app/ActionBarImpl;->mActionView:Lcom/android/internal/widget/ActionBarView;
 
@@ -2738,7 +2675,6 @@
 
 .method public setHomeAsUpIndicator(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/internal/app/ActionBarImpl;->mActionView:Lcom/android/internal/widget/ActionBarView;
 
@@ -2749,7 +2685,6 @@
 
 .method public setHomeAsUpIndicator(Landroid/graphics/drawable/Drawable;)V
     .locals 1
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     iget-object v0, p0, Lcom/android/internal/app/ActionBarImpl;->mActionView:Lcom/android/internal/widget/ActionBarView;
 
@@ -2760,7 +2695,6 @@
 
 .method public setHomeButtonEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/internal/app/ActionBarImpl;->mActionView:Lcom/android/internal/widget/ActionBarView;
 
@@ -2771,7 +2705,6 @@
 
 .method public setIcon(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/internal/app/ActionBarImpl;->mActionView:Lcom/android/internal/widget/ActionBarView;
 
@@ -2782,7 +2715,6 @@
 
 .method public setIcon(Landroid/graphics/drawable/Drawable;)V
     .locals 1
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     iget-object v0, p0, Lcom/android/internal/app/ActionBarImpl;->mActionView:Lcom/android/internal/widget/ActionBarView;
 
@@ -2793,8 +2725,6 @@
 
 .method public setListNavigationCallbacks(Landroid/widget/SpinnerAdapter;Landroid/app/ActionBar$OnNavigationListener;)V
     .locals 1
-    .param p1    # Landroid/widget/SpinnerAdapter;
-    .param p2    # Landroid/app/ActionBar$OnNavigationListener;
 
     iget-object v0, p0, Lcom/android/internal/app/ActionBarImpl;->mActionView:Lcom/android/internal/widget/ActionBarView;
 
@@ -2809,7 +2739,6 @@
 
 .method public setLogo(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/internal/app/ActionBarImpl;->mActionView:Lcom/android/internal/widget/ActionBarView;
 
@@ -2820,7 +2749,6 @@
 
 .method public setLogo(Landroid/graphics/drawable/Drawable;)V
     .locals 1
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     iget-object v0, p0, Lcom/android/internal/app/ActionBarImpl;->mActionView:Lcom/android/internal/widget/ActionBarView;
 
@@ -2831,7 +2759,6 @@
 
 .method public setNavigationMode(I)V
     .locals 5
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -2937,7 +2864,6 @@
 
 .method public setSelectedNavigationItem(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/internal/app/ActionBarImpl;->mActionView:Lcom/android/internal/widget/ActionBarView;
 
@@ -2985,7 +2911,6 @@
 
 .method public setShowHideAnimationEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/internal/app/ActionBarImpl;->mShowHideAnimationEnabled:Z
 
@@ -3005,7 +2930,6 @@
 
 .method public setSplitBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
     .locals 1
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     iget-object v0, p0, Lcom/android/internal/app/ActionBarImpl;->mSplitView:Lcom/android/internal/widget/ActionBarContainer;
 
@@ -3021,7 +2945,6 @@
 
 .method public setStackedBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
     .locals 1
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     iget-object v0, p0, Lcom/android/internal/app/ActionBarImpl;->mContainerView:Lcom/android/internal/widget/ActionBarContainer;
 
@@ -3032,7 +2955,6 @@
 
 .method public setSubtitle(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/internal/app/ActionBarImpl;->mContext:Landroid/content/Context;
 
@@ -3047,7 +2969,6 @@
 
 .method public setSubtitle(Ljava/lang/CharSequence;)V
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
 
     iget-object v0, p0, Lcom/android/internal/app/ActionBarImpl;->mActionView:Lcom/android/internal/widget/ActionBarView;
 
@@ -3058,7 +2979,6 @@
 
 .method public setTitle(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/internal/app/ActionBarImpl;->mContext:Landroid/content/Context;
 
@@ -3073,7 +2993,6 @@
 
 .method public setTitle(Ljava/lang/CharSequence;)V
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
 
     iget-object v0, p0, Lcom/android/internal/app/ActionBarImpl;->mActionView:Lcom/android/internal/widget/ActionBarView;
 
@@ -3084,7 +3003,6 @@
 
 .method public setWindowVisibility(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/internal/app/ActionBarImpl;->mCurWindowVisibility:I
 
@@ -3129,7 +3047,6 @@
 
 .method public startActionMode(Landroid/view/ActionMode$Callback;)Landroid/view/ActionMode;
     .locals 3
-    .param p1    # Landroid/view/ActionMode$Callback;
 
     const/4 v2, 0x1
 
@@ -3214,7 +3131,6 @@
 
 .method public twPutTabsOnTop(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/internal/app/ActionBarImpl;->mContainerView:Lcom/android/internal/widget/ActionBarContainer;
 
@@ -3225,7 +3141,6 @@
 
 .method public twSetDisplayActionBarDisabledWithAnimation(J)V
     .locals 10
-    .param p1    # J
 
     const/4 v9, 0x1
 
@@ -3292,7 +3207,6 @@
 
 .method public twSetDisplayActionBarEnabledWithAnimation(J)V
     .locals 10
-    .param p1    # J
 
     const/4 v9, 0x1
 
@@ -3351,7 +3265,6 @@
 
 .method public twSetDisplayHomeAsUpEnabledWithAnimation(Z)V
     .locals 1
-    .param p1    # Z
 
     const/4 v0, 0x1
 
@@ -3366,8 +3279,6 @@
 
 .method public twSetDisplayHomeAsUpEnabledWithAnimation(ZJ)V
     .locals 1
-    .param p1    # Z
-    .param p2    # J
 
     const/4 v0, 0x1
 
@@ -3382,7 +3293,6 @@
 
 .method public twSetTabMoveAnimationEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/internal/app/ActionBarImpl;->mTabScrollView:Lcom/android/internal/widget/ScrollingTabContainerView;
 

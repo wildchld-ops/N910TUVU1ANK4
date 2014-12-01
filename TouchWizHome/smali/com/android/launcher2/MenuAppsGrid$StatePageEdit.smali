@@ -48,7 +48,6 @@
 
 .method public bridge synthetic appBadgeUpdated(Ljava/util/List;)V
     .locals 0
-    .param p1    # Ljava/util/List;
 
     invoke-super {p0, p1}, Lcom/android/launcher2/MenuAppsGrid$StateObj;->appBadgeUpdated(Ljava/util/List;)V
 
@@ -57,7 +56,6 @@
 
 .method public enter(Ljava/util/List;Lcom/android/launcher2/MenuAppsGrid$State;)V
     .locals 9
-    .param p2    # Lcom/android/launcher2/MenuAppsGrid$State;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -299,7 +297,6 @@
 
 .method public exit(Ljava/util/List;Lcom/android/launcher2/MenuAppsGrid$State;)V
     .locals 3
-    .param p2    # Lcom/android/launcher2/MenuAppsGrid$State;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -413,7 +410,6 @@
 
 .method public bridge synthetic exitItemViews(Ljava/lang/Iterable;)V
     .locals 0
-    .param p1    # Ljava/lang/Iterable;
 
     invoke-super {p0, p1}, Lcom/android/launcher2/MenuAppsGrid$StateObj;->exitItemViews(Ljava/lang/Iterable;)V
 
@@ -536,7 +532,6 @@
 
 .method public getPage(I)Landroid/view/View;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/launcher2/MenuAppsGrid$StatePageEdit;->this$0:Lcom/android/launcher2/MenuAppsGrid;
 
@@ -585,7 +580,6 @@
 
 .method public getPagesLocationOnScreen([I)V
     .locals 1
-    .param p1    # [I
 
     iget-object v0, p0, Lcom/android/launcher2/MenuAppsGrid$StatePageEdit;->this$0:Lcom/android/launcher2/MenuAppsGrid;
 
@@ -616,7 +610,6 @@
 
 .method public isFolderPage(I)Z
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/launcher2/MenuAppsGrid$StatePageEdit;->this$0:Lcom/android/launcher2/MenuAppsGrid;
 
@@ -655,8 +648,6 @@
 
 .method public movePage(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/launcher2/MenuAppsGrid$StatePageEdit;->this$0:Lcom/android/launcher2/MenuAppsGrid;
 
@@ -682,8 +673,6 @@
 
 .method public onClickAppItem(Lcom/android/launcher2/AppItem;Landroid/view/View;)Z
     .locals 1
-    .param p1    # Lcom/android/launcher2/AppItem;
-    .param p2    # Landroid/view/View;
 
     const/4 v0, 0x0
 
@@ -814,8 +803,6 @@
 
 .method public bridge synthetic preOpenFolder(Lcom/android/launcher2/FolderItem;Lcom/android/launcher2/Folder;)V
     .locals 0
-    .param p1    # Lcom/android/launcher2/FolderItem;
-    .param p2    # Lcom/android/launcher2/Folder;
 
     invoke-super {p0, p1, p2}, Lcom/android/launcher2/MenuAppsGrid$StateObj;->preOpenFolder(Lcom/android/launcher2/FolderItem;Lcom/android/launcher2/Folder;)V
 
@@ -824,7 +811,6 @@
 
 .method public refreshQuickView(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/launcher2/MenuAppsGrid$StatePageEdit;->mQuickView:Lcom/android/launcher2/QuickViewMainMenu;
 
@@ -865,7 +851,6 @@
 
 .method public bridge synthetic restore(Landroid/os/Bundle;)Z
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/launcher2/MenuAppsGrid$StateObj;->restore(Landroid/os/Bundle;)Z
 
@@ -876,7 +861,6 @@
 
 .method public bridge synthetic save(Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/launcher2/MenuAppsGrid$StateObj;->save(Landroid/os/Bundle;)V
 
@@ -951,7 +935,6 @@
 
 .method public setPage(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/launcher2/MenuAppsGrid$StatePageEdit;->this$0:Lcom/android/launcher2/MenuAppsGrid;
 

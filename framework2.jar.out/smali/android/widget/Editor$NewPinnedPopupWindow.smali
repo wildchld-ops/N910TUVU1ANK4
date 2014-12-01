@@ -175,7 +175,6 @@
 
 .method private setPopupWindowWidth(I)V
     .locals 4
-    .param p1    # I
 
     iget v0, p0, Landroid/widget/Editor$NewPinnedPopupWindow;->mMenuItemCount:I
 
@@ -381,7 +380,6 @@
 
 .method public relocateNewActionPopupWindow(I)V
     .locals 1
-    .param p1    # I
 
     if-ltz p1, :cond_0
 
@@ -747,10 +745,6 @@
 
 .method public updatePosition(IIZZ)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # Z
 
     invoke-virtual {p0}, Landroid/widget/Editor$NewPinnedPopupWindow;->isShowing()Z
 

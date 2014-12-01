@@ -82,9 +82,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/os/Handler;I)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/Handler;
-    .param p3    # I
 
     const/4 v2, 0x0
 
@@ -141,7 +138,6 @@
 
 .method static synthetic access$000(Lcom/android/server/connectivity/PacManager;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Lcom/android/server/connectivity/PacManager;
 
     iget-object v0, p0, Lcom/android/server/connectivity/PacManager;->mProxyLock:Ljava/lang/Object;
 
@@ -150,7 +146,6 @@
 
 .method static synthetic access$100(Lcom/android/server/connectivity/PacManager;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/server/connectivity/PacManager;
 
     iget-object v0, p0, Lcom/android/server/connectivity/PacManager;->mPacUrl:Ljava/lang/String;
 
@@ -159,7 +154,6 @@
 
 .method static synthetic access$1000(Lcom/android/server/connectivity/PacManager;)Lcom/android/net/IProxyService;
     .locals 1
-    .param p0    # Lcom/android/server/connectivity/PacManager;
 
     iget-object v0, p0, Lcom/android/server/connectivity/PacManager;->mProxyService:Lcom/android/net/IProxyService;
 
@@ -168,8 +162,6 @@
 
 .method static synthetic access$1002(Lcom/android/server/connectivity/PacManager;Lcom/android/net/IProxyService;)Lcom/android/net/IProxyService;
     .locals 0
-    .param p0    # Lcom/android/server/connectivity/PacManager;
-    .param p1    # Lcom/android/net/IProxyService;
 
     iput-object p1, p0, Lcom/android/server/connectivity/PacManager;->mProxyService:Lcom/android/net/IProxyService;
 
@@ -178,7 +170,6 @@
 
 .method static synthetic access$1100(Lcom/android/server/connectivity/PacManager;)I
     .locals 1
-    .param p0    # Lcom/android/server/connectivity/PacManager;
 
     iget v0, p0, Lcom/android/server/connectivity/PacManager;->mLastPort:I
 
@@ -187,8 +178,6 @@
 
 .method static synthetic access$1102(Lcom/android/server/connectivity/PacManager;I)I
     .locals 0
-    .param p0    # Lcom/android/server/connectivity/PacManager;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/connectivity/PacManager;->mLastPort:I
 
@@ -197,8 +186,6 @@
 
 .method static synthetic access$1202(Lcom/android/server/connectivity/PacManager;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/connectivity/PacManager;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/connectivity/PacManager;->mHasSentBroadcast:Z
 
@@ -207,7 +194,6 @@
 
 .method static synthetic access$200(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -223,7 +209,6 @@
 
 .method static synthetic access$300(Lcom/android/server/connectivity/PacManager;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/server/connectivity/PacManager;
 
     iget-object v0, p0, Lcom/android/server/connectivity/PacManager;->mCurrentPac:Ljava/lang/String;
 
@@ -232,8 +217,6 @@
 
 .method static synthetic access$400(Lcom/android/server/connectivity/PacManager;Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Lcom/android/server/connectivity/PacManager;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/connectivity/PacManager;->setCurrentProxyScript(Ljava/lang/String;)Z
 
@@ -244,8 +227,6 @@
 
 .method static synthetic access$502(Lcom/android/server/connectivity/PacManager;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/connectivity/PacManager;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/connectivity/PacManager;->mHasDownloaded:Z
 
@@ -254,7 +235,6 @@
 
 .method static synthetic access$600(Lcom/android/server/connectivity/PacManager;)V
     .locals 0
-    .param p0    # Lcom/android/server/connectivity/PacManager;
 
     invoke-direct {p0}, Lcom/android/server/connectivity/PacManager;->sendProxyIfNeeded()V
 
@@ -263,7 +243,6 @@
 
 .method static synthetic access$700(Lcom/android/server/connectivity/PacManager;)V
     .locals 0
-    .param p0    # Lcom/android/server/connectivity/PacManager;
 
     invoke-direct {p0}, Lcom/android/server/connectivity/PacManager;->longSchedule()V
 
@@ -272,7 +251,6 @@
 
 .method static synthetic access$800(Lcom/android/server/connectivity/PacManager;)V
     .locals 0
-    .param p0    # Lcom/android/server/connectivity/PacManager;
 
     invoke-direct {p0}, Lcom/android/server/connectivity/PacManager;->reschedule()V
 
@@ -281,7 +259,6 @@
 
 .method static synthetic access$900(Lcom/android/server/connectivity/PacManager;)Ljava/lang/Runnable;
     .locals 1
-    .param p0    # Lcom/android/server/connectivity/PacManager;
 
     iget-object v0, p0, Lcom/android/server/connectivity/PacManager;->mPacDownloader:Ljava/lang/Runnable;
 
@@ -392,7 +369,6 @@
 
 .method private static get(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -451,7 +427,6 @@
 
 .method private getDownloadDelay(I)J
     .locals 3
-    .param p1    # I
 
     invoke-direct {p0}, Lcom/android/server/connectivity/PacManager;->getPacChangeDelay()Ljava/lang/String;
 
@@ -484,7 +459,6 @@
 
 .method private getNextDelay(I)I
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x3
 
@@ -566,7 +540,6 @@
 
 .method private sendPacBroadcast(Landroid/net/ProxyProperties;)V
     .locals 3
-    .param p1    # Landroid/net/ProxyProperties;
 
     iget-object v0, p0, Lcom/android/server/connectivity/PacManager;->mConnectivityHandler:Landroid/os/Handler;
 
@@ -641,7 +614,6 @@
 
 .method private setCurrentProxyScript(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/server/connectivity/PacManager;->mProxyService:Lcom/android/net/IProxyService;
 
@@ -687,7 +659,6 @@
 
 .method private setDownloadIn(I)V
     .locals 8
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/connectivity/PacManager;->getDownloadDelay(I)J
 
@@ -760,7 +731,6 @@
 # virtual methods
 .method public declared-synchronized setCurrentProxyScriptUrl(Landroid/net/ProxyProperties;)Z
     .locals 5
-    .param p1    # Landroid/net/ProxyProperties;
 
     const/4 v1, 0x0
 

@@ -36,7 +36,6 @@
 # virtual methods
 .method public onPreferenceClick(Landroid/preference/Preference;)Z
     .locals 3
-    .param p1    # Landroid/preference/Preference;
 
     iget-object v1, p0, Lcom/android/mms/ui/CbConfigPreferenceActivity$2;->this$0:Lcom/android/mms/ui/CbConfigPreferenceActivity;
 

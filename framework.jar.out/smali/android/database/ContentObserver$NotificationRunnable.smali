@@ -28,8 +28,6 @@
 # direct methods
 .method public constructor <init>(Landroid/database/ContentObserver;ZLandroid/net/Uri;)V
     .locals 0
-    .param p2    # Z
-    .param p3    # Landroid/net/Uri;
 
     iput-object p1, p0, Landroid/database/ContentObserver$NotificationRunnable;->this$0:Landroid/database/ContentObserver;
 

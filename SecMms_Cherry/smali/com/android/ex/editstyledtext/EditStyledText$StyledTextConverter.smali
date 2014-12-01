@@ -25,8 +25,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/ex/editstyledtext/EditStyledText;Lcom/android/ex/editstyledtext/EditStyledText;Lcom/android/ex/editstyledtext/EditStyledText$StyledTextHtmlConverter;)V
     .locals 0
-    .param p2    # Lcom/android/ex/editstyledtext/EditStyledText;
-    .param p3    # Lcom/android/ex/editstyledtext/EditStyledText$StyledTextHtmlConverter;
 
     iput-object p1, p0, Lcom/android/ex/editstyledtext/EditStyledText$StyledTextConverter;->this$0:Lcom/android/ex/editstyledtext/EditStyledText;
 
@@ -41,7 +39,6 @@
 
 .method static synthetic access$1200(Lcom/android/ex/editstyledtext/EditStyledText$StyledTextConverter;)Lcom/android/ex/editstyledtext/EditStyledText;
     .locals 1
-    .param p0    # Lcom/android/ex/editstyledtext/EditStyledText$StyledTextConverter;
 
     iget-object v0, p0, Lcom/android/ex/editstyledtext/EditStyledText$StyledTextConverter;->mEST:Lcom/android/ex/editstyledtext/EditStyledText;
 
@@ -52,7 +49,6 @@
 # virtual methods
 .method public SetHtml(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/ex/editstyledtext/EditStyledText$StyledTextConverter;->mHtml:Lcom/android/ex/editstyledtext/EditStyledText$StyledTextHtmlConverter;
 
@@ -75,7 +71,6 @@
 
 .method public getHtml(Z)Ljava/lang/String;
     .locals 4
-    .param p1    # Z
 
     iget-object v1, p0, Lcom/android/ex/editstyledtext/EditStyledText$StyledTextConverter;->mEST:Lcom/android/ex/editstyledtext/EditStyledText;
 
@@ -260,7 +255,6 @@
 
 .method public getUriArray(Ljava/util/ArrayList;Landroid/text/Editable;)V
     .locals 8
-    .param p2    # Landroid/text/Editable;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -370,7 +364,6 @@
 
 .method public setStyledTextHtmlConverter(Lcom/android/ex/editstyledtext/EditStyledText$StyledTextHtmlConverter;)V
     .locals 0
-    .param p1    # Lcom/android/ex/editstyledtext/EditStyledText$StyledTextHtmlConverter;
 
     iput-object p1, p0, Lcom/android/ex/editstyledtext/EditStyledText$StyledTextConverter;->mHtml:Lcom/android/ex/editstyledtext/EditStyledText$StyledTextHtmlConverter;
 

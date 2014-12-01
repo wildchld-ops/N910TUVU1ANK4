@@ -33,7 +33,6 @@
 # virtual methods
 .method public onCallForwardingIndicatorChanged(Z)V
     .locals 5
-    .param p1    # Z
 
     const/4 v1, 0x0
 
@@ -66,8 +65,6 @@
 
 .method public onCallStateChanged(ILjava/lang/String;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/telephony/PhoneStateListener$1;->this$0:Landroid/telephony/PhoneStateListener;
 
@@ -117,7 +114,6 @@
 
 .method public onCellLocationChanged(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v3, 0x0
 
@@ -142,7 +138,6 @@
 
 .method public onDataActivity(I)V
     .locals 4
-    .param p1    # I
 
     iget-object v0, p0, Landroid/telephony/PhoneStateListener$1;->this$0:Landroid/telephony/PhoneStateListener;
 
@@ -165,8 +160,6 @@
 
 .method public onDataConnectionStateChanged(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Landroid/telephony/PhoneStateListener$1;->this$0:Landroid/telephony/PhoneStateListener;
 
@@ -185,7 +178,6 @@
 
 .method public onDunDataActivity(I)V
     .locals 4
-    .param p1    # I
 
     iget-object v0, p0, Landroid/telephony/PhoneStateListener$1;->this$0:Landroid/telephony/PhoneStateListener;
 
@@ -208,8 +200,6 @@
 
 .method public onDunDataConnectionStateChanged(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Landroid/telephony/PhoneStateListener$1;->this$0:Landroid/telephony/PhoneStateListener;
 
@@ -252,7 +242,6 @@
 
 .method public onMessageWaitingIndicatorChanged(Z)V
     .locals 5
-    .param p1    # Z
 
     const/4 v1, 0x0
 
@@ -285,7 +274,6 @@
 
 .method public onOtaspChanged(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v0, p0, Landroid/telephony/PhoneStateListener$1;->this$0:Landroid/telephony/PhoneStateListener;
 
@@ -306,7 +294,6 @@
 
 .method public onServiceStateChanged(Landroid/telephony/ServiceState;)V
     .locals 3
-    .param p1    # Landroid/telephony/ServiceState;
 
     const/4 v2, 0x0
 
@@ -327,7 +314,6 @@
 
 .method public onSignalStrengthChanged(I)V
     .locals 4
-    .param p1    # I
 
     iget-object v0, p0, Landroid/telephony/PhoneStateListener$1;->this$0:Landroid/telephony/PhoneStateListener;
 
@@ -350,7 +336,6 @@
 
 .method public onSignalStrengthsChanged(Landroid/telephony/SignalStrength;)V
     .locals 3
-    .param p1    # Landroid/telephony/SignalStrength;
 
     const/4 v2, 0x0
 

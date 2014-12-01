@@ -48,7 +48,6 @@
 
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -73,8 +72,6 @@
 
 .method static synthetic access$000(Lcom/android/incallui/VoWifiStateTracker;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/incallui/VoWifiStateTracker;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/incallui/VoWifiStateTracker;->log(Ljava/lang/String;)V
 
@@ -83,7 +80,6 @@
 
 .method static synthetic access$100(Lcom/android/incallui/VoWifiStateTracker;)V
     .locals 0
-    .param p0    # Lcom/android/incallui/VoWifiStateTracker;
 
     invoke-direct {p0}, Lcom/android/incallui/VoWifiStateTracker;->updateRegistrationStatus()V
 
@@ -92,7 +88,6 @@
 
 .method static synthetic access$200(Lcom/android/incallui/VoWifiStateTracker;)V
     .locals 0
-    .param p0    # Lcom/android/incallui/VoWifiStateTracker;
 
     invoke-direct {p0}, Lcom/android/incallui/VoWifiStateTracker;->getVoWiFiStatus()V
 
@@ -101,7 +96,6 @@
 
 .method public static getInstance(Landroid/content/Context;)Lcom/android/incallui/VoWifiStateTracker;
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     sget-object v0, Lcom/android/incallui/VoWifiStateTracker;->sIntance:Lcom/android/incallui/VoWifiStateTracker;
 
@@ -324,7 +318,6 @@
 
 .method private log(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "VoWifiStateTracker"
 
@@ -413,7 +406,6 @@
 
 .method public registerForWfcRegistrationStatus(Lcom/android/incallui/VoWifiStateTracker$VoWifiStateListener;)V
     .locals 4
-    .param p1    # Lcom/android/incallui/VoWifiStateTracker$VoWifiStateListener;
 
     const/4 v3, 0x0
 

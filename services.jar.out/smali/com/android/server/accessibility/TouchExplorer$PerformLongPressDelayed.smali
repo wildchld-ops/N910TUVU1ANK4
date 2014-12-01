@@ -38,8 +38,6 @@
 
 .method synthetic constructor <init>(Lcom/android/server/accessibility/TouchExplorer;Lcom/android/server/accessibility/TouchExplorer$1;)V
     .locals 0
-    .param p1    # Lcom/android/server/accessibility/TouchExplorer;
-    .param p2    # Lcom/android/server/accessibility/TouchExplorer$1;
 
     invoke-direct {p0, p1}, Lcom/android/server/accessibility/TouchExplorer$PerformLongPressDelayed;-><init>(Lcom/android/server/accessibility/TouchExplorer;)V
 
@@ -48,7 +46,6 @@
 
 .method static synthetic access$500(Lcom/android/server/accessibility/TouchExplorer$PerformLongPressDelayed;)Z
     .locals 1
-    .param p0    # Lcom/android/server/accessibility/TouchExplorer$PerformLongPressDelayed;
 
     invoke-direct {p0}, Lcom/android/server/accessibility/TouchExplorer$PerformLongPressDelayed;->isPending()Z
 
@@ -118,8 +115,6 @@
 
 .method public post(Landroid/view/MotionEvent;I)V
     .locals 3
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # I
 
     invoke-static {p1}, Landroid/view/MotionEvent;->obtain(Landroid/view/MotionEvent;)Landroid/view/MotionEvent;
 

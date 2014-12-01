@@ -103,8 +103,6 @@
 
 .method public static round(DI)D
     .locals 8
-    .param p0    # D
-    .param p2    # I
 
     if-gez p2, :cond_0
 
@@ -141,7 +139,6 @@
 
 .method private setTempData(Landroid/view/View;)V
     .locals 13
-    .param p1    # Landroid/view/View;
 
     const v9, 0x7f0b029e
 
@@ -386,7 +383,6 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onActivityCreated(Landroid/os/Bundle;)V
 
@@ -401,9 +397,6 @@
 
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const/4 v4, 0x0
 
@@ -553,7 +546,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -580,8 +572,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
     .locals 6
-    .param p1    # Landroid/view/Menu;
-    .param p2    # Landroid/view/MenuInflater;
 
     const/4 v5, 0x2
 
@@ -720,9 +710,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 18
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const v14, 0x7f040115
 
@@ -1155,7 +1142,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 9
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v6, 0x1
 
@@ -1293,7 +1279,6 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)V
     .locals 3
-    .param p1    # Landroid/view/Menu;
 
     const/4 v2, 0x1
 

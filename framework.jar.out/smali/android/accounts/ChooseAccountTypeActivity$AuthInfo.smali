@@ -25,9 +25,6 @@
 # direct methods
 .method constructor <init>(Landroid/accounts/AuthenticatorDescription;Ljava/lang/String;Landroid/graphics/drawable/Drawable;)V
     .locals 0
-    .param p1    # Landroid/accounts/AuthenticatorDescription;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/graphics/drawable/Drawable;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

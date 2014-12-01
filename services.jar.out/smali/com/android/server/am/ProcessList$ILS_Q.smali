@@ -103,7 +103,6 @@
 
 .method public static isAppsLaunchFreq(Ljava/lang/String;)Z
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/android/server/am/ProcessList$ILS_Q;->isInsert(Ljava/lang/String;)Z
 
@@ -157,7 +156,6 @@
 
 .method private static isInsert(Ljava/lang/String;)Z
     .locals 6
-    .param p0    # Ljava/lang/String;
 
     const/4 v3, 0x1
 

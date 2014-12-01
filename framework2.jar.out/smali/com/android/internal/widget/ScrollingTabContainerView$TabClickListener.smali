@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Lcom/android/internal/widget/ScrollingTabContainerView;Lcom/android/internal/widget/ScrollingTabContainerView$1;)V
     .locals 0
-    .param p1    # Lcom/android/internal/widget/ScrollingTabContainerView;
-    .param p2    # Lcom/android/internal/widget/ScrollingTabContainerView$1;
 
     invoke-direct {p0, p1}, Lcom/android/internal/widget/ScrollingTabContainerView$TabClickListener;-><init>(Lcom/android/internal/widget/ScrollingTabContainerView;)V
 
@@ -46,7 +44,6 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 8
-    .param p1    # Landroid/view/View;
 
     const/4 v7, 0x0
 

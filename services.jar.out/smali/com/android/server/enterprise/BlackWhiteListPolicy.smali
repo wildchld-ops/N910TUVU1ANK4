@@ -48,8 +48,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -151,8 +149,6 @@
 
 .method private addObjectsToList(ILjava/util/List;Ljava/lang/String;)Z
     .locals 6
-    .param p1    # I
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -260,8 +256,6 @@
 
 .method private clearObjectsFromList(ILjava/lang/String;)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -308,7 +302,6 @@
 
 .method private createEffectiveList(ILjava/util/List;Ljava/util/List;)V
     .locals 4
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -650,8 +643,6 @@
 
 .method private getAllObjectsFromList(ILjava/lang/String;Ljava/util/List;)V
     .locals 8
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -727,7 +718,6 @@
 
 .method private getAllObjectsFromListForAllAdmins(Ljava/lang/String;)Ljava/util/List;
     .locals 8
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -814,7 +804,6 @@
 
 .method private getPackageNameForUid(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/enterprise/BlackWhiteListPolicy;->mEdmStorageProvider:Lcom/android/server/enterprise/storage/EdmStorageProvider;
 
@@ -827,7 +816,6 @@
 
 .method private logList(Ljava/lang/String;Ljava/util/List;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -931,8 +919,6 @@
 
 .method private removeObjectsFromList(ILjava/util/List;Ljava/lang/String;)Z
     .locals 5
-    .param p1    # I
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -1070,7 +1056,6 @@
 
 .method private subtractWhitelistFromOthersBlacklists(ILjava/util/List;Ljava/util/Map;)V
     .locals 3
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -1152,7 +1137,6 @@
 # virtual methods
 .method public addObjectsToBlackList(ILjava/util/List;)Z
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -1174,7 +1158,6 @@
 
 .method public addObjectsToWhiteList(ILjava/util/List;)Z
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -1196,7 +1179,6 @@
 
 .method public clearObjectsFromBlackList(I)Z
     .locals 1
-    .param p1    # I
 
     const-string v0, "black"
 
@@ -1209,7 +1191,6 @@
 
 .method public clearObjectsFromWhiteList(I)Z
     .locals 1
-    .param p1    # I
 
     const-string/jumbo v0, "white"
 
@@ -1320,7 +1301,6 @@
 
 .method public isObjectAllowed(Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x1
 
@@ -1432,7 +1412,6 @@
 
 .method public isPolicyActive(I)Z
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -1455,7 +1434,6 @@
 
 .method public removeObjectsFromBlackList(ILjava/util/List;)Z
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -1477,7 +1455,6 @@
 
 .method public removeObjectsFromWhiteList(ILjava/util/List;)Z
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",

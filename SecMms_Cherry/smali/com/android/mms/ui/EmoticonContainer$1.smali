@@ -21,7 +21,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/mms/ui/EmoticonContainer;Landroid/os/Handler;)V
     .locals 0
-    .param p2    # Landroid/os/Handler;
 
     iput-object p1, p0, Lcom/android/mms/ui/EmoticonContainer$1;->this$0:Lcom/android/mms/ui/EmoticonContainer;
 
@@ -34,7 +33,6 @@
 # virtual methods
 .method public onChange(Z)V
     .locals 0
-    .param p1    # Z
 
     invoke-super {p0, p1}, Landroid/database/ContentObserver;->onChange(Z)V
 
@@ -43,8 +41,6 @@
 
 .method public onChange(ZLandroid/net/Uri;)V
     .locals 8
-    .param p1    # Z
-    .param p2    # Landroid/net/Uri;
 
     const/4 v2, 0x0
 

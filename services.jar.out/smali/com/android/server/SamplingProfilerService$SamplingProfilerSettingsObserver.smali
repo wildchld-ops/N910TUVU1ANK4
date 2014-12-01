@@ -23,7 +23,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/SamplingProfilerService;Landroid/content/ContentResolver;)V
     .locals 1
-    .param p2    # Landroid/content/ContentResolver;
 
     iput-object p1, p0, Lcom/android/server/SamplingProfilerService$SamplingProfilerSettingsObserver;->this$0:Lcom/android/server/SamplingProfilerService;
 
@@ -44,7 +43,6 @@
 # virtual methods
 .method public onChange(Z)V
     .locals 4
-    .param p1    # Z
 
     iget-object v1, p0, Lcom/android/server/SamplingProfilerService$SamplingProfilerSettingsObserver;->mContentResolver:Landroid/content/ContentResolver;
 

@@ -44,10 +44,6 @@
 
 .method static readExactly(Ljava/io/FileDescriptor;[BII)I
     .locals 4
-    .param p0    # Ljava/io/FileDescriptor;
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Llibcore/io/ErrnoException;
@@ -84,8 +80,6 @@
 
 .method static unpackInt([BI)I
     .locals 6
-    .param p0    # [B
-    .param p1    # I
 
     aget-byte v4, p0, p1
 
@@ -128,7 +122,6 @@
 # virtual methods
 .method consumeNativeCrashData(Ljava/io/FileDescriptor;)V
     .locals 14
-    .param p1    # Ljava/io/FileDescriptor;
 
     const/16 v10, 0x1000
 

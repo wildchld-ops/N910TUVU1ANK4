@@ -36,7 +36,6 @@
 # direct methods
 .method public constructor <init>(Lcom/sec/android/inputmethod/databases/SIPResolver;Ljava/lang/String;)V
     .locals 0
-    .param p2    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/sec/android/inputmethod/databases/SIPResolver$SearchTask;->this$0:Lcom/sec/android/inputmethod/databases/SIPResolver;
 
@@ -51,7 +50,6 @@
 # virtual methods
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # [Ljava/lang/Object;
 
     invoke-virtual {p0, p1}, Lcom/sec/android/inputmethod/databases/SIPResolver$SearchTask;->doInBackground([Ljava/lang/Object;)Ljava/util/ArrayList;
 
@@ -62,7 +60,6 @@
 
 .method protected varargs doInBackground([Ljava/lang/Object;)Ljava/util/ArrayList;
     .locals 2
-    .param p1    # [Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([",
@@ -88,7 +85,6 @@
 
 .method protected bridge synthetic onPostExecute(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Ljava/util/ArrayList;
 
@@ -143,7 +139,6 @@
 
 .method protected varargs onProgressUpdate([Ljava/lang/Integer;)V
     .locals 0
-    .param p1    # [Ljava/lang/Integer;
 
     invoke-super {p0, p1}, Landroid/os/AsyncTask;->onProgressUpdate([Ljava/lang/Object;)V
 
@@ -152,7 +147,6 @@
 
 .method protected bridge synthetic onProgressUpdate([Ljava/lang/Object;)V
     .locals 0
-    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [Ljava/lang/Integer;
 

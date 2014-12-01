@@ -30,7 +30,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/DirEncryptServiceHelper;Landroid/content/Context;)V
     .locals 1
-    .param p2    # Landroid/content/Context;
 
     iput-object p1, p0, Lcom/android/server/DirEncryptServiceHelper$AnimatingNotification;->this$0:Lcom/android/server/DirEncryptServiceHelper;
 

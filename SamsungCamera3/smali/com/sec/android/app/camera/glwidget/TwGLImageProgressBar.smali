@@ -66,16 +66,6 @@
 # direct methods
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;FFFFIIFFI)V
     .locals 9
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # I
-    .param p7    # I
-    .param p8    # F
-    .param p9    # F
-    .param p10    # I
 
     invoke-direct/range {p0 .. p5}, Lcom/sec/android/glview/TwGLViewGroup;-><init>(Lcom/sec/android/glview/TwGLContext;FFFF)V
 
@@ -308,7 +298,6 @@
 
 .method public getOrientation(I)I
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLImageProgressBar;->mOrientation:[I
 
@@ -327,7 +316,6 @@
 
 .method public getUri(I)Landroid/net/Uri;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLImageProgressBar;->mUriList:Ljava/util/ArrayList;
 
@@ -342,7 +330,6 @@
 
 .method public onClick(Lcom/sec/android/glview/TwGLView;)Z
     .locals 4
-    .param p1    # Lcom/sec/android/glview/TwGLView;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLImageProgressBar;->mOnImageSelectedListener:Lcom/sec/android/app/camera/glwidget/TwGLImageProgressBar$OnImageSelectedListener;
 
@@ -510,7 +497,6 @@
 
 .method public declared-synchronized setCaptureProgressIncreased(Landroid/graphics/Bitmap;)V
     .locals 9
-    .param p1    # Landroid/graphics/Bitmap;
 
     monitor-enter p0
 
@@ -598,9 +584,6 @@
 
 .method public declared-synchronized setCaptureProgressIncreased(Landroid/graphics/Bitmap;Landroid/net/Uri;I)V
     .locals 9
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # Landroid/net/Uri;
-    .param p3    # I
 
     monitor-enter p0
 
@@ -722,7 +705,6 @@
 
 .method public setHighlight(I)V
     .locals 4
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLImageProgressBar;->mHighlightRect:Lcom/sec/android/glview/TwGLRectangle;
 
@@ -769,7 +751,6 @@
 
 .method public setOnImageSelectedListener(Lcom/sec/android/app/camera/glwidget/TwGLImageProgressBar$OnImageSelectedListener;)V
     .locals 0
-    .param p1    # Lcom/sec/android/app/camera/glwidget/TwGLImageProgressBar$OnImageSelectedListener;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLImageProgressBar;->mOnImageSelectedListener:Lcom/sec/android/app/camera/glwidget/TwGLImageProgressBar$OnImageSelectedListener;
 

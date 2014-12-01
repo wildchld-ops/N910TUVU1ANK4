@@ -68,7 +68,6 @@
 
 .method public constructor <init>(Landroid/graphics/Matrix;)V
     .locals 1
-    .param p1    # Landroid/graphics/Matrix;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -93,11 +92,6 @@
 
 .method private static checkPointArrays([FI[FII)V
     .locals 3
-    .param p0    # [F
-    .param p1    # I
-    .param p2    # [F
-    .param p3    # I
-    .param p4    # I
 
     shl-int/lit8 v2, p4, 0x1
 
@@ -263,7 +257,6 @@
 # virtual methods
 .method public equals(Ljava/lang/Object;)Z
     .locals 2
-    .param p1    # Ljava/lang/Object;
 
     instance-of v0, p1, Landroid/graphics/Matrix;
 
@@ -317,7 +310,6 @@
 
 .method public getValues([F)V
     .locals 2
-    .param p1    # [F
 
     array-length v0, p1
 
@@ -349,7 +341,6 @@
 
 .method public invert(Landroid/graphics/Matrix;)Z
     .locals 2
-    .param p1    # Landroid/graphics/Matrix;
 
     iget v0, p0, Landroid/graphics/Matrix;->native_instance:I
 
@@ -376,7 +367,6 @@
 
 .method public mapPoints([F)V
     .locals 6
-    .param p1    # [F
 
     const/4 v2, 0x0
 
@@ -399,11 +389,6 @@
 
 .method public mapPoints([FI[FII)V
     .locals 7
-    .param p1    # [F
-    .param p2    # I
-    .param p3    # [F
-    .param p4    # I
-    .param p5    # I
 
     invoke-static {p3, p4, p1, p2, p5}, Landroid/graphics/Matrix;->checkPointArrays([FI[FII)V
 
@@ -428,8 +413,6 @@
 
 .method public mapPoints([F[F)V
     .locals 6
-    .param p1    # [F
-    .param p2    # [F
 
     const/4 v2, 0x0
 
@@ -465,7 +448,6 @@
 
 .method public mapRadius(F)F
     .locals 1
-    .param p1    # F
 
     iget v0, p0, Landroid/graphics/Matrix;->native_instance:I
 
@@ -478,7 +460,6 @@
 
 .method public mapRect(Landroid/graphics/RectF;)Z
     .locals 1
-    .param p1    # Landroid/graphics/RectF;
 
     invoke-virtual {p0, p1, p1}, Landroid/graphics/Matrix;->mapRect(Landroid/graphics/RectF;Landroid/graphics/RectF;)Z
 
@@ -489,8 +470,6 @@
 
 .method public mapRect(Landroid/graphics/RectF;Landroid/graphics/RectF;)Z
     .locals 1
-    .param p1    # Landroid/graphics/RectF;
-    .param p2    # Landroid/graphics/RectF;
 
     if-eqz p1, :cond_0
 
@@ -515,7 +494,6 @@
 
 .method public mapVectors([F)V
     .locals 6
-    .param p1    # [F
 
     const/4 v2, 0x0
 
@@ -538,11 +516,6 @@
 
 .method public mapVectors([FI[FII)V
     .locals 7
-    .param p1    # [F
-    .param p2    # I
-    .param p3    # [F
-    .param p4    # I
-    .param p5    # I
 
     invoke-static {p3, p4, p1, p2, p5}, Landroid/graphics/Matrix;->checkPointArrays([FI[FII)V
 
@@ -567,8 +540,6 @@
 
 .method public mapVectors([F[F)V
     .locals 6
-    .param p1    # [F
-    .param p2    # [F
 
     const/4 v2, 0x0
 
@@ -612,7 +583,6 @@
 
 .method public postConcat(Landroid/graphics/Matrix;)Z
     .locals 2
-    .param p1    # Landroid/graphics/Matrix;
 
     iget v0, p0, Landroid/graphics/Matrix;->native_instance:I
 
@@ -627,7 +597,6 @@
 
 .method public postRotate(F)Z
     .locals 1
-    .param p1    # F
 
     iget v0, p0, Landroid/graphics/Matrix;->native_instance:I
 
@@ -640,9 +609,6 @@
 
 .method public postRotate(FFF)Z
     .locals 1
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
 
     iget v0, p0, Landroid/graphics/Matrix;->native_instance:I
 
@@ -655,8 +621,6 @@
 
 .method public postScale(FF)Z
     .locals 1
-    .param p1    # F
-    .param p2    # F
 
     iget v0, p0, Landroid/graphics/Matrix;->native_instance:I
 
@@ -669,10 +633,6 @@
 
 .method public postScale(FFFF)Z
     .locals 1
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
 
     iget v0, p0, Landroid/graphics/Matrix;->native_instance:I
 
@@ -685,8 +645,6 @@
 
 .method public postSkew(FF)Z
     .locals 1
-    .param p1    # F
-    .param p2    # F
 
     iget v0, p0, Landroid/graphics/Matrix;->native_instance:I
 
@@ -699,10 +657,6 @@
 
 .method public postSkew(FFFF)Z
     .locals 1
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
 
     iget v0, p0, Landroid/graphics/Matrix;->native_instance:I
 
@@ -715,8 +669,6 @@
 
 .method public postTranslate(FF)Z
     .locals 1
-    .param p1    # F
-    .param p2    # F
 
     iget v0, p0, Landroid/graphics/Matrix;->native_instance:I
 
@@ -729,7 +681,6 @@
 
 .method public preConcat(Landroid/graphics/Matrix;)Z
     .locals 2
-    .param p1    # Landroid/graphics/Matrix;
 
     iget v0, p0, Landroid/graphics/Matrix;->native_instance:I
 
@@ -744,7 +695,6 @@
 
 .method public preRotate(F)Z
     .locals 1
-    .param p1    # F
 
     iget v0, p0, Landroid/graphics/Matrix;->native_instance:I
 
@@ -757,9 +707,6 @@
 
 .method public preRotate(FFF)Z
     .locals 1
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
 
     iget v0, p0, Landroid/graphics/Matrix;->native_instance:I
 
@@ -772,8 +719,6 @@
 
 .method public preScale(FF)Z
     .locals 1
-    .param p1    # F
-    .param p2    # F
 
     iget v0, p0, Landroid/graphics/Matrix;->native_instance:I
 
@@ -786,10 +731,6 @@
 
 .method public preScale(FFFF)Z
     .locals 1
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
 
     iget v0, p0, Landroid/graphics/Matrix;->native_instance:I
 
@@ -802,8 +743,6 @@
 
 .method public preSkew(FF)Z
     .locals 1
-    .param p1    # F
-    .param p2    # F
 
     iget v0, p0, Landroid/graphics/Matrix;->native_instance:I
 
@@ -816,10 +755,6 @@
 
 .method public preSkew(FFFF)Z
     .locals 1
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
 
     iget v0, p0, Landroid/graphics/Matrix;->native_instance:I
 
@@ -832,8 +767,6 @@
 
 .method public preTranslate(FF)Z
     .locals 1
-    .param p1    # F
-    .param p2    # F
 
     iget v0, p0, Landroid/graphics/Matrix;->native_instance:I
 
@@ -846,7 +779,6 @@
 
 .method public printShortString(Ljava/io/PrintWriter;)V
     .locals 2
-    .param p1    # Ljava/io/PrintWriter;
 
     const/16 v1, 0x9
 
@@ -975,7 +907,6 @@
 
 .method public set(Landroid/graphics/Matrix;)V
     .locals 2
-    .param p1    # Landroid/graphics/Matrix;
 
     if-nez p1, :cond_0
 
@@ -996,8 +927,6 @@
 
 .method public setConcat(Landroid/graphics/Matrix;Landroid/graphics/Matrix;)Z
     .locals 3
-    .param p1    # Landroid/graphics/Matrix;
-    .param p2    # Landroid/graphics/Matrix;
 
     iget v0, p0, Landroid/graphics/Matrix;->native_instance:I
 
@@ -1014,11 +943,6 @@
 
 .method public setPolyToPoly([FI[FII)Z
     .locals 6
-    .param p1    # [F
-    .param p2    # I
-    .param p3    # [F
-    .param p4    # I
-    .param p5    # I
 
     const/4 v0, 0x4
 
@@ -1054,9 +978,6 @@
 
 .method public setRectToRect(Landroid/graphics/RectF;Landroid/graphics/RectF;Landroid/graphics/Matrix$ScaleToFit;)Z
     .locals 2
-    .param p1    # Landroid/graphics/RectF;
-    .param p2    # Landroid/graphics/RectF;
-    .param p3    # Landroid/graphics/Matrix$ScaleToFit;
 
     if-eqz p2, :cond_0
 
@@ -1083,7 +1004,6 @@
 
 .method public setRotate(F)V
     .locals 1
-    .param p1    # F
 
     iget v0, p0, Landroid/graphics/Matrix;->native_instance:I
 
@@ -1094,9 +1014,6 @@
 
 .method public setRotate(FFF)V
     .locals 1
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
 
     iget v0, p0, Landroid/graphics/Matrix;->native_instance:I
 
@@ -1107,8 +1024,6 @@
 
 .method public setScale(FF)V
     .locals 1
-    .param p1    # F
-    .param p2    # F
 
     iget v0, p0, Landroid/graphics/Matrix;->native_instance:I
 
@@ -1119,10 +1034,6 @@
 
 .method public setScale(FFFF)V
     .locals 1
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
 
     iget v0, p0, Landroid/graphics/Matrix;->native_instance:I
 
@@ -1133,8 +1044,6 @@
 
 .method public setSinCos(FF)V
     .locals 1
-    .param p1    # F
-    .param p2    # F
 
     iget v0, p0, Landroid/graphics/Matrix;->native_instance:I
 
@@ -1145,10 +1054,6 @@
 
 .method public setSinCos(FFFF)V
     .locals 1
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
 
     iget v0, p0, Landroid/graphics/Matrix;->native_instance:I
 
@@ -1159,8 +1064,6 @@
 
 .method public setSkew(FF)V
     .locals 1
-    .param p1    # F
-    .param p2    # F
 
     iget v0, p0, Landroid/graphics/Matrix;->native_instance:I
 
@@ -1171,10 +1074,6 @@
 
 .method public setSkew(FFFF)V
     .locals 1
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
 
     iget v0, p0, Landroid/graphics/Matrix;->native_instance:I
 
@@ -1185,8 +1084,6 @@
 
 .method public setTranslate(FF)V
     .locals 1
-    .param p1    # F
-    .param p2    # F
 
     iget v0, p0, Landroid/graphics/Matrix;->native_instance:I
 
@@ -1197,7 +1094,6 @@
 
 .method public setValues([F)V
     .locals 2
-    .param p1    # [F
 
     array-length v0, p1
 
@@ -1239,7 +1135,6 @@
 
 .method public toShortString(Ljava/lang/StringBuilder;)V
     .locals 2
-    .param p1    # Ljava/lang/StringBuilder;
 
     const/16 v1, 0x9
 

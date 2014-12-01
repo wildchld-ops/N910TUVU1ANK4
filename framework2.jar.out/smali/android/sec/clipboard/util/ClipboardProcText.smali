@@ -42,7 +42,6 @@
 
 .method public static convertString(Ljava/lang/String;)Ljava/lang/String;
     .locals 11
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;
@@ -418,7 +417,6 @@
 
 .method private static convertTag(Ljava/lang/String;)Ljava/lang/String;
     .locals 7
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -973,7 +971,6 @@
 
 .method public static getImgFileNameFormHtml(Ljava/lang/String;)Ljava/lang/String;
     .locals 9
-    .param p0    # Ljava/lang/String;
 
     const-string/jumbo v1, "src=\""
 
@@ -1075,7 +1072,6 @@
 
 .method private static getSpecial(Ljava/io/Reader;)Ljava/lang/String;
     .locals 5
-    .param p0    # Ljava/io/Reader;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1137,7 +1133,6 @@
 
 .method private static getTag(Ljava/io/Reader;)Ljava/lang/String;
     .locals 5
-    .param p0    # Ljava/io/Reader;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1196,8 +1191,6 @@
 
 .method private static isTag(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
 

@@ -30,9 +30,6 @@
 # virtual methods
 .method public final acceptMatch(Ljava/lang/CharSequence;II)Z
     .locals 3
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v0, 0x0
 

@@ -38,7 +38,6 @@
 
 .method public constructor <init>(I)V
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -51,7 +50,6 @@
 
 .method private constructor <init>(Landroid/graphics/drawable/ColorDrawable$ColorState;)V
     .locals 1
-    .param p1    # Landroid/graphics/drawable/ColorDrawable$ColorState;
 
     invoke-direct {p0}, Landroid/graphics/drawable/Drawable;-><init>()V
 
@@ -72,8 +70,6 @@
 
 .method synthetic constructor <init>(Landroid/graphics/drawable/ColorDrawable$ColorState;Landroid/graphics/drawable/ColorDrawable$1;)V
     .locals 0
-    .param p1    # Landroid/graphics/drawable/ColorDrawable$ColorState;
-    .param p2    # Landroid/graphics/drawable/ColorDrawable$1;
 
     invoke-direct {p0, p1}, Landroid/graphics/drawable/ColorDrawable;-><init>(Landroid/graphics/drawable/ColorDrawable$ColorState;)V
 
@@ -84,7 +80,6 @@
 # virtual methods
 .method public draw(Landroid/graphics/Canvas;)V
     .locals 2
-    .param p1    # Landroid/graphics/Canvas;
 
     iget-object v0, p0, Landroid/graphics/drawable/ColorDrawable;->mState:Landroid/graphics/drawable/ColorDrawable$ColorState;
 
@@ -205,9 +200,6 @@
 
 .method public inflate(Landroid/content/res/Resources;Lorg/xmlpull/v1/XmlPullParser;Landroid/util/AttributeSet;)V
     .locals 4
-    .param p1    # Landroid/content/res/Resources;
-    .param p2    # Lorg/xmlpull/v1/XmlPullParser;
-    .param p3    # Landroid/util/AttributeSet;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -277,7 +269,6 @@
 
 .method public setAlpha(I)V
     .locals 6
-    .param p1    # I
 
     shr-int/lit8 v3, p1, 0x7
 
@@ -327,7 +318,6 @@
 
 .method public setColor(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Landroid/graphics/drawable/ColorDrawable;->mState:Landroid/graphics/drawable/ColorDrawable$ColorState;
 
@@ -358,7 +348,6 @@
 
 .method public setColorFilter(Landroid/graphics/ColorFilter;)V
     .locals 0
-    .param p1    # Landroid/graphics/ColorFilter;
 
     return-void
 .end method

@@ -49,7 +49,6 @@
 
 .method private setupSimTab(I)V
     .locals 8
-    .param p1    # I
 
     new-instance v0, Landroid/content/Intent;
 
@@ -126,7 +125,6 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/ActivityGroup;->onCreate(Landroid/os/Bundle;)V
 
@@ -176,7 +174,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -312,7 +309,6 @@
 
 .method public onTabChanged(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 

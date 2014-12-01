@@ -92,12 +92,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;FFFFI)V
     .locals 8
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # I
 
     const/high16 v7, 0x40000000
 
@@ -246,7 +240,6 @@
 
 .method private getResolutionType(I)I
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x3
 
@@ -414,7 +407,6 @@
 
 .method protected setCustomAnimation(F)V
     .locals 17
-    .param p1    # F
 
     invoke-virtual/range {p0 .. p0}, Lcom/sec/android/glview/TwGLView;->getLeft()F
 

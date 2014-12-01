@@ -6,8 +6,6 @@
 # direct methods
 .method public constructor <init>(Landroid/media/effect/EffectContext;Ljava/lang/String;)V
     .locals 7
-    .param p1    # Landroid/media/effect/EffectContext;
-    .param p2    # Ljava/lang/String;
 
     const-class v3, Landroid/filterpacks/imageproc/RedEyeFilter;
 

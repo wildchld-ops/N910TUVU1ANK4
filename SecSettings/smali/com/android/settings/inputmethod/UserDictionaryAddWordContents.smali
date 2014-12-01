@@ -54,8 +54,6 @@
 
 .method constructor <init>(Landroid/view/View;Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/os/Bundle;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -160,8 +158,6 @@
 
 .method constructor <init>(Landroid/view/View;Lcom/android/settings/inputmethod/UserDictionaryAddWordContents;)V
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Lcom/android/settings/inputmethod/UserDictionaryAddWordContents;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -206,8 +202,6 @@
 
 .method private static addLocaleDisplayNameToList(Landroid/content/Context;Ljava/util/ArrayList;Ljava/lang/String;)V
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -235,8 +229,6 @@
 
 .method private hasWord(Ljava/lang/String;Landroid/content/Context;)Z
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/Context;
 
     const/4 v5, 0x0
 
@@ -352,8 +344,6 @@
 # virtual methods
 .method apply(Landroid/content/Context;Landroid/os/Bundle;)I
     .locals 8
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/Bundle;
 
     const/4 v4, 0x0
 
@@ -499,7 +489,6 @@
 
 .method delete(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     iget v1, p0, Lcom/android/settings/inputmethod/UserDictionaryAddWordContents;->mMode:I
 
@@ -537,7 +526,6 @@
 
 .method public getLocalesList(Landroid/app/Activity;)Ljava/util/ArrayList;
     .locals 7
-    .param p1    # Landroid/app/Activity;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -641,7 +629,6 @@
 
 .method saveStateIntoBundle(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "word"
 
@@ -704,7 +691,6 @@
 
 .method updateLocale(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 

@@ -226,7 +226,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/TetherSettings;)Ljava/util/concurrent/atomic/AtomicReference;
     .locals 1
-    .param p0    # Lcom/android/settings/TetherSettings;
 
     iget-object v0, p0, Lcom/android/settings/TetherSettings;->mBluetoothPan:Ljava/util/concurrent/atomic/AtomicReference;
 
@@ -235,7 +234,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/TetherSettings;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/TetherSettings;
 
     iget-boolean v0, p0, Lcom/android/settings/TetherSettings;->mFromSearch:Z
 
@@ -244,7 +242,6 @@
 
 .method static synthetic access$1000(Lcom/android/settings/TetherSettings;)I
     .locals 1
-    .param p0    # Lcom/android/settings/TetherSettings;
 
     iget v0, p0, Lcom/android/settings/TetherSettings;->mPrevTxPowerMode:I
 
@@ -253,8 +250,6 @@
 
 .method static synthetic access$1002(Lcom/android/settings/TetherSettings;I)I
     .locals 0
-    .param p0    # Lcom/android/settings/TetherSettings;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/settings/TetherSettings;->mPrevTxPowerMode:I
 
@@ -263,8 +258,6 @@
 
 .method static synthetic access$102(Lcom/android/settings/TetherSettings;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/TetherSettings;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/TetherSettings;->mFromSearch:Z
 
@@ -273,7 +266,6 @@
 
 .method static synthetic access$1100(Lcom/android/settings/TetherSettings;)Landroid/preference/ListPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/TetherSettings;
 
     iget-object v0, p0, Lcom/android/settings/TetherSettings;->mTxPowerModeList:Landroid/preference/ListPreference;
 
@@ -282,8 +274,6 @@
 
 .method static synthetic access$1200(Lcom/android/settings/TetherSettings;I)I
     .locals 1
-    .param p0    # Lcom/android/settings/TetherSettings;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/settings/TetherSettings;->saveTxPowerModeValue(I)I
 
@@ -294,7 +284,6 @@
 
 .method static synthetic access$1300(Lcom/android/settings/TetherSettings;)Lcom/sec/android/touchwiz/widget/TwCheckBox;
     .locals 1
-    .param p0    # Lcom/android/settings/TetherSettings;
 
     iget-object v0, p0, Lcom/android/settings/TetherSettings;->mTxPowerModeDoNotShowAgain:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
@@ -303,8 +292,6 @@
 
 .method static synthetic access$1302(Lcom/android/settings/TetherSettings;Lcom/sec/android/touchwiz/widget/TwCheckBox;)Lcom/sec/android/touchwiz/widget/TwCheckBox;
     .locals 0
-    .param p0    # Lcom/android/settings/TetherSettings;
-    .param p1    # Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
     iput-object p1, p0, Lcom/android/settings/TetherSettings;->mTxPowerModeDoNotShowAgain:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
@@ -313,7 +300,6 @@
 
 .method static synthetic access$1400(Lcom/android/settings/TetherSettings;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/settings/TetherSettings;
 
     iget-object v0, p0, Lcom/android/settings/TetherSettings;->mCustomView:Landroid/view/View;
 
@@ -322,7 +308,6 @@
 
 .method static synthetic access$1500(Lcom/android/settings/TetherSettings;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/settings/TetherSettings;
 
     iget-object v0, p0, Lcom/android/settings/TetherSettings;->mContext:Landroid/content/Context;
 
@@ -331,10 +316,6 @@
 
 .method static synthetic access$1600(Lcom/android/settings/TetherSettings;[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/settings/TetherSettings;
-    .param p1    # [Ljava/lang/String;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # [Ljava/lang/String;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/settings/TetherSettings;->updateState([Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;)V
 
@@ -343,7 +324,6 @@
 
 .method static synthetic access$1700(Lcom/android/settings/TetherSettings;)V
     .locals 0
-    .param p0    # Lcom/android/settings/TetherSettings;
 
     invoke-direct {p0}, Lcom/android/settings/TetherSettings;->updateState()V
 
@@ -352,8 +332,6 @@
 
 .method static synthetic access$1802(Lcom/android/settings/TetherSettings;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/TetherSettings;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/TetherSettings;->mMassStorageActive:Z
 
@@ -362,8 +340,6 @@
 
 .method static synthetic access$1902(Lcom/android/settings/TetherSettings;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/TetherSettings;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/TetherSettings;->mUsbConnected:Z
 
@@ -372,7 +348,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/TetherSettings;)Landroid/preference/CheckBoxPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/TetherSettings;
 
     iget-object v0, p0, Lcom/android/settings/TetherSettings;->mTargetPreferece:Landroid/preference/CheckBoxPreference;
 
@@ -381,8 +356,6 @@
 
 .method static synthetic access$2002(Lcom/android/settings/TetherSettings;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/TetherSettings;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/TetherSettings;->mNcmEnabled:Z
 
@@ -391,7 +364,6 @@
 
 .method static synthetic access$2100(Lcom/android/settings/TetherSettings;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/TetherSettings;
 
     iget-boolean v0, p0, Lcom/android/settings/TetherSettings;->mBluetoothEnableForTether:Z
 
@@ -400,8 +372,6 @@
 
 .method static synthetic access$2102(Lcom/android/settings/TetherSettings;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/TetherSettings;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/TetherSettings;->mBluetoothEnableForTether:Z
 
@@ -410,7 +380,6 @@
 
 .method static synthetic access$2300(Lcom/android/settings/TetherSettings;)Landroid/net/wifi/WifiManager;
     .locals 1
-    .param p0    # Lcom/android/settings/TetherSettings;
 
     iget-object v0, p0, Lcom/android/settings/TetherSettings;->mWifiManager:Landroid/net/wifi/WifiManager;
 
@@ -419,8 +388,6 @@
 
 .method static synthetic access$2302(Lcom/android/settings/TetherSettings;Landroid/net/wifi/WifiManager;)Landroid/net/wifi/WifiManager;
     .locals 0
-    .param p0    # Lcom/android/settings/TetherSettings;
-    .param p1    # Landroid/net/wifi/WifiManager;
 
     iput-object p1, p0, Lcom/android/settings/TetherSettings;->mWifiManager:Landroid/net/wifi/WifiManager;
 
@@ -429,7 +396,6 @@
 
 .method static synthetic access$2400(Lcom/android/settings/TetherSettings;)Lcom/android/settings/helpdialog/TwHelpDialog;
     .locals 1
-    .param p0    # Lcom/android/settings/TetherSettings;
 
     iget-object v0, p0, Lcom/android/settings/TetherSettings;->mHelpStep0Dialog:Lcom/android/settings/helpdialog/TwHelpDialog;
 
@@ -438,8 +404,6 @@
 
 .method static synthetic access$2402(Lcom/android/settings/TetherSettings;Lcom/android/settings/helpdialog/TwHelpDialog;)Lcom/android/settings/helpdialog/TwHelpDialog;
     .locals 0
-    .param p0    # Lcom/android/settings/TetherSettings;
-    .param p1    # Lcom/android/settings/helpdialog/TwHelpDialog;
 
     iput-object p1, p0, Lcom/android/settings/TetherSettings;->mHelpStep0Dialog:Lcom/android/settings/helpdialog/TwHelpDialog;
 
@@ -448,8 +412,6 @@
 
 .method static synthetic access$2502(Lcom/android/settings/TetherSettings;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/TetherSettings;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/TetherSettings;->mHelpDialogNotShow:Z
 
@@ -458,7 +420,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/TetherSettings;)Landroid/preference/CheckBoxPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/TetherSettings;
 
     iget-object v0, p0, Lcom/android/settings/TetherSettings;->mBluetoothTether:Landroid/preference/CheckBoxPreference;
 
@@ -467,8 +428,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/TetherSettings;I)V
     .locals 0
-    .param p0    # Lcom/android/settings/TetherSettings;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/settings/TetherSettings;->startProvisioningIfNecessary(I)V
 
@@ -477,8 +436,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/TetherSettings;Z)V
     .locals 0
-    .param p0    # Lcom/android/settings/TetherSettings;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/settings/TetherSettings;->setUsbTethering(Z)V
 
@@ -487,7 +444,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/TetherSettings;)I
     .locals 1
-    .param p0    # Lcom/android/settings/TetherSettings;
 
     iget v0, p0, Lcom/android/settings/TetherSettings;->mTetherChoice:I
 
@@ -496,8 +452,6 @@
 
 .method static synthetic access$602(Lcom/android/settings/TetherSettings;I)I
     .locals 0
-    .param p0    # Lcom/android/settings/TetherSettings;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/settings/TetherSettings;->mTetherChoice:I
 
@@ -506,7 +460,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/TetherSettings;)Landroid/preference/CheckBoxPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/TetherSettings;
 
     iget-object v0, p0, Lcom/android/settings/TetherSettings;->mUsbTether:Landroid/preference/CheckBoxPreference;
 
@@ -515,7 +468,6 @@
 
 .method static synthetic access$800(Lcom/android/settings/TetherSettings;)Lcom/android/settings/wifi/mobileap/WifiApSwitchEnabler;
     .locals 1
-    .param p0    # Lcom/android/settings/TetherSettings;
 
     iget-object v0, p0, Lcom/android/settings/TetherSettings;->mWifiApSwitchEnabler:Lcom/android/settings/wifi/mobileap/WifiApSwitchEnabler;
 
@@ -524,7 +476,6 @@
 
 .method static synthetic access$900(Lcom/android/settings/TetherSettings;)V
     .locals 0
-    .param p0    # Lcom/android/settings/TetherSettings;
 
     invoke-direct {p0}, Lcom/android/settings/TetherSettings;->startTethering()V
 
@@ -612,8 +563,6 @@
 
 .method private static findIface([Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;
     .locals 9
-    .param p0    # [Ljava/lang/String;
-    .param p1    # [Ljava/lang/String;
 
     move-object v0, p0
 
@@ -1059,7 +1008,6 @@
 
 .method public static showInShortcuts(Landroid/content/Context;)Z
     .locals 5
-    .param p0    # Landroid/content/Context;
 
     const/4 v2, 0x1
 
@@ -2896,7 +2844,6 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onActivityCreated(Landroid/os/Bundle;)V
 
@@ -3210,7 +3157,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 22
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super/range {p0 .. p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 

@@ -23,8 +23,6 @@
 
 .method public constructor <init>(Landroid/mtp/MtpDatabase;Z)V
     .locals 0
-    .param p1    # Landroid/mtp/MtpDatabase;
-    .param p2    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -58,7 +56,6 @@
 # virtual methods
 .method public addStorage(Landroid/mtp/MtpStorage;)V
     .locals 0
-    .param p1    # Landroid/mtp/MtpStorage;
 
     invoke-direct {p0, p1}, Landroid/mtp/MtpServer;->native_add_storage(Landroid/mtp/MtpStorage;)V
 
@@ -67,7 +64,6 @@
 
 .method public removeStorage(Landroid/mtp/MtpStorage;)V
     .locals 1
-    .param p1    # Landroid/mtp/MtpStorage;
 
     invoke-virtual {p1}, Landroid/mtp/MtpStorage;->getStorageId()I
 
@@ -90,7 +86,6 @@
 
 .method public sendObjectAdded(I)V
     .locals 0
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/mtp/MtpServer;->native_send_object_added(I)V
 
@@ -99,7 +94,6 @@
 
 .method public sendObjectRemoved(I)V
     .locals 0
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/mtp/MtpServer;->native_send_object_removed(I)V
 

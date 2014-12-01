@@ -26,8 +26,6 @@
 
 .method private static varargs buildPath(Ljava/io/File;[Ljava/lang/String;)Ljava/io/File;
     .locals 6
-    .param p0    # Ljava/io/File;
-    .param p1    # [Ljava/lang/String;
 
     move-object v1, p0
 
@@ -77,7 +75,6 @@
 
 .method public static getExternalCacheDirs(Landroid/content/Context;)[Ljava/io/File;
     .locals 8
-    .param p0    # Landroid/content/Context;
 
     const/4 v7, 0x1
 
@@ -152,8 +149,6 @@
 
 .method public static getExternalFilesDirs(Landroid/content/Context;Ljava/lang/String;)[Ljava/io/File;
     .locals 8
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const/4 v7, 0x1
 
@@ -232,7 +227,6 @@
 
 .method public static getObbDirs(Landroid/content/Context;)[Ljava/io/File;
     .locals 8
-    .param p0    # Landroid/content/Context;
 
     const/4 v7, 0x1
 
@@ -301,8 +295,6 @@
 
 .method public static startActivities(Landroid/content/Context;[Landroid/content/Intent;)Z
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # [Landroid/content/Intent;
 
     const/4 v0, 0x0
 
@@ -315,9 +307,6 @@
 
 .method public static startActivities(Landroid/content/Context;[Landroid/content/Intent;Landroid/os/Bundle;)Z
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # [Landroid/content/Intent;
-    .param p2    # Landroid/os/Bundle;
 
     const/4 v1, 0x1
 

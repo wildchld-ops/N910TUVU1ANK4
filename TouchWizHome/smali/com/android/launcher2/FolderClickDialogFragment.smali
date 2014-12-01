@@ -47,7 +47,6 @@
 
 .method static synthetic access$000(Lcom/android/launcher2/FolderClickDialogFragment;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/launcher2/FolderClickDialogFragment;
 
     iget-object v0, p0, Lcom/android/launcher2/FolderClickDialogFragment;->mContext:Landroid/content/Context;
 
@@ -64,9 +63,6 @@
 
 .method static createAndShow(Landroid/app/FragmentManager;Lcom/android/launcher2/FolderItem;Lcom/android/launcher2/MenuAppsGrid$State;)V
     .locals 2
-    .param p0    # Landroid/app/FragmentManager;
-    .param p1    # Lcom/android/launcher2/FolderItem;
-    .param p2    # Lcom/android/launcher2/MenuAppsGrid$State;
 
     invoke-static {p0}, Lcom/android/launcher2/FolderClickDialogFragment;->isActive(Landroid/app/FragmentManager;)Z
 
@@ -95,7 +91,6 @@
 
 .method static dismiss(Landroid/app/FragmentManager;)V
     .locals 2
-    .param p0    # Landroid/app/FragmentManager;
 
     const-string v1, "FolderEditClick"
 
@@ -115,7 +110,6 @@
 
 .method static isActive(Landroid/app/FragmentManager;)Z
     .locals 1
-    .param p0    # Landroid/app/FragmentManager;
 
     const-string v0, "FolderEditClick"
 
@@ -140,7 +134,6 @@
 # virtual methods
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 
@@ -155,7 +148,6 @@
 
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
     .locals 6
-    .param p1    # Landroid/os/Bundle;
 
     new-instance v3, Ljava/util/ArrayList;
 
@@ -253,7 +245,6 @@
 
 .method public onDismiss(Landroid/content/DialogInterface;)V
     .locals 2
-    .param p1    # Landroid/content/DialogInterface;
 
     invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 

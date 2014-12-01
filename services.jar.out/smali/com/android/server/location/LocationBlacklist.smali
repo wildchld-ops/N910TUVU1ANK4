@@ -28,8 +28,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/os/Handler;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/Handler;
 
     const/4 v1, 0x0
 
@@ -58,7 +56,6 @@
 
 .method private getStringArrayLocked(Ljava/lang/String;)[Ljava/lang/String;
     .locals 10
-    .param p1    # Ljava/lang/String;
 
     iget-object v8, p0, Lcom/android/server/location/LocationBlacklist;->mLock:Ljava/lang/Object;
 
@@ -160,7 +157,6 @@
 
 .method private inWhitelist(Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     iget-object v5, p0, Lcom/android/server/location/LocationBlacklist;->mLock:Ljava/lang/Object;
 
@@ -319,7 +315,6 @@
 # virtual methods
 .method public dump(Ljava/io/PrintWriter;)V
     .locals 2
-    .param p1    # Ljava/io/PrintWriter;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -394,7 +389,6 @@
 
 .method public isBlacklisted(Ljava/lang/String;)Z
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     iget-object v5, p0, Lcom/android/server/location/LocationBlacklist;->mLock:Ljava/lang/Object;
 
@@ -488,7 +482,6 @@
 
 .method public onChange(Z)V
     .locals 0
-    .param p1    # Z
 
     invoke-direct {p0}, Lcom/android/server/location/LocationBlacklist;->reloadBlacklist()V
 
@@ -497,7 +490,6 @@
 
 .method public switchUser(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/server/location/LocationBlacklist;->mLock:Ljava/lang/Object;
 

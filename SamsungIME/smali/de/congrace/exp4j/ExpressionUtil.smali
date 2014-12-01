@@ -14,7 +14,6 @@
 
 .method public static normalizeNumber(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lde/congrace/exp4j/UnparsableExpressionException;
@@ -34,8 +33,6 @@
 
 .method public static normalizeNumber(Ljava/lang/String;Ljava/util/Locale;)Ljava/lang/String;
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/util/Locale;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lde/congrace/exp4j/UnparsableExpressionException;

@@ -82,7 +82,6 @@
 
 .method public constructor <init>(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     const v1, 0x7fffffff
 
@@ -191,7 +190,6 @@
 
 .method public static convertQuartSecToDecDegrees(I)D
     .locals 4
-    .param p0    # I
 
     int-to-double v0, p0
 
@@ -246,8 +244,6 @@
 
 .method private static equalsHandlesNulls(Ljava/lang/Object;Ljava/lang/Object;)Z
     .locals 1
-    .param p0    # Ljava/lang/Object;
-    .param p1    # Ljava/lang/Object;
 
     if-nez p0, :cond_1
 
@@ -275,7 +271,6 @@
 # virtual methods
 .method public equals(Ljava/lang/Object;)Z
     .locals 6
-    .param p1    # Ljava/lang/Object;
 
     const/4 v3, 0x0
 
@@ -433,7 +428,6 @@
 
 .method public fillInNotifierBundle(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "baseStationId"
 
@@ -608,9 +602,6 @@
 
 .method public setCellLocationData(III)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     iput p1, p0, Landroid/telephony/cdma/CdmaCellLocation;->mBaseStationId:I
 
@@ -623,11 +614,6 @@
 
 .method public setCellLocationData(IIIII)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     iput p1, p0, Landroid/telephony/cdma/CdmaCellLocation;->mBaseStationId:I
 
@@ -644,8 +630,6 @@
 
 .method public setLteCellLocationData(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     iput p1, p0, Landroid/telephony/cdma/CdmaCellLocation;->mTac:I
 

@@ -21,7 +21,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/NotificationManagerService;Landroid/os/Handler;)V
     .locals 0
-    .param p2    # Landroid/os/Handler;
 
     iput-object p1, p0, Lcom/android/server/NotificationManagerService$PickupSettingsObserver;->this$0:Lcom/android/server/NotificationManagerService;
 
@@ -76,7 +75,6 @@
 
 .method public onChange(Z)V
     .locals 0
-    .param p1    # Z
 
     invoke-virtual {p0}, Lcom/android/server/NotificationManagerService$PickupSettingsObserver;->update()V
 

@@ -25,8 +25,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/mms/ui/EmoticonListView;[Ljava/lang/String;[Ljava/lang/String;)V
     .locals 0
-    .param p2    # [Ljava/lang/String;
-    .param p3    # [Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/mms/ui/EmoticonListView$IconsAdapter;->this$0:Lcom/android/mms/ui/EmoticonListView;
 
@@ -53,7 +51,6 @@
 
 .method public getItem(I)Ljava/lang/Object;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/mms/ui/EmoticonListView$IconsAdapter;->mTexts:[Ljava/lang/String;
 
@@ -74,7 +71,6 @@
 
 .method public getItemId(I)J
     .locals 2
-    .param p1    # I
 
     const-wide/16 v0, 0x0
 
@@ -83,9 +79,6 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     const/4 v2, 0x0
 
@@ -156,7 +149,6 @@
 
 .method public setData([Ljava/lang/String;)V
     .locals 0
-    .param p1    # [Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/mms/ui/EmoticonListView$IconsAdapter;->mTexts:[Ljava/lang/String;
 

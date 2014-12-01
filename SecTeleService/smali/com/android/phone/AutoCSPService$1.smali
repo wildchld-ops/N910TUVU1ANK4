@@ -226,7 +226,7 @@
 
     iget-object v9, p0, Lcom/android/phone/AutoCSPService$1;->this$0:Lcom/android/phone/AutoCSPService;
 
-    invoke-virtual {v9}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v9}, Lcom/android/phone/AutoCSPService;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v9
 
@@ -301,7 +301,7 @@
     :catch_0
     move-exception v2
 
-    invoke-virtual {v2}, Ljava/lang/Throwable;->printStackTrace()V
+    invoke-virtual {v2}, Ljava/lang/Exception;->printStackTrace()V
 
     goto/16 :goto_0
 
@@ -323,7 +323,7 @@
 
     iget-object v1, p0, Lcom/android/phone/AutoCSPService$1;->this$0:Lcom/android/phone/AutoCSPService;
 
-    invoke-virtual {v1}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v1}, Lcom/android/phone/AutoCSPService;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 

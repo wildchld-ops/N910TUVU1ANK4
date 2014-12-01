@@ -37,7 +37,7 @@
 
     const-string v0, "layout_inflater"
 
-    invoke-virtual {p1, v0}, Landroid/app/Activity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p1, v0}, Lcom/android/phone/IMSConferenceCallActivity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -272,7 +272,7 @@
 
     move-result-object v6
 
-    invoke-virtual {v6, p1, v8}, Landroid/widget/AbsListView;->setItemChecked(IZ)V
+    invoke-virtual {v6, p1, v8}, Landroid/widget/ListView;->setItemChecked(IZ)V
 
     iget-object v6, p0, Lcom/android/phone/IMSConferenceCallActivity$ParticipantsAdapter;->this$0:Lcom/android/phone/IMSConferenceCallActivity;
 
@@ -329,7 +329,7 @@
 
     move-result-object v6
 
-    invoke-virtual {v6, p1, v8}, Landroid/widget/AbsListView;->setItemChecked(IZ)V
+    invoke-virtual {v6, p1, v8}, Landroid/widget/ListView;->setItemChecked(IZ)V
 
     iget-object v6, p0, Lcom/android/phone/IMSConferenceCallActivity$ParticipantsAdapter;->this$0:Lcom/android/phone/IMSConferenceCallActivity;
 
@@ -343,7 +343,7 @@
     :cond_1
     iget-object v6, p0, Lcom/android/phone/IMSConferenceCallActivity$ParticipantsAdapter;->this$0:Lcom/android/phone/IMSConferenceCallActivity;
 
-    invoke-virtual {v3, p1}, Landroid/widget/AbsListView;->isItemChecked(I)Z
+    invoke-virtual {v3, p1}, Landroid/widget/ListView;->isItemChecked(I)Z
 
     move-result v7
 
@@ -413,7 +413,7 @@
 
     invoke-direct {v7, p0, v5}, Lcom/android/phone/IMSConferenceCallActivity$ParticipantsAdapter$1;-><init>(Lcom/android/phone/IMSConferenceCallActivity$ParticipantsAdapter;I)V
 
-    invoke-virtual {v6, v7}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v6, v7}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     :cond_4
     return-object p2

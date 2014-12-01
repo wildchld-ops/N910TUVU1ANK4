@@ -44,7 +44,6 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 4
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Lcom/android/launcher2/SurfaceWidgetView$1;->val$item:Lcom/android/launcher2/SurfaceWidgetItem;
 

@@ -52,7 +52,7 @@
 
     iget-object v1, p0, Lcom/android/phone/callsettings/CaptureImageViewer$ImageFactory;->this$0:Lcom/android/phone/callsettings/CaptureImageViewer;
 
-    invoke-virtual {v1}, Landroid/app/Fragment;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {v1}, Lcom/android/phone/callsettings/CaptureImageViewer;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -62,7 +62,7 @@
 
     move-result v1
 
-    invoke-virtual {v0, v1}, Landroid/view/View;->setBackgroundColor(I)V
+    invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setBackgroundColor(I)V
 
     sget-object v1, Landroid/widget/ImageView$ScaleType;->FIT_CENTER:Landroid/widget/ImageView$ScaleType;
 
@@ -72,7 +72,7 @@
 
     invoke-direct {v1, v3, v3}, Landroid/widget/FrameLayout$LayoutParams;-><init>(II)V
 
-    invoke-virtual {v0, v1}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+    invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
     return-object v0
 .end method

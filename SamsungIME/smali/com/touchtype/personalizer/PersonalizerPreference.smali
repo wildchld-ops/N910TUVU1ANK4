@@ -16,8 +16,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v2, 0x0
 
@@ -54,9 +52,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Landroid/preference/Preference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
@@ -93,9 +88,6 @@
 
 .method private init(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     invoke-virtual {p0}, Landroid/preference/Preference;->getSummary()Ljava/lang/CharSequence;
 
@@ -397,7 +389,6 @@
 
 .method private wrapPersonalizer(Lcom/touchtype/personalizer/Personalizer;)Lcom/touchtype/personalizer/Personalizer;
     .locals 4
-    .param p1    # Lcom/touchtype/personalizer/Personalizer;
 
     const/4 v0, 0x0
 
@@ -456,7 +447,6 @@
 
 .method protected onBindView(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     invoke-super {p0, p1}, Landroid/preference/Preference;->onBindView(Landroid/view/View;)V
 
@@ -528,7 +518,6 @@
 
 .method public setActive(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/touchtype/personalizer/PersonalizerPreference;->mActive:Z
 
@@ -537,7 +526,6 @@
 
 .method public update(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 

@@ -35,7 +35,6 @@
 # direct methods
 .method constructor <init>(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Landroid/view/DisplayList;-><init>()V
 
@@ -46,7 +45,6 @@
 
 .method static synthetic access$000(I)V
     .locals 0
-    .param p0    # I
 
     invoke-static {p0}, Landroid/view/GLES20DisplayList;->nDestroyDisplayList(I)V
 
@@ -431,7 +429,6 @@
 
 .method public getMatrix(Landroid/graphics/Matrix;)Landroid/graphics/Matrix;
     .locals 2
-    .param p1    # Landroid/graphics/Matrix;
 
     invoke-virtual {p0}, Landroid/view/GLES20DisplayList;->hasNativeDisplayList()Z
 
@@ -847,7 +844,6 @@
 
 .method public offsetLeftAndRight(F)V
     .locals 1
-    .param p1    # F
 
     invoke-virtual {p0}, Landroid/view/GLES20DisplayList;->hasNativeDisplayList()Z
 
@@ -867,7 +863,6 @@
 
 .method public offsetTopAndBottom(F)V
     .locals 1
-    .param p1    # F
 
     invoke-virtual {p0}, Landroid/view/GLES20DisplayList;->hasNativeDisplayList()Z
 
@@ -908,7 +903,6 @@
 
 .method public setAlpha(F)V
     .locals 1
-    .param p1    # F
 
     invoke-virtual {p0}, Landroid/view/GLES20DisplayList;->hasNativeDisplayList()Z
 
@@ -928,7 +922,6 @@
 
 .method public setAnimationMatrix(Landroid/graphics/Matrix;)V
     .locals 2
-    .param p1    # Landroid/graphics/Matrix;
 
     invoke-virtual {p0}, Landroid/view/GLES20DisplayList;->hasNativeDisplayList()Z
 
@@ -958,7 +951,6 @@
 
 .method public setBottom(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/view/GLES20DisplayList;->hasNativeDisplayList()Z
 
@@ -978,7 +970,6 @@
 
 .method public setCaching(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-virtual {p0}, Landroid/view/GLES20DisplayList;->hasNativeDisplayList()Z
 
@@ -998,7 +989,6 @@
 
 .method public setCameraDistance(F)V
     .locals 1
-    .param p1    # F
 
     invoke-virtual {p0}, Landroid/view/GLES20DisplayList;->hasNativeDisplayList()Z
 
@@ -1018,7 +1008,6 @@
 
 .method public setClipToBounds(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-virtual {p0}, Landroid/view/GLES20DisplayList;->hasNativeDisplayList()Z
 
@@ -1038,7 +1027,6 @@
 
 .method public setHasOverlappingRendering(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-virtual {p0}, Landroid/view/GLES20DisplayList;->hasNativeDisplayList()Z
 
@@ -1058,7 +1046,6 @@
 
 .method public setLeft(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/view/GLES20DisplayList;->hasNativeDisplayList()Z
 
@@ -1078,10 +1065,6 @@
 
 .method public setLeftTopRightBottom(IIII)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-virtual {p0}, Landroid/view/GLES20DisplayList;->hasNativeDisplayList()Z
 
@@ -1101,7 +1084,6 @@
 
 .method public setMatrix(Landroid/graphics/Matrix;)V
     .locals 2
-    .param p1    # Landroid/graphics/Matrix;
 
     invoke-virtual {p0}, Landroid/view/GLES20DisplayList;->hasNativeDisplayList()Z
 
@@ -1123,7 +1105,6 @@
 
 .method public setPivotX(F)V
     .locals 1
-    .param p1    # F
 
     invoke-virtual {p0}, Landroid/view/GLES20DisplayList;->hasNativeDisplayList()Z
 
@@ -1143,7 +1124,6 @@
 
 .method public setPivotY(F)V
     .locals 1
-    .param p1    # F
 
     invoke-virtual {p0}, Landroid/view/GLES20DisplayList;->hasNativeDisplayList()Z
 
@@ -1163,7 +1143,6 @@
 
 .method public setRight(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/view/GLES20DisplayList;->hasNativeDisplayList()Z
 
@@ -1183,7 +1162,6 @@
 
 .method public setRotation(F)V
     .locals 1
-    .param p1    # F
 
     invoke-virtual {p0}, Landroid/view/GLES20DisplayList;->hasNativeDisplayList()Z
 
@@ -1203,7 +1181,6 @@
 
 .method public setRotationX(F)V
     .locals 1
-    .param p1    # F
 
     invoke-virtual {p0}, Landroid/view/GLES20DisplayList;->hasNativeDisplayList()Z
 
@@ -1223,7 +1200,6 @@
 
 .method public setRotationY(F)V
     .locals 1
-    .param p1    # F
 
     invoke-virtual {p0}, Landroid/view/GLES20DisplayList;->hasNativeDisplayList()Z
 
@@ -1243,7 +1219,6 @@
 
 .method public setScaleX(F)V
     .locals 1
-    .param p1    # F
 
     invoke-virtual {p0}, Landroid/view/GLES20DisplayList;->hasNativeDisplayList()Z
 
@@ -1263,7 +1238,6 @@
 
 .method public setScaleY(F)V
     .locals 1
-    .param p1    # F
 
     invoke-virtual {p0}, Landroid/view/GLES20DisplayList;->hasNativeDisplayList()Z
 
@@ -1283,7 +1257,6 @@
 
 .method public setTop(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/view/GLES20DisplayList;->hasNativeDisplayList()Z
 
@@ -1303,14 +1276,6 @@
 
 .method public setTransformationInfo(FFFFFFFF)V
     .locals 9
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # F
-    .param p7    # F
-    .param p8    # F
 
     invoke-virtual {p0}, Landroid/view/GLES20DisplayList;->hasNativeDisplayList()Z
 
@@ -1346,7 +1311,6 @@
 
 .method public setTranslationX(F)V
     .locals 1
-    .param p1    # F
 
     invoke-virtual {p0}, Landroid/view/GLES20DisplayList;->hasNativeDisplayList()Z
 
@@ -1366,7 +1330,6 @@
 
 .method public setTranslationY(F)V
     .locals 1
-    .param p1    # F
 
     invoke-virtual {p0}, Landroid/view/GLES20DisplayList;->hasNativeDisplayList()Z
 
@@ -1386,8 +1349,6 @@
 
 .method public start(II)Landroid/view/HardwareCanvas;
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Landroid/view/GLES20DisplayList;->mCanvas:Landroid/view/GLES20RecordingCanvas;
 

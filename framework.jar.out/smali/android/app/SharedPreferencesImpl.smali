@@ -80,8 +80,6 @@
 
 .method constructor <init>(Ljava/io/File;I)V
     .locals 2
-    .param p1    # Ljava/io/File;
-    .param p2    # I
 
     const/4 v1, 0x0
 
@@ -126,7 +124,6 @@
 
 .method static synthetic access$000(Landroid/app/SharedPreferencesImpl;)V
     .locals 0
-    .param p0    # Landroid/app/SharedPreferencesImpl;
 
     invoke-direct {p0}, Landroid/app/SharedPreferencesImpl;->loadFromDiskLocked()V
 
@@ -135,9 +132,6 @@
 
 .method static synthetic access$100(Landroid/app/SharedPreferencesImpl;Landroid/app/SharedPreferencesImpl$MemoryCommitResult;Ljava/lang/Runnable;)V
     .locals 0
-    .param p0    # Landroid/app/SharedPreferencesImpl;
-    .param p1    # Landroid/app/SharedPreferencesImpl$MemoryCommitResult;
-    .param p2    # Ljava/lang/Runnable;
 
     invoke-direct {p0, p1, p2}, Landroid/app/SharedPreferencesImpl;->enqueueDiskWrite(Landroid/app/SharedPreferencesImpl$MemoryCommitResult;Ljava/lang/Runnable;)V
 
@@ -146,7 +140,6 @@
 
 .method static synthetic access$300(Landroid/app/SharedPreferencesImpl;)I
     .locals 1
-    .param p0    # Landroid/app/SharedPreferencesImpl;
 
     iget v0, p0, Landroid/app/SharedPreferencesImpl;->mDiskWritesInFlight:I
 
@@ -155,7 +148,6 @@
 
 .method static synthetic access$308(Landroid/app/SharedPreferencesImpl;)I
     .locals 2
-    .param p0    # Landroid/app/SharedPreferencesImpl;
 
     iget v0, p0, Landroid/app/SharedPreferencesImpl;->mDiskWritesInFlight:I
 
@@ -168,7 +160,6 @@
 
 .method static synthetic access$310(Landroid/app/SharedPreferencesImpl;)I
     .locals 2
-    .param p0    # Landroid/app/SharedPreferencesImpl;
 
     iget v0, p0, Landroid/app/SharedPreferencesImpl;->mDiskWritesInFlight:I
 
@@ -181,7 +172,6 @@
 
 .method static synthetic access$400(Landroid/app/SharedPreferencesImpl;)Ljava/util/Map;
     .locals 1
-    .param p0    # Landroid/app/SharedPreferencesImpl;
 
     iget-object v0, p0, Landroid/app/SharedPreferencesImpl;->mMap:Ljava/util/Map;
 
@@ -190,8 +180,6 @@
 
 .method static synthetic access$402(Landroid/app/SharedPreferencesImpl;Ljava/util/Map;)Ljava/util/Map;
     .locals 0
-    .param p0    # Landroid/app/SharedPreferencesImpl;
-    .param p1    # Ljava/util/Map;
 
     iput-object p1, p0, Landroid/app/SharedPreferencesImpl;->mMap:Ljava/util/Map;
 
@@ -200,7 +188,6 @@
 
 .method static synthetic access$500(Landroid/app/SharedPreferencesImpl;)Ljava/util/WeakHashMap;
     .locals 1
-    .param p0    # Landroid/app/SharedPreferencesImpl;
 
     iget-object v0, p0, Landroid/app/SharedPreferencesImpl;->mListeners:Ljava/util/WeakHashMap;
 
@@ -209,7 +196,6 @@
 
 .method static synthetic access$700(Landroid/app/SharedPreferencesImpl;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Landroid/app/SharedPreferencesImpl;
 
     iget-object v0, p0, Landroid/app/SharedPreferencesImpl;->mWritingToDiskLock:Ljava/lang/Object;
 
@@ -218,8 +204,6 @@
 
 .method static synthetic access$800(Landroid/app/SharedPreferencesImpl;Landroid/app/SharedPreferencesImpl$MemoryCommitResult;)V
     .locals 0
-    .param p0    # Landroid/app/SharedPreferencesImpl;
-    .param p1    # Landroid/app/SharedPreferencesImpl$MemoryCommitResult;
 
     invoke-direct {p0, p1}, Landroid/app/SharedPreferencesImpl;->writeToFile(Landroid/app/SharedPreferencesImpl$MemoryCommitResult;)V
 
@@ -263,7 +247,6 @@
 
 .method private static createFileOutputStream(Ljava/io/File;)Ljava/io/FileOutputStream;
     .locals 8
-    .param p0    # Ljava/io/File;
 
     const/4 v7, -0x1
 
@@ -373,8 +356,6 @@
 
 .method private enqueueDiskWrite(Landroid/app/SharedPreferencesImpl$MemoryCommitResult;Ljava/lang/Runnable;)V
     .locals 6
-    .param p1    # Landroid/app/SharedPreferencesImpl$MemoryCommitResult;
-    .param p2    # Ljava/lang/Runnable;
 
     const/4 v4, 0x0
 
@@ -818,7 +799,6 @@
 
 .method private static makeBackupFile(Ljava/io/File;)Ljava/io/File;
     .locals 3
-    .param p0    # Ljava/io/File;
 
     new-instance v0, Ljava/io/File;
 
@@ -886,7 +866,6 @@
 
 .method private writeToFile(Landroid/app/SharedPreferencesImpl$MemoryCommitResult;)V
     .locals 7
-    .param p1    # Landroid/app/SharedPreferencesImpl$MemoryCommitResult;
 
     const/4 v4, 0x1
 
@@ -1155,7 +1134,6 @@
 # virtual methods
 .method public contains(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -1250,8 +1228,6 @@
 
 .method public getBoolean(Ljava/lang/String;Z)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     monitor-enter p0
 
@@ -1289,8 +1265,6 @@
 
 .method public getFloat(Ljava/lang/String;F)F
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # F
 
     monitor-enter p0
 
@@ -1328,8 +1302,6 @@
 
 .method public getInt(Ljava/lang/String;I)I
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     monitor-enter p0
 
@@ -1367,8 +1339,6 @@
 
 .method public getLong(Ljava/lang/String;J)J
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
 
     monitor-enter p0
 
@@ -1406,8 +1376,6 @@
 
 .method public getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -1446,7 +1414,6 @@
 
 .method public getStringSet(Ljava/lang/String;Ljava/util/Set;)Ljava/util/Set;
     .locals 2
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1499,7 +1466,6 @@
 
 .method public registerOnSharedPreferenceChangeListener(Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;)V
     .locals 2
-    .param p1    # Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
 
     monitor-enter p0
 
@@ -1560,7 +1526,6 @@
 
 .method public unregisterOnSharedPreferenceChangeListener(Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;)V
     .locals 1
-    .param p1    # Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
 
     monitor-enter p0
 

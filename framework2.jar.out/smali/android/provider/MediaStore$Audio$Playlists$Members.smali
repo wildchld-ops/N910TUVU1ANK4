@@ -42,8 +42,6 @@
 
 .method public static final getContentUri(Ljava/lang/String;J)Landroid/net/Uri;
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # J
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -88,10 +86,6 @@
 
 .method public static final moveItem(Landroid/content/ContentResolver;JII)Z
     .locals 6
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # J
-    .param p3    # I
-    .param p4    # I
 
     const/4 v5, 0x0
 

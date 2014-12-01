@@ -36,7 +36,6 @@
 # virtual methods
 .method public onDismiss(Landroid/content/DialogInterface;)V
     .locals 4
-    .param p1    # Landroid/content/DialogInterface;
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/SmartBondingController$4;->this$0:Lcom/android/systemui/statusbar/policy/SmartBondingController;
 

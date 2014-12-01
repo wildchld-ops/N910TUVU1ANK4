@@ -91,7 +91,6 @@
 # direct methods
 .method public constructor <init>(Landroid/net/wifi/WifiWatchdogStateMachine;Landroid/os/Looper;)V
     .locals 4
-    .param p2    # Landroid/os/Looper;
 
     const-wide/16 v2, 0x0
 
@@ -220,7 +219,6 @@
 
 .method public handleMessage(Landroid/os/Message;)V
     .locals 43
-    .param p1    # Landroid/os/Message;
 
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
@@ -3091,7 +3089,6 @@
 
 .method setGoodRxStateNow(J)V
     .locals 5
-    .param p1    # J
 
     const-wide/16 v1, 0x0
 

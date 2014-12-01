@@ -17,9 +17,6 @@
 # direct methods
 .method public constructor <init>(IILandroid/graphics/AvoidXfermode$Mode;)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/graphics/AvoidXfermode$Mode;
 
     invoke-direct {p0}, Landroid/graphics/Xfermode;-><init>()V
 

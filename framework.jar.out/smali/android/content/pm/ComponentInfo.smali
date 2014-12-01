@@ -34,7 +34,6 @@
 
 .method public constructor <init>(Landroid/content/pm/ComponentInfo;)V
     .locals 1
-    .param p1    # Landroid/content/pm/ComponentInfo;
 
     invoke-direct {p0, p1}, Landroid/content/pm/PackageItemInfo;-><init>(Landroid/content/pm/PackageItemInfo;)V
 
@@ -71,7 +70,6 @@
 
 .method protected constructor <init>(Landroid/os/Parcel;)V
     .locals 3
-    .param p1    # Landroid/os/Parcel;
 
     const/4 v1, 0x1
 
@@ -142,8 +140,6 @@
 # virtual methods
 .method protected dumpBack(Landroid/util/Printer;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Landroid/util/Printer;
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/content/pm/ComponentInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
 
@@ -222,8 +218,6 @@
 
 .method protected dumpFront(Landroid/util/Printer;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Landroid/util/Printer;
-    .param p2    # Ljava/lang/String;
 
     invoke-super {p0, p1, p2}, Landroid/content/pm/PackageItemInfo;->dumpFront(Landroid/util/Printer;Ljava/lang/String;)V
 
@@ -385,7 +379,6 @@
 
 .method protected loadDefaultIcon(Landroid/content/pm/PackageManager;)Landroid/graphics/drawable/Drawable;
     .locals 1
-    .param p1    # Landroid/content/pm/PackageManager;
 
     iget-object v0, p0, Landroid/content/pm/ComponentInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
 
@@ -398,7 +391,6 @@
 
 .method protected loadDefaultLogo(Landroid/content/pm/PackageManager;)Landroid/graphics/drawable/Drawable;
     .locals 1
-    .param p1    # Landroid/content/pm/PackageManager;
 
     iget-object v0, p0, Landroid/content/pm/ComponentInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
 
@@ -411,7 +403,6 @@
 
 .method public loadLabel(Landroid/content/pm/PackageManager;)Ljava/lang/CharSequence;
     .locals 6
-    .param p1    # Landroid/content/pm/PackageManager;
 
     invoke-static {}, Landroid/sec/enterprise/EnterpriseDeviceManager;->getInstance()Landroid/sec/enterprise/EnterpriseDeviceManager;
 
@@ -519,8 +510,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 3
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     const/4 v1, 0x1
 

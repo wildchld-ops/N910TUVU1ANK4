@@ -49,8 +49,6 @@
 
 .method public constructor <init>(Landroid/database/Cursor;Landroid/net/Uri;)V
     .locals 0
-    .param p1    # Landroid/database/Cursor;
-    .param p2    # Landroid/net/Uri;
 
     invoke-direct {p0, p1}, Landroid/database/CursorWrapper;-><init>(Landroid/database/Cursor;)V
 
@@ -61,7 +59,6 @@
 
 .method private getErrorCode(I)J
     .locals 2
-    .param p1    # I
 
     const/16 v0, 0x190
 
@@ -237,7 +234,6 @@
 
 .method private getPausedReason(I)J
     .locals 2
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -273,7 +269,6 @@
 
 .method private getReason(I)J
     .locals 2
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/app/DownloadManager$CursorTranslator;->translateStatus(I)I
 
@@ -309,7 +304,6 @@
 
 .method private translateStatus(I)I
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x2
 
@@ -391,7 +385,6 @@
 # virtual methods
 .method public getInt(I)I
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/app/DownloadManager$CursorTranslator;->getLong(I)J
 
@@ -404,7 +397,6 @@
 
 .method public getLong(I)J
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/app/DownloadManager$CursorTranslator;->getColumnName(I)Ljava/lang/String;
 
@@ -476,7 +468,6 @@
 
 .method public getString(I)Ljava/lang/String;
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/app/DownloadManager$CursorTranslator;->getColumnName(I)Ljava/lang/String;
 

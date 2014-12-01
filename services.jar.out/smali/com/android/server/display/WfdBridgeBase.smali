@@ -49,7 +49,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/display/WfdBridgeBase$BridgeListner;)V
     .locals 1
-    .param p1    # Lcom/android/server/display/WfdBridgeBase$BridgeListner;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -70,9 +69,6 @@
 
 .method public static getInstance(Ljava/net/InetAddress;ILcom/android/server/display/WfdBridgeBase$BridgeListner;)Lcom/android/server/display/WfdBridgeBase;
     .locals 1
-    .param p0    # Ljava/net/InetAddress;
-    .param p1    # I
-    .param p2    # Lcom/android/server/display/WfdBridgeBase$BridgeListner;
 
     const/4 v0, 0x0
 

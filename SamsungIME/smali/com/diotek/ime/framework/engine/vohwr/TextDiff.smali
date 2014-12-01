@@ -54,9 +54,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;I)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -83,9 +80,6 @@
 
 .method public static diff(Ljava/lang/String;Ljava/lang/String;Z)Lcom/diotek/ime/framework/engine/vohwr/TextDiff;
     .locals 9
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const/4 v8, 0x0
 
@@ -218,8 +212,6 @@
 
 .method private static getCommonPrefixSize(Ljava/lang/String;Ljava/lang/String;)I
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
@@ -264,8 +256,6 @@
 
 .method private static getCommonSuffixSize(Ljava/lang/String;Ljava/lang/String;)I
     .locals 6
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
@@ -311,7 +301,6 @@
 
 .method private setIndex(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/diotek/ime/framework/engine/vohwr/TextDiff;->mIndex:I
 
@@ -320,7 +309,6 @@
 
 .method private setNewText(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/diotek/ime/framework/engine/vohwr/TextDiff;->mNewText:Ljava/lang/String;
 
@@ -329,7 +317,6 @@
 
 .method private setOldText(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/diotek/ime/framework/engine/vohwr/TextDiff;->mOldText:Ljava/lang/String;
 

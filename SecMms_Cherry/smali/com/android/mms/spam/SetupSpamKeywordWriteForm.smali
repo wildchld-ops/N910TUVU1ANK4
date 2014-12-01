@@ -52,7 +52,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/spam/SetupSpamKeywordWriteForm;)Landroid/widget/EditText;
     .locals 1
-    .param p0    # Lcom/android/mms/spam/SetupSpamKeywordWriteForm;
 
     iget-object v0, p0, Lcom/android/mms/ui/EditTextActivity;->mEditText:Landroid/widget/EditText;
 
@@ -61,7 +60,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/spam/SetupSpamKeywordWriteForm;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/spam/SetupSpamKeywordWriteForm;
 
     iget-boolean v0, p0, Lcom/android/mms/spam/SetupSpamKeywordWriteForm;->mUpdateMode:Z
 
@@ -70,8 +68,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/spam/SetupSpamKeywordWriteForm;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/mms/spam/SetupSpamKeywordWriteForm;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/mms/spam/SetupSpamKeywordWriteForm;->insert(Ljava/lang/String;)V
 
@@ -80,7 +76,6 @@
 
 .method static synthetic access$300(Lcom/android/mms/spam/SetupSpamKeywordWriteForm;)I
     .locals 1
-    .param p0    # Lcom/android/mms/spam/SetupSpamKeywordWriteForm;
 
     invoke-direct {p0}, Lcom/android/mms/spam/SetupSpamKeywordWriteForm;->getSpamWordData()I
 
@@ -91,7 +86,6 @@
 
 .method static synthetic access$400(Lcom/android/mms/spam/SetupSpamKeywordWriteForm;)V
     .locals 0
-    .param p0    # Lcom/android/mms/spam/SetupSpamKeywordWriteForm;
 
     invoke-direct {p0}, Lcom/android/mms/spam/SetupSpamKeywordWriteForm;->updateSapmKeyWord()V
 
@@ -100,7 +94,6 @@
 
 .method static synthetic access$500(Lcom/android/mms/spam/SetupSpamKeywordWriteForm;)V
     .locals 0
-    .param p0    # Lcom/android/mms/spam/SetupSpamKeywordWriteForm;
 
     invoke-virtual {p0}, Lcom/android/mms/ui/EditTextActivity;->showSip()V
 
@@ -109,7 +102,6 @@
 
 .method private duplicationCheck(Ljava/lang/String;)I
     .locals 9
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -217,7 +209,6 @@
 
 .method private insert(Ljava/lang/String;)V
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     const/4 v5, 0x0
 
@@ -355,7 +346,6 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 8
-    .param p1    # Landroid/view/View;
 
     const/4 v7, 0x0
 
@@ -504,7 +494,6 @@
 
 .method protected onCreateDialog(I)Landroid/app/Dialog;
     .locals 9
-    .param p1    # I
 
     const v4, 0x7f0c02aa
 
@@ -749,8 +738,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     packed-switch p1, :pswitch_data_0
 
@@ -810,7 +797,6 @@
 
 .method public setBaseContent(Landroid/content/Intent;)V
     .locals 2
-    .param p1    # Landroid/content/Intent;
 
     const/4 v1, 0x0
 
@@ -880,9 +866,6 @@
 
 .method public showKeyWordConfirmDialog(IILjava/lang/String;)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 

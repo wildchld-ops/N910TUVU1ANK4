@@ -31,7 +31,6 @@
 # direct methods
 .method public constructor <init>(Landroid/view/ViewRootImpl;Landroid/view/ViewRootImpl$InputStage;)V
     .locals 0
-    .param p2    # Landroid/view/ViewRootImpl$InputStage;
 
     iput-object p1, p0, Landroid/view/ViewRootImpl$InputStage;->this$0:Landroid/view/ViewRootImpl;
 
@@ -46,8 +45,6 @@
 # virtual methods
 .method protected apply(Landroid/view/ViewRootImpl$QueuedInputEvent;I)V
     .locals 3
-    .param p1    # Landroid/view/ViewRootImpl$QueuedInputEvent;
-    .param p2    # I
 
     const/4 v0, 0x1
 
@@ -104,7 +101,6 @@
 
 .method public final deliver(Landroid/view/ViewRootImpl$QueuedInputEvent;)V
     .locals 1
-    .param p1    # Landroid/view/ViewRootImpl$QueuedInputEvent;
 
     iget v0, p1, Landroid/view/ViewRootImpl$QueuedInputEvent;->mFlags:I
 
@@ -142,8 +138,6 @@
 
 .method dump(Ljava/lang/String;Ljava/io/PrintWriter;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/io/PrintWriter;
 
     iget-object v0, p0, Landroid/view/ViewRootImpl$InputStage;->mNext:Landroid/view/ViewRootImpl$InputStage;
 
@@ -159,8 +153,6 @@
 
 .method protected finish(Landroid/view/ViewRootImpl$QueuedInputEvent;Z)V
     .locals 1
-    .param p1    # Landroid/view/ViewRootImpl$QueuedInputEvent;
-    .param p2    # Z
 
     iget v0, p1, Landroid/view/ViewRootImpl$QueuedInputEvent;->mFlags:I
 
@@ -200,7 +192,6 @@
 
 .method protected forward(Landroid/view/ViewRootImpl$QueuedInputEvent;)V
     .locals 0
-    .param p1    # Landroid/view/ViewRootImpl$QueuedInputEvent;
 
     invoke-virtual {p0, p1}, Landroid/view/ViewRootImpl$InputStage;->onDeliverToNext(Landroid/view/ViewRootImpl$QueuedInputEvent;)V
 
@@ -209,7 +200,6 @@
 
 .method protected onDeliverToNext(Landroid/view/ViewRootImpl$QueuedInputEvent;)V
     .locals 1
-    .param p1    # Landroid/view/ViewRootImpl$QueuedInputEvent;
 
     iget-object v0, p0, Landroid/view/ViewRootImpl$InputStage;->mNext:Landroid/view/ViewRootImpl$InputStage;
 
@@ -233,7 +223,6 @@
 
 .method protected onProcess(Landroid/view/ViewRootImpl$QueuedInputEvent;)I
     .locals 1
-    .param p1    # Landroid/view/ViewRootImpl$QueuedInputEvent;
 
     const/4 v0, 0x0
 
@@ -242,7 +231,6 @@
 
 .method protected shouldDropInputEvent(Landroid/view/ViewRootImpl$QueuedInputEvent;)Z
     .locals 4
-    .param p1    # Landroid/view/ViewRootImpl$QueuedInputEvent;
 
     const/4 v0, 0x1
 

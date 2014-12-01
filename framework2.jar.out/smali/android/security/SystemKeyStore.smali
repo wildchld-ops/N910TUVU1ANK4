@@ -42,7 +42,6 @@
 
 .method private getKeyFile(Ljava/lang/String;)Ljava/io/File;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     new-instance v1, Ljava/io/File;
 
@@ -81,7 +80,6 @@
 
 .method public static toHexString([B)Ljava/lang/String;
     .locals 7
-    .param p0    # [B
 
     if-nez p0, :cond_0
 
@@ -163,7 +161,6 @@
 # virtual methods
 .method public deleteKey(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Landroid/security/SystemKeyStore;->getKeyFile(Ljava/lang/String;)Ljava/io/File;
 
@@ -189,9 +186,6 @@
 
 .method public generateNewKey(ILjava/lang/String;Ljava/lang/String;)[B
     .locals 11
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/security/NoSuchAlgorithmException;
@@ -288,9 +282,6 @@
 
 .method public generateNewKeyHexString(ILjava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/security/NoSuchAlgorithmException;
@@ -310,7 +301,6 @@
 
 .method public retrieveKey(Ljava/lang/String;)[B
     .locals 2
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -346,7 +336,6 @@
 
 .method public retrieveKeyHexString(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

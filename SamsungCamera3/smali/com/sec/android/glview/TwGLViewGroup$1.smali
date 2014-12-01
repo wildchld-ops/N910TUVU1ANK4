@@ -46,8 +46,6 @@
 # virtual methods
 .method public compare(Lcom/sec/android/glview/TwGLView;Lcom/sec/android/glview/TwGLView;)I
     .locals 3
-    .param p1    # Lcom/sec/android/glview/TwGLView;
-    .param p2    # Lcom/sec/android/glview/TwGLView;
 
     invoke-virtual {p1}, Lcom/sec/android/glview/TwGLView;->getLayoutZ()F
 
@@ -66,8 +64,6 @@
 
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p1, Lcom/sec/android/glview/TwGLView;
 

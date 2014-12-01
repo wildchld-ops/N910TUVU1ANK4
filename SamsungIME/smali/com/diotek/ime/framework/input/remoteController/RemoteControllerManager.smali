@@ -77,8 +77,6 @@
 
 .method private processDpadDownKeyDown(ILandroid/view/KeyEvent;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/input/remoteController/RemoteControllerManager;->data:Lcom/diotek/ime/framework/input/remoteController/RemoteControllerDataStructure;
 
@@ -89,8 +87,6 @@
 
 .method private processDpadDownKeyDownForMinikeyboard(ILandroid/view/KeyEvent;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/input/remoteController/RemoteControllerManager;->data:Lcom/diotek/ime/framework/input/remoteController/RemoteControllerDataStructure;
 
@@ -101,8 +97,6 @@
 
 .method private processDpadKeyDown(ILandroid/view/KeyEvent;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v2, 0x0
 
@@ -184,8 +178,6 @@
 
 .method private processDpadKeyDownOnMinikeyboardPopupState(ILandroid/view/KeyEvent;)V
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     packed-switch p1, :pswitch_data_0
 
@@ -251,8 +243,6 @@
 
 .method private processDpadLeftKeyDown(ILandroid/view/KeyEvent;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/input/remoteController/RemoteControllerManager;->data:Lcom/diotek/ime/framework/input/remoteController/RemoteControllerDataStructure;
 
@@ -263,8 +253,6 @@
 
 .method private processDpadLeftKeyDownForMinikeyboard(ILandroid/view/KeyEvent;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/input/remoteController/RemoteControllerManager;->data:Lcom/diotek/ime/framework/input/remoteController/RemoteControllerDataStructure;
 
@@ -275,8 +263,6 @@
 
 .method private processDpadRightKeyDown(ILandroid/view/KeyEvent;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/input/remoteController/RemoteControllerManager;->data:Lcom/diotek/ime/framework/input/remoteController/RemoteControllerDataStructure;
 
@@ -287,8 +273,6 @@
 
 .method private processDpadRightKeyDownForMinikeyboard(ILandroid/view/KeyEvent;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/input/remoteController/RemoteControllerManager;->data:Lcom/diotek/ime/framework/input/remoteController/RemoteControllerDataStructure;
 
@@ -299,8 +283,6 @@
 
 .method private processDpadUpKeyDown(ILandroid/view/KeyEvent;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/input/remoteController/RemoteControllerManager;->data:Lcom/diotek/ime/framework/input/remoteController/RemoteControllerDataStructure;
 
@@ -311,8 +293,6 @@
 
 .method private processDpadUpKeyDownForMinikeyboard(ILandroid/view/KeyEvent;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/input/remoteController/RemoteControllerManager;->data:Lcom/diotek/ime/framework/input/remoteController/RemoteControllerDataStructure;
 
@@ -323,8 +303,6 @@
 
 .method private processKeyDownOnFocused(ILandroid/view/KeyEvent;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v2, 0x0
 
@@ -378,8 +356,6 @@
 
 .method private processKeyDownOnMinikeyboardPopup(ILandroid/view/KeyEvent;)V
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/16 v0, 0x42
 
@@ -419,8 +395,6 @@
 
 .method private processKeyUpOnFocused(ILandroid/view/KeyEvent;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x4
 
@@ -436,8 +410,6 @@
 
 .method private processKeyUpOnMinikeyboardPopup(ILandroid/view/KeyEvent;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/16 v0, 0x42
 
@@ -453,8 +425,6 @@
 
 .method private processKeyUpOnMinikeyboardPopupFocused(ILandroid/view/KeyEvent;)V
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v3, 0x1
 
@@ -522,8 +492,6 @@
 
 .method private processKeyUpOnNoneState(ILandroid/view/KeyEvent;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/16 v0, 0x42
 
@@ -539,8 +507,6 @@
 
 .method private processKeyUpOnPressed(ILandroid/view/KeyEvent;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v2, 0x1
 
@@ -615,8 +581,6 @@
 
 .method public createKeyMapForMinikeyboard(Ljava/util/List;II)V
     .locals 3
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -722,7 +686,6 @@
 
 .method public isThisKeyDpadKey(I)Z
     .locals 1
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -749,7 +712,6 @@
 
 .method public isThisKeyRemoteControllerKey(I)Z
     .locals 3
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -793,8 +755,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     invoke-virtual {p0, p1}, Lcom/diotek/ime/framework/input/remoteController/RemoteControllerManager;->isThisKeyDpadKey(I)Z
 
@@ -852,8 +812,6 @@
 
 .method public onKeyLongPress(ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x1
 
@@ -862,8 +820,6 @@
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x0
 
@@ -946,9 +902,6 @@
 
 .method public sendTouchEvent(III)V
     .locals 9
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v7, 0x0
 
@@ -979,7 +932,6 @@
 
 .method public setRemoteControllerState(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/diotek/ime/framework/input/remoteController/RemoteControllerManager;->remoteControllerState:I
 

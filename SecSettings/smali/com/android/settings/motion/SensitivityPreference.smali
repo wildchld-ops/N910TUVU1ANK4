@@ -31,8 +31,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/preference/SeekBarDialogPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -63,8 +61,6 @@
 
 .method static synthetic access$002(Lcom/android/settings/motion/SensitivityPreference;I)I
     .locals 0
-    .param p0    # Lcom/android/settings/motion/SensitivityPreference;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/settings/motion/SensitivityPreference;->mWhichButtonClicked:I
 
@@ -73,7 +69,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/motion/SensitivityPreference;)Landroid/widget/SeekBar;
     .locals 1
-    .param p0    # Lcom/android/settings/motion/SensitivityPreference;
 
     iget-object v0, p0, Lcom/android/settings/motion/SensitivityPreference;->mSeekBar:Landroid/widget/SeekBar;
 
@@ -82,7 +77,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/motion/SensitivityPreference;)I
     .locals 1
-    .param p0    # Lcom/android/settings/motion/SensitivityPreference;
 
     iget v0, p0, Lcom/android/settings/motion/SensitivityPreference;->mCurrentMotion:I
 
@@ -93,7 +87,6 @@
 # virtual methods
 .method protected onBindDialogView(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     invoke-super {p0, p1}, Landroid/preference/SeekBarDialogPreference;->onBindDialogView(Landroid/view/View;)V
 
@@ -124,8 +117,6 @@
 
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 3
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     invoke-super {p0, p1, p2}, Landroid/preference/DialogPreference;->onClick(Landroid/content/DialogInterface;I)V
 
@@ -158,7 +149,6 @@
 
 .method protected onDialogClosed(Z)V
     .locals 3
-    .param p1    # Z
 
     invoke-super {p0, p1}, Landroid/preference/DialogPreference;->onDialogClosed(Z)V
 
@@ -238,7 +228,6 @@
 
 .method protected onPrepareDialogBuilder(Landroid/app/AlertDialog$Builder;)V
     .locals 3
-    .param p1    # Landroid/app/AlertDialog$Builder;
 
     invoke-static {}, Landroid/os/UserHandle;->myUserId()I
 
@@ -272,23 +261,18 @@
 
 .method public onProgressChanged(Landroid/widget/SeekBar;IZ)V
     .locals 0
-    .param p1    # Landroid/widget/SeekBar;
-    .param p2    # I
-    .param p3    # Z
 
     return-void
 .end method
 
 .method public onStartTrackingTouch(Landroid/widget/SeekBar;)V
     .locals 0
-    .param p1    # Landroid/widget/SeekBar;
 
     return-void
 .end method
 
 .method public onStopTrackingTouch(Landroid/widget/SeekBar;)V
     .locals 3
-    .param p1    # Landroid/widget/SeekBar;
 
     const-string v0, "SensitivityPreference"
 
@@ -343,7 +327,6 @@
 
 .method public setInformation(Lcom/android/settings/SettingsPreferenceFragment;)V
     .locals 0
-    .param p1    # Lcom/android/settings/SettingsPreferenceFragment;
 
     iput-object p1, p0, Lcom/android/settings/motion/SensitivityPreference;->mFragment:Lcom/android/settings/SettingsPreferenceFragment;
 
@@ -352,7 +335,6 @@
 
 .method public setMotion(I)V
     .locals 2
-    .param p1    # I
 
     iput p1, p0, Lcom/android/settings/motion/SensitivityPreference;->mCurrentMotion:I
 
@@ -412,7 +394,6 @@
 
 .method protected showDialog(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v4, 0x5
 
@@ -529,8 +510,6 @@
 
 .method public startSensitivityTest(II)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     const/16 v3, 0xc
 

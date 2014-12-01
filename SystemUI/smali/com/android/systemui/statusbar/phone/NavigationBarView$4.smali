@@ -36,7 +36,6 @@
 # virtual methods
 .method public onTouchExplorationStateChanged(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView$4;->this$0:Lcom/android/systemui/statusbar/phone/NavigationBarView;
 

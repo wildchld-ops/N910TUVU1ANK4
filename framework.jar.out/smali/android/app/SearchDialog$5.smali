@@ -36,7 +36,6 @@
 # virtual methods
 .method public onSuggestionClick(I)Z
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/app/SearchDialog$5;->this$0:Landroid/app/SearchDialog;
 
@@ -49,7 +48,6 @@
 
 .method public onSuggestionSelect(I)Z
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 

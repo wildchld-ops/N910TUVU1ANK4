@@ -33,7 +33,6 @@
 # virtual methods
 .method public onClipboardDataPaste(Landroid/sec/clipboard/data/ClipboardData;)V
     .locals 1
-    .param p1    # Landroid/sec/clipboard/data/ClipboardData;
 
     iget-object v0, p0, Landroid/widget/TextView$IClipboardDataPasteEventImpl$1;->this$1:Landroid/widget/TextView$IClipboardDataPasteEventImpl;
 

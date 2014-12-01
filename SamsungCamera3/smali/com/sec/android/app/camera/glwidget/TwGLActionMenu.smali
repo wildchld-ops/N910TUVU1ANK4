@@ -381,10 +381,6 @@
 
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;ILcom/sec/android/glview/TwGLViewGroup;Lcom/sec/android/app/camera/MenuResourceDepot;)V
     .locals 9
-    .param p1    # Lcom/sec/android/app/camera/Camera;
-    .param p2    # I
-    .param p3    # Lcom/sec/android/glview/TwGLViewGroup;
-    .param p4    # Lcom/sec/android/app/camera/MenuResourceDepot;
 
     const/4 v5, 0x6
 
@@ -803,7 +799,6 @@
 
 .method public actionShotRectChanged([B)V
     .locals 10
-    .param p1    # [B
 
     const/4 v9, 0x4
 
@@ -1114,8 +1109,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/16 v3, 0x1b
 
@@ -1170,8 +1163,6 @@
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/16 v2, 0x1b
 
@@ -1224,7 +1215,6 @@
 
 .method public onOrientationChanged(I)V
     .locals 0
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/glwidget/TwGLActionMenu;->setSizeForOrientation()V
 
@@ -1294,7 +1284,6 @@
 
 .method public setAcquisitionProgress(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLActionMenu;->mCaptureProgressBar:Lcom/sec/android/glview/TwGLProgressBar;
 
@@ -1322,7 +1311,6 @@
 
 .method public setActionShotCancelListener(Lcom/sec/android/app/camera/glwidget/TwGLActionMenu$OnActionShotCaptureCancelListener;)V
     .locals 0
-    .param p1    # Lcom/sec/android/app/camera/glwidget/TwGLActionMenu$OnActionShotCaptureCancelListener;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLActionMenu;->mListener:Lcom/sec/android/app/camera/glwidget/TwGLActionMenu$OnActionShotCaptureCancelListener;
 
@@ -1331,7 +1319,6 @@
 
 .method public setPostCaptureProgress(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "TwGLActionMenu"
 

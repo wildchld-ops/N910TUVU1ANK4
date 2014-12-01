@@ -58,9 +58,6 @@
 
 .method public constructor <init>(Lorg/w3c/dom/Node;Ljava/lang/String;Z)V
     .locals 0
-    .param p1    # Lorg/w3c/dom/Node;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -75,7 +72,6 @@
 
 .method private fillList(Lorg/w3c/dom/Node;)V
     .locals 2
-    .param p1    # Lorg/w3c/dom/Node;
 
     iget-object v0, p0, Lcom/android/mms/dom/NodeListImpl;->mRootNode:Lorg/w3c/dom/Node;
 
@@ -200,7 +196,6 @@
 
 .method public item(I)Lorg/w3c/dom/Node;
     .locals 3
-    .param p1    # I
 
     const/4 v1, 0x0
 

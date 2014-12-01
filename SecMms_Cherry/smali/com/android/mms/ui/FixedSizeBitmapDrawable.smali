@@ -10,8 +10,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/res/Resources;Landroid/graphics/Bitmap;)V
     .locals 0
-    .param p1    # Landroid/content/res/Resources;
-    .param p2    # Landroid/graphics/Bitmap;
 
     invoke-direct {p0, p1, p2}, Landroid/graphics/drawable/BitmapDrawable;-><init>(Landroid/content/res/Resources;Landroid/graphics/Bitmap;)V
 
@@ -22,10 +20,6 @@
 # virtual methods
 .method public setBounds(IIII)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iget-object v0, p0, Lcom/android/mms/ui/FixedSizeBitmapDrawable;->mFiexRect:Landroid/graphics/Rect;
 
@@ -60,7 +54,6 @@
 
 .method public setFixedBounds(Landroid/graphics/Rect;)V
     .locals 0
-    .param p1    # Landroid/graphics/Rect;
 
     iput-object p1, p0, Lcom/android/mms/ui/FixedSizeBitmapDrawable;->mFiexRect:Landroid/graphics/Rect;
 

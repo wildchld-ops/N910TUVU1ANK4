@@ -113,7 +113,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 9
-    .param p1    # Landroid/content/Context;
 
     const/4 v8, 0x2
 
@@ -333,7 +332,6 @@
 
 .method static synthetic access$1000(Lcom/android/server/sec/InternalClipboardExService;)Lcom/android/server/sec/ClippedDataPickerDialog;
     .locals 1
-    .param p0    # Lcom/android/server/sec/InternalClipboardExService;
 
     iget-object v0, p0, Lcom/android/server/sec/InternalClipboardExService;->mCBPickerDialog:Lcom/android/server/sec/ClippedDataPickerDialog;
 
@@ -342,8 +340,6 @@
 
 .method static synthetic access$1002(Lcom/android/server/sec/InternalClipboardExService;Lcom/android/server/sec/ClippedDataPickerDialog;)Lcom/android/server/sec/ClippedDataPickerDialog;
     .locals 0
-    .param p0    # Lcom/android/server/sec/InternalClipboardExService;
-    .param p1    # Lcom/android/server/sec/ClippedDataPickerDialog;
 
     iput-object p1, p0, Lcom/android/server/sec/InternalClipboardExService;->mCBPickerDialog:Lcom/android/server/sec/ClippedDataPickerDialog;
 
@@ -352,7 +348,6 @@
 
 .method static synthetic access$1100(Lcom/android/server/sec/InternalClipboardExService;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/server/sec/InternalClipboardExService;
 
     iget-object v0, p0, Lcom/android/server/sec/InternalClipboardExService;->mContext:Landroid/content/Context;
 
@@ -361,7 +356,6 @@
 
 .method static synthetic access$1200(Lcom/android/server/sec/InternalClipboardExService;)I
     .locals 1
-    .param p0    # Lcom/android/server/sec/InternalClipboardExService;
 
     iget v0, p0, Lcom/android/server/sec/InternalClipboardExService;->mContainerID:I
 
@@ -370,7 +364,6 @@
 
 .method static synthetic access$1300(Lcom/android/server/sec/InternalClipboardExService;)I
     .locals 1
-    .param p0    # Lcom/android/server/sec/InternalClipboardExService;
 
     iget v0, p0, Lcom/android/server/sec/InternalClipboardExService;->mEnableFormatId:I
 
@@ -379,7 +372,6 @@
 
 .method static synthetic access$1400(Lcom/android/server/sec/InternalClipboardExService;)Landroid/sec/clipboard/IClipboardDataPasteEvent;
     .locals 1
-    .param p0    # Lcom/android/server/sec/InternalClipboardExService;
 
     iget-object v0, p0, Lcom/android/server/sec/InternalClipboardExService;->mClPasteEvent:Landroid/sec/clipboard/IClipboardDataPasteEvent;
 
@@ -388,7 +380,6 @@
 
 .method static synthetic access$1500(Lcom/android/server/sec/InternalClipboardExService;)Landroid/sec/clipboard/ClipboardUIManager;
     .locals 1
-    .param p0    # Lcom/android/server/sec/InternalClipboardExService;
 
     iget-object v0, p0, Lcom/android/server/sec/InternalClipboardExService;->mClipboardUIManager:Landroid/sec/clipboard/ClipboardUIManager;
 
@@ -397,8 +388,6 @@
 
 .method static synthetic access$1502(Lcom/android/server/sec/InternalClipboardExService;Landroid/sec/clipboard/ClipboardUIManager;)Landroid/sec/clipboard/ClipboardUIManager;
     .locals 0
-    .param p0    # Lcom/android/server/sec/InternalClipboardExService;
-    .param p1    # Landroid/sec/clipboard/ClipboardUIManager;
 
     iput-object p1, p0, Lcom/android/server/sec/InternalClipboardExService;->mClipboardUIManager:Landroid/sec/clipboard/ClipboardUIManager;
 
@@ -407,7 +396,6 @@
 
 .method static synthetic access$200(Lcom/android/server/sec/InternalClipboardExService;)Landroid/sec/clipboard/IClipboardWorkingFormUiInterface;
     .locals 1
-    .param p0    # Lcom/android/server/sec/InternalClipboardExService;
 
     iget-object v0, p0, Lcom/android/server/sec/InternalClipboardExService;->mClipboardWorkingFormUiInterface:Landroid/sec/clipboard/IClipboardWorkingFormUiInterface;
 
@@ -416,7 +404,6 @@
 
 .method static synthetic access$300(Lcom/android/server/sec/InternalClipboardExService;)Landroid/sec/clipboard/IClipboardWorkingFormUiInterface;
     .locals 1
-    .param p0    # Lcom/android/server/sec/InternalClipboardExService;
 
     iget-object v0, p0, Lcom/android/server/sec/InternalClipboardExService;->mScrapWorkingFormUiInterface:Landroid/sec/clipboard/IClipboardWorkingFormUiInterface;
 
@@ -425,7 +412,6 @@
 
 .method static synthetic access$400(Lcom/android/server/sec/InternalClipboardExService;)Landroid/sec/clipboard/data/ClipboardDataMgr;
     .locals 1
-    .param p0    # Lcom/android/server/sec/InternalClipboardExService;
 
     iget-object v0, p0, Lcom/android/server/sec/InternalClipboardExService;->mDataList:Landroid/sec/clipboard/data/ClipboardDataMgr;
 
@@ -434,7 +420,6 @@
 
 .method static synthetic access$500(Lcom/android/server/sec/InternalClipboardExService;)Landroid/sec/clipboard/data/ClipboardDataMgr;
     .locals 1
-    .param p0    # Lcom/android/server/sec/InternalClipboardExService;
 
     iget-object v0, p0, Lcom/android/server/sec/InternalClipboardExService;->mSharedclipMgr:Landroid/sec/clipboard/data/ClipboardDataMgr;
 
@@ -443,8 +428,6 @@
 
 .method static synthetic access$602(Lcom/android/server/sec/InternalClipboardExService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/sec/InternalClipboardExService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/sec/InternalClipboardExService;->mIsCalledPasteApp:Z
 
@@ -453,7 +436,6 @@
 
 .method static synthetic access$700(Lcom/android/server/sec/InternalClipboardExService;)Landroid/sec/clipboard/ClipboardConverter;
     .locals 1
-    .param p0    # Lcom/android/server/sec/InternalClipboardExService;
 
     iget-object v0, p0, Lcom/android/server/sec/InternalClipboardExService;->mClipboardConverter:Landroid/sec/clipboard/ClipboardConverter;
 
@@ -462,8 +444,6 @@
 
 .method static synthetic access$702(Lcom/android/server/sec/InternalClipboardExService;Landroid/sec/clipboard/ClipboardConverter;)Landroid/sec/clipboard/ClipboardConverter;
     .locals 0
-    .param p0    # Lcom/android/server/sec/InternalClipboardExService;
-    .param p1    # Landroid/sec/clipboard/ClipboardConverter;
 
     iput-object p1, p0, Lcom/android/server/sec/InternalClipboardExService;->mClipboardConverter:Landroid/sec/clipboard/ClipboardConverter;
 
@@ -472,7 +452,6 @@
 
 .method static synthetic access$800(Lcom/android/server/sec/InternalClipboardExService;)Landroid/sec/clipboard/data/ClipboardDataMgr;
     .locals 1
-    .param p0    # Lcom/android/server/sec/InternalClipboardExService;
 
     iget-object v0, p0, Lcom/android/server/sec/InternalClipboardExService;->mScrapDataList:Landroid/sec/clipboard/data/ClipboardDataMgr;
 
@@ -481,9 +460,6 @@
 
 .method static synthetic access$900(Lcom/android/server/sec/InternalClipboardExService;ILandroid/sec/clipboard/data/ClipboardData;)Landroid/sec/clipboard/data/ClipboardData;
     .locals 1
-    .param p0    # Lcom/android/server/sec/InternalClipboardExService;
-    .param p1    # I
-    .param p2    # Landroid/sec/clipboard/data/ClipboardData;
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/sec/InternalClipboardExService;->addData(ILandroid/sec/clipboard/data/ClipboardData;)Landroid/sec/clipboard/data/ClipboardData;
 
@@ -494,8 +470,6 @@
 
 .method private addData(ILandroid/sec/clipboard/data/ClipboardData;)Landroid/sec/clipboard/data/ClipboardData;
     .locals 20
-    .param p1    # I
-    .param p2    # Landroid/sec/clipboard/data/ClipboardData;
 
     sget-boolean v17, Landroid/sec/clipboard/data/ClipboardDefine;->DEBUG:Z
 
@@ -1100,7 +1074,6 @@
 
 .method private checkEquals(Landroid/sec/clipboard/data/ClipboardData;)Z
     .locals 12
-    .param p1    # Landroid/sec/clipboard/data/ClipboardData;
 
     const/4 v11, 0x1
 
@@ -1357,7 +1330,6 @@
 
 .method private copyUriFromClipboardSaveService(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v2, p0, Lcom/android/server/sec/InternalClipboardExService;->mContext:Landroid/content/Context;
 
@@ -1395,7 +1367,6 @@
 
 .method private deleteSameClipboardDataUri(Landroid/sec/clipboard/data/list/ClipboardDataUri;)V
     .locals 7
-    .param p1    # Landroid/sec/clipboard/data/list/ClipboardDataUri;
 
     invoke-virtual {p0}, Lcom/android/server/sec/InternalClipboardExService;->getDataSize()I
 
@@ -1484,8 +1455,6 @@
 
 .method private deleteTempFileFromClipboardSaveService(Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v2, p0, Lcom/android/server/sec/InternalClipboardExService;->mContext:Landroid/content/Context;
 
@@ -1786,8 +1755,6 @@
 
 .method private sendOriginalClipboardData(Landroid/sec/clipboard/data/ClipboardData;Ljava/lang/String;)V
     .locals 15
-    .param p1    # Landroid/sec/clipboard/data/ClipboardData;
-    .param p2    # Ljava/lang/String;
 
     :try_start_0
     invoke-static {}, Lcom/android/server/sec/InternalClipboardExService;->getService()Landroid/content/IClipboard;
@@ -2195,7 +2162,6 @@
 
 .method private updateDataListChange(Landroid/sec/clipboard/data/ClipboardData;)V
     .locals 3
-    .param p1    # Landroid/sec/clipboard/data/ClipboardData;
 
     iget-object v1, p0, Lcom/android/server/sec/InternalClipboardExService;->mClipboardWorkingFormUiInterface:Landroid/sec/clipboard/IClipboardWorkingFormUiInterface;
 
@@ -2278,7 +2244,6 @@
 
 .method private updateScrapDataListChange(Landroid/sec/clipboard/data/ClipboardData;)V
     .locals 3
-    .param p1    # Landroid/sec/clipboard/data/ClipboardData;
 
     iget-object v1, p0, Lcom/android/server/sec/InternalClipboardExService;->mScrapWorkingFormUiInterface:Landroid/sec/clipboard/IClipboardWorkingFormUiInterface;
 
@@ -2363,7 +2328,6 @@
 # virtual methods
 .method public AddClipboardFormatListener(Landroid/sec/clipboard/IClipboardFormatListener;)Z
     .locals 2
-    .param p1    # Landroid/sec/clipboard/IClipboardFormatListener;
 
     iget-object v1, p0, Lcom/android/server/sec/InternalClipboardExService;->mClipboardFormatListenerList:Ljava/util/ArrayList;
 
@@ -2393,7 +2357,6 @@
 
 .method public GetClipboardData(I)Landroid/sec/clipboard/data/ClipboardData;
     .locals 10
-    .param p1    # I
 
     const/4 v5, 0x0
 
@@ -2740,7 +2703,6 @@
 
 .method public GetClipboardFormatName(I)Ljava/lang/String;
     .locals 3
-    .param p1    # I
 
     const-string v0, ""
 
@@ -2798,8 +2760,6 @@
 
 .method public ObserverUpdate(ILandroid/sec/clipboard/data/ClipboardData;)V
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/sec/clipboard/data/ClipboardData;
 
     iget-object v3, p0, Lcom/android/server/sec/InternalClipboardExService;->mClipboardFormatListenerList:Ljava/util/ArrayList;
 
@@ -2840,7 +2800,6 @@
 
 .method public RegistClipboardWorkingFormUiInterface(Landroid/sec/clipboard/IClipboardWorkingFormUiInterface;)V
     .locals 2
-    .param p1    # Landroid/sec/clipboard/IClipboardWorkingFormUiInterface;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2918,7 +2877,6 @@
 
 .method public RegistScrapWorkingFormUiInterface(Landroid/sec/clipboard/IClipboardWorkingFormUiInterface;)V
     .locals 2
-    .param p1    # Landroid/sec/clipboard/IClipboardWorkingFormUiInterface;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2977,7 +2935,6 @@
 
 .method public RegisterClipboardFormat(Ljava/lang/String;)I
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -3056,7 +3013,6 @@
 
 .method public RemoveClipboardFormatListener(Landroid/sec/clipboard/IClipboardFormatListener;)Z
     .locals 2
-    .param p1    # Landroid/sec/clipboard/IClipboardFormatListener;
 
     iget-object v1, p0, Lcom/android/server/sec/InternalClipboardExService;->mClipboardFormatListenerList:Ljava/util/ArrayList;
 
@@ -3092,9 +3048,6 @@
 
 .method public SetClipboardData(ILandroid/sec/clipboard/data/ClipboardData;Ljava/lang/String;)Z
     .locals 8
-    .param p1    # I
-    .param p2    # Landroid/sec/clipboard/data/ClipboardData;
-    .param p3    # Ljava/lang/String;
 
     const/4 v5, 0x0
 
@@ -3305,8 +3258,6 @@
 
 .method public SetClipboardDataOriginalToEx(ILandroid/sec/clipboard/data/ClipboardData;)Z
     .locals 9
-    .param p1    # I
-    .param p2    # Landroid/sec/clipboard/data/ClipboardData;
 
     const/4 v4, 0x0
 
@@ -3447,9 +3398,6 @@
 
 .method public SetClipboardDataWithoutSendingOrginalClipboard(ILandroid/sec/clipboard/data/ClipboardData;Ljava/lang/String;)Z
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/sec/clipboard/data/ClipboardData;
-    .param p3    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -3586,7 +3534,6 @@
 
 .method public SetSyncClipboardData(Ljava/lang/CharSequence;)Z
     .locals 4
-    .param p1    # Ljava/lang/CharSequence;
 
     sget-boolean v2, Landroid/sec/clipboard/data/ClipboardDefine;->DEBUG:Z
 
@@ -3620,8 +3567,6 @@
 
 .method public ShowUIClipboardData(ILandroid/sec/clipboard/IClipboardDataPasteEvent;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/sec/clipboard/IClipboardDataPasteEvent;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3674,7 +3619,6 @@
 
 .method public UpdateClipboardDB(I)V
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3717,8 +3661,6 @@
 
 .method public UpdateUIClipboardData(ILandroid/sec/clipboard/IClipboardDataPasteEvent;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/sec/clipboard/IClipboardDataPasteEvent;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3754,7 +3696,6 @@
 
 .method public callPasteMenuFromApp(I)V
     .locals 4
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3860,8 +3801,6 @@
 
 .method public getClipedStrings(II)Ljava/util/ArrayList;
     .locals 12
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II)",
@@ -4426,8 +4365,6 @@
 
 .method public multiUserMode(ILjava/lang/String;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/server/sec/InternalClipboardExService;->mDataList:Landroid/sec/clipboard/data/ClipboardDataMgr;
 
@@ -4518,7 +4455,6 @@
 
 .method public updateScrapData(Landroid/sec/clipboard/data/list/ClipboardDataSmartClip;)V
     .locals 3
-    .param p1    # Landroid/sec/clipboard/data/list/ClipboardDataSmartClip;
 
     if-nez p1, :cond_1
 

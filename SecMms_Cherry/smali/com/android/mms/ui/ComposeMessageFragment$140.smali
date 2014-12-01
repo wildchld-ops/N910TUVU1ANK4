@@ -40,8 +40,6 @@
 # virtual methods
 .method public final onClick(Landroid/content/DialogInterface;I)V
     .locals 7
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     iget-object v4, p0, Lcom/android/mms/ui/ComposeMessageFragment$140;->val$a:Landroid/widget/SimpleAdapter;
 

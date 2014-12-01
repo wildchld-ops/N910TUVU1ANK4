@@ -313,7 +313,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -364,11 +363,6 @@
 
 .method private addOp(Ljava/util/List;Landroid/app/AppOpsManager$PackageOps;Lcom/android/settings/applications/AppOpsState$AppEntry;Landroid/app/AppOpsManager$OpEntry;ZI)V
     .locals 8
-    .param p2    # Landroid/app/AppOpsManager$PackageOps;
-    .param p3    # Lcom/android/settings/applications/AppOpsState$AppEntry;
-    .param p4    # Landroid/app/AppOpsManager$OpEntry;
-    .param p5    # Z
-    .param p6    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -479,9 +473,6 @@
 
 .method private getAppEntry(Landroid/content/Context;Ljava/util/HashMap;Ljava/lang/String;Landroid/content/pm/ApplicationInfo;)Lcom/android/settings/applications/AppOpsState$AppEntry;
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Landroid/content/pm/ApplicationInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -568,7 +559,6 @@
 # virtual methods
 .method public buildState(Lcom/android/settings/applications/AppOpsState$OpsTemplate;)Ljava/util/List;
     .locals 2
-    .param p1    # Lcom/android/settings/applications/AppOpsState$OpsTemplate;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -594,9 +584,6 @@
 
 .method public buildState(Lcom/android/settings/applications/AppOpsState$OpsTemplate;ILjava/lang/String;)Ljava/util/List;
     .locals 35
-    .param p1    # Lcom/android/settings/applications/AppOpsState$OpsTemplate;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

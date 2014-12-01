@@ -32,7 +32,6 @@
 
 .method public constructor <init>(Landroid/net/LinkSocketNotifier;)V
     .locals 1
-    .param p1    # Landroid/net/LinkSocketNotifier;
 
     invoke-direct {p0}, Ljava/net/Socket;-><init>()V
 
@@ -45,8 +44,6 @@
 
 .method public constructor <init>(Landroid/net/LinkSocketNotifier;Landroid/net/Proxy;)V
     .locals 1
-    .param p1    # Landroid/net/LinkSocketNotifier;
-    .param p2    # Landroid/net/Proxy;
 
     invoke-direct {p0}, Ljava/net/Socket;-><init>()V
 
@@ -59,7 +56,6 @@
 
 .method protected static log(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "LinkSocket"
 
@@ -72,7 +68,6 @@
 # virtual methods
 .method public bind(Ljava/net/SocketAddress;)V
     .locals 2
-    .param p1    # Ljava/net/SocketAddress;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/UnsupportedOperationException;
@@ -141,7 +136,6 @@
 
 .method public connect(I)V
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -157,8 +151,6 @@
 
 .method public connect(Ljava/lang/String;I)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/net/UnknownHostException;,
@@ -175,9 +167,6 @@
 
 .method public connect(Ljava/lang/String;II)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/net/UnknownHostException;,
@@ -195,7 +184,6 @@
 
 .method public connect(Ljava/net/SocketAddress;)V
     .locals 1
-    .param p1    # Ljava/net/SocketAddress;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -214,8 +202,6 @@
 
 .method public connect(Ljava/net/SocketAddress;I)V
     .locals 1
-    .param p1    # Ljava/net/SocketAddress;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -320,7 +306,6 @@
 
 .method public requestNewLink(Landroid/net/LinkSocket$LinkRequestReason;)V
     .locals 1
-    .param p1    # Landroid/net/LinkSocket$LinkRequestReason;
 
     const-string v0, "requestNewLink(linkRequestReason) EX"
 
@@ -331,7 +316,6 @@
 
 .method public setNeededCapabilities(Landroid/net/LinkCapabilities;)Z
     .locals 1
-    .param p1    # Landroid/net/LinkCapabilities;
 
     const-string v0, "setNeeds() EX"
 

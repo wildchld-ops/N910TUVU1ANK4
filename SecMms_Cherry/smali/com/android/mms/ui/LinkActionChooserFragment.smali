@@ -189,8 +189,6 @@
 
 .method public static final newInstance(Ljava/lang/String;Ljava/lang/String;)Landroid/app/DialogFragment;
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     new-instance v1, Lcom/android/mms/ui/LinkActionChooserFragment;
 
@@ -215,7 +213,6 @@
 
 .method private showUnownURLinkExplainDialog(Landroid/content/DialogInterface$OnClickListener;)V
     .locals 5
-    .param p1    # Landroid/content/DialogInterface$OnClickListener;
 
     const/4 v4, 0x0
 
@@ -264,8 +261,6 @@
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 8
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/mms/ui/LinkActionChooserFragment;->mAdapter:Landroid/widget/ArrayAdapter;
 
@@ -399,7 +394,6 @@
 
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
     .locals 8
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v7, 0x1
 

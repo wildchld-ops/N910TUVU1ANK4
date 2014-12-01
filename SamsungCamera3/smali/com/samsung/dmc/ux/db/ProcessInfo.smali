@@ -110,7 +110,6 @@
 
 .method public constructor <init>(Landroid/os/Parcel;)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -199,7 +198,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 6
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x0
 
@@ -385,7 +383,6 @@
 
 .method public setCompleteTime(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/samsung/dmc/ux/db/ProcessInfo;->completeTime:Ljava/lang/String;
 
@@ -404,7 +401,6 @@
 
 .method public setStrFileName(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/samsung/dmc/ux/db/ProcessInfo;->strFileName:Ljava/lang/String;
 
@@ -413,7 +409,6 @@
 
 .method public setStrIPAddress(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/samsung/dmc/ux/db/ProcessInfo;->strIPAddress:Ljava/lang/String;
 
@@ -422,7 +417,6 @@
 
 .method public setStrMacAddress(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/samsung/dmc/ux/db/ProcessInfo;->strMacAddress:Ljava/lang/String;
 
@@ -431,7 +425,6 @@
 
 .method public setStrOtherUserName(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/samsung/dmc/ux/db/ProcessInfo;->strOtherUserName:Ljava/lang/String;
 
@@ -440,7 +433,6 @@
 
 .method public setTaskID(J)V
     .locals 0
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/samsung/dmc/ux/db/ProcessInfo;->nTaskID:J
 
@@ -449,7 +441,6 @@
 
 .method public setTaskType(Lcom/samsung/dmc/ux/db/ProcessInfo$GSFileTaskType;)V
     .locals 0
-    .param p1    # Lcom/samsung/dmc/ux/db/ProcessInfo$GSFileTaskType;
 
     iput-object p1, p0, Lcom/samsung/dmc/ux/db/ProcessInfo;->taskType:Lcom/samsung/dmc/ux/db/ProcessInfo$GSFileTaskType;
 
@@ -458,7 +449,6 @@
 
 .method public setTotalPercent(J)V
     .locals 0
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/samsung/dmc/ux/db/ProcessInfo;->nTotalPercent:J
 
@@ -467,8 +457,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-wide v0, p0, Lcom/samsung/dmc/ux/db/ProcessInfo;->nTaskID:J
 

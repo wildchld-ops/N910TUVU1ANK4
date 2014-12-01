@@ -146,11 +146,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Ljava/lang/String;Landroid/os/Looper;Landroid/os/Handler;I)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/os/Looper;
-    .param p4    # Landroid/os/Handler;
-    .param p5    # I
 
     invoke-direct {p0, p3}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
@@ -328,7 +323,6 @@
 
 .method private isDnsResponsePrivateAddress(Ljava/lang/String;)Z
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     const/4 v6, 0x1
 
@@ -429,7 +423,6 @@
 
 .method private log(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/net/DnsPinger;->TAG:Ljava/lang/String;
 
@@ -440,7 +433,6 @@
 
 .method private loge(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/net/DnsPinger;->TAG:Ljava/lang/String;
 
@@ -451,9 +443,6 @@
 
 .method private sendResponse(III)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     sget-boolean v0, Landroid/net/DnsPinger;->DBG:Z
 
@@ -539,12 +528,6 @@
 
 .method private sendResponse(IIILjava/lang/String;II)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
-    .param p6    # I
 
     sget-boolean v1, Landroid/net/DnsPinger;->DBG:Z
 
@@ -663,9 +646,6 @@
 
 .method private updateDnsDB([BILjava/lang/String;)V
     .locals 29
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
@@ -1502,7 +1482,6 @@
 
 .method private updateDnsQuery(Ljava/lang/String;)V
     .locals 13
-    .param p1    # Ljava/lang/String;
 
     const/16 v12, 0x2e
 
@@ -1628,7 +1607,6 @@
 
 .method private updateDnsResultMap(Ljava/lang/String;)V
     .locals 9
-    .param p1    # Ljava/lang/String;
 
     iget-object v7, p0, Landroid/net/DnsPinger;->DnsResultMap:Ljava/util/HashMap;
 
@@ -1857,7 +1835,6 @@
 
 .method public handleMessage(Landroid/os/Message;)V
     .locals 25
-    .param p1    # Landroid/os/Message;
 
     move-object/from16 v0, p1
 
@@ -2860,9 +2837,6 @@
 
 .method public pingDnsAsync(Ljava/net/InetAddress;II)I
     .locals 5
-    .param p1    # Ljava/net/InetAddress;
-    .param p2    # I
-    .param p3    # I
 
     sget-object v1, Landroid/net/DnsPinger;->sCounter:Ljava/util/concurrent/atomic/AtomicInteger;
 
@@ -2901,10 +2875,6 @@
 
 .method public pingDnsAsyncSpecific(Ljava/net/InetAddress;IILjava/lang/String;)I
     .locals 9
-    .param p1    # Ljava/net/InetAddress;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
 
     const v6, 0x50004
 
@@ -3161,10 +3131,6 @@
 
 .method public pingDnsAsyncSpecificForce(Ljava/net/InetAddress;IILjava/lang/String;)I
     .locals 4
-    .param p1    # Ljava/net/InetAddress;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
 
     sget-object v1, Landroid/net/DnsPinger;->sCounter:Ljava/util/concurrent/atomic/AtomicInteger;
 

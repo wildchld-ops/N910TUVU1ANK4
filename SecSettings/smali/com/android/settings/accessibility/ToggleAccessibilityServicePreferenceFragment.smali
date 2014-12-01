@@ -61,7 +61,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/accessibility/ToggleAccessibilityServicePreferenceFragment;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/ToggleAccessibilityServicePreferenceFragment;
 
     invoke-virtual {p0}, Lcom/android/settings/SettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -72,7 +71,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/accessibility/ToggleAccessibilityServicePreferenceFragment;)Landroid/content/ComponentName;
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/ToggleAccessibilityServicePreferenceFragment;
 
     iget-object v0, p0, Lcom/android/settings/accessibility/ToggleAccessibilityServicePreferenceFragment;->mComponentName:Landroid/content/ComponentName;
 
@@ -81,8 +79,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/accessibility/ToggleAccessibilityServicePreferenceFragment;I)V
     .locals 0
-    .param p0    # Lcom/android/settings/accessibility/ToggleAccessibilityServicePreferenceFragment;
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->showDialog(I)V
 
@@ -91,8 +87,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/accessibility/ToggleAccessibilityServicePreferenceFragment;I)V
     .locals 0
-    .param p0    # Lcom/android/settings/accessibility/ToggleAccessibilityServicePreferenceFragment;
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->showDialog(I)V
 
@@ -101,7 +95,6 @@
 
 .method private createEnableDialogContentView(Landroid/accessibilityservice/AccessibilityServiceInfo;)Landroid/view/View;
     .locals 19
-    .param p1    # Landroid/accessibilityservice/AccessibilityServiceInfo;
 
     const-string v14, "layout_inflater"
 
@@ -441,7 +434,6 @@
 # virtual methods
 .method public onCheckingstatus(Z)Z
     .locals 14
-    .param p1    # Z
 
     const/4 v13, 0x4
 
@@ -745,8 +737,6 @@
 
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 11
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     const/4 v8, 0x2
 
@@ -1180,7 +1170,6 @@
 
 .method public onCreateDialog(I)Landroid/app/Dialog;
     .locals 13
-    .param p1    # I
 
     const/4 v4, 0x0
 
@@ -1716,8 +1705,6 @@
 
 .method public onPreferenceToggled(Ljava/lang/String;Z)V
     .locals 16
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const/16 v0, 0x3a
 
@@ -1900,7 +1887,6 @@
 
 .method protected onProcessArguments(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/settings/accessibility/ToggleFeaturePreferenceFragment;->onProcessArguments(Landroid/os/Bundle;)V
 

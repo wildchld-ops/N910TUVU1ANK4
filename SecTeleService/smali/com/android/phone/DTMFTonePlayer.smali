@@ -684,7 +684,7 @@
 
     const-string v5, "audio"
 
-    invoke-virtual {v3, v5}, Landroid/content/ContextWrapper;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v3, v5}, Lcom/android/phone/PhoneGlobals;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -999,7 +999,7 @@
 
     sget-object v0, Lcom/android/phone/DTMFTonePlayer$2;->$SwitchMap$com$android$internal$telephony$Connection$PostDialState:[I
 
-    invoke-virtual {p1}, Ljava/lang/Enum;->ordinal()I
+    invoke-virtual {p1}, Lcom/android/internal/telephony/Connection$PostDialState;->ordinal()I
 
     move-result v1
 
@@ -1255,7 +1255,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v3}, Landroid/content/ContextWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {v3}, Lcom/android/phone/PhoneGlobals;->getResources()Landroid/content/res/Resources;
 
     move-result-object v3
 
@@ -1353,7 +1353,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v3}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v3}, Lcom/android/phone/PhoneGlobals;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v3
 

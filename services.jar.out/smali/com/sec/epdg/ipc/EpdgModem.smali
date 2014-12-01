@@ -137,7 +137,6 @@
 
 .method static synthetic access$002(Landroid/net/LocalSocket;)Landroid/net/LocalSocket;
     .locals 0
-    .param p0    # Landroid/net/LocalSocket;
 
     sput-object p0, Lcom/sec/epdg/ipc/EpdgModem;->mSocket:Landroid/net/LocalSocket;
 
@@ -146,7 +145,6 @@
 
 .method static synthetic access$110(Lcom/sec/epdg/ipc/EpdgModem;)I
     .locals 2
-    .param p0    # Lcom/sec/epdg/ipc/EpdgModem;
 
     iget v0, p0, Lcom/sec/epdg/ipc/EpdgModem;->mRequestMessagesPending:I
 
@@ -159,8 +157,6 @@
 
 .method static synthetic access$200(Ljava/io/InputStream;[B)I
     .locals 1
-    .param p0    # Ljava/io/InputStream;
-    .param p1    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -212,8 +208,6 @@
 
 .method private static readRilMessage(Ljava/io/InputStream;[B)I
     .locals 12
-    .param p0    # Ljava/io/InputStream;
-    .param p1    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -410,7 +404,6 @@
 
 .method private send([B)V
     .locals 3
-    .param p1    # [B
 
     iget-object v1, p0, Lcom/sec/epdg/ipc/EpdgModem;->mSender:Lcom/sec/epdg/ipc/EpdgModem$EpdgModemSender;
 
@@ -447,7 +440,6 @@
 
 .method public sendPacket([B)V
     .locals 0
-    .param p1    # [B
 
     invoke-direct {p0, p1}, Lcom/sec/epdg/ipc/EpdgModem;->send([B)V
 

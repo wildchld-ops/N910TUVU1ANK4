@@ -30,7 +30,6 @@
 # direct methods
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -73,7 +72,6 @@
 
 .method public static getInstance(Landroid/content/Context;)Lcom/sec/android/inputmethod/plugin/ocr/OCRHelper;
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     sget-object v0, Lcom/sec/android/inputmethod/plugin/ocr/OCRHelper;->sInstance:Lcom/sec/android/inputmethod/plugin/ocr/OCRHelper;
 
@@ -93,9 +91,6 @@
 
 .method private isOCRActivityAvailable(Landroid/content/pm/PackageManager;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Landroid/content/pm/PackageManager;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -133,7 +128,6 @@
 # virtual methods
 .method public containsOCRPackageName(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -227,7 +221,6 @@
 
 .method public isInstalled(Landroid/content/Context;)Z
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     iget-boolean v0, p0, Lcom/sec/android/inputmethod/plugin/ocr/OCRHelper;->mIsInstalled:Z
 
@@ -242,7 +235,6 @@
 
 .method public scanPackageInfo(Landroid/content/Context;)V
     .locals 10
-    .param p1    # Landroid/content/Context;
 
     const/4 v9, 0x0
 

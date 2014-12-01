@@ -93,12 +93,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;III[II)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # [I
-    .param p6    # I
 
     const/16 v4, 0x29a
 
@@ -347,7 +341,6 @@
 
 .method static synthetic access$000(Lcom/sec/android/visualeffect/circleunlock/CircleUnlockEffect;)F
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/circleunlock/CircleUnlockEffect;
 
     iget v0, p0, Lcom/sec/android/visualeffect/circleunlock/CircleUnlockEffect;->strokeAnimationValue:F
 
@@ -356,8 +349,6 @@
 
 .method static synthetic access$002(Lcom/sec/android/visualeffect/circleunlock/CircleUnlockEffect;F)F
     .locals 0
-    .param p0    # Lcom/sec/android/visualeffect/circleunlock/CircleUnlockEffect;
-    .param p1    # F
 
     iput p1, p0, Lcom/sec/android/visualeffect/circleunlock/CircleUnlockEffect;->strokeAnimationValue:F
 
@@ -366,7 +357,6 @@
 
 .method static synthetic access$100(Lcom/sec/android/visualeffect/circleunlock/CircleUnlockEffect;)F
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/circleunlock/CircleUnlockEffect;
 
     iget v0, p0, Lcom/sec/android/visualeffect/circleunlock/CircleUnlockEffect;->circleAnimationMin:F
 
@@ -375,7 +365,6 @@
 
 .method static synthetic access$1000(Lcom/sec/android/visualeffect/circleunlock/CircleUnlockEffect;)Landroid/widget/ImageView;
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/circleunlock/CircleUnlockEffect;
 
     iget-object v0, p0, Lcom/sec/android/visualeffect/circleunlock/CircleUnlockEffect;->arrow:Landroid/widget/ImageView;
 
@@ -384,7 +373,6 @@
 
 .method static synthetic access$1100(Lcom/sec/android/visualeffect/circleunlock/CircleUnlockEffect;)Z
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/circleunlock/CircleUnlockEffect;
 
     iget-boolean v0, p0, Lcom/sec/android/visualeffect/circleunlock/CircleUnlockEffect;->arrowAnimationToggle:Z
 
@@ -393,8 +381,6 @@
 
 .method static synthetic access$1102(Lcom/sec/android/visualeffect/circleunlock/CircleUnlockEffect;Z)Z
     .locals 0
-    .param p0    # Lcom/sec/android/visualeffect/circleunlock/CircleUnlockEffect;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/visualeffect/circleunlock/CircleUnlockEffect;->arrowAnimationToggle:Z
 
@@ -403,7 +389,6 @@
 
 .method static synthetic access$200(Lcom/sec/android/visualeffect/circleunlock/CircleUnlockEffect;)Landroid/widget/FrameLayout;
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/circleunlock/CircleUnlockEffect;
 
     iget-object v0, p0, Lcom/sec/android/visualeffect/circleunlock/CircleUnlockEffect;->circleGroup:Landroid/widget/FrameLayout;
 
@@ -412,9 +397,6 @@
 
 .method static synthetic access$300(Lcom/sec/android/visualeffect/circleunlock/CircleUnlockEffect;Landroid/view/View;F)V
     .locals 0
-    .param p0    # Lcom/sec/android/visualeffect/circleunlock/CircleUnlockEffect;
-    .param p1    # Landroid/view/View;
-    .param p2    # F
 
     invoke-direct {p0, p1, p2}, Lcom/sec/android/visualeffect/circleunlock/CircleUnlockEffect;->setAlphaAndVisibility(Landroid/view/View;F)V
 
@@ -423,7 +405,6 @@
 
 .method static synthetic access$400(Lcom/sec/android/visualeffect/circleunlock/CircleUnlockEffect;)Lcom/sec/android/visualeffect/circleunlock/CircleUnlockCircle;
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/circleunlock/CircleUnlockEffect;
 
     iget-object v0, p0, Lcom/sec/android/visualeffect/circleunlock/CircleUnlockEffect;->circle:Lcom/sec/android/visualeffect/circleunlock/CircleUnlockCircle;
 
@@ -432,7 +413,6 @@
 
 .method static synthetic access$500(Lcom/sec/android/visualeffect/circleunlock/CircleUnlockEffect;)F
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/circleunlock/CircleUnlockEffect;
 
     iget v0, p0, Lcom/sec/android/visualeffect/circleunlock/CircleUnlockEffect;->circleAnimationMax:F
 
@@ -441,7 +421,6 @@
 
 .method static synthetic access$600(Lcom/sec/android/visualeffect/circleunlock/CircleUnlockEffect;)F
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/circleunlock/CircleUnlockEffect;
 
     iget v0, p0, Lcom/sec/android/visualeffect/circleunlock/CircleUnlockEffect;->dragAnimationValue:F
 
@@ -450,8 +429,6 @@
 
 .method static synthetic access$602(Lcom/sec/android/visualeffect/circleunlock/CircleUnlockEffect;F)F
     .locals 0
-    .param p0    # Lcom/sec/android/visualeffect/circleunlock/CircleUnlockEffect;
-    .param p1    # F
 
     iput p1, p0, Lcom/sec/android/visualeffect/circleunlock/CircleUnlockEffect;->dragAnimationValue:F
 
@@ -460,7 +437,6 @@
 
 .method static synthetic access$700(Lcom/sec/android/visualeffect/circleunlock/CircleUnlockEffect;)F
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/circleunlock/CircleUnlockEffect;
 
     iget v0, p0, Lcom/sec/android/visualeffect/circleunlock/CircleUnlockEffect;->fillAnimationValueMax:F
 
@@ -469,8 +445,6 @@
 
 .method static synthetic access$800(Lcom/sec/android/visualeffect/circleunlock/CircleUnlockEffect;F)V
     .locals 0
-    .param p0    # Lcom/sec/android/visualeffect/circleunlock/CircleUnlockEffect;
-    .param p1    # F
 
     invoke-direct {p0, p1}, Lcom/sec/android/visualeffect/circleunlock/CircleUnlockEffect;->setImageInLockImageView(F)V
 
@@ -479,7 +453,6 @@
 
 .method static synthetic access$900(Lcom/sec/android/visualeffect/circleunlock/CircleUnlockEffect;)F
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/circleunlock/CircleUnlockEffect;
 
     iget v0, p0, Lcom/sec/android/visualeffect/circleunlock/CircleUnlockEffect;->arrowAlphaMax:F
 
@@ -508,7 +481,6 @@
 
 .method private cancelAnimator(Landroid/animation/Animator;)V
     .locals 1
-    .param p1    # Landroid/animation/Animator;
 
     if-eqz p1, :cond_0
 
@@ -526,8 +498,6 @@
 
 .method private getResourceImageSize(IZ)I
     .locals 2
-    .param p1    # I
-    .param p2    # Z
 
     new-instance v0, Landroid/graphics/BitmapFactory$Options;
 
@@ -622,8 +592,6 @@
 
 .method private setAlphaAndVisibility(Landroid/view/View;F)V
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # F
 
     const/16 v0, 0x8
 
@@ -793,8 +761,6 @@
 
 .method private setCircleGroupXY(FF)V
     .locals 4
-    .param p1    # F
-    .param p2    # F
 
     const/high16 v3, 0x40000000
 
@@ -827,7 +793,6 @@
 
 .method private setImageInLockImageView(F)V
     .locals 3
-    .param p1    # F
 
     iget v1, p0, Lcom/sec/android/visualeffect/circleunlock/CircleUnlockEffect;->lockSequenceTotal:I
 
@@ -1037,9 +1002,6 @@
 
 .method private startAnimatorForAffordance(JFF)V
     .locals 7
-    .param p1    # J
-    .param p3    # F
-    .param p4    # F
 
     const-wide/16 v5, 0x29a
 
@@ -1177,7 +1139,6 @@
 
 .method public changeModeForShorcutButton(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/visualeffect/circleunlock/CircleUnlockEffect;->lockImageView:Landroid/widget/ImageView;
 
@@ -1244,8 +1205,6 @@
 
 .method public handleTouchEvent(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 13
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     invoke-virtual {p2}, Landroid/view/MotionEvent;->getRawX()F
 
@@ -1487,15 +1446,12 @@
 
 .method public setImageResources(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public showUnlockAffordance(JLandroid/graphics/Rect;)V
     .locals 4
-    .param p1    # J
-    .param p3    # Landroid/graphics/Rect;
 
     const/high16 v3, 0x40000000
 

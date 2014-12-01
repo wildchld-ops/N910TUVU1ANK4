@@ -40,7 +40,7 @@
     .locals 2
     .param p1    # Landroid/view/View;
 
-    invoke-super {p0, p1}, Landroid/preference/Preference;->onBindView(Landroid/view/View;)V
+    invoke-super {p0, p1}, Landroid/preference/EditTextPreference;->onBindView(Landroid/view/View;)V
 
     const v1, 0x1020016
 

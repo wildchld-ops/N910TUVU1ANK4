@@ -6,7 +6,6 @@
 # direct methods
 .method public constructor <init>(Lcom/diotek/ime/framework/spellcheckservice/SamsungIMESpellCheckerService;)V
     .locals 0
-    .param p1    # Lcom/diotek/ime/framework/spellcheckservice/SamsungIMESpellCheckerService;
 
     invoke-direct {p0, p1}, Lcom/diotek/ime/framework/spellcheckservice/SamsungIMEWordLevelSpellCheckerSession;-><init>(Lcom/diotek/ime/framework/spellcheckservice/SamsungIMESpellCheckerService;)V
 
@@ -17,9 +16,6 @@
 # virtual methods
 .method public onGetSuggestionsMultiple([Landroid/view/textservice/TextInfo;IZ)[Landroid/view/textservice/SuggestionsInfo;
     .locals 8
-    .param p1    # [Landroid/view/textservice/TextInfo;
-    .param p2    # I
-    .param p3    # Z
 
     array-length v1, p1
 

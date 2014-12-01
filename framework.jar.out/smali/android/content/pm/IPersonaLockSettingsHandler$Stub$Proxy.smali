@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -45,8 +44,6 @@
 
 .method public checkPassword([BI)Landroid/os/Bundle;
     .locals 6
-    .param p1    # [B
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -120,8 +117,6 @@
 
 .method public checkPattern([BI)Landroid/os/Bundle;
     .locals 6
-    .param p1    # [B
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -195,9 +190,6 @@
 
 .method public getBoolean(Ljava/lang/String;ZI)Landroid/os/Bundle;
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -288,9 +280,6 @@
 
 .method public getLong(Ljava/lang/String;JI)Landroid/os/Bundle;
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
-    .param p4    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -366,9 +355,6 @@
 
 .method public getString(Ljava/lang/String;Ljava/lang/String;I)Landroid/os/Bundle;
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -444,7 +430,6 @@
 
 .method public havePassword(I)Landroid/os/Bundle;
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -516,7 +501,6 @@
 
 .method public havePattern(I)Landroid/os/Bundle;
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -588,7 +572,6 @@
 
 .method public removeUser(I)Landroid/os/Bundle;
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -660,9 +643,6 @@
 
 .method public setBoolean(Ljava/lang/String;ZI)Landroid/os/Bundle;
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -750,8 +730,6 @@
 
 .method public setLockPassword([BI)Landroid/os/Bundle;
     .locals 6
-    .param p1    # [B
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -825,8 +803,6 @@
 
 .method public setLockPattern([BI)Landroid/os/Bundle;
     .locals 6
-    .param p1    # [B
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -900,9 +876,6 @@
 
 .method public setLong(Ljava/lang/String;JI)Landroid/os/Bundle;
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
-    .param p4    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -978,9 +951,6 @@
 
 .method public setString(Ljava/lang/String;Ljava/lang/String;I)Landroid/os/Bundle;
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

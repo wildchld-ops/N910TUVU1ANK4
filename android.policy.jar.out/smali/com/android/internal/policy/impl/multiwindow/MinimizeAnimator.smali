@@ -101,7 +101,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     const/4 v3, 0x0
 
@@ -225,7 +224,6 @@
 
 .method static synthetic access$000(Lcom/android/internal/policy/impl/multiwindow/MinimizeAnimator;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/multiwindow/MinimizeAnimator;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/multiwindow/MinimizeAnimator;->mMovements:Ljava/util/ArrayList;
 
@@ -234,7 +232,6 @@
 
 .method static synthetic access$100(Lcom/android/internal/policy/impl/multiwindow/MinimizeAnimator;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/multiwindow/MinimizeAnimator;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/multiwindow/MinimizeAnimator;->mCurrMoveDistance:Ljava/util/ArrayList;
 
@@ -243,7 +240,6 @@
 
 .method static synthetic access$200(Lcom/android/internal/policy/impl/multiwindow/MinimizeAnimator;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/multiwindow/MinimizeAnimator;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/multiwindow/MinimizeAnimator;->mMinimizeIcons:Ljava/util/ArrayList;
 
@@ -252,7 +248,6 @@
 
 .method static synthetic access$300(Lcom/android/internal/policy/impl/multiwindow/MinimizeAnimator;)Z
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/multiwindow/MinimizeAnimator;
 
     iget-boolean v0, p0, Lcom/android/internal/policy/impl/multiwindow/MinimizeAnimator;->mIsTouchDown:Z
 
@@ -261,7 +256,6 @@
 
 .method static synthetic access$400(Lcom/android/internal/policy/impl/multiwindow/MinimizeAnimator;)V
     .locals 0
-    .param p0    # Lcom/android/internal/policy/impl/multiwindow/MinimizeAnimator;
 
     invoke-direct {p0}, Lcom/android/internal/policy/impl/multiwindow/MinimizeAnimator;->openTrashCoverAnimation()V
 
@@ -270,7 +264,6 @@
 
 .method static synthetic access$500(Lcom/android/internal/policy/impl/multiwindow/MinimizeAnimator;)V
     .locals 0
-    .param p0    # Lcom/android/internal/policy/impl/multiwindow/MinimizeAnimator;
 
     invoke-direct {p0}, Lcom/android/internal/policy/impl/multiwindow/MinimizeAnimator;->shakeTrashCoverAnimation()V
 
@@ -279,7 +272,6 @@
 
 .method static synthetic access$600(Lcom/android/internal/policy/impl/multiwindow/MinimizeAnimator;)V
     .locals 0
-    .param p0    # Lcom/android/internal/policy/impl/multiwindow/MinimizeAnimator;
 
     invoke-direct {p0}, Lcom/android/internal/policy/impl/multiwindow/MinimizeAnimator;->closeTrashCoverAnimation()V
 
@@ -288,7 +280,6 @@
 
 .method static synthetic access$700(Lcom/android/internal/policy/impl/multiwindow/MinimizeAnimator;)V
     .locals 0
-    .param p0    # Lcom/android/internal/policy/impl/multiwindow/MinimizeAnimator;
 
     invoke-direct {p0}, Lcom/android/internal/policy/impl/multiwindow/MinimizeAnimator;->scaleTrashAnimation()V
 
@@ -389,7 +380,6 @@
 
 .method private getMinimizedDrawable(Landroid/content/ComponentName;)Landroid/graphics/drawable/Drawable;
     .locals 2
-    .param p1    # Landroid/content/ComponentName;
 
     iget-object v1, p0, Lcom/android/internal/policy/impl/multiwindow/MinimizeAnimator;->mActivity:Landroid/app/Activity;
 
@@ -406,7 +396,6 @@
 
 .method private handleTouchDown(Landroid/view/MotionEvent;)V
     .locals 13
-    .param p1    # Landroid/view/MotionEvent;
 
     const v12, 0x1050145
 
@@ -592,7 +581,6 @@
 
 .method private handleTouchMove(Landroid/view/MotionEvent;)V
     .locals 10
-    .param p1    # Landroid/view/MotionEvent;
 
     iget v7, p0, Lcom/android/internal/policy/impl/multiwindow/MinimizeAnimator;->mOldPositionX:F
 
@@ -980,7 +968,6 @@
 
 .method private handleTouchUp(Landroid/view/MotionEvent;)V
     .locals 7
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v6, 0x1
 
@@ -1442,8 +1429,6 @@
 
 .method public initialize(II)V
     .locals 9
-    .param p1    # I
-    .param p2    # I
 
     const/4 v8, 0x0
 
@@ -1596,7 +1581,6 @@
 
 .method public makeMinimizeIcons(Z)V
     .locals 10
-    .param p1    # Z
 
     iget-object v7, p0, Lcom/android/internal/policy/impl/multiwindow/MinimizeAnimator;->mMinimizeIcons:Ljava/util/ArrayList;
 
@@ -1740,7 +1724,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)V
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/multiwindow/MinimizeAnimator;->mMinimizeIcons:Ljava/util/ArrayList;
 

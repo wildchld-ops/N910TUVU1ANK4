@@ -14,7 +14,6 @@
 
 .method public static getCurrentLockQuality(Landroid/content/Context;)I
     .locals 5
-    .param p0    # Landroid/content/Context;
 
     const/4 v4, -0x1
 
@@ -65,9 +64,6 @@
 
 .method private static upgradeQuality(ILlibcore/util/MutableBoolean;Landroid/content/Context;)I
     .locals 2
-    .param p0    # I
-    .param p1    # Llibcore/util/MutableBoolean;
-    .param p2    # Landroid/content/Context;
 
     const v1, 0x8000
 
@@ -113,8 +109,6 @@
 
 .method private static upgradeQualityForDPM(ILandroid/content/Context;)I
     .locals 3
-    .param p0    # I
-    .param p1    # Landroid/content/Context;
 
     const-string v2, "device_policy"
 
@@ -140,8 +134,6 @@
 
 .method private static upgradeQualityForEncryption(ILandroid/content/Context;)I
     .locals 5
-    .param p0    # I
-    .param p1    # Landroid/content/Context;
 
     const/high16 v4, 0x20000
 
@@ -192,8 +184,6 @@
 
 .method private static upgradeQualityForKeyStore(ILandroid/content/Context;)I
     .locals 4
-    .param p0    # I
-    .param p1    # Landroid/content/Context;
 
     const-string v3, "device_policy"
 

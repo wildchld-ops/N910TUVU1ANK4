@@ -44,10 +44,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Lcom/android/settings/bluetooth/LocalBluetoothAdapter;Lcom/android/settings/bluetooth/CachedBluetoothDeviceManager;Lcom/android/settings/bluetooth/LocalBluetoothProfileManager;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/settings/bluetooth/LocalBluetoothAdapter;
-    .param p3    # Lcom/android/settings/bluetooth/CachedBluetoothDeviceManager;
-    .param p4    # Lcom/android/settings/bluetooth/LocalBluetoothProfileManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -80,7 +76,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/bluetooth/SapProfile;)Lcom/broadcom/bt/service/sap/BluetoothSap;
     .locals 1
-    .param p0    # Lcom/android/settings/bluetooth/SapProfile;
 
     iget-object v0, p0, Lcom/android/settings/bluetooth/SapProfile;->mService:Lcom/broadcom/bt/service/sap/BluetoothSap;
 
@@ -89,8 +84,6 @@
 
 .method static synthetic access$102(Lcom/android/settings/bluetooth/SapProfile;Lcom/broadcom/bt/service/sap/BluetoothSap;)Lcom/broadcom/bt/service/sap/BluetoothSap;
     .locals 0
-    .param p0    # Lcom/android/settings/bluetooth/SapProfile;
-    .param p1    # Lcom/broadcom/bt/service/sap/BluetoothSap;
 
     iput-object p1, p0, Lcom/android/settings/bluetooth/SapProfile;->mService:Lcom/broadcom/bt/service/sap/BluetoothSap;
 
@@ -99,7 +92,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/bluetooth/SapProfile;)Lcom/android/settings/bluetooth/CachedBluetoothDeviceManager;
     .locals 1
-    .param p0    # Lcom/android/settings/bluetooth/SapProfile;
 
     iget-object v0, p0, Lcom/android/settings/bluetooth/SapProfile;->mDeviceManager:Lcom/android/settings/bluetooth/CachedBluetoothDeviceManager;
 
@@ -108,7 +100,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/bluetooth/SapProfile;)Lcom/android/settings/bluetooth/LocalBluetoothAdapter;
     .locals 1
-    .param p0    # Lcom/android/settings/bluetooth/SapProfile;
 
     iget-object v0, p0, Lcom/android/settings/bluetooth/SapProfile;->mLocalAdapter:Lcom/android/settings/bluetooth/LocalBluetoothAdapter;
 
@@ -117,7 +108,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/bluetooth/SapProfile;)Lcom/android/settings/bluetooth/LocalBluetoothProfileManager;
     .locals 1
-    .param p0    # Lcom/android/settings/bluetooth/SapProfile;
 
     iget-object v0, p0, Lcom/android/settings/bluetooth/SapProfile;->mProfileManager:Lcom/android/settings/bluetooth/LocalBluetoothProfileManager;
 
@@ -126,8 +116,6 @@
 
 .method static synthetic access$502(Lcom/android/settings/bluetooth/SapProfile;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/bluetooth/SapProfile;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/bluetooth/SapProfile;->mIsProfileReady:Z
 
@@ -138,7 +126,6 @@
 # virtual methods
 .method public connect(Landroid/bluetooth/BluetoothDevice;)Z
     .locals 1
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
 
     const/4 v0, 0x0
 
@@ -147,7 +134,6 @@
 
 .method public disconnect(Landroid/bluetooth/BluetoothDevice;)Z
     .locals 1
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
 
     iget-object v0, p0, Lcom/android/settings/bluetooth/SapProfile;->mService:Lcom/broadcom/bt/service/sap/BluetoothSap;
 
@@ -215,7 +201,6 @@
 
 .method public getConnectionStatus(Landroid/bluetooth/BluetoothDevice;)I
     .locals 3
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
 
     const/4 v2, 0x0
 
@@ -270,7 +255,6 @@
 
 .method public getDrawableResource(Landroid/bluetooth/BluetoothClass;)I
     .locals 1
-    .param p1    # Landroid/bluetooth/BluetoothClass;
 
     const v0, 0x7f02020f
 
@@ -279,7 +263,6 @@
 
 .method public getNameResource(Landroid/bluetooth/BluetoothDevice;)I
     .locals 1
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
 
     const v0, 0x7f0902c0
 
@@ -296,7 +279,6 @@
 
 .method public getPreferred(Landroid/bluetooth/BluetoothDevice;)I
     .locals 1
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
 
     const/4 v0, -0x1
 
@@ -305,7 +287,6 @@
 
 .method public getSummaryResourceForDevice(Landroid/bluetooth/BluetoothDevice;)I
     .locals 3
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
 
     const v1, 0x7f0902e2
 
@@ -358,7 +339,6 @@
 
 .method public isPreferred(Landroid/bluetooth/BluetoothDevice;)Z
     .locals 2
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
 
     invoke-virtual {p0, p1}, Lcom/android/settings/bluetooth/SapProfile;->getConnectionStatus(Landroid/bluetooth/BluetoothDevice;)I
 
@@ -389,8 +369,6 @@
 
 .method public setPreferred(Landroid/bluetooth/BluetoothDevice;Z)V
     .locals 0
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
-    .param p2    # Z
 
     return-void
 .end method

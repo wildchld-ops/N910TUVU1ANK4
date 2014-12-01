@@ -112,8 +112,6 @@
 
 .method constructor <init>(Landroid/content/Context;Landroid/webkitsec/WebViewClassic;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/webkitsec/WebViewClassic;
 
     const/4 v5, 0x0
 
@@ -284,8 +282,6 @@
 
 .method private DrawOutlineParagraph(Landroid/graphics/Canvas;Landroid/graphics/Rect;)V
     .locals 7
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # Landroid/graphics/Rect;
 
     new-instance v0, Landroid/graphics/Path;
 
@@ -410,10 +406,6 @@
 
 .method private DrawSelectionCharController(Landroid/graphics/Canvas;Landroid/graphics/Rect;Landroid/graphics/Rect;Z)V
     .locals 12
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # Landroid/graphics/Rect;
-    .param p3    # Landroid/graphics/Rect;
-    .param p4    # Z
 
     const/4 v7, 0x1
 
@@ -592,12 +584,6 @@
 
 .method private DrawSelectionParaController(Landroid/graphics/Canvas;IIIII)V
     .locals 8
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     const/4 v0, 0x0
 
@@ -794,10 +780,6 @@
 
 .method private drawOutlineChar(Landroid/graphics/Canvas;Landroid/graphics/Rect;Landroid/graphics/Rect;Z)V
     .locals 7
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # Landroid/graphics/Rect;
-    .param p3    # Landroid/graphics/Rect;
-    .param p4    # Z
 
     new-instance v0, Landroid/graphics/Paint;
 
@@ -869,9 +851,6 @@
 
 .method private getCharHandlePos(Landroid/graphics/Rect;IZ)Landroid/graphics/Point;
     .locals 12
-    .param p1    # Landroid/graphics/Rect;
-    .param p2    # I
-    .param p3    # Z
 
     const v11, 0x10807c7
 
@@ -1370,8 +1349,6 @@
 
 .method private updateHandleSize(IF)V
     .locals 4
-    .param p1    # I
-    .param p2    # F
 
     const/high16 v3, 0x40000000
 
@@ -1540,15 +1517,6 @@
 # virtual methods
 .method DrawSelectionControls(Landroid/graphics/Canvas;Landroid/graphics/Region;Landroid/graphics/Region;Landroid/graphics/Rect;Landroid/graphics/Rect;ZIIZ)V
     .locals 25
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # Landroid/graphics/Region;
-    .param p3    # Landroid/graphics/Region;
-    .param p4    # Landroid/graphics/Rect;
-    .param p5    # Landroid/graphics/Rect;
-    .param p6    # Z
-    .param p7    # I
-    .param p8    # I
-    .param p9    # Z
 
     invoke-virtual/range {p1 .. p1}, Landroid/graphics/Canvas;->save()I
 
@@ -2018,10 +1986,6 @@
 
 .method SetTextSelectionData(Ljava/lang/String;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Rect;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/graphics/Rect;
-    .param p3    # Landroid/graphics/Rect;
-    .param p4    # Landroid/graphics/Rect;
 
     iput-object p1, p0, Landroid/webkitsec/WebTextSelectionControls;->mSelectedtext:Ljava/lang/String;
 
@@ -2044,10 +2008,6 @@
 
 .method getHandleExtendPoint(IIILandroid/webkitsec/WebViewCore$SelectionCopiedData;)Landroid/graphics/Point;
     .locals 10
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/webkitsec/WebViewCore$SelectionCopiedData;
 
     const/4 v8, 0x0
 
@@ -2360,7 +2320,6 @@
 
 .method public getHandleState(I)I
     .locals 3
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -2412,9 +2371,6 @@
 
 .method getHandleType(IILandroid/webkitsec/WebViewCore$SelectionCopiedData;)I
     .locals 14
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/webkitsec/WebViewCore$SelectionCopiedData;
 
     if-nez p3, :cond_0
 
@@ -2700,7 +2656,6 @@
 
 .method getSelectionBitmap(Landroid/graphics/Rect;)Landroid/graphics/Bitmap;
     .locals 11
-    .param p1    # Landroid/graphics/Rect;
 
     move-object v7, p1
 
@@ -2776,7 +2731,6 @@
 
 .method getSelectionBitmap(Landroid/graphics/Region;)Landroid/graphics/Bitmap;
     .locals 8
-    .param p1    # Landroid/graphics/Region;
 
     new-instance v3, Landroid/graphics/Rect;
 
@@ -2863,7 +2817,6 @@
 
 .method getSelectionPicture(Landroid/graphics/Region;)Landroid/graphics/Picture;
     .locals 10
-    .param p1    # Landroid/graphics/Region;
 
     new-instance v3, Landroid/graphics/Rect;
 
@@ -3019,8 +2972,6 @@
 
 .method public saveImage(Ljava/lang/String;Landroid/graphics/Rect;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/graphics/Rect;
 
     invoke-virtual {p0, p2}, Landroid/webkitsec/WebTextSelectionControls;->getSelectionBitmap(Landroid/graphics/Rect;)Landroid/graphics/Bitmap;
 
@@ -3093,8 +3044,6 @@
 
 .method saveImageToFile(Landroid/graphics/Bitmap;Ljava/lang/String;)V
     .locals 6
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # Ljava/lang/String;
 
     if-nez p1, :cond_1
 
@@ -3168,7 +3117,6 @@
 
 .method setHandleCrossing(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/webkitsec/WebTextSelectionControls;->mHandleCrossing:Z
 
@@ -3177,8 +3125,6 @@
 
 .method public setHandleState(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     packed-switch p1, :pswitch_data_0
 

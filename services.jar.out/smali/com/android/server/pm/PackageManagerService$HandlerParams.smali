@@ -29,7 +29,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/pm/PackageManagerService;Landroid/os/UserHandle;)V
     .locals 1
-    .param p2    # Landroid/os/UserHandle;
 
     iput-object p1, p0, Lcom/android/server/pm/PackageManagerService$HandlerParams;->this$0:Lcom/android/server/pm/PackageManagerService;
 

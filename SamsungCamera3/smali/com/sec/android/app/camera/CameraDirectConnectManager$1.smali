@@ -36,7 +36,6 @@
 # virtual methods
 .method public createNdefMessage(Landroid/nfc/NfcEvent;)Landroid/nfc/NdefMessage;
     .locals 7
-    .param p1    # Landroid/nfc/NfcEvent;
 
     const/4 v6, 0x2
 

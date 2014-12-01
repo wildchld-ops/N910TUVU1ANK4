@@ -82,7 +82,6 @@
 
 .method static synthetic access$100(Landroid/net/http/IdleCache;)I
     .locals 1
-    .param p0    # Landroid/net/http/IdleCache;
 
     iget v0, p0, Landroid/net/http/IdleCache;->mCount:I
 
@@ -91,7 +90,6 @@
 
 .method static synthetic access$200(Landroid/net/http/IdleCache;)V
     .locals 0
-    .param p0    # Landroid/net/http/IdleCache;
 
     invoke-direct {p0}, Landroid/net/http/IdleCache;->clearIdle()V
 
@@ -100,8 +98,6 @@
 
 .method static synthetic access$302(Landroid/net/http/IdleCache;Landroid/net/http/IdleCache$IdleReaper;)Landroid/net/http/IdleCache$IdleReaper;
     .locals 0
-    .param p0    # Landroid/net/http/IdleCache;
-    .param p1    # Landroid/net/http/IdleCache$IdleReaper;
 
     iput-object p1, p0, Landroid/net/http/IdleCache;->mThread:Landroid/net/http/IdleCache$IdleReaper;
 
@@ -185,8 +181,6 @@
 # virtual methods
 .method declared-synchronized cacheConnection(Lorg/apache/http/HttpHost;Landroid/net/http/Connection;)Z
     .locals 7
-    .param p1    # Lorg/apache/http/HttpHost;
-    .param p2    # Landroid/net/http/Connection;
 
     const/16 v6, 0x8
 
@@ -335,7 +329,6 @@
 
 .method declared-synchronized getConnection(Lorg/apache/http/HttpHost;)Landroid/net/http/Connection;
     .locals 5
-    .param p1    # Lorg/apache/http/HttpHost;
 
     monitor-enter p0
 

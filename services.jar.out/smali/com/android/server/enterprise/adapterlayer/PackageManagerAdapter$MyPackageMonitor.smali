@@ -33,7 +33,6 @@
 # virtual methods
 .method public isPackageDisappearing(Ljava/lang/String;)I
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-super {p0, p1}, Lcom/android/internal/content/PackageMonitor;->isPackageDisappearing(Ljava/lang/String;)I
 
@@ -44,7 +43,6 @@
 
 .method public isPackageModified(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-super {p0, p1}, Lcom/android/internal/content/PackageMonitor;->isPackageModified(Ljava/lang/String;)Z
 
@@ -55,8 +53,6 @@
 
 .method public onPackageUpdateFinished(Ljava/lang/String;I)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     return-void
 .end method
@@ -69,7 +65,6 @@
 
 .method public register(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 

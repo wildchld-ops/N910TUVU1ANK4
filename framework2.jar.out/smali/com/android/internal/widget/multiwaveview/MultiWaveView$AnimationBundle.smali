@@ -46,8 +46,6 @@
 
 .method synthetic constructor <init>(Lcom/android/internal/widget/multiwaveview/MultiWaveView;Lcom/android/internal/widget/multiwaveview/MultiWaveView$1;)V
     .locals 0
-    .param p1    # Lcom/android/internal/widget/multiwaveview/MultiWaveView;
-    .param p2    # Lcom/android/internal/widget/multiwaveview/MultiWaveView$1;
 
     invoke-direct {p0, p1}, Lcom/android/internal/widget/multiwaveview/MultiWaveView$AnimationBundle;-><init>(Lcom/android/internal/widget/multiwaveview/MultiWaveView;)V
 
@@ -90,7 +88,6 @@
 
 .method public setSuspended(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/internal/widget/multiwaveview/MultiWaveView$AnimationBundle;->mSuspended:Z
 

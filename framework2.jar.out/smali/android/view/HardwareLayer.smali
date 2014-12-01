@@ -32,9 +32,6 @@
 
 .method constructor <init>(IIZ)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -107,7 +104,6 @@
 
 .method setDisplayList(Landroid/view/DisplayList;)V
     .locals 0
-    .param p1    # Landroid/view/DisplayList;
 
     iput-object p1, p0, Landroid/view/HardwareLayer;->mDisplayList:Landroid/view/DisplayList;
 
@@ -116,21 +112,18 @@
 
 .method setImageFilter(Landroid/graphics/ImageFilter;)V
     .locals 0
-    .param p1    # Landroid/graphics/ImageFilter;
 
     return-void
 .end method
 
 .method setImageFilterClipRect(Landroid/graphics/Rect;)V
     .locals 0
-    .param p1    # Landroid/graphics/Rect;
 
     return-void
 .end method
 
 .method setLayerPaint(Landroid/graphics/Paint;)V
     .locals 0
-    .param p1    # Landroid/graphics/Paint;
 
     return-void
 .end method
@@ -149,9 +142,6 @@
 
 .method update(IIZ)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     iput p1, p0, Landroid/view/HardwareLayer;->mWidth:I
 

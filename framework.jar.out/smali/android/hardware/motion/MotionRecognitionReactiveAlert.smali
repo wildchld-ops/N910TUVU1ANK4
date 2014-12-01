@@ -44,8 +44,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Z)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -72,7 +70,6 @@
 
 .method static synthetic access$000(Landroid/hardware/motion/MotionRecognitionReactiveAlert;)Landroid/os/PowerManager$WakeLock;
     .locals 1
-    .param p0    # Landroid/hardware/motion/MotionRecognitionReactiveAlert;
 
     iget-object v0, p0, Landroid/hardware/motion/MotionRecognitionReactiveAlert;->mReactiveAlert_Wakelock:Landroid/os/PowerManager$WakeLock;
 
@@ -81,7 +78,6 @@
 
 .method static synthetic access$100(Landroid/hardware/motion/MotionRecognitionReactiveAlert;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Landroid/hardware/motion/MotionRecognitionReactiveAlert;
 
     iget-object v0, p0, Landroid/hardware/motion/MotionRecognitionReactiveAlert;->mLockACCInt:Ljava/lang/Object;
 
@@ -90,7 +86,6 @@
 
 .method static synthetic access$200(Landroid/hardware/motion/MotionRecognitionReactiveAlert;)I
     .locals 1
-    .param p0    # Landroid/hardware/motion/MotionRecognitionReactiveAlert;
 
     invoke-direct {p0}, Landroid/hardware/motion/MotionRecognitionReactiveAlert;->readACCInt()I
 
@@ -101,7 +96,6 @@
 
 .method static synthetic access$300(Landroid/hardware/motion/MotionRecognitionReactiveAlert;)Z
     .locals 1
-    .param p0    # Landroid/hardware/motion/MotionRecognitionReactiveAlert;
 
     iget-boolean v0, p0, Landroid/hardware/motion/MotionRecognitionReactiveAlert;->mEnableAccINT:Z
 
@@ -230,7 +224,6 @@
 
 .method private writeACCInt(I)V
     .locals 8
-    .param p1    # I
 
     const/4 v7, 0x1
 
@@ -450,8 +443,6 @@
 
 .method public initReactiveAlert(Landroid/content/Context;Z)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Z
 
     iput-boolean p2, p0, Landroid/hardware/motion/MotionRecognitionReactiveAlert;->mSspenabled:Z
 
@@ -511,7 +502,6 @@
 
 .method public setAccIntStatus(I)V
     .locals 5
-    .param p1    # I
 
     const-wide/16 v3, 0x0
 

@@ -44,8 +44,6 @@
 
 .method public static checkUnknownAddress(Landroid/content/Context;Lcom/google/android/mms/pdu/GenericPdu;)V
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/google/android/mms/pdu/GenericPdu;
 
     if-eqz p1, :cond_0
 
@@ -117,10 +115,6 @@
 
 .method private static getAddressMulti(Landroid/content/Context;Landroid/net/Uri;Ljava/lang/String;Ljava/lang/String;)[Ljava/lang/String;
     .locals 17
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const/4 v8, 0x0
 
@@ -292,8 +286,6 @@
 
 .method public static getFrom(Landroid/content/Context;Landroid/net/Uri;)Ljava/lang/String;
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
 
     invoke-static {p0, p1}, Lcom/android/mms/util/AddressUtils;->getFromMulti(Landroid/content/Context;Landroid/net/Uri;)[Ljava/lang/String;
 
@@ -308,8 +300,6 @@
 
 .method public static getFromMulti(Landroid/content/Context;Landroid/net/Uri;)[Ljava/lang/String;
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
 
     const-string v0, "type=137"
 
@@ -324,8 +314,6 @@
 
 .method public static getRecipients(Landroid/content/Context;Landroid/net/Uri;)Ljava/lang/String;
     .locals 8
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
 
     invoke-static {p0, p1}, Lcom/android/mms/util/AddressUtils;->getRecipientsMulti(Landroid/content/Context;Landroid/net/Uri;)[Ljava/lang/String;
 
@@ -395,8 +383,6 @@
 
 .method public static getRecipientsMulti(Landroid/content/Context;Landroid/net/Uri;)[Ljava/lang/String;
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
 
     const-string v0, "type=137 OR type=130"
 
@@ -411,8 +397,6 @@
 
 .method public static getTo(Landroid/content/Context;Landroid/net/Uri;)Ljava/lang/String;
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
 
     invoke-static {p0, p1}, Lcom/android/mms/util/AddressUtils;->getToMulti(Landroid/content/Context;Landroid/net/Uri;)[Ljava/lang/String;
 
@@ -427,8 +411,6 @@
 
 .method public static getToMulti(Landroid/content/Context;Landroid/net/Uri;)[Ljava/lang/String;
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
 
     invoke-static {}, Lcom/android/mms/MmsConfig;->getEnableNGMGroupMessage()Z
 

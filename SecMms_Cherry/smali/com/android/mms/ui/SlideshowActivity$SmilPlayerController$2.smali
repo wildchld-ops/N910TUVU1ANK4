@@ -96,7 +96,6 @@
 
 .method private printSmilDocXml(Lorg/w3c/dom/smil/SMILDocument;)V
     .locals 6
-    .param p1    # Lorg/w3c/dom/smil/SMILDocument;
 
     const/4 v1, 0x0
 
@@ -182,7 +181,6 @@
 
 .method private showSlides(Lcom/android/mms/model/SlideshowModel;)V
     .locals 5
-    .param p1    # Lcom/android/mms/model/SlideshowModel;
 
     const/4 v3, 0x0
 

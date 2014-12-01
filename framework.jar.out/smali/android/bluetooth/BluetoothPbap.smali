@@ -56,8 +56,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/bluetooth/BluetoothPbap$ServiceListener;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/bluetooth/BluetoothPbap$ServiceListener;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -118,7 +116,6 @@
 
 .method static synthetic access$000(Landroid/bluetooth/BluetoothPbap;)Landroid/content/ServiceConnection;
     .locals 1
-    .param p0    # Landroid/bluetooth/BluetoothPbap;
 
     iget-object v0, p0, Landroid/bluetooth/BluetoothPbap;->mConnection:Landroid/content/ServiceConnection;
 
@@ -127,7 +124,6 @@
 
 .method static synthetic access$100(Landroid/bluetooth/BluetoothPbap;)Landroid/bluetooth/IBluetoothPbap;
     .locals 1
-    .param p0    # Landroid/bluetooth/BluetoothPbap;
 
     iget-object v0, p0, Landroid/bluetooth/BluetoothPbap;->mService:Landroid/bluetooth/IBluetoothPbap;
 
@@ -136,8 +132,6 @@
 
 .method static synthetic access$102(Landroid/bluetooth/BluetoothPbap;Landroid/bluetooth/IBluetoothPbap;)Landroid/bluetooth/IBluetoothPbap;
     .locals 0
-    .param p0    # Landroid/bluetooth/BluetoothPbap;
-    .param p1    # Landroid/bluetooth/IBluetoothPbap;
 
     iput-object p1, p0, Landroid/bluetooth/BluetoothPbap;->mService:Landroid/bluetooth/IBluetoothPbap;
 
@@ -146,7 +140,6 @@
 
 .method static synthetic access$200(Landroid/bluetooth/BluetoothPbap;)Landroid/content/Context;
     .locals 1
-    .param p0    # Landroid/bluetooth/BluetoothPbap;
 
     iget-object v0, p0, Landroid/bluetooth/BluetoothPbap;->mContext:Landroid/content/Context;
 
@@ -155,7 +148,6 @@
 
 .method static synthetic access$300(Ljava/lang/String;)V
     .locals 0
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Landroid/bluetooth/BluetoothPbap;->log(Ljava/lang/String;)V
 
@@ -164,7 +156,6 @@
 
 .method static synthetic access$400(Landroid/bluetooth/BluetoothPbap;)Landroid/bluetooth/BluetoothPbap$ServiceListener;
     .locals 1
-    .param p0    # Landroid/bluetooth/BluetoothPbap;
 
     iget-object v0, p0, Landroid/bluetooth/BluetoothPbap;->mServiceListener:Landroid/bluetooth/BluetoothPbap$ServiceListener;
 
@@ -173,7 +164,6 @@
 
 .method public static doesClassMatchSink(Landroid/bluetooth/BluetoothClass;)Z
     .locals 1
-    .param p0    # Landroid/bluetooth/BluetoothClass;
 
     invoke-virtual {p0}, Landroid/bluetooth/BluetoothClass;->getDeviceClass()I
 
@@ -204,7 +194,6 @@
 
 .method private static log(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "BluetoothPbap"
 
@@ -600,7 +589,6 @@
 
 .method public isConnected(Landroid/bluetooth/BluetoothDevice;)Z
     .locals 3
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
 
     iget-object v1, p0, Landroid/bluetooth/BluetoothPbap;->mService:Landroid/bluetooth/IBluetoothPbap;
 

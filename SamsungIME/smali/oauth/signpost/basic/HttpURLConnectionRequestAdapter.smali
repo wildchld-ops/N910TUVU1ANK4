@@ -13,7 +13,6 @@
 # direct methods
 .method public constructor <init>(Ljava/net/HttpURLConnection;)V
     .locals 0
-    .param p1    # Ljava/net/HttpURLConnection;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -115,7 +114,6 @@
 
 .method public getHeader(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Loauth/signpost/basic/HttpURLConnectionRequestAdapter;->connection:Ljava/net/HttpURLConnection;
 
@@ -169,8 +167,6 @@
 
 .method public setHeader(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Loauth/signpost/basic/HttpURLConnectionRequestAdapter;->connection:Ljava/net/HttpURLConnection;
 
@@ -181,7 +177,6 @@
 
 .method public setRequestUrl(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     return-void
 .end method

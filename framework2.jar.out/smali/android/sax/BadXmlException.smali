@@ -6,8 +6,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;Lorg/xml/sax/Locator;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lorg/xml/sax/Locator;
 
     invoke-direct {p0, p1, p2}, Lorg/xml/sax/SAXParseException;-><init>(Ljava/lang/String;Lorg/xml/sax/Locator;)V
 

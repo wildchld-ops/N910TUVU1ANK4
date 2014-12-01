@@ -122,7 +122,7 @@
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setEnabled(Z)V
+    invoke-virtual {v0, v1}, Landroid/widget/EditText;->setEnabled(Z)V
 
     :cond_0
     return-void
@@ -155,7 +155,7 @@
 
     const/4 v1, 0x1
 
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setEnabled(Z)V
+    invoke-virtual {v0, v1}, Landroid/widget/EditText;->setEnabled(Z)V
 
     :cond_0
     invoke-direct {p0}, Lcom/android/phone/callsettings/IntCallServicePreference;->showKeypad()V
@@ -299,7 +299,7 @@
     move-result-object v3
 
     :cond_2
-    invoke-virtual {p0, v3}, Landroid/preference/Preference;->setSummary(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, v3}, Lcom/android/phone/callsettings/IntCallServicePreference;->setSummary(Ljava/lang/CharSequence;)V
 
     goto :goto_1
 
@@ -379,13 +379,13 @@
 
     const v5, 0x7f090663
 
-    invoke-virtual {v2, v5}, Landroid/widget/TextView;->setText(I)V
+    invoke-virtual {v2, v5}, Landroid/widget/CheckedTextView;->setText(I)V
 
     iget-object v2, p0, Lcom/android/phone/callsettings/IntCallServicePreference;->mManualRadio:Landroid/widget/CheckedTextView;
 
     const v5, 0x7f090662
 
-    invoke-virtual {v2, v5}, Landroid/widget/TextView;->setText(I)V
+    invoke-virtual {v2, v5}, Landroid/widget/CheckedTextView;->setText(I)V
 
     :cond_0
     iget-object v2, p0, Lcom/android/phone/callsettings/IntCallServicePreference;->mContext:Landroid/content/Context;
@@ -427,7 +427,7 @@
     if-lez v1, :cond_6
 
     :goto_2
-    invoke-virtual {v2, v4}, Landroid/widget/TextView;->setEnabled(Z)V
+    invoke-virtual {v2, v4}, Landroid/widget/EditText;->setEnabled(Z)V
 
     iget-object v2, p0, Lcom/android/phone/callsettings/IntCallServicePreference;->mManualSvcNumber:Landroid/widget/EditText;
 
@@ -443,11 +443,11 @@
 
     move-result-object v3
 
-    invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {v2, v3}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
     iget-object v2, p0, Lcom/android/phone/callsettings/IntCallServicePreference;->mManualSvcNumber:Landroid/widget/EditText;
 
-    invoke-virtual {v2}, Landroid/widget/TextView;->length()I
+    invoke-virtual {v2}, Landroid/widget/EditText;->length()I
 
     move-result v0
 
@@ -469,7 +469,7 @@
 
     invoke-direct {v3, p0}, Lcom/android/phone/callsettings/IntCallServicePreference$1;-><init>(Lcom/android/phone/callsettings/IntCallServicePreference;)V
 
-    invoke-virtual {v2, v3}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v2, v3}, Landroid/widget/LinearLayout;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     iget-object v2, p0, Lcom/android/phone/callsettings/IntCallServicePreference;->mManualLayout:Landroid/widget/LinearLayout;
 
@@ -477,13 +477,13 @@
 
     invoke-direct {v3, p0}, Lcom/android/phone/callsettings/IntCallServicePreference$2;-><init>(Lcom/android/phone/callsettings/IntCallServicePreference;)V
 
-    invoke-virtual {v2, v3}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v2, v3}, Landroid/widget/LinearLayout;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     iget-object v2, p0, Lcom/android/phone/callsettings/IntCallServicePreference;->mAutoLayout:Landroid/widget/LinearLayout;
 
     iget-object v3, p0, Lcom/android/phone/callsettings/IntCallServicePreference;->mOnKeyListener:Landroid/view/View$OnKeyListener;
 
-    invoke-virtual {v2, v3}, Landroid/view/View;->setOnKeyListener(Landroid/view/View$OnKeyListener;)V
+    invoke-virtual {v2, v3}, Landroid/widget/LinearLayout;->setOnKeyListener(Landroid/view/View$OnKeyListener;)V
 
     iget-object v2, p0, Lcom/android/phone/callsettings/IntCallServicePreference;->mManualSvcNumber:Landroid/widget/EditText;
 
@@ -493,7 +493,7 @@
 
     iget-object v3, p0, Lcom/android/phone/callsettings/IntCallServicePreference;->mOnKeyListener:Landroid/view/View$OnKeyListener;
 
-    invoke-virtual {v2, v3}, Landroid/view/View;->setOnKeyListener(Landroid/view/View$OnKeyListener;)V
+    invoke-virtual {v2, v3}, Landroid/widget/EditText;->setOnKeyListener(Landroid/view/View$OnKeyListener;)V
 
     :cond_3
     return-void
@@ -523,7 +523,7 @@
 
     iget-object v0, p0, Lcom/android/phone/callsettings/IntCallServicePreference;->mManualSvcNumber:Landroid/widget/EditText;
 
-    invoke-virtual {v0}, Landroid/view/View;->requestFocus()Z
+    invoke-virtual {v0}, Landroid/widget/EditText;->requestFocus()Z
 
     iget-object v0, p0, Lcom/android/phone/callsettings/IntCallServicePreference;->handler:Landroid/os/Handler;
 
@@ -550,7 +550,7 @@
 
     iget-object v0, p0, Lcom/android/phone/callsettings/IntCallServicePreference;->mManualSvcNumber:Landroid/widget/EditText;
 
-    invoke-virtual {v0}, Landroid/view/View;->isFocused()Z
+    invoke-virtual {v0}, Landroid/widget/EditText;->isFocused()Z
 
     move-result v0
 
@@ -594,7 +594,7 @@
 
     const v0, 0x7f040076
 
-    invoke-virtual {p0, v0}, Landroid/preference/DialogPreference;->setDialogLayoutResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/callsettings/IntCallServicePreference;->setDialogLayoutResource(I)V
 
     iget-object v0, p0, Lcom/android/phone/callsettings/IntCallServicePreference;->mContext:Landroid/content/Context;
 

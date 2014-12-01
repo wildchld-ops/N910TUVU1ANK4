@@ -74,7 +74,7 @@
 
     const/16 v3, 0x1f
 
-    invoke-virtual {v2, v3}, Landroid/os/Handler;->sendEmptyMessage(I)Z
+    invoke-virtual {v2, v3}, Lcom/android/phone/CallNotifier;->sendEmptyMessage(I)Z
 
     :cond_0
     return-void

@@ -34,7 +34,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/ComponentName;)V
     .locals 0
-    .param p1    # Landroid/content/ComponentName;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -45,7 +44,6 @@
 
 .method private sortKey(Lcom/android/settings/DreamBackend$DreamInfo;)Ljava/lang/String;
     .locals 3
-    .param p1    # Lcom/android/settings/DreamBackend$DreamInfo;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -86,8 +84,6 @@
 # virtual methods
 .method public compare(Lcom/android/settings/DreamBackend$DreamInfo;Lcom/android/settings/DreamBackend$DreamInfo;)I
     .locals 2
-    .param p1    # Lcom/android/settings/DreamBackend$DreamInfo;
-    .param p2    # Lcom/android/settings/DreamBackend$DreamInfo;
 
     invoke-direct {p0, p1}, Lcom/android/settings/DreamBackend$DreamInfoComparator;->sortKey(Lcom/android/settings/DreamBackend$DreamInfo;)Ljava/lang/String;
 
@@ -106,8 +102,6 @@
 
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p1, Lcom/android/settings/DreamBackend$DreamInfo;
 

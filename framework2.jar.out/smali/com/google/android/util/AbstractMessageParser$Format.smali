@@ -25,8 +25,6 @@
 # direct methods
 .method public constructor <init>(CZ)V
     .locals 2
-    .param p1    # C
-    .param p2    # Z
 
     sget-object v0, Lcom/google/android/util/AbstractMessageParser$Token$Type;->FORMAT:Lcom/google/android/util/AbstractMessageParser$Token$Type;
 
@@ -45,7 +43,6 @@
 
 .method private getFormatEnd(C)Ljava/lang/String;
     .locals 3
-    .param p1    # C
 
     sparse-switch p1, :sswitch_data_0
 
@@ -111,7 +108,6 @@
 
 .method private getFormatStart(C)Ljava/lang/String;
     .locals 3
-    .param p1    # C
 
     sparse-switch p1, :sswitch_data_0
 
@@ -236,7 +232,6 @@
 
 .method public setMatched(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/google/android/util/AbstractMessageParser$Format;->matched:Z
 
@@ -245,7 +240,6 @@
 
 .method public toHtml(Z)Ljava/lang/String;
     .locals 2
-    .param p1    # Z
 
     iget-boolean v0, p0, Lcom/google/android/util/AbstractMessageParser$Format;->matched:Z
 

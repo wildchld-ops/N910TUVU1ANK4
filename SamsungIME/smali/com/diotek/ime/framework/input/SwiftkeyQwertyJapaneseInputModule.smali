@@ -1497,8 +1497,6 @@
 
 .method private processSingleTap(I[I)V
     .locals 11
-    .param p1    # I
-    .param p2    # [I
 
     const/4 v10, 0x0
 
@@ -1673,8 +1671,6 @@
 
 .method private processWordSeparator(I[I)V
     .locals 12
-    .param p1    # I
-    .param p2    # [I
 
     iget-object v7, p0, Lcom/diotek/ime/framework/input/AbstractInputModule;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -2163,7 +2159,6 @@
 # virtual methods
 .method protected addCurrentTextToCandidate(Ljava/util/ArrayList;Ljava/lang/StringBuilder;)V
     .locals 2
-    .param p2    # Ljava/lang/StringBuilder;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2282,8 +2277,6 @@
 
 .method public onCharacterKey(I[I)V
     .locals 7
-    .param p1    # I
-    .param p2    # [I
 
     const/4 v6, 0x2
 
@@ -2423,16 +2416,12 @@
 
 .method public onHwrPanelLongPressed(ILjava/lang/String;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method public pickSuggestionManually(ILjava/lang/CharSequence;)V
     .locals 12
-    .param p1    # I
-    .param p2    # Ljava/lang/CharSequence;
 
     const/4 v11, 0x0
 
@@ -2697,8 +2686,6 @@
 
 .method protected processSymbolicKey(I[I)V
     .locals 4
-    .param p1    # I
-    .param p2    # [I
 
     const/4 v3, 0x0
 

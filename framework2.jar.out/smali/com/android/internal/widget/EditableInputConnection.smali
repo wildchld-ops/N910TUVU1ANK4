@@ -18,7 +18,6 @@
 # direct methods
 .method public constructor <init>(Landroid/widget/TextView;)V
     .locals 1
-    .param p1    # Landroid/widget/TextView;
 
     const/4 v0, 0x1
 
@@ -77,7 +76,6 @@
 
 .method public clearMetaKeyStates(I)Z
     .locals 3
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/internal/widget/EditableInputConnection;->getEditable()Landroid/text/Editable;
 
@@ -120,7 +118,6 @@
 
 .method public commitCompletion(Landroid/view/inputmethod/CompletionInfo;)Z
     .locals 1
-    .param p1    # Landroid/view/inputmethod/CompletionInfo;
 
     iget-object v0, p0, Lcom/android/internal/widget/EditableInputConnection;->mTextView:Landroid/widget/TextView;
 
@@ -141,7 +138,6 @@
 
 .method public commitCorrection(Landroid/view/inputmethod/CorrectionInfo;)Z
     .locals 1
-    .param p1    # Landroid/view/inputmethod/CorrectionInfo;
 
     iget-object v0, p0, Lcom/android/internal/widget/EditableInputConnection;->mTextView:Landroid/widget/TextView;
 
@@ -162,8 +158,6 @@
 
 .method public commitText(Ljava/lang/CharSequence;I)Z
     .locals 6
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
 
     iget-object v3, p0, Lcom/android/internal/widget/EditableInputConnection;->mTextView:Landroid/widget/TextView;
 
@@ -285,8 +279,6 @@
 
 .method public getExtractedText(Landroid/view/inputmethod/ExtractedTextRequest;I)Landroid/view/inputmethod/ExtractedText;
     .locals 2
-    .param p1    # Landroid/view/inputmethod/ExtractedTextRequest;
-    .param p2    # I
 
     iget-object v1, p0, Lcom/android/internal/widget/EditableInputConnection;->mTextView:Landroid/widget/TextView;
 
@@ -324,7 +316,6 @@
 
 .method public performContextMenuAction(I)Z
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/internal/widget/EditableInputConnection;->mTextView:Landroid/widget/TextView;
 
@@ -345,7 +336,6 @@
 
 .method public performEditorAction(I)Z
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/internal/widget/EditableInputConnection;->mTextView:Landroid/widget/TextView;
 
@@ -358,8 +348,6 @@
 
 .method public performPrivateCommand(Ljava/lang/String;Landroid/os/Bundle;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Bundle;
 
     iget-object v0, p0, Lcom/android/internal/widget/EditableInputConnection;->mTextView:Landroid/widget/TextView;
 

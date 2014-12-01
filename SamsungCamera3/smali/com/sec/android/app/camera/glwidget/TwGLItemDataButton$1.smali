@@ -36,7 +36,6 @@
 # virtual methods
 .method public onClick(Lcom/sec/android/glview/TwGLView;)Z
     .locals 2
-    .param p1    # Lcom/sec/android/glview/TwGLView;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLItemDataButton$1;->this$0:Lcom/sec/android/app/camera/glwidget/TwGLItemDataButton;
 

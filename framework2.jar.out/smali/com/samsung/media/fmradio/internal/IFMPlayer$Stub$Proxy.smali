@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -2772,7 +2771,6 @@
 
 .method public removeListener(Lcom/samsung/media/fmradio/internal/IFMEventListener;)V
     .locals 5
-    .param p1    # Lcom/samsung/media/fmradio/internal/IFMEventListener;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3150,7 +3148,6 @@
 
 .method public setAFRMSSISamples(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3202,7 +3199,6 @@
 
 .method public setAFRMSSIThreshold(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3254,7 +3250,6 @@
 
 .method public setAFValid_th(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3306,7 +3301,6 @@
 
 .method public setAF_th(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3358,7 +3352,6 @@
 
 .method public setBand(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3410,7 +3403,6 @@
 
 .method public setCFOTh12(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3462,7 +3454,6 @@
 
 .method public setChannelSpacing(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3514,7 +3505,6 @@
 
 .method public setCnt_th(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3566,7 +3556,6 @@
 
 .method public setCnt_th_2(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3618,7 +3607,6 @@
 
 .method public setDEConstant(J)V
     .locals 5
-    .param p1    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3670,7 +3658,6 @@
 
 .method public setFMIntenna(Z)V
     .locals 5
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3729,7 +3716,6 @@
 
 .method public setFeatureWaitPidDuringScanning(Z)V
     .locals 5
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3788,7 +3774,6 @@
 
 .method public setGoodChannelRMSSIThreshold(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3840,7 +3825,6 @@
 
 .method public setInternetStreamingMode(Z)V
     .locals 5
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3899,7 +3883,6 @@
 
 .method public setListener(Lcom/samsung/media/fmradio/internal/IFMEventListener;)V
     .locals 5
-    .param p1    # Lcom/samsung/media/fmradio/internal/IFMEventListener;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4012,7 +3995,6 @@
 
 .method public setOffChannelThreshold(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4064,7 +4046,6 @@
 
 .method public setOnChannelThreshold(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4116,7 +4097,6 @@
 
 .method public setRMSSIFirstStage(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4168,7 +4148,6 @@
 
 .method public setRSSI_th(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4220,7 +4199,6 @@
 
 .method public setRSSI_th_2(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4272,7 +4250,6 @@
 
 .method public setRecordMode(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4324,7 +4301,6 @@
 
 .method public setSINRFirstStage(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4376,7 +4352,6 @@
 
 .method public setSINRSamples(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4428,7 +4403,6 @@
 
 .method public setSINRThreshold(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4480,7 +4454,6 @@
 
 .method public setSNR_th(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4532,7 +4505,6 @@
 
 .method public setSNR_th_2(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4584,7 +4556,6 @@
 
 .method public setSearchAlgoType(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4636,7 +4607,6 @@
 
 .method public setSeekRSSI(J)V
     .locals 5
-    .param p1    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4688,7 +4658,6 @@
 
 .method public setSeekSNR(J)V
     .locals 5
-    .param p1    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4740,9 +4709,6 @@
 
 .method public setSoftMuteControl(III)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4798,7 +4764,6 @@
 
 .method public setSoftmute(Z)V
     .locals 5
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4857,7 +4822,6 @@
 
 .method public setSpeakerOn(Z)V
     .locals 5
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4965,7 +4929,6 @@
 
 .method public setVolume(J)V
     .locals 5
-    .param p1    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5017,7 +4980,6 @@
 
 .method public tune(J)V
     .locals 5
-    .param p1    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

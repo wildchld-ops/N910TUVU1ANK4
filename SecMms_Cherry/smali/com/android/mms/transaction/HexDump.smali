@@ -102,7 +102,6 @@
 
 .method private static dump(B)Ljava/lang/StringBuffer;
     .locals 5
-    .param p0    # B
 
     sget-object v1, Lcom/android/mms/transaction/HexDump;->_cbuffer:Ljava/lang/StringBuffer;
 
@@ -147,7 +146,6 @@
 
 .method private static dump(J)Ljava/lang/StringBuffer;
     .locals 5
-    .param p0    # J
 
     sget-object v1, Lcom/android/mms/transaction/HexDump;->_lbuffer:Ljava/lang/StringBuffer;
 
@@ -192,12 +190,6 @@
 
 .method public static dump(Ljava/lang/String;[BJIILjava/lang/Object;)V
     .locals 10
-    .param p0    # Ljava/lang/String;
-    .param p1    # [B
-    .param p2    # J
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,

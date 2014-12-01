@@ -31,7 +31,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/settings/PenHelpFragment;Landroid/view/LayoutInflater;)V
     .locals 2
-    .param p2    # Landroid/view/LayoutInflater;
 
     iput-object p1, p0, Lcom/android/settings/PenHelpFragment$PenHelpItem;->this$0:Lcom/android/settings/PenHelpFragment;
 
@@ -110,7 +109,6 @@
 
 .method public setContentImage(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/settings/PenHelpFragment$PenHelpItem;->contentImageView:Landroid/widget/ImageView;
 
@@ -121,7 +119,6 @@
 
 .method public setContentText(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/settings/PenHelpFragment$PenHelpItem;->contentTextView:Landroid/widget/TextView;
 
@@ -132,7 +129,6 @@
 
 .method public setTitleText(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/settings/PenHelpFragment$PenHelpItem;->titleTextView:Landroid/widget/TextView;
 
@@ -143,7 +139,6 @@
 
 .method public setTitleVisibility(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/settings/PenHelpFragment$PenHelpItem;->titleTextView:Landroid/widget/TextView;
 
@@ -154,7 +149,6 @@
 
 .method public usePlayButton(Z)V
     .locals 3
-    .param p1    # Z
 
     if-eqz p1, :cond_1
 

@@ -32,8 +32,6 @@
 
 .method constructor <init>(Landroid/content/Context;Landroid/os/Handler;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/Handler;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -44,7 +42,6 @@
 
 .method public static from(Landroid/content/Context;)Landroid/app/NotificationManager;
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     const-string v0, "notification"
 
@@ -91,7 +88,6 @@
 # virtual methods
 .method public cancel(I)V
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -102,8 +98,6 @@
 
 .method public cancel(Ljava/lang/String;I)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-static {}, Landroid/app/NotificationManager;->getService()Landroid/app/INotificationManager;
 
@@ -230,9 +224,6 @@
 
 .method public cancelAsUser(Ljava/lang/String;ILandroid/os/UserHandle;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Landroid/os/UserHandle;
 
     invoke-static {}, Landroid/app/NotificationManager;->getService()Landroid/app/INotificationManager;
 
@@ -301,8 +292,6 @@
 
 .method public getNotificationInfo(Ljava/lang/String;I)Landroid/app/NotificationInfo;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     :try_start_0
     invoke-static {}, Landroid/app/NotificationManager;->getService()Landroid/app/INotificationManager;
@@ -328,8 +317,6 @@
 
 .method public notify(ILandroid/app/Notification;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/app/Notification;
 
     const/4 v0, 0x0
 
@@ -340,9 +327,6 @@
 
 .method public notify(Ljava/lang/String;ILandroid/app/Notification;)V
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Landroid/app/Notification;
 
     invoke-static {}, Landroid/sec/enterprise/EnterpriseDeviceManager;->getInstance()Landroid/sec/enterprise/EnterpriseDeviceManager;
 
@@ -532,10 +516,6 @@
 
 .method public notifyAsUser(Ljava/lang/String;ILandroid/app/Notification;Landroid/os/UserHandle;)V
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Landroid/app/Notification;
-    .param p4    # Landroid/os/UserHandle;
 
     const/4 v2, 0x1
 

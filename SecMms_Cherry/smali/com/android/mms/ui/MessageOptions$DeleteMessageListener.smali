@@ -30,9 +30,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/mms/ui/MessageOptions;Landroid/net/Uri;ZZ)V
     .locals 0
-    .param p2    # Landroid/net/Uri;
-    .param p3    # Z
-    .param p4    # Z
 
     iput-object p1, p0, Lcom/android/mms/ui/MessageOptions$DeleteMessageListener;->this$0:Lcom/android/mms/ui/MessageOptions;
 
@@ -51,8 +48,6 @@
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 8
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     const/4 v2, 0x0
 

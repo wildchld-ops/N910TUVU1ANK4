@@ -52,7 +52,6 @@
 # virtual methods
 .method protected varargs doInBackground([Ljava/lang/Void;)Ljava/lang/Boolean;
     .locals 3
-    .param p1    # [Ljava/lang/Void;
 
     const/4 v2, 0x1
 
@@ -92,7 +91,6 @@
 
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [Ljava/lang/Void;
 
@@ -105,14 +103,12 @@
 
 .method protected onPostExecute(Ljava/lang/Boolean;)V
     .locals 0
-    .param p1    # Ljava/lang/Boolean;
 
     return-void
 .end method
 
 .method protected bridge synthetic onPostExecute(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Ljava/lang/Boolean;
 

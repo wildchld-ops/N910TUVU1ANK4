@@ -21,7 +21,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/pm/PackageManagerService;Landroid/os/Looper;)V
     .locals 0
-    .param p2    # Landroid/os/Looper;
 
     iput-object p1, p0, Lcom/android/server/pm/PackageManagerService$PreInstallHandler;->this$0:Lcom/android/server/pm/PackageManagerService;
 
@@ -34,7 +33,6 @@
 # virtual methods
 .method doHandleMessage(Landroid/os/Message;)V
     .locals 6
-    .param p1    # Landroid/os/Message;
 
     iget v2, p1, Landroid/os/Message;->what:I
 
@@ -173,7 +171,6 @@
 
 .method public handleMessage(Landroid/os/Message;)V
     .locals 2
-    .param p1    # Landroid/os/Message;
 
     const/16 v1, 0xa
 

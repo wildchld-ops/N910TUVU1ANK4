@@ -59,7 +59,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
 
@@ -92,8 +91,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -104,9 +101,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v3, 0x0
 
@@ -183,9 +177,6 @@
 
 .method private static abc(Ljava/lang/CharSequence;Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
     .locals 0
-    .param p0    # Ljava/lang/CharSequence;
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Ljava/lang/CharSequence;
 
     if-nez p0, :cond_1
 
@@ -207,7 +198,6 @@
 
 .method static synthetic access$000(Landroid/widget/TextClock;)V
     .locals 0
-    .param p0    # Landroid/widget/TextClock;
 
     invoke-direct {p0}, Landroid/widget/TextClock;->chooseFormat()V
 
@@ -216,7 +206,6 @@
 
 .method static synthetic access$100(Landroid/widget/TextClock;)V
     .locals 0
-    .param p0    # Landroid/widget/TextClock;
 
     invoke-direct {p0}, Landroid/widget/TextClock;->onTimeChanged()V
 
@@ -225,7 +214,6 @@
 
 .method static synthetic access$200(Landroid/widget/TextClock;)Ljava/lang/String;
     .locals 1
-    .param p0    # Landroid/widget/TextClock;
 
     iget-object v0, p0, Landroid/widget/TextClock;->mTimeZone:Ljava/lang/String;
 
@@ -234,8 +222,6 @@
 
 .method static synthetic access$300(Landroid/widget/TextClock;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Landroid/widget/TextClock;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Landroid/widget/TextClock;->createTime(Ljava/lang/String;)V
 
@@ -244,7 +230,6 @@
 
 .method static synthetic access$400(Landroid/widget/TextClock;)Ljava/lang/Runnable;
     .locals 1
-    .param p0    # Landroid/widget/TextClock;
 
     iget-object v0, p0, Landroid/widget/TextClock;->mTicker:Ljava/lang/Runnable;
 
@@ -263,7 +248,6 @@
 
 .method private chooseFormat(Z)V
     .locals 6
-    .param p1    # Z
 
     invoke-virtual {p0}, Landroid/widget/TextClock;->is24HourModeEnabled()Z
 
@@ -361,7 +345,6 @@
 
 .method private createTime(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -689,7 +672,6 @@
 
 .method public setFormat12Hour(Ljava/lang/CharSequence;)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
     .annotation runtime Landroid/view/RemotableViewMethod;
     .end annotation
 
@@ -704,7 +686,6 @@
 
 .method public setFormat24Hour(Ljava/lang/CharSequence;)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
     .annotation runtime Landroid/view/RemotableViewMethod;
     .end annotation
 
@@ -719,7 +700,6 @@
 
 .method public setTimeZone(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
     .annotation runtime Landroid/view/RemotableViewMethod;
     .end annotation
 

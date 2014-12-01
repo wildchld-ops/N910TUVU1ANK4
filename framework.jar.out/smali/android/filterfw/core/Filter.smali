@@ -91,7 +91,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, -0x1
 
@@ -138,7 +137,6 @@
 
 .method private final addAndSetFinalPorts(Landroid/filterfw/core/KeyValueMap;)V
     .locals 12
-    .param p1    # Landroid/filterfw/core/KeyValueMap;
 
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -368,8 +366,6 @@
 
 .method private final addFieldGenerator(Landroid/filterfw/core/GenerateFieldPort;Ljava/lang/reflect/Field;)V
     .locals 3
-    .param p1    # Landroid/filterfw/core/GenerateFieldPort;
-    .param p2    # Ljava/lang/reflect/Field;
 
     invoke-interface {p1}, Landroid/filterfw/core/GenerateFieldPort;->name()Ljava/lang/String;
 
@@ -406,8 +402,6 @@
 
 .method private final addProgramGenerator(Landroid/filterfw/core/GenerateProgramPort;Ljava/lang/reflect/Field;)V
     .locals 6
-    .param p1    # Landroid/filterfw/core/GenerateProgramPort;
-    .param p2    # Ljava/lang/reflect/Field;
 
     invoke-interface {p1}, Landroid/filterfw/core/GenerateProgramPort;->name()Ljava/lang/String;
 
@@ -695,7 +689,6 @@
 
 .method private final initFinalPorts(Landroid/filterfw/core/KeyValueMap;)V
     .locals 1
-    .param p1    # Landroid/filterfw/core/KeyValueMap;
 
     new-instance v0, Ljava/util/HashMap;
 
@@ -716,7 +709,6 @@
 
 .method private final initRemainingPorts(Landroid/filterfw/core/KeyValueMap;)V
     .locals 0
-    .param p1    # Landroid/filterfw/core/KeyValueMap;
 
     invoke-direct {p0}, Landroid/filterfw/core/Filter;->addAnnotatedPorts()V
 
@@ -805,7 +797,6 @@
 
 .method public static final isAvailable(Ljava/lang/String;)Z
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -925,7 +916,6 @@
 
 .method private final releasePulledFrames(Landroid/filterfw/core/FilterContext;)V
     .locals 3
-    .param p1    # Landroid/filterfw/core/FilterContext;
 
     iget-object v2, p0, Landroid/filterfw/core/Filter;->mFramesToRelease:Ljava/util/HashSet;
 
@@ -964,8 +954,6 @@
 
 .method private final setImmediateInputValue(Ljava/lang/String;Ljava/lang/Object;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Object;
 
     iget-boolean v1, p0, Landroid/filterfw/core/Filter;->mLogVerbose:Z
 
@@ -1029,7 +1017,6 @@
 
 .method private final setInitialInputValues(Landroid/filterfw/core/KeyValueMap;)V
     .locals 4
-    .param p1    # Landroid/filterfw/core/KeyValueMap;
 
     invoke-virtual {p1}, Landroid/filterfw/core/KeyValueMap;->entrySet()Ljava/util/Set;
 
@@ -1072,7 +1059,6 @@
 
 .method private final transferInputFrames(Landroid/filterfw/core/FilterContext;)V
     .locals 3
-    .param p1    # Landroid/filterfw/core/FilterContext;
 
     iget-object v2, p0, Landroid/filterfw/core/Filter;->mInputPorts:Ljava/util/HashMap;
 
@@ -1107,8 +1093,6 @@
 
 .method private final wrapInputValue(Ljava/lang/String;Ljava/lang/Object;)Landroid/filterfw/core/Frame;
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Object;
 
     const/4 v4, 0x1
 
@@ -1188,10 +1172,6 @@
 # virtual methods
 .method protected addFieldPort(Ljava/lang/String;Ljava/lang/reflect/Field;ZZ)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/reflect/Field;
-    .param p3    # Z
-    .param p4    # Z
 
     const/4 v5, 0x1
 
@@ -1267,7 +1247,6 @@
 
 .method protected addInputPort(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -1278,8 +1257,6 @@
 
 .method protected addMaskedInputPort(Ljava/lang/String;Landroid/filterfw/core/FrameFormat;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/filterfw/core/FrameFormat;
 
     new-instance v0, Landroid/filterfw/core/StreamPort;
 
@@ -1333,8 +1310,6 @@
 
 .method protected addOutputBasedOnInput(Ljava/lang/String;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     new-instance v0, Landroid/filterfw/core/OutputPort;
 
@@ -1392,8 +1367,6 @@
 
 .method protected addOutputPort(Ljava/lang/String;Landroid/filterfw/core/FrameFormat;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/filterfw/core/FrameFormat;
 
     new-instance v0, Landroid/filterfw/core/OutputPort;
 
@@ -1447,11 +1420,6 @@
 
 .method protected addProgramPort(Ljava/lang/String;Ljava/lang/String;Ljava/lang/reflect/Field;Ljava/lang/Class;Z)V
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/reflect/Field;
-    .param p4    # Ljava/lang/Class;
-    .param p5    # Z
 
     const/4 v7, 0x1
 
@@ -1679,14 +1647,12 @@
 
 .method public close(Landroid/filterfw/core/FilterContext;)V
     .locals 0
-    .param p1    # Landroid/filterfw/core/FilterContext;
 
     return-void
 .end method
 
 .method protected closeOutputPort(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Landroid/filterfw/core/Filter;->getOutputPort(Ljava/lang/String;)Landroid/filterfw/core/OutputPort;
 
@@ -1699,7 +1665,6 @@
 
 .method protected delayNextProcess(I)V
     .locals 1
-    .param p1    # I
 
     iput p1, p0, Landroid/filterfw/core/Filter;->mSleepDelay:I
 
@@ -1712,8 +1677,6 @@
 
 .method public fieldPortValueUpdated(Ljava/lang/String;Landroid/filterfw/core/FilterContext;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/filterfw/core/FilterContext;
 
     return-void
 .end method
@@ -1734,7 +1697,6 @@
 
 .method public final getInputFormat(Ljava/lang/String;)Landroid/filterfw/core/FrameFormat;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Landroid/filterfw/core/Filter;->getInputPort(Ljava/lang/String;)Landroid/filterfw/core/InputPort;
 
@@ -1749,7 +1711,6 @@
 
 .method public final getInputPort(Ljava/lang/String;)Landroid/filterfw/core/InputPort;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Landroid/filterfw/core/Filter;->mInputPorts:Ljava/util/HashMap;
 
@@ -2011,8 +1972,6 @@
 
 .method public getOutputFormat(Ljava/lang/String;Landroid/filterfw/core/FrameFormat;)Landroid/filterfw/core/FrameFormat;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/filterfw/core/FrameFormat;
 
     const/4 v0, 0x0
 
@@ -2021,7 +1980,6 @@
 
 .method public final getOutputPort(Ljava/lang/String;)Landroid/filterfw/core/OutputPort;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Landroid/filterfw/core/Filter;->mInputPorts:Ljava/util/HashMap;
 
@@ -2192,8 +2150,6 @@
 
 .method protected initProgramInputs(Landroid/filterfw/core/Program;Landroid/filterfw/core/FilterContext;)V
     .locals 3
-    .param p1    # Landroid/filterfw/core/Program;
-    .param p2    # Landroid/filterfw/core/FilterContext;
 
     if-eqz p1, :cond_1
 
@@ -2237,7 +2193,6 @@
 
 .method public final varargs initWithAssignmentList([Ljava/lang/Object;)V
     .locals 1
-    .param p1    # [Ljava/lang/Object;
 
     new-instance v0, Landroid/filterfw/core/KeyValueMap;
 
@@ -2252,7 +2207,6 @@
 
 .method public final initWithAssignmentString(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     new-instance v2, Landroid/filterfw/io/TextGraphReader;
@@ -2285,7 +2239,6 @@
 
 .method public final initWithValueMap(Landroid/filterfw/core/KeyValueMap;)V
     .locals 1
-    .param p1    # Landroid/filterfw/core/KeyValueMap;
 
     invoke-direct {p0, p1}, Landroid/filterfw/core/Filter;->initFinalPorts(Landroid/filterfw/core/KeyValueMap;)V
 
@@ -2308,8 +2261,6 @@
 
 .method final notifyFieldPortValueUpdated(Ljava/lang/String;Landroid/filterfw/core/FilterContext;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/filterfw/core/FilterContext;
 
     iget v0, p0, Landroid/filterfw/core/Filter;->mStatus:I
 
@@ -2332,7 +2283,6 @@
 
 .method public open(Landroid/filterfw/core/FilterContext;)V
     .locals 0
-    .param p1    # Landroid/filterfw/core/FilterContext;
 
     return-void
 .end method
@@ -2428,7 +2378,6 @@
 
 .method final declared-synchronized performClose(Landroid/filterfw/core/FilterContext;)V
     .locals 3
-    .param p1    # Landroid/filterfw/core/FilterContext;
 
     monitor-enter p0
 
@@ -2493,7 +2442,6 @@
 
 .method final declared-synchronized performOpen(Landroid/filterfw/core/FilterContext;)V
     .locals 5
-    .param p1    # Landroid/filterfw/core/FilterContext;
 
     const/4 v4, 0x3
 
@@ -2661,7 +2609,6 @@
 
 .method final declared-synchronized performProcess(Landroid/filterfw/core/FilterContext;)V
     .locals 3
-    .param p1    # Landroid/filterfw/core/FilterContext;
 
     monitor-enter p0
 
@@ -2777,7 +2724,6 @@
 
 .method final declared-synchronized performTearDown(Landroid/filterfw/core/FilterContext;)V
     .locals 2
-    .param p1    # Landroid/filterfw/core/FilterContext;
 
     const/4 v1, 0x7
 
@@ -2813,7 +2759,6 @@
 
 .method protected prepare(Landroid/filterfw/core/FilterContext;)V
     .locals 0
-    .param p1    # Landroid/filterfw/core/FilterContext;
 
     return-void
 .end method
@@ -2823,7 +2768,6 @@
 
 .method protected final pullInput(Ljava/lang/String;)Landroid/filterfw/core/Frame;
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Landroid/filterfw/core/Filter;->getInputPort(Ljava/lang/String;)Landroid/filterfw/core/InputPort;
 
@@ -2895,8 +2839,6 @@
 
 .method final declared-synchronized pushInputFrame(Ljava/lang/String;Landroid/filterfw/core/Frame;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/filterfw/core/Frame;
 
     monitor-enter p0
 
@@ -2932,8 +2874,6 @@
 
 .method final declared-synchronized pushInputValue(Ljava/lang/String;Ljava/lang/Object;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Object;
 
     monitor-enter p0
 
@@ -2960,8 +2900,6 @@
 
 .method protected final pushOutput(Ljava/lang/String;Landroid/filterfw/core/Frame;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/filterfw/core/Frame;
 
     invoke-virtual {p2}, Landroid/filterfw/core/Frame;->getTimestamp()J
 
@@ -3028,8 +2966,6 @@
 
 .method public setInputFrame(Ljava/lang/String;Landroid/filterfw/core/Frame;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/filterfw/core/Frame;
 
     invoke-virtual {p0, p1}, Landroid/filterfw/core/Filter;->getInputPort(Ljava/lang/String;)Landroid/filterfw/core/InputPort;
 
@@ -3051,8 +2987,6 @@
 
 .method public final setInputValue(Ljava/lang/String;Ljava/lang/Object;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Object;
 
     invoke-direct {p0, p1, p2}, Landroid/filterfw/core/Filter;->wrapInputValue(Ljava/lang/String;Ljava/lang/Object;)Landroid/filterfw/core/Frame;
 
@@ -3065,8 +2999,6 @@
 
 .method protected setWaitsOnInputPort(Ljava/lang/String;Z)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     invoke-virtual {p0, p1}, Landroid/filterfw/core/Filter;->getInputPort(Ljava/lang/String;)Landroid/filterfw/core/InputPort;
 
@@ -3079,8 +3011,6 @@
 
 .method protected setWaitsOnOutputPort(Ljava/lang/String;Z)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     invoke-virtual {p0, p1}, Landroid/filterfw/core/Filter;->getOutputPort(Ljava/lang/String;)Landroid/filterfw/core/OutputPort;
 
@@ -3096,7 +3026,6 @@
 
 .method public tearDown(Landroid/filterfw/core/FilterContext;)V
     .locals 0
-    .param p1    # Landroid/filterfw/core/FilterContext;
 
     return-void
 .end method
@@ -3151,8 +3080,6 @@
 
 .method protected transferInputPortFrame(Ljava/lang/String;Landroid/filterfw/core/FilterContext;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/filterfw/core/FilterContext;
 
     invoke-virtual {p0, p1}, Landroid/filterfw/core/Filter;->getInputPort(Ljava/lang/String;)Landroid/filterfw/core/InputPort;
 
@@ -3165,7 +3092,6 @@
 
 .method final declared-synchronized unsetStatus(I)V
     .locals 2
-    .param p1    # I
 
     monitor-enter p0
 

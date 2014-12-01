@@ -58,9 +58,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/input/InputApplicationHandle;Ljava/lang/Object;I)V
     .locals 1
-    .param p1    # Lcom/android/server/input/InputApplicationHandle;
-    .param p2    # Ljava/lang/Object;
-    .param p3    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

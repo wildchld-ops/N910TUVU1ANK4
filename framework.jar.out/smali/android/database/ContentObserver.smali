@@ -23,7 +23,6 @@
 # direct methods
 .method public constructor <init>(Landroid/os/Handler;)V
     .locals 1
-    .param p1    # Landroid/os/Handler;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -50,7 +49,6 @@
 
 .method public final dispatchChange(Z)V
     .locals 1
-    .param p1    # Z
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -63,8 +61,6 @@
 
 .method public final dispatchChange(ZLandroid/net/Uri;)V
     .locals 2
-    .param p1    # Z
-    .param p2    # Landroid/net/Uri;
 
     iget-object v0, p0, Landroid/database/ContentObserver;->mHandler:Landroid/os/Handler;
 
@@ -124,15 +120,12 @@
 
 .method public onChange(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method public onChange(ZLandroid/net/Uri;)V
     .locals 0
-    .param p1    # Z
-    .param p2    # Landroid/net/Uri;
 
     invoke-virtual {p0, p1}, Landroid/database/ContentObserver;->onChange(Z)V
 

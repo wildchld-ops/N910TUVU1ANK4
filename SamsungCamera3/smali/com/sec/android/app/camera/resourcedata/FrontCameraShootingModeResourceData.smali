@@ -14,7 +14,6 @@
 # direct methods
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;)V
     .locals 2
-    .param p1    # Lcom/sec/android/app/camera/Camera;
 
     const/4 v0, 0x1
 
@@ -52,8 +51,6 @@
 
 .method private addExternalMode(ILcom/sec/android/app/camera/PlugInShootingModesStorage$PlugInShootingMode;)V
     .locals 4
-    .param p1    # I
-    .param p2    # Lcom/sec/android/app/camera/PlugInShootingModesStorage$PlugInShootingMode;
 
     const/4 v3, 0x0
 
@@ -119,8 +116,6 @@
 
 .method public static appendItemString(Ljava/lang/StringBuilder;Lcom/sec/android/app/camera/resourcedata/ModeMenuResourceBundle;)V
     .locals 2
-    .param p0    # Ljava/lang/StringBuilder;
-    .param p1    # Lcom/sec/android/app/camera/resourcedata/ModeMenuResourceBundle;
 
     invoke-virtual {p1}, Lcom/sec/android/app/camera/resourcedata/MenuResourceBundle;->getCommandId()I
 
@@ -212,7 +207,6 @@
 
 .method public declared-synchronized resetOrder(Ljava/lang/String;)V
     .locals 17
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 

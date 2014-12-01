@@ -25,8 +25,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/BackupManagerService$PerformRestoreTask;Landroid/content/pm/PackageInfo;I)V
     .locals 0
-    .param p2    # Landroid/content/pm/PackageInfo;
-    .param p3    # I
 
     iput-object p1, p0, Lcom/android/server/BackupManagerService$PerformRestoreTask$RestoreRequest;->this$1:Lcom/android/server/BackupManagerService$PerformRestoreTask;
 

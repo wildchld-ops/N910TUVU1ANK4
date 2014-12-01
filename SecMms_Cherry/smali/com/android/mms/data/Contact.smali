@@ -180,7 +180,6 @@
 
 .method private constructor <init>(Ljava/lang/Long;)V
     .locals 3
-    .param p1    # Ljava/lang/Long;
 
     const/4 v2, 0x0
 
@@ -249,8 +248,6 @@
 
 .method synthetic constructor <init>(Ljava/lang/Long;Lcom/android/mms/data/Contact$1;)V
     .locals 0
-    .param p1    # Ljava/lang/Long;
-    .param p2    # Lcom/android/mms/data/Contact$1;
 
     invoke-direct {p0, p1}, Lcom/android/mms/data/Contact;-><init>(Ljava/lang/Long;)V
 
@@ -259,8 +256,6 @@
 
 .method private constructor <init>(Ljava/lang/Long;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/Long;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/mms/data/Contact;-><init>(Ljava/lang/Long;)V
 
@@ -271,9 +266,6 @@
 
 .method synthetic constructor <init>(Ljava/lang/Long;Ljava/lang/String;Lcom/android/mms/data/Contact$1;)V
     .locals 0
-    .param p1    # Ljava/lang/Long;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/android/mms/data/Contact$1;
 
     invoke-direct {p0, p1, p2}, Lcom/android/mms/data/Contact;-><init>(Ljava/lang/Long;Ljava/lang/String;)V
 
@@ -282,7 +274,6 @@
 
 .method private constructor <init>(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -337,8 +328,6 @@
 
 .method synthetic constructor <init>(Ljava/lang/String;Lcom/android/mms/data/Contact$1;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/mms/data/Contact$1;
 
     invoke-direct {p0, p1}, Lcom/android/mms/data/Contact;-><init>(Ljava/lang/String;)V
 
@@ -347,8 +336,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -411,7 +398,6 @@
 
 .method public static IsPresentInContact(Ljava/lang/String;)Z
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     const/4 v1, 0x1
 
@@ -432,7 +418,6 @@
 
 .method static synthetic access$1000(Lcom/android/mms/data/Contact;)I
     .locals 1
-    .param p0    # Lcom/android/mms/data/Contact;
 
     iget v0, p0, Lcom/android/mms/data/Contact;->mPresenceResId:I
 
@@ -441,8 +426,6 @@
 
 .method static synthetic access$1002(Lcom/android/mms/data/Contact;I)I
     .locals 0
-    .param p0    # Lcom/android/mms/data/Contact;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/mms/data/Contact;->mPresenceResId:I
 
@@ -451,7 +434,6 @@
 
 .method static synthetic access$1100(Lcom/android/mms/data/Contact;)[B
     .locals 1
-    .param p0    # Lcom/android/mms/data/Contact;
 
     iget-object v0, p0, Lcom/android/mms/data/Contact;->mAvatarData:[B
 
@@ -460,8 +442,6 @@
 
 .method static synthetic access$1102(Lcom/android/mms/data/Contact;[B)[B
     .locals 0
-    .param p0    # Lcom/android/mms/data/Contact;
-    .param p1    # [B
 
     iput-object p1, p0, Lcom/android/mms/data/Contact;->mAvatarData:[B
 
@@ -470,7 +450,6 @@
 
 .method static synthetic access$1200(Lcom/android/mms/data/Contact;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/data/Contact;
 
     iget-boolean v0, p0, Lcom/android/mms/data/Contact;->mSendToVoicemail:Z
 
@@ -479,8 +458,6 @@
 
 .method static synthetic access$1202(Lcom/android/mms/data/Contact;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/data/Contact;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/data/Contact;->mSendToVoicemail:Z
 
@@ -489,7 +466,6 @@
 
 .method static synthetic access$1300(Lcom/android/mms/data/Contact;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/mms/data/Contact;
 
     iget-object v0, p0, Lcom/android/mms/data/Contact;->mRingtonePath:Ljava/lang/String;
 
@@ -498,8 +474,6 @@
 
 .method static synthetic access$1302(Lcom/android/mms/data/Contact;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/android/mms/data/Contact;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/mms/data/Contact;->mRingtonePath:Ljava/lang/String;
 
@@ -508,7 +482,6 @@
 
 .method static synthetic access$1400(Lcom/android/mms/data/Contact;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/mms/data/Contact;
 
     iget-object v0, p0, Lcom/android/mms/data/Contact;->mThumbnailUri:Ljava/lang/String;
 
@@ -517,8 +490,6 @@
 
 .method static synthetic access$1402(Lcom/android/mms/data/Contact;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/android/mms/data/Contact;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/mms/data/Contact;->mThumbnailUri:Ljava/lang/String;
 
@@ -527,7 +498,6 @@
 
 .method static synthetic access$1500(Lcom/android/mms/data/Contact;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/mms/data/Contact;
 
     iget-object v0, p0, Lcom/android/mms/data/Contact;->mNumberInContactDB:Ljava/lang/String;
 
@@ -536,8 +506,6 @@
 
 .method static synthetic access$1502(Lcom/android/mms/data/Contact;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/android/mms/data/Contact;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/mms/data/Contact;->mNumberInContactDB:Ljava/lang/String;
 
@@ -546,7 +514,6 @@
 
 .method static synthetic access$1600(Lcom/android/mms/data/Contact;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/mms/data/Contact;
 
     iget-object v0, p0, Lcom/android/mms/data/Contact;->mPresenceText:Ljava/lang/String;
 
@@ -555,8 +522,6 @@
 
 .method static synthetic access$1602(Lcom/android/mms/data/Contact;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/android/mms/data/Contact;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/mms/data/Contact;->mPresenceText:Ljava/lang/String;
 
@@ -565,7 +530,6 @@
 
 .method static synthetic access$1700(Lcom/android/mms/data/Contact;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/data/Contact;
 
     iget-boolean v0, p0, Lcom/android/mms/data/Contact;->mChatUser:Z
 
@@ -574,8 +538,6 @@
 
 .method static synthetic access$1702(Lcom/android/mms/data/Contact;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/data/Contact;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/data/Contact;->mChatUser:Z
 
@@ -584,7 +546,6 @@
 
 .method static synthetic access$1800(Lcom/android/mms/data/Contact;)V
     .locals 0
-    .param p0    # Lcom/android/mms/data/Contact;
 
     invoke-direct {p0}, Lcom/android/mms/data/Contact;->notSynchronizedUpdateNameAndNumber()V
 
@@ -609,9 +570,6 @@
 
 .method static synthetic access$2400(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-static {p0, p1, p2}, Lcom/android/mms/data/Contact;->compareWithE164(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
 
@@ -622,8 +580,6 @@
 
 .method static synthetic access$2702(Lcom/android/mms/data/Contact;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/android/mms/data/Contact;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/mms/data/Contact;->mNameAndNumber:Ljava/lang/String;
 
@@ -632,7 +588,6 @@
 
 .method static synthetic access$300(Lcom/android/mms/data/Contact;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/data/Contact;
 
     iget-boolean v0, p0, Lcom/android/mms/data/Contact;->mQueryPending:Z
 
@@ -641,8 +596,6 @@
 
 .method static synthetic access$302(Lcom/android/mms/data/Contact;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/data/Contact;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/data/Contact;->mQueryPending:Z
 
@@ -651,7 +604,6 @@
 
 .method static synthetic access$400(Lcom/android/mms/data/Contact;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/data/Contact;
 
     iget-boolean v0, p0, Lcom/android/mms/data/Contact;->mIsStale:Z
 
@@ -660,8 +612,6 @@
 
 .method static synthetic access$402(Lcom/android/mms/data/Contact;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/data/Contact;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/data/Contact;->mIsStale:Z
 
@@ -670,7 +620,6 @@
 
 .method static synthetic access$500(Lcom/android/mms/data/Contact;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/mms/data/Contact;
 
     iget-object v0, p0, Lcom/android/mms/data/Contact;->mNumber:Ljava/lang/String;
 
@@ -679,8 +628,6 @@
 
 .method static synthetic access$502(Lcom/android/mms/data/Contact;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/android/mms/data/Contact;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/mms/data/Contact;->mNumber:Ljava/lang/String;
 
@@ -689,7 +636,6 @@
 
 .method static synthetic access$600(Lcom/android/mms/data/Contact;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/mms/data/Contact;
 
     iget-object v0, p0, Lcom/android/mms/data/Contact;->mName:Ljava/lang/String;
 
@@ -698,8 +644,6 @@
 
 .method static synthetic access$602(Lcom/android/mms/data/Contact;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/android/mms/data/Contact;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/mms/data/Contact;->mName:Ljava/lang/String;
 
@@ -708,7 +652,6 @@
 
 .method static synthetic access$700(Lcom/android/mms/data/Contact;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/mms/data/Contact;
 
     iget-object v0, p0, Lcom/android/mms/data/Contact;->mLabel:Ljava/lang/String;
 
@@ -717,8 +660,6 @@
 
 .method static synthetic access$702(Lcom/android/mms/data/Contact;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/android/mms/data/Contact;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/mms/data/Contact;->mLabel:Ljava/lang/String;
 
@@ -727,7 +668,6 @@
 
 .method static synthetic access$800(Lcom/android/mms/data/Contact;)J
     .locals 2
-    .param p0    # Lcom/android/mms/data/Contact;
 
     iget-wide v0, p0, Lcom/android/mms/data/Contact;->mPersonId:J
 
@@ -736,8 +676,6 @@
 
 .method static synthetic access$802(Lcom/android/mms/data/Contact;J)J
     .locals 0
-    .param p0    # Lcom/android/mms/data/Contact;
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/android/mms/data/Contact;->mPersonId:J
 
@@ -746,7 +684,6 @@
 
 .method static synthetic access$900(Lcom/android/mms/data/Contact;)I
     .locals 1
-    .param p0    # Lcom/android/mms/data/Contact;
 
     iget v0, p0, Lcom/android/mms/data/Contact;->mPresenceMode:I
 
@@ -755,8 +692,6 @@
 
 .method static synthetic access$902(Lcom/android/mms/data/Contact;I)I
     .locals 0
-    .param p0    # Lcom/android/mms/data/Contact;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/mms/data/Contact;->mPresenceMode:I
 
@@ -765,7 +700,6 @@
 
 .method public static addListener(Lcom/android/mms/data/Contact$UpdateListener;)V
     .locals 2
-    .param p0    # Lcom/android/mms/data/Contact$UpdateListener;
 
     sget-object v1, Lcom/android/mms/data/Contact;->mListeners:Ljava/util/HashSet;
 
@@ -792,8 +726,6 @@
 
 .method public static compare(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p0, p1}, Landroid/telephony/PhoneNumberUtils;->compare(Ljava/lang/String;Ljava/lang/String;)Z
 
@@ -814,9 +746,6 @@
 
 .method private static compareWithE164(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-static {p0, p2}, Lcom/android/mms/data/Contact;->compare(Ljava/lang/String;Ljava/lang/String;)Z
 
@@ -980,7 +909,6 @@
 
 .method public static extractAddress(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     const/16 v3, 0x3b
 
@@ -1010,7 +938,6 @@
 
 .method private static extractId(Ljava/lang/String;)J
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     const/16 v1, 0x3b
 
@@ -1045,8 +972,6 @@
 
 .method public static formatNameAndNumber(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     move-object v0, p1
 
@@ -1127,8 +1052,6 @@
 
 .method public static get(Ljava/lang/String;Z)Lcom/android/mms/data/Contact;
     .locals 6
-    .param p0    # Ljava/lang/String;
-    .param p1    # Z
 
     invoke-static {}, Lcom/android/mms/MmsApp;->getApplication()Lcom/android/mms/MmsApp;
 
@@ -1207,7 +1130,6 @@
 
 .method public static get(Ljava/util/ArrayList;Z)Lcom/android/mms/data/ContactList;
     .locals 1
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1230,8 +1152,6 @@
 
 .method public static get(Ljava/util/ArrayList;ZZ)Lcom/android/mms/data/ContactList;
     .locals 8
-    .param p1    # Z
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1395,8 +1315,6 @@
 
 .method public static declared-synchronized getAvataMe(Landroid/content/Context;Landroid/graphics/drawable/Drawable;)Landroid/graphics/drawable/Drawable;
     .locals 15
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     const-class v14, Lcom/android/mms/data/Contact;
 
@@ -1666,7 +1584,6 @@
 
 .method public static getAvatarMeForFindo(Landroid/content/Context;)Landroid/net/Uri;
     .locals 12
-    .param p0    # Landroid/content/Context;
 
     const/4 v11, 0x0
 
@@ -1768,7 +1685,6 @@
 
 .method public static getByIds(Ljava/util/ArrayList;Z)Lcom/android/mms/data/ContactList;
     .locals 11
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1964,7 +1880,6 @@
 
 .method public static getContactName(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     sget-object v1, Lcom/android/mms/data/Contact;->sContactCache:Lcom/android/mms/data/Contact$ContactsCache;
 
@@ -1992,7 +1907,6 @@
 
 .method public static getContactNameForToButton(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     sget-object v1, Lcom/android/mms/data/Contact;->sContactCache:Lcom/android/mms/data/Contact$ContactsCache;
 
@@ -2065,7 +1979,6 @@
 
 .method public static getEmptyIfNull(Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Ljava/lang/String;
 
     if-nez p0, :cond_0
 
@@ -2077,7 +1990,6 @@
 
 .method public static getLocalProfileUri(Landroid/content/Context;)Landroid/net/Uri;
     .locals 12
-    .param p0    # Landroid/content/Context;
 
     const/4 v11, 0x0
 
@@ -2205,7 +2117,6 @@
 
 .method private getYellowPageInfo(Ljava/lang/String;)Ljava/lang/String;
     .locals 10
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -2303,7 +2214,6 @@
 
 .method public static declared-synchronized hasAvatarMeForFindo(Landroid/content/Context;)Z
     .locals 11
-    .param p0    # Landroid/content/Context;
 
     const/4 v9, 0x1
 
@@ -2430,8 +2340,6 @@
 
 .method public static init(Landroid/content/Context;Z)V
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
 
     const/4 v4, 0x1
 
@@ -2573,8 +2481,6 @@
 
 .method public static isChatUser(JLjava/lang/String;)Z
     .locals 11
-    .param p0    # J
-    .param p2    # Ljava/lang/String;
 
     invoke-static {}, Lcom/android/mms/MmsApp;->getApplication()Lcom/android/mms/MmsApp;
 
@@ -2730,7 +2636,6 @@
 
 .method public static isNumberInContacts(Ljava/lang/String;)Z
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -2755,7 +2660,6 @@
 
 .method private static isValidContactData(Ljava/lang/String;)Z
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     const/16 v3, 0x3b
 
@@ -2794,7 +2698,6 @@
 
 .method public static normalizeDualNumber(Ljava/lang/String;)Ljava/lang/String;
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -2882,7 +2785,6 @@
 
 .method public static normalizeNumber(Ljava/lang/String;)Ljava/lang/String;
     .locals 6
-    .param p0    # Ljava/lang/String;
 
     new-instance v4, Ljava/lang/StringBuilder;
 
@@ -2970,7 +2872,6 @@
 
 .method public static normalizeNumberForKOR(Ljava/lang/String;)Ljava/lang/String;
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -3127,7 +3028,6 @@
 
 .method public static removeListener(Lcom/android/mms/data/Contact$UpdateListener;)V
     .locals 2
-    .param p0    # Lcom/android/mms/data/Contact$UpdateListener;
 
     sget-object v1, Lcom/android/mms/data/Contact;->mListeners:Ljava/util/HashSet;
 
@@ -3154,7 +3054,6 @@
 
 .method public static replaceInvalidCharsOnRecipient([Ljava/lang/String;)[Ljava/lang/String;
     .locals 7
-    .param p0    # [Ljava/lang/String;
 
     new-instance v3, Ljava/util/ArrayList;
 
@@ -3232,7 +3131,6 @@
 
 .method public static replaceInvalidPrefix(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     move-object v0, p0
 
@@ -3351,7 +3249,6 @@
 
 .method public static setUseYellowPage(Z)V
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/mms/data/Contact;->loadFromYellowPage:Z
 
@@ -3398,8 +3295,6 @@
 
 .method public declared-synchronized getAvatar(Landroid/content/Context;Landroid/graphics/drawable/Drawable;)Landroid/graphics/drawable/Drawable;
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/graphics/drawable/Drawable;
 
     monitor-enter p0
 
@@ -3478,7 +3373,6 @@
 
 .method public declared-synchronized getAvatarBitmap(Landroid/content/Context;)Landroid/graphics/Bitmap;
     .locals 5
-    .param p1    # Landroid/content/Context;
 
     monitor-enter p0
 
@@ -3539,7 +3433,6 @@
 
 .method public declared-synchronized getHigherResolutionAvatarBitmap(Landroid/content/Context;)Landroid/graphics/Bitmap;
     .locals 6
-    .param p1    # Landroid/content/Context;
 
     monitor-enter p0
 
@@ -4408,7 +4301,6 @@
 
 .method public reload(Z)V
     .locals 2
-    .param p1    # Z
 
     const-string v0, "Mms/Contact"
 
@@ -4431,7 +4323,6 @@
 
 .method public declared-synchronized setChatUser(Z)V
     .locals 1
-    .param p1    # Z
 
     monitor-enter p0
 
@@ -4454,7 +4345,6 @@
 
 .method public setIsNumberModified(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/data/Contact;->mNumberIsModified:Z
 
@@ -4463,7 +4353,6 @@
 
 .method public declared-synchronized setNumber(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -4492,7 +4381,6 @@
 
 .method public declared-synchronized setRecipientId(J)V
     .locals 1
-    .param p1    # J
 
     monitor-enter p0
 

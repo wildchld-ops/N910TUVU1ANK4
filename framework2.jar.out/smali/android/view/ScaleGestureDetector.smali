@@ -94,8 +94,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/view/ScaleGestureDetector$OnScaleGestureListener;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/view/ScaleGestureDetector$OnScaleGestureListener;
 
     const/4 v0, 0x0
 
@@ -106,9 +104,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/view/ScaleGestureDetector$OnScaleGestureListener;Landroid/os/Handler;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/view/ScaleGestureDetector$OnScaleGestureListener;
-    .param p3    # Landroid/os/Handler;
 
     const/4 v4, 0x1
 
@@ -213,8 +208,6 @@
 
 .method static synthetic access$002(Landroid/view/ScaleGestureDetector;Landroid/view/MotionEvent;)Landroid/view/MotionEvent;
     .locals 0
-    .param p0    # Landroid/view/ScaleGestureDetector;
-    .param p1    # Landroid/view/MotionEvent;
 
     iput-object p1, p0, Landroid/view/ScaleGestureDetector;->mDoubleTapEvent:Landroid/view/MotionEvent;
 
@@ -223,8 +216,6 @@
 
 .method static synthetic access$102(Landroid/view/ScaleGestureDetector;I)I
     .locals 0
-    .param p0    # Landroid/view/ScaleGestureDetector;
-    .param p1    # I
 
     iput p1, p0, Landroid/view/ScaleGestureDetector;->mDoubleTapMode:I
 
@@ -233,7 +224,6 @@
 
 .method private addTouchHistory(Landroid/view/MotionEvent;)V
     .locals 24
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 
@@ -604,7 +594,6 @@
 
 .method private getArea(Landroid/view/MotionEvent;)V
     .locals 11
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v8, 0x1
 
@@ -1194,7 +1183,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 8
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v7, 0x2
 
@@ -1541,7 +1529,6 @@
 
 .method public setAreaRateThreshold(F)V
     .locals 0
-    .param p1    # F
 
     iput p1, p0, Landroid/view/ScaleGestureDetector;->AREA_RATE_THRESHOLD:F
 
@@ -1550,7 +1537,6 @@
 
 .method public setAreaThreshold(F)V
     .locals 0
-    .param p1    # F
 
     iput p1, p0, Landroid/view/ScaleGestureDetector;->AREA_THRESHOLD:F
 
@@ -1559,14 +1545,12 @@
 
 .method public setEnableEdgeZoom(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method public setQuickScaleEnabled(Z)V
     .locals 4
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/view/ScaleGestureDetector;->mQuickScaleEnabled:Z
 
@@ -1598,7 +1582,6 @@
 
 .method public setUseTwoFingerSweep(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/view/ScaleGestureDetector;->mUseTwoFingerSweep:Z
 

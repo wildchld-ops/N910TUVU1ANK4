@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Lcom/android/settings/ASensorSettings;Lcom/android/settings/ASensorSettings$1;)V
     .locals 0
-    .param p1    # Lcom/android/settings/ASensorSettings;
-    .param p2    # Lcom/android/settings/ASensorSettings$1;
 
     invoke-direct {p0, p1}, Lcom/android/settings/ASensorSettings$setHandler;-><init>(Lcom/android/settings/ASensorSettings;)V
 
@@ -43,7 +41,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 10
-    .param p1    # Landroid/os/Message;
 
     const/high16 v4, 0x42200000
 

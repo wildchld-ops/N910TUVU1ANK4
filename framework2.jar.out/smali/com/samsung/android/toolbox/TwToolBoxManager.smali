@@ -56,7 +56,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Lcom/samsung/android/toolbox/TwToolBoxManager;-><init>()V
 
@@ -160,8 +159,6 @@
 
 .method public isContain(II)Z
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -204,7 +201,6 @@
 
 .method public registerCallback(Lcom/samsung/android/toolbox/ITwToolBoxServiceCallback;)Z
     .locals 3
-    .param p1    # Lcom/samsung/android/toolbox/ITwToolBoxServiceCallback;
 
     const/4 v0, 0x0
 
@@ -247,9 +243,6 @@
 
 .method public sendMessage(Ljava/lang/String;II)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     iget-object v0, p0, Lcom/samsung/android/toolbox/TwToolBoxManager;->mService:Lcom/samsung/android/toolbox/ITwToolBoxService;
 
@@ -288,7 +281,6 @@
 
 .method public setToolList([Ljava/lang/String;)V
     .locals 8
-    .param p1    # [Ljava/lang/String;
 
     iget-object v6, p0, Lcom/samsung/android/toolbox/TwToolBoxManager;->mService:Lcom/samsung/android/toolbox/ITwToolBoxService;
 
@@ -369,7 +361,6 @@
 
 .method public unregisterCallback(Lcom/samsung/android/toolbox/ITwToolBoxServiceCallback;)Z
     .locals 3
-    .param p1    # Lcom/samsung/android/toolbox/ITwToolBoxServiceCallback;
 
     const/4 v0, 0x0
 

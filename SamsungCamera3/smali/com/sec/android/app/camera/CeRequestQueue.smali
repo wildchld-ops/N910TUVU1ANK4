@@ -42,7 +42,6 @@
 # direct methods
 .method public constructor <init>(Lcom/sec/android/app/camera/CommonEngine;)V
     .locals 2
-    .param p1    # Lcom/sec/android/app/camera/CommonEngine;
 
     const/4 v1, 0x0
 
@@ -75,7 +74,6 @@
 
 .method static synthetic access$000(Lcom/sec/android/app/camera/CeRequestQueue;)Lcom/sec/android/app/camera/CommonEngine;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/CeRequestQueue;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/CeRequestQueue;->mCommonEngine:Lcom/sec/android/app/camera/CommonEngine;
 
@@ -84,7 +82,6 @@
 
 .method static synthetic access$100(Lcom/sec/android/app/camera/CeRequestQueue;)Lcom/sec/android/app/camera/CeRequestQueue$MainHandler;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/CeRequestQueue;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/CeRequestQueue;->mMainHandler:Lcom/sec/android/app/camera/CeRequestQueue$MainHandler;
 
@@ -93,7 +90,6 @@
 
 .method static synthetic access$200(Lcom/sec/android/app/camera/CeRequestQueue;)V
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/CeRequestQueue;
 
     invoke-direct {p0}, Lcom/sec/android/app/camera/CeRequestQueue;->startFirstRequest()V
 
@@ -164,7 +160,6 @@
 # virtual methods
 .method public declared-synchronized addRequest(Lcom/sec/android/app/camera/CeRequest;)V
     .locals 3
-    .param p1    # Lcom/sec/android/app/camera/CeRequest;
 
     const/4 v2, 0x1
 
@@ -562,7 +557,6 @@
 
 .method public isFirstRequest(I)Z
     .locals 4
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -597,7 +591,6 @@
 
 .method public declared-synchronized isSameAsNextRequest(I)Z
     .locals 5
-    .param p1    # I
 
     const/4 v4, 0x1
 
@@ -687,7 +680,6 @@
 
 .method public removeRequest(I)V
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -698,8 +690,6 @@
 
 .method public declared-synchronized removeRequest(IZ)V
     .locals 10
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v9, 0x1
 
@@ -900,7 +890,6 @@
 
 .method public declared-synchronized searchDuplicateRequest(I)Z
     .locals 5
-    .param p1    # I
 
     const/4 v4, 0x1
 
@@ -981,7 +970,6 @@
 
 .method public declared-synchronized searchRequest(I)Z
     .locals 4
-    .param p1    # I
 
     const/4 v3, 0x1
 

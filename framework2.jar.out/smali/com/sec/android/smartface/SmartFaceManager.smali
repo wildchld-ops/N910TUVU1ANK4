@@ -89,7 +89,6 @@
 # direct methods
 .method private constructor <init>(Lcom/sec/android/smartface/ISmartFaceService;)V
     .locals 3
-    .param p1    # Lcom/sec/android/smartface/ISmartFaceService;
 
     const/4 v2, 0x0
 
@@ -171,7 +170,6 @@
 
 .method static synthetic access$000(Lcom/sec/android/smartface/SmartFaceManager;)Ljava/util/concurrent/locks/Lock;
     .locals 1
-    .param p0    # Lcom/sec/android/smartface/SmartFaceManager;
 
     iget-object v0, p0, Lcom/sec/android/smartface/SmartFaceManager;->lock:Ljava/util/concurrent/locks/Lock;
 
@@ -180,8 +178,6 @@
 
 .method static synthetic access$102(Lcom/sec/android/smartface/SmartFaceManager;I)I
     .locals 0
-    .param p0    # Lcom/sec/android/smartface/SmartFaceManager;
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/smartface/SmartFaceManager;->mCallbackData:I
 
@@ -190,7 +186,6 @@
 
 .method static synthetic access$200(Lcom/sec/android/smartface/SmartFaceManager;)Ljava/util/concurrent/locks/Condition;
     .locals 1
-    .param p0    # Lcom/sec/android/smartface/SmartFaceManager;
 
     iget-object v0, p0, Lcom/sec/android/smartface/SmartFaceManager;->complete:Ljava/util/concurrent/locks/Condition;
 
@@ -199,7 +194,6 @@
 
 .method static synthetic access$300(Lcom/sec/android/smartface/SmartFaceManager;)Lcom/sec/android/smartface/SmartFaceManager$EventHandler;
     .locals 1
-    .param p0    # Lcom/sec/android/smartface/SmartFaceManager;
 
     iget-object v0, p0, Lcom/sec/android/smartface/SmartFaceManager;->mEventHandler:Lcom/sec/android/smartface/SmartFaceManager$EventHandler;
 
@@ -208,7 +202,6 @@
 
 .method static synthetic access$400(Lcom/sec/android/smartface/SmartFaceManager;)Lcom/sec/android/smartface/SmartFaceManager$SmartFaceInfoListener;
     .locals 1
-    .param p0    # Lcom/sec/android/smartface/SmartFaceManager;
 
     iget-object v0, p0, Lcom/sec/android/smartface/SmartFaceManager;->mListener:Lcom/sec/android/smartface/SmartFaceManager$SmartFaceInfoListener;
 
@@ -257,7 +250,6 @@
 
 .method private waitForCallback(I)J
     .locals 7
-    .param p1    # I
 
     const-wide/16 v0, -0x1
 
@@ -304,7 +296,6 @@
 # virtual methods
 .method public checkForSmartRotation(I)Z
     .locals 5
-    .param p1    # I
 
     const-string v2, "SmartFaceManager"
 
@@ -653,7 +644,6 @@
 
 .method public setListener(Lcom/sec/android/smartface/SmartFaceManager$SmartFaceInfoListener;)V
     .locals 0
-    .param p1    # Lcom/sec/android/smartface/SmartFaceManager$SmartFaceInfoListener;
 
     iput-object p1, p0, Lcom/sec/android/smartface/SmartFaceManager;->mListener:Lcom/sec/android/smartface/SmartFaceManager$SmartFaceInfoListener;
 
@@ -662,8 +652,6 @@
 
 .method public setValue(Ljava/lang/String;I)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-static {p2}, Ljava/lang/Integer;->toString(I)Ljava/lang/String;
 
@@ -676,8 +664,6 @@
 
 .method public setValue(Ljava/lang/String;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const-string v1, "SmartFaceManager"
 
@@ -739,7 +725,6 @@
 
 .method public start(I)Z
     .locals 4
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -767,7 +752,6 @@
 
 .method public startAsync(I)V
     .locals 3
-    .param p1    # I
 
     :try_start_0
     iget-object v1, p0, Lcom/sec/android/smartface/SmartFaceManager;->mService:Lcom/sec/android/smartface/ISmartFaceService;

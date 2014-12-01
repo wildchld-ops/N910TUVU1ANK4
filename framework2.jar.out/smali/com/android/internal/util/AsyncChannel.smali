@@ -123,8 +123,6 @@
 
 .method static synthetic access$000(Lcom/android/internal/util/AsyncChannel;I)V
     .locals 0
-    .param p0    # Lcom/android/internal/util/AsyncChannel;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/internal/util/AsyncChannel;->replyHalfConnected(I)V
 
@@ -133,8 +131,6 @@
 
 .method static synthetic access$502(Lcom/android/internal/util/AsyncChannel;Landroid/os/Messenger;)Landroid/os/Messenger;
     .locals 0
-    .param p0    # Lcom/android/internal/util/AsyncChannel;
-    .param p1    # Landroid/os/Messenger;
 
     iput-object p1, p0, Lcom/android/internal/util/AsyncChannel;->mDstMessenger:Landroid/os/Messenger;
 
@@ -143,8 +139,6 @@
 
 .method static synthetic access$600(Lcom/android/internal/util/AsyncChannel;I)V
     .locals 0
-    .param p0    # Lcom/android/internal/util/AsyncChannel;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/internal/util/AsyncChannel;->replyDisconnected(I)V
 
@@ -153,7 +147,6 @@
 
 .method protected static cmdToString(I)Ljava/lang/String;
     .locals 1
-    .param p0    # I
 
     const v0, 0x11000
 
@@ -182,7 +175,6 @@
 
 .method private static log(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "AsyncChannel"
 
@@ -193,7 +185,6 @@
 
 .method private replyDisconnected(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/internal/util/AsyncChannel;->mSrcHandler:Landroid/os/Handler;
 
@@ -220,7 +211,6 @@
 
 .method private replyHalfConnected(I)V
     .locals 5
-    .param p1    # I
 
     iget-object v2, p0, Lcom/android/internal/util/AsyncChannel;->mSrcHandler:Landroid/os/Handler;
 
@@ -287,8 +277,6 @@
 
 .method private replyHalfConnected(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     iget-object v1, p0, Lcom/android/internal/util/AsyncChannel;->mSrcHandler:Landroid/os/Handler;
 
@@ -319,9 +307,6 @@
 # virtual methods
 .method public connect(Landroid/content/Context;Landroid/os/Handler;Landroid/os/Handler;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/Handler;
-    .param p3    # Landroid/os/Handler;
 
     new-instance v0, Landroid/os/Messenger;
 
@@ -334,9 +319,6 @@
 
 .method public connect(Landroid/content/Context;Landroid/os/Handler;Landroid/os/Messenger;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/Handler;
-    .param p3    # Landroid/os/Messenger;
 
     invoke-virtual {p0, p1, p2, p3}, Lcom/android/internal/util/AsyncChannel;->connected(Landroid/content/Context;Landroid/os/Handler;Landroid/os/Messenger;)V
 
@@ -349,10 +331,6 @@
 
 .method public connect(Landroid/content/Context;Landroid/os/Handler;Landroid/os/Messenger;I)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/Handler;
-    .param p3    # Landroid/os/Messenger;
-    .param p4    # I
 
     invoke-virtual {p0, p1, p2, p3}, Lcom/android/internal/util/AsyncChannel;->connected(Landroid/content/Context;Landroid/os/Handler;Landroid/os/Messenger;)V
 
@@ -365,8 +343,6 @@
 
 .method public connect(Landroid/content/Context;Landroid/os/Handler;Ljava/lang/Class;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/Handler;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -396,10 +372,6 @@
 
 .method public connect(Landroid/content/Context;Landroid/os/Handler;Ljava/lang/String;Ljava/lang/String;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/Handler;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     new-instance v0, Lcom/android/internal/util/AsyncChannel$1ConnectAsync;
 
@@ -426,8 +398,6 @@
 
 .method public connect(Lcom/android/internal/util/AsyncService;Landroid/os/Messenger;)V
     .locals 1
-    .param p1    # Lcom/android/internal/util/AsyncService;
-    .param p2    # Landroid/os/Messenger;
 
     invoke-virtual {p1}, Lcom/android/internal/util/AsyncService;->getHandler()Landroid/os/Handler;
 
@@ -440,10 +410,6 @@
 
 .method public connectSrcHandlerToPackageSync(Landroid/content/Context;Landroid/os/Handler;Ljava/lang/String;Ljava/lang/String;)I
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/Handler;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     const/4 v2, 0x1
 
@@ -491,9 +457,6 @@
 
 .method public connectSync(Landroid/content/Context;Landroid/os/Handler;Landroid/os/Handler;)I
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/Handler;
-    .param p3    # Landroid/os/Handler;
 
     new-instance v0, Landroid/os/Messenger;
 
@@ -508,9 +471,6 @@
 
 .method public connectSync(Landroid/content/Context;Landroid/os/Handler;Landroid/os/Messenger;)I
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/Handler;
-    .param p3    # Landroid/os/Messenger;
 
     invoke-virtual {p0, p1, p2, p3}, Lcom/android/internal/util/AsyncChannel;->connected(Landroid/content/Context;Landroid/os/Handler;Landroid/os/Messenger;)V
 
@@ -521,9 +481,6 @@
 
 .method public connected(Landroid/content/Context;Landroid/os/Handler;Landroid/os/Messenger;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/Handler;
-    .param p3    # Landroid/os/Messenger;
 
     iput-object p1, p0, Lcom/android/internal/util/AsyncChannel;->mSrcContext:Landroid/content/Context;
 
@@ -642,9 +599,6 @@
 
 .method public fullyConnectSync(Landroid/content/Context;Landroid/os/Handler;Landroid/os/Handler;)I
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/Handler;
-    .param p3    # Landroid/os/Handler;
 
     invoke-virtual {p0, p1, p2, p3}, Lcom/android/internal/util/AsyncChannel;->connectSync(Landroid/content/Context;Landroid/os/Handler;Landroid/os/Handler;)I
 
@@ -666,8 +620,6 @@
 
 .method public replyToMessage(Landroid/os/Message;I)V
     .locals 1
-    .param p1    # Landroid/os/Message;
-    .param p2    # I
 
     invoke-static {}, Landroid/os/Message;->obtain()Landroid/os/Message;
 
@@ -682,9 +634,6 @@
 
 .method public replyToMessage(Landroid/os/Message;II)V
     .locals 1
-    .param p1    # Landroid/os/Message;
-    .param p2    # I
-    .param p3    # I
 
     invoke-static {}, Landroid/os/Message;->obtain()Landroid/os/Message;
 
@@ -701,10 +650,6 @@
 
 .method public replyToMessage(Landroid/os/Message;III)V
     .locals 1
-    .param p1    # Landroid/os/Message;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-static {}, Landroid/os/Message;->obtain()Landroid/os/Message;
 
@@ -723,11 +668,6 @@
 
 .method public replyToMessage(Landroid/os/Message;IIILjava/lang/Object;)V
     .locals 1
-    .param p1    # Landroid/os/Message;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Ljava/lang/Object;
 
     invoke-static {}, Landroid/os/Message;->obtain()Landroid/os/Message;
 
@@ -748,9 +688,6 @@
 
 .method public replyToMessage(Landroid/os/Message;ILjava/lang/Object;)V
     .locals 1
-    .param p1    # Landroid/os/Message;
-    .param p2    # I
-    .param p3    # Ljava/lang/Object;
 
     invoke-static {}, Landroid/os/Message;->obtain()Landroid/os/Message;
 
@@ -767,8 +704,6 @@
 
 .method public replyToMessage(Landroid/os/Message;Landroid/os/Message;)V
     .locals 3
-    .param p1    # Landroid/os/Message;
-    .param p2    # Landroid/os/Message;
 
     :try_start_0
     iget-object v1, p0, Lcom/android/internal/util/AsyncChannel;->mSrcMessenger:Landroid/os/Messenger;
@@ -814,7 +749,6 @@
 
 .method public sendMessage(I)V
     .locals 1
-    .param p1    # I
 
     invoke-static {}, Landroid/os/Message;->obtain()Landroid/os/Message;
 
@@ -829,8 +763,6 @@
 
 .method public sendMessage(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     invoke-static {}, Landroid/os/Message;->obtain()Landroid/os/Message;
 
@@ -847,9 +779,6 @@
 
 .method public sendMessage(III)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     invoke-static {}, Landroid/os/Message;->obtain()Landroid/os/Message;
 
@@ -868,10 +797,6 @@
 
 .method public sendMessage(IIILjava/lang/Object;)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/Object;
 
     invoke-static {}, Landroid/os/Message;->obtain()Landroid/os/Message;
 
@@ -892,8 +817,6 @@
 
 .method public sendMessage(ILjava/lang/Object;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/Object;
 
     invoke-static {}, Landroid/os/Message;->obtain()Landroid/os/Message;
 
@@ -910,7 +833,6 @@
 
 .method public sendMessage(Landroid/os/Message;)V
     .locals 2
-    .param p1    # Landroid/os/Message;
 
     iget-object v1, p0, Lcom/android/internal/util/AsyncChannel;->mSrcMessenger:Landroid/os/Messenger;
 
@@ -938,7 +860,6 @@
 
 .method public sendMessageSynchronously(I)Landroid/os/Message;
     .locals 2
-    .param p1    # I
 
     invoke-static {}, Landroid/os/Message;->obtain()Landroid/os/Message;
 
@@ -955,8 +876,6 @@
 
 .method public sendMessageSynchronously(II)Landroid/os/Message;
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     invoke-static {}, Landroid/os/Message;->obtain()Landroid/os/Message;
 
@@ -975,9 +894,6 @@
 
 .method public sendMessageSynchronously(III)Landroid/os/Message;
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     invoke-static {}, Landroid/os/Message;->obtain()Landroid/os/Message;
 
@@ -998,10 +914,6 @@
 
 .method public sendMessageSynchronously(IIILjava/lang/Object;)Landroid/os/Message;
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/Object;
 
     invoke-static {}, Landroid/os/Message;->obtain()Landroid/os/Message;
 
@@ -1024,8 +936,6 @@
 
 .method public sendMessageSynchronously(ILjava/lang/Object;)Landroid/os/Message;
     .locals 2
-    .param p1    # I
-    .param p2    # Ljava/lang/Object;
 
     invoke-static {}, Landroid/os/Message;->obtain()Landroid/os/Message;
 
@@ -1044,7 +954,6 @@
 
 .method public sendMessageSynchronously(Landroid/os/Message;)Landroid/os/Message;
     .locals 2
-    .param p1    # Landroid/os/Message;
 
     iget-object v1, p0, Lcom/android/internal/util/AsyncChannel;->mDstMessenger:Landroid/os/Messenger;
 

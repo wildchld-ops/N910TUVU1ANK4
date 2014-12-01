@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Lcom/android/settings/fmm/RemoteControls;Lcom/android/settings/fmm/RemoteControls$1;)V
     .locals 0
-    .param p1    # Lcom/android/settings/fmm/RemoteControls;
-    .param p2    # Lcom/android/settings/fmm/RemoteControls$1;
 
     invoke-direct {p0, p1}, Lcom/android/settings/fmm/RemoteControls$PreferenceListener;-><init>(Lcom/android/settings/fmm/RemoteControls;)V
 
@@ -46,8 +44,6 @@
 # virtual methods
 .method public onSharedPreferenceChanged(Landroid/content/SharedPreferences;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Landroid/content/SharedPreferences;
-    .param p2    # Ljava/lang/String;
 
     const/4 v2, 0x0
 

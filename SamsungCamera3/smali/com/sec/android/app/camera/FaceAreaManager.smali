@@ -26,7 +26,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -45,8 +44,6 @@
 # virtual methods
 .method public DeNormalize(II)I
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     int-to-float v0, p1
 
@@ -69,9 +66,6 @@
 
 .method public getFacePosition(III)I
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v4, 0x3
 
@@ -400,10 +394,6 @@
 
 .method public getFaceSize(IIII)Lcom/sec/android/app/camera/FaceAreaManager$FaceSize;
     .locals 7
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     sget-object v1, Lcom/sec/android/app/camera/FaceAreaManager$FaceSize;->NOT_FACE:Lcom/sec/android/app/camera/FaceAreaManager$FaceSize;
 
@@ -482,7 +472,6 @@
 
 .method public setFaceAreaIndicatorView(Landroid/widget/ImageView;)V
     .locals 0
-    .param p1    # Landroid/widget/ImageView;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/FaceAreaManager;->mFaceAreaIndicatorView:Landroid/widget/ImageView;
 
@@ -491,7 +480,6 @@
 
 .method public setHideFaceAreaIndicatorVisible(Z)V
     .locals 3
-    .param p1    # Z
 
     const-string v0, "FaceAreaManager"
 
@@ -540,10 +528,6 @@
 
 .method public updateAdviceFaceAreaIndicatorFromOrientation(IIII)V
     .locals 11
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/high16 v6, 0x42e80000
 

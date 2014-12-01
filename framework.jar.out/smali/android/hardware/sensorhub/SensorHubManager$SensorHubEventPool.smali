@@ -27,7 +27,6 @@
 # direct methods
 .method constructor <init>(Landroid/hardware/sensorhub/SensorHubManager;I)V
     .locals 1
-    .param p2    # I
 
     iput-object p1, p0, Landroid/hardware/sensorhub/SensorHubManager$SensorHubEventPool;->this$0:Landroid/hardware/sensorhub/SensorHubManager;
 
@@ -119,7 +118,6 @@
 
 .method returnToPool(Landroid/hardware/sensorhub/SensorHubEvent;)V
     .locals 3
-    .param p1    # Landroid/hardware/sensorhub/SensorHubEvent;
 
     monitor-enter p0
 

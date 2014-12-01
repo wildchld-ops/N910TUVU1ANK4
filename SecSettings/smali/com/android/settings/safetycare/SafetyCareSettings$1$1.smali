@@ -36,7 +36,6 @@
 # virtual methods
 .method public onDismiss(Landroid/content/DialogInterface;)V
     .locals 2
-    .param p1    # Landroid/content/DialogInterface;
 
     iget-object v0, p0, Lcom/android/settings/safetycare/SafetyCareSettings$1$1;->this$1:Lcom/android/settings/safetycare/SafetyCareSettings$1;
 

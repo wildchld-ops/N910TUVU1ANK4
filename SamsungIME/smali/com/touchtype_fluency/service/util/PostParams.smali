@@ -78,8 +78,6 @@
 
 .method private static paramsToString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuffer;
 
@@ -133,8 +131,6 @@
 # virtual methods
 .method public add(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/touchtype_fluency/service/util/PostParams;->keys:Ljava/util/Vector;
 

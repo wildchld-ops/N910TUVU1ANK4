@@ -34,7 +34,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/mms/ui/MessageListItem;Ljava/lang/String;)V
     .locals 0
-    .param p2    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/mms/ui/MessageListItem$StickerDrawingAsyncTask;->this$0:Lcom/android/mms/ui/MessageListItem;
 
@@ -49,7 +48,6 @@
 # virtual methods
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [Ljava/lang/Void;
 
@@ -62,7 +60,6 @@
 
 .method protected varargs doInBackground([Ljava/lang/Void;)Ljava/lang/Object;
     .locals 3
-    .param p1    # [Ljava/lang/Void;
 
     :try_start_0
     iget-object v1, p0, Lcom/android/mms/ui/MessageListItem$StickerDrawingAsyncTask;->this$0:Lcom/android/mms/ui/MessageListItem;
@@ -100,7 +97,6 @@
 
 .method protected onPostExecute(Ljava/lang/Object;)V
     .locals 4
-    .param p1    # Ljava/lang/Object;
 
     if-nez p1, :cond_0
 

@@ -45,7 +45,6 @@
 # direct methods
 .method constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -62,9 +61,6 @@
 
 .method public static changeCheckStatus(Landroid/content/Context;ILjava/lang/String;)Z
     .locals 8
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v6, 0x1
 
@@ -309,9 +305,6 @@
 
 .method public static checkAlreadyEnabledandUsed(Landroid/content/Context;ILjava/lang/String;)Z
     .locals 8
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v6, 0x1
 
@@ -524,9 +517,6 @@
 
 .method public static checkAlreadyInUse(Landroid/content/Context;ILjava/lang/String;)Z
     .locals 9
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v6, 0x1
 
@@ -809,9 +799,6 @@
 
 .method public static checkEnableStatus(Landroid/content/Context;ILjava/lang/String;)Z
     .locals 8
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v5, 0x0
 
@@ -1090,7 +1077,6 @@
 
 .method public static delete(I)V
     .locals 2
-    .param p0    # I
 
     sget-object v0, Lcom/android/mms/spam/SpamFilter$SpamFilterCache;->sInstance:Lcom/android/mms/spam/SpamFilter$SpamFilterCache;
 
@@ -1124,8 +1110,6 @@
 
 .method public static delete(ILjava/lang/String;)V
     .locals 5
-    .param p0    # I
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -1689,7 +1673,6 @@
 
 .method public static init(Landroid/content/Context;)V
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     new-instance v0, Lcom/android/mms/spam/SpamFilter$SpamFilterCache;
 
@@ -1712,8 +1695,6 @@
 
 .method public static insert(ILcom/android/mms/spam/SpamFilter$SpamFilterData;)V
     .locals 2
-    .param p0    # I
-    .param p1    # Lcom/android/mms/spam/SpamFilter$SpamFilterData;
 
     sget-object v0, Lcom/android/mms/spam/SpamFilter$SpamFilterCache;->sInstance:Lcom/android/mms/spam/SpamFilter$SpamFilterCache;
 
@@ -1732,8 +1713,6 @@
 
 .method public static isSpam(Landroid/content/Context;Lcom/google/android/mms/pdu/EncodedStringValue;)Z
     .locals 10
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/google/android/mms/pdu/EncodedStringValue;
 
     const/4 v7, 0x0
 
@@ -1902,9 +1881,6 @@
 
 .method public static isSpam(Landroid/content/Context;Lcom/google/android/mms/pdu/EncodedStringValue;Lcom/google/android/mms/pdu/EncodedStringValue;)Z
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/google/android/mms/pdu/EncodedStringValue;
-    .param p2    # Lcom/google/android/mms/pdu/EncodedStringValue;
 
     invoke-static {p0}, Lcom/android/mms/spam/SpamFilter$SpamFilterCache;->isSpamOptionOn(Landroid/content/Context;)Z
 
@@ -1949,8 +1925,6 @@
 
 .method public static isSpam(Landroid/content/Context;Lcom/google/android/mms/pdu/GenericPdu;)Z
     .locals 14
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/google/android/mms/pdu/GenericPdu;
 
     invoke-static {p0}, Lcom/android/mms/spam/SpamFilter$SpamFilterCache;->isSpamOptionOn(Landroid/content/Context;)Z
 
@@ -2165,8 +2139,6 @@
 
 .method public static isSpam(Landroid/content/Context;Ljava/lang/String;)Z
     .locals 11
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const/4 v7, 0x0
 
@@ -2557,9 +2529,6 @@
 
 .method public static isSpam(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 12
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v8, 0x0
 
@@ -2993,7 +2962,6 @@
 
 .method private static isSpamOptionOn(Landroid/content/Context;)Z
     .locals 7
-    .param p0    # Landroid/content/Context;
 
     const/4 v3, 0x1
 
@@ -3059,8 +3027,6 @@
 
 .method private static isUnknownSender(Landroid/content/Context;Ljava/lang/String;)Z
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x1
 
@@ -3126,8 +3092,6 @@
 
 .method public static update(ILcom/android/mms/spam/SpamFilter$SpamFilterData;)V
     .locals 2
-    .param p0    # I
-    .param p1    # Lcom/android/mms/spam/SpamFilter$SpamFilterData;
 
     sget-object v0, Lcom/android/mms/spam/SpamFilter$SpamFilterCache;->sInstance:Lcom/android/mms/spam/SpamFilter$SpamFilterCache;
 
@@ -3179,8 +3143,6 @@
 
 .method public static update(ILjava/lang/String;)V
     .locals 3
-    .param p0    # I
-    .param p1    # Ljava/lang/String;
 
     sget-object v1, Lcom/android/mms/spam/SpamFilter$SpamFilterCache;->sInstance:Lcom/android/mms/spam/SpamFilter$SpamFilterCache;
 
@@ -3224,9 +3186,6 @@
 
 .method public static update(ILjava/lang/String;Z)V
     .locals 3
-    .param p0    # I
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     sget-object v1, Lcom/android/mms/spam/SpamFilter$SpamFilterCache;->sInstance:Lcom/android/mms/spam/SpamFilter$SpamFilterCache;
 
@@ -3273,10 +3232,6 @@
 
 .method public static update(ILjava/lang/String;ZI)V
     .locals 3
-    .param p0    # I
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # I
 
     sget-object v1, Lcom/android/mms/spam/SpamFilter$SpamFilterCache;->sInstance:Lcom/android/mms/spam/SpamFilter$SpamFilterCache;
 
@@ -3326,8 +3281,6 @@
 
 .method public static update(IZ)V
     .locals 4
-    .param p0    # I
-    .param p1    # Z
 
     sget-object v1, Lcom/android/mms/spam/SpamFilter$SpamFilterCache;->sInstance:Lcom/android/mms/spam/SpamFilter$SpamFilterCache;
 
@@ -3445,9 +3398,6 @@
 
 .method public static updateSpamNumber(Landroid/content/Context;ZI)V
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
-    .param p2    # I
 
     const/4 v4, 0x0
 
@@ -3502,9 +3452,6 @@
 
 .method public static updateSpamNumber(Landroid/content/Context;ZLjava/lang/String;)V
     .locals 12
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
-    .param p2    # Ljava/lang/String;
 
     const/4 v11, 0x0
 

@@ -41,10 +41,6 @@
 
 .method public constructor <init>(Landroid/content/Intent;Ljava/lang/String;II)V
     .locals 1
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
 
     invoke-direct {p0, p1}, Landroid/content/Intent;-><init>(Landroid/content/Intent;)V
 
@@ -63,10 +59,6 @@
 
 .method public constructor <init>(Landroid/content/Intent;Ljava/lang/String;Ljava/lang/CharSequence;I)V
     .locals 1
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/CharSequence;
-    .param p4    # I
 
     invoke-direct {p0, p1}, Landroid/content/Intent;-><init>(Landroid/content/Intent;)V
 
@@ -85,7 +77,6 @@
 
 .method protected constructor <init>(Landroid/os/Parcel;)V
     .locals 0
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Landroid/content/Intent;-><init>()V
 
@@ -96,9 +87,6 @@
 
 .method public constructor <init>(Ljava/lang/String;II)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0}, Landroid/content/Intent;-><init>()V
 
@@ -117,9 +105,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/CharSequence;I)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/CharSequence;
-    .param p3    # I
 
     invoke-direct {p0}, Landroid/content/Intent;-><init>()V
 
@@ -172,7 +157,6 @@
 
 .method public loadIcon(Landroid/content/pm/PackageManager;)Landroid/graphics/drawable/Drawable;
     .locals 4
-    .param p1    # Landroid/content/pm/PackageManager;
 
     const/4 v1, 0x0
 
@@ -205,7 +189,6 @@
 
 .method public loadLabel(Landroid/content/pm/PackageManager;)Ljava/lang/CharSequence;
     .locals 4
-    .param p1    # Landroid/content/pm/PackageManager;
 
     const/4 v1, 0x0
 
@@ -246,7 +229,6 @@
 
 .method public readFromParcel(Landroid/os/Parcel;)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     invoke-super {p0, p1}, Landroid/content/Intent;->readFromParcel(Landroid/os/Parcel;)V
 
@@ -283,8 +265,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     invoke-super {p0, p1, p2}, Landroid/content/Intent;->writeToParcel(Landroid/os/Parcel;I)V
 

@@ -57,7 +57,6 @@
 
 .method private getTimeoutNewEntry(J)Ljava/lang/String;
     .locals 10
-    .param p1    # J
 
     const-wide/16 v5, 0x3e8
 
@@ -221,7 +220,6 @@
 
 .method private updateTimeoutPreferenceDescription(J)V
     .locals 6
-    .param p1    # J
 
     iget-object v0, p0, Lcom/android/settings/torchlight/TorchlightSettings;->torchTimePreference:Landroid/preference/ListPreference;
 
@@ -366,7 +364,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 6
-    .param p1    # Landroid/os/Bundle;
 
     const-string v4, "TorchlightSettings"
 
@@ -451,8 +448,6 @@
 
 .method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
     .locals 5
-    .param p1    # Landroid/preference/Preference;
-    .param p2    # Ljava/lang/Object;
 
     invoke-virtual {p1}, Landroid/preference/Preference;->getKey()Ljava/lang/String;
 

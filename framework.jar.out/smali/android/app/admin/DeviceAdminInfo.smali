@@ -604,8 +604,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/app/admin/ProxyDeviceAdminInfo;)V
     .locals 8
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/app/admin/ProxyDeviceAdminInfo;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -723,8 +721,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/content/pm/ResolveInfo;)V
     .locals 22
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/pm/ResolveInfo;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -1103,7 +1099,6 @@
 
 .method constructor <init>(Landroid/os/Parcel;)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -1142,8 +1137,6 @@
 
 .method public dump(Landroid/util/Printer;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Landroid/util/Printer;
-    .param p2    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -1256,7 +1249,6 @@
 
 .method public getTagForPolicy(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     sget-object v0, Landroid/app/admin/DeviceAdminInfo;->sRevKnownPolicies:Landroid/util/SparseArray;
 
@@ -1353,7 +1345,6 @@
 
 .method public loadDescription(Landroid/content/pm/PackageManager;)Ljava/lang/CharSequence;
     .locals 3
-    .param p1    # Landroid/content/pm/PackageManager;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/res/Resources$NotFoundException;
@@ -1425,7 +1416,6 @@
 
 .method public loadIcon(Landroid/content/pm/PackageManager;)Landroid/graphics/drawable/Drawable;
     .locals 1
-    .param p1    # Landroid/content/pm/PackageManager;
 
     iget-object v0, p0, Landroid/app/admin/DeviceAdminInfo;->mProxyAdmin:Landroid/app/admin/ProxyDeviceAdminInfo;
 
@@ -1452,7 +1442,6 @@
 
 .method public loadLabel(Landroid/content/pm/PackageManager;)Ljava/lang/CharSequence;
     .locals 1
-    .param p1    # Landroid/content/pm/PackageManager;
 
     iget-object v0, p0, Landroid/app/admin/DeviceAdminInfo;->mProxyAdmin:Landroid/app/admin/ProxyDeviceAdminInfo;
 
@@ -1479,7 +1468,6 @@
 
 .method public readPoliciesFromXml(Lorg/xmlpull/v1/XmlPullParser;)V
     .locals 4
-    .param p1    # Lorg/xmlpull/v1/XmlPullParser;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -1515,7 +1503,6 @@
 
 .method public setPermissions(J)V
     .locals 0
-    .param p1    # J
 
     iput-wide p1, p0, Landroid/app/admin/DeviceAdminInfo;->mUsesPolicies:J
 
@@ -1560,7 +1547,6 @@
 
 .method public usesPolicy(I)Z
     .locals 5
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -1594,7 +1580,6 @@
 
 .method public writePoliciesToXml(Lorg/xmlpull/v1/XmlSerializer;)V
     .locals 4
-    .param p1    # Lorg/xmlpull/v1/XmlSerializer;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;,
@@ -1620,8 +1605,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v0, p0, Landroid/app/admin/DeviceAdminInfo;->mReceiver:Landroid/content/pm/ResolveInfo;
 

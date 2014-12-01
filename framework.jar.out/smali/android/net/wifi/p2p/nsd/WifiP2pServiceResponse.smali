@@ -60,11 +60,6 @@
 
 .method protected constructor <init>(IIILandroid/net/wifi/p2p/WifiP2pDevice;[B)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/net/wifi/p2p/WifiP2pDevice;
-    .param p5    # [B
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -83,8 +78,6 @@
 
 .method private equals(Ljava/lang/Object;Ljava/lang/Object;)Z
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Object;
 
     if-nez p1, :cond_0
 
@@ -112,7 +105,6 @@
 
 .method private static hexStr2Bin(Ljava/lang/String;)[B
     .locals 6
-    .param p0    # Ljava/lang/String;
 
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
@@ -173,7 +165,6 @@
 
 .method public static newInstance(Ljava/lang/String;)Ljava/util/List;
     .locals 15
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -386,7 +377,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 5
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x1
 
@@ -564,7 +554,6 @@
 
 .method public setSrcDevice(Landroid/net/wifi/p2p/WifiP2pDevice;)V
     .locals 0
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pDevice;
 
     if-nez p1, :cond_0
 
@@ -639,8 +628,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget v0, p0, Landroid/net/wifi/p2p/nsd/WifiP2pServiceResponse;->mServiceType:I
 

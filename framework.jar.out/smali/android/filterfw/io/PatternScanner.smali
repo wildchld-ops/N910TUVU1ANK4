@@ -18,7 +18,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -37,8 +36,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Ljava/util/regex/Pattern;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/util/regex/Pattern;
 
     const/4 v0, 0x0
 
@@ -89,8 +86,6 @@
 
 .method public eat(Ljava/util/regex/Pattern;Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/util/regex/Pattern;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Landroid/filterfw/io/PatternScanner;->tryEat(Ljava/util/regex/Pattern;)Ljava/lang/String;
 
@@ -122,7 +117,6 @@
 
 .method public peek(Ljava/util/regex/Pattern;)Z
     .locals 3
-    .param p1    # Ljava/util/regex/Pattern;
 
     iget-object v1, p0, Landroid/filterfw/io/PatternScanner;->mIgnorePattern:Ljava/util/regex/Pattern;
 
@@ -158,7 +152,6 @@
 
 .method public skip(Ljava/util/regex/Pattern;)V
     .locals 3
-    .param p1    # Ljava/util/regex/Pattern;
 
     iget-object v1, p0, Landroid/filterfw/io/PatternScanner;->mInput:Ljava/lang/String;
 
@@ -202,7 +195,6 @@
 
 .method public tryEat(Ljava/util/regex/Pattern;)Ljava/lang/String;
     .locals 5
-    .param p1    # Ljava/util/regex/Pattern;
 
     iget-object v2, p0, Landroid/filterfw/io/PatternScanner;->mIgnorePattern:Ljava/util/regex/Pattern;
 
@@ -282,7 +274,6 @@
 
 .method public unexpectedTokenMessage(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Landroid/filterfw/io/PatternScanner;->mInput:Ljava/lang/String;
 
@@ -347,8 +338,6 @@
 
 .method public updateLineCount(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     move v0, p1
 

@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Lcom/sec/android/app/shootingmodemanager/views/ItemsAdapter;Lcom/sec/android/app/shootingmodemanager/views/ItemsAdapter$1;)V
     .locals 0
-    .param p1    # Lcom/sec/android/app/shootingmodemanager/views/ItemsAdapter;
-    .param p2    # Lcom/sec/android/app/shootingmodemanager/views/ItemsAdapter$1;
 
     invoke-direct {p0, p1}, Lcom/sec/android/app/shootingmodemanager/views/ItemsAdapter$CheckBoxHideListener;-><init>(Lcom/sec/android/app/shootingmodemanager/views/ItemsAdapter;)V
 
@@ -46,7 +44,6 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 3
-    .param p1    # Landroid/view/View;
 
     instance-of v1, p1, Landroid/widget/FrameLayout;
 

@@ -42,8 +42,6 @@
 
 .method synthetic constructor <init>(Lcom/android/settings/myplace/MyPlaceListDelelete;Lcom/android/settings/myplace/MyPlaceListDelelete$1;)V
     .locals 0
-    .param p1    # Lcom/android/settings/myplace/MyPlaceListDelelete;
-    .param p2    # Lcom/android/settings/myplace/MyPlaceListDelelete$1;
 
     invoke-direct {p0, p1}, Lcom/android/settings/myplace/MyPlaceListDelelete$MyPlaceActionModeCallBack;-><init>(Lcom/android/settings/myplace/MyPlaceListDelelete;)V
 
@@ -73,7 +71,6 @@
 
 .method public initOptionsMenu(Landroid/view/Menu;)V
     .locals 1
-    .param p1    # Landroid/view/Menu;
 
     const/4 v0, 0x5
 
@@ -89,8 +86,6 @@
 
 .method public onActionItemClicked(Landroid/view/ActionMode;Landroid/view/MenuItem;)Z
     .locals 10
-    .param p1    # Landroid/view/ActionMode;
-    .param p2    # Landroid/view/MenuItem;
 
     const/4 v9, 0x1
 
@@ -193,8 +188,6 @@
 
 .method public onCreateActionMode(Landroid/view/ActionMode;Landroid/view/Menu;)Z
     .locals 9
-    .param p1    # Landroid/view/ActionMode;
-    .param p2    # Landroid/view/Menu;
 
     const/4 v5, 0x0
 
@@ -457,7 +450,6 @@
 
 .method public onDestroyActionMode(Landroid/view/ActionMode;)V
     .locals 1
-    .param p1    # Landroid/view/ActionMode;
 
     iget-object v0, p0, Lcom/android/settings/myplace/MyPlaceListDelelete$MyPlaceActionModeCallBack;->this$0:Lcom/android/settings/myplace/MyPlaceListDelelete;
 
@@ -472,8 +464,6 @@
 
 .method public onPrepareActionMode(Landroid/view/ActionMode;Landroid/view/Menu;)Z
     .locals 1
-    .param p1    # Landroid/view/ActionMode;
-    .param p2    # Landroid/view/Menu;
 
     const/4 v0, 0x0
 

@@ -34,10 +34,6 @@
 # direct methods
 .method public constructor <init>(Landroid/database/Cursor;Ljava/lang/String;ZLandroid/os/Handler;)V
     .locals 2
-    .param p1    # Landroid/database/Cursor;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
-    .param p4    # Landroid/os/Handler;
 
     const/4 v1, 0x0
 
@@ -85,8 +81,6 @@
 
 .method static synthetic access$002(Landroid/content/ContentQueryMap;Z)Z
     .locals 0
-    .param p0    # Landroid/content/ContentQueryMap;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/content/ContentQueryMap;->mDirty:Z
 
@@ -95,7 +89,6 @@
 
 .method private declared-synchronized readCursorIntoCache(Landroid/database/Cursor;)V
     .locals 5
-    .param p1    # Landroid/database/Cursor;
 
     monitor-enter p0
 
@@ -295,7 +288,6 @@
 
 .method public declared-synchronized getValues(Ljava/lang/String;)Landroid/content/ContentValues;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -362,7 +354,6 @@
 
 .method public setKeepUpdated(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-boolean v0, p0, Landroid/content/ContentQueryMap;->mKeepUpdated:Z
 

@@ -28,8 +28,6 @@
 
 .method public static varargs debug(Ljava/lang/String;[Ljava/lang/Object;)V
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # [Ljava/lang/Object;
 
     const-string v0, "Mms"
 
@@ -44,8 +42,6 @@
 
 .method public static varargs error(Ljava/lang/String;[Ljava/lang/Object;)V
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # [Ljava/lang/Object;
 
     const-string v0, "Mms"
 
@@ -60,8 +56,6 @@
 
 .method private static varargs logFormat(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
     .locals 6
-    .param p0    # Ljava/lang/String;
-    .param p1    # [Ljava/lang/Object;
 
     const/4 v1, 0x0
 
@@ -152,7 +146,6 @@
 
 .method private static prettyArray([Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p0    # [Ljava/lang/String;
 
     array-length v3, p0
 
@@ -209,8 +202,6 @@
 
 .method public static varargs warn(Ljava/lang/String;[Ljava/lang/Object;)V
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # [Ljava/lang/Object;
 
     const-string v0, "Mms"
 

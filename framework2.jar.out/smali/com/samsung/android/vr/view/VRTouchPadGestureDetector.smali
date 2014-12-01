@@ -114,8 +114,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Lcom/samsung/android/vr/view/VRTouchPadGestureDetector$OnTouchPadGestureListener;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/samsung/android/vr/view/VRTouchPadGestureDetector$OnTouchPadGestureListener;
 
     const/4 v0, 0x0
 
@@ -126,9 +124,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Lcom/samsung/android/vr/view/VRTouchPadGestureDetector$OnTouchPadGestureListener;Landroid/os/Handler;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/samsung/android/vr/view/VRTouchPadGestureDetector$OnTouchPadGestureListener;
-    .param p3    # Landroid/os/Handler;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -159,7 +154,6 @@
 
 .method public constructor <init>(Lcom/samsung/android/vr/view/VRTouchPadGestureDetector$OnTouchPadGestureListener;)V
     .locals 1
-    .param p1    # Lcom/samsung/android/vr/view/VRTouchPadGestureDetector$OnTouchPadGestureListener;
 
     const/4 v0, 0x0
 
@@ -170,7 +164,6 @@
 
 .method static synthetic access$000(Lcom/samsung/android/vr/view/VRTouchPadGestureDetector;)V
     .locals 0
-    .param p0    # Lcom/samsung/android/vr/view/VRTouchPadGestureDetector;
 
     invoke-direct {p0}, Lcom/samsung/android/vr/view/VRTouchPadGestureDetector;->dispatchLongPress()V
 
@@ -179,7 +172,6 @@
 
 .method static synthetic access$100(Lcom/samsung/android/vr/view/VRTouchPadGestureDetector;)Lcom/samsung/android/vr/view/VRTouchPadGestureDetector$OnTouchPadDoubleTapListener;
     .locals 1
-    .param p0    # Lcom/samsung/android/vr/view/VRTouchPadGestureDetector;
 
     iget-object v0, p0, Lcom/samsung/android/vr/view/VRTouchPadGestureDetector;->mDoubleTapListener:Lcom/samsung/android/vr/view/VRTouchPadGestureDetector$OnTouchPadDoubleTapListener;
 
@@ -188,7 +180,6 @@
 
 .method static synthetic access$200(Lcom/samsung/android/vr/view/VRTouchPadGestureDetector;)Z
     .locals 1
-    .param p0    # Lcom/samsung/android/vr/view/VRTouchPadGestureDetector;
 
     iget-boolean v0, p0, Lcom/samsung/android/vr/view/VRTouchPadGestureDetector;->mStillDown:Z
 
@@ -197,7 +188,6 @@
 
 .method static synthetic access$300(Lcom/samsung/android/vr/view/VRTouchPadGestureDetector;)Landroid/view/MotionEvent;
     .locals 1
-    .param p0    # Lcom/samsung/android/vr/view/VRTouchPadGestureDetector;
 
     iget-object v0, p0, Lcom/samsung/android/vr/view/VRTouchPadGestureDetector;->mCurrentDownEvent:Landroid/view/MotionEvent;
 
@@ -206,8 +196,6 @@
 
 .method static synthetic access$402(Lcom/samsung/android/vr/view/VRTouchPadGestureDetector;Z)Z
     .locals 0
-    .param p0    # Lcom/samsung/android/vr/view/VRTouchPadGestureDetector;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/android/vr/view/VRTouchPadGestureDetector;->mDeferConfirmSingleTap:Z
 
@@ -302,7 +290,6 @@
 
 .method private init(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     iget-object v0, p0, Lcom/samsung/android/vr/view/VRTouchPadGestureDetector;->mListener:Lcom/samsung/android/vr/view/VRTouchPadGestureDetector$OnTouchPadGestureListener;
 
@@ -350,9 +337,6 @@
 
 .method private isConsideredDoubleTap(Landroid/view/MotionEvent;Landroid/view/MotionEvent;Landroid/view/MotionEvent;)Z
     .locals 7
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # Landroid/view/MotionEvent;
-    .param p3    # Landroid/view/MotionEvent;
 
     const/4 v2, 0x0
 
@@ -471,10 +455,6 @@
 
 .method private processForSwipeAction(FFFF)I
     .locals 7
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
 
     sub-float v1, p3, p1
 
@@ -651,7 +631,6 @@
 # virtual methods
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 35
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual/range {p1 .. p1}, Landroid/view/MotionEvent;->getAction()I
 
@@ -1516,7 +1495,6 @@
 
 .method public setOnDoubleTapListener(Lcom/samsung/android/vr/view/VRTouchPadGestureDetector$OnTouchPadDoubleTapListener;)V
     .locals 0
-    .param p1    # Lcom/samsung/android/vr/view/VRTouchPadGestureDetector$OnTouchPadDoubleTapListener;
 
     iput-object p1, p0, Lcom/samsung/android/vr/view/VRTouchPadGestureDetector;->mDoubleTapListener:Lcom/samsung/android/vr/view/VRTouchPadGestureDetector$OnTouchPadDoubleTapListener;
 

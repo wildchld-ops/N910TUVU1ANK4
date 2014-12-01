@@ -13,7 +13,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Lorg/apache/commons/io/filefilter/AbstractFileFilter;-><init>()V
 
@@ -39,8 +38,6 @@
 
 .method public constructor <init>(Ljava/lang/String;I)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-direct {p0}, Lorg/apache/commons/io/filefilter/AbstractFileFilter;-><init>()V
 
@@ -66,8 +63,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Lorg/apache/commons/io/IOCase;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lorg/apache/commons/io/IOCase;
 
     invoke-direct {p0}, Lorg/apache/commons/io/filefilter/AbstractFileFilter;-><init>()V
 
@@ -106,7 +101,6 @@
 
 .method public constructor <init>(Ljava/util/regex/Pattern;)V
     .locals 2
-    .param p1    # Ljava/util/regex/Pattern;
 
     invoke-direct {p0}, Lorg/apache/commons/io/filefilter/AbstractFileFilter;-><init>()V
 
@@ -130,8 +124,6 @@
 # virtual methods
 .method public accept(Ljava/io/File;Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/io/File;
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Lorg/apache/commons/io/filefilter/RegexFileFilter;->pattern:Ljava/util/regex/Pattern;
 

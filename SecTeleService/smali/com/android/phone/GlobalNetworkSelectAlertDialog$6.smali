@@ -55,7 +55,7 @@
 
     iget-object v0, p0, Lcom/android/phone/GlobalNetworkSelectAlertDialog$6;->this$0:Lcom/android/phone/GlobalNetworkSelectAlertDialog;
 
-    invoke-virtual {v0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {v0}, Lcom/android/phone/GlobalNetworkSelectAlertDialog;->finish()V
 
     return-void
 .end method

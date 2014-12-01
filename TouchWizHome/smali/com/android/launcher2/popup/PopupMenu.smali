@@ -37,8 +37,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/view/View;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -115,7 +113,6 @@
 
 .method public inflate(I)V
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/launcher2/popup/PopupMenu;->getMenuInflater()Landroid/view/MenuInflater;
 
@@ -130,8 +127,6 @@
 
 .method public onCloseMenu(Lcom/android/launcher2/popup/MenuBuilder;Z)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/popup/MenuBuilder;
-    .param p2    # Z
 
     iget-object v0, p0, Lcom/android/launcher2/popup/PopupMenu;->mDismissListener:Lcom/android/launcher2/popup/PopupMenu$OnDismissListener;
 
@@ -147,15 +142,12 @@
 
 .method public onCloseSubMenu(Lcom/android/launcher2/popup/SubMenuBuilder;)V
     .locals 0
-    .param p1    # Lcom/android/launcher2/popup/SubMenuBuilder;
 
     return-void
 .end method
 
 .method public onMenuItemSelected(Lcom/android/launcher2/popup/MenuBuilder;Landroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # Lcom/android/launcher2/popup/MenuBuilder;
-    .param p2    # Landroid/view/MenuItem;
 
     iget-object v0, p0, Lcom/android/launcher2/popup/PopupMenu;->mMenuItemClickListener:Lcom/android/launcher2/popup/PopupMenu$OnMenuItemClickListener;
 
@@ -178,14 +170,12 @@
 
 .method public onMenuModeChange(Lcom/android/launcher2/popup/MenuBuilder;)V
     .locals 0
-    .param p1    # Lcom/android/launcher2/popup/MenuBuilder;
 
     return-void
 .end method
 
 .method public onOpenSubMenu(Lcom/android/launcher2/popup/MenuBuilder;)Z
     .locals 4
-    .param p1    # Lcom/android/launcher2/popup/MenuBuilder;
 
     const/4 v0, 0x1
 
@@ -219,7 +209,6 @@
 
 .method public setOnDismissListener(Lcom/android/launcher2/popup/PopupMenu$OnDismissListener;)V
     .locals 0
-    .param p1    # Lcom/android/launcher2/popup/PopupMenu$OnDismissListener;
 
     iput-object p1, p0, Lcom/android/launcher2/popup/PopupMenu;->mDismissListener:Lcom/android/launcher2/popup/PopupMenu$OnDismissListener;
 
@@ -228,7 +217,6 @@
 
 .method public setOnMenuItemClickListener(Lcom/android/launcher2/popup/PopupMenu$OnMenuItemClickListener;)V
     .locals 0
-    .param p1    # Lcom/android/launcher2/popup/PopupMenu$OnMenuItemClickListener;
 
     iput-object p1, p0, Lcom/android/launcher2/popup/PopupMenu;->mMenuItemClickListener:Lcom/android/launcher2/popup/PopupMenu$OnMenuItemClickListener;
 

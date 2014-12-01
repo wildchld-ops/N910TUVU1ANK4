@@ -105,7 +105,6 @@
 # direct methods
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 10
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -238,7 +237,6 @@
 
 .method static synthetic access$000(Lcom/android/systemui/recent/RecentTasksLoader;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Lcom/android/systemui/recent/RecentTasksLoader;
 
     iget-object v0, p0, Lcom/android/systemui/recent/RecentTasksLoader;->mFirstTaskLock:Ljava/lang/Object;
 
@@ -247,7 +245,6 @@
 
 .method static synthetic access$100(Lcom/android/systemui/recent/RecentTasksLoader;)V
     .locals 0
-    .param p0    # Lcom/android/systemui/recent/RecentTasksLoader;
 
     invoke-direct {p0}, Lcom/android/systemui/recent/RecentTasksLoader;->clearFirstTask()V
 
@@ -256,8 +253,6 @@
 
 .method static synthetic access$1002(Lcom/android/systemui/recent/RecentTasksLoader;Lcom/android/systemui/recent/RecentTasksLoader$State;)Lcom/android/systemui/recent/RecentTasksLoader$State;
     .locals 0
-    .param p0    # Lcom/android/systemui/recent/RecentTasksLoader;
-    .param p1    # Lcom/android/systemui/recent/RecentTasksLoader$State;
 
     iput-object p1, p0, Lcom/android/systemui/recent/RecentTasksLoader;->mState:Lcom/android/systemui/recent/RecentTasksLoader$State;
 
@@ -266,8 +261,6 @@
 
 .method static synthetic access$202(Lcom/android/systemui/recent/RecentTasksLoader;Lcom/android/systemui/recent/TaskDescription;)Lcom/android/systemui/recent/TaskDescription;
     .locals 0
-    .param p0    # Lcom/android/systemui/recent/RecentTasksLoader;
-    .param p1    # Lcom/android/systemui/recent/TaskDescription;
 
     iput-object p1, p0, Lcom/android/systemui/recent/RecentTasksLoader;->mFirstTask:Lcom/android/systemui/recent/TaskDescription;
 
@@ -276,8 +269,6 @@
 
 .method static synthetic access$302(Lcom/android/systemui/recent/RecentTasksLoader;Z)Z
     .locals 0
-    .param p0    # Lcom/android/systemui/recent/RecentTasksLoader;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/systemui/recent/RecentTasksLoader;->mFirstTaskLoaded:Z
 
@@ -286,7 +277,6 @@
 
 .method static synthetic access$400(Lcom/android/systemui/recent/RecentTasksLoader;)Lcom/android/systemui/recent/RecentsPanelView;
     .locals 1
-    .param p0    # Lcom/android/systemui/recent/RecentTasksLoader;
 
     iget-object v0, p0, Lcom/android/systemui/recent/RecentTasksLoader;->mRecentsPanel:Lcom/android/systemui/recent/RecentsPanelView;
 
@@ -295,7 +285,6 @@
 
 .method static synthetic access$500(Lcom/android/systemui/recent/RecentTasksLoader;)Z
     .locals 1
-    .param p0    # Lcom/android/systemui/recent/RecentTasksLoader;
 
     iget-boolean v0, p0, Lcom/android/systemui/recent/RecentTasksLoader;->mFirstScreenful:Z
 
@@ -304,8 +293,6 @@
 
 .method static synthetic access$502(Lcom/android/systemui/recent/RecentTasksLoader;Z)Z
     .locals 0
-    .param p0    # Lcom/android/systemui/recent/RecentTasksLoader;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/systemui/recent/RecentTasksLoader;->mFirstScreenful:Z
 
@@ -314,7 +301,6 @@
 
 .method static synthetic access$600(Lcom/android/systemui/recent/RecentTasksLoader;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/systemui/recent/RecentTasksLoader;
 
     iget-object v0, p0, Lcom/android/systemui/recent/RecentTasksLoader;->mLoadedTasks:Ljava/util/ArrayList;
 
@@ -323,8 +309,6 @@
 
 .method static synthetic access$602(Lcom/android/systemui/recent/RecentTasksLoader;Ljava/util/ArrayList;)Ljava/util/ArrayList;
     .locals 0
-    .param p0    # Lcom/android/systemui/recent/RecentTasksLoader;
-    .param p1    # Ljava/util/ArrayList;
 
     iput-object p1, p0, Lcom/android/systemui/recent/RecentTasksLoader;->mLoadedTasks:Ljava/util/ArrayList;
 
@@ -333,7 +317,6 @@
 
 .method static synthetic access$700(Lcom/android/systemui/recent/RecentTasksLoader;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/systemui/recent/RecentTasksLoader;
 
     iget-object v0, p0, Lcom/android/systemui/recent/RecentTasksLoader;->mContext:Landroid/content/Context;
 
@@ -342,9 +325,6 @@
 
 .method static synthetic access$800(Lcom/android/systemui/recent/RecentTasksLoader;Landroid/content/ComponentName;Landroid/content/pm/ActivityInfo;)Z
     .locals 1
-    .param p0    # Lcom/android/systemui/recent/RecentTasksLoader;
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Landroid/content/pm/ActivityInfo;
 
     invoke-direct {p0, p1, p2}, Lcom/android/systemui/recent/RecentTasksLoader;->isCurrentHomeActivity(Landroid/content/ComponentName;Landroid/content/pm/ActivityInfo;)Z
 
@@ -355,7 +335,6 @@
 
 .method static synthetic access$900(Lcom/android/systemui/recent/RecentTasksLoader;)I
     .locals 1
-    .param p0    # Lcom/android/systemui/recent/RecentTasksLoader;
 
     iget v0, p0, Lcom/android/systemui/recent/RecentTasksLoader;->mNumTasksInFirstScreenful:I
 
@@ -501,8 +480,6 @@
 
 .method private getFullResIcon(Landroid/content/pm/ResolveInfo;Landroid/content/pm/PackageManager;)Landroid/graphics/drawable/Drawable;
     .locals 4
-    .param p1    # Landroid/content/pm/ResolveInfo;
-    .param p2    # Landroid/content/pm/PackageManager;
 
     :try_start_0
     iget-object v3, p1, Landroid/content/pm/ResolveInfo;->activityInfo:Landroid/content/pm/ActivityInfo;
@@ -550,7 +527,6 @@
 
 .method public static getInstance(Landroid/content/Context;)Lcom/android/systemui/recent/RecentTasksLoader;
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     sget-object v0, Lcom/android/systemui/recent/RecentTasksLoader;->sInstance:Lcom/android/systemui/recent/RecentTasksLoader;
 
@@ -570,8 +546,6 @@
 
 .method private isCurrentHomeActivity(Landroid/content/ComponentName;Landroid/content/pm/ActivityInfo;)Z
     .locals 4
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Landroid/content/pm/ActivityInfo;
 
     const/4 v1, 0x0
 
@@ -673,7 +647,6 @@
 # virtual methods
 .method public cancelLoadingThumbnailsAndIcons(Lcom/android/systemui/recent/RecentsPanelView;)V
     .locals 1
-    .param p1    # Lcom/android/systemui/recent/RecentsPanelView;
 
     iget-object v0, p0, Lcom/android/systemui/recent/RecentTasksLoader;->mRecentsPanel:Lcom/android/systemui/recent/RecentsPanelView;
 
@@ -743,11 +716,6 @@
 
 .method createTaskDescription(IILandroid/content/Intent;Landroid/content/ComponentName;Ljava/lang/CharSequence;)Lcom/android/systemui/recent/TaskDescription;
     .locals 11
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
-    .param p4    # Landroid/content/ComponentName;
-    .param p5    # Ljava/lang/CharSequence;
 
     new-instance v8, Landroid/content/Intent;
 
@@ -938,8 +906,6 @@
 
 .method getFullResIcon(Landroid/content/res/Resources;I)Landroid/graphics/drawable/Drawable;
     .locals 2
-    .param p1    # Landroid/content/res/Resources;
-    .param p2    # I
 
     :try_start_0
     iget v1, p0, Lcom/android/systemui/recent/RecentTasksLoader;->mIconDpi:I
@@ -1201,7 +1167,6 @@
 
 .method public loadTasksInBackground(Z)V
     .locals 4
-    .param p1    # Z
 
     const-string v1, "STATUSBAR-RecentTasksLoader"
 
@@ -1278,7 +1243,6 @@
 
 .method loadThumbnailAndIcon(Lcom/android/systemui/recent/TaskDescription;)V
     .locals 11
-    .param p1    # Lcom/android/systemui/recent/TaskDescription;
 
     const/4 v7, 0x0
 
@@ -1565,8 +1529,6 @@
 
 .method public onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     invoke-virtual {p2}, Landroid/view/MotionEvent;->getAction()I
 
@@ -1674,7 +1636,6 @@
 
 .method public remove(Lcom/android/systemui/recent/TaskDescription;)V
     .locals 1
-    .param p1    # Lcom/android/systemui/recent/TaskDescription;
 
     iget-object v0, p0, Lcom/android/systemui/recent/RecentTasksLoader;->mLoadedTasks:Ljava/util/ArrayList;
 
@@ -1690,8 +1651,6 @@
 
 .method public setRecentsPanel(Lcom/android/systemui/recent/RecentsPanelView;Lcom/android/systemui/recent/RecentsPanelView;)V
     .locals 1
-    .param p1    # Lcom/android/systemui/recent/RecentsPanelView;
-    .param p2    # Lcom/android/systemui/recent/RecentsPanelView;
 
     if-nez p1, :cond_0
 

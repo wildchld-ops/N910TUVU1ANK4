@@ -70,8 +70,6 @@
 
 .method static synthetic access$100(Landroid/os/Messenger;Landroid/os/Message;)Landroid/os/Message;
     .locals 1
-    .param p0    # Landroid/os/Messenger;
-    .param p1    # Landroid/os/Message;
 
     invoke-static {p0, p1}, Lcom/android/internal/util/AsyncChannel$SyncMessenger;->sendMessageSynchronously(Landroid/os/Messenger;Landroid/os/Message;)Landroid/os/Message;
 
@@ -212,8 +210,6 @@
 
 .method private static sendMessageSynchronously(Landroid/os/Messenger;Landroid/os/Message;)Landroid/os/Message;
     .locals 6
-    .param p0    # Landroid/os/Messenger;
-    .param p1    # Landroid/os/Message;
 
     const/4 v5, 0x0
 

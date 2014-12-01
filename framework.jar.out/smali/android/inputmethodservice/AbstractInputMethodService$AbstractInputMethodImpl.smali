@@ -36,7 +36,6 @@
 # virtual methods
 .method public createSession(Landroid/view/inputmethod/InputMethod$SessionCallback;)V
     .locals 1
-    .param p1    # Landroid/view/inputmethod/InputMethod$SessionCallback;
 
     iget-object v0, p0, Landroid/inputmethodservice/AbstractInputMethodService$AbstractInputMethodImpl;->this$0:Landroid/inputmethodservice/AbstractInputMethodService;
 
@@ -51,7 +50,6 @@
 
 .method public revokeSession(Landroid/view/inputmethod/InputMethodSession;)V
     .locals 0
-    .param p1    # Landroid/view/inputmethod/InputMethodSession;
 
     check-cast p1, Landroid/inputmethodservice/AbstractInputMethodService$AbstractInputMethodSessionImpl;
 
@@ -62,8 +60,6 @@
 
 .method public setSessionEnabled(Landroid/view/inputmethod/InputMethodSession;Z)V
     .locals 0
-    .param p1    # Landroid/view/inputmethod/InputMethodSession;
-    .param p2    # Z
 
     if-eqz p1, :cond_0
 

@@ -48,8 +48,6 @@
 
 .method synthetic constructor <init>(Lcom/android/settings/TrustedCredentialsSettings$TrustedCertificateAdapter;Lcom/android/settings/TrustedCredentialsSettings$1;)V
     .locals 0
-    .param p1    # Lcom/android/settings/TrustedCredentialsSettings$TrustedCertificateAdapter;
-    .param p2    # Lcom/android/settings/TrustedCredentialsSettings$1;
 
     invoke-direct {p0, p1}, Lcom/android/settings/TrustedCredentialsSettings$TrustedCertificateAdapter$AliasLoader;-><init>(Lcom/android/settings/TrustedCredentialsSettings$TrustedCertificateAdapter;)V
 
@@ -60,7 +58,6 @@
 # virtual methods
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [Ljava/lang/Void;
 
@@ -73,7 +70,6 @@
 
 .method protected varargs doInBackground([Ljava/lang/Void;)Ljava/util/List;
     .locals 13
-    .param p1    # [Ljava/lang/Void;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([",
@@ -209,7 +205,6 @@
 
 .method protected bridge synthetic onPostExecute(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Ljava/util/List;
 
@@ -355,7 +350,6 @@
 
 .method protected varargs onProgressUpdate([Ljava/lang/Integer;)V
     .locals 3
-    .param p1    # [Ljava/lang/Integer;
 
     const/4 v2, 0x0
 
@@ -395,7 +389,6 @@
 
 .method protected bridge synthetic onProgressUpdate([Ljava/lang/Object;)V
     .locals 0
-    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [Ljava/lang/Integer;
 

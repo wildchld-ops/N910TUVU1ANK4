@@ -128,9 +128,6 @@
 
 .method public post(Landroid/view/MotionEvent;II)V
     .locals 3
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # I
-    .param p3    # I
 
     invoke-virtual {p0}, Lcom/android/server/accessibility/TouchExplorer$SendHoverExitDelayed;->cancel()V
 

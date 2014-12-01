@@ -14,7 +14,6 @@
 
 .method public static getLayoutMode(Landroid/view/ViewGroup;)I
     .locals 1
-    .param p0    # Landroid/view/ViewGroup;
 
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getLayoutMode()I
 
@@ -25,8 +24,6 @@
 
 .method public static setLayoutMode(Landroid/view/ViewGroup;I)V
     .locals 0
-    .param p0    # Landroid/view/ViewGroup;
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/view/ViewGroup;->setLayoutMode(I)V
 

@@ -41,7 +41,6 @@
 # direct methods
 .method public constructor <init>(Landroid/database/Cursor;Ljava/util/ArrayList;)V
     .locals 1
-    .param p1    # Landroid/database/Cursor;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -259,8 +258,6 @@
 
 .method public copyStringToBuffer(ILandroid/database/CharArrayBuffer;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/database/CharArrayBuffer;
 
     iget-object v0, p0, Lcom/android/mms/prioritysender/ThreadListCursor;->mDatabaseCursor:Landroid/database/Cursor;
 
@@ -281,7 +278,6 @@
 
 .method public getBlob(I)[B
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -302,7 +298,6 @@
 
 .method public getColumnIndex(Ljava/lang/String;)I
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -311,7 +306,6 @@
 
 .method public getColumnIndexOrThrow(Ljava/lang/String;)I
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;
@@ -325,7 +319,6 @@
 
 .method public getColumnName(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -354,7 +347,6 @@
 
 .method public getDouble(I)D
     .locals 2
-    .param p1    # I
 
     const-wide/16 v0, 0x0
 
@@ -371,7 +363,6 @@
 
 .method public getFloat(I)F
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -380,7 +371,6 @@
 
 .method public getInt(I)I
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/mms/prioritysender/ThreadListCursor;->mDatabaseCursor:Landroid/database/Cursor;
 
@@ -393,7 +383,6 @@
 
 .method public getLong(I)J
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/mms/prioritysender/ThreadListCursor;->mDatabaseCursor:Landroid/database/Cursor;
 
@@ -422,7 +411,6 @@
 
 .method public getShort(I)S
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -431,7 +419,6 @@
 
 .method public getString(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/mms/prioritysender/ThreadListCursor;->mDatabaseCursor:Landroid/database/Cursor;
 
@@ -444,7 +431,6 @@
 
 .method public getType(I)I
     .locals 1
-    .param p1    # I
 
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
@@ -561,7 +547,6 @@
 
 .method public isNull(I)Z
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -570,7 +555,6 @@
 
 .method public move(I)Z
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Lcom/android/mms/prioritysender/ThreadListCursor;->mCurrentRow:I
 
@@ -629,7 +613,6 @@
 
 .method public moveToPosition(I)Z
     .locals 2
-    .param p1    # I
 
     if-ltz p1, :cond_0
 
@@ -686,7 +669,6 @@
 
 .method public registerContentObserver(Landroid/database/ContentObserver;)V
     .locals 1
-    .param p1    # Landroid/database/ContentObserver;
 
     iget-object v0, p0, Lcom/android/mms/prioritysender/ThreadListCursor;->mDatabaseCursor:Landroid/database/Cursor;
 
@@ -697,7 +679,6 @@
 
 .method public registerDataSetObserver(Landroid/database/DataSetObserver;)V
     .locals 1
-    .param p1    # Landroid/database/DataSetObserver;
 
     iget-object v0, p0, Lcom/android/mms/prioritysender/ThreadListCursor;->mDatabaseCursor:Landroid/database/Cursor;
 
@@ -718,7 +699,6 @@
 
 .method public respond(Landroid/os/Bundle;)Landroid/os/Bundle;
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     iget-object v0, p0, Lcom/android/mms/prioritysender/ThreadListCursor;->mDatabaseCursor:Landroid/database/Cursor;
 
@@ -731,8 +711,6 @@
 
 .method public setNotificationUri(Landroid/content/ContentResolver;Landroid/net/Uri;)V
     .locals 1
-    .param p1    # Landroid/content/ContentResolver;
-    .param p2    # Landroid/net/Uri;
 
     iget-object v0, p0, Lcom/android/mms/prioritysender/ThreadListCursor;->mDatabaseCursor:Landroid/database/Cursor;
 
@@ -743,7 +721,6 @@
 
 .method public unregisterContentObserver(Landroid/database/ContentObserver;)V
     .locals 1
-    .param p1    # Landroid/database/ContentObserver;
 
     iget-object v0, p0, Lcom/android/mms/prioritysender/ThreadListCursor;->mDatabaseCursor:Landroid/database/Cursor;
 
@@ -754,7 +731,6 @@
 
 .method public unregisterDataSetObserver(Landroid/database/DataSetObserver;)V
     .locals 1
-    .param p1    # Landroid/database/DataSetObserver;
 
     iget-object v0, p0, Lcom/android/mms/prioritysender/ThreadListCursor;->mDatabaseCursor:Landroid/database/Cursor;
 

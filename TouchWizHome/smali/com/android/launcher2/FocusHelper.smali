@@ -224,9 +224,6 @@
 
 .method static synthetic access$000(Landroid/view/View;ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p0    # Landroid/view/View;
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     invoke-static {p0, p1, p2}, Lcom/android/launcher2/FocusHelper;->handleDownloadedIconKeyEvent(Landroid/view/View;ILandroid/view/KeyEvent;)Z
 
@@ -237,9 +234,6 @@
 
 .method static synthetic access$100(Landroid/view/View;ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p0    # Landroid/view/View;
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     invoke-static {p0, p1, p2}, Lcom/android/launcher2/FocusHelper;->handleTitleBarKeyEvent(Landroid/view/View;ILandroid/view/KeyEvent;)Z
 
@@ -250,9 +244,6 @@
 
 .method static synthetic access$1000(Landroid/view/View;ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p0    # Landroid/view/View;
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     invoke-static {p0, p1, p2}, Lcom/android/launcher2/FocusHelper;->handleFolderAddItemKeyEvent(Landroid/view/View;ILandroid/view/KeyEvent;)Z
 
@@ -263,9 +254,6 @@
 
 .method static synthetic access$1100(Landroid/view/View;ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p0    # Landroid/view/View;
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     invoke-static {p0, p1, p2}, Lcom/android/launcher2/FocusHelper;->handleFolderOptionsButtonKeyEvent(Landroid/view/View;ILandroid/view/KeyEvent;)Z
 
@@ -276,9 +264,6 @@
 
 .method static synthetic access$1200(Landroid/view/View;ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p0    # Landroid/view/View;
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     invoke-static {p0, p1, p2}, Lcom/android/launcher2/FocusHelper;->handleCreateFolderOptionsButtonKeyEvent(Landroid/view/View;ILandroid/view/KeyEvent;)Z
 
@@ -289,10 +274,6 @@
 
 .method static synthetic access$1300(Landroid/view/View;ILandroid/view/KeyEvent;I)Z
     .locals 1
-    .param p0    # Landroid/view/View;
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
-    .param p3    # I
 
     invoke-static {p0, p1, p2, p3}, Lcom/android/launcher2/FocusHelper;->handleHotseatButtonKeyEvent(Landroid/view/View;ILandroid/view/KeyEvent;I)Z
 
@@ -303,9 +284,6 @@
 
 .method static synthetic access$1400(Landroid/view/View;ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p0    # Landroid/view/View;
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     invoke-static {p0, p1, p2}, Lcom/android/launcher2/FocusHelper;->handleHomeOptionMenuonKeyEvent(Landroid/view/View;ILandroid/view/KeyEvent;)Z
 
@@ -316,9 +294,6 @@
 
 .method static synthetic access$1500(Landroid/view/View;ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p0    # Landroid/view/View;
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     invoke-static {p0, p1, p2}, Lcom/android/launcher2/FocusHelper;->handleMenuAppGridIconKeyEvent(Landroid/view/View;ILandroid/view/KeyEvent;)Z
 
@@ -329,9 +304,6 @@
 
 .method static synthetic access$1600(Landroid/view/View;ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p0    # Landroid/view/View;
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     invoke-static {p0, p1, p2}, Lcom/android/launcher2/FocusHelper;->handleAppsCustomizeTabKeyEvent(Landroid/view/View;ILandroid/view/KeyEvent;)Z
 
@@ -350,9 +322,6 @@
 
 .method static synthetic access$1800(Landroid/view/View;ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p0    # Landroid/view/View;
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     invoke-static {p0, p1, p2}, Lcom/android/launcher2/FocusHelper;->handleFolderColorViewItemsKeyEvent(Landroid/view/View;ILandroid/view/KeyEvent;)Z
 
@@ -363,9 +332,6 @@
 
 .method static synthetic access$1900(Landroid/view/View;ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p0    # Landroid/view/View;
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     invoke-static {p0, p1, p2}, Lcom/android/launcher2/FocusHelper;->handleCreateFolderColorViewItemsKeyEvent(Landroid/view/View;ILandroid/view/KeyEvent;)Z
 
@@ -376,10 +342,6 @@
 
 .method static synthetic access$200(Landroid/view/View;ILandroid/view/KeyEvent;I)Z
     .locals 1
-    .param p0    # Landroid/view/View;
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
-    .param p3    # I
 
     invoke-static {p0, p1, p2, p3}, Lcom/android/launcher2/FocusHelper;->handleWorkspaceIconKeyEvent(Landroid/view/View;ILandroid/view/KeyEvent;I)Z
 
@@ -390,9 +352,6 @@
 
 .method static synthetic access$2000(Landroid/view/View;ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p0    # Landroid/view/View;
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     invoke-static {p0, p1, p2}, Lcom/android/launcher2/FocusHelper;->handleHomeMagazineButtonKeyEvent(Landroid/view/View;ILandroid/view/KeyEvent;)Z
 
@@ -403,9 +362,6 @@
 
 .method static synthetic access$300(Landroid/view/View;ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p0    # Landroid/view/View;
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     invoke-static {p0, p1, p2}, Lcom/android/launcher2/FocusHelper;->handleWorkspaceGoogleSearchKeyEvent(Landroid/view/View;ILandroid/view/KeyEvent;)Z
 
@@ -416,10 +372,6 @@
 
 .method static synthetic access$400(Landroid/view/View;ILandroid/view/KeyEvent;I)Z
     .locals 1
-    .param p0    # Landroid/view/View;
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
-    .param p3    # I
 
     invoke-static {p0, p1, p2, p3}, Lcom/android/launcher2/FocusHelper;->handleQuickAllappsIconKeyEvent(Landroid/view/View;ILandroid/view/KeyEvent;I)Z
 
@@ -430,10 +382,6 @@
 
 .method static synthetic access$500(Landroid/view/View;ILandroid/view/KeyEvent;I)Z
     .locals 1
-    .param p0    # Landroid/view/View;
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
-    .param p3    # I
 
     invoke-static {p0, p1, p2, p3}, Lcom/android/launcher2/FocusHelper;->handleQuickCameraIconKeyEvent(Landroid/view/View;ILandroid/view/KeyEvent;I)Z
 
@@ -444,10 +392,6 @@
 
 .method static synthetic access$600(Landroid/view/View;ILandroid/view/KeyEvent;I)Z
     .locals 1
-    .param p0    # Landroid/view/View;
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
-    .param p3    # I
 
     invoke-static {p0, p1, p2, p3}, Lcom/android/launcher2/FocusHelper;->handleHomeSoftkeyPhoneIconKeyEvent(Landroid/view/View;ILandroid/view/KeyEvent;I)Z
 
@@ -458,10 +402,6 @@
 
 .method static synthetic access$700(Landroid/view/View;ILandroid/view/KeyEvent;I)Z
     .locals 1
-    .param p0    # Landroid/view/View;
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
-    .param p3    # I
 
     invoke-static {p0, p1, p2, p3}, Lcom/android/launcher2/FocusHelper;->handleHomeSoftkeyAllappsIconKeyEvent(Landroid/view/View;ILandroid/view/KeyEvent;I)Z
 
@@ -472,9 +412,6 @@
 
 .method static synthetic access$800(Landroid/view/View;ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p0    # Landroid/view/View;
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     invoke-static {p0, p1, p2}, Lcom/android/launcher2/FocusHelper;->handleFolderKeyEvent(Landroid/view/View;ILandroid/view/KeyEvent;)Z
 
@@ -485,9 +422,6 @@
 
 .method static synthetic access$900(Landroid/view/View;ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p0    # Landroid/view/View;
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     invoke-static {p0, p1, p2}, Lcom/android/launcher2/FocusHelper;->handleFolderNameKeyEvent(Landroid/view/View;ILandroid/view/KeyEvent;)Z
 
@@ -498,7 +432,6 @@
 
 .method private static findFolderParent(Landroid/view/View;)Lcom/android/launcher2/Folder;
     .locals 2
-    .param p0    # Landroid/view/View;
 
     invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
 
@@ -525,8 +458,6 @@
 
 .method private static findIndexOfIcon(Ljava/util/ArrayList;II)Landroid/view/View;
     .locals 4
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -575,7 +506,6 @@
 
 .method private static findTabHostParent(Landroid/view/View;)Landroid/widget/TabHost;
     .locals 2
-    .param p0    # Landroid/view/View;
 
     invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
 
@@ -609,8 +539,6 @@
 
 .method private static getCellLayoutChildrenForIndex(Landroid/view/ViewGroup;I)Lcom/android/launcher2/CellLayoutChildren;
     .locals 2
-    .param p0    # Landroid/view/ViewGroup;
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
@@ -631,8 +559,6 @@
 
 .method private static getCellLayoutChildrenSortedSpatially(Lcom/android/launcher2/CellLayout;Landroid/view/ViewGroup;)Ljava/util/ArrayList;
     .locals 5
-    .param p0    # Lcom/android/launcher2/CellLayout;
-    .param p1    # Landroid/view/ViewGroup;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -685,10 +611,6 @@
 
 .method private static getClosestIconOnLine(Lcom/android/launcher2/CellLayout;Landroid/view/ViewGroup;Landroid/view/View;I)Landroid/view/View;
     .locals 21
-    .param p0    # Lcom/android/launcher2/CellLayout;
-    .param p1    # Landroid/view/ViewGroup;
-    .param p2    # Landroid/view/View;
-    .param p3    # I
 
     invoke-static/range {p0 .. p1}, Lcom/android/launcher2/FocusHelper;->getCellLayoutChildrenSortedSpatially(Lcom/android/launcher2/CellLayout;Landroid/view/ViewGroup;)Ljava/util/ArrayList;
 
@@ -870,7 +792,6 @@
 
 .method private static getFolderColorViewKey(Landroid/view/View;)Lcom/android/launcher2/Folder$FolderColor;
     .locals 2
-    .param p0    # Landroid/view/View;
 
     invoke-virtual {p0}, Landroid/view/View;->getId()I
 
@@ -914,9 +835,6 @@
 
 .method private static getIconAtPosition(Lcom/android/launcher2/CellLayoutChildren;II)Landroid/view/View;
     .locals 3
-    .param p0    # Lcom/android/launcher2/CellLayoutChildren;
-    .param p1    # I
-    .param p2    # I
 
     div-int v1, p1, p2
 
@@ -931,10 +849,6 @@
 
 .method public static getIconInDirection(Lcom/android/launcher2/CellLayout;Landroid/view/ViewGroup;II)Landroid/view/View;
     .locals 2
-    .param p0    # Lcom/android/launcher2/CellLayout;
-    .param p1    # Landroid/view/ViewGroup;
-    .param p2    # I
-    .param p3    # I
 
     invoke-static {p0, p1}, Lcom/android/launcher2/FocusHelper;->getCellLayoutChildrenSortedSpatially(Lcom/android/launcher2/CellLayout;Landroid/view/ViewGroup;)Ljava/util/ArrayList;
 
@@ -949,10 +863,6 @@
 
 .method public static getIconInDirection(Lcom/android/launcher2/CellLayout;Landroid/view/ViewGroup;Landroid/view/View;I)Landroid/view/View;
     .locals 2
-    .param p0    # Lcom/android/launcher2/CellLayout;
-    .param p1    # Landroid/view/ViewGroup;
-    .param p2    # Landroid/view/View;
-    .param p3    # I
 
     invoke-static {p0, p1}, Lcom/android/launcher2/FocusHelper;->getCellLayoutChildrenSortedSpatially(Lcom/android/launcher2/CellLayout;Landroid/view/ViewGroup;)Ljava/util/ArrayList;
 
@@ -971,8 +881,6 @@
 
 .method private static getPage(Lcom/android/launcher2/PagedView;I)Landroid/view/ViewGroup;
     .locals 2
-    .param p0    # Lcom/android/launcher2/PagedView;
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/launcher2/PagedView;->getPageAt(I)Landroid/view/View;
 
@@ -998,9 +906,6 @@
 
 .method private static handleAppsCustomizeTabKeyEvent(Landroid/view/View;ILandroid/view/KeyEvent;)Z
     .locals 23
-    .param p0    # Landroid/view/View;
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     invoke-virtual/range {p0 .. p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
 
@@ -1569,9 +1474,6 @@
 
 .method private static handleCreateFolderColorViewItemsKeyEvent(Landroid/view/View;ILandroid/view/KeyEvent;)Z
     .locals 12
-    .param p0    # Landroid/view/View;
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v5, 0x1
 
@@ -1787,9 +1689,6 @@
 
 .method private static handleCreateFolderOptionsButtonKeyEvent(Landroid/view/View;ILandroid/view/KeyEvent;)Z
     .locals 9
-    .param p0    # Landroid/view/View;
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v3, 0x1
 
@@ -1912,9 +1811,6 @@
 
 .method private static handleDownloadedIconKeyEvent(Landroid/view/View;ILandroid/view/KeyEvent;)Z
     .locals 11
-    .param p0    # Landroid/view/View;
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v4, 0x1
 
@@ -2078,9 +1974,6 @@
 
 .method private static handleFolderAddItemKeyEvent(Landroid/view/View;ILandroid/view/KeyEvent;)Z
     .locals 12
-    .param p0    # Landroid/view/View;
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v9, 0x1
 
@@ -2209,9 +2102,6 @@
 
 .method private static handleFolderColorViewItemsKeyEvent(Landroid/view/View;ILandroid/view/KeyEvent;)Z
     .locals 15
-    .param p0    # Landroid/view/View;
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     invoke-static {p0}, Lcom/android/launcher2/FocusHelper;->findFolderParent(Landroid/view/View;)Lcom/android/launcher2/Folder;
 
@@ -2433,9 +2323,6 @@
 
 .method private static handleFolderKeyEvent(Landroid/view/View;ILandroid/view/KeyEvent;)Z
     .locals 14
-    .param p0    # Landroid/view/View;
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
 
@@ -2734,9 +2621,6 @@
 
 .method private static handleFolderNameKeyEvent(Landroid/view/View;ILandroid/view/KeyEvent;)Z
     .locals 13
-    .param p0    # Landroid/view/View;
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     invoke-static {p0}, Lcom/android/launcher2/FocusHelper;->findFolderParent(Landroid/view/View;)Lcom/android/launcher2/Folder;
 
@@ -2957,9 +2841,6 @@
 
 .method private static handleFolderOptionsButtonKeyEvent(Landroid/view/View;ILandroid/view/KeyEvent;)Z
     .locals 13
-    .param p0    # Landroid/view/View;
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     invoke-static {p0}, Lcom/android/launcher2/FocusHelper;->findFolderParent(Landroid/view/View;)Lcom/android/launcher2/Folder;
 
@@ -3123,9 +3004,6 @@
 
 .method private static handleHomeMagazineButtonKeyEvent(Landroid/view/View;ILandroid/view/KeyEvent;)Z
     .locals 16
-    .param p0    # Landroid/view/View;
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     invoke-virtual/range {p0 .. p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
 
@@ -3388,9 +3266,6 @@
 
 .method private static handleHomeOptionMenuonKeyEvent(Landroid/view/View;ILandroid/view/KeyEvent;)Z
     .locals 12
-    .param p0    # Landroid/view/View;
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v11, 0x2
 
@@ -3593,10 +3468,6 @@
 
 .method private static handleHomeSoftkeyAllappsIconKeyEvent(Landroid/view/View;ILandroid/view/KeyEvent;I)Z
     .locals 16
-    .param p0    # Landroid/view/View;
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
-    .param p3    # I
 
     if-nez p0, :cond_0
 
@@ -3883,10 +3754,6 @@
 
 .method private static handleHomeSoftkeyPhoneIconKeyEvent(Landroid/view/View;ILandroid/view/KeyEvent;I)Z
     .locals 16
-    .param p0    # Landroid/view/View;
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
-    .param p3    # I
 
     if-nez p0, :cond_0
 
@@ -4158,10 +4025,6 @@
 
 .method private static handleHotseatButtonKeyEvent(Landroid/view/View;ILandroid/view/KeyEvent;I)Z
     .locals 29
-    .param p0    # Landroid/view/View;
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
-    .param p3    # I
 
     invoke-virtual/range {p0 .. p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
 
@@ -5153,9 +5016,6 @@
 
 .method private static handleMenuAppGridIconKeyEvent(Landroid/view/View;ILandroid/view/KeyEvent;)Z
     .locals 27
-    .param p0    # Landroid/view/View;
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     invoke-virtual/range {p0 .. p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
 
@@ -6022,9 +5882,6 @@
 
 .method static handlePagedViewWidgetKeyEvent(Lcom/android/launcher2/PagedViewWidget;ILandroid/view/KeyEvent;)Z
     .locals 25
-    .param p0    # Lcom/android/launcher2/PagedViewWidget;
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     invoke-virtual/range {p0 .. p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
 
@@ -6717,10 +6574,6 @@
 
 .method private static handleQuickAllappsIconKeyEvent(Landroid/view/View;ILandroid/view/KeyEvent;I)Z
     .locals 21
-    .param p0    # Landroid/view/View;
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
-    .param p3    # I
 
     if-nez p0, :cond_0
 
@@ -7025,10 +6878,6 @@
 
 .method private static handleQuickCameraIconKeyEvent(Landroid/view/View;ILandroid/view/KeyEvent;I)Z
     .locals 23
-    .param p0    # Landroid/view/View;
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
-    .param p3    # I
 
     if-nez p0, :cond_0
 
@@ -7354,9 +7203,6 @@
 
 .method static handleTabKeyEvent(Lcom/android/launcher2/AccessibleTabView;ILandroid/view/KeyEvent;)Z
     .locals 10
-    .param p0    # Lcom/android/launcher2/AccessibleTabView;
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v2, 0x1
 
@@ -7514,9 +7360,6 @@
 
 .method private static handleTitleBarKeyEvent(Landroid/view/View;ILandroid/view/KeyEvent;)Z
     .locals 10
-    .param p0    # Landroid/view/View;
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     invoke-virtual {p0}, Landroid/view/View;->getRootView()Landroid/view/View;
 
@@ -7801,10 +7644,6 @@
 
 .method static handleWidgetFolderPagedViewWidgetKeyEvent(Lcom/android/launcher2/MenuWidgets;Lcom/android/launcher2/PagedViewWidget;ILandroid/view/KeyEvent;)Z
     .locals 16
-    .param p0    # Lcom/android/launcher2/MenuWidgets;
-    .param p1    # Lcom/android/launcher2/PagedViewWidget;
-    .param p2    # I
-    .param p3    # Landroid/view/KeyEvent;
 
     invoke-virtual/range {p1 .. p1}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
 
@@ -8088,9 +7927,6 @@
 
 .method private static handleWorkspaceGoogleSearchKeyEvent(Landroid/view/View;ILandroid/view/KeyEvent;)Z
     .locals 21
-    .param p0    # Landroid/view/View;
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     invoke-static {}, Lcom/android/launcher2/LauncherApplication;->isTabletLayout()Z
 
@@ -8607,10 +8443,6 @@
 
 .method private static handleWorkspaceIconKeyEvent(Landroid/view/View;ILandroid/view/KeyEvent;I)Z
     .locals 29
-    .param p0    # Landroid/view/View;
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
-    .param p3    # I
 
     if-eqz p0, :cond_0
 
@@ -9532,7 +9364,6 @@
 
 .method static is12KEYNaviKeyFocus(Landroid/view/View;)Z
     .locals 3
-    .param p0    # Landroid/view/View;
 
     invoke-virtual {p0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
 
@@ -9567,7 +9398,6 @@
 
 .method public static setup(Lcom/android/launcher2/HomeView;)V
     .locals 0
-    .param p0    # Lcom/android/launcher2/HomeView;
 
     sput-object p0, Lcom/android/launcher2/FocusHelper;->sHomeView:Lcom/android/launcher2/HomeView;
 

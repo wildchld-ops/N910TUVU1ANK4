@@ -36,8 +36,6 @@
 # virtual methods
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 4
-    .param p1    # Landroid/widget/CompoundButton;
-    .param p2    # Z
 
     iget-object v1, p0, Lcom/diotek/ime/implement/setting/AutoReplacementSettingsFragment$1;->this$0:Lcom/diotek/ime/implement/setting/AutoReplacementSettingsFragment;
 

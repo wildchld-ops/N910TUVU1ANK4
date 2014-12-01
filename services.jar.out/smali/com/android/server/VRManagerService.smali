@@ -39,7 +39,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Lcom/android/internal/app/IVRManagerService$Stub;-><init>()V
 
@@ -78,7 +77,6 @@
 
 .method static synthetic access$000(Lcom/android/server/VRManagerService;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Lcom/android/server/VRManagerService;
 
     iget-object v0, p0, Lcom/android/server/VRManagerService;->mLock:Ljava/lang/Object;
 
@@ -87,7 +85,6 @@
 
 .method static synthetic access$100(Lcom/android/server/VRManagerService;)Lcom/android/server/VRManagerService$VRConnection;
     .locals 1
-    .param p0    # Lcom/android/server/VRManagerService;
 
     iget-object v0, p0, Lcom/android/server/VRManagerService;->mConnection:Lcom/android/server/VRManagerService$VRConnection;
 
@@ -96,8 +93,6 @@
 
 .method static synthetic access$102(Lcom/android/server/VRManagerService;Lcom/android/server/VRManagerService$VRConnection;)Lcom/android/server/VRManagerService$VRConnection;
     .locals 0
-    .param p0    # Lcom/android/server/VRManagerService;
-    .param p1    # Lcom/android/server/VRManagerService$VRConnection;
 
     iput-object p1, p0, Lcom/android/server/VRManagerService;->mConnection:Lcom/android/server/VRManagerService$VRConnection;
 
@@ -106,7 +101,6 @@
 
 .method static synthetic access$200(Lcom/android/server/VRManagerService;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/server/VRManagerService;
 
     iget-object v0, p0, Lcom/android/server/VRManagerService;->mHandler:Landroid/os/Handler;
 
@@ -115,7 +109,6 @@
 
 .method private bind(Landroid/content/Context;)Lcom/android/server/VRManagerService$VRConnection;
     .locals 9
-    .param p1    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/InterruptedException;
@@ -197,7 +190,6 @@
 
 .method private static ensureNotOnMainThread(Landroid/content/Context;)V
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     invoke-static {}, Landroid/os/Looper;->myLooper()Landroid/os/Looper;
 
@@ -320,10 +312,6 @@
 
 .method private scheduleThreadFIFO(Ljava/lang/String;III)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const-string/jumbo v3, "scheduleThreadFIFO"
 
@@ -471,10 +459,6 @@
 
 .method private scheduleThreadOTHER(Ljava/lang/String;III)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const-string/jumbo v2, "scheduleThreadOTHER"
 
@@ -609,9 +593,6 @@
 
 .method public SetVrClocks(Ljava/lang/String;II)[I
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v4, 0x0
 
@@ -653,9 +634,6 @@
 
 .method protected dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     iget-object v3, p0, Lcom/android/server/VRManagerService;->mContext:Landroid/content/Context;
 
@@ -863,9 +841,6 @@
 
 .method public enforceCallingPermission(IILjava/lang/String;)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     :try_start_0
     invoke-direct {p0}, Lcom/android/server/VRManagerService;->getService()Lcom/android/internal/app/IVRManagerService;
@@ -893,7 +868,6 @@
 
 .method public enforceCallingPermission(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Landroid/os/Binder;->getCallingPid()I
 
@@ -910,7 +884,6 @@
 
 .method public getOption(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const-string v3, "getOption"
 
@@ -946,7 +919,6 @@
 
 .method public getSystemOption(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const-string v3, "getSystemOption"
 
@@ -1279,7 +1251,6 @@
 
 .method public relFreq(Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const-string/jumbo v3, "relFreq"
 
@@ -1315,7 +1286,6 @@
 
 .method public releaseCPUMhz(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const-string/jumbo v2, "releaseCPUMhz"
 
@@ -1347,7 +1317,6 @@
 
 .method public releaseGPUMhz(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const-string/jumbo v2, "releaseGPUMhz"
 
@@ -1420,9 +1389,6 @@
 
 .method public setCPUClockMhz(Ljava/lang/String;[II)[I
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # [I
-    .param p3    # I
 
     const/4 v4, 0x0
 
@@ -1464,8 +1430,6 @@
 
 .method public setGPUClockMhz(Ljava/lang/String;I)I
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const-string/jumbo v3, "setGPUClockMhz"
 
@@ -1501,8 +1465,6 @@
 
 .method public setOption(Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const-string/jumbo v2, "setOption"
 
@@ -1534,8 +1496,6 @@
 
 .method public setSystemOption(Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const-string/jumbo v2, "setSystemOption"
 
@@ -1567,10 +1527,6 @@
 
 .method public setThreadSchedFifo(Ljava/lang/String;III)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/4 v0, 0x0
 
@@ -1604,7 +1560,6 @@
 
 .method public setVRBright(I)V
     .locals 3
-    .param p1    # I
 
     const-string/jumbo v2, "setVRBright"
 
@@ -1636,7 +1591,6 @@
 
 .method public setVRColorTemperature(I)V
     .locals 3
-    .param p1    # I
 
     const-string/jumbo v2, "setVRColorTemperature"
 
@@ -1668,7 +1622,6 @@
 
 .method public setVRComfortableView(Z)V
     .locals 3
-    .param p1    # Z
 
     const-string/jumbo v2, "setVRComfortableView"
 
@@ -1700,7 +1653,6 @@
 
 .method public setVRDarkAdaptation(Z)V
     .locals 3
-    .param p1    # Z
 
     const-string/jumbo v2, "setVRDarkAdaptation"
 
@@ -1732,7 +1684,6 @@
 
 .method public setVRLowPersistence(Z)V
     .locals 3
-    .param p1    # Z
 
     const-string/jumbo v2, "setVRLowPersistence"
 
@@ -1764,7 +1715,6 @@
 
 .method public setVRMode(Z)V
     .locals 3
-    .param p1    # Z
 
     const-string/jumbo v2, "setVRMode"
 
@@ -1796,7 +1746,6 @@
 
 .method public setVRPerformanceMode(Z)V
     .locals 3
-    .param p1    # Z
 
     const-string/jumbo v2, "setVRPerformanceMode"
 
@@ -1828,9 +1777,6 @@
 
 .method public setVideoMode(Ljava/lang/String;FZ)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # F
-    .param p3    # Z
 
     const-string/jumbo v3, "setVideoMode"
 

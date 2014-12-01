@@ -129,7 +129,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     const/4 v3, -0x1
 
@@ -300,8 +299,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v3, -0x1
 
@@ -472,9 +469,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v3, -0x1
 
@@ -645,9 +639,6 @@
 
 .method static synthetic access$000(Landroid/view/SurfaceView;ZZ)V
     .locals 0
-    .param p0    # Landroid/view/SurfaceView;
-    .param p1    # Z
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Landroid/view/SurfaceView;->updateWindow(ZZ)V
 
@@ -700,8 +691,6 @@
 
 .method private updateWindow(ZZ)V
     .locals 41
-    .param p1    # Z
-    .param p2    # Z
 
     move-object/from16 v0, p0
 
@@ -1947,7 +1936,6 @@
 # virtual methods
 .method protected dispatchDraw(Landroid/graphics/Canvas;)V
     .locals 2
-    .param p1    # Landroid/graphics/Canvas;
 
     iget v0, p0, Landroid/view/SurfaceView;->mWindowType:I
 
@@ -1977,7 +1965,6 @@
 
 .method public draw(Landroid/graphics/Canvas;)V
     .locals 2
-    .param p1    # Landroid/graphics/Canvas;
 
     iget v0, p0, Landroid/view/SurfaceView;->mWindowType:I
 
@@ -2005,7 +1992,6 @@
 
 .method public gatherTransparentRegion(Landroid/graphics/Region;)Z
     .locals 9
-    .param p1    # Landroid/graphics/Region;
 
     iget v0, p0, Landroid/view/SurfaceView;->mWindowType:I
 
@@ -2284,8 +2270,6 @@
 
 .method protected onMeasure(II)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     const/4 v3, 0x0
 
@@ -2332,7 +2316,6 @@
 
 .method protected onWindowVisibilityChanged(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -2375,7 +2358,6 @@
 
 .method public setFixedOrientation(I)V
     .locals 5
-    .param p1    # I
 
     const/4 v3, -0x1
 
@@ -2504,11 +2486,6 @@
 
 .method public setFixedOrientation(IIIII)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     iget-object v0, p0, Landroid/view/SurfaceView;->mLayout:Landroid/view/WindowManager$LayoutParams;
 
@@ -2535,10 +2512,6 @@
 
 .method protected setFrame(IIII)Z
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/4 v1, 0x0
 
@@ -2553,7 +2526,6 @@
 
 .method public setSecure(Z)V
     .locals 2
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -2582,7 +2554,6 @@
 
 .method public setVisibility(I)V
     .locals 4
-    .param p1    # I
 
     const/4 v2, 0x1
 
@@ -2634,7 +2605,6 @@
 
 .method public setWindowType(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/view/SurfaceView;->mWindowType:I
 
@@ -2643,7 +2613,6 @@
 
 .method public setZOrderMediaOverlay(Z)V
     .locals 1
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -2662,7 +2631,6 @@
 
 .method public setZOrderOnTop(Z)V
     .locals 3
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 

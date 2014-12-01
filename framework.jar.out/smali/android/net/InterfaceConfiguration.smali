@@ -69,8 +69,6 @@
 
 .method static synthetic access$002(Landroid/net/InterfaceConfiguration;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Landroid/net/InterfaceConfiguration;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/net/InterfaceConfiguration;->mHwAddr:Ljava/lang/String;
 
@@ -79,7 +77,6 @@
 
 .method static synthetic access$100(Landroid/net/InterfaceConfiguration;)Ljava/util/HashSet;
     .locals 1
-    .param p0    # Landroid/net/InterfaceConfiguration;
 
     iget-object v0, p0, Landroid/net/InterfaceConfiguration;->mFlags:Ljava/util/HashSet;
 
@@ -88,7 +85,6 @@
 
 .method private static validateFlag(Ljava/lang/String;)V
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     const/16 v0, 0x20
 
@@ -130,7 +126,6 @@
 # virtual methods
 .method public clearFlag(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Landroid/net/InterfaceConfiguration;->validateFlag(Ljava/lang/String;)V
 
@@ -184,7 +179,6 @@
 
 .method public hasFlag(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Landroid/net/InterfaceConfiguration;->validateFlag(Ljava/lang/String;)V
 
@@ -253,7 +247,6 @@
 
 .method public setFlag(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Landroid/net/InterfaceConfiguration;->validateFlag(Ljava/lang/String;)V
 
@@ -266,7 +259,6 @@
 
 .method public setHardwareAddress(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/net/InterfaceConfiguration;->mHwAddr:Ljava/lang/String;
 
@@ -311,7 +303,6 @@
 
 .method public setLinkAddress(Landroid/net/LinkAddress;)V
     .locals 0
-    .param p1    # Landroid/net/LinkAddress;
 
     iput-object p1, p0, Landroid/net/InterfaceConfiguration;->mAddr:Landroid/net/LinkAddress;
 
@@ -370,8 +361,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 3
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v2, p0, Landroid/net/InterfaceConfiguration;->mHwAddr:Ljava/lang/String;
 

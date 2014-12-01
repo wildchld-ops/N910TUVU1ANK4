@@ -84,7 +84,6 @@
 
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -123,7 +122,6 @@
 
 .method static synthetic access$000(Landroid/support/v4/content/LocalBroadcastManager;)V
     .locals 0
-    .param p0    # Landroid/support/v4/content/LocalBroadcastManager;
 
     invoke-direct {p0}, Landroid/support/v4/content/LocalBroadcastManager;->executePendingBroadcasts()V
 
@@ -226,7 +224,6 @@
 
 .method public static getInstance(Landroid/content/Context;)Landroid/support/v4/content/LocalBroadcastManager;
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     sget-object v1, Landroid/support/v4/content/LocalBroadcastManager;->mLock:Ljava/lang/Object;
 
@@ -268,8 +265,6 @@
 # virtual methods
 .method public registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)V
     .locals 7
-    .param p1    # Landroid/content/BroadcastReceiver;
-    .param p2    # Landroid/content/IntentFilter;
 
     iget-object v6, p0, Landroid/support/v4/content/LocalBroadcastManager;->mReceivers:Ljava/util/HashMap;
 
@@ -360,7 +355,6 @@
 
 .method public sendBroadcast(Landroid/content/Intent;)Z
     .locals 17
-    .param p1    # Landroid/content/Intent;
 
     move-object/from16 v0, p0
 
@@ -789,7 +783,6 @@
 
 .method public sendBroadcastSync(Landroid/content/Intent;)V
     .locals 1
-    .param p1    # Landroid/content/Intent;
 
     invoke-virtual {p0, p1}, Landroid/support/v4/content/LocalBroadcastManager;->sendBroadcast(Landroid/content/Intent;)Z
 
@@ -805,7 +798,6 @@
 
 .method public unregisterReceiver(Landroid/content/BroadcastReceiver;)V
     .locals 9
-    .param p1    # Landroid/content/BroadcastReceiver;
 
     iget-object v8, p0, Landroid/support/v4/content/LocalBroadcastManager;->mReceivers:Ljava/util/HashMap;
 

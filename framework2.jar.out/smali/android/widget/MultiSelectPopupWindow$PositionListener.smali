@@ -92,8 +92,6 @@
 
 .method synthetic constructor <init>(Landroid/widget/MultiSelectPopupWindow;Landroid/widget/MultiSelectPopupWindow$1;)V
     .locals 0
-    .param p1    # Landroid/widget/MultiSelectPopupWindow;
-    .param p2    # Landroid/widget/MultiSelectPopupWindow$1;
 
     invoke-direct {p0, p1}, Landroid/widget/MultiSelectPopupWindow$PositionListener;-><init>(Landroid/widget/MultiSelectPopupWindow;)V
 
@@ -224,8 +222,6 @@
 # virtual methods
 .method public addSubscriber(Landroid/widget/MultiSelectPopupWindow$TextViewPositionListener;Z)V
     .locals 5
-    .param p1    # Landroid/widget/MultiSelectPopupWindow$TextViewPositionListener;
-    .param p2    # Z
 
     iget v4, p0, Landroid/widget/MultiSelectPopupWindow$PositionListener;->mNumberOfListeners:I
 
@@ -442,7 +438,6 @@
 
 .method public removeSubscriber(Landroid/widget/MultiSelectPopupWindow$TextViewPositionListener;)V
     .locals 4
-    .param p1    # Landroid/widget/MultiSelectPopupWindow$TextViewPositionListener;
 
     const/4 v0, 0x0
 

@@ -23,7 +23,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/systemui/media/NotificationPlayer;Lcom/android/systemui/media/NotificationPlayer$Command;)V
     .locals 0
-    .param p2    # Lcom/android/systemui/media/NotificationPlayer$Command;
 
     iput-object p1, p0, Lcom/android/systemui/media/NotificationPlayer$CreationAndCompletionThread;->this$0:Lcom/android/systemui/media/NotificationPlayer;
 

@@ -44,8 +44,6 @@
 
 .method synthetic constructor <init>(Lcom/android/settings/users/AppRestrictionsFragment;Lcom/android/settings/users/AppRestrictionsFragment$1;)V
     .locals 0
-    .param p1    # Lcom/android/settings/users/AppRestrictionsFragment;
-    .param p2    # Lcom/android/settings/users/AppRestrictionsFragment$1;
 
     invoke-direct {p0, p1}, Lcom/android/settings/users/AppRestrictionsFragment$AppLabelComparator;-><init>(Lcom/android/settings/users/AppRestrictionsFragment;)V
 
@@ -56,8 +54,6 @@
 # virtual methods
 .method public compare(Lcom/android/settings/users/AppRestrictionsFragment$SelectableAppInfo;Lcom/android/settings/users/AppRestrictionsFragment$SelectableAppInfo;)I
     .locals 4
-    .param p1    # Lcom/android/settings/users/AppRestrictionsFragment$SelectableAppInfo;
-    .param p2    # Lcom/android/settings/users/AppRestrictionsFragment$SelectableAppInfo;
 
     iget-object v2, p1, Lcom/android/settings/users/AppRestrictionsFragment$SelectableAppInfo;->activityName:Ljava/lang/CharSequence;
 
@@ -88,8 +84,6 @@
 
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p1, Lcom/android/settings/users/AppRestrictionsFragment$SelectableAppInfo;
 

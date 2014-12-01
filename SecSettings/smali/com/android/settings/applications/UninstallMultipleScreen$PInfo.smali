@@ -57,8 +57,6 @@
 
 .method static synthetic access$1002(Lcom/android/settings/applications/UninstallMultipleScreen$PInfo;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/android/settings/applications/UninstallMultipleScreen$PInfo;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/settings/applications/UninstallMultipleScreen$PInfo;->versionName:Ljava/lang/String;
 
@@ -67,8 +65,6 @@
 
 .method static synthetic access$1102(Lcom/android/settings/applications/UninstallMultipleScreen$PInfo;I)I
     .locals 0
-    .param p0    # Lcom/android/settings/applications/UninstallMultipleScreen$PInfo;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/settings/applications/UninstallMultipleScreen$PInfo;->versionCode:I
 
@@ -77,8 +73,6 @@
 
 .method static synthetic access$1202(Lcom/android/settings/applications/UninstallMultipleScreen$PInfo;Landroid/graphics/drawable/Drawable;)Landroid/graphics/drawable/Drawable;
     .locals 0
-    .param p0    # Lcom/android/settings/applications/UninstallMultipleScreen$PInfo;
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     iput-object p1, p0, Lcom/android/settings/applications/UninstallMultipleScreen$PInfo;->icon:Landroid/graphics/drawable/Drawable;
 
@@ -87,7 +81,6 @@
 
 .method static synthetic access$800(Lcom/android/settings/applications/UninstallMultipleScreen$PInfo;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/settings/applications/UninstallMultipleScreen$PInfo;
 
     iget-object v0, p0, Lcom/android/settings/applications/UninstallMultipleScreen$PInfo;->pname:Ljava/lang/String;
 
@@ -96,8 +89,6 @@
 
 .method static synthetic access$802(Lcom/android/settings/applications/UninstallMultipleScreen$PInfo;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/android/settings/applications/UninstallMultipleScreen$PInfo;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/settings/applications/UninstallMultipleScreen$PInfo;->pname:Ljava/lang/String;
 
@@ -106,7 +97,6 @@
 
 .method static synthetic access$900(Lcom/android/settings/applications/UninstallMultipleScreen$PInfo;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/settings/applications/UninstallMultipleScreen$PInfo;
 
     iget-object v0, p0, Lcom/android/settings/applications/UninstallMultipleScreen$PInfo;->appname:Ljava/lang/String;
 
@@ -115,8 +105,6 @@
 
 .method static synthetic access$902(Lcom/android/settings/applications/UninstallMultipleScreen$PInfo;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/android/settings/applications/UninstallMultipleScreen$PInfo;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/settings/applications/UninstallMultipleScreen$PInfo;->appname:Ljava/lang/String;
 

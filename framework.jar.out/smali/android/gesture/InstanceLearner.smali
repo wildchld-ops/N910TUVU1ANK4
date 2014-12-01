@@ -41,9 +41,6 @@
 # virtual methods
 .method classify(II[F)Ljava/util/ArrayList;
     .locals 19
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [F
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II[F)",

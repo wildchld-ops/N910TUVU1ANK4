@@ -75,7 +75,6 @@
 
 .method static synthetic access$100(Lcom/android/internal/view/InputConnectionWrapper$InputContextCallback;)V
     .locals 0
-    .param p0    # Lcom/android/internal/view/InputConnectionWrapper$InputContextCallback;
 
     invoke-direct {p0}, Lcom/android/internal/view/InputConnectionWrapper$InputContextCallback;->dispose()V
 
@@ -179,8 +178,6 @@
 # virtual methods
 .method public setCursorCapsMode(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     monitor-enter p0
 
@@ -257,8 +254,6 @@
 
 .method public setExtractedText(Landroid/view/inputmethod/ExtractedText;I)V
     .locals 3
-    .param p1    # Landroid/view/inputmethod/ExtractedText;
-    .param p2    # I
 
     monitor-enter p0
 
@@ -335,8 +330,6 @@
 
 .method public setSelectedText(Ljava/lang/CharSequence;I)V
     .locals 3
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
 
     monitor-enter p0
 
@@ -413,8 +406,6 @@
 
 .method public setTextAfterCursor(Ljava/lang/CharSequence;I)V
     .locals 3
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
 
     monitor-enter p0
 
@@ -491,8 +482,6 @@
 
 .method public setTextBeforeCursor(Ljava/lang/CharSequence;I)V
     .locals 3
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
 
     monitor-enter p0
 

@@ -162,7 +162,6 @@
 
 .method static recycle(Landroid/text/MeasuredText;)Landroid/text/MeasuredText;
     .locals 4
-    .param p0    # Landroid/text/MeasuredText;
 
     const/4 v3, 0x0
 
@@ -227,9 +226,6 @@
 # virtual methods
 .method addStyleRun(Landroid/text/TextPaint;ILandroid/graphics/Paint$FontMetricsInt;)F
     .locals 25
-    .param p1    # Landroid/text/TextPaint;
-    .param p2    # I
-    .param p3    # Landroid/graphics/Paint$FontMetricsInt;
 
     if-eqz p3, :cond_0
 
@@ -644,10 +640,6 @@
 
 .method addStyleRun(Landroid/text/TextPaint;[Landroid/text/style/MetricAffectingSpan;ILandroid/graphics/Paint$FontMetricsInt;)F
     .locals 11
-    .param p1    # Landroid/text/TextPaint;
-    .param p2    # [Landroid/text/style/MetricAffectingSpan;
-    .param p3    # I
-    .param p4    # Landroid/graphics/Paint$FontMetricsInt;
 
     iget-object v1, p0, Landroid/text/MeasuredText;->mWorkPaint:Landroid/text/TextPaint;
 
@@ -801,9 +793,6 @@
 
 .method breakText(IZF)I
     .locals 5
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # F
 
     const/16 v4, 0x20
 
@@ -900,8 +889,6 @@
 
 .method measure(II)F
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     const/4 v2, 0x0
 
@@ -926,10 +913,6 @@
 
 .method setPara(Ljava/lang/CharSequence;IILandroid/text/TextDirectionHeuristic;)V
     .locals 21
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/text/TextDirectionHeuristic;
 
     move-object/from16 v0, p1
 
@@ -1517,7 +1500,6 @@
 
 .method setPos(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/text/MeasuredText;->mTextStart:I
 

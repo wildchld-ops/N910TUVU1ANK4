@@ -76,7 +76,6 @@
 
 .method private isDigitOrDecimalSeparator(C)Z
     .locals 1
-    .param p1    # C
 
     invoke-static {p1}, Ljava/lang/Character;->isDigit(C)Z
 
@@ -102,7 +101,6 @@
 
 .method private isFunction(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lde/congrace/exp4j/Tokenizer;->functions:Ljava/util/Map;
 
@@ -115,7 +113,6 @@
 
 .method private isNotationSeparator(C)Z
     .locals 1
-    .param p1    # C
 
     const/16 v0, 0x65
 
@@ -139,7 +136,6 @@
 
 .method private isOperatorCharacter(C)Z
     .locals 4
-    .param p1    # C
 
     iget-object v2, p0, Lde/congrace/exp4j/Tokenizer;->operators:Ljava/util/Map;
 
@@ -185,7 +181,6 @@
 
 .method private isOperatorStart(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v2, p0, Lde/congrace/exp4j/Tokenizer;->operators:Ljava/util/Map;
 
@@ -229,7 +224,6 @@
 
 .method private isVariable(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v2, p0, Lde/congrace/exp4j/Tokenizer;->variableNames:Ljava/util/Set;
 
@@ -275,7 +269,6 @@
 # virtual methods
 .method getTokens(Ljava/lang/String;)Ljava/util/List;
     .locals 25
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

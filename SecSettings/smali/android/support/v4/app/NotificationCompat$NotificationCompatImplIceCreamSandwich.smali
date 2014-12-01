@@ -30,7 +30,6 @@
 # virtual methods
 .method public build(Landroid/support/v4/app/NotificationCompat$Builder;)Landroid/app/Notification;
     .locals 13
-    .param p1    # Landroid/support/v4/app/NotificationCompat$Builder;
 
     iget-object v0, p1, Landroid/support/v4/app/NotificationCompat$Builder;->mContext:Landroid/content/Context;
 

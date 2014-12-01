@@ -71,7 +71,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -82,8 +81,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const v0, 0x10103ad
 
@@ -94,9 +91,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v5, 0x1
 
@@ -167,7 +161,6 @@
 
 .method static synthetic access$100(Landroid/app/MediaRouteButton;)V
     .locals 0
-    .param p0    # Landroid/app/MediaRouteButton;
 
     invoke-direct {p0}, Landroid/app/MediaRouteButton;->refreshRoute()V
 
@@ -304,7 +297,6 @@
 
 .method private setRemoteIndicatorDrawable(Landroid/graphics/drawable/Drawable;)V
     .locals 3
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     const/4 v1, 0x0
 
@@ -438,7 +430,6 @@
 
 .method protected onCreateDrawableState(I)[I
     .locals 2
-    .param p1    # I
 
     add-int/lit8 v1, p1, 0x1
 
@@ -495,7 +486,6 @@
 
 .method protected onDraw(Landroid/graphics/Canvas;)V
     .locals 11
-    .param p1    # Landroid/graphics/Canvas;
 
     invoke-super {p0, p1}, Landroid/view/View;->onDraw(Landroid/graphics/Canvas;)V
 
@@ -580,8 +570,6 @@
 
 .method protected onMeasure(II)V
     .locals 11
-    .param p1    # I
-    .param p2    # I
 
     const/4 v9, 0x0
 
@@ -886,7 +874,6 @@
 
 .method setCheatSheetEnabled(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/app/MediaRouteButton;->mCheatSheetEnabled:Z
 
@@ -895,7 +882,6 @@
 
 .method public setExtendedSettingsClickListener(Landroid/view/View$OnClickListener;)V
     .locals 0
-    .param p1    # Landroid/view/View$OnClickListener;
 
     iput-object p1, p0, Landroid/app/MediaRouteButton;->mExtendedSettingsClickListener:Landroid/view/View$OnClickListener;
 
@@ -904,7 +890,6 @@
 
 .method public setRouteTypes(I)V
     .locals 3
-    .param p1    # I
 
     iget v0, p0, Landroid/app/MediaRouteButton;->mRouteTypes:I
 
@@ -950,7 +935,6 @@
 
 .method public setVisibility(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -1025,7 +1009,6 @@
 
 .method protected verifyDrawable(Landroid/graphics/drawable/Drawable;)Z
     .locals 1
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     invoke-super {p0, p1}, Landroid/view/View;->verifyDrawable(Landroid/graphics/drawable/Drawable;)Z
 

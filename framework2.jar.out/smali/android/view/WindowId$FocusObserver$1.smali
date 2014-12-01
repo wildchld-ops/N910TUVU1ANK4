@@ -33,7 +33,6 @@
 # virtual methods
 .method public focusGained(Landroid/os/IBinder;)V
     .locals 4
-    .param p1    # Landroid/os/IBinder;
 
     iget-object v1, p0, Landroid/view/WindowId$FocusObserver$1;->this$0:Landroid/view/WindowId$FocusObserver;
 
@@ -101,7 +100,6 @@
 
 .method public focusLost(Landroid/os/IBinder;)V
     .locals 4
-    .param p1    # Landroid/os/IBinder;
 
     iget-object v1, p0, Landroid/view/WindowId$FocusObserver$1;->this$0:Landroid/view/WindowId$FocusObserver;
 

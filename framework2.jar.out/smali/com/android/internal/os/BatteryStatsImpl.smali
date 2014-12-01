@@ -781,7 +781,6 @@
 
 .method public constructor <init>(Landroid/os/Parcel;)V
     .locals 7
-    .param p1    # Landroid/os/Parcel;
 
     const-wide/16 v5, 0x0
 
@@ -1028,7 +1027,6 @@
 
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 11
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x3
 
@@ -1551,7 +1549,6 @@
 
 .method static synthetic access$000(Lcom/android/internal/os/BatteryStatsImpl;)Lcom/android/internal/os/BatteryStatsImpl$BatteryCallback;
     .locals 1
-    .param p0    # Lcom/android/internal/os/BatteryStatsImpl;
 
     iget-object v0, p0, Lcom/android/internal/os/BatteryStatsImpl;->mCallback:Lcom/android/internal/os/BatteryStatsImpl$BatteryCallback;
 
@@ -1560,8 +1557,6 @@
 
 .method private fixPhoneServiceState(II)I
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     const/4 v1, 0x1
 
@@ -1683,9 +1678,6 @@
 
 .method private final parseProcWakelocks([BIZ)Ljava/util/Map;
     .locals 24
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([BIZ)",
@@ -2017,7 +2009,6 @@
 
 .method static readFully(Ljava/io/FileInputStream;)[B
     .locals 7
-    .param p0    # Ljava/io/FileInputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -2169,7 +2160,6 @@
 
 .method private readSummaryFromParcel(Landroid/os/Parcel;)V
     .locals 29
-    .param p1    # Landroid/os/Parcel;
 
     invoke-virtual/range {p1 .. p1}, Landroid/os/Parcel;->readInt()I
 
@@ -3703,9 +3693,6 @@
 
 .method private updateAllPhoneStateLocked(III)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v3, 0x1
 
@@ -4093,7 +4080,6 @@
 # virtual methods
 .method addHistoryBufferLocked(J)V
     .locals 9
-    .param p1    # J
 
     const/4 v8, 0x0
 
@@ -4300,8 +4286,6 @@
 
 .method addHistoryBufferLocked(JB)V
     .locals 5
-    .param p1    # J
-    .param p3    # B
 
     const/4 v0, 0x0
 
@@ -4374,7 +4358,6 @@
 
 .method addHistoryRecordLocked(J)V
     .locals 0
-    .param p1    # J
 
     invoke-virtual {p0, p1, p2}, Lcom/android/internal/os/BatteryStatsImpl;->addHistoryBufferLocked(J)V
 
@@ -4383,8 +4366,6 @@
 
 .method addHistoryRecordLocked(JB)V
     .locals 4
-    .param p1    # J
-    .param p3    # B
 
     iget-object v0, p0, Lcom/android/internal/os/BatteryStatsImpl;->mHistoryCache:Landroid/os/BatteryStats$HistoryItem;
 
@@ -4417,7 +4398,6 @@
 
 .method addHistoryRecordLocked(Landroid/os/BatteryStats$HistoryItem;)V
     .locals 1
-    .param p1    # Landroid/os/BatteryStats$HistoryItem;
 
     iget v0, p0, Lcom/android/internal/os/BatteryStatsImpl;->mNumHistoryItems:I
 
@@ -4609,8 +4589,6 @@
 
 .method public computeBatteryRealtime(JI)J
     .locals 4
-    .param p1    # J
-    .param p3    # I
 
     packed-switch p3, :pswitch_data_0
 
@@ -4664,8 +4642,6 @@
 
 .method public computeBatteryUptime(JI)J
     .locals 4
-    .param p1    # J
-    .param p3    # I
 
     packed-switch p3, :pswitch_data_0
 
@@ -4719,8 +4695,6 @@
 
 .method public computeRealtime(JI)J
     .locals 4
-    .param p1    # J
-    .param p3    # I
 
     packed-switch p3, :pswitch_data_0
 
@@ -4772,8 +4746,6 @@
 
 .method public computeUptime(JI)J
     .locals 4
-    .param p1    # J
-    .param p3    # I
 
     packed-switch p3, :pswitch_data_0
 
@@ -4833,7 +4805,6 @@
 
 .method public distributeWorkLocked(I)V
     .locals 25
-    .param p1    # I
 
     move-object/from16 v0, p0
 
@@ -5188,9 +5159,6 @@
 
 .method public doPlugLocked(JJJ)V
     .locals 8
-    .param p1    # J
-    .param p3    # J
-    .param p5    # J
 
     iget-object v0, p0, Lcom/android/internal/os/BatteryStatsImpl;->mUnpluggables:Ljava/util/ArrayList;
 
@@ -5249,9 +5217,6 @@
 
 .method public doUnplugLocked(JJJ)V
     .locals 8
-    .param p1    # J
-    .param p3    # J
-    .param p5    # J
 
     iget-object v0, p0, Lcom/android/internal/os/BatteryStatsImpl;->mUnpluggables:Ljava/util/ArrayList;
 
@@ -5310,9 +5275,6 @@
 
 .method public dumpLocked(Ljava/io/PrintWriter;ZI)V
     .locals 0
-    .param p1    # Ljava/io/PrintWriter;
-    .param p2    # Z
-    .param p3    # I
 
     invoke-super {p0, p1, p2, p3}, Landroid/os/BatteryStats;->dumpLocked(Ljava/io/PrintWriter;ZI)V
 
@@ -5321,10 +5283,6 @@
 
 .method public finishAddingCpuLocked(III[J)V
     .locals 13
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # [J
 
     iget-object v11, p0, Lcom/android/internal/os/BatteryStatsImpl;->mPartialTimers:Ljava/util/ArrayList;
 
@@ -5665,7 +5623,6 @@
 
 .method public getBatteryRealtime(J)J
     .locals 2
-    .param p1    # J
 
     invoke-virtual {p0, p1, p2}, Lcom/android/internal/os/BatteryStatsImpl;->getBatteryRealtimeLocked(J)J
 
@@ -5676,7 +5633,6 @@
 
 .method getBatteryRealtimeLocked(J)J
     .locals 4
-    .param p1    # J
 
     iget-wide v0, p0, Lcom/android/internal/os/BatteryStatsImpl;->mTrackBatteryPastRealtime:J
 
@@ -5696,7 +5652,6 @@
 
 .method public getBatteryUptime(J)J
     .locals 2
-    .param p1    # J
 
     invoke-virtual {p0, p1, p2}, Lcom/android/internal/os/BatteryStatsImpl;->getBatteryUptimeLocked(J)J
 
@@ -5725,7 +5680,6 @@
 
 .method getBatteryUptimeLocked(J)J
     .locals 4
-    .param p1    # J
 
     iget-wide v0, p0, Lcom/android/internal/os/BatteryStatsImpl;->mTrackBatteryPastUptime:J
 
@@ -5745,8 +5699,6 @@
 
 .method public getBluetoothOnTime(JI)J
     .locals 2
-    .param p1    # J
-    .param p3    # I
 
     iget-object v0, p0, Lcom/android/internal/os/BatteryStatsImpl;->mBluetoothOnTimer:Lcom/android/internal/os/BatteryStatsImpl$StopwatchTimer;
 
@@ -6046,8 +5998,6 @@
 
 .method public getGlobalWifiRunningTime(JI)J
     .locals 2
-    .param p1    # J
-    .param p3    # I
 
     iget-object v0, p0, Lcom/android/internal/os/BatteryStatsImpl;->mGlobalWifiRunningTimer:Lcom/android/internal/os/BatteryStatsImpl$StopwatchTimer;
 
@@ -6109,7 +6059,6 @@
 
 .method public getInputEventCount(I)I
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/internal/os/BatteryStatsImpl;->mInputEventCounter:Lcom/android/internal/os/BatteryStatsImpl$Counter;
 
@@ -6149,7 +6098,6 @@
 
 .method public getKernelWakelockTimerLocked(Ljava/lang/String;)Lcom/android/internal/os/BatteryStatsImpl$SamplingTimer;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/internal/os/BatteryStatsImpl;->mKernelWakelockStats:Ljava/util/HashMap;
 
@@ -6224,8 +6172,6 @@
 
 .method public getNetworkActivityCount(II)J
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     if-ltz p1, :cond_0
 
@@ -6254,7 +6200,6 @@
 
 .method public getNextHistoryLocked(Landroid/os/BatteryStats$HistoryItem;)Z
     .locals 5
-    .param p1    # Landroid/os/BatteryStats$HistoryItem;
 
     const/4 v3, 0x1
 
@@ -6304,7 +6249,6 @@
 
 .method public getNextOldHistoryLocked(Landroid/os/BatteryStats$HistoryItem;)Z
     .locals 11
-    .param p1    # Landroid/os/BatteryStats$HistoryItem;
 
     const/4 v6, 0x1
 
@@ -6472,8 +6416,6 @@
 
 .method public getPackageStatsLocked(ILjava/lang/String;)Lcom/android/internal/os/BatteryStatsImpl$Uid$Pkg;
     .locals 2
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lcom/android/internal/os/BatteryStatsImpl;->getUidStatsLocked(I)Lcom/android/internal/os/BatteryStatsImpl$Uid;
 
@@ -6488,8 +6430,6 @@
 
 .method public getPhoneDataConnectionCount(II)I
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/internal/os/BatteryStatsImpl;->mPhoneDataConnectionsTimer:[Lcom/android/internal/os/BatteryStatsImpl$StopwatchTimer;
 
@@ -6504,9 +6444,6 @@
 
 .method public getPhoneDataConnectionTime(IJI)J
     .locals 2
-    .param p1    # I
-    .param p2    # J
-    .param p4    # I
 
     iget-object v0, p0, Lcom/android/internal/os/BatteryStatsImpl;->mPhoneDataConnectionsTimer:[Lcom/android/internal/os/BatteryStatsImpl$StopwatchTimer;
 
@@ -6521,8 +6458,6 @@
 
 .method public getPhoneOnTime(JI)J
     .locals 2
-    .param p1    # J
-    .param p3    # I
 
     iget-object v0, p0, Lcom/android/internal/os/BatteryStatsImpl;->mPhoneOnTimer:Lcom/android/internal/os/BatteryStatsImpl$StopwatchTimer;
 
@@ -6535,8 +6470,6 @@
 
 .method public getPhoneSignalScanningTime(JI)J
     .locals 2
-    .param p1    # J
-    .param p3    # I
 
     iget-object v0, p0, Lcom/android/internal/os/BatteryStatsImpl;->mPhoneSignalScanningTimer:Lcom/android/internal/os/BatteryStatsImpl$StopwatchTimer;
 
@@ -6549,8 +6482,6 @@
 
 .method public getPhoneSignalStrengthCount(II)I
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/internal/os/BatteryStatsImpl;->mPhoneSignalStrengthsTimer:[Lcom/android/internal/os/BatteryStatsImpl$StopwatchTimer;
 
@@ -6565,9 +6496,6 @@
 
 .method public getPhoneSignalStrengthTime(IJI)J
     .locals 2
-    .param p1    # I
-    .param p2    # J
-    .param p4    # I
 
     iget-object v0, p0, Lcom/android/internal/os/BatteryStatsImpl;->mPhoneSignalStrengthsTimer:[Lcom/android/internal/os/BatteryStatsImpl$StopwatchTimer;
 
@@ -6582,8 +6510,6 @@
 
 .method public getProcessStatsLocked(ILjava/lang/String;)Lcom/android/internal/os/BatteryStatsImpl$Uid$Proc;
     .locals 2
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lcom/android/internal/os/BatteryStatsImpl;->getUidStatsLocked(I)Lcom/android/internal/os/BatteryStatsImpl$Uid;
 
@@ -6598,8 +6524,6 @@
 
 .method public getProcessStatsLocked(Ljava/lang/String;I)Lcom/android/internal/os/BatteryStatsImpl$Uid$Proc;
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     iget-object v2, p0, Lcom/android/internal/os/BatteryStatsImpl;->mUidCache:Ljava/util/HashMap;
 
@@ -6650,9 +6574,6 @@
 
 .method public getProcessWakeTime(IIJ)J
     .locals 8
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
 
     const-wide/16 v2, 0x0
 
@@ -6739,9 +6660,6 @@
 
 .method public getScreenBrightnessTime(IJI)J
     .locals 2
-    .param p1    # I
-    .param p2    # J
-    .param p4    # I
 
     iget-object v0, p0, Lcom/android/internal/os/BatteryStatsImpl;->mScreenBrightnessTimer:[Lcom/android/internal/os/BatteryStatsImpl$StopwatchTimer;
 
@@ -6756,8 +6674,6 @@
 
 .method public getScreenOnTime(JI)J
     .locals 2
-    .param p1    # J
-    .param p3    # I
 
     iget-object v0, p0, Lcom/android/internal/os/BatteryStatsImpl;->mScreenOnTimer:Lcom/android/internal/os/BatteryStatsImpl$StopwatchTimer;
 
@@ -6770,9 +6686,6 @@
 
 .method public getServiceStatsLocked(ILjava/lang/String;Ljava/lang/String;)Lcom/android/internal/os/BatteryStatsImpl$Uid$Pkg$Serv;
     .locals 2
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lcom/android/internal/os/BatteryStatsImpl;->getUidStatsLocked(I)Lcom/android/internal/os/BatteryStatsImpl$Uid;
 
@@ -6812,7 +6725,6 @@
 
 .method public getUidStatsLocked(I)Lcom/android/internal/os/BatteryStatsImpl$Uid;
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/internal/os/BatteryStatsImpl;->mUidStats:Landroid/util/SparseArray;
 
@@ -6838,8 +6750,6 @@
 
 .method public getWifiOnTime(JI)J
     .locals 2
-    .param p1    # J
-    .param p3    # I
 
     iget-object v0, p0, Lcom/android/internal/os/BatteryStatsImpl;->mWifiOnTimer:Lcom/android/internal/os/BatteryStatsImpl$StopwatchTimer;
 
@@ -6942,7 +6852,6 @@
 
 .method public noteActivityPausedLocked(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/internal/os/BatteryStatsImpl;->getUidStatsLocked(I)Lcom/android/internal/os/BatteryStatsImpl$Uid;
 
@@ -6955,7 +6864,6 @@
 
 .method public noteActivityResumedLocked(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/internal/os/BatteryStatsImpl;->getUidStatsLocked(I)Lcom/android/internal/os/BatteryStatsImpl$Uid;
 
@@ -6968,7 +6876,6 @@
 
 .method public noteAudioOffLocked(I)V
     .locals 3
-    .param p1    # I
 
     iget-boolean v0, p0, Lcom/android/internal/os/BatteryStatsImpl;->mAudioOn:Z
 
@@ -7010,7 +6917,6 @@
 
 .method public noteAudioOnLocked(I)V
     .locals 3
-    .param p1    # I
 
     iget-boolean v0, p0, Lcom/android/internal/os/BatteryStatsImpl;->mAudioOn:Z
 
@@ -7122,7 +7028,6 @@
 
 .method public noteFullWifiLockAcquiredFromSourceLocked(Landroid/os/WorkSource;)V
     .locals 3
-    .param p1    # Landroid/os/WorkSource;
 
     invoke-virtual {p1}, Landroid/os/WorkSource;->size()I
 
@@ -7149,7 +7054,6 @@
 
 .method public noteFullWifiLockAcquiredLocked(I)V
     .locals 3
-    .param p1    # I
 
     iget v0, p0, Lcom/android/internal/os/BatteryStatsImpl;->mWifiFullLockNesting:I
 
@@ -7189,7 +7093,6 @@
 
 .method public noteFullWifiLockReleasedFromSourceLocked(Landroid/os/WorkSource;)V
     .locals 3
-    .param p1    # Landroid/os/WorkSource;
 
     invoke-virtual {p1}, Landroid/os/WorkSource;->size()I
 
@@ -7216,7 +7119,6 @@
 
 .method public noteFullWifiLockReleasedLocked(I)V
     .locals 3
-    .param p1    # I
 
     iget v0, p0, Lcom/android/internal/os/BatteryStatsImpl;->mWifiFullLockNesting:I
 
@@ -7266,8 +7168,6 @@
 
 .method public noteNetworkInterfaceTypeLocked(Ljava/lang/String;I)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-static {p2}, Landroid/net/ConnectivityManager;->isNetworkTypeMobile(I)Z
 
@@ -7318,8 +7218,6 @@
 
 .method public notePhoneDataConnectionStateLocked(IZ)V
     .locals 4
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v0, 0x0
 
@@ -7550,7 +7448,6 @@
 
 .method public notePhoneSignalStrengthLocked(Landroid/telephony/SignalStrength;)V
     .locals 3
-    .param p1    # Landroid/telephony/SignalStrength;
 
     invoke-virtual {p1}, Landroid/telephony/SignalStrength;->getLevel()I
 
@@ -7567,8 +7464,6 @@
 
 .method public notePhoneStateLocked(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget v0, p0, Lcom/android/internal/os/BatteryStatsImpl;->mPhoneSignalStrengthBinRaw:I
 
@@ -7579,8 +7474,6 @@
 
 .method public noteProcessDiedLocked(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget-object v1, p0, Lcom/android/internal/os/BatteryStatsImpl;->mUidStats:Landroid/util/SparseArray;
 
@@ -7602,7 +7495,6 @@
 
 .method public noteScreenBrightnessLocked(I)V
     .locals 4
-    .param p1    # I
 
     div-int/lit8 v0, p1, 0x33
 
@@ -7801,7 +7693,6 @@
 
 .method public noteStartGpsLocked(I)V
     .locals 3
-    .param p1    # I
 
     iget v0, p0, Lcom/android/internal/os/BatteryStatsImpl;->mGpsNesting:I
 
@@ -7841,8 +7732,6 @@
 
 .method public noteStartSensorLocked(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     iget v0, p0, Lcom/android/internal/os/BatteryStatsImpl;->mSensorNesting:I
 
@@ -7882,10 +7771,6 @@
 
 .method public noteStartWakeFromSourceLocked(Landroid/os/WorkSource;ILjava/lang/String;I)V
     .locals 3
-    .param p1    # Landroid/os/WorkSource;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
 
     invoke-virtual {p1}, Landroid/os/WorkSource;->size()I
 
@@ -7912,10 +7797,6 @@
 
 .method public noteStartWakeLocked(IILjava/lang/String;I)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
 
     const/4 v4, 0x1
 
@@ -7984,7 +7865,6 @@
 
 .method public noteStopGpsLocked(I)V
     .locals 3
-    .param p1    # I
 
     iget v0, p0, Lcom/android/internal/os/BatteryStatsImpl;->mGpsNesting:I
 
@@ -8024,8 +7904,6 @@
 
 .method public noteStopSensorLocked(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     iget v0, p0, Lcom/android/internal/os/BatteryStatsImpl;->mSensorNesting:I
 
@@ -8065,10 +7943,6 @@
 
 .method public noteStopWakeFromSourceLocked(Landroid/os/WorkSource;ILjava/lang/String;I)V
     .locals 3
-    .param p1    # Landroid/os/WorkSource;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
 
     invoke-virtual {p1}, Landroid/os/WorkSource;->size()I
 
@@ -8095,10 +7969,6 @@
 
 .method public noteStopWakeLocked(IILjava/lang/String;I)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
 
     const/4 v4, 0x1
 
@@ -8166,8 +8036,6 @@
 
 .method public noteUserActivityLocked(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0, p1}, Lcom/android/internal/os/BatteryStatsImpl;->getUidStatsLocked(I)Lcom/android/internal/os/BatteryStatsImpl$Uid;
 
@@ -8180,7 +8048,6 @@
 
 .method public noteVibratorOffLocked(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/internal/os/BatteryStatsImpl;->getUidStatsLocked(I)Lcom/android/internal/os/BatteryStatsImpl$Uid;
 
@@ -8193,8 +8060,6 @@
 
 .method public noteVibratorOnLocked(IJ)V
     .locals 1
-    .param p1    # I
-    .param p2    # J
 
     invoke-virtual {p0, p1}, Lcom/android/internal/os/BatteryStatsImpl;->getUidStatsLocked(I)Lcom/android/internal/os/BatteryStatsImpl$Uid;
 
@@ -8207,7 +8072,6 @@
 
 .method public noteVideoOffLocked(I)V
     .locals 3
-    .param p1    # I
 
     iget-boolean v0, p0, Lcom/android/internal/os/BatteryStatsImpl;->mVideoOn:Z
 
@@ -8249,7 +8113,6 @@
 
 .method public noteVideoOnLocked(I)V
     .locals 3
-    .param p1    # I
 
     iget-boolean v0, p0, Lcom/android/internal/os/BatteryStatsImpl;->mVideoOn:Z
 
@@ -8291,8 +8154,6 @@
 
 .method public noteWifiBatchedScanStartedFromSourceLocked(Landroid/os/WorkSource;I)V
     .locals 3
-    .param p1    # Landroid/os/WorkSource;
-    .param p2    # I
 
     invoke-virtual {p1}, Landroid/os/WorkSource;->size()I
 
@@ -8319,8 +8180,6 @@
 
 .method public noteWifiBatchedScanStartedLocked(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0, p1}, Lcom/android/internal/os/BatteryStatsImpl;->getUidStatsLocked(I)Lcom/android/internal/os/BatteryStatsImpl$Uid;
 
@@ -8333,7 +8192,6 @@
 
 .method public noteWifiBatchedScanStoppedFromSourceLocked(Landroid/os/WorkSource;)V
     .locals 3
-    .param p1    # Landroid/os/WorkSource;
 
     invoke-virtual {p1}, Landroid/os/WorkSource;->size()I
 
@@ -8360,7 +8218,6 @@
 
 .method public noteWifiBatchedScanStoppedLocked(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/internal/os/BatteryStatsImpl;->getUidStatsLocked(I)Lcom/android/internal/os/BatteryStatsImpl$Uid;
 
@@ -8373,7 +8230,6 @@
 
 .method public noteWifiMulticastDisabledFromSourceLocked(Landroid/os/WorkSource;)V
     .locals 3
-    .param p1    # Landroid/os/WorkSource;
 
     invoke-virtual {p1}, Landroid/os/WorkSource;->size()I
 
@@ -8400,7 +8256,6 @@
 
 .method public noteWifiMulticastDisabledLocked(I)V
     .locals 3
-    .param p1    # I
 
     iget v0, p0, Lcom/android/internal/os/BatteryStatsImpl;->mWifiMulticastNesting:I
 
@@ -8440,7 +8295,6 @@
 
 .method public noteWifiMulticastEnabledFromSourceLocked(Landroid/os/WorkSource;)V
     .locals 3
-    .param p1    # Landroid/os/WorkSource;
 
     invoke-virtual {p1}, Landroid/os/WorkSource;->size()I
 
@@ -8467,7 +8321,6 @@
 
 .method public noteWifiMulticastEnabledLocked(I)V
     .locals 3
-    .param p1    # I
 
     iget v0, p0, Lcom/android/internal/os/BatteryStatsImpl;->mWifiMulticastNesting:I
 
@@ -8594,8 +8447,6 @@
 
 .method public noteWifiRunningChangedLocked(Landroid/os/WorkSource;Landroid/os/WorkSource;)V
     .locals 4
-    .param p1    # Landroid/os/WorkSource;
-    .param p2    # Landroid/os/WorkSource;
 
     iget-boolean v2, p0, Lcom/android/internal/os/BatteryStatsImpl;->mGlobalWifiRunning:Z
 
@@ -8661,7 +8512,6 @@
 
 .method public noteWifiRunningLocked(Landroid/os/WorkSource;)V
     .locals 5
-    .param p1    # Landroid/os/WorkSource;
 
     iget-boolean v2, p0, Lcom/android/internal/os/BatteryStatsImpl;->mGlobalWifiRunning:Z
 
@@ -8727,7 +8577,6 @@
 
 .method public noteWifiScanStartedFromSourceLocked(Landroid/os/WorkSource;)V
     .locals 3
-    .param p1    # Landroid/os/WorkSource;
 
     invoke-virtual {p1}, Landroid/os/WorkSource;->size()I
 
@@ -8754,7 +8603,6 @@
 
 .method public noteWifiScanStartedLocked(I)V
     .locals 3
-    .param p1    # I
 
     iget v0, p0, Lcom/android/internal/os/BatteryStatsImpl;->mWifiScanNesting:I
 
@@ -8794,7 +8642,6 @@
 
 .method public noteWifiScanStoppedFromSourceLocked(Landroid/os/WorkSource;)V
     .locals 3
-    .param p1    # Landroid/os/WorkSource;
 
     invoke-virtual {p1}, Landroid/os/WorkSource;->size()I
 
@@ -8821,7 +8668,6 @@
 
 .method public noteWifiScanStoppedLocked(I)V
     .locals 3
-    .param p1    # I
 
     iget v0, p0, Lcom/android/internal/os/BatteryStatsImpl;->mWifiScanNesting:I
 
@@ -8861,7 +8707,6 @@
 
 .method public noteWifiStoppedLocked(Landroid/os/WorkSource;)V
     .locals 5
-    .param p1    # Landroid/os/WorkSource;
 
     iget-boolean v2, p0, Lcom/android/internal/os/BatteryStatsImpl;->mGlobalWifiRunning:Z
 
@@ -8937,7 +8782,6 @@
 
 .method public readFromParcel(Landroid/os/Parcel;)V
     .locals 0
-    .param p1    # Landroid/os/Parcel;
 
     invoke-virtual {p0, p1}, Lcom/android/internal/os/BatteryStatsImpl;->readFromParcelLocked(Landroid/os/Parcel;)V
 
@@ -8946,7 +8790,6 @@
 
 .method readFromParcelLocked(Landroid/os/Parcel;)V
     .locals 18
-    .param p1    # Landroid/os/Parcel;
 
     invoke-virtual/range {p1 .. p1}, Landroid/os/Parcel;->readInt()I
 
@@ -9683,8 +9526,6 @@
 
 .method readHistory(Landroid/os/Parcel;Z)V
     .locals 10
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # Z
 
     const/4 v7, 0x0
 
@@ -9896,14 +9737,12 @@
 
 .method readOldHistory(Landroid/os/Parcel;)V
     .locals 0
-    .param p1    # Landroid/os/Parcel;
 
     return-void
 .end method
 
 .method public removeUidStatsLocked(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/internal/os/BatteryStatsImpl;->mUidStats:Landroid/util/SparseArray;
 
@@ -9914,10 +9753,6 @@
 
 .method public reportExcessiveCpuLocked(ILjava/lang/String;JJ)V
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # J
-    .param p5    # J
 
     iget-object v1, p0, Lcom/android/internal/os/BatteryStatsImpl;->mUidStats:Landroid/util/SparseArray;
 
@@ -9943,10 +9778,6 @@
 
 .method public reportExcessiveWakeLocked(ILjava/lang/String;JJ)V
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # J
-    .param p5    # J
 
     iget-object v1, p0, Lcom/android/internal/os/BatteryStatsImpl;->mUidStats:Landroid/util/SparseArray;
 
@@ -10182,12 +10013,6 @@
 
 .method public setBatteryState(IIIIII)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     const/4 v3, 0x0
 
@@ -10458,7 +10283,6 @@
 
 .method public setBtHeadset(Landroid/bluetooth/BluetoothHeadset;)V
     .locals 2
-    .param p1    # Landroid/bluetooth/BluetoothHeadset;
 
     if-eqz p1, :cond_0
 
@@ -10492,7 +10316,6 @@
 
 .method public setCallback(Lcom/android/internal/os/BatteryStatsImpl$BatteryCallback;)V
     .locals 0
-    .param p1    # Lcom/android/internal/os/BatteryStatsImpl$BatteryCallback;
 
     iput-object p1, p0, Lcom/android/internal/os/BatteryStatsImpl;->mCallback:Lcom/android/internal/os/BatteryStatsImpl$BatteryCallback;
 
@@ -10501,7 +10324,6 @@
 
 .method public setNumSpeedSteps(I)V
     .locals 1
-    .param p1    # I
 
     sget v0, Lcom/android/internal/os/BatteryStatsImpl;->sNumSpeedSteps:I
 
@@ -10515,9 +10337,6 @@
 
 .method setOnBattery(ZII)V
     .locals 1
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
 
     monitor-enter p0
 
@@ -10540,9 +10359,6 @@
 
 .method setOnBatteryLocked(ZII)V
     .locals 14
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
 
     const/4 v8, 0x0
 
@@ -10838,7 +10654,6 @@
 
 .method public setRadioScanningTimeout(J)V
     .locals 1
-    .param p1    # J
 
     iget-object v0, p0, Lcom/android/internal/os/BatteryStatsImpl;->mPhoneSignalScanningTimer:Lcom/android/internal/os/BatteryStatsImpl$StopwatchTimer;
 
@@ -11004,7 +10819,6 @@
 
 .method stopAllSignalStrengthTimersLocked(I)V
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -11046,8 +10860,6 @@
 
 .method updateDischargeScreenLevelsLocked(ZZ)V
     .locals 4
-    .param p1    # Z
-    .param p2    # Z
 
     const/4 v3, 0x0
 
@@ -11278,8 +11090,6 @@
 
 .method writeHistory(Landroid/os/Parcel;Z)V
     .locals 4
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # Z
 
     iget-wide v0, p0, Lcom/android/internal/os/BatteryStatsImpl;->mHistoryBaseTime:J
 
@@ -11319,7 +11129,6 @@
 
 .method writeLocked(Z)V
     .locals 4
-    .param p1    # Z
 
     iget-object v2, p0, Lcom/android/internal/os/BatteryStatsImpl;->mFile:Lcom/android/internal/util/JournaledFile;
 
@@ -11383,14 +11192,12 @@
 
 .method writeOldHistory(Landroid/os/Parcel;)V
     .locals 0
-    .param p1    # Landroid/os/Parcel;
 
     return-void
 .end method
 
 .method public writeSummaryToParcel(Landroid/os/Parcel;)V
     .locals 39
-    .param p1    # Landroid/os/Parcel;
 
     invoke-virtual/range {p0 .. p0}, Lcom/android/internal/os/BatteryStatsImpl;->updateKernelWakelocksLocked()V
 
@@ -13111,8 +12918,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     const/4 v0, 0x1
 
@@ -13123,9 +12928,6 @@
 
 .method writeToParcelLocked(Landroid/os/Parcel;ZI)V
     .locals 21
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # Z
-    .param p3    # I
 
     invoke-virtual/range {p0 .. p0}, Lcom/android/internal/os/BatteryStatsImpl;->updateKernelWakelocksLocked()V
 
@@ -13849,8 +13651,6 @@
 
 .method public writeToParcelWithoutUids(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     const/4 v0, 0x0
 

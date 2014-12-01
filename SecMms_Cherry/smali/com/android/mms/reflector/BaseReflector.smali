@@ -301,7 +301,6 @@
 
 .method public getField(Ljava/lang/String;)Ljava/lang/reflect/Field;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Lcom/android/mms/reflector/BaseReflector;->isSupportClass()Z
 
@@ -351,7 +350,6 @@
 
 .method public getMethod(Ljava/lang/String;)Ljava/lang/reflect/Method;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -405,7 +403,6 @@
 
 .method public varargs getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
     .locals 9
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -573,8 +570,6 @@
 
 .method public getValue(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
     .locals 2
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p0, p2}, Lcom/android/mms/reflector/BaseReflector;->getField(Ljava/lang/String;)Ljava/lang/reflect/Field;
 
@@ -589,7 +584,6 @@
 
 .method public getValue(Ljava/lang/String;)Ljava/lang/Object;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lcom/android/mms/reflector/BaseReflector;->getField(Ljava/lang/String;)Ljava/lang/reflect/Field;
 
@@ -606,8 +600,6 @@
 
 .method public invoke(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
     .locals 2
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -632,7 +624,6 @@
 
 .method public invoke(Ljava/lang/String;)Ljava/lang/Object;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 

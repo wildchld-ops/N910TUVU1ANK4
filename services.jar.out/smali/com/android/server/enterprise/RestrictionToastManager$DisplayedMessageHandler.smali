@@ -25,7 +25,6 @@
 
 .method synthetic constructor <init>(Lcom/android/server/enterprise/RestrictionToastManager$1;)V
     .locals 0
-    .param p1    # Lcom/android/server/enterprise/RestrictionToastManager$1;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/RestrictionToastManager$DisplayedMessageHandler;-><init>()V
 
@@ -36,7 +35,6 @@
 # virtual methods
 .method public declared-synchronized handleMessage(Landroid/os/Message;)V
     .locals 3
-    .param p1    # Landroid/os/Message;
 
     monitor-enter p0
 

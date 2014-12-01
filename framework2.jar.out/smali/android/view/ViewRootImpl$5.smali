@@ -36,7 +36,6 @@
 # virtual methods
 .method public addCallback(Landroid/view/SurfaceHolder$Callback;)V
     .locals 0
-    .param p1    # Landroid/view/SurfaceHolder$Callback;
 
     return-void
 .end method
@@ -80,7 +79,6 @@
 
 .method public lockCanvas(Landroid/graphics/Rect;)Landroid/graphics/Canvas;
     .locals 1
-    .param p1    # Landroid/graphics/Rect;
 
     const/4 v0, 0x0
 
@@ -89,29 +87,24 @@
 
 .method public removeCallback(Landroid/view/SurfaceHolder$Callback;)V
     .locals 0
-    .param p1    # Landroid/view/SurfaceHolder$Callback;
 
     return-void
 .end method
 
 .method public setFixedSize(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     return-void
 .end method
 
 .method public setFormat(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public setKeepScreenOn(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
@@ -124,14 +117,12 @@
 
 .method public setType(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public unlockCanvasAndPost(Landroid/graphics/Canvas;)V
     .locals 0
-    .param p1    # Landroid/graphics/Canvas;
 
     return-void
 .end method

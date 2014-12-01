@@ -99,9 +99,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/os/IPowerManager;Landroid/os/Handler;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/IPowerManager;
-    .param p3    # Landroid/os/Handler;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -120,7 +117,6 @@
 
 .method static synthetic access$000(Landroid/os/PowerManager;)Ljava/util/regex/Pattern;
     .locals 1
-    .param p0    # Landroid/os/PowerManager;
 
     iget-object v0, p0, Landroid/os/PowerManager;->mPattern:Ljava/util/regex/Pattern;
 
@@ -129,7 +125,6 @@
 
 .method public static initPowerStretch(I)V
     .locals 0
-    .param p0    # I
 
     invoke-static {p0}, Landroid/os/PowerManager;->native_initPowerStretch(I)V
 
@@ -169,8 +164,6 @@
 
 .method public static validateWakeLockParameters(ILjava/lang/String;)V
     .locals 2
-    .param p0    # I
-    .param p1    # Ljava/lang/String;
 
     const v0, 0xffff
 
@@ -214,7 +207,6 @@
 # virtual methods
 .method public forceDisableWakeLock(Z)V
     .locals 1
-    .param p1    # Z
 
     :try_start_0
     iget-object v0, p0, Landroid/os/PowerManager;->mService:Landroid/os/IPowerManager;
@@ -234,7 +226,6 @@
 
 .method public getCurrentBrightness(Z)F
     .locals 2
-    .param p1    # Z
 
     :try_start_0
     iget-object v1, p0, Landroid/os/PowerManager;->mService:Landroid/os/IPowerManager;
@@ -312,7 +303,6 @@
 
 .method public goToSleep(J)V
     .locals 2
-    .param p1    # J
 
     :try_start_0
     iget-object v0, p0, Landroid/os/PowerManager;->mService:Landroid/os/IPowerManager;
@@ -403,7 +393,6 @@
 
 .method public isWakeLockLevelSupported(I)Z
     .locals 2
-    .param p1    # I
 
     :try_start_0
     iget-object v1, p0, Landroid/os/PowerManager;->mService:Landroid/os/IPowerManager;
@@ -427,7 +416,6 @@
 
 .method public nap(J)V
     .locals 1
-    .param p1    # J
 
     :try_start_0
     iget-object v0, p0, Landroid/os/PowerManager;->mService:Landroid/os/IPowerManager;
@@ -447,8 +435,6 @@
 
 .method public newWakeLock(ILjava/lang/String;)Landroid/os/PowerManager$WakeLock;
     .locals 2
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     invoke-static {p1, p2}, Landroid/os/PowerManager;->validateWakeLockParameters(ILjava/lang/String;)V
 
@@ -467,8 +453,6 @@
 
 .method public preventAutoPowerOff(IZ)V
     .locals 1
-    .param p1    # I
-    .param p2    # Z
 
     :try_start_0
     iget-object v0, p0, Landroid/os/PowerManager;->mService:Landroid/os/IPowerManager;
@@ -488,7 +472,6 @@
 
 .method public reboot(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     iget-object v0, p0, Landroid/os/PowerManager;->mService:Landroid/os/IPowerManager;
@@ -531,10 +514,6 @@
 
 .method public setAlpmMode(ZIILandroid/os/IBinder;)V
     .locals 1
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/os/IBinder;
 
     :try_start_0
     iget-object v0, p0, Landroid/os/PowerManager;->mService:Landroid/os/IPowerManager;
@@ -554,7 +533,6 @@
 
 .method public setAutoBrightnessForEbookOnly(Z)V
     .locals 1
-    .param p1    # Z
 
     :try_start_0
     iget-object v0, p0, Landroid/os/PowerManager;->mService:Landroid/os/IPowerManager;
@@ -574,8 +552,6 @@
 
 .method public setAutoBrightnessLimit(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     :try_start_0
     iget-object v0, p0, Landroid/os/PowerManager;->mService:Landroid/os/IPowerManager;
@@ -595,7 +571,6 @@
 
 .method public setBacklightBrightness(I)V
     .locals 1
-    .param p1    # I
 
     :try_start_0
     iget-object v0, p0, Landroid/os/PowerManager;->mService:Landroid/os/IPowerManager;
@@ -615,7 +590,6 @@
 
 .method public setButtonBrightnessLimit(I)V
     .locals 1
-    .param p1    # I
 
     :try_start_0
     iget-object v0, p0, Landroid/os/PowerManager;->mService:Landroid/os/IPowerManager;
@@ -635,7 +609,6 @@
 
 .method public setForceUnblankDisplay(Z)V
     .locals 1
-    .param p1    # Z
 
     :try_start_0
     iget-object v0, p0, Landroid/os/PowerManager;->mService:Landroid/os/IPowerManager;
@@ -655,7 +628,6 @@
 
 .method public setKeyboardVisibility(Z)V
     .locals 1
-    .param p1    # Z
 
     :try_start_0
     iget-object v0, p0, Landroid/os/PowerManager;->mService:Landroid/os/IPowerManager;
@@ -675,8 +647,6 @@
 
 .method public setMasterBrightnessLimit(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     :try_start_0
     iget-object v0, p0, Landroid/os/PowerManager;->mService:Landroid/os/IPowerManager;
@@ -696,7 +666,6 @@
 
 .method public setRatioOfAutoBrightness(I)V
     .locals 1
-    .param p1    # I
 
     :try_start_0
     iget-object v0, p0, Landroid/os/PowerManager;->mService:Landroid/os/IPowerManager;
@@ -716,7 +685,6 @@
 
 .method public setSystemPowerSaveMode(Z)V
     .locals 1
-    .param p1    # Z
 
     :try_start_0
     iget-object v0, p0, Landroid/os/PowerManager;->mService:Landroid/os/IPowerManager;
@@ -755,7 +723,6 @@
 
 .method public updateCoverState(Z)V
     .locals 1
-    .param p1    # Z
 
     :try_start_0
     iget-object v0, p0, Landroid/os/PowerManager;->mService:Landroid/os/IPowerManager;
@@ -775,9 +742,6 @@
 
 .method public userActivity(JIZ)V
     .locals 2
-    .param p1    # J
-    .param p3    # I
-    .param p4    # Z
 
     :try_start_0
     iget-object v1, p0, Landroid/os/PowerManager;->mService:Landroid/os/IPowerManager;
@@ -807,8 +771,6 @@
 
 .method public userActivity(JZ)V
     .locals 3
-    .param p1    # J
-    .param p3    # Z
 
     const/4 v0, 0x0
 
@@ -837,7 +799,6 @@
 
 .method public wakeUp(J)V
     .locals 1
-    .param p1    # J
 
     :try_start_0
     iget-object v0, p0, Landroid/os/PowerManager;->mService:Landroid/os/IPowerManager;

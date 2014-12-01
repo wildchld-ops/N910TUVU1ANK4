@@ -36,7 +36,6 @@
 # virtual methods
 .method public declared-synchronized onCountryDetected(Landroid/location/Country;)V
     .locals 3
-    .param p1    # Landroid/location/Country;
 
     monitor-enter p0
 

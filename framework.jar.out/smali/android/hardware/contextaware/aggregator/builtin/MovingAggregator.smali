@@ -26,8 +26,6 @@
 # direct methods
 .method public constructor <init>(ILjava/util/concurrent/CopyOnWriteArrayList;Landroid/hardware/contextaware/dataprovider/sensorhubprovider/ISensorHubResetObservable;)V
     .locals 6
-    .param p1    # I
-    .param p3    # Landroid/hardware/contextaware/dataprovider/sensorhubprovider/ISensorHubResetObservable;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -59,9 +57,6 @@
 
 .method private notifyMovingContext(III)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     invoke-virtual {p0}, Landroid/hardware/contextaware/aggregator/builtin/MovingAggregator;->getContextValueNames()[Ljava/lang/String;
 
@@ -110,7 +105,6 @@
 
 .method private updateMovingMode(I)I
     .locals 2
-    .param p1    # I
 
     const/4 v0, -0x1
 
@@ -158,7 +152,6 @@
 
 .method private updatePedestrianStatus(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     const-string v3, "PedestrianStatus"
 
@@ -232,7 +225,6 @@
 
 .method private updatePedometerData(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "StepStatus"
 
@@ -420,8 +412,6 @@
 
 .method public final updateContext(Ljava/lang/String;Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Bundle;
 
     sget-object v0, Landroid/hardware/contextaware/ContextList$ContextType;->AGGREGATOR_LOCATION:Landroid/hardware/contextaware/ContextList$ContextType;
 

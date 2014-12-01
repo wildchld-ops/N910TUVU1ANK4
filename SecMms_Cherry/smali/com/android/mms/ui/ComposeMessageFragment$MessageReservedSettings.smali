@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -90,7 +89,6 @@
 
 .method public setReservationTime(J)V
     .locals 0
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/android/mms/ui/ComposeMessageFragment$MessageReservedSettings;->mReservationTime:J
 

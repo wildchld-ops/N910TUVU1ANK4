@@ -47,7 +47,7 @@
 
     iget-object v1, p0, Lcom/android/phone/DefaultRingtonePreference$1;->this$0:Lcom/android/phone/DefaultRingtonePreference;
 
-    invoke-virtual {v1}, Landroid/preference/Preference;->getContext()Landroid/content/Context;
+    invoke-virtual {v1}, Lcom/android/phone/DefaultRingtonePreference;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -72,7 +72,7 @@
 
     iget-object v1, p0, Lcom/android/phone/DefaultRingtonePreference$1;->this$0:Lcom/android/phone/DefaultRingtonePreference;
 
-    invoke-virtual {v1}, Landroid/preference/Preference;->getContext()Landroid/content/Context;
+    invoke-virtual {v1}, Lcom/android/phone/DefaultRingtonePreference;->getContext()Landroid/content/Context;
 
     move-result-object v1
 

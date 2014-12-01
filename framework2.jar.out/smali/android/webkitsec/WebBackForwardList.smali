@@ -101,7 +101,6 @@
 
 .method public declared-synchronized getItemAtIndex(I)Landroid/webkitsec/WebHistoryItem;
     .locals 1
-    .param p1    # I
 
     monitor-enter p0
 

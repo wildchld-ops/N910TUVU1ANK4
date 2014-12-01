@@ -106,7 +106,6 @@
 # virtual methods
 .method public appendLinesToBuilder(Ljava/lang/StringBuilder;)Ljava/lang/StringBuilder;
     .locals 16
-    .param p1    # Ljava/lang/StringBuilder;
 
     move-object/from16 v0, p0
 
@@ -268,7 +267,6 @@
 
 .method public appendStringsToBuilder(Ljava/lang/StringBuilder;)Ljava/lang/StringBuilder;
     .locals 6
-    .param p1    # Ljava/lang/StringBuilder;
 
     iget-object v5, p0, Landroid/media/TextTrackCue;->mStrings:[Ljava/lang/String;
 
@@ -342,7 +340,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 9
-    .param p1    # Ljava/lang/Object;
 
     const/4 v6, 0x1
 
@@ -524,7 +521,6 @@
 
 .method public onTime(J)V
     .locals 10
-    .param p1    # J
 
     iget-object v0, p0, Landroid/media/TextTrackCue;->mLines:[[Landroid/media/TextTrackCueSpan;
 

@@ -71,7 +71,6 @@
 
 .method static synthetic access$000(Lcom/diotek/ime/implement/setting/TapAndHoldDelayCustom;)Lcom/diotek/ime/implement/setting/TapAndHoldView;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/setting/TapAndHoldDelayCustom;
 
     iget-object v0, p0, Lcom/diotek/ime/implement/setting/TapAndHoldDelayCustom;->mTabAndHoldView:Lcom/diotek/ime/implement/setting/TapAndHoldView;
 
@@ -80,7 +79,6 @@
 
 .method static synthetic access$100(Lcom/diotek/ime/implement/setting/TapAndHoldDelayCustom;)Landroid/widget/Button;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/setting/TapAndHoldDelayCustom;
 
     iget-object v0, p0, Lcom/diotek/ime/implement/setting/TapAndHoldDelayCustom;->mSaveBtn:Landroid/widget/Button;
 
@@ -97,7 +95,6 @@
 
 .method static synthetic access$300(Lcom/diotek/ime/implement/setting/TapAndHoldDelayCustom;)Ljava/lang/Runnable;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/setting/TapAndHoldDelayCustom;
 
     iget-object v0, p0, Lcom/diotek/ime/implement/setting/TapAndHoldDelayCustom;->mRunnable:Ljava/lang/Runnable;
 
@@ -106,7 +103,6 @@
 
 .method static synthetic access$400(Lcom/diotek/ime/implement/setting/TapAndHoldDelayCustom;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/setting/TapAndHoldDelayCustom;
 
     iget-object v0, p0, Lcom/diotek/ime/implement/setting/TapAndHoldDelayCustom;->mHandler:Landroid/os/Handler;
 
@@ -115,7 +111,6 @@
 
 .method private updateLongPressTimeOut(I)V
     .locals 3
-    .param p1    # I
 
     invoke-static {p1}, Lcom/diotek/ime/framework/repository/KeyboardStatus;->setHoldDelay(I)V
 
@@ -149,7 +144,6 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 3
-    .param p1    # Landroid/view/View;
 
     iget-object v1, p0, Lcom/diotek/ime/implement/setting/TapAndHoldDelayCustom;->mSaveBtn:Landroid/widget/Button;
 
@@ -177,7 +171,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 9
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -287,7 +280,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     const/16 v4, 0x400
 
@@ -432,7 +424,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 

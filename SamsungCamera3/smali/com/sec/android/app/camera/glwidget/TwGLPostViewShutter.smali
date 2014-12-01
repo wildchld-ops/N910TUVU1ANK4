@@ -26,13 +26,6 @@
 # direct methods
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;FFFFLandroid/graphics/Bitmap;Z)V
     .locals 20
-    .param p1    # Lcom/sec/android/app/camera/Camera;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # Landroid/graphics/Bitmap;
-    .param p7    # Z
 
     invoke-virtual/range {p1 .. p1}, Lcom/sec/android/app/camera/Camera;->getGLContext()Lcom/sec/android/glview/TwGLContext;
 
@@ -608,8 +601,6 @@
 
 .method static synthetic access$000(Lcom/sec/android/app/camera/glwidget/TwGLPostViewShutter;I)V
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLPostViewShutter;
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/sec/android/glview/TwGLAniViewGroup;->playAnimation(I)V
 
@@ -618,7 +609,6 @@
 
 .method static synthetic access$100(Lcom/sec/android/app/camera/glwidget/TwGLPostViewShutter;)Lcom/sec/android/glview/TwGLAniViewGroup$OnProgressListener;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLPostViewShutter;
 
     iget-object v0, p0, Lcom/sec/android/glview/TwGLAniViewGroup;->mOnProgressListener:Lcom/sec/android/glview/TwGLAniViewGroup$OnProgressListener;
 
@@ -627,7 +617,6 @@
 
 .method static synthetic access$200(Lcom/sec/android/app/camera/glwidget/TwGLPostViewShutter;)Lcom/sec/android/glview/TwGLAniViewGroup$OnProgressListener;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLPostViewShutter;
 
     iget-object v0, p0, Lcom/sec/android/glview/TwGLAniViewGroup;->mOnProgressListener:Lcom/sec/android/glview/TwGLAniViewGroup$OnProgressListener;
 
@@ -636,8 +625,6 @@
 
 .method static synthetic access$300(Lcom/sec/android/app/camera/glwidget/TwGLPostViewShutter;I)V
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLPostViewShutter;
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/sec/android/glview/TwGLAniViewGroup;->playAnimation(I)V
 
@@ -646,8 +633,6 @@
 
 .method static synthetic access$400(Lcom/sec/android/app/camera/glwidget/TwGLPostViewShutter;I)V
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLPostViewShutter;
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/sec/android/glview/TwGLAniViewGroup;->playAnimation(I)V
 
@@ -658,7 +643,6 @@
 # virtual methods
 .method protected setAnimationStep(I)V
     .locals 5
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 

@@ -33,7 +33,6 @@
 # virtual methods
 .method public setOnClickListener(Landroid/view/View$OnClickListener;)V
     .locals 1
-    .param p1    # Landroid/view/View$OnClickListener;
 
     iget-object v0, p0, Lcom/android/systemui/recent/cardholder/RecentsPanelView$AppListItemGridViewHolder;->iconView:Landroid/widget/ImageView;
 
@@ -44,7 +43,6 @@
 
 .method public setOnTouchListener(Landroid/view/View$OnTouchListener;)V
     .locals 1
-    .param p1    # Landroid/view/View$OnTouchListener;
 
     iget-object v0, p0, Lcom/android/systemui/recent/cardholder/RecentsPanelView$AppListItemGridViewHolder;->iconView:Landroid/widget/ImageView;
 

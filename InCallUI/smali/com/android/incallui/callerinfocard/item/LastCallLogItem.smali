@@ -6,10 +6,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/net/Uri;Landroid/database/Cursor;Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/net/Uri;
-    .param p3    # Landroid/database/Cursor;
-    .param p4    # Ljava/lang/Object;
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/incallui/callerinfocard/item/CallerInfoCardItem;-><init>(Landroid/content/Context;Landroid/net/Uri;Landroid/database/Cursor;Ljava/lang/Object;)V
 
@@ -18,7 +14,6 @@
 
 .method private formatDuration(J)Ljava/lang/String;
     .locals 1
-    .param p1    # J
 
     const/4 v0, 0x1
 
@@ -31,8 +26,6 @@
 
 .method private formatDuration(JZ)Ljava/lang/String;
     .locals 11
-    .param p1    # J
-    .param p3    # Z
 
     if-nez p3, :cond_1
 
@@ -627,7 +620,6 @@
 
 .method private formatDurationTTS(J)Ljava/lang/String;
     .locals 1
-    .param p1    # J
 
     const/4 v0, 0x1
 
@@ -640,8 +632,6 @@
 
 .method private formatDurationTTS(JZ)Ljava/lang/String;
     .locals 11
-    .param p1    # J
-    .param p3    # Z
 
     if-nez p3, :cond_1
 
@@ -1236,7 +1226,6 @@
 
 .method private getCallTypeDrawable(I)Landroid/graphics/drawable/Drawable;
     .locals 3
-    .param p1    # I
 
     const v2, 0x7f02045e
 
@@ -1360,7 +1349,6 @@
 
 .method private getLogTypeDrawable(I)Landroid/graphics/drawable/Drawable;
     .locals 3
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -1460,8 +1448,6 @@
 
 .method private setCallType(Landroid/database/Cursor;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Landroid/database/Cursor;
-    .param p2    # Ljava/lang/String;
 
     invoke-interface {p1, p2}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
 
@@ -1512,8 +1498,6 @@
 
 .method private setLogType(Landroid/database/Cursor;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Landroid/database/Cursor;
-    .param p2    # Ljava/lang/String;
 
     invoke-interface {p1, p2}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
 
@@ -1539,7 +1523,6 @@
 
 .method private static toOneDigitChar(J)I
     .locals 4
-    .param p0    # J
 
     const-string v0, "%01d"
 
@@ -1699,10 +1682,6 @@
 
 .method protected setItem(Landroid/content/Context;Landroid/net/Uri;Landroid/database/Cursor;Ljava/lang/Object;)V
     .locals 9
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/net/Uri;
-    .param p3    # Landroid/database/Cursor;
-    .param p4    # Ljava/lang/Object;
 
     const v0, 0x7f02009a
 
@@ -1774,8 +1753,6 @@
 
 .method protected setMainText(Landroid/database/Cursor;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Landroid/database/Cursor;
-    .param p2    # Ljava/lang/String;
 
     const/4 v2, 0x0
 

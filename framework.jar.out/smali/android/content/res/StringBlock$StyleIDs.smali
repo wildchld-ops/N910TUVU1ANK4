@@ -73,7 +73,6 @@
 
 .method static synthetic access$000(Landroid/content/res/StringBlock$StyleIDs;)I
     .locals 1
-    .param p0    # Landroid/content/res/StringBlock$StyleIDs;
 
     iget v0, p0, Landroid/content/res/StringBlock$StyleIDs;->boldId:I
 
@@ -82,8 +81,6 @@
 
 .method static synthetic access$002(Landroid/content/res/StringBlock$StyleIDs;I)I
     .locals 0
-    .param p0    # Landroid/content/res/StringBlock$StyleIDs;
-    .param p1    # I
 
     iput p1, p0, Landroid/content/res/StringBlock$StyleIDs;->boldId:I
 
@@ -92,7 +89,6 @@
 
 .method static synthetic access$100(Landroid/content/res/StringBlock$StyleIDs;)I
     .locals 1
-    .param p0    # Landroid/content/res/StringBlock$StyleIDs;
 
     iget v0, p0, Landroid/content/res/StringBlock$StyleIDs;->italicId:I
 
@@ -101,7 +97,6 @@
 
 .method static synthetic access$1000(Landroid/content/res/StringBlock$StyleIDs;)I
     .locals 1
-    .param p0    # Landroid/content/res/StringBlock$StyleIDs;
 
     iget v0, p0, Landroid/content/res/StringBlock$StyleIDs;->marqueeId:I
 
@@ -110,8 +105,6 @@
 
 .method static synthetic access$1002(Landroid/content/res/StringBlock$StyleIDs;I)I
     .locals 0
-    .param p0    # Landroid/content/res/StringBlock$StyleIDs;
-    .param p1    # I
 
     iput p1, p0, Landroid/content/res/StringBlock$StyleIDs;->marqueeId:I
 
@@ -120,8 +113,6 @@
 
 .method static synthetic access$102(Landroid/content/res/StringBlock$StyleIDs;I)I
     .locals 0
-    .param p0    # Landroid/content/res/StringBlock$StyleIDs;
-    .param p1    # I
 
     iput p1, p0, Landroid/content/res/StringBlock$StyleIDs;->italicId:I
 
@@ -130,7 +121,6 @@
 
 .method static synthetic access$200(Landroid/content/res/StringBlock$StyleIDs;)I
     .locals 1
-    .param p0    # Landroid/content/res/StringBlock$StyleIDs;
 
     iget v0, p0, Landroid/content/res/StringBlock$StyleIDs;->underlineId:I
 
@@ -139,8 +129,6 @@
 
 .method static synthetic access$202(Landroid/content/res/StringBlock$StyleIDs;I)I
     .locals 0
-    .param p0    # Landroid/content/res/StringBlock$StyleIDs;
-    .param p1    # I
 
     iput p1, p0, Landroid/content/res/StringBlock$StyleIDs;->underlineId:I
 
@@ -149,7 +137,6 @@
 
 .method static synthetic access$300(Landroid/content/res/StringBlock$StyleIDs;)I
     .locals 1
-    .param p0    # Landroid/content/res/StringBlock$StyleIDs;
 
     iget v0, p0, Landroid/content/res/StringBlock$StyleIDs;->ttId:I
 
@@ -158,8 +145,6 @@
 
 .method static synthetic access$302(Landroid/content/res/StringBlock$StyleIDs;I)I
     .locals 0
-    .param p0    # Landroid/content/res/StringBlock$StyleIDs;
-    .param p1    # I
 
     iput p1, p0, Landroid/content/res/StringBlock$StyleIDs;->ttId:I
 
@@ -168,7 +153,6 @@
 
 .method static synthetic access$400(Landroid/content/res/StringBlock$StyleIDs;)I
     .locals 1
-    .param p0    # Landroid/content/res/StringBlock$StyleIDs;
 
     iget v0, p0, Landroid/content/res/StringBlock$StyleIDs;->bigId:I
 
@@ -177,8 +161,6 @@
 
 .method static synthetic access$402(Landroid/content/res/StringBlock$StyleIDs;I)I
     .locals 0
-    .param p0    # Landroid/content/res/StringBlock$StyleIDs;
-    .param p1    # I
 
     iput p1, p0, Landroid/content/res/StringBlock$StyleIDs;->bigId:I
 
@@ -187,7 +169,6 @@
 
 .method static synthetic access$500(Landroid/content/res/StringBlock$StyleIDs;)I
     .locals 1
-    .param p0    # Landroid/content/res/StringBlock$StyleIDs;
 
     iget v0, p0, Landroid/content/res/StringBlock$StyleIDs;->smallId:I
 
@@ -196,8 +177,6 @@
 
 .method static synthetic access$502(Landroid/content/res/StringBlock$StyleIDs;I)I
     .locals 0
-    .param p0    # Landroid/content/res/StringBlock$StyleIDs;
-    .param p1    # I
 
     iput p1, p0, Landroid/content/res/StringBlock$StyleIDs;->smallId:I
 
@@ -206,7 +185,6 @@
 
 .method static synthetic access$600(Landroid/content/res/StringBlock$StyleIDs;)I
     .locals 1
-    .param p0    # Landroid/content/res/StringBlock$StyleIDs;
 
     iget v0, p0, Landroid/content/res/StringBlock$StyleIDs;->subId:I
 
@@ -215,8 +193,6 @@
 
 .method static synthetic access$602(Landroid/content/res/StringBlock$StyleIDs;I)I
     .locals 0
-    .param p0    # Landroid/content/res/StringBlock$StyleIDs;
-    .param p1    # I
 
     iput p1, p0, Landroid/content/res/StringBlock$StyleIDs;->subId:I
 
@@ -225,7 +201,6 @@
 
 .method static synthetic access$700(Landroid/content/res/StringBlock$StyleIDs;)I
     .locals 1
-    .param p0    # Landroid/content/res/StringBlock$StyleIDs;
 
     iget v0, p0, Landroid/content/res/StringBlock$StyleIDs;->supId:I
 
@@ -234,8 +209,6 @@
 
 .method static synthetic access$702(Landroid/content/res/StringBlock$StyleIDs;I)I
     .locals 0
-    .param p0    # Landroid/content/res/StringBlock$StyleIDs;
-    .param p1    # I
 
     iput p1, p0, Landroid/content/res/StringBlock$StyleIDs;->supId:I
 
@@ -244,7 +217,6 @@
 
 .method static synthetic access$800(Landroid/content/res/StringBlock$StyleIDs;)I
     .locals 1
-    .param p0    # Landroid/content/res/StringBlock$StyleIDs;
 
     iget v0, p0, Landroid/content/res/StringBlock$StyleIDs;->strikeId:I
 
@@ -253,8 +225,6 @@
 
 .method static synthetic access$802(Landroid/content/res/StringBlock$StyleIDs;I)I
     .locals 0
-    .param p0    # Landroid/content/res/StringBlock$StyleIDs;
-    .param p1    # I
 
     iput p1, p0, Landroid/content/res/StringBlock$StyleIDs;->strikeId:I
 
@@ -263,7 +233,6 @@
 
 .method static synthetic access$900(Landroid/content/res/StringBlock$StyleIDs;)I
     .locals 1
-    .param p0    # Landroid/content/res/StringBlock$StyleIDs;
 
     iget v0, p0, Landroid/content/res/StringBlock$StyleIDs;->listItemId:I
 
@@ -272,8 +241,6 @@
 
 .method static synthetic access$902(Landroid/content/res/StringBlock$StyleIDs;I)I
     .locals 0
-    .param p0    # Landroid/content/res/StringBlock$StyleIDs;
-    .param p1    # I
 
     iput p1, p0, Landroid/content/res/StringBlock$StyleIDs;->listItemId:I
 

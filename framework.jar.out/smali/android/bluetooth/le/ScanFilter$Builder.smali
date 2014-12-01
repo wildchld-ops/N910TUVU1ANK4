@@ -97,7 +97,6 @@
 
 .method public setDeviceAddress(Ljava/lang/String;)Landroid/bluetooth/le/ScanFilter$Builder;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -139,7 +138,6 @@
 
 .method public setDeviceName(Ljava/lang/String;)Landroid/bluetooth/le/ScanFilter$Builder;
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/bluetooth/le/ScanFilter$Builder;->mDeviceName:Ljava/lang/String;
 
@@ -148,8 +146,6 @@
 
 .method public setManufacturerData(I[B)Landroid/bluetooth/le/ScanFilter$Builder;
     .locals 2
-    .param p1    # I
-    .param p2    # [B
 
     if-eqz p2, :cond_0
 
@@ -177,9 +173,6 @@
 
 .method public setManufacturerData(I[B[B)Landroid/bluetooth/le/ScanFilter$Builder;
     .locals 2
-    .param p1    # I
-    .param p2    # [B
-    .param p3    # [B
 
     if-eqz p2, :cond_0
 
@@ -241,8 +234,6 @@
 
 .method public setRssiRange(II)Landroid/bluetooth/le/ScanFilter$Builder;
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     iput p1, p0, Landroid/bluetooth/le/ScanFilter$Builder;->mMinRssi:I
 
@@ -253,7 +244,6 @@
 
 .method public setServiceData([B)Landroid/bluetooth/le/ScanFilter$Builder;
     .locals 1
-    .param p1    # [B
 
     iput-object p1, p0, Landroid/bluetooth/le/ScanFilter$Builder;->mServiceData:[B
 
@@ -266,8 +256,6 @@
 
 .method public setServiceData([B[B)Landroid/bluetooth/le/ScanFilter$Builder;
     .locals 2
-    .param p1    # [B
-    .param p2    # [B
 
     iget-object v0, p0, Landroid/bluetooth/le/ScanFilter$Builder;->mServiceDataMask:[B
 
@@ -314,7 +302,6 @@
 
 .method public setServiceUuid(Landroid/os/ParcelUuid;)Landroid/bluetooth/le/ScanFilter$Builder;
     .locals 1
-    .param p1    # Landroid/os/ParcelUuid;
 
     iput-object p1, p0, Landroid/bluetooth/le/ScanFilter$Builder;->mServiceUuid:Landroid/os/ParcelUuid;
 
@@ -327,8 +314,6 @@
 
 .method public setServiceUuid(Landroid/os/ParcelUuid;Landroid/os/ParcelUuid;)Landroid/bluetooth/le/ScanFilter$Builder;
     .locals 2
-    .param p1    # Landroid/os/ParcelUuid;
-    .param p2    # Landroid/os/ParcelUuid;
 
     iget-object v0, p0, Landroid/bluetooth/le/ScanFilter$Builder;->mUuidMask:Landroid/os/ParcelUuid;
 

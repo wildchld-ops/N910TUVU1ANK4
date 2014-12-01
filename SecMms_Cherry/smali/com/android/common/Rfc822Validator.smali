@@ -38,7 +38,6 @@
 
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -53,7 +52,6 @@
 
 .method private removeIllegalCharacters(Ljava/lang/String;)Ljava/lang/String;
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -151,7 +149,6 @@
 # virtual methods
 .method public fixText(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
     .locals 12
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v8, 0x0
 
@@ -356,7 +353,6 @@
 
 .method public isValid(Ljava/lang/CharSequence;)Z
     .locals 5
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v1, 0x1
 
@@ -399,7 +395,6 @@
 
 .method public setRemoveInvalid(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/common/Rfc822Validator;->mRemoveInvalid:Z
 

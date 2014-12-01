@@ -36,7 +36,6 @@
 # virtual methods
 .method public dump(Ljava/io/PrintWriter;)V
     .locals 1
-    .param p1    # Ljava/io/PrintWriter;
 
     iget-object v0, p0, Lcom/android/server/dreams/DreamManagerService$2;->this$0:Lcom/android/server/dreams/DreamManagerService;
 

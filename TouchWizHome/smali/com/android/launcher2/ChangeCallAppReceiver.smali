@@ -22,7 +22,6 @@
 # virtual methods
 .method public init(Lcom/android/launcher2/HomeView;)V
     .locals 0
-    .param p1    # Lcom/android/launcher2/HomeView;
 
     sput-object p1, Lcom/android/launcher2/ChangeCallAppReceiver;->mHomeView:Lcom/android/launcher2/HomeView;
 
@@ -31,8 +30,6 @@
 
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     if-nez p2, :cond_1
 

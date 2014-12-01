@@ -131,8 +131,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;I)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     const/4 v1, 0x3
 
@@ -379,7 +377,6 @@
 
 .method static synthetic access$000(Lcom/sec/android/visualeffect/spectrum/SpectrumEffect;)V
     .locals 0
-    .param p0    # Lcom/sec/android/visualeffect/spectrum/SpectrumEffect;
 
     invoke-direct {p0}, Lcom/sec/android/visualeffect/spectrum/SpectrumEffect;->newXY()V
 
@@ -388,7 +385,6 @@
 
 .method static synthetic access$100(Lcom/sec/android/visualeffect/spectrum/SpectrumEffect;)V
     .locals 0
-    .param p0    # Lcom/sec/android/visualeffect/spectrum/SpectrumEffect;
 
     invoke-direct {p0}, Lcom/sec/android/visualeffect/spectrum/SpectrumEffect;->newR()V
 
@@ -397,7 +393,6 @@
 
 .method static synthetic access$200(Lcom/sec/android/visualeffect/spectrum/SpectrumEffect;)I
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/spectrum/SpectrumEffect;
 
     iget v0, p0, Lcom/sec/android/visualeffect/spectrum/SpectrumEffect;->mState:I
 
@@ -406,7 +401,6 @@
 
 .method static synthetic access$300(Lcom/sec/android/visualeffect/spectrum/SpectrumEffect;)I
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/spectrum/SpectrumEffect;
 
     iget v0, p0, Lcom/sec/android/visualeffect/spectrum/SpectrumEffect;->RUNNING:I
 
@@ -415,7 +409,6 @@
 
 .method static synthetic access$400(Lcom/sec/android/visualeffect/spectrum/SpectrumEffect;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/spectrum/SpectrumEffect;
 
     iget-object v0, p0, Lcom/sec/android/visualeffect/spectrum/SpectrumEffect;->mHandler:Landroid/os/Handler;
 
@@ -424,8 +417,6 @@
 
 .method private drawBackground(Landroid/graphics/Paint;Landroid/graphics/Canvas;)V
     .locals 6
-    .param p1    # Landroid/graphics/Paint;
-    .param p2    # Landroid/graphics/Canvas;
 
     const/4 v1, 0x0
 
@@ -478,8 +469,6 @@
 
 .method private getRandomize(DD)D
     .locals 4
-    .param p1    # D
-    .param p3    # D
 
     invoke-static {}, Ljava/lang/Math;->random()D
 
@@ -496,8 +485,6 @@
 
 .method private getRandomize(FF)F
     .locals 4
-    .param p1    # F
-    .param p2    # F
 
     invoke-static {}, Ljava/lang/Math;->random()D
 
@@ -520,8 +507,6 @@
 
 .method private getRandomize(II)I
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     invoke-static {}, Ljava/lang/Math;->random()D
 
@@ -1153,7 +1138,6 @@
 
 .method protected onDraw(Landroid/graphics/Canvas;)V
     .locals 7
-    .param p1    # Landroid/graphics/Canvas;
 
     const/high16 v6, 0x41800000
 
@@ -1277,10 +1261,6 @@
 
 .method protected onSizeChanged(IIII)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const-string v1, "VisualEffectSpectrumEffect"
 
@@ -1453,8 +1433,6 @@
 
 .method public setColor(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     const-string v0, "VisualEffectSpectrumEffect"
 
@@ -1497,7 +1475,6 @@
 
 .method public setSpectrumData([F)V
     .locals 3
-    .param p1    # [F
 
     const/4 v0, 0x0
 

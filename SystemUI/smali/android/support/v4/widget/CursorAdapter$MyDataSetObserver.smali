@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Landroid/support/v4/widget/CursorAdapter;Landroid/support/v4/widget/CursorAdapter$1;)V
     .locals 0
-    .param p1    # Landroid/support/v4/widget/CursorAdapter;
-    .param p2    # Landroid/support/v4/widget/CursorAdapter$1;
 
     invoke-direct {p0, p1}, Landroid/support/v4/widget/CursorAdapter$MyDataSetObserver;-><init>(Landroid/support/v4/widget/CursorAdapter;)V
 

@@ -18,7 +18,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v1, 0x1
 
@@ -41,8 +40,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v5, 0x1
 
@@ -97,8 +94,6 @@
 
 .method private initViewAnimator(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v3, 0x1
 
@@ -131,9 +126,6 @@
 # virtual methods
 .method public addView(Landroid/view/View;ILandroid/view/ViewGroup$LayoutParams;)V
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # Landroid/view/ViewGroup$LayoutParams;
 
     invoke-super {p0, p1, p2, p3}, Landroid/view/ViewGroup;->addView(Landroid/view/View;ILandroid/view/ViewGroup$LayoutParams;)V
 
@@ -247,7 +239,6 @@
 
 .method public onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
     .locals 1
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
 
     invoke-super {p0, p1}, Landroid/widget/FrameLayout;->onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
 
@@ -264,7 +255,6 @@
 
 .method public onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
     .locals 1
-    .param p1    # Landroid/view/accessibility/AccessibilityNodeInfo;
 
     invoke-super {p0, p1}, Landroid/widget/FrameLayout;->onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
 
@@ -297,7 +287,6 @@
 
 .method public removeView(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p0, p1}, Landroid/view/ViewGroup;->indexOfChild(Landroid/view/View;)I
 
@@ -313,7 +302,6 @@
 
 .method public removeViewAt(I)V
     .locals 2
-    .param p1    # I
 
     invoke-super {p0, p1}, Landroid/view/ViewGroup;->removeViewAt(I)V
 
@@ -360,7 +348,6 @@
 
 .method public removeViewInLayout(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p0, p1}, Landroid/widget/ViewAnimator;->removeView(Landroid/view/View;)V
 
@@ -369,8 +356,6 @@
 
 .method public removeViews(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     invoke-super {p0, p1, p2}, Landroid/view/ViewGroup;->removeViews(II)V
 
@@ -412,8 +397,6 @@
 
 .method public removeViewsInLayout(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0, p1, p2}, Landroid/widget/ViewAnimator;->removeViews(II)V
 
@@ -422,7 +405,6 @@
 
 .method public setAnimateFirstView(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/widget/ViewAnimator;->mAnimateFirstTime:Z
 
@@ -431,7 +413,6 @@
 
 .method public setDisplayedChild(I)V
     .locals 2
-    .param p1    # I
     .annotation runtime Landroid/view/RemotableViewMethod;
     .end annotation
 
@@ -487,8 +468,6 @@
 
 .method public setInAnimation(Landroid/content/Context;I)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     invoke-static {p1, p2}, Landroid/view/animation/AnimationUtils;->loadAnimation(Landroid/content/Context;I)Landroid/view/animation/Animation;
 
@@ -501,7 +480,6 @@
 
 .method public setInAnimation(Landroid/view/animation/Animation;)V
     .locals 0
-    .param p1    # Landroid/view/animation/Animation;
 
     iput-object p1, p0, Landroid/widget/ViewAnimator;->mInAnimation:Landroid/view/animation/Animation;
 
@@ -510,8 +488,6 @@
 
 .method public setOutAnimation(Landroid/content/Context;I)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     invoke-static {p1, p2}, Landroid/view/animation/AnimationUtils;->loadAnimation(Landroid/content/Context;I)Landroid/view/animation/Animation;
 
@@ -524,7 +500,6 @@
 
 .method public setOutAnimation(Landroid/view/animation/Animation;)V
     .locals 0
-    .param p1    # Landroid/view/animation/Animation;
 
     iput-object p1, p0, Landroid/widget/ViewAnimator;->mOutAnimation:Landroid/view/animation/Animation;
 
@@ -547,7 +522,6 @@
 
 .method showOnly(I)V
     .locals 2
-    .param p1    # I
 
     iget-boolean v1, p0, Landroid/widget/ViewAnimator;->mFirstTime:Z
 
@@ -573,8 +547,6 @@
 
 .method showOnly(IZ)V
     .locals 6
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v5, 0x0
 

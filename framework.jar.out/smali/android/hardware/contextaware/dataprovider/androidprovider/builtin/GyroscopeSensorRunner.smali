@@ -6,10 +6,6 @@
 # direct methods
 .method public constructor <init>(ILandroid/content/Context;Landroid/os/Looper;Landroid/hardware/contextaware/dataprovider/sensorhubprovider/ISensorHubResetObservable;)V
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/os/Looper;
-    .param p4    # Landroid/hardware/contextaware/dataprovider/sensorhubprovider/ISensorHubResetObservable;
 
     const v5, 0xea60
 
@@ -30,11 +26,6 @@
 
 .method public constructor <init>(ILandroid/content/Context;Landroid/os/Looper;Landroid/hardware/contextaware/dataprovider/sensorhubprovider/ISensorHubResetObservable;I)V
     .locals 0
-    .param p1    # I
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/os/Looper;
-    .param p4    # Landroid/hardware/contextaware/dataprovider/sensorhubprovider/ISensorHubResetObservable;
-    .param p5    # I
 
     invoke-direct/range {p0 .. p5}, Landroid/hardware/contextaware/dataprovider/androidprovider/RawSensorProvider;-><init>(ILandroid/content/Context;Landroid/os/Looper;Landroid/hardware/contextaware/dataprovider/sensorhubprovider/ISensorHubResetObservable;I)V
 

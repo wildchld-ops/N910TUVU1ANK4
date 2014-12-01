@@ -50,7 +50,6 @@
 
 .method public constructor <init>(I)V
     .locals 4
-    .param p1    # I
 
     const/4 v3, 0x1
 
@@ -155,7 +154,6 @@
 
 .method attachToFrame(Landroid/filterfw/core/Frame;)V
     .locals 0
-    .param p1    # Landroid/filterfw/core/Frame;
 
     iput-object p1, p0, Landroid/filterfw/core/NativeBuffer;->mAttachedFrame:Landroid/filterfw/core/Frame;
 

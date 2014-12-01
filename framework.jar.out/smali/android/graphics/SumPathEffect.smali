@@ -6,8 +6,6 @@
 # direct methods
 .method public constructor <init>(Landroid/graphics/PathEffect;Landroid/graphics/PathEffect;)V
     .locals 2
-    .param p1    # Landroid/graphics/PathEffect;
-    .param p2    # Landroid/graphics/PathEffect;
 
     invoke-direct {p0}, Landroid/graphics/PathEffect;-><init>()V
 

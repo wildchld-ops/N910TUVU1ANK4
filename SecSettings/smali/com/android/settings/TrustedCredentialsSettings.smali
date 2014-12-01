@@ -77,8 +77,6 @@
 
 .method static synthetic access$1000(Lcom/android/settings/TrustedCredentialsSettings;Lcom/android/settings/TrustedCredentialsSettings$CertHolder;)V
     .locals 0
-    .param p0    # Lcom/android/settings/TrustedCredentialsSettings;
-    .param p1    # Lcom/android/settings/TrustedCredentialsSettings$CertHolder;
 
     invoke-direct {p0, p1}, Lcom/android/settings/TrustedCredentialsSettings;->showCertDialog(Lcom/android/settings/TrustedCredentialsSettings$CertHolder;)V
 
@@ -87,7 +85,6 @@
 
 .method static synthetic access$1900(Lcom/android/settings/TrustedCredentialsSettings;)Landroid/widget/TabHost;
     .locals 1
-    .param p0    # Lcom/android/settings/TrustedCredentialsSettings;
 
     iget-object v0, p0, Lcom/android/settings/TrustedCredentialsSettings;->mTabHost:Landroid/widget/TabHost;
 
@@ -96,7 +93,6 @@
 
 .method static synthetic access$2200(Lcom/android/settings/TrustedCredentialsSettings;)Lcom/android/org/conscrypt/TrustedCertificateStore;
     .locals 1
-    .param p0    # Lcom/android/settings/TrustedCredentialsSettings;
 
     iget-object v0, p0, Lcom/android/settings/TrustedCredentialsSettings;->mStore:Lcom/android/org/conscrypt/TrustedCertificateStore;
 
@@ -105,7 +101,6 @@
 
 .method static synthetic access$2900(Lcom/android/settings/TrustedCredentialsSettings;)Landroid/os/UserManager;
     .locals 1
-    .param p0    # Lcom/android/settings/TrustedCredentialsSettings;
 
     iget-object v0, p0, Lcom/android/settings/TrustedCredentialsSettings;->mUserManager:Landroid/os/UserManager;
 
@@ -114,7 +109,6 @@
 
 .method static synthetic access$3000(Lcom/android/settings/TrustedCredentialsSettings;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/TrustedCredentialsSettings;
 
     iget-boolean v0, p0, Lcom/android/settings/TrustedCredentialsSettings;->mChallengeSucceeded:Z
 
@@ -123,7 +117,6 @@
 
 .method static synthetic access$3100(Lcom/android/settings/TrustedCredentialsSettings;)V
     .locals 0
-    .param p0    # Lcom/android/settings/TrustedCredentialsSettings;
 
     invoke-direct {p0}, Lcom/android/settings/TrustedCredentialsSettings;->ensurePin()V
 
@@ -132,8 +125,6 @@
 
 .method static synthetic access$3200(Lcom/android/settings/TrustedCredentialsSettings;Lcom/android/settings/TrustedCredentialsSettings$CertHolder;)V
     .locals 0
-    .param p0    # Lcom/android/settings/TrustedCredentialsSettings;
-    .param p1    # Lcom/android/settings/TrustedCredentialsSettings$CertHolder;
 
     invoke-direct {p0, p1}, Lcom/android/settings/TrustedCredentialsSettings;->showtConfirmDialog(Lcom/android/settings/TrustedCredentialsSettings$CertHolder;)V
 
@@ -142,7 +133,6 @@
 
 .method static synthetic access$3500(Lcom/android/settings/TrustedCredentialsSettings;)Landroid/app/Dialog;
     .locals 1
-    .param p0    # Lcom/android/settings/TrustedCredentialsSettings;
 
     iget-object v0, p0, Lcom/android/settings/TrustedCredentialsSettings;->mCertDialog:Landroid/app/Dialog;
 
@@ -151,8 +141,6 @@
 
 .method static synthetic access$3502(Lcom/android/settings/TrustedCredentialsSettings;Landroid/app/Dialog;)Landroid/app/Dialog;
     .locals 0
-    .param p0    # Lcom/android/settings/TrustedCredentialsSettings;
-    .param p1    # Landroid/app/Dialog;
 
     iput-object p1, p0, Lcom/android/settings/TrustedCredentialsSettings;->mCertDialog:Landroid/app/Dialog;
 
@@ -161,7 +149,6 @@
 
 .method static synthetic access$3800(Lcom/android/settings/TrustedCredentialsSettings;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/TrustedCredentialsSettings;
 
     iget-boolean v0, p0, Lcom/android/settings/TrustedCredentialsSettings;->mHasPaused:Z
 
@@ -170,8 +157,6 @@
 
 .method static synthetic access$3802(Lcom/android/settings/TrustedCredentialsSettings;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/TrustedCredentialsSettings;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/TrustedCredentialsSettings;->mHasPaused:Z
 
@@ -180,7 +165,6 @@
 
 .method static synthetic access$3900(Lcom/android/settings/TrustedCredentialsSettings;)Landroid/app/AlertDialog;
     .locals 1
-    .param p0    # Lcom/android/settings/TrustedCredentialsSettings;
 
     iget-object v0, p0, Lcom/android/settings/TrustedCredentialsSettings;->mAlertDialog:Landroid/app/AlertDialog;
 
@@ -189,8 +173,6 @@
 
 .method static synthetic access$3902(Lcom/android/settings/TrustedCredentialsSettings;Landroid/app/AlertDialog;)Landroid/app/AlertDialog;
     .locals 0
-    .param p0    # Lcom/android/settings/TrustedCredentialsSettings;
-    .param p1    # Landroid/app/AlertDialog;
 
     iput-object p1, p0, Lcom/android/settings/TrustedCredentialsSettings;->mAlertDialog:Landroid/app/AlertDialog;
 
@@ -199,7 +181,6 @@
 
 .method private addTab(Lcom/android/settings/TrustedCredentialsSettings$Tab;)V
     .locals 6
-    .param p1    # Lcom/android/settings/TrustedCredentialsSettings$Tab;
 
     iget-object v3, p0, Lcom/android/settings/TrustedCredentialsSettings;->mTabHost:Landroid/widget/TabHost;
 
@@ -321,7 +302,6 @@
 
 .method private showCertDialog(Lcom/android/settings/TrustedCredentialsSettings$CertHolder;)V
     .locals 10
-    .param p1    # Lcom/android/settings/TrustedCredentialsSettings$CertHolder;
 
     const/4 v9, 0x0
 
@@ -470,7 +450,6 @@
 
 .method private showtConfirmDialog(Lcom/android/settings/TrustedCredentialsSettings$CertHolder;)V
     .locals 5
-    .param p1    # Lcom/android/settings/TrustedCredentialsSettings$CertHolder;
 
     invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 
@@ -523,9 +502,6 @@
 # virtual methods
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const/16 v0, 0x3015
 
@@ -555,7 +531,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 3
-    .param p1    # Landroid/content/res/Configuration;
 
     const/4 v2, 0x0
 
@@ -628,7 +603,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -651,9 +625,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 2
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 

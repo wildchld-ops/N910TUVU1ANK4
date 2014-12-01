@@ -36,11 +36,6 @@
 # direct methods
 .method public constructor <init>(Landroid/webkitsec/WebViewClassic;Ljava/lang/String;Ljava/lang/String;Landroid/os/Message;ZZ)V
     .locals 1
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Landroid/os/Message;
-    .param p5    # Z
-    .param p6    # Z
 
     iput-object p1, p0, Landroid/webkitsec/WebViewClassic$RequestFormData;->this$0:Landroid/webkitsec/WebViewClassic;
 

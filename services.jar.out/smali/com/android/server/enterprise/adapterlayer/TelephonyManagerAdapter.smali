@@ -73,7 +73,6 @@
 
 .method public getSignalStrengthDbm(Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/android/internal/telephony/PhoneStateIntentReceiver;
 
@@ -86,7 +85,6 @@
 
 .method public getSignalStrengthLevelAsu(Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/android/internal/telephony/PhoneStateIntentReceiver;
 
@@ -109,9 +107,6 @@
 
 .method public initPhoneStateReceiver(Landroid/content/Context;Landroid/os/Handler;I)Ljava/lang/Object;
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/Handler;
-    .param p3    # I
 
     new-instance v0, Lcom/android/internal/telephony/PhoneStateIntentReceiver;
 

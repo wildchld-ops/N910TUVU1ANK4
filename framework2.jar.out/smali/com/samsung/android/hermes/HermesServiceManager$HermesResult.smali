@@ -47,8 +47,6 @@
 
 .method public constructor <init>(Lcom/samsung/android/hermes/HermesServiceManager;ILjava/lang/Object;)V
     .locals 2
-    .param p2    # I
-    .param p3    # Ljava/lang/Object;
 
     const/4 v1, 0x0
 
@@ -75,9 +73,6 @@
 
 .method public constructor <init>(Lcom/samsung/android/hermes/HermesServiceManager;ILjava/lang/Object;Lcom/samsung/android/hermes/HermesServiceManager$HermesEvent;)V
     .locals 2
-    .param p2    # I
-    .param p3    # Ljava/lang/Object;
-    .param p4    # Lcom/samsung/android/hermes/HermesServiceManager$HermesEvent;
 
     const/4 v1, 0x0
 
@@ -104,8 +99,6 @@
 
 .method static synthetic access$000(Lcom/samsung/android/hermes/HermesServiceManager$HermesResult;I)V
     .locals 0
-    .param p0    # Lcom/samsung/android/hermes/HermesServiceManager$HermesResult;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/samsung/android/hermes/HermesServiceManager$HermesResult;->setId(I)V
 
@@ -114,8 +107,6 @@
 
 .method static synthetic access$100(Lcom/samsung/android/hermes/HermesServiceManager$HermesResult;Ljava/lang/Object;)V
     .locals 0
-    .param p0    # Lcom/samsung/android/hermes/HermesServiceManager$HermesResult;
-    .param p1    # Ljava/lang/Object;
 
     invoke-direct {p0, p1}, Lcom/samsung/android/hermes/HermesServiceManager$HermesResult;->setData(Ljava/lang/Object;)V
 
@@ -124,8 +115,6 @@
 
 .method static synthetic access$300(Lcom/samsung/android/hermes/HermesServiceManager$HermesResult;Lcom/samsung/android/hermes/HermesServiceManager$HermesEvent;)V
     .locals 0
-    .param p0    # Lcom/samsung/android/hermes/HermesServiceManager$HermesResult;
-    .param p1    # Lcom/samsung/android/hermes/HermesServiceManager$HermesEvent;
 
     invoke-direct {p0, p1}, Lcom/samsung/android/hermes/HermesServiceManager$HermesResult;->setEvent(Lcom/samsung/android/hermes/HermesServiceManager$HermesEvent;)V
 
@@ -134,7 +123,6 @@
 
 .method private setData(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     iput-object p1, p0, Lcom/samsung/android/hermes/HermesServiceManager$HermesResult;->data:Ljava/lang/Object;
 
@@ -143,7 +131,6 @@
 
 .method private setEvent(Lcom/samsung/android/hermes/HermesServiceManager$HermesEvent;)V
     .locals 0
-    .param p1    # Lcom/samsung/android/hermes/HermesServiceManager$HermesEvent;
 
     iput-object p1, p0, Lcom/samsung/android/hermes/HermesServiceManager$HermesResult;->event:Lcom/samsung/android/hermes/HermesServiceManager$HermesEvent;
 
@@ -152,7 +139,6 @@
 
 .method private setId(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/android/hermes/HermesServiceManager$HermesResult;->id:I
 

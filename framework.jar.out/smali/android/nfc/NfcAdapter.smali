@@ -174,7 +174,6 @@
 
 .method constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -221,7 +220,6 @@
 
 .method public static getDefaultAdapter(Landroid/content/Context;)Landroid/nfc/NfcAdapter;
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     if-nez p0, :cond_0
 
@@ -276,7 +274,6 @@
 
 .method public static declared-synchronized getNfcAdapter(Landroid/content/Context;)Landroid/nfc/NfcAdapter;
     .locals 5
-    .param p0    # Landroid/content/Context;
 
     const-class v3, Landroid/nfc/NfcAdapter;
 
@@ -521,7 +518,6 @@
 
 .method private isAndroidBeamAllowed(Z)Z
     .locals 4
-    .param p1    # Z
 
     :try_start_0
     const-string v2, "NFC"
@@ -674,7 +670,6 @@
 
 .method public attemptDeadServiceRecovery(Ljava/lang/Exception;)V
     .locals 4
-    .param p1    # Ljava/lang/Exception;
 
     const-string v2, "NFC"
 
@@ -745,7 +740,6 @@
 
 .method public changeDefaultRoute(Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -916,7 +910,6 @@
 
 .method public disableFilterCondition(B)Z
     .locals 2
-    .param p1    # B
 
     :try_start_0
     sget-object v1, Landroid/nfc/NfcAdapter;->sService:Landroid/nfc/INfcAdapter;
@@ -942,7 +935,6 @@
 
 .method public disableForegroundDispatch(Landroid/app/Activity;)V
     .locals 2
-    .param p1    # Landroid/app/Activity;
 
     invoke-static {}, Landroid/app/ActivityThread;->currentActivityThread()Landroid/app/ActivityThread;
 
@@ -961,8 +953,6 @@
 
 .method disableForegroundDispatchInternal(Landroid/app/Activity;Z)V
     .locals 5
-    .param p1    # Landroid/app/Activity;
-    .param p2    # Z
 
     :try_start_0
     sget-object v1, Landroid/nfc/NfcAdapter;->sService:Landroid/nfc/INfcAdapter;
@@ -1004,7 +994,6 @@
 
 .method public disableForegroundNdefPush(Landroid/app/Activity;)V
     .locals 3
-    .param p1    # Landroid/app/Activity;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -1065,7 +1054,6 @@
 
 .method public disableReaderMode(Landroid/app/Activity;)V
     .locals 1
-    .param p1    # Landroid/app/Activity;
 
     iget-object v0, p0, Landroid/nfc/NfcAdapter;->mNfcActivityManager:Landroid/nfc/NfcActivityManager;
 
@@ -1076,7 +1064,6 @@
 
 .method public dispatch(Landroid/nfc/Tag;)V
     .locals 3
-    .param p1    # Landroid/nfc/Tag;
 
     if-nez p1, :cond_0
 
@@ -1156,8 +1143,6 @@
 
 .method public enableDisableSeTestMode(Ljava/lang/String;Z)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1193,7 +1178,6 @@
 
 .method public enableFilterCondition(B)Z
     .locals 2
-    .param p1    # B
 
     :try_start_0
     sget-object v1, Landroid/nfc/NfcAdapter;->sService:Landroid/nfc/INfcAdapter;
@@ -1219,10 +1203,6 @@
 
 .method public enableForegroundDispatch(Landroid/app/Activity;Landroid/app/PendingIntent;[Landroid/content/IntentFilter;[[Ljava/lang/String;)V
     .locals 5
-    .param p1    # Landroid/app/Activity;
-    .param p2    # Landroid/app/PendingIntent;
-    .param p3    # [Landroid/content/IntentFilter;
-    .param p4    # [[Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -1294,8 +1274,6 @@
 
 .method public enableForegroundNdefPush(Landroid/app/Activity;Landroid/nfc/NdefMessage;)V
     .locals 2
-    .param p1    # Landroid/app/Activity;
-    .param p2    # Landroid/nfc/NdefMessage;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -1364,10 +1342,6 @@
 
 .method public enableReaderMode(Landroid/app/Activity;Landroid/nfc/NfcAdapter$ReaderCallback;ILandroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/app/Activity;
-    .param p2    # Landroid/nfc/NfcAdapter$ReaderCallback;
-    .param p3    # I
-    .param p4    # Landroid/os/Bundle;
 
     iget-object v0, p0, Landroid/nfc/NfcAdapter;->mNfcActivityManager:Landroid/nfc/NfcActivityManager;
 
@@ -1378,7 +1352,6 @@
 
 .method enforceResumed(Landroid/app/Activity;)V
     .locals 2
-    .param p1    # Landroid/app/Activity;
 
     invoke-virtual {p1}, Landroid/app/Activity;->isResumed()Z
 
@@ -1889,8 +1862,6 @@
 
 .method public isTrustedPkg(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -2036,7 +2007,6 @@
 
 .method public selectDefaultSecureElement(Ljava/lang/String;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -2270,8 +2240,6 @@
 
 .method public setBeamPushUris([Landroid/net/Uri;Landroid/app/Activity;)V
     .locals 7
-    .param p1    # [Landroid/net/Uri;
-    .param p2    # Landroid/app/Activity;
 
     const/4 v5, 0x1
 
@@ -2366,8 +2334,6 @@
 
 .method public setBeamPushUrisCallback(Landroid/nfc/NfcAdapter$CreateBeamUrisCallback;Landroid/app/Activity;)V
     .locals 2
-    .param p1    # Landroid/nfc/NfcAdapter$CreateBeamUrisCallback;
-    .param p2    # Landroid/app/Activity;
 
     const/4 v0, 0x1
 
@@ -2401,7 +2367,6 @@
 
 .method public setDefaultRoutingDestination(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -2437,7 +2402,6 @@
 
 .method public setFilterList([B)Z
     .locals 2
-    .param p1    # [B
 
     :try_start_0
     sget-object v1, Landroid/nfc/NfcAdapter;->sService:Landroid/nfc/INfcAdapter;
@@ -2463,7 +2427,6 @@
 
 .method public setListenMode(I)I
     .locals 3
-    .param p1    # I
 
     :try_start_0
     sget-object v1, Landroid/nfc/NfcAdapter;->sService:Landroid/nfc/INfcAdapter;
@@ -2495,9 +2458,6 @@
 
 .method public setNdefPushMessage(Landroid/nfc/NdefMessage;Landroid/app/Activity;I)V
     .locals 2
-    .param p1    # Landroid/nfc/NdefMessage;
-    .param p2    # Landroid/app/Activity;
-    .param p3    # I
 
     if-nez p2, :cond_0
 
@@ -2519,9 +2479,6 @@
 
 .method public varargs setNdefPushMessage(Landroid/nfc/NdefMessage;Landroid/app/Activity;[Landroid/app/Activity;)V
     .locals 8
-    .param p1    # Landroid/nfc/NdefMessage;
-    .param p2    # Landroid/app/Activity;
-    .param p3    # [Landroid/app/Activity;
 
     const/4 v6, 0x1
 
@@ -2616,9 +2573,6 @@
 
 .method public setNdefPushMessageCallback(Landroid/nfc/NfcAdapter$CreateNdefMessageCallback;Landroid/app/Activity;I)V
     .locals 2
-    .param p1    # Landroid/nfc/NfcAdapter$CreateNdefMessageCallback;
-    .param p2    # Landroid/app/Activity;
-    .param p3    # I
 
     if-nez p2, :cond_0
 
@@ -2640,9 +2594,6 @@
 
 .method public varargs setNdefPushMessageCallback(Landroid/nfc/NfcAdapter$CreateNdefMessageCallback;Landroid/app/Activity;[Landroid/app/Activity;)V
     .locals 8
-    .param p1    # Landroid/nfc/NfcAdapter$CreateNdefMessageCallback;
-    .param p2    # Landroid/app/Activity;
-    .param p3    # [Landroid/app/Activity;
 
     const/4 v6, 0x0
 
@@ -2737,9 +2688,6 @@
 
 .method public varargs setOnNdefPushCompleteCallback(Landroid/nfc/NfcAdapter$OnNdefPushCompleteCallback;Landroid/app/Activity;[Landroid/app/Activity;)V
     .locals 8
-    .param p1    # Landroid/nfc/NfcAdapter$OnNdefPushCompleteCallback;
-    .param p2    # Landroid/app/Activity;
-    .param p3    # [Landroid/app/Activity;
 
     invoke-virtual {p0}, Landroid/nfc/NfcAdapter;->getSdkVersion()I
 
@@ -2818,9 +2766,6 @@
 
 .method public varargs setOnNfcWifiConnectCompleteCallback(Landroid/nfc/NfcAdapter$OnNfcWifiConnectCompleteCallback;Landroid/app/Activity;[Landroid/app/Activity;)V
     .locals 8
-    .param p1    # Landroid/nfc/NfcAdapter$OnNfcWifiConnectCompleteCallback;
-    .param p2    # Landroid/app/Activity;
-    .param p3    # [Landroid/app/Activity;
 
     invoke-virtual {p0}, Landroid/nfc/NfcAdapter;->getSdkVersion()I
 
@@ -2899,8 +2844,6 @@
 
 .method public setP2pModes(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     :try_start_0
     sget-object v1, Landroid/nfc/NfcAdapter;->sService:Landroid/nfc/INfcAdapter;
@@ -2922,7 +2865,6 @@
 
 .method public setRwP2pMode(Z)Z
     .locals 2
-    .param p1    # Z
 
     :try_start_0
     sget-object v1, Landroid/nfc/NfcAdapter;->sService:Landroid/nfc/INfcAdapter;
@@ -2948,7 +2890,6 @@
 
 .method public setSimLocked(Z)V
     .locals 3
-    .param p1    # Z
 
     :try_start_0
     sget-object v1, Landroid/nfc/NfcAdapter;->sService:Landroid/nfc/INfcAdapter;

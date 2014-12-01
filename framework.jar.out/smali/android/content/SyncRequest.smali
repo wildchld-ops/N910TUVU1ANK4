@@ -70,7 +70,6 @@
 
 .method protected constructor <init>(Landroid/content/SyncRequest$Builder;)V
     .locals 5
-    .param p1    # Landroid/content/SyncRequest$Builder;
 
     const/4 v2, 0x0
 
@@ -200,7 +199,6 @@
 
 .method private constructor <init>(Landroid/os/Parcel;)V
     .locals 6
-    .param p1    # Landroid/os/Parcel;
 
     const/4 v1, 0x1
 
@@ -343,8 +341,6 @@
 
 .method synthetic constructor <init>(Landroid/os/Parcel;Landroid/content/SyncRequest$1;)V
     .locals 0
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # Landroid/content/SyncRequest$1;
 
     invoke-direct {p0, p1}, Landroid/content/SyncRequest;-><init>(Landroid/os/Parcel;)V
 
@@ -457,8 +453,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 5
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     const/4 v1, 0x1
 

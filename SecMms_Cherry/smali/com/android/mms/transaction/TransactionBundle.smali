@@ -28,7 +28,6 @@
 # direct methods
 .method private constructor <init>(I)V
     .locals 2
-    .param p1    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -49,9 +48,6 @@
 
 .method public constructor <init>(ILjava/lang/String;I)V
     .locals 2
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     invoke-direct {p0, p1}, Lcom/android/mms/transaction/TransactionBundle;-><init>(I)V
 
@@ -81,7 +77,6 @@
 
 .method public constructor <init>(Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -274,7 +269,6 @@
 
 .method public setConnectionSettings(Lcom/android/mms/transaction/TransactionSettings;)V
     .locals 3
-    .param p1    # Lcom/android/mms/transaction/TransactionSettings;
 
     invoke-virtual {p1}, Lcom/android/mms/transaction/TransactionSettings;->getMmscUrl()Ljava/lang/String;
 
@@ -295,9 +289,6 @@
 
 .method public setConnectionSettings(Ljava/lang/String;Ljava/lang/String;I)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     iget-object v0, p0, Lcom/android/mms/transaction/TransactionBundle;->mBundle:Landroid/os/Bundle;
 

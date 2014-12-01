@@ -193,7 +193,6 @@
 
 .method public constructor <init>(I)V
     .locals 0
-    .param p1    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -202,10 +201,6 @@
 
 .method public constructor <init>(IILjava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -275,7 +270,6 @@
 
 .method public constructor <init>(Landroid/net/NetworkInfo;)V
     .locals 1
-    .param p1    # Landroid/net/NetworkInfo;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -335,8 +329,6 @@
 
 .method static synthetic access$002(Landroid/net/NetworkInfo;Landroid/net/NetworkInfo$State;)Landroid/net/NetworkInfo$State;
     .locals 0
-    .param p0    # Landroid/net/NetworkInfo;
-    .param p1    # Landroid/net/NetworkInfo$State;
 
     iput-object p1, p0, Landroid/net/NetworkInfo;->mState:Landroid/net/NetworkInfo$State;
 
@@ -345,8 +337,6 @@
 
 .method static synthetic access$102(Landroid/net/NetworkInfo;Landroid/net/NetworkInfo$DetailedState;)Landroid/net/NetworkInfo$DetailedState;
     .locals 0
-    .param p0    # Landroid/net/NetworkInfo;
-    .param p1    # Landroid/net/NetworkInfo$DetailedState;
 
     iput-object p1, p0, Landroid/net/NetworkInfo;->mDetailedState:Landroid/net/NetworkInfo$DetailedState;
 
@@ -355,8 +345,6 @@
 
 .method static synthetic access$202(Landroid/net/NetworkInfo;Z)Z
     .locals 0
-    .param p0    # Landroid/net/NetworkInfo;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/net/NetworkInfo;->mIsFailover:Z
 
@@ -365,8 +353,6 @@
 
 .method static synthetic access$302(Landroid/net/NetworkInfo;Z)Z
     .locals 0
-    .param p0    # Landroid/net/NetworkInfo;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/net/NetworkInfo;->mIsAvailable:Z
 
@@ -375,8 +361,6 @@
 
 .method static synthetic access$402(Landroid/net/NetworkInfo;Z)Z
     .locals 0
-    .param p0    # Landroid/net/NetworkInfo;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/net/NetworkInfo;->mIsRoaming:Z
 
@@ -385,8 +369,6 @@
 
 .method static synthetic access$502(Landroid/net/NetworkInfo;Z)Z
     .locals 0
-    .param p0    # Landroid/net/NetworkInfo;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/net/NetworkInfo;->mIsConnectedToProvisioningNetwork:Z
 
@@ -395,8 +377,6 @@
 
 .method static synthetic access$602(Landroid/net/NetworkInfo;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Landroid/net/NetworkInfo;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/net/NetworkInfo;->mReason:Ljava/lang/String;
 
@@ -405,8 +385,6 @@
 
 .method static synthetic access$702(Landroid/net/NetworkInfo;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Landroid/net/NetworkInfo;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/net/NetworkInfo;->mExtraInfo:Ljava/lang/String;
 
@@ -764,9 +742,6 @@
 
 .method public setDetailedState(Landroid/net/NetworkInfo$DetailedState;Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Landroid/net/NetworkInfo$DetailedState;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -803,7 +778,6 @@
 
 .method public setExtraInfo(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -826,7 +800,6 @@
 
 .method public setFailover(Z)V
     .locals 1
-    .param p1    # Z
 
     monitor-enter p0
 
@@ -849,7 +822,6 @@
 
 .method public setIsAvailable(Z)V
     .locals 1
-    .param p1    # Z
 
     monitor-enter p0
 
@@ -872,7 +844,6 @@
 
 .method public setIsConnectedToProvisioningNetwork(Z)V
     .locals 1
-    .param p1    # Z
 
     monitor-enter p0
 
@@ -895,7 +866,6 @@
 
 .method public setRoaming(Z)V
     .locals 1
-    .param p1    # Z
 
     monitor-enter p0
 
@@ -918,8 +888,6 @@
 
 .method setSubtype(ILjava/lang/String;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -944,7 +912,6 @@
 
 .method public setType(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/net/NetworkInfo;->mNetworkType:I
 
@@ -953,7 +920,6 @@
 
 .method public setTypeName(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/net/NetworkInfo;->mTypeName:Ljava/lang/String;
 
@@ -1134,8 +1100,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 3
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     const/4 v0, 0x1
 

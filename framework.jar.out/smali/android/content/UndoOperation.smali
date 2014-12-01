@@ -25,7 +25,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/UndoOwner;)V
     .locals 0
-    .param p1    # Landroid/content/UndoOwner;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -36,8 +35,6 @@
 
 .method protected constructor <init>(Landroid/os/Parcel;Ljava/lang/ClassLoader;)V
     .locals 0
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # Ljava/lang/ClassLoader;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -100,7 +97,6 @@
 
 .method public matchOwner(Landroid/content/UndoOwner;)Z
     .locals 1
-    .param p1    # Landroid/content/UndoOwner;
 
     invoke-virtual {p0}, Landroid/content/UndoOperation;->getOwner()Landroid/content/UndoOwner;
 

@@ -14,11 +14,6 @@
 
 .method public static lineIntersectPlane(Lcom/voovio/voo3d/data/Vector3;Lcom/voovio/voo3d/data/Vector3;Lcom/voovio/voo3d/data/Vector3;[FLcom/voovio/voo3d/data/Vector3;)Z
     .locals 7
-    .param p0    # Lcom/voovio/voo3d/data/Vector3;
-    .param p1    # Lcom/voovio/voo3d/data/Vector3;
-    .param p2    # Lcom/voovio/voo3d/data/Vector3;
-    .param p3    # [F
-    .param p4    # Lcom/voovio/voo3d/data/Vector3;
 
     invoke-virtual {p1, p2}, Lcom/voovio/voo3d/data/Vector3;->dot(Lcom/voovio/voo3d/data/Vector3;)F
 

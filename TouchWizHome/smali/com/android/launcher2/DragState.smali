@@ -73,9 +73,6 @@
 
 .method public constructor <init>(Landroid/content/Intent;ILcom/android/launcher2/Launcher;)V
     .locals 3
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
-    .param p3    # Lcom/android/launcher2/Launcher;
 
     const/4 v2, 0x0
 
@@ -156,7 +153,6 @@
 
 .method public constructor <init>(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     invoke-static {p1}, Lcom/android/launcher2/DragState;->findOrigin(Landroid/view/View;)Lcom/android/launcher2/DragOrigin;
 
@@ -169,8 +165,6 @@
 
 .method public constructor <init>(Landroid/view/View;Lcom/android/launcher2/DragOrigin;)V
     .locals 8
-    .param p1    # Landroid/view/View;
-    .param p2    # Lcom/android/launcher2/DragOrigin;
 
     const/4 v7, 0x1
 
@@ -414,7 +408,6 @@
 
 .method static synthetic access$000(Lcom/android/launcher2/DragState;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/launcher2/DragState;
 
     iget-object v0, p0, Lcom/android/launcher2/DragState;->ctx:Landroid/content/Context;
 
@@ -496,7 +489,6 @@
 
 .method private createApp(Landroid/content/pm/ResolveInfo;)Lcom/android/launcher2/AppItem;
     .locals 18
-    .param p1    # Landroid/content/pm/ResolveInfo;
 
     move-object/from16 v0, p0
 
@@ -778,12 +770,6 @@
 
 .method private fillHomeItemFields(Lcom/android/launcher2/HomeItem;JIIIZ)V
     .locals 2
-    .param p1    # Lcom/android/launcher2/HomeItem;
-    .param p2    # J
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # Z
 
     const/4 v1, -0x1
 
@@ -811,7 +797,6 @@
 
 .method private findActivityForComponent(Landroid/content/ComponentName;)Ljava/util/List;
     .locals 5
-    .param p1    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -862,7 +847,6 @@
 
 .method public static findOrigin(Landroid/view/View;)Lcom/android/launcher2/DragOrigin;
     .locals 2
-    .param p0    # Landroid/view/View;
 
     invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
 
@@ -903,8 +887,6 @@
 
 .method private initItemInfo(Landroid/content/Intent;I)Lcom/android/launcher2/BaseItem;
     .locals 21
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
 
     const/4 v14, 0x0
 
@@ -1264,14 +1246,6 @@
 
 .method private moveItemTo(Lcom/android/launcher2/BaseItem;Lcom/android/launcher2/DragReceivable;Lcom/android/launcher2/DragOrigin;IIIII)Z
     .locals 30
-    .param p1    # Lcom/android/launcher2/BaseItem;
-    .param p2    # Lcom/android/launcher2/DragReceivable;
-    .param p3    # Lcom/android/launcher2/DragOrigin;
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
 
     move-object/from16 v0, p2
 
@@ -2026,8 +2000,6 @@
 
 .method private swapItems(Landroid/view/View;Landroid/view/View;)V
     .locals 17
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/View;
 
     invoke-virtual/range {p1 .. p1}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
@@ -2181,9 +2153,6 @@
 
 .method private updateMinSpan([II[I)V
     .locals 3
-    .param p1    # [I
-    .param p2    # I
-    .param p3    # [I
 
     const/4 v1, 0x0
 
@@ -2466,8 +2435,6 @@
 
 .method public getAvailableWidget(Landroid/content/ComponentName;I)Lcom/android/launcher2/HomePendingItem;
     .locals 8
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # I
 
     const/4 v7, 0x1
 
@@ -2731,7 +2698,6 @@
 
 .method getParentCellLayout(Landroid/view/View;)Lcom/android/launcher2/CellLayout;
     .locals 4
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p1}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
 
@@ -2849,7 +2815,6 @@
 
 .method public initiateSwap(Landroid/view/View;)V
     .locals 3
-    .param p1    # Landroid/view/View;
 
     const/4 v2, 0x1
 
@@ -2894,8 +2859,6 @@
 
 .method public isMoveInsideOpenFolder(Lcom/android/launcher2/BaseItem;Lcom/android/launcher2/DragReceivable;)Z
     .locals 1
-    .param p1    # Lcom/android/launcher2/BaseItem;
-    .param p2    # Lcom/android/launcher2/DragReceivable;
 
     invoke-static {p1}, Lcom/android/launcher2/BaseItem;->isItemInFolder(Lcom/android/launcher2/BaseItem;)Z
 
@@ -3166,12 +3129,6 @@
 
 .method public moveItemTo(Lcom/android/launcher2/DragReceivable;IIIII)Z
     .locals 8
-    .param p1    # Lcom/android/launcher2/DragReceivable;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     const/4 v7, 0x1
 
@@ -3198,13 +3155,6 @@
 
 .method public moveItemTo(Lcom/android/launcher2/DragReceivable;IIIIIZ)Z
     .locals 9
-    .param p1    # Lcom/android/launcher2/DragReceivable;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # Z
 
     iget-boolean v0, p0, Lcom/android/launcher2/DragState;->mFoundValidDrop:Z
 
@@ -3382,12 +3332,6 @@
 
 .method public moveItemToWithoutAnimation(Lcom/android/launcher2/DragReceivable;IIIII)Z
     .locals 10
-    .param p1    # Lcom/android/launcher2/DragReceivable;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     iget-object v1, p0, Lcom/android/launcher2/DragState;->mItem:Lcom/android/launcher2/BaseItem;
 
@@ -3663,7 +3607,6 @@
 
 .method public onDropSetEndRunnable(Ljava/lang/Runnable;)V
     .locals 0
-    .param p1    # Ljava/lang/Runnable;
 
     invoke-virtual {p0}, Lcom/android/launcher2/DragState;->onDrop()V
 
@@ -4078,7 +4021,6 @@
 
 .method public setShadow(Lcom/android/launcher2/ShadowBuilder;)V
     .locals 0
-    .param p1    # Lcom/android/launcher2/ShadowBuilder;
 
     iput-object p1, p0, Lcom/android/launcher2/DragState;->mShadow:Lcom/android/launcher2/ShadowBuilder;
 
@@ -4087,7 +4029,6 @@
 
 .method public setVisualMode(Lcom/android/launcher2/DragState$VisualMode;)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/DragState$VisualMode;
 
     iget-object v0, p0, Lcom/android/launcher2/DragState;->mVisualMode:Lcom/android/launcher2/DragState$VisualMode;
 

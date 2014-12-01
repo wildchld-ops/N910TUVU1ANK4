@@ -67,7 +67,7 @@
 
     const/4 v2, -0x1
 
-    invoke-virtual {v0, v1, v2}, Landroid/preference/DialogPreference;->onClick(Landroid/content/DialogInterface;I)V
+    invoke-virtual {v0, v1, v2}, Lcom/android/phone/callsettings/PNLAutoUpdateListPreference;->onClick(Landroid/content/DialogInterface;I)V
 
     iget-object v0, p0, Lcom/android/phone/callsettings/PNLAutoUpdateListPreference$3;->this$0:Lcom/android/phone/callsettings/PNLAutoUpdateListPreference;
 

@@ -41,7 +41,6 @@
 
 .method synthetic constructor <init>(Landroid/graphics/pdf/PdfDocument$1;)V
     .locals 0
-    .param p1    # Landroid/graphics/pdf/PdfDocument$1;
 
     invoke-direct {p0}, Landroid/graphics/pdf/PdfDocument$PageInfo;-><init>()V
 
@@ -50,7 +49,6 @@
 
 .method static synthetic access$000(Landroid/graphics/pdf/PdfDocument$PageInfo;)I
     .locals 1
-    .param p0    # Landroid/graphics/pdf/PdfDocument$PageInfo;
 
     iget v0, p0, Landroid/graphics/pdf/PdfDocument$PageInfo;->mPageWidth:I
 
@@ -59,8 +57,6 @@
 
 .method static synthetic access$002(Landroid/graphics/pdf/PdfDocument$PageInfo;I)I
     .locals 0
-    .param p0    # Landroid/graphics/pdf/PdfDocument$PageInfo;
-    .param p1    # I
 
     iput p1, p0, Landroid/graphics/pdf/PdfDocument$PageInfo;->mPageWidth:I
 
@@ -69,7 +65,6 @@
 
 .method static synthetic access$100(Landroid/graphics/pdf/PdfDocument$PageInfo;)I
     .locals 1
-    .param p0    # Landroid/graphics/pdf/PdfDocument$PageInfo;
 
     iget v0, p0, Landroid/graphics/pdf/PdfDocument$PageInfo;->mPageHeight:I
 
@@ -78,8 +73,6 @@
 
 .method static synthetic access$102(Landroid/graphics/pdf/PdfDocument$PageInfo;I)I
     .locals 0
-    .param p0    # Landroid/graphics/pdf/PdfDocument$PageInfo;
-    .param p1    # I
 
     iput p1, p0, Landroid/graphics/pdf/PdfDocument$PageInfo;->mPageHeight:I
 
@@ -88,7 +81,6 @@
 
 .method static synthetic access$200(Landroid/graphics/pdf/PdfDocument$PageInfo;)Landroid/graphics/Rect;
     .locals 1
-    .param p0    # Landroid/graphics/pdf/PdfDocument$PageInfo;
 
     iget-object v0, p0, Landroid/graphics/pdf/PdfDocument$PageInfo;->mContentRect:Landroid/graphics/Rect;
 
@@ -97,8 +89,6 @@
 
 .method static synthetic access$202(Landroid/graphics/pdf/PdfDocument$PageInfo;Landroid/graphics/Rect;)Landroid/graphics/Rect;
     .locals 0
-    .param p0    # Landroid/graphics/pdf/PdfDocument$PageInfo;
-    .param p1    # Landroid/graphics/Rect;
 
     iput-object p1, p0, Landroid/graphics/pdf/PdfDocument$PageInfo;->mContentRect:Landroid/graphics/Rect;
 
@@ -107,8 +97,6 @@
 
 .method static synthetic access$602(Landroid/graphics/pdf/PdfDocument$PageInfo;I)I
     .locals 0
-    .param p0    # Landroid/graphics/pdf/PdfDocument$PageInfo;
-    .param p1    # I
 
     iput p1, p0, Landroid/graphics/pdf/PdfDocument$PageInfo;->mPageNumber:I
 

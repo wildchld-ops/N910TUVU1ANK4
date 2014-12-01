@@ -25,8 +25,6 @@
 
 .method public static hide(Landroid/view/View;I)V
     .locals 3
-    .param p0    # Landroid/view/View;
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/view/View;->getVisibility()I
 
@@ -85,7 +83,6 @@
 
 .method public static isFadingOut(Landroid/view/View;)Z
     .locals 2
-    .param p0    # Landroid/view/View;
 
     const/high16 v0, 0x7f0e0000
 
@@ -110,7 +107,6 @@
 
 .method public static show(Landroid/view/View;)V
     .locals 3
-    .param p0    # Landroid/view/View;
 
     invoke-virtual {p0}, Landroid/view/View;->getVisibility()I
 

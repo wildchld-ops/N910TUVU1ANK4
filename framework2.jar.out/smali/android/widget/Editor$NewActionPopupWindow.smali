@@ -87,8 +87,6 @@
 
 .method synthetic constructor <init>(Landroid/widget/Editor;Landroid/widget/Editor$1;)V
     .locals 0
-    .param p1    # Landroid/widget/Editor;
-    .param p2    # Landroid/widget/Editor$1;
 
     invoke-direct {p0, p1}, Landroid/widget/Editor$NewActionPopupWindow;-><init>(Landroid/widget/Editor;)V
 
@@ -285,7 +283,6 @@
 
 .method protected getNewActionPopupPosition([I)V
     .locals 36
-    .param p1    # [I
 
     if-nez p1, :cond_0
 
@@ -3542,7 +3539,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Landroid/widget/Editor$NewActionPopupWindow;->mSelectAllTextView:Landroid/widget/TextView;
 
@@ -3803,8 +3799,6 @@
 
 .method public onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     invoke-virtual {p2}, Landroid/view/MotionEvent;->getActionMasked()I
 

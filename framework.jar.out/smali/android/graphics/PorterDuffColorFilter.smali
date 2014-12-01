@@ -6,8 +6,6 @@
 # direct methods
 .method public constructor <init>(ILandroid/graphics/PorterDuff$Mode;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/graphics/PorterDuff$Mode;
 
     invoke-direct {p0}, Landroid/graphics/ColorFilter;-><init>()V
 

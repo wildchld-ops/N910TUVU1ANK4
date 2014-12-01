@@ -21,7 +21,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/settings/NotificationPanelMenu;Landroid/os/Handler;)V
     .locals 0
-    .param p2    # Landroid/os/Handler;
 
     iput-object p1, p0, Lcom/android/settings/NotificationPanelMenu$9;->this$0:Lcom/android/settings/NotificationPanelMenu;
 
@@ -34,7 +33,6 @@
 # virtual methods
 .method public onChange(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/settings/NotificationPanelMenu$9;->this$0:Lcom/android/settings/NotificationPanelMenu;
 

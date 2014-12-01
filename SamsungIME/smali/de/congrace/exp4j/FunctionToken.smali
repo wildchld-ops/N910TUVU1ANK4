@@ -12,8 +12,6 @@
 # direct methods
 .method constructor <init>(Ljava/lang/String;Lde/congrace/exp4j/CustomFunction;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lde/congrace/exp4j/CustomFunction;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lde/congrace/exp4j/UnknownFunctionException;
@@ -56,7 +54,6 @@
 # virtual methods
 .method public equals(Ljava/lang/Object;)Z
     .locals 2
-    .param p1    # Ljava/lang/Object;
 
     instance-of v0, p1, Lde/congrace/exp4j/FunctionToken;
 
@@ -171,7 +168,6 @@
 
 .method mutateStackForInfixTranslation(Ljava/util/Stack;Ljava/lang/StringBuilder;)V
     .locals 0
-    .param p2    # Ljava/lang/StringBuilder;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

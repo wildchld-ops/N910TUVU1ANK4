@@ -51,8 +51,6 @@
 
 .method public constructor <init>(IF)V
     .locals 10
-    .param p1    # I
-    .param p2    # F
 
     const/4 v9, 0x1
 

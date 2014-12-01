@@ -56,7 +56,6 @@
 # direct methods
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -105,8 +104,6 @@
 
 .method static synthetic access$002(Lcom/sec/epdg/EpdgTestRilAdapter;Landroid/os/Messenger;)Landroid/os/Messenger;
     .locals 0
-    .param p0    # Lcom/sec/epdg/EpdgTestRilAdapter;
-    .param p1    # Landroid/os/Messenger;
 
     iput-object p1, p0, Lcom/sec/epdg/EpdgTestRilAdapter;->mServiceMessenger:Landroid/os/Messenger;
 
@@ -115,7 +112,6 @@
 
 .method static synthetic access$100(Lcom/sec/epdg/EpdgTestRilAdapter;)Lcom/sec/epdg/EpdgTestRilAdapter$RILConnectionInfo;
     .locals 1
-    .param p0    # Lcom/sec/epdg/EpdgTestRilAdapter;
 
     iget-object v0, p0, Lcom/sec/epdg/EpdgTestRilAdapter;->rilConnInitInfo:Lcom/sec/epdg/EpdgTestRilAdapter$RILConnectionInfo;
 
@@ -124,8 +120,6 @@
 
 .method static synthetic access$102(Lcom/sec/epdg/EpdgTestRilAdapter;Lcom/sec/epdg/EpdgTestRilAdapter$RILConnectionInfo;)Lcom/sec/epdg/EpdgTestRilAdapter$RILConnectionInfo;
     .locals 0
-    .param p0    # Lcom/sec/epdg/EpdgTestRilAdapter;
-    .param p1    # Lcom/sec/epdg/EpdgTestRilAdapter$RILConnectionInfo;
 
     iput-object p1, p0, Lcom/sec/epdg/EpdgTestRilAdapter;->rilConnInitInfo:Lcom/sec/epdg/EpdgTestRilAdapter$RILConnectionInfo;
 
@@ -134,8 +128,6 @@
 
 .method static synthetic access$300(Lcom/sec/epdg/EpdgTestRilAdapter;Lcom/sec/epdg/EpdgTestRilAdapter$RILConnectionInfo;)V
     .locals 0
-    .param p0    # Lcom/sec/epdg/EpdgTestRilAdapter;
-    .param p1    # Lcom/sec/epdg/EpdgTestRilAdapter$RILConnectionInfo;
 
     invoke-direct {p0, p1}, Lcom/sec/epdg/EpdgTestRilAdapter;->configureInterfaceInit(Lcom/sec/epdg/EpdgTestRilAdapter$RILConnectionInfo;)V
 
@@ -144,7 +136,6 @@
 
 .method private configureInterface(Lcom/sec/epdg/EpdgTestRilAdapter$RILConnectionInfo;)V
     .locals 4
-    .param p1    # Lcom/sec/epdg/EpdgTestRilAdapter$RILConnectionInfo;
 
     const-string v1, "[TESTRILADAPTER]"
 
@@ -175,7 +166,6 @@
 
 .method private configureInterfaceInit(Lcom/sec/epdg/EpdgTestRilAdapter$RILConnectionInfo;)V
     .locals 4
-    .param p1    # Lcom/sec/epdg/EpdgTestRilAdapter$RILConnectionInfo;
 
     const-string v1, "[TESTRILADAPTER]"
 
@@ -244,7 +234,6 @@
 
 .method public static getInstance(Landroid/content/Context;)Lcom/sec/epdg/EpdgTestRilAdapter;
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     sget-object v0, Lcom/sec/epdg/EpdgTestRilAdapter;->mInstance:Lcom/sec/epdg/EpdgTestRilAdapter;
 
@@ -281,8 +270,6 @@
 
 .method private invokeOemRilRequestRaw([BLandroid/os/Message;)V
     .locals 5
-    .param p1    # [B
-    .param p2    # Landroid/os/Message;
 
     invoke-virtual {p2}, Landroid/os/Message;->getData()Landroid/os/Bundle;
 
@@ -353,7 +340,6 @@
 
 .method private makeToast(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     sget-object v0, Lcom/sec/epdg/EpdgTestRilAdapter;->mContext:Landroid/content/Context;
 
@@ -372,19 +358,12 @@
 # virtual methods
 .method public triggerHandover(IZ)V
     .locals 0
-    .param p1    # I
-    .param p2    # Z
 
     return-void
 .end method
 
 .method public updateApnConnStatus(IZLcom/sec/epdg/EpdgRilInterface$IWlanLinkProperties;ZZ)V
     .locals 4
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # Lcom/sec/epdg/EpdgRilInterface$IWlanLinkProperties;
-    .param p4    # Z
-    .param p5    # Z
 
     const/4 v3, 0x0
 
@@ -527,7 +506,6 @@
 
 .method public updateEpdgAvailability(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method

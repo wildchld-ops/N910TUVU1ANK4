@@ -36,8 +36,6 @@
 # virtual methods
 .method public onInfo(Lcom/sec/android/smartface/FaceInfo;I)V
     .locals 3
-    .param p1    # Lcom/sec/android/smartface/FaceInfo;
-    .param p2    # I
 
     const-string v0, "SmartFaceManager"
 

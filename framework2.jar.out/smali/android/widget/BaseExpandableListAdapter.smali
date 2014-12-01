@@ -38,8 +38,6 @@
 
 .method public getChildType(II)I
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -56,8 +54,6 @@
 
 .method public getCombinedChildId(JJ)J
     .locals 5
-    .param p1    # J
-    .param p3    # J
 
     const-wide/high16 v0, -0x8000000000000000L
 
@@ -82,7 +78,6 @@
 
 .method public getCombinedGroupId(J)J
     .locals 3
-    .param p1    # J
 
     const-wide/32 v0, 0x7fffffff
 
@@ -97,7 +92,6 @@
 
 .method public getGroupType(I)I
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -154,21 +148,18 @@
 
 .method public onGroupCollapsed(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onGroupExpanded(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public registerDataSetObserver(Landroid/database/DataSetObserver;)V
     .locals 1
-    .param p1    # Landroid/database/DataSetObserver;
 
     iget-object v0, p0, Landroid/widget/BaseExpandableListAdapter;->mDataSetObservable:Landroid/database/DataSetObservable;
 
@@ -179,7 +170,6 @@
 
 .method public unregisterDataSetObserver(Landroid/database/DataSetObserver;)V
     .locals 1
-    .param p1    # Landroid/database/DataSetObserver;
 
     iget-object v0, p0, Landroid/widget/BaseExpandableListAdapter;->mDataSetObservable:Landroid/database/DataSetObservable;
 

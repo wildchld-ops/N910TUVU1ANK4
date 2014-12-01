@@ -232,7 +232,6 @@
 
 .method private constructor <init>(Ljava/lang/String;ILjava/lang/String;)V
     .locals 0
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -250,10 +249,6 @@
 
 .method synthetic constructor <init>(Ljava/lang/String;ILjava/lang/String;Landroid/hardware/contextaware/creator/builtin/AndroidRunnerConcreteCreator$1;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Landroid/hardware/contextaware/creator/builtin/AndroidRunnerConcreteCreator$1;
 
     invoke-direct {p0, p1, p2, p3}, Landroid/hardware/contextaware/creator/builtin/AndroidRunnerConcreteCreator$AndroidRunnerList;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
@@ -262,7 +257,6 @@
 
 .method public static valueOf(Ljava/lang/String;)Landroid/hardware/contextaware/creator/builtin/AndroidRunnerConcreteCreator$AndroidRunnerList;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-class v0, Landroid/hardware/contextaware/creator/builtin/AndroidRunnerConcreteCreator$AndroidRunnerList;
 
@@ -293,7 +287,6 @@
 # virtual methods
 .method public varargs getObject([Ljava/lang/Object;)Landroid/hardware/contextaware/manager/ContextComponent;
     .locals 1
-    .param p1    # [Ljava/lang/Object;
 
     invoke-virtual {p0}, Landroid/hardware/contextaware/creator/builtin/AndroidRunnerConcreteCreator$AndroidRunnerList;->getObject()Landroid/hardware/contextaware/manager/ContextComponent;
 
@@ -314,7 +307,6 @@
 
 .method public varargs getObjectForSubCollection([Ljava/lang/Object;)Landroid/hardware/contextaware/manager/ContextComponent;
     .locals 1
-    .param p1    # [Ljava/lang/Object;
 
     invoke-virtual {p0}, Landroid/hardware/contextaware/creator/builtin/AndroidRunnerConcreteCreator$AndroidRunnerList;->getObjectForSubCollection()Landroid/hardware/contextaware/manager/ContextComponent;
 
@@ -325,7 +317,6 @@
 
 .method public removeObject(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     # invokes: Landroid/hardware/contextaware/creator/builtin/AndroidRunnerConcreteCreator;->removeObj(Ljava/lang/String;)Z
     invoke-static {p1}, Landroid/hardware/contextaware/creator/builtin/AndroidRunnerConcreteCreator;->access$12100(Ljava/lang/String;)Z

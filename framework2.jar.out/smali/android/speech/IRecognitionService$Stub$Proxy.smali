@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -45,7 +44,6 @@
 
 .method public cancel(Landroid/speech/IRecognitionListener;)V
     .locals 5
-    .param p1    # Landroid/speech/IRecognitionListener;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -106,8 +104,6 @@
 
 .method public startListening(Landroid/content/Intent;Landroid/speech/IRecognitionListener;)V
     .locals 5
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Landroid/speech/IRecognitionListener;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -181,7 +177,6 @@
 
 .method public stopListening(Landroid/speech/IRecognitionListener;)V
     .locals 5
-    .param p1    # Landroid/speech/IRecognitionListener;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

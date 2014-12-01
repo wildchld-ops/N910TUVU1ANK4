@@ -39,7 +39,6 @@
 
 .method private setScanAlarm(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
@@ -303,7 +302,6 @@
 
 .method public processMessage(Landroid/os/Message;)Z
     .locals 14
-    .param p1    # Landroid/os/Message;
 
     const/4 v13, -0x1
 

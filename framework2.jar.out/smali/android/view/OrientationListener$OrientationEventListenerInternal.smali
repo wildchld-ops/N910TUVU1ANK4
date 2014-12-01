@@ -21,7 +21,6 @@
 # direct methods
 .method constructor <init>(Landroid/view/OrientationListener;Landroid/content/Context;)V
     .locals 0
-    .param p2    # Landroid/content/Context;
 
     iput-object p1, p0, Landroid/view/OrientationListener$OrientationEventListenerInternal;->this$0:Landroid/view/OrientationListener;
 
@@ -32,8 +31,6 @@
 
 .method constructor <init>(Landroid/view/OrientationListener;Landroid/content/Context;I)V
     .locals 0
-    .param p2    # Landroid/content/Context;
-    .param p3    # I
 
     iput-object p1, p0, Landroid/view/OrientationListener$OrientationEventListenerInternal;->this$0:Landroid/view/OrientationListener;
 
@@ -48,7 +45,6 @@
 # virtual methods
 .method public onOrientationChanged(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/view/OrientationListener$OrientationEventListenerInternal;->this$0:Landroid/view/OrientationListener;
 

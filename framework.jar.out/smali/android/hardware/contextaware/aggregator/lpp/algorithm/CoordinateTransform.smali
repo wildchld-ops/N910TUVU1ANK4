@@ -36,8 +36,6 @@
 
 .method public static enu2llh([D[D)[D
     .locals 1
-    .param p0    # [D
-    .param p1    # [D
 
     invoke-static {p1}, Landroid/hardware/contextaware/aggregator/lpp/algorithm/CoordinateTransform;->llh2xyz([D)[D
 
@@ -56,8 +54,6 @@
 
 .method public static enu2xyz([D[D)[D
     .locals 26
-    .param p0    # [D
-    .param p1    # [D
 
     const/16 v20, 0x3
 
@@ -344,8 +340,6 @@
 
 .method public static llh2enu([D[D)[D
     .locals 8
-    .param p0    # [D
-    .param p1    # [D
 
     const/4 v7, 0x3
 
@@ -388,7 +382,6 @@
 
 .method public static llh2xyz([D)[D
     .locals 42
-    .param p0    # [D
 
     const/16 v36, 0x3
 
@@ -531,8 +524,6 @@
 
 .method public static xyz2enu([D[D)[D
     .locals 25
-    .param p0    # [D
-    .param p1    # [D
 
     const/4 v3, 0x3
 
@@ -759,7 +750,6 @@
 
 .method public static xyz2llh([D)[D
     .locals 71
-    .param p0    # [D
 
     const/16 v63, 0x3
 

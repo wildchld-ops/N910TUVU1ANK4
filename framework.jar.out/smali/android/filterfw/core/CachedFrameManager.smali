@@ -104,9 +104,6 @@
 
 .method private findAvailableFrame(Landroid/filterfw/core/FrameFormat;IJ)Landroid/filterfw/core/Frame;
     .locals 7
-    .param p1    # Landroid/filterfw/core/FrameFormat;
-    .param p2    # I
-    .param p3    # J
 
     iget-object v4, p0, Landroid/filterfw/core/CachedFrameManager;->mAvailableFrames:Ljava/util/SortedMap;
 
@@ -217,7 +214,6 @@
 
 .method private storeFrame(Landroid/filterfw/core/Frame;)Z
     .locals 5
-    .param p1    # Landroid/filterfw/core/Frame;
 
     iget-object v3, p0, Landroid/filterfw/core/CachedFrameManager;->mAvailableFrames:Ljava/util/SortedMap;
 
@@ -340,9 +336,6 @@
 
 .method public newBoundFrame(Landroid/filterfw/core/FrameFormat;IJ)Landroid/filterfw/core/Frame;
     .locals 3
-    .param p1    # Landroid/filterfw/core/FrameFormat;
-    .param p2    # I
-    .param p3    # J
 
     invoke-direct {p0, p1, p2, p3, p4}, Landroid/filterfw/core/CachedFrameManager;->findAvailableFrame(Landroid/filterfw/core/FrameFormat;IJ)Landroid/filterfw/core/Frame;
 
@@ -364,7 +357,6 @@
 
 .method public newFrame(Landroid/filterfw/core/FrameFormat;)Landroid/filterfw/core/Frame;
     .locals 4
-    .param p1    # Landroid/filterfw/core/FrameFormat;
 
     const/4 v1, 0x0
 
@@ -390,7 +382,6 @@
 
 .method public releaseFrame(Landroid/filterfw/core/Frame;)Landroid/filterfw/core/Frame;
     .locals 3
-    .param p1    # Landroid/filterfw/core/Frame;
 
     invoke-virtual {p1}, Landroid/filterfw/core/Frame;->isReusable()Z
 
@@ -444,7 +435,6 @@
 
 .method public retainFrame(Landroid/filterfw/core/Frame;)Landroid/filterfw/core/Frame;
     .locals 1
-    .param p1    # Landroid/filterfw/core/Frame;
 
     invoke-super {p0, p1}, Landroid/filterfw/core/SimpleFrameManager;->retainFrame(Landroid/filterfw/core/Frame;)Landroid/filterfw/core/Frame;
 

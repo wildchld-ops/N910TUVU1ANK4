@@ -131,7 +131,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -142,8 +141,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/16 v3, 0x14
 
@@ -206,7 +203,6 @@
 
 .method static synthetic access$000(Lcom/android/internal/widget/WaveView;)I
     .locals 1
-    .param p0    # Lcom/android/internal/widget/WaveView;
 
     iget v0, p0, Lcom/android/internal/widget/WaveView;->mLockState:I
 
@@ -215,8 +211,6 @@
 
 .method static synthetic access$002(Lcom/android/internal/widget/WaveView;I)I
     .locals 0
-    .param p0    # Lcom/android/internal/widget/WaveView;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/internal/widget/WaveView;->mLockState:I
 
@@ -225,7 +219,6 @@
 
 .method static synthetic access$100(Lcom/android/internal/widget/WaveView;)F
     .locals 1
-    .param p0    # Lcom/android/internal/widget/WaveView;
 
     iget v0, p0, Lcom/android/internal/widget/WaveView;->mMouseX:F
 
@@ -234,7 +227,6 @@
 
 .method static synthetic access$1000(Lcom/android/internal/widget/WaveView;)Z
     .locals 1
-    .param p0    # Lcom/android/internal/widget/WaveView;
 
     iget-boolean v0, p0, Lcom/android/internal/widget/WaveView;->mFinishWaves:Z
 
@@ -243,8 +235,6 @@
 
 .method static synthetic access$1102(Lcom/android/internal/widget/WaveView;Z)Z
     .locals 0
-    .param p0    # Lcom/android/internal/widget/WaveView;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/internal/widget/WaveView;->mWavesRunning:Z
 
@@ -253,7 +243,6 @@
 
 .method static synthetic access$1200(Lcom/android/internal/widget/WaveView;)Ljava/lang/Runnable;
     .locals 1
-    .param p0    # Lcom/android/internal/widget/WaveView;
 
     iget-object v0, p0, Lcom/android/internal/widget/WaveView;->mAddWaveAction:Ljava/lang/Runnable;
 
@@ -262,7 +251,6 @@
 
 .method static synthetic access$200(Lcom/android/internal/widget/WaveView;)F
     .locals 1
-    .param p0    # Lcom/android/internal/widget/WaveView;
 
     iget v0, p0, Lcom/android/internal/widget/WaveView;->mLockCenterX:F
 
@@ -271,7 +259,6 @@
 
 .method static synthetic access$300(Lcom/android/internal/widget/WaveView;)F
     .locals 1
-    .param p0    # Lcom/android/internal/widget/WaveView;
 
     iget v0, p0, Lcom/android/internal/widget/WaveView;->mMouseY:F
 
@@ -280,7 +267,6 @@
 
 .method static synthetic access$400(Lcom/android/internal/widget/WaveView;)F
     .locals 1
-    .param p0    # Lcom/android/internal/widget/WaveView;
 
     iget v0, p0, Lcom/android/internal/widget/WaveView;->mLockCenterY:F
 
@@ -289,7 +275,6 @@
 
 .method static synthetic access$500(Lcom/android/internal/widget/WaveView;)I
     .locals 1
-    .param p0    # Lcom/android/internal/widget/WaveView;
 
     iget v0, p0, Lcom/android/internal/widget/WaveView;->mSnapRadius:I
 
@@ -298,7 +283,6 @@
 
 .method static synthetic access$600(Lcom/android/internal/widget/WaveView;)J
     .locals 2
-    .param p0    # Lcom/android/internal/widget/WaveView;
 
     iget-wide v0, p0, Lcom/android/internal/widget/WaveView;->mWaveTimerDelay:J
 
@@ -307,8 +291,6 @@
 
 .method static synthetic access$602(Lcom/android/internal/widget/WaveView;J)J
     .locals 0
-    .param p0    # Lcom/android/internal/widget/WaveView;
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/android/internal/widget/WaveView;->mWaveTimerDelay:J
 
@@ -317,8 +299,6 @@
 
 .method static synthetic access$614(Lcom/android/internal/widget/WaveView;J)J
     .locals 2
-    .param p0    # Lcom/android/internal/widget/WaveView;
-    .param p1    # J
 
     iget-wide v0, p0, Lcom/android/internal/widget/WaveView;->mWaveTimerDelay:J
 
@@ -331,7 +311,6 @@
 
 .method static synthetic access$700(Lcom/android/internal/widget/WaveView;)I
     .locals 1
-    .param p0    # Lcom/android/internal/widget/WaveView;
 
     iget v0, p0, Lcom/android/internal/widget/WaveView;->mCurrentWave:I
 
@@ -340,8 +319,6 @@
 
 .method static synthetic access$702(Lcom/android/internal/widget/WaveView;I)I
     .locals 0
-    .param p0    # Lcom/android/internal/widget/WaveView;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/internal/widget/WaveView;->mCurrentWave:I
 
@@ -350,7 +327,6 @@
 
 .method static synthetic access$800(Lcom/android/internal/widget/WaveView;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/internal/widget/WaveView;
 
     iget-object v0, p0, Lcom/android/internal/widget/WaveView;->mLightWaves:Ljava/util/ArrayList;
 
@@ -359,7 +335,6 @@
 
 .method static synthetic access$900(Lcom/android/internal/widget/WaveView;)I
     .locals 1
-    .param p0    # Lcom/android/internal/widget/WaveView;
 
     iget v0, p0, Lcom/android/internal/widget/WaveView;->mWaveCount:I
 
@@ -392,7 +367,6 @@
 
 .method private dispatchTriggerEvent(I)V
     .locals 2
-    .param p1    # I
 
     const-wide/16 v0, 0x14
 
@@ -622,7 +596,6 @@
 
 .method private setGrabbedState(I)V
     .locals 2
-    .param p1    # I
 
     iget v0, p0, Lcom/android/internal/widget/WaveView;->mGrabbedState:I
 
@@ -646,7 +619,6 @@
 
 .method private tryTransitionToStartAttemptState(Landroid/view/MotionEvent;)V
     .locals 7
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getX()F
 
@@ -724,7 +696,6 @@
 
 .method private declared-synchronized vibrate(J)V
     .locals 5
-    .param p1    # J
 
     const/4 v0, 0x1
 
@@ -797,9 +768,6 @@
 
 .method private waveUpdateFrame(FFZ)V
     .locals 34
-    .param p1    # F
-    .param p2    # F
-    .param p3    # Z
 
     move-object/from16 v0, p0
 
@@ -2471,7 +2439,6 @@
 # virtual methods
 .method createDrawable(I)Landroid/graphics/drawable/BitmapDrawable;
     .locals 3
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
 
@@ -2530,7 +2497,6 @@
 
 .method public onAnimationUpdate(Landroid/animation/ValueAnimator;)V
     .locals 0
-    .param p1    # Landroid/animation/ValueAnimator;
 
     invoke-virtual {p0}, Landroid/view/View;->invalidate()V
 
@@ -2539,7 +2505,6 @@
 
 .method protected onDraw(Landroid/graphics/Canvas;)V
     .locals 4
-    .param p1    # Landroid/graphics/Canvas;
 
     iget v1, p0, Lcom/android/internal/widget/WaveView;->mMouseX:F
 
@@ -2606,7 +2571,6 @@
 
 .method public onHoverEvent(Landroid/view/MotionEvent;)Z
     .locals 2
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-object v1, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -2673,8 +2637,6 @@
 
 .method protected onMeasure(II)V
     .locals 9
-    .param p1    # I
-    .param p2    # I
 
     const/high16 v8, 0x40000000
 
@@ -2753,10 +2715,6 @@
 
 .method protected onSizeChanged(IIII)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/high16 v1, 0x3f000000
 
@@ -2779,7 +2737,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 7
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v2, 0x1
 
@@ -2895,7 +2852,6 @@
 
 .method public setOnTriggerListener(Lcom/android/internal/widget/WaveView$OnTriggerListener;)V
     .locals 0
-    .param p1    # Lcom/android/internal/widget/WaveView$OnTriggerListener;
 
     iput-object p1, p0, Lcom/android/internal/widget/WaveView;->mOnTriggerListener:Lcom/android/internal/widget/WaveView$OnTriggerListener;
 

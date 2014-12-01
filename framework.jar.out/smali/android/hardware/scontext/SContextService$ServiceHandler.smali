@@ -27,7 +27,6 @@
 # direct methods
 .method public constructor <init>(Landroid/hardware/scontext/SContextService;Landroid/os/Looper;)V
     .locals 0
-    .param p2    # Landroid/os/Looper;
 
     iput-object p1, p0, Landroid/hardware/scontext/SContextService$ServiceHandler;->this$0:Landroid/hardware/scontext/SContextService;
 
@@ -40,7 +39,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 9
-    .param p1    # Landroid/os/Message;
 
     const/16 v8, 0x1b
 

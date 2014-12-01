@@ -92,8 +92,6 @@
 
 .method synthetic constructor <init>(Landroid/webkitsec/WebViewClassic;Landroid/webkitsec/WebViewClassic$1;)V
     .locals 0
-    .param p1    # Landroid/webkitsec/WebViewClassic;
-    .param p2    # Landroid/webkitsec/WebViewClassic$1;
 
     invoke-direct {p0, p1}, Landroid/webkitsec/WebViewClassic$StylusEventListener;-><init>(Landroid/webkitsec/WebViewClassic;)V
 
@@ -102,7 +100,6 @@
 
 .method private isWebView(I)Z
     .locals 6
-    .param p1    # I
 
     const/16 v2, 0xd3
 
@@ -205,8 +202,6 @@
 # virtual methods
 .method public onStylusButtonEvent(Landroid/view/MotionEvent;I)V
     .locals 21
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # I
 
     invoke-virtual/range {p1 .. p1}, Landroid/view/MotionEvent;->getActionMasked()I
 

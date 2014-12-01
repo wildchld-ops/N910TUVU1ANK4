@@ -72,7 +72,6 @@
 
 .method protected constructor <init>(I)V
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -91,7 +90,6 @@
 
 .method protected constructor <init>(Landroid/graphics/ImageFilter;)V
     .locals 1
-    .param p1    # Landroid/graphics/ImageFilter;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -108,7 +106,6 @@
 
 .method public static createImageFilter(I)Landroid/graphics/ImageFilter;
     .locals 2
-    .param p0    # I
 
     const/4 v1, 0x0
 
@@ -297,7 +294,6 @@
 
 .method protected getValue(I)F
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/graphics/ImageFilter;->mNativeImageFilter:I
 
@@ -310,7 +306,6 @@
 
 .method protected setBitmapMask(Landroid/graphics/Bitmap;)V
     .locals 3
-    .param p1    # Landroid/graphics/Bitmap;
 
     if-eqz p1, :cond_0
 
@@ -339,8 +334,6 @@
 
 .method protected setValue(IF)V
     .locals 1
-    .param p1    # I
-    .param p2    # F
 
     iget v0, p0, Landroid/graphics/ImageFilter;->mNativeImageFilter:I
 

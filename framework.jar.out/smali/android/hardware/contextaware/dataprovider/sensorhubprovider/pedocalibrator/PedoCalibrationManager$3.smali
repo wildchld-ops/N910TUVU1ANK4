@@ -36,8 +36,6 @@
 # virtual methods
 .method public onNmeaReceived(JLjava/lang/String;)V
     .locals 5
-    .param p1    # J
-    .param p3    # Ljava/lang/String;
 
     const/16 v3, 0x11
 

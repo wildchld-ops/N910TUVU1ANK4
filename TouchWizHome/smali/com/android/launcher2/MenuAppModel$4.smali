@@ -40,8 +40,6 @@
 # virtual methods
 .method public final compare(Lcom/android/launcher2/AppItem;Lcom/android/launcher2/AppItem;)I
     .locals 6
-    .param p1    # Lcom/android/launcher2/AppItem;
-    .param p2    # Lcom/android/launcher2/AppItem;
 
     const/4 v2, 0x1
 
@@ -153,8 +151,6 @@
 
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p1, Lcom/android/launcher2/AppItem;
 

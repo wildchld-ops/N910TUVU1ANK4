@@ -33,7 +33,6 @@
 # virtual methods
 .method public onNotificationPosted(Landroid/service/notification/StatusBarNotification;)V
     .locals 4
-    .param p1    # Landroid/service/notification/StatusBarNotification;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -100,7 +99,6 @@
 
 .method public onNotificationRemoved(Landroid/service/notification/StatusBarNotification;)V
     .locals 4
-    .param p1    # Landroid/service/notification/StatusBarNotification;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

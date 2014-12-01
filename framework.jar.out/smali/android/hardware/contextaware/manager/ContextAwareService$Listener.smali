@@ -40,7 +40,6 @@
 # direct methods
 .method constructor <init>(Landroid/hardware/contextaware/manager/ContextAwareService;Landroid/os/IBinder;)V
     .locals 1
-    .param p2    # Landroid/os/IBinder;
 
     iput-object p1, p0, Landroid/hardware/contextaware/manager/ContextAwareService$Listener;->this$0:Landroid/hardware/contextaware/manager/ContextAwareService;
 
@@ -59,7 +58,6 @@
 
 .method static synthetic access$000(Landroid/hardware/contextaware/manager/ContextAwareService$Listener;)Landroid/os/IBinder;
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/manager/ContextAwareService$Listener;
 
     iget-object v0, p0, Landroid/hardware/contextaware/manager/ContextAwareService$Listener;->mToken:Landroid/os/IBinder;
 
@@ -68,7 +66,6 @@
 
 .method static synthetic access$100(Landroid/hardware/contextaware/manager/ContextAwareService$Listener;)Landroid/hardware/contextaware/manager/fault/CmdProcessResultManager;
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/manager/ContextAwareService$Listener;
 
     iget-object v0, p0, Landroid/hardware/contextaware/manager/ContextAwareService$Listener;->mCmdProcessResultManager:Landroid/hardware/contextaware/manager/fault/CmdProcessResultManager;
 
@@ -77,8 +74,6 @@
 
 .method static synthetic access$102(Landroid/hardware/contextaware/manager/ContextAwareService$Listener;Landroid/hardware/contextaware/manager/fault/CmdProcessResultManager;)Landroid/hardware/contextaware/manager/fault/CmdProcessResultManager;
     .locals 0
-    .param p0    # Landroid/hardware/contextaware/manager/ContextAwareService$Listener;
-    .param p1    # Landroid/hardware/contextaware/manager/fault/CmdProcessResultManager;
 
     iput-object p1, p0, Landroid/hardware/contextaware/manager/ContextAwareService$Listener;->mCmdProcessResultManager:Landroid/hardware/contextaware/manager/fault/CmdProcessResultManager;
 
@@ -87,7 +82,6 @@
 
 .method static synthetic access$200(Landroid/hardware/contextaware/manager/ContextAwareService$Listener;)Ljava/util/concurrent/ConcurrentHashMap;
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/manager/ContextAwareService$Listener;
 
     iget-object v0, p0, Landroid/hardware/contextaware/manager/ContextAwareService$Listener;->mServices:Ljava/util/concurrent/ConcurrentHashMap;
 
@@ -96,9 +90,6 @@
 
 .method static synthetic access$700(Landroid/hardware/contextaware/manager/ContextAwareService$Listener;ILandroid/os/Bundle;)V
     .locals 0
-    .param p0    # Landroid/hardware/contextaware/manager/ContextAwareService$Listener;
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     invoke-direct {p0, p1, p2}, Landroid/hardware/contextaware/manager/ContextAwareService$Listener;->callback(ILandroid/os/Bundle;)V
 
@@ -107,8 +98,6 @@
 
 .method private declared-synchronized callback(ILandroid/os/Bundle;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     monitor-enter p0
 
@@ -323,7 +312,6 @@
 
 .method public decreaseServiceCount(I)V
     .locals 4
-    .param p1    # I
 
     iget-object v1, p0, Landroid/hardware/contextaware/manager/ContextAwareService$Listener;->mServices:Ljava/util/concurrent/ConcurrentHashMap;
 
@@ -414,7 +402,6 @@
 
 .method public increaseServiceCount(I)V
     .locals 4
-    .param p1    # I
 
     iget-object v1, p0, Landroid/hardware/contextaware/manager/ContextAwareService$Listener;->mServices:Ljava/util/concurrent/ConcurrentHashMap;
 
@@ -479,7 +466,6 @@
 
 .method public final setContextCollectionResultNotifyCompletion(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Landroid/hardware/contextaware/manager/ContextAwareService$Listener;->this$0:Landroid/hardware/contextaware/manager/ContextAwareService;
 

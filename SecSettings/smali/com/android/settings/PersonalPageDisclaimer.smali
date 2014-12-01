@@ -51,7 +51,6 @@
 
 .method private sendVeificationRequest(Z)V
     .locals 6
-    .param p1    # Z
 
     const/4 v2, 0x0
 
@@ -164,9 +163,6 @@
 # virtual methods
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     if-lez p2, :cond_1
 
@@ -252,7 +248,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 4
-    .param p1    # Landroid/view/View;
 
     const/4 v3, 0x1
 
@@ -351,7 +346,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 8
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v7, 0x0
 

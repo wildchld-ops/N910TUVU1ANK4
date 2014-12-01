@@ -50,7 +50,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/myprofile/ClockWidgetPreference;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/myprofile/ClockWidgetPreference;
 
     invoke-virtual {p0}, Lcom/android/settings/SettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -61,7 +60,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/myprofile/ClockWidgetPreference;)Landroid/preference/SwitchPreferenceScreen;
     .locals 1
-    .param p0    # Lcom/android/settings/myprofile/ClockWidgetPreference;
 
     iget-object v0, p0, Lcom/android/settings/myprofile/ClockWidgetPreference;->mDualclock:Landroid/preference/SwitchPreferenceScreen;
 
@@ -95,7 +93,6 @@
 # virtual methods
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v2, 0x0
 
@@ -159,8 +156,6 @@
 
 .method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
     .locals 7
-    .param p1    # Landroid/preference/Preference;
-    .param p2    # Ljava/lang/Object;
 
     const/4 v4, 0x1
 
@@ -261,8 +256,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 12
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     iget-object v9, p0, Lcom/android/settings/myprofile/ClockWidgetPreference;->mDateAndYear:Landroid/preference/CheckBoxPreference;
 

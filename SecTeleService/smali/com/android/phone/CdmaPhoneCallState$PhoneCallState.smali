@@ -136,7 +136,7 @@
 
     sget-object v0, Lcom/android/phone/CdmaPhoneCallState$PhoneCallState;->$VALUES:[Lcom/android/phone/CdmaPhoneCallState$PhoneCallState;
 
-    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
+    invoke-virtual {v0}, [Lcom/android/phone/CdmaPhoneCallState$PhoneCallState;->clone()Ljava/lang/Object;
 
     move-result-object v0
 

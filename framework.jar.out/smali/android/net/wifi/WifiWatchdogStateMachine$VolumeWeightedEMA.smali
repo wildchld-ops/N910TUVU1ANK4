@@ -29,7 +29,6 @@
 # direct methods
 .method public constructor <init>(Landroid/net/wifi/WifiWatchdogStateMachine;D)V
     .locals 2
-    .param p2    # D
 
     const-wide/16 v0, 0x0
 
@@ -50,7 +49,6 @@
 
 .method static synthetic access$12200(Landroid/net/wifi/WifiWatchdogStateMachine$VolumeWeightedEMA;)D
     .locals 2
-    .param p0    # Landroid/net/wifi/WifiWatchdogStateMachine$VolumeWeightedEMA;
 
     iget-wide v0, p0, Landroid/net/wifi/WifiWatchdogStateMachine$VolumeWeightedEMA;->mValue:D
 
@@ -59,7 +57,6 @@
 
 .method static synthetic access$12300(Landroid/net/wifi/WifiWatchdogStateMachine$VolumeWeightedEMA;)D
     .locals 2
-    .param p0    # Landroid/net/wifi/WifiWatchdogStateMachine$VolumeWeightedEMA;
 
     iget-wide v0, p0, Landroid/net/wifi/WifiWatchdogStateMachine$VolumeWeightedEMA;->mVolume:D
 
@@ -70,8 +67,6 @@
 # virtual methods
 .method public update(DI)V
     .locals 10
-    .param p1    # D
-    .param p3    # I
 
     const-wide/high16 v8, 0x3ff0000000000000L
 

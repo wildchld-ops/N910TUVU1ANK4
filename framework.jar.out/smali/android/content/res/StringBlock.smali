@@ -44,8 +44,6 @@
 # direct methods
 .method constructor <init>(IZ)V
     .locals 1
-    .param p1    # I
-    .param p2    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -66,10 +64,6 @@
 
 .method public constructor <init>([BIIZ)V
     .locals 1
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -94,8 +88,6 @@
 
 .method public constructor <init>([BZ)V
     .locals 2
-    .param p1    # [B
-    .param p2    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -124,10 +116,6 @@
 
 .method private static addParagraphSpan(Landroid/text/Spannable;Ljava/lang/Object;II)V
     .locals 3
-    .param p0    # Landroid/text/Spannable;
-    .param p1    # Ljava/lang/Object;
-    .param p2    # I
-    .param p3    # I
 
     const/16 v2, 0xa
 
@@ -206,9 +194,6 @@
 
 .method private applyStyles(Ljava/lang/String;[ILandroid/content/res/StringBlock$StyleIDs;)Ljava/lang/CharSequence;
     .locals 17
-    .param p1    # Ljava/lang/String;
-    .param p2    # [I
-    .param p3    # Landroid/content/res/StringBlock$StyleIDs;
 
     move-object/from16 v0, p2
 
@@ -908,8 +893,6 @@
 
 .method private static getColor(Ljava/lang/String;Z)Landroid/text/style/CharacterStyle;
     .locals 10
-    .param p0    # Ljava/lang/String;
-    .param p1    # Z
 
     const/4 v1, 0x0
 
@@ -1015,8 +998,6 @@
 
 .method private static subtag(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Ljava/lang/String;->indexOf(Ljava/lang/String;)I
 
@@ -1101,7 +1082,6 @@
 
 .method public get(I)Ljava/lang/CharSequence;
     .locals 8
-    .param p1    # I
 
     monitor-enter p0
 

@@ -12,7 +12,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;)V
 
@@ -21,8 +20,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -31,7 +28,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/fmm/RecipientsMinusView;)Landroid/widget/LinearLayout;
     .locals 1
-    .param p0    # Lcom/android/settings/fmm/RecipientsMinusView;
 
     iget-object v0, p0, Lcom/android/settings/fmm/RecipientsMinusView;->CurrentView:Landroid/widget/LinearLayout;
 
@@ -40,8 +36,6 @@
 
 .method static synthetic access$102(Lcom/android/settings/fmm/RecipientsMinusView;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/fmm/RecipientsMinusView;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/fmm/RecipientsMinusView;->VisibleView:Z
 
@@ -138,7 +132,6 @@
 
 .method public setPhoneNumber(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const v1, 0x7f0b02d5
 

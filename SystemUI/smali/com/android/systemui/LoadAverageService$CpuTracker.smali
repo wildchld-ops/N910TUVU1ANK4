@@ -25,7 +25,6 @@
 # direct methods
 .method constructor <init>(Landroid/graphics/Paint;)V
     .locals 1
-    .param p1    # Landroid/graphics/Paint;
 
     const/4 v0, 0x0
 
@@ -40,9 +39,6 @@
 # virtual methods
 .method public onLoadChanged(FFF)V
     .locals 2
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -95,7 +91,6 @@
 
 .method public onMeasureProcessName(Ljava/lang/String;)I
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/systemui/LoadAverageService$CpuTracker;->mPaint:Landroid/graphics/Paint;
 

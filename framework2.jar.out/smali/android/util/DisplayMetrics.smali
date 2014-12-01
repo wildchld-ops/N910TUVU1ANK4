@@ -105,7 +105,6 @@
 # virtual methods
 .method public equals(Landroid/util/DisplayMetrics;)Z
     .locals 2
-    .param p1    # Landroid/util/DisplayMetrics;
 
     invoke-virtual {p0, p1}, Landroid/util/DisplayMetrics;->equalsPhysical(Landroid/util/DisplayMetrics;)Z
 
@@ -142,7 +141,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     instance-of v0, p1, Landroid/util/DisplayMetrics;
 
@@ -169,7 +167,6 @@
 
 .method public equalsPhysical(Landroid/util/DisplayMetrics;)Z
     .locals 2
-    .param p1    # Landroid/util/DisplayMetrics;
 
     if-eqz p1, :cond_0
 
@@ -286,7 +283,6 @@
 
 .method public setTo(Landroid/util/DisplayMetrics;)V
     .locals 1
-    .param p1    # Landroid/util/DisplayMetrics;
 
     iget v0, p1, Landroid/util/DisplayMetrics;->widthPixels:I
 

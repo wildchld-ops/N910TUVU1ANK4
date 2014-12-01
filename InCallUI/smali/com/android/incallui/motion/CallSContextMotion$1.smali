@@ -30,7 +30,6 @@
 # virtual methods
 .method public onSContextChanged(Landroid/hardware/scontext/SContextEvent;)V
     .locals 8
-    .param p1    # Landroid/hardware/scontext/SContextEvent;
 
     const/4 v7, 0x1
 

@@ -31,7 +31,6 @@
 # direct methods
 .method private constructor <init>(Landroid/graphics/Bitmap;)V
     .locals 3
-    .param p1    # Landroid/graphics/Bitmap;
 
     const/4 v2, 0x0
 
@@ -78,8 +77,6 @@
 
 .method synthetic constructor <init>(Landroid/graphics/Bitmap;Landroid/app/WallpaperManager$1;)V
     .locals 0
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # Landroid/app/WallpaperManager$1;
 
     invoke-direct {p0, p1}, Landroid/app/WallpaperManager$FastBitmapDrawable;-><init>(Landroid/graphics/Bitmap;)V
 
@@ -90,7 +87,6 @@
 # virtual methods
 .method public draw(Landroid/graphics/Canvas;)V
     .locals 4
-    .param p1    # Landroid/graphics/Canvas;
 
     iget-object v0, p0, Landroid/app/WallpaperManager$FastBitmapDrawable;->mBitmap:Landroid/graphics/Bitmap;
 
@@ -151,7 +147,6 @@
 
 .method public setAlpha(I)V
     .locals 2
-    .param p1    # I
 
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
@@ -164,10 +159,6 @@
 
 .method public setBounds(IIII)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     sub-int v0, p3, p1
 
@@ -198,7 +189,6 @@
 
 .method public setColorFilter(Landroid/graphics/ColorFilter;)V
     .locals 2
-    .param p1    # Landroid/graphics/ColorFilter;
 
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
@@ -211,7 +201,6 @@
 
 .method public setDither(Z)V
     .locals 2
-    .param p1    # Z
 
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
@@ -224,7 +213,6 @@
 
 .method public setFilterBitmap(Z)V
     .locals 2
-    .param p1    # Z
 
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 

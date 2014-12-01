@@ -42,7 +42,6 @@
 # direct methods
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -121,7 +120,6 @@
 
 .method public static getInstance(Landroid/content/Context;)Lcom/android/settings/accountmanagement/AccountManager;
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     sget-boolean v0, Lcom/android/settings/accountmanagement/AccountManager;->isInitialised:Z
 
@@ -143,7 +141,6 @@
 # virtual methods
 .method public dBGetTotalSecuredFileInfo(Ljava/lang/String;)D
     .locals 12
-    .param p1    # Ljava/lang/String;
 
     const-wide/16 v10, 0x0
 
@@ -584,7 +581,6 @@
 
 .method public getGroupIdBySamsungAccountId(Ljava/lang/String;)Ljava/lang/String;
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x0
 

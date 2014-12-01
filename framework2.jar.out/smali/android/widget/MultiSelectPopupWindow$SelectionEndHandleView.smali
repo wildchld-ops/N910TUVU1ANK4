@@ -21,8 +21,6 @@
 # direct methods
 .method public constructor <init>(Landroid/widget/MultiSelectPopupWindow;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
     .locals 1
-    .param p2    # Landroid/graphics/drawable/Drawable;
-    .param p3    # Landroid/graphics/drawable/Drawable;
 
     iput-object p1, p0, Landroid/widget/MultiSelectPopupWindow$SelectionEndHandleView;->this$0:Landroid/widget/MultiSelectPopupWindow;
 
@@ -205,8 +203,6 @@
 
 .method protected getHotspotX(Landroid/graphics/drawable/Drawable;Z)I
     .locals 1
-    .param p1    # Landroid/graphics/drawable/Drawable;
-    .param p2    # Z
 
     if-eqz p2, :cond_0
 
@@ -233,9 +229,6 @@
 
 .method protected positionAtCursorOffset(IZZ)V
     .locals 1
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # Z
 
     invoke-super {p0, p1, p2, p3}, Landroid/widget/MultiSelectPopupWindow$HandleView;->positionAtCursorOffset(IZZ)V
 
@@ -362,8 +355,6 @@
 
 .method public updatePosition(FF)V
     .locals 6
-    .param p1    # F
-    .param p2    # F
 
     const/4 v5, 0x0
 
@@ -411,7 +402,6 @@
 
 .method public updateSelection(I)V
     .locals 3
-    .param p1    # I
 
     # getter for: Landroid/widget/MultiSelectPopupWindow;->mTextView:Landroid/widget/TextView;
     invoke-static {}, Landroid/widget/MultiSelectPopupWindow;->access$000()Landroid/widget/TextView;

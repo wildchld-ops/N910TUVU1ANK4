@@ -16,9 +16,6 @@
 # virtual methods
 .method public getImageDataByIndex(Ljava/lang/String;[BI)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # [B
-    .param p3    # I
 
     return-void
 .end method

@@ -351,7 +351,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 10
-    .param p1    # Landroid/content/Context;
 
     const-wide/16 v8, 0x0
 
@@ -1017,7 +1016,6 @@
 
 .method static synthetic access$000(Lcom/android/server/FMRadioService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/FMRadioService;
 
     iget-boolean v0, p0, Lcom/android/server/FMRadioService;->volumeLock:Z
 
@@ -1026,8 +1024,6 @@
 
 .method static synthetic access$002(Lcom/android/server/FMRadioService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/FMRadioService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/FMRadioService;->volumeLock:Z
 
@@ -1036,7 +1032,6 @@
 
 .method static synthetic access$100(Lcom/android/server/FMRadioService;)Landroid/media/AudioManager;
     .locals 1
-    .param p0    # Lcom/android/server/FMRadioService;
 
     iget-object v0, p0, Lcom/android/server/FMRadioService;->mAudioManager:Landroid/media/AudioManager;
 
@@ -1045,7 +1040,6 @@
 
 .method static synthetic access$1000(Lcom/android/server/FMRadioService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/FMRadioService;
 
     iget-boolean v0, p0, Lcom/android/server/FMRadioService;->mAirPlaneEnabled:Z
 
@@ -1054,8 +1048,6 @@
 
 .method static synthetic access$1002(Lcom/android/server/FMRadioService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/FMRadioService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/FMRadioService;->mAirPlaneEnabled:Z
 
@@ -1064,7 +1056,6 @@
 
 .method static synthetic access$1100(Lcom/android/server/FMRadioService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/FMRadioService;
 
     iget-boolean v0, p0, Lcom/android/server/FMRadioService;->mIsTvOutPlugged:Z
 
@@ -1073,8 +1064,6 @@
 
 .method static synthetic access$1102(Lcom/android/server/FMRadioService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/FMRadioService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/FMRadioService;->mIsTvOutPlugged:Z
 
@@ -1083,7 +1072,6 @@
 
 .method static synthetic access$1200(Lcom/android/server/FMRadioService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/FMRadioService;
 
     iget-boolean v0, p0, Lcom/android/server/FMRadioService;->mIsphoneCallRinging:Z
 
@@ -1092,8 +1080,6 @@
 
 .method static synthetic access$1202(Lcom/android/server/FMRadioService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/FMRadioService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/FMRadioService;->mIsphoneCallRinging:Z
 
@@ -1102,7 +1088,6 @@
 
 .method static synthetic access$1300(Lcom/android/server/FMRadioService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/FMRadioService;
 
     iget-boolean v0, p0, Lcom/android/server/FMRadioService;->mScanProgress:Z
 
@@ -1111,8 +1096,6 @@
 
 .method static synthetic access$1302(Lcom/android/server/FMRadioService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/FMRadioService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/FMRadioService;->mScanProgress:Z
 
@@ -1121,7 +1104,6 @@
 
 .method static synthetic access$1400(Lcom/android/server/FMRadioService;)J
     .locals 2
-    .param p0    # Lcom/android/server/FMRadioService;
 
     iget-wide v0, p0, Lcom/android/server/FMRadioService;->mNeedResumeToFreq:J
 
@@ -1130,8 +1112,6 @@
 
 .method static synthetic access$1402(Lcom/android/server/FMRadioService;J)J
     .locals 0
-    .param p0    # Lcom/android/server/FMRadioService;
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/android/server/FMRadioService;->mNeedResumeToFreq:J
 
@@ -1140,7 +1120,6 @@
 
 .method static synthetic access$1500(Lcom/android/server/FMRadioService;)J
     .locals 2
-    .param p0    # Lcom/android/server/FMRadioService;
 
     iget-wide v0, p0, Lcom/android/server/FMRadioService;->mScanFreq:J
 
@@ -1149,8 +1128,6 @@
 
 .method static synthetic access$1502(Lcom/android/server/FMRadioService;J)J
     .locals 0
-    .param p0    # Lcom/android/server/FMRadioService;
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/android/server/FMRadioService;->mScanFreq:J
 
@@ -1159,7 +1136,6 @@
 
 .method static synthetic access$1600(Lcom/android/server/FMRadioService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/FMRadioService;
 
     iget-boolean v0, p0, Lcom/android/server/FMRadioService;->mIsphoneCall:Z
 
@@ -1168,8 +1144,6 @@
 
 .method static synthetic access$1602(Lcom/android/server/FMRadioService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/FMRadioService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/FMRadioService;->mIsphoneCall:Z
 
@@ -1178,7 +1152,6 @@
 
 .method static synthetic access$1700(Lcom/android/server/FMRadioService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/FMRadioService;
 
     iget-boolean v0, p0, Lcom/android/server/FMRadioService;->isFMBackGroundPlaying:Z
 
@@ -1187,8 +1160,6 @@
 
 .method static synthetic access$1702(Lcom/android/server/FMRadioService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/FMRadioService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/FMRadioService;->isFMBackGroundPlaying:Z
 
@@ -1197,8 +1168,6 @@
 
 .method static synthetic access$1800(Lcom/android/server/FMRadioService;I)V
     .locals 0
-    .param p0    # Lcom/android/server/FMRadioService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/FMRadioService;->responedFocusEvent(I)V
 
@@ -1207,8 +1176,6 @@
 
 .method static synthetic access$1900(Lcom/android/server/FMRadioService;I)V
     .locals 0
-    .param p0    # Lcom/android/server/FMRadioService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/FMRadioService;->respondAudioFocusChangeForDns(I)V
 
@@ -1217,7 +1184,6 @@
 
 .method static synthetic access$200(Lcom/android/server/FMRadioService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/FMRadioService;
 
     iget-boolean v0, p0, Lcom/android/server/FMRadioService;->mIsOn:Z
 
@@ -1226,7 +1192,6 @@
 
 .method static synthetic access$2000(Lcom/android/server/FMRadioService;)V
     .locals 0
-    .param p0    # Lcom/android/server/FMRadioService;
 
     invoke-direct {p0}, Lcom/android/server/FMRadioService;->clearMessageQueue()V
 
@@ -1235,7 +1200,6 @@
 
 .method static synthetic access$2100(Lcom/android/server/FMRadioService;)J
     .locals 2
-    .param p0    # Lcom/android/server/FMRadioService;
 
     iget-wide v0, p0, Lcom/android/server/FMRadioService;->mCurrentResumeVol:J
 
@@ -1244,8 +1208,6 @@
 
 .method static synthetic access$2102(Lcom/android/server/FMRadioService;J)J
     .locals 0
-    .param p0    # Lcom/android/server/FMRadioService;
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/android/server/FMRadioService;->mCurrentResumeVol:J
 
@@ -1254,9 +1216,6 @@
 
 .method static synthetic access$2200(Lcom/android/server/FMRadioService;IJ)V
     .locals 0
-    .param p0    # Lcom/android/server/FMRadioService;
-    .param p1    # I
-    .param p2    # J
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/server/FMRadioService;->queueUpdate(IJ)V
 
@@ -1265,7 +1224,6 @@
 
 .method static synthetic access$2300(Lcom/android/server/FMRadioService;)J
     .locals 2
-    .param p0    # Lcom/android/server/FMRadioService;
 
     iget-wide v0, p0, Lcom/android/server/FMRadioService;->mResumeVol:J
 
@@ -1274,8 +1232,6 @@
 
 .method static synthetic access$2302(Lcom/android/server/FMRadioService;J)J
     .locals 0
-    .param p0    # Lcom/android/server/FMRadioService;
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/android/server/FMRadioService;->mResumeVol:J
 
@@ -1284,7 +1240,6 @@
 
 .method static synthetic access$2400(Lcom/android/server/FMRadioService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/FMRadioService;
 
     iget-boolean v0, p0, Lcom/android/server/FMRadioService;->mIsForcestop:Z
 
@@ -1293,8 +1248,6 @@
 
 .method static synthetic access$2402(Lcom/android/server/FMRadioService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/FMRadioService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/FMRadioService;->mIsForcestop:Z
 
@@ -1303,7 +1256,6 @@
 
 .method static synthetic access$2500(Lcom/android/server/FMRadioService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/FMRadioService;
 
     iget-boolean v0, p0, Lcom/android/server/FMRadioService;->mIsKeepRecoding:Z
 
@@ -1312,8 +1264,6 @@
 
 .method static synthetic access$2600(Lcom/android/server/FMRadioService;Z)Z
     .locals 1
-    .param p0    # Lcom/android/server/FMRadioService;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/FMRadioService;->on(Z)Z
 
@@ -1332,7 +1282,6 @@
 
 .method static synthetic access$2702(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/server/FMRadioService;->mIsTransientPaused:Z
 
@@ -1341,7 +1290,6 @@
 
 .method static synthetic access$2800(Lcom/android/server/FMRadioService;)Lcom/android/server/FMPlayerNative;
     .locals 1
-    .param p0    # Lcom/android/server/FMRadioService;
 
     iget-object v0, p0, Lcom/android/server/FMRadioService;->mPlayerNative:Lcom/android/server/FMPlayerNative;
 
@@ -1350,7 +1298,6 @@
 
 .method static synthetic access$2900(Lcom/android/server/FMRadioService;)Landroid/media/AudioManager$OnAudioFocusChangeListener;
     .locals 1
-    .param p0    # Lcom/android/server/FMRadioService;
 
     iget-object v0, p0, Lcom/android/server/FMRadioService;->mAudioFocusListener:Landroid/media/AudioManager$OnAudioFocusChangeListener;
 
@@ -1359,8 +1306,6 @@
 
 .method static synthetic access$3002(Lcom/android/server/FMRadioService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/FMRadioService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/FMRadioService;->mIsBatteryLow:Z
 
@@ -1369,8 +1314,6 @@
 
 .method static synthetic access$302(Lcom/android/server/FMRadioService;I)I
     .locals 0
-    .param p0    # Lcom/android/server/FMRadioService;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/FMRadioService;->mReturnBackVolume:I
 
@@ -1379,7 +1322,6 @@
 
 .method static synthetic access$3100(Lcom/android/server/FMRadioService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/FMRadioService;
 
     iget-boolean v0, p0, Lcom/android/server/FMRadioService;->mIsMute:Z
 
@@ -1388,8 +1330,6 @@
 
 .method static synthetic access$3202(Lcom/android/server/FMRadioService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/FMRadioService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/FMRadioService;->alarmTTSPlay:Z
 
@@ -1398,7 +1338,6 @@
 
 .method static synthetic access$3300(Lcom/android/server/FMRadioService;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/server/FMRadioService;
 
     iget-object v0, p0, Lcom/android/server/FMRadioService;->mScanChannelList:Ljava/util/ArrayList;
 
@@ -1407,8 +1346,6 @@
 
 .method static synthetic access$3302(Lcom/android/server/FMRadioService;Ljava/util/ArrayList;)Ljava/util/ArrayList;
     .locals 0
-    .param p0    # Lcom/android/server/FMRadioService;
-    .param p1    # Ljava/util/ArrayList;
 
     iput-object p1, p0, Lcom/android/server/FMRadioService;->mScanChannelList:Ljava/util/ArrayList;
 
@@ -1417,7 +1354,6 @@
 
 .method static synthetic access$3400(Lcom/android/server/FMRadioService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/FMRadioService;
 
     iget-boolean v0, p0, Lcom/android/server/FMRadioService;->mIsSkipTunigVal:Z
 
@@ -1426,7 +1362,6 @@
 
 .method static synthetic access$3500(Lcom/android/server/FMRadioService;)I
     .locals 1
-    .param p0    # Lcom/android/server/FMRadioService;
 
     iget v0, p0, Lcom/android/server/FMRadioService;->mScanVolume:I
 
@@ -1435,8 +1370,6 @@
 
 .method static synthetic access$3502(Lcom/android/server/FMRadioService;I)I
     .locals 0
-    .param p0    # Lcom/android/server/FMRadioService;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/FMRadioService;->mScanVolume:I
 
@@ -1445,7 +1378,6 @@
 
 .method static synthetic access$3600(Lcom/android/server/FMRadioService;)Landroid/os/PowerManager;
     .locals 1
-    .param p0    # Lcom/android/server/FMRadioService;
 
     iget-object v0, p0, Lcom/android/server/FMRadioService;->mPowerManager:Landroid/os/PowerManager;
 
@@ -1454,7 +1386,6 @@
 
 .method static synthetic access$3700(Lcom/android/server/FMRadioService;)I
     .locals 1
-    .param p0    # Lcom/android/server/FMRadioService;
 
     iget v0, p0, Lcom/android/server/FMRadioService;->mRssi_th:I
 
@@ -1463,7 +1394,6 @@
 
 .method static synthetic access$3800(Lcom/android/server/FMRadioService;)I
     .locals 1
-    .param p0    # Lcom/android/server/FMRadioService;
 
     iget v0, p0, Lcom/android/server/FMRadioService;->mSnr_th:I
 
@@ -1472,7 +1402,6 @@
 
 .method static synthetic access$3900(Lcom/android/server/FMRadioService;)I
     .locals 1
-    .param p0    # Lcom/android/server/FMRadioService;
 
     iget v0, p0, Lcom/android/server/FMRadioService;->mCnt_th:I
 
@@ -1489,10 +1418,6 @@
 
 .method static synthetic access$4000(Lcom/android/server/FMRadioService;III)V
     .locals 0
-    .param p0    # Lcom/android/server/FMRadioService;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/server/FMRadioService;->setSignalSetting(III)V
 
@@ -1501,8 +1426,6 @@
 
 .method static synthetic access$4102(Lcom/android/server/FMRadioService;Ljava/lang/Thread;)Ljava/lang/Thread;
     .locals 0
-    .param p0    # Lcom/android/server/FMRadioService;
-    .param p1    # Ljava/lang/Thread;
 
     iput-object p1, p0, Lcom/android/server/FMRadioService;->mScanThread:Ljava/lang/Thread;
 
@@ -1511,7 +1434,6 @@
 
 .method static synthetic access$500(Lcom/android/server/FMRadioService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/FMRadioService;
 
     iget-boolean v0, p0, Lcom/android/server/FMRadioService;->mIsHeadsetPlugged:Z
 
@@ -1520,8 +1442,6 @@
 
 .method static synthetic access$502(Lcom/android/server/FMRadioService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/FMRadioService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/FMRadioService;->mIsHeadsetPlugged:Z
 
@@ -1530,7 +1450,6 @@
 
 .method static synthetic access$600(Lcom/android/server/FMRadioService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/FMRadioService;
 
     iget-boolean v0, p0, Lcom/android/server/FMRadioService;->mIsTestMode:Z
 
@@ -1539,7 +1458,6 @@
 
 .method static synthetic access$700(Lcom/android/server/FMRadioService;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/server/FMRadioService;
 
     iget-object v0, p0, Lcom/android/server/FMRadioService;->mContext:Landroid/content/Context;
 
@@ -1548,7 +1466,6 @@
 
 .method static synthetic access$800(Lcom/android/server/FMRadioService;)V
     .locals 0
-    .param p0    # Lcom/android/server/FMRadioService;
 
     invoke-direct {p0}, Lcom/android/server/FMRadioService;->stopInternetStreaming()V
 
@@ -1557,10 +1474,6 @@
 
 .method static synthetic access$900(Lcom/android/server/FMRadioService;ZIZ)Z
     .locals 1
-    .param p0    # Lcom/android/server/FMRadioService;
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # Z
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/server/FMRadioService;->offInternal(ZIZ)Z
 
@@ -1675,7 +1588,6 @@
 
 .method private convertToPrimitives([Ljava/lang/Long;)[J
     .locals 4
-    .param p1    # [Ljava/lang/Long;
 
     if-eqz p1, :cond_0
 
@@ -1711,7 +1623,6 @@
 
 .method public static log(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "FMRadioService"
 
@@ -1722,9 +1633,6 @@
 
 .method private declared-synchronized offInternal(ZIZ)Z
     .locals 10
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # Z
 
     const/4 v8, -0x1
 
@@ -2200,7 +2108,6 @@
 
 .method private declared-synchronized on(Z)Z
     .locals 12
-    .param p1    # Z
 
     const/4 v9, 0x2
 
@@ -2766,8 +2673,6 @@
 
 .method private queueUpdate(IJ)V
     .locals 2
-    .param p1    # I
-    .param p2    # J
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -3443,7 +3348,6 @@
 
 .method private remove(Lcom/samsung/media/fmradio/internal/IFMEventListener;)V
     .locals 6
-    .param p1    # Lcom/samsung/media/fmradio/internal/IFMEventListener;
 
     iget-object v3, p0, Lcom/android/server/FMRadioService;->mListeners:Ljava/util/Vector;
 
@@ -3551,7 +3455,6 @@
 
 .method private respondAudioFocusChangeForDns(I)V
     .locals 3
-    .param p1    # I
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -3636,7 +3539,6 @@
 
 .method private responedFocusEvent(I)V
     .locals 8
-    .param p1    # I
 
     const/16 v7, 0x11
 
@@ -4160,9 +4062,6 @@
 
 .method private setSignalSetting(III)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     iget-boolean v0, p0, Lcom/android/server/FMRadioService;->mIsOn:Z
 
@@ -4343,7 +4242,6 @@
 
 .method private writeFile(Z)V
     .locals 5
-    .param p1    # Z
 
     if-eqz p1, :cond_2
 
@@ -4431,7 +4329,6 @@
 # virtual methods
 .method public SetIsOn(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/FMRadioService;->mIsOn:Z
 
@@ -5162,7 +5059,6 @@
 
 .method public mute(Z)V
     .locals 2
-    .param p1    # Z
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -5223,8 +5119,6 @@
 
 .method public notifyEvent(ILjava/lang/Object;)V
     .locals 21
-    .param p1    # I
-    .param p2    # Ljava/lang/Object;
 
     move-object/from16 v0, p0
 
@@ -7081,7 +6975,6 @@
 
 .method public removeListener(Lcom/samsung/media/fmradio/internal/IFMEventListener;)V
     .locals 2
-    .param p1    # Lcom/samsung/media/fmradio/internal/IFMEventListener;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -7302,7 +7195,6 @@
 
 .method sendFMStatusBroadcast(Ljava/lang/Long;)V
     .locals 5
-    .param p1    # Ljava/lang/Long;
 
     invoke-virtual {p1}, Ljava/lang/Long;->longValue()J
 
@@ -7389,7 +7281,6 @@
 
 .method public setAFRMSSISamples(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/FMRadioService;->mPlayerNative:Lcom/android/server/FMPlayerNative;
 
@@ -7400,7 +7291,6 @@
 
 .method public setAFRMSSIThreshold(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/FMRadioService;->mPlayerNative:Lcom/android/server/FMPlayerNative;
 
@@ -7411,7 +7301,6 @@
 
 .method public setAFValid_th(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/FMRadioService;->mPlayerNative:Lcom/android/server/FMPlayerNative;
 
@@ -7422,7 +7311,6 @@
 
 .method public setAF_th(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/FMRadioService;->mPlayerNative:Lcom/android/server/FMPlayerNative;
 
@@ -7433,7 +7321,6 @@
 
 .method public setBand(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/FMRadioService;->mPlayerNative:Lcom/android/server/FMPlayerNative;
 
@@ -7446,7 +7333,6 @@
 
 .method public setCFOTh12(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/FMRadioService;->mPlayerNative:Lcom/android/server/FMPlayerNative;
 
@@ -7457,7 +7343,6 @@
 
 .method public setChannelSpacing(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/FMRadioService;->mPlayerNative:Lcom/android/server/FMPlayerNative;
 
@@ -7468,7 +7353,6 @@
 
 .method public setCnt_th(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/FMRadioService;->mCnt_th:I
 
@@ -7477,7 +7361,6 @@
 
 .method public setCnt_th_2(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/FMRadioService;->mCnt_th_2:I
 
@@ -7486,7 +7369,6 @@
 
 .method public setDEConstant(J)V
     .locals 1
-    .param p1    # J
 
     iget-object v0, p0, Lcom/android/server/FMRadioService;->mPlayerNative:Lcom/android/server/FMPlayerNative;
 
@@ -7497,7 +7379,6 @@
 
 .method public setFMIntenna(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/server/FMRadioService;->mPlayerNative:Lcom/android/server/FMPlayerNative;
 
@@ -7508,7 +7389,6 @@
 
 .method public setFeatureWaitPidDuringScanning(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/FMRadioService;->mWaitPidDuringScanning:Z
 
@@ -7517,7 +7397,6 @@
 
 .method public setGoodChannelRMSSIThreshold(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/FMRadioService;->mPlayerNative:Lcom/android/server/FMPlayerNative;
 
@@ -7528,7 +7407,6 @@
 
 .method public setInternetStreamingMode(Z)V
     .locals 2
-    .param p1    # Z
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -7579,7 +7457,6 @@
 
 .method public setListener(Lcom/samsung/media/fmradio/internal/IFMEventListener;)V
     .locals 3
-    .param p1    # Lcom/samsung/media/fmradio/internal/IFMEventListener;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -7682,7 +7559,6 @@
 
 .method public setOffChannelThreshold(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/FMRadioService;->mPlayerNative:Lcom/android/server/FMPlayerNative;
 
@@ -7693,7 +7569,6 @@
 
 .method public setOnChannelThreshold(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/FMRadioService;->mPlayerNative:Lcom/android/server/FMPlayerNative;
 
@@ -7704,7 +7579,6 @@
 
 .method public setRMSSIFirstStage(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/FMRadioService;->mPlayerNative:Lcom/android/server/FMPlayerNative;
 
@@ -7715,7 +7589,6 @@
 
 .method public setRSSI_th(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/FMRadioService;->mRssi_th:I
 
@@ -7724,7 +7597,6 @@
 
 .method public setRSSI_th_2(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/FMRadioService;->mRssi_th_2:I
 
@@ -7733,7 +7605,6 @@
 
 .method public setRecordMode(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/FMRadioService;->mPlayerNative:Lcom/android/server/FMPlayerNative;
 
@@ -7744,7 +7615,6 @@
 
 .method public setSINRFirstStage(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/FMRadioService;->mPlayerNative:Lcom/android/server/FMPlayerNative;
 
@@ -7755,7 +7625,6 @@
 
 .method public setSINRSamples(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/FMRadioService;->mPlayerNative:Lcom/android/server/FMPlayerNative;
 
@@ -7766,7 +7635,6 @@
 
 .method public setSINRThreshold(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/FMRadioService;->mPlayerNative:Lcom/android/server/FMPlayerNative;
 
@@ -7777,7 +7645,6 @@
 
 .method public setSNR_th(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/FMRadioService;->mSnr_th:I
 
@@ -7786,7 +7653,6 @@
 
 .method public setSNR_th_2(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/FMRadioService;->mSnr_th_2:I
 
@@ -7795,7 +7661,6 @@
 
 .method public setSearchAlgoType(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/FMRadioService;->mPlayerNative:Lcom/android/server/FMPlayerNative;
 
@@ -7806,7 +7671,6 @@
 
 .method public setSeekRSSI(J)V
     .locals 1
-    .param p1    # J
 
     iget-object v0, p0, Lcom/android/server/FMRadioService;->mPlayerNative:Lcom/android/server/FMPlayerNative;
 
@@ -7817,7 +7681,6 @@
 
 .method public setSeekSNR(J)V
     .locals 1
-    .param p1    # J
 
     iget-object v0, p0, Lcom/android/server/FMRadioService;->mPlayerNative:Lcom/android/server/FMPlayerNative;
 
@@ -7828,9 +7691,6 @@
 
 .method public setSoftMuteControl(III)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     iget-object v0, p0, Lcom/android/server/FMRadioService;->mPlayerNative:Lcom/android/server/FMPlayerNative;
 
@@ -7841,7 +7701,6 @@
 
 .method public setSoftmute(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/server/FMRadioService;->mPlayerNative:Lcom/android/server/FMPlayerNative;
 
@@ -7852,7 +7711,6 @@
 
 .method public setSpeakerOn(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/server/FMRadioService;->mPlayerNative:Lcom/android/server/FMPlayerNative;
 
@@ -7873,7 +7731,6 @@
 
 .method public setVolume(J)V
     .locals 8
-    .param p1    # J
 
     const-wide/16 v6, 0x0
 
@@ -7998,7 +7855,6 @@
 
 .method public tune(J)V
     .locals 3
-    .param p1    # J
 
     const-string/jumbo v0, "tune mute - "
 

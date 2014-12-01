@@ -54,8 +54,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/launcher2/Hotseat;Lcom/android/launcher2/CellLayout;)V
     .locals 3
-    .param p1    # Lcom/android/launcher2/Hotseat;
-    .param p2    # Lcom/android/launcher2/CellLayout;
 
     const/16 v2, 0x1f4
 
@@ -116,7 +114,6 @@
 
 .method static synthetic access$000(Lcom/android/launcher2/HotseatSwapAnimator;)Lcom/android/launcher2/AnimationLayer$Anim;
     .locals 1
-    .param p0    # Lcom/android/launcher2/HotseatSwapAnimator;
 
     iget-object v0, p0, Lcom/android/launcher2/HotseatSwapAnimator;->mAnimInfo:Lcom/android/launcher2/AnimationLayer$Anim;
 
@@ -125,8 +122,6 @@
 
 .method static synthetic access$002(Lcom/android/launcher2/HotseatSwapAnimator;Lcom/android/launcher2/AnimationLayer$Anim;)Lcom/android/launcher2/AnimationLayer$Anim;
     .locals 0
-    .param p0    # Lcom/android/launcher2/HotseatSwapAnimator;
-    .param p1    # Lcom/android/launcher2/AnimationLayer$Anim;
 
     iput-object p1, p0, Lcom/android/launcher2/HotseatSwapAnimator;->mAnimInfo:Lcom/android/launcher2/AnimationLayer$Anim;
 
@@ -135,7 +130,6 @@
 
 .method static synthetic access$100(Lcom/android/launcher2/HotseatSwapAnimator;)Lcom/android/launcher2/Launcher;
     .locals 1
-    .param p0    # Lcom/android/launcher2/HotseatSwapAnimator;
 
     iget-object v0, p0, Lcom/android/launcher2/HotseatSwapAnimator;->mLauncher:Lcom/android/launcher2/Launcher;
 
@@ -144,7 +138,6 @@
 
 .method static synthetic access$200(Lcom/android/launcher2/HotseatSwapAnimator;)Lcom/android/launcher2/CellLayoutChildren;
     .locals 1
-    .param p0    # Lcom/android/launcher2/HotseatSwapAnimator;
 
     iget-object v0, p0, Lcom/android/launcher2/HotseatSwapAnimator;->mChildren:Lcom/android/launcher2/CellLayoutChildren;
 
@@ -153,7 +146,6 @@
 
 .method private animateMoveFade(Lcom/android/launcher2/DragState;)V
     .locals 13
-    .param p1    # Lcom/android/launcher2/DragState;
 
     const/4 v8, 0x0
 
@@ -325,7 +317,6 @@
 
 .method private animateOverlayIconBack(Lcom/android/launcher2/DragState;)V
     .locals 19
-    .param p1    # Lcom/android/launcher2/DragState;
 
     move-object/from16 v0, p0
 
@@ -630,8 +621,6 @@
 
 .method public static create(Lcom/android/launcher2/Hotseat;Lcom/android/launcher2/CellLayout;)Lcom/android/launcher2/HotseatSwapAnimator;
     .locals 1
-    .param p0    # Lcom/android/launcher2/Hotseat;
-    .param p1    # Lcom/android/launcher2/CellLayout;
 
     new-instance v0, Lcom/android/launcher2/HotseatSwapAnimator;
 
@@ -644,8 +633,6 @@
 
 .method private displaySwapItemOverFolder(Lcom/android/launcher2/DragState;Landroid/view/View;)V
     .locals 6
-    .param p1    # Lcom/android/launcher2/DragState;
-    .param p2    # Landroid/view/View;
 
     invoke-virtual {p2}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
@@ -710,9 +697,6 @@
 
 .method static fadeAnimate(Landroid/view/View;FI)V
     .locals 3
-    .param p0    # Landroid/view/View;
-    .param p1    # F
-    .param p2    # I
 
     if-eqz p0, :cond_0
 
@@ -752,7 +736,6 @@
 
 .method private fadeOutAndRemoveOverlayIcon(Lcom/android/launcher2/DragState;)V
     .locals 3
-    .param p1    # Lcom/android/launcher2/DragState;
 
     const/high16 v1, 0x3f800000
 
@@ -810,7 +793,6 @@
 
 .method private getCellLayoutParent(Landroid/view/View;)Lcom/android/launcher2/CellLayout;
     .locals 3
-    .param p1    # Landroid/view/View;
 
     const/4 v1, 0x0
 
@@ -856,7 +838,6 @@
 
 .method private getWorkspaceParent(Landroid/view/View;)Lcom/android/launcher2/Workspace;
     .locals 3
-    .param p1    # Landroid/view/View;
 
     const/4 v1, 0x0
 
@@ -902,7 +883,6 @@
 
 .method private handleDragOverViewDrop(Lcom/android/launcher2/DragState;)Z
     .locals 7
-    .param p1    # Lcom/android/launcher2/DragState;
 
     const/4 v6, 0x0
 
@@ -988,7 +968,6 @@
 
 .method private handleDragOverViewEnded(Lcom/android/launcher2/DragState;)V
     .locals 7
-    .param p1    # Lcom/android/launcher2/DragState;
 
     const/4 v6, 0x0
 
@@ -1117,7 +1096,6 @@
 
 .method private handleDragOverViewExit(Lcom/android/launcher2/DragState;)V
     .locals 4
-    .param p1    # Lcom/android/launcher2/DragState;
 
     const/high16 v3, 0x3f800000
 
@@ -1160,7 +1138,6 @@
 
 .method private handleDragOverViewMove(Lcom/android/launcher2/DragState;)V
     .locals 12
-    .param p1    # Lcom/android/launcher2/DragState;
 
     const/4 v11, 0x0
 
@@ -1417,7 +1394,6 @@
 
 .method private hideHotseatSwapIcon(Z)V
     .locals 4
-    .param p1    # Z
 
     iget-object v1, p0, Lcom/android/launcher2/HotseatSwapAnimator;->mHotseatSwapIcon:Landroid/view/View;
 
@@ -1482,7 +1458,6 @@
 
 .method private isAppIcon(Landroid/view/View;)Z
     .locals 1
-    .param p1    # Landroid/view/View;
 
     if-eqz p1, :cond_0
 
@@ -1535,7 +1510,6 @@
 
 .method private removeFolderOverlay(Lcom/android/launcher2/BaseItem;)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/BaseItem;
 
     iget-object v0, p0, Lcom/android/launcher2/HotseatSwapAnimator;->mSwapFolder:Lcom/android/launcher2/Folder;
 
@@ -1558,8 +1532,6 @@
 
 .method private scaleAnimate(Landroid/view/View;F)Landroid/view/ViewPropertyAnimator;
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # F
 
     if-eqz p1, :cond_0
 
@@ -1592,8 +1564,6 @@
 
 .method private showHotseatSwapIcon(Lcom/android/launcher2/DragState;Landroid/view/View;)V
     .locals 9
-    .param p1    # Lcom/android/launcher2/DragState;
-    .param p2    # Landroid/view/View;
 
     const/4 v3, 0x0
 
@@ -1752,7 +1722,6 @@
 # virtual methods
 .method hasHotSeatAncestor(Lcom/android/launcher2/BaseItem;)Z
     .locals 6
-    .param p1    # Lcom/android/launcher2/BaseItem;
 
     const/4 v1, 0x0
 
@@ -1784,8 +1753,6 @@
 
 .method public onDrag(Landroid/view/View;Landroid/view/DragEvent;)Z
     .locals 12
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/DragEvent;
 
     const/4 v4, 0x1
 

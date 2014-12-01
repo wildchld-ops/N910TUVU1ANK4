@@ -40,10 +40,6 @@
 # direct methods
 .method public constructor <init>(IIII)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/4 v1, 0x0
 
@@ -611,7 +607,6 @@
 
 .method public Destroy(Z)V
     .locals 4
-    .param p1    # Z
 
     const/4 v3, 0x1
 
@@ -668,7 +663,6 @@
 
 .method public draw(F)V
     .locals 9
-    .param p1    # F
 
     const/16 v2, 0x1406
 
@@ -777,8 +771,6 @@
 
 .method public setTextureSize(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/voovio/gles/Snapshot20;->m_szTexture:Lcom/voovio/geometry/Point;
 

@@ -33,7 +33,6 @@
 
 .method synthetic constructor <init>(Landroid/graphics/Paint$1;)V
     .locals 0
-    .param p1    # Landroid/graphics/Paint$1;
 
     invoke-direct {p0}, Landroid/graphics/Paint$Gradient;-><init>()V
 

@@ -1017,7 +1017,6 @@
 
 .method public static valueOf(Ljava/lang/String;)Landroid/hardware/motion/MotionRecognitionEngineAppId$eAPPID;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-class v0, Landroid/hardware/motion/MotionRecognitionEngineAppId$eAPPID;
 

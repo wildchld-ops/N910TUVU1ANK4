@@ -230,7 +230,6 @@
 
 .method static synthetic access$000(Lcom/android/incallui/vt/VideoCallManager;)Lcom/samsung/commonimsinterface/imsinterface/IMSInterfaceForMedia;
     .locals 1
-    .param p0    # Lcom/android/incallui/vt/VideoCallManager;
 
     iget-object v0, p0, Lcom/android/incallui/vt/VideoCallManager;->mImsInterface:Lcom/samsung/commonimsinterface/imsinterface/IMSInterfaceForMedia;
 
@@ -239,7 +238,6 @@
 
 .method static synthetic access$200(Lcom/android/incallui/vt/VideoCallManager;)Lsiso/vt/VTManager;
     .locals 1
-    .param p0    # Lcom/android/incallui/vt/VideoCallManager;
 
     iget-object v0, p0, Lcom/android/incallui/vt/VideoCallManager;->mCsVTManager:Lsiso/vt/VTManager;
 
@@ -248,7 +246,6 @@
 
 .method static synthetic access$300(Lcom/android/incallui/vt/VideoCallManager;)Lcom/android/incallui/vt/PreviewEffectState;
     .locals 1
-    .param p0    # Lcom/android/incallui/vt/VideoCallManager;
 
     iget-object v0, p0, Lcom/android/incallui/vt/VideoCallManager;->mPreviewEffectState:Lcom/android/incallui/vt/PreviewEffectState;
 
@@ -257,8 +254,6 @@
 
 .method static synthetic access$400(Lcom/android/incallui/vt/VideoCallManager;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/incallui/vt/VideoCallManager;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/incallui/vt/VideoCallManager;->log(Ljava/lang/String;)V
 
@@ -267,8 +262,6 @@
 
 .method static synthetic access$500(Lcom/android/incallui/vt/VideoCallManager;Landroid/graphics/Bitmap;)V
     .locals 0
-    .param p0    # Lcom/android/incallui/vt/VideoCallManager;
-    .param p1    # Landroid/graphics/Bitmap;
 
     invoke-direct {p0, p1}, Lcom/android/incallui/vt/VideoCallManager;->updateSelectedImageFromGallery(Landroid/graphics/Bitmap;)V
 
@@ -277,8 +270,6 @@
 
 .method static synthetic access$600(Lcom/android/incallui/vt/VideoCallManager;Ljava/lang/String;)Landroid/graphics/Bitmap;
     .locals 1
-    .param p0    # Lcom/android/incallui/vt/VideoCallManager;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/incallui/vt/VideoCallManager;->getBitmapFromFile(Ljava/lang/String;)Landroid/graphics/Bitmap;
 
@@ -289,8 +280,6 @@
 
 .method static synthetic access$700(Lcom/android/incallui/vt/VideoCallManager;Landroid/net/Uri;)V
     .locals 0
-    .param p0    # Lcom/android/incallui/vt/VideoCallManager;
-    .param p1    # Landroid/net/Uri;
 
     invoke-direct {p0, p1}, Lcom/android/incallui/vt/VideoCallManager;->updateSelectedVideoFromGallery(Landroid/net/Uri;)V
 
@@ -299,8 +288,6 @@
 
 .method static synthetic access$800(Lcom/android/incallui/vt/VideoCallManager;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/incallui/vt/VideoCallManager;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/incallui/vt/VideoCallManager;->showVideo(Ljava/lang/String;)V
 
@@ -409,9 +396,6 @@
 
 .method private createImage(Ljava/lang/String;ILjava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     iget-object v3, p0, Lcom/android/incallui/vt/VideoCallManager;->mContext:Landroid/content/Context;
 
@@ -455,7 +439,6 @@
 
 .method private getBitmapFromFile(Ljava/lang/String;)Landroid/graphics/Bitmap;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -894,7 +877,6 @@
 
 .method private mediaScan(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x1
 
@@ -2004,7 +1986,6 @@
 
 .method private updateSelectedImageFromGallery(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -2544,7 +2525,6 @@
 
 .method public addListener(Lcom/android/incallui/vt/VTStateListener;)V
     .locals 1
-    .param p1    # Lcom/android/incallui/vt/VTStateListener;
 
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -2602,7 +2582,6 @@
 
 .method public captureSurfaceImage(Z)V
     .locals 6
-    .param p1    # Z
 
     invoke-direct {p0}, Lcom/android/incallui/vt/VideoCallManager;->getIMSCallType()I
 
@@ -3146,7 +3125,6 @@
 
 .method public deleteFile(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_1
 
@@ -3262,7 +3240,6 @@
 
 .method public dualCamera(Z)V
     .locals 4
-    .param p1    # Z
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -3486,7 +3463,6 @@
 
 .method public getCameraParameters(I)I
     .locals 3
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -4711,7 +4687,6 @@
 
 .method public initialize(Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     const-string v1, "Instantiating VideoCallManager"
 
@@ -6326,8 +6301,6 @@
 
 .method public onStateChange(Lcom/android/incallui/InCallPresenter$InCallState;Lcom/android/incallui/CallList;)V
     .locals 8
-    .param p1    # Lcom/android/incallui/InCallPresenter$InCallState;
-    .param p2    # Lcom/android/incallui/CallList;
 
     const/4 v7, 0x2
 
@@ -7002,7 +6975,6 @@
 
 .method public declared-synchronized openCamera(I)Z
     .locals 4
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;
@@ -7094,8 +7066,6 @@
 
 .method public declared-synchronized openCamera(II)Z
     .locals 3
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;
@@ -7203,7 +7173,6 @@
 
 .method public removeListener(Lcom/android/incallui/vt/VTStateListener;)V
     .locals 1
-    .param p1    # Lcom/android/incallui/vt/VTStateListener;
 
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -7932,7 +7901,6 @@
 
 .method public sendStillImage(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -8046,7 +8014,6 @@
 
 .method setCameraDisplayOrientation(I)V
     .locals 5
-    .param p1    # I
 
     const/4 v4, 0x2
 
@@ -8379,8 +8346,6 @@
 
 .method public setCameraParameters(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0}, Lcom/android/incallui/vt/VideoCallManager;->getCallType()I
 
@@ -8404,7 +8369,6 @@
 
 .method public setCameraParameters(Landroid/hardware/Camera$Parameters;)V
     .locals 3
-    .param p1    # Landroid/hardware/Camera$Parameters;
 
     invoke-direct {p0}, Lcom/android/incallui/vt/VideoCallManager;->getCallType()I
 
@@ -8439,7 +8403,6 @@
 
 .method public setCapturedLocalFile(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Lcom/android/incallui/vt/VideoCallManager;->getVTCallState()Lcom/android/incallui/vt/VTCallState;
 
@@ -8537,8 +8500,6 @@
 
 .method public setCurrentOrientation(IZ)V
     .locals 2
-    .param p1    # I
-    .param p2    # Z
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -8620,7 +8581,6 @@
 
 .method public setEmotionalAnimation(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/incallui/vt/VideoCallManager;->mCsVTManager:Lsiso/vt/VTManager;
 
@@ -8667,7 +8627,6 @@
 
 .method public setFarEndRecord(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-virtual {p0}, Lcom/android/incallui/vt/VideoCallManager;->getVTCallState()Lcom/android/incallui/vt/VTCallState;
 
@@ -8680,9 +8639,6 @@
 
 .method public setFarEndSurface(Landroid/graphics/SurfaceTexture;II)V
     .locals 4
-    .param p1    # Landroid/graphics/SurfaceTexture;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v3, 0x1
 
@@ -8773,7 +8729,6 @@
 
 .method public setFarFrameReady(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-virtual {p0}, Lcom/android/incallui/vt/VideoCallManager;->getVTCallState()Lcom/android/incallui/vt/VTCallState;
 
@@ -8884,7 +8839,6 @@
 
 .method public setIsMediaReadyToReceivePreview(Z)V
     .locals 3
-    .param p1    # Z
 
     invoke-direct {p0}, Lcom/android/incallui/vt/VideoCallManager;->getCallType()I
 
@@ -8919,7 +8873,6 @@
 
 .method public setNearEndRecord(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-virtual {p0}, Lcom/android/incallui/vt/VideoCallManager;->getVTCallState()Lcom/android/incallui/vt/VTCallState;
 
@@ -8932,9 +8885,6 @@
 
 .method public setNearEndSurface(Landroid/graphics/SurfaceTexture;II)V
     .locals 6
-    .param p1    # Landroid/graphics/SurfaceTexture;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v5, 0x2
 
@@ -9127,7 +9077,6 @@
 
 .method public setScreenRotated(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/incallui/vt/VideoCallManager;->mIsScreenRotated:Z
 
@@ -9274,7 +9223,6 @@
 
 .method public setSurfaceViewSwipe(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-virtual {p0}, Lcom/android/incallui/vt/VideoCallManager;->getVTCallState()Lcom/android/incallui/vt/VTCallState;
 
@@ -9287,7 +9235,6 @@
 
 .method public setSwitchCameraClicked(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-virtual {p0}, Lcom/android/incallui/vt/VideoCallManager;->getVTCallState()Lcom/android/incallui/vt/VTCallState;
 
@@ -9300,7 +9247,6 @@
 
 .method public setVideoHeld(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/incallui/vt/VideoCallManager;->mIsVideoHeld:Z
 
@@ -9309,7 +9255,6 @@
 
 .method public setVideoHeldRemote(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/incallui/vt/VideoCallManager;->mIsVideoHeldRemote:Z
 
@@ -9318,7 +9263,6 @@
 
 .method public setVideoMoResume(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/incallui/vt/VideoCallManager;->mIsVideoMoResume:Z
 
@@ -9374,7 +9318,6 @@
 
 .method public showSeekBar(I)V
     .locals 1
-    .param p1    # I
 
     invoke-static {}, Lcom/android/incallui/CallButtonPresenter;->getInstance()Lcom/android/incallui/CallButtonPresenter;
 
@@ -9436,9 +9379,6 @@
 
 .method public startCameraPreview(Landroid/graphics/SurfaceTexture;II)V
     .locals 3
-    .param p1    # Landroid/graphics/SurfaceTexture;
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -9841,7 +9781,6 @@
 
 .method public startRender(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method

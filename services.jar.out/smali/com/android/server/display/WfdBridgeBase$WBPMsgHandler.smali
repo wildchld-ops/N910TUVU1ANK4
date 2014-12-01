@@ -70,7 +70,6 @@
 
 .method private parseBridgeCmdInfo(Lcom/android/server/display/WfdBridgeBase$WBPMsg;)V
     .locals 8
-    .param p1    # Lcom/android/server/display/WfdBridgeBase$WBPMsg;
 
     :try_start_0
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
@@ -268,7 +267,6 @@
 
 .method private parseMsg(Lcom/android/server/display/WfdBridgeBase$WBPMsg;)V
     .locals 2
-    .param p1    # Lcom/android/server/display/WfdBridgeBase$WBPMsg;
 
     iget-object v0, p1, Lcom/android/server/display/WfdBridgeBase$WBPMsg;->mMsg:Ljava/lang/String;
 
@@ -319,7 +317,6 @@
 
 .method private parseRequest(Lcom/android/server/display/WfdBridgeBase$WBPMsg;)Z
     .locals 8
-    .param p1    # Lcom/android/server/display/WfdBridgeBase$WBPMsg;
 
     const/4 v5, 0x1
 
@@ -464,7 +461,6 @@
 
 .method private parseResponse(Lcom/android/server/display/WfdBridgeBase$WBPMsg;)Z
     .locals 9
-    .param p1    # Lcom/android/server/display/WfdBridgeBase$WBPMsg;
 
     const/4 v5, 0x1
 
@@ -739,7 +735,6 @@
 
 .method public putMsg(Lcom/android/server/display/WfdBridgeBase$WBPMsg;)I
     .locals 3
-    .param p1    # Lcom/android/server/display/WfdBridgeBase$WBPMsg;
 
     :try_start_0
     iget-object v1, p0, Lcom/android/server/display/WfdBridgeBase$WBPMsgHandler;->mMsgList:Ljava/util/concurrent/BlockingQueue;
@@ -940,7 +935,6 @@
 
 .method public send_WBP_GET_PARAM(Lcom/android/server/display/WfdBridgeBase$WBPMsg;)V
     .locals 2
-    .param p1    # Lcom/android/server/display/WfdBridgeBase$WBPMsg;
 
     const-string v0, "GET_PARAMETER WBP/1.1\r\nsupported\r\n\r\n"
 
@@ -953,7 +947,6 @@
 
 .method public send_WBP_GET_PARAM_RES(Lcom/android/server/display/WfdBridgeBase$WBPMsg;)V
     .locals 3
-    .param p1    # Lcom/android/server/display/WfdBridgeBase$WBPMsg;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -1018,7 +1011,6 @@
 
 .method public send_WBP_TRIGGER(Lcom/android/server/display/WfdBridgeBase$WBPMsg;)V
     .locals 6
-    .param p1    # Lcom/android/server/display/WfdBridgeBase$WBPMsg;
 
     iget-object v3, p1, Lcom/android/server/display/WfdBridgeBase$WBPMsg;->mPeer:Lcom/android/server/display/WfdBridgeBase$BridgePeer;
 
@@ -1178,8 +1170,6 @@
 
 .method public send_WBP_TRIGGER_RES(Lcom/android/server/display/WfdBridgeBase$WBPMsg;I)V
     .locals 3
-    .param p1    # Lcom/android/server/display/WfdBridgeBase$WBPMsg;
-    .param p2    # I
 
     const-string v0, "WBP/1.1"
 
@@ -1327,7 +1317,6 @@
 
 .method public send_busyFlag(Lcom/android/server/display/WfdBridgeBase$WBPMsg;)V
     .locals 4
-    .param p1    # Lcom/android/server/display/WfdBridgeBase$WBPMsg;
 
     iget-object v1, p1, Lcom/android/server/display/WfdBridgeBase$WBPMsg;->mPeer:Lcom/android/server/display/WfdBridgeBase$BridgePeer;
 
@@ -1382,8 +1371,6 @@
 
 .method public triggerMsg(ILcom/android/server/display/WfdBridgeBase$BridgePeer;)I
     .locals 2
-    .param p1    # I
-    .param p2    # Lcom/android/server/display/WfdBridgeBase$BridgePeer;
 
     new-instance v0, Lcom/android/server/display/WfdBridgeBase$WBPMsg;
 

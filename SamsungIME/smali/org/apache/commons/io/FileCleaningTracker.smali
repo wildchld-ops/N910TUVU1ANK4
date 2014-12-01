@@ -49,9 +49,6 @@
 
 .method private declared-synchronized addTracker(Ljava/lang/String;Ljava/lang/Object;Lorg/apache/commons/io/FileDeleteStrategy;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Object;
-    .param p3    # Lorg/apache/commons/io/FileDeleteStrategy;
 
     monitor-enter p0
 
@@ -182,8 +179,6 @@
 
 .method public track(Ljava/io/File;Ljava/lang/Object;)V
     .locals 1
-    .param p1    # Ljava/io/File;
-    .param p2    # Ljava/lang/Object;
 
     const/4 v0, 0x0
 
@@ -196,9 +191,6 @@
 
 .method public track(Ljava/io/File;Ljava/lang/Object;Lorg/apache/commons/io/FileDeleteStrategy;)V
     .locals 2
-    .param p1    # Ljava/io/File;
-    .param p2    # Ljava/lang/Object;
-    .param p3    # Lorg/apache/commons/io/FileDeleteStrategy;
 
     if-nez p1, :cond_0
 
@@ -222,8 +214,6 @@
 
 .method public track(Ljava/lang/String;Ljava/lang/Object;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Object;
 
     const/4 v0, 0x0
 
@@ -236,9 +226,6 @@
 
 .method public track(Ljava/lang/String;Ljava/lang/Object;Lorg/apache/commons/io/FileDeleteStrategy;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Object;
-    .param p3    # Lorg/apache/commons/io/FileDeleteStrategy;
 
     if-nez p1, :cond_0
 

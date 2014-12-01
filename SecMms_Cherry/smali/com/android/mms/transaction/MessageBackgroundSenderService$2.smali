@@ -33,7 +33,6 @@
 # virtual methods
 .method public registerCallback(Lcom/android/mms/transaction/ISnsRemoteServiceCallback;)V
     .locals 1
-    .param p1    # Lcom/android/mms/transaction/ISnsRemoteServiceCallback;
 
     if-eqz p1, :cond_0
 
@@ -49,7 +48,6 @@
 
 .method public unregisterCallback(Lcom/android/mms/transaction/ISnsRemoteServiceCallback;)V
     .locals 1
-    .param p1    # Lcom/android/mms/transaction/ISnsRemoteServiceCallback;
 
     if-eqz p1, :cond_0
 

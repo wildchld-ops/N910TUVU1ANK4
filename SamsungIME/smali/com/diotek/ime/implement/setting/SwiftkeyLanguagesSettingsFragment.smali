@@ -147,7 +147,6 @@
 
 .method static synthetic access$000(Lcom/diotek/ime/implement/setting/SwiftkeyLanguagesSettingsFragment;)Lcom/diotek/ime/implement/setting/SwiftkeyLanguagesSettings;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/setting/SwiftkeyLanguagesSettingsFragment;
 
     iget-object v0, p0, Lcom/diotek/ime/implement/setting/SwiftkeyLanguagesSettingsFragment;->settingActivity:Lcom/diotek/ime/implement/setting/SwiftkeyLanguagesSettings;
 
@@ -164,7 +163,6 @@
 
 .method static synthetic access$102(Landroid/widget/PopupWindow;)Landroid/widget/PopupWindow;
     .locals 0
-    .param p0    # Landroid/widget/PopupWindow;
 
     sput-object p0, Lcom/diotek/ime/implement/setting/SwiftkeyLanguagesSettingsFragment;->mPopupWindow:Landroid/widget/PopupWindow;
 
@@ -181,7 +179,6 @@
 
 .method static synthetic access$202(Ljava/util/ArrayList;)Ljava/util/ArrayList;
     .locals 0
-    .param p0    # Ljava/util/ArrayList;
 
     sput-object p0, Lcom/diotek/ime/implement/setting/SwiftkeyLanguagesSettingsFragment;->mDeletingLPList:Ljava/util/ArrayList;
 
@@ -190,8 +187,6 @@
 
 .method static synthetic access$300(Lcom/diotek/ime/implement/setting/SwiftkeyLanguagesSettingsFragment;Lcom/touchtype_fluency/util/LanguagePack;)V
     .locals 0
-    .param p0    # Lcom/diotek/ime/implement/setting/SwiftkeyLanguagesSettingsFragment;
-    .param p1    # Lcom/touchtype_fluency/util/LanguagePack;
 
     invoke-direct {p0, p1}, Lcom/diotek/ime/implement/setting/SwiftkeyLanguagesSettingsFragment;->deleteLanguage(Lcom/touchtype_fluency/util/LanguagePack;)V
 
@@ -200,7 +195,6 @@
 
 .method static synthetic access$400(Lcom/diotek/ime/implement/setting/SwiftkeyLanguagesSettingsFragment;)V
     .locals 0
-    .param p0    # Lcom/diotek/ime/implement/setting/SwiftkeyLanguagesSettingsFragment;
 
     invoke-direct {p0}, Lcom/diotek/ime/implement/setting/SwiftkeyLanguagesSettingsFragment;->notifyUpdateSelectedLanguageList()V
 
@@ -209,7 +203,6 @@
 
 .method static synthetic access$500(Lcom/diotek/ime/implement/setting/SwiftkeyLanguagesSettingsFragment;)Landroid/view/View$OnTouchListener;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/setting/SwiftkeyLanguagesSettingsFragment;
 
     iget-object v0, p0, Lcom/diotek/ime/implement/setting/SwiftkeyLanguagesSettingsFragment;->mTouchViewUndoListener:Landroid/view/View$OnTouchListener;
 
@@ -218,7 +211,6 @@
 
 .method static synthetic access$600(Lcom/diotek/ime/implement/setting/SwiftkeyLanguagesSettingsFragment;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/setting/SwiftkeyLanguagesSettingsFragment;
 
     iget-object v0, p0, Lcom/diotek/ime/implement/setting/SwiftkeyLanguagesSettingsFragment;->mViewUndo:Landroid/view/View;
 
@@ -227,8 +219,6 @@
 
 .method static synthetic access$602(Lcom/diotek/ime/implement/setting/SwiftkeyLanguagesSettingsFragment;Landroid/view/View;)Landroid/view/View;
     .locals 0
-    .param p0    # Lcom/diotek/ime/implement/setting/SwiftkeyLanguagesSettingsFragment;
-    .param p1    # Landroid/view/View;
 
     iput-object p1, p0, Lcom/diotek/ime/implement/setting/SwiftkeyLanguagesSettingsFragment;->mViewUndo:Landroid/view/View;
 
@@ -237,7 +227,6 @@
 
 .method static synthetic access$700(Lcom/diotek/ime/implement/setting/SwiftkeyLanguagesSettingsFragment;)Landroid/view/View$OnClickListener;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/setting/SwiftkeyLanguagesSettingsFragment;
 
     iget-object v0, p0, Lcom/diotek/ime/implement/setting/SwiftkeyLanguagesSettingsFragment;->mPhotosClickListener:Landroid/view/View$OnClickListener;
 
@@ -246,7 +235,6 @@
 
 .method private deleteLanguage(Lcom/touchtype_fluency/util/LanguagePack;)V
     .locals 4
-    .param p1    # Lcom/touchtype_fluency/util/LanguagePack;
 
     iget-object v1, p0, Lcom/diotek/ime/implement/setting/SwiftkeyLanguagesSettingsFragment;->settingActivity:Lcom/diotek/ime/implement/setting/SwiftkeyLanguagesSettings;
 
@@ -324,9 +312,6 @@
 # virtual methods
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 8
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     invoke-super {p0, p1, p2, p3}, Landroid/preference/PreferenceFragment;->onActivityResult(IILandroid/content/Intent;)V
 
@@ -484,7 +469,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 11
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -645,7 +629,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 14
-    .param p1    # Landroid/os/Bundle;
 
     const/16 v13, 0x400
 
@@ -934,9 +917,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 3
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const v1, 0x7f030080
 
@@ -1086,7 +1066,6 @@
 
 .method public rebuildLanguageList(Z)V
     .locals 26
-    .param p1    # Z
 
     move-object/from16 v0, p0
 

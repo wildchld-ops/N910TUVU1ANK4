@@ -40,8 +40,6 @@
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 4
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     iget-object v2, p0, Lcom/android/settings/motion2013/SMotionSettings$7;->val$checkbox:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 

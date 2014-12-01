@@ -32,7 +32,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/power/PowerManagerService;Ljava/lang/String;)V
     .locals 2
-    .param p2    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/server/power/PowerManagerService$SuspendBlockerImpl;->this$0:Lcom/android/server/power/PowerManagerService;
 
@@ -96,7 +95,6 @@
 
 .method static synthetic access$8100(Lcom/android/server/power/PowerManagerService$SuspendBlockerImpl;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/server/power/PowerManagerService$SuspendBlockerImpl;
 
     iget-object v0, p0, Lcom/android/server/power/PowerManagerService$SuspendBlockerImpl;->mName:Ljava/lang/String;
 

@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -45,7 +44,6 @@
 
 .method public changeDefaultRoute(I)Z
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -108,7 +106,6 @@
 
 .method public closeSecNdefService(I)I
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -164,11 +161,6 @@
 
 .method public createSecNdefService(Ljava/lang/String;ILjava/lang/String;[B[B)I
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # [B
-    .param p5    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -285,7 +277,6 @@
 
 .method public disable(Z)Z
     .locals 7
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -363,7 +354,6 @@
 
 .method public disableFilterCondition(B)Z
     .locals 6
-    .param p1    # B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -486,7 +476,6 @@
 
 .method public dispatch(Landroid/nfc/Tag;)V
     .locals 5
-    .param p1    # Landroid/nfc/Tag;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -617,8 +606,6 @@
 
 .method public enableDisableSeTestMode(Ljava/lang/String;Z)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -679,7 +666,6 @@
 
 .method public enableFilterCondition(B)Z
     .locals 6
-    .param p1    # B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -802,7 +788,6 @@
 
 .method public enableSecNdef(Z)Z
     .locals 7
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -994,7 +979,6 @@
 
 .method public getNfcAdapterExtrasInterface(Ljava/lang/String;)Landroid/nfc/INfcAdapterExtras;
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1674,8 +1658,6 @@
 
 .method public isTrustedPkg(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1909,7 +1891,6 @@
 
 .method public selectSecureElement(I)I
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1965,7 +1946,6 @@
 
 .method public sendSecDefaultNdefMsg(Landroid/nfc/NdefMessage;)I
     .locals 6
-    .param p1    # Landroid/nfc/NdefMessage;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2040,8 +2020,6 @@
 
 .method public sendSecNdefMsg(ILandroid/nfc/NdefMessage;)I
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/nfc/NdefMessage;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2118,7 +2096,6 @@
 
 .method public setAppCallback(Landroid/nfc/IAppCallback;)V
     .locals 5
-    .param p1    # Landroid/nfc/IAppCallback;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2182,7 +2159,6 @@
 
 .method public setDefaultRoutingDestination(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2234,7 +2210,6 @@
 
 .method public setFilterList([B)Z
     .locals 6
-    .param p1    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2297,9 +2272,6 @@
 
 .method public setForegroundDispatch(Landroid/app/PendingIntent;[Landroid/content/IntentFilter;Landroid/nfc/TechListParcel;)V
     .locals 5
-    .param p1    # Landroid/app/PendingIntent;
-    .param p2    # [Landroid/content/IntentFilter;
-    .param p3    # Landroid/nfc/TechListParcel;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2395,7 +2367,6 @@
 
 .method public setListenMode(I)I
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2451,8 +2422,6 @@
 
 .method public setP2pModes(II)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2506,10 +2475,6 @@
 
 .method public setReaderMode(Landroid/os/IBinder;Landroid/nfc/IAppCallback;ILandroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Landroid/nfc/IAppCallback;
-    .param p3    # I
-    .param p4    # Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2598,7 +2563,6 @@
 
 .method public setRwP2pMode(Z)Z
     .locals 7
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2676,7 +2640,6 @@
 
 .method public setSimLocked(Z)V
     .locals 5
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2735,7 +2698,6 @@
 
 .method public storeSePreference(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

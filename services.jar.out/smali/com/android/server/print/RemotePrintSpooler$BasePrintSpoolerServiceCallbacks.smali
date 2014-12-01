@@ -25,7 +25,6 @@
 
 .method synthetic constructor <init>(Lcom/android/server/print/RemotePrintSpooler$1;)V
     .locals 0
-    .param p1    # Lcom/android/server/print/RemotePrintSpooler$1;
 
     invoke-direct {p0}, Lcom/android/server/print/RemotePrintSpooler$BasePrintSpoolerServiceCallbacks;-><init>()V
 
@@ -36,23 +35,18 @@
 # virtual methods
 .method public onCancelPrintJobResult(ZI)V
     .locals 0
-    .param p1    # Z
-    .param p2    # I
 
     return-void
 .end method
 
 .method public onGetPrintJobInfoResult(Landroid/print/PrintJobInfo;I)V
     .locals 0
-    .param p1    # Landroid/print/PrintJobInfo;
-    .param p2    # I
 
     return-void
 .end method
 
 .method public onGetPrintJobInfosResult(Ljava/util/List;I)V
     .locals 0
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -68,16 +62,12 @@
 
 .method public onSetPrintJobStateResult(ZI)V
     .locals 0
-    .param p1    # Z
-    .param p2    # I
 
     return-void
 .end method
 
 .method public onSetPrintJobTagResult(ZI)V
     .locals 0
-    .param p1    # Z
-    .param p2    # I
 
     return-void
 .end method

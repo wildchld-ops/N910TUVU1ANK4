@@ -80,8 +80,6 @@
 
 .method synthetic constructor <init>(Landroid/widget/Editor;Landroid/widget/Editor$1;)V
     .locals 0
-    .param p1    # Landroid/widget/Editor;
-    .param p2    # Landroid/widget/Editor$1;
 
     invoke-direct {p0, p1}, Landroid/widget/Editor$PositionListener;-><init>(Landroid/widget/Editor;)V
 
@@ -240,8 +238,6 @@
 # virtual methods
 .method public addSubscriber(Landroid/widget/Editor$TextViewPositionListener;Z)V
     .locals 5
-    .param p1    # Landroid/widget/Editor$TextViewPositionListener;
-    .param p2    # Z
 
     iget v4, p0, Landroid/widget/Editor$PositionListener;->mNumberOfListeners:I
 
@@ -428,7 +424,6 @@
 
 .method public removeSubscriber(Landroid/widget/Editor$TextViewPositionListener;)V
     .locals 4
-    .param p1    # Landroid/widget/Editor$TextViewPositionListener;
 
     const/4 v0, 0x0
 

@@ -38,7 +38,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/settings/DelaySendingSettings;)Landroid/widget/Switch;
     .locals 1
-    .param p0    # Lcom/android/mms/settings/DelaySendingSettings;
 
     iget-object v0, p0, Lcom/android/mms/settings/DelaySendingSettings;->mSwitch:Landroid/widget/Switch;
 
@@ -47,7 +46,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/settings/DelaySendingSettings;)V
     .locals 0
-    .param p0    # Lcom/android/mms/settings/DelaySendingSettings;
 
     invoke-direct {p0}, Lcom/android/mms/settings/DelaySendingSettings;->setElementEnable()V
 
@@ -72,7 +70,6 @@
 
 .method private setMessageDealySummary(Landroid/content/SharedPreferences;)V
     .locals 8
-    .param p1    # Landroid/content/SharedPreferences;
 
     const/4 v7, 0x3
 
@@ -184,7 +181,6 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onCreate(Landroid/os/Bundle;)V
 
@@ -224,7 +220,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 3
-    .param p1    # Landroid/view/Menu;
 
     invoke-virtual {p0}, Landroid/app/Activity;->getMenuInflater()Landroid/view/MenuInflater;
 
@@ -273,7 +268,6 @@
 
 .method public onMenuItemClick(Landroid/view/MenuItem;)Z
     .locals 2
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v0, 0x0
 
@@ -349,7 +343,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -411,7 +404,6 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)Z
     .locals 4
-    .param p1    # Landroid/view/Menu;
 
     const/4 v3, 0x1
 
@@ -556,8 +548,6 @@
 
 .method public onSharedPreferenceChanged(Landroid/content/SharedPreferences;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Landroid/content/SharedPreferences;
-    .param p2    # Ljava/lang/String;
 
     const-string v0, "pref_key_msg_delay_sending"
 

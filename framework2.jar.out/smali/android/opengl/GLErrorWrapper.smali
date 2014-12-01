@@ -14,8 +14,6 @@
 # direct methods
 .method public constructor <init>(Ljavax/microedition/khronos/opengles/GL;I)V
     .locals 3
-    .param p1    # Ljavax/microedition/khronos/opengles/GL;
-    .param p2    # I
 
     const/4 v1, 0x1
 
@@ -121,7 +119,6 @@
 # virtual methods
 .method public glActiveTexture(I)V
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -136,8 +133,6 @@
 
 .method public glAlphaFunc(IF)V
     .locals 1
-    .param p1    # I
-    .param p2    # F
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -152,8 +147,6 @@
 
 .method public glAlphaFuncx(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -168,8 +161,6 @@
 
 .method public glBindBuffer(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -184,8 +175,6 @@
 
 .method public glBindFramebufferOES(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -200,8 +189,6 @@
 
 .method public glBindRenderbufferOES(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -216,8 +203,6 @@
 
 .method public glBindTexture(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -232,7 +217,6 @@
 
 .method public glBlendEquation(I)V
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -247,8 +231,6 @@
 
 .method public glBlendEquationSeparate(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -263,8 +245,6 @@
 
 .method public glBlendFunc(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -279,10 +259,6 @@
 
 .method public glBlendFuncSeparate(IIII)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -297,10 +273,6 @@
 
 .method public glBufferData(IILjava/nio/Buffer;I)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/nio/Buffer;
-    .param p4    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -315,10 +287,6 @@
 
 .method public glBufferSubData(IIILjava/nio/Buffer;)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/nio/Buffer;
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -333,7 +301,6 @@
 
 .method public glCheckFramebufferStatusOES(I)I
     .locals 2
-    .param p1    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -350,7 +317,6 @@
 
 .method public glClear(I)V
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -365,10 +331,6 @@
 
 .method public glClearColor(FFFF)V
     .locals 1
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -383,10 +345,6 @@
 
 .method public glClearColorx(IIII)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -401,7 +359,6 @@
 
 .method public glClearDepthf(F)V
     .locals 1
-    .param p1    # F
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -416,7 +373,6 @@
 
 .method public glClearDepthx(I)V
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -431,7 +387,6 @@
 
 .method public glClearStencil(I)V
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -446,7 +401,6 @@
 
 .method public glClientActiveTexture(I)V
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -461,8 +415,6 @@
 
 .method public glClipPlanef(ILjava/nio/FloatBuffer;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/nio/FloatBuffer;
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -477,9 +429,6 @@
 
 .method public glClipPlanef(I[FI)V
     .locals 1
-    .param p1    # I
-    .param p2    # [F
-    .param p3    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -494,8 +443,6 @@
 
 .method public glClipPlanex(ILjava/nio/IntBuffer;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/nio/IntBuffer;
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -510,9 +457,6 @@
 
 .method public glClipPlanex(I[II)V
     .locals 1
-    .param p1    # I
-    .param p2    # [I
-    .param p3    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -527,10 +471,6 @@
 
 .method public glColor4f(FFFF)V
     .locals 1
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -545,10 +485,6 @@
 
 .method public glColor4ub(BBBB)V
     .locals 1
-    .param p1    # B
-    .param p2    # B
-    .param p3    # B
-    .param p4    # B
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -563,10 +499,6 @@
 
 .method public glColor4x(IIII)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -581,10 +513,6 @@
 
 .method public glColorMask(ZZZZ)V
     .locals 1
-    .param p1    # Z
-    .param p2    # Z
-    .param p3    # Z
-    .param p4    # Z
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -599,10 +527,6 @@
 
 .method public glColorPointer(IIII)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -617,10 +541,6 @@
 
 .method public glColorPointer(IIILjava/nio/Buffer;)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/nio/Buffer;
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -635,14 +555,6 @@
 
 .method public glCompressedTexImage2D(IIIIIIILjava/nio/Buffer;)V
     .locals 9
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # Ljava/nio/Buffer;
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -673,15 +585,6 @@
 
 .method public glCompressedTexSubImage2D(IIIIIIIILjava/nio/Buffer;)V
     .locals 10
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
-    .param p9    # Ljava/nio/Buffer;
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -714,14 +617,6 @@
 
 .method public glCopyTexImage2D(IIIIIIII)V
     .locals 9
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -752,14 +647,6 @@
 
 .method public glCopyTexSubImage2D(IIIIIIII)V
     .locals 9
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -790,7 +677,6 @@
 
 .method public glCullFace(I)V
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -805,7 +691,6 @@
 
 .method public glCurrentPaletteMatrixOES(I)V
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -820,8 +705,6 @@
 
 .method public glDeleteBuffers(ILjava/nio/IntBuffer;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/nio/IntBuffer;
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -836,9 +719,6 @@
 
 .method public glDeleteBuffers(I[II)V
     .locals 1
-    .param p1    # I
-    .param p2    # [I
-    .param p3    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -853,8 +733,6 @@
 
 .method public glDeleteFramebuffersOES(ILjava/nio/IntBuffer;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/nio/IntBuffer;
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -869,9 +747,6 @@
 
 .method public glDeleteFramebuffersOES(I[II)V
     .locals 1
-    .param p1    # I
-    .param p2    # [I
-    .param p3    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -886,8 +761,6 @@
 
 .method public glDeleteRenderbuffersOES(ILjava/nio/IntBuffer;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/nio/IntBuffer;
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -902,9 +775,6 @@
 
 .method public glDeleteRenderbuffersOES(I[II)V
     .locals 1
-    .param p1    # I
-    .param p2    # [I
-    .param p3    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -919,8 +789,6 @@
 
 .method public glDeleteTextures(ILjava/nio/IntBuffer;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/nio/IntBuffer;
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -935,9 +803,6 @@
 
 .method public glDeleteTextures(I[II)V
     .locals 1
-    .param p1    # I
-    .param p2    # [I
-    .param p3    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -952,7 +817,6 @@
 
 .method public glDepthFunc(I)V
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -967,7 +831,6 @@
 
 .method public glDepthMask(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -982,8 +845,6 @@
 
 .method public glDepthRangef(FF)V
     .locals 1
-    .param p1    # F
-    .param p2    # F
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -998,8 +859,6 @@
 
 .method public glDepthRangex(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -1014,7 +873,6 @@
 
 .method public glDisable(I)V
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -1029,7 +887,6 @@
 
 .method public glDisableClientState(I)V
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -1044,9 +901,6 @@
 
 .method public glDrawArrays(III)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -1061,10 +915,6 @@
 
 .method public glDrawElements(IIII)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -1079,10 +929,6 @@
 
 .method public glDrawElements(IIILjava/nio/Buffer;)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/nio/Buffer;
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -1097,11 +943,6 @@
 
 .method public glDrawTexfOES(FFFFF)V
     .locals 6
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -1126,7 +967,6 @@
 
 .method public glDrawTexfvOES(Ljava/nio/FloatBuffer;)V
     .locals 1
-    .param p1    # Ljava/nio/FloatBuffer;
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -1141,8 +981,6 @@
 
 .method public glDrawTexfvOES([FI)V
     .locals 1
-    .param p1    # [F
-    .param p2    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -1157,11 +995,6 @@
 
 .method public glDrawTexiOES(IIIII)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -1186,7 +1019,6 @@
 
 .method public glDrawTexivOES(Ljava/nio/IntBuffer;)V
     .locals 1
-    .param p1    # Ljava/nio/IntBuffer;
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -1201,8 +1033,6 @@
 
 .method public glDrawTexivOES([II)V
     .locals 1
-    .param p1    # [I
-    .param p2    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -1217,11 +1047,6 @@
 
 .method public glDrawTexsOES(SSSSS)V
     .locals 6
-    .param p1    # S
-    .param p2    # S
-    .param p3    # S
-    .param p4    # S
-    .param p5    # S
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -1246,7 +1071,6 @@
 
 .method public glDrawTexsvOES(Ljava/nio/ShortBuffer;)V
     .locals 1
-    .param p1    # Ljava/nio/ShortBuffer;
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -1261,8 +1085,6 @@
 
 .method public glDrawTexsvOES([SI)V
     .locals 1
-    .param p1    # [S
-    .param p2    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -1277,11 +1099,6 @@
 
 .method public glDrawTexxOES(IIIII)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -1306,7 +1123,6 @@
 
 .method public glDrawTexxvOES(Ljava/nio/IntBuffer;)V
     .locals 1
-    .param p1    # Ljava/nio/IntBuffer;
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -1321,8 +1137,6 @@
 
 .method public glDrawTexxvOES([II)V
     .locals 1
-    .param p1    # [I
-    .param p2    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -1337,7 +1151,6 @@
 
 .method public glEnable(I)V
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -1352,7 +1165,6 @@
 
 .method public glEnableClientState(I)V
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -1395,8 +1207,6 @@
 
 .method public glFogf(IF)V
     .locals 1
-    .param p1    # I
-    .param p2    # F
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -1411,8 +1221,6 @@
 
 .method public glFogfv(ILjava/nio/FloatBuffer;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/nio/FloatBuffer;
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -1427,9 +1235,6 @@
 
 .method public glFogfv(I[FI)V
     .locals 1
-    .param p1    # I
-    .param p2    # [F
-    .param p3    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -1444,8 +1249,6 @@
 
 .method public glFogx(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -1460,8 +1263,6 @@
 
 .method public glFogxv(ILjava/nio/IntBuffer;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/nio/IntBuffer;
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -1476,9 +1277,6 @@
 
 .method public glFogxv(I[II)V
     .locals 1
-    .param p1    # I
-    .param p2    # [I
-    .param p3    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -1493,10 +1291,6 @@
 
 .method public glFramebufferRenderbufferOES(IIII)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -1511,11 +1305,6 @@
 
 .method public glFramebufferTexture2DOES(IIIII)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -1540,7 +1329,6 @@
 
 .method public glFrontFace(I)V
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -1555,12 +1343,6 @@
 
 .method public glFrustumf(FFFFFF)V
     .locals 7
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # F
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -1587,12 +1369,6 @@
 
 .method public glFrustumx(IIIIII)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -1619,8 +1395,6 @@
 
 .method public glGenBuffers(ILjava/nio/IntBuffer;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/nio/IntBuffer;
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -1635,9 +1409,6 @@
 
 .method public glGenBuffers(I[II)V
     .locals 1
-    .param p1    # I
-    .param p2    # [I
-    .param p3    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -1652,8 +1423,6 @@
 
 .method public glGenFramebuffersOES(ILjava/nio/IntBuffer;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/nio/IntBuffer;
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -1668,9 +1437,6 @@
 
 .method public glGenFramebuffersOES(I[II)V
     .locals 1
-    .param p1    # I
-    .param p2    # [I
-    .param p3    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -1685,8 +1451,6 @@
 
 .method public glGenRenderbuffersOES(ILjava/nio/IntBuffer;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/nio/IntBuffer;
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -1701,9 +1465,6 @@
 
 .method public glGenRenderbuffersOES(I[II)V
     .locals 1
-    .param p1    # I
-    .param p2    # [I
-    .param p3    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -1718,8 +1479,6 @@
 
 .method public glGenTextures(ILjava/nio/IntBuffer;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/nio/IntBuffer;
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -1734,9 +1493,6 @@
 
 .method public glGenTextures(I[II)V
     .locals 1
-    .param p1    # I
-    .param p2    # [I
-    .param p3    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -1751,7 +1507,6 @@
 
 .method public glGenerateMipmapOES(I)V
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -1766,8 +1521,6 @@
 
 .method public glGetBooleanv(ILjava/nio/IntBuffer;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/nio/IntBuffer;
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -1782,9 +1535,6 @@
 
 .method public glGetBooleanv(I[ZI)V
     .locals 1
-    .param p1    # I
-    .param p2    # [Z
-    .param p3    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -1799,9 +1549,6 @@
 
 .method public glGetBufferParameteriv(IILjava/nio/IntBuffer;)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/nio/IntBuffer;
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -1816,10 +1563,6 @@
 
 .method public glGetBufferParameteriv(II[II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [I
-    .param p4    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -1834,8 +1577,6 @@
 
 .method public glGetClipPlanef(ILjava/nio/FloatBuffer;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/nio/FloatBuffer;
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -1850,9 +1591,6 @@
 
 .method public glGetClipPlanef(I[FI)V
     .locals 1
-    .param p1    # I
-    .param p2    # [F
-    .param p3    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -1867,8 +1605,6 @@
 
 .method public glGetClipPlanex(ILjava/nio/IntBuffer;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/nio/IntBuffer;
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -1883,9 +1619,6 @@
 
 .method public glGetClipPlanex(I[II)V
     .locals 1
-    .param p1    # I
-    .param p2    # [I
-    .param p3    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -1914,8 +1647,6 @@
 
 .method public glGetFixedv(ILjava/nio/IntBuffer;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/nio/IntBuffer;
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -1930,9 +1661,6 @@
 
 .method public glGetFixedv(I[II)V
     .locals 1
-    .param p1    # I
-    .param p2    # [I
-    .param p3    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -1947,8 +1675,6 @@
 
 .method public glGetFloatv(ILjava/nio/FloatBuffer;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/nio/FloatBuffer;
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -1963,9 +1689,6 @@
 
 .method public glGetFloatv(I[FI)V
     .locals 1
-    .param p1    # I
-    .param p2    # [F
-    .param p3    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -1980,10 +1703,6 @@
 
 .method public glGetFramebufferAttachmentParameterivOES(IIILjava/nio/IntBuffer;)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/nio/IntBuffer;
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -1998,11 +1717,6 @@
 
 .method public glGetFramebufferAttachmentParameterivOES(III[II)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # [I
-    .param p5    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -2027,8 +1741,6 @@
 
 .method public glGetIntegerv(ILjava/nio/IntBuffer;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/nio/IntBuffer;
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -2043,9 +1755,6 @@
 
 .method public glGetIntegerv(I[II)V
     .locals 1
-    .param p1    # I
-    .param p2    # [I
-    .param p3    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -2060,9 +1769,6 @@
 
 .method public glGetLightfv(IILjava/nio/FloatBuffer;)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/nio/FloatBuffer;
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -2077,10 +1783,6 @@
 
 .method public glGetLightfv(II[FI)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [F
-    .param p4    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -2095,9 +1797,6 @@
 
 .method public glGetLightxv(IILjava/nio/IntBuffer;)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/nio/IntBuffer;
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -2112,10 +1811,6 @@
 
 .method public glGetLightxv(II[II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [I
-    .param p4    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -2130,9 +1825,6 @@
 
 .method public glGetMaterialfv(IILjava/nio/FloatBuffer;)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/nio/FloatBuffer;
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -2147,10 +1839,6 @@
 
 .method public glGetMaterialfv(II[FI)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [F
-    .param p4    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -2165,9 +1853,6 @@
 
 .method public glGetMaterialxv(IILjava/nio/IntBuffer;)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/nio/IntBuffer;
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -2182,10 +1867,6 @@
 
 .method public glGetMaterialxv(II[II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [I
-    .param p4    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -2200,8 +1881,6 @@
 
 .method public glGetPointerv(I[Ljava/nio/Buffer;)V
     .locals 1
-    .param p1    # I
-    .param p2    # [Ljava/nio/Buffer;
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -2216,9 +1895,6 @@
 
 .method public glGetRenderbufferParameterivOES(IILjava/nio/IntBuffer;)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/nio/IntBuffer;
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -2233,10 +1909,6 @@
 
 .method public glGetRenderbufferParameterivOES(II[II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [I
-    .param p4    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -2251,7 +1923,6 @@
 
 .method public glGetString(I)Ljava/lang/String;
     .locals 2
-    .param p1    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -2268,9 +1939,6 @@
 
 .method public glGetTexEnviv(IILjava/nio/IntBuffer;)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/nio/IntBuffer;
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -2285,10 +1953,6 @@
 
 .method public glGetTexEnviv(II[II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [I
-    .param p4    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -2303,9 +1967,6 @@
 
 .method public glGetTexEnvxv(IILjava/nio/IntBuffer;)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/nio/IntBuffer;
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -2320,10 +1981,6 @@
 
 .method public glGetTexEnvxv(II[II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [I
-    .param p4    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -2338,9 +1995,6 @@
 
 .method public glGetTexGenfv(IILjava/nio/FloatBuffer;)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/nio/FloatBuffer;
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -2355,10 +2009,6 @@
 
 .method public glGetTexGenfv(II[FI)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [F
-    .param p4    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -2373,9 +2023,6 @@
 
 .method public glGetTexGeniv(IILjava/nio/IntBuffer;)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/nio/IntBuffer;
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -2390,10 +2037,6 @@
 
 .method public glGetTexGeniv(II[II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [I
-    .param p4    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -2408,9 +2051,6 @@
 
 .method public glGetTexGenxv(IILjava/nio/IntBuffer;)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/nio/IntBuffer;
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -2425,10 +2065,6 @@
 
 .method public glGetTexGenxv(II[II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [I
-    .param p4    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -2443,9 +2079,6 @@
 
 .method public glGetTexParameterfv(IILjava/nio/FloatBuffer;)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/nio/FloatBuffer;
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -2460,10 +2093,6 @@
 
 .method public glGetTexParameterfv(II[FI)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [F
-    .param p4    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -2478,9 +2107,6 @@
 
 .method public glGetTexParameteriv(IILjava/nio/IntBuffer;)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/nio/IntBuffer;
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -2495,10 +2121,6 @@
 
 .method public glGetTexParameteriv(II[II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [I
-    .param p4    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -2513,9 +2135,6 @@
 
 .method public glGetTexParameterxv(IILjava/nio/IntBuffer;)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/nio/IntBuffer;
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -2530,10 +2149,6 @@
 
 .method public glGetTexParameterxv(II[II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [I
-    .param p4    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -2548,8 +2163,6 @@
 
 .method public glHint(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -2564,7 +2177,6 @@
 
 .method public glIsBuffer(I)Z
     .locals 2
-    .param p1    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -2581,7 +2193,6 @@
 
 .method public glIsEnabled(I)Z
     .locals 2
-    .param p1    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -2598,7 +2209,6 @@
 
 .method public glIsFramebufferOES(I)Z
     .locals 2
-    .param p1    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -2615,7 +2225,6 @@
 
 .method public glIsRenderbufferOES(I)Z
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -2632,7 +2241,6 @@
 
 .method public glIsTexture(I)Z
     .locals 2
-    .param p1    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -2649,8 +2257,6 @@
 
 .method public glLightModelf(IF)V
     .locals 1
-    .param p1    # I
-    .param p2    # F
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -2665,8 +2271,6 @@
 
 .method public glLightModelfv(ILjava/nio/FloatBuffer;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/nio/FloatBuffer;
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -2681,9 +2285,6 @@
 
 .method public glLightModelfv(I[FI)V
     .locals 1
-    .param p1    # I
-    .param p2    # [F
-    .param p3    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -2698,8 +2299,6 @@
 
 .method public glLightModelx(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -2714,8 +2313,6 @@
 
 .method public glLightModelxv(ILjava/nio/IntBuffer;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/nio/IntBuffer;
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -2730,9 +2327,6 @@
 
 .method public glLightModelxv(I[II)V
     .locals 1
-    .param p1    # I
-    .param p2    # [I
-    .param p3    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -2747,9 +2341,6 @@
 
 .method public glLightf(IIF)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # F
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -2764,9 +2355,6 @@
 
 .method public glLightfv(IILjava/nio/FloatBuffer;)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/nio/FloatBuffer;
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -2781,10 +2369,6 @@
 
 .method public glLightfv(II[FI)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [F
-    .param p4    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -2799,9 +2383,6 @@
 
 .method public glLightx(III)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -2816,9 +2397,6 @@
 
 .method public glLightxv(IILjava/nio/IntBuffer;)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/nio/IntBuffer;
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -2833,10 +2411,6 @@
 
 .method public glLightxv(II[II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [I
-    .param p4    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -2851,7 +2425,6 @@
 
 .method public glLineWidth(F)V
     .locals 1
-    .param p1    # F
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -2866,7 +2439,6 @@
 
 .method public glLineWidthx(I)V
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -2895,7 +2467,6 @@
 
 .method public glLoadMatrixf(Ljava/nio/FloatBuffer;)V
     .locals 1
-    .param p1    # Ljava/nio/FloatBuffer;
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -2910,8 +2481,6 @@
 
 .method public glLoadMatrixf([FI)V
     .locals 1
-    .param p1    # [F
-    .param p2    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -2926,7 +2495,6 @@
 
 .method public glLoadMatrixx(Ljava/nio/IntBuffer;)V
     .locals 1
-    .param p1    # Ljava/nio/IntBuffer;
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -2941,8 +2509,6 @@
 
 .method public glLoadMatrixx([II)V
     .locals 1
-    .param p1    # [I
-    .param p2    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -2971,7 +2537,6 @@
 
 .method public glLogicOp(I)V
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -2986,9 +2551,6 @@
 
 .method public glMaterialf(IIF)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # F
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -3003,9 +2565,6 @@
 
 .method public glMaterialfv(IILjava/nio/FloatBuffer;)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/nio/FloatBuffer;
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -3020,10 +2579,6 @@
 
 .method public glMaterialfv(II[FI)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [F
-    .param p4    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -3038,9 +2593,6 @@
 
 .method public glMaterialx(III)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -3055,9 +2607,6 @@
 
 .method public glMaterialxv(IILjava/nio/IntBuffer;)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/nio/IntBuffer;
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -3072,10 +2621,6 @@
 
 .method public glMaterialxv(II[II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [I
-    .param p4    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -3090,10 +2635,6 @@
 
 .method public glMatrixIndexPointerOES(IIII)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -3108,10 +2649,6 @@
 
 .method public glMatrixIndexPointerOES(IIILjava/nio/Buffer;)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/nio/Buffer;
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -3126,7 +2663,6 @@
 
 .method public glMatrixMode(I)V
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -3141,7 +2677,6 @@
 
 .method public glMultMatrixf(Ljava/nio/FloatBuffer;)V
     .locals 1
-    .param p1    # Ljava/nio/FloatBuffer;
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -3156,8 +2691,6 @@
 
 .method public glMultMatrixf([FI)V
     .locals 1
-    .param p1    # [F
-    .param p2    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -3172,7 +2705,6 @@
 
 .method public glMultMatrixx(Ljava/nio/IntBuffer;)V
     .locals 1
-    .param p1    # Ljava/nio/IntBuffer;
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -3187,8 +2719,6 @@
 
 .method public glMultMatrixx([II)V
     .locals 1
-    .param p1    # [I
-    .param p2    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -3203,11 +2733,6 @@
 
 .method public glMultiTexCoord4f(IFFFF)V
     .locals 6
-    .param p1    # I
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -3232,11 +2757,6 @@
 
 .method public glMultiTexCoord4x(IIIII)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -3261,9 +2781,6 @@
 
 .method public glNormal3f(FFF)V
     .locals 1
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -3278,9 +2795,6 @@
 
 .method public glNormal3x(III)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -3295,9 +2809,6 @@
 
 .method public glNormalPointer(III)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -3312,9 +2823,6 @@
 
 .method public glNormalPointer(IILjava/nio/Buffer;)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/nio/Buffer;
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -3329,12 +2837,6 @@
 
 .method public glOrthof(FFFFFF)V
     .locals 7
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # F
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -3361,12 +2863,6 @@
 
 .method public glOrthox(IIIIII)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -3393,8 +2889,6 @@
 
 .method public glPixelStorei(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -3409,8 +2903,6 @@
 
 .method public glPointParameterf(IF)V
     .locals 1
-    .param p1    # I
-    .param p2    # F
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -3425,8 +2917,6 @@
 
 .method public glPointParameterfv(ILjava/nio/FloatBuffer;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/nio/FloatBuffer;
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -3441,9 +2931,6 @@
 
 .method public glPointParameterfv(I[FI)V
     .locals 1
-    .param p1    # I
-    .param p2    # [F
-    .param p3    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -3458,8 +2945,6 @@
 
 .method public glPointParameterx(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -3474,8 +2959,6 @@
 
 .method public glPointParameterxv(ILjava/nio/IntBuffer;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/nio/IntBuffer;
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -3490,9 +2973,6 @@
 
 .method public glPointParameterxv(I[II)V
     .locals 1
-    .param p1    # I
-    .param p2    # [I
-    .param p3    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -3507,7 +2987,6 @@
 
 .method public glPointSize(F)V
     .locals 1
-    .param p1    # F
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -3522,9 +3001,6 @@
 
 .method public glPointSizePointerOES(IILjava/nio/Buffer;)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/nio/Buffer;
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -3539,7 +3015,6 @@
 
 .method public glPointSizex(I)V
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -3554,8 +3029,6 @@
 
 .method public glPolygonOffset(FF)V
     .locals 1
-    .param p1    # F
-    .param p2    # F
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -3570,8 +3043,6 @@
 
 .method public glPolygonOffsetx(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -3614,8 +3085,6 @@
 
 .method public glQueryMatrixxOES(Ljava/nio/IntBuffer;Ljava/nio/IntBuffer;)I
     .locals 2
-    .param p1    # Ljava/nio/IntBuffer;
-    .param p2    # Ljava/nio/IntBuffer;
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -3632,10 +3101,6 @@
 
 .method public glQueryMatrixxOES([II[II)I
     .locals 2
-    .param p1    # [I
-    .param p2    # I
-    .param p3    # [I
-    .param p4    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -3652,13 +3117,6 @@
 
 .method public glReadPixels(IIIIIILjava/nio/Buffer;)V
     .locals 8
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # Ljava/nio/Buffer;
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -3687,10 +3145,6 @@
 
 .method public glRenderbufferStorageOES(IIII)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -3705,10 +3159,6 @@
 
 .method public glRotatef(FFFF)V
     .locals 1
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -3723,10 +3173,6 @@
 
 .method public glRotatex(IIII)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -3741,8 +3187,6 @@
 
 .method public glSampleCoverage(FZ)V
     .locals 1
-    .param p1    # F
-    .param p2    # Z
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -3757,8 +3201,6 @@
 
 .method public glSampleCoveragex(IZ)V
     .locals 1
-    .param p1    # I
-    .param p2    # Z
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -3773,9 +3215,6 @@
 
 .method public glScalef(FFF)V
     .locals 1
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -3790,9 +3229,6 @@
 
 .method public glScalex(III)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -3807,10 +3243,6 @@
 
 .method public glScissor(IIII)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -3825,7 +3257,6 @@
 
 .method public glShadeModel(I)V
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -3840,9 +3271,6 @@
 
 .method public glStencilFunc(III)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -3857,7 +3285,6 @@
 
 .method public glStencilMask(I)V
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -3872,9 +3299,6 @@
 
 .method public glStencilOp(III)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -3889,10 +3313,6 @@
 
 .method public glTexCoordPointer(IIII)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -3907,10 +3327,6 @@
 
 .method public glTexCoordPointer(IIILjava/nio/Buffer;)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/nio/Buffer;
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -3925,9 +3341,6 @@
 
 .method public glTexEnvf(IIF)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # F
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -3942,9 +3355,6 @@
 
 .method public glTexEnvfv(IILjava/nio/FloatBuffer;)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/nio/FloatBuffer;
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -3959,10 +3369,6 @@
 
 .method public glTexEnvfv(II[FI)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [F
-    .param p4    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -3977,9 +3383,6 @@
 
 .method public glTexEnvi(III)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -3994,9 +3397,6 @@
 
 .method public glTexEnviv(IILjava/nio/IntBuffer;)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/nio/IntBuffer;
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -4011,10 +3411,6 @@
 
 .method public glTexEnviv(II[II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [I
-    .param p4    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -4029,9 +3425,6 @@
 
 .method public glTexEnvx(III)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -4046,9 +3439,6 @@
 
 .method public glTexEnvxv(IILjava/nio/IntBuffer;)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/nio/IntBuffer;
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -4063,10 +3453,6 @@
 
 .method public glTexEnvxv(II[II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [I
-    .param p4    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -4081,9 +3467,6 @@
 
 .method public glTexGenf(IIF)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # F
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -4098,9 +3481,6 @@
 
 .method public glTexGenfv(IILjava/nio/FloatBuffer;)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/nio/FloatBuffer;
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -4115,10 +3495,6 @@
 
 .method public glTexGenfv(II[FI)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [F
-    .param p4    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -4133,9 +3509,6 @@
 
 .method public glTexGeni(III)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -4150,9 +3523,6 @@
 
 .method public glTexGeniv(IILjava/nio/IntBuffer;)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/nio/IntBuffer;
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -4167,10 +3537,6 @@
 
 .method public glTexGeniv(II[II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [I
-    .param p4    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -4185,9 +3551,6 @@
 
 .method public glTexGenx(III)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -4202,9 +3565,6 @@
 
 .method public glTexGenxv(IILjava/nio/IntBuffer;)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/nio/IntBuffer;
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -4219,10 +3579,6 @@
 
 .method public glTexGenxv(II[II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [I
-    .param p4    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -4237,15 +3593,6 @@
 
 .method public glTexImage2D(IIIIIIIILjava/nio/Buffer;)V
     .locals 10
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
-    .param p9    # Ljava/nio/Buffer;
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -4278,9 +3625,6 @@
 
 .method public glTexParameterf(IIF)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # F
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -4295,9 +3639,6 @@
 
 .method public glTexParameterfv(IILjava/nio/FloatBuffer;)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/nio/FloatBuffer;
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -4312,10 +3653,6 @@
 
 .method public glTexParameterfv(II[FI)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [F
-    .param p4    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -4330,9 +3667,6 @@
 
 .method public glTexParameteri(III)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -4347,9 +3681,6 @@
 
 .method public glTexParameteriv(IILjava/nio/IntBuffer;)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/nio/IntBuffer;
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -4364,10 +3695,6 @@
 
 .method public glTexParameteriv(II[II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [I
-    .param p4    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -4382,9 +3709,6 @@
 
 .method public glTexParameterx(III)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -4399,9 +3723,6 @@
 
 .method public glTexParameterxv(IILjava/nio/IntBuffer;)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/nio/IntBuffer;
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -4416,10 +3737,6 @@
 
 .method public glTexParameterxv(II[II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [I
-    .param p4    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -4434,15 +3751,6 @@
 
 .method public glTexSubImage2D(IIIIIIIILjava/nio/Buffer;)V
     .locals 10
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
-    .param p9    # Ljava/nio/Buffer;
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -4475,9 +3783,6 @@
 
 .method public glTranslatef(FFF)V
     .locals 1
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -4492,9 +3797,6 @@
 
 .method public glTranslatex(III)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -4509,10 +3811,6 @@
 
 .method public glVertexPointer(IIII)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -4527,10 +3825,6 @@
 
 .method public glVertexPointer(IIILjava/nio/Buffer;)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/nio/Buffer;
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -4545,10 +3839,6 @@
 
 .method public glViewport(IIII)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -4563,10 +3853,6 @@
 
 .method public glWeightPointerOES(IIII)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 
@@ -4581,10 +3867,6 @@
 
 .method public glWeightPointerOES(IIILjava/nio/Buffer;)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/nio/Buffer;
 
     invoke-direct {p0}, Landroid/opengl/GLErrorWrapper;->checkThread()V
 

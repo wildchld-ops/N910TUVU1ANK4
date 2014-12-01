@@ -61,7 +61,6 @@
 
 .method private validateDocument(Lorg/w3c/dom/smil/SMILDocument;)V
     .locals 0
-    .param p1    # Lorg/w3c/dom/smil/SMILDocument;
 
     invoke-interface {p1}, Lorg/w3c/dom/smil/SMILDocument;->getBody()Lorg/w3c/dom/smil/SMILElement;
 
@@ -74,7 +73,6 @@
 # virtual methods
 .method public parse(Ljava/io/InputStream;)Lorg/w3c/dom/smil/SMILDocument;
     .locals 3
-    .param p1    # Ljava/io/InputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,

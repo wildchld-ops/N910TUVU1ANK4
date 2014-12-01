@@ -82,7 +82,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     const/4 v2, 0x5
 
@@ -191,7 +190,6 @@
 
 .method static synthetic access$000(Landroid/hardware/motion/MotionRecognitionSAR;)Lcom/android/internal/telephony/ITelephony;
     .locals 1
-    .param p0    # Landroid/hardware/motion/MotionRecognitionSAR;
 
     iget-object v0, p0, Landroid/hardware/motion/MotionRecognitionSAR;->mPhoneService:Lcom/android/internal/telephony/ITelephony;
 
@@ -200,7 +198,6 @@
 
 .method static synthetic access$100(Landroid/hardware/motion/MotionRecognitionSAR;)S
     .locals 1
-    .param p0    # Landroid/hardware/motion/MotionRecognitionSAR;
 
     iget-short v0, p0, Landroid/hardware/motion/MotionRecognitionSAR;->mPostGripVal:S
 
@@ -209,8 +206,6 @@
 
 .method static synthetic access$1000(Landroid/hardware/motion/MotionRecognitionSAR;Z)V
     .locals 0
-    .param p0    # Landroid/hardware/motion/MotionRecognitionSAR;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Landroid/hardware/motion/MotionRecognitionSAR;->setPowerState_Portait(Z)V
 
@@ -219,8 +214,6 @@
 
 .method static synthetic access$102(Landroid/hardware/motion/MotionRecognitionSAR;S)S
     .locals 0
-    .param p0    # Landroid/hardware/motion/MotionRecognitionSAR;
-    .param p1    # S
 
     iput-short p1, p0, Landroid/hardware/motion/MotionRecognitionSAR;->mPostGripVal:S
 
@@ -229,7 +222,6 @@
 
 .method static synthetic access$200(Landroid/hardware/motion/MotionRecognitionSAR;)S
     .locals 1
-    .param p0    # Landroid/hardware/motion/MotionRecognitionSAR;
 
     iget-short v0, p0, Landroid/hardware/motion/MotionRecognitionSAR;->mPostProxVal:S
 
@@ -238,8 +230,6 @@
 
 .method static synthetic access$202(Landroid/hardware/motion/MotionRecognitionSAR;S)S
     .locals 0
-    .param p0    # Landroid/hardware/motion/MotionRecognitionSAR;
-    .param p1    # S
 
     iput-short p1, p0, Landroid/hardware/motion/MotionRecognitionSAR;->mPostProxVal:S
 
@@ -248,8 +238,6 @@
 
 .method static synthetic access$300(Landroid/hardware/motion/MotionRecognitionSAR;Z)V
     .locals 0
-    .param p0    # Landroid/hardware/motion/MotionRecognitionSAR;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Landroid/hardware/motion/MotionRecognitionSAR;->setProximity_flat(Z)V
 
@@ -258,7 +246,6 @@
 
 .method static synthetic access$400(Landroid/hardware/motion/MotionRecognitionSAR;)Z
     .locals 1
-    .param p0    # Landroid/hardware/motion/MotionRecognitionSAR;
 
     invoke-direct {p0}, Landroid/hardware/motion/MotionRecognitionSAR;->setPowerState_flat()Z
 
@@ -269,8 +256,6 @@
 
 .method static synthetic access$500(Landroid/hardware/motion/MotionRecognitionSAR;Z)V
     .locals 0
-    .param p0    # Landroid/hardware/motion/MotionRecognitionSAR;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Landroid/hardware/motion/MotionRecognitionSAR;->setFlat(Z)V
 
@@ -279,7 +264,6 @@
 
 .method static synthetic access$600(Landroid/hardware/motion/MotionRecognitionSAR;)Z
     .locals 1
-    .param p0    # Landroid/hardware/motion/MotionRecognitionSAR;
 
     iget-boolean v0, p0, Landroid/hardware/motion/MotionRecognitionSAR;->mProxEnabled_flat:Z
 
@@ -288,8 +272,6 @@
 
 .method static synthetic access$602(Landroid/hardware/motion/MotionRecognitionSAR;Z)Z
     .locals 0
-    .param p0    # Landroid/hardware/motion/MotionRecognitionSAR;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/hardware/motion/MotionRecognitionSAR;->mProxEnabled_flat:Z
 
@@ -298,7 +280,6 @@
 
 .method static synthetic access$700(Landroid/hardware/motion/MotionRecognitionSAR;)Landroid/hardware/SensorEventListener;
     .locals 1
-    .param p0    # Landroid/hardware/motion/MotionRecognitionSAR;
 
     iget-object v0, p0, Landroid/hardware/motion/MotionRecognitionSAR;->sensorProxListener_Flat:Landroid/hardware/SensorEventListener;
 
@@ -307,7 +288,6 @@
 
 .method static synthetic access$800(Landroid/hardware/motion/MotionRecognitionSAR;)Landroid/hardware/SensorManager;
     .locals 1
-    .param p0    # Landroid/hardware/motion/MotionRecognitionSAR;
 
     iget-object v0, p0, Landroid/hardware/motion/MotionRecognitionSAR;->sensorManager:Landroid/hardware/SensorManager;
 
@@ -316,8 +296,6 @@
 
 .method static synthetic access$900(Landroid/hardware/motion/MotionRecognitionSAR;Z)V
     .locals 0
-    .param p0    # Landroid/hardware/motion/MotionRecognitionSAR;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Landroid/hardware/motion/MotionRecognitionSAR;->setPowerState_TurnOver(Z)V
 
@@ -365,7 +343,6 @@
 
 .method private setFlat(Z)V
     .locals 3
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/hardware/motion/MotionRecognitionSAR;->mIsFlat:Z
 
@@ -398,7 +375,6 @@
 
 .method private setPowerState_Portait(Z)V
     .locals 4
-    .param p1    # Z
 
     const-string v1, "ril.backoffstate"
 
@@ -488,7 +464,6 @@
 
 .method private setPowerState_TurnOver(Z)V
     .locals 4
-    .param p1    # Z
 
     const-string v1, "ril.backoffstate"
 
@@ -780,7 +755,6 @@
 
 .method private setProximity_flat(Z)V
     .locals 3
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/hardware/motion/MotionRecognitionSAR;->mPostProxVal_Flat:Z
 

@@ -77,10 +77,6 @@
 
 .method static obtain(IIIJ)Landroid/widget/ExpandableListConnector$GroupMetadata;
     .locals 1
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
 
     new-instance v0, Landroid/widget/ExpandableListConnector$GroupMetadata;
 
@@ -101,7 +97,6 @@
 # virtual methods
 .method public compareTo(Landroid/widget/ExpandableListConnector$GroupMetadata;)I
     .locals 2
-    .param p1    # Landroid/widget/ExpandableListConnector$GroupMetadata;
 
     if-nez p1, :cond_0
 
@@ -123,7 +118,6 @@
 
 .method public bridge synthetic compareTo(Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Landroid/widget/ExpandableListConnector$GroupMetadata;
 
@@ -144,8 +138,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget v0, p0, Landroid/widget/ExpandableListConnector$GroupMetadata;->flPos:I
 

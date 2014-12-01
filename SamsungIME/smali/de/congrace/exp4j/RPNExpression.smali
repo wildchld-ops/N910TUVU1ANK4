@@ -36,7 +36,6 @@
 # direct methods
 .method public constructor <init>(Ljava/util/List;Ljava/lang/String;Ljava/util/Map;)V
     .locals 0
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -80,7 +79,6 @@
 
 .method public varargs calculate([D)D
     .locals 8
-    .param p1    # [D
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;
@@ -232,8 +230,6 @@
 
 .method public setVariable(Ljava/lang/String;D)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # D
 
     iget-object v0, p0, Lde/congrace/exp4j/RPNExpression;->variables:Ljava/util/Map;
 

@@ -136,7 +136,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/homesync/BackupFragment;)Landroid/os/storage/StorageVolume;
     .locals 1
-    .param p0    # Lcom/android/settings/homesync/BackupFragment;
 
     iget-object v0, p0, Lcom/android/settings/homesync/BackupFragment;->mStorageVolume:Landroid/os/storage/StorageVolume;
 
@@ -145,7 +144,6 @@
 
 .method static synthetic access$1000(Lcom/android/settings/homesync/BackupFragment;)J
     .locals 2
-    .param p0    # Lcom/android/settings/homesync/BackupFragment;
 
     iget-wide v0, p0, Lcom/android/settings/homesync/BackupFragment;->mPrivateDataSize:J
 
@@ -154,8 +152,6 @@
 
 .method static synthetic access$1002(Lcom/android/settings/homesync/BackupFragment;J)J
     .locals 0
-    .param p0    # Lcom/android/settings/homesync/BackupFragment;
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/android/settings/homesync/BackupFragment;->mPrivateDataSize:J
 
@@ -164,8 +160,6 @@
 
 .method static synthetic access$102(Lcom/android/settings/homesync/BackupFragment;Landroid/os/storage/StorageVolume;)Landroid/os/storage/StorageVolume;
     .locals 0
-    .param p0    # Lcom/android/settings/homesync/BackupFragment;
-    .param p1    # Landroid/os/storage/StorageVolume;
 
     iput-object p1, p0, Lcom/android/settings/homesync/BackupFragment;->mStorageVolume:Landroid/os/storage/StorageVolume;
 
@@ -182,7 +176,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/homesync/BackupFragment;)J
     .locals 2
-    .param p0    # Lcom/android/settings/homesync/BackupFragment;
 
     invoke-direct {p0}, Lcom/android/settings/homesync/BackupFragment;->getTotalSelectedSize()J
 
@@ -193,7 +186,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/homesync/BackupFragment;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/settings/homesync/BackupFragment;
 
     iget-object v0, p0, Lcom/android/settings/homesync/BackupFragment;->mAccountName:Ljava/lang/String;
 
@@ -202,7 +194,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/homesync/BackupFragment;)Landroid/widget/CheckBox;
     .locals 1
-    .param p0    # Lcom/android/settings/homesync/BackupFragment;
 
     iget-object v0, p0, Lcom/android/settings/homesync/BackupFragment;->mCheckShared:Landroid/widget/CheckBox;
 
@@ -211,7 +202,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/homesync/BackupFragment;)Landroid/widget/CheckBox;
     .locals 1
-    .param p0    # Lcom/android/settings/homesync/BackupFragment;
 
     iget-object v0, p0, Lcom/android/settings/homesync/BackupFragment;->mCheckPersonal:Landroid/widget/CheckBox;
 
@@ -220,7 +210,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/homesync/BackupFragment;)Landroid/widget/CheckBox;
     .locals 1
-    .param p0    # Lcom/android/settings/homesync/BackupFragment;
 
     iget-object v0, p0, Lcom/android/settings/homesync/BackupFragment;->mCheckPrivate:Landroid/widget/CheckBox;
 
@@ -229,7 +218,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/homesync/BackupFragment;)J
     .locals 2
-    .param p0    # Lcom/android/settings/homesync/BackupFragment;
 
     iget-wide v0, p0, Lcom/android/settings/homesync/BackupFragment;->mSelectedDataSize:J
 
@@ -238,8 +226,6 @@
 
 .method static synthetic access$702(Lcom/android/settings/homesync/BackupFragment;J)J
     .locals 0
-    .param p0    # Lcom/android/settings/homesync/BackupFragment;
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/android/settings/homesync/BackupFragment;->mSelectedDataSize:J
 
@@ -248,8 +234,6 @@
 
 .method static synthetic access$714(Lcom/android/settings/homesync/BackupFragment;J)J
     .locals 2
-    .param p0    # Lcom/android/settings/homesync/BackupFragment;
-    .param p1    # J
 
     iget-wide v0, p0, Lcom/android/settings/homesync/BackupFragment;->mSelectedDataSize:J
 
@@ -262,7 +246,6 @@
 
 .method static synthetic access$800(Lcom/android/settings/homesync/BackupFragment;)J
     .locals 2
-    .param p0    # Lcom/android/settings/homesync/BackupFragment;
 
     iget-wide v0, p0, Lcom/android/settings/homesync/BackupFragment;->mSharedDataSize:J
 
@@ -271,8 +254,6 @@
 
 .method static synthetic access$802(Lcom/android/settings/homesync/BackupFragment;J)J
     .locals 0
-    .param p0    # Lcom/android/settings/homesync/BackupFragment;
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/android/settings/homesync/BackupFragment;->mSharedDataSize:J
 
@@ -281,8 +262,6 @@
 
 .method static synthetic access$814(Lcom/android/settings/homesync/BackupFragment;J)J
     .locals 2
-    .param p0    # Lcom/android/settings/homesync/BackupFragment;
-    .param p1    # J
 
     iget-wide v0, p0, Lcom/android/settings/homesync/BackupFragment;->mSharedDataSize:J
 
@@ -295,7 +274,6 @@
 
 .method static synthetic access$900(Lcom/android/settings/homesync/BackupFragment;)J
     .locals 2
-    .param p0    # Lcom/android/settings/homesync/BackupFragment;
 
     iget-wide v0, p0, Lcom/android/settings/homesync/BackupFragment;->mPersonalDataSize:J
 
@@ -304,8 +282,6 @@
 
 .method static synthetic access$902(Lcom/android/settings/homesync/BackupFragment;J)J
     .locals 0
-    .param p0    # Lcom/android/settings/homesync/BackupFragment;
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/android/settings/homesync/BackupFragment;->mPersonalDataSize:J
 
@@ -363,7 +339,6 @@
 # virtual methods
 .method createAlertDialog(I)Landroid/app/AlertDialog;
     .locals 4
-    .param p1    # I
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
@@ -442,7 +417,6 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onActivityCreated(Landroid/os/Bundle;)V
 
@@ -457,7 +431,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v3, 0x1
 
@@ -493,8 +466,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
     .locals 4
-    .param p1    # Landroid/view/Menu;
-    .param p2    # Landroid/view/MenuInflater;
 
     const/4 v3, 0x1
 
@@ -523,9 +494,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 4
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const v0, 0x7f040026
 

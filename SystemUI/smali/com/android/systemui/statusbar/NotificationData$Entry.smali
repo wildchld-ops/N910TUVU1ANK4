@@ -45,9 +45,6 @@
 
 .method public constructor <init>(Landroid/os/IBinder;Landroid/service/notification/StatusBarNotification;Lcom/android/systemui/statusbar/StatusBarIconView;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Landroid/service/notification/StatusBarNotification;
-    .param p3    # Lcom/android/systemui/statusbar/StatusBarIconView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -62,7 +59,6 @@
 
 .method static synthetic access$000(Lcom/android/systemui/statusbar/NotificationData$Entry;)Z
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/NotificationData$Entry;
 
     iget-boolean v0, p0, Lcom/android/systemui/statusbar/NotificationData$Entry;->interruption:Z
 
@@ -81,7 +77,6 @@
 
 .method public setBigContentView(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     iput-object p1, p0, Lcom/android/systemui/statusbar/NotificationData$Entry;->expandedBig:Landroid/view/View;
 
@@ -114,7 +109,6 @@
 
 .method public setUserLocked(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/NotificationData$Entry;->row:Lcom/android/systemui/statusbar/ExpandableNotificationRow;
 

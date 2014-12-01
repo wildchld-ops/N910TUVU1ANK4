@@ -6,8 +6,6 @@
 # direct methods
 .method public constructor <init>(ILjava/util/concurrent/CopyOnWriteArrayList;Landroid/hardware/contextaware/dataprovider/sensorhubprovider/ISensorHubResetObservable;)V
     .locals 6
-    .param p1    # I
-    .param p3    # Landroid/hardware/contextaware/dataprovider/sensorhubprovider/ISensorHubResetObservable;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -149,7 +147,6 @@
 
 .method public final setPropertyValue(ILjava/lang/Object;)Z
     .locals 4
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -243,8 +240,6 @@
 
 .method public final updateContext(Ljava/lang/String;Landroid/os/Bundle;)V
     .locals 11
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Bundle;
 
     const/4 v10, 0x4
 

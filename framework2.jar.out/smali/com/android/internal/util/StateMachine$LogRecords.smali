@@ -68,7 +68,6 @@
 
 .method synthetic constructor <init>(Lcom/android/internal/util/StateMachine$1;)V
     .locals 0
-    .param p1    # Lcom/android/internal/util/StateMachine$1;
 
     invoke-direct {p0}, Lcom/android/internal/util/StateMachine$LogRecords;-><init>()V
 
@@ -77,7 +76,6 @@
 
 .method static synthetic access$1800(Lcom/android/internal/util/StateMachine$LogRecords;)Ljava/util/Vector;
     .locals 1
-    .param p0    # Lcom/android/internal/util/StateMachine$LogRecords;
 
     iget-object v0, p0, Lcom/android/internal/util/StateMachine$LogRecords;->mLogRecVector:Ljava/util/Vector;
 
@@ -88,12 +86,6 @@
 # virtual methods
 .method declared-synchronized add(Lcom/android/internal/util/StateMachine;Landroid/os/Message;Ljava/lang/String;Lcom/android/internal/util/IState;Lcom/android/internal/util/IState;Lcom/android/internal/util/IState;)V
     .locals 8
-    .param p1    # Lcom/android/internal/util/StateMachine;
-    .param p2    # Landroid/os/Message;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Lcom/android/internal/util/IState;
-    .param p5    # Lcom/android/internal/util/IState;
-    .param p6    # Lcom/android/internal/util/IState;
 
     monitor-enter p0
 
@@ -244,7 +236,6 @@
 
 .method declared-synchronized get(I)Lcom/android/internal/util/StateMachine$LogRec;
     .locals 2
-    .param p1    # I
 
     monitor-enter p0
 
@@ -323,7 +314,6 @@
 
 .method declared-synchronized setLogOnlyTransitions(Z)V
     .locals 1
-    .param p1    # Z
 
     monitor-enter p0
 
@@ -346,7 +336,6 @@
 
 .method declared-synchronized setSize(I)V
     .locals 1
-    .param p1    # I
 
     monitor-enter p0
 

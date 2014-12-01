@@ -50,7 +50,7 @@
 
     iget-object v3, v3, Lcom/android/phone/callsettings/PresetImage;->changeDialog:Landroid/app/AlertDialog;
 
-    invoke-virtual {v3}, Landroid/app/Dialog;->isShowing()Z
+    invoke-virtual {v3}, Landroid/app/AlertDialog;->isShowing()Z
 
     move-result v3
 
@@ -68,7 +68,7 @@
     :cond_0
     iget-object v3, p0, Lcom/android/phone/callsettings/PresetImage$2;->this$0:Lcom/android/phone/callsettings/PresetImage;
 
-    invoke-virtual {v3}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v3}, Lcom/android/phone/callsettings/PresetImage;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -82,7 +82,7 @@
 
     iget-object v3, p0, Lcom/android/phone/callsettings/PresetImage$2;->this$0:Lcom/android/phone/callsettings/PresetImage;
 
-    invoke-virtual {v3}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v3}, Lcom/android/phone/callsettings/PresetImage;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v3
 

@@ -73,9 +73,9 @@
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/EmergencyCallbackMode;->startActivity(Landroid/content/Intent;)V
 
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyCallbackMode;->finish()V
 
     return-void
 .end method
@@ -130,7 +130,7 @@
 
     invoke-direct {p0, v0}, Lcom/android/phone/EmergencyCallbackMode;->updateKeyguardPolicy(Z)V
 
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyCallbackMode;->finish()V
 
     return-void
 .end method
@@ -143,7 +143,7 @@
     :try_start_0
     iget-object v1, p0, Lcom/android/phone/EmergencyCallbackMode;->mWindowManager:Landroid/view/IWindowManager;
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getComponentName()Landroid/content/ComponentName;
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyCallbackMode;->getComponentName()Landroid/content/ComponentName;
 
     move-result-object v2
 
@@ -196,13 +196,13 @@
 
     if-eqz p1, :cond_0
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyCallbackMode;->getWindow()Landroid/view/Window;
 
     move-result-object v0
 
     invoke-virtual {v0, v2}, Landroid/view/Window;->addFlags(I)V
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyCallbackMode;->getWindow()Landroid/view/Window;
 
     move-result-object v0
 
@@ -212,13 +212,13 @@
     return-void
 
     :cond_0
-    invoke-virtual {p0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyCallbackMode;->getWindow()Landroid/view/Window;
 
     move-result-object v0
 
     invoke-virtual {v0, v2}, Landroid/view/Window;->clearFlags(I)V
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyCallbackMode;->getWindow()Landroid/view/Window;
 
     move-result-object v0
 
@@ -234,7 +234,7 @@
 
     const/4 v0, 0x1
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->showDialog(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/EmergencyCallbackMode;->showDialog(I)V
 
     return-void
 .end method
@@ -255,16 +255,16 @@
 
     if-eqz v4, :cond_0
 
-    invoke-virtual {p0, v7}, Landroid/app/Activity;->requestWindowFeature(I)Z
+    invoke-virtual {p0, v7}, Lcom/android/phone/EmergencyCallbackMode;->requestWindowFeature(I)Z
 
     :cond_0
     const v4, 0x7f040032
 
-    invoke-virtual {p0, v4}, Landroid/app/Activity;->setContentView(I)V
+    invoke-virtual {p0, v4}, Lcom/android/phone/EmergencyCallbackMode;->setContentView(I)V
 
     const v4, 0x7f0a00e3
 
-    invoke-virtual {p0, v4}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v4}, Lcom/android/phone/EmergencyCallbackMode;->findViewById(I)Landroid/view/View;
 
     move-result-object v2
 
@@ -274,9 +274,9 @@
 
     invoke-direct {v4, p0}, Lcom/android/phone/EmergencyCallbackMode$1;-><init>(Lcom/android/phone/EmergencyCallbackMode;)V
 
-    invoke-virtual {v2, v4}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v2, v4}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyCallbackMode;->getResources()Landroid/content/res/Resources;
 
     move-result-object v4
 
@@ -298,7 +298,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v2, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {v2, v0}, Landroid/widget/Button;->setText(Ljava/lang/CharSequence;)V
 
     const-string v4, "feature_kdi"
 
@@ -310,12 +310,12 @@
 
     const/16 v4, 0x8
 
-    invoke-virtual {v2, v4}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v2, v4}, Landroid/widget/Button;->setVisibility(I)V
 
     :cond_1
     const v4, 0x7f0a00e2
 
-    invoke-virtual {p0, v4}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v4}, Lcom/android/phone/EmergencyCallbackMode;->findViewById(I)Landroid/view/View;
 
     move-result-object v3
 
@@ -469,7 +469,7 @@
     goto :goto_0
 
     :pswitch_2
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->showDialog(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/EmergencyCallbackMode;->showDialog(I)V
 
     goto :goto_0
 
@@ -490,7 +490,7 @@
 
     const/4 v0, 0x1
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->removeDialog(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/EmergencyCallbackMode;->removeDialog(I)V
 
     return-void
 .end method
@@ -512,7 +512,7 @@
 
     invoke-direct {v1, v2}, Landroid/content/IntentFilter;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {p0, v0, v1}, Landroid/content/ContextWrapper;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
+    invoke-virtual {p0, v0, v1}, Lcom/android/phone/EmergencyCallbackMode;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
     invoke-static {}, Lcom/android/phone/PhoneGlobals;->getInstance()Lcom/android/phone/PhoneGlobals;
 
@@ -535,7 +535,7 @@
     :try_start_0
     iget-object v1, p0, Lcom/android/phone/EmergencyCallbackMode;->mReceiver:Landroid/content/BroadcastReceiver;
 
-    invoke-virtual {p0, v1}, Landroid/content/ContextWrapper;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
+    invoke-virtual {p0, v1}, Lcom/android/phone/EmergencyCallbackMode;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
     :try_end_0
     .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
 

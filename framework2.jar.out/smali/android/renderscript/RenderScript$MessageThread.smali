@@ -43,7 +43,6 @@
 # direct methods
 .method constructor <init>(Landroid/renderscript/RenderScript;)V
     .locals 1
-    .param p1    # Landroid/renderscript/RenderScript;
 
     const-string v0, "RSMessageThread"
 

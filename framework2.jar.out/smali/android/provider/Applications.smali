@@ -52,8 +52,6 @@
 
 .method public static componentNameToUri(Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri;
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     sget-object v0, Landroid/provider/Applications;->CONTENT_URI:Landroid/net/Uri;
 
@@ -84,8 +82,6 @@
 
 .method public static search(Landroid/content/ContentResolver;Ljava/lang/String;)Landroid/database/Cursor;
     .locals 6
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -126,7 +122,6 @@
 
 .method public static uriToComponentName(Landroid/net/Uri;)Landroid/content/ComponentName;
     .locals 6
-    .param p0    # Landroid/net/Uri;
 
     const/4 v3, 0x0
 

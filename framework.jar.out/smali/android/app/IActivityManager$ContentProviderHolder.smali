@@ -55,7 +55,6 @@
 
 .method public constructor <init>(Landroid/content/pm/ProviderInfo;)V
     .locals 0
-    .param p1    # Landroid/content/pm/ProviderInfo;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -66,7 +65,6 @@
 
 .method private constructor <init>(Landroid/os/Parcel;)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -117,8 +115,6 @@
 
 .method synthetic constructor <init>(Landroid/os/Parcel;Landroid/app/IActivityManager$1;)V
     .locals 0
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # Landroid/app/IActivityManager$1;
 
     invoke-direct {p0, p1}, Landroid/app/IActivityManager$ContentProviderHolder;-><init>(Landroid/os/Parcel;)V
 
@@ -137,8 +133,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     const/4 v0, 0x0
 

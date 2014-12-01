@@ -38,8 +38,6 @@
 
 .method static synthetic access$702(Landroid/widget/NumberPicker$SetSelectionCommand;I)I
     .locals 0
-    .param p0    # Landroid/widget/NumberPicker$SetSelectionCommand;
-    .param p1    # I
 
     iput p1, p0, Landroid/widget/NumberPicker$SetSelectionCommand;->mSelectionStart:I
 
@@ -48,8 +46,6 @@
 
 .method static synthetic access$802(Landroid/widget/NumberPicker$SetSelectionCommand;I)I
     .locals 0
-    .param p0    # Landroid/widget/NumberPicker$SetSelectionCommand;
-    .param p1    # I
 
     iput p1, p0, Landroid/widget/NumberPicker$SetSelectionCommand;->mSelectionEnd:I
 

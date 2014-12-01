@@ -35,8 +35,6 @@
 # direct methods
 .method public constructor <init>(Landroid/renderscript/RenderScript;Landroid/renderscript/Element;)V
     .locals 1
-    .param p1    # Landroid/renderscript/RenderScript;
-    .param p2    # Landroid/renderscript/Element;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -222,7 +220,6 @@
 
 .method public setFaces(Z)Landroid/renderscript/Type$Builder;
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/renderscript/Type$Builder;->mDimFaces:Z
 
@@ -231,7 +228,6 @@
 
 .method public setMipmaps(Z)Landroid/renderscript/Type$Builder;
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/renderscript/Type$Builder;->mDimMipmaps:Z
 
@@ -240,7 +236,6 @@
 
 .method public setX(I)Landroid/renderscript/Type$Builder;
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -262,7 +257,6 @@
 
 .method public setY(I)Landroid/renderscript/Type$Builder;
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -284,7 +278,6 @@
 
 .method public setYuvFormat(I)Landroid/renderscript/Type$Builder;
     .locals 2
-    .param p1    # I
 
     sparse-switch p1, :sswitch_data_0
 
@@ -311,7 +304,6 @@
 
 .method public setZ(I)Landroid/renderscript/Type$Builder;
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x1
 

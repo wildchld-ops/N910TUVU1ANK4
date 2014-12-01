@@ -47,9 +47,6 @@
 
 .method public static getValues(Landroid/content/ContentResolver;Ljava/lang/String;Landroid/provider/Settings$GpuPowerStretchValues$GpuPowerStretchParams;)Z
     .locals 5
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/provider/Settings$GpuPowerStretchValues$GpuPowerStretchParams;
 
     if-nez p1, :cond_1
 
@@ -154,11 +151,6 @@
 
 .method public static putValues(Landroid/content/ContentResolver;Ljava/lang/String;III)Z
     .locals 9
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/4 v2, 0x1
 
@@ -364,9 +356,6 @@
 
 .method public static setManualModeValue(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
     .locals 13
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v4, 0x1
 
@@ -569,9 +558,6 @@
 
 .method public static setMode(Landroid/content/ContentResolver;Ljava/lang/String;I)I
     .locals 12
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v9, 0x1
 

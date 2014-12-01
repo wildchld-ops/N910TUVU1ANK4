@@ -40,7 +40,6 @@
 # virtual methods
 .method public bindStream(Ljava/io/InputStream;)Ljava/io/InputStream;
     .locals 2
-    .param p1    # Ljava/io/InputStream;
 
     invoke-direct {p0}, Lorg/apache/commons/io/input/DemuxInputStream;->getStream()Ljava/io/InputStream;
 

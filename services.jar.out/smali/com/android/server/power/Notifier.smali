@@ -84,13 +84,6 @@
 # direct methods
 .method public constructor <init>(Landroid/os/Looper;Landroid/content/Context;Lcom/android/internal/app/IBatteryStats;Lcom/android/internal/app/IAppOpsService;Lcom/android/server/power/SuspendBlocker;Lcom/android/server/power/ScreenOnBlocker;Landroid/view/WindowManagerPolicy;)V
     .locals 3
-    .param p1    # Landroid/os/Looper;
-    .param p2    # Landroid/content/Context;
-    .param p3    # Lcom/android/internal/app/IBatteryStats;
-    .param p4    # Lcom/android/internal/app/IAppOpsService;
-    .param p5    # Lcom/android/server/power/SuspendBlocker;
-    .param p6    # Lcom/android/server/power/ScreenOnBlocker;
-    .param p7    # Landroid/view/WindowManagerPolicy;
 
     const/high16 v2, 0x50000000
 
@@ -193,7 +186,6 @@
 
 .method static synthetic access$000(Lcom/android/server/power/Notifier;)Lcom/android/server/power/Notifier$NotifierHandler;
     .locals 1
-    .param p0    # Lcom/android/server/power/Notifier;
 
     iget-object v0, p0, Lcom/android/server/power/Notifier;->mHandler:Lcom/android/server/power/Notifier$NotifierHandler;
 
@@ -202,7 +194,6 @@
 
 .method static synthetic access$100(Lcom/android/server/power/Notifier;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Lcom/android/server/power/Notifier;
 
     iget-object v0, p0, Lcom/android/server/power/Notifier;->mLock:Ljava/lang/Object;
 
@@ -211,7 +202,6 @@
 
 .method static synthetic access$200(Lcom/android/server/power/Notifier;)Z
     .locals 1
-    .param p0    # Lcom/android/server/power/Notifier;
 
     iget-boolean v0, p0, Lcom/android/server/power/Notifier;->mScreenOnBlockerAcquired:Z
 
@@ -220,8 +210,6 @@
 
 .method static synthetic access$202(Lcom/android/server/power/Notifier;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/power/Notifier;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/power/Notifier;->mScreenOnBlockerAcquired:Z
 
@@ -230,7 +218,6 @@
 
 .method static synthetic access$300(Lcom/android/server/power/Notifier;)Z
     .locals 1
-    .param p0    # Lcom/android/server/power/Notifier;
 
     iget-boolean v0, p0, Lcom/android/server/power/Notifier;->mPendingWakeUpBroadcast:Z
 
@@ -239,7 +226,6 @@
 
 .method static synthetic access$400(Lcom/android/server/power/Notifier;)Lcom/android/server/power/ScreenOnBlocker;
     .locals 1
-    .param p0    # Lcom/android/server/power/Notifier;
 
     iget-object v0, p0, Lcom/android/server/power/Notifier;->mScreenOnBlocker:Lcom/android/server/power/ScreenOnBlocker;
 
@@ -248,7 +234,6 @@
 
 .method static synthetic access$500(Lcom/android/server/power/Notifier;)J
     .locals 2
-    .param p0    # Lcom/android/server/power/Notifier;
 
     iget-wide v0, p0, Lcom/android/server/power/Notifier;->mBroadcastStartTime:J
 
@@ -257,7 +242,6 @@
 
 .method static synthetic access$600(Lcom/android/server/power/Notifier;)V
     .locals 0
-    .param p0    # Lcom/android/server/power/Notifier;
 
     invoke-direct {p0}, Lcom/android/server/power/Notifier;->sendNextBroadcast()V
 
@@ -266,7 +250,6 @@
 
 .method static synthetic access$700(Lcom/android/server/power/Notifier;)V
     .locals 0
-    .param p0    # Lcom/android/server/power/Notifier;
 
     invoke-direct {p0}, Lcom/android/server/power/Notifier;->sendUserActivity()V
 
@@ -275,7 +258,6 @@
 
 .method static synthetic access$800(Lcom/android/server/power/Notifier;)V
     .locals 0
-    .param p0    # Lcom/android/server/power/Notifier;
 
     invoke-direct {p0}, Lcom/android/server/power/Notifier;->playWirelessChargingStartedSound()V
 
@@ -284,7 +266,6 @@
 
 .method static synthetic access$900(Lcom/android/server/power/Notifier;)V
     .locals 0
-    .param p0    # Lcom/android/server/power/Notifier;
 
     invoke-direct {p0}, Lcom/android/server/power/Notifier;->forceReleaseScreenOnBlocker()V
 
@@ -348,7 +329,6 @@
 
 .method private static getBatteryStatsWakeLockMonitorType(I)I
     .locals 1
-    .param p0    # I
 
     const v0, 0xffff
 
@@ -440,7 +420,6 @@
 
 .method private sendGoToSleepBroadcast(I)V
     .locals 10
-    .param p1    # I
 
     const/4 v7, 0x3
 
@@ -1085,7 +1064,6 @@
 
 .method public onGoToSleepStarted(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/server/power/Notifier;->mLock:Ljava/lang/Object;
 
@@ -1110,7 +1088,6 @@
 
 .method public onScreenBrightness(I)V
     .locals 1
-    .param p1    # I
 
     :try_start_0
     iget-object v0, p0, Lcom/android/server/power/Notifier;->mBatteryStats:Lcom/android/internal/app/IBatteryStats;
@@ -1168,8 +1145,6 @@
 
 .method public onUserActivity(II)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     :try_start_0
     iget-object v1, p0, Lcom/android/server/power/Notifier;->mBatteryStats:Lcom/android/internal/app/IBatteryStats;
@@ -1230,12 +1205,6 @@
 
 .method public onWakeLockAcquired(ILjava/lang/String;Ljava/lang/String;IILandroid/os/WorkSource;)V
     .locals 7
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Landroid/os/WorkSource;
 
     :try_start_0
     invoke-static {p1}, Lcom/android/server/power/Notifier;->getBatteryStatsWakeLockMonitorType(I)I
@@ -1300,12 +1269,6 @@
 
 .method public onWakeLockReleased(ILjava/lang/String;Ljava/lang/String;IILandroid/os/WorkSource;)V
     .locals 7
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Landroid/os/WorkSource;
 
     :try_start_0
     invoke-static {p1}, Lcom/android/server/power/Notifier;->getBatteryStatsWakeLockMonitorType(I)I

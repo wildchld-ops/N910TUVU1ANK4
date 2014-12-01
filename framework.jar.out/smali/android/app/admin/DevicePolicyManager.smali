@@ -110,8 +110,6 @@
 
 .method private constructor <init>(Landroid/content/Context;Landroid/os/Handler;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/Handler;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -134,8 +132,6 @@
 
 .method public static create(Landroid/content/Context;Landroid/os/Handler;)Landroid/app/admin/DevicePolicyManager;
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/os/Handler;
 
     new-instance v0, Landroid/app/admin/DevicePolicyManager;
 
@@ -188,8 +184,6 @@
 # virtual methods
 .method public checkPassword(Landroid/content/ComponentName;Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Ljava/lang/String;
 
     iget-object v1, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -228,7 +222,6 @@
 
 .method public copyAlternativeToActivePasswordState(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -306,7 +299,6 @@
 
 .method public getAdminInfo(Landroid/content/ComponentName;)Landroid/app/admin/DeviceAdminInfo;
     .locals 7
-    .param p1    # Landroid/content/ComponentName;
 
     const/4 v4, 0x0
 
@@ -434,7 +426,6 @@
 
 .method public getAllowAppListThirdParty(Landroid/content/ComponentName;)Ljava/lang/String;
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
 
     iget-object v1, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -477,7 +468,6 @@
 
 .method public getAllowBluetoothMode(Landroid/content/ComponentName;)I
     .locals 4
-    .param p1    # Landroid/content/ComponentName;
 
     invoke-static {}, Landroid/os/UserHandle;->myUserId()I
 
@@ -516,7 +506,6 @@
 
 .method public getAllowBrowser(Landroid/content/ComponentName;)Z
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
 
     iget-object v1, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -555,7 +544,6 @@
 
 .method public getAllowCamera(Landroid/content/ComponentName;)Z
     .locals 1
-    .param p1    # Landroid/content/ComponentName;
 
     invoke-static {}, Landroid/os/UserHandle;->myUserId()I
 
@@ -580,7 +568,6 @@
 
 .method public getAllowDesktopSync(Landroid/content/ComponentName;)Z
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
 
     iget-object v1, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -619,7 +606,6 @@
 
 .method public getAllowInternetSharing(Landroid/content/ComponentName;)Z
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
 
     iget-object v1, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -658,7 +644,6 @@
 
 .method public getAllowIrDA(Landroid/content/ComponentName;)Z
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
 
     iget-object v1, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -697,7 +682,6 @@
 
 .method public getAllowPOPIMAPEmail(Landroid/content/ComponentName;)Z
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
 
     iget-object v1, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -736,7 +720,6 @@
 
 .method public getAllowStorageCard(Landroid/content/ComponentName;)Z
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
 
     iget-object v1, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -775,7 +758,6 @@
 
 .method public getAllowTextMessaging(Landroid/content/ComponentName;)Z
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
 
     iget-object v1, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -814,7 +796,6 @@
 
 .method public getAllowUnsignedApp(Landroid/content/ComponentName;)Z
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
 
     iget-object v1, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -853,7 +834,6 @@
 
 .method public getAllowUnsignedInstallationPkg(Landroid/content/ComponentName;)Z
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
 
     iget-object v1, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -892,7 +872,6 @@
 
 .method public getAllowWifi(Landroid/content/ComponentName;)Z
     .locals 4
-    .param p1    # Landroid/content/ComponentName;
 
     invoke-static {}, Landroid/os/UserHandle;->myUserId()I
 
@@ -931,7 +910,6 @@
 
 .method public getBlockListInRom(Landroid/content/ComponentName;)Ljava/lang/String;
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
 
     iget-object v1, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -974,7 +952,6 @@
 
 .method public getCameraDisabled(Landroid/content/ComponentName;)Z
     .locals 1
-    .param p1    # Landroid/content/ComponentName;
 
     invoke-static {}, Landroid/os/UserHandle;->myUserId()I
 
@@ -989,8 +966,6 @@
 
 .method public getCameraDisabled(Landroid/content/ComponentName;I)Z
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # I
 
     iget-object v1, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -1025,8 +1000,6 @@
 
 .method public getCameraDisabledWithUID(Landroid/content/ComponentName;I)Z
     .locals 4
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # I
 
     invoke-static {p2}, Landroid/os/UserHandle;->getUserId(I)I
 
@@ -1246,7 +1219,6 @@
 
 .method public getKeyguardDisabledFeatures(Landroid/content/ComponentName;)I
     .locals 1
-    .param p1    # Landroid/content/ComponentName;
 
     invoke-static {}, Landroid/os/UserHandle;->myUserId()I
 
@@ -1261,8 +1233,6 @@
 
 .method public getKeyguardDisabledFeatures(Landroid/content/ComponentName;I)I
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # I
 
     iget-object v1, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -1297,7 +1267,6 @@
 
 .method public getMaximumFailedPasswordsForWipe(Landroid/content/ComponentName;)I
     .locals 2
-    .param p1    # Landroid/content/ComponentName;
 
     invoke-static {}, Landroid/os/UserHandle;->myUserId()I
 
@@ -1312,8 +1281,6 @@
 
 .method public getMaximumFailedPasswordsForWipe(Landroid/content/ComponentName;I)I
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # I
 
     iget-object v1, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -1348,7 +1315,6 @@
 
 .method public getMaximumTimeToLock(Landroid/content/ComponentName;)J
     .locals 2
-    .param p1    # Landroid/content/ComponentName;
 
     invoke-static {}, Landroid/os/UserHandle;->myUserId()I
 
@@ -1363,8 +1329,6 @@
 
 .method public getMaximumTimeToLock(Landroid/content/ComponentName;I)J
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # I
 
     iget-object v1, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -1399,7 +1363,6 @@
 
 .method public getMinPasswordComplexChars(Landroid/content/ComponentName;)I
     .locals 1
-    .param p1    # Landroid/content/ComponentName;
 
     invoke-virtual {p0, p1}, Landroid/app/admin/DevicePolicyManager;->getPasswordMinimumNonLetter(Landroid/content/ComponentName;)I
 
@@ -1410,7 +1373,6 @@
 
 .method public getNeedToGetAlternativePasswdForODE(Landroid/content/ComponentName;)Z
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
 
     iget-object v1, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -1449,7 +1411,6 @@
 
 .method public getPassword(Landroid/content/ComponentName;)Ljava/lang/String;
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
 
     iget-object v1, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -1484,7 +1445,6 @@
 
 .method public getPasswordExpiration(Landroid/content/ComponentName;)J
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
 
     iget-object v1, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -1523,7 +1483,6 @@
 
 .method public getPasswordExpirationTimeout(Landroid/content/ComponentName;)J
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
 
     iget-object v1, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -1562,7 +1521,6 @@
 
 .method public getPasswordExpires(Landroid/content/ComponentName;)I
     .locals 4
-    .param p1    # Landroid/content/ComponentName;
 
     invoke-virtual {p0, p1}, Landroid/app/admin/DevicePolicyManager;->getPasswordExpirationTimeout(Landroid/content/ComponentName;)J
 
@@ -1591,7 +1549,6 @@
 
 .method public getPasswordHistory(Landroid/content/ComponentName;)I
     .locals 1
-    .param p1    # Landroid/content/ComponentName;
 
     invoke-virtual {p0, p1}, Landroid/app/admin/DevicePolicyManager;->getPasswordHistoryLength(Landroid/content/ComponentName;)I
 
@@ -1602,7 +1559,6 @@
 
 .method public getPasswordHistoryLength(Landroid/content/ComponentName;)I
     .locals 1
-    .param p1    # Landroid/content/ComponentName;
 
     invoke-static {}, Landroid/os/UserHandle;->myUserId()I
 
@@ -1617,8 +1573,6 @@
 
 .method public getPasswordHistoryLength(Landroid/content/ComponentName;I)I
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # I
 
     iget-object v1, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -1653,7 +1607,6 @@
 
 .method public getPasswordMaximumLength(I)I
     .locals 1
-    .param p1    # I
 
     const/16 v0, 0x10
 
@@ -1662,7 +1615,6 @@
 
 .method public getPasswordMinimumLength(Landroid/content/ComponentName;)I
     .locals 1
-    .param p1    # Landroid/content/ComponentName;
 
     invoke-static {}, Landroid/os/UserHandle;->myUserId()I
 
@@ -1677,8 +1629,6 @@
 
 .method public getPasswordMinimumLength(Landroid/content/ComponentName;I)I
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # I
 
     iget-object v1, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -1713,7 +1663,6 @@
 
 .method public getPasswordMinimumLetters(Landroid/content/ComponentName;)I
     .locals 1
-    .param p1    # Landroid/content/ComponentName;
 
     invoke-static {}, Landroid/os/UserHandle;->myUserId()I
 
@@ -1728,8 +1677,6 @@
 
 .method public getPasswordMinimumLetters(Landroid/content/ComponentName;I)I
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # I
 
     iget-object v1, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -1764,7 +1711,6 @@
 
 .method public getPasswordMinimumLowerCase(Landroid/content/ComponentName;)I
     .locals 1
-    .param p1    # Landroid/content/ComponentName;
 
     invoke-static {}, Landroid/os/UserHandle;->myUserId()I
 
@@ -1779,8 +1725,6 @@
 
 .method public getPasswordMinimumLowerCase(Landroid/content/ComponentName;I)I
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # I
 
     iget-object v1, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -1815,7 +1759,6 @@
 
 .method public getPasswordMinimumNonLetter(Landroid/content/ComponentName;)I
     .locals 1
-    .param p1    # Landroid/content/ComponentName;
 
     invoke-static {}, Landroid/os/UserHandle;->myUserId()I
 
@@ -1830,8 +1773,6 @@
 
 .method public getPasswordMinimumNonLetter(Landroid/content/ComponentName;I)I
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # I
 
     iget-object v1, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -1866,7 +1807,6 @@
 
 .method public getPasswordMinimumNumeric(Landroid/content/ComponentName;)I
     .locals 1
-    .param p1    # Landroid/content/ComponentName;
 
     invoke-static {}, Landroid/os/UserHandle;->myUserId()I
 
@@ -1881,8 +1821,6 @@
 
 .method public getPasswordMinimumNumeric(Landroid/content/ComponentName;I)I
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # I
 
     iget-object v1, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -1917,7 +1855,6 @@
 
 .method public getPasswordMinimumSymbols(Landroid/content/ComponentName;)I
     .locals 1
-    .param p1    # Landroid/content/ComponentName;
 
     invoke-static {}, Landroid/os/UserHandle;->myUserId()I
 
@@ -1932,8 +1869,6 @@
 
 .method public getPasswordMinimumSymbols(Landroid/content/ComponentName;I)I
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # I
 
     iget-object v1, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -1968,7 +1903,6 @@
 
 .method public getPasswordMinimumUpperCase(Landroid/content/ComponentName;)I
     .locals 1
-    .param p1    # Landroid/content/ComponentName;
 
     invoke-static {}, Landroid/os/UserHandle;->myUserId()I
 
@@ -1983,8 +1917,6 @@
 
 .method public getPasswordMinimumUpperCase(Landroid/content/ComponentName;I)I
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # I
 
     iget-object v1, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -2019,7 +1951,6 @@
 
 .method public getPasswordQuality(Landroid/content/ComponentName;)I
     .locals 1
-    .param p1    # Landroid/content/ComponentName;
 
     invoke-static {}, Landroid/os/UserHandle;->myUserId()I
 
@@ -2034,8 +1965,6 @@
 
 .method public getPasswordQuality(Landroid/content/ComponentName;I)I
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # I
 
     iget-object v1, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -2070,7 +1999,6 @@
 
 .method public getPasswordRecoverable(Landroid/content/ComponentName;)Z
     .locals 1
-    .param p1    # Landroid/content/ComponentName;
 
     invoke-static {}, Landroid/os/UserHandle;->myUserId()I
 
@@ -2085,8 +2013,6 @@
 
 .method public getPasswordRecoverable(Landroid/content/ComponentName;I)Z
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # I
 
     iget-object v1, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -2121,8 +2047,6 @@
 
 .method public getPropertyFromFooter(Landroid/content/ComponentName;Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Ljava/lang/String;
 
     iget-object v1, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -2177,8 +2101,6 @@
 
 .method public getRemoveWarning(Landroid/content/ComponentName;Landroid/os/RemoteCallback;)V
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Landroid/os/RemoteCallback;
 
     iget-object v1, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -2213,7 +2135,6 @@
 
 .method public getRequireStorageCardEncryption(Landroid/content/ComponentName;)Z
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
 
     iget-object v1, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -2252,7 +2173,6 @@
 
 .method public getSamsungEncryptionStatus(Landroid/content/ComponentName;)Z
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
 
     iget-object v1, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -2291,7 +2211,6 @@
 
 .method public getSamsungEncryptionStatusForCC(Landroid/content/ComponentName;)I
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
 
     iget-object v1, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -2330,7 +2249,6 @@
 
 .method public getSimplePasswordEnabled(Landroid/content/ComponentName;)Z
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
 
     iget-object v1, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -2369,7 +2287,6 @@
 
 .method public getStorageEncryption(Landroid/content/ComponentName;)Z
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
 
     iget-object v1, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -2422,7 +2339,6 @@
 
 .method public getStorageEncryptionStatus(I)I
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -2457,7 +2373,6 @@
 
 .method public hasCaCertInstalled([B)Z
     .locals 7
-    .param p1    # [B
 
     const/4 v4, 0x0
 
@@ -2510,8 +2425,6 @@
 
 .method public hasGrantedPolicy(Landroid/content/ComponentName;I)Z
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # I
 
     iget-object v1, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -2550,7 +2463,6 @@
 
 .method public installCaCert([B)Z
     .locals 3
-    .param p1    # [B
 
     iget-object v1, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -2623,7 +2535,6 @@
 
 .method public isAdminActive(Landroid/content/ComponentName;)Z
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
 
     iget-object v1, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -2662,7 +2573,6 @@
 
 .method public isDeviceOwner(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Landroid/app/admin/DevicePolicyManager;->isDeviceOwnerApp(Ljava/lang/String;)Z
 
@@ -2673,7 +2583,6 @@
 
 .method public isDeviceOwnerApp(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -2708,7 +2617,6 @@
 
 .method public isSupportFingerprintForODE(Landroid/content/ComponentName;)Z
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
 
     iget-object v1, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -2747,7 +2655,6 @@
 
 .method public isSupportTrustZoneForODE(Landroid/content/ComponentName;)Z
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
 
     iget-object v1, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -2816,8 +2723,6 @@
 
 .method public notifyChanges(Landroid/content/ComponentName;Z)V
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Z
 
     iget-object v1, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -2852,7 +2757,6 @@
 
 .method public packageHasActiveAdmins(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -2891,7 +2795,6 @@
 
 .method public reboot(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -2934,7 +2837,6 @@
 
 .method public recoverPassword(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -2965,7 +2867,6 @@
 
 .method public removeActiveAdmin(Landroid/content/ComponentName;)V
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
 
     iget-object v1, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -3014,7 +2915,6 @@
 
 .method public reportFailedPasswordAttempt(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -3045,7 +2945,6 @@
 
 .method public reportSuccessfulPasswordAttempt(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -3076,8 +2975,6 @@
 
 .method public resetPassword(Ljava/lang/String;I)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     iget-object v1, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -3116,7 +3013,6 @@
 
 .method public satisfyFIPSPassword(I)Z
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -3151,8 +3047,6 @@
 
 .method public setActiveAdmin(Landroid/content/ComponentName;Z)V
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Z
 
     iget-object v1, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -3187,15 +3081,6 @@
 
 .method public setActivePasswordState(IIIIIIIII)V
     .locals 11
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
-    .param p9    # I
 
     iget-object v0, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -3244,7 +3129,6 @@
 
 .method public setAdminPermissions(Landroid/content/ComponentName;)V
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
 
     iget-object v1, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -3279,8 +3163,6 @@
 
 .method public setAllowAppListThirdParty(Landroid/content/ComponentName;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Ljava/lang/String;
 
     iget-object v1, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -3315,8 +3197,6 @@
 
 .method public setAllowBluetoothMode(Landroid/content/ComponentName;I)V
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # I
 
     iget-object v1, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -3351,8 +3231,6 @@
 
 .method public setAllowBrowser(Landroid/content/ComponentName;Z)V
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Z
 
     iget-object v1, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -3387,8 +3265,6 @@
 
 .method public setAllowCamera(Landroid/content/ComponentName;Z)V
     .locals 1
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Z
 
     if-nez p2, :cond_0
 
@@ -3407,8 +3283,6 @@
 
 .method public setAllowDesktopSync(Landroid/content/ComponentName;Z)V
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Z
 
     iget-object v1, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -3443,8 +3317,6 @@
 
 .method public setAllowInternetSharing(Landroid/content/ComponentName;Z)V
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Z
 
     iget-object v1, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -3479,8 +3351,6 @@
 
 .method public setAllowIrDA(Landroid/content/ComponentName;Z)V
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Z
 
     iget-object v1, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -3515,8 +3385,6 @@
 
 .method public setAllowPOPIMAPEmail(Landroid/content/ComponentName;Z)V
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Z
 
     iget-object v1, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -3551,8 +3419,6 @@
 
 .method public setAllowStorageCard(Landroid/content/ComponentName;Z)V
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Z
 
     iget-object v1, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -3587,8 +3453,6 @@
 
 .method public setAllowTextMessaging(Landroid/content/ComponentName;Z)V
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Z
 
     iget-object v1, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -3623,8 +3487,6 @@
 
 .method public setAllowUnsignedApp(Landroid/content/ComponentName;Z)V
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Z
 
     iget-object v1, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -3659,8 +3521,6 @@
 
 .method public setAllowUnsignedInstallationPkg(Landroid/content/ComponentName;Z)V
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Z
 
     iget-object v1, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -3695,8 +3555,6 @@
 
 .method public setAllowWifi(Landroid/content/ComponentName;Z)V
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Z
 
     iget-object v1, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -3731,14 +3589,6 @@
 
 .method public setAlternativePasswordState(IIIIIIII)V
     .locals 10
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
 
     iget-object v0, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -3785,8 +3635,6 @@
 
 .method public setBlockListInRom(Landroid/content/ComponentName;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Ljava/lang/String;
 
     iget-object v1, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -3821,8 +3669,6 @@
 
 .method public setCameraDisabled(Landroid/content/ComponentName;Z)V
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Z
 
     iget-object v1, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -3857,7 +3703,6 @@
 
 .method public setDeviceOwner(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;,
@@ -3876,8 +3721,6 @@
 
 .method public setDeviceOwner(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;,
@@ -3918,8 +3761,6 @@
 
 .method public setGlobalProxy(Landroid/content/ComponentName;Ljava/net/Proxy;Ljava/util/List;)Landroid/content/ComponentName;
     .locals 13
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Ljava/net/Proxy;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -4123,8 +3964,6 @@
 
 .method public setKeyguardDisabledFeatures(Landroid/content/ComponentName;I)V
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # I
 
     iget-object v1, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -4159,8 +3998,6 @@
 
 .method public setMaximumFailedPasswordsForWipe(Landroid/content/ComponentName;I)V
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # I
 
     iget-object v1, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -4195,8 +4032,6 @@
 
 .method public setMaximumTimeToLock(Landroid/content/ComponentName;J)V
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # J
 
     iget-object v1, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -4231,8 +4066,6 @@
 
 .method public setMinPasswordComplexChars(Landroid/content/ComponentName;I)V
     .locals 0
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # I
 
     invoke-virtual {p0, p1, p2}, Landroid/app/admin/DevicePolicyManager;->setPasswordMinimumNonLetter(Landroid/content/ComponentName;I)V
 
@@ -4241,8 +4074,6 @@
 
 .method public setNeedToGetAlternativePasswdForODE(Landroid/content/ComponentName;Z)V
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Z
 
     iget-object v1, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -4277,8 +4108,6 @@
 
 .method public setPasswordExpirationTimeout(Landroid/content/ComponentName;J)V
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # J
 
     iget-object v1, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -4313,8 +4142,6 @@
 
 .method public setPasswordExpires(Landroid/content/ComponentName;I)V
     .locals 4
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # I
 
     int-to-long v0, p2
 
@@ -4329,8 +4156,6 @@
 
 .method public setPasswordHistory(Landroid/content/ComponentName;I)V
     .locals 0
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # I
 
     invoke-virtual {p0, p1, p2}, Landroid/app/admin/DevicePolicyManager;->setPasswordHistoryLength(Landroid/content/ComponentName;I)V
 
@@ -4339,8 +4164,6 @@
 
 .method public setPasswordHistoryLength(Landroid/content/ComponentName;I)V
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # I
 
     iget-object v1, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -4375,8 +4198,6 @@
 
 .method public setPasswordMinimumLength(Landroid/content/ComponentName;I)V
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # I
 
     iget-object v1, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -4411,8 +4232,6 @@
 
 .method public setPasswordMinimumLetters(Landroid/content/ComponentName;I)V
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # I
 
     iget-object v1, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -4447,8 +4266,6 @@
 
 .method public setPasswordMinimumLowerCase(Landroid/content/ComponentName;I)V
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # I
 
     iget-object v1, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -4483,8 +4300,6 @@
 
 .method public setPasswordMinimumNonLetter(Landroid/content/ComponentName;I)V
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # I
 
     iget-object v1, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -4519,8 +4334,6 @@
 
 .method public setPasswordMinimumNumeric(Landroid/content/ComponentName;I)V
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # I
 
     iget-object v1, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -4555,8 +4368,6 @@
 
 .method public setPasswordMinimumSymbols(Landroid/content/ComponentName;I)V
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # I
 
     iget-object v1, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -4591,8 +4402,6 @@
 
 .method public setPasswordMinimumUpperCase(Landroid/content/ComponentName;I)V
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # I
 
     iget-object v1, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -4627,8 +4436,6 @@
 
 .method public setPasswordQuality(Landroid/content/ComponentName;I)V
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # I
 
     iget-object v1, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -4663,8 +4470,6 @@
 
 .method public setPasswordRecoverable(Landroid/content/ComponentName;Z)V
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Z
 
     iget-object v1, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -4699,9 +4504,6 @@
 
 .method public setPropertyIntoFooter(Landroid/content/ComponentName;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     iget-object v1, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -4740,8 +4542,6 @@
 
 .method public setRecoveryPasswordState(Landroid/content/ComponentName;Z)V
     .locals 4
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Z
 
     invoke-static {}, Landroid/os/UserHandle;->myUserId()I
 
@@ -4776,8 +4576,6 @@
 
 .method public setRequireStorageCardEncryption(Landroid/content/ComponentName;Z)V
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Z
 
     iget-object v1, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -4812,8 +4610,6 @@
 
 .method public setSimplePasswordEnabled(Landroid/content/ComponentName;Z)V
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Z
 
     iget-object v1, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -4848,8 +4644,6 @@
 
 .method public setStorageEncryption(Landroid/content/ComponentName;Z)I
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Z
 
     iget-object v1, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -4888,7 +4682,6 @@
 
 .method public uninstallCaCert([B)V
     .locals 3
-    .param p1    # [B
 
     iget-object v1, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 
@@ -4919,7 +4712,6 @@
 
 .method public wipeData(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Landroid/app/admin/DevicePolicyManager;->mService:Landroid/app/admin/IDevicePolicyManager;
 

@@ -71,7 +71,6 @@
 
 .method static synthetic access$2700(Lcom/android/server/smartclip/SmartClipView$PointerState;)Z
     .locals 1
-    .param p0    # Lcom/android/server/smartclip/SmartClipView$PointerState;
 
     iget-boolean v0, p0, Lcom/android/server/smartclip/SmartClipView$PointerState;->mCurDown:Z
 
@@ -80,8 +79,6 @@
 
 .method static synthetic access$2702(Lcom/android/server/smartclip/SmartClipView$PointerState;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/smartclip/SmartClipView$PointerState;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/smartclip/SmartClipView$PointerState;->mCurDown:Z
 
@@ -90,7 +87,6 @@
 
 .method static synthetic access$2800(Lcom/android/server/smartclip/SmartClipView$PointerState;)Landroid/view/MotionEvent$PointerCoords;
     .locals 1
-    .param p0    # Lcom/android/server/smartclip/SmartClipView$PointerState;
 
     iget-object v0, p0, Lcom/android/server/smartclip/SmartClipView$PointerState;->mCoords:Landroid/view/MotionEvent$PointerCoords;
 
@@ -99,8 +95,6 @@
 
 .method static synthetic access$2902(Lcom/android/server/smartclip/SmartClipView$PointerState;I)I
     .locals 0
-    .param p0    # Lcom/android/server/smartclip/SmartClipView$PointerState;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/smartclip/SmartClipView$PointerState;->mToolType:I
 
@@ -109,7 +103,6 @@
 
 .method static synthetic access$3000(Lcom/android/server/smartclip/SmartClipView$PointerState;)I
     .locals 1
-    .param p0    # Lcom/android/server/smartclip/SmartClipView$PointerState;
 
     iget v0, p0, Lcom/android/server/smartclip/SmartClipView$PointerState;->mTraceCount:I
 
@@ -118,7 +111,6 @@
 
 .method static synthetic access$3100(Lcom/android/server/smartclip/SmartClipView$PointerState;)[F
     .locals 1
-    .param p0    # Lcom/android/server/smartclip/SmartClipView$PointerState;
 
     iget-object v0, p0, Lcom/android/server/smartclip/SmartClipView$PointerState;->mTraceX:[F
 
@@ -127,7 +119,6 @@
 
 .method static synthetic access$3200(Lcom/android/server/smartclip/SmartClipView$PointerState;)[F
     .locals 1
-    .param p0    # Lcom/android/server/smartclip/SmartClipView$PointerState;
 
     iget-object v0, p0, Lcom/android/server/smartclip/SmartClipView$PointerState;->mTraceY:[F
 
@@ -138,8 +129,6 @@
 # virtual methods
 .method public addTrace(FF)V
     .locals 6
-    .param p1    # F
-    .param p2    # F
 
     const/4 v5, 0x0
 
@@ -215,7 +204,6 @@
 
 .method public getTraceX(I)F
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/smartclip/SmartClipView$PointerState;->mTraceX:[F
 
@@ -226,7 +214,6 @@
 
 .method public getTraceY(I)F
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/smartclip/SmartClipView$PointerState;->mTraceY:[F
 

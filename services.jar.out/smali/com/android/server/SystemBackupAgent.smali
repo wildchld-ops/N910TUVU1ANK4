@@ -70,7 +70,6 @@
 
 .method private fullWallpaperBackup(Landroid/app/backup/FullBackupDataOutput;)V
     .locals 6
-    .param p1    # Landroid/app/backup/FullBackupDataOutput;
 
     const/4 v2, 0x0
 
@@ -113,9 +112,6 @@
 # virtual methods
 .method public onBackup(Landroid/os/ParcelFileDescriptor;Landroid/app/backup/BackupDataOutput;Landroid/os/ParcelFileDescriptor;)V
     .locals 7
-    .param p1    # Landroid/os/ParcelFileDescriptor;
-    .param p2    # Landroid/app/backup/BackupDataOutput;
-    .param p3    # Landroid/os/ParcelFileDescriptor;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -202,7 +198,6 @@
 
 .method public onFullBackup(Landroid/app/backup/FullBackupDataOutput;)V
     .locals 0
-    .param p1    # Landroid/app/backup/FullBackupDataOutput;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -216,9 +211,6 @@
 
 .method public onRestore(Landroid/app/backup/BackupDataInput;ILandroid/os/ParcelFileDescriptor;)V
     .locals 9
-    .param p1    # Landroid/app/backup/BackupDataInput;
-    .param p2    # I
-    .param p3    # Landroid/os/ParcelFileDescriptor;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -327,13 +319,6 @@
 
 .method public onRestoreFile(Landroid/os/ParcelFileDescriptor;JILjava/lang/String;Ljava/lang/String;JJ)V
     .locals 13
-    .param p1    # Landroid/os/ParcelFileDescriptor;
-    .param p2    # J
-    .param p4    # I
-    .param p5    # Ljava/lang/String;
-    .param p6    # Ljava/lang/String;
-    .param p7    # J
-    .param p9    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

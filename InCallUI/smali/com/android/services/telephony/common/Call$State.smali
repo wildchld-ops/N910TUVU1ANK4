@@ -25,7 +25,6 @@
 
 .method public static isConnected(I)Z
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -68,7 +67,6 @@
 
 .method public static isDialing(I)Z
     .locals 1
-    .param p0    # I
 
     const/4 v0, 0x5
 
@@ -96,7 +94,6 @@
 
 .method public static isIncoming(I)Z
     .locals 1
-    .param p0    # I
 
     const/4 v0, 0x3
 

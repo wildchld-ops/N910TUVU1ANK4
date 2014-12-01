@@ -52,8 +52,6 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     iget-object v1, p0, Lcom/android/server/AlarmManagerService$FactoryOnOffControlReceiver;->this$0:Lcom/android/server/AlarmManagerService;
 

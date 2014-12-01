@@ -329,7 +329,6 @@
 
 .method public constructor <init>(Landroid/net/wifi/p2p/IWifiP2pManager;)V
     .locals 0
-    .param p1    # Landroid/net/wifi/p2p/IWifiP2pManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -340,7 +339,6 @@
 
 .method private static checkChannel(Landroid/net/wifi/p2p/WifiP2pManager$Channel;)V
     .locals 2
-    .param p0    # Landroid/net/wifi/p2p/WifiP2pManager$Channel;
 
     if-nez p0, :cond_0
 
@@ -358,7 +356,6 @@
 
 .method private static checkP2pConfig(Landroid/net/wifi/p2p/WifiP2pConfig;)V
     .locals 2
-    .param p0    # Landroid/net/wifi/p2p/WifiP2pConfig;
 
     if-nez p0, :cond_0
 
@@ -393,7 +390,6 @@
 
 .method private static checkServiceInfo(Landroid/net/wifi/p2p/nsd/WifiP2pServiceInfo;)V
     .locals 2
-    .param p0    # Landroid/net/wifi/p2p/nsd/WifiP2pServiceInfo;
 
     if-nez p0, :cond_0
 
@@ -411,7 +407,6 @@
 
 .method private static checkServiceRequest(Landroid/net/wifi/p2p/nsd/WifiP2pServiceRequest;)V
     .locals 2
-    .param p0    # Landroid/net/wifi/p2p/nsd/WifiP2pServiceRequest;
 
     if-nez p0, :cond_0
 
@@ -431,9 +426,6 @@
 # virtual methods
 .method public addLocalService(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/nsd/WifiP2pServiceInfo;Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;)V
     .locals 4
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pManager$Channel;
-    .param p2    # Landroid/net/wifi/p2p/nsd/WifiP2pServiceInfo;
-    .param p3    # Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;
 
     invoke-static {p1}, Landroid/net/wifi/p2p/WifiP2pManager;->checkChannel(Landroid/net/wifi/p2p/WifiP2pManager$Channel;)V
 
@@ -460,9 +452,6 @@
 
 .method public addServiceRequest(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/nsd/WifiP2pServiceRequest;Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;)V
     .locals 4
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pManager$Channel;
-    .param p2    # Landroid/net/wifi/p2p/nsd/WifiP2pServiceRequest;
-    .param p3    # Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;
 
     invoke-static {p1}, Landroid/net/wifi/p2p/WifiP2pManager;->checkChannel(Landroid/net/wifi/p2p/WifiP2pManager$Channel;)V
 
@@ -489,8 +478,6 @@
 
 .method public callSECApi(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/os/Message;)I
     .locals 8
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pManager$Channel;
-    .param p2    # Landroid/os/Message;
 
     const/4 v4, -0x1
 
@@ -641,8 +628,6 @@
 
 .method public cancelConnect(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;)V
     .locals 4
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pManager$Channel;
-    .param p2    # Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;
 
     invoke-static {p1}, Landroid/net/wifi/p2p/WifiP2pManager;->checkChannel(Landroid/net/wifi/p2p/WifiP2pManager$Channel;)V
 
@@ -667,8 +652,6 @@
 
 .method public clearLocalServices(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;)V
     .locals 4
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pManager$Channel;
-    .param p2    # Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;
 
     invoke-static {p1}, Landroid/net/wifi/p2p/WifiP2pManager;->checkChannel(Landroid/net/wifi/p2p/WifiP2pManager$Channel;)V
 
@@ -693,8 +676,6 @@
 
 .method public clearServiceRequests(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;)V
     .locals 4
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pManager$Channel;
-    .param p2    # Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;
 
     invoke-static {p1}, Landroid/net/wifi/p2p/WifiP2pManager;->checkChannel(Landroid/net/wifi/p2p/WifiP2pManager$Channel;)V
 
@@ -719,10 +700,6 @@
 
 .method public connect(Landroid/net/wifi/p2p/WifiP2pManager$Channel;ILandroid/net/wifi/p2p/WifiP2pConfig;Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;)V
     .locals 3
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pManager$Channel;
-    .param p2    # I
-    .param p3    # Landroid/net/wifi/p2p/WifiP2pConfig;
-    .param p4    # Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;
 
     invoke-static {p1}, Landroid/net/wifi/p2p/WifiP2pManager;->checkChannel(Landroid/net/wifi/p2p/WifiP2pManager$Channel;)V
 
@@ -745,9 +722,6 @@
 
 .method public connect(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/WifiP2pConfig;Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;)V
     .locals 4
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pManager$Channel;
-    .param p2    # Landroid/net/wifi/p2p/WifiP2pConfig;
-    .param p3    # Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;
 
     invoke-static {p1}, Landroid/net/wifi/p2p/WifiP2pManager;->checkChannel(Landroid/net/wifi/p2p/WifiP2pManager$Channel;)V
 
@@ -774,9 +748,6 @@
 
 .method public connect(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/WifiP2pConfigList;Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;)V
     .locals 4
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pManager$Channel;
-    .param p2    # Landroid/net/wifi/p2p/WifiP2pConfigList;
-    .param p3    # Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;
 
     invoke-static {p1}, Landroid/net/wifi/p2p/WifiP2pManager;->checkChannel(Landroid/net/wifi/p2p/WifiP2pManager$Channel;)V
 
@@ -801,8 +772,6 @@
 
 .method public createGroup(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;)V
     .locals 4
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pManager$Channel;
-    .param p2    # Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;
 
     invoke-static {p1}, Landroid/net/wifi/p2p/WifiP2pManager;->checkChannel(Landroid/net/wifi/p2p/WifiP2pManager$Channel;)V
 
@@ -827,9 +796,6 @@
 
 .method public deletePersistentGroup(Landroid/net/wifi/p2p/WifiP2pManager$Channel;ILandroid/net/wifi/p2p/WifiP2pManager$ActionListener;)V
     .locals 3
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pManager$Channel;
-    .param p2    # I
-    .param p3    # Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;
 
     invoke-static {p1}, Landroid/net/wifi/p2p/WifiP2pManager;->checkChannel(Landroid/net/wifi/p2p/WifiP2pManager$Channel;)V
 
@@ -852,7 +818,6 @@
 
 .method public disableP2p(Landroid/net/wifi/p2p/WifiP2pManager$Channel;)V
     .locals 2
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pManager$Channel;
 
     invoke-static {p1}, Landroid/net/wifi/p2p/WifiP2pManager;->checkChannel(Landroid/net/wifi/p2p/WifiP2pManager$Channel;)V
 
@@ -887,9 +852,6 @@
 
 .method public discoverPeers(Landroid/net/wifi/p2p/WifiP2pManager$Channel;ILandroid/net/wifi/p2p/WifiP2pManager$ActionListener;)V
     .locals 3
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pManager$Channel;
-    .param p2    # I
-    .param p3    # Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;
 
     invoke-static {p1}, Landroid/net/wifi/p2p/WifiP2pManager;->checkChannel(Landroid/net/wifi/p2p/WifiP2pManager$Channel;)V
 
@@ -912,8 +874,6 @@
 
 .method public discoverPeers(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;)V
     .locals 4
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pManager$Channel;
-    .param p2    # Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;
 
     invoke-static {p1}, Landroid/net/wifi/p2p/WifiP2pManager;->checkChannel(Landroid/net/wifi/p2p/WifiP2pManager$Channel;)V
 
@@ -938,9 +898,6 @@
 
 .method public discoverPeersWithFlush(Landroid/net/wifi/p2p/WifiP2pManager$Channel;ILandroid/net/wifi/p2p/WifiP2pManager$ActionListener;)V
     .locals 3
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pManager$Channel;
-    .param p2    # I
-    .param p3    # Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;
 
     invoke-static {p1}, Landroid/net/wifi/p2p/WifiP2pManager;->checkChannel(Landroid/net/wifi/p2p/WifiP2pManager$Channel;)V
 
@@ -963,9 +920,6 @@
 
 .method public discoverServices(Landroid/net/wifi/p2p/WifiP2pManager$Channel;ILandroid/net/wifi/p2p/WifiP2pManager$ActionListener;)V
     .locals 3
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pManager$Channel;
-    .param p2    # I
-    .param p3    # Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;
 
     invoke-static {p1}, Landroid/net/wifi/p2p/WifiP2pManager;->checkChannel(Landroid/net/wifi/p2p/WifiP2pManager$Channel;)V
 
@@ -988,8 +942,6 @@
 
 .method public discoverServices(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;)V
     .locals 4
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pManager$Channel;
-    .param p2    # Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;
 
     invoke-static {p1}, Landroid/net/wifi/p2p/WifiP2pManager;->checkChannel(Landroid/net/wifi/p2p/WifiP2pManager$Channel;)V
 
@@ -1014,7 +966,6 @@
 
 .method public enableP2p(Landroid/net/wifi/p2p/WifiP2pManager$Channel;)V
     .locals 2
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pManager$Channel;
 
     invoke-static {p1}, Landroid/net/wifi/p2p/WifiP2pManager;->checkChannel(Landroid/net/wifi/p2p/WifiP2pManager$Channel;)V
 
@@ -1072,9 +1023,6 @@
 
 .method public initialize(Landroid/content/Context;Landroid/os/Looper;Landroid/net/wifi/p2p/WifiP2pManager$ChannelListener;)Landroid/net/wifi/p2p/WifiP2pManager$Channel;
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/Looper;
-    .param p3    # Landroid/net/wifi/p2p/WifiP2pManager$ChannelListener;
 
     const/4 v2, 0x0
 
@@ -1141,9 +1089,6 @@
 
 .method public listen(Landroid/net/wifi/p2p/WifiP2pManager$Channel;ZLandroid/net/wifi/p2p/WifiP2pManager$ActionListener;)V
     .locals 4
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pManager$Channel;
-    .param p2    # Z
-    .param p3    # Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;
 
     invoke-static {p1}, Landroid/net/wifi/p2p/WifiP2pManager;->checkChannel(Landroid/net/wifi/p2p/WifiP2pManager$Channel;)V
 
@@ -1176,8 +1121,6 @@
 
 .method public removeGroup(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;)V
     .locals 4
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pManager$Channel;
-    .param p2    # Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;
 
     invoke-static {p1}, Landroid/net/wifi/p2p/WifiP2pManager;->checkChannel(Landroid/net/wifi/p2p/WifiP2pManager$Channel;)V
 
@@ -1219,9 +1162,6 @@
 
 .method public removeLocalService(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/nsd/WifiP2pServiceInfo;Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;)V
     .locals 4
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pManager$Channel;
-    .param p2    # Landroid/net/wifi/p2p/nsd/WifiP2pServiceInfo;
-    .param p3    # Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;
 
     invoke-static {p1}, Landroid/net/wifi/p2p/WifiP2pManager;->checkChannel(Landroid/net/wifi/p2p/WifiP2pManager$Channel;)V
 
@@ -1248,9 +1188,6 @@
 
 .method public removeServiceRequest(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/nsd/WifiP2pServiceRequest;Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;)V
     .locals 4
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pManager$Channel;
-    .param p2    # Landroid/net/wifi/p2p/nsd/WifiP2pServiceRequest;
-    .param p3    # Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;
 
     invoke-static {p1}, Landroid/net/wifi/p2p/WifiP2pManager;->checkChannel(Landroid/net/wifi/p2p/WifiP2pManager$Channel;)V
 
@@ -1277,8 +1214,6 @@
 
 .method public requestConfigList(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/WifiP2pManager$ConfigListListener;)V
     .locals 4
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pManager$Channel;
-    .param p2    # Landroid/net/wifi/p2p/WifiP2pManager$ConfigListListener;
 
     invoke-static {p1}, Landroid/net/wifi/p2p/WifiP2pManager;->checkChannel(Landroid/net/wifi/p2p/WifiP2pManager$Channel;)V
 
@@ -1303,8 +1238,6 @@
 
 .method public requestConnectionInfo(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/WifiP2pManager$ConnectionInfoListener;)V
     .locals 4
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pManager$Channel;
-    .param p2    # Landroid/net/wifi/p2p/WifiP2pManager$ConnectionInfoListener;
 
     invoke-static {p1}, Landroid/net/wifi/p2p/WifiP2pManager;->checkChannel(Landroid/net/wifi/p2p/WifiP2pManager$Channel;)V
 
@@ -1329,8 +1262,6 @@
 
 .method public requestGroupInfo(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/WifiP2pManager$GroupInfoListener;)V
     .locals 4
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pManager$Channel;
-    .param p2    # Landroid/net/wifi/p2p/WifiP2pManager$GroupInfoListener;
 
     invoke-static {p1}, Landroid/net/wifi/p2p/WifiP2pManager;->checkChannel(Landroid/net/wifi/p2p/WifiP2pManager$Channel;)V
 
@@ -1355,8 +1286,6 @@
 
 .method public requestNfcConnect(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;)V
     .locals 4
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pManager$Channel;
-    .param p2    # Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;
 
     invoke-static {p1}, Landroid/net/wifi/p2p/WifiP2pManager;->checkChannel(Landroid/net/wifi/p2p/WifiP2pManager$Channel;)V
 
@@ -1381,9 +1310,6 @@
 
 .method public requestNfcConnect(Landroid/net/wifi/p2p/WifiP2pManager$Channel;ZLandroid/net/wifi/p2p/WifiP2pManager$ActionListener;)V
     .locals 4
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pManager$Channel;
-    .param p2    # Z
-    .param p3    # Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;
 
     invoke-static {p1}, Landroid/net/wifi/p2p/WifiP2pManager;->checkChannel(Landroid/net/wifi/p2p/WifiP2pManager$Channel;)V
 
@@ -1416,8 +1342,6 @@
 
 .method public requestP2pListen(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;)V
     .locals 4
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pManager$Channel;
-    .param p2    # Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;
 
     invoke-static {p1}, Landroid/net/wifi/p2p/WifiP2pManager;->checkChannel(Landroid/net/wifi/p2p/WifiP2pManager$Channel;)V
 
@@ -1442,8 +1366,6 @@
 
 .method public requestPeers(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/WifiP2pManager$PeerListListener;)V
     .locals 4
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pManager$Channel;
-    .param p2    # Landroid/net/wifi/p2p/WifiP2pManager$PeerListListener;
 
     invoke-static {p1}, Landroid/net/wifi/p2p/WifiP2pManager;->checkChannel(Landroid/net/wifi/p2p/WifiP2pManager$Channel;)V
 
@@ -1468,8 +1390,6 @@
 
 .method public requestPersistentGroupInfo(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/WifiP2pManager$PersistentGroupInfoListener;)V
     .locals 4
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pManager$Channel;
-    .param p2    # Landroid/net/wifi/p2p/WifiP2pManager$PersistentGroupInfoListener;
 
     invoke-static {p1}, Landroid/net/wifi/p2p/WifiP2pManager;->checkChannel(Landroid/net/wifi/p2p/WifiP2pManager$Channel;)V
 
@@ -1494,9 +1414,6 @@
 
 .method public setDeviceName(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Ljava/lang/String;Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;)V
     .locals 5
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pManager$Channel;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;
 
     invoke-static {p1}, Landroid/net/wifi/p2p/WifiP2pManager;->checkChannel(Landroid/net/wifi/p2p/WifiP2pManager$Channel;)V
 
@@ -1527,8 +1444,6 @@
 
 .method public setDialogListener(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/WifiP2pManager$DialogListener;)V
     .locals 4
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pManager$Channel;
-    .param p2    # Landroid/net/wifi/p2p/WifiP2pManager$DialogListener;
 
     invoke-static {p1}, Landroid/net/wifi/p2p/WifiP2pManager;->checkChannel(Landroid/net/wifi/p2p/WifiP2pManager$Channel;)V
 
@@ -1585,9 +1500,6 @@
 
 .method public setDnsSdResponseListeners(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/WifiP2pManager$DnsSdServiceResponseListener;Landroid/net/wifi/p2p/WifiP2pManager$DnsSdTxtRecordListener;)V
     .locals 0
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pManager$Channel;
-    .param p2    # Landroid/net/wifi/p2p/WifiP2pManager$DnsSdServiceResponseListener;
-    .param p3    # Landroid/net/wifi/p2p/WifiP2pManager$DnsSdTxtRecordListener;
 
     invoke-static {p1}, Landroid/net/wifi/p2p/WifiP2pManager;->checkChannel(Landroid/net/wifi/p2p/WifiP2pManager$Channel;)V
 
@@ -1602,7 +1514,6 @@
 
 .method public setMiracastMode(I)V
     .locals 1
-    .param p1    # I
 
     :try_start_0
     iget-object v0, p0, Landroid/net/wifi/p2p/WifiP2pManager;->mService:Landroid/net/wifi/p2p/IWifiP2pManager;
@@ -1622,8 +1533,6 @@
 
 .method public setServiceResponseListener(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/WifiP2pManager$ServiceResponseListener;)V
     .locals 0
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pManager$Channel;
-    .param p2    # Landroid/net/wifi/p2p/WifiP2pManager$ServiceResponseListener;
 
     invoke-static {p1}, Landroid/net/wifi/p2p/WifiP2pManager;->checkChannel(Landroid/net/wifi/p2p/WifiP2pManager$Channel;)V
 
@@ -1635,8 +1544,6 @@
 
 .method public setStopfindTimer(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Z)V
     .locals 3
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pManager$Channel;
-    .param p2    # Z
 
     invoke-static {p1}, Landroid/net/wifi/p2p/WifiP2pManager;->checkChannel(Landroid/net/wifi/p2p/WifiP2pManager$Channel;)V
 
@@ -1664,8 +1571,6 @@
 
 .method public setUpnpServiceResponseListener(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/WifiP2pManager$UpnpServiceResponseListener;)V
     .locals 0
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pManager$Channel;
-    .param p2    # Landroid/net/wifi/p2p/WifiP2pManager$UpnpServiceResponseListener;
 
     invoke-static {p1}, Landroid/net/wifi/p2p/WifiP2pManager;->checkChannel(Landroid/net/wifi/p2p/WifiP2pManager$Channel;)V
 
@@ -1677,9 +1582,6 @@
 
 .method public setWFDInfo(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/WifiP2pWfdInfo;Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;)V
     .locals 4
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pManager$Channel;
-    .param p2    # Landroid/net/wifi/p2p/WifiP2pWfdInfo;
-    .param p3    # Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;
 
     invoke-static {p1}, Landroid/net/wifi/p2p/WifiP2pManager;->checkChannel(Landroid/net/wifi/p2p/WifiP2pManager$Channel;)V
 
@@ -1704,10 +1606,6 @@
 
 .method public setWifiP2pChannels(Landroid/net/wifi/p2p/WifiP2pManager$Channel;IILandroid/net/wifi/p2p/WifiP2pManager$ActionListener;)V
     .locals 5
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pManager$Channel;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;
 
     invoke-static {p1}, Landroid/net/wifi/p2p/WifiP2pManager;->checkChannel(Landroid/net/wifi/p2p/WifiP2pManager$Channel;)V
 
@@ -1744,9 +1642,6 @@
 
 .method public startWps(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/WpsInfo;Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;)V
     .locals 4
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pManager$Channel;
-    .param p2    # Landroid/net/wifi/WpsInfo;
-    .param p3    # Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;
 
     invoke-static {p1}, Landroid/net/wifi/p2p/WifiP2pManager;->checkChannel(Landroid/net/wifi/p2p/WifiP2pManager$Channel;)V
 
@@ -1771,8 +1666,6 @@
 
 .method public stopPeerDiscovery(Landroid/net/wifi/p2p/WifiP2pManager$Channel;Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;)V
     .locals 4
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pManager$Channel;
-    .param p2    # Landroid/net/wifi/p2p/WifiP2pManager$ActionListener;
 
     invoke-static {p1}, Landroid/net/wifi/p2p/WifiP2pManager;->checkChannel(Landroid/net/wifi/p2p/WifiP2pManager$Channel;)V
 

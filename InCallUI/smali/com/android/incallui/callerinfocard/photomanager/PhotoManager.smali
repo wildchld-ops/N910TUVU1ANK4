@@ -17,7 +17,6 @@
 
 .method public static declared-synchronized createPhotoManager(Landroid/content/Context;)Lcom/android/incallui/callerinfocard/photomanager/PhotoManager;
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     const-class v1, Lcom/android/incallui/callerinfocard/photomanager/PhotoManager;
 
@@ -44,7 +43,6 @@
 
 .method public static getInstance(Landroid/content/Context;)Lcom/android/incallui/callerinfocard/photomanager/PhotoManager;
     .locals 5
-    .param p0    # Landroid/content/Context;
 
     invoke-virtual {p0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
@@ -97,7 +95,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 0
-    .param p1    # Landroid/content/res/Configuration;
 
     return-void
 .end method
@@ -110,7 +107,6 @@
 
 .method public onTrimMemory(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method

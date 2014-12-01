@@ -33,8 +33,6 @@
 # virtual methods
 .method public onInitializeAccessibilityEvent(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)V
     .locals 4
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/accessibility/AccessibilityEvent;
 
     iget-object v1, p0, Lcom/android/mms/ui/MmsPlayerControllerMulti$5;->this$0:Lcom/android/mms/ui/MmsPlayerControllerMulti;
 

@@ -42,7 +42,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Ljava/util/List;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -87,8 +86,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Ljava/util/List;I)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -109,9 +106,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Ljava/util/List;IZ)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p3    # I
-    .param p4    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -142,9 +136,6 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 11
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     const/16 v10, 0x8
 
@@ -362,7 +353,6 @@
 
 .method public setSelectedId(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/preference/PreferenceActivity$HeaderAdapter;->mSelectedId:I
 

@@ -36,9 +36,6 @@
 # virtual methods
 .method public onTimeUpdate(Landroid/animation/TimeAnimator;JJ)V
     .locals 1
-    .param p1    # Landroid/animation/TimeAnimator;
-    .param p2    # J
-    .param p4    # J
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/PanelView$1;->this$0:Lcom/android/systemui/statusbar/phone/PanelView;
 

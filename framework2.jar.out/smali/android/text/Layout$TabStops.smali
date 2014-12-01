@@ -25,8 +25,6 @@
 # direct methods
 .method constructor <init>(I[Ljava/lang/Object;)V
     .locals 0
-    .param p1    # I
-    .param p2    # [Ljava/lang/Object;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,8 +35,6 @@
 
 .method public static nextDefaultStop(FI)F
     .locals 2
-    .param p0    # F
-    .param p1    # I
 
     int-to-float v0, p1
 
@@ -61,7 +57,6 @@
 # virtual methods
 .method nextTab(F)F
     .locals 5
-    .param p1    # F
 
     iget v1, p0, Landroid/text/Layout$TabStops;->mNumStops:I
 
@@ -104,8 +99,6 @@
 
 .method reset(I[Ljava/lang/Object;)V
     .locals 10
-    .param p1    # I
-    .param p2    # [Ljava/lang/Object;
 
     iput p1, p0, Landroid/text/Layout$TabStops;->mIncrement:I
 

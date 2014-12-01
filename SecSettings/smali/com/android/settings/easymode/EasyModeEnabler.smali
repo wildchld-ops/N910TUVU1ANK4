@@ -21,8 +21,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/widget/Switch;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/widget/Switch;
 
     const/4 v2, 0x0
 
@@ -57,7 +55,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/easymode/EasyModeEnabler;)Landroid/widget/Switch;
     .locals 1
-    .param p0    # Lcom/android/settings/easymode/EasyModeEnabler;
 
     iget-object v0, p0, Lcom/android/settings/easymode/EasyModeEnabler;->mSwitch:Landroid/widget/Switch;
 
@@ -66,8 +63,6 @@
 
 .method static synthetic access$102(Lcom/android/settings/easymode/EasyModeEnabler;Landroid/app/AlertDialog;)Landroid/app/AlertDialog;
     .locals 0
-    .param p0    # Lcom/android/settings/easymode/EasyModeEnabler;
-    .param p1    # Landroid/app/AlertDialog;
 
     iput-object p1, p0, Lcom/android/settings/easymode/EasyModeEnabler;->mEnableEasyModeDialog:Landroid/app/AlertDialog;
 
@@ -161,7 +156,6 @@
 # virtual methods
 .method public getEasyModeAppState(Ljava/lang/String;)I
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/settings/easymode/EasyModeEnabler;->mContext:Landroid/content/Context;
 
@@ -180,8 +174,6 @@
 
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 5
-    .param p1    # Landroid/widget/CompoundButton;
-    .param p2    # Z
 
     const-string v2, "EasyModeEnabler"
 
@@ -355,7 +347,6 @@
 
 .method public sendChangeCameraIntent(Z)V
     .locals 2
-    .param p1    # Z
 
     new-instance v0, Landroid/content/Intent;
 
@@ -376,7 +367,6 @@
 
 .method public sendChangeContactIntent(Z)V
     .locals 2
-    .param p1    # Z
 
     new-instance v0, Landroid/content/Intent;
 
@@ -397,7 +387,6 @@
 
 .method public sendChangeMessageIntent(Z)V
     .locals 2
-    .param p1    # Z
 
     new-instance v0, Landroid/content/Intent;
 
@@ -418,7 +407,6 @@
 
 .method public sendChangeMusicIntent(Z)V
     .locals 2
-    .param p1    # Z
 
     new-instance v0, Landroid/content/Intent;
 
@@ -439,7 +427,6 @@
 
 .method public sendChangeVoiceNotentent(Z)V
     .locals 2
-    .param p1    # Z
 
     new-instance v0, Landroid/content/Intent;
 
@@ -460,8 +447,6 @@
 
 .method public setEasyModeApp(Ljava/lang/String;I)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/settings/easymode/EasyModeEnabler;->mContext:Landroid/content/Context;
 
@@ -476,7 +461,6 @@
 
 .method public setEasyModeState(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/settings/easymode/EasyModeEnabler;->mContext:Landroid/content/Context;
 
@@ -553,7 +537,6 @@
 
 .method public startLauncher(Z)V
     .locals 5
-    .param p1    # Z
 
     const-string v3, "EasyModeEnabler"
 

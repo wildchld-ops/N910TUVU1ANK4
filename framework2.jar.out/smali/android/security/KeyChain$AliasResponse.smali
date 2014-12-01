@@ -21,7 +21,6 @@
 # direct methods
 .method private constructor <init>(Landroid/security/KeyChainAliasCallback;)V
     .locals 0
-    .param p1    # Landroid/security/KeyChainAliasCallback;
 
     invoke-direct {p0}, Landroid/security/IKeyChainAliasCallback$Stub;-><init>()V
 
@@ -32,8 +31,6 @@
 
 .method synthetic constructor <init>(Landroid/security/KeyChainAliasCallback;Landroid/security/KeyChain$1;)V
     .locals 0
-    .param p1    # Landroid/security/KeyChainAliasCallback;
-    .param p2    # Landroid/security/KeyChain$1;
 
     invoke-direct {p0, p1}, Landroid/security/KeyChain$AliasResponse;-><init>(Landroid/security/KeyChainAliasCallback;)V
 
@@ -44,7 +41,6 @@
 # virtual methods
 .method public alias(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/security/KeyChain$AliasResponse;->keyChainAliasResponse:Landroid/security/KeyChainAliasCallback;
 

@@ -40,7 +40,6 @@
 # virtual methods
 .method public createFromParcel(Landroid/os/Parcel;)Lcom/absolute/android/persistence/MethodSpec;
     .locals 2
-    .param p1    # Landroid/os/Parcel;
 
     new-instance v0, Lcom/absolute/android/persistence/MethodSpec;
 
@@ -53,7 +52,6 @@
 
 .method public bridge synthetic createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     invoke-virtual {p0, p1}, Lcom/absolute/android/persistence/MethodSpec$1;->createFromParcel(Landroid/os/Parcel;)Lcom/absolute/android/persistence/MethodSpec;
 
@@ -64,7 +62,6 @@
 
 .method public newArray(I)[Lcom/absolute/android/persistence/MethodSpec;
     .locals 1
-    .param p1    # I
 
     new-array v0, p1, [Lcom/absolute/android/persistence/MethodSpec;
 
@@ -73,7 +70,6 @@
 
 .method public bridge synthetic newArray(I)[Ljava/lang/Object;
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/absolute/android/persistence/MethodSpec$1;->newArray(I)[Lcom/absolute/android/persistence/MethodSpec;
 

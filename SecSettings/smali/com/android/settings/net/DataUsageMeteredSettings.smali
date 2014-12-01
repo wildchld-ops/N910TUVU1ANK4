@@ -58,8 +58,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/net/DataUsageMeteredSettings;Landroid/content/Context;)V
     .locals 0
-    .param p0    # Lcom/android/settings/net/DataUsageMeteredSettings;
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Lcom/android/settings/net/DataUsageMeteredSettings;->updateNetworks(Landroid/content/Context;)V
 
@@ -68,7 +66,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/net/DataUsageMeteredSettings;)Lcom/android/settings/net/NetworkPolicyEditor;
     .locals 1
-    .param p0    # Lcom/android/settings/net/DataUsageMeteredSettings;
 
     iget-object v0, p0, Lcom/android/settings/net/DataUsageMeteredSettings;->mPolicyEditor:Lcom/android/settings/net/NetworkPolicyEditor;
 
@@ -77,8 +74,6 @@
 
 .method private buildWifiPref(Landroid/content/Context;Landroid/net/wifi/WifiConfiguration;)Landroid/preference/Preference;
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/net/wifi/WifiConfiguration;
 
     iget-object v0, p2, Landroid/net/wifi/WifiConfiguration;->SSID:Ljava/lang/String;
 
@@ -101,7 +96,6 @@
 
 .method private updateNetworks(Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     invoke-virtual {p0}, Landroid/preference/PreferenceFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
@@ -190,7 +184,6 @@
 # virtual methods
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 

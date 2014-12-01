@@ -34,14 +34,6 @@
 # direct methods
 .method constructor <init>(IILandroid/media/IAudioFocusDispatcher;Landroid/os/IBinder;Ljava/lang/String;Landroid/media/MediaFocusControl$AudioFocusDeathHandler;Ljava/lang/String;I)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/media/IAudioFocusDispatcher;
-    .param p4    # Landroid/os/IBinder;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Landroid/media/MediaFocusControl$AudioFocusDeathHandler;
-    .param p7    # Ljava/lang/String;
-    .param p8    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -74,7 +66,6 @@
 
 .method private static focusChangeToString(I)Ljava/lang/String;
     .locals 2
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -174,7 +165,6 @@
 
 .method private focusLossForGainRequest(I)I
     .locals 3
-    .param p1    # I
 
     const/4 v1, -0x2
 
@@ -294,7 +284,6 @@
 # virtual methods
 .method dump(Ljava/io/PrintWriter;)V
     .locals 2
-    .param p1    # Ljava/io/PrintWriter;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -450,7 +439,6 @@
 
 .method handleExternalFocusGain(I)V
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/media/FocusRequester;->focusLossForGainRequest(I)I
 
@@ -463,7 +451,6 @@
 
 .method handleFocusGain(I)V
     .locals 3
-    .param p1    # I
 
     :try_start_0
     iget-object v1, p0, Landroid/media/FocusRequester;->mFocusDispatcher:Landroid/media/IAudioFocusDispatcher;
@@ -504,7 +491,6 @@
 
 .method handleFocusLoss(I)V
     .locals 3
-    .param p1    # I
 
     :try_start_0
     iget v1, p0, Landroid/media/FocusRequester;->mFocusLossReceived:I
@@ -544,7 +530,6 @@
 
 .method hasSameBinder(Landroid/os/IBinder;)Z
     .locals 1
-    .param p1    # Landroid/os/IBinder;
 
     iget-object v0, p0, Landroid/media/FocusRequester;->mSourceRef:Landroid/os/IBinder;
 
@@ -571,7 +556,6 @@
 
 .method hasSameClient(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -600,7 +584,6 @@
 
 .method hasSamePackage(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -629,7 +612,6 @@
 
 .method hasSameUid(I)Z
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/media/FocusRequester;->mCallingUid:I
 

@@ -75,7 +75,7 @@
 
     const/4 v5, 0x1
 
-    invoke-virtual {p0}, Landroid/preference/TwoStatePreference;->isChecked()Z
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/PowerKeyEndPreference;->isChecked()Z
 
     move-result v1
 
@@ -107,7 +107,7 @@
 
     iput-boolean v4, p0, Lcom/android/phone/callsettings/PowerKeyEndPreference;->endPowerKeyEndChecked:Z
 
-    invoke-virtual {p0}, Landroid/preference/TwoStatePreference;->isChecked()Z
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/PowerKeyEndPreference;->isChecked()Z
 
     move-result v2
 
@@ -117,7 +117,7 @@
 
     iget-boolean v2, p0, Lcom/android/phone/callsettings/PowerKeyEndPreference;->endPowerKeyEndChecked:Z
 
-    invoke-virtual {p0, v2}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+    invoke-virtual {p0, v2}, Lcom/android/phone/callsettings/PowerKeyEndPreference;->setChecked(Z)V
 
     :cond_0
     new-instance v2, Landroid/app/AlertDialog$Builder;
@@ -180,7 +180,7 @@
 
     invoke-direct {v3, p0}, Lcom/android/phone/callsettings/PowerKeyEndPreference$1;-><init>(Lcom/android/phone/callsettings/PowerKeyEndPreference;)V
 
-    invoke-virtual {v2, v3}, Landroid/app/Dialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
+    invoke-virtual {v2, v3}, Landroid/app/AlertDialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
     :cond_1
     :goto_0
@@ -216,7 +216,7 @@
 
     iput-boolean v5, p0, Lcom/android/phone/callsettings/PowerKeyEndPreference;->endPowerKeyEndChecked:Z
 
-    invoke-virtual {p0}, Landroid/preference/TwoStatePreference;->isChecked()Z
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/PowerKeyEndPreference;->isChecked()Z
 
     move-result v2
 
@@ -226,7 +226,7 @@
 
     iget-boolean v2, p0, Lcom/android/phone/callsettings/PowerKeyEndPreference;->endPowerKeyEndChecked:Z
 
-    invoke-virtual {p0, v2}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+    invoke-virtual {p0, v2}, Lcom/android/phone/callsettings/PowerKeyEndPreference;->setChecked(Z)V
 
     goto :goto_0
 
@@ -243,7 +243,7 @@
 
     iput-boolean v4, p0, Lcom/android/phone/callsettings/PowerKeyEndPreference;->endPowerKeyEndChecked:Z
 
-    invoke-virtual {p0}, Landroid/preference/TwoStatePreference;->isChecked()Z
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/PowerKeyEndPreference;->isChecked()Z
 
     move-result v2
 
@@ -253,7 +253,7 @@
 
     iget-boolean v2, p0, Lcom/android/phone/callsettings/PowerKeyEndPreference;->endPowerKeyEndChecked:Z
 
-    invoke-virtual {p0, v2}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+    invoke-virtual {p0, v2}, Lcom/android/phone/callsettings/PowerKeyEndPreference;->setChecked(Z)V
 
     goto :goto_0
 

@@ -46,7 +46,6 @@
 # virtual methods
 .method public close(Ljava/io/BufferedWriter;)V
     .locals 0
-    .param p1    # Ljava/io/BufferedWriter;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -60,7 +59,6 @@
 
 .method public bridge synthetic close(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -76,7 +74,6 @@
 
 .method public flush(Ljava/io/BufferedWriter;)V
     .locals 0
-    .param p1    # Ljava/io/BufferedWriter;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -90,7 +87,6 @@
 
 .method public bridge synthetic flush(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -144,7 +140,6 @@
 
 .method public process(Ljava/io/BufferedWriter;)V
     .locals 3
-    .param p1    # Ljava/io/BufferedWriter;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -188,7 +183,6 @@
 
 .method public bridge synthetic process(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

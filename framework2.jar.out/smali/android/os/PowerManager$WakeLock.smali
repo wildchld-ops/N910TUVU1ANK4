@@ -39,9 +39,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/PowerManager;ILjava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/os/PowerManager$WakeLock;->this$0:Landroid/os/PowerManager;
 
@@ -172,7 +169,6 @@
 
 .method public acquire(J)V
     .locals 3
-    .param p1    # J
 
     iget-object v1, p0, Landroid/os/PowerManager$WakeLock;->mToken:Landroid/os/IBinder;
 
@@ -318,7 +314,6 @@
 
 .method public release(I)V
     .locals 4
-    .param p1    # I
 
     iget-object v1, p0, Landroid/os/PowerManager$WakeLock;->mToken:Landroid/os/IBinder;
 
@@ -426,7 +421,6 @@
 
 .method public setReferenceCounted(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v1, p0, Landroid/os/PowerManager$WakeLock;->mToken:Landroid/os/IBinder;
 
@@ -451,7 +445,6 @@
 
 .method public setWorkSource(Landroid/os/WorkSource;)V
     .locals 5
-    .param p1    # Landroid/os/WorkSource;
 
     iget-object v2, p0, Landroid/os/PowerManager$WakeLock;->mToken:Landroid/os/IBinder;
 

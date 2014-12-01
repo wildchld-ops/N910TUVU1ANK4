@@ -28,8 +28,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/launcher2/AvailableSamsungWidgetListProvider;Lcom/android/launcher2/SamsungWidgetProviderInfo;Z)V
     .locals 0
-    .param p2    # Lcom/android/launcher2/SamsungWidgetProviderInfo;
-    .param p3    # Z
 
     iput-object p1, p0, Lcom/android/launcher2/AvailableSamsungWidgetListProvider$AvailableSamsungWidget;->this$0:Lcom/android/launcher2/AvailableSamsungWidgetListProvider;
 
@@ -72,7 +70,6 @@
 
 .method public dump(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "SamsungWidget TODO"
 
@@ -83,7 +80,6 @@
 
 .method public getCellSpan([I)V
     .locals 8
-    .param p1    # [I
 
     const/4 v5, 0x2
 
@@ -152,8 +148,6 @@
 
 .method public getPreview(II)Landroid/graphics/Bitmap;
     .locals 8
-    .param p1    # I
-    .param p2    # I
 
     const/4 v4, 0x0
 
@@ -252,7 +246,6 @@
 
 .method public setSecret(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/launcher2/AvailableSamsungWidgetListProvider$AvailableSamsungWidget;->mIsSecret:Z
 

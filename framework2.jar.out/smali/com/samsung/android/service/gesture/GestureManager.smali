@@ -66,8 +66,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Lcom/samsung/android/service/gesture/GestureManager$ServiceConnectionListener;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/samsung/android/service/gesture/GestureManager$ServiceConnectionListener;
 
     const/4 v1, 0x0
 
@@ -110,8 +108,6 @@
 
 .method static synthetic access$002(Lcom/samsung/android/service/gesture/GestureManager;Z)Z
     .locals 0
-    .param p0    # Lcom/samsung/android/service/gesture/GestureManager;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/android/service/gesture/GestureManager;->mGestureActive:Z
 
@@ -120,8 +116,6 @@
 
 .method static synthetic access$102(Lcom/samsung/android/service/gesture/GestureManager;Lcom/samsung/android/service/gesture/IGestureService;)Lcom/samsung/android/service/gesture/IGestureService;
     .locals 0
-    .param p0    # Lcom/samsung/android/service/gesture/GestureManager;
-    .param p1    # Lcom/samsung/android/service/gesture/IGestureService;
 
     iput-object p1, p0, Lcom/samsung/android/service/gesture/GestureManager;->mService:Lcom/samsung/android/service/gesture/IGestureService;
 
@@ -130,8 +124,6 @@
 
 .method static synthetic access$202(Lcom/samsung/android/service/gesture/GestureManager;Z)Z
     .locals 0
-    .param p0    # Lcom/samsung/android/service/gesture/GestureManager;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/android/service/gesture/GestureManager;->mBound:Z
 
@@ -140,7 +132,6 @@
 
 .method static synthetic access$300(Lcom/samsung/android/service/gesture/GestureManager;)Lcom/samsung/android/service/gesture/GestureManager$ServiceConnectionListener;
     .locals 1
-    .param p0    # Lcom/samsung/android/service/gesture/GestureManager;
 
     iget-object v0, p0, Lcom/samsung/android/service/gesture/GestureManager;->mConnectionListener:Lcom/samsung/android/service/gesture/GestureManager$ServiceConnectionListener;
 
@@ -149,7 +140,6 @@
 
 .method static synthetic access$400(Lcom/samsung/android/service/gesture/GestureManager;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/samsung/android/service/gesture/GestureManager;
 
     iget-object v0, p0, Lcom/samsung/android/service/gesture/GestureManager;->mContext:Landroid/content/Context;
 
@@ -182,8 +172,6 @@
 
 .method private createProvider(Ljava/lang/String;Landroid/os/Bundle;)Lcom/samsung/android/service/gesture/GestureProviderInfo;
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Bundle;
 
     new-instance v0, Lcom/samsung/android/service/gesture/GestureProviderInfo;
 
@@ -254,7 +242,6 @@
 
 .method public getProvider(Ljava/lang/String;)Lcom/samsung/android/service/gesture/GestureProviderInfo;
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -342,8 +329,6 @@
 
 .method public registerListener(Lcom/samsung/android/service/gesture/GestureListener;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Lcom/samsung/android/service/gesture/GestureListener;
-    .param p2    # Ljava/lang/String;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -356,9 +341,6 @@
 
 .method public registerListener(Lcom/samsung/android/service/gesture/GestureListener;Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Lcom/samsung/android/service/gesture/GestureListener;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -369,10 +351,6 @@
 
 .method public registerListener(Lcom/samsung/android/service/gesture/GestureListener;Ljava/lang/String;Ljava/lang/String;Z)V
     .locals 6
-    .param p1    # Lcom/samsung/android/service/gesture/GestureListener;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Z
 
     iget-boolean v4, p0, Lcom/samsung/android/service/gesture/GestureManager;->mBound:Z
 
@@ -463,7 +441,6 @@
 
 .method public resetGestureService(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     iget-object v1, p0, Lcom/samsung/android/service/gesture/GestureManager;->mService:Lcom/samsung/android/service/gesture/IGestureService;
@@ -485,7 +462,6 @@
 
 .method public sendInputEvent(Landroid/view/InputEvent;)V
     .locals 4
-    .param p1    # Landroid/view/InputEvent;
 
     iget-object v1, p0, Lcom/samsung/android/service/gesture/GestureManager;->mAirGestureActiveStatusFilter:Landroid/content/IntentFilter;
 
@@ -575,7 +551,6 @@
 
 .method public unregisterListener(Lcom/samsung/android/service/gesture/GestureListener;)V
     .locals 1
-    .param p1    # Lcom/samsung/android/service/gesture/GestureListener;
 
     const-string v0, "camera_provider"
 
@@ -594,8 +569,6 @@
 
 .method public unregisterListener(Lcom/samsung/android/service/gesture/GestureListener;Ljava/lang/String;)V
     .locals 6
-    .param p1    # Lcom/samsung/android/service/gesture/GestureListener;
-    .param p2    # Ljava/lang/String;
 
     const-string v4, "GestureManager"
 

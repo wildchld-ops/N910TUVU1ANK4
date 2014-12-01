@@ -149,7 +149,7 @@
 
     invoke-virtual {v0, p0, v1}, Landroid/content/Intent;->setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/ErrorDialogActivity;->startActivity(Landroid/content/Intent;)V
 
     invoke-virtual {p0}, Lcom/android/phone/ErrorDialogActivity;->finish()V
 
@@ -251,7 +251,7 @@
 
     if-eqz v5, :cond_1
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/phone/ErrorDialogActivity;->getIntent()Landroid/content/Intent;
 
     move-result-object v5
 
@@ -393,7 +393,7 @@
 .method private setFlagToShowWhenLocked()V
     .locals 3
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
+    invoke-virtual {p0}, Lcom/android/phone/ErrorDialogActivity;->getWindow()Landroid/view/Window;
 
     move-result-object v1
 
@@ -409,7 +409,7 @@
 
     iput v1, v0, Landroid/view/WindowManager$LayoutParams;->flags:I
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
+    invoke-virtual {p0}, Lcom/android/phone/ErrorDialogActivity;->getWindow()Landroid/view/Window;
 
     move-result-object v1
 
@@ -503,7 +503,7 @@
 
     const v1, 0x7f090449
 
-    invoke-virtual {p0, v1}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v1}, Lcom/android/phone/ErrorDialogActivity;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v1
 
@@ -521,7 +521,7 @@
 
     invoke-direct {v1, p0}, Lcom/android/phone/ErrorDialogActivity$18;-><init>(Lcom/android/phone/ErrorDialogActivity;)V
 
-    invoke-virtual {v0, v1}, Landroid/app/Dialog;->setOnCancelListener(Landroid/content/DialogInterface$OnCancelListener;)V
+    invoke-virtual {v0, v1}, Landroid/app/ProgressDialog;->setOnCancelListener(Landroid/content/DialogInterface$OnCancelListener;)V
 
     iget-object v0, p0, Lcom/android/phone/ErrorDialogActivity;->mAirplaneModeOffProgressDialog:Landroid/app/ProgressDialog;
 
@@ -529,19 +529,19 @@
 
     invoke-direct {v1, p0}, Lcom/android/phone/ErrorDialogActivity$19;-><init>(Lcom/android/phone/ErrorDialogActivity;)V
 
-    invoke-virtual {v0, v1}, Landroid/app/Dialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
+    invoke-virtual {v0, v1}, Landroid/app/ProgressDialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
     iget-object v0, p0, Lcom/android/phone/ErrorDialogActivity;->mAirplaneModeOffProgressDialog:Landroid/app/ProgressDialog;
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Landroid/app/Dialog;->setCanceledOnTouchOutside(Z)V
+    invoke-virtual {v0, v1}, Landroid/app/ProgressDialog;->setCanceledOnTouchOutside(Z)V
 
     invoke-direct {p0}, Lcom/android/phone/ErrorDialogActivity;->sendRadioOnTimerMessageDelayed()V
 
     iget-object v0, p0, Lcom/android/phone/ErrorDialogActivity;->mAirplaneModeOffProgressDialog:Landroid/app/ProgressDialog;
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->show()V
+    invoke-virtual {v0}, Landroid/app/ProgressDialog;->show()V
 
     return-void
 .end method
@@ -596,7 +596,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
+    invoke-virtual {v1}, Landroid/app/AlertDialog;->getWindow()Landroid/view/Window;
 
     move-result-object v4
 
@@ -604,7 +604,7 @@
 
     invoke-virtual {v4, v5}, Landroid/view/Window;->addFlags(I)V
 
-    invoke-virtual {v1}, Landroid/app/Dialog;->show()V
+    invoke-virtual {v1}, Landroid/app/AlertDialog;->show()V
 
     return-void
 .end method
@@ -676,7 +676,7 @@
     .locals 1
     .param p1    # I
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/ErrorDialogActivity;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -741,7 +741,7 @@
     :pswitch_0
     sget-object v0, Lcom/android/phone/Constants$CallStatusCode;->EMERGENCY_CALL_FROM_AIRPLANE_MODE_DIALOG:Lcom/android/phone/Constants$CallStatusCode;
 
-    invoke-virtual {v0, p2}, Ljava/lang/Enum;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v0, p2}, Lcom/android/phone/Constants$CallStatusCode;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -801,7 +801,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v2}, Landroid/app/Dialog;->show()V
+    invoke-virtual {v2}, Landroid/app/AlertDialog;->show()V
 
     return-void
 .end method
@@ -913,15 +913,15 @@
 
     iget-object v0, p0, Lcom/android/phone/ErrorDialogActivity;->mRadioOnProgressDialog:Landroid/app/ProgressDialog;
 
-    invoke-virtual {p0, p1}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, p1}, Lcom/android/phone/ErrorDialogActivity;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Landroid/app/AlertDialog;->setTitle(Ljava/lang/CharSequence;)V
+    invoke-virtual {v0, v1}, Landroid/app/ProgressDialog;->setTitle(Ljava/lang/CharSequence;)V
 
     iget-object v0, p0, Lcom/android/phone/ErrorDialogActivity;->mRadioOnProgressDialog:Landroid/app/ProgressDialog;
 
-    invoke-virtual {p0, p2}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, p2}, Lcom/android/phone/ErrorDialogActivity;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v1
 
@@ -937,11 +937,11 @@
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Landroid/app/Dialog;->setCancelable(Z)V
+    invoke-virtual {v0, v1}, Landroid/app/ProgressDialog;->setCancelable(Z)V
 
     iget-object v0, p0, Lcom/android/phone/ErrorDialogActivity;->mRadioOnProgressDialog:Landroid/app/ProgressDialog;
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
+    invoke-virtual {v0}, Landroid/app/ProgressDialog;->getWindow()Landroid/view/Window;
 
     move-result-object v0
 
@@ -951,7 +951,7 @@
 
     iget-object v0, p0, Lcom/android/phone/ErrorDialogActivity;->mRadioOnProgressDialog:Landroid/app/ProgressDialog;
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
+    invoke-virtual {v0}, Landroid/app/ProgressDialog;->getWindow()Landroid/view/Window;
 
     move-result-object v0
 
@@ -961,7 +961,7 @@
 
     iget-object v0, p0, Lcom/android/phone/ErrorDialogActivity;->mRadioOnProgressDialog:Landroid/app/ProgressDialog;
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->show()V
+    invoke-virtual {v0}, Landroid/app/ProgressDialog;->show()V
 
     return-void
 .end method
@@ -971,7 +971,7 @@
     .param p1    # I
     .param p2    # Ljava/lang/String;
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/ErrorDialogActivity;->getResources()Landroid/content/res/Resources;
 
     move-result-object v3
 
@@ -1021,7 +1021,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v2}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
+    invoke-virtual {v2}, Landroid/app/AlertDialog;->getWindow()Landroid/view/Window;
 
     move-result-object v3
 
@@ -1029,7 +1029,7 @@
 
     invoke-virtual {v3, v4}, Landroid/view/Window;->addFlags(I)V
 
-    invoke-virtual {v2}, Landroid/app/Dialog;->show()V
+    invoke-virtual {v2}, Landroid/app/AlertDialog;->show()V
 
     return-void
 .end method
@@ -1132,7 +1132,7 @@
     :cond_0
     sget-object v0, Lcom/android/phone/ErrorDialogActivity$23;->$SwitchMap$com$android$phone$Constants$ProgressIndicationType:[I
 
-    invoke-virtual {p1}, Ljava/lang/Enum;->ordinal()I
+    invoke-virtual {p1}, Lcom/android/phone/Constants$ProgressIndicationType;->ordinal()I
 
     move-result v1
 
@@ -1249,7 +1249,7 @@
 
     iget-object v0, p0, Lcom/android/phone/ErrorDialogActivity;->mRadioOnProgressDialog:Landroid/app/ProgressDialog;
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->dismiss()V
+    invoke-virtual {v0}, Landroid/app/ProgressDialog;->dismiss()V
 
     iput-object v2, p0, Lcom/android/phone/ErrorDialogActivity;->mRadioOnProgressDialog:Landroid/app/ProgressDialog;
 
@@ -1260,7 +1260,7 @@
 
     iget-object v0, p0, Lcom/android/phone/ErrorDialogActivity;->mAirplaneModeOffProgressDialog:Landroid/app/ProgressDialog;
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->dismiss()V
+    invoke-virtual {v0}, Landroid/app/ProgressDialog;->dismiss()V
 
     iput-object v2, p0, Lcom/android/phone/ErrorDialogActivity;->mAirplaneModeOffProgressDialog:Landroid/app/ProgressDialog;
 
@@ -1294,9 +1294,9 @@
 
     const/4 v6, 0x1
 
-    invoke-virtual {p0, v6}, Landroid/app/Activity;->requestWindowFeature(I)Z
+    invoke-virtual {p0, v6}, Lcom/android/phone/ErrorDialogActivity;->requestWindowFeature(I)Z
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/phone/ErrorDialogActivity;->getIntent()Landroid/content/Intent;
 
     move-result-object v6
 
@@ -1314,7 +1314,7 @@
 
     invoke-virtual {v6, p0}, Lcom/android/phone/PhoneGlobals;->setErrorDialogActivityInstance(Lcom/android/phone/ErrorDialogActivity;)V
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/phone/ErrorDialogActivity;->getIntent()Landroid/content/Intent;
 
     move-result-object v6
 
@@ -1340,7 +1340,7 @@
 
     if-nez v6, :cond_1
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/phone/ErrorDialogActivity;->getIntent()Landroid/content/Intent;
 
     move-result-object v6
 
@@ -1355,7 +1355,7 @@
     goto :goto_0
 
     :cond_1
-    invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/phone/ErrorDialogActivity;->getIntent()Landroid/content/Intent;
 
     move-result-object v6
 
@@ -1365,7 +1365,7 @@
 
     move-result v1
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/phone/ErrorDialogActivity;->getIntent()Landroid/content/Intent;
 
     move-result-object v6
 
@@ -1375,7 +1375,7 @@
 
     move-result-object v2
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/phone/ErrorDialogActivity;->getIntent()Landroid/content/Intent;
 
     move-result-object v6
 
@@ -1387,7 +1387,7 @@
 
     check-cast v0, Lcom/android/phone/Constants$CallStatusCode;
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/phone/ErrorDialogActivity;->getIntent()Landroid/content/Intent;
 
     move-result-object v6
 

@@ -43,7 +43,6 @@
 
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -58,7 +57,6 @@
 
 .method static declared-synchronized getInstance(Landroid/content/Context;)Lcom/android/server/enterprise/storage/EdmIntegrityStorageHelper;
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     const-class v1, Lcom/android/server/enterprise/storage/EdmIntegrityStorageHelper;
 
@@ -96,8 +94,6 @@
 # virtual methods
 .method public clearFingerPrint(ILjava/lang/String;)Z
     .locals 5
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     sget-boolean v2, Lcom/android/server/enterprise/storage/EdmIntegrityStorageHelper;->DBG:Z
 
@@ -215,8 +211,6 @@
 
 .method public commitFingerPrint(ILjava/lang/String;)Z
     .locals 5
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v2, 0x1
 
@@ -446,8 +440,6 @@
 
 .method public final getAdminISAMapFromDB(Ljava/lang/String;[Ljava/lang/String;)Ljava/util/Map;
     .locals 15
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -649,10 +641,6 @@
 
 .method public getPackageListfromDB(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;)Ljava/util/List;
     .locals 20
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # [Ljava/lang/String;
-    .param p4    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -926,10 +914,6 @@
 
 .method readFingerPrint(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;)[B
     .locals 17
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # [Ljava/lang/String;
-    .param p4    # [Ljava/lang/String;
 
     move-object/from16 v0, p0
 
@@ -1144,8 +1128,6 @@
 
 .method public rollbackFingerPrint(ILjava/lang/String;)Z
     .locals 5
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v2, 0x1
 
@@ -1333,10 +1315,6 @@
 
 .method updateFingerPrint(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;Landroid/content/ContentValues;)Z
     .locals 20
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # [Ljava/lang/String;
-    .param p4    # Landroid/content/ContentValues;
 
     :try_start_0
     move-object/from16 v0, p0
@@ -1579,8 +1557,6 @@
 
 .method writeFingerPrint(Ljava/lang/String;Landroid/content/ContentValues;)Z
     .locals 21
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/ContentValues;
 
     :try_start_0
     move-object/from16 v0, p0

@@ -60,7 +60,6 @@
 
 .method public setBuilder(Landroid/support/v4/app/NotificationCompat$Builder;)V
     .locals 1
-    .param p1    # Landroid/support/v4/app/NotificationCompat$Builder;
 
     iget-object v0, p0, Landroid/support/v4/app/NotificationCompat$Style;->mBuilder:Landroid/support/v4/app/NotificationCompat$Builder;
 

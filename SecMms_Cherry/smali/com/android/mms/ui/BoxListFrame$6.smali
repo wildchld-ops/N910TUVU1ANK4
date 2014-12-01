@@ -36,10 +36,6 @@
 # virtual methods
 .method public onItemClick(Lcom/sec/android/touchwiz/widget/TwAdapterView;Landroid/view/View;IJ)V
     .locals 6
-    .param p1    # Lcom/sec/android/touchwiz/widget/TwAdapterView;
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
 
     # getter for: Lcom/android/mms/ui/BoxListFrame;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/android/mms/ui/BoxListFrame;->access$500()Ljava/lang/String;

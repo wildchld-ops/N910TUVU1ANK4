@@ -39,7 +39,6 @@
 # virtual methods
 .method getPackageNameFromPID(I)Ljava/lang/String;
     .locals 3
-    .param p1    # I
 
     iget-object v2, p0, Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy$KnoxSetupWizardObserver;->this$0:Lcom/android/server/enterprise/container/KnoxMUMContainerPolicy;
 
@@ -86,9 +85,6 @@
 
 .method public onForegroundActivitiesChanged(IIZ)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -161,9 +157,6 @@
 
 .method public onImportanceChanged(III)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -175,8 +168,6 @@
 
 .method public onProcessDied(II)V
     .locals 8
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

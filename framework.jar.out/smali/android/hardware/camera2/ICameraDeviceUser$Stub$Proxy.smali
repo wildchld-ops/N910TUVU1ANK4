@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -45,7 +44,6 @@
 
 .method public cancelRequest(I)I
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -101,8 +99,6 @@
 
 .method public createDefaultRequest(ILandroid/hardware/camera2/impl/CameraMetadataNative;)I
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/hardware/camera2/impl/CameraMetadataNative;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -167,10 +163,6 @@
 
 .method public createStream(IIILandroid/view/Surface;)I
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/view/Surface;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -251,7 +243,6 @@
 
 .method public deleteStream(I)I
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -409,7 +400,6 @@
 
 .method public getCameraInfo(Landroid/hardware/camera2/impl/CameraMetadataNative;)I
     .locals 6
-    .param p1    # Landroid/hardware/camera2/impl/CameraMetadataNative;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -480,8 +470,6 @@
 
 .method public submitRequest(Landroid/hardware/camera2/CaptureRequest;Z)I
     .locals 6
-    .param p1    # Landroid/hardware/camera2/CaptureRequest;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

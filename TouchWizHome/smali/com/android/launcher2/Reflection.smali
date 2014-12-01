@@ -14,7 +14,6 @@
 
 .method public static getClass(Ljava/lang/String;)Ljava/lang/Class;
     .locals 2
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -47,8 +46,6 @@
 
 .method public static getConstructor(Ljava/lang/String;[Ljava/lang/Class;Z)Ljava/lang/reflect/Constructor;
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -98,8 +95,6 @@
 
 .method public static getField(Ljava/lang/Class;Ljava/lang/String;Z)Ljava/lang/reflect/Field;
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -135,9 +130,6 @@
 
 .method public static getField(Ljava/lang/String;Ljava/lang/String;Z)Ljava/lang/reflect/Field;
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     :try_start_0
     invoke-static {p0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
@@ -165,8 +157,6 @@
 
 .method public static getFieldValue(Ljava/lang/Object;Ljava/lang/reflect/Field;)Ljava/lang/Object;
     .locals 2
-    .param p0    # Ljava/lang/Object;
-    .param p1    # Ljava/lang/reflect/Field;
 
     :try_start_0
     invoke-virtual {p1, p0}, Ljava/lang/reflect/Field;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -199,8 +189,6 @@
 
 .method public static getMethod(Ljava/lang/Class;Ljava/lang/String;Z)Ljava/lang/reflect/Method;
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -240,8 +228,6 @@
 
 .method public static getMethod(Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Class;Z)Ljava/lang/reflect/Method;
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -279,9 +265,6 @@
 
 .method public static getMethod(Ljava/lang/String;Ljava/lang/String;Z)Ljava/lang/reflect/Method;
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     :try_start_0
     invoke-static {p0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
@@ -324,9 +307,6 @@
 
 .method public static getMethod(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Class;Z)Ljava/lang/reflect/Method;
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -376,9 +356,6 @@
 
 .method public static varargs invoke(Ljava/lang/Object;Ljava/lang/reflect/Method;[Ljava/lang/Object;)Ljava/lang/Object;
     .locals 2
-    .param p0    # Ljava/lang/Object;
-    .param p1    # Ljava/lang/reflect/Method;
-    .param p2    # [Ljava/lang/Object;
 
     :try_start_0
     invoke-virtual {p1, p0, p2}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
@@ -419,9 +396,6 @@
 
 .method public static newInstance(Ljava/lang/String;[Ljava/lang/Class;[Ljava/lang/Object;Z)Ljava/lang/Object;
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/Object;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -490,9 +464,6 @@
 
 .method public static setFieldValue(Ljava/lang/Object;Ljava/lang/reflect/Field;Ljava/lang/Object;)Z
     .locals 2
-    .param p0    # Ljava/lang/Object;
-    .param p1    # Ljava/lang/reflect/Field;
-    .param p2    # Ljava/lang/Object;
 
     :try_start_0
     invoke-virtual {p1, p0, p2}, Ljava/lang/reflect/Field;->set(Ljava/lang/Object;Ljava/lang/Object;)V

@@ -69,8 +69,6 @@
 
 .method static synthetic access$000(Lcom/android/internal/app/NetInitiatedActivity;Landroid/content/Intent;)V
     .locals 0
-    .param p0    # Lcom/android/internal/app/NetInitiatedActivity;
-    .param p1    # Landroid/content/Intent;
 
     invoke-direct {p0, p1}, Lcom/android/internal/app/NetInitiatedActivity;->handleNIVerify(Landroid/content/Intent;)V
 
@@ -79,7 +77,6 @@
 
 .method static synthetic access$100(Lcom/android/internal/app/NetInitiatedActivity;)I
     .locals 1
-    .param p0    # Lcom/android/internal/app/NetInitiatedActivity;
 
     iget v0, p0, Lcom/android/internal/app/NetInitiatedActivity;->notificationId:I
 
@@ -88,7 +85,6 @@
 
 .method static synthetic access$200(Lcom/android/internal/app/NetInitiatedActivity;)I
     .locals 1
-    .param p0    # Lcom/android/internal/app/NetInitiatedActivity;
 
     iget v0, p0, Lcom/android/internal/app/NetInitiatedActivity;->default_response:I
 
@@ -97,8 +93,6 @@
 
 .method static synthetic access$300(Lcom/android/internal/app/NetInitiatedActivity;I)V
     .locals 0
-    .param p0    # Lcom/android/internal/app/NetInitiatedActivity;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/internal/app/NetInitiatedActivity;->sendUserResponse(I)V
 
@@ -107,7 +101,6 @@
 
 .method private handleNIVerify(Landroid/content/Intent;)V
     .locals 4
-    .param p1    # Landroid/content/Intent;
 
     const-string/jumbo v1, "notif_id"
 
@@ -150,7 +143,6 @@
 
 .method private sendUserResponse(I)V
     .locals 4
-    .param p1    # I
 
     const-string v1, "NetInitiatedActivity"
 
@@ -209,8 +201,6 @@
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 2
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     const/4 v1, -0x1
 
@@ -239,7 +229,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 7
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v6, 0x1
 

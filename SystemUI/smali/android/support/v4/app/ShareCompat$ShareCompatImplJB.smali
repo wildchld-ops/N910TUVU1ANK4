@@ -27,7 +27,6 @@
 # virtual methods
 .method public escapeHtml(Ljava/lang/CharSequence;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
 
     invoke-static {p1}, Landroid/support/v4/app/ShareCompatJB;->escapeHtml(Ljava/lang/CharSequence;)Ljava/lang/String;
 
@@ -38,7 +37,6 @@
 
 .method shouldAddChooserIntent(Landroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v0, 0x0
 

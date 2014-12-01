@@ -37,7 +37,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -48,8 +47,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -60,9 +57,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v3, 0x0
 
@@ -180,8 +174,6 @@
 
 .method static synthetic access$002(Landroid/widget/AnalogClock;Landroid/text/format/Time;)Landroid/text/format/Time;
     .locals 0
-    .param p0    # Landroid/widget/AnalogClock;
-    .param p1    # Landroid/text/format/Time;
 
     iput-object p1, p0, Landroid/widget/AnalogClock;->mCalendar:Landroid/text/format/Time;
 
@@ -190,7 +182,6 @@
 
 .method static synthetic access$100(Landroid/widget/AnalogClock;)V
     .locals 0
-    .param p0    # Landroid/widget/AnalogClock;
 
     invoke-direct {p0}, Landroid/widget/AnalogClock;->onTimeChanged()V
 
@@ -251,7 +242,6 @@
 
 .method private updateContentDescription(Landroid/text/format/Time;)V
     .locals 6
-    .param p1    # Landroid/text/format/Time;
 
     const/16 v1, 0x81
 
@@ -356,7 +346,6 @@
 
 .method protected onDraw(Landroid/graphics/Canvas;)V
     .locals 17
-    .param p1    # Landroid/graphics/Canvas;
 
     invoke-super/range {p0 .. p1}, Landroid/view/View;->onDraw(Landroid/graphics/Canvas;)V
 
@@ -608,8 +597,6 @@
 
 .method protected onMeasure(II)V
     .locals 10
-    .param p1    # I
-    .param p2    # I
 
     const/4 v9, 0x0
 
@@ -698,10 +685,6 @@
 
 .method protected onSizeChanged(IIII)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-super {p0, p1, p2, p3, p4}, Landroid/view/View;->onSizeChanged(IIII)V
 

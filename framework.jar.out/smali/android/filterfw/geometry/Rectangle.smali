@@ -14,10 +14,6 @@
 
 .method public constructor <init>(FFFF)V
     .locals 6
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
 
     new-instance v0, Landroid/filterfw/geometry/Point;
 
@@ -50,8 +46,6 @@
 
 .method public constructor <init>(Landroid/filterfw/geometry/Point;Landroid/filterfw/geometry/Point;)V
     .locals 4
-    .param p1    # Landroid/filterfw/geometry/Point;
-    .param p2    # Landroid/filterfw/geometry/Point;
 
     const/4 v2, 0x0
 
@@ -82,10 +76,6 @@
 
 .method private constructor <init>(Landroid/filterfw/geometry/Point;Landroid/filterfw/geometry/Point;Landroid/filterfw/geometry/Point;Landroid/filterfw/geometry/Point;)V
     .locals 0
-    .param p1    # Landroid/filterfw/geometry/Point;
-    .param p2    # Landroid/filterfw/geometry/Point;
-    .param p3    # Landroid/filterfw/geometry/Point;
-    .param p4    # Landroid/filterfw/geometry/Point;
 
     invoke-direct {p0, p1, p2, p3, p4}, Landroid/filterfw/geometry/Quad;-><init>(Landroid/filterfw/geometry/Point;Landroid/filterfw/geometry/Point;Landroid/filterfw/geometry/Point;Landroid/filterfw/geometry/Point;)V
 
@@ -94,9 +84,6 @@
 
 .method public static fromCenterVerticalAxis(Landroid/filterfw/geometry/Point;Landroid/filterfw/geometry/Point;Landroid/filterfw/geometry/Point;)Landroid/filterfw/geometry/Rectangle;
     .locals 7
-    .param p0    # Landroid/filterfw/geometry/Point;
-    .param p1    # Landroid/filterfw/geometry/Point;
-    .param p2    # Landroid/filterfw/geometry/Point;
 
     const/high16 v4, 0x40000000
 
@@ -163,9 +150,6 @@
 
 .method public static fromRotatedRect(Landroid/filterfw/geometry/Point;Landroid/filterfw/geometry/Point;F)Landroid/filterfw/geometry/Rectangle;
     .locals 9
-    .param p0    # Landroid/filterfw/geometry/Point;
-    .param p1    # Landroid/filterfw/geometry/Point;
-    .param p2    # F
 
     const/high16 v7, 0x40000000
 
@@ -344,7 +328,6 @@
 
 .method public bridge synthetic scaled(F)Landroid/filterfw/geometry/Quad;
     .locals 1
-    .param p1    # F
 
     invoke-virtual {p0, p1}, Landroid/filterfw/geometry/Rectangle;->scaled(F)Landroid/filterfw/geometry/Rectangle;
 
@@ -355,8 +338,6 @@
 
 .method public bridge synthetic scaled(FF)Landroid/filterfw/geometry/Quad;
     .locals 1
-    .param p1    # F
-    .param p2    # F
 
     invoke-virtual {p0, p1, p2}, Landroid/filterfw/geometry/Rectangle;->scaled(FF)Landroid/filterfw/geometry/Rectangle;
 
@@ -367,7 +348,6 @@
 
 .method public scaled(F)Landroid/filterfw/geometry/Rectangle;
     .locals 5
-    .param p1    # F
 
     new-instance v0, Landroid/filterfw/geometry/Rectangle;
 
@@ -402,8 +382,6 @@
 
 .method public scaled(FF)Landroid/filterfw/geometry/Rectangle;
     .locals 5
-    .param p1    # F
-    .param p2    # F
 
     new-instance v0, Landroid/filterfw/geometry/Rectangle;
 

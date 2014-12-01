@@ -39,9 +39,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -70,8 +67,6 @@
 # virtual methods
 .method protected closeConnection(Loauth/signpost/http/HttpRequest;Loauth/signpost/http/HttpResponse;)V
     .locals 0
-    .param p1    # Loauth/signpost/http/HttpRequest;
-    .param p2    # Loauth/signpost/http/HttpResponse;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;
@@ -133,7 +128,6 @@
 
 .method protected getResponseParameter(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Loauth/signpost/AbstractOAuthProvider;->responseParameters:Loauth/signpost/http/HttpParameters;
 
@@ -154,8 +148,6 @@
 
 .method protected handleUnexpectedResponse(ILoauth/signpost/http/HttpResponse;)V
     .locals 6
-    .param p1    # I
-    .param p2    # Loauth/signpost/http/HttpResponse;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;
@@ -276,7 +268,6 @@
 
 .method public removeListener(Loauth/signpost/OAuthProviderListener;)V
     .locals 1
-    .param p1    # Loauth/signpost/OAuthProviderListener;
 
     const/4 v0, 0x0
 
@@ -287,8 +278,6 @@
 
 .method public retrieveAccessToken(Loauth/signpost/OAuthConsumer;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Loauth/signpost/OAuthConsumer;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Loauth/signpost/exception/OAuthMessageSignerException;,
@@ -359,8 +348,6 @@
 
 .method public retrieveRequestToken(Loauth/signpost/OAuthConsumer;Ljava/lang/String;)Ljava/lang/String;
     .locals 7
-    .param p1    # Loauth/signpost/OAuthConsumer;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Loauth/signpost/exception/OAuthMessageSignerException;,
@@ -477,9 +464,6 @@
 
 .method protected varargs retrieveToken(Loauth/signpost/OAuthConsumer;Ljava/lang/String;[Ljava/lang/String;)V
     .locals 15
-    .param p1    # Loauth/signpost/OAuthConsumer;
-    .param p2    # Ljava/lang/String;
-    .param p3    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Loauth/signpost/exception/OAuthMessageSignerException;,
@@ -790,7 +774,6 @@
 
 .method public setListener(Loauth/signpost/OAuthProviderListener;)V
     .locals 0
-    .param p1    # Loauth/signpost/OAuthProviderListener;
 
     iput-object p1, p0, Loauth/signpost/AbstractOAuthProvider;->listener:Loauth/signpost/OAuthProviderListener;
 
@@ -799,7 +782,6 @@
 
 .method public setOAuth10a(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Loauth/signpost/AbstractOAuthProvider;->isOAuth10a:Z
 
@@ -808,8 +790,6 @@
 
 .method public setRequestHeader(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Loauth/signpost/AbstractOAuthProvider;->defaultHeaders:Ljava/util/Map;
 
@@ -820,7 +800,6 @@
 
 .method public setResponseParameters(Loauth/signpost/http/HttpParameters;)V
     .locals 0
-    .param p1    # Loauth/signpost/http/HttpParameters;
 
     iput-object p1, p0, Loauth/signpost/AbstractOAuthProvider;->responseParameters:Loauth/signpost/http/HttpParameters;
 

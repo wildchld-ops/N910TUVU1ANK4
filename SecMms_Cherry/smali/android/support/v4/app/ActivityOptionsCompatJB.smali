@@ -10,7 +10,6 @@
 # direct methods
 .method private constructor <init>(Landroid/app/ActivityOptions;)V
     .locals 0
-    .param p1    # Landroid/app/ActivityOptions;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -21,9 +20,6 @@
 
 .method public static makeCustomAnimation(Landroid/content/Context;II)Landroid/support/v4/app/ActivityOptionsCompatJB;
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # I
 
     new-instance v0, Landroid/support/v4/app/ActivityOptionsCompatJB;
 
@@ -38,11 +34,6 @@
 
 .method public static makeScaleUpAnimation(Landroid/view/View;IIII)Landroid/support/v4/app/ActivityOptionsCompatJB;
     .locals 2
-    .param p0    # Landroid/view/View;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     new-instance v0, Landroid/support/v4/app/ActivityOptionsCompatJB;
 
@@ -57,10 +48,6 @@
 
 .method public static makeThumbnailScaleUpAnimation(Landroid/view/View;Landroid/graphics/Bitmap;II)Landroid/support/v4/app/ActivityOptionsCompatJB;
     .locals 2
-    .param p0    # Landroid/view/View;
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # I
-    .param p3    # I
 
     new-instance v0, Landroid/support/v4/app/ActivityOptionsCompatJB;
 
@@ -89,7 +76,6 @@
 
 .method public update(Landroid/support/v4/app/ActivityOptionsCompatJB;)V
     .locals 2
-    .param p1    # Landroid/support/v4/app/ActivityOptionsCompatJB;
 
     iget-object v0, p0, Landroid/support/v4/app/ActivityOptionsCompatJB;->mActivityOptions:Landroid/app/ActivityOptions;
 

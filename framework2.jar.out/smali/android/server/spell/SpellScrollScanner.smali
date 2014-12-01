@@ -86,7 +86,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -187,7 +186,6 @@
 
 .method public getInstantSpell(Ljava/lang/String;)Landroid/app/SpellScroll;
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -251,7 +249,6 @@
 
 .method public declared-synchronized getSpellIdInfo(J)Lorg/apache/http/message/BasicNameValuePair;
     .locals 2
-    .param p1    # J
 
     monitor-enter p0
 
@@ -284,7 +281,6 @@
 
 .method public getSpellScroll(Ljava/lang/String;)Landroid/app/SpellScroll;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -398,7 +394,6 @@
 
 .method public declared-synchronized getSpellScrollNames(I)Ljava/util/List;
     .locals 4
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -467,7 +462,6 @@
 
 .method public declared-synchronized getSpellScrollNamesWithIngredientName(Ljava/lang/String;)Ljava/util/List;
     .locals 4
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -538,8 +532,6 @@
 
 .method public declared-synchronized isValidSpell(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -588,7 +580,6 @@
 
 .method public declared-synchronized isValidSpellScroll(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 

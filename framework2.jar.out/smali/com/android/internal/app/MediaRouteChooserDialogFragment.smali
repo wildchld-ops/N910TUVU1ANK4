@@ -60,8 +60,6 @@
 
 .method public onCreateChooserDialog(Landroid/content/Context;Landroid/os/Bundle;)Lcom/android/internal/app/MediaRouteChooserDialog;
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/Bundle;
 
     new-instance v0, Lcom/android/internal/app/MediaRouteChooserDialog;
 
@@ -76,7 +74,6 @@
 
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 
@@ -101,7 +98,6 @@
 
 .method public setExtendedSettingsClickListener(Landroid/view/View$OnClickListener;)V
     .locals 2
-    .param p1    # Landroid/view/View$OnClickListener;
 
     iget-object v1, p0, Lcom/android/internal/app/MediaRouteChooserDialogFragment;->mExtendedSettingsClickListener:Landroid/view/View$OnClickListener;
 
@@ -125,7 +121,6 @@
 
 .method public setRouteTypes(I)V
     .locals 3
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/internal/app/MediaRouteChooserDialogFragment;->getRouteTypes()I
 

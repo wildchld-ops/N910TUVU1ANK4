@@ -22,7 +22,6 @@
 
 .method private getModificationDate(Ljava/lang/String;)Ljava/util/Date;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     iget-object v2, p0, Landroid/security/AndroidKeyStore;->mKeyStore:Landroid/security/KeyStore;
 
@@ -158,7 +157,6 @@
 
 .method private isCertificateEntry(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -200,7 +198,6 @@
 
 .method private isKeyEntry(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -242,10 +239,6 @@
 
 .method private setPrivateKeyEntry(Ljava/lang/String;Ljava/security/PrivateKey;[Ljava/security/cert/Certificate;Landroid/security/KeyStoreParameter;)V
     .locals 22
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/security/PrivateKey;
-    .param p3    # [Ljava/security/cert/Certificate;
-    .param p4    # Landroid/security/KeyStoreParameter;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/security/KeyStoreException;
@@ -951,7 +944,6 @@
 
 .method private static toCertificate([B)Ljava/security/cert/X509Certificate;
     .locals 4
-    .param p0    # [B
 
     :try_start_0
     const-string v2, "X.509"
@@ -991,7 +983,6 @@
 
 .method private static toCertificates([B)Ljava/util/Collection;
     .locals 4
-    .param p0    # [B
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([B)",
@@ -1065,7 +1056,6 @@
 
 .method public engineContainsAlias(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -1170,7 +1160,6 @@
 
 .method public engineDeleteEntry(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/security/KeyStoreException;
@@ -1228,7 +1217,6 @@
 
 .method public engineGetCertificate(Ljava/lang/String;)Ljava/security/cert/Certificate;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -1315,7 +1303,6 @@
 
 .method public engineGetCertificateAlias(Ljava/security/cert/Certificate;)Ljava/lang/String;
     .locals 13
-    .param p1    # Ljava/security/cert/Certificate;
 
     const/4 v9, 0x0
 
@@ -1502,7 +1489,6 @@
 
 .method public engineGetCertificateChain(Ljava/lang/String;)[Ljava/security/cert/Certificate;
     .locals 10
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -1609,7 +1595,6 @@
 
 .method public engineGetCreationDate(Ljava/lang/String;)Ljava/util/Date;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -1708,8 +1693,6 @@
 
 .method public engineGetKey(Ljava/lang/String;[C)Ljava/security/Key;
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # [C
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/security/NoSuchAlgorithmException;,
@@ -1778,7 +1761,6 @@
 
 .method public engineIsCertificateEntry(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Landroid/security/AndroidKeyStore;->isKeyEntry(Ljava/lang/String;)Z
 
@@ -1805,7 +1787,6 @@
 
 .method public engineIsKeyEntry(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Landroid/security/AndroidKeyStore;->isKeyEntry(Ljava/lang/String;)Z
 
@@ -1816,8 +1797,6 @@
 
 .method public engineLoad(Ljava/io/InputStream;[C)V
     .locals 2
-    .param p1    # Ljava/io/InputStream;
-    .param p2    # [C
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -1859,8 +1838,6 @@
 
 .method public engineSetCertificateEntry(Ljava/lang/String;Ljava/security/cert/Certificate;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/security/cert/Certificate;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/security/KeyStoreException;
@@ -1953,9 +1930,6 @@
 
 .method public engineSetEntry(Ljava/lang/String;Ljava/security/KeyStore$Entry;Ljava/security/KeyStore$ProtectionParameter;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/security/KeyStore$Entry;
-    .param p3    # Ljava/security/KeyStore$ProtectionParameter;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/security/KeyStoreException;
@@ -2089,10 +2063,6 @@
 
 .method public engineSetKeyEntry(Ljava/lang/String;Ljava/security/Key;[C[Ljava/security/cert/Certificate;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/security/Key;
-    .param p3    # [C
-    .param p4    # [Ljava/security/cert/Certificate;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/security/KeyStoreException;
@@ -2138,9 +2108,6 @@
 
 .method public engineSetKeyEntry(Ljava/lang/String;[B[Ljava/security/cert/Certificate;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # [B
-    .param p3    # [Ljava/security/cert/Certificate;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/security/KeyStoreException;
@@ -2172,8 +2139,6 @@
 
 .method public engineStore(Ljava/io/OutputStream;[C)V
     .locals 2
-    .param p1    # Ljava/io/OutputStream;
-    .param p2    # [C
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,

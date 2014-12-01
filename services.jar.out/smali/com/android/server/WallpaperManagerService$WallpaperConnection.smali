@@ -38,8 +38,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/WallpaperManagerService;Landroid/app/WallpaperInfo;Lcom/android/server/WallpaperManagerService$WallpaperData;)V
     .locals 1
-    .param p2    # Landroid/app/WallpaperInfo;
-    .param p3    # Lcom/android/server/WallpaperManagerService$WallpaperData;
 
     iput-object p1, p0, Lcom/android/server/WallpaperManagerService$WallpaperConnection;->this$0:Lcom/android/server/WallpaperManagerService;
 
@@ -66,7 +64,6 @@
 # virtual methods
 .method public attachEngine(Landroid/service/wallpaper/IWallpaperEngine;)V
     .locals 5
-    .param p1    # Landroid/service/wallpaper/IWallpaperEngine;
 
     iget-object v1, p0, Lcom/android/server/WallpaperManagerService$WallpaperConnection;->this$0:Lcom/android/server/WallpaperManagerService;
 
@@ -133,7 +130,6 @@
 
 .method public engineShown(Landroid/service/wallpaper/IWallpaperEngine;)V
     .locals 6
-    .param p1    # Landroid/service/wallpaper/IWallpaperEngine;
 
     iget-object v3, p0, Lcom/android/server/WallpaperManagerService$WallpaperConnection;->this$0:Lcom/android/server/WallpaperManagerService;
 
@@ -198,8 +194,6 @@
 
 .method public onServiceConnected(Landroid/content/ComponentName;Landroid/os/IBinder;)V
     .locals 4
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Landroid/os/IBinder;
 
     iget-object v0, p0, Lcom/android/server/WallpaperManagerService$WallpaperConnection;->this$0:Lcom/android/server/WallpaperManagerService;
 
@@ -260,7 +254,6 @@
 
 .method public onServiceDisconnected(Landroid/content/ComponentName;)V
     .locals 6
-    .param p1    # Landroid/content/ComponentName;
 
     iget-object v0, p0, Lcom/android/server/WallpaperManagerService$WallpaperConnection;->this$0:Lcom/android/server/WallpaperManagerService;
 
@@ -376,7 +369,6 @@
 
 .method public setWallpaper(Ljava/lang/String;)Landroid/os/ParcelFileDescriptor;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/server/WallpaperManagerService$WallpaperConnection;->this$0:Lcom/android/server/WallpaperManagerService;
 

@@ -196,7 +196,6 @@
 
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 14
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -501,7 +500,6 @@
 
 .method public static get(Landroid/content/Context;)Landroid/view/ViewConfiguration;
     .locals 5
-    .param p0    # Landroid/content/Context;
 
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 

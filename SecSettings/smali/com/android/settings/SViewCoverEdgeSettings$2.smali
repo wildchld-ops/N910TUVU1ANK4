@@ -36,8 +36,6 @@
 # virtual methods
 .method public onCheckedChanged(Landroid/widget/RadioGroup;I)V
     .locals 3
-    .param p1    # Landroid/widget/RadioGroup;
-    .param p2    # I
 
     const v0, 0x7f0b0583
 

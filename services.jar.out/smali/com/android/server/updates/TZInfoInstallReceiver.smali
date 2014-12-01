@@ -24,8 +24,6 @@
 # virtual methods
 .method protected install([BI)V
     .locals 1
-    .param p1    # [B
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

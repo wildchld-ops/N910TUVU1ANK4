@@ -158,7 +158,6 @@
 
 .method static synthetic access$000(Lcom/diotek/ime/implement/setting/SwiftkeyDeleteLanguages;)Lcom/sec/android/inputmethod/menu/PopupList;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/setting/SwiftkeyDeleteLanguages;
 
     iget-object v0, p0, Lcom/diotek/ime/implement/setting/SwiftkeyDeleteLanguages;->mSelectAllPopupList:Lcom/sec/android/inputmethod/menu/PopupList;
 
@@ -167,7 +166,6 @@
 
 .method static synthetic access$100(Lcom/diotek/ime/implement/setting/SwiftkeyDeleteLanguages;)Z
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/setting/SwiftkeyDeleteLanguages;
 
     iget-boolean v0, p0, Lcom/diotek/ime/implement/setting/SwiftkeyDeleteLanguages;->mAllSelected:Z
 
@@ -176,7 +174,6 @@
 
 .method static synthetic access$1000(Lcom/diotek/ime/implement/setting/SwiftkeyDeleteLanguages;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/setting/SwiftkeyDeleteLanguages;
 
     iget-object v0, p0, Lcom/diotek/ime/implement/setting/SwiftkeyDeleteLanguages;->mTotalDeletingLPList:Ljava/util/ArrayList;
 
@@ -185,8 +182,6 @@
 
 .method static synthetic access$102(Lcom/diotek/ime/implement/setting/SwiftkeyDeleteLanguages;Z)Z
     .locals 0
-    .param p0    # Lcom/diotek/ime/implement/setting/SwiftkeyDeleteLanguages;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/implement/setting/SwiftkeyDeleteLanguages;->mAllSelected:Z
 
@@ -195,7 +190,6 @@
 
 .method static synthetic access$1100(Lcom/diotek/ime/implement/setting/SwiftkeyDeleteLanguages;)Lcom/diotek/ime/framework/common/InputManager;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/setting/SwiftkeyDeleteLanguages;
 
     iget-object v0, p0, Lcom/diotek/ime/implement/setting/SwiftkeyDeleteLanguages;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -204,8 +198,6 @@
 
 .method static synthetic access$1200(Lcom/diotek/ime/implement/setting/SwiftkeyDeleteLanguages;Lcom/touchtype_fluency/util/LanguagePack;)V
     .locals 0
-    .param p0    # Lcom/diotek/ime/implement/setting/SwiftkeyDeleteLanguages;
-    .param p1    # Lcom/touchtype_fluency/util/LanguagePack;
 
     invoke-direct {p0, p1}, Lcom/diotek/ime/implement/setting/SwiftkeyDeleteLanguages;->deleteLanguage(Lcom/touchtype_fluency/util/LanguagePack;)V
 
@@ -214,7 +206,6 @@
 
 .method static synthetic access$1300(Lcom/diotek/ime/implement/setting/SwiftkeyDeleteLanguages;)V
     .locals 0
-    .param p0    # Lcom/diotek/ime/implement/setting/SwiftkeyDeleteLanguages;
 
     invoke-direct {p0}, Lcom/diotek/ime/implement/setting/SwiftkeyDeleteLanguages;->notifyUpdateSelectedLanguageList()V
 
@@ -223,7 +214,6 @@
 
 .method static synthetic access$200(Lcom/diotek/ime/implement/setting/SwiftkeyDeleteLanguages;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/setting/SwiftkeyDeleteLanguages;
 
     iget-object v0, p0, Lcom/diotek/ime/implement/setting/SwiftkeyDeleteLanguages;->mDeletingLPList:Ljava/util/ArrayList;
 
@@ -232,7 +222,6 @@
 
 .method static synthetic access$300(Lcom/diotek/ime/implement/setting/SwiftkeyDeleteLanguages;)Landroid/widget/ListView;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/setting/SwiftkeyDeleteLanguages;
 
     iget-object v0, p0, Lcom/diotek/ime/implement/setting/SwiftkeyDeleteLanguages;->mDisplayView:Landroid/widget/ListView;
 
@@ -241,7 +230,6 @@
 
 .method static synthetic access$400(Lcom/diotek/ime/implement/setting/SwiftkeyDeleteLanguages;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/setting/SwiftkeyDeleteLanguages;
 
     iget-object v0, p0, Lcom/diotek/ime/implement/setting/SwiftkeyDeleteLanguages;->mLPlist:Ljava/util/ArrayList;
 
@@ -250,8 +238,6 @@
 
 .method static synthetic access$500(Lcom/diotek/ime/implement/setting/SwiftkeyDeleteLanguages;Z)V
     .locals 0
-    .param p0    # Lcom/diotek/ime/implement/setting/SwiftkeyDeleteLanguages;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/diotek/ime/implement/setting/SwiftkeyDeleteLanguages;->setDoneMenuEnabled(Z)V
 
@@ -260,7 +246,6 @@
 
 .method static synthetic access$600(Lcom/diotek/ime/implement/setting/SwiftkeyDeleteLanguages;)Lcom/diotek/ime/implement/setting/adapter/CheckboxArrayAdapter;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/setting/SwiftkeyDeleteLanguages;
 
     iget-object v0, p0, Lcom/diotek/ime/implement/setting/SwiftkeyDeleteLanguages;->mSelectallAdpter:Lcom/diotek/ime/implement/setting/adapter/CheckboxArrayAdapter;
 
@@ -269,7 +254,6 @@
 
 .method static synthetic access$700(Lcom/diotek/ime/implement/setting/SwiftkeyDeleteLanguages;)Landroid/widget/ListView;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/setting/SwiftkeyDeleteLanguages;
 
     iget-object v0, p0, Lcom/diotek/ime/implement/setting/SwiftkeyDeleteLanguages;->mSelectallview:Landroid/widget/ListView;
 
@@ -278,7 +262,6 @@
 
 .method static synthetic access$802(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/diotek/ime/implement/setting/SwiftkeyDeleteLanguages;->mDeletePopup:Z
 
@@ -295,7 +278,6 @@
 
 .method private deleteLanguage(Lcom/touchtype_fluency/util/LanguagePack;)V
     .locals 4
-    .param p1    # Lcom/touchtype_fluency/util/LanguagePack;
 
     invoke-virtual {p0}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
 
@@ -531,7 +513,6 @@
 
 .method private setDoneMenuEnabled(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/diotek/ime/implement/setting/SwiftkeyDeleteLanguages;->mMenu:Landroid/view/Menu;
 
@@ -600,7 +581,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 10
-    .param p1    # Landroid/content/res/Configuration;
 
     const/4 v6, 0x0
 
@@ -749,7 +729,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 24
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super/range {p0 .. p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
@@ -1781,7 +1760,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 3
-    .param p1    # Landroid/view/Menu;
 
     const/4 v2, 0x1
 
@@ -1832,7 +1810,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 4
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v1, 0x1
 

@@ -81,7 +81,7 @@
 
     iget v6, p0, Lcom/android/phone/callsettings/AutoRejectVideoCallList$AutoRejectAdapter$5;->val$position:I
 
-    invoke-virtual {v5, v6}, Landroid/widget/AbsListView;->isItemChecked(I)Z
+    invoke-virtual {v5, v6}, Landroid/widget/ListView;->isItemChecked(I)Z
 
     move-result v1
 
@@ -99,7 +99,7 @@
     if-nez v1, :cond_0
 
     :goto_0
-    invoke-virtual {v5, v6, v3}, Landroid/widget/AbsListView;->setItemChecked(IZ)V
+    invoke-virtual {v5, v6, v3}, Landroid/widget/ListView;->setItemChecked(IZ)V
 
     :goto_1
     return-void
@@ -138,7 +138,7 @@
 
     move-result-object v5
 
-    invoke-virtual {v5, v4}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
+    invoke-virtual {v5, v4}, Landroid/widget/ListView;->getChildAt(I)Landroid/view/View;
 
     move-result-object v5
 
@@ -163,7 +163,7 @@
 
     iget-object v3, v3, Lcom/android/phone/callsettings/AutoRejectVideoCallList$AutoRejectAdapter;->this$0:Lcom/android/phone/callsettings/AutoRejectVideoCallList;
 
-    invoke-virtual {v3}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v3}, Lcom/android/phone/callsettings/AutoRejectVideoCallList;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v3
 

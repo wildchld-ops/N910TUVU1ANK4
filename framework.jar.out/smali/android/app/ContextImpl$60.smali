@@ -27,7 +27,6 @@
 # virtual methods
 .method public createService(Landroid/app/ContextImpl;)Ljava/lang/Object;
     .locals 3
-    .param p1    # Landroid/app/ContextImpl;
 
     const-string v2, "appops"
 

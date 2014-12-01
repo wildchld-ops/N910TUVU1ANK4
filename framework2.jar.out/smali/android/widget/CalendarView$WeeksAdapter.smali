@@ -73,7 +73,6 @@
 
 .method static synthetic access$400(Landroid/widget/CalendarView$WeeksAdapter;)Ljava/util/Calendar;
     .locals 1
-    .param p0    # Landroid/widget/CalendarView$WeeksAdapter;
 
     iget-object v0, p0, Landroid/widget/CalendarView$WeeksAdapter;->mSelectedDate:Ljava/util/Calendar;
 
@@ -82,7 +81,6 @@
 
 .method static synthetic access$500(Landroid/widget/CalendarView$WeeksAdapter;)V
     .locals 0
-    .param p0    # Landroid/widget/CalendarView$WeeksAdapter;
 
     invoke-direct {p0}, Landroid/widget/CalendarView$WeeksAdapter;->init()V
 
@@ -176,7 +174,6 @@
 
 .method private onDateTapped(Ljava/util/Calendar;)V
     .locals 1
-    .param p1    # Ljava/util/Calendar;
 
     invoke-virtual {p0, p1}, Landroid/widget/CalendarView$WeeksAdapter;->setSelectedDay(Ljava/util/Calendar;)V
 
@@ -200,7 +197,6 @@
 
 .method public getItem(I)Ljava/lang/Object;
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -209,7 +205,6 @@
 
 .method public getItemId(I)J
     .locals 2
-    .param p1    # I
 
     int-to-long v0, p1
 
@@ -226,9 +221,6 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     const/4 v5, -0x2
 
@@ -296,8 +288,6 @@
 
 .method public onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 4
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     const/4 v1, 0x1
 
@@ -407,7 +397,6 @@
 
 .method public setFocusMonth(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/widget/CalendarView$WeeksAdapter;->mFocusedMonth:I
 
@@ -426,7 +415,6 @@
 
 .method public setSelectedDay(Ljava/util/Calendar;)V
     .locals 4
-    .param p1    # Ljava/util/Calendar;
 
     const/4 v3, 0x6
 

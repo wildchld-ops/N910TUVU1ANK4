@@ -26,8 +26,6 @@
 
 .method public constructor <init>(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;,
@@ -65,8 +63,6 @@
 # virtual methods
 .method public setGain([I[I)V
     .locals 7
-    .param p1    # [I
-    .param p2    # [I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;,

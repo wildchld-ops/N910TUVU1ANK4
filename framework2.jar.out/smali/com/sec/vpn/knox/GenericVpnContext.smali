@@ -42,7 +42,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -63,7 +62,6 @@
 # virtual methods
 .method public enableMetaData(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/vpn/knox/GenericVpnContext;->mEnableMetaHeader:Z
 
@@ -96,8 +94,6 @@
 
 .method public setGenericVpnParams(Ljava/lang/String;Z)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     iput-object p1, p0, Lcom/sec/vpn/knox/GenericVpnContext;->mProfile:Ljava/lang/String;
 

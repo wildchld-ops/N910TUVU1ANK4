@@ -37,7 +37,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -48,8 +47,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v3, 0x2
 
@@ -123,8 +120,6 @@
 
 .method static synthetic access$002(Lcom/android/server/sec/ClippedDataPickerGridView;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/sec/ClippedDataPickerGridView;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/sec/ClippedDataPickerGridView;->isAnimating:Z
 
@@ -133,7 +128,6 @@
 
 .method private checkDeleteCount(I)I
     .locals 5
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -209,9 +203,6 @@
 
 .method private getAnim(III)Landroid/view/animation/TranslateAnimation;
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v4, 0x0
 
@@ -297,8 +288,6 @@
 
 .method private requestAnimation(Landroid/view/View;I)V
     .locals 9
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     iget v4, p0, Lcom/android/server/sec/ClippedDataPickerGridView;->delCnt:I
 
@@ -516,7 +505,6 @@
 
 .method public setLayoutAnimationState(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-boolean v0, p0, Lcom/android/server/sec/ClippedDataPickerGridView;->isAnimating:Z
 

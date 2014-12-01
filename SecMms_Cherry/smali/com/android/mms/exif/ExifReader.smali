@@ -14,7 +14,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/mms/exif/ExifInterface;)V
     .locals 0
-    .param p1    # Lcom/android/mms/exif/ExifInterface;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -27,7 +26,6 @@
 # virtual methods
 .method protected read(Ljava/io/InputStream;)Lcom/android/mms/exif/ExifData;
     .locals 7
-    .param p1    # Ljava/io/InputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/android/mms/exif/ExifInvalidFormatException;,

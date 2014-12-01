@@ -12,7 +12,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Landroid/media/SubtitleController$Renderer;-><init>()V
 
@@ -25,7 +24,6 @@
 # virtual methods
 .method public createTrack(Landroid/media/MediaFormat;)Landroid/media/SubtitleTrack;
     .locals 2
-    .param p1    # Landroid/media/MediaFormat;
 
     iget-object v0, p0, Landroid/media/WebVttRenderer;->mRenderingWidget:Landroid/media/WebVttRenderingWidget;
 
@@ -51,7 +49,6 @@
 
 .method public supports(Landroid/media/MediaFormat;)Z
     .locals 2
-    .param p1    # Landroid/media/MediaFormat;
 
     const-string v0, "mime"
 

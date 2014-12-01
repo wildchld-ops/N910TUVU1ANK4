@@ -32,10 +32,6 @@
 # direct methods
 .method protected constructor <init>(ILandroid/content/Context;Landroid/os/Looper;Landroid/hardware/contextaware/dataprovider/sensorhubprovider/ISensorHubResetObservable;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/os/Looper;
-    .param p4    # Landroid/hardware/contextaware/dataprovider/sensorhubprovider/ISensorHubResetObservable;
 
     invoke-direct {p0, p1, p2, p3, p4}, Landroid/hardware/contextaware/dataprovider/DataProvider;-><init>(ILandroid/content/Context;Landroid/os/Looper;Landroid/hardware/contextaware/dataprovider/sensorhubprovider/ISensorHubResetObservable;)V
 
@@ -52,7 +48,6 @@
 # virtual methods
 .method protected final addRequestParser(Landroid/hardware/contextaware/dataprovider/sensorhubprovider/request/builtin/ISensorHubRequestParser;)V
     .locals 1
-    .param p1    # Landroid/hardware/contextaware/dataprovider/sensorhubprovider/request/builtin/ISensorHubRequestParser;
 
     iget-object v0, p0, Landroid/hardware/contextaware/dataprovider/sensorhubprovider/SensorHubProvider;->mRequestParserList:Ljava/util/concurrent/CopyOnWriteArrayList;
 
@@ -303,8 +298,6 @@
 
 .method public parse([BI)I
     .locals 6
-    .param p1    # [B
-    .param p2    # I
 
     move v2, p2
 
@@ -358,8 +351,6 @@
 
 .method public final parseForRequestType([BI)I
     .locals 7
-    .param p1    # [B
-    .param p2    # I
 
     const/4 v5, -0x1
 
@@ -467,7 +458,6 @@
 
 .method protected final removeRequestParser(Landroid/hardware/contextaware/dataprovider/sensorhubprovider/request/builtin/ISensorHubRequestParser;)V
     .locals 1
-    .param p1    # Landroid/hardware/contextaware/dataprovider/sensorhubprovider/request/builtin/ISensorHubRequestParser;
 
     iget-object v0, p0, Landroid/hardware/contextaware/dataprovider/sensorhubprovider/SensorHubProvider;->mRequestParserList:Ljava/util/concurrent/CopyOnWriteArrayList;
 
@@ -505,9 +495,6 @@
 
 .method public final sendCmdToSensorHub(BB[B)V
     .locals 3
-    .param p1    # B
-    .param p2    # B
-    .param p3    # [B
 
     invoke-static {}, Landroid/hardware/contextaware/utilbundle/SensorHubCommManager;->getInstance()Landroid/hardware/contextaware/utilbundle/SensorHubCommManager;
 
@@ -536,8 +523,6 @@
 
 .method protected final sendCommonValueToSensorHub(B[B)Z
     .locals 6
-    .param p1    # B
-    .param p2    # [B
 
     const/4 v2, 0x1
 
@@ -586,10 +571,6 @@
 
 .method protected final sendPropertyValueToSensorHub(BBB[B)Z
     .locals 6
-    .param p1    # B
-    .param p2    # B
-    .param p3    # B
-    .param p4    # [B
 
     const/4 v2, 0x1
 
@@ -646,9 +627,6 @@
 
 .method protected final sendPropertyValueToSensorHub(BB[B)Z
     .locals 6
-    .param p1    # B
-    .param p2    # B
-    .param p3    # [B
 
     const/4 v2, 0x1
 

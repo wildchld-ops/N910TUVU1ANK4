@@ -31,7 +31,6 @@
 # direct methods
 .method public constructor <init>(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v0, 0x1
 
@@ -52,7 +51,6 @@
 
 .method public constructor <init>(Landroid/widget/RemoteViews;)V
     .locals 1
-    .param p1    # Landroid/widget/RemoteViews;
 
     const/4 v0, 0x1
 
@@ -99,7 +97,6 @@
 
 .method public setCategory(I)Lcom/samsung/android/sdk/look/cocktailbar/SlookCocktailManager$CocktailInfo$Builder;
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/android/sdk/look/cocktailbar/SlookCocktailManager$CocktailInfo$Builder;->mCategory:I
 
@@ -108,7 +105,6 @@
 
 .method public setDisplayPolicy(I)Lcom/samsung/android/sdk/look/cocktailbar/SlookCocktailManager$CocktailInfo$Builder;
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/android/sdk/look/cocktailbar/SlookCocktailManager$CocktailInfo$Builder;->mDisplayPolicy:I
 

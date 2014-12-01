@@ -33,9 +33,6 @@
 # virtual methods
 .method public onEncryptionStatusChanged(Ljava/lang/String;ILjava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/settings/encryption/CryptSDCardSettings$DirEncryptListner;->this$0:Lcom/android/settings/encryption/CryptSDCardSettings;
 

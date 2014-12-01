@@ -126,7 +126,6 @@
 
 .method constructor <init>(I)V
     .locals 5
-    .param p1    # I
 
     const/4 v4, 0x0
 
@@ -222,7 +221,6 @@
 
 .method static synthetic access$000(Landroid/hardware/Camera;)Landroid/hardware/Camera$ShutterCallback;
     .locals 1
-    .param p0    # Landroid/hardware/Camera;
 
     iget-object v0, p0, Landroid/hardware/Camera;->mShutterCallback:Landroid/hardware/Camera$ShutterCallback;
 
@@ -231,7 +229,6 @@
 
 .method static synthetic access$100(Landroid/hardware/Camera;)Landroid/hardware/Camera$PictureCallback;
     .locals 1
-    .param p0    # Landroid/hardware/Camera;
 
     iget-object v0, p0, Landroid/hardware/Camera;->mRawImageCallback:Landroid/hardware/Camera$PictureCallback;
 
@@ -240,7 +237,6 @@
 
 .method static synthetic access$1000(Landroid/hardware/Camera;)Landroid/hardware/Camera$OnZoomChangeListener;
     .locals 1
-    .param p0    # Landroid/hardware/Camera;
 
     iget-object v0, p0, Landroid/hardware/Camera;->mZoomListener:Landroid/hardware/Camera$OnZoomChangeListener;
 
@@ -249,7 +245,6 @@
 
 .method static synthetic access$1100(Landroid/hardware/Camera;)Landroid/hardware/Camera$FaceDetectionListener;
     .locals 1
-    .param p0    # Landroid/hardware/Camera;
 
     iget-object v0, p0, Landroid/hardware/Camera;->mFaceListener:Landroid/hardware/Camera$FaceDetectionListener;
 
@@ -258,7 +253,6 @@
 
 .method static synthetic access$1200(Landroid/hardware/Camera;)Landroid/hardware/Camera$ErrorCallback;
     .locals 1
-    .param p0    # Landroid/hardware/Camera;
 
     iget-object v0, p0, Landroid/hardware/Camera;->mErrorCallback:Landroid/hardware/Camera$ErrorCallback;
 
@@ -267,7 +261,6 @@
 
 .method static synthetic access$1300(Landroid/hardware/Camera;)Landroid/hardware/Camera$AutoFocusMoveCallback;
     .locals 1
-    .param p0    # Landroid/hardware/Camera;
 
     iget-object v0, p0, Landroid/hardware/Camera;->mAutoFocusMoveCallback:Landroid/hardware/Camera$AutoFocusMoveCallback;
 
@@ -276,7 +269,6 @@
 
 .method static synthetic access$200(Landroid/hardware/Camera;)Landroid/hardware/Camera$PictureCallback;
     .locals 1
-    .param p0    # Landroid/hardware/Camera;
 
     iget-object v0, p0, Landroid/hardware/Camera;->mJpegCallback:Landroid/hardware/Camera$PictureCallback;
 
@@ -285,7 +277,6 @@
 
 .method static synthetic access$300(Landroid/hardware/Camera;)Landroid/hardware/Camera$PreviewCallback;
     .locals 1
-    .param p0    # Landroid/hardware/Camera;
 
     iget-object v0, p0, Landroid/hardware/Camera;->mPreviewCallback:Landroid/hardware/Camera$PreviewCallback;
 
@@ -294,8 +285,6 @@
 
 .method static synthetic access$302(Landroid/hardware/Camera;Landroid/hardware/Camera$PreviewCallback;)Landroid/hardware/Camera$PreviewCallback;
     .locals 0
-    .param p0    # Landroid/hardware/Camera;
-    .param p1    # Landroid/hardware/Camera$PreviewCallback;
 
     iput-object p1, p0, Landroid/hardware/Camera;->mPreviewCallback:Landroid/hardware/Camera$PreviewCallback;
 
@@ -304,7 +293,6 @@
 
 .method static synthetic access$400(Landroid/hardware/Camera;)Z
     .locals 1
-    .param p0    # Landroid/hardware/Camera;
 
     iget-boolean v0, p0, Landroid/hardware/Camera;->mOneShot:Z
 
@@ -313,7 +301,6 @@
 
 .method static synthetic access$500(Landroid/hardware/Camera;)Z
     .locals 1
-    .param p0    # Landroid/hardware/Camera;
 
     iget-boolean v0, p0, Landroid/hardware/Camera;->mWithBuffer:Z
 
@@ -322,9 +309,6 @@
 
 .method static synthetic access$600(Landroid/hardware/Camera;ZZ)V
     .locals 0
-    .param p0    # Landroid/hardware/Camera;
-    .param p1    # Z
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Landroid/hardware/Camera;->setHasPreviewCallback(ZZ)V
 
@@ -333,7 +317,6 @@
 
 .method static synthetic access$700(Landroid/hardware/Camera;)Landroid/hardware/Camera$PictureCallback;
     .locals 1
-    .param p0    # Landroid/hardware/Camera;
 
     iget-object v0, p0, Landroid/hardware/Camera;->mPostviewCallback:Landroid/hardware/Camera$PictureCallback;
 
@@ -342,7 +325,6 @@
 
 .method static synthetic access$800(Landroid/hardware/Camera;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Landroid/hardware/Camera;
 
     iget-object v0, p0, Landroid/hardware/Camera;->mAutoFocusCallbackLock:Ljava/lang/Object;
 
@@ -351,7 +333,6 @@
 
 .method static synthetic access$900(Landroid/hardware/Camera;)Landroid/hardware/Camera$AutoFocusCallback;
     .locals 1
-    .param p0    # Landroid/hardware/Camera;
 
     iget-object v0, p0, Landroid/hardware/Camera;->mAutoFocusCallback:Landroid/hardware/Camera$AutoFocusCallback;
 
@@ -360,8 +341,6 @@
 
 .method private final addCallbackBuffer([BI)V
     .locals 3
-    .param p1    # [B
-    .param p2    # I
 
     const/16 v0, 0x10
 
@@ -474,8 +453,6 @@
 
 .method public static getCameraInfo(ILandroid/hardware/Camera$CameraInfo;)V
     .locals 5
-    .param p0    # I
-    .param p1    # Landroid/hardware/Camera$CameraInfo;
 
     invoke-static {p0, p1}, Landroid/hardware/Camera;->_getCameraInfo(ILandroid/hardware/Camera$CameraInfo;)V
 
@@ -604,7 +581,6 @@
 
 .method public static open(I)Landroid/hardware/Camera;
     .locals 1
-    .param p0    # I
 
     invoke-static {}, Landroid/hardware/Camera;->checkCameraEnabled()Z
 
@@ -617,11 +593,6 @@
 
 .method private static postEventFromNative(Ljava/lang/Object;IIILjava/lang/Object;)V
     .locals 3
-    .param p0    # Ljava/lang/Object;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/Object;
 
     check-cast p0, Ljava/lang/ref/WeakReference;
 
@@ -673,7 +644,6 @@
 # virtual methods
 .method public final addCallbackBuffer([B)V
     .locals 1
-    .param p1    # [B
 
     const/16 v0, 0x10
 
@@ -684,7 +654,6 @@
 
 .method public final addRawImageCallbackBuffer([B)V
     .locals 1
-    .param p1    # [B
 
     const/16 v0, 0x80
 
@@ -695,7 +664,6 @@
 
 .method public final autoFocus(Landroid/hardware/Camera$AutoFocusCallback;)V
     .locals 2
-    .param p1    # Landroid/hardware/Camera$AutoFocusCallback;
 
     iget-object v1, p0, Landroid/hardware/Camera;->mAutoFocusCallbackLock:Ljava/lang/Object;
 
@@ -762,8 +730,6 @@
 
 .method public final createPreviewAllocation(Landroid/renderscript/RenderScript;I)Landroid/renderscript/Allocation;
     .locals 6
-    .param p1    # Landroid/renderscript/RenderScript;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/renderscript/RSIllegalArgumentException;
@@ -817,7 +783,6 @@
 
 .method public final enableShutterSound(Z)Z
     .locals 5
-    .param p1    # Z
 
     if-nez p1, :cond_0
 
@@ -916,7 +881,6 @@
 
 .method public setAutoFocusMoveCallback(Landroid/hardware/Camera$AutoFocusMoveCallback;)V
     .locals 1
-    .param p1    # Landroid/hardware/Camera$AutoFocusMoveCallback;
 
     iput-object p1, p0, Landroid/hardware/Camera;->mAutoFocusMoveCallback:Landroid/hardware/Camera$AutoFocusMoveCallback;
 
@@ -942,7 +906,6 @@
 
 .method public final setErrorCallback(Landroid/hardware/Camera$ErrorCallback;)V
     .locals 0
-    .param p1    # Landroid/hardware/Camera$ErrorCallback;
 
     iput-object p1, p0, Landroid/hardware/Camera;->mErrorCallback:Landroid/hardware/Camera$ErrorCallback;
 
@@ -951,7 +914,6 @@
 
 .method public final setFaceDetectionListener(Landroid/hardware/Camera$FaceDetectionListener;)V
     .locals 0
-    .param p1    # Landroid/hardware/Camera$FaceDetectionListener;
 
     iput-object p1, p0, Landroid/hardware/Camera;->mFaceListener:Landroid/hardware/Camera$FaceDetectionListener;
 
@@ -960,7 +922,6 @@
 
 .method public final setOneShotPreviewCallback(Landroid/hardware/Camera$PreviewCallback;)V
     .locals 2
-    .param p1    # Landroid/hardware/Camera$PreviewCallback;
 
     const/4 v0, 0x1
 
@@ -992,7 +953,6 @@
 
 .method public setParameters(Landroid/hardware/Camera$Parameters;)V
     .locals 4
-    .param p1    # Landroid/hardware/Camera$Parameters;
 
     iget-boolean v2, p0, Landroid/hardware/Camera;->mUsingPreviewAllocation:Z
 
@@ -1043,7 +1003,6 @@
 
 .method public final setPreviewCallback(Landroid/hardware/Camera$PreviewCallback;)V
     .locals 2
-    .param p1    # Landroid/hardware/Camera$PreviewCallback;
 
     const/4 v1, 0x0
 
@@ -1075,7 +1034,6 @@
 
 .method public final setPreviewCallbackAllocation(Landroid/renderscript/Allocation;)V
     .locals 6
-    .param p1    # Landroid/renderscript/Allocation;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1259,7 +1217,6 @@
 
 .method public final setPreviewCallbackWithBuffer(Landroid/hardware/Camera$PreviewCallback;)V
     .locals 2
-    .param p1    # Landroid/hardware/Camera$PreviewCallback;
 
     const/4 v1, 0x1
 
@@ -1288,7 +1245,6 @@
 
 .method public final setPreviewDisplay(Landroid/view/SurfaceHolder;)V
     .locals 1
-    .param p1    # Landroid/view/SurfaceHolder;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1326,7 +1282,6 @@
 
 .method public final setZoomChangeListener(Landroid/hardware/Camera$OnZoomChangeListener;)V
     .locals 0
-    .param p1    # Landroid/hardware/Camera$OnZoomChangeListener;
 
     iput-object p1, p0, Landroid/hardware/Camera;->mZoomListener:Landroid/hardware/Camera$OnZoomChangeListener;
 
@@ -1430,9 +1385,6 @@
 
 .method public final takePicture(Landroid/hardware/Camera$ShutterCallback;Landroid/hardware/Camera$PictureCallback;Landroid/hardware/Camera$PictureCallback;)V
     .locals 1
-    .param p1    # Landroid/hardware/Camera$ShutterCallback;
-    .param p2    # Landroid/hardware/Camera$PictureCallback;
-    .param p3    # Landroid/hardware/Camera$PictureCallback;
 
     const/4 v0, 0x0
 
@@ -1443,10 +1395,6 @@
 
 .method public final takePicture(Landroid/hardware/Camera$ShutterCallback;Landroid/hardware/Camera$PictureCallback;Landroid/hardware/Camera$PictureCallback;Landroid/hardware/Camera$PictureCallback;)V
     .locals 2
-    .param p1    # Landroid/hardware/Camera$ShutterCallback;
-    .param p2    # Landroid/hardware/Camera$PictureCallback;
-    .param p3    # Landroid/hardware/Camera$PictureCallback;
-    .param p4    # Landroid/hardware/Camera$PictureCallback;
 
     iput-object p1, p0, Landroid/hardware/Camera;->mShutterCallback:Landroid/hardware/Camera$ShutterCallback;
 

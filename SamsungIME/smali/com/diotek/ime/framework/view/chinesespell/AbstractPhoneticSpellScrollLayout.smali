@@ -47,7 +47,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -92,8 +91,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -138,7 +135,6 @@
 
 .method static synthetic access$000(Lcom/diotek/ime/framework/view/chinesespell/AbstractPhoneticSpellScrollLayout;)Lcom/diotek/ime/framework/common/InputManager;
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/view/chinesespell/AbstractPhoneticSpellScrollLayout;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/chinesespell/AbstractPhoneticSpellScrollLayout;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -147,7 +143,6 @@
 
 .method private addViewToPhoneticSpellLayout(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/chinesespell/AbstractPhoneticSpellScrollLayout;->mPhoneticSpellLayout:Landroid/widget/LinearLayout;
 
@@ -240,7 +235,6 @@
 
 .method protected getFont(I)Landroid/graphics/Typeface;
     .locals 3
-    .param p1    # I
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/chinesespell/AbstractPhoneticSpellScrollLayout;->mFontManager:Lcom/diotek/ime/framework/common/FontManager;
 
@@ -310,7 +304,6 @@
 
 .method public initView(Landroid/widget/LinearLayout;)V
     .locals 3
-    .param p1    # Landroid/widget/LinearLayout;
 
     invoke-static {}, Lcom/diotek/ime/framework/common/InputManagerImpl;->getInstance()Lcom/diotek/ime/framework/common/InputManager;
 
@@ -649,7 +642,6 @@
 
 .method public setPhoneticSpellScrollViewShown(Z)V
     .locals 3
-    .param p1    # Z
 
     const/4 v2, 0x0
 
@@ -693,7 +685,6 @@
 
 .method public setSpellToSpellLayout(Z)V
     .locals 28
-    .param p1    # Z
 
     move-object/from16 v0, p0
 

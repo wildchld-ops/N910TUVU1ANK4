@@ -27,10 +27,6 @@
 # direct methods
 .method public constructor <init>(Landroid/media/MediaRouter$Callback;IILandroid/media/MediaRouter;)V
     .locals 0
-    .param p1    # Landroid/media/MediaRouter$Callback;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/media/MediaRouter;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -49,7 +45,6 @@
 # virtual methods
 .method public filterRouteEvent(I)Z
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/media/MediaRouter$CallbackInfo;->flags:I
 
@@ -77,7 +72,6 @@
 
 .method public filterRouteEvent(Landroid/media/MediaRouter$RouteInfo;)Z
     .locals 1
-    .param p1    # Landroid/media/MediaRouter$RouteInfo;
 
     iget v0, p1, Landroid/media/MediaRouter$RouteInfo;->mSupportedTypes:I
 

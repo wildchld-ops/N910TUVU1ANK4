@@ -16,7 +16,6 @@
 # direct methods
 .method public constructor <init>(I)V
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -41,7 +40,6 @@
 
 .method public constructor <init>([B)V
     .locals 1
-    .param p1    # [B
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -68,7 +66,6 @@
 # virtual methods
 .method public addBoolean(Z)V
     .locals 1
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -89,7 +86,6 @@
 
 .method public addF32(F)V
     .locals 1
-    .param p1    # F
 
     invoke-static {p1}, Ljava/lang/Float;->floatToRawIntBits(F)I
 
@@ -102,7 +98,6 @@
 
 .method public addF32(Landroid/renderscript/Float2;)V
     .locals 1
-    .param p1    # Landroid/renderscript/Float2;
 
     iget v0, p1, Landroid/renderscript/Float2;->x:F
 
@@ -117,7 +112,6 @@
 
 .method public addF32(Landroid/renderscript/Float3;)V
     .locals 1
-    .param p1    # Landroid/renderscript/Float3;
 
     iget v0, p1, Landroid/renderscript/Float3;->x:F
 
@@ -136,7 +130,6 @@
 
 .method public addF32(Landroid/renderscript/Float4;)V
     .locals 1
-    .param p1    # Landroid/renderscript/Float4;
 
     iget v0, p1, Landroid/renderscript/Float4;->x:F
 
@@ -159,7 +152,6 @@
 
 .method public addF64(D)V
     .locals 2
-    .param p1    # D
 
     invoke-static {p1, p2}, Ljava/lang/Double;->doubleToRawLongBits(D)J
 
@@ -172,7 +164,6 @@
 
 .method public addF64(Landroid/renderscript/Double2;)V
     .locals 2
-    .param p1    # Landroid/renderscript/Double2;
 
     iget-wide v0, p1, Landroid/renderscript/Double2;->x:D
 
@@ -187,7 +178,6 @@
 
 .method public addF64(Landroid/renderscript/Double3;)V
     .locals 2
-    .param p1    # Landroid/renderscript/Double3;
 
     iget-wide v0, p1, Landroid/renderscript/Double3;->x:D
 
@@ -206,7 +196,6 @@
 
 .method public addF64(Landroid/renderscript/Double4;)V
     .locals 2
-    .param p1    # Landroid/renderscript/Double4;
 
     iget-wide v0, p1, Landroid/renderscript/Double4;->x:D
 
@@ -229,7 +218,6 @@
 
 .method public addI16(Landroid/renderscript/Short2;)V
     .locals 1
-    .param p1    # Landroid/renderscript/Short2;
 
     iget-short v0, p1, Landroid/renderscript/Short2;->x:S
 
@@ -244,7 +232,6 @@
 
 .method public addI16(Landroid/renderscript/Short3;)V
     .locals 1
-    .param p1    # Landroid/renderscript/Short3;
 
     iget-short v0, p1, Landroid/renderscript/Short3;->x:S
 
@@ -263,7 +250,6 @@
 
 .method public addI16(Landroid/renderscript/Short4;)V
     .locals 1
-    .param p1    # Landroid/renderscript/Short4;
 
     iget-short v0, p1, Landroid/renderscript/Short4;->x:S
 
@@ -286,7 +272,6 @@
 
 .method public addI16(S)V
     .locals 3
-    .param p1    # S
 
     const/4 v0, 0x2
 
@@ -325,7 +310,6 @@
 
 .method public addI32(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v0, 0x4
 
@@ -398,7 +382,6 @@
 
 .method public addI32(Landroid/renderscript/Int2;)V
     .locals 1
-    .param p1    # Landroid/renderscript/Int2;
 
     iget v0, p1, Landroid/renderscript/Int2;->x:I
 
@@ -413,7 +396,6 @@
 
 .method public addI32(Landroid/renderscript/Int3;)V
     .locals 1
-    .param p1    # Landroid/renderscript/Int3;
 
     iget v0, p1, Landroid/renderscript/Int3;->x:I
 
@@ -432,7 +414,6 @@
 
 .method public addI32(Landroid/renderscript/Int4;)V
     .locals 1
-    .param p1    # Landroid/renderscript/Int4;
 
     iget v0, p1, Landroid/renderscript/Int4;->x:I
 
@@ -455,7 +436,6 @@
 
 .method public addI64(J)V
     .locals 7
-    .param p1    # J
 
     const/16 v6, 0x8
 
@@ -622,7 +602,6 @@
 
 .method public addI64(Landroid/renderscript/Long2;)V
     .locals 2
-    .param p1    # Landroid/renderscript/Long2;
 
     iget-wide v0, p1, Landroid/renderscript/Long2;->x:J
 
@@ -637,7 +616,6 @@
 
 .method public addI64(Landroid/renderscript/Long3;)V
     .locals 2
-    .param p1    # Landroid/renderscript/Long3;
 
     iget-wide v0, p1, Landroid/renderscript/Long3;->x:J
 
@@ -656,7 +634,6 @@
 
 .method public addI64(Landroid/renderscript/Long4;)V
     .locals 2
-    .param p1    # Landroid/renderscript/Long4;
 
     iget-wide v0, p1, Landroid/renderscript/Long4;->x:J
 
@@ -679,7 +656,6 @@
 
 .method public addI8(B)V
     .locals 3
-    .param p1    # B
 
     iget-object v0, p0, Landroid/renderscript/FieldPacker;->mData:[B
 
@@ -696,7 +672,6 @@
 
 .method public addI8(Landroid/renderscript/Byte2;)V
     .locals 1
-    .param p1    # Landroid/renderscript/Byte2;
 
     iget-byte v0, p1, Landroid/renderscript/Byte2;->x:B
 
@@ -711,7 +686,6 @@
 
 .method public addI8(Landroid/renderscript/Byte3;)V
     .locals 1
-    .param p1    # Landroid/renderscript/Byte3;
 
     iget-byte v0, p1, Landroid/renderscript/Byte3;->x:B
 
@@ -730,7 +704,6 @@
 
 .method public addI8(Landroid/renderscript/Byte4;)V
     .locals 1
-    .param p1    # Landroid/renderscript/Byte4;
 
     iget-byte v0, p1, Landroid/renderscript/Byte4;->x:B
 
@@ -753,7 +726,6 @@
 
 .method public addMatrix(Landroid/renderscript/Matrix2f;)V
     .locals 2
-    .param p1    # Landroid/renderscript/Matrix2f;
 
     const/4 v0, 0x0
 
@@ -780,7 +752,6 @@
 
 .method public addMatrix(Landroid/renderscript/Matrix3f;)V
     .locals 2
-    .param p1    # Landroid/renderscript/Matrix3f;
 
     const/4 v0, 0x0
 
@@ -807,7 +778,6 @@
 
 .method public addMatrix(Landroid/renderscript/Matrix4f;)V
     .locals 2
-    .param p1    # Landroid/renderscript/Matrix4f;
 
     const/4 v0, 0x0
 
@@ -834,7 +804,6 @@
 
 .method public addObj(Landroid/renderscript/BaseObj;)V
     .locals 1
-    .param p1    # Landroid/renderscript/BaseObj;
 
     if-eqz p1, :cond_0
 
@@ -859,7 +828,6 @@
 
 .method public addU16(I)V
     .locals 3
-    .param p1    # I
 
     if-ltz p1, :cond_0
 
@@ -942,7 +910,6 @@
 
 .method public addU16(Landroid/renderscript/Int2;)V
     .locals 1
-    .param p1    # Landroid/renderscript/Int2;
 
     iget v0, p1, Landroid/renderscript/Int2;->x:I
 
@@ -957,7 +924,6 @@
 
 .method public addU16(Landroid/renderscript/Int3;)V
     .locals 1
-    .param p1    # Landroid/renderscript/Int3;
 
     iget v0, p1, Landroid/renderscript/Int3;->x:I
 
@@ -976,7 +942,6 @@
 
 .method public addU16(Landroid/renderscript/Int4;)V
     .locals 1
-    .param p1    # Landroid/renderscript/Int4;
 
     iget v0, p1, Landroid/renderscript/Int4;->x:I
 
@@ -999,7 +964,6 @@
 
 .method public addU32(J)V
     .locals 6
-    .param p1    # J
 
     const-wide/16 v4, 0xff
 
@@ -1138,7 +1102,6 @@
 
 .method public addU32(Landroid/renderscript/Long2;)V
     .locals 2
-    .param p1    # Landroid/renderscript/Long2;
 
     iget-wide v0, p1, Landroid/renderscript/Long2;->x:J
 
@@ -1153,7 +1116,6 @@
 
 .method public addU32(Landroid/renderscript/Long3;)V
     .locals 2
-    .param p1    # Landroid/renderscript/Long3;
 
     iget-wide v0, p1, Landroid/renderscript/Long3;->x:J
 
@@ -1172,7 +1134,6 @@
 
 .method public addU32(Landroid/renderscript/Long4;)V
     .locals 2
-    .param p1    # Landroid/renderscript/Long4;
 
     iget-wide v0, p1, Landroid/renderscript/Long4;->x:J
 
@@ -1195,7 +1156,6 @@
 
 .method public addU64(J)V
     .locals 7
-    .param p1    # J
 
     const/16 v6, 0x8
 
@@ -1405,7 +1365,6 @@
 
 .method public addU64(Landroid/renderscript/Long2;)V
     .locals 2
-    .param p1    # Landroid/renderscript/Long2;
 
     iget-wide v0, p1, Landroid/renderscript/Long2;->x:J
 
@@ -1420,7 +1379,6 @@
 
 .method public addU64(Landroid/renderscript/Long3;)V
     .locals 2
-    .param p1    # Landroid/renderscript/Long3;
 
     iget-wide v0, p1, Landroid/renderscript/Long3;->x:J
 
@@ -1439,7 +1397,6 @@
 
 .method public addU64(Landroid/renderscript/Long4;)V
     .locals 2
-    .param p1    # Landroid/renderscript/Long4;
 
     iget-wide v0, p1, Landroid/renderscript/Long4;->x:J
 
@@ -1462,7 +1419,6 @@
 
 .method public addU8(Landroid/renderscript/Short2;)V
     .locals 1
-    .param p1    # Landroid/renderscript/Short2;
 
     iget-short v0, p1, Landroid/renderscript/Short2;->x:S
 
@@ -1477,7 +1433,6 @@
 
 .method public addU8(Landroid/renderscript/Short3;)V
     .locals 1
-    .param p1    # Landroid/renderscript/Short3;
 
     iget-short v0, p1, Landroid/renderscript/Short3;->x:S
 
@@ -1496,7 +1451,6 @@
 
 .method public addU8(Landroid/renderscript/Short4;)V
     .locals 1
-    .param p1    # Landroid/renderscript/Short4;
 
     iget-short v0, p1, Landroid/renderscript/Short4;->x:S
 
@@ -1519,7 +1473,6 @@
 
 .method public addU8(S)V
     .locals 3
-    .param p1    # S
 
     if-ltz p1, :cond_0
 
@@ -1582,7 +1535,6 @@
 
 .method public align(I)V
     .locals 3
-    .param p1    # I
 
     if-lez p1, :cond_0
 
@@ -1671,7 +1623,6 @@
 
 .method public reset(I)V
     .locals 3
-    .param p1    # I
 
     if-ltz p1, :cond_0
 
@@ -1712,7 +1663,6 @@
 
 .method public skip(I)V
     .locals 4
-    .param p1    # I
 
     iget v1, p0, Landroid/renderscript/FieldPacker;->mPos:I
 
@@ -2713,7 +2663,6 @@
 
 .method public subalign(I)V
     .locals 3
-    .param p1    # I
 
     add-int/lit8 v0, p1, -0x1
 

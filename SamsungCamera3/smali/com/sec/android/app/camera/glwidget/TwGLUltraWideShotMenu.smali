@@ -997,10 +997,6 @@
 
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;ILcom/sec/android/glview/TwGLViewGroup;Lcom/sec/android/app/camera/MenuResourceDepot;)V
     .locals 9
-    .param p1    # Lcom/sec/android/app/camera/Camera;
-    .param p2    # I
-    .param p3    # Lcom/sec/android/glview/TwGLViewGroup;
-    .param p4    # Lcom/sec/android/app/camera/MenuResourceDepot;
 
     const/4 v5, 0x6
 
@@ -2657,7 +2653,6 @@
 
 .method static synthetic access$000(Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;)Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu$OnUltraWideShotCaptureCancelListener;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;->mListener:Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu$OnUltraWideShotCaptureCancelListener;
 
@@ -2666,7 +2661,6 @@
 
 .method static synthetic access$100(Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;)Lcom/sec/android/app/camera/Camera;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -2675,7 +2669,6 @@
 
 .method static synthetic access$1000(Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;)Lcom/sec/android/app/camera/Camera;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -2684,7 +2677,6 @@
 
 .method static synthetic access$1100(Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;)Z
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;
 
     iget-boolean v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;->mPlayHaptic:Z
 
@@ -2693,7 +2685,6 @@
 
 .method static synthetic access$1200(Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;)Lcom/sec/android/app/camera/Camera;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -2702,7 +2693,6 @@
 
 .method static synthetic access$1300(Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;)Lcom/sec/android/app/camera/Camera;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -2711,7 +2701,6 @@
 
 .method static synthetic access$1400(Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;)[Lcom/sec/android/glview/TwGLImage;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;->mCenterGuideImage:[Lcom/sec/android/glview/TwGLImage;
 
@@ -2720,7 +2709,6 @@
 
 .method static synthetic access$1500(Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;)I
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;
 
     iget v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;->mGuideOrient:I
 
@@ -2729,7 +2717,6 @@
 
 .method static synthetic access$1600(Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;)[Lcom/sec/android/glview/TwGLImage;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;->mLeftGuideImage:[Lcom/sec/android/glview/TwGLImage;
 
@@ -2738,7 +2725,6 @@
 
 .method static synthetic access$1700(Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;)[Lcom/sec/android/glview/TwGLImage;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;->mRightGuideImage:[Lcom/sec/android/glview/TwGLImage;
 
@@ -2747,7 +2733,6 @@
 
 .method static synthetic access$1800(Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;)I
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;
 
     iget v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;->mGuideDirection:I
 
@@ -2756,7 +2741,6 @@
 
 .method static synthetic access$1900(Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;)Landroid/view/animation/Animation;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;->mGuideBlinkingAnimation:Landroid/view/animation/Animation;
 
@@ -2765,7 +2749,6 @@
 
 .method static synthetic access$200(Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;)V
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;
 
     invoke-direct {p0}, Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;->stopLivePreviewHaptic()V
 
@@ -2774,7 +2757,6 @@
 
 .method static synthetic access$2000(Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;)Lcom/sec/android/app/camera/Camera;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -2783,7 +2765,6 @@
 
 .method static synthetic access$2100(Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;)D
     .locals 2
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;
 
     iget-wide v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;->mPotraitOffset:D
 
@@ -2800,7 +2781,6 @@
 
 .method static synthetic access$2300(Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;)D
     .locals 2
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;
 
     iget-wide v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;->mLandscapeOffset:D
 
@@ -2817,7 +2797,6 @@
 
 .method static synthetic access$2500(Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;)Lcom/sec/android/app/camera/Camera;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -2826,7 +2805,6 @@
 
 .method static synthetic access$2600(Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;)I
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;
 
     iget v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;->mCurrentOrientation:I
 
@@ -2835,7 +2813,6 @@
 
 .method static synthetic access$2700(Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;)[Lcom/sec/android/glview/TwGLImage;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;->mGuideArrow:[Lcom/sec/android/glview/TwGLImage;
 
@@ -2844,7 +2821,6 @@
 
 .method static synthetic access$2800(Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;)Z
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;
 
     iget-boolean v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;->mAnimationDirection:Z
 
@@ -2853,8 +2829,6 @@
 
 .method static synthetic access$2802(Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;Z)Z
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;->mAnimationDirection:Z
 
@@ -2863,7 +2837,6 @@
 
 .method static synthetic access$2900(Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;)Landroid/view/animation/AlphaAnimation;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;->mTwoBlinkAnimation:Landroid/view/animation/AlphaAnimation;
 
@@ -2872,7 +2845,6 @@
 
 .method static synthetic access$300(Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;)Lcom/sec/android/app/camera/Camera;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -2881,7 +2853,6 @@
 
 .method static synthetic access$400(Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;)Z
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;
 
     iget-boolean v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;->mUltraWideShotWarning:Z
 
@@ -2890,7 +2861,6 @@
 
 .method static synthetic access$500(Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;)Lcom/sec/android/app/camera/Camera;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -2899,7 +2869,6 @@
 
 .method static synthetic access$600(Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;)Lcom/sec/android/app/camera/Camera;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -2908,7 +2877,6 @@
 
 .method static synthetic access$700(Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;)Lcom/sec/android/app/camera/Camera;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -2917,7 +2885,6 @@
 
 .method static synthetic access$800(Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;)Lcom/sec/android/app/camera/Camera;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -2926,7 +2893,6 @@
 
 .method static synthetic access$900(Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;)Lcom/sec/android/app/camera/Camera;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -2935,7 +2901,6 @@
 
 .method private decodeRgbaBitmap([B)Landroid/graphics/Bitmap;
     .locals 17
-    .param p1    # [B
 
     if-eqz p1, :cond_0
 
@@ -4127,7 +4092,6 @@
 
 .method public getGuideDirection(I)I
     .locals 3
-    .param p1    # I
 
     const/4 v0, 0x2
 
@@ -4366,8 +4330,6 @@
 
 .method public getPreviewThumbnailSize(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     int-to-float v0, p1
 
@@ -4626,8 +4588,6 @@
 
 .method public isMaxPositionReached(FF)Z
     .locals 5
-    .param p1    # F
-    .param p2    # F
 
     const/4 v3, 0x2
 
@@ -5077,7 +5037,6 @@
 
 .method public onClick(Lcom/sec/android/glview/TwGLView;)Z
     .locals 2
-    .param p1    # Lcom/sec/android/glview/TwGLView;
 
     const/4 v0, 0x1
 
@@ -5168,8 +5127,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x4
 
@@ -5227,8 +5184,6 @@
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/16 v2, 0x1b
 
@@ -5414,7 +5369,6 @@
 
 .method public declared-synchronized onLivePreviewData([B)V
     .locals 14
-    .param p1    # [B
 
     const/4 v3, 0x2
 
@@ -6071,7 +6025,6 @@
 
 .method public onOrientationChanged(I)V
     .locals 6
-    .param p1    # I
 
     const/4 v5, 0x7
 
@@ -6471,7 +6424,6 @@
 
 .method public onUltraWideDirectionChanged(I)V
     .locals 7
-    .param p1    # I
 
     const/4 v6, 0x2
 
@@ -6659,7 +6611,6 @@
 
 .method public onUltraWideRectChanged([B)V
     .locals 40
-    .param p1    # [B
 
     const/4 v3, 0x0
 
@@ -8711,8 +8662,6 @@
 
 .method public onUltraWideSelfieNextCapturePosition(II)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     const/4 v2, 0x0
 
@@ -9234,7 +9183,6 @@
 
 .method public prepareWarningArrow(I)V
     .locals 7
-    .param p1    # I
 
     const/4 v6, 0x1
 
@@ -10409,7 +10357,6 @@
 
 .method public setAcquisitionProgress(I)V
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -10424,14 +10371,12 @@
 
 .method public setCaptureAngle(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public setCaptureError(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;->mCaptureError:Z
 
@@ -10531,7 +10476,6 @@
 
 .method public setEncodingProgress(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;->mEncodingProgress:Z
 
@@ -10540,8 +10484,6 @@
 
 .method public setFocusRectLeftTop(FF)V
     .locals 5
-    .param p1    # F
-    .param p2    # F
 
     const/4 v3, 0x0
 
@@ -10678,7 +10620,6 @@
 
 .method public setHapticEnabled(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;->mPlayHaptic:Z
 
@@ -10687,7 +10628,6 @@
 
 .method public setLowResolutionBitmap(Landroid/graphics/Bitmap;)V
     .locals 2
-    .param p1    # Landroid/graphics/Bitmap;
 
     const-string v0, "TwGLUltraWideShotMenu"
 
@@ -10700,7 +10640,6 @@
 
 .method public setOnUltraWideShotCaptureCancelledListener(Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu$OnUltraWideShotCaptureCancelListener;)V
     .locals 0
-    .param p1    # Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu$OnUltraWideShotCaptureCancelListener;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;->mListener:Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu$OnUltraWideShotCaptureCancelListener;
 
@@ -10769,7 +10708,6 @@
 
 .method public declared-synchronized setPostCaptureProgress(I)V
     .locals 3
-    .param p1    # I
 
     monitor-enter p0
 
@@ -10838,10 +10776,6 @@
 
 .method public setPreviewThumbnailLeftTop(FFFF)V
     .locals 2
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
 
     const/4 v1, 0x0
 
@@ -10903,7 +10837,6 @@
 
 .method public setSkipCapture(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;->mSkipCapture:Z
 
@@ -10912,7 +10845,6 @@
 
 .method public setSkipCheckWarning(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;->mSkipCheckWarning:Z
 
@@ -10921,7 +10853,6 @@
 
 .method public setStartCapture(Z)V
     .locals 2
-    .param p1    # Z
 
     const/4 v1, 0x0
 
@@ -10941,14 +10872,6 @@
 
 .method public setTrapezoidPosition(FFFFFFFF)V
     .locals 6
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # F
-    .param p7    # F
-    .param p8    # F
 
     const/high16 v5, 0x40000000
 
@@ -11386,7 +11309,6 @@
 
 .method public showGuideArrow(I)V
     .locals 11
-    .param p1    # I
 
     const/high16 v10, 0x40000000
 
@@ -12086,7 +12008,6 @@
 
 .method public showGuideRect(I)V
     .locals 3
-    .param p1    # I
 
     iget-boolean v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLUltraWideShotMenu;->mMovingDetection:Z
 
@@ -12129,7 +12050,6 @@
 
 .method public showGuideText(I)V
     .locals 5
-    .param p1    # I
 
     const/4 v4, 0x5
 
@@ -12452,9 +12372,6 @@
 
 .method public showWarningArrow(FFI)V
     .locals 4
-    .param p1    # F
-    .param p2    # F
-    .param p3    # I
 
     const/16 v2, 0xe
 
@@ -12551,7 +12468,6 @@
 
 .method public showWarningText(I)V
     .locals 6
-    .param p1    # I
 
     const v5, 0x7f0c01c9
 
@@ -12768,7 +12684,6 @@
 
 .method public startGuideAnimation(I)V
     .locals 8
-    .param p1    # I
 
     const/4 v7, 0x3
 

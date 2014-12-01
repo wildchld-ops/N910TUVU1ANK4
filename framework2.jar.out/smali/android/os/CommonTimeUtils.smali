@@ -22,8 +22,6 @@
 # direct methods
 .method public constructor <init>(Landroid/os/IBinder;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,8 +36,6 @@
 # virtual methods
 .method public transactGetInt(II)I
     .locals 6
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -101,8 +97,6 @@
 
 .method public transactGetLong(IJ)J
     .locals 7
-    .param p1    # I
-    .param p2    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -164,7 +158,6 @@
 
 .method public transactGetSockaddr(I)Ljava/net/InetSocketAddress;
     .locals 23
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -505,8 +498,6 @@
 
 .method public transactGetString(ILjava/lang/String;)Ljava/lang/String;
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -568,8 +559,6 @@
 
 .method public transactSetInt(II)I
     .locals 5
-    .param p1    # I
-    .param p2    # I
 
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
@@ -627,8 +616,6 @@
 
 .method public transactSetLong(IJ)I
     .locals 5
-    .param p1    # I
-    .param p2    # J
 
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
@@ -686,8 +673,6 @@
 
 .method public transactSetSockaddr(ILjava/net/InetSocketAddress;)I
     .locals 14
-    .param p1    # I
-    .param p2    # Ljava/net/InetSocketAddress;
 
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
@@ -926,8 +911,6 @@
 
 .method public transactSetString(ILjava/lang/String;)I
     .locals 5
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 

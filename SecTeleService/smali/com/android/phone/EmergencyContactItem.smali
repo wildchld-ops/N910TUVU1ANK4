@@ -285,7 +285,7 @@
 
     iget-object v2, p0, Lcom/android/phone/EmergencyContactItem;->mNumber:Ljava/lang/String;
 
-    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyContactItem;->getContext()Landroid/content/Context;
 
     move-result-object v3
 
@@ -326,7 +326,7 @@
 
     invoke-virtual {v1, v2}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
 
-    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyContactItem;->getContext()Landroid/content/Context;
 
     move-result-object v2
 
@@ -340,7 +340,7 @@
     :catch_0
     move-exception v0
 
-    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
+    invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
 
     goto :goto_0
 
@@ -351,7 +351,7 @@
 
     const/4 v3, 0x0
 
-    invoke-virtual {v2, v3}, Landroid/app/Activity;->showDialog(I)V
+    invoke-virtual {v2, v3}, Lcom/android/phone/EmergencyDialer;->showDialog(I)V
 
     goto :goto_0
 
@@ -397,7 +397,7 @@
 
     invoke-virtual {v1, v2, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyContactItem;->getContext()Landroid/content/Context;
 
     move-result-object v2
 
@@ -410,7 +410,7 @@
     :catch_1
     move-exception v0
 
-    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
+    invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
 
     goto :goto_0
 .end method
@@ -447,13 +447,13 @@
     const/4 v1, 0x1
 
     :goto_0
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setEnabled(Z)V
+    invoke-virtual {v0, v1}, Landroid/widget/Button;->setEnabled(Z)V
 
     new-instance v1, Lcom/android/phone/EmergencyContactItem$8;
 
     invoke-direct {v1, p0, v0, p2}, Lcom/android/phone/EmergencyContactItem$8;-><init>(Lcom/android/phone/EmergencyContactItem;Landroid/widget/Button;Landroid/widget/EditText;)V
 
-    invoke-virtual {p2, v1}, Landroid/widget/TextView;->addTextChangedListener(Landroid/text/TextWatcher;)V
+    invoke-virtual {p2, v1}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
     return-void
 
@@ -499,13 +499,13 @@
 
     const/4 v0, 0x1
 
-    invoke-virtual {p0, v0}, Landroid/view/View;->setEnabled(Z)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/EmergencyContactItem;->setEnabled(Z)V
 
     sget-object v0, Lcom/android/phone/EmergencyContactItem$9;->$SwitchMap$com$android$phone$EmergencyContactItemContainer$ItemType:[I
 
     iget-object v1, p0, Lcom/android/phone/EmergencyContactItem;->mItemType:Lcom/android/phone/EmergencyContactItemContainer$ItemType;
 
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    invoke-virtual {v1}, Lcom/android/phone/EmergencyContactItemContainer$ItemType;->ordinal()I
 
     move-result v1
 
@@ -519,7 +519,7 @@
     :pswitch_0
     iget-object v0, p0, Lcom/android/phone/EmergencyContactItem;->mNameView:Landroid/widget/TextView;
 
-    invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v2}, Landroid/widget/TextView;->setVisibility(I)V
 
     iget-object v0, p0, Lcom/android/phone/EmergencyContactItem;->mName:Ljava/lang/String;
 
@@ -585,14 +585,14 @@
 
     iget-object v0, p0, Lcom/android/phone/EmergencyContactItem;->mNameView:Landroid/widget/TextView;
 
-    invoke-virtual {v0, v3}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v3}, Landroid/widget/TextView;->setVisibility(I)V
 
     goto :goto_0
 
     :cond_3
     iget-object v0, p0, Lcom/android/phone/EmergencyContactItem;->mNameView:Landroid/widget/TextView;
 
-    invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v2}, Landroid/widget/TextView;->setVisibility(I)V
 
     iget-object v0, p0, Lcom/android/phone/EmergencyContactItem;->mNameView:Landroid/widget/TextView;
 
@@ -602,7 +602,7 @@
 
     iget-object v0, p0, Lcom/android/phone/EmergencyContactItem;->mName:Ljava/lang/String;
 
-    invoke-virtual {p0, v0}, Landroid/view/View;->setContentDescription(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/EmergencyContactItem;->setContentDescription(Ljava/lang/CharSequence;)V
 
     iget-object v0, p0, Lcom/android/phone/EmergencyContactItem;->mPhoto:Landroid/graphics/Bitmap;
 
@@ -665,7 +665,7 @@
     return-void
 
     :cond_0
-    invoke-virtual {p0, v1}, Landroid/view/View;->setEnabled(Z)V
+    invoke-virtual {p0, v1}, Lcom/android/phone/EmergencyContactItem;->setEnabled(Z)V
 
     goto :goto_0
 .end method
@@ -721,7 +721,7 @@
 
     invoke-virtual {v1, v2}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
 
-    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyContactItem;->getContext()Landroid/content/Context;
 
     move-result-object v2
 
@@ -731,7 +731,7 @@
 
     iget-object v2, v2, Lcom/android/phone/EmergencyContactItemContainer;->mEmergencyDialer:Lcom/android/phone/EmergencyDialer;
 
-    invoke-virtual {v2}, Landroid/app/Activity;->finish()V
+    invoke-virtual {v2}, Lcom/android/phone/EmergencyDialer;->finish()V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -741,7 +741,7 @@
     :catch_0
     move-exception v0
 
-    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
+    invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
 
     goto :goto_0
 .end method
@@ -757,17 +757,17 @@
 
     new-instance v3, Landroid/widget/EditText;
 
-    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyContactItem;->getContext()Landroid/content/Context;
 
     move-result-object v4
 
     invoke-direct {v3, v4}, Landroid/widget/EditText;-><init>(Landroid/content/Context;)V
 
-    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyContactItem;->getContext()Landroid/content/Context;
 
     move-result-object v4
 
-    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyContactItem;->getContext()Landroid/content/Context;
 
     const-string v5, "input_method"
 
@@ -779,7 +779,7 @@
 
     const/4 v4, 0x2
 
-    invoke-virtual {v3, v4}, Landroid/widget/TextView;->setInputType(I)V
+    invoke-virtual {v3, v4}, Landroid/widget/EditText;->setInputType(I)V
 
     new-instance v4, Landroid/os/Handler;
 
@@ -795,7 +795,7 @@
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyContactItem;->getContext()Landroid/content/Context;
 
     move-result-object v4
 
@@ -833,7 +833,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Landroid/app/Dialog;->show()V
+    invoke-virtual {v1}, Landroid/app/AlertDialog;->show()V
 
     invoke-direct {p0, v1, v3}, Lcom/android/phone/EmergencyContactItem;->setPositiveButtonEnabled(Landroid/app/AlertDialog;Landroid/widget/EditText;)V
 
@@ -897,7 +897,7 @@
 .method protected onFinishInflate()V
     .locals 2
 
-    invoke-super {p0}, Landroid/view/View;->onFinishInflate()V
+    invoke-super {p0}, Landroid/widget/FrameLayout;->onFinishInflate()V
 
     const-string v0, "EmergencyContactItem"
 
@@ -907,7 +907,7 @@
 
     const v0, 0x7f0a00e5
 
-    invoke-virtual {p0, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/phone/EmergencyContactItem;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -917,7 +917,7 @@
 
     const v0, 0x7f0a00e4
 
-    invoke-virtual {p0, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/phone/EmergencyContactItem;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -927,7 +927,7 @@
 
     const v0, 0x7f0a00e6
 
-    invoke-virtual {p0, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/phone/EmergencyContactItem;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -975,7 +975,7 @@
 
     move-result-object v2
 
-    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyContactItem;->getContext()Landroid/content/Context;
 
     move-result-object v3
 
@@ -1019,7 +1019,7 @@
     :catch_0
     move-exception v0
 
-    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
+    invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
 
     goto :goto_0
 .end method
@@ -1083,7 +1083,7 @@
 
     new-instance v0, Lcom/android/phone/EmergencyContactItem$ContactImageAsyncQuery;
 
-    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyContactItem;->getContext()Landroid/content/Context;
 
     move-result-object v2
 
@@ -1117,7 +1117,7 @@
 
     const/4 v7, 0x0
 
-    invoke-virtual/range {v0 .. v7}, Landroid/content/AsyncQueryHandler;->startQuery(ILjava/lang/Object;Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual/range {v0 .. v7}, Lcom/android/phone/EmergencyContactItem$ContactImageAsyncQuery;->startQuery(ILjava/lang/Object;Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)V
 
     :cond_0
     return-void
@@ -1175,7 +1175,7 @@
 
     iget-object v3, p0, Lcom/android/phone/EmergencyContactItem;->mScreenType:Lcom/android/phone/EmergencyContactItemContainer$ScreenType;
 
-    invoke-virtual {v3}, Ljava/lang/Enum;->ordinal()I
+    invoke-virtual {v3}, Lcom/android/phone/EmergencyContactItemContainer$ScreenType;->ordinal()I
 
     move-result v3
 
@@ -1209,13 +1209,13 @@
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyContactItem;->getContext()Landroid/content/Context;
 
     move-result-object v2
 
     invoke-direct {v0, v2}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyContactItem;->getContext()Landroid/content/Context;
 
     move-result-object v2
 
@@ -1271,11 +1271,11 @@
 
     const v3, 0x7f09054b
 
-    invoke-virtual {v2, v3}, Landroid/app/Dialog;->setTitle(I)V
+    invoke-virtual {v2, v3}, Landroid/app/AlertDialog;->setTitle(I)V
 
     iget-object v2, p0, Lcom/android/phone/EmergencyContactItem;->mEmergencyCallDialog:Landroid/app/AlertDialog;
 
-    invoke-virtual {v2}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
+    invoke-virtual {v2}, Landroid/app/AlertDialog;->getWindow()Landroid/view/Window;
 
     move-result-object v2
 
@@ -1285,7 +1285,7 @@
 
     iget-object v2, p0, Lcom/android/phone/EmergencyContactItem;->mEmergencyCallDialog:Landroid/app/AlertDialog;
 
-    invoke-virtual {v2}, Landroid/app/Dialog;->show()V
+    invoke-virtual {v2}, Landroid/app/AlertDialog;->show()V
 
     goto :goto_0
 

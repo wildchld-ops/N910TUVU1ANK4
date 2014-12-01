@@ -14,8 +14,6 @@
 
 .method public static decodeBitmapFromBytes([BI)Landroid/graphics/Bitmap;
     .locals 3
-    .param p0    # [B
-    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -46,10 +44,6 @@
 
 .method public static getOptimalSampleSize(IIII)I
     .locals 2
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v0, 0x1
 
@@ -77,9 +71,6 @@
 
 .method public static getOptimalSampleSizeFromBytes([BII)I
     .locals 5
-    .param p0    # [B
-    .param p1    # I
-    .param p2    # I
 
     new-instance v1, Landroid/graphics/BitmapFactory$Options;
 

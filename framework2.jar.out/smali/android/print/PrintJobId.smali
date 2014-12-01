@@ -54,7 +54,6 @@
 
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -65,7 +64,6 @@
 
 .method public static unflattenFromString(Ljava/lang/String;)Landroid/print/PrintJobId;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     new-instance v0, Landroid/print/PrintJobId;
 
@@ -86,7 +84,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 5
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x1
 
@@ -178,8 +175,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v0, p0, Landroid/print/PrintJobId;->mValue:Ljava/lang/String;
 

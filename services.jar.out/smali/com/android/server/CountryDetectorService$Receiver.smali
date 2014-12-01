@@ -28,7 +28,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/CountryDetectorService;Landroid/location/ICountryListener;)V
     .locals 1
-    .param p2    # Landroid/location/ICountryListener;
 
     iput-object p1, p0, Lcom/android/server/CountryDetectorService$Receiver;->this$0:Lcom/android/server/CountryDetectorService;
 
@@ -62,7 +61,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 2
-    .param p1    # Ljava/lang/Object;
 
     instance-of v0, p1, Lcom/android/server/CountryDetectorService$Receiver;
 

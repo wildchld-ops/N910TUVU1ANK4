@@ -44,7 +44,6 @@
 
 .method public constructor <init>(I)V
     .locals 0
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/support/v4/util/SimpleArrayMap;-><init>(I)V
 
@@ -53,7 +52,6 @@
 
 .method public constructor <init>(Landroid/support/v4/util/SimpleArrayMap;)V
     .locals 0
-    .param p1    # Landroid/support/v4/util/SimpleArrayMap;
 
     invoke-direct {p0, p1}, Landroid/support/v4/util/SimpleArrayMap;-><init>(Landroid/support/v4/util/SimpleArrayMap;)V
 

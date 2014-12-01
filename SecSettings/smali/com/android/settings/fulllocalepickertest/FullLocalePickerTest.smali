@@ -22,7 +22,6 @@
 
 .method public static constructAdapter(Landroid/content/Context;)Landroid/widget/ArrayAdapter;
     .locals 2
-    .param p0    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -48,9 +47,6 @@
 
 .method public static constructAdapter(Landroid/content/Context;II)Landroid/widget/ArrayAdapter;
     .locals 20
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -707,7 +703,6 @@
 
 .method private static toTitleCase(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
@@ -756,7 +751,6 @@
 
 .method public static updateLocale(Ljava/util/Locale;)V
     .locals 4
-    .param p0    # Ljava/util/Locale;
 
     :try_start_0
     const-string v2, "FullLocalePickerTest"
@@ -800,7 +794,6 @@
 # virtual methods
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
@@ -815,10 +808,6 @@
 
 .method public onListItemClick(Landroid/widget/ListView;Landroid/view/View;IJ)V
     .locals 4
-    .param p1    # Landroid/widget/ListView;
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
 
     const-string v1, "FullLocalePickerTest"
 

@@ -56,8 +56,6 @@
 
 .method public static findPointerIndex(Landroid/view/MotionEvent;I)I
     .locals 1
-    .param p0    # Landroid/view/MotionEvent;
-    .param p1    # I
 
     sget-object v0, Landroid/support/v4/view/MotionEventCompat;->IMPL:Landroid/support/v4/view/MotionEventCompat$MotionEventVersionImpl;
 
@@ -70,7 +68,6 @@
 
 .method public static getActionIndex(Landroid/view/MotionEvent;)I
     .locals 2
-    .param p0    # Landroid/view/MotionEvent;
 
     invoke-virtual {p0}, Landroid/view/MotionEvent;->getAction()I
 
@@ -87,8 +84,6 @@
 
 .method public static getPointerId(Landroid/view/MotionEvent;I)I
     .locals 1
-    .param p0    # Landroid/view/MotionEvent;
-    .param p1    # I
 
     sget-object v0, Landroid/support/v4/view/MotionEventCompat;->IMPL:Landroid/support/v4/view/MotionEventCompat$MotionEventVersionImpl;
 
@@ -101,8 +96,6 @@
 
 .method public static getX(Landroid/view/MotionEvent;I)F
     .locals 1
-    .param p0    # Landroid/view/MotionEvent;
-    .param p1    # I
 
     sget-object v0, Landroid/support/v4/view/MotionEventCompat;->IMPL:Landroid/support/v4/view/MotionEventCompat$MotionEventVersionImpl;
 
@@ -115,8 +108,6 @@
 
 .method public static getY(Landroid/view/MotionEvent;I)F
     .locals 1
-    .param p0    # Landroid/view/MotionEvent;
-    .param p1    # I
 
     sget-object v0, Landroid/support/v4/view/MotionEventCompat;->IMPL:Landroid/support/v4/view/MotionEventCompat$MotionEventVersionImpl;
 

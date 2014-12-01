@@ -87,7 +87,6 @@
 
 .method static bin2HexStr([B)Ljava/lang/String;
     .locals 9
-    .param p0    # [B
 
     new-instance v6, Ljava/lang/StringBuffer;
 
@@ -164,7 +163,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 3
-    .param p1    # Ljava/lang/Object;
 
     if-ne p1, p0, :cond_0
 
@@ -243,8 +241,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v0, p0, Landroid/net/wifi/p2p/nsd/WifiP2pServiceInfo;->mQueryList:Ljava/util/List;
 

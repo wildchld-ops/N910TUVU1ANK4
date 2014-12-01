@@ -42,7 +42,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -61,7 +60,6 @@
 
 .method public constructor <init>(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -80,7 +78,6 @@
 
 .method private closeClopboardUI(Z)Z
     .locals 4
-    .param p1    # Z
 
     const/4 v3, 0x0
 
@@ -128,7 +125,6 @@
 
 .method public static getInstance(Landroid/content/Context;)Landroid/sec/clipboard/ClipboardUIManager;
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     sget-object v0, Landroid/sec/clipboard/ClipboardUIManager;->sInstance:Landroid/sec/clipboard/ClipboardUIManager;
 
@@ -378,7 +374,6 @@
 
 .method public enabledDismissIntent(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
@@ -401,7 +396,6 @@
 
 .method public finish(Z)V
     .locals 4
-    .param p1    # Z
 
     const/4 v3, 0x0
 
@@ -618,8 +612,6 @@
 
 .method public sendCropRectForAnimation(Landroid/graphics/Rect;Z)V
     .locals 7
-    .param p1    # Landroid/graphics/Rect;
-    .param p2    # Z
 
     const-string v0, "ClipboardUIManager"
 
@@ -677,8 +669,6 @@
 
 .method public setPasteTargetViewInfo(ILandroid/sec/clipboard/IClipboardDataPasteEvent;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/sec/clipboard/IClipboardDataPasteEvent;
 
     invoke-direct {p0}, Landroid/sec/clipboard/ClipboardUIManager;->setupInRuntime()Z
 

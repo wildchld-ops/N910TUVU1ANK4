@@ -53,7 +53,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -129,7 +128,6 @@
 
 .method static synthetic access$100(Landroid/hardware/camera2/CameraManager;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Landroid/hardware/camera2/CameraManager;
 
     iget-object v0, p0, Landroid/hardware/camera2/CameraManager;->mLock:Ljava/lang/Object;
 
@@ -138,7 +136,6 @@
 
 .method static synthetic access$200(Landroid/hardware/camera2/CameraManager;)Landroid/util/ArrayMap;
     .locals 1
-    .param p0    # Landroid/hardware/camera2/CameraManager;
 
     iget-object v0, p0, Landroid/hardware/camera2/CameraManager;->mListenerMap:Landroid/util/ArrayMap;
 
@@ -287,9 +284,6 @@
 
 .method private openCameraDeviceUserAsync(Ljava/lang/String;Landroid/hardware/camera2/CameraDevice$StateListener;Landroid/os/Handler;)V
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/hardware/camera2/CameraDevice$StateListener;
-    .param p3    # Landroid/os/Handler;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/hardware/camera2/CameraAccessException;
@@ -409,8 +403,6 @@
 # virtual methods
 .method public addAvailabilityListener(Landroid/hardware/camera2/CameraManager$AvailabilityListener;Landroid/os/Handler;)V
     .locals 3
-    .param p1    # Landroid/hardware/camera2/CameraManager$AvailabilityListener;
-    .param p2    # Landroid/os/Handler;
 
     if-nez p2, :cond_1
 
@@ -459,7 +451,6 @@
 
 .method public getCameraCharacteristics(Ljava/lang/String;)Landroid/hardware/camera2/CameraCharacteristics;
     .locals 7
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/hardware/camera2/CameraAccessException;
@@ -618,9 +609,6 @@
 
 .method public openCamera(Ljava/lang/String;Landroid/hardware/camera2/CameraDevice$StateListener;Landroid/os/Handler;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/hardware/camera2/CameraDevice$StateListener;
-    .param p3    # Landroid/os/Handler;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/hardware/camera2/CameraAccessException;
@@ -678,7 +666,6 @@
 
 .method public removeAvailabilityListener(Landroid/hardware/camera2/CameraManager$AvailabilityListener;)V
     .locals 2
-    .param p1    # Landroid/hardware/camera2/CameraManager$AvailabilityListener;
 
     iget-object v1, p0, Landroid/hardware/camera2/CameraManager;->mLock:Ljava/lang/Object;
 

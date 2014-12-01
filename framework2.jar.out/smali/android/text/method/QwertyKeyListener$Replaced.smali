@@ -24,7 +24,6 @@
 # direct methods
 .method public constructor <init>([C)V
     .locals 0
-    .param p1    # [C
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -35,7 +34,6 @@
 
 .method static synthetic access$000(Landroid/text/method/QwertyKeyListener$Replaced;)[C
     .locals 1
-    .param p0    # Landroid/text/method/QwertyKeyListener$Replaced;
 
     iget-object v0, p0, Landroid/text/method/QwertyKeyListener$Replaced;->mText:[C
 

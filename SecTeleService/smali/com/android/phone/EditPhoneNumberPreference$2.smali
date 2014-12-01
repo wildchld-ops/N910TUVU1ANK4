@@ -81,7 +81,7 @@
     if-eqz v3, :cond_0
 
     :goto_0
-    invoke-virtual {v2, v0}, Landroid/widget/TextView;->setEnabled(Z)V
+    invoke-virtual {v2, v0}, Landroid/widget/Button;->setEnabled(Z)V
 
     :goto_1
     return-void
@@ -122,7 +122,7 @@
     if-eqz v3, :cond_2
 
     :goto_2
-    invoke-virtual {v2, v0}, Landroid/widget/TextView;->setEnabled(Z)V
+    invoke-virtual {v2, v0}, Landroid/widget/Button;->setEnabled(Z)V
 
     goto :goto_1
 

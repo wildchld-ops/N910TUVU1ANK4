@@ -20,7 +20,6 @@
 # direct methods
 .method public constructor <init>(Landroid/view/ViewGroup;)V
     .locals 1
-    .param p1    # Landroid/view/ViewGroup;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -35,9 +34,6 @@
 
 .method private constructor <init>(Landroid/view/ViewGroup;ILandroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/view/ViewGroup;
-    .param p2    # I
-    .param p3    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -56,8 +52,6 @@
 
 .method public constructor <init>(Landroid/view/ViewGroup;Landroid/view/ViewGroup;)V
     .locals 1
-    .param p1    # Landroid/view/ViewGroup;
-    .param p2    # Landroid/view/ViewGroup;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -74,7 +68,6 @@
 
 .method static getCurrentScene(Landroid/view/View;)Landroid/transition/Scene;
     .locals 1
-    .param p0    # Landroid/view/View;
 
     const v0, 0x10202c1
 
@@ -89,9 +82,6 @@
 
 .method public static getSceneForLayout(Landroid/view/ViewGroup;ILandroid/content/Context;)Landroid/transition/Scene;
     .locals 4
-    .param p0    # Landroid/view/ViewGroup;
-    .param p1    # I
-    .param p2    # Landroid/content/Context;
 
     const v3, 0x10202c2
 
@@ -137,8 +127,6 @@
 
 .method static setCurrentScene(Landroid/view/View;Landroid/transition/Scene;)V
     .locals 1
-    .param p0    # Landroid/view/View;
-    .param p1    # Landroid/transition/Scene;
 
     const v0, 0x10202c1
 
@@ -261,7 +249,6 @@
 
 .method public setEnterAction(Ljava/lang/Runnable;)V
     .locals 0
-    .param p1    # Ljava/lang/Runnable;
 
     iput-object p1, p0, Landroid/transition/Scene;->mEnterAction:Ljava/lang/Runnable;
 
@@ -270,7 +257,6 @@
 
 .method public setExitAction(Ljava/lang/Runnable;)V
     .locals 0
-    .param p1    # Ljava/lang/Runnable;
 
     iput-object p1, p0, Landroid/transition/Scene;->mExitAction:Ljava/lang/Runnable;
 

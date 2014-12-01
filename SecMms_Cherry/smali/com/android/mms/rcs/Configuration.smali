@@ -297,9 +297,6 @@
 
 .method public static getValidValue(Ljava/lang/String;Ljava/lang/String;I)I
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     move v0, p2
 
@@ -310,9 +307,6 @@
 
 .method public static getValidValue(Ljava/lang/String;Ljava/lang/String;J)J
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
 
     move-wide v0, p2
 

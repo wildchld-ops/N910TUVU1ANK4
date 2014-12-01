@@ -37,7 +37,6 @@
 # virtual methods
 .method public add(Ljava/lang/String;)Lcom/android/common/content/ProjectionMap$Builder;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/common/content/ProjectionMap$Builder;->mMap:Lcom/android/common/content/ProjectionMap;
 
@@ -49,8 +48,6 @@
 
 .method public add(Ljava/lang/String;Ljava/lang/String;)Lcom/android/common/content/ProjectionMap$Builder;
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/common/content/ProjectionMap$Builder;->mMap:Lcom/android/common/content/ProjectionMap;
 
@@ -84,7 +81,6 @@
 
 .method public addAll(Lcom/android/common/content/ProjectionMap;)Lcom/android/common/content/ProjectionMap$Builder;
     .locals 5
-    .param p1    # Lcom/android/common/content/ProjectionMap;
 
     invoke-virtual {p1}, Ljava/util/HashMap;->entrySet()Ljava/util/Set;
 
@@ -132,7 +128,6 @@
 
 .method public addAll([Ljava/lang/String;)Lcom/android/common/content/ProjectionMap$Builder;
     .locals 4
-    .param p1    # [Ljava/lang/String;
 
     move-object v0, p1
 

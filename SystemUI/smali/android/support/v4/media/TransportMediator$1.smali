@@ -50,7 +50,6 @@
 
 .method public handleAudioFocusChange(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/support/v4/media/TransportMediator$1;->this$0:Landroid/support/v4/media/TransportMediator;
 
@@ -63,7 +62,6 @@
 
 .method public handleKey(Landroid/view/KeyEvent;)V
     .locals 1
-    .param p1    # Landroid/view/KeyEvent;
 
     iget-object v0, p0, Landroid/support/v4/media/TransportMediator$1;->this$0:Landroid/support/v4/media/TransportMediator;
 
@@ -76,7 +74,6 @@
 
 .method public playbackPositionUpdate(J)V
     .locals 1
-    .param p1    # J
 
     iget-object v0, p0, Landroid/support/v4/media/TransportMediator$1;->this$0:Landroid/support/v4/media/TransportMediator;
 

@@ -67,13 +67,9 @@
 
 .field private static final TAG_EMERGENCY:Ljava/lang/String; = "Emergency"
 
-.field private static final TAG_FLASHLIGHT:Ljava/lang/String; = "FlashLight"
-
 .field private static final TAG_POWEROFF:Ljava/lang/String; = "PowerOff"
 
 .field private static final TAG_RESTART:Ljava/lang/String; = "Restart"
-
-.field private static final TAG_SCREENSHOT:Ljava/lang/String; = "ScreenShot"
 
 .field private static final TAG_SLEEP:Ljava/lang/String; = "Sleep"
 
@@ -121,6 +117,8 @@
 .field public static mSilentModeView:Landroid/view/View;
 
 .field private static final mStrCSCFeatureGlobalActionItems:Ljava/lang/String;
+
+.field private static mlsShowingMiniDialog:Z
 
 .field private static sIsConfirming:Z
 
@@ -190,8 +188,6 @@
 
 .field private mEmergencyState:Lcom/android/internal/policy/impl/GlobalActions$ToggleAction$State;
 
-.field private mFlashlight:Lcom/android/internal/policy/impl/GlobalActions$SinglePressAction;
-
 .field private mHandler:Landroid/os/Handler;
 
 .field private mHasTelephony:Z
@@ -226,6 +222,8 @@
 .field private mRestart:Lcom/android/internal/policy/impl/GlobalActions$SinglePressAction;
 
 .field private mRingerModeReceiver:Landroid/content/BroadcastReceiver;
+
+.field mScreenRec:Lcom/android/internal/policy/impl/GlobalActions$SinglePressAction;
 
 .field mScreenshot:Lcom/android/internal/policy/impl/GlobalActions$SinglePressAction;
 
@@ -345,6 +343,8 @@
 
     sput-boolean v1, Lcom/android/internal/policy/impl/GlobalActions;->mIsTablet:Z
 
+    sput-boolean v1, Lcom/android/internal/policy/impl/GlobalActions;->mlsShowingMiniDialog:Z
+
     new-instance v0, Ljava/util/HashSet;
 
     invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
@@ -361,8 +361,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/view/WindowManagerPolicy$WindowManagerFuncs;)V
     .locals 9
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/view/WindowManagerPolicy$WindowManagerFuncs;
 
     const/4 v7, 0x0
 
@@ -911,7 +909,6 @@
 
 .method static synthetic access$002(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/internal/policy/impl/GlobalActions;->sIsSecondConfirming:Z
 
@@ -944,7 +941,6 @@
 
 .method static synthetic access$1200(Lcom/android/internal/policy/impl/GlobalActions;)Z
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/GlobalActions;
 
     iget-boolean v0, p0, Lcom/android/internal/policy/impl/GlobalActions;->isVZWOperatorAirplaneModeONReasonUSB3:Z
 
@@ -953,8 +949,6 @@
 
 .method static synthetic access$1202(Lcom/android/internal/policy/impl/GlobalActions;Z)Z
     .locals 0
-    .param p0    # Lcom/android/internal/policy/impl/GlobalActions;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/internal/policy/impl/GlobalActions;->isVZWOperatorAirplaneModeONReasonUSB3:Z
 
@@ -971,7 +965,6 @@
 
 .method static synthetic access$1400(Lcom/android/internal/policy/impl/GlobalActions;)Landroid/hardware/usb/UsbManager;
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/GlobalActions;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/GlobalActions;->mUsbManager:Landroid/hardware/usb/UsbManager;
 
@@ -980,8 +973,6 @@
 
 .method static synthetic access$1402(Lcom/android/internal/policy/impl/GlobalActions;Landroid/hardware/usb/UsbManager;)Landroid/hardware/usb/UsbManager;
     .locals 0
-    .param p0    # Lcom/android/internal/policy/impl/GlobalActions;
-    .param p1    # Landroid/hardware/usb/UsbManager;
 
     iput-object p1, p0, Lcom/android/internal/policy/impl/GlobalActions;->mUsbManager:Landroid/hardware/usb/UsbManager;
 
@@ -990,7 +981,6 @@
 
 .method static synthetic access$1500(Lcom/android/internal/policy/impl/GlobalActions;)Z
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/GlobalActions;
 
     iget-boolean v0, p0, Lcom/android/internal/policy/impl/GlobalActions;->mHasTelephony:Z
 
@@ -999,7 +989,6 @@
 
 .method static synthetic access$1600(Lcom/android/internal/policy/impl/GlobalActions;)Z
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/GlobalActions;
 
     iget-boolean v0, p0, Lcom/android/internal/policy/impl/GlobalActions;->mIsWaitingForEcmExit:Z
 
@@ -1008,8 +997,6 @@
 
 .method static synthetic access$1602(Lcom/android/internal/policy/impl/GlobalActions;Z)Z
     .locals 0
-    .param p0    # Lcom/android/internal/policy/impl/GlobalActions;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/internal/policy/impl/GlobalActions;->mIsWaitingForEcmExit:Z
 
@@ -1018,8 +1005,6 @@
 
 .method static synthetic access$1700(Lcom/android/internal/policy/impl/GlobalActions;Z)V
     .locals 0
-    .param p0    # Lcom/android/internal/policy/impl/GlobalActions;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/internal/policy/impl/GlobalActions;->changeAirplaneModeSystemSetting(Z)V
 
@@ -1028,7 +1013,6 @@
 
 .method static synthetic access$1800(Lcom/android/internal/policy/impl/GlobalActions;)Lcom/android/internal/policy/impl/GlobalActions$ToggleAction$State;
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/GlobalActions;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/GlobalActions;->mAirplaneState:Lcom/android/internal/policy/impl/GlobalActions$ToggleAction$State;
 
@@ -1037,8 +1021,6 @@
 
 .method static synthetic access$1802(Lcom/android/internal/policy/impl/GlobalActions;Lcom/android/internal/policy/impl/GlobalActions$ToggleAction$State;)Lcom/android/internal/policy/impl/GlobalActions$ToggleAction$State;
     .locals 0
-    .param p0    # Lcom/android/internal/policy/impl/GlobalActions;
-    .param p1    # Lcom/android/internal/policy/impl/GlobalActions$ToggleAction$State;
 
     iput-object p1, p0, Lcom/android/internal/policy/impl/GlobalActions;->mAirplaneState:Lcom/android/internal/policy/impl/GlobalActions$ToggleAction$State;
 
@@ -1047,7 +1029,6 @@
 
 .method static synthetic access$1900(Lcom/android/internal/policy/impl/GlobalActions;)Z
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/GlobalActions;
 
     invoke-direct {p0}, Lcom/android/internal/policy/impl/GlobalActions;->isNoAirplaneModeActivityRunning()Z
 
@@ -1066,7 +1047,6 @@
 
 .method static synthetic access$2000(Lcom/android/internal/policy/impl/GlobalActions;)Lcom/android/internal/policy/impl/GlobalActions$MyAdapter;
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/GlobalActions;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/GlobalActions;->mAdapter:Lcom/android/internal/policy/impl/GlobalActions$MyAdapter;
 
@@ -1075,7 +1055,6 @@
 
 .method static synthetic access$202(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/internal/policy/impl/GlobalActions;->sIsConfirming:Z
 
@@ -1084,7 +1063,6 @@
 
 .method static synthetic access$2100(Lcom/android/internal/policy/impl/GlobalActions;)Landroid/accessibilityservice/AccessibilityServiceInfo;
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/GlobalActions;
 
     invoke-direct {p0}, Lcom/android/internal/policy/impl/GlobalActions;->getAccessibilityServiceInfo()Landroid/accessibilityservice/AccessibilityServiceInfo;
 
@@ -1095,8 +1073,6 @@
 
 .method static synthetic access$2200(Lcom/android/internal/policy/impl/GlobalActions;Landroid/accessibilityservice/AccessibilityServiceInfo;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/GlobalActions;
-    .param p1    # Landroid/accessibilityservice/AccessibilityServiceInfo;
 
     invoke-direct {p0, p1}, Lcom/android/internal/policy/impl/GlobalActions;->createEnableDialogContentView(Landroid/accessibilityservice/AccessibilityServiceInfo;)Landroid/view/View;
 
@@ -1107,16 +1083,22 @@
 
 .method static synthetic access$2201(Lcom/android/internal/policy/impl/GlobalActions;)V
     .locals 0
-    .param p0    # Lcom/android/internal/policy/impl/GlobalActions;
 
     invoke-direct {p0}, Lcom/android/internal/policy/impl/GlobalActions;->takeScreenshot()V
 
     return-void
 .end method
 
+.method static synthetic access$2202(Lcom/android/internal/policy/impl/GlobalActions;)V
+    .locals 0
+
+    invoke-direct {p0}, Lcom/android/internal/policy/impl/GlobalActions;->toggleScreenRecord()V
+
+    return-void
+.end method
+
 .method static synthetic access$2300(Lcom/android/internal/policy/impl/GlobalActions;)Z
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/GlobalActions;
 
     iget-boolean v0, p0, Lcom/android/internal/policy/impl/GlobalActions;->mKeyguardShowing:Z
 
@@ -1125,7 +1107,6 @@
 
 .method static synthetic access$2400(Lcom/android/internal/policy/impl/GlobalActions;)Lcom/android/internal/policy/impl/GlobalActions$ConfirmDialogReceiver;
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/GlobalActions;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/GlobalActions;->mConfirmDialogReceiver:Lcom/android/internal/policy/impl/GlobalActions$ConfirmDialogReceiver;
 
@@ -1134,8 +1115,6 @@
 
 .method static synthetic access$2402(Lcom/android/internal/policy/impl/GlobalActions;Lcom/android/internal/policy/impl/GlobalActions$ConfirmDialogReceiver;)Lcom/android/internal/policy/impl/GlobalActions$ConfirmDialogReceiver;
     .locals 0
-    .param p0    # Lcom/android/internal/policy/impl/GlobalActions;
-    .param p1    # Lcom/android/internal/policy/impl/GlobalActions$ConfirmDialogReceiver;
 
     iput-object p1, p0, Lcom/android/internal/policy/impl/GlobalActions;->mConfirmDialogReceiver:Lcom/android/internal/policy/impl/GlobalActions$ConfirmDialogReceiver;
 
@@ -1144,7 +1123,6 @@
 
 .method static synthetic access$2500(Lcom/android/internal/policy/impl/GlobalActions;)Landroid/app/AlertDialog;
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/GlobalActions;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/GlobalActions;->mConfirmDialog:Landroid/app/AlertDialog;
 
@@ -1153,8 +1131,6 @@
 
 .method static synthetic access$2502(Lcom/android/internal/policy/impl/GlobalActions;Landroid/app/AlertDialog;)Landroid/app/AlertDialog;
     .locals 0
-    .param p0    # Lcom/android/internal/policy/impl/GlobalActions;
-    .param p1    # Landroid/app/AlertDialog;
 
     iput-object p1, p0, Lcom/android/internal/policy/impl/GlobalActions;->mConfirmDialog:Landroid/app/AlertDialog;
 
@@ -1163,7 +1139,6 @@
 
 .method static synthetic access$2600(Lcom/android/internal/policy/impl/GlobalActions;)Z
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/GlobalActions;
 
     invoke-direct {p0}, Lcom/android/internal/policy/impl/GlobalActions;->isTalkbackAvailable()Z
 
@@ -1174,7 +1149,6 @@
 
 .method static synthetic access$2700(Lcom/android/internal/policy/impl/GlobalActions;)Z
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/GlobalActions;
 
     invoke-direct {p0}, Lcom/android/internal/policy/impl/GlobalActions;->isMtpRunning()Z
 
@@ -1185,7 +1159,6 @@
 
 .method static synthetic access$2800(Lcom/android/internal/policy/impl/GlobalActions;)Z
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/GlobalActions;
 
     iget-boolean v0, p0, Lcom/android/internal/policy/impl/GlobalActions;->mDisplayConfirm:Z
 
@@ -1194,7 +1167,6 @@
 
 .method static synthetic access$2900(Lcom/android/internal/policy/impl/GlobalActions;)Landroid/view/WindowManagerPolicy$WindowManagerFuncs;
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/GlobalActions;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/GlobalActions;->mWindowManagerFuncs:Landroid/view/WindowManagerPolicy$WindowManagerFuncs;
 
@@ -1203,7 +1175,6 @@
 
 .method static synthetic access$300(Lcom/android/internal/policy/impl/GlobalActions;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/GlobalActions;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/GlobalActions;->mHandler:Landroid/os/Handler;
 
@@ -1228,7 +1199,6 @@
 
 .method static synthetic access$3200(Lcom/android/internal/policy/impl/GlobalActions;)Landroid/app/enterprise/knoxcustom/KnoxCustomManager;
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/GlobalActions;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/GlobalActions;->mKnoxCustomManager:Landroid/app/enterprise/knoxcustom/KnoxCustomManager;
 
@@ -1245,8 +1215,6 @@
 
 .method static synthetic access$3500(Lcom/android/internal/policy/impl/GlobalActions;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/internal/policy/impl/GlobalActions;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/internal/policy/impl/GlobalActions;->virtualDismissInSCover(Ljava/lang/String;)V
 
@@ -1271,7 +1239,6 @@
 
 .method static synthetic access$3702(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/internal/policy/impl/GlobalActions;->mSealedModeOptionShown:Z
 
@@ -1288,24 +1255,22 @@
 
 .method static synthetic access$3900(Lcom/android/internal/policy/impl/GlobalActions;)Lcom/android/internal/policy/impl/GlobalActions$ToggleAction;
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/GlobalActions;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/GlobalActions;->mSealedModeToggle:Lcom/android/internal/policy/impl/GlobalActions$ToggleAction;
 
     return-object v0
 .end method
 
-.method static synthetic access$400()Z
+.method static synthetic access$400(Lcom/android/internal/policy/impl/GlobalActions;)Landroid/content/Context;
     .locals 1
 
-    sget-boolean v0, Lcom/android/internal/policy/impl/GlobalActions;->mlsShowingMiniDialog:Z
+    iget-object v0, p0, Lcom/android/internal/policy/impl/GlobalActions;->mContext:Landroid/content/Context;
 
-    return v0
+    return-object v0
 .end method
 
 .method static synthetic access$4000(Lcom/android/internal/policy/impl/GlobalActions;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/GlobalActions;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/GlobalActions;->mItems:Ljava/util/ArrayList;
 
@@ -1314,7 +1279,6 @@
 
 .method static synthetic access$402(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/internal/policy/impl/GlobalActions;->mlsShowingMiniDialog:Z
 
@@ -1323,7 +1287,6 @@
 
 .method static synthetic access$4100(Lcom/android/internal/policy/impl/GlobalActions;)Lcom/android/internal/policy/impl/GlobalActions$ToggleAction;
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/GlobalActions;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/GlobalActions;->mAirplaneModeOn:Lcom/android/internal/policy/impl/GlobalActions$ToggleAction;
 
@@ -1332,7 +1295,6 @@
 
 .method static synthetic access$4200(Lcom/android/internal/policy/impl/GlobalActions;)V
     .locals 0
-    .param p0    # Lcom/android/internal/policy/impl/GlobalActions;
 
     invoke-direct {p0}, Lcom/android/internal/policy/impl/GlobalActions;->clearSCoverRequestStatus()V
 
@@ -1341,7 +1303,6 @@
 
 .method static synthetic access$4300(Lcom/android/internal/policy/impl/GlobalActions;)Lcom/android/internal/policy/impl/GlobalActions$ToggleAction;
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/GlobalActions;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/GlobalActions;->mDataModeToggle:Lcom/android/internal/policy/impl/GlobalActions$ToggleAction;
 
@@ -1350,7 +1311,6 @@
 
 .method static synthetic access$4400(Lcom/android/internal/policy/impl/GlobalActions;)Z
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/GlobalActions;
 
     iget-boolean v0, p0, Lcom/android/internal/policy/impl/GlobalActions;->mDeviceProvisioned:Z
 
@@ -1367,7 +1327,6 @@
 
 .method static synthetic access$4600(Lcom/android/internal/policy/impl/GlobalActions;)V
     .locals 0
-    .param p0    # Lcom/android/internal/policy/impl/GlobalActions;
 
     invoke-direct {p0}, Lcom/android/internal/policy/impl/GlobalActions;->onAirplaneModeChanged()V
 
@@ -1376,7 +1335,6 @@
 
 .method static synthetic access$4700(Lcom/android/internal/policy/impl/GlobalActions;)Landroid/app/GlobalActionsSViewCoverDialog;
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/GlobalActions;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/GlobalActions;->mConfirmDialogSViewCoverDialog:Landroid/app/GlobalActionsSViewCoverDialog;
 
@@ -1385,7 +1343,6 @@
 
 .method static synthetic access$4800(Lcom/android/internal/policy/impl/GlobalActions;)Lcom/android/internal/policy/impl/GlobalActions$SilentModeAction;
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/GlobalActions;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/GlobalActions;->mSilentModeAction:Lcom/android/internal/policy/impl/GlobalActions$SilentModeAction;
 
@@ -1394,7 +1351,6 @@
 
 .method static synthetic access$4900(Lcom/android/internal/policy/impl/GlobalActions;)V
     .locals 0
-    .param p0    # Lcom/android/internal/policy/impl/GlobalActions;
 
     invoke-direct {p0}, Lcom/android/internal/policy/impl/GlobalActions;->handleShow()V
 
@@ -1403,7 +1359,6 @@
 
 .method static synthetic access$500(Lcom/android/internal/policy/impl/GlobalActions;)Lcom/android/internal/policy/impl/GlobalActions$GlobalActionsDialog;
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/GlobalActions;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/GlobalActions;->mDialog:Lcom/android/internal/policy/impl/GlobalActions$GlobalActionsDialog;
 
@@ -1412,8 +1367,6 @@
 
 .method static synthetic access$502(Lcom/android/internal/policy/impl/GlobalActions;Lcom/android/internal/policy/impl/GlobalActions$GlobalActionsDialog;)Lcom/android/internal/policy/impl/GlobalActions$GlobalActionsDialog;
     .locals 0
-    .param p0    # Lcom/android/internal/policy/impl/GlobalActions;
-    .param p1    # Lcom/android/internal/policy/impl/GlobalActions$GlobalActionsDialog;
 
     iput-object p1, p0, Lcom/android/internal/policy/impl/GlobalActions;->mDialog:Lcom/android/internal/policy/impl/GlobalActions$GlobalActionsDialog;
 
@@ -1422,7 +1375,6 @@
 
 .method static synthetic access$600(Lcom/android/internal/policy/impl/GlobalActions;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/GlobalActions;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/GlobalActions;->mContext:Landroid/content/Context;
 
@@ -1431,7 +1383,6 @@
 
 .method static synthetic access$700(Lcom/android/internal/policy/impl/GlobalActions;)Z
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/GlobalActions;
 
     invoke-direct {p0}, Lcom/android/internal/policy/impl/GlobalActions;->isSimReady()Z
 
@@ -1442,11 +1393,6 @@
 
 .method static synthetic access$800(Lcom/android/internal/policy/impl/GlobalActions;Lcom/android/internal/policy/impl/GlobalActions$ToggleAction;III)V
     .locals 0
-    .param p0    # Lcom/android/internal/policy/impl/GlobalActions;
-    .param p1    # Lcom/android/internal/policy/impl/GlobalActions$ToggleAction;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/internal/policy/impl/GlobalActions;->comfirmDialog(Lcom/android/internal/policy/impl/GlobalActions$ToggleAction;III)V
 
@@ -1455,7 +1401,6 @@
 
 .method static synthetic access$900(Lcom/android/internal/policy/impl/GlobalActions;)Landroid/net/ConnectivityManager;
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/GlobalActions;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/GlobalActions;->cm:Landroid/net/ConnectivityManager;
 
@@ -1464,10 +1409,6 @@
 
 .method private addCustomDialogItems(Landroid/graphics/drawable/BitmapDrawable;Ljava/lang/String;Landroid/content/Intent;ILjava/util/ArrayList;)Z
     .locals 8
-    .param p1    # Landroid/graphics/drawable/BitmapDrawable;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/content/Intent;
-    .param p4    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1523,9 +1464,6 @@
 
 .method private addDialogItemsIfEnabled(ILcom/android/internal/policy/impl/GlobalActions$Action;Ljava/util/ArrayList;Z)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Lcom/android/internal/policy/impl/GlobalActions$Action;
-    .param p4    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -1762,7 +1700,6 @@
 
 .method private changeAirplaneModeSystemSetting(Z)V
     .locals 5
-    .param p1    # Z
 
     iget-object v1, p0, Lcom/android/internal/policy/impl/GlobalActions;->mContext:Landroid/content/Context;
 
@@ -1960,10 +1897,6 @@
 
 .method private comfirmDialog(Lcom/android/internal/policy/impl/GlobalActions$ToggleAction;III)V
     .locals 10
-    .param p1    # Lcom/android/internal/policy/impl/GlobalActions$ToggleAction;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/4 v1, 0x0
 
@@ -2598,25 +2531,25 @@
 
     iput-object v3, v0, Lcom/android/internal/policy/impl/GlobalActions;->mRestart:Lcom/android/internal/policy/impl/GlobalActions$SinglePressAction;
 
-    new-instance v2, Lcom/android/internal/policy/impl/GlobalActions$33;
-
-    const v3, 0x1081159
-
-    const v4, 0x1040c34
-
-    invoke-direct {v2, v0, v3, v4}, Lcom/android/internal/policy/impl/GlobalActions$33;-><init>(Lcom/android/internal/policy/impl/GlobalActions;II)V
-
-    iput-object v2, v0, Lcom/android/internal/policy/impl/GlobalActions;->mFlashlight:Lcom/android/internal/policy/impl/GlobalActions$SinglePressAction;
-
-    new-instance v2, Lcom/android/internal/policy/impl/GlobalActions$32;
+    new-instance v2, Lcom/android/internal/policy/impl/GlobalActions$31;
 
     const v3, 0x108115a
 
-    const v4, 0x1040c35
+    const v4, 0x1040c36
 
-    invoke-direct {v2, v0, v3, v4}, Lcom/android/internal/policy/impl/GlobalActions$32;-><init>(Lcom/android/internal/policy/impl/GlobalActions;II)V
+    invoke-direct {v2, v0, v3, v4}, Lcom/android/internal/policy/impl/GlobalActions$31;-><init>(Lcom/android/internal/policy/impl/GlobalActions;II)V
 
     iput-object v2, v0, Lcom/android/internal/policy/impl/GlobalActions;->mScreenshot:Lcom/android/internal/policy/impl/GlobalActions$SinglePressAction;
+
+    new-instance v2, Lcom/android/internal/policy/impl/GlobalActions$34;
+
+    const v3, 0x1081159
+
+    const v4, 0x1040c37
+
+    invoke-direct {v2, v0, v3, v4}, Lcom/android/internal/policy/impl/GlobalActions$34;-><init>(Lcom/android/internal/policy/impl/GlobalActions;II)V
+
+    iput-object v2, v0, Lcom/android/internal/policy/impl/GlobalActions;->mScreenRec:Lcom/android/internal/policy/impl/GlobalActions$SinglePressAction;
 
     new-instance v2, Lcom/android/internal/policy/impl/GlobalActions$9;
 
@@ -3400,6 +3333,10 @@
 
     move-result-object v21
 
+    const/4 v2, 0x1
+
+    sput-boolean v2, Lcom/android/internal/policy/impl/GlobalActions;->mlsShowingMiniDialog:Z
+
     :goto_8
     move-object/from16 v0, v21
 
@@ -3519,7 +3456,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Lcom/android/internal/policy/impl/GlobalActions;->mScreenshot:Lcom/android/internal/policy/impl/GlobalActions$ToggleAction;
+    iget-object v4, v0, Lcom/android/internal/policy/impl/GlobalActions;->mPowerOff:Lcom/android/internal/policy/impl/GlobalActions$SinglePressAction;
 
     aput-object v4, v2, v3
 
@@ -3527,7 +3464,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Lcom/android/internal/policy/impl/GlobalActions;->mPowerOff:Lcom/android/internal/policy/impl/GlobalActions$SinglePressAction;
+    iget-object v4, v0, Lcom/android/internal/policy/impl/GlobalActions;->mSleep:Lcom/android/internal/policy/impl/GlobalActions$SinglePressAction;
 
     aput-object v4, v2, v3
 
@@ -3535,7 +3472,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Lcom/android/internal/policy/impl/GlobalActions;->mSleep:Lcom/android/internal/policy/impl/GlobalActions$SinglePressAction;
+    iget-object v4, v0, Lcom/android/internal/policy/impl/GlobalActions;->mDataModeToggle:Lcom/android/internal/policy/impl/GlobalActions$ToggleAction;
 
     aput-object v4, v2, v3
 
@@ -3543,7 +3480,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Lcom/android/internal/policy/impl/GlobalActions;->mDataModeToggle:Lcom/android/internal/policy/impl/GlobalActions$ToggleAction;
+    iget-object v4, v0, Lcom/android/internal/policy/impl/GlobalActions;->mAirplaneModeOn:Lcom/android/internal/policy/impl/GlobalActions$ToggleAction;
 
     aput-object v4, v2, v3
 
@@ -3551,7 +3488,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Lcom/android/internal/policy/impl/GlobalActions;->mFlashlight:Lcom/android/internal/policy/impl/GlobalActions$ToggleAction;
+    iget-object v4, v0, Lcom/android/internal/policy/impl/GlobalActions;->mRestart:Lcom/android/internal/policy/impl/GlobalActions$SinglePressAction;
 
     aput-object v4, v2, v3
 
@@ -3559,15 +3496,15 @@
 
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Lcom/android/internal/policy/impl/GlobalActions;->mRestart:Lcom/android/internal/policy/impl/GlobalActions$SinglePressAction;
+    iget-object v4, v0, Lcom/android/internal/policy/impl/GlobalActions;->mEmergency:Lcom/android/internal/policy/impl/GlobalActions$ToggleAction;
 
     aput-object v4, v2, v3
 
-    const/4 v3, 0x7
+    const/16 v3, 0x7
 
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Lcom/android/internal/policy/impl/GlobalActions;->mEmergency:Lcom/android/internal/policy/impl/GlobalActions$ToggleAction;
+    iget-object v4, v0, Lcom/android/internal/policy/impl/GlobalActions;->mScreenshot:Lcom/android/internal/policy/impl/GlobalActions$SinglePressAction;
 
     aput-object v4, v2, v3
 
@@ -3575,9 +3512,11 @@
 
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Lcom/android/internal/policy/impl/GlobalActions;->mBugReport:Lcom/android/internal/policy/impl/GlobalActions$SinglePressAction;
+    iget-object v4, v0, Lcom/android/internal/policy/impl/GlobalActions;->mScreenRec:Lcom/android/internal/policy/impl/GlobalActions$SinglePressAction;
 
     aput-object v4, v2, v3
+
+    move-object/from16 v0, p0
 
     invoke-static {v2}, Lcom/google/android/collect/Lists;->newArrayList([Ljava/lang/Object;)Ljava/util/ArrayList;
 
@@ -3846,7 +3785,6 @@
 
 .method private createEnableDialogContentView(Landroid/accessibilityservice/AccessibilityServiceInfo;)Landroid/view/View;
     .locals 18
-    .param p1    # Landroid/accessibilityservice/AccessibilityServiceInfo;
 
     move-object/from16 v0, p0
 
@@ -4906,7 +4844,6 @@
 
 .method private hideQuickpanelBackground(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     sget-boolean v1, Lcom/android/internal/policy/impl/GlobalActions;->mIsCoverOpen:Z
 
@@ -4944,7 +4881,6 @@
 
 .method private initCoverManager(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/GlobalActions;->mContext:Landroid/content/Context;
 
@@ -6021,7 +5957,6 @@
 
 .method private restoreQuickpanelBackground(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -6097,9 +6032,9 @@
 
     invoke-virtual {v2, v0}, Landroid/content/Intent;->setComponent(Landroid/content/ComponentName;)Landroid/content/Intent;
 
-    new-instance v1, Lcom/android/internal/policy/impl/GlobalActions$31;
+    new-instance v1, Lcom/android/internal/policy/impl/GlobalActions$33;
 
-    invoke-direct {v1, p0}, Lcom/android/internal/policy/impl/GlobalActions$31;-><init>(Lcom/android/internal/policy/impl/GlobalActions;)V
+    invoke-direct {v1, p0}, Lcom/android/internal/policy/impl/GlobalActions$33;-><init>(Lcom/android/internal/policy/impl/GlobalActions;)V
 
     iget-object v3, p0, Lcom/android/internal/policy/impl/GlobalActions;->mContext:Landroid/content/Context;
 
@@ -6136,6 +6071,82 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     throw v3
+.end method
+
+.method private toggleScreenRecord()V
+    .locals 7
+
+    iget-object v1, p0, Lcom/android/internal/policy/impl/GlobalActions;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v1
+
+    const-string v2, "recording"
+
+    const/4 v3, 0x0
+
+    invoke-static {v1, v2, v3}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    new-instance v0, Landroid/content/Intent;
+
+    const-string v1, "com.cyngn.ACTION_STOP_SCREENCAST"
+
+    invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+
+    iget-object v1, p0, Lcom/android/internal/policy/impl/GlobalActions;->mContext:Landroid/content/Context;
+
+    const-string v2, "android.permission.CAPTURE_SECURE_VIDEO_OUTPUT"
+
+    invoke-virtual {v1, v0, v2}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;Ljava/lang/String;)V
+
+    const v3, 0x0
+
+    iget-object v1, p0, Lcom/android/internal/policy/impl/GlobalActions;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v1
+
+    const-string v2, "recording"
+
+    invoke-static {v1, v2, v3}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
+
+    goto :goto_0
+
+    :cond_0
+    new-instance v0, Landroid/content/Intent;
+
+    const-string v1, "com.cyngn.ACTION_START_SCREENCAST"
+
+    invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+
+    iget-object v1, p0, Lcom/android/internal/policy/impl/GlobalActions;->mContext:Landroid/content/Context;
+
+    const-string v2, "android.permission.CAPTURE_SECURE_VIDEO_OUTPUT"
+
+    invoke-virtual {v1, v0, v2}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;Ljava/lang/String;)V
+
+    const v3, 0x1
+
+    iget-object v1, p0, Lcom/android/internal/policy/impl/GlobalActions;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v1
+
+    const-string v2, "recording"
+
+    invoke-static {v1, v2, v3}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
+
+    goto :goto_0
+
+    :goto_0
+    return-void
 .end method
 
 .method private virtualDismissInSCover()V
@@ -6248,7 +6259,6 @@
 
 .method private virtualDismissInSCover(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -6302,8 +6312,6 @@
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 3
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/GlobalActions;->mAdapter:Lcom/android/internal/policy/impl/GlobalActions$MyAdapter;
 
@@ -6353,7 +6361,6 @@
 
 .method public onDismiss(Landroid/content/DialogInterface;)V
     .locals 4
-    .param p1    # Landroid/content/DialogInterface;
 
     const/4 v3, 0x0
 
@@ -6424,8 +6431,6 @@
 
 .method public showDialog(ZZ)V
     .locals 3
-    .param p1    # Z
-    .param p2    # Z
 
     iget-object v1, p0, Lcom/android/internal/policy/impl/GlobalActions;->mCoverManager:Lcom/samsung/android/cover/CoverManager;
 

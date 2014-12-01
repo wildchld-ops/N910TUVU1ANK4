@@ -104,10 +104,6 @@
 
 .method private static accumField(IIZI)I
     .locals 1
-    .param p0    # I
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # I
 
     const/16 v0, 0x63
 
@@ -159,9 +155,6 @@
 
 .method public static formatDuration(JJLjava/io/PrintWriter;)V
     .locals 3
-    .param p0    # J
-    .param p2    # J
-    .param p4    # Ljava/io/PrintWriter;
 
     const-wide/16 v0, 0x0
 
@@ -188,8 +181,6 @@
 
 .method public static formatDuration(JLjava/io/PrintWriter;)V
     .locals 1
-    .param p0    # J
-    .param p2    # Ljava/io/PrintWriter;
 
     const/4 v0, 0x0
 
@@ -200,9 +191,6 @@
 
 .method public static formatDuration(JLjava/io/PrintWriter;I)V
     .locals 5
-    .param p0    # J
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # I
 
     sget-object v2, Landroid/util/TimeUtils;->sFormatSync:Ljava/lang/Object;
 
@@ -239,8 +227,6 @@
 
 .method public static formatDuration(JLjava/lang/StringBuilder;)V
     .locals 4
-    .param p0    # J
-    .param p2    # Ljava/lang/StringBuilder;
 
     sget-object v2, Landroid/util/TimeUtils;->sFormatSync:Ljava/lang/Object;
 
@@ -275,8 +261,6 @@
 
 .method private static formatDurationLocked(JI)I
     .locals 21
-    .param p0    # J
-    .param p2    # I
 
     sget-object v4, Landroid/util/TimeUtils;->sFormatStr:[C
 
@@ -716,7 +700,6 @@
 
 .method public static formatUptime(J)Ljava/lang/String;
     .locals 6
-    .param p0    # J
 
     const-wide/16 v4, 0x0
 
@@ -822,10 +805,6 @@
 
 .method public static getTimeZone(IZJLjava/lang/String;)Ljava/util/TimeZone;
     .locals 11
-    .param p0    # I
-    .param p1    # Z
-    .param p2    # J
-    .param p4    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -939,7 +918,6 @@
 
 .method public static getTimeZones(Ljava/lang/String;)Ljava/util/ArrayList;
     .locals 11
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1195,7 +1173,6 @@
 
 .method public static getTimeZonesWithUniqueOffsets(Ljava/lang/String;)Ljava/util/ArrayList;
     .locals 8
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1340,7 +1317,6 @@
 
 .method public static logTimeOfDay(J)Ljava/lang/String;
     .locals 4
-    .param p0    # J
 
     invoke-static {}, Ljava/util/Calendar;->getInstance()Ljava/util/Calendar;
 
@@ -1401,12 +1377,6 @@
 
 .method private static printField([CICIZI)I
     .locals 3
-    .param p0    # [C
-    .param p1    # I
-    .param p2    # C
-    .param p3    # I
-    .param p4    # Z
-    .param p5    # I
 
     if-nez p4, :cond_0
 

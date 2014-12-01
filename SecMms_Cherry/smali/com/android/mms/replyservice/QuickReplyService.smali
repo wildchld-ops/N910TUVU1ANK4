@@ -494,7 +494,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/replyservice/QuickReplyService;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/mms/replyservice/QuickReplyService;
 
     iget-object v0, p0, Lcom/android/mms/replyservice/QuickReplyService;->mReplyPopup:Landroid/view/View;
 
@@ -503,7 +502,6 @@
 
 .method static synthetic access$1000(Lcom/android/mms/replyservice/QuickReplyService;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/mms/replyservice/QuickReplyService;
 
     iget-object v0, p0, Lcom/android/mms/replyservice/QuickReplyService;->mMsgAddr:Ljava/lang/String;
 
@@ -512,7 +510,6 @@
 
 .method static synthetic access$1100(Lcom/android/mms/replyservice/QuickReplyService;)J
     .locals 2
-    .param p0    # Lcom/android/mms/replyservice/QuickReplyService;
 
     iget-wide v0, p0, Lcom/android/mms/replyservice/QuickReplyService;->mThreadId:J
 
@@ -521,8 +518,6 @@
 
 .method static synthetic access$1102(Lcom/android/mms/replyservice/QuickReplyService;J)J
     .locals 0
-    .param p0    # Lcom/android/mms/replyservice/QuickReplyService;
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/android/mms/replyservice/QuickReplyService;->mThreadId:J
 
@@ -531,7 +526,6 @@
 
 .method static synthetic access$1200(Lcom/android/mms/replyservice/QuickReplyService;)J
     .locals 2
-    .param p0    # Lcom/android/mms/replyservice/QuickReplyService;
 
     invoke-direct {p0}, Lcom/android/mms/replyservice/QuickReplyService;->getDelayedDeliveryTime()J
 
@@ -542,7 +536,6 @@
 
 .method static synthetic access$1300(Lcom/android/mms/replyservice/QuickReplyService;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/replyservice/QuickReplyService;
 
     iget-boolean v0, p0, Lcom/android/mms/replyservice/QuickReplyService;->misChatMode:Z
 
@@ -551,7 +544,6 @@
 
 .method static synthetic access$1400(Lcom/android/mms/replyservice/QuickReplyService;)I
     .locals 1
-    .param p0    # Lcom/android/mms/replyservice/QuickReplyService;
 
     iget v0, p0, Lcom/android/mms/replyservice/QuickReplyService;->mMsgSimSlot:I
 
@@ -560,8 +552,6 @@
 
 .method static synthetic access$1500(Lcom/android/mms/replyservice/QuickReplyService;Landroid/content/Context;)Landroid/view/inputmethod/InputMethodManager;
     .locals 1
-    .param p0    # Lcom/android/mms/replyservice/QuickReplyService;
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Lcom/android/mms/replyservice/QuickReplyService;->getInputMethodManager(Landroid/content/Context;)Landroid/view/inputmethod/InputMethodManager;
 
@@ -572,7 +562,6 @@
 
 .method static synthetic access$1600(Lcom/android/mms/replyservice/QuickReplyService;)V
     .locals 0
-    .param p0    # Lcom/android/mms/replyservice/QuickReplyService;
 
     invoke-direct {p0}, Lcom/android/mms/replyservice/QuickReplyService;->sendMarkAsReadIntent()V
 
@@ -581,7 +570,6 @@
 
 .method static synthetic access$1700(Lcom/android/mms/replyservice/QuickReplyService;)Lcom/android/mms/data/ContactList;
     .locals 1
-    .param p0    # Lcom/android/mms/replyservice/QuickReplyService;
 
     invoke-direct {p0}, Lcom/android/mms/replyservice/QuickReplyService;->getRecipients()Lcom/android/mms/data/ContactList;
 
@@ -592,8 +580,6 @@
 
 .method static synthetic access$1800(Lcom/android/mms/replyservice/QuickReplyService;Landroid/content/Context;)V
     .locals 0
-    .param p0    # Lcom/android/mms/replyservice/QuickReplyService;
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Lcom/android/mms/replyservice/QuickReplyService;->launchMessage(Landroid/content/Context;)V
 
@@ -602,7 +588,6 @@
 
 .method static synthetic access$1900(Lcom/android/mms/replyservice/QuickReplyService;)Landroid/widget/Button;
     .locals 1
-    .param p0    # Lcom/android/mms/replyservice/QuickReplyService;
 
     iget-object v0, p0, Lcom/android/mms/replyservice/QuickReplyService;->mCancelButton:Landroid/widget/Button;
 
@@ -611,9 +596,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/replyservice/QuickReplyService;Landroid/view/View;Z)V
     .locals 0
-    .param p0    # Lcom/android/mms/replyservice/QuickReplyService;
-    .param p1    # Landroid/view/View;
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/mms/replyservice/QuickReplyService;->setPopupSlideAnimation(Landroid/view/View;Z)V
 
@@ -622,8 +604,6 @@
 
 .method static synthetic access$2002(Lcom/android/mms/replyservice/QuickReplyService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/replyservice/QuickReplyService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/replyservice/QuickReplyService;->mReplyClicked:Z
 
@@ -632,7 +612,6 @@
 
 .method static synthetic access$2100(Lcom/android/mms/replyservice/QuickReplyService;)Landroid/widget/Button;
     .locals 1
-    .param p0    # Lcom/android/mms/replyservice/QuickReplyService;
 
     iget-object v0, p0, Lcom/android/mms/replyservice/QuickReplyService;->mReplyButton:Landroid/widget/Button;
 
@@ -641,8 +620,6 @@
 
 .method static synthetic access$2200(Lcom/android/mms/replyservice/QuickReplyService;I)V
     .locals 0
-    .param p0    # Lcom/android/mms/replyservice/QuickReplyService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/mms/replyservice/QuickReplyService;->showSipDelayed(I)V
 
@@ -651,7 +628,6 @@
 
 .method static synthetic access$2300(Lcom/android/mms/replyservice/QuickReplyService;)F
     .locals 1
-    .param p0    # Lcom/android/mms/replyservice/QuickReplyService;
 
     iget v0, p0, Lcom/android/mms/replyservice/QuickReplyService;->mOffset:F
 
@@ -660,8 +636,6 @@
 
 .method static synthetic access$2302(Lcom/android/mms/replyservice/QuickReplyService;F)F
     .locals 0
-    .param p0    # Lcom/android/mms/replyservice/QuickReplyService;
-    .param p1    # F
 
     iput p1, p0, Lcom/android/mms/replyservice/QuickReplyService;->mOffset:F
 
@@ -678,7 +652,6 @@
 
 .method static synthetic access$2500(Lcom/android/mms/replyservice/QuickReplyService;)Landroid/view/ViewPropertyAnimator;
     .locals 1
-    .param p0    # Lcom/android/mms/replyservice/QuickReplyService;
 
     iget-object v0, p0, Lcom/android/mms/replyservice/QuickReplyService;->mCenterAnimator:Landroid/view/ViewPropertyAnimator;
 
@@ -687,8 +660,6 @@
 
 .method static synthetic access$2502(Lcom/android/mms/replyservice/QuickReplyService;Landroid/view/ViewPropertyAnimator;)Landroid/view/ViewPropertyAnimator;
     .locals 0
-    .param p0    # Lcom/android/mms/replyservice/QuickReplyService;
-    .param p1    # Landroid/view/ViewPropertyAnimator;
 
     iput-object p1, p0, Lcom/android/mms/replyservice/QuickReplyService;->mCenterAnimator:Landroid/view/ViewPropertyAnimator;
 
@@ -697,7 +668,6 @@
 
 .method static synthetic access$2600(Lcom/android/mms/replyservice/QuickReplyService;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/mms/replyservice/QuickReplyService;
 
     iget-object v0, p0, Lcom/android/mms/replyservice/QuickReplyService;->mPopupCenter:Landroid/view/View;
 
@@ -706,7 +676,6 @@
 
 .method static synthetic access$2700(Lcom/android/mms/replyservice/QuickReplyService;)Landroid/view/ViewPropertyAnimator;
     .locals 1
-    .param p0    # Lcom/android/mms/replyservice/QuickReplyService;
 
     iget-object v0, p0, Lcom/android/mms/replyservice/QuickReplyService;->mBottomAnimator:Landroid/view/ViewPropertyAnimator;
 
@@ -715,8 +684,6 @@
 
 .method static synthetic access$2702(Lcom/android/mms/replyservice/QuickReplyService;Landroid/view/ViewPropertyAnimator;)Landroid/view/ViewPropertyAnimator;
     .locals 0
-    .param p0    # Lcom/android/mms/replyservice/QuickReplyService;
-    .param p1    # Landroid/view/ViewPropertyAnimator;
 
     iput-object p1, p0, Lcom/android/mms/replyservice/QuickReplyService;->mBottomAnimator:Landroid/view/ViewPropertyAnimator;
 
@@ -725,7 +692,6 @@
 
 .method static synthetic access$2800(Lcom/android/mms/replyservice/QuickReplyService;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/mms/replyservice/QuickReplyService;
 
     iget-object v0, p0, Lcom/android/mms/replyservice/QuickReplyService;->mPopupBottom:Landroid/view/View;
 
@@ -734,7 +700,6 @@
 
 .method static synthetic access$2900(Lcom/android/mms/replyservice/QuickReplyService;)Landroid/widget/LinearLayout;
     .locals 1
-    .param p0    # Lcom/android/mms/replyservice/QuickReplyService;
 
     iget-object v0, p0, Lcom/android/mms/replyservice/QuickReplyService;->mComposerLayout:Landroid/widget/LinearLayout;
 
@@ -743,7 +708,6 @@
 
 .method static synthetic access$300(Lcom/android/mms/replyservice/QuickReplyService;)Landroid/widget/Button;
     .locals 1
-    .param p0    # Lcom/android/mms/replyservice/QuickReplyService;
 
     iget-object v0, p0, Lcom/android/mms/replyservice/QuickReplyService;->mSendButton:Landroid/widget/Button;
 
@@ -752,7 +716,6 @@
 
 .method static synthetic access$3000(Lcom/android/mms/replyservice/QuickReplyService;)Landroid/widget/LinearLayout;
     .locals 1
-    .param p0    # Lcom/android/mms/replyservice/QuickReplyService;
 
     iget-object v0, p0, Lcom/android/mms/replyservice/QuickReplyService;->mButtonPanel:Landroid/widget/LinearLayout;
 
@@ -769,7 +732,6 @@
 
 .method static synthetic access$400(Lcom/android/mms/replyservice/QuickReplyService;)Landroid/widget/EditText;
     .locals 1
-    .param p0    # Lcom/android/mms/replyservice/QuickReplyService;
 
     iget-object v0, p0, Lcom/android/mms/replyservice/QuickReplyService;->mEditText:Landroid/widget/EditText;
 
@@ -778,8 +740,6 @@
 
 .method static synthetic access$500(Lcom/android/mms/replyservice/QuickReplyService;Z)V
     .locals 0
-    .param p0    # Lcom/android/mms/replyservice/QuickReplyService;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/mms/replyservice/QuickReplyService;->showExceedTextLimitToast(Z)V
 
@@ -788,7 +748,6 @@
 
 .method static synthetic access$600(Lcom/android/mms/replyservice/QuickReplyService;)I
     .locals 1
-    .param p0    # Lcom/android/mms/replyservice/QuickReplyService;
 
     iget v0, p0, Lcom/android/mms/replyservice/QuickReplyService;->mEncodingType:I
 
@@ -797,8 +756,6 @@
 
 .method static synthetic access$602(Lcom/android/mms/replyservice/QuickReplyService;I)I
     .locals 0
-    .param p0    # Lcom/android/mms/replyservice/QuickReplyService;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/mms/replyservice/QuickReplyService;->mEncodingType:I
 
@@ -807,7 +764,6 @@
 
 .method static synthetic access$700(Lcom/android/mms/replyservice/QuickReplyService;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/mms/replyservice/QuickReplyService;
 
     iget-object v0, p0, Lcom/android/mms/replyservice/QuickReplyService;->mContext:Landroid/content/Context;
 
@@ -816,7 +772,6 @@
 
 .method static synthetic access$800(Lcom/android/mms/replyservice/QuickReplyService;)V
     .locals 0
-    .param p0    # Lcom/android/mms/replyservice/QuickReplyService;
 
     invoke-direct {p0}, Lcom/android/mms/replyservice/QuickReplyService;->showInputModeToast()V
 
@@ -825,7 +780,6 @@
 
 .method static synthetic access$900(Lcom/android/mms/replyservice/QuickReplyService;)Lcom/android/mms/data/Conversation;
     .locals 1
-    .param p0    # Lcom/android/mms/replyservice/QuickReplyService;
 
     iget-object v0, p0, Lcom/android/mms/replyservice/QuickReplyService;->mConversation:Lcom/android/mms/data/Conversation;
 
@@ -834,7 +788,6 @@
 
 .method private static addNotiIntentType(Landroid/content/Intent;)Landroid/content/Intent;
     .locals 2
-    .param p0    # Landroid/content/Intent;
 
     const/high16 v0, 0x34000000
 
@@ -851,7 +804,6 @@
 
 .method private getContactHeaderString(Lcom/android/mms/data/ContactList;)Ljava/lang/String;
     .locals 5
-    .param p1    # Lcom/android/mms/data/ContactList;
 
     const/4 v4, 0x1
 
@@ -987,7 +939,6 @@
 
 .method private static getImage(Lcom/android/mms/model/SlideModel;)Landroid/graphics/Bitmap;
     .locals 5
-    .param p0    # Lcom/android/mms/model/SlideModel;
 
     invoke-virtual {p0}, Lcom/android/mms/model/SlideModel;->hasImage()Z
 
@@ -1077,7 +1028,6 @@
 
 .method private getInputMethodManager(Landroid/content/Context;)Landroid/view/inputmethod/InputMethodManager;
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const-string v0, "input_method"
 
@@ -1092,7 +1042,6 @@
 
 .method private getMmsUri(J)Landroid/net/Uri;
     .locals 2
-    .param p1    # J
 
     sget-object v0, Landroid/provider/Telephony$Mms;->CONTENT_URI:Landroid/net/Uri;
 
@@ -1117,7 +1066,6 @@
 
 .method private getMsgUribyType(I)Ljava/lang/String;
     .locals 4
-    .param p1    # I
 
     const/4 v3, 0x2
 
@@ -1165,7 +1113,6 @@
 
 .method private static getPduPersister(Landroid/content/Context;)Lcom/google/android/mms/pdu/PduPersister;
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     sget-object v0, Lcom/android/mms/replyservice/QuickReplyService;->sPduPersister:Lcom/google/android/mms/pdu/PduPersister;
 
@@ -1228,7 +1175,6 @@
 
 .method private getSlideAttachCount(Lcom/android/mms/model/SlideshowModel;)I
     .locals 8
-    .param p1    # Lcom/android/mms/model/SlideshowModel;
 
     const/4 v6, 0x0
 
@@ -1316,7 +1262,6 @@
 
 .method private static getText(Lcom/android/mms/model/SlideModel;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/mms/model/SlideModel;
 
     invoke-virtual {p0}, Lcom/android/mms/model/SlideModel;->hasText()Z
 
@@ -1343,10 +1288,6 @@
 
 .method private initQuickReplyInfos(Landroid/content/Context;JIJ)V
     .locals 8
-    .param p1    # Landroid/content/Context;
-    .param p2    # J
-    .param p4    # I
-    .param p5    # J
 
     const-string v0, "Mms/QuickReplyService"
 
@@ -1878,7 +1819,6 @@
 
 .method private isCBMessage(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "CBmessages"
 
@@ -1901,7 +1841,6 @@
 
 .method private isValidAddress(Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x1
 
@@ -1936,7 +1875,6 @@
 
 .method private launchMessage(Landroid/content/Context;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -1972,8 +1910,6 @@
 
 .method private parsingPdu(Landroid/content/Context;J)V
     .locals 24
-    .param p1    # Landroid/content/Context;
-    .param p2    # J
 
     const/16 v17, 0x0
 
@@ -2720,7 +2656,6 @@
 
 .method private setButtonsGone(Z)V
     .locals 5
-    .param p1    # Z
 
     const/4 v2, 0x0
 
@@ -2785,7 +2720,6 @@
 
 .method private setDialogBackground(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/mms/replyservice/QuickReplyService;->mPopupTop:Landroid/view/View;
 
@@ -2810,8 +2744,6 @@
 
 .method private setPopupSlideAnimation(Landroid/view/View;Z)V
     .locals 6
-    .param p1    # Landroid/view/View;
-    .param p2    # Z
 
     const/4 v0, 0x0
 
@@ -3157,7 +3089,6 @@
 
 .method private showExceedTextLimitToast(Z)V
     .locals 8
-    .param p1    # Z
 
     const v7, 0x7f0c0490
 
@@ -3348,7 +3279,6 @@
 
 .method private showSipDelayed(I)V
     .locals 4
-    .param p1    # I
 
     new-instance v0, Landroid/os/Handler;
 
@@ -3599,7 +3529,6 @@
 # virtual methods
 .method public getIntent(Landroid/content/Context;)Landroid/content/Intent;
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -3943,7 +3872,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 5
-    .param p1    # Landroid/content/res/Configuration;
 
     const/4 v4, 0x0
 
@@ -4168,9 +4096,6 @@
 
 .method public onStartCommand(Landroid/content/Intent;II)I
     .locals 9
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v8, 0x0
 
@@ -4356,7 +4281,6 @@
 
 .method public sendChat(Ljava/lang/String;)V
     .locals 13
-    .param p1    # Ljava/lang/String;
 
     const/4 v12, 0x0
 

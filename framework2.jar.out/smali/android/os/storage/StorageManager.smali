@@ -57,8 +57,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/ContentResolver;Landroid/os/Looper;)V
     .locals 2
-    .param p1    # Landroid/content/ContentResolver;
-    .param p2    # Landroid/os/Looper;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -121,7 +119,6 @@
 
 .method static synthetic access$000(Landroid/os/storage/StorageManager;)Ljava/util/List;
     .locals 1
-    .param p0    # Landroid/os/storage/StorageManager;
 
     iget-object v0, p0, Landroid/os/storage/StorageManager;->mListeners:Ljava/util/List;
 
@@ -130,7 +127,6 @@
 
 .method static synthetic access$300(Landroid/os/storage/StorageManager;)I
     .locals 1
-    .param p0    # Landroid/os/storage/StorageManager;
 
     invoke-direct {p0}, Landroid/os/storage/StorageManager;->getNextNonce()I
 
@@ -141,7 +137,6 @@
 
 .method static synthetic access$400(Landroid/os/storage/StorageManager;)Landroid/os/Looper;
     .locals 1
-    .param p0    # Landroid/os/storage/StorageManager;
 
     iget-object v0, p0, Landroid/os/storage/StorageManager;->mTgtLooper:Landroid/os/Looper;
 
@@ -150,7 +145,6 @@
 
 .method public static from(Landroid/content/Context;)Landroid/os/storage/StorageManager;
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     const-string/jumbo v0, "storage"
 
@@ -177,7 +171,6 @@
 
 .method public static getPhysicalExternalVolume([Landroid/os/storage/StorageVolume;)Ljava/util/ArrayList;
     .locals 4
-    .param p0    # [Landroid/os/storage/StorageVolume;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([",
@@ -224,7 +217,6 @@
 
 .method public static getPrimaryVolume([Landroid/os/storage/StorageVolume;)Landroid/os/storage/StorageVolume;
     .locals 6
-    .param p0    # [Landroid/os/storage/StorageVolume;
 
     move-object v0, p0
 
@@ -321,7 +313,6 @@
 
 .method public getMountedObbPath(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const-string/jumbo v1, "rawPath cannot be null"
 
@@ -369,7 +360,6 @@
 
 .method public getStorageFullBytes(Ljava/io/File;)J
     .locals 4
-    .param p1    # Ljava/io/File;
 
     iget-object v0, p0, Landroid/os/storage/StorageManager;->mResolver:Landroid/content/ContentResolver;
 
@@ -386,7 +376,6 @@
 
 .method public getStorageLowBytes(Ljava/io/File;)J
     .locals 10
-    .param p1    # Ljava/io/File;
 
     iget-object v6, p0, Landroid/os/storage/StorageManager;->mResolver:Landroid/content/ContentResolver;
 
@@ -429,7 +418,6 @@
 
 .method public getVolume(Ljava/lang/String;)Landroid/os/storage/StorageVolume;
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -579,7 +567,6 @@
 
 .method public getVolumeState(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Landroid/os/storage/StorageManager;->mMountService:Landroid/os/storage/IMountService;
 
@@ -618,7 +605,6 @@
 
 .method public isObbMounted(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const-string/jumbo v1, "rawPath cannot be null"
 
@@ -710,10 +696,6 @@
 
 .method public modifyVolumeLocked(Ljava/lang/String;IZLjava/lang/String;)I
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -755,9 +737,6 @@
 
 .method public mountObb(Ljava/lang/String;Ljava/lang/String;Landroid/os/storage/OnObbStateChangeListener;)Z
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/os/storage/OnObbStateChangeListener;
 
     const-string/jumbo v0, "rawPath cannot be null"
 
@@ -843,7 +822,6 @@
 
 .method public prepareDecryptOnRecovery(Ljava/lang/String;)I
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -873,7 +851,6 @@
 
 .method public registerListener(Landroid/os/storage/StorageEventListener;)V
     .locals 4
-    .param p1    # Landroid/os/storage/StorageEventListener;
 
     if-nez p1, :cond_0
 
@@ -952,7 +929,6 @@
 
 .method public setUsbMassStorageEnabled(Z)V
     .locals 3
-    .param p1    # Z
 
     const/4 v2, 0x0
 
@@ -1000,8 +976,6 @@
 
 .method public setVolumeState(Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v1, p0, Landroid/os/storage/StorageManager;->mMountService:Landroid/os/storage/IMountService;
 
@@ -1034,9 +1008,6 @@
 
 .method public unmountObb(Ljava/lang/String;ZLandroid/os/storage/OnObbStateChangeListener;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # Landroid/os/storage/OnObbStateChangeListener;
 
     const-string/jumbo v2, "rawPath cannot be null"
 
@@ -1082,7 +1053,6 @@
 
 .method public unregisterListener(Landroid/os/storage/StorageEventListener;)V
     .locals 7
-    .param p1    # Landroid/os/storage/StorageEventListener;
 
     if-nez p1, :cond_0
 

@@ -89,7 +89,6 @@
 # direct methods
 .method constructor <init>(Landroid/media/MediaRouter$RouteCategory;)V
     .locals 3
-    .param p1    # Landroid/media/MediaRouter$RouteCategory;
 
     const/16 v2, 0xf
 
@@ -130,7 +129,6 @@
 
 .method static synthetic access$100(Landroid/media/MediaRouter$RouteInfo;)I
     .locals 1
-    .param p0    # Landroid/media/MediaRouter$RouteInfo;
 
     iget v0, p0, Landroid/media/MediaRouter$RouteInfo;->mRealStatusCode:I
 
@@ -318,7 +316,6 @@
 
 .method public getName(Landroid/content/Context;)Ljava/lang/CharSequence;
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -333,7 +330,6 @@
 
 .method getName(Landroid/content/res/Resources;)Ljava/lang/CharSequence;
     .locals 1
-    .param p1    # Landroid/content/res/Resources;
 
     iget v0, p0, Landroid/media/MediaRouter$RouteInfo;->mNameResId:I
 
@@ -574,7 +570,6 @@
 
 .method public matchesTypes(I)Z
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/media/MediaRouter$RouteInfo;->mSupportedTypes:I
 
@@ -595,7 +590,6 @@
 
 .method public requestSetVolume(I)V
     .locals 5
-    .param p1    # I
 
     iget v1, p0, Landroid/media/MediaRouter$RouteInfo;->mPlaybackType:I
 
@@ -642,7 +636,6 @@
 
 .method public requestUpdateVolume(I)V
     .locals 6
-    .param p1    # I
 
     iget v2, p0, Landroid/media/MediaRouter$RouteInfo;->mPlaybackType:I
 
@@ -833,7 +826,6 @@
 
 .method setRealStatusCode(I)Z
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/media/MediaRouter$RouteInfo;->mRealStatusCode:I
 
@@ -856,7 +848,6 @@
 
 .method setStatusInt(Ljava/lang/CharSequence;)V
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
 
     iget-object v0, p0, Landroid/media/MediaRouter$RouteInfo;->mStatus:Ljava/lang/CharSequence;
 
@@ -885,7 +876,6 @@
 
 .method public setTag(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     iput-object p1, p0, Landroid/media/MediaRouter$RouteInfo;->mTag:Ljava/lang/Object;
 

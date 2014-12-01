@@ -14,9 +14,6 @@
 # direct methods
 .method public constructor <init>(Landroid/graphics/Bitmap;Landroid/graphics/Shader$TileMode;Landroid/graphics/Shader$TileMode;)V
     .locals 4
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # Landroid/graphics/Shader$TileMode;
-    .param p3    # Landroid/graphics/Shader$TileMode;
 
     invoke-direct {p0}, Landroid/graphics/Shader;-><init>()V
 

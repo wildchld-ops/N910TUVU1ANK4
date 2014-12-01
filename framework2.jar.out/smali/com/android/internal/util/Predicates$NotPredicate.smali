@@ -59,8 +59,6 @@
 
 .method synthetic constructor <init>(Lcom/android/internal/util/Predicate;Lcom/android/internal/util/Predicates$1;)V
     .locals 0
-    .param p1    # Lcom/android/internal/util/Predicate;
-    .param p2    # Lcom/android/internal/util/Predicates$1;
 
     invoke-direct {p0, p1}, Lcom/android/internal/util/Predicates$NotPredicate;-><init>(Lcom/android/internal/util/Predicate;)V
 

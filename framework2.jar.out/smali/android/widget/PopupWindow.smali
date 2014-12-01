@@ -170,8 +170,6 @@
 
 .method public constructor <init>(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -182,7 +180,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -193,8 +190,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const v0, 0x1010076
 
@@ -205,9 +200,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v0, 0x0
 
@@ -218,10 +210,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;II)V
     .locals 9
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
-    .param p4    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -449,7 +437,6 @@
 
 .method public constructor <init>(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     const/4 v0, 0x0
 
@@ -460,9 +447,6 @@
 
 .method public constructor <init>(Landroid/view/View;II)V
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v0, 0x0
 
@@ -473,10 +457,6 @@
 
 .method public constructor <init>(Landroid/view/View;IIZ)V
     .locals 4
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Z
 
     const/4 v3, 0x2
 
@@ -580,7 +560,6 @@
 
 .method static synthetic access$000(Landroid/widget/PopupWindow;)Ljava/lang/ref/WeakReference;
     .locals 1
-    .param p0    # Landroid/widget/PopupWindow;
 
     iget-object v0, p0, Landroid/widget/PopupWindow;->mAnchor:Ljava/lang/ref/WeakReference;
 
@@ -589,7 +568,6 @@
 
 .method static synthetic access$100(Landroid/widget/PopupWindow;)Landroid/view/View;
     .locals 1
-    .param p0    # Landroid/widget/PopupWindow;
 
     iget-object v0, p0, Landroid/widget/PopupWindow;->mPopupView:Landroid/view/View;
 
@@ -598,7 +576,6 @@
 
 .method static synthetic access$1000(Landroid/widget/PopupWindow;)Landroid/view/View;
     .locals 1
-    .param p0    # Landroid/widget/PopupWindow;
 
     iget-object v0, p0, Landroid/widget/PopupWindow;->mContentView:Landroid/view/View;
 
@@ -607,7 +584,6 @@
 
 .method static synthetic access$200(Landroid/widget/PopupWindow;)I
     .locals 1
-    .param p0    # Landroid/widget/PopupWindow;
 
     iget v0, p0, Landroid/widget/PopupWindow;->mAnchorXoff:I
 
@@ -616,7 +592,6 @@
 
 .method static synthetic access$300(Landroid/widget/PopupWindow;)I
     .locals 1
-    .param p0    # Landroid/widget/PopupWindow;
 
     iget v0, p0, Landroid/widget/PopupWindow;->mAnchorYoff:I
 
@@ -625,7 +600,6 @@
 
 .method static synthetic access$400(Landroid/widget/PopupWindow;)I
     .locals 1
-    .param p0    # Landroid/widget/PopupWindow;
 
     iget v0, p0, Landroid/widget/PopupWindow;->mAnchoredGravity:I
 
@@ -634,12 +608,6 @@
 
 .method static synthetic access$500(Landroid/widget/PopupWindow;Landroid/view/View;Landroid/view/WindowManager$LayoutParams;III)Z
     .locals 1
-    .param p0    # Landroid/widget/PopupWindow;
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/WindowManager$LayoutParams;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-direct/range {p0 .. p5}, Landroid/widget/PopupWindow;->findDropDownPosition(Landroid/view/View;Landroid/view/WindowManager$LayoutParams;III)Z
 
@@ -650,8 +618,6 @@
 
 .method static synthetic access$600(Landroid/widget/PopupWindow;Z)V
     .locals 0
-    .param p0    # Landroid/widget/PopupWindow;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Landroid/widget/PopupWindow;->updateAboveAnchor(Z)V
 
@@ -660,7 +626,6 @@
 
 .method static synthetic access$700(Landroid/widget/PopupWindow;)Z
     .locals 1
-    .param p0    # Landroid/widget/PopupWindow;
 
     iget-boolean v0, p0, Landroid/widget/PopupWindow;->mAboveAnchor:Z
 
@@ -677,7 +642,6 @@
 
 .method static synthetic access$900(Landroid/widget/PopupWindow;)Landroid/view/View$OnTouchListener;
     .locals 1
-    .param p0    # Landroid/widget/PopupWindow;
 
     iget-object v0, p0, Landroid/widget/PopupWindow;->mTouchInterceptor:Landroid/view/View$OnTouchListener;
 
@@ -724,7 +688,6 @@
 
 .method private computeFlags(I)I
     .locals 3
-    .param p1    # I
 
     const/high16 v2, 0x20000
 
@@ -830,7 +793,6 @@
 
 .method private createPopupLayout(Landroid/os/IBinder;)Landroid/view/WindowManager$LayoutParams;
     .locals 3
-    .param p1    # Landroid/os/IBinder;
 
     new-instance v0, Landroid/view/WindowManager$LayoutParams;
 
@@ -938,11 +900,6 @@
 
 .method private findDropDownPosition(Landroid/view/View;Landroid/view/WindowManager$LayoutParams;III)Z
     .locals 41
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/WindowManager$LayoutParams;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-virtual/range {p1 .. p1}, Landroid/view/View;->getHeight()I
 
@@ -2695,10 +2652,6 @@
 
 .method private getMultiWindowMaximumHeight(Landroid/view/View;IIZ)I
     .locals 6
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Z
 
     new-instance v0, Landroid/graphics/Rect;
 
@@ -2776,8 +2729,6 @@
 
 .method private getVisibleDisplayRect(Landroid/view/View;Landroid/graphics/Rect;)V
     .locals 12
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/graphics/Rect;
 
     const/4 v10, 0x0
 
@@ -2963,7 +2914,6 @@
 
 .method private invokePopup(Landroid/view/WindowManager$LayoutParams;)V
     .locals 2
-    .param p1    # Landroid/view/WindowManager$LayoutParams;
 
     iget-object v0, p0, Landroid/widget/PopupWindow;->mContext:Landroid/content/Context;
 
@@ -3008,7 +2958,6 @@
 
 .method private preparePopup(Landroid/view/WindowManager$LayoutParams;)V
     .locals 10
-    .param p1    # Landroid/view/WindowManager$LayoutParams;
 
     const/4 v8, 0x0
 
@@ -3167,10 +3116,6 @@
 
 .method private registerForScrollChanged(Landroid/view/View;III)V
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-direct {p0}, Landroid/widget/PopupWindow;->unregisterForScrollChanged()V
 
@@ -3235,7 +3180,6 @@
 
 .method private setWindowPopup(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/widget/PopupWindow;->mIsWindowPopupOutsideBound:Z
 
@@ -3278,14 +3222,6 @@
 
 .method private update(Landroid/view/View;ZIIZIII)V
     .locals 27
-    .param p1    # Landroid/view/View;
-    .param p2    # Z
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Z
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
 
     invoke-virtual/range {p0 .. p0}, Landroid/widget/PopupWindow;->isShowing()Z
 
@@ -3822,7 +3758,6 @@
 
 .method private updateAboveAnchor(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-boolean v0, p0, Landroid/widget/PopupWindow;->mAboveAnchor:Z
 
@@ -4038,7 +3973,6 @@
 
 .method public getMaxAvailableHeight(Landroid/view/View;)I
     .locals 1
-    .param p1    # Landroid/view/View;
 
     const/4 v0, 0x0
 
@@ -4051,8 +3985,6 @@
 
 .method public getMaxAvailableHeight(Landroid/view/View;I)I
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -4065,9 +3997,6 @@
 
 .method public getMaxAvailableHeight(Landroid/view/View;IZ)I
     .locals 21
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # Z
 
     new-instance v4, Landroid/graphics/Rect;
 
@@ -4549,7 +4478,6 @@
 
 .method setAllowScrollingAnchorParent(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/widget/PopupWindow;->mAllowScrollingAnchorParent:Z
 
@@ -4558,7 +4486,6 @@
 
 .method public setAnimationStyle(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/widget/PopupWindow;->mAnimationStyle:I
 
@@ -4567,7 +4494,6 @@
 
 .method public setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
     .locals 0
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     iput-object p1, p0, Landroid/widget/PopupWindow;->mBackground:Landroid/graphics/drawable/Drawable;
 
@@ -4576,7 +4502,6 @@
 
 .method public setClipToScreenEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/widget/PopupWindow;->mClipToScreen:Z
 
@@ -4597,7 +4522,6 @@
 
 .method public setClippingEnabled(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/widget/PopupWindow;->mClippingEnabled:Z
 
@@ -4606,7 +4530,6 @@
 
 .method public setContentView(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p0}, Landroid/widget/PopupWindow;->isShowing()Z
 
@@ -4663,8 +4586,6 @@
 
 .method public setDimBehind(ZF)V
     .locals 0
-    .param p1    # Z
-    .param p2    # F
 
     iput-boolean p1, p0, Landroid/widget/PopupWindow;->mDimBehind:Z
 
@@ -4675,7 +4596,6 @@
 
 .method public setFocusable(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/widget/PopupWindow;->mFocusable:Z
 
@@ -4684,7 +4604,6 @@
 
 .method public setHeight(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/widget/PopupWindow;->mHeight:I
 
@@ -4703,7 +4622,6 @@
 
 .method public setInputMethodMode(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/widget/PopupWindow;->mInputMethodMode:I
 
@@ -4712,14 +4630,12 @@
 
 .method public setLayoutInMultiWindowScreenEnabled(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method public setLayoutInScreenEnabled(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/widget/PopupWindow;->mLayoutInScreen:Z
 
@@ -4728,7 +4644,6 @@
 
 .method public setLayoutInsetDecor(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/widget/PopupWindow;->mLayoutInsetDecor:Z
 
@@ -4737,7 +4652,6 @@
 
 .method public setOnDismissListener(Landroid/widget/PopupWindow$OnDismissListener;)V
     .locals 0
-    .param p1    # Landroid/widget/PopupWindow$OnDismissListener;
 
     iput-object p1, p0, Landroid/widget/PopupWindow;->mOnDismissListener:Landroid/widget/PopupWindow$OnDismissListener;
 
@@ -4746,7 +4660,6 @@
 
 .method public setOutsideTouchable(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/widget/PopupWindow;->mOutsideTouchable:Z
 
@@ -4755,7 +4668,6 @@
 
 .method public setShowForAllUsers(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/widget/PopupWindow;->mShowForAllUsers:Z
 
@@ -4764,7 +4676,6 @@
 
 .method public setSoftInputMode(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/widget/PopupWindow;->mSoftInputMode:I
 
@@ -4773,7 +4684,6 @@
 
 .method public setSplitTouchEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -4792,7 +4702,6 @@
 
 .method public setTouchInterceptor(Landroid/view/View$OnTouchListener;)V
     .locals 0
-    .param p1    # Landroid/view/View$OnTouchListener;
 
     iput-object p1, p0, Landroid/widget/PopupWindow;->mTouchInterceptor:Landroid/view/View$OnTouchListener;
 
@@ -4801,7 +4710,6 @@
 
 .method public setTouchModal(Z)V
     .locals 1
-    .param p1    # Z
 
     if-nez p1, :cond_0
 
@@ -4820,7 +4728,6 @@
 
 .method public setTouchable(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/widget/PopupWindow;->mTouchable:Z
 
@@ -4829,7 +4736,6 @@
 
 .method public setWidth(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/widget/PopupWindow;->mWidth:I
 
@@ -4838,8 +4744,6 @@
 
 .method public setWindowLayoutMode(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     iput p1, p0, Landroid/widget/PopupWindow;->mWidthMode:I
 
@@ -4850,7 +4754,6 @@
 
 .method public setWindowLayoutType(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/widget/PopupWindow;->mWindowLayoutType:I
 
@@ -4859,7 +4762,6 @@
 
 .method public showAsDropDown(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     const/4 v0, 0x0
 
@@ -4870,9 +4772,6 @@
 
 .method public showAsDropDown(Landroid/view/View;II)V
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # I
 
     const v0, 0x800033
 
@@ -4883,10 +4782,6 @@
 
 .method public showAsDropDown(Landroid/view/View;III)V
     .locals 6
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/4 v1, 0x1
 
@@ -4972,10 +4867,6 @@
 
 .method public showAtLocation(Landroid/os/IBinder;III)V
     .locals 3
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-virtual {p0}, Landroid/widget/PopupWindow;->isShowing()Z
 
@@ -5062,10 +4953,6 @@
 
 .method public showAtLocation(Landroid/view/View;III)V
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-virtual {p1}, Landroid/view/View;->getWindowToken()Landroid/os/IBinder;
 
@@ -5147,8 +5034,6 @@
 
 .method public update(II)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Landroid/widget/PopupWindow;->mPopupView:Landroid/view/View;
 
@@ -5177,10 +5062,6 @@
 
 .method public update(IIII)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/4 v5, 0x0
 
@@ -5201,11 +5082,6 @@
 
 .method public update(IIIIZ)V
     .locals 17
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Z
 
     const/4 v8, 0x0
 
@@ -5544,9 +5420,6 @@
 
 .method public update(Landroid/view/View;II)V
     .locals 9
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v2, 0x0
 
@@ -5573,11 +5446,6 @@
 
 .method public update(Landroid/view/View;IIII)V
     .locals 9
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     const/4 v2, 0x1
 

@@ -23,7 +23,6 @@
 # direct methods
 .method constructor <init>(Landroid/service/notification/StatusBarNotification;)V
     .locals 0
-    .param p1    # Landroid/service/notification/StatusBarNotification;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -36,9 +35,6 @@
 # virtual methods
 .method dump(Ljava/io/PrintWriter;Ljava/lang/String;Landroid/content/Context;)V
     .locals 12
-    .param p1    # Ljava/io/PrintWriter;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/content/Context;
 
     iget-object v7, p0, Lcom/android/server/NotificationManagerService$NotificationRecord;->sbn:Landroid/service/notification/StatusBarNotification;
 

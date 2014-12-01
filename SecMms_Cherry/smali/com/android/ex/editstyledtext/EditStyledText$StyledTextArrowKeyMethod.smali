@@ -23,7 +23,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/ex/editstyledtext/EditStyledText$EditorManager;)V
     .locals 1
-    .param p1    # Lcom/android/ex/editstyledtext/EditStyledText$EditorManager;
 
     invoke-direct {p0}, Landroid/text/method/ArrowKeyMovementMethod;-><init>()V
 
@@ -38,9 +37,6 @@
 
 .method private executeDown(Landroid/widget/TextView;Landroid/text/Spannable;I)Z
     .locals 4
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # Landroid/text/Spannable;
-    .param p3    # I
 
     iget-object v1, p0, Lcom/android/ex/editstyledtext/EditStyledText$StyledTextArrowKeyMethod;->LOG_TAG:Ljava/lang/String;
 
@@ -128,7 +124,6 @@
 
 .method private getEndPos(Landroid/widget/TextView;)I
     .locals 3
-    .param p1    # Landroid/widget/TextView;
 
     invoke-virtual {p1}, Landroid/widget/TextView;->getSelectionStart()I
 
@@ -161,8 +156,6 @@
 # virtual methods
 .method protected down(Landroid/widget/TextView;Landroid/text/Spannable;)Z
     .locals 7
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # Landroid/text/Spannable;
 
     iget-object v5, p0, Lcom/android/ex/editstyledtext/EditStyledText$StyledTextArrowKeyMethod;->LOG_TAG:Ljava/lang/String;
 
@@ -238,8 +231,6 @@
 
 .method protected left(Landroid/widget/TextView;Landroid/text/Spannable;)Z
     .locals 4
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # Landroid/text/Spannable;
 
     iget-object v2, p0, Lcom/android/ex/editstyledtext/EditStyledText$StyledTextArrowKeyMethod;->LOG_TAG:Ljava/lang/String;
 
@@ -274,10 +265,6 @@
 
 .method public onKeyDown(Landroid/widget/TextView;Landroid/text/Spannable;ILandroid/view/KeyEvent;)Z
     .locals 3
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # Landroid/text/Spannable;
-    .param p3    # I
-    .param p4    # Landroid/view/KeyEvent;
 
     iget-object v0, p0, Lcom/android/ex/editstyledtext/EditStyledText$StyledTextArrowKeyMethod;->LOG_TAG:Ljava/lang/String;
 
@@ -343,8 +330,6 @@
 
 .method protected right(Landroid/widget/TextView;Landroid/text/Spannable;)Z
     .locals 4
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # Landroid/text/Spannable;
 
     iget-object v2, p0, Lcom/android/ex/editstyledtext/EditStyledText$StyledTextArrowKeyMethod;->LOG_TAG:Ljava/lang/String;
 
@@ -379,8 +364,6 @@
 
 .method protected up(Landroid/widget/TextView;Landroid/text/Spannable;)Z
     .locals 7
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # Landroid/text/Spannable;
 
     iget-object v5, p0, Lcom/android/ex/editstyledtext/EditStyledText$StyledTextArrowKeyMethod;->LOG_TAG:Ljava/lang/String;
 

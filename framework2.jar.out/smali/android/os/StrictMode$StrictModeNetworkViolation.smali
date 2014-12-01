@@ -17,7 +17,6 @@
 # direct methods
 .method public constructor <init>(I)V
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x4
 

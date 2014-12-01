@@ -80,7 +80,6 @@
 
 .method public constructor <init>(I)V
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -109,7 +108,6 @@
 
 .method public constructor <init>(Landroid/util/ArraySet;)V
     .locals 0
-    .param p1    # Landroid/util/ArraySet;
 
     invoke-direct {p0}, Landroid/util/ArraySet;-><init>()V
 
@@ -123,7 +121,6 @@
 
 .method static synthetic access$000(Landroid/util/ArraySet;)I
     .locals 1
-    .param p0    # Landroid/util/ArraySet;
 
     invoke-direct {p0}, Landroid/util/ArraySet;->indexOfNull()I
 
@@ -134,9 +131,6 @@
 
 .method static synthetic access$100(Landroid/util/ArraySet;Ljava/lang/Object;I)I
     .locals 1
-    .param p0    # Landroid/util/ArraySet;
-    .param p1    # Ljava/lang/Object;
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Landroid/util/ArraySet;->indexOf(Ljava/lang/Object;I)I
 
@@ -147,7 +141,6 @@
 
 .method private allocArrays(I)V
     .locals 5
-    .param p1    # I
 
     const/16 v1, 0x8
 
@@ -312,9 +305,6 @@
 
 .method private static freeArrays([I[Ljava/lang/Object;I)V
     .locals 5
-    .param p0    # [I
-    .param p1    # [Ljava/lang/Object;
-    .param p2    # I
 
     const/16 v3, 0xa
 
@@ -474,8 +464,6 @@
 
 .method private indexOf(Ljava/lang/Object;I)I
     .locals 5
-    .param p1    # Ljava/lang/Object;
-    .param p2    # I
 
     iget v0, p0, Landroid/util/ArraySet;->mSize:I
 
@@ -899,7 +887,6 @@
 
 .method public contains(Ljava/lang/Object;)Z
     .locals 3
-    .param p1    # Ljava/lang/Object;
 
     const/4 v0, 0x1
 
@@ -982,7 +969,6 @@
 
 .method public ensureCapacity(I)V
     .locals 5
-    .param p1    # I
 
     const/4 v4, 0x0
 
@@ -1025,7 +1011,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 8
-    .param p1    # Ljava/lang/Object;
 
     const/4 v4, 0x1
 
@@ -1242,7 +1227,6 @@
 
 .method public remove(Ljava/lang/Object;)Z
     .locals 2
-    .param p1    # Ljava/lang/Object;
 
     if-nez p1, :cond_0
 
@@ -1318,7 +1302,6 @@
 
 .method public removeAt(I)Ljava/lang/Object;
     .locals 8
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)TE;"
@@ -1693,7 +1676,6 @@
 
 .method public valueAt(I)Ljava/lang/Object;
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)TE;"

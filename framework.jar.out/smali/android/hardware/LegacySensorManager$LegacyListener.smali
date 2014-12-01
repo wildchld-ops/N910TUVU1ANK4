@@ -30,7 +30,6 @@
 # direct methods
 .method constructor <init>(Landroid/hardware/SensorListener;)V
     .locals 1
-    .param p1    # Landroid/hardware/SensorListener;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -57,7 +56,6 @@
 
 .method private static getLegacySensorType(I)I
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -103,7 +101,6 @@
 
 .method private static hasOrientationSensor(I)Z
     .locals 1
-    .param p0    # I
 
     and-int/lit16 v0, p0, 0x81
 
@@ -122,9 +119,6 @@
 
 .method private mapSensorDataToWindow(I[FI)V
     .locals 8
-    .param p1    # I
-    .param p2    # [F
-    .param p3    # I
 
     const/high16 v7, 0x43340000
 
@@ -329,8 +323,6 @@
 
 .method public onAccuracyChanged(Landroid/hardware/Sensor;I)V
     .locals 2
-    .param p1    # Landroid/hardware/Sensor;
-    .param p2    # I
 
     :try_start_0
     iget-object v0, p0, Landroid/hardware/LegacySensorManager$LegacyListener;->mTarget:Landroid/hardware/SensorListener;
@@ -358,7 +350,6 @@
 
 .method public onSensorChanged(Landroid/hardware/SensorEvent;)V
     .locals 9
-    .param p1    # Landroid/hardware/SensorEvent;
 
     const/4 v4, 0x2
 
@@ -455,7 +446,6 @@
 
 .method registerSensor(I)Z
     .locals 3
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -498,7 +488,6 @@
 
 .method unregisterSensor(I)Z
     .locals 3
-    .param p1    # I
 
     const/4 v0, 0x0
 

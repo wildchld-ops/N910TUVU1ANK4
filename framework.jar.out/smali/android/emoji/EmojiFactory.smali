@@ -36,8 +36,6 @@
 # direct methods
 .method private constructor <init>(ILjava/lang/String;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -60,7 +58,6 @@
 
 .method static synthetic access$000(Landroid/emoji/EmojiFactory;)I
     .locals 1
-    .param p0    # Landroid/emoji/EmojiFactory;
 
     iget v0, p0, Landroid/emoji/EmojiFactory;->sCacheSize:I
 
@@ -134,7 +131,6 @@
 
 .method public getAndroidPuaFromVendorSpecificPua(I)I
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/emoji/EmojiFactory;->mNativeEmojiFactory:I
 
@@ -147,7 +143,6 @@
 
 .method public getAndroidPuaFromVendorSpecificPua(Ljava/lang/String;)Ljava/lang/String;
     .locals 10
-    .param p1    # Ljava/lang/String;
 
     const/4 v9, 0x0
 
@@ -230,7 +225,6 @@
 
 .method public getAndroidPuaFromVendorSpecificSjis(C)I
     .locals 1
-    .param p1    # C
 
     iget v0, p0, Landroid/emoji/EmojiFactory;->mNativeEmojiFactory:I
 
@@ -243,7 +237,6 @@
 
 .method public declared-synchronized getBitmapFromAndroidPua(I)Landroid/graphics/Bitmap;
     .locals 6
-    .param p1    # I
 
     monitor-enter p0
 
@@ -337,7 +330,6 @@
 
 .method public declared-synchronized getBitmapFromVendorSpecificPua(I)Landroid/graphics/Bitmap;
     .locals 1
-    .param p1    # I
 
     monitor-enter p0
 
@@ -366,7 +358,6 @@
 
 .method public declared-synchronized getBitmapFromVendorSpecificSjis(C)Landroid/graphics/Bitmap;
     .locals 1
-    .param p1    # C
 
     monitor-enter p0
 
@@ -419,7 +410,6 @@
 
 .method public getVendorSpecificPuaFromAndroidPua(I)I
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/emoji/EmojiFactory;->mNativeEmojiFactory:I
 
@@ -432,7 +422,6 @@
 
 .method public getVendorSpecificPuaFromAndroidPua(Ljava/lang/String;)Ljava/lang/String;
     .locals 10
-    .param p1    # Ljava/lang/String;
 
     const/4 v9, 0x0
 
@@ -515,7 +504,6 @@
 
 .method public getVendorSpecificSjisFromAndroidPua(I)I
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/emoji/EmojiFactory;->mNativeEmojiFactory:I
 

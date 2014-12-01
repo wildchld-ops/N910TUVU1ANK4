@@ -48,7 +48,7 @@
 
     iget-object v0, p0, Lcom/android/phone/LteReadyAlertActivity$1;->this$0:Lcom/android/phone/LteReadyAlertActivity;
 
-    invoke-virtual {v0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {v0}, Lcom/android/phone/LteReadyAlertActivity;->finish()V
 
     return-void
 .end method

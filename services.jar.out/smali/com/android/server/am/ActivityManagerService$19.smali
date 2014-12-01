@@ -21,8 +21,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/am/ActivityManagerService;JJ)V
     .locals 0
-    .param p2    # J
-    .param p4    # J
 
     iput-object p1, p0, Lcom/android/server/am/ActivityManagerService$19;->this$0:Lcom/android/server/am/ActivityManagerService;
 
@@ -59,7 +57,6 @@
 
 .method public onTick(J)V
     .locals 8
-    .param p1    # J
 
     const/4 v1, 0x0
 

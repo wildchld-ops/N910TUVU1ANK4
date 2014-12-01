@@ -150,7 +150,6 @@
 
 .method public static convertResID(I)I
     .locals 1
-    .param p0    # I
 
     const v0, 0x7f020006
 

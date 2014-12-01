@@ -21,7 +21,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/statusbar/policy/BrightnessController;Landroid/content/Context;)V
     .locals 0
-    .param p2    # Landroid/content/Context;
 
     iput-object p1, p0, Lcom/android/systemui/statusbar/policy/BrightnessController$1;->this$0:Lcom/android/systemui/statusbar/policy/BrightnessController;
 
@@ -34,8 +33,6 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     invoke-super {p0, p1, p2}, Lcom/android/systemui/statusbar/policy/CurrentUserTracker;->onReceive(Landroid/content/Context;Landroid/content/Intent;)V
 

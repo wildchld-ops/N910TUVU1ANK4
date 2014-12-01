@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Lcom/android/incallui/help/RejectCallsWithMessage;Lcom/android/incallui/help/RejectCallsWithMessage$1;)V
     .locals 0
-    .param p1    # Lcom/android/incallui/help/RejectCallsWithMessage;
-    .param p2    # Lcom/android/incallui/help/RejectCallsWithMessage$1;
 
     invoke-direct {p0, p1}, Lcom/android/incallui/help/RejectCallsWithMessage$RespondViaSmsItemClickListener;-><init>(Lcom/android/incallui/help/RejectCallsWithMessage;)V
 
@@ -46,9 +44,6 @@
 # virtual methods
 .method public onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
     .locals 2
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

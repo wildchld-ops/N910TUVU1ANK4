@@ -45,7 +45,6 @@
 
 .method private getAdjPreviewVertialGap(I)I
     .locals 1
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -277,7 +276,6 @@
 
 .method public initParams(I)V
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0}, Lcom/diotek/ime/framework/view/PreviewController$PreviewParams;->loadPreviewPaddingBottom()V
 

@@ -85,11 +85,11 @@
 
     iget-object v1, p0, Lcom/android/phone/callsettings/LGTPhotoRingRejectList$8;->this$0:Lcom/android/phone/callsettings/LGTPhotoRingRejectList;
 
-    invoke-virtual {v1, v3}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->removeDialog(I)V
+    invoke-virtual {v1, v3}, Lcom/android/phone/callsettings/LGTPhotoRingRejectList;->removeDialog(I)V
 
     iget-object v1, p0, Lcom/android/phone/callsettings/LGTPhotoRingRejectList$8;->this$0:Lcom/android/phone/callsettings/LGTPhotoRingRejectList;
 
-    invoke-virtual {v1, v3}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->showDialog(I)V
+    invoke-virtual {v1, v3}, Lcom/android/phone/callsettings/LGTPhotoRingRejectList;->showDialog(I)V
 
     iget-object v1, p0, Lcom/android/phone/callsettings/LGTPhotoRingRejectList$8;->this$0:Lcom/android/phone/callsettings/LGTPhotoRingRejectList;
 

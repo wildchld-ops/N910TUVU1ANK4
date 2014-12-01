@@ -23,7 +23,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/search/SearchManagerService;Landroid/content/ContentResolver;)V
     .locals 3
-    .param p2    # Landroid/content/ContentResolver;
 
     iput-object p1, p0, Lcom/android/server/search/SearchManagerService$GlobalSearchProviderObserver;->this$0:Lcom/android/server/search/SearchManagerService;
 
@@ -52,7 +51,6 @@
 # virtual methods
 .method public onChange(Z)V
     .locals 5
-    .param p1    # Z
 
     iget-object v2, p0, Lcom/android/server/search/SearchManagerService$GlobalSearchProviderObserver;->this$0:Lcom/android/server/search/SearchManagerService;
 

@@ -92,9 +92,6 @@
 # virtual methods
 .method public SecExternalDisplayCreateSurface(Ljava/lang/String;II)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Landroid/hardware/SecExternalDisplayJNIInterface;->_SecExternalDisplayCreateSurface(Ljava/lang/String;II)Z
 
@@ -105,9 +102,6 @@
 
 .method public SecExternalDisplayDestroySurface(Ljava/lang/String;II)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Landroid/hardware/SecExternalDisplayJNIInterface;->_SecExternalDisplayDestroySurface(Ljava/lang/String;II)Z
 
@@ -138,7 +132,6 @@
 
 .method public SecExternalDisplayGetStatus(I)Z
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/hardware/SecExternalDisplayJNIInterface;->_SecExternalDisplayGetStatus(I)Z
 
@@ -149,7 +142,6 @@
 
 .method public SecExternalDisplayRegisterEVF(Z)I
     .locals 1
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Landroid/hardware/SecExternalDisplayJNIInterface;->_SecExternalDisplayRegisterEVF(Z)I
 
@@ -160,7 +152,6 @@
 
 .method public SecExternalDisplaySet3DMode(I)I
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/hardware/SecExternalDisplayJNIInterface;->_SecExternalDisplaySet3DMode(I)I
 
@@ -171,7 +162,6 @@
 
 .method public SecExternalDisplaySetExternalUITransform(I)Z
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/hardware/SecExternalDisplayJNIInterface;->_SecExternalDisplaySetExternalUITransform(I)Z
 
@@ -182,7 +172,6 @@
 
 .method public SecExternalDisplaySetForceMirrorMode(Z)Z
     .locals 1
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Landroid/hardware/SecExternalDisplayJNIInterface;->_SecExternalDisplaySetForceMirrorMode(Z)Z
 
@@ -193,8 +182,6 @@
 
 .method public SecExternalDisplaySetGpuLock(Ljava/lang/String;I)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Landroid/hardware/SecExternalDisplayJNIInterface;->_SecExternalDisplaySetGpuLock(Ljava/lang/String;I)Z
 
@@ -205,7 +192,6 @@
 
 .method public SecExternalDisplaySetOutputMode(I)Z
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/hardware/SecExternalDisplayJNIInterface;->_SecExternalDisplaySetOutputMode(I)Z
 
@@ -216,7 +202,6 @@
 
 .method public SecExternalDisplaySetPause(Z)Z
     .locals 1
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Landroid/hardware/SecExternalDisplayJNIInterface;->_SecExternalDisplaySetPause(Z)Z
 
@@ -227,7 +212,6 @@
 
 .method public SecExternalDisplaySetResolution(I)Z
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/hardware/SecExternalDisplayJNIInterface;->_SecExternalDisplaySetResolution(I)Z
 
@@ -238,8 +222,6 @@
 
 .method public SecExternalDisplaySetStatus(IZ)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Landroid/hardware/SecExternalDisplayJNIInterface;->_SecExternalDisplaySetStatus(IZ)Z
 
@@ -250,9 +232,6 @@
 
 .method public SecExternalDisplayStartStopVFBThread(IIZ)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     invoke-direct {p0, p1, p2, p3}, Landroid/hardware/SecExternalDisplayJNIInterface;->_SecExternalDisplayStartStopVFBThread(IIZ)Z
 
@@ -263,7 +242,6 @@
 
 .method public SecExternalDisplayType(Z)Z
     .locals 1
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Landroid/hardware/SecExternalDisplayJNIInterface;->_SecExternalDisplayType(Z)Z
 

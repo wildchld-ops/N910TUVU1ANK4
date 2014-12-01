@@ -57,8 +57,6 @@
 
 .method private constructor <init>(Ljava/lang/Object;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0}, Landroid/animation/ValueAnimator;-><init>()V
 
@@ -75,7 +73,6 @@
 
 .method private hasSameTargetAndProperties(Landroid/animation/Animator;)Z
     .locals 7
-    .param p1    # Landroid/animation/Animator;
 
     const/4 v5, 0x0
 
@@ -168,7 +165,6 @@
 
 .method public static varargs ofFloat(Ljava/lang/Object;Landroid/util/Property;[F)Landroid/animation/ObjectAnimator;
     .locals 1
-    .param p2    # [F
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -193,9 +189,6 @@
 
 .method public static varargs ofFloat(Ljava/lang/Object;Ljava/lang/String;[F)Landroid/animation/ObjectAnimator;
     .locals 1
-    .param p0    # Ljava/lang/Object;
-    .param p1    # Ljava/lang/String;
-    .param p2    # [F
 
     new-instance v0, Landroid/animation/ObjectAnimator;
 
@@ -208,7 +201,6 @@
 
 .method public static varargs ofInt(Ljava/lang/Object;Landroid/util/Property;[I)Landroid/animation/ObjectAnimator;
     .locals 1
-    .param p2    # [I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -233,9 +225,6 @@
 
 .method public static varargs ofInt(Ljava/lang/Object;Ljava/lang/String;[I)Landroid/animation/ObjectAnimator;
     .locals 1
-    .param p0    # Ljava/lang/Object;
-    .param p1    # Ljava/lang/String;
-    .param p2    # [I
 
     new-instance v0, Landroid/animation/ObjectAnimator;
 
@@ -276,10 +265,6 @@
 
 .method public static varargs ofObject(Ljava/lang/Object;Ljava/lang/String;Landroid/animation/TypeEvaluator;[Ljava/lang/Object;)Landroid/animation/ObjectAnimator;
     .locals 1
-    .param p0    # Ljava/lang/Object;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/animation/TypeEvaluator;
-    .param p3    # [Ljava/lang/Object;
 
     new-instance v0, Landroid/animation/ObjectAnimator;
 
@@ -294,8 +279,6 @@
 
 .method public static varargs ofPropertyValuesHolder(Ljava/lang/Object;[Landroid/animation/PropertyValuesHolder;)Landroid/animation/ObjectAnimator;
     .locals 1
-    .param p0    # Ljava/lang/Object;
-    .param p1    # [Landroid/animation/PropertyValuesHolder;
 
     new-instance v0, Landroid/animation/ObjectAnimator;
 
@@ -312,7 +295,6 @@
 # virtual methods
 .method animateValue(F)V
     .locals 4
-    .param p1    # F
 
     invoke-super {p0, p1}, Landroid/animation/ValueAnimator;->animateValue(F)V
 
@@ -564,7 +546,6 @@
 
 .method public setAutoCancel(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/animation/ObjectAnimator;->mAutoCancel:Z
 
@@ -573,7 +554,6 @@
 
 .method public bridge synthetic setDuration(J)Landroid/animation/Animator;
     .locals 1
-    .param p1    # J
 
     invoke-virtual {p0, p1, p2}, Landroid/animation/ObjectAnimator;->setDuration(J)Landroid/animation/ObjectAnimator;
 
@@ -584,7 +564,6 @@
 
 .method public setDuration(J)Landroid/animation/ObjectAnimator;
     .locals 0
-    .param p1    # J
 
     invoke-super {p0, p1, p2}, Landroid/animation/ValueAnimator;->setDuration(J)Landroid/animation/ValueAnimator;
 
@@ -593,7 +572,6 @@
 
 .method public bridge synthetic setDuration(J)Landroid/animation/ValueAnimator;
     .locals 1
-    .param p1    # J
 
     invoke-virtual {p0, p1, p2}, Landroid/animation/ObjectAnimator;->setDuration(J)Landroid/animation/ObjectAnimator;
 
@@ -604,7 +582,6 @@
 
 .method public varargs setFloatValues([F)V
     .locals 3
-    .param p1    # [F
 
     const/4 v1, 0x1
 
@@ -663,7 +640,6 @@
 
 .method public varargs setIntValues([I)V
     .locals 3
-    .param p1    # [I
 
     const/4 v1, 0x1
 
@@ -722,7 +698,6 @@
 
 .method public varargs setObjectValues([Ljava/lang/Object;)V
     .locals 4
-    .param p1    # [Ljava/lang/Object;
 
     const/4 v0, 0x0
 
@@ -787,7 +762,6 @@
 
 .method public setProperty(Landroid/util/Property;)V
     .locals 5
-    .param p1    # Landroid/util/Property;
 
     const/4 v4, 0x0
 
@@ -836,7 +810,6 @@
 
 .method public setPropertyName(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -872,7 +845,6 @@
 
 .method public setTarget(Ljava/lang/Object;)V
     .locals 3
-    .param p1    # Ljava/lang/Object;
 
     iget-object v1, p0, Landroid/animation/ObjectAnimator;->mTarget:Ljava/lang/Object;
 

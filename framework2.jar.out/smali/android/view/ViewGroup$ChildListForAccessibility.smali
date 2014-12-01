@@ -100,8 +100,6 @@
 
 .method private init(Landroid/view/ViewGroup;Z)V
     .locals 7
-    .param p1    # Landroid/view/ViewGroup;
-    .param p2    # Z
 
     iget-object v2, p0, Landroid/view/ViewGroup$ChildListForAccessibility;->mChildren:Ljava/util/ArrayList;
 
@@ -183,8 +181,6 @@
 
 .method public static obtain(Landroid/view/ViewGroup;Z)Landroid/view/ViewGroup$ChildListForAccessibility;
     .locals 2
-    .param p0    # Landroid/view/ViewGroup;
-    .param p1    # Z
 
     sget-object v1, Landroid/view/ViewGroup$ChildListForAccessibility;->sPool:Landroid/util/Pools$SynchronizedPool;
 
@@ -210,7 +206,6 @@
 # virtual methods
 .method public getChildAt(I)Landroid/view/View;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/view/ViewGroup$ChildListForAccessibility;->mChildren:Ljava/util/ArrayList;
 
@@ -237,7 +232,6 @@
 
 .method public getChildIndex(Landroid/view/View;)I
     .locals 1
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Landroid/view/ViewGroup$ChildListForAccessibility;->mChildren:Ljava/util/ArrayList;
 

@@ -54,7 +54,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/SettingsCommonPreference;)V
     .locals 0
-    .param p0    # Lcom/android/settings/SettingsCommonPreference;
 
     invoke-direct {p0}, Lcom/android/settings/SettingsCommonPreference;->updateNfcSummary()V
 
@@ -63,7 +62,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/SettingsCommonPreference;)V
     .locals 0
-    .param p0    # Lcom/android/settings/SettingsCommonPreference;
 
     invoke-direct {p0}, Lcom/android/settings/SettingsCommonPreference;->updateNearbySummary()V
 
@@ -872,7 +870,6 @@
 # virtual methods
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -996,8 +993,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 7
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     const/4 v6, 0x1
 

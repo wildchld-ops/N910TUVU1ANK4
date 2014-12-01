@@ -33,7 +33,6 @@
 # virtual methods
 .method public interfaceRemoved(Ljava/lang/String;)V
     .locals 12
-    .param p1    # Ljava/lang/String;
 
     const/4 v7, 0x1
 

@@ -388,8 +388,6 @@
 
 .method static synthetic access$100(Lcom/android/providers/settings/SettingsProvider;I)V
     .locals 0
-    .param p0    # Lcom/android/providers/settings/SettingsProvider;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/providers/settings/SettingsProvider;->fullyPopulateCaches(I)V
 
@@ -398,8 +396,6 @@
 
 .method static synthetic access$202(Lcom/android/providers/settings/SettingsProvider;Ljava/util/HashSet;)Ljava/util/HashSet;
     .locals 0
-    .param p0    # Lcom/android/providers/settings/SettingsProvider;
-    .param p1    # Ljava/util/HashSet;
 
     iput-object p1, p0, Lcom/android/providers/settings/SettingsProvider;->SHARE_KNOX:Ljava/util/HashSet;
 
@@ -424,7 +420,6 @@
 
 .method private checkWritePermissions(Lcom/android/providers/settings/SettingsProvider$SqlArguments;)V
     .locals 5
-    .param p1    # Lcom/android/providers/settings/SettingsProvider$SqlArguments;
 
     const-string v0, "secure"
 
@@ -487,7 +482,6 @@
 
 .method private ensureAndroidIdIsSet(I)Z
     .locals 18
-    .param p1    # I
 
     sget-object v4, Landroid/provider/Settings$Secure;->CONTENT_URI:Landroid/net/Uri;
 
@@ -762,7 +756,6 @@
 
 .method private establishDbTracking(I)V
     .locals 6
-    .param p1    # I
 
     monitor-enter p0
 
@@ -889,9 +882,6 @@
 
 .method private fullyPopulateCache(Lcom/android/providers/settings/DatabaseHelper;Ljava/lang/String;Lcom/android/providers/settings/SettingsProvider$SettingsCache;)V
     .locals 14
-    .param p1    # Lcom/android/providers/settings/DatabaseHelper;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/android/providers/settings/SettingsProvider$SettingsCache;
 
     invoke-virtual {p1}, Landroid/database/sqlite/SQLiteOpenHelper;->getReadableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
@@ -1017,7 +1007,6 @@
 
 .method private fullyPopulateCaches(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/providers/settings/SettingsProvider;->mOpenHelpers:Landroid/util/SparseArray;
 
@@ -1065,7 +1054,6 @@
 
 .method private getOrConstructCache(ILandroid/util/SparseArray;)Lcom/android/providers/settings/SettingsProvider$SettingsCache;
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -1090,7 +1078,6 @@
 
 .method private getOrEstablishDatabase(I)Lcom/android/providers/settings/DatabaseHelper;
     .locals 6
-    .param p1    # I
 
     const/16 v3, 0x3e8
 
@@ -1163,9 +1150,6 @@
 
 .method private getUriFor(Landroid/net/Uri;Landroid/content/ContentValues;J)Landroid/net/Uri;
     .locals 5
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Landroid/content/ContentValues;
-    .param p3    # J
 
     invoke-virtual {p1}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
 
@@ -1264,10 +1248,6 @@
 
 .method private insertForPersona(Ljava/lang/String;Landroid/net/Uri;Landroid/content/ContentValues;Ljava/lang/String;)V
     .locals 20
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/net/Uri;
-    .param p3    # Landroid/content/ContentValues;
-    .param p4    # Ljava/lang/String;
 
     move-object/from16 v0, p0
 
@@ -1438,9 +1418,6 @@
 
 .method private insertForUser(Landroid/net/Uri;Landroid/content/ContentValues;I)Landroid/net/Uri;
     .locals 15
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Landroid/content/ContentValues;
-    .param p3    # I
 
     invoke-static {}, Landroid/os/UserHandle;->getCallingUserId()I
 
@@ -2274,10 +2251,6 @@
 
 .method private lookupValue(Lcom/android/providers/settings/DatabaseHelper;Ljava/lang/String;Lcom/android/providers/settings/SettingsProvider$SettingsCache;Ljava/lang/String;)Landroid/os/Bundle;
     .locals 14
-    .param p1    # Lcom/android/providers/settings/DatabaseHelper;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/android/providers/settings/SettingsProvider$SettingsCache;
-    .param p4    # Ljava/lang/String;
 
     if-nez p3, :cond_1
 
@@ -2492,9 +2465,6 @@
 
 .method private parseProviderList(Landroid/net/Uri;Landroid/content/ContentValues;I)Z
     .locals 15
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Landroid/content/ContentValues;
-    .param p3    # I
 
     const-string v1, "value"
 
@@ -2767,12 +2737,6 @@
 
 .method private queryForUser(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;I)Landroid/database/Cursor;
     .locals 18
-    .param p1    # Landroid/net/Uri;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # [Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # I
 
     new-instance v11, Lcom/android/providers/settings/SettingsProvider$SqlArguments;
 
@@ -2943,8 +2907,6 @@
 
 .method private sendNotify(Landroid/net/Uri;I)V
     .locals 14
-    .param p1    # Landroid/net/Uri;
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -3095,7 +3057,6 @@
 
 .method private startAsyncCachePopulation(I)V
     .locals 1
-    .param p1    # I
 
     new-instance v0, Lcom/android/providers/settings/SettingsProvider$CachePrefetchThread;
 
@@ -3110,8 +3071,6 @@
 # virtual methods
 .method public bulkInsert(Landroid/net/Uri;[Landroid/content/ContentValues;)I
     .locals 12
-    .param p1    # Landroid/net/Uri;
-    .param p2    # [Landroid/content/ContentValues;
 
     invoke-static {}, Landroid/os/UserHandle;->getCallingUserId()I
 
@@ -3254,8 +3213,6 @@
 
 .method public cacheForTable(ILjava/lang/String;)Lcom/android/providers/settings/SettingsProvider$SettingsCache;
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const-string v0, "system"
 
@@ -3312,9 +3269,6 @@
 
 .method public call(Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)Landroid/os/Bundle;
     .locals 12
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/os/Bundle;
 
     const/4 v4, 0x1
 
@@ -3583,9 +3537,6 @@
 
 .method public delete(Landroid/net/Uri;Ljava/lang/String;[Ljava/lang/String;)I
     .locals 9
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Ljava/lang/String;
-    .param p3    # [Ljava/lang/String;
 
     invoke-static {}, Landroid/os/UserHandle;->getCallingUserId()I
 
@@ -3690,7 +3641,6 @@
 
 .method public getType(Landroid/net/Uri;)Ljava/lang/String;
     .locals 3
-    .param p1    # Landroid/net/Uri;
 
     const/4 v1, 0x0
 
@@ -3755,8 +3705,6 @@
 
 .method public insert(Landroid/net/Uri;Landroid/content/ContentValues;)Landroid/net/Uri;
     .locals 1
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Landroid/content/ContentValues;
 
     invoke-static {}, Landroid/os/UserHandle;->getCallingUserId()I
 
@@ -3771,8 +3719,6 @@
 
 .method public invalidateCache(ILjava/lang/String;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p0, p1, p2}, Lcom/android/providers/settings/SettingsProvider;->cacheForTable(ILjava/lang/String;)Lcom/android/providers/settings/SettingsProvider$SettingsCache;
 
@@ -3922,7 +3868,6 @@
 
 .method onUserRemoved(I)V
     .locals 2
-    .param p1    # I
 
     monitor-enter p0
 
@@ -4096,8 +4041,6 @@
 
 .method public openFile(Landroid/net/Uri;Ljava/lang/String;)Landroid/os/ParcelFileDescriptor;
     .locals 5
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/FileNotFoundException;
@@ -4155,11 +4098,6 @@
 
 .method public query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
     .locals 7
-    .param p1    # Landroid/net/Uri;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # [Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
 
     invoke-static {}, Landroid/os/UserHandle;->getCallingUserId()I
 
@@ -4186,10 +4124,6 @@
 
 .method public update(Landroid/net/Uri;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)I
     .locals 9
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Landroid/content/ContentValues;
-    .param p3    # Ljava/lang/String;
-    .param p4    # [Ljava/lang/String;
 
     const/4 v2, 0x0
 

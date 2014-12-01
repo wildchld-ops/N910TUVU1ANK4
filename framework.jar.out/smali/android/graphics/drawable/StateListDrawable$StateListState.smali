@@ -21,9 +21,6 @@
 # direct methods
 .method constructor <init>(Landroid/graphics/drawable/StateListDrawable$StateListState;Landroid/graphics/drawable/StateListDrawable;Landroid/content/res/Resources;)V
     .locals 2
-    .param p1    # Landroid/graphics/drawable/StateListDrawable$StateListState;
-    .param p2    # Landroid/graphics/drawable/StateListDrawable;
-    .param p3    # Landroid/content/res/Resources;
 
     invoke-direct {p0, p1, p2, p3}, Landroid/graphics/drawable/DrawableContainer$DrawableContainerState;-><init>(Landroid/graphics/drawable/DrawableContainer$DrawableContainerState;Landroid/graphics/drawable/DrawableContainer;Landroid/content/res/Resources;)V
 
@@ -60,8 +57,6 @@
 
 .method static synthetic access$000(Landroid/graphics/drawable/StateListDrawable$StateListState;[I)I
     .locals 1
-    .param p0    # Landroid/graphics/drawable/StateListDrawable$StateListState;
-    .param p1    # [I
 
     invoke-direct {p0, p1}, Landroid/graphics/drawable/StateListDrawable$StateListState;->indexOfStateSet([I)I
 
@@ -72,7 +67,6 @@
 
 .method private indexOfStateSet([I)I
     .locals 4
-    .param p1    # [I
 
     iget-object v2, p0, Landroid/graphics/drawable/StateListDrawable$StateListState;->mStateSets:[[I
 
@@ -111,8 +105,6 @@
 # virtual methods
 .method addStateSet([ILandroid/graphics/drawable/Drawable;)I
     .locals 2
-    .param p1    # [I
-    .param p2    # Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {p0, p2}, Landroid/graphics/drawable/StateListDrawable$StateListState;->addChild(Landroid/graphics/drawable/Drawable;)I
 
@@ -127,8 +119,6 @@
 
 .method public growArray(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     const/4 v2, 0x0
 
@@ -159,7 +149,6 @@
 
 .method public newDrawable(Landroid/content/res/Resources;)Landroid/graphics/drawable/Drawable;
     .locals 2
-    .param p1    # Landroid/content/res/Resources;
 
     new-instance v0, Landroid/graphics/drawable/StateListDrawable;
 

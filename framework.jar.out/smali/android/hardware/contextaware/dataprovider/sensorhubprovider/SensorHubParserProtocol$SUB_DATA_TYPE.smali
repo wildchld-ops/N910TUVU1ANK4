@@ -186,7 +186,6 @@
 
 .method private constructor <init>(Ljava/lang/String;IB)V
     .locals 0
-    .param p3    # B
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(B)V"
@@ -202,7 +201,6 @@
 
 .method public static valueOf(Ljava/lang/String;)Landroid/hardware/contextaware/dataprovider/sensorhubprovider/SensorHubParserProtocol$SUB_DATA_TYPE;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-class v0, Landroid/hardware/contextaware/dataprovider/sensorhubprovider/SensorHubParserProtocol$SUB_DATA_TYPE;
 

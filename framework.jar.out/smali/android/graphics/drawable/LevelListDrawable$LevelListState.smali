@@ -23,9 +23,6 @@
 # direct methods
 .method constructor <init>(Landroid/graphics/drawable/LevelListDrawable$LevelListState;Landroid/graphics/drawable/LevelListDrawable;Landroid/content/res/Resources;)V
     .locals 1
-    .param p1    # Landroid/graphics/drawable/LevelListDrawable$LevelListState;
-    .param p2    # Landroid/graphics/drawable/LevelListDrawable;
-    .param p3    # Landroid/content/res/Resources;
 
     invoke-direct {p0, p1, p2, p3}, Landroid/graphics/drawable/DrawableContainer$DrawableContainerState;-><init>(Landroid/graphics/drawable/DrawableContainer$DrawableContainerState;Landroid/graphics/drawable/DrawableContainer;Landroid/content/res/Resources;)V
 
@@ -64,7 +61,6 @@
 
 .method static synthetic access$000(Landroid/graphics/drawable/LevelListDrawable$LevelListState;)[I
     .locals 1
-    .param p0    # Landroid/graphics/drawable/LevelListDrawable$LevelListState;
 
     iget-object v0, p0, Landroid/graphics/drawable/LevelListDrawable$LevelListState;->mLows:[I
 
@@ -73,8 +69,6 @@
 
 .method static synthetic access$002(Landroid/graphics/drawable/LevelListDrawable$LevelListState;[I)[I
     .locals 0
-    .param p0    # Landroid/graphics/drawable/LevelListDrawable$LevelListState;
-    .param p1    # [I
 
     iput-object p1, p0, Landroid/graphics/drawable/LevelListDrawable$LevelListState;->mLows:[I
 
@@ -83,7 +77,6 @@
 
 .method static synthetic access$100(Landroid/graphics/drawable/LevelListDrawable$LevelListState;)[I
     .locals 1
-    .param p0    # Landroid/graphics/drawable/LevelListDrawable$LevelListState;
 
     iget-object v0, p0, Landroid/graphics/drawable/LevelListDrawable$LevelListState;->mHighs:[I
 
@@ -92,8 +85,6 @@
 
 .method static synthetic access$102(Landroid/graphics/drawable/LevelListDrawable$LevelListState;[I)[I
     .locals 0
-    .param p0    # Landroid/graphics/drawable/LevelListDrawable$LevelListState;
-    .param p1    # [I
 
     iput-object p1, p0, Landroid/graphics/drawable/LevelListDrawable$LevelListState;->mHighs:[I
 
@@ -104,9 +95,6 @@
 # virtual methods
 .method public addLevel(IILandroid/graphics/drawable/Drawable;)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {p0, p3}, Landroid/graphics/drawable/DrawableContainer$DrawableContainerState;->addChild(Landroid/graphics/drawable/Drawable;)I
 
@@ -125,8 +113,6 @@
 
 .method public growArray(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     const/4 v2, 0x0
 
@@ -153,7 +139,6 @@
 
 .method public indexOfLevel(I)I
     .locals 5
-    .param p1    # I
 
     iget-object v3, p0, Landroid/graphics/drawable/LevelListDrawable$LevelListState;->mLows:[I
 
@@ -204,7 +189,6 @@
 
 .method public newDrawable(Landroid/content/res/Resources;)Landroid/graphics/drawable/Drawable;
     .locals 2
-    .param p1    # Landroid/content/res/Resources;
 
     new-instance v0, Landroid/graphics/drawable/LevelListDrawable;
 

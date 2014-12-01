@@ -24,7 +24,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -45,8 +44,6 @@
 
 .method private getGlobalBoolean(Ljava/lang/String;Z)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const/4 v1, 0x1
 
@@ -81,8 +78,6 @@
 
 .method private getGlobalLong(Ljava/lang/String;J)J
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
 
     iget-object v0, p0, Lcom/android/server/net/NetworkStatsService$DefaultNetworkStatsSettings;->mResolver:Landroid/content/ContentResolver;
 
@@ -131,7 +126,6 @@
 
 .method public getDevPersistBytes(J)J
     .locals 2
-    .param p1    # J
 
     const-string v0, "netstats_dev_persist_bytes"
 
@@ -144,7 +138,6 @@
 
 .method public getGlobalAlertBytes(J)J
     .locals 2
-    .param p1    # J
 
     const-string v0, "netstats_global_alert_bytes"
 
@@ -247,7 +240,6 @@
 
 .method public getUidPersistBytes(J)J
     .locals 2
-    .param p1    # J
 
     const-string v0, "netstats_uid_persist_bytes"
 
@@ -294,7 +286,6 @@
 
 .method public getUidTagPersistBytes(J)J
     .locals 2
-    .param p1    # J
 
     const-string v0, "netstats_uid_tag_persist_bytes"
 
@@ -317,7 +308,6 @@
 
 .method public getXtPersistBytes(J)J
     .locals 2
-    .param p1    # J
 
     invoke-virtual {p0, p1, p2}, Lcom/android/server/net/NetworkStatsService$DefaultNetworkStatsSettings;->getDevPersistBytes(J)J
 

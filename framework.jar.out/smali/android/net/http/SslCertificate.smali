@@ -50,10 +50,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -80,10 +76,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/util/Date;Ljava/util/Date;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/util/Date;
-    .param p4    # Ljava/util/Date;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -106,11 +98,6 @@
 
 .method private constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/util/Date;Ljava/util/Date;Ljava/security/cert/X509Certificate;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/util/Date;
-    .param p4    # Ljava/util/Date;
-    .param p5    # Ljava/security/cert/X509Certificate;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -145,7 +132,6 @@
 
 .method public constructor <init>(Ljava/security/cert/X509Certificate;)V
     .locals 6
-    .param p1    # Ljava/security/cert/X509Certificate;
 
     invoke-virtual {p1}, Ljava/security/cert/X509Certificate;->getSubjectDN()Ljava/security/Principal;
 
@@ -182,7 +168,6 @@
 
 .method private static cloneDate(Ljava/util/Date;)Ljava/util/Date;
     .locals 1
-    .param p0    # Ljava/util/Date;
 
     if-nez p0, :cond_0
 
@@ -203,7 +188,6 @@
 
 .method private static final fingerprint([B)Ljava/lang/String;
     .locals 5
-    .param p0    # [B
 
     if-nez p0, :cond_0
 
@@ -255,8 +239,6 @@
 
 .method private formatCertificateDate(Landroid/content/Context;Ljava/util/Date;)Ljava/lang/String;
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/util/Date;
 
     if-nez p2, :cond_0
 
@@ -279,7 +261,6 @@
 
 .method private static formatDate(Ljava/util/Date;)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/util/Date;
 
     if-nez p0, :cond_0
 
@@ -304,8 +285,6 @@
 
 .method private static getDigest(Ljava/security/cert/X509Certificate;Ljava/lang/String;)Ljava/lang/String;
     .locals 5
-    .param p0    # Ljava/security/cert/X509Certificate;
-    .param p1    # Ljava/lang/String;
 
     if-nez p0, :cond_0
 
@@ -354,7 +333,6 @@
 
 .method private static getSerialNumber(Ljava/security/cert/X509Certificate;)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/security/cert/X509Certificate;
 
     if-nez p0, :cond_0
 
@@ -388,7 +366,6 @@
 
 .method private static parseDate(Ljava/lang/String;)Ljava/util/Date;
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     :try_start_0
     new-instance v1, Ljava/text/SimpleDateFormat;
@@ -416,7 +393,6 @@
 
 .method public static restoreState(Landroid/os/Bundle;)Landroid/net/http/SslCertificate;
     .locals 11
-    .param p0    # Landroid/os/Bundle;
 
     if-nez p0, :cond_0
 
@@ -511,7 +487,6 @@
 
 .method public static saveState(Landroid/net/http/SslCertificate;)Landroid/os/Bundle;
     .locals 4
-    .param p0    # Landroid/net/http/SslCertificate;
 
     if-nez p0, :cond_1
 
@@ -661,7 +636,6 @@
 
 .method public inflateCertificateView(Landroid/content/Context;)Landroid/view/View;
     .locals 9
-    .param p1    # Landroid/content/Context;
 
     invoke-static {p1}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
 

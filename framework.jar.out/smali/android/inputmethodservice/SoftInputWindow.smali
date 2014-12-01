@@ -12,9 +12,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;ILandroid/view/KeyEvent$DispatcherState;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Landroid/view/KeyEvent$DispatcherState;
 
     invoke-direct {p0, p1, p2}, Landroid/app/Dialog;-><init>(Landroid/content/Context;I)V
 
@@ -81,7 +78,6 @@
 # virtual methods
 .method public dispatchTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 6
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual {p0}, Landroid/inputmethodservice/SoftInputWindow;->getWindow()Landroid/view/Window;
 
@@ -215,7 +211,6 @@
 
 .method public onWindowFocusChanged(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-super {p0, p1}, Landroid/app/Dialog;->onWindowFocusChanged(Z)V
 
@@ -228,7 +223,6 @@
 
 .method public setGravity(I)V
     .locals 9
-    .param p1    # I
 
     const/16 v8, 0x50
 
@@ -304,7 +298,6 @@
 
 .method public setSize(I)V
     .locals 4
-    .param p1    # I
 
     const/4 v3, -0x1
 
@@ -352,7 +345,6 @@
 
 .method public setToken(Landroid/os/IBinder;)V
     .locals 2
-    .param p1    # Landroid/os/IBinder;
 
     invoke-virtual {p0}, Landroid/inputmethodservice/SoftInputWindow;->getWindow()Landroid/view/Window;
 

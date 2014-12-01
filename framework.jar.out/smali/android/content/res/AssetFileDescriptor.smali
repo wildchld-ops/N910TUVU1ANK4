@@ -56,7 +56,6 @@
 
 .method constructor <init>(Landroid/os/Parcel;)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -107,9 +106,6 @@
 
 .method public constructor <init>(Landroid/os/ParcelFileDescriptor;JJ)V
     .locals 7
-    .param p1    # Landroid/os/ParcelFileDescriptor;
-    .param p2    # J
-    .param p4    # J
 
     const/4 v6, 0x0
 
@@ -128,10 +124,6 @@
 
 .method public constructor <init>(Landroid/os/ParcelFileDescriptor;JJLandroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/ParcelFileDescriptor;
-    .param p2    # J
-    .param p4    # J
-    .param p6    # Landroid/os/Bundle;
 
     const-wide/16 v1, 0x0
 
@@ -406,8 +398,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v0, p0, Landroid/content/res/AssetFileDescriptor;->mFd:Landroid/os/ParcelFileDescriptor;
 

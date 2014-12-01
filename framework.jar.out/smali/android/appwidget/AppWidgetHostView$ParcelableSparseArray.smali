@@ -63,7 +63,6 @@
 
 .method synthetic constructor <init>(Landroid/appwidget/AppWidgetHostView$1;)V
     .locals 0
-    .param p1    # Landroid/appwidget/AppWidgetHostView$1;
 
     invoke-direct {p0}, Landroid/appwidget/AppWidgetHostView$ParcelableSparseArray;-><init>()V
 
@@ -82,8 +81,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 4
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     invoke-virtual {p0}, Landroid/appwidget/AppWidgetHostView$ParcelableSparseArray;->size()I
 

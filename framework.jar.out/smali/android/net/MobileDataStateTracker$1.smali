@@ -33,7 +33,6 @@
 # virtual methods
 .method public onSignalStrengthsChanged(Landroid/telephony/SignalStrength;)V
     .locals 1
-    .param p1    # Landroid/telephony/SignalStrength;
 
     iget-object v0, p0, Landroid/net/MobileDataStateTracker$1;->this$0:Landroid/net/MobileDataStateTracker;
 

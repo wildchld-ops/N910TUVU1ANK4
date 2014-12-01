@@ -85,8 +85,6 @@
 
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;Lcom/sec/android/app/camera/subview/SubViewManager;)V
     .locals 1
-    .param p1    # Lcom/sec/android/app/camera/Camera;
-    .param p2    # Lcom/sec/android/app/camera/subview/SubViewManager;
 
     const/4 v0, 0x0
 
@@ -189,8 +187,6 @@
 
 .method private setOrder(Landroid/view/View;Z)V
     .locals 6
-    .param p1    # Landroid/view/View;
-    .param p2    # Z
 
     const/4 v0, 0x0
 
@@ -536,8 +532,6 @@
 
 .method public onCameraSettingsChanged(II)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     const/4 v3, 0x1
 
@@ -742,8 +736,6 @@
 
 .method public setBatteryLevel(IZ)V
     .locals 4
-    .param p1    # I
-    .param p2    # Z
 
     const/16 v3, 0x10
 
@@ -843,7 +835,6 @@
 
 .method public setFlashIndicator(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -919,7 +910,6 @@
 
 .method public setGPSIndicator(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/subview/SubViewBaseIndicators;->mGPSIndicator:Landroid/widget/ImageView;
 
@@ -967,7 +957,6 @@
 
 .method public setLowlightIndicator(I)V
     .locals 2
-    .param p1    # I
 
     const/4 v1, 0x4
 
@@ -1023,7 +1012,6 @@
 
 .method public setRecordingModeIndicator(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -1116,7 +1104,6 @@
 
 .method public setRemainCountIndicator(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/subview/SubViewBaseIndicators;->mRemainCountIndicator:Landroid/widget/TextView;
 
@@ -1161,7 +1148,6 @@
 
 .method public setStorageIndicator(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/subview/SubViewBaseIndicators;->mStorageIndicator:Landroid/widget/ImageView;
 
@@ -1209,7 +1195,6 @@
 
 .method public setTimerIndicator(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -1285,7 +1270,6 @@
 
 .method public setVoiceStatus(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -1533,7 +1517,6 @@
 
 .method public showVoiceInputIndicator(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/subview/SubViewBaseIndicators;->mVoiceIndicator:Landroid/widget/ImageView;
 

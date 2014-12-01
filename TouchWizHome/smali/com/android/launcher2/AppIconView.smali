@@ -166,7 +166,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -177,8 +176,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const v0, 0x1010084
 
@@ -189,9 +186,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 9
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const-wide/16 v7, 0x64
 
@@ -407,7 +401,6 @@
 
 .method static createDarkenColorFilter(F)Landroid/graphics/ColorFilter;
     .locals 4
-    .param p0    # F
 
     const/high16 v2, 0x3f800000
 
@@ -446,9 +439,6 @@
 
 .method private createGlowingOutline(Landroid/graphics/Canvas;II)Landroid/graphics/Bitmap;
     .locals 5
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # I
-    .param p3    # I
 
     sget v1, Lcom/android/launcher2/HolographicOutlineHelper;->MAX_OUTER_BLUR_RADIUS:I
 
@@ -487,8 +477,6 @@
 
 .method private drawWithPadding(Landroid/graphics/Canvas;I)V
     .locals 6
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # I
 
     const/high16 v5, 0x40000000
 
@@ -606,7 +594,6 @@
 
 .method public static getHomeIconLayout(Lcom/android/launcher2/BaseItem;)I
     .locals 1
-    .param p0    # Lcom/android/launcher2/BaseItem;
 
     iget-object v0, p0, Lcom/android/launcher2/BaseItem;->mIconMovie:Landroid/graphics/Movie;
 
@@ -625,8 +612,6 @@
 
 .method public static getTextViewStyle(Landroid/content/Context;I)Landroid/content/res/TypedArray;
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     sget-object v0, Lcom/android/launcher2/ShadowStyleable;->TextView:[I
 
@@ -639,8 +624,6 @@
 
 .method public static getViewStyle(Landroid/content/Context;I)Landroid/content/res/TypedArray;
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     sget-object v0, Lcom/android/launcher2/ShadowStyleable;->View:[I
 
@@ -683,7 +666,6 @@
 
 .method private isHotseatItem(Lcom/android/launcher2/BaseItem;)Z
     .locals 5
-    .param p1    # Lcom/android/launcher2/BaseItem;
 
     const/4 v0, 0x0
 
@@ -714,7 +696,6 @@
 
 .method private playCheckStatus(Z)V
     .locals 2
-    .param p1    # Z
 
     sget-object v1, Lcom/sec/dtl/launcher/Talk;->INSTANCE:Lcom/sec/dtl/launcher/Talk;
 
@@ -735,8 +716,6 @@
 
 .method public static recycleViewStyles(Landroid/content/res/TypedArray;Landroid/content/res/TypedArray;)V
     .locals 0
-    .param p0    # Landroid/content/res/TypedArray;
-    .param p1    # Landroid/content/res/TypedArray;
 
     invoke-virtual {p0}, Landroid/content/res/TypedArray;->recycle()V
 
@@ -747,8 +726,6 @@
 
 .method static setDarkenPaintMultiplier(FLandroid/graphics/Paint;)V
     .locals 1
-    .param p0    # F
-    .param p1    # Landroid/graphics/Paint;
 
     invoke-static {p0}, Lcom/android/launcher2/AppIconView;->createDarkenColorFilter(F)Landroid/graphics/ColorFilter;
 
@@ -840,7 +817,6 @@
 # virtual methods
 .method public applyBaseItem(Lcom/android/launcher2/BaseItem;)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/BaseItem;
 
     iget-object v0, p1, Lcom/android/launcher2/BaseItem;->mIconBitmap:Landroid/graphics/Bitmap;
 
@@ -851,8 +827,6 @@
 
 .method protected applyBaseItem(Lcom/android/launcher2/BaseItem;Landroid/graphics/Bitmap;)V
     .locals 13
-    .param p1    # Lcom/android/launcher2/BaseItem;
-    .param p2    # Landroid/graphics/Bitmap;
 
     invoke-virtual {p0, p1}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
 
@@ -1360,7 +1334,6 @@
 
 .method public applyStyle(I)V
     .locals 3
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
@@ -1383,8 +1356,6 @@
 
 .method public applyStyle(Landroid/content/res/TypedArray;Landroid/content/res/TypedArray;)V
     .locals 2
-    .param p1    # Landroid/content/res/TypedArray;
-    .param p2    # Landroid/content/res/TypedArray;
 
     invoke-static {p1, p0}, Lcom/android/launcher2/RotateHelper;->setViewAttributes(Landroid/content/res/TypedArray;Landroid/view/View;)V
 
@@ -1410,7 +1381,6 @@
 
 .method public createBadgeDrawable(I)Landroid/graphics/drawable/Drawable;
     .locals 22
-    .param p1    # I
 
     if-nez p1, :cond_0
 
@@ -1707,7 +1677,6 @@
 
 .method public dispatchDragEvent(Landroid/view/DragEvent;)Z
     .locals 3
-    .param p1    # Landroid/view/DragEvent;
 
     const/4 v2, 0x1
 
@@ -1760,7 +1729,6 @@
 
 .method public draw(Landroid/graphics/Canvas;)V
     .locals 0
-    .param p1    # Landroid/graphics/Canvas;
 
     invoke-static {p0, p1}, Lcom/android/launcher2/Utilities;->onViewDraw(Landroid/view/View;Landroid/graphics/Canvas;)V
 
@@ -1773,7 +1741,6 @@
 
 .method public drawIconOrText(Landroid/graphics/Canvas;)V
     .locals 22
-    .param p1    # Landroid/graphics/Canvas;
 
     invoke-virtual/range {p0 .. p0}, Landroid/view/View;->getScrollX()I
 
@@ -2135,7 +2102,6 @@
 
 .method protected drawShadow(Landroid/graphics/Canvas;)V
     .locals 7
-    .param p1    # Landroid/graphics/Canvas;
 
     const/high16 v6, 0x40000000
 
@@ -2757,7 +2723,6 @@
 
 .method protected onDraw(Landroid/graphics/Canvas;)V
     .locals 1
-    .param p1    # Landroid/graphics/Canvas;
 
     invoke-super {p0, p1}, Landroid/widget/TextView;->onDraw(Landroid/graphics/Canvas;)V
 
@@ -2787,7 +2752,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 7
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v6, 0x1
 
@@ -3067,7 +3031,6 @@
 
 .method protected onWindowVisibilityChanged(I)V
     .locals 3
-    .param p1    # I
 
     invoke-super {p0, p1}, Landroid/view/View;->onWindowVisibilityChanged(I)V
 
@@ -3166,7 +3129,6 @@
 
 .method public setChecked(Z)V
     .locals 1
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/launcher2/AppIconView;->mIsChecked:Z
 
@@ -3192,7 +3154,6 @@
 
 .method public setCheckingEnabled(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/launcher2/AppIconView;->mIsCheckingEnabled:Z
 
@@ -3205,7 +3166,6 @@
 
 .method public setDimAmount(F)V
     .locals 1
-    .param p1    # F
 
     const/4 v0, 0x0
 
@@ -3231,8 +3191,6 @@
 
 .method public setDimmed(ZZ)V
     .locals 6
-    .param p1    # Z
-    .param p2    # Z
 
     iget-boolean v5, p0, Lcom/android/launcher2/AppIconView;->mIsDimmed:Z
 
@@ -3316,9 +3274,6 @@
 
 .method public setDimmedBadge(ZZLandroid/graphics/ColorFilter;)V
     .locals 3
-    .param p1    # Z
-    .param p2    # Z
-    .param p3    # Landroid/graphics/ColorFilter;
 
     invoke-virtual {p0}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
@@ -3365,7 +3320,6 @@
 
 .method setDrawShadow(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/launcher2/AppIconView;->mDrawShadow:Z
 
@@ -3374,7 +3328,6 @@
 
 .method public setHotseatText(Lcom/android/launcher2/HomeItem;)V
     .locals 2
-    .param p1    # Lcom/android/launcher2/HomeItem;
 
     iget-boolean v0, p0, Lcom/android/launcher2/AppIconView;->mIsAttachedHotseat:Z
 
@@ -3424,8 +3377,6 @@
 
 .method public setIcon(Landroid/graphics/Bitmap;Z)V
     .locals 4
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # Z
 
     const/4 v3, 0x0
 
@@ -3485,7 +3436,6 @@
 
 .method public setIconMovie(Landroid/graphics/Movie;)V
     .locals 6
-    .param p1    # Landroid/graphics/Movie;
 
     const/4 v5, 0x0
 
@@ -3562,8 +3512,6 @@
 
 .method public setIconMovie(Landroid/graphics/Movie;Landroid/graphics/Bitmap;)V
     .locals 8
-    .param p1    # Landroid/graphics/Movie;
-    .param p2    # Landroid/graphics/Bitmap;
 
     const/4 v7, 0x1
 
@@ -3664,7 +3612,6 @@
 
 .method protected setIconShadow(Landroid/graphics/Bitmap;)V
     .locals 4
-    .param p1    # Landroid/graphics/Bitmap;
 
     iget-boolean v1, p0, Lcom/android/launcher2/AppIconView;->mIsAttachedHotseat:Z
 
@@ -3722,7 +3669,6 @@
 
 .method setIconShadow(Landroid/graphics/drawable/Drawable;)V
     .locals 0
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     iput-object p1, p0, Lcom/android/launcher2/AppIconView;->mIconShadowDrawable:Landroid/graphics/drawable/Drawable;
 
@@ -3733,8 +3679,6 @@
 
 .method public setLastTouchPoint(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/launcher2/AppIconView;->mLastTouch:[I
 
@@ -3753,7 +3697,6 @@
 
 .method public setOverlay(Landroid/graphics/drawable/Drawable;)V
     .locals 1
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     iget-object v0, p0, Lcom/android/launcher2/AppIconView;->mOverlay:Landroid/graphics/drawable/Drawable;
 
@@ -3769,7 +3712,6 @@
 
 .method public setTextAlpha(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/launcher2/AppIconView;->mPaint:Landroid/graphics/Paint;
 
@@ -3780,7 +3722,6 @@
 
 .method public setTextVisible(Z)V
     .locals 2
-    .param p1    # Z
 
     if-eqz p1, :cond_1
 

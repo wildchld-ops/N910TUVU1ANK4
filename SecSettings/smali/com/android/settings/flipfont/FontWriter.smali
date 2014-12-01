@@ -26,8 +26,6 @@
 
 .method private deleteFolder(Ljava/io/File;Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Ljava/io/File;
-    .param p2    # Ljava/lang/String;
 
     new-instance v3, Ljava/io/File;
 
@@ -76,9 +74,6 @@
 # virtual methods
 .method public copyFontFile(Ljava/io/File;Ljava/io/InputStream;Ljava/lang/String;)Z
     .locals 14
-    .param p1    # Ljava/io/File;
-    .param p2    # Ljava/io/InputStream;
-    .param p3    # Ljava/lang/String;
 
     move-object/from16 v9, p2
 
@@ -273,8 +268,6 @@
 
 .method public createFontDirectory(Landroid/content/Context;Ljava/lang/String;)Ljava/io/File;
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
 
     const/4 v3, 0x1
 
@@ -299,8 +292,6 @@
 
 .method public deleteFontDirectory(Landroid/content/Context;Ljava/lang/String;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
 
     const-string v4, "fonts"
 
@@ -350,9 +341,6 @@
 
 .method public writeLoc(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     :try_start_0
     new-instance v3, Ljava/lang/StringBuilder;

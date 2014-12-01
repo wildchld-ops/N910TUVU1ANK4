@@ -43,7 +43,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/AlarmManagerService$BroadcastStats;Landroid/util/Pair;)V
     .locals 0
-    .param p1    # Lcom/android/server/AlarmManagerService$BroadcastStats;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

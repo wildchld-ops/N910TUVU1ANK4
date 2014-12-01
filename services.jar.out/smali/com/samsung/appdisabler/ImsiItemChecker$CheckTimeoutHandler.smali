@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Lcom/samsung/appdisabler/ImsiItemChecker;Lcom/samsung/appdisabler/ImsiItemChecker$1;)V
     .locals 0
-    .param p1    # Lcom/samsung/appdisabler/ImsiItemChecker;
-    .param p2    # Lcom/samsung/appdisabler/ImsiItemChecker$1;
 
     invoke-direct {p0, p1}, Lcom/samsung/appdisabler/ImsiItemChecker$CheckTimeoutHandler;-><init>(Lcom/samsung/appdisabler/ImsiItemChecker;)V
 
@@ -43,7 +41,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 5
-    .param p1    # Landroid/os/Message;
 
     :try_start_0
     iget v3, p1, Landroid/os/Message;->what:I

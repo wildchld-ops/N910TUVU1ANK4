@@ -43,14 +43,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/pm/PackageManagerService;Landroid/net/Uri;Landroid/content/pm/IPackageInstallObserver;ILjava/lang/String;Landroid/content/pm/VerificationParams;Landroid/content/pm/ContainerEncryptionParams;Landroid/os/UserHandle;I)V
     .locals 1
-    .param p2    # Landroid/net/Uri;
-    .param p3    # Landroid/content/pm/IPackageInstallObserver;
-    .param p4    # I
-    .param p5    # Ljava/lang/String;
-    .param p6    # Landroid/content/pm/VerificationParams;
-    .param p7    # Landroid/content/pm/ContainerEncryptionParams;
-    .param p8    # Landroid/os/UserHandle;
-    .param p9    # I
 
     iput-object p1, p0, Lcom/android/server/pm/PackageManagerService$InstallParams;->this$0:Lcom/android/server/pm/PackageManagerService;
 
@@ -83,15 +75,6 @@
 
 .method constructor <init>(Lcom/android/server/pm/PackageManagerService;Landroid/net/Uri;Landroid/content/pm/IPackageInstallObserver;ILjava/lang/String;Ljava/lang/String;Landroid/content/pm/VerificationParams;Landroid/content/pm/ContainerEncryptionParams;Landroid/os/UserHandle;I)V
     .locals 1
-    .param p2    # Landroid/net/Uri;
-    .param p3    # Landroid/content/pm/IPackageInstallObserver;
-    .param p4    # I
-    .param p5    # Ljava/lang/String;
-    .param p6    # Ljava/lang/String;
-    .param p7    # Landroid/content/pm/VerificationParams;
-    .param p8    # Landroid/content/pm/ContainerEncryptionParams;
-    .param p9    # Landroid/os/UserHandle;
-    .param p10    # I
 
     iput-object p1, p0, Lcom/android/server/pm/PackageManagerService$InstallParams;->this$0:Lcom/android/server/pm/PackageManagerService;
 
@@ -122,8 +105,6 @@
 
 .method private installLocationPolicy(Landroid/content/pm/PackageInfoLite;I)I
     .locals 9
-    .param p1    # Landroid/content/pm/PackageInfoLite;
-    .param p2    # I
 
     const/4 v5, 0x2
 

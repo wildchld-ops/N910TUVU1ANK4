@@ -30,9 +30,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/settings/powersavingmode/PowerSavingDataServiceList;Landroid/content/Context;IILjava/util/List;)V
     .locals 0
-    .param p2    # Landroid/content/Context;
-    .param p3    # I
-    .param p4    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -56,9 +53,6 @@
 # virtual methods
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 9
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     iget-object v6, p0, Lcom/android/settings/powersavingmode/PowerSavingDataServiceList$AppListAdapter;->this$0:Lcom/android/settings/powersavingmode/PowerSavingDataServiceList;
 

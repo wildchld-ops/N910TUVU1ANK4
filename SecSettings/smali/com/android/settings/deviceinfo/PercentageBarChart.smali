@@ -31,8 +31,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v3, 0x1
 
@@ -83,9 +81,6 @@
 
 .method public static createEntry(IFI)Lcom/android/settings/deviceinfo/PercentageBarChart$Entry;
     .locals 2
-    .param p0    # I
-    .param p1    # F
-    .param p2    # I
 
     new-instance v0, Landroid/graphics/Paint;
 
@@ -108,7 +103,6 @@
 # virtual methods
 .method protected onDraw(Landroid/graphics/Canvas;)V
     .locals 20
-    .param p1    # Landroid/graphics/Canvas;
 
     invoke-super/range {p0 .. p1}, Landroid/view/View;->onDraw(Landroid/graphics/Canvas;)V
 
@@ -417,7 +411,6 @@
 
 .method public setBackgroundColor(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/settings/deviceinfo/PercentageBarChart;->mEmptyPaint:Landroid/graphics/Paint;
 

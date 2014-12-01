@@ -35,12 +35,6 @@
 # direct methods
 .method public constructor <init>(Landroid/widget/RemoteViews;IZIILandroid/graphics/PorterDuff$Mode;I)V
     .locals 1
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Landroid/graphics/PorterDuff$Mode;
-    .param p7    # I
 
     iput-object p1, p0, Landroid/widget/RemoteViews$SetDrawableParameters;->this$0:Landroid/widget/RemoteViews;
 
@@ -65,7 +59,6 @@
 
 .method public constructor <init>(Landroid/widget/RemoteViews;Landroid/os/Parcel;)V
     .locals 5
-    .param p2    # Landroid/os/Parcel;
 
     const/4 v4, 0x0
 
@@ -156,9 +149,6 @@
 # virtual methods
 .method public apply(Landroid/view/View;Landroid/view/ViewGroup;Landroid/widget/RemoteViews$OnClickHandler;)V
     .locals 6
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/widget/RemoteViews$OnClickHandler;
 
     const/4 v5, -0x1
 
@@ -249,8 +239,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 3
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     const/4 v1, 0x1
 

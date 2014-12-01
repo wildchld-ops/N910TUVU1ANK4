@@ -36,7 +36,6 @@
 # virtual methods
 .method public onMotionListener(Landroid/hardware/motion/MREvent;)V
     .locals 2
-    .param p1    # Landroid/hardware/motion/MREvent;
 
     invoke-virtual {p1}, Landroid/hardware/motion/MREvent;->getMotion()I
 

@@ -26,7 +26,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/mms/ui/MessageOptions;Ljava/lang/String;)V
     .locals 0
-    .param p2    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/mms/ui/MessageOptions$FileEndWithFilter;->this$0:Lcom/android/mms/ui/MessageOptions;
 
@@ -41,8 +40,6 @@
 # virtual methods
 .method public accept(Ljava/io/File;Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/io/File;
-    .param p2    # Ljava/lang/String;
 
     if-eqz p2, :cond_0
 

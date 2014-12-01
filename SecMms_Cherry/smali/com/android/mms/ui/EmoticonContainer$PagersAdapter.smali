@@ -48,7 +48,6 @@
 
 .method private getPage(I)Landroid/view/View;
     .locals 2
-    .param p1    # I
 
     new-instance v0, Lcom/android/mms/ui/EmoticonCustomView;
 
@@ -104,9 +103,6 @@
 # virtual methods
 .method public destroyItem(Landroid/view/View;ILjava/lang/Object;)V
     .locals 0
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # Ljava/lang/Object;
 
     check-cast p1, Landroid/support/v4/view/ViewPager;
 
@@ -119,7 +115,6 @@
 
 .method public finishUpdate(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     sget v1, Lcom/android/mms/ui/EmoticonContainer;->mEmoticonCategory:I
 
@@ -167,7 +162,6 @@
 
 .method public getItemPosition(Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     const/4 v0, -0x2
 
@@ -176,8 +170,6 @@
 
 .method public instantiateItem(Landroid/view/View;I)Ljava/lang/Object;
     .locals 7
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     const/4 v3, 0x0
 
@@ -304,8 +296,6 @@
 
 .method public isViewFromObject(Landroid/view/View;Ljava/lang/Object;)Z
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Ljava/lang/Object;
 
     if-ne p1, p2, :cond_0
 

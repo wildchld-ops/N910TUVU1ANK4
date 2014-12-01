@@ -35,7 +35,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -52,7 +51,6 @@
 
 .method private loadGlobalKeys(Landroid/content/Context;)V
     .locals 10
-    .param p1    # Landroid/content/Context;
 
     const/4 v5, 0x0
 
@@ -225,9 +223,6 @@
 # virtual methods
 .method handleGlobalKey(Landroid/content/Context;ILandroid/view/KeyEvent;)Z
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Landroid/view/KeyEvent;
 
     iget-object v2, p0, Lcom/android/internal/policy/impl/GlobalKeyManager;->mKeyMapping:Landroid/util/SparseArray;
 
@@ -282,8 +277,6 @@
 
 .method shouldHandleGlobalKey(ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/GlobalKeyManager;->mKeyMapping:Landroid/util/SparseArray;
 

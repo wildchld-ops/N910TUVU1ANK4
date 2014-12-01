@@ -70,8 +70,6 @@
 
 .method synthetic constructor <init>(Landroid/widget/Editor$SuggestionsPopupWindow;Landroid/widget/Editor$1;)V
     .locals 0
-    .param p1    # Landroid/widget/Editor$SuggestionsPopupWindow;
-    .param p2    # Landroid/widget/Editor$1;
 
     invoke-direct {p0, p1}, Landroid/widget/Editor$SuggestionsPopupWindow$SuggestionInfo;-><init>(Landroid/widget/Editor$SuggestionsPopupWindow;)V
 

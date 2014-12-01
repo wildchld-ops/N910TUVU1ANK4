@@ -69,7 +69,6 @@
 
 .method static synthetic access$002(Landroid/widget/Button;)Landroid/widget/Button;
     .locals 0
-    .param p0    # Landroid/widget/Button;
 
     sput-object p0, Lcom/android/settings/bluetooth/BluetoothScanDialog;->mScanBtn:Landroid/widget/Button;
 
@@ -152,7 +151,6 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
@@ -213,7 +211,6 @@
 
 .method protected onPostCreate(Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onPostCreate(Landroid/os/Bundle;)V
 

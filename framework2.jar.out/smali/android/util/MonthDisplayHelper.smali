@@ -18,8 +18,6 @@
 # direct methods
 .method public constructor <init>(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x1
 
@@ -30,9 +28,6 @@
 
 .method public constructor <init>(III)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v3, 0x1
 
@@ -162,7 +157,6 @@
 # virtual methods
 .method public getColumnOf(I)I
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/util/MonthDisplayHelper;->mOffset:I
 
@@ -177,8 +171,6 @@
 
 .method public getDayAt(II)I
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     if-nez p1, :cond_1
 
@@ -224,7 +216,6 @@
 
 .method public getDigitsForRow(I)[I
     .locals 5
-    .param p1    # I
 
     const/4 v3, 0x7
 
@@ -333,7 +324,6 @@
 
 .method public getRowOf(I)I
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/util/MonthDisplayHelper;->mOffset:I
 
@@ -370,8 +360,6 @@
 
 .method public isWithinCurrentMonth(II)Z
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     const/4 v1, 0x0
 

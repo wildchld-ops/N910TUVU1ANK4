@@ -27,10 +27,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/am/ActivityRecord;Lcom/android/server/am/ActivityRecord;ILcom/android/server/am/ActivityStack;)V
     .locals 0
-    .param p1    # Lcom/android/server/am/ActivityRecord;
-    .param p2    # Lcom/android/server/am/ActivityRecord;
-    .param p3    # I
-    .param p4    # Lcom/android/server/am/ActivityStack;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

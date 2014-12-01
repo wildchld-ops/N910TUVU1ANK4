@@ -29,7 +29,6 @@
 
 .method static synthetic access$000(Lcom/android/incallui/AnswerCoverFragment;)Landroid/widget/ImageView;
     .locals 1
-    .param p0    # Lcom/android/incallui/AnswerCoverFragment;
 
     iget-object v0, p0, Lcom/android/incallui/AnswerCoverFragment;->mRejectCallWithMsgOpenIcon:Landroid/widget/ImageView;
 
@@ -38,8 +37,6 @@
 
 .method static synthetic access$100(Lcom/android/incallui/AnswerCoverFragment;Z)V
     .locals 0
-    .param p0    # Lcom/android/incallui/AnswerCoverFragment;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/incallui/AnswerCoverFragment;->setDrawerDescription(Z)V
 
@@ -48,7 +45,6 @@
 
 .method private setDrawerDescription(Z)V
     .locals 4
-    .param p1    # Z
 
     const/4 v0, 0x0
 
@@ -203,9 +199,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 3
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const-string v1, "onCreateView..."
 
@@ -283,7 +276,6 @@
 
 .method protected onFinishInflate(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     const v0, 0x7f0e001e
 
@@ -373,8 +365,6 @@
 
 .method public onGrabbedStateChange(Landroid/view/View;I)V
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     packed-switch p2, :pswitch_data_0
 
@@ -405,8 +395,6 @@
 
 .method public onTrigger(Landroid/view/View;I)V
     .locals 8
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     const v7, 0x7f0202fe
 
@@ -730,7 +718,6 @@
 
 .method public rejectCallWithMessage(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Lcom/android/incallui/BaseFragment;->getPresenter()Lcom/android/incallui/Presenter;
 
@@ -797,7 +784,6 @@
 
 .method public showAnswerUi(Z)V
     .locals 2
-    .param p1    # Z
 
     invoke-super {p0, p1}, Lcom/android/incallui/AnswerFragment;->showAnswerUi(Z)V
 
@@ -888,7 +874,6 @@
 
 .method public showRejectCallWithMessage(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/incallui/AnswerCoverFragment;->mRejectCallWithMsgDrawer:Landroid/widget/SlidingDrawer;
 
@@ -914,7 +899,6 @@
 
 .method public startAirMotionAnimation(Lcom/android/incallui/widget/incomingwidget/IncomingCallImageHandle$HandleState;)V
     .locals 1
-    .param p1    # Lcom/android/incallui/widget/incomingwidget/IncomingCallImageHandle$HandleState;
 
     iget-object v0, p0, Lcom/android/incallui/AnswerCoverFragment;->mIncomingCallImageWidget:Lcom/android/incallui/widget/incomingwidget/IncomingCallImageWidget;
 

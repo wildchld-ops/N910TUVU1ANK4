@@ -14,9 +14,6 @@
 # direct methods
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;II)V
     .locals 0
-    .param p1    # Lcom/sec/android/app/camera/Camera;
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0, p2, p3}, Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;-><init>(II)V
 
@@ -107,7 +104,6 @@
 
 .method public resetOrder(Ljava/lang/String;)V
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     const/4 v7, 0x0
 

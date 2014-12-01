@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Lcom/android/incallui/CallCardVideoFragment;Lcom/android/incallui/CallCardVideoFragment$1;)V
     .locals 0
-    .param p1    # Lcom/android/incallui/CallCardVideoFragment;
-    .param p2    # Lcom/android/incallui/CallCardVideoFragment$1;
 
     invoke-direct {p0, p1}, Lcom/android/incallui/CallCardVideoFragment$CameraPreviewDragListener;-><init>(Lcom/android/incallui/CallCardVideoFragment;)V
 
@@ -46,8 +44,6 @@
 # virtual methods
 .method public onDrag(Landroid/view/View;Landroid/view/DragEvent;)Z
     .locals 9
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/DragEvent;
 
     const/high16 v8, 0x3f800000
 

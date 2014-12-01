@@ -23,7 +23,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/mms/transaction/NotificationPlayer;Lcom/android/mms/transaction/NotificationPlayer$Command;)V
     .locals 0
-    .param p2    # Lcom/android/mms/transaction/NotificationPlayer$Command;
 
     iput-object p1, p0, Lcom/android/mms/transaction/NotificationPlayer$CreationAndCompletionThread;->this$0:Lcom/android/mms/transaction/NotificationPlayer;
 

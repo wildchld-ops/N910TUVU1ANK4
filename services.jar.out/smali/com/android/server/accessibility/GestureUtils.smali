@@ -14,9 +14,6 @@
 
 .method public static computeDistance(Landroid/view/MotionEvent;Landroid/view/MotionEvent;I)D
     .locals 4
-    .param p0    # Landroid/view/MotionEvent;
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # I
 
     invoke-virtual {p0, p2}, Landroid/view/MotionEvent;->getX(I)F
 
@@ -45,11 +42,6 @@
 
 .method private static eventsWithinTimeAndDistanceSlop(Landroid/view/MotionEvent;Landroid/view/MotionEvent;III)Z
     .locals 5
-    .param p0    # Landroid/view/MotionEvent;
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/4 v2, 0x0
 
@@ -81,15 +73,6 @@
 
 .method public static isDraggingGesture(FFFFFFFFF)Z
     .locals 13
-    .param p0    # F
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # F
-    .param p7    # F
-    .param p8    # F
 
     sub-float v1, p4, p0
 
@@ -240,11 +223,6 @@
 
 .method public static isMultiTap(Landroid/view/MotionEvent;Landroid/view/MotionEvent;III)Z
     .locals 1
-    .param p0    # Landroid/view/MotionEvent;
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-static {p0, p1, p2, p3, p4}, Lcom/android/server/accessibility/GestureUtils;->eventsWithinTimeAndDistanceSlop(Landroid/view/MotionEvent;Landroid/view/MotionEvent;III)Z
 
@@ -255,8 +233,6 @@
 
 .method public static isSamePointerContext(Landroid/view/MotionEvent;Landroid/view/MotionEvent;)Z
     .locals 2
-    .param p0    # Landroid/view/MotionEvent;
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual {p0}, Landroid/view/MotionEvent;->getPointerIdBits()I
 
@@ -299,11 +275,6 @@
 
 .method public static isTap(Landroid/view/MotionEvent;Landroid/view/MotionEvent;III)Z
     .locals 1
-    .param p0    # Landroid/view/MotionEvent;
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-static {p0, p1, p2, p3, p4}, Lcom/android/server/accessibility/GestureUtils;->eventsWithinTimeAndDistanceSlop(Landroid/view/MotionEvent;Landroid/view/MotionEvent;III)Z
 
@@ -314,9 +285,6 @@
 
 .method public static isTimedOut(Landroid/view/MotionEvent;Landroid/view/MotionEvent;I)Z
     .locals 6
-    .param p0    # Landroid/view/MotionEvent;
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # I
 
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getEventTime()J
 

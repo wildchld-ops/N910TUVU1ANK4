@@ -14,8 +14,6 @@
 
 .method private commitText(Landroid/view/inputmethod/InputConnection;Ljava/lang/CharSequence;)V
     .locals 3
-    .param p1    # Landroid/view/inputmethod/InputConnection;
-    .param p2    # Ljava/lang/CharSequence;
 
     if-eqz p1, :cond_1
 
@@ -90,7 +88,6 @@
 
 .method private getConvertTabletCjiKeyCode(I)I
     .locals 1
-    .param p1    # I
 
     neg-int v0, p1
 
@@ -103,7 +100,6 @@
 
 .method public static isConsonant(I)Z
     .locals 1
-    .param p0    # I
 
     const/16 v0, 0x3131
 
@@ -126,7 +122,6 @@
 
 .method private isTabletCjiKeyCode(I)Z
     .locals 1
-    .param p1    # I
 
     const/16 v0, -0x1f5
 
@@ -410,8 +405,6 @@
 
 .method private processMultiTap(I[I)V
     .locals 20
-    .param p1    # I
-    .param p2    # [I
 
     move-object/from16 v0, p0
 
@@ -1301,8 +1294,6 @@
 
 .method private processSingleTap(I[I)V
     .locals 10
-    .param p1    # I
-    .param p2    # [I
 
     const/4 v9, 0x1
 
@@ -1491,8 +1482,6 @@
 
 .method private processWordSeparator(I[I)V
     .locals 11
-    .param p1    # I
-    .param p2    # [I
 
     const/16 v10, 0x20
 
@@ -1768,10 +1757,6 @@
 
 .method public initInputEngineAndComposing(IIII)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     if-ne p3, p4, :cond_0
 
@@ -1808,8 +1793,6 @@
 
 .method public onCharacterKey(I[I)V
     .locals 9
-    .param p1    # I
-    .param p2    # [I
 
     const/4 v8, 0x1
 
@@ -1948,17 +1931,12 @@
 
 .method public onHwrPanelLongPressed(ILjava/lang/String;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method public onHwrTouchDown(IIJ)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
 
     const/4 v0, 0x0
 
@@ -1967,9 +1945,6 @@
 
 .method public onHwrTouchMove(IIJ)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
 
     const/4 v0, 0x0
 
@@ -1978,9 +1953,6 @@
 
 .method public onHwrTouchUp(IIJ)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
 
     const/4 v0, 0x0
 
@@ -1989,7 +1961,6 @@
 
 .method public onText(Ljava/lang/CharSequence;)V
     .locals 4
-    .param p1    # Ljava/lang/CharSequence;
 
     iget-object v2, p0, Lcom/diotek/ime/framework/input/AbstractInputModule;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -2066,8 +2037,6 @@
 
 .method public pickSuggestionManually(ILjava/lang/CharSequence;)V
     .locals 11
-    .param p1    # I
-    .param p2    # Ljava/lang/CharSequence;
 
     iget-object v7, p0, Lcom/diotek/ime/framework/input/AbstractInputModule;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -2258,8 +2227,6 @@
 
 .method protected processSymbolicKey(I[I)V
     .locals 9
-    .param p1    # I
-    .param p2    # [I
 
     const/16 v8, 0x20
 

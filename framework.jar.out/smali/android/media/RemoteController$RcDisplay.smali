@@ -30,7 +30,6 @@
 # direct methods
 .method constructor <init>(Landroid/media/RemoteController;)V
     .locals 1
-    .param p1    # Landroid/media/RemoteController;
 
     invoke-direct {p0}, Landroid/media/IRemoteControlDisplay$Stub;-><init>()V
 
@@ -47,9 +46,6 @@
 # virtual methods
 .method public setAllMetadata(ILandroid/os/Bundle;Landroid/graphics/Bitmap;)V
     .locals 8
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
-    .param p3    # Landroid/graphics/Bitmap;
 
     const/4 v4, 0x0
 
@@ -150,8 +146,6 @@
 
 .method public setArtwork(ILandroid/graphics/Bitmap;)V
     .locals 8
-    .param p1    # I
-    .param p2    # Landroid/graphics/Bitmap;
 
     const/4 v4, 0x0
 
@@ -238,9 +232,6 @@
 
 .method public setCommandToDisplay(III)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const-string v0, "RemoteController"
 
@@ -253,9 +244,6 @@
 
 .method public setCurrentClientId(ILandroid/app/PendingIntent;Z)V
     .locals 11
-    .param p1    # I
-    .param p2    # Landroid/app/PendingIntent;
-    .param p3    # Z
 
     const/4 v1, 0x0
 
@@ -370,7 +358,6 @@
 
 .method public setEnabled(Z)V
     .locals 8
-    .param p1    # Z
 
     const/4 v2, 0x0
 
@@ -419,8 +406,6 @@
 
 .method public setMetadata(ILandroid/os/Bundle;)V
     .locals 8
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     const/4 v4, 0x0
 
@@ -498,11 +483,6 @@
 
 .method public setPlaybackState(IIJJF)V
     .locals 9
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
-    .param p5    # J
-    .param p7    # F
 
     iget-object v1, p0, Landroid/media/RemoteController$RcDisplay;->mController:Ljava/lang/ref/WeakReference;
 
@@ -589,9 +569,6 @@
 
 .method public setTransportControlInfo(III)V
     .locals 8
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v2, 0x0
 

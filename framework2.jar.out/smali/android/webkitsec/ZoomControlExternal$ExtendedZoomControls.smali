@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -66,9 +65,6 @@
 
 .method private fade(IFF)V
     .locals 3
-    .param p1    # I
-    .param p2    # F
-    .param p3    # F
 
     new-instance v0, Landroid/view/animation/AlphaAnimation;
 
@@ -115,7 +111,6 @@
 
 .method public setOnZoomInClickListener(Landroid/view/View$OnClickListener;)V
     .locals 1
-    .param p1    # Landroid/view/View$OnClickListener;
 
     iget-object v0, p0, Landroid/webkitsec/ZoomControlExternal$ExtendedZoomControls;->mPlusMinusZoomControls:Landroid/widget/ZoomControls;
 
@@ -126,7 +121,6 @@
 
 .method public setOnZoomOutClickListener(Landroid/view/View$OnClickListener;)V
     .locals 1
-    .param p1    # Landroid/view/View$OnClickListener;
 
     iget-object v0, p0, Landroid/webkitsec/ZoomControlExternal$ExtendedZoomControls;->mPlusMinusZoomControls:Landroid/widget/ZoomControls;
 
@@ -137,7 +131,6 @@
 
 .method public show(Z)V
     .locals 3
-    .param p1    # Z
 
     const/4 v1, 0x0
 

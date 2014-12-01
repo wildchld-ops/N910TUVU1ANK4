@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Landroid/hardware/display/DisplayManagerGlobal;Landroid/hardware/display/DisplayManagerGlobal$1;)V
     .locals 0
-    .param p1    # Landroid/hardware/display/DisplayManagerGlobal;
-    .param p2    # Landroid/hardware/display/DisplayManagerGlobal$1;
 
     invoke-direct {p0, p1}, Landroid/hardware/display/DisplayManagerGlobal$DisplayManagerCallback;-><init>(Landroid/hardware/display/DisplayManagerGlobal;)V
 
@@ -43,8 +41,6 @@
 # virtual methods
 .method public onDisplayEvent(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Landroid/hardware/display/DisplayManagerGlobal$DisplayManagerCallback;->this$0:Landroid/hardware/display/DisplayManagerGlobal;
 

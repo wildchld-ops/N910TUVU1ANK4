@@ -127,10 +127,6 @@
 
 .method private chainCommandPart(Ljava/lang/String;Ljava/lang/String;ILcom/android/server/enterprise/firewall/FirewallRuleAction;)Ljava/util/List;
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Lcom/android/server/enterprise/firewall/FirewallRuleAction;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -415,7 +411,6 @@
 
 .method private checkUidForChain(I)Z
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -534,8 +529,6 @@
 
 .method private ipCommandPart(Ljava/lang/String;Ljava/lang/String;)Ljava/util/List;
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -710,7 +703,6 @@
 
 .method private jumpCommandPart(Lcom/android/server/enterprise/firewall/FirewallRuleAction;)Ljava/util/List;
     .locals 5
-    .param p1    # Lcom/android/server/enterprise/firewall/FirewallRuleAction;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -961,8 +953,6 @@
 
 .method private networkInterfaceCommandPart(Ljava/lang/String;Ljava/lang/String;)Ljava/util/List;
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1127,9 +1117,6 @@
 
 .method private portCommandPart(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/util/List;
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1441,10 +1428,6 @@
 
 .method private protocolAndPortCommandPart(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/util/List;
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1595,7 +1578,6 @@
 
 .method private protocolCommandPart(Ljava/lang/String;)Ljava/util/List;
     .locals 2
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1671,9 +1653,6 @@
 
 .method private uidCommandPart(ILjava/lang/String;Lcom/android/server/enterprise/firewall/FirewallRuleAction;)Ljava/util/List;
     .locals 4
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/android/server/enterprise/firewall/FirewallRuleAction;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -1851,7 +1830,6 @@
 # virtual methods
 .method public createIptCommands(Lcom/android/server/enterprise/firewall/FirewallRule;)Ljava/util/List;
     .locals 7
-    .param p1    # Lcom/android/server/enterprise/firewall/FirewallRule;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

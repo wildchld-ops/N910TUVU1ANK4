@@ -30,13 +30,6 @@
 # virtual methods
 .method public matches(Lcom/android/server/firewall/IntentFirewall;Landroid/content/ComponentName;Landroid/content/Intent;IILjava/lang/String;I)Z
     .locals 1
-    .param p1    # Lcom/android/server/firewall/IntentFirewall;
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # Landroid/content/Intent;
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Ljava/lang/String;
-    .param p7    # I
 
     invoke-static {p4, p5}, Lcom/android/server/firewall/SenderFilter;->isPrivilegedApp(II)Z
 

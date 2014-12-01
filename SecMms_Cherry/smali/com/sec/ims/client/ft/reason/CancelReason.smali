@@ -427,7 +427,6 @@
 
 .method private constructor <init>(Ljava/lang/String;II)V
     .locals 0
-    .param p3    # I
 
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
@@ -438,7 +437,6 @@
 
 .method public static valueOf(I)Lcom/sec/ims/client/ft/reason/CancelReason;
     .locals 4
-    .param p0    # I
 
     const/4 v0, 0x0
 

@@ -282,7 +282,7 @@
 
     const/4 v5, 0x4
 
-    invoke-virtual {v4, v5}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v4, v5}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
     iget-object v0, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mArrowImageViews:[Landroid/widget/ImageView;
 
@@ -295,7 +295,7 @@
 
     aget-object v2, v0, v1
 
-    invoke-virtual {v2}, Landroid/view/View;->clearAnimation()V
+    invoke-virtual {v2}, Landroid/widget/ImageView;->clearAnimation()V
 
     add-int/lit8 v1, v1, 0x1
 
@@ -386,7 +386,7 @@
 
     iget-object v5, p0, Lcom/android/phone/IncomingCallWidget$Handle;->this$0:Lcom/android/phone/IncomingCallWidget;
 
-    invoke-virtual {v5}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {v5}, Lcom/android/phone/IncomingCallWidget;->getResources()Landroid/content/res/Resources;
 
     move-result-object v5
 
@@ -425,7 +425,7 @@
 
     iget-object v6, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mTab:Landroid/widget/ImageView;
 
-    invoke-virtual {v5, v6, v2}, Landroid/view/ViewGroup;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
+    invoke-virtual {v5, v6, v2}, Landroid/widget/FrameLayout;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
     iget v5, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mHandleType:I
 
@@ -457,7 +457,7 @@
 
     const v6, 0x7f0201c7
 
-    invoke-virtual {v5, v6}, Landroid/view/View;->setBackgroundResource(I)V
+    invoke-virtual {v5, v6}, Landroid/widget/ImageView;->setBackgroundResource(I)V
 
     :goto_0
     iget-object v5, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mContext:Landroid/content/Context;
@@ -505,13 +505,13 @@
     :goto_2
     iget-object v5, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mTabCircle:Lcom/android/phone/IncomingCallWidget$Handle$TabCircle;
 
-    invoke-virtual {v5, v11}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v5, v11}, Lcom/android/phone/IncomingCallWidget$Handle$TabCircle;->setVisibility(I)V
 
     iget-object v5, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mContainer:Landroid/widget/FrameLayout;
 
     iget-object v6, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mTabCircle:Lcom/android/phone/IncomingCallWidget$Handle$TabCircle;
 
-    invoke-virtual {v5, v6, v2}, Landroid/view/ViewGroup;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
+    invoke-virtual {v5, v6, v2}, Landroid/widget/FrameLayout;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
     iget-object v5, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mContainer:Landroid/widget/FrameLayout;
 
@@ -533,17 +533,17 @@
 
     const/4 v6, 0x4
 
-    invoke-virtual {v5, v6}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v5, v6}, Lcom/android/phone/IncomingCallWidget$Handle$TargetCircle;->setVisibility(I)V
 
     iget-object v5, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mContainer:Landroid/widget/FrameLayout;
 
     iget-object v6, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mTargetCircle:Lcom/android/phone/IncomingCallWidget$Handle$TargetCircle;
 
-    invoke-virtual {v5, v6, v2}, Landroid/view/ViewGroup;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
+    invoke-virtual {v5, v6, v2}, Landroid/widget/FrameLayout;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
     iget-object v5, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mContainer:Landroid/widget/FrameLayout;
 
-    invoke-virtual {v5, v0}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+    invoke-virtual {v5, v0}, Landroid/widget/FrameLayout;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
     iget-object v5, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mParent:Landroid/view/ViewGroup;
 
@@ -581,7 +581,7 @@
 
     iget-object v5, p0, Lcom/android/phone/IncomingCallWidget$Handle;->this$0:Lcom/android/phone/IncomingCallWidget;
 
-    invoke-virtual {v5}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {v5}, Lcom/android/phone/IncomingCallWidget;->getResources()Landroid/content/res/Resources;
 
     move-result-object v5
 
@@ -641,7 +641,7 @@
 
     iget-object v5, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mIncomingCircleDescription:Landroid/widget/TextView;
 
-    invoke-virtual {v5, v3}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+    invoke-virtual {v5, v3}, Landroid/widget/TextView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
     iget-object v5, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mParent:Landroid/view/ViewGroup;
 
@@ -664,19 +664,19 @@
 
     move-result-object v6
 
-    invoke-virtual {v5, v6}, Landroid/view/View;->setContentDescription(Ljava/lang/CharSequence;)V
+    invoke-virtual {v5, v6}, Landroid/widget/ImageView;->setContentDescription(Ljava/lang/CharSequence;)V
 
     iget-object v5, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mTab:Landroid/widget/ImageView;
 
-    invoke-virtual {v5, v8}, Landroid/view/View;->setFocusableInTouchMode(Z)V
+    invoke-virtual {v5, v8}, Landroid/widget/ImageView;->setFocusableInTouchMode(Z)V
 
     iget-object v5, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mTab:Landroid/widget/ImageView;
 
-    invoke-virtual {v5, v8}, Landroid/view/View;->setFocusable(Z)V
+    invoke-virtual {v5, v8}, Landroid/widget/ImageView;->setFocusable(Z)V
 
     iget-object v5, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mTab:Landroid/widget/ImageView;
 
-    invoke-virtual {v5, v8}, Landroid/view/View;->setClickable(Z)V
+    invoke-virtual {v5, v8}, Landroid/widget/ImageView;->setClickable(Z)V
 
     :cond_4
     :goto_4
@@ -687,7 +687,7 @@
 
     const v6, 0x7f0201c4
 
-    invoke-virtual {v5, v6}, Landroid/view/View;->setBackgroundResource(I)V
+    invoke-virtual {v5, v6}, Landroid/widget/ImageView;->setBackgroundResource(I)V
 
     goto/16 :goto_0
 
@@ -722,7 +722,7 @@
 
     const v6, 0x7f0201c5
 
-    invoke-virtual {v5, v6}, Landroid/view/View;->setBackgroundResource(I)V
+    invoke-virtual {v5, v6}, Landroid/widget/ImageView;->setBackgroundResource(I)V
 
     :goto_5
     iget-object v5, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mContext:Landroid/content/Context;
@@ -746,7 +746,7 @@
 
     const v6, 0x7f0201c6
 
-    invoke-virtual {v5, v6}, Landroid/view/View;->setBackgroundResource(I)V
+    invoke-virtual {v5, v6}, Landroid/widget/ImageView;->setBackgroundResource(I)V
 
     goto :goto_5
 
@@ -810,19 +810,19 @@
 
     move-result-object v6
 
-    invoke-virtual {v5, v6}, Landroid/view/View;->setContentDescription(Ljava/lang/CharSequence;)V
+    invoke-virtual {v5, v6}, Landroid/widget/ImageView;->setContentDescription(Ljava/lang/CharSequence;)V
 
     iget-object v5, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mTab:Landroid/widget/ImageView;
 
-    invoke-virtual {v5, v8}, Landroid/view/View;->setFocusableInTouchMode(Z)V
+    invoke-virtual {v5, v8}, Landroid/widget/ImageView;->setFocusableInTouchMode(Z)V
 
     iget-object v5, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mTab:Landroid/widget/ImageView;
 
-    invoke-virtual {v5, v8}, Landroid/view/View;->setFocusable(Z)V
+    invoke-virtual {v5, v8}, Landroid/widget/ImageView;->setFocusable(Z)V
 
     iget-object v5, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mTab:Landroid/widget/ImageView;
 
-    invoke-virtual {v5, v8}, Landroid/view/View;->setClickable(Z)V
+    invoke-virtual {v5, v8}, Landroid/widget/ImageView;->setClickable(Z)V
 
     goto/16 :goto_4
 .end method
@@ -840,7 +840,7 @@
 
     const-wide/16 v1, 0x384
 
-    invoke-virtual {v0, v1, v2}, Landroid/view/animation/Animation;->setDuration(J)V
+    invoke-virtual {v0, v1, v2}, Landroid/view/animation/AlphaAnimation;->setDuration(J)V
 
     iget-object v1, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mContext:Landroid/content/Context;
 
@@ -850,7 +850,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Landroid/view/animation/Animation;->setInterpolator(Landroid/view/animation/Interpolator;)V
+    invoke-virtual {v0, v1}, Landroid/view/animation/AlphaAnimation;->setInterpolator(Landroid/view/animation/Interpolator;)V
 
     return-object v0
 .end method
@@ -968,7 +968,7 @@
 
     invoke-direct {v9, v10}, Landroid/view/View;-><init>(Landroid/content/Context;)V
 
-    invoke-virtual {v8, v9, v7}, Landroid/view/ViewGroup;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
+    invoke-virtual {v8, v9, v7}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
     :cond_0
     iget-object v8, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mArrowContainer:Landroid/widget/LinearLayout;
@@ -977,7 +977,7 @@
 
     aget-object v9, v9, v3
 
-    invoke-virtual {v8, v9}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
+    invoke-virtual {v8, v9}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
     :cond_1
     :goto_2
@@ -1044,7 +1044,7 @@
 
     aget-object v9, v9, v3
 
-    invoke-virtual {v8, v9}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
+    invoke-virtual {v8, v9}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
     const/4 v8, 0x3
 
@@ -1058,7 +1058,7 @@
 
     invoke-direct {v9, v10}, Landroid/view/View;-><init>(Landroid/content/Context;)V
 
-    invoke-virtual {v8, v9, v7}, Landroid/view/ViewGroup;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
+    invoke-virtual {v8, v9, v7}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
     goto :goto_2
 
@@ -1078,11 +1078,11 @@
 
     iget-object v8, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mArrowContainer:Landroid/widget/LinearLayout;
 
-    invoke-virtual {p1, v8, v5}, Landroid/view/ViewGroup;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
+    invoke-virtual {p1, v8, v5}, Landroid/widget/FrameLayout;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
     iget-object v8, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mArrowContainer:Landroid/widget/LinearLayout;
 
-    invoke-virtual {v8}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+    invoke-virtual {v8}, Landroid/widget/LinearLayout;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v6
 
@@ -1111,7 +1111,7 @@
     :goto_4
     iget-object v8, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mArrowContainer:Landroid/widget/LinearLayout;
 
-    invoke-virtual {v8, v6}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+    invoke-virtual {v8, v6}, Landroid/widget/LinearLayout;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
     return-void
 
@@ -1168,7 +1168,7 @@
 
     iget-object v1, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mTargetCircle:Lcom/android/phone/IncomingCallWidget$Handle$TargetCircle;
 
-    invoke-virtual {v1}, Landroid/view/View;->getWidth()I
+    invoke-virtual {v1}, Lcom/android/phone/IncomingCallWidget$Handle$TargetCircle;->getWidth()I
 
     move-result v1
 
@@ -1178,7 +1178,7 @@
 
     iget-object v1, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mTargetCircle:Lcom/android/phone/IncomingCallWidget$Handle$TargetCircle;
 
-    invoke-virtual {v1}, Landroid/view/View;->getWidth()I
+    invoke-virtual {v1}, Lcom/android/phone/IncomingCallWidget$Handle$TargetCircle;->getWidth()I
 
     move-result v1
 
@@ -1218,26 +1218,26 @@
 
     move-result-object v1
 
-    invoke-virtual {v8, v1}, Landroid/view/animation/Animation;->setInterpolator(Landroid/view/animation/Interpolator;)V
+    invoke-virtual {v8, v1}, Landroid/view/animation/AnimationSet;->setInterpolator(Landroid/view/animation/Interpolator;)V
 
     iget-object v1, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mTargetCircle:Lcom/android/phone/IncomingCallWidget$Handle$TargetCircle;
 
-    invoke-virtual {v1}, Landroid/view/View;->clearAnimation()V
+    invoke-virtual {v1}, Lcom/android/phone/IncomingCallWidget$Handle$TargetCircle;->clearAnimation()V
 
     iget-object v1, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mTargetCircle:Lcom/android/phone/IncomingCallWidget$Handle$TargetCircle;
 
-    invoke-virtual {v1, v8}, Landroid/view/View;->startAnimation(Landroid/view/animation/Animation;)V
+    invoke-virtual {v1, v8}, Lcom/android/phone/IncomingCallWidget$Handle$TargetCircle;->startAnimation(Landroid/view/animation/Animation;)V
 
     :goto_0
     iget-object v1, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mTargetCircle:Lcom/android/phone/IncomingCallWidget$Handle$TargetCircle;
 
     const/4 v2, 0x4
 
-    invoke-virtual {v1, v2}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v1, v2}, Lcom/android/phone/IncomingCallWidget$Handle$TargetCircle;->setVisibility(I)V
 
     iget-object v1, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mTabCircle:Lcom/android/phone/IncomingCallWidget$Handle$TabCircle;
 
-    invoke-virtual {v1}, Landroid/view/View;->clearAnimation()V
+    invoke-virtual {v1}, Lcom/android/phone/IncomingCallWidget$Handle$TabCircle;->clearAnimation()V
 
     iget-object v1, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mTabCircle:Lcom/android/phone/IncomingCallWidget$Handle$TabCircle;
 
@@ -1247,13 +1247,13 @@
 
     iget-object v1, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mTabCircle:Lcom/android/phone/IncomingCallWidget$Handle$TabCircle;
 
-    invoke-virtual {v1}, Landroid/view/View;->invalidate()V
+    invoke-virtual {v1}, Lcom/android/phone/IncomingCallWidget$Handle$TabCircle;->invalidate()V
 
     iget-object v1, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mTabCircle:Lcom/android/phone/IncomingCallWidget$Handle$TabCircle;
 
     const/4 v2, 0x0
 
-    invoke-virtual {v1, v2}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v1, v2}, Lcom/android/phone/IncomingCallWidget$Handle$TabCircle;->setVisibility(I)V
 
     invoke-direct {p0}, Lcom/android/phone/IncomingCallWidget$Handle;->showArrow()V
 
@@ -1262,7 +1262,7 @@
     :cond_0
     iget-object v1, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mTargetCircle:Lcom/android/phone/IncomingCallWidget$Handle$TargetCircle;
 
-    invoke-virtual {v1}, Landroid/view/View;->clearAnimation()V
+    invoke-virtual {v1}, Lcom/android/phone/IncomingCallWidget$Handle$TargetCircle;->clearAnimation()V
 
     goto :goto_0
 .end method
@@ -1280,21 +1280,21 @@
 
     const-wide/16 v1, 0xc8
 
-    invoke-virtual {v0, v1, v2}, Landroid/view/animation/Animation;->setDuration(J)V
+    invoke-virtual {v0, v1, v2}, Landroid/view/animation/AlphaAnimation;->setDuration(J)V
 
     const/4 v1, 0x1
 
-    invoke-virtual {v0, v1}, Landroid/view/animation/Animation;->setFillAfter(Z)V
+    invoke-virtual {v0, v1}, Landroid/view/animation/AlphaAnimation;->setFillAfter(Z)V
 
     iget-object v1, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mTab:Landroid/widget/ImageView;
 
-    invoke-virtual {v1, v0}, Landroid/view/View;->startAnimation(Landroid/view/animation/Animation;)V
+    invoke-virtual {v1, v0}, Landroid/widget/ImageView;->startAnimation(Landroid/view/animation/Animation;)V
 
     iget-object v1, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mTabCircle:Lcom/android/phone/IncomingCallWidget$Handle$TabCircle;
 
     const/4 v2, 0x4
 
-    invoke-virtual {v1, v2}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v1, v2}, Lcom/android/phone/IncomingCallWidget$Handle$TabCircle;->setVisibility(I)V
 
     invoke-direct {p0}, Lcom/android/phone/IncomingCallWidget$Handle;->hideArrow()V
 
@@ -1314,11 +1314,11 @@
 
     const-wide/16 v1, 0xc8
 
-    invoke-virtual {v0, v1, v2}, Landroid/view/animation/Animation;->setDuration(J)V
+    invoke-virtual {v0, v1, v2}, Landroid/view/animation/AlphaAnimation;->setDuration(J)V
 
     const/4 v1, 0x1
 
-    invoke-virtual {v0, v1}, Landroid/view/animation/Animation;->setFillAfter(Z)V
+    invoke-virtual {v0, v1}, Landroid/view/animation/AlphaAnimation;->setFillAfter(Z)V
 
     iget-object v1, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mTab:Landroid/widget/ImageView;
 
@@ -1326,14 +1326,14 @@
 
     iget-object v1, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mTab:Landroid/widget/ImageView;
 
-    invoke-virtual {v1, v0}, Landroid/view/View;->startAnimation(Landroid/view/animation/Animation;)V
+    invoke-virtual {v1, v0}, Landroid/widget/ImageView;->startAnimation(Landroid/view/animation/Animation;)V
 
     :cond_0
     iget-object v1, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mTabCircle:Lcom/android/phone/IncomingCallWidget$Handle$TabCircle;
 
     const/4 v2, 0x0
 
-    invoke-virtual {v1, v2}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v1, v2}, Lcom/android/phone/IncomingCallWidget$Handle$TabCircle;->setVisibility(I)V
 
     invoke-direct {p0}, Lcom/android/phone/IncomingCallWidget$Handle;->showArrow()V
 
@@ -1347,7 +1347,7 @@
 
     iget-object v0, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mContainer:Landroid/widget/FrameLayout;
 
-    invoke-virtual {v0}, Landroid/view/View;->isShown()Z
+    invoke-virtual {v0}, Landroid/widget/FrameLayout;->isShown()Z
 
     move-result v0
 
@@ -1357,7 +1357,7 @@
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v1}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
     iget-object v0, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mHandler:Landroid/os/Handler;
 
@@ -1391,7 +1391,7 @@
 
     iget-object v2, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mTargetCircle:Lcom/android/phone/IncomingCallWidget$Handle$TargetCircle;
 
-    invoke-virtual {v2}, Landroid/view/View;->getWidth()I
+    invoke-virtual {v2}, Lcom/android/phone/IncomingCallWidget$Handle$TargetCircle;->getWidth()I
 
     move-result v2
 
@@ -1401,7 +1401,7 @@
 
     iget-object v2, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mTargetCircle:Lcom/android/phone/IncomingCallWidget$Handle$TargetCircle;
 
-    invoke-virtual {v2}, Landroid/view/View;->getWidth()I
+    invoke-virtual {v2}, Lcom/android/phone/IncomingCallWidget$Handle$TargetCircle;->getWidth()I
 
     move-result v2
 
@@ -1441,13 +1441,13 @@
 
     move-result-object v1
 
-    invoke-virtual {v8, v1}, Landroid/view/animation/Animation;->setInterpolator(Landroid/view/animation/Interpolator;)V
+    invoke-virtual {v8, v1}, Landroid/view/animation/AnimationSet;->setInterpolator(Landroid/view/animation/Interpolator;)V
 
     invoke-virtual {v8, v9}, Landroid/view/animation/AnimationSet;->setFillAfter(Z)V
 
     iget-object v1, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mTargetCircle:Lcom/android/phone/IncomingCallWidget$Handle$TargetCircle;
 
-    invoke-virtual {v1, v8}, Landroid/view/View;->startAnimation(Landroid/view/animation/Animation;)V
+    invoke-virtual {v1, v8}, Lcom/android/phone/IncomingCallWidget$Handle$TargetCircle;->startAnimation(Landroid/view/animation/Animation;)V
 
     iget-object v1, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mTargetCircle:Lcom/android/phone/IncomingCallWidget$Handle$TargetCircle;
 
@@ -1459,7 +1459,7 @@
 
     const/4 v2, 0x0
 
-    invoke-virtual {v1, v2}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v1, v2}, Lcom/android/phone/IncomingCallWidget$Handle$TargetCircle;->setVisibility(I)V
 
     return-void
 .end method
@@ -1511,7 +1511,7 @@
 
     iget-object v1, p0, Lcom/android/phone/IncomingCallWidget$Handle;->this$0:Lcom/android/phone/IncomingCallWidget;
 
-    invoke-virtual {v1}, Landroid/view/View;->getMeasuredHeight()I
+    invoke-virtual {v1}, Lcom/android/phone/IncomingCallWidget;->getMeasuredHeight()I
 
     move-result v1
 
@@ -1602,7 +1602,7 @@
 
     iget-object v11, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mContainer:Landroid/widget/FrameLayout;
 
-    invoke-virtual {v11}, Landroid/view/View;->getWidth()I
+    invoke-virtual {v11}, Landroid/widget/FrameLayout;->getWidth()I
 
     move-result v11
 
@@ -1676,7 +1676,7 @@
 
     iget-object v11, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mContainer:Landroid/widget/FrameLayout;
 
-    invoke-virtual {v11}, Landroid/view/View;->getLeft()I
+    invoke-virtual {v11}, Landroid/widget/FrameLayout;->getLeft()I
 
     move-result v11
 
@@ -1684,13 +1684,13 @@
 
     iget-object v11, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mContainer:Landroid/widget/FrameLayout;
 
-    invoke-virtual {v11}, Landroid/view/View;->getTop()I
+    invoke-virtual {v11}, Landroid/widget/FrameLayout;->getTop()I
 
     move-result v11
 
     iget-object v12, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mContainer:Landroid/widget/FrameLayout;
 
-    invoke-virtual {v12}, Landroid/view/View;->getHeight()I
+    invoke-virtual {v12}, Landroid/widget/FrameLayout;->getHeight()I
 
     move-result v12
 
@@ -1704,7 +1704,7 @@
 
     iget-object v13, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mContainer:Landroid/widget/FrameLayout;
 
-    invoke-virtual {v13}, Landroid/view/View;->getWidth()I
+    invoke-virtual {v13}, Landroid/widget/FrameLayout;->getWidth()I
 
     move-result v13
 
@@ -1712,7 +1712,7 @@
 
     iget-object v14, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mContainer:Landroid/widget/FrameLayout;
 
-    invoke-virtual {v14}, Landroid/view/View;->getHeight()I
+    invoke-virtual {v14}, Landroid/widget/FrameLayout;->getHeight()I
 
     move-result v14
 
@@ -1720,17 +1720,17 @@
 
     sub-int/2addr v14, v6
 
-    invoke-virtual {v11, v3, v12, v13, v14}, Landroid/view/ViewGroup;->layout(IIII)V
+    invoke-virtual {v11, v3, v12, v13, v14}, Landroid/widget/FrameLayout;->layout(IIII)V
 
     iget-object v11, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mArrowContainer:Landroid/widget/LinearLayout;
 
-    invoke-virtual {v11}, Landroid/view/View;->getLeft()I
+    invoke-virtual {v11}, Landroid/widget/LinearLayout;->getLeft()I
 
     move-result v11
 
     iget-object v12, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mArrowContainer:Landroid/widget/LinearLayout;
 
-    invoke-virtual {v12}, Landroid/view/View;->getWidth()I
+    invoke-virtual {v12}, Landroid/widget/LinearLayout;->getWidth()I
 
     move-result v12
 
@@ -1740,13 +1740,13 @@
 
     iget-object v11, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mArrowContainer:Landroid/widget/LinearLayout;
 
-    invoke-virtual {v11}, Landroid/view/View;->getTop()I
+    invoke-virtual {v11}, Landroid/widget/LinearLayout;->getTop()I
 
     move-result v11
 
     iget-object v12, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mArrowContainer:Landroid/widget/LinearLayout;
 
-    invoke-virtual {v12}, Landroid/view/View;->getHeight()I
+    invoke-virtual {v12}, Landroid/widget/LinearLayout;->getHeight()I
 
     move-result v12
 
@@ -1760,7 +1760,7 @@
 
     iget-object v12, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mArrowContainer:Landroid/widget/LinearLayout;
 
-    invoke-virtual {v12}, Landroid/view/View;->getWidth()I
+    invoke-virtual {v12}, Landroid/widget/LinearLayout;->getWidth()I
 
     move-result v12
 
@@ -1768,13 +1768,13 @@
 
     iget-object v13, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mArrowContainer:Landroid/widget/LinearLayout;
 
-    invoke-virtual {v13}, Landroid/view/View;->getHeight()I
+    invoke-virtual {v13}, Landroid/widget/LinearLayout;->getHeight()I
 
     move-result v13
 
     add-int/2addr v13, v1
 
-    invoke-virtual {v11, v2, v1, v12, v13}, Landroid/view/ViewGroup;->layout(IIII)V
+    invoke-virtual {v11, v2, v1, v12, v13}, Landroid/widget/LinearLayout;->layout(IIII)V
 
     :cond_1
     :goto_1
@@ -1823,7 +1823,7 @@
 
     iget-object v11, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mContainer:Landroid/widget/FrameLayout;
 
-    invoke-virtual {v11}, Landroid/view/View;->getLeft()I
+    invoke-virtual {v11}, Landroid/widget/FrameLayout;->getLeft()I
 
     move-result v11
 
@@ -1831,13 +1831,13 @@
 
     iget-object v11, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mContainer:Landroid/widget/FrameLayout;
 
-    invoke-virtual {v11}, Landroid/view/View;->getTop()I
+    invoke-virtual {v11}, Landroid/widget/FrameLayout;->getTop()I
 
     move-result v11
 
     iget-object v12, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mContainer:Landroid/widget/FrameLayout;
 
-    invoke-virtual {v12}, Landroid/view/View;->getHeight()I
+    invoke-virtual {v12}, Landroid/widget/FrameLayout;->getHeight()I
 
     move-result v12
 
@@ -1855,7 +1855,7 @@
 
     iget-object v13, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mContainer:Landroid/widget/FrameLayout;
 
-    invoke-virtual {v13}, Landroid/view/View;->getWidth()I
+    invoke-virtual {v13}, Landroid/widget/FrameLayout;->getWidth()I
 
     move-result v13
 
@@ -1863,7 +1863,7 @@
 
     iget-object v14, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mContainer:Landroid/widget/FrameLayout;
 
-    invoke-virtual {v14}, Landroid/view/View;->getHeight()I
+    invoke-virtual {v14}, Landroid/widget/FrameLayout;->getHeight()I
 
     move-result v14
 
@@ -1871,17 +1871,17 @@
 
     sub-int/2addr v14, v6
 
-    invoke-virtual {v11, v9, v12, v13, v14}, Landroid/view/ViewGroup;->layout(IIII)V
+    invoke-virtual {v11, v9, v12, v13, v14}, Landroid/widget/FrameLayout;->layout(IIII)V
 
     iget-object v11, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mArrowContainer:Landroid/widget/LinearLayout;
 
-    invoke-virtual {v11}, Landroid/view/View;->getLeft()I
+    invoke-virtual {v11}, Landroid/widget/LinearLayout;->getLeft()I
 
     move-result v11
 
     iget-object v12, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mArrowContainer:Landroid/widget/LinearLayout;
 
-    invoke-virtual {v12}, Landroid/view/View;->getWidth()I
+    invoke-virtual {v12}, Landroid/widget/LinearLayout;->getWidth()I
 
     move-result v12
 
@@ -1891,13 +1891,13 @@
 
     iget-object v11, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mArrowContainer:Landroid/widget/LinearLayout;
 
-    invoke-virtual {v11}, Landroid/view/View;->getTop()I
+    invoke-virtual {v11}, Landroid/widget/LinearLayout;->getTop()I
 
     move-result v11
 
     iget-object v12, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mArrowContainer:Landroid/widget/LinearLayout;
 
-    invoke-virtual {v12}, Landroid/view/View;->getHeight()I
+    invoke-virtual {v12}, Landroid/widget/LinearLayout;->getHeight()I
 
     move-result v12
 
@@ -1907,7 +1907,7 @@
 
     iget-object v12, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mArrowContainer:Landroid/widget/LinearLayout;
 
-    invoke-virtual {v12}, Landroid/view/View;->getWidth()I
+    invoke-virtual {v12}, Landroid/widget/LinearLayout;->getWidth()I
 
     move-result v12
 
@@ -1915,13 +1915,13 @@
 
     iget-object v13, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mArrowContainer:Landroid/widget/LinearLayout;
 
-    invoke-virtual {v13}, Landroid/view/View;->getHeight()I
+    invoke-virtual {v13}, Landroid/widget/LinearLayout;->getHeight()I
 
     move-result v13
 
     add-int/2addr v13, v7
 
-    invoke-virtual {v11, v8, v7, v12, v13}, Landroid/view/ViewGroup;->layout(IIII)V
+    invoke-virtual {v11, v8, v7, v12, v13}, Landroid/widget/LinearLayout;->layout(IIII)V
 
     goto/16 :goto_1
 .end method
@@ -1964,15 +1964,15 @@
 
     iget-object v4, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mTab:Landroid/widget/ImageView;
 
-    invoke-virtual {v4}, Landroid/view/View;->clearAnimation()V
+    invoke-virtual {v4}, Landroid/widget/ImageView;->clearAnimation()V
 
     iget-object v4, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mTargetCircle:Lcom/android/phone/IncomingCallWidget$Handle$TargetCircle;
 
-    invoke-virtual {v4}, Landroid/view/View;->clearAnimation()V
+    invoke-virtual {v4}, Lcom/android/phone/IncomingCallWidget$Handle$TargetCircle;->clearAnimation()V
 
     iget-object v4, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mTabCircle:Lcom/android/phone/IncomingCallWidget$Handle$TabCircle;
 
-    invoke-virtual {v4}, Landroid/view/View;->clearAnimation()V
+    invoke-virtual {v4}, Lcom/android/phone/IncomingCallWidget$Handle$TabCircle;->clearAnimation()V
 
     iget-object v4, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mTargetCircle:Lcom/android/phone/IncomingCallWidget$Handle$TargetCircle;
 
@@ -1982,7 +1982,7 @@
 
     iget-object v4, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mTargetCircle:Lcom/android/phone/IncomingCallWidget$Handle$TargetCircle;
 
-    invoke-virtual {v4}, Landroid/view/View;->invalidate()V
+    invoke-virtual {v4}, Lcom/android/phone/IncomingCallWidget$Handle$TargetCircle;->invalidate()V
 
     iget-object v4, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mTabCircle:Lcom/android/phone/IncomingCallWidget$Handle$TabCircle;
 
@@ -1990,7 +1990,7 @@
 
     iget-object v4, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mTabCircle:Lcom/android/phone/IncomingCallWidget$Handle$TabCircle;
 
-    invoke-virtual {v4}, Landroid/view/View;->invalidate()V
+    invoke-virtual {v4}, Lcom/android/phone/IncomingCallWidget$Handle$TabCircle;->invalidate()V
 
     iget-object v4, p0, Lcom/android/phone/IncomingCallWidget$Handle;->this$0:Lcom/android/phone/IncomingCallWidget;
 
@@ -2057,11 +2057,11 @@
 
     iget-object v4, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mTargetCircle:Lcom/android/phone/IncomingCallWidget$Handle$TargetCircle;
 
-    invoke-virtual {v4}, Landroid/view/View;->invalidate()V
+    invoke-virtual {v4}, Lcom/android/phone/IncomingCallWidget$Handle$TargetCircle;->invalidate()V
 
     iget-object v4, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mTabCircle:Lcom/android/phone/IncomingCallWidget$Handle$TabCircle;
 
-    invoke-virtual {v4}, Landroid/view/View;->invalidate()V
+    invoke-virtual {v4}, Lcom/android/phone/IncomingCallWidget$Handle$TabCircle;->invalidate()V
 
     goto :goto_0
 
@@ -2310,7 +2310,7 @@
 
     iget-object v11, p0, Lcom/android/phone/IncomingCallWidget$Handle;->this$0:Lcom/android/phone/IncomingCallWidget;
 
-    invoke-virtual {v11}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {v11}, Lcom/android/phone/IncomingCallWidget;->getResources()Landroid/content/res/Resources;
 
     move-result-object v11
 
@@ -2332,7 +2332,7 @@
 
     iget-object v11, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mContainer:Landroid/widget/FrameLayout;
 
-    invoke-virtual {v11}, Landroid/view/View;->getWidth()I
+    invoke-virtual {v11}, Landroid/widget/FrameLayout;->getWidth()I
 
     move-result v11
 
@@ -2373,7 +2373,7 @@
 
     iget-object v11, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mContainer:Landroid/widget/FrameLayout;
 
-    invoke-virtual {v11}, Landroid/view/View;->getLeft()I
+    invoke-virtual {v11}, Landroid/widget/FrameLayout;->getLeft()I
 
     move-result v11
 
@@ -2389,13 +2389,13 @@
 
     iget-object v11, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mContainer:Landroid/widget/FrameLayout;
 
-    invoke-virtual {v11}, Landroid/view/View;->getTop()I
+    invoke-virtual {v11}, Landroid/widget/FrameLayout;->getTop()I
 
     move-result v11
 
     iget-object v12, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mContainer:Landroid/widget/FrameLayout;
 
-    invoke-virtual {v12}, Landroid/view/View;->getHeight()I
+    invoke-virtual {v12}, Landroid/widget/FrameLayout;->getHeight()I
 
     move-result v12
 
@@ -2411,7 +2411,7 @@
 
     iget-object v12, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mContainer:Landroid/widget/FrameLayout;
 
-    invoke-virtual {v12}, Landroid/view/View;->getWidth()I
+    invoke-virtual {v12}, Landroid/widget/FrameLayout;->getWidth()I
 
     move-result v12
 
@@ -2419,23 +2419,23 @@
 
     iget-object v13, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mContainer:Landroid/widget/FrameLayout;
 
-    invoke-virtual {v13}, Landroid/view/View;->getHeight()I
+    invoke-virtual {v13}, Landroid/widget/FrameLayout;->getHeight()I
 
     move-result v13
 
     add-int/2addr v13, v5
 
-    invoke-virtual {v11, v4, v5, v12, v13}, Landroid/view/ViewGroup;->layout(IIII)V
+    invoke-virtual {v11, v4, v5, v12, v13}, Landroid/widget/FrameLayout;->layout(IIII)V
 
     iget-object v11, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mArrowContainer:Landroid/widget/LinearLayout;
 
-    invoke-virtual {v11}, Landroid/view/View;->getLeft()I
+    invoke-virtual {v11}, Landroid/widget/LinearLayout;->getLeft()I
 
     move-result v11
 
     iget-object v12, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mArrowContainer:Landroid/widget/LinearLayout;
 
-    invoke-virtual {v12}, Landroid/view/View;->getWidth()I
+    invoke-virtual {v12}, Landroid/widget/LinearLayout;->getWidth()I
 
     move-result v12
 
@@ -2445,13 +2445,13 @@
 
     iget-object v11, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mArrowContainer:Landroid/widget/LinearLayout;
 
-    invoke-virtual {v11}, Landroid/view/View;->getTop()I
+    invoke-virtual {v11}, Landroid/widget/LinearLayout;->getTop()I
 
     move-result v11
 
     iget-object v12, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mArrowContainer:Landroid/widget/LinearLayout;
 
-    invoke-virtual {v12}, Landroid/view/View;->getHeight()I
+    invoke-virtual {v12}, Landroid/widget/LinearLayout;->getHeight()I
 
     move-result v12
 
@@ -2483,19 +2483,19 @@
 
     iget-object v11, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mArrowContainer:Landroid/widget/LinearLayout;
 
-    invoke-virtual {v11}, Landroid/view/View;->getLeft()I
+    invoke-virtual {v11}, Landroid/widget/LinearLayout;->getLeft()I
 
     move-result v3
 
     iget-object v11, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mArrowContainer:Landroid/widget/LinearLayout;
 
-    invoke-virtual {v11}, Landroid/view/View;->getTop()I
+    invoke-virtual {v11}, Landroid/widget/LinearLayout;->getTop()I
 
     move-result v11
 
     iget-object v12, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mArrowContainer:Landroid/widget/LinearLayout;
 
-    invoke-virtual {v12}, Landroid/view/View;->getHeight()I
+    invoke-virtual {v12}, Landroid/widget/LinearLayout;->getHeight()I
 
     move-result v12
 
@@ -2508,7 +2508,7 @@
 
     iget-object v12, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mArrowContainer:Landroid/widget/LinearLayout;
 
-    invoke-virtual {v12}, Landroid/view/View;->getWidth()I
+    invoke-virtual {v12}, Landroid/widget/LinearLayout;->getWidth()I
 
     move-result v12
 
@@ -2516,13 +2516,13 @@
 
     iget-object v13, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mArrowContainer:Landroid/widget/LinearLayout;
 
-    invoke-virtual {v13}, Landroid/view/View;->getHeight()I
+    invoke-virtual {v13}, Landroid/widget/LinearLayout;->getHeight()I
 
     move-result v13
 
     add-int/2addr v13, v2
 
-    invoke-virtual {v11, v3, v2, v12, v13}, Landroid/view/ViewGroup;->layout(IIII)V
+    invoke-virtual {v11, v3, v2, v12, v13}, Landroid/widget/LinearLayout;->layout(IIII)V
 
     :cond_3
     :goto_2
@@ -2571,13 +2571,13 @@
     :cond_5
     iget-object v11, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mContainer:Landroid/widget/FrameLayout;
 
-    invoke-virtual {v11}, Landroid/view/View;->getTop()I
+    invoke-virtual {v11}, Landroid/widget/FrameLayout;->getTop()I
 
     move-result v11
 
     iget-object v12, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mContainer:Landroid/widget/FrameLayout;
 
-    invoke-virtual {v12}, Landroid/view/View;->getHeight()I
+    invoke-virtual {v12}, Landroid/widget/FrameLayout;->getHeight()I
 
     move-result v12
 
@@ -2598,7 +2598,7 @@
 
     iget-object v11, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mContainer:Landroid/widget/FrameLayout;
 
-    invoke-virtual {v11}, Landroid/view/View;->getLeft()I
+    invoke-virtual {v11}, Landroid/widget/FrameLayout;->getLeft()I
 
     move-result v11
 
@@ -2614,13 +2614,13 @@
 
     iget-object v11, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mContainer:Landroid/widget/FrameLayout;
 
-    invoke-virtual {v11}, Landroid/view/View;->getTop()I
+    invoke-virtual {v11}, Landroid/widget/FrameLayout;->getTop()I
 
     move-result v11
 
     iget-object v12, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mContainer:Landroid/widget/FrameLayout;
 
-    invoke-virtual {v12}, Landroid/view/View;->getHeight()I
+    invoke-virtual {v12}, Landroid/widget/FrameLayout;->getHeight()I
 
     move-result v12
 
@@ -2636,7 +2636,7 @@
 
     iget-object v12, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mContainer:Landroid/widget/FrameLayout;
 
-    invoke-virtual {v12}, Landroid/view/View;->getWidth()I
+    invoke-virtual {v12}, Landroid/widget/FrameLayout;->getWidth()I
 
     move-result v12
 
@@ -2644,23 +2644,23 @@
 
     iget-object v13, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mContainer:Landroid/widget/FrameLayout;
 
-    invoke-virtual {v13}, Landroid/view/View;->getHeight()I
+    invoke-virtual {v13}, Landroid/widget/FrameLayout;->getHeight()I
 
     move-result v13
 
     add-int/2addr v13, v10
 
-    invoke-virtual {v11, v9, v10, v12, v13}, Landroid/view/ViewGroup;->layout(IIII)V
+    invoke-virtual {v11, v9, v10, v12, v13}, Landroid/widget/FrameLayout;->layout(IIII)V
 
     iget-object v11, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mArrowContainer:Landroid/widget/LinearLayout;
 
-    invoke-virtual {v11}, Landroid/view/View;->getLeft()I
+    invoke-virtual {v11}, Landroid/widget/LinearLayout;->getLeft()I
 
     move-result v11
 
     iget-object v12, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mArrowContainer:Landroid/widget/LinearLayout;
 
-    invoke-virtual {v12}, Landroid/view/View;->getWidth()I
+    invoke-virtual {v12}, Landroid/widget/LinearLayout;->getWidth()I
 
     move-result v12
 
@@ -2670,13 +2670,13 @@
 
     iget-object v11, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mArrowContainer:Landroid/widget/LinearLayout;
 
-    invoke-virtual {v11}, Landroid/view/View;->getTop()I
+    invoke-virtual {v11}, Landroid/widget/LinearLayout;->getTop()I
 
     move-result v11
 
     iget-object v12, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mArrowContainer:Landroid/widget/LinearLayout;
 
-    invoke-virtual {v12}, Landroid/view/View;->getHeight()I
+    invoke-virtual {v12}, Landroid/widget/LinearLayout;->getHeight()I
 
     move-result v12
 
@@ -2708,19 +2708,19 @@
 
     iget-object v11, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mArrowContainer:Landroid/widget/LinearLayout;
 
-    invoke-virtual {v11}, Landroid/view/View;->getLeft()I
+    invoke-virtual {v11}, Landroid/widget/LinearLayout;->getLeft()I
 
     move-result v8
 
     iget-object v11, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mArrowContainer:Landroid/widget/LinearLayout;
 
-    invoke-virtual {v11}, Landroid/view/View;->getTop()I
+    invoke-virtual {v11}, Landroid/widget/LinearLayout;->getTop()I
 
     move-result v11
 
     iget-object v12, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mArrowContainer:Landroid/widget/LinearLayout;
 
-    invoke-virtual {v12}, Landroid/view/View;->getHeight()I
+    invoke-virtual {v12}, Landroid/widget/LinearLayout;->getHeight()I
 
     move-result v12
 
@@ -2733,7 +2733,7 @@
 
     iget-object v12, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mArrowContainer:Landroid/widget/LinearLayout;
 
-    invoke-virtual {v12}, Landroid/view/View;->getWidth()I
+    invoke-virtual {v12}, Landroid/widget/LinearLayout;->getWidth()I
 
     move-result v12
 
@@ -2741,26 +2741,26 @@
 
     iget-object v13, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mArrowContainer:Landroid/widget/LinearLayout;
 
-    invoke-virtual {v13}, Landroid/view/View;->getHeight()I
+    invoke-virtual {v13}, Landroid/widget/LinearLayout;->getHeight()I
 
     move-result v13
 
     add-int/2addr v13, v7
 
-    invoke-virtual {v11, v8, v7, v12, v13}, Landroid/view/ViewGroup;->layout(IIII)V
+    invoke-virtual {v11, v8, v7, v12, v13}, Landroid/widget/LinearLayout;->layout(IIII)V
 
     goto/16 :goto_2
 
     :cond_9
     iget-object v11, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mContainer:Landroid/widget/FrameLayout;
 
-    invoke-virtual {v11}, Landroid/view/View;->getTop()I
+    invoke-virtual {v11}, Landroid/widget/FrameLayout;->getTop()I
 
     move-result v11
 
     iget-object v12, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mContainer:Landroid/widget/FrameLayout;
 
-    invoke-virtual {v12}, Landroid/view/View;->getHeight()I
+    invoke-virtual {v12}, Landroid/widget/FrameLayout;->getHeight()I
 
     move-result v12
 
@@ -2852,11 +2852,11 @@
 
     iget-object v8, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mTargetCircle:Lcom/android/phone/IncomingCallWidget$Handle$TargetCircle;
 
-    invoke-virtual {v8}, Landroid/view/View;->invalidate()V
+    invoke-virtual {v8}, Lcom/android/phone/IncomingCallWidget$Handle$TargetCircle;->invalidate()V
 
     iget-object v8, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mTabCircle:Lcom/android/phone/IncomingCallWidget$Handle$TabCircle;
 
-    invoke-virtual {v8}, Landroid/view/View;->invalidate()V
+    invoke-virtual {v8}, Lcom/android/phone/IncomingCallWidget$Handle$TabCircle;->invalidate()V
 
     :cond_0
     :goto_1
@@ -2884,11 +2884,11 @@
 
     iget-object v8, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mTargetCircle:Lcom/android/phone/IncomingCallWidget$Handle$TargetCircle;
 
-    invoke-virtual {v8}, Landroid/view/View;->clearAnimation()V
+    invoke-virtual {v8}, Lcom/android/phone/IncomingCallWidget$Handle$TargetCircle;->clearAnimation()V
 
     iget-object v8, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mTabCircle:Lcom/android/phone/IncomingCallWidget$Handle$TabCircle;
 
-    invoke-virtual {v8}, Landroid/view/View;->clearAnimation()V
+    invoke-virtual {v8}, Lcom/android/phone/IncomingCallWidget$Handle$TabCircle;->clearAnimation()V
 
     iget-object v8, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mTargetCircle:Lcom/android/phone/IncomingCallWidget$Handle$TargetCircle;
 
@@ -2898,7 +2898,7 @@
 
     iget-object v8, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mTargetCircle:Lcom/android/phone/IncomingCallWidget$Handle$TargetCircle;
 
-    invoke-virtual {v8}, Landroid/view/View;->invalidate()V
+    invoke-virtual {v8}, Lcom/android/phone/IncomingCallWidget$Handle$TargetCircle;->invalidate()V
 
     iget-object v8, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mTabCircle:Lcom/android/phone/IncomingCallWidget$Handle$TabCircle;
 
@@ -2906,7 +2906,7 @@
 
     iget-object v8, p0, Lcom/android/phone/IncomingCallWidget$Handle;->mTabCircle:Lcom/android/phone/IncomingCallWidget$Handle$TabCircle;
 
-    invoke-virtual {v8}, Landroid/view/View;->invalidate()V
+    invoke-virtual {v8}, Lcom/android/phone/IncomingCallWidget$Handle$TabCircle;->invalidate()V
 
     iget-object v8, p0, Lcom/android/phone/IncomingCallWidget$Handle;->this$0:Lcom/android/phone/IncomingCallWidget;
 

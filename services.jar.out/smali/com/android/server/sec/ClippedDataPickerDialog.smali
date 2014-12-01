@@ -146,7 +146,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
 
     const/4 v4, 0x4
 
@@ -315,8 +314,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/sec/clipboard/ClipboardExManager;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/sec/clipboard/ClipboardExManager;
 
     const/4 v4, 0x4
 
@@ -487,7 +484,6 @@
 
 .method static synthetic access$000(Lcom/android/server/sec/ClippedDataPickerDialog;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/server/sec/ClippedDataPickerDialog;
 
     iget-object v0, p0, Lcom/android/server/sec/ClippedDataPickerDialog;->mContext:Landroid/content/Context;
 
@@ -496,7 +492,6 @@
 
 .method static synthetic access$100(Lcom/android/server/sec/ClippedDataPickerDialog;)Landroid/sec/clipboard/ClipboardExManager;
     .locals 1
-    .param p0    # Lcom/android/server/sec/ClippedDataPickerDialog;
 
     iget-object v0, p0, Lcom/android/server/sec/ClippedDataPickerDialog;->mCbm:Landroid/sec/clipboard/ClipboardExManager;
 
@@ -505,8 +500,6 @@
 
 .method static synthetic access$1002(Lcom/android/server/sec/ClippedDataPickerDialog;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/sec/ClippedDataPickerDialog;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/sec/ClippedDataPickerDialog;->mIsDeletingItem:Z
 
@@ -515,7 +508,6 @@
 
 .method static synthetic access$1100(Lcom/android/server/sec/ClippedDataPickerDialog;)Lcom/android/server/sec/TwSlidingDrawer;
     .locals 1
-    .param p0    # Lcom/android/server/sec/ClippedDataPickerDialog;
 
     iget-object v0, p0, Lcom/android/server/sec/ClippedDataPickerDialog;->mClipDrawer:Lcom/android/server/sec/TwSlidingDrawer;
 
@@ -524,7 +516,6 @@
 
 .method static synthetic access$1200(Lcom/android/server/sec/ClippedDataPickerDialog;)Z
     .locals 1
-    .param p0    # Lcom/android/server/sec/ClippedDataPickerDialog;
 
     iget-boolean v0, p0, Lcom/android/server/sec/ClippedDataPickerDialog;->mAddScenario:Z
 
@@ -533,8 +524,6 @@
 
 .method static synthetic access$1202(Lcom/android/server/sec/ClippedDataPickerDialog;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/sec/ClippedDataPickerDialog;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/sec/ClippedDataPickerDialog;->mAddScenario:Z
 
@@ -543,7 +532,6 @@
 
 .method static synthetic access$1300(Lcom/android/server/sec/ClippedDataPickerDialog;)Landroid/sec/clipboard/data/IClipboardDataList;
     .locals 1
-    .param p0    # Lcom/android/server/sec/ClippedDataPickerDialog;
 
     iget-object v0, p0, Lcom/android/server/sec/ClippedDataPickerDialog;->mClipboardDataList:Landroid/sec/clipboard/data/IClipboardDataList;
 
@@ -552,8 +540,6 @@
 
 .method static synthetic access$1302(Lcom/android/server/sec/ClippedDataPickerDialog;Landroid/sec/clipboard/data/IClipboardDataList;)Landroid/sec/clipboard/data/IClipboardDataList;
     .locals 0
-    .param p0    # Lcom/android/server/sec/ClippedDataPickerDialog;
-    .param p1    # Landroid/sec/clipboard/data/IClipboardDataList;
 
     iput-object p1, p0, Lcom/android/server/sec/ClippedDataPickerDialog;->mClipboardDataList:Landroid/sec/clipboard/data/IClipboardDataList;
 
@@ -562,7 +548,6 @@
 
 .method static synthetic access$1400(Lcom/android/server/sec/ClippedDataPickerDialog;)I
     .locals 1
-    .param p0    # Lcom/android/server/sec/ClippedDataPickerDialog;
 
     iget v0, p0, Lcom/android/server/sec/ClippedDataPickerDialog;->mCurrentTargetDataType:I
 
@@ -571,7 +556,6 @@
 
 .method static synthetic access$1500(Lcom/android/server/sec/ClippedDataPickerDialog;)I
     .locals 1
-    .param p0    # Lcom/android/server/sec/ClippedDataPickerDialog;
 
     iget v0, p0, Lcom/android/server/sec/ClippedDataPickerDialog;->mCurrentOrientation:I
 
@@ -580,7 +564,6 @@
 
 .method static synthetic access$1600(Lcom/android/server/sec/ClippedDataPickerDialog;)Landroid/sec/clipboard/IClipboardDataPasteEvent;
     .locals 1
-    .param p0    # Lcom/android/server/sec/ClippedDataPickerDialog;
 
     iget-object v0, p0, Lcom/android/server/sec/ClippedDataPickerDialog;->mCurrentPasteEvent:Landroid/sec/clipboard/IClipboardDataPasteEvent;
 
@@ -589,7 +572,6 @@
 
 .method static synthetic access$1700(Lcom/android/server/sec/ClippedDataPickerDialog;)I
     .locals 1
-    .param p0    # Lcom/android/server/sec/ClippedDataPickerDialog;
 
     iget v0, p0, Lcom/android/server/sec/ClippedDataPickerDialog;->mDataCount:I
 
@@ -598,8 +580,6 @@
 
 .method static synthetic access$1702(Lcom/android/server/sec/ClippedDataPickerDialog;I)I
     .locals 0
-    .param p0    # Lcom/android/server/sec/ClippedDataPickerDialog;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/sec/ClippedDataPickerDialog;->mDataCount:I
 
@@ -608,8 +588,6 @@
 
 .method static synthetic access$200(Lcom/android/server/sec/ClippedDataPickerDialog;I)Z
     .locals 1
-    .param p0    # Lcom/android/server/sec/ClippedDataPickerDialog;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/sec/ClippedDataPickerDialog;->isCheckProtectedItem(I)Z
 
@@ -620,7 +598,6 @@
 
 .method static synthetic access$300(Lcom/android/server/sec/ClippedDataPickerDialog;)Landroid/sec/clipboard/IClipboardDataUiEvent;
     .locals 1
-    .param p0    # Lcom/android/server/sec/ClippedDataPickerDialog;
 
     iget-object v0, p0, Lcom/android/server/sec/ClippedDataPickerDialog;->mClipboardDataUiEvent:Landroid/sec/clipboard/IClipboardDataUiEvent;
 
@@ -629,8 +606,6 @@
 
 .method static synthetic access$302(Lcom/android/server/sec/ClippedDataPickerDialog;Landroid/sec/clipboard/IClipboardDataUiEvent;)Landroid/sec/clipboard/IClipboardDataUiEvent;
     .locals 0
-    .param p0    # Lcom/android/server/sec/ClippedDataPickerDialog;
-    .param p1    # Landroid/sec/clipboard/IClipboardDataUiEvent;
 
     iput-object p1, p0, Lcom/android/server/sec/ClippedDataPickerDialog;->mClipboardDataUiEvent:Landroid/sec/clipboard/IClipboardDataUiEvent;
 
@@ -639,7 +614,6 @@
 
 .method static synthetic access$500(Lcom/android/server/sec/ClippedDataPickerDialog;)Z
     .locals 1
-    .param p0    # Lcom/android/server/sec/ClippedDataPickerDialog;
 
     iget-boolean v0, p0, Lcom/android/server/sec/ClippedDataPickerDialog;->mIsDarkTheme:Z
 
@@ -648,7 +622,6 @@
 
 .method static synthetic access$700(Lcom/android/server/sec/ClippedDataPickerDialog;)Z
     .locals 1
-    .param p0    # Lcom/android/server/sec/ClippedDataPickerDialog;
 
     iget-boolean v0, p0, Lcom/android/server/sec/ClippedDataPickerDialog;->mCalledDismissIntentFromSIPFlag:Z
 
@@ -657,8 +630,6 @@
 
 .method static synthetic access$702(Lcom/android/server/sec/ClippedDataPickerDialog;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/sec/ClippedDataPickerDialog;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/sec/ClippedDataPickerDialog;->mCalledDismissIntentFromSIPFlag:Z
 
@@ -667,7 +638,6 @@
 
 .method static synthetic access$800(Lcom/android/server/sec/ClippedDataPickerDialog;)Z
     .locals 1
-    .param p0    # Lcom/android/server/sec/ClippedDataPickerDialog;
 
     iget-boolean v0, p0, Lcom/android/server/sec/ClippedDataPickerDialog;->mShouldBeDismissed:Z
 
@@ -676,8 +646,6 @@
 
 .method static synthetic access$802(Lcom/android/server/sec/ClippedDataPickerDialog;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/sec/ClippedDataPickerDialog;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/sec/ClippedDataPickerDialog;->mShouldBeDismissed:Z
 
@@ -686,7 +654,6 @@
 
 .method static synthetic access$900(Lcom/android/server/sec/ClippedDataPickerDialog;)I
     .locals 1
-    .param p0    # Lcom/android/server/sec/ClippedDataPickerDialog;
 
     iget v0, p0, Lcom/android/server/sec/ClippedDataPickerDialog;->mSelectedIndex:I
 
@@ -695,7 +662,6 @@
 
 .method private isCheckProtectedItem(I)Z
     .locals 4
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -821,7 +787,6 @@
 # virtual methods
 .method public IsSetProtectAction(I)V
     .locals 10
-    .param p1    # I
 
     const/4 v6, 0x1
 
@@ -1037,7 +1002,6 @@
 
 .method createClearConfirmDialog(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     iget-boolean v0, p0, Lcom/android/server/sec/ClippedDataPickerDialog;->mIsDarkTheme:Z
 
@@ -1377,7 +1341,6 @@
 
 .method public dispatchKeyEvent(Landroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/KeyEvent;
 
     invoke-super {p0, p1}, Landroid/app/Dialog;->dispatchKeyEvent(Landroid/view/KeyEvent;)Z
 
@@ -1388,7 +1351,6 @@
 
 .method public enabledDismissIntent(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/sec/ClippedDataPickerDialog;->mEnabledDismissIntent:Z
 
@@ -1593,7 +1555,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 17
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super/range {p0 .. p1}, Landroid/app/Dialog;->onCreate(Landroid/os/Bundle;)V
 
@@ -2779,9 +2740,6 @@
 
 .method public onCreateContextMenu(Landroid/view/ContextMenu;Landroid/view/View;Landroid/view/ContextMenu$ContextMenuInfo;)V
     .locals 10
-    .param p1    # Landroid/view/ContextMenu;
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ContextMenu$ContextMenuInfo;
 
     const v9, 0x1140005
 
@@ -3149,8 +3107,6 @@
 
 .method public onMenuItemSelected(ILandroid/view/MenuItem;)Z
     .locals 10
-    .param p1    # I
-    .param p2    # Landroid/view/MenuItem;
 
     const/4 v6, 0x0
 
@@ -3401,8 +3357,6 @@
 
 .method public onPanelClosed(ILandroid/view/Menu;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/Menu;
 
     const/4 v0, 0x0
 
@@ -3618,8 +3572,6 @@
 
 .method public setPasteTargetViewInfo(ILandroid/sec/clipboard/IClipboardDataPasteEvent;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/sec/clipboard/IClipboardDataPasteEvent;
 
     iget v0, p0, Lcom/android/server/sec/ClippedDataPickerDialog;->mCurrentTargetDataType:I
 
@@ -3766,8 +3718,6 @@
 
 .method public showProtectedMarker(Landroid/view/View;I)V
     .locals 8
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     const/16 v6, 0x8
 

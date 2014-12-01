@@ -28,7 +28,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     const-string v0, "dmappmgr.db"
 
@@ -43,7 +42,6 @@
 
 .method private insertNewColumns(Landroid/database/sqlite/SQLiteDatabase;)V
     .locals 9
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
 
     const-string v2, "ApplicationIcon"
 
@@ -232,8 +230,6 @@
 
 .method private static isTableExists(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;)Z
     .locals 4
-    .param p0    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -304,7 +300,6 @@
 # virtual methods
 .method clearChangedApplicationName(I)Ljava/util/ArrayList;
     .locals 9
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -531,8 +526,6 @@
 
 .method deleteApplicationIcon(Ljava/lang/String;I)Z
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v5, 0x0
 
@@ -785,8 +778,6 @@
 
 .method deleteApplicationName(Ljava/lang/String;I)Z
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v5, 0x0
 
@@ -1043,8 +1034,6 @@
 
 .method getApplicationIcon(Ljava/lang/String;I)[B
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v4, 0x0
 
@@ -1390,8 +1379,6 @@
 
 .method getApplicationName(Ljava/lang/String;I)Ljava/lang/String;
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v4, 0x0
 
@@ -1737,7 +1724,6 @@
 
 .method public onCreate(Landroid/database/sqlite/SQLiteDatabase;)V
     .locals 4
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
 
     const-string v2, "ApplicationIcon"
 
@@ -1802,18 +1788,12 @@
 
 .method public onUpgrade(Landroid/database/sqlite/SQLiteDatabase;II)V
     .locals 0
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p2    # I
-    .param p3    # I
 
     return-void
 .end method
 
 .method updateApplicationIcon(Ljava/lang/String;[BI)Z
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # [B
-    .param p3    # I
 
     const/4 v5, 0x0
 
@@ -2038,9 +2018,6 @@
 
 .method updateApplicationName(Ljava/lang/String;Ljava/lang/String;I)Z
     .locals 11
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     invoke-static {p3}, Landroid/os/UserHandle;->getUserId(I)I
 

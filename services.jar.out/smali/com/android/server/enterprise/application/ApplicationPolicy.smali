@@ -264,7 +264,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     const/4 v2, 0x0
 
@@ -423,10 +422,6 @@
 
 .method private _installApplication(ILjava/lang/String;ZLcom/sec/enterprise/knox/IEnterpriseContainerCallback;)Z
     .locals 17
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
-    .param p4    # Lcom/sec/enterprise/knox/IEnterpriseContainerCallback;
 
     const/4 v11, 0x0
 
@@ -920,9 +915,6 @@
 
 .method private _setApplicationInstallationDisabled(ILjava/lang/String;Z)V
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     invoke-static {p2}, Lcom/android/server/enterprise/application/ApplicationPolicy;->getValidStr(Ljava/lang/String;)Ljava/lang/String;
 
@@ -974,9 +966,6 @@
 
 .method private _setApplicationUninstallationDisabled(ILjava/lang/String;Z)V
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     const/4 v1, 0x1
 
@@ -1028,9 +1017,6 @@
 
 .method private _uninstallApplication(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Z)Z
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     invoke-static {p1}, Lcom/android/server/enterprise/EnterpriseDeviceManagerService;->getCallingOrCurrentUserId(Landroid/app/enterprise/ContextInfo;)I
 
@@ -1047,10 +1033,6 @@
 
 .method private _uninstallApplicationInternal(IILjava/lang/String;Z)Z
     .locals 8
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Z
 
     invoke-static {p3}, Lcom/android/server/enterprise/application/ApplicationPolicy;->getValidStr(Ljava/lang/String;)Ljava/lang/String;
 
@@ -1156,8 +1138,6 @@
 
 .method static synthetic access$1000(Lcom/android/server/enterprise/application/ApplicationPolicy;Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/application/ApplicationPolicy;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/application/ApplicationPolicy;->isSystemApp(Ljava/lang/String;)Z
 
@@ -1168,11 +1148,6 @@
 
 .method static synthetic access$1100(Lcom/android/server/enterprise/application/ApplicationPolicy;Ljava/lang/String;IIZ)Z
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/application/ApplicationPolicy;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Z
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/server/enterprise/application/ApplicationPolicy;->setApplicationPkgNameControlState(Ljava/lang/String;IIZ)Z
 
@@ -1183,8 +1158,6 @@
 
 .method static synthetic access$1200(Lcom/android/server/enterprise/application/ApplicationPolicy;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/application/ApplicationPolicy;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/application/ApplicationPolicy;->updateSystemAppDisableState(Ljava/lang/String;)V
 
@@ -1193,9 +1166,6 @@
 
 .method static synthetic access$1300(Lcom/android/server/enterprise/application/ApplicationPolicy;Ljava/lang/String;Landroid/content/pm/PackageManager;)Ljava/util/List;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/application/ApplicationPolicy;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/pm/PackageManager;
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/enterprise/application/ApplicationPolicy;->getProvidersFromPackage(Ljava/lang/String;Landroid/content/pm/PackageManager;)Ljava/util/List;
 
@@ -1206,9 +1176,6 @@
 
 .method static synthetic access$1400(Lcom/android/server/enterprise/application/ApplicationPolicy;Ljava/util/List;Landroid/content/Context;)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/application/ApplicationPolicy;
-    .param p1    # Ljava/util/List;
-    .param p2    # Landroid/content/Context;
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/enterprise/application/ApplicationPolicy;->refreshWidgetStatus(Ljava/util/List;Landroid/content/Context;)V
 
@@ -1225,9 +1192,6 @@
 
 .method static synthetic access$1900(Lcom/android/server/enterprise/application/ApplicationPolicy;JI)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/application/ApplicationPolicy;
-    .param p1    # J
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/server/enterprise/application/ApplicationPolicy;->startCachedAppsForActiveUser(JI)V
 
@@ -1236,7 +1200,6 @@
 
 .method static synthetic access$2000(Lcom/android/server/enterprise/application/ApplicationPolicy;)Ljava/util/HashMap;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/application/ApplicationPolicy;
 
     iget-object v0, p0, Lcom/android/server/enterprise/application/ApplicationPolicy;->mPersonaObservers:Ljava/util/HashMap;
 
@@ -1245,7 +1208,6 @@
 
 .method static synthetic access$2100(Lcom/android/server/enterprise/application/ApplicationPolicy;)Landroid/os/PersonaManager;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/application/ApplicationPolicy;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/application/ApplicationPolicy;->getPersonaService()Landroid/os/PersonaManager;
 
@@ -1256,7 +1218,6 @@
 
 .method static synthetic access$2200(Lcom/android/server/enterprise/application/ApplicationPolicy;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/application/ApplicationPolicy;
 
     iget-object v0, p0, Lcom/android/server/enterprise/application/ApplicationPolicy;->mHandler:Landroid/os/Handler;
 
@@ -1265,8 +1226,6 @@
 
 .method static synthetic access$2300(Lcom/android/server/enterprise/application/ApplicationPolicy;I)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/application/ApplicationPolicy;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/application/ApplicationPolicy;->refreshWidgetStatus(I)V
 
@@ -1275,8 +1234,6 @@
 
 .method static synthetic access$2402(Lcom/android/server/enterprise/application/ApplicationPolicy;I)I
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/application/ApplicationPolicy;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/enterprise/application/ApplicationPolicy;->mBackupReturnCode:I
 
@@ -1285,8 +1242,6 @@
 
 .method static synthetic access$2502(Lcom/android/server/enterprise/application/ApplicationPolicy;I)I
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/application/ApplicationPolicy;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/enterprise/application/ApplicationPolicy;->mRestoreReturnCode:I
 
@@ -1295,8 +1250,6 @@
 
 .method static synthetic access$700(Lcom/android/server/enterprise/application/ApplicationPolicy;Landroid/content/Intent;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/application/ApplicationPolicy;
-    .param p1    # Landroid/content/Intent;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/application/ApplicationPolicy;->getPackageName(Landroid/content/Intent;)Ljava/lang/String;
 
@@ -1307,7 +1260,6 @@
 
 .method static synthetic access$800(Lcom/android/server/enterprise/application/ApplicationPolicy;)Lcom/android/server/enterprise/storage/EdmStorageProvider;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/application/ApplicationPolicy;
 
     iget-object v0, p0, Lcom/android/server/enterprise/application/ApplicationPolicy;->mEdmStorageProvider:Lcom/android/server/enterprise/storage/EdmStorageProvider;
 
@@ -1316,10 +1268,6 @@
 
 .method static synthetic access$900(Lcom/android/server/enterprise/application/ApplicationPolicy;ILjava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/application/ApplicationPolicy;
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/server/enterprise/application/ApplicationPolicy;->updateCount(ILjava/lang/String;Ljava/lang/String;)V
 
@@ -1328,9 +1276,6 @@
 
 .method private declared-synchronized addApplicationStateList(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;ILjava/util/List;)Z
     .locals 8
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1423,9 +1368,6 @@
 
 .method private addUsbDeviceForDefaultAccess(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Landroid/app/enterprise/UsbDeviceConfig;)Z
     .locals 6
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/app/enterprise/UsbDeviceConfig;
 
     if-eqz p3, :cond_0
 
@@ -1556,7 +1498,6 @@
 
 .method private arrangePackageList(Ljava/util/List;Z)Ljava/util/List;
     .locals 4
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1637,9 +1578,6 @@
 
 .method private changeApplicationIconForUser(Ljava/lang/String;[BI)Z
     .locals 16
-    .param p1    # Ljava/lang/String;
-    .param p2    # [B
-    .param p3    # I
 
     const-string v13, "ApplicationPolicy"
 
@@ -2050,9 +1988,6 @@
 
 .method private changeApplicationNameForUser(Ljava/lang/String;Ljava/lang/String;I)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     const-string v3, "ApplicationPolicy"
 
@@ -2278,7 +2213,6 @@
 
 .method private checkApplicationsStateToBeReconciled(I)V
     .locals 11
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -2432,7 +2366,6 @@
 
 .method private checkComponentsStateToBeReconciled(I)V
     .locals 11
-    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -2586,9 +2519,6 @@
 
 .method private checkPkgNameMatch(Ljava/lang/Long;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/Long;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     iget-object v2, p0, Lcom/android/server/enterprise/application/ApplicationPolicy;->mAppControlStateLock:Ljava/lang/Object;
 
@@ -2658,7 +2588,6 @@
 
 .method private checkRegex(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     invoke-static {p1}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;)Ljava/util/regex/Pattern;
@@ -2682,7 +2611,6 @@
 
 .method private cleanCmdline(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_1
 
@@ -2728,7 +2656,6 @@
 
 .method private clearApplicationIconDbForUser(I)V
     .locals 5
-    .param p1    # I
 
     invoke-static {p1}, Landroid/os/UserHandle;->getUserId(I)I
 
@@ -2808,7 +2735,6 @@
 
 .method private clearApplicationNameForUid(I)V
     .locals 7
-    .param p1    # I
 
     invoke-static {p1}, Landroid/os/UserHandle;->getUserId(I)I
 
@@ -2901,9 +2827,6 @@
 
 .method private clearApplicationStateList(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;I)Z
     .locals 17
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     invoke-direct/range {p0 .. p1}, Lcom/android/server/enterprise/application/ApplicationPolicy;->enforceAppPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -3022,8 +2945,6 @@
 
 .method private clearApplicationStateList(Ljava/lang/String;I)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -3036,8 +2957,6 @@
 
 .method private clearUsbDevicesForDefaultAccessAsUser(ILjava/lang/String;)Z
     .locals 11
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const-string v8, "ApplicationPolicy"
 
@@ -3205,7 +3124,6 @@
 
 .method private createAdminMap(J)V
     .locals 4
-    .param p1    # J
 
     iget-object v2, p0, Lcom/android/server/enterprise/application/ApplicationPolicy;->mAppControlStateLock:Ljava/lang/Object;
 
@@ -3453,8 +3371,6 @@
 
 .method private createContextForCurrentUser(Ljava/lang/String;I)Landroid/content/Context;
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -3533,9 +3449,6 @@
 
 .method private createContextForSpecifiedUser(Ljava/lang/String;II)Landroid/content/Context;
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v0, 0x0
 
@@ -3588,7 +3501,6 @@
 
 .method private enforceAppPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
     .locals 4
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/application/ApplicationPolicy;->getEDM()Landroid/app/enterprise/EnterpriseDeviceManager;
 
@@ -3644,7 +3556,6 @@
 
 .method private enforceBackupAppPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/application/ApplicationPolicy;->getEDM()Landroid/app/enterprise/EnterpriseDeviceManager;
 
@@ -3661,7 +3572,6 @@
 
 .method private enforceCertificatePermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/application/ApplicationPolicy;->getEDM()Landroid/app/enterprise/EnterpriseDeviceManager;
 
@@ -3676,7 +3586,6 @@
 
 .method private enforceOwnerOnlyAndAppPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/application/ApplicationPolicy;->getEDM()Landroid/app/enterprise/EnterpriseDeviceManager;
 
@@ -3693,8 +3602,6 @@
 
 .method private getActualApplicationComponentStateEnabled(Landroid/app/enterprise/ContextInfo;Landroid/content/ComponentName;)Z
     .locals 10
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Landroid/content/ComponentName;
 
     const/4 v7, 0x1
 
@@ -3790,8 +3697,6 @@
 
 .method private getActualApplicationStateEnabled(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 9
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const/4 v6, 0x1
 
@@ -3883,8 +3788,6 @@
 
 .method private getAppInfo(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Landroid/content/pm/ApplicationInfo;
     .locals 8
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -3953,8 +3856,6 @@
 
 .method private getApplicationControlState(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v7, p0, Lcom/android/server/enterprise/application/ApplicationPolicy;->mAppControlStateLock:Ljava/lang/Object;
 
@@ -4050,8 +3951,6 @@
 
 .method private getApplicationPackageInfo(Ljava/lang/String;Landroid/content/pm/PackageParser$Package;)Lcom/android/server/enterprise/application/ApplicationPolicy$ApplicationPackageInfo;
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/pm/PackageParser$Package;
 
     new-instance v4, Lcom/android/server/enterprise/application/ApplicationPolicy$ApplicationPackageInfo;
 
@@ -4245,8 +4144,6 @@
 
 .method private getApplicationPackageStats(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Landroid/content/pm/PackageStats;
     .locals 6
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -4299,9 +4196,6 @@
 
 .method private getApplicationStateList(ILjava/lang/String;I)Ljava/util/List;
     .locals 12
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -4456,8 +4350,6 @@
 
 .method private getApplicationStateList(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Ljava/util/List;
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -4490,8 +4382,6 @@
 
 .method private getApplicationUninstallationEnabledInternal(ILjava/lang/String;)Z
     .locals 10
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v5, 0x0
 
@@ -4737,8 +4627,6 @@
 
 .method private getApplicationsListInternal(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)[Landroid/app/enterprise/ManagedAppInfo;
     .locals 11
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const/4 v10, 0x1
 
@@ -4985,8 +4873,6 @@
 
 .method public static getContainerizedPackageName(ILjava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p0    # I
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p0, p1}, Lcom/sec/enterprise/knox/EnterpriseContainerManager;->getContainerizedString(ILjava/lang/String;)Ljava/lang/String;
 
@@ -4997,8 +4883,6 @@
 
 .method private final getDebugMemoryInfo(ILandroid/app/ActivityManager;)J
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/app/ActivityManager;
 
     const/4 v3, 0x0
 
@@ -5168,7 +5052,6 @@
 
 .method private getPackageName(Landroid/content/Intent;)Ljava/lang/String;
     .locals 2
-    .param p1    # Landroid/content/Intent;
 
     invoke-virtual {p1}, Landroid/content/Intent;->getData()Landroid/net/Uri;
 
@@ -5191,7 +5074,6 @@
 
 .method private getPackageNameForUid(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/enterprise/application/ApplicationPolicy;->mEdmStorageProvider:Lcom/android/server/enterprise/storage/EdmStorageProvider;
 
@@ -5204,7 +5086,6 @@
 
 .method private getPackageNameForUid(Ljava/lang/Long;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/Long;
 
     invoke-virtual {p1}, Ljava/lang/Long;->longValue()J
 
@@ -5248,7 +5129,6 @@
 
 .method private getPidList(I)Ljava/util/ArrayList;
     .locals 9
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -5358,8 +5238,6 @@
 
 .method private getPkgInfo(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Landroid/content/pm/PackageInfo;
     .locals 8
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -5428,8 +5306,6 @@
 
 .method private getProvidersFromPackage(Ljava/lang/String;Landroid/content/pm/PackageManager;)Ljava/util/List;
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/pm/PackageManager;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -5508,8 +5384,6 @@
 
 .method private getSamsungWidgets(Landroid/content/pm/PackageManager;I)Ljava/util/List;
     .locals 10
-    .param p1    # Landroid/content/pm/PackageManager;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -5614,8 +5488,6 @@
 
 .method private getSurfaceWidgets(Landroid/content/pm/PackageManager;I)Ljava/util/List;
     .locals 10
-    .param p1    # Landroid/content/pm/PackageManager;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -5695,8 +5567,6 @@
 
 .method private getUsbDevicesForDefaultAccessAsUser(ILjava/lang/String;)Ljava/util/List;
     .locals 16
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -5949,7 +5819,6 @@
 
 .method private static getValidStr(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -5987,7 +5856,6 @@
 
 .method private getWidgetProviderDisabledList(I)Ljava/util/Set;
     .locals 9
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -6052,8 +5920,6 @@
 
 .method private installExistingApplication(Ljava/lang/String;I)I
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -6084,8 +5950,6 @@
 
 .method private isActiveAdmin(Ljava/lang/String;I)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v1, 0x1
 
@@ -6137,10 +6001,6 @@
 
 .method private isApplicationInstallationEnabledInternal(ILjava/lang/String;Landroid/content/pm/PackageParser$Package;Z)Z
     .locals 23
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/content/pm/PackageParser$Package;
-    .param p4    # Z
 
     const/4 v12, 0x1
 
@@ -7044,8 +6904,6 @@
 
 .method private isApplicationInstalledInternal(Ljava/lang/String;I)Z
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v3, 0x0
 
@@ -7116,10 +6974,6 @@
 
 .method private isApplicationStateBlocked(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     invoke-static {}, Landroid/os/UserHandle;->getCallingUserId()I
 
@@ -7144,11 +6998,6 @@
 
 .method private declared-synchronized isApplicationStateBlocked(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;I)Z
     .locals 15
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
 
     monitor-enter p0
 
@@ -7530,10 +7379,6 @@
 
 .method private isApplicationStateBlocked(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
 
     const/4 v1, 0x0
 
@@ -7556,7 +7401,6 @@
 
 .method private isSystemApp(Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -7591,7 +7435,6 @@
 
 .method private isUserManagedByEnterpriseAdmin(I)Z
     .locals 6
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -7667,8 +7510,6 @@
 
 .method private isWidgetAllowed(Ljava/lang/String;I)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const-string v0, "PackageNameWidgetBlacklist"
 
@@ -8989,10 +8830,6 @@
 
 .method private manageHomeShorcut(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 28
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     const/16 v17, 0x0
 
@@ -9338,8 +9175,6 @@
 
 .method private notifyApplicationChanged(Ljava/lang/String;I)V
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v6, 0x0
 
@@ -9462,7 +9297,6 @@
 
 .method private putWidgetProviderDisabledList(Ljava/util/Set;I)V
     .locals 6
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -9536,8 +9370,6 @@
 
 .method private readAppMemoryInfo(ZI)Ljava/util/List;
     .locals 26
-    .param p1    # Z
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(ZI)",
@@ -9896,7 +9728,6 @@
 
 .method private readAppSizeInfo(I)Ljava/util/List;
     .locals 16
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -10083,7 +9914,6 @@
 
 .method private readData(Ljava/lang/String;)Ljava/lang/String;
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -10458,7 +10288,6 @@
 
 .method private refreshWidgetStatus(I)V
     .locals 24
-    .param p1    # I
 
     const-string v20, "ApplicationPolicy"
 
@@ -10871,7 +10700,6 @@
 
 .method private refreshWidgetStatus(Ljava/util/List;Landroid/content/Context;)V
     .locals 11
-    .param p2    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -11115,9 +10943,6 @@
 
 .method private declared-synchronized removeApplicationStateList(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;ILjava/util/List;)Z
     .locals 9
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -11257,11 +11082,6 @@
 
 .method private declared-synchronized setApplicationComponentNameControlState(ILandroid/content/ComponentName;IIZ)Z
     .locals 8
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Z
 
     monitor-enter p0
 
@@ -11351,10 +11171,6 @@
 
 .method private declared-synchronized setApplicationComponentNameControlState(ILandroid/content/ComponentName;IZ)Z
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # I
-    .param p4    # Z
 
     monitor-enter p0
 
@@ -11391,9 +11207,6 @@
 
 .method private setApplicationPermissionControlState(Ljava/lang/String;IZ)Z
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Z
 
     int-to-long v0, p2
 
@@ -11506,11 +11319,6 @@
 
 .method private declared-synchronized setApplicationPkgNameControlState(Ljava/lang/String;IIIZ)Z
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Z
 
     monitor-enter p0
 
@@ -12763,10 +12571,6 @@
 
 .method private declared-synchronized setApplicationPkgNameControlState(Ljava/lang/String;IIZ)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Z
 
     monitor-enter p0
 
@@ -12803,10 +12607,6 @@
 
 .method private setApplicationSignatureControlState(Ljava/lang/String;IIZ)Z
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Z
 
     iget-object v0, p0, Lcom/android/server/enterprise/application/ApplicationPolicy;->mEdmStorageProvider:Lcom/android/server/enterprise/storage/EdmStorageProvider;
 
@@ -13042,9 +12842,6 @@
 
 .method private setInstallSourceMDM(ILjava/lang/String;Z)V
     .locals 7
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     const/4 v6, 0x1
 
@@ -13085,9 +12882,6 @@
 
 .method private setManagedApp(ILjava/lang/String;Z)V
     .locals 7
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     const/4 v6, 0x1
 
@@ -13128,8 +12922,6 @@
 
 .method private startCachedAppsForActiveUser(JI)V
     .locals 12
-    .param p1    # J
-    .param p3    # I
 
     const-string v10, "ApplicationPolicy"
 
@@ -13246,9 +13038,6 @@
 
 .method private storeAppInfoForLateStart(JLjava/lang/String;Ljava/lang/String;)V
     .locals 5
-    .param p1    # J
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     move-object v1, p3
 
@@ -13327,9 +13116,6 @@
 
 .method private updateCount(ILjava/lang/String;Ljava/lang/String;)V
     .locals 7
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/server/enterprise/application/ApplicationPolicy;->mEdmStorageProvider:Lcom/android/server/enterprise/storage/EdmStorageProvider;
 
@@ -13384,7 +13170,6 @@
 
 .method private updateSystemAppDisableState(Ljava/lang/String;)V
     .locals 10
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -13463,7 +13248,6 @@
 # virtual methods
 .method public addAppNotificationBlackList(Landroid/app/enterprise/ContextInfo;Ljava/util/List;)Z
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -13488,7 +13272,6 @@
 
 .method public addAppNotificationWhiteList(Landroid/app/enterprise/ContextInfo;Ljava/util/List;)Z
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -13513,8 +13296,6 @@
 
 .method public addAppPackageNameToBlackList(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const-string v0, "ApplicationPolicy"
 
@@ -13573,8 +13354,6 @@
 
 .method public addAppPackageNameToWhiteList(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const-string v0, "ApplicationPolicy"
 
@@ -13617,8 +13396,6 @@
 
 .method public addAppPermissionToBlackList(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     if-nez p2, :cond_0
 
@@ -13645,8 +13422,6 @@
 
 .method public addAppSignatureToBlackList(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const/4 v1, 0x1
 
@@ -13673,8 +13448,6 @@
 
 .method public addAppSignatureToWhiteList(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/application/ApplicationPolicy;->enforceAppPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -13703,9 +13476,6 @@
 
 .method public addHomeShortcut(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/application/ApplicationPolicy;->enforceAppPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -13722,8 +13492,6 @@
 
 .method public addPackageToInstallWhiteList(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 13
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/application/ApplicationPolicy;->enforceAppPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -13933,7 +13701,6 @@
 
 .method public addPackagesToClearCacheBlackList(Landroid/app/enterprise/ContextInfo;Ljava/util/List;)Z
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -13958,7 +13725,6 @@
 
 .method public addPackagesToClearCacheWhiteList(Landroid/app/enterprise/ContextInfo;Ljava/util/List;)Z
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -13983,7 +13749,6 @@
 
 .method public addPackagesToClearDataBlackList(Landroid/app/enterprise/ContextInfo;Ljava/util/List;)Z
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -14008,7 +13773,6 @@
 
 .method public addPackagesToClearDataWhiteList(Landroid/app/enterprise/ContextInfo;Ljava/util/List;)Z
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -14033,7 +13797,6 @@
 
 .method public addPackagesToDisableClipboardBlackList(Landroid/app/enterprise/ContextInfo;Ljava/util/List;)Z
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -14058,7 +13821,6 @@
 
 .method public addPackagesToDisableClipboardWhiteList(Landroid/app/enterprise/ContextInfo;Ljava/util/List;)Z
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -14083,7 +13845,6 @@
 
 .method public addPackagesToDisableUpdateBlackList(Landroid/app/enterprise/ContextInfo;Ljava/util/List;)Z
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -14112,7 +13873,6 @@
 
 .method public addPackagesToDisableUpdateWhiteList(Landroid/app/enterprise/ContextInfo;Ljava/util/List;)Z
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -14141,7 +13901,6 @@
 
 .method public addPackagesToForceStopBlackList(Landroid/app/enterprise/ContextInfo;Ljava/util/List;)Z
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -14166,7 +13925,6 @@
 
 .method public addPackagesToForceStopWhiteList(Landroid/app/enterprise/ContextInfo;Ljava/util/List;)Z
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -14191,7 +13949,6 @@
 
 .method public addPackagesToPreventStartBlackList(Landroid/app/enterprise/ContextInfo;Ljava/util/List;)Ljava/util/List;
     .locals 10
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -14305,7 +14062,6 @@
 
 .method public addPackagesToWidgetBlackList(Landroid/app/enterprise/ContextInfo;Ljava/util/List;)Z
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -14336,7 +14092,6 @@
 
 .method public addPackagesToWidgetWhiteList(Landroid/app/enterprise/ContextInfo;Ljava/util/List;)Z
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -14367,8 +14122,6 @@
 
 .method public addUsbDevicesForDefaultAccess(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Ljava/util/List;)Z
     .locals 10
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -14571,9 +14324,6 @@
 
 .method public backupApplicationData(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Landroid/os/ParcelFileDescriptor;)I
     .locals 22
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/os/ParcelFileDescriptor;
 
     invoke-direct/range {p0 .. p1}, Lcom/android/server/enterprise/application/ApplicationPolicy;->enforceBackupAppPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -15036,9 +14786,6 @@
 
 .method public changeApplicationIcon(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;[B)Z
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # [B
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/application/ApplicationPolicy;->enforceAppPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -15059,9 +14806,6 @@
 
 .method public changeApplicationName(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/application/ApplicationPolicy;->enforceAppPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -15143,7 +14887,6 @@
 
 .method public clearDisableClipboardBlackList(Landroid/app/enterprise/ContextInfo;)Z
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const-string v0, "PackageNameDisableClipboardBlackList"
 
@@ -15158,7 +14901,6 @@
 
 .method public clearDisableClipboardWhiteList(Landroid/app/enterprise/ContextInfo;)Z
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const-string v0, "PackageNameDisableClipboardWhitelist"
 
@@ -15173,7 +14915,6 @@
 
 .method public clearDisableUpdateBlackList(Landroid/app/enterprise/ContextInfo;)Z
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/application/ApplicationPolicy;->enforceOwnerOnlyAndAppPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -15192,7 +14933,6 @@
 
 .method public clearDisableUpdateWhiteList(Landroid/app/enterprise/ContextInfo;)Z
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/application/ApplicationPolicy;->enforceOwnerOnlyAndAppPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -15211,7 +14951,6 @@
 
 .method public clearPreventStartBlackList(Landroid/app/enterprise/ContextInfo;)Z
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const-string v0, "PackageNameStartBlacklist"
 
@@ -15226,8 +14965,6 @@
 
 .method public clearUsbDevicesForDefaultAccess(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/application/ApplicationPolicy;->enforceAppPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -15276,9 +15013,6 @@
 
 .method public deleteHomeShortcut(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/application/ApplicationPolicy;->enforceAppPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -15295,8 +15029,6 @@
 
 .method public deleteManagedAppInfo(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const/4 v4, 0x1
 
@@ -15436,7 +15168,6 @@
 
 .method public deletePackageFromAppUsageDb(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Lcom/android/server/enterprise/application/ApplicationUsage;
 
@@ -15453,9 +15184,6 @@
 
 .method public enableOcspCheck(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Z)Z
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     const/4 v1, 0x0
 
@@ -15502,9 +15230,6 @@
 
 .method public enableRevocationCheck(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Z)Z
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     const/4 v1, 0x0
 
@@ -15551,7 +15276,6 @@
 
 .method public getAllAppLastUsage(Landroid/app/enterprise/ContextInfo;)[Landroid/app/enterprise/AppInfoLastUsage;
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/application/ApplicationPolicy;->enforceAppPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -15576,8 +15300,6 @@
 
 .method public getAllWidgets(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Ljava/util/Map;
     .locals 28
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -16072,7 +15794,6 @@
 
 .method public getAppInstallToSdCard(Landroid/app/enterprise/ContextInfo;)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v1, 0x0
 
@@ -16119,7 +15840,6 @@
 
 .method public getAppInstallationMode(Landroid/app/enterprise/ContextInfo;)I
     .locals 10
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v6, 0x1
 
@@ -16344,8 +16064,6 @@
 
 .method public getAppNotificationBlackList(Landroid/app/enterprise/ContextInfo;Z)Ljava/util/List;
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -16369,8 +16087,6 @@
 
 .method public getAppNotificationWhiteList(Landroid/app/enterprise/ContextInfo;Z)Ljava/util/List;
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -16394,7 +16110,6 @@
 
 .method public getAppPackageNamesAllBlackLists(Landroid/app/enterprise/ContextInfo;)Ljava/util/List;
     .locals 12
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -16634,7 +16349,6 @@
 
 .method public getAppPackageNamesAllWhiteLists(Landroid/app/enterprise/ContextInfo;)Ljava/util/List;
     .locals 12
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -16874,7 +16588,6 @@
 
 .method public getAppPermissionsAllBlackLists(Landroid/app/enterprise/ContextInfo;)Ljava/util/List;
     .locals 12
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -17114,7 +16827,6 @@
 
 .method public getAppPermissionsBlackList(Landroid/app/enterprise/ContextInfo;)[Ljava/lang/String;
     .locals 8
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const-string v3, "ApplicationPolicy"
 
@@ -17210,7 +16922,6 @@
 
 .method public getAppSignatureBlackList(Landroid/app/enterprise/ContextInfo;)[Ljava/lang/String;
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v4, 0x0
 
@@ -17312,7 +17023,6 @@
 
 .method public getAppSignaturesAllBlackLists(Landroid/app/enterprise/ContextInfo;)Ljava/util/List;
     .locals 12
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -17574,7 +17284,6 @@
 
 .method public getAppSignaturesAllWhiteLists(Landroid/app/enterprise/ContextInfo;)Ljava/util/List;
     .locals 12
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -17824,7 +17533,6 @@
 
 .method public getAppSignaturesWhiteList(Landroid/app/enterprise/ContextInfo;)[Ljava/lang/String;
     .locals 8
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v4, 0x0
 
@@ -17949,8 +17657,6 @@
 
 .method public getApplicationCacheSize(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)J
     .locals 8
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/application/ApplicationPolicy;->enforceAppPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -18031,8 +17737,6 @@
 
 .method public getApplicationCodeSize(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)J
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/application/ApplicationPolicy;->enforceAppPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -18077,9 +17781,6 @@
 
 .method public getApplicationComponentState(ILandroid/content/ComponentName;I)Z
     .locals 11
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # I
 
     if-nez p2, :cond_1
 
@@ -18285,8 +17986,6 @@
 
 .method public getApplicationComponentState(Landroid/app/enterprise/ContextInfo;Landroid/content/ComponentName;)Z
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Landroid/content/ComponentName;
 
     invoke-static {p1}, Lcom/android/server/enterprise/EnterpriseDeviceManagerService;->getCallingOrCurrentUserId(Landroid/app/enterprise/ContextInfo;)I
 
@@ -18312,8 +18011,6 @@
 
 .method public getApplicationCpuUsage(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)J
     .locals 10
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const-wide/16 v6, 0x0
 
@@ -18440,8 +18137,6 @@
 
 .method public getApplicationDataSize(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)J
     .locals 8
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/application/ApplicationPolicy;->enforceAppPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -18522,8 +18217,6 @@
 
 .method public getApplicationIconFromDb(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)[B
     .locals 4
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -18577,8 +18270,6 @@
 
 .method public getApplicationInstallationEnabled(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     invoke-static {p1}, Lcom/android/server/enterprise/EnterpriseDeviceManagerService;->getCallingOrCurrentUserId(Landroid/app/enterprise/ContextInfo;)I
 
@@ -18597,8 +18288,6 @@
 
 .method public getApplicationMemoryUsage(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)J
     .locals 13
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/application/ApplicationPolicy;->enforceAppPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -18757,8 +18446,6 @@
 
 .method public getApplicationName(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Ljava/lang/String;
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/application/ApplicationPolicy;->enforceAppPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -18807,8 +18494,6 @@
 
 .method public getApplicationNameFromDb(Ljava/lang/String;I)Ljava/lang/String;
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -18880,8 +18565,6 @@
 
 .method public getApplicationNotificationMode(Landroid/app/enterprise/ContextInfo;Z)I
     .locals 11
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     const/4 v7, 0x4
 
@@ -19020,8 +18703,6 @@
 
 .method public getApplicationStateEnabled(ILjava/lang/String;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     invoke-static {}, Landroid/os/Binder;->getCallingUid()I
 
@@ -19040,9 +18721,6 @@
 
 .method public getApplicationStateEnabled(ILjava/lang/String;I)Z
     .locals 12
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     const/4 v8, 0x0
 
@@ -19307,8 +18985,6 @@
 
 .method public getApplicationStateEnabled(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     iget v0, p1, Landroid/app/enterprise/ContextInfo;->mContainerId:I
 
@@ -19334,9 +19010,6 @@
 
 .method public getApplicationStateEnabled(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Z)Z
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     invoke-virtual {p0, p1, p2}, Lcom/android/server/enterprise/application/ApplicationPolicy;->getApplicationStateEnabled(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
 
@@ -19356,9 +19029,6 @@
 
 .method public getApplicationStateEnabledAsUser(Ljava/lang/String;ZI)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # I
 
     invoke-static {}, Landroid/os/Binder;->getCallingUid()I
 
@@ -19386,8 +19056,6 @@
 
 .method public getApplicationStateList(Landroid/app/enterprise/ContextInfo;Z)[Ljava/lang/String;
     .locals 6
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/application/ApplicationPolicy;->enforceAppPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -19484,8 +19152,6 @@
 
 .method public getApplicationTotalSize(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)J
     .locals 9
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/application/ApplicationPolicy;->enforceAppPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -19538,8 +19204,6 @@
 
 .method public getApplicationUid(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)I
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/application/ApplicationPolicy;->enforceAppPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -19578,8 +19242,6 @@
 
 .method public getApplicationUninstallationEnabled(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     invoke-static {p1}, Lcom/android/server/enterprise/EnterpriseDeviceManagerService;->getCallingOrCurrentUserId(Landroid/app/enterprise/ContextInfo;)I
 
@@ -19594,8 +19256,6 @@
 
 .method public getApplicationUninstallationEnabled(Ljava/lang/String;I)Z
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v5, 0x0
 
@@ -19673,7 +19333,6 @@
 
 .method public getApplicationUninstallationMode(Landroid/app/enterprise/ContextInfo;)I
     .locals 10
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v6, 0x1
 
@@ -19874,8 +19533,6 @@
 
 .method public getApplicationVersion(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/application/ApplicationPolicy;->enforceAppPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -19914,8 +19571,6 @@
 
 .method public getApplicationVersionCode(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)I
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/application/ApplicationPolicy;->enforceAppPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -19954,8 +19609,6 @@
 
 .method public getApplicationsList(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)[Landroid/app/enterprise/ManagedAppInfo;
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/application/ApplicationPolicy;->enforceAppPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -19970,7 +19623,6 @@
 
 .method public getAvgNoAppUsagePerMonth(Landroid/app/enterprise/ContextInfo;)[Landroid/app/enterprise/AppInfoLastUsage;
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/application/ApplicationPolicy;->enforceAppPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -19995,7 +19647,6 @@
 
 .method public getDisabledPackages(I)Ljava/util/List;
     .locals 10
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -20131,9 +19782,6 @@
 
 .method public getHomeShortcuts(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Z)Ljava/util/List;
     .locals 28
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -20506,7 +20154,6 @@
 
 .method public getInstalledApplicationsIDList(Landroid/app/enterprise/ContextInfo;)[Ljava/lang/String;
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/application/ApplicationPolicy;->enforceAppPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -20523,8 +20170,6 @@
 
 .method getInstalledApplicationsIDListExtended(Landroid/app/enterprise/ContextInfo;Z)[Ljava/lang/String;
     .locals 11
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     const/4 v6, 0x0
 
@@ -20631,7 +20276,6 @@
 
 .method public getInstalledManagedApplicationsList(Landroid/app/enterprise/ContextInfo;)[Ljava/lang/String;
     .locals 17
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct/range {p0 .. p1}, Lcom/android/server/enterprise/application/ApplicationPolicy;->enforceAppPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -20889,7 +20533,6 @@
 
 .method public getNetworkStats(Landroid/app/enterprise/ContextInfo;)Ljava/util/ArrayList;
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -20919,7 +20562,6 @@
 
 .method public bridge synthetic getNetworkStats(Landroid/app/enterprise/ContextInfo;)Ljava/util/List;
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -20935,7 +20577,6 @@
 
 .method public getPackagesFromClearCacheBlackList(Landroid/app/enterprise/ContextInfo;)Ljava/util/List;
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -20959,7 +20600,6 @@
 
 .method public getPackagesFromClearCacheWhiteList(Landroid/app/enterprise/ContextInfo;)Ljava/util/List;
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -20983,7 +20623,6 @@
 
 .method public getPackagesFromClearDataBlackList(Landroid/app/enterprise/ContextInfo;)Ljava/util/List;
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -21007,7 +20646,6 @@
 
 .method public getPackagesFromClearDataWhiteList(Landroid/app/enterprise/ContextInfo;)Ljava/util/List;
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -21031,7 +20669,6 @@
 
 .method public getPackagesFromDisableClipboardBlackList(Landroid/app/enterprise/ContextInfo;)Ljava/util/List;
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -21055,7 +20692,6 @@
 
 .method public getPackagesFromDisableClipboardWhiteList(Landroid/app/enterprise/ContextInfo;)Ljava/util/List;
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -21079,7 +20715,6 @@
 
 .method public getPackagesFromDisableUpdateBlackList(Landroid/app/enterprise/ContextInfo;)Ljava/util/List;
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -21111,7 +20746,6 @@
 
 .method public getPackagesFromDisableUpdateWhiteList(Landroid/app/enterprise/ContextInfo;)Ljava/util/List;
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -21143,7 +20777,6 @@
 
 .method public getPackagesFromForceStopBlackList(Landroid/app/enterprise/ContextInfo;)Ljava/util/List;
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -21167,7 +20800,6 @@
 
 .method public getPackagesFromForceStopWhiteList(Landroid/app/enterprise/ContextInfo;)Ljava/util/List;
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -21191,7 +20823,6 @@
 
 .method public getPackagesFromInstallWhiteList(Landroid/app/enterprise/ContextInfo;)Ljava/util/List;
     .locals 16
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -21387,7 +21018,6 @@
 
 .method public getPackagesFromPreventStartBlackList(Landroid/app/enterprise/ContextInfo;)Ljava/util/List;
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -21411,7 +21041,6 @@
 
 .method public getPackagesFromWidgetBlackList(Landroid/app/enterprise/ContextInfo;)Ljava/util/List;
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -21435,7 +21064,6 @@
 
 .method public getPackagesFromWidgetWhiteList(Landroid/app/enterprise/ContextInfo;)Ljava/util/List;
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -21459,9 +21087,6 @@
 
 .method public getTopNCPUUsageApp(Landroid/app/enterprise/ContextInfo;IZ)Ljava/util/List;
     .locals 23
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # I
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -21853,8 +21478,6 @@
 
 .method public getTopNDataUsageApp(Landroid/app/enterprise/ContextInfo;I)Ljava/util/List;
     .locals 8
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -21954,9 +21577,6 @@
 
 .method public getTopNMemoryUsageApp(Landroid/app/enterprise/ContextInfo;IZ)Ljava/util/List;
     .locals 10
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # I
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -22098,8 +21718,6 @@
 
 .method public getUsbDevicesForDefaultAccess(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Ljava/util/List;
     .locals 4
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -22156,10 +21774,6 @@
 
 .method public installAppWithCallback(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;ZLcom/sec/enterprise/knox/IEnterpriseContainerCallback;)Z
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
-    .param p4    # Lcom/sec/enterprise/knox/IEnterpriseContainerCallback;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/application/ApplicationPolicy;->enforceAppPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -22176,9 +21790,6 @@
 
 .method public installApplication(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Z)Z
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/application/ApplicationPolicy;->enforceAppPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -22197,9 +21808,6 @@
 
 .method public installApplicationBySystem(ILjava/lang/String;Z)Z
     .locals 2
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     invoke-static {}, Landroid/os/Binder;->getCallingPid()I
 
@@ -22229,8 +21837,6 @@
 
 .method public installExistingApplication(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 10
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const/4 v8, 0x0
 
@@ -22328,10 +21934,6 @@
 
 .method public isApplicationClearCacheDisabled(ILjava/lang/String;IZ)Z
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Z
 
     const-string v2, "PackageNameClearCacheBlacklist"
 
@@ -22377,9 +21979,6 @@
 
 .method public isApplicationClearCacheDisabled(Ljava/lang/String;IZ)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Z
 
     invoke-static {p1}, Lcom/sec/enterprise/knox/EnterpriseContainerManager;->getContainerId(Ljava/lang/String;)I
 
@@ -22394,10 +21993,6 @@
 
 .method public isApplicationClearDataDisabled(ILjava/lang/String;IZ)Z
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Z
 
     const-string v2, "PackageNameClearDataBlacklist"
 
@@ -22443,9 +22038,6 @@
 
 .method public isApplicationClearDataDisabled(Ljava/lang/String;IZ)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Z
 
     invoke-static {p1}, Lcom/sec/enterprise/knox/EnterpriseContainerManager;->getContainerId(Ljava/lang/String;)I
 
@@ -22460,9 +22052,6 @@
 
 .method public isApplicationForceStopDisabled(Ljava/lang/String;IZ)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Z
 
     const-string v0, "PackageNameStopBlacklist"
 
@@ -22500,8 +22089,6 @@
 
 .method public isApplicationInstallationEnabled(Ljava/lang/String;Landroid/content/pm/PackageParser$Package;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/pm/PackageParser$Package;
 
     new-instance v0, Landroid/app/enterprise/ContextInfo;
 
@@ -22526,9 +22113,6 @@
 
 .method public isApplicationInstallationEnabled(Ljava/lang/String;Landroid/content/pm/PackageParser$Package;I)Z
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/pm/PackageParser$Package;
-    .param p3    # I
 
     const/4 v5, 0x0
 
@@ -22608,8 +22192,6 @@
 
 .method public isApplicationInstalled(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     invoke-static {p1}, Lcom/android/server/enterprise/EnterpriseDeviceManagerService;->getCallingOrCurrentUserId(Landroid/app/enterprise/ContextInfo;)I
 
@@ -22624,8 +22206,6 @@
 
 .method public isApplicationInstalled(Ljava/lang/String;I)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/enterprise/application/ApplicationPolicy;->isApplicationInstalledInternal(Ljava/lang/String;I)Z
 
@@ -22636,8 +22216,6 @@
 
 .method public isApplicationRunning(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p0, p1, p2}, Lcom/android/server/enterprise/application/ApplicationPolicy;->isApplicationRunningInternal(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)I
 
@@ -22660,8 +22238,6 @@
 
 .method public isApplicationRunningInternal(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)I
     .locals 13
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const/4 v4, -0x1
 
@@ -22797,8 +22373,6 @@
 
 .method public isApplicationStartDisabledAsUser(Ljava/lang/String;I)Z
     .locals 13
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const-string v10, "PackageNameStartBlacklist"
 
@@ -22991,7 +22565,6 @@
 
 .method public isIntentDisabled(Landroid/content/Intent;)Z
     .locals 11
-    .param p1    # Landroid/content/Intent;
 
     const/4 v7, 0x1
 
@@ -23199,9 +22772,6 @@
 
 .method isManagedAppInfo(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;[Landroid/app/enterprise/ManagedAppInfo;)Landroid/app/enterprise/ManagedAppInfo;
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # [Landroid/app/enterprise/ManagedAppInfo;
 
     if-nez p3, :cond_0
 
@@ -23271,8 +22841,6 @@
 
 .method public isMetaKeyEventRequested(Landroid/app/enterprise/ContextInfo;Landroid/content/ComponentName;)Z
     .locals 4
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Landroid/content/ComponentName;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/application/ApplicationPolicy;->enforceAppPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -23336,8 +22904,6 @@
 
 .method public isOcspCheckEnabled(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const-string v0, "OcspCheck"
 
@@ -23350,8 +22916,6 @@
 
 .method public isPackageClipboardAllowed(Ljava/lang/String;I)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const-string v0, "PackageNameDisableClipboardBlackList"
 
@@ -23376,8 +22940,6 @@
 
 .method public isPackageInInstallWhiteList(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 16
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     move-object/from16 v0, p1
 
@@ -23619,8 +23181,6 @@
 
 .method public isPackageUpdateAllowed(Ljava/lang/String;Z)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const/4 v0, 0x0
 
@@ -23658,8 +23218,6 @@
 
 .method public isRevocationCheckEnabled(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const-string v0, "RevocationCheck"
 
@@ -23672,8 +23230,6 @@
 
 .method public isStatusBarNotificationAllowed(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const-string v1, "ApplicationPolicy"
 
@@ -23724,9 +23280,6 @@
 
 .method public isUsbDevicePermittedForPackage(ILandroid/hardware/usb/UsbDevice;Ljava/lang/String;)Z
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/hardware/usb/UsbDevice;
-    .param p3    # Ljava/lang/String;
 
     const-string v3, "ApplicationPolicy"
 
@@ -23835,8 +23388,6 @@
 
 .method public isWidgetAllowed(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     invoke-static {p1}, Lcom/android/server/enterprise/EnterpriseDeviceManagerService;->getCallingOrCurrentUserId(Landroid/app/enterprise/ContextInfo;)I
 
@@ -23851,14 +23402,12 @@
 
 .method public onAdminAdded(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onAdminRemoved(I)V
     .locals 4
-    .param p1    # I
 
     invoke-direct {p0}, Lcom/android/server/enterprise/application/ApplicationPolicy;->loadApplicationBlacklistWhitelist()V
 
@@ -23898,8 +23447,6 @@
 
 .method public onContainerCreation(II)V
     .locals 10
-    .param p1    # I
-    .param p2    # I
 
     const-string v0, "ApplicationPolicy"
 
@@ -24067,8 +23614,6 @@
 
 .method public onContainerRemoved(II)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
 
     const-string v2, "ApplicationPolicy"
 
@@ -24132,7 +23677,6 @@
 
 .method public onPreAdminRemoval(I)V
     .locals 0
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/application/ApplicationPolicy;->checkApplicationsStateToBeReconciled(I)V
 
@@ -24143,8 +23687,6 @@
 
 .method public onPreContainerRemoval(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     const-string v0, "ApplicationPolicy"
 
@@ -24189,7 +23731,6 @@
 
 .method public removeAppNotificationBlackList(Landroid/app/enterprise/ContextInfo;Ljava/util/List;)Z
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -24214,7 +23755,6 @@
 
 .method public removeAppNotificationWhiteList(Landroid/app/enterprise/ContextInfo;Ljava/util/List;)Z
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -24239,8 +23779,6 @@
 
 .method public removeAppPackageNameFromBlackList(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -24281,8 +23819,6 @@
 
 .method public removeAppPackageNameFromWhiteList(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -24323,8 +23859,6 @@
 
 .method public removeAppPermissionFromBlackList(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/application/ApplicationPolicy;->enforceAppPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -24343,8 +23877,6 @@
 
 .method public removeAppSignatureFromBlackList(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/application/ApplicationPolicy;->enforceAppPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -24365,8 +23897,6 @@
 
 .method public removeAppSignatureFromWhiteList(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/application/ApplicationPolicy;->enforceAppPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -24387,7 +23917,6 @@
 
 .method public removeManagedApplications(Landroid/app/enterprise/ContextInfo;Ljava/util/List;)Ljava/util/ArrayList;
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -24473,8 +24002,6 @@
 
 .method public bridge synthetic removeManagedApplications(Landroid/app/enterprise/ContextInfo;Ljava/util/List;)Ljava/util/List;
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/util/List;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -24490,8 +24017,6 @@
 
 .method public removePackageFromInstallWhiteList(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 13
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -24672,7 +24197,6 @@
 
 .method public removePackagesFromClearCacheBlackList(Landroid/app/enterprise/ContextInfo;Ljava/util/List;)Z
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -24697,7 +24221,6 @@
 
 .method public removePackagesFromClearCacheWhiteList(Landroid/app/enterprise/ContextInfo;Ljava/util/List;)Z
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -24722,7 +24245,6 @@
 
 .method public removePackagesFromClearDataBlackList(Landroid/app/enterprise/ContextInfo;Ljava/util/List;)Z
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -24747,7 +24269,6 @@
 
 .method public removePackagesFromClearDataWhiteList(Landroid/app/enterprise/ContextInfo;Ljava/util/List;)Z
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -24772,7 +24293,6 @@
 
 .method public removePackagesFromDisableClipboardBlackList(Landroid/app/enterprise/ContextInfo;Ljava/util/List;)Z
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -24797,7 +24317,6 @@
 
 .method public removePackagesFromDisableClipboardWhiteList(Landroid/app/enterprise/ContextInfo;Ljava/util/List;)Z
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -24822,7 +24341,6 @@
 
 .method public removePackagesFromDisableUpdateBlackList(Landroid/app/enterprise/ContextInfo;Ljava/util/List;)Z
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -24851,7 +24369,6 @@
 
 .method public removePackagesFromDisableUpdateWhiteList(Landroid/app/enterprise/ContextInfo;Ljava/util/List;)Z
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -24880,7 +24397,6 @@
 
 .method public removePackagesFromForceStopBlackList(Landroid/app/enterprise/ContextInfo;Ljava/util/List;)Z
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -24905,7 +24421,6 @@
 
 .method public removePackagesFromForceStopWhiteList(Landroid/app/enterprise/ContextInfo;Ljava/util/List;)Z
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -24930,7 +24445,6 @@
 
 .method public removePackagesFromPreventStartBlackList(Landroid/app/enterprise/ContextInfo;Ljava/util/List;)Z
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -24955,7 +24469,6 @@
 
 .method public removePackagesFromWidgetBlackList(Landroid/app/enterprise/ContextInfo;Ljava/util/List;)Z
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -24986,7 +24499,6 @@
 
 .method public removePackagesFromWidgetWhiteList(Landroid/app/enterprise/ContextInfo;Ljava/util/List;)Z
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -25017,9 +24529,6 @@
 
 .method public requestMetaKeyEvent(Landroid/app/enterprise/ContextInfo;Landroid/content/ComponentName;Z)V
     .locals 4
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/application/ApplicationPolicy;->enforceAppPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -25078,9 +24587,6 @@
 
 .method public restoreApplicationData(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Landroid/os/ParcelFileDescriptor;)I
     .locals 12
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/os/ParcelFileDescriptor;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/application/ApplicationPolicy;->enforceBackupAppPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -25425,8 +24931,6 @@
 
 .method public setAppInstallToSdCard(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 6
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     const/4 v1, 0x0
 
@@ -25477,8 +24981,6 @@
 
 .method public setAppInstallationMode(Landroid/app/enterprise/ContextInfo;I)Z
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/application/ApplicationPolicy;->enforceAppPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -25514,9 +25016,6 @@
 
 .method public setApplicationComponentState(Landroid/app/enterprise/ContextInfo;Landroid/content/ComponentName;Z)Z
     .locals 12
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/application/ApplicationPolicy;->enforceAppPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -25769,9 +25268,6 @@
 
 .method public setApplicationInstallationDisabled(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Z)V
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/application/ApplicationPolicy;->enforceAppPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -25786,9 +25282,6 @@
 
 .method public setApplicationInstallationDisabled(Ljava/lang/String;ZI)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # I
 
     const/4 v0, 0x0
 
@@ -25801,9 +25294,6 @@
 
 .method public setApplicationInstallationDisabledBySystem(ILjava/lang/String;Z)V
     .locals 2
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     invoke-static {}, Landroid/os/Binder;->getCallingPid()I
 
@@ -25829,8 +25319,6 @@
 
 .method public setApplicationNotificationMode(Landroid/app/enterprise/ContextInfo;I)Z
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/application/ApplicationPolicy;->enforceAppPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -25929,9 +25417,6 @@
 
 .method public setApplicationState(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Z)Z
     .locals 17
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     invoke-direct/range {p0 .. p1}, Lcom/android/server/enterprise/application/ApplicationPolicy;->enforceAppPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -26216,9 +25701,6 @@
 
 .method public setApplicationStateList(Landroid/app/enterprise/ContextInfo;[Ljava/lang/String;Z)[Ljava/lang/String;
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # Z
 
     const/4 v0, 0x0
 
@@ -26344,9 +25826,6 @@
 
 .method public setApplicationUninstallationDisabled(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Z)V
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/application/ApplicationPolicy;->enforceAppPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -26361,9 +25840,6 @@
 
 .method public setApplicationUninstallationDisabled(Ljava/lang/String;ZI)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # I
 
     const/4 v0, 0x0
 
@@ -26376,9 +25852,6 @@
 
 .method public setApplicationUninstallationDisabledBySystem(ILjava/lang/String;Z)V
     .locals 2
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     invoke-static {}, Landroid/os/Binder;->getCallingPid()I
 
@@ -26404,8 +25877,6 @@
 
 .method public setApplicationUninstallationMode(Landroid/app/enterprise/ContextInfo;I)Z
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # I
 
     const/4 v4, 0x1
 
@@ -26477,8 +25948,6 @@
 
 .method public setAsManagedApp(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 8
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const/4 v4, 0x1
 
@@ -26566,9 +26035,6 @@
 
 .method public startApp(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 27
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     invoke-direct/range {p0 .. p1}, Lcom/android/server/enterprise/application/ApplicationPolicy;->enforceAppPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -27038,8 +26504,6 @@
 
 .method public stopApp(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 8
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/application/ApplicationPolicy;->enforceAppPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -27153,9 +26617,6 @@
 
 .method public uninstallApplication(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Z)Z
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/application/ApplicationPolicy;->enforceAppPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -27170,9 +26631,6 @@
 
 .method public uninstallApplicationBySystem(ILjava/lang/String;Z)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     invoke-static {}, Landroid/os/Binder;->getCallingPid()I
 
@@ -27204,9 +26662,6 @@
 
 .method public uninstallApplicationInternalBySystem(ILjava/lang/String;Z)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     invoke-static {}, Landroid/os/Binder;->getCallingPid()I
 
@@ -27238,9 +26693,6 @@
 
 .method public updateApplicationTable(III)Z
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     new-instance v0, Landroid/content/ContentValues;
 
@@ -27311,8 +26763,6 @@
 
 .method public updateWidgetStatus(Landroid/content/ComponentName;I)V
     .locals 10
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # I
 
     iget-object v7, p0, Lcom/android/server/enterprise/application/ApplicationPolicy;->mContext:Landroid/content/Context;
 
@@ -27429,8 +26879,6 @@
 
 .method public wipeApplicationData(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 8
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/application/ApplicationPolicy;->enforceAppPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -27540,12 +26988,6 @@
 
 .method public writeData(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Ljava/lang/String;[BZI)Z
     .locals 21
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # [B
-    .param p5    # Z
-    .param p6    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

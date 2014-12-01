@@ -96,7 +96,7 @@
 
     iget-object v1, p0, Lcom/android/phone/MobileNetworkSettings$16;->this$0:Lcom/android/phone/MobileNetworkSettings;
 
-    invoke-virtual {v1}, Landroid/content/ContextWrapper;->getBaseContext()Landroid/content/Context;
+    invoke-virtual {v1}, Lcom/android/phone/MobileNetworkSettings;->getBaseContext()Landroid/content/Context;
 
     move-result-object v1
 

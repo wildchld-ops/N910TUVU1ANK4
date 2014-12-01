@@ -106,7 +106,7 @@
     return-object v3
 
     :cond_1
-    invoke-virtual {p0}, Landroid/content/ContentProvider;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/SettingSearchProvider;->getContext()Landroid/content/Context;
 
     move-result-object v6
 

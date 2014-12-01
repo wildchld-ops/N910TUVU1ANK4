@@ -105,7 +105,7 @@
     .locals 7
     .param p1    # Landroid/preference/Preference;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->isAdded()Z
+    invoke-virtual {p0}, Lcom/android/phone/GsmUmtsVideoCallForwardOptions;->isAdded()Z
 
     move-result v0
 
@@ -122,7 +122,7 @@
     return-void
 
     :cond_1
-    invoke-virtual {p0}, Landroid/preference/PreferenceFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/phone/GsmUmtsVideoCallForwardOptions;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
@@ -145,11 +145,11 @@
 
     if-ne v0, p1, :cond_2
 
-    invoke-virtual {p0}, Landroid/preference/PreferenceFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/phone/GsmUmtsVideoCallForwardOptions;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
-    invoke-virtual {p0}, Landroid/preference/PreferenceFragment;->getListView()Landroid/widget/ListView;
+    invoke-virtual {p0}, Lcom/android/phone/GsmUmtsVideoCallForwardOptions;->getListView()Landroid/widget/ListView;
 
     move-result-object v1
 
@@ -211,7 +211,7 @@
     return-void
 
     :cond_2
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/GsmUmtsVideoCallForwardOptions;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -278,7 +278,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/android/phone/EditPhoneNumberPreference;->onPickActivityResult(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lcom/android/phone/CallForwardEditPreference;->onPickActivityResult(Ljava/lang/String;)V
 
     goto :goto_1
 
@@ -289,7 +289,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/android/phone/EditPhoneNumberPreference;->onPickActivityResult(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lcom/android/phone/CallForwardEditPreference;->onPickActivityResult(Ljava/lang/String;)V
 
     goto :goto_1
 
@@ -300,7 +300,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/android/phone/EditPhoneNumberPreference;->onPickActivityResult(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lcom/android/phone/CallForwardEditPreference;->onPickActivityResult(Ljava/lang/String;)V
 
     goto :goto_1
 
@@ -311,7 +311,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/android/phone/EditPhoneNumberPreference;->onPickActivityResult(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lcom/android/phone/CallForwardEditPreference;->onPickActivityResult(Ljava/lang/String;)V
 
     goto :goto_1
 
@@ -334,7 +334,7 @@
 
     const/4 v7, 0x1
 
-    invoke-super {p0, p1}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/phone/TimeConsumingPreferenceActivity;->onCreate(Landroid/os/Bundle;)V
 
     const-string v6, "feature_multisim"
 
@@ -393,11 +393,11 @@
 
     invoke-static {v6, v9}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getArguments()Landroid/os/Bundle;
+    invoke-virtual {p0}, Lcom/android/phone/GsmUmtsVideoCallForwardOptions;->getArguments()Landroid/os/Bundle;
 
     move-result-object v1
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/GsmUmtsVideoCallForwardOptions;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v6
 
@@ -433,9 +433,9 @@
     :goto_0
     const v6, 0x7f06004e
 
-    invoke-virtual {p0, v6}, Landroid/preference/PreferenceFragment;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v6}, Lcom/android/phone/GsmUmtsVideoCallForwardOptions;->addPreferencesFromResource(I)V
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getActionBar()Landroid/app/ActionBar;
+    invoke-virtual {p0}, Lcom/android/phone/GsmUmtsVideoCallForwardOptions;->getActionBar()Landroid/app/ActionBar;
 
     move-result-object v0
 
@@ -444,13 +444,13 @@
     invoke-virtual {v0, v7}, Landroid/app/ActionBar;->setDisplayHomeAsUpEnabled(Z)V
 
     :cond_2
-    invoke-virtual {p0}, Landroid/preference/PreferenceFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/phone/GsmUmtsVideoCallForwardOptions;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v3
 
     const-string v6, "button_vcfu_key"
 
-    invoke-virtual {v3, v6}, Landroid/preference/PreferenceGroup;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {v3, v6}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v6
 
@@ -460,7 +460,7 @@
 
     const-string v6, "button_vcfb_key"
 
-    invoke-virtual {v3, v6}, Landroid/preference/PreferenceGroup;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {v3, v6}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v6
 
@@ -470,7 +470,7 @@
 
     const-string v6, "button_vcfnry_key"
 
-    invoke-virtual {v3, v6}, Landroid/preference/PreferenceGroup;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {v3, v6}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v6
 
@@ -480,7 +480,7 @@
 
     const-string v6, "button_vcfnrc_key"
 
-    invoke-virtual {v3, v6}, Landroid/preference/PreferenceGroup;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {v3, v6}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v6
 
@@ -494,7 +494,7 @@
 
     iget v9, v9, Lcom/android/phone/CallForwardEditPreference;->reason:I
 
-    invoke-virtual {v6, p0, v9}, Lcom/android/phone/EditPhoneNumberPreference;->setParentFragment(Landroid/app/Fragment;I)V
+    invoke-virtual {v6, p0, v9}, Lcom/android/phone/CallForwardEditPreference;->setParentFragment(Landroid/app/Fragment;I)V
 
     iget-object v6, p0, Lcom/android/phone/GsmUmtsVideoCallForwardOptions;->mButtonCFB:Lcom/android/phone/CallForwardEditPreference;
 
@@ -502,7 +502,7 @@
 
     iget v9, v9, Lcom/android/phone/CallForwardEditPreference;->reason:I
 
-    invoke-virtual {v6, p0, v9}, Lcom/android/phone/EditPhoneNumberPreference;->setParentFragment(Landroid/app/Fragment;I)V
+    invoke-virtual {v6, p0, v9}, Lcom/android/phone/CallForwardEditPreference;->setParentFragment(Landroid/app/Fragment;I)V
 
     iget-object v6, p0, Lcom/android/phone/GsmUmtsVideoCallForwardOptions;->mButtonCFNRy:Lcom/android/phone/CallForwardEditPreference;
 
@@ -510,7 +510,7 @@
 
     iget v9, v9, Lcom/android/phone/CallForwardEditPreference;->reason:I
 
-    invoke-virtual {v6, p0, v9}, Lcom/android/phone/EditPhoneNumberPreference;->setParentFragment(Landroid/app/Fragment;I)V
+    invoke-virtual {v6, p0, v9}, Lcom/android/phone/CallForwardEditPreference;->setParentFragment(Landroid/app/Fragment;I)V
 
     iget-object v6, p0, Lcom/android/phone/GsmUmtsVideoCallForwardOptions;->mButtonCFNRc:Lcom/android/phone/CallForwardEditPreference;
 
@@ -518,7 +518,7 @@
 
     iget v9, v9, Lcom/android/phone/CallForwardEditPreference;->reason:I
 
-    invoke-virtual {v6, p0, v9}, Lcom/android/phone/EditPhoneNumberPreference;->setParentFragment(Landroid/app/Fragment;I)V
+    invoke-virtual {v6, p0, v9}, Lcom/android/phone/CallForwardEditPreference;->setParentFragment(Landroid/app/Fragment;I)V
 
     iget-object v6, p0, Lcom/android/phone/GsmUmtsVideoCallForwardOptions;->mPreferences:Ljava/util/ArrayList;
 
@@ -548,7 +548,7 @@
 
     iput-object p1, p0, Lcom/android/phone/GsmUmtsVideoCallForwardOptions;->mIcicle:Landroid/os/Bundle;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/GsmUmtsVideoCallForwardOptions;->getActivity()Landroid/app/Activity;
 
     move-result-object v6
 
@@ -571,7 +571,7 @@
     move v6, v7
 
     :goto_1
-    invoke-virtual {v3, v6}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v3, v6}, Landroid/preference/PreferenceScreen;->setEnabled(Z)V
 
     return-void
 
@@ -653,11 +653,11 @@
     goto/16 :goto_0
 
     :cond_8
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/GsmUmtsVideoCallForwardOptions;->getApplicationContext()Landroid/content/Context;
 
     const-string v6, "phone"
 
-    invoke-virtual {p0, v6}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v6}, Lcom/android/phone/GsmUmtsVideoCallForwardOptions;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v5
 
@@ -686,7 +686,7 @@
 
     const/4 v3, 0x0
 
-    iget-boolean v1, p0, Lcom/android/phone/TimeConsumingPreferenceActivity;->mIsForeground:Z
+    iget-boolean v1, p0, Lcom/android/phone/GsmUmtsVideoCallForwardOptions;->mIsForeground:Z
 
     if-nez v1, :cond_1
 
@@ -717,7 +717,7 @@
 
     if-ge v1, v2, :cond_3
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->isRemoving()Z
+    invoke-virtual {p0}, Lcom/android/phone/GsmUmtsVideoCallForwardOptions;->isRemoving()Z
 
     move-result v1
 
@@ -762,7 +762,7 @@
 
     if-ne v1, v2, :cond_2
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->isRemoving()Z
+    invoke-virtual {p0}, Lcom/android/phone/GsmUmtsVideoCallForwardOptions;->isRemoving()Z
 
     move-result v1
 
@@ -772,7 +772,7 @@
 
     if-eqz v1, :cond_2
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->isAdded()Z
+    invoke-virtual {p0}, Lcom/android/phone/GsmUmtsVideoCallForwardOptions;->isAdded()Z
 
     move-result v1
 
@@ -780,7 +780,7 @@
 
     iput-boolean v3, p0, Lcom/android/phone/GsmUmtsVideoCallForwardOptions;->mIsLaunchFromWidget:Z
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/GsmUmtsVideoCallForwardOptions;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -792,7 +792,7 @@
 
     invoke-virtual {v0, v1, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/GsmUmtsVideoCallForwardOptions;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -817,7 +817,7 @@
 
     if-ne v1, v2, :cond_0
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual {p0}, Lcom/android/phone/GsmUmtsVideoCallForwardOptions;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v2
 
@@ -827,7 +827,7 @@
 
     if-gtz v2, :cond_0
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/GsmUmtsVideoCallForwardOptions;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -861,9 +861,9 @@
 
     invoke-virtual {v0, v2}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
-    invoke-virtual {p0, v0}, Landroid/app/Fragment;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/GsmUmtsVideoCallForwardOptions;->startActivity(Landroid/content/Intent;)V
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/GsmUmtsVideoCallForwardOptions;->finish()V
 
     const/4 v2, 0x1
 
@@ -871,7 +871,7 @@
     return v2
 
     :cond_0
-    invoke-super {p0, p1}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
+    invoke-super {p0, p1}, Lcom/android/phone/TimeConsumingPreferenceActivity;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
 
     move-result v2
 
@@ -958,7 +958,7 @@
 
     iget-object v4, p0, Lcom/android/phone/GsmUmtsVideoCallForwardOptions;->mIcicle:Landroid/os/Bundle;
 
-    invoke-virtual {v3}, Landroid/preference/Preference;->getKey()Ljava/lang/String;
+    invoke-virtual {v3}, Lcom/android/phone/CallForwardEditPreference;->getKey()Ljava/lang/String;
 
     move-result-object v5
 
@@ -974,7 +974,7 @@
 
     move-result v4
 
-    invoke-virtual {v3, v4}, Lcom/android/phone/EditPhoneNumberPreference;->setToggled(Z)Lcom/android/phone/EditPhoneNumberPreference;
+    invoke-virtual {v3, v4}, Lcom/android/phone/CallForwardEditPreference;->setToggled(Z)Lcom/android/phone/EditPhoneNumberPreference;
 
     new-instance v1, Lcom/android/internal/telephony/CallForwardInfo;
 
@@ -1002,7 +1002,7 @@
 
     if-eqz v4, :cond_4
 
-    invoke-virtual {v3, v6}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v3, v6}, Lcom/android/phone/CallForwardEditPreference;->setEnabled(Z)V
 
     :cond_4
     const/4 v4, 0x1
@@ -1018,7 +1018,7 @@
     .locals 5
     .param p1    # Landroid/os/Bundle;
 
-    invoke-super {p0, p1}, Landroid/preference/PreferenceFragment;->onSaveInstanceState(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/phone/TimeConsumingPreferenceActivity;->onSaveInstanceState(Landroid/os/Bundle;)V
 
     iget-object v3, p0, Lcom/android/phone/GsmUmtsVideoCallForwardOptions;->mPreferences:Ljava/util/ArrayList;
 
@@ -1045,7 +1045,7 @@
 
     const-string v3, "toggle"
 
-    invoke-virtual {v2}, Lcom/android/phone/EditPhoneNumberPreference;->isToggled()Z
+    invoke-virtual {v2}, Lcom/android/phone/CallForwardEditPreference;->isToggled()Z
 
     move-result v4
 
@@ -1072,7 +1072,7 @@
     invoke-virtual {v0, v3, v4}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
     :cond_0
-    invoke-virtual {v2}, Landroid/preference/Preference;->getKey()Ljava/lang/String;
+    invoke-virtual {v2}, Lcom/android/phone/CallForwardEditPreference;->getKey()Ljava/lang/String;
 
     move-result-object v3
 

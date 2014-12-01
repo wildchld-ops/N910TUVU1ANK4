@@ -71,7 +71,6 @@
 
 .method private getParserKey(I)Ljava/lang/String;
     .locals 6
-    .param p1    # I
 
     const/4 v4, 0x0
 
@@ -128,8 +127,6 @@
 
 .method public final parse([BI)I
     .locals 10
-    .param p1    # [B
-    .param p2    # I
 
     const/4 v9, -0x1
 
@@ -294,7 +291,6 @@
 
 .method protected final setInterval(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/hardware/contextaware/dataprovider/sensorhubprovider/environmentsensorprovider/EnvironmentSensorHandler;->mInterval:I
 

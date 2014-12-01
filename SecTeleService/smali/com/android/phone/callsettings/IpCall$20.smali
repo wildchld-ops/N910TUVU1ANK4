@@ -41,7 +41,7 @@
 
     iget-object v1, p0, Lcom/android/phone/callsettings/IpCall$20;->this$0:Lcom/android/phone/callsettings/IpCall;
 
-    invoke-virtual {v1}, Landroid/app/Fragment;->isAdded()Z
+    invoke-virtual {v1}, Lcom/android/phone/callsettings/IpCall;->isAdded()Z
 
     move-result v1
 
@@ -164,7 +164,7 @@
 
     const v3, 0x7f09038c
 
-    invoke-virtual {v2, v3}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {v2, v3}, Lcom/android/phone/callsettings/IpCall;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
@@ -178,7 +178,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Landroid/widget/BaseAdapter;->notifyDataSetInvalidated()V
+    invoke-virtual {v1}, Lcom/android/phone/callsettings/IpCall$IPCallAdapter;->notifyDataSetInvalidated()V
 
     iget-object v1, p0, Lcom/android/phone/callsettings/IpCall$20;->this$0:Lcom/android/phone/callsettings/IpCall;
 

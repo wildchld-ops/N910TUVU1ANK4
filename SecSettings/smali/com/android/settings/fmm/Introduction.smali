@@ -22,7 +22,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/fmm/Introduction;)Lcom/sec/android/touchwiz/widget/TwCheckBox;
     .locals 1
-    .param p0    # Lcom/android/settings/fmm/Introduction;
 
     iget-object v0, p0, Lcom/android/settings/fmm/Introduction;->mDoNotShow:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
@@ -33,9 +32,6 @@
 # virtual methods
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 8
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const v7, 0x7f090d76
 

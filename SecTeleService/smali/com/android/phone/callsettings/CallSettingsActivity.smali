@@ -123,11 +123,11 @@
     .locals 6
 
     :try_start_0
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsActivity;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v3
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getComponentName()Landroid/content/ComponentName;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsActivity;->getComponentName()Landroid/content/ComponentName;
 
     move-result-object v4
 
@@ -139,7 +139,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v3, v0, Landroid/content/pm/PackageItemInfo;->metaData:Landroid/os/Bundle;
+    iget-object v3, v0, Landroid/content/pm/ActivityInfo;->metaData:Landroid/os/Bundle;
 
     if-nez v3, :cond_1
 
@@ -148,7 +148,7 @@
     return-void
 
     :cond_1
-    iget-object v3, v0, Landroid/content/pm/PackageItemInfo;->metaData:Landroid/os/Bundle;
+    iget-object v3, v0, Landroid/content/pm/ActivityInfo;->metaData:Landroid/os/Bundle;
 
     const-string v4, "com.android.phone.TOP_LEVEL_HEADER_ID"
 
@@ -158,7 +158,7 @@
 
     iput v3, p0, Lcom/android/phone/callsettings/CallSettingsActivity;->mTopLevelHeaderId:I
 
-    iget-object v3, v0, Landroid/content/pm/PackageItemInfo;->metaData:Landroid/os/Bundle;
+    iget-object v3, v0, Landroid/content/pm/ActivityInfo;->metaData:Landroid/os/Bundle;
 
     const-string v4, "com.android.phone.FRAGMENT_CLASS"
 
@@ -168,7 +168,7 @@
 
     iput-object v3, p0, Lcom/android/phone/callsettings/CallSettingsActivity;->mFragmentClass:Ljava/lang/String;
 
-    iget-object v3, v0, Landroid/content/pm/PackageItemInfo;->metaData:Landroid/os/Bundle;
+    iget-object v3, v0, Landroid/content/pm/ActivityInfo;->metaData:Landroid/os/Bundle;
 
     const-string v4, "com.android.phone.PARENT_FRAGMENT_TITLE"
 
@@ -176,7 +176,7 @@
 
     move-result v2
 
-    iget-object v3, v0, Landroid/content/pm/PackageItemInfo;->metaData:Landroid/os/Bundle;
+    iget-object v3, v0, Landroid/content/pm/ActivityInfo;->metaData:Landroid/os/Bundle;
 
     const-string v4, "com.android.phone.PARENT_FRAGMENT_CLASS"
 
@@ -200,7 +200,7 @@
 
     iget-object v3, p0, Lcom/android/phone/callsettings/CallSettingsActivity;->mParentHeader:Landroid/preference/PreferenceActivity$Header;
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsActivity;->getResources()Landroid/content/res/Resources;
 
     move-result-object v4
 
@@ -243,7 +243,7 @@
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {p0}, Landroid/app/ListActivity;->getListView()Landroid/widget/ListView;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsActivity;->getListView()Landroid/widget/ListView;
 
     move-result-object v1
 
@@ -253,7 +253,7 @@
 
     const/4 v3, 0x1
 
-    invoke-virtual {v1, v2, v3}, Landroid/widget/AbsListView;->setItemChecked(IZ)V
+    invoke-virtual {v1, v2, v3}, Landroid/widget/ListView;->setItemChecked(IZ)V
 
     :cond_0
     return-void
@@ -300,7 +300,7 @@
     invoke-direct {v0, p0, p1}, Landroid/content/ComponentName;-><init>(Landroid/content/Context;Ljava/lang/String;)V
 
     :try_start_0
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsActivity;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v7
 
@@ -312,11 +312,11 @@
 
     if-eqz v6, :cond_1
 
-    iget-object v8, v6, Landroid/content/pm/PackageItemInfo;->metaData:Landroid/os/Bundle;
+    iget-object v8, v6, Landroid/content/pm/ActivityInfo;->metaData:Landroid/os/Bundle;
 
     if-eqz v8, :cond_1
 
-    iget-object v8, v6, Landroid/content/pm/PackageItemInfo;->metaData:Landroid/os/Bundle;
+    iget-object v8, v6, Landroid/content/pm/ActivityInfo;->metaData:Landroid/os/Bundle;
 
     const-string v9, "com.android.phone.FRAGMENT_CLASS"
 
@@ -324,7 +324,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v6, v7}, Landroid/content/pm/ComponentInfo;->loadLabel(Landroid/content/pm/PackageManager;)Ljava/lang/CharSequence;
+    invoke-virtual {v6, v7}, Landroid/content/pm/ActivityInfo;->loadLabel(Landroid/content/pm/PackageManager;)Ljava/lang/CharSequence;
 
     move-result-object v2
 
@@ -350,7 +350,7 @@
 
     iget-object v8, p0, Lcom/android/phone/callsettings/CallSettingsActivity;->mParentHeader:Landroid/preference/PreferenceActivity$Header;
 
-    iget-object v9, v6, Landroid/content/pm/PackageItemInfo;->metaData:Landroid/os/Bundle;
+    iget-object v9, v6, Landroid/content/pm/ActivityInfo;->metaData:Landroid/os/Bundle;
 
     const-string v10, "com.android.phone.PARENT_FRAGMENT_CLASS"
 
@@ -360,7 +360,7 @@
 
     iput-object v9, v8, Landroid/preference/PreferenceActivity$Header;->fragment:Ljava/lang/String;
 
-    iget-object v8, v6, Landroid/content/pm/PackageItemInfo;->metaData:Landroid/os/Bundle;
+    iget-object v8, v6, Landroid/content/pm/ActivityInfo;->metaData:Landroid/os/Bundle;
 
     const-string v9, "com.android.phone.PARENT_FRAGMENT_TITLE"
 
@@ -372,7 +372,7 @@
 
     iget-object v8, p0, Lcom/android/phone/callsettings/CallSettingsActivity;->mParentHeader:Landroid/preference/PreferenceActivity$Header;
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsActivity;->getResources()Landroid/content/res/Resources;
 
     move-result-object v9
 
@@ -397,7 +397,7 @@
 
     invoke-direct {v10, p0}, Lcom/android/phone/callsettings/CallSettingsActivity$2;-><init>(Lcom/android/phone/callsettings/CallSettingsActivity;)V
 
-    invoke-virtual {p0, v8, v9, v10}, Landroid/preference/PreferenceActivity;->setParentTitle(Ljava/lang/CharSequence;Ljava/lang/CharSequence;Landroid/view/View$OnClickListener;)V
+    invoke-virtual {p0, v8, v9, v10}, Lcom/android/phone/callsettings/CallSettingsActivity;->setParentTitle(Ljava/lang/CharSequence;Ljava/lang/CharSequence;Landroid/view/View$OnClickListener;)V
     :try_end_0
     .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -459,7 +459,7 @@
 
     invoke-direct {v0}, Landroid/preference/PreferenceActivity$Header;-><init>()V
 
-    invoke-virtual {p0, v3}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v3}, Lcom/android/phone/callsettings/CallSettingsActivity;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v2
 
@@ -711,7 +711,7 @@
     return v0
 
     :cond_0
-    invoke-super {p0, p1}, Landroid/app/Activity;->dispatchKeyEvent(Landroid/view/KeyEvent;)Z
+    invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->dispatchKeyEvent(Landroid/view/KeyEvent;)Z
 
     move-result v0
 
@@ -752,7 +752,7 @@
     return v0
 
     :cond_0
-    invoke-super {p0, p1}, Landroid/app/Activity;->dispatchTouchEvent(Landroid/view/MotionEvent;)Z
+    invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->dispatchTouchEvent(Landroid/view/MotionEvent;)Z
 
     move-result v0
 
@@ -766,7 +766,7 @@
 
     invoke-static {v0}, Lcom/android/phone/callsettings/CallSettingsActivity;->log(Ljava/lang/String;)V
 
-    invoke-super {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
+    invoke-super {p0}, Landroid/preference/PreferenceActivity;->getIntent()Landroid/content/Intent;
 
     move-result-object v1
 
@@ -1001,7 +1001,7 @@
 
     const v0, 0x7f06000b
 
-    invoke-virtual {p0, v0, p1}, Landroid/preference/PreferenceActivity;->loadHeadersFromResource(ILjava/util/List;)V
+    invoke-virtual {p0, v0, p1}, Lcom/android/phone/callsettings/CallSettingsActivity;->loadHeadersFromResource(ILjava/util/List;)V
 
     invoke-direct {p0, p1}, Lcom/android/phone/callsettings/CallSettingsActivity;->updateHeaderList(Ljava/util/List;)V
 
@@ -1054,10 +1054,10 @@
 
     if-eqz v1, :cond_0
 
-    invoke-virtual {p0, v2}, Landroid/preference/PreferenceActivity;->setMultiPane(Z)V
+    invoke-virtual {p0, v2}, Lcom/android/phone/callsettings/CallSettingsActivity;->setMultiPane(Z)V
 
     :cond_0
-    invoke-virtual {p0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsActivity;->getWindow()Landroid/view/Window;
 
     move-result-object v1
 
@@ -1071,7 +1071,7 @@
 
     iput-boolean v3, p0, Lcom/android/phone/callsettings/CallSettingsActivity;->mInLocalHeaderSwitch:Z
 
-    invoke-virtual {p0}, Landroid/preference/PreferenceActivity;->onIsHidingHeaders()Z
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsActivity;->onIsHidingHeaders()Z
 
     move-result v1
 
@@ -1089,7 +1089,7 @@
 
     const v1, 0x7f090054
 
-    invoke-virtual {p0, v1}, Landroid/app/Activity;->setTitle(I)V
+    invoke-virtual {p0, v1}, Lcom/android/phone/callsettings/CallSettingsActivity;->setTitle(I)V
 
     :cond_1
     if-eqz p1, :cond_2
@@ -1125,7 +1125,7 @@
 
     iget-object v1, v1, Landroid/preference/PreferenceActivity$Header;->title:Ljava/lang/CharSequence;
 
-    invoke-virtual {p0, v1, v6}, Landroid/preference/PreferenceActivity;->showBreadCrumbs(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, v1, v6}, Lcom/android/phone/callsettings/CallSettingsActivity;->showBreadCrumbs(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)V
 
     :cond_3
     iget-object v1, p0, Lcom/android/phone/callsettings/CallSettingsActivity;->mParentHeader:Landroid/preference/PreferenceActivity$Header;
@@ -1140,10 +1140,10 @@
 
     invoke-direct {v2, p0}, Lcom/android/phone/callsettings/CallSettingsActivity$1;-><init>(Lcom/android/phone/callsettings/CallSettingsActivity;)V
 
-    invoke-virtual {p0, v1, v6, v2}, Landroid/preference/PreferenceActivity;->setParentTitle(Ljava/lang/CharSequence;Ljava/lang/CharSequence;Landroid/view/View$OnClickListener;)V
+    invoke-virtual {p0, v1, v6, v2}, Lcom/android/phone/callsettings/CallSettingsActivity;->setParentTitle(Ljava/lang/CharSequence;Ljava/lang/CharSequence;Landroid/view/View$OnClickListener;)V
 
     :cond_4
-    invoke-virtual {p0}, Landroid/app/Activity;->getActionBar()Landroid/app/ActionBar;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsActivity;->getActionBar()Landroid/app/ActionBar;
 
     move-result-object v0
 
@@ -1154,7 +1154,7 @@
     invoke-virtual {v0, v3}, Landroid/app/ActionBar;->setDisplayShowHomeEnabled(Z)V
 
     :cond_5
-    invoke-virtual {p0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsActivity;->getWindow()Landroid/view/Window;
 
     move-result-object v1
 
@@ -1172,7 +1172,7 @@
 
     invoke-static {v6}, Lcom/android/phone/callsettings/CallSettingsActivity;->log(Ljava/lang/String;)V
 
-    invoke-super {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
+    invoke-super {p0}, Landroid/preference/PreferenceActivity;->getIntent()Landroid/content/Intent;
 
     move-result-object v6
 
@@ -1261,7 +1261,7 @@
 
     iput-object v2, v4, Landroid/preference/PreferenceActivity$Header;->fragment:Ljava/lang/String;
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getTitle()Ljava/lang/CharSequence;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsActivity;->getTitle()Ljava/lang/CharSequence;
 
     move-result-object v6
 
@@ -1320,7 +1320,7 @@
 
     const v6, 0x7f090051
 
-    invoke-virtual {p0, v6}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v6}, Lcom/android/phone/callsettings/CallSettingsActivity;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v1
 
@@ -1375,7 +1375,7 @@
 
     iget v7, v3, Landroid/preference/PreferenceActivity$Header;->titleRes:I
 
-    invoke-virtual {p0, v7}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v7}, Lcom/android/phone/callsettings/CallSettingsActivity;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v7
 
@@ -1391,7 +1391,7 @@
 
     iget v6, v3, Landroid/preference/PreferenceActivity$Header;->titleRes:I
 
-    invoke-virtual {p0, v6}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v6}, Lcom/android/phone/callsettings/CallSettingsActivity;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v6
 
@@ -1432,7 +1432,7 @@
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->setIntent(Landroid/content/Intent;)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/callsettings/CallSettingsActivity;->setIntent(Landroid/content/Intent;)V
 
     invoke-super {p0, p1, p2}, Landroid/preference/PreferenceActivity;->onHeaderClick(Landroid/preference/PreferenceActivity$Header;I)V
 
@@ -1501,7 +1501,7 @@
     goto :goto_0
 
     :cond_1
-    invoke-super {p0, p1, p2}, Landroid/app/Activity;->onKeyDown(ILandroid/view/KeyEvent;)Z
+    invoke-super {p0, p1, p2}, Landroid/preference/PreferenceActivity;->onKeyDown(ILandroid/view/KeyEvent;)Z
 
     move-result v1
 
@@ -1570,7 +1570,7 @@
     goto :goto_0
 
     :cond_1
-    invoke-super {p0, p1, p2}, Landroid/app/Activity;->onKeyUp(ILandroid/view/KeyEvent;)Z
+    invoke-super {p0, p1, p2}, Landroid/preference/PreferenceActivity;->onKeyUp(ILandroid/view/KeyEvent;)Z
 
     move-result v1
 
@@ -1597,7 +1597,7 @@
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {p0}, Landroid/preference/PreferenceActivity;->onIsHidingHeaders()Z
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsActivity;->onIsHidingHeaders()Z
 
     move-result v0
 
@@ -1661,14 +1661,14 @@
 
     packed-switch v1, :pswitch_data_0
 
-    invoke-super {p0, p1}, Landroid/app/Activity;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
+    invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
 
     move-result v1
 
     goto :goto_0
 
     :pswitch_0
-    invoke-virtual {p0}, Landroid/app/Activity;->getFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsActivity;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v1
 
@@ -1678,7 +1678,7 @@
 
     if-lez v1, :cond_1
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsActivity;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v1
 
@@ -1690,7 +1690,7 @@
     goto :goto_0
 
     :cond_1
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsActivity;->finish()V
 
     goto :goto_1
 

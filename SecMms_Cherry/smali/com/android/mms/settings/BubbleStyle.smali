@@ -48,7 +48,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/settings/BubbleStyle;)Lcom/android/mms/settings/BubbleStyle$ImageAdapter;
     .locals 1
-    .param p0    # Lcom/android/mms/settings/BubbleStyle;
 
     iget-object v0, p0, Lcom/android/mms/settings/BubbleStyle;->mImageAdapter:Lcom/android/mms/settings/BubbleStyle$ImageAdapter;
 
@@ -57,7 +56,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/settings/BubbleStyle;)V
     .locals 0
-    .param p0    # Lcom/android/mms/settings/BubbleStyle;
 
     invoke-direct {p0}, Lcom/android/mms/settings/BubbleStyle;->setScrollPositionVertical()V
 
@@ -66,7 +64,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/settings/BubbleStyle;)V
     .locals 0
-    .param p0    # Lcom/android/mms/settings/BubbleStyle;
 
     invoke-direct {p0}, Lcom/android/mms/settings/BubbleStyle;->setScrollPosition()V
 
@@ -75,7 +72,6 @@
 
 .method static synthetic access$300(Lcom/android/mms/settings/BubbleStyle;)Landroid/view/MenuItem;
     .locals 1
-    .param p0    # Lcom/android/mms/settings/BubbleStyle;
 
     iget-object v0, p0, Lcom/android/mms/settings/BubbleStyle;->mMenuSave:Landroid/view/MenuItem;
 
@@ -84,7 +80,6 @@
 
 .method static synthetic access$400(Lcom/android/mms/settings/BubbleStyle;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/settings/BubbleStyle;
 
     iget-boolean v0, p0, Lcom/android/mms/settings/BubbleStyle;->MoveToSelectedReceive:Z
 
@@ -93,8 +88,6 @@
 
 .method static synthetic access$402(Lcom/android/mms/settings/BubbleStyle;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/settings/BubbleStyle;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/settings/BubbleStyle;->MoveToSelectedReceive:Z
 
@@ -135,7 +128,6 @@
 
 .method private saveBubbleReceiveStyle(I)V
     .locals 5
-    .param p1    # I
 
     sget-object v3, Lcom/android/mms/settings/BubbleStyle;->BUBBLE_RECEIVE_STYLE_ID:[I
 
@@ -186,7 +178,6 @@
 
 .method private saveBubbleSentStyle(I)V
     .locals 5
-    .param p1    # I
 
     sget-object v3, Lcom/android/mms/settings/BubbleStyle;->BUBBLE_SEND_STYLE_ID:[I
 
@@ -343,7 +334,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 4
-    .param p1    # Landroid/view/View;
 
     if-nez p1, :cond_0
 
@@ -406,7 +396,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 0
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Lcom/android/mms/settings/DisplayStyleActivity;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -417,7 +406,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/mms/settings/DisplayStyleActivity;->onCreate(Landroid/os/Bundle;)V
 
@@ -470,8 +458,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/16 v0, 0x14
 

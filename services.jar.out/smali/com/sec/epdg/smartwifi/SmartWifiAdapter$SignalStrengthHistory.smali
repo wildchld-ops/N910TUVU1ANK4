@@ -75,8 +75,6 @@
 
 .method synthetic constructor <init>(Lcom/sec/epdg/smartwifi/SmartWifiAdapter;Lcom/sec/epdg/smartwifi/SmartWifiAdapter$1;)V
     .locals 0
-    .param p1    # Lcom/sec/epdg/smartwifi/SmartWifiAdapter;
-    .param p2    # Lcom/sec/epdg/smartwifi/SmartWifiAdapter$1;
 
     invoke-direct {p0, p1}, Lcom/sec/epdg/smartwifi/SmartWifiAdapter$SignalStrengthHistory;-><init>(Lcom/sec/epdg/smartwifi/SmartWifiAdapter;)V
 
@@ -244,7 +242,6 @@
 # virtual methods
 .method public declared-synchronized addReading(Landroid/telephony/SignalStrength;)V
     .locals 7
-    .param p1    # Landroid/telephony/SignalStrength;
 
     monitor-enter p0
 

@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -53,7 +52,6 @@
 
 .method public registerCallback(Lcom/android/internal/policy/IFaceLockCallback;)V
     .locals 5
-    .param p1    # Lcom/android/internal/policy/IFaceLockCallback;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -117,12 +115,6 @@
 
 .method public startUi(Landroid/os/IBinder;IIIIZ)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -245,7 +237,6 @@
 
 .method public unregisterCallback(Lcom/android/internal/policy/IFaceLockCallback;)V
     .locals 5
-    .param p1    # Lcom/android/internal/policy/IFaceLockCallback;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

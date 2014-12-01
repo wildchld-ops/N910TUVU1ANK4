@@ -63,7 +63,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Landroid/view/View;->getWindowToken()Landroid/os/IBinder;
+    invoke-virtual {v1}, Landroid/widget/EditText;->getWindowToken()Landroid/os/IBinder;
 
     move-result-object v1
 
@@ -83,7 +83,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Landroid/view/View;->getWindowToken()Landroid/os/IBinder;
+    invoke-virtual {v1}, Landroid/widget/EditText;->getWindowToken()Landroid/os/IBinder;
 
     move-result-object v1
 
@@ -98,7 +98,7 @@
 
     iget-object v3, p0, Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode$5;->this$0:Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;
 
-    invoke-virtual {v3}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v3}, Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
 
@@ -116,7 +116,7 @@
 
     const v1, 0x7f090921
 
-    invoke-virtual {v0, v1}, Landroid/app/Dialog;->setTitle(I)V
+    invoke-virtual {v0, v1}, Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode$ImageDlg;->setTitle(I)V
 
     iget-object v0, p0, Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode$5;->this$0:Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;
 
@@ -125,7 +125,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->show()V
+    invoke-virtual {v0}, Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode$ImageDlg;->show()V
 
     iget-object v0, p0, Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode$5;->this$0:Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;
 
@@ -136,7 +136,7 @@
 
     const/4 v1, 0x1
 
-    invoke-virtual {v0, v1}, Landroid/app/Dialog;->setCanceledOnTouchOutside(Z)V
+    invoke-virtual {v0, v1}, Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode$ImageDlg;->setCanceledOnTouchOutside(Z)V
 
     iget-object v0, p0, Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode$5;->this$0:Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;
 
@@ -149,7 +149,7 @@
 
     invoke-direct {v1, p0}, Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode$5$1;-><init>(Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode$5;)V
 
-    invoke-virtual {v0, v1}, Landroid/app/Dialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
+    invoke-virtual {v0, v1}, Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode$ImageDlg;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
     return-void
 .end method

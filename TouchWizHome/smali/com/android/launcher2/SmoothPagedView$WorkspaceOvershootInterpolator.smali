@@ -52,7 +52,6 @@
 
 .method public getInterpolation(F)F
     .locals 4
-    .param p1    # F
 
     const/high16 v3, 0x3f800000
 
@@ -79,7 +78,6 @@
 
 .method public setDistance(I)V
     .locals 2
-    .param p1    # I
 
     const v0, 0x3fa66666
 

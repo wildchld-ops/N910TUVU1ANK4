@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Lcom/sec/android/inputmethod/menu/PopupList;Lcom/sec/android/inputmethod/menu/PopupList$1;)V
     .locals 0
-    .param p1    # Lcom/sec/android/inputmethod/menu/PopupList;
-    .param p2    # Lcom/sec/android/inputmethod/menu/PopupList$1;
 
     invoke-direct {p0, p1}, Lcom/sec/android/inputmethod/menu/PopupList$ItemDataAdapter;-><init>(Lcom/sec/android/inputmethod/menu/PopupList;)V
 
@@ -60,7 +58,6 @@
 
 .method public getItem(I)Ljava/lang/Object;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/inputmethod/menu/PopupList$ItemDataAdapter;->this$0:Lcom/sec/android/inputmethod/menu/PopupList;
 
@@ -78,7 +75,6 @@
 
 .method public getItemId(I)J
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/inputmethod/menu/PopupList$ItemDataAdapter;->this$0:Lcom/sec/android/inputmethod/menu/PopupList;
 
@@ -102,9 +98,6 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     if-nez p2, :cond_0
 

@@ -147,7 +147,6 @@
 # direct methods
 .method constructor <init>(Landroid/view/View;)V
     .locals 4
-    .param p1    # Landroid/view/View;
 
     const/4 v3, 0x0
 
@@ -202,7 +201,6 @@
 
 .method static synthetic access$100(Landroid/view/ViewPropertyAnimator;)V
     .locals 0
-    .param p0    # Landroid/view/ViewPropertyAnimator;
 
     invoke-direct {p0}, Landroid/view/ViewPropertyAnimator;->startAnimation()V
 
@@ -211,7 +209,6 @@
 
 .method static synthetic access$1000(Landroid/view/ViewPropertyAnimator;)Landroid/animation/ValueAnimator$AnimatorUpdateListener;
     .locals 1
-    .param p0    # Landroid/view/ViewPropertyAnimator;
 
     iget-object v0, p0, Landroid/view/ViewPropertyAnimator;->mUpdateListener:Landroid/animation/ValueAnimator$AnimatorUpdateListener;
 
@@ -220,7 +217,6 @@
 
 .method static synthetic access$200(Landroid/view/ViewPropertyAnimator;)Landroid/view/View;
     .locals 1
-    .param p0    # Landroid/view/ViewPropertyAnimator;
 
     iget-object v0, p0, Landroid/view/ViewPropertyAnimator;->mView:Landroid/view/View;
 
@@ -229,7 +225,6 @@
 
 .method static synthetic access$300(Landroid/view/ViewPropertyAnimator;)Ljava/util/HashMap;
     .locals 1
-    .param p0    # Landroid/view/ViewPropertyAnimator;
 
     iget-object v0, p0, Landroid/view/ViewPropertyAnimator;->mAnimatorSetupMap:Ljava/util/HashMap;
 
@@ -238,7 +233,6 @@
 
 .method static synthetic access$400(Landroid/view/ViewPropertyAnimator;)Ljava/util/HashMap;
     .locals 1
-    .param p0    # Landroid/view/ViewPropertyAnimator;
 
     iget-object v0, p0, Landroid/view/ViewPropertyAnimator;->mAnimatorOnStartMap:Ljava/util/HashMap;
 
@@ -247,7 +241,6 @@
 
 .method static synthetic access$500(Landroid/view/ViewPropertyAnimator;)Landroid/animation/Animator$AnimatorListener;
     .locals 1
-    .param p0    # Landroid/view/ViewPropertyAnimator;
 
     iget-object v0, p0, Landroid/view/ViewPropertyAnimator;->mListener:Landroid/animation/Animator$AnimatorListener;
 
@@ -256,7 +249,6 @@
 
 .method static synthetic access$600(Landroid/view/ViewPropertyAnimator;)Ljava/util/HashMap;
     .locals 1
-    .param p0    # Landroid/view/ViewPropertyAnimator;
 
     iget-object v0, p0, Landroid/view/ViewPropertyAnimator;->mAnimatorOnEndMap:Ljava/util/HashMap;
 
@@ -265,7 +257,6 @@
 
 .method static synthetic access$700(Landroid/view/ViewPropertyAnimator;)Ljava/util/HashMap;
     .locals 1
-    .param p0    # Landroid/view/ViewPropertyAnimator;
 
     iget-object v0, p0, Landroid/view/ViewPropertyAnimator;->mAnimatorCleanupMap:Ljava/util/HashMap;
 
@@ -274,7 +265,6 @@
 
 .method static synthetic access$800(Landroid/view/ViewPropertyAnimator;)Ljava/util/HashMap;
     .locals 1
-    .param p0    # Landroid/view/ViewPropertyAnimator;
 
     iget-object v0, p0, Landroid/view/ViewPropertyAnimator;->mAnimatorMap:Ljava/util/HashMap;
 
@@ -283,9 +273,6 @@
 
 .method static synthetic access$900(Landroid/view/ViewPropertyAnimator;IF)V
     .locals 0
-    .param p0    # Landroid/view/ViewPropertyAnimator;
-    .param p1    # I
-    .param p2    # F
 
     invoke-direct {p0, p1, p2}, Landroid/view/ViewPropertyAnimator;->setValue(IF)V
 
@@ -294,8 +281,6 @@
 
 .method private animateProperty(IF)V
     .locals 2
-    .param p1    # I
-    .param p2    # F
 
     invoke-direct {p0, p1}, Landroid/view/ViewPropertyAnimator;->getValue(I)F
 
@@ -310,8 +295,6 @@
 
 .method private animatePropertyBy(IF)V
     .locals 1
-    .param p1    # I
-    .param p2    # F
 
     invoke-direct {p0, p1}, Landroid/view/ViewPropertyAnimator;->getValue(I)F
 
@@ -324,9 +307,6 @@
 
 .method private animatePropertyBy(IFF)V
     .locals 8
-    .param p1    # I
-    .param p2    # F
-    .param p3    # F
 
     iget-object v6, p0, Landroid/view/ViewPropertyAnimator;->mAnimatorMap:Ljava/util/HashMap;
 
@@ -412,7 +392,6 @@
 
 .method private getValue(I)F
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Landroid/view/ViewPropertyAnimator;->mView:Landroid/view/View;
 
@@ -510,8 +489,6 @@
 
 .method private setValue(IF)V
     .locals 3
-    .param p1    # I
-    .param p2    # F
 
     iget-object v2, p0, Landroid/view/ViewPropertyAnimator;->mView:Landroid/view/View;
 
@@ -829,7 +806,6 @@
 # virtual methods
 .method public alpha(F)Landroid/view/ViewPropertyAnimator;
     .locals 1
-    .param p1    # F
 
     const/16 v0, 0x200
 
@@ -840,7 +816,6 @@
 
 .method public alphaBy(F)Landroid/view/ViewPropertyAnimator;
     .locals 1
-    .param p1    # F
 
     const/16 v0, 0x200
 
@@ -993,7 +968,6 @@
 
 .method public rotation(F)Landroid/view/ViewPropertyAnimator;
     .locals 1
-    .param p1    # F
 
     const/16 v0, 0x10
 
@@ -1004,7 +978,6 @@
 
 .method public rotationBy(F)Landroid/view/ViewPropertyAnimator;
     .locals 1
-    .param p1    # F
 
     const/16 v0, 0x10
 
@@ -1015,7 +988,6 @@
 
 .method public rotationX(F)Landroid/view/ViewPropertyAnimator;
     .locals 1
-    .param p1    # F
 
     const/16 v0, 0x20
 
@@ -1026,7 +998,6 @@
 
 .method public rotationXBy(F)Landroid/view/ViewPropertyAnimator;
     .locals 1
-    .param p1    # F
 
     const/16 v0, 0x20
 
@@ -1037,7 +1008,6 @@
 
 .method public rotationY(F)Landroid/view/ViewPropertyAnimator;
     .locals 1
-    .param p1    # F
 
     const/16 v0, 0x40
 
@@ -1048,7 +1018,6 @@
 
 .method public rotationYBy(F)Landroid/view/ViewPropertyAnimator;
     .locals 1
-    .param p1    # F
 
     const/16 v0, 0x40
 
@@ -1059,7 +1028,6 @@
 
 .method public scaleX(F)Landroid/view/ViewPropertyAnimator;
     .locals 1
-    .param p1    # F
 
     const/4 v0, 0x4
 
@@ -1070,7 +1038,6 @@
 
 .method public scaleXBy(F)Landroid/view/ViewPropertyAnimator;
     .locals 1
-    .param p1    # F
 
     const/4 v0, 0x4
 
@@ -1081,7 +1048,6 @@
 
 .method public scaleY(F)Landroid/view/ViewPropertyAnimator;
     .locals 1
-    .param p1    # F
 
     const/16 v0, 0x8
 
@@ -1092,7 +1058,6 @@
 
 .method public scaleYBy(F)Landroid/view/ViewPropertyAnimator;
     .locals 1
-    .param p1    # F
 
     const/16 v0, 0x8
 
@@ -1103,7 +1068,6 @@
 
 .method public setDuration(J)Landroid/view/ViewPropertyAnimator;
     .locals 3
-    .param p1    # J
 
     const-wide/16 v0, 0x0
 
@@ -1147,7 +1111,6 @@
 
 .method public setInterpolator(Landroid/animation/TimeInterpolator;)Landroid/view/ViewPropertyAnimator;
     .locals 1
-    .param p1    # Landroid/animation/TimeInterpolator;
 
     const/4 v0, 0x1
 
@@ -1160,7 +1123,6 @@
 
 .method public setListener(Landroid/animation/Animator$AnimatorListener;)Landroid/view/ViewPropertyAnimator;
     .locals 0
-    .param p1    # Landroid/animation/Animator$AnimatorListener;
 
     iput-object p1, p0, Landroid/view/ViewPropertyAnimator;->mListener:Landroid/animation/Animator$AnimatorListener;
 
@@ -1169,7 +1131,6 @@
 
 .method public setStartDelay(J)Landroid/view/ViewPropertyAnimator;
     .locals 3
-    .param p1    # J
 
     const-wide/16 v0, 0x0
 
@@ -1213,7 +1174,6 @@
 
 .method public setUpdateListener(Landroid/animation/ValueAnimator$AnimatorUpdateListener;)Landroid/view/ViewPropertyAnimator;
     .locals 0
-    .param p1    # Landroid/animation/ValueAnimator$AnimatorUpdateListener;
 
     iput-object p1, p0, Landroid/view/ViewPropertyAnimator;->mUpdateListener:Landroid/animation/ValueAnimator$AnimatorUpdateListener;
 
@@ -1236,7 +1196,6 @@
 
 .method public translationX(F)Landroid/view/ViewPropertyAnimator;
     .locals 1
-    .param p1    # F
 
     const/4 v0, 0x1
 
@@ -1247,7 +1206,6 @@
 
 .method public translationXBy(F)Landroid/view/ViewPropertyAnimator;
     .locals 1
-    .param p1    # F
 
     const/4 v0, 0x1
 
@@ -1258,7 +1216,6 @@
 
 .method public translationY(F)Landroid/view/ViewPropertyAnimator;
     .locals 1
-    .param p1    # F
 
     const/4 v0, 0x2
 
@@ -1269,7 +1226,6 @@
 
 .method public translationYBy(F)Landroid/view/ViewPropertyAnimator;
     .locals 1
-    .param p1    # F
 
     const/4 v0, 0x2
 
@@ -1280,7 +1236,6 @@
 
 .method public withEndAction(Ljava/lang/Runnable;)Landroid/view/ViewPropertyAnimator;
     .locals 1
-    .param p1    # Ljava/lang/Runnable;
 
     iput-object p1, p0, Landroid/view/ViewPropertyAnimator;->mPendingOnEndAction:Ljava/lang/Runnable;
 
@@ -1348,7 +1303,6 @@
 
 .method public withStartAction(Ljava/lang/Runnable;)Landroid/view/ViewPropertyAnimator;
     .locals 1
-    .param p1    # Ljava/lang/Runnable;
 
     iput-object p1, p0, Landroid/view/ViewPropertyAnimator;->mPendingOnStartAction:Ljava/lang/Runnable;
 
@@ -1370,7 +1324,6 @@
 
 .method public x(F)Landroid/view/ViewPropertyAnimator;
     .locals 1
-    .param p1    # F
 
     const/16 v0, 0x80
 
@@ -1381,7 +1334,6 @@
 
 .method public xBy(F)Landroid/view/ViewPropertyAnimator;
     .locals 1
-    .param p1    # F
 
     const/16 v0, 0x80
 
@@ -1392,7 +1344,6 @@
 
 .method public y(F)Landroid/view/ViewPropertyAnimator;
     .locals 1
-    .param p1    # F
 
     const/16 v0, 0x100
 
@@ -1403,7 +1354,6 @@
 
 .method public yBy(F)Landroid/view/ViewPropertyAnimator;
     .locals 1
-    .param p1    # F
 
     const/16 v0, 0x100
 

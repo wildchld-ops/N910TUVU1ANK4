@@ -16,8 +16,6 @@
 # direct methods
 .method public constructor <init>(Landroid/hardware/contextaware/utilbundle/ITimeOutCheckObserver;I)V
     .locals 0
-    .param p1    # Landroid/hardware/contextaware/utilbundle/ITimeOutCheckObserver;
-    .param p2    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -47,7 +45,6 @@
 
 .method public final registerObserver(Landroid/hardware/contextaware/utilbundle/ITimeOutCheckObserver;)V
     .locals 0
-    .param p1    # Landroid/hardware/contextaware/utilbundle/ITimeOutCheckObserver;
 
     iput-object p1, p0, Landroid/hardware/contextaware/utilbundle/CaTimeOutCheckManager;->mObserver:Landroid/hardware/contextaware/utilbundle/ITimeOutCheckObserver;
 

@@ -199,7 +199,7 @@
 
     invoke-direct {v9, p0, v3}, Lcom/android/phone/callsettings/LGTPhotoRingRejectList$AutoRejectAdapter$2;-><init>(Lcom/android/phone/callsettings/LGTPhotoRingRejectList$AutoRejectAdapter;Lcom/android/phone/callsettings/LGTPhotoRingRejectList$AutoRejectItem;)V
 
-    invoke-virtual {v5, v9}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v5, v9}, Landroid/widget/LinearLayout;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     iget-object v9, v3, Lcom/android/phone/callsettings/LGTPhotoRingRejectList$AutoRejectItem;->reject_num:Ljava/lang/String;
 
@@ -394,7 +394,7 @@
 
     invoke-direct {v9, p0, v3}, Lcom/android/phone/callsettings/LGTPhotoRingRejectList$AutoRejectAdapter$3;-><init>(Lcom/android/phone/callsettings/LGTPhotoRingRejectList$AutoRejectAdapter;Lcom/android/phone/callsettings/LGTPhotoRingRejectList$AutoRejectItem;)V
 
-    invoke-virtual {v0, v9}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v0, v9}, Landroid/widget/LinearLayout;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     iget-object v9, v8, Lcom/android/phone/callsettings/LGTPhotoRingRejectList$AutoRejectAdapter$ViewHolder;->checkbox:Landroid/view/View;
 
@@ -420,7 +420,7 @@
 
     invoke-direct {v10, p0, p1, v3}, Lcom/android/phone/callsettings/LGTPhotoRingRejectList$AutoRejectAdapter$4;-><init>(Lcom/android/phone/callsettings/LGTPhotoRingRejectList$AutoRejectAdapter;ILcom/android/phone/callsettings/LGTPhotoRingRejectList$AutoRejectItem;)V
 
-    invoke-virtual {v9, v10}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v9, v10}, Landroid/widget/LinearLayout;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     iget-object v9, v8, Lcom/android/phone/callsettings/LGTPhotoRingRejectList$AutoRejectAdapter$ViewHolder;->text_layout:Landroid/widget/LinearLayout;
 
@@ -428,7 +428,7 @@
 
     invoke-direct {v10, p0, v3}, Lcom/android/phone/callsettings/LGTPhotoRingRejectList$AutoRejectAdapter$5;-><init>(Lcom/android/phone/callsettings/LGTPhotoRingRejectList$AutoRejectAdapter;Lcom/android/phone/callsettings/LGTPhotoRingRejectList$AutoRejectItem;)V
 
-    invoke-virtual {v9, v10}, Landroid/view/View;->setOnLongClickListener(Landroid/view/View$OnLongClickListener;)V
+    invoke-virtual {v9, v10}, Landroid/widget/LinearLayout;->setOnLongClickListener(Landroid/view/View$OnLongClickListener;)V
 
     iget-object v9, v8, Lcom/android/phone/callsettings/LGTPhotoRingRejectList$AutoRejectAdapter$ViewHolder;->checkedView:Landroid/view/View;
 
@@ -572,7 +572,7 @@
 
     invoke-direct {v10, p0, v3}, Lcom/android/phone/callsettings/LGTPhotoRingRejectList$AutoRejectAdapter$6;-><init>(Lcom/android/phone/callsettings/LGTPhotoRingRejectList$AutoRejectAdapter;Lcom/android/phone/callsettings/LGTPhotoRingRejectList$AutoRejectItem;)V
 
-    invoke-virtual {v9, v10}, Landroid/view/View;->setOnLongClickListener(Landroid/view/View$OnLongClickListener;)V
+    invoke-virtual {v9, v10}, Landroid/widget/LinearLayout;->setOnLongClickListener(Landroid/view/View$OnLongClickListener;)V
 
     iget-object v9, v8, Lcom/android/phone/callsettings/LGTPhotoRingRejectList$AutoRejectAdapter$ViewHolder;->root_Layout:Landroid/widget/LinearLayout;
 
@@ -580,7 +580,7 @@
 
     invoke-direct {v10, p0, p1, v3}, Lcom/android/phone/callsettings/LGTPhotoRingRejectList$AutoRejectAdapter$7;-><init>(Lcom/android/phone/callsettings/LGTPhotoRingRejectList$AutoRejectAdapter;ILcom/android/phone/callsettings/LGTPhotoRingRejectList$AutoRejectItem;)V
 
-    invoke-virtual {v9, v10}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v9, v10}, Landroid/widget/LinearLayout;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     goto/16 :goto_3
 
@@ -685,7 +685,7 @@
 
     iget-object v2, p0, Lcom/android/phone/callsettings/LGTPhotoRingRejectList$AutoRejectAdapter;->this$0:Lcom/android/phone/callsettings/LGTPhotoRingRejectList;
 
-    invoke-virtual {v0, p1}, Landroid/widget/AbsListView;->isItemChecked(I)Z
+    invoke-virtual {v0, p1}, Landroid/widget/ListView;->isItemChecked(I)Z
 
     move-result v3
 

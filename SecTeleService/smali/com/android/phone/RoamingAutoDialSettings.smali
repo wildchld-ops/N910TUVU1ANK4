@@ -29,7 +29,7 @@
 .method private getSelectedMode()I
     .locals 3
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/RoamingAutoDialSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -50,11 +50,11 @@
     .locals 4
     .param p1    # Landroid/os/Bundle;
 
-    invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Landroid/app/ListActivity;->onCreate(Landroid/os/Bundle;)V
 
     const v2, 0x7f040093
 
-    invoke-virtual {p0, v2}, Landroid/app/Activity;->setContentView(I)V
+    invoke-virtual {p0, v2}, Lcom/android/phone/RoamingAutoDialSettings;->setContentView(I)V
 
     const v2, 0x7f0800c9
 
@@ -74,7 +74,7 @@
 
     const v2, 0x7f0a01f9
 
-    invoke-virtual {p0, v2}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v2}, Lcom/android/phone/RoamingAutoDialSettings;->findViewById(I)Landroid/view/View;
 
     move-result-object v2
 
@@ -96,12 +96,12 @@
 
     invoke-direct {v3, p0}, Lcom/android/phone/RoamingAutoDialSettings$1;-><init>(Lcom/android/phone/RoamingAutoDialSettings;)V
 
-    invoke-virtual {v2, v3}, Landroid/widget/AdapterView;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
+    invoke-virtual {v2, v3}, Landroid/widget/ListView;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
 
     :cond_0
-    invoke-virtual {p0, v0}, Landroid/app/ListActivity;->setListAdapter(Landroid/widget/ListAdapter;)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/RoamingAutoDialSettings;->setListAdapter(Landroid/widget/ListAdapter;)V
 
-    invoke-virtual {p0}, Landroid/app/ListActivity;->getListView()Landroid/widget/ListView;
+    invoke-virtual {p0}, Lcom/android/phone/RoamingAutoDialSettings;->getListView()Landroid/widget/ListView;
 
     move-result-object v2
 
@@ -121,7 +121,7 @@
 
     const/4 v3, 0x1
 
-    invoke-virtual {v2, v3}, Landroid/widget/AbsListView;->setChoiceMode(I)V
+    invoke-virtual {v2, v3}, Landroid/widget/ListView;->setChoiceMode(I)V
 
     :cond_1
     return-void
@@ -178,7 +178,7 @@
     .param p3    # I
     .param p4    # J
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/RoamingAutoDialSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -192,7 +192,7 @@
 .method public onResume()V
     .locals 4
 
-    invoke-super {p0}, Landroid/app/Activity;->onResume()V
+    invoke-super {p0}, Landroid/app/ListActivity;->onResume()V
 
     iget-object v1, p0, Lcom/android/phone/RoamingAutoDialSettings;->mListView:Landroid/widget/ListView;
 
@@ -202,7 +202,7 @@
 
     const/4 v3, 0x1
 
-    invoke-virtual {v1, v2, v3}, Landroid/widget/AbsListView;->setItemChecked(IZ)V
+    invoke-virtual {v1, v2, v3}, Landroid/widget/ListView;->setItemChecked(IZ)V
 
     const-string v1, "ril.currentplmn"
 

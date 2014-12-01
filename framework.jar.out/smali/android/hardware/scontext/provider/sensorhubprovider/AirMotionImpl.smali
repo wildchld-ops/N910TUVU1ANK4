@@ -26,9 +26,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/hardware/scontext/provider/EventListener;I)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/hardware/scontext/provider/EventListener;
-    .param p3    # I
 
     const/4 v4, 0x1
 
@@ -89,7 +86,6 @@
 
 .method private getDirection(F)I
     .locals 2
-    .param p1    # F
 
     const/4 v0, 0x0
 
@@ -184,7 +180,6 @@
 # virtual methods
 .method public parse(Landroid/os/Bundle;)Landroid/os/Bundle;
     .locals 14
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v9, 0x2
 

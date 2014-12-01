@@ -14,9 +14,6 @@
 
 .method public static getShopNameFromNumber(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -25,16 +22,12 @@
 
 .method public static initialize_3rdlib(Landroid/content/Context;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method public static isServiceReady(Landroid/content/Context;Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -43,8 +36,6 @@
 
 .method public static queryListByYellowPage(Landroid/content/Context;Ljava/lang/String;)Landroid/database/MatrixCursor;
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 

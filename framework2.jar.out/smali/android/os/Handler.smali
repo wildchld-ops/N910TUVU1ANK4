@@ -47,7 +47,6 @@
 
 .method public constructor <init>(Landroid/os/Handler$Callback;)V
     .locals 1
-    .param p1    # Landroid/os/Handler$Callback;
 
     const/4 v0, 0x0
 
@@ -58,8 +57,6 @@
 
 .method public constructor <init>(Landroid/os/Handler$Callback;Z)V
     .locals 2
-    .param p1    # Landroid/os/Handler$Callback;
-    .param p2    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -97,7 +94,6 @@
 
 .method public constructor <init>(Landroid/os/Looper;)V
     .locals 2
-    .param p1    # Landroid/os/Looper;
 
     const/4 v0, 0x0
 
@@ -110,8 +106,6 @@
 
 .method public constructor <init>(Landroid/os/Looper;Landroid/os/Handler$Callback;)V
     .locals 1
-    .param p1    # Landroid/os/Looper;
-    .param p2    # Landroid/os/Handler$Callback;
 
     const/4 v0, 0x0
 
@@ -122,9 +116,6 @@
 
 .method public constructor <init>(Landroid/os/Looper;Landroid/os/Handler$Callback;Z)V
     .locals 1
-    .param p1    # Landroid/os/Looper;
-    .param p2    # Landroid/os/Handler$Callback;
-    .param p3    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -143,7 +134,6 @@
 
 .method public constructor <init>(Z)V
     .locals 1
-    .param p1    # Z
 
     const/4 v0, 0x0
 
@@ -154,9 +144,6 @@
 
 .method private enqueueMessage(Landroid/os/MessageQueue;Landroid/os/Message;J)Z
     .locals 1
-    .param p1    # Landroid/os/MessageQueue;
-    .param p2    # Landroid/os/Message;
-    .param p3    # J
 
     iput-object p0, p2, Landroid/os/Message;->target:Landroid/os/Handler;
 
@@ -178,7 +165,6 @@
 
 .method private static getPostMessage(Ljava/lang/Runnable;)Landroid/os/Message;
     .locals 1
-    .param p0    # Ljava/lang/Runnable;
 
     invoke-static {}, Landroid/os/Message;->obtain()Landroid/os/Message;
 
@@ -191,8 +177,6 @@
 
 .method private static getPostMessage(Ljava/lang/Runnable;Ljava/lang/Object;)Landroid/os/Message;
     .locals 1
-    .param p0    # Ljava/lang/Runnable;
-    .param p1    # Ljava/lang/Object;
 
     invoke-static {}, Landroid/os/Message;->obtain()Landroid/os/Message;
 
@@ -207,7 +191,6 @@
 
 .method private static handleCallback(Landroid/os/Message;)V
     .locals 1
-    .param p0    # Landroid/os/Message;
 
     iget-object v0, p0, Landroid/os/Message;->callback:Ljava/lang/Runnable;
 
@@ -220,7 +203,6 @@
 # virtual methods
 .method public dispatchMessage(Landroid/os/Message;)V
     .locals 1
-    .param p1    # Landroid/os/Message;
 
     iget-object v0, p1, Landroid/os/Message;->callback:Ljava/lang/Runnable;
 
@@ -253,8 +235,6 @@
 
 .method public final dump(Landroid/util/Printer;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Landroid/util/Printer;
-    .param p2    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -395,7 +375,6 @@
 
 .method public getMessageName(Landroid/os/Message;)Ljava/lang/String;
     .locals 2
-    .param p1    # Landroid/os/Message;
 
     iget-object v0, p1, Landroid/os/Message;->callback:Ljava/lang/Runnable;
 
@@ -444,14 +423,12 @@
 
 .method public handleMessage(Landroid/os/Message;)V
     .locals 0
-    .param p1    # Landroid/os/Message;
 
     return-void
 .end method
 
 .method public final hasCallbacks(Ljava/lang/Runnable;)Z
     .locals 2
-    .param p1    # Ljava/lang/Runnable;
 
     iget-object v0, p0, Landroid/os/Handler;->mQueue:Landroid/os/MessageQueue;
 
@@ -466,7 +443,6 @@
 
 .method public final hasMessages(I)Z
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Landroid/os/Handler;->mQueue:Landroid/os/MessageQueue;
 
@@ -481,8 +457,6 @@
 
 .method public final hasMessages(ILjava/lang/Object;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/Object;
 
     iget-object v0, p0, Landroid/os/Handler;->mQueue:Landroid/os/MessageQueue;
 
@@ -505,7 +479,6 @@
 
 .method public final obtainMessage(I)Landroid/os/Message;
     .locals 1
-    .param p1    # I
 
     invoke-static {p0, p1}, Landroid/os/Message;->obtain(Landroid/os/Handler;I)Landroid/os/Message;
 
@@ -516,9 +489,6 @@
 
 .method public final obtainMessage(III)Landroid/os/Message;
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     invoke-static {p0, p1, p2, p3}, Landroid/os/Message;->obtain(Landroid/os/Handler;III)Landroid/os/Message;
 
@@ -529,10 +499,6 @@
 
 .method public final obtainMessage(IIILjava/lang/Object;)Landroid/os/Message;
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/Object;
 
     invoke-static {p0, p1, p2, p3, p4}, Landroid/os/Message;->obtain(Landroid/os/Handler;IIILjava/lang/Object;)Landroid/os/Message;
 
@@ -543,8 +509,6 @@
 
 .method public final obtainMessage(ILjava/lang/Object;)Landroid/os/Message;
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/Object;
 
     invoke-static {p0, p1, p2}, Landroid/os/Message;->obtain(Landroid/os/Handler;ILjava/lang/Object;)Landroid/os/Message;
 
@@ -555,7 +519,6 @@
 
 .method public final post(Ljava/lang/Runnable;)Z
     .locals 3
-    .param p1    # Ljava/lang/Runnable;
 
     invoke-static {p1}, Landroid/os/Handler;->getPostMessage(Ljava/lang/Runnable;)Landroid/os/Message;
 
@@ -572,7 +535,6 @@
 
 .method public final postAtFrontOfQueue(Ljava/lang/Runnable;)Z
     .locals 1
-    .param p1    # Ljava/lang/Runnable;
 
     invoke-static {p1}, Landroid/os/Handler;->getPostMessage(Ljava/lang/Runnable;)Landroid/os/Message;
 
@@ -587,8 +549,6 @@
 
 .method public final postAtTime(Ljava/lang/Runnable;J)Z
     .locals 1
-    .param p1    # Ljava/lang/Runnable;
-    .param p2    # J
 
     invoke-static {p1}, Landroid/os/Handler;->getPostMessage(Ljava/lang/Runnable;)Landroid/os/Message;
 
@@ -603,9 +563,6 @@
 
 .method public final postAtTime(Ljava/lang/Runnable;Ljava/lang/Object;J)Z
     .locals 1
-    .param p1    # Ljava/lang/Runnable;
-    .param p2    # Ljava/lang/Object;
-    .param p3    # J
 
     invoke-static {p1, p2}, Landroid/os/Handler;->getPostMessage(Ljava/lang/Runnable;Ljava/lang/Object;)Landroid/os/Message;
 
@@ -620,8 +577,6 @@
 
 .method public final postDelayed(Ljava/lang/Runnable;J)Z
     .locals 1
-    .param p1    # Ljava/lang/Runnable;
-    .param p2    # J
 
     invoke-static {p1}, Landroid/os/Handler;->getPostMessage(Ljava/lang/Runnable;)Landroid/os/Message;
 
@@ -636,7 +591,6 @@
 
 .method public final removeCallbacks(Ljava/lang/Runnable;)V
     .locals 2
-    .param p1    # Ljava/lang/Runnable;
 
     iget-object v0, p0, Landroid/os/Handler;->mQueue:Landroid/os/MessageQueue;
 
@@ -649,8 +603,6 @@
 
 .method public final removeCallbacks(Ljava/lang/Runnable;Ljava/lang/Object;)V
     .locals 1
-    .param p1    # Ljava/lang/Runnable;
-    .param p2    # Ljava/lang/Object;
 
     iget-object v0, p0, Landroid/os/Handler;->mQueue:Landroid/os/MessageQueue;
 
@@ -661,7 +613,6 @@
 
 .method public final removeCallbacksAndMessages(Ljava/lang/Object;)V
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     iget-object v0, p0, Landroid/os/Handler;->mQueue:Landroid/os/MessageQueue;
 
@@ -672,7 +623,6 @@
 
 .method public final removeMessages(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Landroid/os/Handler;->mQueue:Landroid/os/MessageQueue;
 
@@ -685,8 +635,6 @@
 
 .method public final removeMessages(ILjava/lang/Object;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/Object;
 
     iget-object v0, p0, Landroid/os/Handler;->mQueue:Landroid/os/MessageQueue;
 
@@ -697,8 +645,6 @@
 
 .method public final runWithScissors(Ljava/lang/Runnable;J)Z
     .locals 3
-    .param p1    # Ljava/lang/Runnable;
-    .param p2    # J
 
     if-nez p1, :cond_0
 
@@ -755,7 +701,6 @@
 
 .method public final sendEmptyMessage(I)Z
     .locals 2
-    .param p1    # I
 
     const-wide/16 v0, 0x0
 
@@ -768,8 +713,6 @@
 
 .method public final sendEmptyMessageAtTime(IJ)Z
     .locals 2
-    .param p1    # I
-    .param p2    # J
 
     invoke-static {}, Landroid/os/Message;->obtain()Landroid/os/Message;
 
@@ -786,8 +729,6 @@
 
 .method public final sendEmptyMessageDelayed(IJ)Z
     .locals 2
-    .param p1    # I
-    .param p2    # J
 
     invoke-static {}, Landroid/os/Message;->obtain()Landroid/os/Message;
 
@@ -804,7 +745,6 @@
 
 .method public final sendMessage(Landroid/os/Message;)Z
     .locals 2
-    .param p1    # Landroid/os/Message;
 
     const-wide/16 v0, 0x0
 
@@ -817,7 +757,6 @@
 
 .method public final sendMessageAtFrontOfQueue(Landroid/os/Message;)Z
     .locals 4
-    .param p1    # Landroid/os/Message;
 
     iget-object v1, p0, Landroid/os/Handler;->mQueue:Landroid/os/MessageQueue;
 
@@ -870,8 +809,6 @@
 
 .method public sendMessageAtTime(Landroid/os/Message;J)Z
     .locals 4
-    .param p1    # Landroid/os/Message;
-    .param p2    # J
 
     iget-object v1, p0, Landroid/os/Handler;->mQueue:Landroid/os/MessageQueue;
 
@@ -922,8 +859,6 @@
 
 .method public final sendMessageDelayed(Landroid/os/Message;J)Z
     .locals 2
-    .param p1    # Landroid/os/Message;
-    .param p2    # J
 
     const-wide/16 v0, 0x0
 

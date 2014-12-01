@@ -15,7 +15,6 @@
 # direct methods
 .method protected constructor <init>(I)V
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -51,7 +50,6 @@
 
 .method protected final setDelayTime(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/hardware/contextaware/utilbundle/autotest/CaAutoTest;->mDelayTime:I
 
@@ -60,7 +58,6 @@
 
 .method public final setStopFlag(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/hardware/contextaware/utilbundle/autotest/CaAutoTest;->mStopFlag:Z
 

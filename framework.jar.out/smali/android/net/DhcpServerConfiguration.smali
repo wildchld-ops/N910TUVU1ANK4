@@ -90,7 +90,6 @@
 
 .method public static IpToInt(Ljava/lang/String;)I
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     const/4 v4, 0x4
 
@@ -161,8 +160,6 @@
 
 .method public static putAddress(Ljava/lang/StringBuffer;I)V
     .locals 3
-    .param p0    # Ljava/lang/StringBuffer;
-    .param p1    # I
 
     const/16 v2, 0x2e
 
@@ -221,7 +218,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 5
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x1
 
@@ -457,8 +453,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 3
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v0, p0, Landroid/net/DhcpServerConfiguration;->localIp:Ljava/lang/String;
 

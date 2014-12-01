@@ -138,7 +138,6 @@
 
 .method static getFilter(I)Lcom/android/settings/bluetooth/BluetoothDeviceFilter$Filter;
     .locals 3
-    .param p0    # I
 
     if-ltz p0, :cond_0
 

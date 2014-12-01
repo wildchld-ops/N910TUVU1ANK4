@@ -30,9 +30,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/am/ActivityManagerService;Lcom/android/server/am/ProcessRecord;ILandroid/app/IApplicationThread;)V
     .locals 0
-    .param p2    # Lcom/android/server/am/ProcessRecord;
-    .param p3    # I
-    .param p4    # Landroid/app/IApplicationThread;
 
     iput-object p1, p0, Lcom/android/server/am/ActivityManagerService$AppDeathRecipient;->this$0:Lcom/android/server/am/ActivityManagerService;
 

@@ -14,9 +14,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;II)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -99,7 +96,6 @@
 
 .method public declared-synchronized setCid(I)V
     .locals 1
-    .param p1    # I
 
     monitor-enter p0
 
@@ -122,7 +118,6 @@
 
 .method public declared-synchronized setPackageName(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -145,7 +140,6 @@
 
 .method public declared-synchronized setUid(I)V
     .locals 1
-    .param p1    # I
 
     monitor-enter p0
 

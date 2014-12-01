@@ -33,7 +33,6 @@
 # virtual methods
 .method onComplete(Ljava/lang/Integer;)V
     .locals 8
-    .param p1    # Ljava/lang/Integer;
 
     const/4 v7, 0x5
 

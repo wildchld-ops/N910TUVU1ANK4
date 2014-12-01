@@ -36,7 +36,6 @@
 # virtual methods
 .method public onEndAddStroke(Z)V
     .locals 8
-    .param p1    # Z
 
     const/4 v7, 0x5
 
@@ -257,7 +256,6 @@
 
 .method public onStartAddStroke(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/diotek/ime/framework/input/HwrInputModule$5;->this$0:Lcom/diotek/ime/framework/input/HwrInputModule;
 

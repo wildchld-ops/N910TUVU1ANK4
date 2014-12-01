@@ -84,11 +84,6 @@
 
 .method private constructor <init>(IIIII)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -107,12 +102,6 @@
 
 .method synthetic constructor <init>(IIIIILandroid/view/GraphicBuffer$1;)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Landroid/view/GraphicBuffer$1;
 
     invoke-direct/range {p0 .. p5}, Landroid/view/GraphicBuffer;-><init>(IIIII)V
 
@@ -121,7 +110,6 @@
 
 .method static synthetic access$000(Landroid/os/Parcel;)I
     .locals 1
-    .param p0    # Landroid/os/Parcel;
 
     invoke-static {p0}, Landroid/view/GraphicBuffer;->nReadGraphicBufferFromParcel(Landroid/os/Parcel;)I
 
@@ -132,10 +120,6 @@
 
 .method public static create(IIII)Landroid/view/GraphicBuffer;
     .locals 6
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     invoke-static {p0, p1, p2, p3}, Landroid/view/GraphicBuffer;->nCreateGraphicBuffer(IIII)I
 
@@ -297,7 +281,6 @@
 
 .method public lockCanvas(Landroid/graphics/Rect;)Landroid/graphics/Canvas;
     .locals 3
-    .param p1    # Landroid/graphics/Rect;
 
     const/4 v0, 0x0
 
@@ -346,7 +329,6 @@
 
 .method public unlockCanvasAndPost(Landroid/graphics/Canvas;)V
     .locals 2
-    .param p1    # Landroid/graphics/Canvas;
 
     iget-boolean v0, p0, Landroid/view/GraphicBuffer;->mDestroyed:Z
 
@@ -380,8 +362,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-boolean v0, p0, Landroid/view/GraphicBuffer;->mDestroyed:Z
 

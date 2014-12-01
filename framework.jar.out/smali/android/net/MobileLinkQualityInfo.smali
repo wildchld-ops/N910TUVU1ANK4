@@ -70,7 +70,6 @@
 
 .method public static createFromParcelBody(Landroid/os/Parcel;)Landroid/net/MobileLinkQualityInfo;
     .locals 2
-    .param p0    # Landroid/os/Parcel;
 
     new-instance v0, Landroid/net/MobileLinkQualityInfo;
 
@@ -267,7 +266,6 @@
 
 .method public setCdmaDbm(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/net/MobileLinkQualityInfo;->mCdmaDbm:I
 
@@ -276,7 +274,6 @@
 
 .method public setCdmaEcio(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/net/MobileLinkQualityInfo;->mCdmaEcio:I
 
@@ -285,7 +282,6 @@
 
 .method public setEvdoDbm(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/net/MobileLinkQualityInfo;->mEvdoDbm:I
 
@@ -294,7 +290,6 @@
 
 .method public setEvdoEcio(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/net/MobileLinkQualityInfo;->mEvdoEcio:I
 
@@ -303,7 +298,6 @@
 
 .method public setEvdoSnr(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/net/MobileLinkQualityInfo;->mEvdoSnr:I
 
@@ -312,7 +306,6 @@
 
 .method public setGsmErrorRate(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/net/MobileLinkQualityInfo;->mGsmErrorRate:I
 
@@ -321,7 +314,6 @@
 
 .method public setLteCqi(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/net/MobileLinkQualityInfo;->mLteCqi:I
 
@@ -330,7 +322,6 @@
 
 .method public setLteRsrp(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/net/MobileLinkQualityInfo;->mLteRsrp:I
 
@@ -339,7 +330,6 @@
 
 .method public setLteRsrq(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/net/MobileLinkQualityInfo;->mLteRsrq:I
 
@@ -348,7 +338,6 @@
 
 .method public setLteRssnr(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/net/MobileLinkQualityInfo;->mLteRssnr:I
 
@@ -357,7 +346,6 @@
 
 .method public setLteSignalStrength(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/net/MobileLinkQualityInfo;->mLteSignalStrength:I
 
@@ -366,7 +354,6 @@
 
 .method public setMobileNetworkType(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/net/MobileLinkQualityInfo;->mMobileNetworkType:I
 
@@ -375,7 +362,6 @@
 
 .method public setRssi(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/net/MobileLinkQualityInfo;->mRssi:I
 
@@ -384,8 +370,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     const/4 v0, 0x3
 

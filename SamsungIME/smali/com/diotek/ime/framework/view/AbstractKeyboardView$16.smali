@@ -36,7 +36,6 @@
 # virtual methods
 .method public onDropAction(Landroid/view/DragEvent;)V
     .locals 14
-    .param p1    # Landroid/view/DragEvent;
 
     invoke-static {}, Lcom/diotek/ime/framework/repository/InputModeStatus;->getInputMethodStatus()I
 

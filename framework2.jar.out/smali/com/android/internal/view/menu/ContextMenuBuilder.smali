@@ -9,7 +9,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Lcom/android/internal/view/menu/MenuBuilder;-><init>(Landroid/content/Context;)V
 
@@ -20,7 +19,6 @@
 # virtual methods
 .method public setHeaderIcon(I)Landroid/view/ContextMenu;
     .locals 1
-    .param p1    # I
 
     invoke-super {p0, p1}, Lcom/android/internal/view/menu/MenuBuilder;->setHeaderIconInt(I)Lcom/android/internal/view/menu/MenuBuilder;
 
@@ -33,7 +31,6 @@
 
 .method public setHeaderIcon(Landroid/graphics/drawable/Drawable;)Landroid/view/ContextMenu;
     .locals 1
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     invoke-super {p0, p1}, Lcom/android/internal/view/menu/MenuBuilder;->setHeaderIconInt(Landroid/graphics/drawable/Drawable;)Lcom/android/internal/view/menu/MenuBuilder;
 
@@ -46,7 +43,6 @@
 
 .method public setHeaderTitle(I)Landroid/view/ContextMenu;
     .locals 1
-    .param p1    # I
 
     invoke-super {p0, p1}, Lcom/android/internal/view/menu/MenuBuilder;->setHeaderTitleInt(I)Lcom/android/internal/view/menu/MenuBuilder;
 
@@ -59,7 +55,6 @@
 
 .method public setHeaderTitle(Ljava/lang/CharSequence;)Landroid/view/ContextMenu;
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
 
     invoke-super {p0, p1}, Lcom/android/internal/view/menu/MenuBuilder;->setHeaderTitleInt(Ljava/lang/CharSequence;)Lcom/android/internal/view/menu/MenuBuilder;
 
@@ -72,7 +67,6 @@
 
 .method public setHeaderView(Landroid/view/View;)Landroid/view/ContextMenu;
     .locals 1
-    .param p1    # Landroid/view/View;
 
     invoke-super {p0, p1}, Lcom/android/internal/view/menu/MenuBuilder;->setHeaderViewInt(Landroid/view/View;)Lcom/android/internal/view/menu/MenuBuilder;
 
@@ -85,8 +79,6 @@
 
 .method public show(Landroid/view/View;Landroid/os/IBinder;)Lcom/android/internal/view/menu/MenuDialogHelper;
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/os/IBinder;
 
     const/4 v2, 0x1
 

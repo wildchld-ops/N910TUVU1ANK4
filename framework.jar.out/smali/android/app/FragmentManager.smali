@@ -27,7 +27,6 @@
 
 .method public static enableDebugLogging(Z)V
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Landroid/app/FragmentManagerImpl;->DEBUG:Z
 

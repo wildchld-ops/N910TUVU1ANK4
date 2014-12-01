@@ -61,7 +61,7 @@
 
     invoke-direct {v1, v2, v3}, Landroid/content/Intent;-><init>(Ljava/lang/String;Landroid/net/Uri;)V
 
-    invoke-virtual {v0, v1}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {v0, v1}, Lcom/android/phone/ErrorDialogActivity;->startActivity(Landroid/content/Intent;)V
 
     iget-object v0, p0, Lcom/android/phone/ErrorDialogActivity$9;->this$0:Lcom/android/phone/ErrorDialogActivity;
 

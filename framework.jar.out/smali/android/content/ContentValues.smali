@@ -66,7 +66,6 @@
 
 .method public constructor <init>(I)V
     .locals 2
-    .param p1    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -83,7 +82,6 @@
 
 .method public constructor <init>(Landroid/content/ContentValues;)V
     .locals 2
-    .param p1    # Landroid/content/ContentValues;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -120,8 +118,6 @@
 
 .method synthetic constructor <init>(Ljava/util/HashMap;Landroid/content/ContentValues$1;)V
     .locals 0
-    .param p1    # Ljava/util/HashMap;
-    .param p2    # Landroid/content/ContentValues$1;
 
     invoke-direct {p0, p1}, Landroid/content/ContentValues;-><init>(Ljava/util/HashMap;)V
 
@@ -142,7 +138,6 @@
 
 .method public containsKey(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/content/ContentValues;->mValues:Ljava/util/HashMap;
 
@@ -163,7 +158,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 2
-    .param p1    # Ljava/lang/Object;
 
     instance-of v0, p1, Landroid/content/ContentValues;
 
@@ -190,7 +184,6 @@
 
 .method public get(Ljava/lang/String;)Ljava/lang/Object;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/content/ContentValues;->mValues:Ljava/util/HashMap;
 
@@ -203,7 +196,6 @@
 
 .method public getAsBoolean(Ljava/lang/String;)Ljava/lang/Boolean;
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     iget-object v2, p0, Landroid/content/ContentValues;->mValues:Ljava/util/HashMap;
 
@@ -303,7 +295,6 @@
 
 .method public getAsByte(Ljava/lang/String;)Ljava/lang/Byte;
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     const/4 v5, 0x0
 
@@ -438,7 +429,6 @@
 
 .method public getAsByteArray(Ljava/lang/String;)[B
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Landroid/content/ContentValues;->mValues:Ljava/util/HashMap;
 
@@ -465,7 +455,6 @@
 
 .method public getAsDouble(Ljava/lang/String;)Ljava/lang/Double;
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     const/4 v5, 0x0
 
@@ -600,7 +589,6 @@
 
 .method public getAsFloat(Ljava/lang/String;)Ljava/lang/Float;
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     const/4 v5, 0x0
 
@@ -735,7 +723,6 @@
 
 .method public getAsInteger(Ljava/lang/String;)Ljava/lang/Integer;
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     const/4 v5, 0x0
 
@@ -870,7 +857,6 @@
 
 .method public getAsLong(Ljava/lang/String;)Ljava/lang/Long;
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     const/4 v5, 0x0
 
@@ -1005,7 +991,6 @@
 
 .method public getAsShort(Ljava/lang/String;)Ljava/lang/Short;
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     const/4 v5, 0x0
 
@@ -1140,7 +1125,6 @@
 
 .method public getAsString(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Landroid/content/ContentValues;->mValues:Ljava/util/HashMap;
 
@@ -1165,7 +1149,6 @@
 
 .method public getStringArrayList(Ljava/lang/String;)Ljava/util/ArrayList;
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1227,8 +1210,6 @@
 
 .method public put(Ljava/lang/String;Ljava/lang/Boolean;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Boolean;
 
     iget-object v0, p0, Landroid/content/ContentValues;->mValues:Ljava/util/HashMap;
 
@@ -1239,8 +1220,6 @@
 
 .method public put(Ljava/lang/String;Ljava/lang/Byte;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Byte;
 
     iget-object v0, p0, Landroid/content/ContentValues;->mValues:Ljava/util/HashMap;
 
@@ -1251,8 +1230,6 @@
 
 .method public put(Ljava/lang/String;Ljava/lang/Double;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Double;
 
     iget-object v0, p0, Landroid/content/ContentValues;->mValues:Ljava/util/HashMap;
 
@@ -1263,8 +1240,6 @@
 
 .method public put(Ljava/lang/String;Ljava/lang/Float;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Float;
 
     iget-object v0, p0, Landroid/content/ContentValues;->mValues:Ljava/util/HashMap;
 
@@ -1275,8 +1250,6 @@
 
 .method public put(Ljava/lang/String;Ljava/lang/Integer;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Integer;
 
     iget-object v0, p0, Landroid/content/ContentValues;->mValues:Ljava/util/HashMap;
 
@@ -1287,8 +1260,6 @@
 
 .method public put(Ljava/lang/String;Ljava/lang/Long;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Long;
 
     iget-object v0, p0, Landroid/content/ContentValues;->mValues:Ljava/util/HashMap;
 
@@ -1299,8 +1270,6 @@
 
 .method public put(Ljava/lang/String;Ljava/lang/Short;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Short;
 
     iget-object v0, p0, Landroid/content/ContentValues;->mValues:Ljava/util/HashMap;
 
@@ -1311,8 +1280,6 @@
 
 .method public put(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/content/ContentValues;->mValues:Ljava/util/HashMap;
 
@@ -1323,8 +1290,6 @@
 
 .method public put(Ljava/lang/String;[B)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # [B
 
     iget-object v0, p0, Landroid/content/ContentValues;->mValues:Ljava/util/HashMap;
 
@@ -1335,7 +1300,6 @@
 
 .method public putAll(Landroid/content/ContentValues;)V
     .locals 2
-    .param p1    # Landroid/content/ContentValues;
 
     iget-object v0, p0, Landroid/content/ContentValues;->mValues:Ljava/util/HashMap;
 
@@ -1348,7 +1312,6 @@
 
 .method public putNull(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/content/ContentValues;->mValues:Ljava/util/HashMap;
 
@@ -1361,7 +1324,6 @@
 
 .method public putStringArrayList(Ljava/lang/String;Ljava/util/ArrayList;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1385,7 +1347,6 @@
 
 .method public remove(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/content/ContentValues;->mValues:Ljava/util/HashMap;
 
@@ -1511,8 +1472,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v0, p0, Landroid/content/ContentValues;->mValues:Ljava/util/HashMap;
 

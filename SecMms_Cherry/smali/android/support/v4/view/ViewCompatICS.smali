@@ -14,8 +14,6 @@
 
 .method public static canScrollHorizontally(Landroid/view/View;I)Z
     .locals 1
-    .param p0    # Landroid/view/View;
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/view/View;->canScrollHorizontally(I)Z
 
@@ -26,8 +24,6 @@
 
 .method public static canScrollVertically(Landroid/view/View;I)Z
     .locals 1
-    .param p0    # Landroid/view/View;
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/view/View;->canScrollVertically(I)Z
 
@@ -38,8 +34,6 @@
 
 .method public static onInitializeAccessibilityEvent(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)V
     .locals 0
-    .param p0    # Landroid/view/View;
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
 
     invoke-virtual {p0, p1}, Landroid/view/View;->onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
 
@@ -48,8 +42,6 @@
 
 .method public static onInitializeAccessibilityNodeInfo(Landroid/view/View;Ljava/lang/Object;)V
     .locals 0
-    .param p0    # Landroid/view/View;
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Landroid/view/accessibility/AccessibilityNodeInfo;
 
@@ -60,8 +52,6 @@
 
 .method public static onPopulateAccessibilityEvent(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)V
     .locals 0
-    .param p0    # Landroid/view/View;
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
 
     invoke-virtual {p0, p1}, Landroid/view/View;->onPopulateAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
 
@@ -70,8 +60,6 @@
 
 .method public static setAccessibilityDelegate(Landroid/view/View;Ljava/lang/Object;)V
     .locals 0
-    .param p0    # Landroid/view/View;
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Landroid/view/View$AccessibilityDelegate;
 

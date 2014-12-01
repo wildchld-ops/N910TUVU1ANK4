@@ -25,7 +25,6 @@
 # direct methods
 .method public constructor <init>(Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;)V
     .locals 58
-    .param p1    # Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 

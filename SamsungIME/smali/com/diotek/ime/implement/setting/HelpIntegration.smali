@@ -65,7 +65,6 @@
 
 .method static synthetic access$000(Lcom/diotek/ime/implement/setting/HelpIntegration;)Z
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/setting/HelpIntegration;
 
     iget-boolean v0, p0, Lcom/diotek/ime/implement/setting/HelpIntegration;->mHelpKeyboardButtonState:Z
 
@@ -74,8 +73,6 @@
 
 .method static synthetic access$002(Lcom/diotek/ime/implement/setting/HelpIntegration;Z)Z
     .locals 0
-    .param p0    # Lcom/diotek/ime/implement/setting/HelpIntegration;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/implement/setting/HelpIntegration;->mHelpKeyboardButtonState:Z
 
@@ -84,7 +81,6 @@
 
 .method static synthetic access$100(Lcom/diotek/ime/implement/setting/HelpIntegration;)Z
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/setting/HelpIntegration;
 
     iget-boolean v0, p0, Lcom/diotek/ime/implement/setting/HelpIntegration;->mHelpHandwritingButtonState:Z
 
@@ -93,8 +89,6 @@
 
 .method static synthetic access$102(Lcom/diotek/ime/implement/setting/HelpIntegration;Z)Z
     .locals 0
-    .param p0    # Lcom/diotek/ime/implement/setting/HelpIntegration;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/implement/setting/HelpIntegration;->mHelpHandwritingButtonState:Z
 
@@ -103,7 +97,6 @@
 
 .method static synthetic access$200(Lcom/diotek/ime/implement/setting/HelpIntegration;)Z
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/setting/HelpIntegration;
 
     iget-boolean v0, p0, Lcom/diotek/ime/implement/setting/HelpIntegration;->mHelpGestureGuideButtonState:Z
 
@@ -112,8 +105,6 @@
 
 .method static synthetic access$202(Lcom/diotek/ime/implement/setting/HelpIntegration;Z)Z
     .locals 0
-    .param p0    # Lcom/diotek/ime/implement/setting/HelpIntegration;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/implement/setting/HelpIntegration;->mHelpGestureGuideButtonState:Z
 
@@ -122,7 +113,6 @@
 
 .method static synthetic access$300(Lcom/diotek/ime/implement/setting/HelpIntegration;)Z
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/setting/HelpIntegration;
 
     iget-boolean v0, p0, Lcom/diotek/ime/implement/setting/HelpIntegration;->mHelpContinousInputButtonState:Z
 
@@ -131,8 +121,6 @@
 
 .method static synthetic access$302(Lcom/diotek/ime/implement/setting/HelpIntegration;Z)Z
     .locals 0
-    .param p0    # Lcom/diotek/ime/implement/setting/HelpIntegration;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/implement/setting/HelpIntegration;->mHelpContinousInputButtonState:Z
 
@@ -141,7 +129,6 @@
 
 .method private adjustText(Landroid/widget/TextView;)V
     .locals 2
-    .param p1    # Landroid/widget/TextView;
 
     if-eqz p1, :cond_0
 
@@ -181,7 +168,6 @@
 
 .method private getHwrLanguageType(I)I
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -937,14 +923,12 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     return-void
 .end method
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
@@ -984,15 +968,12 @@
 
 .method public onFocusChange(Landroid/view/View;Z)V
     .locals 0
-    .param p1    # Landroid/view/View;
-    .param p2    # Z
 
     return-void
 .end method
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -1024,8 +1005,6 @@
 
 .method public onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     const/4 v0, 0x0
 
@@ -1034,10 +1013,6 @@
 
 .method public updateTargetHelpContent(Landroid/widget/LinearLayout;Landroid/widget/LinearLayout;Landroid/widget/ImageView;Z)Z
     .locals 2
-    .param p1    # Landroid/widget/LinearLayout;
-    .param p2    # Landroid/widget/LinearLayout;
-    .param p3    # Landroid/widget/ImageView;
-    .param p4    # Z
 
     const/4 v0, 0x0
 

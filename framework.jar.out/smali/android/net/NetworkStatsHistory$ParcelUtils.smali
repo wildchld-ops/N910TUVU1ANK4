@@ -25,7 +25,6 @@
 
 .method public static readLongArray(Landroid/os/Parcel;)[J
     .locals 5
-    .param p0    # Landroid/os/Parcel;
 
     invoke-virtual {p0}, Landroid/os/Parcel;->readInt()I
 
@@ -63,9 +62,6 @@
 
 .method public static writeLongArray(Landroid/os/Parcel;[JI)V
     .locals 3
-    .param p0    # Landroid/os/Parcel;
-    .param p1    # [J
-    .param p2    # I
 
     if-nez p1, :cond_1
 

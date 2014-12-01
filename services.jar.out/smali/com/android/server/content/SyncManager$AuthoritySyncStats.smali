@@ -37,7 +37,6 @@
 # direct methods
 .method private constructor <init>(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -54,8 +53,6 @@
 
 .method synthetic constructor <init>(Ljava/lang/String;Lcom/android/server/content/SyncManager$1;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/server/content/SyncManager$1;
 
     invoke-direct {p0, p1}, Lcom/android/server/content/SyncManager$AuthoritySyncStats;-><init>(Ljava/lang/String;)V
 

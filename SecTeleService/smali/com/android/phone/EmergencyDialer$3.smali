@@ -58,7 +58,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0, v2}, Landroid/widget/AbsListView;->twShowMultiChoiceMode(Z)V
+    invoke-virtual {v0, v2}, Landroid/widget/ListView;->twShowMultiChoiceMode(Z)V
 
     :cond_0
     iget-object v0, p0, Lcom/android/phone/EmergencyDialer$3;->this$0:Lcom/android/phone/EmergencyDialer;
@@ -68,7 +68,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Landroid/widget/TextView;->length()I
+    invoke-virtual {v0}, Landroid/widget/EditText;->length()I
 
     move-result v0
 
@@ -90,7 +90,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v1}, Landroid/widget/EditText;->setVisibility(I)V
 
     iget-object v0, p0, Lcom/android/phone/EmergencyDialer$3;->this$0:Lcom/android/phone/EmergencyDialer;
 
@@ -99,7 +99,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v2}, Lcom/android/phone/EmergencyContactItemContainer;->setVisibility(I)V
 
     iget-object v0, p0, Lcom/android/phone/EmergencyDialer$3;->this$0:Lcom/android/phone/EmergencyDialer;
 
@@ -114,7 +114,7 @@
 
     iget-object v0, p0, Lcom/android/phone/EmergencyDialer$3;->this$0:Lcom/android/phone/EmergencyDialer;
 
-    invoke-virtual {v0}, Landroid/app/Activity;->invalidateOptionsMenu()V
+    invoke-virtual {v0}, Lcom/android/phone/EmergencyDialer;->invalidateOptionsMenu()V
 
     :cond_1
     :goto_0
@@ -137,7 +137,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Landroid/widget/TextView;->length()I
+    invoke-virtual {v0}, Landroid/widget/EditText;->length()I
 
     move-result v0
 
@@ -145,7 +145,7 @@
 
     iget-object v0, p0, Lcom/android/phone/EmergencyDialer$3;->this$0:Lcom/android/phone/EmergencyDialer;
 
-    invoke-virtual {v0}, Landroid/app/Activity;->invalidateOptionsMenu()V
+    invoke-virtual {v0}, Lcom/android/phone/EmergencyDialer;->invalidateOptionsMenu()V
 
     :cond_3
     iget-object v0, p0, Lcom/android/phone/EmergencyDialer$3;->this$0:Lcom/android/phone/EmergencyDialer;
@@ -155,7 +155,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v2}, Landroid/widget/EditText;->setVisibility(I)V
 
     iget-object v0, p0, Lcom/android/phone/EmergencyDialer$3;->this$0:Lcom/android/phone/EmergencyDialer;
 
@@ -164,7 +164,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v1}, Lcom/android/phone/EmergencyContactItemContainer;->setVisibility(I)V
 
     iget-object v0, p0, Lcom/android/phone/EmergencyDialer$3;->this$0:Lcom/android/phone/EmergencyDialer;
 
@@ -212,7 +212,7 @@
 
     iget-object v0, p0, Lcom/android/phone/EmergencyDialer$3;->this$0:Lcom/android/phone/EmergencyDialer;
 
-    invoke-virtual {v0}, Landroid/app/Activity;->invalidateOptionsMenu()V
+    invoke-virtual {v0}, Lcom/android/phone/EmergencyDialer;->invalidateOptionsMenu()V
 
     goto :goto_0
 .end method

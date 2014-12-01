@@ -43,12 +43,6 @@
 # direct methods
 .method public constructor <init>(Lcom/samsung/smartbonding/SmartBondingService;IIJJLjava/lang/String;J)V
     .locals 5
-    .param p2    # I
-    .param p3    # I
-    .param p4    # J
-    .param p6    # J
-    .param p8    # Ljava/lang/String;
-    .param p9    # J
 
     const-wide/16 v3, 0x0
 
@@ -125,7 +119,6 @@
 # virtual methods
 .method public equals(Ljava/lang/Object;)Z
     .locals 6
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x0
 

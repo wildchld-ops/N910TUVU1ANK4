@@ -84,7 +84,6 @@
 
 .method public setName(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/samsung/android/service/gesture/GestureProviderInfo;->mName:Ljava/lang/String;
 

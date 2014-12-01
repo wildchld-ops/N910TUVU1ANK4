@@ -36,8 +36,6 @@
 # virtual methods
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 9
-    .param p1    # Landroid/widget/CompoundButton;
-    .param p2    # Z
 
     const v8, 0x7f090f6c
 

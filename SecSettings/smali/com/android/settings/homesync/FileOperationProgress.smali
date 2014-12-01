@@ -76,11 +76,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/homesync/FileOperationProgress;Landroid/content/Context;IIJ)V
     .locals 0
-    .param p0    # Lcom/android/settings/homesync/FileOperationProgress;
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # J
 
     invoke-direct/range {p0 .. p5}, Lcom/android/settings/homesync/FileOperationProgress;->makeNotification(Landroid/content/Context;IIJ)V
 
@@ -109,10 +104,6 @@
 
 .method private makeNotification(Landroid/content/Context;IIJ)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # J
 
     const-string v2, ""
 
@@ -191,7 +182,6 @@
 # virtual methods
 .method createDialog(I)Landroid/app/AlertDialog;
     .locals 4
-    .param p1    # I
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
@@ -222,7 +212,6 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onActivityCreated(Landroid/os/Bundle;)V
 
@@ -231,7 +220,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -280,9 +268,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 4
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const v2, 0x7f0400bc
 

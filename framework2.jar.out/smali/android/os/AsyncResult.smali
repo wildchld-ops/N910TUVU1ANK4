@@ -14,9 +14,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Throwable;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Object;
-    .param p3    # Ljava/lang/Throwable;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -31,7 +28,6 @@
 
 .method public static forMessage(Landroid/os/Message;)Landroid/os/AsyncResult;
     .locals 3
-    .param p0    # Landroid/os/Message;
 
     const/4 v2, 0x0
 
@@ -48,9 +44,6 @@
 
 .method public static forMessage(Landroid/os/Message;Ljava/lang/Object;Ljava/lang/Throwable;)Landroid/os/AsyncResult;
     .locals 2
-    .param p0    # Landroid/os/Message;
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Throwable;
 
     new-instance v0, Landroid/os/AsyncResult;
 

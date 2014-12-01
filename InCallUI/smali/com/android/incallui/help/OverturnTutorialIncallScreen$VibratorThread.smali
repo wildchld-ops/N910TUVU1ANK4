@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Lcom/android/incallui/help/OverturnTutorialIncallScreen;Lcom/android/incallui/help/OverturnTutorialIncallScreen$1;)V
     .locals 0
-    .param p1    # Lcom/android/incallui/help/OverturnTutorialIncallScreen;
-    .param p2    # Lcom/android/incallui/help/OverturnTutorialIncallScreen$1;
 
     invoke-direct {p0, p1}, Lcom/android/incallui/help/OverturnTutorialIncallScreen$VibratorThread;-><init>(Lcom/android/incallui/help/OverturnTutorialIncallScreen;)V
 

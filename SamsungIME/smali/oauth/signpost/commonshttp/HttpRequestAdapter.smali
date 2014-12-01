@@ -15,7 +15,6 @@
 # direct methods
 .method public constructor <init>(Lorg/apache/http/client/methods/HttpUriRequest;)V
     .locals 1
-    .param p1    # Lorg/apache/http/client/methods/HttpUriRequest;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -122,7 +121,6 @@
 
 .method public getHeader(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Loauth/signpost/commonshttp/HttpRequestAdapter;->request:Lorg/apache/http/client/methods/HttpUriRequest;
 
@@ -206,8 +204,6 @@
 
 .method public setHeader(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Loauth/signpost/commonshttp/HttpRequestAdapter;->request:Lorg/apache/http/client/methods/HttpUriRequest;
 
@@ -218,7 +214,6 @@
 
 .method public setRequestUrl(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/RuntimeException;
 

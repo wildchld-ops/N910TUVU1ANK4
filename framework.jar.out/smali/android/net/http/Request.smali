@@ -56,13 +56,6 @@
 
 .method constructor <init>(Ljava/lang/String;Lorg/apache/http/HttpHost;Lorg/apache/http/HttpHost;Ljava/lang/String;Ljava/io/InputStream;ILandroid/net/http/EventHandler;Ljava/util/Map;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lorg/apache/http/HttpHost;
-    .param p3    # Lorg/apache/http/HttpHost;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/io/InputStream;
-    .param p6    # I
-    .param p7    # Landroid/net/http/EventHandler;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -171,8 +164,6 @@
 
 .method private static canResponseHaveBody(Lorg/apache/http/HttpRequest;I)Z
     .locals 3
-    .param p0    # Lorg/apache/http/HttpRequest;
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -216,8 +207,6 @@
 
 .method private setBodyProvider(Ljava/io/InputStream;I)V
     .locals 4
-    .param p1    # Ljava/io/InputStream;
-    .param p2    # I
 
     invoke-virtual {p1}, Ljava/io/InputStream;->markSupported()Z
 
@@ -257,8 +246,6 @@
 # virtual methods
 .method addHeader(Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -446,8 +433,6 @@
 
 .method error(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Landroid/net/http/Request;->mEventHandler:Landroid/net/http/EventHandler;
 
@@ -607,7 +592,6 @@
 
 .method public handleSslErrorResponse(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v1, p0, Landroid/net/http/Request;->mConnection:Landroid/net/http/Connection;
 
@@ -627,7 +611,6 @@
 
 .method readResponse(Landroid/net/http/AndroidHttpClientConnection;)V
     .locals 25
-    .param p1    # Landroid/net/http/AndroidHttpClientConnection;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -1190,7 +1173,6 @@
 
 .method sendRequest(Landroid/net/http/AndroidHttpClientConnection;)V
     .locals 3
-    .param p1    # Landroid/net/http/AndroidHttpClientConnection;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/HttpException;,
@@ -1240,7 +1222,6 @@
 
 .method setConnection(Landroid/net/http/Connection;)V
     .locals 0
-    .param p1    # Landroid/net/http/Connection;
 
     iput-object p1, p0, Landroid/net/http/Request;->mConnection:Landroid/net/http/Connection;
 
@@ -1249,7 +1230,6 @@
 
 .method declared-synchronized setLoadingPaused(Z)V
     .locals 1
-    .param p1    # Z
 
     monitor-enter p0
 

@@ -33,7 +33,6 @@
 
 .method synthetic constructor <init>(Landroid/support/v4/net/TrafficStatsCompat$1;)V
     .locals 0
-    .param p1    # Landroid/support/v4/net/TrafficStatsCompat$1;
 
     invoke-direct {p0}, Landroid/support/v4/net/TrafficStatsCompat$BaseTrafficStatsCompatImpl$SocketTags;-><init>()V
 

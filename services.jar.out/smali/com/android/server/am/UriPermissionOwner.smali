@@ -44,8 +44,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/am/ActivityManagerService;Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Lcom/android/server/am/ActivityManagerService;
-    .param p2    # Ljava/lang/Object;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -58,7 +56,6 @@
 
 .method static fromExternalToken(Landroid/os/IBinder;)Lcom/android/server/am/UriPermissionOwner;
     .locals 1
-    .param p0    # Landroid/os/IBinder;
 
     instance-of v0, p0, Lcom/android/server/am/UriPermissionOwner$ExternalToken;
 
@@ -83,7 +80,6 @@
 # virtual methods
 .method public addReadPermission(Lcom/android/server/am/UriPermission;)V
     .locals 1
-    .param p1    # Lcom/android/server/am/UriPermission;
 
     iget-object v0, p0, Lcom/android/server/am/UriPermissionOwner;->readUriPermissions:Ljava/util/HashSet;
 
@@ -105,7 +101,6 @@
 
 .method public addWritePermission(Lcom/android/server/am/UriPermission;)V
     .locals 1
-    .param p1    # Lcom/android/server/am/UriPermission;
 
     iget-object v0, p0, Lcom/android/server/am/UriPermissionOwner;->writeUriPermissions:Ljava/util/HashSet;
 
@@ -146,7 +141,6 @@
 
 .method public removeReadPermission(Lcom/android/server/am/UriPermission;)V
     .locals 1
-    .param p1    # Lcom/android/server/am/UriPermission;
 
     iget-object v0, p0, Lcom/android/server/am/UriPermissionOwner;->readUriPermissions:Ljava/util/HashSet;
 
@@ -170,8 +164,6 @@
 
 .method removeUriPermissionLocked(Landroid/net/Uri;I)V
     .locals 4
-    .param p1    # Landroid/net/Uri;
-    .param p2    # I
 
     const/4 v3, 0x0
 
@@ -306,7 +298,6 @@
 
 .method removeUriPermissionsLocked(I)V
     .locals 4
-    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -393,7 +384,6 @@
 
 .method public removeWritePermission(Lcom/android/server/am/UriPermission;)V
     .locals 1
-    .param p1    # Lcom/android/server/am/UriPermission;
 
     iget-object v0, p0, Lcom/android/server/am/UriPermissionOwner;->writeUriPermissions:Ljava/util/HashSet;
 

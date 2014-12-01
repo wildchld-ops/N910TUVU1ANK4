@@ -63,8 +63,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/DateTimeSettings;Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/DateTimeSettings;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/settings/DateTimeSettings;->getAutoState(Ljava/lang/String;)Z
 
@@ -75,7 +73,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/DateTimeSettings;)Landroid/preference/CheckBoxPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/DateTimeSettings;
 
     iget-object v0, p0, Lcom/android/settings/DateTimeSettings;->mAutoTimePref:Landroid/preference/CheckBoxPreference;
 
@@ -84,7 +81,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/DateTimeSettings;)Landroid/preference/Preference;
     .locals 1
-    .param p0    # Lcom/android/settings/DateTimeSettings;
 
     iget-object v0, p0, Lcom/android/settings/DateTimeSettings;->mTimePref:Landroid/preference/Preference;
 
@@ -93,7 +89,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/DateTimeSettings;)Landroid/preference/Preference;
     .locals 1
-    .param p0    # Lcom/android/settings/DateTimeSettings;
 
     iget-object v0, p0, Lcom/android/settings/DateTimeSettings;->mDatePref:Landroid/preference/Preference;
 
@@ -102,7 +97,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/DateTimeSettings;)V
     .locals 0
-    .param p0    # Lcom/android/settings/DateTimeSettings;
 
     invoke-direct {p0}, Lcom/android/settings/DateTimeSettings;->applyEDMDateTimeChangePolicy()V
 
@@ -111,7 +105,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/DateTimeSettings;)Landroid/preference/SwitchPreferenceScreen;
     .locals 1
-    .param p0    # Lcom/android/settings/DateTimeSettings;
 
     iget-object v0, p0, Lcom/android/settings/DateTimeSettings;->mDualclock:Landroid/preference/SwitchPreferenceScreen;
 
@@ -345,7 +338,6 @@
 
 .method static configureDatePicker(Landroid/widget/DatePicker;)V
     .locals 6
-    .param p0    # Landroid/widget/DatePicker;
 
     const/4 v5, 0x0
 
@@ -405,7 +397,6 @@
 
 .method private getAutoState(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -452,7 +443,6 @@
 
 .method static getTimeZoneName(Ljava/lang/String;)Ljava/lang/String;
     .locals 7
-    .param p0    # Ljava/lang/String;
 
     const/4 v6, 0x3
 
@@ -591,7 +581,6 @@
 
 .method private static getTimeZoneText(Ljava/util/TimeZone;)Ljava/lang/String;
     .locals 7
-    .param p0    # Ljava/util/TimeZone;
 
     new-instance v4, Ljava/text/SimpleDateFormat;
 
@@ -994,7 +983,6 @@
 
 .method private set24Hour(Z)V
     .locals 3
-    .param p1    # Z
 
     invoke-virtual {p0}, Lcom/android/settings/SettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -1019,10 +1007,6 @@
 
 .method static setDate(Landroid/content/Context;III)V
     .locals 7
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     invoke-static {}, Ljava/util/Calendar;->getInstance()Ljava/util/Calendar;
 
@@ -1070,9 +1054,6 @@
 
 .method static setTime(Landroid/content/Context;II)V
     .locals 7
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # I
 
     const/4 v4, 0x0
 
@@ -1148,7 +1129,6 @@
 # virtual methods
 .method public ChangeType(Ljava/lang/String;)Ljava/lang/String;
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const-string v3, " "
 
@@ -1330,9 +1310,6 @@
 
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 
@@ -1345,7 +1322,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -1392,7 +1368,6 @@
 
 .method public onCreateDialog(I)Landroid/app/Dialog;
     .locals 8
-    .param p1    # I
 
     invoke-static {}, Ljava/util/Calendar;->getInstance()Ljava/util/Calendar;
 
@@ -1488,10 +1463,6 @@
 
 .method public onDateSet(Landroid/widget/DatePicker;III)V
     .locals 2
-    .param p1    # Landroid/widget/DatePicker;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const-string v1, "auto_time"
 
@@ -1563,8 +1534,6 @@
 
 .method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
     .locals 6
-    .param p1    # Landroid/preference/Preference;
-    .param p2    # Ljava/lang/Object;
 
     const/4 v3, 0x1
 
@@ -1656,8 +1625,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 8
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     const/4 v5, 0x0
 
@@ -1905,8 +1872,6 @@
 
 .method public onSharedPreferenceChanged(Landroid/content/SharedPreferences;Ljava/lang/String;)V
     .locals 12
-    .param p1    # Landroid/content/SharedPreferences;
-    .param p2    # Ljava/lang/String;
 
     const/4 v9, 0x0
 
@@ -2169,9 +2134,6 @@
 
 .method public onTimeSet(Landroid/widget/TimePicker;II)V
     .locals 2
-    .param p1    # Landroid/widget/TimePicker;
-    .param p2    # I
-    .param p3    # I
 
     const-string v1, "auto_time"
 
@@ -2395,7 +2357,6 @@
 
 .method public updateTimeAndDateDisplay(Landroid/content/Context;)V
     .locals 14
-    .param p1    # Landroid/content/Context;
 
     invoke-static {p1}, Landroid/text/format/DateFormat;->getDateFormat(Landroid/content/Context;)Ljava/text/DateFormat;
 

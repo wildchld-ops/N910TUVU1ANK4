@@ -61,7 +61,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/settings/DeleteoldMessagesSettings;)Landroid/widget/Switch;
     .locals 1
-    .param p0    # Lcom/android/mms/settings/DeleteoldMessagesSettings;
 
     iget-object v0, p0, Lcom/android/mms/settings/DeleteoldMessagesSettings;->mSwitch:Landroid/widget/Switch;
 
@@ -70,7 +69,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/settings/DeleteoldMessagesSettings;)V
     .locals 0
-    .param p0    # Lcom/android/mms/settings/DeleteoldMessagesSettings;
 
     invoke-direct {p0}, Lcom/android/mms/settings/DeleteoldMessagesSettings;->setElementEnable()V
 
@@ -79,7 +77,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/settings/DeleteoldMessagesSettings;)Lcom/android/mms/util/Recycler;
     .locals 1
-    .param p0    # Lcom/android/mms/settings/DeleteoldMessagesSettings;
 
     iget-object v0, p0, Lcom/android/mms/settings/DeleteoldMessagesSettings;->mSmsRecycler:Lcom/android/mms/util/Recycler;
 
@@ -88,7 +85,6 @@
 
 .method static synthetic access$300(Lcom/android/mms/settings/DeleteoldMessagesSettings;)V
     .locals 0
-    .param p0    # Lcom/android/mms/settings/DeleteoldMessagesSettings;
 
     invoke-direct {p0}, Lcom/android/mms/settings/DeleteoldMessagesSettings;->setSmsDisplayLimit()V
 
@@ -97,7 +93,6 @@
 
 .method static synthetic access$400(Lcom/android/mms/settings/DeleteoldMessagesSettings;)Lcom/android/mms/util/Recycler;
     .locals 1
-    .param p0    # Lcom/android/mms/settings/DeleteoldMessagesSettings;
 
     iget-object v0, p0, Lcom/android/mms/settings/DeleteoldMessagesSettings;->mMmsRecycler:Lcom/android/mms/util/Recycler;
 
@@ -106,7 +101,6 @@
 
 .method static synthetic access$500(Lcom/android/mms/settings/DeleteoldMessagesSettings;)V
     .locals 0
-    .param p0    # Lcom/android/mms/settings/DeleteoldMessagesSettings;
 
     invoke-direct {p0}, Lcom/android/mms/settings/DeleteoldMessagesSettings;->setMmsDisplayLimit()V
 
@@ -134,8 +128,6 @@
 
 .method private removePreference(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)V
     .locals 0
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     if-eqz p1, :cond_0
 
@@ -377,7 +369,6 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onCreate(Landroid/os/Bundle;)V
 
@@ -411,7 +402,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 3
-    .param p1    # Landroid/view/Menu;
 
     invoke-virtual {p0}, Landroid/app/Activity;->getMenuInflater()Landroid/view/MenuInflater;
 
@@ -489,7 +479,6 @@
 
 .method public onMenuItemClick(Landroid/view/MenuItem;)Z
     .locals 2
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v0, 0x0
 
@@ -565,7 +554,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -597,8 +585,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 1
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     iget-object v0, p0, Lcom/android/mms/settings/DeleteoldMessagesSettings;->mSmsLimitPref:Landroid/preference/Preference;
 
@@ -626,7 +612,6 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)Z
     .locals 4
-    .param p1    # Landroid/view/Menu;
 
     const-string v2, "pref_key_sms_delete_limit"
 

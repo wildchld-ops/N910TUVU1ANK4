@@ -47,9 +47,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Lcom/android/settings/wifi/IwlanNetwork;Z)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/settings/wifi/IwlanNetwork;
-    .param p3    # Z
 
     invoke-direct {p0, p1}, Landroid/app/AlertDialog;-><init>(Landroid/content/Context;)V
 
@@ -72,9 +69,6 @@
 
 .method private addRow(Landroid/view/ViewGroup;ILjava/lang/String;)V
     .locals 4
-    .param p1    # Landroid/view/ViewGroup;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     invoke-virtual {p0}, Landroid/app/Dialog;->getLayoutInflater()Landroid/view/LayoutInflater;
 
@@ -115,7 +109,6 @@
 
 .method private isIPv4Address(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     sget-object v0, Lcom/android/settings/wifi/IwlanDialog;->IPV4_PATTERN:Ljava/util/regex/Pattern;
 
@@ -152,7 +145,6 @@
 
 .method private isNameValid(Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -250,7 +242,6 @@
 
 .method private showAlertDialog(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
@@ -287,17 +278,12 @@
 # virtual methods
 .method public afterTextChanged(Landroid/text/Editable;)V
     .locals 0
-    .param p1    # Landroid/text/Editable;
 
     return-void
 .end method
 
 .method public beforeTextChanged(Ljava/lang/CharSequence;III)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     return-void
 .end method
@@ -336,8 +322,6 @@
 
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 5
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     const/4 v4, 0x1
 
@@ -520,7 +504,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 12
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v11, 0x1
 
@@ -774,9 +757,6 @@
 
 .method public onItemSelected(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
     .locals 0
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -805,17 +785,12 @@
 
 .method public onTextChanged(Ljava/lang/CharSequence;III)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     return-void
 .end method
 
 .method public onWindowFocusChanged(Z)V
     .locals 3
-    .param p1    # Z
 
     invoke-super {p0, p1}, Landroid/app/Dialog;->onWindowFocusChanged(Z)V
 

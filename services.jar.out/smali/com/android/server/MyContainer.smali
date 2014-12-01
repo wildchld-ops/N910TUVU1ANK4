@@ -44,7 +44,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Lcom/android/server/SEAMSContainer;-><init>()V
 
@@ -67,10 +66,6 @@
 # virtual methods
 .method public addAppToContainer(Ljava/lang/String;[Ljava/lang/String;II)I
     .locals 19
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
 
     const/4 v11, 0x0
 
@@ -546,7 +541,6 @@
 
 .method protected checkIfSingleContainerOwnerIsBeingAdded(Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -594,8 +588,6 @@
 
 .method public createSEContainer(II)I
     .locals 14
-    .param p1    # I
-    .param p2    # I
 
     invoke-static {}, Landroid/os/Binder;->getCallingUserHandle()Landroid/os/UserHandle;
 
@@ -885,8 +877,6 @@
 
 .method public getPackageNamesFromSEContainer(II)[Ljava/lang/String;
     .locals 5
-    .param p1    # I
-    .param p2    # I
 
     const/4 v1, 0x0
 
@@ -1011,8 +1001,6 @@
 
 .method public getSEContainerIDsFromPackageName(Ljava/lang/String;I)[I
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v7, 0x0
 
@@ -1083,10 +1071,6 @@
 
 .method public removeAppFromContainer(Ljava/lang/String;[Ljava/lang/String;II)I
     .locals 19
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
 
     const/4 v11, 0x0
 
@@ -1531,9 +1515,6 @@
 
 .method public removeSEContainer(III)I
     .locals 9
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v6, 0x0
 

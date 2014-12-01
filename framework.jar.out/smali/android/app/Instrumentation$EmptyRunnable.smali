@@ -28,7 +28,6 @@
 
 .method synthetic constructor <init>(Landroid/app/Instrumentation$1;)V
     .locals 0
-    .param p1    # Landroid/app/Instrumentation$1;
 
     invoke-direct {p0}, Landroid/app/Instrumentation$EmptyRunnable;-><init>()V
 

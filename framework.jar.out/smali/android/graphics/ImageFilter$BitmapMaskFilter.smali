@@ -27,7 +27,6 @@
 
 .method synthetic constructor <init>(Landroid/graphics/ImageFilter$1;)V
     .locals 0
-    .param p1    # Landroid/graphics/ImageFilter$1;
 
     invoke-direct {p0}, Landroid/graphics/ImageFilter$BitmapMaskFilter;-><init>()V
 
@@ -38,7 +37,6 @@
 # virtual methods
 .method public setBitmap(Landroid/graphics/Bitmap;)V
     .locals 0
-    .param p1    # Landroid/graphics/Bitmap;
 
     invoke-super {p0, p1}, Landroid/graphics/ImageFilter;->setBitmapMask(Landroid/graphics/Bitmap;)V
 
@@ -47,10 +45,6 @@
 
 .method public setColor(FFFF)V
     .locals 4
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
 
     const/high16 v3, 0x3f800000
 

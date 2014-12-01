@@ -818,7 +818,6 @@
 
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -867,9 +866,6 @@
 
 .method private constructor <init>(Landroid/content/Context;JZ)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # J
-    .param p4    # Z
 
     const/4 v1, 0x0
 
@@ -925,10 +921,6 @@
 
 .method private constructor <init>(Landroid/content/Context;JZZ)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # J
-    .param p4    # Z
-    .param p5    # Z
 
     const/4 v1, 0x0
 
@@ -982,9 +974,6 @@
 
 .method private constructor <init>(Landroid/content/Context;Landroid/database/Cursor;Z)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/database/Cursor;
-    .param p3    # Z
 
     const/4 v1, 0x0
 
@@ -1025,8 +1014,6 @@
 
 .method private constructor <init>(Landroid/content/Context;Lcom/android/mms/data/ContactList;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/mms/data/ContactList;
 
     const/4 v1, 0x0
 
@@ -1071,7 +1058,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/data/Conversation;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/mms/data/Conversation;
 
     iget-object v0, p0, Lcom/android/mms/data/Conversation;->mContext:Landroid/content/Context;
 
@@ -1090,7 +1076,6 @@
 
 .method static synthetic access$1000(Landroid/content/Context;)V
     .locals 0
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Lcom/android/mms/data/Conversation;->blockingMarkAllSmsMessagesAsRead(Landroid/content/Context;)V
 
@@ -1099,7 +1084,6 @@
 
 .method static synthetic access$1100(Landroid/content/Context;)V
     .locals 0
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Lcom/android/mms/data/Conversation;->blockingMarkAllMmsMessagesAsRead(Landroid/content/Context;)V
 
@@ -1108,7 +1092,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/data/Conversation;)J
     .locals 2
-    .param p0    # Lcom/android/mms/data/Conversation;
 
     iget-wide v0, p0, Lcom/android/mms/data/Conversation;->mThreadId:J
 
@@ -1117,7 +1100,6 @@
 
 .method static synthetic access$300(Lcom/android/mms/data/Conversation;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/mms/data/Conversation;
 
     iget-object v0, p0, Lcom/android/mms/data/Conversation;->mSessionId:Ljava/lang/String;
 
@@ -1126,9 +1108,6 @@
 
 .method static synthetic access$400(Lcom/android/mms/data/Conversation;Lcom/sec/orca/freemessage/ReadMessageItem;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/mms/data/Conversation;
-    .param p1    # Lcom/sec/orca/freemessage/ReadMessageItem;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Lcom/android/mms/data/Conversation;->sendFreeMessageStatusAsRead(Lcom/sec/orca/freemessage/ReadMessageItem;Ljava/lang/String;)V
 
@@ -1147,8 +1126,6 @@
 
 .method static synthetic access$600(Lcom/android/mms/data/Conversation;Z)V
     .locals 0
-    .param p0    # Lcom/android/mms/data/Conversation;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/mms/data/Conversation;->setHasUnreadMessages(Z)V
 
@@ -1157,7 +1134,6 @@
 
 .method static synthetic access$700(Lcom/android/mms/data/Conversation;)Lcom/android/mms/data/ContactList;
     .locals 1
-    .param p0    # Lcom/android/mms/data/Conversation;
 
     iget-object v0, p0, Lcom/android/mms/data/Conversation;->mRecipients:Lcom/android/mms/data/ContactList;
 
@@ -1166,7 +1142,6 @@
 
 .method static synthetic access$800(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/android/mms/data/Conversation;->getPinyinNameAndNumber(Ljava/lang/String;)Ljava/lang/String;
 
@@ -1177,7 +1152,6 @@
 
 .method static synthetic access$900(Landroid/content/Context;)V
     .locals 0
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Lcom/android/mms/data/Conversation;->cacheAllThreads(Landroid/content/Context;)V
 
@@ -1186,7 +1160,6 @@
 
 .method private static blockingMarkAllMmsMessagesAsRead(Landroid/content/Context;)V
     .locals 10
-    .param p0    # Landroid/content/Context;
 
     const/4 v9, 0x1
 
@@ -1292,7 +1265,6 @@
 
 .method private static blockingMarkAllSmsMessagesAsRead(Landroid/content/Context;)V
     .locals 10
-    .param p0    # Landroid/content/Context;
 
     const/4 v9, 0x1
 
@@ -1404,7 +1376,6 @@
 
 .method private static cacheAllThreads(Landroid/content/Context;)V
     .locals 14
-    .param p0    # Landroid/content/Context;
 
     const/4 v3, 0x0
 
@@ -1708,7 +1679,6 @@
 
 .method public static conversationInfo(Ljava/lang/String;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1730,7 +1700,6 @@
 
 .method public static conversationInfoCursor(Ljava/lang/String;)Landroid/database/MatrixCursor;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/android/mms/data/Conversation$Cache;->conversationInfoCursor(Ljava/lang/String;)Landroid/database/MatrixCursor;
 
@@ -1741,8 +1710,6 @@
 
 .method public static conversationInfoCursorForFindo(Landroid/content/Context;[Ljava/lang/String;)Landroid/database/MatrixCursor;
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # [Ljava/lang/String;
 
     sget-boolean v0, Lcom/android/mms/data/Conversation;->isCached:Z
 
@@ -1764,7 +1731,6 @@
 
 .method public static conversationInfoOneBubbleCursor(Ljava/lang/String;)Landroid/database/MatrixCursor;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/android/mms/data/Conversation$Cache;->conversationInfoOneBubbleCursor(Ljava/lang/String;)Landroid/database/MatrixCursor;
 
@@ -1775,7 +1741,6 @@
 
 .method public static createNew(Landroid/content/Context;)Lcom/android/mms/data/Conversation;
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     const-string v0, "Mms/Conversation"
 
@@ -1792,8 +1757,6 @@
 
 .method public static createNewWithRecipient(Landroid/content/Context;Lcom/android/mms/data/ContactList;)Lcom/android/mms/data/Conversation;
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/mms/data/ContactList;
 
     const-string v0, "Mms/Conversation"
 
@@ -1810,12 +1773,6 @@
 
 .method public static createThread(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;)J
     .locals 9
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/Long;
 
     const/4 v4, 0x0
 
@@ -1974,7 +1931,6 @@
 
 .method public static deleteConversation(J)I
     .locals 7
-    .param p0    # J
 
     const/4 v6, 0x0
 
@@ -2077,10 +2033,6 @@
 
 .method private static fillFromCursor(Landroid/content/Context;Lcom/android/mms/data/Conversation;Landroid/database/Cursor;Z)V
     .locals 9
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/mms/data/Conversation;
-    .param p2    # Landroid/database/Cursor;
-    .param p3    # Z
 
     monitor-enter p1
 
@@ -2695,8 +2647,6 @@
 
 .method public static from(Landroid/content/Context;Landroid/database/Cursor;)Lcom/android/mms/data/Conversation;
     .locals 8
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/database/Cursor;
 
     const/4 v7, 0x0
 
@@ -2752,9 +2702,6 @@
 
 .method public static get(Landroid/content/Context;JZ)Lcom/android/mms/data/Conversation;
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
-    .param p3    # Z
 
     const-string v3, "Mms/Conversation"
 
@@ -2830,10 +2777,6 @@
 
 .method public static get(Landroid/content/Context;JZZ)Lcom/android/mms/data/Conversation;
     .locals 8
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
-    .param p3    # Z
-    .param p4    # Z
 
     const-string v1, "Mms/Conversation"
 
@@ -2917,10 +2860,6 @@
 
 .method public static get(Landroid/content/Context;Landroid/net/Uri;ZZ)Lcom/android/mms/data/Conversation;
     .locals 8
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Z
-    .param p3    # Z
 
     const/4 v7, 0x1
 
@@ -3028,11 +2967,6 @@
 
 .method public static get(Landroid/content/Context;Landroid/net/Uri;ZZI)Lcom/android/mms/data/Conversation;
     .locals 8
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Z
-    .param p3    # Z
-    .param p4    # I
 
     const/16 v7, 0x3b
 
@@ -3168,10 +3102,6 @@
 
 .method public static get(Landroid/content/Context;Lcom/android/mms/data/ContactList;ZZ)Lcom/android/mms/data/Conversation;
     .locals 9
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/mms/data/ContactList;
-    .param p2    # Z
-    .param p3    # Z
 
     const-wide/16 v7, 0x0
 
@@ -3329,11 +3259,6 @@
 
 .method public static get(Landroid/content/Context;Lcom/android/mms/data/ContactList;ZZI)Lcom/android/mms/data/Conversation;
     .locals 9
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/mms/data/ContactList;
-    .param p2    # Z
-    .param p3    # Z
-    .param p4    # I
 
     const-wide/16 v7, 0x0
 
@@ -3479,8 +3404,6 @@
 
 .method public static get(Landroid/content/Context;Ljava/lang/String;)Lcom/android/mms/data/Conversation;
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -3496,12 +3419,6 @@
 
 .method public static get(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Lcom/android/mms/data/ContactList;ZZ)Lcom/android/mms/data/Conversation;
     .locals 20
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/android/mms/data/ContactList;
-    .param p4    # Z
-    .param p5    # Z
 
     const/4 v13, 0x0
 
@@ -3731,13 +3648,6 @@
 
 .method public static get(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Lcom/android/mms/data/ContactList;ZZI)Lcom/android/mms/data/Conversation;
     .locals 20
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/android/mms/data/ContactList;
-    .param p4    # Z
-    .param p5    # Z
-    .param p6    # I
 
     const/4 v13, 0x0
 
@@ -4004,9 +3914,6 @@
 
 .method public static get(Landroid/content/Context;Ljava/util/ArrayList;ZZ)Lcom/android/mms/data/Conversation;
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p2    # Z
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -4050,10 +3957,6 @@
 
 .method public static get(Landroid/content/Context;Ljava/util/ArrayList;ZZI)Lcom/android/mms/data/Conversation;
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p2    # Z
-    .param p3    # Z
-    .param p4    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -4097,9 +4000,6 @@
 
 .method public static getConversationByAddress(Landroid/content/Context;Ljava/lang/String;[Ljava/lang/String;)Landroid/database/Cursor;
     .locals 7
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -4178,7 +4078,6 @@
 
 .method public static getIntegratedThreadsInfo(Landroid/content/Context;Ljava/util/ArrayList;)Landroid/database/Cursor;
     .locals 11
-    .param p0    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -4267,9 +4166,6 @@
 
 .method public static getOrCreateThreadId(Landroid/content/Context;Lcom/android/mms/data/ContactList;Z)J
     .locals 12
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/mms/data/ContactList;
-    .param p2    # Z
 
     new-instance v5, Ljava/util/LinkedHashSet;
 
@@ -4412,10 +4308,6 @@
 
 .method private static getOrCreateThreadId(Landroid/content/Context;Lcom/android/mms/data/ContactList;ZI)J
     .locals 15
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/mms/data/ContactList;
-    .param p2    # Z
-    .param p3    # I
 
     const-string v1, "Mms/Conversation"
 
@@ -4909,8 +4801,6 @@
 
 .method public static getOrCreateThreadId(Landroid/content/Context;Ljava/lang/String;)J
     .locals 7
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -4939,12 +4829,6 @@
 
 .method public static getOrCreateThreadId(Landroid/content/Context;Ljava/util/Set;Ljava/lang/String;Ljava/lang/String;ZZLjava/lang/String;)J
     .locals 12
-    .param p0    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Z
-    .param p5    # Z
-    .param p6    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -5157,7 +5041,6 @@
 
 .method private static getPinyinNameAndNumber(Ljava/lang/String;)Ljava/lang/String;
     .locals 8
-    .param p0    # Ljava/lang/String;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -5371,7 +5254,6 @@
 
 .method public static getRecipients(Landroid/net/Uri;)Ljava/lang/String;
     .locals 3
-    .param p0    # Landroid/net/Uri;
 
     invoke-virtual {p0}, Landroid/net/Uri;->getSchemeSpecificPart()Ljava/lang/String;
 
@@ -5451,10 +5333,6 @@
 
 .method public static getSmsCount(JLandroid/content/Context;ZZ)I
     .locals 9
-    .param p0    # J
-    .param p2    # Landroid/content/Context;
-    .param p3    # Z
-    .param p4    # Z
 
     const/4 v2, 0x0
 
@@ -5566,7 +5444,6 @@
 
 .method public static getUnreadMessageCount(Landroid/content/ContentResolver;)I
     .locals 9
-    .param p0    # Landroid/content/ContentResolver;
 
     const/4 v8, 0x0
 
@@ -5666,8 +5543,6 @@
 
 .method public static getUnreadMessageCount(Landroid/content/ContentResolver;J)I
     .locals 9
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # J
 
     const/4 v8, 0x0
 
@@ -5790,7 +5665,6 @@
 
 .method public static getUri(J)Landroid/net/Uri;
     .locals 1
-    .param p0    # J
 
     sget-object v0, Landroid/provider/Telephony$Threads;->CONTENT_URI:Landroid/net/Uri;
 
@@ -5829,7 +5703,6 @@
 
 .method public static init(Landroid/content/Context;)V
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     const-string v0, "Mms/Conversation"
 
@@ -5848,8 +5721,6 @@
 
 .method private loadFromThreadId(JZ)Z
     .locals 8
-    .param p1    # J
-    .param p3    # Z
 
     const/4 v7, 0x0
 
@@ -6153,7 +6024,6 @@
 
 .method public static markAllConversationsAsRead(Landroid/content/Context;)V
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     const-string v1, "Mms/Conversation"
 
@@ -6180,8 +6050,6 @@
 
 .method public static queryMessageCount(JLandroid/content/Context;)I
     .locals 8
-    .param p0    # J
-    .param p2    # Landroid/content/Context;
 
     const/4 v4, 0x0
 
@@ -6322,8 +6190,6 @@
 
 .method public static queryThreadExist(JLandroid/content/Context;)Z
     .locals 9
-    .param p0    # J
-    .param p2    # Landroid/content/Context;
 
     const/4 v4, 0x0
 
@@ -6415,7 +6281,6 @@
 
 .method public static readFileBytes(Ljava/io/File;)[B
     .locals 10
-    .param p0    # Ljava/io/File;
 
     invoke-static {}, Lcom/android/mms/MmsConfig;->getEnableSaveRestoreSDCardMessage()Z
 
@@ -6567,7 +6432,6 @@
 
 .method public static readXmlFile(Ljava/lang/String;)Ljava/util/ArrayList;
     .locals 24
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -7340,7 +7204,6 @@
 
 .method public static removeCache(J)V
     .locals 2
-    .param p0    # J
 
     const-wide/16 v0, 0x0
 
@@ -7356,8 +7219,6 @@
 
 .method private sendFreeMessageStatusAsRead(Lcom/sec/orca/freemessage/ReadMessageItem;Ljava/lang/String;)V
     .locals 7
-    .param p1    # Lcom/sec/orca/freemessage/ReadMessageItem;
-    .param p2    # Ljava/lang/String;
 
     new-instance v2, Ljava/util/ArrayList;
 
@@ -7464,7 +7325,6 @@
 
 .method private setHasUnreadMessages(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/data/Conversation;->mHasUnreadMessages:Z
 
@@ -7473,7 +7333,6 @@
 
 .method private setIsCmas(I)V
     .locals 1
-    .param p1    # I
 
     const/16 v0, 0x64
 
@@ -7506,7 +7365,6 @@
 
 .method public static startCaching(Landroid/content/Context;)V
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     const/4 v3, 0x1
 
@@ -7539,11 +7397,6 @@
 
 .method public static startDelete(Landroid/content/AsyncQueryHandler;IZZLcom/android/mms/ui/DeleteInfo;)V
     .locals 9
-    .param p0    # Landroid/content/AsyncQueryHandler;
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # Z
-    .param p4    # Lcom/android/mms/ui/DeleteInfo;
 
     const/4 v5, 0x0
 
@@ -7706,12 +7559,6 @@
 
 .method public static startDelete(Landroid/content/AsyncQueryHandler;IZZLcom/android/mms/ui/DeleteInfo;Z)V
     .locals 9
-    .param p0    # Landroid/content/AsyncQueryHandler;
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # Z
-    .param p4    # Lcom/android/mms/ui/DeleteInfo;
-    .param p5    # Z
 
     const/4 v5, 0x0
 
@@ -7936,9 +7783,6 @@
 
 .method public static startDeleteAll(Landroid/content/AsyncQueryHandler;IZ)V
     .locals 7
-    .param p0    # Landroid/content/AsyncQueryHandler;
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v2, 0x0
 
@@ -8109,10 +7953,6 @@
 
 .method public static startQueryAllSmsSelected(Landroid/content/AsyncQueryHandler;I[JZ)V
     .locals 10
-    .param p0    # Landroid/content/AsyncQueryHandler;
-    .param p1    # I
-    .param p2    # [J
-    .param p3    # Z
 
     const/4 v5, 0x0
 
@@ -8234,10 +8074,6 @@
 
 .method public static startQueryForAll(Landroid/content/AsyncQueryHandler;IILjava/lang/String;)V
     .locals 9
-    .param p0    # Landroid/content/AsyncQueryHandler;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -8435,9 +8271,6 @@
 
 .method public static startQueryForPrioritySender(Landroid/content/AsyncQueryHandler;IZ)V
     .locals 2
-    .param p0    # Landroid/content/AsyncQueryHandler;
-    .param p1    # I
-    .param p2    # Z
 
     const-string v0, "Mms/Conversation"
 
@@ -8450,9 +8283,6 @@
 
 .method public static startQueryHaveLockedMessages(Landroid/content/AsyncQueryHandler;JI)V
     .locals 9
-    .param p0    # Landroid/content/AsyncQueryHandler;
-    .param p1    # J
-    .param p3    # I
 
     const/4 v5, 0x0
 
@@ -8553,8 +8383,6 @@
 
 .method public static startQueryHaveLockedThread(Landroid/content/AsyncQueryHandler;I)V
     .locals 9
-    .param p0    # Landroid/content/AsyncQueryHandler;
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -8640,10 +8468,6 @@
 
 .method public static startQueryHaveMmsSelected(Landroid/content/AsyncQueryHandler;I[JZ)V
     .locals 10
-    .param p0    # Landroid/content/AsyncQueryHandler;
-    .param p1    # I
-    .param p2    # [J
-    .param p3    # Z
 
     const/4 v4, 0x0
 
@@ -8767,9 +8591,6 @@
 
 .method public static startQuerySms(Landroid/content/AsyncQueryHandler;IJ)V
     .locals 8
-    .param p0    # Landroid/content/AsyncQueryHandler;
-    .param p1    # I
-    .param p2    # J
 
     const/4 v2, 0x0
 
@@ -8819,9 +8640,6 @@
 
 .method public static updatePrioritySender(Landroid/content/Context;JJ)I
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
-    .param p3    # J
 
     const/4 v0, 0x0
 
@@ -8832,7 +8650,6 @@
 # virtual methods
 .method public blockMarkAsRead(Z)V
     .locals 3
-    .param p1    # Z
 
     const-string v0, "Mms/Conversation"
 
@@ -8882,8 +8699,6 @@
 
 .method public declared-synchronized checkReadReport(Landroid/content/Context;Ljava/lang/Runnable;)V
     .locals 11
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/Runnable;
 
     const/4 v7, 0x1
 
@@ -9142,7 +8957,6 @@
 
 .method public clearThreadId(J)V
     .locals 3
-    .param p1    # J
 
     const/4 v2, 0x0
 
@@ -9287,7 +9101,6 @@
 
 .method public declared-synchronized ensureThreadId(I)J
     .locals 14
-    .param p1    # I
 
     const-wide/16 v12, 0x1
 
@@ -9605,7 +9418,6 @@
 
 .method public declared-synchronized equals(Ljava/lang/Object;)Z
     .locals 6
-    .param p1    # Ljava/lang/Object;
 
     const/4 v3, 0x0
 
@@ -10451,7 +10263,6 @@
 
 .method public declared-synchronized isCmasPresidential(I)Z
     .locals 1
-    .param p1    # I
 
     monitor-enter p0
 
@@ -10649,7 +10460,6 @@
 
 .method public removeRecipient(Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -10702,7 +10512,6 @@
 
 .method public sameRecipient(Landroid/net/Uri;)Z
     .locals 7
-    .param p1    # Landroid/net/Uri;
 
     const/4 v4, 0x1
 
@@ -10797,7 +10606,6 @@
 
 .method public declared-synchronized setAlias(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -10820,7 +10628,6 @@
 
 .method public setDraftState(Z)V
     .locals 5
-    .param p1    # Z
 
     const-wide/16 v0, 0x0
 
@@ -10883,7 +10690,6 @@
 
 .method public setGroupChatNotiEnabled(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/data/Conversation;->isGroupChatNotiEnabled:Z
 
@@ -10892,7 +10698,6 @@
 
 .method public setGroupMessage(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/data/Conversation;->mGroupMessage:Z
 
@@ -10901,7 +10706,6 @@
 
 .method public setImMessage(I)V
     .locals 2
-    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -10931,7 +10735,6 @@
 
 .method public declared-synchronized setImThreadId(J)V
     .locals 1
-    .param p1    # J
 
     monitor-enter p0
 
@@ -10954,7 +10757,6 @@
 
 .method public setIsChatClosed(I)V
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x2
 
@@ -10977,7 +10779,6 @@
 
 .method public setIsGroup(I)V
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x2
 
@@ -11005,7 +10806,6 @@
 
 .method public declared-synchronized setNotificationEnabe(Z)V
     .locals 1
-    .param p1    # Z
 
     monitor-enter p0
 
@@ -11028,7 +10828,6 @@
 
 .method public declared-synchronized setRecipientIds(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -11079,7 +10878,6 @@
 
 .method public declared-synchronized setRecipients(Lcom/android/mms/data/ContactList;)V
     .locals 2
-    .param p1    # Lcom/android/mms/data/ContactList;
 
     monitor-enter p0
 
@@ -11106,7 +10904,6 @@
 
 .method public setReplyAll(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/data/Conversation;->mReplyAll:Z
 
@@ -11115,7 +10912,6 @@
 
 .method public declared-synchronized setSessionId(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -11138,7 +10934,6 @@
 
 .method public declared-synchronized setThreadId(J)V
     .locals 3
-    .param p1    # J
 
     monitor-enter p0
 
@@ -11183,7 +10978,6 @@
 
 .method public declared-synchronized setXmsThreadId(J)V
     .locals 1
-    .param p1    # J
 
     monitor-enter p0
 

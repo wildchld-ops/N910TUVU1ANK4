@@ -211,14 +211,6 @@
 
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;FFFFILjava/lang/String;I)V
     .locals 7
-    .param p1    # Lcom/sec/android/app/camera/Camera;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # I
-    .param p7    # Ljava/lang/String;
-    .param p8    # I
 
     const/4 v6, 0x0
 
@@ -267,15 +259,6 @@
 
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;FFFFILjava/lang/String;Ljava/lang/String;I)V
     .locals 6
-    .param p1    # Lcom/sec/android/app/camera/Camera;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # I
-    .param p7    # Ljava/lang/String;
-    .param p8    # Ljava/lang/String;
-    .param p9    # I
 
     invoke-virtual {p1}, Lcom/sec/android/app/camera/Camera;->getGLContext()Lcom/sec/android/glview/TwGLContext;
 
@@ -326,16 +309,6 @@
 
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;FFFFILjava/lang/String;Ljava/lang/String;II)V
     .locals 7
-    .param p1    # Lcom/sec/android/app/camera/Camera;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # I
-    .param p7    # Ljava/lang/String;
-    .param p8    # Ljava/lang/String;
-    .param p9    # I
-    .param p10    # I
 
     invoke-virtual {p1}, Lcom/sec/android/app/camera/Camera;->getGLContext()Lcom/sec/android/glview/TwGLContext;
 
@@ -394,8 +367,6 @@
 
 .method private initContent(II)V
     .locals 13
-    .param p1    # I
-    .param p2    # I
 
     sget v0, Lcom/sec/android/app/camera/glwidget/TwGLHelpItem;->TOP_PADDING:I
 
@@ -1084,8 +1055,6 @@
 # virtual methods
 .method public onTouch(Lcom/sec/android/glview/TwGLView;Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Lcom/sec/android/glview/TwGLView;
-    .param p2    # Landroid/view/MotionEvent;
 
     iget-object v0, p0, Lcom/sec/android/glview/TwGLView;->mOnTouchListener:Lcom/sec/android/glview/TwGLView$OnTouchListener;
 
@@ -1098,7 +1067,6 @@
 
 .method public setOnTouchListener(Lcom/sec/android/glview/TwGLView$OnTouchListener;)V
     .locals 2
-    .param p1    # Lcom/sec/android/glview/TwGLView$OnTouchListener;
 
     const/4 v1, 0x0
 
@@ -1154,7 +1122,6 @@
 
 .method public declared-synchronized setWidth(F)V
     .locals 5
-    .param p1    # F
 
     monitor-enter p0
 

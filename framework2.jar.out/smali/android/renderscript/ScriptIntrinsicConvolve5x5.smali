@@ -12,8 +12,6 @@
 # direct methods
 .method private constructor <init>(ILandroid/renderscript/RenderScript;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/renderscript/RenderScript;
 
     invoke-direct {p0, p1, p2}, Landroid/renderscript/ScriptIntrinsic;-><init>(ILandroid/renderscript/RenderScript;)V
 
@@ -28,8 +26,6 @@
 
 .method public static create(Landroid/renderscript/RenderScript;Landroid/renderscript/Element;)Landroid/renderscript/ScriptIntrinsicConvolve5x5;
     .locals 3
-    .param p0    # Landroid/renderscript/RenderScript;
-    .param p1    # Landroid/renderscript/Element;
 
     invoke-static {p0}, Landroid/renderscript/Element;->U8(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -141,7 +137,6 @@
 # virtual methods
 .method public forEach(Landroid/renderscript/Allocation;)V
     .locals 2
-    .param p1    # Landroid/renderscript/Allocation;
 
     const/4 v1, 0x0
 
@@ -184,7 +179,6 @@
 
 .method public setCoefficients([F)V
     .locals 4
-    .param p1    # [F
 
     new-instance v1, Landroid/renderscript/FieldPacker;
 
@@ -227,7 +221,6 @@
 
 .method public setInput(Landroid/renderscript/Allocation;)V
     .locals 1
-    .param p1    # Landroid/renderscript/Allocation;
 
     iput-object p1, p0, Landroid/renderscript/ScriptIntrinsicConvolve5x5;->mInput:Landroid/renderscript/Allocation;
 

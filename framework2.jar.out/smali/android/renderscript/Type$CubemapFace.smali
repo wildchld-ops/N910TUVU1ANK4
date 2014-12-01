@@ -209,7 +209,6 @@
 
 .method private constructor <init>(Ljava/lang/String;II)V
     .locals 0
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)V"
@@ -225,7 +224,6 @@
 
 .method public static valueOf(Ljava/lang/String;)Landroid/renderscript/Type$CubemapFace;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-class v0, Landroid/renderscript/Type$CubemapFace;
 

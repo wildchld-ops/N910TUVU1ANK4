@@ -46,8 +46,6 @@
 
 .method public constructor <init>(Landroid/app/Activity;Lcom/android/mms/ui/ComposeMessageFragment;)V
     .locals 0
-    .param p1    # Landroid/app/Activity;
-    .param p2    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -134,9 +132,6 @@
 
 .method private splitContacts(Lcom/android/mms/data/ContactList;II)Lcom/android/mms/data/ContactList;
     .locals 6
-    .param p1    # Lcom/android/mms/data/ContactList;
-    .param p2    # I
-    .param p3    # I
 
     sget-boolean v3, Lcom/android/mms/ui/SendSplitMultimediaMessage;->DEBUG_LOG:Z
 
@@ -489,7 +484,6 @@
 
 .method public initWorkingMessageClone(I)Ljava/util/ArrayList;
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -558,8 +552,6 @@
 
 .method public sendSplitMMS(Lcom/android/mms/ui/MessageListAdapter;I)I
     .locals 13
-    .param p1    # Lcom/android/mms/ui/MessageListAdapter;
-    .param p2    # I
 
     const/4 v12, 0x2
 

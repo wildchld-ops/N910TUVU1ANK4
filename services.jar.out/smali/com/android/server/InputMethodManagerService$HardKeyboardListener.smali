@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Lcom/android/server/InputMethodManagerService;Lcom/android/server/InputMethodManagerService$1;)V
     .locals 0
-    .param p1    # Lcom/android/server/InputMethodManagerService;
-    .param p2    # Lcom/android/server/InputMethodManagerService$1;
 
     invoke-direct {p0, p1}, Lcom/android/server/InputMethodManagerService$HardKeyboardListener;-><init>(Lcom/android/server/InputMethodManagerService;)V
 
@@ -46,8 +44,6 @@
 # virtual methods
 .method public handleHardKeyboardStatusChange(ZZ)V
     .locals 3
-    .param p1    # Z
-    .param p2    # Z
 
     iget-object v0, p0, Lcom/android/server/InputMethodManagerService$HardKeyboardListener;->this$0:Lcom/android/server/InputMethodManagerService;
 
@@ -129,8 +125,6 @@
 
 .method public onHardKeyboardStatusChange(ZZ)V
     .locals 6
-    .param p1    # Z
-    .param p2    # Z
 
     const/4 v0, 0x1
 

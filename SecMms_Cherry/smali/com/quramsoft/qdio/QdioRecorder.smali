@@ -184,7 +184,6 @@
 
 .method public read([B)I
     .locals 5
-    .param p1    # [B
 
     const/4 v0, 0x0
 

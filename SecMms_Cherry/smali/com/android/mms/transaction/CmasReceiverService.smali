@@ -162,8 +162,6 @@
 
 .method private CheckDuplicateCDMACMAS(Landroid/content/Context;Landroid/telephony/SmsCbMessage;)Z
     .locals 13
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/telephony/SmsCbMessage;
 
     const/4 v7, 0x0
 
@@ -432,9 +430,6 @@
 
 .method private CheckDuplicateGSMCMASByBodyText(Landroid/content/Context;ILjava/lang/String;)Z
     .locals 18
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     invoke-static {}, Lcom/android/mms/MmsConfig;->getCmasMessageDuplicateMessageCheckFeature()Z
 
@@ -803,9 +798,6 @@
 
 .method private CheckDuplicateGSMCMASBySerialNumber(Landroid/content/Context;II)Z
     .locals 12
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v11, 0x1
 
@@ -1072,7 +1064,6 @@
 
 .method public static FilterCLRF(Ljava/lang/String;)Ljava/lang/String;
     .locals 6
-    .param p0    # Ljava/lang/String;
 
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
@@ -1124,7 +1115,6 @@
 
 .method private HandlingCMASByType(Landroid/content/Intent;)V
     .locals 4
-    .param p1    # Landroid/content/Intent;
 
     invoke-virtual {p1}, Landroid/content/Intent;->getExtras()Landroid/os/Bundle;
 
@@ -1170,12 +1160,6 @@
 
 .method private SetScptMessage(IZLandroid/content/SharedPreferences;Ljava/lang/String;Ljava/lang/String;I)V
     .locals 10
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # Landroid/content/SharedPreferences;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # I
 
     invoke-interface {p3}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
 
@@ -1384,8 +1368,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/transaction/CmasReceiverService;Landroid/content/Intent;)V
     .locals 0
-    .param p0    # Lcom/android/mms/transaction/CmasReceiverService;
-    .param p1    # Landroid/content/Intent;
 
     invoke-direct {p0, p1}, Lcom/android/mms/transaction/CmasReceiverService;->HandlingCMASByType(Landroid/content/Intent;)V
 
@@ -1402,7 +1384,6 @@
 
 .method static synthetic access$202(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/mms/transaction/CmasReceiverService;->sIsCmasReceivedInVolteCall:Z
 
@@ -1419,7 +1400,6 @@
 
 .method static synthetic access$302(Landroid/net/Uri;)Landroid/net/Uri;
     .locals 0
-    .param p0    # Landroid/net/Uri;
 
     sput-object p0, Lcom/android/mms/transaction/CmasReceiverService;->sCmasLastMessageUri:Landroid/net/Uri;
 
@@ -1440,7 +1420,6 @@
 
 .method private checkForSettings(I)Z
     .locals 10
-    .param p1    # I
 
     const/16 v9, 0x111d
 
@@ -1792,7 +1771,6 @@
 
 .method private convertGsmServiceGategoryToCdma(I)I
     .locals 3
-    .param p1    # I
 
     const/16 v0, 0x1004
 
@@ -1864,7 +1842,6 @@
 
 .method private extractCmasContentValues(Landroid/telephony/SmsCbMessage;)Landroid/content/ContentValues;
     .locals 13
-    .param p1    # Landroid/telephony/SmsCbMessage;
 
     const/4 v10, 0x1
 
@@ -2528,8 +2505,6 @@
 
 .method private fillRecordTypeFirst(ILandroid/content/ContentValues;)V
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/content/ContentValues;
 
     const/4 v5, -0x1
 
@@ -2681,7 +2656,6 @@
 
 .method private getCmasAddress(I)Ljava/lang/String;
     .locals 3
-    .param p1    # I
 
     const-string v0, "Mms/CmasReceiverService"
 
@@ -2904,8 +2878,6 @@
 
 .method public static getCmasSetting(Landroid/content/SharedPreferences;Ljava/lang/String;)Z
     .locals 5
-    .param p0    # Landroid/content/SharedPreferences;
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -3021,7 +2993,6 @@
 
 .method public static getServiceCategory(I)Ljava/lang/String;
     .locals 5
-    .param p0    # I
 
     const/16 v4, 0xd
 
@@ -3195,7 +3166,6 @@
 
 .method private getSmsAddressValues(Landroid/telephony/SmsCbMessage;)Landroid/content/ContentValues;
     .locals 6
-    .param p1    # Landroid/telephony/SmsCbMessage;
 
     new-instance v2, Landroid/content/ContentValues;
 
@@ -3395,7 +3365,6 @@
 
 .method public static getTmoServiceCategory(I)Ljava/lang/String;
     .locals 4
-    .param p0    # I
 
     const-string v1, "Mms/CmasReceiverService"
 
@@ -3509,8 +3478,6 @@
 
 .method private handlScptReceived(Landroid/content/Intent;I)V
     .locals 12
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
 
     const/4 v11, 0x1
 
@@ -3663,7 +3630,6 @@
 
 .method private handleCDMACMASReceived(Landroid/telephony/SmsCbMessage;)V
     .locals 11
-    .param p1    # Landroid/telephony/SmsCbMessage;
 
     const/4 v10, 0x0
 
@@ -3859,8 +3825,6 @@
 
 .method private handleCMASDialog(Ljava/lang/String;Landroid/content/Intent;)V
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/Intent;
 
     const/4 v8, 0x1
 
@@ -4132,7 +4096,6 @@
 
 .method private handleGSMCMASReceived(Landroid/telephony/SmsCbMessage;)V
     .locals 11
-    .param p1    # Landroid/telephony/SmsCbMessage;
 
     const/4 v10, 0x0
 
@@ -4443,8 +4406,6 @@
 
 .method private insertMessage(Landroid/content/Context;Landroid/telephony/SmsCbMessage;)Landroid/net/Uri;
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/telephony/SmsCbMessage;
 
     const-string v0, "Mms/CmasReceiverService"
 
@@ -4461,7 +4422,6 @@
 
 .method public static isAmberAlertActive(Landroid/content/SharedPreferences;)Z
     .locals 5
-    .param p0    # Landroid/content/SharedPreferences;
 
     const/4 v0, 0x0
 
@@ -4511,7 +4471,6 @@
 
 .method public static isCLASS1AlertActive(Landroid/content/SharedPreferences;)Z
     .locals 4
-    .param p0    # Landroid/content/SharedPreferences;
 
     const/4 v0, 0x0
 
@@ -4550,7 +4509,6 @@
 
 .method public static isCmasMessage(I)Z
     .locals 1
-    .param p0    # I
 
     const/16 v0, 0x1112
 
@@ -4573,7 +4531,6 @@
 
 .method public static isExtremeAlertActive(Landroid/content/SharedPreferences;)Z
     .locals 5
-    .param p0    # Landroid/content/SharedPreferences;
 
     const/4 v1, 0x0
 
@@ -4623,7 +4580,6 @@
 
 .method public static isRMT_ExerciseAlertActive(Landroid/content/SharedPreferences;)Z
     .locals 5
-    .param p0    # Landroid/content/SharedPreferences;
 
     const/4 v1, 0x0
 
@@ -4673,7 +4629,6 @@
 
 .method public static isReservedCmasmessage(I)Z
     .locals 4
-    .param p0    # I
 
     const/4 v1, 0x0
 
@@ -4791,7 +4746,6 @@
 
 .method public static isSeverityAlertActive(Landroid/content/SharedPreferences;)Z
     .locals 5
-    .param p0    # Landroid/content/SharedPreferences;
 
     const/4 v1, 0x0
 
@@ -4904,9 +4858,6 @@
 
 .method private showCMASDialog(Landroid/net/Uri;Ljava/lang/String;Ljava/lang/String;)V
     .locals 6
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const/4 v5, 0x1
 
@@ -5116,7 +5067,6 @@
 
 .method public static showCMASDialogAgain(Landroid/content/Context;)V
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     const-string v0, "Mms/CmasReceiverService"
 
@@ -5152,7 +5102,6 @@
 
 .method public static showNextCMASDialog(Landroid/content/Context;)V
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -5195,11 +5144,6 @@
 
 .method private storeCMASMessage(Landroid/content/Context;JLandroid/content/ContentValues;II)Landroid/net/Uri;
     .locals 9
-    .param p1    # Landroid/content/Context;
-    .param p2    # J
-    .param p4    # Landroid/content/ContentValues;
-    .param p5    # I
-    .param p6    # I
 
     invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -5323,9 +5267,6 @@
 
 .method private storeGSMCMASData(IILjava/lang/String;)Landroid/net/Uri;
     .locals 12
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     const-string v0, "DEBUG"
 
@@ -5528,8 +5469,6 @@
 
 .method private storeMessage(Landroid/content/Context;Landroid/telephony/SmsCbMessage;)Landroid/net/Uri;
     .locals 29
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/telephony/SmsCbMessage;
 
     const-string v25, "Mms/CmasReceiverService"
 
@@ -6119,9 +6058,6 @@
 
 .method private updateCmasExpired(Landroid/content/Context;Landroid/net/Uri;I)V
     .locals 8
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/net/Uri;
-    .param p3    # I
 
     const-string v0, "Mms/CmasReceiverService"
 
@@ -6237,7 +6173,6 @@
 # virtual methods
 .method public checkThisAlertIsSetOn(Landroid/telephony/SmsCbMessage;)Z
     .locals 6
-    .param p1    # Landroid/telephony/SmsCbMessage;
 
     const/4 v5, 0x0
 
@@ -6392,7 +6327,6 @@
 
 .method public getCDMAServiceCategory(I)Ljava/lang/String;
     .locals 3
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -6497,7 +6431,6 @@
 
 .method public onBind(Landroid/content/Intent;)Landroid/os/IBinder;
     .locals 1
-    .param p1    # Landroid/content/Intent;
 
     const/4 v0, 0x0
 
@@ -6560,9 +6493,6 @@
 
 .method public onStartCommand(Landroid/content/Intent;II)I
     .locals 4
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0}, Lcom/android/mms/transaction/CmasReceiverService;->checkCallState()V
 

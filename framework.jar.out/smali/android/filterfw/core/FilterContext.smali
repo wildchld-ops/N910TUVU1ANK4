@@ -65,7 +65,6 @@
 # virtual methods
 .method final addGraph(Landroid/filterfw/core/FilterGraph;)V
     .locals 1
-    .param p1    # Landroid/filterfw/core/FilterGraph;
 
     iget-object v0, p0, Landroid/filterfw/core/FilterContext;->mGraphs:Ljava/util/Set;
 
@@ -76,7 +75,6 @@
 
 .method public declared-synchronized fetchFrame(Ljava/lang/String;)Landroid/filterfw/core/Frame;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -126,7 +124,6 @@
 
 .method public initGLEnvironment(Landroid/filterfw/core/GLEnvironment;)V
     .locals 2
-    .param p1    # Landroid/filterfw/core/GLEnvironment;
 
     iget-object v0, p0, Landroid/filterfw/core/FilterContext;->mGLEnvironment:Landroid/filterfw/core/GLEnvironment;
 
@@ -148,7 +145,6 @@
 
 .method public declared-synchronized removeFrame(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -186,7 +182,6 @@
 
 .method public setFrameManager(Landroid/filterfw/core/FrameManager;)V
     .locals 2
-    .param p1    # Landroid/filterfw/core/FrameManager;
 
     if-nez p1, :cond_0
 
@@ -225,8 +220,6 @@
 
 .method public declared-synchronized storeFrame(Ljava/lang/String;Landroid/filterfw/core/Frame;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/filterfw/core/Frame;
 
     monitor-enter p0
 

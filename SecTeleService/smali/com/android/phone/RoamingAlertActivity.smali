@@ -24,9 +24,9 @@
 
     const/4 v2, 0x1
 
-    invoke-virtual {p0, v2}, Landroid/app/Activity;->requestWindowFeature(I)Z
+    invoke-virtual {p0, v2}, Lcom/android/phone/RoamingAlertActivity;->requestWindowFeature(I)Z
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
+    invoke-virtual {p0}, Lcom/android/phone/RoamingAlertActivity;->getWindow()Landroid/view/Window;
 
     move-result-object v2
 
@@ -58,7 +58,7 @@
 
     iget-object v2, p0, Lcom/android/phone/RoamingAlertActivity;->mRoamingDialog:Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/RoamingAlertActivity;->getResources()Landroid/content/res/Resources;
 
     move-result-object v3
 
@@ -106,7 +106,7 @@
 
     invoke-direct {v3, p0}, Lcom/android/phone/RoamingAlertActivity$1;-><init>(Lcom/android/phone/RoamingAlertActivity;)V
 
-    invoke-virtual {v2, v3}, Landroid/app/Dialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
+    invoke-virtual {v2, v3}, Landroid/app/AlertDialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
     return-void
 .end method

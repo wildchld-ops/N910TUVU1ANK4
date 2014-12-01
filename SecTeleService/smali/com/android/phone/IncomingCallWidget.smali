@@ -386,7 +386,7 @@
 
     if-nez v0, :cond_0
 
-    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/IncomingCallWidget;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -438,7 +438,7 @@
 
     const/4 v4, 0x1
 
-    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/IncomingCallWidget;->getContext()Landroid/content/Context;
 
     move-result-object v2
 
@@ -469,7 +469,7 @@
     invoke-virtual {p1, v1}, Landroid/view/MotionEvent;->setAction(I)V
 
     :cond_0
-    invoke-super {p0, p1}, Landroid/view/View;->onHoverEvent(Landroid/view/MotionEvent;)Z
+    invoke-super {p0, p1}, Landroid/widget/RelativeLayout;->onHoverEvent(Landroid/view/MotionEvent;)Z
 
     return v4
 
@@ -505,7 +505,7 @@
     .locals 4
     .param p1    # Landroid/view/MotionEvent;
 
-    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/IncomingCallWidget;->getContext()Landroid/content/Context;
 
     move-result-object v2
 
@@ -541,7 +541,7 @@
     invoke-virtual {p1, v1}, Landroid/view/MotionEvent;->setAction(I)V
 
     :cond_1
-    invoke-super {p0, p1}, Landroid/view/ViewGroup;->onInterceptHoverEvent(Landroid/view/MotionEvent;)Z
+    invoke-super {p0, p1}, Landroid/widget/RelativeLayout;->onInterceptHoverEvent(Landroid/view/MotionEvent;)Z
 
     const/4 v2, 0x1
 
@@ -750,7 +750,7 @@
 
     if-nez v3, :cond_1
 
-    invoke-super {p0, p1}, Landroid/view/View;->onTouchEvent(Landroid/view/MotionEvent;)Z
+    invoke-super {p0, p1}, Landroid/widget/RelativeLayout;->onTouchEvent(Landroid/view/MotionEvent;)Z
 
     move-result v3
 
@@ -800,7 +800,7 @@
 
     invoke-virtual {p0, v1}, Lcom/android/phone/IncomingCallWidget;->log(Ljava/lang/String;)V
 
-    invoke-virtual {p0, v4}, Landroid/view/View;->performHapticFeedback(I)Z
+    invoke-virtual {p0, v4}, Lcom/android/phone/IncomingCallWidget;->performHapticFeedback(I)Z
 
     goto :goto_0
 
@@ -845,7 +845,7 @@
 
     invoke-virtual {p0, v1}, Lcom/android/phone/IncomingCallWidget;->log(Ljava/lang/String;)V
 
-    invoke-virtual {p0, v4}, Landroid/view/View;->performHapticFeedback(I)Z
+    invoke-virtual {p0, v4}, Lcom/android/phone/IncomingCallWidget;->performHapticFeedback(I)Z
 
     goto :goto_0
 

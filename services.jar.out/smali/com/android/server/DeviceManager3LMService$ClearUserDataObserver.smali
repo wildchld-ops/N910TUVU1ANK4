@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Lcom/android/server/DeviceManager3LMService;Lcom/android/server/DeviceManager3LMService$1;)V
     .locals 0
-    .param p1    # Lcom/android/server/DeviceManager3LMService;
-    .param p2    # Lcom/android/server/DeviceManager3LMService$1;
 
     invoke-direct {p0, p1}, Lcom/android/server/DeviceManager3LMService$ClearUserDataObserver;-><init>(Lcom/android/server/DeviceManager3LMService;)V
 
@@ -43,8 +41,6 @@
 # virtual methods
 .method public onRemoveCompleted(Ljava/lang/String;Z)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const-string v0, "DeviceManager3LM"
 

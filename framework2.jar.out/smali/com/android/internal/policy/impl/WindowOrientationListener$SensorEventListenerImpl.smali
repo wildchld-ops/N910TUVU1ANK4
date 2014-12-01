@@ -182,7 +182,6 @@
 
 .method static synthetic access$000(Lcom/android/internal/policy/impl/WindowOrientationListener$SensorEventListenerImpl;)V
     .locals 0
-    .param p0    # Lcom/android/internal/policy/impl/WindowOrientationListener$SensorEventListenerImpl;
 
     invoke-direct {p0}, Lcom/android/internal/policy/impl/WindowOrientationListener$SensorEventListenerImpl;->resetLocked()V
 
@@ -191,8 +190,6 @@
 
 .method private addTiltHistoryEntryLocked(JF)V
     .locals 4
-    .param p1    # J
-    .param p3    # F
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/WindowOrientationListener$SensorEventListenerImpl;->mTiltHistory:[F
 
@@ -259,7 +256,6 @@
 
 .method private isAcceleratingLocked(F)Z
     .locals 1
-    .param p1    # F
 
     const v0, 0x40b9d014
 
@@ -287,7 +283,6 @@
 
 .method private isFlatLocked(J)Z
     .locals 5
-    .param p1    # J
 
     iget v0, p0, Lcom/android/internal/policy/impl/WindowOrientationListener$SensorEventListenerImpl;->mTiltHistoryIndex:I
 
@@ -334,8 +329,6 @@
 
 .method private isOrientationAngleAcceptableLocked(II)Z
     .locals 5
-    .param p1    # I
-    .param p2    # I
 
     const/4 v3, 0x0
 
@@ -417,7 +410,6 @@
 
 .method private isPredictedRotationAcceptableLocked(J)Z
     .locals 7
-    .param p1    # J
 
     const-wide/32 v5, 0x1dcd6500
 
@@ -471,8 +463,6 @@
 
 .method private isSwingingLocked(JF)Z
     .locals 5
-    .param p1    # J
-    .param p3    # F
 
     iget v0, p0, Lcom/android/internal/policy/impl/WindowOrientationListener$SensorEventListenerImpl;->mTiltHistoryIndex:I
 
@@ -521,8 +511,6 @@
 
 .method private isTiltAngleAcceptableLocked(II)Z
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x1
 
@@ -555,7 +543,6 @@
 
 .method private nextTiltHistoryIndexLocked(I)I
     .locals 4
-    .param p1    # I
 
     if-nez p1, :cond_0
 
@@ -585,8 +572,6 @@
 
 .method private remainingMS(JJ)F
     .locals 2
-    .param p1    # J
-    .param p3    # J
 
     cmp-long v0, p1, p3
 
@@ -635,8 +620,6 @@
 
 .method private updatePredictedRotationLocked(JI)V
     .locals 1
-    .param p1    # J
-    .param p3    # I
 
     iget v0, p0, Lcom/android/internal/policy/impl/WindowOrientationListener$SensorEventListenerImpl;->mPredictedRotation:I
 
@@ -662,15 +645,12 @@
 
 .method public onAccuracyChanged(Landroid/hardware/Sensor;I)V
     .locals 0
-    .param p1    # Landroid/hardware/Sensor;
-    .param p2    # I
 
     return-void
 .end method
 
 .method public onSensorChanged(Landroid/hardware/SensorEvent;)V
     .locals 29
-    .param p1    # Landroid/hardware/SensorEvent;
 
     move-object/from16 v0, p0
 

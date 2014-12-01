@@ -21,7 +21,6 @@
 # direct methods
 .method constructor <init>(Lcom/sec/android/app/camera/glwidget/TwGLBurstPanoramaMenu;Landroid/os/Looper;)V
     .locals 0
-    .param p2    # Landroid/os/Looper;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLBurstPanoramaMenu$1;->this$0:Lcom/sec/android/app/camera/glwidget/TwGLBurstPanoramaMenu;
 
@@ -34,7 +33,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 6
-    .param p1    # Landroid/os/Message;
 
     const/4 v5, 0x3
 

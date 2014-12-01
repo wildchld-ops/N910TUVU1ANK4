@@ -10,8 +10,6 @@
 # direct methods
 .method public constructor <init>(ILcom/immersion/MagSweepEffectDefinition;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Lcom/immersion/MagSweepEffectDefinition;
 
     const/4 v0, 0x1
 
@@ -140,7 +138,6 @@
 
 .method public setDefinition(Lcom/immersion/MagSweepEffectDefinition;)V
     .locals 0
-    .param p1    # Lcom/immersion/MagSweepEffectDefinition;
 
     iput-object p1, p0, Lcom/immersion/IVTMagSweepElement;->definition:Lcom/immersion/MagSweepEffectDefinition;
 

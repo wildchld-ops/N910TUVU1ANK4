@@ -68,7 +68,6 @@
 
 .method static synthetic access$100(Landroid/speech/tts/AudioPlaybackHandler;)Ljava/util/concurrent/LinkedBlockingQueue;
     .locals 1
-    .param p0    # Landroid/speech/tts/AudioPlaybackHandler;
 
     iget-object v0, p0, Landroid/speech/tts/AudioPlaybackHandler;->mQueue:Ljava/util/concurrent/LinkedBlockingQueue;
 
@@ -77,8 +76,6 @@
 
 .method static synthetic access$202(Landroid/speech/tts/AudioPlaybackHandler;Landroid/speech/tts/PlaybackQueueItem;)Landroid/speech/tts/PlaybackQueueItem;
     .locals 0
-    .param p0    # Landroid/speech/tts/AudioPlaybackHandler;
-    .param p1    # Landroid/speech/tts/PlaybackQueueItem;
 
     iput-object p1, p0, Landroid/speech/tts/AudioPlaybackHandler;->mCurrentWorkItem:Landroid/speech/tts/PlaybackQueueItem;
 
@@ -97,7 +94,6 @@
 
 .method private removeWorkItemsFor(Ljava/lang/Object;)V
     .locals 3
-    .param p1    # Ljava/lang/Object;
 
     iget-object v2, p0, Landroid/speech/tts/AudioPlaybackHandler;->mQueue:Ljava/util/concurrent/LinkedBlockingQueue;
 
@@ -135,7 +131,6 @@
 
 .method private stop(Landroid/speech/tts/PlaybackQueueItem;)V
     .locals 1
-    .param p1    # Landroid/speech/tts/PlaybackQueueItem;
 
     if-nez p1, :cond_0
 
@@ -154,7 +149,6 @@
 # virtual methods
 .method public enqueue(Landroid/speech/tts/PlaybackQueueItem;)V
     .locals 1
-    .param p1    # Landroid/speech/tts/PlaybackQueueItem;
 
     :try_start_0
     iget-object v0, p0, Landroid/speech/tts/AudioPlaybackHandler;->mQueue:Ljava/util/concurrent/LinkedBlockingQueue;
@@ -239,7 +233,6 @@
 
 .method public stopForApp(Ljava/lang/Object;)V
     .locals 2
-    .param p1    # Ljava/lang/Object;
 
     invoke-direct {p0, p1}, Landroid/speech/tts/AudioPlaybackHandler;->removeWorkItemsFor(Ljava/lang/Object;)V
 

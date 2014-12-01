@@ -35,7 +35,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/mms/ui/SettingsReservationActivity;Landroid/os/Bundle;)V
     .locals 2
-    .param p2    # Landroid/os/Bundle;
 
     const/4 v1, 0x0
 

@@ -60,7 +60,6 @@
 
 .method constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -159,7 +158,6 @@
 
 .method static synthetic access$000(Lcom/android/server/KiesConnectivity/KiesUsbManager;)Z
     .locals 1
-    .param p0    # Lcom/android/server/KiesConnectivity/KiesUsbManager;
 
     invoke-direct {p0}, Lcom/android/server/KiesConnectivity/KiesUsbManager;->saveVersionFile()Z
 
@@ -178,7 +176,6 @@
 
 .method static synthetic access$200(Lcom/android/server/KiesConnectivity/KiesUsbManager;)V
     .locals 0
-    .param p0    # Lcom/android/server/KiesConnectivity/KiesUsbManager;
 
     invoke-direct {p0}, Lcom/android/server/KiesConnectivity/KiesUsbManager;->setUsbCurrentSettingMode()V
 
@@ -187,7 +184,6 @@
 
 .method static synthetic access$300(Lcom/android/server/KiesConnectivity/KiesUsbManager;)V
     .locals 0
-    .param p0    # Lcom/android/server/KiesConnectivity/KiesUsbManager;
 
     invoke-direct {p0}, Lcom/android/server/KiesConnectivity/KiesUsbManager;->setCDFSInsert()V
 
@@ -196,7 +192,6 @@
 
 .method static synthetic access$400(Lcom/android/server/KiesConnectivity/KiesUsbManager;)Landroid/hardware/usb/UsbManager;
     .locals 1
-    .param p0    # Lcom/android/server/KiesConnectivity/KiesUsbManager;
 
     iget-object v0, p0, Lcom/android/server/KiesConnectivity/KiesUsbManager;->usbManager:Landroid/hardware/usb/UsbManager;
 
@@ -237,7 +232,6 @@
 
 .method private saveISOToFile(Z)Z
     .locals 7
-    .param p1    # Z
 
     const/4 v3, 0x1
 

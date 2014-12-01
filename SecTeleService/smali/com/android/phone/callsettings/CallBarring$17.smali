@@ -63,7 +63,7 @@
 
     iget-object v1, p0, Lcom/android/phone/callsettings/CallBarring$17;->this$0:Lcom/android/phone/callsettings/CallBarring;
 
-    invoke-virtual {v1}, Landroid/app/Fragment;->isAdded()Z
+    invoke-virtual {v1}, Lcom/android/phone/callsettings/CallBarring;->isAdded()Z
 
     move-result v1
 

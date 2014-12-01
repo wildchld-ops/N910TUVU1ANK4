@@ -21,7 +21,6 @@
 # direct methods
 .method constructor <init>(Lcom/diotek/ime/framework/common/InputManagerImpl;Landroid/os/Looper;)V
     .locals 0
-    .param p2    # Landroid/os/Looper;
 
     iput-object p1, p0, Lcom/diotek/ime/framework/common/InputManagerImpl$38;->this$0:Lcom/diotek/ime/framework/common/InputManagerImpl;
 
@@ -34,7 +33,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 3
-    .param p1    # Landroid/os/Message;
 
     iget v1, p1, Landroid/os/Message;->what:I
 

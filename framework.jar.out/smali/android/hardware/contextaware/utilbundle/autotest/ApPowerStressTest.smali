@@ -6,7 +6,6 @@
 # direct methods
 .method protected constructor <init>(I)V
     .locals 0
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/hardware/contextaware/utilbundle/autotest/InnerProcessStressTest;-><init>(I)V
 
@@ -15,7 +14,6 @@
 
 .method private getPacket(B)[B
     .locals 3
-    .param p1    # B
 
     const/4 v1, 0x3
 
@@ -48,7 +46,6 @@
 # virtual methods
 .method protected final getPacket(I)[B
     .locals 2
-    .param p1    # I
 
     new-instance v0, Ljava/util/Random;
 

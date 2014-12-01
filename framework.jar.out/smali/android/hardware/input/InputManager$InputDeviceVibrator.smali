@@ -25,7 +25,6 @@
 # direct methods
 .method public constructor <init>(Landroid/hardware/input/InputManager;I)V
     .locals 1
-    .param p2    # I
 
     iput-object p1, p0, Landroid/hardware/input/InputManager$InputDeviceVibrator;->this$0:Landroid/hardware/input/InputManager;
 
@@ -88,9 +87,6 @@
 
 .method public vibrate(ILjava/lang/String;J)V
     .locals 0
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # J
 
     invoke-virtual {p0, p3, p4}, Landroid/hardware/input/InputManager$InputDeviceVibrator;->vibrate(J)V
 
@@ -99,10 +95,6 @@
 
 .method public vibrate(ILjava/lang/String;[JI)V
     .locals 0
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # [J
-    .param p4    # I
 
     invoke-virtual {p0, p3, p4}, Landroid/hardware/input/InputManager$InputDeviceVibrator;->vibrate([JI)V
 
@@ -111,7 +103,6 @@
 
 .method public vibrate(J)V
     .locals 4
-    .param p1    # J
 
     const/4 v0, 0x2
 
@@ -136,8 +127,6 @@
 
 .method public vibrate([JI)V
     .locals 4
-    .param p1    # [J
-    .param p2    # I
 
     array-length v1, p1
 

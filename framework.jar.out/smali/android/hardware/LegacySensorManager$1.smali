@@ -33,7 +33,6 @@
 # virtual methods
 .method public onRotationChanged(I)V
     .locals 0
-    .param p1    # I
 
     invoke-static {p1}, Landroid/hardware/LegacySensorManager;->onRotationChanged(I)V
 

@@ -44,10 +44,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Ljava/lang/String;Landroid/database/sqlite/SQLiteDatabase$CursorFactory;I)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/database/sqlite/SQLiteDatabase$CursorFactory;
-    .param p4    # I
 
     const/4 v5, 0x0
 
@@ -68,11 +64,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Ljava/lang/String;Landroid/database/sqlite/SQLiteDatabase$CursorFactory;ILandroid/database/DatabaseErrorHandler;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/database/sqlite/SQLiteDatabase$CursorFactory;
-    .param p4    # I
-    .param p5    # Landroid/database/DatabaseErrorHandler;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -120,7 +111,6 @@
 
 .method private getDatabaseLocked(Z)Landroid/database/sqlite/SQLiteDatabase;
     .locals 10
-    .param p1    # Z
 
     const/4 v6, 0x0
 
@@ -623,7 +613,6 @@
 
 .method public onConfigure(Landroid/database/sqlite/SQLiteDatabase;)V
     .locals 0
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
 
     return-void
 .end method
@@ -633,9 +622,6 @@
 
 .method public onDowngrade(Landroid/database/sqlite/SQLiteDatabase;II)V
     .locals 3
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p2    # I
-    .param p3    # I
 
     new-instance v0, Landroid/database/sqlite/SQLiteException;
 
@@ -674,7 +660,6 @@
 
 .method public onOpen(Landroid/database/sqlite/SQLiteDatabase;)V
     .locals 0
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
 
     return-void
 .end method
@@ -684,7 +669,6 @@
 
 .method public setWriteAheadLoggingEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     monitor-enter p0
 

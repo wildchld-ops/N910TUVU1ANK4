@@ -52,9 +52,6 @@
 
 .method public constructor <init>(Lcom/android/settings/accessibility/smartscroll/touchwiz/widget/TwHelpScrollView;Landroid/content/Context;I)V
     .locals 3
-    .param p1    # Lcom/android/settings/accessibility/smartscroll/touchwiz/widget/TwHelpScrollView;
-    .param p2    # Landroid/content/Context;
-    .param p3    # I
 
     const/4 v2, 0x0
 
@@ -125,7 +122,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartFaceListener;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartFaceListener;
 
     iget-boolean v0, p0, Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartFaceListener;->mSmartScrollOn:Z
 
@@ -134,9 +130,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartFaceListener;II)Z
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartFaceListener;
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartFaceListener;->checkSmartScrollStatus(II)Z
 
@@ -147,9 +140,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartFaceListener;II)V
     .locals 0
-    .param p0    # Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartFaceListener;
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartFaceListener;->checkSmartScrollDirection(II)V
 
@@ -158,7 +148,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartFaceListener;)V
     .locals 0
-    .param p0    # Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartFaceListener;
 
     invoke-direct {p0}, Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartFaceListener;->getSmartScrollSpeed()V
 
@@ -167,7 +156,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartFaceListener;)V
     .locals 0
-    .param p0    # Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartFaceListener;
 
     invoke-direct {p0}, Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartFaceListener;->doSmartScroll()V
 
@@ -176,7 +164,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartFaceListener;)I
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartFaceListener;
 
     iget v0, p0, Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartFaceListener;->mProgressStatus:I
 
@@ -185,7 +172,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartFaceListener;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartFaceListener;
 
     iget-object v0, p0, Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartFaceListener;->mPrivateEventHandler:Landroid/os/Handler;
 
@@ -194,8 +180,6 @@
 
 .method private checkSmartScrollDirection(II)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     const/4 v5, 0x4
 
@@ -329,8 +313,6 @@
 
 .method private checkSmartScrollStatus(II)Z
     .locals 5
-    .param p1    # I
-    .param p2    # I
 
     const/4 v4, 0x5
 
@@ -708,8 +690,6 @@
 
 .method private handleSmartScrolling(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     const/4 v1, 0x1
 

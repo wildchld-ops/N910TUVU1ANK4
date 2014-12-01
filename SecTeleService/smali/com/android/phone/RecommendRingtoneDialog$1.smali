@@ -55,7 +55,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Landroid/widget/BaseAdapter;->notifyDataSetChanged()V
+    invoke-virtual {v0}, Lcom/android/phone/RecommendRingtoneDialog$RecommendAdapter;->notifyDataSetChanged()V
 
     iget-object v0, p0, Lcom/android/phone/RecommendRingtoneDialog$1;->this$0:Lcom/android/phone/RecommendRingtoneDialog;
 

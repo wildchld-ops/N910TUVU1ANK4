@@ -170,7 +170,7 @@
 
     sget-object v0, Lcom/android/phone/CdmaCallBarring$AppState;->$VALUES:[Lcom/android/phone/CdmaCallBarring$AppState;
 
-    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
+    invoke-virtual {v0}, [Lcom/android/phone/CdmaCallBarring$AppState;->clone()Ljava/lang/Object;
 
     move-result-object v0
 

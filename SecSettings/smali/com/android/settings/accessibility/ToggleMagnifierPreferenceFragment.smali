@@ -68,7 +68,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/accessibility/ToggleMagnifierPreferenceFragment;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/ToggleMagnifierPreferenceFragment;
 
     iget-object v0, p0, Lcom/android/settings/accessibility/ToggleMagnifierPreferenceFragment;->ctx:Landroid/content/Context;
 
@@ -77,8 +76,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/accessibility/ToggleMagnifierPreferenceFragment;Z)V
     .locals 0
-    .param p0    # Lcom/android/settings/accessibility/ToggleMagnifierPreferenceFragment;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/settings/accessibility/ToggleMagnifierPreferenceFragment;->updatedEnableState(Z)V
 
@@ -87,7 +84,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/accessibility/ToggleMagnifierPreferenceFragment;)Landroid/widget/Switch;
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/ToggleMagnifierPreferenceFragment;
 
     iget-object v0, p0, Lcom/android/settings/accessibility/ToggleMagnifierPreferenceFragment;->mActionBarSwitch:Landroid/widget/Switch;
 
@@ -96,8 +92,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/accessibility/ToggleMagnifierPreferenceFragment;I)V
     .locals 0
-    .param p0    # Lcom/android/settings/accessibility/ToggleMagnifierPreferenceFragment;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/settings/accessibility/ToggleMagnifierPreferenceFragment;->refreshImageView(I)V
 
@@ -318,7 +312,6 @@
 
 .method private refreshImageView(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "ToggleMagnifierPreferenceFragment"
 
@@ -692,7 +685,6 @@
 
 .method private updatedEnableState(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/settings/accessibility/ToggleMagnifierPreferenceFragment;->mActionBarSwitch:Landroid/widget/Switch;
 
@@ -807,8 +799,6 @@
 
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 8
-    .param p1    # Landroid/widget/CompoundButton;
-    .param p2    # Z
 
     const/4 v3, 0x1
 
@@ -954,7 +944,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 7
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v2, 0x1
 
@@ -1156,8 +1145,6 @@
 
 .method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
     .locals 4
-    .param p1    # Landroid/preference/Preference;
-    .param p2    # Ljava/lang/Object;
 
     const-string v1, "magnifier_size"
 
@@ -1317,8 +1304,6 @@
 
 .method public onSharedPreferenceChanged(Landroid/content/SharedPreferences;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Landroid/content/SharedPreferences;
-    .param p2    # Ljava/lang/String;
 
     return-void
 .end method

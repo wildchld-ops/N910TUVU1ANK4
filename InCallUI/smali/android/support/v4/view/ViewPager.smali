@@ -206,7 +206,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
 
     const/4 v4, 0x0
 
@@ -275,8 +274,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v4, 0x0
 
@@ -345,8 +342,6 @@
 
 .method static synthetic access$000(Landroid/support/v4/view/ViewPager;I)V
     .locals 0
-    .param p0    # Landroid/support/v4/view/ViewPager;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/support/v4/view/ViewPager;->setScrollState(I)V
 
@@ -355,7 +350,6 @@
 
 .method static synthetic access$200(Landroid/support/v4/view/ViewPager;)Landroid/support/v4/view/PagerAdapter;
     .locals 1
-    .param p0    # Landroid/support/v4/view/ViewPager;
 
     iget-object v0, p0, Landroid/support/v4/view/ViewPager;->mAdapter:Landroid/support/v4/view/PagerAdapter;
 
@@ -364,7 +358,6 @@
 
 .method static synthetic access$300(Landroid/support/v4/view/ViewPager;)I
     .locals 1
-    .param p0    # Landroid/support/v4/view/ViewPager;
 
     iget v0, p0, Landroid/support/v4/view/ViewPager;->mCurItem:I
 
@@ -381,9 +374,6 @@
 
 .method private calculatePageOffsets(Landroid/support/v4/view/ViewPager$ItemInfo;ILandroid/support/v4/view/ViewPager$ItemInfo;)V
     .locals 14
-    .param p1    # Landroid/support/v4/view/ViewPager$ItemInfo;
-    .param p2    # I
-    .param p3    # Landroid/support/v4/view/ViewPager$ItemInfo;
 
     iget-object v12, p0, Landroid/support/v4/view/ViewPager;->mAdapter:Landroid/support/v4/view/PagerAdapter;
 
@@ -804,7 +794,6 @@
 
 .method private completeScroll(Z)V
     .locals 10
-    .param p1    # Z
 
     const/4 v7, 0x0
 
@@ -1054,7 +1043,6 @@
 
 .method private enableLayers(Z)V
     .locals 5
-    .param p1    # Z
 
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getChildCount()I
 
@@ -1118,8 +1106,6 @@
 
 .method private getChildRectInPagerCoordinates(Landroid/graphics/Rect;Landroid/view/View;)Landroid/graphics/Rect;
     .locals 4
-    .param p1    # Landroid/graphics/Rect;
-    .param p2    # Landroid/view/View;
 
     const/4 v2, 0x0
 
@@ -1401,8 +1387,6 @@
 
 .method private isGutterDrag(FF)Z
     .locals 3
-    .param p1    # F
-    .param p2    # F
 
     const/4 v2, 0x0
 
@@ -1451,7 +1435,6 @@
 
 .method private onSecondaryPointerUp(Landroid/view/MotionEvent;)V
     .locals 4
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-static {p1}, Landroid/support/v4/view/MotionEventCompat;->getActionIndex(Landroid/view/MotionEvent;)I
 
@@ -1600,7 +1583,6 @@
 
 .method private performDrag(F)Z
     .locals 17
-    .param p1    # F
 
     const/4 v7, 0x0
 
@@ -1816,10 +1798,6 @@
 
 .method private recomputeScrollPosition(IIII)V
     .locals 14
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     if-lez p2, :cond_1
 
@@ -2030,7 +2008,6 @@
 
 .method private requestParentDisallowInterceptTouchEvent(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
 
@@ -2046,10 +2023,6 @@
 
 .method private scrollToItem(IZIZ)V
     .locals 8
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # I
-    .param p4    # Z
 
     const/4 v7, 0x0
 
@@ -2149,7 +2122,6 @@
 
 .method private setScrollState(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/support/v4/view/ViewPager;->mScrollState:I
 
@@ -2192,7 +2164,6 @@
 
 .method private setScrollingCacheEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-boolean v0, p0, Landroid/support/v4/view/ViewPager;->mScrollingCacheEnabled:Z
 
@@ -2376,8 +2347,6 @@
 
 .method addNewItem(II)Landroid/support/v4/view/ViewPager$ItemInfo;
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     new-instance v0, Landroid/support/v4/view/ViewPager$ItemInfo;
 
@@ -2483,9 +2452,6 @@
 
 .method public addView(Landroid/view/View;ILandroid/view/ViewGroup$LayoutParams;)V
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # Landroid/view/ViewGroup$LayoutParams;
 
     invoke-virtual {p0, p3}, Landroid/support/v4/view/ViewPager;->checkLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Z
 
@@ -2805,11 +2771,6 @@
 
 .method protected canScroll(Landroid/view/View;ZIII)Z
     .locals 11
-    .param p1    # Landroid/view/View;
-    .param p2    # Z
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     instance-of v0, p1, Landroid/view/ViewGroup;
 
@@ -2933,7 +2894,6 @@
 
 .method public canScrollHorizontally(I)Z
     .locals 6
-    .param p1    # I
 
     const/4 v2, 0x1
 
@@ -3004,7 +2964,6 @@
 
 .method protected checkLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Z
     .locals 1
-    .param p1    # Landroid/view/ViewGroup$LayoutParams;
 
     instance-of v0, p1, Landroid/support/v4/view/ViewPager$LayoutParams;
 
@@ -3318,7 +3277,6 @@
 
 .method public dispatchKeyEvent(Landroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/KeyEvent;
 
     invoke-super {p0, p1}, Landroid/view/ViewGroup;->dispatchKeyEvent(Landroid/view/KeyEvent;)Z
 
@@ -3346,7 +3304,6 @@
 
 .method public dispatchPopulateAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)Z
     .locals 6
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
 
     invoke-virtual {p1}, Landroid/view/accessibility/AccessibilityEvent;->getEventType()I
 
@@ -3418,7 +3375,6 @@
 
 .method distanceInfluenceForSnapDuration(F)F
     .locals 4
-    .param p1    # F
 
     const/high16 v0, 0x3f000000
 
@@ -3662,7 +3618,6 @@
 
 .method public executeKeyEvent(Landroid/view/KeyEvent;)Z
     .locals 4
-    .param p1    # Landroid/view/KeyEvent;
 
     const/4 v3, 0x1
 
@@ -3758,7 +3713,6 @@
 
 .method public generateLayoutParams(Landroid/util/AttributeSet;)Landroid/view/ViewGroup$LayoutParams;
     .locals 2
-    .param p1    # Landroid/util/AttributeSet;
 
     new-instance v0, Landroid/support/v4/view/ViewPager$LayoutParams;
 
@@ -3773,7 +3727,6 @@
 
 .method protected generateLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Landroid/view/ViewGroup$LayoutParams;
     .locals 1
-    .param p1    # Landroid/view/ViewGroup$LayoutParams;
 
     invoke-virtual {p0}, Landroid/support/v4/view/ViewPager;->generateDefaultLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
@@ -3784,8 +3737,6 @@
 
 .method protected getChildDrawingOrder(II)I
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     iget v2, p0, Landroid/support/v4/view/ViewPager;->mDrawingOrder:I
 
@@ -3824,7 +3775,6 @@
 
 .method infoForAnyChild(Landroid/view/View;)Landroid/support/v4/view/ViewPager$ItemInfo;
     .locals 2
-    .param p1    # Landroid/view/View;
 
     :goto_0
     invoke-virtual {p1}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
@@ -3862,7 +3812,6 @@
 
 .method infoForChild(Landroid/view/View;)Landroid/support/v4/view/ViewPager$ItemInfo;
     .locals 4
-    .param p1    # Landroid/view/View;
 
     const/4 v0, 0x0
 
@@ -3909,7 +3858,6 @@
 
 .method infoForPosition(I)Landroid/support/v4/view/ViewPager$ItemInfo;
     .locals 3
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -4089,7 +4037,6 @@
 
 .method protected onDraw(Landroid/graphics/Canvas;)V
     .locals 18
-    .param p1    # Landroid/graphics/Canvas;
 
     invoke-super/range {p0 .. p1}, Landroid/view/View;->onDraw(Landroid/graphics/Canvas;)V
 
@@ -4334,7 +4281,6 @@
 
 .method public onInterceptTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 14
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getAction()I
 
@@ -4711,11 +4657,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 30
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-virtual/range {p0 .. p0}, Landroid/view/ViewGroup;->getChildCount()I
 
@@ -5167,8 +5108,6 @@
 
 .method protected onMeasure(II)V
     .locals 23
-    .param p1    # I
-    .param p2    # I
 
     const/16 v21, 0x0
 
@@ -5609,9 +5548,6 @@
 
 .method protected onPageScrolled(IFI)V
     .locals 17
-    .param p1    # I
-    .param p2    # F
-    .param p3    # I
 
     move-object/from16 v0, p0
 
@@ -5867,8 +5803,6 @@
 
 .method protected onRequestFocusInDescendants(ILandroid/graphics/Rect;)Z
     .locals 9
-    .param p1    # I
-    .param p2    # Landroid/graphics/Rect;
 
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getChildCount()I
 
@@ -5945,7 +5879,6 @@
 
 .method public onRestoreInstanceState(Landroid/os/Parcelable;)V
     .locals 4
-    .param p1    # Landroid/os/Parcelable;
 
     instance-of v1, p1, Landroid/support/v4/view/ViewPager$SavedState;
 
@@ -6038,10 +5971,6 @@
 
 .method protected onSizeChanged(IIII)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-super {p0, p1, p2, p3, p4}, Landroid/view/View;->onSizeChanged(IIII)V
 
@@ -6059,7 +5988,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 28
-    .param p1    # Landroid/view/MotionEvent;
 
     move-object/from16 v0, p0
 
@@ -6882,7 +6810,6 @@
 
 .method populate(I)V
     .locals 30
-    .param p1    # I
 
     const/16 v21, 0x0
 
@@ -8129,7 +8056,6 @@
 
 .method public removeView(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     iget-boolean v0, p0, Landroid/support/v4/view/ViewPager;->mInLayout:Z
 
@@ -8148,7 +8074,6 @@
 
 .method public setAdapter(Landroid/support/v4/view/PagerAdapter;)V
     .locals 10
-    .param p1    # Landroid/support/v4/view/PagerAdapter;
 
     const/4 v9, 0x1
 
@@ -8312,7 +8237,6 @@
 
 .method public setCurrentItem(I)V
     .locals 2
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -8337,8 +8261,6 @@
 
 .method public setCurrentItem(IZ)V
     .locals 1
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v0, 0x0
 
@@ -8351,9 +8273,6 @@
 
 .method setCurrentItemInternal(IZZ)V
     .locals 1
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # Z
 
     const/4 v0, 0x0
 
@@ -8364,10 +8283,6 @@
 
 .method setCurrentItemInternal(IZZI)V
     .locals 5
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # Z
-    .param p4    # I
 
     const/4 v0, 0x1
 
@@ -8529,7 +8444,6 @@
 
 .method public setOffscreenPageLimit(I)V
     .locals 4
-    .param p1    # I
 
     const/4 v3, 0x1
 
@@ -8584,7 +8498,6 @@
 
 .method public setOnPageChangeListener(Landroid/support/v4/view/ViewPager$OnPageChangeListener;)V
     .locals 0
-    .param p1    # Landroid/support/v4/view/ViewPager$OnPageChangeListener;
 
     iput-object p1, p0, Landroid/support/v4/view/ViewPager;->mOnPageChangeListener:Landroid/support/v4/view/ViewPager$OnPageChangeListener;
 
@@ -8593,9 +8506,6 @@
 
 .method smoothScrollTo(III)V
     .locals 15
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getChildCount()I
 
@@ -8771,7 +8681,6 @@
 
 .method protected verifyDrawable(Landroid/graphics/drawable/Drawable;)Z
     .locals 1
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     invoke-super {p0, p1}, Landroid/view/View;->verifyDrawable(Landroid/graphics/drawable/Drawable;)Z
 

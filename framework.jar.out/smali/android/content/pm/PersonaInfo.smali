@@ -301,11 +301,6 @@
 
 .method public constructor <init>(ILjava/lang/String;III)V
     .locals 7
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     const-wide/16 v5, 0x0
 
@@ -438,12 +433,6 @@
 
 .method public constructor <init>(ILjava/lang/String;Ljava/lang/String;III)V
     .locals 7
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     const-wide/16 v5, 0x0
 
@@ -584,7 +573,6 @@
 
 .method public constructor <init>(Landroid/content/pm/PersonaInfo;)V
     .locals 7
-    .param p1    # Landroid/content/pm/PersonaInfo;
 
     const-wide/16 v5, 0x0
 
@@ -945,7 +933,6 @@
 
 .method public constructor <init>(Landroid/content/pm/UserInfo;)V
     .locals 7
-    .param p1    # Landroid/content/pm/UserInfo;
 
     const-wide/16 v5, 0x0
 
@@ -1106,7 +1093,6 @@
 
 .method private constructor <init>(Landroid/os/Parcel;)V
     .locals 7
-    .param p1    # Landroid/os/Parcel;
 
     const-wide/16 v5, 0x0
 
@@ -1763,8 +1749,6 @@
 
 .method synthetic constructor <init>(Landroid/os/Parcel;Landroid/content/pm/PersonaInfo$1;)V
     .locals 0
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # Landroid/content/pm/PersonaInfo$1;
 
     invoke-direct {p0, p1}, Landroid/content/pm/PersonaInfo;-><init>(Landroid/os/Parcel;)V
 
@@ -2254,7 +2238,6 @@
 
 .method public setAdminPackageName(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/content/pm/PersonaInfo;->adminPackageName:Ljava/lang/String;
 
@@ -2263,7 +2246,6 @@
 
 .method public setAdminUid(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/content/pm/PersonaInfo;->adminUid:I
 
@@ -2272,7 +2254,6 @@
 
 .method public setCreatorUid(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "PersonaInfo"
 
@@ -2315,7 +2296,6 @@
 
 .method public setFingerCount(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/content/pm/PersonaInfo;->fingerCount:I
 
@@ -2324,7 +2304,6 @@
 
 .method public setHandlerApkLocation(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/content/pm/PersonaInfo;->handlerApkLocation:Ljava/lang/String;
 
@@ -2333,7 +2312,6 @@
 
 .method public setHandlerPackageName(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/content/pm/PersonaInfo;->handlerPackageName:Ljava/lang/String;
 
@@ -2342,7 +2320,6 @@
 
 .method public setHandlerServiceName(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/content/pm/PersonaInfo;->handlerServiceName:Ljava/lang/String;
 
@@ -2385,7 +2362,6 @@
 
 .method public setIsAdminLockedJustBefore(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/content/pm/PersonaInfo;->isAdminLockedJustBefore:Z
 
@@ -2394,7 +2370,6 @@
 
 .method public setIsFingerIdentifyFailed(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/content/pm/PersonaInfo;->isFingerIdentifyFailed:Z
 
@@ -2403,7 +2378,6 @@
 
 .method public setIsFingerReset(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/content/pm/PersonaInfo;->isFingerReset:Z
 
@@ -2412,7 +2386,6 @@
 
 .method public setIsFingerTimeout(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/content/pm/PersonaInfo;->isFingerTimeout:Z
 
@@ -2421,7 +2394,6 @@
 
 .method public setIsUnlockedAfterTurnOn(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/content/pm/PersonaInfo;->isUnlockedAfterTurnOn:Z
 
@@ -2430,7 +2402,6 @@
 
 .method public setLastKeyguardUnlockTime(J)V
     .locals 0
-    .param p1    # J
 
     iput-wide p1, p0, Landroid/content/pm/PersonaInfo;->lastKeyguardUnlockTime:J
 
@@ -2439,7 +2410,6 @@
 
 .method public setSetupWizardApkLocation(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "PersonaInfo"
 
@@ -2470,7 +2440,6 @@
 
 .method public setTimaEcrytfsIndex(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/content/pm/PersonaInfo;->timaEcrytfsIndex:I
 
@@ -2479,7 +2448,6 @@
 
 .method public setTimaPasswordHintIndex(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/content/pm/PersonaInfo;->timaPasswordHintIndex:I
 
@@ -2488,7 +2456,6 @@
 
 .method public setTimaPasswordIndex(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/content/pm/PersonaInfo;->timaPasswordIndex:I
 
@@ -2497,7 +2464,6 @@
 
 .method public setTimaPwdResetTokenIndex(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/content/pm/PersonaInfo;->timaPwdResetTokenIndex:I
 
@@ -2506,7 +2472,6 @@
 
 .method public setType(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/content/pm/PersonaInfo;->type:Ljava/lang/String;
 
@@ -2515,7 +2480,6 @@
 
 .method public setsamsungAccount(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/content/pm/PersonaInfo;->samsungAccount:Ljava/lang/String;
 
@@ -2584,8 +2548,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 5
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     const/4 v1, 0x1
 

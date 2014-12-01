@@ -49,20 +49,6 @@
 # direct methods
 .method public constructor <init>(Lcom/sec/android/app/camera/ExternalFilterLoader;IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;IIIILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Ljava/lang/String;
-    .param p7    # I
-    .param p8    # Ljava/lang/String;
-    .param p9    # I
-    .param p10    # I
-    .param p11    # I
-    .param p12    # I
-    .param p13    # Ljava/lang/String;
-    .param p14    # Ljava/lang/String;
-    .param p15    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/ExternalFilterLoader$ExtEffectItem;->this$0:Lcom/sec/android/app/camera/ExternalFilterLoader;
 

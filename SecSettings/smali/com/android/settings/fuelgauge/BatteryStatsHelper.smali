@@ -133,8 +133,6 @@
 
 .method public constructor <init>(Landroid/app/Activity;Landroid/os/Handler;)V
     .locals 2
-    .param p1    # Landroid/app/Activity;
-    .param p2    # Landroid/os/Handler;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -195,7 +193,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/fuelgauge/BatteryStatsHelper;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/settings/fuelgauge/BatteryStatsHelper;
 
     iget-object v0, p0, Lcom/android/settings/fuelgauge/BatteryStatsHelper;->mRequestQueue:Ljava/util/ArrayList;
 
@@ -204,7 +201,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/fuelgauge/BatteryStatsHelper;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/settings/fuelgauge/BatteryStatsHelper;
 
     iget-object v0, p0, Lcom/android/settings/fuelgauge/BatteryStatsHelper;->mHandler:Landroid/os/Handler;
 
@@ -309,11 +305,6 @@
 
 .method private addEntry(Ljava/lang/String;Lcom/android/settings/fuelgauge/PowerUsageDetail$DrainType;JID)Lcom/android/settings/fuelgauge/BatterySipper;
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/settings/fuelgauge/PowerUsageDetail$DrainType;
-    .param p3    # J
-    .param p5    # I
-    .param p6    # D
 
     iget-wide v1, p0, Lcom/android/settings/fuelgauge/BatteryStatsHelper;->mMaxPower:D
 
@@ -421,7 +412,6 @@
 
 .method private addPhoneUsage(J)V
     .locals 10
-    .param p1    # J
 
     iget-object v0, p0, Lcom/android/settings/fuelgauge/BatteryStatsHelper;->mStats:Lcom/android/internal/os/BatteryStatsImpl;
 
@@ -484,7 +474,6 @@
 
 .method private addRadioUsage(J)V
     .locals 19
-    .param p1    # J
 
     const-wide/16 v8, 0x0
 
@@ -646,7 +635,6 @@
 
 .method private addScreenUsage(J)V
     .locals 19
-    .param p1    # J
 
     const-wide/16 v8, 0x0
 
@@ -1023,7 +1011,6 @@
 
 .method private addWiFiUsage(J)V
     .locals 17
-    .param p1    # J
 
     move-object/from16 v0, p0
 
@@ -1167,8 +1154,6 @@
 
 .method private aggregateSippers(Lcom/android/settings/fuelgauge/BatterySipper;Ljava/util/List;Ljava/lang/String;)V
     .locals 6
-    .param p1    # Lcom/android/settings/fuelgauge/BatterySipper;
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1468,7 +1453,6 @@
 
 .method private processAppUsage(Z)V
     .locals 103
-    .param p1    # Z
 
     move-object/from16 v0, p0
 
@@ -2972,7 +2956,6 @@
 
 .method public create(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     if-eqz p1, :cond_0
 
@@ -3115,7 +3098,6 @@
 
 .method public refreshStats(Z)V
     .locals 3
-    .param p1    # Z
 
     const-wide/16 v0, 0x0
 

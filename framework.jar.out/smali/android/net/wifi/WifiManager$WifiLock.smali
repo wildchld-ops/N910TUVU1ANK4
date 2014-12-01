@@ -35,8 +35,6 @@
 # direct methods
 .method private constructor <init>(Landroid/net/wifi/WifiManager;ILjava/lang/String;)V
     .locals 2
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -67,10 +65,6 @@
 
 .method synthetic constructor <init>(Landroid/net/wifi/WifiManager;ILjava/lang/String;Landroid/net/wifi/WifiManager$1;)V
     .locals 0
-    .param p1    # Landroid/net/wifi/WifiManager;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Landroid/net/wifi/WifiManager$1;
 
     invoke-direct {p0, p1, p2, p3}, Landroid/net/wifi/WifiManager$WifiLock;-><init>(Landroid/net/wifi/WifiManager;ILjava/lang/String;)V
 
@@ -526,7 +520,6 @@
 
 .method public setReferenceCounted(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/net/wifi/WifiManager$WifiLock;->mRefCounted:Z
 
@@ -535,7 +528,6 @@
 
 .method public setWorkSource(Landroid/os/WorkSource;)V
     .locals 5
-    .param p1    # Landroid/os/WorkSource;
 
     iget-object v2, p0, Landroid/net/wifi/WifiManager$WifiLock;->mBinder:Landroid/os/IBinder;
 

@@ -100,10 +100,6 @@
 
 .method private getConversationByChatId(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)Lcom/android/mms/data/Conversation;
     .locals 16
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Z
 
     const-string v1, "Mms/StatusNotificationReceiver"
 
@@ -399,8 +395,6 @@
 
 .method private sendLegacyMessage(Ljava/lang/Long;Landroid/net/Uri;)V
     .locals 16
-    .param p1    # Ljava/lang/Long;
-    .param p2    # Landroid/net/Uri;
 
     const-wide/16 v12, 0x0
 
@@ -638,7 +632,6 @@
 
 .method public static updateNotificationsStatus(Landroid/content/Context;)Lcom/android/mms/rcs/transaction/StatusNotificationReceiver$NotificationData;
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -649,8 +642,6 @@
 # virtual methods
 .method public fillFromCursor(ZLandroid/database/Cursor;)Landroid/content/ContentValues;
     .locals 5
-    .param p1    # Z
-    .param p2    # Landroid/database/Cursor;
 
     const/4 v4, 0x0
 
@@ -1011,9 +1002,6 @@
 
 .method isAvaiableForMMSConversion(Ljava/lang/String;Ljava/lang/Long;I)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Long;
-    .param p3    # I
 
     const-string v1, "Mms/StatusNotificationReceiver"
 
@@ -1092,7 +1080,6 @@
 
 .method isValidErrorCode(I)Z
     .locals 1
-    .param p1    # I
 
     const/16 v0, 0xc
 
@@ -1120,9 +1107,6 @@
 
 .method makeRequestForConversion(Ljava/lang/String;Landroid/database/Cursor;Ljava/lang/Long;)V
     .locals 14
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/database/Cursor;
-    .param p3    # Ljava/lang/Long;
 
     const-string v1, "chat_id"
 
@@ -1362,8 +1346,6 @@
 
 .method public onAddParticipantResponse(Ljava/lang/String;ZLjava/util/ArrayList;)V
     .locals 26
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1750,8 +1732,6 @@
 
 .method public onChatClosed(Ljava/lang/String;Ljava/lang/String;)V
     .locals 15
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const-string v1, "Mms/StatusNotificationReceiver"
 
@@ -2038,8 +2018,6 @@
 
 .method public onChatInvitation(Ljava/lang/String;Ljava/lang/String;)V
     .locals 28
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const-wide/16 v2, -0x1
 
@@ -2721,7 +2699,6 @@
 
 .method public onFTAttached(Ljava/lang/Long;)V
     .locals 20
-    .param p1    # Ljava/lang/Long;
 
     const-wide/16 v17, 0x0
 
@@ -3096,8 +3073,6 @@
 
 .method public onFTCanceled(Ljava/lang/Long;I)V
     .locals 13
-    .param p1    # Ljava/lang/Long;
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -3379,8 +3354,6 @@
 
 .method public onFTCompleted(Ljava/lang/Long;I)V
     .locals 24
-    .param p1    # Ljava/lang/Long;
-    .param p2    # I
 
     const-string v2, "Mms/StatusNotificationReceiver"
 
@@ -3721,8 +3694,6 @@
 
 .method public onFTIncoming(Ljava/lang/Long;I)V
     .locals 40
-    .param p1    # Ljava/lang/Long;
-    .param p2    # I
 
     const-wide/16 v9, 0x0
 
@@ -4496,8 +4467,6 @@
 
 .method public onFTInterrupted(Ljava/lang/Long;I)V
     .locals 8
-    .param p1    # Ljava/lang/Long;
-    .param p2    # I
 
     const/4 v7, 0x1
 
@@ -4590,9 +4559,6 @@
 
 .method public onFTProgress(Ljava/lang/Long;II)V
     .locals 6
-    .param p1    # Ljava/lang/Long;
-    .param p2    # I
-    .param p3    # I
 
     new-instance v3, Landroid/content/ContentValues;
 
@@ -4675,8 +4641,6 @@
 
 .method public onFTRequestFailed(Ljava/lang/Long;I)V
     .locals 5
-    .param p1    # Ljava/lang/Long;
-    .param p2    # I
 
     const-string v2, "Mms/StatusNotificationReceiver"
 
@@ -4824,8 +4788,6 @@
 
 .method public onMessageReceived(Ljava/lang/String;J)V
     .locals 27
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
 
     const-string v3, "Mms/StatusNotificationReceiver"
 
@@ -5225,8 +5187,6 @@
 
 .method public onMessageResend(Ljava/lang/String;I)V
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const-string v0, "Mms/StatusNotificationReceiver"
 
@@ -5351,8 +5311,6 @@
 
 .method public onMessageSent(JI)V
     .locals 27
-    .param p1    # J
-    .param p3    # I
 
     const-string v3, "Mms/StatusNotificationReceiver"
 
@@ -5721,8 +5679,6 @@
 
 .method public onMessageSentNotiUpdate(Ljava/lang/Long;I)V
     .locals 21
-    .param p1    # Ljava/lang/Long;
-    .param p2    # I
 
     new-instance v5, Landroid/content/ContentValues;
 
@@ -6213,9 +6169,6 @@
 
 .method public onMessageSentUpdate(Ljava/lang/Long;ZLjava/lang/String;)V
     .locals 7
-    .param p1    # Ljava/lang/Long;
-    .param p2    # Z
-    .param p3    # Ljava/lang/String;
 
     new-instance v3, Landroid/content/ContentValues;
 
@@ -6399,8 +6352,6 @@
 
 .method public onReceiveMessageUpdate(Ljava/lang/String;J)V
     .locals 20
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
 
     const-string v2, "Mms/StatusNotificationReceiver"
 
@@ -6926,9 +6877,6 @@
 
 .method public onReceiveParticipantResponseInsertOrLeft(Ljava/lang/String;Ljava/lang/String;I)V
     .locals 22
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     if-nez p2, :cond_1
 
@@ -7535,8 +7483,6 @@
 
 .method public onReceiveParticipantResponseUpdated(Ljava/lang/String;Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     if-eqz p2, :cond_0
 
@@ -7624,8 +7570,6 @@
 
 .method public onRequestChat(Ljava/lang/String;I)V
     .locals 25
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     new-instance v19, Lcom/android/mms/rcs/RcsOperationsManager;
 
@@ -8048,9 +7992,6 @@
 
 .method public onSystemMessageReceived(Ljava/lang/String;JI)V
     .locals 14
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
-    .param p4    # I
 
     const/4 v4, 0x0
 
@@ -8286,10 +8227,6 @@
 
 .method public onTypingNotification(Ljava/lang/String;Ljava/lang/String;IZ)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Z
 
     sget-object v2, Lcom/android/mms/rcs/transaction/StatusNotificationReceiver;->mHandler:Landroid/os/Handler;
 
@@ -8342,11 +8279,6 @@
 
 .method public prepareSilentBgSenderRequest(Ljava/util/ArrayList;Ljava/lang/String;Ljava/lang/String;Landroid/net/Uri;Ljava/lang/String;J)V
     .locals 4
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Landroid/net/Uri;
-    .param p5    # Ljava/lang/String;
-    .param p6    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -8439,7 +8371,6 @@
 
 .method public setHandler(Landroid/os/Handler;)V
     .locals 0
-    .param p1    # Landroid/os/Handler;
 
     sput-object p1, Lcom/android/mms/rcs/transaction/StatusNotificationReceiver;->mHandler:Landroid/os/Handler;
 
@@ -8448,14 +8379,6 @@
 
 .method public updateHistoryForRcsChat(Landroid/content/Context;JJJLjava/lang/String;Ljava/lang/String;II)Z
     .locals 8
-    .param p1    # Landroid/content/Context;
-    .param p2    # J
-    .param p4    # J
-    .param p6    # J
-    .param p8    # Ljava/lang/String;
-    .param p9    # Ljava/lang/String;
-    .param p10    # I
-    .param p11    # I
 
     const-string v5, "Mms/StatusNotificationReceiver"
 

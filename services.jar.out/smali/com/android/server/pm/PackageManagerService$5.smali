@@ -40,8 +40,6 @@
 # virtual methods
 .method public compare(Landroid/content/pm/ProviderInfo;Landroid/content/pm/ProviderInfo;)I
     .locals 3
-    .param p1    # Landroid/content/pm/ProviderInfo;
-    .param p2    # Landroid/content/pm/ProviderInfo;
 
     iget v0, p1, Landroid/content/pm/ProviderInfo;->initOrder:I
 
@@ -69,8 +67,6 @@
 
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p1, Landroid/content/pm/ProviderInfo;
 

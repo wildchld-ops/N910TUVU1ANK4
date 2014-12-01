@@ -51,7 +51,6 @@
 
 .method public static apply(Landroid/content/SharedPreferences$Editor;)V
     .locals 2
-    .param p0    # Landroid/content/SharedPreferences$Editor;
 
     sget-object v0, Lcom/android/common/SharedPreferencesCompat;->sApplyMethod:Ljava/lang/reflect/Method;
 

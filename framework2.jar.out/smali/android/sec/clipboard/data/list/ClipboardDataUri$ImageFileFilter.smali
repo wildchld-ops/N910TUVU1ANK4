@@ -62,7 +62,6 @@
 
 .method synthetic constructor <init>(Landroid/sec/clipboard/data/list/ClipboardDataUri$1;)V
     .locals 0
-    .param p1    # Landroid/sec/clipboard/data/list/ClipboardDataUri$1;
 
     invoke-direct {p0}, Landroid/sec/clipboard/data/list/ClipboardDataUri$ImageFileFilter;-><init>()V
 
@@ -73,7 +72,6 @@
 # virtual methods
 .method public accept(Ljava/io/File;)Z
     .locals 6
-    .param p1    # Ljava/io/File;
 
     const/4 v4, 0x0
 

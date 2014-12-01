@@ -46,8 +46,6 @@
 # virtual methods
 .method public compare(Lcom/android/systemui/recent/multiwindowUtils/MultiWindowTrayInfo$LaunchItem;Lcom/android/systemui/recent/multiwindowUtils/MultiWindowTrayInfo$LaunchItem;)I
     .locals 5
-    .param p1    # Lcom/android/systemui/recent/multiwindowUtils/MultiWindowTrayInfo$LaunchItem;
-    .param p2    # Lcom/android/systemui/recent/multiwindowUtils/MultiWindowTrayInfo$LaunchItem;
 
     invoke-virtual {p1}, Lcom/android/systemui/recent/multiwindowUtils/MultiWindowTrayInfo$LaunchItem;->getTitle()Ljava/lang/CharSequence;
 
@@ -76,8 +74,6 @@
 
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p1, Lcom/android/systemui/recent/multiwindowUtils/MultiWindowTrayInfo$LaunchItem;
 

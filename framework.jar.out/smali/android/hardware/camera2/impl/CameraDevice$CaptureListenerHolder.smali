@@ -27,10 +27,6 @@
 # direct methods
 .method constructor <init>(Landroid/hardware/camera2/CameraDevice$CaptureListener;Landroid/hardware/camera2/CaptureRequest;Landroid/os/Handler;Z)V
     .locals 2
-    .param p1    # Landroid/hardware/camera2/CameraDevice$CaptureListener;
-    .param p2    # Landroid/hardware/camera2/CaptureRequest;
-    .param p3    # Landroid/os/Handler;
-    .param p4    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

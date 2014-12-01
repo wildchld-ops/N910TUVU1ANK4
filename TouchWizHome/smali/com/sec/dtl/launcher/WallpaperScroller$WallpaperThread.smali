@@ -35,9 +35,6 @@
 # direct methods
 .method public constructor <init>(Landroid/app/WallpaperManager;Landroid/os/IBinder;F)V
     .locals 1
-    .param p1    # Landroid/app/WallpaperManager;
-    .param p2    # Landroid/os/IBinder;
-    .param p3    # F
 
     const-string v0, "updateWallpaper"
 
@@ -58,11 +55,6 @@
 
 .method static synthetic access$300(Lcom/sec/dtl/launcher/WallpaperScroller$WallpaperThread;FFFF)V
     .locals 0
-    .param p0    # Lcom/sec/dtl/launcher/WallpaperScroller$WallpaperThread;
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/sec/dtl/launcher/WallpaperScroller$WallpaperThread;->update(FFFF)V
 
@@ -71,7 +63,6 @@
 
 .method static synthetic access$400(Lcom/sec/dtl/launcher/WallpaperScroller$WallpaperThread;)V
     .locals 0
-    .param p0    # Lcom/sec/dtl/launcher/WallpaperScroller$WallpaperThread;
 
     invoke-direct {p0}, Lcom/sec/dtl/launcher/WallpaperScroller$WallpaperThread;->shutdown()V
 
@@ -106,10 +97,6 @@
 
 .method private declared-synchronized update(FFFF)V
     .locals 3
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
 
     const/high16 v2, 0x40000000
 

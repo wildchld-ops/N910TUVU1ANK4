@@ -120,13 +120,13 @@
 
     iget-object v2, p0, Lcom/android/phone/CLIRListPreference$MyHandler;->this$0:Lcom/android/phone/CLIRListPreference;
 
-    invoke-virtual {v2, v6}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v2, v6}, Lcom/android/phone/CLIRListPreference;->setEnabled(Z)V
 
     iget-object v2, p0, Lcom/android/phone/CLIRListPreference$MyHandler;->this$0:Lcom/android/phone/CLIRListPreference;
 
     const-string v3, ""
 
-    invoke-virtual {v2, v3}, Landroid/preference/ListPreference;->setSummary(Ljava/lang/CharSequence;)V
+    invoke-virtual {v2, v3}, Lcom/android/phone/CLIRListPreference;->setSummary(Ljava/lang/CharSequence;)V
 
     :cond_0
     :goto_1
@@ -140,7 +140,7 @@
 
     iget-object v2, p0, Lcom/android/phone/CLIRListPreference$MyHandler;->this$0:Lcom/android/phone/CLIRListPreference;
 
-    invoke-virtual {v2, v6}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v2, v6}, Lcom/android/phone/CLIRListPreference;->setEnabled(Z)V
 
     :cond_1
     return-void
@@ -309,7 +309,7 @@
 
     iget-object v3, v0, Landroid/os/AsyncResult;->exception:Ljava/lang/Throwable;
 
-    invoke-virtual {p0, v2, v4, v4, v3}, Landroid/os/Handler;->obtainMessage(IIILjava/lang/Object;)Landroid/os/Message;
+    invoke-virtual {p0, v2, v4, v4, v3}, Lcom/android/phone/CLIRListPreference$MyHandler;->obtainMessage(IIILjava/lang/Object;)Landroid/os/Message;
 
     move-result-object v2
 
@@ -364,7 +364,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1, v2, v2, v2}, Landroid/os/Handler;->obtainMessage(III)Landroid/os/Message;
+    invoke-virtual {v1, v2, v2, v2}, Lcom/android/phone/CLIRListPreference$MyHandler;->obtainMessage(III)Landroid/os/Message;
 
     move-result-object v1
 

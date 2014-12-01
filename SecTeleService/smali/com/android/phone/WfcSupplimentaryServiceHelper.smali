@@ -133,13 +133,13 @@
 
     sget-object v1, Lcom/android/phone/WfcSupplimentaryServiceHelper;->TAG:Ljava/lang/String;
 
-    invoke-virtual {v0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/samsung/commonimsinterface/imscommon/IMSException;->getMessage()Ljava/lang/String;
 
     move-result-object v2
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
+    invoke-virtual {v0}, Lcom/samsung/commonimsinterface/imscommon/IMSException;->printStackTrace()V
 
     goto :goto_0
 .end method

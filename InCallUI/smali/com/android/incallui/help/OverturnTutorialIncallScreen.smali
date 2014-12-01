@@ -128,7 +128,6 @@
 
 .method static synthetic access$000(Lcom/android/incallui/help/OverturnTutorialIncallScreen;)I
     .locals 1
-    .param p0    # Lcom/android/incallui/help/OverturnTutorialIncallScreen;
 
     iget v0, p0, Lcom/android/incallui/help/OverturnTutorialIncallScreen;->mPreviousMsg:I
 
@@ -137,8 +136,6 @@
 
 .method static synthetic access$002(Lcom/android/incallui/help/OverturnTutorialIncallScreen;I)I
     .locals 0
-    .param p0    # Lcom/android/incallui/help/OverturnTutorialIncallScreen;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/incallui/help/OverturnTutorialIncallScreen;->mPreviousMsg:I
 
@@ -147,7 +144,6 @@
 
 .method static synthetic access$100(Lcom/android/incallui/help/OverturnTutorialIncallScreen;)Landroid/app/AlertDialog;
     .locals 1
-    .param p0    # Lcom/android/incallui/help/OverturnTutorialIncallScreen;
 
     iget-object v0, p0, Lcom/android/incallui/help/OverturnTutorialIncallScreen;->mAlertDialog:Landroid/app/AlertDialog;
 
@@ -156,7 +152,6 @@
 
 .method static synthetic access$1000(Lcom/android/incallui/help/OverturnTutorialIncallScreen;)V
     .locals 0
-    .param p0    # Lcom/android/incallui/help/OverturnTutorialIncallScreen;
 
     invoke-direct {p0}, Lcom/android/incallui/help/OverturnTutorialIncallScreen;->stopAnimation()V
 
@@ -165,8 +160,6 @@
 
 .method static synthetic access$102(Lcom/android/incallui/help/OverturnTutorialIncallScreen;Landroid/app/AlertDialog;)Landroid/app/AlertDialog;
     .locals 0
-    .param p0    # Lcom/android/incallui/help/OverturnTutorialIncallScreen;
-    .param p1    # Landroid/app/AlertDialog;
 
     iput-object p1, p0, Lcom/android/incallui/help/OverturnTutorialIncallScreen;->mAlertDialog:Landroid/app/AlertDialog;
 
@@ -175,8 +168,6 @@
 
 .method static synthetic access$1102(Lcom/android/incallui/help/OverturnTutorialIncallScreen;Landroid/widget/ImageView;)Landroid/widget/ImageView;
     .locals 0
-    .param p0    # Lcom/android/incallui/help/OverturnTutorialIncallScreen;
-    .param p1    # Landroid/widget/ImageView;
 
     iput-object p1, p0, Lcom/android/incallui/help/OverturnTutorialIncallScreen;->mImgView:Landroid/widget/ImageView;
 
@@ -185,8 +176,6 @@
 
 .method static synthetic access$1202(Lcom/android/incallui/help/OverturnTutorialIncallScreen;I)I
     .locals 0
-    .param p0    # Lcom/android/incallui/help/OverturnTutorialIncallScreen;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/incallui/help/OverturnTutorialIncallScreen;->mTutorialDialogON:I
 
@@ -195,7 +184,6 @@
 
 .method static synthetic access$1300(Lcom/android/incallui/help/OverturnTutorialIncallScreen;)Z
     .locals 1
-    .param p0    # Lcom/android/incallui/help/OverturnTutorialIncallScreen;
 
     invoke-direct {p0}, Lcom/android/incallui/help/OverturnTutorialIncallScreen;->isForegroundActivity()Z
 
@@ -206,7 +194,6 @@
 
 .method static synthetic access$1400(Lcom/android/incallui/help/OverturnTutorialIncallScreen;)V
     .locals 0
-    .param p0    # Lcom/android/incallui/help/OverturnTutorialIncallScreen;
 
     invoke-direct {p0}, Lcom/android/incallui/help/OverturnTutorialIncallScreen;->startIncomingSound()V
 
@@ -215,7 +202,6 @@
 
 .method static synthetic access$200(Lcom/android/incallui/help/OverturnTutorialIncallScreen;)Landroid/widget/FrameLayout;
     .locals 1
-    .param p0    # Lcom/android/incallui/help/OverturnTutorialIncallScreen;
 
     iget-object v0, p0, Lcom/android/incallui/help/OverturnTutorialIncallScreen;->mStartTutorial:Landroid/widget/FrameLayout;
 
@@ -224,7 +210,6 @@
 
 .method static synthetic access$300(Lcom/android/incallui/help/OverturnTutorialIncallScreen;)Landroid/widget/FrameLayout;
     .locals 1
-    .param p0    # Lcom/android/incallui/help/OverturnTutorialIncallScreen;
 
     iget-object v0, p0, Lcom/android/incallui/help/OverturnTutorialIncallScreen;->mEndTutorial:Landroid/widget/FrameLayout;
 
@@ -233,7 +218,6 @@
 
 .method static synthetic access$400(Lcom/android/incallui/help/OverturnTutorialIncallScreen;)Landroid/view/animation/Animation;
     .locals 1
-    .param p0    # Lcom/android/incallui/help/OverturnTutorialIncallScreen;
 
     iget-object v0, p0, Lcom/android/incallui/help/OverturnTutorialIncallScreen;->mEndTutorialAnimation:Landroid/view/animation/Animation;
 
@@ -242,7 +226,6 @@
 
 .method static synthetic access$500(Lcom/android/incallui/help/OverturnTutorialIncallScreen;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/incallui/help/OverturnTutorialIncallScreen;
 
     iget-object v0, p0, Lcom/android/incallui/help/OverturnTutorialIncallScreen;->mOverturnHandler:Landroid/os/Handler;
 
@@ -251,7 +234,6 @@
 
 .method static synthetic access$600(Lcom/android/incallui/help/OverturnTutorialIncallScreen;)I
     .locals 1
-    .param p0    # Lcom/android/incallui/help/OverturnTutorialIncallScreen;
 
     iget v0, p0, Lcom/android/incallui/help/OverturnTutorialIncallScreen;->mAnimationIndex:I
 
@@ -260,8 +242,6 @@
 
 .method static synthetic access$700(Lcom/android/incallui/help/OverturnTutorialIncallScreen;I)V
     .locals 0
-    .param p0    # Lcom/android/incallui/help/OverturnTutorialIncallScreen;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/incallui/help/OverturnTutorialIncallScreen;->updateAnimation(I)V
 
@@ -270,7 +250,6 @@
 
 .method static synthetic access$800(Lcom/android/incallui/help/OverturnTutorialIncallScreen;)V
     .locals 0
-    .param p0    # Lcom/android/incallui/help/OverturnTutorialIncallScreen;
 
     invoke-direct {p0}, Lcom/android/incallui/help/OverturnTutorialIncallScreen;->stopRingingOrVibration()V
 
@@ -279,7 +258,6 @@
 
 .method private controlRing(Z)V
     .locals 4
-    .param p1    # Z
 
     sget-object v0, Landroid/provider/Settings$System;->DEFAULT_RINGTONE_URI:Landroid/net/Uri;
 
@@ -536,7 +514,6 @@
 
 .method private updateAnimation(I)V
     .locals 5
-    .param p1    # I
 
     const/16 v4, 0x14
 
@@ -641,15 +618,12 @@
 
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 0
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     return-void
 .end method
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     const v3, 0x7f050003
 
@@ -781,7 +755,6 @@
 
 .method public onCreateDialog(I)Landroid/app/Dialog;
     .locals 9
-    .param p1    # I
 
     const/4 v8, 0x0
 
@@ -958,7 +931,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 1
-    .param p1    # Landroid/view/Menu;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreateOptionsMenu(Landroid/view/Menu;)Z
 
@@ -969,7 +941,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 

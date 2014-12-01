@@ -176,19 +176,6 @@
 
 .method private constructor <init>(IIILjava/lang/String;IILjava/lang/String;ZIILandroid/view/KeyCharacterMap;ZZ)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
-    .param p6    # I
-    .param p7    # Ljava/lang/String;
-    .param p8    # Z
-    .param p9    # I
-    .param p10    # I
-    .param p11    # Landroid/view/KeyCharacterMap;
-    .param p12    # Z
-    .param p13    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -229,7 +216,6 @@
 
 .method private constructor <init>(Landroid/os/Parcel;)V
     .locals 8
-    .param p1    # Landroid/os/Parcel;
 
     const/4 v2, 0x1
 
@@ -396,8 +382,6 @@
 
 .method synthetic constructor <init>(Landroid/os/Parcel;Landroid/view/InputDevice$1;)V
     .locals 0
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # Landroid/view/InputDevice$1;
 
     invoke-direct {p0, p1}, Landroid/view/InputDevice;-><init>(Landroid/os/Parcel;)V
 
@@ -406,13 +390,6 @@
 
 .method private addMotionRange(IIFFFFF)V
     .locals 10
-    .param p1    # I
-    .param p2    # I
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # F
-    .param p7    # F
 
     iget-object v9, p0, Landroid/view/InputDevice;->mMotionRanges:Ljava/util/ArrayList;
 
@@ -443,9 +420,6 @@
 
 .method private appendSourceDescriptionIfApplicable(Ljava/lang/StringBuilder;ILjava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/StringBuilder;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     iget v0, p0, Landroid/view/InputDevice;->mSources:I
 
@@ -465,7 +439,6 @@
 
 .method public static getDevice(I)Landroid/view/InputDevice;
     .locals 1
-    .param p0    # I
 
     invoke-static {}, Landroid/hardware/input/InputManager;->getInstance()Landroid/hardware/input/InputManager;
 
@@ -552,7 +525,6 @@
 
 .method public getMotionRange(I)Landroid/view/InputDevice$MotionRange;
     .locals 4
-    .param p1    # I
 
     iget-object v3, p0, Landroid/view/InputDevice;->mMotionRanges:Ljava/util/ArrayList;
 
@@ -596,8 +568,6 @@
 
 .method public getMotionRange(II)Landroid/view/InputDevice$MotionRange;
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     iget-object v3, p0, Landroid/view/InputDevice;->mMotionRanges:Ljava/util/ArrayList;
 
@@ -760,7 +730,6 @@
 
 .method public varargs hasKeys([I)[Z
     .locals 2
-    .param p1    # [I
 
     invoke-static {}, Landroid/hardware/input/InputManager;->getInstance()Landroid/hardware/input/InputManager;
 
@@ -1193,8 +1162,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 6
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     const/4 v4, 0x1
 

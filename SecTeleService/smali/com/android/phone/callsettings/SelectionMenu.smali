@@ -53,7 +53,7 @@
 
     iget-object v0, p0, Lcom/android/phone/callsettings/SelectionMenu;->mButton:Landroid/widget/Button;
 
-    invoke-virtual {v0, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v0, p0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     return-void
 .end method
@@ -86,7 +86,7 @@
 
     iget-object v0, p0, Lcom/android/phone/callsettings/SelectionMenu;->mButton:Landroid/widget/Button;
 
-    invoke-virtual {v0, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {v0, p1}, Landroid/widget/Button;->setText(Ljava/lang/CharSequence;)V
 
     return-void
 .end method

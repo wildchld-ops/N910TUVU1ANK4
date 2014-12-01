@@ -194,7 +194,6 @@
 
 .method public static getSmileyResource(I)I
     .locals 1
-    .param p0    # I
 
     sget-object v0, Lcom/android/mms/util/SmileyParser$Smileys;->sIconIds:[I
 

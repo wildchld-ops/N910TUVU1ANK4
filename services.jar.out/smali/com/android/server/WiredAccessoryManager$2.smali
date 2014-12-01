@@ -21,9 +21,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/WiredAccessoryManager;Landroid/os/Looper;Landroid/os/Handler$Callback;Z)V
     .locals 0
-    .param p2    # Landroid/os/Looper;
-    .param p3    # Landroid/os/Handler$Callback;
-    .param p4    # Z
 
     iput-object p1, p0, Lcom/android/server/WiredAccessoryManager$2;->this$0:Lcom/android/server/WiredAccessoryManager;
 
@@ -36,7 +33,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 4
-    .param p1    # Landroid/os/Message;
 
     iget v0, p1, Landroid/os/Message;->what:I
 

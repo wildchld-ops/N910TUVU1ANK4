@@ -65,7 +65,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -134,8 +133,6 @@
 
 .method private getBoolean(Ljava/lang/String;Z)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const/4 v2, 0x0
 
@@ -174,7 +171,6 @@
 
 .method private static getDreamComponentName(Landroid/content/pm/ResolveInfo;)Landroid/content/ComponentName;
     .locals 3
-    .param p0    # Landroid/content/pm/ResolveInfo;
 
     if-eqz p0, :cond_0
 
@@ -206,8 +202,6 @@
 
 .method private static getSettingsComponentName(Landroid/content/pm/PackageManager;Landroid/content/pm/ResolveInfo;)Landroid/content/ComponentName;
     .locals 13
-    .param p0    # Landroid/content/pm/PackageManager;
-    .param p1    # Landroid/content/pm/ResolveInfo;
 
     const/4 v9, 0x0
 
@@ -468,16 +462,12 @@
 
 .method private static varargs logd(Ljava/lang/String;[Ljava/lang/Object;)V
     .locals 0
-    .param p0    # Ljava/lang/String;
-    .param p1    # [Ljava/lang/Object;
 
     return-void
 .end method
 
 .method private setBoolean(Ljava/lang/String;Z)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     iget-object v0, p0, Lcom/android/settings/DreamBackend;->mContext:Landroid/content/Context;
 
@@ -791,7 +781,6 @@
 
 .method public launchSettings(Lcom/android/settings/DreamBackend$DreamInfo;)V
     .locals 3
-    .param p1    # Lcom/android/settings/DreamBackend$DreamInfo;
 
     const-string v0, "launchSettings(%s)"
 
@@ -835,7 +824,6 @@
 
 .method public setActivatedOnDock(Z)V
     .locals 4
-    .param p1    # Z
 
     const-string v0, "setActivatedOnDock(%s)"
 
@@ -862,7 +850,6 @@
 
 .method public setActivatedOnSleep(Z)V
     .locals 4
-    .param p1    # Z
 
     const-string v0, "setActivatedOnSleep(%s)"
 
@@ -889,7 +876,6 @@
 
 .method public setActiveDream(Landroid/content/ComponentName;)V
     .locals 5
-    .param p1    # Landroid/content/ComponentName;
 
     const/4 v3, 0x1
 
@@ -963,7 +949,6 @@
 
 .method public setEnabled(Z)V
     .locals 4
-    .param p1    # Z
 
     const-string v0, "setEnabled(%s)"
 

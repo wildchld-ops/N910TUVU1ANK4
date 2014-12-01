@@ -32,8 +32,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;Landroid/content/Context;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -44,9 +42,6 @@
 
 .method constructor <init>(Ljava/lang/String;Landroid/content/Context;Z)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/Context;
-    .param p3    # Z
 
     const/4 v2, 0x1
 
@@ -121,7 +116,6 @@
 
 .method private validate(Lorg/w3c/dom/Document;)Z
     .locals 5
-    .param p1    # Lorg/w3c/dom/Document;
 
     const/4 v1, 0x0
 
@@ -474,8 +468,6 @@
 
 .method public getBoolean(Ljava/lang/String;Z)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     move v1, p2
 
@@ -521,8 +513,6 @@
 
 .method public getInt(Ljava/lang/String;I)I
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     move v1, p2
 
@@ -570,8 +560,6 @@
 
 .method public getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     move-object v1, p2
 
@@ -613,7 +601,6 @@
 
 .method public getStringSet(Ljava/lang/String;Ljava/util/Set;)Ljava/util/Set;
     .locals 3
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -669,7 +656,6 @@
 
 .method public openUserData(Z)V
     .locals 6
-    .param p1    # Z
 
     const-string v3, "MultiUserPreferences"
 
@@ -898,8 +884,6 @@
 
 .method public putBoolean(Ljava/lang/String;Z)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     iget-boolean v0, p0, Lcom/android/systemui/recent/multiwindowUtils/MultiUserPreferences;->isSupportMum:Z
 
@@ -941,8 +925,6 @@
 
 .method public putInt(Ljava/lang/String;I)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     iget-boolean v0, p0, Lcom/android/systemui/recent/multiwindowUtils/MultiUserPreferences;->isSupportMum:Z
 
@@ -978,8 +960,6 @@
 
 .method public putString(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-boolean v0, p0, Lcom/android/systemui/recent/multiwindowUtils/MultiUserPreferences;->isSupportMum:Z
 
@@ -1011,7 +991,6 @@
 
 .method public putStringSet(Ljava/lang/String;Ljava/util/Set;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1053,8 +1032,6 @@
 
 .method public readElement(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const-string v4, "MultiUserPreferences"
 
@@ -1125,8 +1102,6 @@
 
 .method public readElementSet(Ljava/lang/String;Ljava/lang/String;)Ljava/util/Set;
     .locals 11
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1249,7 +1224,6 @@
 
 .method public removeUserData(I)V
     .locals 4
-    .param p1    # I
 
     const-string v1, "MultiUserPreferences"
 
@@ -1331,9 +1305,6 @@
 
 .method public writeElement(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const-string v6, "MultiUserPreferences"
 
@@ -1418,8 +1389,6 @@
 
 .method public writeElementSet(Ljava/lang/String;Ljava/lang/String;Ljava/util/Set;)V
     .locals 11
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

@@ -56,8 +56,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Lcom/touchtype/personalizer/PersonalizerActivity;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/touchtype/personalizer/PersonalizerActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

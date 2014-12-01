@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Landroid/media/ImageReader;Landroid/os/Looper;)V
     .locals 2
-    .param p2    # Landroid/os/Looper;
 
     iput-object p1, p0, Landroid/media/ImageReader$ListenerHandler;->this$0:Landroid/media/ImageReader;
 
@@ -38,7 +37,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 3
-    .param p1    # Landroid/os/Message;
 
     iget-object v1, p0, Landroid/media/ImageReader$ListenerHandler;->this$0:Landroid/media/ImageReader;
 

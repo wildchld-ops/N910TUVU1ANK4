@@ -59,7 +59,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/settingssearch/SettingsSearchIntentReceiver;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/settings/settingssearch/SettingsSearchIntentReceiver;
 
     iget-object v0, p0, Lcom/android/settings/settingssearch/SettingsSearchIntentReceiver;->mContext:Landroid/content/Context;
 
@@ -76,7 +75,6 @@
 
 .method static synthetic access$102(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/settings/settingssearch/SettingsSearchIntentReceiver;->mDoingInitTitleDB:Z
 
@@ -85,7 +83,6 @@
 
 .method static synthetic access$202(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/settings/settingssearch/SettingsSearchIntentReceiver;->TitleinfoThread:Z
 
@@ -94,7 +91,6 @@
 
 .method static synthetic access$302(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/settings/settingssearch/SettingsSearchIntentReceiver;->SearchinfoThread:Z
 
@@ -111,7 +107,6 @@
 
 .method static synthetic access$402(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/settings/settingssearch/SettingsSearchIntentReceiver;->isChangeEasyMode:Z
 
@@ -177,8 +172,6 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 12
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
@@ -577,7 +570,6 @@
 
 .method public restoredb(Z)V
     .locals 3
-    .param p1    # Z
 
     new-instance v0, Landroid/content/Intent;
 

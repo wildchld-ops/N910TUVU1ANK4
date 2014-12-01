@@ -10,14 +10,6 @@
 # direct methods
 .method constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/io/File;Ljava/io/File;Ljava/lang/String;III)V
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/io/File;
-    .param p4    # Ljava/io/File;
-    .param p5    # Ljava/lang/String;
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
 
     move-object v0, p0
 

@@ -40,9 +40,6 @@
 
 .method public static final d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     sget v0, Lcom/android/settings/nearby/DLog;->debugLevel:I
 
@@ -92,9 +89,6 @@
 
 .method public static final e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     sget v0, Lcom/android/settings/nearby/DLog;->debugLevel:I
 
@@ -144,10 +138,6 @@
 
 .method public static final e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Exception;)V
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/Exception;
 
     sget v0, Lcom/android/settings/nearby/DLog;->debugLevel:I
 
@@ -197,9 +187,6 @@
 
 .method public static final i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     sget v0, Lcom/android/settings/nearby/DLog;->debugLevel:I
 
@@ -249,7 +236,6 @@
 
 .method public static final setLogLevel(I)V
     .locals 0
-    .param p0    # I
 
     sput p0, Lcom/android/settings/nearby/DLog;->debugLevel:I
 
@@ -258,9 +244,6 @@
 
 .method public static final v(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     sget v0, Lcom/android/settings/nearby/DLog;->debugLevel:I
 
@@ -349,9 +332,6 @@
 
 .method public static final w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     sget v0, Lcom/android/settings/nearby/DLog;->debugLevel:I
 
@@ -401,10 +381,6 @@
 
 .method public static final w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Error;)V
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/Error;
 
     sget v0, Lcom/android/settings/nearby/DLog;->debugLevel:I
 
@@ -454,10 +430,6 @@
 
 .method public static final w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Exception;)V
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/Exception;
 
     sget v0, Lcom/android/settings/nearby/DLog;->debugLevel:I
 

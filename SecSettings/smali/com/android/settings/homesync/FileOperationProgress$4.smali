@@ -21,10 +21,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/settings/homesync/FileOperationProgress;Landroid/app/Activity;Lcom/android/settings/homesync/FileOperationProgress;Ljava/util/ArrayList;Lcom/android/settings/homesync/FileOperationPaste$PasteType;Lcom/android/settings/homesync/FileOperationPaste$RequestType;)V
     .locals 6
-    .param p2    # Landroid/app/Activity;
-    .param p3    # Lcom/android/settings/homesync/FileOperationProgress;
-    .param p5    # Lcom/android/settings/homesync/FileOperationPaste$PasteType;
-    .param p6    # Lcom/android/settings/homesync/FileOperationPaste$RequestType;
 
     iput-object p1, p0, Lcom/android/settings/homesync/FileOperationProgress$4;->this$0:Lcom/android/settings/homesync/FileOperationProgress;
 

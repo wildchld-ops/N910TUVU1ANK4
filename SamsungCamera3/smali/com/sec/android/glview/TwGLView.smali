@@ -354,9 +354,6 @@
 # direct methods
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;FF)V
     .locals 7
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # F
-    .param p3    # F
 
     const/16 v2, 0x10
 
@@ -757,10 +754,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;FFF)V
     .locals 7
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
 
     const/16 v2, 0x10
 
@@ -1161,11 +1154,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;FFFF)V
     .locals 7
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
 
     const/16 v2, 0x10
 
@@ -1562,12 +1550,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;FFFFF)V
     .locals 7
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # F
 
     const/16 v2, 0x10
 
@@ -1960,7 +1942,6 @@
 
 .method static synthetic access$000(Lcom/sec/android/glview/TwGLView;)F
     .locals 1
-    .param p0    # Lcom/sec/android/glview/TwGLView;
 
     iget v0, p0, Lcom/sec/android/glview/TwGLView;->mPreviousDragX:F
 
@@ -1969,7 +1950,6 @@
 
 .method static synthetic access$100(Lcom/sec/android/glview/TwGLView;)F
     .locals 1
-    .param p0    # Lcom/sec/android/glview/TwGLView;
 
     iget v0, p0, Lcom/sec/android/glview/TwGLView;->mPreviousDragY:F
 
@@ -1978,7 +1958,6 @@
 
 .method static synthetic access$200(Lcom/sec/android/glview/TwGLView;)Z
     .locals 1
-    .param p0    # Lcom/sec/android/glview/TwGLView;
 
     iget-boolean v0, p0, Lcom/sec/android/glview/TwGLView;->mDragVibration:Z
 
@@ -1987,7 +1966,6 @@
 
 .method static synthetic access$300(Lcom/sec/android/glview/TwGLView;)Z
     .locals 1
-    .param p0    # Lcom/sec/android/glview/TwGLView;
 
     iget-boolean v0, p0, Lcom/sec/android/glview/TwGLView;->mLongClickable:Z
 
@@ -1996,7 +1974,6 @@
 
 .method static synthetic access$400(Lcom/sec/android/glview/TwGLView;)Z
     .locals 1
-    .param p0    # Lcom/sec/android/glview/TwGLView;
 
     iget-boolean v0, p0, Lcom/sec/android/glview/TwGLView;->mLongClickVibration:Z
 
@@ -2005,7 +1982,6 @@
 
 .method static synthetic access$500(Lcom/sec/android/glview/TwGLView;)Z
     .locals 1
-    .param p0    # Lcom/sec/android/glview/TwGLView;
 
     iget-boolean v0, p0, Lcom/sec/android/glview/TwGLView;->mRepeatClickWhenLongClicked:Z
 
@@ -2014,7 +1990,6 @@
 
 .method static synthetic access$600(Lcom/sec/android/glview/TwGLView;)Ljava/lang/Runnable;
     .locals 1
-    .param p0    # Lcom/sec/android/glview/TwGLView;
 
     iget-object v0, p0, Lcom/sec/android/glview/TwGLView;->repeatClick:Ljava/lang/Runnable;
 
@@ -2023,7 +1998,6 @@
 
 .method static synthetic access$700(Lcom/sec/android/glview/TwGLView;)I
     .locals 1
-    .param p0    # Lcom/sec/android/glview/TwGLView;
 
     iget v0, p0, Lcom/sec/android/glview/TwGLView;->mRepeatClickInterval:I
 
@@ -2032,7 +2006,6 @@
 
 .method static synthetic access$800(Lcom/sec/android/glview/TwGLView;)Landroid/view/animation/Animation;
     .locals 1
-    .param p0    # Lcom/sec/android/glview/TwGLView;
 
     iget-object v0, p0, Lcom/sec/android/glview/TwGLView;->mAnimation:Landroid/view/animation/Animation;
 
@@ -2084,10 +2057,6 @@
 
 .method private transformScreenCoordinates(IIII)V
     .locals 9
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/16 v8, 0xc
 
@@ -2338,15 +2307,12 @@
 # virtual methods
 .method public addView(ILcom/sec/android/glview/TwGLView;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Lcom/sec/android/glview/TwGLView;
 
     return-void
 .end method
 
 .method public addView(Lcom/sec/android/glview/TwGLView;)V
     .locals 0
-    .param p1    # Lcom/sec/android/glview/TwGLView;
 
     return-void
 .end method
@@ -2651,8 +2617,6 @@
 
 .method public contains(FF)Z
     .locals 3
-    .param p1    # F
-    .param p2    # F
 
     const/4 v0, 0x0
 
@@ -2708,8 +2672,6 @@
 
 .method public final declared-synchronized draw([FLandroid/graphics/Rect;)V
     .locals 8
-    .param p1    # [F
-    .param p2    # Landroid/graphics/Rect;
 
     const/4 v4, 0x4
 
@@ -3178,7 +3140,6 @@
 
 .method public dumpViewHierarchy(I)V
     .locals 5
-    .param p1    # I
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -3471,8 +3432,6 @@
 
 .method public findNextFocusFromView(Lcom/sec/android/glview/TwGLView;I)Lcom/sec/android/glview/TwGLView;
     .locals 8
-    .param p1    # Lcom/sec/android/glview/TwGLView;
-    .param p2    # I
 
     invoke-virtual {p0}, Lcom/sec/android/glview/TwGLView;->isFocusable()Z
 
@@ -3589,8 +3548,6 @@
 
 .method public findViewByCoordinate(FF)Lcom/sec/android/glview/TwGLView;
     .locals 2
-    .param p1    # F
-    .param p2    # F
 
     const/4 v0, 0x0
 
@@ -3627,7 +3584,6 @@
 
 .method public findViewById(I)Lcom/sec/android/glview/TwGLView;
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Lcom/sec/android/glview/TwGLView;->mViewId:I
 
@@ -3644,7 +3600,6 @@
 
 .method public findViewByTag(I)Lcom/sec/android/glview/TwGLView;
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Lcom/sec/android/glview/TwGLView;->mViewTag:I
 
@@ -5494,7 +5449,6 @@
 
 .method public final getLeftTop(I)[F
     .locals 7
-    .param p1    # I
 
     const/4 v6, 0x1
 
@@ -6446,8 +6400,6 @@
 
 .method public keyDownEvent(ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     iget-object v0, p0, Lcom/sec/android/glview/TwGLView;->mOnKeyListener:Lcom/sec/android/glview/TwGLView$OnKeyListener;
 
@@ -6476,8 +6428,6 @@
 
 .method public keyUpEvent(ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     iget-object v0, p0, Lcom/sec/android/glview/TwGLView;->mOnKeyListener:Lcom/sec/android/glview/TwGLView$OnKeyListener;
 
@@ -6667,9 +6617,6 @@
 
 .method public final mapPoint([FFF)V
     .locals 7
-    .param p1    # [F
-    .param p2    # F
-    .param p3    # F
 
     const/4 v3, 0x3
 
@@ -6724,9 +6671,6 @@
 
 .method protected final mapPointReverse([FFF)V
     .locals 11
-    .param p1    # [F
-    .param p2    # F
-    .param p3    # F
 
     invoke-virtual {p0}, Lcom/sec/android/glview/TwGLView;->getOrientation()I
 
@@ -6938,7 +6882,6 @@
 
 .method public final declared-synchronized moveBaseDepthLayout(F)V
     .locals 1
-    .param p1    # F
 
     monitor-enter p0
 
@@ -6975,8 +6918,6 @@
 
 .method public final declared-synchronized moveBaseDepthLayout(FZ)V
     .locals 1
-    .param p1    # F
-    .param p2    # Z
 
     monitor-enter p0
 
@@ -7016,7 +6957,6 @@
 
 .method public final declared-synchronized moveBaseDepthLayoutAbsolute(F)V
     .locals 2
-    .param p1    # F
 
     monitor-enter p0
 
@@ -7057,8 +6997,6 @@
 
 .method public final declared-synchronized moveBaseDepthLayoutAbsolute(FZ)V
     .locals 2
-    .param p1    # F
-    .param p2    # Z
 
     monitor-enter p0
 
@@ -7102,8 +7040,6 @@
 
 .method public final declared-synchronized moveBaseLayout(FF)V
     .locals 4
-    .param p1    # F
-    .param p2    # F
 
     monitor-enter p0
 
@@ -7184,8 +7120,6 @@
 
 .method public final declared-synchronized moveBaseLayoutAbsolute(FF)V
     .locals 6
-    .param p1    # F
-    .param p2    # F
 
     monitor-enter p0
 
@@ -7274,9 +7208,6 @@
 
 .method public final declared-synchronized moveBaseLayoutAbsolute(FFZ)V
     .locals 6
-    .param p1    # F
-    .param p2    # F
-    .param p3    # Z
 
     monitor-enter p0
 
@@ -7368,7 +7299,6 @@
 
 .method public declared-synchronized moveDepthLayout(F)V
     .locals 1
-    .param p1    # F
 
     monitor-enter p0
 
@@ -7399,7 +7329,6 @@
 
 .method public declared-synchronized moveDepthLayoutAbsolute(F)V
     .locals 1
-    .param p1    # F
 
     monitor-enter p0
 
@@ -7430,8 +7359,6 @@
 
 .method public declared-synchronized moveLayout(FF)V
     .locals 2
-    .param p1    # F
-    .param p2    # F
 
     monitor-enter p0
 
@@ -7488,8 +7415,6 @@
 
 .method public final declared-synchronized moveLayoutAbsolute(FF)V
     .locals 4
-    .param p1    # F
-    .param p2    # F
 
     monitor-enter p0
 
@@ -7558,9 +7483,6 @@
 
 .method public final declared-synchronized moveLayoutAbsolute(FFZ)V
     .locals 4
-    .param p1    # F
-    .param p2    # F
-    .param p3    # Z
 
     monitor-enter p0
 
@@ -7655,7 +7577,6 @@
 
 .method public onFocusStatusChanged(I)V
     .locals 9
-    .param p1    # I
 
     const/4 v8, 0x0
 
@@ -7783,7 +7704,6 @@
 
 .method public onHoverStatusChanged(I)V
     .locals 10
-    .param p1    # I
 
     const/4 v9, 0x1
 
@@ -7918,8 +7838,6 @@
 
 .method public onKeyDownEvent(ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x0
 
@@ -7928,8 +7846,6 @@
 
 .method public onKeyUpEvent(ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x0
 
@@ -7951,7 +7867,6 @@
 
 .method protected onOrientationChanged(I)V
     .locals 10
-    .param p1    # I
 
     const/4 v4, 0x4
 
@@ -8181,7 +8096,6 @@
 
 .method protected onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v0, 0x0
 
@@ -8540,7 +8454,6 @@
 
 .method public removeView(Lcom/sec/android/glview/TwGLView;)V
     .locals 0
-    .param p1    # Lcom/sec/android/glview/TwGLView;
 
     return-void
 .end method
@@ -8559,7 +8472,6 @@
 
 .method public final requestFocus(I)Z
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -8572,8 +8484,6 @@
 
 .method public requestFocus(ILcom/sec/android/glview/TwGLView;)Z
     .locals 7
-    .param p1    # I
-    .param p2    # Lcom/sec/android/glview/TwGLView;
 
     const/4 v6, 0x0
 
@@ -9354,7 +9264,6 @@
 
 .method public final declared-synchronized rotateDegree(I)V
     .locals 7
-    .param p1    # I
 
     const/high16 v4, 0x40000000
 
@@ -9478,8 +9387,6 @@
 
 .method public final declared-synchronized scale(FF)V
     .locals 6
-    .param p1    # F
-    .param p2    # F
 
     const/high16 v5, 0x40000000
 
@@ -9616,7 +9523,6 @@
 
 .method public declared-synchronized setAlpha(F)V
     .locals 1
-    .param p1    # F
 
     monitor-enter p0
 
@@ -9650,7 +9556,6 @@
 
 .method public final declared-synchronized setAnimation(Landroid/view/animation/Animation;)V
     .locals 1
-    .param p1    # Landroid/view/animation/Animation;
 
     monitor-enter p0
 
@@ -9675,8 +9580,6 @@
 
 .method public final declared-synchronized setAnimation(Landroid/view/animation/Animation;Z)V
     .locals 1
-    .param p1    # Landroid/view/animation/Animation;
-    .param p2    # Z
 
     monitor-enter p0
 
@@ -9701,7 +9604,6 @@
 
 .method public setAsyncLoad(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/glview/TwGLView;->mAsyncLoad:Z
 
@@ -9710,7 +9612,6 @@
 
 .method public declared-synchronized setBackground(I)Z
     .locals 7
-    .param p1    # I
 
     monitor-enter p0
 
@@ -9787,7 +9688,6 @@
 
 .method public declared-synchronized setBackgroundAlpha(I)Z
     .locals 2
-    .param p1    # I
 
     monitor-enter p0
 
@@ -9829,7 +9729,6 @@
 
 .method public declared-synchronized setBypassTouch(Z)V
     .locals 1
-    .param p1    # Z
 
     monitor-enter p0
 
@@ -9852,7 +9751,6 @@
 
 .method public declared-synchronized setCenterPivot(Z)V
     .locals 1
-    .param p1    # Z
 
     monitor-enter p0
 
@@ -9875,7 +9773,6 @@
 
 .method public setClickable(Z)V
     .locals 2
-    .param p1    # Z
 
     iget v0, p0, Lcom/sec/android/glview/TwGLView;->mViewFlags:I
 
@@ -9900,7 +9797,6 @@
 
 .method public declared-synchronized setClipRect(Landroid/graphics/Rect;)V
     .locals 2
-    .param p1    # Landroid/graphics/Rect;
 
     monitor-enter p0
 
@@ -9948,7 +9844,6 @@
 
 .method public declared-synchronized setClipping(Z)V
     .locals 1
-    .param p1    # Z
 
     monitor-enter p0
 
@@ -9978,7 +9873,6 @@
 
 .method public setContentDescription(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/sec/android/glview/TwGLView;->mContentDescription:Ljava/lang/String;
 
@@ -9987,7 +9881,6 @@
 
 .method public final declared-synchronized setContinuousDrawMode(Z)V
     .locals 1
-    .param p1    # Z
 
     monitor-enter p0
 
@@ -10010,7 +9903,6 @@
 
 .method public final declared-synchronized setDefaultOrientation(I)V
     .locals 2
-    .param p1    # I
 
     monitor-enter p0
 
@@ -10045,7 +9937,6 @@
 
 .method public declared-synchronized setDim(Z)V
     .locals 1
-    .param p1    # Z
 
     monitor-enter p0
 
@@ -10083,7 +9974,6 @@
 
 .method public setDragSensitivity(I)V
     .locals 1
-    .param p1    # I
 
     if-eqz p1, :cond_0
 
@@ -10109,7 +9999,6 @@
 
 .method public setDragVibration(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/glview/TwGLView;->mDragVibration:Z
 
@@ -10118,7 +10007,6 @@
 
 .method public setDraggable(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/glview/TwGLView;->mDraggable:Z
 
@@ -10127,7 +10015,6 @@
 
 .method public setExtraDescription(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/glview/TwGLView;->mHasExtraDescription:Z
 
@@ -10136,7 +10023,6 @@
 
 .method public setFocusable(Z)V
     .locals 2
-    .param p1    # Z
 
     iget v0, p0, Lcom/sec/android/glview/TwGLView;->mViewFlags:I
 
@@ -10161,7 +10047,6 @@
 
 .method public declared-synchronized setHeight(F)V
     .locals 3
-    .param p1    # F
 
     monitor-enter p0
 
@@ -10266,7 +10151,6 @@
 
 .method public setHoverPopupGravity(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/glview/TwGLView;->mHoverPopupGravity:I
 
@@ -10275,8 +10159,6 @@
 
 .method public setHoverPopupOffset(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     iput p1, p0, Lcom/sec/android/glview/TwGLView;->mHoverPopupOffsetX:I
 
@@ -10287,7 +10169,6 @@
 
 .method public setInternalFocus(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/glview/TwGLView;->mInternalFocus:Z
 
@@ -10296,9 +10177,6 @@
 
 .method public final setLeftTop(IFF)V
     .locals 1
-    .param p1    # I
-    .param p2    # F
-    .param p3    # F
 
     const/4 v0, 0x3
 
@@ -10336,10 +10214,6 @@
 
 .method public final setLeftTop(IFFZ)V
     .locals 2
-    .param p1    # I
-    .param p2    # F
-    .param p3    # F
-    .param p4    # Z
 
     const/4 v1, 0x1
 
@@ -10386,8 +10260,6 @@
 
 .method public final setLeftTop(I[F)V
     .locals 2
-    .param p1    # I
-    .param p2    # [F
 
     const/4 v0, 0x3
 
@@ -10428,7 +10300,6 @@
 
 .method public setLongClickVibration(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/glview/TwGLView;->mLongClickVibration:Z
 
@@ -10437,7 +10308,6 @@
 
 .method public setLongClickable(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/glview/TwGLView;->mLongClickable:Z
 
@@ -10446,7 +10316,6 @@
 
 .method public setNextFocusDownId(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/glview/TwGLView;->mNextFocusDownId:I
 
@@ -10455,7 +10324,6 @@
 
 .method public setNextFocusDownView(Lcom/sec/android/glview/TwGLView;)Z
     .locals 1
-    .param p1    # Lcom/sec/android/glview/TwGLView;
 
     if-eqz p1, :cond_0
 
@@ -10478,7 +10346,6 @@
 
 .method public setNextFocusLeftId(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/glview/TwGLView;->mNextFocusLeftId:I
 
@@ -10487,7 +10354,6 @@
 
 .method public setNextFocusLeftView(Lcom/sec/android/glview/TwGLView;)Z
     .locals 1
-    .param p1    # Lcom/sec/android/glview/TwGLView;
 
     if-eqz p1, :cond_0
 
@@ -10510,7 +10376,6 @@
 
 .method public setNextFocusRightId(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/glview/TwGLView;->mNextFocusRightId:I
 
@@ -10519,7 +10384,6 @@
 
 .method public setNextFocusRightView(Lcom/sec/android/glview/TwGLView;)Z
     .locals 1
-    .param p1    # Lcom/sec/android/glview/TwGLView;
 
     if-eqz p1, :cond_0
 
@@ -10542,7 +10406,6 @@
 
 .method public setNextFocusUpId(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/glview/TwGLView;->mNextFocusUpId:I
 
@@ -10551,7 +10414,6 @@
 
 .method public setNextFocusUpView(Lcom/sec/android/glview/TwGLView;)Z
     .locals 1
-    .param p1    # Lcom/sec/android/glview/TwGLView;
 
     if-eqz p1, :cond_0
 
@@ -10574,7 +10436,6 @@
 
 .method public declared-synchronized setNinePatchBackground(I)Z
     .locals 7
-    .param p1    # I
 
     monitor-enter p0
 
@@ -10659,8 +10520,6 @@
 
 .method public declared-synchronized setNinePatchBackground(II)Z
     .locals 8
-    .param p1    # I
-    .param p2    # I
 
     monitor-enter p0
 
@@ -10747,7 +10606,6 @@
 
 .method public final setObjectTag(I)V
     .locals 1
-    .param p1    # I
 
     invoke-static {p1}, Lcom/sec/android/app/camera/command/CmdIdStringMapper;->getString(I)Ljava/lang/String;
 
@@ -10760,7 +10618,6 @@
 
 .method public final setObjectTag(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/sec/android/glview/TwGLView;->mObjectTag:Ljava/lang/String;
 
@@ -10769,7 +10626,6 @@
 
 .method public setOnAnimationEventListener(Lcom/sec/android/glview/TwGLView$OnAnimationEventListener;)V
     .locals 0
-    .param p1    # Lcom/sec/android/glview/TwGLView$OnAnimationEventListener;
 
     iput-object p1, p0, Lcom/sec/android/glview/TwGLView;->mOnAnimationEventListener:Lcom/sec/android/glview/TwGLView$OnAnimationEventListener;
 
@@ -10778,7 +10634,6 @@
 
 .method public setOnClickListener(Lcom/sec/android/glview/TwGLView$OnClickListener;)V
     .locals 0
-    .param p1    # Lcom/sec/android/glview/TwGLView$OnClickListener;
 
     iput-object p1, p0, Lcom/sec/android/glview/TwGLView;->mOnClickListener:Lcom/sec/android/glview/TwGLView$OnClickListener;
 
@@ -10787,7 +10642,6 @@
 
 .method public setOnDragListener(Lcom/sec/android/glview/TwGLView$OnDragListener;)V
     .locals 0
-    .param p1    # Lcom/sec/android/glview/TwGLView$OnDragListener;
 
     iput-object p1, p0, Lcom/sec/android/glview/TwGLView;->mOnDragListener:Lcom/sec/android/glview/TwGLView$OnDragListener;
 
@@ -10796,7 +10650,6 @@
 
 .method public setOnFocusListener(Lcom/sec/android/glview/TwGLView$OnFocusListener;)V
     .locals 0
-    .param p1    # Lcom/sec/android/glview/TwGLView$OnFocusListener;
 
     iput-object p1, p0, Lcom/sec/android/glview/TwGLView;->mOnFocusListener:Lcom/sec/android/glview/TwGLView$OnFocusListener;
 
@@ -10805,7 +10658,6 @@
 
 .method public setOnKeyListener(Lcom/sec/android/glview/TwGLView$OnKeyListener;)V
     .locals 0
-    .param p1    # Lcom/sec/android/glview/TwGLView$OnKeyListener;
 
     iput-object p1, p0, Lcom/sec/android/glview/TwGLView;->mOnKeyListener:Lcom/sec/android/glview/TwGLView$OnKeyListener;
 
@@ -10814,7 +10666,6 @@
 
 .method public setOnLongClickListener(Lcom/sec/android/glview/TwGLView$OnLongClickListener;)V
     .locals 1
-    .param p1    # Lcom/sec/android/glview/TwGLView$OnLongClickListener;
 
     const/4 v0, 0x1
 
@@ -10827,7 +10678,6 @@
 
 .method public setOnOrientationChangedListener(Lcom/sec/android/glview/TwGLView$OnOrientationChangedListener;)V
     .locals 0
-    .param p1    # Lcom/sec/android/glview/TwGLView$OnOrientationChangedListener;
 
     iput-object p1, p0, Lcom/sec/android/glview/TwGLView;->mOnOrientationChangedListener:Lcom/sec/android/glview/TwGLView$OnOrientationChangedListener;
 
@@ -10836,7 +10686,6 @@
 
 .method public setOnTouchListener(Lcom/sec/android/glview/TwGLView$OnTouchListener;)V
     .locals 0
-    .param p1    # Lcom/sec/android/glview/TwGLView$OnTouchListener;
 
     iput-object p1, p0, Lcom/sec/android/glview/TwGLView;->mOnTouchListener:Lcom/sec/android/glview/TwGLView$OnTouchListener;
 
@@ -10845,7 +10694,6 @@
 
 .method public final declared-synchronized setOrientation(I)V
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -10926,7 +10774,6 @@
 
 .method public declared-synchronized setPaddings(Landroid/graphics/Rect;)V
     .locals 4
-    .param p1    # Landroid/graphics/Rect;
 
     monitor-enter p0
 
@@ -11047,7 +10894,6 @@
 
 .method public final setParentHAlign(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/glview/TwGLView;->mParentHAlign:I
 
@@ -11056,7 +10902,6 @@
 
 .method public final setParentVAlign(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/glview/TwGLView;->mParentVAlign:I
 
@@ -11065,7 +10910,6 @@
 
 .method public setRepeatClickInterval(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/glview/TwGLView;->mRepeatClickInterval:I
 
@@ -11074,7 +10918,6 @@
 
 .method public setRepeatClickWhenLongClicked(Z)V
     .locals 0
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -11088,7 +10931,6 @@
 
 .method public declared-synchronized setRotatable(Z)V
     .locals 1
-    .param p1    # Z
 
     monitor-enter p0
 
@@ -11111,7 +10953,6 @@
 
 .method public declared-synchronized setRotateAnimation(Z)V
     .locals 1
-    .param p1    # Z
 
     monitor-enter p0
 
@@ -11134,7 +10975,6 @@
 
 .method public declared-synchronized setRotateAnimationDuration(I)V
     .locals 1
-    .param p1    # I
 
     monitor-enter p0
 
@@ -11157,7 +10997,6 @@
 
 .method public declared-synchronized setRotateAnimationInterpolator(Landroid/view/animation/Interpolator;)V
     .locals 1
-    .param p1    # Landroid/view/animation/Interpolator;
 
     monitor-enter p0
 
@@ -11183,8 +11022,6 @@
 
 .method public declared-synchronized setSize(FF)V
     .locals 4
-    .param p1    # F
-    .param p2    # F
 
     monitor-enter p0
 
@@ -11328,7 +11165,6 @@
 
 .method public setSubTitle(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/sec/android/glview/TwGLView;->mSubTitle:Ljava/lang/String;
 
@@ -11337,7 +11173,6 @@
 
 .method public final setTag(I)V
     .locals 1
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/glview/TwGLView;->mViewTag:I
 
@@ -11350,7 +11185,6 @@
 
 .method public setTitle(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -11396,7 +11230,6 @@
 
 .method public final declared-synchronized setVisibility(I)V
     .locals 2
-    .param p1    # I
 
     monitor-enter p0
 
@@ -11447,8 +11280,6 @@
 
 .method public final declared-synchronized setVisibility(IZ)V
     .locals 2
-    .param p1    # I
-    .param p2    # Z
 
     monitor-enter p0
 
@@ -11497,7 +11328,6 @@
 
 .method public declared-synchronized setWidth(F)V
     .locals 3
-    .param p1    # F
 
     monitor-enter p0
 
@@ -11674,7 +11504,6 @@
 
 .method public touchEvent(Landroid/view/MotionEvent;)Z
     .locals 9
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v8, 0x3
 
@@ -12147,8 +11976,6 @@
 
 .method public final declared-synchronized translate(FF)V
     .locals 7
-    .param p1    # F
-    .param p2    # F
 
     const/4 v3, 0x0
 
@@ -12278,9 +12105,6 @@
 
 .method public final declared-synchronized translate(FFF)V
     .locals 6
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
 
     const/4 v5, 0x0
 
@@ -12417,10 +12241,6 @@
 
 .method public final declared-synchronized translate(FFFZ)V
     .locals 6
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # Z
 
     const/high16 v5, 0x3f000000
 
@@ -12564,9 +12384,6 @@
 
 .method public final declared-synchronized translate(FFZ)V
     .locals 7
-    .param p1    # F
-    .param p2    # F
-    .param p3    # Z
 
     const/4 v3, 0x0
 
@@ -12699,8 +12516,6 @@
 
 .method public final declared-synchronized translateAbsolute(FF)V
     .locals 7
-    .param p1    # F
-    .param p2    # F
 
     const/high16 v6, 0x3f000000
 
@@ -12819,9 +12634,6 @@
 
 .method public final declared-synchronized translateAbsolute(FFF)V
     .locals 7
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
 
     const/high16 v6, 0x3f000000
 
@@ -12981,10 +12793,6 @@
 
 .method public final declared-synchronized translateAbsolute(FFFZ)V
     .locals 7
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # Z
 
     const/high16 v6, 0x3f000000
 
@@ -13147,9 +12955,6 @@
 
 .method public final declared-synchronized translateAbsolute(FFZ)V
     .locals 7
-    .param p1    # F
-    .param p2    # F
-    .param p3    # Z
 
     const/high16 v6, 0x3f000000
 
@@ -13294,7 +13099,6 @@
 
 .method public updateLayout(Z)V
     .locals 2
-    .param p1    # Z
 
     const/4 v1, 0x1
 

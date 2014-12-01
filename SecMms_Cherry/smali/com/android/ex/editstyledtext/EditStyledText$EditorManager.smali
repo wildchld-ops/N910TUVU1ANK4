@@ -59,8 +59,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/ex/editstyledtext/EditStyledText;Lcom/android/ex/editstyledtext/EditStyledText;Lcom/android/ex/editstyledtext/EditStyledText$StyledTextDialog;)V
     .locals 2
-    .param p2    # Lcom/android/ex/editstyledtext/EditStyledText;
-    .param p3    # Lcom/android/ex/editstyledtext/EditStyledText$StyledTextDialog;
 
     const v1, 0xffffff
 
@@ -117,7 +115,6 @@
 
 .method static synthetic access$200(Lcom/android/ex/editstyledtext/EditStyledText$EditorManager;)Z
     .locals 1
-    .param p0    # Lcom/android/ex/editstyledtext/EditStyledText$EditorManager;
 
     iget-boolean v0, p0, Lcom/android/ex/editstyledtext/EditStyledText$EditorManager;->mTextIsFinishedFlag:Z
 
@@ -126,8 +123,6 @@
 
 .method static synthetic access$202(Lcom/android/ex/editstyledtext/EditStyledText$EditorManager;Z)Z
     .locals 0
-    .param p0    # Lcom/android/ex/editstyledtext/EditStyledText$EditorManager;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/ex/editstyledtext/EditStyledText$EditorManager;->mTextIsFinishedFlag:Z
 
@@ -136,8 +131,6 @@
 
 .method static synthetic access$2100(Lcom/android/ex/editstyledtext/EditStyledText$EditorManager;I)V
     .locals 0
-    .param p0    # Lcom/android/ex/editstyledtext/EditStyledText$EditorManager;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/ex/editstyledtext/EditStyledText$EditorManager;->setSelectState(I)V
 
@@ -146,8 +139,6 @@
 
 .method static synthetic access$2300(Lcom/android/ex/editstyledtext/EditStyledText$EditorManager;I)V
     .locals 0
-    .param p0    # Lcom/android/ex/editstyledtext/EditStyledText$EditorManager;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/ex/editstyledtext/EditStyledText$EditorManager;->setEditMode(I)V
 
@@ -156,7 +147,6 @@
 
 .method static synthetic access$2400(Lcom/android/ex/editstyledtext/EditStyledText$EditorManager;)V
     .locals 0
-    .param p0    # Lcom/android/ex/editstyledtext/EditStyledText$EditorManager;
 
     invoke-direct {p0}, Lcom/android/ex/editstyledtext/EditStyledText$EditorManager;->resetEdit()V
 
@@ -165,7 +155,6 @@
 
 .method static synthetic access$2500(Lcom/android/ex/editstyledtext/EditStyledText$EditorManager;)V
     .locals 0
-    .param p0    # Lcom/android/ex/editstyledtext/EditStyledText$EditorManager;
 
     invoke-direct {p0}, Lcom/android/ex/editstyledtext/EditStyledText$EditorManager;->copyToClipBoard()V
 
@@ -174,7 +163,6 @@
 
 .method static synthetic access$2600(Lcom/android/ex/editstyledtext/EditStyledText$EditorManager;)V
     .locals 0
-    .param p0    # Lcom/android/ex/editstyledtext/EditStyledText$EditorManager;
 
     invoke-direct {p0}, Lcom/android/ex/editstyledtext/EditStyledText$EditorManager;->cutToClipBoard()V
 
@@ -183,7 +171,6 @@
 
 .method static synthetic access$2700(Lcom/android/ex/editstyledtext/EditStyledText$EditorManager;)Z
     .locals 1
-    .param p0    # Lcom/android/ex/editstyledtext/EditStyledText$EditorManager;
 
     invoke-direct {p0}, Lcom/android/ex/editstyledtext/EditStyledText$EditorManager;->isTextSelected()Z
 
@@ -194,7 +181,6 @@
 
 .method static synthetic access$2800(Lcom/android/ex/editstyledtext/EditStyledText$EditorManager;)V
     .locals 0
-    .param p0    # Lcom/android/ex/editstyledtext/EditStyledText$EditorManager;
 
     invoke-direct {p0}, Lcom/android/ex/editstyledtext/EditStyledText$EditorManager;->setSelectStartPos()V
 
@@ -203,7 +189,6 @@
 
 .method static synthetic access$2900(Lcom/android/ex/editstyledtext/EditStyledText$EditorManager;)V
     .locals 0
-    .param p0    # Lcom/android/ex/editstyledtext/EditStyledText$EditorManager;
 
     invoke-direct {p0}, Lcom/android/ex/editstyledtext/EditStyledText$EditorManager;->setSelectEndPos()V
 
@@ -212,7 +197,6 @@
 
 .method static synthetic access$3000(Lcom/android/ex/editstyledtext/EditStyledText$EditorManager;)V
     .locals 0
-    .param p0    # Lcom/android/ex/editstyledtext/EditStyledText$EditorManager;
 
     invoke-direct {p0}, Lcom/android/ex/editstyledtext/EditStyledText$EditorManager;->pasteFromClipboard()V
 
@@ -221,7 +205,6 @@
 
 .method static synthetic access$3100(Lcom/android/ex/editstyledtext/EditStyledText$EditorManager;)V
     .locals 0
-    .param p0    # Lcom/android/ex/editstyledtext/EditStyledText$EditorManager;
 
     invoke-direct {p0}, Lcom/android/ex/editstyledtext/EditStyledText$EditorManager;->selectAll()V
 
@@ -230,7 +213,6 @@
 
 .method static synthetic access$3200(Lcom/android/ex/editstyledtext/EditStyledText$EditorManager;)V
     .locals 0
-    .param p0    # Lcom/android/ex/editstyledtext/EditStyledText$EditorManager;
 
     invoke-direct {p0}, Lcom/android/ex/editstyledtext/EditStyledText$EditorManager;->insertHorizontalLine()V
 
@@ -239,7 +221,6 @@
 
 .method static synthetic access$3300(Lcom/android/ex/editstyledtext/EditStyledText$EditorManager;)V
     .locals 0
-    .param p0    # Lcom/android/ex/editstyledtext/EditStyledText$EditorManager;
 
     invoke-direct {p0}, Lcom/android/ex/editstyledtext/EditStyledText$EditorManager;->clearStyles()V
 
@@ -248,7 +229,6 @@
 
 .method static synthetic access$3400(Lcom/android/ex/editstyledtext/EditStyledText$EditorManager;)V
     .locals 0
-    .param p0    # Lcom/android/ex/editstyledtext/EditStyledText$EditorManager;
 
     invoke-direct {p0}, Lcom/android/ex/editstyledtext/EditStyledText$EditorManager;->fixSelectionAndDoNextAction()V
 
@@ -257,8 +237,6 @@
 
 .method static synthetic access$3600(Lcom/android/ex/editstyledtext/EditStyledText$EditorManager;Landroid/net/Uri;)V
     .locals 0
-    .param p0    # Lcom/android/ex/editstyledtext/EditStyledText$EditorManager;
-    .param p1    # Landroid/net/Uri;
 
     invoke-direct {p0, p1}, Lcom/android/ex/editstyledtext/EditStyledText$EditorManager;->insertImageFromUri(Landroid/net/Uri;)V
 
@@ -267,8 +245,6 @@
 
 .method static synthetic access$3700(Lcom/android/ex/editstyledtext/EditStyledText$EditorManager;I)V
     .locals 0
-    .param p0    # Lcom/android/ex/editstyledtext/EditStyledText$EditorManager;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/ex/editstyledtext/EditStyledText$EditorManager;->insertImageFromResId(I)V
 
@@ -277,7 +253,6 @@
 
 .method static synthetic access$4200(Lcom/android/ex/editstyledtext/EditStyledText$EditorManager;)V
     .locals 0
-    .param p0    # Lcom/android/ex/editstyledtext/EditStyledText$EditorManager;
 
     invoke-direct {p0}, Lcom/android/ex/editstyledtext/EditStyledText$EditorManager;->startEdit()V
 
@@ -286,7 +261,6 @@
 
 .method static synthetic access$4300(Lcom/android/ex/editstyledtext/EditStyledText$EditorManager;)V
     .locals 0
-    .param p0    # Lcom/android/ex/editstyledtext/EditStyledText$EditorManager;
 
     invoke-direct {p0}, Lcom/android/ex/editstyledtext/EditStyledText$EditorManager;->endEdit()V
 
@@ -295,9 +269,6 @@
 
 .method static synthetic access$4500(Lcom/android/ex/editstyledtext/EditStyledText$EditorManager;II)V
     .locals 0
-    .param p0    # Lcom/android/ex/editstyledtext/EditStyledText$EditorManager;
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/ex/editstyledtext/EditStyledText$EditorManager;->setInternalSelection(II)V
 
@@ -306,7 +277,6 @@
 
 .method private addMarquee(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "EditStyledText.EditorManager"
 
@@ -367,7 +337,6 @@
 
 .method private changeAlign(Landroid/text/Layout$Alignment;)V
     .locals 1
-    .param p1    # Landroid/text/Layout$Alignment;
 
     new-instance v0, Landroid/text/style/AlignmentSpan$Standard;
 
@@ -380,7 +349,6 @@
 
 .method private changeColorSelectedText(I)V
     .locals 3
-    .param p1    # I
 
     iget v0, p0, Lcom/android/ex/editstyledtext/EditStyledText$EditorManager;->mCurStart:I
 
@@ -413,7 +381,6 @@
 
 .method private changeSizeSelectedText(I)V
     .locals 3
-    .param p1    # I
 
     iget v0, p0, Lcom/android/ex/editstyledtext/EditStyledText$EditorManager;->mCurStart:I
 
@@ -483,7 +450,6 @@
 
 .method private clearStyles(Ljava/lang/CharSequence;)V
     .locals 11
-    .param p1    # Ljava/lang/CharSequence;
 
     const-string v9, "EditStyledText"
 
@@ -686,7 +652,6 @@
 
 .method private dumpSpannableString(Ljava/lang/CharSequence;)V
     .locals 10
-    .param p1    # Ljava/lang/CharSequence;
 
     instance-of v7, p1, Landroid/text/Spannable;
 
@@ -869,8 +834,6 @@
 
 .method private findLineEnd(Landroid/text/Editable;I)I
     .locals 4
-    .param p1    # Landroid/text/Editable;
-    .param p2    # I
 
     move v0, p2
 
@@ -948,8 +911,6 @@
 
 .method private findLineStart(Landroid/text/Editable;I)I
     .locals 4
-    .param p1    # Landroid/text/Editable;
-    .param p2    # I
 
     move v0, p2
 
@@ -1254,7 +1215,6 @@
 
 .method private insertImageFromResId(I)V
     .locals 3
-    .param p1    # I
 
     new-instance v0, Lcom/android/ex/editstyledtext/EditStyledText$EditStyledTextSpans$RescalableImageSpan;
 
@@ -1286,7 +1246,6 @@
 
 .method private insertImageFromUri(Landroid/net/Uri;)V
     .locals 3
-    .param p1    # Landroid/net/Uri;
 
     new-instance v0, Lcom/android/ex/editstyledtext/EditStyledText$EditStyledTextSpans$RescalableImageSpan;
 
@@ -1318,8 +1277,6 @@
 
 .method private insertImageSpan(Landroid/text/style/DynamicDrawableSpan;I)V
     .locals 3
-    .param p1    # Landroid/text/style/DynamicDrawableSpan;
-    .param p2    # I
 
     const-string v0, "EditStyledText.EditorManager"
 
@@ -1388,7 +1345,6 @@
 
 .method private isClipBoardChanged(Ljava/lang/CharSequence;)Z
     .locals 7
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v3, 0x1
 
@@ -1801,7 +1757,6 @@
 
 .method private removeImageChar(Landroid/text/SpannableStringBuilder;)Landroid/text/SpannableStringBuilder;
     .locals 11
-    .param p1    # Landroid/text/SpannableStringBuilder;
 
     new-instance v1, Landroid/text/SpannableStringBuilder;
 
@@ -1954,7 +1909,6 @@
 
 .method private setEditMode(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/ex/editstyledtext/EditStyledText$EditorManager;->mMode:I
 
@@ -1963,8 +1917,6 @@
 
 .method private setInternalSelection(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     iput p1, p0, Lcom/android/ex/editstyledtext/EditStyledText$EditorManager;->mCurStart:I
 
@@ -1975,7 +1927,6 @@
 
 .method private setLineStyledTextSpan(Ljava/lang/Object;)V
     .locals 7
-    .param p1    # Ljava/lang/Object;
 
     iget v5, p0, Lcom/android/ex/editstyledtext/EditStyledText$EditorManager;->mCurStart:I
 
@@ -2114,7 +2065,6 @@
 
 .method private setSelectState(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/ex/editstyledtext/EditStyledText$EditorManager;->mState:I
 
@@ -2305,9 +2255,6 @@
 
 .method private setStyledTextSpan(Ljava/lang/Object;II)V
     .locals 5
-    .param p1    # Ljava/lang/Object;
-    .param p2    # I
-    .param p3    # I
 
     const-string v2, "EditStyledText.EditorManager"
 
@@ -2476,8 +2423,6 @@
 # virtual methods
 .method public addAction(ILcom/android/ex/editstyledtext/EditStyledText$EditModeActions$EditModeActionBase;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Lcom/android/ex/editstyledtext/EditStyledText$EditModeActions$EditModeActionBase;
 
     iget-object v0, p0, Lcom/android/ex/editstyledtext/EditStyledText$EditorManager;->mActions:Lcom/android/ex/editstyledtext/EditStyledText$EditModeActions;
 
@@ -2771,7 +2716,6 @@
 
 .method public onAction(I)V
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -2782,8 +2726,6 @@
 
 .method public onAction(IZ)V
     .locals 3
-    .param p1    # I
-    .param p2    # Z
 
     iget-object v0, p0, Lcom/android/ex/editstyledtext/EditStyledText$EditorManager;->mActions:Lcom/android/ex/editstyledtext/EditStyledText$EditModeActions;
 
@@ -2892,7 +2834,6 @@
 
 .method public onInsertImage(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/ex/editstyledtext/EditStyledText$EditorManager;->mActions:Lcom/android/ex/editstyledtext/EditStyledText$EditModeActions;
 
@@ -2918,7 +2859,6 @@
 
 .method public onInsertImage(Landroid/net/Uri;)V
     .locals 3
-    .param p1    # Landroid/net/Uri;
 
     iget-object v0, p0, Lcom/android/ex/editstyledtext/EditStyledText$EditorManager;->mActions:Lcom/android/ex/editstyledtext/EditStyledText$EditModeActions;
 
@@ -3102,7 +3042,6 @@
 
 .method public onStartSelect(Z)V
     .locals 3
-    .param p1    # Z
 
     const-string v0, "EditStyledText.EditorManager"
 
@@ -3149,7 +3088,6 @@
 
 .method public onStartSelectAll(Z)V
     .locals 3
-    .param p1    # Z
 
     const-string v0, "EditStyledText.EditorManager"
 
@@ -3188,7 +3126,6 @@
 
 .method public setAlignment(Landroid/text/Layout$Alignment;)V
     .locals 2
-    .param p1    # Landroid/text/Layout$Alignment;
 
     iget v0, p0, Lcom/android/ex/editstyledtext/EditStyledText$EditorManager;->mState:I
 
@@ -3213,7 +3150,6 @@
 
 .method public setBackgroundColor(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/ex/editstyledtext/EditStyledText$EditorManager;->mBackgroundColor:I
 
@@ -3222,7 +3158,6 @@
 
 .method public setEndPos(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "EditStyledText.EditorManager"
 
@@ -3255,8 +3190,6 @@
 
 .method public setItemColor(IZ)V
     .locals 2
-    .param p1    # I
-    .param p2    # Z
 
     const-string v0, "EditStyledText.EditorManager"
 
@@ -3306,8 +3239,6 @@
 
 .method public setItemSize(IZ)V
     .locals 2
-    .param p1    # I
-    .param p2    # Z
 
     const-string v0, "EditStyledText.EditorManager"
 
@@ -3355,7 +3286,6 @@
 
 .method public setMarquee(I)V
     .locals 2
-    .param p1    # I
 
     iget v0, p0, Lcom/android/ex/editstyledtext/EditStyledText$EditorManager;->mState:I
 
@@ -3428,8 +3358,6 @@
 
 .method public setTextComposingMask(II)V
     .locals 8
-    .param p1    # I
-    .param p2    # I
 
     const-string v5, "EditStyledText"
 
@@ -3643,8 +3571,6 @@
 
 .method public showSoftKey(II)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     const-string v1, "EditStyledText.EditorManager"
 
@@ -3789,10 +3715,6 @@
 
 .method public updateSpanNextToCursor(Landroid/text/Editable;III)V
     .locals 16
-    .param p1    # Landroid/text/Editable;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const-string v13, "EditStyledText.EditorManager"
 
@@ -4046,10 +3968,6 @@
 
 .method public updateSpanPreviousFromCursor(Landroid/text/Editable;III)V
     .locals 16
-    .param p1    # Landroid/text/Editable;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const-string v13, "EditStyledText.EditorManager"
 

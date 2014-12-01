@@ -146,7 +146,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/accounts/ChooseAccountFragment;)Landroid/app/PendingIntent;
     .locals 1
-    .param p0    # Lcom/android/settings/accounts/ChooseAccountFragment;
 
     iget-object v0, p0, Lcom/android/settings/accounts/ChooseAccountFragment;->mPendingIntent:Landroid/app/PendingIntent;
 
@@ -155,8 +154,6 @@
 
 .method static synthetic access$002(Lcom/android/settings/accounts/ChooseAccountFragment;Landroid/app/PendingIntent;)Landroid/app/PendingIntent;
     .locals 0
-    .param p0    # Lcom/android/settings/accounts/ChooseAccountFragment;
-    .param p1    # Landroid/app/PendingIntent;
 
     iput-object p1, p0, Lcom/android/settings/accounts/ChooseAccountFragment;->mPendingIntent:Landroid/app/PendingIntent;
 
@@ -165,7 +162,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/accounts/ChooseAccountFragment;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/accounts/ChooseAccountFragment;
 
     iget-boolean v0, p0, Lcom/android/settings/accounts/ChooseAccountFragment;->mIsMultipaneFragment:Z
 
@@ -174,7 +170,6 @@
 
 .method private addAccount(Ljava/lang/String;)V
     .locals 10
-    .param p1    # Ljava/lang/String;
 
     const/4 v5, 0x0
 
@@ -328,7 +323,6 @@
 
 .method private finishWithAccountType(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/settings/accounts/ChooseAccountFragment;->addAccount(Ljava/lang/String;)V
 
@@ -1067,7 +1061,6 @@
 # virtual methods
 .method public getAuthoritiesForAccountType(Ljava/lang/String;)Ljava/util/ArrayList;
     .locals 8
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1195,7 +1188,6 @@
 
 .method protected getDrawableForType(Ljava/lang/String;)Landroid/graphics/drawable/Drawable;
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -1302,7 +1294,6 @@
 
 .method protected getLabelForType(Ljava/lang/String;)Ljava/lang/CharSequence;
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -1508,7 +1499,6 @@
 
 .method protected isSignedIn(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -1540,7 +1530,6 @@
 
 .method public onAccountsUpdated([Landroid/accounts/Account;)V
     .locals 2
-    .param p1    # [Landroid/accounts/Account;
 
     invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 
@@ -1584,7 +1573,6 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 8
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onActivityCreated(Landroid/os/Bundle;)V
 
@@ -1655,9 +1643,6 @@
 
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     packed-switch p1, :pswitch_data_0
 
@@ -1703,7 +1688,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -1731,9 +1715,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 7
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const/4 v6, 0x0
 
@@ -1831,8 +1812,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 4
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     instance-of v1, p2, Lcom/android/settings/accounts/ProviderPreference;
 

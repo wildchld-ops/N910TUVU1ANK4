@@ -34,7 +34,6 @@
 # direct methods
 .method public constructor <init>(Lcom/sec/android/inputmethod/databases/SIPResolver;Ljava/lang/String;)V
     .locals 0
-    .param p2    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/sec/android/inputmethod/databases/SIPResolver$FrequencyUpdateTask;->this$0:Lcom/sec/android/inputmethod/databases/SIPResolver;
 
@@ -49,7 +48,6 @@
 # virtual methods
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # [Ljava/lang/Object;
 
     invoke-virtual {p0, p1}, Lcom/sec/android/inputmethod/databases/SIPResolver$FrequencyUpdateTask;->doInBackground([Ljava/lang/Object;)Ljava/lang/Void;
 
@@ -60,7 +58,6 @@
 
 .method protected varargs doInBackground([Ljava/lang/Object;)Ljava/lang/Void;
     .locals 2
-    .param p1    # [Ljava/lang/Object;
 
     iget-object v0, p0, Lcom/sec/android/inputmethod/databases/SIPResolver$FrequencyUpdateTask;->this$0:Lcom/sec/android/inputmethod/databases/SIPResolver;
 

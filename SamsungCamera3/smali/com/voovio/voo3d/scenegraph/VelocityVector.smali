@@ -92,7 +92,6 @@
 
 .method public constructor <init>(I)V
     .locals 5
-    .param p1    # I
 
     const/high16 v4, 0x3f800000
 
@@ -180,7 +179,6 @@
 # virtual methods
 .method public AllowMovements(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Lcom/voovio/voo3d/scenegraph/VelocityVector;->m_nAllowedMovements:I
 
@@ -205,7 +203,6 @@
 
 .method public Clone(F)Lcom/voovio/voo3d/scenegraph/VelocityVector;
     .locals 8
-    .param p1    # F
 
     const/4 v7, 0x3
 
@@ -384,7 +381,6 @@
 
 .method public ForbidMovements(I)V
     .locals 2
-    .param p1    # I
 
     iget v0, p0, Lcom/voovio/voo3d/scenegraph/VelocityVector;->m_nAllowedMovements:I
 
@@ -399,7 +395,6 @@
 
 .method public GetCameraFinalPosition(Lcom/voovio/voo3d/scenegraph/Camera3D;)Lcom/voovio/voo3d/data/Vector3;
     .locals 1
-    .param p1    # Lcom/voovio/voo3d/scenegraph/Camera3D;
 
     const/high16 v0, 0x3f800000
 
@@ -412,8 +407,6 @@
 
 .method public GetCameraFinalPosition(Lcom/voovio/voo3d/scenegraph/Camera3D;F)Lcom/voovio/voo3d/data/Vector3;
     .locals 2
-    .param p1    # Lcom/voovio/voo3d/scenegraph/Camera3D;
-    .param p2    # F
 
     iget-object v1, p1, Lcom/voovio/voo3d/scenegraph/Camera3D;->m_ptPos:Lcom/voovio/voo3d/data/Vector3;
 
@@ -428,9 +421,6 @@
 
 .method public GetCameraFinalPosition(Lcom/voovio/voo3d/scenegraph/Camera3D;FLcom/voovio/voo3d/data/Vector3;)V
     .locals 6
-    .param p1    # Lcom/voovio/voo3d/scenegraph/Camera3D;
-    .param p2    # F
-    .param p3    # Lcom/voovio/voo3d/data/Vector3;
 
     iget-object v3, p1, Lcom/voovio/voo3d/scenegraph/Camera3D;->m_ptPos:Lcom/voovio/voo3d/data/Vector3;
 
@@ -616,8 +606,6 @@
 
 .method public GetCameraFinalPosition(Lcom/voovio/voo3d/scenegraph/Camera3D;Lcom/voovio/voo3d/data/Vector3;)V
     .locals 1
-    .param p1    # Lcom/voovio/voo3d/scenegraph/Camera3D;
-    .param p2    # Lcom/voovio/voo3d/data/Vector3;
 
     const/high16 v0, 0x3f800000
 
@@ -628,8 +616,6 @@
 
 .method public GetMultiplierValue(II)F
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/voovio/voo3d/scenegraph/VelocityVector;->m_aMultiplierValues:[[F
 
@@ -1100,8 +1086,6 @@
 
 .method public SetMultiplierMode(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/voovio/voo3d/scenegraph/VelocityVector;->m_aMultiplier:[I
 
@@ -1112,9 +1096,6 @@
 
 .method public SetMultiplierValue(IIF)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # F
 
     iget-object v0, p0, Lcom/voovio/voo3d/scenegraph/VelocityVector;->m_aMultiplierValues:[[F
 
@@ -1127,7 +1108,6 @@
 
 .method public SetMultipliers(F)V
     .locals 0
-    .param p1    # F
 
     iput p1, p0, Lcom/voovio/voo3d/scenegraph/VelocityVector;->m_fMultiplierLinear:F
 
@@ -1140,7 +1120,6 @@
 
 .method public UpdateCamera(Lcom/voovio/voo3d/scenegraph/Camera3D;)V
     .locals 2
-    .param p1    # Lcom/voovio/voo3d/scenegraph/Camera3D;
 
     const/high16 v0, 0x3f800000
 
@@ -1153,9 +1132,6 @@
 
 .method public UpdateCamera(Lcom/voovio/voo3d/scenegraph/Camera3D;FI)V
     .locals 4
-    .param p1    # Lcom/voovio/voo3d/scenegraph/Camera3D;
-    .param p2    # F
-    .param p3    # I
 
     const/4 v2, 0x0
 

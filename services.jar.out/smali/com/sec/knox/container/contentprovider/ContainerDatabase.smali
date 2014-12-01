@@ -18,9 +18,6 @@
 
 .method private getAppPackagesSignedWithSig(Landroid/content/Context;Ljava/lang/String;I)Ljava/util/List;
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -152,9 +149,6 @@
 
 .method private removeSigningSignature(Landroid/content/Context;Ljava/lang/String;I)Z
     .locals 9
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     const/4 v5, 0x1
 
@@ -246,10 +240,6 @@
 
 .method private returnCursorAsPerColumnName(Landroid/content/Context;[Ljava/lang/String;Landroid/net/Uri;Ljava/lang/String;)Landroid/database/Cursor;
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # Landroid/net/Uri;
-    .param p4    # Ljava/lang/String;
 
     const/4 v1, 0x1
 
@@ -351,10 +341,6 @@
 # virtual methods
 .method public delete(Landroid/content/Context;Ljava/lang/String;ILandroid/net/Uri;)Z
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Landroid/net/Uri;
 
     const-string v3, "ContainerDatabase"
 
@@ -464,7 +450,6 @@
 
 .method public getAllContainerStatus(Landroid/content/Context;)Ljava/util/HashMap;
     .locals 8
-    .param p1    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -606,8 +591,6 @@
 
 .method public getAndroidId(Landroid/content/Context;I)Ljava/lang/String;
     .locals 9
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     const/4 v5, 0x0
 
@@ -731,8 +714,6 @@
 
 .method public getCertificateManagerSignatureCreationTime(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
     .locals 8
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -878,8 +859,6 @@
 
 .method public getCertificateManagerSignatureCreationTime(Landroid/content/Context;[Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # [Ljava/lang/String;
 
     if-nez p2, :cond_0
 
@@ -912,8 +891,6 @@
 
 .method public getCertificateManagerSignatureId(Landroid/content/Context;Ljava/lang/String;)I
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
 
     const/4 v4, -0x1
 
@@ -1069,8 +1046,6 @@
 
 .method public getCertificateManagerSignatureId(Landroid/content/Context;[Ljava/lang/String;)I
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # [Ljava/lang/String;
 
     if-nez p2, :cond_0
 
@@ -1103,8 +1078,6 @@
 
 .method public getContainerId(Landroid/content/Context;Ljava/lang/String;)I
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
 
     const/4 v4, -0x1
 
@@ -1248,8 +1221,6 @@
 
 .method public getContainerPackagesInfo(Landroid/content/Context;I)Ljava/util/HashMap;
     .locals 13
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1477,8 +1448,6 @@
 
 .method public getContainerParamFromDB(Landroid/content/Context;I)Lcom/sec/knox/container/EnterpriseContainerObjectParam;
     .locals 8
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     const/4 v6, 0x6
 
@@ -1665,8 +1634,6 @@
 
 .method public getContainerStatus(Landroid/content/Context;I)I
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     const/4 v4, 0x2
 
@@ -1756,8 +1723,6 @@
 
 .method public getFailedPasswordAttempts(Landroid/content/Context;I)I
     .locals 9
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     const/4 v5, 0x0
 
@@ -1898,8 +1863,6 @@
 
 .method public getOriginalSignatures(Landroid/content/Context;Ljava/lang/String;)[Ljava/lang/String;
     .locals 8
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
 
     const/4 v5, 0x0
 
@@ -2051,8 +2014,6 @@
 
 .method public getPackageNames(Landroid/content/Context;I)Ljava/util/List;
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2177,7 +2138,6 @@
 
 .method public getPasswordContainerdataFromDB(Landroid/content/Context;)Ljava/util/HashMap;
     .locals 25
-    .param p1    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2687,9 +2647,6 @@
 
 .method public insert(Landroid/content/Context;Landroid/content/ContentValues;Landroid/net/Uri;)Z
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/ContentValues;
-    .param p3    # Landroid/net/Uri;
 
     const-string v2, "ContainerDatabase"
 
@@ -2767,8 +2724,6 @@
 
 .method public removeContainer(Landroid/content/Context;I)Z
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     const/4 v3, 0x0
 
@@ -2893,9 +2848,6 @@
 
 .method public setAndroidId(Landroid/content/Context;ILjava/lang/String;)Z
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     const-string v1, "ContainerDatabase"
 
@@ -2931,9 +2883,6 @@
 
 .method public setCertificateManagerSignature(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 8
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -3092,9 +3041,6 @@
 
 .method public setCertificateManagerSignature(Landroid/content/Context;[Ljava/lang/String;Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     if-nez p2, :cond_0
 
@@ -3127,9 +3073,6 @@
 
 .method public setFailedPasswordAttempts(Landroid/content/Context;II)Z
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # I
 
     const-string v1, "ContainerDatabase"
 
@@ -3176,10 +3119,6 @@
 
 .method public updateValuesForContainer(Landroid/content/Context;Landroid/net/Uri;Landroid/content/ContentValues;I)Z
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/net/Uri;
-    .param p3    # Landroid/content/ContentValues;
-    .param p4    # I
 
     const/4 v1, 0x0
 

@@ -31,9 +31,6 @@
 # virtual methods
 .method public evaluate(FLjava/lang/Integer;Ljava/lang/Integer;)Ljava/lang/Integer;
     .locals 3
-    .param p1    # F
-    .param p2    # Ljava/lang/Integer;
-    .param p3    # Ljava/lang/Integer;
 
     invoke-virtual {p2}, Ljava/lang/Integer;->intValue()I
 
@@ -64,9 +61,6 @@
 
 .method public bridge synthetic evaluate(FLjava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # F
-    .param p2    # Ljava/lang/Object;
-    .param p3    # Ljava/lang/Object;
 
     check-cast p2, Ljava/lang/Integer;
 

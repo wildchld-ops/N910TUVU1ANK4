@@ -35,7 +35,6 @@
 # direct methods
 .method private constructor <init>(Lcom/android/server/LightsService;I)V
     .locals 2
-    .param p2    # I
 
     iput-object p1, p0, Lcom/android/server/LightsService$Light;->this$0:Lcom/android/server/LightsService;
 
@@ -84,9 +83,6 @@
 
 .method synthetic constructor <init>(Lcom/android/server/LightsService;ILcom/android/server/LightsService$1;)V
     .locals 0
-    .param p1    # Lcom/android/server/LightsService;
-    .param p2    # I
-    .param p3    # Lcom/android/server/LightsService$1;
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/LightsService$Light;-><init>(Lcom/android/server/LightsService;I)V
 
@@ -95,7 +91,6 @@
 
 .method static synthetic access$2500(Lcom/android/server/LightsService$Light;)V
     .locals 0
-    .param p0    # Lcom/android/server/LightsService$Light;
 
     invoke-direct {p0}, Lcom/android/server/LightsService$Light;->stopFlashing()V
 
@@ -104,12 +99,6 @@
 
 .method static synthetic access$3000(Lcom/android/server/LightsService$Light;IIIII)V
     .locals 0
-    .param p0    # Lcom/android/server/LightsService$Light;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-direct/range {p0 .. p5}, Lcom/android/server/LightsService$Light;->setLightLocked(IIIII)V
 
@@ -118,11 +107,6 @@
 
 .method private setLightLocked(IIIII)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     iget v0, p0, Lcom/android/server/LightsService$Light;->mColor:I
 
@@ -346,8 +330,6 @@
 
 .method public pulse(II)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     const-string v0, "LightsService"
 
@@ -504,7 +486,6 @@
 
 .method public setBrightness(I)V
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -515,8 +496,6 @@
 
 .method public setBrightness(II)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     monitor-enter p0
 
@@ -563,7 +542,6 @@
 
 .method public setColor(I)V
     .locals 6
-    .param p1    # I
 
     const-string v0, "LightsService"
 
@@ -645,10 +623,6 @@
 
 .method public setFlashing(IIII)V
     .locals 9
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const-string v1, "LightsService"
 

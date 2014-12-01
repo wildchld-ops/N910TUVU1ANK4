@@ -26,8 +26,6 @@
 # direct methods
 .method private constructor <init>(Lcom/android/settings/bluetooth/LocalBluetoothAdapter;Landroid/content/Context;)V
     .locals 4
-    .param p1    # Lcom/android/settings/bluetooth/LocalBluetoothAdapter;
-    .param p2    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -68,7 +66,6 @@
 
 .method public static declared-synchronized getInstance(Landroid/content/Context;)Lcom/android/settings/bluetooth/LocalBluetoothManager;
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     const-class v3, Lcom/android/settings/bluetooth/LocalBluetoothManager;
 
@@ -191,7 +188,6 @@
 
 .method public setDiscoverableEnabler(Lcom/android/settings/bluetooth/BluetoothDiscoverableEnabler;)V
     .locals 0
-    .param p1    # Lcom/android/settings/bluetooth/BluetoothDiscoverableEnabler;
 
     iput-object p1, p0, Lcom/android/settings/bluetooth/LocalBluetoothManager;->mDiscoverableEnabler:Lcom/android/settings/bluetooth/BluetoothDiscoverableEnabler;
 
@@ -200,7 +196,6 @@
 
 .method declared-synchronized setForegroundActivity(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     monitor-enter p0
 

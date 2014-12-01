@@ -50,7 +50,6 @@
 
 .method public constructor <init>(Lcom/android/launcher2/Launcher;)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/Launcher;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -71,8 +70,6 @@
 
 .method private checkHomeViewItemListByPageName(Lcom/android/launcher2/CellLayout;Ljava/util/List;Ljava/lang/String;)V
     .locals 8
-    .param p1    # Lcom/android/launcher2/CellLayout;
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -189,8 +186,6 @@
 # virtual methods
 .method public ShowEqualPageWithItem(Lcom/android/launcher2/BaseItem;Lcom/android/launcher2/Workspace$State;)V
     .locals 11
-    .param p1    # Lcom/android/launcher2/BaseItem;
-    .param p2    # Lcom/android/launcher2/Workspace$State;
 
     const/4 v10, 0x1
 
@@ -697,7 +692,6 @@
 
 .method public getHomeViewItemListByPackageName(Ljava/util/List;Ljava/lang/String;)V
     .locals 3
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -822,7 +816,6 @@
 
 .method public initSecretPage(Lcom/android/launcher2/HomeView;)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/HomeView;
 
     iput-object p1, p0, Lcom/android/launcher2/SecretPageManager;->mHomeView:Lcom/android/launcher2/HomeView;
 
@@ -971,7 +964,6 @@
 
 .method public setCompleteShowHidedPage(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/launcher2/SecretPageManager;->mCompleteShowHidedPage:Z
 
@@ -980,7 +972,6 @@
 
 .method public setPageSwitchBySecretMode(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/launcher2/SecretPageManager;->mPageSwitchBySecretMode:Z
 

@@ -254,7 +254,6 @@
 
 .method static synthetic access$302(I)I
     .locals 0
-    .param p0    # I
 
     sput p0, Lcom/android/internal/os/ZygoteInit;->thread1time:I
 
@@ -271,7 +270,6 @@
 
 .method static synthetic access$502(I)I
     .locals 0
-    .param p0    # I
 
     sput p0, Lcom/android/internal/os/ZygoteInit;->thread2time:I
 
@@ -598,7 +596,6 @@
 
 .method private static handleSystemServerProcess(Lcom/android/internal/os/ZygoteConnection$Arguments;)V
     .locals 5
-    .param p0    # Lcom/android/internal/os/ZygoteConnection$Arguments;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/android/internal/os/ZygoteInit$MethodAndArgsCaller;
@@ -657,9 +654,6 @@
 
 .method static invokeStaticMain(Ljava/lang/ClassLoader;Ljava/lang/String;[Ljava/lang/String;)V
     .locals 8
-    .param p0    # Ljava/lang/ClassLoader;
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/android/internal/os/ZygoteInit$MethodAndArgsCaller;
@@ -825,7 +819,6 @@
 
 .method public static main([Ljava/lang/String;)V
     .locals 6
-    .param p0    # [Ljava/lang/String;
 
     :try_start_0
     invoke-static {}, Landroid/os/Process;->myTid()I
@@ -1965,7 +1958,6 @@
 
 .method private static varargs posixCapabilitiesAsBits([I)J
     .locals 8
-    .param p0    # [I
 
     const-wide/16 v4, 0x0
 
@@ -2528,8 +2520,6 @@
 
 .method private static preloadColorStateLists(Ldalvik/system/VMRuntime;Landroid/content/res/TypedArray;)I
     .locals 6
-    .param p0    # Ldalvik/system/VMRuntime;
-    .param p1    # Landroid/content/res/TypedArray;
 
     invoke-virtual {p1}, Landroid/content/res/TypedArray;->length()I
 
@@ -2630,8 +2620,6 @@
 
 .method private static preloadDrawables(Ldalvik/system/VMRuntime;Landroid/content/res/TypedArray;)I
     .locals 6
-    .param p0    # Ldalvik/system/VMRuntime;
-    .param p1    # Landroid/content/res/TypedArray;
 
     invoke-virtual {p1}, Landroid/content/res/TypedArray;->length()I
 
@@ -3170,7 +3158,6 @@
 
 .method private static setEffectiveGroup(I)V
     .locals 4
-    .param p0    # I
 
     const/4 v1, 0x0
 
@@ -3208,7 +3195,6 @@
 
 .method private static setEffectiveUser(I)V
     .locals 4
-    .param p0    # I
 
     const/4 v1, 0x0
 

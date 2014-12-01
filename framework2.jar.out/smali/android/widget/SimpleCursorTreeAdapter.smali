@@ -30,16 +30,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/database/Cursor;II[Ljava/lang/String;[III[Ljava/lang/String;[I)V
     .locals 9
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/database/Cursor;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # [Ljava/lang/String;
-    .param p6    # [I
-    .param p7    # I
-    .param p8    # I
-    .param p9    # [Ljava/lang/String;
-    .param p10    # [I
 
     move-object v2, p0
 
@@ -68,15 +58,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/database/Cursor;II[Ljava/lang/String;[II[Ljava/lang/String;[I)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/database/Cursor;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # [Ljava/lang/String;
-    .param p6    # [I
-    .param p7    # I
-    .param p8    # [Ljava/lang/String;
-    .param p9    # [I
 
     move-object v0, p0
 
@@ -99,14 +80,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/database/Cursor;I[Ljava/lang/String;[II[Ljava/lang/String;[I)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/database/Cursor;
-    .param p3    # I
-    .param p4    # [Ljava/lang/String;
-    .param p5    # [I
-    .param p6    # I
-    .param p7    # [Ljava/lang/String;
-    .param p8    # [I
 
     invoke-direct {p0, p1, p2, p3, p6}, Landroid/widget/ResourceCursorTreeAdapter;-><init>(Landroid/content/Context;Landroid/database/Cursor;II)V
 
@@ -117,11 +90,6 @@
 
 .method private bindView(Landroid/view/View;Landroid/content/Context;Landroid/database/Cursor;[I[I)V
     .locals 7
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/database/Cursor;
-    .param p4    # [I
-    .param p5    # [I
 
     iget-object v0, p0, Landroid/widget/SimpleCursorTreeAdapter;->mViewBinder:Landroid/widget/SimpleCursorTreeAdapter$ViewBinder;
 
@@ -204,10 +172,6 @@
 
 .method private init([Ljava/lang/String;[I[Ljava/lang/String;[I)V
     .locals 0
-    .param p1    # [Ljava/lang/String;
-    .param p2    # [I
-    .param p3    # [Ljava/lang/String;
-    .param p4    # [I
 
     iput-object p1, p0, Landroid/widget/SimpleCursorTreeAdapter;->mGroupFromNames:[Ljava/lang/String;
 
@@ -222,9 +186,6 @@
 
 .method private initFromColumns(Landroid/database/Cursor;[Ljava/lang/String;[I)V
     .locals 2
-    .param p1    # Landroid/database/Cursor;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # [I
 
     array-length v1, p2
 
@@ -253,10 +214,6 @@
 # virtual methods
 .method protected bindChildView(Landroid/view/View;Landroid/content/Context;Landroid/database/Cursor;Z)V
     .locals 6
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/database/Cursor;
-    .param p4    # Z
 
     iget-object v0, p0, Landroid/widget/SimpleCursorTreeAdapter;->mChildFrom:[I
 
@@ -296,10 +253,6 @@
 
 .method protected bindGroupView(Landroid/view/View;Landroid/content/Context;Landroid/database/Cursor;Z)V
     .locals 6
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/database/Cursor;
-    .param p4    # Z
 
     iget-object v0, p0, Landroid/widget/SimpleCursorTreeAdapter;->mGroupFrom:[I
 
@@ -347,7 +300,6 @@
 
 .method public setViewBinder(Landroid/widget/SimpleCursorTreeAdapter$ViewBinder;)V
     .locals 0
-    .param p1    # Landroid/widget/SimpleCursorTreeAdapter$ViewBinder;
 
     iput-object p1, p0, Landroid/widget/SimpleCursorTreeAdapter;->mViewBinder:Landroid/widget/SimpleCursorTreeAdapter$ViewBinder;
 
@@ -356,8 +308,6 @@
 
 .method protected setViewImage(Landroid/widget/ImageView;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Landroid/widget/ImageView;
-    .param p2    # Ljava/lang/String;
 
     :try_start_0
     invoke-static {p2}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
@@ -385,8 +335,6 @@
 
 .method public setViewText(Landroid/widget/TextView;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 

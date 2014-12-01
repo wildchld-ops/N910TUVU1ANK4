@@ -51,7 +51,6 @@
 
 .method private static getImageEncodingQualityLevels(I)[I
     .locals 6
-    .param p0    # I
 
     invoke-static {p0}, Landroid/media/CameraProfile;->native_get_num_image_encoding_quality_levels(I)I
 
@@ -111,7 +110,6 @@
 
 .method public static getJpegEncodingQualityParameter(I)I
     .locals 4
-    .param p0    # I
 
     invoke-static {}, Landroid/hardware/Camera;->getNumberOfCameras()I
 
@@ -152,8 +150,6 @@
 
 .method public static getJpegEncodingQualityParameter(II)I
     .locals 4
-    .param p0    # I
-    .param p1    # I
 
     if-ltz p1, :cond_0
 

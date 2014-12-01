@@ -108,7 +108,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/BandMode;)Lcom/android/settings/BandMode$BandListItem;
     .locals 1
-    .param p0    # Lcom/android/settings/BandMode;
 
     iget-object v0, p0, Lcom/android/settings/BandMode;->mTargetBand:Lcom/android/settings/BandMode$BandListItem;
 
@@ -117,8 +116,6 @@
 
 .method static synthetic access$002(Lcom/android/settings/BandMode;Lcom/android/settings/BandMode$BandListItem;)Lcom/android/settings/BandMode$BandListItem;
     .locals 0
-    .param p0    # Lcom/android/settings/BandMode;
-    .param p1    # Lcom/android/settings/BandMode$BandListItem;
 
     iput-object p1, p0, Lcom/android/settings/BandMode;->mTargetBand:Lcom/android/settings/BandMode$BandListItem;
 
@@ -127,7 +124,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/BandMode;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/settings/BandMode;
 
     iget-object v0, p0, Lcom/android/settings/BandMode;->mHandler:Landroid/os/Handler;
 
@@ -136,7 +132,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/BandMode;)Lcom/android/internal/telephony/Phone;
     .locals 1
-    .param p0    # Lcom/android/settings/BandMode;
 
     iget-object v0, p0, Lcom/android/settings/BandMode;->mPhone:Lcom/android/internal/telephony/Phone;
 
@@ -153,8 +148,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/BandMode;Landroid/os/AsyncResult;)V
     .locals 0
-    .param p0    # Lcom/android/settings/BandMode;
-    .param p1    # Landroid/os/AsyncResult;
 
     invoke-direct {p0, p1}, Lcom/android/settings/BandMode;->bandListLoaded(Landroid/os/AsyncResult;)V
 
@@ -163,8 +156,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/BandMode;Ljava/lang/Throwable;)V
     .locals 0
-    .param p0    # Lcom/android/settings/BandMode;
-    .param p1    # Ljava/lang/Throwable;
 
     invoke-direct {p0, p1}, Lcom/android/settings/BandMode;->displayBandSelectionResult(Ljava/lang/Throwable;)V
 
@@ -173,7 +164,6 @@
 
 .method private bandListLoaded(Landroid/os/AsyncResult;)V
     .locals 6
-    .param p1    # Landroid/os/AsyncResult;
 
     iget-object v5, p0, Lcom/android/settings/BandMode;->mProgressPanel:Landroid/content/DialogInterface;
 
@@ -290,7 +280,6 @@
 
 .method private displayBandSelectionResult(Ljava/lang/Throwable;)V
     .locals 4
-    .param p1    # Ljava/lang/Throwable;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -449,7 +438,6 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 

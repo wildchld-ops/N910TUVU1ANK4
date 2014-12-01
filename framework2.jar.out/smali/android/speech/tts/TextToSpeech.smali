@@ -95,8 +95,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/speech/tts/TextToSpeech$OnInitListener;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/speech/tts/TextToSpeech$OnInitListener;
 
     const/4 v0, 0x0
 
@@ -107,9 +105,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/speech/tts/TextToSpeech$OnInitListener;Ljava/lang/String;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/speech/tts/TextToSpeech$OnInitListener;
-    .param p3    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -130,11 +125,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/speech/tts/TextToSpeech$OnInitListener;Ljava/lang/String;Ljava/lang/String;Z)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/speech/tts/TextToSpeech$OnInitListener;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Z
 
     const/4 v1, 0x0
 
@@ -207,7 +197,6 @@
 
 .method static synthetic access$100(Landroid/speech/tts/TextToSpeech;)Landroid/os/IBinder;
     .locals 1
-    .param p0    # Landroid/speech/tts/TextToSpeech;
 
     invoke-direct {p0}, Landroid/speech/tts/TextToSpeech;->getCallerIdentity()Landroid/os/IBinder;
 
@@ -218,8 +207,6 @@
 
 .method static synthetic access$1400(Landroid/speech/tts/TextToSpeech;I)V
     .locals 0
-    .param p0    # Landroid/speech/tts/TextToSpeech;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/speech/tts/TextToSpeech;->dispatchOnInit(I)V
 
@@ -228,8 +215,6 @@
 
 .method static synthetic access$1502(Landroid/speech/tts/TextToSpeech;Landroid/speech/tts/TextToSpeech$Connection;)Landroid/speech/tts/TextToSpeech$Connection;
     .locals 0
-    .param p0    # Landroid/speech/tts/TextToSpeech;
-    .param p1    # Landroid/speech/tts/TextToSpeech$Connection;
 
     iput-object p1, p0, Landroid/speech/tts/TextToSpeech;->mConnectingServiceConnection:Landroid/speech/tts/TextToSpeech$Connection;
 
@@ -238,7 +223,6 @@
 
 .method static synthetic access$1600(Landroid/speech/tts/TextToSpeech;)Landroid/content/Context;
     .locals 1
-    .param p0    # Landroid/speech/tts/TextToSpeech;
 
     iget-object v0, p0, Landroid/speech/tts/TextToSpeech;->mContext:Landroid/content/Context;
 
@@ -247,7 +231,6 @@
 
 .method static synthetic access$1700(Landroid/speech/tts/TextToSpeech;)I
     .locals 1
-    .param p0    # Landroid/speech/tts/TextToSpeech;
 
     invoke-direct {p0}, Landroid/speech/tts/TextToSpeech;->initTts()I
 
@@ -258,7 +241,6 @@
 
 .method static synthetic access$200(Landroid/speech/tts/TextToSpeech;)Landroid/speech/tts/TextToSpeech$Connection;
     .locals 1
-    .param p0    # Landroid/speech/tts/TextToSpeech;
 
     iget-object v0, p0, Landroid/speech/tts/TextToSpeech;->mServiceConnection:Landroid/speech/tts/TextToSpeech$Connection;
 
@@ -267,8 +249,6 @@
 
 .method static synthetic access$202(Landroid/speech/tts/TextToSpeech;Landroid/speech/tts/TextToSpeech$Connection;)Landroid/speech/tts/TextToSpeech$Connection;
     .locals 0
-    .param p0    # Landroid/speech/tts/TextToSpeech;
-    .param p1    # Landroid/speech/tts/TextToSpeech$Connection;
 
     iput-object p1, p0, Landroid/speech/tts/TextToSpeech;->mServiceConnection:Landroid/speech/tts/TextToSpeech$Connection;
 
@@ -277,8 +257,6 @@
 
 .method static synthetic access$302(Landroid/speech/tts/TextToSpeech;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Landroid/speech/tts/TextToSpeech;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/speech/tts/TextToSpeech;->mCurrentEngine:Ljava/lang/String;
 
@@ -287,7 +265,6 @@
 
 .method static synthetic access$400(Landroid/speech/tts/TextToSpeech;)Ljava/util/Map;
     .locals 1
-    .param p0    # Landroid/speech/tts/TextToSpeech;
 
     iget-object v0, p0, Landroid/speech/tts/TextToSpeech;->mUtterances:Ljava/util/Map;
 
@@ -296,8 +273,6 @@
 
 .method static synthetic access$500(Landroid/speech/tts/TextToSpeech;Ljava/util/HashMap;)Landroid/os/Bundle;
     .locals 1
-    .param p0    # Landroid/speech/tts/TextToSpeech;
-    .param p1    # Ljava/util/HashMap;
 
     invoke-direct {p0, p1}, Landroid/speech/tts/TextToSpeech;->getParams(Ljava/util/HashMap;)Landroid/os/Bundle;
 
@@ -308,7 +283,6 @@
 
 .method static synthetic access$600(Landroid/speech/tts/TextToSpeech;)Ljava/util/Map;
     .locals 1
-    .param p0    # Landroid/speech/tts/TextToSpeech;
 
     iget-object v0, p0, Landroid/speech/tts/TextToSpeech;->mEarcons:Ljava/util/Map;
 
@@ -317,7 +291,6 @@
 
 .method static synthetic access$700(Landroid/speech/tts/TextToSpeech;)Landroid/os/Bundle;
     .locals 1
-    .param p0    # Landroid/speech/tts/TextToSpeech;
 
     iget-object v0, p0, Landroid/speech/tts/TextToSpeech;->mParams:Landroid/os/Bundle;
 
@@ -326,7 +299,6 @@
 
 .method static synthetic access$800(Landroid/speech/tts/TextToSpeech;)Landroid/speech/tts/UtteranceProgressListener;
     .locals 1
-    .param p0    # Landroid/speech/tts/TextToSpeech;
 
     iget-object v0, p0, Landroid/speech/tts/TextToSpeech;->mUtteranceProgressListener:Landroid/speech/tts/UtteranceProgressListener;
 
@@ -335,7 +307,6 @@
 
 .method static synthetic access$900(Landroid/speech/tts/TextToSpeech;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Landroid/speech/tts/TextToSpeech;
 
     iget-object v0, p0, Landroid/speech/tts/TextToSpeech;->mStartLock:Ljava/lang/Object;
 
@@ -344,7 +315,6 @@
 
 .method private connectToEngine(Ljava/lang/String;)Z
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x1
 
@@ -427,8 +397,6 @@
 
 .method private copyFloatParam(Landroid/os/Bundle;Ljava/util/HashMap;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -476,8 +444,6 @@
 
 .method private copyIntParam(Landroid/os/Bundle;Ljava/util/HashMap;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -525,8 +491,6 @@
 
 .method private copyStringParam(Landroid/os/Bundle;Ljava/util/HashMap;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -557,7 +521,6 @@
 
 .method private dispatchOnInit(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Landroid/speech/tts/TextToSpeech;->mStartLock:Ljava/lang/Object;
 
@@ -884,8 +847,6 @@
 
 .method private makeResourceUri(Ljava/lang/String;I)Landroid/net/Uri;
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     new-instance v0, Landroid/net/Uri$Builder;
 
@@ -918,7 +879,6 @@
 
 .method private runAction(Landroid/speech/tts/TextToSpeech$Action;Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
     .locals 6
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<R:",
@@ -952,9 +912,6 @@
 
 .method private runAction(Landroid/speech/tts/TextToSpeech$Action;Ljava/lang/Object;Ljava/lang/String;ZZ)Ljava/lang/Object;
     .locals 7
-    .param p3    # Ljava/lang/String;
-    .param p4    # Z
-    .param p5    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<R:",
@@ -1036,8 +993,6 @@
 
 .method private runActionNoReconnect(Landroid/speech/tts/TextToSpeech$Action;Ljava/lang/Object;Ljava/lang/String;Z)Ljava/lang/Object;
     .locals 6
-    .param p3    # Ljava/lang/String;
-    .param p4    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<R:",
@@ -1073,8 +1028,6 @@
 # virtual methods
 .method public addEarcon(Ljava/lang/String;Ljava/lang/String;)I
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v1, p0, Landroid/speech/tts/TextToSpeech;->mStartLock:Ljava/lang/Object;
 
@@ -1107,9 +1060,6 @@
 
 .method public addEarcon(Ljava/lang/String;Ljava/lang/String;I)I
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     iget-object v1, p0, Landroid/speech/tts/TextToSpeech;->mStartLock:Ljava/lang/Object;
 
@@ -1142,8 +1092,6 @@
 
 .method public addSpeech(Ljava/lang/String;Ljava/lang/String;)I
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v1, p0, Landroid/speech/tts/TextToSpeech;->mStartLock:Ljava/lang/Object;
 
@@ -1176,9 +1124,6 @@
 
 .method public addSpeech(Ljava/lang/String;Ljava/lang/String;I)I
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     iget-object v1, p0, Landroid/speech/tts/TextToSpeech;->mStartLock:Ljava/lang/Object;
 
@@ -1280,7 +1225,6 @@
 
 .method public getFeatures(Ljava/util/Locale;)Ljava/util/Set;
     .locals 3
-    .param p1    # Ljava/util/Locale;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1332,7 +1276,6 @@
 
 .method public isLanguageAvailable(Ljava/util/Locale;)I
     .locals 3
-    .param p1    # Ljava/util/Locale;
 
     new-instance v0, Landroid/speech/tts/TextToSpeech$11;
 
@@ -1389,8 +1332,6 @@
 
 .method public playEarcon(Ljava/lang/String;ILjava/util/HashMap;)I
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1431,8 +1372,6 @@
 
 .method public playSilence(JILjava/util/HashMap;)I
     .locals 6
-    .param p1    # J
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(JI",
@@ -1479,7 +1418,6 @@
 
 .method public setEngineByPackageName(Ljava/lang/String;)I
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -1494,7 +1432,6 @@
 
 .method public setLanguage(Ljava/util/Locale;)I
     .locals 3
-    .param p1    # Ljava/util/Locale;
 
     new-instance v0, Landroid/speech/tts/TextToSpeech$9;
 
@@ -1523,7 +1460,6 @@
 
 .method public setOnUtteranceCompletedListener(Landroid/speech/tts/TextToSpeech$OnUtteranceCompletedListener;)I
     .locals 1
-    .param p1    # Landroid/speech/tts/TextToSpeech$OnUtteranceCompletedListener;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -1540,7 +1476,6 @@
 
 .method public setOnUtteranceProgressListener(Landroid/speech/tts/UtteranceProgressListener;)I
     .locals 1
-    .param p1    # Landroid/speech/tts/UtteranceProgressListener;
 
     iput-object p1, p0, Landroid/speech/tts/TextToSpeech;->mUtteranceProgressListener:Landroid/speech/tts/UtteranceProgressListener;
 
@@ -1551,7 +1486,6 @@
 
 .method public setPitch(F)I
     .locals 4
-    .param p1    # F
 
     const/4 v1, 0x0
 
@@ -1602,7 +1536,6 @@
 
 .method public setSpeechRate(F)I
     .locals 4
-    .param p1    # F
 
     const/4 v1, 0x0
 
@@ -1710,8 +1643,6 @@
 
 .method public speak(Ljava/lang/String;ILjava/util/HashMap;)I
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1780,8 +1711,6 @@
 
 .method public synthesizeToFile(Ljava/lang/String;Ljava/util/HashMap;Ljava/lang/String;)I
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

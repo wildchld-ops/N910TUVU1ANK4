@@ -79,7 +79,6 @@
 
 .method constructor <init>(I)V
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -99,8 +98,6 @@
 
 .method private constructor <init>(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1}, Landroid/graphics/Region;-><init>(I)V
 
@@ -109,10 +106,6 @@
 
 .method public constructor <init>(IIII)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -131,7 +124,6 @@
 
 .method public constructor <init>(Landroid/graphics/Rect;)V
     .locals 5
-    .param p1    # Landroid/graphics/Rect;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -158,7 +150,6 @@
 
 .method public constructor <init>(Landroid/graphics/Region;)V
     .locals 2
-    .param p1    # Landroid/graphics/Region;
 
     invoke-static {}, Landroid/graphics/Region;->nativeConstructor()I
 
@@ -177,7 +168,6 @@
 
 .method static synthetic access$000(Landroid/os/Parcel;)I
     .locals 1
-    .param p0    # Landroid/os/Parcel;
 
     invoke-static {p0}, Landroid/graphics/Region;->nativeCreateFromParcel(Landroid/os/Parcel;)I
 
@@ -254,7 +244,6 @@
 
 .method public static obtain(Landroid/graphics/Region;)Landroid/graphics/Region;
     .locals 1
-    .param p0    # Landroid/graphics/Region;
 
     invoke-static {}, Landroid/graphics/Region;->obtain()Landroid/graphics/Region;
 
@@ -280,7 +269,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 3
-    .param p1    # Ljava/lang/Object;
 
     if-eqz p1, :cond_0
 
@@ -357,7 +345,6 @@
 
 .method public getBoundaryPath(Landroid/graphics/Path;)Z
     .locals 2
-    .param p1    # Landroid/graphics/Path;
 
     iget v0, p0, Landroid/graphics/Region;->mNativeRegion:I
 
@@ -388,7 +375,6 @@
 
 .method public getBounds(Landroid/graphics/Rect;)Z
     .locals 1
-    .param p1    # Landroid/graphics/Rect;
 
     if-nez p1, :cond_0
 
@@ -427,11 +413,6 @@
 
 .method public op(IIIILandroid/graphics/Region$Op;)Z
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Landroid/graphics/Region$Op;
 
     iget v0, p0, Landroid/graphics/Region;->mNativeRegion:I
 
@@ -454,8 +435,6 @@
 
 .method public op(Landroid/graphics/Rect;Landroid/graphics/Region$Op;)Z
     .locals 6
-    .param p1    # Landroid/graphics/Rect;
-    .param p2    # Landroid/graphics/Region$Op;
 
     iget v0, p0, Landroid/graphics/Region;->mNativeRegion:I
 
@@ -478,9 +457,6 @@
 
 .method public op(Landroid/graphics/Rect;Landroid/graphics/Region;Landroid/graphics/Region$Op;)Z
     .locals 3
-    .param p1    # Landroid/graphics/Rect;
-    .param p2    # Landroid/graphics/Region;
-    .param p3    # Landroid/graphics/Region$Op;
 
     iget v0, p0, Landroid/graphics/Region;->mNativeRegion:I
 
@@ -497,8 +473,6 @@
 
 .method public op(Landroid/graphics/Region;Landroid/graphics/Region$Op;)Z
     .locals 1
-    .param p1    # Landroid/graphics/Region;
-    .param p2    # Landroid/graphics/Region$Op;
 
     invoke-virtual {p0, p0, p1, p2}, Landroid/graphics/Region;->op(Landroid/graphics/Region;Landroid/graphics/Region;Landroid/graphics/Region$Op;)Z
 
@@ -509,9 +483,6 @@
 
 .method public op(Landroid/graphics/Region;Landroid/graphics/Region;Landroid/graphics/Region$Op;)Z
     .locals 4
-    .param p1    # Landroid/graphics/Region;
-    .param p2    # Landroid/graphics/Region;
-    .param p3    # Landroid/graphics/Region$Op;
 
     iget v0, p0, Landroid/graphics/Region;->mNativeRegion:I
 
@@ -533,7 +504,6 @@
 
 .method public quickContains(Landroid/graphics/Rect;)Z
     .locals 4
-    .param p1    # Landroid/graphics/Rect;
 
     iget v0, p1, Landroid/graphics/Rect;->left:I
 
@@ -555,7 +525,6 @@
 
 .method public quickReject(Landroid/graphics/Rect;)Z
     .locals 4
-    .param p1    # Landroid/graphics/Rect;
 
     iget v0, p1, Landroid/graphics/Rect;->left:I
 
@@ -589,7 +558,6 @@
 
 .method public scale(F)V
     .locals 1
-    .param p1    # F
 
     const/4 v0, 0x0
 
@@ -603,10 +571,6 @@
 
 .method public set(IIII)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iget v0, p0, Landroid/graphics/Region;->mNativeRegion:I
 
@@ -619,7 +583,6 @@
 
 .method public set(Landroid/graphics/Rect;)Z
     .locals 5
-    .param p1    # Landroid/graphics/Rect;
 
     iget v0, p0, Landroid/graphics/Region;->mNativeRegion:I
 
@@ -640,7 +603,6 @@
 
 .method public set(Landroid/graphics/Region;)Z
     .locals 2
-    .param p1    # Landroid/graphics/Region;
 
     iget v0, p0, Landroid/graphics/Region;->mNativeRegion:I
 
@@ -667,8 +629,6 @@
 
 .method public setPath(Landroid/graphics/Path;Landroid/graphics/Region;)Z
     .locals 3
-    .param p1    # Landroid/graphics/Path;
-    .param p2    # Landroid/graphics/Region;
 
     iget v0, p0, Landroid/graphics/Region;->mNativeRegion:I
 
@@ -699,8 +659,6 @@
 
 .method public translate(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -714,7 +672,6 @@
 
 .method public final union(Landroid/graphics/Rect;)Z
     .locals 1
-    .param p1    # Landroid/graphics/Rect;
 
     sget-object v0, Landroid/graphics/Region$Op;->UNION:Landroid/graphics/Region$Op;
 
@@ -727,8 +684,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget v0, p0, Landroid/graphics/Region;->mNativeRegion:I
 

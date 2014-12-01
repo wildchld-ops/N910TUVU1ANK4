@@ -20,7 +20,6 @@
 # direct methods
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -31,7 +30,6 @@
 
 .method public static declared-synchronized getPreferences(Landroid/content/Context;)Lcom/android/server/DirEncryptPrefs;
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     const-class v1, Lcom/android/server/DirEncryptPrefs;
 
@@ -67,7 +65,6 @@
 
 .method private static log(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "DirEncryptPrefs"
 
@@ -78,7 +75,6 @@
 
 .method private static logE(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "DirEncryptPrefs"
 
@@ -309,7 +305,6 @@
 
 .method public savePrefs(Landroid/dirEncryption/SDCardEncryptionPolicies;)Z
     .locals 8
-    .param p1    # Landroid/dirEncryption/SDCardEncryptionPolicies;
 
     const/4 v2, 0x1
 

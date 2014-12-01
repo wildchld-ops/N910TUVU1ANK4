@@ -86,7 +86,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/settings/CheckDefaultSmsAppsActivity;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/settings/CheckDefaultSmsAppsActivity;
 
     iget-boolean v0, p0, Lcom/android/mms/settings/CheckDefaultSmsAppsActivity;->mIsOpened:Z
 
@@ -95,8 +94,6 @@
 
 .method static synthetic access$002(Lcom/android/mms/settings/CheckDefaultSmsAppsActivity;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/settings/CheckDefaultSmsAppsActivity;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/settings/CheckDefaultSmsAppsActivity;->mIsOpened:Z
 
@@ -105,7 +102,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/settings/CheckDefaultSmsAppsActivity;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/mms/settings/CheckDefaultSmsAppsActivity;
 
     iget-object v0, p0, Lcom/android/mms/settings/CheckDefaultSmsAppsActivity;->mContext:Landroid/content/Context;
 
@@ -114,7 +110,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/settings/CheckDefaultSmsAppsActivity;)Ljava/lang/StringBuilder;
     .locals 1
-    .param p0    # Lcom/android/mms/settings/CheckDefaultSmsAppsActivity;
 
     iget-object v0, p0, Lcom/android/mms/settings/CheckDefaultSmsAppsActivity;->mFullPath:Ljava/lang/StringBuilder;
 
@@ -123,7 +118,6 @@
 
 .method static synthetic access$300(Lcom/android/mms/settings/CheckDefaultSmsAppsActivity;)Ljava/lang/Boolean;
     .locals 1
-    .param p0    # Lcom/android/mms/settings/CheckDefaultSmsAppsActivity;
 
     iget-object v0, p0, Lcom/android/mms/settings/CheckDefaultSmsAppsActivity;->mNeedResultCode:Ljava/lang/Boolean;
 
@@ -132,7 +126,6 @@
 
 .method static synthetic access$400(Lcom/android/mms/settings/CheckDefaultSmsAppsActivity;)Landroid/content/Intent;
     .locals 1
-    .param p0    # Lcom/android/mms/settings/CheckDefaultSmsAppsActivity;
 
     iget-object v0, p0, Lcom/android/mms/settings/CheckDefaultSmsAppsActivity;->mIntent:Landroid/content/Intent;
 
@@ -141,7 +134,6 @@
 
 .method static synthetic access$500(Lcom/android/mms/settings/CheckDefaultSmsAppsActivity;)Ljava/lang/Boolean;
     .locals 1
-    .param p0    # Lcom/android/mms/settings/CheckDefaultSmsAppsActivity;
 
     iget-object v0, p0, Lcom/android/mms/settings/CheckDefaultSmsAppsActivity;->mIsFromScover:Ljava/lang/Boolean;
 
@@ -150,7 +142,6 @@
 
 .method static synthetic access$600(Lcom/android/mms/settings/CheckDefaultSmsAppsActivity;)Landroid/widget/ImageView;
     .locals 1
-    .param p0    # Lcom/android/mms/settings/CheckDefaultSmsAppsActivity;
 
     iget-object v0, p0, Lcom/android/mms/settings/CheckDefaultSmsAppsActivity;->mAniImageView:Landroid/widget/ImageView;
 
@@ -159,7 +150,6 @@
 
 .method private getApplicationIcon(Ljava/lang/String;)Landroid/graphics/drawable/Drawable;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/mms/settings/CheckDefaultSmsAppsActivity;->mContext:Landroid/content/Context;
 
@@ -1058,9 +1048,6 @@
 # virtual methods
 .method protected onActivityResult(IILandroid/content/Intent;)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const/4 v5, -0x1
 
@@ -1302,7 +1289,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 4
-    .param p1    # Landroid/content/res/Configuration;
 
     const-string v0, "Mms/CheckDefaultSmsAppsActivity"
 
@@ -1406,7 +1392,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v4, 0x0
 

@@ -10,7 +10,6 @@
 # direct methods
 .method public varargs constructor <init>([I)V
     .locals 1
-    .param p1    # [I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -29,7 +28,6 @@
 # virtual methods
 .method public varargs MenuResourceBundle([I)V
     .locals 1
-    .param p1    # [I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/resourcedata/MenuResourceBundle;->resourceIds:[I
 
@@ -119,7 +117,6 @@
 
 .method public getItem(I)I
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/resourcedata/MenuResourceBundle;->resourceIds:[I
 

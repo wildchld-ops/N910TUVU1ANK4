@@ -45,7 +45,6 @@
 # virtual methods
 .method public addExtras(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     iget-boolean v0, p0, Landroid/app/Notification$Style;->mSummaryTextSet:Z
 
@@ -110,7 +109,6 @@
 
 .method protected getStandardView(I)Landroid/widget/RemoteViews;
     .locals 9
-    .param p1    # I
 
     const v8, 0x1020389
 
@@ -204,7 +202,6 @@
 
 .method protected internalSetBigContentTitle(Ljava/lang/CharSequence;)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
 
     iput-object p1, p0, Landroid/app/Notification$Style;->mBigContentTitle:Ljava/lang/CharSequence;
 
@@ -213,7 +210,6 @@
 
 .method protected internalSetSummaryText(Ljava/lang/CharSequence;)V
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
 
     iput-object p1, p0, Landroid/app/Notification$Style;->mSummaryText:Ljava/lang/CharSequence;
 
@@ -226,7 +222,6 @@
 
 .method public setBuilder(Landroid/app/Notification$Builder;)V
     .locals 1
-    .param p1    # Landroid/app/Notification$Builder;
 
     iget-object v0, p0, Landroid/app/Notification$Style;->mBuilder:Landroid/app/Notification$Builder;
 

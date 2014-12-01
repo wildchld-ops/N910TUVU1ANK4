@@ -212,7 +212,6 @@
 
 .method private constructor <init>(Landroid/os/Parcel;)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Lcom/voovio/sweep/Template;-><init>()V
 
@@ -255,7 +254,6 @@
 # virtual methods
 .method Read(Ljava/nio/ByteBuffer;)I
     .locals 13
-    .param p1    # Ljava/nio/ByteBuffer;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/nio/BufferUnderflowException;,
@@ -584,7 +582,6 @@
 
 .method clone(F)Lcom/voovio/sweep/Template;
     .locals 12
-    .param p1    # F
 
     const/4 v11, 0x1
 
@@ -941,7 +938,6 @@
 
 .method setGroupId(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/voovio/sweep/Template;->m_nGroupId:I
 
@@ -950,7 +946,6 @@
 
 .method setIcon(Landroid/graphics/Bitmap;)V
     .locals 0
-    .param p1    # Landroid/graphics/Bitmap;
 
     iput-object p1, p0, Lcom/voovio/sweep/Template;->m_bmdIcon:Landroid/graphics/Bitmap;
 
@@ -959,7 +954,6 @@
 
 .method setIconId(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/voovio/sweep/Template;->m_nIconId:I
 
@@ -968,7 +962,6 @@
 
 .method setId(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/voovio/sweep/Template;->m_nId:I
 
@@ -977,7 +970,6 @@
 
 .method setImageAspect(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/voovio/sweep/Template;->m_strImageAspect:Ljava/lang/String;
 
@@ -986,7 +978,6 @@
 
 .method setName(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/voovio/sweep/Template;->m_strName:Ljava/lang/String;
 
@@ -995,8 +986,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/voovio/sweep/Template;->m_strName:Ljava/lang/String;
 

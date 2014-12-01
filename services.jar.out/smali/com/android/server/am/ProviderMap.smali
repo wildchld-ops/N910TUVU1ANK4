@@ -68,7 +68,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/am/ActivityManagerService;)V
     .locals 1
-    .param p1    # Lcom/android/server/am/ActivityManagerService;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -103,11 +102,6 @@
 
 .method private collectForceStopProvidersLocked(Ljava/lang/String;IZZILjava/util/HashMap;Ljava/util/ArrayList;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # Z
-    .param p5    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -192,12 +186,6 @@
 
 .method private dumpProvider(Ljava/lang/String;Ljava/io/FileDescriptor;Ljava/io/PrintWriter;Lcom/android/server/am/ContentProviderRecord;[Ljava/lang/String;Z)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/io/FileDescriptor;
-    .param p3    # Ljava/io/PrintWriter;
-    .param p4    # Lcom/android/server/am/ContentProviderRecord;
-    .param p5    # [Ljava/lang/String;
-    .param p6    # Z
 
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -386,11 +374,6 @@
 
 .method private dumpProvidersByClassLocked(Ljava/io/PrintWriter;ZLjava/lang/String;Ljava/lang/String;ZLjava/util/HashMap;)Z
     .locals 5
-    .param p1    # Ljava/io/PrintWriter;
-    .param p2    # Z
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -486,10 +469,6 @@
 
 .method private dumpProvidersByNameLocked(Ljava/io/PrintWriter;Ljava/lang/String;Ljava/lang/String;ZLjava/util/HashMap;)Z
     .locals 5
-    .param p1    # Ljava/io/PrintWriter;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -596,7 +575,6 @@
 
 .method private getProvidersByName(I)Ljava/util/HashMap;
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -666,11 +644,6 @@
 # virtual methods
 .method collectForceStopProviders(Ljava/lang/String;IZZILjava/util/ArrayList;)Z
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # Z
-    .param p5    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -805,12 +778,6 @@
 
 .method protected dumpProvider(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;Ljava/lang/String;[Ljava/lang/String;IZ)Z
     .locals 15
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # Ljava/lang/String;
-    .param p4    # [Ljava/lang/String;
-    .param p5    # I
-    .param p6    # Z
 
     new-instance v8, Ljava/util/ArrayList;
 
@@ -1063,9 +1030,6 @@
 
 .method dumpProvidersLocked(Ljava/io/PrintWriter;ZLjava/lang/String;)Z
     .locals 14
-    .param p1    # Ljava/io/PrintWriter;
-    .param p2    # Z
-    .param p3    # Ljava/lang/String;
 
     const/4 v5, 0x0
 
@@ -1257,7 +1221,6 @@
 
 .method getProviderByClass(Landroid/content/ComponentName;)Lcom/android/server/am/ContentProviderRecord;
     .locals 1
-    .param p1    # Landroid/content/ComponentName;
 
     const/4 v0, -0x1
 
@@ -1270,8 +1233,6 @@
 
 .method getProviderByClass(Landroid/content/ComponentName;I)Lcom/android/server/am/ContentProviderRecord;
     .locals 2
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # I
 
     iget-object v1, p0, Lcom/android/server/am/ProviderMap;->mSingletonByClass:Ljava/util/HashMap;
 
@@ -1304,7 +1265,6 @@
 
 .method getProviderByName(Ljava/lang/String;)Lcom/android/server/am/ContentProviderRecord;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, -0x1
 
@@ -1317,8 +1277,6 @@
 
 .method getProviderByName(Ljava/lang/String;I)Lcom/android/server/am/ContentProviderRecord;
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     iget-object v1, p0, Lcom/android/server/am/ProviderMap;->mSingletonByName:Ljava/util/HashMap;
 
@@ -1351,7 +1309,6 @@
 
 .method getProvidersByClass(I)Ljava/util/HashMap;
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -1419,8 +1376,6 @@
 
 .method putProviderByClass(Landroid/content/ComponentName;Lcom/android/server/am/ContentProviderRecord;)V
     .locals 2
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Lcom/android/server/am/ContentProviderRecord;
 
     iget-boolean v1, p2, Lcom/android/server/am/ContentProviderRecord;->singleton:Z
 
@@ -1453,8 +1408,6 @@
 
 .method putProviderByName(Ljava/lang/String;Lcom/android/server/am/ContentProviderRecord;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/server/am/ContentProviderRecord;
 
     iget-boolean v1, p2, Lcom/android/server/am/ContentProviderRecord;->singleton:Z
 
@@ -1487,8 +1440,6 @@
 
 .method removeProviderByClass(Landroid/content/ComponentName;I)V
     .locals 4
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # I
 
     iget-object v1, p0, Lcom/android/server/am/ProviderMap;->mSingletonByClass:Ljava/util/HashMap;
 
@@ -1555,8 +1506,6 @@
 
 .method removeProviderByName(Ljava/lang/String;I)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     iget-object v1, p0, Lcom/android/server/am/ProviderMap;->mSingletonByName:Ljava/util/HashMap;
 

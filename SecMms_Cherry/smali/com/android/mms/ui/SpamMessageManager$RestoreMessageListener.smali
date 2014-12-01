@@ -28,8 +28,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/mms/ui/SpamMessageManager;Landroid/net/Uri;Lcom/android/mms/ui/MessageItem;)V
     .locals 0
-    .param p2    # Landroid/net/Uri;
-    .param p3    # Lcom/android/mms/ui/MessageItem;
 
     iput-object p1, p0, Lcom/android/mms/ui/SpamMessageManager$RestoreMessageListener;->this$0:Lcom/android/mms/ui/SpamMessageManager;
 
@@ -44,7 +42,6 @@
 
 .method static synthetic access$2000(Lcom/android/mms/ui/SpamMessageManager$RestoreMessageListener;)Landroid/net/Uri;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SpamMessageManager$RestoreMessageListener;
 
     iget-object v0, p0, Lcom/android/mms/ui/SpamMessageManager$RestoreMessageListener;->mRestoreUri:Landroid/net/Uri;
 
@@ -53,7 +50,6 @@
 
 .method static synthetic access$2100(Lcom/android/mms/ui/SpamMessageManager$RestoreMessageListener;)Lcom/android/mms/ui/MessageItem;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SpamMessageManager$RestoreMessageListener;
 
     iget-object v0, p0, Lcom/android/mms/ui/SpamMessageManager$RestoreMessageListener;->mRestoremsgItem:Lcom/android/mms/ui/MessageItem;
 
@@ -64,8 +60,6 @@
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 2
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     new-instance v0, Ljava/lang/Thread;
 

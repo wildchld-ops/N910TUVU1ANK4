@@ -32,7 +32,7 @@
 
     invoke-super {p0, p1}, Lcom/android/phone/CallFeaturesSetting;->onCreate(Landroid/os/Bundle;)V
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getActionBar()Landroid/app/ActionBar;
+    invoke-virtual {p0}, Lcom/android/phone/VoicemailNumberFragment;->getActionBar()Landroid/app/ActionBar;
 
     move-result-object v0
 
@@ -41,9 +41,9 @@
     invoke-virtual {v0, v3}, Landroid/app/ActionBar;->setDisplayHomeAsUpEnabled(Z)V
 
     :cond_0
-    invoke-virtual {p0, v3}, Landroid/app/Fragment;->setHasOptionsMenu(Z)V
+    invoke-virtual {p0, v3}, Lcom/android/phone/VoicemailNumberFragment;->setHasOptionsMenu(Z)V
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/VoicemailNumberFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -64,7 +64,7 @@
     packed-switch p1, :pswitch_data_0
 
     :cond_0
-    invoke-super {p0, p1, p2}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onKeyUp(ILandroid/view/KeyEvent;)Z
+    invoke-super {p0, p1, p2}, Lcom/android/phone/CallFeaturesSetting;->onKeyUp(ILandroid/view/KeyEvent;)Z
 
     move-result v0
 
@@ -80,7 +80,7 @@
 
     if-nez v0, :cond_0
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/VoicemailNumberFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -125,7 +125,7 @@
 
     if-nez v0, :cond_0
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/VoicemailNumberFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -162,7 +162,7 @@
 
     if-eqz v1, :cond_0
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/VoicemailNumberFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -174,7 +174,7 @@
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/VoicemailNumberFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -189,7 +189,7 @@
     .param p1    # Landroid/preference/PreferenceScreen;
     .param p2    # Landroid/preference/Preference;
 
-    iget-object v0, p0, Lcom/android/phone/CallFeaturesSetting;->mVoicemailSettings:Landroid/preference/PreferenceScreen;
+    iget-object v0, p0, Lcom/android/phone/VoicemailNumberFragment;->mVoicemailSettings:Landroid/preference/PreferenceScreen;
 
     if-ne p2, v0, :cond_0
 
@@ -215,15 +215,15 @@
 
     invoke-static {v0, v1}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    iget-object v0, p0, Lcom/android/phone/CallFeaturesSetting;->mVoicemailSettings:Landroid/preference/PreferenceScreen;
+    iget-object v0, p0, Lcom/android/phone/VoicemailNumberFragment;->mVoicemailSettings:Landroid/preference/PreferenceScreen;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/phone/CallFeaturesSetting;->mVoicemailSettings:Landroid/preference/PreferenceScreen;
+    iget-object v0, p0, Lcom/android/phone/VoicemailNumberFragment;->mVoicemailSettings:Landroid/preference/PreferenceScreen;
 
-    invoke-virtual {p0, v0}, Landroid/preference/PreferenceFragment;->setPreferenceScreen(Landroid/preference/PreferenceScreen;)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/VoicemailNumberFragment;->setPreferenceScreen(Landroid/preference/PreferenceScreen;)V
 
-    iget-object v0, p0, Lcom/android/phone/CallFeaturesSetting;->mVoicemailSettings:Landroid/preference/PreferenceScreen;
+    iget-object v0, p0, Lcom/android/phone/VoicemailNumberFragment;->mVoicemailSettings:Landroid/preference/PreferenceScreen;
 
     invoke-virtual {v0}, Landroid/preference/PreferenceScreen;->getDialog()Landroid/app/Dialog;
 
@@ -231,7 +231,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/phone/CallFeaturesSetting;->mVoicemailSettings:Landroid/preference/PreferenceScreen;
+    iget-object v0, p0, Lcom/android/phone/VoicemailNumberFragment;->mVoicemailSettings:Landroid/preference/PreferenceScreen;
 
     invoke-virtual {v0}, Landroid/preference/PreferenceScreen;->getDialog()Landroid/app/Dialog;
 
@@ -240,7 +240,7 @@
     invoke-virtual {v0}, Landroid/app/Dialog;->dismiss()V
 
     :cond_0
-    invoke-virtual {p0}, Lcom/android/phone/CallFeaturesSetting;->updateVoiceNumberField()V
+    invoke-virtual {p0}, Lcom/android/phone/VoicemailNumberFragment;->updateVoiceNumberField()V
 
     invoke-super {p0}, Lcom/android/phone/CallFeaturesSetting;->onResume()V
 

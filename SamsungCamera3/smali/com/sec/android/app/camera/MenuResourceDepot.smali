@@ -55,7 +55,6 @@
 # direct methods
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;)V
     .locals 1
-    .param p1    # Lcom/sec/android/app/camera/Camera;
 
     const/4 v0, 0x0
 
@@ -163,7 +162,6 @@
 
 .method private mustNotClear(Lcom/sec/android/app/camera/MenuBase;)Z
     .locals 1
-    .param p1    # Lcom/sec/android/app/camera/MenuBase;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/MenuResourceDepot;->mGLCameraBaseIndicators:Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;
 
@@ -413,7 +411,6 @@
 
 .method public delete(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/MenuResourceDepot;->mResources:Ljava/util/HashMap;
 
@@ -428,8 +425,6 @@
 
 .method public getMenuByLayoutId(ILandroid/view/ViewGroup;)Lcom/sec/android/app/camera/MenuBase;
     .locals 7
-    .param p1    # I
-    .param p2    # Landroid/view/ViewGroup;
 
     const/4 v0, 0x0
 
@@ -489,8 +484,6 @@
 
 .method public getMenuByViewId(ILcom/sec/android/glview/TwGLViewGroup;)Lcom/sec/android/app/camera/MenuBase;
     .locals 6
-    .param p1    # I
-    .param p2    # Lcom/sec/android/glview/TwGLViewGroup;
 
     const/4 v0, 0x0
 
@@ -563,7 +556,6 @@
 
 .method public getResource(I)Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;
     .locals 4
-    .param p1    # I
 
     iget-object v2, p0, Lcom/sec/android/app/camera/MenuResourceDepot;->mResources:Ljava/util/HashMap;
 

@@ -29,7 +29,6 @@
 # direct methods
 .method public constructor <init>(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -156,7 +155,6 @@
 
 .method private moveRowGapTo(I)V
     .locals 8
-    .param p1    # I
 
     iget v5, p0, Landroid/text/PackedObjectVector;->mRowGapStart:I
 
@@ -317,8 +315,6 @@
 # virtual methods
 .method public deleteAt(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     add-int v0, p1, p2
 
@@ -471,8 +467,6 @@
 
 .method public getValue(II)Ljava/lang/Object;
     .locals 3
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II)TE;"
@@ -503,7 +497,6 @@
 
 .method public insertAt(I[Ljava/lang/Object;)V
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I[TE;)V"
@@ -570,8 +563,6 @@
 
 .method public setValue(IILjava/lang/Object;)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(IITE;)V"

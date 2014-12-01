@@ -239,7 +239,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Landroid/view/View;-><init>(Landroid/content/Context;)V
 
@@ -262,8 +261,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/view/View;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -286,7 +283,6 @@
 
 .method static synthetic access$000(Lcom/android/internal/widget/SignView;)I
     .locals 1
-    .param p0    # Lcom/android/internal/widget/SignView;
 
     iget v0, p0, Lcom/android/internal/widget/SignView;->mStatus:I
 
@@ -295,7 +291,6 @@
 
 .method static synthetic access$100(Lcom/android/internal/widget/SignView;)Lcom/android/internal/widget/SignView$OnSignatureListener;
     .locals 1
-    .param p0    # Lcom/android/internal/widget/SignView;
 
     iget-object v0, p0, Lcom/android/internal/widget/SignView;->mOnSignatureListener:Lcom/android/internal/widget/SignView$OnSignatureListener;
 
@@ -304,8 +299,6 @@
 
 .method static synthetic access$202(Lcom/android/internal/widget/SignView;Z)Z
     .locals 0
-    .param p0    # Lcom/android/internal/widget/SignView;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/internal/widget/SignView;->mFirstDraw:Z
 
@@ -314,8 +307,6 @@
 
 .method static synthetic access$302(Lcom/android/internal/widget/SignView;I)I
     .locals 0
-    .param p0    # Lcom/android/internal/widget/SignView;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/internal/widget/SignView;->mCurrentStroke:I
 
@@ -324,8 +315,6 @@
 
 .method static synthetic access$402(Lcom/android/internal/widget/SignView;Z)Z
     .locals 0
-    .param p0    # Lcom/android/internal/widget/SignView;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/internal/widget/SignView;->mMaxPointReached:Z
 
@@ -342,7 +331,6 @@
 
 .method private checkPreCondition(Landroid/view/MotionEvent;)Z
     .locals 8
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v5, 0x1
 
@@ -564,7 +552,6 @@
 
 .method private getToolValue(I)I
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -590,7 +577,6 @@
 
 .method private insertDataToEngine(I)V
     .locals 13
-    .param p1    # I
 
     sget-boolean v0, Lcom/android/internal/widget/SignView;->DBG:Z
 
@@ -829,7 +815,6 @@
 
 .method private isFingerInput(Landroid/view/MotionEvent;)Z
     .locals 4
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v0, 0x0
 
@@ -863,7 +848,6 @@
 
 .method private setThreshold(Landroid/view/MotionEvent;)V
     .locals 5
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v0, 0x0
 
@@ -1500,7 +1484,6 @@
 
 .method public enableUsingHistoricalEvent(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/internal/widget/SignView;->mUseHistoricalEvent:Z
 
@@ -1583,9 +1566,6 @@
 
 .method protected handleActionDown(Landroid/view/MotionEvent;FF)V
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # F
-    .param p3    # F
 
     iget-object v0, p0, Lcom/android/internal/widget/SignView;->mPath:Landroid/graphics/Path;
 
@@ -1600,9 +1580,6 @@
 
 .method protected handleActionMove(Landroid/view/MotionEvent;FF)V
     .locals 12
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # F
-    .param p3    # F
 
     iget v0, p0, Lcom/android/internal/widget/SignView;->mX:F
 
@@ -1776,9 +1753,6 @@
 
 .method protected handleActionUp(Landroid/view/MotionEvent;FF)V
     .locals 3
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # F
-    .param p3    # F
 
     iget-object v0, p0, Lcom/android/internal/widget/SignView;->mPath:Landroid/graphics/Path;
 
@@ -1807,7 +1781,6 @@
 
 .method protected init(Landroid/content/Context;)V
     .locals 8
-    .param p1    # Landroid/content/Context;
 
     const-wide/16 v6, 0x0
 
@@ -2212,7 +2185,6 @@
 
 .method protected onDraw(Landroid/graphics/Canvas;)V
     .locals 12
-    .param p1    # Landroid/graphics/Canvas;
 
     const/4 v1, 0x0
 
@@ -2421,7 +2393,6 @@
 
 .method public onHoverEvent(Landroid/view/MotionEvent;)Z
     .locals 2
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-object v1, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -2473,11 +2444,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 3
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-super/range {p0 .. p5}, Landroid/view/View;->onLayout(ZIIII)V
 
@@ -2595,10 +2561,6 @@
 
 .method protected onSizeChanged(IIII)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/4 v4, 0x0
 
@@ -2735,7 +2697,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 11
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v1, 0x0
 
@@ -3528,7 +3489,6 @@
 
 .method public saveArrayListIntoFile(Ljava/lang/String;Ljava/util/ArrayList;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3781,7 +3741,6 @@
 
 .method public setBackground(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/internal/widget/SignView;->mBackgroundResourceID:I
 
@@ -3790,7 +3749,6 @@
 
 .method public setCompensationEnabled(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/internal/widget/SignView;->mCompensationEnabled:Z
 
@@ -3799,7 +3757,6 @@
 
 .method public setOnSignatureListener(Lcom/android/internal/widget/SignView$OnSignatureListener;)V
     .locals 0
-    .param p1    # Lcom/android/internal/widget/SignView$OnSignatureListener;
 
     iput-object p1, p0, Lcom/android/internal/widget/SignView;->mOnSignatureListener:Lcom/android/internal/widget/SignView$OnSignatureListener;
 
@@ -3808,7 +3765,6 @@
 
 .method public setOutLine(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/internal/widget/SignView;->mHasOutLine:Z
 
@@ -3817,7 +3773,6 @@
 
 .method public setPenColor(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/internal/widget/SignView;->mSignPaint:Landroid/graphics/Paint;
 
@@ -3828,7 +3783,6 @@
 
 .method public setPenWidth(I)V
     .locals 0
-    .param p1    # I
 
     if-lez p1, :cond_0
 
@@ -3840,7 +3794,6 @@
 
 .method public setPersistentShow(Z)V
     .locals 3
-    .param p1    # Z
 
     const-string v0, "SignView"
 
@@ -3871,7 +3824,6 @@
 
 .method public setSettingInputType(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/internal/widget/SignView;->mSavedInputType:I
 
@@ -3880,7 +3832,6 @@
 
 .method public setSignService(Lcom/android/internal/policy/ISignServiceInterface;)V
     .locals 6
-    .param p1    # Lcom/android/internal/policy/ISignServiceInterface;
 
     sget-boolean v2, Lcom/android/internal/widget/SignView;->DBG:Z
 
@@ -4030,8 +3981,6 @@
 
 .method public setSignViewXY(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     iput p1, p0, Lcom/android/internal/widget/SignView;->mSignViewX:I
 
@@ -4042,7 +3991,6 @@
 
 .method public setSignatureVisible(Z)V
     .locals 3
-    .param p1    # Z
 
     const-string v0, "SignView"
 
@@ -4073,7 +4021,6 @@
 
 .method public setStrokeCount(I)V
     .locals 3
-    .param p1    # I
 
     sget-boolean v0, Lcom/android/internal/widget/SignView;->DBG:Z
 
@@ -4109,7 +4056,6 @@
 
 .method public setThresholdValue(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/internal/widget/SignView;->mThresholdValue:I
 
@@ -4118,18 +4064,6 @@
 
 .method public setThresholdValues(IIIIIIIIIIII)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
-    .param p9    # I
-    .param p10    # I
-    .param p11    # I
-    .param p12    # I
 
     const/16 v0, 0xc
 
@@ -4214,7 +4148,6 @@
 
 .method public setUserInputEnabled(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/internal/widget/SignView;->mUserInputEnabled:Z
 
@@ -4223,7 +4156,6 @@
 
 .method public setVerificationLevel(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/internal/widget/SignView;->mVerificationLevel:I
 
@@ -4264,8 +4196,6 @@
 
 .method public setViewOffset(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     iput p1, p0, Lcom/android/internal/widget/SignView;->mVerifyVOffsetRegisterViewX:I
 

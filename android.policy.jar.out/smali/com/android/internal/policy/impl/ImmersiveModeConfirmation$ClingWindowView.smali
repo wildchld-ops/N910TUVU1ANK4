@@ -39,8 +39,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/internal/policy/impl/ImmersiveModeConfirmation;Landroid/content/Context;Ljava/lang/Runnable;)V
     .locals 2
-    .param p2    # Landroid/content/Context;
-    .param p3    # Ljava/lang/Runnable;
 
     iput-object p1, p0, Lcom/android/internal/policy/impl/ImmersiveModeConfirmation$ClingWindowView;->this$0:Lcom/android/internal/policy/impl/ImmersiveModeConfirmation;
 
@@ -81,7 +79,6 @@
 
 .method static synthetic access$100(Lcom/android/internal/policy/impl/ImmersiveModeConfirmation$ClingWindowView;)Landroid/view/ViewGroup;
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/ImmersiveModeConfirmation$ClingWindowView;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/ImmersiveModeConfirmation$ClingWindowView;->mClingLayout:Landroid/view/ViewGroup;
 
@@ -90,7 +87,6 @@
 
 .method static synthetic access$200(Lcom/android/internal/policy/impl/ImmersiveModeConfirmation$ClingWindowView;)Ljava/lang/Runnable;
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/ImmersiveModeConfirmation$ClingWindowView;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/ImmersiveModeConfirmation$ClingWindowView;->mUpdateLayoutRunnable:Ljava/lang/Runnable;
 
@@ -99,7 +95,6 @@
 
 .method static synthetic access$400(Lcom/android/internal/policy/impl/ImmersiveModeConfirmation$ClingWindowView;)Ljava/lang/Runnable;
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/ImmersiveModeConfirmation$ClingWindowView;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/ImmersiveModeConfirmation$ClingWindowView;->mConfirm:Ljava/lang/Runnable;
 
@@ -108,7 +103,6 @@
 
 .method static synthetic access$500(Lcom/android/internal/policy/impl/ImmersiveModeConfirmation$ClingWindowView;)Landroid/graphics/drawable/ColorDrawable;
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/ImmersiveModeConfirmation$ClingWindowView;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/ImmersiveModeConfirmation$ClingWindowView;->mColor:Landroid/graphics/drawable/ColorDrawable;
 
@@ -364,7 +358,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 2
-    .param p1    # Landroid/view/MotionEvent;
 
     const-string v0, "ImmersiveModeConfirmation"
 

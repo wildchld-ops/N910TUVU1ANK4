@@ -41,8 +41,6 @@
 # virtual methods
 .method public bluetoothLog(Ljava/lang/String;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     :try_start_0
     invoke-static {}, Landroid/sec/enterprise/EnterpriseDeviceManager$EDMProxyServiceHelper;->getService()Landroid/sec/enterprise/IEDMProxy;
@@ -73,7 +71,6 @@
 
 .method public getAllowBluetoothDataTransfer(Z)Z
     .locals 4
-    .param p1    # Z
 
     :try_start_0
     invoke-static {}, Landroid/sec/enterprise/EnterpriseDeviceManager$EDMProxyServiceHelper;->getService()Landroid/sec/enterprise/IEDMProxy;
@@ -108,7 +105,6 @@
 
 .method public isBluetoothDeviceAllowed(Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     invoke-static {}, Landroid/sec/enterprise/EnterpriseDeviceManager$EDMProxyServiceHelper;->getService()Landroid/sec/enterprise/IEDMProxy;
@@ -215,7 +211,6 @@
 
 .method public isBluetoothUUIDAllowed(Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     invoke-static {}, Landroid/sec/enterprise/EnterpriseDeviceManager$EDMProxyServiceHelper;->getService()Landroid/sec/enterprise/IEDMProxy;
@@ -420,7 +415,6 @@
 
 .method public isProfileEnabled(I)Z
     .locals 4
-    .param p1    # I
 
     :try_start_0
     invoke-static {}, Landroid/sec/enterprise/EnterpriseDeviceManager$EDMProxyServiceHelper;->getService()Landroid/sec/enterprise/IEDMProxy;

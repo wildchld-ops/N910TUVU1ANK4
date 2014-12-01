@@ -31,8 +31,6 @@
 
 .method private constructor <init>(Landroid/graphics/drawable/LevelListDrawable$LevelListState;Landroid/content/res/Resources;)V
     .locals 2
-    .param p1    # Landroid/graphics/drawable/LevelListDrawable$LevelListState;
-    .param p2    # Landroid/content/res/Resources;
 
     invoke-direct {p0}, Landroid/graphics/drawable/DrawableContainer;-><init>()V
 
@@ -55,9 +53,6 @@
 
 .method synthetic constructor <init>(Landroid/graphics/drawable/LevelListDrawable$LevelListState;Landroid/content/res/Resources;Landroid/graphics/drawable/LevelListDrawable$1;)V
     .locals 0
-    .param p1    # Landroid/graphics/drawable/LevelListDrawable$LevelListState;
-    .param p2    # Landroid/content/res/Resources;
-    .param p3    # Landroid/graphics/drawable/LevelListDrawable$1;
 
     invoke-direct {p0, p1, p2}, Landroid/graphics/drawable/LevelListDrawable;-><init>(Landroid/graphics/drawable/LevelListDrawable$LevelListState;Landroid/content/res/Resources;)V
 
@@ -68,9 +63,6 @@
 # virtual methods
 .method public addLevel(IILandroid/graphics/drawable/Drawable;)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/graphics/drawable/Drawable;
 
     if-eqz p3, :cond_0
 
@@ -90,9 +82,6 @@
 
 .method public inflate(Landroid/content/res/Resources;Lorg/xmlpull/v1/XmlPullParser;Landroid/util/AttributeSet;)V
     .locals 11
-    .param p1    # Landroid/content/res/Resources;
-    .param p2    # Lorg/xmlpull/v1/XmlPullParser;
-    .param p3    # Landroid/util/AttributeSet;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -348,7 +337,6 @@
 
 .method protected onLevelChange(I)Z
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Landroid/graphics/drawable/LevelListDrawable;->mLevelListState:Landroid/graphics/drawable/LevelListDrawable$LevelListState;
 

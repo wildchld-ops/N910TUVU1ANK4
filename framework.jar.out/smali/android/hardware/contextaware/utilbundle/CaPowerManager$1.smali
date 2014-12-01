@@ -39,8 +39,6 @@
 # virtual methods
 .method public final onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     if-nez p1, :cond_1
 

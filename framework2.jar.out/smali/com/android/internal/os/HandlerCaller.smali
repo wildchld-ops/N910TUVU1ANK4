@@ -25,10 +25,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/os/Looper;Lcom/android/internal/os/HandlerCaller$Callback;Z)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/Looper;
-    .param p3    # Lcom/android/internal/os/HandlerCaller$Callback;
-    .param p4    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -63,7 +59,6 @@
 # virtual methods
 .method public executeOrSendMessage(Landroid/os/Message;)V
     .locals 2
-    .param p1    # Landroid/os/Message;
 
     invoke-static {}, Landroid/os/Looper;->myLooper()Landroid/os/Looper;
 
@@ -92,7 +87,6 @@
 
 .method public hasMessages(I)Z
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/internal/os/HandlerCaller;->mH:Landroid/os/Handler;
 
@@ -105,7 +99,6 @@
 
 .method public obtainMessage(I)Landroid/os/Message;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/internal/os/HandlerCaller;->mH:Landroid/os/Handler;
 
@@ -118,9 +111,6 @@
 
 .method public obtainMessageBO(IZLjava/lang/Object;)Landroid/os/Message;
     .locals 3
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # Ljava/lang/Object;
 
     const/4 v1, 0x0
 
@@ -145,10 +135,6 @@
 
 .method public obtainMessageBOO(IZLjava/lang/Object;Ljava/lang/Object;)Landroid/os/Message;
     .locals 4
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # Ljava/lang/Object;
-    .param p4    # Ljava/lang/Object;
 
     const/4 v2, 0x0
 
@@ -181,8 +167,6 @@
 
 .method public obtainMessageI(II)Landroid/os/Message;
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/internal/os/HandlerCaller;->mH:Landroid/os/Handler;
 
@@ -197,9 +181,6 @@
 
 .method public obtainMessageII(III)Landroid/os/Message;
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     iget-object v0, p0, Lcom/android/internal/os/HandlerCaller;->mH:Landroid/os/Handler;
 
@@ -212,11 +193,6 @@
 
 .method public obtainMessageIIII(IIIII)Landroid/os/Message;
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     const/4 v2, 0x0
 
@@ -243,13 +219,6 @@
 
 .method public obtainMessageIIIIII(IIIIIII)Landroid/os/Message;
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
 
     const/4 v2, 0x0
 
@@ -280,12 +249,6 @@
 
 .method public obtainMessageIIIIO(IIIIILjava/lang/Object;)Landroid/os/Message;
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Ljava/lang/Object;
 
     const/4 v2, 0x0
 
@@ -314,10 +277,6 @@
 
 .method public obtainMessageIIO(IIILjava/lang/Object;)Landroid/os/Message;
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/Object;
 
     iget-object v0, p0, Lcom/android/internal/os/HandlerCaller;->mH:Landroid/os/Handler;
 
@@ -330,11 +289,6 @@
 
 .method public obtainMessageIIOO(IIILjava/lang/Object;Ljava/lang/Object;)Landroid/os/Message;
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/Object;
-    .param p5    # Ljava/lang/Object;
 
     invoke-static {}, Lcom/android/internal/os/SomeArgs;->obtain()Lcom/android/internal/os/SomeArgs;
 
@@ -355,9 +309,6 @@
 
 .method public obtainMessageIO(IILjava/lang/Object;)Landroid/os/Message;
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/Object;
 
     iget-object v0, p0, Lcom/android/internal/os/HandlerCaller;->mH:Landroid/os/Handler;
 
@@ -372,10 +323,6 @@
 
 .method public obtainMessageIOO(IILjava/lang/Object;Ljava/lang/Object;)Landroid/os/Message;
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/Object;
-    .param p4    # Ljava/lang/Object;
 
     invoke-static {}, Lcom/android/internal/os/SomeArgs;->obtain()Lcom/android/internal/os/SomeArgs;
 
@@ -398,8 +345,6 @@
 
 .method public obtainMessageO(ILjava/lang/Object;)Landroid/os/Message;
     .locals 2
-    .param p1    # I
-    .param p2    # Ljava/lang/Object;
 
     const/4 v1, 0x0
 
@@ -414,9 +359,6 @@
 
 .method public obtainMessageOO(ILjava/lang/Object;Ljava/lang/Object;)Landroid/os/Message;
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/Object;
-    .param p3    # Ljava/lang/Object;
 
     const/4 v2, 0x0
 
@@ -439,10 +381,6 @@
 
 .method public obtainMessageOOO(ILjava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Landroid/os/Message;
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/Object;
-    .param p3    # Ljava/lang/Object;
-    .param p4    # Ljava/lang/Object;
 
     const/4 v2, 0x0
 
@@ -467,11 +405,6 @@
 
 .method public obtainMessageOOOO(ILjava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Landroid/os/Message;
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/Object;
-    .param p3    # Ljava/lang/Object;
-    .param p4    # Ljava/lang/Object;
-    .param p5    # Ljava/lang/Object;
 
     const/4 v2, 0x0
 
@@ -498,7 +431,6 @@
 
 .method public removeMessages(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/internal/os/HandlerCaller;->mH:Landroid/os/Handler;
 
@@ -509,8 +441,6 @@
 
 .method public removeMessages(ILjava/lang/Object;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/Object;
 
     iget-object v0, p0, Lcom/android/internal/os/HandlerCaller;->mH:Landroid/os/Handler;
 
@@ -521,7 +451,6 @@
 
 .method public sendMessage(Landroid/os/Message;)V
     .locals 1
-    .param p1    # Landroid/os/Message;
 
     iget-object v0, p0, Lcom/android/internal/os/HandlerCaller;->mH:Landroid/os/Handler;
 
@@ -532,8 +461,6 @@
 
 .method public sendMessageDelayed(Landroid/os/Message;J)V
     .locals 1
-    .param p1    # Landroid/os/Message;
-    .param p2    # J
 
     iget-object v0, p0, Lcom/android/internal/os/HandlerCaller;->mH:Landroid/os/Handler;
 

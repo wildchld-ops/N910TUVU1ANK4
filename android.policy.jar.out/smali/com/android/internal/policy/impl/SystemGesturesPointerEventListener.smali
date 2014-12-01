@@ -101,8 +101,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Lcom/android/internal/policy/impl/SystemGesturesPointerEventListener$Callbacks;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/internal/policy/impl/SystemGesturesPointerEventListener$Callbacks;
 
     const/high16 v3, 0x3f000000
 
@@ -224,8 +222,6 @@
 
 .method private captureDown(Landroid/view/MotionEvent;I)V
     .locals 5
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # I
 
     invoke-virtual {p1, p2}, Landroid/view/MotionEvent;->getPointerId(I)I
 
@@ -269,7 +265,6 @@
 
 .method private static checkNull(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 3
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -312,7 +307,6 @@
 
 .method private detectEasyOneHandGesture(Landroid/view/MotionEvent;)I
     .locals 13
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v10, 0x3
 
@@ -752,10 +746,6 @@
 
 .method private detectSwipe(IJFF)I
     .locals 11
-    .param p1    # I
-    .param p2    # J
-    .param p4    # F
-    .param p5    # F
 
     iget-object v9, p0, Lcom/android/internal/policy/impl/SystemGesturesPointerEventListener;->mDownX:[F
 
@@ -1076,7 +1066,6 @@
 
 .method private detectSwipe(Landroid/view/MotionEvent;)I
     .locals 20
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual/range {p1 .. p1}, Landroid/view/MotionEvent;->getHistorySize()I
 
@@ -1203,7 +1192,6 @@
 
 .method private findIndex(I)I
     .locals 4
-    .param p1    # I
 
     const/4 v1, -0x1
 
@@ -1314,7 +1302,6 @@
 # virtual methods
 .method public onPointerEvent(Landroid/view/MotionEvent;)V
     .locals 12
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v11, 0x2
 

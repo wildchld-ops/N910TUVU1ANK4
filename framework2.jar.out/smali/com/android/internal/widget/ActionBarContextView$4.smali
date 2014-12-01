@@ -36,7 +36,6 @@
 # virtual methods
 .method public onLongClick(Landroid/view/View;)Z
     .locals 14
-    .param p1    # Landroid/view/View;
 
     const/4 v13, 0x2
 

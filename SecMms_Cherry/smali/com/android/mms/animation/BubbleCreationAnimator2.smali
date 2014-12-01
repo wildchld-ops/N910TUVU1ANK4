@@ -23,10 +23,6 @@
 # direct methods
 .method public constructor <init>(Landroid/widget/ListView;Lcom/android/mms/ui/MessageListItem;IZ)V
     .locals 0
-    .param p1    # Landroid/widget/ListView;
-    .param p2    # Lcom/android/mms/ui/MessageListItem;
-    .param p3    # I
-    .param p4    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -45,14 +41,12 @@
 # virtual methods
 .method public onAnimationCancel(Landroid/animation/Animator;)V
     .locals 0
-    .param p1    # Landroid/animation/Animator;
 
     return-void
 .end method
 
 .method public onAnimationEnd(Landroid/animation/Animator;)V
     .locals 4
-    .param p1    # Landroid/animation/Animator;
 
     const/4 v3, -0x2
 
@@ -141,14 +135,12 @@
 
 .method public onAnimationRepeat(Landroid/animation/Animator;)V
     .locals 0
-    .param p1    # Landroid/animation/Animator;
 
     return-void
 .end method
 
 .method public onAnimationStart(Landroid/animation/Animator;)V
     .locals 0
-    .param p1    # Landroid/animation/Animator;
 
     return-void
 .end method

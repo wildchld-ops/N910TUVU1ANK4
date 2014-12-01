@@ -158,7 +158,7 @@
 
     iget-object v3, p0, Lcom/android/phone/ims/ImsEditor;->mCheckbox:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v3, v1}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+    invoke-virtual {v3, v1}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     return-void
 
@@ -193,9 +193,9 @@
 
     const/4 v0, -0x1
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->setResult(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/ims/ImsEditor;->setResult(I)V
 
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/ims/ImsEditor;->finish()V
 
     return-void
 .end method
@@ -221,7 +221,7 @@
 
     iget v5, v2, Lcom/android/phone/ims/ImsEditor$PreferenceKey;->text:I
 
-    invoke-virtual {p0, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v5}, Lcom/android/phone/ims/ImsEditor;->getString(I)Ljava/lang/String;
 
     move-result-object v4
 
@@ -286,7 +286,7 @@
 
     iget-object v1, p0, Lcom/android/phone/ims/ImsEditor;->mCheckbox:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v1}, Landroid/preference/TwoStatePreference;->isChecked()Z
+    invoke-virtual {v1}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
     move-result v1
 
@@ -294,7 +294,7 @@
 
     const/4 v0, -0x1
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->setResult(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/ims/ImsEditor;->setResult(I)V
 
     const v0, 0x7f09021e
 
@@ -304,7 +304,7 @@
 
     invoke-virtual {v0}, Landroid/widget/Toast;->show()V
 
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/ims/ImsEditor;->finish()V
 
     return-void
 
@@ -343,13 +343,13 @@
 
     const v4, 0x7f04004e
 
-    invoke-virtual {p0, v4}, Landroid/app/Activity;->setContentView(I)V
+    invoke-virtual {p0, v4}, Lcom/android/phone/ims/ImsEditor;->setContentView(I)V
 
     const v4, 0x7f060026
 
-    invoke-virtual {p0, v4}, Landroid/preference/PreferenceActivity;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v4}, Lcom/android/phone/ims/ImsEditor;->addPreferencesFromResource(I)V
 
-    invoke-virtual {p0}, Landroid/preference/PreferenceActivity;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/phone/ims/ImsEditor;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v3
 
@@ -373,17 +373,17 @@
     goto :goto_0
 
     :cond_1
-    invoke-virtual {p0}, Landroid/preference/PreferenceActivity;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/phone/ims/ImsEditor;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v4
 
     const v5, 0x7f090268
 
-    invoke-virtual {p0, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v5}, Lcom/android/phone/ims/ImsEditor;->getString(I)Ljava/lang/String;
 
     move-result-object v5
 
-    invoke-virtual {v4, v5}, Landroid/preference/PreferenceGroup;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {v4, v5}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v4
 
@@ -393,11 +393,11 @@
 
     const v4, 0x7f090262
 
-    invoke-virtual {v3, v4}, Landroid/preference/Preference;->setTitle(I)V
+    invoke-virtual {v3, v4}, Landroid/preference/PreferenceGroup;->setTitle(I)V
 
     invoke-direct {p0}, Lcom/android/phone/ims/ImsEditor;->loadPreferences()V
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getActionBar()Landroid/app/ActionBar;
+    invoke-virtual {p0}, Lcom/android/phone/ims/ImsEditor;->getActionBar()Landroid/app/ActionBar;
 
     move-result-object v0
 
@@ -419,7 +419,7 @@
 
     const/4 v2, 0x0
 
-    invoke-super {p0, p1}, Landroid/app/Activity;->onCreateOptionsMenu(Landroid/view/Menu;)Z
+    invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onCreateOptionsMenu(Landroid/view/Menu;)Z
 
     const v0, 0x7f09026b
 
@@ -459,7 +459,7 @@
 
     packed-switch p1, :pswitch_data_0
 
-    invoke-super {p0, p1, p2}, Landroid/app/Activity;->onKeyDown(ILandroid/view/KeyEvent;)Z
+    invoke-super {p0, p1, p2}, Landroid/preference/PreferenceActivity;->onKeyDown(ILandroid/view/KeyEvent;)Z
 
     move-result v0
 
@@ -493,7 +493,7 @@
 
     sparse-switch v1, :sswitch_data_0
 
-    invoke-super {p0, p1}, Landroid/app/Activity;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
+    invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
 
     move-result v0
 
@@ -506,7 +506,7 @@
     goto :goto_0
 
     :sswitch_1
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/ims/ImsEditor;->finish()V
 
     goto :goto_0
 
@@ -545,7 +545,7 @@
 
     move-result-object v1
 
-    invoke-virtual {p0}, Landroid/app/Activity;->isFinishing()Z
+    invoke-virtual {p0}, Lcom/android/phone/ims/ImsEditor;->isFinishing()Z
 
     move-result v2
 
@@ -560,7 +560,7 @@
     invoke-static {v0, v1}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
-    invoke-virtual {p0}, Landroid/app/Activity;->isFinishing()Z
+    invoke-virtual {p0}, Lcom/android/phone/ims/ImsEditor;->isFinishing()Z
 
     move-result v0
 
@@ -569,7 +569,7 @@
     invoke-direct {p0}, Lcom/android/phone/ims/ImsEditor;->validateAndSetResult()V
 
     :cond_1
-    invoke-super {p0}, Landroid/app/Activity;->onPause()V
+    invoke-super {p0}, Landroid/preference/PreferenceActivity;->onPause()V
 
     return-void
 .end method
@@ -628,13 +628,13 @@
 
     const/4 v1, 0x1
 
-    invoke-super {p0}, Landroid/app/Activity;->onResume()V
+    invoke-super {p0}, Landroid/preference/PreferenceActivity;->onResume()V
 
-    invoke-virtual {p0}, Landroid/preference/PreferenceActivity;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/phone/ims/ImsEditor;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
-    invoke-virtual {v0, v1}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->setEnabled(Z)V
 
     iget-object v0, p0, Lcom/android/phone/ims/ImsEditor;->mRemoveButton:Landroid/widget/Button;
 
@@ -642,7 +642,7 @@
 
     iget-object v0, p0, Lcom/android/phone/ims/ImsEditor;->mRemoveButton:Landroid/widget/Button;
 
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setEnabled(Z)V
+    invoke-virtual {v0, v1}, Landroid/widget/Button;->setEnabled(Z)V
 
     :cond_0
     return-void

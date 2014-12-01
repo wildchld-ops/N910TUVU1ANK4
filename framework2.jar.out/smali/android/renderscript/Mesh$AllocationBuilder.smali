@@ -33,7 +33,6 @@
 # direct methods
 .method public constructor <init>(Landroid/renderscript/RenderScript;)V
     .locals 1
-    .param p1    # Landroid/renderscript/RenderScript;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -62,8 +61,6 @@
 # virtual methods
 .method public addIndexSetAllocation(Landroid/renderscript/Allocation;Landroid/renderscript/Mesh$Primitive;)Landroid/renderscript/Mesh$AllocationBuilder;
     .locals 2
-    .param p1    # Landroid/renderscript/Allocation;
-    .param p2    # Landroid/renderscript/Mesh$Primitive;
 
     new-instance v0, Landroid/renderscript/Mesh$AllocationBuilder$Entry;
 
@@ -82,7 +79,6 @@
 
 .method public addIndexSetType(Landroid/renderscript/Mesh$Primitive;)Landroid/renderscript/Mesh$AllocationBuilder;
     .locals 2
-    .param p1    # Landroid/renderscript/Mesh$Primitive;
 
     new-instance v0, Landroid/renderscript/Mesh$AllocationBuilder$Entry;
 
@@ -103,7 +99,6 @@
 
 .method public addVertexAllocation(Landroid/renderscript/Allocation;)Landroid/renderscript/Mesh$AllocationBuilder;
     .locals 3
-    .param p1    # Landroid/renderscript/Allocation;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;

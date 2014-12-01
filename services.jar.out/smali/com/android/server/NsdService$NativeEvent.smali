@@ -25,8 +25,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/NsdService;ILjava/lang/String;)V
     .locals 0
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/server/NsdService$NativeEvent;->this$0:Lcom/android/server/NsdService;
 

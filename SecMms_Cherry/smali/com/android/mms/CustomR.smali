@@ -20,7 +20,6 @@
 
 .method public static getResourceId(I)I
     .locals 3
-    .param p0    # I
 
     const-string v0, "Mms/CustomR"
 
@@ -51,8 +50,6 @@
 
 .method public static getResourceId(II)I
     .locals 1
-    .param p0    # I
-    .param p1    # I
 
     const/4 v0, 0x0
 

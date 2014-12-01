@@ -310,7 +310,7 @@
 
     move-object v1, p1
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/PresetImage;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -753,13 +753,13 @@
     const/4 v2, 0x0
 
     :try_start_0
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/PresetImage;->getActivity()Landroid/app/Activity;
 
     move-result-object v6
 
     const-string v7, "preset_photo.jpg"
 
-    invoke-virtual {v6, v7, v2}, Landroid/content/ContextWrapper;->openFileOutput(Ljava/lang/String;I)Ljava/io/FileOutputStream;
+    invoke-virtual {v6, v7, v2}, Landroid/app/Activity;->openFileOutput(Ljava/lang/String;I)Ljava/io/FileOutputStream;
 
     move-result-object v1
 
@@ -773,7 +773,7 @@
 
     const-string v3, "photo"
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/PresetImage;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v6
 
@@ -781,7 +781,7 @@
 
     invoke-static {v6, v7, v4}, Landroid/provider/Settings$System;->putString(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Z
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/PresetImage;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v6
 
@@ -798,7 +798,7 @@
     :catch_0
     move-exception v0
 
-    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
+    invoke-virtual {v0}, Ljava/io/IOException;->printStackTrace()V
 
     const-string v6, "IOException"
 
@@ -837,7 +837,7 @@
 
     invoke-static {v2, v3}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-virtual/range {p0 .. p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual/range {p0 .. p0}, Lcom/android/phone/callsettings/PresetImage;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
@@ -902,7 +902,7 @@
     iput v2, v10, Landroid/graphics/BitmapFactory$Options;->inSampleSize:I
 
     :try_start_1
-    invoke-virtual/range {p0 .. p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual/range {p0 .. p0}, Lcom/android/phone/callsettings/PresetImage;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 
@@ -952,7 +952,7 @@
     move-result-object v13
 
     :try_start_2
-    invoke-virtual/range {p0 .. p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual/range {p0 .. p0}, Lcom/android/phone/callsettings/PresetImage;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -960,7 +960,7 @@
 
     const/4 v4, 0x0
 
-    invoke-virtual {v2, v3, v4}, Landroid/content/ContextWrapper;->openFileOutput(Ljava/lang/String;I)Ljava/io/FileOutputStream;
+    invoke-virtual {v2, v3, v4}, Landroid/app/Activity;->openFileOutput(Ljava/lang/String;I)Ljava/io/FileOutputStream;
 
     move-result-object v9
 
@@ -974,7 +974,7 @@
 
     const-string v11, "video"
 
-    invoke-virtual/range {p0 .. p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual/range {p0 .. p0}, Lcom/android/phone/callsettings/PresetImage;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 
@@ -982,7 +982,7 @@
 
     invoke-static {v2, v3, v12}, Landroid/provider/Settings$System;->putString(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Z
 
-    invoke-virtual/range {p0 .. p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual/range {p0 .. p0}, Lcom/android/phone/callsettings/PresetImage;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 
@@ -990,7 +990,7 @@
 
     invoke-static {v2, v3, v11}, Landroid/provider/Settings$System;->putString(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Z
 
-    invoke-virtual/range {p0 .. p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual/range {p0 .. p0}, Lcom/android/phone/callsettings/PresetImage;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 
@@ -1011,7 +1011,7 @@
     move-exception v8
 
     :try_start_3
-    invoke-virtual {v8}, Ljava/lang/Throwable;->printStackTrace()V
+    invoke-virtual {v8}, Ljava/io/IOException;->printStackTrace()V
 
     const-string v2, "IOException"
 
@@ -1026,7 +1026,7 @@
     :catch_1
     move-exception v8
 
-    invoke-virtual {v8}, Ljava/lang/Throwable;->printStackTrace()V
+    invoke-virtual {v8}, Ljava/lang/Exception;->printStackTrace()V
 
     const-string v2, "Exception casued by thumnail operation"
 
@@ -1073,7 +1073,7 @@
 
     invoke-static {v12, v13}, Lcom/android/phone/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/PresetImage;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v12
 
@@ -1083,7 +1083,7 @@
 
     move-result-object v10
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/PresetImage;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v12
 
@@ -1096,11 +1096,11 @@
     const-string v3, "data/data/com.android.phone/files/preset_defaultimage.jpg"
 
     :try_start_0
-    invoke-virtual {p0}, Landroid/app/Fragment;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/PresetImage;->getResources()Landroid/content/res/Resources;
 
     move-result-object v5
 
-    const v12, 0x7f02024c
+    const v12, 0x7f02024b
 
     invoke-virtual {v5, v12}, Landroid/content/res/Resources;->openRawResource(I)Ljava/io/InputStream;
     :try_end_0
@@ -1122,7 +1122,7 @@
 
     if-nez v12, :cond_1
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/PresetImage;->getActivity()Landroid/app/Activity;
 
     move-result-object v12
 
@@ -1130,7 +1130,7 @@
 
     const/4 v14, 0x0
 
-    invoke-virtual {v12, v13, v14}, Landroid/content/ContextWrapper;->openFileOutput(Ljava/lang/String;I)Ljava/io/FileOutputStream;
+    invoke-virtual {v12, v13, v14}, Landroid/app/Activity;->openFileOutput(Ljava/lang/String;I)Ljava/io/FileOutputStream;
     :try_end_1
     .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_2
     .catch Landroid/content/res/Resources$NotFoundException; {:try_start_1 .. :try_end_1} :catch_4
@@ -1155,7 +1155,7 @@
 
     const/4 v12, 0x0
 
-    invoke-virtual {v7, v0, v12, v11}, Ljava/io/FileOutputStream;->write([BII)V
+    invoke-virtual {v7, v0, v12, v11}, Ljava/io/OutputStream;->write([BII)V
     :try_end_2
     .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_0
     .catch Landroid/content/res/Resources$NotFoundException; {:try_start_2 .. :try_end_2} :catch_1
@@ -1166,11 +1166,11 @@
     move-exception v1
 
     :try_start_3
-    invoke-virtual {v1}, Ljava/lang/Throwable;->printStackTrace()V
+    invoke-virtual {v1}, Ljava/io/IOException;->printStackTrace()V
 
     :cond_0
     :goto_1
-    invoke-virtual {v7}, Ljava/io/FileOutputStream;->close()V
+    invoke-virtual {v7}, Ljava/io/OutputStream;->close()V
     :try_end_3
     .catch Ljava/io/IOException; {:try_start_3 .. :try_end_3} :catch_2
     .catch Landroid/content/res/Resources$NotFoundException; {:try_start_3 .. :try_end_3} :catch_4
@@ -1194,7 +1194,7 @@
 
     const-string v9, "preset_default"
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/PresetImage;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v12
 
@@ -1202,7 +1202,7 @@
 
     invoke-static {v12, v13, v9}, Landroid/provider/Settings$System;->putString(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Z
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/PresetImage;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v12
 
@@ -1214,7 +1214,7 @@
 
     const v13, 0x7f020137
 
-    invoke-virtual {v12, v13}, Landroid/widget/ImageView;->setImageResource(I)V
+    invoke-virtual {v12, v13}, Landroid/widget/ImageButton;->setImageResource(I)V
 
     :goto_4
     return-void
@@ -1223,7 +1223,7 @@
     move-exception v1
 
     :try_start_5
-    invoke-virtual {v1}, Ljava/lang/Throwable;->printStackTrace()V
+    invoke-virtual {v1}, Landroid/content/res/Resources$NotFoundException;->printStackTrace()V
     :try_end_5
     .catch Ljava/io/IOException; {:try_start_5 .. :try_end_5} :catch_2
     .catch Landroid/content/res/Resources$NotFoundException; {:try_start_5 .. :try_end_5} :catch_4
@@ -1234,7 +1234,7 @@
     move-exception v1
 
     :try_start_6
-    invoke-virtual {v1}, Ljava/lang/Throwable;->printStackTrace()V
+    invoke-virtual {v1}, Ljava/io/IOException;->printStackTrace()V
     :try_end_6
     .catch Ljava/io/IOException; {:try_start_6 .. :try_end_6} :catch_3
     .catch Landroid/content/res/Resources$NotFoundException; {:try_start_6 .. :try_end_6} :catch_4
@@ -1244,7 +1244,7 @@
     :catch_3
     move-exception v1
 
-    invoke-virtual {v1}, Ljava/lang/Throwable;->printStackTrace()V
+    invoke-virtual {v1}, Ljava/io/IOException;->printStackTrace()V
 
     goto :goto_3
 
@@ -1276,7 +1276,7 @@
     goto :goto_3
 
     :cond_2
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/PresetImage;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v12
 
@@ -1284,7 +1284,7 @@
 
     invoke-static {v12, v13, v9}, Landroid/provider/Settings$System;->putString(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Z
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/PresetImage;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v12
 
@@ -1296,11 +1296,11 @@
 
     move-result-object v6
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/PresetImage;->getResources()Landroid/content/res/Resources;
 
     move-result-object v12
 
-    const v13, 0x7f020305
+    const v13, 0x7f020304
 
     invoke-static {v12, v13}, Landroid/graphics/BitmapFactory;->decodeResource(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;
 
@@ -1316,7 +1316,7 @@
 
     move-result-object v13
 
-    invoke-virtual {v12, v13}, Landroid/widget/ImageView;->setImageBitmap(Landroid/graphics/Bitmap;)V
+    invoke-virtual {v12, v13}, Landroid/widget/ImageButton;->setImageBitmap(Landroid/graphics/Bitmap;)V
 
     goto :goto_4
 
@@ -1331,14 +1331,14 @@
 
     const v13, 0x7f020137
 
-    invoke-virtual {v12, v13}, Landroid/widget/ImageView;->setImageResource(I)V
+    invoke-virtual {v12, v13}, Landroid/widget/ImageButton;->setImageResource(I)V
 
     goto :goto_4
 
     :cond_4
     iget-object v12, p0, Lcom/android/phone/callsettings/PresetImage;->mImageButton:Landroid/widget/ImageButton;
 
-    invoke-virtual {v12, v6}, Landroid/widget/ImageView;->setImageBitmap(Landroid/graphics/Bitmap;)V
+    invoke-virtual {v12, v6}, Landroid/widget/ImageButton;->setImageBitmap(Landroid/graphics/Bitmap;)V
 
     goto :goto_4
 .end method
@@ -1349,7 +1349,7 @@
     .locals 3
     .param p1    # Ljava/lang/String;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/PresetImage;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -1370,7 +1370,7 @@
     .param p2    # I
     .param p3    # Landroid/content/Intent;
 
-    invoke-super {p0, p1, p2, p3}, Landroid/preference/PreferenceFragment;->onActivityResult(IILandroid/content/Intent;)V
+    invoke-super {p0, p1, p2, p3}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onActivityResult(IILandroid/content/Intent;)V
 
     const-string v5, "PresetImage"
 
@@ -1468,7 +1468,7 @@
     const/16 v5, 0x32
 
     :try_start_0
-    invoke-virtual {p0, v0, v5}, Landroid/app/Fragment;->startActivityForResult(Landroid/content/Intent;I)V
+    invoke-virtual {p0, v0, v5}, Lcom/android/phone/callsettings/PresetImage;->startActivityForResult(Landroid/content/Intent;I)V
     :try_end_0
     .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -1479,7 +1479,7 @@
 
     const v5, 0x7f090929
 
-    invoke-virtual {p0, v5}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v5}, Lcom/android/phone/callsettings/PresetImage;->getString(I)Ljava/lang/String;
 
     move-result-object v5
 
@@ -1608,7 +1608,7 @@
 
     invoke-static {v0, v1}, Lcom/android/phone/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-super {p0, p1}, Landroid/app/Fragment;->onConfigurationChanged(Landroid/content/res/Configuration;)V
+    invoke-super {p0, p1}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
     return-void
 .end method
@@ -1625,7 +1625,7 @@
 
     invoke-static {v1, v2}, Lcom/android/phone/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getActionBar()Landroid/app/ActionBar;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/PresetImage;->getActionBar()Landroid/app/ActionBar;
 
     move-result-object v0
 
@@ -1692,11 +1692,11 @@
     :cond_0
     :goto_0
     :try_start_0
-    invoke-virtual {p0}, Landroid/app/Fragment;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/PresetImage;->getResources()Landroid/content/res/Resources;
 
     move-result-object v6
 
-    const v9, 0x7f02024c
+    const v9, 0x7f02024b
 
     invoke-virtual {v6, v9}, Landroid/content/res/Resources;->openRawResource(I)Ljava/io/InputStream;
     :try_end_0
@@ -1718,7 +1718,7 @@
 
     if-nez v9, :cond_2
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/PresetImage;->getActivity()Landroid/app/Activity;
 
     move-result-object v9
 
@@ -1726,7 +1726,7 @@
 
     const/4 v11, 0x0
 
-    invoke-virtual {v9, v10, v11}, Landroid/content/ContextWrapper;->openFileOutput(Ljava/lang/String;I)Ljava/io/FileOutputStream;
+    invoke-virtual {v9, v10, v11}, Landroid/app/Activity;->openFileOutput(Ljava/lang/String;I)Ljava/io/FileOutputStream;
     :try_end_1
     .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_1
     .catch Landroid/content/res/Resources$NotFoundException; {:try_start_1 .. :try_end_1} :catch_4
@@ -1756,7 +1756,7 @@
     :cond_1
     :goto_1
     :try_start_3
-    invoke-virtual {v7}, Ljava/io/FileOutputStream;->close()V
+    invoke-virtual {v7}, Ljava/io/OutputStream;->close()V
     :try_end_3
     .catch Ljava/io/IOException; {:try_start_3 .. :try_end_3} :catch_1
     .catch Landroid/content/res/Resources$NotFoundException; {:try_start_3 .. :try_end_3} :catch_4
@@ -1779,7 +1779,7 @@
 
     invoke-direct {v10, p0}, Lcom/android/phone/callsettings/PresetImage$3;-><init>(Lcom/android/phone/callsettings/PresetImage;)V
 
-    invoke-virtual {v9, v10}, Landroid/view/View;->post(Ljava/lang/Runnable;)Z
+    invoke-virtual {v9, v10}, Landroid/widget/ImageButton;->post(Ljava/lang/Runnable;)Z
 
     goto :goto_0
 
@@ -1787,7 +1787,7 @@
     move-exception v3
 
     :try_start_5
-    invoke-virtual {v3}, Ljava/lang/Throwable;->printStackTrace()V
+    invoke-virtual {v3}, Ljava/io/IOException;->printStackTrace()V
     :try_end_5
     .catch Ljava/io/IOException; {:try_start_5 .. :try_end_5} :catch_1
     .catch Landroid/content/res/Resources$NotFoundException; {:try_start_5 .. :try_end_5} :catch_4
@@ -1798,7 +1798,7 @@
     move-exception v3
 
     :try_start_6
-    invoke-virtual {v3}, Ljava/lang/Throwable;->printStackTrace()V
+    invoke-virtual {v3}, Ljava/io/IOException;->printStackTrace()V
     :try_end_6
     .catch Ljava/io/IOException; {:try_start_6 .. :try_end_6} :catch_2
     .catch Landroid/content/res/Resources$NotFoundException; {:try_start_6 .. :try_end_6} :catch_4
@@ -1808,7 +1808,7 @@
     :catch_2
     move-exception v3
 
-    invoke-virtual {v3}, Ljava/lang/Throwable;->printStackTrace()V
+    invoke-virtual {v3}, Ljava/io/IOException;->printStackTrace()V
 
     goto :goto_3
 
@@ -1816,7 +1816,7 @@
     move-exception v3
 
     :try_start_7
-    invoke-virtual {v3}, Ljava/lang/Throwable;->printStackTrace()V
+    invoke-virtual {v3}, Landroid/content/res/Resources$NotFoundException;->printStackTrace()V
     :try_end_7
     .catch Ljava/io/IOException; {:try_start_7 .. :try_end_7} :catch_1
     .catch Landroid/content/res/Resources$NotFoundException; {:try_start_7 .. :try_end_7} :catch_4
@@ -1860,14 +1860,14 @@
 
     iget-object v0, p0, Lcom/android/phone/callsettings/PresetImage;->changeDialog:Landroid/app/AlertDialog;
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->dismiss()V
+    invoke-virtual {v0}, Landroid/app/AlertDialog;->dismiss()V
 
     const/4 v0, 0x0
 
     iput-object v0, p0, Lcom/android/phone/callsettings/PresetImage;->changeDialog:Landroid/app/AlertDialog;
 
     :cond_0
-    invoke-super {p0}, Landroid/preference/PreferenceFragment;->onDestroy()V
+    invoke-super {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onDestroy()V
 
     return-void
 .end method
@@ -1910,7 +1910,7 @@
 
     iput-boolean v5, p0, Lcom/android/phone/callsettings/PresetImage;->isVideoContents:Z
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/PresetImage;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 
@@ -1930,7 +1930,7 @@
 
     if-nez v2, :cond_1
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/PresetImage;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 
@@ -2007,19 +2007,19 @@
 
     const v3, 0x7f090434
 
-    invoke-virtual {p0, v3}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v3}, Lcom/android/phone/callsettings/PresetImage;->getString(I)Ljava/lang/String;
 
     move-result-object v3
 
     aput-object v3, v2, v5
 
-    invoke-virtual {p0, v8}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v8}, Lcom/android/phone/callsettings/PresetImage;->getString(I)Ljava/lang/String;
 
     move-result-object v3
 
     aput-object v3, v2, v6
 
-    invoke-virtual {p0, v9}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v9}, Lcom/android/phone/callsettings/PresetImage;->getString(I)Ljava/lang/String;
 
     move-result-object v3
 
@@ -2034,13 +2034,13 @@
 
     new-array v2, v7, [Ljava/lang/String;
 
-    invoke-virtual {p0, v8}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v8}, Lcom/android/phone/callsettings/PresetImage;->getString(I)Ljava/lang/String;
 
     move-result-object v3
 
     aput-object v3, v2, v5
 
-    invoke-virtual {p0, v9}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v9}, Lcom/android/phone/callsettings/PresetImage;->getString(I)Ljava/lang/String;
 
     move-result-object v3
 
@@ -2058,13 +2058,13 @@
 
     iget-boolean v3, p0, Lcom/android/phone/callsettings/PresetImage;->isVideoContents:Z
 
-    invoke-virtual {v2, v3}, Landroid/view/View;->setClickable(Z)V
+    invoke-virtual {v2, v3}, Landroid/widget/ImageButton;->setClickable(Z)V
 
     iget-object v2, p0, Lcom/android/phone/callsettings/PresetImage;->mImageButton:Landroid/widget/ImageButton;
 
     iget-boolean v3, p0, Lcom/android/phone/callsettings/PresetImage;->isVideoContents:Z
 
-    invoke-virtual {v2, v3}, Landroid/view/View;->setFocusable(Z)V
+    invoke-virtual {v2, v3}, Landroid/widget/ImageButton;->setFocusable(Z)V
 
     const-string v2, "PresetImage"
 
@@ -2080,7 +2080,7 @@
 
     iget-object v4, p0, Lcom/android/phone/callsettings/PresetImage;->mImageButton:Landroid/widget/ImageButton;
 
-    invoke-virtual {v4}, Landroid/view/View;->isClickable()Z
+    invoke-virtual {v4}, Landroid/widget/ImageButton;->isClickable()Z
 
     move-result v4
 
@@ -2097,7 +2097,7 @@
     return-void
 
     :cond_4
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/PresetImage;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 
@@ -2107,7 +2107,7 @@
 
     invoke-static {v2, v3, v4}, Landroid/provider/Settings$System;->putString(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Z
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/PresetImage;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 
@@ -2115,7 +2115,7 @@
 
     const v4, 0x7f0902a6
 
-    invoke-virtual {p0, v4}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v4}, Lcom/android/phone/callsettings/PresetImage;->getString(I)Ljava/lang/String;
 
     move-result-object v4
 
@@ -2134,19 +2134,19 @@
 
     const v3, 0x7f090434
 
-    invoke-virtual {p0, v3}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v3}, Lcom/android/phone/callsettings/PresetImage;->getString(I)Ljava/lang/String;
 
     move-result-object v3
 
     aput-object v3, v2, v5
 
-    invoke-virtual {p0, v8}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v8}, Lcom/android/phone/callsettings/PresetImage;->getString(I)Ljava/lang/String;
 
     move-result-object v3
 
     aput-object v3, v2, v6
 
-    invoke-virtual {p0, v9}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v9}, Lcom/android/phone/callsettings/PresetImage;->getString(I)Ljava/lang/String;
 
     move-result-object v3
 
@@ -2156,7 +2156,7 @@
 
     const v4, 0x7f090433
 
-    invoke-virtual {p0, v4}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v4}, Lcom/android/phone/callsettings/PresetImage;->getString(I)Ljava/lang/String;
 
     move-result-object v4
 
@@ -2166,7 +2166,7 @@
 
     const v4, 0x7f090427
 
-    invoke-virtual {p0, v4}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v4}, Lcom/android/phone/callsettings/PresetImage;->getString(I)Ljava/lang/String;
 
     move-result-object v4
 
@@ -2183,13 +2183,13 @@
 
     new-array v2, v2, [Ljava/lang/String;
 
-    invoke-virtual {p0, v8}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v8}, Lcom/android/phone/callsettings/PresetImage;->getString(I)Ljava/lang/String;
 
     move-result-object v3
 
     aput-object v3, v2, v5
 
-    invoke-virtual {p0, v9}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v9}, Lcom/android/phone/callsettings/PresetImage;->getString(I)Ljava/lang/String;
 
     move-result-object v3
 
@@ -2197,7 +2197,7 @@
 
     const v3, 0x7f090433
 
-    invoke-virtual {p0, v3}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v3}, Lcom/android/phone/callsettings/PresetImage;->getString(I)Ljava/lang/String;
 
     move-result-object v3
 
@@ -2207,7 +2207,7 @@
 
     const v4, 0x7f090427
 
-    invoke-virtual {p0, v4}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v4}, Lcom/android/phone/callsettings/PresetImage;->getString(I)Ljava/lang/String;
 
     move-result-object v4
 
@@ -2254,9 +2254,9 @@
 
     invoke-direct {v1, p0}, Lcom/android/phone/callsettings/PresetImage$1;-><init>(Lcom/android/phone/callsettings/PresetImage;)V
 
-    invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v0, v1}, Landroid/widget/ImageButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getView()Landroid/view/View;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/PresetImage;->getView()Landroid/view/View;
 
     move-result-object v0
 
@@ -2276,7 +2276,7 @@
 
     invoke-direct {v1, p0}, Lcom/android/phone/callsettings/PresetImage$2;-><init>(Lcom/android/phone/callsettings/PresetImage;)V
 
-    invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     return-void
 .end method

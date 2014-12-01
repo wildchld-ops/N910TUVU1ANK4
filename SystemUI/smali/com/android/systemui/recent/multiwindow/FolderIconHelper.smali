@@ -131,7 +131,6 @@
 
 .method private static createDarkenColorFilter(F)Landroid/graphics/ColorFilter;
     .locals 4
-    .param p0    # F
 
     const/high16 v2, 0x3f800000
 
@@ -170,7 +169,6 @@
 
 .method static createFolderIconNoPlate(Landroid/graphics/Bitmap;Ljava/util/List;)Landroid/graphics/Bitmap;
     .locals 1
-    .param p0    # Landroid/graphics/Bitmap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -194,8 +192,6 @@
 
 .method static createFolderIconNoPlate(Landroid/graphics/Bitmap;Ljava/util/List;Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
     .locals 6
-    .param p0    # Landroid/graphics/Bitmap;
-    .param p2    # Landroid/graphics/Bitmap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -265,7 +261,6 @@
 
 .method static createFolderIconWithPlate(Landroid/graphics/Bitmap;Ljava/util/List;)Landroid/graphics/Bitmap;
     .locals 7
-    .param p0    # Landroid/graphics/Bitmap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -331,7 +326,6 @@
 
 .method private static drawIcons(Ljava/util/List;I)V
     .locals 11
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -510,9 +504,6 @@
 
 .method public static getAppIconXYCord(IIZ)[F
     .locals 7
-    .param p0    # I
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v6, 0x0
 
@@ -669,7 +660,6 @@
 
 .method public static initFolderResources(Landroid/content/res/Resources;)V
     .locals 2
-    .param p0    # Landroid/content/res/Resources;
 
     sput-object p0, Lcom/android/systemui/recent/multiwindow/FolderIconHelper;->mResources:Landroid/content/res/Resources;
 
@@ -745,7 +735,6 @@
 
 .method private static setDarkenPaintMultiplier(F)V
     .locals 1
-    .param p0    # F
 
     sget-object v0, Lcom/android/systemui/recent/multiwindow/FolderIconHelper;->FOLDER_ICON_PAINT:Landroid/graphics/Paint;
 
@@ -756,8 +745,6 @@
 
 .method private static setDarkenPaintMultiplier(FLandroid/graphics/Paint;)V
     .locals 1
-    .param p0    # F
-    .param p1    # Landroid/graphics/Paint;
 
     invoke-static {p0}, Lcom/android/systemui/recent/multiwindow/FolderIconHelper;->createDarkenColorFilter(F)Landroid/graphics/ColorFilter;
 

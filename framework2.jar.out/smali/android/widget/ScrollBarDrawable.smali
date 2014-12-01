@@ -94,7 +94,6 @@
 
 .method public constructor <init>(Landroid/view/View;)V
     .locals 4
-    .param p1    # Landroid/view/View;
 
     const/4 v3, 0x0
 
@@ -334,7 +333,6 @@
 # virtual methods
 .method public draw(Landroid/graphics/Canvas;)V
     .locals 18
-    .param p1    # Landroid/graphics/Canvas;
 
     move-object/from16 v0, p0
 
@@ -517,11 +515,6 @@
 
 .method protected drawThumb(Landroid/graphics/Canvas;Landroid/graphics/Rect;IIZ)V
     .locals 9
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # Landroid/graphics/Rect;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Z
 
     iget-object v3, p0, Landroid/widget/ScrollBarDrawable;->mTempBounds:Landroid/graphics/Rect;
 
@@ -738,9 +731,6 @@
 
 .method protected drawTrack(Landroid/graphics/Canvas;Landroid/graphics/Rect;Z)V
     .locals 2
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # Landroid/graphics/Rect;
-    .param p3    # Z
 
     if-eqz p3, :cond_2
 
@@ -825,7 +815,6 @@
 
 .method public getSize(Z)I
     .locals 1
-    .param p1    # Z
 
     if-eqz p1, :cond_1
 
@@ -870,7 +859,6 @@
 
 .method protected onBoundsChange(Landroid/graphics/Rect;)V
     .locals 1
-    .param p1    # Landroid/graphics/Rect;
 
     invoke-super {p0, p1}, Landroid/graphics/drawable/Drawable;->onBoundsChange(Landroid/graphics/Rect;)V
 
@@ -883,7 +871,6 @@
 
 .method public setAlpha(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/widget/ScrollBarDrawable;->mVerticalTrack:Landroid/graphics/drawable/Drawable;
 
@@ -916,7 +903,6 @@
 
 .method public setAlwaysDrawHorizontalTrack(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/widget/ScrollBarDrawable;->mAlwaysDrawHorizontalTrack:Z
 
@@ -925,7 +911,6 @@
 
 .method public setAlwaysDrawVerticalTrack(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/widget/ScrollBarDrawable;->mAlwaysDrawVerticalTrack:Z
 
@@ -934,7 +919,6 @@
 
 .method public setColorFilter(Landroid/graphics/ColorFilter;)V
     .locals 1
-    .param p1    # Landroid/graphics/ColorFilter;
 
     iget-object v0, p0, Landroid/widget/ScrollBarDrawable;->mVerticalTrack:Landroid/graphics/drawable/Drawable;
 
@@ -967,7 +951,6 @@
 
 .method public setHorizontalThumbDrawable(Landroid/graphics/drawable/Drawable;)V
     .locals 0
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     if-eqz p1, :cond_0
 
@@ -979,7 +962,6 @@
 
 .method public setHorizontalTrackDrawable(Landroid/graphics/drawable/Drawable;)V
     .locals 0
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     iput-object p1, p0, Landroid/widget/ScrollBarDrawable;->mHorizontalTrack:Landroid/graphics/drawable/Drawable;
 
@@ -988,10 +970,6 @@
 
 .method public setParameters(IIIZ)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Z
 
     const/4 v1, 0x1
 
@@ -1031,7 +1009,6 @@
 
 .method public setVerticalThumbDrawable(Landroid/graphics/drawable/Drawable;)V
     .locals 0
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     if-eqz p1, :cond_0
 
@@ -1043,7 +1020,6 @@
 
 .method public setVerticalTrackDrawable(Landroid/graphics/drawable/Drawable;)V
     .locals 0
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     iput-object p1, p0, Landroid/widget/ScrollBarDrawable;->mVerticalTrack:Landroid/graphics/drawable/Drawable;
 

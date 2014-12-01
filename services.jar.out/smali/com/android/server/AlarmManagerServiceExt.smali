@@ -87,9 +87,6 @@
 
 .method constructor <init>(Landroid/content/Context;Lcom/android/server/AlarmManagerService;Ljava/lang/Object;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/server/AlarmManagerService;
-    .param p3    # Ljava/lang/Object;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -112,7 +109,6 @@
 
 .method static synthetic access$002(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/server/AlarmManagerServiceExt;->mGmsLocationBundling:Z
 
@@ -137,8 +133,6 @@
 
 .method public static maxRepeatInterval(JJ)J
     .locals 12
-    .param p0    # J
-    .param p2    # J
 
     move-wide v4, p0
 

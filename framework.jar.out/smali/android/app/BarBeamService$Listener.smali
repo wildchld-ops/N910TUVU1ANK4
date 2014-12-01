@@ -26,7 +26,6 @@
 # direct methods
 .method constructor <init>(Landroid/app/BarBeamService;Landroid/os/IBinder;)V
     .locals 0
-    .param p2    # Landroid/os/IBinder;
 
     iput-object p1, p0, Landroid/app/BarBeamService$Listener;->this$0:Landroid/app/BarBeamService;
 

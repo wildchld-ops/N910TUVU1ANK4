@@ -33,7 +33,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -62,8 +61,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v1, 0x0
 
@@ -92,9 +89,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v1, 0x0
 
@@ -123,7 +117,6 @@
 
 .method static synthetic access$100(Lcom/diotek/ime/framework/view/chinesespell/AbstractSpellLayout;)Lcom/diotek/ime/framework/view/chinesespell/AbstractSpellView;
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/view/chinesespell/AbstractSpellLayout;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/chinesespell/AbstractSpellLayout;->mSpellTextView:Lcom/diotek/ime/framework/view/chinesespell/AbstractSpellView;
 
@@ -132,7 +125,6 @@
 
 .method static synthetic access$200(Lcom/diotek/ime/framework/view/chinesespell/AbstractSpellLayout;)Landroid/widget/PopupWindow;
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/view/chinesespell/AbstractSpellLayout;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/chinesespell/AbstractSpellLayout;->mFloatingWindow:Landroid/widget/PopupWindow;
 
@@ -141,7 +133,6 @@
 
 .method static synthetic access$300(Lcom/diotek/ime/framework/view/chinesespell/AbstractSpellLayout;)Lcom/diotek/ime/framework/common/InputManager;
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/view/chinesespell/AbstractSpellLayout;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/chinesespell/AbstractSpellLayout;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -306,7 +297,6 @@
 
 .method public setSpellView(Ljava/lang/CharSequence;)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
 
     iput-object p1, p0, Lcom/diotek/ime/framework/view/chinesespell/AbstractSpellLayout;->mSpellText:Ljava/lang/CharSequence;
 
@@ -315,7 +305,6 @@
 
 .method public setSpellViewShown(Z)V
     .locals 2
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 

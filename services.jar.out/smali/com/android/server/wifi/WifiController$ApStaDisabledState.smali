@@ -43,7 +43,6 @@
 
 .method private doDeferEnable(Landroid/os/Message;)Z
     .locals 8
-    .param p1    # Landroid/os/Message;
 
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
@@ -209,7 +208,6 @@
 
 .method public processMessage(Landroid/os/Message;)Z
     .locals 5
-    .param p1    # Landroid/os/Message;
 
     const/4 v3, 0x0
 

@@ -36,7 +36,6 @@
 # virtual methods
 .method public onWindowFocusChanged(Z)V
     .locals 1
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 

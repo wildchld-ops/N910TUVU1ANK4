@@ -40,8 +40,6 @@
 # virtual methods
 .method public compare(Lcom/touchtype_fluency/util/LanguagePack;Lcom/touchtype_fluency/util/LanguagePack;)I
     .locals 2
-    .param p1    # Lcom/touchtype_fluency/util/LanguagePack;
-    .param p2    # Lcom/touchtype_fluency/util/LanguagePack;
 
     invoke-virtual {p1}, Ljava/lang/Object;->hashCode()I
 
@@ -81,8 +79,6 @@
 
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p1, Lcom/touchtype_fluency/util/LanguagePack;
 

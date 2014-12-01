@@ -36,7 +36,6 @@
 # virtual methods
 .method public onDismiss(Landroid/content/DialogInterface;)V
     .locals 3
-    .param p1    # Landroid/content/DialogInterface;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/TipsDialog$35;->this$0:Lcom/diotek/ime/framework/view/TipsDialog;
 

@@ -36,9 +36,6 @@
 # virtual methods
 .method public onExtractSmartClipData(Landroid/view/View;Lcom/samsung/android/sdk/look/smartclip/SlookSmartClipDataElement;Lcom/samsung/android/sdk/look/smartclip/SlookSmartClipCroppedArea;)I
     .locals 7
-    .param p1    # Landroid/view/View;
-    .param p2    # Lcom/samsung/android/sdk/look/smartclip/SlookSmartClipDataElement;
-    .param p3    # Lcom/samsung/android/sdk/look/smartclip/SlookSmartClipCroppedArea;
 
     const/4 v1, 0x1
 

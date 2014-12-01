@@ -79,11 +79,6 @@
 
 .method public constructor <init>(Landroid/media/videoeditor/VideoEditor;Ljava/lang/String;Ljava/lang/String;JI)V
     .locals 25
-    .param p1    # Landroid/media/videoeditor/VideoEditor;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # J
-    .param p6    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -912,7 +907,6 @@
 
 .method private getKenBurns(Landroid/media/videoeditor/EffectKenBurns;)Landroid/media/videoeditor/MediaArtistNativeHelper$ClipSettings;
     .locals 10
-    .param p1    # Landroid/media/videoeditor/EffectKenBurns;
 
     const/4 v9, 0x0
 
@@ -1245,8 +1239,6 @@
 
 .method private getWidthByAspectRatioAndHeight(II)I
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     const/16 v3, 0x2d0
 
@@ -1579,7 +1571,6 @@
 
 .method public static nextPowerOf2(I)I
     .locals 1
-    .param p0    # I
 
     add-int/lit8 p0, p0, -0x1
 
@@ -1610,9 +1601,6 @@
 
 .method private scaleImage(Ljava/lang/String;II)Landroid/graphics/Bitmap;
     .locals 19
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1974,7 +1962,6 @@
 # virtual methods
 .method generateKenburnsClip(Landroid/media/videoeditor/EffectKenBurns;)Landroid/media/videoeditor/MediaArtistNativeHelper$ClipSettings;
     .locals 6
-    .param p1    # Landroid/media/videoeditor/EffectKenBurns;
 
     const/4 v5, 0x0
 
@@ -2389,9 +2376,6 @@
 
 .method public getThumbnail(IIJ)Landroid/graphics/Bitmap;
     .locals 7
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -2437,13 +2421,6 @@
 
 .method public getThumbnailList(IIJJI[ILandroid/media/videoeditor/MediaItem$GetThumbnailListCallback;)V
     .locals 17
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
-    .param p5    # J
-    .param p7    # I
-    .param p8    # [I
-    .param p9    # Landroid/media/videoeditor/MediaItem$GetThumbnailListCallback;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -2638,8 +2615,6 @@
 
 .method invalidateTransitions(JJ)V
     .locals 9
-    .param p1    # J
-    .param p3    # J
 
     iget-object v0, p0, Landroid/media/videoeditor/MediaImageItem;->mBeginTransition:Landroid/media/videoeditor/Transition;
 
@@ -2708,10 +2683,6 @@
 
 .method invalidateTransitions(JJJJ)V
     .locals 11
-    .param p1    # J
-    .param p3    # J
-    .param p5    # J
-    .param p7    # J
 
     iget-object v0, p0, Landroid/media/videoeditor/MediaImageItem;->mBeginTransition:Landroid/media/videoeditor/Transition;
 
@@ -2866,7 +2837,6 @@
 
 .method public setDuration(J)V
     .locals 5
-    .param p1    # J
 
     const/4 v4, 0x1
 
@@ -2934,7 +2904,6 @@
 
 .method setGeneratedImageClip(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-super {p0, p1}, Landroid/media/videoeditor/MediaItem;->setGeneratedImageClip(Ljava/lang/String;)V
 

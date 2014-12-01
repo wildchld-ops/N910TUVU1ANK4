@@ -40,8 +40,6 @@
 
 .method synthetic constructor <init>(Lcom/android/server/power/ShutdownDialog;Lcom/android/server/power/ShutdownDialog$1;)V
     .locals 0
-    .param p1    # Lcom/android/server/power/ShutdownDialog;
-    .param p2    # Lcom/android/server/power/ShutdownDialog$1;
 
     invoke-direct {p0, p1}, Lcom/android/server/power/ShutdownDialog$RunningCheckable;-><init>(Lcom/android/server/power/ShutdownDialog;)V
 

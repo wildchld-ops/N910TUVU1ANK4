@@ -10,7 +10,6 @@
 # direct methods
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const-string v0, "CookieSyncManager"
 
@@ -40,7 +39,6 @@
 
 .method public static declared-synchronized createInstance(Landroid/content/Context;)Landroid/webkitsec/CookieSyncManager;
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     const-class v1, Landroid/webkitsec/CookieSyncManager;
 

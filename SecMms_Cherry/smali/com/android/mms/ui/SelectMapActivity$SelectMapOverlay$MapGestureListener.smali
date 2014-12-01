@@ -33,7 +33,6 @@
 # virtual methods
 .method public onLongPress(Landroid/view/MotionEvent;)V
     .locals 5
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-object v1, p0, Lcom/android/mms/ui/SelectMapActivity$SelectMapOverlay$MapGestureListener;->this$1:Lcom/android/mms/ui/SelectMapActivity$SelectMapOverlay;
 

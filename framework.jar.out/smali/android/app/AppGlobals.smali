@@ -34,8 +34,6 @@
 
 .method public static getIntCoreSetting(Ljava/lang/String;I)I
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
 
     invoke-static {}, Landroid/app/ActivityThread;->currentActivityThread()Landroid/app/ActivityThread;
 

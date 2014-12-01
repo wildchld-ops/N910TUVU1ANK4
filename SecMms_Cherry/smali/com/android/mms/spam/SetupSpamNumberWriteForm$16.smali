@@ -36,8 +36,6 @@
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 6
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     iget-object v1, p0, Lcom/android/mms/spam/SetupSpamNumberWriteForm$16;->this$0:Lcom/android/mms/spam/SetupSpamNumberWriteForm;
 

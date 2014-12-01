@@ -78,7 +78,6 @@
 
 .method public static makeNewFallbackEventHandler(Landroid/content/Context;)Landroid/view/FallbackEventHandler;
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     sget-object v0, Lcom/android/internal/policy/PolicyManager;->sPolicy:Lcom/android/internal/policy/IPolicy;
 
@@ -91,7 +90,6 @@
 
 .method public static makeNewLayoutInflater(Landroid/content/Context;)Landroid/view/LayoutInflater;
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     sget-object v0, Lcom/android/internal/policy/PolicyManager;->sPolicy:Lcom/android/internal/policy/IPolicy;
 
@@ -104,7 +102,6 @@
 
 .method public static makeNewSubWindow(Landroid/content/Context;)Landroid/view/Window;
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     sget-object v0, Lcom/android/internal/policy/PolicyManager;->sPolicy:Lcom/android/internal/policy/IPolicy;
 
@@ -117,7 +114,6 @@
 
 .method public static makeNewWindow(Landroid/content/Context;)Landroid/view/Window;
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     sget-object v0, Lcom/android/internal/policy/PolicyManager;->sPolicy:Lcom/android/internal/policy/IPolicy;
 
@@ -132,8 +128,6 @@
 
 .method public static makeNewWindow(Landroid/content/Context;Z)Landroid/view/Window;
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
 
     sget-object v0, Lcom/android/internal/policy/PolicyManager;->sPolicy:Lcom/android/internal/policy/IPolicy;
 

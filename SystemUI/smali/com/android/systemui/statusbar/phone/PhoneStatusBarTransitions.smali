@@ -34,7 +34,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/systemui/statusbar/phone/PhoneStatusBarView;)V
     .locals 3
-    .param p1    # Lcom/android/systemui/statusbar/phone/PhoneStatusBarView;
 
     const/4 v2, 0x1
 
@@ -67,8 +66,6 @@
 
 .method private applyMode(IZ)V
     .locals 7
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v6, 0x3
 
@@ -210,7 +207,6 @@
 
 .method private getBatteryClockAlpha(I)F
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x3
 
@@ -231,7 +227,6 @@
 
 .method private getNonBatteryClockAlphaFor(I)F
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x3
 
@@ -250,7 +245,6 @@
 
 .method private isOpaque(I)Z
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -277,8 +271,6 @@
 # virtual methods
 .method public animateTransitionTo(Landroid/view/View;F)Landroid/animation/ObjectAnimator;
     .locals 4
-    .param p1    # Landroid/view/View;
-    .param p2    # F
 
     const-string v0, "alpha"
 
@@ -427,9 +419,6 @@
 
 .method protected onTransition(IIZ)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     invoke-super {p0, p1, p2, p3}, Lcom/android/systemui/statusbar/phone/BarTransitions;->onTransition(IIZ)V
 

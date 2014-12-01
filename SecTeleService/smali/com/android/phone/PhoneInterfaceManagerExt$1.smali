@@ -1238,7 +1238,7 @@
 
     iget-object v9, v9, Lcom/android/phone/PhoneInterfaceManagerExt;->mApp:Lcom/android/phone/PhoneGlobals;
 
-    invoke-virtual {v9, v5}, Landroid/content/ContextWrapper;->sendBroadcast(Landroid/content/Intent;)V
+    invoke-virtual {v9, v5}, Lcom/android/phone/PhoneGlobals;->sendBroadcast(Landroid/content/Intent;)V
 
     :goto_c
     const-string v9, "PhoneInterfaceManagerExt"

@@ -14,7 +14,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Landroid/os/Binder;-><init>()V
 
@@ -25,9 +24,6 @@
 
 .method private reportFreeSpace(Ljava/io/File;Ljava/lang/String;Ljava/io/PrintWriter;)V
     .locals 12
-    .param p1    # Ljava/io/File;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/io/PrintWriter;
 
     const-wide/16 v9, 0x0
 
@@ -184,9 +180,6 @@
 # virtual methods
 .method protected dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 15
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     iget-object v12, p0, Lcom/android/server/DiskStatsService;->mContext:Landroid/content/Context;
 

@@ -42,8 +42,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/widget/Switch;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/widget/Switch;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -116,7 +114,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/MobileDataEnabler;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/settings/MobileDataEnabler;
 
     iget-object v0, p0, Lcom/android/settings/MobileDataEnabler;->mContext:Landroid/content/Context;
 
@@ -125,7 +122,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/MobileDataEnabler;)Lcom/android/settings/MobileDataEnabler$SwitchHandler;
     .locals 1
-    .param p0    # Lcom/android/settings/MobileDataEnabler;
 
     iget-object v0, p0, Lcom/android/settings/MobileDataEnabler;->mHandler:Lcom/android/settings/MobileDataEnabler$SwitchHandler;
 
@@ -134,7 +130,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/MobileDataEnabler;)I
     .locals 1
-    .param p0    # Lcom/android/settings/MobileDataEnabler;
 
     iget v0, p0, Lcom/android/settings/MobileDataEnabler;->isAirPlaneMode:I
 
@@ -143,8 +138,6 @@
 
 .method static synthetic access$202(Lcom/android/settings/MobileDataEnabler;I)I
     .locals 0
-    .param p0    # Lcom/android/settings/MobileDataEnabler;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/settings/MobileDataEnabler;->isAirPlaneMode:I
 
@@ -153,7 +146,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/MobileDataEnabler;)Landroid/app/AlertDialog;
     .locals 1
-    .param p0    # Lcom/android/settings/MobileDataEnabler;
 
     iget-object v0, p0, Lcom/android/settings/MobileDataEnabler;->mAlertDialog:Landroid/app/AlertDialog;
 
@@ -214,8 +206,6 @@
 # virtual methods
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 9
-    .param p1    # Landroid/widget/CompoundButton;
-    .param p2    # Z
 
     const/4 v8, 0x2
 
@@ -582,7 +572,6 @@
 
 .method public setSwitch(Landroid/widget/Switch;)V
     .locals 4
-    .param p1    # Landroid/widget/Switch;
 
     const/4 v3, 0x0
 
@@ -688,7 +677,6 @@
 
 .method public setSwitchChecked(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/settings/MobileDataEnabler;->mSwitch:Landroid/widget/Switch;
 

@@ -46,8 +46,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;I)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     const/4 v2, 0x0
 
@@ -110,7 +108,6 @@
 
 .method public onGestureEvent(Lcom/samsung/android/service/gesture/GestureEvent;)V
     .locals 2
-    .param p1    # Lcom/samsung/android/service/gesture/GestureEvent;
 
     invoke-virtual {p1}, Lcom/samsung/android/service/gesture/GestureEvent;->getEvent()I
 
@@ -297,8 +294,6 @@
 
 .method public setAirMotionLintener(Landroid/webkitsec/AirMotionDetector$AirMotionListener;I)V
     .locals 3
-    .param p1    # Landroid/webkitsec/AirMotionDetector$AirMotionListener;
-    .param p2    # I
 
     const-string v0, "AirMotionDetector"
 

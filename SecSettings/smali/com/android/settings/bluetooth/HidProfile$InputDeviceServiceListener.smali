@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Lcom/android/settings/bluetooth/HidProfile;Lcom/android/settings/bluetooth/HidProfile$1;)V
     .locals 0
-    .param p1    # Lcom/android/settings/bluetooth/HidProfile;
-    .param p2    # Lcom/android/settings/bluetooth/HidProfile$1;
 
     invoke-direct {p0, p1}, Lcom/android/settings/bluetooth/HidProfile$InputDeviceServiceListener;-><init>(Lcom/android/settings/bluetooth/HidProfile;)V
 
@@ -46,8 +44,6 @@
 # virtual methods
 .method public onServiceConnected(ILandroid/bluetooth/BluetoothProfile;)V
     .locals 8
-    .param p1    # I
-    .param p2    # Landroid/bluetooth/BluetoothProfile;
 
     # getter for: Lcom/android/settings/bluetooth/HidProfile;->V:Z
     invoke-static {}, Lcom/android/settings/bluetooth/HidProfile;->access$000()Z
@@ -253,7 +249,6 @@
 
 .method public onServiceDisconnected(I)V
     .locals 2
-    .param p1    # I
 
     # getter for: Lcom/android/settings/bluetooth/HidProfile;->V:Z
     invoke-static {}, Lcom/android/settings/bluetooth/HidProfile;->access$000()Z

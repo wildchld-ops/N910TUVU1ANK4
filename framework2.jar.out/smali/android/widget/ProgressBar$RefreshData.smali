@@ -62,9 +62,6 @@
 
 .method public static obtain(IIZ)Landroid/widget/ProgressBar$RefreshData;
     .locals 2
-    .param p0    # I
-    .param p1    # I
-    .param p2    # Z
 
     sget-object v1, Landroid/widget/ProgressBar$RefreshData;->sPool:Landroid/util/Pools$SynchronizedPool;
 

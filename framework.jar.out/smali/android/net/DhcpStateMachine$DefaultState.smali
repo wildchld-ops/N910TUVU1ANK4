@@ -55,7 +55,6 @@
 
 .method public processMessage(Landroid/os/Message;)Z
     .locals 3
-    .param p1    # Landroid/os/Message;
 
     # getter for: Landroid/net/DhcpStateMachine;->DBG:Z
     invoke-static {}, Landroid/net/DhcpStateMachine;->access$000()Z

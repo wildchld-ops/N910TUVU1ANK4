@@ -166,13 +166,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/opengl/GLSurfaceView;ILcom/sec/android/visualeffect/watercolor/JniWaterColorRenderer;III)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/opengl/GLSurfaceView;
-    .param p3    # I
-    .param p4    # Lcom/sec/android/visualeffect/watercolor/JniWaterColorRenderer;
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
 
     const/16 v1, 0xa
 
@@ -395,7 +388,6 @@
 
 .method static synthetic access$000(Lcom/sec/android/visualeffect/watercolor/WaterColorRenderer;)Z
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/watercolor/WaterColorRenderer;
 
     iget-boolean v0, p0, Lcom/sec/android/visualeffect/watercolor/WaterColorRenderer;->isRestrictCPUClock:Z
 
@@ -404,7 +396,6 @@
 
 .method static synthetic access$100(Lcom/sec/android/visualeffect/watercolor/WaterColorRenderer;)Z
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/watercolor/WaterColorRenderer;
 
     iget-boolean v0, p0, Lcom/sec/android/visualeffect/watercolor/WaterColorRenderer;->isRestrictGPUFreq:Z
 
@@ -413,7 +404,6 @@
 
 .method static synthetic access$200(Lcom/sec/android/visualeffect/watercolor/WaterColorRenderer;)Lcom/sec/android/visualeffect/watercolor/WaterColorRenderer$DVFSHandlerForWaterColor;
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/watercolor/WaterColorRenderer;
 
     iget-object v0, p0, Lcom/sec/android/visualeffect/watercolor/WaterColorRenderer;->mDVFSHandlerWaterColor:Lcom/sec/android/visualeffect/watercolor/WaterColorRenderer$DVFSHandlerForWaterColor;
 
@@ -422,7 +412,6 @@
 
 .method static synthetic access$300(Lcom/sec/android/visualeffect/watercolor/WaterColorRenderer;)I
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/watercolor/WaterColorRenderer;
 
     iget v0, p0, Lcom/sec/android/visualeffect/watercolor/WaterColorRenderer;->mDrawCount:I
 
@@ -439,7 +428,6 @@
 
 .method static synthetic access$500(Lcom/sec/android/visualeffect/watercolor/WaterColorRenderer;)Ljava/lang/Runnable;
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/watercolor/WaterColorRenderer;
 
     iget-object v0, p0, Lcom/sec/android/visualeffect/watercolor/WaterColorRenderer;->mDefaultRunnable:Ljava/lang/Runnable;
 
@@ -448,8 +436,6 @@
 
 .method static synthetic access$502(Lcom/sec/android/visualeffect/watercolor/WaterColorRenderer;Ljava/lang/Runnable;)Ljava/lang/Runnable;
     .locals 0
-    .param p0    # Lcom/sec/android/visualeffect/watercolor/WaterColorRenderer;
-    .param p1    # Ljava/lang/Runnable;
 
     iput-object p1, p0, Lcom/sec/android/visualeffect/watercolor/WaterColorRenderer;->mDefaultRunnable:Ljava/lang/Runnable;
 
@@ -458,8 +444,6 @@
 
 .method static synthetic access$602(Lcom/sec/android/visualeffect/watercolor/WaterColorRenderer;Z)Z
     .locals 0
-    .param p0    # Lcom/sec/android/visualeffect/watercolor/WaterColorRenderer;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/visualeffect/watercolor/WaterColorRenderer;->calledScreenTurnedOn:Z
 
@@ -468,7 +452,6 @@
 
 .method static synthetic access$700(Lcom/sec/android/visualeffect/watercolor/WaterColorRenderer;)V
     .locals 0
-    .param p0    # Lcom/sec/android/visualeffect/watercolor/WaterColorRenderer;
 
     invoke-direct {p0}, Lcom/sec/android/visualeffect/watercolor/WaterColorRenderer;->aquireCpuGpuMaxLock()V
 
@@ -477,7 +460,6 @@
 
 .method static synthetic access$800(Lcom/sec/android/visualeffect/watercolor/WaterColorRenderer;)V
     .locals 0
-    .param p0    # Lcom/sec/android/visualeffect/watercolor/WaterColorRenderer;
 
     invoke-direct {p0}, Lcom/sec/android/visualeffect/watercolor/WaterColorRenderer;->releaseCpuGpuMaxLock()V
 
@@ -486,7 +468,6 @@
 
 .method private acquireBooster(I)V
     .locals 6
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -684,8 +665,6 @@
 
 .method private getBestMaxFreq([II)I
     .locals 6
-    .param p1    # [I
-    .param p2    # I
 
     const/4 v4, 0x0
 
@@ -725,9 +704,6 @@
 
 .method private getCenterCropBitmap(Landroid/graphics/Bitmap;II)Landroid/graphics/Bitmap;
     .locals 10
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v9, 0x0
 
@@ -951,7 +927,6 @@
 # virtual methods
 .method public declared-synchronized changeBackground(Landroid/graphics/Bitmap;)V
     .locals 2
-    .param p1    # Landroid/graphics/Bitmap;
 
     monitor-enter p0
 
@@ -1220,7 +1195,6 @@
 
 .method public onDrawFrame(Ljavax/microedition/khronos/opengles/GL10;)V
     .locals 6
-    .param p1    # Ljavax/microedition/khronos/opengles/GL10;
 
     const/4 v5, 0x2
 
@@ -1500,7 +1474,6 @@
 
 .method public onKeyEvent(I)V
     .locals 1
-    .param p1    # I
 
     sget-object v0, Lcom/sec/android/visualeffect/watercolor/WaterColorRenderer;->mJniWaterColor:Lcom/sec/android/visualeffect/watercolor/JniWaterColorRenderer;
 
@@ -1511,9 +1484,6 @@
 
 .method public onSurfaceChanged(Ljavax/microedition/khronos/opengles/GL10;II)V
     .locals 6
-    .param p1    # Ljavax/microedition/khronos/opengles/GL10;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v3, 0x1
 
@@ -1687,8 +1657,6 @@
 
 .method public onSurfaceCreated(Ljavax/microedition/khronos/opengles/GL10;Ljavax/microedition/khronos/egl/EGLConfig;)V
     .locals 3
-    .param p1    # Ljavax/microedition/khronos/opengles/GL10;
-    .param p2    # Ljavax/microedition/khronos/egl/EGLConfig;
 
     const/4 v2, 0x0
 
@@ -1713,7 +1681,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 20
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual/range {p1 .. p1}, Landroid/view/MotionEvent;->getActionMasked()I
 
@@ -2231,7 +2198,6 @@
 
 .method public onTouchEventForPatternLock(Landroid/view/MotionEvent;)V
     .locals 11
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v9, 0x0
 
@@ -2602,7 +2568,6 @@
 
 .method public releaseBooster(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -2718,7 +2683,6 @@
 
 .method public setBackground(Landroid/graphics/Bitmap;)V
     .locals 3
-    .param p1    # Landroid/graphics/Bitmap;
 
     const-string v0, "WaterColor_WaterColorRenderer"
 
@@ -2782,11 +2746,6 @@
 
 .method public setResourcesBitmap(Landroid/graphics/Bitmap;Landroid/graphics/Bitmap;Landroid/graphics/Bitmap;Landroid/graphics/Bitmap;Landroid/graphics/Bitmap;)V
     .locals 0
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # Landroid/graphics/Bitmap;
-    .param p3    # Landroid/graphics/Bitmap;
-    .param p4    # Landroid/graphics/Bitmap;
-    .param p5    # Landroid/graphics/Bitmap;
 
     iput-object p1, p0, Lcom/sec/android/visualeffect/watercolor/WaterColorRenderer;->mMask1:Landroid/graphics/Bitmap;
 
@@ -2803,10 +2762,6 @@
 
 .method public setValueOfDVFS(ZIZI)V
     .locals 3
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # I
 
     iput-boolean p1, p0, Lcom/sec/android/visualeffect/watercolor/WaterColorRenderer;->isRestrictCPUClock:Z
 
@@ -3004,8 +2959,6 @@
 
 .method public showUnlockAffordance(JLandroid/graphics/Rect;)V
     .locals 5
-    .param p1    # J
-    .param p3    # Landroid/graphics/Rect;
 
     const/4 v4, 0x0
 

@@ -36,8 +36,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Lcom/android/mms/rcs/GetPermanentDisableStateTask$IGetPermanentDisableStateCallback;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/mms/rcs/GetPermanentDisableStateTask$IGetPermanentDisableStateCallback;
 
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
 
@@ -52,7 +50,6 @@
 # virtual methods
 .method protected varargs doInBackground([Ljava/lang/Void;)Ljava/lang/Integer;
     .locals 8
-    .param p1    # [Ljava/lang/Void;
 
     const/4 v3, 0x0
 
@@ -141,7 +138,6 @@
 
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [Ljava/lang/Void;
 
@@ -154,7 +150,6 @@
 
 .method protected onPostExecute(Ljava/lang/Integer;)V
     .locals 1
-    .param p1    # Ljava/lang/Integer;
 
     iget-object v0, p0, Lcom/android/mms/rcs/GetPermanentDisableStateTask;->mCallback:Lcom/android/mms/rcs/GetPermanentDisableStateTask$IGetPermanentDisableStateCallback;
 
@@ -170,7 +165,6 @@
 
 .method protected bridge synthetic onPostExecute(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Ljava/lang/Integer;
 

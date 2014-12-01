@@ -14,7 +14,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Landroid/preference/ListPreference;-><init>(Landroid/content/Context;)V
 
@@ -25,8 +24,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/preference/ListPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -37,9 +34,6 @@
 
 .method private static getDisplayName(Ljava/util/Locale;[Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p0    # Ljava/util/Locale;
-    .param p1    # [Ljava/lang/String;
-    .param p2    # [Ljava/lang/String;
 
     invoke-virtual {p0}, Ljava/util/Locale;->toString()Ljava/lang/String;
 
@@ -82,7 +76,6 @@
 # virtual methods
 .method public init(Landroid/content/Context;)V
     .locals 27
-    .param p1    # Landroid/content/Context;
 
     invoke-static {}, Landroid/content/res/Resources;->getSystem()Landroid/content/res/Resources;
 

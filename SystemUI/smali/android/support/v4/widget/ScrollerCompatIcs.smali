@@ -14,7 +14,6 @@
 
 .method public static getCurrVelocity(Ljava/lang/Object;)F
     .locals 1
-    .param p0    # Ljava/lang/Object;
 
     check-cast p0, Landroid/widget/OverScroller;
 

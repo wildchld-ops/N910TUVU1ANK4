@@ -82,7 +82,6 @@
 
 .method private constructor <init>(Landroid/content/ContentProviderOperation$Builder;)V
     .locals 1
-    .param p1    # Landroid/content/ContentProviderOperation$Builder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -154,8 +153,6 @@
 
 .method synthetic constructor <init>(Landroid/content/ContentProviderOperation$Builder;Landroid/content/ContentProviderOperation$1;)V
     .locals 0
-    .param p1    # Landroid/content/ContentProviderOperation$Builder;
-    .param p2    # Landroid/content/ContentProviderOperation$1;
 
     invoke-direct {p0, p1}, Landroid/content/ContentProviderOperation;-><init>(Landroid/content/ContentProviderOperation$Builder;)V
 
@@ -164,7 +161,6 @@
 
 .method private constructor <init>(Landroid/os/Parcel;)V
     .locals 5
-    .param p1    # Landroid/os/Parcel;
 
     const/4 v3, 0x0
 
@@ -360,8 +356,6 @@
 
 .method synthetic constructor <init>(Landroid/os/Parcel;Landroid/content/ContentProviderOperation$1;)V
     .locals 0
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # Landroid/content/ContentProviderOperation$1;
 
     invoke-direct {p0, p1}, Landroid/content/ContentProviderOperation;-><init>(Landroid/os/Parcel;)V
 
@@ -370,9 +364,6 @@
 
 .method private backRefToValue([Landroid/content/ContentProviderResult;ILjava/lang/Integer;)J
     .locals 6
-    .param p1    # [Landroid/content/ContentProviderResult;
-    .param p2    # I
-    .param p3    # Ljava/lang/Integer;
 
     invoke-virtual {p3}, Ljava/lang/Integer;->intValue()I
 
@@ -462,7 +453,6 @@
 
 .method public static newAssertQuery(Landroid/net/Uri;)Landroid/content/ContentProviderOperation$Builder;
     .locals 3
-    .param p0    # Landroid/net/Uri;
 
     new-instance v0, Landroid/content/ContentProviderOperation$Builder;
 
@@ -477,7 +467,6 @@
 
 .method public static newDelete(Landroid/net/Uri;)Landroid/content/ContentProviderOperation$Builder;
     .locals 3
-    .param p0    # Landroid/net/Uri;
 
     new-instance v0, Landroid/content/ContentProviderOperation$Builder;
 
@@ -492,7 +481,6 @@
 
 .method public static newInsert(Landroid/net/Uri;)Landroid/content/ContentProviderOperation$Builder;
     .locals 3
-    .param p0    # Landroid/net/Uri;
 
     new-instance v0, Landroid/content/ContentProviderOperation$Builder;
 
@@ -507,7 +495,6 @@
 
 .method public static newUpdate(Landroid/net/Uri;)Landroid/content/ContentProviderOperation$Builder;
     .locals 3
-    .param p0    # Landroid/net/Uri;
 
     new-instance v0, Landroid/content/ContentProviderOperation$Builder;
 
@@ -524,9 +511,6 @@
 # virtual methods
 .method public apply(Landroid/content/ContentProvider;[Landroid/content/ContentProviderResult;I)Landroid/content/ContentProviderResult;
     .locals 19
-    .param p1    # Landroid/content/ContentProvider;
-    .param p2    # [Landroid/content/ContentProviderResult;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/OperationApplicationException;
@@ -1018,8 +1002,6 @@
 
 .method public resolveSelectionArgsBackReferences([Landroid/content/ContentProviderResult;I)[Ljava/lang/String;
     .locals 8
-    .param p1    # [Landroid/content/ContentProviderResult;
-    .param p2    # I
 
     const/4 v7, 0x0
 
@@ -1109,8 +1091,6 @@
 
 .method public resolveValueBackReferences([Landroid/content/ContentProviderResult;I)Landroid/content/ContentValues;
     .locals 8
-    .param p1    # [Landroid/content/ContentProviderResult;
-    .param p2    # I
 
     iget-object v5, p0, Landroid/content/ContentProviderOperation;->mValuesBackReferences:Landroid/content/ContentValues;
 
@@ -1341,8 +1321,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 5
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     const/4 v3, 0x1
 

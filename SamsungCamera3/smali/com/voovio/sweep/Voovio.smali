@@ -94,12 +94,6 @@
 
 .method public constructor <init>(Lcom/voovio/sweep/Sweep;FIIII)V
     .locals 5
-    .param p1    # Lcom/voovio/sweep/Sweep;
-    .param p2    # F
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     const/high16 v2, 0x3f000000
 
@@ -218,7 +212,6 @@
 # virtual methods
 .method public AssignHighResTexture(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/voovio/sweep/Voovio;->m_nHighResTextureID:I
 
@@ -351,7 +344,6 @@
 
 .method public CreateHighResTexture(Landroid/graphics/Bitmap;)V
     .locals 18
-    .param p1    # Landroid/graphics/Bitmap;
 
     if-nez p1, :cond_1
 
@@ -565,7 +557,6 @@
 
 .method public CreateLowResTexture(Landroid/graphics/Bitmap;)V
     .locals 18
-    .param p1    # Landroid/graphics/Bitmap;
 
     if-nez p1, :cond_1
 
@@ -754,7 +745,6 @@
 
 .method public DestroyHighResTexture(Z)V
     .locals 4
-    .param p1    # Z
 
     const/4 v3, 0x1
 
@@ -797,7 +787,6 @@
 
 .method public DestroyLowResTexture(Z)V
     .locals 4
-    .param p1    # Z
 
     const/4 v3, 0x1
 
@@ -826,8 +815,6 @@
 
 .method public IsTransitionRegistered(Lcom/voovio/sweep/Transition;I)Z
     .locals 1
-    .param p1    # Lcom/voovio/sweep/Transition;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/voovio/sweep/Voovio;->m_aTransitions:[Lcom/voovio/sweep/Transition;
 
@@ -848,8 +835,6 @@
 
 .method public RegisterTransition(Lcom/voovio/sweep/Transition;I)V
     .locals 1
-    .param p1    # Lcom/voovio/sweep/Transition;
-    .param p2    # I
 
     invoke-virtual {p0, p1, p2}, Lcom/voovio/sweep/Voovio;->IsTransitionRegistered(Lcom/voovio/sweep/Transition;I)Z
 
@@ -867,7 +852,6 @@
 
 .method public UnRegisterTransition(Lcom/voovio/sweep/Transition;)V
     .locals 3
-    .param p1    # Lcom/voovio/sweep/Transition;
 
     const/4 v0, 0x0
 
@@ -899,7 +883,6 @@
 
 .method public UpdateHighResTexture(Landroid/graphics/Bitmap;)V
     .locals 8
-    .param p1    # Landroid/graphics/Bitmap;
 
     const/16 v0, 0xde1
 

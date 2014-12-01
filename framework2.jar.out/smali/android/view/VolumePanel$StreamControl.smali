@@ -47,8 +47,6 @@
 
 .method synthetic constructor <init>(Landroid/view/VolumePanel;Landroid/view/VolumePanel$1;)V
     .locals 0
-    .param p1    # Landroid/view/VolumePanel;
-    .param p2    # Landroid/view/VolumePanel$1;
 
     invoke-direct {p0, p1}, Landroid/view/VolumePanel$StreamControl;-><init>(Landroid/view/VolumePanel;)V
 

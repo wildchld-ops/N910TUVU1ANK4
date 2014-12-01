@@ -36,7 +36,6 @@
 # virtual methods
 .method public onContentChanged(Lcom/android/mms/ui/ConversationListAdapter;)V
     .locals 2
-    .param p1    # Lcom/android/mms/ui/ConversationListAdapter;
 
     const-string v0, "Mms/AddThreadListActivity"
 

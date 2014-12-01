@@ -38,8 +38,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -50,9 +48,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
@@ -81,7 +76,6 @@
 # virtual methods
 .method public canChildBeDismissed(Landroid/view/View;)Z
     .locals 1
-    .param p1    # Landroid/view/View;
 
     const/4 v0, 0x1
 
@@ -90,7 +84,6 @@
 
 .method public canChildBeExpanded(Landroid/view/View;)Z
     .locals 1
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/HeadsUpNotificationView;->mHeadsUp:Lcom/android/systemui/statusbar/NotificationData$Entry;
 
@@ -125,8 +118,6 @@
 
 .method public getChildAtPosition(FF)Landroid/view/View;
     .locals 1
-    .param p1    # F
-    .param p2    # F
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/HeadsUpNotificationView;->mHeadsUp:Lcom/android/systemui/statusbar/NotificationData$Entry;
 
@@ -147,7 +138,6 @@
 
 .method public getChildAtPosition(Landroid/view/MotionEvent;)Landroid/view/View;
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/HeadsUpNotificationView;->mContentSlider:Landroid/view/ViewGroup;
 
@@ -156,8 +146,6 @@
 
 .method public getChildAtRawPosition(FF)Landroid/view/View;
     .locals 1
-    .param p1    # F
-    .param p2    # F
 
     invoke-virtual {p0, p1, p2}, Lcom/android/systemui/statusbar/policy/HeadsUpNotificationView;->getChildAtPosition(FF)Landroid/view/View;
 
@@ -168,7 +156,6 @@
 
 .method public getChildContentView(Landroid/view/View;)Landroid/view/View;
     .locals 1
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/HeadsUpNotificationView;->mContentSlider:Landroid/view/ViewGroup;
 
@@ -309,14 +296,12 @@
 
 .method public onBeginDrag(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     return-void
 .end method
 
 .method public onChildDismissed(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     const-string v0, "HeadsUpNotificationView"
 
@@ -333,7 +318,6 @@
 
 .method protected onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 3
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/view/View;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -374,7 +358,6 @@
 
 .method public onDragCancelled(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/HeadsUpNotificationView;->mContentHolder:Landroid/view/ViewGroup;
 
@@ -387,7 +370,6 @@
 
 .method public onDraw(Landroid/graphics/Canvas;)V
     .locals 0
-    .param p1    # Landroid/graphics/Canvas;
 
     invoke-super {p0, p1}, Landroid/view/View;->onDraw(Landroid/graphics/Canvas;)V
 
@@ -396,7 +378,6 @@
 
 .method public onInterceptTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 5
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v0, 0x1
 
@@ -444,7 +425,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 5
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v0, 0x0
 
@@ -497,7 +477,6 @@
 
 .method public setBar(Lcom/android/systemui/statusbar/BaseStatusBar;)V
     .locals 0
-    .param p1    # Lcom/android/systemui/statusbar/BaseStatusBar;
 
     iput-object p1, p0, Lcom/android/systemui/statusbar/policy/HeadsUpNotificationView;->mBar:Lcom/android/systemui/statusbar/BaseStatusBar;
 
@@ -506,8 +485,6 @@
 
 .method public setMargin(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget-object v1, p0, Lcom/android/systemui/statusbar/policy/HeadsUpNotificationView;->mContentSlider:Landroid/view/ViewGroup;
 
@@ -535,7 +512,6 @@
 
 .method public setNotification(Lcom/android/systemui/statusbar/NotificationData$Entry;)Z
     .locals 4
-    .param p1    # Lcom/android/systemui/statusbar/NotificationData$Entry;
 
     const/high16 v3, 0x3f800000
 
@@ -608,8 +584,6 @@
 
 .method public setUserExpandedChild(Landroid/view/View;Z)V
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Z
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/HeadsUpNotificationView;->mHeadsUp:Lcom/android/systemui/statusbar/NotificationData$Entry;
 
@@ -633,8 +607,6 @@
 
 .method public setUserLockedChild(Landroid/view/View;Z)V
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Z
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/HeadsUpNotificationView;->mHeadsUp:Lcom/android/systemui/statusbar/NotificationData$Entry;
 

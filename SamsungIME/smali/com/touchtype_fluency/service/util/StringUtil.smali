@@ -14,7 +14,6 @@
 
 .method public static digestToString([B)Ljava/lang/String;
     .locals 10
-    .param p0    # [B
 
     new-instance v4, Ljava/io/StringWriter;
 

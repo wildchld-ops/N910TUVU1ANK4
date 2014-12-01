@@ -39,9 +39,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/AlarmManagerService;Landroid/app/PendingIntent;Landroid/os/WorkSource;)V
     .locals 5
-    .param p1    # Lcom/android/server/AlarmManagerService;
-    .param p2    # Landroid/app/PendingIntent;
-    .param p3    # Landroid/os/WorkSource;
 
     invoke-direct {p0}, Landroid/content/Intent;-><init>()V
 

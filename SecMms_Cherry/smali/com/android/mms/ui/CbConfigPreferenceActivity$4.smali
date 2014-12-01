@@ -36,10 +36,6 @@
 # virtual methods
 .method public onMyChannelSet(ILjava/lang/String;Ljava/lang/String;I)V
     .locals 8
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
 
     const/4 v4, 0x0
 

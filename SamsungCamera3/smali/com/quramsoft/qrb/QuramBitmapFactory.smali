@@ -112,7 +112,6 @@
 
 .method public static cancelDecode(Lcom/quramsoft/qrb/QuramBitmapFactory$Options;)V
     .locals 1
-    .param p0    # Lcom/quramsoft/qrb/QuramBitmapFactory$Options;
 
     invoke-virtual {p0}, Lcom/quramsoft/qrb/QuramBitmapFactory$Options;->getHandle()I
 
@@ -144,7 +143,6 @@
 
 .method public static cancelRegionMap(Lcom/quramsoft/qrb/QuramBitmapFactory$Options;)V
     .locals 1
-    .param p0    # Lcom/quramsoft/qrb/QuramBitmapFactory$Options;
 
     invoke-virtual {p0}, Lcom/quramsoft/qrb/QuramBitmapFactory$Options;->getHandle()I
 
@@ -176,12 +174,6 @@
 
 .method public static compressToByte(Landroid/graphics/Bitmap;Ljava/lang/String;[BIIJ)I
     .locals 6
-    .param p0    # Landroid/graphics/Bitmap;
-    .param p1    # Ljava/lang/String;
-    .param p2    # [B
-    .param p3    # I
-    .param p4    # I
-    .param p5    # J
 
     const-string v0, "Quram_JPEG"
 
@@ -211,10 +203,6 @@
 
 .method public static decodeByteArray([BIILcom/quramsoft/qrb/QuramBitmapFactory$Options;)Landroid/graphics/Bitmap;
     .locals 8
-    .param p0    # [B
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Lcom/quramsoft/qrb/QuramBitmapFactory$Options;
 
     const/4 v7, 0x0
 
@@ -468,8 +456,6 @@
 
 .method public static decodeFile(Ljava/lang/String;Lcom/quramsoft/qrb/QuramBitmapFactory$Options;)Landroid/graphics/Bitmap;
     .locals 9
-    .param p0    # Ljava/lang/String;
-    .param p1    # Lcom/quramsoft/qrb/QuramBitmapFactory$Options;
 
     const/16 v8, 0xbb8
 
@@ -643,11 +629,6 @@
 
 .method public static decodeFile(Ljava/lang/String;Lcom/quramsoft/qrb/QuramBitmapFactory$Options;III)Landroid/graphics/Bitmap;
     .locals 6
-    .param p0    # Ljava/lang/String;
-    .param p1    # Lcom/quramsoft/qrb/QuramBitmapFactory$Options;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/4 v2, 0x0
 
@@ -790,7 +771,6 @@
 
 .method public static decodeFileDescriptor(Ljava/io/FileDescriptor;)Landroid/graphics/Bitmap;
     .locals 2
-    .param p0    # Ljava/io/FileDescriptor;
 
     new-instance v0, Lcom/quramsoft/qrb/QuramBitmapFactory$Options;
 
@@ -807,9 +787,6 @@
 
 .method public static decodeFileDescriptor(Ljava/io/FileDescriptor;Landroid/graphics/Rect;Lcom/quramsoft/qrb/QuramBitmapFactory$Options;)Landroid/graphics/Bitmap;
     .locals 9
-    .param p0    # Ljava/io/FileDescriptor;
-    .param p1    # Landroid/graphics/Rect;
-    .param p2    # Lcom/quramsoft/qrb/QuramBitmapFactory$Options;
 
     const/4 v8, 0x0
 
@@ -958,11 +935,6 @@
 
 .method public static decodeFileFromThumbnail(Ljava/lang/String;Lcom/quramsoft/qrb/QuramBitmapFactory$Options;III)Landroid/graphics/Bitmap;
     .locals 7
-    .param p0    # Ljava/lang/String;
-    .param p1    # Lcom/quramsoft/qrb/QuramBitmapFactory$Options;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/4 v6, 0x1
 
@@ -1083,10 +1055,6 @@
 
 .method public static decodeFileStream(Ljava/io/InputStream;IILcom/quramsoft/qrb/QuramBitmapFactory$Options;)Landroid/graphics/Bitmap;
     .locals 10
-    .param p0    # Ljava/io/InputStream;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Lcom/quramsoft/qrb/QuramBitmapFactory$Options;
 
     const/4 v9, 0x0
 
@@ -1298,14 +1266,6 @@
 
 .method public static partialDecodeByteArray([BIILcom/quramsoft/qrb/QuramBitmapFactory$Options;IIII)Landroid/graphics/Bitmap;
     .locals 12
-    .param p0    # [B
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Lcom/quramsoft/qrb/QuramBitmapFactory$Options;
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
 
     const/4 v1, 0x0
 
@@ -1594,12 +1554,6 @@
 
 .method public static partialDecodeFile(Ljava/lang/String;Lcom/quramsoft/qrb/QuramBitmapFactory$Options;IIII)Landroid/graphics/Bitmap;
     .locals 12
-    .param p0    # Ljava/lang/String;
-    .param p1    # Lcom/quramsoft/qrb/QuramBitmapFactory$Options;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     const/4 v1, 0x0
 
@@ -1789,14 +1743,6 @@
 
 .method public static partialDecodeFileWithSampledInfo(Ljava/lang/String;Lcom/quramsoft/qrb/QuramBitmapFactory$Options;IIIIII)Landroid/graphics/Bitmap;
     .locals 9
-    .param p0    # Ljava/lang/String;
-    .param p1    # Lcom/quramsoft/qrb/QuramBitmapFactory$Options;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
 
     const/4 v1, 0x0
 
@@ -1978,7 +1924,6 @@
 
 .method public static round(F)I
     .locals 1
-    .param p0    # F
 
     invoke-static {p0}, Ljava/lang/Math;->round(F)I
 
@@ -1989,7 +1934,6 @@
 
 .method public static translateBitmapFactoryOptions(Landroid/graphics/BitmapFactory$Options;)Lcom/quramsoft/qrb/QuramBitmapFactory$Options;
     .locals 4
-    .param p0    # Landroid/graphics/BitmapFactory$Options;
 
     const/4 v3, 0x7
 

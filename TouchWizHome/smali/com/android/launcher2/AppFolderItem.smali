@@ -88,9 +88,6 @@
 
 .method private adjustPositions(III)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     if-gt p1, p2, :cond_1
 
@@ -148,7 +145,6 @@
 # virtual methods
 .method public addItem(Lcom/android/launcher2/BaseItem;)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/BaseItem;
 
     const/4 v0, -0x1
 
@@ -159,8 +155,6 @@
 
 .method public addItemAt(Lcom/android/launcher2/BaseItem;I)V
     .locals 7
-    .param p1    # Lcom/android/launcher2/BaseItem;
-    .param p2    # I
 
     invoke-virtual {p0, p1}, Lcom/android/launcher2/AppFolderItem;->isValidItem(Lcom/android/launcher2/BaseItem;)Z
 
@@ -283,7 +277,6 @@
 
 .method public addListener(Lcom/android/launcher2/HomeFolderItem$FolderListener;)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/HomeFolderItem$FolderListener;
 
     iget-object v0, p0, Lcom/android/launcher2/AppFolderItem;->listeners:Ljava/util/ArrayList;
 
@@ -294,7 +287,6 @@
 
 .method public childDestroyed(Lcom/android/launcher2/AppItem;)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/AppItem;
 
     iget-object v0, p0, Lcom/android/launcher2/AppFolderItem;->mItems:Ljava/util/List;
 
@@ -314,7 +306,6 @@
 
 .method public contains(Lcom/android/launcher2/BaseItem;)Z
     .locals 1
-    .param p1    # Lcom/android/launcher2/BaseItem;
 
     iget-object v0, p0, Lcom/android/launcher2/AppFolderItem;->mItems:Ljava/util/List;
 
@@ -539,7 +530,6 @@
 
 .method public getItemAt(I)Lcom/android/launcher2/BaseItem;
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -619,7 +609,6 @@
 
 .method public isValidItem(Lcom/android/launcher2/BaseItem;)Z
     .locals 2
-    .param p1    # Lcom/android/launcher2/BaseItem;
 
     iget-object v0, p1, Lcom/android/launcher2/BaseItem;->mType:Lcom/android/launcher2/BaseItem$Type;
 
@@ -676,7 +665,6 @@
 
 .method loadItem(Lcom/android/launcher2/AppItem;)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/AppItem;
 
     iget-object v0, p0, Lcom/android/launcher2/AppFolderItem;->mItems:Ljava/util/List;
 
@@ -712,7 +700,6 @@
 
 .method public removeItem(Lcom/android/launcher2/BaseItem;)V
     .locals 3
-    .param p1    # Lcom/android/launcher2/BaseItem;
 
     const/4 v2, -0x1
 
@@ -762,7 +749,6 @@
 
 .method public removeListener(Lcom/android/launcher2/HomeFolderItem$FolderListener;)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/HomeFolderItem$FolderListener;
 
     iget-object v0, p0, Lcom/android/launcher2/AppFolderItem;->listeners:Ljava/util/ArrayList;
 
@@ -782,7 +768,6 @@
 
 .method public setEnabled(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/launcher2/AppFolderItem;->mEnabled:Z
 
@@ -791,7 +776,6 @@
 
 .method public setFolderColor(I)V
     .locals 1
-    .param p1    # I
 
     iput p1, p0, Lcom/android/launcher2/BaseItem;->mColor:I
 
@@ -804,7 +788,6 @@
 
 .method public setHiddenAddButton(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/launcher2/AppFolderItem;->mHiddenAddButton:Z
 
@@ -813,7 +796,6 @@
 
 .method public setOpened(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/launcher2/AppFolderItem;->mOpened:Z
 
@@ -822,8 +804,6 @@
 
 .method public setTitle(Landroid/content/Context;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
 
     if-eqz p2, :cond_0
 
@@ -861,7 +841,6 @@
 
 .method public setToRedrawIcons(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/launcher2/AppFolderItem;->mRedrawIcons:Z
 

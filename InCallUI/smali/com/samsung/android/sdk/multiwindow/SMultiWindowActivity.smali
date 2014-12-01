@@ -488,7 +488,6 @@
 
 .method static synthetic access$000(Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;)Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity$StateChangeListener;
     .locals 1
-    .param p0    # Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;
 
     iget-object v0, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mStateChangeListener:Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity$StateChangeListener;
 
@@ -497,7 +496,6 @@
 
 .method private checkMode(I)Z
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mWindowMode:I
 
@@ -556,9 +554,6 @@
 
 .method public static makeMultiWindowIntent(Landroid/content/Intent;ILandroid/graphics/Rect;)Landroid/content/Intent;
     .locals 4
-    .param p0    # Landroid/content/Intent;
-    .param p1    # I
-    .param p2    # Landroid/graphics/Rect;
 
     if-nez p0, :cond_0
 
@@ -841,7 +836,6 @@
 
 .method public setIsolatedCenterPoint(Landroid/graphics/Point;)V
     .locals 4
-    .param p1    # Landroid/graphics/Point;
 
     const/4 v2, 0x1
 
@@ -881,7 +875,6 @@
 
 .method public setStateChangeListener(Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity$StateChangeListener;)Z
     .locals 7
-    .param p1    # Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity$StateChangeListener;
 
     const/4 v2, 0x0
 

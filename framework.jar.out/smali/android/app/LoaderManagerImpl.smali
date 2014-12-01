@@ -66,9 +66,6 @@
 
 .method constructor <init>(Ljava/lang/String;Landroid/app/Activity;Z)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/app/Activity;
-    .param p3    # Z
 
     const/4 v1, 0x0
 
@@ -97,8 +94,6 @@
 
 .method private createAndInstallLoader(ILandroid/os/Bundle;Landroid/app/LoaderManager$LoaderCallbacks;)Landroid/app/LoaderManagerImpl$LoaderInfo;
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -140,8 +135,6 @@
 
 .method private createLoader(ILandroid/os/Bundle;Landroid/app/LoaderManager$LoaderCallbacks;)Landroid/app/LoaderManagerImpl$LoaderInfo;
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -171,7 +164,6 @@
 # virtual methods
 .method public destroyLoader(I)V
     .locals 5
-    .param p1    # I
 
     iget-boolean v2, p0, Landroid/app/LoaderManagerImpl;->mCreatingLoader:Z
 
@@ -783,10 +775,6 @@
 
 .method public dump(Ljava/lang/String;Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/io/FileDescriptor;
-    .param p3    # Ljava/io/PrintWriter;
-    .param p4    # [Ljava/lang/String;
 
     iget-object v3, p0, Landroid/app/LoaderManagerImpl;->mLoaders:Landroid/util/SparseArray;
 
@@ -1024,7 +1012,6 @@
 
 .method public getLoader(I)Landroid/content/Loader;
     .locals 3
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<D:",
@@ -1132,8 +1119,6 @@
 
 .method public initLoader(ILandroid/os/Bundle;Landroid/app/LoaderManager$LoaderCallbacks;)Landroid/content/Loader;
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<D:",
@@ -1293,7 +1278,6 @@
 
 .method installLoader(Landroid/app/LoaderManagerImpl$LoaderInfo;)V
     .locals 2
-    .param p1    # Landroid/app/LoaderManagerImpl$LoaderInfo;
 
     iget-object v0, p0, Landroid/app/LoaderManagerImpl;->mLoaders:Landroid/util/SparseArray;
 
@@ -1313,8 +1297,6 @@
 
 .method public restartLoader(ILandroid/os/Bundle;Landroid/app/LoaderManager$LoaderCallbacks;)Landroid/content/Loader;
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<D:",
@@ -1640,7 +1622,6 @@
 
 .method updateActivity(Landroid/app/Activity;)V
     .locals 0
-    .param p1    # Landroid/app/Activity;
 
     iput-object p1, p0, Landroid/app/LoaderManagerImpl;->mActivity:Landroid/app/Activity;
 

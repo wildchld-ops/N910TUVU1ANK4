@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,8 +36,6 @@
 # virtual methods
 .method public acquireMulticastLock(Landroid/os/IBinder;Ljava/lang/String;)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -92,10 +89,6 @@
 
 .method public acquireWifiLock(Landroid/os/IBinder;ILjava/lang/String;Landroid/os/WorkSource;)Z
     .locals 7
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Landroid/os/WorkSource;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -188,7 +181,6 @@
 
 .method public addOrUpdateNetwork(Landroid/net/wifi/WifiConfiguration;)I
     .locals 6
-    .param p1    # Landroid/net/wifi/WifiConfiguration;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -263,7 +255,6 @@
 
 .method public addToBlacklist(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -323,7 +314,6 @@
 
 .method public callSECApi(Landroid/os/Message;)I
     .locals 6
-    .param p1    # Landroid/os/Message;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -398,7 +388,6 @@
 
 .method public callSECStringApi(Landroid/os/Message;)Ljava/lang/String;
     .locals 6
-    .param p1    # Landroid/os/Message;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -631,7 +620,6 @@
 
 .method public disableNetwork(I)Z
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -743,8 +731,6 @@
 
 .method public enableNetwork(IZ)Z
     .locals 7
-    .param p1    # I
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -824,8 +810,6 @@
 
 .method public enableTdls(Ljava/lang/String;Z)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -886,8 +870,6 @@
 
 .method public enableTdlsWithMacAddress(Ljava/lang/String;Z)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -948,7 +930,6 @@
 
 .method public getBatchedScanResults(Ljava/lang/String;)Ljava/util/List;
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1913,7 +1894,6 @@
 
 .method public getS69BssInfo(Ljava/lang/String;)Landroid/net/wifi/S69BssInfo;
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1985,8 +1965,6 @@
 
 .method public getS69PartMsg(II)Ljava/lang/String;
     .locals 6
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2044,7 +2022,6 @@
 
 .method public getScanResults(Ljava/lang/String;)Ljava/util/List;
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2114,7 +2091,6 @@
 
 .method public getSpecificNetwork(I)Landroid/net/wifi/WifiConfiguration;
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3118,7 +3094,6 @@
 
 .method public modifyPasspointCred(Ljava/lang/String;)I
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3430,7 +3405,6 @@
 
 .method public releaseWifiLock(Landroid/os/IBinder;)Z
     .locals 6
-    .param p1    # Landroid/os/IBinder;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3493,7 +3467,6 @@
 
 .method public removeNetwork(I)Z
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3556,7 +3529,6 @@
 
 .method public removeNetworkByMDM(I)Z
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3619,9 +3591,6 @@
 
 .method public requestBatchedScan(Landroid/net/wifi/BatchedScanSettings;Landroid/os/IBinder;Landroid/os/WorkSource;)Z
     .locals 7
-    .param p1    # Landroid/net/wifi/BatchedScanSettings;
-    .param p2    # Landroid/os/IBinder;
-    .param p3    # Landroid/os/WorkSource;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3791,7 +3760,6 @@
 
 .method public saveNetworkByMDM(Landroid/net/wifi/WifiConfiguration;)Z
     .locals 7
-    .param p1    # Landroid/net/wifi/WifiConfiguration;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3878,7 +3846,6 @@
 
 .method public sendS69LocationServiceRequest(Ljava/lang/String;)I
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3934,8 +3901,6 @@
 
 .method public setCountryCode(Ljava/lang/String;Z)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3996,7 +3961,6 @@
 
 .method public setCountryRev(Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4059,8 +4023,6 @@
 
 .method public setFrequencyBand(IZ)V
     .locals 5
-    .param p1    # I
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4121,7 +4083,6 @@
 
 .method public setFullRoamScanPeriod(I)Z
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4184,7 +4145,6 @@
 
 .method public setIsFmcNetwork(Z)Z
     .locals 7
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4262,7 +4222,6 @@
 
 .method public setRoamBand(I)Z
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4325,7 +4284,6 @@
 
 .method public setRoamDelta(I)Z
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4388,7 +4346,6 @@
 
 .method public setRoamScanPeriod(I)Z
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4451,7 +4408,6 @@
 
 .method public setRoamTrigger(I)Z
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4620,7 +4576,6 @@
 
 .method public setWifiApConfigTxPower(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4672,7 +4627,6 @@
 
 .method public setWifiApConfiguration(Landroid/net/wifi/WifiConfiguration;)V
     .locals 5
-    .param p1    # Landroid/net/wifi/WifiConfiguration;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4743,8 +4697,6 @@
 
 .method public setWifiApEnabled(Landroid/net/wifi/WifiConfiguration;Z)V
     .locals 5
-    .param p1    # Landroid/net/wifi/WifiConfiguration;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4829,7 +4781,6 @@
 
 .method public setWifiApTimeOut(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4881,7 +4832,6 @@
 
 .method public setWifiEnabled(Z)Z
     .locals 7
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4959,7 +4909,6 @@
 
 .method public setWifiIBSSEnabled(Z)Z
     .locals 7
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5097,7 +5046,6 @@
 
 .method public startPPPOE(Landroid/net/wifi/PPPOEConfig;)V
     .locals 5
-    .param p1    # Landroid/net/wifi/PPPOEConfig;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5168,7 +5116,6 @@
 
 .method public startScan(Landroid/os/WorkSource;)V
     .locals 5
-    .param p1    # Landroid/os/WorkSource;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5288,7 +5235,6 @@
 
 .method public stopBatchedScan(Landroid/net/wifi/BatchedScanSettings;)V
     .locals 5
-    .param p1    # Landroid/net/wifi/BatchedScanSettings;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5457,8 +5403,6 @@
 
 .method public updateWifiLockWorkSource(Landroid/os/IBinder;Landroid/os/WorkSource;)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Landroid/os/WorkSource;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

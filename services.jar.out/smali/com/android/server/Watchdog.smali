@@ -415,7 +415,6 @@
 # virtual methods
 .method public addMonitor(Lcom/android/server/Watchdog$Monitor;)V
     .locals 2
-    .param p1    # Lcom/android/server/Watchdog$Monitor;
 
     monitor-enter p0
 
@@ -458,8 +457,6 @@
 
 .method public addThread(Landroid/os/Handler;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Landroid/os/Handler;
-    .param p2    # Ljava/lang/String;
 
     const-wide/32 v0, 0xea60
 
@@ -470,9 +467,6 @@
 
 .method public addThread(Landroid/os/Handler;Ljava/lang/String;J)V
     .locals 7
-    .param p1    # Landroid/os/Handler;
-    .param p2    # Ljava/lang/String;
-    .param p3    # J
 
     monitor-enter p0
 
@@ -527,11 +521,6 @@
 
 .method public init(Landroid/content/Context;Lcom/android/server/BatteryService;Lcom/android/server/power/PowerManagerService;Lcom/android/server/AlarmManagerService;Lcom/android/server/am/ActivityManagerService;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/server/BatteryService;
-    .param p3    # Lcom/android/server/power/PowerManagerService;
-    .param p4    # Lcom/android/server/AlarmManagerService;
-    .param p5    # Lcom/android/server/am/ActivityManagerService;
 
     invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -568,8 +557,6 @@
 
 .method public processStarted(Ljava/lang/String;I)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     monitor-enter p0
 
@@ -615,7 +602,6 @@
 
 .method rebootSystem(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -1426,7 +1412,6 @@
 
 .method public setActivityController(Landroid/app/IActivityController;)V
     .locals 1
-    .param p1    # Landroid/app/IActivityController;
 
     monitor-enter p0
 
@@ -1449,7 +1434,6 @@
 
 .method public setAllowRestart(Z)V
     .locals 1
-    .param p1    # Z
 
     monitor-enter p0
 

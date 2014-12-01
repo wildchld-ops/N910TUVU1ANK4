@@ -51,7 +51,6 @@
 
 .method synthetic constructor <init>(Landroid/support/v4/content/ModernAsyncTask$1;)V
     .locals 0
-    .param p1    # Landroid/support/v4/content/ModernAsyncTask$1;
 
     invoke-direct {p0}, Landroid/support/v4/content/ModernAsyncTask$WorkerRunnable;-><init>()V
 

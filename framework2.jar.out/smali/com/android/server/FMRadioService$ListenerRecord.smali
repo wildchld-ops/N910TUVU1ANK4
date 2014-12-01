@@ -23,8 +23,6 @@
 # direct methods
 .method public constructor <init>(Lcom/samsung/media/fmradio/internal/IFMEventListener;Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Lcom/samsung/media/fmradio/internal/IFMEventListener;
-    .param p2    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

@@ -119,7 +119,6 @@
 
 .method public addCallMultiSim(I)V
     .locals 3
-    .param p1    # I
 
     sget-object v1, Lcom/android/incallui/CallCommandClient;->TAG:Ljava/lang/String;
 
@@ -164,7 +163,6 @@
 
 .method public answerCall(I)V
     .locals 4
-    .param p1    # I
 
     sget-object v1, Lcom/android/incallui/CallCommandClient;->TAG:Ljava/lang/String;
 
@@ -225,7 +223,6 @@
 
 .method public answerCallAsVoice(I)V
     .locals 4
-    .param p1    # I
 
     sget-object v1, Lcom/android/incallui/CallCommandClient;->TAG:Ljava/lang/String;
 
@@ -286,8 +283,6 @@
 
 .method public answerCallWithCallType(II)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     sget-object v1, Lcom/android/incallui/CallCommandClient;->TAG:Ljava/lang/String;
 
@@ -370,7 +365,6 @@
 
 .method public answerCallWithSpeaker(I)V
     .locals 4
-    .param p1    # I
 
     sget-object v1, Lcom/android/incallui/CallCommandClient;->TAG:Ljava/lang/String;
 
@@ -431,8 +425,6 @@
 
 .method public answerMessage(IZ)V
     .locals 4
-    .param p1    # I
-    .param p2    # Z
 
     sget-object v1, Lcom/android/incallui/CallCommandClient;->TAG:Ljava/lang/String;
 
@@ -649,7 +641,6 @@
 
 .method public disconnectCall(I)V
     .locals 4
-    .param p1    # I
 
     sget-object v1, Lcom/android/incallui/CallCommandClient;->TAG:Ljava/lang/String;
 
@@ -710,7 +701,6 @@
 
 .method public explicitCallTransfer(I)V
     .locals 4
-    .param p1    # I
 
     sget-object v1, Lcom/android/incallui/CallCommandClient;->TAG:Ljava/lang/String;
 
@@ -907,7 +897,6 @@
 
 .method public getNameFromFDN(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -952,7 +941,6 @@
 
 .method public getNameFromSDN(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -1079,8 +1067,6 @@
 
 .method public hangUp(IZ)V
     .locals 4
-    .param p1    # I
-    .param p2    # Z
 
     sget-object v1, Lcom/android/incallui/CallCommandClient;->TAG:Ljava/lang/String;
 
@@ -1141,8 +1127,6 @@
 
 .method public hold(IZ)V
     .locals 4
-    .param p1    # I
-    .param p2    # Z
 
     sget-object v1, Lcom/android/incallui/CallCommandClient;->TAG:Ljava/lang/String;
 
@@ -1213,8 +1197,6 @@
 
 .method public holdMultiSim(IZ)V
     .locals 3
-    .param p1    # I
-    .param p2    # Z
 
     sget-object v1, Lcom/android/incallui/CallCommandClient;->TAG:Ljava/lang/String;
 
@@ -1491,7 +1473,6 @@
 
 .method public isEPDGCall(I)Z
     .locals 4
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -2000,7 +1981,6 @@
 
 .method public isWBMode(I)Z
     .locals 4
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -2093,7 +2073,6 @@
 
 .method public mergeMultiSim(I)V
     .locals 3
-    .param p1    # I
 
     sget-object v1, Lcom/android/incallui/CallCommandClient;->TAG:Ljava/lang/String;
 
@@ -2250,7 +2229,6 @@
 
 .method public mute(Z)V
     .locals 4
-    .param p1    # Z
 
     sget-object v1, Lcom/android/incallui/CallCommandClient;->TAG:Ljava/lang/String;
 
@@ -2311,7 +2289,6 @@
 
 .method public onNewIncomingRcsSession(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/incallui/CallCommandClient;->mCommandService:Lcom/android/services/telephony/common/ICallCommandService;
 
@@ -2350,8 +2327,6 @@
 
 .method public playDtmfTone(CZ)V
     .locals 4
-    .param p1    # C
-    .param p2    # Z
 
     iget-object v1, p0, Lcom/android/incallui/CallCommandClient;->mCommandService:Lcom/android/services/telephony/common/ICallCommandService;
 
@@ -2412,7 +2387,6 @@
 
 .method public postDialCancel(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/incallui/CallCommandClient;->mCommandService:Lcom/android/services/telephony/common/ICallCommandService;
 
@@ -2457,7 +2431,6 @@
 
 .method public postDialWaitContinue(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/incallui/CallCommandClient;->mCommandService:Lcom/android/services/telephony/common/ICallCommandService;
 
@@ -2502,9 +2475,6 @@
 
 .method public rejectCall(Lcom/android/services/telephony/common/Call;ZLjava/lang/String;)V
     .locals 4
-    .param p1    # Lcom/android/services/telephony/common/Call;
-    .param p2    # Z
-    .param p3    # Ljava/lang/String;
 
     sget-object v1, Lcom/android/incallui/CallCommandClient;->TAG:Ljava/lang/String;
 
@@ -2579,8 +2549,6 @@
 
 .method public requestModifyCall(II)Z
     .locals 5
-    .param p1    # I
-    .param p2    # I
 
     const/4 v2, 0x0
 
@@ -2635,8 +2603,6 @@
 
 .method public requestRcsObserver(II)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     iget-object v1, p0, Lcom/android/incallui/CallCommandClient;->mCommandService:Lcom/android/services/telephony/common/ICallCommandService;
 
@@ -2707,8 +2673,6 @@
 
 .method public respondModifyCall(IZ)V
     .locals 3
-    .param p1    # I
-    .param p2    # Z
 
     iget-object v1, p0, Lcom/android/incallui/CallCommandClient;->mCommandService:Lcom/android/services/telephony/common/ICallCommandService;
 
@@ -2749,8 +2713,6 @@
 
 .method public sendMessage(Lcom/android/services/telephony/common/Call;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Lcom/android/services/telephony/common/Call;
-    .param p2    # Ljava/lang/String;
 
     sget-object v1, Lcom/android/incallui/CallCommandClient;->TAG:Ljava/lang/String;
 
@@ -2795,8 +2757,6 @@
 
 .method public sendSecBluetoothATCommand(Ljava/lang/String;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/incallui/CallCommandClient;->mCommandService:Lcom/android/services/telephony/common/ICallCommandService;
 
@@ -2857,7 +2817,6 @@
 
 .method public separateCall(I)V
     .locals 4
-    .param p1    # I
 
     sget-object v1, Lcom/android/incallui/CallCommandClient;->TAG:Ljava/lang/String;
 
@@ -2918,7 +2877,6 @@
 
 .method public setAudioMode(I)V
     .locals 4
-    .param p1    # I
 
     sget-object v1, Lcom/android/incallui/CallCommandClient;->TAG:Ljava/lang/String;
 
@@ -3027,7 +2985,6 @@
 
 .method public setCallProtectionValue(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v1, p0, Lcom/android/incallui/CallCommandClient;->mCommandService:Lcom/android/services/telephony/common/ICallCommandService;
 
@@ -3068,7 +3025,6 @@
 
 .method public setCurrentVisibleSimId(I)V
     .locals 4
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/incallui/CallCommandClient;->mCommandService:Lcom/android/services/telephony/common/ICallCommandService;
 
@@ -3125,8 +3081,6 @@
 
 .method public setEndCallNumberForLGTRAD(Ljava/lang/String;Z)Ljava/lang/String;
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const/4 v1, 0x0
 
@@ -3171,7 +3125,6 @@
 
 .method public setPenWindow(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v1, p0, Lcom/android/incallui/CallCommandClient;->mCommandService:Lcom/android/services/telephony/common/ICallCommandService;
 
@@ -3240,7 +3193,6 @@
 
 .method public setService(Lcom/android/services/telephony/common/ICallCommandService;)V
     .locals 0
-    .param p1    # Lcom/android/services/telephony/common/ICallCommandService;
 
     iput-object p1, p0, Lcom/android/incallui/CallCommandClient;->mCommandService:Lcom/android/services/telephony/common/ICallCommandService;
 
@@ -3249,7 +3201,6 @@
 
 .method public setShowingIncomingPopup(Z)V
     .locals 3
-    .param p1    # Z
 
     sget-object v1, Lcom/android/incallui/CallCommandClient;->TAG:Ljava/lang/String;
 
@@ -3294,7 +3245,6 @@
 
 .method public setSystemBarNavigationEnabled(Z)V
     .locals 4
-    .param p1    # Z
 
     iget-object v1, p0, Lcom/android/incallui/CallCommandClient;->mCommandService:Lcom/android/services/telephony/common/ICallCommandService;
 
@@ -3575,7 +3525,6 @@
 
 .method public swapMultiSim(I)V
     .locals 3
-    .param p1    # I
 
     sget-object v1, Lcom/android/incallui/CallCommandClient;->TAG:Ljava/lang/String;
 

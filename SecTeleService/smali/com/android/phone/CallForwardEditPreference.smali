@@ -160,7 +160,7 @@
     iput-object p1, p0, Lcom/android/phone/CallForwardEditPreference;->mContext:Landroid/content/Context;
 
     :cond_0
-    invoke-virtual {p0}, Lcom/android/phone/EditPhoneNumberPreference;->getSummaryOn()Ljava/lang/CharSequence;
+    invoke-virtual {p0}, Lcom/android/phone/CallForwardEditPreference;->getSummaryOn()Ljava/lang/CharSequence;
 
     move-result-object v1
 
@@ -426,13 +426,13 @@
 
     const/4 v6, 0x1
 
-    invoke-virtual {p0}, Lcom/android/phone/EditPhoneNumberPreference;->isToggled()Z
+    invoke-virtual {p0}, Lcom/android/phone/CallForwardEditPreference;->isToggled()Z
 
     move-result v5
 
     if-eqz v5, :cond_2
 
-    invoke-virtual {p0}, Lcom/android/phone/EditPhoneNumberPreference;->getRawPhoneNumber()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/android/phone/CallForwardEditPreference;->getRawPhoneNumber()Ljava/lang/String;
 
     move-result-object v1
 
@@ -504,7 +504,7 @@
 
     if-ne v5, v6, :cond_3
 
-    invoke-virtual {p0}, Landroid/preference/Preference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/CallForwardEditPreference;->getContext()Landroid/content/Context;
 
     move-result-object v5
 
@@ -521,13 +521,13 @@
     move-result-object v3
 
     :goto_0
-    invoke-virtual {p0, v3}, Lcom/android/phone/EditPhoneNumberPreference;->setSummaryOn(Ljava/lang/CharSequence;)Lcom/android/phone/EditPhoneNumberPreference;
+    invoke-virtual {p0, v3}, Lcom/android/phone/CallForwardEditPreference;->setSummaryOn(Ljava/lang/CharSequence;)Lcom/android/phone/EditPhoneNumberPreference;
 
     :cond_2
     return-void
 
     :cond_3
-    invoke-virtual {p0}, Landroid/preference/Preference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/CallForwardEditPreference;->getContext()Landroid/content/Context;
 
     move-result-object v5
 
@@ -546,7 +546,7 @@
     goto :goto_0
 
     :cond_4
-    invoke-virtual {p0}, Landroid/preference/Preference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/CallForwardEditPreference;->getContext()Landroid/content/Context;
 
     move-result-object v5
 
@@ -613,13 +613,13 @@
     move v4, v5
 
     :goto_0
-    invoke-virtual {p0, v4}, Lcom/android/phone/EditPhoneNumberPreference;->setToggled(Z)Lcom/android/phone/EditPhoneNumberPreference;
+    invoke-virtual {p0, v4}, Lcom/android/phone/CallForwardEditPreference;->setToggled(Z)Lcom/android/phone/EditPhoneNumberPreference;
 
     iget-object v4, p0, Lcom/android/phone/CallForwardEditPreference;->callForwardInfo:Lcom/android/internal/telephony/CallForwardInfo;
 
     iget-object v4, v4, Lcom/android/internal/telephony/CallForwardInfo;->number:Ljava/lang/String;
 
-    invoke-virtual {p0, v4}, Lcom/android/phone/EditPhoneNumberPreference;->setPhoneNumber(Ljava/lang/String;)Lcom/android/phone/EditPhoneNumberPreference;
+    invoke-virtual {p0, v4}, Lcom/android/phone/CallForwardEditPreference;->setPhoneNumber(Ljava/lang/String;)Lcom/android/phone/EditPhoneNumberPreference;
 
     iput-boolean v6, p0, Lcom/android/phone/CallForwardEditPreference;->bIsActivating:Z
 
@@ -653,7 +653,7 @@
 
     new-instance v2, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Landroid/preference/Preference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/CallForwardEditPreference;->getContext()Landroid/content/Context;
 
     move-result-object v4
 
@@ -663,7 +663,7 @@
 
     invoke-virtual {v2, v4, v9}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Landroid/preference/Preference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/CallForwardEditPreference;->getContext()Landroid/content/Context;
 
     move-result-object v4
 
@@ -675,7 +675,7 @@
 
     invoke-virtual {v2, v4}, Landroid/app/AlertDialog$Builder;->setTitle(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Landroid/preference/Preference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/CallForwardEditPreference;->getContext()Landroid/content/Context;
 
     move-result-object v4
 
@@ -694,7 +694,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v4}, Landroid/app/Dialog;->show()V
+    invoke-virtual {v4}, Landroid/app/AlertDialog;->show()V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -710,7 +710,7 @@
 
     invoke-direct {v1, v4}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {p0}, Landroid/preference/Preference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/CallForwardEditPreference;->getContext()Landroid/content/Context;
 
     move-result-object v4
 
@@ -779,7 +779,7 @@
 
     iget-object v3, p0, Lcom/android/phone/CallForwardEditPreference;->mHandler:Lcom/android/phone/CallForwardEditPreference$MyHandler;
 
-    invoke-virtual {v3, v4, v4, v4, v5}, Landroid/os/Handler;->obtainMessage(IIILjava/lang/Object;)Landroid/os/Message;
+    invoke-virtual {v3, v4, v4, v4, v5}, Lcom/android/phone/CallForwardEditPreference$MyHandler;->obtainMessage(IIILjava/lang/Object;)Landroid/os/Message;
 
     move-result-object v3
 
@@ -808,7 +808,7 @@
 
     iget-object v2, p0, Lcom/android/phone/CallForwardEditPreference;->mHandler:Lcom/android/phone/CallForwardEditPreference$MyHandler;
 
-    invoke-virtual {v2, v4, v4, v4, v5}, Landroid/os/Handler;->obtainMessage(IIILjava/lang/Object;)Landroid/os/Message;
+    invoke-virtual {v2, v4, v4, v4, v5}, Lcom/android/phone/CallForwardEditPreference$MyHandler;->obtainMessage(IIILjava/lang/Object;)Landroid/os/Message;
 
     move-result-object v2
 
@@ -933,7 +933,7 @@
 
     if-eq v2, v5, :cond_2
 
-    invoke-virtual {p0}, Lcom/android/phone/EditPhoneNumberPreference;->isToggled()Z
+    invoke-virtual {p0}, Lcom/android/phone/CallForwardEditPreference;->isToggled()Z
 
     move-result v2
 
@@ -958,7 +958,7 @@
     move v4, v8
 
     :goto_1
-    invoke-virtual {p0}, Lcom/android/phone/EditPhoneNumberPreference;->getPhoneNumber()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/android/phone/CallForwardEditPreference;->getPhoneNumber()Ljava/lang/String;
 
     move-result-object v3
 
@@ -966,7 +966,7 @@
 
     move-result-object v7
 
-    iget-boolean v2, p0, Lcom/android/phone/EditPhoneNumberPreference;->mChecked:Z
+    iget-boolean v2, p0, Lcom/android/phone/CallForwardEditPreference;->mChecked:Z
 
     if-eqz v2, :cond_1
 
@@ -978,11 +978,11 @@
 
     if-eqz v2, :cond_1
 
-    invoke-virtual {p0}, Landroid/preference/Preference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/CallForwardEditPreference;->getContext()Landroid/content/Context;
 
     move-result-object v2
 
-    invoke-virtual {p0}, Landroid/preference/Preference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/CallForwardEditPreference;->getContext()Landroid/content/Context;
 
     move-result-object v5
 
@@ -1124,7 +1124,7 @@
 
     const-string v2, ""
 
-    invoke-virtual {p0, v2}, Lcom/android/phone/EditPhoneNumberPreference;->setSummaryOn(Ljava/lang/CharSequence;)Lcom/android/phone/EditPhoneNumberPreference;
+    invoke-virtual {p0, v2}, Lcom/android/phone/CallForwardEditPreference;->setSummaryOn(Ljava/lang/CharSequence;)Lcom/android/phone/EditPhoneNumberPreference;
 
     if-ne v1, v0, :cond_6
 
@@ -1147,7 +1147,7 @@
 
     iget-object v5, p0, Lcom/android/phone/CallForwardEditPreference;->mHandler:Lcom/android/phone/CallForwardEditPreference$MyHandler;
 
-    invoke-virtual {v5, v9, v1, v9}, Landroid/os/Handler;->obtainMessage(III)Landroid/os/Message;
+    invoke-virtual {v5, v9, v1, v9}, Lcom/android/phone/CallForwardEditPreference$MyHandler;->obtainMessage(III)Landroid/os/Message;
 
     move-result-object v5
 
@@ -1173,7 +1173,7 @@
 
     iget-object v6, p0, Lcom/android/phone/CallForwardEditPreference;->mHandler:Lcom/android/phone/CallForwardEditPreference$MyHandler;
 
-    invoke-virtual {v6, v9, v1, v9}, Landroid/os/Handler;->obtainMessage(III)Landroid/os/Message;
+    invoke-virtual {v6, v9, v1, v9}, Lcom/android/phone/CallForwardEditPreference$MyHandler;->obtainMessage(III)Landroid/os/Message;
 
     move-result-object v6
 

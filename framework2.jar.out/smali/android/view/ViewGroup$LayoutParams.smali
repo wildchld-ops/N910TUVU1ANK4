@@ -72,8 +72,6 @@
 
 .method public constructor <init>(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -86,8 +84,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -110,7 +106,6 @@
 
 .method public constructor <init>(Landroid/view/ViewGroup$LayoutParams;)V
     .locals 1
-    .param p1    # Landroid/view/ViewGroup$LayoutParams;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -127,7 +122,6 @@
 
 .method protected static sizeToString(I)Ljava/lang/String;
     .locals 1
-    .param p0    # I
 
     const/4 v0, -0x2
 
@@ -159,7 +153,6 @@
 # virtual methods
 .method public debug(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -216,25 +209,18 @@
 
 .method public onDebugDraw(Landroid/view/View;Landroid/graphics/Canvas;Landroid/graphics/Paint;)V
     .locals 0
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/graphics/Canvas;
-    .param p3    # Landroid/graphics/Paint;
 
     return-void
 .end method
 
 .method public resolveLayoutDirection(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method protected setBaseAttributes(Landroid/content/res/TypedArray;II)V
     .locals 1
-    .param p1    # Landroid/content/res/TypedArray;
-    .param p2    # I
-    .param p3    # I
 
     const-string v0, "layout_width"
 

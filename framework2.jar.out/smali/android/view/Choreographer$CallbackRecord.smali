@@ -35,7 +35,6 @@
 
 .method synthetic constructor <init>(Landroid/view/Choreographer$1;)V
     .locals 0
-    .param p1    # Landroid/view/Choreographer$1;
 
     invoke-direct {p0}, Landroid/view/Choreographer$CallbackRecord;-><init>()V
 
@@ -46,7 +45,6 @@
 # virtual methods
 .method public run(J)V
     .locals 2
-    .param p1    # J
 
     iget-object v0, p0, Landroid/view/Choreographer$CallbackRecord;->token:Ljava/lang/Object;
 

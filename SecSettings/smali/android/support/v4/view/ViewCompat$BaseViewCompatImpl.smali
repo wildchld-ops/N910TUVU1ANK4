@@ -30,8 +30,6 @@
 # virtual methods
 .method public canScrollHorizontally(Landroid/view/View;I)Z
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -48,7 +46,6 @@
 
 .method public getImportantForAccessibility(Landroid/view/View;)I
     .locals 1
-    .param p1    # Landroid/view/View;
 
     const/4 v0, 0x0
 
@@ -57,7 +54,6 @@
 
 .method public getLayoutDirection(Landroid/view/View;)I
     .locals 1
-    .param p1    # Landroid/view/View;
 
     const/4 v0, 0x0
 
@@ -66,7 +62,6 @@
 
 .method public getOverScrollMode(Landroid/view/View;)I
     .locals 1
-    .param p1    # Landroid/view/View;
 
     const/4 v0, 0x2
 
@@ -75,7 +70,6 @@
 
 .method public getParentForAccessibility(Landroid/view/View;)Landroid/view/ViewParent;
     .locals 1
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p1}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
 
@@ -86,7 +80,6 @@
 
 .method public postInvalidateOnAnimation(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p0}, Landroid/support/v4/view/ViewCompat$BaseViewCompatImpl;->getFrameTime()J
 
@@ -99,8 +92,6 @@
 
 .method public postOnAnimation(Landroid/view/View;Ljava/lang/Runnable;)V
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # Ljava/lang/Runnable;
 
     invoke-virtual {p0}, Landroid/support/v4/view/ViewCompat$BaseViewCompatImpl;->getFrameTime()J
 
@@ -113,25 +104,18 @@
 
 .method public setAccessibilityDelegate(Landroid/view/View;Landroid/support/v4/view/AccessibilityDelegateCompat;)V
     .locals 0
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/support/v4/view/AccessibilityDelegateCompat;
 
     return-void
 .end method
 
 .method public setImportantForAccessibility(Landroid/view/View;I)V
     .locals 0
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     return-void
 .end method
 
 .method public setLayerType(Landroid/view/View;ILandroid/graphics/Paint;)V
     .locals 0
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # Landroid/graphics/Paint;
 
     return-void
 .end method

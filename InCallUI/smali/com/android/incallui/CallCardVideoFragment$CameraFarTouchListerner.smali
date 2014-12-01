@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Lcom/android/incallui/CallCardVideoFragment;Lcom/android/incallui/CallCardVideoFragment$1;)V
     .locals 0
-    .param p1    # Lcom/android/incallui/CallCardVideoFragment;
-    .param p2    # Lcom/android/incallui/CallCardVideoFragment$1;
 
     invoke-direct {p0, p1}, Lcom/android/incallui/CallCardVideoFragment$CameraFarTouchListerner;-><init>(Lcom/android/incallui/CallCardVideoFragment;)V
 
@@ -46,8 +44,6 @@
 # virtual methods
 .method public onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 7
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     const/4 v3, 0x0
 

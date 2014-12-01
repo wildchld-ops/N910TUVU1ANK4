@@ -39,7 +39,6 @@
 # virtual methods
 .method public onAnimationCancel(Landroid/animation/Animator;)V
     .locals 1
-    .param p1    # Landroid/animation/Animator;
 
     const/4 v0, 0x1
 
@@ -50,7 +49,6 @@
 
 .method public onAnimationEnd(Landroid/animation/Animator;)V
     .locals 3
-    .param p1    # Landroid/animation/Animator;
 
     iget-boolean v0, p0, Lcom/android/launcher2/Launcher$6;->mCancelled:Z
 
@@ -84,7 +82,6 @@
 
 .method public onAnimationStart(Landroid/animation/Animator;)V
     .locals 3
-    .param p1    # Landroid/animation/Animator;
 
     sget-boolean v0, Lcom/android/launcher2/Launcher;->is_TB:Z
 

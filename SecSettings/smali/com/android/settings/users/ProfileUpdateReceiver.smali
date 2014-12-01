@@ -16,8 +16,6 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     new-instance v0, Lcom/android/settings/users/ProfileUpdateReceiver$1;
 

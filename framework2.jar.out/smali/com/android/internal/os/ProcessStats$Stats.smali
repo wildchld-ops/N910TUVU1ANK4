@@ -85,9 +85,6 @@
 # direct methods
 .method constructor <init>(IIZ)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     const/4 v4, 0x0
 

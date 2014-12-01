@@ -251,7 +251,7 @@
 
     if-eqz v3, :cond_4
 
-    invoke-virtual {p0}, Ljava/util/concurrent/locks/ReentrantLock;->lock()V
+    invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->lock()V
 
     :try_start_0
     iget-object v2, p0, Lcom/google/common/collect/MapMakerInternalMap$Segment;->table:Ljava/util/concurrent/atomic/AtomicReferenceArray;
@@ -355,7 +355,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    invoke-virtual {p0}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
+    invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->unlock()V
 
     invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->postWriteCleanup()V
 
@@ -365,7 +365,7 @@
     :catchall_0
     move-exception v3
 
-    invoke-virtual {p0}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
+    invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->unlock()V
 
     invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->postWriteCleanup()V
 
@@ -428,7 +428,7 @@
 
     const/4 v7, 0x0
 
-    invoke-virtual {p0}, Ljava/util/concurrent/locks/ReentrantLock;->lock()V
+    invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->lock()V
 
     :try_start_0
     iget-object v5, p0, Lcom/google/common/collect/MapMakerInternalMap$Segment;->table:Ljava/util/concurrent/atomic/AtomicReferenceArray;
@@ -490,7 +490,7 @@
 
     const/4 v7, 0x1
 
-    invoke-virtual {p0}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
+    invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->unlock()V
 
     invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->postWriteCleanup()V
 
@@ -498,7 +498,7 @@
     return v7
 
     :cond_0
-    invoke-virtual {p0}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
+    invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->unlock()V
 
     invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->postWriteCleanup()V
 
@@ -515,7 +515,7 @@
     goto :goto_0
 
     :cond_2
-    invoke-virtual {p0}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
+    invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->unlock()V
 
     invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->postWriteCleanup()V
 
@@ -524,7 +524,7 @@
     :catchall_0
     move-exception v7
 
-    invoke-virtual {p0}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
+    invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->unlock()V
 
     invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->postWriteCleanup()V
 
@@ -1724,7 +1724,7 @@
 
     const/4 v9, 0x0
 
-    invoke-virtual {p0}, Ljava/util/concurrent/locks/ReentrantLock;->lock()V
+    invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->lock()V
 
     :try_start_0
     invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->preWriteCleanup()V
@@ -1823,7 +1823,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    invoke-virtual {p0}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
+    invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->unlock()V
 
     invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->postWriteCleanup()V
 
@@ -1853,7 +1853,7 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    invoke-virtual {p0}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
+    invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->unlock()V
 
     invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->postWriteCleanup()V
 
@@ -1875,7 +1875,7 @@
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    invoke-virtual {p0}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
+    invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->unlock()V
 
     invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->postWriteCleanup()V
 
@@ -1919,7 +1919,7 @@
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
-    invoke-virtual {p0}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
+    invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->unlock()V
 
     invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->postWriteCleanup()V
 
@@ -1930,7 +1930,7 @@
     :catchall_0
     move-exception v9
 
-    invoke-virtual {p0}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
+    invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->unlock()V
 
     invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->postWriteCleanup()V
 
@@ -1948,7 +1948,7 @@
         }
     .end annotation
 
-    invoke-virtual {p0}, Ljava/util/concurrent/locks/ReentrantLock;->lock()V
+    invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->lock()V
 
     :try_start_0
     iget v6, p0, Lcom/google/common/collect/MapMakerInternalMap$Segment;->count:I
@@ -2016,7 +2016,7 @@
 
     const/4 v6, 0x1
 
-    invoke-virtual {p0}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
+    invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->unlock()V
 
     invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->postWriteCleanup()V
 
@@ -2036,7 +2036,7 @@
     :cond_1
     const/4 v6, 0x0
 
-    invoke-virtual {p0}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
+    invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->unlock()V
 
     invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->postWriteCleanup()V
 
@@ -2045,7 +2045,7 @@
     :catchall_0
     move-exception v6
 
-    invoke-virtual {p0}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
+    invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->unlock()V
 
     invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->postWriteCleanup()V
 
@@ -2065,7 +2065,7 @@
 
     const/4 v8, 0x0
 
-    invoke-virtual {p0}, Ljava/util/concurrent/locks/ReentrantLock;->lock()V
+    invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->lock()V
 
     :try_start_0
     iget v9, p0, Lcom/google/common/collect/MapMakerInternalMap$Segment;->count:I
@@ -2151,9 +2151,9 @@
 
     const/4 v8, 0x1
 
-    invoke-virtual {p0}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
+    invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->unlock()V
 
-    invoke-virtual {p0}, Ljava/util/concurrent/locks/ReentrantLock;->isHeldByCurrentThread()Z
+    invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->isHeldByCurrentThread()Z
 
     move-result v9
 
@@ -2166,9 +2166,9 @@
     return v8
 
     :cond_1
-    invoke-virtual {p0}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
+    invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->unlock()V
 
-    invoke-virtual {p0}, Ljava/util/concurrent/locks/ReentrantLock;->isHeldByCurrentThread()Z
+    invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->isHeldByCurrentThread()Z
 
     move-result v9
 
@@ -2189,9 +2189,9 @@
     goto :goto_0
 
     :cond_3
-    invoke-virtual {p0}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
+    invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->unlock()V
 
-    invoke-virtual {p0}, Ljava/util/concurrent/locks/ReentrantLock;->isHeldByCurrentThread()Z
+    invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->isHeldByCurrentThread()Z
 
     move-result v9
 
@@ -2204,9 +2204,9 @@
     :catchall_0
     move-exception v8
 
-    invoke-virtual {p0}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
+    invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->unlock()V
 
-    invoke-virtual {p0}, Ljava/util/concurrent/locks/ReentrantLock;->isHeldByCurrentThread()Z
+    invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->isHeldByCurrentThread()Z
 
     move-result v9
 
@@ -2380,7 +2380,7 @@
 
     const/4 v10, 0x0
 
-    invoke-virtual {p0}, Ljava/util/concurrent/locks/ReentrantLock;->lock()V
+    invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->lock()V
 
     :try_start_0
     invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->preWriteCleanup()V
@@ -2467,7 +2467,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    invoke-virtual {p0}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
+    invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->unlock()V
 
     invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->postWriteCleanup()V
 
@@ -2489,7 +2489,7 @@
     goto :goto_1
 
     :cond_1
-    invoke-virtual {p0}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
+    invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->unlock()V
 
     invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->postWriteCleanup()V
 
@@ -2508,7 +2508,7 @@
     goto :goto_0
 
     :cond_3
-    invoke-virtual {p0}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
+    invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->unlock()V
 
     invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->postWriteCleanup()V
 
@@ -2519,7 +2519,7 @@
     :catchall_0
     move-exception v10
 
-    invoke-virtual {p0}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
+    invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->unlock()V
 
     invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->postWriteCleanup()V
 
@@ -2534,7 +2534,7 @@
 
     const/4 v10, 0x0
 
-    invoke-virtual {p0}, Ljava/util/concurrent/locks/ReentrantLock;->lock()V
+    invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->lock()V
 
     :try_start_0
     invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->preWriteCleanup()V
@@ -2636,7 +2636,7 @@
     const/4 v10, 0x1
 
     :cond_0
-    invoke-virtual {p0}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
+    invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->unlock()V
 
     invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->postWriteCleanup()V
 
@@ -2658,7 +2658,7 @@
     goto :goto_1
 
     :cond_2
-    invoke-virtual {p0}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
+    invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->unlock()V
 
     invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->postWriteCleanup()V
 
@@ -2675,7 +2675,7 @@
     goto :goto_0
 
     :cond_4
-    invoke-virtual {p0}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
+    invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->unlock()V
 
     invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->postWriteCleanup()V
 
@@ -2684,7 +2684,7 @@
     :catchall_0
     move-exception v10
 
-    invoke-virtual {p0}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
+    invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->unlock()V
 
     invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->postWriteCleanup()V
 
@@ -2881,7 +2881,7 @@
 
     const/4 v9, 0x0
 
-    invoke-virtual {p0}, Ljava/util/concurrent/locks/ReentrantLock;->lock()V
+    invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->lock()V
 
     :try_start_0
     invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->preWriteCleanup()V
@@ -2974,7 +2974,7 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     :cond_0
-    invoke-virtual {p0}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
+    invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->unlock()V
 
     invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->postWriteCleanup()V
 
@@ -2999,7 +2999,7 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    invoke-virtual {p0}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
+    invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->unlock()V
 
     invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->postWriteCleanup()V
 
@@ -3016,7 +3016,7 @@
     goto :goto_0
 
     :cond_3
-    invoke-virtual {p0}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
+    invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->unlock()V
 
     invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->postWriteCleanup()V
 
@@ -3027,7 +3027,7 @@
     :catchall_0
     move-exception v9
 
-    invoke-virtual {p0}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
+    invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->unlock()V
 
     invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->postWriteCleanup()V
 
@@ -3045,7 +3045,7 @@
 
     const/4 v9, 0x0
 
-    invoke-virtual {p0}, Ljava/util/concurrent/locks/ReentrantLock;->lock()V
+    invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->lock()V
 
     :try_start_0
     invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->preWriteCleanup()V
@@ -3138,7 +3138,7 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     :cond_0
-    invoke-virtual {p0}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
+    invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->unlock()V
 
     invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->postWriteCleanup()V
 
@@ -3173,7 +3173,7 @@
 
     const/4 v9, 0x1
 
-    invoke-virtual {p0}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
+    invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->unlock()V
 
     invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->postWriteCleanup()V
 
@@ -3185,7 +3185,7 @@
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    invoke-virtual {p0}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
+    invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->unlock()V
 
     invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->postWriteCleanup()V
 
@@ -3202,7 +3202,7 @@
     goto :goto_0
 
     :cond_4
-    invoke-virtual {p0}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
+    invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->unlock()V
 
     invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->postWriteCleanup()V
 
@@ -3211,7 +3211,7 @@
     :catchall_0
     move-exception v9
 
-    invoke-virtual {p0}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
+    invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->unlock()V
 
     invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->postWriteCleanup()V
 
@@ -3231,7 +3231,7 @@
 .method runLockedCleanup()V
     .locals 2
 
-    invoke-virtual {p0}, Ljava/util/concurrent/locks/ReentrantLock;->tryLock()Z
+    invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->tryLock()Z
 
     move-result v0
 
@@ -3250,7 +3250,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    invoke-virtual {p0}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
+    invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->unlock()V
 
     :cond_0
     return-void
@@ -3258,7 +3258,7 @@
     :catchall_0
     move-exception v0
 
-    invoke-virtual {p0}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
+    invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->unlock()V
 
     throw v0
 .end method
@@ -3266,7 +3266,7 @@
 .method runUnlockedCleanup()V
     .locals 1
 
-    invoke-virtual {p0}, Ljava/util/concurrent/locks/ReentrantLock;->isHeldByCurrentThread()Z
+    invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->isHeldByCurrentThread()Z
 
     move-result v0
 
@@ -3308,7 +3308,7 @@
 .method tryDrainReferenceQueues()V
     .locals 1
 
-    invoke-virtual {p0}, Ljava/util/concurrent/locks/ReentrantLock;->tryLock()Z
+    invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->tryLock()Z
 
     move-result v0
 
@@ -3319,7 +3319,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    invoke-virtual {p0}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
+    invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->unlock()V
 
     :cond_0
     return-void
@@ -3327,7 +3327,7 @@
     :catchall_0
     move-exception v0
 
-    invoke-virtual {p0}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
+    invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->unlock()V
 
     throw v0
 .end method
@@ -3335,7 +3335,7 @@
 .method tryExpireEntries()V
     .locals 1
 
-    invoke-virtual {p0}, Ljava/util/concurrent/locks/ReentrantLock;->tryLock()Z
+    invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->tryLock()Z
 
     move-result v0
 
@@ -3346,7 +3346,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    invoke-virtual {p0}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
+    invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->unlock()V
 
     :cond_0
     return-void
@@ -3354,7 +3354,7 @@
     :catchall_0
     move-exception v0
 
-    invoke-virtual {p0}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
+    invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->unlock()V
 
     throw v0
 .end method

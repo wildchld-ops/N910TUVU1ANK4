@@ -45,7 +45,6 @@
 
 .method static synthetic access$200(Ljava/util/List;)V
     .locals 0
-    .param p0    # Ljava/util/List;
 
     invoke-static {p0}, Landroid/net/wifi/WifiConfigStore$DelayedDiskWrite;->onWriteCalled(Ljava/util/List;)V
 
@@ -54,7 +53,6 @@
 
 .method private static loge(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "DelayedDiskWrite"
 

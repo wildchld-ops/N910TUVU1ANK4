@@ -38,8 +38,6 @@
 
 .method synthetic constructor <init>(Landroid/webkit/WebView;Landroid/webkit/WebView$1;)V
     .locals 0
-    .param p1    # Landroid/webkit/WebView;
-    .param p2    # Landroid/webkit/WebView$1;
 
     invoke-direct {p0, p1}, Landroid/webkit/WebView$FindListenerDistributor;-><init>(Landroid/webkit/WebView;)V
 
@@ -48,8 +46,6 @@
 
 .method static synthetic access$002(Landroid/webkit/WebView$FindListenerDistributor;Landroid/webkit/WebView$FindListener;)Landroid/webkit/WebView$FindListener;
     .locals 0
-    .param p0    # Landroid/webkit/WebView$FindListenerDistributor;
-    .param p1    # Landroid/webkit/WebView$FindListener;
 
     iput-object p1, p0, Landroid/webkit/WebView$FindListenerDistributor;->mUserFindListener:Landroid/webkit/WebView$FindListener;
 
@@ -58,8 +54,6 @@
 
 .method static synthetic access$2202(Landroid/webkit/WebView$FindListenerDistributor;Landroid/webkit/WebView$FindListener;)Landroid/webkit/WebView$FindListener;
     .locals 0
-    .param p0    # Landroid/webkit/WebView$FindListenerDistributor;
-    .param p1    # Landroid/webkit/WebView$FindListener;
 
     iput-object p1, p0, Landroid/webkit/WebView$FindListenerDistributor;->mFindDialogFindListener:Landroid/webkit/WebView$FindListener;
 
@@ -70,9 +64,6 @@
 # virtual methods
 .method public onFindResultReceived(IIZ)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     iget-object v0, p0, Landroid/webkit/WebView$FindListenerDistributor;->mFindDialogFindListener:Landroid/webkit/WebView$FindListener;
 

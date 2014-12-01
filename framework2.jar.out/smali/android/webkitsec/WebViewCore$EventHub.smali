@@ -357,8 +357,6 @@
 
 .method synthetic constructor <init>(Landroid/webkitsec/WebViewCore;Landroid/webkitsec/WebViewCore$1;)V
     .locals 0
-    .param p1    # Landroid/webkitsec/WebViewCore;
-    .param p2    # Landroid/webkitsec/WebViewCore$1;
 
     invoke-direct {p0, p1}, Landroid/webkitsec/WebViewCore$EventHub;-><init>(Landroid/webkitsec/WebViewCore;)V
 
@@ -367,7 +365,6 @@
 
 .method static synthetic access$1000(Landroid/webkitsec/WebViewCore$EventHub;)Ljava/util/LinkedList;
     .locals 1
-    .param p0    # Landroid/webkitsec/WebViewCore$EventHub;
 
     iget-object v0, p0, Landroid/webkitsec/WebViewCore$EventHub;->mMessages:Ljava/util/LinkedList;
 
@@ -376,7 +373,6 @@
 
 .method static synthetic access$1100(Landroid/webkitsec/WebViewCore$EventHub;)I
     .locals 1
-    .param p0    # Landroid/webkitsec/WebViewCore$EventHub;
 
     iget v0, p0, Landroid/webkitsec/WebViewCore$EventHub;->mSavedPriority:I
 
@@ -385,8 +381,6 @@
 
 .method static synthetic access$1102(Landroid/webkitsec/WebViewCore$EventHub;I)I
     .locals 0
-    .param p0    # Landroid/webkitsec/WebViewCore$EventHub;
-    .param p1    # I
 
     iput p1, p0, Landroid/webkitsec/WebViewCore$EventHub;->mSavedPriority:I
 
@@ -395,7 +389,6 @@
 
 .method static synthetic access$1200(Landroid/webkitsec/WebViewCore$EventHub;)I
     .locals 1
-    .param p0    # Landroid/webkitsec/WebViewCore$EventHub;
 
     iget v0, p0, Landroid/webkitsec/WebViewCore$EventHub;->mTid:I
 
@@ -404,8 +397,6 @@
 
 .method static synthetic access$14600(Landroid/webkitsec/WebViewCore$EventHub;Landroid/os/Message;)V
     .locals 0
-    .param p0    # Landroid/webkitsec/WebViewCore$EventHub;
-    .param p1    # Landroid/os/Message;
 
     invoke-direct {p0, p1}, Landroid/webkitsec/WebViewCore$EventHub;->sendMessageAtFrontOfQueue(Landroid/os/Message;)V
 
@@ -414,9 +405,6 @@
 
 .method static synthetic access$14700(Landroid/webkitsec/WebViewCore$EventHub;Landroid/os/Message;J)V
     .locals 0
-    .param p0    # Landroid/webkitsec/WebViewCore$EventHub;
-    .param p1    # Landroid/os/Message;
-    .param p2    # J
 
     invoke-direct {p0, p1, p2, p3}, Landroid/webkitsec/WebViewCore$EventHub;->sendMessageDelayed(Landroid/os/Message;J)V
 
@@ -425,8 +413,6 @@
 
 .method static synthetic access$14800(Landroid/webkitsec/WebViewCore$EventHub;I)V
     .locals 0
-    .param p0    # Landroid/webkitsec/WebViewCore$EventHub;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/webkitsec/WebViewCore$EventHub;->removeMessages(I)V
 
@@ -435,7 +421,6 @@
 
 .method static synthetic access$14900(Landroid/webkitsec/WebViewCore$EventHub;)V
     .locals 0
-    .param p0    # Landroid/webkitsec/WebViewCore$EventHub;
 
     invoke-direct {p0}, Landroid/webkitsec/WebViewCore$EventHub;->removeMessages()V
 
@@ -444,7 +429,6 @@
 
 .method static synthetic access$15000(Landroid/webkitsec/WebViewCore$EventHub;)V
     .locals 0
-    .param p0    # Landroid/webkitsec/WebViewCore$EventHub;
 
     invoke-direct {p0}, Landroid/webkitsec/WebViewCore$EventHub;->blockMessages()V
 
@@ -453,7 +437,6 @@
 
 .method static synthetic access$200(Landroid/webkitsec/WebViewCore$EventHub;)V
     .locals 0
-    .param p0    # Landroid/webkitsec/WebViewCore$EventHub;
 
     invoke-direct {p0}, Landroid/webkitsec/WebViewCore$EventHub;->transferMessages()V
 
@@ -462,8 +445,6 @@
 
 .method static synthetic access$2100(Landroid/webkitsec/WebViewCore$EventHub;Landroid/os/Message;)V
     .locals 0
-    .param p0    # Landroid/webkitsec/WebViewCore$EventHub;
-    .param p1    # Landroid/os/Message;
 
     invoke-direct {p0, p1}, Landroid/webkitsec/WebViewCore$EventHub;->sendMessage(Landroid/os/Message;)V
 
@@ -472,7 +453,6 @@
 
 .method static synthetic access$300(Landroid/webkitsec/WebViewCore$EventHub;)Z
     .locals 1
-    .param p0    # Landroid/webkitsec/WebViewCore$EventHub;
 
     iget-boolean v0, p0, Landroid/webkitsec/WebViewCore$EventHub;->mDestroying:Z
 
@@ -481,8 +461,6 @@
 
 .method static synthetic access$302(Landroid/webkitsec/WebViewCore$EventHub;Z)Z
     .locals 0
-    .param p0    # Landroid/webkitsec/WebViewCore$EventHub;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/webkitsec/WebViewCore$EventHub;->mDestroying:Z
 
@@ -491,7 +469,6 @@
 
 .method static synthetic access$900(Landroid/webkitsec/WebViewCore$EventHub;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Landroid/webkitsec/WebViewCore$EventHub;
 
     iget-object v0, p0, Landroid/webkitsec/WebViewCore$EventHub;->mHandler:Landroid/os/Handler;
 
@@ -572,7 +549,6 @@
 
 .method private declared-synchronized removeMessages(I)V
     .locals 4
-    .param p1    # I
 
     monitor-enter p0
 
@@ -657,7 +633,6 @@
 
 .method private declared-synchronized sendMessage(Landroid/os/Message;)V
     .locals 1
-    .param p1    # Landroid/os/Message;
 
     monitor-enter p0
 
@@ -707,7 +682,6 @@
 
 .method private declared-synchronized sendMessageAtFrontOfQueue(Landroid/os/Message;)V
     .locals 2
-    .param p1    # Landroid/os/Message;
 
     monitor-enter p0
 
@@ -759,8 +733,6 @@
 
 .method private declared-synchronized sendMessageDelayed(Landroid/os/Message;J)V
     .locals 1
-    .param p1    # Landroid/os/Message;
-    .param p2    # J
 
     monitor-enter p0
 
@@ -870,7 +842,6 @@
 # virtual methods
 .method public blockWebkitDraw(Z)V
     .locals 5
-    .param p1    # Z
 
     const/4 v4, 0x1
 
@@ -974,10 +945,6 @@
 
 .method public dispatchWebKitEvent(Landroid/webkitsec/WebViewInputDispatcher;Landroid/view/MotionEvent;II)Z
     .locals 15
-    .param p1    # Landroid/webkitsec/WebViewInputDispatcher;
-    .param p2    # Landroid/view/MotionEvent;
-    .param p3    # I
-    .param p4    # I
 
     iget-object v1, p0, Landroid/webkitsec/WebViewCore$EventHub;->this$0:Landroid/webkitsec/WebViewCore;
 

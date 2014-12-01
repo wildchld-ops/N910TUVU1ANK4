@@ -275,9 +275,6 @@
 
 .method public constructor <init>(Lcom/android/launcher2/LauncherApplication;Lcom/android/launcher2/PkgResCache;Lcom/android/launcher2/BadgeCache;)V
     .locals 2
-    .param p1    # Lcom/android/launcher2/LauncherApplication;
-    .param p2    # Lcom/android/launcher2/PkgResCache;
-    .param p3    # Lcom/android/launcher2/BadgeCache;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -338,7 +335,6 @@
 
 .method private createApp(Landroid/content/pm/ResolveInfo;)Lcom/android/launcher2/AppItem;
     .locals 13
-    .param p1    # Landroid/content/pm/ResolveInfo;
 
     const/4 v7, 0x1
 
@@ -528,7 +524,6 @@
 
 .method private createDbAppItem(Lcom/android/launcher2/AppItem;)Lcom/android/launcher2/LauncherSettings$AppOrderModify;
     .locals 3
-    .param p1    # Lcom/android/launcher2/AppItem;
 
     new-instance v0, Lcom/android/launcher2/LauncherSettings$AppOrderModify;
 
@@ -605,7 +600,6 @@
 
 .method private findActivitiesForPackage(Ljava/lang/String;)Ljava/util/List;
     .locals 4
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -652,7 +646,6 @@
 
 .method private static findActivity(Ljava/util/List;Landroid/content/ComponentName;)Z
     .locals 5
-    .param p1    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -709,7 +702,6 @@
 
 .method private getOrCreateFolder(J)Lcom/android/launcher2/AppFolderItem;
     .locals 4
-    .param p1    # J
 
     const/4 v0, 0x0
 
@@ -773,7 +765,6 @@
 
 .method private setBadgeCount(Lcom/android/launcher2/AppItem;)V
     .locals 2
-    .param p1    # Lcom/android/launcher2/AppItem;
 
     iget-object v0, p0, Lcom/android/launcher2/MenuAppLoader;->mBadgeCache:Lcom/android/launcher2/BadgeCache;
 
@@ -790,9 +781,6 @@
 
 .method private setTitleAndIcon(Lcom/android/launcher2/AppItem;Landroid/content/pm/ResolveInfo;Landroid/content/ComponentName;)V
     .locals 2
-    .param p1    # Lcom/android/launcher2/AppItem;
-    .param p2    # Landroid/content/pm/ResolveInfo;
-    .param p3    # Landroid/content/ComponentName;
 
     iget-object v0, p0, Lcom/android/launcher2/MenuAppLoader;->mPkgResCache:Lcom/android/launcher2/PkgResCache;
 
@@ -859,15 +847,6 @@
 
 .method private updateOrCreateApp(Landroid/content/ComponentName;JJIIZLjava/lang/String;IZ)Lcom/android/launcher2/AppItem;
     .locals 18
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # J
-    .param p4    # J
-    .param p6    # I
-    .param p7    # I
-    .param p8    # Z
-    .param p9    # Ljava/lang/String;
-    .param p10    # I
-    .param p11    # Z
 
     const/4 v9, 0x0
 
@@ -1242,12 +1221,6 @@
 
 .method private updateOrCreateFolder(JIILjava/lang/String;IZ)Lcom/android/launcher2/AppFolderItem;
     .locals 3
-    .param p1    # J
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Ljava/lang/String;
-    .param p6    # I
-    .param p7    # Z
 
     const/4 v0, 0x0
 
@@ -1283,7 +1256,6 @@
 
 .method private updatePackageActivities(Ljava/lang/String;Ljava/util/List;)V
     .locals 12
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1510,7 +1482,6 @@
 
 .method public addPackage(Ljava/lang/String;)V
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/launcher2/MenuAppLoader;->findActivitiesForPackage(Ljava/lang/String;)Ljava/util/List;
 
@@ -1593,7 +1564,6 @@
 
 .method public loadAllItems(Z)Ljava/util/Map;
     .locals 64
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(Z)",
@@ -2974,7 +2944,6 @@
 
 .method public removePackage(Ljava/lang/String;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     new-instance v2, Ljava/util/ArrayList;
 
@@ -3140,7 +3109,6 @@
 
 .method public updatePackage(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/launcher2/MenuAppLoader;->findActivitiesForPackage(Ljava/lang/String;)Ljava/util/List;
 
@@ -3165,8 +3133,6 @@
 
 .method updatePackageAvailability(Ljava/lang/String;Z)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     if-eqz p2, :cond_1
 

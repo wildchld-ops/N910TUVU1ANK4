@@ -67,7 +67,6 @@
 # virtual methods
 .method public addStroke(Lcom/samsung/android/hermes/object/HermesStroke;)V
     .locals 1
-    .param p1    # Lcom/samsung/android/hermes/object/HermesStroke;
 
     if-eqz p1, :cond_0
 
@@ -106,7 +105,6 @@
 
 .method public readFromParcel(Landroid/os/Parcel;)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
 
     iget-object v0, p0, Lcom/samsung/android/hermes/object/HermesStrokes;->mStrokes:Ljava/util/List;
 
@@ -130,7 +128,6 @@
 
 .method public setStrokes([Lcom/samsung/android/hermes/object/HermesStroke;)V
     .locals 5
-    .param p1    # [Lcom/samsung/android/hermes/object/HermesStroke;
 
     move-object v0, p1
 
@@ -169,8 +166,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/samsung/android/hermes/object/HermesStrokes;->mStrokes:Ljava/util/List;
 

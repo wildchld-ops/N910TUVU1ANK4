@@ -38,8 +38,6 @@
 
 .method public varargs constructor <init>(Landroid/nfc/NdefRecord;[Landroid/nfc/NdefRecord;)V
     .locals 8
-    .param p1    # Landroid/nfc/NdefRecord;
-    .param p2    # [Landroid/nfc/NdefRecord;
 
     const/4 v7, 0x0
 
@@ -108,7 +106,6 @@
 
 .method public constructor <init>([B)V
     .locals 3
-    .param p1    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/nfc/FormatException;
@@ -160,7 +157,6 @@
 
 .method public constructor <init>([Landroid/nfc/NdefRecord;)V
     .locals 6
-    .param p1    # [Landroid/nfc/NdefRecord;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -223,7 +219,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 4
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x0
 
@@ -413,8 +408,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v0, p0, Landroid/nfc/NdefMessage;->mRecords:[Landroid/nfc/NdefRecord;
 

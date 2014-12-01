@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -45,11 +44,6 @@
 
 .method public changeEcryptfsPassword(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/dirEncryption/IDirEncryptionManagerCallBack;I)I
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Landroid/dirEncryption/IDirEncryptionManagerCallBack;
-    .param p5    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -127,7 +121,6 @@
 
 .method public encryptStorage(Ljava/lang/String;)I
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -416,8 +409,6 @@
 
 .method public isPathMounted(Ljava/lang/String;Landroid/dirEncryption/IDirEncryptionManagerCallBack;)I
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/dirEncryption/IDirEncryptionManagerCallBack;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -542,14 +533,6 @@
 
 .method public mountEcryptfsStorage(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZIIILandroid/dirEncryption/IDirEncryptionManagerCallBack;)I
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Z
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # Landroid/dirEncryption/IDirEncryptionManagerCallBack;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -642,7 +625,6 @@
 
 .method public registerListener(Landroid/os/storage/IDirEncryptServiceListener;)V
     .locals 5
-    .param p1    # Landroid/os/storage/IDirEncryptServiceListener;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -706,7 +688,6 @@
 
 .method public setNeedToCreateKey(Z)V
     .locals 5
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -820,7 +801,6 @@
 
 .method public setPassword(Ljava/lang/String;)I
     .locals 8
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -914,9 +894,6 @@
 
 .method public setStorageCardEncryptionPolicy(III)I
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -976,10 +953,6 @@
 
 .method public unmountEcryptfsStorage(Ljava/lang/String;Landroid/dirEncryption/IDirEncryptionManagerCallBack;II)I
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/dirEncryption/IDirEncryptionManagerCallBack;
-    .param p3    # I
-    .param p4    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1104,7 +1077,6 @@
 
 .method public unregisterListener(Landroid/os/storage/IDirEncryptServiceListener;)V
     .locals 5
-    .param p1    # Landroid/os/storage/IDirEncryptServiceListener;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

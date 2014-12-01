@@ -33,8 +33,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/Looper;Landroid/hardware/SystemSensorManager;)V
     .locals 2
-    .param p1    # Landroid/os/Looper;
-    .param p2    # Landroid/hardware/SystemSensorManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -93,7 +91,6 @@
 
 .method private disableSensor(Landroid/hardware/Sensor;)I
     .locals 2
-    .param p1    # Landroid/hardware/Sensor;
 
     iget v0, p0, Landroid/hardware/SystemSensorManager$BaseEventQueue;->nSensorEventQueue:I
 
@@ -130,7 +127,6 @@
 
 .method private dispose(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Landroid/hardware/SystemSensorManager$BaseEventQueue;->mCloseGuard:Ldalvik/system/CloseGuard;
 
@@ -166,10 +162,6 @@
 
 .method private enableSensor(Landroid/hardware/Sensor;III)I
     .locals 2
-    .param p1    # Landroid/hardware/Sensor;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iget v0, p0, Landroid/hardware/SystemSensorManager$BaseEventQueue;->nSensorEventQueue:I
 
@@ -223,10 +215,6 @@
 # virtual methods
 .method public addSensor(Landroid/hardware/Sensor;III)Z
     .locals 4
-    .param p1    # Landroid/hardware/Sensor;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/4 v2, 0x1
 
@@ -436,8 +424,6 @@
 
 .method public removeSensor(Landroid/hardware/Sensor;Z)Z
     .locals 4
-    .param p1    # Landroid/hardware/Sensor;
-    .param p2    # Z
 
     const/4 v1, 0x0
 

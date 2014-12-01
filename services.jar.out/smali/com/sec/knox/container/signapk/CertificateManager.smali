@@ -76,8 +76,6 @@
 
 .method private constructor <init>(ILandroid/content/Context;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -96,9 +94,6 @@
 
 .method public constructor <init>(I[Ljava/lang/String;Landroid/content/Context;)V
     .locals 1
-    .param p1    # I
-    .param p2    # [Ljava/lang/String;
-    .param p3    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -315,8 +310,6 @@
 
 .method private static decryptPrivateKey([BLjava/lang/String;)Ljava/security/spec/KeySpec;
     .locals 8
-    .param p0    # [B
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/security/GeneralSecurityException;
@@ -397,8 +390,6 @@
 
 .method public static getInstance(ILandroid/content/Context;)Lcom/sec/knox/container/signapk/CertificateManager;
     .locals 3
-    .param p0    # I
-    .param p1    # Landroid/content/Context;
 
     sget-object v1, Lcom/sec/knox/container/signapk/CertificateManager;->mManagers:Ljava/util/HashMap;
 
@@ -447,7 +438,6 @@
 
 .method private initializeKeysForApk(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     invoke-direct {p0, p1}, Lcom/sec/knox/container/signapk/CertificateManager;->readPrivateKey(Ljava/lang/String;)Ljava/security/PrivateKey;
@@ -765,7 +755,6 @@
 
 .method private readPrivateKey(Ljava/lang/String;)Ljava/security/PrivateKey;
     .locals 8
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -916,7 +905,6 @@
 
 .method private readPrivateKeyForApk(Ljava/lang/String;)Ljava/security/PrivateKey;
     .locals 8
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -1063,7 +1051,6 @@
 
 .method public generateSelfSignedX509CertificateForApk(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;
@@ -1129,7 +1116,6 @@
 
 .method public initializeKeyStore(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     invoke-direct {p0, p1}, Lcom/sec/knox/container/signapk/CertificateManager;->readPrivateKey(Ljava/lang/String;)Ljava/security/PrivateKey;
@@ -1159,7 +1145,6 @@
 
 .method public setContainerId(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/knox/container/signapk/CertificateManager;->mContainerId:I
 
@@ -1168,8 +1153,6 @@
 
 .method public setUpKeys(Ljava/lang/String;Lcom/sec/knox/container/contentprovider/ContainerDatabase;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/sec/knox/container/contentprovider/ContainerDatabase;
 
     sget-object v1, Lcom/sec/knox/container/signapk/CertificateManager;->TAG:Ljava/lang/String;
 

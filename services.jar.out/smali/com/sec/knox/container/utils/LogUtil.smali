@@ -72,8 +72,6 @@
 
 .method public static d(Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     sget-boolean v0, Lcom/sec/knox/container/utils/LogUtil;->LOG_ENABLED:Z
 
@@ -111,8 +109,6 @@
 
 .method public static e(Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     sget-boolean v0, Lcom/sec/knox/container/utils/LogUtil;->LOG_ENABLED:Z
 
@@ -150,9 +146,6 @@
 
 .method public static e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Exception;)V
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Exception;
 
     sget-boolean v0, Lcom/sec/knox/container/utils/LogUtil;->LOG_ENABLED:Z
 
@@ -209,8 +202,6 @@
 
 .method public static i(Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     sget-boolean v0, Lcom/sec/knox/container/utils/LogUtil;->LOG_ENABLED:Z
 
@@ -248,8 +239,6 @@
 
 .method public static v(Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     sget-boolean v0, Lcom/sec/knox/container/utils/LogUtil;->LOG_ENABLED:Z
 
@@ -287,8 +276,6 @@
 
 .method public static w(Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     sget-boolean v0, Lcom/sec/knox/container/utils/LogUtil;->LOG_ENABLED:Z
 
@@ -326,9 +313,6 @@
 
 .method public static w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Exception;)V
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Exception;
 
     sget-boolean v0, Lcom/sec/knox/container/utils/LogUtil;->LOG_ENABLED:Z
 

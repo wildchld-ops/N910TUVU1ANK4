@@ -12,7 +12,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -33,7 +32,6 @@
 
 .method private getCanonicalRingtoneValue(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
@@ -66,7 +64,6 @@
 
 .method private isAlreadyConfiguredCriticalAccessibilitySetting(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -172,7 +169,6 @@
 
 .method private setAutoRestore(Z)V
     .locals 2
-    .param p1    # Z
 
     :try_start_0
     const-string v1, "backup"
@@ -203,7 +199,6 @@
 
 .method private setBrightness(I)V
     .locals 2
-    .param p1    # I
 
     :try_start_0
     const-string v1, "power"
@@ -234,7 +229,6 @@
 
 .method private setGpsLocation(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     iget-object v3, p0, Lcom/android/providers/settings/SettingsHelper;->mContext:Landroid/content/Context;
 
@@ -316,8 +310,6 @@
 
 .method private setRingtone(Ljava/lang/String;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     if-nez p2, :cond_0
 
@@ -382,7 +374,6 @@
 
 .method private setSoundEffects(Z)V
     .locals 1
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -478,8 +469,6 @@
 
 .method public onBackupValue(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const-string v0, "ringtone"
 
@@ -516,8 +505,6 @@
 
 .method public restoreValue(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v1, 0x1
 
@@ -633,8 +620,6 @@
 
 .method setLocaleData([BI)V
     .locals 12
-    .param p1    # [B
-    .param p2    # I
 
     const/4 v11, 0x2
 

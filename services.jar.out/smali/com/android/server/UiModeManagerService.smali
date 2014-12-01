@@ -107,8 +107,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Lcom/android/server/TwilightService;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/server/TwilightService;
 
     const/4 v1, 0x1
 
@@ -354,10 +352,6 @@
 
 .method static synthetic access$000(Lcom/android/server/UiModeManagerService;Ljava/lang/String;II)V
     .locals 0
-    .param p0    # Lcom/android/server/UiModeManagerService;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/server/UiModeManagerService;->updateAfterBroadcastLocked(Ljava/lang/String;II)V
 
@@ -366,8 +360,6 @@
 
 .method static synthetic access$100(Lcom/android/server/UiModeManagerService;I)V
     .locals 0
-    .param p0    # Lcom/android/server/UiModeManagerService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/UiModeManagerService;->updateDockState(I)V
 
@@ -376,8 +368,6 @@
 
 .method static synthetic access$202(Lcom/android/server/UiModeManagerService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/UiModeManagerService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/UiModeManagerService;->mCharging:Z
 
@@ -386,7 +376,6 @@
 
 .method static synthetic access$300(Lcom/android/server/UiModeManagerService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/UiModeManagerService;
 
     iget-boolean v0, p0, Lcom/android/server/UiModeManagerService;->mSystemReady:Z
 
@@ -395,9 +384,6 @@
 
 .method static synthetic access$400(Lcom/android/server/UiModeManagerService;II)V
     .locals 0
-    .param p0    # Lcom/android/server/UiModeManagerService;
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/UiModeManagerService;->updateLocked(II)V
 
@@ -406,7 +392,6 @@
 
 .method static synthetic access$500(Lcom/android/server/UiModeManagerService;)V
     .locals 0
-    .param p0    # Lcom/android/server/UiModeManagerService;
 
     invoke-direct {p0}, Lcom/android/server/UiModeManagerService;->updateTwilight()V
 
@@ -563,7 +548,6 @@
 
 .method static buildHomeIntent(Ljava/lang/String;)Landroid/content/Intent;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -582,7 +566,6 @@
 
 .method private initCoverManager(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     iget-object v0, p0, Lcom/android/server/UiModeManagerService;->mContext:Landroid/content/Context;
 
@@ -606,7 +589,6 @@
 
 .method private static isDeskDockState(I)Z
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -657,7 +639,6 @@
 
 .method private sendConfigurationAndStartDreamOrDockAppLocked(Ljava/lang/String;)V
     .locals 19
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -943,7 +924,6 @@
 
 .method private setCarModeLocked(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-boolean v0, p0, Lcom/android/server/UiModeManagerService;->mCarModeEnabled:Z
 
@@ -957,9 +937,6 @@
 
 .method private updateAfterBroadcastLocked(Ljava/lang/String;II)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v0, 0x0
 
@@ -1124,7 +1101,6 @@
 
 .method private updateDockState(I)V
     .locals 5
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -1182,8 +1158,6 @@
 
 .method private updateLocked(II)V
     .locals 13
-    .param p1    # I
-    .param p2    # I
 
     const/4 v9, 0x0
 
@@ -1481,7 +1455,6 @@
 # virtual methods
 .method public disableCarMode(I)V
     .locals 4
-    .param p1    # I
 
     invoke-static {}, Landroid/os/Binder;->clearCallingIdentity()J
 
@@ -1539,9 +1512,6 @@
 
 .method protected dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/server/UiModeManagerService;->mContext:Landroid/content/Context;
 
@@ -1712,7 +1682,6 @@
 
 .method public enableCarMode(I)V
     .locals 4
-    .param p1    # I
 
     invoke-static {}, Landroid/os/Binder;->clearCallingIdentity()J
 
@@ -1911,7 +1880,6 @@
 
 .method public setNightMode(I)V
     .locals 5
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 

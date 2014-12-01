@@ -82,11 +82,11 @@
 
     const/4 v2, 0x0
 
-    invoke-virtual {v1, v2}, Landroid/os/Handler;->obtainMessage(I)Landroid/os/Message;
+    invoke-virtual {v1, v2}, Lcom/android/phone/BlockAPNChangeCheckBoxPreference$MyHandler;->obtainMessage(I)Landroid/os/Message;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
+    invoke-virtual {v0, v1}, Lcom/android/phone/BlockAPNChangeCheckBoxPreference$MyHandler;->sendMessage(Landroid/os/Message;)Z
 
     return-void
 .end method
@@ -205,7 +205,7 @@
     .locals 1
     .param p1    # Ljava/lang/Object;
 
-    invoke-super {p0, p1}, Landroid/preference/Preference;->callChangeListener(Ljava/lang/Object;)Z
+    invoke-super {p0, p1}, Landroid/preference/CheckBoxPreference;->callChangeListener(Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -231,13 +231,13 @@
 
     const v3, 0x1040009
 
-    invoke-super {p0}, Landroid/preference/TwoStatePreference;->onClick()V
+    invoke-super {p0}, Landroid/preference/CheckBoxPreference;->onClick()V
 
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lcom/android/phone/BlockAPNChangeCheckBoxPreference;->mOkClicked:Z
 
-    invoke-virtual {p0}, Landroid/preference/TwoStatePreference;->isChecked()Z
+    invoke-virtual {p0}, Lcom/android/phone/BlockAPNChangeCheckBoxPreference;->isChecked()Z
 
     move-result v0
 
@@ -289,7 +289,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0, p0}, Landroid/app/Dialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
+    invoke-virtual {v0, p0}, Landroid/app/AlertDialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
     :goto_0
     return-void
@@ -337,7 +337,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0, p0}, Landroid/app/Dialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
+    invoke-virtual {v0, p0}, Landroid/app/AlertDialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
     goto :goto_0
 .end method
@@ -365,23 +365,23 @@
 
     const/4 v2, 0x0
 
-    invoke-virtual {v1, v2}, Landroid/os/Handler;->obtainMessage(I)Landroid/os/Message;
+    invoke-virtual {v1, v2}, Lcom/android/phone/BlockAPNChangeCheckBoxPreference$MyHandler;->obtainMessage(I)Landroid/os/Message;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
+    invoke-virtual {v0, v1}, Lcom/android/phone/BlockAPNChangeCheckBoxPreference$MyHandler;->sendMessage(Landroid/os/Message;)Z
 
     iget-object v0, p0, Lcom/android/phone/BlockAPNChangeCheckBoxPreference;->mHandler:Lcom/android/phone/BlockAPNChangeCheckBoxPreference$MyHandler;
 
     iget-object v1, p0, Lcom/android/phone/BlockAPNChangeCheckBoxPreference;->mHandler:Lcom/android/phone/BlockAPNChangeCheckBoxPreference$MyHandler;
 
-    invoke-virtual {v1, v3}, Landroid/os/Handler;->obtainMessage(I)Landroid/os/Message;
+    invoke-virtual {v1, v3}, Lcom/android/phone/BlockAPNChangeCheckBoxPreference$MyHandler;->obtainMessage(I)Landroid/os/Message;
 
     move-result-object v1
 
     const-wide/16 v2, 0x1f4
 
-    invoke-virtual {v0, v1, v2, v3}, Landroid/os/Handler;->sendMessageDelayed(Landroid/os/Message;J)Z
+    invoke-virtual {v0, v1, v2, v3}, Lcom/android/phone/BlockAPNChangeCheckBoxPreference$MyHandler;->sendMessageDelayed(Landroid/os/Message;J)Z
 
     :cond_0
     return-void
@@ -401,11 +401,11 @@
 
     const/4 v2, 0x0
 
-    invoke-virtual {v1, v2}, Landroid/os/Handler;->obtainMessage(I)Landroid/os/Message;
+    invoke-virtual {v1, v2}, Lcom/android/phone/BlockAPNChangeCheckBoxPreference$MyHandler;->obtainMessage(I)Landroid/os/Message;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
+    invoke-virtual {v0, v1}, Lcom/android/phone/BlockAPNChangeCheckBoxPreference$MyHandler;->sendMessage(Landroid/os/Message;)Z
 
     :cond_0
     return-void

@@ -130,7 +130,7 @@
 
     if-ne v1, v4, :cond_3
 
-    invoke-virtual {p0, v7}, Landroid/preference/PreferenceActivity;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v7}, Lcom/android/phone/Roaming;->addPreferencesFromResource(I)V
 
     :goto_0
     const-string v4, "system_select_home_only"
@@ -146,7 +146,7 @@
     iput v4, p0, Lcom/android/phone/Roaming;->mRoamingMode:I
 
     :goto_1
-    invoke-virtual {p0}, Landroid/preference/PreferenceActivity;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/phone/Roaming;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v2
 
@@ -160,7 +160,7 @@
 
     const-string v4, "roaming_mode_key"
 
-    invoke-virtual {v2, v4}, Landroid/preference/PreferenceGroup;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {v2, v4}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v4
 
@@ -200,7 +200,7 @@
     :cond_1
     iget-object v4, p0, Lcom/android/phone/Roaming;->mButtonRoamingMode:Landroid/preference/ListPreference;
 
-    invoke-virtual {v4, p0}, Landroid/preference/Preference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
+    invoke-virtual {v4, p0}, Landroid/preference/ListPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     const-string v4, "roaming_settings"
 
@@ -220,7 +220,7 @@
 
     const-string v4, "roaming_settings_key"
 
-    invoke-virtual {v2, v4}, Landroid/preference/PreferenceGroup;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {v2, v4}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v4
 
@@ -230,7 +230,7 @@
 
     const-string v4, "roaming_guard_key"
 
-    invoke-virtual {v2, v4}, Landroid/preference/PreferenceGroup;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {v2, v4}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v4
 
@@ -238,7 +238,7 @@
 
     iput-object v4, p0, Lcom/android/phone/Roaming;->mButtonRoamingGuard:Landroid/preference/PreferenceScreen;
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getActionBar()Landroid/app/ActionBar;
+    invoke-virtual {p0}, Lcom/android/phone/Roaming;->getActionBar()Landroid/app/ActionBar;
 
     move-result-object v0
 
@@ -261,7 +261,7 @@
     if-ne v1, v4, :cond_5
 
     :cond_4
-    invoke-virtual {p0, v7}, Landroid/preference/PreferenceActivity;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v7}, Lcom/android/phone/Roaming;->addPreferencesFromResource(I)V
 
     goto :goto_0
 
@@ -308,7 +308,7 @@
 
     if-ne v0, v1, :cond_0
 
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/Roaming;->finish()V
 
     const/4 v1, 0x1
 
@@ -316,7 +316,7 @@
     return v1
 
     :cond_0
-    invoke-super {p0, p1}, Landroid/app/Activity;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
+    invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
 
     move-result v1
 
@@ -370,11 +370,11 @@
 
     iget-object v3, p0, Lcom/android/phone/Roaming;->mButtonRoamingSettings:Landroid/preference/PreferenceScreen;
 
-    invoke-virtual {v3, v5}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v3, v5}, Landroid/preference/PreferenceScreen;->setEnabled(Z)V
 
     iget-object v3, p0, Lcom/android/phone/Roaming;->mButtonRoamingGuard:Landroid/preference/PreferenceScreen;
 
-    invoke-virtual {v3, v5}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v3, v5}, Landroid/preference/PreferenceScreen;->setEnabled(Z)V
 
     :goto_0
     const-string v3, "roaming_settings"
@@ -409,7 +409,7 @@
 
     const/4 v5, 0x3
 
-    invoke-virtual {v4, v5}, Landroid/os/Handler;->obtainMessage(I)Landroid/os/Message;
+    invoke-virtual {v4, v5}, Lcom/android/phone/Roaming$MyHandler;->obtainMessage(I)Landroid/os/Message;
 
     move-result-object v4
 
@@ -459,11 +459,11 @@
 
     iget-object v3, p0, Lcom/android/phone/Roaming;->mButtonRoamingSettings:Landroid/preference/PreferenceScreen;
 
-    invoke-virtual {v3, v6}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v3, v6}, Landroid/preference/PreferenceScreen;->setEnabled(Z)V
 
     iget-object v3, p0, Lcom/android/phone/Roaming;->mButtonRoamingGuard:Landroid/preference/PreferenceScreen;
 
-    invoke-virtual {v3, v6}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v3, v6}, Landroid/preference/PreferenceScreen;->setEnabled(Z)V
 
     goto :goto_0
 
@@ -552,7 +552,7 @@
 
     const/4 v4, 0x1
 
-    invoke-super {p0}, Landroid/app/Activity;->onResume()V
+    invoke-super {p0}, Landroid/preference/PreferenceActivity;->onResume()V
 
     const-string v3, "Roaming"
 
@@ -560,11 +560,11 @@
 
     invoke-static {v3, v6}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-virtual {p0}, Landroid/preference/PreferenceActivity;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/phone/Roaming;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v3
 
-    invoke-virtual {v3, v4}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v3, v4}, Landroid/preference/PreferenceScreen;->setEnabled(Z)V
 
     iget-object v3, p0, Lcom/android/phone/Roaming;->mPhone:Lcom/android/internal/telephony/Phone;
 
@@ -578,7 +578,7 @@
 
     iget-object v6, p0, Lcom/android/phone/Roaming;->mHandler:Lcom/android/phone/Roaming$MyHandler;
 
-    invoke-virtual {v6, v7}, Landroid/os/Handler;->obtainMessage(I)Landroid/os/Message;
+    invoke-virtual {v6, v7}, Lcom/android/phone/Roaming$MyHandler;->obtainMessage(I)Landroid/os/Message;
 
     move-result-object v6
 
@@ -610,14 +610,14 @@
     move v3, v4
 
     :goto_1
-    invoke-virtual {v6, v3}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v6, v3}, Landroid/preference/PreferenceScreen;->setEnabled(Z)V
 
     iget-object v3, p0, Lcom/android/phone/Roaming;->mButtonRoamingGuard:Landroid/preference/PreferenceScreen;
 
     if-ne v2, v4, :cond_5
 
     :goto_2
-    invoke-virtual {v3, v4}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v3, v4}, Landroid/preference/PreferenceScreen;->setEnabled(Z)V
 
     :goto_3
     const-string v3, "global_network_cdma_gsm_enable_for_spr"
@@ -650,7 +650,7 @@
 
     iget-object v3, p0, Lcom/android/phone/Roaming;->mButtonRoamingMode:Landroid/preference/ListPreference;
 
-    invoke-virtual {v3, v5}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v3, v5}, Landroid/preference/ListPreference;->setEnabled(Z)V
 
     :cond_0
     return-void
@@ -667,7 +667,7 @@
 
     iget-object v6, p0, Lcom/android/phone/Roaming;->mHandler:Lcom/android/phone/Roaming$MyHandler;
 
-    invoke-virtual {v6, v7}, Landroid/os/Handler;->obtainMessage(I)Landroid/os/Message;
+    invoke-virtual {v6, v7}, Lcom/android/phone/Roaming$MyHandler;->obtainMessage(I)Landroid/os/Message;
 
     move-result-object v6
 
@@ -720,7 +720,7 @@
     :cond_7
     iget-object v3, p0, Lcom/android/phone/Roaming;->mButtonRoamingMode:Landroid/preference/ListPreference;
 
-    invoke-virtual {v3, v5}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v3, v5}, Landroid/preference/ListPreference;->setEnabled(Z)V
 
     goto :goto_3
 

@@ -18,8 +18,6 @@
 # direct methods
 .method constructor <init>(Landroid/print/PrintJobInfo;Landroid/printservice/IPrintServiceClient;)V
     .locals 3
-    .param p1    # Landroid/print/PrintJobInfo;
-    .param p2    # Landroid/printservice/IPrintServiceClient;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -81,8 +79,6 @@
 
 .method private setState(ILjava/lang/String;)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     :try_start_0
     iget-object v1, p0, Landroid/printservice/PrintJob;->mPrintServiceClient:Landroid/printservice/IPrintServiceClient;
@@ -155,7 +151,6 @@
 # virtual methods
 .method public block(Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x4
 
@@ -257,7 +252,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 4
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x0
 
@@ -307,7 +301,6 @@
 
 .method public fail(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Landroid/printservice/PrintService;->throwIfNotCalledOnMainThread()V
 
@@ -334,7 +327,6 @@
 
 .method public getAdvancedIntOption(Ljava/lang/String;)I
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Landroid/printservice/PrintService;->throwIfNotCalledOnMainThread()V
 
@@ -351,7 +343,6 @@
 
 .method public getAdvancedStringOption(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Landroid/printservice/PrintService;->throwIfNotCalledOnMainThread()V
 
@@ -486,7 +477,6 @@
 
 .method public hasAdvancedOption(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Landroid/printservice/PrintService;->throwIfNotCalledOnMainThread()V
 
@@ -687,7 +677,6 @@
 
 .method public setTag(Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 

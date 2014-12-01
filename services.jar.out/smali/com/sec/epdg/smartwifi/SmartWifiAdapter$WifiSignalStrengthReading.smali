@@ -25,8 +25,6 @@
 # direct methods
 .method constructor <init>(Lcom/sec/epdg/smartwifi/SmartWifiAdapter;Ljava/lang/Integer;I)V
     .locals 3
-    .param p2    # Ljava/lang/Integer;
-    .param p3    # I
 
     iput-object p1, p0, Lcom/sec/epdg/smartwifi/SmartWifiAdapter$WifiSignalStrengthReading;->this$0:Lcom/sec/epdg/smartwifi/SmartWifiAdapter;
 

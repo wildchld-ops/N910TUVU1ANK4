@@ -33,10 +33,6 @@
 # direct methods
 .method public constructor <init>(Lcom/sec/android/app/camera/subview/SubViewResourceIDMap;IIII)V
     .locals 1
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     const/4 v0, 0x0
 
@@ -61,11 +57,6 @@
 
 .method public constructor <init>(Lcom/sec/android/app/camera/subview/SubViewResourceIDMap;IIIII)V
     .locals 1
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     iput-object p1, p0, Lcom/sec/android/app/camera/subview/SubViewResourceIDMap$SubResourceIDSet;->this$0:Lcom/sec/android/app/camera/subview/SubViewResourceIDMap;
 
@@ -90,12 +81,6 @@
 
 .method public constructor <init>(Lcom/sec/android/app/camera/subview/SubViewResourceIDMap;IIIIII)V
     .locals 0
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
 
     iput-object p1, p0, Lcom/sec/android/app/camera/subview/SubViewResourceIDMap$SubResourceIDSet;->this$0:Lcom/sec/android/app/camera/subview/SubViewResourceIDMap;
 

@@ -73,9 +73,6 @@
 
 .method public static createAndShow(Landroid/app/FragmentManager;Lcom/android/launcher2/KeyboardDialog$Listener;Ljava/lang/String;)V
     .locals 2
-    .param p0    # Landroid/app/FragmentManager;
-    .param p1    # Lcom/android/launcher2/KeyboardDialog$Listener;
-    .param p2    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/android/launcher2/KeyboardDialog;->isActive(Landroid/app/FragmentManager;)Z
 
@@ -102,7 +99,6 @@
 
 .method static dismiss(Landroid/app/FragmentManager;)V
     .locals 2
-    .param p0    # Landroid/app/FragmentManager;
 
     sget-object v1, Lcom/android/launcher2/KeyboardDialog;->sFragmentTag:Ljava/lang/String;
 
@@ -122,8 +118,6 @@
 
 .method private init(Lcom/android/launcher2/KeyboardDialog$Listener;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/KeyboardDialog$Listener;
-    .param p2    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/launcher2/KeyboardDialog;->mListener:Lcom/android/launcher2/KeyboardDialog$Listener;
 
@@ -140,7 +134,6 @@
 
 .method static isActive(Landroid/app/FragmentManager;)Z
     .locals 1
-    .param p0    # Landroid/app/FragmentManager;
 
     sget-object v0, Lcom/android/launcher2/KeyboardDialog;->sFragmentTag:Ljava/lang/String;
 
@@ -165,8 +158,6 @@
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 2
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     packed-switch p2, :pswitch_data_0
 
@@ -210,7 +201,6 @@
 
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
     .locals 7
-    .param p1    # Landroid/os/Bundle;
 
     invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 
@@ -331,7 +321,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/DialogFragment;->onSaveInstanceState(Landroid/os/Bundle;)V
 

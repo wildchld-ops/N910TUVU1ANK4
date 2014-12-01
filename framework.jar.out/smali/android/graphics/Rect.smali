@@ -62,10 +62,6 @@
 
 .method public constructor <init>(IIII)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -82,7 +78,6 @@
 
 .method public constructor <init>(Landroid/graphics/Rect;)V
     .locals 1
-    .param p1    # Landroid/graphics/Rect;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -123,8 +118,6 @@
 
 .method public static intersects(Landroid/graphics/Rect;Landroid/graphics/Rect;)Z
     .locals 2
-    .param p0    # Landroid/graphics/Rect;
-    .param p1    # Landroid/graphics/Rect;
 
     iget v0, p0, Landroid/graphics/Rect;->left:I
 
@@ -163,7 +156,6 @@
 
 .method public static unflattenFromString(Ljava/lang/String;)Landroid/graphics/Rect;
     .locals 6
-    .param p0    # Ljava/lang/String;
 
     sget-object v1, Landroid/graphics/Rect;->FLATTENED_PATTERN:Ljava/util/regex/Pattern;
 
@@ -262,8 +254,6 @@
 
 .method public contains(II)Z
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget v0, p0, Landroid/graphics/Rect;->left:I
 
@@ -306,10 +296,6 @@
 
 .method public contains(IIII)Z
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iget v0, p0, Landroid/graphics/Rect;->left:I
 
@@ -352,7 +338,6 @@
 
 .method public contains(Landroid/graphics/Rect;)Z
     .locals 2
-    .param p1    # Landroid/graphics/Rect;
 
     iget v0, p0, Landroid/graphics/Rect;->left:I
 
@@ -411,7 +396,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 5
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x1
 
@@ -590,8 +574,6 @@
 
 .method public inset(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget v0, p0, Landroid/graphics/Rect;->left:I
 
@@ -622,10 +604,6 @@
 
 .method public intersect(IIII)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iget v0, p0, Landroid/graphics/Rect;->left:I
 
@@ -684,7 +662,6 @@
 
 .method public intersect(Landroid/graphics/Rect;)Z
     .locals 4
-    .param p1    # Landroid/graphics/Rect;
 
     iget v0, p1, Landroid/graphics/Rect;->left:I
 
@@ -703,10 +680,6 @@
 
 .method public intersects(IIII)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iget v0, p0, Landroid/graphics/Rect;->left:I
 
@@ -764,8 +737,6 @@
 
 .method public offset(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget v0, p0, Landroid/graphics/Rect;->left:I
 
@@ -796,8 +767,6 @@
 
 .method public offsetTo(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget v0, p0, Landroid/graphics/Rect;->right:I
 
@@ -828,7 +797,6 @@
 
 .method public printShortString(Ljava/io/PrintWriter;)V
     .locals 2
-    .param p1    # Ljava/io/PrintWriter;
 
     const/16 v1, 0x2c
 
@@ -869,7 +837,6 @@
 
 .method public readFromParcel(Landroid/os/Parcel;)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
@@ -900,7 +867,6 @@
 
 .method public scale(F)V
     .locals 2
-    .param p1    # F
 
     const/high16 v1, 0x3f000000
 
@@ -964,10 +930,6 @@
 
 .method public set(IIII)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iput p1, p0, Landroid/graphics/Rect;->left:I
 
@@ -982,7 +944,6 @@
 
 .method public set(Landroid/graphics/Rect;)V
     .locals 1
-    .param p1    # Landroid/graphics/Rect;
 
     iget v0, p1, Landroid/graphics/Rect;->left:I
 
@@ -1021,8 +982,6 @@
 
 .method public setIntersect(Landroid/graphics/Rect;Landroid/graphics/Rect;)Z
     .locals 2
-    .param p1    # Landroid/graphics/Rect;
-    .param p2    # Landroid/graphics/Rect;
 
     iget v0, p1, Landroid/graphics/Rect;->left:I
 
@@ -1153,7 +1112,6 @@
 
 .method public toShortString(Ljava/lang/StringBuilder;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/StringBuilder;
 
     const/16 v1, 0x2c
 
@@ -1254,8 +1212,6 @@
 
 .method public union(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget v0, p0, Landroid/graphics/Rect;->left:I
 
@@ -1296,10 +1252,6 @@
 
 .method public union(IIII)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     if-ge p1, p3, :cond_3
 
@@ -1362,7 +1314,6 @@
 
 .method public union(Landroid/graphics/Rect;)V
     .locals 4
-    .param p1    # Landroid/graphics/Rect;
 
     iget v0, p1, Landroid/graphics/Rect;->left:I
 
@@ -1391,8 +1342,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget v0, p0, Landroid/graphics/Rect;->left:I
 

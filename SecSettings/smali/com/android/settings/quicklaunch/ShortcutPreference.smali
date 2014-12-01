@@ -57,8 +57,6 @@
 
 .method public constructor <init>(Landroid/content/Context;C)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # C
 
     invoke-direct {p0, p1}, Landroid/preference/Preference;-><init>(Landroid/content/Context;)V
 
@@ -141,7 +139,6 @@
 # virtual methods
 .method public compareTo(Landroid/preference/Preference;)I
     .locals 2
-    .param p1    # Landroid/preference/Preference;
 
     instance-of v1, p1, Lcom/android/settings/quicklaunch/ShortcutPreference;
 
@@ -206,7 +203,6 @@
 
 .method public bridge synthetic compareTo(Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Landroid/preference/Preference;
 
@@ -275,7 +271,6 @@
 
 .method protected onBindView(Landroid/view/View;)V
     .locals 7
-    .param p1    # Landroid/view/View;
 
     invoke-super {p0, p1}, Landroid/preference/Preference;->onBindView(Landroid/view/View;)V
 
@@ -433,7 +428,6 @@
 
 .method public setHasBookmark(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-boolean v0, p0, Lcom/android/settings/quicklaunch/ShortcutPreference;->mHasBookmark:Z
 

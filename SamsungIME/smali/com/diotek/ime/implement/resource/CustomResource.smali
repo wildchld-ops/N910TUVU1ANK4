@@ -26,8 +26,6 @@
 
 .method private constructor <init>(Landroid/content/res/Resources;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Landroid/content/res/Resources;
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -69,7 +67,6 @@
 
 .method public static getColor(Ljava/lang/String;)I
     .locals 3
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/res/Resources$NotFoundException;
@@ -111,7 +108,6 @@
 
 .method public static getDimension(Ljava/lang/String;)F
     .locals 3
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/res/Resources$NotFoundException;
@@ -153,7 +149,6 @@
 
 .method public static getDimensionPixelSize(Ljava/lang/String;)I
     .locals 3
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/res/Resources$NotFoundException;
@@ -195,7 +190,6 @@
 
 .method public static getDrawable(Ljava/lang/String;)Landroid/graphics/drawable/Drawable;
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -232,7 +226,6 @@
 
 .method public static getDrawableID(Ljava/lang/String;)I
     .locals 3
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/res/Resources$NotFoundException;
@@ -266,7 +259,6 @@
 
 .method public static getID(Ljava/lang/String;)I
     .locals 3
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/res/Resources$NotFoundException;
@@ -300,7 +292,6 @@
 
 .method private getIdentifier(Ljava/lang/String;)I
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/diotek/ime/implement/resource/CustomResource;->res:Landroid/content/res/Resources;
 
@@ -333,7 +324,6 @@
 
 .method public static getInteger(Ljava/lang/String;)I
     .locals 3
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/res/Resources$NotFoundException;
@@ -375,7 +365,6 @@
 
 .method public static getLayout(Ljava/lang/String;)I
     .locals 3
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/res/Resources$NotFoundException;
@@ -409,7 +398,6 @@
 
 .method public static getObtainTypedArray(Ljava/lang/String;)Landroid/content/res/TypedArray;
     .locals 3
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/res/Resources$NotFoundException;
@@ -470,7 +458,6 @@
 
 .method private static getResourceID(Ljava/lang/String;)I
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     sget-object v1, Lcom/diotek/ime/implement/resource/CustomResource;->R:Lcom/diotek/ime/implement/resource/CustomResource;
 
@@ -503,7 +490,6 @@
 
 .method public static getStringArray(Ljava/lang/String;)[Ljava/lang/String;
     .locals 3
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/res/Resources$NotFoundException;
@@ -545,7 +531,6 @@
 
 .method public static getStringID(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/res/Resources$NotFoundException;
@@ -587,7 +572,6 @@
 
 .method public static getXML(Ljava/lang/String;)I
     .locals 3
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/res/Resources$NotFoundException;
@@ -621,7 +605,6 @@
 
 .method public static init(Landroid/content/res/Resources;)V
     .locals 2
-    .param p0    # Landroid/content/res/Resources;
 
     sget-object v1, Lcom/diotek/ime/implement/resource/CustomResource;->R:Lcom/diotek/ime/implement/resource/CustomResource;
 

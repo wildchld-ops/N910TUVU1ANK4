@@ -65,7 +65,6 @@
 
 .method public static StringToLongArray(Ljava/lang/String;)[J
     .locals 7
-    .param p0    # Ljava/lang/String;
 
     const-string v3, ", "
 
@@ -179,7 +178,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/personalvibration/PersonalVibration;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/android/settings/personalvibration/PersonalVibration;
 
     iget-object v0, p0, Lcom/android/settings/personalvibration/PersonalVibration;->mEditPattern:Landroid/widget/TextView;
 
@@ -188,7 +186,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/personalvibration/PersonalVibration;)Ljava/lang/Boolean;
     .locals 1
-    .param p0    # Lcom/android/settings/personalvibration/PersonalVibration;
 
     iget-object v0, p0, Lcom/android/settings/personalvibration/PersonalVibration;->mFromContact:Ljava/lang/Boolean;
 
@@ -199,7 +196,6 @@
 # virtual methods
 .method public afterTextChanged(Landroid/text/Editable;)V
     .locals 4
-    .param p1    # Landroid/text/Editable;
 
     const/4 v0, 0x0
 
@@ -304,17 +300,12 @@
 
 .method public beforeTextChanged(Ljava/lang/CharSequence;III)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     return-void
 .end method
 
 .method public onClick(Landroid/view/View;)V
     .locals 17
-    .param p1    # Landroid/view/View;
 
     move-object/from16 v0, p0
 
@@ -971,7 +962,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 2
-    .param p1    # Landroid/content/res/Configuration;
 
     const-string v0, "PersonalVibration"
 
@@ -1038,7 +1028,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v3, 0x0
 
@@ -1360,18 +1349,12 @@
 
 .method public onTextChanged(Ljava/lang/CharSequence;III)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     return-void
 .end method
 
 .method public onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 4
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     const/4 v1, 0x1
 

@@ -31,7 +31,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -73,7 +72,6 @@
 
 .method static synthetic access$000(Lcom/android/systemui/statusbar/policy/RotationLockController;)V
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/policy/RotationLockController;
 
     invoke-direct {p0}, Lcom/android/systemui/statusbar/policy/RotationLockController;->notifyChanged()V
 
@@ -126,7 +124,6 @@
 # virtual methods
 .method public addRotationLockControllerCallback(Lcom/android/systemui/statusbar/policy/RotationLockController$RotationLockControllerCallback;)V
     .locals 1
-    .param p1    # Lcom/android/systemui/statusbar/policy/RotationLockController$RotationLockControllerCallback;
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/RotationLockController;->mCallbacks:Ljava/util/concurrent/CopyOnWriteArrayList;
 
@@ -210,7 +207,6 @@
 
 .method public setRotationLocked(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/RotationLockController;->mContext:Landroid/content/Context;
 

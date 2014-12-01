@@ -57,8 +57,6 @@
 # direct methods
 .method constructor <init>(Landroid/content/Context;Landroid/bluetooth/BluetoothProfile$ServiceListener;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/bluetooth/BluetoothProfile$ServiceListener;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -134,7 +132,6 @@
 
 .method static synthetic access$000(Landroid/bluetooth/BluetoothPan;)Landroid/content/Context;
     .locals 1
-    .param p0    # Landroid/bluetooth/BluetoothPan;
 
     iget-object v0, p0, Landroid/bluetooth/BluetoothPan;->mContext:Landroid/content/Context;
 
@@ -143,7 +140,6 @@
 
 .method static synthetic access$100(Landroid/bluetooth/BluetoothPan;)Z
     .locals 1
-    .param p0    # Landroid/bluetooth/BluetoothPan;
 
     invoke-direct {p0}, Landroid/bluetooth/BluetoothPan;->isEnabled()Z
 
@@ -154,7 +150,6 @@
 
 .method static synthetic access$200(Landroid/bluetooth/BluetoothPan;)Landroid/content/ServiceConnection;
     .locals 1
-    .param p0    # Landroid/bluetooth/BluetoothPan;
 
     iget-object v0, p0, Landroid/bluetooth/BluetoothPan;->mConnection:Landroid/content/ServiceConnection;
 
@@ -163,7 +158,6 @@
 
 .method static synthetic access$300(Landroid/bluetooth/BluetoothPan;)Landroid/bluetooth/IBluetoothPan;
     .locals 1
-    .param p0    # Landroid/bluetooth/BluetoothPan;
 
     iget-object v0, p0, Landroid/bluetooth/BluetoothPan;->mPanService:Landroid/bluetooth/IBluetoothPan;
 
@@ -172,8 +166,6 @@
 
 .method static synthetic access$302(Landroid/bluetooth/BluetoothPan;Landroid/bluetooth/IBluetoothPan;)Landroid/bluetooth/IBluetoothPan;
     .locals 0
-    .param p0    # Landroid/bluetooth/BluetoothPan;
-    .param p1    # Landroid/bluetooth/IBluetoothPan;
 
     iput-object p1, p0, Landroid/bluetooth/BluetoothPan;->mPanService:Landroid/bluetooth/IBluetoothPan;
 
@@ -182,7 +174,6 @@
 
 .method static synthetic access$400(Landroid/bluetooth/BluetoothPan;)Landroid/bluetooth/BluetoothProfile$ServiceListener;
     .locals 1
-    .param p0    # Landroid/bluetooth/BluetoothPan;
 
     iget-object v0, p0, Landroid/bluetooth/BluetoothPan;->mServiceListener:Landroid/bluetooth/BluetoothProfile$ServiceListener;
 
@@ -215,7 +206,6 @@
 
 .method private isValidDevice(Landroid/bluetooth/BluetoothDevice;)Z
     .locals 2
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
 
     const/4 v0, 0x0
 
@@ -243,7 +233,6 @@
 
 .method private static log(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "BluetoothPan"
 
@@ -347,7 +336,6 @@
 
 .method public connect(Landroid/bluetooth/BluetoothDevice;)Z
     .locals 5
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
 
     const/4 v1, 0x0
 
@@ -457,7 +445,6 @@
 
 .method public disconnect(Landroid/bluetooth/BluetoothDevice;)Z
     .locals 5
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
 
     const/4 v1, 0x0
 
@@ -738,7 +725,6 @@
 
 .method public getConnectionState(Landroid/bluetooth/BluetoothDevice;)I
     .locals 5
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
 
     const/4 v1, 0x0
 
@@ -822,7 +808,6 @@
 
 .method public getDevicesMatchingConnectionStates([I)Ljava/util/List;
     .locals 4
-    .param p1    # [I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([I)",
@@ -982,7 +967,6 @@
 
 .method public setBluetoothTethering(Z)V
     .locals 4
-    .param p1    # Z
 
     new-instance v1, Ljava/lang/StringBuilder;
 

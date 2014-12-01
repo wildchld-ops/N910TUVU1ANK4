@@ -17,7 +17,6 @@
 # direct methods
 .method constructor <init>(Ljava/lang/String;ILjava/lang/String;)V
     .locals 1
-    .param p3    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -102,7 +101,6 @@
 
 .method public final varargs getObject([Ljava/lang/Object;)Landroid/hardware/contextaware/manager/ContextComponent;
     .locals 8
-    .param p1    # [Ljava/lang/Object;
 
     array-length v0, p1
 
@@ -224,7 +222,6 @@
 
 .method public final varargs getObjectForSubCollection([Ljava/lang/Object;)Landroid/hardware/contextaware/manager/ContextComponent;
     .locals 6
-    .param p1    # [Ljava/lang/Object;
 
     new-instance v0, Landroid/hardware/contextaware/dataprovider/androidprovider/builtin/OrientationSensorRunner;
 

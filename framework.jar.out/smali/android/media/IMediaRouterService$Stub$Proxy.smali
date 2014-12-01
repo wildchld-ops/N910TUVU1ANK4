@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -53,7 +52,6 @@
 
 .method public getState(Landroid/media/IMediaRouterClient;)Landroid/media/MediaRouterClientState;
     .locals 6
-    .param p1    # Landroid/media/IMediaRouterClient;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -137,9 +135,6 @@
 
 .method public registerClientAsUser(Landroid/media/IMediaRouterClient;Ljava/lang/String;I)V
     .locals 5
-    .param p1    # Landroid/media/IMediaRouterClient;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -207,9 +202,6 @@
 
 .method public requestSetVolume(Landroid/media/IMediaRouterClient;Ljava/lang/String;I)V
     .locals 5
-    .param p1    # Landroid/media/IMediaRouterClient;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -277,9 +269,6 @@
 
 .method public requestUpdateVolume(Landroid/media/IMediaRouterClient;Ljava/lang/String;I)V
     .locals 5
-    .param p1    # Landroid/media/IMediaRouterClient;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -347,9 +336,6 @@
 
 .method public setDiscoveryRequest(Landroid/media/IMediaRouterClient;IZ)V
     .locals 5
-    .param p1    # Landroid/media/IMediaRouterClient;
-    .param p2    # I
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -424,9 +410,6 @@
 
 .method public setSelectedRoute(Landroid/media/IMediaRouterClient;Ljava/lang/String;Z)V
     .locals 5
-    .param p1    # Landroid/media/IMediaRouterClient;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -501,7 +484,6 @@
 
 .method public unregisterClient(Landroid/media/IMediaRouterClient;)V
     .locals 5
-    .param p1    # Landroid/media/IMediaRouterClient;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

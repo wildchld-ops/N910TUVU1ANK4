@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Landroid/net/NetworkPolicyManager;)V
     .locals 1
-    .param p1    # Landroid/net/NetworkPolicyManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -44,7 +43,6 @@
 
 .method private static buildDefaultPolicy(Landroid/net/NetworkTemplate;)Landroid/net/NetworkPolicy;
     .locals 16
-    .param p0    # Landroid/net/NetworkTemplate;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -116,7 +114,6 @@
 
 .method private static buildUnquotedNetworkTemplate(Landroid/net/NetworkTemplate;)Landroid/net/NetworkTemplate;
     .locals 5
-    .param p0    # Landroid/net/NetworkTemplate;
 
     const/4 v2, 0x0
 
@@ -228,8 +225,6 @@
 
 .method private setMobilePolicySplitInternal(Ljava/lang/String;Z)Z
     .locals 26
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -474,7 +469,6 @@
 # virtual methods
 .method public getOrCreatePolicy(Landroid/net/NetworkTemplate;)Landroid/net/NetworkPolicy;
     .locals 2
-    .param p1    # Landroid/net/NetworkTemplate;
 
     invoke-virtual {p0, p1}, Lcom/android/settings/net/NetworkPolicyEditor;->getPolicy(Landroid/net/NetworkTemplate;)Landroid/net/NetworkPolicy;
 
@@ -496,7 +490,6 @@
 
 .method public getPolicy(Landroid/net/NetworkTemplate;)Landroid/net/NetworkPolicy;
     .locals 3
-    .param p1    # Landroid/net/NetworkTemplate;
 
     iget-object v2, p0, Lcom/android/settings/net/NetworkPolicyEditor;->mPolicies:Ljava/util/ArrayList;
 
@@ -536,7 +529,6 @@
 
 .method public getPolicyCycleDay(Landroid/net/NetworkTemplate;)I
     .locals 1
-    .param p1    # Landroid/net/NetworkTemplate;
 
     invoke-virtual {p0, p1}, Lcom/android/settings/net/NetworkPolicyEditor;->getPolicy(Landroid/net/NetworkTemplate;)Landroid/net/NetworkPolicy;
 
@@ -549,7 +541,6 @@
 
 .method public getPolicyLimitBytes(Landroid/net/NetworkTemplate;)J
     .locals 2
-    .param p1    # Landroid/net/NetworkTemplate;
 
     invoke-virtual {p0, p1}, Lcom/android/settings/net/NetworkPolicyEditor;->getPolicy(Landroid/net/NetworkTemplate;)Landroid/net/NetworkPolicy;
 
@@ -562,7 +553,6 @@
 
 .method public getPolicyMaybeUnquoted(Landroid/net/NetworkTemplate;)Landroid/net/NetworkPolicy;
     .locals 2
-    .param p1    # Landroid/net/NetworkTemplate;
 
     invoke-virtual {p0, p1}, Lcom/android/settings/net/NetworkPolicyEditor;->getPolicy(Landroid/net/NetworkTemplate;)Landroid/net/NetworkPolicy;
 
@@ -587,7 +577,6 @@
 
 .method public getPolicyWarningBytes(Landroid/net/NetworkTemplate;)J
     .locals 2
-    .param p1    # Landroid/net/NetworkTemplate;
 
     invoke-virtual {p0, p1}, Lcom/android/settings/net/NetworkPolicyEditor;->getPolicy(Landroid/net/NetworkTemplate;)Landroid/net/NetworkPolicy;
 
@@ -600,7 +589,6 @@
 
 .method public isMobilePolicySplit(Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -755,8 +743,6 @@
 
 .method public setMobilePolicySplit(Ljava/lang/String;Z)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -774,9 +760,6 @@
 
 .method public setPolicyCycleDay(Landroid/net/NetworkTemplate;ILjava/lang/String;)V
     .locals 2
-    .param p1    # Landroid/net/NetworkTemplate;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lcom/android/settings/net/NetworkPolicyEditor;->getOrCreatePolicy(Landroid/net/NetworkTemplate;)Landroid/net/NetworkPolicy;
 
@@ -799,8 +782,6 @@
 
 .method public setPolicyLimitBytes(Landroid/net/NetworkTemplate;J)V
     .locals 2
-    .param p1    # Landroid/net/NetworkTemplate;
-    .param p2    # J
 
     invoke-virtual {p0, p1}, Lcom/android/settings/net/NetworkPolicyEditor;->getOrCreatePolicy(Landroid/net/NetworkTemplate;)Landroid/net/NetworkPolicy;
 
@@ -821,8 +802,6 @@
 
 .method public setPolicyMetered(Landroid/net/NetworkTemplate;Z)V
     .locals 7
-    .param p1    # Landroid/net/NetworkTemplate;
-    .param p2    # Z
 
     const/4 v6, 0x1
 
@@ -909,8 +888,6 @@
 
 .method public setPolicyWarningBytes(Landroid/net/NetworkTemplate;J)V
     .locals 2
-    .param p1    # Landroid/net/NetworkTemplate;
-    .param p2    # J
 
     invoke-virtual {p0, p1}, Lcom/android/settings/net/NetworkPolicyEditor;->getOrCreatePolicy(Landroid/net/NetworkTemplate;)Landroid/net/NetworkPolicy;
 
@@ -931,7 +908,6 @@
 
 .method public write([Landroid/net/NetworkPolicy;)V
     .locals 1
-    .param p1    # [Landroid/net/NetworkPolicy;
 
     iget-object v0, p0, Lcom/android/settings/net/NetworkPolicyEditor;->mPolicyManager:Landroid/net/NetworkPolicyManager;
 

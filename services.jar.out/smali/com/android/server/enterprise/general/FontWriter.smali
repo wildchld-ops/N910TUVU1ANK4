@@ -60,8 +60,6 @@
 
 .method private deleteFolder(Ljava/io/File;Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Ljava/io/File;
-    .param p2    # Ljava/lang/String;
 
     new-instance v3, Ljava/io/File;
 
@@ -110,7 +108,6 @@
 # virtual methods
 .method public changeFilePermission(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     invoke-static {}, Ljava/lang/Runtime;->getRuntime()Ljava/lang/Runtime;
@@ -173,9 +170,6 @@
 
 .method public copyFontFile(Ljava/io/File;Ljava/io/InputStream;Ljava/lang/String;)V
     .locals 15
-    .param p1    # Ljava/io/File;
-    .param p2    # Ljava/io/InputStream;
-    .param p3    # Ljava/lang/String;
 
     move-object/from16 v10, p2
 
@@ -508,9 +502,6 @@
 
 .method public copyFontFile1(Ljava/io/File;Ljava/io/InputStream;Ljava/lang/String;)V
     .locals 18
-    .param p1    # Ljava/io/File;
-    .param p2    # Ljava/io/InputStream;
-    .param p3    # Ljava/lang/String;
 
     const/4 v7, 0x0
 
@@ -868,8 +859,6 @@
 
 .method public createFontDirectory(Landroid/content/Context;Ljava/lang/String;)Ljava/io/File;
     .locals 13
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
 
     sget-object v11, Lcom/android/server/enterprise/general/FontWriter;->TAG:Ljava/lang/String;
 
@@ -1061,9 +1050,6 @@
 
 .method public writeLoc(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const-string v0, ""
 

@@ -188,8 +188,6 @@
 
 .method public static final save(Ljava/lang/String;[B)V
     .locals 5
-    .param p0    # Ljava/lang/String;
-    .param p1    # [B
 
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -280,7 +278,6 @@
 
 .method public static final save([B)V
     .locals 5
-    .param p0    # [B
 
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -367,8 +364,6 @@
 
 .method public static final savePduToSDcard(Ljava/lang/String;[B)Z
     .locals 7
-    .param p0    # Ljava/lang/String;
-    .param p1    # [B
 
     const/4 v1, 0x0
 

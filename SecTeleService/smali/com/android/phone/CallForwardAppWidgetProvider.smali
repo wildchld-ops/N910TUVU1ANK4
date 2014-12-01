@@ -369,7 +369,7 @@
 
     const/4 v2, 0x0
 
-    invoke-virtual {v1, v3, v3, v3, v2}, Landroid/os/Handler;->obtainMessage(IIILjava/lang/Object;)Landroid/os/Message;
+    invoke-virtual {v1, v3, v3, v3, v2}, Lcom/android/phone/CallForwardAppWidgetProvider$MyHandler;->obtainMessage(IIILjava/lang/Object;)Landroid/os/Message;
 
     move-result-object v1
 
@@ -516,7 +516,7 @@
 
     iget-object v4, p0, Lcom/android/phone/CallForwardAppWidgetProvider;->mHandler:Lcom/android/phone/CallForwardAppWidgetProvider$MyHandler;
 
-    invoke-virtual {v4, v6, v1, v6}, Landroid/os/Handler;->obtainMessage(III)Landroid/os/Message;
+    invoke-virtual {v4, v6, v1, v6}, Lcom/android/phone/CallForwardAppWidgetProvider$MyHandler;->obtainMessage(III)Landroid/os/Message;
 
     move-result-object v5
 
@@ -570,7 +570,7 @@
 
     iget-object v4, p0, Lcom/android/phone/CallForwardAppWidgetProvider;->mHandler:Lcom/android/phone/CallForwardAppWidgetProvider$MyHandler;
 
-    invoke-virtual {v4, v6, v1, v6}, Landroid/os/Handler;->obtainMessage(III)Landroid/os/Message;
+    invoke-virtual {v4, v6, v1, v6}, Lcom/android/phone/CallForwardAppWidgetProvider$MyHandler;->obtainMessage(III)Landroid/os/Message;
 
     move-result-object v6
 
@@ -611,7 +611,7 @@
 
     const/4 v4, 0x0
 
-    invoke-virtual {v3, v2, v2, v2, v4}, Landroid/os/Handler;->obtainMessage(IIILjava/lang/Object;)Landroid/os/Message;
+    invoke-virtual {v3, v2, v2, v2, v4}, Lcom/android/phone/CallForwardAppWidgetProvider$MyHandler;->obtainMessage(IIILjava/lang/Object;)Landroid/os/Message;
 
     move-result-object v3
 

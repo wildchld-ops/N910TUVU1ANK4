@@ -46,8 +46,6 @@
 # direct methods
 .method public constructor <init>(Landroid/app/Activity;Lcom/android/mms/ui/ComposeMessageFragment;)V
     .locals 1
-    .param p1    # Landroid/app/Activity;
-    .param p2    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -926,9 +924,6 @@
 
 .method private findSelectedMsgId(Landroid/database/Cursor;ILcom/android/mms/ui/MessageListAdapter;Ljava/util/ArrayList;)V
     .locals 11
-    .param p1    # Landroid/database/Cursor;
-    .param p2    # I
-    .param p3    # Lcom/android/mms/ui/MessageListAdapter;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1055,7 +1050,6 @@
 
 .method private forwardMessageSms(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x1
 
@@ -1144,7 +1138,6 @@
 
 .method private getMessageSender(Lcom/android/mms/ui/MessageItem;)Ljava/lang/String;
     .locals 4
-    .param p1    # Lcom/android/mms/ui/MessageItem;
 
     const-string v0, ""
 
@@ -1217,7 +1210,6 @@
 # virtual methods
 .method public forwardCombineMessage(Lcom/android/mms/ui/MessageListAdapter;)V
     .locals 11
-    .param p1    # Lcom/android/mms/ui/MessageListAdapter;
 
     const-string v7, "Mms/CombineMessage"
 

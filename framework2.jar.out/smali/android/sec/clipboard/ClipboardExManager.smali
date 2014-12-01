@@ -66,8 +66,6 @@
 
 .method public constructor <init>(Landroid/content/Context;I)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     const/4 v3, 0x0
 
@@ -126,8 +124,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/os/Handler;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/Handler;
 
     const/4 v3, -0x1
 
@@ -194,7 +190,6 @@
 
 .method static synthetic access$000(Landroid/sec/clipboard/ClipboardExManager;)Landroid/content/Context;
     .locals 1
-    .param p0    # Landroid/sec/clipboard/ClipboardExManager;
 
     iget-object v0, p0, Landroid/sec/clipboard/ClipboardExManager;->mContext:Landroid/content/Context;
 
@@ -203,7 +198,6 @@
 
 .method static synthetic access$100(Landroid/sec/clipboard/ClipboardExManager;)Landroid/widget/Toast;
     .locals 1
-    .param p0    # Landroid/sec/clipboard/ClipboardExManager;
 
     iget-object v0, p0, Landroid/sec/clipboard/ClipboardExManager;->mToast:Landroid/widget/Toast;
 
@@ -212,8 +206,6 @@
 
 .method static synthetic access$102(Landroid/sec/clipboard/ClipboardExManager;Landroid/widget/Toast;)Landroid/widget/Toast;
     .locals 0
-    .param p0    # Landroid/sec/clipboard/ClipboardExManager;
-    .param p1    # Landroid/widget/Toast;
 
     iput-object p1, p0, Landroid/sec/clipboard/ClipboardExManager;->mToast:Landroid/widget/Toast;
 
@@ -232,7 +224,6 @@
 
 .method static synthetic access$300(Landroid/sec/clipboard/ClipboardExManager;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Landroid/sec/clipboard/ClipboardExManager;
 
     iget-object v0, p0, Landroid/sec/clipboard/ClipboardExManager;->mSetDataHandler:Landroid/os/Handler;
 
@@ -241,8 +232,6 @@
 
 .method static synthetic access$402(Landroid/sec/clipboard/ClipboardExManager;Z)Z
     .locals 0
-    .param p0    # Landroid/sec/clipboard/ClipboardExManager;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/sec/clipboard/ClipboardExManager;->mScrapDataSaving:Z
 
@@ -595,7 +584,6 @@
 # virtual methods
 .method public AddClipboardFormatListener(Landroid/sec/clipboard/IClipboardFormatListener;)Z
     .locals 4
-    .param p1    # Landroid/sec/clipboard/IClipboardFormatListener;
 
     :try_start_0
     invoke-static {}, Landroid/sec/clipboard/ClipboardExManager;->getService()Landroid/sec/clipboard/IClipboardService;
@@ -658,7 +646,6 @@
 
 .method public RegistClipboardWorkingFormUiInterface(Landroid/sec/clipboard/IClipboardWorkingFormUiInterface;)Z
     .locals 6
-    .param p1    # Landroid/sec/clipboard/IClipboardWorkingFormUiInterface;
 
     const/4 v0, 0x0
 
@@ -780,7 +767,6 @@
 
 .method public RegistScrapWorkingFormUiInterface(Landroid/sec/clipboard/IClipboardWorkingFormUiInterface;)Z
     .locals 6
-    .param p1    # Landroid/sec/clipboard/IClipboardWorkingFormUiInterface;
 
     const/4 v0, 0x0
 
@@ -902,7 +888,6 @@
 
 .method public RemoveClipboardFormatListener(Landroid/sec/clipboard/IClipboardFormatListener;)Z
     .locals 4
-    .param p1    # Landroid/sec/clipboard/IClipboardFormatListener;
 
     :try_start_0
     invoke-static {}, Landroid/sec/clipboard/ClipboardExManager;->getService()Landroid/sec/clipboard/IClipboardService;
@@ -963,7 +948,6 @@
 
 .method public callPasteApplication(Landroid/sec/clipboard/data/ClipboardData;)V
     .locals 3
-    .param p1    # Landroid/sec/clipboard/data/ClipboardData;
 
     iget-object v1, p0, Landroid/sec/clipboard/ClipboardExManager;->mPasteEvent:Landroid/sec/clipboard/IClipboardDataPasteEvent;
 
@@ -1041,7 +1025,6 @@
 
 .method public callPasteMenuFromApp(I)V
     .locals 3
-    .param p1    # I
 
     :try_start_0
     invoke-static {}, Landroid/sec/clipboard/ClipboardExManager;->getService()Landroid/sec/clipboard/IClipboardService;
@@ -1150,8 +1133,6 @@
 
 .method public getClipedStrings(II)Ljava/util/ArrayList;
     .locals 4
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II)",
@@ -1223,8 +1204,6 @@
 
 .method public getData(Landroid/content/Context;I)Landroid/sec/clipboard/data/ClipboardData;
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -1319,9 +1298,6 @@
 
 .method public getData(Landroid/content/Context;ILandroid/sec/clipboard/IClipboardDataPasteEvent;)Z
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Landroid/sec/clipboard/IClipboardDataPasteEvent;
 
     const/4 v0, 0x1
 
@@ -1619,8 +1595,6 @@
 
 .method public hasData(Landroid/content/Context;I)Z
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -1709,7 +1683,6 @@
 
 .method public hasDataOf(I)Z
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -1852,8 +1825,6 @@
 
 .method public sendCropRect(Landroid/graphics/Rect;Z)V
     .locals 1
-    .param p1    # Landroid/graphics/Rect;
-    .param p2    # Z
 
     iget-object v0, p0, Landroid/sec/clipboard/ClipboardExManager;->mContext:Landroid/content/Context;
 
@@ -1877,9 +1848,6 @@
 
 .method public setData(Landroid/content/Context;Landroid/content/ClipData;Z)Z
     .locals 10
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/ClipData;
-    .param p3    # Z
 
     const/4 v8, 0x1
 
@@ -2008,8 +1976,6 @@
 
 .method public setData(Landroid/content/Context;Landroid/sec/clipboard/data/ClipboardData;)Z
     .locals 9
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/sec/clipboard/data/ClipboardData;
 
     const/4 v5, 0x0
 
@@ -2151,8 +2117,6 @@
 
 .method public setDataWithoutNoti(Landroid/content/Context;Landroid/sec/clipboard/data/ClipboardData;)Z
     .locals 9
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/sec/clipboard/data/ClipboardData;
 
     const/4 v5, 0x0
 
@@ -2294,8 +2258,6 @@
 
 .method public setDataWithoutSendingOrginalClipboard(Landroid/content/Context;Landroid/sec/clipboard/data/ClipboardData;)Z
     .locals 8
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/sec/clipboard/data/ClipboardData;
 
     const/4 v6, 0x1
 
@@ -2405,8 +2367,6 @@
 
 .method public setPasteFrozen(ILandroid/sec/clipboard/IClipboardDataPasteEvent;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/sec/clipboard/IClipboardDataPasteEvent;
 
     iget v0, p0, Landroid/sec/clipboard/ClipboardExManager;->mFormatid:I
 
@@ -2627,8 +2587,6 @@
 
 .method public updateData(ILandroid/sec/clipboard/IClipboardDataPasteEvent;)V
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/sec/clipboard/IClipboardDataPasteEvent;
 
     iget-object v1, p0, Landroid/sec/clipboard/ClipboardExManager;->mPasteEvent:Landroid/sec/clipboard/IClipboardDataPasteEvent;
 

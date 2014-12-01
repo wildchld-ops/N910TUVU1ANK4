@@ -28,8 +28,6 @@
 # direct methods
 .method public constructor <init>(Landroid/graphics/Rect;I)V
     .locals 7
-    .param p1    # Landroid/graphics/Rect;
-    .param p2    # I
 
     const/4 v4, 0x0
 
@@ -52,12 +50,6 @@
 
 .method public constructor <init>(Landroid/graphics/Rect;IILandroid/graphics/Point;Landroid/graphics/Point;Landroid/graphics/Point;)V
     .locals 2
-    .param p1    # Landroid/graphics/Rect;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/graphics/Point;
-    .param p5    # Landroid/graphics/Point;
-    .param p6    # Landroid/graphics/Point;
 
     const/4 v1, -0x1
 
@@ -130,8 +122,6 @@
 
 .method private static checkNotNull(Ljava/lang/String;Ljava/lang/Object;)V
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/Object;
 
     if-nez p1, :cond_0
 
@@ -165,8 +155,6 @@
 
 .method private static checkNull(Ljava/lang/String;Ljava/lang/Object;)V
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/Object;
 
     if-eqz p1, :cond_0
 

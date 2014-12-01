@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -53,9 +52,6 @@
 
 .method public instrumentationFinished(Landroid/content/ComponentName;ILandroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # I
-    .param p3    # Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -149,9 +145,6 @@
 
 .method public instrumentationStatus(Landroid/content/ComponentName;ILandroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # I
-    .param p3    # Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

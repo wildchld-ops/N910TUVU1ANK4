@@ -41,8 +41,6 @@
 
 .method synthetic constructor <init>(Lcom/sec/epdg/throttle/ThrottleManager;Lcom/sec/epdg/throttle/ThrottleManager$1;)V
     .locals 0
-    .param p1    # Lcom/sec/epdg/throttle/ThrottleManager;
-    .param p2    # Lcom/sec/epdg/throttle/ThrottleManager$1;
 
     invoke-direct {p0, p1}, Lcom/sec/epdg/throttle/ThrottleManager$PermanentThrottleManager;-><init>(Lcom/sec/epdg/throttle/ThrottleManager;)V
 

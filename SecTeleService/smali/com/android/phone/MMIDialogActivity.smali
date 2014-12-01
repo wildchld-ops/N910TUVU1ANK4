@@ -98,7 +98,7 @@
     invoke-virtual {v0, v1}, Lcom/android/internal/telephony/CallManager;->unregisterForMmiComplete(Landroid/os/Handler;)V
 
     :cond_1
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/MMIDialogActivity;->finish()V
 
     return-void
 .end method
@@ -227,7 +227,7 @@
     goto :goto_0
 
     :cond_1
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/MMIDialogActivity;->finish()V
 
     goto :goto_0
 .end method
@@ -250,13 +250,13 @@
 
     if-eqz v1, :cond_0
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/phone/MMIDialogActivity;->getIntent()Landroid/content/Intent;
 
     move-result-object v1
 
     if-eqz v1, :cond_0
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/phone/MMIDialogActivity;->getIntent()Landroid/content/Intent;
 
     move-result-object v1
 

@@ -48,11 +48,6 @@
 
 .method private static isPointInTriangle(FFLandroid/graphics/PointF;Landroid/graphics/PointF;Landroid/graphics/PointF;)Z
     .locals 13
-    .param p0    # F
-    .param p1    # F
-    .param p2    # Landroid/graphics/PointF;
-    .param p3    # Landroid/graphics/PointF;
-    .param p4    # Landroid/graphics/PointF;
 
     iget v11, p2, Landroid/graphics/PointF;->x:F
 
@@ -163,8 +158,6 @@
 # virtual methods
 .method public containsPoint(FF)Z
     .locals 3
-    .param p1    # F
-    .param p2    # F
 
     iget-object v0, p0, Landroid/webkitsec/QuadF;->p1:Landroid/graphics/PointF;
 
@@ -204,8 +197,6 @@
 
 .method public offset(FF)V
     .locals 1
-    .param p1    # F
-    .param p2    # F
 
     iget-object v0, p0, Landroid/webkitsec/QuadF;->p1:Landroid/graphics/PointF;
 

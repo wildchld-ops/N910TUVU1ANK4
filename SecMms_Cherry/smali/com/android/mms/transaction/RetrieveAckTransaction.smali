@@ -29,14 +29,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;IJLjava/lang/String;Lcom/android/mms/transaction/TransactionSettings;Ljava/lang/String;ZI)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # J
-    .param p5    # Ljava/lang/String;
-    .param p6    # Lcom/android/mms/transaction/TransactionSettings;
-    .param p7    # Ljava/lang/String;
-    .param p8    # Z
-    .param p9    # I
 
     const/4 v0, 0x0
 

@@ -37,8 +37,6 @@
 
 .method private constructor <init>(Landroid/graphics/drawable/AnimationDrawable$AnimationState;Landroid/content/res/Resources;)V
     .locals 3
-    .param p1    # Landroid/graphics/drawable/AnimationDrawable$AnimationState;
-    .param p2    # Landroid/content/res/Resources;
 
     const/4 v2, 0x0
 
@@ -68,9 +66,6 @@
 
 .method synthetic constructor <init>(Landroid/graphics/drawable/AnimationDrawable$AnimationState;Landroid/content/res/Resources;Landroid/graphics/drawable/AnimationDrawable$1;)V
     .locals 0
-    .param p1    # Landroid/graphics/drawable/AnimationDrawable$AnimationState;
-    .param p2    # Landroid/content/res/Resources;
-    .param p3    # Landroid/graphics/drawable/AnimationDrawable$1;
 
     invoke-direct {p0, p1, p2}, Landroid/graphics/drawable/AnimationDrawable;-><init>(Landroid/graphics/drawable/AnimationDrawable$AnimationState;Landroid/content/res/Resources;)V
 
@@ -79,7 +74,6 @@
 
 .method private nextFrame(Z)V
     .locals 3
-    .param p1    # Z
 
     iget v2, p0, Landroid/graphics/drawable/AnimationDrawable;->mCurFrame:I
 
@@ -125,9 +119,6 @@
 
 .method private setFrame(IZZ)V
     .locals 4
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # Z
 
     iget-object v0, p0, Landroid/graphics/drawable/AnimationDrawable;->mAnimationState:Landroid/graphics/drawable/AnimationDrawable$AnimationState;
 
@@ -181,8 +172,6 @@
 # virtual methods
 .method public addFrame(Landroid/graphics/drawable/Drawable;I)V
     .locals 2
-    .param p1    # Landroid/graphics/drawable/Drawable;
-    .param p2    # I
 
     const/4 v1, 0x0
 
@@ -204,7 +193,6 @@
 
 .method public getDuration(I)I
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/graphics/drawable/AnimationDrawable;->mAnimationState:Landroid/graphics/drawable/AnimationDrawable$AnimationState;
 
@@ -220,7 +208,6 @@
 
 .method public getFrame(I)Landroid/graphics/drawable/Drawable;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/graphics/drawable/AnimationDrawable;->mAnimationState:Landroid/graphics/drawable/AnimationDrawable$AnimationState;
 
@@ -245,9 +232,6 @@
 
 .method public inflate(Landroid/content/res/Resources;Lorg/xmlpull/v1/XmlPullParser;Landroid/util/AttributeSet;)V
     .locals 12
-    .param p1    # Landroid/content/res/Resources;
-    .param p2    # Lorg/xmlpull/v1/XmlPullParser;
-    .param p3    # Landroid/util/AttributeSet;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -537,7 +521,6 @@
 
 .method public setOneShot(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Landroid/graphics/drawable/AnimationDrawable;->mAnimationState:Landroid/graphics/drawable/AnimationDrawable$AnimationState;
 
@@ -549,8 +532,6 @@
 
 .method public setVisible(ZZ)Z
     .locals 3
-    .param p1    # Z
-    .param p2    # Z
 
     const/4 v2, 0x1
 
@@ -611,7 +592,6 @@
 
 .method public unscheduleSelf(Ljava/lang/Runnable;)V
     .locals 1
-    .param p1    # Ljava/lang/Runnable;
 
     const/4 v0, -0x1
 

@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Landroid/hardware/contextaware/aggregator/lpp/LppFusion;Landroid/hardware/contextaware/aggregator/lpp/LppFusion$1;)V
     .locals 0
-    .param p1    # Landroid/hardware/contextaware/aggregator/lpp/LppFusion;
-    .param p2    # Landroid/hardware/contextaware/aggregator/lpp/LppFusion$1;
 
     invoke-direct {p0, p1}, Landroid/hardware/contextaware/aggregator/lpp/LppFusion$LppAlgoLnr;-><init>(Landroid/hardware/contextaware/aggregator/lpp/LppFusion;)V
 
@@ -46,8 +44,6 @@
 # virtual methods
 .method public logData(ILjava/lang/String;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/hardware/contextaware/aggregator/lpp/LppFusion$LppAlgoLnr;->this$0:Landroid/hardware/contextaware/aggregator/lpp/LppFusion;
 
@@ -63,7 +59,6 @@
 
 .method public onUpdate(Landroid/location/Location;)V
     .locals 2
-    .param p1    # Landroid/location/Location;
 
     const-string v0, "LppFusion"
 
@@ -214,7 +209,6 @@
 
 .method public status(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/hardware/contextaware/aggregator/lpp/LppFusion$LppAlgoLnr;->this$0:Landroid/hardware/contextaware/aggregator/lpp/LppFusion;
 

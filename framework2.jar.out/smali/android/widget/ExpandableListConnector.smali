@@ -40,7 +40,6 @@
 # direct methods
 .method public constructor <init>(Landroid/widget/ExpandableListAdapter;)V
     .locals 1
-    .param p1    # Landroid/widget/ExpandableListAdapter;
 
     invoke-direct {p0}, Landroid/widget/BaseAdapter;-><init>()V
 
@@ -67,9 +66,6 @@
 
 .method static synthetic access$000(Landroid/widget/ExpandableListConnector;ZZ)V
     .locals 0
-    .param p0    # Landroid/widget/ExpandableListConnector;
-    .param p1    # Z
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Landroid/widget/ExpandableListConnector;->refreshExpGroupMetadataList(ZZ)V
 
@@ -78,8 +74,6 @@
 
 .method private refreshExpGroupMetadataList(ZZ)V
     .locals 13
-    .param p1    # Z
-    .param p2    # Z
 
     const/4 v12, -0x1
 
@@ -228,7 +222,6 @@
 
 .method collapseGroup(I)Z
     .locals 5
-    .param p1    # I
 
     const/4 v4, -0x1
 
@@ -263,7 +256,6 @@
 
 .method collapseGroup(Landroid/widget/ExpandableListConnector$PositionMetadata;)Z
     .locals 3
-    .param p1    # Landroid/widget/ExpandableListConnector$PositionMetadata;
 
     const/4 v0, 0x0
 
@@ -300,7 +292,6 @@
 
 .method expandGroup(I)Z
     .locals 5
-    .param p1    # I
 
     const/4 v4, -0x1
 
@@ -327,7 +318,6 @@
 
 .method expandGroup(Landroid/widget/ExpandableListConnector$PositionMetadata;)Z
     .locals 8
-    .param p1    # Landroid/widget/ExpandableListConnector$PositionMetadata;
 
     const/4 v7, -0x1
 
@@ -451,8 +441,6 @@
 
 .method findGroupPosition(JI)I
     .locals 16
-    .param p1    # J
-    .param p3    # I
 
     move-object/from16 v0, p0
 
@@ -685,7 +673,6 @@
 
 .method getFlattenedPos(Landroid/widget/ExpandableListPosition;)Landroid/widget/ExpandableListConnector$PositionMetadata;
     .locals 25
-    .param p1    # Landroid/widget/ExpandableListPosition;
 
     move-object/from16 v0, p0
 
@@ -992,7 +979,6 @@
 
 .method public getItem(I)Ljava/lang/Object;
     .locals 5
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/widget/ExpandableListConnector;->getUnflattenedPos(I)Landroid/widget/ExpandableListConnector$PositionMetadata;
 
@@ -1058,7 +1044,6 @@
 
 .method public getItemId(I)J
     .locals 10
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/widget/ExpandableListConnector;->getUnflattenedPos(I)Landroid/widget/ExpandableListConnector$PositionMetadata;
 
@@ -1136,7 +1121,6 @@
 
 .method public getItemViewType(I)I
     .locals 7
-    .param p1    # I
 
     const/4 v6, 0x2
 
@@ -1205,7 +1189,6 @@
 
 .method getUnflattenedPos(I)Landroid/widget/ExpandableListConnector$PositionMetadata;
     .locals 20
-    .param p1    # I
 
     move-object/from16 v0, p0
 
@@ -1417,9 +1400,6 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 8
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     const/4 v3, 0x1
 
@@ -1571,7 +1551,6 @@
 
 .method public isEnabled(I)Z
     .locals 6
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/widget/ExpandableListConnector;->getUnflattenedPos(I)Landroid/widget/ExpandableListConnector$PositionMetadata;
 
@@ -1608,7 +1587,6 @@
 
 .method public isGroupExpanded(I)Z
     .locals 3
-    .param p1    # I
 
     iget-object v2, p0, Landroid/widget/ExpandableListConnector;->mExpGroupMetadataList:Ljava/util/ArrayList;
 
@@ -1651,7 +1629,6 @@
 
 .method public setExpandableListAdapter(Landroid/widget/ExpandableListAdapter;)V
     .locals 2
-    .param p1    # Landroid/widget/ExpandableListAdapter;
 
     iget-object v0, p0, Landroid/widget/ExpandableListConnector;->mExpandableListAdapter:Landroid/widget/ExpandableListAdapter;
 
@@ -1739,7 +1716,6 @@
 
 .method public setMaxExpGroupCount(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/widget/ExpandableListConnector;->mMaxExpGroupCount:I
 

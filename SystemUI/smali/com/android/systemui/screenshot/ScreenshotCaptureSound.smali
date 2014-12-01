@@ -98,7 +98,6 @@
 # virtual methods
 .method public declared-synchronized load(I)V
     .locals 4
-    .param p1    # I
 
     monitor-enter p0
 
@@ -181,7 +180,6 @@
 
 .method public declared-synchronized play(I)V
     .locals 9
-    .param p1    # I
 
     monitor-enter p0
 

@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Landroid/net/wifi/p2p/WifiP2pTrafficPoller;Landroid/net/wifi/p2p/WifiP2pTrafficPoller$1;)V
     .locals 0
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pTrafficPoller;
-    .param p2    # Landroid/net/wifi/p2p/WifiP2pTrafficPoller$1;
 
     invoke-direct {p0, p1}, Landroid/net/wifi/p2p/WifiP2pTrafficPoller$TrafficHandler;-><init>(Landroid/net/wifi/p2p/WifiP2pTrafficPoller;)V
 
@@ -43,7 +41,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 7
-    .param p1    # Landroid/os/Message;
 
     const-wide/16 v5, 0x3e8
 

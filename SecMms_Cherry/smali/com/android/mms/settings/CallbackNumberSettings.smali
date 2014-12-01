@@ -36,7 +36,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/settings/CallbackNumberSettings;)Landroid/widget/Switch;
     .locals 1
-    .param p0    # Lcom/android/mms/settings/CallbackNumberSettings;
 
     iget-object v0, p0, Lcom/android/mms/settings/CallbackNumberSettings;->mSwitch:Landroid/widget/Switch;
 
@@ -45,7 +44,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/settings/CallbackNumberSettings;)V
     .locals 0
-    .param p0    # Lcom/android/mms/settings/CallbackNumberSettings;
 
     invoke-direct {p0}, Lcom/android/mms/settings/CallbackNumberSettings;->setElementEnable()V
 
@@ -54,7 +52,6 @@
 
 .method private setCallbackNumber(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -101,7 +98,6 @@
 
 .method private setCallbackNumberSummary(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/mms/settings/CallbackNumberSettings;->mCallbackNumberPref:Landroid/preference/Preference;
 
@@ -187,7 +183,6 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onCreate(Landroid/os/Bundle;)V
 
@@ -235,7 +230,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 3
-    .param p1    # Landroid/view/Menu;
 
     invoke-virtual {p0}, Landroid/app/Activity;->getMenuInflater()Landroid/view/MenuInflater;
 
@@ -284,7 +278,6 @@
 
 .method public onMenuItemClick(Landroid/view/MenuItem;)Z
     .locals 2
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v0, 0x0
 
@@ -360,7 +353,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -392,8 +384,6 @@
 
 .method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
     .locals 2
-    .param p1    # Landroid/preference/Preference;
-    .param p2    # Ljava/lang/Object;
 
     iget-object v1, p0, Lcom/android/mms/settings/CallbackNumberSettings;->mCallbackNumberPref:Landroid/preference/Preference;
 
@@ -425,8 +415,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 2
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     const-string v0, "pref_key_callback_text"
 
@@ -454,7 +442,6 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)Z
     .locals 4
-    .param p1    # Landroid/view/Menu;
 
     invoke-virtual {p0}, Landroid/preference/PreferenceActivity;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 

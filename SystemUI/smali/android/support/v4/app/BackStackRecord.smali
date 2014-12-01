@@ -78,7 +78,6 @@
 # direct methods
 .method public constructor <init>(Landroid/support/v4/app/FragmentManagerImpl;)V
     .locals 1
-    .param p1    # Landroid/support/v4/app/FragmentManagerImpl;
 
     invoke-direct {p0}, Landroid/support/v4/app/FragmentTransaction;-><init>()V
 
@@ -97,10 +96,6 @@
 
 .method private doAddOp(ILandroid/support/v4/app/Fragment;Ljava/lang/String;I)V
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/support/v4/app/Fragment;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
 
     iget-object v1, p0, Landroid/support/v4/app/BackStackRecord;->mManager:Landroid/support/v4/app/FragmentManagerImpl;
 
@@ -249,8 +244,6 @@
 # virtual methods
 .method public add(ILandroid/support/v4/app/Fragment;)Landroid/support/v4/app/FragmentTransaction;
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/support/v4/app/Fragment;
 
     const/4 v0, 0x0
 
@@ -263,9 +256,6 @@
 
 .method public add(ILandroid/support/v4/app/Fragment;Ljava/lang/String;)Landroid/support/v4/app/FragmentTransaction;
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/support/v4/app/Fragment;
-    .param p3    # Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -276,8 +266,6 @@
 
 .method public add(Landroid/support/v4/app/Fragment;Ljava/lang/String;)Landroid/support/v4/app/FragmentTransaction;
     .locals 2
-    .param p1    # Landroid/support/v4/app/Fragment;
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -290,7 +278,6 @@
 
 .method addOp(Landroid/support/v4/app/BackStackRecord$Op;)V
     .locals 1
-    .param p1    # Landroid/support/v4/app/BackStackRecord$Op;
 
     iget-object v0, p0, Landroid/support/v4/app/BackStackRecord;->mHead:Landroid/support/v4/app/BackStackRecord$Op;
 
@@ -341,7 +328,6 @@
 
 .method public addToBackStack(Ljava/lang/String;)Landroid/support/v4/app/FragmentTransaction;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-boolean v0, p0, Landroid/support/v4/app/BackStackRecord;->mAllowAddToBackStack:Z
 
@@ -367,7 +353,6 @@
 
 .method public attach(Landroid/support/v4/app/Fragment;)Landroid/support/v4/app/FragmentTransaction;
     .locals 2
-    .param p1    # Landroid/support/v4/app/Fragment;
 
     new-instance v0, Landroid/support/v4/app/BackStackRecord$Op;
 
@@ -386,7 +371,6 @@
 
 .method bumpBackStackNesting(I)V
     .locals 6
-    .param p1    # I
 
     iget-boolean v3, p0, Landroid/support/v4/app/BackStackRecord;->mAddToBackStack:Z
 
@@ -597,7 +581,6 @@
 
 .method commitInternal(Z)I
     .locals 6
-    .param p1    # Z
 
     const/4 v5, 0x0
 
@@ -690,7 +673,6 @@
 
 .method public detach(Landroid/support/v4/app/Fragment;)Landroid/support/v4/app/FragmentTransaction;
     .locals 2
-    .param p1    # Landroid/support/v4/app/Fragment;
 
     new-instance v0, Landroid/support/v4/app/BackStackRecord$Op;
 
@@ -732,10 +714,6 @@
 
 .method public dump(Ljava/lang/String;Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/io/FileDescriptor;
-    .param p3    # Ljava/io/PrintWriter;
-    .param p4    # [Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -746,9 +724,6 @@
 
 .method public dump(Ljava/lang/String;Ljava/io/PrintWriter;Z)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # Z
 
     if-eqz p3, :cond_8
 
@@ -1340,7 +1315,6 @@
 
 .method public hide(Landroid/support/v4/app/Fragment;)Landroid/support/v4/app/FragmentTransaction;
     .locals 2
-    .param p1    # Landroid/support/v4/app/Fragment;
 
     new-instance v0, Landroid/support/v4/app/BackStackRecord$Op;
 
@@ -1385,7 +1359,6 @@
 
 .method public popFromBackStack(Z)V
     .locals 12
-    .param p1    # Z
 
     const/4 v10, 0x0
 
@@ -1701,7 +1674,6 @@
 
 .method public remove(Landroid/support/v4/app/Fragment;)Landroid/support/v4/app/FragmentTransaction;
     .locals 2
-    .param p1    # Landroid/support/v4/app/Fragment;
 
     new-instance v0, Landroid/support/v4/app/BackStackRecord$Op;
 
@@ -1720,8 +1692,6 @@
 
 .method public replace(ILandroid/support/v4/app/Fragment;)Landroid/support/v4/app/FragmentTransaction;
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/support/v4/app/Fragment;
 
     const/4 v0, 0x0
 
@@ -1734,9 +1704,6 @@
 
 .method public replace(ILandroid/support/v4/app/Fragment;Ljava/lang/String;)Landroid/support/v4/app/FragmentTransaction;
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/support/v4/app/Fragment;
-    .param p3    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -2168,7 +2135,6 @@
 
 .method public setBreadCrumbShortTitle(I)Landroid/support/v4/app/FragmentTransaction;
     .locals 1
-    .param p1    # I
 
     iput p1, p0, Landroid/support/v4/app/BackStackRecord;->mBreadCrumbShortTitleRes:I
 
@@ -2181,7 +2147,6 @@
 
 .method public setBreadCrumbShortTitle(Ljava/lang/CharSequence;)Landroid/support/v4/app/FragmentTransaction;
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v0, 0x0
 
@@ -2194,7 +2159,6 @@
 
 .method public setBreadCrumbTitle(I)Landroid/support/v4/app/FragmentTransaction;
     .locals 1
-    .param p1    # I
 
     iput p1, p0, Landroid/support/v4/app/BackStackRecord;->mBreadCrumbTitleRes:I
 
@@ -2207,7 +2171,6 @@
 
 .method public setBreadCrumbTitle(Ljava/lang/CharSequence;)Landroid/support/v4/app/FragmentTransaction;
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v0, 0x0
 
@@ -2220,8 +2183,6 @@
 
 .method public setCustomAnimations(II)Landroid/support/v4/app/FragmentTransaction;
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -2234,10 +2195,6 @@
 
 .method public setCustomAnimations(IIII)Landroid/support/v4/app/FragmentTransaction;
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iput p1, p0, Landroid/support/v4/app/BackStackRecord;->mEnterAnim:I
 
@@ -2252,7 +2209,6 @@
 
 .method public setTransition(I)Landroid/support/v4/app/FragmentTransaction;
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/support/v4/app/BackStackRecord;->mTransition:I
 
@@ -2261,7 +2217,6 @@
 
 .method public setTransitionStyle(I)Landroid/support/v4/app/FragmentTransaction;
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/support/v4/app/BackStackRecord;->mTransitionStyle:I
 
@@ -2270,7 +2225,6 @@
 
 .method public show(Landroid/support/v4/app/Fragment;)Landroid/support/v4/app/FragmentTransaction;
     .locals 2
-    .param p1    # Landroid/support/v4/app/Fragment;
 
     new-instance v0, Landroid/support/v4/app/BackStackRecord$Op;
 

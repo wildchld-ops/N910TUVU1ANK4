@@ -48,7 +48,6 @@
 
 .method public setState(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/epdg/IWlanState;->mState:I
 

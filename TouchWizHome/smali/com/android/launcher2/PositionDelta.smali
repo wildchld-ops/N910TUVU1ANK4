@@ -70,10 +70,6 @@
 
 .method public constructor <init>(IIII)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/4 v1, 0x0
 
@@ -112,7 +108,6 @@
 
 .method public constructor <init>(Lcom/android/launcher2/BaseItem;)V
     .locals 6
-    .param p1    # Lcom/android/launcher2/BaseItem;
 
     const/4 v5, 0x0
 
@@ -268,7 +263,6 @@
 
 .method public constructor <init>(Lcom/android/launcher2/PositionDelta;)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/PositionDelta;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -388,7 +382,6 @@
 
 .method public differentFrom(Lcom/android/launcher2/PositionDelta;)Z
     .locals 2
-    .param p1    # Lcom/android/launcher2/PositionDelta;
 
     iget v0, p0, Lcom/android/launcher2/PositionDelta;->x:I
 
@@ -510,7 +503,6 @@
 
 .method overlaps(Lcom/android/launcher2/PositionDelta;)Z
     .locals 6
-    .param p1    # Lcom/android/launcher2/PositionDelta;
 
     invoke-virtual {p1}, Lcom/android/launcher2/PositionDelta;->getX()I
 
@@ -578,7 +570,6 @@
 
 .method setSpanX(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/launcher2/PositionDelta;->spanX:I
 
@@ -589,7 +580,6 @@
 
 .method setSpanY(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/launcher2/PositionDelta;->spanY:I
 
@@ -600,7 +590,6 @@
 
 .method setX(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/launcher2/PositionDelta;->x:I
 
@@ -611,7 +600,6 @@
 
 .method setY(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/launcher2/PositionDelta;->y:I
 

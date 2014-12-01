@@ -78,7 +78,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v2, v1, v3, v2}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->startFragment(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;)Z
+    invoke-virtual {v0, v2, v1, v3, v2}, Lcom/android/phone/callsettings/RejectCallWithMsgModes;->startFragment(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;)Z
 
     :goto_0
     return-void
@@ -94,7 +94,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v2, v1, v3, v2}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->startFragment(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;)Z
+    invoke-virtual {v0, v2, v1, v3, v2}, Lcom/android/phone/callsettings/RejectCallWithMsgModes;->startFragment(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;)Z
 
     goto :goto_0
 .end method

@@ -57,10 +57,6 @@
 
 .method public static dispatch(Landroid/view/KeyEvent;Landroid/view/KeyEvent$Callback;Ljava/lang/Object;Ljava/lang/Object;)Z
     .locals 1
-    .param p0    # Landroid/view/KeyEvent;
-    .param p1    # Landroid/view/KeyEvent$Callback;
-    .param p2    # Ljava/lang/Object;
-    .param p3    # Ljava/lang/Object;
 
     sget-object v0, Landroid/support/v4/view/KeyEventCompat;->IMPL:Landroid/support/v4/view/KeyEventCompat$KeyEventVersionImpl;
 
@@ -73,7 +69,6 @@
 
 .method public static getKeyDispatcherState(Landroid/view/View;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Landroid/view/View;
 
     sget-object v0, Landroid/support/v4/view/KeyEventCompat;->IMPL:Landroid/support/v4/view/KeyEventCompat$KeyEventVersionImpl;
 
@@ -86,8 +81,6 @@
 
 .method public static hasModifiers(Landroid/view/KeyEvent;I)Z
     .locals 2
-    .param p0    # Landroid/view/KeyEvent;
-    .param p1    # I
 
     sget-object v0, Landroid/support/v4/view/KeyEventCompat;->IMPL:Landroid/support/v4/view/KeyEventCompat$KeyEventVersionImpl;
 
@@ -104,7 +97,6 @@
 
 .method public static hasNoModifiers(Landroid/view/KeyEvent;)Z
     .locals 2
-    .param p0    # Landroid/view/KeyEvent;
 
     sget-object v0, Landroid/support/v4/view/KeyEventCompat;->IMPL:Landroid/support/v4/view/KeyEventCompat$KeyEventVersionImpl;
 
@@ -121,7 +113,6 @@
 
 .method public static isTracking(Landroid/view/KeyEvent;)Z
     .locals 1
-    .param p0    # Landroid/view/KeyEvent;
 
     sget-object v0, Landroid/support/v4/view/KeyEventCompat;->IMPL:Landroid/support/v4/view/KeyEventCompat$KeyEventVersionImpl;
 
@@ -134,8 +125,6 @@
 
 .method public static metaStateHasModifiers(II)Z
     .locals 1
-    .param p0    # I
-    .param p1    # I
 
     sget-object v0, Landroid/support/v4/view/KeyEventCompat;->IMPL:Landroid/support/v4/view/KeyEventCompat$KeyEventVersionImpl;
 
@@ -148,7 +137,6 @@
 
 .method public static metaStateHasNoModifiers(I)Z
     .locals 1
-    .param p0    # I
 
     sget-object v0, Landroid/support/v4/view/KeyEventCompat;->IMPL:Landroid/support/v4/view/KeyEventCompat$KeyEventVersionImpl;
 
@@ -161,7 +149,6 @@
 
 .method public static normalizeMetaState(I)I
     .locals 1
-    .param p0    # I
 
     sget-object v0, Landroid/support/v4/view/KeyEventCompat;->IMPL:Landroid/support/v4/view/KeyEventCompat$KeyEventVersionImpl;
 
@@ -174,7 +161,6 @@
 
 .method public static startTracking(Landroid/view/KeyEvent;)V
     .locals 1
-    .param p0    # Landroid/view/KeyEvent;
 
     sget-object v0, Landroid/support/v4/view/KeyEventCompat;->IMPL:Landroid/support/v4/view/KeyEventCompat$KeyEventVersionImpl;
 

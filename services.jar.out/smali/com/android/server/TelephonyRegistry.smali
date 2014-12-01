@@ -157,7 +157,6 @@
 # direct methods
 .method constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     const/4 v2, 0x0
 
@@ -268,8 +267,6 @@
 
 .method constructor <init>(Landroid/content/Context;I)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     const/4 v2, 0x0
 
@@ -380,7 +377,6 @@
 
 .method static synthetic access$000(Lcom/android/server/TelephonyRegistry;)Landroid/os/Bundle;
     .locals 1
-    .param p0    # Lcom/android/server/TelephonyRegistry;
 
     iget-object v0, p0, Lcom/android/server/TelephonyRegistry;->mCellLocation:Landroid/os/Bundle;
 
@@ -389,7 +385,6 @@
 
 .method static synthetic access$100(Lcom/android/server/TelephonyRegistry;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/server/TelephonyRegistry;
 
     iget-object v0, p0, Lcom/android/server/TelephonyRegistry;->mHandler:Landroid/os/Handler;
 
@@ -398,8 +393,6 @@
 
 .method private broadcastCallStateChanged(ILjava/lang/String;)V
     .locals 8
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v7, 0x5
 
@@ -530,9 +523,6 @@
 
 .method private broadcastCallStateChanged(ILjava/lang/String;I)V
     .locals 8
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     const/4 v7, 0x5
 
@@ -665,8 +655,6 @@
 
 .method private broadcastDataConnectionFailed(Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-static {}, Landroid/telephony/MSimTelephonyManager;->getDefault()Landroid/telephony/MSimTelephonyManager;
 
@@ -713,9 +701,6 @@
 
 .method private broadcastDataConnectionFailed(Ljava/lang/String;Ljava/lang/String;I)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     new-instance v0, Landroid/content/Intent;
 
@@ -746,14 +731,6 @@
 
 .method private broadcastDataConnectionStateChanged(IZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/net/LinkProperties;Landroid/net/LinkCapabilities;Z)V
     .locals 5
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Landroid/net/LinkProperties;
-    .param p7    # Landroid/net/LinkCapabilities;
-    .param p8    # Z
 
     const/4 v4, 0x1
 
@@ -859,15 +836,6 @@
 
 .method private broadcastDataConnectionStateChanged(IZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/net/LinkProperties;Landroid/net/LinkCapabilities;ZI)V
     .locals 5
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Landroid/net/LinkProperties;
-    .param p7    # Landroid/net/LinkCapabilities;
-    .param p8    # Z
-    .param p9    # I
 
     const/4 v4, 0x1
 
@@ -957,7 +925,6 @@
 
 .method private broadcastServiceStateChanged(Landroid/telephony/ServiceState;)V
     .locals 6
-    .param p1    # Landroid/telephony/ServiceState;
 
     invoke-static {}, Landroid/telephony/MSimTelephonyManager;->getDefault()Landroid/telephony/MSimTelephonyManager;
 
@@ -1035,8 +1002,6 @@
 
 .method private broadcastServiceStateChanged(Landroid/telephony/ServiceState;I)V
     .locals 6
-    .param p1    # Landroid/telephony/ServiceState;
-    .param p2    # I
 
     invoke-static {}, Landroid/os/Binder;->clearCallingIdentity()J
 
@@ -1110,7 +1075,6 @@
 
 .method private broadcastSignalStrengthChanged(Landroid/telephony/SignalStrength;)V
     .locals 6
-    .param p1    # Landroid/telephony/SignalStrength;
 
     invoke-static {}, Landroid/telephony/MSimTelephonyManager;->getDefault()Landroid/telephony/MSimTelephonyManager;
 
@@ -1182,8 +1146,6 @@
 
 .method private broadcastSignalStrengthChanged(Landroid/telephony/SignalStrength;I)V
     .locals 6
-    .param p1    # Landroid/telephony/SignalStrength;
-    .param p2    # I
 
     invoke-static {}, Landroid/os/Binder;->clearCallingIdentity()J
 
@@ -1251,7 +1213,6 @@
 
 .method private checkListenerPermission(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -1293,7 +1254,6 @@
 
 .method private checkNotifyPermission(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/server/TelephonyRegistry;->mContext:Landroid/content/Context;
 
@@ -1537,7 +1497,6 @@
 
 .method private remove(Landroid/os/IBinder;)V
     .locals 4
-    .param p1    # Landroid/os/IBinder;
 
     iget-object v3, p0, Lcom/android/server/TelephonyRegistry;->mRecords:Ljava/util/ArrayList;
 
@@ -1598,7 +1557,6 @@
 
 .method private removeCallStateListener(Landroid/os/IBinder;)V
     .locals 4
-    .param p1    # Landroid/os/IBinder;
 
     iget-object v3, p0, Lcom/android/server/TelephonyRegistry;->mCallStateListeners:Ljava/util/ArrayList;
 
@@ -1659,8 +1617,6 @@
 
 .method private validateEventsAndUserLocked(Lcom/android/server/TelephonyRegistry$Record;I)Z
     .locals 5
-    .param p1    # Lcom/android/server/TelephonyRegistry$Record;
-    .param p2    # I
 
     invoke-static {}, Landroid/os/Binder;->clearCallingIdentity()J
 
@@ -1709,9 +1665,6 @@
 # virtual methods
 .method public dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 9
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     iget-object v5, p0, Lcom/android/server/TelephonyRegistry;->mContext:Landroid/content/Context;
 
@@ -2316,8 +2269,6 @@
 
 .method init(Landroid/content/Context;I)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     iput p2, p0, Lcom/android/server/TelephonyRegistry;->mSimSlot:I
 
@@ -2414,10 +2365,6 @@
 
 .method public listen(Ljava/lang/String;Lcom/android/internal/telephony/IPhoneStateListener;IZ)V
     .locals 23
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/internal/telephony/IPhoneStateListener;
-    .param p3    # I
-    .param p4    # Z
 
     invoke-static {}, Landroid/os/UserHandle;->getCallingUserId()I
 
@@ -3454,7 +3401,6 @@
 
 .method public notifyCallForwardingChanged(Z)V
     .locals 6
-    .param p1    # Z
 
     const-string v3, "notifyCallForwardingChanged()"
 
@@ -3547,8 +3493,6 @@
 
 .method public notifyCallState(ILjava/lang/String;)V
     .locals 8
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const-string v4, "notifyCallState()"
 
@@ -3703,9 +3647,6 @@
 
 .method public notifyCallStateDuos(ILjava/lang/String;I)V
     .locals 7
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     const-string v4, "notifyCallState()"
 
@@ -3933,7 +3874,6 @@
 
 .method public notifyCellLocation(Landroid/os/Bundle;)V
     .locals 6
-    .param p1    # Landroid/os/Bundle;
 
     const-string v3, "notifyCellLocation()"
 
@@ -4032,7 +3972,6 @@
 
 .method public notifyDataActivity(I)V
     .locals 6
-    .param p1    # I
 
     const-string v3, "notifyDataActivity()"
 
@@ -4125,15 +4064,6 @@
 
 .method public notifyDataConnection(IZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/net/LinkProperties;Landroid/net/LinkCapabilities;IZ)V
     .locals 14
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Landroid/net/LinkProperties;
-    .param p7    # Landroid/net/LinkCapabilities;
-    .param p8    # I
-    .param p9    # Z
 
     const-string v1, "notifyDataConnection()"
 
@@ -4352,16 +4282,6 @@
 
 .method public notifyDataConnectionDuos(IZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/net/LinkProperties;Landroid/net/LinkCapabilities;IZI)V
     .locals 15
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Landroid/net/LinkProperties;
-    .param p7    # Landroid/net/LinkCapabilities;
-    .param p8    # I
-    .param p9    # Z
-    .param p10    # I
 
     const-string v1, "notifyDataConnection()"
 
@@ -4575,8 +4495,6 @@
 
 .method public notifyDataConnectionFailed(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const-string v0, "notifyDataConnectionFailed()"
 
@@ -4597,9 +4515,6 @@
 
 .method public notifyDataConnectionFailedDuos(Ljava/lang/String;Ljava/lang/String;I)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     const-string v0, "notifyDataConnectionFailed()"
 
@@ -4620,7 +4535,6 @@
 
 .method public notifyDualSimSlotActivationState(Z)V
     .locals 3
-    .param p1    # Z
 
     const-string v1, "notifyDualSimSlotActivationState()"
 
@@ -4681,7 +4595,6 @@
 
 .method public notifyDunDataActivity(I)V
     .locals 6
-    .param p1    # I
 
     const-string v3, "notifyDunDataActivity()"
 
@@ -4775,8 +4688,6 @@
 
 .method public notifyDunDataConnection(II)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     const-string v3, "notifyDunDataConnection()"
 
@@ -4962,7 +4873,6 @@
 
 .method public notifyMessageWaitingChanged(Z)V
     .locals 6
-    .param p1    # Z
 
     const-string v3, "notifyMessageWaitingChanged()"
 
@@ -5055,7 +4965,6 @@
 
 .method public notifyOtaspChanged(I)V
     .locals 6
-    .param p1    # I
 
     const-string v3, "notifyOtaspChanged()"
 
@@ -5148,7 +5057,6 @@
 
 .method public notifyServiceState(Landroid/telephony/ServiceState;)V
     .locals 6
-    .param p1    # Landroid/telephony/ServiceState;
 
     const-string v3, "notifyServiceState()"
 
@@ -5247,8 +5155,6 @@
 
 .method public notifyServiceStateDuos(Landroid/telephony/ServiceState;I)V
     .locals 6
-    .param p1    # Landroid/telephony/ServiceState;
-    .param p2    # I
 
     const-string v3, "notifyServiceState()"
 
@@ -5347,7 +5253,6 @@
 
 .method public notifySignalStrength(Landroid/telephony/SignalStrength;)V
     .locals 7
-    .param p1    # Landroid/telephony/SignalStrength;
 
     const-string v4, "notifySignalStrength()"
 
@@ -5487,8 +5392,6 @@
 
 .method public notifySignalStrengthDuos(Landroid/telephony/SignalStrength;I)V
     .locals 7
-    .param p1    # Landroid/telephony/SignalStrength;
-    .param p2    # I
 
     const-string v4, "notifySignalStrength()"
 

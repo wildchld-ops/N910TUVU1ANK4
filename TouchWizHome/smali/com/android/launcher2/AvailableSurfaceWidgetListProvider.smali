@@ -25,7 +25,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -36,7 +35,6 @@
 
 .method static synthetic access$000(Lcom/android/launcher2/AvailableSurfaceWidgetListProvider;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/launcher2/AvailableSurfaceWidgetListProvider;
 
     iget-object v0, p0, Lcom/android/launcher2/AvailableSurfaceWidgetListProvider;->mContext:Landroid/content/Context;
 
@@ -47,7 +45,6 @@
 # virtual methods
 .method public declared-synchronized getAvailableWidget(Landroid/content/ComponentName;)Lcom/android/launcher2/AvailableWidget;
     .locals 9
-    .param p1    # Landroid/content/ComponentName;
 
     const/4 v5, 0x1
 

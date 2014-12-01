@@ -112,11 +112,11 @@
 
     iget-object v0, p0, Lcom/android/phone/HfaActivity;->mDialog:Landroid/app/AlertDialog;
 
-    invoke-virtual {v0, v3}, Landroid/app/Dialog;->setCanceledOnTouchOutside(Z)V
+    invoke-virtual {v0, v3}, Landroid/app/AlertDialog;->setCanceledOnTouchOutside(Z)V
 
     iget-object v0, p0, Lcom/android/phone/HfaActivity;->mDialog:Landroid/app/AlertDialog;
 
-    invoke-virtual {v0, v3}, Landroid/app/Dialog;->setCancelable(Z)V
+    invoke-virtual {v0, v3}, Landroid/app/AlertDialog;->setCancelable(Z)V
 
     sget-object v0, Lcom/android/phone/HfaActivity;->TAG:Ljava/lang/String;
 
@@ -126,7 +126,7 @@
 
     iget-object v0, p0, Lcom/android/phone/HfaActivity;->mDialog:Landroid/app/AlertDialog;
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->show()V
+    invoke-virtual {v0}, Landroid/app/AlertDialog;->show()V
 
     return-void
 .end method
@@ -137,7 +137,7 @@
 
     iget-object v1, p0, Lcom/android/phone/HfaActivity;->mDialog:Landroid/app/AlertDialog;
 
-    invoke-virtual {v1}, Landroid/app/Dialog;->dismiss()V
+    invoke-virtual {v1}, Landroid/app/AlertDialog;->dismiss()V
 
     new-instance v1, Landroid/app/AlertDialog$Builder;
 
@@ -171,7 +171,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->show()V
+    invoke-virtual {v0}, Landroid/app/AlertDialog;->show()V
 
     return-void
 .end method
@@ -179,7 +179,7 @@
 .method private onHfaSuccess()V
     .locals 0
 
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/HfaActivity;->finish()V
 
     return-void
 .end method
@@ -187,7 +187,7 @@
 .method private onUserSkip()V
     .locals 0
 
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/HfaActivity;->finish()V
 
     return-void
 .end method
@@ -218,7 +218,7 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/phone/HfaActivity;->getIntent()Landroid/content/Intent;
 
     move-result-object v1
 
@@ -232,7 +232,7 @@
 
     new-instance v1, Lcom/android/phone/HfaLogic;
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/HfaActivity;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v2
 
@@ -266,7 +266,7 @@
 
     iget-object v0, p0, Lcom/android/phone/HfaActivity;->mDialog:Landroid/app/AlertDialog;
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->isShowing()Z
+    invoke-virtual {v0}, Landroid/app/AlertDialog;->isShowing()Z
 
     move-result v0
 
@@ -274,7 +274,7 @@
 
     iget-object v0, p0, Lcom/android/phone/HfaActivity;->mDialog:Landroid/app/AlertDialog;
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->dismiss()V
+    invoke-virtual {v0}, Landroid/app/AlertDialog;->dismiss()V
 
     const/4 v0, 0x0
 

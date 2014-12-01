@@ -25,8 +25,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/BackupManagerService;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/server/BackupManagerService$ClearRetryParams;->this$0:Lcom/android/server/BackupManagerService;
 

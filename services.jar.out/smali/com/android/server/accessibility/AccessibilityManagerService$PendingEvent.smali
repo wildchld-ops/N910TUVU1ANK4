@@ -37,7 +37,6 @@
 
 .method synthetic constructor <init>(Lcom/android/server/accessibility/AccessibilityManagerService$1;)V
     .locals 0
-    .param p1    # Lcom/android/server/accessibility/AccessibilityManagerService$1;
 
     invoke-direct {p0}, Lcom/android/server/accessibility/AccessibilityManagerService$PendingEvent;-><init>()V
 

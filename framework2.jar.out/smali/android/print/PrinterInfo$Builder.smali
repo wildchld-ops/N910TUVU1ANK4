@@ -21,9 +21,6 @@
 # direct methods
 .method public constructor <init>(Landroid/print/PrinterId;Ljava/lang/String;I)V
     .locals 2
-    .param p1    # Landroid/print/PrinterId;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -96,7 +93,6 @@
 
 .method public constructor <init>(Landroid/print/PrinterInfo;)V
     .locals 2
-    .param p1    # Landroid/print/PrinterInfo;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -117,7 +113,6 @@
 
 .method private isValidStatus(I)Z
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -153,7 +148,6 @@
 
 .method public setCapabilities(Landroid/print/PrinterCapabilitiesInfo;)Landroid/print/PrinterInfo$Builder;
     .locals 1
-    .param p1    # Landroid/print/PrinterCapabilitiesInfo;
 
     iget-object v0, p0, Landroid/print/PrinterInfo$Builder;->mPrototype:Landroid/print/PrinterInfo;
 
@@ -165,7 +159,6 @@
 
 .method public setDescription(Ljava/lang/String;)Landroid/print/PrinterInfo$Builder;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/print/PrinterInfo$Builder;->mPrototype:Landroid/print/PrinterInfo;
 
@@ -177,7 +170,6 @@
 
 .method public setName(Ljava/lang/String;)Landroid/print/PrinterInfo$Builder;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/print/PrinterInfo$Builder;->mPrototype:Landroid/print/PrinterInfo;
 
@@ -189,7 +181,6 @@
 
 .method public setStatus(I)Landroid/print/PrinterInfo$Builder;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/print/PrinterInfo$Builder;->mPrototype:Landroid/print/PrinterInfo;
 

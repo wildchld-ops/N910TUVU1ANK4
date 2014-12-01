@@ -49,7 +49,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -60,8 +59,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const v0, 0x1010071
 
@@ -72,9 +69,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 11
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v6, 0x0
 
@@ -174,9 +168,6 @@
 
 .method private adjustForBottomFadingEdge(Landroid/view/View;II)V
     .locals 4
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # I
 
     invoke-virtual {p1}, Landroid/view/View;->getBottom()I
 
@@ -210,9 +201,6 @@
 
 .method private adjustForTopFadingEdge(Landroid/view/View;II)V
     .locals 4
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # I
 
     invoke-virtual {p1}, Landroid/view/View;->getTop()I
 
@@ -340,9 +328,6 @@
 
 .method private commonKey(IILandroid/view/KeyEvent;)Z
     .locals 8
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/view/KeyEvent;
 
     const/4 v7, 0x2
 
@@ -963,9 +948,6 @@
 
 .method private correctTooHigh(III)V
     .locals 9
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     iget v7, p0, Landroid/widget/AdapterView;->mFirstPosition:I
 
@@ -1076,9 +1058,6 @@
 
 .method private correctTooLow(III)V
     .locals 10
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     iget v8, p0, Landroid/widget/AdapterView;->mFirstPosition:I
 
@@ -1189,7 +1168,6 @@
 
 .method private determineColumns(I)Z
     .locals 8
-    .param p1    # I
 
     const/4 v7, 0x1
 
@@ -1352,8 +1330,6 @@
 
 .method private fillDown(II)Landroid/view/View;
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     const/4 v1, 0x0
 
@@ -1432,8 +1408,6 @@
 
 .method private fillFromBottom(II)Landroid/view/View;
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     iget v1, p0, Landroid/widget/AdapterView;->mSelectedPosition:I
 
@@ -1476,9 +1450,6 @@
 
 .method private fillFromSelection(III)Landroid/view/View;
     .locals 14
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     invoke-virtual {p0}, Landroid/view/View;->getVerticalFadingEdgeLength()I
 
@@ -1630,7 +1601,6 @@
 
 .method private fillFromTop(I)Landroid/view/View;
     .locals 3
-    .param p1    # I
 
     iget v0, p0, Landroid/widget/AdapterView;->mFirstPosition:I
 
@@ -1686,8 +1656,6 @@
 
 .method private fillSelection(II)Landroid/view/View;
     .locals 15
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0}, Landroid/widget/AbsListView;->reconcileSelectedPosition()I
 
@@ -1846,8 +1814,6 @@
 
 .method private fillSpecific(II)Landroid/view/View;
     .locals 12
-    .param p1    # I
-    .param p2    # I
 
     iget v6, p0, Landroid/widget/GridView;->mNumColumns:I
 
@@ -2017,8 +1983,6 @@
 
 .method private fillUp(II)Landroid/view/View;
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     const/4 v5, 0x0
 
@@ -2104,10 +2068,6 @@
 
 .method private getBottomSelectionPixel(IIII)I
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     move v0, p1
 
@@ -2129,9 +2089,6 @@
 
 .method private getTopSelectionPixel(III)I
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     move v0, p1
 
@@ -2145,8 +2102,6 @@
 
 .method private isCandidateSelection(II)Z
     .locals 8
-    .param p1    # I
-    .param p2    # I
 
     const/4 v4, 0x1
 
@@ -2284,12 +2239,6 @@
 
 .method private makeAndAddView(IIZIZI)Landroid/view/View;
     .locals 10
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # I
-    .param p5    # Z
-    .param p6    # I
 
     iget-boolean v0, p0, Landroid/widget/AdapterView;->mDataChanged:Z
 
@@ -2362,9 +2311,6 @@
 
 .method private makeRow(IIZ)Landroid/view/View;
     .locals 18
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     move-object/from16 v0, p0
 
@@ -2638,9 +2584,6 @@
 
 .method private moveSelection(III)Landroid/view/View;
     .locals 23
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     invoke-virtual/range {p0 .. p0}, Landroid/view/View;->getVerticalFadingEdgeLength()I
 
@@ -3086,7 +3029,6 @@
 
 .method private pinToBottom(I)V
     .locals 5
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getChildCount()I
 
@@ -3122,7 +3064,6 @@
 
 .method private pinToTop(I)V
     .locals 3
-    .param p1    # I
 
     iget v2, p0, Landroid/widget/AdapterView;->mFirstPosition:I
 
@@ -3150,14 +3091,6 @@
 
 .method private setupChild(Landroid/view/View;IIZIZZI)V
     .locals 25
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Z
-    .param p5    # I
-    .param p6    # Z
-    .param p7    # Z
-    .param p8    # I
 
     const-wide/16 v22, 0x8
 
@@ -3699,7 +3632,6 @@
 # virtual methods
 .method arrowScroll(I)Z
     .locals 10
-    .param p1    # I
 
     const/4 v9, 0x0
 
@@ -3880,10 +3812,6 @@
 
 .method protected attachLayoutAnimationParameters(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;II)V
     .locals 4
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/ViewGroup$LayoutParams;
-    .param p3    # I
-    .param p4    # I
 
     iget-object v0, p2, Landroid/view/ViewGroup$LayoutParams;->layoutAnimationParameters:Landroid/view/animation/LayoutAnimationController$AnimationParameters;
 
@@ -4205,7 +4133,6 @@
 
 .method fillGap(Z)V
     .locals 9
-    .param p1    # Z
 
     const/16 v8, 0x22
 
@@ -4341,7 +4268,6 @@
 
 .method findMotionRow(I)I
     .locals 4
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getChildCount()I
 
@@ -4417,7 +4343,6 @@
 
 .method fullScroll(I)Z
     .locals 3
-    .param p1    # I
 
     const/4 v2, 0x2
 
@@ -5406,8 +5331,6 @@
 
 .method lookForSelectablePosition(IZ)I
     .locals 3
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v1, -0x1
 
@@ -5443,9 +5366,6 @@
 
 .method protected onFocusChanged(ZILandroid/graphics/Rect;)V
     .locals 9
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # Landroid/graphics/Rect;
 
     invoke-super {p0, p1, p2, p3}, Landroid/widget/AbsListView;->onFocusChanged(ZILandroid/graphics/Rect;)V
 
@@ -5527,7 +5447,6 @@
 
 .method public onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
     .locals 1
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
 
     invoke-super {p0, p1}, Landroid/widget/AbsListView;->onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
 
@@ -5544,7 +5463,6 @@
 
 .method public onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
     .locals 4
-    .param p1    # Landroid/view/accessibility/AccessibilityNodeInfo;
 
     invoke-super {p0, p1}, Landroid/widget/AbsListView;->onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
 
@@ -5579,9 +5497,6 @@
 
 .method public onInitializeAccessibilityNodeInfoForItem(Landroid/view/View;ILandroid/view/accessibility/AccessibilityNodeInfo;)V
     .locals 12
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # Landroid/view/accessibility/AccessibilityNodeInfo;
 
     const/4 v9, 0x1
 
@@ -5658,8 +5573,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x1
 
@@ -5672,9 +5585,6 @@
 
 .method public onKeyMultiple(IILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/view/KeyEvent;
 
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/GridView;->commonKey(IILandroid/view/KeyEvent;)Z
 
@@ -5685,8 +5595,6 @@
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x1
 
@@ -5699,8 +5607,6 @@
 
 .method protected onMeasure(II)V
     .locals 22
-    .param p1    # I
-    .param p2    # I
 
     invoke-super/range {p0 .. p2}, Landroid/widget/AbsListView;->onMeasure(II)V
 
@@ -6252,7 +6158,6 @@
 
 .method pageScroll(I)Z
     .locals 5
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -6315,7 +6220,6 @@
 
 .method sequenceScroll(I)Z
     .locals 13
-    .param p1    # I
 
     const/4 v12, 0x6
 
@@ -6454,7 +6358,6 @@
 
 .method public bridge synthetic setAdapter(Landroid/widget/Adapter;)V
     .locals 0
-    .param p1    # Landroid/widget/Adapter;
 
     check-cast p1, Landroid/widget/ListAdapter;
 
@@ -6465,7 +6368,6 @@
 
 .method public setAdapter(Landroid/widget/ListAdapter;)V
     .locals 5
-    .param p1    # Landroid/widget/ListAdapter;
 
     const/4 v4, 0x1
 
@@ -6587,7 +6489,6 @@
 
 .method public setColumnWidth(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/widget/GridView;->mRequestedColumnWidth:I
 
@@ -6603,7 +6504,6 @@
 
 .method public setGravity(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/widget/GridView;->mGravity:I
 
@@ -6619,7 +6519,6 @@
 
 .method public setHorizontalSpacing(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/widget/GridView;->mRequestedHorizontalSpacing:I
 
@@ -6635,7 +6534,6 @@
 
 .method public setNumColumns(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/widget/GridView;->mRequestedNumColumns:I
 
@@ -6651,7 +6549,6 @@
 
 .method public setRemoteViewsAdapter(Landroid/content/Intent;)V
     .locals 0
-    .param p1    # Landroid/content/Intent;
     .annotation runtime Landroid/view/RemotableViewMethod;
     .end annotation
 
@@ -6662,7 +6559,6 @@
 
 .method public setSelection(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/view/View;->isInTouchMode()Z
 
@@ -6698,7 +6594,6 @@
 
 .method setSelectionInt(I)V
     .locals 7
-    .param p1    # I
 
     iget v4, p0, Landroid/widget/AdapterView;->mNextSelectedPosition:I
 
@@ -6767,7 +6662,6 @@
 
 .method public setStretchMode(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/widget/GridView;->mStretchMode:I
 
@@ -6783,7 +6677,6 @@
 
 .method public setVerticalSpacing(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/widget/GridView;->mVerticalSpacing:I
 
@@ -6799,7 +6692,6 @@
 
 .method public smoothScrollByOffset(I)V
     .locals 0
-    .param p1    # I
     .annotation runtime Landroid/view/RemotableViewMethod;
     .end annotation
 
@@ -6810,7 +6702,6 @@
 
 .method public smoothScrollToPosition(I)V
     .locals 0
-    .param p1    # I
     .annotation runtime Landroid/view/RemotableViewMethod;
     .end annotation
 

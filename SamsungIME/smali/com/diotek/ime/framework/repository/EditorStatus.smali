@@ -872,7 +872,6 @@
 
 .method public static setImeOptions(I)V
     .locals 1
-    .param p0    # I
 
     sget-object v0, Lcom/diotek/ime/framework/repository/EditorStatus;->sInstance:Lcom/diotek/ime/framework/repository/EditorStatus;
 
@@ -894,7 +893,6 @@
 
 .method public static setInputType(I)V
     .locals 2
-    .param p0    # I
 
     sget-object v0, Lcom/diotek/ime/framework/repository/EditorStatus;->sInstance:Lcom/diotek/ime/framework/repository/EditorStatus;
 

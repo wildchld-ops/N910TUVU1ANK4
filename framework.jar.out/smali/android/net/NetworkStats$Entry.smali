@@ -65,11 +65,6 @@
 
 .method public constructor <init>(JJJJJ)V
     .locals 15
-    .param p1    # J
-    .param p3    # J
-    .param p5    # J
-    .param p7    # J
-    .param p9    # J
 
     sget-object v1, Landroid/net/NetworkStats;->IFACE_ALL:Ljava/lang/String;
 
@@ -98,15 +93,6 @@
 
 .method public constructor <init>(Ljava/lang/String;IIIJJJJJ)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # J
-    .param p7    # J
-    .param p9    # J
-    .param p11    # J
-    .param p13    # J
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -135,7 +121,6 @@
 # virtual methods
 .method public add(Landroid/net/NetworkStats$Entry;)V
     .locals 4
-    .param p1    # Landroid/net/NetworkStats$Entry;
 
     iget-wide v0, p0, Landroid/net/NetworkStats$Entry;->rxBytes:J
 
@@ -182,7 +167,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 6
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x0
 
@@ -363,8 +347,6 @@
 
 .method public remove(JJ)V
     .locals 2
-    .param p1    # J
-    .param p3    # J
 
     iget-wide v0, p0, Landroid/net/NetworkStats$Entry;->txBytes:J
 

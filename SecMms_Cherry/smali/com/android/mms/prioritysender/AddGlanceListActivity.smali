@@ -67,7 +67,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/prioritysender/AddGlanceListActivity;)V
     .locals 0
-    .param p0    # Lcom/android/mms/prioritysender/AddGlanceListActivity;
 
     invoke-direct {p0}, Lcom/android/mms/prioritysender/AddGlanceListActivity;->showMaxToast()V
 
@@ -76,7 +75,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/prioritysender/AddGlanceListActivity;)V
     .locals 0
-    .param p0    # Lcom/android/mms/prioritysender/AddGlanceListActivity;
 
     invoke-direct {p0}, Lcom/android/mms/prioritysender/AddGlanceListActivity;->startQuery()V
 
@@ -85,8 +83,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/prioritysender/AddGlanceListActivity;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/mms/prioritysender/AddGlanceListActivity;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/mms/prioritysender/AddGlanceListActivity;->showAddedToast(Ljava/lang/String;)V
 
@@ -95,7 +91,6 @@
 
 .method static synthetic access$300(Lcom/android/mms/prioritysender/AddGlanceListActivity;)Lcom/android/mms/prioritysender/AddGlanceListAdapter;
     .locals 1
-    .param p0    # Lcom/android/mms/prioritysender/AddGlanceListActivity;
 
     iget-object v0, p0, Lcom/android/mms/prioritysender/AddGlanceListActivity;->mListAdapter:Lcom/android/mms/prioritysender/AddGlanceListAdapter;
 
@@ -130,7 +125,6 @@
 
 .method private showAddedToast(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const v3, 0x7f0c0497
 
@@ -416,9 +410,6 @@
 # virtual methods
 .method protected onActivityResult(IILandroid/content/Intent;)V
     .locals 26
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const/16 v21, 0x65
 
@@ -1091,7 +1082,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 0
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -1102,7 +1092,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 6
-    .param p1    # Landroid/os/Bundle;
 
     const v5, 0x7f0c044a
 
@@ -1308,7 +1297,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -1481,7 +1469,6 @@
 
 .method public onUpdate(Lcom/android/mms/data/Contact;)V
     .locals 2
-    .param p1    # Lcom/android/mms/data/Contact;
 
     const-string v0, "Mms/AddGlanceListActivity"
 

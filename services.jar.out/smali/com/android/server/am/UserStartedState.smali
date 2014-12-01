@@ -37,8 +37,6 @@
 # direct methods
 .method public constructor <init>(Landroid/os/UserHandle;Z)V
     .locals 1
-    .param p1    # Landroid/os/UserHandle;
-    .param p2    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -61,8 +59,6 @@
 # virtual methods
 .method dump(Ljava/lang/String;Ljava/io/PrintWriter;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/io/PrintWriter;
 
     invoke-virtual {p2, p1}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 

@@ -315,7 +315,7 @@
 
     move-result-object v13
 
-    invoke-virtual {v13}, Landroid/app/Dialog;->isShowing()Z
+    invoke-virtual {v13}, Landroid/app/ProgressDialog;->isShowing()Z
 
     move-result v13
 
@@ -341,7 +341,7 @@
 
     move-result-object v13
 
-    invoke-virtual {v13}, Landroid/app/Dialog;->dismiss()V
+    invoke-virtual {v13}, Landroid/app/ProgressDialog;->dismiss()V
 
     move-object/from16 v0, p0
 
@@ -404,7 +404,7 @@
 
     move-result-object v13
 
-    invoke-virtual {v13, v5}, Landroid/content/ContextWrapper;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {v13, v5}, Lcom/android/phone/PhoneGlobals;->startActivity(Landroid/content/Intent;)V
 
     goto/16 :goto_0
 

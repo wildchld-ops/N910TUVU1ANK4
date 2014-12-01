@@ -52,7 +52,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/SViewStyleClock;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/SViewStyleClock;
 
     iget-boolean v0, p0, Lcom/android/settings/SViewStyleClock;->mIsChangedInside:Z
 
@@ -61,8 +60,6 @@
 
 .method static synthetic access$002(Lcom/android/settings/SViewStyleClock;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/SViewStyleClock;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/SViewStyleClock;->mIsChangedInside:Z
 
@@ -71,7 +68,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/SViewStyleClock;)V
     .locals 0
-    .param p0    # Lcom/android/settings/SViewStyleClock;
 
     invoke-direct {p0}, Lcom/android/settings/SViewStyleClock;->setfocusButton()V
 
@@ -80,7 +76,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/SViewStyleClock;)I
     .locals 1
-    .param p0    # Lcom/android/settings/SViewStyleClock;
 
     iget v0, p0, Lcom/android/settings/SViewStyleClock;->mItemIndex:I
 
@@ -89,8 +84,6 @@
 
 .method static synthetic access$202(Lcom/android/settings/SViewStyleClock;I)I
     .locals 0
-    .param p0    # Lcom/android/settings/SViewStyleClock;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/settings/SViewStyleClock;->mItemIndex:I
 
@@ -99,7 +92,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/SViewStyleClock;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/SViewStyleClock;
 
     invoke-direct {p0}, Lcom/android/settings/SViewStyleClock;->showGuidePopup()Z
 
@@ -388,7 +380,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 6
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v5, 0x3
 

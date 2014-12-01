@@ -49,8 +49,6 @@
 
 .method public constructor <init>(Landroid/database/Cursor;I)V
     .locals 1
-    .param p1    # Landroid/database/Cursor;
-    .param p2    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -67,8 +65,6 @@
 
 .method public static getLocation(Landroid/content/Context;Ljava/lang/String;)Landroid/provider/GeocodedLocation;
     .locals 11
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x1
 

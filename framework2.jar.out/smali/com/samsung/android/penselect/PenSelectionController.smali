@@ -47,9 +47,6 @@
 
 .method private getPenSelectionContents(Landroid/content/Context;Landroid/view/View;Lcom/samsung/android/penselect/PenSelectionController$PenSelectionContents;)Z
     .locals 9
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/view/View;
-    .param p3    # Lcom/samsung/android/penselect/PenSelectionController$PenSelectionContents;
 
     const/4 v8, 0x1
 
@@ -176,7 +173,6 @@
 
 .method private isVisibleView(Landroid/view/View;)Z
     .locals 1
-    .param p1    # Landroid/view/View;
 
     if-eqz p1, :cond_0
 
@@ -213,8 +209,6 @@
 # virtual methods
 .method public checkRectInView(Landroid/view/View;Landroid/graphics/Rect;)Z
     .locals 7
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/graphics/Rect;
 
     const/4 v6, 0x1
 
@@ -269,8 +263,6 @@
 
 .method public clearAllPenSelection(Landroid/content/Context;Landroid/view/View;)Z
     .locals 8
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/view/View;
 
     const/4 v7, 0x1
 
@@ -326,9 +318,6 @@
 
 .method public findTargetTextView(Landroid/content/Context;Landroid/view/View;Landroid/graphics/Rect;)Landroid/view/View;
     .locals 9
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/graphics/Rect;
 
     move-object v6, p2
 
@@ -419,8 +408,6 @@
 
 .method public getPenSelectionContents(Landroid/content/Context;Landroid/view/View;)Ljava/lang/String;
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/view/View;
 
     new-instance v0, Lcom/samsung/android/penselect/PenSelectionController$PenSelectionContents;
 
@@ -435,10 +422,6 @@
 
 .method public isPenSelectionArea(Landroid/content/Context;Landroid/view/View;II)Z
     .locals 8
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # I
 
     const/4 v6, 0x1
 

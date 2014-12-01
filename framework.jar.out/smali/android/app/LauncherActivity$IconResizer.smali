@@ -87,7 +87,6 @@
 # virtual methods
 .method public createIconThumbnail(Landroid/graphics/drawable/Drawable;)Landroid/graphics/drawable/Drawable;
     .locals 14
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     const/4 v13, 0x0
 

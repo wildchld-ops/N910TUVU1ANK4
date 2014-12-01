@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Lcom/android/mms/ui/MessageListItem;Lcom/android/mms/ui/MessageListItem$1;)V
     .locals 0
-    .param p1    # Lcom/android/mms/ui/MessageListItem;
-    .param p2    # Lcom/android/mms/ui/MessageListItem$1;
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/MessageListItem$OnBodyTextTouchListener;-><init>(Lcom/android/mms/ui/MessageListItem;)V
 
@@ -46,8 +44,6 @@
 # virtual methods
 .method public onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 16
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     invoke-virtual/range {p2 .. p2}, Landroid/view/MotionEvent;->getAction()I
 

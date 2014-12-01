@@ -38,7 +38,6 @@
 # direct methods
 .method protected constructor <init>(Landroid/app/IBarBeamService;)V
     .locals 3
-    .param p1    # Landroid/app/IBarBeamService;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -85,7 +84,6 @@
 # virtual methods
 .method public addListener(Landroid/app/BarBeamListener;)V
     .locals 8
-    .param p1    # Landroid/app/BarBeamListener;
 
     if-eqz p1, :cond_0
 
@@ -333,7 +331,6 @@
 
 .method public removeListener(Landroid/app/BarBeamListener;)V
     .locals 8
-    .param p1    # Landroid/app/BarBeamListener;
 
     iget-object v5, p0, Landroid/app/BarBeamCommandImpl;->sListenerDelegates:Ljava/util/ArrayList;
 
@@ -480,7 +477,6 @@
 
 .method public setBarcode([B)V
     .locals 3
-    .param p1    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/app/BarBeamException;
@@ -516,7 +512,6 @@
 
 .method public setHopSequence([Landroid/app/Hop;)V
     .locals 6
-    .param p1    # [Landroid/app/Hop;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/app/BarBeamException;
@@ -633,7 +628,6 @@
 
 .method public startBeaming(I)V
     .locals 3
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/app/BarBeamException;
@@ -704,9 +698,6 @@
 
 .method protected writeHop2ByteArray(Landroid/app/Hop;[BI)I
     .locals 2
-    .param p1    # Landroid/app/Hop;
-    .param p2    # [B
-    .param p3    # I
 
     add-int/lit8 v0, p3, 0x1
 

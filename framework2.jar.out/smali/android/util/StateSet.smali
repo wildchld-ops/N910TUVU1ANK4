@@ -40,7 +40,6 @@
 
 .method public static dump([I)Ljava/lang/String;
     .locals 4
-    .param p0    # [I
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -116,7 +115,6 @@
 
 .method public static isWildCard([I)Z
     .locals 2
-    .param p0    # [I
 
     const/4 v0, 0x0
 
@@ -137,8 +135,6 @@
 
 .method public static stateSetMatches([II)Z
     .locals 6
-    .param p0    # [I
-    .param p1    # I
 
     const/4 v3, 0x1
 
@@ -185,8 +181,6 @@
 
 .method public static stateSetMatches([I[I)Z
     .locals 11
-    .param p0    # [I
-    .param p1    # [I
 
     const/4 v9, 0x1
 
@@ -286,8 +280,6 @@
 
 .method public static trimStateSet([II)[I
     .locals 3
-    .param p0    # [I
-    .param p1    # I
 
     const/4 v2, 0x0
 

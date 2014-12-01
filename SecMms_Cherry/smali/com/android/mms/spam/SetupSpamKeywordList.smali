@@ -271,7 +271,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/spam/SetupSpamKeywordList;)Lcom/android/mms/spam/SetupSpamKeywordList$SpamAdapter;
     .locals 1
-    .param p0    # Lcom/android/mms/spam/SetupSpamKeywordList;
 
     iget-object v0, p0, Lcom/android/mms/spam/SetupSpamKeywordList;->mSpamKeywordAdapter:Lcom/android/mms/spam/SetupSpamKeywordList$SpamAdapter;
 
@@ -280,8 +279,6 @@
 
 .method static synthetic access$102(Lcom/android/mms/spam/SetupSpamKeywordList;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/spam/SetupSpamKeywordList;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/spam/SetupSpamKeywordList;->mUpdateScreen:Z
 
@@ -290,7 +287,6 @@
 
 .method static synthetic access$1100(Lcom/android/mms/spam/SetupSpamKeywordList;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/mms/spam/SetupSpamKeywordList;
 
     iget-object v0, p0, Lcom/android/mms/spam/SetupSpamKeywordList;->mSpamKeywordItemList:Ljava/util/ArrayList;
 
@@ -299,7 +295,6 @@
 
 .method static synthetic access$1200(Lcom/android/mms/spam/SetupSpamKeywordList;)V
     .locals 0
-    .param p0    # Lcom/android/mms/spam/SetupSpamKeywordList;
 
     invoke-direct {p0}, Lcom/android/mms/spam/SetupSpamKeywordList;->callMatchCriteriaToEditNum()V
 
@@ -308,8 +303,6 @@
 
 .method static synthetic access$1300(Lcom/android/mms/spam/SetupSpamKeywordList;I)V
     .locals 0
-    .param p0    # Lcom/android/mms/spam/SetupSpamKeywordList;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/mms/spam/SetupSpamKeywordList;->deleteSpamKeyword(I)V
 
@@ -318,8 +311,6 @@
 
 .method static synthetic access$1400(Lcom/android/mms/spam/SetupSpamKeywordList;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/mms/spam/SetupSpamKeywordList;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/mms/spam/SetupSpamKeywordList;->displayToast(Ljava/lang/String;)V
 
@@ -328,7 +319,6 @@
 
 .method static synthetic access$1500(Lcom/android/mms/spam/SetupSpamKeywordList;)V
     .locals 0
-    .param p0    # Lcom/android/mms/spam/SetupSpamKeywordList;
 
     invoke-direct {p0}, Lcom/android/mms/spam/SetupSpamKeywordList;->makeScreen()V
 
@@ -337,7 +327,6 @@
 
 .method static synthetic access$1600(Lcom/android/mms/spam/SetupSpamKeywordList;)Landroid/view/ActionMode;
     .locals 1
-    .param p0    # Lcom/android/mms/spam/SetupSpamKeywordList;
 
     iget-object v0, p0, Lcom/android/mms/spam/SetupSpamKeywordList;->mMultiActionMode:Landroid/view/ActionMode;
 
@@ -346,8 +335,6 @@
 
 .method static synthetic access$1602(Lcom/android/mms/spam/SetupSpamKeywordList;Landroid/view/ActionMode;)Landroid/view/ActionMode;
     .locals 0
-    .param p0    # Lcom/android/mms/spam/SetupSpamKeywordList;
-    .param p1    # Landroid/view/ActionMode;
 
     iput-object p1, p0, Lcom/android/mms/spam/SetupSpamKeywordList;->mMultiActionMode:Landroid/view/ActionMode;
 
@@ -356,8 +343,6 @@
 
 .method static synthetic access$1702(Lcom/android/mms/spam/SetupSpamKeywordList;Landroid/view/ContextMenu;)Landroid/view/ContextMenu;
     .locals 0
-    .param p0    # Lcom/android/mms/spam/SetupSpamKeywordList;
-    .param p1    # Landroid/view/ContextMenu;
 
     iput-object p1, p0, Lcom/android/mms/spam/SetupSpamKeywordList;->mSpamKeywordListContextMenu:Landroid/view/ContextMenu;
 
@@ -366,7 +351,6 @@
 
 .method static synthetic access$1900(Lcom/android/mms/spam/SetupSpamKeywordList;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/android/mms/spam/SetupSpamKeywordList;
 
     iget-object v0, p0, Lcom/android/mms/spam/SetupSpamKeywordList;->mEmptySpamKeywordstring:Landroid/widget/TextView;
 
@@ -375,7 +359,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/spam/SetupSpamKeywordList;)Landroid/widget/ListView;
     .locals 1
-    .param p0    # Lcom/android/mms/spam/SetupSpamKeywordList;
 
     iget-object v0, p0, Lcom/android/mms/spam/SetupSpamKeywordList;->mListView:Landroid/widget/ListView;
 
@@ -384,7 +367,6 @@
 
 .method static synthetic access$2000(Lcom/android/mms/spam/SetupSpamKeywordList;)Landroid/widget/FrameLayout;
     .locals 1
-    .param p0    # Lcom/android/mms/spam/SetupSpamKeywordList;
 
     iget-object v0, p0, Lcom/android/mms/spam/SetupSpamKeywordList;->mEmptySpamKeywordLayout:Landroid/widget/FrameLayout;
 
@@ -393,7 +375,6 @@
 
 .method static synthetic access$2100(Lcom/android/mms/spam/SetupSpamKeywordList;)Landroid/view/View$OnCreateContextMenuListener;
     .locals 1
-    .param p0    # Lcom/android/mms/spam/SetupSpamKeywordList;
 
     iget-object v0, p0, Lcom/android/mms/spam/SetupSpamKeywordList;->mSpamKeywordListMenuCreateListener:Landroid/view/View$OnCreateContextMenuListener;
 
@@ -402,8 +383,6 @@
 
 .method static synthetic access$2200(Lcom/android/mms/spam/SetupSpamKeywordList;Lcom/android/mms/spam/SpamFilter$SpamFilterData;)V
     .locals 0
-    .param p0    # Lcom/android/mms/spam/SetupSpamKeywordList;
-    .param p1    # Lcom/android/mms/spam/SpamFilter$SpamFilterData;
 
     invoke-direct {p0, p1}, Lcom/android/mms/spam/SetupSpamKeywordList;->updateSpamKeyword(Lcom/android/mms/spam/SpamFilter$SpamFilterData;)V
 
@@ -412,7 +391,6 @@
 
 .method static synthetic access$2300(Lcom/android/mms/spam/SetupSpamKeywordList;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/mms/spam/SetupSpamKeywordList;
 
     iget-object v0, p0, Lcom/android/mms/spam/SetupSpamKeywordList;->mContext:Landroid/content/Context;
 
@@ -421,7 +399,6 @@
 
 .method static synthetic access$2400(Lcom/android/mms/spam/SetupSpamKeywordList;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/spam/SetupSpamKeywordList;
 
     iget-boolean v0, p0, Lcom/android/mms/spam/SetupSpamKeywordList;->mEnableCheckedView:Z
 
@@ -430,8 +407,6 @@
 
 .method static synthetic access$2402(Lcom/android/mms/spam/SetupSpamKeywordList;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/spam/SetupSpamKeywordList;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/spam/SetupSpamKeywordList;->mEnableCheckedView:Z
 
@@ -440,7 +415,6 @@
 
 .method static synthetic access$2500(Lcom/android/mms/spam/SetupSpamKeywordList;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/mms/spam/SetupSpamKeywordList;
 
     iget-object v0, p0, Lcom/android/mms/spam/SetupSpamKeywordList;->mCheckedMsgPositions:Ljava/util/ArrayList;
 
@@ -449,8 +423,6 @@
 
 .method static synthetic access$2502(Lcom/android/mms/spam/SetupSpamKeywordList;Ljava/util/ArrayList;)Ljava/util/ArrayList;
     .locals 0
-    .param p0    # Lcom/android/mms/spam/SetupSpamKeywordList;
-    .param p1    # Ljava/util/ArrayList;
 
     iput-object p1, p0, Lcom/android/mms/spam/SetupSpamKeywordList;->mCheckedMsgPositions:Ljava/util/ArrayList;
 
@@ -459,7 +431,6 @@
 
 .method static synthetic access$2600(Lcom/android/mms/spam/SetupSpamKeywordList;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/android/mms/spam/SetupSpamKeywordList;
 
     iget-object v0, p0, Lcom/android/mms/spam/SetupSpamKeywordList;->mActionbarTitle:Landroid/widget/TextView;
 
@@ -468,8 +439,6 @@
 
 .method static synthetic access$2602(Lcom/android/mms/spam/SetupSpamKeywordList;Landroid/widget/TextView;)Landroid/widget/TextView;
     .locals 0
-    .param p0    # Lcom/android/mms/spam/SetupSpamKeywordList;
-    .param p1    # Landroid/widget/TextView;
 
     iput-object p1, p0, Lcom/android/mms/spam/SetupSpamKeywordList;->mActionbarTitle:Landroid/widget/TextView;
 
@@ -478,7 +447,6 @@
 
 .method static synthetic access$2700(Lcom/android/mms/spam/SetupSpamKeywordList;)Landroid/widget/Button;
     .locals 1
-    .param p0    # Lcom/android/mms/spam/SetupSpamKeywordList;
 
     iget-object v0, p0, Lcom/android/mms/spam/SetupSpamKeywordList;->mSelectedButton:Landroid/widget/Button;
 
@@ -487,8 +455,6 @@
 
 .method static synthetic access$2702(Lcom/android/mms/spam/SetupSpamKeywordList;Landroid/widget/Button;)Landroid/widget/Button;
     .locals 0
-    .param p0    # Lcom/android/mms/spam/SetupSpamKeywordList;
-    .param p1    # Landroid/widget/Button;
 
     iput-object p1, p0, Lcom/android/mms/spam/SetupSpamKeywordList;->mSelectedButton:Landroid/widget/Button;
 
@@ -497,7 +463,6 @@
 
 .method static synthetic access$2800(Lcom/android/mms/spam/SetupSpamKeywordList;)Landroid/widget/LinearLayout;
     .locals 1
-    .param p0    # Lcom/android/mms/spam/SetupSpamKeywordList;
 
     iget-object v0, p0, Lcom/android/mms/spam/SetupSpamKeywordList;->mSelectAll:Landroid/widget/LinearLayout;
 
@@ -506,7 +471,6 @@
 
 .method static synthetic access$2900(Lcom/android/mms/spam/SetupSpamKeywordList;)Landroid/widget/LinearLayout;
     .locals 1
-    .param p0    # Lcom/android/mms/spam/SetupSpamKeywordList;
 
     iget-object v0, p0, Lcom/android/mms/spam/SetupSpamKeywordList;->mCreate:Landroid/widget/LinearLayout;
 
@@ -515,7 +479,6 @@
 
 .method static synthetic access$300(Lcom/android/mms/spam/SetupSpamKeywordList;)I
     .locals 1
-    .param p0    # Lcom/android/mms/spam/SetupSpamKeywordList;
 
     iget v0, p0, Lcom/android/mms/spam/SetupSpamKeywordList;->mSelectedItem:I
 
@@ -524,7 +487,6 @@
 
 .method static synthetic access$3000(Lcom/android/mms/spam/SetupSpamKeywordList;)Landroid/app/AlertDialog;
     .locals 1
-    .param p0    # Lcom/android/mms/spam/SetupSpamKeywordList;
 
     iget-object v0, p0, Lcom/android/mms/spam/SetupSpamKeywordList;->mDeleteModeDialog:Landroid/app/AlertDialog;
 
@@ -533,8 +495,6 @@
 
 .method static synthetic access$3002(Lcom/android/mms/spam/SetupSpamKeywordList;Landroid/app/AlertDialog;)Landroid/app/AlertDialog;
     .locals 0
-    .param p0    # Lcom/android/mms/spam/SetupSpamKeywordList;
-    .param p1    # Landroid/app/AlertDialog;
 
     iput-object p1, p0, Lcom/android/mms/spam/SetupSpamKeywordList;->mDeleteModeDialog:Landroid/app/AlertDialog;
 
@@ -543,8 +503,6 @@
 
 .method static synthetic access$302(Lcom/android/mms/spam/SetupSpamKeywordList;I)I
     .locals 0
-    .param p0    # Lcom/android/mms/spam/SetupSpamKeywordList;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/mms/spam/SetupSpamKeywordList;->mSelectedItem:I
 
@@ -553,7 +511,6 @@
 
 .method static synthetic access$3100(Lcom/android/mms/spam/SetupSpamKeywordList;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/spam/SetupSpamKeywordList;
 
     iget-boolean v0, p0, Lcom/android/mms/spam/SetupSpamKeywordList;->mUpdateChecked:Z
 
@@ -562,7 +519,6 @@
 
 .method static synthetic access$3200(Lcom/android/mms/spam/SetupSpamKeywordList;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/spam/SetupSpamKeywordList;
 
     iget-boolean v0, p0, Lcom/android/mms/spam/SetupSpamKeywordList;->mIsSelectAllmode:Z
 
@@ -571,8 +527,6 @@
 
 .method static synthetic access$3202(Lcom/android/mms/spam/SetupSpamKeywordList;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/spam/SetupSpamKeywordList;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/spam/SetupSpamKeywordList;->mIsSelectAllmode:Z
 
@@ -581,7 +535,6 @@
 
 .method static synthetic access$3300(Lcom/android/mms/spam/SetupSpamKeywordList;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/spam/SetupSpamKeywordList;
 
     iget-boolean v0, p0, Lcom/android/mms/spam/SetupSpamKeywordList;->mIsLastItemOfSelectAll:Z
 
@@ -590,8 +543,6 @@
 
 .method static synthetic access$3302(Lcom/android/mms/spam/SetupSpamKeywordList;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/spam/SetupSpamKeywordList;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/spam/SetupSpamKeywordList;->mIsLastItemOfSelectAll:Z
 
@@ -600,7 +551,6 @@
 
 .method static synthetic access$3400(Lcom/android/mms/spam/SetupSpamKeywordList;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/spam/SetupSpamKeywordList;
 
     iget-boolean v0, p0, Lcom/android/mms/spam/SetupSpamKeywordList;->mIsInEditMode:Z
 
@@ -609,8 +559,6 @@
 
 .method static synthetic access$3402(Lcom/android/mms/spam/SetupSpamKeywordList;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/spam/SetupSpamKeywordList;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/spam/SetupSpamKeywordList;->mIsInEditMode:Z
 
@@ -619,7 +567,6 @@
 
 .method static synthetic access$3500(Lcom/android/mms/spam/SetupSpamKeywordList;)I
     .locals 1
-    .param p0    # Lcom/android/mms/spam/SetupSpamKeywordList;
 
     iget v0, p0, Lcom/android/mms/spam/SetupSpamKeywordList;->CHECKBOX_FLOATING_DEFAULT_DURATION:I
 
@@ -628,7 +575,6 @@
 
 .method static synthetic access$3600(Lcom/android/mms/spam/SetupSpamKeywordList;)Landroid/view/animation/Interpolator;
     .locals 1
-    .param p0    # Lcom/android/mms/spam/SetupSpamKeywordList;
 
     iget-object v0, p0, Lcom/android/mms/spam/SetupSpamKeywordList;->SINE_IN_OUT_70:Landroid/view/animation/Interpolator;
 
@@ -637,7 +583,6 @@
 
 .method static synthetic access$400(Lcom/android/mms/spam/SetupSpamKeywordList;)Lcom/sec/android/touchwiz/widget/TwCheckBox;
     .locals 1
-    .param p0    # Lcom/android/mms/spam/SetupSpamKeywordList;
 
     iget-object v0, p0, Lcom/android/mms/spam/SetupSpamKeywordList;->selectAllCheck:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
@@ -646,7 +591,6 @@
 
 .method static synthetic access$500(Lcom/android/mms/spam/SetupSpamKeywordList;)I
     .locals 1
-    .param p0    # Lcom/android/mms/spam/SetupSpamKeywordList;
 
     iget v0, p0, Lcom/android/mms/spam/SetupSpamKeywordList;->mHeaderViewCount:I
 
@@ -655,7 +599,6 @@
 
 .method static synthetic access$600(Lcom/android/mms/spam/SetupSpamKeywordList;)V
     .locals 0
-    .param p0    # Lcom/android/mms/spam/SetupSpamKeywordList;
 
     invoke-direct {p0}, Lcom/android/mms/spam/SetupSpamKeywordList;->updateDeleteScreenItems()V
 
@@ -664,7 +607,6 @@
 
 .method static synthetic access$700(Lcom/android/mms/spam/SetupSpamKeywordList;)Lcom/sec/android/touchwiz/widget/TwCheckBox;
     .locals 1
-    .param p0    # Lcom/android/mms/spam/SetupSpamKeywordList;
 
     iget-object v0, p0, Lcom/android/mms/spam/SetupSpamKeywordList;->mSelectAllCheckBox:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
@@ -673,7 +615,6 @@
 
 .method static synthetic access$900(Lcom/android/mms/spam/SetupSpamKeywordList;)I
     .locals 1
-    .param p0    # Lcom/android/mms/spam/SetupSpamKeywordList;
 
     iget v0, p0, Lcom/android/mms/spam/SetupSpamKeywordList;->mListMultiMode:I
 
@@ -682,8 +623,6 @@
 
 .method static synthetic access$902(Lcom/android/mms/spam/SetupSpamKeywordList;I)I
     .locals 0
-    .param p0    # Lcom/android/mms/spam/SetupSpamKeywordList;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/mms/spam/SetupSpamKeywordList;->mListMultiMode:I
 
@@ -777,7 +716,6 @@
 
 .method private deleteSpamKeyword(I)V
     .locals 4
-    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -804,7 +742,6 @@
 
 .method private displayToast(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Lcom/android/mms/spam/SetupSpamKeywordList;->getBaseContext()Landroid/content/Context;
 
@@ -823,7 +760,6 @@
 
 .method private getSpam(I)Landroid/database/Cursor;
     .locals 6
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -1844,7 +1780,6 @@
 
 .method private updateSpamKeyword(Lcom/android/mms/spam/SpamFilter$SpamFilterData;)V
     .locals 5
-    .param p1    # Lcom/android/mms/spam/SpamFilter$SpamFilterData;
 
     const/4 v4, 0x0
 
@@ -1923,7 +1858,6 @@
 # virtual methods
 .method public autoreject_delete_cancel(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     const-string v0, "Cancel softkey clicked !!"
 
@@ -1934,7 +1868,6 @@
 
 .method public autoreject_delete_items(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     const-string v0, "Delete softkey clicked !!"
 
@@ -2011,9 +1944,6 @@
 
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const/4 v0, -0x1
 
@@ -2053,7 +1983,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 2
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -2103,7 +2032,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     const/16 v3, 0x8
 
@@ -2244,8 +2172,6 @@
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 8
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v5, 0x1
 
@@ -2386,7 +2312,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 5
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v4, 0x0
 
@@ -2550,7 +2475,6 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)Z
     .locals 10
-    .param p1    # Landroid/view/Menu;
 
     const v9, 0x7f0c007c
 
@@ -2787,7 +2711,6 @@
 
 .method protected onRestoreInstanceState(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onRestoreInstanceState(Landroid/os/Bundle;)V
 
@@ -2917,7 +2840,6 @@
 
 .method protected onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "blacklist_id"
 
@@ -3021,9 +2943,6 @@
 
 .method public showItemContextMenu(Landroid/view/ContextMenu;Landroid/view/View;I)V
     .locals 4
-    .param p1    # Landroid/view/ContextMenu;
-    .param p2    # Landroid/view/View;
-    .param p3    # I
 
     const/4 v3, 0x0
 
@@ -3070,7 +2989,6 @@
 
 .method public softkeyLeftRun(Landroid/view/View;)V
     .locals 9
-    .param p1    # Landroid/view/View;
 
     const/4 v6, 0x1
 
@@ -3190,7 +3108,6 @@
 
 .method public softkeyRightRun(Landroid/view/View;)V
     .locals 4
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Lcom/android/mms/spam/SetupSpamKeywordList;->mHandler:Landroid/os/Handler;
 

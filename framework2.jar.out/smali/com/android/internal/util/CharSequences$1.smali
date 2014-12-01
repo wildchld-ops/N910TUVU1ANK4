@@ -36,7 +36,6 @@
 # virtual methods
 .method public charAt(I)C
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/internal/util/CharSequences$1;->val$bytes:[B
 
@@ -59,8 +58,6 @@
 
 .method public subSequence(II)Ljava/lang/CharSequence;
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/internal/util/CharSequences$1;->val$bytes:[B
 

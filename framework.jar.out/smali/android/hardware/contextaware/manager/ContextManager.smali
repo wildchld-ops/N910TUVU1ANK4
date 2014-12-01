@@ -30,9 +30,6 @@
 # direct methods
 .method protected constructor <init>(Landroid/content/Context;Landroid/os/Looper;I)V
     .locals 8
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/Looper;
-    .param p3    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -165,7 +162,6 @@
 
 .method private initializeUtil(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     iget-object v2, p0, Landroid/hardware/contextaware/manager/ContextManager;->mUtilManager:Ljava/util/concurrent/CopyOnWriteArrayList;
 
@@ -198,9 +194,6 @@
 # virtual methods
 .method protected final getContextInfo(Landroid/hardware/contextaware/manager/ContextAwareService$Listener;Ljava/lang/String;Landroid/hardware/contextaware/manager/IContextObserver;)V
     .locals 3
-    .param p1    # Landroid/hardware/contextaware/manager/ContextAwareService$Listener;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/hardware/contextaware/manager/IContextObserver;
 
     invoke-virtual {p0, p2}, Landroid/hardware/contextaware/manager/ContextManager;->getContextProviderObj(Ljava/lang/String;)Landroid/hardware/contextaware/manager/ContextComponent;
 
@@ -240,7 +233,6 @@
 
 .method protected final getContextProviderObj(Ljava/lang/String;)Landroid/hardware/contextaware/manager/ContextComponent;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -298,7 +290,6 @@
 
 .method public final notifyInitContext(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Landroid/hardware/contextaware/manager/ContextManager;->getContextProviderObj(Ljava/lang/String;)Landroid/hardware/contextaware/manager/ContextComponent;
 
@@ -318,7 +309,6 @@
 
 .method protected removeContextProviderObj(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v2, p0, Landroid/hardware/contextaware/manager/ContextManager;->mCreator:Ljava/util/concurrent/CopyOnWriteArrayList;
 
@@ -355,7 +345,6 @@
 
 .method protected final reset(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Landroid/hardware/contextaware/manager/ContextManager;->getContextProviderObj(Ljava/lang/String;)Landroid/hardware/contextaware/manager/ContextComponent;
 
@@ -432,8 +421,6 @@
 
 .method protected final setProperty(Ljava/lang/String;ILjava/lang/Object;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -469,7 +456,6 @@
 
 .method protected final setVersion(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Landroid/hardware/contextaware/manager/ContextManager;->mCreator:Ljava/util/concurrent/CopyOnWriteArrayList;
 
@@ -500,10 +486,6 @@
 
 .method public final start(Landroid/hardware/contextaware/manager/ContextAwareService$Listener;Ljava/lang/String;Landroid/hardware/contextaware/manager/IContextObserver;I)V
     .locals 3
-    .param p1    # Landroid/hardware/contextaware/manager/ContextAwareService$Listener;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/hardware/contextaware/manager/IContextObserver;
-    .param p4    # I
 
     invoke-virtual {p0, p2}, Landroid/hardware/contextaware/manager/ContextManager;->getContextProviderObj(Ljava/lang/String;)Landroid/hardware/contextaware/manager/ContextComponent;
 
@@ -539,11 +521,6 @@
 
 .method public final stop(Landroid/hardware/contextaware/manager/ContextAwareService$Listener;Ljava/lang/String;Landroid/hardware/contextaware/manager/IContextObserver;Landroid/hardware/contextaware/manager/fault/ICmdProcessResultObserver;I)V
     .locals 4
-    .param p1    # Landroid/hardware/contextaware/manager/ContextAwareService$Listener;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/hardware/contextaware/manager/IContextObserver;
-    .param p4    # Landroid/hardware/contextaware/manager/fault/ICmdProcessResultObserver;
-    .param p5    # I
 
     invoke-virtual {p0, p2}, Landroid/hardware/contextaware/manager/ContextManager;->getContextProviderObj(Ljava/lang/String;)Landroid/hardware/contextaware/manager/ContextComponent;
 
@@ -633,8 +610,6 @@
 
 .method protected final unregisterObservers(Ljava/lang/String;Landroid/hardware/contextaware/manager/IContextObserver;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/hardware/contextaware/manager/IContextObserver;
 
     invoke-virtual {p0, p1}, Landroid/hardware/contextaware/manager/ContextManager;->getContextProviderObj(Ljava/lang/String;)Landroid/hardware/contextaware/manager/ContextComponent;
 

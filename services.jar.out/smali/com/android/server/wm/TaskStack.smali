@@ -51,9 +51,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/wm/WindowManagerService;ILcom/android/server/wm/DisplayContent;)V
     .locals 1
-    .param p1    # Lcom/android/server/wm/WindowManagerService;
-    .param p2    # I
-    .param p3    # Lcom/android/server/wm/DisplayContent;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -90,10 +87,6 @@
 
 .method constructor <init>(Lcom/android/server/wm/WindowManagerService;ILcom/android/server/wm/DisplayContent;Z)V
     .locals 2
-    .param p1    # Lcom/android/server/wm/WindowManagerService;
-    .param p2    # I
-    .param p3    # Lcom/android/server/wm/DisplayContent;
-    .param p4    # Z
 
     const/4 v1, 0x0
 
@@ -152,7 +145,6 @@
 
 .method private canApplyFixedBoundFlag(Lcom/android/server/wm/WindowState;)Z
     .locals 1
-    .param p1    # Lcom/android/server/wm/WindowState;
 
     iget-object v0, p1, Lcom/android/server/wm/WindowState;->mAttrs:Landroid/view/WindowManager$LayoutParams;
 
@@ -181,7 +173,6 @@
 
 .method private getDimBehindFadeDuration(J)J
     .locals 4
-    .param p1    # J
 
     new-instance v0, Landroid/util/TypedValue;
 
@@ -245,8 +236,6 @@
 # virtual methods
 .method addTask(Lcom/android/server/wm/Task;Z)Z
     .locals 1
-    .param p1    # Lcom/android/server/wm/Task;
-    .param p2    # Z
 
     const/4 v0, 0x0
 
@@ -259,9 +248,6 @@
 
 .method addTask(Lcom/android/server/wm/Task;ZZ)Z
     .locals 4
-    .param p1    # Lcom/android/server/wm/Task;
-    .param p2    # Z
-    .param p3    # Z
 
     iget-object v2, p0, Lcom/android/server/wm/TaskStack;->mStackBox:Lcom/android/server/wm/StackBox;
 
@@ -356,7 +342,6 @@
 
 .method adjustBoundForEasyOneHand(Landroid/graphics/Rect;)V
     .locals 4
-    .param p1    # Landroid/graphics/Rect;
 
     iget-object v1, p0, Lcom/android/server/wm/TaskStack;->mService:Lcom/android/server/wm/WindowManagerService;
 
@@ -1676,8 +1661,6 @@
 
 .method public dump(Ljava/lang/String;Ljava/io/PrintWriter;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/io/PrintWriter;
 
     invoke-virtual {p2, p1}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
@@ -1819,7 +1802,6 @@
 
 .method getMultiWindowStyle(Z)Lcom/samsung/android/multiwindow/MultiWindowStyle;
     .locals 3
-    .param p1    # Z
 
     const/4 v2, 0x0
 
@@ -2150,7 +2132,6 @@
 
 .method isDimming(Lcom/android/server/wm/WindowStateAnimator;)Z
     .locals 1
-    .param p1    # Lcom/android/server/wm/WindowStateAnimator;
 
     iget-object v0, p0, Lcom/android/server/wm/TaskStack;->mDimWinAnimator:Lcom/android/server/wm/WindowStateAnimator;
 
@@ -2384,7 +2365,6 @@
 
 .method public isOutOfBoundsIncludeChild(Landroid/graphics/Rect;)Z
     .locals 1
-    .param p1    # Landroid/graphics/Rect;
 
     const/4 v0, 0x0
 
@@ -2397,8 +2377,6 @@
 
 .method public isOutOfBoundsIncludeChild(Landroid/graphics/Rect;Z)Z
     .locals 14
-    .param p1    # Landroid/graphics/Rect;
-    .param p2    # Z
 
     iget-object v10, p0, Lcom/android/server/wm/TaskStack;->mTasks:Ljava/util/ArrayList;
 
@@ -2794,7 +2772,6 @@
 
 .method moveTaskToBottom(Lcom/android/server/wm/Task;)Z
     .locals 1
-    .param p1    # Lcom/android/server/wm/Task;
 
     iget-object v0, p0, Lcom/android/server/wm/TaskStack;->mTasks:Ljava/util/ArrayList;
 
@@ -2811,7 +2788,6 @@
 
 .method moveTaskToTop(Lcom/android/server/wm/Task;)Z
     .locals 1
-    .param p1    # Lcom/android/server/wm/Task;
 
     const/4 v0, 0x0
 
@@ -2824,8 +2800,6 @@
 
 .method moveTaskToTop(Lcom/android/server/wm/Task;Z)Z
     .locals 1
-    .param p1    # Lcom/android/server/wm/Task;
-    .param p2    # Z
 
     iget-object v0, p0, Lcom/android/server/wm/TaskStack;->mTasks:Ljava/util/ArrayList;
 
@@ -2984,7 +2958,6 @@
 
 .method needToChangeUnderStatusBarAllWindow(Z)Z
     .locals 7
-    .param p1    # Z
 
     iget-object v6, p0, Lcom/android/server/wm/TaskStack;->mTasks:Ljava/util/ArrayList;
 
@@ -3219,7 +3192,6 @@
 
 .method removeTask(Lcom/android/server/wm/Task;)V
     .locals 2
-    .param p1    # Lcom/android/server/wm/Task;
 
     iget-object v0, p0, Lcom/android/server/wm/TaskStack;->mDimWinAnimator:Lcom/android/server/wm/WindowStateAnimator;
 
@@ -3295,8 +3267,6 @@
 
 .method setAnimationBackground(Lcom/android/server/wm/WindowStateAnimator;I)V
     .locals 6
-    .param p1    # Lcom/android/server/wm/WindowStateAnimator;
-    .param p2    # I
 
     iget v0, p1, Lcom/android/server/wm/WindowStateAnimator;->mAnimLayer:I
 
@@ -3724,8 +3694,6 @@
 
 .method setBounds(Landroid/graphics/Rect;Z)V
     .locals 9
-    .param p1    # Landroid/graphics/Rect;
-    .param p2    # Z
 
     invoke-virtual {p0}, Lcom/android/server/wm/TaskStack;->isOutOfBounds()Z
 
@@ -3861,8 +3829,6 @@
 
 .method setDimLayerBoundsOffsetTo(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/server/wm/TaskStack;->mDimLayer:Lcom/android/server/wm/DimLayer;
 
@@ -3883,7 +3849,6 @@
 
 .method setWindowFlagFixedBound(Z)V
     .locals 13
-    .param p1    # Z
 
     const/4 v12, 0x0
 
@@ -4101,7 +4066,6 @@
 
 .method startDimmingIfNeeded(Lcom/android/server/wm/WindowStateAnimator;)V
     .locals 3
-    .param p1    # Lcom/android/server/wm/WindowStateAnimator;
 
     iget-object v0, p0, Lcom/android/server/wm/TaskStack;->mDimWinAnimator:Lcom/android/server/wm/WindowStateAnimator;
 
@@ -4181,7 +4145,6 @@
 
 .method switchUser(I)V
     .locals 4
-    .param p1    # I
 
     iget-object v3, p0, Lcom/android/server/wm/TaskStack;->mTasks:Ljava/util/ArrayList;
 

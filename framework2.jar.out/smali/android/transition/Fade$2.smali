@@ -53,7 +53,6 @@
 # virtual methods
 .method public onAnimationEnd(Landroid/animation/Animator;)V
     .locals 2
-    .param p1    # Landroid/animation/Animator;
 
     iget-object v0, p0, Landroid/transition/Fade$2;->val$finalView:Landroid/view/View;
 
@@ -92,7 +91,6 @@
 
 .method public onAnimationPause(Landroid/animation/Animator;)V
     .locals 2
-    .param p1    # Landroid/animation/Animator;
 
     iget-object v0, p0, Landroid/transition/Fade$2;->val$finalOverlayView:Landroid/view/View;
 
@@ -114,7 +112,6 @@
 
 .method public onAnimationResume(Landroid/animation/Animator;)V
     .locals 2
-    .param p1    # Landroid/animation/Animator;
 
     iget-object v0, p0, Landroid/transition/Fade$2;->val$finalOverlayView:Landroid/view/View;
 

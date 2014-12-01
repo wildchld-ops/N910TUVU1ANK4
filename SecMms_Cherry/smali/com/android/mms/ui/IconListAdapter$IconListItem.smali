@@ -29,8 +29,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;Landroid/graphics/drawable/Drawable;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/graphics/drawable/Drawable;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -47,9 +45,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Landroid/graphics/drawable/Drawable;I)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/graphics/drawable/Drawable;
-    .param p3    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/mms/ui/IconListAdapter$IconListItem;-><init>(Ljava/lang/String;Landroid/graphics/drawable/Drawable;)V
 

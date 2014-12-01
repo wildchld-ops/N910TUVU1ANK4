@@ -588,7 +588,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Landroid/webkitsec/WebViewClassic$PastePopupWindow;->this$0:Landroid/webkitsec/WebViewClassic;
 
@@ -644,10 +643,6 @@
 
 .method public show(Landroid/graphics/Point;Landroid/graphics/Point;II)V
     .locals 6
-    .param p1    # Landroid/graphics/Point;
-    .param p2    # Landroid/graphics/Point;
-    .param p3    # I
-    .param p4    # I
 
     invoke-virtual {p0}, Landroid/webkitsec/WebViewClassic$PastePopupWindow;->measureContent()V
 

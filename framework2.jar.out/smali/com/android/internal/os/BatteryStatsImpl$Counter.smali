@@ -70,7 +70,6 @@
 
 .method constructor <init>(Ljava/util/ArrayList;Landroid/os/Parcel;)V
     .locals 2
-    .param p2    # Landroid/os/Parcel;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -128,8 +127,6 @@
 
 .method public static writeCounterToParcel(Landroid/os/Parcel;Lcom/android/internal/os/BatteryStatsImpl$Counter;)V
     .locals 1
-    .param p0    # Landroid/os/Parcel;
-    .param p1    # Lcom/android/internal/os/BatteryStatsImpl$Counter;
 
     if-nez p1, :cond_0
 
@@ -164,7 +161,6 @@
 
 .method public getCountLocked(I)I
     .locals 2
-    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -205,8 +201,6 @@
 
 .method public logState(Landroid/util/Printer;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Landroid/util/Printer;
-    .param p2    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -291,9 +285,6 @@
 
 .method public plug(JJJ)V
     .locals 1
-    .param p1    # J
-    .param p3    # J
-    .param p5    # J
 
     iget-object v0, p0, Lcom/android/internal/os/BatteryStatsImpl$Counter;->mCount:Ljava/util/concurrent/atomic/AtomicInteger;
 
@@ -308,7 +299,6 @@
 
 .method readSummaryFromParcelLocked(Landroid/os/Parcel;)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
@@ -337,7 +327,6 @@
 
 .method reset(Z)V
     .locals 2
-    .param p1    # Z
 
     const/4 v1, 0x0
 
@@ -373,9 +362,6 @@
 
 .method public unplug(JJJ)V
     .locals 2
-    .param p1    # J
-    .param p3    # J
-    .param p5    # J
 
     iget v0, p0, Lcom/android/internal/os/BatteryStatsImpl$Counter;->mPluggedCount:I
 
@@ -392,7 +378,6 @@
 
 .method writeSummaryFromParcelLocked(Landroid/os/Parcel;)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
 
     iget-object v1, p0, Lcom/android/internal/os/BatteryStatsImpl$Counter;->mCount:Ljava/util/concurrent/atomic/AtomicInteger;
 
@@ -407,7 +392,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     iget-object v0, p0, Lcom/android/internal/os/BatteryStatsImpl$Counter;->mCount:Ljava/util/concurrent/atomic/AtomicInteger;
 

@@ -41,7 +41,6 @@
 
 .method static synthetic access$000(Lcom/android/incallui/service/DisplayBitratePopupService;)Lcom/android/incallui/vt/VideoCallManager;
     .locals 1
-    .param p0    # Lcom/android/incallui/service/DisplayBitratePopupService;
 
     invoke-direct {p0}, Lcom/android/incallui/service/DisplayBitratePopupService;->getVideoCallManager()Lcom/android/incallui/vt/VideoCallManager;
 
@@ -52,7 +51,6 @@
 
 .method private getCallToShow(Lcom/android/incallui/CallList;)Lcom/android/services/telephony/common/Call;
     .locals 1
-    .param p1    # Lcom/android/incallui/CallList;
 
     if-nez p1, :cond_1
 
@@ -104,8 +102,6 @@
 
 .method private shouldDismiss(Lcom/android/incallui/InCallPresenter$InCallState;Lcom/android/incallui/CallList;)Z
     .locals 2
-    .param p1    # Lcom/android/incallui/InCallPresenter$InCallState;
-    .param p2    # Lcom/android/incallui/CallList;
 
     const/4 v0, 0x1
 
@@ -149,7 +145,6 @@
 
 .method protected initCustomLayout(Landroid/view/ViewGroup;)V
     .locals 3
-    .param p1    # Landroid/view/ViewGroup;
 
     const-string v1, "DisplayBitratePopupService"
 
@@ -285,8 +280,6 @@
 
 .method public onStateChange(Lcom/android/incallui/InCallPresenter$InCallState;Lcom/android/incallui/CallList;)V
     .locals 3
-    .param p1    # Lcom/android/incallui/InCallPresenter$InCallState;
-    .param p2    # Lcom/android/incallui/CallList;
 
     const-string v0, "DisplayBitratePopupService"
 

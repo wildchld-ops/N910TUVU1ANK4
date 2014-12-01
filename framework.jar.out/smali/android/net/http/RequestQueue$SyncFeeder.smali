@@ -46,7 +46,6 @@
 
 .method public getRequest(Lorg/apache/http/HttpHost;)Landroid/net/http/Request;
     .locals 1
-    .param p1    # Lorg/apache/http/HttpHost;
 
     invoke-virtual {p0}, Landroid/net/http/RequestQueue$SyncFeeder;->getRequest()Landroid/net/http/Request;
 
@@ -57,7 +56,6 @@
 
 .method public haveRequest(Lorg/apache/http/HttpHost;)Z
     .locals 1
-    .param p1    # Lorg/apache/http/HttpHost;
 
     iget-object v0, p0, Landroid/net/http/RequestQueue$SyncFeeder;->mRequest:Landroid/net/http/Request;
 
@@ -76,7 +74,6 @@
 
 .method public requeueRequest(Landroid/net/http/Request;)V
     .locals 0
-    .param p1    # Landroid/net/http/Request;
 
     iput-object p1, p0, Landroid/net/http/RequestQueue$SyncFeeder;->mRequest:Landroid/net/http/Request;
 

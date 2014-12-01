@@ -104,8 +104,6 @@
 
 .method public filter(Ljava/util/Iterator;Ljava/lang/String;I)Ljava/util/Iterator;
     .locals 1
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -131,7 +129,6 @@
 
 .method public getArray(I)[Landroid/service/notification/StatusBarNotification;
     .locals 5
-    .param p1    # I
 
     if-nez p1, :cond_0
 
@@ -185,9 +182,6 @@
 
 .method public getArray(ILjava/lang/String;I)[Landroid/service/notification/StatusBarNotification;
     .locals 5
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     if-nez p1, :cond_0
 
@@ -245,7 +239,6 @@
 
 .method public record(Landroid/service/notification/StatusBarNotification;)V
     .locals 2
-    .param p1    # Landroid/service/notification/StatusBarNotification;
 
     iget-object v0, p0, Lcom/android/server/NotificationManagerService$Archive;->mBuffer:Ljava/util/ArrayDeque;
 

@@ -192,7 +192,6 @@
 
 .method public static SDebugPrintError(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "GSystem"
 
@@ -203,7 +202,6 @@
 
 .method public static SDebugPrintInfo(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "GSystem"
 
@@ -214,8 +212,6 @@
 
 .method public static SMakeARGB(IB)I
     .locals 3
-    .param p0    # I
-    .param p1    # B
 
     if-gez p0, :cond_0
 
@@ -251,7 +247,6 @@
 
 .method public static SSleep(I)V
     .locals 3
-    .param p0    # I
 
     int-to-long v0, p0
 

@@ -54,10 +54,6 @@
 
 .method public constructor <init>(Lcom/android/settings/inputmethod/SpellCheckersSettings;Landroid/content/Intent;Landroid/view/textservice/SpellCheckerInfo;Landroid/view/textservice/TextServicesManager;)V
     .locals 4
-    .param p1    # Lcom/android/settings/inputmethod/SpellCheckersSettings;
-    .param p2    # Landroid/content/Intent;
-    .param p3    # Landroid/view/textservice/SpellCheckerInfo;
-    .param p4    # Landroid/view/textservice/TextServicesManager;
 
     const/4 v3, 0x0
 
@@ -134,8 +130,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/inputmethod/SingleSpellCheckerPreference;Landroid/view/View;)V
     .locals 0
-    .param p0    # Lcom/android/settings/inputmethod/SingleSpellCheckerPreference;
-    .param p1    # Landroid/view/View;
 
     invoke-direct {p0, p1}, Lcom/android/settings/inputmethod/SingleSpellCheckerPreference;->onLeftButtonClicked(Landroid/view/View;)V
 
@@ -144,8 +138,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/inputmethod/SingleSpellCheckerPreference;Landroid/view/View;)V
     .locals 0
-    .param p0    # Lcom/android/settings/inputmethod/SingleSpellCheckerPreference;
-    .param p1    # Landroid/view/View;
 
     invoke-direct {p0, p1}, Lcom/android/settings/inputmethod/SingleSpellCheckerPreference;->onSubtypeButtonClicked(Landroid/view/View;)V
 
@@ -154,8 +146,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/inputmethod/SingleSpellCheckerPreference;Landroid/view/View;)V
     .locals 0
-    .param p0    # Lcom/android/settings/inputmethod/SingleSpellCheckerPreference;
-    .param p1    # Landroid/view/View;
 
     invoke-direct {p0, p1}, Lcom/android/settings/inputmethod/SingleSpellCheckerPreference;->onSettingsButtonClicked(Landroid/view/View;)V
 
@@ -164,7 +154,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/inputmethod/SingleSpellCheckerPreference;)Landroid/view/textservice/TextServicesManager;
     .locals 1
-    .param p0    # Lcom/android/settings/inputmethod/SingleSpellCheckerPreference;
 
     iget-object v0, p0, Lcom/android/settings/inputmethod/SingleSpellCheckerPreference;->mTsm:Landroid/view/textservice/TextServicesManager;
 
@@ -173,7 +162,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/inputmethod/SingleSpellCheckerPreference;)Landroid/view/textservice/SpellCheckerInfo;
     .locals 1
-    .param p0    # Lcom/android/settings/inputmethod/SingleSpellCheckerPreference;
 
     iget-object v0, p0, Lcom/android/settings/inputmethod/SingleSpellCheckerPreference;->mSpellCheckerInfo:Landroid/view/textservice/SpellCheckerInfo;
 
@@ -182,7 +170,6 @@
 
 .method private enableButtons(Z)V
     .locals 3
-    .param p1    # Z
 
     const/16 v2, 0x8
 
@@ -267,7 +254,6 @@
 
 .method private onLeftButtonClicked(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Lcom/android/settings/inputmethod/SingleSpellCheckerPreference;->mFragment:Lcom/android/settings/inputmethod/SpellCheckersSettings;
 
@@ -278,7 +264,6 @@
 
 .method private onSettingsButtonClicked(Landroid/view/View;)V
     .locals 9
-    .param p1    # Landroid/view/View;
 
     const/4 v8, 0x1
 
@@ -353,7 +338,6 @@
 
 .method private onSubtypeButtonClicked(Landroid/view/View;)V
     .locals 12
-    .param p1    # Landroid/view/View;
 
     const/4 v11, 0x0
 
@@ -508,7 +492,6 @@
 
 .method private updateSelectedState(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/settings/inputmethod/SingleSpellCheckerPreference;->mPrefAll:Landroid/view/View;
 
@@ -536,7 +519,6 @@
 
 .method protected onBindView(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     invoke-super {p0, p1}, Landroid/preference/Preference;->onBindView(Landroid/view/View;)V
 
@@ -637,7 +619,6 @@
 
 .method public setSelected(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/inputmethod/SingleSpellCheckerPreference;->mSelected:Z
 

@@ -28,9 +28,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -71,7 +68,6 @@
 
 .method public getHeight(I)I
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x2
 
@@ -90,7 +86,6 @@
 
 .method public getWidth(I)I
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x2
 

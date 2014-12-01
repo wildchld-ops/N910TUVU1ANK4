@@ -33,8 +33,6 @@
 
 .method synthetic constructor <init>(Landroid/widget/RemoteViews;Landroid/widget/RemoteViews$1;)V
     .locals 0
-    .param p1    # Landroid/widget/RemoteViews;
-    .param p2    # Landroid/widget/RemoteViews$1;
 
     invoke-direct {p0, p1}, Landroid/widget/RemoteViews$MemoryUsageCounter;-><init>(Landroid/widget/RemoteViews;)V
 
@@ -45,7 +43,6 @@
 # virtual methods
 .method public addBitmapMemory(Landroid/graphics/Bitmap;)V
     .locals 4
-    .param p1    # Landroid/graphics/Bitmap;
 
     invoke-virtual {p1}, Landroid/graphics/Bitmap;->getConfig()Landroid/graphics/Bitmap$Config;
 
@@ -127,7 +124,6 @@
 
 .method public increment(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/widget/RemoteViews$MemoryUsageCounter;->mMemoryUsage:I
 

@@ -114,7 +114,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Landroid/app/Dialog;->show()V
+    invoke-virtual {v1}, Landroid/app/AlertDialog;->show()V
 
     return-void
 .end method
@@ -326,7 +326,7 @@
 
     iget-object v0, p0, Lcom/android/phone/AssistedDialingActivity;->mReferenceText:Landroid/preference/PreferenceScreen;
 
-    invoke-virtual {v0, v8}, Landroid/preference/Preference;->setSummary(Ljava/lang/CharSequence;)V
+    invoke-virtual {v0, v8}, Landroid/preference/PreferenceScreen;->setSummary(Ljava/lang/CharSequence;)V
 
     :cond_2
     iget-object v0, p0, Lcom/android/phone/AssistedDialingActivity;->mAreaCode:Landroid/preference/EditTextPreference;
@@ -337,9 +337,9 @@
 
     iget-object v0, p0, Lcom/android/phone/AssistedDialingActivity;->mAreaCode:Landroid/preference/EditTextPreference;
 
-    invoke-virtual {v0, v7}, Landroid/preference/Preference;->setSummary(Ljava/lang/CharSequence;)V
+    invoke-virtual {v0, v7}, Landroid/preference/EditTextPreference;->setSummary(Ljava/lang/CharSequence;)V
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/AssistedDialingActivity;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -357,9 +357,9 @@
 
     iget-object v0, p0, Lcom/android/phone/AssistedDialingActivity;->mIDD:Landroid/preference/EditTextPreference;
 
-    invoke-virtual {v0, v10}, Landroid/preference/Preference;->setSummary(Ljava/lang/CharSequence;)V
+    invoke-virtual {v0, v10}, Landroid/preference/EditTextPreference;->setSummary(Ljava/lang/CharSequence;)V
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/AssistedDialingActivity;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -377,9 +377,9 @@
 
     iget-object v0, p0, Lcom/android/phone/AssistedDialingActivity;->mNDD:Landroid/preference/EditTextPreference;
 
-    invoke-virtual {v0, v13}, Landroid/preference/Preference;->setSummary(Ljava/lang/CharSequence;)V
+    invoke-virtual {v0, v13}, Landroid/preference/EditTextPreference;->setSummary(Ljava/lang/CharSequence;)V
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/AssistedDialingActivity;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -397,9 +397,9 @@
 
     iget-object v0, p0, Lcom/android/phone/AssistedDialingActivity;->mCountryCode:Landroid/preference/EditTextPreference;
 
-    invoke-virtual {v0, v9}, Landroid/preference/Preference;->setSummary(Ljava/lang/CharSequence;)V
+    invoke-virtual {v0, v9}, Landroid/preference/EditTextPreference;->setSummary(Ljava/lang/CharSequence;)V
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/AssistedDialingActivity;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -417,9 +417,9 @@
 
     iget-object v0, p0, Lcom/android/phone/AssistedDialingActivity;->mNationalNumberLength:Landroid/preference/EditTextPreference;
 
-    invoke-virtual {v0, v12}, Landroid/preference/Preference;->setSummary(Ljava/lang/CharSequence;)V
+    invoke-virtual {v0, v12}, Landroid/preference/EditTextPreference;->setSummary(Ljava/lang/CharSequence;)V
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/AssistedDialingActivity;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -453,7 +453,7 @@
     goto/16 :goto_1
 
     :cond_b
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/AssistedDialingActivity;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -467,7 +467,7 @@
 
     const v1, 0x7f0906c2
 
-    invoke-virtual {v0, v1}, Landroid/preference/Preference;->setSummary(I)V
+    invoke-virtual {v0, v1}, Landroid/preference/EditTextPreference;->setSummary(I)V
 
     goto :goto_2
 
@@ -476,7 +476,7 @@
 
     const v1, 0x7f0906c0
 
-    invoke-virtual {v0, v1}, Landroid/preference/Preference;->setSummary(I)V
+    invoke-virtual {v0, v1}, Landroid/preference/EditTextPreference;->setSummary(I)V
 
     goto :goto_3
 
@@ -485,7 +485,7 @@
 
     const v1, 0x7f0906c1
 
-    invoke-virtual {v0, v1}, Landroid/preference/Preference;->setSummary(I)V
+    invoke-virtual {v0, v1}, Landroid/preference/EditTextPreference;->setSummary(I)V
 
     goto :goto_4
 
@@ -494,12 +494,12 @@
 
     const v1, 0x7f0906bf
 
-    invoke-virtual {v0, v1}, Landroid/preference/Preference;->setSummary(I)V
+    invoke-virtual {v0, v1}, Landroid/preference/EditTextPreference;->setSummary(I)V
 
     goto :goto_5
 
     :cond_f
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/AssistedDialingActivity;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -513,7 +513,7 @@
 
     const v1, 0x7f0906c3
 
-    invoke-virtual {v0, v1}, Landroid/preference/Preference;->setSummary(I)V
+    invoke-virtual {v0, v1}, Landroid/preference/EditTextPreference;->setSummary(I)V
 
     goto :goto_6
 
@@ -625,7 +625,7 @@
 
     const v4, 0x7f040009
 
-    invoke-virtual {p0, v4}, Landroid/preference/PreferenceActivity;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v4}, Lcom/android/phone/AssistedDialingActivity;->addPreferencesFromResource(I)V
 
     const-string v4, "AssistedDialingActivity"
 
@@ -633,13 +633,13 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/AssistedDialingActivity;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v4
 
     iput-object v4, p0, Lcom/android/phone/AssistedDialingActivity;->mContext:Landroid/content/Context;
 
-    invoke-virtual {p0}, Landroid/preference/PreferenceActivity;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/phone/AssistedDialingActivity;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v3
 
@@ -651,7 +651,7 @@
 
     iput-object v4, p0, Lcom/android/phone/AssistedDialingActivity;->actionBarSwitch:Landroid/widget/Switch;
 
-    invoke-virtual {v1}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {v1}, Landroid/app/Activity;->getResources()Landroid/content/res/Resources;
 
     move-result-object v4
 
@@ -663,7 +663,7 @@
 
     iget-object v4, p0, Lcom/android/phone/AssistedDialingActivity;->actionBarSwitch:Landroid/widget/Switch;
 
-    invoke-virtual {v4, v6, v6, v2, v6}, Landroid/widget/TextView;->setPadding(IIII)V
+    invoke-virtual {v4, v6, v6, v2, v6}, Landroid/widget/Switch;->setPadding(IIII)V
 
     invoke-virtual {v1}, Landroid/app/Activity;->getActionBar()Landroid/app/ActionBar;
 
@@ -697,7 +697,7 @@
 
     const-string v4, "button_current_country_key"
 
-    invoke-virtual {v3, v4}, Landroid/preference/PreferenceGroup;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {v3, v4}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v4
 
@@ -707,7 +707,7 @@
 
     const-string v4, "Area_city_code"
 
-    invoke-virtual {v3, v4}, Landroid/preference/PreferenceGroup;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {v3, v4}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v4
 
@@ -717,7 +717,7 @@
 
     const-string v4, "IDD_prefix"
 
-    invoke-virtual {v3, v4}, Landroid/preference/PreferenceGroup;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {v3, v4}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v4
 
@@ -727,7 +727,7 @@
 
     const-string v4, "NDD_prefix"
 
-    invoke-virtual {v3, v4}, Landroid/preference/PreferenceGroup;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {v3, v4}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v4
 
@@ -737,7 +737,7 @@
 
     const-string v4, "country_code"
 
-    invoke-virtual {v3, v4}, Landroid/preference/PreferenceGroup;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {v3, v4}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v4
 
@@ -747,7 +747,7 @@
 
     const-string v4, "National_number_length"
 
-    invoke-virtual {v3, v4}, Landroid/preference/PreferenceGroup;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {v3, v4}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v4
 
@@ -757,25 +757,25 @@
 
     iget-object v4, p0, Lcom/android/phone/AssistedDialingActivity;->mAreaCode:Landroid/preference/EditTextPreference;
 
-    invoke-virtual {v4, p0}, Landroid/preference/Preference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
+    invoke-virtual {v4, p0}, Landroid/preference/EditTextPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     iget-object v4, p0, Lcom/android/phone/AssistedDialingActivity;->mIDD:Landroid/preference/EditTextPreference;
 
-    invoke-virtual {v4, p0}, Landroid/preference/Preference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
+    invoke-virtual {v4, p0}, Landroid/preference/EditTextPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     iget-object v4, p0, Lcom/android/phone/AssistedDialingActivity;->mNDD:Landroid/preference/EditTextPreference;
 
-    invoke-virtual {v4, p0}, Landroid/preference/Preference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
+    invoke-virtual {v4, p0}, Landroid/preference/EditTextPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     iget-object v4, p0, Lcom/android/phone/AssistedDialingActivity;->mCountryCode:Landroid/preference/EditTextPreference;
 
-    invoke-virtual {v4, p0}, Landroid/preference/Preference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
+    invoke-virtual {v4, p0}, Landroid/preference/EditTextPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     iget-object v4, p0, Lcom/android/phone/AssistedDialingActivity;->mNationalNumberLength:Landroid/preference/EditTextPreference;
 
-    invoke-virtual {v4, p0}, Landroid/preference/Preference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
+    invoke-virtual {v4, p0}, Landroid/preference/EditTextPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getActionBar()Landroid/app/ActionBar;
+    invoke-virtual {p0}, Lcom/android/phone/AssistedDialingActivity;->getActionBar()Landroid/app/ActionBar;
 
     move-result-object v0
 
@@ -793,9 +793,9 @@
     .locals 2
     .param p1    # Landroid/view/Menu;
 
-    invoke-super {p0, p1}, Landroid/app/Activity;->onCreateOptionsMenu(Landroid/view/Menu;)Z
+    invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onCreateOptionsMenu(Landroid/view/Menu;)Z
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getMenuInflater()Landroid/view/MenuInflater;
+    invoke-virtual {p0}, Lcom/android/phone/AssistedDialingActivity;->getMenuInflater()Landroid/view/MenuInflater;
 
     move-result-object v0
 
@@ -834,7 +834,7 @@
 
     sparse-switch v1, :sswitch_data_0
 
-    invoke-super {p0, p1}, Landroid/app/Activity;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
+    invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
 
     move-result v0
 
@@ -852,7 +852,7 @@
     goto :goto_0
 
     :sswitch_2
-    invoke-virtual {p0}, Landroid/app/Activity;->onBackPressed()V
+    invoke-virtual {p0}, Lcom/android/phone/AssistedDialingActivity;->onBackPressed()V
 
     goto :goto_0
 
@@ -869,7 +869,7 @@
 .method protected onPause()V
     .locals 2
 
-    invoke-super {p0}, Landroid/app/Activity;->onPause()V
+    invoke-super {p0}, Landroid/preference/PreferenceActivity;->onPause()V
 
     const-string v0, "AssistedDialingActivity"
 
@@ -916,7 +916,7 @@
 
     invoke-static {v3, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/AssistedDialingActivity;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v3
 
@@ -942,9 +942,9 @@
 
     iget-object v3, p0, Lcom/android/phone/AssistedDialingActivity;->mAreaCode:Landroid/preference/EditTextPreference;
 
-    invoke-virtual {v3, v2}, Landroid/preference/Preference;->setSummary(Ljava/lang/CharSequence;)V
+    invoke-virtual {v3, v2}, Landroid/preference/EditTextPreference;->setSummary(Ljava/lang/CharSequence;)V
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/AssistedDialingActivity;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v3
 
@@ -1001,9 +1001,9 @@
 
     iget-object v3, p0, Lcom/android/phone/AssistedDialingActivity;->mIDD:Landroid/preference/EditTextPreference;
 
-    invoke-virtual {v3, v2}, Landroid/preference/Preference;->setSummary(Ljava/lang/CharSequence;)V
+    invoke-virtual {v3, v2}, Landroid/preference/EditTextPreference;->setSummary(Ljava/lang/CharSequence;)V
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/AssistedDialingActivity;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v3
 
@@ -1056,9 +1056,9 @@
 
     iget-object v3, p0, Lcom/android/phone/AssistedDialingActivity;->mNDD:Landroid/preference/EditTextPreference;
 
-    invoke-virtual {v3, v2}, Landroid/preference/Preference;->setSummary(Ljava/lang/CharSequence;)V
+    invoke-virtual {v3, v2}, Landroid/preference/EditTextPreference;->setSummary(Ljava/lang/CharSequence;)V
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/AssistedDialingActivity;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v3
 
@@ -1111,9 +1111,9 @@
 
     iget-object v3, p0, Lcom/android/phone/AssistedDialingActivity;->mCountryCode:Landroid/preference/EditTextPreference;
 
-    invoke-virtual {v3, v2}, Landroid/preference/Preference;->setSummary(Ljava/lang/CharSequence;)V
+    invoke-virtual {v3, v2}, Landroid/preference/EditTextPreference;->setSummary(Ljava/lang/CharSequence;)V
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/AssistedDialingActivity;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v3
 
@@ -1166,9 +1166,9 @@
 
     iget-object v3, p0, Lcom/android/phone/AssistedDialingActivity;->mNationalNumberLength:Landroid/preference/EditTextPreference;
 
-    invoke-virtual {v3, v2}, Landroid/preference/Preference;->setSummary(Ljava/lang/CharSequence;)V
+    invoke-virtual {v3, v2}, Landroid/preference/EditTextPreference;->setSummary(Ljava/lang/CharSequence;)V
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/AssistedDialingActivity;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v3
 
@@ -1244,7 +1244,7 @@
 
     if-ne p2, v1, :cond_1
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/AssistedDialingActivity;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
@@ -1260,7 +1260,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {v1, v0}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
     iget-object v1, p0, Lcom/android/phone/AssistedDialingActivity;->mAreaCode:Landroid/preference/EditTextPreference;
 
@@ -1285,7 +1285,7 @@
 
     if-ne p2, v1, :cond_2
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/AssistedDialingActivity;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
@@ -1301,7 +1301,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {v1, v0}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
     iget-object v1, p0, Lcom/android/phone/AssistedDialingActivity;->mIDD:Landroid/preference/EditTextPreference;
 
@@ -1322,7 +1322,7 @@
 
     if-ne p2, v1, :cond_3
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/AssistedDialingActivity;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
@@ -1338,7 +1338,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {v1, v0}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
     iget-object v1, p0, Lcom/android/phone/AssistedDialingActivity;->mNDD:Landroid/preference/EditTextPreference;
 
@@ -1359,7 +1359,7 @@
 
     if-ne p2, v1, :cond_4
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/AssistedDialingActivity;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
@@ -1375,7 +1375,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {v1, v0}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
     iget-object v1, p0, Lcom/android/phone/AssistedDialingActivity;->mCountryCode:Landroid/preference/EditTextPreference;
 
@@ -1396,7 +1396,7 @@
 
     if-ne p2, v1, :cond_0
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/AssistedDialingActivity;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
@@ -1412,7 +1412,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {v1, v0}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
     iget-object v1, p0, Lcom/android/phone/AssistedDialingActivity;->mNationalNumberLength:Landroid/preference/EditTextPreference;
 
@@ -1445,7 +1445,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f02029b
+    const v2, 0x7f02029a
 
     invoke-interface {v1, v2}, Landroid/view/MenuItem;->setIcon(I)Landroid/view/MenuItem;
 
@@ -1459,11 +1459,11 @@
 
     move-result-object v0
 
-    const v2, 0x7f02029a
+    const v2, 0x7f020299
 
     invoke-interface {v0, v2}, Landroid/view/MenuItem;->setIcon(I)Landroid/view/MenuItem;
 
-    invoke-super {p0, p1}, Landroid/app/Activity;->onPrepareOptionsMenu(Landroid/view/Menu;)Z
+    invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onPrepareOptionsMenu(Landroid/view/Menu;)Z
 
     move-result v2
 
@@ -1473,7 +1473,7 @@
 .method protected onResume()V
     .locals 2
 
-    invoke-super {p0}, Landroid/app/Activity;->onResume()V
+    invoke-super {p0}, Landroid/preference/PreferenceActivity;->onResume()V
 
     const-string v0, "AssistedDialingActivity"
 

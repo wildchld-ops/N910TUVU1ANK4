@@ -26,7 +26,6 @@
 
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, -0x1
 
@@ -37,9 +36,6 @@
 
 .method public constructor <init>(Ljava/lang/String;II)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -54,7 +50,6 @@
 
 .method public constructor <init>([C)V
     .locals 2
-    .param p1    # [C
 
     const/4 v1, -0x1
 

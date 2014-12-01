@@ -162,7 +162,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment;)Ljava/lang/Runnable;
     .locals 1
-    .param p0    # Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment;
 
     iget-object v0, p0, Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment;->mClearPatternRunnable:Ljava/lang/Runnable;
 
@@ -171,7 +170,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment;)Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment$Stage;
     .locals 1
-    .param p0    # Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment;
 
     iget-object v0, p0, Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment;->mUiStage:Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment$Stage;
 
@@ -180,7 +178,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment;
 
     iget-object v0, p0, Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment;->mFooterLeftButton:Landroid/widget/TextView;
 
@@ -189,7 +186,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment;
 
     iget-object v0, p0, Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment;->mFooterRightButton:Landroid/widget/TextView;
 
@@ -577,8 +573,6 @@
 
 .method private scheduleNextPwdChange(II)V
     .locals 9
-    .param p1    # I
-    .param p2    # I
 
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
@@ -647,9 +641,6 @@
 # virtual methods
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     invoke-super {p0, p1, p2, p3}, Landroid/app/Fragment;->onActivityResult(IILandroid/content/Intent;)V
 
@@ -1341,7 +1332,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 6
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v5, 0x0
 
@@ -1503,9 +1493,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 9
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const/4 v8, 0x1
 
@@ -1735,7 +1722,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onSaveInstanceState(Landroid/os/Bundle;)V
 
@@ -1769,7 +1755,6 @@
 
 .method protected updateStage(Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment$Stage;)V
     .locals 9
-    .param p1    # Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment$Stage;
 
     const/4 v2, 0x1
 

@@ -43,7 +43,6 @@
 # direct methods
 .method public constructor <init>(Landroid/net/wifi/WifiWatchdogStateMachine;Ljava/lang/String;)V
     .locals 5
-    .param p2    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/net/wifi/WifiWatchdogStateMachine$BssidStatistics;->this$0:Landroid/net/wifi/WifiWatchdogStateMachine;
 
@@ -92,7 +91,6 @@
 
 .method static synthetic access$12100(Landroid/net/wifi/WifiWatchdogStateMachine$BssidStatistics;)J
     .locals 2
-    .param p0    # Landroid/net/wifi/WifiWatchdogStateMachine$BssidStatistics;
 
     iget-wide v0, p0, Landroid/net/wifi/WifiWatchdogStateMachine$BssidStatistics;->mLastTimeSample:J
 
@@ -101,8 +99,6 @@
 
 .method static synthetic access$12102(Landroid/net/wifi/WifiWatchdogStateMachine$BssidStatistics;J)J
     .locals 0
-    .param p0    # Landroid/net/wifi/WifiWatchdogStateMachine$BssidStatistics;
-    .param p1    # J
 
     iput-wide p1, p0, Landroid/net/wifi/WifiWatchdogStateMachine$BssidStatistics;->mLastTimeSample:J
 
@@ -111,7 +107,6 @@
 
 .method static synthetic access$20600(Landroid/net/wifi/WifiWatchdogStateMachine$BssidStatistics;)J
     .locals 2
-    .param p0    # Landroid/net/wifi/WifiWatchdogStateMachine$BssidStatistics;
 
     iget-wide v0, p0, Landroid/net/wifi/WifiWatchdogStateMachine$BssidStatistics;->mBssidAvoidTimeMax:J
 
@@ -120,8 +115,6 @@
 
 .method static synthetic access$20602(Landroid/net/wifi/WifiWatchdogStateMachine$BssidStatistics;J)J
     .locals 0
-    .param p0    # Landroid/net/wifi/WifiWatchdogStateMachine$BssidStatistics;
-    .param p1    # J
 
     iput-wide p1, p0, Landroid/net/wifi/WifiWatchdogStateMachine$BssidStatistics;->mBssidAvoidTimeMax:J
 
@@ -130,7 +123,6 @@
 
 .method static synthetic access$20900(Landroid/net/wifi/WifiWatchdogStateMachine$BssidStatistics;)I
     .locals 1
-    .param p0    # Landroid/net/wifi/WifiWatchdogStateMachine$BssidStatistics;
 
     iget v0, p0, Landroid/net/wifi/WifiWatchdogStateMachine$BssidStatistics;->mGoodLinkTargetRssi:I
 
@@ -139,7 +131,6 @@
 
 .method static synthetic access$21000(Landroid/net/wifi/WifiWatchdogStateMachine$BssidStatistics;)I
     .locals 1
-    .param p0    # Landroid/net/wifi/WifiWatchdogStateMachine$BssidStatistics;
 
     iget v0, p0, Landroid/net/wifi/WifiWatchdogStateMachine$BssidStatistics;->mGoodLinkTargetCount:I
 
@@ -148,8 +139,6 @@
 
 .method static synthetic access$26502(Landroid/net/wifi/WifiWatchdogStateMachine$BssidStatistics;J)J
     .locals 0
-    .param p0    # Landroid/net/wifi/WifiWatchdogStateMachine$BssidStatistics;
-    .param p1    # J
 
     iput-wide p1, p0, Landroid/net/wifi/WifiWatchdogStateMachine$BssidStatistics;->mLastTimeGood:J
 
@@ -158,8 +147,6 @@
 
 .method static synthetic access$26602(Landroid/net/wifi/WifiWatchdogStateMachine$BssidStatistics;J)J
     .locals 0
-    .param p0    # Landroid/net/wifi/WifiWatchdogStateMachine$BssidStatistics;
-    .param p1    # J
 
     iput-wide p1, p0, Landroid/net/wifi/WifiWatchdogStateMachine$BssidStatistics;->mLastTimePoor:J
 
@@ -168,7 +155,6 @@
 
 .method static synthetic access$4700(Landroid/net/wifi/WifiWatchdogStateMachine$BssidStatistics;)Ljava/lang/String;
     .locals 1
-    .param p0    # Landroid/net/wifi/WifiWatchdogStateMachine$BssidStatistics;
 
     iget-object v0, p0, Landroid/net/wifi/WifiWatchdogStateMachine$BssidStatistics;->mBssid:Ljava/lang/String;
 
@@ -179,9 +165,6 @@
 # virtual methods
 .method public findRssiTarget(IID)I
     .locals 13
-    .param p1    # I
-    .param p2    # I
-    .param p3    # D
 
     iget v7, p0, Landroid/net/wifi/WifiWatchdogStateMachine$BssidStatistics;->mRssiBase:I
 
@@ -614,7 +597,6 @@
 
 .method public poorLinkDetected(I)Z
     .locals 14
-    .param p1    # I
 
     # getter for: Landroid/net/wifi/WifiWatchdogStateMachine;->DBG:Z
     invoke-static {}, Landroid/net/wifi/WifiWatchdogStateMachine;->access$600()Z
@@ -811,7 +793,6 @@
 
 .method public presetLoss(I)D
     .locals 10
-    .param p1    # I
 
     const/16 v9, 0x5a
 
@@ -889,9 +870,6 @@
 
 .method public updateLoss(IDI)V
     .locals 8
-    .param p1    # I
-    .param p2    # D
-    .param p4    # I
 
     if-gtz p4, :cond_1
 

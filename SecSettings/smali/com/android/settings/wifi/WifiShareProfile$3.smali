@@ -36,7 +36,6 @@
 # virtual methods
 .method public onPeersAvailable(Landroid/net/wifi/p2p/WifiP2pDeviceList;)V
     .locals 2
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pDeviceList;
 
     iget-object v0, p0, Lcom/android/settings/wifi/WifiShareProfile$3;->this$0:Lcom/android/settings/wifi/WifiShareProfile;
 

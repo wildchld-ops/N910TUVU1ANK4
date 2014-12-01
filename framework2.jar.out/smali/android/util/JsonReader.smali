@@ -64,7 +64,6 @@
 # direct methods
 .method public constructor <init>(Ljava/io/Reader;)V
     .locals 3
-    .param p1    # Ljava/io/Reader;
 
     const/4 v2, 0x1
 
@@ -562,9 +561,6 @@
 
 .method private decodeNumber([CII)Landroid/util/JsonToken;
     .locals 6
-    .param p1    # [C
-    .param p2    # I
-    .param p3    # I
 
     const/16 v5, 0x2d
 
@@ -704,7 +700,6 @@
 
 .method private expect(Landroid/util/JsonToken;)V
     .locals 3
-    .param p1    # Landroid/util/JsonToken;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -763,7 +758,6 @@
 
 .method private fillBuffer(I)Z
     .locals 9
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1030,7 +1024,6 @@
 
 .method private nextInArray(Z)Landroid/util/JsonToken;
     .locals 1
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1141,7 +1134,6 @@
 
 .method private nextInObject(Z)Landroid/util/JsonToken;
     .locals 2
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1281,7 +1273,6 @@
 
 .method private nextLiteral(Z)Ljava/lang/String;
     .locals 6
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1622,7 +1613,6 @@
 
 .method private nextString(C)Ljava/lang/String;
     .locals 6
-    .param p1    # C
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1966,7 +1956,6 @@
 
 .method private push(Landroid/util/JsonScope;)V
     .locals 1
-    .param p1    # Landroid/util/JsonScope;
 
     iget-object v0, p0, Landroid/util/JsonReader;->stack:Ljava/util/List;
 
@@ -2162,7 +2151,6 @@
 
 .method private replaceTop(Landroid/util/JsonScope;)V
     .locals 2
-    .param p1    # Landroid/util/JsonScope;
 
     iget-object v0, p0, Landroid/util/JsonReader;->stack:Ljava/util/List;
 
@@ -2181,7 +2169,6 @@
 
 .method private skipTo(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -2308,7 +2295,6 @@
 
 .method private syntaxError(Ljava/lang/String;)Ljava/io/IOException;
     .locals 3
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -3141,7 +3127,6 @@
 
 .method public setLenient(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/util/JsonReader;->lenient:Z
 

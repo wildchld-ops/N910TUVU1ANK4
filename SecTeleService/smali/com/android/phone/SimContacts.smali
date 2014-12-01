@@ -395,7 +395,7 @@
 
     const/16 v18, 0x0
 
-    invoke-virtual {v3}, Ljava/lang/Throwable;->toString()Ljava/lang/String;
+    invoke-virtual {v3}, Landroid/os/RemoteException;->toString()Ljava/lang/String;
 
     move-result-object v19
 
@@ -403,7 +403,7 @@
 
     const/16 v18, 0x1
 
-    invoke-virtual {v3}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+    invoke-virtual {v3}, Landroid/os/RemoteException;->getMessage()Ljava/lang/String;
 
     move-result-object v19
 
@@ -434,7 +434,7 @@
 
     const/16 v18, 0x0
 
-    invoke-virtual {v3}, Ljava/lang/Throwable;->toString()Ljava/lang/String;
+    invoke-virtual {v3}, Landroid/content/OperationApplicationException;->toString()Ljava/lang/String;
 
     move-result-object v19
 
@@ -442,7 +442,7 @@
 
     const/16 v18, 0x1
 
-    invoke-virtual {v3}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+    invoke-virtual {v3}, Landroid/content/OperationApplicationException;->getMessage()Ljava/lang/String;
 
     move-result-object v19
 
@@ -461,11 +461,11 @@
     .locals 4
     .param p1    # I
 
-    invoke-virtual {p0}, Lcom/android/phone/ADNList;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/SimContacts;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/phone/ADNList;->mCursor:Landroid/database/Cursor;
+    iget-object v1, p0, Lcom/android/phone/SimContacts;->mCursor:Landroid/database/Cursor;
 
     invoke-interface {v1, p1}, Landroid/database/Cursor;->moveToPosition(I)Z
 
@@ -473,13 +473,13 @@
 
     if-eqz v1, :cond_0
 
-    iget-object v1, p0, Lcom/android/phone/ADNList;->mCursor:Landroid/database/Cursor;
+    iget-object v1, p0, Lcom/android/phone/SimContacts;->mCursor:Landroid/database/Cursor;
 
     iget-object v2, p0, Lcom/android/phone/SimContacts;->mAccount:Landroid/accounts/Account;
 
     invoke-static {v1, v0, v2}, Lcom/android/phone/SimContacts;->actuallyImportOneSimContact(Landroid/database/Cursor;Landroid/content/ContentResolver;Landroid/accounts/Account;)V
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/SimContacts;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -539,13 +539,13 @@
 
     new-instance v0, Landroid/widget/SimpleCursorAdapter;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/SimContacts;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
     const v2, 0x7f04009b
 
-    iget-object v3, p0, Lcom/android/phone/ADNList;->mCursor:Landroid/database/Cursor;
+    iget-object v3, p0, Lcom/android/phone/SimContacts;->mCursor:Landroid/database/Cursor;
 
     new-array v4, v6, [Ljava/lang/String;
 
@@ -570,11 +570,11 @@
 
     invoke-super {p0, p1}, Lcom/android/phone/ADNList;->onActivityCreated(Landroid/os/Bundle;)V
 
-    invoke-virtual {p0}, Landroid/app/ListFragment;->getListView()Landroid/widget/ListView;
+    invoke-virtual {p0}, Lcom/android/phone/SimContacts;->getListView()Landroid/widget/ListView;
 
     move-result-object v0
 
-    invoke-virtual {p0, v0}, Landroid/app/Fragment;->registerForContextMenu(Landroid/view/View;)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/SimContacts;->registerForContextMenu(Landroid/view/View;)V
 
     return-void
 .end method
@@ -590,7 +590,7 @@
     packed-switch v2, :pswitch_data_0
 
     :cond_0
-    invoke-super {p0, p1}, Landroid/app/Fragment;->onContextItemSelected(Landroid/view/MenuItem;)Z
+    invoke-super {p0, p1}, Lcom/android/phone/ADNList;->onContextItemSelected(Landroid/view/MenuItem;)Z
 
     move-result v2
 
@@ -630,7 +630,7 @@
 
     invoke-super {p0, p1}, Lcom/android/phone/ADNList;->onCreate(Landroid/os/Bundle;)V
 
-    invoke-virtual {p0}, Lcom/android/phone/ADNList;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/phone/SimContacts;->getIntent()Landroid/content/Intent;
 
     move-result-object v3
 
@@ -667,7 +667,7 @@
     iput-object v4, p0, Lcom/android/phone/SimContacts;->mAccount:Landroid/accounts/Account;
 
     :cond_0
-    invoke-virtual {p0}, Lcom/android/phone/ADNList;->getActionBar()Landroid/app/ActionBar;
+    invoke-virtual {p0}, Lcom/android/phone/SimContacts;->getActionBar()Landroid/app/ActionBar;
 
     move-result-object v2
 
@@ -733,7 +733,7 @@
 
     const/4 v2, 0x0
 
-    invoke-super {p0, p1, p2}, Landroid/app/Fragment;->onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
+    invoke-super {p0, p1, p2}, Lcom/android/phone/ADNList;->onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
 
     const/4 v0, 0x2
 
@@ -761,13 +761,13 @@
     return v2
 
     :pswitch_0
-    iget-object v3, p0, Lcom/android/phone/ADNList;->mCursor:Landroid/database/Cursor;
+    iget-object v3, p0, Lcom/android/phone/SimContacts;->mCursor:Landroid/database/Cursor;
 
     if-eqz v3, :cond_0
 
-    iget-object v3, p0, Lcom/android/phone/ADNList;->mCursor:Landroid/database/Cursor;
+    iget-object v3, p0, Lcom/android/phone/SimContacts;->mCursor:Landroid/database/Cursor;
 
-    invoke-virtual {p0}, Landroid/app/ListFragment;->getSelectedItemPosition()I
+    invoke-virtual {p0}, Lcom/android/phone/SimContacts;->getSelectedItemPosition()I
 
     move-result v4
 
@@ -777,7 +777,7 @@
 
     if-eqz v3, :cond_0
 
-    iget-object v3, p0, Lcom/android/phone/ADNList;->mCursor:Landroid/database/Cursor;
+    iget-object v3, p0, Lcom/android/phone/SimContacts;->mCursor:Landroid/database/Cursor;
 
     invoke-interface {v3, v2}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
 
@@ -809,9 +809,9 @@
 
     invoke-virtual {v0, v3}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
 
-    invoke-virtual {p0, v0}, Landroid/app/Fragment;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/SimContacts;->startActivity(Landroid/content/Intent;)V
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/SimContacts;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
 
@@ -850,7 +850,7 @@
     sparse-switch v6, :sswitch_data_0
 
     :goto_0
-    invoke-super {p0, p1}, Landroid/app/Fragment;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
+    invoke-super {p0, p1}, Lcom/android/phone/ADNList;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
 
     move-result v5
 
@@ -889,9 +889,9 @@
 
     invoke-virtual {v1, v6}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
-    invoke-virtual {p0, v1}, Landroid/app/Fragment;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v1}, Lcom/android/phone/SimContacts;->startActivity(Landroid/content/Intent;)V
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/SimContacts;->getActivity()Landroid/app/Activity;
 
     move-result-object v6
 
@@ -925,13 +925,13 @@
     :sswitch_1
     const v6, 0x7f0901d1
 
-    invoke-virtual {p0, v6}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v6}, Lcom/android/phone/SimContacts;->getString(I)Ljava/lang/String;
 
     move-result-object v4
 
     const v6, 0x7f0901d2
 
-    invoke-virtual {p0, v6}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v6}, Lcom/android/phone/SimContacts;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
@@ -939,7 +939,7 @@
 
     invoke-direct {v3, p0}, Lcom/android/phone/SimContacts$ImportAllSimContactsThread;-><init>(Lcom/android/phone/SimContacts;)V
 
-    iget-object v6, p0, Lcom/android/phone/ADNList;->mCursor:Landroid/database/Cursor;
+    iget-object v6, p0, Lcom/android/phone/SimContacts;->mCursor:Landroid/database/Cursor;
 
     if-nez v6, :cond_1
 
@@ -954,7 +954,7 @@
     :cond_1
     new-instance v6, Landroid/app/ProgressDialog;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/SimContacts;->getActivity()Landroid/app/Activity;
 
     move-result-object v7
 
@@ -964,7 +964,7 @@
 
     iget-object v6, p0, Lcom/android/phone/SimContacts;->mProgressDialog:Landroid/app/ProgressDialog;
 
-    invoke-virtual {v6, v4}, Landroid/app/AlertDialog;->setTitle(Ljava/lang/CharSequence;)V
+    invoke-virtual {v6, v4}, Landroid/app/ProgressDialog;->setTitle(Ljava/lang/CharSequence;)V
 
     iget-object v6, p0, Lcom/android/phone/SimContacts;->mProgressDialog:Landroid/app/ProgressDialog;
 
@@ -980,11 +980,11 @@
 
     const v8, 0x7f090028
 
-    invoke-virtual {p0, v8}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v8}, Lcom/android/phone/SimContacts;->getString(I)Ljava/lang/String;
 
     move-result-object v8
 
-    invoke-virtual {v6, v7, v8, v3}, Landroid/app/AlertDialog;->setButton(ILjava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)V
+    invoke-virtual {v6, v7, v8, v3}, Landroid/app/ProgressDialog;->setButton(ILjava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)V
 
     iget-object v6, p0, Lcom/android/phone/SimContacts;->mProgressDialog:Landroid/app/ProgressDialog;
 
@@ -994,7 +994,7 @@
 
     iget-object v6, p0, Lcom/android/phone/SimContacts;->mProgressDialog:Landroid/app/ProgressDialog;
 
-    iget-object v7, p0, Lcom/android/phone/ADNList;->mCursor:Landroid/database/Cursor;
+    iget-object v7, p0, Lcom/android/phone/SimContacts;->mCursor:Landroid/database/Cursor;
 
     invoke-interface {v7}, Landroid/database/Cursor;->getCount()I
 
@@ -1004,9 +1004,9 @@
 
     iget-object v6, p0, Lcom/android/phone/SimContacts;->mProgressDialog:Landroid/app/ProgressDialog;
 
-    invoke-virtual {v6}, Landroid/app/Dialog;->show()V
+    invoke-virtual {v6}, Landroid/app/ProgressDialog;->show()V
 
-    invoke-virtual {v3}, Ljava/lang/Thread;->start()V
+    invoke-virtual {v3}, Lcom/android/phone/SimContacts$ImportAllSimContactsThread;->start()V
 
     goto/16 :goto_1
 
@@ -1031,11 +1031,11 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v1, p0, Lcom/android/phone/ADNList;->mCursor:Landroid/database/Cursor;
+    iget-object v1, p0, Lcom/android/phone/SimContacts;->mCursor:Landroid/database/Cursor;
 
     if-eqz v1, :cond_1
 
-    iget-object v1, p0, Lcom/android/phone/ADNList;->mCursor:Landroid/database/Cursor;
+    iget-object v1, p0, Lcom/android/phone/SimContacts;->mCursor:Landroid/database/Cursor;
 
     invoke-interface {v1}, Landroid/database/Cursor;->getCount()I
 
@@ -1049,7 +1049,7 @@
     invoke-interface {v0, v1}, Landroid/view/MenuItem;->setVisible(Z)Landroid/view/MenuItem;
 
     :cond_0
-    invoke-super {p0, p1}, Landroid/app/Fragment;->onPrepareOptionsMenu(Landroid/view/Menu;)V
+    invoke-super {p0, p1}, Lcom/android/phone/ADNList;->onPrepareOptionsMenu(Landroid/view/Menu;)V
 
     return-void
 
@@ -1064,7 +1064,7 @@
 
     const/4 v5, 0x0
 
-    invoke-virtual {p0}, Lcom/android/phone/ADNList;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/phone/SimContacts;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
 
@@ -1167,7 +1167,7 @@
 
     add-int/lit8 v3, v3, -0x1
 
-    iput v3, p0, Lcom/android/phone/ADNList;->mInitialSelection:I
+    iput v3, p0, Lcom/android/phone/SimContacts;->mInitialSelection:I
 
     :cond_2
     invoke-virtual {v0}, Landroid/content/Intent;->getData()Landroid/net/Uri;

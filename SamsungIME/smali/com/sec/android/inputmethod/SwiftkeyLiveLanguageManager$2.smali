@@ -30,7 +30,6 @@
 # virtual methods
 .method public onComplete(Lcom/touchtype_fluency/util/RefreshListener$RefreshResult;)V
     .locals 2
-    .param p1    # Lcom/touchtype_fluency/util/RefreshListener$RefreshResult;
 
     sget-object v0, Lcom/touchtype_fluency/util/RefreshListener$RefreshResult;->SUCCESS:Lcom/touchtype_fluency/util/RefreshListener$RefreshResult;
 

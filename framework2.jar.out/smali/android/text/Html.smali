@@ -24,7 +24,6 @@
 
 .method public static escapeHtml(Ljava/lang/CharSequence;)Ljava/lang/String;
     .locals 3
-    .param p0    # Ljava/lang/CharSequence;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -47,7 +46,6 @@
 
 .method public static fromHtml(Ljava/lang/String;)Landroid/text/Spanned;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -60,9 +58,6 @@
 
 .method public static fromHtml(Ljava/lang/String;Landroid/text/Html$ImageGetter;Landroid/text/Html$TagHandler;)Landroid/text/Spanned;
     .locals 5
-    .param p0    # Ljava/lang/String;
-    .param p1    # Landroid/text/Html$ImageGetter;
-    .param p2    # Landroid/text/Html$TagHandler;
 
     new-instance v2, Lorg/ccil/cowan/tagsoup/Parser;
 
@@ -112,9 +107,6 @@
 
 .method private static getOpenParaTagWithDirection(Landroid/text/Spanned;II)Ljava/lang/String;
     .locals 6
-    .param p0    # Landroid/text/Spanned;
-    .param p1    # I
-    .param p2    # I
 
     const/4 v5, 0x0
 
@@ -158,7 +150,6 @@
 
 .method public static toHtml(Landroid/text/Spanned;)Ljava/lang/String;
     .locals 2
-    .param p0    # Landroid/text/Spanned;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -175,10 +166,6 @@
 
 .method private static withinBlockquote(Ljava/lang/StringBuilder;Landroid/text/Spanned;II)V
     .locals 8
-    .param p0    # Ljava/lang/StringBuilder;
-    .param p1    # Landroid/text/Spanned;
-    .param p2    # I
-    .param p3    # I
 
     const/16 v7, 0xa
 
@@ -252,10 +239,6 @@
 
 .method private static withinDiv(Ljava/lang/StringBuilder;Landroid/text/Spanned;II)V
     .locals 8
-    .param p0    # Ljava/lang/StringBuilder;
-    .param p1    # Landroid/text/Spanned;
-    .param p2    # I
-    .param p3    # I
 
     move v1, p2
 
@@ -328,8 +311,6 @@
 
 .method private static withinHtml(Ljava/lang/StringBuilder;Landroid/text/Spanned;)V
     .locals 10
-    .param p0    # Ljava/lang/StringBuilder;
-    .param p1    # Landroid/text/Spanned;
 
     invoke-interface {p1}, Landroid/text/Spanned;->length()I
 
@@ -496,12 +477,6 @@
 
 .method private static withinParagraph(Ljava/lang/StringBuilder;Landroid/text/Spanned;IIIZ)V
     .locals 9
-    .param p0    # Ljava/lang/StringBuilder;
-    .param p1    # Landroid/text/Spanned;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Z
 
     move v1, p2
 
@@ -1006,10 +981,6 @@
 
 .method private static withinStyle(Ljava/lang/StringBuilder;Ljava/lang/CharSequence;II)V
     .locals 10
-    .param p0    # Ljava/lang/StringBuilder;
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
 
     const v9, 0xdfff
 

@@ -61,7 +61,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/AirButtonHelp;)Landroid/app/Activity;
     .locals 1
-    .param p0    # Lcom/android/settings/AirButtonHelp;
 
     iget-object v0, p0, Lcom/android/settings/AirButtonHelp;->mActivity:Landroid/app/Activity;
 
@@ -70,7 +69,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/AirButtonHelp;)Landroid/widget/Switch;
     .locals 1
-    .param p0    # Lcom/android/settings/AirButtonHelp;
 
     iget-object v0, p0, Lcom/android/settings/AirButtonHelp;->mActionBarSwitch:Landroid/widget/Switch;
 
@@ -79,7 +77,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/AirButtonHelp;)V
     .locals 0
-    .param p0    # Lcom/android/settings/AirButtonHelp;
 
     invoke-direct {p0}, Lcom/android/settings/AirButtonHelp;->turnOnPenInfoPreview()V
 
@@ -560,8 +557,6 @@
 # virtual methods
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 8
-    .param p1    # Landroid/widget/CompoundButton;
-    .param p2    # Z
 
     const/4 v4, 0x1
 
@@ -795,7 +790,6 @@
 
 .method public onClickEnableSettingsButtonOK(I)V
     .locals 8
-    .param p1    # I
 
     const/4 v4, 0x1
 
@@ -935,7 +929,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 6
-    .param p1    # Landroid/os/Bundle;
 
     const/16 v4, 0x10
 
@@ -1060,8 +1053,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
     .locals 3
-    .param p1    # Landroid/view/Menu;
-    .param p2    # Landroid/view/MenuInflater;
 
     const/4 v2, 0x0
 
@@ -1099,9 +1090,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 12
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const/4 v7, 0x0
 
@@ -1406,7 +1394,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 

@@ -20,8 +20,6 @@
 # direct methods
 .method public constructor <init>(JJ)V
     .locals 1
-    .param p1    # J
-    .param p3    # J
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -40,7 +38,6 @@
 
 .method static synthetic access$000(Landroid/os/CountDownTimer;)J
     .locals 2
-    .param p0    # Landroid/os/CountDownTimer;
 
     iget-wide v0, p0, Landroid/os/CountDownTimer;->mStopTimeInFuture:J
 
@@ -49,7 +46,6 @@
 
 .method static synthetic access$100(Landroid/os/CountDownTimer;)J
     .locals 2
-    .param p0    # Landroid/os/CountDownTimer;
 
     iget-wide v0, p0, Landroid/os/CountDownTimer;->mCountdownInterval:J
 

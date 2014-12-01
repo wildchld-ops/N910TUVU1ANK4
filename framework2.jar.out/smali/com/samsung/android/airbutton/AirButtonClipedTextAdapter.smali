@@ -39,8 +39,6 @@
 # direct methods
 .method public constructor <init>(Landroid/view/View;Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/os/Bundle;
 
     invoke-direct {p0}, Lcom/samsung/android/sdk/look/airbutton/SlookAirButtonAdapter;-><init>()V
 
@@ -129,7 +127,6 @@
 
 .method private getType(Landroid/os/Bundle;)I
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     if-eqz p1, :cond_4
 
@@ -214,7 +211,6 @@
 
 .method private isSupport(I)Z
     .locals 2
-    .param p1    # I
 
     invoke-static {}, Lcom/samsung/android/sdk/look/SlookImpl;->getVersionCode()I
 
@@ -282,7 +278,6 @@
 
 .method public getItem(I)Lcom/samsung/android/sdk/look/airbutton/SlookAirButtonAdapter$AirButtonItem;
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lcom/samsung/android/airbutton/AirButtonClipedTextAdapter;->mClipedStrings:Ljava/util/ArrayList;
 
@@ -303,7 +298,6 @@
 
 .method public onDismiss(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     invoke-super {p0, p1}, Lcom/samsung/android/sdk/look/airbutton/SlookAirButtonAdapter;->onDismiss(Landroid/view/View;)V
 
@@ -312,7 +306,6 @@
 
 .method public onShow(Landroid/view/View;)V
     .locals 3
-    .param p1    # Landroid/view/View;
 
     invoke-super {p0, p1}, Lcom/samsung/android/sdk/look/airbutton/SlookAirButtonAdapter;->onShow(Landroid/view/View;)V
 

@@ -79,7 +79,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     const/4 v2, 0x0
 
@@ -170,7 +169,6 @@
 
 .method static synthetic access$300(Lcom/android/server/display/MagnifierDisplayPolicy;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/server/display/MagnifierDisplayPolicy;
 
     iget-object v0, p0, Lcom/android/server/display/MagnifierDisplayPolicy;->mContext:Landroid/content/Context;
 
@@ -179,7 +177,6 @@
 
 .method static synthetic access$400(Lcom/android/server/display/MagnifierDisplayPolicy;)Z
     .locals 1
-    .param p0    # Lcom/android/server/display/MagnifierDisplayPolicy;
 
     iget-boolean v0, p0, Lcom/android/server/display/MagnifierDisplayPolicy;->mIsHoverZoom:Z
 
@@ -188,8 +185,6 @@
 
 .method static synthetic access$402(Lcom/android/server/display/MagnifierDisplayPolicy;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/display/MagnifierDisplayPolicy;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/display/MagnifierDisplayPolicy;->mIsHoverZoom:Z
 
@@ -198,7 +193,6 @@
 
 .method static synthetic access$500(Lcom/android/server/display/MagnifierDisplayPolicy;)V
     .locals 0
-    .param p0    # Lcom/android/server/display/MagnifierDisplayPolicy;
 
     invoke-direct {p0}, Lcom/android/server/display/MagnifierDisplayPolicy;->setPointMargin()V
 
@@ -255,7 +249,6 @@
 
 .method private updateDisplayInfo(Landroid/view/DisplayInfo;)Z
     .locals 2
-    .param p1    # Landroid/view/DisplayInfo;
 
     if-eqz p1, :cond_0
 
@@ -325,7 +318,6 @@
 # virtual methods
 .method public addOnSizeChanageListener(Lcom/android/server/display/MagnifierDisplayPolicy$OnSizeChangeListener;)V
     .locals 1
-    .param p1    # Lcom/android/server/display/MagnifierDisplayPolicy$OnSizeChangeListener;
 
     iget-object v0, p0, Lcom/android/server/display/MagnifierDisplayPolicy;->mOnSizeChangeListener:Ljava/util/ArrayList;
 
@@ -436,7 +428,6 @@
 
 .method public dump(Ljava/io/PrintWriter;)V
     .locals 1
-    .param p1    # Ljava/io/PrintWriter;
 
     invoke-virtual {p0}, Lcom/android/server/display/MagnifierDisplayPolicy;->toString()Ljava/lang/String;
 
@@ -479,7 +470,6 @@
 
 .method public getDisplayInfo(Landroid/view/MagnificationSpec;)Lcom/android/server/display/MagnifierDisplayPolicy$DisplayInfo;
     .locals 20
-    .param p1    # Landroid/view/MagnificationSpec;
 
     move-object/from16 v0, p1
 
@@ -1171,8 +1161,6 @@
 
 .method public getPointSector(FF)I
     .locals 3
-    .param p1    # F
-    .param p2    # F
 
     const/high16 v2, 0x40000000
 
@@ -1220,7 +1208,6 @@
 
 .method public getPrecision(F)F
     .locals 3
-    .param p1    # F
 
     iget v1, p0, Lcom/android/server/display/MagnifierDisplayPolicy;->mBorderPadding:F
 
@@ -1281,7 +1268,6 @@
 
 .method public removeOnSizeChanageListener(Lcom/android/server/display/MagnifierDisplayPolicy$OnSizeChangeListener;)V
     .locals 1
-    .param p1    # Lcom/android/server/display/MagnifierDisplayPolicy$OnSizeChangeListener;
 
     iget-object v0, p0, Lcom/android/server/display/MagnifierDisplayPolicy;->mOnSizeChangeListener:Ljava/util/ArrayList;
 
@@ -1292,7 +1278,6 @@
 
 .method public setPadding(Landroid/graphics/Rect;)V
     .locals 2
-    .param p1    # Landroid/graphics/Rect;
 
     iget v0, p1, Landroid/graphics/Rect;->left:I
 
@@ -1410,9 +1395,6 @@
 
 .method public updateSettings(IIF)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # F
 
     iput p1, p0, Lcom/android/server/display/MagnifierDisplayPolicy;->mFixedWidth:I
 

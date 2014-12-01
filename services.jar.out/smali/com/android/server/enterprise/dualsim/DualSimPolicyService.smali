@@ -25,7 +25,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Landroid/app/enterprise/dualsim/IDualSimPolicy$Stub;-><init>()V
 
@@ -54,7 +53,6 @@
 
 .method private enforceDualSimPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/dualsim/DualSimPolicyService;->getEDM()Landroid/app/enterprise/EnterpriseDeviceManager;
 
@@ -71,7 +69,6 @@
 
 .method private enforceOwnerOnlyAndDualSimPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/dualsim/DualSimPolicyService;->getEDM()Landroid/app/enterprise/EnterpriseDeviceManager;
 
@@ -115,9 +112,6 @@
 # virtual methods
 .method public addPhoneToWhiteList(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -145,9 +139,6 @@
 
 .method public checkPrivilegedNumber(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;I)I
     .locals 16
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     const-string v13, "DualSimPolicyService"
 
@@ -552,8 +543,6 @@
 
 .method public clearWhiteList(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -581,9 +570,6 @@
 
 .method public forceDataSim(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Z)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     const/4 v3, 0x0
 
@@ -725,7 +711,6 @@
 
 .method public getActiveSimForCall(Landroid/app/enterprise/ContextInfo;)Ljava/lang/String;
     .locals 6
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v5, 0x1
 
@@ -806,7 +791,6 @@
 
 .method public getActiveSimForData(Landroid/app/enterprise/ContextInfo;)Ljava/lang/String;
     .locals 4
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v0, 0x0
 
@@ -840,7 +824,6 @@
 
 .method public getActiveSimForMessage(Landroid/app/enterprise/ContextInfo;)Ljava/lang/String;
     .locals 4
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v0, 0x0
 
@@ -872,7 +855,6 @@
 
 .method public getForcedDataSim(Landroid/app/enterprise/ContextInfo;)Ljava/lang/String;
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v0, 0x0
 
@@ -906,8 +888,6 @@
 
 .method public getIccId(Landroid/app/enterprise/ContextInfo;I)Ljava/lang/String;
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # I
 
     sget-object v0, Lcom/android/server/enterprise/dualsim/DualSimPolicyService;->mDualSimAdapter:Lcom/android/server/enterprise/adapterlayer/DualSimAdapter;
 
@@ -920,8 +900,6 @@
 
 .method public getWhiteListForSimcard(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Ljava/util/List;
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -963,7 +941,6 @@
 
 .method public isDataForced(Landroid/app/enterprise/ContextInfo;)Z
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v0, 0x0
 
@@ -991,7 +968,6 @@
 
 .method public isMdmDualSimAvailable(Landroid/app/enterprise/ContextInfo;)Z
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     sget-object v0, Lcom/android/server/enterprise/dualsim/DualSimPolicyService;->mDualSimAdapter:Lcom/android/server/enterprise/adapterlayer/DualSimAdapter;
 
@@ -1004,8 +980,6 @@
 
 .method public isSimCardCorporate(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lcom/android/server/enterprise/dualsim/DualSimPolicyService;->isMdmDualSimAvailable(Landroid/app/enterprise/ContextInfo;)Z
 
@@ -1042,7 +1016,6 @@
 
 .method public onAdminAdded(I)V
     .locals 2
-    .param p1    # I
 
     const-string v0, "DualSimPolicyService"
 
@@ -1055,7 +1028,6 @@
 
 .method public onAdminRemoved(I)V
     .locals 2
-    .param p1    # I
 
     const-string v0, "DualSimPolicyService"
 
@@ -1068,7 +1040,6 @@
 
 .method public onPreAdminRemoval(I)V
     .locals 2
-    .param p1    # I
 
     const-string v0, "DualSimPolicyService"
 
@@ -1081,9 +1052,6 @@
 
 .method public removePhoneFromWhiteList(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -1111,8 +1079,6 @@
 
 .method public setActiveSimForCall(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -1180,8 +1146,6 @@
 
 .method public setActiveSimForData(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -1277,8 +1241,6 @@
 
 .method public setActiveSimForMessage(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -1366,9 +1328,6 @@
 
 .method public setCorporateSimCard(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Z)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     const/4 v1, 0x0
 

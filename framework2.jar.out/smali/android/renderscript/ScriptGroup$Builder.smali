@@ -45,7 +45,6 @@
 # direct methods
 .method public constructor <init>(Landroid/renderscript/RenderScript;)V
     .locals 1
-    .param p1    # Landroid/renderscript/RenderScript;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -68,7 +67,6 @@
 
 .method private findNode(Landroid/renderscript/Script$KernelID;)Landroid/renderscript/ScriptGroup$Node;
     .locals 4
-    .param p1    # Landroid/renderscript/Script$KernelID;
 
     const/4 v0, 0x0
 
@@ -129,7 +127,6 @@
 
 .method private findNode(Landroid/renderscript/Script;)Landroid/renderscript/ScriptGroup$Node;
     .locals 2
-    .param p1    # Landroid/renderscript/Script;
 
     const/4 v0, 0x0
 
@@ -178,8 +175,6 @@
 
 .method private mergeDAGs(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -225,8 +220,6 @@
 
 .method private validateCycle(Landroid/renderscript/ScriptGroup$Node;Landroid/renderscript/ScriptGroup$Node;)V
     .locals 5
-    .param p1    # Landroid/renderscript/ScriptGroup$Node;
-    .param p2    # Landroid/renderscript/ScriptGroup$Node;
 
     const/4 v1, 0x0
 
@@ -436,8 +429,6 @@
 
 .method private validateDAGRecurse(Landroid/renderscript/ScriptGroup$Node;I)V
     .locals 4
-    .param p1    # Landroid/renderscript/ScriptGroup$Node;
-    .param p2    # I
 
     iget v3, p1, Landroid/renderscript/ScriptGroup$Node;->dagNumber:I
 
@@ -515,9 +506,6 @@
 # virtual methods
 .method public addConnection(Landroid/renderscript/Type;Landroid/renderscript/Script$KernelID;Landroid/renderscript/Script$FieldID;)Landroid/renderscript/ScriptGroup$Builder;
     .locals 5
-    .param p1    # Landroid/renderscript/Type;
-    .param p2    # Landroid/renderscript/Script$KernelID;
-    .param p3    # Landroid/renderscript/Script$FieldID;
 
     invoke-direct {p0, p2}, Landroid/renderscript/ScriptGroup$Builder;->findNode(Landroid/renderscript/Script$KernelID;)Landroid/renderscript/ScriptGroup$Node;
 
@@ -578,9 +566,6 @@
 
 .method public addConnection(Landroid/renderscript/Type;Landroid/renderscript/Script$KernelID;Landroid/renderscript/Script$KernelID;)Landroid/renderscript/ScriptGroup$Builder;
     .locals 5
-    .param p1    # Landroid/renderscript/Type;
-    .param p2    # Landroid/renderscript/Script$KernelID;
-    .param p3    # Landroid/renderscript/Script$KernelID;
 
     invoke-direct {p0, p2}, Landroid/renderscript/ScriptGroup$Builder;->findNode(Landroid/renderscript/Script$KernelID;)Landroid/renderscript/ScriptGroup$Node;
 
@@ -639,7 +624,6 @@
 
 .method public addKernel(Landroid/renderscript/Script$KernelID;)Landroid/renderscript/ScriptGroup$Builder;
     .locals 3
-    .param p1    # Landroid/renderscript/Script$KernelID;
 
     iget-object v1, p0, Landroid/renderscript/ScriptGroup$Builder;->mLines:Ljava/util/ArrayList;
 

@@ -105,10 +105,6 @@
 
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;FFI)V
     .locals 2
-    .param p1    # Lcom/sec/android/app/camera/Camera;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # I
 
     invoke-virtual {p1}, Lcom/sec/android/app/camera/Camera;->getGLContext()Lcom/sec/android/glview/TwGLContext;
 
@@ -151,7 +147,6 @@
 
 .method static synthetic access$000(Lcom/sec/android/app/camera/glwidget/TwGLItemThumbnailButton;)Lcom/sec/android/glview/TwGLView$OnClickListener;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLItemThumbnailButton;
 
     iget-object v0, p0, Lcom/sec/android/glview/TwGLView;->mOnClickListener:Lcom/sec/android/glview/TwGLView$OnClickListener;
 
@@ -160,7 +155,6 @@
 
 .method static synthetic access$100(Lcom/sec/android/app/camera/glwidget/TwGLItemThumbnailButton;)Lcom/sec/android/glview/TwGLView$OnClickListener;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLItemThumbnailButton;
 
     iget-object v0, p0, Lcom/sec/android/glview/TwGLView;->mOnClickListener:Lcom/sec/android/glview/TwGLView$OnClickListener;
 
@@ -169,7 +163,6 @@
 
 .method static synthetic access$1000(Lcom/sec/android/app/camera/glwidget/TwGLItemThumbnailButton;)Lcom/sec/android/glview/TwGLView$OnFocusListener;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLItemThumbnailButton;
 
     iget-object v0, p0, Lcom/sec/android/glview/TwGLView;->mOnFocusListener:Lcom/sec/android/glview/TwGLView$OnFocusListener;
 
@@ -178,7 +171,6 @@
 
 .method static synthetic access$1100(Lcom/sec/android/app/camera/glwidget/TwGLItemThumbnailButton;)Lcom/sec/android/glview/TwGLView$OnFocusListener;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLItemThumbnailButton;
 
     iget-object v0, p0, Lcom/sec/android/glview/TwGLView;->mOnFocusListener:Lcom/sec/android/glview/TwGLView$OnFocusListener;
 
@@ -187,7 +179,6 @@
 
 .method static synthetic access$1200(Lcom/sec/android/app/camera/glwidget/TwGLItemThumbnailButton;)Lcom/sec/android/glview/TwGLView$OnFocusListener;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLItemThumbnailButton;
 
     iget-object v0, p0, Lcom/sec/android/glview/TwGLView;->mOnFocusListener:Lcom/sec/android/glview/TwGLView$OnFocusListener;
 
@@ -196,7 +187,6 @@
 
 .method static synthetic access$200(Lcom/sec/android/app/camera/glwidget/TwGLItemThumbnailButton;)Lcom/sec/android/glview/TwGLSelectButton;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLItemThumbnailButton;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLItemThumbnailButton;->mButton:Lcom/sec/android/glview/TwGLSelectButton;
 
@@ -205,7 +195,6 @@
 
 .method static synthetic access$300(Lcom/sec/android/app/camera/glwidget/TwGLItemThumbnailButton;)Lcom/sec/android/glview/TwGLNinePatch;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLItemThumbnailButton;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLItemThumbnailButton;->mButtonHighlight:Lcom/sec/android/glview/TwGLNinePatch;
 
@@ -214,7 +203,6 @@
 
 .method static synthetic access$400(Lcom/sec/android/app/camera/glwidget/TwGLItemThumbnailButton;)Lcom/sec/android/glview/TwGLView$OnTouchListener;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLItemThumbnailButton;
 
     iget-object v0, p0, Lcom/sec/android/glview/TwGLView;->mOnTouchListener:Lcom/sec/android/glview/TwGLView$OnTouchListener;
 
@@ -223,7 +211,6 @@
 
 .method static synthetic access$500(Lcom/sec/android/app/camera/glwidget/TwGLItemThumbnailButton;)I
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLItemThumbnailButton;
 
     iget v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLItemThumbnailButton;->mCommandId:I
 
@@ -232,7 +219,6 @@
 
 .method static synthetic access$600(Lcom/sec/android/app/camera/glwidget/TwGLItemThumbnailButton;)Lcom/sec/android/app/camera/Camera;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLItemThumbnailButton;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLItemThumbnailButton;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -241,7 +227,6 @@
 
 .method static synthetic access$700(Lcom/sec/android/app/camera/glwidget/TwGLItemThumbnailButton;)Lcom/sec/android/app/camera/CameraSettings;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLItemThumbnailButton;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLItemThumbnailButton;->mCameraSettings:Lcom/sec/android/app/camera/CameraSettings;
 
@@ -250,7 +235,6 @@
 
 .method static synthetic access$800(Lcom/sec/android/app/camera/glwidget/TwGLItemThumbnailButton;)Lcom/sec/android/glview/TwGLView$OnTouchListener;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLItemThumbnailButton;
 
     iget-object v0, p0, Lcom/sec/android/glview/TwGLView;->mOnTouchListener:Lcom/sec/android/glview/TwGLView$OnTouchListener;
 
@@ -259,7 +243,6 @@
 
 .method static synthetic access$900(Lcom/sec/android/app/camera/glwidget/TwGLItemThumbnailButton;)Lcom/sec/android/glview/TwGLView$OnFocusListener;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLItemThumbnailButton;
 
     iget-object v0, p0, Lcom/sec/android/glview/TwGLView;->mOnFocusListener:Lcom/sec/android/glview/TwGLView$OnFocusListener;
 
@@ -574,8 +557,6 @@
 
 .method public onCameraSettingsChanged(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLItemThumbnailButton;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -649,7 +630,6 @@
 
 .method public setExtraDescription(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-super {p0, p1}, Lcom/sec/android/glview/TwGLView;->setExtraDescription(Z)V
 
@@ -667,7 +647,6 @@
 
 .method public setMargin(I)V
     .locals 4
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLItemThumbnailButton;->mButtonGroup:Lcom/sec/android/glview/TwGLViewGroup;
 
@@ -746,10 +725,6 @@
 
 .method public setMargin(IIII)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLItemThumbnailButton;->mButtonGroup:Lcom/sec/android/glview/TwGLViewGroup;
 
@@ -836,7 +811,6 @@
 
 .method public setMute(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLItemThumbnailButton;->mButton:Lcom/sec/android/glview/TwGLSelectButton;
 
@@ -852,7 +826,6 @@
 
 .method public setOnFocusListener(Lcom/sec/android/glview/TwGLView$OnFocusListener;)V
     .locals 2
-    .param p1    # Lcom/sec/android/glview/TwGLView$OnFocusListener;
 
     iput-object p1, p0, Lcom/sec/android/glview/TwGLView;->mOnFocusListener:Lcom/sec/android/glview/TwGLView$OnFocusListener;
 
@@ -881,7 +854,6 @@
 
 .method public setPaddings(I)V
     .locals 4
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLItemThumbnailButton;->mButton:Lcom/sec/android/glview/TwGLSelectButton;
 
@@ -962,10 +934,6 @@
 
 .method public setPaddings(IIII)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLItemThumbnailButton;->mButton:Lcom/sec/android/glview/TwGLSelectButton;
 
@@ -1054,8 +1022,6 @@
 
 .method public setResourceOffset(FF)Z
     .locals 1
-    .param p1    # F
-    .param p2    # F
 
     invoke-virtual {p0}, Lcom/sec/android/glview/TwGLView;->getWidth()F
 
@@ -1096,8 +1062,6 @@
 
 .method public declared-synchronized setSize(FF)V
     .locals 3
-    .param p1    # F
-    .param p2    # F
 
     monitor-enter p0
 
@@ -1166,7 +1130,6 @@
 
 .method public setSubTitle(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLItemThumbnailButton;->mButton:Lcom/sec/android/glview/TwGLSelectButton;
 
@@ -1182,7 +1145,6 @@
 
 .method public setTitle(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-super {p0, p1}, Lcom/sec/android/glview/TwGLView;->setTitle(Ljava/lang/String;)V
 

@@ -65,7 +65,6 @@
 
 .method synthetic constructor <init>(Landroid/provider/ContactsContract$1;)V
     .locals 0
-    .param p1    # Landroid/provider/ContactsContract$1;
 
     invoke-direct {p0}, Landroid/provider/ContactsContract$StatusUpdates;-><init>()V
 
@@ -74,7 +73,6 @@
 
 .method public static final getPresenceIconResourceId(I)I
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -117,7 +115,6 @@
 
 .method public static final getPresencePrecedence(I)I
     .locals 0
-    .param p0    # I
 
     return p0
 .end method

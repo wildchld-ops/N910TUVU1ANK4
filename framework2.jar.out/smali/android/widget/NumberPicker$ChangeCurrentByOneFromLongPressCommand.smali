@@ -38,8 +38,6 @@
 
 .method static synthetic access$600(Landroid/widget/NumberPicker$ChangeCurrentByOneFromLongPressCommand;Z)V
     .locals 0
-    .param p0    # Landroid/widget/NumberPicker$ChangeCurrentByOneFromLongPressCommand;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Landroid/widget/NumberPicker$ChangeCurrentByOneFromLongPressCommand;->setStep(Z)V
 
@@ -48,7 +46,6 @@
 
 .method private setStep(Z)V
     .locals 2
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/widget/NumberPicker$ChangeCurrentByOneFromLongPressCommand;->mIncrement:Z
 

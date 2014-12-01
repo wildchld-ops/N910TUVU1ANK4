@@ -32,7 +32,6 @@
 
 .method public static getCurrentSpellChecker(Landroid/view/textservice/TextServicesManager;)Landroid/view/textservice/SpellCheckerInfo;
     .locals 1
-    .param p0    # Landroid/view/textservice/TextServicesManager;
 
     invoke-virtual {p0}, Landroid/view/textservice/TextServicesManager;->getCurrentSpellChecker()Landroid/view/textservice/SpellCheckerInfo;
 
@@ -43,7 +42,6 @@
 
 .method public static getEnabledSpellCheckers(Landroid/view/textservice/TextServicesManager;)[Landroid/view/textservice/SpellCheckerInfo;
     .locals 1
-    .param p0    # Landroid/view/textservice/TextServicesManager;
 
     invoke-virtual {p0}, Landroid/view/textservice/TextServicesManager;->getEnabledSpellCheckers()[Landroid/view/textservice/SpellCheckerInfo;
 
@@ -54,8 +52,6 @@
 
 .method public static setCurrentSpellChecker(Landroid/view/textservice/TextServicesManager;Landroid/view/textservice/SpellCheckerInfo;)V
     .locals 0
-    .param p0    # Landroid/view/textservice/TextServicesManager;
-    .param p1    # Landroid/view/textservice/SpellCheckerInfo;
 
     return-void
 .end method

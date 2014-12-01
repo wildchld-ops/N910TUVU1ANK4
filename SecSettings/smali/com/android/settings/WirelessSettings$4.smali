@@ -21,7 +21,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/settings/WirelessSettings;Landroid/os/Handler;)V
     .locals 0
-    .param p2    # Landroid/os/Handler;
 
     iput-object p1, p0, Lcom/android/settings/WirelessSettings$4;->this$0:Lcom/android/settings/WirelessSettings;
 
@@ -34,7 +33,6 @@
 # virtual methods
 .method public onChange(Z)V
     .locals 4
-    .param p1    # Z
 
     const/4 v1, 0x0
 

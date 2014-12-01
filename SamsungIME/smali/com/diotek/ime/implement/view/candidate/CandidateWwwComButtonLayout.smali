@@ -18,7 +18,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Lcom/diotek/ime/framework/view/candidate/AbstractCandidateCustomButtonLayout;-><init>(Landroid/content/Context;)V
 
@@ -33,8 +32,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Lcom/diotek/ime/framework/view/candidate/AbstractCandidateCustomButtonLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -49,9 +46,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Lcom/diotek/ime/framework/view/candidate/AbstractCandidateCustomButtonLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
@@ -66,7 +60,6 @@
 
 .method static synthetic access$000(Lcom/diotek/ime/implement/view/candidate/CandidateWwwComButtonLayout;)Lcom/diotek/ime/framework/common/InputManager;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/view/candidate/CandidateWwwComButtonLayout;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/candidate/AbstractCandidateCustomButtonLayout;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -75,7 +68,6 @@
 
 .method static synthetic access$100(Lcom/diotek/ime/implement/view/candidate/CandidateWwwComButtonLayout;)Lcom/diotek/ime/framework/common/InputManager;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/view/candidate/CandidateWwwComButtonLayout;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/candidate/AbstractCandidateCustomButtonLayout;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -84,7 +76,6 @@
 
 .method static synthetic access$1000(Lcom/diotek/ime/implement/view/candidate/CandidateWwwComButtonLayout;)Lcom/diotek/ime/framework/inputmode/InputModeManager;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/view/candidate/CandidateWwwComButtonLayout;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/candidate/AbstractCandidateCustomButtonLayout;->mInputModeManager:Lcom/diotek/ime/framework/inputmode/InputModeManager;
 
@@ -93,7 +84,6 @@
 
 .method static synthetic access$1100(Lcom/diotek/ime/implement/view/candidate/CandidateWwwComButtonLayout;)Lcom/diotek/ime/framework/common/InputManager;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/view/candidate/CandidateWwwComButtonLayout;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/candidate/AbstractCandidateCustomButtonLayout;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -102,7 +92,6 @@
 
 .method static synthetic access$1200(Lcom/diotek/ime/implement/view/candidate/CandidateWwwComButtonLayout;)Lcom/diotek/ime/framework/common/InputManager;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/view/candidate/CandidateWwwComButtonLayout;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/candidate/AbstractCandidateCustomButtonLayout;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -111,7 +100,6 @@
 
 .method static synthetic access$1300(Lcom/diotek/ime/implement/view/candidate/CandidateWwwComButtonLayout;)Lcom/diotek/ime/framework/common/InputManager;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/view/candidate/CandidateWwwComButtonLayout;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/candidate/AbstractCandidateCustomButtonLayout;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -120,7 +108,6 @@
 
 .method static synthetic access$1400(Lcom/diotek/ime/implement/view/candidate/CandidateWwwComButtonLayout;)Lcom/diotek/ime/framework/common/InputManager;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/view/candidate/CandidateWwwComButtonLayout;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/candidate/AbstractCandidateCustomButtonLayout;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -129,8 +116,6 @@
 
 .method static synthetic access$1500(Lcom/diotek/ime/implement/view/candidate/CandidateWwwComButtonLayout;Landroid/view/View;)V
     .locals 0
-    .param p0    # Lcom/diotek/ime/implement/view/candidate/CandidateWwwComButtonLayout;
-    .param p1    # Landroid/view/View;
 
     invoke-direct {p0, p1}, Lcom/diotek/ime/implement/view/candidate/CandidateWwwComButtonLayout;->showPopupWindow(Landroid/view/View;)V
 
@@ -139,7 +124,6 @@
 
 .method static synthetic access$1600(Lcom/diotek/ime/implement/view/candidate/CandidateWwwComButtonLayout;)Lcom/diotek/ime/framework/common/InputManager;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/view/candidate/CandidateWwwComButtonLayout;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/candidate/AbstractCandidateCustomButtonLayout;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -148,7 +132,6 @@
 
 .method static synthetic access$1700(Lcom/diotek/ime/implement/view/candidate/CandidateWwwComButtonLayout;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/view/candidate/CandidateWwwComButtonLayout;
 
     iget-object v0, p0, Lcom/diotek/ime/implement/view/candidate/CandidateWwwComButtonLayout;->mLongpressHandler:Landroid/os/Handler;
 
@@ -157,7 +140,6 @@
 
 .method static synthetic access$1800(Lcom/diotek/ime/implement/view/candidate/CandidateWwwComButtonLayout;)Lcom/diotek/ime/framework/common/InputManager;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/view/candidate/CandidateWwwComButtonLayout;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/candidate/AbstractCandidateCustomButtonLayout;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -166,7 +148,6 @@
 
 .method static synthetic access$1900(Lcom/diotek/ime/implement/view/candidate/CandidateWwwComButtonLayout;)Lcom/diotek/ime/framework/common/InputManager;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/view/candidate/CandidateWwwComButtonLayout;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/candidate/AbstractCandidateCustomButtonLayout;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -175,7 +156,6 @@
 
 .method static synthetic access$200(Lcom/diotek/ime/implement/view/candidate/CandidateWwwComButtonLayout;)Lcom/diotek/ime/framework/common/InputManager;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/view/candidate/CandidateWwwComButtonLayout;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/candidate/AbstractCandidateCustomButtonLayout;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -184,7 +164,6 @@
 
 .method static synthetic access$2000(Lcom/diotek/ime/implement/view/candidate/CandidateWwwComButtonLayout;)Landroid/widget/Button;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/view/candidate/CandidateWwwComButtonLayout;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/candidate/AbstractCandidateCustomButtonLayout;->mSecondButton:Landroid/widget/Button;
 
@@ -193,7 +172,6 @@
 
 .method static synthetic access$2100(Lcom/diotek/ime/implement/view/candidate/CandidateWwwComButtonLayout;)Landroid/widget/Button;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/view/candidate/CandidateWwwComButtonLayout;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/candidate/AbstractCandidateCustomButtonLayout;->mSecondButton:Landroid/widget/Button;
 
@@ -202,7 +180,6 @@
 
 .method static synthetic access$300(Lcom/diotek/ime/implement/view/candidate/CandidateWwwComButtonLayout;)Lcom/diotek/ime/framework/common/InputManager;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/view/candidate/CandidateWwwComButtonLayout;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/candidate/AbstractCandidateCustomButtonLayout;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -211,7 +188,6 @@
 
 .method static synthetic access$400(Lcom/diotek/ime/implement/view/candidate/CandidateWwwComButtonLayout;)Lcom/diotek/ime/framework/common/InputManager;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/view/candidate/CandidateWwwComButtonLayout;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/candidate/AbstractCandidateCustomButtonLayout;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -220,7 +196,6 @@
 
 .method static synthetic access$500(Lcom/diotek/ime/implement/view/candidate/CandidateWwwComButtonLayout;)Lcom/diotek/ime/framework/common/InputManager;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/view/candidate/CandidateWwwComButtonLayout;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/candidate/AbstractCandidateCustomButtonLayout;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -229,7 +204,6 @@
 
 .method static synthetic access$600(Lcom/diotek/ime/implement/view/candidate/CandidateWwwComButtonLayout;)Lcom/diotek/ime/framework/common/InputManager;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/view/candidate/CandidateWwwComButtonLayout;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/candidate/AbstractCandidateCustomButtonLayout;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -238,7 +212,6 @@
 
 .method static synthetic access$700(Lcom/diotek/ime/implement/view/candidate/CandidateWwwComButtonLayout;)Lcom/diotek/ime/framework/common/InputManager;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/view/candidate/CandidateWwwComButtonLayout;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/candidate/AbstractCandidateCustomButtonLayout;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -247,7 +220,6 @@
 
 .method static synthetic access$800(Lcom/diotek/ime/implement/view/candidate/CandidateWwwComButtonLayout;)Lcom/diotek/ime/framework/common/InputManager;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/view/candidate/CandidateWwwComButtonLayout;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/candidate/AbstractCandidateCustomButtonLayout;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -256,7 +228,6 @@
 
 .method static synthetic access$900(Lcom/diotek/ime/implement/view/candidate/CandidateWwwComButtonLayout;)Lcom/diotek/ime/framework/common/InputManager;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/view/candidate/CandidateWwwComButtonLayout;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/candidate/AbstractCandidateCustomButtonLayout;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -265,7 +236,6 @@
 
 .method private showPopupWindow(Landroid/view/View;)V
     .locals 5
-    .param p1    # Landroid/view/View;
 
     const/4 v4, 0x0
 
@@ -368,7 +338,6 @@
 # virtual methods
 .method protected getButtonBackground(Landroid/view/View;)Landroid/graphics/drawable/Drawable;
     .locals 2
-    .param p1    # Landroid/view/View;
 
     iget-object v1, p0, Lcom/diotek/ime/framework/view/candidate/AbstractCandidateCustomButtonLayout;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -421,7 +390,6 @@
 
 .method protected setButtonListener(Landroid/view/View;)V
     .locals 3
-    .param p1    # Landroid/view/View;
 
     move-object v0, p1
 

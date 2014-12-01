@@ -37,7 +37,6 @@
 
 .method constructor <init>(Landroid/os/Parcel;)V
     .locals 4
-    .param p1    # Landroid/os/Parcel;
 
     const/16 v3, 0xa
 
@@ -78,7 +77,6 @@
 # virtual methods
 .method add(I)V
     .locals 5
-    .param p1    # I
 
     const/16 v4, 0x9
 
@@ -138,7 +136,6 @@
 
 .method writeToParcel(Landroid/os/Parcel;)V
     .locals 3
-    .param p1    # Landroid/os/Parcel;
 
     iget v2, p0, Lcom/android/server/am/UsageStatsService$TimeStats;->count:I
 

@@ -20,8 +20,6 @@
 
 .method public static d(Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "EmergencyMode"
 
@@ -60,8 +58,6 @@
 
 .method public static v(Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "EmergencyMode"
 

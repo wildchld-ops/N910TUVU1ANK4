@@ -77,7 +77,6 @@
 
 .method public constructor <init>(Landroid/webkitsec/WebViewClassic;)V
     .locals 1
-    .param p1    # Landroid/webkitsec/WebViewClassic;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -130,7 +129,6 @@
 
 .method static synthetic access$200(Landroid/webkitsec/AccessibilityInjector;)Landroid/webkitsec/WebView;
     .locals 1
-    .param p0    # Landroid/webkitsec/AccessibilityInjector;
 
     iget-object v0, p0, Landroid/webkitsec/AccessibilityInjector;->mWebView:Landroid/webkitsec/WebView;
 
@@ -139,7 +137,6 @@
 
 .method static synthetic access$300(Landroid/webkitsec/AccessibilityInjector;)V
     .locals 0
-    .param p0    # Landroid/webkitsec/AccessibilityInjector;
 
     invoke-direct {p0}, Landroid/webkitsec/AccessibilityInjector;->injectJavaScript()V
 
@@ -204,7 +201,6 @@
 
 .method private getAxsUrlParameterValue(Ljava/lang/String;)I
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, -0x1
 
@@ -558,8 +554,6 @@
 
 .method private sendActionToAndroidVox(ILandroid/os/Bundle;)Z
     .locals 10
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     const/4 v6, 0x0
 
@@ -705,7 +699,6 @@
 
 .method private shouldInjectJavaScript(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -739,7 +732,6 @@
 
 .method private toggleAndroidVox(Z)V
     .locals 5
-    .param p1    # Z
 
     iget-boolean v1, p0, Landroid/webkitsec/AccessibilityInjector;->mAccessibilityScriptInjected:Z
 
@@ -776,7 +768,6 @@
 
 .method private toggleFallbackAccessibilityInjector(Z)V
     .locals 2
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -805,7 +796,6 @@
 
 .method private verifyInjectionValue(Ljava/lang/String;)I
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     invoke-static {p1}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
@@ -903,7 +893,6 @@
 
 .method public handleKeyEventIfNecessary(Landroid/view/KeyEvent;)Z
     .locals 5
-    .param p1    # Landroid/view/KeyEvent;
 
     const/4 v1, 0x1
 
@@ -1054,7 +1043,6 @@
 
 .method public onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
     .locals 1
-    .param p1    # Landroid/view/accessibility/AccessibilityNodeInfo;
 
     const/16 v0, 0x1f
 
@@ -1089,7 +1077,6 @@
 
 .method public onPageFinished(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Landroid/webkitsec/AccessibilityInjector;->isAccessibilityEnabled()Z
 
@@ -1182,7 +1169,6 @@
 
 .method public onPageStarted(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -1234,8 +1220,6 @@
 
 .method public onSelectionStringChangedWebCoreThread(Ljava/lang/String;I)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     iget-object v0, p0, Landroid/webkitsec/AccessibilityInjector;->mAccessibilityInjectorFallback:Landroid/webkitsec/AccessibilityInjectorFallback;
 
@@ -1251,8 +1235,6 @@
 
 .method public performAccessibilityAction(ILandroid/os/Bundle;)Z
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     const/4 v0, 0x0
 
@@ -1297,7 +1279,6 @@
 
 .method public supportsAccessibilityAction(I)Z
     .locals 1
-    .param p1    # I
 
     sparse-switch p1, :sswitch_data_0
 
@@ -1325,7 +1306,6 @@
 
 .method public toggleAccessibilityFeedback(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-direct {p0}, Landroid/webkitsec/AccessibilityInjector;->isAccessibilityEnabled()Z
 
@@ -1361,7 +1341,6 @@
 
 .method public updateJavaScriptEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 

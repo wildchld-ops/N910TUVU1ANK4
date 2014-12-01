@@ -59,7 +59,7 @@
 
     iget-object v3, v3, Lcom/android/phone/callsettings/VideoCallBarring;->editText:Landroid/widget/EditText;
 
-    invoke-virtual {v3}, Landroid/view/View;->getWindowToken()Landroid/os/IBinder;
+    invoke-virtual {v3}, Landroid/widget/EditText;->getWindowToken()Landroid/os/IBinder;
 
     move-result-object v3
 
@@ -97,7 +97,7 @@
     move v1, v2
 
     :cond_0
-    invoke-virtual {v0, v1}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+    invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     iget-object v0, p0, Lcom/android/phone/callsettings/VideoCallBarring$7;->this$0:Lcom/android/phone/callsettings/VideoCallBarring;
 

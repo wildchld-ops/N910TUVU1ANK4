@@ -17,8 +17,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -27,7 +25,6 @@
 
 .method private static bounce(F)F
     .locals 2
-    .param p0    # F
 
     mul-float v0, p0, p0
 
@@ -42,7 +39,6 @@
 # virtual methods
 .method public getInterpolation(F)F
     .locals 2
-    .param p1    # F
 
     const v0, 0x3f8fb15b
 

@@ -56,8 +56,6 @@
 
 .method public static copyNativeBinariesIfNeededLI(Ljava/io/File;Ljava/io/File;)I
     .locals 6
-    .param p0    # Ljava/io/File;
-    .param p1    # Ljava/io/File;
 
     sget-object v1, Landroid/os/Build;->CPU_ABI:Ljava/lang/String;
 
@@ -129,7 +127,6 @@
 
 .method public static listNativeBinariesLI(Ljava/io/File;)I
     .locals 6
-    .param p0    # Ljava/io/File;
 
     const/4 v4, 0x1
 
@@ -192,7 +189,6 @@
 
 .method public static removeNativeBinariesFromDirLI(Ljava/io/File;)Z
     .locals 6
-    .param p0    # Ljava/io/File;
 
     const/4 v1, 0x0
 
@@ -267,7 +263,6 @@
 
 .method public static removeNativeBinariesLI(Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     new-instance v0, Ljava/io/File;
 
@@ -282,7 +277,6 @@
 
 .method public static sumNativeBinariesLI(Ljava/io/File;)J
     .locals 7
-    .param p0    # Ljava/io/File;
 
     sget-object v1, Landroid/os/Build;->CPU_ABI:Ljava/lang/String;
 

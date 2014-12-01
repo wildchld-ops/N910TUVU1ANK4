@@ -40,8 +40,6 @@
 
 .method synthetic constructor <init>(Landroid/opengl/GLSurfaceView;Landroid/opengl/GLSurfaceView$1;)V
     .locals 0
-    .param p1    # Landroid/opengl/GLSurfaceView;
-    .param p2    # Landroid/opengl/GLSurfaceView$1;
 
     invoke-direct {p0, p1}, Landroid/opengl/GLSurfaceView$DefaultContextFactory;-><init>(Landroid/opengl/GLSurfaceView;)V
 
@@ -52,9 +50,6 @@
 # virtual methods
 .method public createContext(Ljavax/microedition/khronos/egl/EGL10;Ljavax/microedition/khronos/egl/EGLDisplay;Ljavax/microedition/khronos/egl/EGLConfig;)Ljavax/microedition/khronos/egl/EGLContext;
     .locals 3
-    .param p1    # Ljavax/microedition/khronos/egl/EGL10;
-    .param p2    # Ljavax/microedition/khronos/egl/EGLDisplay;
-    .param p3    # Ljavax/microedition/khronos/egl/EGLConfig;
 
     const/4 v1, 0x3
 
@@ -109,9 +104,6 @@
 
 .method public destroyContext(Ljavax/microedition/khronos/egl/EGL10;Ljavax/microedition/khronos/egl/EGLDisplay;Ljavax/microedition/khronos/egl/EGLContext;)V
     .locals 3
-    .param p1    # Ljavax/microedition/khronos/egl/EGL10;
-    .param p2    # Ljavax/microedition/khronos/egl/EGLDisplay;
-    .param p3    # Ljavax/microedition/khronos/egl/EGLContext;
 
     invoke-interface {p1, p2, p3}, Ljavax/microedition/khronos/egl/EGL10;->eglDestroyContext(Ljavax/microedition/khronos/egl/EGLDisplay;Ljavax/microedition/khronos/egl/EGLContext;)Z
 

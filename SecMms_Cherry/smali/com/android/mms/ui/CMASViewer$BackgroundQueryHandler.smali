@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/mms/ui/CMASViewer;Landroid/content/ContentResolver;)V
     .locals 0
-    .param p2    # Landroid/content/ContentResolver;
 
     iput-object p1, p0, Lcom/android/mms/ui/CMASViewer$BackgroundQueryHandler;->this$0:Lcom/android/mms/ui/CMASViewer;
 
@@ -34,7 +33,6 @@
 # virtual methods
 .method public CMASViewerSetData(Landroid/database/Cursor;)V
     .locals 10
-    .param p1    # Landroid/database/Cursor;
 
     const v9, 0x7f0c0203
 
@@ -669,9 +667,6 @@
 
 .method protected onDeleteComplete(ILjava/lang/Object;I)V
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/Object;
-    .param p3    # I
 
     const-string v0, "CMASViewer"
 
@@ -717,9 +712,6 @@
 
 .method protected onQueryComplete(ILjava/lang/Object;Landroid/database/Cursor;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Ljava/lang/Object;
-    .param p3    # Landroid/database/Cursor;
 
     const-string v2, "CMASViewer"
 

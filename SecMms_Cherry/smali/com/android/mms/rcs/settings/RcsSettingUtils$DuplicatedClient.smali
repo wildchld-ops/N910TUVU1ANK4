@@ -69,7 +69,6 @@
 
 .method public setActionForIntent(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/mms/rcs/settings/RcsSettingUtils$DuplicatedClient;->actionForIntent:Ljava/lang/String;
 
@@ -78,7 +77,6 @@
 
 .method public setActivated(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/rcs/settings/RcsSettingUtils$DuplicatedClient;->activated:Z
 
@@ -87,7 +85,6 @@
 
 .method public setPackageName(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/mms/rcs/settings/RcsSettingUtils$DuplicatedClient;->packageName:Ljava/lang/String;
 

@@ -23,8 +23,6 @@
 # direct methods
 .method constructor <init>(Landroid/content/pm/ApplicationInfo;I)V
     .locals 1
-    .param p1    # Landroid/content/pm/ApplicationInfo;
-    .param p2    # I
 
     iget-object v0, p1, Landroid/content/pm/ApplicationInfo;->packageName:Ljava/lang/String;
 
@@ -35,8 +33,6 @@
 
 .method constructor <init>(Landroid/content/pm/ComponentInfo;I)V
     .locals 1
-    .param p1    # Landroid/content/pm/ComponentInfo;
-    .param p2    # I
 
     iget-object v0, p1, Landroid/content/pm/ComponentInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
 
@@ -49,8 +45,6 @@
 
 .method constructor <init>(Landroid/content/pm/ResolveInfo;I)V
     .locals 1
-    .param p1    # Landroid/content/pm/ResolveInfo;
-    .param p2    # I
 
     iget-object v0, p1, Landroid/content/pm/ResolveInfo;->activityInfo:Landroid/content/pm/ActivityInfo;
 
@@ -65,8 +59,6 @@
 
 .method constructor <init>(Ljava/lang/String;I)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -81,7 +73,6 @@
 # virtual methods
 .method public equals(Ljava/lang/Object;)Z
     .locals 5
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x1
 

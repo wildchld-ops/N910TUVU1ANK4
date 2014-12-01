@@ -12,12 +12,6 @@
 # direct methods
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;FFFF[B)V
     .locals 1
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # [B
 
     invoke-direct/range {p0 .. p5}, Lcom/sec/android/glview/TwGLTexture;-><init>(Lcom/sec/android/glview/TwGLContext;FFFF)V
 
@@ -43,13 +37,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;FFFF[BZ)V
     .locals 1
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # [B
-    .param p7    # Z
 
     invoke-direct/range {p0 .. p5}, Lcom/sec/android/glview/TwGLTexture;-><init>(Lcom/sec/android/glview/TwGLContext;FFFF)V
 
@@ -75,10 +62,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;FF[B)V
     .locals 1
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # [B
 
     invoke-direct {p0, p1, p2, p3}, Lcom/sec/android/glview/TwGLTexture;-><init>(Lcom/sec/android/glview/TwGLContext;FF)V
 
@@ -161,7 +144,6 @@
 
 .method public setSampleSize(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/glview/TwGLByteArrayTexture;->mSampleSize:I
 

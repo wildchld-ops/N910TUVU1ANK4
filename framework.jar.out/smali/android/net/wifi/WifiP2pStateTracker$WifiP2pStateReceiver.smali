@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Landroid/net/wifi/WifiP2pStateTracker;Landroid/net/wifi/WifiP2pStateTracker$1;)V
     .locals 0
-    .param p1    # Landroid/net/wifi/WifiP2pStateTracker;
-    .param p2    # Landroid/net/wifi/WifiP2pStateTracker$1;
 
     invoke-direct {p0, p1}, Landroid/net/wifi/WifiP2pStateTracker$WifiP2pStateReceiver;-><init>(Landroid/net/wifi/WifiP2pStateTracker;)V
 
@@ -43,8 +41,6 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 

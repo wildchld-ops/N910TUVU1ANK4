@@ -48,9 +48,6 @@
 # direct methods
 .method public constructor <init>(ILandroid/content/Context;Landroid/hardware/contextaware/dataprovider/sensorhubprovider/ISensorHubResetObservable;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/hardware/contextaware/dataprovider/sensorhubprovider/ISensorHubResetObservable;
 
     const/4 v1, 0x0
 
@@ -87,7 +84,6 @@
 
 .method static synthetic access$100(Landroid/hardware/contextaware/dataprovider/sensorhubprovider/builtin/ApdrRunner;)V
     .locals 0
-    .param p0    # Landroid/hardware/contextaware/dataprovider/sensorhubprovider/builtin/ApdrRunner;
 
     invoke-direct {p0}, Landroid/hardware/contextaware/dataprovider/sensorhubprovider/builtin/ApdrRunner;->sendCurTimeToSensorHub()V
 
@@ -96,7 +92,6 @@
 
 .method static synthetic access$200(Landroid/hardware/contextaware/dataprovider/sensorhubprovider/builtin/ApdrRunner;)Ljava/util/concurrent/ScheduledExecutorService;
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/dataprovider/sensorhubprovider/builtin/ApdrRunner;
 
     iget-object v0, p0, Landroid/hardware/contextaware/dataprovider/sensorhubprovider/builtin/ApdrRunner;->mSyncSched:Ljava/util/concurrent/ScheduledExecutorService;
 
@@ -105,8 +100,6 @@
 
 .method static synthetic access$202(Landroid/hardware/contextaware/dataprovider/sensorhubprovider/builtin/ApdrRunner;Ljava/util/concurrent/ScheduledExecutorService;)Ljava/util/concurrent/ScheduledExecutorService;
     .locals 0
-    .param p0    # Landroid/hardware/contextaware/dataprovider/sensorhubprovider/builtin/ApdrRunner;
-    .param p1    # Ljava/util/concurrent/ScheduledExecutorService;
 
     iput-object p1, p0, Landroid/hardware/contextaware/dataprovider/sensorhubprovider/builtin/ApdrRunner;->mSyncSched:Ljava/util/concurrent/ScheduledExecutorService;
 
@@ -115,7 +108,6 @@
 
 .method static synthetic access$300(Landroid/hardware/contextaware/dataprovider/sensorhubprovider/builtin/ApdrRunner;)Ljava/lang/Runnable;
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/dataprovider/sensorhubprovider/builtin/ApdrRunner;
 
     iget-object v0, p0, Landroid/hardware/contextaware/dataprovider/sensorhubprovider/builtin/ApdrRunner;->mSyncTimeTask:Ljava/lang/Runnable;
 
@@ -501,7 +493,6 @@
 
 .method public final locationUpdate(Landroid/location/Location;)V
     .locals 17
-    .param p1    # Landroid/location/Location;
 
     invoke-virtual/range {p1 .. p1}, Landroid/location/Location;->getLatitude()D
 
@@ -892,8 +883,6 @@
 
 .method public final parse([BI)I
     .locals 18
-    .param p1    # [B
-    .param p2    # I
 
     move/from16 v12, p2
 
@@ -1368,7 +1357,6 @@
 
 .method public final sendSleepModeCmdToSensorHub([B)V
     .locals 5
-    .param p1    # [B
 
     const/4 v3, 0x1
 
@@ -1424,7 +1412,6 @@
 
 .method public final setLppResolution(I)V
     .locals 5
-    .param p1    # I
 
     const/16 v4, 0x1c
 
@@ -1499,9 +1486,6 @@
 
 .method public final setMagneticSensorOffset(III)V
     .locals 8
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v4, 0x2
 
@@ -1546,7 +1530,6 @@
 
 .method public final setPropertyValue(ILjava/lang/Object;)Z
     .locals 3
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",

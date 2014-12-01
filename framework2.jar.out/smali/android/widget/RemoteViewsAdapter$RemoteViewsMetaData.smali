@@ -59,13 +59,6 @@
 
 .method static synthetic access$2000(Landroid/widget/RemoteViewsAdapter$RemoteViewsMetaData;ILandroid/view/View;Landroid/view/ViewGroup;Ljava/lang/Object;Landroid/view/LayoutInflater;Landroid/widget/RemoteViews$OnClickHandler;)Landroid/widget/RemoteViewsAdapter$RemoteViewsFrameLayout;
     .locals 1
-    .param p0    # Landroid/widget/RemoteViewsAdapter$RemoteViewsMetaData;
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
-    .param p4    # Ljava/lang/Object;
-    .param p5    # Landroid/view/LayoutInflater;
-    .param p6    # Landroid/widget/RemoteViews$OnClickHandler;
 
     invoke-direct/range {p0 .. p6}, Landroid/widget/RemoteViewsAdapter$RemoteViewsMetaData;->createLoadingView(ILandroid/view/View;Landroid/view/ViewGroup;Ljava/lang/Object;Landroid/view/LayoutInflater;Landroid/widget/RemoteViews$OnClickHandler;)Landroid/widget/RemoteViewsAdapter$RemoteViewsFrameLayout;
 
@@ -76,12 +69,6 @@
 
 .method private createLoadingView(ILandroid/view/View;Landroid/view/ViewGroup;Ljava/lang/Object;Landroid/view/LayoutInflater;Landroid/widget/RemoteViews$OnClickHandler;)Landroid/widget/RemoteViewsAdapter$RemoteViewsFrameLayout;
     .locals 12
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
-    .param p4    # Ljava/lang/Object;
-    .param p5    # Landroid/view/LayoutInflater;
-    .param p6    # Landroid/widget/RemoteViews$OnClickHandler;
 
     invoke-virtual {p3}, Landroid/view/View;->getContext()Landroid/content/Context;
 
@@ -300,7 +287,6 @@
 # virtual methods
 .method public getMappedViewType(I)I
     .locals 4
-    .param p1    # I
 
     iget-object v1, p0, Landroid/widget/RemoteViewsAdapter$RemoteViewsMetaData;->mTypeIdIndexMap:Ljava/util/HashMap;
 
@@ -359,7 +345,6 @@
 
 .method public isViewTypeInRange(I)Z
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/widget/RemoteViewsAdapter$RemoteViewsMetaData;->getMappedViewType(I)I
 
@@ -410,7 +395,6 @@
 
 .method public set(Landroid/widget/RemoteViewsAdapter$RemoteViewsMetaData;)V
     .locals 2
-    .param p1    # Landroid/widget/RemoteViewsAdapter$RemoteViewsMetaData;
 
     monitor-enter p1
 
@@ -449,8 +433,6 @@
 
 .method public setLoadingViewTemplates(Landroid/widget/RemoteViews;Landroid/widget/RemoteViews;)V
     .locals 1
-    .param p1    # Landroid/widget/RemoteViews;
-    .param p2    # Landroid/widget/RemoteViews;
 
     iput-object p1, p0, Landroid/widget/RemoteViewsAdapter$RemoteViewsMetaData;->mUserLoadingView:Landroid/widget/RemoteViews;
 

@@ -10,8 +10,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/preference/Preference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -42,7 +40,6 @@
 # virtual methods
 .method protected onBindView(Landroid/view/View;)V
     .locals 5
-    .param p1    # Landroid/view/View;
 
     const v4, 0x1020006
 
@@ -77,9 +74,6 @@
 
 .method public setIcon(Landroid/app/Activity;Landroid/graphics/drawable/Drawable;Landroid/content/pm/UserInfo;)V
     .locals 9
-    .param p1    # Landroid/app/Activity;
-    .param p2    # Landroid/graphics/drawable/Drawable;
-    .param p3    # Landroid/content/pm/UserInfo;
 
     const/4 v8, 0x0
 

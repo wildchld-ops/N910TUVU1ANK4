@@ -26,7 +26,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -37,8 +36,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v2, 0x0
 
@@ -71,8 +68,6 @@
 
 .method static synthetic access$002(Landroid/support/v4/widget/ContentLoadingProgressBar;Z)Z
     .locals 0
-    .param p0    # Landroid/support/v4/widget/ContentLoadingProgressBar;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/support/v4/widget/ContentLoadingProgressBar;->mPostedHide:Z
 
@@ -81,8 +76,6 @@
 
 .method static synthetic access$102(Landroid/support/v4/widget/ContentLoadingProgressBar;J)J
     .locals 0
-    .param p0    # Landroid/support/v4/widget/ContentLoadingProgressBar;
-    .param p1    # J
 
     iput-wide p1, p0, Landroid/support/v4/widget/ContentLoadingProgressBar;->mStartTime:J
 
@@ -91,8 +84,6 @@
 
 .method static synthetic access$202(Landroid/support/v4/widget/ContentLoadingProgressBar;Z)Z
     .locals 0
-    .param p0    # Landroid/support/v4/widget/ContentLoadingProgressBar;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/support/v4/widget/ContentLoadingProgressBar;->mPostedShow:Z
 
@@ -101,7 +92,6 @@
 
 .method static synthetic access$300(Landroid/support/v4/widget/ContentLoadingProgressBar;)Z
     .locals 1
-    .param p0    # Landroid/support/v4/widget/ContentLoadingProgressBar;
 
     iget-boolean v0, p0, Landroid/support/v4/widget/ContentLoadingProgressBar;->mDismissed:Z
 

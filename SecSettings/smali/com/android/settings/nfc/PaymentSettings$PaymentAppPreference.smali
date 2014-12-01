@@ -29,11 +29,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/nfc/NfcAdapter;Lcom/android/settings/nfc/PaymentBackend$PaymentAppInfo;Landroid/view/View$OnClickListener;Landroid/view/View$OnLongClickListener;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/nfc/NfcAdapter;
-    .param p3    # Lcom/android/settings/nfc/PaymentBackend$PaymentAppInfo;
-    .param p4    # Landroid/view/View$OnClickListener;
-    .param p5    # Landroid/view/View$OnLongClickListener;
 
     invoke-direct {p0, p1}, Landroid/preference/Preference;-><init>(Landroid/content/Context;)V
 
@@ -100,7 +95,6 @@
 # virtual methods
 .method protected onBindView(Landroid/view/View;)V
     .locals 6
-    .param p1    # Landroid/view/View;
 
     invoke-super {p0, p1}, Landroid/preference/Preference;->onBindView(Landroid/view/View;)V
 

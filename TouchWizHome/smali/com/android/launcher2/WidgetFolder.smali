@@ -118,7 +118,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v1, 0x2
 
@@ -147,8 +146,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v1, 0x2
 
@@ -177,9 +174,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v1, 0x2
 
@@ -216,7 +210,6 @@
 
 .method static synthetic access$100(Lcom/android/launcher2/WidgetFolder;)I
     .locals 1
-    .param p0    # Lcom/android/launcher2/WidgetFolder;
 
     iget v0, p0, Lcom/android/launcher2/WidgetFolder;->mPreviewWidth:I
 
@@ -225,7 +218,6 @@
 
 .method static synthetic access$1000(Lcom/android/launcher2/WidgetFolder;)I
     .locals 1
-    .param p0    # Lcom/android/launcher2/WidgetFolder;
 
     iget v0, p0, Lcom/android/launcher2/WidgetFolder;->mPageRequested:I
 
@@ -234,7 +226,6 @@
 
 .method static synthetic access$200(Lcom/android/launcher2/WidgetFolder;)I
     .locals 1
-    .param p0    # Lcom/android/launcher2/WidgetFolder;
 
     iget v0, p0, Lcom/android/launcher2/WidgetFolder;->mPreviewHeight:I
 
@@ -243,10 +234,6 @@
 
 .method static synthetic access$300(Lcom/android/launcher2/WidgetFolder;Ljava/lang/String;Lcom/android/launcher2/WidgetFolder$AppsCustomizeAsyncTask;Lcom/android/launcher2/WidgetFolder$AsyncTaskPageData;)V
     .locals 0
-    .param p0    # Lcom/android/launcher2/WidgetFolder;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/launcher2/WidgetFolder$AppsCustomizeAsyncTask;
-    .param p3    # Lcom/android/launcher2/WidgetFolder$AsyncTaskPageData;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/launcher2/WidgetFolder;->loadWidgetPreviewsInBackground(Ljava/lang/String;Lcom/android/launcher2/WidgetFolder$AppsCustomizeAsyncTask;Lcom/android/launcher2/WidgetFolder$AsyncTaskPageData;)V
 
@@ -255,9 +242,6 @@
 
 .method static synthetic access$400(Lcom/android/launcher2/WidgetFolder;Ljava/lang/String;Lcom/android/launcher2/WidgetFolder$AsyncTaskPageData;)V
     .locals 0
-    .param p0    # Lcom/android/launcher2/WidgetFolder;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/launcher2/WidgetFolder$AsyncTaskPageData;
 
     invoke-direct {p0, p1, p2}, Lcom/android/launcher2/WidgetFolder;->onSyncWidgetPageItems(Ljava/lang/String;Lcom/android/launcher2/WidgetFolder$AsyncTaskPageData;)V
 
@@ -266,13 +250,6 @@
 
 .method static synthetic access$500(Lcom/android/launcher2/WidgetFolder;Landroid/widget/GridLayout;ILjava/util/List;III)V
     .locals 0
-    .param p0    # Lcom/android/launcher2/WidgetFolder;
-    .param p1    # Landroid/widget/GridLayout;
-    .param p2    # I
-    .param p3    # Ljava/util/List;
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     invoke-direct/range {p0 .. p6}, Lcom/android/launcher2/WidgetFolder;->prepareLoadWidgetPreviewsTask(Landroid/widget/GridLayout;ILjava/util/List;III)V
 
@@ -281,7 +258,6 @@
 
 .method static synthetic access$600(Lcom/android/launcher2/WidgetFolder;)Ljava/util/List;
     .locals 1
-    .param p0    # Lcom/android/launcher2/WidgetFolder;
 
     iget-object v0, p0, Lcom/android/launcher2/WidgetFolder;->mRunningTasks:Ljava/util/List;
 
@@ -290,7 +266,6 @@
 
 .method static synthetic access$700(Lcom/android/launcher2/WidgetFolder;)Landroid/widget/GridLayout;
     .locals 1
-    .param p0    # Lcom/android/launcher2/WidgetFolder;
 
     iget-object v0, p0, Lcom/android/launcher2/WidgetFolder;->mOpenWidgetGrid:Landroid/widget/GridLayout;
 
@@ -299,7 +274,6 @@
 
 .method static synthetic access$800(Lcom/android/launcher2/WidgetFolder;)Lcom/android/launcher2/MenuWidgets;
     .locals 1
-    .param p0    # Lcom/android/launcher2/WidgetFolder;
 
     iget-object v0, p0, Lcom/android/launcher2/WidgetFolder;->mMenuWidgets:Lcom/android/launcher2/MenuWidgets;
 
@@ -308,7 +282,6 @@
 
 .method static synthetic access$900(Lcom/android/launcher2/WidgetFolder;)V
     .locals 0
-    .param p0    # Lcom/android/launcher2/WidgetFolder;
 
     invoke-direct {p0}, Lcom/android/launcher2/WidgetFolder;->layoutChildren()V
 
@@ -918,7 +891,6 @@
 
 .method private getThreadPriorityForPage(I)I
     .locals 3
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -1169,9 +1141,6 @@
 
 .method private loadWidgetPreviewsInBackground(Ljava/lang/String;Lcom/android/launcher2/WidgetFolder$AppsCustomizeAsyncTask;Lcom/android/launcher2/WidgetFolder$AsyncTaskPageData;)V
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/launcher2/WidgetFolder$AppsCustomizeAsyncTask;
-    .param p3    # Lcom/android/launcher2/WidgetFolder$AsyncTaskPageData;
 
     if-nez p3, :cond_1
 
@@ -1379,8 +1348,6 @@
 
 .method private onSyncWidgetPageItems(Ljava/lang/String;Lcom/android/launcher2/WidgetFolder$AsyncTaskPageData;)V
     .locals 13
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/launcher2/WidgetFolder$AsyncTaskPageData;
 
     const/4 v9, 0x0
 
@@ -1773,11 +1740,6 @@
 
 .method private prepareLoadWidgetPreviewsTask(Landroid/widget/GridLayout;ILjava/util/List;III)V
     .locals 12
-    .param p1    # Landroid/widget/GridLayout;
-    .param p2    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2237,7 +2199,6 @@
 
 .method public close(Landroid/view/ViewGroup;)Z
     .locals 1
-    .param p1    # Landroid/view/ViewGroup;
 
     const/4 v0, 0x0
 
@@ -2375,7 +2336,6 @@
 
 .method protected onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 2
-    .param p1    # Landroid/content/res/Configuration;
 
     sget-object v0, Lcom/android/launcher2/WidgetFolder;->TAG:Ljava/lang/String;
 
@@ -2598,7 +2558,6 @@
 
 .method public onTouchModeChanged(Z)V
     .locals 3
-    .param p1    # Z
 
     sget-boolean v0, Lcom/android/launcher2/WidgetFolder;->DEBUGGABLE:Z
 
@@ -2639,9 +2598,6 @@
 
 .method public open(Landroid/view/ViewGroup;Landroid/view/ViewGroup;Z)V
     .locals 3
-    .param p1    # Landroid/view/ViewGroup;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Z
 
     iget-boolean v1, p0, Lcom/android/launcher2/WidgetFolder;->isOpened:Z
 
@@ -2824,7 +2780,6 @@
 
 .method public setOpenWidgetFolderTitle(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/launcher2/WidgetFolder;->mTitle:Landroid/widget/TextView;
 
@@ -2835,7 +2790,6 @@
 
 .method public setOpened(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/launcher2/WidgetFolder;->isOpened:Z
 
@@ -2844,7 +2798,6 @@
 
 .method public setWidgetFolderItems(Ljava/util/ArrayList;Lcom/android/launcher2/MenuWidgets;)V
     .locals 1
-    .param p2    # Lcom/android/launcher2/MenuWidgets;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2876,7 +2829,6 @@
 
 .method public setWidgetFolderManager(Lcom/android/launcher2/MenuWidgets$MenuWidgetsFolderMgr;)V
     .locals 0
-    .param p1    # Lcom/android/launcher2/MenuWidgets$MenuWidgetsFolderMgr;
 
     iput-object p1, p0, Lcom/android/launcher2/WidgetFolder;->mMenuWidgetsFolderMgr:Lcom/android/launcher2/MenuWidgets$MenuWidgetsFolderMgr;
 
@@ -2885,7 +2837,6 @@
 
 .method public setWidgetFolderView(Lcom/android/launcher2/WidgetFolderView;)V
     .locals 0
-    .param p1    # Lcom/android/launcher2/WidgetFolderView;
 
     iput-object p1, p0, Lcom/android/launcher2/WidgetFolder;->mWidgetFolderView:Lcom/android/launcher2/WidgetFolderView;
 
@@ -2894,7 +2845,6 @@
 
 .method public setWidgetFolderViewIndex(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/launcher2/WidgetFolder;->mFolderViewIndex:I
 

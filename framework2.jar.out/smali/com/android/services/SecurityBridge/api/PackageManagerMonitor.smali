@@ -16,8 +16,6 @@
 # virtual methods
 .method public approveAppInstallRequest(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x1
 

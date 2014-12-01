@@ -21,7 +21,6 @@
 # direct methods
 .method constructor <init>(Landroid/hardware/contextaware/aggregator/lpp/LppAggregator;Landroid/os/Looper;)V
     .locals 0
-    .param p2    # Landroid/os/Looper;
 
     iput-object p1, p0, Landroid/hardware/contextaware/aggregator/lpp/LppAggregator$2;->this$0:Landroid/hardware/contextaware/aggregator/lpp/LppAggregator;
 
@@ -34,7 +33,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 11
-    .param p1    # Landroid/os/Message;
 
     const v10, 0xabaa
 

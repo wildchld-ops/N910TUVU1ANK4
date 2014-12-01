@@ -75,8 +75,6 @@
 
 .method static synthetic access$000(Landroid/view/MagnificationSpec;Landroid/os/Parcel;)V
     .locals 0
-    .param p0    # Landroid/view/MagnificationSpec;
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0, p1}, Landroid/view/MagnificationSpec;->initFromParcel(Landroid/os/Parcel;)V
 
@@ -85,7 +83,6 @@
 
 .method private initFromParcel(Landroid/os/Parcel;)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readFloat()F
 
@@ -134,7 +131,6 @@
 
 .method public static obtain(Landroid/view/MagnificationSpec;)Landroid/view/MagnificationSpec;
     .locals 2
-    .param p0    # Landroid/view/MagnificationSpec;
 
     invoke-static {}, Landroid/view/MagnificationSpec;->obtain()Landroid/view/MagnificationSpec;
 
@@ -183,9 +179,6 @@
 
 .method public initialize(FFF)V
     .locals 0
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
 
     iput p1, p0, Landroid/view/MagnificationSpec;->scale:F
 
@@ -288,8 +281,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget v0, p0, Landroid/view/MagnificationSpec;->scale:F
 

@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -53,7 +52,6 @@
 
 .method public mapToNormalizedState(I)I
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -109,7 +107,6 @@
 
 .method public postEvent(Landroid/content/pm/PersonaEvent;)I
     .locals 6
-    .param p1    # Landroid/content/pm/PersonaEvent;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -184,8 +181,6 @@
 
 .method public postEventForPersona(ILandroid/content/pm/PersonaEvent;)I
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/content/pm/PersonaEvent;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

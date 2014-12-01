@@ -163,7 +163,6 @@
 
 .method public static decodeImProtocol(Ljava/lang/String;)Ljava/lang/Object;
     .locals 3
-    .param p0    # Ljava/lang/String;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -244,7 +243,6 @@
 
 .method public static encodeCustomImProtocol(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/lang/String;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -271,7 +269,6 @@
 
 .method public static encodePredefinedImProtocol(I)Ljava/lang/String;
     .locals 2
-    .param p0    # I
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -298,10 +295,6 @@
 
 .method public static final getDisplayLabel(Landroid/content/Context;IILjava/lang/CharSequence;)Ljava/lang/CharSequence;
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/CharSequence;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -412,7 +405,6 @@
 
 .method public static lookupProviderNameFromId(I)Ljava/lang/String;
     .locals 1
-    .param p0    # I
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -482,10 +474,6 @@
 # virtual methods
 .method public addPostalLocation(Landroid/content/Context;JDD)V
     .locals 8
-    .param p1    # Landroid/content/Context;
-    .param p2    # J
-    .param p4    # D
-    .param p6    # D
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 

@@ -10,7 +10,6 @@
 # direct methods
 .method public constructor <init>(Ljavax/net/ssl/X509TrustManager;)V
     .locals 2
-    .param p1    # Ljavax/net/ssl/X509TrustManager;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;
@@ -43,9 +42,6 @@
 # virtual methods
 .method public checkServerTrusted([Ljava/security/cert/X509Certificate;Ljava/lang/String;Ljava/lang/String;)Ljava/util/List;
     .locals 1
-    .param p1    # [Ljava/security/cert/X509Certificate;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([",

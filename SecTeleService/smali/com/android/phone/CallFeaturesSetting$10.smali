@@ -46,7 +46,7 @@
 
     const/4 v1, 0x1
 
-    invoke-virtual {v0, v1}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v0, v1}, Landroid/preference/ListPreference;->setEnabled(Z)V
 
     return-void
 .end method

@@ -27,9 +27,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;IILjava/util/List;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

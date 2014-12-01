@@ -27,9 +27,6 @@
 # virtual methods
 .method public getAlignmentValue(Landroid/view/View;II)I
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # I
 
     const/high16 v0, -0x80000000
 
@@ -38,8 +35,6 @@
 
 .method getGravityOffset(Landroid/view/View;I)I
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     const/high16 v0, -0x80000000
 

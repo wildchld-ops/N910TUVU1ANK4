@@ -23,9 +23,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/net/INetworkStatsSession;Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/net/INetworkStatsSession;
-    .param p3    # Landroid/os/Bundle;
 
     invoke-direct {p0, p1}, Landroid/content/AsyncTaskLoader;-><init>(Landroid/content/Context;)V
 
@@ -38,9 +35,6 @@
 
 .method public static buildArgs(Landroid/net/NetworkTemplate;JJ)Landroid/os/Bundle;
     .locals 2
-    .param p0    # Landroid/net/NetworkTemplate;
-    .param p1    # J
-    .param p3    # J
 
     new-instance v0, Landroid/os/Bundle;
 

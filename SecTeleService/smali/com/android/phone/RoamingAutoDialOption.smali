@@ -51,7 +51,7 @@
 
     iput-boolean v2, p0, Lcom/android/phone/RoamingAutoDialOption;->isFinishing:Z
 
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/RoamingAutoDialOption;->finish()V
 
     return-void
 .end method
@@ -72,9 +72,9 @@
 
     invoke-static {v3, v4, v5}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
 
-    iget-object v1, p0, Lcom/android/internal/app/AlertActivity;->mAlertParams:Lcom/android/internal/app/AlertController$AlertParams;
+    iget-object v1, p0, Lcom/android/phone/RoamingAutoDialOption;->mAlertParams:Lcom/android/internal/app/AlertController$AlertParams;
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/RoamingAutoDialOption;->getResources()Landroid/content/res/Resources;
 
     move-result-object v2
 
@@ -138,9 +138,9 @@
 
     invoke-static {v3, v4, v5}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
 
-    invoke-virtual {p0}, Lcom/android/internal/app/AlertActivity;->setupAlert()V
+    invoke-virtual {p0}, Lcom/android/phone/RoamingAutoDialOption;->setupAlert()V
 
-    iget-object v3, p0, Lcom/android/internal/app/AlertActivity;->mAlert:Lcom/android/internal/app/AlertController;
+    iget-object v3, p0, Lcom/android/phone/RoamingAutoDialOption;->mAlert:Lcom/android/internal/app/AlertController;
 
     invoke-virtual {v3}, Lcom/android/internal/app/AlertController;->getListView()Landroid/widget/ListView;
 
@@ -154,7 +154,7 @@
 
     invoke-static {v3, v4, v5}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
 
-    invoke-virtual {v0, v6}, Landroid/view/View;->setSoundEffectsEnabled(Z)V
+    invoke-virtual {v0, v6}, Landroid/widget/ListView;->setSoundEffectsEnabled(Z)V
 
     :cond_0
     return-void
@@ -163,7 +163,7 @@
 .method protected onPause()V
     .locals 3
 
-    invoke-super {p0}, Landroid/app/Activity;->onPause()V
+    invoke-super {p0}, Lcom/android/internal/app/AlertActivity;->onPause()V
 
     const-string v0, "RoamingAutoDialOption"
 
@@ -179,7 +179,7 @@
 .method protected onResume()V
     .locals 3
 
-    invoke-super {p0}, Landroid/app/Activity;->onResume()V
+    invoke-super {p0}, Lcom/android/internal/app/AlertActivity;->onResume()V
 
     const-string v0, "RoamingAutoDialOption"
 
@@ -195,7 +195,7 @@
 .method protected onStop()V
     .locals 3
 
-    invoke-super {p0}, Landroid/app/Activity;->onStop()V
+    invoke-super {p0}, Lcom/android/internal/app/AlertActivity;->onStop()V
 
     const-string v0, "RoamingAutoDialOption"
 
@@ -209,7 +209,7 @@
 
     if-nez v0, :cond_0
 
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/RoamingAutoDialOption;->finish()V
 
     :cond_0
     return-void

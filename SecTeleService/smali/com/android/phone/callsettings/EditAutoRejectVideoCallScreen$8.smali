@@ -74,7 +74,7 @@
 
     iget-object v3, v3, Lcom/android/phone/callsettings/EditAutoRejectVideoCallScreen;->editBox:Landroid/widget/EditText;
 
-    invoke-virtual {v3}, Landroid/view/View;->getWindowToken()Landroid/os/IBinder;
+    invoke-virtual {v3}, Landroid/widget/EditText;->getWindowToken()Landroid/os/IBinder;
 
     move-result-object v3
 
@@ -88,7 +88,7 @@
     :pswitch_0
     iget-object v2, p0, Lcom/android/phone/callsettings/EditAutoRejectVideoCallScreen$8;->this$0:Lcom/android/phone/callsettings/EditAutoRejectVideoCallScreen;
 
-    invoke-virtual {v2}, Landroid/app/Fragment;->isAdded()Z
+    invoke-virtual {v2}, Lcom/android/phone/callsettings/EditAutoRejectVideoCallScreen;->isAdded()Z
 
     move-result v2
 
@@ -119,14 +119,14 @@
 
     iget-object v2, p0, Lcom/android/phone/callsettings/EditAutoRejectVideoCallScreen$8;->this$0:Lcom/android/phone/callsettings/EditAutoRejectVideoCallScreen;
 
-    invoke-virtual {v2, v1, v4}, Landroid/app/Fragment;->startActivityForResult(Landroid/content/Intent;I)V
+    invoke-virtual {v2, v1, v4}, Lcom/android/phone/callsettings/EditAutoRejectVideoCallScreen;->startActivityForResult(Landroid/content/Intent;I)V
 
     goto :goto_0
 
     :pswitch_1
     iget-object v2, p0, Lcom/android/phone/callsettings/EditAutoRejectVideoCallScreen$8;->this$0:Lcom/android/phone/callsettings/EditAutoRejectVideoCallScreen;
 
-    invoke-virtual {v2}, Landroid/app/Fragment;->isAdded()Z
+    invoke-virtual {v2}, Lcom/android/phone/callsettings/EditAutoRejectVideoCallScreen;->isAdded()Z
 
     move-result v2
 
@@ -150,7 +150,7 @@
 
     const/4 v4, 0x2
 
-    invoke-virtual {v2, v3, v4}, Landroid/app/Fragment;->startActivityForResult(Landroid/content/Intent;I)V
+    invoke-virtual {v2, v3, v4}, Lcom/android/phone/callsettings/EditAutoRejectVideoCallScreen;->startActivityForResult(Landroid/content/Intent;I)V
 
     goto :goto_0
 

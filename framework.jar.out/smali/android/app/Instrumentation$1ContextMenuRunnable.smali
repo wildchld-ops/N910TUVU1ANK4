@@ -32,9 +32,6 @@
 # direct methods
 .method public constructor <init>(Landroid/app/Instrumentation;Landroid/app/Activity;II)V
     .locals 0
-    .param p2    # Landroid/app/Activity;
-    .param p3    # I
-    .param p4    # I
 
     iput-object p1, p0, Landroid/app/Instrumentation$1ContextMenuRunnable;->this$0:Landroid/app/Instrumentation;
 

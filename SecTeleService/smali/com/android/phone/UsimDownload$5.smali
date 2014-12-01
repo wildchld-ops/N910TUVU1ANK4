@@ -571,7 +571,7 @@
 
     iget-object v3, p0, Lcom/android/phone/UsimDownload$5;->this$0:Lcom/android/phone/UsimDownload;
 
-    invoke-virtual {v3, v1}, Landroid/content/ContextWrapper;->sendBroadcast(Landroid/content/Intent;)V
+    invoke-virtual {v3, v1}, Lcom/android/phone/UsimDownload;->sendBroadcast(Landroid/content/Intent;)V
 
     iget-object v3, p0, Lcom/android/phone/UsimDownload$5;->this$0:Lcom/android/phone/UsimDownload;
 
@@ -580,7 +580,7 @@
 
     iget-object v3, p0, Lcom/android/phone/UsimDownload$5;->this$0:Lcom/android/phone/UsimDownload;
 
-    invoke-virtual {v3}, Landroid/app/Activity;->finish()V
+    invoke-virtual {v3}, Lcom/android/phone/UsimDownload;->finish()V
 
     goto/16 :goto_2
 .end method

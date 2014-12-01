@@ -139,7 +139,6 @@
 
 .method static synthetic access$000(Landroid/animation/AnimatorSet;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Landroid/animation/AnimatorSet;
 
     iget-object v0, p0, Landroid/animation/AnimatorSet;->mPlayingSet:Ljava/util/ArrayList;
 
@@ -148,8 +147,6 @@
 
 .method static synthetic access$102(Landroid/animation/AnimatorSet;Landroid/animation/ValueAnimator;)Landroid/animation/ValueAnimator;
     .locals 0
-    .param p0    # Landroid/animation/AnimatorSet;
-    .param p1    # Landroid/animation/ValueAnimator;
 
     iput-object p1, p0, Landroid/animation/AnimatorSet;->mDelayAnim:Landroid/animation/ValueAnimator;
 
@@ -158,7 +155,6 @@
 
 .method static synthetic access$200(Landroid/animation/AnimatorSet;)Ljava/util/HashMap;
     .locals 1
-    .param p0    # Landroid/animation/AnimatorSet;
 
     iget-object v0, p0, Landroid/animation/AnimatorSet;->mNodeMap:Ljava/util/HashMap;
 
@@ -167,7 +163,6 @@
 
 .method static synthetic access$300(Landroid/animation/AnimatorSet;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Landroid/animation/AnimatorSet;
 
     iget-object v0, p0, Landroid/animation/AnimatorSet;->mSortedNodes:Ljava/util/ArrayList;
 
@@ -176,8 +171,6 @@
 
 .method static synthetic access$402(Landroid/animation/AnimatorSet;Z)Z
     .locals 0
-    .param p0    # Landroid/animation/AnimatorSet;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/animation/AnimatorSet;->mStarted:Z
 
@@ -186,7 +179,6 @@
 
 .method static synthetic access$500(Landroid/animation/AnimatorSet;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Landroid/animation/AnimatorSet;
 
     iget-object v0, p0, Landroid/animation/AnimatorSet;->mNodes:Ljava/util/ArrayList;
 
@@ -1168,7 +1160,6 @@
 
 .method public play(Landroid/animation/Animator;)Landroid/animation/AnimatorSet$Builder;
     .locals 1
-    .param p1    # Landroid/animation/Animator;
 
     if-eqz p1, :cond_0
 
@@ -1271,7 +1262,6 @@
 
 .method public varargs playSequentially([Landroid/animation/Animator;)V
     .locals 3
-    .param p1    # [Landroid/animation/Animator;
 
     const/4 v2, 0x1
 
@@ -1381,7 +1371,6 @@
 
 .method public varargs playTogether([Landroid/animation/Animator;)V
     .locals 3
-    .param p1    # [Landroid/animation/Animator;
 
     if-eqz p1, :cond_0
 
@@ -1469,7 +1458,6 @@
 
 .method public bridge synthetic setDuration(J)Landroid/animation/Animator;
     .locals 1
-    .param p1    # J
 
     invoke-virtual {p0, p1, p2}, Landroid/animation/AnimatorSet;->setDuration(J)Landroid/animation/AnimatorSet;
 
@@ -1480,7 +1468,6 @@
 
 .method public setDuration(J)Landroid/animation/AnimatorSet;
     .locals 2
-    .param p1    # J
 
     const-wide/16 v0, 0x0
 
@@ -1504,7 +1491,6 @@
 
 .method public setInterpolator(Landroid/animation/TimeInterpolator;)V
     .locals 0
-    .param p1    # Landroid/animation/TimeInterpolator;
 
     iput-object p1, p0, Landroid/animation/AnimatorSet;->mInterpolator:Landroid/animation/TimeInterpolator;
 
@@ -1513,7 +1499,6 @@
 
 .method public setStartDelay(J)V
     .locals 0
-    .param p1    # J
 
     iput-wide p1, p0, Landroid/animation/AnimatorSet;->mStartDelay:J
 
@@ -1522,7 +1507,6 @@
 
 .method public setTarget(Ljava/lang/Object;)V
     .locals 4
-    .param p1    # Ljava/lang/Object;
 
     iget-object v3, p0, Landroid/animation/AnimatorSet;->mNodes:Ljava/util/ArrayList;
 

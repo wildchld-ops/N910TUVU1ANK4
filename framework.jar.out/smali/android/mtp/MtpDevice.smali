@@ -26,7 +26,6 @@
 
 .method public constructor <init>(Landroid/hardware/usb/UsbDevice;)V
     .locals 0
-    .param p1    # Landroid/hardware/usb/UsbDevice;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -86,7 +85,6 @@
 
 .method public deleteObject(I)Z
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/mtp/MtpDevice;->native_delete_object(I)Z
 
@@ -156,8 +154,6 @@
 
 .method public getObject(II)[B
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Landroid/mtp/MtpDevice;->native_get_object(II)[B
 
@@ -168,9 +164,6 @@
 
 .method public getObjectHandles(III)[I
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Landroid/mtp/MtpDevice;->native_get_object_handles(III)[I
 
@@ -181,7 +174,6 @@
 
 .method public getObjectInfo(I)Landroid/mtp/MtpObjectInfo;
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/mtp/MtpDevice;->native_get_object_info(I)Landroid/mtp/MtpObjectInfo;
 
@@ -192,7 +184,6 @@
 
 .method public getParent(I)J
     .locals 2
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/mtp/MtpDevice;->native_get_parent(I)J
 
@@ -203,7 +194,6 @@
 
 .method public getStorageId(I)J
     .locals 2
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/mtp/MtpDevice;->native_get_storage_id(I)J
 
@@ -224,7 +214,6 @@
 
 .method public getStorageInfo(I)Landroid/mtp/MtpStorageInfo;
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/mtp/MtpDevice;->native_get_storage_info(I)Landroid/mtp/MtpStorageInfo;
 
@@ -235,7 +224,6 @@
 
 .method public getThumbnail(I)[B
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/mtp/MtpDevice;->native_get_thumbnail(I)[B
 
@@ -246,8 +234,6 @@
 
 .method public importFile(ILjava/lang/String;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Landroid/mtp/MtpDevice;->native_import_file(ILjava/lang/String;)Z
 
@@ -258,7 +244,6 @@
 
 .method public open(Landroid/hardware/usb/UsbDeviceConnection;)Z
     .locals 3
-    .param p1    # Landroid/hardware/usb/UsbDeviceConnection;
 
     iget-object v1, p0, Landroid/mtp/MtpDevice;->mDevice:Landroid/hardware/usb/UsbDevice;
 

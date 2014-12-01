@@ -28,8 +28,6 @@
 
 .method public static final getContentUri(Ljava/lang/String;J)Landroid/net/Uri;
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # J
 
     new-instance v0, Ljava/lang/StringBuilder;
 

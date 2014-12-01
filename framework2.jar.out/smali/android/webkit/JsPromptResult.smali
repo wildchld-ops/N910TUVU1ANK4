@@ -10,7 +10,6 @@
 # direct methods
 .method public constructor <init>(Landroid/webkit/JsResult$ResultReceiver;)V
     .locals 0
-    .param p1    # Landroid/webkit/JsResult$ResultReceiver;
 
     invoke-direct {p0, p1}, Landroid/webkit/JsResult;-><init>(Landroid/webkit/JsResult$ResultReceiver;)V
 
@@ -21,7 +20,6 @@
 # virtual methods
 .method public confirm(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/webkit/JsPromptResult;->mStringResult:Ljava/lang/String;
 

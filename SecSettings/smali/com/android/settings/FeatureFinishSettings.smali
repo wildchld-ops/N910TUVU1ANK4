@@ -109,7 +109,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/FeatureFinishSettings;)Landroid/app/AlertDialog;
     .locals 1
-    .param p0    # Lcom/android/settings/FeatureFinishSettings;
 
     iget-object v0, p0, Lcom/android/settings/FeatureFinishSettings;->mGuideDialog:Landroid/app/AlertDialog;
 
@@ -1719,7 +1718,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -1879,7 +1877,6 @@
 
 .method public onPreferenceClick(Landroid/preference/Preference;)Z
     .locals 3
-    .param p1    # Landroid/preference/Preference;
 
     iget-object v1, p0, Lcom/android/settings/FeatureFinishSettings;->mMagazine:Landroid/preference/PreferenceScreen;
 
@@ -2113,8 +2110,6 @@
 
 .method public showGuideDialog(Landroid/view/View;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # Ljava/lang/String;
 
     const/4 v2, 0x0
 

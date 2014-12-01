@@ -36,8 +36,6 @@
 # virtual methods
 .method public onBeforeCheckedChanged(Lcom/android/settings/print/PrintSettingsFragment$ToggleSwitch;Z)Z
     .locals 4
-    .param p1    # Lcom/android/settings/print/PrintSettingsFragment$ToggleSwitch;
-    .param p2    # Z
 
     const/4 v0, 0x1
 

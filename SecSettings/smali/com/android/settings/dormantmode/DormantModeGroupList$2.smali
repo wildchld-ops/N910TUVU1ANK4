@@ -21,7 +21,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/settings/dormantmode/DormantModeGroupList;Landroid/content/Context;)V
     .locals 0
-    .param p2    # Landroid/content/Context;
 
     iput-object p1, p0, Lcom/android/settings/dormantmode/DormantModeGroupList$2;->this$0:Lcom/android/settings/dormantmode/DormantModeGroupList;
 
@@ -34,8 +33,6 @@
 # virtual methods
 .method public OnTwMultiSelectStop(II)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0}, Lcom/android/settings/common/PenSelectListener;->getSelectedPosition()Ljava/util/ArrayList;
 

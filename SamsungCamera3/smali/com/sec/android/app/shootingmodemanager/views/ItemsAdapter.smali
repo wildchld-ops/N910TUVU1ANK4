@@ -80,9 +80,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Lcom/sec/android/app/shootingmodemanager/views/ShootingModeGridView;Lcom/sec/android/app/shootingmodemanager/ItemsLoader;)V
     .locals 9
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/sec/android/app/shootingmodemanager/views/ShootingModeGridView;
-    .param p3    # Lcom/sec/android/app/shootingmodemanager/ItemsLoader;
 
     invoke-direct {p0}, Landroid/widget/BaseAdapter;-><init>()V
 
@@ -257,7 +254,6 @@
 
 .method static synthetic access$000(Lcom/sec/android/app/shootingmodemanager/views/ItemsAdapter;)Lcom/sec/android/app/shootingmodemanager/views/ShootingModeGridView;
     .locals 1
-    .param p0    # Lcom/sec/android/app/shootingmodemanager/views/ItemsAdapter;
 
     iget-object v0, p0, Lcom/sec/android/app/shootingmodemanager/views/ItemsAdapter;->mParentShootingModeGridView:Lcom/sec/android/app/shootingmodemanager/views/ShootingModeGridView;
 
@@ -266,7 +262,6 @@
 
 .method static synthetic access$100(Lcom/sec/android/app/shootingmodemanager/views/ItemsAdapter;)V
     .locals 0
-    .param p0    # Lcom/sec/android/app/shootingmodemanager/views/ItemsAdapter;
 
     invoke-direct {p0}, Lcom/sec/android/app/shootingmodemanager/views/ItemsAdapter;->populateViews()V
 
@@ -275,7 +270,6 @@
 
 .method static synthetic access$200(Lcom/sec/android/app/shootingmodemanager/views/ItemsAdapter;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/sec/android/app/shootingmodemanager/views/ItemsAdapter;
 
     iget-object v0, p0, Lcom/sec/android/app/shootingmodemanager/views/ItemsAdapter;->mMainHandler:Landroid/os/Handler;
 
@@ -284,7 +278,6 @@
 
 .method static synthetic access$700(Lcom/sec/android/app/shootingmodemanager/views/ItemsAdapter;)Landroid/view/animation/ScaleAnimation;
     .locals 1
-    .param p0    # Lcom/sec/android/app/shootingmodemanager/views/ItemsAdapter;
 
     iget-object v0, p0, Lcom/sec/android/app/shootingmodemanager/views/ItemsAdapter;->mEffectScaleDownAnimation:Landroid/view/animation/ScaleAnimation;
 
@@ -293,7 +286,6 @@
 
 .method static synthetic access$800(Lcom/sec/android/app/shootingmodemanager/views/ItemsAdapter;)Landroid/view/animation/ScaleAnimation;
     .locals 1
-    .param p0    # Lcom/sec/android/app/shootingmodemanager/views/ItemsAdapter;
 
     iget-object v0, p0, Lcom/sec/android/app/shootingmodemanager/views/ItemsAdapter;->mEffectScaleUpAnimation:Landroid/view/animation/ScaleAnimation;
 
@@ -302,7 +294,6 @@
 
 .method private getImage(Lcom/sec/android/app/shootingmodemanager/ShootingModeItem;)Landroid/graphics/drawable/Drawable;
     .locals 6
-    .param p1    # Lcom/sec/android/app/shootingmodemanager/ShootingModeItem;
 
     new-instance v4, Ljava/lang/StringBuilder;
 
@@ -432,9 +423,6 @@
 
 .method private isMarquee(Ljava/lang/String;ILandroid/widget/TextView;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Landroid/widget/TextView;
 
     const/4 v0, 0x1
 
@@ -500,7 +488,6 @@
 # virtual methods
 .method public getAlignedPosition(I)I
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/app/shootingmodemanager/views/ItemsAdapter;->mExternalLoader:Lcom/sec/android/app/shootingmodemanager/ItemsLoader;
 
@@ -525,7 +512,6 @@
 
 .method public getItem(I)Ljava/lang/Object;
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/sec/android/app/shootingmodemanager/views/ItemsAdapter;->getItemInfo(I)Lcom/sec/android/app/shootingmodemanager/ShootingModeItem;
 
@@ -536,7 +522,6 @@
 
 .method public getItemId(I)J
     .locals 2
-    .param p1    # I
 
     int-to-long v0, p1
 
@@ -545,7 +530,6 @@
 
 .method public getItemInfo(I)Lcom/sec/android/app/shootingmodemanager/ShootingModeItem;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/app/shootingmodemanager/views/ItemsAdapter;->mExternalLoader:Lcom/sec/android/app/shootingmodemanager/ItemsLoader;
 
@@ -558,9 +542,6 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 8
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     const/4 v7, 0x1
 
@@ -748,8 +729,6 @@
 
 .method public insert(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/sec/android/app/shootingmodemanager/views/ItemsAdapter;->mExternalLoader:Lcom/sec/android/app/shootingmodemanager/ItemsLoader;
 
@@ -770,9 +749,6 @@
 
 .method public onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
     .locals 1
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -801,9 +777,6 @@
 
 .method public onKey(Landroid/view/View;ILandroid/view/KeyEvent;)Z
     .locals 4
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # Landroid/view/KeyEvent;
 
     const/4 v1, 0x1
 
@@ -895,8 +868,6 @@
 
 .method reorderDB(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     const-string v0, "EffectAdapter"
 

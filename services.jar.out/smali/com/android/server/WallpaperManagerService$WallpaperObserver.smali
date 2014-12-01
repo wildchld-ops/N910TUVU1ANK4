@@ -29,7 +29,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/WallpaperManagerService;Lcom/android/server/WallpaperManagerService$WallpaperData;)V
     .locals 3
-    .param p2    # Lcom/android/server/WallpaperManagerService$WallpaperData;
 
     iput-object p1, p0, Lcom/android/server/WallpaperManagerService$WallpaperObserver;->this$0:Lcom/android/server/WallpaperManagerService;
 
@@ -86,8 +85,6 @@
 # virtual methods
 .method public onEvent(ILjava/lang/String;)V
     .locals 11
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/16 v2, 0x8
 

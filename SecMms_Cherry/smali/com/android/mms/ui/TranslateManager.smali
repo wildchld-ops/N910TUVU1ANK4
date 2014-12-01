@@ -60,7 +60,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/mms/ui/ComposeMessageFragment;)V
     .locals 1
-    .param p1    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -87,7 +86,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/ui/TranslateManager;)Landroid/widget/Spinner;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/TranslateManager;
 
     iget-object v0, p0, Lcom/android/mms/ui/TranslateManager;->mSpinnerSrc:Landroid/widget/Spinner;
 
@@ -96,7 +94,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/ui/TranslateManager;)Landroid/widget/Spinner;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/TranslateManager;
 
     iget-object v0, p0, Lcom/android/mms/ui/TranslateManager;->mSpinnerTarget:Landroid/widget/Spinner;
 
@@ -105,7 +102,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/ui/TranslateManager;)Lcom/android/mms/ui/ComposeMessageFragment;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/TranslateManager;
 
     iget-object v0, p0, Lcom/android/mms/ui/TranslateManager;->mComposer:Lcom/android/mms/ui/ComposeMessageFragment;
 
@@ -114,8 +110,6 @@
 
 .method public static changeToValue(ILandroid/content/Context;)Ljava/lang/String;
     .locals 3
-    .param p0    # I
-    .param p1    # Landroid/content/Context;
 
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -144,7 +138,6 @@
 
 .method private getSubjectLabel(I)Ljava/lang/CharSequence;
     .locals 4
-    .param p1    # I
 
     const-string v0, "Subject: "
 
@@ -318,8 +311,6 @@
 
 .method private getTargetPosition(Ljava/lang/String;Ljava/lang/String;)I
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lcom/android/mms/ui/TranslateManager;->valueToString(Ljava/lang/String;)Ljava/lang/String;
 
@@ -369,7 +360,6 @@
 
 .method public static isTranslatableMms(Lcom/android/mms/ui/MessageItem;)Z
     .locals 6
-    .param p0    # Lcom/android/mms/ui/MessageItem;
 
     const/4 v0, 0x0
 
@@ -471,7 +461,6 @@
 # virtual methods
 .method public changeToPosition(Ljava/lang/String;)I
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     iget-object v2, p0, Lcom/android/mms/ui/TranslateManager;->mContext:Landroid/content/Context;
 
@@ -516,8 +505,6 @@
 
 .method public extractTranslateText(Lcom/android/mms/data/WorkingMessage;Landroid/app/Activity;)Ljava/lang/String;
     .locals 10
-    .param p1    # Lcom/android/mms/data/WorkingMessage;
-    .param p2    # Landroid/app/Activity;
 
     const/4 v9, 0x0
 
@@ -771,7 +758,6 @@
 
 .method public extractTranslateText(Lcom/android/mms/ui/MessageItem;)Ljava/lang/String;
     .locals 4
-    .param p1    # Lcom/android/mms/ui/MessageItem;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -1030,7 +1016,6 @@
 
 .method public getSupportedLanguageArrayList(Ljava/lang/String;)Ljava/util/ArrayList;
     .locals 5
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1109,7 +1094,6 @@
 
 .method public getTranslateLanguage(I)Ljava/lang/String;
     .locals 4
-    .param p1    # I
 
     const/4 v3, 0x5
 
@@ -1187,9 +1171,6 @@
 
 .method public onItemSelected(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
     .locals 5
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1372,8 +1353,6 @@
 
 .method public showNoTranslateTextDialog(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
@@ -1416,7 +1395,6 @@
 
 .method public showSignInSamsungAccount(Landroid/content/Context;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
 
     const v2, 0x7f0c03e3
 
@@ -1487,7 +1465,6 @@
 
 .method public showTranslateDialog(Landroid/content/Context;)V
     .locals 20
-    .param p1    # Landroid/content/Context;
 
     const/4 v2, 0x0
 
@@ -2013,7 +1990,6 @@
 
 .method public stringToPosition(Ljava/lang/String;)I
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     iget-object v2, p0, Lcom/android/mms/ui/TranslateManager;->mContext:Landroid/content/Context;
 
@@ -2058,7 +2034,6 @@
 
 .method public stringToValue(Ljava/lang/String;)Ljava/lang/String;
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     iget-object v4, p0, Lcom/android/mms/ui/TranslateManager;->mContext:Landroid/content/Context;
 
@@ -2122,9 +2097,6 @@
 
 .method public updateTranslateMode(Landroid/content/Context;Ljava/lang/Long;Ljava/lang/String;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/Long;
-    .param p3    # Ljava/lang/String;
 
     sget-object v0, Landroid/provider/Telephony$MmsSms;->CONTENT_URI:Landroid/net/Uri;
 
@@ -2179,7 +2151,6 @@
 
 .method public valueToString(Ljava/lang/String;)Ljava/lang/String;
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     iget-object v4, p0, Lcom/android/mms/ui/TranslateManager;->mContext:Landroid/content/Context;
 
@@ -2243,9 +2214,6 @@
 
 .method public viewTranslate(Ljava/lang/String;Landroid/app/Activity;I)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/app/Activity;
-    .param p3    # I
 
     new-instance v0, Landroid/content/Intent;
 

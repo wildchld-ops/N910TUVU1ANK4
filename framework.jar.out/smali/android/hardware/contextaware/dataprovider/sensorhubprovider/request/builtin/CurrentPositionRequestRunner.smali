@@ -27,8 +27,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/os/Looper;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/Looper;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -69,7 +67,6 @@
 
 .method public final notifyObserver(Landroid/hardware/contextaware/dataprovider/sensorhubprovider/request/builtin/CurrentPositionRequestRunner$Position;)V
     .locals 1
-    .param p1    # Landroid/hardware/contextaware/dataprovider/sensorhubprovider/request/builtin/CurrentPositionRequestRunner$Position;
 
     iget-object v0, p0, Landroid/hardware/contextaware/dataprovider/sensorhubprovider/request/builtin/CurrentPositionRequestRunner;->mListener:Landroid/hardware/contextaware/dataprovider/sensorhubprovider/ICurrentPositionRequestObserver;
 
@@ -85,8 +82,6 @@
 
 .method public final parse([BI)I
     .locals 4
-    .param p1    # [B
-    .param p2    # I
 
     move v1, p2
 
@@ -127,7 +122,6 @@
 
 .method public final registerObserver(Landroid/hardware/contextaware/dataprovider/sensorhubprovider/ICurrentPositionRequestObserver;)V
     .locals 0
-    .param p1    # Landroid/hardware/contextaware/dataprovider/sensorhubprovider/ICurrentPositionRequestObserver;
 
     iput-object p1, p0, Landroid/hardware/contextaware/dataprovider/sensorhubprovider/request/builtin/CurrentPositionRequestRunner;->mListener:Landroid/hardware/contextaware/dataprovider/sensorhubprovider/ICurrentPositionRequestObserver;
 
@@ -146,15 +140,6 @@
 
 .method public final updateCurrentPosition(I[IDDDDFFI)V
     .locals 1
-    .param p1    # I
-    .param p2    # [I
-    .param p3    # D
-    .param p5    # D
-    .param p7    # D
-    .param p9    # D
-    .param p11    # F
-    .param p12    # F
-    .param p13    # I
 
     iget-object v0, p0, Landroid/hardware/contextaware/dataprovider/sensorhubprovider/request/builtin/CurrentPositionRequestRunner;->mPosition:Landroid/hardware/contextaware/dataprovider/sensorhubprovider/request/builtin/CurrentPositionRequestRunner$Position;
 

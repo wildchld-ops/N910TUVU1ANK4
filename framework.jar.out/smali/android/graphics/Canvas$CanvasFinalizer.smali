@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(I)V
     .locals 0
-    .param p1    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -32,8 +31,6 @@
 
 .method static synthetic access$102(Landroid/graphics/Canvas$CanvasFinalizer;I)I
     .locals 0
-    .param p0    # Landroid/graphics/Canvas$CanvasFinalizer;
-    .param p1    # I
 
     iput p1, p0, Landroid/graphics/Canvas$CanvasFinalizer;->mNativeCanvas:I
 

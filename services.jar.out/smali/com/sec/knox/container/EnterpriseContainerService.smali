@@ -385,7 +385,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     const/4 v3, -0x1
 
@@ -514,7 +513,6 @@
 
 .method private OnAdminRemoval(Landroid/content/ComponentName;)V
     .locals 10
-    .param p1    # Landroid/content/ComponentName;
 
     const-string v7, "EnterpriseContainerService"
 
@@ -680,7 +678,6 @@
 
 .method static synthetic access$000(Lcom/sec/knox/container/EnterpriseContainerService;)Lcom/samsung/redexmobile/IReDexService;
     .locals 1
-    .param p0    # Lcom/sec/knox/container/EnterpriseContainerService;
 
     iget-object v0, p0, Lcom/sec/knox/container/EnterpriseContainerService;->mRedexService:Lcom/samsung/redexmobile/IReDexService;
 
@@ -689,8 +686,6 @@
 
 .method static synthetic access$002(Lcom/sec/knox/container/EnterpriseContainerService;Lcom/samsung/redexmobile/IReDexService;)Lcom/samsung/redexmobile/IReDexService;
     .locals 0
-    .param p0    # Lcom/sec/knox/container/EnterpriseContainerService;
-    .param p1    # Lcom/samsung/redexmobile/IReDexService;
 
     iput-object p1, p0, Lcom/sec/knox/container/EnterpriseContainerService;->mRedexService:Lcom/samsung/redexmobile/IReDexService;
 
@@ -699,7 +694,6 @@
 
 .method static synthetic access$100(Lcom/sec/knox/container/EnterpriseContainerService;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/sec/knox/container/EnterpriseContainerService;
 
     iget-object v0, p0, Lcom/sec/knox/container/EnterpriseContainerService;->mContext:Landroid/content/Context;
 
@@ -708,7 +702,6 @@
 
 .method static synthetic access$1000(Lcom/sec/knox/container/EnterpriseContainerService;)Lcom/sec/knox/container/manager/StateManager;
     .locals 1
-    .param p0    # Lcom/sec/knox/container/EnterpriseContainerService;
 
     iget-object v0, p0, Lcom/sec/knox/container/EnterpriseContainerService;->mStateManager:Lcom/sec/knox/container/manager/StateManager;
 
@@ -717,8 +710,6 @@
 
 .method static synthetic access$1002(Lcom/sec/knox/container/EnterpriseContainerService;Lcom/sec/knox/container/manager/StateManager;)Lcom/sec/knox/container/manager/StateManager;
     .locals 0
-    .param p0    # Lcom/sec/knox/container/EnterpriseContainerService;
-    .param p1    # Lcom/sec/knox/container/manager/StateManager;
 
     iput-object p1, p0, Lcom/sec/knox/container/EnterpriseContainerService;->mStateManager:Lcom/sec/knox/container/manager/StateManager;
 
@@ -727,10 +718,6 @@
 
 .method static synthetic access$1100(Lcom/sec/knox/container/EnterpriseContainerService;Landroid/content/Context;IZ)V
     .locals 0
-    .param p0    # Lcom/sec/knox/container/EnterpriseContainerService;
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Z
 
     invoke-direct {p0, p1, p2, p3}, Lcom/sec/knox/container/EnterpriseContainerService;->scheduleTimer(Landroid/content/Context;IZ)V
 
@@ -739,7 +726,6 @@
 
 .method static synthetic access$1200(Lcom/sec/knox/container/EnterpriseContainerService;)I
     .locals 1
-    .param p0    # Lcom/sec/knox/container/EnterpriseContainerService;
 
     iget v0, p0, Lcom/sec/knox/container/EnterpriseContainerService;->mContainerId:I
 
@@ -748,7 +734,6 @@
 
 .method static synthetic access$1300(Lcom/sec/knox/container/EnterpriseContainerService;)I
     .locals 1
-    .param p0    # Lcom/sec/knox/container/EnterpriseContainerService;
 
     invoke-direct {p0}, Lcom/sec/knox/container/EnterpriseContainerService;->getWakeLockCounter()I
 
@@ -759,7 +744,6 @@
 
 .method static synthetic access$1400(Lcom/sec/knox/container/EnterpriseContainerService;)Lcom/sec/knox/container/EnterpriseContainerService$RequestIdGenerator;
     .locals 1
-    .param p0    # Lcom/sec/knox/container/EnterpriseContainerService;
 
     iget-object v0, p0, Lcom/sec/knox/container/EnterpriseContainerService;->mRIdGenerator:Lcom/sec/knox/container/EnterpriseContainerService$RequestIdGenerator;
 
@@ -768,8 +752,6 @@
 
 .method static synthetic access$1402(Lcom/sec/knox/container/EnterpriseContainerService;Lcom/sec/knox/container/EnterpriseContainerService$RequestIdGenerator;)Lcom/sec/knox/container/EnterpriseContainerService$RequestIdGenerator;
     .locals 0
-    .param p0    # Lcom/sec/knox/container/EnterpriseContainerService;
-    .param p1    # Lcom/sec/knox/container/EnterpriseContainerService$RequestIdGenerator;
 
     iput-object p1, p0, Lcom/sec/knox/container/EnterpriseContainerService;->mRIdGenerator:Lcom/sec/knox/container/EnterpriseContainerService$RequestIdGenerator;
 
@@ -778,7 +760,6 @@
 
 .method static synthetic access$1500(Lcom/sec/knox/container/EnterpriseContainerService;)Ljava/util/HashMap;
     .locals 1
-    .param p0    # Lcom/sec/knox/container/EnterpriseContainerService;
 
     iget-object v0, p0, Lcom/sec/knox/container/EnterpriseContainerService;->mIBinderMap:Ljava/util/HashMap;
 
@@ -787,7 +768,6 @@
 
 .method static synthetic access$1600(Lcom/sec/knox/container/EnterpriseContainerService;)Ljava/util/HashMap;
     .locals 1
-    .param p0    # Lcom/sec/knox/container/EnterpriseContainerService;
 
     iget-object v0, p0, Lcom/sec/knox/container/EnterpriseContainerService;->mDeathCallbackMap:Ljava/util/HashMap;
 
@@ -796,7 +776,6 @@
 
 .method static synthetic access$1700(Lcom/sec/knox/container/EnterpriseContainerService;)V
     .locals 0
-    .param p0    # Lcom/sec/knox/container/EnterpriseContainerService;
 
     invoke-direct {p0}, Lcom/sec/knox/container/EnterpriseContainerService;->incrementWakeLock()V
 
@@ -805,8 +784,6 @@
 
 .method static synthetic access$1800(Lcom/sec/knox/container/EnterpriseContainerService;I)V
     .locals 0
-    .param p0    # Lcom/sec/knox/container/EnterpriseContainerService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/sec/knox/container/EnterpriseContainerService;->killTimer(I)V
 
@@ -815,7 +792,6 @@
 
 .method static synthetic access$1900(Lcom/sec/knox/container/EnterpriseContainerService;)V
     .locals 0
-    .param p0    # Lcom/sec/knox/container/EnterpriseContainerService;
 
     invoke-direct {p0}, Lcom/sec/knox/container/EnterpriseContainerService;->decrementWakeLock()V
 
@@ -824,7 +800,6 @@
 
 .method static synthetic access$200(Lcom/sec/knox/container/EnterpriseContainerService;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/sec/knox/container/EnterpriseContainerService;
 
     iget-object v0, p0, Lcom/sec/knox/container/EnterpriseContainerService;->mWakeLockHandler:Landroid/os/Handler;
 
@@ -833,9 +808,6 @@
 
 .method static synthetic access$2000(Lcom/sec/knox/container/EnterpriseContainerService;Landroid/content/Context;I)V
     .locals 0
-    .param p0    # Lcom/sec/knox/container/EnterpriseContainerService;
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/sec/knox/container/EnterpriseContainerService;->scheduleTimer(Landroid/content/Context;I)V
 
@@ -844,8 +816,6 @@
 
 .method static synthetic access$202(Lcom/sec/knox/container/EnterpriseContainerService;Landroid/os/Handler;)Landroid/os/Handler;
     .locals 0
-    .param p0    # Lcom/sec/knox/container/EnterpriseContainerService;
-    .param p1    # Landroid/os/Handler;
 
     iput-object p1, p0, Lcom/sec/knox/container/EnterpriseContainerService;->mWakeLockHandler:Landroid/os/Handler;
 
@@ -854,7 +824,6 @@
 
 .method static synthetic access$2100(Lcom/sec/knox/container/EnterpriseContainerService;)V
     .locals 0
-    .param p0    # Lcom/sec/knox/container/EnterpriseContainerService;
 
     invoke-direct {p0}, Lcom/sec/knox/container/EnterpriseContainerService;->cleanUpBinder()V
 
@@ -863,8 +832,6 @@
 
 .method static synthetic access$2202(Lcom/sec/knox/container/EnterpriseContainerService;Lcom/sec/knox/container/contentprovider/ContainerDatabase;)Lcom/sec/knox/container/contentprovider/ContainerDatabase;
     .locals 0
-    .param p0    # Lcom/sec/knox/container/EnterpriseContainerService;
-    .param p1    # Lcom/sec/knox/container/contentprovider/ContainerDatabase;
 
     iput-object p1, p0, Lcom/sec/knox/container/EnterpriseContainerService;->mDatabase:Lcom/sec/knox/container/contentprovider/ContainerDatabase;
 
@@ -873,8 +840,6 @@
 
 .method static synthetic access$2302(Lcom/sec/knox/container/EnterpriseContainerService;Lcom/sec/knox/container/manager/EnterpriseContainerCallbackList;)Lcom/sec/knox/container/manager/EnterpriseContainerCallbackList;
     .locals 0
-    .param p0    # Lcom/sec/knox/container/EnterpriseContainerService;
-    .param p1    # Lcom/sec/knox/container/manager/EnterpriseContainerCallbackList;
 
     iput-object p1, p0, Lcom/sec/knox/container/EnterpriseContainerService;->mCallbackMgr:Lcom/sec/knox/container/manager/EnterpriseContainerCallbackList;
 
@@ -883,8 +848,6 @@
 
 .method static synthetic access$2402(Lcom/sec/knox/container/EnterpriseContainerService;Lcom/sec/knox/container/EnterpriseContainerService$ContainerCallbackManager;)Lcom/sec/knox/container/EnterpriseContainerService$ContainerCallbackManager;
     .locals 0
-    .param p0    # Lcom/sec/knox/container/EnterpriseContainerService;
-    .param p1    # Lcom/sec/knox/container/EnterpriseContainerService$ContainerCallbackManager;
 
     iput-object p1, p0, Lcom/sec/knox/container/EnterpriseContainerService;->mCreateContainerCallbackMgr:Lcom/sec/knox/container/EnterpriseContainerService$ContainerCallbackManager;
 
@@ -893,8 +856,6 @@
 
 .method static synthetic access$2502(Lcom/sec/knox/container/EnterpriseContainerService;Lcom/sec/knox/container/EnterpriseContainerService$ContainerCallbackManager;)Lcom/sec/knox/container/EnterpriseContainerService$ContainerCallbackManager;
     .locals 0
-    .param p0    # Lcom/sec/knox/container/EnterpriseContainerService;
-    .param p1    # Lcom/sec/knox/container/EnterpriseContainerService$ContainerCallbackManager;
 
     iput-object p1, p0, Lcom/sec/knox/container/EnterpriseContainerService;->mRemoveContainerCallbackMgr:Lcom/sec/knox/container/EnterpriseContainerService$ContainerCallbackManager;
 
@@ -903,8 +864,6 @@
 
 .method static synthetic access$2602(Lcom/sec/knox/container/EnterpriseContainerService;Lcom/sec/knox/container/EnterpriseContainerService$ContainerCallbackManager;)Lcom/sec/knox/container/EnterpriseContainerService$ContainerCallbackManager;
     .locals 0
-    .param p0    # Lcom/sec/knox/container/EnterpriseContainerService;
-    .param p1    # Lcom/sec/knox/container/EnterpriseContainerService$ContainerCallbackManager;
 
     iput-object p1, p0, Lcom/sec/knox/container/EnterpriseContainerService;->mChangeContainerPwdCallbackMgr:Lcom/sec/knox/container/EnterpriseContainerService$ContainerCallbackManager;
 
@@ -913,7 +872,6 @@
 
 .method static synthetic access$2700(Lcom/sec/knox/container/EnterpriseContainerService;)Lcom/sec/knox/container/EnterpriseContainerService$ContainerCallbackManager;
     .locals 1
-    .param p0    # Lcom/sec/knox/container/EnterpriseContainerService;
 
     iget-object v0, p0, Lcom/sec/knox/container/EnterpriseContainerService;->mVerifyContainerPwdCallbackMgr:Lcom/sec/knox/container/EnterpriseContainerService$ContainerCallbackManager;
 
@@ -922,8 +880,6 @@
 
 .method static synthetic access$2702(Lcom/sec/knox/container/EnterpriseContainerService;Lcom/sec/knox/container/EnterpriseContainerService$ContainerCallbackManager;)Lcom/sec/knox/container/EnterpriseContainerService$ContainerCallbackManager;
     .locals 0
-    .param p0    # Lcom/sec/knox/container/EnterpriseContainerService;
-    .param p1    # Lcom/sec/knox/container/EnterpriseContainerService$ContainerCallbackManager;
 
     iput-object p1, p0, Lcom/sec/knox/container/EnterpriseContainerService;->mVerifyContainerPwdCallbackMgr:Lcom/sec/knox/container/EnterpriseContainerService$ContainerCallbackManager;
 
@@ -932,7 +888,6 @@
 
 .method static synthetic access$2800(Lcom/sec/knox/container/EnterpriseContainerService;)Lcom/sec/knox/container/EnterpriseContainerPasswordService;
     .locals 1
-    .param p0    # Lcom/sec/knox/container/EnterpriseContainerService;
 
     iget-object v0, p0, Lcom/sec/knox/container/EnterpriseContainerService;->mPasswordService:Lcom/sec/knox/container/EnterpriseContainerPasswordService;
 
@@ -941,8 +896,6 @@
 
 .method static synthetic access$2802(Lcom/sec/knox/container/EnterpriseContainerService;Lcom/sec/knox/container/EnterpriseContainerPasswordService;)Lcom/sec/knox/container/EnterpriseContainerPasswordService;
     .locals 0
-    .param p0    # Lcom/sec/knox/container/EnterpriseContainerService;
-    .param p1    # Lcom/sec/knox/container/EnterpriseContainerPasswordService;
 
     iput-object p1, p0, Lcom/sec/knox/container/EnterpriseContainerService;->mPasswordService:Lcom/sec/knox/container/EnterpriseContainerPasswordService;
 
@@ -951,7 +904,6 @@
 
 .method static synthetic access$2900(Lcom/sec/knox/container/EnterpriseContainerService;)V
     .locals 0
-    .param p0    # Lcom/sec/knox/container/EnterpriseContainerService;
 
     invoke-direct {p0}, Lcom/sec/knox/container/EnterpriseContainerService;->initializeDPMActiveAdminList()V
 
@@ -960,7 +912,6 @@
 
 .method static synthetic access$300(Lcom/sec/knox/container/EnterpriseContainerService;)Z
     .locals 1
-    .param p0    # Lcom/sec/knox/container/EnterpriseContainerService;
 
     invoke-direct {p0}, Lcom/sec/knox/container/EnterpriseContainerService;->checkIfAdminHasBeenRemoved()Z
 
@@ -971,7 +922,6 @@
 
 .method static synthetic access$3000(Lcom/sec/knox/container/EnterpriseContainerService;)V
     .locals 0
-    .param p0    # Lcom/sec/knox/container/EnterpriseContainerService;
 
     invoke-direct {p0}, Lcom/sec/knox/container/EnterpriseContainerService;->registerReciever()V
 
@@ -980,7 +930,6 @@
 
 .method static synthetic access$3100(Lcom/sec/knox/container/EnterpriseContainerService;)Landroid/dirEncryption/DirEncryptionManager;
     .locals 1
-    .param p0    # Lcom/sec/knox/container/EnterpriseContainerService;
 
     iget-object v0, p0, Lcom/sec/knox/container/EnterpriseContainerService;->mDirEncryptionManager:Landroid/dirEncryption/DirEncryptionManager;
 
@@ -989,8 +938,6 @@
 
 .method static synthetic access$3102(Lcom/sec/knox/container/EnterpriseContainerService;Landroid/dirEncryption/DirEncryptionManager;)Landroid/dirEncryption/DirEncryptionManager;
     .locals 0
-    .param p0    # Lcom/sec/knox/container/EnterpriseContainerService;
-    .param p1    # Landroid/dirEncryption/DirEncryptionManager;
 
     iput-object p1, p0, Lcom/sec/knox/container/EnterpriseContainerService;->mDirEncryptionManager:Landroid/dirEncryption/DirEncryptionManager;
 
@@ -999,7 +946,6 @@
 
 .method static synthetic access$3200(Lcom/sec/knox/container/EnterpriseContainerService;)Landroid/os/PowerManager;
     .locals 1
-    .param p0    # Lcom/sec/knox/container/EnterpriseContainerService;
 
     iget-object v0, p0, Lcom/sec/knox/container/EnterpriseContainerService;->mPowerManager:Landroid/os/PowerManager;
 
@@ -1008,8 +954,6 @@
 
 .method static synthetic access$3202(Lcom/sec/knox/container/EnterpriseContainerService;Landroid/os/PowerManager;)Landroid/os/PowerManager;
     .locals 0
-    .param p0    # Lcom/sec/knox/container/EnterpriseContainerService;
-    .param p1    # Landroid/os/PowerManager;
 
     iput-object p1, p0, Lcom/sec/knox/container/EnterpriseContainerService;->mPowerManager:Landroid/os/PowerManager;
 
@@ -1026,7 +970,6 @@
 
 .method static synthetic access$3302(Landroid/os/PowerManager$WakeLock;)Landroid/os/PowerManager$WakeLock;
     .locals 0
-    .param p0    # Landroid/os/PowerManager$WakeLock;
 
     sput-object p0, Lcom/sec/knox/container/EnterpriseContainerService;->mWakeLock:Landroid/os/PowerManager$WakeLock;
 
@@ -1035,8 +978,6 @@
 
 .method static synthetic access$3402(Lcom/sec/knox/container/EnterpriseContainerService;Lcom/sec/enterprise/knox/vpn/IEnterprisePremiumVpnPolicy;)Lcom/sec/enterprise/knox/vpn/IEnterprisePremiumVpnPolicy;
     .locals 0
-    .param p0    # Lcom/sec/knox/container/EnterpriseContainerService;
-    .param p1    # Lcom/sec/enterprise/knox/vpn/IEnterprisePremiumVpnPolicy;
 
     iput-object p1, p0, Lcom/sec/knox/container/EnterpriseContainerService;->mVpnService:Lcom/sec/enterprise/knox/vpn/IEnterprisePremiumVpnPolicy;
 
@@ -1045,7 +986,6 @@
 
 .method static synthetic access$3500(Lcom/sec/knox/container/EnterpriseContainerService;)Lcom/sec/enterprise/knox/vpn/IEnterprisePremiumVpnPolicy;
     .locals 1
-    .param p0    # Lcom/sec/knox/container/EnterpriseContainerService;
 
     invoke-direct {p0}, Lcom/sec/knox/container/EnterpriseContainerService;->getVpnService()Lcom/sec/enterprise/knox/vpn/IEnterprisePremiumVpnPolicy;
 
@@ -1056,8 +996,6 @@
 
 .method static synthetic access$3602(Lcom/sec/knox/container/EnterpriseContainerService;Lcom/sec/enterprise/knox/vpn/IEnterpriseVpnPolicy;)Lcom/sec/enterprise/knox/vpn/IEnterpriseVpnPolicy;
     .locals 0
-    .param p0    # Lcom/sec/knox/container/EnterpriseContainerService;
-    .param p1    # Lcom/sec/enterprise/knox/vpn/IEnterpriseVpnPolicy;
 
     iput-object p1, p0, Lcom/sec/knox/container/EnterpriseContainerService;->mGenericVpnService:Lcom/sec/enterprise/knox/vpn/IEnterpriseVpnPolicy;
 
@@ -1066,7 +1004,6 @@
 
 .method static synthetic access$3700(Lcom/sec/knox/container/EnterpriseContainerService;)Lcom/sec/enterprise/knox/vpn/IEnterpriseVpnPolicy;
     .locals 1
-    .param p0    # Lcom/sec/knox/container/EnterpriseContainerService;
 
     invoke-direct {p0}, Lcom/sec/knox/container/EnterpriseContainerService;->getGenericVpnService()Lcom/sec/enterprise/knox/vpn/IEnterpriseVpnPolicy;
 
@@ -1077,7 +1014,6 @@
 
 .method static synthetic access$3800(Lcom/sec/knox/container/EnterpriseContainerService;)V
     .locals 0
-    .param p0    # Lcom/sec/knox/container/EnterpriseContainerService;
 
     invoke-direct {p0}, Lcom/sec/knox/container/EnterpriseContainerService;->initialiseContainer()V
 
@@ -1086,8 +1022,6 @@
 
 .method static synthetic access$3902(Lcom/sec/knox/container/EnterpriseContainerService;Z)Z
     .locals 0
-    .param p0    # Lcom/sec/knox/container/EnterpriseContainerService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/knox/container/EnterpriseContainerService;->isServiceInitialized:Z
 
@@ -1096,7 +1030,6 @@
 
 .method static synthetic access$400(Lcom/sec/knox/container/EnterpriseContainerService;)V
     .locals 0
-    .param p0    # Lcom/sec/knox/container/EnterpriseContainerService;
 
     invoke-direct {p0}, Lcom/sec/knox/container/EnterpriseContainerService;->bindRedexService()V
 
@@ -1105,9 +1038,6 @@
 
 .method static synthetic access$4000(Lcom/sec/knox/container/EnterpriseContainerService;ILcom/sec/enterprise/knox/IEnterpriseContainerCallback;)Z
     .locals 1
-    .param p0    # Lcom/sec/knox/container/EnterpriseContainerService;
-    .param p1    # I
-    .param p2    # Lcom/sec/enterprise/knox/IEnterpriseContainerCallback;
 
     invoke-direct {p0, p1, p2}, Lcom/sec/knox/container/EnterpriseContainerService;->removeContainerHelper(ILcom/sec/enterprise/knox/IEnterpriseContainerCallback;)Z
 
@@ -1118,8 +1048,6 @@
 
 .method static synthetic access$4100(Lcom/sec/knox/container/EnterpriseContainerService;I)Z
     .locals 1
-    .param p0    # Lcom/sec/knox/container/EnterpriseContainerService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/sec/knox/container/EnterpriseContainerService;->changePasswordIfPasswordHasExpired(I)Z
 
@@ -1130,8 +1058,6 @@
 
 .method static synthetic access$4200(Lcom/sec/knox/container/EnterpriseContainerService;I)V
     .locals 0
-    .param p0    # Lcom/sec/knox/container/EnterpriseContainerService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/sec/knox/container/EnterpriseContainerService;->sendContainerSetupSuccessMessage(I)V
 
@@ -1140,8 +1066,6 @@
 
 .method static synthetic access$4300(Lcom/sec/knox/container/EnterpriseContainerService;I)V
     .locals 0
-    .param p0    # Lcom/sec/knox/container/EnterpriseContainerService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/sec/knox/container/EnterpriseContainerService;->loadPasswordInfoToCache(I)V
 
@@ -1150,7 +1074,6 @@
 
 .method static synthetic access$4400(Lcom/sec/knox/container/EnterpriseContainerService;)V
     .locals 0
-    .param p0    # Lcom/sec/knox/container/EnterpriseContainerService;
 
     invoke-direct {p0}, Lcom/sec/knox/container/EnterpriseContainerService;->startContainerEventsRelayManager()V
 
@@ -1159,10 +1082,6 @@
 
 .method static synthetic access$4500(Lcom/sec/knox/container/EnterpriseContainerService;III)V
     .locals 0
-    .param p0    # Lcom/sec/knox/container/EnterpriseContainerService;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Lcom/sec/knox/container/EnterpriseContainerService;->unmount(III)V
 
@@ -1171,10 +1090,6 @@
 
 .method static synthetic access$4600(Lcom/sec/knox/container/EnterpriseContainerService;III)V
     .locals 0
-    .param p0    # Lcom/sec/knox/container/EnterpriseContainerService;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Lcom/sec/knox/container/EnterpriseContainerService;->setupContainerRemountFailureMessage(III)V
 
@@ -1183,9 +1098,6 @@
 
 .method static synthetic access$4700(Lcom/sec/knox/container/EnterpriseContainerService;II)V
     .locals 0
-    .param p0    # Lcom/sec/knox/container/EnterpriseContainerService;
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/sec/knox/container/EnterpriseContainerService;->setupContainerCreationFailureMessage(II)V
 
@@ -1194,8 +1106,6 @@
 
 .method static synthetic access$4800(Lcom/sec/knox/container/EnterpriseContainerService;I)V
     .locals 0
-    .param p0    # Lcom/sec/knox/container/EnterpriseContainerService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/sec/knox/container/EnterpriseContainerService;->cleanupContainer(I)V
 
@@ -1204,7 +1114,6 @@
 
 .method static synthetic access$4900(Lcom/sec/knox/container/EnterpriseContainerService;)Ljava/util/HashMap;
     .locals 1
-    .param p0    # Lcom/sec/knox/container/EnterpriseContainerService;
 
     iget-object v0, p0, Lcom/sec/knox/container/EnterpriseContainerService;->mMountCallBackData:Ljava/util/HashMap;
 
@@ -1213,8 +1122,6 @@
 
 .method static synthetic access$500(Lcom/sec/knox/container/EnterpriseContainerService;I)Z
     .locals 1
-    .param p0    # Lcom/sec/knox/container/EnterpriseContainerService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/sec/knox/container/EnterpriseContainerService;->checkExistence(I)Z
 
@@ -1225,7 +1132,6 @@
 
 .method static synthetic access$5000(Lcom/sec/knox/container/EnterpriseContainerService;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/sec/knox/container/EnterpriseContainerService;
 
     iget-object v0, p0, Lcom/sec/knox/container/EnterpriseContainerService;->mActiveAdminList:Ljava/util/ArrayList;
 
@@ -1234,7 +1140,6 @@
 
 .method static synthetic access$5100(Lcom/sec/knox/container/EnterpriseContainerService;)Lcom/android/server/enterprise/application/ApplicationPolicy;
     .locals 1
-    .param p0    # Lcom/sec/knox/container/EnterpriseContainerService;
 
     invoke-direct {p0}, Lcom/sec/knox/container/EnterpriseContainerService;->getApplicationPolicy()Lcom/android/server/enterprise/application/ApplicationPolicy;
 
@@ -1245,9 +1150,6 @@
 
 .method static synthetic access$5200(Lcom/sec/knox/container/EnterpriseContainerService;ILjava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/sec/knox/container/EnterpriseContainerService;
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Lcom/sec/knox/container/EnterpriseContainerService;->getOriginalPackageNameInternal(ILjava/lang/String;)Ljava/lang/String;
 
@@ -1258,8 +1160,6 @@
 
 .method static synthetic access$5300(Lcom/sec/knox/container/EnterpriseContainerService;I)V
     .locals 0
-    .param p0    # Lcom/sec/knox/container/EnterpriseContainerService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/sec/knox/container/EnterpriseContainerService;->sendContainerCreationIntent(I)V
 
@@ -1268,8 +1168,6 @@
 
 .method static synthetic access$5400(Lcom/sec/knox/container/EnterpriseContainerService;I)V
     .locals 0
-    .param p0    # Lcom/sec/knox/container/EnterpriseContainerService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/sec/knox/container/EnterpriseContainerService;->killUnmountTimer(I)V
 
@@ -1278,8 +1176,6 @@
 
 .method static synthetic access$5500(Lcom/sec/knox/container/EnterpriseContainerService;I)Z
     .locals 1
-    .param p0    # Lcom/sec/knox/container/EnterpriseContainerService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/sec/knox/container/EnterpriseContainerService;->isContainerPartition(I)Z
 
@@ -1290,9 +1186,6 @@
 
 .method static synthetic access$5600(Lcom/sec/knox/container/EnterpriseContainerService;Lcom/sec/knox/container/EnterpriseContainerObjectParam;I)Z
     .locals 1
-    .param p0    # Lcom/sec/knox/container/EnterpriseContainerService;
-    .param p1    # Lcom/sec/knox/container/EnterpriseContainerObjectParam;
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/sec/knox/container/EnterpriseContainerService;->addOrUpdateContainerToDB(Lcom/sec/knox/container/EnterpriseContainerObjectParam;I)Z
 
@@ -1303,10 +1196,6 @@
 
 .method static synthetic access$5700(Lcom/sec/knox/container/EnterpriseContainerService;Lcom/sec/knox/container/EnterpriseContainerObjectParam;II)V
     .locals 0
-    .param p0    # Lcom/sec/knox/container/EnterpriseContainerService;
-    .param p1    # Lcom/sec/knox/container/EnterpriseContainerObjectParam;
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Lcom/sec/knox/container/EnterpriseContainerService;->addContainerToCache(Lcom/sec/knox/container/EnterpriseContainerObjectParam;II)V
 
@@ -1315,8 +1204,6 @@
 
 .method static synthetic access$5800(Lcom/sec/knox/container/EnterpriseContainerService;I)V
     .locals 0
-    .param p0    # Lcom/sec/knox/container/EnterpriseContainerService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/sec/knox/container/EnterpriseContainerService;->removeUntrustedContainerApps(I)V
 
@@ -1325,7 +1212,6 @@
 
 .method static synthetic access$5900(Lcom/sec/knox/container/EnterpriseContainerService;)V
     .locals 0
-    .param p0    # Lcom/sec/knox/container/EnterpriseContainerService;
 
     invoke-direct {p0}, Lcom/sec/knox/container/EnterpriseContainerService;->acquireLock()V
 
@@ -1342,7 +1228,6 @@
 
 .method static synthetic access$6000(Lcom/sec/knox/container/EnterpriseContainerService;)V
     .locals 0
-    .param p0    # Lcom/sec/knox/container/EnterpriseContainerService;
 
     invoke-direct {p0}, Lcom/sec/knox/container/EnterpriseContainerService;->releaseLock()V
 
@@ -1351,8 +1236,6 @@
 
 .method static synthetic access$6100(Lcom/sec/knox/container/EnterpriseContainerService;Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/sec/knox/container/EnterpriseContainerService;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/sec/knox/container/EnterpriseContainerService;->getValidStr(Ljava/lang/String;)Ljava/lang/String;
 
@@ -1363,9 +1246,6 @@
 
 .method static synthetic access$6200(Lcom/sec/knox/container/EnterpriseContainerService;Ljava/lang/String;I)Lcom/sec/knox/container/EnterpriseContainerService$PackageInstallObserver;
     .locals 1
-    .param p0    # Lcom/sec/knox/container/EnterpriseContainerService;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/sec/knox/container/EnterpriseContainerService;->installPackageInternal(Ljava/lang/String;I)Lcom/sec/knox/container/EnterpriseContainerService$PackageInstallObserver;
 
@@ -1376,8 +1256,6 @@
 
 .method static synthetic access$6300(Lcom/sec/knox/container/EnterpriseContainerService;Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Lcom/sec/knox/container/EnterpriseContainerService;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/sec/knox/container/EnterpriseContainerService;->checkInstalledPackageSignature(Ljava/lang/String;)Z
 
@@ -1388,11 +1266,6 @@
 
 .method static synthetic access$700(Lcom/sec/knox/container/EnterpriseContainerService;ILjava/lang/String;Ljava/lang/String;I)Z
     .locals 1
-    .param p0    # Lcom/sec/knox/container/EnterpriseContainerService;
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/sec/knox/container/EnterpriseContainerService;->updateContainerEmailId(ILjava/lang/String;Ljava/lang/String;I)Z
 
@@ -1403,7 +1276,6 @@
 
 .method static synthetic access$800(Lcom/sec/knox/container/EnterpriseContainerService;)Lcom/sec/knox/container/EnterpriseContainerService$ContainerServiceHandler;
     .locals 1
-    .param p0    # Lcom/sec/knox/container/EnterpriseContainerService;
 
     iget-object v0, p0, Lcom/sec/knox/container/EnterpriseContainerService;->mThreadHandler:Lcom/sec/knox/container/EnterpriseContainerService$ContainerServiceHandler;
 
@@ -1459,7 +1331,6 @@
 
 .method private actOnWrongPasswordAttempt(I)V
     .locals 6
-    .param p1    # I
 
     const/4 v5, 0x0
 
@@ -1560,8 +1431,6 @@
 
 .method private activatePasswordAndContainer(ILjava/lang/String;)Z
     .locals 5
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     iget-object v2, p0, Lcom/sec/knox/container/EnterpriseContainerService;->mStateManager:Lcom/sec/knox/container/manager/StateManager;
 
@@ -1632,9 +1501,6 @@
 
 .method private addContainerToCache(Lcom/sec/knox/container/EnterpriseContainerObjectParam;II)V
     .locals 3
-    .param p1    # Lcom/sec/knox/container/EnterpriseContainerObjectParam;
-    .param p2    # I
-    .param p3    # I
 
     new-instance v0, Lcom/sec/knox/container/contentprovider/EnterpriseContainerCacheObject;
 
@@ -1711,8 +1577,6 @@
 
 .method private addOrUpdateContainerToDB(Lcom/sec/knox/container/EnterpriseContainerObjectParam;I)Z
     .locals 7
-    .param p1    # Lcom/sec/knox/container/EnterpriseContainerObjectParam;
-    .param p2    # I
 
     const/4 v4, 0x0
 
@@ -1972,10 +1836,6 @@
 
 .method private changeContainerPassword(ILjava/lang/String;Ljava/lang/String;Lcom/sec/enterprise/knox/IEnterpriseContainerCallback;)V
     .locals 25
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Lcom/sec/enterprise/knox/IEnterpriseContainerCallback;
 
     const-string v3, "EnterpriseContainerService"
 
@@ -2469,7 +2329,6 @@
 
 .method private changePasswordIfPasswordHasExpired(I)Z
     .locals 2
-    .param p1    # I
 
     const-string v0, "EnterpriseContainerService"
 
@@ -2488,8 +2347,6 @@
 
 .method private changePasswordIfPasswordHasExpired(IZ)Z
     .locals 5
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v1, 0x1
 
@@ -2582,7 +2439,6 @@
 
 .method private checkExistence(I)Z
     .locals 3
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/knox/container/EnterpriseContainerService;->mStateManager:Lcom/sec/knox/container/manager/StateManager;
 
@@ -2736,7 +2592,6 @@
 
 .method private checkIfB2CContainer(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "B2C_CONTAINER"
 
@@ -2759,8 +2614,6 @@
 
 .method private checkIfContainerizedApp(II)Z
     .locals 11
-    .param p1    # I
-    .param p2    # I
 
     const/4 v8, -0x1
 
@@ -2943,7 +2796,6 @@
 
 .method private checkIfUninstallWhitelistPackage(I)Z
     .locals 12
-    .param p1    # I
 
     iget-object v9, p0, Lcom/sec/knox/container/EnterpriseContainerService;->mContext:Landroid/content/Context;
 
@@ -3044,7 +2896,6 @@
 
 .method private checkIfWhitelistedApp(I)Z
     .locals 12
-    .param p1    # I
 
     iget-object v9, p0, Lcom/sec/knox/container/EnterpriseContainerService;->mContext:Landroid/content/Context;
 
@@ -3145,7 +2996,6 @@
 
 .method private checkInstalledPackageSignature(Ljava/lang/String;)Z
     .locals 17
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -3474,7 +3324,6 @@
 
 .method private checkMount(Z)Z
     .locals 11
-    .param p1    # Z
 
     const/4 v8, 0x0
 
@@ -3839,7 +3688,6 @@
 
 .method private cleanupContainer(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "EnterpriseContainerService"
 
@@ -3918,7 +3766,6 @@
 
 .method private clearVerifyCallback(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/knox/container/EnterpriseContainerService;->mVerifyContainerPwdCallbackMgr:Lcom/sec/knox/container/EnterpriseContainerService$ContainerCallbackManager;
 
@@ -4140,7 +3987,6 @@
 
 .method private enforceEnterpriseContainerPermission(I)I
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -4158,8 +4004,6 @@
 
 .method private enforceEnterpriseContainerPermission(II)I
     .locals 4
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -4309,9 +4153,6 @@
 
 .method private enforcePackageManagerPermissionForContainerizedApps(IILjava/lang/String;)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     const/16 v0, 0x3e8
 
@@ -4581,7 +4422,6 @@
 
 .method private getActivitynameForPackage(Ljava/lang/String;)Ljava/lang/String;
     .locals 11
-    .param p1    # Ljava/lang/String;
 
     const/4 v7, 0x0
 
@@ -4709,7 +4549,6 @@
 
 .method private getCertificateForPackage(Ljava/lang/String;)Ljava/security/cert/X509Certificate;
     .locals 13
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -4901,7 +4740,6 @@
 
 .method private getCommandResult(Ljava/lang/Process;)Ljava/lang/String;
     .locals 10
-    .param p1    # Ljava/lang/Process;
 
     const/16 v6, 0x400
 
@@ -5175,7 +5013,6 @@
 
 .method private getContainerIdFromAppId(I)I
     .locals 10
-    .param p1    # I
 
     iget-object v9, p0, Lcom/sec/knox/container/EnterpriseContainerService;->mContext:Landroid/content/Context;
 
@@ -5241,7 +5078,6 @@
 
 .method private getContainerStatus(I)I
     .locals 5
-    .param p1    # I
 
     const/4 v0, -0x1
 
@@ -5332,7 +5168,6 @@
 
 .method private getContainerTypeInternal(I)I
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Lcom/sec/knox/container/EnterpriseContainerService;->mStateManager:Lcom/sec/knox/container/manager/StateManager;
 
@@ -5462,8 +5297,6 @@
 
 .method private getEcryptfsKey(Ljava/lang/String;Ljava/lang/StringBuilder;)I
     .locals 12
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/StringBuilder;
 
     invoke-direct {p0}, Lcom/sec/knox/container/EnterpriseContainerService;->getTimaService()Landroid/service/tima/ITimaService;
 
@@ -5792,7 +5625,6 @@
 
 .method private getKnoxApplicationPolicy(I)Lcom/sec/enterprise/knox/ContainerApplicationPolicy;
     .locals 3
-    .param p1    # I
 
     invoke-static {}, Lcom/sec/enterprise/knox/EnterpriseKnoxManager;->getInstance()Lcom/sec/enterprise/knox/EnterpriseKnoxManager;
 
@@ -5850,8 +5682,6 @@
 
 .method private getOriginalPackageNameInternal(ILjava/lang/String;)Ljava/lang/String;
     .locals 10
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     iget-object v7, p0, Lcom/sec/knox/container/EnterpriseContainerService;->mStateManager:Lcom/sec/knox/container/manager/StateManager;
 
@@ -6004,7 +5834,6 @@
 
 .method private getOriginalPackageNamesInternal(I)Ljava/util/List;
     .locals 10
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -6112,7 +5941,6 @@
 
 .method private getPlatformContainerState(Lcom/sec/knox/container/constants/CSState;)I
     .locals 3
-    .param p1    # Lcom/sec/knox/container/constants/CSState;
 
     const/4 v0, -0x1
 
@@ -6229,7 +6057,6 @@
 
 .method private getValidStr(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -6422,8 +6249,6 @@
 
 .method private installPackageInternal(Ljava/lang/String;I)Lcom/sec/knox/container/EnterpriseContainerService$PackageInstallObserver;
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v8, 0x1
 
@@ -6642,7 +6467,6 @@
 
 .method private isContainerPackageInstallable(I)Z
     .locals 4
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -6702,7 +6526,6 @@
 
 .method private isContainerPartition(I)Z
     .locals 5
-    .param p1    # I
 
     new-instance v0, Ljava/io/File;
 
@@ -6808,8 +6631,6 @@
 
 .method private isPackageInInstallWhiteList(II)Z
     .locals 11
-    .param p1    # I
-    .param p2    # I
 
     const-string v8, "EnterpriseContainerService"
 
@@ -6914,9 +6735,6 @@
 
 .method private isPasswordForbiddenInternal(ILjava/lang/String;Z)Z
     .locals 7
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -7059,7 +6877,6 @@
 
 .method private killTimer(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/knox/container/EnterpriseContainerService;->mPasswordService:Lcom/sec/knox/container/EnterpriseContainerPasswordService;
 
@@ -7070,7 +6887,6 @@
 
 .method private killUnmountTimer(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/knox/container/EnterpriseContainerService;->mPasswordService:Lcom/sec/knox/container/EnterpriseContainerPasswordService;
 
@@ -7081,8 +6897,6 @@
 
 .method private launchActivityForPackage(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     :try_start_0
     new-instance v2, Landroid/content/Intent;
@@ -7187,7 +7001,6 @@
 
 .method private loadPasswordInfoToCache(I)V
     .locals 10
-    .param p1    # I
 
     const/4 v9, 0x0
 
@@ -7290,7 +7103,6 @@
 
 .method private lockContainerInternal(I)Z
     .locals 8
-    .param p1    # I
 
     const/4 v4, 0x1
 
@@ -7385,10 +7197,6 @@
 
 .method private mount(Lcom/sec/knox/container/EnterpriseContainerObjectParam;III)I
     .locals 28
-    .param p1    # Lcom/sec/knox/container/EnterpriseContainerObjectParam;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const-string v3, "EnterpriseContainerService"
 
@@ -7970,7 +7778,6 @@
 
 .method private registerReceiverPerContainer(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Landroid/content/IntentFilter;
 
@@ -8194,7 +8001,6 @@
 
 .method private removeContainerActiveAdmin(I)V
     .locals 13
-    .param p1    # I
 
     const-string v10, "EnterpriseContainerService"
 
@@ -8468,8 +8274,6 @@
 
 .method private removeContainerHelper(ILcom/sec/enterprise/knox/IEnterpriseContainerCallback;)Z
     .locals 5
-    .param p1    # I
-    .param p2    # Lcom/sec/enterprise/knox/IEnterpriseContainerCallback;
 
     const-string v2, "EnterpriseContainerService"
 
@@ -8581,8 +8385,6 @@
 
 .method private removeContainerNow(ILcom/sec/enterprise/knox/IEnterpriseContainerCallback;)V
     .locals 23
-    .param p1    # I
-    .param p2    # Lcom/sec/enterprise/knox/IEnterpriseContainerCallback;
 
     const-string v3, "EnterpriseContainerService"
 
@@ -8930,7 +8732,6 @@
 
 .method private removeUntrustedContainerApps(I)V
     .locals 12
-    .param p1    # I
 
     iget-object v1, p0, Lcom/sec/knox/container/EnterpriseContainerService;->mContext:Landroid/content/Context;
 
@@ -9122,8 +8923,6 @@
 
 .method private scheduleTimer(Landroid/content/Context;I)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -9134,9 +8933,6 @@
 
 .method private scheduleTimer(Landroid/content/Context;IZ)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Z
 
     invoke-direct {p0}, Lcom/sec/knox/container/EnterpriseContainerService;->getWakeLockCounter()I
 
@@ -9183,7 +8979,6 @@
 
 .method private sendContainerCreationIntent(I)V
     .locals 3
-    .param p1    # I
 
     const-string v1, "EnterpriseContainerService"
 
@@ -9210,7 +9005,6 @@
 
 .method private sendContainerSetupSuccessMessage(I)V
     .locals 5
-    .param p1    # I
 
     const/4 v4, 0x0
 
@@ -9239,9 +9033,6 @@
 
 .method private sendNewContainerNotificationRequest(III)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const-string v2, "EnterpriseContainerService"
 
@@ -9302,9 +9093,6 @@
 
 .method private sendRemountSuccessMessageToHandler(ILjava/lang/String;I)V
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     const/4 v5, 0x0
 
@@ -9359,9 +9147,6 @@
 
 .method private sendRemovePersonalContainerRequest(III)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const-string v2, "EnterpriseContainerService"
 
@@ -9418,8 +9203,6 @@
 
 .method private setContainerFirmwareVersionToCacheAndDB(ILjava/lang/String;)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const-string v1, "EnterpriseContainerService"
 
@@ -9486,8 +9269,6 @@
 
 .method private setupContainer(Lcom/sec/knox/container/EnterpriseContainerObjectParam;I)I
     .locals 5
-    .param p1    # Lcom/sec/knox/container/EnterpriseContainerObjectParam;
-    .param p2    # I
 
     const/4 v4, 0x1
 
@@ -9529,8 +9310,6 @@
 
 .method private setupContainerCreationFailureMessage(II)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
 
     const/4 v4, 0x0
 
@@ -9563,9 +9342,6 @@
 
 .method private setupContainerRemountFailureMessage(III)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v4, 0x0
 
@@ -9696,7 +9472,6 @@
 
 .method private trimHiddenVersion(Ljava/lang/String;)Ljava/lang/String;
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/16 v4, 0x5f
 
@@ -9759,7 +9534,6 @@
 
 .method private unlockContainerInternal(I)Z
     .locals 5
-    .param p1    # I
 
     iget-object v2, p0, Lcom/sec/knox/container/EnterpriseContainerService;->mStateManager:Lcom/sec/knox/container/manager/StateManager;
 
@@ -9830,9 +9604,6 @@
 
 .method private unmount(III)V
     .locals 10
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -10013,10 +9784,6 @@
 
 .method private updateContainerEmailId(ILjava/lang/String;Ljava/lang/String;I)Z
     .locals 7
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
 
     const-string v4, "EnterpriseContainerService"
 
@@ -10189,8 +9956,6 @@
 
 .method private updatePasswordFromNonTimaToTima(ILjava/lang/String;)V
     .locals 11
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const-string v1, "EnterpriseContainerService"
 
@@ -10275,9 +10040,6 @@
 
 .method private validatePasswordInternal(ILjava/lang/String;Ljava/lang/String;)I
     .locals 24
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const-string v21, "EnterpriseContainerService"
 
@@ -10988,10 +10750,6 @@
 
 .method private verifyPasswordInternal(ILjava/lang/String;Lcom/sec/enterprise/knox/IEnterpriseContainerCallback;Z)V
     .locals 10
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/sec/enterprise/knox/IEnterpriseContainerCallback;
-    .param p4    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -11381,8 +11139,6 @@
 # virtual methods
 .method public WriteContainerHistory(Ljava/lang/String;Ljava/lang/String;)V
     .locals 14
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     new-instance v4, Ljava/io/File;
 
@@ -11637,7 +11393,6 @@
 
 .method public activateContainer(I)Z
     .locals 4
-    .param p1    # I
 
     const-string v1, "EnterpriseContainerService"
 
@@ -11720,7 +11475,6 @@
 
 .method public adminPasswordReset(I)Z
     .locals 4
-    .param p1    # I
 
     const/16 v1, 0x8
 
@@ -11777,7 +11531,6 @@
 
 .method public cancelCreateContainer(I)Z
     .locals 7
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -11982,7 +11735,6 @@
 
 .method public changeActiveContainerPasswordStatus(I)V
     .locals 4
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -12039,10 +11791,6 @@
 
 .method public changePassword(ILjava/lang/String;Ljava/lang/String;Lcom/sec/enterprise/knox/IEnterpriseContainerCallback;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Lcom/sec/enterprise/knox/IEnterpriseContainerCallback;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -12060,8 +11808,6 @@
 
 .method public checkPassword(ILjava/lang/String;)I
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -12128,7 +11874,6 @@
 
 .method public containerizedAppStarting(I)V
     .locals 7
-    .param p1    # I
 
     const/4 v4, 0x1
 
@@ -12274,8 +12019,6 @@
 
 .method public createContainer(Lcom/sec/enterprise/knox/IEnterpriseContainerCallback;I)Z
     .locals 10
-    .param p1    # Lcom/sec/enterprise/knox/IEnterpriseContainerCallback;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;,
@@ -12551,9 +12294,6 @@
 
 .method public createContainerFromB2CtoB2B(ILcom/sec/enterprise/knox/IEnterpriseContainerCallback;I)Z
     .locals 8
-    .param p1    # I
-    .param p2    # Lcom/sec/enterprise/knox/IEnterpriseContainerCallback;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;,
@@ -12705,8 +12445,6 @@
 
 .method public createContainerInternal(Lcom/sec/knox/container/EnterpriseContainerObjectParam;Lcom/sec/enterprise/knox/IEnterpriseContainerCallback;)Z
     .locals 10
-    .param p1    # Lcom/sec/knox/container/EnterpriseContainerObjectParam;
-    .param p2    # Lcom/sec/enterprise/knox/IEnterpriseContainerCallback;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;,
@@ -13042,7 +12780,6 @@
 
 .method public enforcePasswordChange(I)Z
     .locals 4
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -13092,8 +12829,6 @@
 
 .method public getAllowBluetoothMode(ILandroid/content/ComponentName;)I
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -13157,8 +12892,6 @@
 
 .method public getAllowBrowser(ILandroid/content/ComponentName;)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -13222,8 +12955,6 @@
 
 .method public getAllowCamera(ILandroid/content/ComponentName;)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -13287,8 +13018,6 @@
 
 .method public getAllowDesktopSync(ILandroid/content/ComponentName;)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -13352,8 +13081,6 @@
 
 .method public getAllowInternetSharing(ILandroid/content/ComponentName;)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -13417,8 +13144,6 @@
 
 .method public getAllowIrDA(ILandroid/content/ComponentName;)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -13482,8 +13207,6 @@
 
 .method public getAllowPOPIMAPEmail(ILandroid/content/ComponentName;)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -13547,8 +13270,6 @@
 
 .method public getAllowStorageCard(ILandroid/content/ComponentName;)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -13612,8 +13333,6 @@
 
 .method public getAllowTextMessaging(ILandroid/content/ComponentName;)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -13677,8 +13396,6 @@
 
 .method public getAllowWifi(ILandroid/content/ComponentName;)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -13742,7 +13459,6 @@
 
 .method public getAndroidId(I)Ljava/lang/String;
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -13766,8 +13482,6 @@
 
 .method getApksFromFolder(Ljava/io/File;Ljava/lang/String;)Ljava/util/List;
     .locals 10
-    .param p1    # Ljava/io/File;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -13891,8 +13605,6 @@
 
 .method public getAppInstallationSource(ILjava/lang/String;)I
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -13940,8 +13652,6 @@
 
 .method public getAppUninstallAllowed(ILjava/lang/String;)Z
     .locals 5
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -14059,7 +13769,6 @@
 
 .method public getContainerEmailId(I)Ljava/lang/String;
     .locals 3
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -14105,7 +13814,6 @@
 
 .method public getContainerFirmwareVersion(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x2
 
@@ -14122,7 +13830,6 @@
 
 .method public getContainerForPackage(Ljava/lang/String;)I
     .locals 3
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -14162,7 +13869,6 @@
 
 .method public getContainerId(I)I
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -14198,7 +13904,6 @@
 
 .method public getContainerLockOnScreenLock(I)Z
     .locals 3
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -14242,7 +13947,6 @@
 
 .method public getContainerPackages(I)Ljava/util/List;
     .locals 3
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -14277,7 +13981,6 @@
 
 .method public getContainerSecurityInformation(I)Lcom/sec/knox/container/EnterpriseContainerObjectParam;
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -14301,7 +14004,6 @@
 
 .method public getContainerType(I)I
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -14321,8 +14023,6 @@
 
 .method public getContainerisedString(ILjava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -14414,8 +14114,6 @@
 
 .method public getContainerizedPackageName(ILjava/lang/String;)Ljava/lang/String;
     .locals 7
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -14593,7 +14291,6 @@
 
 .method public getCurrentFailedPasswordAttempts(I)I
     .locals 4
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -14647,7 +14344,6 @@
 
 .method getFrameworkApks(Ljava/io/File;)Ljava/util/List;
     .locals 9
-    .param p1    # Ljava/io/File;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -14762,8 +14458,6 @@
 
 .method public getInstalledApplications(II)Ljava/util/List;
     .locals 10
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II)",
@@ -14872,8 +14566,6 @@
 
 .method public getInstalledPackages(II)Ljava/util/List;
     .locals 10
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II)",
@@ -14982,8 +14674,6 @@
 
 .method public getLaunchIntentForContainerizedApp(ILjava/lang/String;)Landroid/content/Intent;
     .locals 8
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v7, 0x0
 
@@ -15247,7 +14937,6 @@
 
 .method public getLockType(I)I
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -15281,8 +14970,6 @@
 
 .method public getMaximumFailedPasswordsForDisable(ILandroid/content/ComponentName;)I
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -15346,8 +15033,6 @@
 
 .method public getMaximumFailedPasswordsForWipe(ILandroid/content/ComponentName;)I
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -15411,8 +15096,6 @@
 
 .method public getMaximumTimeToLock(ILandroid/content/ComponentName;)J
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -15476,8 +15159,6 @@
 
 .method public getMinPasswordComplexChars(ILandroid/content/ComponentName;)I
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -15541,7 +15222,6 @@
 
 .method public getMountStatus(I)Z
     .locals 5
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -15632,8 +15312,6 @@
 
 .method public getOriginalPackageName(ILjava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -15653,7 +15331,6 @@
 
 .method public getOriginalPackageNames(I)Ljava/util/List;
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -15801,8 +15478,6 @@
 
 .method public getPassword(ILandroid/content/ComponentName;)Ljava/lang/String;
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -15826,7 +15501,6 @@
 
 .method public getPasswordEnabledContainerLockTimeout(I)J
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -15898,8 +15572,6 @@
 
 .method public getPasswordExpiration(ILandroid/content/ComponentName;)J
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -15963,8 +15635,6 @@
 
 .method public getPasswordExpirationTimeout(ILandroid/content/ComponentName;)J
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -16028,8 +15698,6 @@
 
 .method public getPasswordExpires(ILandroid/content/ComponentName;)I
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -16110,8 +15778,6 @@
 
 .method public getPasswordHistory(ILandroid/content/ComponentName;)I
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -16175,8 +15841,6 @@
 
 .method public getPasswordHistoryLength(ILandroid/content/ComponentName;)I
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -16238,8 +15902,6 @@
 
 .method public getPasswordMaximumLength(II)I
     .locals 4
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -16293,8 +15955,6 @@
 
 .method public getPasswordMinimumLength(ILandroid/content/ComponentName;)I
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -16358,8 +16018,6 @@
 
 .method public getPasswordMinimumLetters(ILandroid/content/ComponentName;)I
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -16423,8 +16081,6 @@
 
 .method public getPasswordMinimumLowerCase(ILandroid/content/ComponentName;)I
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -16488,8 +16144,6 @@
 
 .method public getPasswordMinimumNonLetter(ILandroid/content/ComponentName;)I
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -16553,8 +16207,6 @@
 
 .method public getPasswordMinimumNumeric(ILandroid/content/ComponentName;)I
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -16618,8 +16270,6 @@
 
 .method public getPasswordMinimumSymbols(ILandroid/content/ComponentName;)I
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -16683,8 +16333,6 @@
 
 .method public getPasswordMinimumUpperCase(ILandroid/content/ComponentName;)I
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -16748,8 +16396,6 @@
 
 .method public getPasswordQuality(ILandroid/content/ComponentName;)I
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -16813,7 +16459,6 @@
 
 .method public getPasswordVerifyOnlyOnModeChange(I)Z
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -16835,8 +16480,6 @@
 
 .method public getProperty(ILjava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -16870,9 +16513,6 @@
 
 .method public getPropertyOpt(ILjava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -16906,8 +16546,6 @@
 
 .method public getSimplePasswordEnabled(ILandroid/content/ComponentName;)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -16971,7 +16609,6 @@
 
 .method public getStatus(I)I
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -16997,7 +16634,6 @@
 
 .method public inKeyguardRestrictedInputMode(I)Z
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -17011,11 +16647,6 @@
 
 .method public installPackages(ILjava/lang/String;Lcom/sec/enterprise/knox/IEnterpriseContainerCallback;II)Z
     .locals 10
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/sec/enterprise/knox/IEnterpriseContainerCallback;
-    .param p4    # I
-    .param p5    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -17128,7 +16759,6 @@
 
 .method public isActivePasswordSufficient(I)Z
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -17176,7 +16806,6 @@
 
 .method public isKeyguardLocked(I)Z
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -17208,7 +16837,6 @@
 
 .method public isKeyguardSecure(I)Z
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -17240,8 +16868,6 @@
 
 .method public isPasswordForbidden(ILjava/lang/String;)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -17275,7 +16901,6 @@
 
 .method public isPasswordVisisbilityEnabled(I)Z
     .locals 4
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -17329,7 +16954,6 @@
 
 .method killAllApps(I)Z
     .locals 9
-    .param p1    # I
 
     const/4 v5, 0x0
 
@@ -17456,7 +17080,6 @@
 
 .method public lockContainer(I)Z
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -17476,9 +17099,6 @@
 
 .method public onContainerStateChange(ILcom/sec/knox/container/constants/CSState;Lcom/sec/knox/container/constants/CSState;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Lcom/sec/knox/container/constants/CSState;
-    .param p3    # Lcom/sec/knox/container/constants/CSState;
 
     const-string v2, "EnterpriseContainerService"
 
@@ -17626,10 +17246,6 @@
 
 .method public onTransact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/os/Parcel;
-    .param p3    # Landroid/os/Parcel;
-    .param p4    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -17714,7 +17330,6 @@
 
 .method public onUserInteraction(I)V
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -17782,8 +17397,6 @@
 
 .method public reboot(ILjava/lang/String;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -17834,9 +17447,6 @@
 
 .method public registerEventReceiver(I[ILcom/sec/enterprise/knox/IEnterpriseContainerEventReceiver;)Z
     .locals 2
-    .param p1    # I
-    .param p2    # [I
-    .param p3    # Lcom/sec/enterprise/knox/IEnterpriseContainerEventReceiver;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;,
@@ -17863,8 +17473,6 @@
 
 .method public removeContainer(ILcom/sec/enterprise/knox/IEnterpriseContainerCallback;)Z
     .locals 5
-    .param p1    # I
-    .param p2    # Lcom/sec/enterprise/knox/IEnterpriseContainerCallback;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;,
@@ -17968,9 +17576,6 @@
 
 .method public resetPassword(ILjava/lang/String;I)Z
     .locals 2
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -17994,9 +17599,6 @@
 
 .method public setAllowBluetoothMode(ILandroid/content/ComponentName;I)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -18061,9 +17663,6 @@
 
 .method public setAllowBrowser(ILandroid/content/ComponentName;Z)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -18128,9 +17727,6 @@
 
 .method public setAllowCamera(ILandroid/content/ComponentName;Z)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -18195,9 +17791,6 @@
 
 .method public setAllowDesktopSync(ILandroid/content/ComponentName;Z)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -18262,9 +17855,6 @@
 
 .method public setAllowInternetSharing(ILandroid/content/ComponentName;Z)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -18329,9 +17919,6 @@
 
 .method public setAllowIrDA(ILandroid/content/ComponentName;Z)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -18396,9 +17983,6 @@
 
 .method public setAllowPOPIMAPEmail(ILandroid/content/ComponentName;Z)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -18463,9 +18047,6 @@
 
 .method public setAllowStorageCard(ILandroid/content/ComponentName;Z)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -18530,9 +18111,6 @@
 
 .method public setAllowTextMessaging(ILandroid/content/ComponentName;Z)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -18597,9 +18175,6 @@
 
 .method public setAllowWifi(ILandroid/content/ComponentName;Z)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -18664,8 +18239,6 @@
 
 .method public setContainerLockOnScreenLock(IZ)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -18709,7 +18282,6 @@
 
 .method public setDownloadWakeState(I)V
     .locals 3
-    .param p1    # I
 
     monitor-enter p0
 
@@ -18817,8 +18389,6 @@
 
 .method public setLockType(II)Z
     .locals 4
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -18898,9 +18468,6 @@
 
 .method public setMaximumFailedPasswordsForDisable(ILandroid/content/ComponentName;I)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -18998,9 +18565,6 @@
 
 .method public setMaximumFailedPasswordsForWipe(ILandroid/content/ComponentName;I)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -19065,9 +18629,6 @@
 
 .method public setMaximumTimeToLock(ILandroid/content/ComponentName;J)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -19138,9 +18699,6 @@
 
 .method public setMinPasswordComplexChars(ILandroid/content/ComponentName;I)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -19205,8 +18763,6 @@
 
 .method public setPasswordEnabledContainerLockTimeout(IJ)V
     .locals 4
-    .param p1    # I
-    .param p2    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -19279,9 +18835,6 @@
 
 .method public setPasswordExpirationTimeout(ILandroid/content/ComponentName;J)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -19346,9 +18899,6 @@
 
 .method public setPasswordExpires(ILandroid/content/ComponentName;I)V
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -19378,9 +18928,6 @@
 
 .method public setPasswordHistory(ILandroid/content/ComponentName;I)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -19445,9 +18992,6 @@
 
 .method public setPasswordHistoryLength(ILandroid/content/ComponentName;I)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -19497,9 +19041,6 @@
 
 .method public setPasswordMinimumLength(ILandroid/content/ComponentName;I)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -19566,9 +19107,6 @@
 
 .method public setPasswordMinimumLetters(ILandroid/content/ComponentName;I)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -19633,9 +19171,6 @@
 
 .method public setPasswordMinimumLowerCase(ILandroid/content/ComponentName;I)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -19700,9 +19235,6 @@
 
 .method public setPasswordMinimumNonLetter(ILandroid/content/ComponentName;I)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -19767,9 +19299,6 @@
 
 .method public setPasswordMinimumNumeric(ILandroid/content/ComponentName;I)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -19834,9 +19363,6 @@
 
 .method public setPasswordMinimumSymbols(ILandroid/content/ComponentName;I)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -19901,9 +19427,6 @@
 
 .method public setPasswordMinimumUpperCase(ILandroid/content/ComponentName;I)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -19968,9 +19491,6 @@
 
 .method public setPasswordQuality(ILandroid/content/ComponentName;I)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -20035,8 +19555,6 @@
 
 .method public setPasswordVerifyOnlyOnModeChange(IZ)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -20058,8 +19576,6 @@
 
 .method public setPasswordVisibilityEnabled(IZ)V
     .locals 3
-    .param p1    # I
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -20111,9 +19627,6 @@
 
 .method public setSimplePasswordEnabled(ILandroid/content/ComponentName;Z)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -20178,9 +19691,6 @@
 
 .method public startApp(ILjava/lang/String;Ljava/lang/String;)Z
     .locals 8
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -20347,8 +19857,6 @@
 
 .method public startTimer(ILandroid/os/IBinder;)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/os/IBinder;
 
     const-string v1, "EnterpriseContainerService"
 
@@ -20377,7 +19885,6 @@
 
 .method public declared-synchronized startUpgrade(I)Z
     .locals 7
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -20476,8 +19983,6 @@
 
 .method public stopApp(ILjava/lang/String;)Z
     .locals 9
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -20666,8 +20171,6 @@
 
 .method public stopTimer(ILandroid/os/IBinder;)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/os/IBinder;
 
     const-string v1, "EnterpriseContainerService"
 
@@ -20696,9 +20199,6 @@
 
 .method public stopTimerWithTimeOut(ILandroid/os/IBinder;J)Z
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/os/IBinder;
-    .param p3    # J
 
     const-string v2, "EnterpriseContainerService"
 
@@ -20803,7 +20303,6 @@
 
 .method public unRegisterEventReceiver(Lcom/sec/enterprise/knox/IEnterpriseContainerEventReceiver;)Z
     .locals 1
-    .param p1    # Lcom/sec/enterprise/knox/IEnterpriseContainerEventReceiver;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;,
@@ -20826,9 +20325,6 @@
 
 .method public uninstallPackages(ILjava/lang/String;Lcom/sec/enterprise/knox/IEnterpriseContainerCallback;)Z
     .locals 7
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/sec/enterprise/knox/IEnterpriseContainerCallback;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -20938,7 +20434,6 @@
 
 .method public unlockContainer(I)Z
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -20958,11 +20453,6 @@
 
 .method public updateCallbackStatus(IIILandroid/os/Bundle;Z)V
     .locals 11
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/os/Bundle;
-    .param p5    # Z
 
     const/4 v1, 0x0
 
@@ -21224,9 +20714,6 @@
 
 .method updateEventToListners(IILandroid/os/Bundle;)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/os/Bundle;
 
     iget-object v4, p0, Lcom/sec/knox/container/EnterpriseContainerService;->mCallbackMgr:Lcom/sec/knox/container/manager/EnterpriseContainerCallbackList;
 
@@ -21335,7 +20822,6 @@
 
 .method public upgradeComplete(I)Z
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -21435,9 +20921,6 @@
 
 .method public validatePasswordComplexity(ILjava/lang/String;Ljava/lang/String;)I
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -21457,9 +20940,6 @@
 
 .method public verifyPassword(ILjava/lang/String;Lcom/sec/enterprise/knox/IEnterpriseContainerCallback;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/sec/enterprise/knox/IEnterpriseContainerCallback;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -21479,9 +20959,6 @@
 
 .method public verifyPasswordForAutoMount(ILjava/lang/String;Lcom/sec/enterprise/knox/IEnterpriseContainerCallback;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/sec/enterprise/knox/IEnterpriseContainerCallback;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -21501,7 +20978,6 @@
 
 .method public wipeSDCardData(I)Z
     .locals 3
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;

@@ -150,9 +150,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/net/Uri;Lcom/android/mms/model/RegionModel;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/net/Uri;
-    .param p3    # Lcom/android/mms/model/RegionModel;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/google/android/mms/MmsException;
@@ -178,11 +175,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Landroid/net/Uri;Lcom/android/mms/model/RegionModel;)V
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Landroid/net/Uri;
-    .param p5    # Lcom/android/mms/model/RegionModel;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -213,12 +205,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Landroid/net/Uri;Lcom/android/mms/model/RegionModel;I)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Landroid/net/Uri;
-    .param p5    # Lcom/android/mms/model/RegionModel;
-    .param p6    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -235,11 +221,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Lcom/android/mms/drm/DrmWrapper;Lcom/android/mms/model/RegionModel;)V
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Lcom/android/mms/drm/DrmWrapper;
-    .param p5    # Lcom/android/mms/model/RegionModel;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -267,12 +248,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Lcom/android/mms/drm/DrmWrapper;Lcom/android/mms/model/RegionModel;I)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Lcom/android/mms/drm/DrmWrapper;
-    .param p5    # Lcom/android/mms/model/RegionModel;
-    .param p6    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -288,7 +263,6 @@
 
 .method private cacheBitmap(Landroid/graphics/Bitmap;)V
     .locals 0
-    .param p1    # Landroid/graphics/Bitmap;
 
     iput-object p1, p0, Lcom/android/mms/model/ImageModel;->mBitmap:Landroid/graphics/Bitmap;
 
@@ -297,10 +271,6 @@
 
 .method public static calcThumbnailImageBounds(Landroid/graphics/Point;IIZ)V
     .locals 10
-    .param p0    # Landroid/graphics/Point;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     if-gt p1, p2, :cond_1
 
@@ -444,8 +414,6 @@
 
 .method private createBitmap(ILandroid/net/Uri;)Landroid/graphics/Bitmap;
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/net/Uri;
 
     iget v1, p0, Lcom/android/mms/model/ImageModel;->mWidth:I
 
@@ -534,8 +502,6 @@
 
 .method private createThumbnailBitmap(ILandroid/net/Uri;)Landroid/graphics/Bitmap;
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/net/Uri;
 
     iget v1, p0, Lcom/android/mms/model/ImageModel;->mWidth:I
 
@@ -624,8 +590,6 @@
 
 .method private decodeBitmap(Landroid/net/Uri;I)Landroid/graphics/Bitmap;
     .locals 12
-    .param p1    # Landroid/net/Uri;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/OutOfMemoryError;
@@ -847,7 +811,6 @@
 
 .method private initModelFromUri(Landroid/net/Uri;)V
     .locals 3
-    .param p1    # Landroid/net/Uri;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/google/android/mms/MmsException;
@@ -939,8 +902,6 @@
 
 .method private internalGetBitmap(Landroid/net/Uri;Z)Landroid/graphics/Bitmap;
     .locals 2
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Z
 
     invoke-direct {p0}, Lcom/android/mms/model/ImageModel;->getCachedBitmap()Landroid/graphics/Bitmap;
 
@@ -1074,7 +1035,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 4
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x0
 
@@ -1290,7 +1250,6 @@
 
 .method public handleEvent(Lorg/w3c/dom/events/Event;)V
     .locals 5
-    .param p1    # Lorg/w3c/dom/events/Event;
 
     const/4 v4, 0x0
 
@@ -1396,8 +1355,6 @@
 
 .method protected resizeMedia(IJ)V
     .locals 7
-    .param p1    # I
-    .param p2    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/google/android/mms/MmsException;
@@ -1522,7 +1479,6 @@
 
 .method public setResizeImageSize(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/mms/model/MediaModel;->mSize:I
 

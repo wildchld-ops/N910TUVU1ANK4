@@ -46,7 +46,6 @@
 
 .method public static getThemeUpIndicator(Landroid/app/Activity;)Landroid/graphics/drawable/Drawable;
     .locals 3
-    .param p0    # Landroid/app/Activity;
 
     sget-object v2, Landroid/support/v4/app/ActionBarDrawerToggleHoneycomb;->THEME_ATTRS:[I
 
@@ -67,9 +66,6 @@
 
 .method public static setActionBarDescription(Ljava/lang/Object;Landroid/app/Activity;I)Ljava/lang/Object;
     .locals 7
-    .param p0    # Ljava/lang/Object;
-    .param p1    # Landroid/app/Activity;
-    .param p2    # I
 
     if-nez p0, :cond_0
 
@@ -127,10 +123,6 @@
 
 .method public static setActionBarUpIndicator(Ljava/lang/Object;Landroid/app/Activity;Landroid/graphics/drawable/Drawable;I)Ljava/lang/Object;
     .locals 7
-    .param p0    # Ljava/lang/Object;
-    .param p1    # Landroid/app/Activity;
-    .param p2    # Landroid/graphics/drawable/Drawable;
-    .param p3    # I
 
     if-nez p0, :cond_0
 

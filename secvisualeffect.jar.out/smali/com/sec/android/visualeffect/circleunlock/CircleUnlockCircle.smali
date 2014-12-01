@@ -38,11 +38,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;IIII)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     const/4 v1, 0x0
 
@@ -187,7 +182,6 @@
 # virtual methods
 .method public dragAnimationUpdate(F)V
     .locals 0
-    .param p1    # F
 
     iput p1, p0, Lcom/sec/android/visualeffect/circleunlock/CircleUnlockCircle;->fillAnimationValue:F
 
@@ -198,7 +192,6 @@
 
 .method protected onDraw(Landroid/graphics/Canvas;)V
     .locals 8
-    .param p1    # Landroid/graphics/Canvas;
 
     const/high16 v7, 0x40000000
 
@@ -325,7 +318,6 @@
 
 .method public setCircleMinWidth(I)V
     .locals 2
-    .param p1    # I
 
     div-int/lit8 v0, p1, 0x2
 
@@ -344,7 +336,6 @@
 
 .method public setIsForShortcut(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/visualeffect/circleunlock/CircleUnlockCircle;->isForShortcut:Z
 
@@ -353,7 +344,6 @@
 
 .method public strokeAnimationUpdate(F)V
     .locals 0
-    .param p1    # F
 
     iput p1, p0, Lcom/sec/android/visualeffect/circleunlock/CircleUnlockCircle;->strokeAnimationValue:F
 

@@ -10,7 +10,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/ContentResolver;)V
     .locals 0
-    .param p1    # Landroid/content/ContentResolver;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -21,7 +20,6 @@
 
 .method private decodeOnTheBasisOfSemicolonSeparatedLastPathSegment(Landroid/net/Uri;)[Landroid/net/Uri;
     .locals 13
-    .param p1    # Landroid/net/Uri;
 
     if-eqz p1, :cond_0
 
@@ -121,7 +119,6 @@
 # virtual methods
 .method protected check(Landroid/net/Uri;)Landroid/net/Uri;
     .locals 5
-    .param p1    # Landroid/net/Uri;
 
     :try_start_0
     invoke-virtual {p1}, Landroid/net/Uri;->getScheme()Ljava/lang/String;
@@ -183,7 +180,6 @@
 
 .method protected getUri(Ljava/lang/Object;)Landroid/net/Uri;
     .locals 2
-    .param p1    # Ljava/lang/Object;
 
     instance-of v1, p1, Landroid/net/Uri;
 
@@ -225,7 +221,6 @@
 
 .method public process(Landroid/content/Intent;)[Landroid/net/Uri;
     .locals 17
-    .param p1    # Landroid/content/Intent;
 
     if-nez p1, :cond_1
 

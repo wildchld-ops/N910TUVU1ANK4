@@ -48,8 +48,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -153,7 +151,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/AudioBalancePreference;)Landroid/media/MediaPlayer;
     .locals 1
-    .param p0    # Lcom/android/settings/AudioBalancePreference;
 
     iget-object v0, p0, Lcom/android/settings/AudioBalancePreference;->mMediaPlayer:Landroid/media/MediaPlayer;
 
@@ -162,7 +159,6 @@
 
 .method private getAudioBalanceFromDB(I)I
     .locals 5
-    .param p1    # I
 
     move v0, p1
 
@@ -452,7 +448,6 @@
 
 .method private setAudioBalance(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "AudioBalancePreference"
 
@@ -600,7 +595,6 @@
 
 .method protected onBindDialogView(Landroid/view/View;)V
     .locals 7
-    .param p1    # Landroid/view/View;
 
     const/16 v6, 0x64
 
@@ -845,7 +839,6 @@
 
 .method protected onDialogClosed(Z)V
     .locals 4
-    .param p1    # Z
 
     invoke-super {p0, p1}, Landroid/preference/SeekBarDialogPreference;->onDialogClosed(Z)V
 
@@ -923,7 +916,6 @@
 
 .method public onPrepared(Landroid/media/MediaPlayer;)V
     .locals 2
-    .param p1    # Landroid/media/MediaPlayer;
 
     const-string v0, "AudioBalancePreference"
 
@@ -940,9 +932,6 @@
 
 .method public onProgressChanged(Lcom/sec/android/touchwiz/widget/TwSeekBarSplit;IZ)V
     .locals 6
-    .param p1    # Lcom/sec/android/touchwiz/widget/TwSeekBarSplit;
-    .param p2    # I
-    .param p3    # Z
 
     const/4 v3, 0x1
 
@@ -1285,14 +1274,12 @@
 
 .method public onStartTrackingTouch(Lcom/sec/android/touchwiz/widget/TwSeekBarSplit;)V
     .locals 0
-    .param p1    # Lcom/sec/android/touchwiz/widget/TwSeekBarSplit;
 
     return-void
 .end method
 
 .method public onStopTrackingTouch(Lcom/sec/android/touchwiz/widget/TwSeekBarSplit;)V
     .locals 2
-    .param p1    # Lcom/sec/android/touchwiz/widget/TwSeekBarSplit;
 
     const/16 v1, 0x64
 
@@ -1323,7 +1310,6 @@
 
 .method protected showDialog(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/preference/SeekBarDialogPreference;->showDialog(Landroid/os/Bundle;)V
 

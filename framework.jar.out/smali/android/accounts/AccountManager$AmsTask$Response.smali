@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Landroid/accounts/AccountManager$AmsTask;Landroid/accounts/AccountManager$1;)V
     .locals 0
-    .param p1    # Landroid/accounts/AccountManager$AmsTask;
-    .param p2    # Landroid/accounts/AccountManager$1;
 
     invoke-direct {p0, p1}, Landroid/accounts/AccountManager$AmsTask$Response;-><init>(Landroid/accounts/AccountManager$AmsTask;)V
 
@@ -43,8 +41,6 @@
 # virtual methods
 .method public onError(ILjava/lang/String;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x4
 
@@ -84,7 +80,6 @@
 
 .method public onResult(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     const-string v1, "intent"
 

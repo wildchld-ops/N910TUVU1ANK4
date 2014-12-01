@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Lcom/sec/android/app/camera/CeRequestQueue;Lcom/sec/android/app/camera/CeRequestQueue$1;)V
     .locals 0
-    .param p1    # Lcom/sec/android/app/camera/CeRequestQueue;
-    .param p2    # Lcom/sec/android/app/camera/CeRequestQueue$1;
 
     invoke-direct {p0, p1}, Lcom/sec/android/app/camera/CeRequestQueue$MainHandler;-><init>(Lcom/sec/android/app/camera/CeRequestQueue;)V
 
@@ -43,7 +41,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 4
-    .param p1    # Landroid/os/Message;
 
     const/4 v3, 0x1
 

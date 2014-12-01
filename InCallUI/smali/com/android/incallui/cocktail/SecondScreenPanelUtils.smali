@@ -57,7 +57,6 @@
 
 .method static synthetic access$000(Lcom/android/incallui/CallList;)Lcom/android/services/telephony/common/Call;
     .locals 1
-    .param p0    # Lcom/android/incallui/CallList;
 
     invoke-static {p0}, Lcom/android/incallui/cocktail/SecondScreenPanelUtils;->getCallToShow(Lcom/android/incallui/CallList;)Lcom/android/services/telephony/common/Call;
 
@@ -76,7 +75,6 @@
 
 .method public static blockToUpdate(Z)V
     .locals 3
-    .param p0    # Z
 
     const-string v0, "SecondScreenPanelUtils"
 
@@ -1664,7 +1662,6 @@
 
 .method private static getCallToShow(Lcom/android/incallui/CallList;)Lcom/android/services/telephony/common/Call;
     .locals 1
-    .param p0    # Lcom/android/incallui/CallList;
 
     if-nez p0, :cond_1
 
@@ -1697,7 +1694,6 @@
 
 .method public static getCocktailCategory(I)I
     .locals 4
-    .param p0    # I
 
     const v0, 0x10002
 
@@ -1744,7 +1740,6 @@
 
 .method private static getConferenceCount(Lcom/android/services/telephony/common/Call;)I
     .locals 4
-    .param p0    # Lcom/android/services/telephony/common/Call;
 
     const/4 v1, 0x0
 
@@ -1783,9 +1778,6 @@
 
 .method private static getContactPhoto(Landroid/content/Context;Lcom/android/incallui/ContactInfoCache$ContactCacheEntry;Z)Landroid/graphics/Bitmap;
     .locals 7
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/incallui/ContactInfoCache$ContactCacheEntry;
-    .param p2    # Z
 
     const/4 v0, 0x0
 
@@ -1910,8 +1902,6 @@
 
 .method public static getName(Landroid/content/Context;I)Ljava/lang/String;
     .locals 7
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     invoke-static {p0}, Lcom/android/incallui/ContactInfoCache;->getInstance(Landroid/content/Context;)Lcom/android/incallui/ContactInfoCache;
 
@@ -2036,9 +2026,6 @@
 
 .method public static getName(Landroid/content/Context;Lcom/android/incallui/ContactInfoCache$ContactCacheEntry;Z)Ljava/lang/String;
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/incallui/ContactInfoCache$ContactCacheEntry;
-    .param p2    # Z
 
     if-eqz p2, :cond_0
 
@@ -2228,7 +2215,6 @@
 
 .method public static miniModeKeyUpdate(Z)V
     .locals 3
-    .param p0    # Z
 
     const-string v0, "SecondScreenPanelUtils"
 
@@ -2259,8 +2245,6 @@
 
 .method public static needToShowAsFullScreen(Landroid/content/Context;Lcom/android/incallui/CallList;)Z
     .locals 8
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/incallui/CallList;
 
     const/4 v5, 0x1
 
@@ -2546,8 +2530,6 @@
 
 .method public static needToUpdate(Landroid/content/Context;Lcom/android/incallui/CallList;)Z
     .locals 8
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/incallui/CallList;
 
     const/4 v7, 0x3
 
@@ -2685,7 +2667,6 @@
 
 .method private static onHangUpThenAnswer(Lcom/android/services/telephony/common/Call;)V
     .locals 3
-    .param p0    # Lcom/android/services/telephony/common/Call;
 
     if-eqz p0, :cond_0
 
@@ -2719,8 +2700,6 @@
 
 .method private static shouldDismiss(Lcom/android/incallui/InCallPresenter$InCallState;Lcom/android/incallui/CallList;)Z
     .locals 3
-    .param p0    # Lcom/android/incallui/InCallPresenter$InCallState;
-    .param p1    # Lcom/android/incallui/CallList;
 
     const/4 v1, 0x1
 
@@ -2748,7 +2727,6 @@
 
 .method public static showWaitingCallDialog(Landroid/app/AlertDialog$Builder;)V
     .locals 2
-    .param p0    # Landroid/app/AlertDialog$Builder;
 
     sget-object v0, Lcom/android/incallui/cocktail/SecondScreenPanelUtils;->sWaitingCallDialog:Landroid/app/AlertDialog;
 
@@ -2780,9 +2758,6 @@
 
 .method public static showWaitingCallDialog(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 6
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v5, 0x0
 
@@ -2885,10 +2860,6 @@
 
 .method public static showWaitingCallDialog(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 5
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     invoke-static {}, Lcom/android/incallui/InCallApp;->getInstance()Lcom/android/incallui/InCallApp;
 
@@ -2953,9 +2924,6 @@
 
 .method private static startContactInfoSearch(Landroid/content/Context;Lcom/android/services/telephony/common/CallIdentification;Z)V
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/services/telephony/common/CallIdentification;
-    .param p2    # Z
 
     invoke-static {p0}, Lcom/android/incallui/ContactInfoCache;->getInstance(Landroid/content/Context;)Lcom/android/incallui/ContactInfoCache;
 

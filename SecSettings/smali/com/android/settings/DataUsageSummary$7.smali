@@ -36,7 +36,6 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 3
-    .param p1    # Landroid/view/View;
 
     const-string v2, "http://u.web2go.com/upsell/options.do?src=ics"
 

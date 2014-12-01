@@ -57,7 +57,6 @@
 
 .method synthetic constructor <init>(Landroid/inputmethodservice/KeyboardView$1;)V
     .locals 0
-    .param p1    # Landroid/inputmethodservice/KeyboardView$1;
 
     invoke-direct {p0}, Landroid/inputmethodservice/KeyboardView$SwipeTracker;-><init>()V
 
@@ -66,9 +65,6 @@
 
 .method private addPoint(FFJ)V
     .locals 11
-    .param p1    # F
-    .param p2    # F
-    .param p3    # J
 
     const/4 v1, -0x1
 
@@ -175,7 +171,6 @@
 # virtual methods
 .method public addMovement(Landroid/view/MotionEvent;)V
     .locals 8
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getEventTime()J
 
@@ -238,7 +233,6 @@
 
 .method public computeCurrentVelocity(I)V
     .locals 1
-    .param p1    # I
 
     const v0, 0x7f7fffff
 
@@ -249,8 +243,6 @@
 
 .method public computeCurrentVelocity(IF)V
     .locals 19
-    .param p1    # I
-    .param p2    # F
 
     move-object/from16 v0, p0
 

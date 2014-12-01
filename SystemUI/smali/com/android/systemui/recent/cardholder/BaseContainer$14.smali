@@ -36,7 +36,6 @@
 # virtual methods
 .method public onAnimationCancel(Landroid/animation/Animator;)V
     .locals 2
-    .param p1    # Landroid/animation/Animator;
 
     iget-object v0, p0, Lcom/android/systemui/recent/cardholder/BaseContainer$14;->this$0:Lcom/android/systemui/recent/cardholder/BaseContainer;
 
@@ -50,7 +49,6 @@
 
 .method public onAnimationEnd(Landroid/animation/Animator;)V
     .locals 2
-    .param p1    # Landroid/animation/Animator;
 
     iget-object v0, p0, Lcom/android/systemui/recent/cardholder/BaseContainer$14;->this$0:Lcom/android/systemui/recent/cardholder/BaseContainer;
 
@@ -64,14 +62,12 @@
 
 .method public onAnimationRepeat(Landroid/animation/Animator;)V
     .locals 0
-    .param p1    # Landroid/animation/Animator;
 
     return-void
 .end method
 
 .method public onAnimationStart(Landroid/animation/Animator;)V
     .locals 2
-    .param p1    # Landroid/animation/Animator;
 
     iget-object v0, p0, Lcom/android/systemui/recent/cardholder/BaseContainer$14;->this$0:Lcom/android/systemui/recent/cardholder/BaseContainer;
 

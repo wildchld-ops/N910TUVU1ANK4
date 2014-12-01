@@ -36,7 +36,6 @@
 # virtual methods
 .method public onTextReceived(Ljava/lang/CharSequence;)V
     .locals 13
-    .param p1    # Ljava/lang/CharSequence;
 
     invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 

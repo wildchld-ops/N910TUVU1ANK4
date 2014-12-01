@@ -31,7 +31,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -110,8 +109,6 @@
 
 .method public printBitmap(Ljava/lang/String;Landroid/graphics/Bitmap;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/graphics/Bitmap;
 
     iget-object v0, p0, Landroid/support/v4/print/PrintHelper;->mImpl:Landroid/support/v4/print/PrintHelper$PrintHelperVersionImpl;
 
@@ -122,8 +119,6 @@
 
 .method public printBitmap(Ljava/lang/String;Landroid/net/Uri;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/net/Uri;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/FileNotFoundException;
@@ -139,7 +134,6 @@
 
 .method public setColorMode(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/support/v4/print/PrintHelper;->mImpl:Landroid/support/v4/print/PrintHelper$PrintHelperVersionImpl;
 
@@ -150,7 +144,6 @@
 
 .method public setScaleMode(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/support/v4/print/PrintHelper;->mImpl:Landroid/support/v4/print/PrintHelper$PrintHelperVersionImpl;
 

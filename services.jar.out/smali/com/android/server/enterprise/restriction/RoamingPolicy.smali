@@ -29,7 +29,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     const/4 v2, 0x0
 
@@ -79,7 +78,6 @@
 
 .method static synthetic access$000(Lcom/android/server/enterprise/restriction/RoamingPolicy;)Landroid/telephony/TelephonyManager;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/restriction/RoamingPolicy;
 
     iget-object v0, p0, Lcom/android/server/enterprise/restriction/RoamingPolicy;->mTelMgr:Landroid/telephony/TelephonyManager;
 
@@ -88,7 +86,6 @@
 
 .method static synthetic access$100(Lcom/android/server/enterprise/restriction/RoamingPolicy;)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/restriction/RoamingPolicy;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/restriction/RoamingPolicy;->storeUserAutoSyncSetting()V
 
@@ -97,8 +94,6 @@
 
 .method static synthetic access$200(Lcom/android/server/enterprise/restriction/RoamingPolicy;Z)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/restriction/RoamingPolicy;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/restriction/RoamingPolicy;->setMasterSyncAutomatically(Z)V
 
@@ -107,7 +102,6 @@
 
 .method static synthetic access$300(Lcom/android/server/enterprise/restriction/RoamingPolicy;)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/restriction/RoamingPolicy;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/restriction/RoamingPolicy;->restoreUserAutoSyncSetting()V
 
@@ -132,7 +126,6 @@
 
 .method private enforceOwnerOnlyAndRoamingPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/restriction/RoamingPolicy;->getEDM()Landroid/app/enterprise/EnterpriseDeviceManager;
 
@@ -239,7 +232,6 @@
 
 .method private setMasterSyncAutomatically(Z)V
     .locals 8
-    .param p1    # Z
 
     invoke-static {}, Lcom/android/server/pm/UserManagerService;->getInstance()Lcom/android/server/pm/UserManagerService;
 
@@ -339,7 +331,6 @@
 # virtual methods
 .method public isRoamingDataEnabled(Landroid/app/enterprise/ContextInfo;)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v1, 0x1
 
@@ -406,7 +397,6 @@
 
 .method public isRoamingPushEnabled(Landroid/app/enterprise/ContextInfo;)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v1, 0x1
 
@@ -473,7 +463,6 @@
 
 .method public isRoamingSyncEnabled(Landroid/app/enterprise/ContextInfo;)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v1, 0x1
 
@@ -540,7 +529,6 @@
 
 .method public isRoamingVoiceCallsEnabled(Landroid/app/enterprise/ContextInfo;)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v1, 0x1
 
@@ -585,29 +573,24 @@
 
 .method public onAdminAdded(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onAdminRemoved(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onPreAdminRemoval(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public setRoamingData(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 8
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/restriction/RoamingPolicy;->enforceOwnerOnlyAndRoamingPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -685,8 +668,6 @@
 
 .method public setRoamingPush(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/restriction/RoamingPolicy;->enforceOwnerOnlyAndRoamingPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -731,8 +712,6 @@
 
 .method public setRoamingSync(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/restriction/RoamingPolicy;->enforceOwnerOnlyAndRoamingPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -810,8 +789,6 @@
 
 .method public setRoamingVoiceCalls(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/restriction/RoamingPolicy;->enforceOwnerOnlyAndRoamingPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 

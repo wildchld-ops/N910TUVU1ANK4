@@ -20,8 +20,6 @@
 # direct methods
 .method public constructor <init>(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -152,7 +150,6 @@
 
 .method public setHeight(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/voovio/voo3d/view/Viewport;->m_nHeight:I
 
@@ -163,7 +160,6 @@
 
 .method public setOffset(Lcom/voovio/geometry/Point;)V
     .locals 2
-    .param p1    # Lcom/voovio/geometry/Point;
 
     iget-object v0, p0, Lcom/voovio/voo3d/view/Viewport;->m_ptOffset:Lcom/voovio/geometry/Point;
 
@@ -182,7 +178,6 @@
 
 .method public setOffsetX(F)V
     .locals 1
-    .param p1    # F
 
     iget-object v0, p0, Lcom/voovio/voo3d/view/Viewport;->m_ptOffset:Lcom/voovio/geometry/Point;
 
@@ -193,7 +188,6 @@
 
 .method public setOffsetY(F)V
     .locals 1
-    .param p1    # F
 
     iget-object v0, p0, Lcom/voovio/voo3d/view/Viewport;->m_ptOffset:Lcom/voovio/geometry/Point;
 
@@ -204,7 +198,6 @@
 
 .method public setWidth(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/voovio/voo3d/view/Viewport;->m_nWidth:I
 

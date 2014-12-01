@@ -46,8 +46,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/wm/WindowManagerService;Lcom/android/server/wm/DisplayContent;)V
     .locals 3
-    .param p1    # Lcom/android/server/wm/WindowManagerService;
-    .param p2    # Lcom/android/server/wm/DisplayContent;
 
     const/4 v1, 0x0
 
@@ -100,10 +98,6 @@
 
 .method static synthetic access$100(Lcom/android/server/wm/StackTapPointerEventListener;FFZ)Lcom/android/server/wm/WindowState;
     .locals 1
-    .param p0    # Lcom/android/server/wm/StackTapPointerEventListener;
-    .param p1    # F
-    .param p2    # F
-    .param p3    # Z
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/server/wm/StackTapPointerEventListener;->findTargetWindow(FFZ)Lcom/android/server/wm/WindowState;
 
@@ -114,7 +108,6 @@
 
 .method static synthetic access$200(Lcom/android/server/wm/StackTapPointerEventListener;)Lcom/samsung/android/multiwindow/MultiWindowFacade;
     .locals 1
-    .param p0    # Lcom/android/server/wm/StackTapPointerEventListener;
 
     iget-object v0, p0, Lcom/android/server/wm/StackTapPointerEventListener;->mMultiWindowFacade:Lcom/samsung/android/multiwindow/MultiWindowFacade;
 
@@ -123,7 +116,6 @@
 
 .method static synthetic access$300(Lcom/android/server/wm/StackTapPointerEventListener;)Lcom/android/server/wm/DisplayContent;
     .locals 1
-    .param p0    # Lcom/android/server/wm/StackTapPointerEventListener;
 
     iget-object v0, p0, Lcom/android/server/wm/StackTapPointerEventListener;->mDisplayContent:Lcom/android/server/wm/DisplayContent;
 
@@ -132,7 +124,6 @@
 
 .method static synthetic access$400(Lcom/android/server/wm/StackTapPointerEventListener;)Lcom/android/server/wm/WindowManagerService;
     .locals 1
-    .param p0    # Lcom/android/server/wm/StackTapPointerEventListener;
 
     iget-object v0, p0, Lcom/android/server/wm/StackTapPointerEventListener;->mService:Lcom/android/server/wm/WindowManagerService;
 
@@ -141,9 +132,6 @@
 
 .method private findTargetWindow(FFZ)Lcom/android/server/wm/WindowState;
     .locals 15
-    .param p1    # F
-    .param p2    # F
-    .param p3    # Z
 
     const/4 v6, 0x0
 
@@ -334,9 +322,6 @@
 
 .method private otherAppTouched(FFZ)Z
     .locals 3
-    .param p1    # F
-    .param p2    # F
-    .param p3    # Z
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/server/wm/StackTapPointerEventListener;->findTargetWindow(FFZ)Lcom/android/server/wm/WindowState;
 
@@ -414,7 +399,6 @@
 
 .method public onPointerEvent(Landroid/view/MotionEvent;)V
     .locals 6
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v1, 0x0
 

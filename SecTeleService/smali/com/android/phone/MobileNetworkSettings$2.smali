@@ -72,7 +72,7 @@
 
     iget-object v2, p0, Lcom/android/phone/MobileNetworkSettings$2;->this$0:Lcom/android/phone/MobileNetworkSettings;
 
-    invoke-virtual {v2}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v2}, Lcom/android/phone/MobileNetworkSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 
@@ -85,7 +85,7 @@
     if-nez v2, :cond_1
 
     :goto_0
-    invoke-virtual {v1, v0}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+    invoke-virtual {v1, v0}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     :cond_0
     return-void

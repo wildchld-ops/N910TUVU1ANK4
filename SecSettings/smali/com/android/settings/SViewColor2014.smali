@@ -162,7 +162,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/SViewColor2014;)V
     .locals 0
-    .param p0    # Lcom/android/settings/SViewColor2014;
 
     invoke-direct {p0}, Lcom/android/settings/SViewColor2014;->onTimeChanged()V
 
@@ -171,7 +170,6 @@
 
 .method static synthetic access$1000(Lcom/android/settings/SViewColor2014;)Landroid/graphics/drawable/Drawable;
     .locals 1
-    .param p0    # Lcom/android/settings/SViewColor2014;
 
     invoke-direct {p0}, Lcom/android/settings/SViewColor2014;->getCustomWallpaperDrawable()Landroid/graphics/drawable/Drawable;
 
@@ -182,8 +180,6 @@
 
 .method static synthetic access$102(Lcom/android/settings/SViewColor2014;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/SViewColor2014;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/SViewColor2014;->mIsOptionMenuFocused:Z
 
@@ -192,7 +188,6 @@
 
 .method static synthetic access$1100(Lcom/android/settings/SViewColor2014;)Landroid/widget/FrameLayout;
     .locals 1
-    .param p0    # Lcom/android/settings/SViewColor2014;
 
     iget-object v0, p0, Lcom/android/settings/SViewColor2014;->mPreview:Landroid/widget/FrameLayout;
 
@@ -201,7 +196,6 @@
 
 .method static synthetic access$1200(Lcom/android/settings/SViewColor2014;)Landroid/graphics/Bitmap;
     .locals 1
-    .param p0    # Lcom/android/settings/SViewColor2014;
 
     invoke-direct {p0}, Lcom/android/settings/SViewColor2014;->getCustomWallpaperBitmapForThumb()Landroid/graphics/Bitmap;
 
@@ -212,8 +206,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/SViewColor2014;Z)V
     .locals 0
-    .param p0    # Lcom/android/settings/SViewColor2014;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/settings/SViewColor2014;->setfocusButton(Z)V
 
@@ -222,7 +214,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/SViewColor2014;)I
     .locals 1
-    .param p0    # Lcom/android/settings/SViewColor2014;
 
     iget v0, p0, Lcom/android/settings/SViewColor2014;->mCurrentCoverBackgroundDbId:I
 
@@ -231,8 +222,6 @@
 
 .method static synthetic access$302(Lcom/android/settings/SViewColor2014;I)I
     .locals 0
-    .param p0    # Lcom/android/settings/SViewColor2014;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/settings/SViewColor2014;->mCurrentCoverBackgroundDbId:I
 
@@ -249,7 +238,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/SViewColor2014;)V
     .locals 0
-    .param p0    # Lcom/android/settings/SViewColor2014;
 
     invoke-direct {p0}, Lcom/android/settings/SViewColor2014;->saveWallpaperFile()V
 
@@ -258,7 +246,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/SViewColor2014;)I
     .locals 1
-    .param p0    # Lcom/android/settings/SViewColor2014;
 
     iget v0, p0, Lcom/android/settings/SViewColor2014;->mCurrentRealCoverColor:I
 
@@ -267,7 +254,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/SViewColor2014;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/SViewColor2014;
 
     iget-boolean v0, p0, Lcom/android/settings/SViewColor2014;->mIsChangedInside:Z
 
@@ -276,8 +262,6 @@
 
 .method static synthetic access$702(Lcom/android/settings/SViewColor2014;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/SViewColor2014;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/SViewColor2014;->mIsChangedInside:Z
 
@@ -286,7 +270,6 @@
 
 .method static synthetic access$800(Lcom/android/settings/SViewColor2014;)I
     .locals 1
-    .param p0    # Lcom/android/settings/SViewColor2014;
 
     iget v0, p0, Lcom/android/settings/SViewColor2014;->mCurrentCoverBackgroundResId:I
 
@@ -295,8 +278,6 @@
 
 .method static synthetic access$802(Lcom/android/settings/SViewColor2014;I)I
     .locals 0
-    .param p0    # Lcom/android/settings/SViewColor2014;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/settings/SViewColor2014;->mCurrentCoverBackgroundResId:I
 
@@ -305,7 +286,6 @@
 
 .method static synthetic access$900(Lcom/android/settings/SViewColor2014;)[I
     .locals 1
-    .param p0    # Lcom/android/settings/SViewColor2014;
 
     iget-object v0, p0, Lcom/android/settings/SViewColor2014;->mColorResourceArray:[I
 
@@ -314,9 +294,6 @@
 
 .method public static getAppropriateSampleSize(Ljava/lang/String;II)I
     .locals 7
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
-    .param p2    # I
 
     new-instance v2, Landroid/graphics/BitmapFactory$Options;
 
@@ -883,7 +860,6 @@
 
 .method private setfocusButton(Z)V
     .locals 3
-    .param p1    # Z
 
     const/4 v0, 0x0
 
@@ -953,7 +929,6 @@
 # virtual methods
 .method public ConvertDBIdtoResId(I)I
     .locals 3
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -994,7 +969,6 @@
 
 .method public ConvertResIdtoDBId(I)I
     .locals 3
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -1232,7 +1206,6 @@
 
 .method public getMatchResourceByColor(I)I
     .locals 2
-    .param p1    # I
 
     const v1, 0x7f02069e
 
@@ -1286,7 +1259,6 @@
 
 .method public getMatchResourceByColorForAlpha(I)I
     .locals 1
-    .param p1    # I
 
     const v0, 0x7f02069e
 
@@ -1321,9 +1293,6 @@
 
 .method protected onActivityResult(IILandroid/content/Intent;)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const/4 v4, -0x1
 
@@ -1429,7 +1398,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 9
-    .param p1    # Landroid/os/Bundle;
 
     const v8, 0x7f090da3
 

@@ -14,8 +14,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/preference/DialogPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -40,7 +38,6 @@
 
 .method protected static getSeekBar(Landroid/view/View;)Landroid/widget/SeekBar;
     .locals 1
-    .param p0    # Landroid/view/View;
 
     const v0, 0x10203a8
 
@@ -71,7 +68,6 @@
 
 .method protected onBindDialogView(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     invoke-super {p0, p1}, Landroid/preference/DialogPreference;->onBindDialogView(Landroid/view/View;)V
 

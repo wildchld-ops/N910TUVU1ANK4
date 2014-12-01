@@ -4598,7 +4598,6 @@
 
 .method private addLayoutKey(Ljava/util/HashSet;C)V
     .locals 9
-    .param p2    # C
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -4692,7 +4691,6 @@
 
 .method private addLayoutKey(Ljava/util/HashSet;[Ljava/lang/Character;)V
     .locals 2
-    .param p2    # [Ljava/lang/Character;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -4749,8 +4747,6 @@
 
 .method private getSecondaryChar(II)I
     .locals 5
-    .param p1    # I
-    .param p2    # I
 
     invoke-static {}, Lcom/diotek/ime/framework/input/secondarykey/SecondaryKeyManager;->getInstance()Lcom/diotek/ime/framework/input/secondarykey/SecondaryKeyManager;
 
@@ -4883,9 +4879,6 @@
 
 .method private isKorLineKey(IILcom/diotek/ime/framework/view/Keyboard$Key;)Z
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Lcom/diotek/ime/framework/view/Keyboard$Key;
 
     const/4 v0, 0x0
 
@@ -4929,7 +4922,6 @@
 # virtual methods
 .method public addTouchHistory(Ljava/lang/Character;)V
     .locals 0
-    .param p1    # Ljava/lang/Character;
 
     return-void
 .end method
@@ -4965,7 +4957,6 @@
 
 .method protected getResultsFilter(I)Lcom/touchtype_fluency/ResultsFilter;
     .locals 3
-    .param p1    # I
 
     new-instance v0, Lcom/touchtype_fluency/ResultsFilter;
 
@@ -4980,12 +4971,6 @@
 
 .method public loadKeyPressModel(Ljava/io/File;Lcom/diotek/ime/framework/view/Keyboard;IIZZ)Z
     .locals 32
-    .param p1    # Ljava/io/File;
-    .param p2    # Lcom/diotek/ime/framework/view/Keyboard;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Z
-    .param p6    # Z
 
     const-string v5, ""
 
@@ -6300,12 +6285,6 @@
 
 .method public loadKeyPressModel(Ljava/io/File;Lcom/diotek/ime/framework/view/Keyboard;IIZZLjava/util/List;)Z
     .locals 33
-    .param p1    # Ljava/io/File;
-    .param p2    # Lcom/diotek/ime/framework/view/Keyboard;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Z
-    .param p6    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -7735,8 +7714,6 @@
 
 .method public loadKeyPressModelForHWR(II)Z
     .locals 10
-    .param p1    # I
-    .param p2    # I
 
     const/4 v6, 0x1
 

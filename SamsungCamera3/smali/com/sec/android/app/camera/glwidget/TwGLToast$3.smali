@@ -36,7 +36,6 @@
 # virtual methods
 .method public onAnimationEnd(Landroid/view/animation/Animation;)Z
     .locals 3
-    .param p1    # Landroid/view/animation/Animation;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLToast$3;->this$0:Lcom/sec/android/app/camera/glwidget/TwGLToast;
 
@@ -68,7 +67,6 @@
 
 .method public onAnimationStart(Landroid/view/animation/Animation;)Z
     .locals 1
-    .param p1    # Landroid/view/animation/Animation;
 
     const/4 v0, 0x0
 

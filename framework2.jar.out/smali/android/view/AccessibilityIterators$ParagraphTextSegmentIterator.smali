@@ -48,7 +48,6 @@
 
 .method private isEndBoundary(I)Z
     .locals 3
-    .param p1    # I
 
     const/16 v2, 0xa
 
@@ -94,7 +93,6 @@
 
 .method private isStartBoundary(I)Z
     .locals 3
-    .param p1    # I
 
     const/16 v2, 0xa
 
@@ -134,7 +132,6 @@
 # virtual methods
 .method public following(I)[I
     .locals 6
-    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -211,7 +208,6 @@
 
 .method public preceding(I)[I
     .locals 6
-    .param p1    # I
 
     const/4 v3, 0x0
 

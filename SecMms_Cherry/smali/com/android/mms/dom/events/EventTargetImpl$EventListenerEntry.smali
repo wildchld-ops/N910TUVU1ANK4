@@ -25,9 +25,6 @@
 # direct methods
 .method constructor <init>(Ljava/lang/String;Lorg/w3c/dom/events/EventListener;Z)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lorg/w3c/dom/events/EventListener;
-    .param p3    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

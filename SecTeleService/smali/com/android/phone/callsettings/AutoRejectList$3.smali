@@ -80,7 +80,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v2}, Landroid/widget/AdapterView;->getCount()I
+    invoke-virtual {v2}, Landroid/widget/ListView;->getCount()I
 
     move-result v2
 
@@ -98,7 +98,7 @@
     const/4 v2, 0x1
 
     :goto_1
-    invoke-virtual {v3, v1, v2}, Landroid/widget/AbsListView;->setItemChecked(IZ)V
+    invoke-virtual {v3, v1, v2}, Landroid/widget/ListView;->setItemChecked(IZ)V
 
     add-int/lit8 v1, v1, 0x1
 

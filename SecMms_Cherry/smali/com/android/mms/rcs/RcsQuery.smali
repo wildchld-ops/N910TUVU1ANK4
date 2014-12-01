@@ -46,7 +46,6 @@
 
 .method public static closeRcsChat(Ljava/lang/String;)I
     .locals 7
-    .param p0    # Ljava/lang/String;
 
     const-string v4, "Mms/RcsOwnCapsManager"
 
@@ -123,9 +122,6 @@
 
 .method public static extractIdsToAddresses(Landroid/content/Context;Ljava/lang/String;Z)Ljava/lang/StringBuilder;
     .locals 18
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     new-instance v8, Ljava/lang/StringBuilder;
 
@@ -297,8 +293,6 @@
 
 .method public static getAddressByRcsThreadId(Landroid/content/Context;J)Ljava/lang/String;
     .locals 13
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
 
     const/4 v12, 0x1
 
@@ -435,7 +429,6 @@
 
 .method public static getAllChatIds(Landroid/content/Context;)Ljava/util/ArrayList;
     .locals 10
-    .param p0    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -543,8 +536,6 @@
 
 .method public static getChatIdByThreadId(Landroid/content/Context;Ljava/lang/Long;)Ljava/lang/String;
     .locals 9
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/Long;
 
     const/4 v8, 0x0
 
@@ -636,8 +627,6 @@
 
 .method public static getChatInfoByChatId(Landroid/content/ContentResolver;Ljava/lang/String;)Landroid/database/Cursor;
     .locals 7
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -688,8 +677,6 @@
 
 .method public static getCursorPendingRcsMessage(Landroid/content/Context;I)Landroid/database/Cursor;
     .locals 9
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -811,8 +798,6 @@
 
 .method public static getFt(Landroid/content/ContentResolver;Ljava/lang/Long;)Landroid/database/Cursor;
     .locals 7
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # Ljava/lang/Long;
 
     const/4 v2, 0x0
 
@@ -863,8 +848,6 @@
 
 .method public static getFtBySessionId(Landroid/content/Context;Ljava/lang/Long;)Landroid/database/Cursor;
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/Long;
 
     invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -879,8 +862,6 @@
 
 .method public static getImNotifcationByIMDNID(Landroid/content/Context;Ljava/lang/String;)Landroid/database/Cursor;
     .locals 7
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -933,8 +914,6 @@
 
 .method public static getMessage(Landroid/content/ContentResolver;Ljava/lang/Long;)Landroid/database/Cursor;
     .locals 7
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # Ljava/lang/Long;
 
     const/4 v2, 0x0
 
@@ -985,8 +964,6 @@
 
 .method public static getMessageByChatId(Landroid/content/Context;Ljava/lang/String;)Landroid/database/Cursor;
     .locals 7
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -1039,8 +1016,6 @@
 
 .method public static getMessageById(Landroid/content/Context;J)Landroid/database/Cursor;
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
 
     invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -1059,8 +1034,6 @@
 
 .method public static getParticipantsBychatId(Landroid/content/Context;Ljava/lang/String;)Landroid/database/Cursor;
     .locals 7
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -1113,8 +1086,6 @@
 
 .method public static getRcsDbId(Landroid/content/Context;Landroid/net/Uri;)J
     .locals 8
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
 
     const/4 v2, 0x0
 
@@ -1186,8 +1157,6 @@
 
 .method public static getRcsFtSessionId(Landroid/content/Context;Landroid/net/Uri;)J
     .locals 8
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
 
     const/4 v2, 0x0
 
@@ -1259,9 +1228,6 @@
 
 .method public static getRecipientsByIds(Landroid/content/Context;Ljava/lang/String;Z)Ljava/lang/String;
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     sget-object v2, Lcom/android/mms/rcs/RcsQuery;->sRecipientAddress:Ljava/util/Map;
 
@@ -1317,8 +1283,6 @@
 
 .method public static getRemainRcsCount(Landroid/content/Context;J)I
     .locals 10
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
 
     const/4 v5, 0x0
 
@@ -1410,8 +1374,6 @@
 
 .method public static moveRcsMessageToOutBox(Landroid/content/Context;Landroid/net/Uri;)V
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
 
     const/4 v4, 0x0
 

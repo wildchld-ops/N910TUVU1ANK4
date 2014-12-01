@@ -77,7 +77,6 @@
 
 .method public onAFReceived(J)V
     .locals 4
-    .param p1    # J
 
     const/4 v3, 0x0
 
@@ -124,7 +123,6 @@
 
 .method public onChannelFound(J)V
     .locals 4
-    .param p1    # J
 
     const/4 v3, 0x0
 
@@ -149,7 +147,6 @@
 
 .method public onOff(I)V
     .locals 4
-    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -196,8 +193,6 @@
 
 .method public onPIECCReceived(II)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     const/4 v5, 0x0
 
@@ -296,9 +291,6 @@
 
 .method public onRDSReceived(JLjava/lang/String;Ljava/lang/String;)V
     .locals 5
-    .param p1    # J
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -337,12 +329,6 @@
 
 .method public onRTPlusReceived(IIIIII)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     const/4 v5, 0x0
 
@@ -413,7 +399,6 @@
 
 .method public onScanFinished([J)V
     .locals 3
-    .param p1    # [J
 
     const/4 v2, 0x0
 
@@ -456,7 +441,6 @@
 
 .method public onScanStopped([J)V
     .locals 3
-    .param p1    # [J
 
     const/4 v2, 0x0
 
@@ -477,7 +461,6 @@
 
 .method public onTune(J)V
     .locals 4
-    .param p1    # J
 
     const/4 v3, 0x0
 

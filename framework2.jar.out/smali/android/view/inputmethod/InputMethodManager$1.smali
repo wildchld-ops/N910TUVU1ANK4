@@ -33,9 +33,6 @@
 # virtual methods
 .method protected dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     const/4 v5, 0x1
 
@@ -102,7 +99,6 @@
 
 .method public onBindMethod(Lcom/android/internal/view/InputBindResult;)V
     .locals 3
-    .param p1    # Lcom/android/internal/view/InputBindResult;
 
     iget-object v0, p0, Landroid/view/inputmethod/InputMethodManager$1;->this$0:Landroid/view/inputmethod/InputMethodManager;
 
@@ -125,7 +121,6 @@
 
 .method public onUnbindMethod(I)V
     .locals 4
-    .param p1    # I
 
     iget-object v0, p0, Landroid/view/inputmethod/InputMethodManager$1;->this$0:Landroid/view/inputmethod/InputMethodManager;
 
@@ -150,7 +145,6 @@
 
 .method public setActive(Z)V
     .locals 5
-    .param p1    # Z
 
     const/4 v1, 0x0
 
@@ -185,7 +179,6 @@
 
 .method public setUsingInputMethod(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method

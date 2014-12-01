@@ -46,8 +46,6 @@
 
 .method synthetic constructor <init>(Landroid/view/View;Landroid/view/View$1;)V
     .locals 0
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/View$1;
 
     invoke-direct {p0, p1}, Landroid/view/View$MatchIdPredicate;-><init>(Landroid/view/View;)V
 
@@ -58,7 +56,6 @@
 # virtual methods
 .method public apply(Landroid/view/View;)Z
     .locals 2
-    .param p1    # Landroid/view/View;
 
     iget v0, p1, Landroid/view/View;->mID:I
 
@@ -79,7 +76,6 @@
 
 .method public bridge synthetic apply(Ljava/lang/Object;)Z
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Landroid/view/View;
 

@@ -28,11 +28,6 @@
 # direct methods
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;FFFF)V
     .locals 1
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
 
     invoke-direct/range {p0 .. p5}, Lcom/sec/android/glview/TwGLViewGroup;-><init>(Lcom/sec/android/glview/TwGLContext;FFFF)V
 
@@ -47,7 +42,6 @@
 # virtual methods
 .method protected playAnimation(I)V
     .locals 4
-    .param p1    # I
 
     const v3, 0xffff
 
@@ -119,7 +113,6 @@
 
 .method public setProgressListener(Lcom/sec/android/glview/TwGLAniViewGroup$OnProgressListener;)V
     .locals 0
-    .param p1    # Lcom/sec/android/glview/TwGLAniViewGroup$OnProgressListener;
 
     iput-object p1, p0, Lcom/sec/android/glview/TwGLAniViewGroup;->mOnProgressListener:Lcom/sec/android/glview/TwGLAniViewGroup$OnProgressListener;
 

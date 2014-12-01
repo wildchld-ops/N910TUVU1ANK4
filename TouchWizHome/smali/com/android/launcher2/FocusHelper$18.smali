@@ -30,9 +30,6 @@
 # virtual methods
 .method public onKey(Landroid/view/View;ILandroid/view/KeyEvent;)Z
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # Landroid/view/KeyEvent;
 
     # getter for: Lcom/android/launcher2/FocusHelper;->sHomeView:Lcom/android/launcher2/HomeView;
     invoke-static {}, Lcom/android/launcher2/FocusHelper;->access$1700()Lcom/android/launcher2/HomeView;

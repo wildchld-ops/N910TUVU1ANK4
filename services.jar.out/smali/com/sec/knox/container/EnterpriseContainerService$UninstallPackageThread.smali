@@ -25,10 +25,6 @@
 # direct methods
 .method public constructor <init>(Lcom/sec/knox/container/EnterpriseContainerService;ILandroid/os/Handler;Ljava/lang/String;Lcom/sec/enterprise/knox/IEnterpriseContainerCallback;)V
     .locals 0
-    .param p2    # I
-    .param p3    # Landroid/os/Handler;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Lcom/sec/enterprise/knox/IEnterpriseContainerCallback;
 
     iput-object p1, p0, Lcom/sec/knox/container/EnterpriseContainerService$UninstallPackageThread;->this$0:Lcom/sec/knox/container/EnterpriseContainerService;
 

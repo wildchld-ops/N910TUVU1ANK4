@@ -50,7 +50,6 @@
 # direct methods
 .method public constructor <init>(Landroid/app/Activity;)V
     .locals 2
-    .param p1    # Landroid/app/Activity;
 
     const/4 v1, 0x0
 
@@ -85,8 +84,6 @@
 
 .method static synthetic access$202(Lcom/google/android/hotword/client/HotwordServiceClient;Z)Z
     .locals 0
-    .param p0    # Lcom/google/android/hotword/client/HotwordServiceClient;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/google/android/hotword/client/HotwordServiceClient;->mIsFocused:Z
 
@@ -95,7 +92,6 @@
 
 .method static synthetic access$300(Lcom/google/android/hotword/client/HotwordServiceClient;)V
     .locals 0
-    .param p0    # Lcom/google/android/hotword/client/HotwordServiceClient;
 
     invoke-direct {p0}, Lcom/google/android/hotword/client/HotwordServiceClient;->internalRequestHotword()V
 
@@ -104,8 +100,6 @@
 
 .method static synthetic access$402(Lcom/google/android/hotword/client/HotwordServiceClient;Z)Z
     .locals 0
-    .param p0    # Lcom/google/android/hotword/client/HotwordServiceClient;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/google/android/hotword/client/HotwordServiceClient;->mIsBound:Z
 
@@ -114,8 +108,6 @@
 
 .method static synthetic access$502(Lcom/google/android/hotword/client/HotwordServiceClient;Lcom/google/android/hotword/service/IHotwordService;)Lcom/google/android/hotword/service/IHotwordService;
     .locals 0
-    .param p0    # Lcom/google/android/hotword/client/HotwordServiceClient;
-    .param p1    # Lcom/google/android/hotword/service/IHotwordService;
 
     iput-object p1, p0, Lcom/google/android/hotword/client/HotwordServiceClient;->mHotwordService:Lcom/google/android/hotword/service/IHotwordService;
 
@@ -400,7 +392,6 @@
 
 .method public final requestHotwordDetection(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-direct {p0}, Lcom/google/android/hotword/client/HotwordServiceClient;->isPreKitKatDevice()Z
 

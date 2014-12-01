@@ -76,7 +76,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -186,10 +185,6 @@
 
 .method set(ILandroid/content/Intent;Landroid/app/WallpaperInfo;Z)V
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/content/Intent;
-    .param p3    # Landroid/app/WallpaperInfo;
-    .param p4    # Z
 
     if-nez p3, :cond_0
 

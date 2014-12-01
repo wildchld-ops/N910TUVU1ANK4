@@ -51,7 +51,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/fmm/SimChangeAlert;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/settings/fmm/SimChangeAlert;
 
     iget-object v0, p0, Lcom/android/settings/fmm/SimChangeAlert;->mDialogLayout:Landroid/view/View;
 
@@ -60,8 +59,6 @@
 
 .method static synthetic access$002(Lcom/android/settings/fmm/SimChangeAlert;Landroid/view/View;)Landroid/view/View;
     .locals 0
-    .param p0    # Lcom/android/settings/fmm/SimChangeAlert;
-    .param p1    # Landroid/view/View;
 
     iput-object p1, p0, Lcom/android/settings/fmm/SimChangeAlert;->mDialogLayout:Landroid/view/View;
 
@@ -70,7 +67,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/fmm/SimChangeAlert;)Landroid/widget/EditText;
     .locals 1
-    .param p0    # Lcom/android/settings/fmm/SimChangeAlert;
 
     iget-object v0, p0, Lcom/android/settings/fmm/SimChangeAlert;->mText:Landroid/widget/EditText;
 
@@ -79,8 +75,6 @@
 
 .method static synthetic access$102(Lcom/android/settings/fmm/SimChangeAlert;Landroid/widget/EditText;)Landroid/widget/EditText;
     .locals 0
-    .param p0    # Lcom/android/settings/fmm/SimChangeAlert;
-    .param p1    # Landroid/widget/EditText;
 
     iput-object p1, p0, Lcom/android/settings/fmm/SimChangeAlert;->mText:Landroid/widget/EditText;
 
@@ -89,7 +83,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/fmm/SimChangeAlert;)Landroid/widget/LinearLayout;
     .locals 1
-    .param p0    # Lcom/android/settings/fmm/SimChangeAlert;
 
     iget-object v0, p0, Lcom/android/settings/fmm/SimChangeAlert;->mContent:Landroid/widget/LinearLayout;
 
@@ -98,7 +91,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/fmm/SimChangeAlert;)Landroid/view/LayoutInflater;
     .locals 1
-    .param p0    # Lcom/android/settings/fmm/SimChangeAlert;
 
     iget-object v0, p0, Lcom/android/settings/fmm/SimChangeAlert;->mInflater:Landroid/view/LayoutInflater;
 
@@ -107,7 +99,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/fmm/SimChangeAlert;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/fmm/SimChangeAlert;
 
     invoke-virtual {p0}, Lcom/android/settings/fmm/SimChangeAlert;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -118,7 +109,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/fmm/SimChangeAlert;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/fmm/SimChangeAlert;
 
     invoke-virtual {p0}, Lcom/android/settings/fmm/SimChangeAlert;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -129,7 +119,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/fmm/SimChangeAlert;)Landroid/widget/Switch;
     .locals 1
-    .param p0    # Lcom/android/settings/fmm/SimChangeAlert;
 
     iget-object v0, p0, Lcom/android/settings/fmm/SimChangeAlert;->mActionBarSwitch:Landroid/widget/Switch;
 
@@ -146,7 +135,6 @@
 
 .method static synthetic access$702(Lcom/android/settings/fmm/FmmEditTextPreference;)Lcom/android/settings/fmm/FmmEditTextPreference;
     .locals 0
-    .param p0    # Lcom/android/settings/fmm/FmmEditTextPreference;
 
     sput-object p0, Lcom/android/settings/fmm/SimChangeAlert;->mMessage:Lcom/android/settings/fmm/FmmEditTextPreference;
 
@@ -1363,9 +1351,6 @@
 
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     invoke-super {p0, p1, p2, p3}, Lcom/android/settings/SettingsPreferenceFragment;->onActivityResult(IILandroid/content/Intent;)V
 
@@ -1399,8 +1384,6 @@
 
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 3
-    .param p1    # Landroid/widget/CompoundButton;
-    .param p2    # Z
 
     if-eqz p2, :cond_1
 
@@ -1458,7 +1441,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 8
-    .param p1    # Landroid/os/Bundle;
 
     const/16 v6, 0x10
 
@@ -1540,8 +1522,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
     .locals 2
-    .param p1    # Landroid/view/Menu;
-    .param p2    # Landroid/view/MenuInflater;
 
     const/4 v1, 0x0
 
@@ -1564,9 +1544,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 5
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     iput-object p1, p0, Lcom/android/settings/fmm/SimChangeAlert;->mInflater:Landroid/view/LayoutInflater;
 
@@ -1741,7 +1718,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -1794,7 +1770,6 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)V
     .locals 2
-    .param p1    # Landroid/view/Menu;
 
     invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onPrepareOptionsMenu(Landroid/view/Menu;)V
 

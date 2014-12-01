@@ -110,10 +110,6 @@
 
 .method public static final query(Landroid/content/ContentResolver;[Ljava/lang/String;JJ)Landroid/database/Cursor;
     .locals 7
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # [Ljava/lang/String;
-    .param p2    # J
-    .param p4    # J
 
     sget-object v0, Landroid/provider/CalendarContract$Instances;->CONTENT_URI:Landroid/net/Uri;
 
@@ -148,11 +144,6 @@
 
 .method public static final query(Landroid/content/ContentResolver;[Ljava/lang/String;JJLjava/lang/String;)Landroid/database/Cursor;
     .locals 7
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # [Ljava/lang/String;
-    .param p2    # J
-    .param p4    # J
-    .param p6    # Ljava/lang/String;
 
     sget-object v0, Landroid/provider/CalendarContract$Instances;->CONTENT_SEARCH_URI:Landroid/net/Uri;
 

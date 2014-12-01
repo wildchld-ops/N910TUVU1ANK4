@@ -117,7 +117,6 @@
 
 .method public getWakeups(I)I
     .locals 2
-    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -178,16 +177,12 @@
 
 .method public plug(JJJ)V
     .locals 0
-    .param p1    # J
-    .param p3    # J
-    .param p5    # J
 
     return-void
 .end method
 
 .method readFromParcelLocked(Landroid/os/Parcel;)V
     .locals 5
-    .param p1    # Landroid/os/Parcel;
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
@@ -248,9 +243,6 @@
 
 .method public unplug(JJJ)V
     .locals 1
-    .param p1    # J
-    .param p3    # J
-    .param p5    # J
 
     iget v0, p0, Lcom/android/internal/os/BatteryStatsImpl$Uid$Pkg;->mWakeups:I
 
@@ -261,7 +253,6 @@
 
 .method writeToParcelLocked(Landroid/os/Parcel;)V
     .locals 4
-    .param p1    # Landroid/os/Parcel;
 
     iget v3, p0, Lcom/android/internal/os/BatteryStatsImpl$Uid$Pkg;->mWakeups:I
 

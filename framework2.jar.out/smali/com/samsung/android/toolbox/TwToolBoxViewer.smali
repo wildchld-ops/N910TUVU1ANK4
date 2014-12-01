@@ -58,8 +58,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -70,9 +68,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v5, 0x1
 
@@ -207,8 +202,6 @@
 
 .method static synthetic access$002(Lcom/samsung/android/toolbox/TwToolBoxViewer;Z)Z
     .locals 0
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxViewer;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/android/toolbox/TwToolBoxViewer;->mEarphonesPlugged:Z
 
@@ -217,8 +210,6 @@
 
 .method static synthetic access$100(Lcom/samsung/android/toolbox/TwToolBoxViewer;[Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxViewer;
-    .param p1    # [Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/samsung/android/toolbox/TwToolBoxViewer;->createPackageList([Ljava/lang/String;)V
 
@@ -227,7 +218,6 @@
 
 .method static synthetic access$200(Lcom/samsung/android/toolbox/TwToolBoxViewer;)V
     .locals 0
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxViewer;
 
     invoke-direct {p0}, Lcom/samsung/android/toolbox/TwToolBoxViewer;->updateVisibility()V
 
@@ -244,7 +234,6 @@
 
 .method static synthetic access$400(Lcom/samsung/android/toolbox/TwToolBoxViewer;)V
     .locals 0
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxViewer;
 
     invoke-direct {p0}, Lcom/samsung/android/toolbox/TwToolBoxViewer;->reloadContentObserver()V
 
@@ -253,8 +242,6 @@
 
 .method static synthetic access$502(Lcom/samsung/android/toolbox/TwToolBoxViewer;Z)Z
     .locals 0
-    .param p0    # Lcom/samsung/android/toolbox/TwToolBoxViewer;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/android/toolbox/TwToolBoxViewer;->mEarphonesOnly:Z
 
@@ -279,7 +266,6 @@
 
 .method private createPackageList([Ljava/lang/String;)V
     .locals 24
-    .param p1    # [Ljava/lang/String;
 
     move-object/from16 v0, p0
 
@@ -932,7 +918,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 10
-    .param p1    # Landroid/view/View;
 
     const/4 v2, 0x0
 
@@ -1052,7 +1037,6 @@
 
 .method public onLongClick(Landroid/view/View;)Z
     .locals 1
-    .param p1    # Landroid/view/View;
 
     invoke-direct {p0}, Lcom/samsung/android/toolbox/TwToolBoxViewer;->backButtonTapEvent()V
 
@@ -1063,8 +1047,6 @@
 
 .method protected onVisibilityChanged(Landroid/view/View;I)V
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     const/4 v1, 0x0
 
@@ -1084,7 +1066,6 @@
 
 .method public onWindowFocusChanged(Z)V
     .locals 2
-    .param p1    # Z
 
     const/4 v1, 0x0
 

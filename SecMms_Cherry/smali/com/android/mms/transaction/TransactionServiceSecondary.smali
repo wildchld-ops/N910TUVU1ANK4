@@ -67,7 +67,6 @@
 
 .method protected createServiceHandler(Landroid/os/Looper;)Lcom/android/mms/transaction/TransactionService$ServiceHandler;
     .locals 1
-    .param p1    # Landroid/os/Looper;
 
     new-instance v0, Lcom/android/mms/transaction/TransactionService$ServiceHandler;
 
@@ -78,12 +77,6 @@
 
 .method protected createSpamReportTransactionAndAttach(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/android/mms/transaction/TransactionSettings;I)Lcom/android/mms/transaction/SpamReportTransaction;
     .locals 8
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Lcom/android/mms/transaction/TransactionSettings;
-    .param p6    # I
 
     new-instance v0, Lcom/android/mms/transaction/SpamReportTransaction;
 
@@ -134,7 +127,6 @@
 
 .method protected registerConnectionStateReceiver(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
 
@@ -161,7 +153,6 @@
 
 .method protected unregisterConnectionStateReceiver(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
 

@@ -36,7 +36,6 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 10
-    .param p1    # Landroid/view/View;
 
     iget-object v6, p0, Lcom/android/settings/lockscreenshortcut/LockScreenShortcutSettings$2;->this$0:Lcom/android/settings/lockscreenshortcut/LockScreenShortcutSettings;
 

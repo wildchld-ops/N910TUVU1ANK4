@@ -179,10 +179,6 @@
 
 .method public static formatDateRange(Landroid/content/Context;JJI)Ljava/lang/String;
     .locals 7
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
-    .param p3    # J
-    .param p5    # I
 
     new-instance v1, Ljava/util/Formatter;
 
@@ -219,11 +215,6 @@
 
 .method public static formatDateRange(Landroid/content/Context;Ljava/util/Formatter;JJI)Ljava/util/Formatter;
     .locals 8
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/util/Formatter;
-    .param p2    # J
-    .param p4    # J
-    .param p6    # I
 
     const/4 v7, 0x0
 
@@ -246,12 +237,6 @@
 
 .method public static formatDateRange(Landroid/content/Context;Ljava/util/Formatter;JJILjava/lang/String;)Ljava/util/Formatter;
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/util/Formatter;
-    .param p2    # J
-    .param p4    # J
-    .param p6    # I
-    .param p7    # Ljava/lang/String;
 
     and-int/lit16 v2, p6, 0xc1
 
@@ -303,9 +288,6 @@
 
 .method public static formatDateTime(Landroid/content/Context;JI)Ljava/lang/String;
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
-    .param p3    # I
 
     move-object v0, p0
 
@@ -324,7 +306,6 @@
 
 .method public static formatDuration(J)Ljava/lang/CharSequence;
     .locals 12
-    .param p0    # J
 
     const-wide/32 v10, 0x36ee80
 
@@ -426,7 +407,6 @@
 
 .method public static formatElapsedTime(J)Ljava/lang/String;
     .locals 1
-    .param p0    # J
 
     const/4 v0, 0x0
 
@@ -439,8 +419,6 @@
 
 .method public static formatElapsedTime(Ljava/lang/StringBuilder;J)Ljava/lang/String;
     .locals 12
-    .param p0    # Ljava/lang/StringBuilder;
-    .param p1    # J
 
     const-wide/16 v1, 0x0
 
@@ -595,10 +573,6 @@
 
 .method public static final formatSameDayTime(JJII)Ljava/lang/CharSequence;
     .locals 8
-    .param p0    # J
-    .param p2    # J
-    .param p4    # I
-    .param p5    # I
 
     const/4 v7, 0x5
 
@@ -673,7 +647,6 @@
 
 .method public static getAMPMString(I)Ljava/lang/String;
     .locals 2
-    .param p0    # I
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -696,8 +669,6 @@
 
 .method public static getDayOfWeekString(II)Ljava/lang/String;
     .locals 3
-    .param p0    # I
-    .param p1    # I
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -757,8 +728,6 @@
 
 .method public static getMonthString(II)Ljava/lang/String;
     .locals 3
-    .param p0    # I
-    .param p1    # I
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -818,11 +787,6 @@
 
 .method public static getRelativeDateTimeString(Landroid/content/Context;JJJI)Ljava/lang/CharSequence;
     .locals 19
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
-    .param p3    # J
-    .param p5    # J
-    .param p7    # I
 
     invoke-static {}, Landroid/content/res/Resources;->getSystem()Landroid/content/res/Resources;
 
@@ -942,9 +906,6 @@
 
 .method private static final getRelativeDayString(Landroid/content/res/Resources;JJ)Ljava/lang/String;
     .locals 14
-    .param p0    # Landroid/content/res/Resources;
-    .param p1    # J
-    .param p3    # J
 
     invoke-virtual {p0}, Landroid/content/res/Resources;->getConfiguration()Landroid/content/res/Configuration;
 
@@ -1080,7 +1041,6 @@
 
 .method public static getRelativeTimeSpanString(J)Ljava/lang/CharSequence;
     .locals 6
-    .param p0    # J
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
@@ -1099,9 +1059,6 @@
 
 .method public static getRelativeTimeSpanString(JJJ)Ljava/lang/CharSequence;
     .locals 7
-    .param p0    # J
-    .param p2    # J
-    .param p4    # J
 
     const v6, 0x10014
 
@@ -1120,10 +1077,6 @@
 
 .method public static getRelativeTimeSpanString(JJJI)Ljava/lang/CharSequence;
     .locals 20
-    .param p0    # J
-    .param p2    # J
-    .param p4    # J
-    .param p6    # I
 
     invoke-static {}, Landroid/content/res/Resources;->getSystem()Landroid/content/res/Resources;
 
@@ -1359,8 +1312,6 @@
 
 .method public static getRelativeTimeSpanString(Landroid/content/Context;J)Ljava/lang/CharSequence;
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
 
     const/4 v0, 0x0
 
@@ -1373,9 +1324,6 @@
 
 .method public static getRelativeTimeSpanString(Landroid/content/Context;JZ)Ljava/lang/CharSequence;
     .locals 16
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
-    .param p3    # Z
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
@@ -1604,7 +1552,6 @@
 
 .method public static isToday(J)Z
     .locals 6
-    .param p0    # J
 
     new-instance v3, Landroid/text/format/Time;
 

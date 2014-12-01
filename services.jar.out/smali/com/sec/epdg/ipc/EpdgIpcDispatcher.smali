@@ -49,16 +49,6 @@
 
 .method public static SendGprsIPConfigs(ILcom/sec/epdg/IWlanEnum$IPSecIpType;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;)Z
     .locals 11
-    .param p0    # I
-    .param p1    # Lcom/sec/epdg/IWlanEnum$IPSecIpType;
-    .param p2    # Ljava/lang/String;
-    .param p3    # [Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # [Ljava/lang/String;
-    .param p7    # Ljava/lang/String;
-    .param p8    # [Ljava/lang/String;
-    .param p9    # [Ljava/lang/String;
 
     new-instance v0, Lcom/sec/epdg/ipc/EpdgGprsIpcMessage;
 
@@ -103,7 +93,6 @@
 
 .method private static getParamsForUserBin(Lcom/sec/epdg/ipc/EpdgIpcMessage;)Ljava/lang/String;
     .locals 2
-    .param p0    # Lcom/sec/epdg/ipc/EpdgIpcMessage;
 
     invoke-virtual {p0}, Lcom/sec/epdg/ipc/EpdgIpcMessage;->getMainCmd()I
 
@@ -140,8 +129,6 @@
 
 .method public static sendGeneralResponse(ZLcom/sec/epdg/ipc/EpdgIpcMessage;)Z
     .locals 4
-    .param p0    # Z
-    .param p1    # Lcom/sec/epdg/ipc/EpdgIpcMessage;
 
     const/4 v3, 0x1
 
@@ -162,8 +149,6 @@
 
 .method public static sendGprsCallStatus(II)Z
     .locals 5
-    .param p0    # I
-    .param p1    # I
 
     const/4 v4, 0x1
 
@@ -186,8 +171,6 @@
 
 .method public static sendGprsEpdgStatus(II)Z
     .locals 5
-    .param p0    # I
-    .param p1    # I
 
     const/4 v4, 0x1
 
@@ -210,8 +193,6 @@
 
 .method private static sendMessage(Lcom/sec/epdg/ipc/EpdgIpcMessage;Z)Z
     .locals 5
-    .param p0    # Lcom/sec/epdg/ipc/EpdgIpcMessage;
-    .param p1    # Z
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -351,10 +332,6 @@
 
 .method public static sendNetDataHandover(IIII)Z
     .locals 5
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v4, 0x1
 
@@ -377,9 +354,6 @@
 
 .method public static sendNetRegist(III)Z
     .locals 3
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
 
     new-instance v0, Lcom/sec/epdg/ipc/EpdgNetIpcMessage;
 

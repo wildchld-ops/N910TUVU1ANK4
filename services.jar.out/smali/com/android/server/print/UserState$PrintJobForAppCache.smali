@@ -50,8 +50,6 @@
 
 .method synthetic constructor <init>(Lcom/android/server/print/UserState;Lcom/android/server/print/UserState$1;)V
     .locals 0
-    .param p1    # Lcom/android/server/print/UserState;
-    .param p2    # Lcom/android/server/print/UserState$1;
 
     invoke-direct {p0, p1}, Lcom/android/server/print/UserState$PrintJobForAppCache;-><init>(Lcom/android/server/print/UserState;)V
 
@@ -60,7 +58,6 @@
 
 .method static synthetic access$2000(Lcom/android/server/print/UserState$PrintJobForAppCache;)Landroid/util/SparseArray;
     .locals 1
-    .param p0    # Lcom/android/server/print/UserState$PrintJobForAppCache;
 
     iget-object v0, p0, Lcom/android/server/print/UserState$PrintJobForAppCache;->mPrintJobsForRunningApp:Landroid/util/SparseArray;
 
@@ -71,8 +68,6 @@
 # virtual methods
 .method public dump(Ljava/io/PrintWriter;Ljava/lang/String;)V
     .locals 12
-    .param p1    # Ljava/io/PrintWriter;
-    .param p2    # Ljava/lang/String;
 
     iget-object v8, p0, Lcom/android/server/print/UserState$PrintJobForAppCache;->this$0:Lcom/android/server/print/UserState;
 
@@ -204,8 +199,6 @@
 
 .method public getPrintJob(Landroid/print/PrintJobId;I)Landroid/print/PrintJobInfo;
     .locals 7
-    .param p1    # Landroid/print/PrintJobId;
-    .param p2    # I
 
     const/4 v4, 0x0
 
@@ -293,7 +286,6 @@
 
 .method public getPrintJobs(I)Ljava/util/List;
     .locals 7
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -437,9 +429,6 @@
 
 .method public onPrintJobCreated(Landroid/os/IBinder;ILandroid/print/PrintJobInfo;)Z
     .locals 5
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # I
-    .param p3    # Landroid/print/PrintJobInfo;
 
     const/4 v2, 0x0
 
@@ -509,7 +498,6 @@
 
 .method public onPrintJobStateChanged(Landroid/print/PrintJobInfo;)V
     .locals 7
-    .param p1    # Landroid/print/PrintJobInfo;
 
     iget-object v4, p0, Lcom/android/server/print/UserState$PrintJobForAppCache;->this$0:Lcom/android/server/print/UserState;
 

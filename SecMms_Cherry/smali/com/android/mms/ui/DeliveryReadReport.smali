@@ -208,8 +208,6 @@
 
 .method public static getGroupSmsDeliveryReportText(Landroid/content/Context;J)Ljava/lang/String;
     .locals 26
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
 
     new-instance v14, Ljava/lang/StringBuilder;
 
@@ -805,8 +803,6 @@
 
 .method private static getMmsReportRequests(Landroid/content/Context;J)Ljava/util/List;
     .locals 9
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -924,8 +920,6 @@
 
 .method private static getMmsReportStatus(Landroid/content/Context;J)Ljava/util/Map;
     .locals 14
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1077,8 +1071,6 @@
 
 .method public static getMmsReportText(Landroid/content/Context;J)Ljava/lang/String;
     .locals 19
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
 
     invoke-static {}, Lcom/android/mms/MmsConfig;->getMMSDeliveryReportsEnabled()Z
 
@@ -2410,8 +2402,6 @@
 
 .method public static getSmsDeliveryReportText(Landroid/content/Context;J)Ljava/lang/String;
     .locals 25
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
 
     new-instance v14, Ljava/lang/StringBuilder;
 
@@ -3048,7 +3038,6 @@
 
 .method private static queryStatusByRecipient(Ljava/util/Map;Ljava/lang/String;)Lcom/android/mms/ui/DeliveryReadReport$MmsReportStatus;
     .locals 5
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

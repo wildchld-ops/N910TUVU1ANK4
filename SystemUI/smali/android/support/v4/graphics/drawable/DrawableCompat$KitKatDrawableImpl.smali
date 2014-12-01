@@ -27,7 +27,6 @@
 # virtual methods
 .method public isAutoMirrored(Landroid/graphics/drawable/Drawable;)Z
     .locals 1
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     invoke-static {p1}, Landroid/support/v4/graphics/drawable/DrawableCompatKitKat;->isAutoMirrored(Landroid/graphics/drawable/Drawable;)Z
 
@@ -38,8 +37,6 @@
 
 .method public setAutoMirrored(Landroid/graphics/drawable/Drawable;Z)V
     .locals 0
-    .param p1    # Landroid/graphics/drawable/Drawable;
-    .param p2    # Z
 
     invoke-static {p1, p2}, Landroid/support/v4/graphics/drawable/DrawableCompatKitKat;->setAutoMirrored(Landroid/graphics/drawable/Drawable;Z)V
 

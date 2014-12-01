@@ -407,7 +407,6 @@
 
 .method private RemoteShareGridItemClick(I)V
     .locals 7
-    .param p1    # I
 
     const/4 v6, 0x1
 
@@ -526,7 +525,6 @@
 
 .method private RemoteShareQuickConnectGridItemClick(I)V
     .locals 4
-    .param p1    # I
 
     iget-object v2, p0, Lcom/android/internal/app/ResolverActivity;->mRemoteShareQuickConnectListAdapter:Lcom/android/internal/app/ResolverActivity$RemoteShareQuickConnectListAdapter;
 
@@ -641,7 +639,6 @@
 
 .method private RemoteShareRecentHistoryDefaultGridItemClick(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -729,7 +726,6 @@
 
 .method private RemoteShareRecentHistoryGridItemClick(I)V
     .locals 5
-    .param p1    # I
 
     iget-object v2, p0, Lcom/android/internal/app/ResolverActivity;->mRemoteShareRecentHistoryListAdapter:Lcom/android/internal/app/ResolverActivity$RemoteShareRecentHistoryListAdapter;
 
@@ -815,7 +811,6 @@
 
 .method static synthetic access$000(Lcom/android/internal/app/ResolverActivity;)I
     .locals 1
-    .param p0    # Lcom/android/internal/app/ResolverActivity;
 
     iget v0, p0, Lcom/android/internal/app/ResolverActivity;->mRecentContactsListCount:I
 
@@ -824,8 +819,6 @@
 
 .method static synthetic access$002(Lcom/android/internal/app/ResolverActivity;I)I
     .locals 0
-    .param p0    # Lcom/android/internal/app/ResolverActivity;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/internal/app/ResolverActivity;->mRecentContactsListCount:I
 
@@ -834,7 +827,6 @@
 
 .method static synthetic access$008(Lcom/android/internal/app/ResolverActivity;)I
     .locals 2
-    .param p0    # Lcom/android/internal/app/ResolverActivity;
 
     iget v0, p0, Lcom/android/internal/app/ResolverActivity;->mRecentContactsListCount:I
 
@@ -847,7 +839,6 @@
 
 .method static synthetic access$100(Lcom/android/internal/app/ResolverActivity;)Ljava/util/List;
     .locals 1
-    .param p0    # Lcom/android/internal/app/ResolverActivity;
 
     iget-object v0, p0, Lcom/android/internal/app/ResolverActivity;->mRecentContactsListThumb:Ljava/util/List;
 
@@ -856,8 +847,6 @@
 
 .method static synthetic access$1000(Lcom/android/internal/app/ResolverActivity;I)V
     .locals 0
-    .param p0    # Lcom/android/internal/app/ResolverActivity;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/internal/app/ResolverActivity;->setVisibilityGridRemoteShareRecentHistory(I)V
 
@@ -866,7 +855,6 @@
 
 .method static synthetic access$1100(Lcom/android/internal/app/ResolverActivity;)V
     .locals 0
-    .param p0    # Lcom/android/internal/app/ResolverActivity;
 
     invoke-direct {p0}, Lcom/android/internal/app/ResolverActivity;->initRemoteShareRecentHistoryList()V
 
@@ -875,7 +863,6 @@
 
 .method static synthetic access$1202(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/internal/app/ResolverActivity;->mIsEasySingUpIsCertificated:Z
 
@@ -884,7 +871,6 @@
 
 .method static synthetic access$1300(Lcom/android/internal/app/ResolverActivity;)Landroid/content/BroadcastReceiver;
     .locals 1
-    .param p0    # Lcom/android/internal/app/ResolverActivity;
 
     iget-object v0, p0, Lcom/android/internal/app/ResolverActivity;->mEasySignUpReceiver:Landroid/content/BroadcastReceiver;
 
@@ -893,7 +879,6 @@
 
 .method static synthetic access$1400(Lcom/android/internal/app/ResolverActivity;)Z
     .locals 1
-    .param p0    # Lcom/android/internal/app/ResolverActivity;
 
     invoke-direct {p0}, Lcom/android/internal/app/ResolverActivity;->sendRequesRecentContactsHistoryList()Z
 
@@ -904,7 +889,6 @@
 
 .method static synthetic access$1500(Lcom/android/internal/app/ResolverActivity;)Lcom/android/internal/app/ResolverActivity$ResolveListAdapter;
     .locals 1
-    .param p0    # Lcom/android/internal/app/ResolverActivity;
 
     iget-object v0, p0, Lcom/android/internal/app/ResolverActivity;->mAdapter:Lcom/android/internal/app/ResolverActivity$ResolveListAdapter;
 
@@ -913,7 +897,6 @@
 
 .method static synthetic access$1600(Lcom/android/internal/app/ResolverActivity;)Z
     .locals 1
-    .param p0    # Lcom/android/internal/app/ResolverActivity;
 
     iget-boolean v0, p0, Lcom/android/internal/app/ResolverActivity;->mIsDeviceDefault:Z
 
@@ -922,7 +905,6 @@
 
 .method static synthetic access$1700(Lcom/android/internal/app/ResolverActivity;)Landroid/widget/AbsListView;
     .locals 1
-    .param p0    # Lcom/android/internal/app/ResolverActivity;
 
     iget-object v0, p0, Lcom/android/internal/app/ResolverActivity;->mListView:Landroid/widget/AbsListView;
 
@@ -931,7 +913,6 @@
 
 .method static synthetic access$1800(Lcom/android/internal/app/ResolverActivity;)Z
     .locals 1
-    .param p0    # Lcom/android/internal/app/ResolverActivity;
 
     iget-boolean v0, p0, Lcom/android/internal/app/ResolverActivity;->mIsGridType:Z
 
@@ -940,7 +921,6 @@
 
 .method static synthetic access$1900(Lcom/android/internal/app/ResolverActivity;)Z
     .locals 1
-    .param p0    # Lcom/android/internal/app/ResolverActivity;
 
     iget-boolean v0, p0, Lcom/android/internal/app/ResolverActivity;->mAlwaysUseOption:Z
 
@@ -949,7 +929,6 @@
 
 .method static synthetic access$200(Lcom/android/internal/app/ResolverActivity;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/internal/app/ResolverActivity;
 
     iget-object v0, p0, Lcom/android/internal/app/ResolverActivity;->mRecentContactsListName:Ljava/util/ArrayList;
 
@@ -958,7 +937,6 @@
 
 .method static synthetic access$2000(Lcom/android/internal/app/ResolverActivity;)Landroid/content/pm/PackageManager;
     .locals 1
-    .param p0    # Lcom/android/internal/app/ResolverActivity;
 
     iget-object v0, p0, Lcom/android/internal/app/ResolverActivity;->mPm:Landroid/content/pm/PackageManager;
 
@@ -967,7 +945,6 @@
 
 .method static synthetic access$2100(Lcom/android/internal/app/ResolverActivity;)Z
     .locals 1
-    .param p0    # Lcom/android/internal/app/ResolverActivity;
 
     iget-boolean v0, p0, Lcom/android/internal/app/ResolverActivity;->mShowExtended:Z
 
@@ -976,8 +953,6 @@
 
 .method static synthetic access$2102(Lcom/android/internal/app/ResolverActivity;Z)Z
     .locals 0
-    .param p0    # Lcom/android/internal/app/ResolverActivity;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/internal/app/ResolverActivity;->mShowExtended:Z
 
@@ -986,7 +961,6 @@
 
 .method static synthetic access$2200(Lcom/android/internal/app/ResolverActivity;)Z
     .locals 1
-    .param p0    # Lcom/android/internal/app/ResolverActivity;
 
     iget-boolean v0, p0, Lcom/android/internal/app/ResolverActivity;->mApplyRemoteShareResolver:Z
 
@@ -995,7 +969,6 @@
 
 .method static synthetic access$2300(Lcom/android/internal/app/ResolverActivity;)I
     .locals 1
-    .param p0    # Lcom/android/internal/app/ResolverActivity;
 
     iget v0, p0, Lcom/android/internal/app/ResolverActivity;->mIconSize:I
 
@@ -1004,8 +977,6 @@
 
 .method static synthetic access$2402(Lcom/android/internal/app/ResolverActivity;Z)Z
     .locals 0
-    .param p0    # Lcom/android/internal/app/ResolverActivity;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/internal/app/ResolverActivity;->mItemLongClicked:Z
 
@@ -1014,7 +985,6 @@
 
 .method static synthetic access$300(Lcom/android/internal/app/ResolverActivity;)[Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/internal/app/ResolverActivity;
 
     iget-object v0, p0, Lcom/android/internal/app/ResolverActivity;->request_dataids:[Ljava/lang/String;
 
@@ -1023,7 +993,6 @@
 
 .method static synthetic access$400(Lcom/android/internal/app/ResolverActivity;)[J
     .locals 1
-    .param p0    # Lcom/android/internal/app/ResolverActivity;
 
     iget-object v0, p0, Lcom/android/internal/app/ResolverActivity;->mRecentContactsId:[J
 
@@ -1032,7 +1001,6 @@
 
 .method static synthetic access$500(Lcom/android/internal/app/ResolverActivity;)[I
     .locals 1
-    .param p0    # Lcom/android/internal/app/ResolverActivity;
 
     iget-object v0, p0, Lcom/android/internal/app/ResolverActivity;->mRecentContactsItemContactsCountInGroup:[I
 
@@ -1041,7 +1009,6 @@
 
 .method static synthetic access$600(Lcom/android/internal/app/ResolverActivity;)Landroid/widget/HorizontalListView;
     .locals 1
-    .param p0    # Lcom/android/internal/app/ResolverActivity;
 
     iget-object v0, p0, Lcom/android/internal/app/ResolverActivity;->mGridRemoteShareRecentHistory:Landroid/widget/HorizontalListView;
 
@@ -1050,7 +1017,6 @@
 
 .method static synthetic access$700(Lcom/android/internal/app/ResolverActivity;)Landroid/content/Intent;
     .locals 1
-    .param p0    # Lcom/android/internal/app/ResolverActivity;
 
     iget-object v0, p0, Lcom/android/internal/app/ResolverActivity;->mIntent:Landroid/content/Intent;
 
@@ -1059,8 +1025,6 @@
 
 .method static synthetic access$800(Lcom/android/internal/app/ResolverActivity;Landroid/content/Intent;)V
     .locals 0
-    .param p0    # Lcom/android/internal/app/ResolverActivity;
-    .param p1    # Landroid/content/Intent;
 
     invoke-direct {p0, p1}, Lcom/android/internal/app/ResolverActivity;->addRemoteShareRecentHistoryGridView(Landroid/content/Intent;)V
 
@@ -1069,8 +1033,6 @@
 
 .method static synthetic access$900(Lcom/android/internal/app/ResolverActivity;I)V
     .locals 0
-    .param p0    # Lcom/android/internal/app/ResolverActivity;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/internal/app/ResolverActivity;->setVisibilityGridRemoteShareRecentHistoryDefault(I)V
 
@@ -1079,7 +1041,6 @@
 
 .method private addApplicationGridView(Landroid/content/Intent;)V
     .locals 3
-    .param p1    # Landroid/content/Intent;
 
     iget-object v1, p0, Lcom/android/internal/app/AlertActivity;->mAlertParams:Lcom/android/internal/app/AlertController$AlertParams;
 
@@ -1144,7 +1105,6 @@
 
 .method private addRemoteShareGridView(Landroid/content/Intent;)V
     .locals 8
-    .param p1    # Landroid/content/Intent;
 
     iget-object v0, p0, Lcom/android/internal/app/AlertActivity;->mAlertParams:Lcom/android/internal/app/AlertController$AlertParams;
 
@@ -1231,7 +1191,6 @@
 
 .method private addRemoteShareQuickConnectGridView(Landroid/content/Intent;)V
     .locals 8
-    .param p1    # Landroid/content/Intent;
 
     iget-object v0, p0, Lcom/android/internal/app/AlertActivity;->mAlertParams:Lcom/android/internal/app/AlertController$AlertParams;
 
@@ -1318,7 +1277,6 @@
 
 .method private addRemoteShareRecentHistoryDefaultGridView(Landroid/content/Intent;)V
     .locals 8
-    .param p1    # Landroid/content/Intent;
 
     iget-object v0, p0, Lcom/android/internal/app/AlertActivity;->mAlertParams:Lcom/android/internal/app/AlertController$AlertParams;
 
@@ -1405,7 +1363,6 @@
 
 .method private addRemoteShareRecentHistoryGridView(Landroid/content/Intent;)V
     .locals 8
-    .param p1    # Landroid/content/Intent;
 
     iget-object v0, p0, Lcom/android/internal/app/AlertActivity;->mAlertParams:Lcom/android/internal/app/AlertController$AlertParams;
 
@@ -1480,8 +1437,6 @@
 
 .method private applyRemoteShareResolver(Landroid/content/Intent;Z)V
     .locals 6
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Z
 
     const/4 v5, 0x0
 
@@ -1607,7 +1562,6 @@
 
 .method private checkThemeType(Landroid/content/Intent;)V
     .locals 6
-    .param p1    # Landroid/content/Intent;
 
     const/4 v5, 0x1
 
@@ -1680,7 +1634,6 @@
 
 .method private clearRemoteShareList(Z)V
     .locals 1
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -1712,7 +1665,6 @@
 
 .method private clearRemoteShareQuickConnectList(Z)V
     .locals 1
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -1744,7 +1696,6 @@
 
 .method private clearRemoteShareRecentHistoryDefaultList(Z)V
     .locals 1
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -1776,7 +1727,6 @@
 
 .method private clearRemoteShareRecentHistoryList(Z)V
     .locals 1
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -2958,7 +2908,6 @@
 
 .method private isIntentTypeSupportRemoteShare(Landroid/content/Intent;)Z
     .locals 2
-    .param p1    # Landroid/content/Intent;
 
     invoke-virtual {p1}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
@@ -3000,7 +2949,6 @@
 
 .method private isIntentUriDataIValidCheck(Landroid/content/Intent;)Z
     .locals 9
-    .param p1    # Landroid/content/Intent;
 
     const/4 v2, 0x1
 
@@ -3281,7 +3229,6 @@
 
 .method private isSupportRemoteShare(Landroid/content/Intent;)Z
     .locals 3
-    .param p1    # Landroid/content/Intent;
 
     const/4 v0, 0x1
 
@@ -3402,9 +3349,6 @@
 
 .method private makeContactsThumbnailImage([BJZ)Landroid/graphics/drawable/Drawable;
     .locals 18
-    .param p1    # [B
-    .param p2    # J
-    .param p4    # Z
 
     if-eqz p1, :cond_0
 
@@ -3972,7 +3916,6 @@
 
 .method private setSubtitleBackground(Landroid/widget/TextView;)V
     .locals 5
-    .param p1    # Landroid/widget/TextView;
 
     invoke-virtual {p1}, Landroid/view/View;->getPaddingLeft()I
 
@@ -4013,7 +3956,6 @@
 
 .method private setSubtitleBackgroundNoSpace(Landroid/widget/TextView;)V
     .locals 5
-    .param p1    # Landroid/widget/TextView;
 
     invoke-virtual {p1}, Landroid/view/View;->getPaddingLeft()I
 
@@ -4054,7 +3996,6 @@
 
 .method private setSubtitleColor(Landroid/widget/TextView;)V
     .locals 2
-    .param p1    # Landroid/widget/TextView;
 
     iget-boolean v0, p0, Lcom/android/internal/app/ResolverActivity;->mIsLightTheme:Z
 
@@ -4093,7 +4034,6 @@
 
 .method private setVisibilityGridQuickConnect(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/internal/app/AlertActivity;->mAlertParams:Lcom/android/internal/app/AlertController$AlertParams;
 
@@ -4124,7 +4064,6 @@
 
 .method private setVisibilityGridRemoteShare(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/internal/app/AlertActivity;->mAlertParams:Lcom/android/internal/app/AlertController$AlertParams;
 
@@ -4155,7 +4094,6 @@
 
 .method private setVisibilityGridRemoteShareRecentHistory(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/internal/app/AlertActivity;->mAlertParams:Lcom/android/internal/app/AlertController$AlertParams;
 
@@ -4174,7 +4112,6 @@
 
 .method private setVisibilityGridRemoteShareRecentHistoryDefault(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/internal/app/AlertActivity;->mAlertParams:Lcom/android/internal/app/AlertController$AlertParams;
 
@@ -4193,7 +4130,6 @@
 
 .method private setVisibilityGridRemoteShareRecentHistoryDefaultTitle(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/internal/app/AlertActivity;->mAlertParams:Lcom/android/internal/app/AlertController$AlertParams;
 
@@ -4212,7 +4148,6 @@
 
 .method private setVisibilityGridRemoteShareRecentHistoryTitle(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/internal/app/AlertActivity;->mAlertParams:Lcom/android/internal/app/AlertController$AlertParams;
 
@@ -4231,7 +4166,6 @@
 
 .method private setVisibilityGridTitleApplication(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/internal/app/AlertActivity;->mAlertParams:Lcom/android/internal/app/AlertController$AlertParams;
 
@@ -4252,7 +4186,6 @@
 # virtual methods
 .method public dispatchPopulateAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)Z
     .locals 4
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
 
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -4380,8 +4313,6 @@
 
 .method getIcon(Landroid/content/res/Resources;I)Landroid/graphics/drawable/Drawable;
     .locals 3
-    .param p1    # Landroid/content/res/Resources;
-    .param p2    # I
 
     :try_start_0
     iget v2, p0, Lcom/android/internal/app/ResolverActivity;->mIconDpi:I
@@ -4405,7 +4336,6 @@
 
 .method loadIconForResolveInfo(Landroid/content/pm/ResolveInfo;)Landroid/graphics/drawable/Drawable;
     .locals 6
-    .param p1    # Landroid/content/pm/ResolveInfo;
 
     invoke-virtual {p0}, Landroid/content/ContextWrapper;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -4524,9 +4454,6 @@
 
 .method protected onActivityResult(IILandroid/content/Intent;)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     invoke-super {p0, p1, p2, p3}, Landroid/app/Activity;->onActivityResult(IILandroid/content/Intent;)V
 
@@ -4567,7 +4494,6 @@
 
 .method public onButtonClick(Landroid/view/View;)V
     .locals 3
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p1}, Landroid/view/View;->getId()I
 
@@ -4600,7 +4526,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 7
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v4, 0x0
 
@@ -4633,11 +4558,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;Landroid/content/Intent;Ljava/lang/CharSequence;[Landroid/content/Intent;Ljava/util/List;Z)V
     .locals 18
-    .param p1    # Landroid/os/Bundle;
-    .param p2    # Landroid/content/Intent;
-    .param p3    # Ljava/lang/CharSequence;
-    .param p4    # [Landroid/content/Intent;
-    .param p6    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -5548,9 +5468,6 @@
 
 .method protected onIntentSelected(Landroid/content/pm/ResolveInfo;Landroid/content/Intent;Z)V
     .locals 30
-    .param p1    # Landroid/content/pm/ResolveInfo;
-    .param p2    # Landroid/content/Intent;
-    .param p3    # Z
 
     move-object/from16 v0, p0
 
@@ -6135,9 +6052,6 @@
 
 .method public onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
     .locals 4
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -6394,7 +6308,6 @@
 
 .method protected onRestoreInstanceState(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onRestoreInstanceState(Landroid/os/Bundle;)V
 
@@ -6533,7 +6446,6 @@
 
 .method public onWindowFocusChanged(Z)V
     .locals 5
-    .param p1    # Z
 
     const/4 v4, 0x0
 
@@ -6642,7 +6554,6 @@
 
 .method showAppDetails(Landroid/content/pm/ResolveInfo;)V
     .locals 5
-    .param p1    # Landroid/content/pm/ResolveInfo;
 
     new-instance v1, Landroid/content/Intent;
 
@@ -6683,8 +6594,6 @@
 
 .method startSelected(IZ)V
     .locals 3
-    .param p1    # I
-    .param p2    # Z
 
     invoke-virtual {p0}, Landroid/app/Activity;->isFinishing()Z
 

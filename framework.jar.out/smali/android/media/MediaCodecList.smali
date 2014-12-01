@@ -35,7 +35,6 @@
 
 .method public static final getCodecInfoAt(I)Landroid/media/MediaCodecInfo;
     .locals 1
-    .param p0    # I
 
     if-ltz p0, :cond_0
 

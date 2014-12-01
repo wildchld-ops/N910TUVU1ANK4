@@ -72,8 +72,6 @@
 # direct methods
 .method public constructor <init>(Landroid/app/Activity;Z)V
     .locals 1
-    .param p1    # Landroid/app/Activity;
-    .param p2    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -108,8 +106,6 @@
 
 .method private moveToState(Landroid/app/LocalActivityManager$LocalActivityRecord;I)V
     .locals 13
-    .param p1    # Landroid/app/LocalActivityManager$LocalActivityRecord;
-    .param p2    # I
 
     const/4 v3, 0x0
 
@@ -320,8 +316,6 @@
 
 .method private performDestroy(Landroid/app/LocalActivityManager$LocalActivityRecord;Z)Landroid/view/Window;
     .locals 4
-    .param p1    # Landroid/app/LocalActivityManager$LocalActivityRecord;
-    .param p2    # Z
 
     const/4 v3, 0x0
 
@@ -360,8 +354,6 @@
 
 .method private performPause(Landroid/app/LocalActivityManager$LocalActivityRecord;Z)V
     .locals 3
-    .param p1    # Landroid/app/LocalActivityManager$LocalActivityRecord;
-    .param p2    # Z
 
     iget-object v2, p1, Landroid/app/LocalActivityManager$LocalActivityRecord;->instanceState:Landroid/os/Bundle;
 
@@ -393,8 +385,6 @@
 # virtual methods
 .method public destroyActivity(Ljava/lang/String;Z)Landroid/view/Window;
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     iget-object v2, p0, Landroid/app/LocalActivityManager;->mActivities:Ljava/util/Map;
 
@@ -428,7 +418,6 @@
 
 .method public dispatchCreate(Landroid/os/Bundle;)V
     .locals 7
-    .param p1    # Landroid/os/Bundle;
 
     if-eqz p1, :cond_1
 
@@ -517,7 +506,6 @@
 
 .method public dispatchDestroy(Z)V
     .locals 4
-    .param p1    # Z
 
     iget-object v3, p0, Landroid/app/LocalActivityManager;->mActivityArray:Ljava/util/ArrayList;
 
@@ -560,7 +548,6 @@
 
 .method public dispatchPause(Z)V
     .locals 6
-    .param p1    # Z
 
     const/4 v5, 0x3
 
@@ -777,7 +764,6 @@
 
 .method public getActivity(Ljava/lang/String;)Landroid/app/Activity;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Landroid/app/LocalActivityManager;->mActivities:Ljava/util/Map;
 
@@ -928,8 +914,6 @@
 
 .method public startActivity(Ljava/lang/String;Landroid/content/Intent;)Landroid/view/Window;
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/Intent;
 
     const/4 v8, 0x1
 

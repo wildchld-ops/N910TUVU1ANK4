@@ -14,9 +14,6 @@
 # direct methods
 .method constructor <init>(IIZ)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     const/4 v4, 0x0
 
@@ -87,7 +84,6 @@
 # virtual methods
 .method end(Landroid/graphics/Canvas;)V
     .locals 2
-    .param p1    # Landroid/graphics/Canvas;
 
     invoke-virtual {p0}, Landroid/view/GLES20RenderLayer;->getCanvas()Landroid/view/HardwareCanvas;
 
@@ -146,8 +142,6 @@
 
 .method redrawLater(Landroid/view/DisplayList;Landroid/graphics/Rect;)V
     .locals 7
-    .param p1    # Landroid/view/DisplayList;
-    .param p2    # Landroid/graphics/Rect;
 
     iget v0, p0, Landroid/view/GLES20Layer;->mLayer:I
 
@@ -178,8 +172,6 @@
 
 .method resize(II)Z
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     const/4 v1, 0x0
 
@@ -253,7 +245,6 @@
 
 .method setOpaque(Z)V
     .locals 1
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/view/HardwareLayer;->mOpaque:Z
 
@@ -266,14 +257,12 @@
 
 .method setTransform(Landroid/graphics/Matrix;)V
     .locals 0
-    .param p1    # Landroid/graphics/Matrix;
 
     return-void
 .end method
 
 .method start(Landroid/graphics/Canvas;)Landroid/view/HardwareCanvas;
     .locals 1
-    .param p1    # Landroid/graphics/Canvas;
 
     const/4 v0, 0x0
 
@@ -286,8 +275,6 @@
 
 .method start(Landroid/graphics/Canvas;Landroid/graphics/Rect;)Landroid/view/HardwareCanvas;
     .locals 3
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # Landroid/graphics/Rect;
 
     instance-of v1, p1, Landroid/view/GLES20Canvas;
 

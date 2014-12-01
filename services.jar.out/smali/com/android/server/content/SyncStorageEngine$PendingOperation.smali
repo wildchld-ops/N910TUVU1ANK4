@@ -39,13 +39,6 @@
 # direct methods
 .method constructor <init>(Landroid/accounts/Account;IIILjava/lang/String;Landroid/os/Bundle;Z)V
     .locals 1
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Ljava/lang/String;
-    .param p6    # Landroid/os/Bundle;
-    .param p7    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -85,7 +78,6 @@
 
 .method constructor <init>(Lcom/android/server/content/SyncStorageEngine$PendingOperation;)V
     .locals 1
-    .param p1    # Lcom/android/server/content/SyncStorageEngine$PendingOperation;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

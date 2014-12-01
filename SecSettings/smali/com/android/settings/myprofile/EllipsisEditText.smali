@@ -25,7 +25,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Landroid/widget/EditText;-><init>(Landroid/content/Context;)V
 
@@ -74,8 +73,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/widget/EditText;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -124,9 +121,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/EditText;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
@@ -175,8 +169,6 @@
 
 .method static synthetic access$002(Lcom/android/settings/myprofile/EllipsisEditText;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/myprofile/EllipsisEditText;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/myprofile/EllipsisEditText;->mEllipsized:Z
 
@@ -193,7 +185,6 @@
 
 .method private initWidth(Landroid/content/Context;)V
     .locals 9
-    .param p1    # Landroid/content/Context;
 
     const-string v6, "SEC_FLOATING_FEATURE_SETTINGS_SLOGAN_PERSONAL_MESSAGE"
 
@@ -374,24 +365,18 @@
 # virtual methods
 .method public afterTextChanged(Landroid/text/Editable;)V
     .locals 0
-    .param p1    # Landroid/text/Editable;
 
     return-void
 .end method
 
 .method public beforeTextChanged(Ljava/lang/CharSequence;III)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     return-void
 .end method
 
 .method public convertPixelsToDp(F)F
     .locals 2
-    .param p1    # F
 
     iget v1, p0, Lcom/android/settings/myprofile/EllipsisEditText;->mScaledDensity:F
 
@@ -525,10 +510,6 @@
 
 .method public onTextChanged(Ljava/lang/CharSequence;III)V
     .locals 10
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/4 v9, 0x0
 
@@ -702,7 +683,6 @@
 
 .method public setMaxTextSize(F)V
     .locals 1
-    .param p1    # F
 
     iget v0, p0, Lcom/android/settings/myprofile/EllipsisEditText;->mScaledDensity:F
 
@@ -715,7 +695,6 @@
 
 .method public setScaledDensity(F)V
     .locals 0
-    .param p1    # F
 
     iput p1, p0, Lcom/android/settings/myprofile/EllipsisEditText;->mScaledDensity:F
 
@@ -724,7 +703,6 @@
 
 .method public setTextSize(F)V
     .locals 1
-    .param p1    # F
 
     const/4 v0, 0x1
 

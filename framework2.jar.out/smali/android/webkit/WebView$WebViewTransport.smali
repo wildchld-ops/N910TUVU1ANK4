@@ -57,7 +57,6 @@
 
 .method public declared-synchronized setWebView(Landroid/webkit/WebView;)V
     .locals 1
-    .param p1    # Landroid/webkit/WebView;
 
     monitor-enter p0
 

@@ -18,10 +18,6 @@
 # direct methods
 .method public constructor <init>(Lcom/voovio/sweep/Voovio;Lcom/voovio/voo3d/data/Vector3;Lcom/voovio/voo3d/data/Vector3;F)V
     .locals 1
-    .param p1    # Lcom/voovio/sweep/Voovio;
-    .param p2    # Lcom/voovio/voo3d/data/Vector3;
-    .param p3    # Lcom/voovio/voo3d/data/Vector3;
-    .param p4    # F
 
     const/4 v0, 0x0
 
@@ -64,7 +60,6 @@
 # virtual methods
 .method public equals(Lcom/voovio/sweep/Node;)Z
     .locals 2
-    .param p1    # Lcom/voovio/sweep/Node;
 
     iget-object v0, p0, Lcom/voovio/sweep/Node;->m_oVoovio:Lcom/voovio/sweep/Voovio;
 
@@ -113,10 +108,6 @@
 
 .method public equals(Lcom/voovio/sweep/Voovio;Lcom/voovio/voo3d/data/Vector3;Lcom/voovio/voo3d/data/Vector3;F)Z
     .locals 1
-    .param p1    # Lcom/voovio/sweep/Voovio;
-    .param p2    # Lcom/voovio/voo3d/data/Vector3;
-    .param p3    # Lcom/voovio/voo3d/data/Vector3;
-    .param p4    # F
 
     iget-object v0, p0, Lcom/voovio/sweep/Node;->m_oVoovio:Lcom/voovio/sweep/Voovio;
 

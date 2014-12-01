@@ -49,8 +49,6 @@
 
 .method synthetic constructor <init>(Lcom/android/server/enterprise/kioskmode/KioskModeService;Lcom/android/server/enterprise/kioskmode/KioskModeService$1;)V
     .locals 0
-    .param p1    # Lcom/android/server/enterprise/kioskmode/KioskModeService;
-    .param p2    # Lcom/android/server/enterprise/kioskmode/KioskModeService$1;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/kioskmode/KioskModeService$KioskModeCache;-><init>(Lcom/android/server/enterprise/kioskmode/KioskModeService;)V
 
@@ -59,7 +57,6 @@
 
 .method static synthetic access$1100(Lcom/android/server/enterprise/kioskmode/KioskModeService$KioskModeCache;)Ljava/util/Map;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/kioskmode/KioskModeService$KioskModeCache;
 
     iget-object v0, p0, Lcom/android/server/enterprise/kioskmode/KioskModeService$KioskModeCache;->mBlockedHwKeys:Ljava/util/Map;
 

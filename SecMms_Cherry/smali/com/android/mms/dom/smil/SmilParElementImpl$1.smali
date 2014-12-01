@@ -21,7 +21,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/mms/dom/smil/SmilParElementImpl;Lorg/w3c/dom/smil/SMILElement;)V
     .locals 0
-    .param p2    # Lorg/w3c/dom/smil/SMILElement;
 
     iput-object p1, p0, Lcom/android/mms/dom/smil/SmilParElementImpl$1;->this$0:Lcom/android/mms/dom/smil/SmilParElementImpl;
 
@@ -173,7 +172,6 @@
 
 .method public seekElement(F)V
     .locals 0
-    .param p1    # F
 
     return-void
 .end method

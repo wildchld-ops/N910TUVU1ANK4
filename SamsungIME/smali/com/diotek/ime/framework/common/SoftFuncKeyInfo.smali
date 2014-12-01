@@ -16,10 +16,6 @@
 # direct methods
 .method public constructor <init>(IILjava/lang/String;Lcom/diotek/ime/framework/common/Language;)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Lcom/diotek/ime/framework/common/Language;
 
     const/4 v1, 0x0
 

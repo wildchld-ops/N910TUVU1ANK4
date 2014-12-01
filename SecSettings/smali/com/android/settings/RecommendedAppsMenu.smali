@@ -195,7 +195,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/RecommendedAppsMenu;)V
     .locals 0
-    .param p0    # Lcom/android/settings/RecommendedAppsMenu;
 
     invoke-direct {p0}, Lcom/android/settings/RecommendedAppsMenu;->refreshUIForSwitch()V
 
@@ -204,7 +203,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/RecommendedAppsMenu;)Landroid/widget/Button;
     .locals 1
-    .param p0    # Lcom/android/settings/RecommendedAppsMenu;
 
     iget-object v0, p0, Lcom/android/settings/RecommendedAppsMenu;->editEarphonesBtn:Landroid/widget/Button;
 
@@ -213,7 +211,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/RecommendedAppsMenu;)Landroid/app/Fragment;
     .locals 1
-    .param p0    # Lcom/android/settings/RecommendedAppsMenu;
 
     iget-object v0, p0, Lcom/android/settings/RecommendedAppsMenu;->mFragment:Landroid/app/Fragment;
 
@@ -222,7 +219,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/RecommendedAppsMenu;)Landroid/widget/Button;
     .locals 1
-    .param p0    # Lcom/android/settings/RecommendedAppsMenu;
 
     iget-object v0, p0, Lcom/android/settings/RecommendedAppsMenu;->editDockingsBtn:Landroid/widget/Button;
 
@@ -231,7 +227,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/RecommendedAppsMenu;)Landroid/widget/Button;
     .locals 1
-    .param p0    # Lcom/android/settings/RecommendedAppsMenu;
 
     iget-object v0, p0, Lcom/android/settings/RecommendedAppsMenu;->editRoamingBtn:Landroid/widget/Button;
 
@@ -240,8 +235,6 @@
 
 .method private loadAppIcon(ILandroid/content/pm/ActivityInfo;)Landroid/graphics/drawable/Drawable;
     .locals 11
-    .param p1    # I
-    .param p2    # Landroid/content/pm/ActivityInfo;
 
     const/4 v5, 0x0
 
@@ -405,7 +398,6 @@
 
 .method private loadAppIcon(Ljava/lang/String;)Landroid/graphics/drawable/Drawable;
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     iget-object v5, p0, Lcom/android/settings/RecommendedAppsMenu;->mIconCache:Ljava/util/HashMap;
 
@@ -471,7 +463,6 @@
 
 .method private loadAppName(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/settings/RecommendedAppsMenu;->mAppNameCache:Ljava/util/HashMap;
 
@@ -1116,9 +1107,6 @@
 
 .method private showEarPhoneDrawable([Ljava/lang/String;Landroid/view/LayoutInflater;Landroid/view/View;)V
     .locals 7
-    .param p1    # [Ljava/lang/String;
-    .param p2    # Landroid/view/LayoutInflater;
-    .param p3    # Landroid/view/View;
 
     const/4 v6, 0x0
 
@@ -1208,8 +1196,6 @@
 # virtual methods
 .method public addBlankView(Landroid/widget/LinearLayout;I)V
     .locals 5
-    .param p1    # Landroid/widget/LinearLayout;
-    .param p2    # I
 
     const/4 v4, -0x2
 
@@ -3031,7 +3017,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 5
-    .param p1    # Landroid/view/View;
 
     const/4 v2, 0x0
 
@@ -3215,7 +3200,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 2
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -3237,7 +3221,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v0, 0x1
 
@@ -3373,9 +3356,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 2
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     invoke-virtual {p0}, Lcom/android/settings/RecommendedAppsMenu;->getResources()Landroid/content/res/Resources;
 

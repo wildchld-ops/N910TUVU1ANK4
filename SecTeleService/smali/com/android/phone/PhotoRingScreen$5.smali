@@ -70,7 +70,7 @@
 
     sget-object v6, Lcom/android/phone/PhotoRingScreen$16;->$SwitchMap$com$android$phone$CallMessageConstants$RequestType:[I
 
-    invoke-virtual {p1}, Ljava/lang/Enum;->ordinal()I
+    invoke-virtual {p1}, Lcom/android/phone/CallMessageConstants$RequestType;->ordinal()I
 
     move-result v7
 
@@ -189,7 +189,7 @@
 
     move-result-object v6
 
-    invoke-virtual {v6}, Landroid/app/Dialog;->dismiss()V
+    invoke-virtual {v6}, Landroid/app/ProgressDialog;->dismiss()V
 
     iget-object v6, p0, Lcom/android/phone/PhotoRingScreen$5;->this$0:Lcom/android/phone/PhotoRingScreen;
 
@@ -277,7 +277,7 @@
 
     move-result-object v6
 
-    invoke-virtual {v6}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
+    invoke-virtual {v6}, Landroid/widget/AutoCompleteTextView;->getText()Landroid/text/Editable;
 
     move-result-object v6
 
@@ -499,7 +499,7 @@
 
     move-result-object v6
 
-    invoke-virtual {v6}, Landroid/app/Dialog;->dismiss()V
+    invoke-virtual {v6}, Landroid/app/ProgressDialog;->dismiss()V
 
     iget-object v6, p0, Lcom/android/phone/PhotoRingScreen$5;->this$0:Lcom/android/phone/PhotoRingScreen;
 
@@ -537,7 +537,7 @@
 
     iget-object v7, p0, Lcom/android/phone/PhotoRingScreen$5;->this$0:Lcom/android/phone/PhotoRingScreen;
 
-    invoke-virtual {v7}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {v7}, Lcom/android/phone/PhotoRingScreen;->getResources()Landroid/content/res/Resources;
 
     move-result-object v7
 
@@ -641,7 +641,7 @@
 
     move-result-object v6
 
-    invoke-virtual {v6}, Landroid/app/Dialog;->dismiss()V
+    invoke-virtual {v6}, Landroid/app/ProgressDialog;->dismiss()V
 
     iget-object v6, p0, Lcom/android/phone/PhotoRingScreen$5;->this$0:Lcom/android/phone/PhotoRingScreen;
 
@@ -720,7 +720,7 @@
     :try_start_0
     iget-object v6, p0, Lcom/android/phone/PhotoRingScreen$5;->this$0:Lcom/android/phone/PhotoRingScreen;
 
-    invoke-virtual {v6, v1}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {v6, v1}, Lcom/android/phone/PhotoRingScreen;->startActivity(Landroid/content/Intent;)V
     :try_end_0
     .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 

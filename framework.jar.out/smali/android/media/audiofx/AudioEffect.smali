@@ -210,10 +210,6 @@
 
 .method public constructor <init>(Ljava/util/UUID;Ljava/util/UUID;II)V
     .locals 10
-    .param p1    # Ljava/util/UUID;
-    .param p2    # Ljava/util/UUID;
-    .param p3    # I
-    .param p4    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;,
@@ -430,7 +426,6 @@
 
 .method static synthetic access$000(Landroid/media/audiofx/AudioEffect;)Landroid/media/audiofx/AudioEffect$OnEnableStatusChangeListener;
     .locals 1
-    .param p0    # Landroid/media/audiofx/AudioEffect;
 
     iget-object v0, p0, Landroid/media/audiofx/AudioEffect;->mEnableStatusChangeListener:Landroid/media/audiofx/AudioEffect$OnEnableStatusChangeListener;
 
@@ -439,7 +434,6 @@
 
 .method static synthetic access$100(Landroid/media/audiofx/AudioEffect;)Landroid/media/audiofx/AudioEffect$OnControlStatusChangeListener;
     .locals 1
-    .param p0    # Landroid/media/audiofx/AudioEffect;
 
     iget-object v0, p0, Landroid/media/audiofx/AudioEffect;->mControlChangeStatusListener:Landroid/media/audiofx/AudioEffect$OnControlStatusChangeListener;
 
@@ -448,7 +442,6 @@
 
 .method static synthetic access$200(Landroid/media/audiofx/AudioEffect;)Landroid/media/audiofx/AudioEffect$OnParameterChangeListener;
     .locals 1
-    .param p0    # Landroid/media/audiofx/AudioEffect;
 
     iget-object v0, p0, Landroid/media/audiofx/AudioEffect;->mParameterChangeListener:Landroid/media/audiofx/AudioEffect$OnParameterChangeListener;
 
@@ -498,7 +491,6 @@
 
 .method public static isEffectTypeAvailable(Ljava/util/UUID;)Z
     .locals 3
-    .param p0    # Ljava/util/UUID;
 
     invoke-static {}, Landroid/media/audiofx/AudioEffect;->queryEffects()[Landroid/media/audiofx/AudioEffect$Descriptor;
 
@@ -539,7 +531,6 @@
 
 .method public static isError(I)Z
     .locals 1
-    .param p0    # I
 
     if-gez p0, :cond_0
 
@@ -592,11 +583,6 @@
 
 .method private static postEventFromNative(Ljava/lang/Object;IIILjava/lang/Object;)V
     .locals 3
-    .param p0    # Ljava/lang/Object;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/Object;
 
     check-cast p0, Ljava/lang/ref/WeakReference;
 
@@ -646,7 +632,6 @@
 
 .method public static queryPreProcessings(I)[Landroid/media/audiofx/AudioEffect$Descriptor;
     .locals 1
-    .param p0    # I
 
     invoke-static {p0}, Landroid/media/audiofx/AudioEffect;->native_query_pre_processing(I)[Ljava/lang/Object;
 
@@ -663,7 +648,6 @@
 # virtual methods
 .method public byteArrayToInt([B)I
     .locals 1
-    .param p1    # [B
 
     const/4 v0, 0x0
 
@@ -676,8 +660,6 @@
 
 .method public byteArrayToInt([BI)I
     .locals 2
-    .param p1    # [B
-    .param p2    # I
 
     invoke-static {p1}, Ljava/nio/ByteBuffer;->wrap([B)Ljava/nio/ByteBuffer;
 
@@ -698,7 +680,6 @@
 
 .method public byteArrayToShort([B)S
     .locals 1
-    .param p1    # [B
 
     const/4 v0, 0x0
 
@@ -711,8 +692,6 @@
 
 .method public byteArrayToShort([BI)S
     .locals 2
-    .param p1    # [B
-    .param p2    # I
 
     invoke-static {p1}, Ljava/nio/ByteBuffer;->wrap([B)Ljava/nio/ByteBuffer;
 
@@ -733,7 +712,6 @@
 
 .method public checkState(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;
@@ -795,7 +773,6 @@
 
 .method public checkStatus(I)V
     .locals 3
-    .param p1    # I
 
     invoke-static {p1}, Landroid/media/audiofx/AudioEffect;->isError(I)Z
 
@@ -861,9 +838,6 @@
 
 .method public command(I[B[B)I
     .locals 6
-    .param p1    # I
-    .param p2    # [B
-    .param p3    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;
@@ -895,7 +869,6 @@
 
 .method public varargs concatArrays([[B)[B
     .locals 9
-    .param p1    # [[B
 
     const/4 v4, 0x0
 
@@ -1015,8 +988,6 @@
 
 .method public getParameter(I[B)I
     .locals 2
-    .param p1    # I
-    .param p2    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;
@@ -1036,8 +1007,6 @@
 
 .method public getParameter(I[I)I
     .locals 7
-    .param p1    # I
-    .param p2    # [I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;
@@ -1110,8 +1079,6 @@
 
 .method public getParameter(I[S)I
     .locals 7
-    .param p1    # I
-    .param p2    # [S
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;
@@ -1182,8 +1149,6 @@
 
 .method public getParameter([B[B)I
     .locals 2
-    .param p1    # [B
-    .param p2    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;
@@ -1207,8 +1172,6 @@
 
 .method public getParameter([I[B)I
     .locals 6
-    .param p1    # [I
-    .param p2    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;
@@ -1267,8 +1230,6 @@
 
 .method public getParameter([I[I)I
     .locals 10
-    .param p1    # [I
-    .param p2    # [I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;
@@ -1369,8 +1330,6 @@
 
 .method public getParameter([I[S)I
     .locals 9
-    .param p1    # [I
-    .param p2    # [S
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;
@@ -1488,7 +1447,6 @@
 
 .method public intToByteArray(I)[B
     .locals 2
-    .param p1    # I
 
     const/4 v1, 0x4
 
@@ -1541,7 +1499,6 @@
 
 .method public setControlStatusListener(Landroid/media/audiofx/AudioEffect$OnControlStatusChangeListener;)V
     .locals 2
-    .param p1    # Landroid/media/audiofx/AudioEffect$OnControlStatusChangeListener;
 
     iget-object v1, p0, Landroid/media/audiofx/AudioEffect;->mListenerLock:Ljava/lang/Object;
 
@@ -1578,7 +1535,6 @@
 
 .method public setEnableStatusListener(Landroid/media/audiofx/AudioEffect$OnEnableStatusChangeListener;)V
     .locals 2
-    .param p1    # Landroid/media/audiofx/AudioEffect$OnEnableStatusChangeListener;
 
     iget-object v1, p0, Landroid/media/audiofx/AudioEffect;->mListenerLock:Ljava/lang/Object;
 
@@ -1615,7 +1571,6 @@
 
 .method public setEnabled(Z)I
     .locals 1
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;
@@ -1635,8 +1590,6 @@
 
 .method public setParameter(II)I
     .locals 3
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;
@@ -1660,8 +1613,6 @@
 
 .method public setParameter(IS)I
     .locals 3
-    .param p1    # I
-    .param p2    # S
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;
@@ -1685,8 +1636,6 @@
 
 .method public setParameter(I[B)I
     .locals 2
-    .param p1    # I
-    .param p2    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;
@@ -1706,8 +1655,6 @@
 
 .method public setParameter([B[B)I
     .locals 2
-    .param p1    # [B
-    .param p2    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;
@@ -1731,8 +1678,6 @@
 
 .method public setParameter([I[B)I
     .locals 6
-    .param p1    # [I
-    .param p2    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;
@@ -1791,8 +1736,6 @@
 
 .method public setParameter([I[I)I
     .locals 8
-    .param p1    # [I
-    .param p2    # [I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;
@@ -1883,8 +1826,6 @@
 
 .method public setParameter([I[S)I
     .locals 8
-    .param p1    # [I
-    .param p2    # [S
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;
@@ -1975,7 +1916,6 @@
 
 .method public setParameterListener(Landroid/media/audiofx/AudioEffect$OnParameterChangeListener;)V
     .locals 2
-    .param p1    # Landroid/media/audiofx/AudioEffect$OnParameterChangeListener;
 
     iget-object v1, p0, Landroid/media/audiofx/AudioEffect;->mListenerLock:Ljava/lang/Object;
 
@@ -2012,7 +1952,6 @@
 
 .method public shortToByteArray(S)[B
     .locals 3
-    .param p1    # S
 
     const/4 v2, 0x2
 

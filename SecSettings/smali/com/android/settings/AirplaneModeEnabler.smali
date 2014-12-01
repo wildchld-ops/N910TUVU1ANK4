@@ -23,8 +23,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/preference/CheckBoxPreference;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/preference/CheckBoxPreference;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -73,7 +71,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/AirplaneModeEnabler;)V
     .locals 0
-    .param p0    # Lcom/android/settings/AirplaneModeEnabler;
 
     invoke-direct {p0}, Lcom/android/settings/AirplaneModeEnabler;->onAirplaneModeChanged()V
 
@@ -82,7 +79,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/AirplaneModeEnabler;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/settings/AirplaneModeEnabler;
 
     iget-object v0, p0, Lcom/android/settings/AirplaneModeEnabler;->mContext:Landroid/content/Context;
 
@@ -91,7 +87,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/AirplaneModeEnabler;)Landroid/preference/CheckBoxPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/AirplaneModeEnabler;
 
     iget-object v0, p0, Lcom/android/settings/AirplaneModeEnabler;->mCheckBoxPref:Landroid/preference/CheckBoxPreference;
 
@@ -100,8 +95,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/AirplaneModeEnabler;Z)V
     .locals 0
-    .param p0    # Lcom/android/settings/AirplaneModeEnabler;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/settings/AirplaneModeEnabler;->setAirplaneModeOn(Z)V
 
@@ -110,7 +103,6 @@
 
 .method public static isAirplaneModeOn(Landroid/content/Context;)Z
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -275,7 +267,6 @@
 
 .method private setAirplaneModeOn(Z)V
     .locals 5
-    .param p1    # Z
 
     const/4 v1, 0x0
 
@@ -384,8 +375,6 @@
 
 .method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
     .locals 10
-    .param p1    # Landroid/preference/Preference;
-    .param p2    # Ljava/lang/Object;
 
     const/4 v7, 0x1
 
@@ -643,8 +632,6 @@
 
 .method public setAirplaneModeInECM(ZZ)V
     .locals 0
-    .param p1    # Z
-    .param p2    # Z
 
     if-eqz p1, :cond_0
 

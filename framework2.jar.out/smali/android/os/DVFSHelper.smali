@@ -272,8 +272,6 @@
 
 .method public constructor <init>(Landroid/content/Context;I)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     const/4 v2, 0x0
 
@@ -292,9 +290,6 @@
 
 .method public constructor <init>(Landroid/content/Context;IJ)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # J
 
     const/4 v2, 0x0
 
@@ -313,10 +308,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Ljava/lang/String;IJ)V
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # J
 
     const/4 v6, -0x1
 
@@ -337,11 +328,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Ljava/lang/String;IJI)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # J
-    .param p6    # I
 
     const/16 v5, 0x1f4
 
@@ -682,7 +668,6 @@
 
 .method static synthetic access$000(Landroid/os/DVFSHelper;)Z
     .locals 1
-    .param p0    # Landroid/os/DVFSHelper;
 
     iget-boolean v0, p0, Landroid/os/DVFSHelper;->REGION_JPN:Z
 
@@ -691,7 +676,6 @@
 
 .method static synthetic access$100(Landroid/os/DVFSHelper;)[I
     .locals 1
-    .param p0    # Landroid/os/DVFSHelper;
 
     iget-object v0, p0, Landroid/os/DVFSHelper;->mSupportedCPUFrequency:[I
 
@@ -1443,8 +1427,6 @@
 
 .method public static logOnEng(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     sget-boolean v0, Landroid/os/DVFSHelper;->isEngBinary:Z
 
@@ -1458,7 +1440,6 @@
 
 .method public static onScrollEvent(Z)V
     .locals 5
-    .param p0    # Z
 
     :try_start_0
     sget-object v2, Landroid/os/DVFSHelper;->sCfmsService:Landroid/os/ICustomFrequencyManager;
@@ -1528,7 +1509,6 @@
 
 .method public acquire(I)V
     .locals 32
-    .param p1    # I
 
     move-object/from16 v0, p0
 
@@ -2510,7 +2490,6 @@
 
 .method public acquire(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Landroid/os/DVFSHelper;->mModel:Landroid/os/DVFSHelper$Model;
 
@@ -2528,8 +2507,6 @@
 
 .method public addExtraOption(Ljava/lang/String;J)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
 
     iget-object v0, p0, Landroid/os/DVFSHelper;->mIntentExtra:Landroid/content/Intent;
 
@@ -2569,8 +2546,6 @@
 
 .method public addExtraOption(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/os/DVFSHelper;->mIntentExtra:Landroid/content/Intent;
 
@@ -2592,7 +2567,6 @@
 
 .method public addExtraOptionsByDefaultPolicy(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     const/16 v5, 0x10
 
@@ -3176,7 +3150,6 @@
 
 .method public getApproximateCPUFrequency(I)I
     .locals 4
-    .param p1    # I
 
     const/4 v1, -0x1
 
@@ -3228,7 +3201,6 @@
 
 .method public getApproximateCPUFrequencyByPercentOfMaximum(D)I
     .locals 3
-    .param p1    # D
 
     const/4 v1, -0x1
 
@@ -3268,7 +3240,6 @@
 
 .method public getApproximateCPUFrequencyByPercentOfMaximumForSSRM(D)I
     .locals 3
-    .param p1    # D
 
     const/4 v1, -0x1
 
@@ -3308,7 +3279,6 @@
 
 .method public getApproximateCPUFrequencyForSSRM(I)I
     .locals 4
-    .param p1    # I
 
     const/4 v1, -0x1
 
@@ -3416,8 +3386,6 @@
 
 .method public onAppLaunchEvent(Landroid/content/Context;Ljava/lang/String;)V
     .locals 9
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
 
     const/16 v8, 0x7d0
 
@@ -3931,8 +3899,6 @@
 
 .method public onWindowRotationEvent(Landroid/content/Context;Ljava/lang/String;)V
     .locals 9
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
 
     const/16 v8, 0x7d0
 

@@ -27,9 +27,6 @@
 # direct methods
 .method constructor <init>(Landroid/renderscript/Type;Landroid/renderscript/Script$KernelID;Landroid/renderscript/Script$FieldID;)V
     .locals 0
-    .param p1    # Landroid/renderscript/Type;
-    .param p2    # Landroid/renderscript/Script$KernelID;
-    .param p3    # Landroid/renderscript/Script$FieldID;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -44,9 +41,6 @@
 
 .method constructor <init>(Landroid/renderscript/Type;Landroid/renderscript/Script$KernelID;Landroid/renderscript/Script$KernelID;)V
     .locals 0
-    .param p1    # Landroid/renderscript/Type;
-    .param p2    # Landroid/renderscript/Script$KernelID;
-    .param p3    # Landroid/renderscript/Script$KernelID;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

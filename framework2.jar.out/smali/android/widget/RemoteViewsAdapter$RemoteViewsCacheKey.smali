@@ -25,9 +25,6 @@
 # direct methods
 .method constructor <init>(Landroid/content/Intent$FilterComparison;II)V
     .locals 0
-    .param p1    # Landroid/content/Intent$FilterComparison;
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -44,7 +41,6 @@
 # virtual methods
 .method public equals(Ljava/lang/Object;)Z
     .locals 4
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x0
 

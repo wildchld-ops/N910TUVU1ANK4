@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Lcom/android/internal/policy/impl/PhoneWindow;Lcom/android/internal/policy/impl/PhoneWindow$1;)V
     .locals 0
-    .param p1    # Lcom/android/internal/policy/impl/PhoneWindow;
-    .param p2    # Lcom/android/internal/policy/impl/PhoneWindow$1;
 
     invoke-direct {p0, p1}, Lcom/android/internal/policy/impl/PhoneWindow$PanelMenuPresenterCallback;-><init>(Lcom/android/internal/policy/impl/PhoneWindow;)V
 
@@ -46,8 +44,6 @@
 # virtual methods
 .method public onCloseMenu(Lcom/android/internal/view/menu/MenuBuilder;Z)V
     .locals 6
-    .param p1    # Lcom/android/internal/view/menu/MenuBuilder;
-    .param p2    # Z
 
     const/4 v3, 0x1
 
@@ -105,7 +101,6 @@
 
 .method public onOpenSubMenu(Lcom/android/internal/view/menu/MenuBuilder;)Z
     .locals 3
-    .param p1    # Lcom/android/internal/view/menu/MenuBuilder;
 
     const/16 v2, 0x8
 

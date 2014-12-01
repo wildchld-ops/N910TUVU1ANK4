@@ -46,7 +46,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -103,7 +102,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/util/LocationSensor;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/util/LocationSensor;
 
     iget-boolean v0, p0, Lcom/android/mms/util/LocationSensor;->mIsActiveGPSProvider:Z
 
@@ -112,8 +110,6 @@
 
 .method static synthetic access$002(Lcom/android/mms/util/LocationSensor;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/util/LocationSensor;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/util/LocationSensor;->mIsActiveGPSProvider:Z
 
@@ -122,7 +118,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/util/LocationSensor;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/util/LocationSensor;
 
     iget-boolean v0, p0, Lcom/android/mms/util/LocationSensor;->mIsActiveNetworkProvider:Z
 
@@ -131,8 +126,6 @@
 
 .method static synthetic access$102(Lcom/android/mms/util/LocationSensor;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/util/LocationSensor;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/util/LocationSensor;->mIsActiveNetworkProvider:Z
 
@@ -141,7 +134,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/util/LocationSensor;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/util/LocationSensor;
 
     iget-boolean v0, p0, Lcom/android/mms/util/LocationSensor;->mIsActivePassiveProvider:Z
 
@@ -150,8 +142,6 @@
 
 .method static synthetic access$202(Lcom/android/mms/util/LocationSensor;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/util/LocationSensor;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/util/LocationSensor;->mIsActivePassiveProvider:Z
 
@@ -555,7 +545,6 @@
 
 .method public static isWiFiConnected(Landroid/content/Context;)Z
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     if-nez p0, :cond_0
 
@@ -588,7 +577,6 @@
 
 .method private setAgps(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/mms/util/LocationSensor;->mContext:Landroid/content/Context;
 
@@ -615,7 +603,6 @@
 
 .method private setGps(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v1, p0, Lcom/android/mms/util/LocationSensor;->mContext:Landroid/content/Context;
 
@@ -642,7 +629,6 @@
 
 .method private setMobile(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-direct {p0}, Lcom/android/mms/util/LocationSensor;->isSimReady()Z
 
@@ -660,7 +646,6 @@
 
 .method private setMobileInRoaming(Z)V
     .locals 3
-    .param p1    # Z
 
     invoke-direct {p0}, Lcom/android/mms/util/LocationSensor;->isSimReady()Z
 
@@ -700,7 +685,6 @@
 
 .method private setNetworkProvider(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v1, p0, Lcom/android/mms/util/LocationSensor;->mContext:Landroid/content/Context;
 
@@ -717,7 +701,6 @@
 
 .method private setWifi(Z)V
     .locals 3
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -807,7 +790,6 @@
 # virtual methods
 .method public declared-synchronized controlLocationSensor(I)V
     .locals 14
-    .param p1    # I
 
     const/4 v13, 0x1
 

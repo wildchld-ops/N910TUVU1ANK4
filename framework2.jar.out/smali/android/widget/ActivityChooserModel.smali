@@ -138,8 +138,6 @@
 
 .method private constructor <init>(Landroid/content/Context;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -248,7 +246,6 @@
 
 .method static synthetic access$300(Landroid/widget/ActivityChooserModel;)Landroid/content/Context;
     .locals 1
-    .param p0    # Landroid/widget/ActivityChooserModel;
 
     iget-object v0, p0, Landroid/widget/ActivityChooserModel;->mContext:Landroid/content/Context;
 
@@ -265,7 +262,6 @@
 
 .method static synthetic access$500(Landroid/widget/ActivityChooserModel;)Ljava/lang/String;
     .locals 1
-    .param p0    # Landroid/widget/ActivityChooserModel;
 
     iget-object v0, p0, Landroid/widget/ActivityChooserModel;->mHistoryFileName:Ljava/lang/String;
 
@@ -274,8 +270,6 @@
 
 .method static synthetic access$602(Landroid/widget/ActivityChooserModel;Z)Z
     .locals 0
-    .param p0    # Landroid/widget/ActivityChooserModel;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/widget/ActivityChooserModel;->mCanReadHistoricalData:Z
 
@@ -284,8 +278,6 @@
 
 .method static synthetic access$702(Landroid/widget/ActivityChooserModel;Z)Z
     .locals 0
-    .param p0    # Landroid/widget/ActivityChooserModel;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/widget/ActivityChooserModel;->mReloadActivities:Z
 
@@ -294,7 +286,6 @@
 
 .method private addHisoricalRecord(Landroid/widget/ActivityChooserModel$HistoricalRecord;)Z
     .locals 2
-    .param p1    # Landroid/widget/ActivityChooserModel$HistoricalRecord;
 
     iget-object v1, p0, Landroid/widget/ActivityChooserModel;->mHistoricalRecords:Ljava/util/List;
 
@@ -347,8 +338,6 @@
 
 .method public static get(Landroid/content/Context;Ljava/lang/String;)Landroid/widget/ActivityChooserModel;
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     sget-object v2, Landroid/widget/ActivityChooserModel;->sRegistryLock:Ljava/lang/Object;
 
@@ -979,7 +968,6 @@
 # virtual methods
 .method public chooseActivity(I)Landroid/content/Intent;
     .locals 10
-    .param p1    # I
 
     const/4 v6, 0x0
 
@@ -1102,7 +1090,6 @@
 
 .method public getActivity(I)Landroid/content/pm/ResolveInfo;
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Landroid/widget/ActivityChooserModel;->mInstanceLock:Ljava/lang/Object;
 
@@ -1167,7 +1154,6 @@
 
 .method public getActivityIndex(Landroid/content/pm/ResolveInfo;)I
     .locals 6
-    .param p1    # Landroid/content/pm/ResolveInfo;
 
     iget-object v5, p0, Landroid/widget/ActivityChooserModel;->mInstanceLock:Ljava/lang/Object;
 
@@ -1356,7 +1342,6 @@
 
 .method public setActivitySorter(Landroid/widget/ActivityChooserModel$ActivitySorter;)V
     .locals 2
-    .param p1    # Landroid/widget/ActivityChooserModel$ActivitySorter;
 
     iget-object v1, p0, Landroid/widget/ActivityChooserModel;->mInstanceLock:Ljava/lang/Object;
 
@@ -1400,7 +1385,6 @@
 
 .method public setDefaultActivity(I)V
     .locals 9
-    .param p1    # I
 
     iget-object v6, p0, Landroid/widget/ActivityChooserModel;->mInstanceLock:Ljava/lang/Object;
 
@@ -1487,7 +1471,6 @@
 
 .method public setHistoryMaxSize(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Landroid/widget/ActivityChooserModel;->mInstanceLock:Ljava/lang/Object;
 
@@ -1533,7 +1516,6 @@
 
 .method public setIntent(Landroid/content/Intent;)V
     .locals 2
-    .param p1    # Landroid/content/Intent;
 
     iget-object v1, p0, Landroid/widget/ActivityChooserModel;->mInstanceLock:Ljava/lang/Object;
 
@@ -1574,7 +1556,6 @@
 
 .method public setOnChooseActivityListener(Landroid/widget/ActivityChooserModel$OnChooseActivityListener;)V
     .locals 2
-    .param p1    # Landroid/widget/ActivityChooserModel$OnChooseActivityListener;
 
     iget-object v1, p0, Landroid/widget/ActivityChooserModel;->mInstanceLock:Ljava/lang/Object;
 

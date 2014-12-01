@@ -14,8 +14,6 @@
 
 .method public static getTimeOutText(Landroid/content/Context;I)Ljava/lang/String;
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     if-nez p0, :cond_0
 

@@ -23,8 +23,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/Handler;I)V
     .locals 0
-    .param p1    # Landroid/os/Handler;
-    .param p2    # I
 
     invoke-direct {p0, p1}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
 
@@ -39,7 +37,6 @@
 # virtual methods
 .method observe(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -60,7 +57,6 @@
 
 .method public onChange(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/server/ConnectivityService$SettingsObserver;->mHandler:Landroid/os/Handler;
 

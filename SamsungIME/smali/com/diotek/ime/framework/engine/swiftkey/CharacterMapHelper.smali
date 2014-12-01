@@ -113,7 +113,6 @@
 # virtual methods
 .method public clearChracterMap(Lcom/touchtype_fluency/InputMapper;)V
     .locals 2
-    .param p1    # Lcom/touchtype_fluency/InputMapper;
 
     :try_start_0
     const-string v1, "{\"charmap\":{}}"
@@ -145,7 +144,6 @@
 
 .method public disableKorInitialInput(Lcom/touchtype_fluency/InputMapper;)V
     .locals 2
-    .param p1    # Lcom/touchtype_fluency/InputMapper;
 
     :try_start_0
     iget-object v1, p0, Lcom/diotek/ime/framework/engine/swiftkey/CharacterMapHelper;->initialTagSelector:Lcom/touchtype_fluency/TagSelector;
@@ -167,7 +165,6 @@
 
 .method public enableKorInitialInput(Lcom/touchtype_fluency/InputMapper;)V
     .locals 2
-    .param p1    # Lcom/touchtype_fluency/InputMapper;
 
     :try_start_0
     iget-object v1, p0, Lcom/diotek/ime/framework/engine/swiftkey/CharacterMapHelper;->initialTagSelector:Lcom/touchtype_fluency/TagSelector;
@@ -189,7 +186,6 @@
 
 .method public endChonjiinFlow(Lcom/touchtype_fluency/InputMapper;)V
     .locals 1
-    .param p1    # Lcom/touchtype_fluency/InputMapper;
 
     iget-boolean v0, p0, Lcom/diotek/ime/framework/engine/swiftkey/CharacterMapHelper;->isFlowStarted:Z
 
@@ -210,7 +206,6 @@
 
 .method public loadJpnMultiCharacterMap(Lcom/touchtype_fluency/InputMapper;)V
     .locals 3
-    .param p1    # Lcom/touchtype_fluency/InputMapper;
 
     if-nez p1, :cond_0
 
@@ -281,7 +276,6 @@
 
 .method public loadKorCharacterMapWithInitialInput(Lcom/touchtype_fluency/InputMapper;)V
     .locals 0
-    .param p1    # Lcom/touchtype_fluency/InputMapper;
 
     invoke-virtual {p0, p1}, Lcom/diotek/ime/framework/engine/swiftkey/CharacterMapHelper;->unLoadAllCharacterMap(Lcom/touchtype_fluency/InputMapper;)V
 
@@ -294,7 +288,6 @@
 
 .method public loadKorInitialInputCharacterMap(Lcom/touchtype_fluency/InputMapper;)V
     .locals 3
-    .param p1    # Lcom/touchtype_fluency/InputMapper;
 
     iget-object v1, p0, Lcom/diotek/ime/framework/engine/swiftkey/CharacterMapHelper;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -358,7 +351,6 @@
 
 .method public loadKorMultiCharacterMap(Lcom/touchtype_fluency/InputMapper;)V
     .locals 5
-    .param p1    # Lcom/touchtype_fluency/InputMapper;
 
     invoke-static {}, Lcom/diotek/ime/framework/repository/InputModeStatus;->getPreferenceInputMethodOnKor()I
 
@@ -440,7 +432,6 @@
 
 .method public startChonjiinFlow(Lcom/touchtype_fluency/InputMapper;)V
     .locals 1
-    .param p1    # Lcom/touchtype_fluency/InputMapper;
 
     iget-boolean v0, p0, Lcom/diotek/ime/framework/engine/swiftkey/CharacterMapHelper;->isFlowStarted:Z
 
@@ -461,7 +452,6 @@
 
 .method public unLoadAllCharacterMap(Lcom/touchtype_fluency/InputMapper;)V
     .locals 2
-    .param p1    # Lcom/touchtype_fluency/InputMapper;
 
     if-nez p1, :cond_1
 

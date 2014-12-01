@@ -148,8 +148,6 @@
 
 .method static synthetic access$000(Lcom/android/incallui/CallList;Lcom/android/services/telephony/common/Call;)V
     .locals 0
-    .param p0    # Lcom/android/incallui/CallList;
-    .param p1    # Lcom/android/services/telephony/common/Call;
 
     invoke-direct {p0, p1}, Lcom/android/incallui/CallList;->finishDisconnectedCall(Lcom/android/services/telephony/common/Call;)V
 
@@ -158,7 +156,6 @@
 
 .method private findItem(Ljava/util/List;I)Ljava/util/HashMap;
     .locals 6
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -269,7 +266,6 @@
 
 .method private finishDisconnectedCall(Lcom/android/services/telephony/common/Call;)V
     .locals 1
-    .param p1    # Lcom/android/services/telephony/common/Call;
 
     const/4 v0, 0x1
 
@@ -284,7 +280,6 @@
 
 .method private finishDisconnectedCallNotNotify(Lcom/android/services/telephony/common/Call;)V
     .locals 1
-    .param p1    # Lcom/android/services/telephony/common/Call;
 
     const/4 v0, 0x1
 
@@ -297,7 +292,6 @@
 
 .method private getDelayForDisconnect(Lcom/android/services/telephony/common/Call;)I
     .locals 5
-    .param p1    # Lcom/android/services/telephony/common/Call;
 
     const/4 v3, 0x1
 
@@ -469,7 +463,6 @@
 
 .method private isCallDead(Lcom/android/services/telephony/common/Call;)Z
     .locals 2
-    .param p1    # Lcom/android/services/telephony/common/Call;
 
     const/4 v1, 0x1
 
@@ -545,7 +538,6 @@
 
 .method private notifyListenersOfDisconnect(Lcom/android/services/telephony/common/Call;)V
     .locals 4
-    .param p1    # Lcom/android/services/telephony/common/Call;
 
     iget-object v3, p0, Lcom/android/incallui/CallList;->mListeners:Ljava/util/Set;
 
@@ -598,7 +590,6 @@
 
 .method private updateCallIconMap(Lcom/android/services/telephony/common/Call;Ljava/util/List;)V
     .locals 2
-    .param p1    # Lcom/android/services/telephony/common/Call;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -666,7 +657,6 @@
 
 .method private updateCallInMap(Lcom/android/services/telephony/common/Call;)Z
     .locals 8
-    .param p1    # Lcom/android/services/telephony/common/Call;
 
     const/4 v7, 0x1
 
@@ -785,7 +775,6 @@
 
 .method private updateCallTextMap(Lcom/android/services/telephony/common/Call;Ljava/util/List;)V
     .locals 2
-    .param p1    # Lcom/android/services/telephony/common/Call;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -845,8 +834,6 @@
 # virtual methods
 .method public addCallUpdateListener(ILcom/android/incallui/CallList$CallUpdateListener;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Lcom/android/incallui/CallList$CallUpdateListener;
 
     iget-object v1, p0, Lcom/android/incallui/CallList;->mCallUpdateListenerMap:Ljava/util/HashMap;
 
@@ -882,7 +869,6 @@
 
 .method public addListener(Lcom/android/incallui/CallList$Listener;)V
     .locals 2
-    .param p1    # Lcom/android/incallui/CallList$Listener;
 
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -1096,7 +1082,6 @@
 
 .method public getActiveCall(I)Lcom/android/services/telephony/common/Call;
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x2
 
@@ -1126,7 +1111,6 @@
 
 .method public getActiveOrBackgroundCall(I)Lcom/android/services/telephony/common/Call;
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/incallui/CallList;->getActiveCall(I)Lcom/android/services/telephony/common/Call;
 
@@ -1156,7 +1140,6 @@
 
 .method public getBackgroundCall(I)Lcom/android/services/telephony/common/Call;
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x7
 
@@ -1169,7 +1152,6 @@
 
 .method public getCall(I)Lcom/android/services/telephony/common/Call;
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/incallui/CallList;->mCallMap:Ljava/util/concurrent/ConcurrentHashMap;
 
@@ -1188,8 +1170,6 @@
 
 .method public getCallWithState(II)Lcom/android/services/telephony/common/Call;
     .locals 5
-    .param p1    # I
-    .param p2    # I
 
     const/4 v3, 0x0
 
@@ -1240,9 +1220,6 @@
 
 .method public getCallWithState(III)Lcom/android/services/telephony/common/Call;
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v3, 0x0
 
@@ -1503,7 +1480,6 @@
 
 .method public getDisconnectedCall(I)Lcom/android/services/telephony/common/Call;
     .locals 1
-    .param p1    # I
 
     const/16 v0, 0x9
 
@@ -1528,7 +1504,6 @@
 
 .method public getDisconnectingCall(I)Lcom/android/services/telephony/common/Call;
     .locals 1
-    .param p1    # I
 
     const/16 v0, 0x8
 
@@ -1590,7 +1565,6 @@
 
 .method public getFirstCall(I)Lcom/android/services/telephony/common/Call;
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/incallui/CallList;->getIncomingCall(I)Lcom/android/services/telephony/common/Call;
 
@@ -1640,7 +1614,6 @@
 
 .method public getFirstCallWithState(I)Lcom/android/services/telephony/common/Call;
     .locals 2
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -1701,8 +1674,6 @@
 
 .method public getFirstCallWithState(II)Lcom/android/services/telephony/common/Call;
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -1715,7 +1686,6 @@
 
 .method public getFirstCallWithStateFromAllCalls(I)Lcom/android/services/telephony/common/Call;
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -1728,7 +1698,6 @@
 
 .method public getIconResponses(I)Ljava/util/ArrayList;
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -1798,7 +1767,6 @@
 
 .method public getIncomingCall(I)Lcom/android/services/telephony/common/Call;
     .locals 2
-    .param p1    # I
 
     const/4 v1, 0x3
 
@@ -1949,7 +1917,6 @@
 
 .method public getOutgoingCall(I)Lcom/android/services/telephony/common/Call;
     .locals 2
-    .param p1    # I
 
     const/4 v1, 0x5
 
@@ -2054,7 +2021,6 @@
 
 .method public getTextResponses(I)Ljava/util/ArrayList;
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -2127,7 +2093,6 @@
 
 .method public hasActiveCall(I)Z
     .locals 4
-    .param p1    # I
 
     iget-object v2, p0, Lcom/android/incallui/CallList;->mCallMap:Ljava/util/concurrent/ConcurrentHashMap;
 
@@ -2276,7 +2241,6 @@
 
 .method public hasIncomingCall(I)Z
     .locals 4
-    .param p1    # I
 
     iget-object v2, p0, Lcom/android/incallui/CallList;->mCallMap:Ljava/util/concurrent/ConcurrentHashMap;
 
@@ -2459,7 +2423,6 @@
 
 .method public isAlive(Lcom/android/services/telephony/common/Call;)Z
     .locals 4
-    .param p1    # Lcom/android/services/telephony/common/Call;
 
     const/4 v1, 0x1
 
@@ -2500,7 +2463,6 @@
 
 .method public isDialing(Lcom/android/services/telephony/common/Call;)Z
     .locals 3
-    .param p1    # Lcom/android/services/telephony/common/Call;
 
     const/4 v1, 0x0
 
@@ -2992,7 +2954,6 @@
 
 .method public isMultiParty(I)Z
     .locals 5
-    .param p1    # I
 
     const/4 v3, 0x1
 
@@ -3099,7 +3060,6 @@
 
 .method public notifyCallUpdateListeners(Lcom/android/services/telephony/common/Call;)V
     .locals 5
-    .param p1    # Lcom/android/services/telephony/common/Call;
 
     iget-object v3, p0, Lcom/android/incallui/CallList;->mCallUpdateListenerMap:Ljava/util/HashMap;
 
@@ -3146,7 +3106,6 @@
 
 .method public onDisconnect(Lcom/android/services/telephony/common/Call;)V
     .locals 3
-    .param p1    # Lcom/android/services/telephony/common/Call;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -3197,7 +3156,6 @@
 
 .method public onIncoming(Lcom/android/services/telephony/common/Call;Ljava/util/List;)V
     .locals 4
-    .param p1    # Lcom/android/services/telephony/common/Call;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3286,7 +3244,6 @@
 
 .method public onIncomingIconMode(Lcom/android/services/telephony/common/Call;Ljava/util/List;)V
     .locals 5
-    .param p1    # Lcom/android/services/telephony/common/Call;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3398,7 +3355,6 @@
 
 .method public onUpdate(Lcom/android/services/telephony/common/Call;)V
     .locals 2
-    .param p1    # Lcom/android/services/telephony/common/Call;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -3515,8 +3471,6 @@
 
 .method public removeCallUpdateListener(ILcom/android/incallui/CallList$CallUpdateListener;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Lcom/android/incallui/CallList$CallUpdateListener;
 
     iget-object v1, p0, Lcom/android/incallui/CallList;->mCallUpdateListenerMap:Ljava/util/HashMap;
 
@@ -3540,7 +3494,6 @@
 
 .method public removeListener(Lcom/android/incallui/CallList$Listener;)V
     .locals 2
-    .param p1    # Lcom/android/incallui/CallList$Listener;
 
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 

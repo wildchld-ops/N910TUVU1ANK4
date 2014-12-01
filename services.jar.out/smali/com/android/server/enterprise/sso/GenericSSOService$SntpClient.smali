@@ -55,8 +55,6 @@
 
 .method private read32([BI)J
     .locals 13
-    .param p1    # [B
-    .param p2    # I
 
     const/16 v9, 0x80
 
@@ -161,8 +159,6 @@
 
 .method private readTimeStamp([BI)J
     .locals 10
-    .param p1    # [B
-    .param p2    # I
 
     const-wide/16 v6, 0x3e8
 
@@ -195,9 +191,6 @@
 
 .method private writeTimeStamp([BIJ)V
     .locals 11
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # J
 
     const-wide/16 v7, 0x3e8
 
@@ -352,8 +345,6 @@
 
 .method public requestTime(Ljava/lang/String;I)Z
     .locals 32
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     :try_start_0
     new-instance v25, Ljava/net/DatagramSocket;

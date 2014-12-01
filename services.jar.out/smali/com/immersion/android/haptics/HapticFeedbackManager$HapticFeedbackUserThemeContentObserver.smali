@@ -23,7 +23,6 @@
 # direct methods
 .method public constructor <init>(Lcom/immersion/android/haptics/HapticFeedbackManager;Lcom/immersion/android/haptics/HapticFeedbackManager;)V
     .locals 2
-    .param p2    # Lcom/immersion/android/haptics/HapticFeedbackManager;
 
     iput-object p1, p0, Lcom/immersion/android/haptics/HapticFeedbackManager$HapticFeedbackUserThemeContentObserver;->this$0:Lcom/immersion/android/haptics/HapticFeedbackManager;
 
@@ -66,7 +65,6 @@
 # virtual methods
 .method public onChange(Z)V
     .locals 4
-    .param p1    # Z
 
     :try_start_0
     invoke-super {p0, p1}, Landroid/database/ContentObserver;->onChange(Z)V

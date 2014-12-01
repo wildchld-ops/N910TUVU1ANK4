@@ -36,7 +36,6 @@
 # virtual methods
 .method public onAlphaChanged(F)V
     .locals 3
-    .param p1    # F
 
     iget-object v0, p0, Lcom/sec/android/visualeffect/brilliantring/BrilliantRingRenderer$1;->this$0:Lcom/sec/android/visualeffect/brilliantring/BrilliantRingRenderer;
 

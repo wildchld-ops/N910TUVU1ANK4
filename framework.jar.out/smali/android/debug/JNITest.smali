@@ -17,9 +17,6 @@
 
 .method private part2(DILjava/lang/String;)I
     .locals 4
-    .param p1    # D
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
 
     sget-object v1, Ljava/lang/System;->out:Ljava/io/PrintStream;
 
@@ -75,9 +72,6 @@
 # virtual methods
 .method public test(IDLjava/lang/String;)I
     .locals 6
-    .param p1    # I
-    .param p2    # D
-    .param p4    # Ljava/lang/String;
 
     const/4 v0, 0x4
 

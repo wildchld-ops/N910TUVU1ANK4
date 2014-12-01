@@ -30,9 +30,6 @@
 # direct methods
 .method constructor <init>(Landroid/webkitsec/WebViewClassic;II)V
     .locals 1
-    .param p1    # Landroid/webkitsec/WebViewClassic;
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -53,7 +50,6 @@
 
 .method static synthetic access$000(Landroid/webkitsec/PluginFullScreenHolder;)Landroid/webkitsec/WebViewClassic;
     .locals 1
-    .param p0    # Landroid/webkitsec/PluginFullScreenHolder;
 
     iget-object v0, p0, Landroid/webkitsec/PluginFullScreenHolder;->mWebView:Landroid/webkitsec/WebViewClassic;
 
@@ -62,7 +58,6 @@
 
 .method static synthetic access$100(Landroid/webkitsec/PluginFullScreenHolder;)I
     .locals 1
-    .param p0    # Landroid/webkitsec/PluginFullScreenHolder;
 
     iget v0, p0, Landroid/webkitsec/PluginFullScreenHolder;->mNpp:I
 
@@ -71,7 +66,6 @@
 
 .method static synthetic access$200(Landroid/webkitsec/PluginFullScreenHolder;)Landroid/view/View;
     .locals 1
-    .param p0    # Landroid/webkitsec/PluginFullScreenHolder;
 
     iget-object v0, p0, Landroid/webkitsec/PluginFullScreenHolder;->mContentView:Landroid/view/View;
 
@@ -88,7 +82,6 @@
 
 .method static synthetic access$302(Landroid/webkitsec/PluginFullScreenHolder$CustomFrameLayout;)Landroid/webkitsec/PluginFullScreenHolder$CustomFrameLayout;
     .locals 0
-    .param p0    # Landroid/webkitsec/PluginFullScreenHolder$CustomFrameLayout;
 
     sput-object p0, Landroid/webkitsec/PluginFullScreenHolder;->mLayout:Landroid/webkitsec/PluginFullScreenHolder$CustomFrameLayout;
 
@@ -113,7 +106,6 @@
 
 .method public setContentView(Landroid/view/View;)V
     .locals 5
-    .param p1    # Landroid/view/View;
 
     const/4 v4, -0x1
 

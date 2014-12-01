@@ -60,10 +60,6 @@
 # direct methods
 .method public constructor <init>(ILandroid/content/Context;Landroid/os/Looper;Ljava/util/concurrent/CopyOnWriteArrayList;Landroid/hardware/contextaware/dataprovider/sensorhubprovider/ISensorHubResetObservable;)V
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/os/Looper;
-    .param p5    # Landroid/hardware/contextaware/dataprovider/sensorhubprovider/ISensorHubResetObservable;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -215,7 +211,6 @@
 
 .method static synthetic access$100(Landroid/hardware/contextaware/aggregator/lpp/LppAggregator;)Landroid/hardware/contextaware/aggregator/lpp/LppFusion;
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppAggregator;
 
     iget-object v0, p0, Landroid/hardware/contextaware/aggregator/lpp/LppAggregator;->mLPPFusion:Landroid/hardware/contextaware/aggregator/lpp/LppFusion;
 
@@ -224,8 +219,6 @@
 
 .method static synthetic access$102(Landroid/hardware/contextaware/aggregator/lpp/LppAggregator;Landroid/hardware/contextaware/aggregator/lpp/LppFusion;)Landroid/hardware/contextaware/aggregator/lpp/LppFusion;
     .locals 0
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppAggregator;
-    .param p1    # Landroid/hardware/contextaware/aggregator/lpp/LppFusion;
 
     iput-object p1, p0, Landroid/hardware/contextaware/aggregator/lpp/LppAggregator;->mLPPFusion:Landroid/hardware/contextaware/aggregator/lpp/LppFusion;
 
@@ -234,7 +227,6 @@
 
 .method static synthetic access$200(Landroid/hardware/contextaware/aggregator/lpp/LppAggregator;)Landroid/hardware/contextaware/aggregator/lpp/LppAggregator$LPPFusionListener;
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppAggregator;
 
     iget-object v0, p0, Landroid/hardware/contextaware/aggregator/lpp/LppAggregator;->LPPLnr:Landroid/hardware/contextaware/aggregator/lpp/LppAggregator$LPPFusionListener;
 
@@ -243,7 +235,6 @@
 
 .method static synthetic access$300(Landroid/hardware/contextaware/aggregator/lpp/LppAggregator;)Landroid/hardware/contextaware/dataprovider/sensorhubprovider/builtin/ApdrRunner;
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppAggregator;
 
     iget-object v0, p0, Landroid/hardware/contextaware/aggregator/lpp/LppAggregator;->mApdrRunner:Landroid/hardware/contextaware/dataprovider/sensorhubprovider/builtin/ApdrRunner;
 
@@ -252,8 +243,6 @@
 
 .method static synthetic access$400(Landroid/hardware/contextaware/aggregator/lpp/LppAggregator;Ljava/util/ArrayList;)V
     .locals 0
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppAggregator;
-    .param p1    # Ljava/util/ArrayList;
 
     invoke-direct {p0, p1}, Landroid/hardware/contextaware/aggregator/lpp/LppAggregator;->notifyPositionContext(Ljava/util/ArrayList;)V
 
@@ -262,9 +251,6 @@
 
 .method private convertToUtc(III)J
     .locals 25
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     move-object/from16 v0, p0
 
@@ -790,9 +776,6 @@
 
 .method private convertToUtc2(III)J
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
@@ -803,7 +786,6 @@
 
 .method private notifyLppContext(I)V
     .locals 4
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/hardware/contextaware/aggregator/lpp/LppAggregator;->getContextValueNames()[Ljava/lang/String;
 
@@ -1185,7 +1167,6 @@
 
 .method public final setPropertyValue(ILjava/lang/Object;)Z
     .locals 4
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -1295,8 +1276,6 @@
 
 .method public final updateContext(Ljava/lang/String;Landroid/os/Bundle;)V
     .locals 26
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Bundle;
 
     new-instance v20, Ljava/lang/StringBuilder;
 

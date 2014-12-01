@@ -42,8 +42,6 @@
 
 .method public constructor <init>(Landroid/content/res/CompatibilityInfo;Landroid/os/IBinder;)V
     .locals 1
-    .param p1    # Landroid/content/res/CompatibilityInfo;
-    .param p2    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -60,7 +58,6 @@
 
 .method public constructor <init>(Landroid/os/IBinder;)V
     .locals 1
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -75,7 +72,6 @@
 
 .method public constructor <init>(Landroid/view/DisplayAdjustments;)V
     .locals 2
-    .param p1    # Landroid/view/DisplayAdjustments;
 
     invoke-virtual {p1}, Landroid/view/DisplayAdjustments;->getCompatibilityInfo()Landroid/content/res/CompatibilityInfo;
 
@@ -94,7 +90,6 @@
 # virtual methods
 .method public equals(Ljava/lang/Object;)Z
     .locals 4
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x0
 
@@ -170,7 +165,6 @@
 
 .method public setActivityToken(Landroid/os/IBinder;)V
     .locals 2
-    .param p1    # Landroid/os/IBinder;
 
     sget-object v0, Landroid/view/DisplayAdjustments;->DEFAULT_DISPLAY_ADJUSTMENTS:Landroid/view/DisplayAdjustments;
 
@@ -192,7 +186,6 @@
 
 .method public setCompatibilityInfo(Landroid/content/res/CompatibilityInfo;)V
     .locals 2
-    .param p1    # Landroid/content/res/CompatibilityInfo;
 
     sget-object v0, Landroid/view/DisplayAdjustments;->DEFAULT_DISPLAY_ADJUSTMENTS:Landroid/view/DisplayAdjustments;
 

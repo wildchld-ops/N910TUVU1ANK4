@@ -6,8 +6,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/opengl/GLSurfaceView;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/opengl/GLSurfaceView;
 
     invoke-direct {p0}, Lcom/sec/android/visualeffect/common/GLSurfaceViewRenderer;-><init>()V
 
@@ -30,9 +28,6 @@
 # virtual methods
 .method public handleTouchEvent(III)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     invoke-super {p0, p1, p2, p3}, Lcom/sec/android/visualeffect/common/GLSurfaceViewRenderer;->handleTouchEvent(III)V
 

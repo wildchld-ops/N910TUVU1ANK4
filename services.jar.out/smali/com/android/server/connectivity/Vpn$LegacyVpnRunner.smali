@@ -39,10 +39,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/connectivity/Vpn;Lcom/android/internal/net/VpnConfig;[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;)V
     .locals 9
-    .param p2    # Lcom/android/internal/net/VpnConfig;
-    .param p3    # [Ljava/lang/String;
-    .param p4    # [Ljava/lang/String;
-    .param p5    # [Ljava/lang/String;
 
     const/4 v8, 0x3
 
@@ -187,7 +183,6 @@
 
 .method static synthetic access$1900(Lcom/android/server/connectivity/Vpn$LegacyVpnRunner;)Ljava/util/concurrent/atomic/AtomicInteger;
     .locals 1
-    .param p0    # Lcom/android/server/connectivity/Vpn$LegacyVpnRunner;
 
     iget-object v0, p0, Lcom/android/server/connectivity/Vpn$LegacyVpnRunner;->mOuterConnection:Ljava/util/concurrent/atomic/AtomicInteger;
 
@@ -196,7 +191,6 @@
 
 .method static synthetic access$2000(Lcom/android/server/connectivity/Vpn$LegacyVpnRunner;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/server/connectivity/Vpn$LegacyVpnRunner;
 
     iget-object v0, p0, Lcom/android/server/connectivity/Vpn$LegacyVpnRunner;->mOuterInterface:Ljava/lang/String;
 
@@ -205,7 +199,6 @@
 
 .method private checkpoint(Z)V
     .locals 8
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/InterruptedException;
@@ -3850,7 +3843,6 @@
 
 .method private hideNotificationForKnoxStronswan(I)V
     .locals 5
-    .param p1    # I
 
     const/4 v4, 0x0
 
@@ -4051,7 +4043,6 @@
 
 .method private sendStrongSwanInterfaceToKnoxVpn(I)V
     .locals 6
-    .param p1    # I
 
     invoke-static {}, Landroid/os/Binder;->clearCallingIdentity()J
 
@@ -4203,7 +4194,6 @@
 
 .method private sendStrongswanDnsToKnoxVpn(Ljava/lang/String;Ljava/util/List;Ljava/util/List;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -4375,9 +4365,6 @@
 
 .method private showNotificationForKnoxStrongSwan(Ljava/lang/String;Landroid/graphics/Bitmap;I)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/graphics/Bitmap;
-    .param p3    # I
 
     iget-object v2, p0, Lcom/android/server/connectivity/Vpn$LegacyVpnRunner;->this$0:Lcom/android/server/connectivity/Vpn;
 
@@ -4546,7 +4533,6 @@
 # virtual methods
 .method public check(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/server/connectivity/Vpn$LegacyVpnRunner;->mOuterInterface:Ljava/lang/String;
 

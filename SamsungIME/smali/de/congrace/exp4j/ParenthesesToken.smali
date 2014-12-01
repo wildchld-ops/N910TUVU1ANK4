@@ -6,7 +6,6 @@
 # direct methods
 .method constructor <init>(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lde/congrace/exp4j/Token;-><init>(Ljava/lang/String;)V
 
@@ -17,7 +16,6 @@
 # virtual methods
 .method public equals(Ljava/lang/Object;)Z
     .locals 3
-    .param p1    # Ljava/lang/Object;
 
     instance-of v1, p1, Lde/congrace/exp4j/ParenthesesToken;
 
@@ -115,7 +113,6 @@
 
 .method mutateStackForInfixTranslation(Ljava/util/Stack;Ljava/lang/StringBuilder;)V
     .locals 3
-    .param p2    # Ljava/lang/StringBuilder;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

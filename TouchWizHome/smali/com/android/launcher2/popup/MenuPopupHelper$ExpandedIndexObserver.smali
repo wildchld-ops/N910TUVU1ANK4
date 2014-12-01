@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Lcom/android/launcher2/popup/MenuPopupHelper;Lcom/android/launcher2/popup/MenuPopupHelper$1;)V
     .locals 0
-    .param p1    # Lcom/android/launcher2/popup/MenuPopupHelper;
-    .param p2    # Lcom/android/launcher2/popup/MenuPopupHelper$1;
 
     invoke-direct {p0, p1}, Lcom/android/launcher2/popup/MenuPopupHelper$ExpandedIndexObserver;-><init>(Lcom/android/launcher2/popup/MenuPopupHelper;)V
 

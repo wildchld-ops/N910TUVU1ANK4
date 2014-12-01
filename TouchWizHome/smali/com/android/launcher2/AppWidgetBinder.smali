@@ -28,9 +28,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/launcher2/Launcher;Landroid/appwidget/AppWidgetManager;Lcom/android/launcher2/LauncherAppWidgetHost;)V
     .locals 0
-    .param p1    # Lcom/android/launcher2/Launcher;
-    .param p2    # Landroid/appwidget/AppWidgetManager;
-    .param p3    # Lcom/android/launcher2/LauncherAppWidgetHost;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -45,9 +42,6 @@
 
 .method static synthetic access$000(Lcom/android/launcher2/AppWidgetBinder;Lcom/android/launcher2/AppWidgetBinder$Callback;I)V
     .locals 0
-    .param p0    # Lcom/android/launcher2/AppWidgetBinder;
-    .param p1    # Lcom/android/launcher2/AppWidgetBinder$Callback;
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/launcher2/AppWidgetBinder;->onBindSuccessful(Lcom/android/launcher2/AppWidgetBinder$Callback;I)V
 
@@ -56,9 +50,6 @@
 
 .method static synthetic access$100(Lcom/android/launcher2/AppWidgetBinder;Lcom/android/launcher2/AppWidgetBinder$Callback;I)V
     .locals 0
-    .param p0    # Lcom/android/launcher2/AppWidgetBinder;
-    .param p1    # Lcom/android/launcher2/AppWidgetBinder$Callback;
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/launcher2/AppWidgetBinder;->onBindFailed(Lcom/android/launcher2/AppWidgetBinder$Callback;I)V
 
@@ -67,8 +58,6 @@
 
 .method private onBindFailed(Lcom/android/launcher2/AppWidgetBinder$Callback;I)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/AppWidgetBinder$Callback;
-    .param p2    # I
 
     if-eqz p1, :cond_0
 
@@ -84,8 +73,6 @@
 
 .method private onBindSuccessful(Lcom/android/launcher2/AppWidgetBinder$Callback;I)V
     .locals 0
-    .param p1    # Lcom/android/launcher2/AppWidgetBinder$Callback;
-    .param p2    # I
 
     if-eqz p1, :cond_0
 
@@ -99,8 +86,6 @@
 # virtual methods
 .method public allocateBindNew(Landroid/content/ComponentName;Lcom/android/launcher2/AppWidgetBinder$Callback;)V
     .locals 5
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Lcom/android/launcher2/AppWidgetBinder$Callback;
 
     iget-object v2, p0, Lcom/android/launcher2/AppWidgetBinder;->mHost:Lcom/android/launcher2/LauncherAppWidgetHost;
 

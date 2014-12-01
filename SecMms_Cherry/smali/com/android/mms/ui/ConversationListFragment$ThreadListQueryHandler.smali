@@ -23,7 +23,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/mms/ui/ConversationListFragment;Landroid/content/ContentResolver;)V
     .locals 0
-    .param p2    # Landroid/content/ContentResolver;
 
     iput-object p1, p0, Lcom/android/mms/ui/ConversationListFragment$ThreadListQueryHandler;->this$0:Lcom/android/mms/ui/ConversationListFragment;
 
@@ -36,9 +35,6 @@
 # virtual methods
 .method protected onDeleteComplete(ILjava/lang/Object;I)V
     .locals 15
-    .param p1    # I
-    .param p2    # Ljava/lang/Object;
-    .param p3    # I
 
     iget-object v1, p0, Lcom/android/mms/ui/ConversationListFragment$ThreadListQueryHandler;->this$0:Lcom/android/mms/ui/ConversationListFragment;
 
@@ -563,9 +559,6 @@
 
 .method protected onQueryComplete(ILjava/lang/Object;Landroid/database/Cursor;)V
     .locals 44
-    .param p1    # I
-    .param p2    # Ljava/lang/Object;
-    .param p3    # Landroid/database/Cursor;
 
     move-object/from16 v0, p0
 
@@ -2752,7 +2745,6 @@
 
 .method public setmDeleteEventHandler(Landroid/os/Handler;)V
     .locals 0
-    .param p1    # Landroid/os/Handler;
 
     iput-object p1, p0, Lcom/android/mms/ui/ConversationListFragment$ThreadListQueryHandler;->mDeleteEventHandler:Landroid/os/Handler;
 

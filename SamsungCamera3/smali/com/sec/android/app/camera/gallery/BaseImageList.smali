@@ -59,10 +59,6 @@
 
 .method public constructor <init>(Landroid/content/ContentResolver;Landroid/net/Uri;ILjava/lang/String;)V
     .locals 2
-    .param p1    # Landroid/content/ContentResolver;
-    .param p2    # Landroid/net/Uri;
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -165,7 +161,6 @@
 
 .method private static getPathWithoutId(Landroid/net/Uri;)Ljava/lang/String;
     .locals 3
-    .param p0    # Landroid/net/Uri;
 
     invoke-virtual {p0}, Landroid/net/Uri;->getPath()Ljava/lang/String;
 
@@ -195,7 +190,6 @@
 
 .method private isChildImageUri(Landroid/net/Uri;)Z
     .locals 3
-    .param p1    # Landroid/net/Uri;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/gallery/BaseImageList;->mBaseUri:Landroid/net/Uri;
 
@@ -308,7 +302,6 @@
 
 .method public contentUri(J)Landroid/net/Uri;
     .locals 5
-    .param p1    # J
 
     :try_start_0
     iget-object v3, p0, Lcom/sec/android/app/camera/gallery/BaseImageList;->mBaseUri:Landroid/net/Uri;
@@ -388,7 +381,6 @@
 
 .method public getImageAt(I)Lcom/sec/android/app/camera/gallery/IImage;
     .locals 5
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -462,7 +454,6 @@
 
 .method public getImageForUri(Landroid/net/Uri;)Lcom/sec/android/app/camera/gallery/IImage;
     .locals 9
-    .param p1    # Landroid/net/Uri;
 
     const/4 v3, 0x0
 
@@ -600,7 +591,6 @@
 
 .method public getImageIndex(Lcom/sec/android/app/camera/gallery/IImage;)I
     .locals 1
-    .param p1    # Lcom/sec/android/app/camera/gallery/IImage;
 
     check-cast p1, Lcom/sec/android/app/camera/gallery/BaseImage;
 
@@ -678,7 +668,6 @@
 
 .method public removeImage(Lcom/sec/android/app/camera/gallery/IImage;)Z
     .locals 4
-    .param p1    # Lcom/sec/android/app/camera/gallery/IImage;
 
     const/4 v3, 0x0
 
@@ -718,7 +707,6 @@
 
 .method public removeImageAt(I)Z
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/sec/android/app/camera/gallery/BaseImageList;->getImageAt(I)Lcom/sec/android/app/camera/gallery/IImage;
 

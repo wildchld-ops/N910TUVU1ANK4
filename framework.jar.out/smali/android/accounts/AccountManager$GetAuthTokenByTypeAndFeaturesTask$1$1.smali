@@ -33,8 +33,6 @@
 # virtual methods
 .method public onError(ILjava/lang/String;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -54,7 +52,6 @@
 
 .method public onResult(Landroid/os/Bundle;)V
     .locals 8
-    .param p1    # Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

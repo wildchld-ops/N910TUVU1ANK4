@@ -22,7 +22,6 @@
 
 .method public constructor <init>(Landroid/nfc/NfcUtility$NfcUtilityCallback;)V
     .locals 0
-    .param p1    # Landroid/nfc/NfcUtility$NfcUtilityCallback;
 
     invoke-direct {p0}, Landroid/nfc/INfcUtilityCallback$Stub;-><init>()V
 
@@ -50,7 +49,6 @@
 
 .method public setNfcUtilityCallback(Landroid/nfc/NfcUtility$NfcUtilityCallback;)V
     .locals 0
-    .param p1    # Landroid/nfc/NfcUtility$NfcUtilityCallback;
 
     sput-object p1, Landroid/nfc/NfcUtilityManager;->nfcUtilityCallback:Landroid/nfc/NfcUtility$NfcUtilityCallback;
 

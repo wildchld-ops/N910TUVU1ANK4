@@ -22,7 +22,6 @@
 
 .method static synthetic access$000(Lcom/android/systemui/DessertCaseDream;)Lcom/android/systemui/DessertCaseView;
     .locals 1
-    .param p0    # Lcom/android/systemui/DessertCaseDream;
 
     iget-object v0, p0, Lcom/android/systemui/DessertCaseDream;->mView:Lcom/android/systemui/DessertCaseView;
 

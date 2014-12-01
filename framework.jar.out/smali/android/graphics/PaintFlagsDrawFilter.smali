@@ -12,8 +12,6 @@
 # direct methods
 .method public constructor <init>(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0}, Landroid/graphics/DrawFilter;-><init>()V
 

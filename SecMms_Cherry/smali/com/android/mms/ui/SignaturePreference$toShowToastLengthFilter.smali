@@ -23,7 +23,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/mms/ui/SignaturePreference;I)V
     .locals 0
-    .param p2    # I
 
     iput-object p1, p0, Lcom/android/mms/ui/SignaturePreference$toShowToastLengthFilter;->this$0:Lcom/android/mms/ui/SignaturePreference;
 
@@ -38,12 +37,6 @@
 # virtual methods
 .method public filter(Ljava/lang/CharSequence;IILandroid/text/Spanned;II)Ljava/lang/CharSequence;
     .locals 5
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/text/Spanned;
-    .param p5    # I
-    .param p6    # I
 
     iget v2, p0, Lcom/android/mms/ui/SignaturePreference$toShowToastLengthFilter;->mMax:I
 

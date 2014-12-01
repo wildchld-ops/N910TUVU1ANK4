@@ -35,7 +35,6 @@
 # direct methods
 .method protected constructor <init>(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -62,8 +61,6 @@
 
 .method protected constructor <init>(Ljava/lang/String;Landroid/os/Handler;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Handler;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -78,8 +75,6 @@
 
 .method protected constructor <init>(Ljava/lang/String;Landroid/os/Looper;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Looper;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -90,7 +85,6 @@
 
 .method static synthetic access$400(Lcom/android/internal/util/StateMachine;)Landroid/os/HandlerThread;
     .locals 1
-    .param p0    # Lcom/android/internal/util/StateMachine;
 
     iget-object v0, p0, Lcom/android/internal/util/StateMachine;->mSmThread:Landroid/os/HandlerThread;
 
@@ -99,8 +93,6 @@
 
 .method static synthetic access$402(Lcom/android/internal/util/StateMachine;Landroid/os/HandlerThread;)Landroid/os/HandlerThread;
     .locals 0
-    .param p0    # Lcom/android/internal/util/StateMachine;
-    .param p1    # Landroid/os/HandlerThread;
 
     iput-object p1, p0, Lcom/android/internal/util/StateMachine;->mSmThread:Landroid/os/HandlerThread;
 
@@ -109,8 +101,6 @@
 
 .method static synthetic access$502(Lcom/android/internal/util/StateMachine;Lcom/android/internal/util/StateMachine$SmHandler;)Lcom/android/internal/util/StateMachine$SmHandler;
     .locals 0
-    .param p0    # Lcom/android/internal/util/StateMachine;
-    .param p1    # Lcom/android/internal/util/StateMachine$SmHandler;
 
     iput-object p1, p0, Lcom/android/internal/util/StateMachine;->mSmHandler:Lcom/android/internal/util/StateMachine$SmHandler;
 
@@ -119,8 +109,6 @@
 
 .method private initStateMachine(Ljava/lang/String;Landroid/os/Looper;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Looper;
 
     iput-object p1, p0, Lcom/android/internal/util/StateMachine;->mName:Ljava/lang/String;
 
@@ -139,7 +127,6 @@
 # virtual methods
 .method protected addLogRec(Ljava/lang/String;)V
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     iget-object v7, p0, Lcom/android/internal/util/StateMachine;->mSmHandler:Lcom/android/internal/util/StateMachine$SmHandler;
 
@@ -194,7 +181,6 @@
 
 .method protected final addState(Lcom/android/internal/util/State;)V
     .locals 2
-    .param p1    # Lcom/android/internal/util/State;
 
     iget-object v0, p0, Lcom/android/internal/util/StateMachine;->mSmHandler:Lcom/android/internal/util/StateMachine$SmHandler;
 
@@ -208,8 +194,6 @@
 
 .method protected final addState(Lcom/android/internal/util/State;Lcom/android/internal/util/State;)V
     .locals 1
-    .param p1    # Lcom/android/internal/util/State;
-    .param p2    # Lcom/android/internal/util/State;
 
     iget-object v0, p0, Lcom/android/internal/util/StateMachine;->mSmHandler:Lcom/android/internal/util/StateMachine$SmHandler;
 
@@ -276,7 +260,6 @@
 
 .method protected final deferMessage(Landroid/os/Message;)V
     .locals 1
-    .param p1    # Landroid/os/Message;
 
     iget-object v0, p0, Lcom/android/internal/util/StateMachine;->mSmHandler:Lcom/android/internal/util/StateMachine$SmHandler;
 
@@ -288,9 +271,6 @@
 
 .method public dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -488,7 +468,6 @@
 
 .method public final getLogRec(I)Lcom/android/internal/util/StateMachine$LogRec;
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/internal/util/StateMachine;->mSmHandler:Lcom/android/internal/util/StateMachine$SmHandler;
 
@@ -564,7 +543,6 @@
 
 .method protected getLogRecString(Landroid/os/Message;)Ljava/lang/String;
     .locals 1
-    .param p1    # Landroid/os/Message;
 
     const-string v0, ""
 
@@ -581,7 +559,6 @@
 
 .method protected getWhatToString(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -590,7 +567,6 @@
 
 .method protected haltedProcessMessage(Landroid/os/Message;)V
     .locals 0
-    .param p1    # Landroid/os/Message;
 
     return-void
 .end method
@@ -618,7 +594,6 @@
 
 .method protected final isQuit(Landroid/os/Message;)Z
     .locals 3
-    .param p1    # Landroid/os/Message;
 
     iget-object v0, p0, Lcom/android/internal/util/StateMachine;->mSmHandler:Lcom/android/internal/util/StateMachine$SmHandler;
 
@@ -651,7 +626,6 @@
 
 .method protected log(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/internal/util/StateMachine;->mName:Ljava/lang/String;
 
@@ -662,7 +636,6 @@
 
 .method protected logAndAddLogRec(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lcom/android/internal/util/StateMachine;->addLogRec(Ljava/lang/String;)V
 
@@ -673,7 +646,6 @@
 
 .method protected logd(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/internal/util/StateMachine;->mName:Ljava/lang/String;
 
@@ -684,7 +656,6 @@
 
 .method protected loge(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/internal/util/StateMachine;->mName:Ljava/lang/String;
 
@@ -695,8 +666,6 @@
 
 .method protected loge(Ljava/lang/String;Ljava/lang/Throwable;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Throwable;
 
     iget-object v0, p0, Lcom/android/internal/util/StateMachine;->mName:Ljava/lang/String;
 
@@ -707,7 +676,6 @@
 
 .method protected logi(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/internal/util/StateMachine;->mName:Ljava/lang/String;
 
@@ -718,7 +686,6 @@
 
 .method protected logv(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/internal/util/StateMachine;->mName:Ljava/lang/String;
 
@@ -729,7 +696,6 @@
 
 .method protected logw(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/internal/util/StateMachine;->mName:Ljava/lang/String;
 
@@ -752,7 +718,6 @@
 
 .method public final obtainMessage(I)Landroid/os/Message;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/internal/util/StateMachine;->mSmHandler:Lcom/android/internal/util/StateMachine$SmHandler;
 
@@ -765,8 +730,6 @@
 
 .method public final obtainMessage(II)Landroid/os/Message;
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/internal/util/StateMachine;->mSmHandler:Lcom/android/internal/util/StateMachine$SmHandler;
 
@@ -781,9 +744,6 @@
 
 .method public final obtainMessage(III)Landroid/os/Message;
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     iget-object v0, p0, Lcom/android/internal/util/StateMachine;->mSmHandler:Lcom/android/internal/util/StateMachine$SmHandler;
 
@@ -796,10 +756,6 @@
 
 .method public final obtainMessage(IIILjava/lang/Object;)Landroid/os/Message;
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/Object;
 
     iget-object v0, p0, Lcom/android/internal/util/StateMachine;->mSmHandler:Lcom/android/internal/util/StateMachine$SmHandler;
 
@@ -812,8 +768,6 @@
 
 .method public final obtainMessage(ILjava/lang/Object;)Landroid/os/Message;
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/Object;
 
     iget-object v0, p0, Lcom/android/internal/util/StateMachine;->mSmHandler:Lcom/android/internal/util/StateMachine$SmHandler;
 
@@ -872,7 +826,6 @@
 
 .method protected recordLogRec(Landroid/os/Message;)Z
     .locals 1
-    .param p1    # Landroid/os/Message;
 
     const/4 v0, 0x1
 
@@ -881,7 +834,6 @@
 
 .method protected final removeMessages(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/internal/util/StateMachine;->mSmHandler:Lcom/android/internal/util/StateMachine$SmHandler;
 
@@ -898,7 +850,6 @@
 
 .method public final sendMessage(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/internal/util/StateMachine;->mSmHandler:Lcom/android/internal/util/StateMachine$SmHandler;
 
@@ -919,8 +870,6 @@
 
 .method public final sendMessage(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/internal/util/StateMachine;->mSmHandler:Lcom/android/internal/util/StateMachine$SmHandler;
 
@@ -941,9 +890,6 @@
 
 .method public final sendMessage(III)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     iget-object v0, p0, Lcom/android/internal/util/StateMachine;->mSmHandler:Lcom/android/internal/util/StateMachine$SmHandler;
 
@@ -964,10 +910,6 @@
 
 .method public final sendMessage(IIILjava/lang/Object;)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/Object;
 
     iget-object v0, p0, Lcom/android/internal/util/StateMachine;->mSmHandler:Lcom/android/internal/util/StateMachine$SmHandler;
 
@@ -988,8 +930,6 @@
 
 .method public final sendMessage(ILjava/lang/Object;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Ljava/lang/Object;
 
     iget-object v0, p0, Lcom/android/internal/util/StateMachine;->mSmHandler:Lcom/android/internal/util/StateMachine$SmHandler;
 
@@ -1010,7 +950,6 @@
 
 .method public final sendMessage(Landroid/os/Message;)V
     .locals 1
-    .param p1    # Landroid/os/Message;
 
     iget-object v0, p0, Lcom/android/internal/util/StateMachine;->mSmHandler:Lcom/android/internal/util/StateMachine$SmHandler;
 
@@ -1027,7 +966,6 @@
 
 .method protected final sendMessageAtFrontOfQueue(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/internal/util/StateMachine;->mSmHandler:Lcom/android/internal/util/StateMachine$SmHandler;
 
@@ -1048,8 +986,6 @@
 
 .method protected final sendMessageAtFrontOfQueue(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/internal/util/StateMachine;->mSmHandler:Lcom/android/internal/util/StateMachine$SmHandler;
 
@@ -1070,9 +1006,6 @@
 
 .method protected final sendMessageAtFrontOfQueue(III)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     iget-object v0, p0, Lcom/android/internal/util/StateMachine;->mSmHandler:Lcom/android/internal/util/StateMachine$SmHandler;
 
@@ -1093,10 +1026,6 @@
 
 .method protected final sendMessageAtFrontOfQueue(IIILjava/lang/Object;)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/Object;
 
     iget-object v0, p0, Lcom/android/internal/util/StateMachine;->mSmHandler:Lcom/android/internal/util/StateMachine$SmHandler;
 
@@ -1117,8 +1046,6 @@
 
 .method protected final sendMessageAtFrontOfQueue(ILjava/lang/Object;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Ljava/lang/Object;
 
     iget-object v0, p0, Lcom/android/internal/util/StateMachine;->mSmHandler:Lcom/android/internal/util/StateMachine$SmHandler;
 
@@ -1139,7 +1066,6 @@
 
 .method protected final sendMessageAtFrontOfQueue(Landroid/os/Message;)V
     .locals 1
-    .param p1    # Landroid/os/Message;
 
     iget-object v0, p0, Lcom/android/internal/util/StateMachine;->mSmHandler:Lcom/android/internal/util/StateMachine$SmHandler;
 
@@ -1156,10 +1082,6 @@
 
 .method public final sendMessageDelayed(IIIJ)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # J
 
     iget-object v0, p0, Lcom/android/internal/util/StateMachine;->mSmHandler:Lcom/android/internal/util/StateMachine$SmHandler;
 
@@ -1180,11 +1102,6 @@
 
 .method public final sendMessageDelayed(IIILjava/lang/Object;J)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/Object;
-    .param p5    # J
 
     iget-object v0, p0, Lcom/android/internal/util/StateMachine;->mSmHandler:Lcom/android/internal/util/StateMachine$SmHandler;
 
@@ -1205,9 +1122,6 @@
 
 .method public final sendMessageDelayed(IIJ)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
 
     iget-object v0, p0, Lcom/android/internal/util/StateMachine;->mSmHandler:Lcom/android/internal/util/StateMachine$SmHandler;
 
@@ -1228,8 +1142,6 @@
 
 .method public final sendMessageDelayed(IJ)V
     .locals 2
-    .param p1    # I
-    .param p2    # J
 
     iget-object v0, p0, Lcom/android/internal/util/StateMachine;->mSmHandler:Lcom/android/internal/util/StateMachine$SmHandler;
 
@@ -1250,9 +1162,6 @@
 
 .method public final sendMessageDelayed(ILjava/lang/Object;J)V
     .locals 2
-    .param p1    # I
-    .param p2    # Ljava/lang/Object;
-    .param p3    # J
 
     iget-object v0, p0, Lcom/android/internal/util/StateMachine;->mSmHandler:Lcom/android/internal/util/StateMachine$SmHandler;
 
@@ -1273,8 +1182,6 @@
 
 .method public final sendMessageDelayed(Landroid/os/Message;J)V
     .locals 1
-    .param p1    # Landroid/os/Message;
-    .param p2    # J
 
     iget-object v0, p0, Lcom/android/internal/util/StateMachine;->mSmHandler:Lcom/android/internal/util/StateMachine$SmHandler;
 
@@ -1291,7 +1198,6 @@
 
 .method public setDbg(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/internal/util/StateMachine;->mSmHandler:Lcom/android/internal/util/StateMachine$SmHandler;
 
@@ -1309,7 +1215,6 @@
 
 .method protected final setInitialState(Lcom/android/internal/util/State;)V
     .locals 1
-    .param p1    # Lcom/android/internal/util/State;
 
     iget-object v0, p0, Lcom/android/internal/util/StateMachine;->mSmHandler:Lcom/android/internal/util/StateMachine$SmHandler;
 
@@ -1321,7 +1226,6 @@
 
 .method public final setLogOnlyTransitions(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/internal/util/StateMachine;->mSmHandler:Lcom/android/internal/util/StateMachine$SmHandler;
 
@@ -1337,7 +1241,6 @@
 
 .method public final setLogRecSize(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/internal/util/StateMachine;->mSmHandler:Lcom/android/internal/util/StateMachine$SmHandler;
 
@@ -1370,7 +1273,6 @@
 
 .method protected final transitionTo(Lcom/android/internal/util/IState;)V
     .locals 1
-    .param p1    # Lcom/android/internal/util/IState;
 
     iget-object v0, p0, Lcom/android/internal/util/StateMachine;->mSmHandler:Lcom/android/internal/util/StateMachine$SmHandler;
 
@@ -1400,7 +1302,6 @@
 
 .method protected unhandledMessage(Landroid/os/Message;)V
     .locals 2
-    .param p1    # Landroid/os/Message;
 
     iget-object v0, p0, Lcom/android/internal/util/StateMachine;->mSmHandler:Lcom/android/internal/util/StateMachine$SmHandler;
 

@@ -33,7 +33,6 @@
 # virtual methods
 .method public processMessage(Landroid/os/Message;)Z
     .locals 3
-    .param p1    # Landroid/os/Message;
 
     # getter for: Landroid/net/wifi/OxygenStateMachine;->DBG:Z
     invoke-static {}, Landroid/net/wifi/OxygenStateMachine;->access$000()Z

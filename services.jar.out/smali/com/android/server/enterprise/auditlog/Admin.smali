@@ -44,9 +44,6 @@
 # direct methods
 .method constructor <init>(ILandroid/content/Context;Ljava/lang/String;)V
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/content/Context;
-    .param p3    # Ljava/lang/String;
 
     const-wide/16 v4, 0x0
 
@@ -105,9 +102,6 @@
 
 .method dump(JJLandroid/os/ParcelFileDescriptor;)Z
     .locals 3
-    .param p1    # J
-    .param p3    # J
-    .param p5    # Landroid/os/ParcelFileDescriptor;
 
     const/4 v2, 0x1
 
@@ -215,8 +209,6 @@
 
 .method public notifyDumpFinished(ZZ)V
     .locals 6
-    .param p1    # Z
-    .param p2    # Z
 
     const/4 v4, 0x0
 
@@ -294,7 +286,6 @@
 
 .method public notifyReadyToDump(Z)V
     .locals 8
-    .param p1    # Z
 
     if-eqz p1, :cond_1
 
@@ -343,7 +334,6 @@
 
 .method setBootCompleted(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/server/enterprise/auditlog/Admin;->mLogWritter:Lcom/android/server/enterprise/auditlog/LogWritter;
 
@@ -354,7 +344,6 @@
 
 .method setCriticalLogSize(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/enterprise/auditlog/Admin;->mLogWritter:Lcom/android/server/enterprise/auditlog/LogWritter;
 
@@ -382,7 +371,6 @@
 
 .method setFilter(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -413,7 +401,6 @@
 
 .method setIptablesLogging(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/enterprise/auditlog/Admin;->mIptablesLogging:Z
 
@@ -422,7 +409,6 @@
 
 .method setMDMLogging(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/enterprise/auditlog/Admin;->mMdmLogging:Z
 
@@ -431,7 +417,6 @@
 
 .method setMaximumLogSize(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/enterprise/auditlog/Admin;->mLogWritter:Lcom/android/server/enterprise/auditlog/LogWritter;
 
@@ -452,7 +437,6 @@
 
 .method write(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/server/enterprise/auditlog/Admin;->mLogWritter:Lcom/android/server/enterprise/auditlog/LogWritter;
 

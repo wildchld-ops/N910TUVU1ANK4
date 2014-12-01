@@ -60,7 +60,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Landroid/os/dar/ISdpManager$Stub;-><init>()V
 
@@ -83,7 +82,6 @@
 
 .method private static checkCallerPermissionFor(Ljava/lang/String;)I
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     const-string v1, "SdpManagerService"
 
@@ -370,7 +368,6 @@
 
 .method private importColumnList(Ljava/io/InputStream;)V
     .locals 6
-    .param p1    # Ljava/io/InputStream;
 
     new-instance v1, Landroid/os/dar/column/Parser;
 
@@ -476,8 +473,6 @@
 
 .method private sendBroadcastForStateChange(II)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     new-instance v0, Landroid/content/Intent;
 
@@ -540,8 +535,6 @@
 # virtual methods
 .method public addColumn(Landroid/net/Uri;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Ljava/lang/String;
 
     const-string v2, "addColumn"
 
@@ -602,8 +595,6 @@
 
 .method public getSensitiveDBInfo(II)Ljava/util/List;
     .locals 5
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II)",
@@ -641,8 +632,6 @@
 
 .method public getSensitiveFileInfo(II)Ljava/util/List;
     .locals 5
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II)",
@@ -680,7 +669,6 @@
 
 .method public getState(I)I
     .locals 3
-    .param p1    # I
 
     const-string v0, "getState"
 
@@ -788,7 +776,6 @@
 
 .method public isSDPEnabled(I)Z
     .locals 7
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -869,8 +856,6 @@
 
 .method public isSensitiveColumn(Landroid/net/Uri;Ljava/lang/String;)Z
     .locals 7
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -968,7 +953,6 @@
 
 .method public onBoot(I)Z
     .locals 4
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1060,9 +1044,6 @@
 
 .method public onChangePassword(ILjava/lang/String;Ljava/lang/String;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1080,7 +1061,6 @@
 
 .method public onDeviceLocked(I)Z
     .locals 4
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1176,8 +1156,6 @@
 
 .method public onDeviceUnlocked(ILjava/lang/String;)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1271,8 +1249,6 @@
 
 .method public onUserAdded(ILjava/lang/String;)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1364,7 +1340,6 @@
 
 .method public onUserRemoved(I)Z
     .locals 3
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1452,11 +1427,6 @@
 
 .method public setSensitiveDBInfo(IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
     .locals 8
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
 
     const-string v0, "SdpManagerService"
 
@@ -1507,9 +1477,6 @@
 
 .method public setSensitiveFileInfo(IILjava/lang/String;)I
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     const-string v2, "SdpManagerService"
 

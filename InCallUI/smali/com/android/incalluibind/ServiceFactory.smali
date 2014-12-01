@@ -14,7 +14,6 @@
 
 .method public static newPhoneNumberService(Landroid/content/Context;)Lcom/android/incallui/service/PhoneNumberService;
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     const/4 v0, 0x0
 

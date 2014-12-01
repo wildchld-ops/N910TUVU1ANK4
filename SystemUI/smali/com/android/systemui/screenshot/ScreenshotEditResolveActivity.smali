@@ -58,7 +58,6 @@
 
 .method private addFlashAnnotateIntent(Ljava/util/List;Landroid/content/Intent;)Z
     .locals 15
-    .param p2    # Landroid/content/Intent;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -324,7 +323,6 @@
 
 .method private addPaperArtistIntent(Ljava/util/ArrayList;Landroid/content/Intent;)Z
     .locals 17
-    .param p2    # Landroid/content/Intent;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -626,7 +624,6 @@
 
 .method private addPhotoEditorIntent(Ljava/util/ArrayList;Landroid/content/Intent;)Z
     .locals 17
-    .param p2    # Landroid/content/Intent;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -928,7 +925,6 @@
 
 .method private addPsTouchIntent(Ljava/util/ArrayList;Landroid/content/Intent;)Z
     .locals 10
-    .param p2    # Landroid/content/Intent;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1081,7 +1077,6 @@
 
 .method private isPackageVaild(Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -1188,7 +1183,6 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 9
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v6, 0x0
 

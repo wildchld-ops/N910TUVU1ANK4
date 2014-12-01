@@ -44,7 +44,6 @@
 # virtual methods
 .method protected varargs doInBackground([Lcom/android/internal/app/ResolverActivity$DisplayResolveInfo;)Lcom/android/internal/app/ResolverActivity$DisplayResolveInfo;
     .locals 3
-    .param p1    # [Lcom/android/internal/app/ResolverActivity$DisplayResolveInfo;
 
     const/4 v1, 0x0
 
@@ -70,7 +69,6 @@
 
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [Lcom/android/internal/app/ResolverActivity$DisplayResolveInfo;
 
@@ -83,7 +81,6 @@
 
 .method protected onPostExecute(Lcom/android/internal/app/ResolverActivity$DisplayResolveInfo;)V
     .locals 1
-    .param p1    # Lcom/android/internal/app/ResolverActivity$DisplayResolveInfo;
 
     iget-object v0, p0, Lcom/android/internal/app/ResolverActivity$LoadIconTask;->this$0:Lcom/android/internal/app/ResolverActivity;
 
@@ -99,7 +96,6 @@
 
 .method protected bridge synthetic onPostExecute(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/android/internal/app/ResolverActivity$DisplayResolveInfo;
 

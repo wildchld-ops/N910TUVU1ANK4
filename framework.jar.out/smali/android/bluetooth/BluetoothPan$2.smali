@@ -33,7 +33,6 @@
 # virtual methods
 .method public onBluetoothStateChange(Z)V
     .locals 4
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

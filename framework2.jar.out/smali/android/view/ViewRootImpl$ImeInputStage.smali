@@ -24,8 +24,6 @@
 # direct methods
 .method public constructor <init>(Landroid/view/ViewRootImpl;Landroid/view/ViewRootImpl$InputStage;Ljava/lang/String;)V
     .locals 0
-    .param p2    # Landroid/view/ViewRootImpl$InputStage;
-    .param p3    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/view/ViewRootImpl$ImeInputStage;->this$0:Landroid/view/ViewRootImpl;
 
@@ -38,8 +36,6 @@
 # virtual methods
 .method public onFinishedInputEvent(Ljava/lang/Object;Z)V
     .locals 2
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Z
 
     move-object v0, p1
 
@@ -62,7 +58,6 @@
 
 .method protected onProcess(Landroid/view/ViewRootImpl$QueuedInputEvent;)I
     .locals 5
-    .param p1    # Landroid/view/ViewRootImpl$QueuedInputEvent;
 
     const/4 v3, 0x1
 

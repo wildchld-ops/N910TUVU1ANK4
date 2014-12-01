@@ -550,8 +550,6 @@
 
 .method public setFinalX(FLjava/lang/String;)V
     .locals 2
-    .param p1    # F
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -572,7 +570,6 @@
 
 .method public setFinalY(F)V
     .locals 2
-    .param p1    # F
 
     const/4 v0, 0x0
 
@@ -593,7 +590,6 @@
 
 .method public setHorizontalCatchupConstant(F)V
     .locals 0
-    .param p1    # F
 
     iput p1, p0, Lcom/android/launcher2/Workspace$WallpaperOffsetInterpolator;->mHorizontalCatchupConstant:F
 
@@ -602,7 +598,6 @@
 
 .method public setOverrideHorizontalCatchupConstant(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/launcher2/Workspace$WallpaperOffsetInterpolator;->mOverrideHorizontalCatchupConstant:Z
 
@@ -611,7 +606,6 @@
 
 .method public setVerticalCatchupConstant(F)V
     .locals 0
-    .param p1    # F
 
     iput p1, p0, Lcom/android/launcher2/Workspace$WallpaperOffsetInterpolator;->mVerticalCatchupConstant:F
 

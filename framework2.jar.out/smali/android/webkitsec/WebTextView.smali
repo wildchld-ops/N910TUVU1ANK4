@@ -36,7 +36,6 @@
 
 .method static urlForAutoCompleteData(Ljava/lang/String;)Ljava/lang/String;
     .locals 6
-    .param p0    # Ljava/lang/String;
 
     const/4 v1, 0x0
 

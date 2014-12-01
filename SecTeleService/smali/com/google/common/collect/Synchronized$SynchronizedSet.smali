@@ -107,7 +107,7 @@
     return v0
 
     :cond_0
-    iget-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedObject;->mutex:Ljava/lang/Object;
+    iget-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedSet;->mutex:Ljava/lang/Object;
 
     monitor-enter v1
 
@@ -137,7 +137,7 @@
 .method public hashCode()I
     .locals 2
 
-    iget-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedObject;->mutex:Ljava/lang/Object;
+    iget-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedSet;->mutex:Ljava/lang/Object;
 
     monitor-enter v1
 

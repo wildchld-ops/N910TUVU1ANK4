@@ -151,9 +151,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Ljava/util/concurrent/Semaphore;Landroid/media/videoeditor/VideoEditor;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/util/concurrent/Semaphore;
-    .param p3    # Landroid/media/videoeditor/VideoEditor;
 
     const/4 v1, 0x1
 
@@ -244,9 +241,6 @@
 
 .method private adjustMediaItemBoundary(Landroid/media/videoeditor/MediaArtistNativeHelper$ClipSettings;Landroid/media/videoeditor/MediaArtistNativeHelper$Properties;Landroid/media/videoeditor/MediaItem;)V
     .locals 4
-    .param p1    # Landroid/media/videoeditor/MediaArtistNativeHelper$ClipSettings;
-    .param p2    # Landroid/media/videoeditor/MediaArtistNativeHelper$Properties;
-    .param p3    # Landroid/media/videoeditor/MediaItem;
 
     const-wide/16 v2, 0x0
 
@@ -453,9 +447,6 @@
 
 .method private adjustVolume(Landroid/media/videoeditor/MediaItem;Landroid/media/videoeditor/MediaArtistNativeHelper$PreviewClipProperties;I)V
     .locals 3
-    .param p1    # Landroid/media/videoeditor/MediaItem;
-    .param p2    # Landroid/media/videoeditor/MediaArtistNativeHelper$PreviewClipProperties;
-    .param p3    # I
 
     const/4 v2, 0x0
 
@@ -520,9 +511,6 @@
 
 .method private checkOddSizeImage(Landroid/media/videoeditor/MediaItem;Landroid/media/videoeditor/MediaArtistNativeHelper$PreviewClipProperties;I)V
     .locals 3
-    .param p1    # Landroid/media/videoeditor/MediaItem;
-    .param p2    # Landroid/media/videoeditor/MediaArtistNativeHelper$PreviewClipProperties;
-    .param p3    # I
 
     instance-of v2, p1, Landroid/media/videoeditor/MediaImageItem;
 
@@ -580,7 +568,6 @@
 
 .method private findVideoBitrate(I)I
     .locals 1
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -631,8 +618,6 @@
 
 .method private findVideoResolution(II)I
     .locals 5
-    .param p1    # I
-    .param p2    # I
 
     const/16 v4, 0x2d0
 
@@ -773,10 +758,6 @@
 
 .method private generateTransition(Landroid/media/videoeditor/Transition;Landroid/media/videoeditor/MediaArtistNativeHelper$EditSettings;Landroid/media/videoeditor/MediaArtistNativeHelper$PreviewClipProperties;I)V
     .locals 4
-    .param p1    # Landroid/media/videoeditor/Transition;
-    .param p2    # Landroid/media/videoeditor/MediaArtistNativeHelper$EditSettings;
-    .param p3    # Landroid/media/videoeditor/MediaArtistNativeHelper$PreviewClipProperties;
-    .param p4    # I
 
     const/4 v3, 0x0
 
@@ -940,7 +921,6 @@
 
 .method private getEffectColorType(Landroid/media/videoeditor/EffectColor;)I
     .locals 3
-    .param p1    # Landroid/media/videoeditor/EffectColor;
 
     const/4 v0, -0x1
 
@@ -1118,8 +1098,6 @@
 
 .method private getTransitionResolution(Landroid/media/videoeditor/MediaItem;Landroid/media/videoeditor/MediaItem;)I
     .locals 4
-    .param p1    # Landroid/media/videoeditor/MediaItem;
-    .param p2    # Landroid/media/videoeditor/MediaItem;
 
     const/4 v0, 0x0
 
@@ -1416,8 +1394,6 @@
 
 .method private onAudioGraphExtractProgressUpdate(IZ)V
     .locals 1
-    .param p1    # I
-    .param p2    # Z
 
     iget-object v0, p0, Landroid/media/videoeditor/MediaArtistNativeHelper;->mExtractAudioWaveformProgressListener:Landroid/media/videoeditor/ExtractAudioWaveformProgressListener;
 
@@ -1435,12 +1411,6 @@
 
 .method private onPreviewProgressUpdate(IZZLjava/lang/String;II)V
     .locals 5
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # Z
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
-    .param p6    # I
 
     iget-object v1, p0, Landroid/media/videoeditor/MediaArtistNativeHelper;->mPreviewProgressListener:Landroid/media/videoeditor/VideoEditor$PreviewProgressListener;
 
@@ -1530,8 +1500,6 @@
 
 .method private onProgressUpdate(II)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
 
     const/4 v4, 0x1
 
@@ -2144,12 +2112,6 @@
 
 .method private populateEffects(Landroid/media/videoeditor/MediaItem;[Landroid/media/videoeditor/MediaArtistNativeHelper$EffectSettings;IIII)I
     .locals 9
-    .param p1    # Landroid/media/videoeditor/MediaItem;
-    .param p2    # [Landroid/media/videoeditor/MediaArtistNativeHelper$EffectSettings;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     const-wide/16 v7, 0x0
 
@@ -2403,9 +2365,6 @@
 
 .method private populateMediaItemProperties(Landroid/media/videoeditor/MediaItem;II)I
     .locals 2
-    .param p1    # Landroid/media/videoeditor/MediaItem;
-    .param p2    # I
-    .param p3    # I
 
     iget-object v0, p0, Landroid/media/videoeditor/MediaArtistNativeHelper;->mPreviewEditSettings:Landroid/media/videoeditor/MediaArtistNativeHelper$EditSettings;
 
@@ -2542,8 +2501,6 @@
 
 .method private previewFrameEditInfo(Ljava/lang/String;I)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     iput-object p1, p0, Landroid/media/videoeditor/MediaArtistNativeHelper;->mRenderPreviewOverlayFile:Ljava/lang/String;
 
@@ -2601,7 +2558,6 @@
 # virtual methods
 .method GetClosestVideoFrameRate(I)I
     .locals 3
-    .param p1    # I
 
     const/4 v0, 0x7
 
@@ -2672,9 +2628,6 @@
 
 .method public adjustEffectsStartTimeAndDuration(Landroid/media/videoeditor/MediaArtistNativeHelper$EffectSettings;II)V
     .locals 4
-    .param p1    # Landroid/media/videoeditor/MediaArtistNativeHelper$EffectSettings;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v1, 0x0
 
@@ -2820,7 +2773,6 @@
 
 .method clearPreviewSurface(Landroid/view/Surface;)V
     .locals 0
-    .param p1    # Landroid/view/Surface;
 
     invoke-direct {p0, p1}, Landroid/media/videoeditor/MediaArtistNativeHelper;->nativeClearSurface(Landroid/view/Surface;)V
 
@@ -2829,12 +2781,6 @@
 
 .method doPreview(Landroid/view/Surface;JJZILandroid/media/videoeditor/VideoEditor$PreviewProgressListener;)V
     .locals 11
-    .param p1    # Landroid/view/Surface;
-    .param p2    # J
-    .param p4    # J
-    .param p6    # Z
-    .param p7    # I
-    .param p8    # Landroid/media/videoeditor/VideoEditor$PreviewProgressListener;
 
     iput-wide p2, p0, Landroid/media/videoeditor/MediaArtistNativeHelper;->mPreviewProgress:J
 
@@ -2969,11 +2915,6 @@
 
 .method export(Ljava/lang/String;Ljava/lang/String;IILjava/util/List;Ljava/util/List;Ljava/util/List;Landroid/media/videoeditor/VideoEditor$ExportProgressListener;)V
     .locals 18
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
-    .param p8    # Landroid/media/videoeditor/VideoEditor$ExportProgressListener;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3633,14 +3574,6 @@
 
 .method generateAudioGraph(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IIILandroid/media/videoeditor/ExtractAudioWaveformProgressListener;Z)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # Landroid/media/videoeditor/ExtractAudioWaveformProgressListener;
-    .param p8    # Z
 
     iput-object p7, p0, Landroid/media/videoeditor/MediaArtistNativeHelper;->mExtractAudioWaveformProgressListener:Landroid/media/videoeditor/ExtractAudioWaveformProgressListener;
 
@@ -3721,7 +3654,6 @@
 
 .method public generateClip(Landroid/media/videoeditor/MediaArtistNativeHelper$EditSettings;)I
     .locals 5
-    .param p1    # Landroid/media/videoeditor/MediaArtistNativeHelper$EditSettings;
 
     const/4 v2, -0x1
 
@@ -3777,11 +3709,6 @@
 
 .method generateEffectClip(Landroid/media/videoeditor/MediaItem;Landroid/media/videoeditor/MediaArtistNativeHelper$ClipSettings;Landroid/media/videoeditor/MediaArtistNativeHelper$EditSettings;Ljava/lang/String;I)Ljava/lang/String;
     .locals 9
-    .param p1    # Landroid/media/videoeditor/MediaItem;
-    .param p2    # Landroid/media/videoeditor/MediaArtistNativeHelper$ClipSettings;
-    .param p3    # Landroid/media/videoeditor/MediaArtistNativeHelper$EditSettings;
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
 
     const/4 v2, 0x0
 
@@ -4075,8 +4002,6 @@
 
 .method generateKenBurnsClip(Landroid/media/videoeditor/MediaArtistNativeHelper$EditSettings;Landroid/media/videoeditor/MediaImageItem;)Ljava/lang/String;
     .locals 9
-    .param p1    # Landroid/media/videoeditor/MediaArtistNativeHelper$EditSettings;
-    .param p2    # Landroid/media/videoeditor/MediaImageItem;
 
     const/4 v8, 0x0
 
@@ -4241,11 +4166,6 @@
 
 .method generateTransitionClip(Landroid/media/videoeditor/MediaArtistNativeHelper$EditSettings;Ljava/lang/String;Landroid/media/videoeditor/MediaItem;Landroid/media/videoeditor/MediaItem;Landroid/media/videoeditor/Transition;)Ljava/lang/String;
     .locals 8
-    .param p1    # Landroid/media/videoeditor/MediaArtistNativeHelper$EditSettings;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/media/videoeditor/MediaItem;
-    .param p4    # Landroid/media/videoeditor/MediaItem;
-    .param p5    # Landroid/media/videoeditor/Transition;
 
     const/4 v7, 0x0
 
@@ -4386,8 +4306,6 @@
 
 .method getAspectRatio(II)I
     .locals 8
-    .param p1    # I
-    .param p2    # I
 
     int-to-double v4, p1
 
@@ -4472,7 +4390,6 @@
 
 .method getAudioCodecType(I)I
     .locals 1
-    .param p1    # I
 
     const/4 v0, -0x1
 
@@ -4519,7 +4436,6 @@
 
 .method getEffectSettings(Landroid/media/videoeditor/EffectColor;)Landroid/media/videoeditor/MediaArtistNativeHelper$EffectSettings;
     .locals 5
-    .param p1    # Landroid/media/videoeditor/EffectColor;
 
     const/4 v4, 0x0
 
@@ -4626,7 +4542,6 @@
 
 .method getFileType(I)I
     .locals 1
-    .param p1    # I
 
     const/4 v0, -0x1
 
@@ -4694,7 +4609,6 @@
 
 .method getFrameRate(I)I
     .locals 1
-    .param p1    # I
 
     const/4 v0, -0x1
 
@@ -4770,7 +4684,6 @@
 
 .method getMediaItemFileType(I)I
     .locals 1
-    .param p1    # I
 
     const/4 v0, -0x1
 
@@ -4826,7 +4739,6 @@
 
 .method getMediaItemRenderingMode(I)I
     .locals 1
-    .param p1    # I
 
     const/4 v0, -0x1
 
@@ -4873,7 +4785,6 @@
 
 .method getOverlaySettings(Landroid/media/videoeditor/OverlayFrame;)Landroid/media/videoeditor/MediaArtistNativeHelper$EffectSettings;
     .locals 17
-    .param p1    # Landroid/media/videoeditor/OverlayFrame;
 
     new-instance v12, Landroid/media/videoeditor/MediaArtistNativeHelper$EffectSettings;
 
@@ -5308,11 +5219,6 @@
 
 .method getPixels(Ljava/lang/String;IIJI)Landroid/graphics/Bitmap;
     .locals 13
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # J
-    .param p6    # I
 
     const/4 v0, 0x1
 
@@ -5359,15 +5265,6 @@
 
 .method getPixelsList(Ljava/lang/String;IIJJI[ILandroid/media/videoeditor/MediaItem$GetThumbnailListCallback;I)V
     .locals 25
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # J
-    .param p6    # J
-    .param p8    # I
-    .param p9    # [I
-    .param p10    # Landroid/media/videoeditor/MediaItem$GetThumbnailListCallback;
-    .param p11    # I
 
     add-int/lit8 v1, p2, 0x1
 
@@ -5517,7 +5414,6 @@
 
 .method getSlideSettingsDirection(I)I
     .locals 1
-    .param p1    # I
 
     const/4 v0, -0x1
 
@@ -5559,7 +5455,6 @@
 
 .method getVideoCodecType(I)I
     .locals 1
-    .param p1    # I
 
     const/4 v0, -0x1
 
@@ -5595,7 +5490,6 @@
 
 .method getVideoTransitionBehaviour(I)I
     .locals 1
-    .param p1    # I
 
     const/4 v0, -0x1
 
@@ -5643,7 +5537,6 @@
 
 .method initClipSettings(Landroid/media/videoeditor/MediaArtistNativeHelper$ClipSettings;)V
     .locals 2
-    .param p1    # Landroid/media/videoeditor/MediaArtistNativeHelper$ClipSettings;
 
     const/4 v1, 0x0
 
@@ -5723,7 +5616,6 @@
 
 .method previewStoryBoard(Ljava/util/List;Ljava/util/List;Ljava/util/List;Landroid/media/videoeditor/VideoEditor$MediaProcessingProgressListener;)V
     .locals 26
-    .param p4    # Landroid/media/videoeditor/VideoEditor$MediaProcessingProgressListener;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -6564,11 +6456,6 @@
 
 .method renderMediaItemPreviewFrame(Landroid/view/Surface;Ljava/lang/String;JII)J
     .locals 12
-    .param p1    # Landroid/view/Surface;
-    .param p2    # Ljava/lang/String;
-    .param p3    # J
-    .param p5    # I
-    .param p6    # I
 
     const-wide/16 v10, 0x0
 
@@ -6637,11 +6524,6 @@
 
 .method renderPreviewFrame(Landroid/view/Surface;JIILandroid/media/videoeditor/VideoEditor$OverlayData;)J
     .locals 7
-    .param p1    # Landroid/view/Surface;
-    .param p2    # J
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Landroid/media/videoeditor/VideoEditor$OverlayData;
 
     iget-boolean v4, p0, Landroid/media/videoeditor/MediaArtistNativeHelper;->mInvalidatePreviewArray:Z
 
@@ -6805,7 +6687,6 @@
 
 .method setAudioCodec(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/media/videoeditor/MediaArtistNativeHelper;->mExportAudioCodec:I
 
@@ -6814,7 +6695,6 @@
 
 .method setAudioflag(Z)V
     .locals 3
-    .param p1    # Z
 
     new-instance v0, Ljava/io/File;
 
@@ -6870,7 +6750,6 @@
 
 .method setGeneratePreview(Z)V
     .locals 4
-    .param p1    # Z
 
     const/4 v1, 0x0
 
@@ -6921,7 +6800,6 @@
 
 .method setVideoCodec(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/media/videoeditor/MediaArtistNativeHelper;->mExportVideoCodec:I
 
@@ -6930,7 +6808,6 @@
 
 .method stop(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     invoke-direct {p0}, Landroid/media/videoeditor/MediaArtistNativeHelper;->stopEncoding()V

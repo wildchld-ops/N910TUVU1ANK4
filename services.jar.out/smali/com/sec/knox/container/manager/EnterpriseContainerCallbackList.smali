@@ -63,7 +63,6 @@
 # direct methods
 .method public constructor <init>([Ljava/lang/String;)V
     .locals 4
-    .param p1    # [Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -122,7 +121,6 @@
 # virtual methods
 .method public beginBroadcast(Ljava/lang/String;)I
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     iget-object v6, p0, Lcom/sec/knox/container/manager/EnterpriseContainerCallbackList;->mCallbacks:Ljava/util/HashMap;
 
@@ -278,7 +276,6 @@
 
 .method public getBroadcastItem(I)Landroid/os/IInterface;
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)TE;"
@@ -395,7 +392,6 @@
 
 .method public onCallbackDied(Landroid/os/IInterface;[Ljava/lang/String;)V
     .locals 0
-    .param p2    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;[",
@@ -409,7 +405,6 @@
 
 .method public register([Ljava/lang/String;Landroid/os/IInterface;)Z
     .locals 12
-    .param p1    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([",

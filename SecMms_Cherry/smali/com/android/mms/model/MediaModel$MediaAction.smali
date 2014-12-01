@@ -135,7 +135,6 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/android/mms/model/MediaModel$MediaAction;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-class v0, Lcom/android/mms/model/MediaModel$MediaAction;
 

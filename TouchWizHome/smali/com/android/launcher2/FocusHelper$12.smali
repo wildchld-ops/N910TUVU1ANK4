@@ -30,9 +30,6 @@
 # virtual methods
 .method public onKey(Landroid/view/View;ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # Landroid/view/KeyEvent;
 
     # invokes: Lcom/android/launcher2/FocusHelper;->handleFolderOptionsButtonKeyEvent(Landroid/view/View;ILandroid/view/KeyEvent;)Z
     invoke-static {p1, p2, p3}, Lcom/android/launcher2/FocusHelper;->access$1100(Landroid/view/View;ILandroid/view/KeyEvent;)Z

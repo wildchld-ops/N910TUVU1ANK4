@@ -23,10 +23,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/CustomFrequencyManager;IIJLjava/lang/String;)V
     .locals 1
-    .param p2    # I
-    .param p3    # I
-    .param p4    # J
-    .param p6    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/os/CustomFrequencyManager$GPUFrequencyRequest;->this$0:Landroid/os/CustomFrequencyManager;
 

@@ -91,8 +91,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/location/ILocationManager;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/location/ILocationManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -129,7 +127,6 @@
 
 .method static synthetic access$100(Landroid/location/LocationManager;)Landroid/location/ILocationManager;
     .locals 1
-    .param p0    # Landroid/location/LocationManager;
 
     iget-object v0, p0, Landroid/location/LocationManager;->mService:Landroid/location/ILocationManager;
 
@@ -138,7 +135,6 @@
 
 .method static synthetic access$200(Landroid/location/LocationManager;)Landroid/location/GpsStatus;
     .locals 1
-    .param p0    # Landroid/location/LocationManager;
 
     iget-object v0, p0, Landroid/location/LocationManager;->mGpsStatus:Landroid/location/GpsStatus;
 
@@ -147,7 +143,6 @@
 
 .method private static checkCriteria(Landroid/location/Criteria;)V
     .locals 3
-    .param p0    # Landroid/location/Criteria;
 
     if-nez p0, :cond_0
 
@@ -181,7 +176,6 @@
 
 .method private static checkGeofence(Landroid/location/Geofence;)V
     .locals 3
-    .param p0    # Landroid/location/Geofence;
 
     if-nez p0, :cond_0
 
@@ -215,7 +209,6 @@
 
 .method private static checkListener(Landroid/location/LocationListener;)V
     .locals 3
-    .param p0    # Landroid/location/LocationListener;
 
     if-nez p0, :cond_0
 
@@ -249,7 +242,6 @@
 
 .method private checkPendingIntent(Landroid/app/PendingIntent;)V
     .locals 4
-    .param p1    # Landroid/app/PendingIntent;
 
     if-nez p1, :cond_0
 
@@ -315,7 +307,6 @@
 
 .method private static checkProvider(Ljava/lang/String;)V
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     if-nez p0, :cond_0
 
@@ -349,8 +340,6 @@
 
 .method private createProvider(Ljava/lang/String;Lcom/android/internal/location/ProviderProperties;)Landroid/location/LocationProvider;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/internal/location/ProviderProperties;
 
     new-instance v0, Landroid/location/LocationProvider;
 
@@ -361,10 +350,6 @@
 
 .method private requestLocationUpdates(Landroid/location/LocationRequest;Landroid/location/LocationListener;Landroid/os/Looper;Landroid/app/PendingIntent;)V
     .locals 7
-    .param p1    # Landroid/location/LocationRequest;
-    .param p2    # Landroid/location/LocationListener;
-    .param p3    # Landroid/os/Looper;
-    .param p4    # Landroid/app/PendingIntent;
 
     const/4 v6, 0x0
 
@@ -488,8 +473,6 @@
 
 .method private wrapListener(Landroid/location/LocationListener;Landroid/os/Looper;)Landroid/location/LocationManager$ListenerTransport;
     .locals 3
-    .param p1    # Landroid/location/LocationListener;
-    .param p2    # Landroid/os/Looper;
 
     if-nez p1, :cond_0
 
@@ -541,9 +524,6 @@
 # virtual methods
 .method public addGeofence(Landroid/location/LocationRequest;Landroid/location/Geofence;Landroid/app/PendingIntent;)V
     .locals 3
-    .param p1    # Landroid/location/LocationRequest;
-    .param p2    # Landroid/location/Geofence;
-    .param p3    # Landroid/app/PendingIntent;
 
     invoke-direct {p0, p3}, Landroid/location/LocationManager;->checkPendingIntent(Landroid/app/PendingIntent;)V
 
@@ -579,7 +559,6 @@
 
 .method public addGpsStatusListener(Landroid/location/GpsStatus$Listener;)Z
     .locals 5
-    .param p1    # Landroid/location/GpsStatus$Listener;
 
     iget-object v3, p0, Landroid/location/LocationManager;->mGpsStatusListeners:Ljava/util/HashMap;
 
@@ -639,7 +618,6 @@
 
 .method public addNmeaListener(Landroid/location/GpsStatus$NmeaListener;)Z
     .locals 5
-    .param p1    # Landroid/location/GpsStatus$NmeaListener;
 
     invoke-static {}, Lcom/sec/android/app/CscFeature;->getInstance()Lcom/sec/android/app/CscFeature;
 
@@ -730,11 +708,6 @@
 
 .method public addProximityAlert(DDFJLandroid/app/PendingIntent;)V
     .locals 5
-    .param p1    # D
-    .param p3    # D
-    .param p5    # F
-    .param p6    # J
-    .param p8    # Landroid/app/PendingIntent;
 
     invoke-direct {p0, p8}, Landroid/location/LocationManager;->checkPendingIntent(Landroid/app/PendingIntent;)V
 
@@ -818,16 +791,6 @@
 
 .method public addTestProvider(Ljava/lang/String;ZZZZZZZII)V
     .locals 11
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # Z
-    .param p4    # Z
-    .param p5    # Z
-    .param p6    # Z
-    .param p7    # Z
-    .param p8    # Z
-    .param p9    # I
-    .param p10    # I
 
     new-instance v0, Lcom/android/internal/location/ProviderProperties;
 
@@ -908,7 +871,6 @@
 
 .method public clearTestProviderEnabled(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     iget-object v1, p0, Landroid/location/LocationManager;->mService:Landroid/location/ILocationManager;
@@ -934,7 +896,6 @@
 
 .method public clearTestProviderLocation(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     iget-object v1, p0, Landroid/location/LocationManager;->mService:Landroid/location/ILocationManager;
@@ -960,7 +921,6 @@
 
 .method public clearTestProviderStatus(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     iget-object v1, p0, Landroid/location/LocationManager;->mService:Landroid/location/ILocationManager;
@@ -1024,8 +984,6 @@
 
 .method public getBestProvider(Landroid/location/Criteria;Z)Ljava/lang/String;
     .locals 3
-    .param p1    # Landroid/location/Criteria;
-    .param p2    # Z
 
     invoke-static {p1}, Landroid/location/LocationManager;->checkCriteria(Landroid/location/Criteria;)V
 
@@ -1057,7 +1015,6 @@
 
 .method public getGpsStatus(Landroid/location/GpsStatus;)Landroid/location/GpsStatus;
     .locals 1
-    .param p1    # Landroid/location/GpsStatus;
 
     if-nez p1, :cond_0
 
@@ -1075,7 +1032,6 @@
 
 .method public getLastKnownLocation(Ljava/lang/String;)Landroid/location/Location;
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -1183,7 +1139,6 @@
 
 .method public getProvider(Ljava/lang/String;)Landroid/location/LocationProvider;
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -1224,8 +1179,6 @@
 
 .method public getProviders(Landroid/location/Criteria;Z)Ljava/util/List;
     .locals 3
-    .param p1    # Landroid/location/Criteria;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1268,7 +1221,6 @@
 
 .method public getProviders(Z)Ljava/util/List;
     .locals 4
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(Z)",
@@ -1309,7 +1261,6 @@
 
 .method public isProviderEnabled(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Landroid/location/LocationManager;->checkProvider(Ljava/lang/String;)V
 
@@ -1341,7 +1292,6 @@
 
 .method public removeAllGeofences(Landroid/app/PendingIntent;)V
     .locals 4
-    .param p1    # Landroid/app/PendingIntent;
 
     invoke-direct {p0, p1}, Landroid/location/LocationManager;->checkPendingIntent(Landroid/app/PendingIntent;)V
 
@@ -1377,8 +1327,6 @@
 
 .method public removeGeofence(Landroid/location/Geofence;Landroid/app/PendingIntent;)V
     .locals 4
-    .param p1    # Landroid/location/Geofence;
-    .param p2    # Landroid/app/PendingIntent;
 
     invoke-direct {p0, p2}, Landroid/location/LocationManager;->checkPendingIntent(Landroid/app/PendingIntent;)V
 
@@ -1414,7 +1362,6 @@
 
 .method public removeGpsStatusListener(Landroid/location/GpsStatus$Listener;)V
     .locals 4
-    .param p1    # Landroid/location/GpsStatus$Listener;
 
     :try_start_0
     iget-object v2, p0, Landroid/location/LocationManager;->mGpsStatusListeners:Ljava/util/HashMap;
@@ -1451,7 +1398,6 @@
 
 .method public removeNmeaListener(Landroid/location/GpsStatus$NmeaListener;)V
     .locals 4
-    .param p1    # Landroid/location/GpsStatus$NmeaListener;
 
     :try_start_0
     iget-object v2, p0, Landroid/location/LocationManager;->mNmeaListeners:Ljava/util/HashMap;
@@ -1488,7 +1434,6 @@
 
 .method public removeProximityAlert(Landroid/app/PendingIntent;)V
     .locals 4
-    .param p1    # Landroid/app/PendingIntent;
 
     invoke-direct {p0, p1}, Landroid/location/LocationManager;->checkPendingIntent(Landroid/app/PendingIntent;)V
 
@@ -1524,7 +1469,6 @@
 
 .method public removeTestProvider(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     iget-object v1, p0, Landroid/location/LocationManager;->mService:Landroid/location/ILocationManager;
@@ -1550,7 +1494,6 @@
 
 .method public removeUpdates(Landroid/app/PendingIntent;)V
     .locals 4
-    .param p1    # Landroid/app/PendingIntent;
 
     invoke-direct {p0, p1}, Landroid/location/LocationManager;->checkPendingIntent(Landroid/app/PendingIntent;)V
 
@@ -1586,7 +1529,6 @@
 
 .method public removeUpdates(Landroid/location/LocationListener;)V
     .locals 5
-    .param p1    # Landroid/location/LocationListener;
 
     invoke-static {p1}, Landroid/location/LocationManager;->checkListener(Landroid/location/LocationListener;)V
 
@@ -1651,10 +1593,6 @@
 
 .method public requestLocationUpdates(JFLandroid/location/Criteria;Landroid/app/PendingIntent;)V
     .locals 3
-    .param p1    # J
-    .param p3    # F
-    .param p4    # Landroid/location/Criteria;
-    .param p5    # Landroid/app/PendingIntent;
 
     const/4 v2, 0x0
 
@@ -1675,11 +1613,6 @@
 
 .method public requestLocationUpdates(JFLandroid/location/Criteria;Landroid/location/LocationListener;Landroid/os/Looper;)V
     .locals 2
-    .param p1    # J
-    .param p3    # F
-    .param p4    # Landroid/location/Criteria;
-    .param p5    # Landroid/location/LocationListener;
-    .param p6    # Landroid/os/Looper;
 
     invoke-static {p4}, Landroid/location/LocationManager;->checkCriteria(Landroid/location/Criteria;)V
 
@@ -1700,8 +1633,6 @@
 
 .method public requestLocationUpdates(Landroid/location/LocationRequest;Landroid/app/PendingIntent;)V
     .locals 1
-    .param p1    # Landroid/location/LocationRequest;
-    .param p2    # Landroid/app/PendingIntent;
 
     const/4 v0, 0x0
 
@@ -1714,9 +1645,6 @@
 
 .method public requestLocationUpdates(Landroid/location/LocationRequest;Landroid/location/LocationListener;Landroid/os/Looper;)V
     .locals 1
-    .param p1    # Landroid/location/LocationRequest;
-    .param p2    # Landroid/location/LocationListener;
-    .param p3    # Landroid/os/Looper;
 
     invoke-static {p2}, Landroid/location/LocationManager;->checkListener(Landroid/location/LocationListener;)V
 
@@ -1729,10 +1657,6 @@
 
 .method public requestLocationUpdates(Ljava/lang/String;JFLandroid/app/PendingIntent;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
-    .param p4    # F
-    .param p5    # Landroid/app/PendingIntent;
 
     const/4 v2, 0x0
 
@@ -1753,10 +1677,6 @@
 
 .method public requestLocationUpdates(Ljava/lang/String;JFLandroid/location/LocationListener;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
-    .param p4    # F
-    .param p5    # Landroid/location/LocationListener;
 
     const/4 v2, 0x0
 
@@ -1777,11 +1697,6 @@
 
 .method public requestLocationUpdates(Ljava/lang/String;JFLandroid/location/LocationListener;Landroid/os/Looper;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
-    .param p4    # F
-    .param p5    # Landroid/location/LocationListener;
-    .param p6    # Landroid/os/Looper;
 
     invoke-static {p1}, Landroid/location/LocationManager;->checkProvider(Ljava/lang/String;)V
 
@@ -1802,8 +1717,6 @@
 
 .method public requestSingleUpdate(Landroid/location/Criteria;Landroid/app/PendingIntent;)V
     .locals 6
-    .param p1    # Landroid/location/Criteria;
-    .param p2    # Landroid/app/PendingIntent;
 
     const/4 v5, 0x0
 
@@ -1828,9 +1741,6 @@
 
 .method public requestSingleUpdate(Landroid/location/Criteria;Landroid/location/LocationListener;Landroid/os/Looper;)V
     .locals 5
-    .param p1    # Landroid/location/Criteria;
-    .param p2    # Landroid/location/LocationListener;
-    .param p3    # Landroid/os/Looper;
 
     invoke-static {p1}, Landroid/location/LocationManager;->checkCriteria(Landroid/location/Criteria;)V
 
@@ -1855,8 +1765,6 @@
 
 .method public requestSingleUpdate(Ljava/lang/String;Landroid/app/PendingIntent;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/app/PendingIntent;
 
     const/4 v5, 0x0
 
@@ -1881,9 +1789,6 @@
 
 .method public requestSingleUpdate(Ljava/lang/String;Landroid/location/LocationListener;Landroid/os/Looper;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/location/LocationListener;
-    .param p3    # Landroid/os/Looper;
 
     invoke-static {p1}, Landroid/location/LocationManager;->checkProvider(Ljava/lang/String;)V
 
@@ -1908,9 +1813,6 @@
 
 .method public sendExtraCommand(Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/os/Bundle;
 
     :try_start_0
     iget-object v1, p0, Landroid/location/LocationManager;->mService:Landroid/location/ILocationManager;
@@ -1940,8 +1842,6 @@
 
 .method public sendNiResponse(II)Z
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     :try_start_0
     iget-object v1, p0, Landroid/location/LocationManager;->mService:Landroid/location/ILocationManager;
@@ -1971,8 +1871,6 @@
 
 .method public setTestProviderEnabled(Ljava/lang/String;Z)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     :try_start_0
     iget-object v1, p0, Landroid/location/LocationManager;->mService:Landroid/location/ILocationManager;
@@ -1998,8 +1896,6 @@
 
 .method public setTestProviderLocation(Ljava/lang/String;Landroid/location/Location;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/location/Location;
 
     invoke-virtual {p2}, Landroid/location/Location;->isComplete()Z
 
@@ -2075,10 +1971,6 @@
 
 .method public setTestProviderStatus(Ljava/lang/String;ILandroid/os/Bundle;J)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Landroid/os/Bundle;
-    .param p4    # J
 
     :try_start_0
     iget-object v0, p0, Landroid/location/LocationManager;->mService:Landroid/location/ILocationManager;

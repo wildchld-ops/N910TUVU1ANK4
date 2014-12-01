@@ -58,7 +58,6 @@
 
 .method public static checksumCrc32(Ljava/io/File;)J
     .locals 7
-    .param p0    # Ljava/io/File;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/FileNotFoundException;,
@@ -147,8 +146,6 @@
 
 .method public static copyFile(Ljava/io/File;Ljava/io/File;)Z
     .locals 4
-    .param p0    # Ljava/io/File;
-    .param p1    # Ljava/io/File;
 
     const/4 v2, 0x0
 
@@ -191,8 +188,6 @@
 
 .method public static copyToFile(Ljava/io/InputStream;Ljava/io/File;)Z
     .locals 7
-    .param p0    # Ljava/io/InputStream;
-    .param p1    # Ljava/io/File;
 
     const/4 v4, 0x0
 
@@ -298,9 +293,6 @@
 
 .method public static deleteOlderFiles(Ljava/io/File;IJ)V
     .locals 9
-    .param p0    # Ljava/io/File;
-    .param p1    # I
-    .param p2    # J
 
     if-ltz p1, :cond_0
 
@@ -391,7 +383,6 @@
 
 .method public static getUid(Ljava/lang/String;)I
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     :try_start_0
     sget-object v1, Llibcore/io/Libcore;->os:Llibcore/io/Os;
@@ -417,7 +408,6 @@
 
 .method public static isFilenameSafe(Ljava/io/File;)Z
     .locals 2
-    .param p0    # Ljava/io/File;
 
     sget-object v0, Landroid/os/FileUtils;->SAFE_FILENAME_PATTERN:Ljava/util/regex/Pattern;
 
@@ -438,9 +428,6 @@
 
 .method public static readTextFile(Ljava/io/File;ILjava/lang/String;)Ljava/lang/String;
     .locals 15
-    .param p0    # Ljava/io/File;
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -767,10 +754,6 @@
 
 .method public static setPermissions(Ljava/io/File;III)I
     .locals 1
-    .param p0    # Ljava/io/File;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     invoke-virtual {p0}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
@@ -785,10 +768,6 @@
 
 .method public static setPermissions(Ljava/io/FileDescriptor;III)I
     .locals 4
-    .param p0    # Ljava/io/FileDescriptor;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     :try_start_0
     sget-object v1, Llibcore/io/Libcore;->os:Llibcore/io/Os;
@@ -876,10 +855,6 @@
 
 .method public static setPermissions(Ljava/lang/String;III)I
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     :try_start_0
     sget-object v1, Llibcore/io/Libcore;->os:Llibcore/io/Os;
@@ -987,8 +962,6 @@
 
 .method public static stringToFile(Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1018,7 +991,6 @@
 
 .method public static sync(Ljava/io/FileOutputStream;)Z
     .locals 1
-    .param p0    # Ljava/io/FileOutputStream;
 
     if-eqz p0, :cond_0
 

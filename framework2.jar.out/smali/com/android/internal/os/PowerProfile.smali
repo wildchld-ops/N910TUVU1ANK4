@@ -84,7 +84,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -104,7 +103,6 @@
 
 .method private readPowerValuesFromXml(Landroid/content/Context;)V
     .locals 13
-    .param p1    # Landroid/content/Context;
 
     const v4, 0x10f0012
 
@@ -359,7 +357,6 @@
 # virtual methods
 .method public getAveragePower(Ljava/lang/String;)D
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     sget-object v1, Lcom/android/internal/os/PowerProfile;->sPowerMap:Ljava/util/HashMap;
 
@@ -417,8 +414,6 @@
 
 .method public getAveragePower(Ljava/lang/String;I)D
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const-wide/16 v2, 0x0
 

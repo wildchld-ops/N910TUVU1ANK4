@@ -96,9 +96,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;ILjava/lang/Object;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Ljava/lang/Object;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -189,7 +186,6 @@
 
 .method static synthetic access$100(Lcom/android/server/print/UserState;)Lcom/android/server/print/RemotePrintSpooler;
     .locals 1
-    .param p0    # Lcom/android/server/print/UserState;
 
     iget-object v0, p0, Lcom/android/server/print/UserState;->mSpooler:Lcom/android/server/print/RemotePrintSpooler;
 
@@ -198,8 +194,6 @@
 
 .method static synthetic access$202(Lcom/android/server/print/UserState;Lcom/android/server/print/UserState$PrinterDiscoverySessionMediator;)Lcom/android/server/print/UserState$PrinterDiscoverySessionMediator;
     .locals 0
-    .param p0    # Lcom/android/server/print/UserState;
-    .param p1    # Lcom/android/server/print/UserState$PrinterDiscoverySessionMediator;
 
     iput-object p1, p0, Lcom/android/server/print/UserState;->mPrinterDiscoverySession:Lcom/android/server/print/UserState$PrinterDiscoverySessionMediator;
 
@@ -208,7 +202,6 @@
 
 .method static synthetic access$300(Lcom/android/server/print/UserState;)Ljava/util/List;
     .locals 1
-    .param p0    # Lcom/android/server/print/UserState;
 
     iget-object v0, p0, Lcom/android/server/print/UserState;->mPrintJobStateChangeListenerRecords:Ljava/util/List;
 
@@ -217,8 +210,6 @@
 
 .method static synthetic access$400(Lcom/android/server/print/UserState;Landroid/content/ComponentName;)V
     .locals 0
-    .param p0    # Lcom/android/server/print/UserState;
-    .param p1    # Landroid/content/ComponentName;
 
     invoke-direct {p0, p1}, Lcom/android/server/print/UserState;->failScheduledPrintJobsForServiceInternal(Landroid/content/ComponentName;)V
 
@@ -227,9 +218,6 @@
 
 .method static synthetic access$500(Lcom/android/server/print/UserState;Landroid/print/PrintJobId;I)V
     .locals 0
-    .param p0    # Lcom/android/server/print/UserState;
-    .param p1    # Landroid/print/PrintJobId;
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/print/UserState;->handleDispatchPrintJobStateChanged(Landroid/print/PrintJobId;I)V
 
@@ -238,7 +226,6 @@
 
 .method static synthetic access$600(Lcom/android/server/print/UserState;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Lcom/android/server/print/UserState;
 
     iget-object v0, p0, Lcom/android/server/print/UserState;->mLock:Ljava/lang/Object;
 
@@ -247,7 +234,6 @@
 
 .method static synthetic access$700(Lcom/android/server/print/UserState;)Landroid/util/ArrayMap;
     .locals 1
-    .param p0    # Lcom/android/server/print/UserState;
 
     iget-object v0, p0, Lcom/android/server/print/UserState;->mActiveServices:Landroid/util/ArrayMap;
 
@@ -256,7 +242,6 @@
 
 .method static synthetic access$800(Lcom/android/server/print/UserState;)Z
     .locals 1
-    .param p0    # Lcom/android/server/print/UserState;
 
     iget-boolean v0, p0, Lcom/android/server/print/UserState;->mDestroyed:Z
 
@@ -265,7 +250,6 @@
 
 .method private addServiceLocked(Lcom/android/server/print/RemotePrintService;)V
     .locals 2
-    .param p1    # Lcom/android/server/print/RemotePrintService;
 
     iget-object v0, p0, Lcom/android/server/print/UserState;->mActiveServices:Landroid/util/ArrayMap;
 
@@ -523,7 +507,6 @@
 
 .method private failActivePrintJobsForService(Landroid/content/ComponentName;)V
     .locals 2
-    .param p1    # Landroid/content/ComponentName;
 
     invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
 
@@ -556,7 +539,6 @@
 
 .method private failScheduledPrintJobsForServiceInternal(Landroid/content/ComponentName;)V
     .locals 11
-    .param p1    # Landroid/content/ComponentName;
 
     iget-object v6, p0, Lcom/android/server/print/UserState;->mSpooler:Lcom/android/server/print/RemotePrintSpooler;
 
@@ -633,8 +615,6 @@
 
 .method private handleDispatchPrintJobStateChanged(Landroid/print/PrintJobId;I)V
     .locals 7
-    .param p1    # Landroid/print/PrintJobId;
-    .param p2    # I
 
     iget-object v6, p0, Lcom/android/server/print/UserState;->mLock:Ljava/lang/Object;
 
@@ -1023,7 +1003,6 @@
 
 .method private readPrintServicesFromSettingLocked(Ljava/lang/String;Ljava/util/Set;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1091,7 +1070,6 @@
 
 .method private removeServiceLocked(Lcom/android/server/print/RemotePrintService;)V
     .locals 1
-    .param p1    # Lcom/android/server/print/RemotePrintService;
 
     invoke-virtual {p1}, Lcom/android/server/print/RemotePrintService;->getComponentName()Landroid/content/ComponentName;
 
@@ -1139,8 +1117,6 @@
 # virtual methods
 .method public addPrintJobStateChangeListener(Landroid/print/IPrintJobStateChangeListener;I)V
     .locals 3
-    .param p1    # Landroid/print/IPrintJobStateChangeListener;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1189,8 +1165,6 @@
 
 .method public cancelPrintJob(Landroid/print/PrintJobId;I)V
     .locals 7
-    .param p1    # Landroid/print/PrintJobId;
-    .param p2    # I
 
     iget-object v4, p0, Lcom/android/server/print/UserState;->mSpooler:Lcom/android/server/print/RemotePrintSpooler;
 
@@ -1280,7 +1254,6 @@
 
 .method public createPrinterDiscoverySession(Landroid/print/IPrinterDiscoveryObserver;)V
     .locals 3
-    .param p1    # Landroid/print/IPrinterDiscoveryObserver;
 
     iget-object v1, p0, Lcom/android/server/print/UserState;->mLock:Ljava/lang/Object;
 
@@ -1415,7 +1388,6 @@
 
 .method public destroyPrinterDiscoverySession(Landroid/print/IPrinterDiscoveryObserver;)V
     .locals 2
-    .param p1    # Landroid/print/IPrinterDiscoveryObserver;
 
     iget-object v1, p0, Lcom/android/server/print/UserState;->mLock:Ljava/lang/Object;
 
@@ -1452,9 +1424,6 @@
 
 .method public dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;Ljava/lang/String;)V
     .locals 16
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # Ljava/lang/String;
 
     invoke-virtual/range {p2 .. p3}, Ljava/io/PrintWriter;->append(Ljava/lang/CharSequence;)Ljava/io/PrintWriter;
 
@@ -2183,8 +2152,6 @@
 
 .method public getPrintJobInfo(Landroid/print/PrintJobId;I)Landroid/print/PrintJobInfo;
     .locals 3
-    .param p1    # Landroid/print/PrintJobId;
-    .param p2    # I
 
     const/4 v2, 0x0
 
@@ -2215,7 +2182,6 @@
 
 .method public getPrintJobInfos(I)Ljava/util/List;
     .locals 11
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -2321,7 +2287,6 @@
 
 .method public onAllPrintJobsForServiceHandled(Landroid/content/ComponentName;)V
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
 
     iget-object v2, p0, Lcom/android/server/print/UserState;->mLock:Ljava/lang/Object;
 
@@ -2362,7 +2327,6 @@
 
 .method public onPrintJobQueued(Landroid/print/PrintJobInfo;)V
     .locals 7
-    .param p1    # Landroid/print/PrintJobInfo;
 
     iget-object v3, p0, Lcom/android/server/print/UserState;->mLock:Ljava/lang/Object;
 
@@ -2432,7 +2396,6 @@
 
 .method public onPrintJobStateChanged(Landroid/print/PrintJobInfo;)V
     .locals 5
-    .param p1    # Landroid/print/PrintJobInfo;
 
     iget-object v0, p0, Lcom/android/server/print/UserState;->mPrintJobForAppCache:Lcom/android/server/print/UserState$PrintJobForAppCache;
 
@@ -2589,7 +2552,6 @@
 
 .method public onServiceDied(Lcom/android/server/print/RemotePrintService;)V
     .locals 2
-    .param p1    # Lcom/android/server/print/RemotePrintService;
 
     iget-object v1, p0, Lcom/android/server/print/UserState;->mLock:Ljava/lang/Object;
 
@@ -2652,11 +2614,6 @@
 
 .method public print(Ljava/lang/String;Landroid/print/IPrintDocumentAdapter;Landroid/print/PrintAttributes;Ljava/lang/String;I)Landroid/os/Bundle;
     .locals 13
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/print/IPrintDocumentAdapter;
-    .param p3    # Landroid/print/PrintAttributes;
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
 
     new-instance v10, Landroid/print/PrintJobInfo;
 
@@ -2831,7 +2788,6 @@
 
 .method public removePrintJobStateChangeListener(Landroid/print/IPrintJobStateChangeListener;)V
     .locals 6
-    .param p1    # Landroid/print/IPrintJobStateChangeListener;
 
     iget-object v4, p0, Lcom/android/server/print/UserState;->mLock:Ljava/lang/Object;
 
@@ -2924,8 +2880,6 @@
 
 .method public restartPrintJob(Landroid/print/PrintJobId;I)V
     .locals 4
-    .param p1    # Landroid/print/PrintJobId;
-    .param p2    # I
 
     invoke-virtual {p0, p1, p2}, Lcom/android/server/print/UserState;->getPrintJobInfo(Landroid/print/PrintJobId;I)Landroid/print/PrintJobInfo;
 
@@ -2959,7 +2913,6 @@
 
 .method public startPrinterDiscovery(Landroid/print/IPrinterDiscoveryObserver;Ljava/util/List;)V
     .locals 2
-    .param p1    # Landroid/print/IPrinterDiscoveryObserver;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3024,7 +2977,6 @@
 
 .method public startPrinterStateTracking(Landroid/print/PrinterId;)V
     .locals 2
-    .param p1    # Landroid/print/PrinterId;
 
     iget-object v1, p0, Lcom/android/server/print/UserState;->mLock:Ljava/lang/Object;
 
@@ -3079,7 +3031,6 @@
 
 .method public stopPrinterDiscovery(Landroid/print/IPrinterDiscoveryObserver;)V
     .locals 2
-    .param p1    # Landroid/print/IPrinterDiscoveryObserver;
 
     iget-object v1, p0, Lcom/android/server/print/UserState;->mLock:Ljava/lang/Object;
 
@@ -3134,7 +3085,6 @@
 
 .method public stopPrinterStateTracking(Landroid/print/PrinterId;)V
     .locals 2
-    .param p1    # Landroid/print/PrinterId;
 
     iget-object v1, p0, Lcom/android/server/print/UserState;->mLock:Ljava/lang/Object;
 

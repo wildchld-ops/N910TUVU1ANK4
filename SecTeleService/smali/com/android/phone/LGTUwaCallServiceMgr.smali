@@ -525,7 +525,7 @@
 
     move-result-object v6
 
-    invoke-virtual {v6, v5}, Landroid/content/ContextWrapper;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {v6, v5}, Lcom/android/phone/PhoneGlobals;->startActivity(Landroid/content/Intent;)V
 
     goto :goto_1
 .end method
@@ -903,7 +903,7 @@
 
     sget-object v0, Lcom/android/phone/LGTUwaCallServiceMgr$3;->$SwitchMap$com$android$internal$telephony$Call$State:[I
 
-    invoke-virtual {p1}, Ljava/lang/Enum;->ordinal()I
+    invoke-virtual {p1}, Lcom/android/internal/telephony/Call$State;->ordinal()I
 
     move-result v1
 
@@ -1009,7 +1009,7 @@
 
     sget-object v0, Lcom/android/phone/LGTUwaCallServiceMgr$3;->$SwitchMap$com$android$phone$IMSConferenceCallMgr$State:[I
 
-    invoke-virtual {p1}, Ljava/lang/Enum;->ordinal()I
+    invoke-virtual {p1}, Lcom/android/phone/IMSConferenceCallMgr$State;->ordinal()I
 
     move-result v1
 
@@ -1276,7 +1276,7 @@
 
     sget-object v2, Lcom/android/phone/LGTUwaCallServiceMgr$LgtCallType;->VOICE_CALL:Lcom/android/phone/LGTUwaCallServiceMgr$LgtCallType;
 
-    invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
+    invoke-virtual {v2}, Lcom/android/phone/LGTUwaCallServiceMgr$LgtCallType;->ordinal()I
 
     move-result v2
 
@@ -1288,7 +1288,7 @@
 
     sget-object v2, Lcom/android/phone/LGTUwaCallServiceMgr$LgtCallState;->IDLE:Lcom/android/phone/LGTUwaCallServiceMgr$LgtCallState;
 
-    invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
+    invoke-virtual {v2}, Lcom/android/phone/LGTUwaCallServiceMgr$LgtCallState;->ordinal()I
 
     move-result v2
 
@@ -1714,7 +1714,7 @@
 
     invoke-virtual {v1, p2}, Landroid/content/Intent;->putExtras(Landroid/os/Bundle;)Landroid/content/Intent;
 
-    invoke-virtual {v0, v1}, Landroid/content/ContextWrapper;->sendBroadcast(Landroid/content/Intent;)V
+    invoke-virtual {v0, v1}, Lcom/android/phone/PhoneGlobals;->sendBroadcast(Landroid/content/Intent;)V
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -1761,7 +1761,7 @@
 
     sget-object v1, Lcom/android/phone/LGTUwaCallServiceMgr$LgtCallState;->DISCONNECTING:Lcom/android/phone/LGTUwaCallServiceMgr$LgtCallState;
 
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    invoke-virtual {v1}, Lcom/android/phone/LGTUwaCallServiceMgr$LgtCallState;->ordinal()I
 
     move-result v1
 
@@ -1775,7 +1775,7 @@
 
     sget-object v1, Lcom/android/phone/LGTUwaCallServiceMgr$LgtCallState;->DISCONNECTED:Lcom/android/phone/LGTUwaCallServiceMgr$LgtCallState;
 
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    invoke-virtual {v1}, Lcom/android/phone/LGTUwaCallServiceMgr$LgtCallState;->ordinal()I
 
     move-result v1
 
@@ -1789,7 +1789,7 @@
 
     sget-object v1, Lcom/android/phone/LGTUwaCallServiceMgr$LgtCallState;->IDLE:Lcom/android/phone/LGTUwaCallServiceMgr$LgtCallState;
 
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    invoke-virtual {v1}, Lcom/android/phone/LGTUwaCallServiceMgr$LgtCallState;->ordinal()I
 
     move-result v1
 
@@ -1825,7 +1825,7 @@
 
     move-result v7
 
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    invoke-virtual {v1}, Lcom/android/phone/LGTUwaCallServiceMgr$LgtCallState;->ordinal()I
 
     move-result v8
 
@@ -1833,7 +1833,7 @@
 
     const-string v7, "callState"
 
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    invoke-virtual {v1}, Lcom/android/phone/LGTUwaCallServiceMgr$LgtCallState;->ordinal()I
 
     move-result v8
 
@@ -1856,7 +1856,7 @@
 
     move-result v7
 
-    invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
+    invoke-virtual {v2}, Lcom/android/phone/LGTUwaCallServiceMgr$LgtCallType;->ordinal()I
 
     move-result v8
 
@@ -1872,7 +1872,7 @@
 
     const-string v7, "voiceType"
 
-    invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
+    invoke-virtual {v2}, Lcom/android/phone/LGTUwaCallServiceMgr$LgtCallType;->ordinal()I
 
     move-result v8
 
@@ -1991,7 +1991,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v3}, Ljava/lang/Enum;->ordinal()I
+    invoke-virtual {v3}, Lcom/android/phone/LGTUwaCallServiceMgr$LgtGroupCallState;->ordinal()I
 
     move-result v3
 
@@ -2077,7 +2077,7 @@
 
     iget-object v2, p0, Lcom/android/phone/LGTUwaCallServiceMgr;->mEventReceiver:Landroid/content/BroadcastReceiver;
 
-    invoke-virtual {v1, v2, v0}, Landroid/content/ContextWrapper;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
+    invoke-virtual {v1, v2, v0}, Lcom/android/phone/PhoneGlobals;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
     const/4 v0, 0x0
 

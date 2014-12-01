@@ -117,7 +117,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -136,7 +135,6 @@
 
 .method static synthetic access$000(Landroid/os/ParcelFileDescriptor$AutoCloseOutputStream;)V
     .locals 0
-    .param p0    # Landroid/os/ParcelFileDescriptor$AutoCloseOutputStream;
 
     invoke-static {p0}, Lcom/android/server/analytics/data/collection/LogCollectionManager;->closeOutputStream(Landroid/os/ParcelFileDescriptor$AutoCloseOutputStream;)V
 
@@ -145,7 +143,6 @@
 
 .method static synthetic access$100(Lcom/android/server/analytics/data/collection/LogCollectionManager;)Ljava/util/Map;
     .locals 1
-    .param p0    # Lcom/android/server/analytics/data/collection/LogCollectionManager;
 
     iget-object v0, p0, Lcom/android/server/analytics/data/collection/LogCollectionManager;->mClientGroupMap:Ljava/util/Map;
 
@@ -154,7 +151,6 @@
 
 .method static synthetic access$200(Lcom/android/server/analytics/data/collection/LogCollectionManager;)V
     .locals 0
-    .param p0    # Lcom/android/server/analytics/data/collection/LogCollectionManager;
 
     invoke-direct {p0}, Lcom/android/server/analytics/data/collection/LogCollectionManager;->reconcileLogCollection()V
 
@@ -163,7 +159,6 @@
 
 .method private static closeOutputStream(Landroid/os/ParcelFileDescriptor$AutoCloseOutputStream;)V
     .locals 2
-    .param p0    # Landroid/os/ParcelFileDescriptor$AutoCloseOutputStream;
 
     :try_start_0
     invoke-virtual {p0}, Landroid/os/ParcelFileDescriptor$AutoCloseOutputStream;->flush()V
@@ -221,8 +216,6 @@
 
 .method private static getMissingGroups(II)I
     .locals 2
-    .param p0    # I
-    .param p1    # I
 
     and-int v0, p0, p1
 
@@ -233,7 +226,6 @@
 
 .method private declared-synchronized getOutputStreams(I)Ljava/util/Set;
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -336,7 +328,6 @@
 
 .method private static isValidLogGroups(I)I
     .locals 5
-    .param p0    # I
 
     sget-object v0, Lcom/android/server/analytics/data/collection/LogCollectionManager;->LOG_GROUPS:[I
 
@@ -363,7 +354,6 @@
 
 .method private static logGroupCount(I)I
     .locals 6
-    .param p0    # I
 
     const/4 v1, 0x0
 
@@ -524,9 +514,6 @@
 # virtual methods
 .method public declared-synchronized disableLogCollection(Lcom/sec/analytics/data/collection/serviceif/IDataCollectionManagerCb;ILandroid/os/ParcelFileDescriptor;)V
     .locals 8
-    .param p1    # Lcom/sec/analytics/data/collection/serviceif/IDataCollectionManagerCb;
-    .param p2    # I
-    .param p3    # Landroid/os/ParcelFileDescriptor;
 
     monitor-enter p0
 
@@ -701,9 +688,6 @@
 
 .method public declared-synchronized enableLogCollection(Lcom/sec/analytics/data/collection/serviceif/IDataCollectionManagerCb;ILandroid/os/ParcelFileDescriptor;)V
     .locals 10
-    .param p1    # Lcom/sec/analytics/data/collection/serviceif/IDataCollectionManagerCb;
-    .param p2    # I
-    .param p3    # Landroid/os/ParcelFileDescriptor;
 
     monitor-enter p0
 
@@ -944,8 +928,6 @@
 
 .method public processLog(ILjava/lang/String;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/analytics/data/collection/LogCollectionManager;->getOutputStreams(I)Ljava/util/Set;
 

@@ -21,9 +21,6 @@
 # direct methods
 .method public constructor <init>(IILandroid/text/Spannable;)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/text/Spannable;
 
     const/4 v0, 0x0
 
@@ -66,7 +63,6 @@
 
 .method public resetWidth(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/ex/editstyledtext/EditStyledText$EditStyledTextSpans$HorizontalLineSpan;->mDrawable:Lcom/android/ex/editstyledtext/EditStyledText$EditStyledTextSpans$HorizontalLineDrawable;
 

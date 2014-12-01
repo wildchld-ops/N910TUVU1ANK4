@@ -39,7 +39,6 @@
 # virtual methods
 .method public onTime(J)V
     .locals 0
-    .param p1    # J
 
     return-void
 .end method

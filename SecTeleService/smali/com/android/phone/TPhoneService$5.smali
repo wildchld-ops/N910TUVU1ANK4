@@ -43,7 +43,7 @@
 
     iget-object v5, p0, Lcom/android/phone/TPhoneService$5;->this$0:Lcom/android/phone/TPhoneService;
 
-    invoke-virtual {v5}, Landroid/content/ContextWrapper;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {v5}, Lcom/android/phone/TPhoneService;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v0
 

@@ -181,7 +181,6 @@
 
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;)V
     .locals 1
-    .param p1    # Lcom/sec/android/app/camera/Camera;
 
     const/4 v0, 0x0
 
@@ -226,9 +225,6 @@
 
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;Lcom/sec/android/app/camera/subview/SubViewManager;I)V
     .locals 1
-    .param p1    # Lcom/sec/android/app/camera/Camera;
-    .param p2    # Lcom/sec/android/app/camera/subview/SubViewManager;
-    .param p3    # I
 
     invoke-direct {p0, p1, p2}, Lcom/sec/android/app/camera/subview/SubViewBase;-><init>(Lcom/sec/android/app/camera/Camera;Lcom/sec/android/app/camera/subview/SubViewManager;)V
 
@@ -269,7 +265,6 @@
 
 .method static synthetic access$000(Lcom/sec/android/app/camera/subview/SubViewEditableSideBar;)[Lcom/sec/android/glview/TwGLImage;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/subview/SubViewEditableSideBar;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/subview/SubViewEditableSideBar;->mAnchor:[Lcom/sec/android/glview/TwGLImage;
 
@@ -310,7 +305,6 @@
 
 .method private addEditableShortcut(Lcom/sec/android/app/camera/subview/SubViewEditableSideBar$ShortcutSet;)V
     .locals 1
-    .param p1    # Lcom/sec/android/app/camera/subview/SubViewEditableSideBar$ShortcutSet;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/subview/SubViewEditableSideBar;->mShortcutList:Ljava/util/ArrayList;
 
@@ -332,7 +326,6 @@
 
 .method private getDefaultCommandId(I)I
     .locals 2
-    .param p1    # I
 
     iget v0, p0, Lcom/sec/android/app/camera/subview/SubViewBase;->mCameraMode:I
 
@@ -542,8 +535,6 @@
 
 .method private setShortcutView(ILandroid/widget/ImageView;)V
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/widget/ImageView;
 
     iget-object v2, p0, Lcom/sec/android/app/camera/subview/SubViewEditableSideBar;->mShortcutList:Ljava/util/ArrayList;
 
@@ -654,9 +645,6 @@
 
 .method private setShortcutView(ILandroid/widget/ImageView;Z)V
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/widget/ImageView;
-    .param p3    # Z
 
     iget-object v2, p0, Lcom/sec/android/app/camera/subview/SubViewEditableSideBar;->mShortcutList:Ljava/util/ArrayList;
 
@@ -993,7 +981,6 @@
 
 .method public getIndexByView(Landroid/widget/ImageView;)I
     .locals 4
-    .param p1    # Landroid/widget/ImageView;
 
     const/4 v2, -0x1
 
@@ -1052,7 +1039,6 @@
 
 .method protected getSelectedCommandId(I)I
     .locals 6
-    .param p1    # I
 
     iget-object v3, p0, Lcom/sec/android/app/camera/subview/SubViewBase;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -1143,7 +1129,6 @@
 
 .method public getTitleIdByIndex(I)I
     .locals 5
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -1308,7 +1293,6 @@
 
 .method public getViewByCmdId(I)Landroid/widget/ImageView;
     .locals 4
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -1522,7 +1506,6 @@
 
 .method public handleDimButtons(Z)V
     .locals 6
-    .param p1    # Z
 
     iget-object v3, p0, Lcom/sec/android/app/camera/subview/SubViewEditableSideBar;->mShortcutList:Ljava/util/ArrayList;
 
@@ -1724,7 +1707,6 @@
 
 .method public indexOf(I)I
     .locals 5
-    .param p1    # I
 
     const/4 v1, -0x1
 
@@ -2665,8 +2647,6 @@
 
 .method public setAnchor(ILcom/sec/android/glview/TwGLImage;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Lcom/sec/android/glview/TwGLImage;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/subview/SubViewEditableSideBar;->mAnchor:[Lcom/sec/android/glview/TwGLImage;
 
@@ -2720,8 +2700,6 @@
 
 .method public setEditableShortcut(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget-object v1, p0, Lcom/sec/android/app/camera/subview/SubViewEditableSideBar;->mShortcutList:Ljava/util/ArrayList;
 
@@ -2767,8 +2745,6 @@
 
 .method public setEditableShortcut(ILcom/sec/android/app/camera/subview/SubViewEditableSideBar$ShortcutSet;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Lcom/sec/android/app/camera/subview/SubViewEditableSideBar$ShortcutSet;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/subview/SubViewEditableSideBar;->mShortcutList:Ljava/util/ArrayList;
 
@@ -2804,8 +2780,6 @@
 
 .method public setImageResourceByCmdId(Landroid/widget/ImageView;I)V
     .locals 10
-    .param p1    # Landroid/widget/ImageView;
-    .param p2    # I
 
     iget-object v5, p0, Lcom/sec/android/app/camera/subview/SubViewBase;->mResourceIDMap:Lcom/sec/android/app/camera/subview/SubViewResourceIDMap;
 
@@ -4054,7 +4028,6 @@
 
 .method public updateShortcutButton(I)V
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/sec/android/app/camera/subview/SubViewEditableSideBar;->getViewByCmdId(I)Landroid/widget/ImageView;
 

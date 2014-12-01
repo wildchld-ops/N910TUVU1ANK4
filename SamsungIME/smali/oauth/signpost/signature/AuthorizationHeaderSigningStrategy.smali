@@ -23,9 +23,6 @@
 # virtual methods
 .method public writeSignature(Ljava/lang/String;Loauth/signpost/http/HttpRequest;Loauth/signpost/http/HttpParameters;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Loauth/signpost/http/HttpRequest;
-    .param p3    # Loauth/signpost/http/HttpParameters;
 
     new-instance v1, Ljava/lang/StringBuilder;
 

@@ -14,8 +14,6 @@
 
 .method public static setShowAsAction(Landroid/view/MenuItem;I)V
     .locals 0
-    .param p0    # Landroid/view/MenuItem;
-    .param p1    # I
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 

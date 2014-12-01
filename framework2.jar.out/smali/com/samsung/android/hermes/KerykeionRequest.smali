@@ -128,7 +128,6 @@
 
 .method public readFromParcel(Landroid/os/Parcel;)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
@@ -173,8 +172,6 @@
 
 .method public setRequestData(ILjava/util/List;I)V
     .locals 4
-    .param p1    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -225,9 +222,6 @@
 
 .method public setRequestData(ILjava/util/List;ILcom/samsung/android/hermes/object/HermesObject;)V
     .locals 4
-    .param p1    # I
-    .param p3    # I
-    .param p4    # Lcom/samsung/android/hermes/object/HermesObject;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -285,8 +279,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget v0, p0, Lcom/samsung/android/hermes/KerykeionRequest;->nType:I
 

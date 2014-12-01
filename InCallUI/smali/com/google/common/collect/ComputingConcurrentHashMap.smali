@@ -46,7 +46,6 @@
 # direct methods
 .method constructor <init>(Lcom/google/common/collect/MapMaker;Lcom/google/common/base/Function;)V
     .locals 1
-    .param p1    # Lcom/google/common/collect/MapMaker;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -73,8 +72,6 @@
 # virtual methods
 .method createSegment(II)Lcom/google/common/collect/MapMakerInternalMap$Segment;
     .locals 1
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II)",
@@ -127,7 +124,6 @@
 
 .method segmentFor(I)Lcom/google/common/collect/ComputingConcurrentHashMap$ComputingSegment;
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -147,7 +143,6 @@
 
 .method bridge synthetic segmentFor(I)Lcom/google/common/collect/MapMakerInternalMap$Segment;
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/google/common/collect/ComputingConcurrentHashMap;->segmentFor(I)Lcom/google/common/collect/ComputingConcurrentHashMap$ComputingSegment;
 

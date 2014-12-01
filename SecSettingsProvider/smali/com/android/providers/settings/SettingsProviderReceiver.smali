@@ -35,8 +35,6 @@
 # virtual methods
 .method public deleteDatabasetoReset(Landroid/content/Context;I)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     iget-object v2, p0, Lcom/android/providers/settings/SettingsProviderReceiver;->mOpenHelpers:Landroid/util/SparseArray;
 
@@ -72,8 +70,6 @@
 
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 

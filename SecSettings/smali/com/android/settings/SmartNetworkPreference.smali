@@ -10,7 +10,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -23,8 +22,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/preference/CheckBoxPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -37,7 +34,6 @@
 
 .method private showGuideDialog(Landroid/content/Context;)V
     .locals 8
-    .param p1    # Landroid/content/Context;
 
     const/4 v7, 0x0
 
@@ -129,7 +125,6 @@
 # virtual methods
 .method public checkSmartNetwork(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     invoke-virtual {p0, p1}, Lcom/android/settings/SmartNetworkPreference;->shouldShowGuideDialog(Landroid/content/Context;)Z
 
@@ -172,7 +167,6 @@
 
 .method public disableGuideDialog(Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     invoke-static {p1}, Landroid/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -195,7 +189,6 @@
 
 .method public shouldShowGuideDialog(Landroid/content/Context;)Z
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     const/4 v1, 0x1
 
@@ -216,7 +209,6 @@
 
 .method public toggleValue(Landroid/content/Context;)V
     .locals 8
-    .param p1    # Landroid/content/Context;
 
     const/4 v3, 0x1
 
@@ -319,7 +311,6 @@
 
 .method public updateSmartNetworkPreference(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 

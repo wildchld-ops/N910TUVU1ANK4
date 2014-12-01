@@ -16,8 +16,6 @@
 # direct methods
 .method public constructor <init>(Landroid/graphics/Bitmap;[B)V
     .locals 1
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # [B
 
     const/4 v0, 0x0
 
@@ -28,9 +26,6 @@
 
 .method public constructor <init>(Landroid/graphics/Bitmap;[BLjava/lang/String;)V
     .locals 1
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # [B
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -55,7 +50,6 @@
 
 .method public constructor <init>(Landroid/graphics/NinePatch;)V
     .locals 2
-    .param p1    # Landroid/graphics/NinePatch;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -109,8 +103,6 @@
 # virtual methods
 .method public draw(Landroid/graphics/Canvas;Landroid/graphics/Rect;)V
     .locals 1
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # Landroid/graphics/Rect;
 
     iget-object v0, p0, Landroid/graphics/NinePatch;->mPaint:Landroid/graphics/Paint;
 
@@ -121,9 +113,6 @@
 
 .method public draw(Landroid/graphics/Canvas;Landroid/graphics/Rect;Landroid/graphics/Paint;)V
     .locals 0
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # Landroid/graphics/Rect;
-    .param p3    # Landroid/graphics/Paint;
 
     invoke-virtual {p1, p0, p2, p3}, Landroid/graphics/Canvas;->drawPatch(Landroid/graphics/NinePatch;Landroid/graphics/Rect;Landroid/graphics/Paint;)V
 
@@ -132,8 +121,6 @@
 
 .method public draw(Landroid/graphics/Canvas;Landroid/graphics/RectF;)V
     .locals 1
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # Landroid/graphics/RectF;
 
     iget-object v0, p0, Landroid/graphics/NinePatch;->mPaint:Landroid/graphics/Paint;
 
@@ -144,9 +131,6 @@
 
 .method drawSoftware(Landroid/graphics/Canvas;Landroid/graphics/Rect;Landroid/graphics/Paint;)V
     .locals 7
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # Landroid/graphics/Rect;
-    .param p3    # Landroid/graphics/Paint;
 
     iget v0, p1, Landroid/graphics/Canvas;->mNativeCanvas:I
 
@@ -183,9 +167,6 @@
 
 .method drawSoftware(Landroid/graphics/Canvas;Landroid/graphics/RectF;Landroid/graphics/Paint;)V
     .locals 7
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # Landroid/graphics/RectF;
-    .param p3    # Landroid/graphics/Paint;
 
     iget v0, p1, Landroid/graphics/Canvas;->mNativeCanvas:I
 
@@ -295,7 +276,6 @@
 
 .method public final getTransparentRegion(Landroid/graphics/Rect;)Landroid/graphics/Region;
     .locals 3
-    .param p1    # Landroid/graphics/Rect;
 
     iget-object v1, p0, Landroid/graphics/NinePatch;->mBitmap:Landroid/graphics/Bitmap;
 
@@ -350,7 +330,6 @@
 
 .method public setPaint(Landroid/graphics/Paint;)V
     .locals 0
-    .param p1    # Landroid/graphics/Paint;
 
     iput-object p1, p0, Landroid/graphics/NinePatch;->mPaint:Landroid/graphics/Paint;
 

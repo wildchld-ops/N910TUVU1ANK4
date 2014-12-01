@@ -37,7 +37,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Landroid/app/enterprise/lso/ILockscreenOverlay$Stub;-><init>()V
 
@@ -173,7 +172,6 @@
 
 .method private declared-synchronized deleteFiles(I)V
     .locals 6
-    .param p1    # I
 
     monitor-enter p0
 
@@ -315,7 +313,6 @@
 
 .method private enforceOwnerOnlyPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/lso/LSOService;->getEDM()Landroid/app/enterprise/EnterpriseDeviceManager;
 
@@ -332,7 +329,6 @@
 
 .method private enforcePermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/lso/LSOService;->getEDM()Landroid/app/enterprise/EnterpriseDeviceManager;
 
@@ -412,8 +408,6 @@
 # virtual methods
 .method public canConfigure(Landroid/app/enterprise/ContextInfo;I)Z
     .locals 9
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -570,10 +564,6 @@
 
 .method public declared-synchronized copyFile(Ljava/lang/String;Ljava/lang/String;II)Ljava/lang/String;
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
 
     monitor-enter p0
 
@@ -640,9 +630,6 @@
 
 .method public declared-synchronized copyFiles(ILandroid/app/enterprise/lso/LSOItemData;I)Z
     .locals 7
-    .param p1    # I
-    .param p2    # Landroid/app/enterprise/lso/LSOItemData;
-    .param p3    # I
 
     const/4 v4, 0x0
 
@@ -817,9 +804,6 @@
 
 .method public declared-synchronized copyFiles(Landroid/app/enterprise/lso/LSOItemData;Ljava/lang/String;I)Z
     .locals 13
-    .param p1    # Landroid/app/enterprise/lso/LSOItemData;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     monitor-enter p0
 
@@ -1047,8 +1031,6 @@
 
 .method public getData(Landroid/app/enterprise/ContextInfo;I)Landroid/app/enterprise/lso/LSOItemData;
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1088,7 +1070,6 @@
 
 .method public getPreferences(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/lso/LSOAttributeSet;
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     iget-object v0, p0, Lcom/android/server/enterprise/lso/LSOService;->lsoPref:Landroid/app/enterprise/lso/LSOAttributeSet;
 
@@ -1097,8 +1078,6 @@
 
 .method public isConfigured(Landroid/app/enterprise/ContextInfo;I)Z
     .locals 8
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1203,21 +1182,18 @@
 
 .method public onAdminAdded(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onAdminRemoved(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onPreAdminRemoval(I)V
     .locals 5
-    .param p1    # I
 
     const/4 v4, 0x0
 
@@ -1273,8 +1249,6 @@
 
 .method public resetData(Landroid/app/enterprise/ContextInfo;I)V
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1414,7 +1388,6 @@
 
 .method public resetWallpaper(Landroid/app/enterprise/ContextInfo;)V
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1480,9 +1453,6 @@
 
 .method public declared-synchronized setData(Landroid/app/enterprise/ContextInfo;Landroid/app/enterprise/lso/LSOItemData;I)I
     .locals 11
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Landroid/app/enterprise/lso/LSOItemData;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1667,8 +1637,6 @@
 
 .method public setPreferences(Landroid/app/enterprise/ContextInfo;Landroid/app/enterprise/lso/LSOAttributeSet;)I
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Landroid/app/enterprise/lso/LSOAttributeSet;
 
     const/4 v2, -0x1
 
@@ -1748,8 +1716,6 @@
 
 .method public setWallpaper(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)I
     .locals 11
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

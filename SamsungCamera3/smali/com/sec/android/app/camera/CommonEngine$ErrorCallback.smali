@@ -42,8 +42,6 @@
 # virtual methods
 .method public onError(ILcom/sec/android/seccamera/SecCamera;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Lcom/sec/android/seccamera/SecCamera;
 
     const/4 v4, 0x1
 

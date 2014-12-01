@@ -17,7 +17,6 @@
 
 .method private static crunch(Ljava/lang/StringBuilder;)V
     .locals 5
-    .param p0    # Ljava/lang/StringBuilder;
 
     const/16 v4, 0x20
 
@@ -116,7 +115,6 @@
 
 .method public static tokenize(Ljava/lang/CharSequence;Ljava/util/Collection;)V
     .locals 11
-    .param p0    # Ljava/lang/CharSequence;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -484,7 +482,6 @@
 
 .method public static tokenize(Ljava/lang/CharSequence;)[Landroid/text/util/Rfc822Token;
     .locals 2
-    .param p0    # Ljava/lang/CharSequence;
 
     new-instance v0, Ljava/util/ArrayList;
 
@@ -511,8 +508,6 @@
 # virtual methods
 .method public findTokenEnd(Ljava/lang/CharSequence;I)I
     .locals 8
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
 
     const/16 v7, 0x5c
 
@@ -665,8 +660,6 @@
 
 .method public findTokenStart(Ljava/lang/CharSequence;I)I
     .locals 4
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -712,7 +705,6 @@
 
 .method public terminateToken(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
     .locals 2
-    .param p1    # Ljava/lang/CharSequence;
 
     new-instance v0, Ljava/lang/StringBuilder;
 

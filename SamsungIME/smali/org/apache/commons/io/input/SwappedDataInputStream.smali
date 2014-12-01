@@ -9,7 +9,6 @@
 # direct methods
 .method public constructor <init>(Ljava/io/InputStream;)V
     .locals 0
-    .param p1    # Ljava/io/InputStream;
 
     invoke-direct {p0, p1}, Lorg/apache/commons/io/input/ProxyInputStream;-><init>(Ljava/io/InputStream;)V
 
@@ -120,7 +119,6 @@
 
 .method public readFully([B)V
     .locals 2
-    .param p1    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -139,9 +137,6 @@
 
 .method public readFully([BII)V
     .locals 4
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -309,7 +304,6 @@
 
 .method public skipBytes(I)I
     .locals 3
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,

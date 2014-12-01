@@ -37,13 +37,6 @@
 # direct methods
 .method constructor <init>(Lcom/sec/android/app/shootingmodemanager/views/ShootingModeGridView;Landroid/view/View;IIIIII)V
     .locals 10
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
 
     iput-object p1, p0, Lcom/sec/android/app/shootingmodemanager/views/ShootingModeGridView$TransformAnimation;->this$0:Lcom/sec/android/app/shootingmodemanager/views/ShootingModeGridView;
 
@@ -128,7 +121,6 @@
 
 .method static synthetic access$1600(Lcom/sec/android/app/shootingmodemanager/views/ShootingModeGridView$TransformAnimation;)V
     .locals 0
-    .param p0    # Lcom/sec/android/app/shootingmodemanager/views/ShootingModeGridView$TransformAnimation;
 
     invoke-direct {p0}, Lcom/sec/android/app/shootingmodemanager/views/ShootingModeGridView$TransformAnimation;->startAnimation()V
 

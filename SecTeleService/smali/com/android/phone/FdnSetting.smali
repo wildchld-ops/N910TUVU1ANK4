@@ -130,7 +130,7 @@
     .locals 1
     .param p0    # Lcom/android/phone/FdnSetting;
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/FdnSetting;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -150,7 +150,7 @@
     .locals 1
     .param p0    # Lcom/android/phone/FdnSetting;
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/FdnSetting;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -170,7 +170,7 @@
     .locals 1
     .param p0    # Lcom/android/phone/FdnSetting;
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/FdnSetting;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -191,7 +191,7 @@
     .locals 1
     .param p0    # Lcom/android/phone/FdnSetting;
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/FdnSetting;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -221,7 +221,7 @@
     .locals 1
     .param p0    # Lcom/android/phone/FdnSetting;
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/FdnSetting;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -316,7 +316,7 @@
     .locals 1
     .param p0    # Lcom/android/phone/FdnSetting;
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/FdnSetting;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -327,11 +327,11 @@
     .locals 3
     .param p1    # I
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/FdnSetting;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    invoke-virtual {p0, p1}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, p1}, Lcom/android/phone/FdnSetting;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -392,7 +392,7 @@
 
     aget v3, v3, v5
 
-    invoke-virtual {p0, v3}, Landroid/app/Fragment;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v3}, Lcom/android/phone/FdnSetting;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v0
 
@@ -403,7 +403,7 @@
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-virtual {p0, v1}, Landroid/app/Fragment;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v1}, Lcom/android/phone/FdnSetting;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v5
 
@@ -425,7 +425,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v3, v4}, Landroid/preference/DialogPreference;->setDialogMessage(Ljava/lang/CharSequence;)V
+    invoke-virtual {v3, v4}, Lcom/android/phone/EditPinPreference;->setDialogMessage(Ljava/lang/CharSequence;)V
 
     :goto_2
     iput p1, p0, Lcom/android/phone/FdnSetting;->mStrng_id:I
@@ -474,7 +474,7 @@
 
     aget v3, v3, v6
 
-    invoke-virtual {p0, v3}, Landroid/app/Fragment;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v3}, Lcom/android/phone/FdnSetting;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v3
 
@@ -493,7 +493,7 @@
 
     iget-object v3, p0, Lcom/android/phone/FdnSetting;->mButtonChangePin2:Lcom/android/phone/EditPinPreference;
 
-    invoke-virtual {v3, v1}, Landroid/preference/DialogPreference;->setDialogMessage(I)V
+    invoke-virtual {v3, v1}, Lcom/android/phone/EditPinPreference;->setDialogMessage(I)V
 
     goto :goto_2
 
@@ -524,7 +524,7 @@
 
     move-result-object v4
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/FdnSetting;->getResources()Landroid/content/res/Resources;
 
     move-result-object v5
 
@@ -544,7 +544,7 @@
 
     iget-object v3, p0, Lcom/android/phone/FdnSetting;->mButtonChangePin2:Lcom/android/phone/EditPinPreference;
 
-    invoke-virtual {v3, v7}, Landroid/preference/DialogPreference;->setDialogMessage(I)V
+    invoke-virtual {v3, v7}, Lcom/android/phone/EditPinPreference;->setDialogMessage(I)V
 
     goto :goto_2
 
@@ -557,7 +557,7 @@
 
     aget v3, v3, v5
 
-    invoke-virtual {p0, v3}, Landroid/app/Fragment;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v3}, Lcom/android/phone/FdnSetting;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v0
 
@@ -568,7 +568,7 @@
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-virtual {p0, v1}, Landroid/app/Fragment;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v1}, Lcom/android/phone/FdnSetting;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v5
 
@@ -590,7 +590,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v3, v4}, Landroid/preference/DialogPreference;->setDialogMessage(Ljava/lang/CharSequence;)V
+    invoke-virtual {v3, v4}, Lcom/android/phone/EditPinPreference;->setDialogMessage(Ljava/lang/CharSequence;)V
 
     goto/16 :goto_2
 
@@ -609,7 +609,7 @@
 
     aget v3, v3, v6
 
-    invoke-virtual {p0, v3}, Landroid/app/Fragment;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v3}, Lcom/android/phone/FdnSetting;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v3
 
@@ -628,7 +628,7 @@
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-virtual {p0, v1}, Landroid/app/Fragment;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v1}, Lcom/android/phone/FdnSetting;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v5
 
@@ -642,7 +642,7 @@
 
     move-result-object v4
 
-    invoke-virtual {p0, p1}, Landroid/app/Fragment;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, p1}, Lcom/android/phone/FdnSetting;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v5
 
@@ -654,7 +654,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v3, v4}, Landroid/preference/DialogPreference;->setDialogMessage(Ljava/lang/CharSequence;)V
+    invoke-virtual {v3, v4}, Lcom/android/phone/EditPinPreference;->setDialogMessage(Ljava/lang/CharSequence;)V
 
     goto/16 :goto_2
 
@@ -712,11 +712,11 @@
 
     iget-object v0, p0, Lcom/android/phone/FdnSetting;->mButtonEnableFDN:Lcom/android/phone/EditPinPreference;
 
-    invoke-virtual {v0, v2}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v0, v2}, Lcom/android/phone/EditPinPreference;->setEnabled(Z)V
 
     iget-object v0, p0, Lcom/android/phone/FdnSetting;->mButtonFDNList:Landroid/preference/PreferenceScreen;
 
-    invoke-virtual {v0, v2}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v0, v2}, Landroid/preference/PreferenceScreen;->setEnabled(Z)V
 
     iput-boolean v3, p0, Lcom/android/phone/FdnSetting;->mpukState:Z
 
@@ -724,7 +724,7 @@
 
     const v1, 0x7f090185
 
-    invoke-virtual {v0, v1}, Landroid/preference/Preference;->setTitle(I)V
+    invoke-virtual {v0, v1}, Lcom/android/phone/EditPinPreference;->setTitle(I)V
 
     const-string v0, "feature_chn_duos"
 
@@ -742,14 +742,14 @@
 
     const v1, 0x7f090187
 
-    invoke-virtual {v0, v1}, Landroid/preference/Preference;->setSummary(I)V
+    invoke-virtual {v0, v1}, Lcom/android/phone/EditPinPreference;->setSummary(I)V
 
     :goto_0
     const/4 v0, 0x3
 
     invoke-direct {p0, v0, v2}, Lcom/android/phone/FdnSetting;->displayPinChangeDialog(IZ)V
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/FdnSetting;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -772,7 +772,7 @@
 
     const v1, 0x7f090186
 
-    invoke-virtual {v0, v1}, Landroid/preference/Preference;->setSummary(I)V
+    invoke-virtual {v0, v1}, Lcom/android/phone/EditPinPreference;->setSummary(I)V
 
     goto :goto_0
 .end method
@@ -808,7 +808,7 @@
 
     aget v3, v3, v6
 
-    invoke-virtual {p0, v3}, Landroid/app/Fragment;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v3}, Lcom/android/phone/FdnSetting;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v0
 
@@ -821,7 +821,7 @@
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-virtual {p0, v1}, Landroid/app/Fragment;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v1}, Lcom/android/phone/FdnSetting;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v5
 
@@ -843,7 +843,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v3, v4}, Landroid/preference/DialogPreference;->setDialogMessage(Ljava/lang/CharSequence;)V
+    invoke-virtual {v3, v4}, Lcom/android/phone/EditPinPreference;->setDialogMessage(Ljava/lang/CharSequence;)V
 
     return-void
 
@@ -852,7 +852,7 @@
 
     aget v3, v3, v5
 
-    invoke-virtual {p0, v3}, Landroid/app/Fragment;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v3}, Lcom/android/phone/FdnSetting;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v3
 
@@ -912,7 +912,7 @@
     :cond_0
     iget-object v6, p0, Lcom/android/phone/FdnSetting;->mButtonEnableFDN:Lcom/android/phone/EditPinPreference;
 
-    invoke-virtual {v6}, Landroid/preference/EditTextPreference;->getText()Ljava/lang/String;
+    invoke-virtual {v6}, Lcom/android/phone/EditPinPreference;->getText()Ljava/lang/String;
 
     move-result-object v4
 
@@ -972,7 +972,7 @@
 
     aget v6, v6, v8
 
-    invoke-virtual {p0, v6}, Landroid/app/Fragment;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v6}, Lcom/android/phone/FdnSetting;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v0
 
@@ -985,7 +985,7 @@
 
     invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-virtual {p0, v2}, Landroid/app/Fragment;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v2}, Lcom/android/phone/FdnSetting;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v8
 
@@ -1007,13 +1007,13 @@
 
     move-result-object v7
 
-    invoke-virtual {v6, v7}, Landroid/preference/DialogPreference;->setDialogMessage(Ljava/lang/CharSequence;)V
+    invoke-virtual {v6, v7}, Lcom/android/phone/EditPinPreference;->setDialogMessage(Ljava/lang/CharSequence;)V
 
     iget-object v6, p0, Lcom/android/phone/FdnSetting;->mButtonEnableFDN:Lcom/android/phone/EditPinPreference;
 
     const-string v7, ""
 
-    invoke-virtual {v6, v7}, Landroid/preference/EditTextPreference;->setText(Ljava/lang/String;)V
+    invoke-virtual {v6, v7}, Lcom/android/phone/EditPinPreference;->setText(Ljava/lang/String;)V
 
     goto :goto_0
 
@@ -1034,7 +1034,7 @@
 
     aget v6, v6, v7
 
-    invoke-virtual {p0, v6}, Landroid/app/Fragment;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v6}, Lcom/android/phone/FdnSetting;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v6
 
@@ -1076,19 +1076,19 @@
 
     const v1, 0x7f090140
 
-    invoke-virtual {v0, v1}, Landroid/preference/Preference;->setTitle(I)V
+    invoke-virtual {v0, v1}, Lcom/android/phone/EditPinPreference;->setTitle(I)V
 
     iget-object v0, p0, Lcom/android/phone/FdnSetting;->mButtonEnableFDN:Lcom/android/phone/EditPinPreference;
 
     const v1, 0x7f09013b
 
-    invoke-virtual {v0, v1}, Landroid/preference/Preference;->setSummary(I)V
+    invoke-virtual {v0, v1}, Lcom/android/phone/EditPinPreference;->setSummary(I)V
 
     iget-object v0, p0, Lcom/android/phone/FdnSetting;->mButtonEnableFDN:Lcom/android/phone/EditPinPreference;
 
     const v1, 0x7f09013e
 
-    invoke-virtual {v0, v1}, Landroid/preference/DialogPreference;->setDialogTitle(I)V
+    invoke-virtual {v0, v1}, Lcom/android/phone/EditPinPreference;->setDialogTitle(I)V
 
     invoke-direct {p0}, Lcom/android/phone/FdnSetting;->resetPinChangeState()V
 
@@ -1113,7 +1113,7 @@
 
     if-ne v0, v2, :cond_1
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/FdnSetting;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -1127,7 +1127,7 @@
     return-void
 
     :cond_1
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/FdnSetting;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -1144,19 +1144,19 @@
 
     const v1, 0x7f090141
 
-    invoke-virtual {v0, v1}, Landroid/preference/Preference;->setTitle(I)V
+    invoke-virtual {v0, v1}, Lcom/android/phone/EditPinPreference;->setTitle(I)V
 
     iget-object v0, p0, Lcom/android/phone/FdnSetting;->mButtonEnableFDN:Lcom/android/phone/EditPinPreference;
 
     const v1, 0x7f09013c
 
-    invoke-virtual {v0, v1}, Landroid/preference/Preference;->setSummary(I)V
+    invoke-virtual {v0, v1}, Lcom/android/phone/EditPinPreference;->setSummary(I)V
 
     iget-object v0, p0, Lcom/android/phone/FdnSetting;->mButtonEnableFDN:Lcom/android/phone/EditPinPreference;
 
     const v1, 0x7f09013d
 
-    invoke-virtual {v0, v1}, Landroid/preference/DialogPreference;->setDialogTitle(I)V
+    invoke-virtual {v0, v1}, Lcom/android/phone/EditPinPreference;->setDialogTitle(I)V
 
     invoke-direct {p0}, Lcom/android/phone/FdnSetting;->resetPinChangeState()V
 
@@ -1181,7 +1181,7 @@
 
     if-ne v0, v2, :cond_4
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/FdnSetting;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -1194,7 +1194,7 @@
     goto :goto_0
 
     :cond_4
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/FdnSetting;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -1255,7 +1255,7 @@
     :pswitch_0
     iget-object v1, p0, Lcom/android/phone/FdnSetting;->mButtonChangePin2:Lcom/android/phone/EditPinPreference;
 
-    invoke-virtual {v1}, Landroid/preference/EditTextPreference;->getText()Ljava/lang/String;
+    invoke-virtual {v1}, Lcom/android/phone/EditPinPreference;->getText()Ljava/lang/String;
 
     move-result-object v1
 
@@ -1265,7 +1265,7 @@
 
     const-string v2, ""
 
-    invoke-virtual {v1, v2}, Landroid/preference/EditTextPreference;->setText(Ljava/lang/String;)V
+    invoke-virtual {v1, v2}, Lcom/android/phone/EditPinPreference;->setText(Ljava/lang/String;)V
 
     iget-boolean v1, p0, Lcom/android/phone/FdnSetting;->mSkipOldPin:Z
 
@@ -1297,7 +1297,7 @@
 
     invoke-interface {v1, v2, v3, v0}, Lcom/android/internal/telephony/IccCard;->supplyPuk2(Ljava/lang/String;Ljava/lang/String;Landroid/os/Message;)V
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/FdnSetting;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
@@ -1310,7 +1310,7 @@
     :pswitch_1
     iget-object v1, p0, Lcom/android/phone/FdnSetting;->mButtonChangePin2:Lcom/android/phone/EditPinPreference;
 
-    invoke-virtual {v1}, Landroid/preference/EditTextPreference;->getText()Ljava/lang/String;
+    invoke-virtual {v1}, Lcom/android/phone/EditPinPreference;->getText()Ljava/lang/String;
 
     move-result-object v1
 
@@ -1320,7 +1320,7 @@
 
     const-string v2, ""
 
-    invoke-virtual {v1, v2}, Landroid/preference/EditTextPreference;->setText(Ljava/lang/String;)V
+    invoke-virtual {v1, v2}, Lcom/android/phone/EditPinPreference;->setText(Ljava/lang/String;)V
 
     iget-object v1, p0, Lcom/android/phone/FdnSetting;->mOldPin:Ljava/lang/String;
 
@@ -1344,7 +1344,7 @@
     :pswitch_2
     iget-object v1, p0, Lcom/android/phone/FdnSetting;->mButtonChangePin2:Lcom/android/phone/EditPinPreference;
 
-    invoke-virtual {v1}, Landroid/preference/EditTextPreference;->getText()Ljava/lang/String;
+    invoke-virtual {v1}, Lcom/android/phone/EditPinPreference;->getText()Ljava/lang/String;
 
     move-result-object v1
 
@@ -1354,7 +1354,7 @@
 
     const-string v2, ""
 
-    invoke-virtual {v1, v2}, Landroid/preference/EditTextPreference;->setText(Ljava/lang/String;)V
+    invoke-virtual {v1, v2}, Lcom/android/phone/EditPinPreference;->setText(Ljava/lang/String;)V
 
     iget-object v1, p0, Lcom/android/phone/FdnSetting;->mNewPin:Ljava/lang/String;
 
@@ -1382,7 +1382,7 @@
 
     iget-object v2, p0, Lcom/android/phone/FdnSetting;->mButtonChangePin2:Lcom/android/phone/EditPinPreference;
 
-    invoke-virtual {v2}, Landroid/preference/EditTextPreference;->getText()Ljava/lang/String;
+    invoke-virtual {v2}, Lcom/android/phone/EditPinPreference;->getText()Ljava/lang/String;
 
     move-result-object v2
 
@@ -1398,7 +1398,7 @@
 
     const-string v2, ""
 
-    invoke-virtual {v1, v2}, Landroid/preference/EditTextPreference;->setText(Ljava/lang/String;)V
+    invoke-virtual {v1, v2}, Lcom/android/phone/EditPinPreference;->setText(Ljava/lang/String;)V
 
     const v1, 0x7f09017a
 
@@ -1411,7 +1411,7 @@
 
     const-string v2, ""
 
-    invoke-virtual {v1, v2}, Landroid/preference/EditTextPreference;->setText(Ljava/lang/String;)V
+    invoke-virtual {v1, v2}, Lcom/android/phone/EditPinPreference;->setText(Ljava/lang/String;)V
 
     iget-boolean v1, p0, Lcom/android/phone/FdnSetting;->mSkipOldPin:Z
 
@@ -1456,7 +1456,7 @@
 
     invoke-interface {v1, v2, v3, v0}, Lcom/android/internal/telephony/IccCard;->supplyPuk2(Ljava/lang/String;Ljava/lang/String;Landroid/os/Message;)V
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/FdnSetting;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
@@ -1636,13 +1636,13 @@
 
     invoke-super {p0, p1}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/FdnSetting;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
 
     if-eqz v3, :cond_0
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/FdnSetting;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
 
@@ -1652,7 +1652,7 @@
 
     if-eqz v3, :cond_0
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/FdnSetting;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
 
@@ -1667,7 +1667,7 @@
     :cond_0
     const v3, 0x7f060020
 
-    invoke-virtual {p0, v3}, Landroid/preference/PreferenceFragment;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v3}, Lcom/android/phone/FdnSetting;->addPreferencesFromResource(I)V
 
     const-string v3, "feature_multisim"
 
@@ -1677,7 +1677,7 @@
 
     if-eqz v3, :cond_3
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getArguments()Landroid/os/Bundle;
+    invoke-virtual {p0}, Lcom/android/phone/FdnSetting;->getArguments()Landroid/os/Bundle;
 
     move-result-object v1
 
@@ -1725,7 +1725,7 @@
     iput-object v3, p0, Lcom/android/phone/FdnSetting;->mPhone:Lcom/android/internal/telephony/Phone;
 
     :goto_1
-    invoke-virtual {p0}, Landroid/preference/PreferenceFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/phone/FdnSetting;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v2
 
@@ -1733,7 +1733,7 @@
 
     const-string v3, "button_fdn_enable_key"
 
-    invoke-virtual {v2, v3}, Landroid/preference/PreferenceGroup;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {v2, v3}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v3
 
@@ -1743,7 +1743,7 @@
 
     const-string v3, "button_change_pin2_key"
 
-    invoke-virtual {v2, v3}, Landroid/preference/PreferenceGroup;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {v2, v3}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v3
 
@@ -1753,7 +1753,7 @@
 
     const-string v3, "button_fdn_list_key"
 
-    invoke-virtual {v2, v3}, Landroid/preference/PreferenceGroup;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {v2, v3}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v3
 
@@ -1774,7 +1774,7 @@
     invoke-direct {p0}, Lcom/android/phone/FdnSetting;->resetPinChangeState()V
 
     :goto_2
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getActionBar()Landroid/app/ActionBar;
+    invoke-virtual {p0}, Lcom/android/phone/FdnSetting;->getActionBar()Landroid/app/ActionBar;
 
     move-result-object v0
 
@@ -1862,7 +1862,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v3, v4}, Landroid/preference/EditTextPreference;->setText(Ljava/lang/String;)V
+    invoke-virtual {v3, v4}, Lcom/android/phone/EditPinPreference;->setText(Ljava/lang/String;)V
 
     invoke-direct {p0}, Lcom/android/phone/FdnSetting;->setEnableFDNDialogMessage()V
 
@@ -1882,7 +1882,7 @@
 
     const v4, 0x7f09013e
 
-    invoke-virtual {v3, v4}, Landroid/preference/DialogPreference;->setDialogTitle(I)V
+    invoke-virtual {v3, v4}, Lcom/android/phone/EditPinPreference;->setDialogTitle(I)V
 
     goto :goto_2
 
@@ -1891,7 +1891,7 @@
 
     const v4, 0x7f09013d
 
-    invoke-virtual {v3, v4}, Landroid/preference/DialogPreference;->setDialogTitle(I)V
+    invoke-virtual {v3, v4}, Lcom/android/phone/EditPinPreference;->setDialogTitle(I)V
 
     goto :goto_2
 .end method
@@ -1916,7 +1916,7 @@
     .param p1    # Lcom/android/phone/EditPinPreference;
     .param p2    # Z
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/FdnSetting;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -1971,7 +1971,7 @@
     invoke-direct {p0}, Lcom/android/phone/FdnSetting;->setEnableFDNDialogMessage()V
 
     :cond_0
-    invoke-super {p0, p1, p2}, Landroid/preference/PreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
+    invoke-super {p0, p1, p2}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
 
     move-result v0
 
@@ -2098,7 +2098,7 @@
     :cond_1
     new-instance v1, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/FdnSetting;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -2114,7 +2114,7 @@
 
     const v2, 0x7f09007c
 
-    invoke-virtual {p0, v2}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v2}, Lcom/android/phone/FdnSetting;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2122,7 +2122,7 @@
 
     const v2, 0x7f09018b
 
-    invoke-virtual {p0, v2}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v2}, Lcom/android/phone/FdnSetting;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2195,7 +2195,7 @@
     .locals 2
     .param p1    # Landroid/os/Bundle;
 
-    invoke-super {p0, p1}, Landroid/preference/PreferenceFragment;->onSaveInstanceState(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onSaveInstanceState(Landroid/os/Bundle;)V
 
     const-string v0, "skip_old_pin_key"
 
@@ -2237,7 +2237,7 @@
 
     iget-object v1, p0, Lcom/android/phone/FdnSetting;->mButtonChangePin2:Lcom/android/phone/EditPinPreference;
 
-    invoke-virtual {v1}, Landroid/preference/EditTextPreference;->getText()Ljava/lang/String;
+    invoke-virtual {v1}, Lcom/android/phone/EditPinPreference;->getText()Ljava/lang/String;
 
     move-result-object v1
 

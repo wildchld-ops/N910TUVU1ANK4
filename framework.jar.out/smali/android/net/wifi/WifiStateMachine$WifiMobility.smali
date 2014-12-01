@@ -259,9 +259,6 @@
 # virtual methods
 .method public addEAP(Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Ljava/lang/Integer;
-    .param p2    # Ljava/lang/Integer;
-    .param p3    # Ljava/lang/String;
 
     const/4 v4, 0x2
 
@@ -560,9 +557,6 @@
 
 .method public addNetwork(Ljava/lang/String;Ljava/lang/Long;I)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Long;
-    .param p3    # I
 
     iget-object v0, p0, Landroid/net/wifi/WifiStateMachine$WifiMobility;->mSSID:Ljava/util/Vector;
 
@@ -934,9 +928,6 @@
 
 .method public checkNetworkIsMobile(Ljava/lang/String;Ljava/lang/Long;I)Z
     .locals 12
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Long;
-    .param p3    # I
 
     const/4 v3, -0x1
 
@@ -1730,7 +1721,6 @@
 
 .method public deleteEAP(Ljava/lang/Integer;)V
     .locals 4
-    .param p1    # Ljava/lang/Integer;
 
     # getter for: Landroid/net/wifi/WifiStateMachine;->DBG:Z
     invoke-static {}, Landroid/net/wifi/WifiStateMachine;->access$100()Z
@@ -1839,7 +1829,6 @@
 
 .method public findEAP(Ljava/lang/String;)Ljava/lang/Integer;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Landroid/net/wifi/WifiStateMachine$WifiMobility;->mEAPSSID:Ljava/util/Vector;
 
@@ -1936,7 +1925,6 @@
 
 .method public getSecurity(Landroid/net/wifi/ScanResult;)I
     .locals 2
-    .param p1    # Landroid/net/wifi/ScanResult;
 
     iget-object v0, p1, Landroid/net/wifi/ScanResult;->capabilities:Ljava/lang/String;
 
@@ -1991,7 +1979,6 @@
 
 .method public getSecurity(Landroid/net/wifi/WifiConfiguration;)I
     .locals 5
-    .param p1    # Landroid/net/wifi/WifiConfiguration;
 
     const/4 v3, 0x3
 
@@ -2051,7 +2038,6 @@
 
 .method public handleEAP(Ljava/lang/String;)V
     .locals 10
-    .param p1    # Ljava/lang/String;
 
     const/4 v9, 0x0
 
@@ -2523,7 +2509,6 @@
 
 .method public removeDoubleQuotes(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p1}, Ljava/lang/String;->length()I
 
@@ -2556,7 +2541,6 @@
 
 .method public setIgnorableId(Ljava/lang/Integer;)V
     .locals 0
-    .param p1    # Ljava/lang/Integer;
 
     iput-object p1, p0, Landroid/net/wifi/WifiStateMachine$WifiMobility;->mIgnorableId:Ljava/lang/Integer;
 
@@ -2565,7 +2549,6 @@
 
 .method public setLastSSID(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/net/wifi/WifiStateMachine$WifiMobility;->mLastSSID:Ljava/lang/String;
 
@@ -2574,7 +2557,6 @@
 
 .method public shouldBlock(Ljava/lang/Integer;)Z
     .locals 3
-    .param p1    # Ljava/lang/Integer;
 
     const/4 v2, 0x3
 
@@ -2709,7 +2691,6 @@
 
 .method public unLockMobilityByNetID(Ljava/lang/Integer;)V
     .locals 3
-    .param p1    # Ljava/lang/Integer;
 
     const/4 v0, 0x1
 

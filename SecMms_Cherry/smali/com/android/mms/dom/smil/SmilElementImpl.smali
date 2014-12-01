@@ -9,8 +9,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/mms/dom/smil/SmilDocumentImpl;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Lcom/android/mms/dom/smil/SmilDocumentImpl;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p2}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
 
@@ -33,7 +31,6 @@
 
 .method public setId(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;

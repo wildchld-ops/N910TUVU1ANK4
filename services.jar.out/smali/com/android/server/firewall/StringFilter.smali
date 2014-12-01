@@ -147,7 +147,6 @@
 
 .method private constructor <init>(Lcom/android/server/firewall/StringFilter$ValueProvider;)V
     .locals 0
-    .param p1    # Lcom/android/server/firewall/StringFilter$ValueProvider;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -158,8 +157,6 @@
 
 .method synthetic constructor <init>(Lcom/android/server/firewall/StringFilter$ValueProvider;Lcom/android/server/firewall/StringFilter$1;)V
     .locals 0
-    .param p1    # Lcom/android/server/firewall/StringFilter$ValueProvider;
-    .param p2    # Lcom/android/server/firewall/StringFilter$1;
 
     invoke-direct {p0, p1}, Lcom/android/server/firewall/StringFilter;-><init>(Lcom/android/server/firewall/StringFilter$ValueProvider;)V
 
@@ -168,9 +165,6 @@
 
 .method private static getFilter(Lcom/android/server/firewall/StringFilter$ValueProvider;Lorg/xmlpull/v1/XmlPullParser;I)Lcom/android/server/firewall/StringFilter;
     .locals 3
-    .param p0    # Lcom/android/server/firewall/StringFilter$ValueProvider;
-    .param p1    # Lorg/xmlpull/v1/XmlPullParser;
-    .param p2    # I
 
     const/4 v1, 0x0
 
@@ -319,8 +313,6 @@
 
 .method public static readFromXml(Lcom/android/server/firewall/StringFilter$ValueProvider;Lorg/xmlpull/v1/XmlPullParser;)Lcom/android/server/firewall/StringFilter;
     .locals 5
-    .param p0    # Lcom/android/server/firewall/StringFilter$ValueProvider;
-    .param p1    # Lorg/xmlpull/v1/XmlPullParser;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -380,13 +372,6 @@
 # virtual methods
 .method public matches(Lcom/android/server/firewall/IntentFirewall;Landroid/content/ComponentName;Landroid/content/Intent;IILjava/lang/String;I)Z
     .locals 2
-    .param p1    # Lcom/android/server/firewall/IntentFirewall;
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # Landroid/content/Intent;
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Ljava/lang/String;
-    .param p7    # I
 
     iget-object v1, p0, Lcom/android/server/firewall/StringFilter;->mValueProvider:Lcom/android/server/firewall/StringFilter$ValueProvider;
 

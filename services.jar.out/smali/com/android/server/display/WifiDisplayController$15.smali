@@ -36,11 +36,6 @@
 # virtual methods
 .method public onDisplayConnected(Landroid/view/Surface;IIII)V
     .locals 6
-    .param p1    # Landroid/view/Surface;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     const/4 v4, 0x1
 
@@ -329,7 +324,6 @@
 
 .method public onDisplayError(I)V
     .locals 5
-    .param p1    # I
 
     const/4 v4, 0x0
 

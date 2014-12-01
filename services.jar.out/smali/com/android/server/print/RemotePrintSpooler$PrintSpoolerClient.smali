@@ -30,7 +30,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/print/RemotePrintSpooler;)V
     .locals 1
-    .param p1    # Lcom/android/server/print/RemotePrintSpooler;
 
     invoke-direct {p0}, Landroid/print/IPrintSpoolerClient$Stub;-><init>()V
 
@@ -47,7 +46,6 @@
 # virtual methods
 .method public onAllPrintJobsForServiceHandled(Landroid/content/ComponentName;)V
     .locals 4
-    .param p1    # Landroid/content/ComponentName;
 
     iget-object v3, p0, Lcom/android/server/print/RemotePrintSpooler$PrintSpoolerClient;->mWeakSpooler:Ljava/lang/ref/WeakReference;
 
@@ -124,7 +122,6 @@
 
 .method public onPrintJobQueued(Landroid/print/PrintJobInfo;)V
     .locals 4
-    .param p1    # Landroid/print/PrintJobInfo;
 
     iget-object v3, p0, Lcom/android/server/print/RemotePrintSpooler$PrintSpoolerClient;->mWeakSpooler:Ljava/lang/ref/WeakReference;
 
@@ -165,7 +162,6 @@
 
 .method public onPrintJobStateChanged(Landroid/print/PrintJobInfo;)V
     .locals 4
-    .param p1    # Landroid/print/PrintJobInfo;
 
     iget-object v3, p0, Lcom/android/server/print/RemotePrintSpooler$PrintSpoolerClient;->mWeakSpooler:Ljava/lang/ref/WeakReference;
 

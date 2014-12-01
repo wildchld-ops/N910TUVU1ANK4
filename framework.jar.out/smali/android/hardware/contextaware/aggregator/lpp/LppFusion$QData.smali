@@ -45,7 +45,6 @@
 # direct methods
 .method constructor <init>(Landroid/hardware/contextaware/aggregator/lpp/LppFusion$QMsg;Ljava/lang/Object;)V
     .locals 5
-    .param p1    # Landroid/hardware/contextaware/aggregator/lpp/LppFusion$QMsg;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -178,7 +177,6 @@
 
 .method static synthetic access$2000(Landroid/hardware/contextaware/aggregator/lpp/LppFusion$QData;)Landroid/hardware/contextaware/aggregator/lpp/LppFusion$QMsg;
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppFusion$QData;
 
     iget-object v0, p0, Landroid/hardware/contextaware/aggregator/lpp/LppFusion$QData;->msgid:Landroid/hardware/contextaware/aggregator/lpp/LppFusion$QMsg;
 
@@ -187,7 +185,6 @@
 
 .method static synthetic access$2100(Landroid/hardware/contextaware/aggregator/lpp/LppFusion$QData;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppFusion$QData;
 
     iget-object v0, p0, Landroid/hardware/contextaware/aggregator/lpp/LppFusion$QData;->listAPDR:Ljava/util/ArrayList;
 
@@ -196,7 +193,6 @@
 
 .method static synthetic access$2200(Landroid/hardware/contextaware/aggregator/lpp/LppFusion$QData;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppFusion$QData;
 
     iget-object v0, p0, Landroid/hardware/contextaware/aggregator/lpp/LppFusion$QData;->listLoc:Ljava/util/ArrayList;
 
@@ -205,7 +201,6 @@
 
 .method static synthetic access$2300(Landroid/hardware/contextaware/aggregator/lpp/LppFusion$QData;)Landroid/location/Location;
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppFusion$QData;
 
     iget-object v0, p0, Landroid/hardware/contextaware/aggregator/lpp/LppFusion$QData;->loc:Landroid/location/Location;
 

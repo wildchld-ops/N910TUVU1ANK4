@@ -49,7 +49,6 @@
 # virtual methods
 .method public onAnimationCancel(Landroid/animation/Animator;)V
     .locals 2
-    .param p1    # Landroid/animation/Animator;
 
     iget-object v0, p0, Landroid/animation/LayoutTransition$4;->val$child:Landroid/view/View;
 
@@ -73,7 +72,6 @@
 
 .method public onAnimationEnd(Landroid/animation/Animator;)V
     .locals 8
-    .param p1    # Landroid/animation/Animator;
 
     iget-object v3, p0, Landroid/animation/LayoutTransition$4;->this$0:Landroid/animation/LayoutTransition;
 
@@ -166,7 +164,6 @@
 
 .method public onAnimationStart(Landroid/animation/Animator;)V
     .locals 8
-    .param p1    # Landroid/animation/Animator;
 
     iget-object v3, p0, Landroid/animation/LayoutTransition$4;->this$0:Landroid/animation/LayoutTransition;
 

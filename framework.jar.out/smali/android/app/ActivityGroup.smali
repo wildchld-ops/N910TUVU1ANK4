@@ -31,7 +31,6 @@
 
 .method public constructor <init>(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-direct {p0}, Landroid/app/Activity;-><init>()V
 
@@ -48,10 +47,6 @@
 # virtual methods
 .method dispatchActivityResult(Ljava/lang/String;IILandroid/content/Intent;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/content/Intent;
 
     if-eqz p1, :cond_0
 
@@ -96,7 +91,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
@@ -189,7 +183,6 @@
 
 .method protected onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onSaveInstanceState(Landroid/os/Bundle;)V
 

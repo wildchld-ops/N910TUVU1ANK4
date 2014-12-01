@@ -4060,7 +4060,6 @@
 
 .method public static tryGetHalfWidthText(C)Ljava/lang/String;
     .locals 2
-    .param p0    # C
 
     sget-object v0, Lcom/android/vcard/JapaneseUtils;->sHalfWidthMap:Ljava/util/Map;
 

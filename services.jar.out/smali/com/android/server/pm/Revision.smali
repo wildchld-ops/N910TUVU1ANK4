@@ -1301,8 +1301,6 @@
 
 .method private static selinux_cmp_android_version(Ljava/lang/String;Ljava/lang/String;)I
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -1634,7 +1632,6 @@
 
 .method private static selinux_get_android_version(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -1671,7 +1668,6 @@
 
 .method private static selinux_get_full_version(Ljava/io/BufferedReader;)Ljava/lang/String;
     .locals 6
-    .param p0    # Ljava/io/BufferedReader;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1732,7 +1728,6 @@
 
 .method private static selinux_get_version(Ljava/lang/String;)J
     .locals 6
-    .param p0    # Ljava/lang/String;
 
     move-object v3, p0
 

@@ -21,7 +21,6 @@
 # direct methods
 .method constructor <init>(Lcom/sec/android/glview/TwGLContext;Landroid/os/Handler;)V
     .locals 0
-    .param p2    # Landroid/os/Handler;
 
     iput-object p1, p0, Lcom/sec/android/glview/TwGLContext$1;->this$0:Lcom/sec/android/glview/TwGLContext;
 
@@ -34,7 +33,6 @@
 # virtual methods
 .method public onChange(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-super {p0, p1}, Landroid/database/ContentObserver;->onChange(Z)V
 
@@ -48,8 +46,6 @@
 
 .method public onChange(ZLandroid/net/Uri;)V
     .locals 1
-    .param p1    # Z
-    .param p2    # Landroid/net/Uri;
 
     invoke-super {p0, p1, p2}, Landroid/database/ContentObserver;->onChange(ZLandroid/net/Uri;)V
 

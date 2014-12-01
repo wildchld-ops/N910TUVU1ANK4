@@ -89,7 +89,6 @@
 
 .method public constructor <init>(I)V
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/UnsupportedOperationException;,
@@ -264,7 +263,6 @@
 
 .method static synthetic access$000(Landroid/media/audiofx/Visualizer;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Landroid/media/audiofx/Visualizer;
 
     iget-object v0, p0, Landroid/media/audiofx/Visualizer;->mListenerLock:Ljava/lang/Object;
 
@@ -273,7 +271,6 @@
 
 .method static synthetic access$100(Landroid/media/audiofx/Visualizer;)Landroid/media/audiofx/Visualizer$OnDataCaptureListener;
     .locals 1
-    .param p0    # Landroid/media/audiofx/Visualizer;
 
     iget-object v0, p0, Landroid/media/audiofx/Visualizer;->mCaptureListener:Landroid/media/audiofx/Visualizer$OnDataCaptureListener;
 
@@ -282,7 +279,6 @@
 
 .method static synthetic access$200(Landroid/media/audiofx/Visualizer;)Landroid/media/audiofx/Visualizer$OnServerDiedListener;
     .locals 1
-    .param p0    # Landroid/media/audiofx/Visualizer;
 
     iget-object v0, p0, Landroid/media/audiofx/Visualizer;->mServerDiedListener:Landroid/media/audiofx/Visualizer$OnServerDiedListener;
 
@@ -348,11 +344,6 @@
 
 .method private static postEventFromNative(Ljava/lang/Object;IIILjava/lang/Object;)V
     .locals 3
-    .param p0    # Ljava/lang/Object;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/Object;
 
     check-cast p0, Ljava/lang/ref/WeakReference;
 
@@ -523,7 +514,6 @@
 
 .method public getFft([B)I
     .locals 4
-    .param p1    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;
@@ -656,7 +646,6 @@
 
 .method public getMeasurementPeakRms(Landroid/media/audiofx/Visualizer$MeasurementPeakRms;)I
     .locals 4
-    .param p1    # Landroid/media/audiofx/Visualizer$MeasurementPeakRms;
 
     if-nez p1, :cond_0
 
@@ -863,7 +852,6 @@
 
 .method public getWaveForm([B)I
     .locals 4
-    .param p1    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;
@@ -959,7 +947,6 @@
 
 .method public setCaptureSize(I)I
     .locals 4
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;
@@ -1027,10 +1014,6 @@
 
 .method public setDataCaptureListener(Landroid/media/audiofx/Visualizer$OnDataCaptureListener;IZZ)I
     .locals 4
-    .param p1    # Landroid/media/audiofx/Visualizer$OnDataCaptureListener;
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # Z
 
     iget-object v3, p0, Landroid/media/audiofx/Visualizer;->mListenerLock:Ljava/lang/Object;
 
@@ -1115,7 +1098,6 @@
 
 .method public setEnabled(Z)I
     .locals 5
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;
@@ -1214,7 +1196,6 @@
 
 .method public setMeasurementMode(I)I
     .locals 4
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;
@@ -1280,7 +1261,6 @@
 
 .method public setScalingMode(I)I
     .locals 4
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;
@@ -1346,7 +1326,6 @@
 
 .method public setServerDiedListener(Landroid/media/audiofx/Visualizer$OnServerDiedListener;)I
     .locals 2
-    .param p1    # Landroid/media/audiofx/Visualizer$OnServerDiedListener;
 
     iget-object v1, p0, Landroid/media/audiofx/Visualizer;->mListenerLock:Ljava/lang/Object;
 

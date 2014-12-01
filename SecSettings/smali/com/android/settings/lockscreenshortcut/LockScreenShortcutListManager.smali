@@ -36,8 +36,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/ContentResolver;Landroid/content/pm/PackageManager;)V
     .locals 1
-    .param p1    # Landroid/content/ContentResolver;
-    .param p2    # Landroid/content/pm/PackageManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -194,8 +192,6 @@
 
 .method private getAvailableShortcutList(Ljava/util/List;ILjava/lang/String;)Ljava/util/ArrayList;
     .locals 14
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -424,7 +420,6 @@
 # virtual methods
 .method public InitShortcutList(Ljava/lang/String;)Z
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x1
 
@@ -667,8 +662,6 @@
 
 .method public addShortcutListItem(ILandroid/content/pm/ResolveInfo;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/content/pm/ResolveInfo;
 
     iget-object v0, p0, Lcom/android/settings/lockscreenshortcut/LockScreenShortcutListManager;->mShortcutList:Ljava/util/ArrayList;
 
@@ -721,7 +714,6 @@
 
 .method public getShortcutListItem(I)Landroid/content/pm/ResolveInfo;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/settings/lockscreenshortcut/LockScreenShortcutListManager;->mShortcutList:Ljava/util/ArrayList;
 
@@ -736,7 +728,6 @@
 
 .method public removeShortcutListItem(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/settings/lockscreenshortcut/LockScreenShortcutListManager;->mShortcutList:Ljava/util/ArrayList;
 
@@ -871,7 +862,6 @@
 
 .method public setNumOfSavedShortcut(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/settings/lockscreenshortcut/LockScreenShortcutListManager;->mNumOfSavedShortcut:I
 

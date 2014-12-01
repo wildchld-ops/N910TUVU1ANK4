@@ -21,8 +21,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/internal/os/HandlerCaller;Landroid/os/Looper;Z)V
     .locals 1
-    .param p2    # Landroid/os/Looper;
-    .param p3    # Z
 
     iput-object p1, p0, Lcom/android/internal/os/HandlerCaller$MyHandler;->this$0:Lcom/android/internal/os/HandlerCaller;
 
@@ -37,7 +35,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 1
-    .param p1    # Landroid/os/Message;
 
     iget-object v0, p0, Lcom/android/internal/os/HandlerCaller$MyHandler;->this$0:Lcom/android/internal/os/HandlerCaller;
 

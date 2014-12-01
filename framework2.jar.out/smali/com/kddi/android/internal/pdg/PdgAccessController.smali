@@ -28,8 +28,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -76,7 +74,6 @@
 
 .method private getDataType(I)I
     .locals 3
-    .param p1    # I
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -270,7 +267,6 @@
 
 .method private isCallActive(Landroid/content/Context;)Z
     .locals 5
-    .param p1    # Landroid/content/Context;
 
     const/4 v2, 0x1
 
@@ -348,7 +344,6 @@
 
 .method private sendFirstAccess(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const-string/jumbo v1, "void sendFirstAccess() start"
 
@@ -377,11 +372,6 @@
 
 .method private sendShowDialog(Landroid/content/Context;Ljava/lang/String;IJZ)Z
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # J
-    .param p6    # Z
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -501,10 +491,6 @@
 
 .method private sendShowNotification(Landroid/content/Context;Ljava/lang/String;IJ)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # J
 
     const-string/jumbo v1, "void sendShowNotification() start"
 
@@ -545,10 +531,6 @@
 
 .method private sendUpdatePdgStatus(Landroid/content/Context;Ljava/lang/String;IJ)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # J
 
     const-string/jumbo v1, "void sendUpdatePdgStatus() start"
 
@@ -591,7 +573,6 @@
 # virtual methods
 .method public final getPrivacy(I)Z
     .locals 14
-    .param p1    # I
 
     new-instance v0, Ljava/lang/StringBuilder;
 

@@ -46,9 +46,6 @@
 
 .method public static createAnimationDrawable(Landroid/content/Context;Ljava/io/File;Ljava/io/FilenameFilter;)Landroid/graphics/drawable/AnimationDrawable;
     .locals 7
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/io/File;
-    .param p2    # Ljava/io/FilenameFilter;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;
@@ -108,8 +105,6 @@
 
 .method public static createAnimationDrawable(Landroid/content/Context;Ljava/io/InputStream;)Landroid/graphics/drawable/AnimationDrawable;
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/io/InputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;
@@ -162,9 +157,6 @@
 
 .method public static createAnimationDrawableList(Landroid/content/Context;Ljava/io/File;Ljava/io/FilenameFilter;)Ljava/util/List;
     .locals 11
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/io/File;
-    .param p2    # Ljava/io/FilenameFilter;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -363,7 +355,6 @@
 
 .method private static getDurationFromFileName(Ljava/lang/String;)I
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     const/4 v1, 0x0
 

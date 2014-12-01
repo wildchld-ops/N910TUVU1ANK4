@@ -71,7 +71,6 @@
 # virtual methods
 .method public onTransitionPause(Landroid/transition/Transition;)V
     .locals 4
-    .param p1    # Landroid/transition/Transition;
 
     iget-object v0, p0, Landroid/transition/ChangeText$6;->this$0:Landroid/transition/ChangeText;
 
@@ -139,7 +138,6 @@
 
 .method public onTransitionResume(Landroid/transition/Transition;)V
     .locals 4
-    .param p1    # Landroid/transition/Transition;
 
     iget-object v0, p0, Landroid/transition/ChangeText$6;->this$0:Landroid/transition/ChangeText;
 

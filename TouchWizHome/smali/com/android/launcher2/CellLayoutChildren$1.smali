@@ -36,8 +36,6 @@
 # virtual methods
 .method public onChildViewAdded(Landroid/view/View;Landroid/view/View;)V
     .locals 4
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/View;
 
     check-cast p1, Lcom/android/launcher2/CellLayoutChildren;
 
@@ -83,8 +81,6 @@
 
 .method public onChildViewRemoved(Landroid/view/View;Landroid/view/View;)V
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/View;
 
     invoke-virtual {p1}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
 

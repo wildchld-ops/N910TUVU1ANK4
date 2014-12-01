@@ -6,7 +6,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     const/4 v2, 0x0
 
@@ -25,9 +24,6 @@
 
 .method public constructor <init>(Landroid/content/Context;ZI)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Z
-    .param p3    # I
 
     const v0, 0x7f04005d
 
@@ -44,10 +40,6 @@
 
 .method public constructor <init>(Landroid/content/Context;ZIZ)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Z
-    .param p3    # I
-    .param p4    # Z
 
     const v0, 0x7f04005d
 
@@ -62,10 +54,6 @@
 
 .method protected static getData(Landroid/content/Context;ZIZ)Ljava/util/List;
     .locals 17
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

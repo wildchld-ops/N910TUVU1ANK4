@@ -291,7 +291,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -332,7 +331,6 @@
 
 .method private addAllDisplaysLocked(Ljava/util/ArrayList;[I)V
     .locals 4
-    .param p2    # [I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -373,8 +371,6 @@
 
 .method private addPresentationDisplaysLocked(Ljava/util/ArrayList;[II)V
     .locals 4
-    .param p2    # [I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -429,8 +425,6 @@
 
 .method private getOrCreateDisplayLocked(IZ)Landroid/view/Display;
     .locals 3
-    .param p1    # I
-    .param p2    # Z
 
     iget-object v1, p0, Landroid/hardware/display/DisplayManager;->mDisplays:Landroid/util/SparseArray;
 
@@ -500,7 +494,6 @@
 
 .method public connectWifiDisplay(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/hardware/display/DisplayManager;->mGlobal:Landroid/hardware/display/DisplayManagerGlobal;
 
@@ -511,8 +504,6 @@
 
 .method public connectWifiDisplayWithMode(ILjava/lang/String;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/hardware/display/DisplayManager;->mGlobal:Landroid/hardware/display/DisplayManagerGlobal;
 
@@ -523,7 +514,6 @@
 
 .method public connectWifiDisplayWithPin(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/hardware/display/DisplayManager;->mGlobal:Landroid/hardware/display/DisplayManagerGlobal;
 
@@ -534,12 +524,6 @@
 
 .method public createVirtualDisplay(Ljava/lang/String;IIILandroid/view/Surface;I)Landroid/hardware/display/VirtualDisplay;
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Landroid/view/Surface;
-    .param p6    # I
 
     iget-object v0, p0, Landroid/hardware/display/DisplayManager;->mGlobal:Landroid/hardware/display/DisplayManagerGlobal;
 
@@ -650,8 +634,6 @@
 
 .method public enableWifiDisplay(Landroid/net/wifi/p2p/WifiP2pDevice;I)V
     .locals 1
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pDevice;
-    .param p2    # I
 
     iget-object v0, p0, Landroid/hardware/display/DisplayManager;->mGlobal:Landroid/hardware/display/DisplayManagerGlobal;
 
@@ -662,10 +644,6 @@
 
 .method public enableWifiDisplay(Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/hardware/display/DisplayManager;->mGlobal:Landroid/hardware/display/DisplayManagerGlobal;
 
@@ -676,7 +654,6 @@
 
 .method public forgetWifiDisplay(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/hardware/display/DisplayManager;->mGlobal:Landroid/hardware/display/DisplayManagerGlobal;
 
@@ -687,7 +664,6 @@
 
 .method public getConnectedDisplayInfo(I)Ljava/lang/String;
     .locals 2
-    .param p1    # I
 
     const-string v0, "The getConnectedDisplayInfo() is deprecated. use the getWifiDisplayStatus()"
 
@@ -700,7 +676,6 @@
 
 .method public getDisplay(I)Landroid/view/Display;
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Landroid/hardware/display/DisplayManager;->mLock:Ljava/lang/Object;
 
@@ -741,7 +716,6 @@
 
 .method public getDisplays(Ljava/lang/String;)[Landroid/view/Display;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Landroid/hardware/display/DisplayManager;->mGlobal:Landroid/hardware/display/DisplayManagerGlobal;
 
@@ -851,7 +825,6 @@
 
 .method public getLastConnectedDisplay(Z)Landroid/hardware/display/WifiDisplay;
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Landroid/hardware/display/DisplayManager;->mGlobal:Landroid/hardware/display/DisplayManagerGlobal;
 
@@ -888,7 +861,6 @@
 
 .method public isConnWithPinSupported(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/hardware/display/DisplayManager;->mGlobal:Landroid/hardware/display/DisplayManagerGlobal;
 
@@ -1015,8 +987,6 @@
 
 .method public registerDisplayListener(Landroid/hardware/display/DisplayManager$DisplayListener;Landroid/os/Handler;)V
     .locals 1
-    .param p1    # Landroid/hardware/display/DisplayManager$DisplayListener;
-    .param p2    # Landroid/os/Handler;
 
     iget-object v0, p0, Landroid/hardware/display/DisplayManager;->mGlobal:Landroid/hardware/display/DisplayManagerGlobal;
 
@@ -1027,8 +997,6 @@
 
 .method public registerDisplayListener(Landroid/hardware/display/ExtendedDisplayListener;Landroid/os/Handler;)V
     .locals 1
-    .param p1    # Landroid/hardware/display/ExtendedDisplayListener;
-    .param p2    # Landroid/os/Handler;
 
     iget-object v0, p0, Landroid/hardware/display/DisplayManager;->mGlobal:Landroid/hardware/display/DisplayManagerGlobal;
 
@@ -1039,7 +1007,6 @@
 
 .method public renameDongle(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/hardware/display/DisplayManager;->mGlobal:Landroid/hardware/display/DisplayManagerGlobal;
 
@@ -1050,8 +1017,6 @@
 
 .method public renameWifiDisplay(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/hardware/display/DisplayManager;->mGlobal:Landroid/hardware/display/DisplayManagerGlobal;
 
@@ -1092,7 +1057,6 @@
 
 .method public setActivityState(Landroid/hardware/display/DisplayManager$WfdAppState;)V
     .locals 3
-    .param p1    # Landroid/hardware/display/DisplayManager$WfdAppState;
 
     const-string v0, "DisplayManager"
 
@@ -1159,9 +1123,6 @@
 
 .method public setParameter(IILjava/lang/String;)I
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/hardware/display/DisplayManager;->mGlobal:Landroid/hardware/display/DisplayManagerGlobal;
 
@@ -1204,7 +1165,6 @@
 
 .method public unregisterDisplayListener(Landroid/hardware/display/DisplayManager$DisplayListener;)V
     .locals 1
-    .param p1    # Landroid/hardware/display/DisplayManager$DisplayListener;
 
     iget-object v0, p0, Landroid/hardware/display/DisplayManager;->mGlobal:Landroid/hardware/display/DisplayManagerGlobal;
 
@@ -1215,7 +1175,6 @@
 
 .method public unregisterDisplayListener(Landroid/hardware/display/ExtendedDisplayListener;)V
     .locals 1
-    .param p1    # Landroid/hardware/display/ExtendedDisplayListener;
 
     iget-object v0, p0, Landroid/hardware/display/DisplayManager;->mGlobal:Landroid/hardware/display/DisplayManagerGlobal;
 

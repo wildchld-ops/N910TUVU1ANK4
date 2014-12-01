@@ -23,8 +23,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/settings/ApnSettings;Landroid/os/Looper;Landroid/os/Handler;)V
     .locals 0
-    .param p2    # Landroid/os/Looper;
-    .param p3    # Landroid/os/Handler;
 
     iput-object p1, p0, Lcom/android/settings/ApnSettings$RestoreApnProcessHandler;->this$0:Lcom/android/settings/ApnSettings;
 
@@ -37,7 +35,6 @@
 
 .method static synthetic access$1100(Lcom/android/settings/ApnSettings$RestoreApnProcessHandler;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/settings/ApnSettings$RestoreApnProcessHandler;
 
     iget-object v0, p0, Lcom/android/settings/ApnSettings$RestoreApnProcessHandler;->mRestoreApnUiHandler:Landroid/os/Handler;
 
@@ -46,8 +43,6 @@
 
 .method static synthetic access$1102(Lcom/android/settings/ApnSettings$RestoreApnProcessHandler;Landroid/os/Handler;)Landroid/os/Handler;
     .locals 0
-    .param p0    # Lcom/android/settings/ApnSettings$RestoreApnProcessHandler;
-    .param p1    # Landroid/os/Handler;
 
     iput-object p1, p0, Lcom/android/settings/ApnSettings$RestoreApnProcessHandler;->mRestoreApnUiHandler:Landroid/os/Handler;
 
@@ -58,7 +53,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 5
-    .param p1    # Landroid/os/Message;
 
     const/4 v3, 0x0
 

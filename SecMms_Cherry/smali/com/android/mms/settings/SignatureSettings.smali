@@ -35,7 +35,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/settings/SignatureSettings;)Landroid/widget/Switch;
     .locals 1
-    .param p0    # Lcom/android/mms/settings/SignatureSettings;
 
     iget-object v0, p0, Lcom/android/mms/settings/SignatureSettings;->mSwitch:Landroid/widget/Switch;
 
@@ -44,7 +43,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/settings/SignatureSettings;)V
     .locals 0
-    .param p0    # Lcom/android/mms/settings/SignatureSettings;
 
     invoke-direct {p0}, Lcom/android/mms/settings/SignatureSettings;->setElementEnable()V
 
@@ -53,8 +51,6 @@
 
 .method private removePreference(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)V
     .locals 0
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     if-eqz p1, :cond_0
 
@@ -113,7 +109,6 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onCreate(Landroid/os/Bundle;)V
 
@@ -147,7 +142,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 3
-    .param p1    # Landroid/view/Menu;
 
     invoke-virtual {p0}, Landroid/app/Activity;->getMenuInflater()Landroid/view/MenuInflater;
 
@@ -204,7 +198,6 @@
 
 .method public onMenuItemClick(Landroid/view/MenuItem;)Z
     .locals 2
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v0, 0x0
 
@@ -280,7 +273,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -320,8 +312,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 2
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     const-string v0, "pref_key_signature_text"
 
@@ -349,7 +339,6 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)Z
     .locals 4
-    .param p1    # Landroid/view/Menu;
 
     invoke-virtual {p0}, Landroid/preference/PreferenceActivity;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 

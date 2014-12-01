@@ -72,7 +72,6 @@
 
 .method public static isFeatureEnabled(I)Z
     .locals 6
-    .param p0    # I
 
     const/4 v5, -0x1
 

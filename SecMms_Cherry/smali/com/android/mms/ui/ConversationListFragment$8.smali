@@ -36,7 +36,6 @@
 # virtual methods
 .method public onContentChanged(Lcom/android/mms/ui/ConversationListAdapter;)V
     .locals 5
-    .param p1    # Lcom/android/mms/ui/ConversationListAdapter;
 
     const/4 v4, 0x1
 

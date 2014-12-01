@@ -21,8 +21,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/incallui/service/DisplayBitratePopupService;JJ)V
     .locals 0
-    .param p2    # J
-    .param p4    # J
 
     iput-object p1, p0, Lcom/android/incallui/service/DisplayBitratePopupService$1;->this$0:Lcom/android/incallui/service/DisplayBitratePopupService;
 
@@ -49,7 +47,6 @@
 
 .method public onTick(J)V
     .locals 3
-    .param p1    # J
 
     const-string v0, "feature_ktt"
 

@@ -26,7 +26,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/MsaSecurityUpdateSettings;)V
     .locals 0
-    .param p0    # Lcom/android/settings/MsaSecurityUpdateSettings;
 
     invoke-direct {p0}, Lcom/android/settings/MsaSecurityUpdateSettings;->doManualUpdate()V
 
@@ -35,8 +34,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/MsaSecurityUpdateSettings;I)V
     .locals 0
-    .param p0    # Lcom/android/settings/MsaSecurityUpdateSettings;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/settings/MsaSecurityUpdateSettings;->showUserConsent(I)V
 
@@ -45,8 +42,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/MsaSecurityUpdateSettings;Z)V
     .locals 0
-    .param p0    # Lcom/android/settings/MsaSecurityUpdateSettings;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/settings/MsaSecurityUpdateSettings;->enableAutoUpdate(Z)V
 
@@ -133,7 +128,6 @@
 
 .method private enableAutoUpdate(Z)V
     .locals 3
-    .param p1    # Z
 
     invoke-virtual {p0}, Lcom/android/settings/SettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -269,8 +263,6 @@
 
 .method private removePreferenceByKey(Landroid/preference/PreferenceScreen;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Landroid/preference/PreferenceGroup;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
@@ -411,7 +403,6 @@
 
 .method private showUserConsent(I)V
     .locals 4
-    .param p1    # I
 
     new-instance v1, Landroid/content/Intent;
 
@@ -436,7 +427,6 @@
 # virtual methods
 .method public getEntryByValue(I)Ljava/lang/CharSequence;
     .locals 5
-    .param p1    # I
 
     iget-object v3, p0, Lcom/android/settings/MsaSecurityUpdateSettings;->mPrefNetwork:Landroid/preference/ListPreference;
 
@@ -490,9 +480,6 @@
 
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const/4 v1, -0x1
 
@@ -533,7 +520,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -602,7 +588,6 @@
 
 .method public onDismiss(Landroid/content/DialogInterface;)V
     .locals 1
-    .param p1    # Landroid/content/DialogInterface;
 
     const/4 v0, 0x0
 
@@ -613,8 +598,6 @@
 
 .method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
     .locals 5
-    .param p1    # Landroid/preference/Preference;
-    .param p2    # Ljava/lang/Object;
 
     invoke-virtual {p1}, Landroid/preference/Preference;->getKey()Ljava/lang/String;
 
@@ -668,8 +651,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 2
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     invoke-virtual {p2}, Landroid/preference/Preference;->getKey()Ljava/lang/String;
 

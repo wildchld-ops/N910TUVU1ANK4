@@ -180,10 +180,6 @@
 
 .method private constructor <init>(Ljava/lang/String;IIIII)V
     .locals 0
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(IIII)V"
@@ -205,7 +201,6 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/android/systemui/statusbar/policy/VolumePanel$StreamResources;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-class v0, Lcom/android/systemui/statusbar/policy/VolumePanel$StreamResources;
 

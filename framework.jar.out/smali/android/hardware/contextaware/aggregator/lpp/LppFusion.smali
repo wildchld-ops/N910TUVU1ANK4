@@ -107,7 +107,6 @@
 
 .method public constructor <init>(Landroid/hardware/contextaware/aggregator/lpp/LppConfig;)V
     .locals 6
-    .param p1    # Landroid/hardware/contextaware/aggregator/lpp/LppConfig;
 
     const-wide/16 v4, 0x0
 
@@ -252,7 +251,6 @@
 
 .method static synthetic access$000(Landroid/hardware/contextaware/aggregator/lpp/LppFusion;)Landroid/hardware/contextaware/aggregator/lpp/log/LppLogManager;
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppFusion;
 
     iget-object v0, p0, Landroid/hardware/contextaware/aggregator/lpp/LppFusion;->mLogManager:Landroid/hardware/contextaware/aggregator/lpp/log/LppLogManager;
 
@@ -261,7 +259,6 @@
 
 .method static synthetic access$100(Landroid/hardware/contextaware/aggregator/lpp/LppFusion;)Landroid/hardware/contextaware/aggregator/lpp/LppConfig;
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppFusion;
 
     iget-object v0, p0, Landroid/hardware/contextaware/aggregator/lpp/LppFusion;->mCfg:Landroid/hardware/contextaware/aggregator/lpp/LppConfig;
 
@@ -270,7 +267,6 @@
 
 .method static synthetic access$1000(Landroid/hardware/contextaware/aggregator/lpp/LppFusion;)Landroid/hardware/contextaware/aggregator/lpp/LppFusion$LppFusionSM;
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppFusion;
 
     iget-object v0, p0, Landroid/hardware/contextaware/aggregator/lpp/LppFusion;->mStateMachine:Landroid/hardware/contextaware/aggregator/lpp/LppFusion$LppFusionSM;
 
@@ -279,7 +275,6 @@
 
 .method static synthetic access$1400(Landroid/hardware/contextaware/aggregator/lpp/LppFusion;)Landroid/hardware/contextaware/aggregator/lpp/ILppDataProvider;
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppFusion;
 
     iget-object v0, p0, Landroid/hardware/contextaware/aggregator/lpp/LppFusion;->mListener:Landroid/hardware/contextaware/aggregator/lpp/ILppDataProvider;
 
@@ -288,7 +283,6 @@
 
 .method static synthetic access$1800(Landroid/hardware/contextaware/aggregator/lpp/LppFusion;)Ljava/util/concurrent/BlockingQueue;
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppFusion;
 
     iget-object v0, p0, Landroid/hardware/contextaware/aggregator/lpp/LppFusion;->lppQ:Ljava/util/concurrent/BlockingQueue;
 
@@ -297,8 +291,6 @@
 
 .method static synthetic access$1900(Landroid/hardware/contextaware/aggregator/lpp/LppFusion;Landroid/hardware/contextaware/aggregator/lpp/LppFusion$QMsg;)V
     .locals 0
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppFusion;
-    .param p1    # Landroid/hardware/contextaware/aggregator/lpp/LppFusion$QMsg;
 
     invoke-direct {p0, p1}, Landroid/hardware/contextaware/aggregator/lpp/LppFusion;->addQ(Landroid/hardware/contextaware/aggregator/lpp/LppFusion$QMsg;)V
 
@@ -307,7 +299,6 @@
 
 .method static synthetic access$200(Landroid/hardware/contextaware/aggregator/lpp/LppFusion;)Landroid/hardware/contextaware/aggregator/lpp/LppFusion$LocManListener;
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppFusion;
 
     iget-object v0, p0, Landroid/hardware/contextaware/aggregator/lpp/LppFusion;->mLMLnr:Landroid/hardware/contextaware/aggregator/lpp/LppFusion$LocManListener;
 
@@ -316,9 +307,6 @@
 
 .method static synthetic access$2500(Landroid/hardware/contextaware/aggregator/lpp/LppFusion;Landroid/hardware/contextaware/aggregator/lpp/LppFusion$QMsg;Ljava/lang/Object;)V
     .locals 0
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppFusion;
-    .param p1    # Landroid/hardware/contextaware/aggregator/lpp/LppFusion$QMsg;
-    .param p2    # Ljava/lang/Object;
 
     invoke-direct {p0, p1, p2}, Landroid/hardware/contextaware/aggregator/lpp/LppFusion;->addQ(Landroid/hardware/contextaware/aggregator/lpp/LppFusion$QMsg;Ljava/lang/Object;)V
 
@@ -327,8 +315,6 @@
 
 .method static synthetic access$2600(Landroid/hardware/contextaware/aggregator/lpp/LppFusion;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppFusion;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Landroid/hardware/contextaware/aggregator/lpp/LppFusion;->updateLppFusionStatus(Ljava/lang/String;)V
 
@@ -337,7 +323,6 @@
 
 .method static synthetic access$300(Landroid/hardware/contextaware/aggregator/lpp/LppFusion;)Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager;
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppFusion;
 
     iget-object v0, p0, Landroid/hardware/contextaware/aggregator/lpp/LppFusion;->mLppLm:Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager;
 
@@ -346,7 +331,6 @@
 
 .method static synthetic access$400(Landroid/hardware/contextaware/aggregator/lpp/LppFusion;)Landroid/hardware/contextaware/aggregator/lpp/algorithm/LppAlgorithm;
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppFusion;
 
     iget-object v0, p0, Landroid/hardware/contextaware/aggregator/lpp/LppFusion;->mLppAlgo:Landroid/hardware/contextaware/aggregator/lpp/algorithm/LppAlgorithm;
 
@@ -355,7 +339,6 @@
 
 .method static synthetic access$500(Landroid/hardware/contextaware/aggregator/lpp/LppFusion;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppFusion;
 
     iget-object v0, p0, Landroid/hardware/contextaware/aggregator/lpp/LppFusion;->mListLPPPos:Ljava/util/ArrayList;
 
@@ -364,7 +347,6 @@
 
 .method static synthetic access$600(Landroid/hardware/contextaware/aggregator/lpp/LppFusion;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppFusion;
 
     iget-object v0, p0, Landroid/hardware/contextaware/aggregator/lpp/LppFusion;->mListGPSPos:Ljava/util/ArrayList;
 
@@ -373,7 +355,6 @@
 
 .method private addQ(Landroid/hardware/contextaware/aggregator/lpp/LppFusion$QMsg;)V
     .locals 1
-    .param p1    # Landroid/hardware/contextaware/aggregator/lpp/LppFusion$QMsg;
 
     const/4 v0, 0x0
 
@@ -384,7 +365,6 @@
 
 .method private addQ(Landroid/hardware/contextaware/aggregator/lpp/LppFusion$QMsg;Ljava/lang/Object;)V
     .locals 4
-    .param p1    # Landroid/hardware/contextaware/aggregator/lpp/LppFusion$QMsg;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -492,8 +472,6 @@
 
 .method private apdrlogData(CLjava/lang/String;)V
     .locals 1
-    .param p1    # C
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/hardware/contextaware/aggregator/lpp/LppFusion;->mLogManager:Landroid/hardware/contextaware/aggregator/lpp/log/LppLogManager;
 
@@ -547,7 +525,6 @@
 
 .method private updateLppFusionStatus(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/hardware/contextaware/aggregator/lpp/LppFusion;->mLogManager:Landroid/hardware/contextaware/aggregator/lpp/log/LppLogManager;
 
@@ -980,7 +957,6 @@
 # virtual methods
 .method public Debug_LogString(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/hardware/contextaware/aggregator/lpp/LppFusion;->mLogManager:Landroid/hardware/contextaware/aggregator/lpp/log/LppLogManager;
 
@@ -1072,7 +1048,6 @@
 
 .method public notifyStayArea(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/hardware/contextaware/aggregator/lpp/LppFusion;->mLppAlgo:Landroid/hardware/contextaware/aggregator/lpp/algorithm/LppAlgorithm;
 
@@ -1108,7 +1083,6 @@
 
 .method public registerListener(Landroid/hardware/contextaware/aggregator/lpp/ILppDataProvider;)V
     .locals 1
-    .param p1    # Landroid/hardware/contextaware/aggregator/lpp/ILppDataProvider;
 
     iput-object p1, p0, Landroid/hardware/contextaware/aggregator/lpp/LppFusion;->mListener:Landroid/hardware/contextaware/aggregator/lpp/ILppDataProvider;
 
@@ -1181,7 +1155,6 @@
 
 .method public setLppResolution(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Landroid/hardware/contextaware/aggregator/lpp/LppFusion;->mLppLm:Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager;
 

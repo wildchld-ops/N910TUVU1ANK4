@@ -25,8 +25,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/systemui/recent/multiwindow/SmartClipDragDrop;Landroid/view/View;Landroid/graphics/Bitmap;)V
     .locals 1
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/graphics/Bitmap;
 
     iput-object p1, p0, Lcom/android/systemui/recent/multiwindow/SmartClipDragDrop$ShadowBuilder;->this$0:Lcom/android/systemui/recent/multiwindow/SmartClipDragDrop;
 
@@ -49,7 +47,6 @@
 # virtual methods
 .method public onDrawShadow(Landroid/graphics/Canvas;)V
     .locals 10
-    .param p1    # Landroid/graphics/Canvas;
 
     const/4 v9, 0x0
 
@@ -186,8 +183,6 @@
 
 .method public onProvideShadowMetrics(Landroid/graphics/Point;Landroid/graphics/Point;)V
     .locals 4
-    .param p1    # Landroid/graphics/Point;
-    .param p2    # Landroid/graphics/Point;
 
     const v3, 0x3f4ccccd
 

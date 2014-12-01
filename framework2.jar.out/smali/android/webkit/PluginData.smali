@@ -32,9 +32,6 @@
 # direct methods
 .method public constructor <init>(Ljava/io/InputStream;JLjava/util/Map;I)V
     .locals 0
-    .param p1    # Ljava/io/InputStream;
-    .param p2    # J
-    .param p5    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

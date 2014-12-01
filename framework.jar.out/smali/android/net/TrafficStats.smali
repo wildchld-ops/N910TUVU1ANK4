@@ -86,7 +86,6 @@
 
 .method public static closeQuietly(Landroid/net/INetworkStatsSession;)V
     .locals 2
-    .param p0    # Landroid/net/INetworkStatsSession;
 
     if-eqz p0, :cond_0
 
@@ -113,7 +112,6 @@
 
 .method private static getDataLayerSnapshotForUid(Landroid/content/Context;)Landroid/net/NetworkStats;
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     invoke-static {}, Landroid/os/Process;->myUid()I
 
@@ -266,7 +264,6 @@
 
 .method public static getMobileRxPackets(Ljava/lang/String;)J
     .locals 8
-    .param p0    # Ljava/lang/String;
 
     const-wide/16 v4, 0x0
 
@@ -306,7 +303,6 @@
 
 .method public static getMobileRxPacketsExcept(Ljava/lang/String;)J
     .locals 8
-    .param p0    # Ljava/lang/String;
 
     const-wide/16 v4, 0x0
 
@@ -527,7 +523,6 @@
 
 .method public static getMobileTxPackets(Ljava/lang/String;)J
     .locals 8
-    .param p0    # Ljava/lang/String;
 
     const-wide/16 v4, 0x0
 
@@ -567,7 +562,6 @@
 
 .method public static getMobileTxPacketsExcept(Ljava/lang/String;)J
     .locals 8
-    .param p0    # Ljava/lang/String;
 
     const-wide/16 v4, 0x0
 
@@ -610,7 +604,6 @@
 
 .method public static getRxBytes(Ljava/lang/String;)J
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -623,7 +616,6 @@
 
 .method public static getRxPackets(Ljava/lang/String;)J
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -767,7 +759,6 @@
 
 .method public static getTxBytes(Ljava/lang/String;)J
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     const/4 v0, 0x2
 
@@ -780,7 +771,6 @@
 
 .method public static getTxPackets(Ljava/lang/String;)J
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     const/4 v0, 0x3
 
@@ -793,7 +783,6 @@
 
 .method public static getUidRxBytes(I)J
     .locals 2
-    .param p0    # I
 
     const/4 v0, 0x0
 
@@ -806,7 +795,6 @@
 
 .method public static getUidRxPackets(I)J
     .locals 2
-    .param p0    # I
 
     const/4 v0, 0x1
 
@@ -819,7 +807,6 @@
 
 .method public static getUidTcpRxBytes(I)J
     .locals 2
-    .param p0    # I
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -830,7 +817,6 @@
 
 .method public static getUidTcpRxSegments(I)J
     .locals 2
-    .param p0    # I
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -841,7 +827,6 @@
 
 .method public static getUidTcpTxBytes(I)J
     .locals 2
-    .param p0    # I
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -852,7 +837,6 @@
 
 .method public static getUidTcpTxSegments(I)J
     .locals 2
-    .param p0    # I
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -863,7 +847,6 @@
 
 .method public static getUidTxBytes(I)J
     .locals 2
-    .param p0    # I
 
     const/4 v0, 0x2
 
@@ -876,7 +859,6 @@
 
 .method public static getUidTxPackets(I)J
     .locals 2
-    .param p0    # I
 
     const/4 v0, 0x3
 
@@ -889,7 +871,6 @@
 
 .method public static getUidUdpRxBytes(I)J
     .locals 2
-    .param p0    # I
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -900,7 +881,6 @@
 
 .method public static getUidUdpRxPackets(I)J
     .locals 2
-    .param p0    # I
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -911,7 +891,6 @@
 
 .method public static getUidUdpTxBytes(I)J
     .locals 2
-    .param p0    # I
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -922,7 +901,6 @@
 
 .method public static getUidUdpTxPackets(I)J
     .locals 2
-    .param p0    # I
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -933,7 +911,6 @@
 
 .method public static incrementOperationCount(I)V
     .locals 1
-    .param p0    # I
 
     invoke-static {}, Landroid/net/TrafficStats;->getThreadStatsTag()I
 
@@ -946,8 +923,6 @@
 
 .method public static incrementOperationCount(II)V
     .locals 3
-    .param p0    # I
-    .param p1    # I
 
     invoke-static {}, Landroid/os/Process;->myUid()I
 
@@ -985,7 +960,6 @@
 
 .method public static setThreadStatsTag(I)V
     .locals 0
-    .param p0    # I
 
     invoke-static {p0}, Lcom/android/server/NetworkManagementSocketTagger;->setThreadSocketStatsTag(I)V
 
@@ -994,7 +968,6 @@
 
 .method public static setThreadStatsUid(I)V
     .locals 0
-    .param p0    # I
 
     invoke-static {p0}, Lcom/android/server/NetworkManagementSocketTagger;->setThreadSocketStatsUid(I)V
 
@@ -1003,7 +976,6 @@
 
 .method public static startDataProfiling(Landroid/content/Context;)V
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     sget-object v1, Landroid/net/TrafficStats;->sProfilingLock:Ljava/lang/Object;
 
@@ -1048,7 +1020,6 @@
 
 .method public static stopDataProfiling(Landroid/content/Context;)Landroid/net/NetworkStats;
     .locals 6
-    .param p0    # Landroid/content/Context;
 
     sget-object v3, Landroid/net/TrafficStats;->sProfilingLock:Ljava/lang/Object;
 
@@ -1105,7 +1076,6 @@
 
 .method public static tagSocket(Ljava/net/Socket;)V
     .locals 1
-    .param p0    # Ljava/net/Socket;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/net/SocketException;
@@ -1123,7 +1093,6 @@
 
 .method public static untagSocket(Ljava/net/Socket;)V
     .locals 1
-    .param p0    # Ljava/net/Socket;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/net/SocketException;

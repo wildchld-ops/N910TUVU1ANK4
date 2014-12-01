@@ -205,7 +205,6 @@
 # virtual methods
 .method public changeArrow(I)V
     .locals 3
-    .param p1    # I
 
     const/16 v2, 0x8
 
@@ -284,7 +283,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 7
-    .param p1    # Landroid/view/View;
 
     const/16 v6, 0x8
 
@@ -464,9 +462,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 3
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const-string v1, "onCreateView..."
 
@@ -517,7 +512,6 @@
 
 .method protected onFinishInflate(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     invoke-super {p0, p1}, Lcom/android/incallui/InCallButtonQcifVideoFragment;->onFinishInflate(Landroid/view/View;)V
 
@@ -645,8 +639,6 @@
 
 .method public onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/os/Bundle;
 
     invoke-super {p0, p1, p2}, Landroid/app/Fragment;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
 
@@ -655,7 +647,6 @@
 
 .method public setVisibleByDialpad(Z)V
     .locals 7
-    .param p1    # Z
 
     const v6, 0x7f0a0032
 

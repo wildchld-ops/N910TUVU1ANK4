@@ -25,8 +25,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/settings/guide/GuideFragment$GuideModes;Ljava/lang/Object;)V
     .locals 2
-    .param p1    # Lcom/android/settings/guide/GuideFragment$GuideModes;
-    .param p2    # Ljava/lang/Object;
 
     const/4 v0, 0x0
 
@@ -98,7 +96,6 @@
 # virtual methods
 .method public setOnEnablerSwitchListener(Lcom/android/settings/guide/OnInternalSwitcherListener;)V
     .locals 2
-    .param p1    # Lcom/android/settings/guide/OnInternalSwitcherListener;
 
     sget-object v0, Lcom/android/settings/guide/GuideFragment$1;->$SwitchMap$com$android$settings$guide$GuideFragment$GuideModes:[I
 

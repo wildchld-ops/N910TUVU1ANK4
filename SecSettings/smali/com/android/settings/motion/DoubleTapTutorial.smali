@@ -110,7 +110,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/motion/DoubleTapTutorial;)V
     .locals 0
-    .param p0    # Lcom/android/settings/motion/DoubleTapTutorial;
 
     invoke-direct {p0}, Lcom/android/settings/motion/DoubleTapTutorial;->updateAnimation()V
 
@@ -119,7 +118,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/motion/DoubleTapTutorial;)Landroid/widget/ListView;
     .locals 1
-    .param p0    # Lcom/android/settings/motion/DoubleTapTutorial;
 
     iget-object v0, p0, Lcom/android/settings/motion/DoubleTapTutorial;->mListView:Landroid/widget/ListView;
 
@@ -128,7 +126,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/motion/DoubleTapTutorial;)V
     .locals 0
-    .param p0    # Lcom/android/settings/motion/DoubleTapTutorial;
 
     invoke-direct {p0}, Lcom/android/settings/motion/DoubleTapTutorial;->showRetryDialog()V
 
@@ -137,7 +134,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/motion/DoubleTapTutorial;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/settings/motion/DoubleTapTutorial;
 
     iget-object v0, p0, Lcom/android/settings/motion/DoubleTapTutorial;->mHandler:Landroid/os/Handler;
 
@@ -146,7 +142,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/motion/DoubleTapTutorial;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/motion/DoubleTapTutorial;
 
     iget-boolean v0, p0, Lcom/android/settings/motion/DoubleTapTutorial;->mCanDoubleTap:Z
 
@@ -155,8 +150,6 @@
 
 .method static synthetic access$402(Lcom/android/settings/motion/DoubleTapTutorial;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/motion/DoubleTapTutorial;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/motion/DoubleTapTutorial;->mCanDoubleTap:Z
 
@@ -173,7 +166,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/motion/DoubleTapTutorial;)Landroid/hardware/motion/MRListener;
     .locals 1
-    .param p0    # Lcom/android/settings/motion/DoubleTapTutorial;
 
     iget-object v0, p0, Lcom/android/settings/motion/DoubleTapTutorial;->mMotionListener:Landroid/hardware/motion/MRListener;
 
@@ -182,7 +174,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/motion/DoubleTapTutorial;)V
     .locals 0
-    .param p0    # Lcom/android/settings/motion/DoubleTapTutorial;
 
     invoke-direct {p0}, Lcom/android/settings/motion/DoubleTapTutorial;->stopAnimation()V
 
@@ -191,7 +182,6 @@
 
 .method private addHeaderPreference(Lcom/android/settings/motion/DoubleTapTutorial$Header;)V
     .locals 3
-    .param p1    # Lcom/android/settings/motion/DoubleTapTutorial$Header;
 
     const/4 v2, 0x1
 
@@ -289,7 +279,6 @@
 
 .method private addHeaderPreferencesFromRes(I)V
     .locals 13
-    .param p1    # I
 
     const/4 v10, 0x2
 
@@ -714,7 +703,6 @@
 # virtual methods
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 9
-    .param p1    # Landroid/os/Bundle;
 
     const/16 v8, 0x10
 
@@ -837,7 +825,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 

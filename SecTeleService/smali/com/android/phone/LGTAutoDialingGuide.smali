@@ -22,7 +22,7 @@
 
     const v0, 0x7f04000d
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->setContentView(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/LGTAutoDialingGuide;->setContentView(I)V
 
     return-void
 .end method

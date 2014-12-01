@@ -70,7 +70,7 @@
     :try_start_0
     iget-object v3, p0, Lcom/android/phone/EmergencyContactItem$7;->this$0:Lcom/android/phone/EmergencyContactItem;
 
-    invoke-virtual {v3}, Landroid/view/View;->getContext()Landroid/content/Context;
+    invoke-virtual {v3}, Lcom/android/phone/EmergencyContactItem;->getContext()Landroid/content/Context;
 
     move-result-object v3
 
@@ -100,7 +100,7 @@
     :catch_0
     move-exception v0
 
-    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
+    invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
 
     goto :goto_0
 .end method

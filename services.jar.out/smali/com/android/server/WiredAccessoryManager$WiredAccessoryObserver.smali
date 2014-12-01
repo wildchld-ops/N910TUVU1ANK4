@@ -145,8 +145,6 @@
 
 .method static synthetic access$002(Lcom/android/server/WiredAccessoryManager$WiredAccessoryObserver;Landroid/content/Context;)Landroid/content/Context;
     .locals 0
-    .param p0    # Lcom/android/server/WiredAccessoryManager$WiredAccessoryObserver;
-    .param p1    # Landroid/content/Context;
 
     iput-object p1, p0, Lcom/android/server/WiredAccessoryManager$WiredAccessoryObserver;->mContext:Landroid/content/Context;
 
@@ -155,8 +153,6 @@
 
 .method static synthetic access$1500(Lcom/android/server/WiredAccessoryManager$WiredAccessoryObserver;Lcom/android/server/WiredAccessoryManager$WiredAccessoryObserver$UsbAudioData;)V
     .locals 0
-    .param p0    # Lcom/android/server/WiredAccessoryManager$WiredAccessoryObserver;
-    .param p1    # Lcom/android/server/WiredAccessoryManager$WiredAccessoryObserver$UsbAudioData;
 
     invoke-direct {p0, p1}, Lcom/android/server/WiredAccessoryManager$WiredAccessoryObserver;->sendUSBAudioIntent(Lcom/android/server/WiredAccessoryManager$WiredAccessoryObserver$UsbAudioData;)V
 
@@ -165,11 +161,6 @@
 
 .method static synthetic access$700(Lcom/android/server/WiredAccessoryManager$WiredAccessoryObserver;IZLjava/lang/String;Ljava/lang/String;)Lcom/android/server/WiredAccessoryManager$WiredAccessoryObserver$UsbAudioData;
     .locals 1
-    .param p0    # Lcom/android/server/WiredAccessoryManager$WiredAccessoryObserver;
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/server/WiredAccessoryManager$WiredAccessoryObserver;->getAccInfo(IZLjava/lang/String;Ljava/lang/String;)Lcom/android/server/WiredAccessoryManager$WiredAccessoryObserver$UsbAudioData;
 
@@ -180,8 +171,6 @@
 
 .method static synthetic access$800(Lcom/android/server/WiredAccessoryManager$WiredAccessoryObserver;Lcom/android/server/WiredAccessoryManager$WiredAccessoryObserver$UsbAudioData;)V
     .locals 0
-    .param p0    # Lcom/android/server/WiredAccessoryManager$WiredAccessoryObserver;
-    .param p1    # Lcom/android/server/WiredAccessoryManager$WiredAccessoryObserver$UsbAudioData;
 
     invoke-direct {p0, p1}, Lcom/android/server/WiredAccessoryManager$WiredAccessoryObserver;->update_usbaudio(Lcom/android/server/WiredAccessoryManager$WiredAccessoryObserver$UsbAudioData;)V
 
@@ -190,10 +179,6 @@
 
 .method private getAccInfo(IZLjava/lang/String;Ljava/lang/String;)Lcom/android/server/WiredAccessoryManager$WiredAccessoryObserver$UsbAudioData;
     .locals 20
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     const/4 v15, 0x0
 
@@ -1016,8 +1001,6 @@
 
 .method private getSamplingRate(Ljava/lang/String;I)I
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/WiredAccessoryManager$WiredAccessoryObserver;->removeChar(Ljava/lang/String;)Ljava/lang/String;
 
@@ -1407,7 +1390,6 @@
 
 .method private parseAccInfo(Ljava/lang/String;)I
     .locals 21
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -2007,8 +1989,6 @@
 
 .method private parseHdmiInfo(ILjava/lang/String;)Ljava/lang/String;
     .locals 10
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/high16 v9, 0x40000
 
@@ -2256,7 +2236,6 @@
 
 .method private removeChar(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -2319,10 +2298,6 @@
 
 .method private final declared-synchronized sendIntentToPopupUI(IIII)I
     .locals 7
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/16 v6, 0x20
 
@@ -2563,7 +2538,6 @@
 
 .method private final sendUSBAudioIntent(Lcom/android/server/WiredAccessoryManager$WiredAccessoryObserver$UsbAudioData;)V
     .locals 6
-    .param p1    # Lcom/android/server/WiredAccessoryManager$WiredAccessoryObserver$UsbAudioData;
 
     const/4 v5, 0x6
 
@@ -2847,9 +2821,6 @@
 
 .method private updateStateLocked(Ljava/lang/String;Ljava/lang/String;I)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     const/4 v0, 0x0
 
@@ -3825,7 +3796,6 @@
 
 .method private final declared-synchronized update_usbaudio(Lcom/android/server/WiredAccessoryManager$WiredAccessoryObserver$UsbAudioData;)V
     .locals 5
-    .param p1    # Lcom/android/server/WiredAccessoryManager$WiredAccessoryObserver$UsbAudioData;
 
     monitor-enter p0
 
@@ -4455,7 +4425,6 @@
 
 .method public onUEvent(Landroid/os/UEventObserver$UEvent;)V
     .locals 8
-    .param p1    # Landroid/os/UEventObserver$UEvent;
 
     # getter for: Lcom/android/server/WiredAccessoryManager;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/android/server/WiredAccessoryManager;->access$500()Ljava/lang/String;

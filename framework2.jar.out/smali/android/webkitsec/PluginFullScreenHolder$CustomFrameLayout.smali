@@ -21,7 +21,6 @@
 # direct methods
 .method constructor <init>(Landroid/webkitsec/PluginFullScreenHolder;Landroid/content/Context;)V
     .locals 0
-    .param p2    # Landroid/content/Context;
 
     iput-object p1, p0, Landroid/webkitsec/PluginFullScreenHolder$CustomFrameLayout;->this$0:Landroid/webkitsec/PluginFullScreenHolder;
 
@@ -34,8 +33,6 @@
 # virtual methods
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     invoke-virtual {p2}, Landroid/view/KeyEvent;->isSystem()Z
 
@@ -67,8 +64,6 @@
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     invoke-virtual {p2}, Landroid/view/KeyEvent;->isSystem()Z
 
@@ -100,7 +95,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v0, 0x1
 
@@ -109,7 +103,6 @@
 
 .method public onTrackballEvent(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-object v0, p0, Landroid/webkitsec/PluginFullScreenHolder$CustomFrameLayout;->this$0:Landroid/webkitsec/PluginFullScreenHolder;
 

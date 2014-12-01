@@ -216,11 +216,11 @@
 
     const v9, 0x7f04001a
 
-    invoke-virtual {p0, v9}, Landroid/app/Activity;->setContentView(I)V
+    invoke-virtual {p0, v9}, Lcom/android/phone/LGTCountryList;->setContentView(I)V
 
     const v9, 0x7f0a007e
 
-    invoke-virtual {p0, v9}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v9}, Lcom/android/phone/LGTCountryList;->findViewById(I)Landroid/view/View;
 
     move-result-object v9
 
@@ -230,7 +230,7 @@
 
     const v9, 0x7f0a0202
 
-    invoke-virtual {p0, v9}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v9}, Lcom/android/phone/LGTCountryList;->findViewById(I)Landroid/view/View;
 
     move-result-object v9
 
@@ -246,7 +246,7 @@
 
     const/4 v2, 0x0
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/LGTCountryList;->getResources()Landroid/content/res/Resources;
 
     move-result-object v9
 
@@ -367,13 +367,13 @@
     :cond_2
     iget-object v9, p0, Lcom/android/phone/LGTCountryList;->mListCountry:Landroid/widget/ListView;
 
-    invoke-virtual {v9, p0}, Landroid/widget/AdapterView;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
+    invoke-virtual {v9, p0}, Landroid/widget/ListView;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
 
     iget-object v9, p0, Lcom/android/phone/LGTCountryList;->mSearchField:Landroid/widget/EditText;
 
     iget-object v10, p0, Lcom/android/phone/LGTCountryList;->SearchTextWatcher:Landroid/text/TextWatcher;
 
-    invoke-virtual {v9, v10}, Landroid/widget/TextView;->addTextChangedListener(Landroid/text/TextWatcher;)V
+    invoke-virtual {v9, v10}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
     if-eqz v5, :cond_3
 
@@ -428,7 +428,7 @@
 
     invoke-virtual {v2}, Landroid/widget/Toast;->show()V
 
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/LGTCountryList;->finish()V
 
     :goto_0
     return-void
@@ -446,7 +446,7 @@
 
     aput-object v2, v0, v5
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/LGTCountryList;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 
@@ -456,7 +456,7 @@
 
     invoke-static {v2, v3, v4}, Landroid/provider/Settings$System;->putString(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Z
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/LGTCountryList;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 
@@ -464,7 +464,7 @@
 
     invoke-static {v2, v3, p4, p5}, Landroid/provider/Settings$System;->putLong(Landroid/content/ContentResolver;Ljava/lang/String;J)Z
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/LGTCountryList;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 
@@ -476,7 +476,7 @@
 
     invoke-static {v2, v3, v4}, Landroid/provider/Settings$System;->putString(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Z
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/LGTCountryList;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 
@@ -496,7 +496,7 @@
 
     invoke-virtual {v2}, Landroid/widget/Toast;->show()V
 
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/LGTCountryList;->finish()V
 
     goto :goto_0
 .end method

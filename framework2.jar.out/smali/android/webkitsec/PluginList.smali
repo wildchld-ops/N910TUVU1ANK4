@@ -42,7 +42,6 @@
 # virtual methods
 .method public declared-synchronized addPlugin(Landroid/webkitsec/Plugin;)V
     .locals 1
-    .param p1    # Landroid/webkitsec/Plugin;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -128,8 +127,6 @@
 
 .method public declared-synchronized pluginClicked(Landroid/content/Context;I)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -169,7 +166,6 @@
 
 .method public declared-synchronized removePlugin(Landroid/webkitsec/Plugin;)V
     .locals 2
-    .param p1    # Landroid/webkitsec/Plugin;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 

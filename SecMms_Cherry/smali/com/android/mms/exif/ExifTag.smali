@@ -134,11 +134,6 @@
 
 .method constructor <init>(SSIIZ)V
     .locals 1
-    .param p1    # S
-    .param p2    # S
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -161,7 +156,6 @@
 
 .method private checkBadComponentCount(I)Z
     .locals 1
-    .param p1    # I
 
     iget-boolean v0, p0, Lcom/android/mms/exif/ExifTag;->mHasDefinedDefaultComponentCount:Z
 
@@ -184,7 +178,6 @@
 
 .method private checkOverflowForRational([Lcom/android/mms/exif/Rational;)Z
     .locals 10
-    .param p1    # [Lcom/android/mms/exif/Rational;
 
     const-wide/32 v8, 0x7fffffff
 
@@ -252,7 +245,6 @@
 
 .method private checkOverflowForUnsignedLong([I)Z
     .locals 5
-    .param p1    # [I
 
     move-object v0, p1
 
@@ -285,7 +277,6 @@
 
 .method private checkOverflowForUnsignedLong([J)Z
     .locals 7
-    .param p1    # [J
 
     move-object v0, p1
 
@@ -329,7 +320,6 @@
 
 .method private checkOverflowForUnsignedRational([Lcom/android/mms/exif/Rational;)Z
     .locals 10
-    .param p1    # [Lcom/android/mms/exif/Rational;
 
     const-wide v8, 0xffffffffL
 
@@ -397,7 +387,6 @@
 
 .method private checkOverflowForUnsignedShort([I)Z
     .locals 5
-    .param p1    # [I
 
     move-object v0, p1
 
@@ -435,7 +424,6 @@
 
 .method private static convertTypeToString(S)Ljava/lang/String;
     .locals 1
-    .param p0    # S
 
     packed-switch p0, :pswitch_data_0
 
@@ -502,7 +490,6 @@
 
 .method public static getElementSize(S)I
     .locals 1
-    .param p0    # S
 
     sget-object v0, Lcom/android/mms/exif/ExifTag;->TYPE_TO_SIZE_MAP:[I
 
@@ -513,7 +500,6 @@
 
 .method public static isValidIfd(I)Z
     .locals 2
-    .param p0    # I
 
     const/4 v0, 0x1
 
@@ -545,7 +531,6 @@
 
 .method public static isValidType(S)Z
     .locals 2
-    .param p0    # S
 
     const/4 v0, 0x1
 
@@ -593,7 +578,6 @@
 # virtual methods
 .method public equals(Ljava/lang/Object;)Z
     .locals 4
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x0
 
@@ -753,7 +737,6 @@
 
 .method public forceGetValueAsLong(J)J
     .locals 8
-    .param p1    # J
 
     const/4 v4, 0x1
 
@@ -991,7 +974,6 @@
 
 .method protected forceSetComponentCount(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/mms/exif/ExifTag;->mComponentCountActual:I
 
@@ -1000,7 +982,6 @@
 
 .method protected getBytes([B)V
     .locals 2
-    .param p1    # [B
 
     const/4 v0, 0x0
 
@@ -1013,9 +994,6 @@
 
 .method protected getBytes([BII)V
     .locals 3
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
 
     iget-short v0, p0, Lcom/android/mms/exif/ExifTag;->mDataType:S
 
@@ -1130,7 +1108,6 @@
 
 .method protected getRational(I)Lcom/android/mms/exif/Rational;
     .locals 3
-    .param p1    # I
 
     iget-short v0, p0, Lcom/android/mms/exif/ExifTag;->mDataType:S
 
@@ -1271,7 +1248,6 @@
 
 .method public getValueAsByte(B)B
     .locals 3
-    .param p1    # B
 
     invoke-virtual {p0}, Lcom/android/mms/exif/ExifTag;->getValueAsBytes()[B
 
@@ -1323,7 +1299,6 @@
 
 .method public getValueAsInt(I)I
     .locals 3
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/mms/exif/ExifTag;->getValueAsInts()[I
 
@@ -1400,7 +1375,6 @@
 
 .method public getValueAsLong(J)J
     .locals 3
-    .param p1    # J
 
     invoke-virtual {p0}, Lcom/android/mms/exif/ExifTag;->getValueAsLongs()[J
 
@@ -1452,7 +1426,6 @@
 
 .method public getValueAsRational(J)Lcom/android/mms/exif/Rational;
     .locals 3
-    .param p1    # J
 
     new-instance v0, Lcom/android/mms/exif/Rational;
 
@@ -1469,7 +1442,6 @@
 
 .method public getValueAsRational(Lcom/android/mms/exif/Rational;)Lcom/android/mms/exif/Rational;
     .locals 3
-    .param p1    # Lcom/android/mms/exif/Rational;
 
     invoke-virtual {p0}, Lcom/android/mms/exif/ExifTag;->getValueAsRationals()[Lcom/android/mms/exif/Rational;
 
@@ -1571,7 +1543,6 @@
 
 .method public getValueAsString(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Lcom/android/mms/exif/ExifTag;->getValueAsString()Ljava/lang/String;
 
@@ -1590,7 +1561,6 @@
 
 .method protected getValueAt(I)J
     .locals 3
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/mms/exif/ExifTag;->mValue:Ljava/lang/Object;
 
@@ -1688,7 +1658,6 @@
 
 .method protected setHasDefinedCount(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/exif/ExifTag;->mHasDefinedDefaultComponentCount:Z
 
@@ -1697,7 +1666,6 @@
 
 .method protected setIfd(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/mms/exif/ExifTag;->mIfd:I
 
@@ -1706,7 +1674,6 @@
 
 .method protected setOffset(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/mms/exif/ExifTag;->mOffset:I
 
@@ -1715,7 +1682,6 @@
 
 .method public setTimeValue(J)Z
     .locals 3
-    .param p1    # J
 
     sget-object v1, Lcom/android/mms/exif/ExifTag;->TIME_FORMAT:Ljava/text/SimpleDateFormat;
 
@@ -1752,7 +1718,6 @@
 
 .method public setValue(B)Z
     .locals 2
-    .param p1    # B
 
     const/4 v0, 0x1
 
@@ -1771,7 +1736,6 @@
 
 .method public setValue(I)Z
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -1790,7 +1754,6 @@
 
 .method public setValue(J)Z
     .locals 2
-    .param p1    # J
 
     const/4 v0, 0x1
 
@@ -1809,7 +1772,6 @@
 
 .method public setValue(Lcom/android/mms/exif/Rational;)Z
     .locals 2
-    .param p1    # Lcom/android/mms/exif/Rational;
 
     const/4 v0, 0x1
 
@@ -1828,7 +1790,6 @@
 
 .method public setValue(Ljava/lang/Object;)Z
     .locals 6
-    .param p1    # Ljava/lang/Object;
 
     const v5, 0xffff
 
@@ -2205,7 +2166,6 @@
 
 .method public setValue(Ljava/lang/String;)Z
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     const/4 v7, 0x7
 
@@ -2302,7 +2262,6 @@
 
 .method public setValue([B)Z
     .locals 2
-    .param p1    # [B
 
     const/4 v0, 0x0
 
@@ -2317,9 +2276,6 @@
 
 .method public setValue([BII)Z
     .locals 4
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
 
     const/4 v1, 0x1
 
@@ -2364,7 +2320,6 @@
 
 .method public setValue([I)Z
     .locals 7
-    .param p1    # [I
 
     const/4 v6, 0x4
 
@@ -2457,7 +2412,6 @@
 
 .method public setValue([J)Z
     .locals 3
-    .param p1    # [J
 
     const/4 v0, 0x0
 
@@ -2499,7 +2453,6 @@
 
 .method public setValue([Lcom/android/mms/exif/Rational;)Z
     .locals 4
-    .param p1    # [Lcom/android/mms/exif/Rational;
 
     const/16 v3, 0xa
 

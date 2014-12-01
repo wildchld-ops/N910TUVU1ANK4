@@ -78,7 +78,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -129,8 +128,6 @@
 
 .method public constructor <init>(Landroid/content/Context;I)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     const/4 v1, 0x0
 
@@ -183,8 +180,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v1, 0x0
 
@@ -235,8 +230,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Z)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Z
 
     const/4 v1, 0x0
 
@@ -287,7 +280,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/ui/MmsPlayerController;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/MmsPlayerController;
 
     iget-boolean v0, p0, Lcom/android/mms/ui/MmsPlayerController;->mShowing:Z
 
@@ -296,7 +288,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/ui/MmsPlayerController;)I
     .locals 1
-    .param p0    # Lcom/android/mms/ui/MmsPlayerController;
 
     invoke-direct {p0}, Lcom/android/mms/ui/MmsPlayerController;->setProgress()I
 
@@ -307,7 +298,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/ui/MmsPlayerController;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/MmsPlayerController;
 
     iget-boolean v0, p0, Lcom/android/mms/ui/MmsPlayerController;->mDragging:Z
 
@@ -316,7 +306,6 @@
 
 .method static synthetic access$300(Lcom/android/mms/ui/MmsPlayerController;)Lcom/android/mms/ui/MmsPlayerController$MediaPlayerControl;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/MmsPlayerController;
 
     iget-object v0, p0, Lcom/android/mms/ui/MmsPlayerController;->mPlayer:Lcom/android/mms/ui/MmsPlayerController$MediaPlayerControl;
 
@@ -359,7 +348,6 @@
 
 .method private initControllerView(Landroid/view/View;)V
     .locals 4
-    .param p1    # Landroid/view/View;
 
     const/4 v3, 0x0
 
@@ -690,7 +678,6 @@
 
 .method private stringForTime(I)Ljava/lang/String;
     .locals 11
-    .param p1    # I
 
     const/4 v10, 0x2
 
@@ -864,7 +851,6 @@
 # virtual methods
 .method public SetIsPressDown(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/MmsPlayerController;->mPressDown:Z
 
@@ -873,7 +859,6 @@
 
 .method public SlideShowActivityRunnable(Lcom/android/mms/model/SlideshowModel;)V
     .locals 1
-    .param p1    # Lcom/android/mms/model/SlideshowModel;
 
     iget-object v0, p0, Lcom/android/mms/ui/MmsPlayerController;->mPlayer:Lcom/android/mms/ui/MmsPlayerController$MediaPlayerControl;
 
@@ -899,7 +884,6 @@
 
 .method public dispatchKeyEvent(Landroid/view/KeyEvent;)Z
     .locals 3
-    .param p1    # Landroid/view/KeyEvent;
 
     const/4 v1, 0x1
 
@@ -1412,7 +1396,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     const/16 v0, 0xbb8
 
@@ -1425,7 +1408,6 @@
 
 .method public onTrackballEvent(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     const/16 v0, 0xbb8
 
@@ -1468,7 +1450,6 @@
 
 .method public seek(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/mms/ui/MmsPlayerController;->mPlayer:Lcom/android/mms/ui/MmsPlayerController$MediaPlayerControl;
 
@@ -1484,7 +1465,6 @@
 
 .method public setAnchorView(Landroid/view/View;)V
     .locals 3
-    .param p1    # Landroid/view/View;
 
     const/4 v2, -0x1
 
@@ -1507,7 +1487,6 @@
 
 .method public setEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-virtual {p0, p1}, Lcom/android/mms/ui/MmsPlayerController;->setStatePauseButton(Z)V
 
@@ -1529,7 +1508,6 @@
 
 .method public setMediaPlayer(Lcom/android/mms/ui/MmsPlayerController$MediaPlayerControl;)V
     .locals 0
-    .param p1    # Lcom/android/mms/ui/MmsPlayerController$MediaPlayerControl;
 
     iput-object p1, p0, Lcom/android/mms/ui/MmsPlayerController;->mPlayer:Lcom/android/mms/ui/MmsPlayerController$MediaPlayerControl;
 
@@ -1540,7 +1518,6 @@
 
 .method public setPageMoveButton(Z)V
     .locals 0
-    .param p1    # Z
 
     invoke-virtual {p0, p1}, Lcom/android/mms/ui/MmsPlayerController;->setStatePrevButton(Z)V
 
@@ -1551,7 +1528,6 @@
 
 .method public setPlayerState(Lcom/android/mms/dom/smil/SmilPlayer$SmilPlayerState;)V
     .locals 1
-    .param p1    # Lcom/android/mms/dom/smil/SmilPlayer$SmilPlayerState;
 
     iget-object v0, p0, Lcom/android/mms/ui/MmsPlayerController;->mPlayer:Lcom/android/mms/ui/MmsPlayerController$MediaPlayerControl;
 
@@ -1567,7 +1543,6 @@
 
 .method public setStateNextButton(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/mms/ui/MmsPlayerController;->mNextPageButton:Landroid/widget/ImageButton;
 
@@ -1587,7 +1562,6 @@
 
 .method public setStatePauseButton(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/mms/ui/MmsPlayerController;->mPauseButton:Landroid/widget/ImageButton;
 
@@ -1607,7 +1581,6 @@
 
 .method public setStatePrevButton(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/mms/ui/MmsPlayerController;->mPrevPageButton:Landroid/widget/ImageButton;
 
@@ -1637,7 +1610,6 @@
 
 .method public show(I)V
     .locals 10
-    .param p1    # I
 
     const/4 v9, 0x2
 

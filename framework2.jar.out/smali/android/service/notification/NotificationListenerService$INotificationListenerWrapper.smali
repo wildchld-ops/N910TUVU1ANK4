@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Landroid/service/notification/NotificationListenerService;Landroid/service/notification/NotificationListenerService$1;)V
     .locals 0
-    .param p1    # Landroid/service/notification/NotificationListenerService;
-    .param p2    # Landroid/service/notification/NotificationListenerService$1;
 
     invoke-direct {p0, p1}, Landroid/service/notification/NotificationListenerService$INotificationListenerWrapper;-><init>(Landroid/service/notification/NotificationListenerService;)V
 
@@ -43,7 +41,6 @@
 # virtual methods
 .method public onNotificationPosted(Landroid/service/notification/StatusBarNotification;)V
     .locals 3
-    .param p1    # Landroid/service/notification/StatusBarNotification;
 
     :try_start_0
     iget-object v1, p0, Landroid/service/notification/NotificationListenerService$INotificationListenerWrapper;->this$0:Landroid/service/notification/NotificationListenerService;
@@ -74,7 +71,6 @@
 
 .method public onNotificationRemoved(Landroid/service/notification/StatusBarNotification;)V
     .locals 3
-    .param p1    # Landroid/service/notification/StatusBarNotification;
 
     :try_start_0
     iget-object v1, p0, Landroid/service/notification/NotificationListenerService$INotificationListenerWrapper;->this$0:Landroid/service/notification/NotificationListenerService;

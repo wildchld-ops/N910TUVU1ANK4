@@ -18,10 +18,6 @@
 # direct methods
 .method private constructor <init>(IILjava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,8 +38,6 @@
 
 .method public static filterMessageList([Lcom/sec/knox/container/util/DaemonEvent;I)[Ljava/lang/String;
     .locals 6
-    .param p0    # [Lcom/sec/knox/container/util/DaemonEvent;
-    .param p1    # I
 
     invoke-static {}, Lcom/google/android/collect/Lists;->newArrayList()Ljava/util/ArrayList;
 
@@ -95,7 +89,6 @@
 
 .method private static isClassUnsolicited(I)Z
     .locals 1
-    .param p0    # I
 
     const/16 v0, 0x258
 
@@ -118,7 +111,6 @@
 
 .method public static parseRawEvent(Ljava/lang/String;)Lcom/sec/knox/container/util/DaemonEvent;
     .locals 8
-    .param p0    # Ljava/lang/String;
 
     const-string v6, " "
 
@@ -246,7 +238,6 @@
 
 .method public static unescapeArgs(Ljava/lang/String;)[Ljava/lang/String;
     .locals 15
-    .param p0    # Ljava/lang/String;
 
     const/16 v14, 0x22
 
@@ -415,7 +406,6 @@
 # virtual methods
 .method public checkCode(I)V
     .locals 3
-    .param p1    # I
 
     iget v0, p0, Lcom/sec/knox/container/util/DaemonEvent;->mCode:I
 
@@ -477,7 +467,6 @@
 
 .method public getField(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/knox/container/util/DaemonEvent;->mParsed:[Ljava/lang/String;
 

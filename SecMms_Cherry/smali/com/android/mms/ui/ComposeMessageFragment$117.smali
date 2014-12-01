@@ -36,7 +36,6 @@
 # virtual methods
 .method public onPopupItemClick(I)Z
     .locals 8
-    .param p1    # I
 
     const/4 v7, 0x0
 

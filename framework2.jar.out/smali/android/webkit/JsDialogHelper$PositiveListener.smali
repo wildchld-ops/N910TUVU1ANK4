@@ -26,7 +26,6 @@
 # direct methods
 .method public constructor <init>(Landroid/webkit/JsDialogHelper;Landroid/widget/EditText;)V
     .locals 0
-    .param p2    # Landroid/widget/EditText;
 
     iput-object p1, p0, Landroid/webkit/JsDialogHelper$PositiveListener;->this$0:Landroid/webkit/JsDialogHelper;
 
@@ -41,8 +40,6 @@
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 2
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     iget-object v0, p0, Landroid/webkit/JsDialogHelper$PositiveListener;->mEdit:Landroid/widget/EditText;
 

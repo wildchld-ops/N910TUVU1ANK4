@@ -36,7 +36,6 @@
 
 .method static synthetic access$002(Landroid/content/Context;)Landroid/content/Context;
     .locals 0
-    .param p0    # Landroid/content/Context;
 
     sput-object p0, Lcom/android/settings/powersavingmode/PowerNotiDataDialog;->mContext:Landroid/content/Context;
 

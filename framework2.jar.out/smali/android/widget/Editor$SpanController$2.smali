@@ -36,7 +36,6 @@
 # virtual methods
 .method public onDeleteClick(Landroid/text/style/EasyEditSpan;)V
     .locals 5
-    .param p1    # Landroid/text/style/EasyEditSpan;
 
     iget-object v3, p0, Landroid/widget/Editor$SpanController$2;->this$1:Landroid/widget/Editor$SpanController;
 

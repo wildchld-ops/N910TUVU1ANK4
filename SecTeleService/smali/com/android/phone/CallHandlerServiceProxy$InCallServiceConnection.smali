@@ -71,7 +71,7 @@
 
     const/4 v1, 0x2
 
-    invoke-virtual {v0, v1}, Landroid/os/Handler;->removeMessages(I)V
+    invoke-virtual {v0, v1}, Lcom/android/phone/CallHandlerServiceProxy;->removeMessages(I)V
 
     # getter for: Lcom/android/phone/CallHandlerServiceProxy;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/android/phone/CallHandlerServiceProxy;->access$000()Ljava/lang/String;

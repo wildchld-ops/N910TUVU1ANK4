@@ -37,8 +37,6 @@
 
 .method synthetic constructor <init>(Lcom/android/settings/wifi/hs20/Hs20Settings;Lcom/android/settings/wifi/hs20/Hs20Settings$1;)V
     .locals 0
-    .param p1    # Lcom/android/settings/wifi/hs20/Hs20Settings;
-    .param p2    # Lcom/android/settings/wifi/hs20/Hs20Settings$1;
 
     invoke-direct {p0, p1}, Lcom/android/settings/wifi/hs20/Hs20Settings$Scanner;-><init>(Lcom/android/settings/wifi/hs20/Hs20Settings;)V
 
@@ -49,7 +47,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 6
-    .param p1    # Landroid/os/Message;
 
     const/4 v5, 0x1
 

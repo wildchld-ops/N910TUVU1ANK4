@@ -36,8 +36,6 @@
 # virtual methods
 .method public onTouch(Lcom/sec/android/glview/TwGLView;Landroid/view/MotionEvent;)Z
     .locals 2
-    .param p1    # Lcom/sec/android/glview/TwGLView;
-    .param p2    # Landroid/view/MotionEvent;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLEditableSideBarDragDropBox$1;->this$0:Lcom/sec/android/app/camera/glwidget/TwGLEditableSideBarDragDropBox;
 

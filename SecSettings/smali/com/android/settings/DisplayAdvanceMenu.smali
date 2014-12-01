@@ -41,7 +41,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/DisplayAdvanceMenu;)Landroid/preference/SwitchPreferenceScreen;
     .locals 1
-    .param p0    # Lcom/android/settings/DisplayAdvanceMenu;
 
     iget-object v0, p0, Lcom/android/settings/DisplayAdvanceMenu;->mReadingMode:Landroid/preference/SwitchPreferenceScreen;
 
@@ -50,7 +49,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/DisplayAdvanceMenu;)V
     .locals 0
-    .param p0    # Lcom/android/settings/DisplayAdvanceMenu;
 
     invoke-direct {p0}, Lcom/android/settings/DisplayAdvanceMenu;->updateScreenSaverSummary()V
 
@@ -128,7 +126,6 @@
 # virtual methods
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 10
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v9, 0x0
 
@@ -460,8 +457,6 @@
 
 .method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
     .locals 8
-    .param p1    # Landroid/preference/Preference;
-    .param p2    # Ljava/lang/Object;
 
     const/4 v4, 0x1
 
@@ -690,8 +685,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 8
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     const/4 v4, 0x0
 

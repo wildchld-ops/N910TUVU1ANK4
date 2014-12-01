@@ -166,7 +166,6 @@
 
 .method public setContentLength(J)V
     .locals 0
-    .param p1    # J
 
     iput-wide p1, p0, Landroid/webkitsec/CacheManager$CacheResult;->contentLength:J
 
@@ -175,7 +174,6 @@
 
 .method public setEncoding(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/webkitsec/CacheManager$CacheResult;->encoding:Ljava/lang/String;
 
@@ -184,7 +182,6 @@
 
 .method public setInputStream(Ljava/io/InputStream;)V
     .locals 0
-    .param p1    # Ljava/io/InputStream;
 
     iput-object p1, p0, Landroid/webkitsec/CacheManager$CacheResult;->inStream:Ljava/io/InputStream;
 

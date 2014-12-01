@@ -42,8 +42,6 @@
 
 .method private AddToClickedList(IZ)V
     .locals 2
-    .param p1    # I
-    .param p2    # Z
 
     const-string v0, "Settings"
 
@@ -84,9 +82,6 @@
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;IZ)V
     .locals 0
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
-    .param p3    # Z
 
     invoke-direct {p0, p2, p3}, Lcom/android/settings/dmr/DMRSettings$5;->AddToClickedList(IZ)V
 

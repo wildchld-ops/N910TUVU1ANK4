@@ -62,7 +62,6 @@
 
 .method private getHwKeyMap(Ljava/lang/String;)Ljava/util/HashMap;
     .locals 2
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -103,7 +102,6 @@
 
 .method private getHwPhonepadKeyMap(Ljava/lang/String;)Ljava/util/HashMap;
     .locals 2
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

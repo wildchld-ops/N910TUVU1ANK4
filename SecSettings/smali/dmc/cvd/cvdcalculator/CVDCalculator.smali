@@ -104,9 +104,6 @@
 # virtual methods
 .method public getRGBCMY(IDD)[I
     .locals 11
-    .param p1    # I
-    .param p2    # D
-    .param p4    # D
 
     const/4 v8, 0x0
 

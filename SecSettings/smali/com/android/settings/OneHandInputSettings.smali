@@ -29,7 +29,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/OneHandInputSettings;)Landroid/widget/Switch;
     .locals 1
-    .param p0    # Lcom/android/settings/OneHandInputSettings;
 
     iget-object v0, p0, Lcom/android/settings/OneHandInputSettings;->mActionBarSwitch:Landroid/widget/Switch;
 
@@ -262,8 +261,6 @@
 
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 5
-    .param p1    # Landroid/widget/CompoundButton;
-    .param p2    # Z
 
     const/4 v2, 0x1
 
@@ -344,9 +341,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 3
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const v1, 0x7f04016e
 

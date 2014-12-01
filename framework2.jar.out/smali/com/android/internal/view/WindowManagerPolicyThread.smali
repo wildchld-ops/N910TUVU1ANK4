@@ -36,8 +36,6 @@
 
 .method public static set(Ljava/lang/Thread;Landroid/os/Looper;)V
     .locals 0
-    .param p0    # Ljava/lang/Thread;
-    .param p1    # Landroid/os/Looper;
 
     sput-object p0, Lcom/android/internal/view/WindowManagerPolicyThread;->mThread:Ljava/lang/Thread;
 

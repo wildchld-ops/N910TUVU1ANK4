@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -53,11 +52,6 @@
 
 .method public listen(Ljava/lang/String;Lcom/android/internal/telephony/IPhoneStateListener;IZI)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/internal/telephony/IPhoneStateListener;
-    .param p3    # I
-    .param p4    # Z
-    .param p5    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -141,8 +135,6 @@
 
 .method public notifyCallForwardingChanged(ZI)V
     .locals 5
-    .param p1    # Z
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -203,9 +195,6 @@
 
 .method public notifyCallState(ILjava/lang/String;I)V
     .locals 5
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -261,7 +250,6 @@
 
 .method public notifyCellInfo(Ljava/util/List;I)V
     .locals 5
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -325,8 +313,6 @@
 
 .method public notifyCellLocation(Landroid/os/Bundle;I)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -399,7 +385,6 @@
 
 .method public notifyDataActivity(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -451,16 +436,6 @@
 
 .method public notifyDataConnection(IZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/net/LinkProperties;Landroid/net/LinkCapabilities;IZI)V
     .locals 5
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Landroid/net/LinkProperties;
-    .param p7    # Landroid/net/LinkCapabilities;
-    .param p8    # I
-    .param p9    # Z
-    .param p10    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -590,9 +565,6 @@
 
 .method public notifyDataConnectionFailed(Ljava/lang/String;Ljava/lang/String;I)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -648,8 +620,6 @@
 
 .method public notifyMessageWaitingChanged(ZI)V
     .locals 5
-    .param p1    # Z
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -710,7 +680,6 @@
 
 .method public notifyOtaspChanged(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -762,8 +731,6 @@
 
 .method public notifyServiceState(Landroid/telephony/ServiceState;I)V
     .locals 5
-    .param p1    # Landroid/telephony/ServiceState;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -836,8 +803,6 @@
 
 .method public notifySignalStrength(Landroid/telephony/SignalStrength;I)V
     .locals 5
-    .param p1    # Landroid/telephony/SignalStrength;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

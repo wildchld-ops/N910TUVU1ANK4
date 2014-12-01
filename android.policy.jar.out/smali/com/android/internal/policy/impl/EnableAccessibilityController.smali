@@ -50,7 +50,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -141,7 +140,6 @@
 
 .method static synthetic access$000(Lcom/android/internal/policy/impl/EnableAccessibilityController;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/EnableAccessibilityController;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/EnableAccessibilityController;->mContext:Landroid/content/Context;
 
@@ -150,7 +148,6 @@
 
 .method static synthetic access$100(Lcom/android/internal/policy/impl/EnableAccessibilityController;)Landroid/speech/tts/TextToSpeech;
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/EnableAccessibilityController;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/EnableAccessibilityController;->mTts:Landroid/speech/tts/TextToSpeech;
 
@@ -159,7 +156,6 @@
 
 .method static synthetic access$200(Lcom/android/internal/policy/impl/EnableAccessibilityController;)V
     .locals 0
-    .param p0    # Lcom/android/internal/policy/impl/EnableAccessibilityController;
 
     invoke-direct {p0}, Lcom/android/internal/policy/impl/EnableAccessibilityController;->enableAccessibility()V
 
@@ -168,7 +164,6 @@
 
 .method static synthetic access$300(Lcom/android/internal/policy/impl/EnableAccessibilityController;)Landroid/media/Ringtone;
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/EnableAccessibilityController;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/EnableAccessibilityController;->mTone:Landroid/media/Ringtone;
 
@@ -177,7 +172,6 @@
 
 .method static synthetic access$400(Lcom/android/internal/policy/impl/EnableAccessibilityController;)Z
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/EnableAccessibilityController;
 
     iget-boolean v0, p0, Lcom/android/internal/policy/impl/EnableAccessibilityController;->mDestroyed:Z
 
@@ -186,7 +180,6 @@
 
 .method public static canEnableAccessibilityViaGesture(Landroid/content/Context;)Z
     .locals 5
-    .param p0    # Landroid/content/Context;
 
     const/4 v1, 0x1
 
@@ -532,7 +525,6 @@
 
 .method private static getInstalledSpeakingAccessibilityServices(Landroid/content/Context;)Ljava/util/List;
     .locals 5
-    .param p0    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -617,7 +609,6 @@
 
 .method public onInterceptTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 5
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v1, 0x0
 
@@ -688,7 +679,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 9
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v5, 0x0
 

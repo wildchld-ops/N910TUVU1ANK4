@@ -37,8 +37,6 @@
 
 .method synthetic constructor <init>(Lcom/android/settings/GridSettings;Lcom/android/settings/GridSettings$1;)V
     .locals 0
-    .param p1    # Lcom/android/settings/GridSettings;
-    .param p2    # Lcom/android/settings/GridSettings$1;
 
     invoke-direct {p0, p1}, Lcom/android/settings/GridSettings$ScaleListner;-><init>(Lcom/android/settings/GridSettings;)V
 
@@ -49,7 +47,6 @@
 # virtual methods
 .method public onScale(Landroid/view/ScaleGestureDetector;)Z
     .locals 3
-    .param p1    # Landroid/view/ScaleGestureDetector;
 
     iget v0, p0, Lcom/android/settings/GridSettings$ScaleListner;->scale:F
 
@@ -84,7 +81,6 @@
 
 .method public onScaleBegin(Landroid/view/ScaleGestureDetector;)Z
     .locals 2
-    .param p1    # Landroid/view/ScaleGestureDetector;
 
     iget-object v0, p0, Lcom/android/settings/GridSettings$ScaleListner;->this$0:Lcom/android/settings/GridSettings;
 
@@ -102,7 +98,6 @@
 
 .method public onScaleEnd(Landroid/view/ScaleGestureDetector;)V
     .locals 4
-    .param p1    # Landroid/view/ScaleGestureDetector;
 
     const/high16 v2, 0x3fc00000
 

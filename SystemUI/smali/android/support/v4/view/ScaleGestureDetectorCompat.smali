@@ -59,7 +59,6 @@
 
 .method public static isQuickScaleEnabled(Ljava/lang/Object;)Z
     .locals 1
-    .param p0    # Ljava/lang/Object;
 
     sget-object v0, Landroid/support/v4/view/ScaleGestureDetectorCompat;->IMPL:Landroid/support/v4/view/ScaleGestureDetectorCompat$ScaleGestureDetectorImpl;
 
@@ -72,8 +71,6 @@
 
 .method public static setQuickScaleEnabled(Ljava/lang/Object;Z)V
     .locals 1
-    .param p0    # Ljava/lang/Object;
-    .param p1    # Z
 
     sget-object v0, Landroid/support/v4/view/ScaleGestureDetectorCompat;->IMPL:Landroid/support/v4/view/ScaleGestureDetectorCompat$ScaleGestureDetectorImpl;
 

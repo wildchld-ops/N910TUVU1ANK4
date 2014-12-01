@@ -36,12 +36,6 @@
 # virtual methods
 .method public onDisplayConnected(Landroid/hardware/display/WifiDisplay;Landroid/view/Surface;IIII)V
     .locals 9
-    .param p1    # Landroid/hardware/display/WifiDisplay;
-    .param p2    # Landroid/view/Surface;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     const/4 v8, 0x2
 
@@ -512,7 +506,6 @@
 
 .method public onFeatureStateChanged(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/display/WifiDisplayAdapter$15;->this$0:Lcom/android/server/display/WifiDisplayAdapter;
 
@@ -559,7 +552,6 @@
 
 .method public onQosLevelChanged(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "WifiDisplayAdapter"
 

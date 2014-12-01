@@ -350,7 +350,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/deviceinfo/Status;)Lcom/android/internal/telephony/PhoneStateIntentReceiver;
     .locals 1
-    .param p0    # Lcom/android/settings/deviceinfo/Status;
 
     iget-object v0, p0, Lcom/android/settings/deviceinfo/Status;->mPhoneStateReceiver:Lcom/android/internal/telephony/PhoneStateIntentReceiver;
 
@@ -359,8 +358,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/deviceinfo/Status;Landroid/telephony/ServiceState;)V
     .locals 0
-    .param p0    # Lcom/android/settings/deviceinfo/Status;
-    .param p1    # Landroid/telephony/ServiceState;
 
     invoke-direct {p0, p1}, Lcom/android/settings/deviceinfo/Status;->updateServiceState(Landroid/telephony/ServiceState;)V
 
@@ -369,7 +366,6 @@
 
 .method static synthetic access$1000(Lcom/android/settings/deviceinfo/Status;)Landroid/preference/Preference;
     .locals 1
-    .param p0    # Lcom/android/settings/deviceinfo/Status;
 
     iget-object v0, p0, Lcom/android/settings/deviceinfo/Status;->mUserName:Landroid/preference/Preference;
 
@@ -378,8 +374,6 @@
 
 .method static synthetic access$1002(Lcom/android/settings/deviceinfo/Status;Landroid/preference/Preference;)Landroid/preference/Preference;
     .locals 0
-    .param p0    # Lcom/android/settings/deviceinfo/Status;
-    .param p1    # Landroid/preference/Preference;
 
     iput-object p1, p0, Lcom/android/settings/deviceinfo/Status;->mUserName:Landroid/preference/Preference;
 
@@ -388,7 +382,6 @@
 
 .method static synthetic access$1100(Lcom/android/settings/deviceinfo/Status;)I
     .locals 1
-    .param p0    # Lcom/android/settings/deviceinfo/Status;
 
     iget v0, p0, Lcom/android/settings/deviceinfo/Status;->NAI_length:I
 
@@ -397,8 +390,6 @@
 
 .method static synthetic access$1102(Lcom/android/settings/deviceinfo/Status;I)I
     .locals 0
-    .param p0    # Lcom/android/settings/deviceinfo/Status;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/settings/deviceinfo/Status;->NAI_length:I
 
@@ -407,7 +398,6 @@
 
 .method static synthetic access$1200(Lcom/android/settings/deviceinfo/Status;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/settings/deviceinfo/Status;
 
     iget-object v0, p0, Lcom/android/settings/deviceinfo/Status;->user_name:Ljava/lang/String;
 
@@ -416,8 +406,6 @@
 
 .method static synthetic access$1284(Lcom/android/settings/deviceinfo/Status;Ljava/lang/Object;)Ljava/lang/String;
     .locals 2
-    .param p0    # Lcom/android/settings/deviceinfo/Status;
-    .param p1    # Ljava/lang/Object;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -444,8 +432,6 @@
 
 .method static synthetic access$1300(Lcom/android/settings/deviceinfo/Status;[B)V
     .locals 0
-    .param p0    # Lcom/android/settings/deviceinfo/Status;
-    .param p1    # [B
 
     invoke-direct {p0, p1}, Lcom/android/settings/deviceinfo/Status;->setActivationDateStatus([B)V
 
@@ -454,8 +440,6 @@
 
 .method static synthetic access$1402(Lcom/android/settings/deviceinfo/Status;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/deviceinfo/Status;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/deviceinfo/Status;->mImsRegistered:Z
 
@@ -464,7 +448,6 @@
 
 .method static synthetic access$1500(Lcom/android/settings/deviceinfo/Status;)V
     .locals 0
-    .param p0    # Lcom/android/settings/deviceinfo/Status;
 
     invoke-direct {p0}, Lcom/android/settings/deviceinfo/Status;->updateRegistrationStatus()V
 
@@ -473,8 +456,6 @@
 
 .method static synthetic access$1602(Lcom/android/settings/deviceinfo/Status;Landroid/os/Messenger;)Landroid/os/Messenger;
     .locals 0
-    .param p0    # Lcom/android/settings/deviceinfo/Status;
-    .param p1    # Landroid/os/Messenger;
 
     iput-object p1, p0, Lcom/android/settings/deviceinfo/Status;->mServiceMessenger:Landroid/os/Messenger;
 
@@ -483,7 +464,6 @@
 
 .method static synthetic access$1700(Lcom/android/settings/deviceinfo/Status;)V
     .locals 0
-    .param p0    # Lcom/android/settings/deviceinfo/Status;
 
     invoke-direct {p0}, Lcom/android/settings/deviceinfo/Status;->getOemData()V
 
@@ -492,9 +472,6 @@
 
 .method static synthetic access$1800(Lcom/android/settings/deviceinfo/Status;II)V
     .locals 0
-    .param p0    # Lcom/android/settings/deviceinfo/Status;
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/settings/deviceinfo/Status;->getOemData(II)V
 
@@ -503,7 +480,6 @@
 
 .method static synthetic access$1900(Lcom/android/settings/deviceinfo/Status;)Landroid/preference/Preference;
     .locals 1
-    .param p0    # Lcom/android/settings/deviceinfo/Status;
 
     iget-object v0, p0, Lcom/android/settings/deviceinfo/Status;->mFirstCall:Landroid/preference/Preference;
 
@@ -512,7 +488,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/deviceinfo/Status;)Landroid/preference/Preference;
     .locals 1
-    .param p0    # Lcom/android/settings/deviceinfo/Status;
 
     iget-object v0, p0, Lcom/android/settings/deviceinfo/Status;->mBatteryLevel:Landroid/preference/Preference;
 
@@ -521,7 +496,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/deviceinfo/Status;)Landroid/preference/Preference;
     .locals 1
-    .param p0    # Lcom/android/settings/deviceinfo/Status;
 
     iget-object v0, p0, Lcom/android/settings/deviceinfo/Status;->mBatteryStatus:Landroid/preference/Preference;
 
@@ -530,8 +504,6 @@
 
 .method static synthetic access$402(Lcom/android/settings/deviceinfo/Status;I)I
     .locals 0
-    .param p0    # Lcom/android/settings/deviceinfo/Status;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/settings/deviceinfo/Status;->isSysScopeStatus:I
 
@@ -540,7 +512,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/deviceinfo/Status;)V
     .locals 0
-    .param p0    # Lcom/android/settings/deviceinfo/Status;
 
     invoke-direct {p0}, Lcom/android/settings/deviceinfo/Status;->changeSysScopeStatus()V
 
@@ -549,7 +520,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/deviceinfo/Status;)V
     .locals 0
-    .param p0    # Lcom/android/settings/deviceinfo/Status;
 
     invoke-direct {p0}, Lcom/android/settings/deviceinfo/Status;->updateDataState()V
 
@@ -558,7 +528,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/deviceinfo/Status;)V
     .locals 0
-    .param p0    # Lcom/android/settings/deviceinfo/Status;
 
     invoke-direct {p0}, Lcom/android/settings/deviceinfo/Status;->updateNetworkType()V
 
@@ -567,8 +536,6 @@
 
 .method static synthetic access$800(Lcom/android/settings/deviceinfo/Status;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/settings/deviceinfo/Status;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/settings/deviceinfo/Status;->updateAreaInfo(Ljava/lang/String;)V
 
@@ -585,7 +552,6 @@
 
 .method static synthetic access$902([B)[B
     .locals 0
-    .param p0    # [B
 
     sput-object p0, Lcom/android/settings/deviceinfo/Status;->buf:[B
 
@@ -728,7 +694,6 @@
 
 .method private convertDeviceIdtoDec(Ljava/lang/String;)Ljava/lang/StringBuilder;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p1}, Ljava/lang/String;->length()I
 
@@ -1372,8 +1337,6 @@
 
 .method private invokeOemRilRequestRaw([BLandroid/os/Message;)V
     .locals 3
-    .param p1    # [B
-    .param p2    # Landroid/os/Message;
 
     invoke-virtual {p2}, Landroid/os/Message;->getData()Landroid/os/Bundle;
 
@@ -1420,7 +1383,6 @@
 
 .method private pad(I)Ljava/lang/String;
     .locals 2
-    .param p1    # I
 
     const/16 v0, 0xa
 
@@ -1517,7 +1479,6 @@
 
 .method private removePreferenceFromScreen(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lcom/android/settings/deviceinfo/Status;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
@@ -1537,7 +1498,6 @@
 
 .method private setActivationDateStatus([B)V
     .locals 14
-    .param p1    # [B
 
     const/4 v12, 0x2
 
@@ -2004,7 +1964,6 @@
 
 .method private setRssiNoti(I)V
     .locals 7
-    .param p1    # I
 
     new-instance v0, Ljava/io/ByteArrayOutputStream;
 
@@ -2120,8 +2079,6 @@
 
 .method private setSummaryText(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-static {p2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -2285,7 +2242,6 @@
 
 .method private updateAreaInfo(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -5025,7 +4981,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 2
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual {p0}, Lcom/android/settings/deviceinfo/Status;->getWindow()Landroid/view/Window;
 

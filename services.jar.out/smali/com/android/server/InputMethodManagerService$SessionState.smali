@@ -29,10 +29,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/InputMethodManagerService;Lcom/android/server/InputMethodManagerService$ClientState;Lcom/android/internal/view/IInputMethod;Lcom/android/internal/view/IInputMethodSession;Landroid/view/InputChannel;)V
     .locals 0
-    .param p2    # Lcom/android/server/InputMethodManagerService$ClientState;
-    .param p3    # Lcom/android/internal/view/IInputMethod;
-    .param p4    # Lcom/android/internal/view/IInputMethodSession;
-    .param p5    # Landroid/view/InputChannel;
 
     iput-object p1, p0, Lcom/android/server/InputMethodManagerService$SessionState;->this$0:Lcom/android/server/InputMethodManagerService;
 

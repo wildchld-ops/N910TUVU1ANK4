@@ -106,10 +106,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Lcom/samsung/android/airbutton/AirButtonAdapterWrapper;Lcom/samsung/android/airbutton/Attributes;Z)V
     .locals 11
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/samsung/android/airbutton/AirButtonAdapterWrapper;
-    .param p3    # Lcom/samsung/android/airbutton/Attributes;
-    .param p4    # Z
 
     invoke-direct {p0, p1, p2, p3}, Lcom/samsung/android/airbutton/view/AbsAirButtonAnimateView;-><init>(Landroid/content/Context;Lcom/samsung/android/airbutton/AirButtonAdapterWrapper;Lcom/samsung/android/airbutton/Attributes;)V
 
@@ -666,7 +662,6 @@
 
 .method static synthetic access$000(Lcom/samsung/android/airbutton/view/AirButtonGlobalMenuView;)Landroid/widget/RelativeLayout;
     .locals 1
-    .param p0    # Lcom/samsung/android/airbutton/view/AirButtonGlobalMenuView;
 
     iget-object v0, p0, Lcom/samsung/android/airbutton/view/AirButtonGlobalMenuView;->mNewHelpPopupLayout:Landroid/widget/RelativeLayout;
 
@@ -675,8 +670,6 @@
 
 .method static synthetic access$002(Lcom/samsung/android/airbutton/view/AirButtonGlobalMenuView;Landroid/widget/RelativeLayout;)Landroid/widget/RelativeLayout;
     .locals 0
-    .param p0    # Lcom/samsung/android/airbutton/view/AirButtonGlobalMenuView;
-    .param p1    # Landroid/widget/RelativeLayout;
 
     iput-object p1, p0, Lcom/samsung/android/airbutton/view/AirButtonGlobalMenuView;->mNewHelpPopupLayout:Landroid/widget/RelativeLayout;
 
@@ -685,7 +678,6 @@
 
 .method static synthetic access$100(Lcom/samsung/android/airbutton/view/AirButtonGlobalMenuView;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/samsung/android/airbutton/view/AirButtonGlobalMenuView;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -694,7 +686,6 @@
 
 .method static synthetic access$200(Lcom/samsung/android/airbutton/view/AirButtonGlobalMenuView;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/samsung/android/airbutton/view/AirButtonGlobalMenuView;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -703,7 +694,6 @@
 
 .method static synthetic access$300(Lcom/samsung/android/airbutton/view/AirButtonGlobalMenuView;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/samsung/android/airbutton/view/AirButtonGlobalMenuView;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -712,7 +702,6 @@
 
 .method static synthetic access$400(Lcom/samsung/android/airbutton/view/AirButtonGlobalMenuView;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/samsung/android/airbutton/view/AirButtonGlobalMenuView;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -1549,8 +1538,6 @@
 
 .method private getAngle(DD)D
     .locals 8
-    .param p1    # D
-    .param p3    # D
 
     const-wide/16 v6, 0x0
 
@@ -1590,8 +1577,6 @@
 
 .method private getDistanceFromCenter(DD)D
     .locals 9
-    .param p1    # D
-    .param p3    # D
 
     const-wide/16 v1, 0x0
 
@@ -1612,7 +1597,6 @@
 
 .method private getItemIndex(Landroid/view/MotionEvent;)I
     .locals 10
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getX()F
 
@@ -1855,8 +1839,6 @@
 
 .method private playFocusAnimation(II)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
 
     const/4 v6, 0x1
 
@@ -2034,7 +2016,6 @@
 
 .method private playHideDescriptionAnimation(I)V
     .locals 8
-    .param p1    # I
 
     const/4 v2, 0x2
 
@@ -2233,7 +2214,6 @@
 
 .method private playMoveFocusAnimation(F)V
     .locals 6
-    .param p1    # F
 
     const/4 v5, 0x3
 
@@ -2329,8 +2309,6 @@
 
 .method private playShowDescriptionAnimation(IZ)V
     .locals 4
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v2, 0x2
 
@@ -3100,7 +3078,6 @@
 # virtual methods
 .method protected dispatchHoverEvent(Landroid/view/MotionEvent;)Z
     .locals 9
-    .param p1    # Landroid/view/MotionEvent;
 
     const v8, 0x1040aa1
 
@@ -3821,7 +3798,6 @@
 
 .method public onInterceptHoverEvent(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v0, 0x1
 
@@ -3960,7 +3936,6 @@
 
 .method protected onTouchDown(Landroid/view/MotionEvent;)V
     .locals 2
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-object v0, p0, Lcom/samsung/android/airbutton/view/AirButtonGlobalMenuView;->mNewHelpPopupLayout:Landroid/widget/RelativeLayout;
 
@@ -3998,7 +3973,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-object v0, p0, Lcom/samsung/android/airbutton/view/AirButtonGlobalMenuView;->mNewHelpPopupLayout:Landroid/widget/RelativeLayout;
 
@@ -4027,7 +4001,6 @@
 
 .method protected onTouchUp(Landroid/view/MotionEvent;)V
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-object v0, p0, Lcom/samsung/android/airbutton/view/AirButtonGlobalMenuView;->mNewHelpPopupLayout:Landroid/widget/RelativeLayout;
 
@@ -4063,8 +4036,6 @@
 
 .method public requestSendAccessibilityEvent(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/accessibility/AccessibilityEvent;
 
     const/4 v0, 0x1
 
@@ -4073,21 +4044,18 @@
 
 .method public sendAccessibilityEvent(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method protected showHoverEnterAnimation(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method protected showHoverExitAnimation(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method

@@ -25,8 +25,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Lcom/android/settings/common/ActionModeCallback$OnAcionModeListner;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/settings/common/ActionModeCallback$OnAcionModeListner;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -41,8 +39,6 @@
 # virtual methods
 .method public onActionItemClicked(Landroid/view/ActionMode;Landroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # Landroid/view/ActionMode;
-    .param p2    # Landroid/view/MenuItem;
 
     const/4 v0, 0x0
 
@@ -51,8 +47,6 @@
 
 .method public onCreateActionMode(Landroid/view/ActionMode;Landroid/view/Menu;)Z
     .locals 4
-    .param p1    # Landroid/view/ActionMode;
-    .param p2    # Landroid/view/Menu;
 
     iget-object v0, p0, Lcom/android/settings/common/ActionModeCallback;->mContext:Landroid/content/Context;
 
@@ -129,7 +123,6 @@
 
 .method public onDestroyActionMode(Landroid/view/ActionMode;)V
     .locals 1
-    .param p1    # Landroid/view/ActionMode;
 
     iget-object v0, p0, Lcom/android/settings/common/ActionModeCallback;->listner:Lcom/android/settings/common/ActionModeCallback$OnAcionModeListner;
 
@@ -145,8 +138,6 @@
 
 .method public onPrepareActionMode(Landroid/view/ActionMode;Landroid/view/Menu;)Z
     .locals 1
-    .param p1    # Landroid/view/ActionMode;
-    .param p2    # Landroid/view/Menu;
 
     const/4 v0, 0x0
 
@@ -155,7 +146,6 @@
 
 .method public setTitle(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     iget-object v2, p0, Lcom/android/settings/common/ActionModeCallback;->mCustomView:Landroid/view/View;
 

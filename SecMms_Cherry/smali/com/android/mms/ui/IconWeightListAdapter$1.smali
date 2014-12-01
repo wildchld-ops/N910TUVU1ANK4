@@ -40,8 +40,6 @@
 # virtual methods
 .method public compare(Lcom/android/mms/ui/IconListAdapter$IconListItem;Lcom/android/mms/ui/IconListAdapter$IconListItem;)I
     .locals 4
-    .param p1    # Lcom/android/mms/ui/IconListAdapter$IconListItem;
-    .param p2    # Lcom/android/mms/ui/IconListAdapter$IconListItem;
 
     check-cast p1, Lcom/android/mms/ui/IconWeightListAdapter$IconWeightListItem;
 
@@ -72,8 +70,6 @@
 
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p1, Lcom/android/mms/ui/IconListAdapter$IconListItem;
 

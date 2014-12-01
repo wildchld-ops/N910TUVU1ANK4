@@ -109,13 +109,6 @@
 # direct methods
 .method public constructor <init>(Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu;Lcom/sec/android/glview/TwGLContext;FFLandroid/app/Activity;Landroid/os/Handler;Lcom/sec/android/app/camera/panorama360/core/MorphoImageStitcher;I)V
     .locals 3
-    .param p2    # Lcom/sec/android/glview/TwGLContext;
-    .param p3    # F
-    .param p4    # F
-    .param p5    # Landroid/app/Activity;
-    .param p6    # Landroid/os/Handler;
-    .param p7    # Lcom/sec/android/app/camera/panorama360/core/MorphoImageStitcher;
-    .param p8    # I
 
     iput-object p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360View;->this$0:Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu;
 
@@ -260,8 +253,6 @@
 
 .method static synthetic access$1102(Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360View;Z)Z
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360View;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360View;->mResetCalled:Z
 
@@ -270,7 +261,6 @@
 
 .method static synthetic access$1200(Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360View;)I
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360View;
 
     iget v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360View;->mResetCount:I
 
@@ -279,8 +269,6 @@
 
 .method static synthetic access$1202(Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360View;I)I
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360View;
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360View;->mResetCount:I
 
@@ -289,8 +277,6 @@
 
 .method static synthetic access$1402(Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360View;Z)Z
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360View;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360View;->mAnimationEnable:Z
 
@@ -299,7 +285,6 @@
 
 .method static synthetic access$1600(Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360View;)[Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360View$RenderInfo;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360View;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360View;->mRenderInfo:[Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360View$RenderInfo;
 
@@ -308,7 +293,6 @@
 
 .method static synthetic access$7500(Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360View;)[I
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360View;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360View;->mAttachStatus:[I
 
@@ -410,8 +394,6 @@
 
 .method private pvRenderPreview(Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360View$RenderInfo;J)V
     .locals 21
-    .param p1    # Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360View$RenderInfo;
-    .param p2    # J
 
     move-object/from16 v0, p1
 
@@ -1941,7 +1923,6 @@
 
 .method protected onOrientationChanged(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "TwGLPanorama360Menu"
 
@@ -2061,7 +2042,6 @@
 
 .method public pvSetAnimationEnable(Z)V
     .locals 2
-    .param p1    # Z
 
     const-string v0, "TwGLPanorama360Menu"
 
@@ -2076,8 +2056,6 @@
 
 .method public pvSetAnimationInfo(II)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360View;->mSyncObj:Ljava/lang/Object;
 
@@ -2167,7 +2145,6 @@
 
 .method public pvSetDefaultScale(D)V
     .locals 2
-    .param p1    # D
 
     const-string v0, "TwGLPanorama360Menu"
 
@@ -2198,7 +2175,6 @@
 
 .method public pvSetDispType(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360View;->mSyncObj:Ljava/lang/Object;
 
@@ -2223,7 +2199,6 @@
 
 .method public pvSetDrawBgBlankMode(I)V
     .locals 2
-    .param p1    # I
 
     iget v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360View;->mDrawBgBlankMode:I
 
@@ -2260,7 +2235,6 @@
 
 .method public pvSetInputGyroscopeType(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360View;->mGyroscopeType:I
 
@@ -2269,7 +2243,6 @@
 
 .method public pvSetPanorama360ViewEventListener(Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360ViewEventListener;)V
     .locals 0
-    .param p1    # Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360ViewEventListener;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360View;->mListener:Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360ViewEventListener;
 
@@ -2278,7 +2251,6 @@
 
 .method public pvSetPreviewRotation(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360View;->mSyncObj:Ljava/lang/Object;
 
@@ -2345,7 +2317,6 @@
 
 .method public pvSetRenderEnable(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360View;->mSyncObj:Ljava/lang/Object;
 
@@ -2370,13 +2341,6 @@
 
 .method public pvSetRenderInfo([BLjava/util/ArrayList;[D[D[DIILjava/lang/String;)V
     .locals 11
-    .param p1    # [B
-    .param p3    # [D
-    .param p4    # [D
-    .param p5    # [D
-    .param p6    # I
-    .param p7    # I
-    .param p8    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([B",
@@ -2601,7 +2565,6 @@
 
 .method public pvSetScale(F)V
     .locals 10
-    .param p1    # F
 
     const-wide/high16 v8, 0x4008000000000000L
 
@@ -2683,8 +2646,6 @@
 
 .method public pvSetSwipeAngle(FF)V
     .locals 6
-    .param p1    # F
-    .param p2    # F
 
     const-string v0, "TwGLPanorama360Menu"
 
@@ -2729,8 +2690,6 @@
 
 .method public pvSetSwipeDistance(FF)V
     .locals 6
-    .param p1    # F
-    .param p2    # F
 
     const-string v0, "TwGLPanorama360Menu"
 

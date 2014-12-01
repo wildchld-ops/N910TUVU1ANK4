@@ -28,9 +28,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/internal/os/BatteryStatsImpl$Uid$Pkg$Serv;Landroid/content/pm/ApplicationInfo;I)V
     .locals 0
-    .param p1    # Lcom/android/internal/os/BatteryStatsImpl$Uid$Pkg$Serv;
-    .param p2    # Landroid/content/pm/ApplicationInfo;
-    .param p3    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

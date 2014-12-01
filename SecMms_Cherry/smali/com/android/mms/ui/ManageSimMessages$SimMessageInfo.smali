@@ -29,10 +29,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/mms/ui/ManageSimMessages;ILjava/lang/String;JLjava/lang/String;)V
     .locals 0
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # J
-    .param p6    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/mms/ui/ManageSimMessages$SimMessageInfo;->this$0:Lcom/android/mms/ui/ManageSimMessages;
 

@@ -36,14 +36,12 @@
 # virtual methods
 .method public onDisplayAdded(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onDisplayChanged(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/display/OverlayDisplayWindow$1;->this$0:Lcom/android/server/display/OverlayDisplayWindow;
 
@@ -85,7 +83,6 @@
 
 .method public onDisplayRemoved(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/display/OverlayDisplayWindow$1;->this$0:Lcom/android/server/display/OverlayDisplayWindow;
 

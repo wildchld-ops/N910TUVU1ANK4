@@ -22,7 +22,6 @@
 # direct methods
 .method constructor <init>(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/internal/app/IBatteryStats$Stub;-><init>()V
 
@@ -43,7 +42,6 @@
 
 .method static synthetic access$000(Lcom/android/server/am/BatteryStatsService;)Landroid/bluetooth/BluetoothHeadset;
     .locals 1
-    .param p0    # Lcom/android/server/am/BatteryStatsService;
 
     iget-object v0, p0, Lcom/android/server/am/BatteryStatsService;->mBluetoothHeadset:Landroid/bluetooth/BluetoothHeadset;
 
@@ -52,8 +50,6 @@
 
 .method static synthetic access$002(Lcom/android/server/am/BatteryStatsService;Landroid/bluetooth/BluetoothHeadset;)Landroid/bluetooth/BluetoothHeadset;
     .locals 0
-    .param p0    # Lcom/android/server/am/BatteryStatsService;
-    .param p1    # Landroid/bluetooth/BluetoothHeadset;
 
     iput-object p1, p0, Lcom/android/server/am/BatteryStatsService;->mBluetoothHeadset:Landroid/bluetooth/BluetoothHeadset;
 
@@ -62,7 +58,6 @@
 
 .method static synthetic access$100(Lcom/android/server/am/BatteryStatsService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/am/BatteryStatsService;
 
     iget-boolean v0, p0, Lcom/android/server/am/BatteryStatsService;->mBluetoothPendingStats:Z
 
@@ -71,8 +66,6 @@
 
 .method static synthetic access$102(Lcom/android/server/am/BatteryStatsService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/am/BatteryStatsService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/am/BatteryStatsService;->mBluetoothPendingStats:Z
 
@@ -81,7 +74,6 @@
 
 .method private dumpHelp(Ljava/io/PrintWriter;)V
     .locals 1
-    .param p1    # Ljava/io/PrintWriter;
 
     const-string v0, "Battery stats (batterystats) dump options:"
 
@@ -152,9 +144,6 @@
 # virtual methods
 .method protected dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 13
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     iget-object v11, p0, Lcom/android/server/am/BatteryStatsService;->mContext:Landroid/content/Context;
 
@@ -755,7 +744,6 @@
 
 .method public noteFullWifiLockAcquired(I)V
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/server/am/BatteryStatsService;->enforceCallingPermission()V
 
@@ -784,7 +772,6 @@
 
 .method public noteFullWifiLockAcquiredFromSource(Landroid/os/WorkSource;)V
     .locals 2
-    .param p1    # Landroid/os/WorkSource;
 
     invoke-virtual {p0}, Lcom/android/server/am/BatteryStatsService;->enforceCallingPermission()V
 
@@ -813,7 +800,6 @@
 
 .method public noteFullWifiLockReleased(I)V
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/server/am/BatteryStatsService;->enforceCallingPermission()V
 
@@ -842,7 +828,6 @@
 
 .method public noteFullWifiLockReleasedFromSource(Landroid/os/WorkSource;)V
     .locals 2
-    .param p1    # Landroid/os/WorkSource;
 
     invoke-virtual {p0}, Lcom/android/server/am/BatteryStatsService;->enforceCallingPermission()V
 
@@ -883,8 +868,6 @@
 
 .method public noteNetworkInterfaceType(Ljava/lang/String;I)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-virtual {p0}, Lcom/android/server/am/BatteryStatsService;->enforceCallingPermission()V
 
@@ -941,8 +924,6 @@
 
 .method public notePhoneDataConnectionState(IZ)V
     .locals 2
-    .param p1    # I
-    .param p2    # Z
 
     invoke-virtual {p0}, Lcom/android/server/am/BatteryStatsService;->enforceCallingPermission()V
 
@@ -1027,7 +1008,6 @@
 
 .method public notePhoneSignalStrength(Landroid/telephony/SignalStrength;)V
     .locals 2
-    .param p1    # Landroid/telephony/SignalStrength;
 
     invoke-virtual {p0}, Lcom/android/server/am/BatteryStatsService;->enforceCallingPermission()V
 
@@ -1056,7 +1036,6 @@
 
 .method public notePhoneState(I)V
     .locals 3
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/server/am/BatteryStatsService;->enforceCallingPermission()V
 
@@ -1093,7 +1072,6 @@
 
 .method public noteScreenBrightness(I)V
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/server/am/BatteryStatsService;->enforceCallingPermission()V
 
@@ -1178,7 +1156,6 @@
 
 .method public noteStartAudio(I)V
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/server/am/BatteryStatsService;->enforceCallingPermission()V
 
@@ -1207,7 +1184,6 @@
 
 .method public noteStartGps(I)V
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/server/am/BatteryStatsService;->enforceCallingPermission()V
 
@@ -1236,8 +1212,6 @@
 
 .method public noteStartSensor(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0}, Lcom/android/server/am/BatteryStatsService;->enforceCallingPermission()V
 
@@ -1266,7 +1240,6 @@
 
 .method public noteStartVideo(I)V
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/server/am/BatteryStatsService;->enforceCallingPermission()V
 
@@ -1295,10 +1268,6 @@
 
 .method public noteStartWakelock(IILjava/lang/String;I)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
 
     invoke-virtual {p0}, Lcom/android/server/am/BatteryStatsService;->enforceCallingPermission()V
 
@@ -1327,10 +1296,6 @@
 
 .method public noteStartWakelockFromSource(Landroid/os/WorkSource;ILjava/lang/String;I)V
     .locals 2
-    .param p1    # Landroid/os/WorkSource;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
 
     invoke-virtual {p0}, Lcom/android/server/am/BatteryStatsService;->enforceCallingPermission()V
 
@@ -1359,7 +1324,6 @@
 
 .method public noteStopAudio(I)V
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/server/am/BatteryStatsService;->enforceCallingPermission()V
 
@@ -1388,7 +1352,6 @@
 
 .method public noteStopGps(I)V
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/server/am/BatteryStatsService;->enforceCallingPermission()V
 
@@ -1417,8 +1380,6 @@
 
 .method public noteStopSensor(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0}, Lcom/android/server/am/BatteryStatsService;->enforceCallingPermission()V
 
@@ -1447,7 +1408,6 @@
 
 .method public noteStopVideo(I)V
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/server/am/BatteryStatsService;->enforceCallingPermission()V
 
@@ -1476,10 +1436,6 @@
 
 .method public noteStopWakelock(IILjava/lang/String;I)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
 
     invoke-virtual {p0}, Lcom/android/server/am/BatteryStatsService;->enforceCallingPermission()V
 
@@ -1508,10 +1464,6 @@
 
 .method public noteStopWakelockFromSource(Landroid/os/WorkSource;ILjava/lang/String;I)V
     .locals 2
-    .param p1    # Landroid/os/WorkSource;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
 
     invoke-virtual {p0}, Lcom/android/server/am/BatteryStatsService;->enforceCallingPermission()V
 
@@ -1540,8 +1492,6 @@
 
 .method public noteUserActivity(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0}, Lcom/android/server/am/BatteryStatsService;->enforceCallingPermission()V
 
@@ -1570,7 +1520,6 @@
 
 .method public noteVibratorOff(I)V
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/server/am/BatteryStatsService;->enforceCallingPermission()V
 
@@ -1599,8 +1548,6 @@
 
 .method public noteVibratorOn(IJ)V
     .locals 2
-    .param p1    # I
-    .param p2    # J
 
     invoke-virtual {p0}, Lcom/android/server/am/BatteryStatsService;->enforceCallingPermission()V
 
@@ -1629,8 +1576,6 @@
 
 .method public noteWifiBatchedScanStartedFromSource(Landroid/os/WorkSource;I)V
     .locals 2
-    .param p1    # Landroid/os/WorkSource;
-    .param p2    # I
 
     invoke-virtual {p0}, Lcom/android/server/am/BatteryStatsService;->enforceCallingPermission()V
 
@@ -1659,7 +1604,6 @@
 
 .method public noteWifiBatchedScanStoppedFromSource(Landroid/os/WorkSource;)V
     .locals 2
-    .param p1    # Landroid/os/WorkSource;
 
     invoke-virtual {p0}, Lcom/android/server/am/BatteryStatsService;->enforceCallingPermission()V
 
@@ -1688,7 +1632,6 @@
 
 .method public noteWifiMulticastDisabled(I)V
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/server/am/BatteryStatsService;->enforceCallingPermission()V
 
@@ -1717,7 +1660,6 @@
 
 .method public noteWifiMulticastDisabledFromSource(Landroid/os/WorkSource;)V
     .locals 2
-    .param p1    # Landroid/os/WorkSource;
 
     invoke-virtual {p0}, Lcom/android/server/am/BatteryStatsService;->enforceCallingPermission()V
 
@@ -1746,7 +1688,6 @@
 
 .method public noteWifiMulticastEnabled(I)V
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/server/am/BatteryStatsService;->enforceCallingPermission()V
 
@@ -1775,7 +1716,6 @@
 
 .method public noteWifiMulticastEnabledFromSource(Landroid/os/WorkSource;)V
     .locals 2
-    .param p1    # Landroid/os/WorkSource;
 
     invoke-virtual {p0}, Lcom/android/server/am/BatteryStatsService;->enforceCallingPermission()V
 
@@ -1860,7 +1800,6 @@
 
 .method public noteWifiRunning(Landroid/os/WorkSource;)V
     .locals 2
-    .param p1    # Landroid/os/WorkSource;
 
     invoke-virtual {p0}, Lcom/android/server/am/BatteryStatsService;->enforceCallingPermission()V
 
@@ -1889,8 +1828,6 @@
 
 .method public noteWifiRunningChanged(Landroid/os/WorkSource;Landroid/os/WorkSource;)V
     .locals 2
-    .param p1    # Landroid/os/WorkSource;
-    .param p2    # Landroid/os/WorkSource;
 
     invoke-virtual {p0}, Lcom/android/server/am/BatteryStatsService;->enforceCallingPermission()V
 
@@ -1919,7 +1856,6 @@
 
 .method public noteWifiScanStarted(I)V
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/server/am/BatteryStatsService;->enforceCallingPermission()V
 
@@ -1948,7 +1884,6 @@
 
 .method public noteWifiScanStartedFromSource(Landroid/os/WorkSource;)V
     .locals 2
-    .param p1    # Landroid/os/WorkSource;
 
     invoke-virtual {p0}, Lcom/android/server/am/BatteryStatsService;->enforceCallingPermission()V
 
@@ -1977,7 +1912,6 @@
 
 .method public noteWifiScanStopped(I)V
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/server/am/BatteryStatsService;->enforceCallingPermission()V
 
@@ -2006,7 +1940,6 @@
 
 .method public noteWifiScanStoppedFromSource(Landroid/os/WorkSource;)V
     .locals 2
-    .param p1    # Landroid/os/WorkSource;
 
     invoke-virtual {p0}, Lcom/android/server/am/BatteryStatsService;->enforceCallingPermission()V
 
@@ -2035,7 +1968,6 @@
 
 .method public noteWifiStopped(Landroid/os/WorkSource;)V
     .locals 2
-    .param p1    # Landroid/os/WorkSource;
 
     invoke-virtual {p0}, Lcom/android/server/am/BatteryStatsService;->enforceCallingPermission()V
 
@@ -2064,7 +1996,6 @@
 
 .method public publish(Landroid/content/Context;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
 
     iput-object p1, p0, Lcom/android/server/am/BatteryStatsService;->mContext:Landroid/content/Context;
 
@@ -2117,12 +2048,6 @@
 
 .method public setBatteryState(IIIIII)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     invoke-virtual {p0}, Lcom/android/server/am/BatteryStatsService;->enforceCallingPermission()V
 

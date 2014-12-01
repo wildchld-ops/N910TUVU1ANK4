@@ -72,9 +72,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/applications/ManageNotification;Landroid/widget/TextView;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/settings/applications/ManageNotification;
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Lcom/android/settings/applications/ManageNotification;->setSummaryText(Landroid/widget/TextView;Ljava/lang/String;)V
 
@@ -83,7 +80,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/applications/ManageNotification;)Lcom/android/settings/applications/ManageNotification$MyAdapter;
     .locals 1
-    .param p0    # Lcom/android/settings/applications/ManageNotification;
 
     iget-object v0, p0, Lcom/android/settings/applications/ManageNotification;->appAdapter:Lcom/android/settings/applications/ManageNotification$MyAdapter;
 
@@ -92,10 +88,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/applications/ManageNotification;Ljava/lang/String;II)V
     .locals 0
-    .param p0    # Lcom/android/settings/applications/ManageNotification;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/settings/applications/ManageNotification;->setNewConfigure(Ljava/lang/String;II)V
 
@@ -104,8 +96,6 @@
 
 .method public static getNotificationSetting(Landroid/content/Context;Ljava/lang/String;)I
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/android/settings/applications/ManageNotification;->getSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -122,7 +112,6 @@
 
 .method public static getSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     const-string v0, "notification_manager_settings"
 
@@ -137,8 +126,6 @@
 
 .method private initLayout(Landroid/view/LayoutInflater;Landroid/view/View;)V
     .locals 3
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/View;
 
     const v0, 0x7f0b0321
 
@@ -177,7 +164,6 @@
 
 .method private isThisASystemPackage(Ljava/lang/String;)Z
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -273,9 +259,6 @@
 
 .method public static saveNotificationSetting(Landroid/content/Context;Ljava/lang/String;I)V
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-static {p0}, Lcom/android/settings/applications/ManageNotification;->getSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -294,9 +277,6 @@
 
 .method private setNewConfigure(Ljava/lang/String;II)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     if-nez p2, :cond_0
 
@@ -317,8 +297,6 @@
 
 .method private setNotificationsEnabled(Ljava/lang/String;Z)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const-string v3, "notification"
 
@@ -372,8 +350,6 @@
 
 .method private setSummaryText(Landroid/widget/TextView;Ljava/lang/String;)V
     .locals 5
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # Ljava/lang/String;
 
     const v4, 0x7f091b7a
 
@@ -459,7 +435,6 @@
 
 .method private showDialog(Ljava/lang/String;)V
     .locals 12
-    .param p1    # Ljava/lang/String;
 
     const/4 v8, 0x1
 
@@ -594,7 +569,6 @@
 # virtual methods
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 6
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -696,9 +670,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 3
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const v1, 0x7f040144
 
@@ -715,9 +686,6 @@
 
 .method public onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
     .locals 2
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

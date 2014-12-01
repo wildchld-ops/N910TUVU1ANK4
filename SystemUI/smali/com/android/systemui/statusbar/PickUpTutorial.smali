@@ -162,7 +162,6 @@
 
 .method static synthetic access$000(Lcom/android/systemui/statusbar/PickUpTutorial;)[B
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/PickUpTutorial;
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/PickUpTutorial;->ivt:[B
 
@@ -171,7 +170,6 @@
 
 .method static synthetic access$100(Lcom/android/systemui/statusbar/PickUpTutorial;)Landroid/os/SystemVibrator;
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/PickUpTutorial;
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/PickUpTutorial;->mVibrator:Landroid/os/SystemVibrator;
 
@@ -180,7 +178,6 @@
 
 .method static synthetic access$1000(Lcom/android/systemui/statusbar/PickUpTutorial;)V
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/PickUpTutorial;
 
     invoke-direct {p0}, Lcom/android/systemui/statusbar/PickUpTutorial;->tryPickUpDialog()V
 
@@ -189,7 +186,6 @@
 
 .method static synthetic access$200(Lcom/android/systemui/statusbar/PickUpTutorial;)Z
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/PickUpTutorial;
 
     iget-boolean v0, p0, Lcom/android/systemui/statusbar/PickUpTutorial;->mLCDisOn:Z
 
@@ -198,8 +194,6 @@
 
 .method static synthetic access$202(Lcom/android/systemui/statusbar/PickUpTutorial;Z)Z
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/PickUpTutorial;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/systemui/statusbar/PickUpTutorial;->mLCDisOn:Z
 
@@ -208,7 +202,6 @@
 
 .method static synthetic access$300(Lcom/android/systemui/statusbar/PickUpTutorial;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/PickUpTutorial;
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/PickUpTutorial;->mHandler:Landroid/os/Handler;
 
@@ -217,7 +210,6 @@
 
 .method static synthetic access$400(Lcom/android/systemui/statusbar/PickUpTutorial;)Landroid/os/PowerManager;
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/PickUpTutorial;
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/PickUpTutorial;->pm:Landroid/os/PowerManager;
 
@@ -226,7 +218,6 @@
 
 .method static synthetic access$500(Lcom/android/systemui/statusbar/PickUpTutorial;)Z
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/PickUpTutorial;
 
     iget-boolean v0, p0, Lcom/android/systemui/statusbar/PickUpTutorial;->mBack:Z
 
@@ -235,7 +226,6 @@
 
 .method static synthetic access$600(Lcom/android/systemui/statusbar/PickUpTutorial;)Z
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/PickUpTutorial;
 
     iget-boolean v0, p0, Lcom/android/systemui/statusbar/PickUpTutorial;->mPaused:Z
 
@@ -244,7 +234,6 @@
 
 .method static synthetic access$700(Lcom/android/systemui/statusbar/PickUpTutorial;)I
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/PickUpTutorial;
 
     iget v0, p0, Lcom/android/systemui/statusbar/PickUpTutorial;->mCount:I
 
@@ -253,7 +242,6 @@
 
 .method static synthetic access$708(Lcom/android/systemui/statusbar/PickUpTutorial;)I
     .locals 2
-    .param p0    # Lcom/android/systemui/statusbar/PickUpTutorial;
 
     iget v0, p0, Lcom/android/systemui/statusbar/PickUpTutorial;->mCount:I
 
@@ -266,7 +254,6 @@
 
 .method static synthetic access$800(Lcom/android/systemui/statusbar/PickUpTutorial;)Landroid/widget/FrameLayout;
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/PickUpTutorial;
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/PickUpTutorial;->mPhonePutDown:Landroid/widget/FrameLayout;
 
@@ -275,7 +262,6 @@
 
 .method static synthetic access$900(Lcom/android/systemui/statusbar/PickUpTutorial;)Z
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/PickUpTutorial;
 
     iget-boolean v0, p0, Lcom/android/systemui/statusbar/PickUpTutorial;->mReadyToShowPutDownDialog:Z
 
@@ -284,8 +270,6 @@
 
 .method static synthetic access$902(Lcom/android/systemui/statusbar/PickUpTutorial;Z)Z
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/PickUpTutorial;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/systemui/statusbar/PickUpTutorial;->mReadyToShowPutDownDialog:Z
 
@@ -302,10 +286,6 @@
 
 .method public static getResourceId(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
     .locals 7
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const/4 v4, -0x1
 
@@ -440,9 +420,6 @@
 
 .method public static setBackgroundViewer(Landroid/content/Context;Landroid/view/View;Ljava/lang/String;)V
     .locals 8
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/view/View;
-    .param p2    # Ljava/lang/String;
 
     move-object v2, p1
 
@@ -587,9 +564,6 @@
 
 .method protected onActivityResult(IILandroid/content/Intent;)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     invoke-super {p0, p1, p2, p3}, Landroid/app/Activity;->onActivityResult(IILandroid/content/Intent;)V
 
@@ -691,7 +665,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 2
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -759,7 +732,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v2, 0x1
 
@@ -1052,7 +1024,6 @@
 
 .method public setMotionSensor(Z)V
     .locals 3
-    .param p1    # Z
 
     const-string v0, "STATUSBAR-PickUpTutorial"
 

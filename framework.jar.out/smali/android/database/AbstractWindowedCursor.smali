@@ -41,7 +41,6 @@
 
 .method protected clearOrCreateWindow(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/database/AbstractWindowedCursor;->mWindow:Landroid/database/CursorWindow;
 
@@ -85,8 +84,6 @@
 
 .method public copyStringToBuffer(ILandroid/database/CharArrayBuffer;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/database/CharArrayBuffer;
 
     invoke-virtual {p0}, Landroid/database/AbstractWindowedCursor;->checkPosition()V
 
@@ -101,7 +98,6 @@
 
 .method public getBlob(I)[B
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/database/AbstractWindowedCursor;->checkPosition()V
 
@@ -118,7 +114,6 @@
 
 .method public getDouble(I)D
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/database/AbstractWindowedCursor;->checkPosition()V
 
@@ -135,7 +130,6 @@
 
 .method public getFloat(I)F
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/database/AbstractWindowedCursor;->checkPosition()V
 
@@ -152,7 +146,6 @@
 
 .method public getInt(I)I
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/database/AbstractWindowedCursor;->checkPosition()V
 
@@ -169,7 +162,6 @@
 
 .method public getLong(I)J
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/database/AbstractWindowedCursor;->checkPosition()V
 
@@ -186,7 +178,6 @@
 
 .method public getShort(I)S
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/database/AbstractWindowedCursor;->checkPosition()V
 
@@ -203,7 +194,6 @@
 
 .method public getString(I)Ljava/lang/String;
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/database/AbstractWindowedCursor;->checkPosition()V
 
@@ -220,7 +210,6 @@
 
 .method public getType(I)I
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/database/AbstractWindowedCursor;->checkPosition()V
 
@@ -263,7 +252,6 @@
 
 .method public isBlob(I)Z
     .locals 2
-    .param p1    # I
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -288,7 +276,6 @@
 
 .method public isFloat(I)Z
     .locals 2
-    .param p1    # I
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -313,7 +300,6 @@
 
 .method public isLong(I)Z
     .locals 2
-    .param p1    # I
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -336,7 +322,6 @@
 
 .method public isNull(I)Z
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/database/AbstractWindowedCursor;->checkPosition()V
 
@@ -363,7 +348,6 @@
 
 .method public isString(I)Z
     .locals 2
-    .param p1    # I
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -398,7 +382,6 @@
 
 .method public setWindow(Landroid/database/CursorWindow;)V
     .locals 1
-    .param p1    # Landroid/database/CursorWindow;
 
     iget-object v0, p0, Landroid/database/AbstractWindowedCursor;->mWindow:Landroid/database/CursorWindow;
 

@@ -36,8 +36,6 @@
 # virtual methods
 .method public onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     iget-object v0, p0, Lcom/android/launcher2/MenuWidgets$7;->this$0:Lcom/android/launcher2/MenuWidgets;
 

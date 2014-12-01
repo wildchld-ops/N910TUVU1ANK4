@@ -21,7 +21,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/launcher2/HomeView;Landroid/os/Handler;)V
     .locals 0
-    .param p2    # Landroid/os/Handler;
 
     iput-object p1, p0, Lcom/android/launcher2/HomeView$26;->this$0:Lcom/android/launcher2/HomeView;
 
@@ -34,7 +33,6 @@
 # virtual methods
 .method public onChange(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method

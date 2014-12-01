@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Lcom/android/server/am/AMSLogger;Lcom/android/server/am/AMSLogger$1;)V
     .locals 0
-    .param p1    # Lcom/android/server/am/AMSLogger;
-    .param p2    # Lcom/android/server/am/AMSLogger$1;
 
     invoke-direct {p0, p1}, Lcom/android/server/am/AMSLogger$AMSFormatter;-><init>(Lcom/android/server/am/AMSLogger;)V
 
@@ -43,7 +41,6 @@
 # virtual methods
 .method public format(Ljava/util/logging/LogRecord;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/util/logging/LogRecord;
 
     new-instance v0, Ljava/lang/StringBuilder;
 

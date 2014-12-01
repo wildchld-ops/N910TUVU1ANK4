@@ -37,8 +37,6 @@
 
 .method static synthetic access$000(Landroid/hardware/contextaware/utilbundle/CaTelephonyManager;I)V
     .locals 0
-    .param p0    # Landroid/hardware/contextaware/utilbundle/CaTelephonyManager;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/hardware/contextaware/utilbundle/CaTelephonyManager;->sendCallStatusToSensorHub(I)V
 
@@ -90,7 +88,6 @@
 
 .method private sendCallStatusToSensorHub(I)V
     .locals 5
-    .param p1    # I
 
     const/4 v4, 0x2
 
@@ -148,7 +145,6 @@
 # virtual methods
 .method public final initializeManager(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     if-nez p1, :cond_0
 

@@ -94,7 +94,6 @@
 
 .method public snapTo(I)V
     .locals 3
-    .param p1    # I
 
     iget-boolean v0, p0, Lcom/android/launcher2/PagedView$PagePreviewSnapDelay;->isRunning:Z
 

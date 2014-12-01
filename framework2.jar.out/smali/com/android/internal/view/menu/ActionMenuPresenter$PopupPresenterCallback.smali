@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Lcom/android/internal/view/menu/ActionMenuPresenter;Lcom/android/internal/view/menu/ActionMenuPresenter$1;)V
     .locals 0
-    .param p1    # Lcom/android/internal/view/menu/ActionMenuPresenter;
-    .param p2    # Lcom/android/internal/view/menu/ActionMenuPresenter$1;
 
     invoke-direct {p0, p1}, Lcom/android/internal/view/menu/ActionMenuPresenter$PopupPresenterCallback;-><init>(Lcom/android/internal/view/menu/ActionMenuPresenter;)V
 
@@ -46,8 +44,6 @@
 # virtual methods
 .method public onCloseMenu(Lcom/android/internal/view/menu/MenuBuilder;Z)V
     .locals 3
-    .param p1    # Lcom/android/internal/view/menu/MenuBuilder;
-    .param p2    # Z
 
     instance-of v1, p1, Lcom/android/internal/view/menu/SubMenuBuilder;
 
@@ -82,7 +78,6 @@
 
 .method public onOpenSubMenu(Lcom/android/internal/view/menu/MenuBuilder;)Z
     .locals 4
-    .param p1    # Lcom/android/internal/view/menu/MenuBuilder;
 
     const/4 v2, 0x0
 

@@ -92,7 +92,6 @@
 
 .method public constructor <init>(I)V
     .locals 0
-    .param p1    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -103,7 +102,6 @@
 
 .method public constructor <init>(Landroid/os/Parcel;)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -118,8 +116,6 @@
 
 .method public static formatUid(Ljava/io/PrintWriter;I)V
     .locals 4
-    .param p0    # Ljava/io/PrintWriter;
-    .param p1    # I
 
     const v3, 0x182b8
 
@@ -188,8 +184,6 @@
 
 .method public static formatUid(Ljava/lang/StringBuilder;I)V
     .locals 4
-    .param p0    # Ljava/lang/StringBuilder;
-    .param p1    # I
 
     const v3, 0x182b8
 
@@ -258,7 +252,6 @@
 
 .method public static final getAppId(I)I
     .locals 1
-    .param p0    # I
 
     const v0, 0x186a0
 
@@ -283,7 +276,6 @@
 
 .method public static final getSharedAppGid(I)I
     .locals 2
-    .param p0    # I
 
     const v0, 0xc350
 
@@ -300,8 +292,6 @@
 
 .method public static final getUid(II)I
     .locals 2
-    .param p0    # I
-    .param p1    # I
 
     const v1, 0x186a0
 
@@ -316,7 +306,6 @@
 
 .method public static final getUserId(I)I
     .locals 1
-    .param p0    # I
 
     const v0, 0x186a0
 
@@ -327,7 +316,6 @@
 
 .method public static isApp(I)Z
     .locals 3
-    .param p0    # I
 
     const/4 v1, 0x0
 
@@ -353,7 +341,6 @@
 
 .method public static final isIsolated(I)Z
     .locals 3
-    .param p0    # I
 
     const/4 v1, 0x0
 
@@ -379,8 +366,6 @@
 
 .method public static final isSameApp(II)Z
     .locals 2
-    .param p0    # I
-    .param p1    # I
 
     invoke-static {p0}, Landroid/os/UserHandle;->getAppId(I)I
 
@@ -405,8 +390,6 @@
 
 .method public static final isSameUser(II)Z
     .locals 2
-    .param p0    # I
-    .param p1    # I
 
     invoke-static {p0}, Landroid/os/UserHandle;->getUserId(I)I
 
@@ -445,7 +428,6 @@
 
 .method public static readFromParcel(Landroid/os/Parcel;)Landroid/os/UserHandle;
     .locals 2
-    .param p0    # Landroid/os/Parcel;
 
     invoke-virtual {p0}, Landroid/os/Parcel;->readInt()I
 
@@ -470,8 +452,6 @@
 
 .method public static writeToParcel(Landroid/os/UserHandle;Landroid/os/Parcel;)V
     .locals 1
-    .param p0    # Landroid/os/UserHandle;
-    .param p1    # Landroid/os/Parcel;
 
     if-eqz p0, :cond_0
 
@@ -502,7 +482,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 5
-    .param p1    # Ljava/lang/Object;
 
     const/4 v2, 0x0
 
@@ -585,8 +564,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget v0, p0, Landroid/os/UserHandle;->mHandle:I
 

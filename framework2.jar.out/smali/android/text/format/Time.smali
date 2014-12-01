@@ -177,7 +177,6 @@
 
 .method public constructor <init>(Landroid/text/format/Time;)V
     .locals 0
-    .param p1    # Landroid/text/format/Time;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -188,7 +187,6 @@
 
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -222,8 +220,6 @@
 
 .method public static compare(Landroid/text/format/Time;Landroid/text/format/Time;)I
     .locals 2
-    .param p0    # Landroid/text/format/Time;
-    .param p1    # Landroid/text/format/Time;
 
     if-nez p0, :cond_0
 
@@ -273,8 +269,6 @@
 
 .method public static getJulianDay(JJ)I
     .locals 8
-    .param p0    # J
-    .param p2    # J
 
     const-wide/16 v4, 0x3e8
 
@@ -297,7 +291,6 @@
 
 .method public static getJulianMondayFromWeeksSinceEpoch(I)I
     .locals 2
-    .param p0    # I
 
     const v0, 0x253d89
 
@@ -310,8 +303,6 @@
 
 .method public static getWeeksSinceEpochFromJulianDay(II)I
     .locals 3
-    .param p0    # I
-    .param p1    # I
 
     rsub-int/lit8 v0, p1, 0x4
 
@@ -333,7 +324,6 @@
 
 .method public static isEpoch(Landroid/text/format/Time;)Z
     .locals 5
-    .param p0    # Landroid/text/format/Time;
 
     const/4 v2, 0x1
 
@@ -362,7 +352,6 @@
 
 .method private localizeDigits(Ljava/lang/String;)Ljava/lang/String;
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p1}, Ljava/lang/String;->length()I
 
@@ -425,7 +414,6 @@
 # virtual methods
 .method public after(Landroid/text/format/Time;)Z
     .locals 1
-    .param p1    # Landroid/text/format/Time;
 
     invoke-static {p0, p1}, Landroid/text/format/Time;->compare(Landroid/text/format/Time;Landroid/text/format/Time;)I
 
@@ -446,7 +434,6 @@
 
 .method public before(Landroid/text/format/Time;)Z
     .locals 1
-    .param p1    # Landroid/text/format/Time;
 
     invoke-static {p0, p1}, Landroid/text/format/Time;->compare(Landroid/text/format/Time;Landroid/text/format/Time;)I
 
@@ -467,7 +454,6 @@
 
 .method public clear(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -515,7 +501,6 @@
 
 .method public format(Ljava/lang/String;)Ljava/lang/String;
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const-class v5, Landroid/text/format/Time;
 
@@ -650,7 +635,6 @@
 
 .method public format3339(Z)Ljava/lang/String;
     .locals 10
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -760,7 +744,6 @@
 
 .method public getActualMaximum(I)I
     .locals 5
-    .param p1    # I
 
     const/16 v0, 0x3b
 
@@ -966,7 +949,6 @@
 
 .method public parse(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -1002,7 +984,6 @@
 
 .method public parse3339(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -1038,9 +1019,6 @@
 
 .method public set(III)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v1, 0x0
 
@@ -1077,12 +1055,6 @@
 
 .method public set(IIIIII)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     const/4 v0, 0x0
 
@@ -1120,7 +1092,6 @@
 
 .method public set(Landroid/text/format/Time;)V
     .locals 2
-    .param p1    # Landroid/text/format/Time;
 
     iget-object v0, p1, Landroid/text/format/Time;->timezone:Ljava/lang/String;
 
@@ -1175,7 +1146,6 @@
 
 .method public setJulianDay(I)J
     .locals 9
-    .param p1    # I
 
     const/4 v8, 0x0
 

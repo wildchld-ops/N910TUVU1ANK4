@@ -53,11 +53,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/INativeDaemonConnectorCallbacks;Ljava/lang/String;ILjava/lang/String;I)V
     .locals 2
-    .param p1    # Lcom/android/server/INativeDaemonConnectorCallbacks;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -110,8 +105,6 @@
 
 .method static appendEscaped(Ljava/lang/StringBuilder;Ljava/lang/String;)V
     .locals 6
-    .param p0    # Ljava/lang/StringBuilder;
-    .param p1    # Ljava/lang/String;
 
     const/16 v5, 0x22
 
@@ -943,7 +936,6 @@
 
 .method private log(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/server/NativeDaemonConnector;->mLocalLog:Landroid/util/LocalLog;
 
@@ -954,7 +946,6 @@
 
 .method private loge(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/server/NativeDaemonConnector;->TAG:Ljava/lang/String;
 
@@ -969,11 +960,6 @@
 
 .method static varargs makeCommand(Ljava/lang/StringBuilder;Ljava/lang/StringBuilder;ILjava/lang/String;[Ljava/lang/Object;)V
     .locals 8
-    .param p0    # Ljava/lang/StringBuilder;
-    .param p1    # Ljava/lang/StringBuilder;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # [Ljava/lang/Object;
 
     const/4 v7, 0x0
 
@@ -1125,7 +1111,6 @@
 # virtual methods
 .method public doCommand(Ljava/lang/String;)Ljava/util/ArrayList;
     .locals 7
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1186,9 +1171,6 @@
 
 .method public dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/server/NativeDaemonConnector;->mLocalLog:Landroid/util/LocalLog;
 
@@ -1205,7 +1187,6 @@
 
 .method public execute(Lcom/android/server/NativeDaemonConnector$Command;)Lcom/android/server/NativeDaemonEvent;
     .locals 2
-    .param p1    # Lcom/android/server/NativeDaemonConnector$Command;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/android/server/NativeDaemonConnectorException;
@@ -1235,8 +1216,6 @@
 
 .method public varargs execute(Ljava/lang/String;[Ljava/lang/Object;)Lcom/android/server/NativeDaemonEvent;
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/android/server/NativeDaemonConnectorException;
@@ -1289,9 +1268,6 @@
 
 .method public varargs execute(ILjava/lang/String;[Ljava/lang/Object;)[Lcom/android/server/NativeDaemonEvent;
     .locals 19
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # [Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/android/server/NativeDaemonConnectorException;
@@ -1616,7 +1592,6 @@
 
 .method public executeForList(Lcom/android/server/NativeDaemonConnector$Command;)[Lcom/android/server/NativeDaemonEvent;
     .locals 2
-    .param p1    # Lcom/android/server/NativeDaemonConnector$Command;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/android/server/NativeDaemonConnectorException;
@@ -1646,8 +1621,6 @@
 
 .method public varargs executeForList(Ljava/lang/String;[Ljava/lang/Object;)[Lcom/android/server/NativeDaemonEvent;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/android/server/NativeDaemonConnectorException;
@@ -1665,7 +1638,6 @@
 
 .method public handleMessage(Landroid/os/Message;)Z
     .locals 6
-    .param p1    # Landroid/os/Message;
 
     const/4 v5, 0x1
 

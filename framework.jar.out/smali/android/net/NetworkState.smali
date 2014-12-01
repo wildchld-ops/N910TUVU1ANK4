@@ -46,9 +46,6 @@
 
 .method public constructor <init>(Landroid/net/NetworkInfo;Landroid/net/LinkProperties;Landroid/net/LinkCapabilities;)V
     .locals 6
-    .param p1    # Landroid/net/NetworkInfo;
-    .param p2    # Landroid/net/LinkProperties;
-    .param p3    # Landroid/net/LinkCapabilities;
 
     const/4 v4, 0x0
 
@@ -69,11 +66,6 @@
 
 .method public constructor <init>(Landroid/net/NetworkInfo;Landroid/net/LinkProperties;Landroid/net/LinkCapabilities;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Landroid/net/NetworkInfo;
-    .param p2    # Landroid/net/LinkProperties;
-    .param p3    # Landroid/net/LinkCapabilities;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -92,7 +84,6 @@
 
 .method public constructor <init>(Landroid/os/Parcel;)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
 
     const/4 v1, 0x0
 
@@ -149,8 +140,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v0, p0, Landroid/net/NetworkState;->networkInfo:Landroid/net/NetworkInfo;
 

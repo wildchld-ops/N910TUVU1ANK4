@@ -35,7 +35,6 @@
 
 .method private readObject(Ljava/io/ObjectInputStream;)V
     .locals 1
-    .param p1    # Ljava/io/ObjectInputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -58,7 +57,6 @@
 # virtual methods
 .method protected base64Encode([B)Ljava/lang/String;
     .locals 2
-    .param p1    # [B
 
     new-instance v0, Ljava/lang/String;
 
@@ -75,7 +73,6 @@
 
 .method protected decodeBase64(Ljava/lang/String;)[B
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Loauth/signpost/signature/OAuthMessageSigner;->base64:Lorg/apache/commons/codec/binary/Base64;
 
@@ -111,7 +108,6 @@
 
 .method public setConsumerSecret(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Loauth/signpost/signature/OAuthMessageSigner;->consumerSecret:Ljava/lang/String;
 
@@ -120,7 +116,6 @@
 
 .method public setTokenSecret(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Loauth/signpost/signature/OAuthMessageSigner;->tokenSecret:Ljava/lang/String;
 

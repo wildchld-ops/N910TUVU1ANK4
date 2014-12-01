@@ -36,8 +36,6 @@
 # virtual methods
 .method public OnTwMultiSelectStart(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     const-string v0, "FingerPrintManagerListDeletenew"
 
@@ -50,8 +48,6 @@
 
 .method public OnTwMultiSelectStop(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     const-string v0, "FingerPrintManagerListDeletenew"
 
@@ -147,12 +143,6 @@
 
 .method public onTwMultiSelected(Landroid/widget/AdapterView;Landroid/view/View;IJZZZ)V
     .locals 3
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
-    .param p6    # Z
-    .param p7    # Z
-    .param p8    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

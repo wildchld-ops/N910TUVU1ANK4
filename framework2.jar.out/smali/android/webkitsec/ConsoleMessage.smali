@@ -24,10 +24,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;ILandroid/webkitsec/ConsoleMessage$MessageLevel;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Landroid/webkitsec/ConsoleMessage$MessageLevel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

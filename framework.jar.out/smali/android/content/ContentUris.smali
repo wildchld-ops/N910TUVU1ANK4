@@ -14,8 +14,6 @@
 
 .method public static appendId(Landroid/net/Uri$Builder;J)Landroid/net/Uri$Builder;
     .locals 1
-    .param p0    # Landroid/net/Uri$Builder;
-    .param p1    # J
 
     invoke-static {p1, p2}, Ljava/lang/String;->valueOf(J)Ljava/lang/String;
 
@@ -30,7 +28,6 @@
 
 .method public static parseId(Landroid/net/Uri;)J
     .locals 3
-    .param p0    # Landroid/net/Uri;
 
     invoke-virtual {p0}, Landroid/net/Uri;->getLastPathSegment()Ljava/lang/String;
 
@@ -53,8 +50,6 @@
 
 .method public static withAppendedId(Landroid/net/Uri;J)Landroid/net/Uri;
     .locals 1
-    .param p0    # Landroid/net/Uri;
-    .param p1    # J
 
     invoke-virtual {p0}, Landroid/net/Uri;->buildUpon()Landroid/net/Uri$Builder;
 

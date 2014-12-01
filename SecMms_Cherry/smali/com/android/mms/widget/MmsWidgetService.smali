@@ -60,7 +60,6 @@
 # virtual methods
 .method public onGetViewFactory(Landroid/content/Intent;)Landroid/widget/RemoteViewsService$RemoteViewsFactory;
     .locals 3
-    .param p1    # Landroid/content/Intent;
 
     const-string v0, "Mms/WidgetService"
 

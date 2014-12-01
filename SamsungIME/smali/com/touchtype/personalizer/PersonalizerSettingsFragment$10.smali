@@ -36,7 +36,6 @@
 # virtual methods
 .method public onCancel(Landroid/content/DialogInterface;)V
     .locals 3
-    .param p1    # Landroid/content/DialogInterface;
 
     iget-object v1, p0, Lcom/touchtype/personalizer/PersonalizerSettingsFragment$10;->this$0:Lcom/touchtype/personalizer/PersonalizerSettingsFragment;
 

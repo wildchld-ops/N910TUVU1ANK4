@@ -33,8 +33,6 @@
 # virtual methods
 .method public onGetStatsCompleted(Landroid/content/pm/PackageStats;Z)V
     .locals 16
-    .param p1    # Landroid/content/pm/PackageStats;
-    .param p2    # Z
 
     const/4 v9, 0x0
 

@@ -36,7 +36,6 @@
 # virtual methods
 .method public onApplyTransformation(F)V
     .locals 4
-    .param p1    # F
 
     iget-object v2, p0, Lcom/android/mms/animation/MsgDeleteActionAnimation$1;->this$0:Lcom/android/mms/animation/MsgDeleteActionAnimation;
 

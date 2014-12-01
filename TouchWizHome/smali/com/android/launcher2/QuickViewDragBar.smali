@@ -31,7 +31,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -42,8 +41,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -54,9 +51,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
@@ -65,9 +59,6 @@
 
 .method private setStates(ZZZ)V
     .locals 1
-    .param p1    # Z
-    .param p2    # Z
-    .param p3    # Z
 
     invoke-virtual {p0, p1}, Landroid/view/View;->setEnabled(Z)V
 
@@ -86,8 +77,6 @@
 # virtual methods
 .method public checkOver(II)Z
     .locals 7
-    .param p1    # I
-    .param p2    # I
 
     const/4 v1, 0x0
 
@@ -136,7 +125,6 @@
 
 .method public enableDelete(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/launcher2/QuickViewDragBar;->mDeleteTextView:Landroid/widget/TextView;
 
@@ -359,7 +347,6 @@
 
 .method public setTextDisplayPositionRight(Z)V
     .locals 5
-    .param p1    # Z
 
     const/4 v4, 0x0
 

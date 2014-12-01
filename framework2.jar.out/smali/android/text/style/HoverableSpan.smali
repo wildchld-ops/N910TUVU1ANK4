@@ -25,7 +25,6 @@
 
 .method public updateDrawState(Landroid/text/TextPaint;)V
     .locals 1
-    .param p1    # Landroid/text/TextPaint;
 
     iget v0, p1, Landroid/text/TextPaint;->linkColor:I
 

@@ -48,7 +48,6 @@
 
 .method public constructor <init>(Landroid/net/LinkAddress;)V
     .locals 1
-    .param p1    # Landroid/net/LinkAddress;
 
     const/4 v0, 0x0
 
@@ -59,8 +58,6 @@
 
 .method public constructor <init>(Landroid/net/LinkAddress;Ljava/net/InetAddress;)V
     .locals 1
-    .param p1    # Landroid/net/LinkAddress;
-    .param p2    # Ljava/net/InetAddress;
 
     const/4 v0, 0x0
 
@@ -71,9 +68,6 @@
 
 .method public constructor <init>(Landroid/net/LinkAddress;Ljava/net/InetAddress;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Landroid/net/LinkAddress;
-    .param p2    # Ljava/net/InetAddress;
-    .param p3    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -212,7 +206,6 @@
 
 .method public constructor <init>(Ljava/net/InetAddress;)V
     .locals 1
-    .param p1    # Ljava/net/InetAddress;
 
     const/4 v0, 0x0
 
@@ -347,8 +340,6 @@
 
 .method public static makeHostRoute(Ljava/net/InetAddress;Ljava/lang/String;)Landroid/net/RouteInfo;
     .locals 1
-    .param p0    # Ljava/net/InetAddress;
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -361,9 +352,6 @@
 
 .method public static makeHostRoute(Ljava/net/InetAddress;Ljava/net/InetAddress;Ljava/lang/String;)Landroid/net/RouteInfo;
     .locals 3
-    .param p0    # Ljava/net/InetAddress;
-    .param p1    # Ljava/net/InetAddress;
-    .param p2    # Ljava/lang/String;
 
     if-nez p0, :cond_0
 
@@ -405,7 +393,6 @@
 
 .method public static selectBestRoute(Ljava/util/Collection;Ljava/net/InetAddress;)Landroid/net/RouteInfo;
     .locals 5
-    .param p1    # Ljava/net/InetAddress;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -502,7 +489,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 8
-    .param p1    # Ljava/lang/Object;
 
     const/4 v4, 0x1
 
@@ -767,7 +753,6 @@
 
 .method protected matches(Ljava/net/InetAddress;)Z
     .locals 2
-    .param p1    # Ljava/net/InetAddress;
 
     if-nez p1, :cond_0
 
@@ -854,8 +839,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 3
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     const/4 v2, 0x1
 

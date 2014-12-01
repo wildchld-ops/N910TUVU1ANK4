@@ -84,11 +84,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/net/Uri;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Landroid/net/Uri;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/google/android/mms/MmsException;
@@ -124,11 +119,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/android/mms/drm/DrmWrapper;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Lcom/android/mms/drm/DrmWrapper;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -191,11 +181,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[B)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # [B
 
     invoke-direct {p0}, Lcom/android/mms/model/Model;-><init>()V
 
@@ -331,7 +316,6 @@
 
 .method public static isMemoUri(Landroid/net/Uri;)Z
     .locals 2
-    .param p0    # Landroid/net/Uri;
 
     invoke-virtual {p0}, Landroid/net/Uri;->getAuthority()Ljava/lang/String;
 
@@ -348,7 +332,6 @@
 
 .method public static isMmsUri(Landroid/net/Uri;)Z
     .locals 2
-    .param p0    # Landroid/net/Uri;
 
     invoke-virtual {p0}, Landroid/net/Uri;->getAuthority()Ljava/lang/String;
 
@@ -388,7 +371,6 @@
 
 .method public static isVItem(Ljava/lang/String;)Z
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -443,7 +425,6 @@
 
 .method private readSizeFromFile(Landroid/content/ContentResolver;)I
     .locals 11
-    .param p1    # Landroid/content/ContentResolver;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/google/android/mms/MmsException;
@@ -637,8 +618,6 @@
 
 .method private readSizeFromMediaDB(Landroid/content/ContentResolver;Landroid/net/Uri;)I
     .locals 13
-    .param p1    # Landroid/content/ContentResolver;
-    .param p2    # Landroid/net/Uri;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/google/android/mms/MmsException;
@@ -775,7 +754,6 @@
 # virtual methods
 .method public appendAction(Lcom/android/mms/model/MediaModel$MediaAction;)V
     .locals 1
-    .param p1    # Lcom/android/mms/model/MediaModel$MediaAction;
 
     iget-object v0, p0, Lcom/android/mms/model/MediaModel;->mMediaActions:Ljava/util/ArrayList;
 
@@ -1347,8 +1325,6 @@
 
 .method protected resizeMedia(IJ)V
     .locals 0
-    .param p1    # I
-    .param p2    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/google/android/mms/MmsException;
@@ -1360,7 +1336,6 @@
 
 .method public setBegin(I)V
     .locals 1
-    .param p1    # I
 
     iput p1, p0, Lcom/android/mms/model/MediaModel;->mBegin:I
 
@@ -1373,7 +1348,6 @@
 
 .method public setDuration(I)V
     .locals 3
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/mms/model/MediaModel;->isPlayable()Z
 
@@ -1417,7 +1391,6 @@
 
 .method public setFill(S)V
     .locals 1
-    .param p1    # S
 
     iput-short p1, p0, Lcom/android/mms/model/MediaModel;->mFill:S
 
@@ -1430,7 +1403,6 @@
 
 .method public setMediaSize(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/mms/model/MediaModel;->mSize:I
 
@@ -1439,7 +1411,6 @@
 
 .method public setSrc(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/mms/model/MediaModel;->mSrc:Ljava/lang/String;
 
@@ -1448,7 +1419,6 @@
 
 .method setUri(Landroid/net/Uri;)V
     .locals 0
-    .param p1    # Landroid/net/Uri;
 
     iput-object p1, p0, Lcom/android/mms/model/MediaModel;->mUri:Landroid/net/Uri;
 

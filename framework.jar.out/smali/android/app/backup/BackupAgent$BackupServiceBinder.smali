@@ -35,8 +35,6 @@
 
 .method synthetic constructor <init>(Landroid/app/backup/BackupAgent;Landroid/app/backup/BackupAgent$1;)V
     .locals 0
-    .param p1    # Landroid/app/backup/BackupAgent;
-    .param p2    # Landroid/app/backup/BackupAgent$1;
 
     invoke-direct {p0, p1}, Landroid/app/backup/BackupAgent$BackupServiceBinder;-><init>(Landroid/app/backup/BackupAgent;)V
 
@@ -47,11 +45,6 @@
 # virtual methods
 .method public doBackup(Landroid/os/ParcelFileDescriptor;Landroid/os/ParcelFileDescriptor;Landroid/os/ParcelFileDescriptor;ILandroid/app/backup/IBackupManager;)V
     .locals 7
-    .param p1    # Landroid/os/ParcelFileDescriptor;
-    .param p2    # Landroid/os/ParcelFileDescriptor;
-    .param p3    # Landroid/os/ParcelFileDescriptor;
-    .param p4    # I
-    .param p5    # Landroid/app/backup/IBackupManager;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -227,9 +220,6 @@
 
 .method public doFullBackup(Landroid/os/ParcelFileDescriptor;ILandroid/app/backup/IBackupManager;)V
     .locals 9
-    .param p1    # Landroid/os/ParcelFileDescriptor;
-    .param p2    # I
-    .param p3    # Landroid/app/backup/IBackupManager;
 
     invoke-static {}, Landroid/os/Binder;->clearCallingIdentity()J
 
@@ -459,11 +449,6 @@
 
 .method public doRestore(Landroid/os/ParcelFileDescriptor;ILandroid/os/ParcelFileDescriptor;ILandroid/app/backup/IBackupManager;)V
     .locals 7
-    .param p1    # Landroid/os/ParcelFileDescriptor;
-    .param p2    # I
-    .param p3    # Landroid/os/ParcelFileDescriptor;
-    .param p4    # I
-    .param p5    # Landroid/app/backup/IBackupManager;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -639,15 +624,6 @@
 
 .method public doRestoreFile(Landroid/os/ParcelFileDescriptor;JILjava/lang/String;Ljava/lang/String;JJILandroid/app/backup/IBackupManager;)V
     .locals 16
-    .param p1    # Landroid/os/ParcelFileDescriptor;
-    .param p2    # J
-    .param p4    # I
-    .param p5    # Ljava/lang/String;
-    .param p6    # Ljava/lang/String;
-    .param p7    # J
-    .param p9    # J
-    .param p11    # I
-    .param p12    # Landroid/app/backup/IBackupManager;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

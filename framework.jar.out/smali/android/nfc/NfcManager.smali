@@ -12,7 +12,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     const/4 v3, 0x0
 
@@ -65,7 +64,6 @@
 # virtual methods
 .method public bindNfcService(Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     iget-boolean v2, p0, Landroid/nfc/NfcManager;->mIsBinded:Z
 

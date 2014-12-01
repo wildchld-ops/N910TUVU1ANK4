@@ -43,7 +43,6 @@
 
 .method private Steps_setEnabled(Z)V
     .locals 2
-    .param p1    # Z
 
     invoke-virtual {p0}, Lcom/android/settings/LockAddInfoSettings;->getActivity()Landroid/app/Activity;
 
@@ -76,7 +75,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/LockAddInfoSettings;)Landroid/preference/CheckBoxPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/LockAddInfoSettings;
 
     iget-object v0, p0, Lcom/android/settings/LockAddInfoSettings;->mSteps:Landroid/preference/CheckBoxPreference;
 
@@ -85,7 +83,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/LockAddInfoSettings;)V
     .locals 0
-    .param p0    # Lcom/android/settings/LockAddInfoSettings;
 
     invoke-direct {p0}, Lcom/android/settings/LockAddInfoSettings;->sendWeatherData()V
 
@@ -94,7 +91,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/LockAddInfoSettings;)V
     .locals 0
-    .param p0    # Lcom/android/settings/LockAddInfoSettings;
 
     invoke-direct {p0}, Lcom/android/settings/LockAddInfoSettings;->showPermissionDialog()V
 
@@ -103,7 +99,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/LockAddInfoSettings;)I
     .locals 1
-    .param p0    # Lcom/android/settings/LockAddInfoSettings;
 
     iget v0, p0, Lcom/android/settings/LockAddInfoSettings;->mViewType:I
 
@@ -112,7 +107,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/LockAddInfoSettings;)Landroid/widget/Switch;
     .locals 1
-    .param p0    # Lcom/android/settings/LockAddInfoSettings;
 
     iget-object v0, p0, Lcom/android/settings/LockAddInfoSettings;->mActionBarSwitch:Landroid/widget/Switch;
 
@@ -121,7 +115,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/LockAddInfoSettings;)Landroid/preference/CheckBoxPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/LockAddInfoSettings;
 
     iget-object v0, p0, Lcom/android/settings/LockAddInfoSettings;->mWeather:Landroid/preference/CheckBoxPreference;
 
@@ -523,8 +516,6 @@
 
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 10
-    .param p1    # Landroid/widget/CompoundButton;
-    .param p2    # Z
 
     const/4 v6, 0x0
 
@@ -918,7 +909,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 9
-    .param p1    # Landroid/os/Bundle;
 
     const/16 v5, 0x10
 
@@ -1112,8 +1102,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 12
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     const/4 v7, 0x0
 

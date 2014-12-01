@@ -22,7 +22,6 @@
 # direct methods
 .method public varargs constructor <init>([I)V
     .locals 1
-    .param p1    # [I
 
     invoke-direct {p0, p1}, Lcom/sec/android/app/camera/resourcedata/MenuResourceBundle;-><init>([I)V
 
@@ -35,7 +34,6 @@
 
 .method static synthetic access$000(Lcom/sec/android/app/camera/resourcedata/ModeMenuResourceBundle;)I
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/resourcedata/ModeMenuResourceBundle;
 
     iget v0, p0, Lcom/sec/android/app/camera/resourcedata/ModeMenuResourceBundle;->mOrder:I
 
@@ -62,7 +60,6 @@
 
 .method public setName(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/resourcedata/ModeMenuResourceBundle;->mName:Ljava/lang/String;
 
@@ -71,7 +68,6 @@
 
 .method public setOrder(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/app/camera/resourcedata/ModeMenuResourceBundle;->mOrder:I
 
@@ -80,7 +76,6 @@
 
 .method public setPackage(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/resourcedata/ModeMenuResourceBundle;->mPackageName:Ljava/lang/String;
 

@@ -377,7 +377,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Landroid/content/ContextWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {v0}, Lcom/android/phone/PhoneGlobals;->getResources()Landroid/content/res/Resources;
 
     move-result-object v3
 
@@ -389,7 +389,7 @@
 
     if-eqz v3, :cond_0
 
-    invoke-virtual {v0}, Landroid/content/ContextWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {v0}, Lcom/android/phone/PhoneGlobals;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -493,7 +493,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v3}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v3}, Lcom/android/phone/PhoneGlobals;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v3
 
@@ -515,7 +515,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v0}, Lcom/android/phone/PhoneGlobals;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -665,7 +665,7 @@
 
     const-string v3, "audio"
 
-    invoke-virtual {v0, v3}, Landroid/content/ContextWrapper;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v0, v3}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -762,7 +762,7 @@
 
     const-string v3, "audio"
 
-    invoke-virtual {v0, v3}, Landroid/content/ContextWrapper;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v0, v3}, Lcom/android/phone/PhoneGlobals;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -833,7 +833,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v2}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v2}, Lcom/android/phone/PhoneGlobals;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -1320,7 +1320,7 @@
 
     move-result-object v7
 
-    invoke-virtual {v7}, Landroid/content/ContextWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {v7}, Lcom/android/phone/PhoneGlobals;->getResources()Landroid/content/res/Resources;
 
     move-result-object v7
 
@@ -1351,7 +1351,7 @@
 
     move-result-object v7
 
-    invoke-virtual {v7}, Landroid/content/ContextWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {v7}, Lcom/android/phone/PhoneGlobals;->getResources()Landroid/content/res/Resources;
 
     move-result-object v7
 
@@ -1835,7 +1835,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v1}, Ljava/lang/Throwable;->toString()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/Exception;->toString()Ljava/lang/String;
 
     move-result-object v4
 
@@ -1883,11 +1883,11 @@
     :cond_0
     sget-object v1, Lcom/android/phone/PhoneUtils;->mConnectionHandler:Lcom/android/phone/PhoneUtils$ConnectionHandler;
 
-    invoke-virtual {v1, v2}, Landroid/os/Handler;->removeMessages(I)V
+    invoke-virtual {v1, v2}, Lcom/android/phone/PhoneUtils$ConnectionHandler;->removeMessages(I)V
 
     sget-object v1, Lcom/android/phone/PhoneUtils;->mConnectionHandler:Lcom/android/phone/PhoneUtils$ConnectionHandler;
 
-    invoke-virtual {v1, v2}, Landroid/os/Handler;->obtainMessage(I)Landroid/os/Message;
+    invoke-virtual {v1, v2}, Lcom/android/phone/PhoneUtils$ConnectionHandler;->obtainMessage(I)Landroid/os/Message;
 
     move-result-object v1
 
@@ -1901,7 +1901,7 @@
 
     sget-object v2, Lcom/android/phone/PhoneUtils;->mConnectionHandler:Lcom/android/phone/PhoneUtils$ConnectionHandler;
 
-    invoke-virtual {v2, v1}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
+    invoke-virtual {v2, v1}, Lcom/android/phone/PhoneUtils$ConnectionHandler;->sendMessage(Landroid/os/Message;)Z
 
     goto :goto_0
 .end method
@@ -1941,11 +1941,11 @@
     :cond_0
     sget-object v2, Lcom/android/phone/PhoneUtils;->mConnectionHandler:Lcom/android/phone/PhoneUtils$ConnectionHandler;
 
-    invoke-virtual {v2, v3}, Landroid/os/Handler;->removeMessages(I)V
+    invoke-virtual {v2, v3}, Lcom/android/phone/PhoneUtils$ConnectionHandler;->removeMessages(I)V
 
     sget-object v2, Lcom/android/phone/PhoneUtils;->mConnectionHandler:Lcom/android/phone/PhoneUtils$ConnectionHandler;
 
-    invoke-virtual {v2, v3}, Landroid/os/Handler;->obtainMessage(I)Landroid/os/Message;
+    invoke-virtual {v2, v3}, Lcom/android/phone/PhoneUtils$ConnectionHandler;->obtainMessage(I)Landroid/os/Message;
 
     move-result-object v2
 
@@ -1959,7 +1959,7 @@
 
     sget-object v1, Lcom/android/phone/PhoneUtils;->mConnectionHandler:Lcom/android/phone/PhoneUtils$ConnectionHandler;
 
-    invoke-virtual {v1, v2}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
+    invoke-virtual {v1, v2}, Lcom/android/phone/PhoneUtils$ConnectionHandler;->sendMessage(Landroid/os/Message;)Z
 
     goto :goto_0
 .end method
@@ -2066,7 +2066,7 @@
 
     if-ne v1, v11, :cond_4
 
-    invoke-virtual {v6}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v6}, Lcom/android/phone/PhoneGlobals;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -2092,7 +2092,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v1}, Lcom/android/phone/PhoneGlobals;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -2108,7 +2108,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1, v0}, Landroid/content/ContextWrapper;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {v1, v0}, Lcom/android/phone/PhoneGlobals;->startActivity(Landroid/content/Intent;)V
 
     goto :goto_0
 
@@ -2246,7 +2246,7 @@
 
     const-string v8, "audio"
 
-    invoke-virtual {v0, v8}, Landroid/content/ContextWrapper;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v0, v8}, Lcom/android/phone/PhoneGlobals;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -2293,7 +2293,7 @@
 
     if-eqz v0, :cond_7
 
-    invoke-virtual {v6}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v6}, Lcom/android/phone/PhoneGlobals;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -2321,7 +2321,7 @@
 
     const-string v8, "audio"
 
-    invoke-virtual {v0, v8}, Landroid/content/ContextWrapper;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v0, v8}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -2377,7 +2377,7 @@
 
     const-string v9, "audio"
 
-    invoke-virtual {v0, v9}, Landroid/content/ContextWrapper;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v0, v9}, Lcom/android/phone/PhoneGlobals;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -2425,7 +2425,7 @@
 
     const-string v8, "audio"
 
-    invoke-virtual {v0, v8}, Landroid/content/ContextWrapper;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v0, v8}, Lcom/android/phone/PhoneGlobals;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -2738,7 +2738,7 @@
 
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v6, v0}, Landroid/content/ContextWrapper;->sendBroadcast(Landroid/content/Intent;)V
+    invoke-virtual {v6, v0}, Lcom/android/phone/PhoneGlobals;->sendBroadcast(Landroid/content/Intent;)V
 
     new-instance v0, Landroid/content/Intent;
 
@@ -2746,7 +2746,7 @@
 
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v6, v0}, Landroid/content/ContextWrapper;->sendBroadcast(Landroid/content/Intent;)V
+    invoke-virtual {v6, v0}, Lcom/android/phone/PhoneGlobals;->sendBroadcast(Landroid/content/Intent;)V
 
     new-instance v0, Landroid/content/Intent;
 
@@ -2754,7 +2754,7 @@
 
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v6, v0}, Landroid/content/ContextWrapper;->sendBroadcast(Landroid/content/Intent;)V
+    invoke-virtual {v6, v0}, Lcom/android/phone/PhoneGlobals;->sendBroadcast(Landroid/content/Intent;)V
 
     :cond_17
     invoke-virtual {v6}, Lcom/android/phone/PhoneGlobals;->isScreenOn()Z
@@ -4061,7 +4061,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v1}, Lcom/android/phone/PhoneGlobals;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
@@ -4085,7 +4085,7 @@
 
     if-eqz v1, :cond_0
 
-    invoke-virtual {v0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v0}, Lcom/android/phone/PhoneGlobals;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
@@ -4145,7 +4145,7 @@
 
     const-string v3, "audio"
 
-    invoke-virtual {v0, v3}, Landroid/content/ContextWrapper;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v0, v3}, Lcom/android/phone/PhoneGlobals;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -4155,7 +4155,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v3}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v3}, Lcom/android/phone/PhoneGlobals;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v3
 
@@ -4715,7 +4715,7 @@
 
     move-result v4
 
-    invoke-virtual {v0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v7
 
@@ -4730,7 +4730,7 @@
     move v1, v5
 
     :goto_0
-    invoke-virtual {v0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v7
 
@@ -4789,7 +4789,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v0}, Lcom/android/phone/PhoneGlobals;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -5201,7 +5201,7 @@
 
     sget-object v0, Lcom/android/phone/PhoneUtils$21;->$SwitchMap$com$android$internal$telephony$MmiCode$State:[I
 
-    invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
+    invoke-virtual {v2}, Lcom/android/internal/telephony/MmiCode$State;->ordinal()I
 
     move-result v1
 
@@ -5278,7 +5278,7 @@
     :goto_1
     if-eqz p4, :cond_1
 
-    invoke-virtual {p4}, Landroid/app/Dialog;->dismiss()V
+    invoke-virtual {p4}, Landroid/app/AlertDialog;->dismiss()V
 
     :cond_1
     invoke-virtual {v5}, Lcom/android/phone/PhoneGlobals;->getPUKEntryActivity()Landroid/app/Activity;
@@ -5301,23 +5301,23 @@
 
     invoke-virtual {v0, v4}, Landroid/app/ProgressDialog;->setMessage(Ljava/lang/CharSequence;)V
 
-    invoke-virtual {v0, v8}, Landroid/app/Dialog;->setCancelable(Z)V
+    invoke-virtual {v0, v8}, Landroid/app/ProgressDialog;->setCancelable(Z)V
 
     invoke-virtual {v0, v6}, Landroid/app/ProgressDialog;->setIndeterminate(Z)V
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
+    invoke-virtual {v0}, Landroid/app/ProgressDialog;->getWindow()Landroid/view/Window;
 
     move-result-object v1
 
     invoke-virtual {v1, v10}, Landroid/view/Window;->setType(I)V
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
+    invoke-virtual {v0}, Landroid/app/ProgressDialog;->getWindow()Landroid/view/Window;
 
     move-result-object v1
 
     invoke-virtual {v1, v9}, Landroid/view/Window;->addFlags(I)V
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->show()V
+    invoke-virtual {v0}, Landroid/app/ProgressDialog;->show()V
 
     invoke-virtual {v5, v0}, Lcom/android/phone/PhoneGlobals;->setPukEntryProgressDialog(Landroid/app/ProgressDialog;)V
 
@@ -5760,7 +5760,7 @@
 
     check-cast v0, Landroid/app/AlertDialog;
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->dismiss()V
+    invoke-virtual {v0}, Landroid/app/AlertDialog;->dismiss()V
 
     sget-object v0, Lcom/android/phone/PhoneUtils;->dequeMmiDialog:Ljava/util/ArrayDeque;
 
@@ -5833,11 +5833,11 @@
 
     invoke-direct {v1}, Lcom/android/phone/PhoneUtils$4;-><init>()V
 
-    invoke-virtual {v0, v1}, Landroid/app/Dialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
+    invoke-virtual {v0, v1}, Landroid/app/AlertDialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
     sget-object v0, Lcom/android/phone/PhoneUtils;->mMmiDialog:Landroid/app/AlertDialog;
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
+    invoke-virtual {v0}, Landroid/app/AlertDialog;->getWindow()Landroid/view/Window;
 
     move-result-object v0
 
@@ -5845,7 +5845,7 @@
 
     sget-object v0, Lcom/android/phone/PhoneUtils;->mMmiDialog:Landroid/app/AlertDialog;
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
+    invoke-virtual {v0}, Landroid/app/AlertDialog;->getWindow()Landroid/view/Window;
 
     move-result-object v0
 
@@ -5857,7 +5857,7 @@
 
     sget-object v0, Lcom/android/phone/PhoneUtils;->mMmiDialog:Landroid/app/AlertDialog;
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->show()V
+    invoke-virtual {v0}, Landroid/app/AlertDialog;->show()V
 
     sget-object v0, Lcom/android/phone/PhoneUtils;->dequeMmiDialog:Ljava/util/ArrayDeque;
 
@@ -5968,7 +5968,7 @@
 
     sget-object v0, Lcom/android/phone/PhoneUtils;->sUssdDialog:Landroid/app/AlertDialog;
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
+    invoke-virtual {v0}, Landroid/app/AlertDialog;->getWindow()Landroid/view/Window;
 
     move-result-object v0
 
@@ -5976,7 +5976,7 @@
 
     sget-object v0, Lcom/android/phone/PhoneUtils;->sUssdDialog:Landroid/app/AlertDialog;
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
+    invoke-virtual {v0}, Landroid/app/AlertDialog;->getWindow()Landroid/view/Window;
 
     move-result-object v0
 
@@ -5999,7 +5999,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v5}, Landroid/content/ContextWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {v5}, Lcom/android/phone/PhoneGlobals;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -6034,7 +6034,7 @@
 
     sget-object v0, Lcom/android/phone/PhoneUtils;->sUssdDialog:Landroid/app/AlertDialog;
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->show()V
+    invoke-virtual {v0}, Landroid/app/AlertDialog;->show()V
 
     const-string v0, "MMI code :  sUssdDialog.show "
 
@@ -6079,7 +6079,7 @@
 
     const/4 v1, 0x3
 
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setInputType(I)V
+    invoke-virtual {v0, v1}, Landroid/widget/EditText;->setInputType(I)V
 
     :cond_1a
     const v1, 0x7f0a00a4
@@ -6136,13 +6136,13 @@
 
     invoke-direct {v2, p0, v0}, Lcom/android/phone/PhoneUtils$8;-><init>(Lcom/android/internal/telephony/Phone;Landroid/widget/EditText;)V
 
-    invoke-virtual {v0, v2}, Landroid/view/View;->setOnKeyListener(Landroid/view/View$OnKeyListener;)V
+    invoke-virtual {v0, v2}, Landroid/widget/EditText;->setOnKeyListener(Landroid/view/View$OnKeyListener;)V
 
-    invoke-virtual {v0}, Landroid/view/View;->requestFocus()Z
+    invoke-virtual {v0}, Landroid/widget/EditText;->requestFocus()Z
 
     sget-object v0, Lcom/android/phone/PhoneUtils;->mMmiDialog:Landroid/app/AlertDialog;
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
+    invoke-virtual {v0}, Landroid/app/AlertDialog;->getWindow()Landroid/view/Window;
 
     move-result-object v0
 
@@ -6150,7 +6150,7 @@
 
     sget-object v0, Lcom/android/phone/PhoneUtils;->mMmiDialog:Landroid/app/AlertDialog;
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
+    invoke-virtual {v0}, Landroid/app/AlertDialog;->getWindow()Landroid/view/Window;
 
     move-result-object v0
 
@@ -6163,7 +6163,7 @@
     :cond_1b
     sget-object v0, Lcom/android/phone/PhoneUtils;->mMmiDialog:Landroid/app/AlertDialog;
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->show()V
+    invoke-virtual {v0}, Landroid/app/AlertDialog;->show()V
 
     goto/16 :goto_6
 
@@ -6287,7 +6287,7 @@
 
     sget-object v0, Lcom/android/phone/PhoneUtils;->pd:Landroid/app/ProgressDialog;
 
-    invoke-virtual {v0, v2}, Landroid/app/Dialog;->setCancelable(Z)V
+    invoke-virtual {v0, v2}, Landroid/app/ProgressDialog;->setCancelable(Z)V
 
     sget-object v0, Lcom/android/phone/PhoneUtils;->pd:Landroid/app/ProgressDialog;
 
@@ -6295,7 +6295,7 @@
 
     sget-object v0, Lcom/android/phone/PhoneUtils;->pd:Landroid/app/ProgressDialog;
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
+    invoke-virtual {v0}, Landroid/app/ProgressDialog;->getWindow()Landroid/view/Window;
 
     move-result-object v0
 
@@ -6325,7 +6325,7 @@
     :cond_3
     sget-object v0, Lcom/android/phone/PhoneUtils;->pd:Landroid/app/ProgressDialog;
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->show()V
+    invoke-virtual {v0}, Landroid/app/ProgressDialog;->show()V
 
     goto :goto_2
 .end method
@@ -6847,7 +6847,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0, p0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {v0, p0}, Lcom/android/phone/PhoneGlobals;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -6941,7 +6941,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0, p0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {v0, p0}, Lcom/android/phone/PhoneGlobals;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -6992,7 +6992,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0, p0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {v0, p0}, Lcom/android/phone/PhoneGlobals;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -7064,7 +7064,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1, p0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {v1, p0}, Lcom/android/phone/PhoneGlobals;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -7737,7 +7737,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v0}, Lcom/android/phone/PhoneGlobals;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -7954,7 +7954,7 @@
     :catch_0
     move-exception v0
 
-    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
+    invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
 
     const-string v0, ""
 
@@ -8310,7 +8310,7 @@
 
     const v1, 0x7f090023
 
-    invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {v0, v1}, Lcom/android/phone/PhoneGlobals;->getString(I)Ljava/lang/String;
 
     move-result-object v3
 
@@ -8524,7 +8524,7 @@
 
     const v1, 0x7f090051
 
-    invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {v0, v1}, Lcom/android/phone/PhoneGlobals;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -8584,7 +8584,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {v0, v6}, Lcom/android/phone/PhoneGlobals;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -8596,7 +8596,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0, v7}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {v0, v7}, Lcom/android/phone/PhoneGlobals;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -8611,7 +8611,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0, v8}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {v0, v8}, Lcom/android/phone/PhoneGlobals;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -8697,7 +8697,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {v0, v6}, Lcom/android/phone/PhoneGlobals;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -8709,7 +8709,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0, v7}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {v0, v7}, Lcom/android/phone/PhoneGlobals;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -8724,7 +8724,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0, v8}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {v0, v8}, Lcom/android/phone/PhoneGlobals;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -8791,7 +8791,7 @@
 
     const v1, 0x7f090023
 
-    invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {v0, v1}, Lcom/android/phone/PhoneGlobals;->getString(I)Ljava/lang/String;
 
     move-result-object v3
 
@@ -9050,7 +9050,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {v0, v6}, Lcom/android/phone/PhoneGlobals;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -9062,7 +9062,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0, v7}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {v0, v7}, Lcom/android/phone/PhoneGlobals;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -9077,7 +9077,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0, v8}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {v0, v8}, Lcom/android/phone/PhoneGlobals;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -9176,7 +9176,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {v0, v6}, Lcom/android/phone/PhoneGlobals;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -9188,7 +9188,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0, v7}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {v0, v7}, Lcom/android/phone/PhoneGlobals;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -9203,7 +9203,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0, v8}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {v0, v8}, Lcom/android/phone/PhoneGlobals;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -9345,7 +9345,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v0}, Lcom/android/phone/PhoneGlobals;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -9363,7 +9363,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v0}, Lcom/android/phone/PhoneGlobals;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -9384,7 +9384,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v0}, Lcom/android/phone/PhoneGlobals;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -9682,7 +9682,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v0}, Lcom/android/phone/PhoneGlobals;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -10145,7 +10145,7 @@
     return v0
 
     :cond_0
-    invoke-virtual {v0}, Landroid/content/ContextWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {v0}, Lcom/android/phone/PhoneGlobals;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -10166,7 +10166,7 @@
     :cond_1
     const-string v1, "audio"
 
-    invoke-virtual {v0, v1}, Landroid/content/ContextWrapper;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v0, v1}, Lcom/android/phone/PhoneGlobals;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -10195,7 +10195,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Landroid/content/ContextWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {v0}, Lcom/android/phone/PhoneGlobals;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -10216,7 +10216,7 @@
     :cond_0
     const-string v1, "audio"
 
-    invoke-virtual {v0, v1}, Landroid/content/ContextWrapper;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v0, v1}, Lcom/android/phone/PhoneGlobals;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -11709,7 +11709,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v0}, Lcom/android/phone/PhoneGlobals;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -12050,7 +12050,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v1}, Lcom/android/phone/PhoneGlobals;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
@@ -12144,7 +12144,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v0}, Lcom/android/phone/PhoneGlobals;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -12168,7 +12168,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v0}, Lcom/android/phone/PhoneGlobals;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -12182,7 +12182,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v0}, Lcom/android/phone/PhoneGlobals;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -12252,7 +12252,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v0}, Lcom/android/phone/PhoneGlobals;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -12367,7 +12367,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v0}, Lcom/android/phone/PhoneGlobals;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -12388,7 +12388,7 @@
 .method public static getSimCardIcon(I)I
     .locals 4
 
-    const v3, 0x7f020212
+    const v3, 0x7f020211
 
     const-string v0, "feature_chn_duos_support_cgg"
 
@@ -12457,7 +12457,7 @@
 .method public static getSimCardIconForForward(I)I
     .locals 4
 
-    const v3, 0x7f020212
+    const v3, 0x7f020211
 
     invoke-static {p0}, Lcom/android/phone/PhoneUtils;->getSIMIconIndex(I)I
 
@@ -12662,7 +12662,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v1}, Lcom/android/phone/PhoneGlobals;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -12834,7 +12834,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v0}, Lcom/android/phone/PhoneGlobals;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -14286,7 +14286,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Landroid/content/ContextWrapper;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {v1}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v3
 
@@ -14353,7 +14353,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Landroid/content/ContextWrapper;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {v0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v2
 
@@ -14543,7 +14543,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v2}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v2}, Lcom/android/phone/PhoneGlobals;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -14585,7 +14585,7 @@
 
     sget-object v0, Lcom/android/phone/PhoneUtils;->mMmiDialog:Landroid/app/AlertDialog;
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->isShowing()Z
+    invoke-virtual {v0}, Landroid/app/AlertDialog;->isShowing()Z
 
     move-result v0
 
@@ -14609,7 +14609,7 @@
 
     sget-object v0, Lcom/android/phone/PhoneUtils;->pd:Landroid/app/ProgressDialog;
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->isShowing()Z
+    invoke-virtual {v0}, Landroid/app/ProgressDialog;->isShowing()Z
 
     move-result v0
 
@@ -14617,7 +14617,7 @@
 
     sget-object v0, Lcom/android/phone/PhoneUtils;->pd:Landroid/app/ProgressDialog;
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->getOwnerActivity()Landroid/app/Activity;
+    invoke-virtual {v0}, Landroid/app/ProgressDialog;->getOwnerActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -14625,12 +14625,12 @@
 
     sget-object v0, Lcom/android/phone/PhoneUtils;->pd:Landroid/app/ProgressDialog;
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->hide()V
+    invoke-virtual {v0}, Landroid/app/ProgressDialog;->hide()V
 
     :cond_0
     sget-object v0, Lcom/android/phone/PhoneUtils;->mMmiDialog:Landroid/app/AlertDialog;
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->hide()V
+    invoke-virtual {v0}, Landroid/app/AlertDialog;->hide()V
 
     :cond_1
     sget-object v0, Lcom/android/phone/PhoneUtils;->dequeMmiDialog:Ljava/util/ArrayDeque;
@@ -14655,7 +14655,7 @@
 
     if-eqz v0, :cond_2
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->isShowing()Z
+    invoke-virtual {v0}, Landroid/app/AlertDialog;->isShowing()Z
 
     move-result v2
 
@@ -14683,7 +14683,7 @@
 
     invoke-static {v2, v3, v5}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->hide()V
+    invoke-virtual {v0}, Landroid/app/AlertDialog;->hide()V
 
     goto :goto_0
 
@@ -14701,7 +14701,7 @@
 
     sget-object v0, Lcom/android/phone/PhoneUtils;->mMmiDialog:Landroid/app/AlertDialog;
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->isShowing()Z
+    invoke-virtual {v0}, Landroid/app/AlertDialog;->isShowing()Z
 
     move-result v0
 
@@ -14715,7 +14715,7 @@
 
     sget-object v0, Lcom/android/phone/PhoneUtils;->mMmiDialog:Landroid/app/AlertDialog;
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->hide()V
+    invoke-virtual {v0}, Landroid/app/AlertDialog;->hide()V
 
     sput-boolean v5, Lcom/android/phone/PhoneUtils;->mIsMmiDialogHiding:Z
 
@@ -14728,7 +14728,7 @@
 
     sget-object v0, Lcom/android/phone/PhoneUtils;->sUssdDialog:Landroid/app/AlertDialog;
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->isShowing()Z
+    invoke-virtual {v0}, Landroid/app/AlertDialog;->isShowing()Z
 
     move-result v0
 
@@ -14742,7 +14742,7 @@
 
     sget-object v0, Lcom/android/phone/PhoneUtils;->sUssdDialog:Landroid/app/AlertDialog;
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->hide()V
+    invoke-virtual {v0}, Landroid/app/AlertDialog;->hide()V
 
     sput-boolean v5, Lcom/android/phone/PhoneUtils;->mIsMmiDialogHiding:Z
 
@@ -14756,7 +14756,7 @@
 
     const-string v0, "audio"
 
-    invoke-virtual {p0, v0}, Landroid/content/ContextWrapper;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Lcom/android/phone/PhoneGlobals;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -14858,7 +14858,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v1}, Lcom/android/phone/PhoneGlobals;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
@@ -14874,7 +14874,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v2}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v2}, Lcom/android/phone/PhoneGlobals;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 
@@ -16118,7 +16118,7 @@
 
     const-string v6, "activity"
 
-    invoke-virtual {v1, v6}, Landroid/content/ContextWrapper;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v1, v6}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -16531,7 +16531,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v4}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v4}, Lcom/android/phone/PhoneGlobals;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v4
 
@@ -17179,7 +17179,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v0}, Lcom/android/phone/PhoneGlobals;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v3
 
@@ -17788,7 +17788,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v2}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v2}, Lcom/android/phone/PhoneGlobals;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 
@@ -17851,7 +17851,7 @@
 
     move-result-object v7
 
-    invoke-virtual {v7}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v7}, Lcom/android/phone/PhoneGlobals;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v7
 
@@ -18838,7 +18838,7 @@
 
     move-result-object v6
 
-    invoke-virtual {v6}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v6}, Lcom/android/phone/PhoneGlobals;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v6
 
@@ -19024,7 +19024,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v2}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+    invoke-virtual {v2}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
 
     move-result-object v2
 
@@ -19997,7 +19997,7 @@
 
     const-string v1, "activity"
 
-    invoke-virtual {v0, v1}, Landroid/content/ContextWrapper;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -20092,7 +20092,7 @@
 
     const-string v1, "activity"
 
-    invoke-virtual {v0, v1}, Landroid/content/ContextWrapper;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -20324,7 +20324,7 @@
 
     const-string v2, "vibrator"
 
-    invoke-virtual {v1, v2}, Landroid/content/ContextWrapper;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v1, v2}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -20680,7 +20680,7 @@
     :catch_0
     move-exception v0
 
-    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
+    invoke-virtual {v0}, Lcom/samsung/commonimsinterface/imscommon/IMSException;->printStackTrace()V
 
     :cond_b
     const-string v0, "feature_ktt"
@@ -21910,7 +21910,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v0}, Lcom/android/phone/PhoneGlobals;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v8
 
@@ -22692,7 +22692,7 @@
     move-exception v2
 
     :goto_2
-    invoke-virtual {v2}, Ljava/lang/Throwable;->printStackTrace()V
+    invoke-virtual {v2}, Landroid/os/RemoteException;->printStackTrace()V
 
     :cond_6
     move-object/from16 v3, p2
@@ -23273,7 +23273,7 @@
 
     const-string v11, "audio"
 
-    invoke-virtual {v2, v11}, Landroid/content/ContextWrapper;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v2, v11}, Lcom/android/phone/PhoneGlobals;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v2
 
@@ -23324,7 +23324,7 @@
 
     if-eqz v2, :cond_18
 
-    invoke-virtual {v9}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v9}, Lcom/android/phone/PhoneGlobals;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v2
 
@@ -23414,7 +23414,7 @@
 
     const-string v12, "audio"
 
-    invoke-virtual {v2, v12}, Landroid/content/ContextWrapper;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v2, v12}, Lcom/android/phone/PhoneGlobals;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v2
 
@@ -23466,7 +23466,7 @@
 
     const-string v11, "audio"
 
-    invoke-virtual {v2, v11}, Landroid/content/ContextWrapper;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v2, v11}, Lcom/android/phone/PhoneGlobals;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v2
 
@@ -24956,7 +24956,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v0}, Lcom/android/phone/PhoneGlobals;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -25014,7 +25014,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v0}, Lcom/android/phone/PhoneGlobals;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -25108,7 +25108,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v2}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v2}, Lcom/android/phone/PhoneGlobals;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 
@@ -25141,7 +25141,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v3}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v3}, Lcom/android/phone/PhoneGlobals;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v3
 
@@ -26491,7 +26491,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v0}, Lcom/android/phone/PhoneGlobals;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -26861,7 +26861,7 @@
     :cond_4
     const-string v0, "audio"
 
-    invoke-virtual {v2, v0}, Landroid/content/ContextWrapper;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v2, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -26982,7 +26982,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v1}, Lcom/android/phone/PhoneGlobals;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -27594,7 +27594,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v3}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v3}, Lcom/android/phone/PhoneGlobals;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v4
 
@@ -27813,7 +27813,7 @@
     if-eqz v1, :cond_0
 
     :try_start_1
-    invoke-virtual {v1}, Ljava/io/FilterOutputStream;->close()V
+    invoke-virtual {v1}, Ljava/io/DataOutputStream;->close()V
     :try_end_1
     .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_0
 
@@ -27850,7 +27850,7 @@
 
     invoke-static {v3, v6}, Lcom/android/phone/PhoneUtils;->log(Ljava/lang/String;Z)V
 
-    invoke-virtual {v2}, Ljava/lang/Throwable;->printStackTrace()V
+    invoke-virtual {v2}, Ljava/io/IOException;->printStackTrace()V
 
     goto :goto_0
 
@@ -27871,7 +27871,7 @@
     if-eqz v1, :cond_1
 
     :try_start_3
-    invoke-virtual {v1}, Ljava/io/FilterOutputStream;->close()V
+    invoke-virtual {v1}, Ljava/io/DataOutputStream;->close()V
     :try_end_3
     .catch Ljava/io/IOException; {:try_start_3 .. :try_end_3} :catch_2
 
@@ -27900,7 +27900,7 @@
 
     invoke-static {v4, v6}, Lcom/android/phone/PhoneUtils;->log(Ljava/lang/String;Z)V
 
-    invoke-virtual {v2}, Ljava/lang/Throwable;->printStackTrace()V
+    invoke-virtual {v2}, Ljava/io/IOException;->printStackTrace()V
 
     goto :goto_1
 
@@ -27910,7 +27910,7 @@
     if-eqz v1, :cond_2
 
     :try_start_4
-    invoke-virtual {v1}, Ljava/io/FilterOutputStream;->close()V
+    invoke-virtual {v1}, Ljava/io/DataOutputStream;->close()V
     :try_end_4
     .catch Ljava/io/IOException; {:try_start_4 .. :try_end_4} :catch_3
 
@@ -27941,7 +27941,7 @@
 
     invoke-static {v4, v6}, Lcom/android/phone/PhoneUtils;->log(Ljava/lang/String;Z)V
 
-    invoke-virtual {v2}, Ljava/lang/Throwable;->printStackTrace()V
+    invoke-virtual {v2}, Ljava/io/IOException;->printStackTrace()V
 
     goto :goto_2
 .end method
@@ -27955,7 +27955,7 @@
 
     const-string v1, "audio"
 
-    invoke-virtual {v0, v1}, Landroid/content/ContextWrapper;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v0, v1}, Lcom/android/phone/PhoneGlobals;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -28023,7 +28023,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v2}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v2}, Lcom/android/phone/PhoneGlobals;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -28074,7 +28074,7 @@
 
     const-string v0, "audio"
 
-    invoke-virtual {v3, v0}, Landroid/content/ContextWrapper;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v3, v0}, Lcom/android/phone/PhoneGlobals;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -28107,7 +28107,7 @@
 
     if-eqz v1, :cond_2
 
-    invoke-virtual {v3}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v3}, Lcom/android/phone/PhoneGlobals;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -28159,7 +28159,7 @@
 
     if-nez v1, :cond_8
 
-    invoke-virtual {v3}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v3}, Lcom/android/phone/PhoneGlobals;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -28196,7 +28196,7 @@
 
     if-nez v4, :cond_6
 
-    invoke-virtual {v3}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v3}, Lcom/android/phone/PhoneGlobals;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v5
 
@@ -28228,7 +28228,7 @@
 
     if-eq v5, v8, :cond_5
 
-    invoke-virtual {v3}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v3}, Lcom/android/phone/PhoneGlobals;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
@@ -28577,7 +28577,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v0}, Lcom/android/phone/PhoneGlobals;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -28595,7 +28595,7 @@
 
     new-instance v3, Landroid/app/Notification;
 
-    const v4, 0x7f020288
+    const v4, 0x7f020287
 
     const-wide/16 v5, 0x0
 
@@ -28683,7 +28683,7 @@
 
     sget-object v0, Lcom/android/phone/PhoneUtils;->mWebExEmailSelectionDialog:Landroid/app/AlertDialog;
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
+    invoke-virtual {v0}, Landroid/app/AlertDialog;->getWindow()Landroid/view/Window;
 
     move-result-object v0
 
@@ -28693,7 +28693,7 @@
 
     sget-object v0, Lcom/android/phone/PhoneUtils;->mWebExEmailSelectionDialog:Landroid/app/AlertDialog;
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->show()V
+    invoke-virtual {v0}, Landroid/app/AlertDialog;->show()V
 
     return-void
 .end method
@@ -28745,7 +28745,7 @@
 
     sget-object v0, Lcom/android/phone/PhoneUtils;->pd:Landroid/app/ProgressDialog;
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->isShowing()Z
+    invoke-virtual {v0}, Landroid/app/ProgressDialog;->isShowing()Z
 
     move-result v0
 
@@ -28753,7 +28753,7 @@
 
     sget-object v0, Lcom/android/phone/PhoneUtils;->pd:Landroid/app/ProgressDialog;
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->getOwnerActivity()Landroid/app/Activity;
+    invoke-virtual {v0}, Landroid/app/ProgressDialog;->getOwnerActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -28761,12 +28761,12 @@
 
     sget-object v0, Lcom/android/phone/PhoneUtils;->pd:Landroid/app/ProgressDialog;
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->show()V
+    invoke-virtual {v0}, Landroid/app/ProgressDialog;->show()V
 
     :cond_0
     sget-object v0, Lcom/android/phone/PhoneUtils;->mMmiDialog:Landroid/app/AlertDialog;
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->show()V
+    invoke-virtual {v0}, Landroid/app/AlertDialog;->show()V
 
     :cond_1
     sget-object v0, Lcom/android/phone/PhoneUtils;->dequeMmiDialog:Ljava/util/ArrayDeque;
@@ -28791,7 +28791,7 @@
 
     if-eqz v0, :cond_3
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->isShowing()Z
+    invoke-virtual {v0}, Landroid/app/AlertDialog;->isShowing()Z
 
     move-result v2
 
@@ -28817,7 +28817,7 @@
 
     invoke-static {v2, v4}, Lcom/android/phone/PhoneUtils;->log(Ljava/lang/String;Z)V
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->hide()V
+    invoke-virtual {v0}, Landroid/app/AlertDialog;->hide()V
 
     :cond_3
     if-eqz v0, :cond_2
@@ -28846,7 +28846,7 @@
 
     invoke-static {v2, v4}, Lcom/android/phone/PhoneUtils;->log(Ljava/lang/String;Z)V
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->show()V
+    invoke-virtual {v0}, Landroid/app/AlertDialog;->show()V
 
     goto :goto_0
 
@@ -28872,7 +28872,7 @@
 
     sget-object v0, Lcom/android/phone/PhoneUtils;->mMmiDialog:Landroid/app/AlertDialog;
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->show()V
+    invoke-virtual {v0}, Landroid/app/AlertDialog;->show()V
 
     sput-boolean v5, Lcom/android/phone/PhoneUtils;->mIsMmiDialogHiding:Z
 
@@ -28893,7 +28893,7 @@
 
     sget-object v0, Lcom/android/phone/PhoneUtils;->sUssdDialog:Landroid/app/AlertDialog;
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->show()V
+    invoke-virtual {v0}, Landroid/app/AlertDialog;->show()V
 
     sput-boolean v5, Lcom/android/phone/PhoneUtils;->mIsMmiDialogHiding:Z
 
@@ -29174,7 +29174,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v1}, Lcom/android/phone/PhoneGlobals;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -29192,7 +29192,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v1}, Lcom/android/phone/PhoneGlobals;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -29376,7 +29376,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v3}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v3}, Lcom/android/phone/PhoneGlobals;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v3
 
@@ -29394,7 +29394,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v4}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v4}, Lcom/android/phone/PhoneGlobals;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v4
 
@@ -31064,7 +31064,7 @@
     invoke-virtual {v3, v4, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
     :try_start_0
-    invoke-virtual {v2, v3}, Landroid/content/ContextWrapper;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {v2, v3}, Lcom/android/phone/PhoneGlobals;->startActivity(Landroid/content/Intent;)V
     :try_end_0
     .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -31161,7 +31161,7 @@
     invoke-virtual {v3, v4, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
     :try_start_0
-    invoke-virtual {v2, v3}, Landroid/content/ContextWrapper;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {v2, v3}, Lcom/android/phone/PhoneGlobals;->startActivity(Landroid/content/Intent;)V
     :try_end_0
     .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -31306,7 +31306,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1, v0}, Landroid/content/ContextWrapper;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {v1, v0}, Lcom/android/phone/PhoneGlobals;->startActivity(Landroid/content/Intent;)V
 
     return-void
 
@@ -32123,7 +32123,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v0}, Lcom/android/phone/CallFeaturesSetting;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 

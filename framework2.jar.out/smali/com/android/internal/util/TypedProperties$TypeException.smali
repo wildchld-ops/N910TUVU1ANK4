@@ -17,9 +17,6 @@
 # direct methods
 .method constructor <init>(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Object;
-    .param p3    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 

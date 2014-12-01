@@ -33,7 +33,6 @@
 # virtual methods
 .method public onServiceStateChanged(Landroid/telephony/ServiceState;)V
     .locals 2
-    .param p1    # Landroid/telephony/ServiceState;
 
     # getter for: Lcom/samsung/smartbonding/SmartBondingService;->DBG:Z
     invoke-static {}, Lcom/samsung/smartbonding/SmartBondingService;->access$000()Z

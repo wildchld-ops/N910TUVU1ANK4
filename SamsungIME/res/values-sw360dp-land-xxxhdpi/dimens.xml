@@ -643,13 +643,6 @@
     <dimen name="popup_shortcut_key_label_size">180.0px</dimen>
     <dimen name="albanian_horizontal_gap_left_of_backspace">52.0px</dimen>
     <dimen name="albanian_horizontal_gap_right_of_shift">52.0px</dimen>
-    <dimen name="japanese_qwerty_key_last_horizontal_gap2">52.0px</dimen>
-    <dimen name="japanese_qwerty_key_last_width_url_email_multi_language">177.0px</dimen>
-    <dimen name="qwerty_email_url_last_line_horizontal_gap">52.0px</dimen>
-    <dimen name="qwerty_indian_tamil_first_column_fourth_line_horizontal_gap2">305.0px</dimen>
-    <dimen name="danish_horizontal_gap_right_of_sym">102.0px</dimen>
-    <dimen name="danish_horizontal_gap_left_of_enter">101.0px</dimen>
-    <dimen name="qwerty_kazakh_third_row_default_gap">0.0px</dimen>
     <item type="dimen" name="APKTOOL_DUMMY_09b6">false</item>
     <item type="dimen" name="APKTOOL_DUMMY_09b7">false</item>
     <item type="dimen" name="APKTOOL_DUMMY_09b8">false</item>
@@ -822,6 +815,13 @@
     <item type="dimen" name="APKTOOL_DUMMY_0ba9">false</item>
     <item type="dimen" name="APKTOOL_DUMMY_0baa">false</item>
     <item type="dimen" name="APKTOOL_DUMMY_0bab">false</item>
+    <dimen name="japanese_qwerty_key_last_horizontal_gap2">52.0px</dimen>
+    <dimen name="japanese_qwerty_key_last_width_url_email_multi_language">177.0px</dimen>
+    <dimen name="qwerty_email_url_last_line_horizontal_gap">52.0px</dimen>
+    <dimen name="qwerty_indian_tamil_first_column_fourth_line_horizontal_gap2">305.0px</dimen>
+    <dimen name="danish_horizontal_gap_right_of_sym">102.0px</dimen>
+    <dimen name="danish_horizontal_gap_left_of_enter">101.0px</dimen>
+    <dimen name="qwerty_kazakh_third_row_default_gap">0.0px</dimen>
     <item type="dimen" name="APKTOOL_DUMMY_0bb3">false</item>
     <item type="dimen" name="APKTOOL_DUMMY_0bb4">false</item>
     <item type="dimen" name="APKTOOL_DUMMY_0bb5">false</item>

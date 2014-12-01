@@ -36,9 +36,6 @@
 # virtual methods
 .method public onLoadComplete(Landroid/media/SoundPool;II)V
     .locals 7
-    .param p1    # Landroid/media/SoundPool;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v4, 0x0
 

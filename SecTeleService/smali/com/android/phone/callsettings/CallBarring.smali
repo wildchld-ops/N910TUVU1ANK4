@@ -477,7 +477,7 @@
 
     const/4 v4, 0x1
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallBarring;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -748,7 +748,7 @@
     :cond_0
     const v0, 0x7f090396
 
-    invoke-virtual {p0, v0}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lcom/android/phone/callsettings/CallBarring;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -774,7 +774,7 @@
     :cond_2
     const v0, 0x7f090397
 
-    invoke-virtual {p0, v0}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lcom/android/phone/callsettings/CallBarring;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -794,7 +794,7 @@
     :cond_4
     const v0, 0x7f090398
 
-    invoke-virtual {p0, v0}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lcom/android/phone/callsettings/CallBarring;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -809,7 +809,7 @@
 
     const v0, 0x7f09039a
 
-    invoke-virtual {p0, v0}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lcom/android/phone/callsettings/CallBarring;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -818,7 +818,7 @@
     :cond_6
     const v0, 0x7f0902d0
 
-    invoke-virtual {p0, v0}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lcom/android/phone/callsettings/CallBarring;->getString(I)Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/CallBarring;->handler:Landroid/os/Handler;
 
@@ -902,7 +902,7 @@
 
     iget v0, p0, Lcom/android/phone/callsettings/CallBarring;->mPrevBusyDialog:I
 
-    invoke-virtual {p0, v0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->removeDialog(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/callsettings/CallBarring;->removeDialog(I)V
 
     goto :goto_0
 .end method
@@ -914,7 +914,7 @@
 
     invoke-direct {p0, v0}, Lcom/android/phone/callsettings/CallBarring;->setAppState(Lcom/android/phone/callsettings/CallBarring$AppState;)V
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallBarring;->finish()V
 
     return-void
 .end method
@@ -923,7 +923,7 @@
     .locals 3
     .param p1    # Ljava/lang/String;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallBarring;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -943,7 +943,7 @@
 
     const/4 v4, 0x1
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallBarring;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
@@ -1277,7 +1277,7 @@
 
     const v0, 0x7f09038b
 
-    invoke-virtual {p0, v0}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lcom/android/phone/callsettings/CallBarring;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -1296,7 +1296,7 @@
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v0, v6}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v0, v6}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     iget-object v0, p0, Lcom/android/phone/callsettings/CallBarring;->mPreference:Ljava/util/ArrayList;
 
@@ -1306,7 +1306,7 @@
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v0, v6}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v0, v6}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     :cond_5
     iget v0, p0, Lcom/android/phone/callsettings/CallBarring;->mSelectedIndex:I
@@ -1323,7 +1323,7 @@
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v0, v6}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v0, v6}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     :cond_6
     iget-object v0, p0, Lcom/android/phone/callsettings/CallBarring;->mPreference:Ljava/util/ArrayList;
@@ -1336,7 +1336,7 @@
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v0}, Landroid/preference/TwoStatePreference;->isChecked()Z
+    invoke-virtual {v0}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
     move-result v0
 
@@ -1354,7 +1354,7 @@
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v0, v2}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+    invoke-virtual {v0, v2}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     :cond_7
     :goto_2
@@ -1375,7 +1375,7 @@
 
     const v0, 0x7f09038a
 
-    invoke-virtual {p0, v0}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lcom/android/phone/callsettings/CallBarring;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -1394,7 +1394,7 @@
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v0, v2}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v0, v2}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     iget-object v0, p0, Lcom/android/phone/callsettings/CallBarring;->mPreference:Ljava/util/ArrayList;
 
@@ -1404,7 +1404,7 @@
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v0, v2}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v0, v2}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     :cond_a
     iget v0, p0, Lcom/android/phone/callsettings/CallBarring;->mSelectedIndex:I
@@ -1421,7 +1421,7 @@
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v0, v2}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v0, v2}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     :cond_b
     iget-object v0, p0, Lcom/android/phone/callsettings/CallBarring;->mPreference:Ljava/util/ArrayList;
@@ -1434,7 +1434,7 @@
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v0}, Landroid/preference/TwoStatePreference;->isChecked()Z
+    invoke-virtual {v0}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
     move-result v0
 
@@ -1452,7 +1452,7 @@
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v0, v6}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+    invoke-virtual {v0, v6}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     goto :goto_2
 
@@ -1608,7 +1608,7 @@
 
     const v1, 0x7f090399
 
-    invoke-virtual {p0, v1}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v1}, Lcom/android/phone/callsettings/CallBarring;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -2133,7 +2133,7 @@
 
     check-cast v1, Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v1}, Landroid/preference/TwoStatePreference;->isChecked()Z
+    invoke-virtual {v1}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
     move-result v1
 
@@ -2142,7 +2142,7 @@
     move v1, v2
 
     :goto_2
-    invoke-virtual {v0, v1}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+    invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     :cond_2
     if-eq p2, v4, :cond_3
@@ -2169,21 +2169,21 @@
     :sswitch_0
     invoke-direct {p0}, Lcom/android/phone/callsettings/CallBarring;->deleteBusyDialog()V
 
-    invoke-virtual {p0, v4}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->showDialog(I)V
+    invoke-virtual {p0, v4}, Lcom/android/phone/callsettings/CallBarring;->showDialog(I)V
 
     goto :goto_1
 
     :sswitch_1
     const/16 v0, 0x320
 
-    invoke-virtual {p0, v0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->showDialog(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/callsettings/CallBarring;->showDialog(I)V
 
     goto :goto_1
 
     :sswitch_2
     invoke-direct {p0}, Lcom/android/phone/callsettings/CallBarring;->deleteBusyDialog()V
 
-    invoke-virtual {p0, v5}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->showDialog(I)V
+    invoke-virtual {p0, v5}, Lcom/android/phone/callsettings/CallBarring;->showDialog(I)V
 
     goto :goto_1
 
@@ -2192,21 +2192,21 @@
 
     const/16 v0, 0x190
 
-    invoke-virtual {p0, v0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->showDialog(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/callsettings/CallBarring;->showDialog(I)V
 
     goto :goto_1
 
     :sswitch_4
     invoke-direct {p0}, Lcom/android/phone/callsettings/CallBarring;->deleteBusyDialog()V
 
-    invoke-virtual {p0, v6}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->showDialog(I)V
+    invoke-virtual {p0, v6}, Lcom/android/phone/callsettings/CallBarring;->showDialog(I)V
 
     goto :goto_1
 
     :sswitch_5
     invoke-direct {p0}, Lcom/android/phone/callsettings/CallBarring;->deleteBusyDialog()V
 
-    invoke-virtual {p0, v7}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->showDialog(I)V
+    invoke-virtual {p0, v7}, Lcom/android/phone/callsettings/CallBarring;->showDialog(I)V
 
     goto :goto_1
 
@@ -2215,7 +2215,7 @@
 
     const/16 v0, 0x2bc
 
-    invoke-virtual {p0, v0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->showDialog(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/callsettings/CallBarring;->showDialog(I)V
 
     goto :goto_1
 
@@ -2286,7 +2286,7 @@
 
     iget-object v1, p0, Lcom/android/phone/callsettings/CallBarring;->mAppState:Lcom/android/phone/callsettings/CallBarring$AppState;
 
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    invoke-virtual {v1}, Lcom/android/phone/callsettings/CallBarring$AppState;->ordinal()I
 
     move-result v1
 
@@ -2348,7 +2348,7 @@
 
     const/16 v0, 0x384
 
-    invoke-virtual {p0, v0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->showDialog(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/callsettings/CallBarring;->showDialog(I)V
 
     goto :goto_3
 
@@ -2359,7 +2359,7 @@
 
     const/16 v0, 0x64
 
-    invoke-virtual {p0, v0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->showDialog(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/callsettings/CallBarring;->showDialog(I)V
 
     goto :goto_3
 
@@ -2466,7 +2466,7 @@
 
     const/4 v4, 0x1
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallBarring;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
@@ -2602,7 +2602,7 @@
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setVisibility(I)V
 
     :cond_0
     return-void
@@ -2611,7 +2611,7 @@
 .method private showPasswordDialog()V
     .locals 4
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallBarring;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -2625,7 +2625,7 @@
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallBarring;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -2756,9 +2756,9 @@
 
     const v3, 0x7f060010
 
-    invoke-virtual {p0, v3}, Landroid/preference/PreferenceFragment;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v3}, Lcom/android/phone/callsettings/CallBarring;->addPreferencesFromResource(I)V
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getActionBar()Landroid/app/ActionBar;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallBarring;->getActionBar()Landroid/app/ActionBar;
 
     move-result-object v0
 
@@ -2767,11 +2767,11 @@
     invoke-virtual {v0, v6}, Landroid/app/ActionBar;->setDisplayHomeAsUpEnabled(Z)V
 
     :cond_0
-    invoke-virtual {p0}, Landroid/preference/PreferenceFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallBarring;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v3
 
-    invoke-virtual {v3}, Landroid/preference/Preference;->getSharedPreferences()Landroid/content/SharedPreferences;
+    invoke-virtual {v3}, Landroid/preference/PreferenceScreen;->getSharedPreferences()Landroid/content/SharedPreferences;
 
     move-result-object v3
 
@@ -2779,7 +2779,7 @@
 
     const-string v3, "callbarring_baoc_pref"
 
-    invoke-virtual {p0, v3}, Landroid/preference/PreferenceFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v3}, Lcom/android/phone/callsettings/CallBarring;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v3
 
@@ -2789,7 +2789,7 @@
 
     const-string v3, "callbarring_baoic_pref"
 
-    invoke-virtual {p0, v3}, Landroid/preference/PreferenceFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v3}, Lcom/android/phone/callsettings/CallBarring;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v3
 
@@ -2799,7 +2799,7 @@
 
     const-string v3, "callbarring_baoicxh_pref"
 
-    invoke-virtual {p0, v3}, Landroid/preference/PreferenceFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v3}, Lcom/android/phone/callsettings/CallBarring;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v3
 
@@ -2809,7 +2809,7 @@
 
     const-string v3, "callbarring_baic_pref"
 
-    invoke-virtual {p0, v3}, Landroid/preference/PreferenceFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v3}, Lcom/android/phone/callsettings/CallBarring;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v3
 
@@ -2819,7 +2819,7 @@
 
     const-string v3, "callbarring_baicr_pref"
 
-    invoke-virtual {p0, v3}, Landroid/preference/PreferenceFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v3}, Lcom/android/phone/callsettings/CallBarring;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v3
 
@@ -2857,7 +2857,7 @@
 
     invoke-virtual {v3, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallBarring;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
 
@@ -2891,11 +2891,11 @@
 
     iput-object v3, p0, Lcom/android/phone/callsettings/CallBarring;->editText:Landroid/widget/EditText;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallBarring;->getActivity()Landroid/app/Activity;
 
     const-string v3, "input_method"
 
-    invoke-virtual {p0, v3}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v3}, Lcom/android/phone/callsettings/CallBarring;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v3
 
@@ -3036,7 +3036,7 @@
     if-ne v3, v6, :cond_b
 
     :cond_2
-    invoke-virtual {p0, v8}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->showDialog(I)V
+    invoke-virtual {p0, v8}, Lcom/android/phone/callsettings/CallBarring;->showDialog(I)V
 
     const-string v3, "CallBarring"
 
@@ -3063,7 +3063,7 @@
 
     check-cast v3, Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v3, v7}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v3, v7}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     add-int/lit8 v2, v2, 0x1
 
@@ -3190,7 +3190,7 @@
     if-ne v3, v6, :cond_b
 
     :cond_a
-    invoke-virtual {p0, v8}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->showDialog(I)V
+    invoke-virtual {p0, v8}, Lcom/android/phone/callsettings/CallBarring;->showDialog(I)V
 
     const-string v3, "CallBarring"
 
@@ -3217,7 +3217,7 @@
 
     check-cast v3, Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v3, v7}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v3, v7}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     add-int/lit8 v2, v2, 0x1
 
@@ -3247,7 +3247,7 @@
     iput v3, p0, Lcom/android/phone/callsettings/CallBarring;->mSelectedIndex:I
 
     :goto_6
-    invoke-virtual {p0, v6}, Landroid/app/Fragment;->setHasOptionsMenu(Z)V
+    invoke-virtual {p0, v6}, Lcom/android/phone/callsettings/CallBarring;->setHasOptionsMenu(Z)V
 
     :cond_c
     return-void
@@ -3301,7 +3301,7 @@
     packed-switch p1, :pswitch_data_0
 
     :goto_0
-    invoke-virtual {p0, v4}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v4}, Lcom/android/phone/callsettings/CallBarring;->getString(I)Ljava/lang/String;
 
     move-result-object v6
 
@@ -3311,7 +3311,7 @@
     return-object v1
 
     :sswitch_0
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallBarring;->getActivity()Landroid/app/Activity;
 
     move-result-object v6
 
@@ -3347,17 +3347,17 @@
 
     const-string v7, ""
 
-    invoke-virtual {v6, v7}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {v6, v7}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
     iget-object v6, p0, Lcom/android/phone/callsettings/CallBarring;->editText:Landroid/widget/EditText;
 
     const v7, 0x7f0903a2
 
-    invoke-virtual {v6, v7}, Landroid/widget/TextView;->setHint(I)V
+    invoke-virtual {v6, v7}, Landroid/widget/EditText;->setHint(I)V
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallBarring;->getActivity()Landroid/app/Activity;
 
     move-result-object v6
 
@@ -3385,13 +3385,13 @@
 
     invoke-virtual {v0, v6, v7}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0, v9}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->setCancelable(Z)V
+    invoke-virtual {p0, v9}, Lcom/android/phone/callsettings/CallBarring;->setCancelable(Z)V
 
     new-instance v6, Lcom/android/phone/callsettings/CallBarring$12;
 
     invoke-direct {v6, p0}, Lcom/android/phone/callsettings/CallBarring$12;-><init>(Lcom/android/phone/callsettings/CallBarring;)V
 
-    invoke-virtual {p0, v6}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->setOnCancelListener(Landroid/content/DialogInterface$OnCancelListener;)V
+    invoke-virtual {p0, v6}, Lcom/android/phone/callsettings/CallBarring;->setOnCancelListener(Landroid/content/DialogInterface$OnCancelListener;)V
 
     invoke-virtual {v0}, Landroid/app/AlertDialog$Builder;->create()Landroid/app/AlertDialog;
 
@@ -3405,11 +3405,11 @@
 
     invoke-direct {v7, p0}, Lcom/android/phone/callsettings/CallBarring$13;-><init>(Lcom/android/phone/callsettings/CallBarring;)V
 
-    invoke-virtual {v6, v7}, Landroid/app/Dialog;->setOnShowListener(Landroid/content/DialogInterface$OnShowListener;)V
+    invoke-virtual {v6, v7}, Landroid/app/AlertDialog;->setOnShowListener(Landroid/content/DialogInterface$OnShowListener;)V
 
     iget-object v6, p0, Lcom/android/phone/callsettings/CallBarring;->editText:Landroid/widget/EditText;
 
-    invoke-virtual {v6}, Landroid/view/View;->requestFocus()Z
+    invoke-virtual {v6}, Landroid/widget/EditText;->requestFocus()Z
 
     iget-object v1, p0, Lcom/android/phone/callsettings/CallBarring;->mDialog:Landroid/app/AlertDialog;
 
@@ -3418,7 +3418,7 @@
     :sswitch_1
     new-instance v6, Landroid/app/ProgressDialog;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallBarring;->getActivity()Landroid/app/Activity;
 
     move-result-object v7
 
@@ -3432,7 +3432,7 @@
 
     iget-object v6, p0, Lcom/android/phone/callsettings/CallBarring;->mProgressDialog:Landroid/app/ProgressDialog;
 
-    invoke-virtual {v6}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
+    invoke-virtual {v6}, Landroid/app/ProgressDialog;->getWindow()Landroid/view/Window;
 
     move-result-object v6
 
@@ -3445,13 +3445,13 @@
     goto/16 :goto_1
 
     :sswitch_2
-    invoke-virtual {p0, v8}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->setCancelable(Z)V
+    invoke-virtual {p0, v8}, Lcom/android/phone/callsettings/CallBarring;->setCancelable(Z)V
 
     iget-object v6, p0, Lcom/android/phone/callsettings/CallBarring;->mProgressDialog:Landroid/app/ProgressDialog;
 
     const v7, 0x7f09007e
 
-    invoke-virtual {p0, v7}, Landroid/app/Fragment;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v7}, Lcom/android/phone/callsettings/CallBarring;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v7
 
@@ -3462,13 +3462,13 @@
     goto/16 :goto_1
 
     :sswitch_3
-    invoke-virtual {p0, v9}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->setCancelable(Z)V
+    invoke-virtual {p0, v9}, Lcom/android/phone/callsettings/CallBarring;->setCancelable(Z)V
 
     iget-object v6, p0, Lcom/android/phone/callsettings/CallBarring;->mProgressDialog:Landroid/app/ProgressDialog;
 
     const v7, 0x7f09007d
 
-    invoke-virtual {p0, v7}, Landroid/app/Fragment;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v7}, Lcom/android/phone/callsettings/CallBarring;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v7
 
@@ -3478,7 +3478,7 @@
 
     invoke-direct {v6, p0}, Lcom/android/phone/callsettings/CallBarring$14;-><init>(Lcom/android/phone/callsettings/CallBarring;)V
 
-    invoke-virtual {p0, v6}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->setOnCancelListener(Landroid/content/DialogInterface$OnCancelListener;)V
+    invoke-virtual {p0, v6}, Lcom/android/phone/callsettings/CallBarring;->setOnCancelListener(Landroid/content/DialogInterface$OnCancelListener;)V
 
     iget-object v1, p0, Lcom/android/phone/callsettings/CallBarring;->mProgressDialog:Landroid/app/ProgressDialog;
 
@@ -3496,27 +3496,27 @@
     :goto_2
     new-instance v2, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallBarring;->getActivity()Landroid/app/Activity;
 
     move-result-object v6
 
     invoke-direct {v2, v6}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    invoke-virtual {p0, v8}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->setCancelable(Z)V
+    invoke-virtual {p0, v8}, Lcom/android/phone/callsettings/CallBarring;->setCancelable(Z)V
 
-    invoke-virtual {p0, v5}, Landroid/app/Fragment;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v5}, Lcom/android/phone/callsettings/CallBarring;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v6
 
     invoke-virtual {v2, v6}, Landroid/app/AlertDialog$Builder;->setTitle(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0, v4}, Landroid/app/Fragment;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v4}, Lcom/android/phone/callsettings/CallBarring;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v6
 
     invoke-virtual {v2, v6}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0, v10}, Landroid/app/Fragment;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v10}, Lcom/android/phone/callsettings/CallBarring;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v6
 
@@ -3530,7 +3530,7 @@
 
     move-result-object v1
 
-    invoke-virtual {p0, v9}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->setCancelable(Z)V
+    invoke-virtual {p0, v9}, Lcom/android/phone/callsettings/CallBarring;->setCancelable(Z)V
 
     goto/16 :goto_1
 
@@ -3616,7 +3616,7 @@
 
     const/4 v2, 0x0
 
-    invoke-super {p0, p1, p2}, Landroid/app/Fragment;->onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
+    invoke-super {p0, p1, p2}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
 
     const/4 v0, 0x1
 
@@ -3641,7 +3641,7 @@
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->isRemoving()Z
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallBarring;->isRemoving()Z
 
     move-result v0
 
@@ -3773,7 +3773,7 @@
     .locals 2
     .param p1    # Landroid/os/Bundle;
 
-    invoke-super {p0, p1}, Landroid/preference/PreferenceFragment;->onSaveInstanceState(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onSaveInstanceState(Landroid/os/Bundle;)V
 
     const-string v0, "mCB_Checked"
 
@@ -3928,7 +3928,7 @@
 
     const/16 v1, 0x3e8
 
-    invoke-virtual {p0, v1}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->showDialog(I)V
+    invoke-virtual {p0, v1}, Lcom/android/phone/callsettings/CallBarring;->showDialog(I)V
 
     iget-object v1, p0, Lcom/android/phone/callsettings/CallBarring;->handler:Landroid/os/Handler;
 

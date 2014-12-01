@@ -36,9 +36,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/settings/handwritingsearch/HandwritingLanguagePreference;Landroid/content/Context;I[Lcom/android/settings/handwritingsearch/HandwritingLanguagePreference$LanguageInfo;)V
     .locals 1
-    .param p2    # Landroid/content/Context;
-    .param p3    # I
-    .param p4    # [Lcom/android/settings/handwritingsearch/HandwritingLanguagePreference$LanguageInfo;
 
     iput-object p1, p0, Lcom/android/settings/handwritingsearch/HandwritingLanguagePreference$HandwritingLanguageListAdapter;->this$0:Lcom/android/settings/handwritingsearch/HandwritingLanguagePreference;
 
@@ -71,7 +68,6 @@
 
 .method public getItem(I)Lcom/android/settings/handwritingsearch/HandwritingLanguagePreference$LanguageInfo;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/settings/handwritingsearch/HandwritingLanguagePreference$HandwritingLanguageListAdapter;->mLanguageInfo:[Lcom/android/settings/handwritingsearch/HandwritingLanguagePreference$LanguageInfo;
 
@@ -82,7 +78,6 @@
 
 .method public bridge synthetic getItem(I)Ljava/lang/Object;
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/settings/handwritingsearch/HandwritingLanguagePreference$HandwritingLanguageListAdapter;->getItem(I)Lcom/android/settings/handwritingsearch/HandwritingLanguagePreference$LanguageInfo;
 
@@ -93,9 +88,6 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     move-object v1, p2
 

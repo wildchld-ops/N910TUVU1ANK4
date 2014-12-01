@@ -20,11 +20,6 @@
 # direct methods
 .method constructor <init>(FFFFF)V
     .locals 3
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
 
     const/high16 v2, 0x3f800000
 

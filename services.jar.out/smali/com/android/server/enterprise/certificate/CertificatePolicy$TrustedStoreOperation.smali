@@ -56,7 +56,6 @@
 # direct methods
 .method private constructor <init>(Lcom/android/server/enterprise/certificate/CertificatePolicy;ILjava/util/List;Ljava/util/List;)V
     .locals 0
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -86,11 +85,6 @@
 
 .method synthetic constructor <init>(Lcom/android/server/enterprise/certificate/CertificatePolicy;ILjava/util/List;Ljava/util/List;Lcom/android/server/enterprise/certificate/CertificatePolicy$1;)V
     .locals 0
-    .param p1    # Lcom/android/server/enterprise/certificate/CertificatePolicy;
-    .param p2    # I
-    .param p3    # Ljava/util/List;
-    .param p4    # Ljava/util/List;
-    .param p5    # Lcom/android/server/enterprise/certificate/CertificatePolicy$1;
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/server/enterprise/certificate/CertificatePolicy$TrustedStoreOperation;-><init>(Lcom/android/server/enterprise/certificate/CertificatePolicy;ILjava/util/List;Ljava/util/List;)V
 
@@ -101,7 +95,6 @@
 # virtual methods
 .method protected varargs doInBackground([Ljava/lang/Void;)Ljava/lang/Boolean;
     .locals 7
-    .param p1    # [Ljava/lang/Void;
 
     const/4 v6, 0x0
 
@@ -290,7 +283,6 @@
 
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [Ljava/lang/Void;
 

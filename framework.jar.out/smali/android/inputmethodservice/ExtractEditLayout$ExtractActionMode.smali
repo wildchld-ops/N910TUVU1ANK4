@@ -28,7 +28,6 @@
 # direct methods
 .method public constructor <init>(Landroid/inputmethodservice/ExtractEditLayout;Landroid/view/ActionMode$Callback;)V
     .locals 2
-    .param p2    # Landroid/view/ActionMode$Callback;
 
     iput-object p1, p0, Landroid/inputmethodservice/ExtractEditLayout$ExtractActionMode;->this$0:Landroid/inputmethodservice/ExtractEditLayout;
 
@@ -313,8 +312,6 @@
 
 .method public onMenuItemSelected(Lcom/android/internal/view/menu/MenuBuilder;Landroid/view/MenuItem;)Z
     .locals 3
-    .param p1    # Lcom/android/internal/view/menu/MenuBuilder;
-    .param p2    # Landroid/view/MenuItem;
 
     const/4 v0, 0x0
 
@@ -368,42 +365,36 @@
 
 .method public onMenuModeChange(Lcom/android/internal/view/menu/MenuBuilder;)V
     .locals 0
-    .param p1    # Lcom/android/internal/view/menu/MenuBuilder;
 
     return-void
 .end method
 
 .method public setCustomView(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     return-void
 .end method
 
 .method public setSubtitle(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public setSubtitle(Ljava/lang/CharSequence;)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
 
     return-void
 .end method
 
 .method public setTitle(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public setTitle(Ljava/lang/CharSequence;)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
 
     return-void
 .end method

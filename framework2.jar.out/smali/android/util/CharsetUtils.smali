@@ -70,7 +70,6 @@
 
 .method public static charsetForVendor(Ljava/lang/String;)Ljava/nio/charset/Charset;
     .locals 1
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/nio/charset/UnsupportedCharsetException;,
@@ -91,8 +90,6 @@
 
 .method public static charsetForVendor(Ljava/lang/String;Ljava/lang/String;)Ljava/nio/charset/Charset;
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/nio/charset/UnsupportedCharsetException;,
@@ -121,7 +118,6 @@
 
 .method private static isShiftJis(Ljava/lang/String;)Z
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -177,7 +173,6 @@
 
 .method public static nameForDefaultVendor(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     invoke-static {}, Landroid/util/CharsetUtils;->getDefaultVendor()Ljava/lang/String;
 
@@ -192,8 +187,6 @@
 
 .method public static nameForVendor(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 

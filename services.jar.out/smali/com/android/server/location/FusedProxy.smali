@@ -14,12 +14,6 @@
 # direct methods
 .method private constructor <init>(Landroid/content/Context;Landroid/os/Handler;Landroid/hardware/location/IFusedLocationHardware;III)V
     .locals 9
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/Handler;
-    .param p3    # Landroid/hardware/location/IFusedLocationHardware;
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -64,7 +58,6 @@
 
 .method static synthetic access$000(Lcom/android/server/location/FusedProxy;)Lcom/android/server/location/FusedLocationHardwareSecure;
     .locals 1
-    .param p0    # Lcom/android/server/location/FusedProxy;
 
     iget-object v0, p0, Lcom/android/server/location/FusedProxy;->mLocationHardware:Lcom/android/server/location/FusedLocationHardwareSecure;
 
@@ -73,8 +66,6 @@
 
 .method static synthetic access$100(Lcom/android/server/location/FusedProxy;Landroid/hardware/location/IFusedLocationHardware;)V
     .locals 0
-    .param p0    # Lcom/android/server/location/FusedProxy;
-    .param p1    # Landroid/hardware/location/IFusedLocationHardware;
 
     invoke-direct {p0, p1}, Lcom/android/server/location/FusedProxy;->bindProvider(Landroid/hardware/location/IFusedLocationHardware;)V
 
@@ -83,7 +74,6 @@
 
 .method private bindProvider(Landroid/hardware/location/IFusedLocationHardware;)V
     .locals 4
-    .param p1    # Landroid/hardware/location/IFusedLocationHardware;
 
     iget-object v2, p0, Lcom/android/server/location/FusedProxy;->mServiceWatcher:Lcom/android/server/ServiceWatcher;
 
@@ -130,12 +120,6 @@
 
 .method public static createAndBind(Landroid/content/Context;Landroid/os/Handler;Landroid/hardware/location/IFusedLocationHardware;III)Lcom/android/server/location/FusedProxy;
     .locals 7
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/os/Handler;
-    .param p2    # Landroid/hardware/location/IFusedLocationHardware;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     new-instance v0, Lcom/android/server/location/FusedProxy;
 

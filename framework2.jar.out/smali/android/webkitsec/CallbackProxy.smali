@@ -154,8 +154,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/webkitsec/WebViewClassic;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/webkitsec/WebViewClassic;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
@@ -178,7 +176,6 @@
 
 .method static synthetic access$000(Landroid/webkitsec/CallbackProxy;)Landroid/webkitsec/WebViewClassic;
     .locals 1
-    .param p0    # Landroid/webkitsec/CallbackProxy;
 
     iget-object v0, p0, Landroid/webkitsec/CallbackProxy;->mWebView:Landroid/webkitsec/WebViewClassic;
 
@@ -187,7 +184,6 @@
 
 .method static synthetic access$100(Landroid/webkitsec/CallbackProxy;)Landroid/webkitsec/WebChromeClient;
     .locals 1
-    .param p0    # Landroid/webkitsec/CallbackProxy;
 
     iget-object v0, p0, Landroid/webkitsec/CallbackProxy;->mWebChromeClient:Landroid/webkitsec/WebChromeClient;
 
@@ -196,7 +192,6 @@
 
 .method private getJsDialogTitle(Ljava/lang/String;)Ljava/lang/String;
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     move-object v1, p1
 
@@ -281,7 +276,6 @@
 
 .method private declared-synchronized sendMessageToUiThreadSync(Landroid/os/Message;)V
     .locals 4
-    .param p1    # Landroid/os/Message;
 
     monitor-enter p0
 
@@ -399,10 +393,6 @@
 # virtual methods
 .method public addMessageToConsole(Ljava/lang/String;ILjava/lang/String;I)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
 
     iget-object v1, p0, Landroid/webkitsec/CallbackProxy;->mWebChromeClient:Landroid/webkitsec/WebChromeClient;
 
@@ -491,8 +481,6 @@
 
 .method public createWindow(ZZ)Landroid/webkitsec/BrowserFrame;
     .locals 13
-    .param p1    # Z
-    .param p2    # Z
 
     const/4 v12, 0x0
 
@@ -788,8 +776,6 @@
 
 .method public doUpdateVisitedHistory(Ljava/lang/String;Z)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const/4 v1, 0x0
 
@@ -840,7 +826,6 @@
 
 .method public getReaderData(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/16 v1, 0x92
 
@@ -863,7 +848,6 @@
 
 .method public getRecognizeData(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/16 v1, 0x93
 
@@ -965,7 +949,6 @@
 
 .method public handleMessage(Landroid/os/Message;)V
     .locals 71
-    .param p1    # Landroid/os/Message;
 
     invoke-virtual/range {p0 .. p0}, Landroid/webkitsec/CallbackProxy;->messagesBlocked()Z
 
@@ -3672,7 +3655,6 @@
 
 .method public isSearchOptionAvailable(Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const-string v2, "CallbackProxy"
 
@@ -3789,8 +3771,6 @@
 
 .method public onAlertDialogWithCheckBox(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v2, p0, Landroid/webkitsec/CallbackProxy;->mWebChromeClient:Landroid/webkitsec/WebChromeClient;
 
@@ -3843,7 +3823,6 @@
 
 .method public onCloseWindow(Landroid/webkitsec/WebViewClassic;)V
     .locals 1
-    .param p1    # Landroid/webkitsec/WebViewClassic;
 
     iget-object v0, p0, Landroid/webkitsec/CallbackProxy;->mWebChromeClient:Landroid/webkitsec/WebChromeClient;
 
@@ -3866,12 +3845,6 @@
 
 .method public onDownloadStart(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;J)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # J
 
     iget-object v2, p0, Landroid/webkitsec/CallbackProxy;->mDownloadListener:Landroid/webkitsec/DownloadListener;
 
@@ -3926,12 +3899,6 @@
 
 .method public onExceededDatabaseQuota(Ljava/lang/String;Ljava/lang/String;JJJLandroid/webkitsec/WebStorage$QuotaUpdater;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # J
-    .param p5    # J
-    .param p7    # J
-    .param p9    # Landroid/webkitsec/WebStorage$QuotaUpdater;
 
     iget-object v2, p0, Landroid/webkitsec/CallbackProxy;->mWebChromeClient:Landroid/webkitsec/WebChromeClient;
 
@@ -3998,8 +3965,6 @@
 
 .method public onFormResubmission(Landroid/os/Message;Landroid/os/Message;)V
     .locals 3
-    .param p1    # Landroid/os/Message;
-    .param p2    # Landroid/os/Message;
 
     iget-object v2, p0, Landroid/webkitsec/CallbackProxy;->mWebViewClient:Landroid/webkitsec/WebViewClient;
 
@@ -4058,8 +4023,6 @@
 
 .method public onGeolocationPermissionsShowPrompt(Ljava/lang/String;Landroid/webkitsec/GeolocationPermissions$Callback;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/webkitsec/GeolocationPermissions$Callback;
 
     iget-object v2, p0, Landroid/webkitsec/CallbackProxy;->mWebChromeClient:Landroid/webkitsec/WebChromeClient;
 
@@ -4096,8 +4059,6 @@
 
 .method onIndexChanged(Landroid/webkitsec/WebHistoryItem;I)V
     .locals 3
-    .param p1    # Landroid/webkitsec/WebHistoryItem;
-    .param p2    # I
 
     iget-object v1, p0, Landroid/webkitsec/CallbackProxy;->mWebBackForwardListClient:Landroid/webkitsec/WebBackForwardListClient;
 
@@ -4122,8 +4083,6 @@
 
 .method public onJsAlert(Ljava/lang/String;Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v2, p0, Landroid/webkitsec/CallbackProxy;->mWebChromeClient:Landroid/webkitsec/WebChromeClient;
 
@@ -4178,8 +4137,6 @@
 
 .method public onJsBeforeUnload(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v2, p0, Landroid/webkitsec/CallbackProxy;->mWebChromeClient:Landroid/webkitsec/WebChromeClient;
 
@@ -4242,8 +4199,6 @@
 
 .method public onJsConfirm(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v2, p0, Landroid/webkitsec/CallbackProxy;->mWebChromeClient:Landroid/webkitsec/WebChromeClient;
 
@@ -4306,9 +4261,6 @@
 
 .method public onJsPrompt(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -4413,7 +4365,6 @@
 
 .method onNewHistoryItem(Landroid/webkitsec/WebHistoryItem;)V
     .locals 2
-    .param p1    # Landroid/webkitsec/WebHistoryItem;
 
     iget-object v1, p0, Landroid/webkitsec/CallbackProxy;->mWebBackForwardListClient:Landroid/webkitsec/WebBackForwardListClient;
 
@@ -4436,7 +4387,6 @@
 
 .method public onNotificationManagerCancelPrompt(I)V
     .locals 4
-    .param p1    # I
 
     const-string v1, "CallbackProxy"
 
@@ -4489,11 +4439,6 @@
 
 .method public onNotificationManagershowPrompt(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILandroid/webkitsec/NotificationPermissions$Callback;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
-    .param p5    # Landroid/webkitsec/NotificationPermissions$Callback;
 
     const-string v4, "CallbackProxy"
 
@@ -4639,8 +4584,6 @@
 
 .method public onNotificationPermissionsShowPrompt(Ljava/lang/String;Landroid/webkitsec/NotificationPermissions$Callback;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/webkitsec/NotificationPermissions$Callback;
 
     const-string v2, "CallbackProxy"
 
@@ -4683,7 +4626,6 @@
 
 .method public onPageFinished(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const/16 v1, 0x79
 
@@ -4698,8 +4640,6 @@
 
 .method public onPageStarted(Ljava/lang/String;Landroid/graphics/Bitmap;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/graphics/Bitmap;
 
     const/16 v1, 0x64
 
@@ -4740,7 +4680,6 @@
 
 .method public onProceededAfterSslError(Landroid/net/http/SslError;)V
     .locals 2
-    .param p1    # Landroid/net/http/SslError;
 
     iget-object v1, p0, Landroid/webkitsec/CallbackProxy;->mWebViewClient:Landroid/webkitsec/WebViewClient;
 
@@ -4772,7 +4711,6 @@
 
 .method public onProgressChanged(I)V
     .locals 1
-    .param p1    # I
 
     monitor-enter p0
 
@@ -4830,9 +4768,6 @@
 
 .method public onReachedMaxAppCacheSize(JJLandroid/webkitsec/WebStorage$QuotaUpdater;)V
     .locals 4
-    .param p1    # J
-    .param p3    # J
-    .param p5    # Landroid/webkitsec/WebStorage$QuotaUpdater;
 
     iget-object v2, p0, Landroid/webkitsec/CallbackProxy;->mWebChromeClient:Landroid/webkitsec/WebChromeClient;
 
@@ -4883,7 +4818,6 @@
 
 .method public onReceivedCertificate(Landroid/net/http/SslCertificate;)V
     .locals 1
-    .param p1    # Landroid/net/http/SslCertificate;
 
     const/16 v0, 0x7c
 
@@ -4898,8 +4832,6 @@
 
 .method public onReceivedClientCertRequest(Landroid/webkitsec/ClientCertRequestHandler;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Landroid/webkitsec/ClientCertRequestHandler;
-    .param p2    # Ljava/lang/String;
 
     iget-object v2, p0, Landroid/webkitsec/CallbackProxy;->mWebViewClient:Landroid/webkitsec/WebViewClient;
 
@@ -4945,9 +4877,6 @@
 
 .method public onReceivedError(ILjava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     iget-object v1, p0, Landroid/webkitsec/CallbackProxy;->mWebViewClient:Landroid/webkitsec/WebViewClient;
 
@@ -4988,10 +4917,6 @@
 
 .method public onReceivedHttpAuthCredentials(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     const/16 v1, 0x89
 
@@ -5038,9 +4963,6 @@
 
 .method public onReceivedHttpAuthRequest(Landroid/webkitsec/HttpAuthHandler;Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Landroid/webkitsec/HttpAuthHandler;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     iget-object v1, p0, Landroid/webkitsec/CallbackProxy;->mWebViewClient:Landroid/webkitsec/WebViewClient;
 
@@ -5081,7 +5003,6 @@
 
 .method public onReceivedIcon(Landroid/graphics/Bitmap;)V
     .locals 2
-    .param p1    # Landroid/graphics/Bitmap;
 
     iget-object v1, p0, Landroid/webkitsec/CallbackProxy;->mBackForwardList:Landroid/webkitsec/WebBackForwardListClassic;
 
@@ -5115,9 +5036,6 @@
 
 .method onReceivedLoginRequest(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     iget-object v2, p0, Landroid/webkitsec/CallbackProxy;->mWebViewClient:Landroid/webkitsec/WebViewClient;
 
@@ -5156,8 +5074,6 @@
 
 .method public onReceivedSslError(Landroid/webkitsec/SslErrorHandler;Landroid/net/http/SslError;)V
     .locals 3
-    .param p1    # Landroid/webkitsec/SslErrorHandler;
-    .param p2    # Landroid/net/http/SslError;
 
     iget-object v2, p0, Landroid/webkitsec/CallbackProxy;->mWebViewClient:Landroid/webkitsec/WebViewClient;
 
@@ -5196,7 +5112,6 @@
 
 .method public onReceivedTitle(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/webkitsec/CallbackProxy;->mWebChromeClient:Landroid/webkitsec/WebChromeClient;
 
@@ -5219,8 +5134,6 @@
 
 .method onReceivedTouchIconUrl(Ljava/lang/String;Z)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const/4 v2, 0x0
 
@@ -5297,10 +5210,6 @@
 
 .method public onSavePassword(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/os/Message;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Landroid/os/Message;
 
     invoke-static {p4}, Ljunit/framework/Assert;->assertNull(Ljava/lang/Object;)V
 
@@ -5341,8 +5250,6 @@
 
 .method public onScaleChanged(FF)V
     .locals 3
-    .param p1    # F
-    .param p2    # F
 
     iget-object v2, p0, Landroid/webkitsec/CallbackProxy;->mWebViewClient:Landroid/webkitsec/WebViewClient;
 
@@ -5377,7 +5284,6 @@
 
 .method onSpellCheckFinish(I)V
     .locals 2
-    .param p1    # I
 
     const/16 v0, 0x91
 
@@ -5394,15 +5300,12 @@
 
 .method public onTooManyRedirects(Landroid/os/Message;Landroid/os/Message;)V
     .locals 0
-    .param p1    # Landroid/os/Message;
-    .param p2    # Landroid/os/Message;
 
     return-void
 .end method
 
 .method public onUnhandledKeyEvent(Landroid/view/KeyEvent;)V
     .locals 1
-    .param p1    # Landroid/view/KeyEvent;
 
     iget-object v0, p0, Landroid/webkitsec/CallbackProxy;->mWebViewClient:Landroid/webkitsec/WebViewClient;
 
@@ -5425,7 +5328,6 @@
 
 .method onUpdateUrl(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/16 v1, 0x9a
 
@@ -5448,8 +5350,6 @@
 
 .method openFileChooser(Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri;
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -5516,7 +5416,6 @@
 
 .method public setDownloadListener(Landroid/webkitsec/DownloadListener;)V
     .locals 0
-    .param p1    # Landroid/webkitsec/DownloadListener;
 
     iput-object p1, p0, Landroid/webkitsec/CallbackProxy;->mDownloadListener:Landroid/webkitsec/DownloadListener;
 
@@ -5525,7 +5424,6 @@
 
 .method setWebBackForwardListClient(Landroid/webkitsec/WebBackForwardListClient;)V
     .locals 0
-    .param p1    # Landroid/webkitsec/WebBackForwardListClient;
 
     iput-object p1, p0, Landroid/webkitsec/CallbackProxy;->mWebBackForwardListClient:Landroid/webkitsec/WebBackForwardListClient;
 
@@ -5534,7 +5432,6 @@
 
 .method public setWebChromeClient(Landroid/webkitsec/WebChromeClient;)V
     .locals 0
-    .param p1    # Landroid/webkitsec/WebChromeClient;
 
     iput-object p1, p0, Landroid/webkitsec/CallbackProxy;->mWebChromeClient:Landroid/webkitsec/WebChromeClient;
 
@@ -5543,7 +5440,6 @@
 
 .method public setWebFeedLinks([Landroid/webkitsec/WebFeedLink;)V
     .locals 1
-    .param p1    # [Landroid/webkitsec/WebFeedLink;
 
     monitor-enter p0
 
@@ -5566,7 +5462,6 @@
 
 .method public setWebViewClient(Landroid/webkitsec/WebViewClient;)V
     .locals 0
-    .param p1    # Landroid/webkitsec/WebViewClient;
 
     iput-object p1, p0, Landroid/webkitsec/CallbackProxy;->mWebViewClient:Landroid/webkitsec/WebViewClient;
 
@@ -5575,7 +5470,6 @@
 
 .method shouldInterceptRequest(Ljava/lang/String;)Landroid/webkitsec/WebResourceResponse;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -5631,7 +5525,6 @@
 
 .method public shouldOverrideUrlLoading(Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -5720,7 +5613,6 @@
 
 .method public uiOverrideKeyEvent(Landroid/view/KeyEvent;)Z
     .locals 2
-    .param p1    # Landroid/view/KeyEvent;
 
     iget-object v0, p0, Landroid/webkitsec/CallbackProxy;->mWebViewClient:Landroid/webkitsec/WebViewClient;
 
@@ -5749,7 +5641,6 @@
 
 .method public uiOverrideUrlLoading(Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 

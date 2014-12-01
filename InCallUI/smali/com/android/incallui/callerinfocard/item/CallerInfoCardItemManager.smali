@@ -14,10 +14,6 @@
 
 .method public static create(Landroid/content/Context;Landroid/net/Uri;Landroid/database/Cursor;Ljava/lang/Object;)Lcom/android/incallui/callerinfocard/item/CallerInfoCardItem;
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Landroid/database/Cursor;
-    .param p3    # Ljava/lang/Object;
 
     move-object v0, p3
 

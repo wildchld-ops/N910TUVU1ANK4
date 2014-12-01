@@ -10,7 +10,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -21,7 +20,6 @@
 
 .method private checkIfShortcutExist(Ljava/lang/String;)Z
     .locals 19
-    .param p1    # Ljava/lang/String;
 
     const-string v9, "com.sec.android.app.launcher.settings"
 
@@ -175,8 +173,6 @@
 
 .method private getIntentForShortcut(Ljava/lang/String;Landroid/content/Intent;)Ljava/lang/String;
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/Intent;
 
     const/4 v9, 0x0
 
@@ -283,7 +279,6 @@
 # virtual methods
 .method public addShortcut(Ljava/lang/String;)V
     .locals 12
-    .param p1    # Ljava/lang/String;
 
     const/4 v11, 0x0
 
@@ -495,7 +490,6 @@
 
 .method public uninstallShort(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 

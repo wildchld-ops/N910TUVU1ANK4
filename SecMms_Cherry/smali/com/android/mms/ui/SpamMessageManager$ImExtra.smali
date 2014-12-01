@@ -43,14 +43,6 @@
 
 .method public constructor <init>(JLjava/lang/String;Ljava/lang/String;JLjava/lang/String;JLjava/lang/String;J)V
     .locals 0
-    .param p1    # J
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # J
-    .param p7    # Ljava/lang/String;
-    .param p8    # J
-    .param p10    # Ljava/lang/String;
-    .param p11    # J
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

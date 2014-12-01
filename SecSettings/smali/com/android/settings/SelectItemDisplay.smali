@@ -66,7 +66,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/SelectItemDisplay;)Landroid/widget/LinearLayout;
     .locals 1
-    .param p0    # Lcom/android/settings/SelectItemDisplay;
 
     iget-object v0, p0, Lcom/android/settings/SelectItemDisplay;->mOpenCoverPopup:Landroid/widget/LinearLayout;
 
@@ -75,7 +74,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/SelectItemDisplay;)Landroid/widget/LinearLayout;
     .locals 1
-    .param p0    # Lcom/android/settings/SelectItemDisplay;
 
     iget-object v0, p0, Lcom/android/settings/SelectItemDisplay;->mNetworkPopup:Landroid/widget/LinearLayout;
 
@@ -84,7 +82,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/SelectItemDisplay;)Landroid/widget/LinearLayout;
     .locals 1
-    .param p0    # Lcom/android/settings/SelectItemDisplay;
 
     iget-object v0, p0, Lcom/android/settings/SelectItemDisplay;->mUseLocationPopup:Landroid/widget/LinearLayout;
 
@@ -93,7 +90,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/SelectItemDisplay;)Landroid/view/LayoutInflater;
     .locals 1
-    .param p0    # Lcom/android/settings/SelectItemDisplay;
 
     iget-object v0, p0, Lcom/android/settings/SelectItemDisplay;->mInflater:Landroid/view/LayoutInflater;
 
@@ -102,7 +98,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/SelectItemDisplay;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/settings/SelectItemDisplay;
 
     iget-object v0, p0, Lcom/android/settings/SelectItemDisplay;->mShortcutCameraDBKey:Ljava/lang/String;
 
@@ -111,7 +106,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/SelectItemDisplay;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/settings/SelectItemDisplay;
 
     iget-object v0, p0, Lcom/android/settings/SelectItemDisplay;->mWeatherDBKey:Ljava/lang/String;
 
@@ -120,7 +114,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/SelectItemDisplay;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/settings/SelectItemDisplay;
 
     iget-object v0, p0, Lcom/android/settings/SelectItemDisplay;->mPedometerDBKey:Ljava/lang/String;
 
@@ -188,7 +181,6 @@
 
 .method private clickItem(I)V
     .locals 13
-    .param p1    # I
 
     const/4 v8, 0x1
 
@@ -991,7 +983,6 @@
 
 .method public static getUseLocationAgreed(Landroid/content/Context;)I
     .locals 10
-    .param p0    # Landroid/content/Context;
 
     const/4 v5, 0x0
 
@@ -1376,9 +1367,6 @@
 
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const/4 v4, 0x0
 
@@ -1471,7 +1459,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 28
-    .param p1    # Landroid/os/Bundle;
 
     const/16 v24, 0x1
 
@@ -2498,9 +2485,6 @@
 
 .method public onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
     .locals 10
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

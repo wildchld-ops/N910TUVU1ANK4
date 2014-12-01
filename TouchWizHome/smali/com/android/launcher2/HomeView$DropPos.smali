@@ -41,10 +41,6 @@
 # virtual methods
 .method public assign(Lcom/android/launcher2/CellLayout;III)V
     .locals 0
-    .param p1    # Lcom/android/launcher2/CellLayout;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iput p2, p0, Lcom/android/launcher2/HomeView$DropPos;->mScreen:I
 

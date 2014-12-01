@@ -20,8 +20,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/print/PrintAttributes;)V
     .locals 9
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/print/PrintAttributes;
 
     const/high16 v8, 0x447a0000
 
@@ -158,7 +156,6 @@
 
 .method public startPage(I)Landroid/graphics/pdf/PdfDocument$Page;
     .locals 4
-    .param p1    # I
 
     new-instance v1, Landroid/graphics/pdf/PdfDocument$PageInfo$Builder;
 

@@ -76,7 +76,6 @@
 
 .method static synthetic access$200(Landroid/service/wallpaper/WallpaperService;)Landroid/os/Looper;
     .locals 1
-    .param p0    # Landroid/service/wallpaper/WallpaperService;
 
     iget-object v0, p0, Landroid/service/wallpaper/WallpaperService;->mCallbackLooper:Landroid/os/Looper;
 
@@ -85,7 +84,6 @@
 
 .method static synthetic access$300(Landroid/service/wallpaper/WallpaperService;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Landroid/service/wallpaper/WallpaperService;
 
     iget-object v0, p0, Landroid/service/wallpaper/WallpaperService;->mActiveEngines:Ljava/util/ArrayList;
 
@@ -96,9 +94,6 @@
 # virtual methods
 .method protected dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     const-string v2, "State of wallpaper "
 
@@ -153,7 +148,6 @@
 
 .method public final onBind(Landroid/content/Intent;)Landroid/os/IBinder;
     .locals 1
-    .param p1    # Landroid/content/Intent;
 
     new-instance v0, Landroid/service/wallpaper/WallpaperService$IWallpaperServiceWrapper;
 
@@ -213,7 +207,6 @@
 
 .method public setCallbackLooper(Landroid/os/Looper;)V
     .locals 0
-    .param p1    # Landroid/os/Looper;
 
     iput-object p1, p0, Landroid/service/wallpaper/WallpaperService;->mCallbackLooper:Landroid/os/Looper;
 

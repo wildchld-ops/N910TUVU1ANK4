@@ -60,8 +60,6 @@
 
 .method public constructor <init>(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0}, Landroid/telephony/CellSignalStrength;-><init>()V
 
@@ -72,7 +70,6 @@
 
 .method private constructor <init>(Landroid/os/Parcel;)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Landroid/telephony/CellSignalStrength;-><init>()V
 
@@ -93,8 +90,6 @@
 
 .method synthetic constructor <init>(Landroid/os/Parcel;Landroid/telephony/CellSignalStrengthWcdma$1;)V
     .locals 0
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # Landroid/telephony/CellSignalStrengthWcdma$1;
 
     invoke-direct {p0, p1}, Landroid/telephony/CellSignalStrengthWcdma;-><init>(Landroid/os/Parcel;)V
 
@@ -103,7 +98,6 @@
 
 .method public constructor <init>(Landroid/telephony/CellSignalStrengthWcdma;)V
     .locals 0
-    .param p1    # Landroid/telephony/CellSignalStrengthWcdma;
 
     invoke-direct {p0}, Landroid/telephony/CellSignalStrength;-><init>()V
 
@@ -114,7 +108,6 @@
 
 .method private static log(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "CellSignalStrengthWcdma"
 
@@ -147,7 +140,6 @@
 
 .method protected copyFrom(Landroid/telephony/CellSignalStrengthWcdma;)V
     .locals 1
-    .param p1    # Landroid/telephony/CellSignalStrengthWcdma;
 
     iget v0, p1, Landroid/telephony/CellSignalStrengthWcdma;->mSignalStrength:I
 
@@ -170,7 +162,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 6
-    .param p1    # Ljava/lang/Object;
 
     const/4 v3, 0x0
 
@@ -326,8 +317,6 @@
 
 .method public initialize(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     iput p1, p0, Landroid/telephony/CellSignalStrengthWcdma;->mSignalStrength:I
 
@@ -388,8 +377,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget v0, p0, Landroid/telephony/CellSignalStrengthWcdma;->mSignalStrength:I
 

@@ -23,7 +23,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/settings/wifi/WifiCredService;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p2    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/settings/wifi/WifiCredService$1;->this$0:Lcom/android/settings/wifi/WifiCredService;
 
@@ -38,8 +37,6 @@
 # virtual methods
 .method public onEvent(ILjava/lang/String;)V
     .locals 13
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v12, 0x0
 

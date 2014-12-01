@@ -40,8 +40,6 @@
 
 .method synthetic constructor <init>(Lcom/android/launcher2/PagedView;Lcom/android/launcher2/PagedView$1;)V
     .locals 0
-    .param p1    # Lcom/android/launcher2/PagedView;
-    .param p2    # Lcom/android/launcher2/PagedView$1;
 
     invoke-direct {p0, p1}, Lcom/android/launcher2/PagedView$DelaySnapToPage;-><init>(Lcom/android/launcher2/PagedView;)V
 
@@ -69,9 +67,6 @@
 
 .method public setup(III)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     iput p1, p0, Lcom/android/launcher2/PagedView$DelaySnapToPage;->mPageIndex:I
 

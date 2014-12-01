@@ -195,15 +195,6 @@
 
 .method private drawRun(Landroid/graphics/Canvas;IIZFIIIZ)F
     .locals 14
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Z
-    .param p5    # F
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
-    .param p9    # Z
 
     iget v1, p0, Landroid/text/TextLine;->mDir:I
 
@@ -304,15 +295,6 @@
 
 .method private drawTextRun(Landroid/graphics/Canvas;Landroid/text/TextPaint;IIIIZFI)V
     .locals 21
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # Landroid/text/TextPaint;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # Z
-    .param p8    # F
-    .param p9    # I
 
     if-eqz p7, :cond_0
 
@@ -397,8 +379,6 @@
 
 .method private static expandMetricsFromPaint(Landroid/graphics/Paint$FontMetricsInt;Landroid/text/TextPaint;)V
     .locals 6
-    .param p0    # Landroid/graphics/Paint$FontMetricsInt;
-    .param p1    # Landroid/text/TextPaint;
 
     iget v1, p0, Landroid/graphics/Paint$FontMetricsInt;->top:I
 
@@ -421,8 +401,6 @@
 
 .method protected static getEmojiCodeFromUACode(CC)C
     .locals 6
-    .param p0    # C
-    .param p1    # C
 
     const/4 v5, 0x0
 
@@ -518,12 +496,6 @@
 
 .method private getOffsetBeforeAfter(IIIZIZ)I
     .locals 23
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Z
-    .param p5    # I
-    .param p6    # Z
 
     if-ltz p1, :cond_0
 
@@ -842,18 +814,6 @@
 
 .method private handleReplacement(Landroid/text/style/ReplacementSpan;Landroid/text/TextPaint;IIZLandroid/graphics/Canvas;FIIILandroid/graphics/Paint$FontMetricsInt;Z)F
     .locals 24
-    .param p1    # Landroid/text/style/ReplacementSpan;
-    .param p2    # Landroid/text/TextPaint;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Z
-    .param p6    # Landroid/graphics/Canvas;
-    .param p7    # F
-    .param p8    # I
-    .param p9    # I
-    .param p10    # I
-    .param p11    # Landroid/graphics/Paint$FontMetricsInt;
-    .param p12    # Z
 
     const/16 v23, 0x0
 
@@ -990,17 +950,6 @@
 
 .method private handleRun(IIIZLandroid/graphics/Canvas;FIIILandroid/graphics/Paint$FontMetricsInt;Z)F
     .locals 29
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Z
-    .param p5    # Landroid/graphics/Canvas;
-    .param p6    # F
-    .param p7    # I
-    .param p8    # I
-    .param p9    # I
-    .param p10    # Landroid/graphics/Paint$FontMetricsInt;
-    .param p11    # Z
 
     move/from16 v0, p1
 
@@ -1490,19 +1439,6 @@
 
 .method private handleText(Landroid/text/TextPaint;IIIIZLandroid/graphics/Canvas;FIIILandroid/graphics/Paint$FontMetricsInt;Z)F
     .locals 27
-    .param p1    # Landroid/text/TextPaint;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Z
-    .param p7    # Landroid/graphics/Canvas;
-    .param p8    # F
-    .param p9    # I
-    .param p10    # I
-    .param p11    # I
-    .param p12    # Landroid/graphics/Paint$FontMetricsInt;
-    .param p13    # Z
 
     if-eqz p12, :cond_0
 
@@ -1852,11 +1788,6 @@
 
 .method private measureRun(IIIZLandroid/graphics/Paint$FontMetricsInt;)F
     .locals 12
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Z
-    .param p5    # Landroid/graphics/Paint$FontMetricsInt;
 
     const/4 v5, 0x0
 
@@ -1951,7 +1882,6 @@
 
 .method static recycle(Landroid/text/TextLine;)Landroid/text/TextLine;
     .locals 4
-    .param p0    # Landroid/text/TextLine;
 
     const/4 v3, 0x0
 
@@ -2021,12 +1951,6 @@
 
 .method static updateMetrics(Landroid/graphics/Paint$FontMetricsInt;IIIII)V
     .locals 1
-    .param p0    # Landroid/graphics/Paint$FontMetricsInt;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     iget v0, p0, Landroid/graphics/Paint$FontMetricsInt;->top:I
 
@@ -2075,7 +1999,6 @@
 # virtual methods
 .method ascent(I)F
     .locals 9
-    .param p1    # I
 
     iget-object v6, p0, Landroid/text/TextLine;->mSpanned:Landroid/text/Spanned;
 
@@ -2153,11 +2076,6 @@
 
 .method draw(Landroid/graphics/Canvas;FIII)V
     .locals 25
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # F
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     move-object/from16 v0, p0
 
@@ -2563,8 +2481,6 @@
 
 .method getOffsetToLeftRightOf(IZ)I
     .locals 30
-    .param p1    # I
-    .param p2    # Z
 
     const/16 v17, 0x0
 
@@ -3037,9 +2953,6 @@
 
 .method measure(IZLandroid/graphics/Paint$FontMetricsInt;)F
     .locals 21
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # Landroid/graphics/Paint$FontMetricsInt;
 
     if-eqz p2, :cond_1
 
@@ -3461,7 +3374,6 @@
 
 .method metrics(Landroid/graphics/Paint$FontMetricsInt;)F
     .locals 2
-    .param p1    # Landroid/graphics/Paint$FontMetricsInt;
 
     iget v0, p0, Landroid/text/TextLine;->mLen:I
 
@@ -3476,7 +3388,6 @@
 
 .method nextTab(F)F
     .locals 1
-    .param p1    # F
 
     iget-object v0, p0, Landroid/text/TextLine;->mTabs:Landroid/text/Layout$TabStops;
 
@@ -3503,14 +3414,6 @@
 
 .method set(Landroid/text/TextPaint;Ljava/lang/CharSequence;IIILandroid/text/Layout$Directions;ZLandroid/text/Layout$TabStops;)V
     .locals 9
-    .param p1    # Landroid/text/TextPaint;
-    .param p2    # Ljava/lang/CharSequence;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Landroid/text/Layout$Directions;
-    .param p7    # Z
-    .param p8    # Landroid/text/Layout$TabStops;
 
     iput-object p1, p0, Landroid/text/TextLine;->mPaint:Landroid/text/TextPaint;
 

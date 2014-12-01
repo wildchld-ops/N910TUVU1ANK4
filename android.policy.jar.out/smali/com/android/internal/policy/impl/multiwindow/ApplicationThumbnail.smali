@@ -20,7 +20,6 @@
 # direct methods
 .method protected constructor <init>(Landroid/app/Activity;)V
     .locals 7
-    .param p1    # Landroid/app/Activity;
 
     const/4 v5, 0x0
 
@@ -131,8 +130,6 @@
 
 .method protected constructor <init>(Landroid/app/Activity;Landroid/content/ComponentName;)V
     .locals 7
-    .param p1    # Landroid/app/Activity;
-    .param p2    # Landroid/content/ComponentName;
 
     const/4 v5, 0x0
 
@@ -249,8 +246,6 @@
 
 .method private clipImagePath(Landroid/graphics/Bitmap;Landroid/graphics/Path;)Landroid/graphics/Bitmap;
     .locals 15
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # Landroid/graphics/Path;
 
     if-nez p1, :cond_0
 
@@ -459,7 +454,6 @@
 
 .method public static create(Landroid/app/Activity;)Lcom/android/internal/policy/impl/multiwindow/ApplicationThumbnail;
     .locals 1
-    .param p0    # Landroid/app/Activity;
 
     new-instance v0, Lcom/android/internal/policy/impl/multiwindow/ApplicationThumbnail;
 
@@ -470,8 +464,6 @@
 
 .method public static create(Landroid/app/Activity;Landroid/content/ComponentName;)Lcom/android/internal/policy/impl/multiwindow/ApplicationThumbnail;
     .locals 1
-    .param p0    # Landroid/app/Activity;
-    .param p1    # Landroid/content/ComponentName;
 
     new-instance v0, Lcom/android/internal/policy/impl/multiwindow/ApplicationThumbnail;
 
@@ -482,7 +474,6 @@
 
 .method private getBitmapClippedCircle(Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
     .locals 7
-    .param p1    # Landroid/graphics/Bitmap;
 
     const/high16 v6, 0x40000000
 
@@ -623,7 +614,6 @@
 
 .method private getFullResIcon(Landroid/content/pm/ActivityInfo;)Landroid/graphics/drawable/Drawable;
     .locals 5
-    .param p1    # Landroid/content/pm/ActivityInfo;
 
     iget-object v4, p0, Lcom/android/internal/policy/impl/multiwindow/ApplicationThumbnail;->mActivity:Landroid/app/Activity;
 
@@ -673,8 +663,6 @@
 
 .method private getFullResIcon(Landroid/content/res/Resources;I)Landroid/graphics/drawable/Drawable;
     .locals 6
-    .param p1    # Landroid/content/res/Resources;
-    .param p2    # I
 
     iget-object v4, p0, Lcom/android/internal/policy/impl/multiwindow/ApplicationThumbnail;->mActivity:Landroid/app/Activity;
 
@@ -720,7 +708,6 @@
 
 .method private getScaledMinimizeIcon(Landroid/graphics/drawable/Drawable;)Landroid/graphics/drawable/Drawable;
     .locals 8
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     const/4 v7, 0x0
 
@@ -826,7 +813,6 @@
 
 .method protected getMinimizedBitmap(Z)Landroid/graphics/Bitmap;
     .locals 10
-    .param p1    # Z
 
     const/high16 v9, 0x40000000
 
@@ -944,7 +930,6 @@
 
 .method public final setCustomMinimizeIcon(Landroid/graphics/drawable/Drawable;)V
     .locals 5
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     if-nez p1, :cond_1
 

@@ -30,7 +30,6 @@
 # direct methods
 .method constructor <init>(Landroid/app/LoadedApk$ServiceDispatcher;)V
     .locals 1
-    .param p1    # Landroid/app/LoadedApk$ServiceDispatcher;
 
     invoke-direct {p0}, Landroid/app/IServiceConnection$Stub;-><init>()V
 
@@ -47,8 +46,6 @@
 # virtual methods
 .method public connected(Landroid/content/ComponentName;Landroid/os/IBinder;)V
     .locals 2
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Landroid/os/IBinder;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Landroid/text/method/SmileyPickerDialog;Landroid/content/Context;)V
     .locals 0
-    .param p2    # Landroid/content/Context;
 
     iput-object p1, p0, Landroid/text/method/SmileyPickerDialog$OptionsAdapter;->this$0:Landroid/text/method/SmileyPickerDialog;
 
@@ -42,7 +41,6 @@
 
 .method public final getItem(I)Ljava/lang/Object;
     .locals 4
-    .param p1    # I
 
     if-nez p1, :cond_0
 
@@ -172,7 +170,6 @@
 
 .method public final getItemId(I)J
     .locals 4
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -257,9 +254,6 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     iget-object v2, p0, Landroid/text/method/SmileyPickerDialog$OptionsAdapter;->this$0:Landroid/text/method/SmileyPickerDialog;
 

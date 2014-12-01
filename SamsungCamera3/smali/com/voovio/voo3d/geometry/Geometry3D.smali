@@ -69,7 +69,6 @@
 # virtual methods
 .method public Read(Ljava/nio/ByteBuffer;)V
     .locals 19
-    .param p1    # Ljava/nio/ByteBuffer;
 
     invoke-virtual/range {p1 .. p1}, Ljava/nio/ByteBuffer;->getInt()I
 
@@ -303,8 +302,6 @@
 
 .method public TestCollision(Lcom/voovio/voo3d/data/Vector3;Lcom/voovio/voo3d/data/Vector3;)Lcom/voovio/voo3d/data/Vector3;
     .locals 4
-    .param p1    # Lcom/voovio/voo3d/data/Vector3;
-    .param p2    # Lcom/voovio/voo3d/data/Vector3;
 
     const/4 v0, 0x0
 
@@ -347,7 +344,6 @@
 
 .method public Transform(Lcom/voovio/voo3d/data/Matrix4;)V
     .locals 4
-    .param p1    # Lcom/voovio/voo3d/data/Matrix4;
 
     const/4 v0, 0x0
 
@@ -426,7 +422,6 @@
 
 .method public Write(Lcom/voovio/io/LittleEndianDataOutputStream;)V
     .locals 14
-    .param p1    # Lcom/voovio/io/LittleEndianDataOutputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

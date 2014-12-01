@@ -38,8 +38,6 @@
 # direct methods
 .method public constructor <init>(Lcom/sec/knox/container/EnterpriseContainerService;ILandroid/os/Handler;)V
     .locals 2
-    .param p2    # I
-    .param p3    # Landroid/os/Handler;
 
     const/4 v1, 0x0
 
@@ -66,9 +64,6 @@
 
 .method public constructor <init>(Lcom/sec/knox/container/EnterpriseContainerService;ILandroid/os/Handler;Ljava/util/List;Lcom/sec/enterprise/knox/IEnterpriseContainerCallback;)V
     .locals 2
-    .param p2    # I
-    .param p3    # Landroid/os/Handler;
-    .param p5    # Lcom/sec/enterprise/knox/IEnterpriseContainerCallback;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -117,7 +112,6 @@
 
 .method private uninstallPackage(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     iget-object v2, p0, Lcom/sec/knox/container/EnterpriseContainerService$UnInstallThread;->this$0:Lcom/sec/knox/container/EnterpriseContainerService;
 

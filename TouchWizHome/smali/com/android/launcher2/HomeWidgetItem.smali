@@ -20,8 +20,6 @@
 # direct methods
 .method constructor <init>(Landroid/appwidget/AppWidgetProviderInfo;I)V
     .locals 1
-    .param p1    # Landroid/appwidget/AppWidgetProviderInfo;
-    .param p2    # I
 
     const/4 v0, 0x1
 
@@ -32,9 +30,6 @@
 
 .method constructor <init>(Landroid/appwidget/AppWidgetProviderInfo;IZ)V
     .locals 2
-    .param p1    # Landroid/appwidget/AppWidgetProviderInfo;
-    .param p2    # I
-    .param p3    # Z
 
     const/4 v1, 0x0
 
@@ -82,8 +77,6 @@
 
 .method constructor <init>(Landroid/content/ComponentName;I)V
     .locals 2
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # I
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -128,7 +121,6 @@
 # virtual methods
 .method public calcResizeSpan(Landroid/appwidget/AppWidgetProviderInfo;)V
     .locals 2
-    .param p1    # Landroid/appwidget/AppWidgetProviderInfo;
 
     sget-object v0, Lcom/android/launcher2/WorkspaceSpanCalculator;->INSTANCE:Lcom/android/launcher2/WorkspaceSpanCalculator;
 
@@ -153,8 +145,6 @@
 
 .method public getHostView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 3
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
 
     iget-object v1, p0, Lcom/android/launcher2/HomeWidgetItem;->hostView:Landroid/appwidget/AppWidgetHostView;
 
@@ -219,7 +209,6 @@
 
 .method onAddToDatabase(Landroid/content/ContentValues;)V
     .locals 2
-    .param p1    # Landroid/content/ContentValues;
 
     invoke-super {p0, p1}, Lcom/android/launcher2/HomeItem;->onAddToDatabase(Landroid/content/ContentValues;)V
 

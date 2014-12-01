@@ -35,7 +35,6 @@
 
 .method synthetic constructor <init>(Lcom/android/settings/SettingsTabActivity$1;)V
     .locals 0
-    .param p1    # Lcom/android/settings/SettingsTabActivity$1;
 
     invoke-direct {p0}, Lcom/android/settings/SettingsTabActivity$HeaderAdapter$HeaderViewHolder;-><init>()V
 

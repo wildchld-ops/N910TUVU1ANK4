@@ -61,7 +61,6 @@
 
 .method static synthetic access$100(Lcom/android/launcher2/DeferredHandler;)Ljava/util/LinkedList;
     .locals 1
-    .param p0    # Lcom/android/launcher2/DeferredHandler;
 
     iget-object v0, p0, Lcom/android/launcher2/DeferredHandler;->mQueue:Ljava/util/LinkedList;
 
@@ -98,7 +97,6 @@
 
 .method public cancelRunnable(Ljava/lang/Runnable;)V
     .locals 2
-    .param p1    # Ljava/lang/Runnable;
 
     iget-object v1, p0, Lcom/android/launcher2/DeferredHandler;->mQueue:Ljava/util/LinkedList;
 
@@ -130,7 +128,6 @@
 
 .method public post(Ljava/lang/Runnable;)V
     .locals 3
-    .param p1    # Ljava/lang/Runnable;
 
     iget-object v1, p0, Lcom/android/launcher2/DeferredHandler;->mQueue:Ljava/util/LinkedList;
 
@@ -170,7 +167,6 @@
 
 .method public postIdle(Ljava/lang/Runnable;)V
     .locals 1
-    .param p1    # Ljava/lang/Runnable;
 
     new-instance v0, Lcom/android/launcher2/DeferredHandler$IdleRunnable;
 

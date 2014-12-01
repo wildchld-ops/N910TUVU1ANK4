@@ -55,7 +55,6 @@
 
 .method public item(I)Lorg/w3c/dom/smil/Time;
     .locals 3
-    .param p1    # I
 
     const/4 v1, 0x0
 

@@ -32,7 +32,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Landroid/content/pm/IPersonaStateHandler$Stub;-><init>()V
 
@@ -45,7 +44,6 @@
 
 .method private static checkCallerPermissionFor(Ljava/lang/String;)I
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     const-string v1, "PersonaStateManagerService"
 
@@ -284,7 +282,6 @@
 # virtual methods
 .method public mapToNormalizedState(I)I
     .locals 3
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -323,7 +320,6 @@
 
 .method public postEvent(Landroid/content/pm/PersonaEvent;)I
     .locals 4
-    .param p1    # Landroid/content/pm/PersonaEvent;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -374,8 +370,6 @@
 
 .method public postEventForPersona(ILandroid/content/pm/PersonaEvent;)I
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/content/pm/PersonaEvent;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

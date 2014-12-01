@@ -14,7 +14,6 @@
 
 .method public static startTracking(Landroid/view/KeyEvent;)V
     .locals 0
-    .param p0    # Landroid/view/KeyEvent;
 
     invoke-virtual {p0}, Landroid/view/KeyEvent;->startTracking()V
 

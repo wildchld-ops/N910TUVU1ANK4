@@ -20,7 +20,6 @@
 
 .method public static ColorInt2HexString(I)Ljava/lang/String;
     .locals 5
-    .param p0    # I
 
     invoke-static {p0}, Ljava/lang/Integer;->toHexString(I)Ljava/lang/String;
 
@@ -65,8 +64,6 @@
 
 .method public static Dp2Pixel(FLandroid/content/Context;)F
     .locals 5
-    .param p0    # F
-    .param p1    # Landroid/content/Context;
 
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -91,7 +88,6 @@
 
 .method public static InputStream2ByteArray(Ljava/io/InputStream;)[B
     .locals 6
-    .param p0    # Ljava/io/InputStream;
 
     new-instance v0, Ljava/io/ByteArrayOutputStream;
 
@@ -148,7 +144,6 @@
 
 .method public static InputStream2ByteBuffer(Ljava/io/InputStream;)Ljava/nio/ByteBuffer;
     .locals 1
-    .param p0    # Ljava/io/InputStream;
 
     invoke-static {p0}, Lcom/voovio/util/ConversionUtil;->InputStream2ByteArray(Ljava/io/InputStream;)[B
 
@@ -163,7 +158,6 @@
 
 .method public static IsPowerOfTwo(I)Z
     .locals 1
-    .param p0    # I
 
     if-eqz p0, :cond_0
 
@@ -186,7 +180,6 @@
 
 .method public static NextPowerOfTwo(I)I
     .locals 1
-    .param p0    # I
 
     shr-int/lit8 v0, p0, 0x1
 
@@ -215,8 +208,6 @@
 
 .method public static PixelsToDp(FLandroid/content/Context;)F
     .locals 5
-    .param p0    # F
-    .param p1    # Landroid/content/Context;
 
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -241,7 +232,6 @@
 
 .method public static PreviousPowerOfTwo(I)I
     .locals 1
-    .param p0    # I
 
     shr-int/lit8 v0, p0, 0x1
 

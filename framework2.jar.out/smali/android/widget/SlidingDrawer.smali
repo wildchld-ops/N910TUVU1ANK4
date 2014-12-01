@@ -118,8 +118,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -130,9 +128,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 11
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v10, 0x0
 
@@ -348,7 +343,6 @@
 
 .method static synthetic access$200(Landroid/widget/SlidingDrawer;)Z
     .locals 1
-    .param p0    # Landroid/widget/SlidingDrawer;
 
     iget-boolean v0, p0, Landroid/widget/SlidingDrawer;->mLocked:Z
 
@@ -357,7 +351,6 @@
 
 .method static synthetic access$300(Landroid/widget/SlidingDrawer;)Z
     .locals 1
-    .param p0    # Landroid/widget/SlidingDrawer;
 
     iget-boolean v0, p0, Landroid/widget/SlidingDrawer;->mAnimateOnClick:Z
 
@@ -366,7 +359,6 @@
 
 .method static synthetic access$400(Landroid/widget/SlidingDrawer;)V
     .locals 0
-    .param p0    # Landroid/widget/SlidingDrawer;
 
     invoke-direct {p0}, Landroid/widget/SlidingDrawer;->doAnimation()V
 
@@ -375,7 +367,6 @@
 
 .method private animateClose(I)V
     .locals 2
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/widget/SlidingDrawer;->prepareTracking(I)V
 
@@ -392,7 +383,6 @@
 
 .method private animateOpen(I)V
     .locals 2
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/widget/SlidingDrawer;->prepareTracking(I)V
 
@@ -600,7 +590,6 @@
 
 .method private moveHandle(I)V
     .locals 12
-    .param p1    # I
 
     const/4 v11, 0x0
 
@@ -954,9 +943,6 @@
 
 .method private performFling(IFZ)V
     .locals 6
-    .param p1    # I
-    .param p2    # F
-    .param p3    # Z
 
     const/16 v5, 0x3e8
 
@@ -1312,7 +1298,6 @@
 
 .method private prepareTracking(I)V
     .locals 8
-    .param p1    # I
 
     const/16 v7, 0x3e8
 
@@ -1590,7 +1575,6 @@
 
 .method protected dispatchDraw(Landroid/graphics/Canvas;)V
     .locals 8
-    .param p1    # Landroid/graphics/Canvas;
 
     const/4 v7, 0x0
 
@@ -1827,7 +1811,6 @@
 
 .method public onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
     .locals 1
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
 
     invoke-super {p0, p1}, Landroid/view/View;->onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
 
@@ -1844,7 +1827,6 @@
 
 .method public onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
     .locals 1
-    .param p1    # Landroid/view/accessibility/AccessibilityNodeInfo;
 
     invoke-super {p0, p1}, Landroid/view/View;->onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
 
@@ -1861,7 +1843,6 @@
 
 .method public onInterceptTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 11
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v7, 0x0
 
@@ -1974,11 +1955,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 13
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     iget-boolean v8, p0, Landroid/widget/SlidingDrawer;->mTracking:Z
 
@@ -2119,8 +2095,6 @@
 
 .method protected onMeasure(II)V
     .locals 10
-    .param p1    # I
-    .param p2    # I
 
     const/high16 v9, 0x40000000
 
@@ -2217,7 +2191,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 13
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-boolean v9, p0, Landroid/widget/SlidingDrawer;->mLocked:Z
 
@@ -2617,7 +2590,6 @@
 
 .method public setOnDrawerCloseListener(Landroid/widget/SlidingDrawer$OnDrawerCloseListener;)V
     .locals 0
-    .param p1    # Landroid/widget/SlidingDrawer$OnDrawerCloseListener;
 
     iput-object p1, p0, Landroid/widget/SlidingDrawer;->mOnDrawerCloseListener:Landroid/widget/SlidingDrawer$OnDrawerCloseListener;
 
@@ -2626,7 +2598,6 @@
 
 .method public setOnDrawerOpenListener(Landroid/widget/SlidingDrawer$OnDrawerOpenListener;)V
     .locals 0
-    .param p1    # Landroid/widget/SlidingDrawer$OnDrawerOpenListener;
 
     iput-object p1, p0, Landroid/widget/SlidingDrawer;->mOnDrawerOpenListener:Landroid/widget/SlidingDrawer$OnDrawerOpenListener;
 
@@ -2635,7 +2606,6 @@
 
 .method public setOnDrawerScrollListener(Landroid/widget/SlidingDrawer$OnDrawerScrollListener;)V
     .locals 0
-    .param p1    # Landroid/widget/SlidingDrawer$OnDrawerScrollListener;
 
     iput-object p1, p0, Landroid/widget/SlidingDrawer;->mOnDrawerScrollListener:Landroid/widget/SlidingDrawer$OnDrawerScrollListener;
 

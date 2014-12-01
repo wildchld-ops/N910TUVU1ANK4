@@ -37,8 +37,6 @@
 # virtual methods
 .method public compare(Lcom/diotek/ime/implement/setting/AutoSubstitutionsData;Lcom/diotek/ime/implement/setting/AutoSubstitutionsData;)I
     .locals 2
-    .param p1    # Lcom/diotek/ime/implement/setting/AutoSubstitutionsData;
-    .param p2    # Lcom/diotek/ime/implement/setting/AutoSubstitutionsData;
 
     iget-object v0, p1, Lcom/diotek/ime/implement/setting/AutoSubstitutionsData;->mShortcut:Ljava/lang/String;
 
@@ -53,8 +51,6 @@
 
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p1, Lcom/diotek/ime/implement/setting/AutoSubstitutionsData;
 

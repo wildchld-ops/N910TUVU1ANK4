@@ -224,8 +224,6 @@
 
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;Lcom/sec/android/app/camera/subview/SubViewManager;)V
     .locals 1
-    .param p1    # Lcom/sec/android/app/camera/Camera;
-    .param p2    # Lcom/sec/android/app/camera/subview/SubViewManager;
 
     invoke-direct {p0, p1, p2}, Lcom/sec/android/app/camera/subview/SubViewBase;-><init>(Lcom/sec/android/app/camera/Camera;Lcom/sec/android/app/camera/subview/SubViewManager;)V
 
@@ -263,7 +261,6 @@
 
 .method static synthetic access$000(Lcom/sec/android/app/camera/subview/SubViewRecordingMenu;)Landroid/graphics/PointF;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/subview/SubViewRecordingMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/subview/SubViewRecordingMenu;->mInitTouchPoint:Landroid/graphics/PointF;
 
@@ -272,7 +269,6 @@
 
 .method static synthetic access$100(Lcom/sec/android/app/camera/subview/SubViewRecordingMenu;)Landroid/widget/ImageView;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/subview/SubViewRecordingMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/subview/SubViewRecordingMenu;->mStopButton:Landroid/widget/ImageView;
 
@@ -281,7 +277,6 @@
 
 .method static synthetic access$200(Lcom/sec/android/app/camera/subview/SubViewRecordingMenu;)Landroid/widget/ImageView;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/subview/SubViewRecordingMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/subview/SubViewRecordingMenu;->mPauseButton:Landroid/widget/ImageView;
 
@@ -290,7 +285,6 @@
 
 .method static synthetic access$300(Lcom/sec/android/app/camera/subview/SubViewRecordingMenu;)Landroid/widget/ImageView;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/subview/SubViewRecordingMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/subview/SubViewRecordingMenu;->mCAFButton:Landroid/widget/ImageView;
 
@@ -299,7 +293,6 @@
 
 .method static synthetic access$400(Lcom/sec/android/app/camera/subview/SubViewRecordingMenu;)Landroid/widget/ImageView;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/subview/SubViewRecordingMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/subview/SubViewRecordingMenu;->mDualButton:Landroid/widget/ImageView;
 
@@ -308,7 +301,6 @@
 
 .method static synthetic access$500(Lcom/sec/android/app/camera/subview/SubViewRecordingMenu;)Z
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/subview/SubViewRecordingMenu;
 
     iget-boolean v0, p0, Lcom/sec/android/app/camera/subview/SubViewRecordingMenu;->mRecordingDualMode:Z
 
@@ -317,8 +309,6 @@
 
 .method static synthetic access$502(Lcom/sec/android/app/camera/subview/SubViewRecordingMenu;Z)Z
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/subview/SubViewRecordingMenu;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/subview/SubViewRecordingMenu;->mRecordingDualMode:Z
 
@@ -327,7 +317,6 @@
 
 .method static synthetic access$600(Lcom/sec/android/app/camera/subview/SubViewRecordingMenu;)Landroid/view/ViewGroup;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/subview/SubViewRecordingMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/subview/SubViewRecordingMenu;->mRecordingMenu:Landroid/view/ViewGroup;
 
@@ -1444,7 +1433,6 @@
 
 .method public setCAFButtonVisibility(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "SubViewRecordingMenu"
 
@@ -1492,7 +1480,6 @@
 
 .method public setDualButtonVisibility(I)V
     .locals 4
-    .param p1    # I
 
     const/16 v0, 0x8
 
@@ -1604,7 +1591,6 @@
 
 .method public setShutterButtonEnabled(Z)Z
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/sec/android/app/camera/subview/SubViewRecordingMenu;->mShutterButton:Landroid/widget/ImageView;
 
@@ -1646,7 +1632,6 @@
 
 .method public setShutterButtonPressed(Z)Z
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/sec/android/app/camera/subview/SubViewRecordingMenu;->mShutterButton:Landroid/widget/ImageView;
 
@@ -1684,7 +1669,6 @@
 
 .method public setStepTutorialMode(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v2, 0x1
 

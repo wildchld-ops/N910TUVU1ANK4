@@ -120,12 +120,6 @@
 
 .method private constructor <init>(Landroid/content/Context;Landroid/content/pm/PackageManager;Landroid/content/res/Resources;Landroid/content/ComponentName;Landroid/content/res/XmlResourceParser;Landroid/content/pm/ResolveInfo;)V
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/pm/PackageManager;
-    .param p3    # Landroid/content/res/Resources;
-    .param p4    # Landroid/content/ComponentName;
-    .param p5    # Landroid/content/res/XmlResourceParser;
-    .param p6    # Landroid/content/pm/ResolveInfo;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/res/Resources$NotFoundException;,
@@ -455,7 +449,6 @@
 
 .method private constructor <init>(Landroid/os/Parcel;)V
     .locals 3
-    .param p1    # Landroid/os/Parcel;
 
     const/4 v0, 0x1
 
@@ -559,8 +552,6 @@
 
 .method synthetic constructor <init>(Landroid/os/Parcel;Lcom/samsung/android/cocktailbar/CocktailProviderInfo$1;)V
     .locals 0
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # Lcom/samsung/android/cocktailbar/CocktailProviderInfo$1;
 
     invoke-direct {p0, p1}, Lcom/samsung/android/cocktailbar/CocktailProviderInfo;-><init>(Landroid/os/Parcel;)V
 
@@ -569,10 +560,6 @@
 
 .method public static create(Landroid/content/Context;Landroid/content/pm/ResolveInfo;Landroid/content/ComponentName;Landroid/content/res/XmlResourceParser;)Lcom/samsung/android/cocktailbar/CocktailProviderInfo;
     .locals 8
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/content/pm/ResolveInfo;
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # Landroid/content/res/XmlResourceParser;
 
     :try_start_0
     invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
@@ -645,10 +632,6 @@
 
 .method private loadXmlBoolean(Landroid/content/res/XmlResourceParser;Landroid/content/res/Resources;Ljava/lang/String;Z)Z
     .locals 5
-    .param p1    # Landroid/content/res/XmlResourceParser;
-    .param p2    # Landroid/content/res/Resources;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Z
 
     const/4 v4, 0x0
 
@@ -687,10 +670,6 @@
 
 .method private loadXmlInt(Landroid/content/res/XmlResourceParser;Landroid/content/res/Resources;Ljava/lang/String;I)I
     .locals 5
-    .param p1    # Landroid/content/res/XmlResourceParser;
-    .param p2    # Landroid/content/res/Resources;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
 
     const/4 v4, 0x0
 
@@ -729,10 +708,6 @@
 
 .method private loadXmlString(Landroid/content/res/XmlResourceParser;Landroid/content/res/Resources;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 5
-    .param p1    # Landroid/content/res/XmlResourceParser;
-    .param p2    # Landroid/content/res/Resources;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -786,8 +761,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 3
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     const/4 v2, 0x1
 

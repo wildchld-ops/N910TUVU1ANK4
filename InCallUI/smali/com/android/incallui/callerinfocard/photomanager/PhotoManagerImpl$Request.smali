@@ -21,7 +21,6 @@
 # direct methods
 .method private constructor <init>(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -32,7 +31,6 @@
 
 .method public static createFromUrl(Ljava/lang/String;)Lcom/android/incallui/callerinfocard/photomanager/PhotoManagerImpl$Request;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     new-instance v0, Lcom/android/incallui/callerinfocard/photomanager/PhotoManagerImpl$Request;
 
@@ -45,7 +43,6 @@
 # virtual methods
 .method public equals(Ljava/lang/Object;)Z
     .locals 5
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x1
 

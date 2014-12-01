@@ -64,8 +64,6 @@
 # direct methods
 .method public constructor <init>(Landroid/net/wifi/WifiWatchdogStateMachine;Landroid/os/Handler;Ljava/lang/String;)V
     .locals 6
-    .param p2    # Landroid/os/Handler;
-    .param p3    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/net/wifi/WifiWatchdogStateMachine$DnsCheck;->this$0:Landroid/net/wifi/WifiWatchdogStateMachine;
 
@@ -109,7 +107,6 @@
 
 .method static synthetic access$14700(Landroid/net/wifi/WifiWatchdogStateMachine$DnsCheck;)V
     .locals 0
-    .param p0    # Landroid/net/wifi/WifiWatchdogStateMachine$DnsCheck;
 
     invoke-direct {p0}, Landroid/net/wifi/WifiWatchdogStateMachine$DnsCheck;->clear()V
 
@@ -118,7 +115,6 @@
 
 .method static synthetic access$16000(Landroid/net/wifi/WifiWatchdogStateMachine$DnsCheck;)Landroid/net/DnsPinger;
     .locals 1
-    .param p0    # Landroid/net/wifi/WifiWatchdogStateMachine$DnsCheck;
 
     iget-object v0, p0, Landroid/net/wifi/WifiWatchdogStateMachine$DnsCheck;->mDnsPinger:Landroid/net/DnsPinger;
 
@@ -227,9 +223,6 @@
 # virtual methods
 .method public checkDnsResult(III)I
     .locals 9
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     iget-object v5, p0, Landroid/net/wifi/WifiWatchdogStateMachine$DnsCheck;->mIdDnsMap:Ljava/util/HashMap;
 
@@ -1079,10 +1072,6 @@
 
 .method public requestDnsQuerying(IIZLjava/lang/String;)Z
     .locals 11
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # Ljava/lang/String;
 
     const/4 v5, 0x0
 

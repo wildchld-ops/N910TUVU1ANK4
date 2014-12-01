@@ -76,9 +76,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/BackupManagerService;Lcom/android/internal/backup/IBackupTransport;Ljava/lang/String;Ljava/util/ArrayList;Ljava/io/File;)V
     .locals 2
-    .param p2    # Lcom/android/internal/backup/IBackupTransport;
-    .param p3    # Ljava/lang/String;
-    .param p5    # Ljava/io/File;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1420,7 +1417,6 @@
 
 .method executeNextState(Lcom/android/server/BackupManagerService$BackupState;)V
     .locals 4
-    .param p1    # Lcom/android/server/BackupManagerService$BackupState;
 
     iget-object v1, p0, Lcom/android/server/BackupManagerService$PerformBackupTask;->this$0:Lcom/android/server/BackupManagerService;
 
@@ -1752,9 +1748,6 @@
 
 .method invokeAgentForBackup(Ljava/lang/String;Landroid/app/IBackupAgent;Lcom/android/internal/backup/IBackupTransport;)I
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/app/IBackupAgent;
-    .param p3    # Lcom/android/internal/backup/IBackupTransport;
 
     const/4 v7, 0x0
 

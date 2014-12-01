@@ -58,7 +58,6 @@
 # virtual methods
 .method protected varargs doInBackground([Lcom/voovio/sweep/Voovio;)Ljava/lang/Integer;
     .locals 5
-    .param p1    # [Lcom/voovio/sweep/Voovio;
 
     const/4 v4, 0x0
 
@@ -146,7 +145,6 @@
 
 .method protected onPostExecute(Ljava/lang/Integer;)V
     .locals 0
-    .param p1    # Ljava/lang/Integer;
 
     invoke-super {p0, p1}, Landroid/os/AsyncTask;->onPostExecute(Ljava/lang/Object;)V
 

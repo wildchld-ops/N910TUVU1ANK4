@@ -54,7 +54,7 @@
     :goto_0
     iget-object v5, p0, Lcom/android/phone/callsettings/InCallSoundEQPreference$1;->this$0:Lcom/android/phone/callsettings/InCallSoundEQPreference;
 
-    invoke-virtual {v5}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v5}, Lcom/android/phone/callsettings/InCallSoundEQPreference;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v5
 
@@ -66,7 +66,7 @@
 
     iget-object v3, p0, Lcom/android/phone/callsettings/InCallSoundEQPreference$1;->this$0:Lcom/android/phone/callsettings/InCallSoundEQPreference;
 
-    invoke-virtual {v3}, Landroid/app/Fragment;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {v3}, Lcom/android/phone/callsettings/InCallSoundEQPreference;->getResources()Landroid/content/res/Resources;
 
     move-result-object v3
 
@@ -87,7 +87,7 @@
 
     const v5, 0x7f0903e2
 
-    invoke-virtual {v3, v5}, Landroid/preference/Preference;->setSummary(I)V
+    invoke-virtual {v3, v5}, Landroid/preference/ListPreference;->setSummary(I)V
 
     :goto_1
     move v3, v4
@@ -98,7 +98,7 @@
     :pswitch_0
     iget-object v5, p0, Lcom/android/phone/callsettings/InCallSoundEQPreference$1;->this$0:Lcom/android/phone/callsettings/InCallSoundEQPreference;
 
-    invoke-virtual {v5}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v5}, Lcom/android/phone/callsettings/InCallSoundEQPreference;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v5
 
@@ -108,7 +108,7 @@
 
     iget-object v5, p0, Lcom/android/phone/callsettings/InCallSoundEQPreference$1;->this$0:Lcom/android/phone/callsettings/InCallSoundEQPreference;
 
-    invoke-virtual {v5}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v5}, Lcom/android/phone/callsettings/InCallSoundEQPreference;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v5
 
@@ -121,7 +121,7 @@
     :pswitch_1
     iget-object v5, p0, Lcom/android/phone/callsettings/InCallSoundEQPreference$1;->this$0:Lcom/android/phone/callsettings/InCallSoundEQPreference;
 
-    invoke-virtual {v5}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v5}, Lcom/android/phone/callsettings/InCallSoundEQPreference;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v5
 
@@ -135,7 +135,7 @@
 
     iget-object v4, p0, Lcom/android/phone/callsettings/InCallSoundEQPreference$1;->this$0:Lcom/android/phone/callsettings/InCallSoundEQPreference;
 
-    invoke-virtual {v4}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v4}, Lcom/android/phone/callsettings/InCallSoundEQPreference;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v4
 
@@ -162,14 +162,14 @@
 
     const/16 v5, 0x1f7
 
-    invoke-virtual {v4, v5}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->showDialog(I)V
+    invoke-virtual {v4, v5}, Lcom/android/phone/callsettings/InCallSoundEQPreference;->showDialog(I)V
 
     goto :goto_2
 
     :cond_0
     iget-object v5, p0, Lcom/android/phone/callsettings/InCallSoundEQPreference$1;->this$0:Lcom/android/phone/callsettings/InCallSoundEQPreference;
 
-    invoke-virtual {v5}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v5}, Lcom/android/phone/callsettings/InCallSoundEQPreference;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v5
 
@@ -179,7 +179,7 @@
 
     iget-object v5, p0, Lcom/android/phone/callsettings/InCallSoundEQPreference$1;->this$0:Lcom/android/phone/callsettings/InCallSoundEQPreference;
 
-    invoke-virtual {v5}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v5}, Lcom/android/phone/callsettings/InCallSoundEQPreference;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v5
 
@@ -191,7 +191,7 @@
 
     iget-object v5, p0, Lcom/android/phone/callsettings/InCallSoundEQPreference$1;->this$0:Lcom/android/phone/callsettings/InCallSoundEQPreference;
 
-    invoke-virtual {v5}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v5}, Lcom/android/phone/callsettings/InCallSoundEQPreference;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v5
 

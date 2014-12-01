@@ -36,8 +36,6 @@
 # virtual methods
 .method public onServiceConnected(ILandroid/bluetooth/BluetoothProfile;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/bluetooth/BluetoothProfile;
 
     iget-object v0, p0, Lcom/android/settings/TetherSettings$1;->this$0:Lcom/android/settings/TetherSettings;
 
@@ -124,7 +122,6 @@
 
 .method public onServiceDisconnected(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/settings/TetherSettings$1;->this$0:Lcom/android/settings/TetherSettings;
 

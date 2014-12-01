@@ -32,7 +32,6 @@
 
 .method private static close(Ljava/io/Closeable;)V
     .locals 3
-    .param p0    # Ljava/io/Closeable;
 
     if-nez p0, :cond_0
 
@@ -61,7 +60,6 @@
 
 .method static fromFile(Ljava/lang/String;)Lcom/android/server/RandomBlock;
     .locals 3
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -106,7 +104,6 @@
 
 .method private static fromStream(Ljava/io/InputStream;)Lcom/android/server/RandomBlock;
     .locals 5
-    .param p0    # Ljava/io/InputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -153,7 +150,6 @@
 
 .method private toDataOut(Ljava/io/DataOutput;)V
     .locals 1
-    .param p1    # Ljava/io/DataOutput;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -169,7 +165,6 @@
 
 .method private static truncateIfPossible(Ljava/io/RandomAccessFile;)V
     .locals 2
-    .param p0    # Ljava/io/RandomAccessFile;
 
     const-wide/16 v0, 0x1000
 
@@ -191,8 +186,6 @@
 # virtual methods
 .method toFile(Ljava/lang/String;Z)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

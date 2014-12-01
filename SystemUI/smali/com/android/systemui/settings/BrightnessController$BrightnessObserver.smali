@@ -25,7 +25,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/systemui/settings/BrightnessController;Landroid/os/Handler;)V
     .locals 1
-    .param p2    # Landroid/os/Handler;
 
     iput-object p1, p0, Lcom/android/systemui/settings/BrightnessController$BrightnessObserver;->this$0:Lcom/android/systemui/settings/BrightnessController;
 
@@ -54,7 +53,6 @@
 # virtual methods
 .method public onChange(Z)V
     .locals 1
-    .param p1    # Z
 
     const/4 v0, 0x0
 
@@ -65,8 +63,6 @@
 
 .method public onChange(ZLandroid/net/Uri;)V
     .locals 3
-    .param p1    # Z
-    .param p2    # Landroid/net/Uri;
 
     if-eqz p1, :cond_1
 

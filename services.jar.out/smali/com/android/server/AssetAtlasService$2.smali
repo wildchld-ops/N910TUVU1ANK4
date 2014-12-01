@@ -40,8 +40,6 @@
 # virtual methods
 .method public compare(Lcom/android/server/AssetAtlasService$WorkerResult;Lcom/android/server/AssetAtlasService$WorkerResult;)I
     .locals 4
-    .param p1    # Lcom/android/server/AssetAtlasService$WorkerResult;
-    .param p2    # Lcom/android/server/AssetAtlasService$WorkerResult;
 
     iget v1, p2, Lcom/android/server/AssetAtlasService$WorkerResult;->count:I
 
@@ -74,8 +72,6 @@
 
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p1, Lcom/android/server/AssetAtlasService$WorkerResult;
 

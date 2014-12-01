@@ -27,8 +27,6 @@
 # virtual methods
 .method public setMotionEventSplittingEnabled(Landroid/view/ViewGroup;Z)V
     .locals 0
-    .param p1    # Landroid/view/ViewGroup;
-    .param p2    # Z
 
     invoke-static {p1, p2}, Landroid/support/v4/view/ViewGroupCompatHC;->setMotionEventSplittingEnabled(Landroid/view/ViewGroup;Z)V
 

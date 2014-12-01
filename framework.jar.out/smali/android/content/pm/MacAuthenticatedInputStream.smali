@@ -10,8 +10,6 @@
 # direct methods
 .method public constructor <init>(Ljava/io/InputStream;Ljavax/crypto/Mac;)V
     .locals 0
-    .param p1    # Ljava/io/InputStream;
-    .param p2    # Ljavax/crypto/Mac;
 
     invoke-direct {p0, p1}, Ljava/io/FilterInputStream;-><init>(Ljava/io/InputStream;)V
 
@@ -24,7 +22,6 @@
 # virtual methods
 .method public isTagEqual([B)Z
     .locals 6
-    .param p1    # [B
 
     const/4 v3, 0x0
 
@@ -104,9 +101,6 @@
 
 .method public read([BII)I
     .locals 2
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

@@ -30,7 +30,6 @@
 # direct methods
 .method public constructor <init>(Landroid/net/INetworkPolicyManager;)V
     .locals 2
-    .param p1    # Landroid/net/INetworkPolicyManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -52,8 +51,6 @@
 
 .method public static computeLastCycleBoundary(JLandroid/net/NetworkPolicy;)J
     .locals 7
-    .param p0    # J
-    .param p2    # Landroid/net/NetworkPolicy;
 
     const/4 v6, 0x0
 
@@ -138,8 +135,6 @@
 
 .method public static computeNextCycleBoundary(JLandroid/net/NetworkPolicy;)J
     .locals 7
-    .param p0    # J
-    .param p2    # Landroid/net/NetworkPolicy;
 
     const/4 v6, 0x0
 
@@ -224,8 +219,6 @@
 
 .method public static dumpPolicy(Ljava/io/PrintWriter;I)V
     .locals 1
-    .param p0    # Ljava/io/PrintWriter;
-    .param p1    # I
 
     const-string v0, "["
 
@@ -249,8 +242,6 @@
 
 .method public static dumpRules(Ljava/io/PrintWriter;I)V
     .locals 1
-    .param p0    # Ljava/io/PrintWriter;
-    .param p1    # I
 
     const-string v0, "["
 
@@ -274,7 +265,6 @@
 
 .method public static from(Landroid/content/Context;)Landroid/net/NetworkPolicyManager;
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     const-string v0, "netpolicy"
 
@@ -289,8 +279,6 @@
 
 .method public static isUidValidForPolicy(Landroid/content/Context;I)Z
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -313,8 +301,6 @@
 
 .method public static snapToCycleDay(Landroid/text/format/Time;I)V
     .locals 2
-    .param p0    # Landroid/text/format/Time;
-    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -422,7 +408,6 @@
 
 .method public getUidPolicy(I)I
     .locals 2
-    .param p1    # I
 
     :try_start_0
     iget-object v1, p0, Landroid/net/NetworkPolicyManager;->mService:Landroid/net/INetworkPolicyManager;
@@ -446,7 +431,6 @@
 
 .method public getUidsWithPolicy(I)[I
     .locals 2
-    .param p1    # I
 
     :try_start_0
     iget-object v1, p0, Landroid/net/NetworkPolicyManager;->mService:Landroid/net/INetworkPolicyManager;
@@ -472,7 +456,6 @@
 
 .method public registerListener(Landroid/net/INetworkPolicyListener;)V
     .locals 1
-    .param p1    # Landroid/net/INetworkPolicyListener;
 
     :try_start_0
     iget-object v0, p0, Landroid/net/NetworkPolicyManager;->mService:Landroid/net/INetworkPolicyManager;
@@ -492,7 +475,6 @@
 
 .method public setLimitBackground(Z)V
     .locals 1
-    .param p1    # Z
 
     :try_start_0
     iget-object v0, p0, Landroid/net/NetworkPolicyManager;->mService:Landroid/net/INetworkPolicyManager;
@@ -512,7 +494,6 @@
 
 .method public setNetworkPolicies([Landroid/net/NetworkPolicy;)V
     .locals 1
-    .param p1    # [Landroid/net/NetworkPolicy;
 
     :try_start_0
     iget-object v0, p0, Landroid/net/NetworkPolicyManager;->mService:Landroid/net/INetworkPolicyManager;
@@ -532,7 +513,6 @@
 
 .method public setRestrictBackground(Z)V
     .locals 1
-    .param p1    # Z
 
     :try_start_0
     iget-object v0, p0, Landroid/net/NetworkPolicyManager;->mService:Landroid/net/INetworkPolicyManager;
@@ -552,7 +532,6 @@
 
 .method public setRestrictBackgroundByPco(Z)V
     .locals 1
-    .param p1    # Z
 
     :try_start_0
     iget-object v0, p0, Landroid/net/NetworkPolicyManager;->mService:Landroid/net/INetworkPolicyManager;
@@ -572,8 +551,6 @@
 
 .method public setUidAllowedForData(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     :try_start_0
     iget-object v0, p0, Landroid/net/NetworkPolicyManager;->mService:Landroid/net/INetworkPolicyManager;
@@ -593,8 +570,6 @@
 
 .method public setUidPolicy(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     :try_start_0
     iget-object v0, p0, Landroid/net/NetworkPolicyManager;->mService:Landroid/net/INetworkPolicyManager;
@@ -614,7 +589,6 @@
 
 .method public unregisterListener(Landroid/net/INetworkPolicyListener;)V
     .locals 1
-    .param p1    # Landroid/net/INetworkPolicyListener;
 
     :try_start_0
     iget-object v0, p0, Landroid/net/NetworkPolicyManager;->mService:Landroid/net/INetworkPolicyManager;

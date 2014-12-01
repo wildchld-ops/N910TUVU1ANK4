@@ -70,7 +70,6 @@
 
 .method synthetic constructor <init>(Landroid/webkitsec/WebIconDatabaseClassic$1;)V
     .locals 0
-    .param p1    # Landroid/webkitsec/WebIconDatabaseClassic$1;
 
     invoke-direct {p0}, Landroid/webkitsec/WebIconDatabaseClassic$EventHandler;-><init>()V
 
@@ -79,7 +78,6 @@
 
 .method static synthetic access$1000(Landroid/webkitsec/WebIconDatabaseClassic$EventHandler;)Z
     .locals 1
-    .param p0    # Landroid/webkitsec/WebIconDatabaseClassic$EventHandler;
 
     invoke-direct {p0}, Landroid/webkitsec/WebIconDatabaseClassic$EventHandler;->hasHandler()Z
 
@@ -90,7 +88,6 @@
 
 .method static synthetic access$1100(Landroid/webkitsec/WebIconDatabaseClassic$EventHandler;)V
     .locals 0
-    .param p0    # Landroid/webkitsec/WebIconDatabaseClassic$EventHandler;
 
     invoke-direct {p0}, Landroid/webkitsec/WebIconDatabaseClassic$EventHandler;->createHandler()V
 
@@ -99,9 +96,6 @@
 
 .method static synthetic access$400(Landroid/webkitsec/WebIconDatabaseClassic$EventHandler;Ljava/lang/String;Landroid/webkitsec/WebIconDatabase$IconListener;)V
     .locals 0
-    .param p0    # Landroid/webkitsec/WebIconDatabaseClassic$EventHandler;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/webkitsec/WebIconDatabase$IconListener;
 
     invoke-direct {p0, p1, p2}, Landroid/webkitsec/WebIconDatabaseClassic$EventHandler;->requestIconAndSendResult(Ljava/lang/String;Landroid/webkitsec/WebIconDatabase$IconListener;)V
 
@@ -110,8 +104,6 @@
 
 .method static synthetic access$500(Landroid/webkitsec/WebIconDatabaseClassic$EventHandler;Landroid/os/Message;)V
     .locals 0
-    .param p0    # Landroid/webkitsec/WebIconDatabaseClassic$EventHandler;
-    .param p1    # Landroid/os/Message;
 
     invoke-direct {p0, p1}, Landroid/webkitsec/WebIconDatabaseClassic$EventHandler;->bulkRequestIcons(Landroid/os/Message;)V
 
@@ -120,8 +112,6 @@
 
 .method static synthetic access$900(Landroid/webkitsec/WebIconDatabaseClassic$EventHandler;Landroid/os/Message;)V
     .locals 0
-    .param p0    # Landroid/webkitsec/WebIconDatabaseClassic$EventHandler;
-    .param p1    # Landroid/os/Message;
 
     invoke-direct {p0, p1}, Landroid/webkitsec/WebIconDatabaseClassic$EventHandler;->postMessage(Landroid/os/Message;)V
 
@@ -130,7 +120,6 @@
 
 .method private bulkRequestIcons(Landroid/os/Message;)V
     .locals 11
-    .param p1    # Landroid/os/Message;
 
     iget-object v9, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
@@ -340,7 +329,6 @@
 
 .method private declared-synchronized postMessage(Landroid/os/Message;)V
     .locals 1
-    .param p1    # Landroid/os/Message;
 
     monitor-enter p0
 
@@ -380,8 +368,6 @@
 
 .method private requestIconAndSendResult(Ljava/lang/String;Landroid/webkitsec/WebIconDatabase$IconListener;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/webkitsec/WebIconDatabase$IconListener;
 
     # invokes: Landroid/webkitsec/WebIconDatabaseClassic;->nativeIconForPageUrl(Ljava/lang/String;)Landroid/graphics/Bitmap;
     invoke-static {p1}, Landroid/webkitsec/WebIconDatabaseClassic;->access$800(Ljava/lang/String;)Landroid/graphics/Bitmap;
@@ -410,7 +396,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 1
-    .param p1    # Landroid/os/Message;
 
     iget v0, p1, Landroid/os/Message;->what:I
 

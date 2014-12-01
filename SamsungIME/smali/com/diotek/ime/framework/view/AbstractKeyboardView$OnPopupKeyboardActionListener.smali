@@ -37,7 +37,6 @@
 
 .method public constructor <init>(Lcom/diotek/ime/framework/view/AbstractKeyboardView;Z)V
     .locals 1
-    .param p2    # Z
 
     iput-object p1, p0, Lcom/diotek/ime/framework/view/AbstractKeyboardView$OnPopupKeyboardActionListener;->this$0:Lcom/diotek/ime/framework/view/AbstractKeyboardView;
 
@@ -56,8 +55,6 @@
 # virtual methods
 .method public onKey(I[I)V
     .locals 1
-    .param p1    # I
-    .param p2    # [I
 
     iget-boolean v0, p0, Lcom/diotek/ime/framework/view/AbstractKeyboardView$OnPopupKeyboardActionListener;->mDismissOnInput:Z
 
@@ -119,7 +116,6 @@
 
 .method public onRelease(I)V
     .locals 1
-    .param p1    # I
 
     iget-boolean v0, p0, Lcom/diotek/ime/framework/view/AbstractKeyboardView$OnPopupKeyboardActionListener;->mDismissOnInput:Z
 
@@ -135,7 +131,6 @@
 
 .method public onText(Ljava/lang/CharSequence;)V
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
 
     iget-boolean v0, p0, Lcom/diotek/ime/framework/view/AbstractKeyboardView$OnPopupKeyboardActionListener;->mDismissOnInput:Z
 

@@ -15,7 +15,6 @@
 # direct methods
 .method public constructor <init>(J)V
     .locals 1
-    .param p1    # J
 
     const/4 v0, 0x1
 
@@ -26,8 +25,6 @@
 
 .method public constructor <init>(JZ)V
     .locals 0
-    .param p1    # J
-    .param p3    # Z
 
     invoke-direct {p0}, Lorg/apache/commons/io/filefilter/AbstractFileFilter;-><init>()V
 
@@ -40,7 +37,6 @@
 
 .method public constructor <init>(Ljava/io/File;)V
     .locals 1
-    .param p1    # Ljava/io/File;
 
     const/4 v0, 0x1
 
@@ -51,8 +47,6 @@
 
 .method public constructor <init>(Ljava/io/File;Z)V
     .locals 2
-    .param p1    # Ljava/io/File;
-    .param p2    # Z
 
     invoke-virtual {p1}, Ljava/io/File;->lastModified()J
 
@@ -65,7 +59,6 @@
 
 .method public constructor <init>(Ljava/util/Date;)V
     .locals 1
-    .param p1    # Ljava/util/Date;
 
     const/4 v0, 0x1
 
@@ -76,8 +69,6 @@
 
 .method public constructor <init>(Ljava/util/Date;Z)V
     .locals 2
-    .param p1    # Ljava/util/Date;
-    .param p2    # Z
 
     invoke-virtual {p1}, Ljava/util/Date;->getTime()J
 
@@ -92,7 +83,6 @@
 # virtual methods
 .method public accept(Ljava/io/File;)Z
     .locals 3
-    .param p1    # Ljava/io/File;
 
     iget-wide v1, p0, Lorg/apache/commons/io/filefilter/AgeFileFilter;->cutoff:J
 

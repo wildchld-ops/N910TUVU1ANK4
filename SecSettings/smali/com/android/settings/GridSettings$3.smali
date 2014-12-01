@@ -36,7 +36,6 @@
 # virtual methods
 .method public onPageScrollStateChanged(I)V
     .locals 2
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -62,16 +61,12 @@
 
 .method public onPageScrolled(IFI)V
     .locals 0
-    .param p1    # I
-    .param p2    # F
-    .param p3    # I
 
     return-void
 .end method
 
 .method public onPageSelected(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/settings/GridSettings$3;->this$0:Lcom/android/settings/GridSettings;
 

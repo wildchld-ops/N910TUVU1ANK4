@@ -27,8 +27,6 @@
 # virtual methods
 .method public getTransformation(JLandroid/view/animation/Transformation;)Z
     .locals 1
-    .param p1    # J
-    .param p3    # Landroid/view/animation/Transformation;
 
     const/4 v0, 0x0
 

@@ -41,7 +41,6 @@
 
 .method static synthetic access$002(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/incallui/InCallApp;->mIsFromNoti:Z
 
@@ -81,7 +80,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 0
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/app/Application;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -123,7 +121,6 @@
 
 .method public setIsFromNoti(Z)V
     .locals 0
-    .param p1    # Z
 
     sput-boolean p1, Lcom/android/incallui/InCallApp;->mIsFromNoti:Z
 

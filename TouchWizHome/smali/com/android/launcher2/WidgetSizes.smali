@@ -61,7 +61,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     const/16 v2, 0x3e8
 
@@ -100,8 +99,6 @@
 
 .method private add(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/launcher2/WidgetSizes;->mValidSizes:Ljava/util/ArrayList;
 
@@ -182,7 +179,6 @@
 
 .method private loadAsPureGoogle(Landroid/appwidget/AppWidgetProviderInfo;)V
     .locals 4
-    .param p1    # Landroid/appwidget/AppWidgetProviderInfo;
 
     const/4 v3, 0x1
 
@@ -229,7 +225,6 @@
 # virtual methods
 .method public capHeight(I)I
     .locals 2
-    .param p1    # I
 
     iget-boolean v0, p0, Lcom/android/launcher2/WidgetSizes;->pureGoogle:Z
 
@@ -269,7 +264,6 @@
 
 .method public capWidth(I)I
     .locals 2
-    .param p1    # I
 
     iget-boolean v0, p0, Lcom/android/launcher2/WidgetSizes;->pureGoogle:Z
 
@@ -347,8 +341,6 @@
 
 .method public isAvailableSize(II)Z
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     const/4 v5, -0x1
 
@@ -438,7 +430,6 @@
 
 .method public load(Landroid/appwidget/AppWidgetProviderInfo;)V
     .locals 25
-    .param p1    # Landroid/appwidget/AppWidgetProviderInfo;
 
     move-object/from16 v0, p1
 
@@ -840,8 +831,6 @@
 
 .method public setMinSpan(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     iput p1, p0, Lcom/android/launcher2/WidgetSizes;->mMinXSpan:I
 

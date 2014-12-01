@@ -106,11 +106,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/BackupManagerService;Landroid/os/ParcelFileDescriptor;Ljava/lang/String;Ljava/lang/String;Landroid/app/backup/IFullBackupRestoreObserver;Ljava/util/concurrent/atomic/AtomicBoolean;)V
     .locals 2
-    .param p2    # Landroid/os/ParcelFileDescriptor;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Landroid/app/backup/IFullBackupRestoreObserver;
-    .param p6    # Ljava/util/concurrent/atomic/AtomicBoolean;
 
     const/4 v1, 0x0
 
@@ -197,7 +192,6 @@
 
 .method private HEXLOG([B)V
     .locals 11
-    .param p1    # [B
 
     const/16 v5, 0x10
 
@@ -298,14 +292,6 @@
 # virtual methods
 .method attemptMasterKeyDecryption(Ljava/lang/String;[B[BILjava/lang/String;Ljava/lang/String;Ljava/io/InputStream;Z)Ljava/io/InputStream;
     .locals 24
-    .param p1    # Ljava/lang/String;
-    .param p2    # [B
-    .param p3    # [B
-    .param p4    # I
-    .param p5    # Ljava/lang/String;
-    .param p6    # Ljava/lang/String;
-    .param p7    # Ljava/io/InputStream;
-    .param p8    # Z
 
     const/16 v17, 0x0
 
@@ -611,9 +597,6 @@
 
 .method decodeAesHeaderAndInitialize(Ljava/lang/String;ZLjava/io/InputStream;)Ljava/io/InputStream;
     .locals 14
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # Ljava/io/InputStream;
 
     const/4 v12, 0x0
 
@@ -759,7 +742,6 @@
 
 .method dumpFileMetadata(Lcom/android/server/BackupManagerService$FileMetadata;)V
     .locals 13
-    .param p1    # Lcom/android/server/BackupManagerService$FileMetadata;
 
     const/16 v6, 0x78
 
@@ -1040,9 +1022,6 @@
 
 .method extractLine([BI[Ljava/lang/String;)I
     .locals 6
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1096,10 +1075,6 @@
 
 .method extractRadix([BIII)J
     .locals 9
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1192,9 +1167,6 @@
 
 .method extractString([BII)Ljava/lang/String;
     .locals 5
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1230,9 +1202,6 @@
 
 .method installApk(Lcom/android/server/BackupManagerService$FileMetadata;Ljava/lang/String;Ljava/io/InputStream;)Z
     .locals 22
-    .param p1    # Lcom/android/server/BackupManagerService$FileMetadata;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/io/InputStream;
 
     const/4 v9, 0x1
 
@@ -1943,8 +1912,6 @@
 
 .method readAppManifest(Lcom/android/server/BackupManagerService$FileMetadata;Ljava/io/InputStream;)Lcom/android/server/BackupManagerService$RestorePolicy;
     .locals 22
-    .param p1    # Lcom/android/server/BackupManagerService$FileMetadata;
-    .param p2    # Ljava/io/InputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -2934,10 +2901,6 @@
 
 .method readExactly(Ljava/io/InputStream;[BII)I
     .locals 4
-    .param p1    # Ljava/io/InputStream;
-    .param p2    # [B
-    .param p3    # I
-    .param p4    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -2981,7 +2944,6 @@
 
 .method readHeaderLine(Ljava/io/InputStream;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/io/InputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -3022,8 +2984,6 @@
 
 .method readPaxExtendedHeader(Ljava/io/InputStream;Lcom/android/server/BackupManagerService$FileMetadata;)Z
     .locals 15
-    .param p1    # Ljava/io/InputStream;
-    .param p2    # Lcom/android/server/BackupManagerService$FileMetadata;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -3319,8 +3279,6 @@
 
 .method readTarHeader(Ljava/io/InputStream;[B)Z
     .locals 5
-    .param p1    # Ljava/io/InputStream;
-    .param p2    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -3367,7 +3325,6 @@
 
 .method readTarHeaders(Ljava/io/InputStream;)Lcom/android/server/BackupManagerService$FileMetadata;
     .locals 13
-    .param p1    # Ljava/io/InputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -3947,8 +3904,6 @@
 
 .method restoreOneFile(Ljava/io/InputStream;[B)Z
     .locals 46
-    .param p1    # Ljava/io/InputStream;
-    .param p2    # [B
 
     :try_start_0
     invoke-virtual/range {p0 .. p1}, Lcom/android/server/BackupManagerService$PerformFullRestoreTask;->readTarHeaders(Ljava/io/InputStream;)Lcom/android/server/BackupManagerService$FileMetadata;
@@ -6624,7 +6579,6 @@
 
 .method sendOnRestorePackage(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/server/BackupManagerService$PerformFullRestoreTask;->this$0:Lcom/android/server/BackupManagerService;
 
@@ -6724,8 +6678,6 @@
 
 .method skipTarPadding(JLjava/io/InputStream;)V
     .locals 8
-    .param p1    # J
-    .param p3    # Ljava/io/InputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -6781,7 +6733,6 @@
 
 .method tearDownAgent(Landroid/content/pm/ApplicationInfo;)V
     .locals 4
-    .param p1    # Landroid/content/pm/ApplicationInfo;
 
     iget-object v1, p0, Lcom/android/server/BackupManagerService$PerformFullRestoreTask;->mAgent:Landroid/app/IBackupAgent;
 

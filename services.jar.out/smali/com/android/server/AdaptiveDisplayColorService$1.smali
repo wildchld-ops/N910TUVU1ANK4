@@ -33,9 +33,6 @@
 # virtual methods
 .method public onForegroundActivitiesChanged(IIZ)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     const/4 v0, 0x0
 
@@ -85,17 +82,12 @@
 
 .method public onImportanceChanged(III)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     return-void
 .end method
 
 .method public onProcessDied(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     return-void
 .end method

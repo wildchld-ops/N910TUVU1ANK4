@@ -44,12 +44,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/CharSequence;Ljava/lang/CharSequence;Landroid/view/inputmethod/InputMethodInfo;ILjava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Ljava/lang/CharSequence;
-    .param p3    # Landroid/view/inputmethod/InputMethodInfo;
-    .param p4    # I
-    .param p5    # Ljava/lang/String;
-    .param p6    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -112,7 +106,6 @@
 # virtual methods
 .method public compareTo(Lcom/android/server/InputMethodManagerService$ImeSubtypeListItem;)I
     .locals 4
-    .param p1    # Lcom/android/server/InputMethodManagerService$ImeSubtypeListItem;
 
     const/4 v0, 0x1
 
@@ -256,7 +249,6 @@
 
 .method public bridge synthetic compareTo(Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/android/server/InputMethodManagerService$ImeSubtypeListItem;
 

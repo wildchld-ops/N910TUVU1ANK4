@@ -106,8 +106,6 @@
 # virtual methods
 .method public declared-synchronized addProfileEntry(Ljava/lang/String;Lcom/android/server/enterprise/vpn/knoxvpn/profile/VpnProfileInfo;)Lcom/android/server/enterprise/vpn/knoxvpn/profile/VpnProfileInfo;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/server/enterprise/vpn/knoxvpn/profile/VpnProfileInfo;
 
     monitor-enter p0
 
@@ -147,8 +145,6 @@
 
 .method public checkAdminForProfile(ILjava/lang/String;)I
     .locals 5
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     if-nez p2, :cond_0
 
@@ -291,8 +287,6 @@
 
 .method public checkPersonaForProfile(ILjava/lang/String;)I
     .locals 5
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     if-nez p2, :cond_0
 
@@ -448,8 +442,6 @@
 
 .method public checkVendorForProfile(Ljava/lang/String;Ljava/lang/String;)I
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     if-nez p2, :cond_1
 
@@ -645,7 +637,6 @@
 
 .method public containsProfileEntry(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -666,7 +657,6 @@
 
 .method public declared-synchronized getContainerVpnProfile(I)Ljava/lang/String;
     .locals 5
-    .param p1    # I
 
     monitor-enter p0
 
@@ -759,7 +749,6 @@
 
 .method public getProfileEntry(Ljava/lang/String;)Lcom/android/server/enterprise/vpn/knoxvpn/profile/VpnProfileInfo;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -791,7 +780,6 @@
 
 .method public declared-synchronized getProfileNameForPackage(Ljava/lang/String;)Ljava/lang/String;
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -860,7 +848,6 @@
 
 .method public declared-synchronized getProfileNameForUid(I)Ljava/lang/String;
     .locals 5
-    .param p1    # I
 
     monitor-enter p0
 
@@ -941,8 +928,6 @@
 
 .method public declared-synchronized removePackageFromProfile(Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -992,7 +977,6 @@
 
 .method public declared-synchronized removeProfileEntry(Ljava/lang/String;)Lcom/android/server/enterprise/vpn/knoxvpn/profile/VpnProfileInfo;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 

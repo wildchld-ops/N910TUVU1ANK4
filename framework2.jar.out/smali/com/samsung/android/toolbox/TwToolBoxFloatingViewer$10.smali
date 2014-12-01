@@ -21,7 +21,6 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;Landroid/os/Handler;)V
     .locals 0
-    .param p2    # Landroid/os/Handler;
 
     iput-object p1, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer$10;->this$0:Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 
@@ -34,7 +33,6 @@
 # virtual methods
 .method public onChange(Z)V
     .locals 4
-    .param p1    # Z
 
     const/4 v0, 0x0
 

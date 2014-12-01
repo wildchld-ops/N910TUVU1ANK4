@@ -33,7 +33,6 @@
 # virtual methods
 .method public deleteCategory(I)V
     .locals 0
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/nuance/dlm/ACChineseInput;->acChineseDeleteCategory(I)I
 
@@ -42,8 +41,6 @@
 
 .method public deleteCategoryLanguage(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/nuance/dlm/ACChineseInput;->acChineseDeleteCategoryLanguage(II)I
 
@@ -52,8 +49,6 @@
 
 .method public exportAsEvents(ZI)V
     .locals 0
-    .param p1    # Z
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/nuance/dlm/ACChineseInput;->acChineseExportAsEvent(ZI)I
 
@@ -62,7 +57,6 @@
 
 .method public processEvent([B)V
     .locals 0
-    .param p1    # [B
 
     invoke-direct {p0, p1}, Lcom/nuance/dlm/ACChineseInput;->acChineseProcessEvent([B)I
 

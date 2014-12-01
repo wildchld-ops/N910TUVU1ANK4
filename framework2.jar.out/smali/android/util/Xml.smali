@@ -37,7 +37,6 @@
 
 .method public static asAttributeSet(Lorg/xmlpull/v1/XmlPullParser;)Landroid/util/AttributeSet;
     .locals 1
-    .param p0    # Lorg/xmlpull/v1/XmlPullParser;
 
     instance-of v0, p0, Landroid/util/AttributeSet;
 
@@ -60,7 +59,6 @@
 
 .method public static findEncodingByName(Ljava/lang/String;)Landroid/util/Xml$Encoding;
     .locals 5
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/UnsupportedEncodingException;
@@ -168,9 +166,6 @@
 
 .method public static parse(Ljava/io/InputStream;Landroid/util/Xml$Encoding;Lorg/xml/sax/ContentHandler;)V
     .locals 3
-    .param p0    # Ljava/io/InputStream;
-    .param p1    # Landroid/util/Xml$Encoding;
-    .param p2    # Lorg/xml/sax/ContentHandler;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -199,8 +194,6 @@
 
 .method public static parse(Ljava/io/Reader;Lorg/xml/sax/ContentHandler;)V
     .locals 2
-    .param p0    # Ljava/io/Reader;
-    .param p1    # Lorg/xml/sax/ContentHandler;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -225,8 +218,6 @@
 
 .method public static parse(Ljava/lang/String;Lorg/xml/sax/ContentHandler;)V
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # Lorg/xml/sax/ContentHandler;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xml/sax/SAXException;

@@ -39,7 +39,6 @@
 
 .method static synthetic access$100(Lcom/android/server/ResettableTimeout;)Landroid/os/ConditionVariable;
     .locals 1
-    .param p0    # Lcom/android/server/ResettableTimeout;
 
     iget-object v0, p0, Lcom/android/server/ResettableTimeout;->mLock:Landroid/os/ConditionVariable;
 
@@ -48,7 +47,6 @@
 
 .method static synthetic access$200(Lcom/android/server/ResettableTimeout;)J
     .locals 2
-    .param p0    # Lcom/android/server/ResettableTimeout;
 
     iget-wide v0, p0, Lcom/android/server/ResettableTimeout;->mOffAt:J
 
@@ -57,8 +55,6 @@
 
 .method static synthetic access$302(Lcom/android/server/ResettableTimeout;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/ResettableTimeout;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/ResettableTimeout;->mOffCalled:Z
 
@@ -67,8 +63,6 @@
 
 .method static synthetic access$402(Lcom/android/server/ResettableTimeout;Ljava/lang/Thread;)Ljava/lang/Thread;
     .locals 0
-    .param p0    # Lcom/android/server/ResettableTimeout;
-    .param p1    # Ljava/lang/Thread;
 
     iput-object p1, p0, Lcom/android/server/ResettableTimeout;->mThread:Ljava/lang/Thread;
 
@@ -127,7 +121,6 @@
 
 .method public go(J)V
     .locals 3
-    .param p1    # J
 
     monitor-enter p0
 

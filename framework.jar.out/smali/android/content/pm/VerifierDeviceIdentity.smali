@@ -94,7 +94,6 @@
 
 .method public constructor <init>(J)V
     .locals 1
-    .param p1    # J
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -111,7 +110,6 @@
 
 .method private constructor <init>(Landroid/os/Parcel;)V
     .locals 3
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -132,8 +130,6 @@
 
 .method synthetic constructor <init>(Landroid/os/Parcel;Landroid/content/pm/VerifierDeviceIdentity$1;)V
     .locals 0
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # Landroid/content/pm/VerifierDeviceIdentity$1;
 
     invoke-direct {p0, p1}, Landroid/content/pm/VerifierDeviceIdentity;-><init>(Landroid/os/Parcel;)V
 
@@ -142,7 +138,6 @@
 
 .method private static final decodeBase32([B)J
     .locals 12
-    .param p0    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;
@@ -308,7 +303,6 @@
 
 .method private static final encodeBase32(J)Ljava/lang/String;
     .locals 7
-    .param p0    # J
 
     sget-object v0, Landroid/content/pm/VerifierDeviceIdentity;->ENCODE:[C
 
@@ -384,7 +378,6 @@
 
 .method static generate(Ljava/util/Random;)Landroid/content/pm/VerifierDeviceIdentity;
     .locals 3
-    .param p0    # Ljava/util/Random;
 
     invoke-virtual {p0}, Ljava/util/Random;->nextLong()J
 
@@ -399,7 +392,6 @@
 
 .method public static parse(Ljava/lang/String;)Landroid/content/pm/VerifierDeviceIdentity;
     .locals 5
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;
@@ -449,7 +441,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 6
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x0
 
@@ -499,8 +490,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-wide v0, p0, Landroid/content/pm/VerifierDeviceIdentity;->mIdentity:J
 

@@ -44,7 +44,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/SelectInfoCoverSettings;)Landroid/preference/CheckBoxPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/SelectInfoCoverSettings;
 
     iget-object v0, p0, Lcom/android/settings/SelectInfoCoverSettings;->mWalkingMate:Landroid/preference/CheckBoxPreference;
 
@@ -53,7 +52,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/SelectInfoCoverSettings;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/settings/SelectInfoCoverSettings;
 
     iget-object v0, p0, Lcom/android/settings/SelectInfoCoverSettings;->mPedometerDBKey:Ljava/lang/String;
 
@@ -62,7 +60,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/SelectInfoCoverSettings;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/settings/SelectInfoCoverSettings;
 
     iget-object v0, p0, Lcom/android/settings/SelectInfoCoverSettings;->mSHealthItentExtra_type:Ljava/lang/String;
 
@@ -71,7 +68,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/SelectInfoCoverSettings;)Landroid/preference/CheckBoxPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/SelectInfoCoverSettings;
 
     iget-object v0, p0, Lcom/android/settings/SelectInfoCoverSettings;->mShortcutCamera:Landroid/preference/CheckBoxPreference;
 
@@ -80,8 +76,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/SelectInfoCoverSettings;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/settings/SelectInfoCoverSettings;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/settings/SelectInfoCoverSettings;->saveSharedPreferences(Ljava/lang/String;)V
 
@@ -90,8 +84,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/SelectInfoCoverSettings;Landroid/preference/Preference;)V
     .locals 0
-    .param p0    # Lcom/android/settings/SelectInfoCoverSettings;
-    .param p1    # Landroid/preference/Preference;
 
     invoke-direct {p0, p1}, Lcom/android/settings/SelectInfoCoverSettings;->clickItem(Landroid/preference/Preference;)V
 
@@ -100,7 +92,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/SelectInfoCoverSettings;)Landroid/preference/CheckBoxPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/SelectInfoCoverSettings;
 
     iget-object v0, p0, Lcom/android/settings/SelectInfoCoverSettings;->mWeather:Landroid/preference/CheckBoxPreference;
 
@@ -109,7 +100,6 @@
 
 .method private checkGuidePopupAvailable(Landroid/preference/Preference;)Z
     .locals 6
-    .param p1    # Landroid/preference/Preference;
 
     const/4 v3, 0x1
 
@@ -168,7 +158,6 @@
 
 .method private clickItem(Landroid/preference/Preference;)V
     .locals 14
-    .param p1    # Landroid/preference/Preference;
 
     const v13, 0x104000a
 
@@ -1174,7 +1163,6 @@
 
 .method public static getUseLocationAgreed(Landroid/content/Context;)I
     .locals 10
-    .param p0    # Landroid/content/Context;
 
     const/4 v5, 0x0
 
@@ -1258,7 +1246,6 @@
 
 .method private saveSharedPreferences(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x1
 
@@ -1285,7 +1272,6 @@
 
 .method private showGuidePopup(Landroid/preference/Preference;)V
     .locals 12
-    .param p1    # Landroid/preference/Preference;
 
     const v11, 0x7f090d9c
 
@@ -1515,7 +1501,6 @@
 # virtual methods
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 13
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v6, 0x1
 
@@ -1805,8 +1790,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 4
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     const/4 v1, 0x1
 

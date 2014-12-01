@@ -339,13 +339,13 @@
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v1}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
     iget-object v0, p0, Lcom/android/phone/IccNetworkDepersonalizationPanel;->mStatusPanel:Landroid/widget/LinearLayout;
 
     const/16 v1, 0x8
 
-    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v1}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
     return-void
 .end method
@@ -370,13 +370,13 @@
 
     const/16 v1, 0x8
 
-    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v1}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
     iget-object v0, p0, Lcom/android/phone/IccNetworkDepersonalizationPanel;->mStatusPanel:Landroid/widget/LinearLayout;
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v1}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
     return-void
 
@@ -425,13 +425,13 @@
 
     const/16 v1, 0x8
 
-    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v1}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
     iget-object v0, p0, Lcom/android/phone/IccNetworkDepersonalizationPanel;->mStatusPanel:Landroid/widget/LinearLayout;
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v1}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
     return-void
 
@@ -480,13 +480,13 @@
 
     const/16 v1, 0x8
 
-    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v1}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
     iget-object v0, p0, Lcom/android/phone/IccNetworkDepersonalizationPanel;->mStatusPanel:Landroid/widget/LinearLayout;
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v1}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
     return-void
 
@@ -554,7 +554,7 @@
 
     const v9, 0x7f04009c
 
-    invoke-virtual {p0, v9}, Landroid/app/Dialog;->setContentView(I)V
+    invoke-virtual {p0, v9}, Lcom/android/phone/IccNetworkDepersonalizationPanel;->setContentView(I)V
 
     invoke-static {}, Lcom/sec/android/app/CscFeature;->getInstance()Lcom/sec/android/app/CscFeature;
 
@@ -578,7 +578,7 @@
 
     const v9, 0x7f0a0208
 
-    invoke-virtual {p0, v9}, Landroid/app/Dialog;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v9}, Lcom/android/phone/IccNetworkDepersonalizationPanel;->findViewById(I)Landroid/view/View;
 
     move-result-object v3
 
@@ -586,7 +586,7 @@
 
     const v9, 0x7f0a0209
 
-    invoke-virtual {p0, v9}, Landroid/app/Dialog;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v9}, Lcom/android/phone/IccNetworkDepersonalizationPanel;->findViewById(I)Landroid/view/View;
 
     move-result-object v5
 
@@ -594,7 +594,7 @@
 
     const v9, 0x7f0a020a
 
-    invoke-virtual {p0, v9}, Landroid/app/Dialog;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v9}, Lcom/android/phone/IccNetworkDepersonalizationPanel;->findViewById(I)Landroid/view/View;
 
     move-result-object v6
 
@@ -602,7 +602,7 @@
 
     const v9, 0x7f0a020b
 
-    invoke-virtual {p0, v9}, Landroid/app/Dialog;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v9}, Lcom/android/phone/IccNetworkDepersonalizationPanel;->findViewById(I)Landroid/view/View;
 
     move-result-object v4
 
@@ -618,16 +618,16 @@
 
     const/16 v9, 0x8
 
-    invoke-virtual {v5, v9}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v5, v9}, Landroid/widget/TextView;->setVisibility(I)V
 
     const/16 v9, 0x8
 
-    invoke-virtual {v6, v9}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v6, v9}, Landroid/widget/TextView;->setVisibility(I)V
 
     :goto_0
     const v9, 0x7f0a020c
 
-    invoke-virtual {p0, v9}, Landroid/app/Dialog;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v9}, Lcom/android/phone/IccNetworkDepersonalizationPanel;->findViewById(I)Landroid/view/View;
 
     move-result-object v9
 
@@ -639,7 +639,7 @@
 
     const/high16 v10, 0x10000000
 
-    invoke-virtual {v9, v10}, Landroid/widget/TextView;->setImeOptions(I)V
+    invoke-virtual {v9, v10}, Landroid/widget/EditText;->setImeOptions(I)V
 
     const/4 v9, 0x1
 
@@ -651,13 +651,13 @@
 
     move-result-object v10
 
-    invoke-virtual {v9, v10}, Landroid/widget/TextView;->setKeyListener(Landroid/text/method/KeyListener;)V
+    invoke-virtual {v9, v10}, Landroid/widget/EditText;->setKeyListener(Landroid/text/method/KeyListener;)V
 
     iget-object v9, p0, Lcom/android/phone/IccNetworkDepersonalizationPanel;->mPinEntry:Landroid/widget/EditText;
 
     iget-object v10, p0, Lcom/android/phone/IccNetworkDepersonalizationPanel;->mUnlockListener:Landroid/view/View$OnClickListener;
 
-    invoke-virtual {v9, v10}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v9, v10}, Landroid/widget/EditText;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     iget-object v9, p0, Lcom/android/phone/IccNetworkDepersonalizationPanel;->mPinEntry:Landroid/widget/EditText;
 
@@ -684,7 +684,7 @@
     :goto_1
     const v9, 0x7f0a0207
 
-    invoke-virtual {p0, v9}, Landroid/app/Dialog;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v9}, Lcom/android/phone/IccNetworkDepersonalizationPanel;->findViewById(I)Landroid/view/View;
 
     move-result-object v9
 
@@ -694,7 +694,7 @@
 
     const v9, 0x7f0a020d
 
-    invoke-virtual {p0, v9}, Landroid/app/Dialog;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v9}, Lcom/android/phone/IccNetworkDepersonalizationPanel;->findViewById(I)Landroid/view/View;
 
     move-result-object v9
 
@@ -710,7 +710,7 @@
 
     iget-object v10, p0, Lcom/android/phone/IccNetworkDepersonalizationPanel;->mUnlockListener:Landroid/view/View$OnClickListener;
 
-    invoke-virtual {v9, v10}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v9, v10}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     :goto_2
     invoke-static {}, Lcom/sec/android/app/CscFeature;->getInstance()Lcom/sec/android/app/CscFeature;
@@ -725,7 +725,7 @@
 
     const v9, 0x7f0a020e
 
-    invoke-virtual {p0, v9}, Landroid/app/Dialog;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v9}, Lcom/android/phone/IccNetworkDepersonalizationPanel;->findViewById(I)Landroid/view/View;
 
     move-result-object v9
 
@@ -733,7 +733,7 @@
 
     iput-object v9, p0, Lcom/android/phone/IccNetworkDepersonalizationPanel;->mDismissButton:Landroid/widget/Button;
 
-    invoke-virtual {p0}, Landroid/app/Dialog;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/IccNetworkDepersonalizationPanel;->getContext()Landroid/content/Context;
 
     move-result-object v9
 
@@ -757,18 +757,18 @@
 
     const/4 v10, 0x0
 
-    invoke-virtual {v9, v10}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v9, v10}, Landroid/widget/Button;->setVisibility(I)V
 
     iget-object v9, p0, Lcom/android/phone/IccNetworkDepersonalizationPanel;->mDismissButton:Landroid/widget/Button;
 
     iget-object v10, p0, Lcom/android/phone/IccNetworkDepersonalizationPanel;->mDismissListener:Landroid/view/View$OnClickListener;
 
-    invoke-virtual {v9, v10}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v9, v10}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     :goto_3
     const v9, 0x7f0a020f
 
-    invoke-virtual {p0, v9}, Landroid/app/Dialog;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v9}, Lcom/android/phone/IccNetworkDepersonalizationPanel;->findViewById(I)Landroid/view/View;
 
     move-result-object v9
 
@@ -778,7 +778,7 @@
 
     const v9, 0x7f0a0210
 
-    invoke-virtual {p0, v9}, Landroid/app/Dialog;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v9}, Lcom/android/phone/IccNetworkDepersonalizationPanel;->findViewById(I)Landroid/view/View;
 
     move-result-object v9
 
@@ -812,11 +812,11 @@
 
     const/16 v9, 0x8
 
-    invoke-virtual {v5, v9}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v5, v9}, Landroid/widget/TextView;->setVisibility(I)V
 
     const/16 v9, 0x8
 
-    invoke-virtual {v6, v9}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v6, v9}, Landroid/widget/TextView;->setVisibility(I)V
 
     const-string v9, "InvalidSIM"
 
@@ -830,7 +830,7 @@
 
     invoke-direct {v9}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-virtual {p0}, Landroid/app/Dialog;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/IccNetworkDepersonalizationPanel;->getContext()Landroid/content/Context;
 
     move-result-object v10
 
@@ -854,7 +854,7 @@
 
     move-result-object v9
 
-    invoke-virtual {p0}, Landroid/app/Dialog;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/IccNetworkDepersonalizationPanel;->getContext()Landroid/content/Context;
 
     move-result-object v10
 
@@ -918,7 +918,7 @@
 
     const/16 v10, 0x8
 
-    invoke-virtual {v9, v10}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v9, v10}, Landroid/widget/EditText;->setVisibility(I)V
 
     goto/16 :goto_1
 
@@ -927,7 +927,7 @@
 
     const/16 v10, 0x8
 
-    invoke-virtual {v9, v10}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v9, v10}, Landroid/widget/Button;->setVisibility(I)V
 
     goto/16 :goto_2
 
@@ -936,7 +936,7 @@
 
     const/16 v10, 0x8
 
-    invoke-virtual {v9, v10}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v9, v10}, Landroid/widget/Button;->setVisibility(I)V
 
     goto/16 :goto_3
 

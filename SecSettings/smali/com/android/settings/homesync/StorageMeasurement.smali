@@ -16,7 +16,6 @@
 # virtual methods
 .method calculateDirectorySize(Ljava/lang/String;)J
     .locals 10
-    .param p1    # Ljava/lang/String;
 
     const-wide/16 v6, 0x0
 

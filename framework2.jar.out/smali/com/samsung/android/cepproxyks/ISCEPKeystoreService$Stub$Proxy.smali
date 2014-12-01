@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -45,8 +44,6 @@
 
 .method public deletecertificateEntry(Ljava/lang/String;Z)I
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -111,7 +108,6 @@
 
 .method public getCertificate(Ljava/lang/String;)Lcom/samsung/android/cepproxyks/CertificateAKS;
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -191,8 +187,6 @@
 
 .method public grantAccessForAKS(ILjava/lang/String;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -246,7 +240,6 @@
 
 .method public installCACert(Lcom/samsung/android/cepproxyks/CertificateAKS;)I
     .locals 6
-    .param p1    # Lcom/samsung/android/cepproxyks/CertificateAKS;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -321,8 +314,6 @@
 
 .method public installCACertForWifiCCM(Lcom/samsung/android/cepproxyks/CertificateAKS;Ljava/lang/String;)I
     .locals 6
-    .param p1    # Lcom/samsung/android/cepproxyks/CertificateAKS;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -399,11 +390,6 @@
 
 .method public installCertificateInAndroidKeyStore(Lcom/samsung/android/cepproxyks/CertByte;Ljava/lang/String;[CZI)I
     .locals 6
-    .param p1    # Lcom/samsung/android/cepproxyks/CertByte;
-    .param p2    # Ljava/lang/String;
-    .param p3    # [C
-    .param p4    # Z
-    .param p5    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -498,8 +484,6 @@
 
 .method public isAliasExists(Ljava/lang/String;Z)I
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

@@ -27,8 +27,6 @@
 # virtual methods
 .method public configureMenuItem(Landroid/view/MenuItem;Landroid/support/v4/app/ShareCompat$IntentBuilder;)V
     .locals 2
-    .param p1    # Landroid/view/MenuItem;
-    .param p2    # Landroid/support/v4/app/ShareCompat$IntentBuilder;
 
     invoke-virtual {p2}, Landroid/support/v4/app/ShareCompat$IntentBuilder;->getActivity()Landroid/app/Activity;
 
@@ -58,7 +56,6 @@
 
 .method shouldAddChooserIntent(Landroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->hasSubMenu()Z
 

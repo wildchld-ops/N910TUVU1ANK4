@@ -64,7 +64,6 @@
 
 .method private verifyAudioContentType(Ljava/lang/String;)Ljava/lang/String;
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     const/4 v7, 0x1
 
@@ -330,7 +329,6 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 5
-    .param p1    # Landroid/view/View;
 
     new-instance v2, Landroid/content/Intent;
 

@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Lcom/android/settings/NotificationStation;Lcom/android/settings/NotificationStation$1;)V
     .locals 0
-    .param p1    # Lcom/android/settings/NotificationStation;
-    .param p2    # Lcom/android/settings/NotificationStation$1;
 
     invoke-direct {p0, p1}, Lcom/android/settings/NotificationStation$PackageReceiver;-><init>(Lcom/android/settings/NotificationStation;)V
 
@@ -43,8 +41,6 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     const-string v0, "PackageReceiver.onReceive"
 

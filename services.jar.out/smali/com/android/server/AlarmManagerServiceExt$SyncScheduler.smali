@@ -146,9 +146,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Lcom/android/server/AlarmManagerService;Ljava/lang/Object;)V
     .locals 14
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/server/AlarmManagerService;
-    .param p3    # Ljava/lang/Object;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -674,7 +671,6 @@
 
 .method static synthetic access$1000(Lcom/android/server/AlarmManagerServiceExt$SyncScheduler;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Lcom/android/server/AlarmManagerServiceExt$SyncScheduler;
 
     iget-object v0, p0, Lcom/android/server/AlarmManagerServiceExt$SyncScheduler;->mLockExt:Ljava/lang/Object;
 
@@ -683,7 +679,6 @@
 
 .method static synthetic access$1400(Lcom/android/server/AlarmManagerServiceExt$SyncScheduler;)Lcom/android/server/AlarmManagerService;
     .locals 1
-    .param p0    # Lcom/android/server/AlarmManagerServiceExt$SyncScheduler;
 
     iget-object v0, p0, Lcom/android/server/AlarmManagerServiceExt$SyncScheduler;->mAms:Lcom/android/server/AlarmManagerService;
 
@@ -692,7 +687,6 @@
 
 .method static synthetic access$1600(Lcom/android/server/AlarmManagerServiceExt$SyncScheduler;)Lcom/android/server/AlarmManagerServiceExt$SyncScheduler$TrafficAnalyzer;
     .locals 1
-    .param p0    # Lcom/android/server/AlarmManagerServiceExt$SyncScheduler;
 
     iget-object v0, p0, Lcom/android/server/AlarmManagerServiceExt$SyncScheduler;->ta:Lcom/android/server/AlarmManagerServiceExt$SyncScheduler$TrafficAnalyzer;
 
@@ -701,7 +695,6 @@
 
 .method static synthetic access$1700(Lcom/android/server/AlarmManagerServiceExt$SyncScheduler;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/server/AlarmManagerServiceExt$SyncScheduler;
 
     iget-object v0, p0, Lcom/android/server/AlarmManagerServiceExt$SyncScheduler;->mContext:Landroid/content/Context;
 
@@ -710,7 +703,6 @@
 
 .method static synthetic access$2000(Lcom/android/server/AlarmManagerServiceExt$SyncScheduler;)Ljava/io/File;
     .locals 1
-    .param p0    # Lcom/android/server/AlarmManagerServiceExt$SyncScheduler;
 
     iget-object v0, p0, Lcom/android/server/AlarmManagerServiceExt$SyncScheduler;->fileGmsBundlingState:Ljava/io/File;
 
@@ -719,7 +711,6 @@
 
 .method static synthetic access$300(Lcom/android/server/AlarmManagerServiceExt$SyncScheduler;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/server/AlarmManagerServiceExt$SyncScheduler;
 
     iget-object v0, p0, Lcom/android/server/AlarmManagerServiceExt$SyncScheduler;->mPermanentWhitelistPackages:Ljava/util/ArrayList;
 
@@ -728,7 +719,6 @@
 
 .method static synthetic access$400(Lcom/android/server/AlarmManagerServiceExt$SyncScheduler;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/server/AlarmManagerServiceExt$SyncScheduler;
 
     iget-object v0, p0, Lcom/android/server/AlarmManagerServiceExt$SyncScheduler;->mAdjustableRepeatingAlarms:Ljava/util/ArrayList;
 
@@ -737,7 +727,6 @@
 
 .method static synthetic access$500(Lcom/android/server/AlarmManagerServiceExt$SyncScheduler;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Lcom/android/server/AlarmManagerServiceExt$SyncScheduler;
 
     iget-object v0, p0, Lcom/android/server/AlarmManagerServiceExt$SyncScheduler;->mLockFgAct:Ljava/lang/Object;
 
@@ -746,9 +735,6 @@
 
 .method static synthetic access$600(Lcom/android/server/AlarmManagerServiceExt$SyncScheduler;IJ)V
     .locals 0
-    .param p0    # Lcom/android/server/AlarmManagerServiceExt$SyncScheduler;
-    .param p1    # I
-    .param p2    # J
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/server/AlarmManagerServiceExt$SyncScheduler;->updateRepeatingAlarmLocked(IJ)V
 
@@ -757,7 +743,6 @@
 
 .method static synthetic access$700(Lcom/android/server/AlarmManagerServiceExt$SyncScheduler;)I
     .locals 1
-    .param p0    # Lcom/android/server/AlarmManagerServiceExt$SyncScheduler;
 
     iget v0, p0, Lcom/android/server/AlarmManagerServiceExt$SyncScheduler;->mEmailUid:I
 
@@ -766,7 +751,6 @@
 
 .method static synthetic access$800(Lcom/android/server/AlarmManagerServiceExt$SyncScheduler;)I
     .locals 1
-    .param p0    # Lcom/android/server/AlarmManagerServiceExt$SyncScheduler;
 
     iget v0, p0, Lcom/android/server/AlarmManagerServiceExt$SyncScheduler;->mEmailPid:I
 
@@ -775,7 +759,6 @@
 
 .method static synthetic access$900(Lcom/android/server/AlarmManagerServiceExt$SyncScheduler;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Lcom/android/server/AlarmManagerServiceExt$SyncScheduler;
 
     iget-object v0, p0, Lcom/android/server/AlarmManagerServiceExt$SyncScheduler;->mAmsLock:Ljava/lang/Object;
 
@@ -784,7 +767,6 @@
 
 .method private addRepeatingAlarmLocked(Lcom/android/server/AlarmManagerServiceExt$AlarmExt;)V
     .locals 7
-    .param p1    # Lcom/android/server/AlarmManagerServiceExt$AlarmExt;
 
     iget-object v1, p0, Lcom/android/server/AlarmManagerServiceExt$SyncScheduler;->mAdjustableRepeatingAlarms:Ljava/util/ArrayList;
 
@@ -853,9 +835,6 @@
 
 .method private adjustAlarmTimeLocked(Lcom/android/server/AlarmManagerServiceExt$AlarmExt;JZ)V
     .locals 34
-    .param p1    # Lcom/android/server/AlarmManagerServiceExt$AlarmExt;
-    .param p2    # J
-    .param p4    # Z
 
     move-object/from16 v0, p1
 
@@ -1531,8 +1510,6 @@
 
 .method private calculateGcdOfRepeatIntervals(JJ)J
     .locals 8
-    .param p1    # J
-    .param p3    # J
 
     invoke-static {p3, p4}, Ljava/math/BigInteger;->valueOf(J)Ljava/math/BigInteger;
 
@@ -1584,7 +1561,6 @@
 
 .method private lookForPackageLocked(Ljava/util/ArrayList;Landroid/app/PendingIntent;)Z
     .locals 2
-    .param p2    # Landroid/app/PendingIntent;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1638,7 +1614,6 @@
 
 .method private lookForPackageLocked(Ljava/util/ArrayList;Ljava/lang/String;)Z
     .locals 2
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1696,7 +1671,6 @@
 
 .method private lookForTargetPackageLocked(Ljava/util/ArrayList;Ljava/lang/String;)Z
     .locals 1
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2134,7 +2108,6 @@
 
 .method private removeLocked(Ljava/util/ArrayList;I)Z
     .locals 5
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2203,7 +2176,6 @@
 
 .method private removeLocked(Ljava/util/ArrayList;Landroid/app/PendingIntent;)Z
     .locals 5
-    .param p2    # Landroid/app/PendingIntent;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2270,7 +2242,6 @@
 
 .method private removeLocked(Ljava/util/ArrayList;Ljava/lang/String;)Z
     .locals 5
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2341,9 +2312,6 @@
 
 .method private timeToNextRepeatingAlarmLocked(Landroid/app/PendingIntent;JZ)Lcom/android/server/AlarmManagerServiceExt$AlarmExt;
     .locals 33
-    .param p1    # Landroid/app/PendingIntent;
-    .param p2    # J
-    .param p4    # Z
 
     const-wide v17, 0x7fffffffffffffffL
 
@@ -2683,8 +2651,6 @@
 
 .method private updateRepeatingAlarmLocked(IJ)V
     .locals 19
-    .param p1    # I
-    .param p2    # J
 
     move-object/from16 v0, p0
 
@@ -2847,7 +2813,6 @@
 # virtual methods
 .method public doGarbageCollection(J)V
     .locals 21
-    .param p1    # J
 
     const/4 v8, 0x0
 
@@ -3447,8 +3412,6 @@
 
 .method public lookForNonAdjustableAlarm(Landroid/app/PendingIntent;J)Z
     .locals 10
-    .param p1    # Landroid/app/PendingIntent;
-    .param p2    # J
 
     const-wide/16 v8, 0x0
 
@@ -3575,7 +3538,6 @@
 
 .method public onAccountsUpdated([Landroid/accounts/Account;)V
     .locals 0
-    .param p1    # [Landroid/accounts/Account;
 
     invoke-direct {p0}, Lcom/android/server/AlarmManagerServiceExt$SyncScheduler;->queryAccounts()V
 
@@ -3584,7 +3546,6 @@
 
 .method public removeRepeatingAlarm(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/server/AlarmManagerServiceExt$SyncScheduler;->mLockExt:Ljava/lang/Object;
 
@@ -3632,7 +3593,6 @@
 
 .method public removeRepeatingAlarm(Landroid/app/PendingIntent;)V
     .locals 2
-    .param p1    # Landroid/app/PendingIntent;
 
     iget-object v1, p0, Lcom/android/server/AlarmManagerServiceExt$SyncScheduler;->mLockExt:Ljava/lang/Object;
 
@@ -3666,7 +3626,6 @@
 
 .method public removeRepeatingAlarm(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/server/AlarmManagerServiceExt$SyncScheduler;->mLockExt:Ljava/lang/Object;
 
@@ -3714,7 +3673,6 @@
 
 .method public schedulingRepeatingAlarms(Lcom/android/server/AlarmManagerService$Alarm;)J
     .locals 57
-    .param p1    # Lcom/android/server/AlarmManagerService$Alarm;
 
     :try_start_0
     move-object/from16 v0, p0
@@ -5738,9 +5696,6 @@
 
 .method public updateAlarmTriggerInfo(Landroid/app/PendingIntent;IJ)V
     .locals 4
-    .param p1    # Landroid/app/PendingIntent;
-    .param p2    # I
-    .param p3    # J
 
     iget-object v3, p0, Lcom/android/server/AlarmManagerServiceExt$SyncScheduler;->mLockExt:Ljava/lang/Object;
 
@@ -5820,9 +5775,6 @@
 
 .method public updateEmailSyncStatus(JJ[J)J
     .locals 6
-    .param p1    # J
-    .param p3    # J
-    .param p5    # [J
 
     iget-object v0, p0, Lcom/android/server/AlarmManagerServiceExt$SyncScheduler;->ta:Lcom/android/server/AlarmManagerServiceExt$SyncScheduler$TrafficAnalyzer;
 
@@ -5851,7 +5803,6 @@
 
 .method public updateExplicitRepeatingAlarms(Lcom/android/server/AlarmManagerService$Alarm;)Z
     .locals 3
-    .param p1    # Lcom/android/server/AlarmManagerService$Alarm;
 
     const/4 v0, 0x0
 
@@ -5880,7 +5831,6 @@
 
 .method public updateExplicitRepeatingAlarmsLocked(Lcom/android/server/AlarmManagerService$Alarm;)Z
     .locals 26
-    .param p1    # Lcom/android/server/AlarmManagerService$Alarm;
 
     const/4 v8, 0x0
 

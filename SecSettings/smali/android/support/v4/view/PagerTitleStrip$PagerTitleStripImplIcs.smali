@@ -30,7 +30,6 @@
 # virtual methods
 .method public setSingleLineAllCaps(Landroid/widget/TextView;)V
     .locals 0
-    .param p1    # Landroid/widget/TextView;
 
     invoke-static {p1}, Landroid/support/v4/view/PagerTitleStripIcs;->setSingleLineAllCaps(Landroid/widget/TextView;)V
 

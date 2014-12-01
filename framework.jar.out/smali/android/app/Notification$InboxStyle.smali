@@ -46,7 +46,6 @@
 
 .method public constructor <init>(Landroid/app/Notification$Builder;)V
     .locals 2
-    .param p1    # Landroid/app/Notification$Builder;
 
     invoke-direct {p0}, Landroid/app/Notification$Style;-><init>()V
 
@@ -218,7 +217,6 @@
 # virtual methods
 .method public addExtras(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Notification$Style;->addExtras(Landroid/os/Bundle;)V
 
@@ -247,7 +245,6 @@
 
 .method public addLine(Ljava/lang/CharSequence;)Landroid/app/Notification$InboxStyle;
     .locals 2
-    .param p1    # Ljava/lang/CharSequence;
 
     iget-object v0, p0, Landroid/app/Notification$InboxStyle;->mTexts:Ljava/util/ArrayList;
 
@@ -262,7 +259,6 @@
 
 .method public buildStyled(Landroid/app/Notification;)Landroid/app/Notification;
     .locals 1
-    .param p1    # Landroid/app/Notification;
 
     invoke-direct {p0}, Landroid/app/Notification$InboxStyle;->makeBigContentView()Landroid/widget/RemoteViews;
 
@@ -275,7 +271,6 @@
 
 .method public setBigContentTitle(Ljava/lang/CharSequence;)Landroid/app/Notification$InboxStyle;
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
 
     invoke-static {p1}, Landroid/app/Notification;->safeCharSequence(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
 
@@ -288,7 +283,6 @@
 
 .method public setSummaryText(Ljava/lang/CharSequence;)Landroid/app/Notification$InboxStyle;
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
 
     invoke-static {p1}, Landroid/app/Notification;->safeCharSequence(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
 

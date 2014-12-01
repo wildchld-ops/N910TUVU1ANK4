@@ -35,7 +35,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/AssistiveHapticSettings;)V
     .locals 0
-    .param p0    # Lcom/android/settings/AssistiveHapticSettings;
 
     invoke-direct {p0}, Lcom/android/settings/AssistiveHapticSettings;->updateState()V
 
@@ -79,7 +78,6 @@
 # virtual methods
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 8
-    .param p1    # Landroid/os/Bundle;
 
     const/16 v6, 0x10
 
@@ -172,8 +170,6 @@
 
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 3
-    .param p1    # Landroid/widget/CompoundButton;
-    .param p2    # Z
 
     const-string v0, "AssistiveHapticSettings"
 
@@ -220,7 +216,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v1, 0x1
 
@@ -304,8 +299,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 3
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     iget-object v0, p0, Lcom/android/settings/AssistiveHapticSettings;->mExtraHapticFeedback:Landroid/preference/CheckBoxPreference;
 

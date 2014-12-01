@@ -177,7 +177,6 @@
 
 .method constructor <init>(Landroid/bluetooth/IBluetoothManager;)V
     .locals 3
-    .param p1    # Landroid/bluetooth/IBluetoothManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -264,7 +263,6 @@
 
 .method static synthetic access$200(Landroid/bluetooth/BluetoothAdapter;)Landroid/bluetooth/IBluetoothManagerCallback;
     .locals 1
-    .param p0    # Landroid/bluetooth/BluetoothAdapter;
 
     iget-object v0, p0, Landroid/bluetooth/BluetoothAdapter;->mManagerCallback:Landroid/bluetooth/IBluetoothManagerCallback;
 
@@ -273,8 +271,6 @@
 
 .method static synthetic access$302(Landroid/bluetooth/BluetoothAdapter;Landroid/bluetooth/IBluetooth;)Landroid/bluetooth/IBluetooth;
     .locals 0
-    .param p0    # Landroid/bluetooth/BluetoothAdapter;
-    .param p1    # Landroid/bluetooth/IBluetooth;
 
     iput-object p1, p0, Landroid/bluetooth/BluetoothAdapter;->mService:Landroid/bluetooth/IBluetooth;
 
@@ -283,7 +279,6 @@
 
 .method static synthetic access$400(Landroid/bluetooth/BluetoothAdapter;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Landroid/bluetooth/BluetoothAdapter;
 
     iget-object v0, p0, Landroid/bluetooth/BluetoothAdapter;->mProxyServiceStateCallbacks:Ljava/util/ArrayList;
 
@@ -292,8 +287,6 @@
 
 .method static synthetic access$502(Landroid/bluetooth/BluetoothAdapter;Landroid/bluetooth/BluetoothAdvScanData;)Landroid/bluetooth/BluetoothAdvScanData;
     .locals 0
-    .param p0    # Landroid/bluetooth/BluetoothAdapter;
-    .param p1    # Landroid/bluetooth/BluetoothAdvScanData;
 
     iput-object p1, p0, Landroid/bluetooth/BluetoothAdapter;->mBluetoothAdvScanData:Landroid/bluetooth/BluetoothAdvScanData;
 
@@ -302,8 +295,6 @@
 
 .method static synthetic access$602(Landroid/bluetooth/BluetoothAdapter;Landroid/bluetooth/BluetoothAdapter$GattCallbackWrapper;)Landroid/bluetooth/BluetoothAdapter$GattCallbackWrapper;
     .locals 0
-    .param p0    # Landroid/bluetooth/BluetoothAdapter;
-    .param p1    # Landroid/bluetooth/BluetoothAdapter$GattCallbackWrapper;
 
     iput-object p1, p0, Landroid/bluetooth/BluetoothAdapter;->mAdvertisingGattCallback:Landroid/bluetooth/BluetoothAdapter$GattCallbackWrapper;
 
@@ -312,7 +303,6 @@
 
 .method public static checkBluetoothAddress(Ljava/lang/String;)Z
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     const/16 v4, 0x11
 
@@ -394,10 +384,6 @@
 
 .method private createNewRfcommSocketAndRecord(Ljava/lang/String;Ljava/util/UUID;ZZ)Landroid/bluetooth/BluetoothServerSocket;
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/util/UUID;
-    .param p3    # Z
-    .param p4    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -544,12 +530,6 @@
 
 .method private startLeScan([Ljava/util/UUID;Landroid/bluetooth/BluetoothAdapter$LeScanCallback;IIZZ)Z
     .locals 12
-    .param p1    # [Ljava/util/UUID;
-    .param p2    # Landroid/bluetooth/BluetoothAdapter$LeScanCallback;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Z
-    .param p6    # Z
 
     if-nez p2, :cond_0
 
@@ -692,7 +672,6 @@
 
 .method private toDeviceSet([Landroid/bluetooth/BluetoothDevice;)Ljava/util/Set;
     .locals 2
-    .param p1    # [Landroid/bluetooth/BluetoothDevice;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([",
@@ -794,8 +773,6 @@
 
 .method public changeApplicationBluetoothState(ZLandroid/bluetooth/BluetoothAdapter$BluetoothStateChangeCallback;)Z
     .locals 1
-    .param p1    # Z
-    .param p2    # Landroid/bluetooth/BluetoothAdapter$BluetoothStateChangeCallback;
 
     const/4 v0, 0x0
 
@@ -849,8 +826,6 @@
 
 .method public closeProfileProxy(ILandroid/bluetooth/BluetoothProfile;)V
     .locals 8
-    .param p1    # I
-    .param p2    # Landroid/bluetooth/BluetoothProfile;
 
     if-nez p2, :cond_0
 
@@ -953,7 +928,6 @@
 
 .method public configHciSnoopLog(Z)Z
     .locals 3
-    .param p1    # Z
 
     :try_start_0
     iget-object v2, p0, Landroid/bluetooth/BluetoothAdapter;->mManagerCallback:Landroid/bluetooth/IBluetoothManagerCallback;
@@ -1012,10 +986,6 @@
 
 .method public createVendorHciSocket(IIII)Landroid/bluetooth/BluetoothSocket;
     .locals 8
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1094,7 +1064,6 @@
 
 .method public disable(Z)Z
     .locals 3
-    .param p1    # Z
 
     :try_start_0
     iget-object v1, p0, Landroid/bluetooth/BluetoothAdapter;->mManagerService:Landroid/bluetooth/IBluetoothManager;
@@ -1168,7 +1137,6 @@
 
 .method public dutModeConfigure(Z)Z
     .locals 4
-    .param p1    # Z
 
     const/4 v1, 0x0
 
@@ -1508,7 +1476,6 @@
 
 .method getBluetoothService(Landroid/bluetooth/IBluetoothManagerCallback;)Landroid/bluetooth/IBluetooth;
     .locals 3
-    .param p1    # Landroid/bluetooth/IBluetoothManagerCallback;
 
     iget-object v1, p0, Landroid/bluetooth/BluetoothAdapter;->mManagerCallback:Landroid/bluetooth/IBluetoothManagerCallback;
 
@@ -1862,7 +1829,6 @@
 
 .method public getProfileConnectionState(I)I
     .locals 4
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -1933,9 +1899,6 @@
 
 .method public getProfileProxy(Landroid/content/Context;Landroid/bluetooth/BluetoothProfile$ServiceListener;I)Z
     .locals 9
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/bluetooth/BluetoothProfile$ServiceListener;
-    .param p3    # I
 
     const/4 v7, 0x0
 
@@ -2023,7 +1986,6 @@
 
 .method public getRemoteDevice(Ljava/lang/String;)Landroid/bluetooth/BluetoothDevice;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Landroid/bluetooth/BluetoothDevice;
 
@@ -2034,7 +1996,6 @@
 
 .method public getRemoteDevice([B)Landroid/bluetooth/BluetoothDevice;
     .locals 10
-    .param p1    # [B
 
     const/4 v9, 0x4
 
@@ -2599,9 +2560,6 @@
 
 .method public leTestMode(III)Z
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v1, 0x0
 
@@ -2672,7 +2630,6 @@
 
 .method public listenUsingEncryptedRfcommOn(I)Landroid/bluetooth/BluetoothServerSocket;
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -2725,8 +2682,6 @@
 
 .method public listenUsingEncryptedRfcommWithServiceRecord(Ljava/lang/String;Ljava/util/UUID;)Landroid/bluetooth/BluetoothServerSocket;
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/util/UUID;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -2746,7 +2701,6 @@
 
 .method public listenUsingInsecureRfcommOn(I)Landroid/bluetooth/BluetoothServerSocket;
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -2799,8 +2753,6 @@
 
 .method public listenUsingInsecureRfcommWithServiceRecord(Ljava/lang/String;Ljava/util/UUID;)Landroid/bluetooth/BluetoothServerSocket;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/util/UUID;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -2818,7 +2770,6 @@
 
 .method public listenUsingRfcommOn(I)Landroid/bluetooth/BluetoothServerSocket;
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -2869,8 +2820,6 @@
 
 .method public listenUsingRfcommWithServiceRecord(Ljava/lang/String;Ljava/util/UUID;)Landroid/bluetooth/BluetoothServerSocket;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/util/UUID;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -2888,7 +2837,6 @@
 
 .method public putLogs(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Landroid/bluetooth/BluetoothAdapter;->mManagerService:Landroid/bluetooth/IBluetoothManager;
 
@@ -3021,7 +2969,6 @@
 
 .method removeServiceStateCallback(Landroid/bluetooth/IBluetoothManagerCallback;)V
     .locals 2
-    .param p1    # Landroid/bluetooth/IBluetoothManagerCallback;
 
     iget-object v1, p0, Landroid/bluetooth/BluetoothAdapter;->mManagerCallback:Landroid/bluetooth/IBluetoothManagerCallback;
 
@@ -3048,7 +2995,6 @@
 
 .method public selectBTAntenna(I)I
     .locals 4
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -3119,9 +3065,6 @@
 
 .method public sendVsc(I[BI)I
     .locals 4
-    .param p1    # I
-    .param p2    # [B
-    .param p3    # I
 
     const/4 v1, 0x0
 
@@ -3192,7 +3135,6 @@
 
 .method public setAvStreaming(Z)Z
     .locals 4
-    .param p1    # Z
 
     const/4 v3, 0x0
 
@@ -3233,7 +3175,6 @@
 
 .method public setBleAdvEvtType(I)Z
     .locals 4
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -3304,7 +3245,6 @@
 
 .method public setDiscoverableTimeout(I)V
     .locals 3
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/bluetooth/BluetoothAdapter;->getState()I
 
@@ -3365,7 +3305,6 @@
 
 .method public setName(Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -3436,7 +3375,6 @@
 
 .method public setScanMode(I)Z
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/bluetooth/BluetoothAdapter;->getState()I
 
@@ -3465,8 +3403,6 @@
 
 .method public setScanMode(II)Z
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     const/4 v1, 0x0
 
@@ -3537,9 +3473,6 @@
 
 .method public setScanParams(IIZ)Z
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     const/4 v2, 0x0
 
@@ -3633,8 +3566,6 @@
 
 .method public setSdpRecord(ZI)Z
     .locals 4
-    .param p1    # Z
-    .param p2    # I
 
     const/4 v1, 0x0
 
@@ -3736,7 +3667,6 @@
 
 .method public sspDebugConfigure(Z)Z
     .locals 4
-    .param p1    # Z
 
     const/4 v1, 0x0
 
@@ -3807,7 +3737,6 @@
 
 .method public startAdvertising(Landroid/bluetooth/BluetoothAdapter$AdvertiseCallback;)Z
     .locals 8
-    .param p1    # Landroid/bluetooth/BluetoothAdapter$AdvertiseCallback;
 
     const/4 v5, 0x1
 
@@ -4103,10 +4032,6 @@
 
 .method public startLeScan(IIZLandroid/bluetooth/BluetoothAdapter$LeScanCallback;)Z
     .locals 7
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # Landroid/bluetooth/BluetoothAdapter$LeScanCallback;
 
     if-le p2, p1, :cond_0
 
@@ -4145,7 +4070,6 @@
 
 .method public startLeScan(Landroid/bluetooth/BluetoothAdapter$LeScanCallback;)Z
     .locals 1
-    .param p1    # Landroid/bluetooth/BluetoothAdapter$LeScanCallback;
 
     const/4 v0, 0x0
 
@@ -4158,11 +4082,6 @@
 
 .method public startLeScan([Ljava/util/UUID;IIZLandroid/bluetooth/BluetoothAdapter$LeScanCallback;)Z
     .locals 7
-    .param p1    # [Ljava/util/UUID;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Z
-    .param p5    # Landroid/bluetooth/BluetoothAdapter$LeScanCallback;
 
     if-le p3, p2, :cond_0
 
@@ -4201,8 +4120,6 @@
 
 .method public startLeScan([Ljava/util/UUID;Landroid/bluetooth/BluetoothAdapter$LeScanCallback;)Z
     .locals 7
-    .param p1    # [Ljava/util/UUID;
-    .param p2    # Landroid/bluetooth/BluetoothAdapter$LeScanCallback;
 
     const/4 v3, 0x0
 
@@ -4249,7 +4166,6 @@
 
 .method public stopAdvertising(Landroid/bluetooth/BluetoothAdapter$AdvertiseCallback;)Z
     .locals 5
-    .param p1    # Landroid/bluetooth/BluetoothAdapter$AdvertiseCallback;
 
     const/4 v2, 0x0
 
@@ -4316,7 +4232,6 @@
 
 .method public stopLeScan(Landroid/bluetooth/BluetoothAdapter$LeScanCallback;)V
     .locals 3
-    .param p1    # Landroid/bluetooth/BluetoothAdapter$LeScanCallback;
 
     const-string v1, "BluetoothAdapter"
 

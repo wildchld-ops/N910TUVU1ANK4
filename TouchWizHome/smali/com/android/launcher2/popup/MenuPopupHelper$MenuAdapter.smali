@@ -25,7 +25,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/launcher2/popup/MenuPopupHelper;Lcom/android/launcher2/popup/MenuBuilder;)V
     .locals 2
-    .param p2    # Lcom/android/launcher2/popup/MenuBuilder;
 
     iput-object p1, p0, Lcom/android/launcher2/popup/MenuPopupHelper$MenuAdapter;->this$0:Lcom/android/launcher2/popup/MenuPopupHelper;
 
@@ -52,7 +51,6 @@
 
 .method static synthetic access$000(Lcom/android/launcher2/popup/MenuPopupHelper$MenuAdapter;)Lcom/android/launcher2/popup/MenuBuilder;
     .locals 1
-    .param p0    # Lcom/android/launcher2/popup/MenuPopupHelper$MenuAdapter;
 
     iget-object v0, p0, Lcom/android/launcher2/popup/MenuPopupHelper$MenuAdapter;->mAdapterMenu:Lcom/android/launcher2/popup/MenuBuilder;
 
@@ -174,7 +172,6 @@
 
 .method public getItem(I)Lcom/android/launcher2/popup/MenuItemImpl;
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/launcher2/popup/MenuPopupHelper$MenuAdapter;->this$0:Lcom/android/launcher2/popup/MenuPopupHelper;
 
@@ -223,7 +220,6 @@
 
 .method public bridge synthetic getItem(I)Ljava/lang/Object;
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/launcher2/popup/MenuPopupHelper$MenuAdapter;->getItem(I)Lcom/android/launcher2/popup/MenuItemImpl;
 
@@ -234,7 +230,6 @@
 
 .method public getItemId(I)J
     .locals 2
-    .param p1    # I
 
     int-to-long v0, p1
 
@@ -243,9 +238,6 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     const/4 v3, 0x0
 

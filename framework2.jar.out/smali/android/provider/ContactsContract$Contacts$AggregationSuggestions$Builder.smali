@@ -67,8 +67,6 @@
 # virtual methods
 .method public addParameter(Ljava/lang/String;Ljava/lang/String;)Landroid/provider/ContactsContract$Contacts$AggregationSuggestions$Builder;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-static {p2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -191,7 +189,6 @@
 
 .method public setContactId(J)Landroid/provider/ContactsContract$Contacts$AggregationSuggestions$Builder;
     .locals 0
-    .param p1    # J
 
     iput-wide p1, p0, Landroid/provider/ContactsContract$Contacts$AggregationSuggestions$Builder;->mContactId:J
 
@@ -200,7 +197,6 @@
 
 .method public setLimit(I)Landroid/provider/ContactsContract$Contacts$AggregationSuggestions$Builder;
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/provider/ContactsContract$Contacts$AggregationSuggestions$Builder;->mLimit:I
 

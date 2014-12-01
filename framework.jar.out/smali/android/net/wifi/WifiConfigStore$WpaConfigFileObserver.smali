@@ -37,8 +37,6 @@
 # virtual methods
 .method public onEvent(ILjava/lang/String;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/16 v1, 0x8
 

@@ -30,7 +30,6 @@
 # direct methods
 .method public constructor <init>(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     const/4 v1, 0x2
 
@@ -63,7 +62,6 @@
 # virtual methods
 .method public onInterceptTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 17
-    .param p1    # Landroid/view/MotionEvent;
 
     move-object/from16 v0, p0
 
@@ -444,7 +442,6 @@
 
 .method public setBar(Lcom/android/systemui/statusbar/BaseStatusBar;)V
     .locals 0
-    .param p1    # Lcom/android/systemui/statusbar/BaseStatusBar;
 
     iput-object p1, p0, Lcom/android/systemui/statusbar/DelegateViewHelper;->mBar:Lcom/android/systemui/statusbar/BaseStatusBar;
 
@@ -453,7 +450,6 @@
 
 .method public setDelegateView(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     iput-object p1, p0, Lcom/android/systemui/statusbar/DelegateViewHelper;->mDelegateView:Landroid/view/View;
 
@@ -462,7 +458,6 @@
 
 .method public setDisabled(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/systemui/statusbar/DelegateViewHelper;->mDisabled:Z
 
@@ -471,7 +466,6 @@
 
 .method public varargs setInitialTouchRegion([Landroid/view/View;)V
     .locals 11
-    .param p1    # [Landroid/view/View;
 
     const/4 v10, 0x1
 
@@ -581,7 +575,6 @@
 
 .method public setSourceView(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     iput-object p1, p0, Lcom/android/systemui/statusbar/DelegateViewHelper;->mSourceView:Landroid/view/View;
 
@@ -613,7 +606,6 @@
 
 .method public setSwapXY(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/systemui/statusbar/DelegateViewHelper;->mSwapXY:Z
 

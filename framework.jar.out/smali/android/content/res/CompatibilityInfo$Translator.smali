@@ -43,8 +43,6 @@
 
 .method constructor <init>(Landroid/content/res/CompatibilityInfo;FF)V
     .locals 1
-    .param p2    # F
-    .param p3    # F
 
     const/4 v0, 0x0
 
@@ -69,7 +67,6 @@
 # virtual methods
 .method public getTranslatedContentInsets(Landroid/graphics/Rect;)Landroid/graphics/Rect;
     .locals 1
-    .param p1    # Landroid/graphics/Rect;
 
     iget-object v0, p0, Landroid/content/res/CompatibilityInfo$Translator;->mContentInsetsBuffer:Landroid/graphics/Rect;
 
@@ -97,7 +94,6 @@
 
 .method public getTranslatedTouchableArea(Landroid/graphics/Region;)Landroid/graphics/Region;
     .locals 2
-    .param p1    # Landroid/graphics/Region;
 
     iget-object v0, p0, Landroid/content/res/CompatibilityInfo$Translator;->mTouchableAreaBuffer:Landroid/graphics/Region;
 
@@ -127,7 +123,6 @@
 
 .method public getTranslatedVisibleInsets(Landroid/graphics/Rect;)Landroid/graphics/Rect;
     .locals 1
-    .param p1    # Landroid/graphics/Rect;
 
     iget-object v0, p0, Landroid/content/res/CompatibilityInfo$Translator;->mVisibleInsetsBuffer:Landroid/graphics/Rect;
 
@@ -155,7 +150,6 @@
 
 .method public translateCanvas(Landroid/graphics/Canvas;)V
     .locals 4
-    .param p1    # Landroid/graphics/Canvas;
 
     const v3, 0x3b2b5601
 
@@ -183,7 +177,6 @@
 
 .method public translateEventInScreenToAppWindow(Landroid/view/MotionEvent;)V
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     iget v0, p0, Landroid/content/res/CompatibilityInfo$Translator;->applicationInvertedScale:F
 
@@ -194,7 +187,6 @@
 
 .method public translateLayoutParamsInAppWindowToScreen(Landroid/view/WindowManager$LayoutParams;)V
     .locals 1
-    .param p1    # Landroid/view/WindowManager$LayoutParams;
 
     iget v0, p0, Landroid/content/res/CompatibilityInfo$Translator;->applicationScale:F
 
@@ -205,7 +197,6 @@
 
 .method public translatePointInScreenToAppWindow(Landroid/graphics/PointF;)V
     .locals 2
-    .param p1    # Landroid/graphics/PointF;
 
     iget v0, p0, Landroid/content/res/CompatibilityInfo$Translator;->applicationInvertedScale:F
 
@@ -233,7 +224,6 @@
 
 .method public translateRectInAppWindowToScreen(Landroid/graphics/Rect;)V
     .locals 1
-    .param p1    # Landroid/graphics/Rect;
 
     iget v0, p0, Landroid/content/res/CompatibilityInfo$Translator;->applicationScale:F
 
@@ -244,7 +234,6 @@
 
 .method public translateRectInScreenToAppWinFrame(Landroid/graphics/Rect;)V
     .locals 1
-    .param p1    # Landroid/graphics/Rect;
 
     iget v0, p0, Landroid/content/res/CompatibilityInfo$Translator;->applicationInvertedScale:F
 
@@ -255,7 +244,6 @@
 
 .method public translateRectInScreenToAppWindow(Landroid/graphics/Rect;)V
     .locals 1
-    .param p1    # Landroid/graphics/Rect;
 
     iget v0, p0, Landroid/content/res/CompatibilityInfo$Translator;->applicationInvertedScale:F
 
@@ -266,7 +254,6 @@
 
 .method public translateRegionInWindowToScreen(Landroid/graphics/Region;)V
     .locals 1
-    .param p1    # Landroid/graphics/Region;
 
     iget v0, p0, Landroid/content/res/CompatibilityInfo$Translator;->applicationScale:F
 
@@ -277,7 +264,6 @@
 
 .method public translateWindowLayout(Landroid/view/WindowManager$LayoutParams;)V
     .locals 1
-    .param p1    # Landroid/view/WindowManager$LayoutParams;
 
     iget v0, p0, Landroid/content/res/CompatibilityInfo$Translator;->applicationScale:F
 

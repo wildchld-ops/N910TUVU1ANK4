@@ -55,9 +55,6 @@
 # direct methods
 .method constructor <init>(ILandroid/content/pm/ActivityInfo;Landroid/content/Intent;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/content/pm/ActivityInfo;
-    .param p3    # Landroid/content/Intent;
 
     invoke-direct {p0}, Lcom/android/server/am/ThumbnailHolder;-><init>()V
 
@@ -86,7 +83,6 @@
 # virtual methods
 .method addActivityAtBottom(Lcom/android/server/am/ActivityRecord;)V
     .locals 1
-    .param p1    # Lcom/android/server/am/ActivityRecord;
 
     const/4 v0, 0x0
 
@@ -97,8 +93,6 @@
 
 .method addActivityAtIndex(ILcom/android/server/am/ActivityRecord;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Lcom/android/server/am/ActivityRecord;
 
     iget-object v0, p0, Lcom/android/server/am/TaskRecord;->stack:Lcom/android/server/am/ActivityStack;
 
@@ -165,7 +159,6 @@
 
 .method addActivityToTop(Lcom/android/server/am/ActivityRecord;)V
     .locals 5
-    .param p1    # Lcom/android/server/am/ActivityRecord;
 
     const/4 v4, 0x0
 
@@ -278,8 +271,6 @@
 
 .method dump(Ljava/io/PrintWriter;Ljava/lang/String;)V
     .locals 8
-    .param p1    # Ljava/io/PrintWriter;
-    .param p2    # Ljava/lang/String;
 
     const/16 v7, 0x80
 
@@ -563,7 +554,6 @@
 
 .method final findActivityInHistoryLocked(Lcom/android/server/am/ActivityRecord;)Lcom/android/server/am/ActivityRecord;
     .locals 4
-    .param p1    # Lcom/android/server/am/ActivityRecord;
 
     iget-object v2, p1, Lcom/android/server/am/ActivityRecord;->realActivity:Landroid/content/ComponentName;
 
@@ -629,7 +619,6 @@
 
 .method public getTaskAccessInfoLocked(Z)Lcom/android/server/am/TaskAccessInfo;
     .locals 8
-    .param p1    # Z
 
     new-instance v6, Lcom/android/server/am/TaskAccessInfo;
 
@@ -984,7 +973,6 @@
 
 .method final moveActivityToFrontLocked(Lcom/android/server/am/ActivityRecord;)V
     .locals 1
-    .param p1    # Lcom/android/server/am/ActivityRecord;
 
     iget-object v0, p0, Lcom/android/server/am/TaskRecord;->mActivities:Ljava/util/ArrayList;
 
@@ -1001,7 +989,6 @@
 
 .method final performClearTaskAtIndexLocked(I)V
     .locals 1
-    .param p1    # I
 
     const-string v0, "clear"
 
@@ -1012,8 +999,6 @@
 
 .method final performClearTaskAtIndexLocked(ILjava/lang/String;)V
     .locals 7
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -1071,8 +1056,6 @@
 
 .method final performClearTaskLocked(Lcom/android/server/am/ActivityRecord;I)Lcom/android/server/am/ActivityRecord;
     .locals 12
-    .param p1    # Lcom/android/server/am/ActivityRecord;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/server/am/TaskRecord;->mActivities:Ljava/util/ArrayList;
 
@@ -1223,7 +1206,6 @@
 
 .method removeActivity(Lcom/android/server/am/ActivityRecord;)Z
     .locals 1
-    .param p1    # Lcom/android/server/am/ActivityRecord;
 
     iget-object v0, p0, Lcom/android/server/am/TaskRecord;->mActivities:Ljava/util/ArrayList;
 
@@ -1283,8 +1265,6 @@
 
 .method public removeTaskActivitiesLocked(IZ)Lcom/android/server/am/ActivityRecord;
     .locals 6
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v2, 0x0
 
@@ -1449,8 +1429,6 @@
 
 .method setIntent(Landroid/content/Intent;Landroid/content/pm/ActivityInfo;)V
     .locals 6
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Landroid/content/pm/ActivityInfo;
 
     const/high16 v5, 0x8000000
 
@@ -1615,7 +1593,6 @@
 
 .method public setOnTopOfHome(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/server/am/TaskRecord;->stack:Lcom/android/server/am/ActivityStack;
 
@@ -1640,7 +1617,6 @@
 
 .method setType(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/am/TaskRecord;->mTaskType:I
 
@@ -1799,7 +1775,6 @@
 
 .method topRunningActivityLocked(Lcom/android/server/am/ActivityRecord;)Lcom/android/server/am/ActivityRecord;
     .locals 3
-    .param p1    # Lcom/android/server/am/ActivityRecord;
 
     iget-object v2, p0, Lcom/android/server/am/TaskRecord;->mActivities:Ljava/util/ArrayList;
 

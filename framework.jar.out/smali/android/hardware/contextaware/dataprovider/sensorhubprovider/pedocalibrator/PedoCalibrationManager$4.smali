@@ -36,7 +36,6 @@
 # virtual methods
 .method public debugPedoCalib(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/hardware/contextaware/dataprovider/sensorhubprovider/pedocalibrator/PedoCalibrationManager$4;->this$0:Landroid/hardware/contextaware/dataprovider/sensorhubprovider/pedocalibrator/PedoCalibrationManager;
 
@@ -48,8 +47,6 @@
 
 .method public onPedoCalibCalcCompleted(DI)V
     .locals 3
-    .param p1    # D
-    .param p3    # I
 
     iget-object v0, p0, Landroid/hardware/contextaware/dataprovider/sensorhubprovider/pedocalibrator/PedoCalibrationManager$4;->this$0:Landroid/hardware/contextaware/dataprovider/sensorhubprovider/pedocalibrator/PedoCalibrationManager;
 
@@ -121,7 +118,6 @@
 
 .method public onPedoCalibStatus(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method

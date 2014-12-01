@@ -23,7 +23,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/enterprise/log/FileLogger;Landroid/os/Looper;)V
     .locals 2
-    .param p2    # Landroid/os/Looper;
 
     iput-object p1, p0, Lcom/android/server/enterprise/log/FileLogger$FileLoggerHandler;->this$0:Lcom/android/server/enterprise/log/FileLogger;
 
@@ -44,7 +43,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 8
-    .param p1    # Landroid/os/Message;
 
     iget v5, p1, Landroid/os/Message;->what:I
 

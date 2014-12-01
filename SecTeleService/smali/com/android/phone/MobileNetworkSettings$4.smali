@@ -119,7 +119,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v2, v3}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v2, v3}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     :cond_2
     :goto_0
@@ -130,7 +130,7 @@
 
     const-string v5, "enterprise_policy"
 
-    invoke-virtual {v4, v5}, Landroid/app/Activity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v4, v5}, Lcom/android/phone/MobileNetworkSettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -175,7 +175,7 @@
     if-eqz v5, :cond_4
 
     :goto_1
-    invoke-virtual {v4, v2}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v4, v2}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     goto :goto_0
 
@@ -210,7 +210,7 @@
 
     iget-object v2, p0, Lcom/android/phone/MobileNetworkSettings$4;->this$0:Lcom/android/phone/MobileNetworkSettings;
 
-    invoke-virtual {v2}, Landroid/app/Activity;->finish()V
+    invoke-virtual {v2}, Lcom/android/phone/MobileNetworkSettings;->finish()V
 
     goto :goto_0
 .end method

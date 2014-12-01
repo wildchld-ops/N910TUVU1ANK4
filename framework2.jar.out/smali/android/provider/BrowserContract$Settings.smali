@@ -51,7 +51,6 @@
 
 .method public static isSyncEnabled(Landroid/content/Context;)Z
     .locals 11
-    .param p0    # Landroid/content/Context;
 
     const/4 v8, 0x1
 
@@ -165,8 +164,6 @@
 
 .method public static setSyncEnabled(Landroid/content/Context;Z)V
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
 
     new-instance v0, Landroid/content/ContentValues;
 

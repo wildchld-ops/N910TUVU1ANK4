@@ -30,8 +30,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/connectivity/VpnNamespace;Ljava/lang/String;Lcom/android/server/connectivity/Vpn;)V
     .locals 1
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/android/server/connectivity/Vpn;
 
     iput-object p1, p0, Lcom/android/server/connectivity/VpnNamespace$TunnelMonitorThread;->this$0:Lcom/android/server/connectivity/VpnNamespace;
 
@@ -50,7 +48,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)Z
     .locals 5
-    .param p1    # Landroid/os/Message;
 
     if-eqz p1, :cond_0
 

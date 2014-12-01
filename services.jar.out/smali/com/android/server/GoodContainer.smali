@@ -126,7 +126,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Lcom/android/server/SEAMSContainer;-><init>()V
 
@@ -155,7 +154,6 @@
 # virtual methods
 .method public activateDomain(I)I
     .locals 23
-    .param p1    # I
 
     invoke-virtual/range {p0 .. p0}, Lcom/android/server/GoodContainer;->getActivationStatus()I
 
@@ -1356,10 +1354,6 @@
 
 .method public addAppToContainer(Ljava/lang/String;[Ljava/lang/String;II)I
     .locals 15
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
 
     const/4 v12, 0x0
 
@@ -1818,7 +1812,6 @@
 
 .method public deActivateDomain(I)I
     .locals 18
-    .param p1    # I
 
     invoke-virtual/range {p0 .. p0}, Lcom/android/server/GoodContainer;->getActivationStatus()I
 
@@ -3213,8 +3206,6 @@
 
 .method public getPackageNamesFromSEContainer(II)[Ljava/lang/String;
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     const/4 v1, 0x1
 
@@ -3250,12 +3241,6 @@
 
 .method protected getSEAppContextLine(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # I
 
     if-nez p1, :cond_0
 
@@ -3315,8 +3300,6 @@
 
 .method public getSEContainerIDsFromPackageName(Ljava/lang/String;I)[I
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v4, 0x1
 
@@ -3374,10 +3357,6 @@
 
 .method public removeAppFromContainer(Ljava/lang/String;[Ljava/lang/String;II)I
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
 
     const/4 v0, 0x0
 

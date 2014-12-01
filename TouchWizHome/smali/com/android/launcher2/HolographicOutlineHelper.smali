@@ -248,7 +248,6 @@
 
 .method public static highlightAlphaInterpolator(F)F
     .locals 5
-    .param p0    # F
 
     const v0, 0x3f19999a
 
@@ -292,7 +291,6 @@
 
 .method public static viewAlphaInterpolator(F)F
     .locals 5
-    .param p0    # F
 
     const v2, 0x3f733333
 
@@ -327,11 +325,6 @@
 # virtual methods
 .method applyExpensiveOutlineWithBlur(Landroid/graphics/Bitmap;Landroid/graphics/Canvas;III)V
     .locals 7
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # Landroid/graphics/Canvas;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     iget-object v5, p0, Lcom/android/launcher2/HolographicOutlineHelper;->mAlphaClipPaint:Landroid/graphics/Paint;
 
@@ -354,12 +347,6 @@
 
 .method applyExpensiveOutlineWithBlur(Landroid/graphics/Bitmap;Landroid/graphics/Canvas;IILandroid/graphics/Paint;I)V
     .locals 17
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # Landroid/graphics/Canvas;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Landroid/graphics/Paint;
-    .param p6    # I
 
     if-nez p5, :cond_0
 
@@ -721,10 +708,6 @@
 
 .method applyExtraThickExpensiveOutlineWithBlur(Landroid/graphics/Bitmap;Landroid/graphics/Canvas;II)V
     .locals 6
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # Landroid/graphics/Canvas;
-    .param p3    # I
-    .param p4    # I
 
     const/4 v5, 0x2
 
@@ -745,10 +728,6 @@
 
 .method applyMediumExpensiveOutlineWithBlur(Landroid/graphics/Bitmap;Landroid/graphics/Canvas;II)V
     .locals 6
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # Landroid/graphics/Canvas;
-    .param p3    # I
-    .param p4    # I
 
     const/4 v5, 0x1
 
@@ -769,11 +748,6 @@
 
 .method applyMediumExpensiveOutlineWithBlur(Landroid/graphics/Bitmap;Landroid/graphics/Canvas;IILandroid/graphics/Paint;)V
     .locals 7
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # Landroid/graphics/Canvas;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Landroid/graphics/Paint;
 
     const/4 v6, 0x1
 
@@ -796,9 +770,6 @@
 
 .method applyOuterBlur(Landroid/graphics/Bitmap;Landroid/graphics/Canvas;I)V
     .locals 4
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # Landroid/graphics/Canvas;
-    .param p3    # I
 
     iget-object v1, p0, Lcom/android/launcher2/HolographicOutlineHelper;->mBlurPaint:Landroid/graphics/Paint;
 
@@ -857,10 +828,6 @@
 
 .method applyThickExpensiveOutlineWithBlur(Landroid/graphics/Bitmap;Landroid/graphics/Canvas;II)V
     .locals 6
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # Landroid/graphics/Canvas;
-    .param p3    # I
-    .param p4    # I
 
     const/4 v5, 0x0
 

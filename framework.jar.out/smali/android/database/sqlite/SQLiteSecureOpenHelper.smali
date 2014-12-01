@@ -44,10 +44,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Ljava/lang/String;Landroid/database/sqlite/SQLiteDatabase$CursorFactory;I)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/database/sqlite/SQLiteDatabase$CursorFactory;
-    .param p4    # I
 
     new-instance v5, Landroid/database/DefaultSecureDatabaseErrorHandler;
 
@@ -70,11 +66,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Ljava/lang/String;Landroid/database/sqlite/SQLiteDatabase$CursorFactory;ILandroid/database/DatabaseErrorHandler;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/database/sqlite/SQLiteDatabase$CursorFactory;
-    .param p4    # I
-    .param p5    # Landroid/database/DatabaseErrorHandler;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -122,8 +113,6 @@
 
 .method public static final changeDBPassword(Landroid/database/sqlite/SQLiteDatabase;[B)I
     .locals 1
-    .param p0    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p1    # [B
 
     invoke-virtual {p0, p1}, Landroid/database/sqlite/SQLiteDatabase;->changeDBPassword([B)I
 
@@ -134,9 +123,6 @@
 
 .method public static final convert2PlainDB(Ljava/io/File;[BLjava/io/File;)V
     .locals 0
-    .param p0    # Ljava/io/File;
-    .param p1    # [B
-    .param p2    # Ljava/io/File;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;
@@ -150,9 +136,6 @@
 
 .method public static final convert2SecureDB(Ljava/io/File;Ljava/io/File;[B)V
     .locals 0
-    .param p0    # Ljava/io/File;
-    .param p1    # Ljava/io/File;
-    .param p2    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;
@@ -166,7 +149,6 @@
 
 .method private getDatabaseLocked(Z)Landroid/database/sqlite/SQLiteDatabase;
     .locals 10
-    .param p1    # Z
 
     const/4 v6, 0x0
 
@@ -552,9 +534,6 @@
 
 .method private getDatabaseLocked(ZZ[B)Landroid/database/sqlite/SQLiteDatabase;
     .locals 11
-    .param p1    # Z
-    .param p2    # Z
-    .param p3    # [B
 
     const/16 v3, 0x8
 
@@ -1168,7 +1147,6 @@
 
 .method public getReadableDatabase([B)Landroid/database/sqlite/SQLiteDatabase;
     .locals 2
-    .param p1    # [B
 
     monitor-enter p0
 
@@ -1229,7 +1207,6 @@
 
 .method public getWritableDatabase([B)Landroid/database/sqlite/SQLiteDatabase;
     .locals 2
-    .param p1    # [B
 
     monitor-enter p0
 
@@ -1264,7 +1241,6 @@
 
 .method public onConfigure(Landroid/database/sqlite/SQLiteDatabase;)V
     .locals 0
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
 
     return-void
 .end method
@@ -1274,9 +1250,6 @@
 
 .method public onDowngrade(Landroid/database/sqlite/SQLiteDatabase;II)V
     .locals 3
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p2    # I
-    .param p3    # I
 
     new-instance v0, Landroid/database/sqlite/SQLiteException;
 
@@ -1315,7 +1288,6 @@
 
 .method public onOpen(Landroid/database/sqlite/SQLiteDatabase;)V
     .locals 0
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
 
     return-void
 .end method
@@ -1325,7 +1297,6 @@
 
 .method public setWriteAheadLoggingEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     monitor-enter p0
 

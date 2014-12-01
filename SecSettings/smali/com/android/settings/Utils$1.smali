@@ -30,8 +30,6 @@
 # virtual methods
 .method public accept(Ljava/io/File;Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/io/File;
-    .param p2    # Ljava/lang/String;
 
     const-string v0, ".conf"
 

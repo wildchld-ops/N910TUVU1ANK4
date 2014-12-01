@@ -28,10 +28,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -62,8 +58,6 @@
 
 .method static synthetic access$000(Lcom/android/server/updates/ConfigUpdateInstallReceiver;Landroid/content/ContentResolver;)Ljava/security/cert/X509Certificate;
     .locals 1
-    .param p0    # Lcom/android/server/updates/ConfigUpdateInstallReceiver;
-    .param p1    # Landroid/content/ContentResolver;
 
     invoke-direct {p0, p1}, Lcom/android/server/updates/ConfigUpdateInstallReceiver;->getCert(Landroid/content/ContentResolver;)Ljava/security/cert/X509Certificate;
 
@@ -74,8 +68,6 @@
 
 .method static synthetic access$100(Lcom/android/server/updates/ConfigUpdateInstallReceiver;Landroid/content/Intent;)[B
     .locals 1
-    .param p0    # Lcom/android/server/updates/ConfigUpdateInstallReceiver;
-    .param p1    # Landroid/content/Intent;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -91,12 +83,6 @@
 
 .method static synthetic access$1000(Lcom/android/server/updates/ConfigUpdateInstallReceiver;[BILjava/lang/String;Ljava/lang/String;Ljava/security/cert/X509Certificate;)Z
     .locals 1
-    .param p0    # Lcom/android/server/updates/ConfigUpdateInstallReceiver;
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/security/cert/X509Certificate;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;
@@ -112,8 +98,6 @@
 
 .method static synthetic access$200(Lcom/android/server/updates/ConfigUpdateInstallReceiver;Landroid/content/Intent;)I
     .locals 1
-    .param p0    # Lcom/android/server/updates/ConfigUpdateInstallReceiver;
-    .param p1    # Landroid/content/Intent;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/NumberFormatException;
@@ -129,8 +113,6 @@
 
 .method static synthetic access$300(Lcom/android/server/updates/ConfigUpdateInstallReceiver;Landroid/content/Intent;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/server/updates/ConfigUpdateInstallReceiver;
-    .param p1    # Landroid/content/Intent;
 
     invoke-direct {p0, p1}, Lcom/android/server/updates/ConfigUpdateInstallReceiver;->getRequiredHashFromIntent(Landroid/content/Intent;)Ljava/lang/String;
 
@@ -141,8 +123,6 @@
 
 .method static synthetic access$400(Lcom/android/server/updates/ConfigUpdateInstallReceiver;Landroid/content/Intent;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/server/updates/ConfigUpdateInstallReceiver;
-    .param p1    # Landroid/content/Intent;
 
     invoke-direct {p0, p1}, Lcom/android/server/updates/ConfigUpdateInstallReceiver;->getSignatureFromIntent(Landroid/content/Intent;)Ljava/lang/String;
 
@@ -153,7 +133,6 @@
 
 .method static synthetic access$500(Lcom/android/server/updates/ConfigUpdateInstallReceiver;)I
     .locals 1
-    .param p0    # Lcom/android/server/updates/ConfigUpdateInstallReceiver;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/NumberFormatException;
@@ -169,7 +148,6 @@
 
 .method static synthetic access$600(Lcom/android/server/updates/ConfigUpdateInstallReceiver;)[B
     .locals 1
-    .param p0    # Lcom/android/server/updates/ConfigUpdateInstallReceiver;
 
     invoke-direct {p0}, Lcom/android/server/updates/ConfigUpdateInstallReceiver;->getCurrentContent()[B
 
@@ -180,7 +158,6 @@
 
 .method static synthetic access$700([B)Ljava/lang/String;
     .locals 1
-    .param p0    # [B
 
     invoke-static {p0}, Lcom/android/server/updates/ConfigUpdateInstallReceiver;->getCurrentHash([B)Ljava/lang/String;
 
@@ -191,9 +168,6 @@
 
 .method static synthetic access$800(Lcom/android/server/updates/ConfigUpdateInstallReceiver;II)Z
     .locals 1
-    .param p0    # Lcom/android/server/updates/ConfigUpdateInstallReceiver;
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/updates/ConfigUpdateInstallReceiver;->verifyVersion(II)Z
 
@@ -204,9 +178,6 @@
 
 .method static synthetic access$900(Lcom/android/server/updates/ConfigUpdateInstallReceiver;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Lcom/android/server/updates/ConfigUpdateInstallReceiver;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/updates/ConfigUpdateInstallReceiver;->verifyPreviousHash(Ljava/lang/String;Ljava/lang/String;)Z
 
@@ -217,7 +188,6 @@
 
 .method private getAltContent(Landroid/content/Intent;)[B
     .locals 1
-    .param p1    # Landroid/content/Intent;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -237,7 +207,6 @@
 
 .method private getCert(Landroid/content/ContentResolver;)Ljava/security/cert/X509Certificate;
     .locals 7
-    .param p1    # Landroid/content/ContentResolver;
 
     const-string v5, "config_update_certificate"
 
@@ -290,7 +259,6 @@
 
 .method private getContentFromIntent(Landroid/content/Intent;)Ljava/lang/String;
     .locals 3
-    .param p1    # Landroid/content/Intent;
 
     const-string v1, "CONTENT_PATH"
 
@@ -347,7 +315,6 @@
 
 .method private static getCurrentHash([B)Ljava/lang/String;
     .locals 4
-    .param p0    # [B
 
     if-nez p0, :cond_0
 
@@ -436,7 +403,6 @@
 
 .method private getRequiredHashFromIntent(Landroid/content/Intent;)Ljava/lang/String;
     .locals 3
-    .param p1    # Landroid/content/Intent;
 
     const-string v1, "REQUIRED_HASH"
 
@@ -464,7 +430,6 @@
 
 .method private getSignatureFromIntent(Landroid/content/Intent;)Ljava/lang/String;
     .locals 3
-    .param p1    # Landroid/content/Intent;
 
     const-string v1, "SIGNATURE"
 
@@ -492,7 +457,6 @@
 
 .method private getVersionFromIntent(Landroid/content/Intent;)I
     .locals 3
-    .param p1    # Landroid/content/Intent;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/NumberFormatException;
@@ -529,8 +493,6 @@
 
 .method private verifyPreviousHash(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const-string v0, "NONE"
 
@@ -555,11 +517,6 @@
 
 .method private verifySignature([BILjava/lang/String;Ljava/lang/String;Ljava/security/cert/X509Certificate;)Z
     .locals 3
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/security/cert/X509Certificate;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;
@@ -613,8 +570,6 @@
 
 .method private verifyVersion(II)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     if-ge p1, p2, :cond_0
 
@@ -633,8 +588,6 @@
 # virtual methods
 .method protected install([BI)V
     .locals 4
-    .param p1    # [B
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -668,8 +621,6 @@
 
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     new-instance v0, Lcom/android/server/updates/ConfigUpdateInstallReceiver$1;
 
@@ -682,17 +633,12 @@
 
 .method protected postInstall(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     return-void
 .end method
 
 .method protected writeUpdate(Ljava/io/File;Ljava/io/File;[B)V
     .locals 7
-    .param p1    # Ljava/io/File;
-    .param p2    # Ljava/io/File;
-    .param p3    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

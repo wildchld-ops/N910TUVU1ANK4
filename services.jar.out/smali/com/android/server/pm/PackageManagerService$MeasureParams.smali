@@ -27,8 +27,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/pm/PackageManagerService;Landroid/content/pm/PackageStats;Landroid/content/pm/IPackageStatsObserver;)V
     .locals 2
-    .param p2    # Landroid/content/pm/PackageStats;
-    .param p3    # Landroid/content/pm/IPackageStatsObserver;
 
     iput-object p1, p0, Lcom/android/server/pm/PackageManagerService$MeasureParams;->this$0:Lcom/android/server/pm/PackageManagerService;
 
@@ -49,7 +47,6 @@
 
 .method static synthetic access$6100(Lcom/android/server/pm/PackageManagerService$MeasureParams;)Landroid/content/pm/IPackageStatsObserver;
     .locals 1
-    .param p0    # Lcom/android/server/pm/PackageManagerService$MeasureParams;
 
     iget-object v0, p0, Lcom/android/server/pm/PackageManagerService$MeasureParams;->mObserver:Landroid/content/pm/IPackageStatsObserver;
 

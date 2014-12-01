@@ -36,7 +36,6 @@
 # virtual methods
 .method public onAnimationUpdate(Landroid/animation/ValueAnimator;)V
     .locals 1
-    .param p1    # Landroid/animation/ValueAnimator;
 
     iget-object v0, p0, Lcom/sec/android/visualeffect/lensflare/LensFlareEffect$6;->this$0:Lcom/sec/android/visualeffect/lensflare/LensFlareEffect;
 

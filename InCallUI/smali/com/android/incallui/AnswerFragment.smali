@@ -71,7 +71,6 @@
 
 .method static synthetic access$000(Lcom/android/incallui/AnswerFragment;)Lcom/android/incallui/GlowPadWrapper;
     .locals 1
-    .param p0    # Lcom/android/incallui/AnswerFragment;
 
     iget-object v0, p0, Lcom/android/incallui/AnswerFragment;->mGlowpad:Lcom/android/incallui/GlowPadWrapper;
 
@@ -80,7 +79,6 @@
 
 .method static synthetic access$100(Lcom/android/incallui/AnswerFragment;)V
     .locals 0
-    .param p0    # Lcom/android/incallui/AnswerFragment;
 
     invoke-direct {p0}, Lcom/android/incallui/AnswerFragment;->dismissCannedResponsePopup()V
 
@@ -89,7 +87,6 @@
 
 .method static synthetic access$200(Lcom/android/incallui/AnswerFragment;)V
     .locals 0
-    .param p0    # Lcom/android/incallui/AnswerFragment;
 
     invoke-direct {p0}, Lcom/android/incallui/AnswerFragment;->dismissCustomMessagePopup()V
 
@@ -98,7 +95,6 @@
 
 .method static synthetic access$300(Lcom/android/incallui/AnswerFragment;)Landroid/app/AlertDialog;
     .locals 1
-    .param p0    # Lcom/android/incallui/AnswerFragment;
 
     iget-object v0, p0, Lcom/android/incallui/AnswerFragment;->mCustomMessagePopup:Landroid/app/AlertDialog;
 
@@ -107,7 +103,6 @@
 
 .method static synthetic access$400(Lcom/android/incallui/AnswerFragment;)V
     .locals 0
-    .param p0    # Lcom/android/incallui/AnswerFragment;
 
     invoke-direct {p0}, Lcom/android/incallui/AnswerFragment;->dismissCallRoamingGuardDialog()V
 
@@ -241,7 +236,6 @@
 # virtual methods
 .method public changeAnswerButtonText(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
@@ -352,7 +346,6 @@
 
 .method public dismissCallRoamingGuardDialog(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-virtual {p0}, Lcom/android/incallui/AnswerFragment;->isCallRoamingGuardDialogShowing()Z
 
@@ -507,9 +500,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 2
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const v0, 0x7f040005
 
@@ -599,7 +589,6 @@
 
 .method public showAnswerUi(Z)V
     .locals 2
-    .param p1    # Z
 
     invoke-virtual {p0}, Landroid/app/Fragment;->getView()Landroid/view/View;
 
@@ -665,7 +654,6 @@
 
 .method public showCallRoamingGuardDialog(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
@@ -902,14 +890,12 @@
 
 .method public showRejectCallWithMessage(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method public showTextButton(Z)V
     .locals 3
-    .param p1    # Z
 
     if-eqz p1, :cond_1
 
@@ -983,7 +969,6 @@
 
 .method public showWaitingCallDialog(Landroid/app/AlertDialog$Builder;)V
     .locals 2
-    .param p1    # Landroid/app/AlertDialog$Builder;
 
     iget-object v0, p0, Lcom/android/incallui/AnswerFragment;->mWaitingCallDialog:Landroid/app/AlertDialog;
 
@@ -1015,9 +1000,6 @@
 
 .method public showWaitingCallDialog(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -1120,10 +1102,6 @@
 
 .method public showWaitingCallDialog(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
 
     const/4 v5, 0x0
 
@@ -1244,10 +1222,6 @@
 
 .method public showWaitingCallDialog(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
@@ -1302,10 +1276,6 @@
 
 .method public showWaitingCallDialogGSM(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
@@ -1360,7 +1330,6 @@
 
 .method public startAirMotionAnimation(Lcom/android/incallui/widget/incomingwidget/IncomingCallImageHandle$HandleState;)V
     .locals 0
-    .param p1    # Lcom/android/incallui/widget/incomingwidget/IncomingCallImageHandle$HandleState;
 
     return-void
 .end method

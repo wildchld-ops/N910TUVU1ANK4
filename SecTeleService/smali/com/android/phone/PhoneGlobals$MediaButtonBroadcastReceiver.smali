@@ -144,7 +144,7 @@
     iput-boolean v6, p0, Lcom/android/phone/PhoneGlobals$MediaButtonBroadcastReceiver;->isLongPress:Z
 
     :cond_2
-    invoke-virtual {p0}, Landroid/content/BroadcastReceiver;->abortBroadcast()V
+    invoke-virtual {p0}, Lcom/android/phone/PhoneGlobals$MediaButtonBroadcastReceiver;->abortBroadcast()V
 
     :cond_3
     if-eqz v1, :cond_0
@@ -261,7 +261,7 @@
     invoke-static {v6}, Lcom/android/phone/PhoneUtils;->hangup(Lcom/android/internal/telephony/Call;)Z
 
     :goto_6
-    invoke-virtual {p0}, Landroid/content/BroadcastReceiver;->abortBroadcast()V
+    invoke-virtual {p0}, Lcom/android/phone/PhoneGlobals$MediaButtonBroadcastReceiver;->abortBroadcast()V
 
     :cond_4
     iput-boolean v7, p0, Lcom/android/phone/PhoneGlobals$MediaButtonBroadcastReceiver;->isLongPress:Z

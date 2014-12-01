@@ -54,8 +54,6 @@
 
 .method synthetic constructor <init>(Lcom/android/mms/saverestore/ConversationListRestore;Lcom/android/mms/saverestore/ConversationListRestore$1;)V
     .locals 0
-    .param p1    # Lcom/android/mms/saverestore/ConversationListRestore;
-    .param p2    # Lcom/android/mms/saverestore/ConversationListRestore$1;
 
     invoke-direct {p0, p1}, Lcom/android/mms/saverestore/ConversationListRestore$ReadFilesTask;-><init>(Lcom/android/mms/saverestore/ConversationListRestore;)V
 
@@ -66,7 +64,6 @@
 # virtual methods
 .method protected varargs doInBackground([Ljava/lang/Integer;)Ljava/lang/Integer;
     .locals 3
-    .param p1    # [Ljava/lang/Integer;
 
     iget-object v0, p0, Lcom/android/mms/saverestore/ConversationListRestore$ReadFilesTask;->this$0:Lcom/android/mms/saverestore/ConversationListRestore;
 
@@ -101,7 +98,6 @@
 
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [Ljava/lang/Integer;
 
@@ -139,7 +135,6 @@
 
 .method protected onPostExecute(Ljava/lang/Integer;)V
     .locals 3
-    .param p1    # Ljava/lang/Integer;
 
     const-string v0, "Mms/ConversationListRestore"
 
@@ -217,7 +212,6 @@
 
 .method protected bridge synthetic onPostExecute(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Ljava/lang/Integer;
 

@@ -27,7 +27,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     const/4 v3, 0x1
 
@@ -80,8 +79,6 @@
 
 .method public constructor <init>(Landroid/content/Context;I)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     invoke-direct {p0, p1}, Lcom/android/settings/accessibility/smartscroll/touchwiz/widget/TwHelpDialog;-><init>(Landroid/content/Context;)V
 
@@ -90,9 +87,6 @@
 
 .method protected constructor <init>(Landroid/content/Context;ZLandroid/content/DialogInterface$OnCancelListener;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Z
-    .param p3    # Landroid/content/DialogInterface$OnCancelListener;
 
     invoke-direct {p0, p1}, Lcom/android/settings/accessibility/smartscroll/touchwiz/widget/TwHelpDialog;-><init>(Landroid/content/Context;)V
 
@@ -107,7 +101,6 @@
 # virtual methods
 .method public onGenericMotionEvent(Landroid/view/MotionEvent;)Z
     .locals 7
-    .param p1    # Landroid/view/MotionEvent;
 
     const/16 v6, 0xa
 
@@ -235,7 +228,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 5
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v4, 0x0
 
@@ -362,7 +354,6 @@
 
 .method public setShowWrongInputToast(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/accessibility/smartscroll/touchwiz/widget/TwHelpDialog;->mShowWrongInputToast:Z
 
@@ -371,7 +362,6 @@
 
 .method public setTouchTransparencyMode(Lcom/android/settings/accessibility/smartscroll/touchwiz/widget/TwHelpDialog$TouchMode;)V
     .locals 0
-    .param p1    # Lcom/android/settings/accessibility/smartscroll/touchwiz/widget/TwHelpDialog$TouchMode;
 
     iput-object p1, p0, Lcom/android/settings/accessibility/smartscroll/touchwiz/widget/TwHelpDialog;->mTouchTransparencyMode:Lcom/android/settings/accessibility/smartscroll/touchwiz/widget/TwHelpDialog$TouchMode;
 

@@ -36,7 +36,6 @@
 # virtual methods
 .method public declared-synchronized onClick(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     monitor-enter p0
 

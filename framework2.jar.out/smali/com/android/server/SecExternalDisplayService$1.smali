@@ -33,7 +33,6 @@
 # virtual methods
 .method public onUEvent(Landroid/os/UEventObserver$UEvent;)V
     .locals 5
-    .param p1    # Landroid/os/UEventObserver$UEvent;
 
     const-string v2, "SWITCH_STATE"
 

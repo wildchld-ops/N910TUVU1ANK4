@@ -21,8 +21,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/wifi/WifiService;Ljava/lang/String;Landroid/os/IBinder;)V
     .locals 6
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/os/IBinder;
 
     iput-object p1, p0, Lcom/android/server/wifi/WifiService$Multicaster;->this$0:Lcom/android/server/wifi/WifiService;
 

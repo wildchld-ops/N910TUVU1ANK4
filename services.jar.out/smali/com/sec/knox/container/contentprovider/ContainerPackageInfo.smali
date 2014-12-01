@@ -82,7 +82,6 @@
 
 .method public setAppPackage(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/sec/knox/container/contentprovider/ContainerPackageInfo;->appPackage:Ljava/lang/String;
 
@@ -91,7 +90,6 @@
 
 .method public setContainerId(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/knox/container/contentprovider/ContainerPackageInfo;->containerId:I
 
@@ -100,7 +98,6 @@
 
 .method public setInstallationSource(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/knox/container/contentprovider/ContainerPackageInfo;->installationSource:I
 
@@ -109,7 +106,6 @@
 
 .method public setSignature(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/sec/knox/container/contentprovider/ContainerPackageInfo;->signature:Ljava/lang/String;
 
@@ -118,7 +114,6 @@
 
 .method public setUid(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/knox/container/contentprovider/ContainerPackageInfo;->uid:I
 

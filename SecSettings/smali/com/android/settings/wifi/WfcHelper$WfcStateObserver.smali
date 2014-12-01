@@ -23,8 +23,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Lcom/android/settings/wifi/WfcHelper$WfcStateChangedListener;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/settings/wifi/WfcHelper$WfcStateChangedListener;
 
     new-instance v0, Landroid/os/Handler;
 
@@ -43,7 +41,6 @@
 # virtual methods
 .method public onChange(Z)V
     .locals 3
-    .param p1    # Z
 
     new-instance v0, Lcom/android/settings/wifi/WfcHelper$WfcStateTask;
 

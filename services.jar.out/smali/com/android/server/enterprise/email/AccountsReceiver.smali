@@ -56,7 +56,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 9
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -227,7 +226,6 @@
 
 .method static synthetic access$100(Lcom/android/server/enterprise/email/AccountsReceiver;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/email/AccountsReceiver;
 
     iget-object v0, p0, Lcom/android/server/enterprise/email/AccountsReceiver;->mContext:Landroid/content/Context;
 
@@ -236,7 +234,6 @@
 
 .method public static getSMIMECertificate(Ljava/lang/String;)Lcom/android/server/enterprise/email/AccountSMIMECertificate;
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -278,8 +275,6 @@
 
 .method public static pushSMIMECertificate(Ljava/lang/String;Lcom/android/server/enterprise/email/AccountSMIMECertificate;)Z
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Lcom/android/server/enterprise/email/AccountSMIMECertificate;
 
     :try_start_0
     sget-object v1, Lcom/android/server/enterprise/email/AccountsReceiver;->mSmimeCerticateList:Ljava/util/Map;

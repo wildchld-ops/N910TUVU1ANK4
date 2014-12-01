@@ -31,9 +31,6 @@
 # direct methods
 .method private constructor <init>(Ljava/lang/String;Landroid/net/Uri$Part;Landroid/net/Uri$Part;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/net/Uri$Part;
-    .param p3    # Landroid/net/Uri$Part;
 
     const/4 v0, 0x0
 
@@ -62,10 +59,6 @@
 
 .method synthetic constructor <init>(Ljava/lang/String;Landroid/net/Uri$Part;Landroid/net/Uri$Part;Landroid/net/Uri$1;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/net/Uri$Part;
-    .param p3    # Landroid/net/Uri$Part;
-    .param p4    # Landroid/net/Uri$1;
 
     invoke-direct {p0, p1, p2, p3}, Landroid/net/Uri$OpaqueUri;-><init>(Ljava/lang/String;Landroid/net/Uri$Part;Landroid/net/Uri$Part;)V
 
@@ -74,7 +67,6 @@
 
 .method static readFrom(Landroid/os/Parcel;)Landroid/net/Uri;
     .locals 4
-    .param p0    # Landroid/os/Parcel;
 
     new-instance v0, Landroid/net/Uri$OpaqueUri;
 
@@ -127,7 +119,6 @@
 
 .method public bridge synthetic compareTo(Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Landroid/net/Uri;
 
@@ -417,8 +408,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     const/4 v0, 0x2
 

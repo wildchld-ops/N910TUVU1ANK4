@@ -820,7 +820,7 @@
 
     const/4 v2, 0x1
 
-    iget-object v1, p0, Lcom/google/common/collect/GenericMapMaker;->removalListener:Lcom/google/common/collect/MapMaker$RemovalListener;
+    iget-object v1, p0, Lcom/google/common/collect/MapMaker;->removalListener:Lcom/google/common/collect/MapMaker$RemovalListener;
 
     if-nez v1, :cond_0
 
@@ -1059,7 +1059,7 @@
 
     iget-object v2, p0, Lcom/google/common/collect/MapMaker;->keyStrength:Lcom/google/common/collect/MapMakerInternalMap$Strength;
 
-    invoke-virtual {v2}, Ljava/lang/Enum;->toString()Ljava/lang/String;
+    invoke-virtual {v2}, Lcom/google/common/collect/MapMakerInternalMap$Strength;->toString()Ljava/lang/String;
 
     move-result-object v2
 
@@ -1078,7 +1078,7 @@
 
     iget-object v2, p0, Lcom/google/common/collect/MapMaker;->valueStrength:Lcom/google/common/collect/MapMakerInternalMap$Strength;
 
-    invoke-virtual {v2}, Ljava/lang/Enum;->toString()Ljava/lang/String;
+    invoke-virtual {v2}, Lcom/google/common/collect/MapMakerInternalMap$Strength;->toString()Ljava/lang/String;
 
     move-result-object v2
 
@@ -1107,7 +1107,7 @@
     invoke-virtual {v0, v1}, Lcom/google/common/base/Objects$ToStringHelper;->addValue(Ljava/lang/Object;)Lcom/google/common/base/Objects$ToStringHelper;
 
     :cond_8
-    iget-object v1, p0, Lcom/google/common/collect/GenericMapMaker;->removalListener:Lcom/google/common/collect/MapMaker$RemovalListener;
+    iget-object v1, p0, Lcom/google/common/collect/MapMaker;->removalListener:Lcom/google/common/collect/MapMaker$RemovalListener;
 
     if-eqz v1, :cond_9
 

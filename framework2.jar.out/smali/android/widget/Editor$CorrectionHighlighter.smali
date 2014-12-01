@@ -86,8 +86,6 @@
 
 .method static synthetic access$600(Landroid/widget/Editor$CorrectionHighlighter;Z)V
     .locals 0
-    .param p0    # Landroid/widget/Editor$CorrectionHighlighter;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Landroid/widget/Editor$CorrectionHighlighter;->invalidate(Z)V
 
@@ -96,7 +94,6 @@
 
 .method private invalidate(Z)V
     .locals 7
-    .param p1    # Z
 
     iget-object v2, p0, Landroid/widget/Editor$CorrectionHighlighter;->this$0:Landroid/widget/Editor;
 
@@ -409,8 +406,6 @@
 # virtual methods
 .method public draw(Landroid/graphics/Canvas;I)V
     .locals 3
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # I
 
     const/4 v2, 0x0
 
@@ -467,7 +462,6 @@
 
 .method public highlight(Landroid/view/inputmethod/CorrectionInfo;)V
     .locals 2
-    .param p1    # Landroid/view/inputmethod/CorrectionInfo;
 
     invoke-virtual {p1}, Landroid/view/inputmethod/CorrectionInfo;->getOffset()I
 

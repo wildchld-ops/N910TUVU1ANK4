@@ -66,7 +66,6 @@
 
 .method public constructor <init>(Landroid/net/DhcpResults;)V
     .locals 2
-    .param p1    # Landroid/net/DhcpResults;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -111,7 +110,6 @@
 
 .method public constructor <init>(Landroid/net/LinkProperties;)V
     .locals 1
-    .param p1    # Landroid/net/LinkProperties;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -128,7 +126,6 @@
 # virtual methods
 .method public addDns(Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -185,7 +182,6 @@
 
 .method public addGateway(Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     iget-object v1, p0, Landroid/net/DhcpResults;->linkProperties:Landroid/net/LinkProperties;
@@ -239,8 +235,6 @@
 
 .method public addLinkAddress(Ljava/lang/String;I)Z
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     :try_start_0
     invoke-static {p1}, Landroid/net/NetworkUtils;->numericToInetAddress(Ljava/lang/String;)Ljava/net/InetAddress;
@@ -332,7 +326,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 5
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x1
 
@@ -490,7 +483,6 @@
 
 .method public setDomains(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/net/DhcpResults;->linkProperties:Landroid/net/LinkProperties;
 
@@ -501,7 +493,6 @@
 
 .method public setInterfaceName(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/net/DhcpResults;->linkProperties:Landroid/net/LinkProperties;
 
@@ -512,7 +503,6 @@
 
 .method public setLeaseDuration(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/net/DhcpResults;->leaseDuration:I
 
@@ -521,7 +511,6 @@
 
 .method public setRoamingResult(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/net/DhcpResults;->resultAfterRoaming:I
 
@@ -530,7 +519,6 @@
 
 .method public setServerAddress(Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     invoke-static {p1}, Landroid/net/NetworkUtils;->numericToInetAddress(Ljava/lang/String;)Ljava/net/InetAddress;
@@ -578,7 +566,6 @@
 
 .method public setVendorInfo(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/net/DhcpResults;->vendorInfo:Ljava/lang/String;
 
@@ -654,7 +641,6 @@
 
 .method public updateFromDhcpRequest(Landroid/net/DhcpResults;)V
     .locals 4
-    .param p1    # Landroid/net/DhcpResults;
 
     if-eqz p1, :cond_0
 
@@ -752,8 +738,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v0, p0, Landroid/net/DhcpResults;->linkProperties:Landroid/net/LinkProperties;
 

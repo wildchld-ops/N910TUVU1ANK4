@@ -6,8 +6,6 @@
 # direct methods
 .method public constructor <init>(Landroid/media/effect/EffectContext;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Landroid/media/effect/EffectContext;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Landroid/media/effect/FilterEffect;-><init>(Landroid/media/effect/EffectContext;Ljava/lang/String;)V
 
@@ -18,10 +16,6 @@
 # virtual methods
 .method public apply(IIII)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-virtual {p0}, Landroid/media/effect/FilterEffect;->beginGLEffect()V
 
@@ -52,8 +46,6 @@
 
 .method public setParameter(Ljava/lang/String;Ljava/lang/Object;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Object;
 
     new-instance v0, Ljava/lang/IllegalArgumentException;
 

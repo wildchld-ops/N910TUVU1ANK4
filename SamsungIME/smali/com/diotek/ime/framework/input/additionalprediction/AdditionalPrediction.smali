@@ -14,7 +14,6 @@
 
 .method public static getAdditionalPrediction(Ljava/lang/String;)Ljava/lang/String;
     .locals 9
-    .param p0    # Ljava/lang/String;
 
     const/16 v5, 0xd7
 

@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,7 +41,6 @@
 
 .method public static buildKeyForUser(I)I
     .locals 1
-    .param p0    # I
 
     add-int/lit16 v0, p0, 0x7d0
 
@@ -53,7 +51,6 @@
 
 .method private buildUidDetail(I)Lcom/android/settings/net/UidDetail;
     .locals 18
-    .param p1    # I
 
     move-object/from16 v0, p0
 
@@ -437,8 +434,6 @@
 
 .method public getUidDetail(IZ)Lcom/android/settings/net/UidDetail;
     .locals 3
-    .param p1    # I
-    .param p2    # Z
 
     iget-object v2, p0, Lcom/android/settings/net/UidDetailProvider;->mUidDetailCache:Landroid/util/SparseArray;
 

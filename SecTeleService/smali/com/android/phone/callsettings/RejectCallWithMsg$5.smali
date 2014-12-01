@@ -77,7 +77,7 @@
 
     iget-object v6, v6, Lcom/android/phone/callsettings/RejectCallWithMsg;->mListView:Landroid/widget/ListView;
 
-    invoke-virtual {v6}, Landroid/widget/AdapterView;->getCount()I
+    invoke-virtual {v6}, Landroid/widget/ListView;->getCount()I
 
     move-result v6
 
@@ -87,7 +87,7 @@
 
     iget-object v6, v6, Lcom/android/phone/callsettings/RejectCallWithMsg;->mListView:Landroid/widget/ListView;
 
-    invoke-virtual {v6, v2}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
+    invoke-virtual {v6, v2}, Landroid/widget/ListView;->getChildAt(I)Landroid/view/View;
 
     move-result-object v6
 
@@ -106,7 +106,7 @@
 
     iget-object v6, v6, Lcom/android/phone/callsettings/RejectCallWithMsg;->mListView:Landroid/widget/ListView;
 
-    invoke-virtual {v6, v3}, Landroid/widget/AbsListView;->isItemChecked(I)Z
+    invoke-virtual {v6, v3}, Landroid/widget/ListView;->isItemChecked(I)Z
 
     move-result v0
 
@@ -117,7 +117,7 @@
     if-nez v0, :cond_3
 
     :goto_1
-    invoke-virtual {v6, v3, v4}, Landroid/widget/AbsListView;->setItemChecked(IZ)V
+    invoke-virtual {v6, v3, v4}, Landroid/widget/ListView;->setItemChecked(IZ)V
 
     :cond_1
     return-void

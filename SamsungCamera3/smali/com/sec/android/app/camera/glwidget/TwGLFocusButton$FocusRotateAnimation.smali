@@ -31,12 +31,6 @@
 # direct methods
 .method public constructor <init>(Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;FFIFIF)V
     .locals 7
-    .param p2    # F
-    .param p3    # F
-    .param p4    # I
-    .param p5    # F
-    .param p6    # I
-    .param p7    # F
 
     iput-object p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton$FocusRotateAnimation;->this$0:Lcom/sec/android/app/camera/glwidget/TwGLFocusButton;
 
@@ -75,8 +69,6 @@
 # virtual methods
 .method protected applyTransformation(FLandroid/view/animation/Transformation;)V
     .locals 4
-    .param p1    # F
-    .param p2    # Landroid/view/animation/Transformation;
 
     invoke-super {p0, p1, p2}, Landroid/view/animation/RotateAnimation;->applyTransformation(FLandroid/view/animation/Transformation;)V
 
@@ -119,8 +111,6 @@
 
 .method public setDegree(FF)V
     .locals 0
-    .param p1    # F
-    .param p2    # F
 
     iput p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton$FocusRotateAnimation;->mFromDegrees:F
 
@@ -131,7 +121,6 @@
 
 .method public setInterpolator(Landroid/view/animation/Interpolator;)V
     .locals 0
-    .param p1    # Landroid/view/animation/Interpolator;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLFocusButton$FocusRotateAnimation;->mInterpolator:Landroid/view/animation/Interpolator;
 

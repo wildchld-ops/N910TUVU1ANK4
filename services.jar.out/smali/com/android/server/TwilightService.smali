@@ -58,7 +58,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -131,8 +130,6 @@
 
 .method static synthetic access$100(Landroid/location/Location;Landroid/location/Location;)Z
     .locals 1
-    .param p0    # Landroid/location/Location;
-    .param p1    # Landroid/location/Location;
 
     invoke-static {p0, p1}, Lcom/android/server/TwilightService;->hasMoved(Landroid/location/Location;Landroid/location/Location;)Z
 
@@ -143,7 +140,6 @@
 
 .method static synthetic access$200(Lcom/android/server/TwilightService;)Landroid/location/LocationListener;
     .locals 1
-    .param p0    # Lcom/android/server/TwilightService;
 
     iget-object v0, p0, Lcom/android/server/TwilightService;->mEmptyLocationListener:Landroid/location/LocationListener;
 
@@ -152,7 +148,6 @@
 
 .method static synthetic access$300(Lcom/android/server/TwilightService;)Landroid/location/LocationManager;
     .locals 1
-    .param p0    # Lcom/android/server/TwilightService;
 
     iget-object v0, p0, Lcom/android/server/TwilightService;->mLocationManager:Landroid/location/LocationManager;
 
@@ -161,7 +156,6 @@
 
 .method static synthetic access$400(Lcom/android/server/TwilightService;)Landroid/location/LocationListener;
     .locals 1
-    .param p0    # Lcom/android/server/TwilightService;
 
     iget-object v0, p0, Lcom/android/server/TwilightService;->mLocationListener:Landroid/location/LocationListener;
 
@@ -170,8 +164,6 @@
 
 .method static synthetic access$500(Lcom/android/server/TwilightService;Lcom/android/server/TwilightService$TwilightState;)V
     .locals 0
-    .param p0    # Lcom/android/server/TwilightService;
-    .param p1    # Lcom/android/server/TwilightService$TwilightState;
 
     invoke-direct {p0, p1}, Lcom/android/server/TwilightService;->setTwilightState(Lcom/android/server/TwilightService$TwilightState;)V
 
@@ -180,7 +172,6 @@
 
 .method static synthetic access$600(Lcom/android/server/TwilightService;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/server/TwilightService;
 
     iget-object v0, p0, Lcom/android/server/TwilightService;->mContext:Landroid/content/Context;
 
@@ -189,7 +180,6 @@
 
 .method static synthetic access$700(Lcom/android/server/TwilightService;)Landroid/app/AlarmManager;
     .locals 1
-    .param p0    # Lcom/android/server/TwilightService;
 
     iget-object v0, p0, Lcom/android/server/TwilightService;->mAlarmManager:Landroid/app/AlarmManager;
 
@@ -198,7 +188,6 @@
 
 .method static synthetic access$800(Lcom/android/server/TwilightService;)Lcom/android/server/TwilightService$LocationHandler;
     .locals 1
-    .param p0    # Lcom/android/server/TwilightService;
 
     iget-object v0, p0, Lcom/android/server/TwilightService;->mLocationHandler:Lcom/android/server/TwilightService$LocationHandler;
 
@@ -207,8 +196,6 @@
 
 .method private static hasMoved(Landroid/location/Location;Landroid/location/Location;)Z
     .locals 8
-    .param p0    # Landroid/location/Location;
-    .param p1    # Landroid/location/Location;
 
     const/4 v2, 0x1
 
@@ -271,7 +258,6 @@
 
 .method private setTwilightState(Lcom/android/server/TwilightService$TwilightState;)V
     .locals 4
-    .param p1    # Lcom/android/server/TwilightService$TwilightState;
 
     iget-object v3, p0, Lcom/android/server/TwilightService;->mLock:Ljava/lang/Object;
 
@@ -356,8 +342,6 @@
 
 .method public registerListener(Lcom/android/server/TwilightService$TwilightListener;Landroid/os/Handler;)V
     .locals 3
-    .param p1    # Lcom/android/server/TwilightService$TwilightListener;
-    .param p2    # Landroid/os/Handler;
 
     iget-object v1, p0, Lcom/android/server/TwilightService;->mLock:Ljava/lang/Object;
 

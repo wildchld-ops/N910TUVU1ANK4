@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Landroid/net/CaptivePortalTracker;Landroid/net/CaptivePortalTracker$1;)V
     .locals 0
-    .param p1    # Landroid/net/CaptivePortalTracker;
-    .param p2    # Landroid/net/CaptivePortalTracker$1;
 
     invoke-direct {p0, p1}, Landroid/net/CaptivePortalTracker$DelayedCaptiveCheckState;-><init>(Landroid/net/CaptivePortalTracker;)V
 
@@ -89,7 +87,6 @@
 
 .method public processMessage(Landroid/os/Message;)Z
     .locals 10
-    .param p1    # Landroid/os/Message;
 
     const/4 v5, 0x0
 

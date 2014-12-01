@@ -67,11 +67,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/internal/app/ProcessStats;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/android/internal/app/ProcessStats$ProcessState;)V
     .locals 1
-    .param p1    # Lcom/android/internal/app/ProcessStats;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Lcom/android/internal/app/ProcessStats$ProcessState;
 
     const/4 v0, -0x1
 
@@ -96,12 +91,6 @@
 
 .method static synthetic access$000(Lcom/android/internal/app/ProcessStats$ServiceState;IIJIJ)J
     .locals 2
-    .param p0    # Lcom/android/internal/app/ProcessStats$ServiceState;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
-    .param p5    # I
-    .param p6    # J
 
     invoke-direct/range {p0 .. p7}, Lcom/android/internal/app/ProcessStats$ServiceState;->getDuration(IIJIJ)J
 
@@ -112,11 +101,6 @@
 
 .method private getDuration(IIJIJ)J
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
-    .param p5    # I
-    .param p6    # J
 
     mul-int/lit8 v3, p5, 0x4
 
@@ -138,8 +122,6 @@
 
 .method private updateRunning(IJ)V
     .locals 4
-    .param p1    # I
-    .param p2    # J
 
     const/4 v1, -0x1
 
@@ -209,7 +191,6 @@
 # virtual methods
 .method add(Lcom/android/internal/app/ProcessStats$ServiceState;)V
     .locals 2
-    .param p1    # Lcom/android/internal/app/ProcessStats$ServiceState;
 
     invoke-virtual {p0, p1}, Lcom/android/internal/app/ProcessStats$DurationsTable;->addDurations(Lcom/android/internal/app/ProcessStats$DurationsTable;)V
 
@@ -250,7 +231,6 @@
 
 .method public applyNewOwner(Ljava/lang/Object;)V
     .locals 5
-    .param p1    # Ljava/lang/Object;
 
     const/4 v4, -0x1
 
@@ -321,8 +301,6 @@
 
 .method public clearCurrentOwner(Ljava/lang/Object;Z)V
     .locals 7
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Z
 
     const/4 v6, -0x1
 
@@ -569,7 +547,6 @@
 
 .method commitStateTime(J)V
     .locals 4
-    .param p1    # J
 
     const/4 v3, -0x1
 
@@ -677,7 +654,6 @@
 
 .method readFromParcel(Landroid/os/Parcel;)Z
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     invoke-virtual {p0, p1}, Lcom/android/internal/app/ProcessStats$DurationsTable;->readDurationsFromParcel(Landroid/os/Parcel;)Z
 
@@ -722,7 +698,6 @@
 
 .method resetSafely(J)V
     .locals 4
-    .param p1    # J
 
     const/4 v1, 0x1
 
@@ -799,9 +774,6 @@
 
 .method public setBound(ZIJ)V
     .locals 5
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # J
 
     const/4 v1, -0x1
 
@@ -893,9 +865,6 @@
 
 .method public setExecuting(ZIJ)V
     .locals 5
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # J
 
     const/4 v1, -0x1
 
@@ -987,9 +956,6 @@
 
 .method public setRestarting(ZIJ)V
     .locals 0
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # J
 
     iput-boolean p1, p0, Lcom/android/internal/app/ProcessStats$ServiceState;->mRestarting:Z
 
@@ -1000,9 +966,6 @@
 
 .method public setStarted(ZIJ)V
     .locals 3
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # J
 
     iget-object v0, p0, Lcom/android/internal/app/ProcessStats$ServiceState;->mOwner:Ljava/lang/Object;
 
@@ -1126,8 +1089,6 @@
 
 .method updateStartedState(IJ)V
     .locals 7
-    .param p1    # I
-    .param p2    # J
 
     const/4 v3, 0x1
 
@@ -1250,8 +1211,6 @@
 
 .method writeToParcel(Landroid/os/Parcel;J)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # J
 
     invoke-virtual {p0, p1}, Lcom/android/internal/app/ProcessStats$DurationsTable;->writeDurationsToParcel(Landroid/os/Parcel;)V
 

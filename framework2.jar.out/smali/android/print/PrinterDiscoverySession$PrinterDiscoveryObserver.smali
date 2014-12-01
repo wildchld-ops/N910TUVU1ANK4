@@ -30,7 +30,6 @@
 # direct methods
 .method public constructor <init>(Landroid/print/PrinterDiscoverySession;)V
     .locals 1
-    .param p1    # Landroid/print/PrinterDiscoverySession;
 
     invoke-direct {p0}, Landroid/print/IPrinterDiscoveryObserver$Stub;-><init>()V
 
@@ -47,7 +46,6 @@
 # virtual methods
 .method public onPrintersAdded(Landroid/content/pm/ParceledListSlice;)V
     .locals 4
-    .param p1    # Landroid/content/pm/ParceledListSlice;
 
     iget-object v1, p0, Landroid/print/PrinterDiscoverySession$PrinterDiscoveryObserver;->mWeakSession:Ljava/lang/ref/WeakReference;
 
@@ -82,7 +80,6 @@
 
 .method public onPrintersRemoved(Landroid/content/pm/ParceledListSlice;)V
     .locals 4
-    .param p1    # Landroid/content/pm/ParceledListSlice;
 
     iget-object v1, p0, Landroid/print/PrinterDiscoverySession$PrinterDiscoveryObserver;->mWeakSession:Ljava/lang/ref/WeakReference;
 

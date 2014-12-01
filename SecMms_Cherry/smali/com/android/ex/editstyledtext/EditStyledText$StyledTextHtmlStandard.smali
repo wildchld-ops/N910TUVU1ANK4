@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Lcom/android/ex/editstyledtext/EditStyledText;Lcom/android/ex/editstyledtext/EditStyledText$1;)V
     .locals 0
-    .param p1    # Lcom/android/ex/editstyledtext/EditStyledText;
-    .param p2    # Lcom/android/ex/editstyledtext/EditStyledText$1;
 
     invoke-direct {p0, p1}, Lcom/android/ex/editstyledtext/EditStyledText$StyledTextHtmlStandard;-><init>(Lcom/android/ex/editstyledtext/EditStyledText;)V
 
@@ -46,7 +44,6 @@
 # virtual methods
 .method public fromHtml(Ljava/lang/String;)Landroid/text/Spanned;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Landroid/text/Html;->fromHtml(Ljava/lang/String;)Landroid/text/Spanned;
 
@@ -57,9 +54,6 @@
 
 .method public fromHtml(Ljava/lang/String;Landroid/text/Html$ImageGetter;Landroid/text/Html$TagHandler;)Landroid/text/Spanned;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/text/Html$ImageGetter;
-    .param p3    # Landroid/text/Html$TagHandler;
 
     invoke-static {p1, p2, p3}, Landroid/text/Html;->fromHtml(Ljava/lang/String;Landroid/text/Html$ImageGetter;Landroid/text/Html$TagHandler;)Landroid/text/Spanned;
 
@@ -70,7 +64,6 @@
 
 .method public toHtml(Landroid/text/Spanned;)Ljava/lang/String;
     .locals 1
-    .param p1    # Landroid/text/Spanned;
 
     invoke-static {p1}, Landroid/text/Html;->toHtml(Landroid/text/Spanned;)Ljava/lang/String;
 
@@ -81,8 +74,6 @@
 
 .method public toHtml(Landroid/text/Spanned;Z)Ljava/lang/String;
     .locals 1
-    .param p1    # Landroid/text/Spanned;
-    .param p2    # Z
 
     invoke-static {p1}, Landroid/text/Html;->toHtml(Landroid/text/Spanned;)Ljava/lang/String;
 
@@ -93,10 +84,6 @@
 
 .method public toHtml(Landroid/text/Spanned;ZIF)Ljava/lang/String;
     .locals 1
-    .param p1    # Landroid/text/Spanned;
-    .param p2    # Z
-    .param p3    # I
-    .param p4    # F
 
     invoke-static {p1}, Landroid/text/Html;->toHtml(Landroid/text/Spanned;)Ljava/lang/String;
 

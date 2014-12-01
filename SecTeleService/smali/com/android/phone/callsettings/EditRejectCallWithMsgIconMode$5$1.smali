@@ -86,7 +86,7 @@
 
     aget v2, v2, v3
 
-    invoke-virtual {v1, v2}, Landroid/widget/ImageView;->setImageResource(I)V
+    invoke-virtual {v1, v2}, Landroid/widget/ImageButton;->setImageResource(I)V
 
     :cond_0
     iget-object v1, p0, Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode$5$1;->this$1:Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode$5;
@@ -118,7 +118,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Landroid/view/View;->hasFocus()Z
+    invoke-virtual {v1}, Landroid/widget/EditText;->hasFocus()Z
 
     move-result v1
 
@@ -158,7 +158,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Landroid/view/View;->hasFocus()Z
+    invoke-virtual {v1}, Landroid/widget/EditText;->hasFocus()Z
 
     move-result v1
 

@@ -470,8 +470,6 @@
 
 .method public getSampledPacketCount(Landroid/net/SamplingDataTracker$SamplingSnapshot;Landroid/net/SamplingDataTracker$SamplingSnapshot;)J
     .locals 8
-    .param p1    # Landroid/net/SamplingDataTracker$SamplingSnapshot;
-    .param p2    # Landroid/net/SamplingDataTracker$SamplingSnapshot;
 
     if-eqz p1, :cond_0
 
@@ -846,7 +844,6 @@
 
 .method public setCommonLinkQualityInfoFields(Landroid/net/LinkQualityInfo;)V
     .locals 4
-    .param p1    # Landroid/net/LinkQualityInfo;
 
     iget-object v1, p0, Landroid/net/SamplingDataTracker;->mSamplingDataLock:Ljava/lang/Object;
 
@@ -893,7 +890,6 @@
 
 .method public startSampling(Landroid/net/SamplingDataTracker$SamplingSnapshot;)V
     .locals 2
-    .param p1    # Landroid/net/SamplingDataTracker$SamplingSnapshot;
 
     iget-object v1, p0, Landroid/net/SamplingDataTracker;->mSamplingDataLock:Ljava/lang/Object;
 
@@ -918,7 +914,6 @@
 
 .method public stopSampling(Landroid/net/SamplingDataTracker$SamplingSnapshot;)V
     .locals 6
-    .param p1    # Landroid/net/SamplingDataTracker$SamplingSnapshot;
 
     iget-object v1, p0, Landroid/net/SamplingDataTracker;->mSamplingDataLock:Ljava/lang/Object;
 

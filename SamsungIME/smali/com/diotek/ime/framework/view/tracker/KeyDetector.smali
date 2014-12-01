@@ -68,7 +68,6 @@
 
 .method protected getTouchX(I)I
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Lcom/diotek/ime/framework/view/tracker/KeyDetector;->mCorrectionX:I
 
@@ -79,7 +78,6 @@
 
 .method protected getTouchY(I)I
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Lcom/diotek/ime/framework/view/tracker/KeyDetector;->mCorrectionY:I
 
@@ -114,10 +112,6 @@
 
 .method public setKeyboard(Lcom/diotek/ime/framework/view/DefaultKeyboard;FFZ)[Lcom/diotek/ime/framework/view/Keyboard$Key;
     .locals 3
-    .param p1    # Lcom/diotek/ime/framework/view/DefaultKeyboard;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # Z
 
     if-nez p1, :cond_0
 
@@ -165,7 +159,6 @@
 
 .method public setKeyboardWidth(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/diotek/ime/framework/view/tracker/KeyDetector;->mKeyboardWidth:I
 
@@ -174,7 +167,6 @@
 
 .method public setProximityCorrectionEnabled(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/view/tracker/KeyDetector;->mProximityCorrectOn:Z
 
@@ -183,7 +175,6 @@
 
 .method public setProximityThreshold(I)V
     .locals 1
-    .param p1    # I
 
     mul-int v0, p1, p1
 

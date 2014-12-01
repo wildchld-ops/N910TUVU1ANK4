@@ -56,7 +56,6 @@
 
 .method public constructor <init>(Landroid/database/CursorWindow;)V
     .locals 1
-    .param p1    # Landroid/database/CursorWindow;
 
     invoke-direct {p0}, Landroid/database/AbstractWindowedCursor;-><init>()V
 
@@ -85,7 +84,6 @@
 
 .method public constructor <init>(Landroid/os/Parcel;)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Landroid/database/AbstractWindowedCursor;-><init>()V
 
@@ -154,7 +152,6 @@
 
 .method public readFromParcel(Landroid/os/Parcel;)V
     .locals 3
-    .param p1    # Landroid/os/Parcel;
 
     const-class v1, Landroid/database/CursorWindow;
 
@@ -202,7 +199,6 @@
 
 .method public setAutoClose(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/content/CustomCursor;->isAutoClose:Z
 
@@ -211,7 +207,6 @@
 
 .method public setColumnNames([Ljava/lang/String;)V
     .locals 0
-    .param p1    # [Ljava/lang/String;
 
     iput-object p1, p0, Landroid/content/CustomCursor;->mColumnNames:[Ljava/lang/String;
 
@@ -220,7 +215,6 @@
 
 .method public setCursorOwnerId(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/content/CustomCursor;->mCursorOwnerId:I
 
@@ -229,8 +223,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 3
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     invoke-super {p0}, Landroid/database/AbstractWindowedCursor;->getWindow()Landroid/database/CursorWindow;
 

@@ -36,7 +36,6 @@
 # virtual methods
 .method public onError(I)V
     .locals 7
-    .param p1    # I
 
     const/4 v5, 0x0
 

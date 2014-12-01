@@ -39,8 +39,6 @@
 # virtual methods
 .method public setProfiler(Ljava/lang/String;Landroid/os/ParcelFileDescriptor;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/ParcelFileDescriptor;
 
     iget-boolean v0, p0, Landroid/app/ActivityThread$Profiler;->profiling:Z
 

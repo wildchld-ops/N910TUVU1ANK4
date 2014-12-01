@@ -55,7 +55,6 @@
 
 .method static synthetic access$002(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/internal/os/RuntimeInit;->mCrashing:Z
 
@@ -72,7 +71,6 @@
 
 .method static synthetic access$200(Ljava/lang/String;)V
     .locals 0
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/android/internal/os/RuntimeInit;->makeHeapDump(Ljava/lang/String;)V
 
@@ -81,8 +79,6 @@
 
 .method private static applicationInit(I[Ljava/lang/String;)V
     .locals 4
-    .param p0    # I
-    .param p1    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/android/internal/os/ZygoteInit$MethodAndArgsCaller;
@@ -308,8 +304,6 @@
 
 .method private static invokeStaticMain(Ljava/lang/String;[Ljava/lang/String;)V
     .locals 8
-    .param p0    # Ljava/lang/String;
-    .param p1    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/android/internal/os/ZygoteInit$MethodAndArgsCaller;
@@ -475,7 +469,6 @@
 
 .method public static final main([Ljava/lang/String;)V
     .locals 2
-    .param p0    # [Ljava/lang/String;
 
     array-length v0, p0
 
@@ -507,7 +500,6 @@
 
 .method private static makeHeapDump(Ljava/lang/String;)V
     .locals 11
-    .param p0    # Ljava/lang/String;
 
     :try_start_0
     new-instance v6, Landroid/os/StatFs;
@@ -721,7 +713,6 @@
 
 .method public static final setApplicationObject(Landroid/os/IBinder;)V
     .locals 0
-    .param p0    # Landroid/os/IBinder;
 
     sput-object p0, Lcom/android/internal/os/RuntimeInit;->mApplicationObject:Landroid/os/IBinder;
 
@@ -730,8 +721,6 @@
 
 .method public static wrapperInit(I[Ljava/lang/String;)V
     .locals 0
-    .param p0    # I
-    .param p1    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/android/internal/os/ZygoteInit$MethodAndArgsCaller;
@@ -745,8 +734,6 @@
 
 .method public static wtf(Ljava/lang/String;Ljava/lang/Throwable;)V
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/Throwable;
 
     :try_start_0
     invoke-static {}, Landroid/app/ActivityManagerNative;->getDefault()Landroid/app/IActivityManager;
@@ -801,8 +788,6 @@
 
 .method public static final zygoteInit(I[Ljava/lang/String;)V
     .locals 0
-    .param p0    # I
-    .param p1    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/android/internal/os/ZygoteInit$MethodAndArgsCaller;

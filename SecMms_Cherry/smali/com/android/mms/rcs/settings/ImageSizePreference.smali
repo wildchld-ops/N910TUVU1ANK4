@@ -12,8 +12,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/preference/ListPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -158,7 +156,6 @@
 
 .method protected onDialogClosed(Z)V
     .locals 2
-    .param p1    # Z
 
     invoke-super {p0, p1}, Landroid/preference/ListPreference;->onDialogClosed(Z)V
 
@@ -192,7 +189,6 @@
 
 .method public setSummary(Ljava/lang/CharSequence;)V
     .locals 3
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v0, 0x0
 

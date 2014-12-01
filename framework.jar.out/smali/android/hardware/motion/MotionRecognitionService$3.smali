@@ -21,7 +21,6 @@
 # direct methods
 .method constructor <init>(Landroid/hardware/motion/MotionRecognitionService;Landroid/content/Context;)V
     .locals 0
-    .param p2    # Landroid/content/Context;
 
     iput-object p1, p0, Landroid/hardware/motion/MotionRecognitionService$3;->this$0:Landroid/hardware/motion/MotionRecognitionService;
 
@@ -34,7 +33,6 @@
 # virtual methods
 .method public onChangeSmartFaceInfo(Z)V
     .locals 3
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -58,7 +56,6 @@
 
 .method public onChangeSmartFaceStatus(Z)V
     .locals 2
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 

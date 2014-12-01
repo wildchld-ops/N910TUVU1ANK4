@@ -62,7 +62,6 @@
 
 .method static synthetic access$200(Landroid/widget/Filter;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Landroid/widget/Filter;
 
     iget-object v0, p0, Landroid/widget/Filter;->mResultHandler:Landroid/os/Handler;
 
@@ -71,7 +70,6 @@
 
 .method static synthetic access$300(Landroid/widget/Filter;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Landroid/widget/Filter;
 
     iget-object v0, p0, Landroid/widget/Filter;->mLock:Ljava/lang/Object;
 
@@ -80,7 +78,6 @@
 
 .method static synthetic access$400(Landroid/widget/Filter;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Landroid/widget/Filter;
 
     iget-object v0, p0, Landroid/widget/Filter;->mThreadHandler:Landroid/os/Handler;
 
@@ -89,8 +86,6 @@
 
 .method static synthetic access$402(Landroid/widget/Filter;Landroid/os/Handler;)Landroid/os/Handler;
     .locals 0
-    .param p0    # Landroid/widget/Filter;
-    .param p1    # Landroid/os/Handler;
 
     iput-object p1, p0, Landroid/widget/Filter;->mThreadHandler:Landroid/os/Handler;
 
@@ -101,7 +96,6 @@
 # virtual methods
 .method public convertResultToString(Ljava/lang/Object;)Ljava/lang/CharSequence;
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     if-nez p1, :cond_0
 
@@ -120,7 +114,6 @@
 
 .method public final filter(Ljava/lang/CharSequence;)V
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v0, 0x0
 
@@ -131,8 +124,6 @@
 
 .method public final filter(Ljava/lang/CharSequence;Landroid/widget/Filter$FilterListener;)V
     .locals 9
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Landroid/widget/Filter$FilterListener;
 
     const/4 v5, 0x0
 
@@ -247,7 +238,6 @@
 
 .method public setDelayer(Landroid/widget/Filter$Delayer;)V
     .locals 2
-    .param p1    # Landroid/widget/Filter$Delayer;
 
     iget-object v1, p0, Landroid/widget/Filter;->mLock:Ljava/lang/Object;
 

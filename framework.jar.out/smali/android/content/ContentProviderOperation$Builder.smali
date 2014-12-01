@@ -47,8 +47,6 @@
 # direct methods
 .method private constructor <init>(ILandroid/net/Uri;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/net/Uri;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -72,9 +70,6 @@
 
 .method synthetic constructor <init>(ILandroid/net/Uri;Landroid/content/ContentProviderOperation$1;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Landroid/net/Uri;
-    .param p3    # Landroid/content/ContentProviderOperation$1;
 
     invoke-direct {p0, p1, p2}, Landroid/content/ContentProviderOperation$Builder;-><init>(ILandroid/net/Uri;)V
 
@@ -83,7 +78,6 @@
 
 .method static synthetic access$000(Landroid/content/ContentProviderOperation$Builder;)I
     .locals 1
-    .param p0    # Landroid/content/ContentProviderOperation$Builder;
 
     iget v0, p0, Landroid/content/ContentProviderOperation$Builder;->mType:I
 
@@ -92,7 +86,6 @@
 
 .method static synthetic access$100(Landroid/content/ContentProviderOperation$Builder;)Landroid/net/Uri;
     .locals 1
-    .param p0    # Landroid/content/ContentProviderOperation$Builder;
 
     iget-object v0, p0, Landroid/content/ContentProviderOperation$Builder;->mUri:Landroid/net/Uri;
 
@@ -101,7 +94,6 @@
 
 .method static synthetic access$200(Landroid/content/ContentProviderOperation$Builder;)Landroid/content/ContentValues;
     .locals 1
-    .param p0    # Landroid/content/ContentProviderOperation$Builder;
 
     iget-object v0, p0, Landroid/content/ContentProviderOperation$Builder;->mValues:Landroid/content/ContentValues;
 
@@ -110,7 +102,6 @@
 
 .method static synthetic access$300(Landroid/content/ContentProviderOperation$Builder;)Ljava/lang/String;
     .locals 1
-    .param p0    # Landroid/content/ContentProviderOperation$Builder;
 
     iget-object v0, p0, Landroid/content/ContentProviderOperation$Builder;->mSelection:Ljava/lang/String;
 
@@ -119,7 +110,6 @@
 
 .method static synthetic access$400(Landroid/content/ContentProviderOperation$Builder;)[Ljava/lang/String;
     .locals 1
-    .param p0    # Landroid/content/ContentProviderOperation$Builder;
 
     iget-object v0, p0, Landroid/content/ContentProviderOperation$Builder;->mSelectionArgs:[Ljava/lang/String;
 
@@ -128,7 +118,6 @@
 
 .method static synthetic access$500(Landroid/content/ContentProviderOperation$Builder;)Ljava/lang/Integer;
     .locals 1
-    .param p0    # Landroid/content/ContentProviderOperation$Builder;
 
     iget-object v0, p0, Landroid/content/ContentProviderOperation$Builder;->mExpectedCount:Ljava/lang/Integer;
 
@@ -137,7 +126,6 @@
 
 .method static synthetic access$600(Landroid/content/ContentProviderOperation$Builder;)Ljava/util/Map;
     .locals 1
-    .param p0    # Landroid/content/ContentProviderOperation$Builder;
 
     iget-object v0, p0, Landroid/content/ContentProviderOperation$Builder;->mSelectionArgsBackReferences:Ljava/util/Map;
 
@@ -146,7 +134,6 @@
 
 .method static synthetic access$700(Landroid/content/ContentProviderOperation$Builder;)Landroid/content/ContentValues;
     .locals 1
-    .param p0    # Landroid/content/ContentProviderOperation$Builder;
 
     iget-object v0, p0, Landroid/content/ContentProviderOperation$Builder;->mValuesBackReferences:Landroid/content/ContentValues;
 
@@ -155,7 +142,6 @@
 
 .method static synthetic access$800(Landroid/content/ContentProviderOperation$Builder;)Z
     .locals 1
-    .param p0    # Landroid/content/ContentProviderOperation$Builder;
 
     iget-boolean v0, p0, Landroid/content/ContentProviderOperation$Builder;->mYieldAllowed:Z
 
@@ -264,7 +250,6 @@
 
 .method public withExpectedCount(I)Landroid/content/ContentProviderOperation$Builder;
     .locals 2
-    .param p1    # I
 
     iget v0, p0, Landroid/content/ContentProviderOperation$Builder;->mType:I
 
@@ -304,8 +289,6 @@
 
 .method public withSelection(Ljava/lang/String;[Ljava/lang/String;)Landroid/content/ContentProviderOperation$Builder;
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -365,8 +348,6 @@
 
 .method public withSelectionBackReference(II)Landroid/content/ContentProviderOperation$Builder;
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     iget v0, p0, Landroid/content/ContentProviderOperation$Builder;->mType:I
 
@@ -423,8 +404,6 @@
 
 .method public withValue(Ljava/lang/String;Ljava/lang/Object;)Landroid/content/ContentProviderOperation$Builder;
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Object;
 
     iget v0, p0, Landroid/content/ContentProviderOperation$Builder;->mType:I
 
@@ -628,8 +607,6 @@
 
 .method public withValueBackReference(Ljava/lang/String;I)Landroid/content/ContentProviderOperation$Builder;
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     iget v0, p0, Landroid/content/ContentProviderOperation$Builder;->mType:I
 
@@ -682,7 +659,6 @@
 
 .method public withValueBackReferences(Landroid/content/ContentValues;)Landroid/content/ContentProviderOperation$Builder;
     .locals 2
-    .param p1    # Landroid/content/ContentValues;
 
     iget v0, p0, Landroid/content/ContentProviderOperation$Builder;->mType:I
 
@@ -718,7 +694,6 @@
 
 .method public withValues(Landroid/content/ContentValues;)Landroid/content/ContentProviderOperation$Builder;
     .locals 2
-    .param p1    # Landroid/content/ContentValues;
 
     iget v0, p0, Landroid/content/ContentProviderOperation$Builder;->mType:I
 
@@ -767,7 +742,6 @@
 
 .method public withYieldAllowed(Z)Landroid/content/ContentProviderOperation$Builder;
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/content/ContentProviderOperation$Builder;->mYieldAllowed:Z
 

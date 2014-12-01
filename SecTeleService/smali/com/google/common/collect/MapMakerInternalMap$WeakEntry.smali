@@ -110,7 +110,7 @@
         }
     .end annotation
 
-    invoke-virtual {p0}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
+    invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$WeakEntry;->get()Ljava/lang/Object;
 
     move-result-object v0
 

@@ -38,8 +38,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/enterprise/application/ApplicationPolicy;Ljava/lang/String;J)V
     .locals 0
-    .param p2    # Ljava/lang/String;
-    .param p3    # J
 
     iput-object p1, p0, Lcom/android/server/enterprise/application/ApplicationPolicy$AppInfoTask;->this$0:Lcom/android/server/enterprise/application/ApplicationPolicy;
 
@@ -54,7 +52,6 @@
 
 .method static synthetic access$1500(Lcom/android/server/enterprise/application/ApplicationPolicy$AppInfoTask;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/application/ApplicationPolicy$AppInfoTask;
 
     iget-object v0, p0, Lcom/android/server/enterprise/application/ApplicationPolicy$AppInfoTask;->mCmd:Ljava/lang/String;
 
@@ -63,7 +60,6 @@
 
 .method static synthetic access$1600(Lcom/android/server/enterprise/application/ApplicationPolicy$AppInfoTask;)J
     .locals 2
-    .param p0    # Lcom/android/server/enterprise/application/ApplicationPolicy$AppInfoTask;
 
     iget-wide v0, p0, Lcom/android/server/enterprise/application/ApplicationPolicy$AppInfoTask;->mUsage:J
 
@@ -74,7 +70,6 @@
 # virtual methods
 .method public compareTo(Lcom/android/server/enterprise/application/ApplicationPolicy$AppInfoTask;)I
     .locals 4
-    .param p1    # Lcom/android/server/enterprise/application/ApplicationPolicy$AppInfoTask;
 
     iget-wide v0, p0, Lcom/android/server/enterprise/application/ApplicationPolicy$AppInfoTask;->mUsage:J
 
@@ -111,7 +106,6 @@
 
 .method public bridge synthetic compareTo(Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/android/server/enterprise/application/ApplicationPolicy$AppInfoTask;
 

@@ -96,8 +96,6 @@
 
 .method static synthetic access$102(Lcom/touchtype/personalizer/PersonalizerSettingsActivity;Lcom/touchtype/personalizer/PersonalizerService;)Lcom/touchtype/personalizer/PersonalizerService;
     .locals 0
-    .param p0    # Lcom/touchtype/personalizer/PersonalizerSettingsActivity;
-    .param p1    # Lcom/touchtype/personalizer/PersonalizerService;
 
     iput-object p1, p0, Lcom/touchtype/personalizer/PersonalizerSettingsActivity;->mService:Lcom/touchtype/personalizer/PersonalizerService;
 
@@ -106,7 +104,6 @@
 
 .method static synthetic access$200(Lcom/touchtype/personalizer/PersonalizerSettingsActivity;)V
     .locals 0
-    .param p0    # Lcom/touchtype/personalizer/PersonalizerSettingsActivity;
 
     invoke-direct {p0}, Lcom/touchtype/personalizer/PersonalizerSettingsActivity;->setPreferenceState()V
 
@@ -115,7 +112,6 @@
 
 .method static synthetic access$300(Lcom/touchtype/personalizer/PersonalizerSettingsActivity;)V
     .locals 0
-    .param p0    # Lcom/touchtype/personalizer/PersonalizerSettingsActivity;
 
     invoke-direct {p0}, Lcom/touchtype/personalizer/PersonalizerSettingsActivity;->removeKPMExFolder()V
 
@@ -346,9 +342,6 @@
 
 .method protected onActivityResult(IILandroid/content/Intent;)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     invoke-super {p0, p1, p2, p3}, Landroid/preference/PreferenceActivity;->onActivityResult(IILandroid/content/Intent;)V
 
@@ -366,7 +359,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     iget-object v0, p0, Lcom/touchtype/personalizer/PersonalizerSettingsActivity;->mPreferenceFragment:Lcom/touchtype/personalizer/PersonalizerSettingsFragment;
 
@@ -410,7 +402,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 

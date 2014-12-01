@@ -37,8 +37,6 @@
 
 .method synthetic constructor <init>(Landroid/widget/ActivityChooserView;Landroid/widget/ActivityChooserView$1;)V
     .locals 0
-    .param p1    # Landroid/widget/ActivityChooserView;
-    .param p2    # Landroid/widget/ActivityChooserView$1;
 
     invoke-direct {p0, p1}, Landroid/widget/ActivityChooserView$Callbacks;-><init>(Landroid/widget/ActivityChooserView;)V
 
@@ -72,8 +70,6 @@
 
 .method private startActivity(Landroid/content/Intent;Landroid/content/pm/ResolveInfo;)V
     .locals 7
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Landroid/content/pm/ResolveInfo;
 
     const/4 v6, 0x0
 
@@ -153,7 +149,6 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 5
-    .param p1    # Landroid/view/View;
 
     iget-object v3, p0, Landroid/widget/ActivityChooserView$Callbacks;->this$0:Landroid/widget/ActivityChooserView;
 
@@ -285,9 +280,6 @@
 
 .method public onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
     .locals 6
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -430,7 +422,6 @@
 
 .method public onLongClick(Landroid/view/View;)Z
     .locals 3
-    .param p1    # Landroid/view/View;
 
     const/4 v2, 0x1
 

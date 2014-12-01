@@ -458,8 +458,6 @@
 
 .method static synthetic access$000(Lcom/android/systemui/power/PowerUI;I)I
     .locals 1
-    .param p0    # Lcom/android/systemui/power/PowerUI;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/systemui/power/PowerUI;->findBatteryLevelBucket(I)I
 
@@ -470,8 +468,6 @@
 
 .method static synthetic access$102(Lcom/android/systemui/power/PowerUI;J)J
     .locals 0
-    .param p0    # Lcom/android/systemui/power/PowerUI;
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/android/systemui/power/PowerUI;->mScreenOffTime:J
 
@@ -480,7 +476,6 @@
 
 .method private findBatteryLevelBucket(I)I
     .locals 4
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -864,9 +859,6 @@
 
 .method public dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     const-string v0, "mLowBatteryAlertCloseLevel="
 
@@ -1174,7 +1166,6 @@
 
 .method notifyAbnormalChargingNotification(I)V
     .locals 9
-    .param p1    # I
 
     const/4 v8, 0x0
 
@@ -1720,7 +1711,6 @@
 
 .method playSound(I)V
     .locals 13
-    .param p1    # I
 
     iget-object v9, p0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
@@ -2155,7 +2145,6 @@
 
 .method sendLowBatteryIntentToHMT(Ljava/lang/CharSequence;)V
     .locals 3
-    .param p1    # Ljava/lang/CharSequence;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -2182,7 +2171,6 @@
 
 .method showAbnormalChargingWarning(I)V
     .locals 12
-    .param p1    # I
 
     const v11, 0x7f0b01a7
 
@@ -4943,7 +4931,6 @@
 
 .method updateCocktailLowBatteryWarning(Z)V
     .locals 11
-    .param p1    # Z
 
     iget-boolean v6, p0, Lcom/android/systemui/power/PowerUI;->mCocktailBar:Z
 
@@ -5303,7 +5290,6 @@
 
 .method updateCoverLowBatteryWarning(Z)V
     .locals 4
-    .param p1    # Z
 
     new-instance v1, Landroid/widget/RemoteViews;
 

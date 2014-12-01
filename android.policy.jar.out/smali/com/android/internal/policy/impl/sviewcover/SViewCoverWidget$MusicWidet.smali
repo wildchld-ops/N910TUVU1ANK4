@@ -53,8 +53,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v2, 0x0
 
@@ -119,10 +117,6 @@
 
 .method static synthetic access$600(Lcom/android/internal/policy/impl/sviewcover/SViewCoverWidget$MusicWidet;IILandroid/net/Uri;)V
     .locals 0
-    .param p0    # Lcom/android/internal/policy/impl/sviewcover/SViewCoverWidget$MusicWidet;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/net/Uri;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/internal/policy/impl/sviewcover/SViewCoverWidget$MusicWidet;->handleMediaUpdate(IILandroid/net/Uri;)V
 
@@ -131,7 +125,6 @@
 
 .method static synthetic access$700(Lcom/android/internal/policy/impl/sviewcover/SViewCoverWidget$MusicWidet;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/sviewcover/SViewCoverWidget$MusicWidet;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/sviewcover/SViewCoverWidget$MusicWidet;->mMusicHandler:Landroid/os/Handler;
 
@@ -140,9 +133,6 @@
 
 .method private handleMediaUpdate(IILandroid/net/Uri;)V
     .locals 15
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/net/Uri;
 
     const/4 v1, 0x1
 

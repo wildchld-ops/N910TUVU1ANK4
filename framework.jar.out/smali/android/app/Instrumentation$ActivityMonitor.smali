@@ -31,9 +31,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/IntentFilter;Landroid/app/Instrumentation$ActivityResult;Z)V
     .locals 2
-    .param p1    # Landroid/content/IntentFilter;
-    .param p2    # Landroid/app/Instrumentation$ActivityResult;
-    .param p3    # Z
 
     const/4 v1, 0x0
 
@@ -58,9 +55,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Landroid/app/Instrumentation$ActivityResult;Z)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/app/Instrumentation$ActivityResult;
-    .param p3    # Z
 
     const/4 v1, 0x0
 
@@ -127,9 +121,6 @@
 
 .method final match(Landroid/content/Context;Landroid/app/Activity;Landroid/content/Intent;)Z
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/app/Activity;
-    .param p3    # Landroid/content/Intent;
 
     const/4 v2, 0x1
 
@@ -291,7 +282,6 @@
 
 .method public final waitForActivityWithTimeout(J)Landroid/app/Activity;
     .locals 2
-    .param p1    # J
 
     const/4 v0, 0x0
 

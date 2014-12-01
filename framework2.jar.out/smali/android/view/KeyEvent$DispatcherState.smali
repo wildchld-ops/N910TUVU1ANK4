@@ -41,7 +41,6 @@
 # virtual methods
 .method public handleUpEvent(Landroid/view/KeyEvent;)V
     .locals 3
-    .param p1    # Landroid/view/KeyEvent;
 
     invoke-virtual {p1}, Landroid/view/KeyEvent;->getKeyCode()I
 
@@ -88,7 +87,6 @@
 
 .method public isTracking(Landroid/view/KeyEvent;)Z
     .locals 2
-    .param p1    # Landroid/view/KeyEvent;
 
     iget v0, p0, Landroid/view/KeyEvent$DispatcherState;->mDownKeyCode:I
 
@@ -111,7 +109,6 @@
 
 .method public performedLongPress(Landroid/view/KeyEvent;)V
     .locals 3
-    .param p1    # Landroid/view/KeyEvent;
 
     iget-object v0, p0, Landroid/view/KeyEvent$DispatcherState;->mActiveLongPresses:Landroid/util/SparseIntArray;
 
@@ -146,7 +143,6 @@
 
 .method public reset(Ljava/lang/Object;)V
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     iget-object v0, p0, Landroid/view/KeyEvent$DispatcherState;->mDownTarget:Ljava/lang/Object;
 
@@ -166,8 +162,6 @@
 
 .method public startTracking(Landroid/view/KeyEvent;Ljava/lang/Object;)V
     .locals 2
-    .param p1    # Landroid/view/KeyEvent;
-    .param p2    # Ljava/lang/Object;
 
     invoke-virtual {p1}, Landroid/view/KeyEvent;->getAction()I
 

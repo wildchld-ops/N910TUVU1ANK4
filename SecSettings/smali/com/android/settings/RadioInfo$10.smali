@@ -36,7 +36,6 @@
 # virtual methods
 .method public onMenuItemClick(Landroid/view/MenuItem;)Z
     .locals 2
-    .param p1    # Landroid/view/MenuItem;
 
     iget-object v0, p0, Lcom/android/settings/RadioInfo$10;->this$0:Lcom/android/settings/RadioInfo;
 

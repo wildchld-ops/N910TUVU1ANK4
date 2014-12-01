@@ -26,7 +26,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/pm/IPackageManager$Stub;)V
     .locals 1
-    .param p1    # Landroid/content/pm/IPackageManager$Stub;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -136,7 +135,6 @@
 # virtual methods
 .method public afterAddPkg(Landroid/content/pm/PackageParser$Package;)V
     .locals 3
-    .param p1    # Landroid/content/pm/PackageParser$Package;
 
     iget-object v0, p1, Landroid/content/pm/PackageParser$Package;->packageName:Ljava/lang/String;
 
@@ -171,7 +169,6 @@
 
 .method public beforeAddPkg(Landroid/content/pm/PackageParser$Package;)V
     .locals 16
-    .param p1    # Landroid/content/pm/PackageParser$Package;
 
     :try_start_0
     move-object/from16 v0, p0
@@ -637,8 +634,6 @@
 
 .method public checkByPkgName(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/lguplus/common_api/permission/PermissionsProxy;->mPerms:Lcom/lguplus/common_api/permission/Permissions;
 
@@ -672,8 +667,6 @@
 
 .method public checkByUid(ILjava/lang/String;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/lguplus/common_api/permission/PermissionsProxy;->mPerms:Lcom/lguplus/common_api/permission/Permissions;
 
@@ -707,7 +700,6 @@
 
 .method public getGids(Ljava/lang/String;)[I
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/lguplus/common_api/permission/PermissionsProxy;->mPerms:Lcom/lguplus/common_api/permission/Permissions;
 
@@ -730,7 +722,6 @@
 
 .method public isSystemUid(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/lguplus/common_api/permission/PermissionsProxy;->mPerms:Lcom/lguplus/common_api/permission/Permissions;
 
@@ -753,7 +744,6 @@
 
 .method public onDelPkg(Landroid/content/pm/PackageParser$Package;)V
     .locals 2
-    .param p1    # Landroid/content/pm/PackageParser$Package;
 
     iget-object v0, p0, Lcom/lguplus/common_api/permission/PermissionsProxy;->mPerms:Lcom/lguplus/common_api/permission/Permissions;
 
@@ -771,7 +761,6 @@
 
 .method public reorderApkFiles([Ljava/lang/String;)V
     .locals 5
-    .param p1    # [Ljava/lang/String;
 
     const/4 v1, 0x1
 

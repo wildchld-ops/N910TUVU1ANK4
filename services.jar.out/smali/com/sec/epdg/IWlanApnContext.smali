@@ -34,7 +34,6 @@
 # direct methods
 .method private constructor <init>(I)V
     .locals 2
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -71,7 +70,6 @@
 
 .method public static getNewIWlanApnContextInstance(I)Lcom/sec/epdg/IWlanApnContext;
     .locals 1
-    .param p0    # I
 
     new-instance v0, Lcom/sec/epdg/IWlanApnContext;
 
@@ -82,7 +80,6 @@
 
 .method private log(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "[IWLANAPNCONTEXT]"
 
@@ -125,8 +122,6 @@
 # virtual methods
 .method public configureAPNSettings(Ljava/lang/String;Ljava/lang/String;)V
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const-string v5, "[IWLANAPNCONTEXT]"
 
@@ -223,9 +218,6 @@
 
 .method public dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -358,7 +350,6 @@
 
 .method public declared-synchronized setIWlanSetting(Lcom/sec/epdg/IWlanApnSetting;)V
     .locals 1
-    .param p1    # Lcom/sec/epdg/IWlanApnSetting;
 
     monitor-enter p0
 
@@ -381,8 +372,6 @@
 
 .method public setRequestIpAddress(Ljava/lang/String;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     if-nez p2, :cond_0
 
@@ -433,7 +422,6 @@
 
 .method public declared-synchronized setState(I)V
     .locals 2
-    .param p1    # I
 
     monitor-enter p0
 
@@ -525,7 +513,6 @@
 
 .method public setTCRulesStatus(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/epdg/IWlanApnContext;->mTCRulesStatus:Z
 
@@ -534,7 +521,6 @@
 
 .method public setmReqIpv4addr(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/sec/epdg/IWlanApnContext;->mReqIpv4addr:Ljava/lang/String;
 
@@ -543,7 +529,6 @@
 
 .method public setmReqIpv6addr(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/sec/epdg/IWlanApnContext;->mReqIpv6addr:Ljava/lang/String;
 
@@ -552,7 +537,6 @@
 
 .method public setmRilCid(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/epdg/IWlanApnContext;->mRilCid:I
 

@@ -81,7 +81,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -92,8 +91,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const v0, 0x1010074
 
@@ -104,9 +101,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 10
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v7, 0x1
 
@@ -266,9 +260,6 @@
 
 .method static synthetic access$200(Landroid/widget/ListView;Landroid/view/View;Landroid/view/View;)V
     .locals 0
-    .param p0    # Landroid/widget/ListView;
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/View;
 
     invoke-direct {p0, p1, p2}, Landroid/widget/ListView;->logActivity(Landroid/view/View;Landroid/view/View;)V
 
@@ -277,8 +268,6 @@
 
 .method private addViewAbove(Landroid/view/View;I)Landroid/view/View;
     .locals 8
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     const/4 v4, 0x0
 
@@ -317,8 +306,6 @@
 
 .method private addViewBelow(Landroid/view/View;I)Landroid/view/View;
     .locals 8
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     const/4 v6, 0x0
 
@@ -453,8 +440,6 @@
 
 .method private amountToScroll(II)I
     .locals 12
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0}, Landroid/view/View;->getHeight()I
 
@@ -737,9 +722,6 @@
 
 .method private amountToScrollToNewFocus(ILandroid/view/View;I)I
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # I
 
     const/4 v0, 0x0
 
@@ -827,7 +809,6 @@
 
 .method private arrowScrollFocused(I)Landroid/widget/ListView$ArrowScrollFocusResult;
     .locals 17
-    .param p1    # I
 
     invoke-virtual/range {p0 .. p0}, Landroid/widget/AbsListView;->getSelectedView()Landroid/view/View;
 
@@ -1150,7 +1131,6 @@
 
 .method private arrowScrollImpl(I)Z
     .locals 11
-    .param p1    # I
 
     const/4 v8, 0x1
 
@@ -1437,9 +1417,6 @@
 
 .method private commonKey(IILandroid/view/KeyEvent;)Z
     .locals 9
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/view/KeyEvent;
 
     const/4 v8, 0x2
 
@@ -2035,7 +2012,6 @@
 
 .method private correctTooHigh(I)V
     .locals 10
-    .param p1    # I
 
     iget v7, p0, Landroid/widget/AdapterView;->mFirstPosition:I
 
@@ -2141,7 +2117,6 @@
 
 .method private correctTooLow(I)V
     .locals 11
-    .param p1    # I
 
     iget v8, p0, Landroid/widget/AdapterView;->mFirstPosition:I
 
@@ -2259,7 +2234,6 @@
 
 .method private distanceToView(Landroid/view/View;)I
     .locals 4
-    .param p1    # Landroid/view/View;
 
     const/4 v0, 0x0
 
@@ -2325,8 +2299,6 @@
 
 .method private fillAboveAndBelow(Landroid/view/View;I)V
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     iget v0, p0, Landroid/widget/ListView;->mDividerHeight:I
 
@@ -2387,8 +2359,6 @@
 
 .method private fillDown(II)Landroid/view/View;
     .locals 9
-    .param p1    # I
-    .param p2    # I
 
     const/4 v3, 0x1
 
@@ -2487,8 +2457,6 @@
 
 .method private fillFromMiddle(II)Landroid/view/View;
     .locals 9
-    .param p1    # I
-    .param p2    # I
 
     const/4 v3, 0x1
 
@@ -2554,9 +2522,6 @@
 
 .method private fillFromSelection(III)Landroid/view/View;
     .locals 14
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     invoke-virtual {p0}, Landroid/view/View;->getVerticalFadingEdgeLength()I
 
@@ -2674,7 +2639,6 @@
 
 .method private fillFromTop(I)Landroid/view/View;
     .locals 2
-    .param p1    # I
 
     iget v0, p0, Landroid/widget/AdapterView;->mFirstPosition:I
 
@@ -2718,8 +2682,6 @@
 
 .method private fillSpecific(II)Landroid/view/View;
     .locals 11
-    .param p1    # I
-    .param p2    # I
 
     const/4 v3, 0x1
 
@@ -2850,8 +2812,6 @@
 
 .method private fillUp(II)Landroid/view/View;
     .locals 9
-    .param p1    # I
-    .param p2    # I
 
     const/4 v3, 0x0
 
@@ -3022,9 +2982,6 @@
 
 .method private getBottomSelectionPixel(III)I
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     move v0, p1
 
@@ -3042,9 +2999,6 @@
 
 .method private getTopSelectionPixel(III)I
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     move v0, p1
 
@@ -3058,7 +3012,6 @@
 
 .method private handleHorizontalFocusWithinListItem(I)Z
     .locals 8
-    .param p1    # I
 
     const/4 v6, 0x0
 
@@ -3198,10 +3151,6 @@
 
 .method private handleNewSelectionChange(Landroid/view/View;IIZ)V
     .locals 10
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Z
 
     const/4 v8, -0x1
 
@@ -3305,8 +3254,6 @@
 
 .method private isViewAncestorOf(Landroid/view/View;Landroid/view/View;)Z
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/View;
 
     const/4 v1, 0x1
 
@@ -3351,8 +3298,6 @@
 
 .method private logActivity(Landroid/view/View;Landroid/view/View;)V
     .locals 6
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/View;
 
     invoke-static {}, Landroid/util/GateConfig;->isGateEnabled()Z
 
@@ -3603,7 +3548,6 @@
 
 .method private lookForSelectablePositionOnScreen(I)I
     .locals 8
-    .param p1    # I
 
     const/4 v6, -0x1
 
@@ -3773,11 +3717,6 @@
 
 .method private makeAndAddView(IIZIZ)Landroid/view/View;
     .locals 9
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # I
-    .param p5    # Z
 
     iget-boolean v0, p0, Landroid/widget/AdapterView;->mDataChanged:Z
 
@@ -3849,9 +3788,6 @@
 
 .method private measureAndAdjustDown(Landroid/view/View;II)V
     .locals 4
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # I
 
     invoke-virtual {p1}, Landroid/view/View;->getHeight()I
 
@@ -3894,7 +3830,6 @@
 
 .method private measureItem(Landroid/view/View;)V
     .locals 8
-    .param p1    # Landroid/view/View;
 
     const/4 v7, 0x0
 
@@ -3956,9 +3891,6 @@
 
 .method private measureScrapChild(Landroid/view/View;II)V
     .locals 7
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v6, 0x0
 
@@ -4032,11 +3964,6 @@
 
 .method private moveSelection(Landroid/view/View;Landroid/view/View;III)Landroid/view/View;
     .locals 19
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-virtual/range {p0 .. p0}, Landroid/view/View;->getVerticalFadingEdgeLength()I
 
@@ -4382,9 +4309,6 @@
 
 .method private final nextSelectedPositionForDirection(Landroid/view/View;II)I
     .locals 8
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # I
 
     const/16 v7, 0x82
 
@@ -4495,7 +4419,6 @@
 
 .method private positionOfNewFocus(Landroid/view/View;)I
     .locals 5
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getChildCount()I
 
@@ -4539,7 +4462,6 @@
 
 .method private relayoutMeasuredItem(Landroid/view/View;)V
     .locals 7
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p1}, Landroid/view/View;->getMeasuredWidth()I
 
@@ -4568,7 +4490,6 @@
 
 .method private removeFixedViewInfo(Landroid/view/View;Ljava/util/ArrayList;)V
     .locals 4
-    .param p1    # Landroid/view/View;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -4612,7 +4533,6 @@
 
 .method private scrollListItemsBy(I)V
     .locals 12
-    .param p1    # I
 
     const/4 v11, 0x0
 
@@ -4833,13 +4753,6 @@
 
 .method private setupChild(Landroid/view/View;IIZIZZ)V
     .locals 22
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Z
-    .param p5    # I
-    .param p6    # Z
-    .param p7    # Z
 
     const-wide/16 v19, 0x8
 
@@ -5475,7 +5388,6 @@
 # virtual methods
 .method public addFooterView(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     const/4 v0, 0x0
 
@@ -5488,9 +5400,6 @@
 
 .method public addFooterView(Landroid/view/View;Ljava/lang/Object;Z)V
     .locals 5
-    .param p1    # Landroid/view/View;
-    .param p2    # Ljava/lang/Object;
-    .param p3    # Z
 
     new-instance v0, Landroid/widget/ListView$FixedViewInfo;
 
@@ -5543,7 +5452,6 @@
 
 .method public addHeaderView(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     const/4 v0, 0x0
 
@@ -5556,9 +5464,6 @@
 
 .method public addHeaderView(Landroid/view/View;Ljava/lang/Object;Z)V
     .locals 5
-    .param p1    # Landroid/view/View;
-    .param p2    # Ljava/lang/Object;
-    .param p3    # Z
 
     new-instance v0, Landroid/widget/ListView$FixedViewInfo;
 
@@ -5627,7 +5532,6 @@
 
 .method arrowScroll(I)Z
     .locals 3
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -5698,7 +5602,6 @@
 
 .method protected dispatchDraw(Landroid/graphics/Canvas;)V
     .locals 41
-    .param p1    # Landroid/graphics/Canvas;
 
     move-object/from16 v0, p0
 
@@ -6590,7 +6493,6 @@
 
 .method public dispatchKeyEvent(Landroid/view/KeyEvent;)Z
     .locals 3
-    .param p1    # Landroid/view/KeyEvent;
 
     invoke-super {p0, p1}, Landroid/view/ViewGroup;->dispatchKeyEvent(Landroid/view/KeyEvent;)Z
 
@@ -6624,9 +6526,6 @@
 
 .method protected drawChild(Landroid/graphics/Canvas;Landroid/view/View;J)Z
     .locals 2
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # Landroid/view/View;
-    .param p3    # J
 
     invoke-super {p0, p1, p2, p3, p4}, Landroid/view/ViewGroup;->drawChild(Landroid/graphics/Canvas;Landroid/view/View;J)Z
 
@@ -6650,9 +6549,6 @@
 
 .method drawDivider(Landroid/graphics/Canvas;Landroid/graphics/Rect;I)V
     .locals 1
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # Landroid/graphics/Rect;
-    .param p3    # I
 
     iget-object v0, p0, Landroid/widget/ListView;->mDivider:Landroid/graphics/drawable/Drawable;
 
@@ -6665,9 +6561,6 @@
 
 .method drawOverscrollFooter(Landroid/graphics/Canvas;Landroid/graphics/drawable/Drawable;Landroid/graphics/Rect;)V
     .locals 4
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # Landroid/graphics/drawable/Drawable;
-    .param p3    # Landroid/graphics/Rect;
 
     invoke-virtual {p2}, Landroid/graphics/drawable/Drawable;->getMinimumHeight()I
 
@@ -6703,9 +6596,6 @@
 
 .method drawOverscrollHeader(Landroid/graphics/Canvas;Landroid/graphics/drawable/Drawable;Landroid/graphics/Rect;)V
     .locals 4
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # Landroid/graphics/drawable/Drawable;
-    .param p3    # Landroid/graphics/Rect;
 
     invoke-virtual {p2}, Landroid/graphics/drawable/Drawable;->getMinimumHeight()I
 
@@ -6741,7 +6631,6 @@
 
 .method fillGap(Z)V
     .locals 6
-    .param p1    # Z
 
     const/16 v5, 0x22
 
@@ -6858,7 +6747,6 @@
 
 .method findMotionRow(I)I
     .locals 4
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getChildCount()I
 
@@ -6932,7 +6820,6 @@
 
 .method findViewByPredicateInHeadersOrFooters(Ljava/util/ArrayList;Lcom/android/internal/util/Predicate;Landroid/view/View;)Landroid/view/View;
     .locals 4
-    .param p3    # Landroid/view/View;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -6999,7 +6886,6 @@
 
 .method protected findViewByPredicateTraversal(Lcom/android/internal/util/Predicate;Landroid/view/View;)Landroid/view/View;
     .locals 3
-    .param p2    # Landroid/view/View;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -7053,7 +6939,6 @@
 
 .method findViewInHeadersOrFooters(Ljava/util/ArrayList;I)Landroid/view/View;
     .locals 4
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -7112,7 +6997,6 @@
 
 .method protected findViewTraversal(I)Landroid/view/View;
     .locals 3
-    .param p1    # I
 
     invoke-super {p0, p1}, Landroid/view/ViewGroup;->findViewTraversal(I)Landroid/view/View;
 
@@ -7154,7 +7038,6 @@
 
 .method findViewWithTagInHeadersOrFooters(Ljava/util/ArrayList;Ljava/lang/Object;)Landroid/view/View;
     .locals 4
-    .param p2    # Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -7215,7 +7098,6 @@
 
 .method protected findViewWithTagTraversal(Ljava/lang/Object;)Landroid/view/View;
     .locals 3
-    .param p1    # Ljava/lang/Object;
 
     invoke-super {p0, p1}, Landroid/view/ViewGroup;->findViewWithTagTraversal(Ljava/lang/Object;)Landroid/view/View;
 
@@ -7257,7 +7139,6 @@
 
 .method fullScroll(I)Z
     .locals 6
-    .param p1    # I
 
     const/4 v5, 0x1
 
@@ -8744,8 +8625,6 @@
 
 .method lookForSelectablePosition(IZ)I
     .locals 4
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v2, -0x1
 
@@ -8825,9 +8704,6 @@
 
 .method lookForSelectablePositionAfter(IIZ)I
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     const/4 v3, -0x1
 
@@ -8932,11 +8808,6 @@
 
 .method final measureHeightOfChildren(IIIII)I
     .locals 12
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     iget-object v1, p0, Landroid/widget/AbsListView;->mAdapter:Landroid/widget/ListAdapter;
 
@@ -9123,9 +8994,6 @@
 
 .method protected onFocusChanged(ZILandroid/graphics/Rect;)V
     .locals 15
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # Landroid/graphics/Rect;
 
     invoke-super/range {p0 .. p3}, Landroid/widget/AbsListView;->onFocusChanged(ZILandroid/graphics/Rect;)V
 
@@ -9248,7 +9116,6 @@
 
 .method public onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
     .locals 1
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
 
     invoke-super {p0, p1}, Landroid/widget/AbsListView;->onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
 
@@ -9265,7 +9132,6 @@
 
 .method public onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
     .locals 4
-    .param p1    # Landroid/view/accessibility/AccessibilityNodeInfo;
 
     invoke-super {p0, p1}, Landroid/widget/AbsListView;->onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
 
@@ -9296,9 +9162,6 @@
 
 .method public onInitializeAccessibilityNodeInfoForItem(Landroid/view/View;ILandroid/view/accessibility/AccessibilityNodeInfo;)V
     .locals 7
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # Landroid/view/accessibility/AccessibilityNodeInfo;
 
     const/4 v4, 0x0
 
@@ -9339,8 +9202,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x1
 
@@ -9353,9 +9214,6 @@
 
 .method public onKeyMultiple(IILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/view/KeyEvent;
 
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/ListView;->commonKey(IILandroid/view/KeyEvent;)Z
 
@@ -9366,8 +9224,6 @@
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x1
 
@@ -9380,8 +9236,6 @@
 
 .method protected onMeasure(II)V
     .locals 13
-    .param p1    # I
-    .param p2    # I
 
     const/4 v3, -0x1
 
@@ -9566,10 +9420,6 @@
 
 .method protected onSizeChanged(IIII)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getChildCount()I
 
@@ -9642,7 +9492,6 @@
 
 .method public onWindowFocusChanged(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-super {p0, p1}, Landroid/widget/AbsListView;->onWindowFocusChanged(Z)V
 
@@ -9660,7 +9509,6 @@
 
 .method pageScroll(I)Z
     .locals 8
-    .param p1    # I
 
     const/4 v4, 0x1
 
@@ -9807,7 +9655,6 @@
 
 .method public removeFooterView(Landroid/view/View;)Z
     .locals 2
-    .param p1    # Landroid/view/View;
 
     iget-object v1, p0, Landroid/widget/ListView;->mFooterViewInfos:Ljava/util/ArrayList;
 
@@ -9860,7 +9707,6 @@
 
 .method public removeHeaderView(Landroid/view/View;)Z
     .locals 2
-    .param p1    # Landroid/view/View;
 
     iget-object v1, p0, Landroid/widget/ListView;->mHeaderViewInfos:Ljava/util/ArrayList;
 
@@ -9913,9 +9759,6 @@
 
 .method public requestChildRectangleOnScreen(Landroid/view/View;Landroid/graphics/Rect;Z)Z
     .locals 15
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/graphics/Rect;
-    .param p3    # Z
 
     move-object/from16 v0, p2
 
@@ -10180,7 +10023,6 @@
 
 .method public bridge synthetic setAdapter(Landroid/widget/Adapter;)V
     .locals 0
-    .param p1    # Landroid/widget/Adapter;
 
     check-cast p1, Landroid/widget/ListAdapter;
 
@@ -10191,7 +10033,6 @@
 
 .method public setAdapter(Landroid/widget/ListAdapter;)V
     .locals 6
-    .param p1    # Landroid/widget/ListAdapter;
 
     const/4 v5, 0x1
 
@@ -10357,7 +10198,6 @@
 
 .method public setCacheColorHint(I)V
     .locals 3
-    .param p1    # I
 
     ushr-int/lit8 v1, p1, 0x18
 
@@ -10400,7 +10240,6 @@
 
 .method public setDivider(Landroid/graphics/drawable/Drawable;)V
     .locals 3
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     const/4 v0, 0x0
 
@@ -10445,7 +10284,6 @@
 
 .method public setDividerHeight(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/widget/ListView;->mDividerHeight:I
 
@@ -10458,7 +10296,6 @@
 
 .method public setFooterDividersEnabled(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/widget/ListView;->mFooterDividersEnabled:Z
 
@@ -10469,7 +10306,6 @@
 
 .method public setHeaderDividersEnabled(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/widget/ListView;->mHeaderDividersEnabled:Z
 
@@ -10480,7 +10316,6 @@
 
 .method public setItemsCanFocus(Z)V
     .locals 1
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/widget/ListView;->mItemsCanFocus:Z
 
@@ -10496,7 +10331,6 @@
 
 .method public setOverscrollFooter(Landroid/graphics/drawable/Drawable;)V
     .locals 0
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     iput-object p1, p0, Landroid/widget/ListView;->mOverScrollFooter:Landroid/graphics/drawable/Drawable;
 
@@ -10507,7 +10341,6 @@
 
 .method public setOverscrollHeader(Landroid/graphics/drawable/Drawable;)V
     .locals 1
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     iput-object p1, p0, Landroid/widget/ListView;->mOverScrollHeader:Landroid/graphics/drawable/Drawable;
 
@@ -10523,7 +10356,6 @@
 
 .method public setRemoteViewsAdapter(Landroid/content/Intent;)V
     .locals 0
-    .param p1    # Landroid/content/Intent;
     .annotation runtime Landroid/view/RemotableViewMethod;
     .end annotation
 
@@ -10534,7 +10366,6 @@
 
 .method public setSelection(I)V
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -10582,8 +10413,6 @@
 
 .method public setSelectionFromTop(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Landroid/widget/AbsListView;->mAdapter:Landroid/widget/ListAdapter;
 
@@ -10662,7 +10491,6 @@
 
 .method setSelectionInt(I)V
     .locals 3
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/widget/AdapterView;->setNextSelectedPositionInt(I)V
 
@@ -10710,7 +10538,6 @@
 
 .method public smoothScrollByOffset(I)V
     .locals 0
-    .param p1    # I
     .annotation runtime Landroid/view/RemotableViewMethod;
     .end annotation
 
@@ -10721,7 +10548,6 @@
 
 .method public smoothScrollToPosition(I)V
     .locals 0
-    .param p1    # I
     .annotation runtime Landroid/view/RemotableViewMethod;
     .end annotation
 

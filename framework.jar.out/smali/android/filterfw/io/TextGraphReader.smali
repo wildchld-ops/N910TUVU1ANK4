@@ -56,7 +56,6 @@
 
 .method static synthetic access$000(Landroid/filterfw/io/TextGraphReader;)Landroid/filterfw/core/FilterFactory;
     .locals 1
-    .param p0    # Landroid/filterfw/io/TextGraphReader;
 
     iget-object v0, p0, Landroid/filterfw/io/TextGraphReader;->mFactory:Landroid/filterfw/core/FilterFactory;
 
@@ -65,7 +64,6 @@
 
 .method static synthetic access$100(Landroid/filterfw/io/TextGraphReader;)Landroid/filterfw/core/Filter;
     .locals 1
-    .param p0    # Landroid/filterfw/io/TextGraphReader;
 
     iget-object v0, p0, Landroid/filterfw/io/TextGraphReader;->mCurrentFilter:Landroid/filterfw/core/Filter;
 
@@ -74,8 +72,6 @@
 
 .method static synthetic access$102(Landroid/filterfw/io/TextGraphReader;Landroid/filterfw/core/Filter;)Landroid/filterfw/core/Filter;
     .locals 0
-    .param p0    # Landroid/filterfw/io/TextGraphReader;
-    .param p1    # Landroid/filterfw/core/Filter;
 
     iput-object p1, p0, Landroid/filterfw/io/TextGraphReader;->mCurrentFilter:Landroid/filterfw/core/Filter;
 
@@ -84,7 +80,6 @@
 
 .method static synthetic access$200(Landroid/filterfw/io/TextGraphReader;)Landroid/filterfw/core/FilterGraph;
     .locals 1
-    .param p0    # Landroid/filterfw/io/TextGraphReader;
 
     iget-object v0, p0, Landroid/filterfw/io/TextGraphReader;->mCurrentGraph:Landroid/filterfw/core/FilterGraph;
 
@@ -283,7 +278,6 @@
 
 .method private bindExternal(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/filterfw/io/GraphIOException;
@@ -470,9 +464,6 @@
 
 .method private expectSettingClass(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Class;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Object;
-    .param p3    # Ljava/lang/Class;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/filterfw/io/GraphIOException;
@@ -553,7 +544,6 @@
 
 .method private parseString(Ljava/lang/String;)V
     .locals 49
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/filterfw/io/GraphIOException;
@@ -1239,8 +1229,6 @@
 
 .method private readKeyValueAssignments(Landroid/filterfw/io/PatternScanner;Ljava/util/regex/Pattern;)Landroid/filterfw/core/KeyValueMap;
     .locals 24
-    .param p1    # Landroid/filterfw/io/PatternScanner;
-    .param p2    # Ljava/util/regex/Pattern;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/filterfw/io/GraphIOException;
@@ -1685,7 +1673,6 @@
 # virtual methods
 .method public readGraphString(Ljava/lang/String;)Landroid/filterfw/core/FilterGraph;
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/filterfw/io/GraphIOException;
@@ -1713,7 +1700,6 @@
 
 .method public readKeyValueAssignments(Ljava/lang/String;)Landroid/filterfw/core/KeyValueMap;
     .locals 3
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/filterfw/io/GraphIOException;

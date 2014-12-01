@@ -45,8 +45,6 @@
 # direct methods
 .method constructor <init>(Landroid/content/Context;Lcom/android/settings/wifi/AccessPoint;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/settings/wifi/AccessPoint;
 
     invoke-direct {p0, p1}, Landroid/app/AlertDialog;-><init>(Landroid/content/Context;)V
 
@@ -71,7 +69,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/wifi/PrioritySettingDialog;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/PrioritySettingDialog;
 
     iget-object v0, p0, Lcom/android/settings/wifi/PrioritySettingDialog;->mContext:Landroid/content/Context;
 
@@ -80,7 +77,6 @@
 
 .method static getOrderedConfigs(Landroid/net/wifi/WifiManager;)Ljava/util/List;
     .locals 8
-    .param p0    # Landroid/net/wifi/WifiManager;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -337,17 +333,12 @@
 # virtual methods
 .method public afterTextChanged(Landroid/text/Editable;)V
     .locals 0
-    .param p1    # Landroid/text/Editable;
 
     return-void
 .end method
 
 .method public beforeTextChanged(Ljava/lang/CharSequence;III)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     return-void
 .end method
@@ -370,7 +361,6 @@
 
 .method protected cancelOrDismiss(Z)V
     .locals 3
-    .param p1    # Z
 
     const-string v0, "WifiPriorityDialog"
 
@@ -453,8 +443,6 @@
 
 .method public onCheckedChanged(Landroid/widget/RadioGroup;I)V
     .locals 3
-    .param p1    # Landroid/widget/RadioGroup;
-    .param p2    # I
 
     const-string v0, "WifiPriorityDialog"
 
@@ -485,8 +473,6 @@
 
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 9
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     const/4 v8, -0x1
 
@@ -634,14 +620,12 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     return-void
 .end method
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 6
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v5, 0x0
 
@@ -812,24 +796,18 @@
 
 .method public onItemSelected(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
     .locals 0
-    .param p1    # Landroid/widget/AdapterView;
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
 
     return-void
 .end method
 
 .method public onNothingSelected(Landroid/widget/AdapterView;)V
     .locals 0
-    .param p1    # Landroid/widget/AdapterView;
 
     return-void
 .end method
 
 .method public onShow(Landroid/content/DialogInterface;)V
     .locals 0
-    .param p1    # Landroid/content/DialogInterface;
 
     invoke-direct {p0}, Lcom/android/settings/wifi/PrioritySettingDialog;->validatePriorityButtons()V
 
@@ -838,17 +816,12 @@
 
 .method public onTextChanged(Ljava/lang/CharSequence;III)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     return-void
 .end method
 
 .method protected updateRadioGroup(I)V
     .locals 9
-    .param p1    # I
 
     iget-object v6, p0, Lcom/android/settings/wifi/PrioritySettingDialog;->orderedConfigs:Ljava/util/List;
 

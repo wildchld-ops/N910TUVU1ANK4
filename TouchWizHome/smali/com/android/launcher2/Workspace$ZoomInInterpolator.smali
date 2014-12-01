@@ -52,7 +52,6 @@
 # virtual methods
 .method public getInterpolation(F)F
     .locals 2
-    .param p1    # F
 
     iget-object v0, p0, Lcom/android/launcher2/Workspace$ZoomInInterpolator;->decelerate:Landroid/view/animation/DecelerateInterpolator;
 

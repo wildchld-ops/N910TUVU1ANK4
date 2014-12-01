@@ -98,8 +98,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/os/UserHandle;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/UserHandle;
 
     const/4 v2, 0x0
 
@@ -136,7 +134,6 @@
 
 .method public constructor <init>(Landroid/os/IBinder;)V
     .locals 1
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -165,9 +162,6 @@
 
 .method public constructor <init>(Landroid/os/UserHandle;Landroid/content/Context;I)V
     .locals 3
-    .param p1    # Landroid/os/UserHandle;
-    .param p2    # Landroid/content/Context;
-    .param p3    # I
 
     const/4 v2, 0x0
 
@@ -218,8 +212,6 @@
 
 .method static synthetic access$002(Lcom/sec/smartcard/pinservice/SmartCardPinManager;Lcom/sec/smartcard/pinservice/ISmartCardPinService;)Lcom/sec/smartcard/pinservice/ISmartCardPinService;
     .locals 0
-    .param p0    # Lcom/sec/smartcard/pinservice/SmartCardPinManager;
-    .param p1    # Lcom/sec/smartcard/pinservice/ISmartCardPinService;
 
     iput-object p1, p0, Lcom/sec/smartcard/pinservice/SmartCardPinManager;->mSmartCardPin:Lcom/sec/smartcard/pinservice/ISmartCardPinService;
 
@@ -228,8 +220,6 @@
 
 .method static synthetic access$102(Lcom/sec/smartcard/pinservice/SmartCardPinManager;Z)Z
     .locals 0
-    .param p0    # Lcom/sec/smartcard/pinservice/SmartCardPinManager;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/smartcard/pinservice/SmartCardPinManager;->mServiceConnectionProgress:Z
 
@@ -246,8 +236,6 @@
 
 .method static synthetic access$302(Lcom/sec/smartcard/pinservice/SmartCardPinManager;[C)[C
     .locals 0
-    .param p0    # Lcom/sec/smartcard/pinservice/SmartCardPinManager;
-    .param p1    # [C
 
     iput-object p1, p0, Lcom/sec/smartcard/pinservice/SmartCardPinManager;->mPin:[C
 
@@ -256,8 +244,6 @@
 
 .method static synthetic access$402(Lcom/sec/smartcard/pinservice/SmartCardPinManager;Z)Z
     .locals 0
-    .param p0    # Lcom/sec/smartcard/pinservice/SmartCardPinManager;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/smartcard/pinservice/SmartCardPinManager;->mIsCallbackCalled:Z
 
@@ -266,7 +252,6 @@
 
 .method private bindSmartCardPinService(Landroid/os/UserHandle;)V
     .locals 4
-    .param p1    # Landroid/os/UserHandle;
 
     const/4 v3, 0x1
 
@@ -370,7 +355,6 @@
 
 .method public static isCardRegistered(Landroid/content/Context;)Z
     .locals 8
-    .param p0    # Landroid/content/Context;
 
     const/4 v3, 0x0
 
@@ -510,7 +494,6 @@
 
 .method public static isSmartCardAuthenticationInstalled(Landroid/content/Context;)Z
     .locals 8
-    .param p0    # Landroid/content/Context;
 
     const/4 v3, 0x0
 
@@ -587,7 +570,6 @@
 # virtual methods
 .method public bindSmartCardPinService_Sync(Landroid/os/UserHandle;)V
     .locals 5
-    .param p1    # Landroid/os/UserHandle;
 
     const/4 v4, 0x1
 
@@ -711,7 +693,6 @@
 
 .method public getCardLoginAttemptRemain(Lcom/sec/smartcard/pinservice/ISmartCardInfoCallback;)V
     .locals 3
-    .param p1    # Lcom/sec/smartcard/pinservice/ISmartCardInfoCallback;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;
@@ -764,7 +745,6 @@
 
 .method public getPin(Lcom/sec/smartcard/pinservice/SmartCardPinManager$PinCallback;)V
     .locals 3
-    .param p1    # Lcom/sec/smartcard/pinservice/SmartCardPinManager$PinCallback;
 
     :try_start_0
     iget-object v1, p0, Lcom/sec/smartcard/pinservice/SmartCardPinManager;->mSmartCardPin:Lcom/sec/smartcard/pinservice/ISmartCardPinService;
@@ -919,8 +899,6 @@
 
 .method public registerCard([CLcom/sec/smartcard/pinservice/ISmartCardRegisterCallback;)V
     .locals 3
-    .param p1    # [C
-    .param p2    # Lcom/sec/smartcard/pinservice/ISmartCardRegisterCallback;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;
@@ -1013,8 +991,6 @@
 
 .method public unRegisterCard([CLcom/sec/smartcard/pinservice/ISmartCardRegisterCallback;)V
     .locals 3
-    .param p1    # [C
-    .param p2    # Lcom/sec/smartcard/pinservice/ISmartCardRegisterCallback;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;
@@ -1102,8 +1078,6 @@
 
 .method public verifyCard([CLcom/sec/smartcard/pinservice/ISmartCardVerifyCallback;)V
     .locals 3
-    .param p1    # [C
-    .param p2    # Lcom/sec/smartcard/pinservice/ISmartCardVerifyCallback;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;

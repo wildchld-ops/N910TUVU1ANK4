@@ -16,7 +16,6 @@
 # direct methods
 .method public constructor <init>(Landroid/graphics/Bitmap;)V
     .locals 1
-    .param p1    # Landroid/graphics/Bitmap;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -31,8 +30,6 @@
 
 .method public constructor <init>(Landroid/graphics/Bitmap;I)V
     .locals 1
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -223,7 +220,6 @@
 
 .method public setBitmap(Landroid/graphics/Bitmap;)V
     .locals 0
-    .param p1    # Landroid/graphics/Bitmap;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/RotateBitmap;->mBitmap:Landroid/graphics/Bitmap;
 
@@ -232,7 +228,6 @@
 
 .method public setRotation(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/app/camera/RotateBitmap;->mRotation:I
 

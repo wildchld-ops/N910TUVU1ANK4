@@ -33,9 +33,6 @@
 # virtual methods
 .method public providerChanged(ILandroid/appwidget/AppWidgetProviderInfo;I)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/appwidget/AppWidgetProviderInfo;
-    .param p3    # I
 
     iget-object v1, p0, Landroid/appwidget/AppWidgetHost$Callbacks;->this$0:Landroid/appwidget/AppWidgetHost;
 
@@ -70,7 +67,6 @@
 
 .method public providersChanged(I)V
     .locals 4
-    .param p1    # I
 
     iget-object v1, p0, Landroid/appwidget/AppWidgetHost$Callbacks;->this$0:Landroid/appwidget/AppWidgetHost;
 
@@ -91,9 +87,6 @@
 
 .method public updateAppWidget(ILandroid/widget/RemoteViews;I)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/widget/RemoteViews;
-    .param p3    # I
 
     iget-object v1, p0, Landroid/appwidget/AppWidgetHost$Callbacks;->this$0:Landroid/appwidget/AppWidgetHost;
 
@@ -134,9 +127,6 @@
 
 .method public viewDataChanged(III)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     iget-object v1, p0, Landroid/appwidget/AppWidgetHost$Callbacks;->this$0:Landroid/appwidget/AppWidgetHost;
 

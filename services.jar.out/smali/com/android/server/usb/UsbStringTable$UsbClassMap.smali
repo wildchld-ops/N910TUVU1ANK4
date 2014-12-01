@@ -33,9 +33,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/usb/UsbStringTable;III)V
     .locals 2
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/4 v1, 0x0
 
@@ -62,10 +59,6 @@
 
 .method constructor <init>(Lcom/android/server/usb/UsbStringTable;IIILjava/lang/String;)V
     .locals 1
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/server/usb/UsbStringTable$UsbClassMap;->this$0:Lcom/android/server/usb/UsbStringTable;
 
@@ -92,11 +85,6 @@
 
 .method constructor <init>(Lcom/android/server/usb/UsbStringTable;IIILjava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Ljava/lang/String;
-    .param p6    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/server/usb/UsbStringTable$UsbClassMap;->this$0:Lcom/android/server/usb/UsbStringTable;
 
@@ -121,8 +109,6 @@
 
 .method constructor <init>(Lcom/android/server/usb/UsbStringTable;ILjava/lang/String;)V
     .locals 2
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -155,9 +141,6 @@
 # virtual methods
 .method public equals(III)Z
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v0, 0x1
 
@@ -201,7 +184,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 5
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x1
 

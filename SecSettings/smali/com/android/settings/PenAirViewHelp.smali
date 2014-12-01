@@ -51,8 +51,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/PenAirViewHelp;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/settings/PenAirViewHelp;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/settings/PenAirViewHelp;->handleOnClickAction(Ljava/lang/String;)V
 
@@ -61,7 +59,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/PenAirViewHelp;)Landroid/widget/Switch;
     .locals 1
-    .param p0    # Lcom/android/settings/PenAirViewHelp;
 
     iget-object v0, p0, Lcom/android/settings/PenAirViewHelp;->mActionBarSwitch:Landroid/widget/Switch;
 
@@ -70,7 +67,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/PenAirViewHelp;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/settings/PenAirViewHelp;
 
     iget-object v0, p0, Lcom/android/settings/PenAirViewHelp;->mDBItem:Ljava/lang/String;
 
@@ -109,7 +105,6 @@
 
 .method private handleOnClickAction(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 
@@ -150,7 +145,6 @@
 
 .method private showInforPreviewDisableDialog(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/settings/PenAirViewHelp;->dismissAllDialog()V
 
@@ -293,7 +287,6 @@
 
 .method private showTurnOnDialog(Ljava/lang/String;)V
     .locals 11
-    .param p1    # Ljava/lang/String;
 
     const v10, 0x7f090f3c
 
@@ -585,8 +578,6 @@
 # virtual methods
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 6
-    .param p1    # Landroid/widget/CompoundButton;
-    .param p2    # Z
 
     const/4 v2, 0x1
 
@@ -679,7 +670,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 8
-    .param p1    # Landroid/os/Bundle;
 
     const/16 v6, 0x10
 
@@ -780,9 +770,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 25
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const/16 v22, 0x0
 
@@ -2305,7 +2292,6 @@
 
 .method public startTryActually(Ljava/lang/String;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const/4 v5, 0x1
 

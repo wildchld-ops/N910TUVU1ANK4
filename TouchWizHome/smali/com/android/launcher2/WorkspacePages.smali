@@ -30,8 +30,6 @@
 
 .method static addPageAt(ILandroid/content/Context;)Z
     .locals 5
-    .param p0    # I
-    .param p1    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -87,8 +85,6 @@
 
 .method static deletePageAt(ILandroid/content/Context;)Z
     .locals 5
-    .param p0    # I
-    .param p1    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -150,8 +146,6 @@
 
 .method static itemAddedToPage(ILandroid/content/Context;)Z
     .locals 2
-    .param p0    # I
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x1
 
@@ -190,9 +184,6 @@
 
 .method static movePage(IILandroid/content/Context;)Z
     .locals 5
-    .param p0    # I
-    .param p1    # I
-    .param p2    # Landroid/content/Context;
 
     invoke-static {p2}, Lcom/android/launcher2/WorkspacePages;->readPreferences(Landroid/content/Context;)V
 
@@ -281,8 +272,6 @@
 
 .method static pageHasAlwaysBeenEmpty(ILandroid/content/Context;)Z
     .locals 1
-    .param p0    # I
-    .param p1    # Landroid/content/Context;
 
     invoke-static {p1}, Lcom/android/launcher2/WorkspacePages;->readPreferences(Landroid/content/Context;)V
 
@@ -314,7 +303,6 @@
 
 .method private static readPreferences(Landroid/content/Context;)V
     .locals 8
-    .param p0    # Landroid/content/Context;
 
     const/4 v5, 0x0
 
@@ -445,7 +433,6 @@
 
 .method private static writePreferences(Landroid/content/Context;)V
     .locals 5
-    .param p0    # Landroid/content/Context;
 
     new-instance v2, Ljava/lang/StringBuilder;
 

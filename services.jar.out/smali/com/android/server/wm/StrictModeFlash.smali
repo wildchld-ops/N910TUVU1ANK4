@@ -24,8 +24,6 @@
 # direct methods
 .method public constructor <init>(Landroid/view/Display;Landroid/view/SurfaceSession;)V
     .locals 9
-    .param p1    # Landroid/view/Display;
-    .param p2    # Landroid/view/SurfaceSession;
 
     const/4 v8, 0x1
 
@@ -215,8 +213,6 @@
 # virtual methods
 .method positionSurface(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget v0, p0, Lcom/android/server/wm/StrictModeFlash;->mLastDW:I
 
@@ -247,7 +243,6 @@
 
 .method public setVisibility(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/server/wm/StrictModeFlash;->mSurfaceControl:Landroid/view/SurfaceControl;
 

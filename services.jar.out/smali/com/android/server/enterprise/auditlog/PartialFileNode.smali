@@ -42,8 +42,6 @@
 
 .method constructor <init>(Ljava/io/File;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/io/File;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -58,8 +56,6 @@
 
 .method constructor <init>(Ljava/lang/String;Ljava/lang/String;)V
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const-wide/16 v4, 0x0
 
@@ -312,7 +308,6 @@
 
 .method declared-synchronized setDeprecated(Z)Z
     .locals 1
-    .param p1    # Z
 
     monitor-enter p0
 
@@ -369,7 +364,6 @@
 
 .method write(Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     invoke-virtual {p1}, Ljava/lang/String;->getBytes()[B

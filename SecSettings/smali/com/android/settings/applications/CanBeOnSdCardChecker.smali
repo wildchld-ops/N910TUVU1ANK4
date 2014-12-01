@@ -34,7 +34,6 @@
 # virtual methods
 .method check(Landroid/content/pm/ApplicationInfo;)Z
     .locals 4
-    .param p1    # Landroid/content/pm/ApplicationInfo;
 
     const/4 v3, 0x2
 

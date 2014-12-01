@@ -40,8 +40,6 @@
 # direct methods
 .method public constructor <init>(Landroid/webkitsec/HtmlComposerView;Landroid/content/Context;Landroid/webkitsec/HtmlComposerView;)V
     .locals 4
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/webkitsec/HtmlComposerView;
 
     const/4 v3, -0x2
 
@@ -276,7 +274,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Landroid/webkitsec/HtmlComposerView$ActionPopupWindow;->mPasteTextView:Landroid/widget/TextView;
 

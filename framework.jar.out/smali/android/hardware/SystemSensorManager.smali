@@ -112,8 +112,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/os/Looper;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/Looper;
 
     invoke-direct {p0}, Landroid/hardware/SensorManager;-><init>()V
 
@@ -208,7 +206,6 @@
 
 .method protected static EncodeLog(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     sget-boolean v0, Landroid/hardware/SystemSensorManager;->IS_DEBUG:Z
 
@@ -233,7 +230,6 @@
 
 .method static synthetic access$100(Landroid/hardware/SystemSensorManager;)I
     .locals 1
-    .param p0    # Landroid/hardware/SystemSensorManager;
 
     iget v0, p0, Landroid/hardware/SystemSensorManager;->mTargetSdkLevel:I
 
@@ -319,9 +315,6 @@
 # virtual methods
 .method protected cancelTriggerSensorImpl(Landroid/hardware/TriggerEventListener;Landroid/hardware/Sensor;Z)Z
     .locals 7
-    .param p1    # Landroid/hardware/TriggerEventListener;
-    .param p2    # Landroid/hardware/Sensor;
-    .param p3    # Z
 
     const/4 v1, 0x0
 
@@ -454,7 +447,6 @@
 
 .method protected flushImpl(Landroid/hardware/SensorEventListener;)Z
     .locals 4
-    .param p1    # Landroid/hardware/SensorEventListener;
 
     const/4 v1, 0x0
 
@@ -532,7 +524,6 @@
 
 .method public get_motion_sensor(I)Landroid/hardware/Sensor;
     .locals 3
-    .param p1    # I
 
     const-string v1, "SensorManager"
 
@@ -575,12 +566,6 @@
 
 .method protected registerListenerImpl(Landroid/hardware/SensorEventListener;Landroid/hardware/Sensor;ILandroid/os/Handler;II)Z
     .locals 7
-    .param p1    # Landroid/hardware/SensorEventListener;
-    .param p2    # Landroid/hardware/Sensor;
-    .param p3    # I
-    .param p4    # Landroid/os/Handler;
-    .param p5    # I
-    .param p6    # I
 
     const/4 v3, 0x0
 
@@ -800,8 +785,6 @@
 
 .method protected requestTriggerSensorImpl(Landroid/hardware/TriggerEventListener;Landroid/hardware/Sensor;)Z
     .locals 7
-    .param p1    # Landroid/hardware/TriggerEventListener;
-    .param p2    # Landroid/hardware/Sensor;
 
     const/4 v2, 0x0
 
@@ -986,8 +969,6 @@
 
 .method protected unregisterListenerImpl(Landroid/hardware/SensorEventListener;Landroid/hardware/Sensor;)V
     .locals 7
-    .param p1    # Landroid/hardware/SensorEventListener;
-    .param p2    # Landroid/hardware/Sensor;
 
     if-eqz p2, :cond_0
 

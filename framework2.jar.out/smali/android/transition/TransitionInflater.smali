@@ -10,7 +10,6 @@
 # direct methods
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -21,9 +20,6 @@
 
 .method private createTransitionFromXml(Lorg/xmlpull/v1/XmlPullParser;Landroid/util/AttributeSet;Landroid/transition/TransitionSet;)Landroid/transition/Transition;
     .locals 12
-    .param p1    # Lorg/xmlpull/v1/XmlPullParser;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # Landroid/transition/TransitionSet;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -303,9 +299,6 @@
 
 .method private createTransitionManagerFromXml(Lorg/xmlpull/v1/XmlPullParser;Landroid/util/AttributeSet;Landroid/view/ViewGroup;)Landroid/transition/TransitionManager;
     .locals 7
-    .param p1    # Lorg/xmlpull/v1/XmlPullParser;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # Landroid/view/ViewGroup;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -412,7 +405,6 @@
 
 .method public static from(Landroid/content/Context;)Landroid/transition/TransitionInflater;
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     new-instance v0, Landroid/transition/TransitionInflater;
 
@@ -423,9 +415,6 @@
 
 .method private getTargetIds(Lorg/xmlpull/v1/XmlPullParser;Landroid/util/AttributeSet;Landroid/transition/Transition;)V
     .locals 11
-    .param p1    # Lorg/xmlpull/v1/XmlPullParser;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # Landroid/transition/Transition;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -567,8 +556,6 @@
 
 .method private loadTransition(Landroid/transition/Transition;Landroid/util/AttributeSet;)Landroid/transition/Transition;
     .locals 12
-    .param p1    # Landroid/transition/Transition;
-    .param p2    # Landroid/util/AttributeSet;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/res/Resources$NotFoundException;
@@ -641,9 +628,6 @@
 
 .method private loadTransition(Landroid/util/AttributeSet;Landroid/view/ViewGroup;Landroid/transition/TransitionManager;)V
     .locals 10
-    .param p1    # Landroid/util/AttributeSet;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/transition/TransitionManager;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/res/Resources$NotFoundException;
@@ -757,7 +741,6 @@
 # virtual methods
 .method public inflateTransition(I)Landroid/transition/Transition;
     .locals 5
-    .param p1    # I
 
     iget-object v3, p0, Landroid/transition/TransitionInflater;->mContext:Landroid/content/Context;
 
@@ -860,8 +843,6 @@
 
 .method public inflateTransitionManager(ILandroid/view/ViewGroup;)Landroid/transition/TransitionManager;
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/view/ViewGroup;
 
     iget-object v3, p0, Landroid/transition/TransitionInflater;->mContext:Landroid/content/Context;
 

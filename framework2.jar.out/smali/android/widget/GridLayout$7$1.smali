@@ -37,11 +37,6 @@
 # virtual methods
 .method protected getOffset(Landroid/widget/GridLayout;Landroid/view/View;Landroid/widget/GridLayout$Alignment;IZ)I
     .locals 2
-    .param p1    # Landroid/widget/GridLayout;
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/widget/GridLayout$Alignment;
-    .param p4    # I
-    .param p5    # Z
 
     const/4 v0, 0x0
 
@@ -58,8 +53,6 @@
 
 .method protected include(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     invoke-super {p0, p1, p2}, Landroid/widget/GridLayout$Bounds;->include(II)V
 
@@ -90,7 +83,6 @@
 
 .method protected size(Z)I
     .locals 2
-    .param p1    # Z
 
     invoke-super {p0, p1}, Landroid/widget/GridLayout$Bounds;->size(Z)I
 

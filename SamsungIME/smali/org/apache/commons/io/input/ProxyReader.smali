@@ -6,7 +6,6 @@
 # direct methods
 .method public constructor <init>(Ljava/io/Reader;)V
     .locals 0
-    .param p1    # Ljava/io/Reader;
 
     invoke-direct {p0, p1}, Ljava/io/FilterReader;-><init>(Ljava/io/Reader;)V
 
@@ -32,7 +31,6 @@
 
 .method public declared-synchronized mark(I)V
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -91,7 +89,6 @@
 
 .method public read([C)I
     .locals 1
-    .param p1    # [C
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -109,9 +106,6 @@
 
 .method public read([CII)I
     .locals 1
-    .param p1    # [C
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -175,7 +169,6 @@
 
 .method public skip(J)J
     .locals 2
-    .param p1    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

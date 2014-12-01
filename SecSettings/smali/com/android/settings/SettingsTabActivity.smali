@@ -238,7 +238,6 @@
 
 .method static synthetic access$402(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/settings/SettingsTabActivity;->mDirectSettingEnabler:Z
 
@@ -279,7 +278,6 @@
 
 .method static synthetic access$802(I)I
     .locals 0
-    .param p0    # I
 
     sput p0, Lcom/android/settings/SettingsTabActivity;->mWifiSummaryId:I
 
@@ -345,7 +343,6 @@
 
 .method private getVoiceControlIntent(Landroid/preference/PreferenceActivity$Header;)Z
     .locals 6
-    .param p1    # Landroid/preference/PreferenceActivity$Header;
 
     const/4 v4, 0x1
 
@@ -2971,7 +2968,6 @@
 
 .method public onAccountsUpdated([Landroid/accounts/Account;)V
     .locals 1
-    .param p1    # [Landroid/accounts/Account;
 
     iget-object v0, p0, Lcom/android/settings/SettingsTabActivity;->mAuthenticatorHelper:Lcom/android/settings/accounts/AuthenticatorHelper;
 
@@ -3046,7 +3042,6 @@
 
 .method public onAttachFragment(Landroid/app/Fragment;)V
     .locals 1
-    .param p1    # Landroid/app/Fragment;
 
     invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onAttachFragment(Landroid/app/Fragment;)V
 
@@ -3621,7 +3616,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 4
-    .param p1    # Landroid/content/res/Configuration;
 
     const v3, 0x7f0b003f
 
@@ -3692,7 +3686,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 12
-    .param p1    # Landroid/os/Bundle;
 
     const v11, 0x7f0b003e
 
@@ -4182,7 +4175,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 4
-    .param p1    # Landroid/view/Menu;
 
     const/4 v3, 0x1
 
@@ -4235,8 +4227,6 @@
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     invoke-super {p0, p1, p2}, Landroid/preference/PreferenceActivity;->onKeyUp(ILandroid/view/KeyEvent;)Z
 
@@ -4264,7 +4254,6 @@
 
 .method public onNewIntent(Landroid/content/Intent;)V
     .locals 1
-    .param p1    # Landroid/content/Intent;
 
     invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onNewIntent(Landroid/content/Intent;)V
 
@@ -4284,7 +4273,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -4461,7 +4449,6 @@
 
 .method public setListAdapter(Landroid/widget/ListAdapter;)V
     .locals 3
-    .param p1    # Landroid/widget/ListAdapter;
 
     if-nez p1, :cond_0
 
@@ -4490,7 +4477,6 @@
 
 .method public setSearchHierarchyOpen(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/SettingsTabActivity;->mOpenSearchHierarchy:Z
 
@@ -4499,12 +4485,6 @@
 
 .method public startWithFragment(Ljava/lang/String;Landroid/os/Bundle;Landroid/app/Fragment;III)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Bundle;
-    .param p3    # Landroid/app/Fragment;
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     const/4 v4, 0x1
 

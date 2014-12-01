@@ -30,7 +30,6 @@
 # virtual methods
 .method public abortAnimation(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Landroid/widget/Scroller;
 
@@ -41,7 +40,6 @@
 
 .method public computeScrollOffset(Ljava/lang/Object;)Z
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Landroid/widget/Scroller;
 
@@ -54,8 +52,6 @@
 
 .method public createScroller(Landroid/content/Context;Landroid/view/animation/Interpolator;)Ljava/lang/Object;
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/view/animation/Interpolator;
 
     if-eqz p2, :cond_0
 
@@ -76,15 +72,6 @@
 
 .method public fling(Ljava/lang/Object;IIIIIIII)V
     .locals 9
-    .param p1    # Ljava/lang/Object;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
-    .param p9    # I
 
     move-object v0, p1
 
@@ -113,17 +100,6 @@
 
 .method public fling(Ljava/lang/Object;IIIIIIIIII)V
     .locals 9
-    .param p1    # Ljava/lang/Object;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
-    .param p9    # I
-    .param p10    # I
-    .param p11    # I
 
     move-object v0, p1
 
@@ -152,7 +128,6 @@
 
 .method public getCurrVelocity(Ljava/lang/Object;)F
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     const/4 v0, 0x0
 
@@ -161,7 +136,6 @@
 
 .method public getCurrX(Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Landroid/widget/Scroller;
 
@@ -174,7 +148,6 @@
 
 .method public getCurrY(Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Landroid/widget/Scroller;
 
@@ -187,7 +160,6 @@
 
 .method public getFinalX(Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Landroid/widget/Scroller;
 
@@ -200,7 +172,6 @@
 
 .method public getFinalY(Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Landroid/widget/Scroller;
 
@@ -213,7 +184,6 @@
 
 .method public isFinished(Ljava/lang/Object;)Z
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Landroid/widget/Scroller;
 
@@ -226,7 +196,6 @@
 
 .method public isOverScrolled(Ljava/lang/Object;)Z
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     const/4 v0, 0x0
 
@@ -235,31 +204,18 @@
 
 .method public notifyHorizontalEdgeReached(Ljava/lang/Object;III)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     return-void
 .end method
 
 .method public notifyVerticalEdgeReached(Ljava/lang/Object;III)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     return-void
 .end method
 
 .method public startScroll(Ljava/lang/Object;IIII)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     check-cast p1, Landroid/widget/Scroller;
 
@@ -270,12 +226,6 @@
 
 .method public startScroll(Ljava/lang/Object;IIIII)V
     .locals 6
-    .param p1    # Ljava/lang/Object;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     move-object v0, p1
 

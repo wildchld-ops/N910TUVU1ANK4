@@ -66,8 +66,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/inputmethod/SpellCheckersSettings;Lcom/android/settings/inputmethod/SingleSpellCheckerPreference;)V
     .locals 0
-    .param p0    # Lcom/android/settings/inputmethod/SpellCheckersSettings;
-    .param p1    # Lcom/android/settings/inputmethod/SingleSpellCheckerPreference;
 
     invoke-direct {p0, p1}, Lcom/android/settings/inputmethod/SpellCheckersSettings;->changeCurrentSpellChecker(Lcom/android/settings/inputmethod/SingleSpellCheckerPreference;)V
 
@@ -76,7 +74,6 @@
 
 .method private changeCurrentSpellChecker(Lcom/android/settings/inputmethod/SingleSpellCheckerPreference;)V
     .locals 2
-    .param p1    # Lcom/android/settings/inputmethod/SingleSpellCheckerPreference;
 
     iget-object v0, p0, Lcom/android/settings/inputmethod/SpellCheckersSettings;->mTsm:Landroid/view/textservice/TextServicesManager;
 
@@ -93,7 +90,6 @@
 
 .method private static isSystemApp(Landroid/view/textservice/SpellCheckerInfo;)Z
     .locals 1
-    .param p0    # Landroid/view/textservice/SpellCheckerInfo;
 
     invoke-virtual {p0}, Landroid/view/textservice/SpellCheckerInfo;->getServiceInfo()Landroid/content/pm/ServiceInfo;
 
@@ -132,7 +128,6 @@
 
 .method private showSecurityWarnDialog(Lcom/android/settings/inputmethod/SingleSpellCheckerPreference;)V
     .locals 7
-    .param p1    # Lcom/android/settings/inputmethod/SingleSpellCheckerPreference;
 
     const/4 v3, 0x1
 
@@ -375,7 +370,6 @@
 # virtual methods
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -410,7 +404,6 @@
 
 .method public onPreferenceClick(Landroid/preference/Preference;)Z
     .locals 4
-    .param p1    # Landroid/preference/Preference;
 
     const/4 v2, 0x0
 
@@ -473,8 +466,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 1
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     const/4 v0, 0x0
 

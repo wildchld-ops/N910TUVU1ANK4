@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Lcom/android/mms/transaction/IMEITrackerService;Lcom/android/mms/transaction/IMEITrackerService$1;)V
     .locals 0
-    .param p1    # Lcom/android/mms/transaction/IMEITrackerService;
-    .param p2    # Lcom/android/mms/transaction/IMEITrackerService$1;
 
     invoke-direct {p0, p1}, Lcom/android/mms/transaction/IMEITrackerService$MyListner;-><init>(Lcom/android/mms/transaction/IMEITrackerService;)V
 
@@ -43,7 +41,6 @@
 # virtual methods
 .method public onServiceStateChanged(Landroid/telephony/ServiceState;)V
     .locals 11
-    .param p1    # Landroid/telephony/ServiceState;
 
     const/4 v10, 0x1
 

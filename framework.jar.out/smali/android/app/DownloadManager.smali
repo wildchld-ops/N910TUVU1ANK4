@@ -661,8 +661,6 @@
 
 .method public constructor <init>(Landroid/content/ContentResolver;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Landroid/content/ContentResolver;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -699,7 +697,6 @@
 
 .method public static getActiveNetworkWarningBytes(Landroid/content/Context;)J
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     const-wide/16 v0, -0x1
 
@@ -708,7 +705,6 @@
 
 .method public static getMaxBytesOverMobile(Landroid/content/Context;)Ljava/lang/Long;
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     :try_start_0
     invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
@@ -740,7 +736,6 @@
 
 .method public static getRecommendedMaxBytesOverMobile(Landroid/content/Context;)Ljava/lang/Long;
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     :try_start_0
     invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
@@ -772,7 +767,6 @@
 
 .method static getWhereArgsForIds([J)[Ljava/lang/String;
     .locals 4
-    .param p0    # [J
 
     array-length v2, p0
 
@@ -803,7 +797,6 @@
 
 .method static getWhereClauseForIds([J)Ljava/lang/String;
     .locals 3
-    .param p0    # [J
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -853,7 +846,6 @@
 
 .method public static isActiveNetworkExpensive(Landroid/content/Context;)Z
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -862,7 +854,6 @@
 
 .method private joinStrings(Ljava/lang/String;Ljava/lang/Iterable;)Ljava/lang/String;
     .locals 5
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -919,8 +910,6 @@
 
 .method private static validateArgumentIsNonEmpty(Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -960,13 +949,6 @@
 # virtual methods
 .method public addCompletedDownload(Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;JZ)J
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # J
-    .param p8    # Z
 
     const/4 v9, 0x0
 
@@ -995,14 +977,6 @@
 
 .method public addCompletedDownload(Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;JZZ)J
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # J
-    .param p8    # Z
-    .param p9    # Z
 
     const-string v3, "title"
 
@@ -1184,7 +1158,6 @@
 
 .method public enqueue(Landroid/app/DownloadManager$Request;)J
     .locals 6
-    .param p1    # Landroid/app/DownloadManager$Request;
 
     iget-object v4, p0, Landroid/app/DownloadManager;->mPackageName:Ljava/lang/String;
 
@@ -1218,7 +1191,6 @@
 
 .method public getDownloadUri(J)Landroid/net/Uri;
     .locals 1
-    .param p1    # J
 
     iget-object v0, p0, Landroid/app/DownloadManager;->mBaseUri:Landroid/net/Uri;
 
@@ -1231,7 +1203,6 @@
 
 .method public getMimeTypeForDownloadedFile(J)Ljava/lang/String;
     .locals 6
-    .param p1    # J
 
     const/4 v2, 0x0
 
@@ -1312,7 +1283,6 @@
 
 .method public getUriForDownloadedFile(J)Landroid/net/Uri;
     .locals 11
-    .param p1    # J
 
     const/4 v6, 0x0
 
@@ -1451,7 +1421,6 @@
 
 .method public varargs markRowDeleted([J)I
     .locals 6
-    .param p1    # [J
 
     const/4 v5, 0x0
 
@@ -1530,7 +1499,6 @@
 
 .method public openDownloadedFile(J)Landroid/os/ParcelFileDescriptor;
     .locals 3
-    .param p1    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/FileNotFoundException;
@@ -1554,7 +1522,6 @@
 
 .method public query(Landroid/app/DownloadManager$Query;)Landroid/database/Cursor;
     .locals 4
-    .param p1    # Landroid/app/DownloadManager$Query;
 
     iget-object v1, p0, Landroid/app/DownloadManager;->mResolver:Landroid/content/ContentResolver;
 
@@ -1585,7 +1552,6 @@
 
 .method public varargs remove([J)I
     .locals 1
-    .param p1    # [J
 
     invoke-virtual {p0, p1}, Landroid/app/DownloadManager;->markRowDeleted([J)I
 
@@ -1596,7 +1562,6 @@
 
 .method public varargs restartDownload([J)Z
     .locals 8
-    .param p1    # [J
 
     const-wide/16 v6, 0x0
 
@@ -1764,13 +1729,6 @@
 
 .method public secAddCompletedDownload(Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;JZ)J
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # J
-    .param p8    # Z
 
     const-string v3, "title"
 
@@ -1944,7 +1902,6 @@
 
 .method public secenqueue(Landroid/app/DownloadManager$Request;)J
     .locals 6
-    .param p1    # Landroid/app/DownloadManager$Request;
 
     iget-object v4, p0, Landroid/app/DownloadManager;->mPackageName:Ljava/lang/String;
 
@@ -1990,7 +1947,6 @@
 
 .method public varargs secmarkRowDeleted([J)I
     .locals 6
-    .param p1    # [J
 
     const/4 v5, 0x0
 
@@ -2045,7 +2001,6 @@
 
 .method public secquery(Landroid/app/DownloadManager$SecQuery;)Landroid/database/Cursor;
     .locals 4
-    .param p1    # Landroid/app/DownloadManager$SecQuery;
 
     iget-object v1, p0, Landroid/app/DownloadManager;->mResolver:Landroid/content/ContentResolver;
 
@@ -2076,7 +2031,6 @@
 
 .method public varargs secremove([J)I
     .locals 5
-    .param p1    # [J
 
     if-eqz p1, :cond_0
 
@@ -2129,7 +2083,6 @@
 
 .method public varargs secrestartDownload([J)Z
     .locals 8
-    .param p1    # [J
 
     const/4 v4, 0x1
 
@@ -2278,7 +2231,6 @@
 
 .method public setAccessAllDownloads(Z)V
     .locals 1
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -2299,7 +2251,6 @@
 
 .method public setSecDownloads(Z)V
     .locals 1
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 

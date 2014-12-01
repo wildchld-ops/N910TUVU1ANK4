@@ -23,7 +23,6 @@
 # direct methods
 .method constructor <init>(Landroid/animation/AnimatorSet;Landroid/animation/Animator;)V
     .locals 2
-    .param p2    # Landroid/animation/Animator;
 
     iput-object p1, p0, Landroid/animation/AnimatorSet$Builder;->this$0:Landroid/animation/AnimatorSet;
 
@@ -78,7 +77,6 @@
 # virtual methods
 .method public after(J)Landroid/animation/AnimatorSet$Builder;
     .locals 2
-    .param p1    # J
 
     const/4 v1, 0x2
 
@@ -107,7 +105,6 @@
 
 .method public after(Landroid/animation/Animator;)Landroid/animation/AnimatorSet$Builder;
     .locals 3
-    .param p1    # Landroid/animation/Animator;
 
     iget-object v2, p0, Landroid/animation/AnimatorSet$Builder;->this$0:Landroid/animation/AnimatorSet;
 
@@ -162,7 +159,6 @@
 
 .method public before(Landroid/animation/Animator;)Landroid/animation/AnimatorSet$Builder;
     .locals 4
-    .param p1    # Landroid/animation/Animator;
 
     iget-object v2, p0, Landroid/animation/AnimatorSet$Builder;->this$0:Landroid/animation/AnimatorSet;
 
@@ -217,7 +213,6 @@
 
 .method public with(Landroid/animation/Animator;)Landroid/animation/AnimatorSet$Builder;
     .locals 4
-    .param p1    # Landroid/animation/Animator;
 
     iget-object v2, p0, Landroid/animation/AnimatorSet$Builder;->this$0:Landroid/animation/AnimatorSet;
 

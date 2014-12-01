@@ -33,8 +33,6 @@
 # virtual methods
 .method public processFastPath(Landroid/content/Context;Landroid/content/Intent;)Ljava/lang/Object;
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     iget-object v0, p0, Lcom/sec/epdg/EpdgService$6;->this$0:Lcom/sec/epdg/EpdgService;
 
@@ -52,7 +50,6 @@
 
 .method public processSlowPath(Ljava/lang/Object;)V
     .locals 2
-    .param p1    # Ljava/lang/Object;
 
     # getter for: Lcom/sec/epdg/EpdgService;->mContext:Landroid/content/Context;
     invoke-static {}, Lcom/sec/epdg/EpdgService;->access$1300()Landroid/content/Context;

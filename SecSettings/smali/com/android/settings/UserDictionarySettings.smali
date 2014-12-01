@@ -108,7 +108,6 @@
 
 .method private createCursor(Ljava/lang/String;)Landroid/database/Cursor;
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const-string v0, ""
 
@@ -185,9 +184,6 @@
 
 .method public static deleteWord(Ljava/lang/String;Ljava/lang/String;Landroid/content/ContentResolver;)V
     .locals 5
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/ContentResolver;
 
     const/4 v4, 0x1
 
@@ -232,7 +228,6 @@
 
 .method private getShortcut(I)Ljava/lang/String;
     .locals 3
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -276,7 +271,6 @@
 
 .method private getWord(I)Ljava/lang/String;
     .locals 3
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -382,7 +376,6 @@
 # virtual methods
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 10
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v7, 0x0
 
@@ -512,7 +505,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -533,8 +525,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
     .locals 4
-    .param p1    # Landroid/view/Menu;
-    .param p2    # Landroid/view/MenuInflater;
 
     const/4 v3, 0x0
 
@@ -561,9 +551,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 2
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const v0, 0x10900a0
 
@@ -578,10 +565,6 @@
 
 .method public onListItemClick(Landroid/widget/ListView;Landroid/view/View;IJ)V
     .locals 2
-    .param p1    # Landroid/widget/ListView;
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
 
     invoke-direct {p0, p3}, Lcom/android/settings/UserDictionarySettings;->getWord(I)Ljava/lang/String;
 
@@ -601,7 +584,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 3
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v2, 0x0
 

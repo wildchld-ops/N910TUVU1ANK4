@@ -21,7 +21,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/wifi/WifiNotificationController;Landroid/os/Handler;)V
     .locals 0
-    .param p2    # Landroid/os/Handler;
 
     iput-object p1, p0, Lcom/android/server/wifi/WifiNotificationController$4;->this$0:Lcom/android/server/wifi/WifiNotificationController;
 
@@ -34,8 +33,6 @@
 # virtual methods
 .method public onChange(ZLandroid/net/Uri;)V
     .locals 5
-    .param p1    # Z
-    .param p2    # Landroid/net/Uri;
 
     const/4 v4, 0x0
 

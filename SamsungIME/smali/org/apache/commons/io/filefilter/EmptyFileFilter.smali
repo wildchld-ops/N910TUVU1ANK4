@@ -45,7 +45,6 @@
 # virtual methods
 .method public accept(Ljava/io/File;)Z
     .locals 7
-    .param p1    # Ljava/io/File;
 
     const/4 v2, 0x1
 

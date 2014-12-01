@@ -215,8 +215,6 @@
 
 .method public constructor <init>(Landroid/webkitsec/WebViewInputDispatcher$UiCallbacks;Landroid/webkitsec/WebViewInputDispatcher$WebKitCallbacks;)V
     .locals 4
-    .param p1    # Landroid/webkitsec/WebViewInputDispatcher$UiCallbacks;
-    .param p2    # Landroid/webkitsec/WebViewInputDispatcher$WebKitCallbacks;
 
     const/4 v3, 0x0
 
@@ -345,8 +343,6 @@
 
 .method static synthetic access$300(Landroid/webkitsec/WebViewInputDispatcher;Z)V
     .locals 0
-    .param p0    # Landroid/webkitsec/WebViewInputDispatcher;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Landroid/webkitsec/WebViewInputDispatcher;->dispatchUiEvents(Z)V
 
@@ -355,7 +351,6 @@
 
 .method static synthetic access$400(Landroid/webkitsec/WebViewInputDispatcher;)V
     .locals 0
-    .param p0    # Landroid/webkitsec/WebViewInputDispatcher;
 
     invoke-direct {p0}, Landroid/webkitsec/WebViewInputDispatcher;->handleWebKitTimeout()V
 
@@ -364,7 +359,6 @@
 
 .method static synthetic access$500(Landroid/webkitsec/WebViewInputDispatcher;)V
     .locals 0
-    .param p0    # Landroid/webkitsec/WebViewInputDispatcher;
 
     invoke-direct {p0}, Landroid/webkitsec/WebViewInputDispatcher;->postLongPress()V
 
@@ -373,7 +367,6 @@
 
 .method static synthetic access$600(Landroid/webkitsec/WebViewInputDispatcher;)V
     .locals 0
-    .param p0    # Landroid/webkitsec/WebViewInputDispatcher;
 
     invoke-direct {p0}, Landroid/webkitsec/WebViewInputDispatcher;->postClick()V
 
@@ -382,8 +375,6 @@
 
 .method static synthetic access$700(Landroid/webkitsec/WebViewInputDispatcher;Z)V
     .locals 0
-    .param p0    # Landroid/webkitsec/WebViewInputDispatcher;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Landroid/webkitsec/WebViewInputDispatcher;->postShowTapHighlight(Z)V
 
@@ -392,8 +383,6 @@
 
 .method static synthetic access$800(Landroid/webkitsec/WebViewInputDispatcher;Landroid/webkitsec/WebViewInputDispatcher$DispatchEvent;)V
     .locals 0
-    .param p0    # Landroid/webkitsec/WebViewInputDispatcher;
-    .param p1    # Landroid/webkitsec/WebViewInputDispatcher$DispatchEvent;
 
     invoke-direct {p0, p1}, Landroid/webkitsec/WebViewInputDispatcher;->handleHitTestMsg(Landroid/webkitsec/WebViewInputDispatcher$DispatchEvent;)V
 
@@ -402,8 +391,6 @@
 
 .method static synthetic access$900(Landroid/webkitsec/WebViewInputDispatcher;Z)V
     .locals 0
-    .param p0    # Landroid/webkitsec/WebViewInputDispatcher;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Landroid/webkitsec/WebViewInputDispatcher;->dispatchWebKitEvents(Z)V
 
@@ -412,8 +399,6 @@
 
 .method private batchEventLocked(Landroid/webkitsec/WebViewInputDispatcher$DispatchEvent;Landroid/webkitsec/WebViewInputDispatcher$DispatchEvent;)Z
     .locals 2
-    .param p1    # Landroid/webkitsec/WebViewInputDispatcher$DispatchEvent;
-    .param p2    # Landroid/webkitsec/WebViewInputDispatcher$DispatchEvent;
 
     if-eqz p2, :cond_0
 
@@ -476,7 +461,6 @@
 
 .method private checkForDoubleTapOnDownLocked(Landroid/view/MotionEvent;)V
     .locals 4
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v2, 0x0
 
@@ -548,7 +532,6 @@
 
 .method private checkForSlopLocked(Landroid/view/MotionEvent;)V
     .locals 4
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-boolean v2, p0, Landroid/webkitsec/WebViewInputDispatcher;->mIsTapCandidate:Z
 
@@ -610,7 +593,6 @@
 
 .method private copyDispatchEventLocked(Landroid/webkitsec/WebViewInputDispatcher$DispatchEvent;)Landroid/webkitsec/WebViewInputDispatcher$DispatchEvent;
     .locals 3
-    .param p1    # Landroid/webkitsec/WebViewInputDispatcher$DispatchEvent;
 
     invoke-direct {p0}, Landroid/webkitsec/WebViewInputDispatcher;->obtainUninitializedDispatchEventLocked()Landroid/webkitsec/WebViewInputDispatcher$DispatchEvent;
 
@@ -662,9 +644,6 @@
 
 .method private dispatchUiEvent(Landroid/view/MotionEvent;II)V
     .locals 3
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # I
-    .param p3    # I
 
     sget-boolean v0, Landroid/webkitsec/WebViewInputDispatcher;->DEBUG:Z
 
@@ -722,7 +701,6 @@
 
 .method private dispatchUiEvents(Z)V
     .locals 9
-    .param p1    # Z
 
     const/4 v8, 0x1
 
@@ -932,9 +910,6 @@
 
 .method private dispatchWebKitEvent(Landroid/view/MotionEvent;II)Z
     .locals 4
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # I
-    .param p3    # I
 
     sget-boolean v1, Landroid/webkitsec/WebViewInputDispatcher;->DEBUG:Z
 
@@ -1021,7 +996,6 @@
 
 .method private dispatchWebKitEvents(Z)V
     .locals 14
-    .param p1    # Z
 
     const/4 v13, 0x3
 
@@ -1475,7 +1449,6 @@
 
 .method private enqueueDoubleTapLocked(Landroid/view/MotionEvent;)V
     .locals 8
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-static {p1}, Landroid/view/MotionEvent;->obtainNoHistory(Landroid/view/MotionEvent;)Landroid/view/MotionEvent;
 
@@ -1504,7 +1477,6 @@
 
 .method private enqueueEventLocked(Landroid/webkitsec/WebViewInputDispatcher$DispatchEvent;)V
     .locals 3
-    .param p1    # Landroid/webkitsec/WebViewInputDispatcher$DispatchEvent;
 
     invoke-direct {p0, p1}, Landroid/webkitsec/WebViewInputDispatcher;->shouldSkipWebKit(Landroid/webkitsec/WebViewInputDispatcher$DispatchEvent;)Z
 
@@ -1543,7 +1515,6 @@
 
 .method private enqueueHitTestLocked(Landroid/view/MotionEvent;)V
     .locals 8
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-object v0, p0, Landroid/webkitsec/WebViewInputDispatcher;->mUiCallbacks:Landroid/webkitsec/WebViewInputDispatcher$UiCallbacks;
 
@@ -1620,7 +1591,6 @@
 
 .method private enqueueUiEventLocked(Landroid/webkitsec/WebViewInputDispatcher$DispatchEvent;)V
     .locals 3
-    .param p1    # Landroid/webkitsec/WebViewInputDispatcher$DispatchEvent;
 
     iget-object v0, p0, Landroid/webkitsec/WebViewInputDispatcher;->mUiDispatchEventQueue:Landroid/webkitsec/WebViewInputDispatcher$DispatchEventQueue;
 
@@ -1674,7 +1644,6 @@
 
 .method private enqueueUiEventUnbatchedLocked(Landroid/webkitsec/WebViewInputDispatcher$DispatchEvent;)V
     .locals 3
-    .param p1    # Landroid/webkitsec/WebViewInputDispatcher$DispatchEvent;
 
     sget-boolean v0, Landroid/webkitsec/WebViewInputDispatcher;->DEBUG:Z
 
@@ -1762,7 +1731,6 @@
 
 .method private enqueueWebKitEventLocked(Landroid/webkitsec/WebViewInputDispatcher$DispatchEvent;)V
     .locals 3
-    .param p1    # Landroid/webkitsec/WebViewInputDispatcher$DispatchEvent;
 
     iget-object v0, p0, Landroid/webkitsec/WebViewInputDispatcher;->mWebKitDispatchEventQueue:Landroid/webkitsec/WebViewInputDispatcher$DispatchEventQueue;
 
@@ -1816,7 +1784,6 @@
 
 .method private enqueueWebKitEventUnbatchedLocked(Landroid/webkitsec/WebViewInputDispatcher$DispatchEvent;)V
     .locals 3
-    .param p1    # Landroid/webkitsec/WebViewInputDispatcher$DispatchEvent;
 
     sget-boolean v0, Landroid/webkitsec/WebViewInputDispatcher;->DEBUG:Z
 
@@ -1860,7 +1827,6 @@
 
 .method private handleHitTestMsg(Landroid/webkitsec/WebViewInputDispatcher$DispatchEvent;)V
     .locals 4
-    .param p1    # Landroid/webkitsec/WebViewInputDispatcher$DispatchEvent;
 
     const/4 v0, 0x0
 
@@ -2052,7 +2018,6 @@
 
 .method private isClickCandidateLocked(Landroid/view/MotionEvent;)Z
     .locals 8
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v2, 0x1
 
@@ -2103,7 +2068,6 @@
 
 .method private isMoveEventLocked(Landroid/webkitsec/WebViewInputDispatcher$DispatchEvent;)Z
     .locals 2
-    .param p1    # Landroid/webkitsec/WebViewInputDispatcher$DispatchEvent;
 
     iget-object v0, p1, Landroid/webkitsec/WebViewInputDispatcher$DispatchEvent;->mEvent:Landroid/view/MotionEvent;
 
@@ -2132,12 +2096,6 @@
 
 .method private obtainDispatchEventLocked(Landroid/view/MotionEvent;IIIIF)Landroid/webkitsec/WebViewInputDispatcher$DispatchEvent;
     .locals 7
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # F
 
     invoke-direct {p0}, Landroid/webkitsec/WebViewInputDispatcher;->obtainUninitializedDispatchEventLocked()Landroid/webkitsec/WebViewInputDispatcher$DispatchEvent;
 
@@ -2436,7 +2394,6 @@
 
 .method private postShowTapHighlight(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v1, p0, Landroid/webkitsec/WebViewInputDispatcher;->mLock:Ljava/lang/Object;
 
@@ -2499,7 +2456,6 @@
 
 .method private recycleDispatchEventLocked(Landroid/webkitsec/WebViewInputDispatcher$DispatchEvent;)V
     .locals 2
-    .param p1    # Landroid/webkitsec/WebViewInputDispatcher$DispatchEvent;
 
     iget-object v0, p1, Landroid/webkitsec/WebViewInputDispatcher$DispatchEvent;->mEvent:Landroid/view/MotionEvent;
 
@@ -2590,7 +2546,6 @@
 
 .method private scheduleHitTestLocked(Landroid/webkitsec/WebViewInputDispatcher$DispatchEvent;)V
     .locals 5
-    .param p1    # Landroid/webkitsec/WebViewInputDispatcher$DispatchEvent;
 
     const/4 v2, 0x7
 
@@ -2833,7 +2788,6 @@
 
 .method private shouldSkipWebKit(Landroid/webkitsec/WebViewInputDispatcher$DispatchEvent;)Z
     .locals 4
-    .param p1    # Landroid/webkitsec/WebViewInputDispatcher$DispatchEvent;
 
     const/4 v0, 0x0
 
@@ -2925,7 +2879,6 @@
 
 .method private skipWebKitEventLocked(Landroid/webkitsec/WebViewInputDispatcher$DispatchEvent;)V
     .locals 1
-    .param p1    # Landroid/webkitsec/WebViewInputDispatcher$DispatchEvent;
 
     const/4 v0, 0x0
 
@@ -3102,8 +3055,6 @@
 
 .method private updateStateTrackersLocked(Landroid/webkitsec/WebViewInputDispatcher$DispatchEvent;Landroid/view/MotionEvent;)V
     .locals 5
-    .param p1    # Landroid/webkitsec/WebViewInputDispatcher$DispatchEvent;
-    .param p2    # Landroid/view/MotionEvent;
 
     const/4 v1, 0x3
 
@@ -3358,10 +3309,6 @@
 
 .method public postPointerEvent(Landroid/view/MotionEvent;IIF)Z
     .locals 11
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # F
 
     const/4 v9, 0x1
 
@@ -3588,7 +3535,6 @@
 
 .method public setClickOnSelectHandleCenter(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/webkitsec/WebViewInputDispatcher;->mClickOnSelectHandleCenter:Z
 
@@ -3597,7 +3543,6 @@
 
 .method public setTouchInputCameHere(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/webkitsec/WebViewInputDispatcher;->mTouchInput:Z
 
@@ -3606,7 +3551,6 @@
 
 .method public setUIShouldSkipEvent(Z)V
     .locals 3
-    .param p1    # Z
 
     sget-boolean v0, Landroid/webkitsec/WebViewInputDispatcher;->DEBUG:Z
 
@@ -3658,7 +3602,6 @@
 
 .method public setWebKitWantsTouchEvents(Z)V
     .locals 3
-    .param p1    # Z
 
     sget-boolean v0, Landroid/webkitsec/WebViewInputDispatcher;->DEBUG:Z
 
@@ -3720,7 +3663,6 @@
 
 .method public setWebkitShouldSkipEvent(Z)V
     .locals 3
-    .param p1    # Z
 
     sget-boolean v0, Landroid/webkitsec/WebViewInputDispatcher;->DEBUG:Z
 

@@ -97,7 +97,7 @@
     iget-object v0, p0, Lcom/android/phone/WfcEmergencyCallController$4;->this$0:Lcom/android/phone/WfcEmergencyCallController;
 
     # invokes: Lcom/android/phone/WfcEmergencyCallController;->handleCallDisconnect(Landroid/os/Message;)V
-    invoke-static {v0, p1}, Lcom/android/phone/WfcEmergencyCallController;->access$600(Lcom/android/phone/WfcEmergencyCallController;Landroid/os/Message;)V
+    invoke-static {v0, p1}, Lcom/android/phone/WfcEmergencyCallController;->access$700(Lcom/android/phone/WfcEmergencyCallController;Landroid/os/Message;)V
 
     goto :goto_0
 
@@ -116,14 +116,6 @@
     iget-object v0, p0, Lcom/android/phone/WfcEmergencyCallController$4;->this$0:Lcom/android/phone/WfcEmergencyCallController;
 
     # invokes: Lcom/android/phone/WfcEmergencyCallController;->handlePhoneStateChanged()V
-    invoke-static {v0}, Lcom/android/phone/WfcEmergencyCallController;->access$700(Lcom/android/phone/WfcEmergencyCallController;)V
-
-    goto :goto_0
-
-    :pswitch_2
-    iget-object v0, p0, Lcom/android/phone/WfcEmergencyCallController$4;->this$0:Lcom/android/phone/WfcEmergencyCallController;
-
-    # invokes: Lcom/android/phone/WfcEmergencyCallController;->handleCSTimeoutForEmergency()V
     invoke-static {v0}, Lcom/android/phone/WfcEmergencyCallController;->access$800(Lcom/android/phone/WfcEmergencyCallController;)V
 
     goto :goto_0
@@ -134,6 +126,5 @@
     .packed-switch 0x0
         :pswitch_0
         :pswitch_1
-        :pswitch_2
     .end packed-switch
 .end method

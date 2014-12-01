@@ -40,7 +40,6 @@
 
 .method private static canSatisfyMemoryAllocation(J)Z
     .locals 8
-    .param p0    # J
 
     invoke-static {}, Landroid/webkitsec/JniUtil;->checkInitialized()V
 
@@ -106,7 +105,6 @@
 
 .method private static declared-synchronized contentUrlSize(Ljava/lang/String;)J
     .locals 14
-    .param p0    # Ljava/lang/String;
 
     const-wide/16 v8, 0x0
 
@@ -252,7 +250,6 @@
 
 .method private static declared-synchronized contentUrlStream(Ljava/lang/String;)Ljava/io/InputStream;
     .locals 8
-    .param p0    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -583,7 +580,6 @@
 
 .method protected static declared-synchronized setContext(Landroid/content/Context;)V
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     const-class v1, Landroid/webkitsec/JniUtil;
 
@@ -623,7 +619,6 @@
 
 .method public static setOpenSslContext(Z)Z
     .locals 1
-    .param p0    # Z
 
     invoke-static {p0}, Landroid/webkitsec/JniUtil;->nativeSetOpenSslContext(Z)Z
 

@@ -328,7 +328,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v2}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v2}, Lcom/android/phone/PhoneGlobals;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v2
 
@@ -378,7 +378,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1, v0}, Landroid/content/ContextWrapper;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {v1, v0}, Lcom/android/phone/PhoneGlobals;->startActivity(Landroid/content/Intent;)V
 
     # getter for: Lcom/android/phone/PhoneGlobals;->mStatusBarManager:Landroid/app/StatusBarManager;
     invoke-static {}, Lcom/android/phone/PhoneGlobals;->access$4600()Landroid/app/StatusBarManager;
@@ -501,7 +501,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1, v0}, Landroid/content/ContextWrapper;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {v1, v0}, Lcom/android/phone/PhoneGlobals;->startActivity(Landroid/content/Intent;)V
 
     # getter for: Lcom/android/phone/PhoneGlobals;->mStatusBarManager:Landroid/app/StatusBarManager;
     invoke-static {}, Lcom/android/phone/PhoneGlobals;->access$4600()Landroid/app/StatusBarManager;
@@ -550,7 +550,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1, v0}, Landroid/content/ContextWrapper;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {v1, v0}, Lcom/android/phone/PhoneGlobals;->startActivity(Landroid/content/Intent;)V
 
     goto/16 :goto_0
 
@@ -595,7 +595,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0, v1}, Landroid/content/ContextWrapper;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {v0, v1}, Lcom/android/phone/PhoneGlobals;->startActivity(Landroid/content/Intent;)V
 
     goto/16 :goto_0
 

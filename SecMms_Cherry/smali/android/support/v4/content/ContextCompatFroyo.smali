@@ -14,7 +14,6 @@
 
 .method public static getExternalCacheDir(Landroid/content/Context;)Ljava/io/File;
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     invoke-virtual {p0}, Landroid/content/Context;->getExternalCacheDir()Ljava/io/File;
 
@@ -25,8 +24,6 @@
 
 .method public static getExternalFilesDir(Landroid/content/Context;Ljava/lang/String;)Ljava/io/File;
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Landroid/content/Context;->getExternalFilesDir(Ljava/lang/String;)Ljava/io/File;
 

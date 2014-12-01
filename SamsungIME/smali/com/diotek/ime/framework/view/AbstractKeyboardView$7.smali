@@ -39,7 +39,6 @@
 # virtual methods
 .method public onScale(Landroid/view/ScaleGestureDetector;)Z
     .locals 9
-    .param p1    # Landroid/view/ScaleGestureDetector;
 
     const-wide/16 v7, 0x0
 
@@ -316,7 +315,6 @@
 
 .method public onScaleBegin(Landroid/view/ScaleGestureDetector;)Z
     .locals 1
-    .param p1    # Landroid/view/ScaleGestureDetector;
 
     const/4 v0, 0x1
 
@@ -325,7 +323,6 @@
 
 .method public onScaleEnd(Landroid/view/ScaleGestureDetector;)V
     .locals 1
-    .param p1    # Landroid/view/ScaleGestureDetector;
 
     const/4 v0, 0x1
 

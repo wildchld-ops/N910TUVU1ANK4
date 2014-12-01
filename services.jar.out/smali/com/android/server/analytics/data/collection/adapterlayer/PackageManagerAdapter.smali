@@ -44,7 +44,6 @@
 
 .method public static declared-synchronized getInstance(Landroid/content/Context;)Lcom/android/server/analytics/data/collection/adapterlayer/PackageManagerAdapter;
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     const-class v1, Lcom/android/server/analytics/data/collection/adapterlayer/PackageManagerAdapter;
 
@@ -94,7 +93,6 @@
 
 .method private static getValidStr(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -140,7 +138,6 @@
 # virtual methods
 .method public getProcessCpuUsage(I)J
     .locals 9
-    .param p1    # I
 
     const-wide/16 v5, 0x0
 

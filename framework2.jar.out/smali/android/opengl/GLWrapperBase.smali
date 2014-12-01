@@ -26,7 +26,6 @@
 # direct methods
 .method public constructor <init>(Ljavax/microedition/khronos/opengles/GL;)V
     .locals 1
-    .param p1    # Ljavax/microedition/khronos/opengles/GL;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

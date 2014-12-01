@@ -22,10 +22,6 @@
 # direct methods
 .method private constructor <init>(Landroid/graphics/RectF;F[F[J)V
     .locals 5
-    .param p1    # Landroid/graphics/RectF;
-    .param p2    # F
-    .param p3    # [F
-    .param p4    # [J
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -237,7 +233,6 @@
 
 .method static deserialize(Ljava/io/DataInputStream;)Landroid/gesture/GestureStroke;
     .locals 4
-    .param p0    # Ljava/io/DataInputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -414,8 +409,6 @@
 
 .method draw(Landroid/graphics/Canvas;Landroid/graphics/Paint;)V
     .locals 1
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # Landroid/graphics/Paint;
 
     iget-object v0, p0, Landroid/gesture/GestureStroke;->mCachedPath:Landroid/graphics/Path;
 
@@ -448,7 +441,6 @@
 
 .method serialize(Ljava/io/DataOutputStream;)V
     .locals 6
-    .param p1    # Ljava/io/DataOutputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -498,9 +490,6 @@
 
 .method public toPath(FFI)Landroid/graphics/Path;
     .locals 19
-    .param p1    # F
-    .param p2    # F
-    .param p3    # I
 
     move-object/from16 v0, p0
 

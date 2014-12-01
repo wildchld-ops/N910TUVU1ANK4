@@ -22,13 +22,6 @@
 # direct methods
 .method public constructor <init>(ILjava/lang/String;ILjava/lang/String;ZIZ)V
     .locals 0
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
-    .param p5    # Z
-    .param p6    # I
-    .param p7    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -61,7 +54,6 @@
 
 .method public setVisible(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/shootingmodemanager/ShootingModeItem;->mIsVisible:Z
 

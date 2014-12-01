@@ -10,7 +10,6 @@
 # direct methods
 .method constructor <init>(Ljava/lang/String;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const/16 v6, 0x65
 
@@ -86,7 +85,6 @@
 # virtual methods
 .method public equals(Ljava/lang/Object;)Z
     .locals 3
-    .param p1    # Ljava/lang/Object;
 
     instance-of v1, p1, Lde/congrace/exp4j/NumberToken;
 
@@ -161,7 +159,6 @@
 
 .method mutateStackForInfixTranslation(Ljava/util/Stack;Ljava/lang/StringBuilder;)V
     .locals 2
-    .param p2    # Ljava/lang/StringBuilder;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

@@ -172,12 +172,6 @@
 # direct methods
 .method constructor <init>(Landroid/view/IWindowSession;Landroid/view/IWindow;Landroid/view/Display;Landroid/view/ViewRootImpl;Landroid/os/Handler;Landroid/view/View$AttachInfo$Callbacks;)V
     .locals 3
-    .param p1    # Landroid/view/IWindowSession;
-    .param p2    # Landroid/view/IWindow;
-    .param p3    # Landroid/view/Display;
-    .param p4    # Landroid/view/ViewRootImpl;
-    .param p5    # Landroid/os/Handler;
-    .param p6    # Landroid/view/View$AttachInfo$Callbacks;
 
     const/4 v2, 0x0
 

@@ -37,8 +37,6 @@
 
 .method synthetic constructor <init>(Lcom/sec/epdg/IPSecAdapter;Lcom/sec/epdg/IPSecAdapter$1;)V
     .locals 0
-    .param p1    # Lcom/sec/epdg/IPSecAdapter;
-    .param p2    # Lcom/sec/epdg/IPSecAdapter$1;
 
     invoke-direct {p0, p1}, Lcom/sec/epdg/IPSecAdapter$ConnectInfo;-><init>(Lcom/sec/epdg/IPSecAdapter;)V
 
@@ -47,8 +45,6 @@
 
 .method static synthetic access$100(Lcom/sec/epdg/IPSecAdapter$ConnectInfo;Lcom/sec/epdg/IWlanApnSetting;)V
     .locals 0
-    .param p0    # Lcom/sec/epdg/IPSecAdapter$ConnectInfo;
-    .param p1    # Lcom/sec/epdg/IWlanApnSetting;
 
     invoke-direct {p0, p1}, Lcom/sec/epdg/IPSecAdapter$ConnectInfo;->setIWlanSettingInfo(Lcom/sec/epdg/IWlanApnSetting;)V
 
@@ -57,8 +53,6 @@
 
 .method static synthetic access$200(Lcom/sec/epdg/IPSecAdapter$ConnectInfo;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/sec/epdg/IPSecAdapter$ConnectInfo;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/sec/epdg/IPSecAdapter$ConnectInfo;->setHandoverIpv4Addr(Ljava/lang/String;)V
 
@@ -67,8 +61,6 @@
 
 .method static synthetic access$300(Lcom/sec/epdg/IPSecAdapter$ConnectInfo;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/sec/epdg/IPSecAdapter$ConnectInfo;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/sec/epdg/IPSecAdapter$ConnectInfo;->setHandoverIpv6Addr(Ljava/lang/String;)V
 
@@ -77,7 +69,6 @@
 
 .method static synthetic access$400(Lcom/sec/epdg/IPSecAdapter$ConnectInfo;)Lcom/sec/epdg/IWlanApnSetting;
     .locals 1
-    .param p0    # Lcom/sec/epdg/IPSecAdapter$ConnectInfo;
 
     invoke-direct {p0}, Lcom/sec/epdg/IPSecAdapter$ConnectInfo;->getIWlanSettingInfo()Lcom/sec/epdg/IWlanApnSetting;
 
@@ -88,7 +79,6 @@
 
 .method static synthetic access$500(Lcom/sec/epdg/IPSecAdapter$ConnectInfo;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/sec/epdg/IPSecAdapter$ConnectInfo;
 
     invoke-direct {p0}, Lcom/sec/epdg/IPSecAdapter$ConnectInfo;->getHandoverIpv4Addr()Ljava/lang/String;
 
@@ -99,7 +89,6 @@
 
 .method static synthetic access$600(Lcom/sec/epdg/IPSecAdapter$ConnectInfo;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/sec/epdg/IPSecAdapter$ConnectInfo;
 
     invoke-direct {p0}, Lcom/sec/epdg/IPSecAdapter$ConnectInfo;->getHandoverIpv6Addr()Ljava/lang/String;
 
@@ -134,7 +123,6 @@
 
 .method private setHandoverIpv4Addr(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/sec/epdg/IPSecAdapter$ConnectInfo;->handoverIpv4addr:Ljava/lang/String;
 
@@ -143,7 +131,6 @@
 
 .method private setHandoverIpv6Addr(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/sec/epdg/IPSecAdapter$ConnectInfo;->handoverIpv6addr:Ljava/lang/String;
 
@@ -152,7 +139,6 @@
 
 .method private setIWlanSettingInfo(Lcom/sec/epdg/IWlanApnSetting;)V
     .locals 0
-    .param p1    # Lcom/sec/epdg/IWlanApnSetting;
 
     iput-object p1, p0, Lcom/sec/epdg/IPSecAdapter$ConnectInfo;->wlanSetting:Lcom/sec/epdg/IWlanApnSetting;
 

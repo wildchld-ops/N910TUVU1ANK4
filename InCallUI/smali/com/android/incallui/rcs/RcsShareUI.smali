@@ -72,8 +72,6 @@
 
 .method public static IsOwnCapable(Landroid/content/Context;Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/android/incallui/rcs/RcsShareUI;->queryOwn(Landroid/content/Context;)V
 
@@ -124,8 +122,6 @@
 
 .method public static acceptInvitation(Landroid/content/Context;Lcom/android/services/telephony/common/Call;)V
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/services/telephony/common/Call;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -148,7 +144,6 @@
 
 .method public static acquireSessionInfo(Landroid/content/Context;)Lcom/android/incallui/rcs/RcsShareUI$SessionState;
     .locals 13
-    .param p0    # Landroid/content/Context;
 
     new-instance v9, Lcom/android/incallui/rcs/RcsShareUI$SessionState;
 
@@ -320,9 +315,6 @@
 
 .method private static addRcsExtras(Lcom/android/services/telephony/common/Call;Landroid/content/Intent;Landroid/content/Context;)V
     .locals 6
-    .param p0    # Lcom/android/services/telephony/common/Call;
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Landroid/content/Context;
 
     const/4 v2, 0x0
 
@@ -443,8 +435,6 @@
 
 .method public static checkIfCapableOfRcsFileTransfer(Landroid/content/Context;Lcom/android/services/telephony/common/Call;)Z
     .locals 10
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/services/telephony/common/Call;
 
     const/4 v3, 0x0
 
@@ -557,7 +547,6 @@
 
 .method public static disconnect(Landroid/content/Context;)V
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     sget-object v1, Lcom/android/incallui/rcs/RcsShareUI;->LOG_TAG:Ljava/lang/String;
 
@@ -578,8 +567,6 @@
 
 .method public static generateTelUri(Ljava/lang/String;Landroid/content/Context;)Ljava/lang/String;
     .locals 5
-    .param p0    # Ljava/lang/String;
-    .param p1    # Landroid/content/Context;
 
     if-nez p0, :cond_0
 
@@ -639,8 +626,6 @@
 
 .method public static getCallStartTime(Landroid/content/Context;Lcom/android/services/telephony/common/Call;)J
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/services/telephony/common/Call;
 
     if-nez p1, :cond_0
 
@@ -671,8 +656,6 @@
 
 .method private static getCallerLabel(Landroid/content/Context;Lcom/android/services/telephony/common/Call;)I
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/services/telephony/common/Call;
 
     const/4 v1, -0x1
 
@@ -704,8 +687,6 @@
 
 .method private static getCallerName(Landroid/content/Context;Lcom/android/services/telephony/common/Call;)Ljava/lang/String;
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/services/telephony/common/Call;
 
     const/4 v1, 0x0
 
@@ -737,7 +718,6 @@
 
 .method public static final getCurrentCountryIso(Landroid/content/Context;)Ljava/lang/String;
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     const-string v1, "country_detector"
 
@@ -760,8 +740,6 @@
 
 .method public static getPhoneNumber(Landroid/content/Context;Lcom/android/services/telephony/common/Call;)Ljava/lang/String;
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/services/telephony/common/Call;
 
     const/4 v1, 0x0
 
@@ -797,7 +775,6 @@
 
 .method private static getSessionStateCursor(Landroid/content/Context;)Landroid/database/Cursor;
     .locals 6
-    .param p0    # Landroid/content/Context;
 
     const/4 v4, 0x0
 
@@ -880,7 +857,6 @@
 
 .method private static isCshRunning(Landroid/content/Context;)Z
     .locals 6
-    .param p0    # Landroid/content/Context;
 
     const-string v4, "activity"
 
@@ -940,7 +916,6 @@
 
 .method public static isCshTopMostActivity(Landroid/content/Context;)Z
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     const-string v0, "com.samsung.rcs.share.ContentShareActivity"
 
@@ -953,7 +928,6 @@
 
 .method public static final isNonSeparator(C)Z
     .locals 1
-    .param p0    # C
 
     const/16 v0, 0x30
 
@@ -1002,7 +976,6 @@
 
 .method public static isRcsFTAvailable(Landroid/database/Cursor;)Z
     .locals 5
-    .param p0    # Landroid/database/Cursor;
 
     const/4 v1, 0x0
 
@@ -1136,7 +1109,6 @@
 
 .method public static isShareActive(Landroid/content/Context;)Z
     .locals 6
-    .param p0    # Landroid/content/Context;
 
     const/4 v2, 0x0
 
@@ -1249,8 +1221,6 @@
 
 .method private static isTopMostActivity(Landroid/content/Context;Ljava/lang/String;)Z
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const/4 v5, 0x1
 
@@ -1337,11 +1307,6 @@
 
 .method public static prepareRcsUiElements(Landroid/content/Context;Landroid/widget/Button;Landroid/widget/Button;ZLcom/android/services/telephony/common/Call;)V
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/widget/Button;
-    .param p2    # Landroid/widget/Button;
-    .param p3    # Z
-    .param p4    # Lcom/android/services/telephony/common/Call;
 
     sget-object v1, Lcom/android/incallui/rcs/RcsShareUI;->LOG_TAG:Ljava/lang/String;
 
@@ -1409,8 +1374,6 @@
 
 .method private static queryInCallServiceProvider(Landroid/content/Context;Lcom/android/services/telephony/common/Call;)Landroid/database/Cursor;
     .locals 10
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/services/telephony/common/Call;
 
     const/4 v9, 0x0
 
@@ -1538,7 +1501,6 @@
 
 .method static queryOwn(Landroid/content/Context;)V
     .locals 8
-    .param p0    # Landroid/content/Context;
 
     sget-object v0, Lcom/android/incallui/rcs/RcsShareUI;->LOG_TAG:Ljava/lang/String;
 
@@ -1627,7 +1589,6 @@
 
 .method static readDataFromQueryOwn(Landroid/database/Cursor;)V
     .locals 8
-    .param p0    # Landroid/database/Cursor;
 
     const/4 v7, 0x1
 
@@ -1800,7 +1761,6 @@
 
 .method public static registerRcsObserver(I)V
     .locals 2
-    .param p0    # I
 
     invoke-static {}, Lcom/android/incallui/CallCommandClient;->getInstance()Lcom/android/incallui/CallCommandClient;
 
@@ -1815,8 +1775,6 @@
 
 .method public static resumeShare(Landroid/content/Context;Lcom/android/services/telephony/common/Call;)V
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/services/telephony/common/Call;
 
     sget-object v1, Lcom/android/incallui/rcs/RcsShareUI;->LOG_TAG:Ljava/lang/String;
 
@@ -1933,8 +1891,6 @@
 
 .method public static setupLegacyInCallButtons(Landroid/widget/Button;Landroid/widget/ToggleButton;)V
     .locals 4
-    .param p0    # Landroid/widget/Button;
-    .param p1    # Landroid/widget/ToggleButton;
 
     const/16 v3, 0x8
 
@@ -1996,10 +1952,6 @@
 
 .method static setupPromotedServiceButton(Landroid/content/Context;Landroid/widget/Button;Landroid/database/Cursor;Z)V
     .locals 11
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/widget/Button;
-    .param p2    # Landroid/database/Cursor;
-    .param p3    # Z
 
     const/16 v10, 0x8
 
@@ -2467,9 +2419,6 @@
 
 .method static setupRcsServicesButton(Landroid/content/Context;Landroid/widget/Button;Landroid/database/Cursor;)V
     .locals 11
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/widget/Button;
-    .param p2    # Landroid/database/Cursor;
 
     const/4 v10, 0x0
 
@@ -2730,8 +2679,6 @@
 
 .method public static startLiveVideo(Landroid/content/Context;Lcom/android/services/telephony/common/Call;)V
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/services/telephony/common/Call;
 
     sget-object v1, Lcom/android/incallui/rcs/RcsShareUI;->LOG_TAG:Ljava/lang/String;
 
@@ -2778,9 +2725,6 @@
 
 .method public static startRcsActivity(Landroid/content/Intent;Landroid/content/Context;Lcom/android/services/telephony/common/Call;)V
     .locals 5
-    .param p0    # Landroid/content/Intent;
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/services/telephony/common/Call;
 
     if-eqz p0, :cond_0
 
@@ -2903,9 +2847,6 @@
 
 .method public static startRcsService(Landroid/content/Intent;Landroid/content/Context;Lcom/android/services/telephony/common/Call;)V
     .locals 5
-    .param p0    # Landroid/content/Intent;
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/services/telephony/common/Call;
 
     if-eqz p0, :cond_0
 
@@ -3028,8 +2969,6 @@
 
 .method public static startRcsSharingDialog(Landroid/content/Context;Lcom/android/services/telephony/common/Call;)V
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/services/telephony/common/Call;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -3055,7 +2994,6 @@
 
 .method public static stripSeparators(Ljava/lang/String;)Ljava/lang/String;
     .locals 6
-    .param p0    # Ljava/lang/String;
 
     if-nez p0, :cond_0
 
@@ -3111,7 +3049,6 @@
 
 .method public static unRegisterRcsObserver(I)V
     .locals 2
-    .param p0    # I
 
     invoke-static {}, Lcom/android/incallui/CallCommandClient;->getInstance()Lcom/android/incallui/CallCommandClient;
 

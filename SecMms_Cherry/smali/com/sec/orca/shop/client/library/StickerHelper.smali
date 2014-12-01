@@ -46,8 +46,6 @@
 
 .method public static createPanelDrawable(Landroid/content/Context;Ljava/lang/String;)Landroid/graphics/drawable/BitmapDrawable;
     .locals 8
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -116,8 +114,6 @@
 
 .method public static createShortcutAniconDrawable(Landroid/content/Context;Ljava/lang/String;)Landroid/graphics/drawable/Drawable;
     .locals 8
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -186,8 +182,6 @@
 
 .method public static createStickerDrawable(Landroid/content/Context;Ljava/lang/String;)Landroid/graphics/drawable/AnimationDrawable;
     .locals 10
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     sget-object v0, Lcom/sec/orca/shop/client/library/StickerHelper;->mRootStickerPath:Ljava/lang/String;
 
@@ -354,7 +348,6 @@
 
 .method public static triggeringShopAgent(Landroid/content/Context;)V
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     new-instance v0, Landroid/content/Intent;
 

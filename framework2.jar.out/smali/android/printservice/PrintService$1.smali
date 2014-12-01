@@ -67,7 +67,6 @@
 
 .method public onPrintJobQueued(Landroid/print/PrintJobInfo;)V
     .locals 2
-    .param p1    # Landroid/print/PrintJobInfo;
 
     iget-object v0, p0, Landroid/printservice/PrintService$1;->this$0:Landroid/printservice/PrintService;
 
@@ -89,7 +88,6 @@
 
 .method public requestCancelPrintJob(Landroid/print/PrintJobInfo;)V
     .locals 2
-    .param p1    # Landroid/print/PrintJobInfo;
 
     iget-object v0, p0, Landroid/printservice/PrintService$1;->this$0:Landroid/printservice/PrintService;
 
@@ -111,7 +109,6 @@
 
 .method public setClient(Landroid/printservice/IPrintServiceClient;)V
     .locals 2
-    .param p1    # Landroid/printservice/IPrintServiceClient;
 
     iget-object v0, p0, Landroid/printservice/PrintService$1;->this$0:Landroid/printservice/PrintService;
 
@@ -163,7 +160,6 @@
 
 .method public startPrinterStateTracking(Landroid/print/PrinterId;)V
     .locals 2
-    .param p1    # Landroid/print/PrinterId;
 
     iget-object v0, p0, Landroid/printservice/PrintService$1;->this$0:Landroid/printservice/PrintService;
 
@@ -202,7 +198,6 @@
 
 .method public stopPrinterStateTracking(Landroid/print/PrinterId;)V
     .locals 2
-    .param p1    # Landroid/print/PrinterId;
 
     iget-object v0, p0, Landroid/printservice/PrintService$1;->this$0:Landroid/printservice/PrintService;
 

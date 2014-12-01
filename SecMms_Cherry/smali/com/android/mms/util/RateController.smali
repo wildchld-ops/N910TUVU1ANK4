@@ -38,7 +38,6 @@
 # direct methods
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -55,8 +54,6 @@
 
 .method static synthetic access$002(Lcom/android/mms/util/RateController;I)I
     .locals 0
-    .param p0    # Lcom/android/mms/util/RateController;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/mms/util/RateController;->mAnswer:I
 
@@ -105,7 +102,6 @@
 
 .method public static declared-synchronized init(Landroid/content/Context;)V
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     const-class v1, Lcom/android/mms/util/RateController;
 

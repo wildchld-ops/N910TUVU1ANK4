@@ -30,7 +30,6 @@
 
 .method public static append(C)V
     .locals 2
-    .param p0    # C
 
     invoke-static {}, Lcom/diotek/ime/framework/common/InputManagerImpl;->getInstance()Lcom/diotek/ime/framework/common/InputManager;
 
@@ -63,7 +62,6 @@
 
 .method public static append(Ljava/lang/CharSequence;)V
     .locals 1
-    .param p0    # Ljava/lang/CharSequence;
 
     sget-object v0, Lcom/diotek/ime/framework/input/ComposingTextManager;->mComposing:Ljava/lang/StringBuilder;
 
@@ -106,7 +104,6 @@
 
 .method public static codePointAt(I)I
     .locals 1
-    .param p0    # I
 
     sget-object v0, Lcom/diotek/ime/framework/input/ComposingTextManager;->mComposing:Ljava/lang/StringBuilder;
 
@@ -127,8 +124,6 @@
 
 .method public static delete(II)V
     .locals 1
-    .param p0    # I
-    .param p1    # I
 
     sget-object v0, Lcom/diotek/ime/framework/input/ComposingTextManager;->mComposing:Ljava/lang/StringBuilder;
 
@@ -139,7 +134,6 @@
 
 .method public static deleteCharAt(I)V
     .locals 1
-    .param p0    # I
 
     sget-object v0, Lcom/diotek/ime/framework/input/ComposingTextManager;->mComposing:Ljava/lang/StringBuilder;
 
@@ -450,7 +444,6 @@
 
 .method public static replace(C)V
     .locals 0
-    .param p0    # C
 
     invoke-static {}, Lcom/diotek/ime/framework/input/ComposingTextManager;->clear()V
 
@@ -461,7 +454,6 @@
 
 .method public static replace(Ljava/lang/CharSequence;)V
     .locals 0
-    .param p0    # Ljava/lang/CharSequence;
 
     invoke-static {}, Lcom/diotek/ime/framework/input/ComposingTextManager;->clear()V
 
@@ -472,7 +464,6 @@
 
 .method public static replace(Ljava/lang/String;)V
     .locals 0
-    .param p0    # Ljava/lang/String;
 
     invoke-static {}, Lcom/diotek/ime/framework/input/ComposingTextManager;->clear()V
 
@@ -483,7 +474,6 @@
 
 .method public static replace(Ljava/lang/StringBuilder;)V
     .locals 0
-    .param p0    # Ljava/lang/StringBuilder;
 
     invoke-static {}, Lcom/diotek/ime/framework/input/ComposingTextManager;->clear()V
 
@@ -494,8 +484,6 @@
 
 .method public static setCharAt(IC)V
     .locals 1
-    .param p0    # I
-    .param p1    # C
 
     sget-object v0, Lcom/diotek/ime/framework/input/ComposingTextManager;->mComposing:Ljava/lang/StringBuilder;
 
@@ -506,7 +494,6 @@
 
 .method public static setLength(I)V
     .locals 1
-    .param p0    # I
 
     sget-object v0, Lcom/diotek/ime/framework/input/ComposingTextManager;->mComposing:Ljava/lang/StringBuilder;
 
@@ -517,7 +504,6 @@
 
 .method public static substring(I)Ljava/lang/String;
     .locals 1
-    .param p0    # I
 
     sget-object v0, Lcom/diotek/ime/framework/input/ComposingTextManager;->mComposing:Ljava/lang/StringBuilder;
 
@@ -530,8 +516,6 @@
 
 .method public static substring(II)Ljava/lang/String;
     .locals 1
-    .param p0    # I
-    .param p1    # I
 
     sget-object v0, Lcom/diotek/ime/framework/input/ComposingTextManager;->mComposing:Ljava/lang/StringBuilder;
 

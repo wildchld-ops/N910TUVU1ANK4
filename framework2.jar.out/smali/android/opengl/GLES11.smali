@@ -441,9 +441,6 @@
 
 .method public static glPointSizePointerOES(IILjava/nio/Buffer;)V
     .locals 1
-    .param p0    # I
-    .param p1    # I
-    .param p2    # Ljava/nio/Buffer;
 
     invoke-virtual {p2}, Ljava/nio/Buffer;->remaining()I
 

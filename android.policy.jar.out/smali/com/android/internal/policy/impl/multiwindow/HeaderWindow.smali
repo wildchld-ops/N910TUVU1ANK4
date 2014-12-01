@@ -102,9 +102,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/os/IBinder;Lcom/samsung/android/multiwindow/MultiWindowFacade;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/IBinder;
-    .param p3    # Lcom/samsung/android/multiwindow/MultiWindowFacade;
 
     const/4 v5, 0x1
 
@@ -281,7 +278,6 @@
 
 .method static synthetic access$100(Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;)[B
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;->mIvt:[B
 
@@ -290,7 +286,6 @@
 
 .method static synthetic access$1000(Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;)Z
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;
 
     iget-boolean v0, p0, Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;->mIsDockingCanceled:Z
 
@@ -299,8 +294,6 @@
 
 .method static synthetic access$1002(Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;Z)Z
     .locals 0
-    .param p0    # Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;->mIsDockingCanceled:Z
 
@@ -309,7 +302,6 @@
 
 .method static synthetic access$1100(Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;)I
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;
 
     iget v0, p0, Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;->mDockingX:I
 
@@ -318,8 +310,6 @@
 
 .method static synthetic access$1102(Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;I)I
     .locals 0
-    .param p0    # Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;->mDockingX:I
 
@@ -328,7 +318,6 @@
 
 .method static synthetic access$1200(Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;)I
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;
 
     iget v0, p0, Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;->mDockingY:I
 
@@ -337,8 +326,6 @@
 
 .method static synthetic access$1202(Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;I)I
     .locals 0
-    .param p0    # Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;->mDockingY:I
 
@@ -347,7 +334,6 @@
 
 .method static synthetic access$1300(Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;)Landroid/widget/FrameLayout;
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;->mDecor:Landroid/widget/FrameLayout;
 
@@ -356,7 +342,6 @@
 
 .method static synthetic access$1400(Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;)Z
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;
 
     invoke-direct {p0}, Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;->isInputMethodShowing()Z
 
@@ -367,7 +352,6 @@
 
 .method static synthetic access$1500(Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;)I
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;
 
     iget v0, p0, Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;->mStatusBarHeight:I
 
@@ -376,7 +360,6 @@
 
 .method static synthetic access$1600(Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;)Z
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;
 
     iget-boolean v0, p0, Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;->mConsumeTouchEvent:Z
 
@@ -385,8 +368,6 @@
 
 .method static synthetic access$1602(Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;Z)Z
     .locals 0
-    .param p0    # Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;->mConsumeTouchEvent:Z
 
@@ -395,7 +376,6 @@
 
 .method static synthetic access$1700(Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;)Z
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;
 
     invoke-direct {p0}, Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;->forceHideInputMethod()Z
 
@@ -406,7 +386,6 @@
 
 .method static synthetic access$1800(Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;)Lcom/android/internal/policy/impl/multiwindow/Docking;
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;->mDocking:Lcom/android/internal/policy/impl/multiwindow/Docking;
 
@@ -415,7 +394,6 @@
 
 .method static synthetic access$1900(Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;)Lcom/android/internal/policy/impl/multiwindow/HeaderWindow$OnTouchDownListener;
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;->mTouchDownListener:Lcom/android/internal/policy/impl/multiwindow/HeaderWindow$OnTouchDownListener;
 
@@ -424,7 +402,6 @@
 
 .method static synthetic access$200(Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;)Landroid/os/SystemVibrator;
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;->mVibrator:Landroid/os/SystemVibrator;
 
@@ -433,7 +410,6 @@
 
 .method static synthetic access$2000(Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;)Z
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;
 
     iget-boolean v0, p0, Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;->mMoving:Z
 
@@ -442,8 +418,6 @@
 
 .method static synthetic access$2002(Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;Z)Z
     .locals 0
-    .param p0    # Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;->mMoving:Z
 
@@ -452,7 +426,6 @@
 
 .method static synthetic access$2100(Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;)I
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;
 
     iget v0, p0, Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;->mDockingMargin:I
 
@@ -461,7 +434,6 @@
 
 .method static synthetic access$2200(Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;)V
     .locals 0
-    .param p0    # Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;
 
     invoke-direct {p0}, Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;->dismissGuide()V
 
@@ -470,7 +442,6 @@
 
 .method static synthetic access$2300(Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;)Lcom/android/internal/policy/impl/multiwindow/HeaderWindow$OnMoveListener;
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;->mMoveListener:Lcom/android/internal/policy/impl/multiwindow/HeaderWindow$OnMoveListener;
 
@@ -479,7 +450,6 @@
 
 .method static synthetic access$2400(Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;)Landroid/view/GestureDetector;
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;->mGestureDetector:Landroid/view/GestureDetector;
 
@@ -488,7 +458,6 @@
 
 .method static synthetic access$2500(Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;)Lcom/android/internal/policy/impl/multiwindow/HeaderWindow$OnItemClickListener;
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;->mItemClickListener:Lcom/android/internal/policy/impl/multiwindow/HeaderWindow$OnItemClickListener;
 
@@ -497,7 +466,6 @@
 
 .method static synthetic access$2600(Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;)Lcom/android/internal/policy/impl/multiwindow/HeaderWindow$FloatingMenuView;
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;->mMenuView:Lcom/android/internal/policy/impl/multiwindow/HeaderWindow$FloatingMenuView;
 
@@ -506,8 +474,6 @@
 
 .method static synthetic access$2602(Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;Lcom/android/internal/policy/impl/multiwindow/HeaderWindow$FloatingMenuView;)Lcom/android/internal/policy/impl/multiwindow/HeaderWindow$FloatingMenuView;
     .locals 0
-    .param p0    # Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;
-    .param p1    # Lcom/android/internal/policy/impl/multiwindow/HeaderWindow$FloatingMenuView;
 
     iput-object p1, p0, Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;->mMenuView:Lcom/android/internal/policy/impl/multiwindow/HeaderWindow$FloatingMenuView;
 
@@ -516,7 +482,6 @@
 
 .method static synthetic access$300(Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;)V
     .locals 0
-    .param p0    # Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;
 
     invoke-direct {p0}, Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;->validateGuideView()V
 
@@ -525,7 +490,6 @@
 
 .method static synthetic access$400(Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;)Lcom/samsung/android/multiwindow/ui/GuideView;
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;->mGuideView:Lcom/samsung/android/multiwindow/ui/GuideView;
 
@@ -534,7 +498,6 @@
 
 .method static synthetic access$500(Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;)Landroid/graphics/Rect;
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;->mBoundsRect:Landroid/graphics/Rect;
 
@@ -543,7 +506,6 @@
 
 .method static synthetic access$600(Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;)I
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;
 
     iget v0, p0, Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;->mLastX:I
 
@@ -552,8 +514,6 @@
 
 .method static synthetic access$602(Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;I)I
     .locals 0
-    .param p0    # Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;->mLastX:I
 
@@ -562,7 +522,6 @@
 
 .method static synthetic access$700(Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;)I
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;
 
     iget v0, p0, Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;->mFirstX:I
 
@@ -571,8 +530,6 @@
 
 .method static synthetic access$702(Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;I)I
     .locals 0
-    .param p0    # Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;->mFirstX:I
 
@@ -581,7 +538,6 @@
 
 .method static synthetic access$800(Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;)I
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;
 
     iget v0, p0, Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;->mLastY:I
 
@@ -590,8 +546,6 @@
 
 .method static synthetic access$802(Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;I)I
     .locals 0
-    .param p0    # Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;->mLastY:I
 
@@ -600,7 +554,6 @@
 
 .method static synthetic access$900(Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;)I
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;
 
     iget v0, p0, Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;->mFirstY:I
 
@@ -609,8 +562,6 @@
 
 .method static synthetic access$902(Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;I)I
     .locals 0
-    .param p0    # Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;->mFirstY:I
 
@@ -894,7 +845,6 @@
 
 .method public dismissMenu(Z)V
     .locals 13
-    .param p1    # Z
 
     const-wide/16 v11, 0x190
 
@@ -1055,7 +1005,6 @@
 
 .method public setFocused(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-boolean v0, p0, Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;->mFocused:Z
 
@@ -1074,7 +1023,6 @@
 
 .method public setOnItemClickListener(Lcom/android/internal/policy/impl/multiwindow/HeaderWindow$OnItemClickListener;)V
     .locals 0
-    .param p1    # Lcom/android/internal/policy/impl/multiwindow/HeaderWindow$OnItemClickListener;
 
     iput-object p1, p0, Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;->mItemClickListener:Lcom/android/internal/policy/impl/multiwindow/HeaderWindow$OnItemClickListener;
 
@@ -1083,7 +1031,6 @@
 
 .method public setOnMoveListener(Lcom/android/internal/policy/impl/multiwindow/HeaderWindow$OnMoveListener;)V
     .locals 0
-    .param p1    # Lcom/android/internal/policy/impl/multiwindow/HeaderWindow$OnMoveListener;
 
     iput-object p1, p0, Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;->mMoveListener:Lcom/android/internal/policy/impl/multiwindow/HeaderWindow$OnMoveListener;
 
@@ -1092,7 +1039,6 @@
 
 .method public setOnTouchDownListener(Lcom/android/internal/policy/impl/multiwindow/HeaderWindow$OnTouchDownListener;)V
     .locals 0
-    .param p1    # Lcom/android/internal/policy/impl/multiwindow/HeaderWindow$OnTouchDownListener;
 
     iput-object p1, p0, Lcom/android/internal/policy/impl/multiwindow/HeaderWindow;->mTouchDownListener:Lcom/android/internal/policy/impl/multiwindow/HeaderWindow$OnTouchDownListener;
 
@@ -1101,7 +1047,6 @@
 
 .method public show(Landroid/graphics/Rect;)V
     .locals 8
-    .param p1    # Landroid/graphics/Rect;
 
     const/16 v7, 0x31
 
@@ -1282,7 +1227,6 @@
 
 .method public showMenu(Z)V
     .locals 8
-    .param p1    # Z
 
     const/4 v4, 0x0
 
@@ -1418,7 +1362,6 @@
 
 .method public startDragMode(Z)V
     .locals 2
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 

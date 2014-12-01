@@ -88,7 +88,6 @@
 
 .method public static formatHasAlpha(I)Z
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -126,8 +125,6 @@
 
 .method public static getPixelFormatInfo(ILandroid/graphics/PixelFormat;)V
     .locals 3
-    .param p0    # I
-    .param p1    # Landroid/graphics/PixelFormat;
 
     const/16 v0, 0x10
 

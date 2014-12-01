@@ -46,7 +46,6 @@
 
 .method public static isMailTo(Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     if-eqz p0, :cond_0
 
@@ -71,7 +70,6 @@
 
 .method public static parse(Ljava/lang/String;)Landroid/net/MailTo;
     .locals 17
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/net/ParseException;

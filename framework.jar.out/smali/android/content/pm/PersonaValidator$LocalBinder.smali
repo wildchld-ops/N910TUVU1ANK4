@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/pm/PersonaValidator;)V
     .locals 0
-    .param p1    # Landroid/content/pm/PersonaValidator;
 
     invoke-direct {p0}, Landroid/content/pm/IPersonaValidator$Stub;-><init>()V
 
@@ -34,9 +33,6 @@
 # virtual methods
 .method public validateCallerForAPI(JLjava/lang/String;I)I
     .locals 3
-    .param p1    # J
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
 
     iget-object v0, p0, Landroid/content/pm/PersonaValidator$LocalBinder;->mValidator:Landroid/content/pm/PersonaValidator;
 

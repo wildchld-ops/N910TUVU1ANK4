@@ -40,7 +40,7 @@
 
     iget-object v0, p0, Lcom/android/phone/InternationalEnhanced4GLTE$2;->this$0:Lcom/android/phone/InternationalEnhanced4GLTE;
 
-    invoke-virtual {v0}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v0}, Lcom/android/phone/InternationalEnhanced4GLTE;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -62,7 +62,7 @@
 
     iget-object v0, p0, Lcom/android/phone/InternationalEnhanced4GLTE$2;->this$0:Lcom/android/phone/InternationalEnhanced4GLTE;
 
-    invoke-virtual {v0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {v0}, Lcom/android/phone/InternationalEnhanced4GLTE;->finish()V
 
     :cond_0
     return-void

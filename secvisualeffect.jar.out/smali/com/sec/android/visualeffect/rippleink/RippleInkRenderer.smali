@@ -591,11 +591,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/opengl/GLSurfaceView;III)V
     .locals 8
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/opengl/GLSurfaceView;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     const/16 v7, 0x10
 
@@ -1080,7 +1075,6 @@
 
 .method static synthetic access$000(Lcom/sec/android/visualeffect/rippleink/RippleInkRenderer;)Z
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/rippleink/RippleInkRenderer;
 
     iget-boolean v0, p0, Lcom/sec/android/visualeffect/rippleink/RippleInkRenderer;->isRestrictCPUClock:Z
 
@@ -1089,7 +1083,6 @@
 
 .method static synthetic access$100(Lcom/sec/android/visualeffect/rippleink/RippleInkRenderer;)Z
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/rippleink/RippleInkRenderer;
 
     iget-boolean v0, p0, Lcom/sec/android/visualeffect/rippleink/RippleInkRenderer;->isRestrictGPUFreq:Z
 
@@ -1098,11 +1091,6 @@
 
 .method static synthetic access$1000(Lcom/sec/android/visualeffect/rippleink/RippleInkRenderer;FFFZ)V
     .locals 0
-    .param p0    # Lcom/sec/android/visualeffect/rippleink/RippleInkRenderer;
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # Z
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/sec/android/visualeffect/rippleink/RippleInkRenderer;->ripple(FFFZ)V
 
@@ -1111,7 +1099,6 @@
 
 .method static synthetic access$1100(Lcom/sec/android/visualeffect/rippleink/RippleInkRenderer;)Ljava/lang/Runnable;
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/rippleink/RippleInkRenderer;
 
     iget-object v0, p0, Lcom/sec/android/visualeffect/rippleink/RippleInkRenderer;->mDefaultRunnable:Ljava/lang/Runnable;
 
@@ -1120,8 +1107,6 @@
 
 .method static synthetic access$1102(Lcom/sec/android/visualeffect/rippleink/RippleInkRenderer;Ljava/lang/Runnable;)Ljava/lang/Runnable;
     .locals 0
-    .param p0    # Lcom/sec/android/visualeffect/rippleink/RippleInkRenderer;
-    .param p1    # Ljava/lang/Runnable;
 
     iput-object p1, p0, Lcom/sec/android/visualeffect/rippleink/RippleInkRenderer;->mDefaultRunnable:Ljava/lang/Runnable;
 
@@ -1130,8 +1115,6 @@
 
 .method static synthetic access$1202(Lcom/sec/android/visualeffect/rippleink/RippleInkRenderer;Z)Z
     .locals 0
-    .param p0    # Lcom/sec/android/visualeffect/rippleink/RippleInkRenderer;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/visualeffect/rippleink/RippleInkRenderer;->calledScreenTurnedOn:Z
 
@@ -1140,7 +1123,6 @@
 
 .method static synthetic access$1300(Lcom/sec/android/visualeffect/rippleink/RippleInkRenderer;)V
     .locals 0
-    .param p0    # Lcom/sec/android/visualeffect/rippleink/RippleInkRenderer;
 
     invoke-direct {p0}, Lcom/sec/android/visualeffect/rippleink/RippleInkRenderer;->aquireCpuGpuMaxLock()V
 
@@ -1149,7 +1131,6 @@
 
 .method static synthetic access$1400(Lcom/sec/android/visualeffect/rippleink/RippleInkRenderer;)V
     .locals 0
-    .param p0    # Lcom/sec/android/visualeffect/rippleink/RippleInkRenderer;
 
     invoke-direct {p0}, Lcom/sec/android/visualeffect/rippleink/RippleInkRenderer;->releaseCpuGpuMaxLock()V
 
@@ -1158,7 +1139,6 @@
 
 .method static synthetic access$200(Lcom/sec/android/visualeffect/rippleink/RippleInkRenderer;)Lcom/sec/android/visualeffect/rippleink/RippleInkRenderer$DVFSHandlerForRipple;
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/rippleink/RippleInkRenderer;
 
     iget-object v0, p0, Lcom/sec/android/visualeffect/rippleink/RippleInkRenderer;->mDVFSHandlerRipple:Lcom/sec/android/visualeffect/rippleink/RippleInkRenderer$DVFSHandlerForRipple;
 
@@ -1167,7 +1147,6 @@
 
 .method static synthetic access$300(Lcom/sec/android/visualeffect/rippleink/RippleInkRenderer;)I
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/rippleink/RippleInkRenderer;
 
     iget v0, p0, Lcom/sec/android/visualeffect/rippleink/RippleInkRenderer;->drawCount:I
 
@@ -1176,7 +1155,6 @@
 
 .method static synthetic access$400(Lcom/sec/android/visualeffect/rippleink/RippleInkRenderer;)Z
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/rippleink/RippleInkRenderer;
 
     iget-boolean v0, p0, Lcom/sec/android/visualeffect/rippleink/RippleInkRenderer;->mLandscape:Z
 
@@ -1185,7 +1163,6 @@
 
 .method static synthetic access$500(Lcom/sec/android/visualeffect/rippleink/RippleInkRenderer;)F
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/rippleink/RippleInkRenderer;
 
     iget v0, p0, Lcom/sec/android/visualeffect/rippleink/RippleInkRenderer;->defaultX:F
 
@@ -1194,7 +1171,6 @@
 
 .method static synthetic access$600(Lcom/sec/android/visualeffect/rippleink/RippleInkRenderer;)I
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/rippleink/RippleInkRenderer;
 
     iget v0, p0, Lcom/sec/android/visualeffect/rippleink/RippleInkRenderer;->mScreenWidth:I
 
@@ -1203,7 +1179,6 @@
 
 .method static synthetic access$700(Lcom/sec/android/visualeffect/rippleink/RippleInkRenderer;)I
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/rippleink/RippleInkRenderer;
 
     iget v0, p0, Lcom/sec/android/visualeffect/rippleink/RippleInkRenderer;->mScreenHeight:I
 
@@ -1212,7 +1187,6 @@
 
 .method static synthetic access$800(Lcom/sec/android/visualeffect/rippleink/RippleInkRenderer;)F
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/rippleink/RippleInkRenderer;
 
     iget v0, p0, Lcom/sec/android/visualeffect/rippleink/RippleInkRenderer;->defaultY:F
 
@@ -1221,8 +1195,6 @@
 
 .method static synthetic access$900(Lcom/sec/android/visualeffect/rippleink/RippleInkRenderer;Z)V
     .locals 0
-    .param p0    # Lcom/sec/android/visualeffect/rippleink/RippleInkRenderer;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/sec/android/visualeffect/rippleink/RippleInkRenderer;->setHoverEnable(Z)V
 
@@ -1231,7 +1203,6 @@
 
 .method private acquireBooster(I)V
     .locals 6
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -1429,8 +1400,6 @@
 
 .method private getBestMaxFreq([II)I
     .locals 6
-    .param p1    # [I
-    .param p2    # I
 
     const/4 v4, 0x0
 
@@ -1470,9 +1439,6 @@
 
 .method private getCenterCropBitmap(Landroid/graphics/Bitmap;II)Landroid/graphics/Bitmap;
     .locals 10
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v9, 0x0
 
@@ -2366,11 +2332,6 @@
 
 .method private perspectiveM([FFFFF)V
     .locals 9
-    .param p1    # [F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
 
     const/4 v8, 0x0
 
@@ -2522,10 +2483,6 @@
 
 .method private declared-synchronized ripple(FFFZ)V
     .locals 8
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # Z
 
     monitor-enter p0
 
@@ -2641,7 +2598,6 @@
 
 .method private setHoverEnable(Z)V
     .locals 2
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -2736,7 +2692,6 @@
 
 .method private setRippleVersion(Z)V
     .locals 7
-    .param p1    # Z
 
     const/4 v6, 0x0
 
@@ -2902,8 +2857,6 @@
 # virtual methods
 .method public declared-synchronized changeBackground(Landroid/graphics/Bitmap;I)V
     .locals 2
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # I
 
     monitor-enter p0
 
@@ -3225,7 +3178,6 @@
 
 .method public handleTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 14
-    .param p1    # Landroid/view/MotionEvent;
 
     const-string v8, "RippleInkRenderer"
 
@@ -3965,7 +3917,6 @@
 
 .method public onDrawFrame(Ljavax/microedition/khronos/opengles/GL10;)V
     .locals 23
-    .param p1    # Ljavax/microedition/khronos/opengles/GL10;
 
     move-object/from16 v0, p0
 
@@ -4454,9 +4405,6 @@
 
 .method public onSurfaceChanged(Ljavax/microedition/khronos/opengles/GL10;II)V
     .locals 17
-    .param p1    # Ljavax/microedition/khronos/opengles/GL10;
-    .param p2    # I
-    .param p3    # I
 
     const-string v2, "RippleInkRenderer"
 
@@ -4888,8 +4836,6 @@
 
 .method public onSurfaceCreated(Ljavax/microedition/khronos/opengles/GL10;Ljavax/microedition/khronos/egl/EGLConfig;)V
     .locals 2
-    .param p1    # Ljavax/microedition/khronos/opengles/GL10;
-    .param p2    # Ljavax/microedition/khronos/egl/EGLConfig;
 
     const-string v0, "RippleInkRenderer"
 
@@ -4912,7 +4858,6 @@
 
 .method public releaseBooster(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -5030,7 +4975,6 @@
 
 .method public setBackground(Landroid/graphics/Bitmap;)V
     .locals 3
-    .param p1    # Landroid/graphics/Bitmap;
 
     const-string v0, "RippleInkRenderer"
 
@@ -5164,7 +5108,6 @@
 
 .method public setResourcesBitmap(Landroid/graphics/Bitmap;)V
     .locals 2
-    .param p1    # Landroid/graphics/Bitmap;
 
     const-string v0, "RippleInkRenderer"
 
@@ -5179,21 +5122,6 @@
 
 .method public setRippleConfiguration(IIFFFFIIIIFFFFI)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # F
-    .param p7    # I
-    .param p8    # I
-    .param p9    # I
-    .param p10    # I
-    .param p11    # F
-    .param p12    # F
-    .param p13    # F
-    .param p14    # F
-    .param p15    # I
 
     const-string v1, "RippleInkRenderer"
 
@@ -5274,10 +5202,6 @@
 
 .method public setValueOfDVFS(ZIZI)V
     .locals 3
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # I
 
     iput-boolean p1, p0, Lcom/sec/android/visualeffect/rippleink/RippleInkRenderer;->isRestrictCPUClock:Z
 
@@ -5388,7 +5312,6 @@
 
 .method public setValueOfInk(Z)V
     .locals 3
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/visualeffect/rippleink/RippleInkRenderer;->isInkEnable:Z
 
@@ -5518,8 +5441,6 @@
 
 .method public showUnlockAffordance(JLandroid/graphics/Rect;)V
     .locals 3
-    .param p1    # J
-    .param p3    # Landroid/graphics/Rect;
 
     const-string v0, "RippleInkRenderer"
 

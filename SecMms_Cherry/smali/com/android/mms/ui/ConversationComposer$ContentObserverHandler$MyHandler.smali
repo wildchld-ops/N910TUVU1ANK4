@@ -29,8 +29,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/mms/ui/ConversationComposer$ContentObserverHandler;Landroid/os/Looper;Lcom/android/mms/ui/ConversationComposer$ContentObserverHandler;)V
     .locals 1
-    .param p2    # Landroid/os/Looper;
-    .param p3    # Lcom/android/mms/ui/ConversationComposer$ContentObserverHandler;
 
     iput-object p1, p0, Lcom/android/mms/ui/ConversationComposer$ContentObserverHandler$MyHandler;->this$1:Lcom/android/mms/ui/ConversationComposer$ContentObserverHandler;
 
@@ -49,7 +47,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 1
-    .param p1    # Landroid/os/Message;
 
     const/4 v0, 0x0
 

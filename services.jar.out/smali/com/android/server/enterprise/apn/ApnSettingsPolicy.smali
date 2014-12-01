@@ -65,7 +65,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Landroid/app/enterprise/IApnSettingsPolicy$Stub;-><init>()V
 
@@ -84,7 +83,6 @@
 
 .method private enforceApnPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/apn/ApnSettingsPolicy;->getEDM()Landroid/app/enterprise/EnterpriseDeviceManager;
 
@@ -101,7 +99,6 @@
 
 .method private enforceOwnerOnlyAndApnPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/apn/ApnSettingsPolicy;->getEDM()Landroid/app/enterprise/EnterpriseDeviceManager;
 
@@ -248,8 +245,6 @@
 
 .method private getColumnValue(Ljava/lang/String;Landroid/database/Cursor;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/database/Cursor;
 
     const-string v1, ""
 
@@ -307,7 +302,6 @@
 
 .method private isValidApnId(J)Z
     .locals 11
-    .param p1    # J
 
     const/4 v10, 0x1
 
@@ -528,10 +522,6 @@
 
 .method private setColumnValue(ZLandroid/content/ContentValues;Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Z
-    .param p2    # Landroid/content/ContentValues;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     if-eqz p1, :cond_2
 
@@ -599,7 +589,6 @@
 
 .method private validateString(Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -618,9 +607,6 @@
 # virtual methods
 .method public declared-synchronized addUpdateApn(Landroid/app/enterprise/ContextInfo;ZLandroid/app/enterprise/ApnSettings;)J
     .locals 36
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
-    .param p3    # Landroid/app/enterprise/ApnSettings;
 
     monitor-enter p0
 
@@ -1673,8 +1659,6 @@
 
 .method public declared-synchronized deleteApn(Landroid/app/enterprise/ContextInfo;J)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # J
 
     const/4 v3, 0x0
 
@@ -1779,7 +1763,6 @@
 
 .method public getApnList(Landroid/app/enterprise/ContextInfo;)Ljava/util/List;
     .locals 18
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2176,8 +2159,6 @@
 
 .method public getApnSettings(Landroid/app/enterprise/ContextInfo;J)Landroid/app/enterprise/ApnSettings;
     .locals 18
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # J
 
     invoke-direct/range {p0 .. p1}, Lcom/android/server/enterprise/apn/ApnSettingsPolicy;->enforceOwnerOnlyAndApnPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -2466,7 +2447,6 @@
 
 .method public getPreferredApn(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ApnSettings;
     .locals 11
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/apn/ApnSettingsPolicy;->enforceOwnerOnlyAndApnPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -2628,29 +2608,24 @@
 
 .method public onAdminAdded(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onAdminRemoved(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onPreAdminRemoval(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public declared-synchronized setPreferredApn(Landroid/app/enterprise/ContextInfo;J)Z
     .locals 8
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # J
 
     const-wide/16 v5, 0x0
 

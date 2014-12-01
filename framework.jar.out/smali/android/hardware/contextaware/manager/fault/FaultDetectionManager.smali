@@ -77,7 +77,6 @@
 
 .method public final initializeManager(Landroid/hardware/contextaware/manager/ContextManager;)V
     .locals 1
-    .param p1    # Landroid/hardware/contextaware/manager/ContextManager;
 
     new-instance v0, Landroid/hardware/contextaware/manager/fault/RestoreManager;
 
@@ -138,7 +137,6 @@
 
 .method public final registerCmdProcessResultManager(Landroid/hardware/contextaware/manager/fault/CmdProcessResultManager;)V
     .locals 1
-    .param p1    # Landroid/hardware/contextaware/manager/fault/CmdProcessResultManager;
 
     iget-object v0, p0, Landroid/hardware/contextaware/manager/fault/FaultDetectionManager;->mCmdProcessResultManager:Landroid/hardware/contextaware/manager/fault/CmdProcessResultManager;
 
@@ -159,10 +157,6 @@
 
 .method public final runRestore(Ljava/lang/String;Landroid/hardware/contextaware/manager/ContextAwareService$Listener;ILandroid/hardware/contextaware/manager/IContextObserver;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/hardware/contextaware/manager/ContextAwareService$Listener;
-    .param p3    # I
-    .param p4    # Landroid/hardware/contextaware/manager/IContextObserver;
 
     iget-object v0, p0, Landroid/hardware/contextaware/manager/fault/FaultDetectionManager;->mRestoreManager:Landroid/hardware/contextaware/manager/fault/RestoreManager;
 

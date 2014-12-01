@@ -92,7 +92,6 @@
 
 .method public constructor <init>(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     const/4 v1, 0x2
 
@@ -207,7 +206,6 @@
 
 .method static synthetic access$000(Landroid/widget/ZoomButtonsController;)Z
     .locals 1
-    .param p0    # Landroid/widget/ZoomButtonsController;
 
     iget-boolean v0, p0, Landroid/widget/ZoomButtonsController;->mIsVisible:Z
 
@@ -216,7 +214,6 @@
 
 .method static synthetic access$100(Landroid/widget/ZoomButtonsController;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Landroid/widget/ZoomButtonsController;
 
     iget-object v0, p0, Landroid/widget/ZoomButtonsController;->mHandler:Landroid/os/Handler;
 
@@ -225,7 +222,6 @@
 
 .method static synthetic access$200(Landroid/widget/ZoomButtonsController;)V
     .locals 0
-    .param p0    # Landroid/widget/ZoomButtonsController;
 
     invoke-direct {p0}, Landroid/widget/ZoomButtonsController;->onPostConfigurationChanged()V
 
@@ -234,7 +230,6 @@
 
 .method static synthetic access$300(Landroid/widget/ZoomButtonsController;)Landroid/view/View;
     .locals 1
-    .param p0    # Landroid/widget/ZoomButtonsController;
 
     iget-object v0, p0, Landroid/widget/ZoomButtonsController;->mOwnerView:Landroid/view/View;
 
@@ -251,8 +246,6 @@
 
 .method static synthetic access$500(Landroid/widget/ZoomButtonsController;I)V
     .locals 0
-    .param p0    # Landroid/widget/ZoomButtonsController;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/widget/ZoomButtonsController;->dismissControlsDelayed(I)V
 
@@ -261,7 +254,6 @@
 
 .method static synthetic access$600(Landroid/widget/ZoomButtonsController;)Landroid/widget/ZoomButtonsController$OnZoomListener;
     .locals 1
-    .param p0    # Landroid/widget/ZoomButtonsController;
 
     iget-object v0, p0, Landroid/widget/ZoomButtonsController;->mCallback:Landroid/widget/ZoomButtonsController$OnZoomListener;
 
@@ -270,7 +262,6 @@
 
 .method static synthetic access$700(Landroid/widget/ZoomButtonsController;)V
     .locals 0
-    .param p0    # Landroid/widget/ZoomButtonsController;
 
     invoke-direct {p0}, Landroid/widget/ZoomButtonsController;->refreshPositioningVariables()V
 
@@ -279,8 +270,6 @@
 
 .method static synthetic access$800(Landroid/widget/ZoomButtonsController;Landroid/view/KeyEvent;)Z
     .locals 1
-    .param p0    # Landroid/widget/ZoomButtonsController;
-    .param p1    # Landroid/view/KeyEvent;
 
     invoke-direct {p0, p1}, Landroid/widget/ZoomButtonsController;->onContainerKey(Landroid/view/KeyEvent;)Z
 
@@ -383,7 +372,6 @@
 
 .method private dismissControlsDelayed(I)V
     .locals 4
-    .param p1    # I
 
     const/4 v3, 0x3
 
@@ -407,8 +395,6 @@
 
 .method private findViewForTouch(II)Landroid/view/View;
     .locals 12
-    .param p1    # I
-    .param p2    # I
 
     iget-object v10, p0, Landroid/widget/ZoomButtonsController;->mContainerRawLocation:[I
 
@@ -568,7 +554,6 @@
 
 .method private isInterestingKey(I)Z
     .locals 1
-    .param p1    # I
 
     sparse-switch p1, :sswitch_data_0
 
@@ -598,7 +583,6 @@
 
 .method private onContainerKey(Landroid/view/KeyEvent;)Z
     .locals 6
-    .param p1    # Landroid/view/KeyEvent;
 
     const/4 v4, 0x0
 
@@ -812,7 +796,6 @@
 
 .method private setTouchTargetView(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     iput-object p1, p0, Landroid/widget/ZoomButtonsController;->mTouchTargetView:Landroid/view/View;
 
@@ -862,8 +845,6 @@
 
 .method public onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 17
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     invoke-virtual/range {p2 .. p2}, Landroid/view/MotionEvent;->getAction()I
 
@@ -1187,7 +1168,6 @@
 
 .method public setAutoDismissed(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-boolean v0, p0, Landroid/widget/ZoomButtonsController;->mAutoDismissControls:Z
 
@@ -1204,7 +1184,6 @@
 
 .method public setFocusable(Z)V
     .locals 4
-    .param p1    # Z
 
     iget-object v1, p0, Landroid/widget/ZoomButtonsController;->mContainerLayoutParams:Landroid/view/WindowManager$LayoutParams;
 
@@ -1256,7 +1235,6 @@
 
 .method public setOnZoomListener(Landroid/widget/ZoomButtonsController$OnZoomListener;)V
     .locals 0
-    .param p1    # Landroid/widget/ZoomButtonsController$OnZoomListener;
 
     iput-object p1, p0, Landroid/widget/ZoomButtonsController;->mCallback:Landroid/widget/ZoomButtonsController$OnZoomListener;
 
@@ -1265,7 +1243,6 @@
 
 .method public setVisible(Z)V
     .locals 5
-    .param p1    # Z
 
     const/4 v1, 0x4
 
@@ -1439,7 +1416,6 @@
 
 .method public setZoomInEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Landroid/widget/ZoomButtonsController;->mControls:Landroid/widget/ZoomControls;
 
@@ -1450,7 +1426,6 @@
 
 .method public setZoomOutEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Landroid/widget/ZoomButtonsController;->mControls:Landroid/widget/ZoomControls;
 
@@ -1461,7 +1436,6 @@
 
 .method public setZoomSpeed(J)V
     .locals 1
-    .param p1    # J
 
     iget-object v0, p0, Landroid/widget/ZoomButtonsController;->mControls:Landroid/widget/ZoomControls;
 

@@ -133,8 +133,6 @@
 
 .method synthetic constructor <init>(Landroid/app/ActivityThread;Landroid/app/ActivityThread$1;)V
     .locals 0
-    .param p1    # Landroid/app/ActivityThread;
-    .param p2    # Landroid/app/ActivityThread$1;
 
     invoke-direct {p0, p1}, Landroid/app/ActivityThread$H;-><init>(Landroid/app/ActivityThread;)V
 
@@ -143,7 +141,6 @@
 
 .method private handleMultiWindowConfigurationChanaged(I)V
     .locals 8
-    .param p1    # I
 
     and-int/lit16 v7, p1, 0x80
 
@@ -210,9 +207,6 @@
 
 .method private handleMultiWindowStyleChanged(Landroid/os/IBinder;Lcom/samsung/android/multiwindow/MultiWindowStyle;I)V
     .locals 4
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Lcom/samsung/android/multiwindow/MultiWindowStyle;
-    .param p3    # I
 
     iget-object v2, p0, Landroid/app/ActivityThread$H;->this$0:Landroid/app/ActivityThread;
 
@@ -425,7 +419,6 @@
 # virtual methods
 .method codeToString(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     invoke-static {p1}, Ljava/lang/Integer;->toString(I)Ljava/lang/String;
 
@@ -436,7 +429,6 @@
 
 .method public handleMessage(Landroid/os/Message;)V
     .locals 11
-    .param p1    # Landroid/os/Message;
 
     const/4 v7, 0x0
 

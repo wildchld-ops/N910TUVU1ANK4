@@ -12,7 +12,6 @@
 # direct methods
 .method public constructor <init>(Lcom/diotek/ime/framework/common/InputManager;)V
     .locals 1
-    .param p1    # Lcom/diotek/ime/framework/common/InputManager;
 
     invoke-direct {p0}, Ljava/lang/Thread;-><init>()V
 
@@ -31,7 +30,6 @@
 
 .method static synthetic access$000(Lcom/sec/android/inputmethod/AudioAndHapticVibratorFeedback;)Lcom/diotek/ime/framework/common/InputManager;
     .locals 1
-    .param p0    # Lcom/sec/android/inputmethod/AudioAndHapticVibratorFeedback;
 
     iget-object v0, p0, Lcom/sec/android/inputmethod/AudioAndHapticVibratorFeedback;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -42,7 +40,6 @@
 # virtual methods
 .method public declared-synchronized playSoundEffect(I)V
     .locals 2
-    .param p1    # I
 
     monitor-enter p0
 
@@ -71,8 +68,6 @@
 
 .method public declared-synchronized playSoundEffect(IZ)V
     .locals 2
-    .param p1    # I
-    .param p2    # Z
 
     monitor-enter p0
 
@@ -101,7 +96,6 @@
 
 .method public declared-synchronized playVibrateEffect(I)V
     .locals 2
-    .param p1    # I
 
     monitor-enter p0
 
@@ -130,8 +124,6 @@
 
 .method public declared-synchronized playVibrateEffect(IZ)V
     .locals 2
-    .param p1    # I
-    .param p2    # Z
 
     monitor-enter p0
 

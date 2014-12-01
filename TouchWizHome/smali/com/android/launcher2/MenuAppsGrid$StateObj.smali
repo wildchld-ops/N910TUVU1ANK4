@@ -204,15 +204,12 @@
 
 .method public preOpenFolder(Lcom/android/launcher2/FolderItem;Lcom/android/launcher2/Folder;)V
     .locals 0
-    .param p1    # Lcom/android/launcher2/FolderItem;
-    .param p2    # Lcom/android/launcher2/Folder;
 
     return-void
 .end method
 
 .method public restore(Landroid/os/Bundle;)Z
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v0, 0x1
 
@@ -242,7 +239,6 @@
 
 .method public save(Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     return-void
 .end method

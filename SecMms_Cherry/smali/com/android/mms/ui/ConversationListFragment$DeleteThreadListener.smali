@@ -70,10 +70,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/mms/ui/ConversationListFragment;JLandroid/content/AsyncQueryHandler;Landroid/content/Context;[Ljava/lang/Long;)V
     .locals 3
-    .param p2    # J
-    .param p4    # Landroid/content/AsyncQueryHandler;
-    .param p5    # Landroid/content/Context;
-    .param p6    # [Ljava/lang/Long;
 
     const/4 v2, 0x0
 
@@ -154,11 +150,6 @@
 
 .method public constructor <init>(Lcom/android/mms/ui/ConversationListFragment;JLjava/lang/String;Landroid/content/AsyncQueryHandler;Landroid/content/Context;[Ljava/lang/Long;Ljava/util/ArrayList;Ljava/util/ArrayList;)V
     .locals 3
-    .param p2    # J
-    .param p4    # Ljava/lang/String;
-    .param p5    # Landroid/content/AsyncQueryHandler;
-    .param p6    # Landroid/content/Context;
-    .param p7    # [Ljava/lang/Long;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(J",
@@ -285,7 +276,6 @@
 
 .method static synthetic access$4100(Lcom/android/mms/ui/ConversationListFragment$DeleteThreadListener;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment$DeleteThreadListener;
 
     invoke-direct {p0}, Lcom/android/mms/ui/ConversationListFragment$DeleteThreadListener;->deleteRun()V
 
@@ -294,7 +284,6 @@
 
 .method static synthetic access$4400(Lcom/android/mms/ui/ConversationListFragment$DeleteThreadListener;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment$DeleteThreadListener;
 
     iget-boolean v0, p0, Lcom/android/mms/ui/ConversationListFragment$DeleteThreadListener;->mDeleteLockedMessages:Z
 
@@ -303,7 +292,6 @@
 
 .method static synthetic access$4500(Lcom/android/mms/ui/ConversationListFragment$DeleteThreadListener;)J
     .locals 2
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment$DeleteThreadListener;
 
     iget-wide v0, p0, Lcom/android/mms/ui/ConversationListFragment$DeleteThreadListener;->mThreadId:J
 
@@ -312,7 +300,6 @@
 
 .method static synthetic access$4600(Lcom/android/mms/ui/ConversationListFragment$DeleteThreadListener;)[Ljava/lang/Long;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment$DeleteThreadListener;
 
     iget-object v0, p0, Lcom/android/mms/ui/ConversationListFragment$DeleteThreadListener;->mThreadIdList:[Ljava/lang/Long;
 
@@ -321,7 +308,6 @@
 
 .method static synthetic access$4700(Lcom/android/mms/ui/ConversationListFragment$DeleteThreadListener;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment$DeleteThreadListener;
 
     iget-boolean v0, p0, Lcom/android/mms/ui/ConversationListFragment$DeleteThreadListener;->mHasLockedMessages:Z
 
@@ -330,7 +316,6 @@
 
 .method static synthetic access$4800(Lcom/android/mms/ui/ConversationListFragment$DeleteThreadListener;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment$DeleteThreadListener;
 
     iget-object v0, p0, Lcom/android/mms/ui/ConversationListFragment$DeleteThreadListener;->mDeleteStartHandler:Landroid/os/Handler;
 
@@ -339,7 +324,6 @@
 
 .method static synthetic access$4900(Lcom/android/mms/ui/ConversationListFragment$DeleteThreadListener;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment$DeleteThreadListener;
 
     iget-object v0, p0, Lcom/android/mms/ui/ConversationListFragment$DeleteThreadListener;->mChatIdList:Ljava/util/ArrayList;
 
@@ -348,7 +332,6 @@
 
 .method static synthetic access$5100(Lcom/android/mms/ui/ConversationListFragment$DeleteThreadListener;)Landroid/content/AsyncQueryHandler;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment$DeleteThreadListener;
 
     iget-object v0, p0, Lcom/android/mms/ui/ConversationListFragment$DeleteThreadListener;->mHandler:Landroid/content/AsyncQueryHandler;
 
@@ -357,7 +340,6 @@
 
 .method static synthetic access$5200(Lcom/android/mms/ui/ConversationListFragment$DeleteThreadListener;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment$DeleteThreadListener;
 
     iget-object v0, p0, Lcom/android/mms/ui/ConversationListFragment$DeleteThreadListener;->mContext:Landroid/content/Context;
 
@@ -366,7 +348,6 @@
 
 .method static synthetic access$6100(Lcom/android/mms/ui/ConversationListFragment$DeleteThreadListener;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment$DeleteThreadListener;
 
     iget-object v0, p0, Lcom/android/mms/ui/ConversationListFragment$DeleteThreadListener;->mSessionId:Ljava/lang/String;
 
@@ -375,7 +356,6 @@
 
 .method static synthetic access$6200(Lcom/android/mms/ui/ConversationListFragment$DeleteThreadListener;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment$DeleteThreadListener;
 
     iget-object v0, p0, Lcom/android/mms/ui/ConversationListFragment$DeleteThreadListener;->mChatId:Ljava/lang/String;
 
@@ -384,7 +364,6 @@
 
 .method static synthetic access$6300(Lcom/android/mms/ui/ConversationListFragment$DeleteThreadListener;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment$DeleteThreadListener;
 
     iget-boolean v0, p0, Lcom/android/mms/ui/ConversationListFragment$DeleteThreadListener;->mDeleteDraftMessages:Z
 
@@ -393,7 +372,6 @@
 
 .method private deleteActionAnimationStart([I)V
     .locals 2
-    .param p1    # [I
 
     iget-object v0, p0, Lcom/android/mms/ui/ConversationListFragment$DeleteThreadListener;->mDeleteStartHandler:Landroid/os/Handler;
 
@@ -535,7 +513,6 @@
 
 .method private isAnimatableThread(J)Z
     .locals 4
-    .param p1    # J
 
     const/4 v2, 0x1
 
@@ -623,8 +600,6 @@
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 13
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     const/4 v12, 0x1
 
@@ -850,7 +825,6 @@
 
 .method public setDeleteDraftMessage(Z)Lcom/android/mms/ui/ConversationListFragment$DeleteThreadListener;
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/ConversationListFragment$DeleteThreadListener;->mDeleteDraftMessages:Z
 
@@ -859,7 +833,6 @@
 
 .method public setDeleteLockedMessage(Z)V
     .locals 1
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/ConversationListFragment$DeleteThreadListener;->mDeleteLockedMessages:Z
 
@@ -873,7 +846,6 @@
 
 .method public setDeleteStartHandler(Landroid/os/Handler;)Lcom/android/mms/ui/ConversationListFragment$DeleteThreadListener;
     .locals 0
-    .param p1    # Landroid/os/Handler;
 
     iput-object p1, p0, Lcom/android/mms/ui/ConversationListFragment$DeleteThreadListener;->mDeleteStartHandler:Landroid/os/Handler;
 
@@ -882,7 +854,6 @@
 
 .method public setHasLockedMessage(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/ConversationListFragment$DeleteThreadListener;->mHasLockedMessages:Z
 

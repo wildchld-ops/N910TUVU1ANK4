@@ -36,9 +36,6 @@
 # virtual methods
 .method public onError(Landroid/media/MediaPlayer;II)Z
     .locals 4
-    .param p1    # Landroid/media/MediaPlayer;
-    .param p2    # I
-    .param p3    # I
 
     const v2, 0x7f0c00fa
 

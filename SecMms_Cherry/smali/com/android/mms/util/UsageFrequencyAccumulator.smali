@@ -118,7 +118,6 @@
 
 .method public static getVersionOfContextProviders(Landroid/content/Context;)I
     .locals 6
-    .param p0    # Landroid/content/Context;
 
     const/4 v2, -0x1
 
@@ -156,8 +155,6 @@
 
 .method public static insertLog(Landroid/content/Context;Ljava/lang/String;)V
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/android/mms/util/UsageFrequencyAccumulator;->getVersionOfContextProviders(Landroid/content/Context;)I
 
@@ -230,9 +227,6 @@
 
 .method public static insertLog(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     new-instance v1, Landroid/content/ContentValues;
 

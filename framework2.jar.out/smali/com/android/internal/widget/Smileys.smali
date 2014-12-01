@@ -155,7 +155,6 @@
 
 .method public static getSmileyResource(I)I
     .locals 1
-    .param p0    # I
 
     sget-object v0, Lcom/android/internal/widget/Smileys;->sIconIds:[I
 

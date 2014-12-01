@@ -98,7 +98,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartScreenActivity;)Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartScrollSettings;
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartScreenActivity;
 
     iget-object v0, p0, Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartScreenActivity;->mSmartScrollSettings:Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartScrollSettings;
 
@@ -107,7 +106,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartScreenActivity;)I
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartScreenActivity;
 
     iget v0, p0, Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartScreenActivity;->mScrollReady:I
 
@@ -116,8 +114,6 @@
 
 .method static synthetic access$102(Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartScreenActivity;I)I
     .locals 0
-    .param p0    # Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartScreenActivity;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartScreenActivity;->mScrollReady:I
 
@@ -126,7 +122,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartScreenActivity;)I
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartScreenActivity;
 
     iget v0, p0, Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartScreenActivity;->mCurrentGuide:I
 
@@ -135,8 +130,6 @@
 
 .method static synthetic access$202(Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartScreenActivity;I)I
     .locals 0
-    .param p0    # Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartScreenActivity;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartScreenActivity;->mCurrentGuide:I
 
@@ -145,7 +138,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartScreenActivity;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartScreenActivity;
 
     iget-object v0, p0, Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartScreenActivity;->guideTextView:Landroid/view/View;
 
@@ -154,8 +146,6 @@
 
 .method static synthetic access$302(Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartScreenActivity;Landroid/view/View;)Landroid/view/View;
     .locals 0
-    .param p0    # Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartScreenActivity;
-    .param p1    # Landroid/view/View;
 
     iput-object p1, p0, Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartScreenActivity;->guideTextView:Landroid/view/View;
 
@@ -164,7 +154,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartScreenActivity;)I
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartScreenActivity;
 
     iget v0, p0, Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartScreenActivity;->mScrollMode:I
 
@@ -173,7 +162,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartScreenActivity;)Ljava/lang/Runnable;
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartScreenActivity;
 
     iget-object v0, p0, Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartScreenActivity;->mFaceRecogRunnable:Ljava/lang/Runnable;
 
@@ -182,7 +170,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartScreenActivity;)I
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartScreenActivity;
 
     iget v0, p0, Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartScreenActivity;->FACE_DETECT_NOTI_DELAY:I
 
@@ -191,7 +178,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartScreenActivity;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartScreenActivity;
 
     iget-object v0, p0, Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartScreenActivity;->mHandler:Landroid/os/Handler;
 
@@ -200,7 +186,6 @@
 
 .method static synthetic access$800(Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartScreenActivity;)Landroid/widget/SeekBar;
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartScreenActivity;
 
     iget-object v0, p0, Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartScreenActivity;->seekBar:Landroid/widget/SeekBar;
 
@@ -209,7 +194,6 @@
 
 .method public static isTablet(Landroid/content/Context;)Z
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -347,7 +331,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 11
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -625,7 +608,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 9
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v8, 0x0
 
@@ -1187,7 +1169,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -1219,7 +1200,6 @@
 
 .method public setSensitivity(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "SmartScreenActivity"
 
@@ -1266,8 +1246,6 @@
 
 .method protected showDialog(Landroid/view/View;Z)V
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # Z
 
     const/4 v2, 0x1
 

@@ -44,12 +44,6 @@
 
 .method public constructor <init>(FFFFFF)V
     .locals 2
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # F
 
     const/high16 v1, 0x3f800000
 
@@ -115,7 +109,6 @@
 
 .method public concat(Lcom/voovio/geometry/Matrix;)V
     .locals 4
-    .param p1    # Lcom/voovio/geometry/Matrix;
 
     invoke-static {}, Lcom/voovio/geometry/MatrixPool;->getMatrix()Lcom/voovio/geometry/Matrix;
 
@@ -234,7 +227,6 @@
 
 .method public copy(Lcom/voovio/geometry/Matrix;)V
     .locals 1
-    .param p1    # Lcom/voovio/geometry/Matrix;
 
     iget v0, p1, Lcom/voovio/geometry/Matrix;->a:F
 
@@ -371,12 +363,6 @@
 
 .method public reset(FFFFFF)V
     .locals 0
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # F
 
     iput p1, p0, Lcom/voovio/geometry/Matrix;->a:F
 
@@ -395,7 +381,6 @@
 
 .method public rotate(F)V
     .locals 8
-    .param p1    # F
 
     const/4 v5, 0x0
 
@@ -450,8 +435,6 @@
 
 .method public scale(FF)V
     .locals 7
-    .param p1    # F
-    .param p2    # F
 
     const/4 v2, 0x0
 
@@ -580,7 +563,6 @@
 
 .method public transformPoint(Lcom/voovio/geometry/Point;)Lcom/voovio/geometry/Point;
     .locals 4
-    .param p1    # Lcom/voovio/geometry/Point;
 
     new-instance v0, Lcom/voovio/geometry/Point;
 
@@ -631,8 +613,6 @@
 
 .method public transformPoint(Lcom/voovio/geometry/Point;Lcom/voovio/geometry/Point;)V
     .locals 3
-    .param p1    # Lcom/voovio/geometry/Point;
-    .param p2    # Lcom/voovio/geometry/Point;
 
     iget v0, p0, Lcom/voovio/geometry/Matrix;->a:F
 
@@ -679,8 +659,6 @@
 
 .method public translate(FF)V
     .locals 7
-    .param p1    # F
-    .param p2    # F
 
     const/high16 v1, 0x3f800000
 

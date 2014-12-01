@@ -159,8 +159,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -383,7 +381,6 @@
 
 .method public checkService(Lcom/sec/android/samsungapps/util/ServiceBinder$IServiceBinderResult;)V
     .locals 2
-    .param p1    # Lcom/sec/android/samsungapps/util/ServiceBinder$IServiceBinderResult;
 
     iget-object v0, p0, Lcom/sec/android/samsungapps/util/ServiceBinder;->_BinderResultListener:Ljava/util/ArrayList;
 
@@ -474,7 +471,6 @@
 
 .method tran(Lcom/sec/android/samsungapps/util/ServiceBinder$State;)V
     .locals 0
-    .param p1    # Lcom/sec/android/samsungapps/util/ServiceBinder$State;
 
     invoke-direct {p0}, Lcom/sec/android/samsungapps/util/ServiceBinder;->exit()V
 

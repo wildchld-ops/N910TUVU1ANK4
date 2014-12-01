@@ -36,8 +36,6 @@
 # virtual methods
 .method public run(Lcom/android/launcher2/MenuWidgets$AppsCustomizeAsyncTask;Lcom/android/launcher2/MenuWidgets$AsyncTaskPageData;)V
     .locals 4
-    .param p1    # Lcom/android/launcher2/MenuWidgets$AppsCustomizeAsyncTask;
-    .param p2    # Lcom/android/launcher2/MenuWidgets$AsyncTaskPageData;
 
     const/4 v3, 0x1
 

@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -45,8 +44,6 @@
 
 .method public filterInputEvent(Landroid/view/InputEvent;I)V
     .locals 5
-    .param p1    # Landroid/view/InputEvent;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -119,7 +116,6 @@
 
 .method public install(Landroid/view/IInputFilterHost;)V
     .locals 5
-    .param p1    # Landroid/view/IInputFilterHost;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

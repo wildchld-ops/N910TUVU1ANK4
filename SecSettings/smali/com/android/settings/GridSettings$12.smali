@@ -46,8 +46,6 @@
 # virtual methods
 .method public compare(Landroid/preference/PreferenceActivity$Header;Landroid/preference/PreferenceActivity$Header;)I
     .locals 2
-    .param p1    # Landroid/preference/PreferenceActivity$Header;
-    .param p2    # Landroid/preference/PreferenceActivity$Header;
 
     iget-object v0, p1, Landroid/preference/PreferenceActivity$Header;->title:Ljava/lang/CharSequence;
 
@@ -70,8 +68,6 @@
 
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p1, Landroid/preference/PreferenceActivity$Header;
 

@@ -30,9 +30,6 @@
 # direct methods
 .method public constructor <init>(Landroid/graphics/Atlas$Type;II)V
     .locals 1
-    .param p1    # Landroid/graphics/Atlas$Type;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v0, 0x2
 
@@ -43,10 +40,6 @@
 
 .method public constructor <init>(Landroid/graphics/Atlas$Type;III)V
     .locals 1
-    .param p1    # Landroid/graphics/Atlas$Type;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -61,10 +54,6 @@
 
 .method private static findPolicy(Landroid/graphics/Atlas$Type;III)Landroid/graphics/Atlas$Policy;
     .locals 3
-    .param p0    # Landroid/graphics/Atlas$Type;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v1, 0x0
 
@@ -140,8 +129,6 @@
 # virtual methods
 .method public pack(II)Landroid/graphics/Atlas$Entry;
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -154,9 +141,6 @@
 
 .method public pack(IILandroid/graphics/Atlas$Entry;)Landroid/graphics/Atlas$Entry;
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/graphics/Atlas$Entry;
 
     if-nez p3, :cond_0
 

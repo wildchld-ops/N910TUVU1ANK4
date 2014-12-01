@@ -54,8 +54,6 @@
 # virtual methods
 .method public compare(Landroid/content/pm/ActivityInfo;Landroid/content/pm/ActivityInfo;)I
     .locals 3
-    .param p1    # Landroid/content/pm/ActivityInfo;
-    .param p2    # Landroid/content/pm/ActivityInfo;
 
     if-eqz p1, :cond_0
 
@@ -141,8 +139,6 @@
 
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p1, Landroid/content/pm/ActivityInfo;
 

@@ -36,8 +36,6 @@
 # virtual methods
 .method public onPictureTaken([BLcom/sec/android/seccamera/SecCamera;)V
     .locals 5
-    .param p1    # [B
-    .param p2    # Lcom/sec/android/seccamera/SecCamera;
 
     const-wide/16 v1, 0x400
 

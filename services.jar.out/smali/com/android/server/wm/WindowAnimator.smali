@@ -91,7 +91,6 @@
 
 .method constructor <init>(Lcom/android/server/wm/WindowManagerService;)V
     .locals 3
-    .param p1    # Lcom/android/server/wm/WindowManagerService;
 
     const/4 v0, 0x0
 
@@ -140,7 +139,6 @@
 
 .method static synthetic access$000(Lcom/android/server/wm/WindowAnimator;)V
     .locals 0
-    .param p0    # Lcom/android/server/wm/WindowAnimator;
 
     invoke-direct {p0}, Lcom/android/server/wm/WindowAnimator;->animateLocked()V
 
@@ -810,7 +808,6 @@
 
 .method static bulkUpdateParamsToString(I)Ljava/lang/String;
     .locals 2
-    .param p0    # I
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -933,7 +930,6 @@
 
 .method private getDisplayContentsAnimatorLocked(I)Lcom/android/server/wm/WindowAnimator$DisplayContentsAnimator;
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/server/wm/WindowAnimator;->mDisplayContentsAnimators:Landroid/util/SparseArray;
 
@@ -961,7 +957,6 @@
 
 .method private needReshowWindowBySViewCover(Lcom/android/server/wm/WindowState;)Z
     .locals 2
-    .param p1    # Lcom/android/server/wm/WindowState;
 
     invoke-virtual {p1}, Lcom/android/server/wm/WindowState;->getCoverMode()I
 
@@ -982,7 +977,6 @@
 
 .method private performAnimationsLocked(I)V
     .locals 0
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/wm/WindowAnimator;->updateWindowsLocked(I)V
 
@@ -993,7 +987,6 @@
 
 .method private testTokenMayBeDrawnLocked(I)V
     .locals 12
-    .param p1    # I
 
     iget-object v9, p0, Lcom/android/server/wm/WindowAnimator;->mService:Lcom/android/server/wm/WindowManagerService;
 
@@ -1138,7 +1131,6 @@
 
 .method private updateAppWindowsLocked(I)V
     .locals 16
-    .param p1    # I
 
     move-object/from16 v0, p0
 
@@ -1373,7 +1365,6 @@
 
 .method private updateWallpaperLocked(I)V
     .locals 11
-    .param p1    # I
 
     const/high16 v10, 0x100000
 
@@ -1554,7 +1545,6 @@
 
 .method private updateWindowsLocked(I)V
     .locals 26
-    .param p1    # I
 
     move-object/from16 v0, p0
 
@@ -2466,7 +2456,6 @@
 # virtual methods
 .method addDisplayLocked(I)V
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/wm/WindowAnimator;->getDisplayContentsAnimatorLocked(I)Lcom/android/server/wm/WindowAnimator$DisplayContentsAnimator;
 
@@ -2482,9 +2471,6 @@
 
 .method public dumpLocked(Ljava/io/PrintWriter;Ljava/lang/String;Z)V
     .locals 10
-    .param p1    # Ljava/io/PrintWriter;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     new-instance v8, Ljava/lang/StringBuilder;
 
@@ -2748,7 +2734,6 @@
 
 .method getMultiWindowTransitionLocked(I)Lcom/android/server/wm/MultiWindowTransition;
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/wm/WindowAnimator;->getDisplayContentsAnimatorLocked(I)Lcom/android/server/wm/WindowAnimator$DisplayContentsAnimator;
 
@@ -2761,7 +2746,6 @@
 
 .method getPendingLayoutChanges(I)I
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/wm/WindowAnimator;->mService:Lcom/android/server/wm/WindowManagerService;
 
@@ -2776,7 +2760,6 @@
 
 .method getScreenRotationAnimationLocked(I)Lcom/android/server/wm/ScreenRotationAnimation;
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/wm/WindowAnimator;->getDisplayContentsAnimatorLocked(I)Lcom/android/server/wm/WindowAnimator$DisplayContentsAnimator;
 
@@ -2789,7 +2772,6 @@
 
 .method hideWallpapersLocked(Lcom/android/server/wm/WindowState;)V
     .locals 12
-    .param p1    # Lcom/android/server/wm/WindowState;
 
     const/4 v11, 0x0
 
@@ -2883,7 +2865,6 @@
 
 .method removeDisplayLocked(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/server/wm/WindowAnimator;->mDisplayContentsAnimators:Landroid/util/SparseArray;
 
@@ -2917,7 +2898,6 @@
 
 .method removeMultiWindowTransitionLocked(I)V
     .locals 2
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/wm/WindowAnimator;->getDisplayContentsAnimatorLocked(I)Lcom/android/server/wm/WindowAnimator$DisplayContentsAnimator;
 
@@ -2949,9 +2929,6 @@
 
 .method setAppLayoutChanges(Lcom/android/server/wm/AppWindowAnimator;ILjava/lang/String;)V
     .locals 6
-    .param p1    # Lcom/android/server/wm/AppWindowAnimator;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     new-instance v1, Landroid/util/SparseIntArray;
 
@@ -3011,8 +2988,6 @@
 
 .method setMultiWindowTransitionLocked(ILcom/android/server/wm/MultiWindowTransition;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Lcom/android/server/wm/MultiWindowTransition;
 
     invoke-direct {p0, p1}, Lcom/android/server/wm/WindowAnimator;->getDisplayContentsAnimatorLocked(I)Lcom/android/server/wm/WindowAnimator$DisplayContentsAnimator;
 
@@ -3025,8 +3000,6 @@
 
 .method setPendingLayoutChanges(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/server/wm/WindowAnimator;->mService:Lcom/android/server/wm/WindowManagerService;
 
@@ -3045,8 +3018,6 @@
 
 .method setScreenRotationAnimationLocked(ILcom/android/server/wm/ScreenRotationAnimation;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Lcom/android/server/wm/ScreenRotationAnimation;
 
     invoke-direct {p0, p1}, Lcom/android/server/wm/WindowAnimator;->getDisplayContentsAnimatorLocked(I)Lcom/android/server/wm/WindowAnimator$DisplayContentsAnimator;
 

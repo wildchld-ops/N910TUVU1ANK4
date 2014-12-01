@@ -45,8 +45,6 @@
 
 .method public constructor <init>(ILjava/lang/Object;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/Object;
 
     invoke-direct {p0, p1, p2}, Lcom/android/incallui/callerinfocard/queryargs/CallerInfoCardQueryArgs;-><init>(ILjava/lang/Object;)V
 
@@ -326,7 +324,6 @@
 
 .method public static registerContentObserver(Landroid/content/Context;)V
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     const/4 v3, 0x1
 
@@ -365,7 +362,6 @@
 
 .method public static unregisterContentObserver(Landroid/content/Context;)V
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     sget-object v0, Lcom/android/incallui/callerinfocard/queryargs/EmailQueryArgs;->mContentObserver:Landroid/database/ContentObserver;
 

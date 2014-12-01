@@ -10,9 +10,6 @@
 # direct methods
 .method protected constructor <init>(ILandroid/content/Context;Landroid/hardware/contextaware/dataprovider/sensorhubprovider/ISensorHubResetObservable;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/hardware/contextaware/dataprovider/sensorhubprovider/ISensorHubResetObservable;
 
     const/4 v0, 0x0
 
@@ -27,7 +24,6 @@
 
 .method private getDisplayLoggingStatus(I)Ljava/lang/String;
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -55,8 +51,6 @@
 # virtual methods
 .method protected final getDisplayContents(Landroid/os/Bundle;Ljava/lang/String;)Ljava/lang/String;
     .locals 11
-    .param p1    # Landroid/os/Bundle;
-    .param p2    # Ljava/lang/String;
 
     const/4 v8, 0x0
 
@@ -273,7 +267,6 @@
 
 .method protected final setLoggingStatus(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/hardware/contextaware/dataprovider/sensorhubprovider/environmentsensorprovider/EnvironmentSensorProvider;->mLoggingStatus:I
 
@@ -282,7 +275,6 @@
 
 .method public final setPropertyValue(ILjava/lang/Object;)Z
     .locals 3
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",

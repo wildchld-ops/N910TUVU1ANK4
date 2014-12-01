@@ -27,8 +27,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/preference/SwitchPreference;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/preference/SwitchPreference;
 
     const/4 v1, 0x0
 
@@ -67,7 +65,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/AirViewPreferenceEnabler;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/settings/AirViewPreferenceEnabler;
 
     iget-object v0, p0, Lcom/android/settings/AirViewPreferenceEnabler;->mContext:Landroid/content/Context;
 
@@ -76,7 +73,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/AirViewPreferenceEnabler;)V
     .locals 0
-    .param p0    # Lcom/android/settings/AirViewPreferenceEnabler;
 
     invoke-direct {p0}, Lcom/android/settings/AirViewPreferenceEnabler;->showAllOptionDisabledDialog()V
 
@@ -85,7 +81,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/AirViewPreferenceEnabler;)Landroid/preference/SwitchPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/AirViewPreferenceEnabler;
 
     iget-object v0, p0, Lcom/android/settings/AirViewPreferenceEnabler;->mSwitch:Landroid/preference/SwitchPreference;
 
@@ -94,8 +89,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/AirViewPreferenceEnabler;Z)V
     .locals 0
-    .param p0    # Lcom/android/settings/AirViewPreferenceEnabler;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/settings/AirViewPreferenceEnabler;->broadcastAirViewChanged(Z)V
 
@@ -104,7 +97,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/AirViewPreferenceEnabler;)Landroid/preference/PreferenceActivity$Header;
     .locals 1
-    .param p0    # Lcom/android/settings/AirViewPreferenceEnabler;
 
     iget-object v0, p0, Lcom/android/settings/AirViewPreferenceEnabler;->mHeader:Landroid/preference/PreferenceActivity$Header;
 
@@ -113,7 +105,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/AirViewPreferenceEnabler;)I
     .locals 1
-    .param p0    # Lcom/android/settings/AirViewPreferenceEnabler;
 
     iget v0, p0, Lcom/android/settings/AirViewPreferenceEnabler;->mPosition:I
 
@@ -122,7 +113,6 @@
 
 .method private broadcastAirViewChanged(Z)V
     .locals 2
-    .param p1    # Z
 
     new-instance v0, Landroid/content/Intent;
 
@@ -474,8 +464,6 @@
 # virtual methods
 .method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
     .locals 5
-    .param p1    # Landroid/preference/Preference;
-    .param p2    # Ljava/lang/Object;
 
     const/4 v2, 0x1
 

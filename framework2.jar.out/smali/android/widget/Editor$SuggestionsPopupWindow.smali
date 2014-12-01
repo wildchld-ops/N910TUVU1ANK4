@@ -106,7 +106,6 @@
 
 .method static synthetic access$1800(Landroid/widget/Editor$SuggestionsPopupWindow;)Z
     .locals 1
-    .param p0    # Landroid/widget/Editor$SuggestionsPopupWindow;
 
     iget-boolean v0, p0, Landroid/widget/Editor$SuggestionsPopupWindow;->mCursorWasVisibleBeforeSuggestions:Z
 
@@ -115,7 +114,6 @@
 
 .method static synthetic access$2200(Landroid/widget/Editor$SuggestionsPopupWindow;)I
     .locals 1
-    .param p0    # Landroid/widget/Editor$SuggestionsPopupWindow;
 
     iget v0, p0, Landroid/widget/Editor$SuggestionsPopupWindow;->mNumberOfSuggestions:I
 
@@ -124,7 +122,6 @@
 
 .method static synthetic access$2300(Landroid/widget/Editor$SuggestionsPopupWindow;)[Landroid/widget/Editor$SuggestionsPopupWindow$SuggestionInfo;
     .locals 1
-    .param p0    # Landroid/widget/Editor$SuggestionsPopupWindow;
 
     iget-object v0, p0, Landroid/widget/Editor$SuggestionsPopupWindow;->mSuggestionInfos:[Landroid/widget/Editor$SuggestionsPopupWindow$SuggestionInfo;
 
@@ -133,7 +130,6 @@
 
 .method static synthetic access$2400(Landroid/widget/Editor$SuggestionsPopupWindow;)Ljava/util/HashMap;
     .locals 1
-    .param p0    # Landroid/widget/Editor$SuggestionsPopupWindow;
 
     iget-object v0, p0, Landroid/widget/Editor$SuggestionsPopupWindow;->mSpansLengths:Ljava/util/HashMap;
 
@@ -222,9 +218,6 @@
 
 .method private highlightTextDifferences(Landroid/widget/Editor$SuggestionsPopupWindow$SuggestionInfo;II)V
     .locals 9
-    .param p1    # Landroid/widget/Editor$SuggestionsPopupWindow$SuggestionInfo;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v8, 0x0
 
@@ -1045,7 +1038,6 @@
 # virtual methods
 .method protected clipVertically(I)I
     .locals 3
-    .param p1    # I
 
     iget-object v2, p0, Landroid/widget/Editor$PinnedPopupWindow;->mContentView:Landroid/view/ViewGroup;
 
@@ -1141,7 +1133,6 @@
 
 .method protected getVerticalLocalPosition(I)I
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/widget/Editor$SuggestionsPopupWindow;->this$0:Landroid/widget/Editor;
 
@@ -1394,9 +1385,6 @@
 
 .method public onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
     .locals 30
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

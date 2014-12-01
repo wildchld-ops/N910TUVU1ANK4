@@ -36,7 +36,6 @@
 # direct methods
 .method public constructor <init>(Landroid/widget/RemoteViewsAdapter;)V
     .locals 1
-    .param p1    # Landroid/widget/RemoteViewsAdapter;
 
     invoke-direct {p0}, Lcom/android/internal/widget/IRemoteViewsAdapterConnection$Stub;-><init>()V
 
@@ -51,8 +50,6 @@
 
 .method static synthetic access$1002(Landroid/widget/RemoteViewsAdapter$RemoteViewsAdapterServiceConnection;Z)Z
     .locals 0
-    .param p0    # Landroid/widget/RemoteViewsAdapter$RemoteViewsAdapterServiceConnection;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/widget/RemoteViewsAdapter$RemoteViewsAdapterServiceConnection;->mIsConnecting:Z
 
@@ -61,8 +58,6 @@
 
 .method static synthetic access$902(Landroid/widget/RemoteViewsAdapter$RemoteViewsAdapterServiceConnection;Z)Z
     .locals 0
-    .param p0    # Landroid/widget/RemoteViewsAdapter$RemoteViewsAdapterServiceConnection;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/widget/RemoteViewsAdapter$RemoteViewsAdapterServiceConnection;->mIsConnected:Z
 
@@ -73,9 +68,6 @@
 # virtual methods
 .method public declared-synchronized bind(Landroid/content/Context;ILandroid/content/Intent;)V
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const/4 v6, 0x1
 
@@ -300,7 +292,6 @@
 
 .method public declared-synchronized onServiceConnected(Landroid/os/IBinder;)V
     .locals 3
-    .param p1    # Landroid/os/IBinder;
 
     monitor-enter p0
 
@@ -415,9 +406,6 @@
 
 .method public declared-synchronized unbind(Landroid/content/Context;ILandroid/content/Intent;)V
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     monitor-enter p0
 

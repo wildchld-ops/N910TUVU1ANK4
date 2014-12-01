@@ -35,7 +35,6 @@
 
 .method synthetic constructor <init>(Landroid/os/CancellationSignal$1;)V
     .locals 0
-    .param p1    # Landroid/os/CancellationSignal$1;
 
     invoke-direct {p0}, Landroid/os/CancellationSignal$Transport;-><init>()V
 

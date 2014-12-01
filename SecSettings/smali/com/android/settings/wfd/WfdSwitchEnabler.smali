@@ -33,7 +33,6 @@
 # direct methods
 .method static synthetic access$100(Lcom/android/settings/wfd/WfdSwitchEnabler;)Landroid/net/wifi/WifiManager;
     .locals 1
-    .param p0    # Lcom/android/settings/wfd/WfdSwitchEnabler;
 
     iget-object v0, p0, Lcom/android/settings/wfd/WfdSwitchEnabler;->mWifiManager:Landroid/net/wifi/WifiManager;
 
@@ -72,7 +71,6 @@
 # virtual methods
 .method checkDPMPolicy(Z)V
     .locals 3
-    .param p1    # Z
 
     const/4 v2, 0x0
 
@@ -120,7 +118,6 @@
 
 .method public onSwitchChanged(Z)Z
     .locals 5
-    .param p1    # Z
 
     const/4 v1, 0x1
 

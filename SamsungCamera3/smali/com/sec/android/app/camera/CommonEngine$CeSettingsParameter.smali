@@ -25,8 +25,6 @@
 # direct methods
 .method public constructor <init>(Lcom/sec/android/app/camera/CommonEngine;II)V
     .locals 0
-    .param p2    # I
-    .param p3    # I
 
     iput-object p1, p0, Lcom/sec/android/app/camera/CommonEngine$CeSettingsParameter;->this$0:Lcom/sec/android/app/camera/CommonEngine;
 

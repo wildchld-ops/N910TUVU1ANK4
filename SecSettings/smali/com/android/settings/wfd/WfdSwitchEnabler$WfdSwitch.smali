@@ -38,8 +38,6 @@
 
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 1
-    .param p1    # Landroid/widget/CompoundButton;
-    .param p2    # Z
 
     iget-object v0, p0, Lcom/android/settings/wfd/WfdSwitchEnabler$WfdSwitch;->mListener:Lcom/android/settings/wfd/WfdChangedListener;
 
@@ -50,7 +48,6 @@
 
 .method public setChecked(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/settings/wfd/WfdSwitchEnabler$WfdSwitch;->mSwitch:Landroid/widget/Switch;
 
@@ -61,7 +58,6 @@
 
 .method public setEnabled(Z)Z
     .locals 1
-    .param p1    # Z
 
     invoke-super {p0, p1}, Lcom/android/settings/wfd/WfdSwitchEnabler$WfdCommonSwitch;->setEnabled(Z)Z
 

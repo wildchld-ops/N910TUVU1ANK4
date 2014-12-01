@@ -135,7 +135,6 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyDatatype$SWIFTKEY_VERSION;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-class v0, Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyDatatype$SWIFTKEY_VERSION;
 

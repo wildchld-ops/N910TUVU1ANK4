@@ -57,7 +57,7 @@
 
     iget-object v0, v0, Lcom/android/phone/callsettings/EditAutoRejectVideoCallScreen;->editBox:Landroid/widget/EditText;
 
-    invoke-virtual {v0}, Landroid/view/View;->isFocused()Z
+    invoke-virtual {v0}, Landroid/widget/EditText;->isFocused()Z
 
     move-result v0
 

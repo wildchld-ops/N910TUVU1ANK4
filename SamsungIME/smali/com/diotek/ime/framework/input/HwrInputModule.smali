@@ -76,7 +76,6 @@
 
 .method static synthetic access$000(Lcom/diotek/ime/framework/input/HwrInputModule;)V
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/input/HwrInputModule;
 
     invoke-direct {p0}, Lcom/diotek/ime/framework/input/HwrInputModule;->runRecognizeThread()V
 
@@ -85,7 +84,6 @@
 
 .method static synthetic access$100(Lcom/diotek/ime/framework/input/HwrInputModule;)V
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/input/HwrInputModule;
 
     invoke-direct {p0}, Lcom/diotek/ime/framework/input/HwrInputModule;->handleRecognizeSuccess()V
 
@@ -94,7 +92,6 @@
 
 .method static synthetic access$200(Lcom/diotek/ime/framework/input/HwrInputModule;)Lcom/diotek/ime/framework/input/InputModule$Timer;
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/input/HwrInputModule;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/input/HwrInputModule;->recognizeAll:Lcom/diotek/ime/framework/input/InputModule$Timer;
 
@@ -103,7 +100,6 @@
 
 .method static synthetic access$300(Lcom/diotek/ime/framework/input/HwrInputModule;)Lcom/diotek/ime/framework/input/InputModule$Timer;
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/input/HwrInputModule;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/input/HwrInputModule;->recognizeFail:Lcom/diotek/ime/framework/input/InputModule$Timer;
 
@@ -112,7 +108,6 @@
 
 .method static synthetic access$400(Lcom/diotek/ime/framework/input/HwrInputModule;)Lcom/diotek/ime/framework/input/InputModule$Timer;
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/input/HwrInputModule;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/input/HwrInputModule;->runRecongnize:Lcom/diotek/ime/framework/input/InputModule$Timer;
 
@@ -121,7 +116,6 @@
 
 .method static synthetic access$500(Lcom/diotek/ime/framework/input/HwrInputModule;)I
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/input/HwrInputModule;
 
     iget v0, p0, Lcom/diotek/ime/framework/input/HwrInputModule;->mStrokeCount:I
 
@@ -130,8 +124,6 @@
 
 .method static synthetic access$502(Lcom/diotek/ime/framework/input/HwrInputModule;I)I
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/input/HwrInputModule;
-    .param p1    # I
 
     iput p1, p0, Lcom/diotek/ime/framework/input/HwrInputModule;->mStrokeCount:I
 
@@ -140,7 +132,6 @@
 
 .method static synthetic access$600(Lcom/diotek/ime/framework/input/HwrInputModule;)Ljava/lang/StringBuilder;
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/input/HwrInputModule;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/input/HwrInputModule;->mCurrentCompsing:Ljava/lang/StringBuilder;
 
@@ -487,8 +478,6 @@
 
 .method private processWordSeparator(I[I)V
     .locals 7
-    .param p1    # I
-    .param p2    # [I
 
     const/4 v6, 0x1
 
@@ -701,7 +690,6 @@
 
 .method public commitTextAndInitComposing(Ljava/lang/CharSequence;)V
     .locals 4
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v3, 0x0
 
@@ -815,8 +803,6 @@
 
 .method public onCharacterKey(I[I)V
     .locals 6
-    .param p1    # I
-    .param p2    # [I
 
     const/4 v5, 0x0
 
@@ -918,17 +904,12 @@
 
 .method public onHwrPanelLongPressed(ILjava/lang/String;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method public onHwrTouchCancel(IIJ)Z
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
 
     iget-object v0, p0, Lcom/diotek/ime/framework/input/AbstractInputModule;->mEngineManager:Lcom/diotek/ime/framework/engine/InputEngineManager;
 
@@ -943,9 +924,6 @@
 
 .method public onHwrTouchDown(IIJ)Z
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
 
     const/4 v2, 0x1
 
@@ -994,9 +972,6 @@
 
 .method public onHwrTouchMove(IIJ)Z
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
 
     iget-object v0, p0, Lcom/diotek/ime/framework/input/AbstractInputModule;->mEngineManager:Lcom/diotek/ime/framework/engine/InputEngineManager;
 
@@ -1011,9 +986,6 @@
 
 .method public onHwrTouchUp(IIJ)Z
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
 
     const/4 v1, 0x1
 
@@ -1050,8 +1022,6 @@
 
 .method protected processSymbolicKey(I[I)V
     .locals 6
-    .param p1    # I
-    .param p2    # [I
 
     const/4 v5, 0x1
 

@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Lcom/android/settings/fingerprint/PaypalPayment;Lcom/android/settings/fingerprint/PaypalPayment$1;)V
     .locals 0
-    .param p1    # Lcom/android/settings/fingerprint/PaypalPayment;
-    .param p2    # Lcom/android/settings/fingerprint/PaypalPayment$1;
 
     invoke-direct {p0, p1}, Lcom/android/settings/fingerprint/PaypalPayment$splashhandler;-><init>(Lcom/android/settings/fingerprint/PaypalPayment;)V
 

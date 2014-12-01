@@ -27,7 +27,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/enterprise/container/EnterpriseContainerPolicy;I)V
     .locals 1
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -48,8 +47,6 @@
 # virtual methods
 .method public updateStatus(ILandroid/os/Bundle;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     const/4 v4, -0x1
 

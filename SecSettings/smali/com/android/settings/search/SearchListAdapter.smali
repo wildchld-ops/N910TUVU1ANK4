@@ -41,10 +41,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;I[Lcom/android/settings/search/SearchItem;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # [Lcom/android/settings/search/SearchItem;
-    .param p4    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -89,7 +85,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/search/SearchListAdapter;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/settings/search/SearchListAdapter;
 
     iget-object v0, p0, Lcom/android/settings/search/SearchListAdapter;->mContext:Landroid/content/Context;
 
@@ -98,9 +93,6 @@
 
 .method private getPrefixCharForIndianString(Landroid/widget/TextView;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -140,8 +132,6 @@
 
 .method private getSpannableTextIndex(Ljava/lang/String;Ljava/lang/String;)I
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v1, -0x1
 
@@ -250,7 +240,6 @@
 
 .method public getItem(I)Lcom/android/settings/search/SearchItem;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/settings/search/SearchListAdapter;->mSearchList:[Lcom/android/settings/search/SearchItem;
 
@@ -261,7 +250,6 @@
 
 .method public bridge synthetic getItem(I)Ljava/lang/Object;
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/settings/search/SearchListAdapter;->getItem(I)Lcom/android/settings/search/SearchItem;
 
@@ -272,9 +260,6 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 34
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     move-object/from16 v0, p0
 

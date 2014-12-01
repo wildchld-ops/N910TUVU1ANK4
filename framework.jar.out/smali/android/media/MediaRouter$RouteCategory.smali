@@ -29,9 +29,6 @@
 # direct methods
 .method constructor <init>(IIZ)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -46,9 +43,6 @@
 
 .method constructor <init>(Ljava/lang/CharSequence;IZ)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -79,7 +73,6 @@
 
 .method public getName(Landroid/content/Context;)Ljava/lang/CharSequence;
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -94,7 +87,6 @@
 
 .method getName(Landroid/content/res/Resources;)Ljava/lang/CharSequence;
     .locals 1
-    .param p1    # Landroid/content/res/Resources;
 
     iget v0, p0, Landroid/media/MediaRouter$RouteCategory;->mNameResId:I
 

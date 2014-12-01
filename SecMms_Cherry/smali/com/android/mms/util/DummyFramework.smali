@@ -47,8 +47,6 @@
 
 .method public static getEncodedString(ILjava/lang/String;)Ljava/lang/String;
     .locals 7
-    .param p0    # I
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     const-string v5, "utf-8"

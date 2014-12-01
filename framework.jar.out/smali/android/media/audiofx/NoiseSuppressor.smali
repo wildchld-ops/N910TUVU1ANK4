@@ -10,7 +10,6 @@
 # direct methods
 .method private constructor <init>(I)V
     .locals 3
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;,
@@ -32,7 +31,6 @@
 
 .method public static create(I)Landroid/media/audiofx/NoiseSuppressor;
     .locals 6
-    .param p0    # I
 
     const/4 v1, 0x0
 

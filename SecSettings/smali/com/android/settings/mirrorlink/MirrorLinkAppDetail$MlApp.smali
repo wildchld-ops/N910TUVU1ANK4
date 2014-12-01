@@ -33,7 +33,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/settings/mirrorlink/MirrorLinkAppDetail;Ljava/lang/String;)V
     .locals 0
-    .param p2    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/settings/mirrorlink/MirrorLinkAppDetail$MlApp;->this$0:Lcom/android/settings/mirrorlink/MirrorLinkAppDetail;
 

@@ -25,8 +25,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/pm/PackageManagerService;Lcom/android/server/pm/PackageManagerService$InstallArgs;Lcom/android/server/pm/PackageManagerService$PackageInstalledInfo;)V
     .locals 0
-    .param p2    # Lcom/android/server/pm/PackageManagerService$InstallArgs;
-    .param p3    # Lcom/android/server/pm/PackageManagerService$PackageInstalledInfo;
 
     iput-object p1, p0, Lcom/android/server/pm/PackageManagerService$PostInstallData;->this$0:Lcom/android/server/pm/PackageManagerService;
 

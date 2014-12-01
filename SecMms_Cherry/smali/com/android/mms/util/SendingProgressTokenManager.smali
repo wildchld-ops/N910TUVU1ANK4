@@ -44,7 +44,6 @@
 
 .method public static declared-synchronized get(Ljava/lang/Object;)J
     .locals 5
-    .param p0    # Ljava/lang/Object;
 
     const-class v3, Lcom/android/mms/util/SendingProgressTokenManager;
 
@@ -119,8 +118,6 @@
 
 .method public static declared-synchronized put(Ljava/lang/Object;J)V
     .locals 4
-    .param p0    # Ljava/lang/Object;
-    .param p1    # J
 
     const-class v1, Lcom/android/mms/util/SendingProgressTokenManager;
 
@@ -189,7 +186,6 @@
 
 .method public static declared-synchronized remove(Ljava/lang/Object;)V
     .locals 4
-    .param p0    # Ljava/lang/Object;
 
     const-class v1, Lcom/android/mms/util/SendingProgressTokenManager;
 

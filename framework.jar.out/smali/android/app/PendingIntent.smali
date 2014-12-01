@@ -56,7 +56,6 @@
 
 .method constructor <init>(Landroid/content/IIntentSender;)V
     .locals 0
-    .param p1    # Landroid/content/IIntentSender;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -67,7 +66,6 @@
 
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 1
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -82,10 +80,6 @@
 
 .method public static getActivities(Landroid/content/Context;I[Landroid/content/Intent;I)Landroid/app/PendingIntent;
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # [Landroid/content/Intent;
-    .param p3    # I
 
     const/4 v0, 0x0
 
@@ -98,11 +92,6 @@
 
 .method public static getActivities(Landroid/content/Context;I[Landroid/content/Intent;ILandroid/os/Bundle;)Landroid/app/PendingIntent;
     .locals 13
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # [Landroid/content/Intent;
-    .param p3    # I
-    .param p4    # Landroid/os/Bundle;
 
     invoke-virtual {p0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
@@ -197,12 +186,6 @@
 
 .method public static getActivitiesAsUser(Landroid/content/Context;I[Landroid/content/Intent;ILandroid/os/Bundle;Landroid/os/UserHandle;)Landroid/app/PendingIntent;
     .locals 13
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # [Landroid/content/Intent;
-    .param p3    # I
-    .param p4    # Landroid/os/Bundle;
-    .param p5    # Landroid/os/UserHandle;
 
     invoke-virtual {p0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
@@ -297,10 +280,6 @@
 
 .method public static getActivity(Landroid/content/Context;ILandroid/content/Intent;I)Landroid/app/PendingIntent;
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # Landroid/content/Intent;
-    .param p3    # I
 
     const/4 v0, 0x0
 
@@ -313,11 +292,6 @@
 
 .method public static getActivity(Landroid/content/Context;ILandroid/content/Intent;ILandroid/os/Bundle;)Landroid/app/PendingIntent;
     .locals 13
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # Landroid/content/Intent;
-    .param p3    # I
-    .param p4    # Landroid/os/Bundle;
 
     invoke-virtual {p0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
@@ -418,12 +392,6 @@
 
 .method public static getActivityAsUser(Landroid/content/Context;ILandroid/content/Intent;ILandroid/os/Bundle;Landroid/os/UserHandle;)Landroid/app/PendingIntent;
     .locals 13
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # Landroid/content/Intent;
-    .param p3    # I
-    .param p4    # Landroid/os/Bundle;
-    .param p5    # Landroid/os/UserHandle;
 
     invoke-virtual {p0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
@@ -524,10 +492,6 @@
 
 .method public static getBroadcast(Landroid/content/Context;ILandroid/content/Intent;I)Landroid/app/PendingIntent;
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # Landroid/content/Intent;
-    .param p3    # I
 
     new-instance v0, Landroid/os/UserHandle;
 
@@ -546,11 +510,6 @@
 
 .method public static getBroadcastAsUser(Landroid/content/Context;ILandroid/content/Intent;ILandroid/os/UserHandle;)Landroid/app/PendingIntent;
     .locals 13
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # Landroid/content/Intent;
-    .param p3    # I
-    .param p4    # Landroid/os/UserHandle;
 
     invoke-virtual {p0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
@@ -649,10 +608,6 @@
 
 .method public static getService(Landroid/content/Context;ILandroid/content/Intent;I)Landroid/app/PendingIntent;
     .locals 13
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # Landroid/content/Intent;
-    .param p3    # I
 
     invoke-virtual {p0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
@@ -751,7 +706,6 @@
 
 .method public static readPendingIntentOrNullFromParcel(Landroid/os/Parcel;)Landroid/app/PendingIntent;
     .locals 2
-    .param p0    # Landroid/os/Parcel;
 
     invoke-virtual {p0}, Landroid/os/Parcel;->readStrongBinder()Landroid/os/IBinder;
 
@@ -774,8 +728,6 @@
 
 .method public static writePendingIntentOrNullToParcel(Landroid/app/PendingIntent;Landroid/os/Parcel;)V
     .locals 1
-    .param p0    # Landroid/app/PendingIntent;
-    .param p1    # Landroid/os/Parcel;
 
     if-eqz p0, :cond_0
 
@@ -831,7 +783,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 2
-    .param p1    # Ljava/lang/Object;
 
     instance-of v0, p1, Landroid/app/PendingIntent;
 
@@ -1137,7 +1088,6 @@
 
 .method public send(I)V
     .locals 7
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/app/PendingIntent$CanceledException;
@@ -1165,9 +1115,6 @@
 
 .method public send(ILandroid/app/PendingIntent$OnFinished;Landroid/os/Handler;)V
     .locals 7
-    .param p1    # I
-    .param p2    # Landroid/app/PendingIntent$OnFinished;
-    .param p3    # Landroid/os/Handler;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/app/PendingIntent$CanceledException;
@@ -1195,9 +1142,6 @@
 
 .method public send(Landroid/content/Context;ILandroid/content/Intent;)V
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/app/PendingIntent$CanceledException;
@@ -1225,11 +1169,6 @@
 
 .method public send(Landroid/content/Context;ILandroid/content/Intent;Landroid/app/PendingIntent$OnFinished;Landroid/os/Handler;)V
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
-    .param p4    # Landroid/app/PendingIntent$OnFinished;
-    .param p5    # Landroid/os/Handler;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/app/PendingIntent$CanceledException;
@@ -1257,12 +1196,6 @@
 
 .method public send(Landroid/content/Context;ILandroid/content/Intent;Landroid/app/PendingIntent$OnFinished;Landroid/os/Handler;Ljava/lang/String;)V
     .locals 8
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
-    .param p4    # Landroid/app/PendingIntent$OnFinished;
-    .param p5    # Landroid/os/Handler;
-    .param p6    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/app/PendingIntent$CanceledException;
@@ -1388,8 +1321,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v0, p0, Landroid/app/PendingIntent;->mTarget:Landroid/content/IIntentSender;
 

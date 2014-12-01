@@ -33,12 +33,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/AlarmManagerService;IJJLandroid/app/PendingIntent;ZLandroid/os/WorkSource;)V
     .locals 0
-    .param p2    # I
-    .param p3    # J
-    .param p5    # J
-    .param p7    # Landroid/app/PendingIntent;
-    .param p8    # Z
-    .param p9    # Landroid/os/WorkSource;
 
     iput-object p1, p0, Lcom/android/server/AlarmManagerService$PrevAlarm;->this$0:Lcom/android/server/AlarmManagerService;
 

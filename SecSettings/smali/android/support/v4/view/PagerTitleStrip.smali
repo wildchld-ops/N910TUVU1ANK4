@@ -126,7 +126,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -137,8 +136,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 11
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v10, 0x2
 
@@ -363,7 +360,6 @@
 
 .method static synthetic access$100(Landroid/support/v4/view/PagerTitleStrip;)F
     .locals 1
-    .param p0    # Landroid/support/v4/view/PagerTitleStrip;
 
     iget v0, p0, Landroid/support/v4/view/PagerTitleStrip;->mLastKnownPositionOffset:F
 
@@ -372,7 +368,6 @@
 
 .method private static setSingleLineAllCaps(Landroid/widget/TextView;)V
     .locals 1
-    .param p0    # Landroid/widget/TextView;
 
     sget-object v0, Landroid/support/v4/view/PagerTitleStrip;->IMPL:Landroid/support/v4/view/PagerTitleStrip$PagerTitleStripImpl;
 
@@ -508,11 +503,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 3
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     const/4 v0, 0x0
 
@@ -541,8 +531,6 @@
 
 .method protected onMeasure(II)V
     .locals 12
-    .param p1    # I
-    .param p2    # I
 
     invoke-static {p1}, Landroid/view/View$MeasureSpec;->getMode(I)I
 
@@ -667,7 +655,6 @@
 
 .method public setNonPrimaryAlpha(F)V
     .locals 4
-    .param p1    # F
 
     const/high16 v1, 0x437f0000
 
@@ -704,8 +691,6 @@
 
 .method public setTextSize(IF)V
     .locals 1
-    .param p1    # I
-    .param p2    # F
 
     iget-object v0, p0, Landroid/support/v4/view/PagerTitleStrip;->mPrevText:Landroid/widget/TextView;
 
@@ -724,7 +709,6 @@
 
 .method public setTextSpacing(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/support/v4/view/PagerTitleStrip;->mScaledTextSpacing:I
 
@@ -735,8 +719,6 @@
 
 .method updateAdapter(Landroid/support/v4/view/PagerAdapter;Landroid/support/v4/view/PagerAdapter;)V
     .locals 1
-    .param p1    # Landroid/support/v4/view/PagerAdapter;
-    .param p2    # Landroid/support/v4/view/PagerAdapter;
 
     if-eqz p1, :cond_0
 
@@ -790,8 +772,6 @@
 
 .method updateText(ILandroid/support/v4/view/PagerAdapter;)V
     .locals 10
-    .param p1    # I
-    .param p2    # Landroid/support/v4/view/PagerAdapter;
 
     const/4 v7, 0x1
 
@@ -945,9 +925,6 @@
 
 .method updateTextPositions(IFZ)V
     .locals 45
-    .param p1    # I
-    .param p2    # F
-    .param p3    # Z
 
     move-object/from16 v0, p0
 

@@ -109,7 +109,6 @@
 
 .method public static getLocalisedString(I)Ljava/lang/String;
     .locals 4
-    .param p0    # I
 
     sget-object v2, Landroid/webkitsec/L10nUtils;->mStrings:Ljava/util/Map;
 
@@ -172,7 +171,6 @@
 
 .method private static loadString(I)Ljava/lang/String;
     .locals 4
-    .param p0    # I
 
     sget-object v1, Landroid/webkitsec/L10nUtils;->mStrings:Ljava/util/Map;
 
@@ -220,7 +218,6 @@
 
 .method public static setApplicationContext(Landroid/content/Context;)V
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     invoke-virtual {p0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 

@@ -32,7 +32,6 @@
 # direct methods
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;)V
     .locals 2
-    .param p1    # Lcom/sec/android/app/camera/Camera;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -151,7 +150,6 @@
 
 .method public registerEAM(Landroid/content/BroadcastReceiver;)V
     .locals 2
-    .param p1    # Landroid/content/BroadcastReceiver;
 
     const-string v0, "EnhancedAssistantMenu"
 
@@ -224,7 +222,6 @@
 
 .method public unregisterEAM(Landroid/content/BroadcastReceiver;)V
     .locals 3
-    .param p1    # Landroid/content/BroadcastReceiver;
 
     const-string v1, "EnhancedAssistantMenu"
 

@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Landroid/webkitsec/JsDialogHelper;Landroid/webkitsec/JsDialogHelper$1;)V
     .locals 0
-    .param p1    # Landroid/webkitsec/JsDialogHelper;
-    .param p2    # Landroid/webkitsec/JsDialogHelper$1;
 
     invoke-direct {p0, p1}, Landroid/webkitsec/JsDialogHelper$KeyListener;-><init>(Landroid/webkitsec/JsDialogHelper;)V
 
@@ -46,9 +44,6 @@
 # virtual methods
 .method public onKey(Landroid/content/DialogInterface;ILandroid/view/KeyEvent;)Z
     .locals 2
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
-    .param p3    # Landroid/view/KeyEvent;
 
     const/4 v1, 0x0
 

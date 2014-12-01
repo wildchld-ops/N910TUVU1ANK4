@@ -36,8 +36,6 @@
 # virtual methods
 .method public onInfo(Lcom/sec/android/smartface/FaceInfo;I)V
     .locals 7
-    .param p1    # Lcom/sec/android/smartface/FaceInfo;
-    .param p2    # I
 
     # getter for: Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartFaceListener;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartFaceListener;->access$000()Ljava/lang/String;

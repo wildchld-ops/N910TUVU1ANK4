@@ -53,12 +53,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;IIIILjava/lang/CharSequence;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Ljava/lang/CharSequence;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -354,7 +348,6 @@
 
 .method public setActionProvider(Landroid/view/ActionProvider;)Landroid/view/MenuItem;
     .locals 1
-    .param p1    # Landroid/view/ActionProvider;
 
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
@@ -365,7 +358,6 @@
 
 .method public setActionView(I)Landroid/view/MenuItem;
     .locals 1
-    .param p1    # I
 
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
@@ -376,7 +368,6 @@
 
 .method public setActionView(Landroid/view/View;)Landroid/view/MenuItem;
     .locals 1
-    .param p1    # Landroid/view/View;
 
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
@@ -387,7 +378,6 @@
 
 .method public setAlphabeticShortcut(C)Landroid/view/MenuItem;
     .locals 0
-    .param p1    # C
 
     iput-char p1, p0, Lcom/android/internal/view/menu/ActionMenuItem;->mShortcutAlphabeticChar:C
 
@@ -396,7 +386,6 @@
 
 .method public setCheckable(Z)Landroid/view/MenuItem;
     .locals 2
-    .param p1    # Z
 
     iget v0, p0, Lcom/android/internal/view/menu/ActionMenuItem;->mFlags:I
 
@@ -421,7 +410,6 @@
 
 .method public setChecked(Z)Landroid/view/MenuItem;
     .locals 2
-    .param p1    # Z
 
     iget v0, p0, Lcom/android/internal/view/menu/ActionMenuItem;->mFlags:I
 
@@ -446,7 +434,6 @@
 
 .method public setEnabled(Z)Landroid/view/MenuItem;
     .locals 2
-    .param p1    # Z
 
     iget v0, p0, Lcom/android/internal/view/menu/ActionMenuItem;->mFlags:I
 
@@ -471,7 +458,6 @@
 
 .method public setExclusiveCheckable(Z)Lcom/android/internal/view/menu/ActionMenuItem;
     .locals 2
-    .param p1    # Z
 
     iget v0, p0, Lcom/android/internal/view/menu/ActionMenuItem;->mFlags:I
 
@@ -496,7 +482,6 @@
 
 .method public setIcon(I)Landroid/view/MenuItem;
     .locals 1
-    .param p1    # I
 
     iput p1, p0, Lcom/android/internal/view/menu/ActionMenuItem;->mIconResId:I
 
@@ -517,7 +502,6 @@
 
 .method public setIcon(Landroid/graphics/drawable/Drawable;)Landroid/view/MenuItem;
     .locals 1
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     iput-object p1, p0, Lcom/android/internal/view/menu/ActionMenuItem;->mIconDrawable:Landroid/graphics/drawable/Drawable;
 
@@ -530,7 +514,6 @@
 
 .method public setIntent(Landroid/content/Intent;)Landroid/view/MenuItem;
     .locals 0
-    .param p1    # Landroid/content/Intent;
 
     iput-object p1, p0, Lcom/android/internal/view/menu/ActionMenuItem;->mIntent:Landroid/content/Intent;
 
@@ -539,7 +522,6 @@
 
 .method public setNumericShortcut(C)Landroid/view/MenuItem;
     .locals 0
-    .param p1    # C
 
     iput-char p1, p0, Lcom/android/internal/view/menu/ActionMenuItem;->mShortcutNumericChar:C
 
@@ -548,14 +530,12 @@
 
 .method public setOnActionExpandListener(Landroid/view/MenuItem$OnActionExpandListener;)Landroid/view/MenuItem;
     .locals 0
-    .param p1    # Landroid/view/MenuItem$OnActionExpandListener;
 
     return-object p0
 .end method
 
 .method public setOnMenuItemClickListener(Landroid/view/MenuItem$OnMenuItemClickListener;)Landroid/view/MenuItem;
     .locals 0
-    .param p1    # Landroid/view/MenuItem$OnMenuItemClickListener;
 
     iput-object p1, p0, Lcom/android/internal/view/menu/ActionMenuItem;->mClickListener:Landroid/view/MenuItem$OnMenuItemClickListener;
 
@@ -564,8 +544,6 @@
 
 .method public setShortcut(CC)Landroid/view/MenuItem;
     .locals 0
-    .param p1    # C
-    .param p2    # C
 
     iput-char p1, p0, Lcom/android/internal/view/menu/ActionMenuItem;->mShortcutNumericChar:C
 
@@ -576,14 +554,12 @@
 
 .method public setShowAsAction(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public setShowAsActionFlags(I)Landroid/view/MenuItem;
     .locals 0
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/internal/view/menu/ActionMenuItem;->setShowAsAction(I)V
 
@@ -592,7 +568,6 @@
 
 .method public setTitle(I)Landroid/view/MenuItem;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/internal/view/menu/ActionMenuItem;->mContext:Landroid/content/Context;
 
@@ -611,7 +586,6 @@
 
 .method public setTitle(Ljava/lang/CharSequence;)Landroid/view/MenuItem;
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
 
     iput-object p1, p0, Lcom/android/internal/view/menu/ActionMenuItem;->mTitle:Ljava/lang/CharSequence;
 
@@ -620,7 +594,6 @@
 
 .method public setTitleCondensed(Ljava/lang/CharSequence;)Landroid/view/MenuItem;
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
 
     iput-object p1, p0, Lcom/android/internal/view/menu/ActionMenuItem;->mTitleCondensed:Ljava/lang/CharSequence;
 
@@ -629,7 +602,6 @@
 
 .method public setVisible(Z)Landroid/view/MenuItem;
     .locals 2
-    .param p1    # Z
 
     iget v0, p0, Lcom/android/internal/view/menu/ActionMenuItem;->mFlags:I
 

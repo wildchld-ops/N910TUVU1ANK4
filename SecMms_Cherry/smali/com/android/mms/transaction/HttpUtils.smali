@@ -50,8 +50,6 @@
 
 .method private static addLGUHttpHeader(Landroid/content/Context;Lorg/apache/http/HttpRequest;)V
     .locals 14
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lorg/apache/http/HttpRequest;
 
     const-string v8, ""
 
@@ -252,8 +250,6 @@
 
 .method private static addLocaleToHttpAcceptLanguage(Ljava/lang/StringBuilder;Ljava/util/Locale;)V
     .locals 3
-    .param p0    # Ljava/lang/StringBuilder;
-    .param p1    # Ljava/util/Locale;
 
     invoke-virtual {p1}, Ljava/util/Locale;->getLanguage()Ljava/lang/String;
 
@@ -285,7 +281,6 @@
 
 .method private static convertObsoleteLanguageCodeToNew(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     if-nez p0, :cond_1
 
@@ -337,7 +332,6 @@
 
 .method protected static createHttpClient(Landroid/content/Context;)Landroid/net/http/AndroidHttpClient;
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -350,9 +344,6 @@
 
 .method protected static createHttpClient(Landroid/content/Context;II)Landroid/net/http/AndroidHttpClient;
     .locals 7
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # I
 
     invoke-static {}, Lcom/android/mms/MmsConfig;->getUserAgent()Ljava/lang/String;
 
@@ -456,7 +447,6 @@
 
 .method public static getCurrentAcceptLanguage(Ljava/util/Locale;)Ljava/lang/String;
     .locals 4
-    .param p0    # Ljava/util/Locale;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -523,8 +513,6 @@
 
 .method private static handleHttpConnectionException(Ljava/lang/Exception;Ljava/lang/String;)V
     .locals 5
-    .param p0    # Ljava/lang/Exception;
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -691,16 +679,6 @@
 
 .method protected static httpConnection(Landroid/content/Context;JLjava/lang/String;[BIZLjava/lang/String;ILandroid/net/http/AndroidHttpClient;Lorg/apache/http/HttpRequest;)[B
     .locals 12
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
-    .param p3    # Ljava/lang/String;
-    .param p4    # [B
-    .param p5    # I
-    .param p6    # Z
-    .param p7    # Ljava/lang/String;
-    .param p8    # I
-    .param p9    # Landroid/net/http/AndroidHttpClient;
-    .param p10    # Lorg/apache/http/HttpRequest;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -738,17 +716,6 @@
 
 .method protected static httpConnection(Landroid/content/Context;JLjava/lang/String;[BIZLjava/lang/String;ILandroid/net/http/AndroidHttpClient;Lorg/apache/http/HttpRequest;I)[B
     .locals 45
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
-    .param p3    # Ljava/lang/String;
-    .param p4    # [B
-    .param p5    # I
-    .param p6    # Z
-    .param p7    # Ljava/lang/String;
-    .param p8    # I
-    .param p9    # Landroid/net/http/AndroidHttpClient;
-    .param p10    # Lorg/apache/http/HttpRequest;
-    .param p11    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -2632,9 +2599,6 @@
 
 .method private static setSocketBufferSizeForCHN(Landroid/content/Context;Lorg/apache/http/params/HttpParams;I)Lorg/apache/http/params/HttpParams;
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lorg/apache/http/params/HttpParams;
-    .param p2    # I
 
     const/4 v5, 0x1
 

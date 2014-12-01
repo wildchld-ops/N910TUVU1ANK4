@@ -30,8 +30,6 @@
 
 .method public constructor <init>(Lcom/android/settings/SettingsPreferenceFragment;Landroid/net/wifi/WifiConfiguration;)V
     .locals 3
-    .param p1    # Lcom/android/settings/SettingsPreferenceFragment;
-    .param p2    # Landroid/net/wifi/WifiConfiguration;
 
     const/4 v2, 0x1
 
@@ -103,7 +101,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/wifi/mobileap/WifiApDeviceInfoPreference;)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApDeviceInfoPreference;
 
     invoke-direct {p0}, Lcom/android/settings/wifi/mobileap/WifiApDeviceInfoPreference;->changeAllowPolicy()V
 
@@ -112,7 +109,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/wifi/mobileap/WifiApDeviceInfoPreference;)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApDeviceInfoPreference;
 
     invoke-direct {p0}, Lcom/android/settings/wifi/mobileap/WifiApDeviceInfoPreference;->checkConnectedDeviceOrChangeAllowPolicy()V
 
@@ -244,7 +240,6 @@
 
 .method private resetWifiAp(Landroid/net/wifi/WifiConfiguration;)V
     .locals 2
-    .param p1    # Landroid/net/wifi/WifiConfiguration;
 
     new-instance v0, Landroid/os/Message;
 
@@ -265,7 +260,6 @@
 
 .method private showDialog(I)V
     .locals 6
-    .param p1    # I
 
     const v5, 0x7f0901ba
 
@@ -414,7 +408,6 @@
 # virtual methods
 .method protected onBindView(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     invoke-super {p0, p1}, Landroid/preference/Preference;->onBindView(Landroid/view/View;)V
 
@@ -423,7 +416,6 @@
 
 .method public onClickItem(Landroid/net/wifi/WifiConfiguration;)V
     .locals 1
-    .param p1    # Landroid/net/wifi/WifiConfiguration;
 
     iput-object p1, p0, Lcom/android/settings/wifi/mobileap/WifiApDeviceInfoPreference;->mWifiConfig:Landroid/net/wifi/WifiConfiguration;
 
@@ -436,7 +428,6 @@
 
 .method public updateCurrent(Landroid/net/wifi/WifiConfiguration;)V
     .locals 2
-    .param p1    # Landroid/net/wifi/WifiConfiguration;
 
     const/4 v1, 0x1
 
@@ -465,7 +456,6 @@
 
 .method public updateSsid(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Landroid/preference/Preference;->setTitle(Ljava/lang/CharSequence;)V
 

@@ -26,7 +26,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/mms/data/Contact$ContactsCache;Lcom/android/mms/data/Contact;)V
     .locals 1
-    .param p2    # Lcom/android/mms/data/Contact;
 
     iput-object p1, p0, Lcom/android/mms/data/Contact$ContactsCache$RunnableUpdateContact;->this$0:Lcom/android/mms/data/Contact$ContactsCache;
 
@@ -45,7 +44,6 @@
 # virtual methods
 .method public equals(Lcom/android/mms/data/Contact;)Z
     .locals 1
-    .param p1    # Lcom/android/mms/data/Contact;
 
     iget-object v0, p0, Lcom/android/mms/data/Contact$ContactsCache$RunnableUpdateContact;->mContact:Lcom/android/mms/data/Contact;
 

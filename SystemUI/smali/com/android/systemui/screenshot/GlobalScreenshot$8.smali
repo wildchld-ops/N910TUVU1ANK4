@@ -36,7 +36,6 @@
 # virtual methods
 .method public getInterpolation(F)F
     .locals 4
-    .param p1    # F
 
     const v2, 0x3f1aca6b
 

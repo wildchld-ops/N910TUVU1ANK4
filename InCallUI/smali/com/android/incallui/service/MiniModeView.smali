@@ -10,7 +10,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/incallui/service/MiniModeCallService;)V
     .locals 0
-    .param p1    # Lcom/android/incallui/service/MiniModeCallService;
 
     invoke-direct {p0, p1}, Landroid/widget/RelativeLayout;-><init>(Landroid/content/Context;)V
 
@@ -23,7 +22,6 @@
 # virtual methods
 .method public onInterceptTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-super {p0, p1}, Landroid/view/ViewGroup;->onInterceptTouchEvent(Landroid/view/MotionEvent;)Z
 

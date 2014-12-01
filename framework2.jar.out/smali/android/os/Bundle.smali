@@ -127,7 +127,6 @@
 
 .method public constructor <init>(I)V
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -168,7 +167,6 @@
 
 .method public constructor <init>(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v0, 0x1
 
@@ -268,7 +266,6 @@
 
 .method constructor <init>(Landroid/os/Parcel;)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
 
     const/4 v0, 0x0
 
@@ -295,8 +292,6 @@
 
 .method constructor <init>(Landroid/os/Parcel;I)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -323,7 +318,6 @@
 
 .method public constructor <init>(Ljava/lang/ClassLoader;)V
     .locals 2
-    .param p1    # Ljava/lang/ClassLoader;
 
     const/4 v0, 0x0
 
@@ -356,8 +350,6 @@
 
 .method public static forPair(Ljava/lang/String;Ljava/lang/String;)Landroid/os/Bundle;
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Landroid/os/Bundle;
 
@@ -372,10 +364,6 @@
 
 .method private typeWarning(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/String;Ljava/lang/ClassCastException;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Object;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/ClassCastException;
 
     const-string v4, "<null>"
 
@@ -396,11 +384,6 @@
 
 .method private typeWarning(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/ClassCastException;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Object;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/Object;
-    .param p5    # Ljava/lang/ClassCastException;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -493,7 +476,6 @@
 
 .method public containsKey(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Landroid/os/Bundle;->unparcel()V
 
@@ -525,7 +507,6 @@
 
 .method public get(Ljava/lang/String;)Ljava/lang/Object;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Landroid/os/Bundle;->unparcel()V
 
@@ -540,7 +521,6 @@
 
 .method public getBinder(Ljava/lang/String;)Landroid/os/IBinder;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -581,7 +561,6 @@
 
 .method public getBoolean(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Landroid/os/Bundle;->unparcel()V
 
@@ -596,8 +575,6 @@
 
 .method public getBoolean(Ljava/lang/String;Z)Z
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     invoke-virtual {p0}, Landroid/os/Bundle;->unparcel()V
 
@@ -648,7 +625,6 @@
 
 .method public getBooleanArray(Ljava/lang/String;)[Z
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -695,7 +671,6 @@
 
 .method public getBundle(Ljava/lang/String;)Landroid/os/Bundle;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -736,7 +711,6 @@
 
 .method public getByte(Ljava/lang/String;)B
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Landroid/os/Bundle;->unparcel()V
 
@@ -755,8 +729,6 @@
 
 .method public getByte(Ljava/lang/String;B)Ljava/lang/Byte;
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # B
 
     invoke-virtual {p0}, Landroid/os/Bundle;->unparcel()V
 
@@ -807,7 +779,6 @@
 
 .method public getByteArray(Ljava/lang/String;)[B
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -854,7 +825,6 @@
 
 .method public getChar(Ljava/lang/String;)C
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Landroid/os/Bundle;->unparcel()V
 
@@ -869,8 +839,6 @@
 
 .method public getChar(Ljava/lang/String;C)C
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # C
 
     invoke-virtual {p0}, Landroid/os/Bundle;->unparcel()V
 
@@ -921,7 +889,6 @@
 
 .method public getCharArray(Ljava/lang/String;)[C
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -968,7 +935,6 @@
 
 .method public getCharSequence(Ljava/lang/String;)Ljava/lang/CharSequence;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Landroid/os/Bundle;->unparcel()V
 
@@ -1000,8 +966,6 @@
 
 .method public getCharSequence(Ljava/lang/String;Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/CharSequence;
 
     invoke-virtual {p0, p1}, Landroid/os/Bundle;->getCharSequence(Ljava/lang/String;)Ljava/lang/CharSequence;
 
@@ -1020,7 +984,6 @@
 
 .method public getCharSequenceArray(Ljava/lang/String;)[Ljava/lang/CharSequence;
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -1067,7 +1030,6 @@
 
 .method public getCharSequenceArrayList(Ljava/lang/String;)Ljava/util/ArrayList;
     .locals 4
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1127,7 +1089,6 @@
 
 .method public getDouble(Ljava/lang/String;)D
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Landroid/os/Bundle;->unparcel()V
 
@@ -1142,8 +1103,6 @@
 
 .method public getDouble(Ljava/lang/String;D)D
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # D
 
     invoke-virtual {p0}, Landroid/os/Bundle;->unparcel()V
 
@@ -1194,7 +1153,6 @@
 
 .method public getDoubleArray(Ljava/lang/String;)[D
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -1241,7 +1199,6 @@
 
 .method public getFloat(Ljava/lang/String;)F
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Landroid/os/Bundle;->unparcel()V
 
@@ -1256,8 +1213,6 @@
 
 .method public getFloat(Ljava/lang/String;F)F
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # F
 
     invoke-virtual {p0}, Landroid/os/Bundle;->unparcel()V
 
@@ -1308,7 +1263,6 @@
 
 .method public getFloatArray(Ljava/lang/String;)[F
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -1355,7 +1309,6 @@
 
 .method public getIBinder(Ljava/lang/String;)Landroid/os/IBinder;
     .locals 4
-    .param p1    # Ljava/lang/String;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -1398,7 +1351,6 @@
 
 .method public getInt(Ljava/lang/String;)I
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Landroid/os/Bundle;->unparcel()V
 
@@ -1413,8 +1365,6 @@
 
 .method public getInt(Ljava/lang/String;I)I
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-virtual {p0}, Landroid/os/Bundle;->unparcel()V
 
@@ -1465,7 +1415,6 @@
 
 .method public getIntArray(Ljava/lang/String;)[I
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -1512,7 +1461,6 @@
 
 .method public getIntegerArrayList(Ljava/lang/String;)Ljava/util/ArrayList;
     .locals 4
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1564,7 +1512,6 @@
 
 .method public getLong(Ljava/lang/String;)J
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Landroid/os/Bundle;->unparcel()V
 
@@ -1579,8 +1526,6 @@
 
 .method public getLong(Ljava/lang/String;J)J
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
 
     invoke-virtual {p0}, Landroid/os/Bundle;->unparcel()V
 
@@ -1631,7 +1576,6 @@
 
 .method public getLongArray(Ljava/lang/String;)[J
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -1739,7 +1683,6 @@
 
 .method public getParcelable(Ljava/lang/String;)Landroid/os/Parcelable;
     .locals 4
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T::",
@@ -1789,7 +1732,6 @@
 
 .method public getParcelableArray(Ljava/lang/String;)[Landroid/os/Parcelable;
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -1836,7 +1778,6 @@
 
 .method public getParcelableArrayList(Ljava/lang/String;)Ljava/util/ArrayList;
     .locals 4
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T::",
@@ -1888,7 +1829,6 @@
 
 .method public getSerializable(Ljava/lang/String;)Ljava/io/Serializable;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -1929,7 +1869,6 @@
 
 .method public getShort(Ljava/lang/String;)S
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Landroid/os/Bundle;->unparcel()V
 
@@ -1944,8 +1883,6 @@
 
 .method public getShort(Ljava/lang/String;S)S
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # S
 
     invoke-virtual {p0}, Landroid/os/Bundle;->unparcel()V
 
@@ -1996,7 +1933,6 @@
 
 .method public getShortArray(Ljava/lang/String;)[S
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -2043,7 +1979,6 @@
 
 .method public getSparseParcelableArray(Ljava/lang/String;)Landroid/util/SparseArray;
     .locals 4
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T::",
@@ -2095,7 +2030,6 @@
 
 .method public getString(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Landroid/os/Bundle;->unparcel()V
 
@@ -2127,8 +2061,6 @@
 
 .method public getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
 
@@ -2147,7 +2079,6 @@
 
 .method public getStringArray(Ljava/lang/String;)[Ljava/lang/String;
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -2194,7 +2125,6 @@
 
 .method public getStringArrayList(Ljava/lang/String;)Ljava/util/ArrayList;
     .locals 4
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2515,7 +2445,6 @@
 
 .method public putAll(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-virtual {p0}, Landroid/os/Bundle;->unparcel()V
 
@@ -2558,8 +2487,6 @@
 
 .method public putBinder(Ljava/lang/String;Landroid/os/IBinder;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/IBinder;
 
     invoke-virtual {p0}, Landroid/os/Bundle;->unparcel()V
 
@@ -2572,8 +2499,6 @@
 
 .method public putBoolean(Ljava/lang/String;Z)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     invoke-virtual {p0}, Landroid/os/Bundle;->unparcel()V
 
@@ -2590,8 +2515,6 @@
 
 .method public putBooleanArray(Ljava/lang/String;[Z)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Z
 
     invoke-virtual {p0}, Landroid/os/Bundle;->unparcel()V
 
@@ -2604,8 +2527,6 @@
 
 .method public putBundle(Ljava/lang/String;Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Bundle;
 
     invoke-virtual {p0}, Landroid/os/Bundle;->unparcel()V
 
@@ -2618,8 +2539,6 @@
 
 .method public putByte(Ljava/lang/String;B)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # B
 
     invoke-virtual {p0}, Landroid/os/Bundle;->unparcel()V
 
@@ -2636,8 +2555,6 @@
 
 .method public putByteArray(Ljava/lang/String;[B)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # [B
 
     invoke-virtual {p0}, Landroid/os/Bundle;->unparcel()V
 
@@ -2650,8 +2567,6 @@
 
 .method public putChar(Ljava/lang/String;C)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # C
 
     invoke-virtual {p0}, Landroid/os/Bundle;->unparcel()V
 
@@ -2668,8 +2583,6 @@
 
 .method public putCharArray(Ljava/lang/String;[C)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # [C
 
     invoke-virtual {p0}, Landroid/os/Bundle;->unparcel()V
 
@@ -2682,8 +2595,6 @@
 
 .method public putCharSequence(Ljava/lang/String;Ljava/lang/CharSequence;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/CharSequence;
 
     invoke-virtual {p0}, Landroid/os/Bundle;->unparcel()V
 
@@ -2696,8 +2607,6 @@
 
 .method public putCharSequenceArray(Ljava/lang/String;[Ljava/lang/CharSequence;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/CharSequence;
 
     invoke-virtual {p0}, Landroid/os/Bundle;->unparcel()V
 
@@ -2710,7 +2619,6 @@
 
 .method public putCharSequenceArrayList(Ljava/lang/String;Ljava/util/ArrayList;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2733,8 +2641,6 @@
 
 .method public putDouble(Ljava/lang/String;D)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # D
 
     invoke-virtual {p0}, Landroid/os/Bundle;->unparcel()V
 
@@ -2751,8 +2657,6 @@
 
 .method public putDoubleArray(Ljava/lang/String;[D)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # [D
 
     invoke-virtual {p0}, Landroid/os/Bundle;->unparcel()V
 
@@ -2765,8 +2669,6 @@
 
 .method public putFloat(Ljava/lang/String;F)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # F
 
     invoke-virtual {p0}, Landroid/os/Bundle;->unparcel()V
 
@@ -2783,8 +2685,6 @@
 
 .method public putFloatArray(Ljava/lang/String;[F)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # [F
 
     invoke-virtual {p0}, Landroid/os/Bundle;->unparcel()V
 
@@ -2797,8 +2697,6 @@
 
 .method public putIBinder(Ljava/lang/String;Landroid/os/IBinder;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/IBinder;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -2813,8 +2711,6 @@
 
 .method public putInt(Ljava/lang/String;I)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-virtual {p0}, Landroid/os/Bundle;->unparcel()V
 
@@ -2831,8 +2727,6 @@
 
 .method public putIntArray(Ljava/lang/String;[I)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # [I
 
     invoke-virtual {p0}, Landroid/os/Bundle;->unparcel()V
 
@@ -2845,7 +2739,6 @@
 
 .method public putIntegerArrayList(Ljava/lang/String;Ljava/util/ArrayList;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2868,8 +2761,6 @@
 
 .method public putLong(Ljava/lang/String;J)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
 
     invoke-virtual {p0}, Landroid/os/Bundle;->unparcel()V
 
@@ -2886,8 +2777,6 @@
 
 .method public putLongArray(Ljava/lang/String;[J)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # [J
 
     invoke-virtual {p0}, Landroid/os/Bundle;->unparcel()V
 
@@ -2900,8 +2789,6 @@
 
 .method public putParcelable(Ljava/lang/String;Landroid/os/Parcelable;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Parcelable;
 
     invoke-virtual {p0}, Landroid/os/Bundle;->unparcel()V
 
@@ -2918,8 +2805,6 @@
 
 .method public putParcelableArray(Ljava/lang/String;[Landroid/os/Parcelable;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Landroid/os/Parcelable;
 
     invoke-virtual {p0}, Landroid/os/Bundle;->unparcel()V
 
@@ -2936,7 +2821,6 @@
 
 .method public putParcelableArrayList(Ljava/lang/String;Ljava/util/ArrayList;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2963,7 +2847,6 @@
 
 .method public putParcelableList(Ljava/lang/String;Ljava/util/List;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2990,8 +2873,6 @@
 
 .method public putSerializable(Ljava/lang/String;Ljava/io/Serializable;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/io/Serializable;
 
     invoke-virtual {p0}, Landroid/os/Bundle;->unparcel()V
 
@@ -3004,8 +2885,6 @@
 
 .method public putShort(Ljava/lang/String;S)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # S
 
     invoke-virtual {p0}, Landroid/os/Bundle;->unparcel()V
 
@@ -3022,8 +2901,6 @@
 
 .method public putShortArray(Ljava/lang/String;[S)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # [S
 
     invoke-virtual {p0}, Landroid/os/Bundle;->unparcel()V
 
@@ -3036,7 +2913,6 @@
 
 .method public putSparseParcelableArray(Ljava/lang/String;Landroid/util/SparseArray;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3063,8 +2939,6 @@
 
 .method public putString(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p0}, Landroid/os/Bundle;->unparcel()V
 
@@ -3077,8 +2951,6 @@
 
 .method public putStringArray(Ljava/lang/String;[Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/String;
 
     invoke-virtual {p0}, Landroid/os/Bundle;->unparcel()V
 
@@ -3091,7 +2963,6 @@
 
 .method public putStringArrayList(Ljava/lang/String;Ljava/util/ArrayList;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3114,7 +2985,6 @@
 
 .method public readFromParcel(Landroid/os/Parcel;)V
     .locals 4
-    .param p1    # Landroid/os/Parcel;
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
@@ -3154,8 +3024,6 @@
 
 .method readFromParcelInner(Landroid/os/Parcel;I)V
     .locals 6
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     const/4 v5, 0x1
 
@@ -3245,7 +3113,6 @@
 
 .method public remove(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Landroid/os/Bundle;->unparcel()V
 
@@ -3258,7 +3125,6 @@
 
 .method public setAllowFds(Z)Z
     .locals 1
-    .param p1    # Z
 
     iget-boolean v0, p0, Landroid/os/Bundle;->mAllowFds:Z
 
@@ -3269,7 +3135,6 @@
 
 .method public setClassLoader(Ljava/lang/ClassLoader;)V
     .locals 0
-    .param p1    # Ljava/lang/ClassLoader;
 
     iput-object p1, p0, Landroid/os/Bundle;->mClassLoader:Ljava/lang/ClassLoader;
 
@@ -3508,8 +3373,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 7
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-boolean v5, p0, Landroid/os/Bundle;->mAllowFds:Z
 

@@ -26,7 +26,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/internal/view/menu/ActionMenuPresenter;Lcom/android/internal/view/menu/ActionMenuPresenter$OverflowPopup;)V
     .locals 0
-    .param p2    # Lcom/android/internal/view/menu/ActionMenuPresenter$OverflowPopup;
 
     iput-object p1, p0, Lcom/android/internal/view/menu/ActionMenuPresenter$OpenOverflowRunnable;->this$0:Lcom/android/internal/view/menu/ActionMenuPresenter;
 

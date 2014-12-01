@@ -70,7 +70,6 @@
 # virtual methods
 .method public appendEncodedPath(Ljava/lang/String;)Landroid/net/Uri$Builder;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/net/Uri$Builder;->path:Landroid/net/Uri$PathPart;
 
@@ -87,7 +86,6 @@
 
 .method public appendPath(Ljava/lang/String;)Landroid/net/Uri$Builder;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/net/Uri$Builder;->path:Landroid/net/Uri$PathPart;
 
@@ -104,8 +102,6 @@
 
 .method public appendQueryParameter(Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri$Builder;
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -212,7 +208,6 @@
 
 .method authority(Landroid/net/Uri$Part;)Landroid/net/Uri$Builder;
     .locals 1
-    .param p1    # Landroid/net/Uri$Part;
 
     const/4 v0, 0x0
 
@@ -225,7 +220,6 @@
 
 .method public authority(Ljava/lang/String;)Landroid/net/Uri$Builder;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Landroid/net/Uri$Part;->fromDecoded(Ljava/lang/String;)Landroid/net/Uri$Part;
 
@@ -331,7 +325,6 @@
 
 .method public encodedAuthority(Ljava/lang/String;)Landroid/net/Uri$Builder;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Landroid/net/Uri$Part;->fromEncoded(Ljava/lang/String;)Landroid/net/Uri$Part;
 
@@ -346,7 +339,6 @@
 
 .method public encodedFragment(Ljava/lang/String;)Landroid/net/Uri$Builder;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Landroid/net/Uri$Part;->fromEncoded(Ljava/lang/String;)Landroid/net/Uri$Part;
 
@@ -361,7 +353,6 @@
 
 .method public encodedOpaquePart(Ljava/lang/String;)Landroid/net/Uri$Builder;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Landroid/net/Uri$Part;->fromEncoded(Ljava/lang/String;)Landroid/net/Uri$Part;
 
@@ -376,7 +367,6 @@
 
 .method public encodedPath(Ljava/lang/String;)Landroid/net/Uri$Builder;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Landroid/net/Uri$PathPart;->fromEncoded(Ljava/lang/String;)Landroid/net/Uri$PathPart;
 
@@ -391,7 +381,6 @@
 
 .method public encodedQuery(Ljava/lang/String;)Landroid/net/Uri$Builder;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Landroid/net/Uri$Part;->fromEncoded(Ljava/lang/String;)Landroid/net/Uri$Part;
 
@@ -406,7 +395,6 @@
 
 .method fragment(Landroid/net/Uri$Part;)Landroid/net/Uri$Builder;
     .locals 0
-    .param p1    # Landroid/net/Uri$Part;
 
     iput-object p1, p0, Landroid/net/Uri$Builder;->fragment:Landroid/net/Uri$Part;
 
@@ -415,7 +403,6 @@
 
 .method public fragment(Ljava/lang/String;)Landroid/net/Uri$Builder;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Landroid/net/Uri$Part;->fromDecoded(Ljava/lang/String;)Landroid/net/Uri$Part;
 
@@ -430,7 +417,6 @@
 
 .method opaquePart(Landroid/net/Uri$Part;)Landroid/net/Uri$Builder;
     .locals 0
-    .param p1    # Landroid/net/Uri$Part;
 
     iput-object p1, p0, Landroid/net/Uri$Builder;->opaquePart:Landroid/net/Uri$Part;
 
@@ -439,7 +425,6 @@
 
 .method public opaquePart(Ljava/lang/String;)Landroid/net/Uri$Builder;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Landroid/net/Uri$Part;->fromDecoded(Ljava/lang/String;)Landroid/net/Uri$Part;
 
@@ -454,7 +439,6 @@
 
 .method path(Landroid/net/Uri$PathPart;)Landroid/net/Uri$Builder;
     .locals 1
-    .param p1    # Landroid/net/Uri$PathPart;
 
     const/4 v0, 0x0
 
@@ -467,7 +451,6 @@
 
 .method public path(Ljava/lang/String;)Landroid/net/Uri$Builder;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Landroid/net/Uri$PathPart;->fromDecoded(Ljava/lang/String;)Landroid/net/Uri$PathPart;
 
@@ -482,7 +465,6 @@
 
 .method query(Landroid/net/Uri$Part;)Landroid/net/Uri$Builder;
     .locals 1
-    .param p1    # Landroid/net/Uri$Part;
 
     const/4 v0, 0x0
 
@@ -495,7 +477,6 @@
 
 .method public query(Ljava/lang/String;)Landroid/net/Uri$Builder;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Landroid/net/Uri$Part;->fromDecoded(Ljava/lang/String;)Landroid/net/Uri$Part;
 
@@ -510,7 +491,6 @@
 
 .method public scheme(Ljava/lang/String;)Landroid/net/Uri$Builder;
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/net/Uri$Builder;->scheme:Ljava/lang/String;
 

@@ -35,11 +35,6 @@
 # direct methods
 .method public constructor <init>(Lcom/sec/knox/container/EnterpriseContainerService;IILjava/lang/String;Ljava/lang/String;Z)V
     .locals 3
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Z
 
     const/4 v2, 0x0
 
@@ -82,10 +77,6 @@
 
 .method public constructor <init>(Lcom/sec/knox/container/EnterpriseContainerService;IILjava/lang/String;Z)V
     .locals 3
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
-    .param p5    # Z
 
     const/4 v2, 0x0
 
@@ -138,7 +129,6 @@
 
 .method public setCreateContainerObject(Lcom/sec/knox/container/EnterpriseContainerObjectParam;)V
     .locals 0
-    .param p1    # Lcom/sec/knox/container/EnterpriseContainerObjectParam;
 
     iput-object p1, p0, Lcom/sec/knox/container/EnterpriseContainerService$ContainerEncryptionCallback;->mContainer:Lcom/sec/knox/container/EnterpriseContainerObjectParam;
 
@@ -147,7 +137,6 @@
 
 .method public setRequestId(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/knox/container/EnterpriseContainerService$ContainerEncryptionCallback;->mRequestId:I
 
@@ -156,8 +145,6 @@
 
 .method public updateStatus(ZI)V
     .locals 5
-    .param p1    # Z
-    .param p2    # I
 
     const/4 v4, 0x0
 

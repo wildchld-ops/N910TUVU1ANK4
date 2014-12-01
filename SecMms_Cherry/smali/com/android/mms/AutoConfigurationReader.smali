@@ -52,7 +52,6 @@
 
 .method public static getBooleanValue(Ljava/lang/String;)Ljava/lang/Boolean;
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -107,7 +106,6 @@
 
 .method public static getIntValue(Ljava/lang/String;)I
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     const/4 v2, -0x1
 
@@ -150,7 +148,6 @@
 
 .method public static getStringValue(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/android/mms/AutoConfigurationReader;->getValue(Ljava/lang/String;)Ljava/lang/String;
 
@@ -161,7 +158,6 @@
 
 .method private static declared-synchronized getValue(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -269,7 +265,6 @@
 
 .method public static declared-synchronized init(Landroid/content/Context;)Z
     .locals 8
-    .param p0    # Landroid/content/Context;
 
     const-class v7, Lcom/android/mms/AutoConfigurationReader;
 
@@ -1063,8 +1058,6 @@
 
 .method private static putValue(Landroid/database/Cursor;Ljava/lang/String;Ljava/util/Map;)V
     .locals 5
-    .param p0    # Landroid/database/Cursor;
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

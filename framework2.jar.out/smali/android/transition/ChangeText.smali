@@ -74,10 +74,6 @@
 
 .method static synthetic access$000(Landroid/transition/ChangeText;Landroid/widget/EditText;II)V
     .locals 0
-    .param p0    # Landroid/transition/ChangeText;
-    .param p1    # Landroid/widget/EditText;
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Landroid/transition/ChangeText;->setSelection(Landroid/widget/EditText;II)V
 
@@ -86,7 +82,6 @@
 
 .method static synthetic access$100(Landroid/transition/ChangeText;)I
     .locals 1
-    .param p0    # Landroid/transition/ChangeText;
 
     iget v0, p0, Landroid/transition/ChangeText;->mChangeBehavior:I
 
@@ -95,7 +90,6 @@
 
 .method private captureValues(Landroid/transition/TransitionValues;)V
     .locals 4
-    .param p1    # Landroid/transition/TransitionValues;
 
     iget-object v1, p1, Landroid/transition/TransitionValues;->view:Landroid/view/View;
 
@@ -174,9 +168,6 @@
 
 .method private setSelection(Landroid/widget/EditText;II)V
     .locals 0
-    .param p1    # Landroid/widget/EditText;
-    .param p2    # I
-    .param p3    # I
 
     if-ltz p2, :cond_0
 
@@ -192,7 +183,6 @@
 # virtual methods
 .method public captureEndValues(Landroid/transition/TransitionValues;)V
     .locals 0
-    .param p1    # Landroid/transition/TransitionValues;
 
     invoke-direct {p0, p1}, Landroid/transition/ChangeText;->captureValues(Landroid/transition/TransitionValues;)V
 
@@ -201,7 +191,6 @@
 
 .method public captureStartValues(Landroid/transition/TransitionValues;)V
     .locals 0
-    .param p1    # Landroid/transition/TransitionValues;
 
     invoke-direct {p0, p1}, Landroid/transition/ChangeText;->captureValues(Landroid/transition/TransitionValues;)V
 
@@ -210,9 +199,6 @@
 
 .method public createAnimator(Landroid/view/ViewGroup;Landroid/transition/TransitionValues;Landroid/transition/TransitionValues;)Landroid/animation/Animator;
     .locals 27
-    .param p1    # Landroid/view/ViewGroup;
-    .param p2    # Landroid/transition/TransitionValues;
-    .param p3    # Landroid/transition/TransitionValues;
 
     if-eqz p2, :cond_0
 
@@ -753,7 +739,6 @@
 
 .method public setChangeBehavior(I)Landroid/transition/ChangeText;
     .locals 1
-    .param p1    # I
 
     if-ltz p1, :cond_0
 

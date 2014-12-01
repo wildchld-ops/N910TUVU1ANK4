@@ -54,7 +54,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -119,7 +118,6 @@
 
 .method private clear_app_data_and_delete_cache_files(I)Z
     .locals 9
-    .param p1    # I
 
     sget-object v6, Lcom/android/server/enterprise/container/SmartCardAccessPolicy;->TAG:Ljava/lang/String;
 
@@ -260,8 +258,6 @@
 
 .method private enable_disable_bt_application(IZ)Z
     .locals 10
-    .param p1    # I
-    .param p2    # Z
 
     sget-object v0, Lcom/android/server/enterprise/container/SmartCardAccessPolicy;->TAG:Ljava/lang/String;
 
@@ -382,7 +378,6 @@
 
 .method private enforcePermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/container/SmartCardAccessPolicy;->getEDM()Landroid/app/enterprise/EnterpriseDeviceManager;
 
@@ -430,8 +425,6 @@
 # virtual methods
 .method public allowBTSecureAccess(Landroid/app/enterprise/ContextInfo;Z)I
     .locals 15
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     sget-object v12, Lcom/android/server/enterprise/container/SmartCardAccessPolicy;->TAG:Ljava/lang/String;
 
@@ -806,7 +799,6 @@
 
 .method public clearBTSecureAccessAppWhiteList(Landroid/app/enterprise/ContextInfo;)Z
     .locals 10
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v4, 0x0
 
@@ -982,7 +974,6 @@
 
 .method public getAllWhitelistedAppFromBTSecureAccess(Landroid/app/enterprise/ContextInfo;)Ljava/util/List;
     .locals 13
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1392,7 +1383,6 @@
 
 .method public isBTSecureAccessAllowed(Landroid/app/enterprise/ContextInfo;)Z
     .locals 10
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v3, 0x0
 
@@ -1597,8 +1587,6 @@
 
 .method public isPackageWhitelistedFromBTSecureAccess(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 12
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -1862,8 +1850,6 @@
 
 .method public isPackageWhitelistedFromBTSecureAccessUid(Landroid/app/enterprise/ContextInfo;I)Z
     .locals 25
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # I
 
     invoke-static/range {p1 .. p1}, Lcom/android/server/enterprise/EnterpriseDeviceManagerService;->getCallingOrCurrentUserId(Landroid/app/enterprise/ContextInfo;)I
 
@@ -2436,52 +2422,42 @@
 
 .method public onAdminAdded(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onAdminRemoved(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onContainerCreation(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     return-void
 .end method
 
 .method public onContainerRemoved(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     return-void
 .end method
 
 .method public onPreAdminRemoval(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onPreContainerRemoval(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     return-void
 .end method
 
 .method public setBTSecureAccessAppWhiteList(Landroid/app/enterprise/ContextInfo;Ljava/util/List;)Z
     .locals 11
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

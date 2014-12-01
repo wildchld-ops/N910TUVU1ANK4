@@ -21,8 +21,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/settings/wifi/p2p/WifiP2pSettings;JJ)V
     .locals 0
-    .param p2    # J
-    .param p4    # J
 
     iput-object p1, p0, Lcom/android/settings/wifi/p2p/WifiP2pSettings$4;->this$0:Lcom/android/settings/wifi/p2p/WifiP2pSettings;
 
@@ -164,7 +162,6 @@
 
 .method public onTick(J)V
     .locals 0
-    .param p1    # J
 
     return-void
 .end method

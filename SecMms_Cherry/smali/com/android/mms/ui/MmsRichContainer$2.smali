@@ -36,7 +36,6 @@
 # virtual methods
 .method public onTextReceived(Ljava/lang/CharSequence;)V
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
 
     const-string v0, "MMS_DATA_DELETE"
 

@@ -252,7 +252,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/OneHandEditMenu;)V
     .locals 0
-    .param p0    # Lcom/android/settings/OneHandEditMenu;
 
     invoke-direct {p0}, Lcom/android/settings/OneHandEditMenu;->updateQuickSettingsList()V
 
@@ -261,7 +260,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/OneHandEditMenu;)Lcom/android/settings/OneHandEditMenu$PanelDragShadowBuilder;
     .locals 1
-    .param p0    # Lcom/android/settings/OneHandEditMenu;
 
     iget-object v0, p0, Lcom/android/settings/OneHandEditMenu;->mShadowBuilder:Lcom/android/settings/OneHandEditMenu$PanelDragShadowBuilder;
 
@@ -270,8 +268,6 @@
 
 .method static synthetic access$102(Lcom/android/settings/OneHandEditMenu;Lcom/android/settings/OneHandEditMenu$PanelDragShadowBuilder;)Lcom/android/settings/OneHandEditMenu$PanelDragShadowBuilder;
     .locals 0
-    .param p0    # Lcom/android/settings/OneHandEditMenu;
-    .param p1    # Lcom/android/settings/OneHandEditMenu$PanelDragShadowBuilder;
 
     iput-object p1, p0, Lcom/android/settings/OneHandEditMenu;->mShadowBuilder:Lcom/android/settings/OneHandEditMenu$PanelDragShadowBuilder;
 
@@ -280,7 +276,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/OneHandEditMenu;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/settings/OneHandEditMenu;
 
     iget-object v0, p0, Lcom/android/settings/OneHandEditMenu;->mLongClickedView:Landroid/view/View;
 
@@ -289,8 +284,6 @@
 
 .method static synthetic access$202(Lcom/android/settings/OneHandEditMenu;Landroid/view/View;)Landroid/view/View;
     .locals 0
-    .param p0    # Lcom/android/settings/OneHandEditMenu;
-    .param p1    # Landroid/view/View;
 
     iput-object p1, p0, Lcom/android/settings/OneHandEditMenu;->mLongClickedView:Landroid/view/View;
 
@@ -299,7 +292,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/OneHandEditMenu;)I
     .locals 1
-    .param p0    # Lcom/android/settings/OneHandEditMenu;
 
     iget v0, p0, Lcom/android/settings/OneHandEditMenu;->idxGap:I
 
@@ -308,7 +300,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/OneHandEditMenu;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/settings/OneHandEditMenu;
 
     iget-object v0, p0, Lcom/android/settings/OneHandEditMenu;->mActiveNotificationPanelList:Ljava/util/ArrayList;
 
@@ -317,7 +308,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/OneHandEditMenu;)I
     .locals 1
-    .param p0    # Lcom/android/settings/OneHandEditMenu;
 
     iget v0, p0, Lcom/android/settings/OneHandEditMenu;->mActiveEditMenuNum:I
 
@@ -326,7 +316,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/OneHandEditMenu;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/settings/OneHandEditMenu;
 
     iget-object v0, p0, Lcom/android/settings/OneHandEditMenu;->mCandidateNotificationPanelList:Ljava/util/ArrayList;
 
@@ -335,8 +324,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/OneHandEditMenu;Landroid/view/View;)V
     .locals 0
-    .param p0    # Lcom/android/settings/OneHandEditMenu;
-    .param p1    # Landroid/view/View;
 
     invoke-direct {p0, p1}, Lcom/android/settings/OneHandEditMenu;->changeQuickSettingsByPanel(Landroid/view/View;)V
 
@@ -345,8 +332,6 @@
 
 .method static synthetic access$800(Lcom/android/settings/OneHandEditMenu;Landroid/view/View;)V
     .locals 0
-    .param p0    # Lcom/android/settings/OneHandEditMenu;
-    .param p1    # Landroid/view/View;
 
     invoke-direct {p0, p1}, Lcom/android/settings/OneHandEditMenu;->changeQuickSettingsByBar(Landroid/view/View;)V
 
@@ -355,7 +340,6 @@
 
 .method private changeQuickSettingsByBar(Landroid/view/View;)V
     .locals 14
-    .param p1    # Landroid/view/View;
 
     const/4 v13, 0x4
 
@@ -571,7 +555,6 @@
 
 .method private changeQuickSettingsByPanel(Landroid/view/View;)V
     .locals 14
-    .param p1    # Landroid/view/View;
 
     const/4 v13, 0x4
 
@@ -787,9 +770,6 @@
 
 .method private displayQuickSettings(IIILjava/util/ArrayList;Ljava/util/ArrayList;Ljava/util/ArrayList;)V
     .locals 26
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(III",
@@ -1246,7 +1226,6 @@
 
 .method private isEmptyPanel(Ljava/util/ArrayList;I)Z
     .locals 2
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2008,8 +1987,6 @@
 
 .method private swapPanels(Ljava/util/ArrayList;ILjava/util/ArrayList;I)V
     .locals 2
-    .param p2    # I
-    .param p4    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2369,7 +2346,6 @@
 # virtual methods
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onActivityCreated(Landroid/os/Bundle;)V
 
@@ -2416,7 +2392,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 3
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -2474,7 +2449,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 

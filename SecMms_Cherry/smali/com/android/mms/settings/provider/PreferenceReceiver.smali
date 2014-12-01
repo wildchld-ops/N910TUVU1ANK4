@@ -136,8 +136,6 @@
 # virtual methods
 .method getPref(Ljava/lang/String;I)I
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     :try_start_0
     iget-object v1, p0, Lcom/android/mms/settings/provider/PreferenceReceiver;->mSharedPrefs:Landroid/content/SharedPreferences;
@@ -164,8 +162,6 @@
 
 .method getPref(Ljava/lang/String;J)J
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
 
     :try_start_0
     iget-object v1, p0, Lcom/android/mms/settings/provider/PreferenceReceiver;->mSharedPrefs:Landroid/content/SharedPreferences;
@@ -192,9 +188,6 @@
 
 .method getPref(Ljava/lang/String;Ljava/lang/String;Landroid/content/Intent;)Lcom/android/mms/settings/provider/PreferenceReceiver$PrefData;
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/content/Intent;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -405,8 +398,6 @@
 
 .method getPref(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     :try_start_0
     iget-object v1, p0, Lcom/android/mms/settings/provider/PreferenceReceiver;->mSharedPrefs:Landroid/content/SharedPreferences;
@@ -433,8 +424,6 @@
 
 .method getPref(Ljava/lang/String;Z)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     :try_start_0
     iget-object v1, p0, Lcom/android/mms/settings/provider/PreferenceReceiver;->mSharedPrefs:Landroid/content/SharedPreferences;
@@ -461,7 +450,6 @@
 
 .method isWritableKey(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -500,8 +488,6 @@
 
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 10
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     const/4 v6, 0x1
 
@@ -746,9 +732,6 @@
 
 .method putPref(Ljava/lang/String;Ljava/lang/String;Landroid/content/Intent;)Lcom/android/mms/settings/provider/PreferenceReceiver$PrefData;
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/content/Intent;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -997,8 +980,6 @@
 
 .method putPref(Ljava/lang/String;I)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     :try_start_0
     iget-object v2, p0, Lcom/android/mms/settings/provider/PreferenceReceiver;->mSharedPrefs:Landroid/content/SharedPreferences;
@@ -1025,8 +1006,6 @@
 
 .method putPref(Ljava/lang/String;J)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
 
     :try_start_0
     iget-object v2, p0, Lcom/android/mms/settings/provider/PreferenceReceiver;->mSharedPrefs:Landroid/content/SharedPreferences;
@@ -1053,8 +1032,6 @@
 
 .method putPref(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     :try_start_0
     iget-object v2, p0, Lcom/android/mms/settings/provider/PreferenceReceiver;->mSharedPrefs:Landroid/content/SharedPreferences;
@@ -1081,8 +1058,6 @@
 
 .method putPref(Ljava/lang/String;Z)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     :try_start_0
     iget-object v2, p0, Lcom/android/mms/settings/provider/PreferenceReceiver;->mSharedPrefs:Landroid/content/SharedPreferences;
@@ -1109,7 +1084,6 @@
 
 .method sendResult(Z)V
     .locals 2
-    .param p1    # Z
 
     new-instance v0, Landroid/content/Intent;
 
@@ -1145,7 +1119,6 @@
 
 .method sendResultPrefReport(Ljava/lang/String;Lcom/android/mms/settings/provider/PreferenceReceiver$PrefData;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

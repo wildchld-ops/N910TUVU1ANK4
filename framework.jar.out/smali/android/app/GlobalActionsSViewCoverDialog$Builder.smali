@@ -37,7 +37,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -52,7 +51,6 @@
 
 .method static synthetic access$100(Landroid/app/GlobalActionsSViewCoverDialog$Builder;)Landroid/content/DialogInterface$OnClickListener;
     .locals 1
-    .param p0    # Landroid/app/GlobalActionsSViewCoverDialog$Builder;
 
     iget-object v0, p0, Landroid/app/GlobalActionsSViewCoverDialog$Builder;->positiveButtonClickListener:Landroid/content/DialogInterface$OnClickListener;
 
@@ -61,7 +59,6 @@
 
 .method static synthetic access$200(Landroid/app/GlobalActionsSViewCoverDialog$Builder;)Landroid/content/DialogInterface$OnClickListener;
     .locals 1
-    .param p0    # Landroid/app/GlobalActionsSViewCoverDialog$Builder;
 
     iget-object v0, p0, Landroid/app/GlobalActionsSViewCoverDialog$Builder;->negativeButtonClickListener:Landroid/content/DialogInterface$OnClickListener;
 
@@ -567,7 +564,6 @@
 
 .method public setContentView(Landroid/view/View;)Landroid/app/GlobalActionsSViewCoverDialog$Builder;
     .locals 0
-    .param p1    # Landroid/view/View;
 
     iput-object p1, p0, Landroid/app/GlobalActionsSViewCoverDialog$Builder;->contentView:Landroid/view/View;
 
@@ -576,7 +572,6 @@
 
 .method public setMessage(I)Landroid/app/GlobalActionsSViewCoverDialog$Builder;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/app/GlobalActionsSViewCoverDialog$Builder;->context:Landroid/content/Context;
 
@@ -593,7 +588,6 @@
 
 .method public setMessage(Ljava/lang/String;)Landroid/app/GlobalActionsSViewCoverDialog$Builder;
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/app/GlobalActionsSViewCoverDialog$Builder;->message:Ljava/lang/String;
 
@@ -602,8 +596,6 @@
 
 .method public setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/GlobalActionsSViewCoverDialog$Builder;
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/content/DialogInterface$OnClickListener;
 
     iget-object v0, p0, Landroid/app/GlobalActionsSViewCoverDialog$Builder;->context:Landroid/content/Context;
 
@@ -622,8 +614,6 @@
 
 .method public setNegativeButton(Ljava/lang/String;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/GlobalActionsSViewCoverDialog$Builder;
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/DialogInterface$OnClickListener;
 
     iput-object p1, p0, Landroid/app/GlobalActionsSViewCoverDialog$Builder;->negativeButtonText:Ljava/lang/String;
 
@@ -634,8 +624,6 @@
 
 .method public setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/GlobalActionsSViewCoverDialog$Builder;
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/content/DialogInterface$OnClickListener;
 
     iget-object v0, p0, Landroid/app/GlobalActionsSViewCoverDialog$Builder;->context:Landroid/content/Context;
 
@@ -654,8 +642,6 @@
 
 .method public setPositiveButton(Ljava/lang/String;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/GlobalActionsSViewCoverDialog$Builder;
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/DialogInterface$OnClickListener;
 
     iput-object p1, p0, Landroid/app/GlobalActionsSViewCoverDialog$Builder;->positiveButtonText:Ljava/lang/String;
 
@@ -666,7 +652,6 @@
 
 .method public setTitle(I)Landroid/app/GlobalActionsSViewCoverDialog$Builder;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/app/GlobalActionsSViewCoverDialog$Builder;->context:Landroid/content/Context;
 
@@ -683,7 +668,6 @@
 
 .method public setTitle(Ljava/lang/String;)Landroid/app/GlobalActionsSViewCoverDialog$Builder;
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/app/GlobalActionsSViewCoverDialog$Builder;->title:Ljava/lang/String;
 

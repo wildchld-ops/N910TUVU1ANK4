@@ -54,7 +54,7 @@
 .method private onComplete()V
     .locals 0
 
-    invoke-virtual {p0}, Landroid/app/Service;->stopSelf()V
+    invoke-virtual {p0}, Lcom/android/phone/HfaService;->stopSelf()V
 
     return-void
 .end method

@@ -722,7 +722,7 @@
 
     aput-object v3, v1, v2
 
-    invoke-virtual {p0, v0, v1}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {p0, v0, v1}, Lcom/android/phone/EmergencyDialer;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -732,7 +732,7 @@
     :cond_0
     const v0, 0x7f0901c0
 
-    invoke-virtual {p0, v0}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v0}, Lcom/android/phone/EmergencyDialer;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v0
 
@@ -750,7 +750,7 @@
 
     const v0, 0x7f0a00a7
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/phone/EmergencyDialer;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -758,7 +758,7 @@
 
     const v0, 0x7f0a00a8
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/phone/EmergencyDialer;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -766,7 +766,7 @@
 
     const v0, 0x7f0a00a9
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/phone/EmergencyDialer;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -774,7 +774,7 @@
 
     const v0, 0x7f0a00aa
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/phone/EmergencyDialer;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -782,7 +782,7 @@
 
     const v0, 0x7f0a00ab
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/phone/EmergencyDialer;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -790,7 +790,7 @@
 
     const v0, 0x7f0a00ac
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/phone/EmergencyDialer;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -798,7 +798,7 @@
 
     const v0, 0x7f0a00ad
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/phone/EmergencyDialer;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -806,7 +806,7 @@
 
     const v0, 0x7f0a00ae
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/phone/EmergencyDialer;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -814,7 +814,7 @@
 
     const v0, 0x7f0a00af
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/phone/EmergencyDialer;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -822,7 +822,7 @@
 
     const v0, 0x7f0a00b0
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/phone/EmergencyDialer;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -830,7 +830,7 @@
 
     const v0, 0x7f0a00b1
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/phone/EmergencyDialer;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -838,7 +838,7 @@
 
     const v0, 0x7f0a00b2
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/phone/EmergencyDialer;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -936,7 +936,7 @@
 
     const/4 v1, 0x0
 
-    const v5, 0x7f020212
+    const v5, 0x7f020211
 
     const-string v0, "ril.ICC_TYPE"
 
@@ -1113,7 +1113,7 @@
 
     const/4 v3, 0x0
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyDialer;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
@@ -1142,7 +1142,7 @@
 
     const v1, 0x7f0a00ed
 
-    invoke-virtual {p0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v1}, Lcom/android/phone/EmergencyDialer;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -1169,7 +1169,7 @@
 
     invoke-direct {v2, p0}, Lcom/android/phone/EmergencyDialer$3;-><init>(Lcom/android/phone/EmergencyDialer;)V
 
-    invoke-virtual {v1, v2}, Landroid/widget/TextView;->addTextChangedListener(Landroid/text/TextWatcher;)V
+    invoke-virtual {v1, v2}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
     iget-object v1, p0, Lcom/android/phone/EmergencyDialer;->mEmergencyItemContainer:Lcom/android/phone/EmergencyContactItemContainer;
 
@@ -1188,7 +1188,7 @@
     :cond_3
     iget-object v1, p0, Lcom/android/phone/EmergencyDialer;->mDigits:Landroid/widget/EditText;
 
-    invoke-virtual {v1, v3}, Landroid/view/View;->setWritingBuddyEnabled(Z)V
+    invoke-virtual {v1, v3}, Landroid/widget/EditText;->setWritingBuddyEnabled(Z)V
 
     iget-object v1, p0, Lcom/android/phone/EmergencyDialer;->mDigits:Landroid/widget/EditText;
 
@@ -1210,7 +1210,7 @@
 
     const/16 v2, 0x8
 
-    invoke-virtual {v1, v2}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v1, v2}, Landroid/widget/EditText;->setVisibility(I)V
 
     goto :goto_0
 .end method
@@ -1221,7 +1221,7 @@
     :try_start_0
     iget-object v0, p0, Lcom/android/phone/EmergencyDialer;->mWindowManager:Landroid/view/IWindowManager;
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getComponentName()Landroid/content/ComponentName;
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyDialer;->getComponentName()Landroid/content/ComponentName;
 
     move-result-object v1
 
@@ -1289,7 +1289,7 @@
 
     iget-object v1, p0, Lcom/android/phone/EmergencyDialer;->mDigits:Landroid/widget/EditText;
 
-    invoke-virtual {v1, p1, v0}, Landroid/widget/TextView;->onKeyDown(ILandroid/view/KeyEvent;)Z
+    invoke-virtual {v1, p1, v0}, Landroid/widget/EditText;->onKeyDown(ILandroid/view/KeyEvent;)Z
 
     return-void
 .end method
@@ -1307,7 +1307,7 @@
 
     invoke-virtual {v1, v0}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
 
-    invoke-virtual {p0, v1}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v1}, Lcom/android/phone/EmergencyDialer;->startActivity(Landroid/content/Intent;)V
 
     iget-object v0, p0, Lcom/android/phone/EmergencyDialer;->mDigits:Landroid/widget/EditText;
 
@@ -1562,7 +1562,7 @@
 
     if-eqz v8, :cond_d
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyDialer;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -1640,7 +1640,7 @@
     :cond_b
     const v0, 0x7f090738
 
-    invoke-virtual {p0, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lcom/android/phone/EmergencyDialer;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -1655,7 +1655,7 @@
     goto :goto_2
 
     :cond_d
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyDialer;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -1756,9 +1756,9 @@
 
     invoke-virtual {v1, v0}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
 
-    invoke-virtual {p0, v1}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v1}, Lcom/android/phone/EmergencyDialer;->startActivity(Landroid/content/Intent;)V
 
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyDialer;->finish()V
 
     goto :goto_7
 
@@ -1800,7 +1800,7 @@
 
     const-string v0, "audio"
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Lcom/android/phone/EmergencyDialer;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -1848,7 +1848,7 @@
 
     const-string v1, "layout_inflater"
 
-    invoke-virtual {v0, v1}, Landroid/view/ContextThemeWrapper;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v5
 
@@ -1898,9 +1898,9 @@
 
     invoke-direct {v1, p0}, Lcom/android/phone/EmergencyDialer$7;-><init>(Lcom/android/phone/EmergencyDialer;)V
 
-    invoke-virtual {v0, v1}, Landroid/app/Dialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
+    invoke-virtual {v0, v1}, Landroid/app/AlertDialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->show()V
+    invoke-virtual {v0}, Landroid/app/AlertDialog;->show()V
 
     return-void
 .end method
@@ -2707,7 +2707,7 @@
     invoke-virtual {v2, v3}, Lcom/android/phone/PhoneGlobals;->setCurrentPhone(Lcom/android/internal/telephony/Phone;)V
 
     :cond_22
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/EmergencyDialer;->startActivity(Landroid/content/Intent;)V
 
     const-string v0, "feature_lgt"
 
@@ -2751,7 +2751,7 @@
     goto/16 :goto_7
 
     :cond_24
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyDialer;->finish()V
 
     goto/16 :goto_2
 
@@ -2774,7 +2774,7 @@
 
     invoke-interface {v0, v1, v2}, Landroid/text/Editable;->delete(II)Landroid/text/Editable;
 
-    invoke-virtual {p0, v1}, Landroid/app/Activity;->showDialog(I)V
+    invoke-virtual {p0, v1}, Lcom/android/phone/EmergencyDialer;->showDialog(I)V
 
     goto/16 :goto_2
 .end method
@@ -2829,7 +2829,7 @@
 
     move-result v4
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyDialer;->getResources()Landroid/content/res/Resources;
 
     move-result-object v9
 
@@ -2874,7 +2874,7 @@
 
     const v9, 0x7f040036
 
-    invoke-virtual {p0, v9}, Landroid/app/Activity;->setContentView(I)V
+    invoke-virtual {p0, v9}, Lcom/android/phone/EmergencyDialer;->setContentView(I)V
 
     :goto_1
     const-string v9, "emergency_contacts_item"
@@ -2900,7 +2900,7 @@
     :cond_0
     const v9, 0x7f0a00ec
 
-    invoke-virtual {p0, v9}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v9}, Lcom/android/phone/EmergencyDialer;->findViewById(I)Landroid/view/View;
 
     move-result-object v9
 
@@ -2914,27 +2914,27 @@
 
     move-result-object v10
 
-    invoke-virtual {v9, v10}, Landroid/widget/TextView;->setKeyListener(Landroid/text/method/KeyListener;)V
+    invoke-virtual {v9, v10}, Landroid/widget/EditText;->setKeyListener(Landroid/text/method/KeyListener;)V
 
     iget-object v9, p0, Lcom/android/phone/EmergencyDialer;->mDigits:Landroid/widget/EditText;
 
-    invoke-virtual {v9, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v9, p0}, Landroid/widget/EditText;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     iget-object v9, p0, Lcom/android/phone/EmergencyDialer;->mDigits:Landroid/widget/EditText;
 
-    invoke-virtual {v9, p0}, Landroid/view/View;->setOnKeyListener(Landroid/view/View$OnKeyListener;)V
-
-    iget-object v9, p0, Lcom/android/phone/EmergencyDialer;->mDigits:Landroid/widget/EditText;
-
-    const/4 v10, 0x0
-
-    invoke-virtual {v9, v10}, Landroid/view/View;->setLongClickable(Z)V
+    invoke-virtual {v9, p0}, Landroid/widget/EditText;->setOnKeyListener(Landroid/view/View$OnKeyListener;)V
 
     iget-object v9, p0, Lcom/android/phone/EmergencyDialer;->mDigits:Landroid/widget/EditText;
 
     const/4 v10, 0x0
 
-    invoke-virtual {v9, v10}, Landroid/widget/TextView;->setInputType(I)V
+    invoke-virtual {v9, v10}, Landroid/widget/EditText;->setLongClickable(Z)V
+
+    iget-object v9, p0, Lcom/android/phone/EmergencyDialer;->mDigits:Landroid/widget/EditText;
+
+    const/4 v10, 0x0
+
+    invoke-virtual {v9, v10}, Landroid/widget/EditText;->setInputType(I)V
 
     iget-object v9, p0, Lcom/android/phone/EmergencyDialer;->mAccessibilityManager:Landroid/view/accessibility/AccessibilityManager;
 
@@ -2948,7 +2948,7 @@
 
     const/4 v10, 0x1
 
-    invoke-virtual {v9, v10}, Landroid/widget/TextView;->setSelected(Z)V
+    invoke-virtual {v9, v10}, Landroid/widget/EditText;->setSelected(Z)V
 
     :cond_1
     const-string v9, "support_onehand_operation"
@@ -2963,7 +2963,7 @@
 
     const v9, 0x7f0a00f3
 
-    invoke-virtual {p0, v9}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v9}, Lcom/android/phone/EmergencyDialer;->findViewById(I)Landroid/view/View;
 
     move-result-object v9
 
@@ -2971,7 +2971,7 @@
 
     const v9, 0x7f0a00f1
 
-    invoke-virtual {p0, v9}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v9}, Lcom/android/phone/EmergencyDialer;->findViewById(I)Landroid/view/View;
 
     move-result-object v9
 
@@ -2979,7 +2979,7 @@
 
     const v9, 0x7f0a00f2
 
-    invoke-virtual {p0, v9}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v9}, Lcom/android/phone/EmergencyDialer;->findViewById(I)Landroid/view/View;
 
     move-result-object v9
 
@@ -3023,7 +3023,7 @@
 
     sget-object v10, Lcom/android/phone/EmergencyDialer;->sTypeface:Landroid/graphics/Typeface;
 
-    invoke-virtual {v9, v10}, Landroid/widget/TextView;->setTypeface(Landroid/graphics/Typeface;)V
+    invoke-virtual {v9, v10}, Landroid/widget/EditText;->setTypeface(Landroid/graphics/Typeface;)V
 
     invoke-virtual {p0}, Lcom/android/phone/EmergencyDialer;->maybeAddNumberFormatting()V
 
@@ -3040,7 +3040,7 @@
     :cond_6
     const v9, 0x7f0a00a7
 
-    invoke-virtual {p0, v9}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v9}, Lcom/android/phone/EmergencyDialer;->findViewById(I)Landroid/view/View;
 
     move-result-object v8
 
@@ -3051,13 +3051,13 @@
     :cond_7
     const v9, 0x7f0a00b3
 
-    invoke-virtual {p0, v9}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v9}, Lcom/android/phone/EmergencyDialer;->findViewById(I)Landroid/view/View;
 
     move-result-object v9
 
     iput-object v9, p0, Lcom/android/phone/EmergencyDialer;->mAdditionalButtons:Landroid/view/View;
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyDialer;->getResources()Landroid/content/res/Resources;
 
     move-result-object v7
 
@@ -3161,7 +3161,7 @@
 
     if-nez v9, :cond_10
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyDialer;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v9
 
@@ -3289,7 +3289,7 @@
 
     move-result v10
 
-    invoke-virtual {v9, v10}, Landroid/widget/ImageView;->setImageResource(I)V
+    invoke-virtual {v9, v10}, Landroid/widget/ImageButton;->setImageResource(I)V
 
     iget-object v9, p0, Lcom/android/phone/EmergencyDialer;->mDialButtonSim2:Landroid/view/View;
 
@@ -3301,7 +3301,7 @@
 
     move-result v10
 
-    invoke-virtual {v9, v10}, Landroid/widget/ImageView;->setImageResource(I)V
+    invoke-virtual {v9, v10}, Landroid/widget/ImageButton;->setImageResource(I)V
 
     iget-object v9, p0, Lcom/android/phone/EmergencyDialer;->mDialButtonSim1:Landroid/view/View;
 
@@ -3320,7 +3320,7 @@
 
     iget-object v9, p0, Lcom/android/phone/EmergencyDialer;->mDigits:Landroid/widget/EditText;
 
-    invoke-virtual {v9, v6}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {v9, v6}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
     :cond_d
     iget-object v9, p0, Lcom/android/phone/EmergencyDialer;->mDigits:Landroid/widget/EditText;
@@ -3345,7 +3345,7 @@
     :cond_f
     const v9, 0x7f040035
 
-    invoke-virtual {p0, v9}, Landroid/app/Activity;->setContentView(I)V
+    invoke-virtual {p0, v9}, Lcom/android/phone/EmergencyDialer;->setContentView(I)V
 
     goto/16 :goto_1
 
@@ -3422,7 +3422,7 @@
 
     iput v9, v5, Landroid/widget/LinearLayout$LayoutParams;->weight:F
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyDialer;->getResources()Landroid/content/res/Resources;
 
     move-result-object v9
 
@@ -3438,7 +3438,7 @@
 
     const/16 v9, 0xa
 
-    iput v9, v5, Landroid/view/ViewGroup$LayoutParams;->width:I
+    iput v9, v5, Landroid/widget/LinearLayout$LayoutParams;->width:I
 
     :goto_5
     iget-object v9, p0, Lcom/android/phone/EmergencyDialer;->mDialButton:Landroid/view/View;
@@ -3450,7 +3450,7 @@
     :cond_12
     const/16 v9, 0x8
 
-    iput v9, v5, Landroid/view/ViewGroup$LayoutParams;->width:I
+    iput v9, v5, Landroid/widget/LinearLayout$LayoutParams;->width:I
 
     goto :goto_5
 
@@ -3501,7 +3501,7 @@
 .method private registerOnehandAnyScreenObserver()V
     .locals 4
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyDialer;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -3534,7 +3534,7 @@
     :try_start_0
     iget-object v0, p0, Lcom/android/phone/EmergencyDialer;->mWindowManager:Landroid/view/IWindowManager;
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getComponentName()Landroid/content/ComponentName;
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyDialer;->getComponentName()Landroid/content/ComponentName;
 
     move-result-object v1
 
@@ -3600,7 +3600,7 @@
 
     const-string v1, "PackageName"
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getPackageName()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyDialer;->getPackageName()Ljava/lang/String;
 
     move-result-object v2
 
@@ -3614,7 +3614,7 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    invoke-virtual {p0, v0}, Landroid/content/ContextWrapper;->sendBroadcast(Landroid/content/Intent;)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/EmergencyDialer;->sendBroadcast(Landroid/content/Intent;)V
 
     return-void
 .end method
@@ -3633,7 +3633,7 @@
 
     aget v3, v1, v0
 
-    invoke-virtual {p0, v3}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v3}, Lcom/android/phone/EmergencyDialer;->findViewById(I)Landroid/view/View;
 
     move-result-object v3
 
@@ -3659,7 +3659,7 @@
     :cond_1
     const v0, 0x7f0a00b1
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/phone/EmergencyDialer;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -3687,7 +3687,7 @@
     const/4 v4, 0x1
 
     :try_start_0
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyDialer;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -3743,7 +3743,7 @@
 
     iget-object v1, p0, Lcom/android/phone/EmergencyDialer;->mDigits:Landroid/widget/EditText;
 
-    invoke-virtual {v1}, Landroid/widget/TextView;->length()I
+    invoke-virtual {v1}, Landroid/widget/EditText;->length()I
 
     move-result v1
 
@@ -3800,7 +3800,7 @@
 
     const/16 v4, 0x8
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyDialer;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
@@ -3874,7 +3874,7 @@
 
     if-eqz v1, :cond_e
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyDialer;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -3884,7 +3884,7 @@
 
     float-to-int v2, v1
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyDialer;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -3897,9 +3897,9 @@
     float-to-int v1, v1
 
     :goto_4
-    invoke-virtual {v0, v2}, Landroid/view/ViewGroup$MarginLayoutParams;->setMarginStart(I)V
+    invoke-virtual {v0, v2}, Landroid/widget/LinearLayout$LayoutParams;->setMarginStart(I)V
 
-    invoke-virtual {v0, v1}, Landroid/view/ViewGroup$MarginLayoutParams;->setMarginEnd(I)V
+    invoke-virtual {v0, v1}, Landroid/widget/LinearLayout$LayoutParams;->setMarginEnd(I)V
 
     iget-object v1, p0, Lcom/android/phone/EmergencyDialer;->mDialpadContainer:Landroid/view/View;
 
@@ -4000,7 +4000,7 @@
     goto :goto_8
 
     :cond_e
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyDialer;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -4012,7 +4012,7 @@
 
     float-to-int v2, v1
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyDialer;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -4090,7 +4090,7 @@
 
     const/4 v1, 0x0
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyDialer;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 
@@ -4182,7 +4182,7 @@
 .method public getSystemOneHandSwitchStateSettingValue()I
     .locals 3
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyDialer;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -4510,7 +4510,7 @@
     :sswitch_10
     iget-object v0, p0, Lcom/android/phone/EmergencyDialer;->mDigits:Landroid/widget/EditText;
 
-    invoke-virtual {v0}, Landroid/widget/TextView;->length()I
+    invoke-virtual {v0}, Landroid/widget/EditText;->length()I
 
     move-result v0
 
@@ -4518,7 +4518,7 @@
 
     iget-object v0, p0, Lcom/android/phone/EmergencyDialer;->mDigits:Landroid/widget/EditText;
 
-    invoke-virtual {v0, v2}, Landroid/widget/TextView;->setCursorVisible(Z)V
+    invoke-virtual {v0, v2}, Landroid/widget/EditText;->setCursorVisible(Z)V
 
     goto/16 :goto_0
 
@@ -4539,7 +4539,7 @@
 
     invoke-virtual {v0}, Lcom/android/phone/EmergencyContactItemContainer;->reset()V
 
-    invoke-virtual {p0}, Landroid/app/Activity;->invalidateOptionsMenu()V
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyDialer;->invalidateOptionsMenu()V
 
     :cond_4
     const-string v0, "feature_lgt"
@@ -4564,7 +4564,7 @@
     goto/16 :goto_0
 
     :sswitch_12
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyDialer;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -4577,7 +4577,7 @@
     goto/16 :goto_0
 
     :sswitch_13
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyDialer;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -4622,7 +4622,7 @@
 
     invoke-super/range {p0 .. p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
-    invoke-virtual/range {p0 .. p0}, Landroid/app/Activity;->getActionBar()Landroid/app/ActionBar;
+    invoke-virtual/range {p0 .. p0}, Lcom/android/phone/EmergencyDialer;->getActionBar()Landroid/app/ActionBar;
 
     move-result-object v3
 
@@ -4665,7 +4665,7 @@
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v5}, Landroid/content/ContextWrapper;->sendBroadcast(Landroid/content/Intent;)V
+    invoke-virtual {v0, v5}, Lcom/android/phone/EmergencyDialer;->sendBroadcast(Landroid/content/Intent;)V
 
     invoke-static {}, Lcom/android/phone/PhoneGlobals;->getInstance()Lcom/android/phone/PhoneGlobals;
 
@@ -4683,7 +4683,7 @@
 
     move-object/from16 v1, v19
 
-    invoke-virtual {v0, v1}, Landroid/app/Activity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v0, v1}, Lcom/android/phone/EmergencyDialer;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v19
 
@@ -4701,7 +4701,7 @@
 
     move-object/from16 v1, v19
 
-    invoke-virtual {v0, v1}, Landroid/app/Activity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v0, v1}, Lcom/android/phone/EmergencyDialer;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v19
 
@@ -4713,7 +4713,7 @@
 
     iput-object v0, v1, Lcom/android/phone/EmergencyDialer;->mAccessibilityManager:Landroid/view/accessibility/AccessibilityManager;
 
-    invoke-virtual/range {p0 .. p0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
+    invoke-virtual/range {p0 .. p0}, Lcom/android/phone/EmergencyDialer;->getWindow()Landroid/view/Window;
 
     move-result-object v19
 
@@ -4747,7 +4747,7 @@
 
     move/from16 v1, v19
 
-    invoke-virtual {v0, v1}, Landroid/app/Activity;->setRequestedOrientation(I)V
+    invoke-virtual {v0, v1}, Lcom/android/phone/EmergencyDialer;->setRequestedOrientation(I)V
 
     iget v0, v12, Landroid/view/WindowManager$LayoutParams;->flags:I
 
@@ -4774,7 +4774,7 @@
 
     iput v0, v12, Landroid/view/WindowManager$LayoutParams;->privateFlags:I
 
-    invoke-virtual/range {p0 .. p0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
+    invoke-virtual/range {p0 .. p0}, Lcom/android/phone/EmergencyDialer;->getWindow()Landroid/view/Window;
 
     move-result-object v19
 
@@ -4794,11 +4794,11 @@
 
     invoke-direct/range {v20 .. v21}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual/range {v19 .. v20}, Landroid/content/ContextWrapper;->sendBroadcast(Landroid/content/Intent;)V
+    invoke-virtual/range {v19 .. v20}, Lcom/android/phone/PhoneGlobals;->sendBroadcast(Landroid/content/Intent;)V
 
     const-string v19, "lock"
 
-    invoke-virtual/range {p0 .. p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual/range {p0 .. p0}, Lcom/android/phone/EmergencyDialer;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v20
 
@@ -4858,7 +4858,7 @@
 
     move-object/from16 v19, v0
 
-    invoke-virtual/range {v19 .. v19}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual/range {v19 .. v19}, Lcom/android/phone/PhoneGlobals;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v19
 
@@ -4876,7 +4876,7 @@
 
     move-object/from16 v1, v19
 
-    invoke-virtual {v0, v1}, Landroid/app/Activity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v0, v1}, Lcom/android/phone/EmergencyDialer;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v16
 
@@ -4927,7 +4927,7 @@
 
     move-result v11
 
-    invoke-virtual/range {p0 .. p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual/range {p0 .. p0}, Lcom/android/phone/EmergencyDialer;->getResources()Landroid/content/res/Resources;
 
     move-result-object v19
 
@@ -4974,7 +4974,7 @@
 
     move/from16 v1, v19
 
-    invoke-virtual {v0, v1}, Landroid/app/Activity;->setContentView(I)V
+    invoke-virtual {v0, v1}, Lcom/android/phone/EmergencyDialer;->setContentView(I)V
 
     :goto_1
     const v19, 0x7f0a00ec
@@ -4983,7 +4983,7 @@
 
     move/from16 v1, v19
 
-    invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {v0, v1}, Lcom/android/phone/EmergencyDialer;->findViewById(I)Landroid/view/View;
 
     move-result-object v19
 
@@ -5005,7 +5005,7 @@
 
     move-result-object v20
 
-    invoke-virtual/range {v19 .. v20}, Landroid/widget/TextView;->setKeyListener(Landroid/text/method/KeyListener;)V
+    invoke-virtual/range {v19 .. v20}, Landroid/widget/EditText;->setKeyListener(Landroid/text/method/KeyListener;)V
 
     move-object/from16 v0, p0
 
@@ -5017,7 +5017,7 @@
 
     move-object/from16 v1, p0
 
-    invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v0, v1}, Landroid/widget/EditText;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     move-object/from16 v0, p0
 
@@ -5029,7 +5029,7 @@
 
     move-object/from16 v1, p0
 
-    invoke-virtual {v0, v1}, Landroid/view/View;->setOnKeyListener(Landroid/view/View$OnKeyListener;)V
+    invoke-virtual {v0, v1}, Landroid/widget/EditText;->setOnKeyListener(Landroid/view/View$OnKeyListener;)V
 
     move-object/from16 v0, p0
 
@@ -5039,7 +5039,7 @@
 
     const/16 v20, 0x0
 
-    invoke-virtual/range {v19 .. v20}, Landroid/view/View;->setLongClickable(Z)V
+    invoke-virtual/range {v19 .. v20}, Landroid/widget/EditText;->setLongClickable(Z)V
 
     move-object/from16 v0, p0
 
@@ -5049,7 +5049,7 @@
 
     const/16 v20, 0x0
 
-    invoke-virtual/range {v19 .. v20}, Landroid/widget/TextView;->setInputType(I)V
+    invoke-virtual/range {v19 .. v20}, Landroid/widget/EditText;->setInputType(I)V
 
     move-object/from16 v0, p0
 
@@ -5071,7 +5071,7 @@
 
     const/16 v20, 0x1
 
-    invoke-virtual/range {v19 .. v20}, Landroid/widget/TextView;->setSelected(Z)V
+    invoke-virtual/range {v19 .. v20}, Landroid/widget/EditText;->setSelected(Z)V
 
     :cond_3
     const-string v19, "support_onehand_operation"
@@ -5090,7 +5090,7 @@
 
     move/from16 v1, v19
 
-    invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {v0, v1}, Lcom/android/phone/EmergencyDialer;->findViewById(I)Landroid/view/View;
 
     move-result-object v19
 
@@ -5106,7 +5106,7 @@
 
     move/from16 v1, v19
 
-    invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {v0, v1}, Lcom/android/phone/EmergencyDialer;->findViewById(I)Landroid/view/View;
 
     move-result-object v19
 
@@ -5122,7 +5122,7 @@
 
     move/from16 v1, v19
 
-    invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {v0, v1}, Lcom/android/phone/EmergencyDialer;->findViewById(I)Landroid/view/View;
 
     move-result-object v19
 
@@ -5198,7 +5198,7 @@
 
     sget-object v20, Lcom/android/phone/EmergencyDialer;->sTypeface:Landroid/graphics/Typeface;
 
-    invoke-virtual/range {v19 .. v20}, Landroid/widget/TextView;->setTypeface(Landroid/graphics/Typeface;)V
+    invoke-virtual/range {v19 .. v20}, Landroid/widget/EditText;->setTypeface(Landroid/graphics/Typeface;)V
 
     invoke-virtual/range {p0 .. p0}, Lcom/android/phone/EmergencyDialer;->maybeAddNumberFormatting()V
 
@@ -5235,7 +5235,7 @@
 
     move/from16 v1, v19
 
-    invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {v0, v1}, Lcom/android/phone/EmergencyDialer;->findViewById(I)Landroid/view/View;
 
     move-result-object v18
 
@@ -5250,7 +5250,7 @@
 
     move/from16 v1, v19
 
-    invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {v0, v1}, Lcom/android/phone/EmergencyDialer;->findViewById(I)Landroid/view/View;
 
     move-result-object v19
 
@@ -5260,7 +5260,7 @@
 
     iput-object v0, v1, Lcom/android/phone/EmergencyDialer;->mAdditionalButtons:Landroid/view/View;
 
-    invoke-virtual/range {p0 .. p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual/range {p0 .. p0}, Lcom/android/phone/EmergencyDialer;->getResources()Landroid/content/res/Resources;
 
     move-result-object v17
 
@@ -5436,7 +5436,7 @@
 
     if-nez v19, :cond_1a
 
-    invoke-virtual/range {p0 .. p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual/range {p0 .. p0}, Lcom/android/phone/EmergencyDialer;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v19
 
@@ -5640,7 +5640,7 @@
 
     move-result v20
 
-    invoke-virtual/range {v19 .. v20}, Landroid/widget/ImageView;->setImageResource(I)V
+    invoke-virtual/range {v19 .. v20}, Landroid/widget/ImageButton;->setImageResource(I)V
 
     move-object/from16 v0, p0
 
@@ -5660,7 +5660,7 @@
 
     move-result v20
 
-    invoke-virtual/range {v19 .. v20}, Landroid/widget/ImageView;->setImageResource(I)V
+    invoke-virtual/range {v19 .. v20}, Landroid/widget/ImageButton;->setImageResource(I)V
 
     move-object/from16 v0, p0
 
@@ -5688,7 +5688,7 @@
     invoke-super/range {p0 .. p1}, Landroid/app/Activity;->onRestoreInstanceState(Landroid/os/Bundle;)V
 
     :cond_f
-    invoke-virtual/range {p0 .. p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
+    invoke-virtual/range {p0 .. p0}, Lcom/android/phone/EmergencyDialer;->getIntent()Landroid/content/Intent;
 
     move-result-object v19
 
@@ -5710,7 +5710,7 @@
 
     if-eqz v19, :cond_11
 
-    invoke-virtual/range {p0 .. p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
+    invoke-virtual/range {p0 .. p0}, Lcom/android/phone/EmergencyDialer;->getIntent()Landroid/content/Intent;
 
     move-result-object v19
 
@@ -5730,7 +5730,7 @@
 
     if-eqz v19, :cond_10
 
-    invoke-virtual/range {p0 .. p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
+    invoke-virtual/range {p0 .. p0}, Lcom/android/phone/EmergencyDialer;->getIntent()Landroid/content/Intent;
 
     move-result-object v19
 
@@ -5753,7 +5753,7 @@
 
     move-object/from16 v0, v19
 
-    invoke-virtual {v0, v15}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {v0, v15}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
     :cond_11
     move-object/from16 v0, p0
@@ -5847,7 +5847,7 @@
 
     move-object/from16 v1, v19
 
-    invoke-virtual {v0, v1, v8}, Landroid/content/ContextWrapper;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
+    invoke-virtual {v0, v1, v8}, Lcom/android/phone/EmergencyDialer;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
     :try_start_3
     move-object/from16 v0, p0
@@ -6042,7 +6042,7 @@
 
     move/from16 v1, v19
 
-    invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {v0, v1}, Lcom/android/phone/EmergencyDialer;->findViewById(I)Landroid/view/View;
 
     move-result-object v19
 
@@ -6088,7 +6088,7 @@
 
     const/16 v20, 0x3
 
-    invoke-virtual/range {v19 .. v20}, Landroid/widget/AbsListView;->setChoiceMode(I)V
+    invoke-virtual/range {v19 .. v20}, Landroid/widget/ListView;->setChoiceMode(I)V
 
     move-object/from16 v0, p0
 
@@ -6102,7 +6102,7 @@
 
     move-object/from16 v20, v0
 
-    invoke-virtual/range {v19 .. v20}, Landroid/widget/AbsListView;->setMultiChoiceModeListener(Landroid/widget/AbsListView$MultiChoiceModeListener;)V
+    invoke-virtual/range {v19 .. v20}, Landroid/widget/ListView;->setMultiChoiceModeListener(Landroid/widget/AbsListView$MultiChoiceModeListener;)V
 
     :cond_17
     return-void
@@ -6119,7 +6119,7 @@
 
     move/from16 v1, v19
 
-    invoke-virtual {v0, v1}, Landroid/app/Activity;->setContentView(I)V
+    invoke-virtual {v0, v1}, Lcom/android/phone/EmergencyDialer;->setContentView(I)V
 
     goto/16 :goto_1
 
@@ -6218,7 +6218,7 @@
 
     iput v0, v13, Landroid/widget/LinearLayout$LayoutParams;->weight:F
 
-    invoke-virtual/range {p0 .. p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual/range {p0 .. p0}, Lcom/android/phone/EmergencyDialer;->getResources()Landroid/content/res/Resources;
 
     move-result-object v19
 
@@ -6244,7 +6244,7 @@
 
     move/from16 v0, v19
 
-    iput v0, v13, Landroid/view/ViewGroup$LayoutParams;->width:I
+    iput v0, v13, Landroid/widget/LinearLayout$LayoutParams;->width:I
 
     :goto_7
     move-object/from16 v0, p0
@@ -6264,7 +6264,7 @@
 
     move/from16 v0, v19
 
-    iput v0, v13, Landroid/view/ViewGroup$LayoutParams;->width:I
+    iput v0, v13, Landroid/widget/LinearLayout$LayoutParams;->width:I
 
     goto :goto_7
 
@@ -6429,7 +6429,7 @@
 
     const v2, 0x7f0901bc
 
-    invoke-virtual {p0, v2}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v2}, Lcom/android/phone/EmergencyDialer;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v2
 
@@ -6479,7 +6479,7 @@
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getMenuInflater()Landroid/view/MenuInflater;
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyDialer;->getMenuInflater()Landroid/view/MenuInflater;
 
     move-result-object v0
 
@@ -6522,7 +6522,7 @@
 
     iget-object v0, p0, Lcom/android/phone/EmergencyDialer;->mBroadcastReceiver:Landroid/content/BroadcastReceiver;
 
-    invoke-virtual {p0, v0}, Landroid/content/ContextWrapper;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/EmergencyDialer;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
     iget-object v0, p0, Lcom/android/phone/EmergencyDialer;->mApp:Lcom/android/phone/PhoneGlobals;
 
@@ -6743,7 +6743,7 @@
     if-nez v1, :cond_0
 
     :cond_5
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyDialer;->finish()V
 
     goto :goto_0
 
@@ -6906,7 +6906,7 @@
     :sswitch_0
     iget-object v0, p0, Lcom/android/phone/EmergencyDialer;->mDigits:Landroid/widget/EditText;
 
-    invoke-virtual {v0}, Landroid/view/View;->isFocused()Z
+    invoke-virtual {v0}, Landroid/widget/EditText;->isFocused()Z
 
     move-result v0
 
@@ -6914,7 +6914,7 @@
 
     iget-object v0, p0, Lcom/android/phone/EmergencyDialer;->mDigits:Landroid/widget/EditText;
 
-    invoke-virtual {v0}, Landroid/view/View;->requestFocus()Z
+    invoke-virtual {v0}, Landroid/widget/EditText;->requestFocus()Z
 
     invoke-direct {p0, p1}, Lcom/android/phone/EmergencyDialer;->keyPressed(I)V
 
@@ -7029,10 +7029,10 @@
 
     iget-object v0, p0, Lcom/android/phone/EmergencyDialer;->mDummyList:Landroid/widget/ListView;
 
-    invoke-virtual {v0, v2}, Landroid/widget/AbsListView;->twShowMultiChoiceMode(Z)V
+    invoke-virtual {v0, v2}, Landroid/widget/ListView;->twShowMultiChoiceMode(Z)V
 
     :cond_0
-    invoke-virtual {p0}, Landroid/app/Activity;->invalidateOptionsMenu()V
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyDialer;->invalidateOptionsMenu()V
 
     goto :goto_0
 
@@ -7052,7 +7052,7 @@
     invoke-virtual {v0, v1}, Lcom/android/phone/EmergencyContactItemContainer;->setScreenType(Lcom/android/phone/EmergencyContactItemContainer$ScreenType;)V
 
     :cond_1
-    invoke-virtual {p0}, Landroid/app/Activity;->invalidateOptionsMenu()V
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyDialer;->invalidateOptionsMenu()V
 
     goto :goto_0
 
@@ -7074,7 +7074,7 @@
     invoke-virtual {v0, v1}, Lcom/android/phone/EmergencyContactItemContainer;->setScreenType(Lcom/android/phone/EmergencyContactItemContainer$ScreenType;)V
 
     :cond_2
-    invoke-virtual {p0}, Landroid/app/Activity;->invalidateOptionsMenu()V
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyDialer;->invalidateOptionsMenu()V
 
     goto :goto_0
 
@@ -7146,7 +7146,7 @@
 
     const-string v1, "lock"
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyDialer;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 
@@ -7209,13 +7209,13 @@
 
     if-eqz v1, :cond_4
 
-    invoke-virtual {p0}, Landroid/app/Activity;->isChangingConfigurations()Z
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyDialer;->isChangingConfigurations()Z
 
     move-result v1
 
     if-nez v1, :cond_4
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyDialer;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
@@ -7229,7 +7229,7 @@
 
     invoke-direct {v1, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {p0, v1}, Landroid/content/ContextWrapper;->sendBroadcast(Landroid/content/Intent;)V
+    invoke-virtual {p0, v1}, Lcom/android/phone/EmergencyDialer;->sendBroadcast(Landroid/content/Intent;)V
 
     :cond_4
     const-string v1, "emergency_contacts_item"
@@ -7280,7 +7280,7 @@
 
     iget-object v1, v1, Lcom/android/phone/EmergencyContactItem;->mEmergencyCallDialog:Landroid/app/AlertDialog;
 
-    invoke-virtual {v1}, Landroid/app/Dialog;->dismiss()V
+    invoke-virtual {v1}, Landroid/app/AlertDialog;->dismiss()V
 
     iget-object v1, p0, Lcom/android/phone/EmergencyDialer;->mEmergencyItemContainer:Lcom/android/phone/EmergencyContactItemContainer;
 
@@ -7341,7 +7341,7 @@
 
     iget-object v0, p0, Lcom/android/phone/EmergencyDialer;->mDigits:Landroid/widget/EditText;
 
-    invoke-virtual {v0, p0}, Landroid/widget/TextView;->addTextChangedListener(Landroid/text/TextWatcher;)V
+    invoke-virtual {v0, p0}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
     return-void
 .end method
@@ -7393,7 +7393,7 @@
 
     iget-object v1, p0, Lcom/android/phone/EmergencyDialer;->mDigits:Landroid/widget/EditText;
 
-    invoke-virtual {v1}, Landroid/view/View;->getVisibility()I
+    invoke-virtual {v1}, Landroid/widget/EditText;->getVisibility()I
 
     move-result v1
 
@@ -7424,7 +7424,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
+    invoke-virtual {v2}, Lcom/android/phone/EmergencyContactItemContainer$ScreenType;->ordinal()I
 
     move-result v2
 
@@ -7557,7 +7557,7 @@
 
     invoke-virtual {p0, v0}, Lcom/android/phone/EmergencyDialer;->removeLockScreenAnimationEffects(Z)V
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyDialer;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 
@@ -7654,7 +7654,7 @@
 
     const-string v0, "lock"
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyDialer;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 
@@ -7751,7 +7751,7 @@
 
     if-eqz v0, :cond_7
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyDialer;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -7765,7 +7765,7 @@
 
     invoke-direct {v0, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {p0, v0}, Landroid/content/ContextWrapper;->sendBroadcast(Landroid/content/Intent;)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/EmergencyDialer;->sendBroadcast(Landroid/content/Intent;)V
 
     :cond_7
     const-string v0, "ssuport_hand_adapt_operation"
@@ -8046,7 +8046,7 @@
     :cond_1
     const-string v0, "audio"
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Lcom/android/phone/EmergencyDialer;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -8234,7 +8234,7 @@
 .method public registCallHandGripChangeObserver()V
     .locals 4
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyDialer;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -8296,7 +8296,7 @@
     :cond_0
     iget-object v0, p0, Lcom/android/phone/EmergencyDialer;->mDummyList:Landroid/widget/ListView;
 
-    invoke-virtual {v0, p1}, Landroid/widget/AbsListView;->twShowMultiChoiceMode(Z)V
+    invoke-virtual {v0, p1}, Landroid/widget/ListView;->twShowMultiChoiceMode(Z)V
 
     :cond_1
     return-void
@@ -8305,7 +8305,7 @@
 .method public unregistCallHandGripChangeObserver()V
     .locals 2
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/EmergencyDialer;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 

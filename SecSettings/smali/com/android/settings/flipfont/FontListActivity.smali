@@ -204,8 +204,6 @@
 
 .method static synthetic access$002(Lcom/android/settings/flipfont/FontListActivity;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/flipfont/FontListActivity;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/flipfont/FontListActivity;->mSelectDialogIsActive:Z
 
@@ -214,7 +212,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/flipfont/FontListActivity;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/settings/flipfont/FontListActivity;
 
     iget-object v0, p0, Lcom/android/settings/flipfont/FontListActivity;->context:Landroid/content/Context;
 
@@ -728,8 +725,6 @@
 
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 7
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     const/4 v6, 0x0
 
@@ -855,7 +850,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 9
-    .param p1    # Landroid/os/Bundle;
 
     const v6, 0x7f090c6f
 
@@ -1431,9 +1425,6 @@
 
 .method public onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
     .locals 10
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2775,7 +2766,6 @@
 
 .method public saveSelectedFontStringPreferences(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 

@@ -31,7 +31,6 @@
 # direct methods
 .method public constructor <init>(I)V
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/util/Pools$SimplePool;-><init>(I)V
 

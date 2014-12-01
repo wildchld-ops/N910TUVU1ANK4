@@ -23,7 +23,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -48,15 +47,12 @@
 # virtual methods
 .method public getOutputFormat(Ljava/lang/String;Landroid/filterfw/core/FrameFormat;)Landroid/filterfw/core/FrameFormat;
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/filterfw/core/FrameFormat;
 
     return-object p2
 .end method
 
 .method public open(Landroid/filterfw/core/FilterContext;)V
     .locals 2
-    .param p1    # Landroid/filterfw/core/FilterContext;
 
     const/4 v0, 0x0
 
@@ -73,7 +69,6 @@
 
 .method public process(Landroid/filterfw/core/FilterContext;)V
     .locals 11
-    .param p1    # Landroid/filterfw/core/FilterContext;
 
     const-string v7, "frame"
 

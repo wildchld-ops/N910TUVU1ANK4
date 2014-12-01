@@ -63,14 +63,6 @@
 
 .method public constructor <init>(Ljava/lang/CharSequence;Landroid/text/TextPaint;ILandroid/text/Layout$Alignment;FFLandroid/text/BoringLayout$Metrics;Z)V
     .locals 10
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Landroid/text/TextPaint;
-    .param p3    # I
-    .param p4    # Landroid/text/Layout$Alignment;
-    .param p5    # F
-    .param p6    # F
-    .param p7    # Landroid/text/BoringLayout$Metrics;
-    .param p8    # Z
 
     invoke-direct/range {p0 .. p6}, Landroid/text/Layout;-><init>(Ljava/lang/CharSequence;Landroid/text/TextPaint;ILandroid/text/Layout$Alignment;FF)V
 
@@ -111,16 +103,6 @@
 
 .method public constructor <init>(Ljava/lang/CharSequence;Landroid/text/TextPaint;ILandroid/text/Layout$Alignment;FFLandroid/text/BoringLayout$Metrics;ZLandroid/text/TextUtils$TruncateAt;I)V
     .locals 11
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Landroid/text/TextPaint;
-    .param p3    # I
-    .param p4    # Landroid/text/Layout$Alignment;
-    .param p5    # F
-    .param p6    # F
-    .param p7    # Landroid/text/BoringLayout$Metrics;
-    .param p8    # Z
-    .param p9    # Landroid/text/TextUtils$TruncateAt;
-    .param p10    # I
 
     invoke-direct/range {p0 .. p6}, Landroid/text/Layout;-><init>(Ljava/lang/CharSequence;Landroid/text/TextPaint;ILandroid/text/Layout$Alignment;FF)V
 
@@ -226,8 +208,6 @@
 
 .method public static isBoring(Ljava/lang/CharSequence;Landroid/text/TextPaint;)Landroid/text/BoringLayout$Metrics;
     .locals 2
-    .param p0    # Ljava/lang/CharSequence;
-    .param p1    # Landroid/text/TextPaint;
 
     sget-object v0, Landroid/text/TextDirectionHeuristics;->FIRSTSTRONG_LTR:Landroid/text/TextDirectionHeuristic;
 
@@ -242,9 +222,6 @@
 
 .method public static isBoring(Ljava/lang/CharSequence;Landroid/text/TextPaint;Landroid/text/BoringLayout$Metrics;)Landroid/text/BoringLayout$Metrics;
     .locals 1
-    .param p0    # Ljava/lang/CharSequence;
-    .param p1    # Landroid/text/TextPaint;
-    .param p2    # Landroid/text/BoringLayout$Metrics;
 
     sget-object v0, Landroid/text/TextDirectionHeuristics;->FIRSTSTRONG_LTR:Landroid/text/TextDirectionHeuristic;
 
@@ -257,9 +234,6 @@
 
 .method public static isBoring(Ljava/lang/CharSequence;Landroid/text/TextPaint;Landroid/text/TextDirectionHeuristic;)Landroid/text/BoringLayout$Metrics;
     .locals 1
-    .param p0    # Ljava/lang/CharSequence;
-    .param p1    # Landroid/text/TextPaint;
-    .param p2    # Landroid/text/TextDirectionHeuristic;
 
     const/4 v0, 0x0
 
@@ -272,10 +246,6 @@
 
 .method public static isBoring(Ljava/lang/CharSequence;Landroid/text/TextPaint;Landroid/text/TextDirectionHeuristic;Landroid/text/BoringLayout$Metrics;)Landroid/text/BoringLayout$Metrics;
     .locals 23
-    .param p0    # Ljava/lang/CharSequence;
-    .param p1    # Landroid/text/TextPaint;
-    .param p2    # Landroid/text/TextDirectionHeuristic;
-    .param p3    # Landroid/text/BoringLayout$Metrics;
 
     const/16 v5, 0x1f4
 
@@ -483,14 +453,6 @@
 
 .method public static make(Ljava/lang/CharSequence;Landroid/text/TextPaint;ILandroid/text/Layout$Alignment;FFLandroid/text/BoringLayout$Metrics;Z)Landroid/text/BoringLayout;
     .locals 9
-    .param p0    # Ljava/lang/CharSequence;
-    .param p1    # Landroid/text/TextPaint;
-    .param p2    # I
-    .param p3    # Landroid/text/Layout$Alignment;
-    .param p4    # F
-    .param p5    # F
-    .param p6    # Landroid/text/BoringLayout$Metrics;
-    .param p7    # Z
 
     new-instance v0, Landroid/text/BoringLayout;
 
@@ -517,16 +479,6 @@
 
 .method public static make(Ljava/lang/CharSequence;Landroid/text/TextPaint;ILandroid/text/Layout$Alignment;FFLandroid/text/BoringLayout$Metrics;ZLandroid/text/TextUtils$TruncateAt;I)Landroid/text/BoringLayout;
     .locals 11
-    .param p0    # Ljava/lang/CharSequence;
-    .param p1    # Landroid/text/TextPaint;
-    .param p2    # I
-    .param p3    # Landroid/text/Layout$Alignment;
-    .param p4    # F
-    .param p5    # F
-    .param p6    # Landroid/text/BoringLayout$Metrics;
-    .param p7    # Z
-    .param p8    # Landroid/text/TextUtils$TruncateAt;
-    .param p9    # I
 
     new-instance v0, Landroid/text/BoringLayout;
 
@@ -559,10 +511,6 @@
 # virtual methods
 .method public draw(Landroid/graphics/Canvas;Landroid/graphics/Path;Landroid/graphics/Paint;I)V
     .locals 4
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # Landroid/graphics/Path;
-    .param p3    # Landroid/graphics/Paint;
-    .param p4    # I
 
     iget-object v0, p0, Landroid/text/BoringLayout;->mDirect:Ljava/lang/String;
 
@@ -597,8 +545,6 @@
 
 .method public ellipsized(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iput p1, p0, Landroid/text/BoringLayout;->mEllipsizedStart:I
 
@@ -619,7 +565,6 @@
 
 .method public getEllipsisCount(I)I
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/text/BoringLayout;->mEllipsizedCount:I
 
@@ -628,7 +573,6 @@
 
 .method public getEllipsisStart(I)I
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/text/BoringLayout;->mEllipsizedStart:I
 
@@ -653,7 +597,6 @@
 
 .method public getLineContainsTab(I)Z
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -670,7 +613,6 @@
 
 .method public getLineDescent(I)I
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/text/BoringLayout;->mDesc:I
 
@@ -679,7 +621,6 @@
 
 .method public final getLineDirections(I)Landroid/text/Layout$Directions;
     .locals 1
-    .param p1    # I
 
     sget-object v0, Landroid/text/Layout;->DIRS_ALL_LEFT_TO_RIGHT:Landroid/text/Layout$Directions;
 
@@ -688,7 +629,6 @@
 
 .method public getLineMax(I)F
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/text/BoringLayout;->mMax:F
 
@@ -697,7 +637,6 @@
 
 .method public getLineStart(I)I
     .locals 1
-    .param p1    # I
 
     if-nez p1, :cond_0
 
@@ -720,7 +659,6 @@
 
 .method public getLineTop(I)I
     .locals 1
-    .param p1    # I
 
     if-nez p1, :cond_0
 
@@ -737,7 +675,6 @@
 
 .method public getParagraphDirection(I)I
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -754,15 +691,6 @@
 
 .method init(Ljava/lang/CharSequence;Landroid/text/TextPaint;ILandroid/text/Layout$Alignment;FFLandroid/text/BoringLayout$Metrics;ZZ)V
     .locals 11
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Landroid/text/TextPaint;
-    .param p3    # I
-    .param p4    # Landroid/text/Layout$Alignment;
-    .param p5    # F
-    .param p6    # F
-    .param p7    # Landroid/text/BoringLayout$Metrics;
-    .param p8    # Z
-    .param p9    # Z
 
     instance-of v2, p1, Ljava/lang/String;
 
@@ -952,14 +880,6 @@
 
 .method public replaceOrMake(Ljava/lang/CharSequence;Landroid/text/TextPaint;ILandroid/text/Layout$Alignment;FFLandroid/text/BoringLayout$Metrics;Z)Landroid/text/BoringLayout;
     .locals 10
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Landroid/text/TextPaint;
-    .param p3    # I
-    .param p4    # Landroid/text/Layout$Alignment;
-    .param p5    # F
-    .param p6    # F
-    .param p7    # Landroid/text/BoringLayout$Metrics;
-    .param p8    # Z
 
     invoke-virtual/range {p0 .. p6}, Landroid/text/Layout;->replaceWith(Ljava/lang/CharSequence;Landroid/text/TextPaint;ILandroid/text/Layout$Alignment;FF)V
 
@@ -1000,16 +920,6 @@
 
 .method public replaceOrMake(Ljava/lang/CharSequence;Landroid/text/TextPaint;ILandroid/text/Layout$Alignment;FFLandroid/text/BoringLayout$Metrics;ZLandroid/text/TextUtils$TruncateAt;I)Landroid/text/BoringLayout;
     .locals 11
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Landroid/text/TextPaint;
-    .param p3    # I
-    .param p4    # Landroid/text/Layout$Alignment;
-    .param p5    # F
-    .param p6    # F
-    .param p7    # Landroid/text/BoringLayout$Metrics;
-    .param p8    # Z
-    .param p9    # Landroid/text/TextUtils$TruncateAt;
-    .param p10    # I
 
     if-eqz p9, :cond_0
 

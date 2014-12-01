@@ -27,7 +27,6 @@
 
 .method synthetic constructor <init>(Lcom/android/settings/widget/SettingsAppWidgetProvider$1;)V
     .locals 0
-    .param p1    # Lcom/android/settings/widget/SettingsAppWidgetProvider$1;
 
     invoke-direct {p0}, Lcom/android/settings/widget/SettingsAppWidgetProvider$SyncStateTracker;-><init>()V
 
@@ -38,7 +37,6 @@
 # virtual methods
 .method public getActualState(Landroid/content/Context;)I
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     invoke-static {}, Landroid/content/ContentResolver;->getMasterSyncAutomatically()Z
 
@@ -75,7 +73,6 @@
 
 .method public getButtonImageId(Z)I
     .locals 1
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -108,8 +105,6 @@
 
 .method public onActualStateChange(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     invoke-virtual {p0, p1}, Lcom/android/settings/widget/SettingsAppWidgetProvider$SyncStateTracker;->getActualState(Landroid/content/Context;)I
 
@@ -122,8 +117,6 @@
 
 .method public requestStateChange(Landroid/content/Context;Z)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Z
 
     const-string v2, "connectivity"
 

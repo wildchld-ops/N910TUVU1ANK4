@@ -210,7 +210,7 @@
 
     iget-object v1, p0, Lcom/android/phone/CallWaitingCheckBoxPreference;->mHandler:Lcom/android/phone/CallWaitingCheckBoxPreference$MyHandler;
 
-    invoke-virtual {v1, v2, v2, v2}, Landroid/os/Handler;->obtainMessage(III)Landroid/os/Message;
+    invoke-virtual {v1, v2, v2, v2}, Lcom/android/phone/CallWaitingCheckBoxPreference$MyHandler;->obtainMessage(III)Landroid/os/Message;
 
     move-result-object v1
 
@@ -254,11 +254,11 @@
 .method protected onClick()V
     .locals 4
 
-    invoke-super {p0}, Landroid/preference/TwoStatePreference;->onClick()V
+    invoke-super {p0}, Landroid/preference/CheckBoxPreference;->onClick()V
 
     iget-object v0, p0, Lcom/android/phone/CallWaitingCheckBoxPreference;->mPhone:Lcom/android/internal/telephony/Phone;
 
-    invoke-virtual {p0}, Landroid/preference/TwoStatePreference;->isChecked()Z
+    invoke-virtual {p0}, Lcom/android/phone/CallWaitingCheckBoxPreference;->isChecked()Z
 
     move-result v1
 
@@ -266,7 +266,7 @@
 
     const/4 v3, 0x1
 
-    invoke-virtual {v2, v3}, Landroid/os/Handler;->obtainMessage(I)Landroid/os/Message;
+    invoke-virtual {v2, v3}, Lcom/android/phone/CallWaitingCheckBoxPreference$MyHandler;->obtainMessage(I)Landroid/os/Message;
 
     move-result-object v2
 

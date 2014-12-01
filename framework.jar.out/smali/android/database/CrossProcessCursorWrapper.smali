@@ -9,7 +9,6 @@
 # direct methods
 .method public constructor <init>(Landroid/database/Cursor;)V
     .locals 0
-    .param p1    # Landroid/database/Cursor;
 
     invoke-direct {p0, p1}, Landroid/database/CursorWrapper;-><init>(Landroid/database/Cursor;)V
 
@@ -20,8 +19,6 @@
 # virtual methods
 .method public fillWindow(ILandroid/database/CursorWindow;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/database/CursorWindow;
 
     iget-object v1, p0, Landroid/database/CursorWrapper;->mCursor:Landroid/database/Cursor;
 
@@ -74,8 +71,6 @@
 
 .method public onMove(II)Z
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget-object v1, p0, Landroid/database/CursorWrapper;->mCursor:Landroid/database/Cursor;
 

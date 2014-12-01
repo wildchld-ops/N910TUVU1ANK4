@@ -39,9 +39,6 @@
 # direct methods
 .method public constructor <init>(Ljava/util/ArrayList;Landroid/content/Intent;ILcom/android/server/pm/PackageManagerService$InstallArgs;)V
     .locals 1
-    .param p2    # Landroid/content/Intent;
-    .param p3    # I
-    .param p4    # Lcom/android/server/pm/PackageManagerService$InstallArgs;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -89,7 +86,6 @@
 # virtual methods
 .method public addRequiredVerifierUid(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/pm/PackageVerificationState;->mRequiredVerifierUids:Landroid/util/SparseBooleanArray;
 
@@ -102,7 +98,6 @@
 
 .method public addSufficientVerifier(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/pm/PackageVerificationState;->mSufficientVerifierUids:Landroid/util/SparseBooleanArray;
 
@@ -164,7 +159,6 @@
 
 .method public getVerifierPackage(I)Lcom/android/server/pm/PackageManagerService$VerifierPackage;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/pm/PackageVerificationState;->mVerifierPackages:Ljava/util/ArrayList;
 
@@ -259,7 +253,6 @@
 
 .method public removeVerifierPackage(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/pm/PackageVerificationState;->mVerifierPackages:Ljava/util/ArrayList;
 
@@ -270,8 +263,6 @@
 
 .method public setVerifierResponse(II)Z
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     const/4 v1, 0x0
 

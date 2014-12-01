@@ -31,8 +31,6 @@
 # direct methods
 .method constructor <init>(Landroid/hardware/scontext/SContextManager;Landroid/hardware/scontext/SContextListener;Landroid/os/Handler;)V
     .locals 2
-    .param p2    # Landroid/hardware/scontext/SContextListener;
-    .param p3    # Landroid/os/Handler;
 
     iput-object p1, p0, Landroid/hardware/scontext/SContextManager$SContextListenerDelegate;->this$0:Landroid/hardware/scontext/SContextManager;
 
@@ -63,7 +61,6 @@
 
 .method static synthetic access$000(Landroid/hardware/scontext/SContextManager$SContextListenerDelegate;)Landroid/hardware/scontext/SContextListener;
     .locals 1
-    .param p0    # Landroid/hardware/scontext/SContextManager$SContextListenerDelegate;
 
     iget-object v0, p0, Landroid/hardware/scontext/SContextManager$SContextListenerDelegate;->mListener:Landroid/hardware/scontext/SContextListener;
 
@@ -100,7 +97,6 @@
 
 .method public declared-synchronized scontextCallback(Landroid/hardware/scontext/SContextEvent;)V
     .locals 2
-    .param p1    # Landroid/hardware/scontext/SContextEvent;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

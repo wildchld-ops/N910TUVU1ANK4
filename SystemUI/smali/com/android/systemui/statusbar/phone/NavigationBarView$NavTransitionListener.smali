@@ -44,8 +44,6 @@
 
 .method synthetic constructor <init>(Lcom/android/systemui/statusbar/phone/NavigationBarView;Lcom/android/systemui/statusbar/phone/NavigationBarView$1;)V
     .locals 0
-    .param p1    # Lcom/android/systemui/statusbar/phone/NavigationBarView;
-    .param p2    # Lcom/android/systemui/statusbar/phone/NavigationBarView$1;
 
     invoke-direct {p0, p1}, Lcom/android/systemui/statusbar/phone/NavigationBarView$NavTransitionListener;-><init>(Lcom/android/systemui/statusbar/phone/NavigationBarView;)V
 
@@ -56,10 +54,6 @@
 # virtual methods
 .method public endTransition(Landroid/animation/LayoutTransition;Landroid/view/ViewGroup;Landroid/view/View;I)V
     .locals 3
-    .param p1    # Landroid/animation/LayoutTransition;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/view/View;
-    .param p4    # I
 
     const/4 v2, 0x0
 
@@ -188,10 +182,6 @@
 
 .method public startTransition(Landroid/animation/LayoutTransition;Landroid/view/ViewGroup;Landroid/view/View;I)V
     .locals 3
-    .param p1    # Landroid/animation/LayoutTransition;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/view/View;
-    .param p4    # I
 
     const/4 v2, 0x1
 

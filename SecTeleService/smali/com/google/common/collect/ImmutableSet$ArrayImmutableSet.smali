@@ -67,7 +67,7 @@
 
     if-nez v6, :cond_2
 
-    invoke-super {p0, p1}, Lcom/google/common/collect/ImmutableCollection;->containsAll(Ljava/util/Collection;)Z
+    invoke-super {p0, p1}, Lcom/google/common/collect/ImmutableSet;->containsAll(Ljava/util/Collection;)Z
 
     move-result v4
 
@@ -102,7 +102,7 @@
 
     aget-object v3, v0, v1
 
-    invoke-virtual {p0, v3}, Lcom/google/common/collect/ImmutableCollection;->contains(Ljava/lang/Object;)Z
+    invoke-virtual {p0, v3}, Lcom/google/common/collect/ImmutableSet$ArrayImmutableSet;->contains(Ljava/lang/Object;)Z
 
     move-result v6
 

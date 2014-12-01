@@ -28,7 +28,6 @@
 
 .method synthetic constructor <init>(Lcom/android/launcher2/WorkspaceSpanCalculator$1;)V
     .locals 0
-    .param p1    # Lcom/android/launcher2/WorkspaceSpanCalculator$1;
 
     invoke-direct {p0}, Lcom/android/launcher2/WorkspaceSpanCalculator$SpanCountCalculatorRoundUp;-><init>()V
 
@@ -39,9 +38,6 @@
 # virtual methods
 .method public getSpanCount(III)I
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     add-int v1, p1, p3
 

@@ -36,12 +36,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/content/ContentService$ObserverNode;Landroid/database/IContentObserver;ZLjava/lang/Object;III)V
     .locals 3
-    .param p2    # Landroid/database/IContentObserver;
-    .param p3    # Z
-    .param p4    # Ljava/lang/Object;
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
 
     iput-object p1, p0, Lcom/android/server/content/ContentService$ObserverNode$ObserverEntry;->this$0:Lcom/android/server/content/ContentService$ObserverNode;
 
@@ -85,7 +79,6 @@
 
 .method static synthetic access$100(Lcom/android/server/content/ContentService$ObserverNode$ObserverEntry;)I
     .locals 1
-    .param p0    # Lcom/android/server/content/ContentService$ObserverNode$ObserverEntry;
 
     iget v0, p0, Lcom/android/server/content/ContentService$ObserverNode$ObserverEntry;->userHandle:I
 
@@ -124,12 +117,6 @@
 
 .method public dumpLocked(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/util/SparseIntArray;)V
     .locals 2
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Landroid/util/SparseIntArray;
 
     iget v0, p0, Lcom/android/server/content/ContentService$ObserverNode$ObserverEntry;->pid:I
 

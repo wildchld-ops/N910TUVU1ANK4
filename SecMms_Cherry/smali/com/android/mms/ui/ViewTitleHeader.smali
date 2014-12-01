@@ -34,8 +34,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -308,10 +306,6 @@
 # virtual methods
 .method public ViewTitleHeaderCreate(Landroid/content/Context;Lcom/android/mms/ui/MessageItem;JLjava/lang/String;)V
     .locals 10
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/mms/ui/MessageItem;
-    .param p3    # J
-    .param p5    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/mms/ui/ViewTitleHeader;->mContext:Landroid/content/Context;
 
@@ -786,7 +780,6 @@
 
 .method public setFailedeIcon(Z)V
     .locals 2
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -817,7 +810,6 @@
 
 .method public setLockIcon(Z)V
     .locals 2
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 

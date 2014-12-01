@@ -14,8 +14,6 @@
 
 .method public static d(Ljava/lang/String;Ljava/lang/String;)I
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x3
 
@@ -38,9 +36,6 @@
 
 .method public static d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Throwable;
 
     const/4 v2, 0x3
 
@@ -89,8 +84,6 @@
 
 .method public static e(Ljava/lang/String;Ljava/lang/String;)I
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     sget-boolean v0, Landroid/util/secutil/LogSwitcher;->isShowingGlobalLog:Z
 
@@ -115,9 +108,6 @@
 
 .method public static e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Throwable;
 
     sget-boolean v0, Landroid/util/secutil/LogSwitcher;->isShowingGlobalLog:Z
 
@@ -168,8 +158,6 @@
 
 .method public static i(Ljava/lang/String;Ljava/lang/String;)I
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     sget-boolean v0, Landroid/util/secutil/LogSwitcher;->isShowingGlobalLog:Z
 
@@ -194,9 +182,6 @@
 
 .method public static i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Throwable;
 
     sget-boolean v0, Landroid/util/secutil/LogSwitcher;->isShowingGlobalLog:Z
 
@@ -247,9 +232,6 @@
 
 .method public static println(ILjava/lang/String;Ljava/lang/String;)I
     .locals 1
-    .param p0    # I
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     sget-boolean v0, Landroid/util/secutil/LogSwitcher;->isShowingGlobalLog:Z
 
@@ -272,8 +254,6 @@
 
 .method public static secD(Ljava/lang/String;Ljava/lang/String;)I
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     sget-boolean v0, Landroid/util/secutil/LogSwitcher;->isShowingSecDLog:Z
 
@@ -294,9 +274,6 @@
 
 .method public static secD(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Throwable;
 
     sget-boolean v0, Landroid/util/secutil/LogSwitcher;->isShowingSecDLog:Z
 
@@ -317,8 +294,6 @@
 
 .method public static secE(Ljava/lang/String;Ljava/lang/String;)I
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     sget-boolean v0, Landroid/util/secutil/LogSwitcher;->isShowingSecELog:Z
 
@@ -339,9 +314,6 @@
 
 .method public static secE(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Throwable;
 
     sget-boolean v0, Landroid/util/secutil/LogSwitcher;->isShowingSecELog:Z
 
@@ -362,8 +334,6 @@
 
 .method public static secI(Ljava/lang/String;Ljava/lang/String;)I
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     sget-boolean v0, Landroid/util/secutil/LogSwitcher;->isShowingSecILog:Z
 
@@ -384,9 +354,6 @@
 
 .method public static secI(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Throwable;
 
     sget-boolean v0, Landroid/util/secutil/LogSwitcher;->isShowingSecILog:Z
 
@@ -407,9 +374,6 @@
 
 .method public static secPrintln(ILjava/lang/String;Ljava/lang/String;)I
     .locals 1
-    .param p0    # I
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     sget-boolean v0, Landroid/util/secutil/LogSwitcher;->isShowingGlobalLog:Z
 
@@ -430,8 +394,6 @@
 
 .method public static secV(Ljava/lang/String;Ljava/lang/String;)I
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     sget-boolean v0, Landroid/util/secutil/LogSwitcher;->isShowingSecVLog:Z
 
@@ -452,9 +414,6 @@
 
 .method public static secV(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Throwable;
 
     sget-boolean v0, Landroid/util/secutil/LogSwitcher;->isShowingSecVLog:Z
 
@@ -475,8 +434,6 @@
 
 .method public static secW(Ljava/lang/String;Ljava/lang/String;)I
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     sget-boolean v0, Landroid/util/secutil/LogSwitcher;->isShowingSecWLog:Z
 
@@ -497,9 +454,6 @@
 
 .method public static secW(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Throwable;
 
     sget-boolean v0, Landroid/util/secutil/LogSwitcher;->isShowingSecWLog:Z
 
@@ -520,8 +474,6 @@
 
 .method public static secW(Ljava/lang/String;Ljava/lang/Throwable;)I
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/Throwable;
 
     sget-boolean v0, Landroid/util/secutil/LogSwitcher;->isShowingSecWLog:Z
 
@@ -542,8 +494,6 @@
 
 .method public static v(Ljava/lang/String;Ljava/lang/String;)I
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     sget-boolean v0, Landroid/util/secutil/LogSwitcher;->isShowingGlobalLog:Z
 
@@ -568,9 +518,6 @@
 
 .method public static v(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Throwable;
 
     sget-boolean v0, Landroid/util/secutil/LogSwitcher;->isShowingGlobalLog:Z
 
@@ -621,8 +568,6 @@
 
 .method public static w(Ljava/lang/String;Ljava/lang/String;)I
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     sget-boolean v0, Landroid/util/secutil/LogSwitcher;->isShowingGlobalLog:Z
 
@@ -647,9 +592,6 @@
 
 .method public static w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Throwable;
 
     sget-boolean v0, Landroid/util/secutil/LogSwitcher;->isShowingGlobalLog:Z
 
@@ -700,8 +642,6 @@
 
 .method public static w(Ljava/lang/String;Ljava/lang/Throwable;)I
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/Throwable;
 
     sget-boolean v0, Landroid/util/secutil/LogSwitcher;->isShowingGlobalLog:Z
 

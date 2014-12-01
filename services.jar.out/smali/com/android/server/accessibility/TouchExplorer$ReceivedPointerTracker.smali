@@ -112,8 +112,6 @@
 
 .method private handleReceivedPointerDown(ILandroid/view/MotionEvent;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/view/MotionEvent;
 
     const/4 v4, 0x0
 
@@ -176,8 +174,6 @@
 
 .method private handleReceivedPointerUp(ILandroid/view/MotionEvent;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/view/MotionEvent;
 
     const/4 v4, 0x0
 
@@ -352,7 +348,6 @@
 
 .method public getReceivedPointerDownTime(I)J
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/accessibility/TouchExplorer$ReceivedPointerTracker;->mReceivedPointerDownTime:[J
 
@@ -363,7 +358,6 @@
 
 .method public getReceivedPointerDownX(I)F
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/accessibility/TouchExplorer$ReceivedPointerTracker;->mReceivedPointerDownX:[F
 
@@ -374,7 +368,6 @@
 
 .method public getReceivedPointerDownY(I)F
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/accessibility/TouchExplorer$ReceivedPointerTracker;->mReceivedPointerDownY:[F
 
@@ -385,7 +378,6 @@
 
 .method public isReceivedPointerDown(I)Z
     .locals 3
-    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -408,7 +400,6 @@
 
 .method public onMotionEvent(Landroid/view/MotionEvent;)V
     .locals 2
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-object v1, p0, Lcom/android/server/accessibility/TouchExplorer$ReceivedPointerTracker;->mLastReceivedEvent:Landroid/view/MotionEvent;
 

@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Landroid/view/InputFilter;Landroid/os/Looper;)V
     .locals 0
-    .param p2    # Landroid/os/Looper;
 
     iput-object p1, p0, Landroid/view/InputFilter$H;->this$0:Landroid/view/InputFilter;
 
@@ -34,7 +33,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 4
-    .param p1    # Landroid/os/Message;
 
     const/4 v3, 0x0
 

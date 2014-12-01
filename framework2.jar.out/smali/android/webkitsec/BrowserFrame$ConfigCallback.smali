@@ -37,7 +37,6 @@
 # direct methods
 .method constructor <init>(Landroid/view/WindowManager;)V
     .locals 1
-    .param p1    # Landroid/view/WindowManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -56,7 +55,6 @@
 # virtual methods
 .method public declared-synchronized addHandler(Landroid/os/Handler;)V
     .locals 2
-    .param p1    # Landroid/os/Handler;
 
     monitor-enter p0
 
@@ -85,7 +83,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 8
-    .param p1    # Landroid/content/res/Configuration;
 
     iget-object v6, p0, Landroid/webkitsec/BrowserFrame$ConfigCallback;->mHandlers:Ljava/util/ArrayList;
 

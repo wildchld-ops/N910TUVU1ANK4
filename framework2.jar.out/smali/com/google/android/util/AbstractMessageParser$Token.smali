@@ -29,8 +29,6 @@
 # direct methods
 .method protected constructor <init>(Lcom/google/android/util/AbstractMessageParser$Token$Type;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Lcom/google/android/util/AbstractMessageParser$Token$Type;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -137,7 +135,6 @@
 
 .method public toHtml(Z)Ljava/lang/String;
     .locals 2
-    .param p1    # Z
 
     new-instance v0, Ljava/lang/AssertionError;
 

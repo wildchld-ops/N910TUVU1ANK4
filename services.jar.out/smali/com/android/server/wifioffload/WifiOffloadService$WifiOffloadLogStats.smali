@@ -56,7 +56,6 @@
 
 .method public static dumpStats(Ljava/io/PrintWriter;)V
     .locals 2
-    .param p0    # Ljava/io/PrintWriter;
 
     sget-object v0, Lcom/android/server/wifioffload/WifiOffloadService$WifiOffloadLogStats;->sCriticalStats:Lcom/android/server/wifioffload/WifiOffloadLogger;
 
@@ -90,7 +89,6 @@
 
 .method public static logStats(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     sget-object v0, Lcom/android/server/wifioffload/WifiOffloadService$WifiOffloadLogStats;->sCriticalStats:Lcom/android/server/wifioffload/WifiOffloadLogger;
 

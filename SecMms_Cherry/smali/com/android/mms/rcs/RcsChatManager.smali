@@ -125,7 +125,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     const-wide/16 v1, 0x0
 
@@ -182,7 +181,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/rcs/RcsChatManager;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/mms/rcs/RcsChatManager;
 
     iget-object v0, p0, Lcom/android/mms/rcs/RcsChatManager;->mContext:Landroid/content/Context;
 
@@ -191,8 +189,6 @@
 
 .method private static check(JJ)Z
     .locals 4
-    .param p0    # J
-    .param p2    # J
 
     and-long v0, p0, p2
 
@@ -215,8 +211,6 @@
 
 .method public static deleteHideRcsMessage(Landroid/content/Context;J)V
     .locals 12
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
 
     const/4 v11, 0x1
 
@@ -501,8 +495,6 @@
 
 .method public static generateImsUri(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
     .locals 10
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const/4 v9, 0x0
 
@@ -637,8 +629,6 @@
 
 .method public static getChatName(Landroid/content/Context;J)Ljava/lang/String;
     .locals 11
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
 
     const/4 v8, 0x0
 
@@ -761,9 +751,6 @@
 
 .method public static getGroupChatHeaderforIPME(Landroid/content/Context;Ljava/lang/String;I)Ljava/lang/String;
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-static {}, Lcom/android/mms/MmsConfig;->isBlackBirdFeatureEnabled()Z
 
@@ -814,8 +801,6 @@
 
 .method public static getRcsCursor(Landroid/content/Context;Ljava/lang/String;)Landroid/database/Cursor;
     .locals 10
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -909,8 +894,6 @@
 
 .method public static getRcsParticipantUrl(Landroid/content/Context;Lcom/android/mms/data/Contact;)Ljava/lang/String;
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/mms/data/Contact;
 
     const/4 v0, 0x0
 
@@ -940,7 +923,6 @@
 
 .method public static getSizeOfRecipient(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -974,11 +956,6 @@
 
 .method private static getThreadByChatId(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)Ljava/lang/Long;
     .locals 17
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Z
 
     const-string v1, "Mms/RcsChatManager"
 
@@ -1266,7 +1243,6 @@
 
 .method public static isClosedGroupChat(Lcom/android/mms/data/Conversation;)Z
     .locals 2
-    .param p0    # Lcom/android/mms/data/Conversation;
 
     const/4 v0, 0x0
 
@@ -1296,7 +1272,6 @@
 
 .method public static isDP(J)Z
     .locals 2
-    .param p0    # J
 
     const-wide/16 v0, 0x100
 
@@ -1309,7 +1284,6 @@
 
 .method public static isError(J)Z
     .locals 2
-    .param p0    # J
 
     const-wide/16 v0, 0x10
 
@@ -1322,7 +1296,6 @@
 
 .method public static isFTCapable(J)Z
     .locals 2
-    .param p0    # J
 
     const-wide/16 v0, 0x2
 
@@ -1335,7 +1308,6 @@
 
 .method public static isFTHTTPCapable(J)Z
     .locals 2
-    .param p0    # J
 
     const-wide/16 v0, 0x200
 
@@ -1348,7 +1320,6 @@
 
 .method public static isGroupChatMode(J)Z
     .locals 2
-    .param p0    # J
 
     const-wide/16 v0, 0x400
 
@@ -1361,7 +1332,6 @@
 
 .method public static isIMCapable(J)Z
     .locals 2
-    .param p0    # J
 
     const-wide/16 v0, 0x1
 
@@ -1374,7 +1344,6 @@
 
 .method public static isLegacy(J)Z
     .locals 2
-    .param p0    # J
 
     const-wide/16 v0, 0x20
 
@@ -1387,7 +1356,6 @@
 
 .method public static isOffline(J)Z
     .locals 2
-    .param p0    # J
 
     const-wide/16 v0, 0x800
 
@@ -1400,7 +1368,6 @@
 
 .method public static isSP(J)Z
     .locals 2
-    .param p0    # J
 
     const-wide/16 v0, 0x80
 
@@ -1413,7 +1380,6 @@
 
 .method public static isVideoShareCapable(J)Z
     .locals 2
-    .param p0    # J
 
     const-wide/16 v0, 0x4
 
@@ -1426,7 +1392,6 @@
 
 .method public static processingPendingImTransaction(Landroid/content/Context;)V
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     invoke-static {}, Lcom/android/mms/MmsConfig;->isBlackBirdFeatureEnabled()Z
 
@@ -1496,7 +1461,6 @@
 
 .method public static runningUncompletedRcsJob(Landroid/content/Context;)V
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     invoke-static {}, Lcom/android/mms/MmsConfig;->isBlackBirdFeatureEnabled()Z
 
@@ -1525,11 +1489,6 @@
 
 .method public static saveRcsChatQueueMessage(Landroid/content/Context;JLjava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri;
     .locals 7
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
 
     const/4 v6, 0x1
 
@@ -1663,11 +1622,6 @@
 
 .method public static saveRcsFTQueueMessage(Landroid/content/Context;JLjava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri;
     .locals 7
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
 
     invoke-static {}, Lcom/android/mms/MmsConfig;->isBlackBirdFeatureEnabled()Z
 
@@ -1854,9 +1808,6 @@
 
 .method private static saveRcsFTReceivingMessage(Landroid/content/Context;JI)V
     .locals 39
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
-    .param p3    # I
 
     invoke-static {}, Lcom/android/mms/MmsConfig;->isBlackBirdFeatureEnabled()Z
 
@@ -2676,7 +2627,6 @@
 
 .method public static sendAllPendingFTs(Landroid/content/Context;)V
     .locals 14
-    .param p0    # Landroid/content/Context;
 
     const/4 v6, 0x2
 
@@ -2837,8 +2787,6 @@
 
 .method public static setChatName(Landroid/content/Context;Lcom/android/mms/data/Conversation;)V
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/mms/data/Conversation;
 
     invoke-static {}, Lcom/android/mms/MmsConfig;->isBlackBirdFeatureEnabled()Z
 
@@ -2868,11 +2816,6 @@
 
 .method public static startChatSendService(Landroid/content/Context;JLjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
 
     invoke-static {}, Lcom/android/mms/MmsConfig;->isBlackBirdFeatureEnabled()Z
 
@@ -2909,10 +2852,6 @@
 
 .method public static startFtReceivingService(Landroid/content/Context;JIZ)V
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
-    .param p3    # I
-    .param p4    # Z
 
     const/4 v3, 0x1
 
@@ -2961,10 +2900,6 @@
 
 .method public static startFtSendService(Landroid/content/Context;JLjava/lang/String;Ljava/util/ArrayList;Ljava/lang/String;)V
     .locals 8
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
-    .param p3    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3037,14 +2972,6 @@
 
 .method public static updateHistoryForRcsChat(Landroid/content/Context;JJJLjava/lang/String;Ljava/lang/String;II)Z
     .locals 7
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
-    .param p3    # J
-    .param p5    # J
-    .param p7    # Ljava/lang/String;
-    .param p8    # Ljava/lang/String;
-    .param p9    # I
-    .param p10    # I
 
     invoke-static {}, Lcom/android/mms/MmsConfig;->isBlackBirdFeatureEnabled()Z
 
@@ -3245,7 +3172,6 @@
 
 .method public static updateRcsStatusToFailed(Landroid/content/Context;)V
     .locals 14
-    .param p0    # Landroid/content/Context;
 
     invoke-static {}, Lcom/android/mms/MmsConfig;->isBlackBirdFeatureEnabled()Z
 
@@ -3527,8 +3453,6 @@
 
 .method public directRequestCaps(Ljava/lang/String;Ljava/lang/String;)J
     .locals 18
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-static {}, Lcom/android/mms/MmsConfig;->isBlackBirdFeatureEnabled()Z
 
@@ -3933,7 +3857,6 @@
 
 .method public getCapsValue(Ljava/lang/String;)J
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Landroid/telephony/PhoneNumberUtils;->stripSeparators(Ljava/lang/String;)Ljava/lang/String;
 
@@ -3970,7 +3893,6 @@
 
 .method public getChatType(Z)I
     .locals 5
-    .param p1    # Z
 
     const/4 v0, 0x0
 
@@ -4015,7 +3937,6 @@
 
 .method public getContactListCapsValue(Lcom/android/mms/data/ContactList;)J
     .locals 8
-    .param p1    # Lcom/android/mms/data/ContactList;
 
     const-wide/16 v6, 0x0
 
@@ -4130,7 +4051,6 @@
 
 .method public getGroupChatHeader(Ljava/lang/String;)Ljava/lang/String;
     .locals 9
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -4254,8 +4174,6 @@
 
 .method public getIntegratedThreadsInfo(Landroid/content/Context;Ljava/lang/String;)Landroid/database/Cursor;
     .locals 9
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -4326,7 +4244,6 @@
 
 .method public getMaxLimit(Z)I
     .locals 2
-    .param p1    # Z
 
     const/4 v0, 0x0
 
@@ -4370,8 +4287,6 @@
 
 .method public getRcsDbId(Landroid/content/Context;Landroid/net/Uri;)J
     .locals 10
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/net/Uri;
 
     const-wide/16 v8, 0x0
 
@@ -4456,8 +4371,6 @@
 
 .method public getRcsFtSessionId(Landroid/content/Context;Landroid/net/Uri;)J
     .locals 10
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/net/Uri;
 
     const-wide/16 v8, 0x0
 
@@ -4550,7 +4463,6 @@
 
 .method public getTransportType(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Lcom/android/mms/MmsConfig;->isBlackBirdFeatureEnabled()Z
 
@@ -4686,7 +4598,6 @@
 
 .method public isGroupChatMode(Z)Z
     .locals 2
-    .param p1    # Z
 
     invoke-static {}, Lcom/android/mms/MmsConfig;->isBlackBirdFeatureEnabled()Z
 
@@ -4726,7 +4637,6 @@
 
 .method public isOffline(Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -4805,8 +4715,6 @@
 
 .method public readDataFromQueryForIMORFT(Landroid/database/Cursor;Z)Z
     .locals 7
-    .param p1    # Landroid/database/Cursor;
-    .param p2    # Z
 
     const/4 v5, 0x1
 
@@ -4892,8 +4800,6 @@
 
 .method public registerResponseReceiver(Landroid/app/Activity;Landroid/content/BroadcastReceiver;)V
     .locals 3
-    .param p1    # Landroid/app/Activity;
-    .param p2    # Landroid/content/BroadcastReceiver;
 
     invoke-static {}, Lcom/android/mms/MmsConfig;->isBlackBirdFeatureEnabled()Z
 
@@ -4938,11 +4844,6 @@
 
 .method public requestCaps(ZLjava/lang/String;Ljava/lang/String;ZZ)J
     .locals 20
-    .param p1    # Z
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Z
-    .param p5    # Z
 
     invoke-static {}, Lcom/android/mms/MmsConfig;->isBlackBirdFeatureEnabled()Z
 
@@ -5493,8 +5394,6 @@
 
 .method public requestChatId(Lcom/android/mms/data/Conversation;Ljava/lang/String;)V
     .locals 9
-    .param p1    # Lcom/android/mms/data/Conversation;
-    .param p2    # Ljava/lang/String;
 
     invoke-static {}, Lcom/android/mms/MmsConfig;->isBlackBirdFeatureEnabled()Z
 
@@ -5676,7 +5575,6 @@
 
 .method public setRcsState(J)V
     .locals 3
-    .param p1    # J
 
     const-string v0, "Mms/RcsChatManager"
 
@@ -5707,7 +5605,6 @@
 
 .method public setRequestChat(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/rcs/RcsChatManager;->mIsRequestChat:Z
 
@@ -5716,7 +5613,6 @@
 
 .method public setRequestMessage(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/rcs/RcsChatManager;->mIsRequestMessage:Z
 
@@ -5725,8 +5621,6 @@
 
 .method public unregisterResponseReceiver(Landroid/app/Activity;Landroid/content/BroadcastReceiver;)V
     .locals 3
-    .param p1    # Landroid/app/Activity;
-    .param p2    # Landroid/content/BroadcastReceiver;
 
     invoke-static {}, Lcom/android/mms/MmsConfig;->isBlackBirdFeatureEnabled()Z
 
@@ -5766,9 +5660,6 @@
 
 .method public updateFt(Landroid/content/ContentResolver;JLjava/lang/String;)V
     .locals 17
-    .param p1    # Landroid/content/ContentResolver;
-    .param p2    # J
-    .param p4    # Ljava/lang/String;
 
     invoke-static {}, Lcom/android/mms/MmsConfig;->isBlackBirdFeatureEnabled()Z
 
@@ -6061,8 +5952,6 @@
 
 .method public updateParticipant(Ljava/lang/String;I)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/mms/rcs/RcsChatManager;->mParticipantsMap:Ljava/util/HashMap;
 
@@ -6101,8 +5990,6 @@
 
 .method public updateParticipantCaps(Ljava/lang/String;J)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
 
     iget-object v0, p0, Lcom/android/mms/rcs/RcsChatManager;->mCapsMap:Ljava/util/HashMap;
 
@@ -6141,8 +6028,6 @@
 
 .method public updateParticipantList(ILjava/lang/String;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/mms/rcs/RcsChatManager;->mListParticipants:Ljava/util/ArrayList;
 
@@ -6173,7 +6058,6 @@
 
 .method public updateParticipantList(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/mms/rcs/RcsChatManager;->mListParticipants:Ljava/util/ArrayList;
 
@@ -6204,7 +6088,6 @@
 
 .method public updateParticipantsStatus(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Lcom/android/mms/MmsConfig;->isBlackBirdFeatureEnabled()Z
 
@@ -6364,8 +6247,6 @@
 
 .method public updateRcsState(ZZ)J
     .locals 12
-    .param p1    # Z
-    .param p2    # Z
 
     const-wide/16 v6, 0x0
 
@@ -6677,8 +6558,6 @@
 
 .method public updateThreadChatIdAndAlias(Lcom/android/mms/data/Conversation;Ljava/lang/String;)V
     .locals 7
-    .param p1    # Lcom/android/mms/data/Conversation;
-    .param p2    # Ljava/lang/String;
 
     invoke-static {}, Lcom/android/mms/MmsConfig;->isBlackBirdFeatureEnabled()Z
 

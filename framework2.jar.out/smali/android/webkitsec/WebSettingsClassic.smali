@@ -262,8 +262,6 @@
 
 .method constructor <init>(Landroid/content/Context;Landroid/webkitsec/WebViewClassic;)V
     .locals 8
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/webkitsec/WebViewClassic;
 
     const/16 v6, 0x64
 
@@ -642,7 +640,6 @@
 
 .method static synthetic access$000(Landroid/webkitsec/WebSettingsClassic;)Landroid/webkitsec/BrowserFrame;
     .locals 1
-    .param p0    # Landroid/webkitsec/WebSettingsClassic;
 
     iget-object v0, p0, Landroid/webkitsec/WebSettingsClassic;->mBrowserFrame:Landroid/webkitsec/BrowserFrame;
 
@@ -651,8 +648,6 @@
 
 .method static synthetic access$100(Landroid/webkitsec/WebSettingsClassic;I)V
     .locals 0
-    .param p0    # Landroid/webkitsec/WebSettingsClassic;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/webkitsec/WebSettingsClassic;->nativeSync(I)V
 
@@ -661,8 +656,6 @@
 
 .method static synthetic access$202(Landroid/webkitsec/WebSettingsClassic;Z)Z
     .locals 0
-    .param p0    # Landroid/webkitsec/WebSettingsClassic;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/webkitsec/WebSettingsClassic;->mSyncPending:Z
 
@@ -671,7 +664,6 @@
 
 .method static synthetic access$400(Landroid/webkitsec/WebSettingsClassic;)Landroid/content/Context;
     .locals 1
-    .param p0    # Landroid/webkitsec/WebSettingsClassic;
 
     iget-object v0, p0, Landroid/webkitsec/WebSettingsClassic;->mContext:Landroid/content/Context;
 
@@ -688,7 +680,6 @@
 
 .method static synthetic access$600(Landroid/webkitsec/WebSettingsClassic;)Landroid/webkitsec/WebSettings$RenderPriority;
     .locals 1
-    .param p0    # Landroid/webkitsec/WebSettingsClassic;
 
     iget-object v0, p0, Landroid/webkitsec/WebSettingsClassic;->mRenderPriority:Landroid/webkitsec/WebSettings$RenderPriority;
 
@@ -697,8 +688,6 @@
 
 .method private static addLocaleToHttpAcceptLanguage(Ljava/lang/StringBuilder;Ljava/util/Locale;)V
     .locals 3
-    .param p0    # Ljava/lang/StringBuilder;
-    .param p1    # Ljava/util/Locale;
 
     invoke-virtual {p1}, Ljava/util/Locale;->getLanguage()Ljava/lang/String;
 
@@ -730,7 +719,6 @@
 
 .method private static convertObsoleteLanguageCodeToNew(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     if-nez p0, :cond_1
 
@@ -928,8 +916,6 @@
 
 .method public static getDefaultUserAgentForLocale(Landroid/content/Context;Ljava/util/Locale;)Ljava/lang/String;
     .locals 12
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/util/Locale;
 
     const/4 v11, 0x0
 
@@ -1154,7 +1140,6 @@
 
 .method private pin(I)I
     .locals 2
-    .param p1    # I
 
     const/16 v1, 0x48
 
@@ -1275,7 +1260,6 @@
 
 .method forceSetAdvancedCopyPasteFeature(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/webkitsec/WebSettingsClassic;->mAdvanceTextSelection:Z
 
@@ -2162,7 +2146,6 @@
 
 .method public getProperty(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/webkitsec/WebSettingsClassic;->mWebView:Landroid/webkitsec/WebViewClassic;
 
@@ -2762,7 +2745,6 @@
 
 .method public setActualHeightHack(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Landroid/webkitsec/WebSettingsClassic;->mWebView:Landroid/webkitsec/WebViewClassic;
 
@@ -2773,7 +2755,6 @@
 
 .method public setAdvanceCommands(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/webkitsec/WebSettingsClassic;->mEnableAdvanceCommands:Z
 
@@ -2782,7 +2763,6 @@
 
 .method public setAdvancedCopyPasteFeature(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-boolean v0, p0, Landroid/webkitsec/WebSettingsClassic;->mAdvanceTextSelection:Z
 
@@ -2824,7 +2804,6 @@
 
 .method public setAllowContentAccess(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/webkitsec/WebSettingsClassic;->mAllowContentAccess:Z
 
@@ -2833,7 +2812,6 @@
 
 .method public setAllowFileAccess(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/webkitsec/WebSettingsClassic;->mAllowFileAccess:Z
 
@@ -2842,7 +2820,6 @@
 
 .method public declared-synchronized setAllowFileAccessFromFileURLs(Z)V
     .locals 1
-    .param p1    # Z
 
     monitor-enter p0
 
@@ -2872,7 +2849,6 @@
 
 .method public declared-synchronized setAllowUniversalAccessFromFileURLs(Z)V
     .locals 1
-    .param p1    # Z
 
     monitor-enter p0
 
@@ -2902,7 +2878,6 @@
 
 .method public declared-synchronized setAppCacheEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     monitor-enter p0
 
@@ -2932,7 +2907,6 @@
 
 .method public declared-synchronized setAppCacheMaxSize(J)V
     .locals 2
-    .param p1    # J
 
     monitor-enter p0
 
@@ -2964,7 +2938,6 @@
 
 .method public declared-synchronized setAppCachePath(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -3002,7 +2975,6 @@
 
 .method public declared-synchronized setAutoFillEnabled(Z)V
     .locals 2
-    .param p1    # Z
 
     monitor-enter p0
 
@@ -3046,7 +3018,6 @@
 
 .method public declared-synchronized setAutoFillProfile(Landroid/webkitsec/WebSettingsClassic$AutoFillProfile;)V
     .locals 1
-    .param p1    # Landroid/webkitsec/WebSettingsClassic$AutoFillProfile;
 
     monitor-enter p0
 
@@ -3076,7 +3047,6 @@
 
 .method public declared-synchronized setBlockNetworkImage(Z)V
     .locals 1
-    .param p1    # Z
 
     monitor-enter p0
 
@@ -3106,7 +3076,6 @@
 
 .method public declared-synchronized setBlockNetworkLoads(Z)V
     .locals 1
-    .param p1    # Z
 
     monitor-enter p0
 
@@ -3138,7 +3107,6 @@
 
 .method public setBlockRequestLayout(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Landroid/webkitsec/WebSettingsClassic;->mWebView:Landroid/webkitsec/WebViewClassic;
 
@@ -3149,7 +3117,6 @@
 
 .method setBrowserApp(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/webkitsec/WebSettingsClassic;->mIsBrowserApp:Z
 
@@ -3160,7 +3127,6 @@
 
 .method public setBuiltInZoomControls(Z)V
     .locals 2
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/webkitsec/WebSettingsClassic;->mBuiltInZoomControls:Z
 
@@ -3175,7 +3141,6 @@
 
 .method public setCacheMode(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/webkitsec/WebSettingsClassic;->mOverrideCacheMode:I
 
@@ -3191,7 +3156,6 @@
 
 .method public declared-synchronized setCursiveFontFamily(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -3227,7 +3191,6 @@
 
 .method public declared-synchronized setDatabaseEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     monitor-enter p0
 
@@ -3257,7 +3220,6 @@
 
 .method public declared-synchronized setDatabasePath(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -3293,7 +3255,6 @@
 
 .method public declared-synchronized setDefaultFixedFontSize(I)V
     .locals 1
-    .param p1    # I
 
     monitor-enter p0
 
@@ -3327,7 +3288,6 @@
 
 .method public declared-synchronized setDefaultFontSize(I)V
     .locals 1
-    .param p1    # I
 
     monitor-enter p0
 
@@ -3361,7 +3321,6 @@
 
 .method public declared-synchronized setDefaultTextEncodingName(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -3397,7 +3356,6 @@
 
 .method public setDefaultViewport(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/webkitsec/WebSettingsClassic;->mWebView:Landroid/webkitsec/WebViewClassic;
 
@@ -3408,7 +3366,6 @@
 
 .method public setDefaultZoom(Landroid/webkitsec/WebSettings$ZoomDensity;)V
     .locals 2
-    .param p1    # Landroid/webkitsec/WebSettings$ZoomDensity;
 
     iget-object v0, p0, Landroid/webkitsec/WebSettingsClassic;->mDefaultZoom:Landroid/webkitsec/WebSettings$ZoomDensity;
 
@@ -3428,7 +3385,6 @@
 
 .method public setDesktopMode(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/webkitsec/WebSettingsClassic;->mDeskTopmode:Z
 
@@ -3437,7 +3393,6 @@
 
 .method public setDisableAnimation(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/webkitsec/WebSettingsClassic;->mDisableAnimation:Z
 
@@ -3446,7 +3401,6 @@
 
 .method public setDisableSelection(Z)Z
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/webkitsec/WebSettingsClassic;->mDisableSelection:Z
 
@@ -3455,7 +3409,6 @@
 
 .method public setDisableSetupViewport(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/webkitsec/WebSettingsClassic;->mIsSetupViewportDisabled:Z
 
@@ -3464,7 +3417,6 @@
 
 .method public setDisplayZoomControls(Z)V
     .locals 2
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/webkitsec/WebSettingsClassic;->mDisplayZoomControls:Z
 
@@ -3479,7 +3431,6 @@
 
 .method public declared-synchronized setDomStorageEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     monitor-enter p0
 
@@ -3509,7 +3460,6 @@
 
 .method setDoubleTapToastCount(I)V
     .locals 3
-    .param p1    # I
 
     sget v0, Landroid/webkitsec/WebSettingsClassic;->mDoubleTapToastCount:I
 
@@ -3536,7 +3486,6 @@
 
 .method public setDoubleTapZoom(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/webkitsec/WebSettingsClassic;->mDoubleTapZoom:I
 
@@ -3554,7 +3503,6 @@
 
 .method public setEditableSupport(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/webkitsec/WebSettingsClassic;->mEditableSupport:Z
 
@@ -3563,7 +3511,6 @@
 
 .method public setEmailPreviewMode(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/webkitsec/WebSettingsClassic;->mEmailPreviewMode:Z
 
@@ -3572,7 +3519,6 @@
 
 .method public setEnableDoubleTapBlockZoom(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/webkitsec/WebSettingsClassic;->mEnableDoubleTapBlockZoom:Z
 
@@ -3581,7 +3527,6 @@
 
 .method public setEnableMagnifier(Z)V
     .locals 3
-    .param p1    # Z
 
     const/4 v2, 0x1
 
@@ -3630,7 +3575,6 @@
 
 .method public setEnableSmoothTransition(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/webkitsec/WebSettingsClassic;->mEnableSmoothTransition:Z
 
@@ -3639,7 +3583,6 @@
 
 .method public declared-synchronized setFantasyFontFamily(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -3675,7 +3618,6 @@
 
 .method public declared-synchronized setFileSystemPath(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -3711,7 +3653,6 @@
 
 .method public declared-synchronized setFilesystemEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     monitor-enter p0
 
@@ -3741,7 +3682,6 @@
 
 .method public declared-synchronized setFixedFontFamily(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -3777,7 +3717,6 @@
 
 .method public declared-synchronized setForceUserScalable(Z)V
     .locals 1
-    .param p1    # Z
 
     monitor-enter p0
 
@@ -3800,7 +3739,6 @@
 
 .method public declared-synchronized setGeolocationDatabasePath(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -3836,7 +3774,6 @@
 
 .method public declared-synchronized setGeolocationEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     monitor-enter p0
 
@@ -3866,7 +3803,6 @@
 
 .method public declared-synchronized setHardwareAccelSkiaEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     monitor-enter p0
 
@@ -3896,7 +3832,6 @@
 
 .method public setHighResolutionDevice(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/webkitsec/WebSettingsClassic;->mHighResolutionDevice:Z
 
@@ -3905,7 +3840,6 @@
 
 .method public declared-synchronized setImideoDebugMode(I)V
     .locals 1
-    .param p1    # I
 
     monitor-enter p0
 
@@ -3930,7 +3864,6 @@
 
 .method public declared-synchronized setIsContinousSpellCheck(Z)V
     .locals 1
-    .param p1    # Z
 
     monitor-enter p0
 
@@ -3960,7 +3893,6 @@
 
 .method public declared-synchronized setJavaScriptCanOpenWindowsAutomatically(Z)V
     .locals 1
-    .param p1    # Z
 
     monitor-enter p0
 
@@ -3990,7 +3922,6 @@
 
 .method public declared-synchronized setJavaScriptEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     monitor-enter p0
 
@@ -4024,7 +3955,6 @@
 
 .method public declared-synchronized setLayoutAlgorithm(Landroid/webkitsec/WebSettings$LayoutAlgorithm;)V
     .locals 2
-    .param p1    # Landroid/webkitsec/WebSettings$LayoutAlgorithm;
 
     monitor-enter p0
 
@@ -4070,7 +4000,6 @@
 
 .method public setLightTouchEnabled(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/webkitsec/WebSettingsClassic;->mLightTouchEnabled:Z
 
@@ -4079,7 +4008,6 @@
 
 .method public declared-synchronized setLinkPrefetchEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     monitor-enter p0
 
@@ -4109,7 +4037,6 @@
 
 .method public setLoadWithOverviewMode(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/webkitsec/WebSettingsClassic;->mLoadWithOverviewMode:Z
 
@@ -4118,7 +4045,6 @@
 
 .method public declared-synchronized setLoadsImagesAutomatically(Z)V
     .locals 1
-    .param p1    # Z
 
     monitor-enter p0
 
@@ -4148,7 +4074,6 @@
 
 .method public setMaximumDecodedImageSize(J)V
     .locals 2
-    .param p1    # J
 
     iget-wide v0, p0, Landroid/webkitsec/WebSettingsClassic;->mMaximumDecodedImageSize:J
 
@@ -4166,7 +4091,6 @@
 
 .method public setMediaPlaybackRequiresUserGesture(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-boolean v0, p0, Landroid/webkitsec/WebSettingsClassic;->mMediaPlaybackRequiresUserGesture:Z
 
@@ -4182,7 +4106,6 @@
 
 .method public declared-synchronized setMinimumFontSize(I)V
     .locals 1
-    .param p1    # I
 
     monitor-enter p0
 
@@ -4216,7 +4139,6 @@
 
 .method public declared-synchronized setMinimumLogicalFontSize(I)V
     .locals 1
-    .param p1    # I
 
     monitor-enter p0
 
@@ -4250,7 +4172,6 @@
 
 .method public setNavDump(Z)V
     .locals 0
-    .param p1    # Z
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -4261,7 +4182,6 @@
 
 .method public setNeedInitialFocus(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-boolean v0, p0, Landroid/webkitsec/WebSettingsClassic;->mNeedInitialFocus:Z
 
@@ -4275,7 +4195,6 @@
 
 .method public setNewActionPopup(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/webkitsec/WebSettingsClassic;->mNewActionPopup:Z
 
@@ -4284,7 +4203,6 @@
 
 .method public declared-synchronized setNotificationState(Landroid/webkitsec/WebSettings$NotificationState;)V
     .locals 1
-    .param p1    # Landroid/webkitsec/WebSettings$NotificationState;
 
     monitor-enter p0
 
@@ -4314,7 +4232,6 @@
 
 .method public setOnewayScrollEnabled(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/webkitsec/WebSettingsClassic;->mOnewayScroll:Z
 
@@ -4323,7 +4240,6 @@
 
 .method public declared-synchronized setPageCacheCapacity(I)V
     .locals 1
-    .param p1    # I
 
     monitor-enter p0
 
@@ -4365,7 +4281,6 @@
 
 .method public declared-synchronized setPluginState(Landroid/webkitsec/WebSettings$PluginState;)V
     .locals 1
-    .param p1    # Landroid/webkitsec/WebSettings$PluginState;
 
     monitor-enter p0
 
@@ -4395,7 +4310,6 @@
 
 .method public declared-synchronized setPluginsEnabled(Z)V
     .locals 1
-    .param p1    # Z
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -4433,7 +4347,6 @@
 
 .method public declared-synchronized setPluginsPath(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -4446,7 +4359,6 @@
 
 .method public setPopUpBrowserState(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/webkitsec/WebSettingsClassic;->isPopUpBrowserEnabled:Z
 
@@ -4455,7 +4367,6 @@
 
 .method declared-synchronized setPrivateBrowsingEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     monitor-enter p0
 
@@ -4489,8 +4400,6 @@
 
 .method public setProperty(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/webkitsec/WebSettingsClassic;->mWebView:Landroid/webkitsec/WebViewClassic;
 
@@ -4510,7 +4419,6 @@
 
 .method public declared-synchronized setRenderPriority(Landroid/webkitsec/WebSettings$RenderPriority;)V
     .locals 3
-    .param p1    # Landroid/webkitsec/WebSettings$RenderPriority;
 
     monitor-enter p0
 
@@ -4551,7 +4459,6 @@
 
 .method public declared-synchronized setRssSniffing(Z)V
     .locals 1
-    .param p1    # Z
 
     monitor-enter p0
 
@@ -4581,7 +4488,6 @@
 
 .method public declared-synchronized setSansSerifFontFamily(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -4617,7 +4523,6 @@
 
 .method public setSaveFormData(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/webkitsec/WebSettingsClassic;->mSaveFormData:Z
 
@@ -4626,7 +4531,6 @@
 
 .method public setSavePassword(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/webkitsec/WebSettingsClassic;->mSavePassword:Z
 
@@ -4635,7 +4539,6 @@
 
 .method public setSearchEngineName(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const-string/jumbo v0, "websettings.java"
 
@@ -4668,7 +4571,6 @@
 
 .method public setSelectionBgColor(J)V
     .locals 0
-    .param p1    # J
 
     iput-wide p1, p0, Landroid/webkitsec/WebSettingsClassic;->mAdvanceSelectionBgColor:J
 
@@ -4679,7 +4581,6 @@
 
 .method public setSelectionRemovalPatterns([Ljava/util/regex/Pattern;)V
     .locals 1
-    .param p1    # [Ljava/util/regex/Pattern;
 
     iget-object v0, p0, Landroid/webkitsec/WebSettingsClassic;->mWebView:Landroid/webkitsec/WebViewClassic;
 
@@ -4690,7 +4591,6 @@
 
 .method public declared-synchronized setSerifFontFamily(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -4726,7 +4626,6 @@
 
 .method public declared-synchronized setShowVisualIndicator(Z)V
     .locals 1
-    .param p1    # Z
 
     monitor-enter p0
 
@@ -4756,7 +4655,6 @@
 
 .method public setShrinksStandaloneImagesToFit(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-boolean v0, p0, Landroid/webkitsec/WebSettingsClassic;->mShrinksStandaloneImagesToFit:Z
 
@@ -4772,7 +4670,6 @@
 
 .method setSkiaPictureEnabled(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/webkitsec/WebSettingsClassic;->mIsSkiaPictureEnabled:Z
 
@@ -4783,7 +4680,6 @@
 
 .method setSkipLayoutForHiddenHorizontalText(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/webkitsec/WebSettingsClassic;->mSkipLayoutForHiddenHorizontalText:Z
 
@@ -4794,7 +4690,6 @@
 
 .method public declared-synchronized setStandardFontFamily(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -4830,7 +4725,6 @@
 
 .method public declared-synchronized setSupportMultipleWindows(Z)V
     .locals 1
-    .param p1    # Z
 
     monitor-enter p0
 
@@ -4860,7 +4754,6 @@
 
 .method public setSupportZoom(Z)V
     .locals 2
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/webkitsec/WebSettingsClassic;->mSupportZoom:Z
 
@@ -4875,7 +4768,6 @@
 
 .method declared-synchronized setSyntheticLinksEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     monitor-enter p0
 
@@ -4905,7 +4797,6 @@
 
 .method public declared-synchronized setTextZoom(I)V
     .locals 1
-    .param p1    # I
 
     monitor-enter p0
 
@@ -4935,7 +4826,6 @@
 
 .method public setTitleBarFixed(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/webkitsec/WebSettingsClassic;->mTitleBarFixed:Z
 
@@ -4944,7 +4834,6 @@
 
 .method public declared-synchronized setTouchDebug(Z)V
     .locals 1
-    .param p1    # Z
 
     monitor-enter p0
 
@@ -4982,7 +4871,6 @@
 
 .method public setUseDefaultClipboard(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/webkitsec/WebSettingsClassic;->mUseDefaultClipboard:Z
 
@@ -4991,7 +4879,6 @@
 
 .method public declared-synchronized setUseDoubleTree(Z)V
     .locals 0
-    .param p1    # Z
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -5004,7 +4891,6 @@
 
 .method public declared-synchronized setUseEmailViewPort(Z)V
     .locals 1
-    .param p1    # Z
 
     monitor-enter p0
 
@@ -5036,7 +4922,6 @@
 
 .method public setUseWebViewBackgroundForOverscrollBackground(Z)V
     .locals 0
-    .param p1    # Z
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -5047,7 +4932,6 @@
 
 .method public declared-synchronized setUseWideViewPort(Z)V
     .locals 1
-    .param p1    # Z
 
     monitor-enter p0
 
@@ -5077,7 +4961,6 @@
 
 .method public declared-synchronized setUserAgent(I)V
     .locals 3
-    .param p1    # I
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -5157,7 +5040,6 @@
 
 .method public declared-synchronized setUserAgentString(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -5265,7 +5147,6 @@
 
 .method public declared-synchronized setWOFFEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     monitor-enter p0
 
@@ -5295,7 +5176,6 @@
 
 .method public declared-synchronized setWebGLEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     monitor-enter p0
 
@@ -5325,7 +5205,6 @@
 
 .method public declared-synchronized setWebNotificationDatabasePath(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -5361,7 +5240,6 @@
 
 .method public declared-synchronized setWebnotificationEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     monitor-enter p0
 
@@ -5391,7 +5269,6 @@
 
 .method public declared-synchronized setWorkersEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     monitor-enter p0
 
@@ -5421,7 +5298,6 @@
 
 .method public declared-synchronized setXSSAuditorEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     monitor-enter p0
 
@@ -5481,7 +5357,6 @@
 
 .method declared-synchronized syncSettingsAndCreateHandler(Landroid/webkitsec/BrowserFrame;)V
     .locals 4
-    .param p1    # Landroid/webkitsec/BrowserFrame;
 
     monitor-enter p0
 

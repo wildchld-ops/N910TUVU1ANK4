@@ -74,7 +74,6 @@
 
 .method synthetic constructor <init>(Lcom/android/server/input/PersistentDataStore$1;)V
     .locals 0
-    .param p1    # Lcom/android/server/input/PersistentDataStore$1;
 
     invoke-direct {p0}, Lcom/android/server/input/PersistentDataStore$InputDeviceState;-><init>()V
 
@@ -83,8 +82,6 @@
 
 .method private updateCurrentKeyboardLayoutIfRemoved(Ljava/lang/String;I)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     iget-object v1, p0, Lcom/android/server/input/PersistentDataStore$InputDeviceState;->mCurrentKeyboardLayout:Ljava/lang/String;
 
@@ -141,7 +138,6 @@
 # virtual methods
 .method public addKeyboardLayout(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/server/input/PersistentDataStore$InputDeviceState;->mKeyboardLayouts:Ljava/util/ArrayList;
 
@@ -231,7 +227,6 @@
 
 .method public loadFromXml(Lorg/xmlpull/v1/XmlPullParser;)V
     .locals 6
-    .param p1    # Lorg/xmlpull/v1/XmlPullParser;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -371,7 +366,6 @@
 
 .method public removeKeyboardLayout(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/server/input/PersistentDataStore$InputDeviceState;->mKeyboardLayouts:Ljava/util/ArrayList;
 
@@ -480,7 +474,6 @@
 
 .method public saveToXml(Lorg/xmlpull/v1/XmlSerializer;)V
     .locals 5
-    .param p1    # Lorg/xmlpull/v1/XmlSerializer;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -543,7 +536,6 @@
 
 .method public setCurrentKeyboardLayout(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/server/input/PersistentDataStore$InputDeviceState;->mCurrentKeyboardLayout:Ljava/lang/String;
 
@@ -570,7 +562,6 @@
 
 .method public switchKeyboardLayout(I)Z
     .locals 4
-    .param p1    # I
 
     iget-object v2, p0, Lcom/android/server/input/PersistentDataStore$InputDeviceState;->mKeyboardLayouts:Ljava/util/ArrayList;
 

@@ -51,10 +51,6 @@
 
 .method private execTransact(IIII)Z
     .locals 8
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/4 v7, 0x0
 
@@ -185,7 +181,6 @@
 
 .method public static final isProxy(Landroid/os/IInterface;)Z
     .locals 1
-    .param p0    # Landroid/os/IInterface;
 
     invoke-interface {p0}, Landroid/os/IInterface;->asBinder()Landroid/os/IBinder;
 
@@ -212,7 +207,6 @@
 
 .method public static setDumpDisabled(Ljava/lang/String;)V
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     const-class v1, Landroid/os/Binder;
 
@@ -242,8 +236,6 @@
 # virtual methods
 .method public attachInterface(Landroid/os/IInterface;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Landroid/os/IInterface;
-    .param p2    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/os/Binder;->mOwner:Landroid/os/IInterface;
 
@@ -254,17 +246,12 @@
 
 .method protected dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     return-void
 .end method
 
 .method public dump(Ljava/io/FileDescriptor;[Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # [Ljava/lang/String;
 
     new-instance v2, Ljava/io/FileOutputStream;
 
@@ -377,8 +364,6 @@
 
 .method public dumpAsync(Ljava/io/FileDescriptor;[Ljava/lang/String;)V
     .locals 7
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # [Ljava/lang/String;
 
     new-instance v6, Ljava/io/FileOutputStream;
 
@@ -448,18 +433,12 @@
 
 .method public linkToDeath(Landroid/os/IBinder$DeathRecipient;I)V
     .locals 0
-    .param p1    # Landroid/os/IBinder$DeathRecipient;
-    .param p2    # I
 
     return-void
 .end method
 
 .method protected onTransact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/os/Parcel;
-    .param p3    # Landroid/os/Parcel;
-    .param p4    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -560,7 +539,6 @@
 
 .method public queryLocalInterface(Ljava/lang/String;)Landroid/os/IInterface;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/os/Binder;->mDescriptor:Ljava/lang/String;
 
@@ -583,10 +561,6 @@
 
 .method public final transact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/os/Parcel;
-    .param p3    # Landroid/os/Parcel;
-    .param p4    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -614,8 +588,6 @@
 
 .method public unlinkToDeath(Landroid/os/IBinder$DeathRecipient;I)Z
     .locals 1
-    .param p1    # Landroid/os/IBinder$DeathRecipient;
-    .param p2    # I
 
     const/4 v0, 0x1
 

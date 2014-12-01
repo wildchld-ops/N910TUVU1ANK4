@@ -40,13 +40,6 @@
 # direct methods
 .method constructor <init>(Lcom/touchtype/personalizer/PersonalizerService;ZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V
     .locals 1
-    .param p2    # Z
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Ljava/lang/String;
-    .param p7    # Ljava/lang/String;
-    .param p8    # I
 
     iput-object p1, p0, Lcom/touchtype/personalizer/PersonalizerService$RunPersonalizer;->this$0:Lcom/touchtype/personalizer/PersonalizerService;
 
@@ -77,7 +70,6 @@
 
 .method static synthetic access$000(Lcom/touchtype/personalizer/PersonalizerService$RunPersonalizer;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/touchtype/personalizer/PersonalizerService$RunPersonalizer;
 
     iget-object v0, p0, Lcom/touchtype/personalizer/PersonalizerService$RunPersonalizer;->mServiceName:Ljava/lang/String;
 
@@ -86,7 +78,6 @@
 
 .method static synthetic access$100(Lcom/touchtype/personalizer/PersonalizerService$RunPersonalizer;)I
     .locals 1
-    .param p0    # Lcom/touchtype/personalizer/PersonalizerService$RunPersonalizer;
 
     iget v0, p0, Lcom/touchtype/personalizer/PersonalizerService$RunPersonalizer;->mServiceId:I
 

@@ -26,8 +26,6 @@
 # direct methods
 .method private constructor <init>(Landroid/content/Context;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/server/location/GeoFencerBase;-><init>()V
 
@@ -66,7 +64,6 @@
 
 .method static synthetic access$000(Lcom/android/server/location/GeoFencerProxy;)Landroid/location/IGeoFencer;
     .locals 1
-    .param p0    # Lcom/android/server/location/GeoFencerProxy;
 
     iget-object v0, p0, Lcom/android/server/location/GeoFencerProxy;->mGeoFencer:Landroid/location/IGeoFencer;
 
@@ -75,8 +72,6 @@
 
 .method static synthetic access$002(Lcom/android/server/location/GeoFencerProxy;Landroid/location/IGeoFencer;)Landroid/location/IGeoFencer;
     .locals 0
-    .param p0    # Lcom/android/server/location/GeoFencerProxy;
-    .param p1    # Landroid/location/IGeoFencer;
 
     iput-object p1, p0, Lcom/android/server/location/GeoFencerProxy;->mGeoFencer:Landroid/location/IGeoFencer;
 
@@ -85,8 +80,6 @@
 
 .method static synthetic access$100(Lcom/android/server/location/GeoFencerProxy;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/server/location/GeoFencerProxy;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/location/GeoFencerProxy;->logv(Ljava/lang/String;)V
 
@@ -173,8 +166,6 @@
 
 .method public static getGeoFencerProxy(Landroid/content/Context;Ljava/lang/String;)Lcom/android/server/location/GeoFencerProxy;
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     sget-object v0, Lcom/android/server/location/GeoFencerProxy;->mGeoFencerProxy:Lcom/android/server/location/GeoFencerProxy;
 
@@ -194,7 +185,6 @@
 
 .method private logv(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "GeoFencerProxy"
 
@@ -207,7 +197,6 @@
 # virtual methods
 .method public removeCaller(I)V
     .locals 2
-    .param p1    # I
 
     invoke-super {p0, p1}, Lcom/android/server/location/GeoFencerBase;->removeCaller(I)V
 
@@ -242,7 +231,6 @@
 
 .method protected start(Landroid/location/GeoFenceParams;)Z
     .locals 2
-    .param p1    # Landroid/location/GeoFenceParams;
 
     invoke-direct {p0}, Lcom/android/server/location/GeoFencerProxy;->ensureGeoFencer()Z
 
@@ -275,7 +263,6 @@
 
 .method protected stop(Landroid/app/PendingIntent;)Z
     .locals 2
-    .param p1    # Landroid/app/PendingIntent;
 
     invoke-direct {p0}, Lcom/android/server/location/GeoFencerProxy;->ensureGeoFencer()Z
 

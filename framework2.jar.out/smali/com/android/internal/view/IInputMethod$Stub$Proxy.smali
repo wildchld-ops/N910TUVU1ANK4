@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -45,7 +44,6 @@
 
 .method public attachToken(Landroid/os/IBinder;)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -89,7 +87,6 @@
 
 .method public bindInput(Landroid/view/inputmethod/InputBinding;)V
     .locals 5
-    .param p1    # Landroid/view/inputmethod/InputBinding;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -152,7 +149,6 @@
 
 .method public changeInputMethodSubtype(Landroid/view/inputmethod/InputMethodSubtype;)V
     .locals 5
-    .param p1    # Landroid/view/inputmethod/InputMethodSubtype;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -215,8 +211,6 @@
 
 .method public createSession(Landroid/view/InputChannel;Lcom/android/internal/view/IInputSessionCallback;)V
     .locals 5
-    .param p1    # Landroid/view/InputChannel;
-    .param p2    # Lcom/android/internal/view/IInputSessionCallback;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -298,8 +292,6 @@
 
 .method public hideSoftInput(ILandroid/os/ResultReceiver;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/os/ResultReceiver;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -364,8 +356,6 @@
 
 .method public restartInput(Lcom/android/internal/view/IInputContext;Landroid/view/inputmethod/EditorInfo;)V
     .locals 5
-    .param p1    # Lcom/android/internal/view/IInputContext;
-    .param p2    # Landroid/view/inputmethod/EditorInfo;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -439,7 +429,6 @@
 
 .method public revokeSession(Lcom/android/internal/view/IInputMethodSession;)V
     .locals 5
-    .param p1    # Lcom/android/internal/view/IInputMethodSession;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -492,8 +481,6 @@
 
 .method public setSessionEnabled(Lcom/android/internal/view/IInputMethodSession;Z)V
     .locals 5
-    .param p1    # Lcom/android/internal/view/IInputMethodSession;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -558,8 +545,6 @@
 
 .method public showSoftInput(ILandroid/os/ResultReceiver;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/os/ResultReceiver;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -624,8 +609,6 @@
 
 .method public startInput(Lcom/android/internal/view/IInputContext;Landroid/view/inputmethod/EditorInfo;)V
     .locals 5
-    .param p1    # Lcom/android/internal/view/IInputContext;
-    .param p2    # Landroid/view/inputmethod/EditorInfo;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -740,7 +723,6 @@
 
 .method public updateFloatingState(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -784,7 +766,6 @@
 
 .method public updateWacomState(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

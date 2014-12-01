@@ -62,15 +62,6 @@
 
 .method public constructor <init>(JLjava/lang/String;Ljava/lang/String;Ljava/lang/String;JIIII)V
     .locals 0
-    .param p1    # J
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # J
-    .param p8    # I
-    .param p9    # I
-    .param p10    # I
-    .param p11    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -171,7 +162,6 @@
 
 .method public setAddress(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/mms/saverestore/SavedSmsMessage;->mAddress:Ljava/lang/String;
 
@@ -180,7 +170,6 @@
 
 .method public setBody(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/mms/saverestore/SavedSmsMessage;->mBody:Ljava/lang/String;
 
@@ -189,7 +178,6 @@
 
 .method public setCanonicalAddress(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/mms/saverestore/SavedSmsMessage;->mCanonicalAddress:Ljava/lang/String;
 
@@ -198,7 +186,6 @@
 
 .method public setDate(J)V
     .locals 0
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/android/mms/saverestore/SavedSmsMessage;->mDate:J
 
@@ -207,7 +194,6 @@
 
 .method public setID(J)V
     .locals 0
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/android/mms/saverestore/SavedSmsMessage;->mId:J
 
@@ -216,7 +202,6 @@
 
 .method public setLocked(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/mms/saverestore/SavedSmsMessage;->mLocked:I
 
@@ -225,7 +210,6 @@
 
 .method public setRead(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/mms/saverestore/SavedSmsMessage;->mRead:I
 
@@ -234,7 +218,6 @@
 
 .method public setTotalCount(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/mms/saverestore/SavedSmsMessage;->mTotalCount:I
 
@@ -243,7 +226,6 @@
 
 .method public setType(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/mms/saverestore/SavedSmsMessage;->mType:I
 

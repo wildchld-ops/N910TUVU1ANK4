@@ -26,7 +26,6 @@
 # direct methods
 .method constructor <init>(Lcom/sec/epdg/smartwifi/SmartWifiAdapter;I)V
     .locals 0
-    .param p2    # I
 
     iput-object p1, p0, Lcom/sec/epdg/smartwifi/SmartWifiAdapter$LteToWifiCallable;->this$0:Lcom/sec/epdg/smartwifi/SmartWifiAdapter;
 

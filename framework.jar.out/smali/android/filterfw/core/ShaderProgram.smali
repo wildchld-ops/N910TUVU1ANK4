@@ -42,8 +42,6 @@
 
 .method public constructor <init>(Landroid/filterfw/core/FilterContext;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Landroid/filterfw/core/FilterContext;
-    .param p2    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -87,9 +85,6 @@
 
 .method public constructor <init>(Landroid/filterfw/core/FilterContext;Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Landroid/filterfw/core/FilterContext;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0}, Landroid/filterfw/core/Program;-><init>()V
 
@@ -133,7 +128,6 @@
 
 .method private constructor <init>(Landroid/filterfw/core/NativeAllocatorTag;)V
     .locals 1
-    .param p1    # Landroid/filterfw/core/NativeAllocatorTag;
 
     invoke-direct {p0}, Landroid/filterfw/core/Program;-><init>()V
 
@@ -159,7 +153,6 @@
 
 .method public static createIdentity(Landroid/filterfw/core/FilterContext;)Landroid/filterfw/core/ShaderProgram;
     .locals 2
-    .param p0    # Landroid/filterfw/core/FilterContext;
 
     invoke-static {p0}, Landroid/filterfw/core/ShaderProgram;->getGLEnvironment(Landroid/filterfw/core/FilterContext;)Landroid/filterfw/core/GLEnvironment;
 
@@ -179,7 +172,6 @@
 
 .method private static getGLEnvironment(Landroid/filterfw/core/FilterContext;)Landroid/filterfw/core/GLEnvironment;
     .locals 3
-    .param p0    # Landroid/filterfw/core/FilterContext;
 
     if-eqz p0, :cond_0
 
@@ -307,7 +299,6 @@
 
 .method public getHostValue(Ljava/lang/String;)Ljava/lang/Object;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Landroid/filterfw/core/ShaderProgram;->getUniformValue(Ljava/lang/String;)Ljava/lang/Object;
 
@@ -318,8 +309,6 @@
 
 .method public process([Landroid/filterfw/core/Frame;Landroid/filterfw/core/Frame;)V
     .locals 8
-    .param p1    # [Landroid/filterfw/core/Frame;
-    .param p2    # Landroid/filterfw/core/Frame;
 
     iget-object v5, p0, Landroid/filterfw/core/ShaderProgram;->mTimer:Landroid/filterfw/core/StopWatchMap;
 
@@ -492,13 +481,6 @@
 
 .method public setAttributeValues(Ljava/lang/String;Landroid/filterfw/core/VertexFrame;IIIIZ)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/filterfw/core/VertexFrame;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # Z
 
     invoke-direct/range {p0 .. p7}, Landroid/filterfw/core/ShaderProgram;->setShaderAttributeVertexFrame(Ljava/lang/String;Landroid/filterfw/core/VertexFrame;IIIIZ)Z
 
@@ -542,9 +524,6 @@
 
 .method public setAttributeValues(Ljava/lang/String;[FI)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # [F
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Landroid/filterfw/core/ShaderProgram;->setShaderAttributeValues(Ljava/lang/String;[FI)Z
 
@@ -588,7 +567,6 @@
 
 .method public setBlendEnabled(Z)V
     .locals 3
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Landroid/filterfw/core/ShaderProgram;->setShaderBlendEnabled(Z)Z
 
@@ -632,8 +610,6 @@
 
 .method public setBlendFunc(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Landroid/filterfw/core/ShaderProgram;->setShaderBlendFunc(II)Z
 
@@ -687,9 +663,6 @@
 
 .method public setClearColor(FFF)V
     .locals 3
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
 
     invoke-direct {p0, p1, p2, p3}, Landroid/filterfw/core/ShaderProgram;->setShaderClearColor(FFF)Z
 
@@ -753,7 +726,6 @@
 
 .method public setClearsOutput(Z)V
     .locals 3
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Landroid/filterfw/core/ShaderProgram;->setShaderClearsOutput(Z)Z
 
@@ -797,7 +769,6 @@
 
 .method public setDrawMode(I)V
     .locals 3
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/filterfw/core/ShaderProgram;->setShaderDrawMode(I)Z
 
@@ -841,8 +812,6 @@
 
 .method public setHostValue(Ljava/lang/String;Ljava/lang/Object;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Object;
 
     invoke-direct {p0, p1, p2}, Landroid/filterfw/core/ShaderProgram;->setUniformValue(Ljava/lang/String;Ljava/lang/Object;)Z
 
@@ -886,7 +855,6 @@
 
 .method public setMaximumTileSize(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/filterfw/core/ShaderProgram;->mMaxTileSize:I
 
@@ -895,10 +863,6 @@
 
 .method public setSourceRect(FFFF)V
     .locals 9
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
 
     add-float v3, p1, p3
 
@@ -925,7 +889,6 @@
 
 .method public setSourceRegion(Landroid/filterfw/geometry/Quad;)V
     .locals 9
-    .param p1    # Landroid/filterfw/geometry/Quad;
 
     iget-object v0, p1, Landroid/filterfw/geometry/Quad;->p0:Landroid/filterfw/geometry/Point;
 
@@ -971,10 +934,6 @@
 
 .method public setTargetRect(FFFF)V
     .locals 9
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
 
     add-float v3, p1, p3
 
@@ -1001,7 +960,6 @@
 
 .method public setTargetRegion(Landroid/filterfw/geometry/Quad;)V
     .locals 9
-    .param p1    # Landroid/filterfw/geometry/Quad;
 
     iget-object v0, p1, Landroid/filterfw/geometry/Quad;->p0:Landroid/filterfw/geometry/Point;
 
@@ -1044,7 +1002,6 @@
 
 .method public setVertexCount(I)V
     .locals 3
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/filterfw/core/ShaderProgram;->setShaderVertexCount(I)Z
 

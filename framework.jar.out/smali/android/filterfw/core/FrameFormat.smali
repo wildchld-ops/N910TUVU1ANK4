@@ -82,8 +82,6 @@
 
 .method public constructor <init>(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     const/4 v1, 0x0
 
@@ -112,7 +110,6 @@
 
 .method public static baseTypeToString(I)Ljava/lang/String;
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -184,7 +181,6 @@
 
 .method public static bytesPerSampleOf(I)I
     .locals 1
-    .param p0    # I
 
     const/4 v0, 0x1
 
@@ -223,7 +219,6 @@
 
 .method public static dimensionsToString([I)Ljava/lang/String;
     .locals 5
-    .param p0    # [I
 
     new-instance v0, Ljava/lang/StringBuffer;
 
@@ -310,7 +305,6 @@
 
 .method public static metaDataToString(Landroid/filterfw/core/KeyValueMap;)Ljava/lang/String;
     .locals 5
-    .param p0    # Landroid/filterfw/core/KeyValueMap;
 
     if-nez p0, :cond_0
 
@@ -405,7 +399,6 @@
 
 .method public static readTargetString(Ljava/lang/String;)I
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "CPU"
 
@@ -515,7 +508,6 @@
 
 .method public static targetToString(I)Ljava/lang/String;
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -583,7 +575,6 @@
 # virtual methods
 .method calcSize([I)I
     .locals 6
-    .param p1    # [I
 
     if-eqz p1, :cond_0
 
@@ -621,7 +612,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 5
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x1
 
@@ -739,7 +729,6 @@
 
 .method public getDimension(I)I
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/filterfw/core/FrameFormat;->mDimensions:[I
 
@@ -838,7 +827,6 @@
 
 .method public getMetaValue(Ljava/lang/String;)Ljava/lang/Object;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/filterfw/core/FrameFormat;->mMetaData:Landroid/filterfw/core/KeyValueMap;
 
@@ -946,7 +934,6 @@
 
 .method public hasMetaKey(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/filterfw/core/FrameFormat;->mMetaData:Landroid/filterfw/core/KeyValueMap;
 
@@ -969,8 +956,6 @@
 
 .method public hasMetaKey(Ljava/lang/String;Ljava/lang/Class;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Class;
 
     iget-object v0, p0, Landroid/filterfw/core/FrameFormat;->mMetaData:Landroid/filterfw/core/KeyValueMap;
 
@@ -1118,7 +1103,6 @@
 
 .method public isCompatibleWith(Landroid/filterfw/core/FrameFormat;)Z
     .locals 8
-    .param p1    # Landroid/filterfw/core/FrameFormat;
 
     const/4 v5, 0x1
 
@@ -1317,7 +1301,6 @@
 
 .method isReplaceableBy(Landroid/filterfw/core/FrameFormat;)Z
     .locals 2
-    .param p1    # Landroid/filterfw/core/FrameFormat;
 
     iget v0, p0, Landroid/filterfw/core/FrameFormat;->mTarget:I
 
@@ -1358,7 +1341,6 @@
 
 .method public mayBeCompatibleWith(Landroid/filterfw/core/FrameFormat;)Z
     .locals 8
-    .param p1    # Landroid/filterfw/core/FrameFormat;
 
     const/4 v5, 0x1
 

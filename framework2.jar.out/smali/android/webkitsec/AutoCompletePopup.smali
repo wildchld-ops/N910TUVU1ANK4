@@ -47,8 +47,6 @@
 # direct methods
 .method public constructor <init>(Landroid/webkitsec/WebViewClassic;Landroid/webkitsec/WebViewClassic$WebViewInputConnection;)V
     .locals 1
-    .param p1    # Landroid/webkitsec/WebViewClassic;
-    .param p2    # Landroid/webkitsec/WebViewClassic$WebViewInputConnection;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -71,7 +69,6 @@
 
 .method static synthetic access$000(Landroid/webkitsec/AutoCompletePopup;)I
     .locals 1
-    .param p0    # Landroid/webkitsec/AutoCompletePopup;
 
     iget v0, p0, Landroid/webkitsec/AutoCompletePopup;->mQueryId:I
 
@@ -80,7 +77,6 @@
 
 .method static synthetic access$100(Landroid/webkitsec/AutoCompletePopup;)Landroid/webkitsec/WebViewClassic;
     .locals 1
-    .param p0    # Landroid/webkitsec/AutoCompletePopup;
 
     iget-object v0, p0, Landroid/webkitsec/AutoCompletePopup;->mWebView:Landroid/webkitsec/WebViewClassic;
 
@@ -286,7 +282,6 @@
 
 .method public onFilterComplete(I)V
     .locals 4
-    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -365,9 +360,6 @@
 
 .method public onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
     .locals 4
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -492,8 +484,6 @@
 
 .method public onKeyPreIme(ILandroid/view/KeyEvent;)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v1, 0x0
 
@@ -786,7 +776,6 @@
 
 .method public setAutoFillQueryId(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/webkitsec/AutoCompletePopup;->mQueryId:I
 
@@ -795,7 +784,6 @@
 
 .method public setIsAutoFillProfileSet(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/webkitsec/AutoCompletePopup;->mIsAutoFillProfileSet:Z
 
@@ -804,7 +792,6 @@
 
 .method public setText(Ljava/lang/CharSequence;)V
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v0, 0x1
 

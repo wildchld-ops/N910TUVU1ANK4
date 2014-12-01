@@ -104,8 +104,6 @@
 
 .method private static adjust(Landroid/text/Spannable;Ljava/lang/Object;)V
     .locals 3
-    .param p0    # Landroid/text/Spannable;
-    .param p1    # Ljava/lang/Object;
 
     const/4 v2, 0x0
 
@@ -137,7 +135,6 @@
 
 .method public static adjustMetaAfterKeypress(J)J
     .locals 10
-    .param p0    # J
 
     const-wide v2, -0x1010100000102L
 
@@ -251,7 +248,6 @@
 
 .method public static adjustMetaAfterKeypress(Landroid/text/Spannable;)V
     .locals 1
-    .param p0    # Landroid/text/Spannable;
 
     sget-object v0, Landroid/text/method/MetaKeyKeyListener;->CAP:Ljava/lang/Object;
 
@@ -270,8 +266,6 @@
 
 .method public static clearMetaKeyState(Landroid/text/Editable;I)V
     .locals 1
-    .param p0    # Landroid/text/Editable;
-    .param p1    # I
 
     and-int/lit8 v0, p1, 0x1
 
@@ -314,10 +308,6 @@
 
 .method private static getActive(Ljava/lang/CharSequence;Ljava/lang/Object;II)I
     .locals 4
-    .param p0    # Ljava/lang/CharSequence;
-    .param p1    # Ljava/lang/Object;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v2, 0x0
 
@@ -358,7 +348,6 @@
 
 .method public static final getMetaState(J)I
     .locals 5
-    .param p0    # J
 
     const-wide/16 v3, 0x0
 
@@ -444,8 +433,6 @@
 
 .method public static final getMetaState(JI)I
     .locals 7
-    .param p0    # J
-    .param p2    # I
 
     const/4 v0, 0x2
 
@@ -553,7 +540,6 @@
 
 .method public static final getMetaState(Ljava/lang/CharSequence;)I
     .locals 5
-    .param p0    # Ljava/lang/CharSequence;
 
     const/16 v4, 0x800
 
@@ -604,8 +590,6 @@
 
 .method public static final getMetaState(Ljava/lang/CharSequence;I)I
     .locals 3
-    .param p0    # Ljava/lang/CharSequence;
-    .param p1    # I
 
     const/4 v2, 0x2
 
@@ -667,9 +651,6 @@
 
 .method public static final getMetaState(Ljava/lang/CharSequence;ILandroid/view/KeyEvent;)I
     .locals 3
-    .param p0    # Ljava/lang/CharSequence;
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v1, 0x1
 
@@ -722,8 +703,6 @@
 
 .method public static final getMetaState(Ljava/lang/CharSequence;Landroid/view/KeyEvent;)I
     .locals 3
-    .param p0    # Ljava/lang/CharSequence;
-    .param p1    # Landroid/view/KeyEvent;
 
     invoke-virtual {p1}, Landroid/view/KeyEvent;->getMetaState()I
 
@@ -753,9 +732,6 @@
 
 .method public static handleKeyDown(JILandroid/view/KeyEvent;)J
     .locals 13
-    .param p0    # J
-    .param p2    # I
-    .param p3    # Landroid/view/KeyEvent;
 
     const/16 v0, 0x3b
 
@@ -850,9 +826,6 @@
 
 .method public static handleKeyUp(JILandroid/view/KeyEvent;)J
     .locals 12
-    .param p0    # J
-    .param p2    # I
-    .param p3    # Landroid/view/KeyEvent;
 
     const/16 v0, 0x3b
 
@@ -947,8 +920,6 @@
 
 .method public static isMetaTracker(Ljava/lang/CharSequence;Ljava/lang/Object;)Z
     .locals 1
-    .param p0    # Ljava/lang/CharSequence;
-    .param p1    # Ljava/lang/Object;
 
     sget-object v0, Landroid/text/method/MetaKeyKeyListener;->CAP:Ljava/lang/Object;
 
@@ -980,8 +951,6 @@
 
 .method public static isSelectingMetaTracker(Ljava/lang/CharSequence;Ljava/lang/Object;)Z
     .locals 1
-    .param p0    # Ljava/lang/CharSequence;
-    .param p1    # Ljava/lang/Object;
 
     sget-object v0, Landroid/text/method/MetaKeyKeyListener;->SELECTING:Ljava/lang/Object;
 
@@ -1000,13 +969,6 @@
 
 .method private static press(JIJJJJJ)J
     .locals 4
-    .param p0    # J
-    .param p2    # I
-    .param p3    # J
-    .param p5    # J
-    .param p7    # J
-    .param p9    # J
-    .param p11    # J
 
     and-long v0, p0, p7
 
@@ -1080,8 +1042,6 @@
 
 .method private press(Landroid/text/Editable;Ljava/lang/Object;)V
     .locals 5
-    .param p1    # Landroid/text/Editable;
-    .param p2    # Ljava/lang/Object;
 
     const v4, 0x4000011
 
@@ -1127,13 +1087,6 @@
 
 .method private static release(JIJJJJLandroid/view/KeyEvent;)J
     .locals 4
-    .param p0    # J
-    .param p2    # I
-    .param p3    # J
-    .param p5    # J
-    .param p7    # J
-    .param p9    # J
-    .param p11    # Landroid/view/KeyEvent;
 
     invoke-virtual {p11}, Landroid/view/KeyEvent;->getKeyCharacterMap()Landroid/view/KeyCharacterMap;
 
@@ -1199,9 +1152,6 @@
 
 .method private release(Landroid/text/Editable;Ljava/lang/Object;Landroid/view/KeyEvent;)V
     .locals 3
-    .param p1    # Landroid/text/Editable;
-    .param p2    # Ljava/lang/Object;
-    .param p3    # Landroid/view/KeyEvent;
 
     const/4 v2, 0x0
 
@@ -1255,8 +1205,6 @@
 
 .method private static resetLock(Landroid/text/Spannable;Ljava/lang/Object;)V
     .locals 2
-    .param p0    # Landroid/text/Spannable;
-    .param p1    # Ljava/lang/Object;
 
     invoke-interface {p0, p1}, Landroid/text/Spannable;->getSpanFlags(Ljava/lang/Object;)I
 
@@ -1274,7 +1222,6 @@
 
 .method public static resetLockedMeta(J)J
     .locals 4
-    .param p0    # J
 
     const-wide/16 v2, 0x0
 
@@ -1322,7 +1269,6 @@
 
 .method protected static resetLockedMeta(Landroid/text/Spannable;)V
     .locals 1
-    .param p0    # Landroid/text/Spannable;
 
     sget-object v0, Landroid/text/method/MetaKeyKeyListener;->CAP:Ljava/lang/Object;
 
@@ -1345,7 +1291,6 @@
 
 .method public static resetMetaState(Landroid/text/Spannable;)V
     .locals 1
-    .param p0    # Landroid/text/Spannable;
 
     sget-object v0, Landroid/text/method/MetaKeyKeyListener;->CAP:Ljava/lang/Object;
 
@@ -1368,8 +1313,6 @@
 
 .method public static startSelecting(Landroid/view/View;Landroid/text/Spannable;)V
     .locals 3
-    .param p0    # Landroid/view/View;
-    .param p1    # Landroid/text/Spannable;
 
     const/4 v2, 0x0
 
@@ -1384,8 +1327,6 @@
 
 .method public static stopSelecting(Landroid/view/View;Landroid/text/Spannable;)V
     .locals 1
-    .param p0    # Landroid/view/View;
-    .param p1    # Landroid/text/Spannable;
 
     sget-object v0, Landroid/text/method/MetaKeyKeyListener;->SELECTING:Ljava/lang/Object;
 
@@ -1398,8 +1339,6 @@
 # virtual methods
 .method public clearMetaKeyState(JI)J
     .locals 4
-    .param p1    # J
-    .param p3    # I
 
     const-wide/16 v2, 0x0
 
@@ -1459,9 +1398,6 @@
 
 .method public clearMetaKeyState(Landroid/view/View;Landroid/text/Editable;I)V
     .locals 0
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/text/Editable;
-    .param p3    # I
 
     invoke-static {p2, p3}, Landroid/text/method/MetaKeyKeyListener;->clearMetaKeyState(Landroid/text/Editable;I)V
 
@@ -1470,10 +1406,6 @@
 
 .method public onKeyDown(Landroid/view/View;Landroid/text/Editable;ILandroid/view/KeyEvent;)Z
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/text/Editable;
-    .param p3    # I
-    .param p4    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x1
 
@@ -1532,10 +1464,6 @@
 
 .method public onKeyUp(Landroid/view/View;Landroid/text/Editable;ILandroid/view/KeyEvent;)Z
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/text/Editable;
-    .param p3    # I
-    .param p4    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x1
 

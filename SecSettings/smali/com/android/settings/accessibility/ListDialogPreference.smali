@@ -32,8 +32,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/preference/DialogPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -42,8 +40,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/accessibility/ListDialogPreference;Ljava/lang/Object;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/ListDialogPreference;
-    .param p1    # Ljava/lang/Object;
 
     invoke-virtual {p0, p1}, Landroid/preference/Preference;->callChangeListener(Ljava/lang/Object;)Z
 
@@ -54,7 +50,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/accessibility/ListDialogPreference;)[I
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/ListDialogPreference;
 
     iget-object v0, p0, Lcom/android/settings/accessibility/ListDialogPreference;->mEntryValues:[I
 
@@ -63,7 +58,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/accessibility/ListDialogPreference;)I
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/ListDialogPreference;
 
     iget v0, p0, Lcom/android/settings/accessibility/ListDialogPreference;->mListItemLayout:I
 
@@ -74,7 +68,6 @@
 # virtual methods
 .method protected getIndexForValue(I)I
     .locals 4
-    .param p1    # I
 
     iget-object v2, p0, Lcom/android/settings/accessibility/ListDialogPreference;->mEntryValues:[I
 
@@ -127,7 +120,6 @@
 
 .method protected getTitleAt(I)Ljava/lang/CharSequence;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/settings/accessibility/ListDialogPreference;->mEntryTitles:[Ljava/lang/CharSequence;
 
@@ -163,7 +155,6 @@
 
 .method protected getValueAt(I)I
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/settings/accessibility/ListDialogPreference;->mEntryValues:[I
 
@@ -177,8 +168,6 @@
 
 .method protected onGetDefaultValue(Landroid/content/res/TypedArray;I)Ljava/lang/Object;
     .locals 1
-    .param p1    # Landroid/content/res/TypedArray;
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -195,7 +184,6 @@
 
 .method protected onPrepareDialogBuilder(Landroid/app/AlertDialog$Builder;)V
     .locals 8
-    .param p1    # Landroid/app/AlertDialog$Builder;
 
     const/4 v7, 0x0
 
@@ -330,8 +318,6 @@
 
 .method protected onSetInitialValue(ZLjava/lang/Object;)V
     .locals 1
-    .param p1    # Z
-    .param p2    # Ljava/lang/Object;
 
     if-eqz p1, :cond_0
 
@@ -367,7 +353,6 @@
 
 .method public setListItemLayoutResource(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/settings/accessibility/ListDialogPreference;->mListItemLayout:I
 
@@ -376,7 +361,6 @@
 
 .method public setOnValueChangedListener(Lcom/android/settings/accessibility/ListDialogPreference$OnValueChangedListener;)V
     .locals 0
-    .param p1    # Lcom/android/settings/accessibility/ListDialogPreference$OnValueChangedListener;
 
     iput-object p1, p0, Lcom/android/settings/accessibility/ListDialogPreference;->mOnValueChangedListener:Lcom/android/settings/accessibility/ListDialogPreference$OnValueChangedListener;
 
@@ -385,7 +369,6 @@
 
 .method public setTitles([Ljava/lang/CharSequence;)V
     .locals 0
-    .param p1    # [Ljava/lang/CharSequence;
 
     iput-object p1, p0, Lcom/android/settings/accessibility/ListDialogPreference;->mEntryTitles:[Ljava/lang/CharSequence;
 
@@ -394,7 +377,6 @@
 
 .method public setValue(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -454,7 +436,6 @@
 
 .method public setValues([I)V
     .locals 0
-    .param p1    # [I
 
     iput-object p1, p0, Lcom/android/settings/accessibility/ListDialogPreference;->mEntryValues:[I
 

@@ -23,7 +23,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/enterprise/application/ApplicationPolicy;I)V
     .locals 1
-    .param p2    # I
 
     iput-object p1, p0, Lcom/android/server/enterprise/application/ApplicationPolicy$PersonaObserver;->this$0:Lcom/android/server/enterprise/application/ApplicationPolicy;
 
@@ -40,7 +39,6 @@
 
 .method static synthetic access$1800(Lcom/android/server/enterprise/application/ApplicationPolicy$PersonaObserver;)I
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/application/ApplicationPolicy$PersonaObserver;
 
     iget v0, p0, Lcom/android/server/enterprise/application/ApplicationPolicy$PersonaObserver;->mContainerId:I
 
@@ -75,7 +73,6 @@
 
 .method public onKeyGuardStateChanged(Z)V
     .locals 2
-    .param p1    # Z
 
     const-string v0, "ApplicationPolicy"
 
@@ -112,8 +109,6 @@
 
 .method public onStateChange(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     const-string v0, "ApplicationPolicy"
 

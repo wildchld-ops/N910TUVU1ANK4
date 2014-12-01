@@ -237,7 +237,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/template/TextTemplateListActivity;)V
     .locals 0
-    .param p0    # Lcom/android/mms/template/TextTemplateListActivity;
 
     invoke-direct {p0}, Lcom/android/mms/template/TextTemplateListActivity;->UpdateQuery()V
 
@@ -246,7 +245,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/template/TextTemplateListActivity;)V
     .locals 0
-    .param p0    # Lcom/android/mms/template/TextTemplateListActivity;
 
     invoke-direct {p0}, Lcom/android/mms/template/TextTemplateListActivity;->updateActionBarTitle()V
 
@@ -255,7 +253,6 @@
 
 .method static synthetic access$1000(Lcom/android/mms/template/TextTemplateListActivity;)Lcom/android/mms/template/TextTemplateListAdapter;
     .locals 1
-    .param p0    # Lcom/android/mms/template/TextTemplateListActivity;
 
     iget-object v0, p0, Lcom/android/mms/template/TextTemplateListActivity;->mListAdapter:Lcom/android/mms/template/TextTemplateListAdapter;
 
@@ -264,7 +261,6 @@
 
 .method static synthetic access$1100(Lcom/android/mms/template/TextTemplateListActivity;)Lcom/android/mms/template/TextTemplateProvider;
     .locals 1
-    .param p0    # Lcom/android/mms/template/TextTemplateListActivity;
 
     iget-object v0, p0, Lcom/android/mms/template/TextTemplateListActivity;->mTextTemplateProvider:Lcom/android/mms/template/TextTemplateProvider;
 
@@ -273,8 +269,6 @@
 
 .method static synthetic access$1200(Lcom/android/mms/template/TextTemplateListActivity;Z)V
     .locals 0
-    .param p0    # Lcom/android/mms/template/TextTemplateListActivity;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/mms/template/TextTemplateListActivity;->setMode(Z)V
 
@@ -283,7 +277,6 @@
 
 .method static synthetic access$1300(Lcom/android/mms/template/TextTemplateListActivity;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/mms/template/TextTemplateListActivity;
 
     iget-object v0, p0, Lcom/android/mms/template/TextTemplateListActivity;->mContext:Landroid/content/Context;
 
@@ -292,7 +285,6 @@
 
 .method static synthetic access$1400(Lcom/android/mms/template/TextTemplateListActivity;)Landroid/widget/ListView;
     .locals 1
-    .param p0    # Lcom/android/mms/template/TextTemplateListActivity;
 
     iget-object v0, p0, Lcom/android/mms/template/TextTemplateListActivity;->mListView:Landroid/widget/ListView;
 
@@ -301,7 +293,6 @@
 
 .method static synthetic access$1500(Lcom/android/mms/template/TextTemplateListActivity;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/android/mms/template/TextTemplateListActivity;
 
     iget-object v0, p0, Lcom/android/mms/template/TextTemplateListActivity;->mActionbarTitle:Landroid/widget/TextView;
 
@@ -310,8 +301,6 @@
 
 .method static synthetic access$1502(Lcom/android/mms/template/TextTemplateListActivity;Landroid/widget/TextView;)Landroid/widget/TextView;
     .locals 0
-    .param p0    # Lcom/android/mms/template/TextTemplateListActivity;
-    .param p1    # Landroid/widget/TextView;
 
     iput-object p1, p0, Lcom/android/mms/template/TextTemplateListActivity;->mActionbarTitle:Landroid/widget/TextView;
 
@@ -320,7 +309,6 @@
 
 .method static synthetic access$1600(Lcom/android/mms/template/TextTemplateListActivity;)Landroid/widget/Button;
     .locals 1
-    .param p0    # Lcom/android/mms/template/TextTemplateListActivity;
 
     iget-object v0, p0, Lcom/android/mms/template/TextTemplateListActivity;->mSelectedButton:Landroid/widget/Button;
 
@@ -329,8 +317,6 @@
 
 .method static synthetic access$1602(Lcom/android/mms/template/TextTemplateListActivity;Landroid/widget/Button;)Landroid/widget/Button;
     .locals 0
-    .param p0    # Lcom/android/mms/template/TextTemplateListActivity;
-    .param p1    # Landroid/widget/Button;
 
     iput-object p1, p0, Lcom/android/mms/template/TextTemplateListActivity;->mSelectedButton:Landroid/widget/Button;
 
@@ -339,7 +325,6 @@
 
 .method static synthetic access$1700(Lcom/android/mms/template/TextTemplateListActivity;)Landroid/widget/LinearLayout;
     .locals 1
-    .param p0    # Lcom/android/mms/template/TextTemplateListActivity;
 
     iget-object v0, p0, Lcom/android/mms/template/TextTemplateListActivity;->mSelectAll:Landroid/widget/LinearLayout;
 
@@ -348,8 +333,6 @@
 
 .method static synthetic access$1800(Lcom/android/mms/template/TextTemplateListActivity;I)V
     .locals 0
-    .param p0    # Lcom/android/mms/template/TextTemplateListActivity;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/mms/template/TextTemplateListActivity;->setTextTemplateSelector(I)V
 
@@ -358,7 +341,6 @@
 
 .method static synthetic access$1900(Lcom/android/mms/template/TextTemplateListActivity;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/template/TextTemplateListActivity;
 
     iget-boolean v0, p0, Lcom/android/mms/template/TextTemplateListActivity;->mIsSelectAllmode:Z
 
@@ -367,8 +349,6 @@
 
 .method static synthetic access$1902(Lcom/android/mms/template/TextTemplateListActivity;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/template/TextTemplateListActivity;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/template/TextTemplateListActivity;->mIsSelectAllmode:Z
 
@@ -377,7 +357,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/template/TextTemplateListActivity;)V
     .locals 0
-    .param p0    # Lcom/android/mms/template/TextTemplateListActivity;
 
     invoke-direct {p0}, Lcom/android/mms/template/TextTemplateListActivity;->updateScreen()V
 
@@ -386,7 +365,6 @@
 
 .method static synthetic access$2000(Lcom/android/mms/template/TextTemplateListActivity;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/template/TextTemplateListActivity;
 
     iget-boolean v0, p0, Lcom/android/mms/template/TextTemplateListActivity;->mIsLastItemOfSelectAll:Z
 
@@ -395,8 +373,6 @@
 
 .method static synthetic access$2002(Lcom/android/mms/template/TextTemplateListActivity;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/template/TextTemplateListActivity;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/template/TextTemplateListActivity;->mIsLastItemOfSelectAll:Z
 
@@ -405,7 +381,6 @@
 
 .method static synthetic access$2100(Lcom/android/mms/template/TextTemplateListActivity;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/template/TextTemplateListActivity;
 
     iget-boolean v0, p0, Lcom/android/mms/template/TextTemplateListActivity;->mIsInEditMode:Z
 
@@ -414,8 +389,6 @@
 
 .method static synthetic access$2102(Lcom/android/mms/template/TextTemplateListActivity;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/template/TextTemplateListActivity;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/template/TextTemplateListActivity;->mIsInEditMode:Z
 
@@ -424,7 +397,6 @@
 
 .method static synthetic access$2200(Lcom/android/mms/template/TextTemplateListActivity;)I
     .locals 1
-    .param p0    # Lcom/android/mms/template/TextTemplateListActivity;
 
     iget v0, p0, Lcom/android/mms/template/TextTemplateListActivity;->CHECKBOX_FLOATING_DEFAULT_DURATION:I
 
@@ -433,7 +405,6 @@
 
 .method static synthetic access$2300(Lcom/android/mms/template/TextTemplateListActivity;)Landroid/view/animation/Interpolator;
     .locals 1
-    .param p0    # Lcom/android/mms/template/TextTemplateListActivity;
 
     iget-object v0, p0, Lcom/android/mms/template/TextTemplateListActivity;->SINE_IN_OUT_70:Landroid/view/animation/Interpolator;
 
@@ -442,7 +413,6 @@
 
 .method static synthetic access$300(Lcom/android/mms/template/TextTemplateListActivity;)Landroid/view/ActionMode;
     .locals 1
-    .param p0    # Lcom/android/mms/template/TextTemplateListActivity;
 
     iget-object v0, p0, Lcom/android/mms/template/TextTemplateListActivity;->mMultiActionMode:Landroid/view/ActionMode;
 
@@ -451,8 +421,6 @@
 
 .method static synthetic access$302(Lcom/android/mms/template/TextTemplateListActivity;Landroid/view/ActionMode;)Landroid/view/ActionMode;
     .locals 0
-    .param p0    # Lcom/android/mms/template/TextTemplateListActivity;
-    .param p1    # Landroid/view/ActionMode;
 
     iput-object p1, p0, Lcom/android/mms/template/TextTemplateListActivity;->mMultiActionMode:Landroid/view/ActionMode;
 
@@ -461,7 +429,6 @@
 
 .method static synthetic access$500(Lcom/android/mms/template/TextTemplateListActivity;)Lcom/sec/android/touchwiz/widget/TwCheckBox;
     .locals 1
-    .param p0    # Lcom/android/mms/template/TextTemplateListActivity;
 
     iget-object v0, p0, Lcom/android/mms/template/TextTemplateListActivity;->mSelectAllCheckBox:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
@@ -470,7 +437,6 @@
 
 .method static synthetic access$700(Lcom/android/mms/template/TextTemplateListActivity;)I
     .locals 1
-    .param p0    # Lcom/android/mms/template/TextTemplateListActivity;
 
     iget v0, p0, Lcom/android/mms/template/TextTemplateListActivity;->mListMultiMode:I
 
@@ -479,8 +445,6 @@
 
 .method static synthetic access$702(Lcom/android/mms/template/TextTemplateListActivity;I)I
     .locals 0
-    .param p0    # Lcom/android/mms/template/TextTemplateListActivity;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/mms/template/TextTemplateListActivity;->mListMultiMode:I
 
@@ -489,7 +453,6 @@
 
 .method static synthetic access$900(Lcom/android/mms/template/TextTemplateListActivity;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/mms/template/TextTemplateListActivity;
 
     iget-object v0, p0, Lcom/android/mms/template/TextTemplateListActivity;->mCheckedMsgIds:Ljava/util/ArrayList;
 
@@ -498,8 +461,6 @@
 
 .method static synthetic access$902(Lcom/android/mms/template/TextTemplateListActivity;Ljava/util/ArrayList;)Ljava/util/ArrayList;
     .locals 0
-    .param p0    # Lcom/android/mms/template/TextTemplateListActivity;
-    .param p1    # Ljava/util/ArrayList;
 
     iput-object p1, p0, Lcom/android/mms/template/TextTemplateListActivity;->mCheckedMsgIds:Ljava/util/ArrayList;
 
@@ -508,8 +469,6 @@
 
 .method private confirmDeleteDialog(ILandroid/content/DialogInterface$OnClickListener;)V
     .locals 8
-    .param p1    # I
-    .param p2    # Landroid/content/DialogInterface$OnClickListener;
 
     const v4, 0x7f0c007c
 
@@ -828,7 +787,6 @@
 
 .method private setMode(Z)V
     .locals 0
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -851,7 +809,6 @@
 
 .method private setTextTemplateSelector(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/mms/template/TextTemplateListActivity;->TextTemplateSelector:I
 
@@ -884,7 +841,6 @@
 
 .method private updateEmptyScreen(I)V
     .locals 4
-    .param p1    # I
 
     const/16 v3, 0x8
 
@@ -1065,9 +1021,6 @@
 
 .method protected onActivityResult(IILandroid/content/Intent;)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const/4 v5, 0x1
 
@@ -1202,7 +1155,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 3
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -1274,7 +1226,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v2, 0x1
 
@@ -1409,7 +1360,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 1
-    .param p1    # Landroid/view/Menu;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreateOptionsMenu(Landroid/view/Menu;)Z
 
@@ -1501,7 +1451,6 @@
 
 .method public onListItemClick(I)V
     .locals 9
-    .param p1    # I
 
     const/4 v8, -0x1
 
@@ -1641,7 +1590,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 3
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v1, 0x1
 
@@ -1739,7 +1687,6 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)Z
     .locals 4
-    .param p1    # Landroid/view/Menu;
 
     const/4 v3, 0x1
 
@@ -1878,7 +1825,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "Mms/TextTemplateListActivity"
 
@@ -1955,7 +1901,6 @@
 
 .method public onWindowFocusChanged(Z)V
     .locals 1
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -2033,7 +1978,6 @@
 
 .method public setTemplateEditing(Z)V
     .locals 0
-    .param p1    # Z
 
     sput-boolean p1, Lcom/android/mms/template/TextTemplateListActivity;->TemplateEditting:Z
 

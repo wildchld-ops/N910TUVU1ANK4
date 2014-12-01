@@ -33,7 +33,6 @@
 # virtual methods
 .method public sendResult(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     iget-object v0, p0, Landroid/os/RemoteCallback$LocalCallback;->this$0:Landroid/os/RemoteCallback;
 

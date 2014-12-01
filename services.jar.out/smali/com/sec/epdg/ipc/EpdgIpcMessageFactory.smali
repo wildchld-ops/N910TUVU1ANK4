@@ -18,8 +18,6 @@
 
 .method public static fromByteArray([BI)Lcom/sec/epdg/ipc/EpdgIpcMessage;
     .locals 5
-    .param p0    # [B
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -112,7 +110,6 @@
 
 .method private static readIpcMainCmd([B)I
     .locals 9
-    .param p0    # [B
 
     const/4 v4, -0x1
 

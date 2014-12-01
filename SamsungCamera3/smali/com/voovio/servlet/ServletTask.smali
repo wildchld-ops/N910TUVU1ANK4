@@ -44,7 +44,6 @@
 
 .method public setUrl(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/voovio/servlet/ServletTask;->strUrl:Ljava/lang/String;
 
@@ -53,7 +52,6 @@
 
 .method public setUrlParameters(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/voovio/servlet/ServletTask;->strUrlParameters:Ljava/lang/String;
 

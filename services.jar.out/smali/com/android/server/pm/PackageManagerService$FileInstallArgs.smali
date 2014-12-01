@@ -31,9 +31,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/pm/PackageManagerService;Landroid/net/Uri;Ljava/lang/String;Ljava/lang/String;)V
     .locals 10
-    .param p2    # Landroid/net/Uri;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -138,7 +135,6 @@
 
 .method constructor <init>(Lcom/android/server/pm/PackageManagerService;Lcom/android/server/pm/PackageManagerService$InstallParams;)V
     .locals 9
-    .param p2    # Lcom/android/server/pm/PackageManagerService$InstallParams;
 
     iput-object p1, p0, Lcom/android/server/pm/PackageManagerService$FileInstallArgs;->this$0:Lcom/android/server/pm/PackageManagerService;
 
@@ -177,9 +173,6 @@
 
 .method constructor <init>(Lcom/android/server/pm/PackageManagerService;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 10
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -764,7 +757,6 @@
 # virtual methods
 .method checkFreeStorage(Lcom/android/internal/app/IMediaContainerService;)Z
     .locals 8
-    .param p1    # Lcom/android/internal/app/IMediaContainerService;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -930,8 +922,6 @@
 
 .method declared-synchronized copyApk(Lcom/android/internal/app/IMediaContainerService;Z)I
     .locals 24
-    .param p1    # Lcom/android/internal/app/IMediaContainerService;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1772,7 +1762,6 @@
 
 .method doPostDeleteLI(Z)Z
     .locals 1
-    .param p1    # Z
 
     invoke-virtual {p0}, Lcom/android/server/pm/PackageManagerService$FileInstallArgs;->cleanUpResourcesLI()V
 
@@ -1783,8 +1772,6 @@
 
 .method doPostInstall(II)I
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     const-string v0, "PackageManager"
 
@@ -1826,7 +1813,6 @@
 
 .method doPreInstall(I)I
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -1840,9 +1826,6 @@
 
 .method doRename(ILjava/lang/String;Ljava/lang/String;)Z
     .locals 12
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     sget-boolean v9, Lcom/android/server/pm/PackageManagerService;->DEBUG_DEV:Z
 

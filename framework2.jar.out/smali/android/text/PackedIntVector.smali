@@ -20,7 +20,6 @@
 # direct methods
 .method public constructor <init>(I)V
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -163,7 +162,6 @@
 
 .method private final moveRowGapTo(I)V
     .locals 12
-    .param p1    # I
 
     iget v9, p0, Landroid/text/PackedIntVector;->mRowGapStart:I
 
@@ -348,8 +346,6 @@
 
 .method private final moveValueGapTo(II)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
 
     iget-object v2, p0, Landroid/text/PackedIntVector;->mValueGap:[I
 
@@ -426,9 +422,6 @@
 
 .method private setValueInternal(III)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     iget v1, p0, Landroid/text/PackedIntVector;->mRowGapStart:I
 
@@ -471,9 +464,6 @@
 # virtual methods
 .method public adjustValuesBelow(III)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     or-int v0, p1, p2
 
@@ -549,8 +539,6 @@
 
 .method public deleteAt(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     or-int v0, p1, p2
 
@@ -615,8 +603,6 @@
 
 .method public getValue(II)I
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     iget v0, p0, Landroid/text/PackedIntVector;->mColumns:I
 
@@ -697,8 +683,6 @@
 
 .method public insertAt(I[I)V
     .locals 4
-    .param p1    # I
-    .param p2    # [I
 
     if-ltz p1, :cond_0
 
@@ -831,9 +815,6 @@
 
 .method public setValue(III)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     or-int v1, p1, p2
 

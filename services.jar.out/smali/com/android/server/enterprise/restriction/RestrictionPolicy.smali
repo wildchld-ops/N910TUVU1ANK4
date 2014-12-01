@@ -254,9 +254,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Lcom/android/server/enterprise/application/ApplicationPolicy;Lcom/android/server/enterprise/vpn/VpnInfoPolicy;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/server/enterprise/application/ApplicationPolicy;
-    .param p3    # Lcom/android/server/enterprise/vpn/VpnInfoPolicy;
 
     const/4 v1, 0x0
 
@@ -399,8 +396,6 @@
 
 .method static synthetic access$002(Lcom/android/server/enterprise/restriction/RestrictionPolicy;Landroid/bluetooth/BluetoothPan;)Landroid/bluetooth/BluetoothPan;
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/restriction/RestrictionPolicy;
-    .param p1    # Landroid/bluetooth/BluetoothPan;
 
     iput-object p1, p0, Lcom/android/server/enterprise/restriction/RestrictionPolicy;->mBluetoothPan:Landroid/bluetooth/BluetoothPan;
 
@@ -409,7 +404,6 @@
 
 .method static synthetic access$100(Lcom/android/server/enterprise/restriction/RestrictionPolicy;)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/restriction/RestrictionPolicy;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/restriction/RestrictionPolicy;->updateUSBMode()V
 
@@ -418,7 +412,6 @@
 
 .method static synthetic access$200(Lcom/android/server/enterprise/restriction/RestrictionPolicy;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/restriction/RestrictionPolicy;
 
     iget-object v0, p0, Lcom/android/server/enterprise/restriction/RestrictionPolicy;->mContext:Landroid/content/Context;
 
@@ -427,7 +420,6 @@
 
 .method static synthetic access$300(Lcom/android/server/enterprise/restriction/RestrictionPolicy;)Landroid/bluetooth/BluetoothProfile$ServiceListener;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/restriction/RestrictionPolicy;
 
     iget-object v0, p0, Lcom/android/server/enterprise/restriction/RestrictionPolicy;->mProfileServiceListener:Landroid/bluetooth/BluetoothProfile$ServiceListener;
 
@@ -436,8 +428,6 @@
 
 .method static synthetic access$400(Lcom/android/server/enterprise/restriction/RestrictionPolicy;Z)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/restriction/RestrictionPolicy;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/restriction/RestrictionPolicy;->enforceStatusBarExpansion(Z)V
 
@@ -446,7 +436,6 @@
 
 .method static synthetic access$500(Lcom/android/server/enterprise/restriction/RestrictionPolicy;)Z
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/restriction/RestrictionPolicy;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/restriction/RestrictionPolicy;->mountSdCard()Z
 
@@ -457,7 +446,6 @@
 
 .method static synthetic access$600(Lcom/android/server/enterprise/restriction/RestrictionPolicy;)Landroid/os/storage/StorageEventListener;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/restriction/RestrictionPolicy;
 
     iget-object v0, p0, Lcom/android/server/enterprise/restriction/RestrictionPolicy;->mStorageListener:Landroid/os/storage/StorageEventListener;
 
@@ -519,7 +507,6 @@
 
 .method private createEFSFile(Ljava/io/File;)Z
     .locals 7
-    .param p1    # Ljava/io/File;
 
     const/4 v4, 0x1
 
@@ -656,7 +643,6 @@
 
 .method private deleteEFSFile(Ljava/io/File;)Z
     .locals 4
-    .param p1    # Ljava/io/File;
 
     const/4 v0, 0x0
 
@@ -759,7 +745,6 @@
 
 .method private enforceAdvancedRestrictionPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/restriction/RestrictionPolicy;->getEDM()Landroid/app/enterprise/EnterpriseDeviceManager;
 
@@ -776,7 +761,6 @@
 
 .method private enforceCertificatePermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/restriction/RestrictionPolicy;->getEDM()Landroid/app/enterprise/EnterpriseDeviceManager;
 
@@ -793,7 +777,6 @@
 
 .method private enforceHwPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/restriction/RestrictionPolicy;->getEDM()Landroid/app/enterprise/EnterpriseDeviceManager;
 
@@ -810,7 +793,6 @@
 
 .method private enforceLocationPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/restriction/RestrictionPolicy;->getEDM()Landroid/app/enterprise/EnterpriseDeviceManager;
 
@@ -827,7 +809,6 @@
 
 .method private enforceOwnerOnlyAndAdvancedRestrictionPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/restriction/RestrictionPolicy;->getEDM()Landroid/app/enterprise/EnterpriseDeviceManager;
 
@@ -844,7 +825,6 @@
 
 .method private enforceOwnerOnlyAndHwPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/restriction/RestrictionPolicy;->getEDM()Landroid/app/enterprise/EnterpriseDeviceManager;
 
@@ -861,7 +841,6 @@
 
 .method private enforceOwnerOnlyAndRestrictionPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/restriction/RestrictionPolicy;->getEDM()Landroid/app/enterprise/EnterpriseDeviceManager;
 
@@ -878,7 +857,6 @@
 
 .method private enforceOwnerOnlyAndTetheringPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/restriction/RestrictionPolicy;->getEDM()Landroid/app/enterprise/EnterpriseDeviceManager;
 
@@ -895,7 +873,6 @@
 
 .method private enforceRestrictionPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/restriction/RestrictionPolicy;->getEDM()Landroid/app/enterprise/EnterpriseDeviceManager;
 
@@ -912,7 +889,6 @@
 
 .method private enforceStatusBarExpansion(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/server/enterprise/restriction/RestrictionPolicy;->statusBar:Landroid/app/StatusBarManager;
 
@@ -967,7 +943,6 @@
 
 .method private enforceTetheringPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/restriction/RestrictionPolicy;->getEDM()Landroid/app/enterprise/EnterpriseDeviceManager;
 
@@ -982,8 +957,6 @@
 
 .method private getAppUid(ILjava/lang/String;)I
     .locals 5
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     iget-object v2, p0, Lcom/android/server/enterprise/restriction/RestrictionPolicy;->mContext:Landroid/content/Context;
 
@@ -1173,7 +1146,6 @@
 
 .method private getPackageNameForUid(I)Ljava/lang/String;
     .locals 5
-    .param p1    # I
 
     iget-object v2, p0, Lcom/android/server/enterprise/restriction/RestrictionPolicy;->mEdmStorageProvider:Lcom/android/server/enterprise/storage/EdmStorageProvider;
 
@@ -1231,7 +1203,6 @@
 
 .method private getUidForAdminActivation(I)I
     .locals 10
-    .param p1    # I
 
     const/4 v5, -0x1
 
@@ -1303,7 +1274,6 @@
 
 .method private getUidForAdminInstallation(I)I
     .locals 10
-    .param p1    # I
 
     const/4 v5, -0x1
 
@@ -1375,7 +1345,6 @@
 
 .method private getUserIdByPackageNameOrUid(Landroid/app/enterprise/ContextInfo;)I
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     if-nez p1, :cond_0
 
@@ -1450,9 +1419,6 @@
 
 .method private isCameraEnabled(IIZ)Z
     .locals 7
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     const/4 v1, 0x1
 
@@ -1640,7 +1606,6 @@
 
 .method private isFactoryResetAllowedFromDB(Landroid/app/enterprise/ContextInfo;)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v1, 0x1
 
@@ -1685,7 +1650,6 @@
 
 .method private isFirmwareRecoveryAllowedFromDB(Landroid/app/enterprise/ContextInfo;)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v1, 0x1
 
@@ -1730,7 +1694,6 @@
 
 .method private isNewAdminActivationEnabledInternal(I)Z
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -1743,8 +1706,6 @@
 
 .method private isNewAdminActivationEnabledInternal(IZ)Z
     .locals 9
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v5, 0x1
 
@@ -1852,8 +1813,6 @@
 
 .method private isNewAdminInstallationEnabledInternal(IZ)Z
     .locals 9
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v5, 0x1
 
@@ -2062,7 +2021,6 @@
 
 .method private manageEFSFile(Z)Z
     .locals 11
-    .param p1    # Z
 
     const/4 v10, 0x1
 
@@ -2198,8 +2156,6 @@
 
 .method private matchRegex([Ljava/lang/String;Ljava/lang/String;)Z
     .locals 5
-    .param p1    # [Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     move-object v0, p1
 
@@ -2299,7 +2255,6 @@
 
 .method private readData(I)Z
     .locals 8
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -2779,7 +2734,6 @@
 
 .method private static resetPermissionEnforced(Ljava/lang/String;)V
     .locals 7
-    .param p0    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -3155,7 +3109,6 @@
 
 .method private rollBackSVoice(I)V
     .locals 7
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/server/enterprise/restriction/RestrictionPolicy;->isSVoiceAllowedAsUser(I)Z
 
@@ -3199,8 +3152,6 @@
 
 .method private static setPermissionEnforced(Ljava/lang/String;Z)V
     .locals 5
-    .param p0    # Ljava/lang/String;
-    .param p1    # Z
 
     :try_start_0
     invoke-static {}, Landroid/app/ActivityThread;->getPackageManager()Landroid/content/pm/IPackageManager;
@@ -3267,7 +3218,6 @@
 
 .method private unmountSdCard(Z)Z
     .locals 5
-    .param p1    # Z
 
     const/4 v3, 0x0
 
@@ -3568,7 +3518,6 @@
 
 .method private updateHomeKeyPolicySet(Landroid/app/enterprise/ContextInfo;)V
     .locals 9
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v6, 0x1
 
@@ -3720,8 +3669,6 @@
 
 .method private writeData(IZ)Z
     .locals 8
-    .param p1    # I
-    .param p2    # Z
 
     const/16 v7, 0x1f
 
@@ -3821,7 +3768,6 @@
 # virtual methods
 .method public addNewAdminActivationAppWhiteList(Landroid/app/enterprise/ContextInfo;Ljava/util/List;)Z
     .locals 9
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3917,8 +3863,6 @@
 
 .method public allowActivationLock(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/restriction/RestrictionPolicy;->enforceOwnerOnlyAndRestrictionPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -3978,8 +3922,6 @@
 
 .method public allowAirplaneMode(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 10
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     const/4 v9, 0x0
 
@@ -4089,8 +4031,6 @@
 
 .method public allowAndroidBeam(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 9
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/restriction/RestrictionPolicy;->enforceOwnerOnlyAndRestrictionPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -4211,8 +4151,6 @@
 
 .method public allowAudioRecord(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/restriction/RestrictionPolicy;->enforceHwPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -4262,8 +4200,6 @@
 
 .method public allowBackgroundProcessLimit(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 8
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/restriction/RestrictionPolicy;->enforceOwnerOnlyAndRestrictionPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -4369,8 +4305,6 @@
 
 .method public allowClipboardShare(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/restriction/RestrictionPolicy;->enforceRestrictionPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -4432,8 +4366,6 @@
 
 .method public allowDeveloperMode(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/restriction/RestrictionPolicy;->enforceOwnerOnlyAndRestrictionPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -4547,8 +4479,6 @@
 
 .method public allowFactoryReset(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/restriction/RestrictionPolicy;->enforceOwnerOnlyAndRestrictionPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -4656,8 +4586,6 @@
 
 .method public allowFastEncryption(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 9
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/restriction/RestrictionPolicy;->enforceOwnerOnlyAndRestrictionPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -4770,8 +4698,6 @@
 
 .method public allowFirmwareAutoUpdate(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/restriction/RestrictionPolicy;->enforceOwnerOnlyAndAdvancedRestrictionPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -4831,8 +4757,6 @@
 
 .method public allowFirmwareRecovery(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 8
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/restriction/RestrictionPolicy;->enforceOwnerOnlyAndRestrictionPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -4954,8 +4878,6 @@
 
 .method public allowGoogleAccountsAutoSync(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 25
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-direct/range {p0 .. p1}, Lcom/android/server/enterprise/restriction/RestrictionPolicy;->enforceRestrictionPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -5192,8 +5114,6 @@
 
 .method public allowGoogleCrashReport(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/restriction/RestrictionPolicy;->enforceRestrictionPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -5250,8 +5170,6 @@
 
 .method public allowKillingActivitiesOnLeave(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 8
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     const/4 v4, 0x0
 
@@ -5356,9 +5274,6 @@
 
 .method public allowLockScreenView(Landroid/app/enterprise/ContextInfo;IZ)Z
     .locals 10
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # I
-    .param p3    # Z
 
     const/4 v6, 0x2
 
@@ -5559,8 +5474,6 @@
 
 .method public allowOTAUpgrade(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     const/4 v6, 0x0
 
@@ -5636,8 +5549,6 @@
 
 .method public allowPowerOff(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 4
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/restriction/RestrictionPolicy;->enforceHwPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -5682,8 +5593,6 @@
 
 .method public allowSBeam(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 6
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/restriction/RestrictionPolicy;->enforceOwnerOnlyAndRestrictionPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -5753,8 +5662,6 @@
 
 .method public allowSDCardMove(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/restriction/RestrictionPolicy;->enforceRestrictionPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -5816,8 +5723,6 @@
 
 .method public allowSDCardWrite(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 9
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     const/4 v8, 0x0
 
@@ -5883,8 +5788,6 @@
 
 .method public allowSVoice(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 23
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-direct/range {p0 .. p1}, Lcom/android/server/enterprise/restriction/RestrictionPolicy;->enforceRestrictionPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -6263,8 +6166,6 @@
 
 .method public allowSafeMode(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 6
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/restriction/RestrictionPolicy;->enforceOwnerOnlyAndRestrictionPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -6326,8 +6227,6 @@
 
 .method public allowSettingsChanges(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 22
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-direct/range {p0 .. p1}, Lcom/android/server/enterprise/restriction/RestrictionPolicy;->enforceRestrictionPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -6612,8 +6511,6 @@
 
 .method public allowShareList(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     const/4 v6, 0x1
 
@@ -6688,8 +6585,6 @@
 
 .method public allowSmartClipMode(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 4
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/restriction/RestrictionPolicy;->enforceRestrictionPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -6712,8 +6607,6 @@
 
 .method public allowStatusBarExpansion(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 9
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     const/4 v5, 0x0
 
@@ -6848,8 +6741,6 @@
 
 .method public allowStopSystemApp(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     const/4 v0, 0x1
 
@@ -6896,8 +6787,6 @@
 
 .method public allowUsbHostStorage(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 22
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-direct/range {p0 .. p1}, Lcom/android/server/enterprise/restriction/RestrictionPolicy;->enforceOwnerOnlyAndRestrictionPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -7091,8 +6980,6 @@
 
 .method public allowUserMobileDataLimit(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 16
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-direct/range {p0 .. p1}, Lcom/android/server/enterprise/restriction/RestrictionPolicy;->enforceOwnerOnlyAndRestrictionPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -7244,8 +7131,6 @@
 
 .method public allowVideoRecord(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/restriction/RestrictionPolicy;->enforceHwPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -7295,8 +7180,6 @@
 
 .method public allowVpn(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/restriction/RestrictionPolicy;->enforceOwnerOnlyAndRestrictionPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -7362,8 +7245,6 @@
 
 .method public allowWallpaperChange(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     const/4 v0, 0x1
 
@@ -7410,8 +7291,6 @@
 
 .method public allowWifiDirect(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 6
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/restriction/RestrictionPolicy;->enforceOwnerOnlyAndRestrictionPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -7748,8 +7627,6 @@
 
 .method public checkAdminActivationEnabled(ILjava/lang/String;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/restriction/RestrictionPolicy;->isNewAdminActivationEnabledInternal(I)Z
 
@@ -7780,8 +7657,6 @@
 
 .method public checkPackageSource(ILjava/lang/String;)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     if-eqz p2, :cond_0
 
@@ -7818,8 +7693,6 @@
 
 .method public checkPackageWhiteList(ILjava/lang/String;)Z
     .locals 5
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/restriction/RestrictionPolicy;->getUidForAdminActivation(I)I
 
@@ -7856,7 +7729,6 @@
 
 .method public clearNewAdminActivationAppWhiteList(Landroid/app/enterprise/ContextInfo;)Z
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v0, 0x0
 
@@ -7869,8 +7741,6 @@
 
 .method public enableODETrustedBootVerification(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     const/4 v2, 0x0
 
@@ -7959,7 +7829,6 @@
 
 .method public getNewAdminActivationAppWhiteList(Landroid/app/enterprise/ContextInfo;)Ljava/util/List;
     .locals 6
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -8023,8 +7892,6 @@
 
 .method public getPowerOffAllowed(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 10
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     const/4 v1, 0x1
 
@@ -8119,8 +7986,6 @@
 
 .method public getStatusBarExpansionAllowed(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     const/4 v1, 0x1
 
@@ -8213,8 +8078,6 @@
 
 .method public isActivationLockAllowed(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 8
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-static {p1}, Lcom/android/server/enterprise/EnterpriseDeviceManagerService;->getCallingOrCurrentUserId(Landroid/app/enterprise/ContextInfo;)I
 
@@ -8304,8 +8167,6 @@
 
 .method public isAdminEnforcementAllowed(II)Z
     .locals 8
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -8419,7 +8280,6 @@
 
 .method public isAirplaneModeAllowed(Z)Z
     .locals 5
-    .param p1    # Z
 
     const/4 v0, 0x0
 
@@ -8482,8 +8342,6 @@
 
 .method public isAndroidBeamAllowed(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 6
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     const/4 v2, 0x0
 
@@ -8558,8 +8416,6 @@
 
 .method public isAudioRecordAllowed(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-static {}, Landroid/os/Binder;->getCallingUid()I
 
@@ -8649,7 +8505,6 @@
 
 .method public isBackgroundDataEnabled(Landroid/app/enterprise/ContextInfo;)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v1, 0x1
 
@@ -8716,7 +8571,6 @@
 
 .method public isBackgroundProcessLimitAllowed(Landroid/app/enterprise/ContextInfo;)Z
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v0, 0x0
 
@@ -8770,8 +8624,6 @@
 
 .method public isBackupAllowed(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     const/4 v1, 0x1
 
@@ -8847,7 +8699,6 @@
 
 .method public isBluetoothTetheringEnabled(Landroid/app/enterprise/ContextInfo;)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v1, 0x1
 
@@ -8914,8 +8765,6 @@
 
 .method public isCCModeEnabled(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 8
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-static {p1}, Lcom/android/server/enterprise/EnterpriseDeviceManagerService;->getCallingOrCurrentUserId(Landroid/app/enterprise/ContextInfo;)I
 
@@ -9024,8 +8873,6 @@
 
 .method public isCCModeSupported(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     const/4 v1, 0x0
 
@@ -9084,8 +8931,6 @@
 
 .method public isCameraEnabled(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 4
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-virtual {p0, p1, p2}, Lcom/android/server/enterprise/restriction/RestrictionPolicy;->isCameraEnabledEx(Landroid/app/enterprise/ContextInfo;Z)Z
 
@@ -9118,8 +8963,6 @@
 
 .method public isCameraEnabledEx(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 10
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     const/4 v5, 0x1
 
@@ -9348,7 +9191,6 @@
 
 .method public isCellularDataAllowed(Landroid/app/enterprise/ContextInfo;)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v1, 0x1
 
@@ -9415,8 +9257,6 @@
 
 .method public isClipboardAllowed(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 13
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     const/4 v6, 0x1
 
@@ -9578,7 +9418,6 @@
 
 .method public isClipboardShareAllowed(Landroid/app/enterprise/ContextInfo;)Z
     .locals 9
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v2, 0x1
 
@@ -9664,8 +9503,6 @@
 
 .method public isDeveloperModeAllowed(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 6
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     const/4 v2, 0x0
 
@@ -9732,7 +9569,6 @@
 
 .method public isFactoryResetAllowed(Landroid/app/enterprise/ContextInfo;)Z
     .locals 8
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v1, 0x1
 
@@ -9846,8 +9682,6 @@
 
 .method public isFastEncryptionAllowed(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 8
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-static {p1}, Lcom/android/server/enterprise/EnterpriseDeviceManagerService;->getCallingOrCurrentUserId(Landroid/app/enterprise/ContextInfo;)I
 
@@ -9937,8 +9771,6 @@
 
 .method public isFirmwareAutoUpdateAllowed(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 8
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-static {p1}, Lcom/android/server/enterprise/EnterpriseDeviceManagerService;->getCallingOrCurrentUserId(Landroid/app/enterprise/ContextInfo;)I
 
@@ -10028,8 +9860,6 @@
 
 .method public isFirmwareRecoveryAllowed(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 9
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     const/4 v8, 0x7
 
@@ -10145,7 +9975,6 @@
 
 .method public isGoogleAccountsAutoSyncAllowed(Landroid/app/enterprise/ContextInfo;)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v3, 0x0
 
@@ -10195,7 +10024,6 @@
 
 .method public isGoogleCrashReportAllowed(Landroid/app/enterprise/ContextInfo;)Z
     .locals 8
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v1, 0x1
 
@@ -10288,8 +10116,6 @@
 
 .method public isHeadphoneEnabled(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 8
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-static {p1}, Lcom/android/server/enterprise/EnterpriseDeviceManagerService;->getCallingOrCurrentUserId(Landroid/app/enterprise/ContextInfo;)I
 
@@ -10379,8 +10205,6 @@
 
 .method public isHomeKeyEnabled(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 4
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     const/4 v1, 0x1
 
@@ -10458,7 +10282,6 @@
 
 .method public isKillingActivitiesOnLeaveAllowed(Landroid/app/enterprise/ContextInfo;)Z
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v1, 0x0
 
@@ -10490,8 +10313,6 @@
 
 .method public isLockScreenEnabled(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 8
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-static {p1}, Lcom/android/server/enterprise/EnterpriseDeviceManagerService;->getCallingOrCurrentUserId(Landroid/app/enterprise/ContextInfo;)I
 
@@ -10572,8 +10393,6 @@
 
 .method public isLockScreenViewAllowed(Landroid/app/enterprise/ContextInfo;I)Z
     .locals 8
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # I
 
     const/4 v2, 0x1
 
@@ -10696,8 +10515,6 @@
 
 .method public isMicrophoneEnabled(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 6
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-static {p1}, Lcom/android/server/enterprise/EnterpriseDeviceManagerService;->getCallingOrCurrentUserId(Landroid/app/enterprise/ContextInfo;)I
 
@@ -10735,7 +10552,6 @@
 
 .method public isMicrophoneEnabledAsUser(I)Z
     .locals 5
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -10845,7 +10661,6 @@
 
 .method public isMockLocationEnabled(Landroid/app/enterprise/ContextInfo;)Z
     .locals 8
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v1, 0x1
 
@@ -10982,8 +10797,6 @@
 
 .method public isNewAdminActivationEnabled(IZ)Z
     .locals 8
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v1, 0x1
 
@@ -11052,8 +10865,6 @@
 
 .method public isNewAdminActivationEnabled(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-static {p1}, Lcom/android/server/enterprise/EnterpriseDeviceManagerService;->getCallingOrCurrentUserId(Landroid/app/enterprise/ContextInfo;)I
 
@@ -11068,8 +10879,6 @@
 
 .method public isNewAdminInstallationEnabled(IZ)Z
     .locals 8
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v1, 0x1
 
@@ -11138,8 +10947,6 @@
 
 .method public isNewAdminInstallationEnabled(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-static {p1}, Lcom/android/server/enterprise/EnterpriseDeviceManagerService;->getCallingOrCurrentUserId(Landroid/app/enterprise/ContextInfo;)I
 
@@ -11154,7 +10961,6 @@
 
 .method public isNonMarketAppAllowed(Landroid/app/enterprise/ContextInfo;)Z
     .locals 8
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const-string v5, "RestrictionPolicy"
 
@@ -11241,7 +11047,6 @@
 
 .method public isNonTrustedAppInstallBlocked(Landroid/app/enterprise/ContextInfo;)Z
     .locals 8
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v2, 0x0
 
@@ -11301,7 +11106,6 @@
 
 .method public isODETrustedBootVerificationEnabled(Landroid/app/enterprise/ContextInfo;)Z
     .locals 8
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-static {p1}, Lcom/android/server/enterprise/EnterpriseDeviceManagerService;->getCallingOrCurrentUserId(Landroid/app/enterprise/ContextInfo;)I
 
@@ -11382,7 +11186,6 @@
 
 .method public isOTAUpgradeAllowed(Landroid/app/enterprise/ContextInfo;)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v1, 0x1
 
@@ -11449,8 +11252,6 @@
 
 .method public isPowerOffAllowed(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 4
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     const/4 v1, 0x1
 
@@ -11494,8 +11295,6 @@
 
 .method public isSBeamAllowed(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 6
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     const/4 v2, 0x0
 
@@ -11575,8 +11374,6 @@
 
 .method public isSDCardMoveAllowed(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 8
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-static {p1}, Lcom/android/server/enterprise/EnterpriseDeviceManagerService;->getCallingOrCurrentUserId(Landroid/app/enterprise/ContextInfo;)I
 
@@ -11666,7 +11463,6 @@
 
 .method public isSDCardWriteAllowed(Landroid/app/enterprise/ContextInfo;)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v1, 0x1
 
@@ -11733,8 +11529,6 @@
 
 .method public isSVoiceAllowed(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-static {p1}, Lcom/android/server/enterprise/EnterpriseDeviceManagerService;->getCallingOrCurrentUserId(Landroid/app/enterprise/ContextInfo;)I
 
@@ -11780,7 +11574,6 @@
 
 .method public isSVoiceAllowedAsUser(I)Z
     .locals 5
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -11834,7 +11627,6 @@
 
 .method public isSafeModeAllowed(Landroid/app/enterprise/ContextInfo;)Z
     .locals 8
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v2, 0x1
 
@@ -11916,9 +11708,6 @@
 
 .method public isScreenCaptureEnabled(IIZ)Z
     .locals 7
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     const/4 v1, 0x1
 
@@ -12014,8 +11803,6 @@
 
 .method public isScreenCaptureEnabled(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     iget v0, p1, Landroid/app/enterprise/ContextInfo;->mContainerId:I
 
@@ -12041,8 +11828,6 @@
 
 .method public isScreenCaptureEnabledEx(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 11
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     const/4 v2, 0x0
 
@@ -12141,7 +11926,6 @@
 
 .method public isSdCardEnabled(Landroid/app/enterprise/ContextInfo;)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v1, 0x0
 
@@ -12233,8 +12017,6 @@
 
 .method public isSettingsChangesAllowed(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 8
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/restriction/RestrictionPolicy;->getUserIdByPackageNameOrUid(Landroid/app/enterprise/ContextInfo;)I
 
@@ -12314,8 +12096,6 @@
 
 .method public isShareListAllowed(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 9
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     const/4 v0, 0x1
 
@@ -12433,8 +12213,6 @@
 
 .method public isSmartClipModeAllowed(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 8
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-static {p1}, Lcom/android/server/enterprise/EnterpriseDeviceManagerService;->getCallingOrCurrentUserId(Landroid/app/enterprise/ContextInfo;)I
 
@@ -12514,8 +12292,6 @@
 
 .method public isStatusBarExpansionAllowed(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-static {p1}, Lcom/android/server/enterprise/EnterpriseDeviceManagerService;->getCallingOrCurrentUserId(Landroid/app/enterprise/ContextInfo;)I
 
@@ -12552,8 +12328,6 @@
 
 .method public isStatusBarExpansionAllowedAsUser(ZI)Z
     .locals 7
-    .param p1    # Z
-    .param p2    # I
 
     const/4 v1, 0x1
 
@@ -12623,7 +12397,6 @@
 
 .method public isStopSystemAppAllowed(Landroid/app/enterprise/ContextInfo;)Z
     .locals 8
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-static {p1}, Lcom/android/server/enterprise/EnterpriseDeviceManagerService;->getCallingOrCurrentUserId(Landroid/app/enterprise/ContextInfo;)I
 
@@ -12694,7 +12467,6 @@
 
 .method public isTetheringEnabled(Landroid/app/enterprise/ContextInfo;)Z
     .locals 6
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v3, 0x0
 
@@ -12772,7 +12544,6 @@
 
 .method public isUsbDebuggingEnabled(Landroid/app/enterprise/ContextInfo;)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v1, 0x1
 
@@ -12839,8 +12610,6 @@
 
 .method public isUsbHostStorageAllowed(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     const/4 v0, 0x0
 
@@ -12903,8 +12672,6 @@
 
 .method public isUsbKiesAvailable(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     const/4 v0, 0x0
 
@@ -12913,8 +12680,6 @@
 
 .method public isUsbMassStorageEnabled(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     const/4 v1, 0x1
 
@@ -12990,8 +12755,6 @@
 
 .method public isUsbMediaPlayerAvailable(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     const/4 v1, 0x1
 
@@ -13085,7 +12848,6 @@
 
 .method public isUsbTetheringEnabled(Landroid/app/enterprise/ContextInfo;)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v1, 0x1
 
@@ -13152,7 +12914,6 @@
 
 .method public isUseSecureKeypadEnabled(Landroid/app/enterprise/ContextInfo;)Z
     .locals 10
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v3, 0x0
 
@@ -13284,7 +13045,6 @@
 
 .method public isUserMobileDataLimitAllowed(Landroid/app/enterprise/ContextInfo;)Z
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v1, 0x0
 
@@ -13316,8 +13076,6 @@
 
 .method public isVideoRecordAllowed(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 6
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-static {p1}, Lcom/android/server/enterprise/EnterpriseDeviceManagerService;->getCallingOrCurrentUserId(Landroid/app/enterprise/ContextInfo;)I
 
@@ -13403,7 +13161,6 @@
 
 .method public isVpnAllowed(Landroid/app/enterprise/ContextInfo;)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v1, 0x1
 
@@ -13470,8 +13227,6 @@
 
 .method public isWallpaperChangeAllowed(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 8
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-static {p1}, Lcom/android/server/enterprise/EnterpriseDeviceManagerService;->getCallingOrCurrentUserId(Landroid/app/enterprise/ContextInfo;)I
 
@@ -13554,8 +13309,6 @@
 
 .method public isWifiDirectAllowed(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     const/4 v0, 0x0
 
@@ -13618,7 +13371,6 @@
 
 .method public isWifiTetheringEnabled(Landroid/app/enterprise/ContextInfo;)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v1, 0x1
 
@@ -13685,7 +13437,6 @@
 
 .method public onAdminAdded(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
@@ -13702,7 +13453,6 @@
 
 .method public onAdminRemoved(I)V
     .locals 6
-    .param p1    # I
 
     const/4 v5, 0x0
 
@@ -13828,8 +13578,6 @@
 
 .method public onContainerCreation(II)V
     .locals 8
-    .param p1    # I
-    .param p2    # I
 
     const-string v0, "RestrictionPolicy"
 
@@ -13914,8 +13662,6 @@
 
 .method public onContainerRemoved(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     const-string v0, "RestrictionPolicy"
 
@@ -13960,7 +13706,6 @@
 
 .method public onPreAdminRemoval(I)V
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -13975,8 +13720,6 @@
 
 .method public onPreContainerRemoval(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     const-string v0, "RestrictionPolicy"
 
@@ -14042,8 +13785,6 @@
 
 .method public preventNewAdminActivation(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 9
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     const/4 v4, 0x0
 
@@ -14150,8 +13891,6 @@
 
 .method public preventNewAdminInstallation(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     const/4 v3, 0x0
 
@@ -14244,8 +13983,6 @@
 
 .method public setAllowNonMarketApps(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     const-string v3, "RestrictionPolicy"
 
@@ -14326,8 +14063,6 @@
 
 .method public setBackgroundData(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 8
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/restriction/RestrictionPolicy;->enforceOwnerOnlyAndRestrictionPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -14400,8 +14135,6 @@
 
 .method public setBackup(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 9
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     const/4 v5, 0x0
 
@@ -14510,8 +14243,6 @@
 
 .method public setBluetoothTethering(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 8
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/restriction/RestrictionPolicy;->enforceOwnerOnlyAndTetheringPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -14640,8 +14371,6 @@
 
 .method public setCCMode(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 10
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     const/4 v5, 0x0
 
@@ -14778,8 +14507,6 @@
 
 .method public setCamera(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 12
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/restriction/RestrictionPolicy;->enforceHwPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -14901,8 +14628,6 @@
 
 .method public setCellularData(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 9
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     const/4 v5, 0x0
 
@@ -15011,8 +14736,6 @@
 
 .method public setClipboardEnabled(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 4
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/restriction/RestrictionPolicy;->enforceRestrictionPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -15057,8 +14780,6 @@
 
 .method public setEnableNFC(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 4
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/restriction/RestrictionPolicy;->enforceOwnerOnlyAndHwPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -15108,8 +14829,6 @@
 
 .method public setHeadphoneState(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 9
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     const/4 v4, 0x0
 
@@ -15218,8 +14937,6 @@
 
 .method public setHomeKeyState(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     const/4 v0, 0x1
 
@@ -15292,8 +15009,6 @@
 
 .method public setLockScreenState(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/restriction/RestrictionPolicy;->enforceRestrictionPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -15355,8 +15070,6 @@
 
 .method public setMicrophoneState(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 10
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     const/4 v5, 0x0
 
@@ -15482,8 +15195,6 @@
 
 .method public setMockLocation(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 8
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/restriction/RestrictionPolicy;->enforceLocationPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -15568,8 +15279,6 @@
 
 .method public setNonTrustedAppInstallBlock(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/restriction/RestrictionPolicy;->enforceCertificatePermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -15609,8 +15318,6 @@
 
 .method public setScreenCapture(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 11
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     const/4 v10, 0x0
 
@@ -15743,8 +15450,6 @@
 
 .method public setSdCardState(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 9
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     const/4 v2, 0x0
 
@@ -15852,8 +15557,6 @@
 
 .method public setTethering(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 6
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-virtual {p0, p1, p2}, Lcom/android/server/enterprise/restriction/RestrictionPolicy;->setUsbTethering(Landroid/app/enterprise/ContextInfo;Z)Z
 
@@ -15908,8 +15611,6 @@
 
 .method public setUsbDebuggingEnabled(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 8
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/restriction/RestrictionPolicy;->enforceOwnerOnlyAndRestrictionPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -15992,8 +15693,6 @@
 
 .method public setUsbKiesAvailability(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/restriction/RestrictionPolicy;->enforceOwnerOnlyAndRestrictionPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -16004,8 +15703,6 @@
 
 .method public setUsbMassStorage(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 9
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/restriction/RestrictionPolicy;->enforceOwnerOnlyAndRestrictionPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -16115,8 +15812,6 @@
 
 .method public setUsbMediaPlayerAvailability(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 10
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/restriction/RestrictionPolicy;->enforceOwnerOnlyAndRestrictionPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -16233,8 +15928,6 @@
 
 .method public setUsbTethering(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 13
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/restriction/RestrictionPolicy;->enforceOwnerOnlyAndTetheringPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -16350,8 +16043,6 @@
 
 .method public setUseSecureKeypad(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/restriction/RestrictionPolicy;->enforceRestrictionPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -16441,8 +16132,6 @@
 
 .method public setWifiTethering(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 15
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-direct/range {p0 .. p1}, Lcom/android/server/enterprise/restriction/RestrictionPolicy;->enforceOwnerOnlyAndTetheringPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 

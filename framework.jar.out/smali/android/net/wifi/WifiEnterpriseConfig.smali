@@ -152,7 +152,6 @@
 
 .method public constructor <init>(Landroid/net/wifi/WifiEnterpriseConfig;)V
     .locals 4
-    .param p1    # Landroid/net/wifi/WifiEnterpriseConfig;
 
     const/4 v3, 0x0
 
@@ -242,8 +241,6 @@
 
 .method public constructor <init>(Landroid/net/wifi/WifiEnterpriseConfig;Z)V
     .locals 5
-    .param p1    # Landroid/net/wifi/WifiEnterpriseConfig;
-    .param p2    # Z
 
     const/4 v4, 0x0
 
@@ -426,7 +423,6 @@
 
 .method static synthetic access$000(Landroid/net/wifi/WifiEnterpriseConfig;)Ljava/util/HashMap;
     .locals 1
-    .param p0    # Landroid/net/wifi/WifiEnterpriseConfig;
 
     iget-object v0, p0, Landroid/net/wifi/WifiEnterpriseConfig;->mFields:Ljava/util/HashMap;
 
@@ -435,8 +431,6 @@
 
 .method static synthetic access$102(Landroid/net/wifi/WifiEnterpriseConfig;Ljava/security/cert/X509Certificate;)Ljava/security/cert/X509Certificate;
     .locals 0
-    .param p0    # Landroid/net/wifi/WifiEnterpriseConfig;
-    .param p1    # Ljava/security/cert/X509Certificate;
 
     iput-object p1, p0, Landroid/net/wifi/WifiEnterpriseConfig;->mCaCert:Ljava/security/cert/X509Certificate;
 
@@ -445,8 +439,6 @@
 
 .method static synthetic access$202(Landroid/net/wifi/WifiEnterpriseConfig;Ljava/security/PrivateKey;)Ljava/security/PrivateKey;
     .locals 0
-    .param p0    # Landroid/net/wifi/WifiEnterpriseConfig;
-    .param p1    # Ljava/security/PrivateKey;
 
     iput-object p1, p0, Landroid/net/wifi/WifiEnterpriseConfig;->mClientPrivateKey:Ljava/security/PrivateKey;
 
@@ -455,8 +447,6 @@
 
 .method static synthetic access$302(Landroid/net/wifi/WifiEnterpriseConfig;Ljava/security/cert/X509Certificate;)Ljava/security/cert/X509Certificate;
     .locals 0
-    .param p0    # Landroid/net/wifi/WifiEnterpriseConfig;
-    .param p1    # Ljava/security/cert/X509Certificate;
 
     iput-object p1, p0, Landroid/net/wifi/WifiEnterpriseConfig;->mClientCertificate:Ljava/security/cert/X509Certificate;
 
@@ -465,8 +455,6 @@
 
 .method static synthetic access$402(Landroid/net/wifi/WifiEnterpriseConfig;Ljava/security/cert/X509Certificate;)Ljava/security/cert/X509Certificate;
     .locals 0
-    .param p0    # Landroid/net/wifi/WifiEnterpriseConfig;
-    .param p1    # Ljava/security/cert/X509Certificate;
 
     iput-object p1, p0, Landroid/net/wifi/WifiEnterpriseConfig;->mwapiASCert:Ljava/security/cert/X509Certificate;
 
@@ -475,8 +463,6 @@
 
 .method static synthetic access$502(Landroid/net/wifi/WifiEnterpriseConfig;Ljava/security/cert/X509Certificate;)Ljava/security/cert/X509Certificate;
     .locals 0
-    .param p0    # Landroid/net/wifi/WifiEnterpriseConfig;
-    .param p1    # Ljava/security/cert/X509Certificate;
 
     iput-object p1, p0, Landroid/net/wifi/WifiEnterpriseConfig;->mwapiUserCert:Ljava/security/cert/X509Certificate;
 
@@ -485,7 +471,6 @@
 
 .method private convertToQuotedString(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -516,8 +501,6 @@
 
 .method private getFieldValue(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v2, p0, Landroid/net/wifi/WifiEnterpriseConfig;->mFields:Ljava/util/HashMap;
 
@@ -586,9 +569,6 @@
 
 .method private getStringIndex([Ljava/lang/String;Ljava/lang/String;I)I
     .locals 2
-    .param p1    # [Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     invoke-static {p2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -728,7 +708,6 @@
 
 .method static hasHardwareBackedKey(Ljava/security/cert/Certificate;)Z
     .locals 1
-    .param p0    # Ljava/security/cert/Certificate;
 
     invoke-virtual {p0}, Ljava/security/cert/Certificate;->getPublicKey()Ljava/security/PublicKey;
 
@@ -747,7 +726,6 @@
 
 .method static isHardwareBackedKey(Ljava/security/PrivateKey;)Z
     .locals 1
-    .param p0    # Ljava/security/PrivateKey;
 
     invoke-interface {p0}, Ljava/security/PrivateKey;->getAlgorithm()Ljava/lang/String;
 
@@ -762,9 +740,6 @@
 
 .method private putCertInKeyStore(Landroid/security/KeyStore;Ljava/lang/String;Ljava/security/cert/Certificate;)Z
     .locals 6
-    .param p1    # Landroid/security/KeyStore;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/security/cert/Certificate;
 
     const/4 v3, 0x0
 
@@ -808,7 +783,6 @@
 
 .method private removeDoubleQuotes(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/16 v3, 0x22
 
@@ -860,9 +834,6 @@
 
 .method private setFieldValue(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     invoke-static {p2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -909,8 +880,6 @@
 
 .method private writeCertificate(Landroid/os/Parcel;Ljava/security/cert/X509Certificate;)V
     .locals 4
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # Ljava/security/cert/X509Certificate;
 
     const/4 v3, 0x0
 
@@ -1085,7 +1054,6 @@
 
 .method getKeyId(Landroid/net/wifi/WifiEnterpriseConfig;)Ljava/lang/String;
     .locals 4
-    .param p1    # Landroid/net/wifi/WifiEnterpriseConfig;
 
     iget-object v2, p0, Landroid/net/wifi/WifiEnterpriseConfig;->mFields:Ljava/util/HashMap;
 
@@ -1299,7 +1267,6 @@
 
 .method initializeSoftwareKeystoreFlag(Landroid/security/KeyStore;)V
     .locals 3
-    .param p1    # Landroid/security/KeyStore;
 
     const-string v1, "client_cert"
 
@@ -1325,8 +1292,6 @@
 
 .method installKeys(Landroid/security/KeyStore;Ljava/lang/String;)Z
     .locals 13
-    .param p1    # Landroid/security/KeyStore;
-    .param p2    # Ljava/lang/String;
 
     const/4 v12, 0x1
 
@@ -1602,7 +1567,6 @@
 
 .method migrateCerts(Landroid/security/KeyStore;)V
     .locals 9
-    .param p1    # Landroid/security/KeyStore;
 
     const/4 v8, -0x1
 
@@ -1959,8 +1923,6 @@
 
 .method migrateOldEapTlsNative(Landroid/net/wifi/WifiNative;I)Z
     .locals 5
-    .param p1    # Landroid/net/wifi/WifiNative;
-    .param p2    # I
 
     const/4 v2, 0x0
 
@@ -2142,7 +2104,6 @@
 
 .method removeKeys(Landroid/security/KeyStore;)V
     .locals 7
-    .param p1    # Landroid/security/KeyStore;
 
     const/16 v6, 0x3f2
 
@@ -2311,7 +2272,6 @@
 
 .method public setAnonymousIdentity(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "anonymous_identity"
 
@@ -2324,7 +2284,6 @@
 
 .method public setCCMEnabled(Z)V
     .locals 3
-    .param p1    # Z
 
     const-string v0, "WifiEnterpriseConfig"
 
@@ -2393,7 +2352,6 @@
 
 .method public setCaCertificate(Ljava/security/cert/X509Certificate;)V
     .locals 2
-    .param p1    # Ljava/security/cert/X509Certificate;
 
     if-eqz p1, :cond_1
 
@@ -2427,7 +2385,6 @@
 
 .method public setCaCertificateAlias(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "ca_cert"
 
@@ -2440,7 +2397,6 @@
 
 .method public setClientCertificateAlias(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -2529,8 +2485,6 @@
 
 .method public setClientKeyEntry(Ljava/security/PrivateKey;Ljava/security/cert/X509Certificate;)V
     .locals 2
-    .param p1    # Ljava/security/PrivateKey;
-    .param p2    # Ljava/security/cert/X509Certificate;
 
     if-eqz p2, :cond_2
 
@@ -2586,7 +2540,6 @@
 
 .method public setEapMethod(I)V
     .locals 3
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -2635,7 +2588,6 @@
 
 .method public setIdentity(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "identity"
 
@@ -2648,7 +2600,6 @@
 
 .method public setPacFile(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "pac_file"
 
@@ -2661,7 +2612,6 @@
 
 .method public setPassword(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "password"
 
@@ -2674,7 +2624,6 @@
 
 .method public setPhase1Method(I)V
     .locals 4
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -2745,7 +2694,6 @@
 
 .method public setPhase2Method(I)V
     .locals 4
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -2816,7 +2764,6 @@
 
 .method public setSubjectMatch(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "subject_match"
 
@@ -2829,7 +2776,6 @@
 
 .method public setWapiASCertificateAlias(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const-string/jumbo v0, "wapi_as_cert"
 
@@ -2842,7 +2788,6 @@
 
 .method public setWapiUserCertificateAlias(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const-string/jumbo v0, "wapi_user_cert"
 
@@ -2921,8 +2866,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 6
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     const/4 v5, 0x0
 

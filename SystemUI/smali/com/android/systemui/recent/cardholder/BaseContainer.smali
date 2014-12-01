@@ -221,7 +221,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -234,8 +233,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -246,9 +243,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v5, -0x1
 
@@ -619,7 +613,6 @@
 
 .method static synthetic access$000(Lcom/android/systemui/recent/cardholder/BaseContainer;)Lcom/android/systemui/recent/cardholder/RecentsCallback;
     .locals 1
-    .param p0    # Lcom/android/systemui/recent/cardholder/BaseContainer;
 
     iget-object v0, p0, Lcom/android/systemui/recent/cardholder/BaseContainer;->mCallback:Lcom/android/systemui/recent/cardholder/RecentsCallback;
 
@@ -628,7 +621,6 @@
 
 .method static synthetic access$100(Lcom/android/systemui/recent/cardholder/BaseContainer;)Z
     .locals 1
-    .param p0    # Lcom/android/systemui/recent/cardholder/BaseContainer;
 
     iget-boolean v0, p0, Lcom/android/systemui/recent/cardholder/BaseContainer;->mChildDismissDimLayerAnimating:Z
 
@@ -637,8 +629,6 @@
 
 .method static synthetic access$102(Lcom/android/systemui/recent/cardholder/BaseContainer;Z)Z
     .locals 0
-    .param p0    # Lcom/android/systemui/recent/cardholder/BaseContainer;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/systemui/recent/cardholder/BaseContainer;->mChildDismissDimLayerAnimating:Z
 
@@ -647,7 +637,6 @@
 
 .method static synthetic access$200(Lcom/android/systemui/recent/cardholder/BaseContainer;)Z
     .locals 1
-    .param p0    # Lcom/android/systemui/recent/cardholder/BaseContainer;
 
     iget-boolean v0, p0, Lcom/android/systemui/recent/cardholder/BaseContainer;->mChildDismissScrollAnimating:Z
 
@@ -656,8 +645,6 @@
 
 .method static synthetic access$202(Lcom/android/systemui/recent/cardholder/BaseContainer;Z)Z
     .locals 0
-    .param p0    # Lcom/android/systemui/recent/cardholder/BaseContainer;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/systemui/recent/cardholder/BaseContainer;->mChildDismissScrollAnimating:Z
 
@@ -666,7 +653,6 @@
 
 .method static synthetic access$300(Lcom/android/systemui/recent/cardholder/BaseContainer;)I
     .locals 1
-    .param p0    # Lcom/android/systemui/recent/cardholder/BaseContainer;
 
     iget v0, p0, Lcom/android/systemui/recent/cardholder/BaseContainer;->mPagingTouchSlop:I
 
@@ -675,7 +661,6 @@
 
 .method static synthetic access$400(Lcom/android/systemui/recent/cardholder/BaseContainer;)Z
     .locals 1
-    .param p0    # Lcom/android/systemui/recent/cardholder/BaseContainer;
 
     iget-boolean v0, p0, Lcom/android/systemui/recent/cardholder/BaseContainer;->mSkipCacheSave:Z
 
@@ -684,8 +669,6 @@
 
 .method static synthetic access$402(Lcom/android/systemui/recent/cardholder/BaseContainer;Z)Z
     .locals 0
-    .param p0    # Lcom/android/systemui/recent/cardholder/BaseContainer;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/systemui/recent/cardholder/BaseContainer;->mSkipCacheSave:Z
 
@@ -694,7 +677,6 @@
 
 .method static synthetic access$500(Lcom/android/systemui/recent/cardholder/BaseContainer;)V
     .locals 0
-    .param p0    # Lcom/android/systemui/recent/cardholder/BaseContainer;
 
     invoke-direct {p0}, Lcom/android/systemui/recent/cardholder/BaseContainer;->update()V
 
@@ -703,7 +685,6 @@
 
 .method private addToRecycledViews(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Lcom/android/systemui/recent/cardholder/BaseContainer;->mRecycledViews:Ljava/util/HashSet;
 
@@ -803,7 +784,6 @@
 
 .method private scrollDown(I)V
     .locals 20
-    .param p1    # I
 
     invoke-direct/range {p0 .. p0}, Lcom/android/systemui/recent/cardholder/BaseContainer;->getViewData()Landroid/util/SparseArray;
 
@@ -1145,7 +1125,6 @@
 
 .method private scrollUp(I)V
     .locals 22
-    .param p1    # I
 
     invoke-direct/range {p0 .. p0}, Lcom/android/systemui/recent/cardholder/BaseContainer;->getViewData()Landroid/util/SparseArray;
 
@@ -1547,8 +1526,6 @@
 
 .method private setOverScrollEffectPadding(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     return-void
 .end method
@@ -2007,7 +1984,6 @@
 # virtual methods
 .method public addView(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     const/4 v1, 0x0
 
@@ -2042,7 +2018,6 @@
 
 .method public canChildBeDismissed(Landroid/view/View;)Z
     .locals 8
-    .param p1    # Landroid/view/View;
 
     const/4 v5, 0x0
 
@@ -2148,7 +2123,6 @@
 
 .method protected createDisappearAnimation(Landroid/view/View;)Landroid/view/animation/Animation;
     .locals 2
-    .param p1    # Landroid/view/View;
 
     const/high16 v1, 0x3f800000
 
@@ -2185,7 +2159,6 @@
 
 .method public dismissChild(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Lcom/android/systemui/recent/cardholder/BaseContainer;->mSwipeHelper:Lcom/android/systemui/SwipeHelper;
 
@@ -2198,7 +2171,6 @@
 
 .method public dispatchTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 6
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v5, 0x3
 
@@ -2362,7 +2334,6 @@
 
 .method doScroll(F)Z
     .locals 1
-    .param p1    # F
 
     const/4 v0, -0x1
 
@@ -2375,8 +2346,6 @@
 
 .method doScroll(FI)Z
     .locals 38
-    .param p1    # F
-    .param p2    # I
 
     move-object/from16 v0, p0
 
@@ -4666,8 +4635,6 @@
 
 .method doSlideOut(Landroid/view/View;F)V
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # F
 
     invoke-virtual {p0, p1}, Lcom/android/systemui/recent/cardholder/BaseContainer;->getSlidePosition(Landroid/view/View;)F
 
@@ -4700,7 +4667,6 @@
 
 .method public draw(Landroid/graphics/Canvas;)V
     .locals 14
-    .param p1    # Landroid/graphics/Canvas;
 
     const/4 v10, 0x0
 
@@ -4798,7 +4764,6 @@
 
 .method public getChildAtPosition(Landroid/view/MotionEvent;)Landroid/view/View;
     .locals 7
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getX()F
 
@@ -4984,7 +4949,6 @@
 
 .method public getChildContentView(Landroid/view/View;)Landroid/view/View;
     .locals 1
-    .param p1    # Landroid/view/View;
 
     const v0, 0x7f08001c
 
@@ -5021,7 +4985,6 @@
 
 .method public getInterpolationForScale(F)F
     .locals 3
-    .param p1    # F
 
     const/high16 v1, 0x41c80000
 
@@ -5056,7 +5019,6 @@
 
 .method public getInterpolationForTransition(F)F
     .locals 3
-    .param p1    # F
 
     const/high16 v1, 0x42b40000
 
@@ -5083,7 +5045,6 @@
 
 .method public getNextChild(I)Landroid/view/View;
     .locals 3
-    .param p1    # I
 
     const/4 v2, 0x1
 
@@ -5302,7 +5263,6 @@
 
 .method public onBeginDrag(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     const/4 v0, 0x1
 
@@ -5315,7 +5275,6 @@
 
 .method public onChildDismissed(Landroid/view/View;)V
     .locals 11
-    .param p1    # Landroid/view/View;
 
     const/4 v10, 0x4
 
@@ -5537,7 +5496,6 @@
 
 .method protected onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 3
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/view/View;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -5576,7 +5534,6 @@
 
 .method public onDragCancelled(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     return-void
 .end method
@@ -5611,10 +5568,6 @@
 
 .method protected onSizeChanged(IIII)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-super {p0, p1, p2, p3, p4}, Landroid/view/View;->onSizeChanged(IIII)V
 
@@ -5836,8 +5789,6 @@
 
 .method protected onVisibilityChanged(Landroid/view/View;I)V
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     invoke-super {p0, p1, p2}, Landroid/view/View;->onVisibilityChanged(Landroid/view/View;I)V
 
@@ -5883,7 +5834,6 @@
 
 .method public removeViewInLayout(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p0, p1}, Lcom/android/systemui/recent/cardholder/BaseContainer;->dismissChild(Landroid/view/View;)V
 
@@ -5910,7 +5860,6 @@
 
 .method public setAdapter(Lcom/android/systemui/recent/cardholder/RecentsPanelView$TaskDescriptionAdapter;)V
     .locals 2
-    .param p1    # Lcom/android/systemui/recent/cardholder/RecentsPanelView$TaskDescriptionAdapter;
 
     iput-object p1, p0, Lcom/android/systemui/recent/cardholder/BaseContainer;->mAdapter:Lcom/android/systemui/recent/cardholder/RecentsPanelView$TaskDescriptionAdapter;
 
@@ -5931,7 +5880,6 @@
 
 .method public setCallback(Lcom/android/systemui/recent/cardholder/RecentsCallback;)V
     .locals 0
-    .param p1    # Lcom/android/systemui/recent/cardholder/RecentsCallback;
 
     iput-object p1, p0, Lcom/android/systemui/recent/cardholder/BaseContainer;->mCallback:Lcom/android/systemui/recent/cardholder/RecentsCallback;
 
@@ -5940,14 +5888,12 @@
 
 .method public setLayoutTransition(Landroid/animation/LayoutTransition;)V
     .locals 0
-    .param p1    # Landroid/animation/LayoutTransition;
 
     return-void
 .end method
 
 .method public setMinSwipeAlpha(F)V
     .locals 1
-    .param p1    # F
 
     iget-object v0, p0, Lcom/android/systemui/recent/cardholder/BaseContainer;->mSwipeHelper:Lcom/android/systemui/SwipeHelper;
 
@@ -5958,8 +5904,6 @@
 
 .method setNewPosition(Landroid/view/View;F)Z
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # F
 
     const/4 v0, 0x1
 
@@ -6086,7 +6030,6 @@
 
 .method protected stopAnimators(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     iget-object v1, p0, Lcom/android/systemui/recent/cardholder/BaseContainer;->animators:Ljava/util/HashMap;
 

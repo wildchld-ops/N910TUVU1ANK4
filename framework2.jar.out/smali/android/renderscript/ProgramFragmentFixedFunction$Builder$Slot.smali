@@ -25,8 +25,6 @@
 # direct methods
 .method constructor <init>(Landroid/renderscript/ProgramFragmentFixedFunction$Builder;Landroid/renderscript/ProgramFragmentFixedFunction$Builder$EnvMode;Landroid/renderscript/ProgramFragmentFixedFunction$Builder$Format;)V
     .locals 0
-    .param p2    # Landroid/renderscript/ProgramFragmentFixedFunction$Builder$EnvMode;
-    .param p3    # Landroid/renderscript/ProgramFragmentFixedFunction$Builder$Format;
 
     iput-object p1, p0, Landroid/renderscript/ProgramFragmentFixedFunction$Builder$Slot;->this$0:Landroid/renderscript/ProgramFragmentFixedFunction$Builder;
 

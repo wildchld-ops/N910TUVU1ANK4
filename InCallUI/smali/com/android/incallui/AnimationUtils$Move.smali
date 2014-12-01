@@ -25,9 +25,6 @@
 
 .method public static move(Landroid/view/View;Landroid/view/View;Landroid/view/View;)V
     .locals 1
-    .param p0    # Landroid/view/View;
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/View;
 
     const/16 v0, 0xfa
 
@@ -38,10 +35,6 @@
 
 .method public static move(Landroid/view/View;Landroid/view/View;Landroid/view/View;I)V
     .locals 22
-    .param p0    # Landroid/view/View;
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/View;
-    .param p3    # I
 
     invoke-virtual/range {p0 .. p0}, Landroid/view/View;->getVisibility()I
 
@@ -433,8 +426,6 @@
 
 .method public static moveDownToHide(Landroid/view/View;Z)V
     .locals 8
-    .param p0    # Landroid/view/View;
-    .param p1    # Z
 
     const-wide/16 v6, 0xfa
 
@@ -514,8 +505,6 @@
 
 .method public static moveUpToShow(Landroid/view/View;Z)V
     .locals 8
-    .param p0    # Landroid/view/View;
-    .param p1    # Z
 
     const-wide/16 v6, 0xfa
 

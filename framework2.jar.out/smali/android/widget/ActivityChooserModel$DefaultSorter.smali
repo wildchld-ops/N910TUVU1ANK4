@@ -56,8 +56,6 @@
 
 .method synthetic constructor <init>(Landroid/widget/ActivityChooserModel;Landroid/widget/ActivityChooserModel$1;)V
     .locals 0
-    .param p1    # Landroid/widget/ActivityChooserModel;
-    .param p2    # Landroid/widget/ActivityChooserModel$1;
 
     invoke-direct {p0, p1}, Landroid/widget/ActivityChooserModel$DefaultSorter;-><init>(Landroid/widget/ActivityChooserModel;)V
 
@@ -68,7 +66,6 @@
 # virtual methods
 .method public sort(Landroid/content/Intent;Ljava/util/List;Ljava/util/List;)V
     .locals 10
-    .param p1    # Landroid/content/Intent;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

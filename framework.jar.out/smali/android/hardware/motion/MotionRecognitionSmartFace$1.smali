@@ -36,8 +36,6 @@
 # virtual methods
 .method public onInfo(Lcom/sec/android/smartface/FaceInfo;I)V
     .locals 3
-    .param p1    # Lcom/sec/android/smartface/FaceInfo;
-    .param p2    # I
 
     and-int/lit8 v0, p2, 0x10
 

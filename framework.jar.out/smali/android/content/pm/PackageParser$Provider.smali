@@ -32,8 +32,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/pm/PackageParser$ParseComponentArgs;Landroid/content/pm/ProviderInfo;)V
     .locals 2
-    .param p1    # Landroid/content/pm/PackageParser$ParseComponentArgs;
-    .param p2    # Landroid/content/pm/ProviderInfo;
 
     invoke-direct {p0, p1, p2}, Landroid/content/pm/PackageParser$Component;-><init>(Landroid/content/pm/PackageParser$ParseComponentArgs;Landroid/content/pm/ComponentInfo;)V
 
@@ -56,7 +54,6 @@
 
 .method public constructor <init>(Landroid/content/pm/PackageParser$Provider;)V
     .locals 1
-    .param p1    # Landroid/content/pm/PackageParser$Provider;
 
     invoke-direct {p0, p1}, Landroid/content/pm/PackageParser$Component;-><init>(Landroid/content/pm/PackageParser$Component;)V
 
@@ -75,7 +72,6 @@
 # virtual methods
 .method public setPackageName(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-super {p0, p1}, Landroid/content/pm/PackageParser$Component;->setPackageName(Ljava/lang/String;)V
 

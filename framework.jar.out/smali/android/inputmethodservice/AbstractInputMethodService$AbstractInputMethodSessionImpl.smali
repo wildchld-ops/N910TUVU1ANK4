@@ -44,9 +44,6 @@
 # virtual methods
 .method public dispatchGenericMotionEvent(ILandroid/view/MotionEvent;Landroid/view/inputmethod/InputMethodSession$EventCallback;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/view/MotionEvent;
-    .param p3    # Landroid/view/inputmethod/InputMethodSession$EventCallback;
 
     iget-object v1, p0, Landroid/inputmethodservice/AbstractInputMethodService$AbstractInputMethodSessionImpl;->this$0:Landroid/inputmethodservice/AbstractInputMethodService;
 
@@ -64,9 +61,6 @@
 
 .method public dispatchKeyEvent(ILandroid/view/KeyEvent;Landroid/view/inputmethod/InputMethodSession$EventCallback;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
-    .param p3    # Landroid/view/inputmethod/InputMethodSession$EventCallback;
 
     iget-object v1, p0, Landroid/inputmethodservice/AbstractInputMethodService$AbstractInputMethodSessionImpl;->this$0:Landroid/inputmethodservice/AbstractInputMethodService;
 
@@ -110,9 +104,6 @@
 
 .method public dispatchTrackballEvent(ILandroid/view/MotionEvent;Landroid/view/inputmethod/InputMethodSession$EventCallback;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/view/MotionEvent;
-    .param p3    # Landroid/view/inputmethod/InputMethodSession$EventCallback;
 
     iget-object v1, p0, Landroid/inputmethodservice/AbstractInputMethodService$AbstractInputMethodSessionImpl;->this$0:Landroid/inputmethodservice/AbstractInputMethodService;
 
@@ -160,7 +151,6 @@
 
 .method public setEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-boolean v0, p0, Landroid/inputmethodservice/AbstractInputMethodService$AbstractInputMethodSessionImpl;->mRevoked:Z
 

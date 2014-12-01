@@ -57,9 +57,6 @@
 
 .method public write([CII)V
     .locals 0
-    .param p1    # [C
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

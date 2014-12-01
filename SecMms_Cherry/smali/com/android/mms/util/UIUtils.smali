@@ -60,10 +60,6 @@
 
 .method public static addBlankForTTS(Landroid/content/Context;Ljava/lang/String;Ljava/lang/StringBuffer;I)V
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/StringBuffer;
-    .param p3    # I
 
     const/16 v5, 0x20
 
@@ -186,8 +182,6 @@
 
 .method public static addLinks(Landroid/text/Spannable;I)V
     .locals 0
-    .param p0    # Landroid/text/Spannable;
-    .param p1    # I
 
     invoke-static {p0, p1}, Landroid/text/util/Linkify;->addLinks(Landroid/text/Spannable;I)Z
 
@@ -196,8 +190,6 @@
 
 .method public static addLinks(Landroid/widget/TextView;I)V
     .locals 0
-    .param p0    # Landroid/widget/TextView;
-    .param p1    # I
 
     if-nez p0, :cond_0
 
@@ -214,7 +206,6 @@
 
 .method public static clearText(Landroid/widget/TextView;)V
     .locals 2
-    .param p0    # Landroid/widget/TextView;
 
     if-nez p0, :cond_0
 
@@ -243,8 +234,6 @@
 
 .method public static copyToClipboard(Landroid/content/Context;Ljava/lang/String;)V
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -305,7 +294,6 @@
 
 .method public static createSearchHightlightPattern(Ljava/lang/String;)Ljava/util/regex/Pattern;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     if-nez p0, :cond_0
 
@@ -330,8 +318,6 @@
 
 .method public static delayedScrollTo(Landroid/widget/ScrollView;I)V
     .locals 3
-    .param p0    # Landroid/widget/ScrollView;
-    .param p1    # I
 
     if-eqz p0, :cond_0
 
@@ -420,7 +406,6 @@
 
 .method public static dp2Pixels(F)I
     .locals 2
-    .param p0    # F
 
     sget v0, Lcom/android/mms/util/UIUtils;->density:F
 
@@ -437,7 +422,6 @@
 
 .method public static getActionBarHeight(Landroid/content/Context;)I
     .locals 6
-    .param p0    # Landroid/content/Context;
 
     const/4 v5, 0x0
 
@@ -514,7 +498,6 @@
 
 .method private static getHighlighColor(Landroid/content/Context;)Landroid/content/res/ColorStateList;
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     sget-object v0, Lcom/android/mms/util/UIUtils;->sHighsightColor:Landroid/content/res/ColorStateList;
 
@@ -540,9 +523,6 @@
 
 .method public static getSelectedLinkText(Landroid/widget/TextView;Landroid/view/MotionEvent;[I)Ljava/lang/CharSequence;
     .locals 21
-    .param p0    # Landroid/widget/TextView;
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # [I
 
     const-string v11, ""
 
@@ -939,12 +919,6 @@
 
 .method public static highlightMessage(Landroid/content/Context;Ljava/util/regex/Pattern;[I[ILandroid/text/SpannableStringBuilder;Ljava/lang/String;)V
     .locals 14
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/util/regex/Pattern;
-    .param p2    # [I
-    .param p3    # [I
-    .param p4    # Landroid/text/SpannableStringBuilder;
-    .param p5    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -1226,7 +1200,6 @@
 
 .method public static recycleBitmap(Landroid/graphics/drawable/BitmapDrawable;)V
     .locals 2
-    .param p0    # Landroid/graphics/drawable/BitmapDrawable;
 
     if-nez p0, :cond_0
 
@@ -1249,11 +1222,6 @@
 
 .method public static registerAssistantMenu(Landroid/view/accessibility/AccessibilityManager;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
     .locals 4
-    .param p0    # Landroid/view/accessibility/AccessibilityManager;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Z
 
     new-instance v0, Landroid/os/Bundle;
 
@@ -1330,7 +1298,6 @@
 
 .method public static removeColon(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -1362,9 +1329,6 @@
 
 .method public static setDefaultChatMenu(Landroid/content/Context;Landroid/view/Menu;Z)V
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/view/Menu;
-    .param p2    # Z
 
     const/4 v1, 0x1
 
@@ -1395,8 +1359,6 @@
 
 .method public static setDefaultSmsMenu(Landroid/content/Context;Landroid/view/Menu;)V
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/view/Menu;
 
     invoke-static {p0}, Lcom/android/mms/util/TelephonyPermission;->getInstance(Landroid/content/Context;)Lcom/android/mms/util/TelephonyPermission;
 
@@ -1415,9 +1377,6 @@
 
 .method public static setDefaultSmsMenu(Landroid/content/Context;Landroid/view/Menu;I)V
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/view/Menu;
-    .param p2    # I
 
     invoke-static {p0}, Lcom/android/mms/util/TelephonyPermission;->getInstance(Landroid/content/Context;)Lcom/android/mms/util/TelephonyPermission;
 
@@ -1438,8 +1397,6 @@
 
 .method public static setVisible(Landroid/view/View;Z)V
     .locals 3
-    .param p0    # Landroid/view/View;
-    .param p1    # Z
 
     if-nez p0, :cond_1
 

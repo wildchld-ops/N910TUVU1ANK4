@@ -70,7 +70,6 @@
 
 .method public static getInstance(Landroid/content/Context;)Lcom/diotek/ime/framework/input/swiftkey/SwiftkeyKeyLearningManager;
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     sget-object v1, Lcom/diotek/ime/framework/input/swiftkey/SwiftkeyKeyLearningManager;->mInstance:Lcom/diotek/ime/framework/input/swiftkey/SwiftkeyKeyLearningManager;
 
@@ -106,8 +105,6 @@
 
 .method private isNearPoints(Lcom/diotek/ime/framework/input/swiftkey/SwiftkeyTouchInfo;Lcom/diotek/ime/framework/input/swiftkey/SwiftkeyTouchInfo;)Z
     .locals 8
-    .param p1    # Lcom/diotek/ime/framework/input/swiftkey/SwiftkeyTouchInfo;
-    .param p2    # Lcom/diotek/ime/framework/input/swiftkey/SwiftkeyTouchInfo;
 
     const/4 v4, 0x1
 
@@ -207,8 +204,6 @@
 # virtual methods
 .method public addKeyCode(Ljava/lang/StringBuilder;C)V
     .locals 4
-    .param p1    # Ljava/lang/StringBuilder;
-    .param p2    # C
 
     invoke-virtual {p1}, Ljava/lang/StringBuilder;->length()I
 
@@ -255,7 +250,6 @@
 
 .method public addNewText(Ljava/lang/StringBuilder;)V
     .locals 4
-    .param p1    # Ljava/lang/StringBuilder;
 
     invoke-virtual {p0}, Lcom/diotek/ime/framework/input/swiftkey/SwiftkeyKeyLearningManager;->clearTouchPoints()V
 
@@ -296,8 +290,6 @@
 
 .method public addTouchPoint(Ljava/lang/StringBuilder;Landroid/graphics/PointF;)V
     .locals 4
-    .param p1    # Ljava/lang/StringBuilder;
-    .param p2    # Landroid/graphics/PointF;
 
     invoke-virtual {p1}, Ljava/lang/StringBuilder;->length()I
 
@@ -413,7 +405,6 @@
 
 .method public needToKeyLearning(Ljava/lang/StringBuilder;)Z
     .locals 5
-    .param p1    # Ljava/lang/StringBuilder;
 
     const/4 v4, 0x0
 
@@ -504,7 +495,6 @@
 
 .method public needToKeyLearningKorPhonpad(Ljava/lang/StringBuilder;)Z
     .locals 2
-    .param p1    # Ljava/lang/StringBuilder;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/input/swiftkey/SwiftkeyKeyLearningManager;->mModifiedTouchPoints:Ljava/util/LinkedList;
 

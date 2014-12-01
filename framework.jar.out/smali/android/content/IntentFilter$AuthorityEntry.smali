@@ -27,7 +27,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/Parcel;)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -70,8 +69,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v1, 0x1
 
@@ -134,7 +131,6 @@
 
 .method static synthetic access$000(Landroid/content/IntentFilter$AuthorityEntry;)Ljava/lang/String;
     .locals 1
-    .param p0    # Landroid/content/IntentFilter$AuthorityEntry;
 
     iget-object v0, p0, Landroid/content/IntentFilter$AuthorityEntry;->mHost:Ljava/lang/String;
 
@@ -143,7 +139,6 @@
 
 .method static synthetic access$100(Landroid/content/IntentFilter$AuthorityEntry;)I
     .locals 1
-    .param p0    # Landroid/content/IntentFilter$AuthorityEntry;
 
     iget v0, p0, Landroid/content/IntentFilter$AuthorityEntry;->mPort:I
 
@@ -152,7 +147,6 @@
 
 .method static synthetic access$200(Landroid/content/IntentFilter$AuthorityEntry;)Z
     .locals 1
-    .param p0    # Landroid/content/IntentFilter$AuthorityEntry;
 
     iget-boolean v0, p0, Landroid/content/IntentFilter$AuthorityEntry;->mWild:Z
 
@@ -179,7 +173,6 @@
 
 .method public match(Landroid/net/Uri;)I
     .locals 4
-    .param p1    # Landroid/net/Uri;
 
     const/4 v1, -0x2
 
@@ -259,7 +252,6 @@
 
 .method writeToParcel(Landroid/os/Parcel;)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     iget-object v0, p0, Landroid/content/IntentFilter$AuthorityEntry;->mOrigHost:Ljava/lang/String;
 

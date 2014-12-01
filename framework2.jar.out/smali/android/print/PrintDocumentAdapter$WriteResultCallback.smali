@@ -33,14 +33,12 @@
 
 .method public onWriteFailed(Ljava/lang/CharSequence;)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
 
     return-void
 .end method
 
 .method public onWriteFinished([Landroid/print/PageRange;)V
     .locals 0
-    .param p1    # [Landroid/print/PageRange;
 
     return-void
 .end method

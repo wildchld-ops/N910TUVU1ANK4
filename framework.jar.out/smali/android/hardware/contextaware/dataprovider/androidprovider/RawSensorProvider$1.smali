@@ -36,15 +36,12 @@
 # virtual methods
 .method public final onAccuracyChanged(Landroid/hardware/Sensor;I)V
     .locals 0
-    .param p1    # Landroid/hardware/Sensor;
-    .param p2    # I
 
     return-void
 .end method
 
 .method public final onSensorChanged(Landroid/hardware/SensorEvent;)V
     .locals 7
-    .param p1    # Landroid/hardware/SensorEvent;
 
     iget-object v3, p0, Landroid/hardware/contextaware/dataprovider/androidprovider/RawSensorProvider$1;->this$0:Landroid/hardware/contextaware/dataprovider/androidprovider/RawSensorProvider;
 

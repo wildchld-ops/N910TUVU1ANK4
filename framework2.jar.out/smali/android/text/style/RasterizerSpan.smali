@@ -13,7 +13,6 @@
 # direct methods
 .method public constructor <init>(Landroid/graphics/Rasterizer;)V
     .locals 0
-    .param p1    # Landroid/graphics/Rasterizer;
 
     invoke-direct {p0}, Landroid/text/style/CharacterStyle;-><init>()V
 
@@ -34,7 +33,6 @@
 
 .method public updateDrawState(Landroid/text/TextPaint;)V
     .locals 1
-    .param p1    # Landroid/text/TextPaint;
 
     iget-object v0, p0, Landroid/text/style/RasterizerSpan;->mRasterizer:Landroid/graphics/Rasterizer;
 

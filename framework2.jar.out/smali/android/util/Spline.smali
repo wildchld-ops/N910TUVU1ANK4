@@ -14,9 +14,6 @@
 # direct methods
 .method private constructor <init>([F[F[F)V
     .locals 0
-    .param p1    # [F
-    .param p2    # [F
-    .param p3    # [F
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -31,8 +28,6 @@
 
 .method public static createMonotoneCubicSpline([F[F)Landroid/util/Spline;
     .locals 12
-    .param p0    # [F
-    .param p1    # [F
 
     const/4 v10, 0x0
 
@@ -259,7 +254,6 @@
 # virtual methods
 .method public interpolate(F)F
     .locals 9
-    .param p1    # F
 
     const/4 v5, 0x0
 

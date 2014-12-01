@@ -66,7 +66,7 @@
 
     iget-object v1, p0, Lcom/android/phone/PhoneGlobals$20;->this$0:Lcom/android/phone/PhoneGlobals;
 
-    invoke-virtual {v1}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v1}, Lcom/android/phone/PhoneGlobals;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -84,7 +84,7 @@
     :cond_0
     iget-object v1, p0, Lcom/android/phone/PhoneGlobals$20;->this$0:Lcom/android/phone/PhoneGlobals;
 
-    invoke-virtual {v1}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v1}, Lcom/android/phone/PhoneGlobals;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v1
 

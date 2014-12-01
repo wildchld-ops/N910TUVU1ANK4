@@ -14,9 +14,6 @@
 
 .method public static TimeFormat(Landroid/content/Context;II)Ljava/lang/StringBuilder;
     .locals 9
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # I
 
     const/16 v7, 0xc
 
@@ -199,7 +196,6 @@
 
 .method public static isAllOptionDisabled(Landroid/content/Context;)Z
     .locals 8
-    .param p0    # Landroid/content/Context;
 
     const/4 v4, 0x0
 

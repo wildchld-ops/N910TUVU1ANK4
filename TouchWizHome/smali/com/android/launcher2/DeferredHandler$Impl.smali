@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Lcom/android/launcher2/DeferredHandler;Lcom/android/launcher2/DeferredHandler$1;)V
     .locals 0
-    .param p1    # Lcom/android/launcher2/DeferredHandler;
-    .param p2    # Lcom/android/launcher2/DeferredHandler$1;
 
     invoke-direct {p0, p1}, Lcom/android/launcher2/DeferredHandler$Impl;-><init>(Lcom/android/launcher2/DeferredHandler;)V
 
@@ -46,7 +44,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 3
-    .param p1    # Landroid/os/Message;
 
     iget-object v1, p0, Lcom/android/launcher2/DeferredHandler$Impl;->this$0:Lcom/android/launcher2/DeferredHandler;
 

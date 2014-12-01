@@ -14,7 +14,6 @@
 
 .method static from(Landroid/speech/tts/TextToSpeech$OnUtteranceCompletedListener;)Landroid/speech/tts/UtteranceProgressListener;
     .locals 1
-    .param p0    # Landroid/speech/tts/TextToSpeech$OnUtteranceCompletedListener;
 
     new-instance v0, Landroid/speech/tts/UtteranceProgressListener$1;
 

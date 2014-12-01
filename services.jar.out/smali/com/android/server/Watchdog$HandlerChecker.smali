@@ -47,9 +47,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/Watchdog;Landroid/os/Handler;Ljava/lang/String;J)V
     .locals 1
-    .param p2    # Landroid/os/Handler;
-    .param p3    # Ljava/lang/String;
-    .param p4    # J
 
     iput-object p1, p0, Lcom/android/server/Watchdog$HandlerChecker;->this$0:Lcom/android/server/Watchdog;
 
@@ -78,7 +75,6 @@
 # virtual methods
 .method public addMonitor(Lcom/android/server/Watchdog$Monitor;)V
     .locals 1
-    .param p1    # Lcom/android/server/Watchdog$Monitor;
 
     iget-object v0, p0, Lcom/android/server/Watchdog$HandlerChecker;->mMonitors:Ljava/util/ArrayList;
 

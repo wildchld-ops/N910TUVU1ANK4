@@ -42,8 +42,6 @@
 
 .method synthetic constructor <init>(Lcom/android/server/sec/InternalClipboardExService;Lcom/android/server/sec/InternalClipboardExService$1;)V
     .locals 0
-    .param p1    # Lcom/android/server/sec/InternalClipboardExService;
-    .param p2    # Lcom/android/server/sec/InternalClipboardExService$1;
 
     invoke-direct {p0, p1}, Lcom/android/server/sec/InternalClipboardExService$ISharedClipboardDataList;-><init>(Lcom/android/server/sec/InternalClipboardExService;)V
 
@@ -62,7 +60,6 @@
 
 .method public getItem(I)Landroid/sec/clipboard/data/ClipboardData;
     .locals 4
-    .param p1    # I
 
     sget-boolean v1, Landroid/sec/clipboard/data/ClipboardDefine;->DEBUG:Z
 
@@ -217,7 +214,6 @@
 
 .method public getScrapItem(I)Landroid/sec/clipboard/data/ClipboardData;
     .locals 4
-    .param p1    # I
 
     sget-boolean v1, Landroid/sec/clipboard/data/ClipboardDefine;->DEBUG:Z
 
@@ -372,7 +368,6 @@
 
 .method public removeData(I)Z
     .locals 4
-    .param p1    # I
 
     sget-boolean v1, Landroid/sec/clipboard/data/ClipboardDefine;->DEBUG:Z
 
@@ -527,7 +522,6 @@
 
 .method public removeScrapData(I)Z
     .locals 4
-    .param p1    # I
 
     sget-boolean v1, Landroid/sec/clipboard/data/ClipboardDefine;->DEBUG:Z
 
@@ -836,8 +830,6 @@
 
 .method public updateData(ILandroid/sec/clipboard/data/ClipboardData;)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/sec/clipboard/data/ClipboardData;
 
     sget-boolean v1, Landroid/sec/clipboard/data/ClipboardDefine;->DEBUG:Z
 
@@ -992,8 +984,6 @@
 
 .method public updateScrapData(ILandroid/sec/clipboard/data/ClipboardData;)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/sec/clipboard/data/ClipboardData;
 
     sget-boolean v1, Landroid/sec/clipboard/data/ClipboardDefine;->DEBUG:Z
 

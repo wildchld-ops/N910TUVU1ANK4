@@ -22,8 +22,6 @@
 # direct methods
 .method public constructor <init>(ILjava/io/File;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/io/File;
 
     invoke-direct {p0, p1}, Lorg/apache/commons/io/output/ThresholdingOutputStream;-><init>(I)V
 
@@ -48,10 +46,6 @@
 
 .method public constructor <init>(ILjava/lang/String;Ljava/lang/String;Ljava/io/File;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/io/File;
 
     const/4 v0, 0x0
 
@@ -207,7 +201,6 @@
 
 .method public writeTo(Ljava/io/OutputStream;)V
     .locals 3
-    .param p1    # Ljava/io/OutputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

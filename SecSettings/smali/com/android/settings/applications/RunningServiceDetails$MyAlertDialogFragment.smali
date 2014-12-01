@@ -25,8 +25,6 @@
 
 .method public static newConfirmStop(ILandroid/content/ComponentName;)Lcom/android/settings/applications/RunningServiceDetails$MyAlertDialogFragment;
     .locals 3
-    .param p0    # I
-    .param p1    # Landroid/content/ComponentName;
 
     new-instance v1, Lcom/android/settings/applications/RunningServiceDetails$MyAlertDialogFragment;
 
@@ -65,7 +63,6 @@
 
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
     .locals 6
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v2, 0x0
 

@@ -29,13 +29,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/wm/BlackFrame;Landroid/view/SurfaceSession;IIIIII)V
     .locals 7
-    .param p2    # Landroid/view/SurfaceSession;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/view/SurfaceControl$OutOfResourcesException;
@@ -109,7 +102,6 @@
 
 .method setAlpha(F)V
     .locals 1
-    .param p1    # F
 
     iget-object v0, p0, Lcom/android/server/wm/BlackFrame$BlackSurface;->surface:Landroid/view/SurfaceControl;
 
@@ -120,7 +112,6 @@
 
 .method setMatrix(Landroid/graphics/Matrix;)V
     .locals 6
-    .param p1    # Landroid/graphics/Matrix;
 
     iget-object v0, p0, Lcom/android/server/wm/BlackFrame$BlackSurface;->this$0:Lcom/android/server/wm/BlackFrame;
 

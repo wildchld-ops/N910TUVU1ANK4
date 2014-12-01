@@ -74,7 +74,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/LockScreenWallpaper;)Ljava/util/List;
     .locals 1
-    .param p0    # Lcom/android/settings/LockScreenWallpaper;
 
     iget-object v0, p0, Lcom/android/settings/LockScreenWallpaper;->rList:Ljava/util/List;
 
@@ -83,7 +82,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/LockScreenWallpaper;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/LockScreenWallpaper;
 
     iget-boolean v0, p0, Lcom/android/settings/LockScreenWallpaper;->isTypeBoth:Z
 
@@ -92,7 +90,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/LockScreenWallpaper;)Landroid/view/LayoutInflater;
     .locals 1
-    .param p0    # Lcom/android/settings/LockScreenWallpaper;
 
     iget-object v0, p0, Lcom/android/settings/LockScreenWallpaper;->mInflater:Landroid/view/LayoutInflater;
 
@@ -101,7 +98,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/LockScreenWallpaper;)I
     .locals 1
-    .param p0    # Lcom/android/settings/LockScreenWallpaper;
 
     iget v0, p0, Lcom/android/settings/LockScreenWallpaper;->mIconSize:I
 
@@ -110,7 +106,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/LockScreenWallpaper;)Landroid/content/pm/PackageManager;
     .locals 1
-    .param p0    # Lcom/android/settings/LockScreenWallpaper;
 
     iget-object v0, p0, Lcom/android/settings/LockScreenWallpaper;->mPm:Landroid/content/pm/PackageManager;
 
@@ -119,7 +114,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/LockScreenWallpaper;)[Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/settings/LockScreenWallpaper;
 
     iget-object v0, p0, Lcom/android/settings/LockScreenWallpaper;->ItemName:[Ljava/lang/String;
 
@@ -179,7 +173,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 8
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v7, 0x0
 
@@ -344,9 +337,6 @@
 
 .method public onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
     .locals 9
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

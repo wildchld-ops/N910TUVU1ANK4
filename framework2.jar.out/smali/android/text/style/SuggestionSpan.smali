@@ -78,10 +78,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Ljava/util/Locale;[Ljava/lang/String;ILjava/lang/Class;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/util/Locale;
-    .param p3    # [Ljava/lang/String;
-    .param p4    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -209,9 +205,6 @@
 
 .method public constructor <init>(Landroid/content/Context;[Ljava/lang/String;I)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # I
 
     const/4 v2, 0x0
 
@@ -232,7 +225,6 @@
 
 .method public constructor <init>(Landroid/os/Parcel;)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Landroid/text/style/CharacterStyle;-><init>()V
 
@@ -313,9 +305,6 @@
 
 .method public constructor <init>(Ljava/util/Locale;[Ljava/lang/String;I)V
     .locals 6
-    .param p1    # Ljava/util/Locale;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # I
 
     const/4 v1, 0x0
 
@@ -336,9 +325,6 @@
 
 .method private static hashCodeInternal([Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
     .locals 4
-    .param p0    # [Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x4
 
@@ -377,7 +363,6 @@
 
 .method private initStyle(Landroid/content/Context;)V
     .locals 8
-    .param p1    # Landroid/content/Context;
 
     const/4 v7, 0x0
 
@@ -482,7 +467,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 3
-    .param p1    # Ljava/lang/Object;
 
     const/4 v0, 0x0
 
@@ -628,9 +612,6 @@
 
 .method public notifySelection(Landroid/content/Context;Ljava/lang/String;I)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     new-instance v1, Landroid/content/Intent;
 
@@ -751,7 +732,6 @@
 
 .method public setFlags(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/text/style/SuggestionSpan;->mFlags:I
 
@@ -760,7 +740,6 @@
 
 .method public updateDrawState(Landroid/text/TextPaint;)V
     .locals 6
-    .param p1    # Landroid/text/TextPaint;
 
     const/4 v3, 0x1
 
@@ -849,8 +828,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v0, p0, Landroid/text/style/SuggestionSpan;->mSuggestions:[Ljava/lang/String;
 

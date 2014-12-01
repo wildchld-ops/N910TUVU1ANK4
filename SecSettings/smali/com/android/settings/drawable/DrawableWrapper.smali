@@ -13,7 +13,6 @@
 # direct methods
 .method public constructor <init>(Landroid/graphics/drawable/Drawable;)V
     .locals 1
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     invoke-direct {p0}, Landroid/graphics/drawable/Drawable;-><init>()V
 
@@ -36,7 +35,6 @@
 # virtual methods
 .method public draw(Landroid/graphics/Canvas;)V
     .locals 1
-    .param p1    # Landroid/graphics/Canvas;
 
     iget-object v0, p0, Lcom/android/settings/drawable/DrawableWrapper;->mDrawable:Landroid/graphics/drawable/Drawable;
 
@@ -131,7 +129,6 @@
 
 .method public getPadding(Landroid/graphics/Rect;)Z
     .locals 1
-    .param p1    # Landroid/graphics/Rect;
 
     iget-object v0, p0, Lcom/android/settings/drawable/DrawableWrapper;->mDrawable:Landroid/graphics/drawable/Drawable;
 
@@ -168,7 +165,6 @@
 
 .method public invalidateDrawable(Landroid/graphics/drawable/Drawable;)V
     .locals 0
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {p0}, Landroid/graphics/drawable/Drawable;->invalidateSelf()V
 
@@ -199,9 +195,6 @@
 
 .method public scheduleDrawable(Landroid/graphics/drawable/Drawable;Ljava/lang/Runnable;J)V
     .locals 0
-    .param p1    # Landroid/graphics/drawable/Drawable;
-    .param p2    # Ljava/lang/Runnable;
-    .param p3    # J
 
     invoke-virtual {p0, p2, p3, p4}, Landroid/graphics/drawable/Drawable;->scheduleSelf(Ljava/lang/Runnable;J)V
 
@@ -210,7 +203,6 @@
 
 .method public setAlpha(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/settings/drawable/DrawableWrapper;->mDrawable:Landroid/graphics/drawable/Drawable;
 
@@ -221,10 +213,6 @@
 
 .method public setBounds(IIII)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-super {p0, p1, p2, p3, p4}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
 
@@ -237,7 +225,6 @@
 
 .method public setChangingConfigurations(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/settings/drawable/DrawableWrapper;->mDrawable:Landroid/graphics/drawable/Drawable;
 
@@ -248,7 +235,6 @@
 
 .method public setColorFilter(Landroid/graphics/ColorFilter;)V
     .locals 1
-    .param p1    # Landroid/graphics/ColorFilter;
 
     iget-object v0, p0, Lcom/android/settings/drawable/DrawableWrapper;->mDrawable:Landroid/graphics/drawable/Drawable;
 
@@ -259,7 +245,6 @@
 
 .method public setDither(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/settings/drawable/DrawableWrapper;->mDrawable:Landroid/graphics/drawable/Drawable;
 
@@ -270,7 +255,6 @@
 
 .method public setFilterBitmap(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/settings/drawable/DrawableWrapper;->mDrawable:Landroid/graphics/drawable/Drawable;
 
@@ -281,7 +265,6 @@
 
 .method public setState([I)Z
     .locals 1
-    .param p1    # [I
 
     iget-object v0, p0, Lcom/android/settings/drawable/DrawableWrapper;->mDrawable:Landroid/graphics/drawable/Drawable;
 
@@ -294,8 +277,6 @@
 
 .method public setVisible(ZZ)Z
     .locals 1
-    .param p1    # Z
-    .param p2    # Z
 
     invoke-super {p0, p1, p2}, Landroid/graphics/drawable/Drawable;->setVisible(ZZ)Z
 
@@ -325,8 +306,6 @@
 
 .method public unscheduleDrawable(Landroid/graphics/drawable/Drawable;Ljava/lang/Runnable;)V
     .locals 0
-    .param p1    # Landroid/graphics/drawable/Drawable;
-    .param p2    # Ljava/lang/Runnable;
 
     invoke-virtual {p0, p2}, Landroid/graphics/drawable/Drawable;->unscheduleSelf(Ljava/lang/Runnable;)V
 

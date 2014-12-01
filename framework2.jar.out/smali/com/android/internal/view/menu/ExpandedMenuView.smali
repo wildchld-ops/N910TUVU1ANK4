@@ -27,8 +27,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v3, 0x0
 
@@ -83,7 +81,6 @@
 
 .method public initialize(Lcom/android/internal/view/menu/MenuBuilder;)V
     .locals 2
-    .param p1    # Lcom/android/internal/view/menu/MenuBuilder;
 
     iput-object p1, p0, Lcom/android/internal/view/menu/ExpandedMenuView;->mMenu:Lcom/android/internal/view/menu/MenuBuilder;
 
@@ -103,7 +100,6 @@
 
 .method public invokeItem(Lcom/android/internal/view/menu/MenuItemImpl;)Z
     .locals 2
-    .param p1    # Lcom/android/internal/view/menu/MenuItemImpl;
 
     iget-object v0, p0, Lcom/android/internal/view/menu/ExpandedMenuView;->mMenu:Lcom/android/internal/view/menu/MenuBuilder;
 
@@ -243,10 +239,6 @@
 
 .method public onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
     .locals 1
-    .param p1    # Landroid/widget/AdapterView;
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
 
     invoke-virtual {p0}, Landroid/widget/ListView;->getAdapter()Landroid/widget/ListAdapter;
 
@@ -265,8 +257,6 @@
 
 .method protected onMeasure(II)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     invoke-super {p0, p1, p2}, Landroid/widget/ListView;->onMeasure(II)V
 

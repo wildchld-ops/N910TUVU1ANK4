@@ -14,9 +14,6 @@
 # direct methods
 .method public constructor <init>(ILcom/ipsec/client/IPsecConnection;Lcom/sec/epdg/IWlanError;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Lcom/ipsec/client/IPsecConnection;
-    .param p3    # Lcom/sec/epdg/IWlanError;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

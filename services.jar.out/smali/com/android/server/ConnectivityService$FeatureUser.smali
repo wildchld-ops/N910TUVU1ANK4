@@ -36,9 +36,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/ConnectivityService;ILjava/lang/String;Landroid/os/IBinder;)V
     .locals 3
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Landroid/os/IBinder;
 
     iput-object p1, p0, Lcom/android/server/ConnectivityService$FeatureUser;->this$0:Lcom/android/server/ConnectivityService;
 
@@ -189,10 +186,6 @@
 
 .method public isSameUser(IIILjava/lang/String;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
 
     iget v0, p0, Lcom/android/server/ConnectivityService$FeatureUser;->mPid:I
 
@@ -227,7 +220,6 @@
 
 .method public isSameUser(Lcom/android/server/ConnectivityService$FeatureUser;)Z
     .locals 4
-    .param p1    # Lcom/android/server/ConnectivityService$FeatureUser;
 
     if-nez p1, :cond_0
 

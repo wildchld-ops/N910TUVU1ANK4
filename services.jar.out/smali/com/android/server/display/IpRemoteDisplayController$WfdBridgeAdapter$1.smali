@@ -50,9 +50,6 @@
 
 .method public onConnRequest(IILjava/net/InetAddress;)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/net/InetAddress;
 
     iget-object v0, p0, Lcom/android/server/display/IpRemoteDisplayController$WfdBridgeAdapter$1;->this$1:Lcom/android/server/display/IpRemoteDisplayController$WfdBridgeAdapter;
 
@@ -63,7 +60,6 @@
 
 .method public onError(I)V
     .locals 5
-    .param p1    # I
 
     const/16 v4, 0x130
 
@@ -232,7 +228,6 @@
 
 .method public onOK(Ljava/net/InetAddress;)V
     .locals 4
-    .param p1    # Ljava/net/InetAddress;
 
     const/4 v3, -0x1
 

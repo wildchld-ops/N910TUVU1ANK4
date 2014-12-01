@@ -139,8 +139,6 @@
 
 .method public constructor <init>(Landroid/database/Cursor;Landroid/content/ContentProviderClient;)V
     .locals 1
-    .param p1    # Landroid/database/Cursor;
-    .param p2    # Landroid/content/ContentProviderClient;
 
     invoke-direct {p0, p1}, Landroid/content/CursorEntityIterator;-><init>(Landroid/database/Cursor;)V
 
@@ -155,8 +153,6 @@
 
 .method public constructor <init>(Landroid/database/Cursor;Landroid/content/ContentResolver;)V
     .locals 1
-    .param p1    # Landroid/database/Cursor;
-    .param p2    # Landroid/content/ContentResolver;
 
     invoke-direct {p0, p1}, Landroid/content/CursorEntityIterator;-><init>(Landroid/database/Cursor;)V
 
@@ -173,7 +169,6 @@
 # virtual methods
 .method public getEntityAndIncrementCursor(Landroid/database/Cursor;)Landroid/content/Entity;
     .locals 16
-    .param p1    # Landroid/database/Cursor;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

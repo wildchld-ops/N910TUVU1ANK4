@@ -15,8 +15,6 @@
 # direct methods
 .method private constructor <init>(Landroid/util/Printer;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Landroid/util/Printer;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -29,8 +27,6 @@
 
 .method public static create(Landroid/util/Printer;Ljava/lang/String;)Landroid/util/Printer;
     .locals 1
-    .param p0    # Landroid/util/Printer;
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -60,7 +56,6 @@
 # virtual methods
 .method public println(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/util/PrefixPrinter;->mPrinter:Landroid/util/Printer;
 

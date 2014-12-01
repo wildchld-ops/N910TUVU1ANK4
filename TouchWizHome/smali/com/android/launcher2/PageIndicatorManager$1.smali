@@ -36,7 +36,6 @@
 # virtual methods
 .method public run(F)V
     .locals 1
-    .param p1    # F
 
     const/4 v0, 0x0
 

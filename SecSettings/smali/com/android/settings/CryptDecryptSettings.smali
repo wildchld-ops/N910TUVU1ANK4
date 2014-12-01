@@ -64,7 +64,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/CryptDecryptSettings;)Landroid/dirEncryption/DirEncryptionManager;
     .locals 1
-    .param p0    # Lcom/android/settings/CryptDecryptSettings;
 
     iget-object v0, p0, Lcom/android/settings/CryptDecryptSettings;->mDem:Landroid/dirEncryption/DirEncryptionManager;
 
@@ -73,7 +72,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/CryptDecryptSettings;)Landroid/widget/Button;
     .locals 1
-    .param p0    # Lcom/android/settings/CryptDecryptSettings;
 
     iget-object v0, p0, Lcom/android/settings/CryptDecryptSettings;->mInitiateButton:Landroid/widget/Button;
 
@@ -82,7 +80,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/CryptDecryptSettings;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/settings/CryptDecryptSettings;
 
     iget-object v0, p0, Lcom/android/settings/CryptDecryptSettings;->mPowerWarning:Landroid/view/View;
 
@@ -91,7 +88,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/CryptDecryptSettings;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/android/settings/CryptDecryptSettings;
 
     iget-object v0, p0, Lcom/android/settings/CryptDecryptSettings;->mBatteryWarning:Landroid/widget/TextView;
 
@@ -100,7 +96,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/CryptDecryptSettings;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/settings/CryptDecryptSettings;
 
     iget-object v0, p0, Lcom/android/settings/CryptDecryptSettings;->mSDcardOngoingWarning:Landroid/view/View;
 
@@ -109,7 +104,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/CryptDecryptSettings;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/android/settings/CryptDecryptSettings;
 
     iget-object v0, p0, Lcom/android/settings/CryptDecryptSettings;->mPasswordWarning:Landroid/widget/TextView;
 
@@ -118,7 +112,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/CryptDecryptSettings;)Landroid/app/Fragment;
     .locals 1
-    .param p0    # Lcom/android/settings/CryptDecryptSettings;
 
     iget-object v0, p0, Lcom/android/settings/CryptDecryptSettings;->mThis:Landroid/app/Fragment;
 
@@ -127,11 +120,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/CryptDecryptSettings;Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/CryptDecryptSettings;
-    .param p1    # Landroid/app/Fragment;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Landroid/os/Bundle;
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/settings/CryptDecryptSettings;->startFragment(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;)Z
 
@@ -142,8 +130,6 @@
 
 .method static synthetic access$800(Lcom/android/settings/CryptDecryptSettings;I)Z
     .locals 1
-    .param p0    # Lcom/android/settings/CryptDecryptSettings;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/settings/CryptDecryptSettings;->runKeyguardConfirmation(I)Z
 
@@ -154,7 +140,6 @@
 
 .method private runKeyguardConfirmation(I)Z
     .locals 6
-    .param p1    # I
 
     new-instance v3, Lcom/android/internal/widget/LockPatternUtils;
 
@@ -284,10 +269,6 @@
 
 .method private startFragment(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;)Z
     .locals 7
-    .param p1    # Landroid/app/Fragment;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Landroid/os/Bundle;
 
     invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 
@@ -370,7 +351,6 @@
 # virtual methods
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onActivityCreated(Landroid/os/Bundle;)V
 
@@ -406,9 +386,6 @@
 
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     invoke-super {p0, p1, p2, p3}, Landroid/app/Fragment;->onActivityResult(IILandroid/content/Intent;)V
 
@@ -446,7 +423,6 @@
 
 .method public onAttach(Landroid/app/Activity;)V
     .locals 2
-    .param p1    # Landroid/app/Activity;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onAttach(Landroid/app/Activity;)V
 
@@ -465,9 +441,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 6
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const/4 v5, 0x1
 

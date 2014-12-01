@@ -30,10 +30,6 @@
 # direct methods
 .method constructor <init>(Landroid/view/LayoutInflater$Factory;Landroid/view/LayoutInflater$Factory2;Landroid/view/LayoutInflater$Factory;Landroid/view/LayoutInflater$Factory2;)V
     .locals 0
-    .param p1    # Landroid/view/LayoutInflater$Factory;
-    .param p2    # Landroid/view/LayoutInflater$Factory2;
-    .param p3    # Landroid/view/LayoutInflater$Factory;
-    .param p4    # Landroid/view/LayoutInflater$Factory2;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -52,10 +48,6 @@
 # virtual methods
 .method public onCreateView(Landroid/view/View;Ljava/lang/String;Landroid/content/Context;Landroid/util/AttributeSet;)Landroid/view/View;
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/content/Context;
-    .param p4    # Landroid/util/AttributeSet;
 
     iget-object v1, p0, Landroid/view/LayoutInflater$FactoryMerger;->mF12:Landroid/view/LayoutInflater$Factory2;
 
@@ -110,9 +102,6 @@
 
 .method public onCreateView(Ljava/lang/String;Landroid/content/Context;Landroid/util/AttributeSet;)Landroid/view/View;
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/util/AttributeSet;
 
     iget-object v1, p0, Landroid/view/LayoutInflater$FactoryMerger;->mF1:Landroid/view/LayoutInflater$Factory;
 

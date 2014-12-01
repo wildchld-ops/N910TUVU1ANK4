@@ -924,8 +924,6 @@
 
 .method public static checkPackageState(Landroid/content/Context;Ljava/lang/String;)Z
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -1091,8 +1089,6 @@
 
 .method public static checkWifiPreCondition(Landroid/content/Context;Z)V
     .locals 11
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
 
     const/4 v10, 0x3
 
@@ -1393,8 +1389,6 @@
 
 .method public static copyMeProfilePhoto(Landroid/content/Context;Landroid/content/pm/UserInfo;)Z
     .locals 11
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/content/pm/UserInfo;
 
     const/4 v8, 0x1
 
@@ -1512,7 +1506,6 @@
 
 .method public static createLocaleFromString(Ljava/lang/String;)Ljava/util/Locale;
     .locals 6
-    .param p0    # Ljava/lang/String;
 
     const/4 v5, 0x2
 
@@ -1847,8 +1840,6 @@
 
 .method public static getAppInfoByPkgName(Landroid/content/Context;Ljava/lang/String;)Landroid/content/pm/ApplicationInfo;
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -2133,7 +2124,6 @@
 
 .method private static getByteFromFile(Ljava/lang/String;)B
     .locals 7
-    .param p0    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -2568,7 +2558,6 @@
 
 .method public static getFavoriteCount(Landroid/content/Context;)I
     .locals 8
-    .param p0    # Landroid/content/Context;
 
     const/4 v2, 0x0
 
@@ -2781,7 +2770,6 @@
 
 .method private static getLocalProfileGivenName(Landroid/content/Context;)Ljava/lang/String;
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -2845,9 +2833,6 @@
 
 .method public static getMeProfileName(Landroid/content/Context;ZLandroid/content/pm/UserInfo;)Ljava/lang/String;
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
-    .param p2    # Landroid/content/pm/UserInfo;
 
     if-eqz p1, :cond_0
 
@@ -2963,9 +2948,6 @@
 
 .method public static getPreferenceToSpecificActivityTitleInfo(Landroid/content/Context;Landroid/content/Intent;I)Ljava/lang/String;
     .locals 7
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
 
     const-string v5, ""
 
@@ -3288,7 +3270,6 @@
 
 .method public static getSViewWallpaperDrawable(Landroid/content/Context;)Landroid/graphics/drawable/Drawable;
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     sget-object v0, Lcom/android/settings/Utils;->mSViewWallpaperDrawable:Landroid/graphics/drawable/Drawable;
 
@@ -3309,8 +3290,6 @@
 
 .method private static getShorterNameIfPossible(Landroid/content/Context;Landroid/content/pm/UserInfo;)Ljava/lang/String;
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/content/pm/UserInfo;
 
     invoke-static {p0}, Lcom/android/settings/Utils;->getLocalProfileGivenName(Landroid/content/Context;)Ljava/lang/String;
 
@@ -4378,7 +4357,6 @@
 
 .method public static getVersionOfContextProviders(Landroid/content/Context;)I
     .locals 6
-    .param p0    # Landroid/content/Context;
 
     const/4 v2, -0x1
 
@@ -4416,7 +4394,6 @@
 
 .method public static getWallpaperVersionCode(Landroid/content/Context;)I
     .locals 6
-    .param p0    # Landroid/content/Context;
 
     const/4 v2, 0x0
 
@@ -4572,7 +4549,6 @@
 
 .method public static hasCocktailbar(Landroid/content/Context;)Z
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -4702,7 +4678,6 @@
 
 .method public static declared-synchronized hasFingerprintFeature(Landroid/content/Context;)Z
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     const/4 v0, 0x1
 
@@ -4999,10 +4974,6 @@
 
 .method public static insertLog(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     new-instance v1, Landroid/content/ContentValues;
 
@@ -5121,7 +5092,6 @@
 
 .method public static isAfterKModel(Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     if-eqz p0, :cond_1
 
@@ -5187,7 +5157,6 @@
 
 .method public static isAirplaneModeEnabled(Landroid/content/Context;)Z
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -5284,7 +5253,6 @@
 
 .method public static isAllAirViewOptionDisabled(Landroid/content/ContentResolver;)Z
     .locals 1
-    .param p0    # Landroid/content/ContentResolver;
 
     invoke-static {p0}, Lcom/android/settings/FingerAirViewSettingsMenu;->isAllOptionDisabled(Landroid/content/ContentResolver;)Z
 
@@ -5809,7 +5777,6 @@
 
 .method public static isBatteryPresent(Landroid/content/Intent;)Z
     .locals 2
-    .param p0    # Landroid/content/Intent;
 
     const-string v0, "present"
 
@@ -5824,7 +5791,6 @@
 
 .method public static isCharger(Landroid/content/Intent;)Z
     .locals 3
-    .param p0    # Landroid/content/Intent;
 
     const/4 v1, 0x1
 
@@ -6141,7 +6107,6 @@
 
 .method public static isCurrentAirmotionAllItemDisabled(Landroid/content/ContentResolver;)Z
     .locals 1
-    .param p0    # Landroid/content/ContentResolver;
 
     invoke-static {p0}, Lcom/android/settings/motion2013/AirMotionSettings;->isAllOptionDisabled(Landroid/content/ContentResolver;)Z
 
@@ -6162,7 +6127,6 @@
 
 .method public static isCurrentAirviewAllItemDisabled(Landroid/content/ContentResolver;)Z
     .locals 4
-    .param p0    # Landroid/content/ContentResolver;
 
     const/4 v2, 0x0
 
@@ -6216,8 +6180,6 @@
 
 .method public static isCurrentMotionAllItemDisabled(Landroid/content/ContentResolver;Landroid/content/Context;)Z
     .locals 1
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # Landroid/content/Context;
 
     invoke-static {p0, p1}, Lcom/android/settings/motion2013/MotionSettings;->isAllOptionDisabled(Landroid/content/ContentResolver;Landroid/content/Context;)Z
 
@@ -6238,7 +6200,6 @@
 
 .method public static isCurrentPalmMotionAllItemDisabled(Landroid/content/ContentResolver;)Z
     .locals 1
-    .param p0    # Landroid/content/ContentResolver;
 
     invoke-static {p0}, Lcom/android/settings/motion2013/HandMotionSettings;->isAllOptionDisabled(Landroid/content/ContentResolver;)Z
 
@@ -6671,7 +6632,6 @@
 
 .method public static isDualFolderType(Landroid/content/Context;)Z
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -6710,7 +6670,6 @@
 
 .method public static isDuosModel(Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "CDMA"
 
@@ -7443,7 +7402,6 @@
 
 .method public static isExistCoverNotePackage(Landroid/content/Context;)Z
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     sget-object v1, Lcom/android/settings/Utils;->mExistCoverNotePackage:Ljava/lang/Boolean;
 
@@ -7574,7 +7532,6 @@
 
 .method public static isFolderModel(Landroid/content/Context;)Z
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -8002,7 +7959,6 @@
 
 .method public static isGuestMode(Landroid/content/Context;)Z
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     const-string v2, "user"
 
@@ -8162,8 +8118,6 @@
 
 .method public static isIntentAvailable(Landroid/content/Context;Landroid/content/Intent;)Z
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/content/Intent;
 
     invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -8196,8 +8150,6 @@
 
 .method public static isIntentAvailable(Landroid/content/Context;Ljava/lang/String;)Z
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -8392,7 +8344,6 @@
 
 .method public static isJpnFestivalToday(Landroid/content/Context;)Z
     .locals 14
-    .param p0    # Landroid/content/Context;
 
     const/4 v9, 0x1
 
@@ -8485,7 +8436,6 @@
 
 .method public static isKLookSupported(Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     if-eqz p0, :cond_1
 
@@ -8654,7 +8604,6 @@
 
 .method public static isLTE(Landroid/content/Context;)Z
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     const/4 v0, 0x1
 
@@ -8944,7 +8893,6 @@
 
 .method public static isMobileNetworkEnabled(Landroid/content/Context;)Z
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     const/4 v0, 0x1
 
@@ -9015,7 +8963,6 @@
 
 .method public static isMouseHoveringEnabledExceptListscrolling(Landroid/content/ContentResolver;)Z
     .locals 7
-    .param p0    # Landroid/content/ContentResolver;
 
     const/4 v5, 0x0
 
@@ -9083,8 +9030,6 @@
 
 .method public static isNotificationAccessSysApp(Landroid/content/pm/PackageManager;Landroid/content/ComponentName;)Z
     .locals 3
-    .param p0    # Landroid/content/pm/PackageManager;
-    .param p1    # Landroid/content/ComponentName;
 
     const/4 v0, 0x1
 
@@ -9621,8 +9566,6 @@
 
 .method public static isPackageExists(Landroid/content/Context;Ljava/lang/String;)Z
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -9667,8 +9610,6 @@
 
 .method private static isPreffered(Ljava/lang/String;Landroid/content/Context;)Z
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # Landroid/content/Context;
 
     new-instance v1, Ljava/util/ArrayList;
 
@@ -9834,7 +9775,6 @@
 
 .method public static isRestrictedProfile(Landroid/content/Context;)Z
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     const-string v1, "user"
 
@@ -10257,7 +10197,6 @@
 
 .method public static isSupportHelpMenu(Landroid/content/Context;)Z
     .locals 8
-    .param p0    # Landroid/content/Context;
 
     const/4 v3, 0x1
 
@@ -10381,7 +10320,6 @@
 
 .method public static isSupportLightSensor(Landroid/content/Context;)Z
     .locals 6
-    .param p0    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -10602,7 +10540,6 @@
 
 .method public static isSupportOfflineHelpMenu(Landroid/content/Context;)Z
     .locals 9
-    .param p0    # Landroid/content/Context;
 
     const/4 v4, 0x1
 
@@ -10666,7 +10603,6 @@
 
 .method public static isSupportOnlineHelpMenu(Landroid/content/Context;)Z
     .locals 9
-    .param p0    # Landroid/content/Context;
 
     const/4 v4, 0x1
 
@@ -11658,8 +11594,6 @@
 
 .method public static isSupportedEvent([II)Z
     .locals 1
-    .param p0    # [I
-    .param p1    # I
 
     invoke-static {p0, p1}, Ljava/util/Arrays;->binarySearch([II)I
 
@@ -11680,7 +11614,6 @@
 
 .method public static isSuppportBlackGreyPowerSaving(Landroid/content/Context;)Z
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -13679,7 +13612,6 @@
 
 .method public static isWifiCallingEnabled(Landroid/content/Context;)Z
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -14154,7 +14086,6 @@
 
 .method public static locateSmartNetworkSwitch(Landroid/content/Context;)I
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     const/4 v0, 0x1
 
@@ -14422,8 +14353,6 @@
 
 .method public static moveToSharedPref(Landroid/content/Context;Landroid/preference/PreferenceActivity$Header;)V
     .locals 8
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/preference/PreferenceActivity$Header;
 
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -14568,8 +14497,6 @@
 
 .method public static printLog(Ljava/lang/String;Z)V
     .locals 0
-    .param p0    # Ljava/lang/String;
-    .param p1    # Z
 
     return-void
 .end method
@@ -15055,8 +14982,6 @@
 
 .method public static saveFavorite(Landroid/content/Context;Ljava/lang/String;)V
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Landroid/content/ContentValues;
 
@@ -15149,8 +15074,6 @@
 
 .method public static setMouseHoveringValExceptListScroll(Landroid/content/ContentResolver;I)V
     .locals 1
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # I
 
     const-string v0, "mouse_hovering_information_preview"
 
@@ -15209,8 +15132,6 @@
 
 .method private static sysfsWrite(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 6
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/FileNotFoundException;
@@ -16356,10 +16277,6 @@
 
 .method public static updatePreferenceToSpecificActivityOrRemove(Landroid/content/Context;Landroid/preference/PreferenceGroup;Ljava/lang/String;I)Z
     .locals 10
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/preference/PreferenceGroup;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     const/4 v7, 0x0
 
@@ -16458,8 +16375,6 @@
 
 .method public static updateSideViewVisibility(Landroid/view/View;Landroid/view/View;)V
     .locals 3
-    .param p0    # Landroid/view/View;
-    .param p1    # Landroid/view/View;
 
     const-string v1, "grande"
 

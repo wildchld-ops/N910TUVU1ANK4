@@ -23,8 +23,6 @@
 # direct methods
 .method public constructor <init>(Landroid/media/audiofx/Visualizer;Landroid/media/audiofx/Visualizer;Landroid/os/Looper;)V
     .locals 0
-    .param p2    # Landroid/media/audiofx/Visualizer;
-    .param p3    # Landroid/os/Looper;
 
     iput-object p1, p0, Landroid/media/audiofx/Visualizer$NativeEventHandler;->this$0:Landroid/media/audiofx/Visualizer;
 
@@ -37,7 +35,6 @@
 
 .method private handleCaptureMessage(Landroid/os/Message;)V
     .locals 6
-    .param p1    # Landroid/os/Message;
 
     const/4 v1, 0x0
 
@@ -141,7 +138,6 @@
 
 .method private handleServerDiedMessage(Landroid/os/Message;)V
     .locals 3
-    .param p1    # Landroid/os/Message;
 
     const/4 v0, 0x0
 
@@ -188,7 +184,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 3
-    .param p1    # Landroid/os/Message;
 
     iget-object v0, p0, Landroid/media/audiofx/Visualizer$NativeEventHandler;->mVisualizer:Landroid/media/audiofx/Visualizer;
 

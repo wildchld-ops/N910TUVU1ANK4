@@ -21,8 +21,6 @@
 # direct methods
 .method public constructor <init>(Landroid/graphics/Picture;I)V
     .locals 0
-    .param p1    # Landroid/graphics/Picture;
-    .param p2    # I
 
     invoke-direct {p0, p2}, Landroid/graphics/Canvas;-><init>(I)V
 
@@ -35,7 +33,6 @@
 # virtual methods
 .method public drawPicture(Landroid/graphics/Picture;)V
     .locals 2
-    .param p1    # Landroid/graphics/Picture;
 
     iget-object v0, p0, Landroid/graphics/Picture$RecordingCanvas;->mPicture:Landroid/graphics/Picture;
 
@@ -57,7 +54,6 @@
 
 .method public setBitmap(Landroid/graphics/Bitmap;)V
     .locals 2
-    .param p1    # Landroid/graphics/Bitmap;
 
     new-instance v0, Ljava/lang/RuntimeException;
 

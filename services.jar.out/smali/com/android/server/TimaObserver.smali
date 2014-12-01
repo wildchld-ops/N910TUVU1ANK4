@@ -60,7 +60,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     const/4 v3, 0x1
 
@@ -138,7 +137,6 @@
 
 .method static synthetic access$000(Lcom/android/server/TimaObserver;)V
     .locals 0
-    .param p0    # Lcom/android/server/TimaObserver;
 
     invoke-direct {p0}, Lcom/android/server/TimaObserver;->handleTimaStateChange()V
 
@@ -206,7 +204,6 @@
 # virtual methods
 .method public onUEvent(Landroid/os/UEventObserver$UEvent;)V
     .locals 8
-    .param p1    # Landroid/os/UEventObserver$UEvent;
 
     iget-boolean v4, p0, Lcom/android/server/TimaObserver;->DEBUG:Z
 

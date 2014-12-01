@@ -41,7 +41,6 @@
 
 .method public constructor <init>(J)V
     .locals 0
-    .param p1    # J
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -54,8 +53,6 @@
 # virtual methods
 .method public AddPoint(II)Z
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget-wide v0, p0, Lcom/diotek/dhwr/DHWR$Ink;->mId:J
 
@@ -78,9 +75,6 @@
 
 .method public CopyInk(III)Lcom/diotek/dhwr/DHWR$Ink;
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     iget-wide v3, p0, Lcom/diotek/dhwr/DHWR$Ink;->mId:J
 
@@ -129,8 +123,6 @@
 
 .method public GetPoint(ILcom/diotek/dhwr/DHWR$Point;)Z
     .locals 2
-    .param p1    # I
-    .param p2    # Lcom/diotek/dhwr/DHWR$Point;
 
     iget-wide v0, p0, Lcom/diotek/dhwr/DHWR$Ink;->mId:J
 
@@ -155,7 +147,6 @@
 
 .method public SetEraseThick(I)V
     .locals 2
-    .param p1    # I
 
     iget-wide v0, p0, Lcom/diotek/dhwr/DHWR$Ink;->mId:J
 
@@ -166,7 +157,6 @@
 
 .method public SetType(I)V
     .locals 2
-    .param p1    # I
 
     iget-wide v0, p0, Lcom/diotek/dhwr/DHWR$Ink;->mId:J
 

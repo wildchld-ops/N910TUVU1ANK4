@@ -596,10 +596,6 @@
 
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;ILcom/sec/android/glview/TwGLViewGroup;Lcom/sec/android/app/camera/MenuResourceDepot;)V
     .locals 7
-    .param p1    # Lcom/sec/android/app/camera/Camera;
-    .param p2    # I
-    .param p3    # Lcom/sec/android/glview/TwGLViewGroup;
-    .param p4    # Lcom/sec/android/app/camera/MenuResourceDepot;
 
     const/4 v5, 0x1
 
@@ -642,8 +638,6 @@
 
 .method private init(Lcom/sec/android/glview/TwGLViewGroup;I)V
     .locals 11
-    .param p1    # Lcom/sec/android/glview/TwGLViewGroup;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseMenu;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -2506,8 +2500,6 @@
 # virtual methods
 .method public addSideBarItem(FF)V
     .locals 1
-    .param p1    # F
-    .param p2    # F
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseMenu;->getSideBar()Lcom/sec/android/app/camera/glwidget/TwGLEditableSideBar;
 
@@ -2659,7 +2651,6 @@
 
 .method public getBaseMenuButton(I)Lcom/sec/android/app/camera/glwidget/TwGLItem;
     .locals 1
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -4127,7 +4118,6 @@
 
 .method public getEasyModeBaseMenuButton(I)Lcom/sec/android/glview/TwGLButton;
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -4907,7 +4897,6 @@
 
 .method public indexOfSideBarItem(I)I
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseMenu;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -5489,7 +5478,6 @@
 
 .method public moveHoverShutterButton(Landroid/view/MotionEvent;)V
     .locals 5
-    .param p1    # Landroid/view/MotionEvent;
 
     const/high16 v4, 0x40000000
 
@@ -5550,8 +5538,6 @@
 
 .method public onButtonPressed(Lcom/sec/android/glview/TwGLView;Z)V
     .locals 3
-    .param p1    # Lcom/sec/android/glview/TwGLView;
-    .param p2    # Z
 
     const/4 v2, 0x4
 
@@ -5619,8 +5605,6 @@
 
 .method public onCameraSettingsChanged(II)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     const/4 v1, 0x4
 
@@ -5784,7 +5768,6 @@
 
 .method public onClick(Lcom/sec/android/glview/TwGLView;)Z
     .locals 12
-    .param p1    # Lcom/sec/android/glview/TwGLView;
 
     const/16 v11, 0x2f
 
@@ -6548,8 +6531,6 @@
 
 .method public onKeyDown(Lcom/sec/android/glview/TwGLView;Landroid/view/KeyEvent;)Z
     .locals 4
-    .param p1    # Lcom/sec/android/glview/TwGLView;
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v3, 0x0
 
@@ -6649,8 +6630,6 @@
 
 .method public onKeyUp(Lcom/sec/android/glview/TwGLView;Landroid/view/KeyEvent;)Z
     .locals 5
-    .param p1    # Lcom/sec/android/glview/TwGLView;
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v4, 0x0
 
@@ -6991,8 +6970,6 @@
 
 .method public onTouch(Lcom/sec/android/glview/TwGLView;Landroid/view/MotionEvent;)Z
     .locals 12
-    .param p1    # Lcom/sec/android/glview/TwGLView;
-    .param p2    # Landroid/view/MotionEvent;
 
     const/16 v11, 0x1b
 
@@ -7999,7 +7976,6 @@
 
 .method public setBeautyButtonDimmed(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseMenu;->mLiveBeautyFaceButton:Lcom/sec/android/glview/TwGLButton;
 
@@ -8086,7 +8062,6 @@
 
 .method public setCameraEnterKeyState(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseMenu;->mCameraEnterKeyReleased:Z
 
@@ -8095,7 +8070,6 @@
 
 .method public setChkBaseMenuItemsShow(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseMenu;->mChkBaseMenuItemsShow:Z
 
@@ -8104,7 +8078,6 @@
 
 .method public setCoverCameraMode(Z)V
     .locals 6
-    .param p1    # Z
 
     const/4 v5, 0x1
 
@@ -8273,7 +8246,6 @@
 
 .method public setEasyMode(Z)V
     .locals 8
-    .param p1    # Z
 
     const/4 v5, 0x0
 
@@ -8561,7 +8533,6 @@
 
 .method public setEditableSideBarDraggable(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseMenu;->getSideBar()Lcom/sec/android/app/camera/glwidget/TwGLEditableSideBar;
 
@@ -8581,7 +8552,6 @@
 
 .method public setEditableSideBarVisibility(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseMenu;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -8615,7 +8585,6 @@
 
 .method public setLiveBeautyMode(Z)V
     .locals 4
-    .param p1    # Z
 
     const/4 v3, 0x0
 
@@ -8646,7 +8615,6 @@
 
 .method public setRecordingButtonDimmed(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseMenu;->mRecordingButton:Lcom/sec/android/glview/TwGLButton;
 
@@ -8657,7 +8625,6 @@
 
 .method public setShutterButtonDimmed(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseMenu;->mShutterButton:Lcom/sec/android/glview/TwGLButton;
 
@@ -8668,7 +8635,6 @@
 
 .method public setThumbnailButtonDimmed(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseMenu;->mThumbnailButton:Lcom/sec/android/app/camera/glwidget/TwGLThumbnailButton;
 
@@ -9260,8 +9226,6 @@
 
 .method public updateThumbnailButton(Landroid/graphics/Bitmap;I)V
     .locals 2
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseMenu;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -9295,7 +9259,6 @@
 
 .method public updateThumbnailButton(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseMenu;->mThumbnailButton:Lcom/sec/android/app/camera/glwidget/TwGLThumbnailButton;
 

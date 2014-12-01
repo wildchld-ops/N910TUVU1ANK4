@@ -36,8 +36,6 @@
 # virtual methods
 .method public onPaste(Ljava/lang/String;I)V
     .locals 11
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v10, 0x0
 

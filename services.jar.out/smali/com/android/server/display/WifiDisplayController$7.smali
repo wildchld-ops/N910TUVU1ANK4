@@ -36,7 +36,6 @@
 # virtual methods
 .method public onPeersAvailable(Landroid/net/wifi/p2p/WifiP2pDeviceList;)V
     .locals 5
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pDeviceList;
 
     const-string v2, "WifiDisplayController"
 

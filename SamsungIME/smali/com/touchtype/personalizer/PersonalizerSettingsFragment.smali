@@ -134,7 +134,6 @@
 
 .method static synthetic access$100(Lcom/touchtype/personalizer/PersonalizerSettingsFragment;)Landroid/content/SharedPreferences;
     .locals 1
-    .param p0    # Lcom/touchtype/personalizer/PersonalizerSettingsFragment;
 
     iget-object v0, p0, Lcom/touchtype/personalizer/PersonalizerSettingsFragment;->mSPref:Landroid/content/SharedPreferences;
 
@@ -143,7 +142,6 @@
 
 .method static synthetic access$200(Lcom/touchtype/personalizer/PersonalizerSettingsFragment;)V
     .locals 0
-    .param p0    # Lcom/touchtype/personalizer/PersonalizerSettingsFragment;
 
     invoke-direct {p0}, Lcom/touchtype/personalizer/PersonalizerSettingsFragment;->showLiveLanguageGuideDialog()V
 
@@ -152,7 +150,6 @@
 
 .method static synthetic access$300(Lcom/touchtype/personalizer/PersonalizerSettingsFragment;)V
     .locals 0
-    .param p0    # Lcom/touchtype/personalizer/PersonalizerSettingsFragment;
 
     invoke-direct {p0}, Lcom/touchtype/personalizer/PersonalizerSettingsFragment;->showSwiftKeyGuideDialog()V
 
@@ -161,7 +158,6 @@
 
 .method static synthetic access$400(Lcom/touchtype/personalizer/PersonalizerSettingsFragment;)Lcom/diotek/ime/framework/common/InputManager;
     .locals 1
-    .param p0    # Lcom/touchtype/personalizer/PersonalizerSettingsFragment;
 
     iget-object v0, p0, Lcom/touchtype/personalizer/PersonalizerSettingsFragment;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -170,7 +166,6 @@
 
 .method static synthetic access$500(Lcom/touchtype/personalizer/PersonalizerSettingsFragment;)V
     .locals 0
-    .param p0    # Lcom/touchtype/personalizer/PersonalizerSettingsFragment;
 
     invoke-direct {p0}, Lcom/touchtype/personalizer/PersonalizerSettingsFragment;->showPrivacyPolicyRestrictionDialog()V
 
@@ -179,8 +174,6 @@
 
 .method static synthetic access$602(Lcom/touchtype/personalizer/PersonalizerSettingsFragment;Lcom/touchtype/personalizer/PersonalizerService;)Lcom/touchtype/personalizer/PersonalizerService;
     .locals 0
-    .param p0    # Lcom/touchtype/personalizer/PersonalizerSettingsFragment;
-    .param p1    # Lcom/touchtype/personalizer/PersonalizerService;
 
     iput-object p1, p0, Lcom/touchtype/personalizer/PersonalizerSettingsFragment;->mService:Lcom/touchtype/personalizer/PersonalizerService;
 
@@ -189,7 +182,6 @@
 
 .method static synthetic access$700(Lcom/touchtype/personalizer/PersonalizerSettingsFragment;)Lcom/touchtype/personalizer/PersonalizerSettingsFragment$PersonalizerServiceConnection;
     .locals 1
-    .param p0    # Lcom/touchtype/personalizer/PersonalizerSettingsFragment;
 
     iget-object v0, p0, Lcom/touchtype/personalizer/PersonalizerSettingsFragment;->mConnection:Lcom/touchtype/personalizer/PersonalizerSettingsFragment$PersonalizerServiceConnection;
 
@@ -198,7 +190,6 @@
 
 .method static synthetic access$800(Lcom/touchtype/personalizer/PersonalizerSettingsFragment;)Ljava/lang/Runnable;
     .locals 1
-    .param p0    # Lcom/touchtype/personalizer/PersonalizerSettingsFragment;
 
     iget-object v0, p0, Lcom/touchtype/personalizer/PersonalizerSettingsFragment;->mTimedTask:Ljava/lang/Runnable;
 
@@ -207,7 +198,6 @@
 
 .method static synthetic access$900(Lcom/touchtype/personalizer/PersonalizerSettingsFragment;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/touchtype/personalizer/PersonalizerSettingsFragment;
 
     iget-object v0, p0, Lcom/touchtype/personalizer/PersonalizerSettingsFragment;->mWatcherHandler:Landroid/os/Handler;
 
@@ -244,8 +234,6 @@
 
 .method private checkMessaging(Landroid/preference/PreferenceCategory;Landroid/preference/Preference;)Z
     .locals 2
-    .param p1    # Landroid/preference/PreferenceCategory;
-    .param p2    # Landroid/preference/Preference;
 
     invoke-virtual {p2}, Landroid/preference/Preference;->getKey()Ljava/lang/String;
 
@@ -280,8 +268,6 @@
 
 .method private checkWeibo(Landroid/preference/PreferenceCategory;Landroid/preference/Preference;)Z
     .locals 3
-    .param p1    # Landroid/preference/PreferenceCategory;
-    .param p2    # Landroid/preference/Preference;
 
     invoke-virtual {p2}, Landroid/preference/Preference;->getKey()Ljava/lang/String;
 
@@ -555,9 +541,6 @@
 
 .method private setSummary(JII)Ljava/lang/String;
     .locals 10
-    .param p1    # J
-    .param p3    # I
-    .param p4    # I
 
     const/4 v8, 0x0
 
@@ -1055,7 +1038,6 @@
 
 .method private showUseWifiToast(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     if-eqz p1, :cond_0
 
@@ -1201,9 +1183,6 @@
 
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 9
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const/4 v8, 0x1
 
@@ -1397,7 +1376,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 11
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -1558,7 +1536,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 14
-    .param p1    # Landroid/os/Bundle;
 
     invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 
@@ -1982,9 +1959,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 2
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const v0, 0x7f030080
 
@@ -2003,7 +1977,6 @@
 
 .method public onNewIntent(Landroid/content/Intent;)V
     .locals 1
-    .param p1    # Landroid/content/Intent;
 
     invoke-virtual {p1}, Landroid/content/Intent;->getExtras()Landroid/os/Bundle;
 

@@ -54,7 +54,6 @@
 
 .method public constructor <init>(Landroid/net/nsd/DnsSdTxtRecord;)V
     .locals 1
-    .param p1    # Landroid/net/nsd/DnsSdTxtRecord;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -82,7 +81,6 @@
 
 .method public constructor <init>([B)V
     .locals 1
-    .param p1    # [B
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -101,7 +99,6 @@
 
 .method static synthetic access$000(Landroid/net/nsd/DnsSdTxtRecord;)[B
     .locals 1
-    .param p0    # Landroid/net/nsd/DnsSdTxtRecord;
 
     iget-object v0, p0, Landroid/net/nsd/DnsSdTxtRecord;->mData:[B
 
@@ -110,7 +107,6 @@
 
 .method private getKey(I)Ljava/lang/String;
     .locals 7
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -192,7 +188,6 @@
 
 .method private getValue(I)[B
     .locals 9
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -282,7 +277,6 @@
 
 .method private getValue(Ljava/lang/String;)[B
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -321,7 +315,6 @@
 
 .method private getValueAsString(I)Ljava/lang/String;
     .locals 2
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/net/nsd/DnsSdTxtRecord;->getValue(I)[B
 
@@ -344,9 +337,6 @@
 
 .method private insert([B[BI)V
     .locals 11
-    .param p1    # [B
-    .param p2    # [B
-    .param p3    # I
 
     const/4 v7, 0x0
 
@@ -476,7 +466,6 @@
 # virtual methods
 .method public contains(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -521,7 +510,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 3
-    .param p1    # Ljava/lang/Object;
 
     if-ne p1, p0, :cond_0
 
@@ -557,7 +545,6 @@
 
 .method public get(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Landroid/net/nsd/DnsSdTxtRecord;->getValue(Ljava/lang/String;)[B
 
@@ -640,7 +627,6 @@
 
 .method public remove(Ljava/lang/String;)I
     .locals 9
-    .param p1    # Ljava/lang/String;
 
     const/4 v8, 0x0
 
@@ -760,8 +746,6 @@
 
 .method public set(Ljava/lang/String;Ljava/lang/String;)V
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     if-eqz p2, :cond_0
 
@@ -1007,8 +991,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v0, p0, Landroid/net/nsd/DnsSdTxtRecord;->mData:[B
 

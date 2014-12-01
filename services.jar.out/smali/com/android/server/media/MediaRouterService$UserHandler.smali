@@ -108,8 +108,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/media/MediaRouterService;Lcom/android/server/media/MediaRouterService$UserRecord;)V
     .locals 3
-    .param p1    # Lcom/android/server/media/MediaRouterService;
-    .param p2    # Lcom/android/server/media/MediaRouterService$UserRecord;
 
     invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
 
@@ -516,7 +514,6 @@
 
 .method private findProviderRecord(Lcom/android/server/media/RemoteDisplayProviderProxy;)I
     .locals 4
-    .param p1    # Lcom/android/server/media/RemoteDisplayProviderProxy;
 
     iget-object v3, p0, Lcom/android/server/media/MediaRouterService$UserHandler;->mProviderRecords:Ljava/util/ArrayList;
 
@@ -559,7 +556,6 @@
 
 .method private findRouteRecord(Ljava/lang/String;)Lcom/android/server/media/MediaRouterService$UserHandler$RouteRecord;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     iget-object v3, p0, Lcom/android/server/media/MediaRouterService$UserHandler;->mProviderRecords:Ljava/util/ArrayList;
 
@@ -602,7 +598,6 @@
 
 .method private static getConnectionPhase(I)I
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -643,8 +638,6 @@
 
 .method private requestSetVolume(Ljava/lang/String;I)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/server/media/MediaRouterService$UserHandler;->mGloballySelectedRouteRecord:Lcom/android/server/media/MediaRouterService$UserHandler$RouteRecord;
 
@@ -676,8 +669,6 @@
 
 .method private requestUpdateVolume(Ljava/lang/String;I)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/server/media/MediaRouterService$UserHandler;->mGloballySelectedRouteRecord:Lcom/android/server/media/MediaRouterService$UserHandler$RouteRecord;
 
@@ -728,7 +719,6 @@
 
 .method private selectRoute(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_1
 
@@ -892,7 +882,6 @@
 
 .method private unselectRoute(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -1119,7 +1108,6 @@
 
 .method private updateConnectionTimeout(I)V
     .locals 3
-    .param p1    # I
 
     const/16 v2, 0x9
 
@@ -1305,8 +1293,6 @@
 
 .method private updateProvider(Lcom/android/server/media/RemoteDisplayProviderProxy;Landroid/media/RemoteDisplayState;)V
     .locals 3
-    .param p1    # Lcom/android/server/media/RemoteDisplayProviderProxy;
-    .param p2    # Landroid/media/RemoteDisplayState;
 
     invoke-direct {p0, p1}, Lcom/android/server/media/MediaRouterService$UserHandler;->findProviderRecord(Lcom/android/server/media/RemoteDisplayProviderProxy;)I
 
@@ -1340,7 +1326,6 @@
 # virtual methods
 .method public addProvider(Lcom/android/server/media/RemoteDisplayProviderProxy;)V
     .locals 2
-    .param p1    # Lcom/android/server/media/RemoteDisplayProviderProxy;
 
     invoke-virtual {p1, p0}, Lcom/android/server/media/RemoteDisplayProviderProxy;->setCallback(Lcom/android/server/media/RemoteDisplayProviderProxy$Callback;)V
 
@@ -1373,8 +1358,6 @@
 
 .method public dump(Ljava/io/PrintWriter;Ljava/lang/String;)V
     .locals 7
-    .param p1    # Ljava/io/PrintWriter;
-    .param p2    # Ljava/lang/String;
 
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -1642,7 +1625,6 @@
 
 .method public handleMessage(Landroid/os/Message;)V
     .locals 2
-    .param p1    # Landroid/os/Message;
 
     iget v0, p1, Landroid/os/Message;->what:I
 
@@ -1732,8 +1714,6 @@
 
 .method public onDisplayStateChanged(Lcom/android/server/media/RemoteDisplayProviderProxy;Landroid/media/RemoteDisplayState;)V
     .locals 0
-    .param p1    # Lcom/android/server/media/RemoteDisplayProviderProxy;
-    .param p2    # Landroid/media/RemoteDisplayState;
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/media/MediaRouterService$UserHandler;->updateProvider(Lcom/android/server/media/RemoteDisplayProviderProxy;Landroid/media/RemoteDisplayState;)V
 
@@ -1742,7 +1722,6 @@
 
 .method public removeProvider(Lcom/android/server/media/RemoteDisplayProviderProxy;)V
     .locals 4
-    .param p1    # Lcom/android/server/media/RemoteDisplayProviderProxy;
 
     const/4 v3, 0x0
 

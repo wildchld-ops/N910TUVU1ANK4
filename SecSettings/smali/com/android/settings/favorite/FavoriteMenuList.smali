@@ -98,8 +98,6 @@
 # virtual methods
 .method public OnTwMultiSelectStart(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     sget-object v0, Lcom/android/settings/favorite/FavoriteMenuList;->TAG:Ljava/lang/String;
 
@@ -120,8 +118,6 @@
 
 .method public OnTwMultiSelectStop(II)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     const/4 v3, 0x0
 
@@ -270,7 +266,6 @@
 
 .method public isGiditemChecked(I)Z
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/settings/favorite/FavoriteMenuList;->mAdapter:Lcom/android/settings/favorite/FavoriteMenuList$FavoriteAdapter;
 
@@ -283,7 +278,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 6
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v3, 0x1
 
@@ -407,7 +401,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 3
-    .param p1    # Landroid/view/Menu;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreateOptionsMenu(Landroid/view/Menu;)Z
 
@@ -473,8 +466,6 @@
 
 .method public onGridItemSelected(Landroid/preference/PreferenceActivity$Header;I)V
     .locals 6
-    .param p1    # Landroid/preference/PreferenceActivity$Header;
-    .param p2    # I
 
     const/4 v5, 0x0
 
@@ -539,9 +530,6 @@
 
 .method public onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
     .locals 6
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -619,7 +607,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 2
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v0, 0x1
 
@@ -688,12 +675,6 @@
 
 .method public onTwMultiSelected(Landroid/widget/AdapterView;Landroid/view/View;IJZZZ)V
     .locals 2
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
-    .param p6    # Z
-    .param p7    # Z
-    .param p8    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

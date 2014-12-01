@@ -146,7 +146,6 @@
 
 .method public constructor <init>(Landroid/sec/multiwindow/impl/IMultiWindowManager;)V
     .locals 1
-    .param p1    # Landroid/sec/multiwindow/impl/IMultiWindowManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -161,7 +160,6 @@
 
 .method public static calcStatusBarHeight(Landroid/content/Context;)Z
     .locals 7
-    .param p0    # Landroid/content/Context;
 
     const/4 v5, 0x0
 
@@ -245,7 +243,6 @@
 
 .method public static checkMultiWindowFeature(Landroid/content/Context;)V
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     sget-boolean v1, Landroid/sec/multiwindow/impl/MultiWindowManager;->sQueriedTypeMultiWindow:Z
 
@@ -528,7 +525,6 @@
 
 .method public static getAppDisplaySize(Landroid/graphics/Point;)V
     .locals 5
-    .param p0    # Landroid/graphics/Point;
 
     const/4 v2, 0x0
 
@@ -579,7 +575,6 @@
 
 .method public static getFeatureLevel(Landroid/content/Context;)I
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     sget-boolean v0, Landroid/sec/multiwindow/impl/MultiWindowManager;->sQueried:Z
 
@@ -621,7 +616,6 @@
 
 .method public static initHasSystemNavBar(Z)V
     .locals 1
-    .param p0    # Z
 
     sput-boolean p0, Landroid/sec/multiwindow/impl/MultiWindowManager;->sHasSystemNavBar:Z
 
@@ -642,9 +636,6 @@
 
 .method public static isArrangeMode(IZZ)Z
     .locals 1
-    .param p0    # I
-    .param p1    # Z
-    .param p2    # Z
 
     const/4 v0, 0x0
 
@@ -653,7 +644,6 @@
 
 .method public static isCascadeWindow(I)Z
     .locals 1
-    .param p0    # I
 
     const/4 v0, 0x0
 
@@ -662,7 +652,6 @@
 
 .method public static isEnabled(Landroid/content/Context;)Z
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     sget-boolean v1, Landroid/sec/multiwindow/impl/MultiWindowManager;->sQueried:Z
 
@@ -725,7 +714,6 @@
 
 .method public static isMinimized(I)Z
     .locals 1
-    .param p0    # I
 
     const/4 v0, 0x0
 
@@ -734,7 +722,6 @@
 
 .method public static isMultiWindow(I)Z
     .locals 1
-    .param p0    # I
 
     const/4 v0, 0x0
 
@@ -743,7 +730,6 @@
 
 .method public static isNormalWindow(I)Z
     .locals 1
-    .param p0    # I
 
     const/4 v0, 0x0
 
@@ -752,7 +738,6 @@
 
 .method public static isPinup(I)Z
     .locals 1
-    .param p0    # I
 
     const/4 v0, 0x0
 
@@ -761,7 +746,6 @@
 
 .method public static isResizable(I)Z
     .locals 1
-    .param p0    # I
 
     const/4 v0, 0x0
 
@@ -770,7 +754,6 @@
 
 .method public static isScaleWindow(I)Z
     .locals 1
-    .param p0    # I
 
     const/4 v0, 0x0
 
@@ -779,7 +762,6 @@
 
 .method public static isSupportCommonUI(Landroid/content/Context;)Z
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Landroid/sec/multiwindow/impl/MultiWindowManager;->checkMultiWindowFeature(Landroid/content/Context;)V
 
@@ -790,7 +772,6 @@
 
 .method public static isSupportFixedSplitView(Landroid/content/Context;)Z
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Landroid/sec/multiwindow/impl/MultiWindowManager;->checkMultiWindowFeature(Landroid/content/Context;)V
 
@@ -801,7 +782,6 @@
 
 .method public static isSupportFreeStyle(Landroid/content/Context;)Z
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Landroid/sec/multiwindow/impl/MultiWindowManager;->checkMultiWindowFeature(Landroid/content/Context;)V
 
@@ -812,7 +792,6 @@
 
 .method public static isSupportFreeStyleDocking(Landroid/content/Context;)Z
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Landroid/sec/multiwindow/impl/MultiWindowManager;->checkMultiWindowFeature(Landroid/content/Context;)V
 
@@ -823,7 +802,6 @@
 
 .method public static isSupportFreeStyleLaunch(Landroid/content/Context;)Z
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Landroid/sec/multiwindow/impl/MultiWindowManager;->checkMultiWindowFeature(Landroid/content/Context;)V
 
@@ -834,7 +812,6 @@
 
 .method public static isSupportMinimize(Landroid/content/Context;)Z
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Landroid/sec/multiwindow/impl/MultiWindowManager;->checkMultiWindowFeature(Landroid/content/Context;)V
 
@@ -845,7 +822,6 @@
 
 .method public static isSupportMultiWindow(Landroid/content/Context;)Z
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Landroid/sec/multiwindow/impl/MultiWindowManager;->checkMultiWindowFeature(Landroid/content/Context;)V
 
@@ -856,7 +832,6 @@
 
 .method public static isSupportMultiWindowLaunch(Landroid/content/Context;)Z
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Landroid/sec/multiwindow/impl/MultiWindowManager;->checkMultiWindowFeature(Landroid/content/Context;)V
 
@@ -867,7 +842,6 @@
 
 .method public static isSupportQuadView(Landroid/content/Context;)Z
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Landroid/sec/multiwindow/impl/MultiWindowManager;->checkMultiWindowFeature(Landroid/content/Context;)V
 
@@ -878,7 +852,6 @@
 
 .method public static isSupportScaleWindow(Landroid/content/Context;)Z
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Landroid/sec/multiwindow/impl/MultiWindowManager;->checkMultiWindowFeature(Landroid/content/Context;)V
 
@@ -889,7 +862,6 @@
 
 .method public static isSupportSplitFullScreen(Landroid/content/Context;)Z
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Landroid/sec/multiwindow/impl/MultiWindowManager;->checkMultiWindowFeature(Landroid/content/Context;)V
 
@@ -900,7 +872,6 @@
 
 .method private static mode(I)I
     .locals 1
-    .param p0    # I
 
     const/4 v0, 0x0
 
@@ -909,7 +880,6 @@
 
 .method private static option(I)I
     .locals 1
-    .param p0    # I
 
     const/4 v0, 0x0
 
@@ -918,7 +888,6 @@
 
 .method public static setCurrentStatusBarVisibility(Z)V
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Landroid/sec/multiwindow/impl/MultiWindowManager;->sStatusBarVisibility:Z
 
@@ -927,7 +896,6 @@
 
 .method private static zone(I)I
     .locals 1
-    .param p0    # I
 
     const/4 v0, 0x0
 
@@ -938,7 +906,6 @@
 # virtual methods
 .method public calculateSplitWindowSize(I)Landroid/graphics/Rect;
     .locals 2
-    .param p1    # I
 
     :try_start_0
     iget-object v1, p0, Landroid/sec/multiwindow/impl/MultiWindowManager;->mService:Landroid/sec/multiwindow/impl/IMultiWindowManager;
@@ -964,7 +931,6 @@
 
 .method public checkCenterBarRect(Landroid/graphics/Rect;)Landroid/graphics/Rect;
     .locals 2
-    .param p1    # Landroid/graphics/Rect;
 
     :try_start_0
     iget-object v1, p0, Landroid/sec/multiwindow/impl/MultiWindowManager;->mService:Landroid/sec/multiwindow/impl/IMultiWindowManager;
@@ -990,8 +956,6 @@
 
 .method public dispatchMinimizeEvent(Landroid/os/IBinder;Landroid/view/MotionEvent;)V
     .locals 2
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Landroid/view/MotionEvent;
 
     :try_start_0
     iget-object v1, p0, Landroid/sec/multiwindow/impl/MultiWindowManager;->mService:Landroid/sec/multiwindow/impl/IMultiWindowManager;
@@ -1013,11 +977,6 @@
 
 .method public findDockingWindowZone(IIIII)I
     .locals 7
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     :try_start_0
     iget-object v0, p0, Landroid/sec/multiwindow/impl/MultiWindowManager;->mService:Landroid/sec/multiwindow/impl/IMultiWindowManager;
@@ -1222,7 +1181,6 @@
 
 .method public isSupportScaleApp(Landroid/content/pm/ActivityInfo;)Z
     .locals 2
-    .param p1    # Landroid/content/pm/ActivityInfo;
 
     :try_start_0
     iget-object v1, p0, Landroid/sec/multiwindow/impl/MultiWindowManager;->mService:Landroid/sec/multiwindow/impl/IMultiWindowManager;
@@ -1246,7 +1204,6 @@
 
 .method public launchExternalDisplay(Z)V
     .locals 2
-    .param p1    # Z
 
     :try_start_0
     iget-object v1, p0, Landroid/sec/multiwindow/impl/MultiWindowManager;->mService:Landroid/sec/multiwindow/impl/IMultiWindowManager;
@@ -1287,8 +1244,6 @@
 
 .method public notifyMultiDisplayState(ZZ)Z
     .locals 2
-    .param p1    # Z
-    .param p2    # Z
 
     :try_start_0
     iget-object v1, p0, Landroid/sec/multiwindow/impl/MultiWindowManager;->mService:Landroid/sec/multiwindow/impl/IMultiWindowManager;
@@ -1314,9 +1269,6 @@
 
 .method public registerCallback(Landroid/os/IBinder;ILandroid/os/IBinder;)Z
     .locals 2
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # I
-    .param p3    # Landroid/os/IBinder;
 
     :try_start_0
     iget-object v1, p0, Landroid/sec/multiwindow/impl/MultiWindowManager;->mService:Landroid/sec/multiwindow/impl/IMultiWindowManager;
@@ -1342,7 +1294,6 @@
 
 .method public setAppListPosition(I)V
     .locals 2
-    .param p1    # I
 
     :try_start_0
     iget-object v1, p0, Landroid/sec/multiwindow/impl/MultiWindowManager;->mService:Landroid/sec/multiwindow/impl/IMultiWindowManager;
@@ -1364,7 +1315,6 @@
 
 .method public setCenterBarPoint(Landroid/graphics/Point;)V
     .locals 2
-    .param p1    # Landroid/graphics/Point;
 
     :try_start_0
     iget-object v1, p0, Landroid/sec/multiwindow/impl/MultiWindowManager;->mService:Landroid/sec/multiwindow/impl/IMultiWindowManager;
@@ -1407,7 +1357,6 @@
 
 .method public setMultiDisplayState(Z)V
     .locals 1
-    .param p1    # Z
 
     :try_start_0
     iget-object v0, p0, Landroid/sec/multiwindow/impl/MultiWindowManager;->mService:Landroid/sec/multiwindow/impl/IMultiWindowManager;
@@ -1427,7 +1376,6 @@
 
 .method public setMultiDisplayTarget(I)Z
     .locals 2
-    .param p1    # I
 
     :try_start_0
     iget-object v1, p0, Landroid/sec/multiwindow/impl/MultiWindowManager;->mService:Landroid/sec/multiwindow/impl/IMultiWindowManager;
@@ -1451,7 +1399,6 @@
 
 .method public unRegisterCallback(Landroid/os/IBinder;)Z
     .locals 2
-    .param p1    # Landroid/os/IBinder;
 
     :try_start_0
     iget-object v1, p0, Landroid/sec/multiwindow/impl/MultiWindowManager;->mService:Landroid/sec/multiwindow/impl/IMultiWindowManager;

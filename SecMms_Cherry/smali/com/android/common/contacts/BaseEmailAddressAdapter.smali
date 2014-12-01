@@ -57,7 +57,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/16 v0, 0xa
 
@@ -68,8 +67,6 @@
 
 .method public constructor <init>(Landroid/content/Context;I)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     invoke-direct {p0, p1}, Lcom/android/common/widget/CompositeCursorAdapter;-><init>(Landroid/content/Context;)V
 
@@ -92,7 +89,6 @@
 
 .method static synthetic access$000(Lcom/android/common/contacts/BaseEmailAddressAdapter;)Z
     .locals 1
-    .param p0    # Lcom/android/common/contacts/BaseEmailAddressAdapter;
 
     iget-boolean v0, p0, Lcom/android/common/contacts/BaseEmailAddressAdapter;->mDirectoriesLoaded:Z
 
@@ -101,8 +97,6 @@
 
 .method static synthetic access$002(Lcom/android/common/contacts/BaseEmailAddressAdapter;Z)Z
     .locals 0
-    .param p0    # Lcom/android/common/contacts/BaseEmailAddressAdapter;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/common/contacts/BaseEmailAddressAdapter;->mDirectoriesLoaded:Z
 
@@ -111,7 +105,6 @@
 
 .method static synthetic access$100(Lcom/android/common/contacts/BaseEmailAddressAdapter;)I
     .locals 1
-    .param p0    # Lcom/android/common/contacts/BaseEmailAddressAdapter;
 
     iget v0, p0, Lcom/android/common/contacts/BaseEmailAddressAdapter;->mPreferredMaxResultCount:I
 
@@ -120,7 +113,6 @@
 
 .method static synthetic access$200(Lcom/android/common/contacts/BaseEmailAddressAdapter;)Landroid/accounts/Account;
     .locals 1
-    .param p0    # Lcom/android/common/contacts/BaseEmailAddressAdapter;
 
     iget-object v0, p0, Lcom/android/common/contacts/BaseEmailAddressAdapter;->mAccount:Landroid/accounts/Account;
 
@@ -129,8 +121,6 @@
 
 .method static synthetic access$300(Lcom/android/common/contacts/BaseEmailAddressAdapter;Landroid/database/Cursor;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/common/contacts/BaseEmailAddressAdapter;
-    .param p1    # Landroid/database/Cursor;
 
     invoke-direct {p0, p1}, Lcom/android/common/contacts/BaseEmailAddressAdapter;->makeDisplayString(Landroid/database/Cursor;)Ljava/lang/String;
 
@@ -169,8 +159,6 @@
 
 .method private hasDuplicates(Landroid/database/Cursor;I)Z
     .locals 3
-    .param p1    # Landroid/database/Cursor;
-    .param p2    # I
 
     const/4 v1, 0x1
 
@@ -206,8 +194,6 @@
 
 .method private isDuplicate(Ljava/lang/String;I)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v4, 0x1
 
@@ -271,7 +257,6 @@
 
 .method private isLoading(I)Z
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/common/widget/CompositeCursorAdapter;->getPartition(I)Lcom/android/common/widget/CompositeCursorAdapter$Partition;
 
@@ -286,7 +271,6 @@
 
 .method private final makeDisplayString(Landroid/database/Cursor;)Ljava/lang/String;
     .locals 5
-    .param p1    # Landroid/database/Cursor;
 
     const/4 v4, 0x0
 
@@ -346,8 +330,6 @@
 
 .method private removeDuplicatesAndTruncate(ILandroid/database/Cursor;)Landroid/database/Cursor;
     .locals 8
-    .param p1    # I
-    .param p2    # Landroid/database/Cursor;
 
     const/16 v7, 0xa
 
@@ -447,10 +429,6 @@
 
 .method protected bindView(Landroid/view/View;ILandroid/database/Cursor;I)V
     .locals 7
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # Landroid/database/Cursor;
-    .param p4    # I
 
     invoke-virtual {p0, p2}, Lcom/android/common/widget/CompositeCursorAdapter;->getPartition(I)Lcom/android/common/widget/CompositeCursorAdapter$Partition;
 
@@ -531,8 +509,6 @@
 
 .method protected getItemViewType(II)I
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0, p1}, Lcom/android/common/widget/CompositeCursorAdapter;->getPartition(I)Lcom/android/common/widget/CompositeCursorAdapter$Partition;
 
@@ -563,8 +539,6 @@
 
 .method protected isEnabled(II)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1}, Lcom/android/common/contacts/BaseEmailAddressAdapter;->isLoading(I)Z
 
@@ -585,11 +559,6 @@
 
 .method protected newView(Landroid/content/Context;ILandroid/database/Cursor;ILandroid/view/ViewGroup;)Landroid/view/View;
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Landroid/database/Cursor;
-    .param p4    # I
-    .param p5    # Landroid/view/ViewGroup;
 
     invoke-virtual {p0, p2}, Lcom/android/common/widget/CompositeCursorAdapter;->getPartition(I)Lcom/android/common/widget/CompositeCursorAdapter$Partition;
 
@@ -618,9 +587,6 @@
 
 .method protected onDirectoryLoadFinished(Ljava/lang/CharSequence;Landroid/database/Cursor;Landroid/database/Cursor;)V
     .locals 23
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Landroid/database/Cursor;
-    .param p3    # Landroid/database/Cursor;
 
     if-eqz p2, :cond_5
 
@@ -1270,9 +1236,6 @@
 
 .method public onPartitionLoadFinished(Ljava/lang/CharSequence;ILandroid/database/Cursor;)V
     .locals 3
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # Landroid/database/Cursor;
 
     invoke-virtual {p0}, Lcom/android/common/widget/CompositeCursorAdapter;->getPartitionCount()I
 
@@ -1335,7 +1298,6 @@
 
 .method public setAccount(Landroid/accounts/Account;)V
     .locals 0
-    .param p1    # Landroid/accounts/Account;
 
     iput-object p1, p0, Lcom/android/common/contacts/BaseEmailAddressAdapter;->mAccount:Landroid/accounts/Account;
 
@@ -1344,7 +1306,6 @@
 
 .method showSearchPendingIfNotComplete(I)V
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/common/widget/CompositeCursorAdapter;->getPartitionCount()I
 

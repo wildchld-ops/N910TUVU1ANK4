@@ -220,13 +220,13 @@
 
     move-result v8
 
-    invoke-virtual {v1, v5}, Landroid/widget/CompoundButton;->setChecked(Z)V
+    invoke-virtual {v1, v5}, Landroid/widget/CheckBox;->setChecked(Z)V
 
     new-instance v0, Lcom/android/phone/callsettings/PNLAutoUpdateListPreference$2;
 
     invoke-direct {v0, p0}, Lcom/android/phone/callsettings/PNLAutoUpdateListPreference$2;-><init>(Lcom/android/phone/callsettings/PNLAutoUpdateListPreference;)V
 
-    invoke-virtual {v1, v0}, Landroid/widget/CompoundButton;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
+    invoke-virtual {v1, v0}, Landroid/widget/CheckBox;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
     if-nez v8, :cond_0
 
@@ -235,33 +235,33 @@
     const v7, 0x7f0904d5
 
     :goto_0
-    invoke-virtual {v1}, Landroid/view/View;->getPaddingLeft()I
+    invoke-virtual {v1}, Landroid/widget/CheckBox;->getPaddingLeft()I
 
     move-result v0
 
     add-int/lit8 v0, v0, 0x19
 
-    invoke-virtual {v1}, Landroid/view/View;->getPaddingTop()I
+    invoke-virtual {v1}, Landroid/widget/CheckBox;->getPaddingTop()I
 
     move-result v2
 
-    invoke-virtual {v1}, Landroid/view/View;->getPaddingRight()I
+    invoke-virtual {v1}, Landroid/widget/CheckBox;->getPaddingRight()I
 
     move-result v4
 
-    invoke-virtual {v1}, Landroid/view/View;->getPaddingBottom()I
+    invoke-virtual {v1}, Landroid/widget/CheckBox;->getPaddingBottom()I
 
     move-result v5
 
-    invoke-virtual {v1, v0, v2, v4, v5}, Landroid/widget/TextView;->setPadding(IIII)V
+    invoke-virtual {v1, v0, v2, v4, v5}, Landroid/widget/CheckBox;->setPadding(IIII)V
 
     const v0, 0x7f09050f
 
-    invoke-virtual {v1, v0}, Landroid/widget/TextView;->setText(I)V
+    invoke-virtual {v1, v0}, Landroid/widget/CheckBox;->setText(I)V
 
     const/high16 v0, 0x41980000
 
-    invoke-virtual {v1, v0}, Landroid/widget/TextView;->setTextSize(F)V
+    invoke-virtual {v1, v0}, Landroid/widget/CheckBox;->setTextSize(F)V
 
     new-instance v9, Landroid/view/ViewGroup$LayoutParams;
 
@@ -271,7 +271,7 @@
 
     invoke-direct {v9, v0, v2}, Landroid/view/ViewGroup$LayoutParams;-><init>(II)V
 
-    invoke-virtual {v1, v9}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+    invoke-virtual {v1, v9}, Landroid/widget/CheckBox;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
     new-instance v6, Landroid/app/AlertDialog$Builder;
 
@@ -319,7 +319,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->show()V
+    invoke-virtual {v0}, Landroid/app/AlertDialog;->show()V
 
     return-void
 
@@ -372,7 +372,7 @@
 
     invoke-super {p0, p1}, Landroid/preference/ListPreference;->onDialogClosed(Z)V
 
-    invoke-virtual {p0}, Landroid/preference/ListPreference;->getEntryValues()[Ljava/lang/CharSequence;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/PNLAutoUpdateListPreference;->getEntryValues()[Ljava/lang/CharSequence;
 
     move-result-object v0
 
@@ -392,13 +392,13 @@
 
     move-result-object v1
 
-    invoke-virtual {p0, v1}, Landroid/preference/Preference;->callChangeListener(Ljava/lang/Object;)Z
+    invoke-virtual {p0, v1}, Lcom/android/phone/callsettings/PNLAutoUpdateListPreference;->callChangeListener(Ljava/lang/Object;)Z
 
     move-result v2
 
     if-eqz v2, :cond_0
 
-    invoke-virtual {p0, v1}, Landroid/preference/ListPreference;->setValue(Ljava/lang/String;)V
+    invoke-virtual {p0, v1}, Lcom/android/phone/callsettings/PNLAutoUpdateListPreference;->setValue(Ljava/lang/String;)V
 
     :cond_0
     return-void
@@ -410,17 +410,17 @@
 
     const/4 v3, 0x0
 
-    invoke-virtual {p0}, Landroid/preference/ListPreference;->getValue()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/PNLAutoUpdateListPreference;->getValue()Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-virtual {p0, v0}, Landroid/preference/ListPreference;->findIndexOfValue(Ljava/lang/String;)I
+    invoke-virtual {p0, v0}, Lcom/android/phone/callsettings/PNLAutoUpdateListPreference;->findIndexOfValue(Ljava/lang/String;)I
 
     move-result v0
 
     iput v0, p0, Lcom/android/phone/callsettings/PNLAutoUpdateListPreference;->mSuperClickedDialogEntryIndex:I
 
-    invoke-virtual {p0}, Landroid/preference/ListPreference;->getEntries()[Ljava/lang/CharSequence;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/PNLAutoUpdateListPreference;->getEntries()[Ljava/lang/CharSequence;
 
     move-result-object v0
 

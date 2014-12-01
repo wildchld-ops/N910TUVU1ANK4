@@ -88,7 +88,7 @@
 
     if-nez v2, :cond_7
 
-    invoke-virtual {p0, v8}, Landroid/os/Handler;->hasMessages(I)Z
+    invoke-virtual {p0, v8}, Lcom/android/phone/Ringer$3;->hasMessages(I)Z
 
     move-result v2
 
@@ -139,7 +139,7 @@
 
     const-wide/16 v5, 0xfa0
 
-    invoke-virtual {p0, v2, v5, v6}, Landroid/os/Handler;->sendEmptyMessageDelayed(IJ)Z
+    invoke-virtual {p0, v2, v5, v6}, Lcom/android/phone/Ringer$3;->sendEmptyMessageDelayed(IJ)Z
 
     :cond_1
     const-string v2, "sec_product_feature_common_dsds_support"
@@ -280,7 +280,7 @@
     const/4 v2, 0x3
 
     :try_start_0
-    invoke-virtual {p0, v2}, Landroid/os/Handler;->hasMessages(I)Z
+    invoke-virtual {p0, v2}, Lcom/android/phone/Ringer$3;->hasMessages(I)Z
 
     move-result v2
 
@@ -302,7 +302,7 @@
 
     if-eqz v1, :cond_0
 
-    invoke-virtual {p0, v8}, Landroid/os/Handler;->hasMessages(I)Z
+    invoke-virtual {p0, v8}, Lcom/android/phone/Ringer$3;->hasMessages(I)Z
 
     move-result v2
 
@@ -382,7 +382,7 @@
 
     if-eqz v2, :cond_12
 
-    invoke-virtual {p0, v9}, Landroid/os/Handler;->hasMessages(I)Z
+    invoke-virtual {p0, v9}, Lcom/android/phone/Ringer$3;->hasMessages(I)Z
 
     move-result v2
 
@@ -437,7 +437,7 @@
 
     const-wide/16 v2, 0x7d0
 
-    invoke-virtual {p0, v9, v2, v3}, Landroid/os/Handler;->sendEmptyMessageDelayed(IJ)Z
+    invoke-virtual {p0, v9, v2, v3}, Lcom/android/phone/Ringer$3;->sendEmptyMessageDelayed(IJ)Z
 
     :cond_9
     :goto_4
@@ -807,7 +807,7 @@
     invoke-static {v2, v3}, Lcom/android/phone/Ringer;->access$1502(Lcom/android/phone/Ringer;Lcom/android/phone/CallTextToSpeech;)Lcom/android/phone/CallTextToSpeech;
 
     :cond_13
-    invoke-virtual {p0}, Landroid/os/Handler;->getLooper()Landroid/os/Looper;
+    invoke-virtual {p0}, Lcom/android/phone/Ringer$3;->getLooper()Landroid/os/Looper;
 
     move-result-object v2
 

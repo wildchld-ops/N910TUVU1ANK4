@@ -759,7 +759,7 @@
 
     iget-object v0, p0, Lcom/android/phone/Ringer;->mVibratorThread:Lcom/android/phone/Ringer$VibratorThread;
 
-    invoke-virtual {v0}, Ljava/lang/Thread;->start()V
+    invoke-virtual {v0}, Lcom/android/phone/Ringer$VibratorThread;->start()V
 
     :cond_0
     :goto_0
@@ -772,7 +772,7 @@
 
     iget-object v0, p0, Lcom/android/phone/Ringer;->mVibratorThread:Lcom/android/phone/Ringer$VibratorThread;
 
-    invoke-virtual {v0}, Ljava/lang/Thread;->start()V
+    invoke-virtual {v0}, Lcom/android/phone/Ringer$VibratorThread;->start()V
 
     goto :goto_0
 .end method
@@ -853,7 +853,7 @@
 
     iget-object v1, p0, Lcom/android/phone/Ringer;->mNotificationFlashThread:Lcom/android/phone/Ringer$NotificationFlashThread;
 
-    invoke-virtual {v1}, Ljava/lang/Thread;->start()V
+    invoke-virtual {v1}, Lcom/android/phone/Ringer$NotificationFlashThread;->start()V
 
     :cond_0
     return-void
@@ -954,7 +954,7 @@
 
     iget-object v4, p0, Lcom/android/phone/Ringer;->mVibratorThread:Lcom/android/phone/Ringer$VibratorThread;
 
-    invoke-virtual {v4}, Ljava/lang/Thread;->start()V
+    invoke-virtual {v4}, Lcom/android/phone/Ringer$VibratorThread;->start()V
 
     :goto_1
     invoke-static {}, Lcom/android/phone/PhoneGlobals;->getInstance()Lcom/android/phone/PhoneGlobals;
@@ -987,7 +987,7 @@
 
     iget-object v4, p0, Lcom/android/phone/Ringer;->mHeadsetRingtoneThread:Lcom/android/phone/Ringer$HeadsetRingtonePlayer;
 
-    invoke-virtual {v4}, Ljava/lang/Thread;->start()V
+    invoke-virtual {v4}, Lcom/android/phone/Ringer$HeadsetRingtonePlayer;->start()V
 
     :cond_2
     const/4 v1, 0x1
@@ -1667,7 +1667,7 @@
 
     iget-object v2, p0, Lcom/android/phone/Ringer;->mHeadsetRingtoneThread:Lcom/android/phone/Ringer$HeadsetRingtonePlayer;
 
-    invoke-virtual {v2}, Ljava/lang/Thread;->start()V
+    invoke-virtual {v2}, Lcom/android/phone/Ringer$HeadsetRingtonePlayer;->start()V
 
     :cond_3
     const/4 v1, 0x1
@@ -2851,7 +2851,7 @@
 
     iget-object v0, p0, Lcom/android/phone/Ringer;->mVibratorThread:Lcom/android/phone/Ringer$VibratorThread;
 
-    invoke-virtual {v0}, Ljava/lang/Thread;->start()V
+    invoke-virtual {v0}, Lcom/android/phone/Ringer$VibratorThread;->start()V
 
     :cond_0
     return-void
@@ -3619,7 +3619,7 @@
 
     iget-object v0, p0, Lcom/android/phone/Ringer;->mHeadsetRingtoneThread:Lcom/android/phone/Ringer$HeadsetRingtonePlayer;
 
-    invoke-virtual {v0}, Ljava/lang/Thread;->start()V
+    invoke-virtual {v0}, Lcom/android/phone/Ringer$HeadsetRingtonePlayer;->start()V
 
     goto :goto_0
 

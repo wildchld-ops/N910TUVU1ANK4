@@ -51,8 +51,6 @@
 
 .method synthetic constructor <init>(Lcom/android/mms/ui/ManageSimMessages;Lcom/android/mms/ui/ManageSimMessages$1;)V
     .locals 0
-    .param p1    # Lcom/android/mms/ui/ManageSimMessages;
-    .param p2    # Lcom/android/mms/ui/ManageSimMessages$1;
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/ManageSimMessages$ModeCallback;-><init>(Lcom/android/mms/ui/ManageSimMessages;)V
 
@@ -61,7 +59,6 @@
 
 .method static synthetic access$4100(Lcom/android/mms/ui/ManageSimMessages$ModeCallback;)I
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ManageSimMessages$ModeCallback;
 
     invoke-direct {p0}, Lcom/android/mms/ui/ManageSimMessages$ModeCallback;->getChbTransX()I
 
@@ -72,7 +69,6 @@
 
 .method static synthetic access$600(Lcom/android/mms/ui/ManageSimMessages$ModeCallback;)Landroid/view/Menu;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ManageSimMessages$ModeCallback;
 
     iget-object v0, p0, Lcom/android/mms/ui/ManageSimMessages$ModeCallback;->mOptionMenu:Landroid/view/Menu;
 
@@ -120,7 +116,6 @@
 
 .method private setEditMode(Z)V
     .locals 2
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -201,8 +196,6 @@
 
 .method public onActionItemClicked(Landroid/view/ActionMode;Landroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # Landroid/view/ActionMode;
-    .param p2    # Landroid/view/MenuItem;
 
     iget-object v0, p0, Lcom/android/mms/ui/ManageSimMessages$ModeCallback;->this$0:Lcom/android/mms/ui/ManageSimMessages;
 
@@ -276,8 +269,6 @@
 
 .method public onCreateActionMode(Landroid/view/ActionMode;Landroid/view/Menu;)Z
     .locals 6
-    .param p1    # Landroid/view/ActionMode;
-    .param p2    # Landroid/view/Menu;
 
     const/16 v5, 0x8
 
@@ -540,7 +531,6 @@
 
 .method public onDestroyActionMode(Landroid/view/ActionMode;)V
     .locals 3
-    .param p1    # Landroid/view/ActionMode;
 
     const/4 v1, 0x0
 
@@ -671,10 +661,6 @@
 
 .method public onItemCheckedStateChanged(Landroid/view/ActionMode;IJZ)V
     .locals 7
-    .param p1    # Landroid/view/ActionMode;
-    .param p2    # I
-    .param p3    # J
-    .param p5    # Z
 
     const/4 v6, 0x0
 
@@ -888,7 +874,6 @@
 
 .method public onPopupItemClick(I)Z
     .locals 1
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -922,8 +907,6 @@
 
 .method public onPrepareActionMode(Landroid/view/ActionMode;Landroid/view/Menu;)Z
     .locals 8
-    .param p1    # Landroid/view/ActionMode;
-    .param p2    # Landroid/view/Menu;
 
     const v7, 0x7f0b03f5
 

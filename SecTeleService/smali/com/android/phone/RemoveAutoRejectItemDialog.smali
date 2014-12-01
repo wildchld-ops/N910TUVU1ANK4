@@ -126,7 +126,7 @@
 
     if-nez v1, :cond_0
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/RemoveAutoRejectItemDialog;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
@@ -146,7 +146,7 @@
 
     move-result-object v0
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/RemoveAutoRejectItemDialog;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
@@ -173,7 +173,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/phone/RemoveAutoRejectItemDialog;->getIntent()Landroid/content/Intent;
 
     move-result-object v9
 
@@ -193,7 +193,7 @@
     return-void
 
     :cond_0
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/RemoveAutoRejectItemDialog;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -310,11 +310,11 @@
 
     invoke-direct {v1, p0}, Lcom/android/phone/RemoveAutoRejectItemDialog$5;-><init>(Lcom/android/phone/RemoveAutoRejectItemDialog;)V
 
-    invoke-virtual {v0, v1}, Landroid/app/Dialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
+    invoke-virtual {v0, v1}, Landroid/app/AlertDialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
     iget-object v0, p0, Lcom/android/phone/RemoveAutoRejectItemDialog;->createDialog:Landroid/app/AlertDialog;
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->show()V
+    invoke-virtual {v0}, Landroid/app/AlertDialog;->show()V
 
     goto/16 :goto_0
 
@@ -345,7 +345,7 @@
 
     iget-object v0, p0, Lcom/android/phone/RemoveAutoRejectItemDialog;->createDialog:Landroid/app/AlertDialog;
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->dismiss()V
+    invoke-virtual {v0}, Landroid/app/AlertDialog;->dismiss()V
 
     :cond_0
     return-void

@@ -37,7 +37,6 @@
 
 .method protected getObj(Lcom/android/launcher2/MenuAppsGrid;)Lcom/android/launcher2/MenuAppsGrid$StateObj;
     .locals 1
-    .param p1    # Lcom/android/launcher2/MenuAppsGrid;
 
     # getter for: Lcom/android/launcher2/MenuAppsGrid;->mStateFolderSelect:Lcom/android/launcher2/MenuAppsGrid$StateFolderSelect;
     invoke-static {p1}, Lcom/android/launcher2/MenuAppsGrid;->access$1200(Lcom/android/launcher2/MenuAppsGrid;)Lcom/android/launcher2/MenuAppsGrid$StateFolderSelect;

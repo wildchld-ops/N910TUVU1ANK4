@@ -110,7 +110,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/ui/TransferContentActivity;)I
     .locals 1
-    .param p0    # Lcom/android/mms/ui/TransferContentActivity;
 
     iget v0, p0, Lcom/android/mms/ui/TransferContentActivity;->mWhichButton:I
 
@@ -119,8 +118,6 @@
 
 .method static synthetic access$002(Lcom/android/mms/ui/TransferContentActivity;I)I
     .locals 0
-    .param p0    # Lcom/android/mms/ui/TransferContentActivity;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/mms/ui/TransferContentActivity;->mWhichButton:I
 
@@ -129,7 +126,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/ui/TransferContentActivity;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/TransferContentActivity;
 
     invoke-direct {p0}, Lcom/android/mms/ui/TransferContentActivity;->handleIntentRequsetParticipant()V
 
@@ -138,7 +134,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/ui/TransferContentActivity;)Landroid/app/AlertDialog;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/TransferContentActivity;
 
     iget-object v0, p0, Lcom/android/mms/ui/TransferContentActivity;->mAttachDialog:Landroid/app/AlertDialog;
 
@@ -147,8 +142,6 @@
 
 .method static synthetic access$202(Lcom/android/mms/ui/TransferContentActivity;Landroid/app/AlertDialog;)Landroid/app/AlertDialog;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/TransferContentActivity;
-    .param p1    # Landroid/app/AlertDialog;
 
     iput-object p1, p0, Lcom/android/mms/ui/TransferContentActivity;->mAttachDialog:Landroid/app/AlertDialog;
 
@@ -209,8 +202,6 @@
 
 .method private createAttachmentTypeAdapter(ZI)Lcom/android/mms/ui/IconListAdapter;
     .locals 1
-    .param p1    # Z
-    .param p2    # I
 
     invoke-static {}, Lcom/android/mms/MmsConfig;->getEnableGridViewOnAddAttachmentMenu()Z
 
@@ -399,7 +390,6 @@
 
 .method private handleIntentStartFt(Landroid/content/Intent;)V
     .locals 2
-    .param p1    # Landroid/content/Intent;
 
     const/4 v0, 0x0
 
@@ -412,8 +402,6 @@
 
 .method private showLowMemoryDialog(JJ)V
     .locals 4
-    .param p1    # J
-    .param p3    # J
 
     cmp-long v1, p1, p3
 
@@ -491,9 +479,6 @@
 # virtual methods
 .method protected onActivityResult(IILandroid/content/Intent;)V
     .locals 29
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     invoke-super/range {p0 .. p3}, Landroid/app/Activity;->onActivityResult(IILandroid/content/Intent;)V
 
@@ -970,7 +955,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 6
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v5, 0x0
 
@@ -1128,8 +1112,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x0
 
@@ -1138,8 +1120,6 @@
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x0
 
@@ -1156,7 +1136,6 @@
 
 .method public sendIntentToLauncherActivity(Ljava/util/ArrayList;Z)V
     .locals 2
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1205,8 +1184,6 @@
 
 .method public showAddAttachmentDialog(ZI)V
     .locals 11
-    .param p1    # Z
-    .param p2    # I
 
     const/4 v10, 0x0
 

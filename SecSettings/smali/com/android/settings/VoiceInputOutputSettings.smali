@@ -39,7 +39,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/settings/SettingsPreferenceFragment;)V
     .locals 2
-    .param p1    # Lcom/android/settings/SettingsPreferenceFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -351,7 +350,6 @@
 
 .method private updateSettingsLink(Ljava/lang/String;)V
     .locals 14
-    .param p1    # Ljava/lang/String;
 
     iget-object v11, p0, Lcom/android/settings/VoiceInputOutputSettings;->mAvailableRecognizersMap:Ljava/util/HashMap;
 
@@ -744,8 +742,6 @@
 
 .method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
     .locals 3
-    .param p1    # Landroid/preference/Preference;
-    .param p2    # Ljava/lang/Object;
 
     iget-object v1, p0, Lcom/android/settings/VoiceInputOutputSettings;->mRecognizerPref:Landroid/preference/ListPreference;
 

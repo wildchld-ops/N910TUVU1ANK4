@@ -34,7 +34,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Landroid/view/LayoutInflater;-><init>(Landroid/content/Context;)V
 
@@ -43,8 +42,6 @@
 
 .method protected constructor <init>(Landroid/view/LayoutInflater;Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/content/Context;
 
     invoke-direct {p0, p1, p2}, Landroid/view/LayoutInflater;-><init>(Landroid/view/LayoutInflater;Landroid/content/Context;)V
 
@@ -55,7 +52,6 @@
 # virtual methods
 .method public cloneInContext(Landroid/content/Context;)Landroid/view/LayoutInflater;
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     new-instance v0, Lcom/android/internal/policy/impl/PhoneLayoutInflater;
 
@@ -66,8 +62,6 @@
 
 .method protected onCreateView(Ljava/lang/String;Landroid/util/AttributeSet;)Landroid/view/View;
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/util/AttributeSet;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/ClassNotFoundException;

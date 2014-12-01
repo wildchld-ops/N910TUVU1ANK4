@@ -316,10 +316,6 @@
 
 .method public static registerImsReceiver(Landroid/content/Context;ZLandroid/content/BroadcastReceiver;Z)Z
     .locals 8
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
-    .param p2    # Landroid/content/BroadcastReceiver;
-    .param p3    # Z
 
     move v2, p3
 

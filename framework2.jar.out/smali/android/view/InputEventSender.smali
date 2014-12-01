@@ -20,8 +20,6 @@
 # direct methods
 .method public constructor <init>(Landroid/view/InputChannel;Landroid/os/Looper;)V
     .locals 2
-    .param p1    # Landroid/view/InputChannel;
-    .param p2    # Landroid/os/Looper;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -84,8 +82,6 @@
 
 .method private dispatchInputEventFinished(IZ)V
     .locals 0
-    .param p1    # I
-    .param p2    # Z
 
     invoke-virtual {p0, p1, p2}, Landroid/view/InputEventSender;->onInputEventFinished(IZ)V
 
@@ -94,7 +90,6 @@
 
 .method private dispose(Z)V
     .locals 2
-    .param p1    # Z
 
     const/4 v1, 0x0
 
@@ -199,16 +194,12 @@
 
 .method public onInputEventFinished(IZ)V
     .locals 0
-    .param p1    # I
-    .param p2    # Z
 
     return-void
 .end method
 
 .method public final sendInputEvent(ILandroid/view/InputEvent;)Z
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/view/InputEvent;
 
     if-nez p2, :cond_0
 

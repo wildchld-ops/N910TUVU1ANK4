@@ -304,7 +304,6 @@
 
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -341,7 +340,6 @@
 
 .method private checkIfNullUriMatcher(Landroid/net/Uri;)Z
     .locals 5
-    .param p1    # Landroid/net/Uri;
 
     const/4 v1, 0x1
 
@@ -417,12 +415,6 @@
 
 .method private getCursorForQuery(Landroid/database/sqlite/SQLiteQueryBuilder;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Landroid/net/Uri;)Landroid/database/Cursor;
     .locals 10
-    .param p1    # Landroid/database/sqlite/SQLiteQueryBuilder;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # [Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Landroid/net/Uri;
 
     iget-object v0, p0, Lcom/sec/knox/container/contentprovider/ContainerStorageProvider;->mSQLiteDataBaseObj:Landroid/database/sqlite/SQLiteDatabase;
 
@@ -608,7 +600,6 @@
 
 .method public static getInstance(Landroid/content/Context;)Lcom/sec/knox/container/contentprovider/ContainerStorageProvider;
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     sget-object v0, Lcom/sec/knox/container/contentprovider/ContainerStorageProvider;->mSelfInstance:Lcom/sec/knox/container/contentprovider/ContainerStorageProvider;
 
@@ -628,7 +619,6 @@
 
 .method private getSQLiteQueryBuilderObj(Landroid/net/Uri;)Landroid/database/sqlite/SQLiteQueryBuilder;
     .locals 2
-    .param p1    # Landroid/net/Uri;
 
     new-instance v0, Landroid/database/sqlite/SQLiteQueryBuilder;
 
@@ -645,7 +635,6 @@
 
 .method private getTableNameForUri(Landroid/net/Uri;)Ljava/lang/String;
     .locals 3
-    .param p1    # Landroid/net/Uri;
 
     sget-object v0, Lcom/sec/knox/container/contentprovider/ContainerStorageProvider;->sUriMatcher:Landroid/content/UriMatcher;
 
@@ -723,8 +712,6 @@
 
 .method private updateBuilderObj(Landroid/database/sqlite/SQLiteQueryBuilder;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Landroid/database/sqlite/SQLiteQueryBuilder;
-    .param p2    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -748,9 +735,6 @@
 # virtual methods
 .method public delete(Landroid/net/Uri;Ljava/lang/String;[Ljava/lang/String;)I
     .locals 6
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Ljava/lang/String;
-    .param p3    # [Ljava/lang/String;
 
     const/4 v2, 0x1
 
@@ -870,8 +854,6 @@
 
 .method public insert(Landroid/net/Uri;Landroid/content/ContentValues;)Landroid/net/Uri;
     .locals 9
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Landroid/content/ContentValues;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/database/SQLException;
@@ -1078,11 +1060,6 @@
 
 .method public declared-synchronized query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
     .locals 8
-    .param p1    # Landroid/net/Uri;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # [Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -1162,10 +1139,6 @@
 
 .method public declared-synchronized update(Landroid/net/Uri;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)I
     .locals 6
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Landroid/content/ContentValues;
-    .param p3    # Ljava/lang/String;
-    .param p4    # [Ljava/lang/String;
 
     const/4 v2, 0x1
 

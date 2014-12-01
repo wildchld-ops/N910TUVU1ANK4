@@ -28,9 +28,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Landroid/content/Context;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -57,7 +54,6 @@
 
 .method private makeFullDeleteUrl(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -116,7 +112,6 @@
 
 .method private makeFullUrl(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -436,7 +431,6 @@
 
 .method public setEstablishedUrl(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/touchtype_fluency/service/util/UrlManager;->mEstablishedUrl:Ljava/lang/String;
 
@@ -445,7 +439,6 @@
 
 .method public setRequestId(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/touchtype_fluency/service/util/UrlManager;->mRequestId:Ljava/lang/String;
 

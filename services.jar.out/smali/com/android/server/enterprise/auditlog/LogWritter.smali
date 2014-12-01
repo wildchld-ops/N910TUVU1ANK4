@@ -23,9 +23,6 @@
 # direct methods
 .method constructor <init>(ILandroid/content/Context;Ljava/lang/String;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/content/Context;
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -54,7 +51,6 @@
 
 .method static synthetic access$000(Lcom/android/server/enterprise/auditlog/LogWritter;)Lcom/android/server/enterprise/auditlog/CircularBuffer;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/auditlog/LogWritter;
 
     iget-object v0, p0, Lcom/android/server/enterprise/auditlog/LogWritter;->mCircularBuffer:Lcom/android/server/enterprise/auditlog/CircularBuffer;
 
@@ -63,7 +59,6 @@
 
 .method static synthetic access$100(Lcom/android/server/enterprise/auditlog/LogWritter;)Lcom/android/server/enterprise/auditlog/IObserver;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/auditlog/LogWritter;
 
     iget-object v0, p0, Lcom/android/server/enterprise/auditlog/LogWritter;->mObserver:Lcom/android/server/enterprise/auditlog/IObserver;
 
@@ -132,7 +127,6 @@
 
 .method setBootCompleted(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/server/enterprise/auditlog/LogWritter;->mCircularBuffer:Lcom/android/server/enterprise/auditlog/CircularBuffer;
 
@@ -143,7 +137,6 @@
 
 .method setCriticalLogSize(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/enterprise/auditlog/LogWritter;->mCircularBuffer:Lcom/android/server/enterprise/auditlog/CircularBuffer;
 
@@ -154,8 +147,6 @@
 
 .method setIsDumping(ZZ)V
     .locals 1
-    .param p1    # Z
-    .param p2    # Z
 
     iget-object v0, p0, Lcom/android/server/enterprise/auditlog/LogWritter;->mCircularBuffer:Lcom/android/server/enterprise/auditlog/CircularBuffer;
 
@@ -166,7 +157,6 @@
 
 .method setMaximumLogSize(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/enterprise/auditlog/LogWritter;->mCircularBuffer:Lcom/android/server/enterprise/auditlog/CircularBuffer;
 
@@ -177,7 +167,6 @@
 
 .method setObserver(Lcom/android/server/enterprise/auditlog/IObserver;)V
     .locals 0
-    .param p1    # Lcom/android/server/enterprise/auditlog/IObserver;
 
     iput-object p1, p0, Lcom/android/server/enterprise/auditlog/LogWritter;->mObserver:Lcom/android/server/enterprise/auditlog/IObserver;
 
@@ -186,7 +175,6 @@
 
 .method setTypeOfDump(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/server/enterprise/auditlog/LogWritter;->mCircularBuffer:Lcom/android/server/enterprise/auditlog/CircularBuffer;
 
@@ -211,7 +199,6 @@
 
 .method swapFiles(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     new-instance v1, Landroid/os/Message;
 
@@ -238,7 +225,6 @@
 
 .method write(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     new-instance v1, Landroid/os/Message;
 

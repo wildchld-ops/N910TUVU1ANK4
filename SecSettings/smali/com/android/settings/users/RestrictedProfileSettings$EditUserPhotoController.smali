@@ -43,12 +43,6 @@
 # direct methods
 .method public constructor <init>(Landroid/app/Fragment;Landroid/widget/ImageView;Landroid/view/View;Landroid/graphics/Bitmap;Landroid/graphics/drawable/Drawable;Z)V
     .locals 5
-    .param p1    # Landroid/app/Fragment;
-    .param p2    # Landroid/widget/ImageView;
-    .param p3    # Landroid/view/View;
-    .param p4    # Landroid/graphics/Bitmap;
-    .param p5    # Landroid/graphics/drawable/Drawable;
-    .param p6    # Z
 
     const/4 v1, 0x1
 
@@ -131,7 +125,6 @@
 
 .method static synthetic access$1000(Lcom/android/settings/users/RestrictedProfileSettings$EditUserPhotoController;)V
     .locals 0
-    .param p0    # Lcom/android/settings/users/RestrictedProfileSettings$EditUserPhotoController;
 
     invoke-direct {p0}, Lcom/android/settings/users/RestrictedProfileSettings$EditUserPhotoController;->takePhoto()V
 
@@ -140,7 +133,6 @@
 
 .method static synthetic access$1100(Lcom/android/settings/users/RestrictedProfileSettings$EditUserPhotoController;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/settings/users/RestrictedProfileSettings$EditUserPhotoController;
 
     iget-object v0, p0, Lcom/android/settings/users/RestrictedProfileSettings$EditUserPhotoController;->mContext:Landroid/content/Context;
 
@@ -149,7 +141,6 @@
 
 .method static synthetic access$1200(Lcom/android/settings/users/RestrictedProfileSettings$EditUserPhotoController;)I
     .locals 1
-    .param p0    # Lcom/android/settings/users/RestrictedProfileSettings$EditUserPhotoController;
 
     iget v0, p0, Lcom/android/settings/users/RestrictedProfileSettings$EditUserPhotoController;->mPhotoSize:I
 
@@ -158,7 +149,6 @@
 
 .method static synthetic access$1300(Lcom/android/settings/users/RestrictedProfileSettings$EditUserPhotoController;)Landroid/graphics/Bitmap;
     .locals 1
-    .param p0    # Lcom/android/settings/users/RestrictedProfileSettings$EditUserPhotoController;
 
     iget-object v0, p0, Lcom/android/settings/users/RestrictedProfileSettings$EditUserPhotoController;->mNewUserPhotoBitmap:Landroid/graphics/Bitmap;
 
@@ -167,8 +157,6 @@
 
 .method static synthetic access$1302(Lcom/android/settings/users/RestrictedProfileSettings$EditUserPhotoController;Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
     .locals 0
-    .param p0    # Lcom/android/settings/users/RestrictedProfileSettings$EditUserPhotoController;
-    .param p1    # Landroid/graphics/Bitmap;
 
     iput-object p1, p0, Lcom/android/settings/users/RestrictedProfileSettings$EditUserPhotoController;->mNewUserPhotoBitmap:Landroid/graphics/Bitmap;
 
@@ -177,7 +165,6 @@
 
 .method static synthetic access$1400(Lcom/android/settings/users/RestrictedProfileSettings$EditUserPhotoController;)Landroid/graphics/drawable/Drawable;
     .locals 1
-    .param p0    # Lcom/android/settings/users/RestrictedProfileSettings$EditUserPhotoController;
 
     iget-object v0, p0, Lcom/android/settings/users/RestrictedProfileSettings$EditUserPhotoController;->mNewUserPhotoDrawable:Landroid/graphics/drawable/Drawable;
 
@@ -186,8 +173,6 @@
 
 .method static synthetic access$1402(Lcom/android/settings/users/RestrictedProfileSettings$EditUserPhotoController;Landroid/graphics/drawable/Drawable;)Landroid/graphics/drawable/Drawable;
     .locals 0
-    .param p0    # Lcom/android/settings/users/RestrictedProfileSettings$EditUserPhotoController;
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     iput-object p1, p0, Lcom/android/settings/users/RestrictedProfileSettings$EditUserPhotoController;->mNewUserPhotoDrawable:Landroid/graphics/drawable/Drawable;
 
@@ -196,7 +181,6 @@
 
 .method static synthetic access$1500(Lcom/android/settings/users/RestrictedProfileSettings$EditUserPhotoController;)Landroid/widget/ImageView;
     .locals 1
-    .param p0    # Lcom/android/settings/users/RestrictedProfileSettings$EditUserPhotoController;
 
     iget-object v0, p0, Lcom/android/settings/users/RestrictedProfileSettings$EditUserPhotoController;->mImageView:Landroid/widget/ImageView;
 
@@ -205,7 +189,6 @@
 
 .method static synthetic access$800(Lcom/android/settings/users/RestrictedProfileSettings$EditUserPhotoController;)V
     .locals 0
-    .param p0    # Lcom/android/settings/users/RestrictedProfileSettings$EditUserPhotoController;
 
     invoke-direct {p0}, Lcom/android/settings/users/RestrictedProfileSettings$EditUserPhotoController;->showUpdatePhotoPopup()V
 
@@ -214,7 +197,6 @@
 
 .method static synthetic access$900(Lcom/android/settings/users/RestrictedProfileSettings$EditUserPhotoController;)V
     .locals 0
-    .param p0    # Lcom/android/settings/users/RestrictedProfileSettings$EditUserPhotoController;
 
     invoke-direct {p0}, Lcom/android/settings/users/RestrictedProfileSettings$EditUserPhotoController;->choosePhoto()V
 
@@ -223,7 +205,6 @@
 
 .method private appendCropExtras(Landroid/content/Intent;)V
     .locals 3
-    .param p1    # Landroid/content/Intent;
 
     const/4 v2, 0x1
 
@@ -266,8 +247,6 @@
 
 .method private appendOutputExtra(Landroid/content/Intent;Landroid/net/Uri;)V
     .locals 1
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Landroid/net/Uri;
 
     const-string v0, "output"
 
@@ -405,9 +384,6 @@
 
 .method private createTempImageUri(Landroid/content/Context;Ljava/lang/String;Z)Landroid/net/Uri;
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     invoke-virtual {p1}, Landroid/content/Context;->getExternalCacheDir()Ljava/io/File;
 
@@ -441,7 +417,6 @@
 
 .method private cropPhoto(Landroid/net/Uri;)V
     .locals 3
-    .param p1    # Landroid/net/Uri;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -490,7 +465,6 @@
 
 .method private static getPhotoSize(Landroid/content/Context;)I
     .locals 7
-    .param p0    # Landroid/content/Context;
 
     const/4 v5, 0x0
 
@@ -543,8 +517,6 @@
 
 .method private onPhotoCropped(Landroid/net/Uri;Z)V
     .locals 3
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Z
 
     new-instance v1, Lcom/android/settings/users/RestrictedProfileSettings$EditUserPhotoController$3;
 
@@ -729,9 +701,6 @@
 
 .method public onActivityResult(IILandroid/content/Intent;)Z
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const/4 v1, 0x0
 

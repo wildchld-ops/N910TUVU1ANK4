@@ -28,7 +28,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/MountService;Landroid/os/storage/IMountServiceListener;)V
     .locals 1
-    .param p2    # Landroid/os/storage/IMountServiceListener;
 
     iput-object p1, p0, Lcom/android/server/MountService$MountServiceBinderListener;->this$0:Lcom/android/server/MountService;
 
@@ -101,7 +100,6 @@
 
 .method setCaller(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/MountService$MountServiceBinderListener;->caller:I
 

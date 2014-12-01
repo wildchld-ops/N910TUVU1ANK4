@@ -56,7 +56,6 @@
 
 .method public static createTemplateManager(Ljava/io/InputStream;)Lcom/voovio/sweep/TemplateManager;
     .locals 2
-    .param p0    # Ljava/io/InputStream;
 
     invoke-static {p0}, Lcom/voovio/util/ConversionUtil;->InputStream2ByteBuffer(Ljava/io/InputStream;)Ljava/nio/ByteBuffer;
 
@@ -71,7 +70,6 @@
 
 .method private static createTemplateManager(Ljava/nio/ByteBuffer;)Lcom/voovio/sweep/TemplateManager;
     .locals 9
-    .param p0    # Ljava/nio/ByteBuffer;
 
     new-instance v7, Lcom/voovio/sweep/TemplateManager;
 
@@ -167,7 +165,6 @@
 # virtual methods
 .method public getGroup(I)Lcom/voovio/sweep/TemplateGroup;
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Lcom/voovio/sweep/TemplateManager;->m_aTemplateGroups:Ljava/util/ArrayList;
 
@@ -220,7 +217,6 @@
 
 .method public getTemplate(I)Lcom/voovio/sweep/Template;
     .locals 5
-    .param p1    # I
 
     iget-object v4, p0, Lcom/voovio/sweep/TemplateManager;->m_aTemplateGroups:Ljava/util/ArrayList;
 
@@ -260,9 +256,6 @@
 
 .method public setIcons(Landroid/graphics/Bitmap;II)V
     .locals 16
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # I
-    .param p3    # I
 
     if-nez p1, :cond_1
 
@@ -411,7 +404,6 @@
 
 .method public setImageAspect(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const-string v3, "horizontal"
 

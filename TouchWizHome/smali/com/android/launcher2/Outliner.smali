@@ -24,8 +24,6 @@
 
 .method public static boxOutline(II)Landroid/graphics/Bitmap;
     .locals 3
-    .param p0    # I
-    .param p1    # I
 
     sget-object v1, Landroid/graphics/Bitmap$Config;->ALPHA_8:Landroid/graphics/Bitmap$Config;
 

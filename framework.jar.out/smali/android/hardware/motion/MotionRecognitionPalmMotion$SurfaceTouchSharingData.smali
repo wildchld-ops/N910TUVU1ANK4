@@ -245,8 +245,6 @@
 
 .method synthetic constructor <init>(Landroid/hardware/motion/MotionRecognitionPalmMotion;Landroid/hardware/motion/MotionRecognitionPalmMotion$1;)V
     .locals 0
-    .param p1    # Landroid/hardware/motion/MotionRecognitionPalmMotion;
-    .param p2    # Landroid/hardware/motion/MotionRecognitionPalmMotion$1;
 
     invoke-direct {p0, p1}, Landroid/hardware/motion/MotionRecognitionPalmMotion$SurfaceTouchSharingData;-><init>(Landroid/hardware/motion/MotionRecognitionPalmMotion;)V
 
@@ -255,7 +253,6 @@
 
 .method static synthetic access$1100(Landroid/hardware/motion/MotionRecognitionPalmMotion$SurfaceTouchSharingData;)[I
     .locals 1
-    .param p0    # Landroid/hardware/motion/MotionRecognitionPalmMotion$SurfaceTouchSharingData;
 
     iget-object v0, p0, Landroid/hardware/motion/MotionRecognitionPalmMotion$SurfaceTouchSharingData;->Nd:[I
 
@@ -264,7 +261,6 @@
 
 .method static synthetic access$1200(Landroid/hardware/motion/MotionRecognitionPalmMotion$SurfaceTouchSharingData;)F
     .locals 1
-    .param p0    # Landroid/hardware/motion/MotionRecognitionPalmMotion$SurfaceTouchSharingData;
 
     iget v0, p0, Landroid/hardware/motion/MotionRecognitionPalmMotion$SurfaceTouchSharingData;->SvarX:F
 
@@ -273,7 +269,6 @@
 
 .method static synthetic access$1300(Landroid/hardware/motion/MotionRecognitionPalmMotion$SurfaceTouchSharingData;)F
     .locals 1
-    .param p0    # Landroid/hardware/motion/MotionRecognitionPalmMotion$SurfaceTouchSharingData;
 
     iget v0, p0, Landroid/hardware/motion/MotionRecognitionPalmMotion$SurfaceTouchSharingData;->SvarY:F
 
@@ -282,7 +277,6 @@
 
 .method static synthetic access$1400(Landroid/hardware/motion/MotionRecognitionPalmMotion$SurfaceTouchSharingData;)Landroid/view/MotionEvent;
     .locals 1
-    .param p0    # Landroid/hardware/motion/MotionRecognitionPalmMotion$SurfaceTouchSharingData;
 
     iget-object v0, p0, Landroid/hardware/motion/MotionRecognitionPalmMotion$SurfaceTouchSharingData;->mMotionEvent:Landroid/view/MotionEvent;
 
@@ -291,7 +285,6 @@
 
 .method static synthetic access$1600(Landroid/hardware/motion/MotionRecognitionPalmMotion$SurfaceTouchSharingData;)I
     .locals 1
-    .param p0    # Landroid/hardware/motion/MotionRecognitionPalmMotion$SurfaceTouchSharingData;
 
     iget v0, p0, Landroid/hardware/motion/MotionRecognitionPalmMotion$SurfaceTouchSharingData;->mScreenHeight:I
 
@@ -300,7 +293,6 @@
 
 .method static synthetic access$1700(Landroid/hardware/motion/MotionRecognitionPalmMotion$SurfaceTouchSharingData;)I
     .locals 1
-    .param p0    # Landroid/hardware/motion/MotionRecognitionPalmMotion$SurfaceTouchSharingData;
 
     iget v0, p0, Landroid/hardware/motion/MotionRecognitionPalmMotion$SurfaceTouchSharingData;->mScreenWidth:I
 
@@ -309,7 +301,6 @@
 
 .method static synthetic access$1800(Landroid/hardware/motion/MotionRecognitionPalmMotion$SurfaceTouchSharingData;)F
     .locals 1
-    .param p0    # Landroid/hardware/motion/MotionRecognitionPalmMotion$SurfaceTouchSharingData;
 
     iget v0, p0, Landroid/hardware/motion/MotionRecognitionPalmMotion$SurfaceTouchSharingData;->SmeanX:F
 
@@ -318,7 +309,6 @@
 
 .method static synthetic access$1900(Landroid/hardware/motion/MotionRecognitionPalmMotion$SurfaceTouchSharingData;)Z
     .locals 1
-    .param p0    # Landroid/hardware/motion/MotionRecognitionPalmMotion$SurfaceTouchSharingData;
 
     iget-boolean v0, p0, Landroid/hardware/motion/MotionRecognitionPalmMotion$SurfaceTouchSharingData;->mIsRotated:Z
 
@@ -327,7 +317,6 @@
 
 .method static synthetic access$2000(Landroid/hardware/motion/MotionRecognitionPalmMotion$SurfaceTouchSharingData;)F
     .locals 1
-    .param p0    # Landroid/hardware/motion/MotionRecognitionPalmMotion$SurfaceTouchSharingData;
 
     iget v0, p0, Landroid/hardware/motion/MotionRecognitionPalmMotion$SurfaceTouchSharingData;->SsumMajor:F
 
@@ -336,7 +325,6 @@
 
 .method static synthetic access$2100(Landroid/hardware/motion/MotionRecognitionPalmMotion$SurfaceTouchSharingData;)F
     .locals 1
-    .param p0    # Landroid/hardware/motion/MotionRecognitionPalmMotion$SurfaceTouchSharingData;
 
     iget v0, p0, Landroid/hardware/motion/MotionRecognitionPalmMotion$SurfaceTouchSharingData;->SsumEccen:F
 
@@ -345,7 +333,6 @@
 
 .method static synthetic access$2200(Landroid/hardware/motion/MotionRecognitionPalmMotion$SurfaceTouchSharingData;)I
     .locals 1
-    .param p0    # Landroid/hardware/motion/MotionRecognitionPalmMotion$SurfaceTouchSharingData;
 
     iget v0, p0, Landroid/hardware/motion/MotionRecognitionPalmMotion$SurfaceTouchSharingData;->mTouchCnt:I
 
@@ -473,7 +460,6 @@
 
 .method public PreUpdate(Landroid/view/MotionEvent;)V
     .locals 14
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v13, 0x2
 
@@ -765,7 +751,6 @@
 
 .method public Update(Landroid/view/MotionEvent;)V
     .locals 10
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v9, 0x2
 

@@ -27,10 +27,6 @@
 # direct methods
 .method public constructor <init>(ILandroid/content/Context;Landroid/os/Looper;Landroid/hardware/contextaware/dataprovider/sensorhubprovider/ISensorHubResetObservable;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/os/Looper;
-    .param p4    # Landroid/hardware/contextaware/dataprovider/sensorhubprovider/ISensorHubResetObservable;
 
     invoke-direct {p0, p1, p2, p3, p4}, Landroid/hardware/contextaware/dataprovider/sensorhubprovider/LibTypeProvider;-><init>(ILandroid/content/Context;Landroid/os/Looper;Landroid/hardware/contextaware/dataprovider/sensorhubprovider/ISensorHubResetObservable;)V
 
@@ -211,8 +207,6 @@
 
 .method public final parse([BI)I
     .locals 9
-    .param p1    # [B
-    .param p2    # I
 
     const/4 v8, 0x2
 
@@ -350,7 +344,6 @@
 
 .method public final setPropertyValue(ILjava/lang/Object;)Z
     .locals 7
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -481,11 +474,6 @@
 
 .method public final updateCurrentLocation(JJDDD)V
     .locals 6
-    .param p1    # J
-    .param p3    # J
-    .param p5    # D
-    .param p7    # D
-    .param p9    # D
 
     iput-wide p5, p0, Landroid/hardware/contextaware/dataprovider/sensorhubprovider/builtin/StayingAlertRunner;->mCurLatitude:D
 

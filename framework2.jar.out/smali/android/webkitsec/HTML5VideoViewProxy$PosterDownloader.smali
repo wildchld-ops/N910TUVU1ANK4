@@ -52,8 +52,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Landroid/webkitsec/HTML5VideoViewProxy;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/webkitsec/HTML5VideoViewProxy;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -89,7 +87,6 @@
 
 .method static synthetic access$500(Landroid/webkitsec/HTML5VideoViewProxy$PosterDownloader;)Landroid/net/http/RequestHandle;
     .locals 1
-    .param p0    # Landroid/webkitsec/HTML5VideoViewProxy$PosterDownloader;
 
     iget-object v0, p0, Landroid/webkitsec/HTML5VideoViewProxy$PosterDownloader;->mRequestHandle:Landroid/net/http/RequestHandle;
 
@@ -98,7 +95,6 @@
 
 .method static synthetic access$600(Landroid/webkitsec/HTML5VideoViewProxy$PosterDownloader;)Ljava/net/URL;
     .locals 1
-    .param p0    # Landroid/webkitsec/HTML5VideoViewProxy$PosterDownloader;
 
     iget-object v0, p0, Landroid/webkitsec/HTML5VideoViewProxy$PosterDownloader;->mUrl:Ljava/net/URL;
 
@@ -107,7 +103,6 @@
 
 .method static synthetic access$700(Landroid/webkitsec/HTML5VideoViewProxy$PosterDownloader;)I
     .locals 1
-    .param p0    # Landroid/webkitsec/HTML5VideoViewProxy$PosterDownloader;
 
     iget v0, p0, Landroid/webkitsec/HTML5VideoViewProxy$PosterDownloader;->mStatusCode:I
 
@@ -235,15 +230,12 @@
 
 .method public certificate(Landroid/net/http/SslCertificate;)V
     .locals 0
-    .param p1    # Landroid/net/http/SslCertificate;
 
     return-void
 .end method
 
 .method public data([BI)V
     .locals 2
-    .param p1    # [B
-    .param p2    # I
 
     iget-object v0, p0, Landroid/webkitsec/HTML5VideoViewProxy$PosterDownloader;->mPosterBytes:Ljava/io/ByteArrayOutputStream;
 
@@ -367,8 +359,6 @@
 
 .method public error(ILjava/lang/String;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0}, Landroid/webkitsec/HTML5VideoViewProxy$PosterDownloader;->cleanup()V
 
@@ -377,7 +367,6 @@
 
 .method public handleSslErrorRequest(Landroid/net/http/SslError;)Z
     .locals 1
-    .param p1    # Landroid/net/http/SslError;
 
     const/4 v0, 0x0
 
@@ -386,7 +375,6 @@
 
 .method public headers(Landroid/net/http/Headers;)V
     .locals 0
-    .param p1    # Landroid/net/http/Headers;
 
     iput-object p1, p0, Landroid/webkitsec/HTML5VideoViewProxy$PosterDownloader;->mHeaders:Landroid/net/http/Headers;
 
@@ -459,10 +447,6 @@
 
 .method public status(IIILjava/lang/String;)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
 
     iput p3, p0, Landroid/webkitsec/HTML5VideoViewProxy$PosterDownloader;->mStatusCode:I
 

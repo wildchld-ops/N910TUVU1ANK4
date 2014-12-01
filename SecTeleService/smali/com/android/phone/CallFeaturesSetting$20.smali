@@ -42,7 +42,7 @@
 
     const-string v2, "connectivity"
 
-    # invokes: Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    # invokes: Lcom/android/phone/CallFeaturesSetting;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
     invoke-static {v1, v2}, Lcom/android/phone/CallFeaturesSetting;->access$3200(Lcom/android/phone/CallFeaturesSetting;Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
@@ -101,7 +101,7 @@
     const/4 v1, 0x1
 
     :goto_0
-    invoke-virtual {v2, v1}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v2, v1}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     :cond_0
     return-void

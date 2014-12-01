@@ -18,8 +18,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v1, 0x0
 
@@ -93,7 +91,6 @@
 
 .method public static reset(Landroid/content/Context;)V
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     new-instance v0, Lcom/diotek/ime/implement/setting/ResetSettings;
 
@@ -384,8 +381,6 @@
 
 .method private setChecked(Landroid/preference/TwoStatePreference;Z)V
     .locals 0
-    .param p1    # Landroid/preference/TwoStatePreference;
-    .param p2    # Z
 
     if-eqz p1, :cond_0
 

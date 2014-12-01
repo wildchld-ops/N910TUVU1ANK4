@@ -59,7 +59,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Landroid/widget/CompoundButton;->isChecked()Z
+    invoke-virtual {v1}, Landroid/widget/RadioButton;->isChecked()Z
 
     move-result v1
 
@@ -68,9 +68,9 @@
     move v1, v2
 
     :goto_0
-    invoke-virtual {v0, v1}, Landroid/widget/CompoundButton;->setChecked(Z)V
+    invoke-virtual {v0, v1}, Landroid/widget/RadioButton;->setChecked(Z)V
 
-    invoke-virtual {v0, v2}, Landroid/widget/CompoundButton;->setChecked(Z)V
+    invoke-virtual {v0, v2}, Landroid/widget/RadioButton;->setChecked(Z)V
 
     const-string v1, "Deleteprefix"
 
@@ -169,7 +169,7 @@
 
     iget-object v4, v4, Lcom/android/phone/callsettings/DeletePrefix$DeletePrefixAdapter;->this$0:Lcom/android/phone/callsettings/DeletePrefix;
 
-    invoke-virtual {v4}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v4}, Lcom/android/phone/callsettings/DeletePrefix;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
 

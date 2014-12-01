@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Landroid/widget/AdapterView;Landroid/widget/AdapterView$1;)V
     .locals 0
-    .param p1    # Landroid/widget/AdapterView;
-    .param p2    # Landroid/widget/AdapterView$1;
 
     invoke-direct {p0, p1}, Landroid/widget/AdapterView$SelectionNotifier;-><init>(Landroid/widget/AdapterView;)V
 

@@ -130,7 +130,6 @@
 
 .method public setAlarm(J)V
     .locals 6
-    .param p1    # J
 
     const/4 v5, 0x1
 
@@ -164,7 +163,6 @@
 
 .method public setOnAlarmListener(Lcom/android/launcher2/Alarm$OnAlarmListener;)V
     .locals 0
-    .param p1    # Lcom/android/launcher2/Alarm$OnAlarmListener;
 
     iput-object p1, p0, Lcom/android/launcher2/Alarm;->mAlarmListener:Lcom/android/launcher2/Alarm$OnAlarmListener;
 

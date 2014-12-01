@@ -226,7 +226,6 @@
 
 .method private constructor <init>(Ljava/lang/String;II)V
     .locals 0
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)V"
@@ -242,7 +241,6 @@
 
 .method public static toStatus(I)Lcom/android/server/SecExternalDisplayService$EDSFlagStatus;
     .locals 6
-    .param p0    # I
 
     const/4 v3, 0x0
 
@@ -278,7 +276,6 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/android/server/SecExternalDisplayService$EDSFlagStatus;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-class v0, Lcom/android/server/SecExternalDisplayService$EDSFlagStatus;
 

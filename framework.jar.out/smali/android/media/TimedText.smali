@@ -183,7 +183,6 @@
 # direct methods
 .method public constructor <init>(Landroid/os/Parcel;)V
     .locals 4
-    .param p1    # Landroid/os/Parcel;
 
     const/4 v3, -0x1
 
@@ -267,7 +266,6 @@
 
 .method private containsKey(I)Z
     .locals 2
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/media/TimedText;->isValidKey(I)Z
 
@@ -300,7 +298,6 @@
 
 .method private isValidKey(I)Z
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -340,7 +337,6 @@
 
 .method private declared-synchronized parseParcel(Landroid/os/Parcel;)Z
     .locals 18
-    .param p1    # Landroid/os/Parcel;
 
     monitor-enter p0
 
@@ -909,7 +905,6 @@
 
 .method private readBlinkingText(Landroid/os/Parcel;)V
     .locals 4
-    .param p1    # Landroid/os/Parcel;
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
@@ -943,7 +938,6 @@
 
 .method private readFont(Landroid/os/Parcel;)V
     .locals 8
-    .param p1    # Landroid/os/Parcel;
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
@@ -1001,7 +995,6 @@
 
 .method private readHighlight(Landroid/os/Parcel;)V
     .locals 4
-    .param p1    # Landroid/os/Parcel;
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
@@ -1035,7 +1028,6 @@
 
 .method private readHyperText(Landroid/os/Parcel;)V
     .locals 9
-    .param p1    # Landroid/os/Parcel;
 
     const/4 v8, 0x0
 
@@ -1095,7 +1087,6 @@
 
 .method private readKaraoke(Landroid/os/Parcel;)V
     .locals 8
-    .param p1    # Landroid/os/Parcel;
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
@@ -1151,7 +1142,6 @@
 
 .method private readStyle(Landroid/os/Parcel;)V
     .locals 14
-    .param p1    # Landroid/os/Parcel;
 
     const/4 v9, 0x0
 
@@ -1337,7 +1327,6 @@
 
 .method public getObject(I)Ljava/lang/Object;
     .locals 3
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/media/TimedText;->containsKey(I)Z
 

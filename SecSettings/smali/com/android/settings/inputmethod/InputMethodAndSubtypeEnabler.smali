@@ -119,7 +119,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/inputmethod/InputMethodAndSubtypeEnabler;)Ljava/util/List;
     .locals 1
-    .param p0    # Lcom/android/settings/inputmethod/InputMethodAndSubtypeEnabler;
 
     iget-object v0, p0, Lcom/android/settings/inputmethod/InputMethodAndSubtypeEnabler;->mInputMethodProperties:Ljava/util/List;
 
@@ -136,7 +135,6 @@
 
 .method private clearImplicitlyEnabledSubtypes(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -521,7 +519,6 @@
 
 .method private isNoSubtypesExplicitlySelected(Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -604,7 +601,6 @@
 
 .method private setCheckedImplicitlyEnabledSubtypes(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -615,8 +611,6 @@
 
 .method private setSubtypeAutoSelectionEnabled(Ljava/lang/String;Z)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const/4 v5, 0x0
 
@@ -751,8 +745,6 @@
 
 .method private updateImplicitlyEnabledSubtypes(Ljava/lang/String;Z)V
     .locals 14
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     iget-object v12, p0, Lcom/android/settings/inputmethod/InputMethodAndSubtypeEnabler;->mInputMethodProperties:Ljava/util/List;
 
@@ -915,7 +907,6 @@
 # virtual methods
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onActivityCreated(Landroid/os/Bundle;)V
 
@@ -941,7 +932,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 8
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -1140,8 +1130,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 16
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     move-object/from16 v0, p2
 

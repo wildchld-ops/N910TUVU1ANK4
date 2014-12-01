@@ -34,7 +34,6 @@
 
 .method private setScreenBrightness(I)V
     .locals 5
-    .param p1    # I
 
     const-wide/high16 v3, 0x4024000000000000L
 
@@ -123,9 +122,6 @@
 # virtual methods
 .method public onProgressChanged(Landroid/widget/SeekBar;IZ)V
     .locals 2
-    .param p1    # Landroid/widget/SeekBar;
-    .param p2    # I
-    .param p3    # Z
 
     const-string v0, "Inside OnSeekBarChangeListener :: onProgressChanged"
 
@@ -273,7 +269,6 @@
 
 .method public onStartTrackingTouch(Landroid/widget/SeekBar;)V
     .locals 1
-    .param p1    # Landroid/widget/SeekBar;
 
     iget-object v0, p0, Lcom/android/incallui/vt/VTSeekBar$1;->this$0:Lcom/android/incallui/vt/VTSeekBar;
 
@@ -289,7 +284,6 @@
 
 .method public onStopTrackingTouch(Landroid/widget/SeekBar;)V
     .locals 1
-    .param p1    # Landroid/widget/SeekBar;
 
     iget-object v0, p0, Lcom/android/incallui/vt/VTSeekBar$1;->this$0:Lcom/android/incallui/vt/VTSeekBar;
 

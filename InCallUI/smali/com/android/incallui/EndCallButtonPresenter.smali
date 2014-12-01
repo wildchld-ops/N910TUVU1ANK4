@@ -274,7 +274,6 @@
 
 .method private startActivity(Landroid/content/Intent;)V
     .locals 2
-    .param p1    # Landroid/content/Intent;
 
     :try_start_0
     invoke-virtual {p0}, Lcom/android/incallui/Presenter;->getContext()Landroid/content/Context;
@@ -313,8 +312,6 @@
 
 .method private updateUi(Lcom/android/incallui/InCallPresenter$InCallState;Lcom/android/services/telephony/common/Call;)V
     .locals 5
-    .param p1    # Lcom/android/incallui/InCallPresenter$InCallState;
-    .param p2    # Lcom/android/services/telephony/common/Call;
 
     const/4 v2, 0x1
 
@@ -656,8 +653,6 @@
 
 .method public onIncomingCall(Lcom/android/incallui/InCallPresenter$InCallState;Lcom/android/services/telephony/common/Call;)V
     .locals 1
-    .param p1    # Lcom/android/incallui/InCallPresenter$InCallState;
-    .param p2    # Lcom/android/services/telephony/common/Call;
 
     invoke-static {}, Lcom/android/incallui/CallList;->getInstance()Lcom/android/incallui/CallList;
 
@@ -670,8 +665,6 @@
 
 .method public onStateChange(Lcom/android/incallui/InCallPresenter$InCallState;Lcom/android/incallui/CallList;)V
     .locals 5
-    .param p1    # Lcom/android/incallui/InCallPresenter$InCallState;
-    .param p2    # Lcom/android/incallui/CallList;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -775,7 +768,6 @@
 
 .method public onUiReady(Lcom/android/incallui/EndCallButtonPresenter$CallButtonUi;)V
     .locals 1
-    .param p1    # Lcom/android/incallui/EndCallButtonPresenter$CallButtonUi;
 
     invoke-super {p0, p1}, Lcom/android/incallui/Presenter;->onUiReady(Lcom/android/incallui/Ui;)V
 
@@ -796,7 +788,6 @@
 
 .method public bridge synthetic onUiReady(Lcom/android/incallui/Ui;)V
     .locals 0
-    .param p1    # Lcom/android/incallui/Ui;
 
     check-cast p1, Lcom/android/incallui/EndCallButtonPresenter$CallButtonUi;
 
@@ -813,7 +804,6 @@
 
 .method public onUiUnready(Lcom/android/incallui/EndCallButtonPresenter$CallButtonUi;)V
     .locals 1
-    .param p1    # Lcom/android/incallui/EndCallButtonPresenter$CallButtonUi;
 
     invoke-super {p0, p1}, Lcom/android/incallui/Presenter;->onUiUnready(Lcom/android/incallui/Ui;)V
 
@@ -834,7 +824,6 @@
 
 .method public bridge synthetic onUiUnready(Lcom/android/incallui/Ui;)V
     .locals 0
-    .param p1    # Lcom/android/incallui/Ui;
 
     check-cast p1, Lcom/android/incallui/EndCallButtonPresenter$CallButtonUi;
 
@@ -845,7 +834,6 @@
 
 .method requestUpdateDueToContactQuery(I)V
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/incallui/Presenter;->getUi()Lcom/android/incallui/Ui;
 
@@ -1082,7 +1070,6 @@
 
 .method public updateEndCallButtonDisplayInfo(I)V
     .locals 19
-    .param p1    # I
 
     invoke-virtual/range {p0 .. p0}, Lcom/android/incallui/Presenter;->getUi()Lcom/android/incallui/Ui;
 
@@ -1984,7 +1971,6 @@
 
 .method public voiceCallClicked(I)V
     .locals 11
-    .param p1    # I
 
     const/4 v10, 0x0
 

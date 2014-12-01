@@ -33,10 +33,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/internal/view/IInputMethodClient;Lcom/android/internal/view/IInputContext;II)V
     .locals 5
-    .param p1    # Lcom/android/internal/view/IInputMethodClient;
-    .param p2    # Lcom/android/internal/view/IInputContext;
-    .param p3    # I
-    .param p4    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

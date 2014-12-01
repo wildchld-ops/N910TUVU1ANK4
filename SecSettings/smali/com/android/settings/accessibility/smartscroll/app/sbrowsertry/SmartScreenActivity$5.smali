@@ -36,9 +36,6 @@
 # virtual methods
 .method public onProgressChanged(Landroid/widget/SeekBar;IZ)V
     .locals 2
-    .param p1    # Landroid/widget/SeekBar;
-    .param p2    # I
-    .param p3    # Z
 
     iget-object v0, p0, Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartScreenActivity$5;->this$0:Lcom/android/settings/accessibility/smartscroll/app/sbrowsertry/SmartScreenActivity;
 
@@ -51,14 +48,12 @@
 
 .method public onStartTrackingTouch(Landroid/widget/SeekBar;)V
     .locals 0
-    .param p1    # Landroid/widget/SeekBar;
 
     return-void
 .end method
 
 .method public onStopTrackingTouch(Landroid/widget/SeekBar;)V
     .locals 0
-    .param p1    # Landroid/widget/SeekBar;
 
     return-void
 .end method

@@ -41,8 +41,6 @@
 
 .method private constructor <init>(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -55,9 +53,6 @@
 
 .method synthetic constructor <init>(IILcom/android/server/firewall/PortFilter$1;)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Lcom/android/server/firewall/PortFilter$1;
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/firewall/PortFilter;-><init>(II)V
 
@@ -68,13 +63,6 @@
 # virtual methods
 .method public matches(Lcom/android/server/firewall/IntentFirewall;Landroid/content/ComponentName;Landroid/content/Intent;IILjava/lang/String;I)Z
     .locals 4
-    .param p1    # Lcom/android/server/firewall/IntentFirewall;
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # Landroid/content/Intent;
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Ljava/lang/String;
-    .param p7    # I
 
     const/4 v3, -0x1
 

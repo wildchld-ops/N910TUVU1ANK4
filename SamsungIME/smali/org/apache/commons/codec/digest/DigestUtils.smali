@@ -14,7 +14,6 @@
 
 .method static getDigest(Ljava/lang/String;)Ljava/security/MessageDigest;
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     :try_start_0
     invoke-static {p0}, Ljava/security/MessageDigest;->getInstance(Ljava/lang/String;)Ljava/security/MessageDigest;
@@ -65,7 +64,6 @@
 
 .method public static md5(Ljava/lang/String;)[B
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     invoke-virtual {p0}, Ljava/lang/String;->getBytes()[B
 
@@ -80,7 +78,6 @@
 
 .method public static md5([B)[B
     .locals 1
-    .param p0    # [B
 
     invoke-static {}, Lorg/apache/commons/codec/digest/DigestUtils;->getMd5Digest()Ljava/security/MessageDigest;
 
@@ -95,7 +92,6 @@
 
 .method public static md5Hex(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/String;
 
@@ -114,7 +110,6 @@
 
 .method public static md5Hex([B)Ljava/lang/String;
     .locals 2
-    .param p0    # [B
 
     new-instance v0, Ljava/lang/String;
 
@@ -133,7 +128,6 @@
 
 .method public static sha(Ljava/lang/String;)[B
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     invoke-virtual {p0}, Ljava/lang/String;->getBytes()[B
 
@@ -148,7 +142,6 @@
 
 .method public static sha([B)[B
     .locals 1
-    .param p0    # [B
 
     invoke-static {}, Lorg/apache/commons/codec/digest/DigestUtils;->getShaDigest()Ljava/security/MessageDigest;
 
@@ -163,7 +156,6 @@
 
 .method public static shaHex(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/String;
 
@@ -182,7 +174,6 @@
 
 .method public static shaHex([B)Ljava/lang/String;
     .locals 2
-    .param p0    # [B
 
     new-instance v0, Ljava/lang/String;
 

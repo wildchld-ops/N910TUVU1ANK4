@@ -95,7 +95,6 @@
 
 .method constructor <init>(Landroid/os/Parcel;)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -120,7 +119,6 @@
 
 .method public getBreadCrumbShortTitle(Landroid/content/res/Resources;)Ljava/lang/CharSequence;
     .locals 1
-    .param p1    # Landroid/content/res/Resources;
 
     iget v0, p0, Landroid/preference/PreferenceActivity$Header;->breadCrumbShortTitleRes:I
 
@@ -143,7 +141,6 @@
 
 .method public getBreadCrumbTitle(Landroid/content/res/Resources;)Ljava/lang/CharSequence;
     .locals 1
-    .param p1    # Landroid/content/res/Resources;
 
     iget v0, p0, Landroid/preference/PreferenceActivity$Header;->breadCrumbTitleRes:I
 
@@ -166,7 +163,6 @@
 
 .method public getSummary(Landroid/content/res/Resources;)Ljava/lang/CharSequence;
     .locals 1
-    .param p1    # Landroid/content/res/Resources;
 
     iget v0, p0, Landroid/preference/PreferenceActivity$Header;->summaryRes:I
 
@@ -189,7 +185,6 @@
 
 .method public getSummaryDescription(Landroid/content/res/Resources;)Ljava/lang/CharSequence;
     .locals 1
-    .param p1    # Landroid/content/res/Resources;
 
     iget v0, p0, Landroid/preference/PreferenceActivity$Header;->summaryDescriptionRes:I
 
@@ -212,7 +207,6 @@
 
 .method public getTitle(Landroid/content/res/Resources;)Ljava/lang/CharSequence;
     .locals 1
-    .param p1    # Landroid/content/res/Resources;
 
     iget v0, p0, Landroid/preference/PreferenceActivity$Header;->titleRes:I
 
@@ -235,7 +229,6 @@
 
 .method public getTitleDescription(Landroid/content/res/Resources;)Ljava/lang/CharSequence;
     .locals 1
-    .param p1    # Landroid/content/res/Resources;
 
     iget v0, p0, Landroid/preference/PreferenceActivity$Header;->titleDescriptionRes:I
 
@@ -258,7 +251,6 @@
 
 .method public readFromParcel(Landroid/os/Parcel;)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readLong()J
 
@@ -408,8 +400,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-wide v0, p0, Landroid/preference/PreferenceActivity$Header;->id:J
 

@@ -169,8 +169,6 @@
 
 .method public copyStringToBuffer(ILandroid/database/CharArrayBuffer;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/database/CharArrayBuffer;
 
     const/4 v4, 0x0
 
@@ -234,8 +232,6 @@
 
 .method public fillWindow(ILandroid/database/CursorWindow;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Landroid/database/CursorWindow;
 
     invoke-static {p0, p1, p2}, Landroid/database/DatabaseUtils;->cursorFillWindow(Landroid/database/Cursor;ILandroid/database/CursorWindow;)V
 
@@ -283,7 +279,6 @@
 
 .method public getBlob(I)[B
     .locals 2
-    .param p1    # I
 
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
@@ -308,7 +303,6 @@
 
 .method public getColumnIndex(Ljava/lang/String;)I
     .locals 9
-    .param p1    # Ljava/lang/String;
 
     const/4 v5, -0x1
 
@@ -388,7 +382,6 @@
 
 .method public getColumnIndexOrThrow(Ljava/lang/String;)I
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Landroid/database/AbstractCursor;->getColumnIndex(Ljava/lang/String;)I
 
@@ -432,7 +425,6 @@
 
 .method public getColumnName(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/database/AbstractCursor;->getColumnNames()[Ljava/lang/String;
 
@@ -509,7 +501,6 @@
 
 .method public getType(I)I
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x3
 
@@ -518,7 +509,6 @@
 
 .method protected getUpdatedField(I)Ljava/lang/Object;
     .locals 1
-    .param p1    # I
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -609,7 +599,6 @@
 
 .method protected isFieldUpdated(I)Z
     .locals 1
-    .param p1    # I
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -673,7 +662,6 @@
 
 .method public final move(I)Z
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/database/AbstractCursor;->mPos:I
 
@@ -730,7 +718,6 @@
 
 .method public final moveToPosition(I)Z
     .locals 4
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -815,7 +802,6 @@
 
 .method protected onChange(Z)V
     .locals 4
-    .param p1    # Z
 
     iget-object v1, p0, Landroid/database/AbstractCursor;->mSelfObserverLock:Ljava/lang/Object;
 
@@ -884,8 +870,6 @@
 
 .method public onMove(II)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x1
 
@@ -894,7 +878,6 @@
 
 .method public registerContentObserver(Landroid/database/ContentObserver;)V
     .locals 1
-    .param p1    # Landroid/database/ContentObserver;
 
     iget-object v0, p0, Landroid/database/AbstractCursor;->mContentObservable:Landroid/database/ContentObservable;
 
@@ -905,7 +888,6 @@
 
 .method public registerDataSetObserver(Landroid/database/DataSetObserver;)V
     .locals 1
-    .param p1    # Landroid/database/DataSetObserver;
 
     iget-object v0, p0, Landroid/database/AbstractCursor;->mDataSetObservable:Landroid/database/DataSetObservable;
 
@@ -947,7 +929,6 @@
 
 .method public respond(Landroid/os/Bundle;)Landroid/os/Bundle;
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     sget-object v0, Landroid/os/Bundle;->EMPTY:Landroid/os/Bundle;
 
@@ -956,7 +937,6 @@
 
 .method public setExtras(Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     if-nez p1, :cond_0
 
@@ -970,8 +950,6 @@
 
 .method public setNotificationUri(Landroid/content/ContentResolver;Landroid/net/Uri;)V
     .locals 1
-    .param p1    # Landroid/content/ContentResolver;
-    .param p2    # Landroid/net/Uri;
 
     invoke-static {}, Landroid/os/UserHandle;->myUserId()I
 
@@ -984,9 +962,6 @@
 
 .method public setNotificationUri(Landroid/content/ContentResolver;Landroid/net/Uri;I)V
     .locals 5
-    .param p1    # Landroid/content/ContentResolver;
-    .param p2    # Landroid/net/Uri;
-    .param p3    # I
 
     iget-object v1, p0, Landroid/database/AbstractCursor;->mSelfObserverLock:Ljava/lang/Object;
 
@@ -1044,7 +1019,6 @@
 
 .method public unregisterContentObserver(Landroid/database/ContentObserver;)V
     .locals 1
-    .param p1    # Landroid/database/ContentObserver;
 
     iget-boolean v0, p0, Landroid/database/AbstractCursor;->mClosed:Z
 
@@ -1060,7 +1034,6 @@
 
 .method public unregisterDataSetObserver(Landroid/database/DataSetObserver;)V
     .locals 1
-    .param p1    # Landroid/database/DataSetObserver;
 
     iget-object v0, p0, Landroid/database/AbstractCursor;->mDataSetObservable:Landroid/database/DataSetObservable;
 

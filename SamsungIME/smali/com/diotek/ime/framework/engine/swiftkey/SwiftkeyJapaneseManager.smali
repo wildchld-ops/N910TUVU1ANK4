@@ -128,7 +128,6 @@
 
 .method private addLayoutKey(Ljava/util/HashSet;C)V
     .locals 9
-    .param p2    # C
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -224,7 +223,6 @@
 
 .method private addLayoutKey(Ljava/util/HashSet;[Ljava/lang/Character;)V
     .locals 2
-    .param p2    # [Ljava/lang/Character;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -262,7 +260,6 @@
 
 .method private getContextLength(Ljava/lang/String;)I
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p1}, Ljava/lang/String;->length()I
 
@@ -318,7 +315,6 @@
 
 .method private getJapaneseInputType(Z)Ljava/lang/String;
     .locals 1
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -335,7 +331,6 @@
 
 .method private japaneseJoin(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Lcom/touchtype_fluency/Japanese;->romajiToHiragana(Ljava/lang/String;)Ljava/lang/String;
 
@@ -348,7 +343,6 @@
 # virtual methods
 .method public addTouchHistory(Ljava/lang/Character;)V
     .locals 0
-    .param p1    # Ljava/lang/Character;
 
     invoke-super {p0, p1}, Lcom/diotek/ime/framework/engine/swiftkey/AbstractSwiftkeyManager;->addTouchHistory(Ljava/lang/Character;)V
 
@@ -357,8 +351,6 @@
 
 .method public addTouchPoint(ILandroid/graphics/PointF;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/graphics/PointF;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/engine/swiftkey/AbstractSwiftkeyManager;->mTouchHistory:Lcom/touchtype_fluency/TouchHistory;
 
@@ -385,7 +377,6 @@
 
 .method public buildPredictionListener(Lcom/touchtype_fluency/Sequence;)V
     .locals 4
-    .param p1    # Lcom/touchtype_fluency/Sequence;
 
     invoke-virtual {p0}, Lcom/diotek/ime/framework/engine/swiftkey/AbstractSwiftkeyManager;->clearReservePredictions()V
 
@@ -504,9 +495,6 @@
 
 .method public buildPredictions(Lcom/touchtype_fluency/Sequence;Lcom/touchtype_fluency/Sequence;I)Lcom/touchtype_fluency/Predictions;
     .locals 3
-    .param p1    # Lcom/touchtype_fluency/Sequence;
-    .param p2    # Lcom/touchtype_fluency/Sequence;
-    .param p3    # I
 
     const/4 v1, 0x1
 
@@ -566,9 +554,6 @@
 
 .method protected buildPredictions(Lcom/touchtype_fluency/Sequence;Lcom/touchtype_fluency/TouchHistory;I)Lcom/touchtype_fluency/Predictions;
     .locals 3
-    .param p1    # Lcom/touchtype_fluency/Sequence;
-    .param p2    # Lcom/touchtype_fluency/TouchHistory;
-    .param p3    # I
 
     iget-object v1, p0, Lcom/diotek/ime/framework/engine/swiftkey/AbstractSwiftkeyManager;->mInputBuffer:Ljava/lang/StringBuilder;
 
@@ -619,9 +604,6 @@
 
 .method protected buildPredictionsInternal(Lcom/touchtype_fluency/Sequence;Lcom/touchtype_fluency/TouchHistory;I)Lcom/touchtype_fluency/Predictions;
     .locals 3
-    .param p1    # Lcom/touchtype_fluency/Sequence;
-    .param p2    # Lcom/touchtype_fluency/TouchHistory;
-    .param p3    # I
 
     const/4 v1, 0x1
 
@@ -644,10 +626,6 @@
 
 .method public changeJapaneseInputType(Ljava/util/List;ZLjava/lang/String;Lcom/touchtype_fluency/util/LanguagePackManager;Lcom/touchtype_fluency/util/CompletionListener;)Z
     .locals 10
-    .param p2    # Z
-    .param p3    # Ljava/lang/String;
-    .param p4    # Lcom/touchtype_fluency/util/LanguagePackManager;
-    .param p5    # Lcom/touchtype_fluency/util/CompletionListener;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -774,7 +752,6 @@
 
 .method public checkPostPosition(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -945,7 +922,6 @@
 
 .method public fullToHalfWidth(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Lcom/touchtype_fluency/CharacterWidth;->fullToHalfWidth(Ljava/lang/String;)Ljava/lang/String;
 
@@ -956,8 +932,6 @@
 
 .method public getContextCorrentWord(Ljava/lang/String;I)Lcom/touchtype_fluency/ContextCurrentWord;
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     iget-object v4, p0, Lcom/diotek/ime/framework/engine/swiftkey/AbstractSwiftkeyManager;->mTokenizer:Lcom/touchtype_fluency/Tokenizer;
 
@@ -1076,8 +1050,6 @@
 
 .method public getContextCorrentWord(Ljava/lang/String;Ljava/lang/String;)Lcom/touchtype_fluency/ContextCurrentWord;
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     if-nez p2, :cond_0
 
@@ -1123,10 +1095,6 @@
 
 .method public getMostLikelyCharacter(Lcom/touchtype_fluency/Sequence;Lcom/touchtype_fluency/TouchHistory;II)I
     .locals 1
-    .param p1    # Lcom/touchtype_fluency/Sequence;
-    .param p2    # Lcom/touchtype_fluency/TouchHistory;
-    .param p3    # I
-    .param p4    # I
 
     const/4 v0, -0x1
 
@@ -1135,7 +1103,6 @@
 
 .method protected getResultsFilter(I)Lcom/touchtype_fluency/ResultsFilter;
     .locals 4
-    .param p1    # I
 
     new-instance v0, Lcom/touchtype_fluency/ResultsFilter;
 
@@ -1152,7 +1119,6 @@
 
 .method public halfToFullWidth(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Lcom/touchtype_fluency/CharacterWidth;->halfToFullWidth(Ljava/lang/String;)Ljava/lang/String;
 
@@ -1163,7 +1129,6 @@
 
 .method public hiraganaToKatakana(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Lcom/touchtype_fluency/Japanese;->hiraganaToKatakana(Ljava/lang/String;)Ljava/lang/String;
 
@@ -1174,7 +1139,6 @@
 
 .method public isValidCharacter(C)Z
     .locals 1
-    .param p1    # C
 
     invoke-static {p1}, Lcom/diotek/ime/framework/util/Utils;->isHiraganaKey(C)Z
 
@@ -1202,7 +1166,6 @@
 
 .method public katakanaToHiragana(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Lcom/touchtype_fluency/Japanese;->katakanaToHiragana(Ljava/lang/String;)Ljava/lang/String;
 
@@ -1213,12 +1176,6 @@
 
 .method public loadKeyPressModel(Ljava/io/File;Lcom/diotek/ime/framework/view/Keyboard;IIZZ)Z
     .locals 17
-    .param p1    # Ljava/io/File;
-    .param p2    # Lcom/diotek/ime/framework/view/Keyboard;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Z
-    .param p6    # Z
 
     const-string v4, ""
 
@@ -1698,12 +1655,6 @@
 
 .method public loadKeyPressModel(Ljava/io/File;Lcom/diotek/ime/framework/view/Keyboard;IIZZLjava/util/List;)Z
     .locals 1
-    .param p1    # Ljava/io/File;
-    .param p2    # Lcom/diotek/ime/framework/view/Keyboard;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Z
-    .param p6    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1726,8 +1677,6 @@
 
 .method public loadKeyPressModelForHWR(II)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -1736,16 +1685,12 @@
 
 .method public loadKorCharacterMap(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public loadLanguageModel(Ljava/util/List;Lcom/touchtype_fluency/util/LanguagePackManager;Lcom/touchtype_fluency/util/LoadProgressListener;Z)V
     .locals 1
-    .param p2    # Lcom/touchtype_fluency/util/LanguagePackManager;
-    .param p3    # Lcom/touchtype_fluency/util/LoadProgressListener;
-    .param p4    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1784,7 +1729,6 @@
 
 .method public romajiToHiragana(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Lcom/touchtype_fluency/Japanese;->romajiToHiragana(Ljava/lang/String;)Ljava/lang/String;
 
@@ -1795,8 +1739,6 @@
 
 .method public setTouchHistory(Lcom/touchtype_fluency/TouchHistory;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Lcom/touchtype_fluency/TouchHistory;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p0, p2}, Lcom/diotek/ime/framework/engine/swiftkey/AbstractSwiftkeyManager;->setTouchHistory(Ljava/lang/String;)V
 

@@ -33,7 +33,6 @@
 # virtual methods
 .method public dispatchAudioRoutesChanged(Landroid/media/AudioRoutesInfo;)V
     .locals 2
-    .param p1    # Landroid/media/AudioRoutesInfo;
 
     iget-object v0, p0, Landroid/media/MediaRouter$Static$1;->this$0:Landroid/media/MediaRouter$Static;
 

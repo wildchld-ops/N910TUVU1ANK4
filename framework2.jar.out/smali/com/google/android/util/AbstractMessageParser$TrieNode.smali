@@ -45,7 +45,6 @@
 
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -62,9 +61,6 @@
 
 .method public static addToTrie(Lcom/google/android/util/AbstractMessageParser$TrieNode;Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p0    # Lcom/google/android/util/AbstractMessageParser$TrieNode;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -117,7 +113,6 @@
 
 .method public getChild(C)Lcom/google/android/util/AbstractMessageParser$TrieNode;
     .locals 2
-    .param p1    # C
 
     iget-object v0, p0, Lcom/google/android/util/AbstractMessageParser$TrieNode;->children:Ljava/util/HashMap;
 
@@ -136,7 +131,6 @@
 
 .method public getOrCreateChild(C)Lcom/google/android/util/AbstractMessageParser$TrieNode;
     .locals 4
-    .param p1    # C
 
     invoke-static {p1}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
 
@@ -204,7 +198,6 @@
 
 .method public setValue(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/google/android/util/AbstractMessageParser$TrieNode;->value:Ljava/lang/String;
 

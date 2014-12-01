@@ -154,7 +154,6 @@
 
 .method static synthetic access$1400(Lcom/android/settings/myplace/MyPlaceProfileSettings;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/myplace/MyPlaceProfileSettings;
 
     iget-boolean v0, p0, Lcom/android/settings/myplace/MyPlaceProfileSettings;->mAddMode:Z
 
@@ -163,7 +162,6 @@
 
 .method static synthetic access$1500(Lcom/android/settings/myplace/MyPlaceProfileSettings;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/myplace/MyPlaceProfileSettings;
 
     invoke-virtual {p0}, Lcom/android/settings/myplace/MyPlaceProfileSettings;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -174,7 +172,6 @@
 
 .method static synthetic access$1600(Lcom/android/settings/myplace/MyPlaceProfileSettings;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/myplace/MyPlaceProfileSettings;
 
     invoke-direct {p0}, Lcom/android/settings/myplace/MyPlaceProfileSettings;->isPlaceInfoChanged()Z
 
@@ -185,7 +182,6 @@
 
 .method static synthetic access$1700(Lcom/android/settings/myplace/MyPlaceProfileSettings;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/myplace/MyPlaceProfileSettings;
 
     invoke-virtual {p0}, Lcom/android/settings/myplace/MyPlaceProfileSettings;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -196,7 +192,6 @@
 
 .method static synthetic access$1800(Lcom/android/settings/myplace/MyPlaceProfileSettings;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/myplace/MyPlaceProfileSettings;
 
     iget-boolean v0, p0, Lcom/android/settings/myplace/MyPlaceProfileSettings;->carmode:Z
 
@@ -205,7 +200,6 @@
 
 .method static synthetic access$2100(Lcom/android/settings/myplace/MyPlaceProfileSettings;)V
     .locals 0
-    .param p0    # Lcom/android/settings/myplace/MyPlaceProfileSettings;
 
     invoke-direct {p0}, Lcom/android/settings/myplace/MyPlaceProfileSettings;->showMobileDateChargeEnableDialog()V
 
@@ -214,7 +208,6 @@
 
 .method static synthetic access$2200(Lcom/android/settings/myplace/MyPlaceProfileSettings;)V
     .locals 0
-    .param p0    # Lcom/android/settings/myplace/MyPlaceProfileSettings;
 
     invoke-direct {p0}, Lcom/android/settings/myplace/MyPlaceProfileSettings;->requestGPSLocation()V
 
@@ -223,7 +216,6 @@
 
 .method static synthetic access$2300(Lcom/android/settings/myplace/MyPlaceProfileSettings;)Landroid/preference/PreferenceScreen;
     .locals 1
-    .param p0    # Lcom/android/settings/myplace/MyPlaceProfileSettings;
 
     invoke-direct {p0}, Lcom/android/settings/myplace/MyPlaceProfileSettings;->createPreferenceHierarchy()Landroid/preference/PreferenceScreen;
 
@@ -234,7 +226,6 @@
 
 .method static synthetic access$2400(Lcom/android/settings/myplace/MyPlaceProfileSettings;)V
     .locals 0
-    .param p0    # Lcom/android/settings/myplace/MyPlaceProfileSettings;
 
     invoke-direct {p0}, Lcom/android/settings/myplace/MyPlaceProfileSettings;->updateProfile()V
 
@@ -243,7 +234,6 @@
 
 .method static synthetic access$2500(Lcom/android/settings/myplace/MyPlaceProfileSettings;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/myplace/MyPlaceProfileSettings;
 
     iget-boolean v0, p0, Lcom/android/settings/myplace/MyPlaceProfileSettings;->isKnoxUser:Z
 
@@ -252,7 +242,6 @@
 
 .method static synthetic access$2600(Lcom/android/settings/myplace/MyPlaceProfileSettings;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/myplace/MyPlaceProfileSettings;
 
     iget-boolean v0, p0, Lcom/android/settings/myplace/MyPlaceProfileSettings;->mIsFromHelp:Z
 
@@ -261,7 +250,6 @@
 
 .method static synthetic access$2702(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/settings/myplace/MyPlaceProfileSettings;->OPTION_SELECTED:Z
 
@@ -270,7 +258,6 @@
 
 .method static synthetic access$2800(Lcom/android/settings/myplace/MyPlaceProfileSettings;)V
     .locals 0
-    .param p0    # Lcom/android/settings/myplace/MyPlaceProfileSettings;
 
     invoke-direct {p0}, Lcom/android/settings/myplace/MyPlaceProfileSettings;->showHelpStep1Dialog()V
 
@@ -279,7 +266,6 @@
 
 .method static synthetic access$2900(Lcom/android/settings/myplace/MyPlaceProfileSettings;)Lcom/android/settings/helpdialog/TwHelpAnimatedDialog;
     .locals 1
-    .param p0    # Lcom/android/settings/myplace/MyPlaceProfileSettings;
 
     iget-object v0, p0, Lcom/android/settings/myplace/MyPlaceProfileSettings;->mHelpStep2Dialog:Lcom/android/settings/helpdialog/TwHelpAnimatedDialog;
 
@@ -288,8 +274,6 @@
 
 .method static synthetic access$2902(Lcom/android/settings/myplace/MyPlaceProfileSettings;Lcom/android/settings/helpdialog/TwHelpAnimatedDialog;)Lcom/android/settings/helpdialog/TwHelpAnimatedDialog;
     .locals 0
-    .param p0    # Lcom/android/settings/myplace/MyPlaceProfileSettings;
-    .param p1    # Lcom/android/settings/helpdialog/TwHelpAnimatedDialog;
 
     iput-object p1, p0, Lcom/android/settings/myplace/MyPlaceProfileSettings;->mHelpStep2Dialog:Lcom/android/settings/helpdialog/TwHelpAnimatedDialog;
 
@@ -298,7 +282,6 @@
 
 .method static synthetic access$3000(Lcom/android/settings/myplace/MyPlaceProfileSettings;)V
     .locals 0
-    .param p0    # Lcom/android/settings/myplace/MyPlaceProfileSettings;
 
     invoke-direct {p0}, Lcom/android/settings/myplace/MyPlaceProfileSettings;->showHelpStep4Dialog()V
 
@@ -307,7 +290,6 @@
 
 .method static synthetic access$3100(Lcom/android/settings/myplace/MyPlaceProfileSettings;)Lcom/android/settings/helpdialog/TwHelpDialog;
     .locals 1
-    .param p0    # Lcom/android/settings/myplace/MyPlaceProfileSettings;
 
     iget-object v0, p0, Lcom/android/settings/myplace/MyPlaceProfileSettings;->mHelpStep4Dialog:Lcom/android/settings/helpdialog/TwHelpDialog;
 
@@ -316,8 +298,6 @@
 
 .method static synthetic access$3102(Lcom/android/settings/myplace/MyPlaceProfileSettings;Lcom/android/settings/helpdialog/TwHelpDialog;)Lcom/android/settings/helpdialog/TwHelpDialog;
     .locals 0
-    .param p0    # Lcom/android/settings/myplace/MyPlaceProfileSettings;
-    .param p1    # Lcom/android/settings/helpdialog/TwHelpDialog;
 
     iput-object p1, p0, Lcom/android/settings/myplace/MyPlaceProfileSettings;->mHelpStep4Dialog:Lcom/android/settings/helpdialog/TwHelpDialog;
 
@@ -326,7 +306,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/myplace/MyPlaceProfileSettings;)Landroid/widget/EditText;
     .locals 1
-    .param p0    # Lcom/android/settings/myplace/MyPlaceProfileSettings;
 
     iget-object v0, p0, Lcom/android/settings/myplace/MyPlaceProfileSettings;->mEditName:Landroid/widget/EditText;
 
@@ -335,7 +314,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/myplace/MyPlaceProfileSettings;)Lcom/android/settings/myplace/MyPlaceProfileSettings$MyPlaceInfo;
     .locals 1
-    .param p0    # Lcom/android/settings/myplace/MyPlaceProfileSettings;
 
     iget-object v0, p0, Lcom/android/settings/myplace/MyPlaceProfileSettings;->mPlaceInfo:Lcom/android/settings/myplace/MyPlaceProfileSettings$MyPlaceInfo;
 
@@ -344,7 +322,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/myplace/MyPlaceProfileSettings;)I
     .locals 1
-    .param p0    # Lcom/android/settings/myplace/MyPlaceProfileSettings;
 
     iget v0, p0, Lcom/android/settings/myplace/MyPlaceProfileSettings;->mId:I
 
@@ -353,7 +330,6 @@
 
 .method static synthetic access$800(Lcom/android/settings/myplace/MyPlaceProfileSettings;)I
     .locals 1
-    .param p0    # Lcom/android/settings/myplace/MyPlaceProfileSettings;
 
     iget v0, p0, Lcom/android/settings/myplace/MyPlaceProfileSettings;->fixedMenuNum:I
 
@@ -3350,7 +3326,6 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 8
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v7, 0x0
 
@@ -4010,7 +3985,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p1}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
@@ -4038,7 +4012,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 3
-    .param p1    # Landroid/content/res/Configuration;
 
     const/4 v2, 0x0
 
@@ -4144,7 +4117,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 11
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v10, 0x0
 
@@ -4550,8 +4522,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
     .locals 5
-    .param p1    # Landroid/view/Menu;
-    .param p2    # Landroid/view/MenuInflater;
 
     const/4 v4, 0x5
 

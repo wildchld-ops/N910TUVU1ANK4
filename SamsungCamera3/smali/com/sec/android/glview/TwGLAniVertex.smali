@@ -58,11 +58,6 @@
 # direct methods
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;FFFF)V
     .locals 4
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
 
     const/4 v3, 0x0
 
@@ -501,7 +496,6 @@
 
 .method public setOnAniProgressListener(Lcom/sec/android/glview/TwGLAniVertex$OnAniProgressListener;)V
     .locals 0
-    .param p1    # Lcom/sec/android/glview/TwGLAniVertex$OnAniProgressListener;
 
     iput-object p1, p0, Lcom/sec/android/glview/TwGLAniVertex;->mOnAniProgressListener:Lcom/sec/android/glview/TwGLAniVertex$OnAniProgressListener;
 
@@ -510,7 +504,6 @@
 
 .method public setPicureMode(Z)V
     .locals 2
-    .param p1    # Z
 
     const/4 v1, 0x0
 

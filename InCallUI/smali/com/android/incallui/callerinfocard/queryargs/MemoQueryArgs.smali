@@ -42,8 +42,6 @@
 
 .method public constructor <init>(ILjava/lang/Object;)V
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/Object;
 
     const/4 v5, 0x2
 
@@ -186,7 +184,6 @@
 
 .method public static registerContentObserver(Landroid/content/Context;)V
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     const/4 v3, 0x1
 
@@ -253,7 +250,6 @@
 
 .method public static unregisterContentObserver(Landroid/content/Context;)V
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     sget-object v0, Lcom/android/incallui/callerinfocard/queryargs/MemoQueryArgs;->mContentObserver:Landroid/database/ContentObserver;
 

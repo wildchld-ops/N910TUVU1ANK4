@@ -56,7 +56,6 @@
 # direct methods
 .method constructor <init>(Lcom/sec/android/app/camera/Camera;)V
     .locals 3
-    .param p1    # Lcom/sec/android/app/camera/Camera;
 
     const/4 v2, 0x0
 
@@ -109,8 +108,6 @@
 
 .method constructor <init>(Lcom/sec/android/app/camera/Camera;Lcom/sec/android/app/camera/subview/SubViewManager;)V
     .locals 2
-    .param p1    # Lcom/sec/android/app/camera/Camera;
-    .param p2    # Lcom/sec/android/app/camera/subview/SubViewManager;
 
     const/4 v1, 0x0
 
@@ -183,7 +180,6 @@
 
 .method public getDim(I)Z
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/subview/SubViewBase;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -656,7 +652,6 @@
 
 .method protected isSubViewUpdateMenu(I)Z
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -741,7 +736,6 @@
 
 .method protected rotateImages(Landroid/widget/ImageView;)V
     .locals 5
-    .param p1    # Landroid/widget/ImageView;
 
     const/16 v4, 0xb4
 
@@ -866,7 +860,6 @@
 
 .method protected rotateImagesOnLandscape(Landroid/widget/ImageView;)V
     .locals 2
-    .param p1    # Landroid/widget/ImageView;
 
     if-nez p1, :cond_0
 
@@ -924,7 +917,6 @@
 
 .method public setFixedOrientation(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/app/camera/subview/SubViewBase;->mOrientationMainLCD:I
 
@@ -933,9 +925,6 @@
 
 .method protected setImageresource(Landroid/widget/ImageView;Z[I)V
     .locals 1
-    .param p1    # Landroid/widget/ImageView;
-    .param p2    # Z
-    .param p3    # [I
 
     if-nez p1, :cond_0
 
@@ -972,7 +961,6 @@
 
 .method public setLandscapeMode(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/subview/SubViewBase;->mbLandscapeMode:Z
 
@@ -981,7 +969,6 @@
 
 .method public setLastOrientation(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/app/camera/subview/SubViewBase;->mLastOrientation:I
 
@@ -990,7 +977,6 @@
 
 .method public setOrientation(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/app/camera/subview/SubViewBase;->mOrientation:I
 
@@ -999,7 +985,6 @@
 
 .method protected speakTTS(Landroid/view/View;)V
     .locals 4
-    .param p1    # Landroid/view/View;
 
     if-eqz p1, :cond_0
 

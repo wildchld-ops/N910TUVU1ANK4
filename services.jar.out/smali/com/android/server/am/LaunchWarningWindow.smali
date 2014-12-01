@@ -6,9 +6,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Lcom/android/server/am/ActivityRecord;Lcom/android/server/am/ActivityRecord;)V
     .locals 10
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/server/am/ActivityRecord;
-    .param p3    # Lcom/android/server/am/ActivityRecord;
 
     const/4 v5, 0x3
 

@@ -45,7 +45,6 @@
 
 .method public registerFocusObserver(Landroid/view/IWindowFocusObserver;)V
     .locals 1
-    .param p1    # Landroid/view/IWindowFocusObserver;
 
     iget-object v0, p0, Lcom/android/server/wm/WindowState$1;->this$0:Lcom/android/server/wm/WindowState;
 
@@ -56,7 +55,6 @@
 
 .method public unregisterFocusObserver(Landroid/view/IWindowFocusObserver;)V
     .locals 1
-    .param p1    # Landroid/view/IWindowFocusObserver;
 
     iget-object v0, p0, Lcom/android/server/wm/WindowState$1;->this$0:Lcom/android/server/wm/WindowState;
 

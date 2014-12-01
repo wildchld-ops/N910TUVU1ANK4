@@ -77,7 +77,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Lcom/sec/enterprise/knox/seandroid/ISEAndroidPolicy$Stub;-><init>()V
 
@@ -100,10 +99,6 @@
 
 .method private addNewDomain(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -150,11 +145,6 @@
 
 .method private addNewDomainToMac(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 28
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
 
     const/4 v11, 0x0
 
@@ -504,11 +494,6 @@
 
 .method private addNewDomainToSeapp(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 19
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
 
     const/4 v11, 0x0
 
@@ -1085,8 +1070,6 @@
 
 .method private declared-synchronized adminLockPolicy(ZI)Z
     .locals 6
-    .param p1    # Z
-    .param p2    # I
 
     monitor-enter p0
 
@@ -1194,7 +1177,6 @@
 
 .method private declared-synchronized allowChanges(I)Z
     .locals 5
-    .param p1    # I
 
     monitor-enter p0
 
@@ -1333,7 +1315,6 @@
 
 .method private declared-synchronized broadcastStateChanged(I)V
     .locals 4
-    .param p1    # I
 
     monitor-enter p0
 
@@ -1398,8 +1379,6 @@
 
 .method private copyFiles(Ljava/lang/String;[B)Z
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # [B
 
     const-string v5, "SEAndroidPolicy"
 
@@ -1604,8 +1583,6 @@
 
 .method private static duplicateFile(Ljava/io/File;Ljava/io/File;)V
     .locals 7
-    .param p0    # Ljava/io/File;
-    .param p1    # Ljava/io/File;
 
     :try_start_0
     new-instance v2, Ljava/io/BufferedReader;
@@ -1694,7 +1671,6 @@
 
 .method private enforceOwnerOnlyAndSeAndroidPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/seandroid/SEAndroidService;->getEDM()Landroid/app/enterprise/EnterpriseDeviceManager;
 
@@ -1711,7 +1687,6 @@
 
 .method private enforceSeAndroidPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/seandroid/SEAndroidService;->getEDM()Landroid/app/enterprise/EnterpriseDeviceManager;
 
@@ -1753,7 +1728,6 @@
 
 .method private getSignatureFromPackage(Ljava/lang/String;)Ljava/util/ArrayList;
     .locals 7
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1915,7 +1889,6 @@
 
 .method private declared-synchronized isAdminLocked(I)Z
     .locals 7
-    .param p1    # I
 
     monitor-enter p0
 
@@ -2490,7 +2463,6 @@
 # virtual methods
 .method public amsGetEnforce(Landroid/app/enterprise/ContextInfo;)Z
     .locals 4
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const-string v2, "SEAndroidPolicy"
 
@@ -2528,8 +2500,6 @@
 
 .method public amsSetEnforce(Landroid/app/enterprise/ContextInfo;Z)I
     .locals 4
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     const-string v2, "SEAndroidPolicy"
 
@@ -2586,8 +2556,6 @@
 
 .method public amsSetLogLevel(Landroid/app/enterprise/ContextInfo;I)I
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # I
 
     const/4 v4, 0x1
 
@@ -2706,9 +2674,6 @@
 
 .method public getDataType(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 26
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     invoke-direct/range {p0 .. p1}, Lcom/android/server/enterprise/seandroid/SEAndroidService;->enforceSeAndroidPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -3042,8 +3007,6 @@
 
 .method public getDataTypeFromPackageName(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -3077,9 +3040,6 @@
 
 .method public getDomain(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 29
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     invoke-direct/range {p0 .. p1}, Lcom/android/server/enterprise/seandroid/SEAndroidService;->enforceSeAndroidPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -3667,8 +3627,6 @@
 
 .method public getDomainFromPackageName(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -3702,7 +3660,6 @@
 
 .method public getSEAndroidAgent(Landroid/app/enterprise/ContextInfo;)I
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const-string v0, "SEAndroidPolicy"
 
@@ -3721,8 +3678,6 @@
 
 .method public getSEInfoFromCertificate(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Ljava/lang/String;
     .locals 15
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct/range {p0 .. p1}, Lcom/android/server/enterprise/seandroid/SEAndroidService;->enforceSeAndroidPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -3877,8 +3832,6 @@
 
 .method public getSEInfoFromPackageName(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Ljava/lang/String;
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -3940,7 +3893,6 @@
 
 .method public getSELinuxMode(Landroid/app/enterprise/ContextInfo;)Z
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const-string v1, "SEAndroidPolicy"
 
@@ -3961,21 +3913,18 @@
 
 .method public onAdminAdded(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onAdminRemoved(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onPreAdminRemoval(I)V
     .locals 2
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/seandroid/SEAndroidService;->isAdminLocked(I)Z
 
@@ -4005,7 +3954,6 @@
 
 .method public revokeSELinuxPolicy(Landroid/app/enterprise/ContextInfo;)I
     .locals 4
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v3, 0x0
 
@@ -4061,8 +4009,6 @@
 
 .method public setFileContexts(Landroid/app/enterprise/ContextInfo;[B)I
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # [B
 
     const-string v1, "SEAndroidPolicy"
 
@@ -4136,8 +4082,6 @@
 
 .method public setMacPermission(Landroid/app/enterprise/ContextInfo;[B)I
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # [B
 
     const-string v1, "SEAndroidPolicy"
 
@@ -4215,8 +4159,6 @@
 
 .method public setPropertyContexts(Landroid/app/enterprise/ContextInfo;[B)I
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # [B
 
     const-string v1, "SEAndroidPolicy"
 
@@ -4290,8 +4232,6 @@
 
 .method public setSEAppContexts(Landroid/app/enterprise/ContextInfo;[B)I
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # [B
 
     const-string v1, "SEAndroidPolicy"
 
@@ -4365,7 +4305,6 @@
 
 .method public setSELinuxEnforcing(Landroid/app/enterprise/ContextInfo;)Z
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v4, 0x1
 
@@ -4419,8 +4358,6 @@
 
 .method public setSELinuxPolicy(Landroid/app/enterprise/ContextInfo;[B)I
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # [B
 
     const-string v1, "SEAndroidPolicy"
 

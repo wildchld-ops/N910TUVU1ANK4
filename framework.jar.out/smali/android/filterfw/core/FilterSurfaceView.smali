@@ -51,7 +51,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Landroid/view/SurfaceView;-><init>(Landroid/content/Context;)V
 
@@ -74,8 +73,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/view/SurfaceView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -186,8 +183,6 @@
 # virtual methods
 .method public declared-synchronized bindToListener(Landroid/view/SurfaceHolder$Callback;Landroid/filterfw/core/GLEnvironment;)V
     .locals 5
-    .param p1    # Landroid/view/SurfaceHolder$Callback;
-    .param p2    # Landroid/filterfw/core/GLEnvironment;
 
     monitor-enter p0
 
@@ -379,10 +374,6 @@
 
 .method public declared-synchronized surfaceChanged(Landroid/view/SurfaceHolder;III)V
     .locals 1
-    .param p1    # Landroid/view/SurfaceHolder;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     monitor-enter p0
 
@@ -422,7 +413,6 @@
 
 .method public declared-synchronized surfaceCreated(Landroid/view/SurfaceHolder;)V
     .locals 1
-    .param p1    # Landroid/view/SurfaceHolder;
 
     monitor-enter p0
 
@@ -463,7 +453,6 @@
 
 .method public declared-synchronized surfaceDestroyed(Landroid/view/SurfaceHolder;)V
     .locals 1
-    .param p1    # Landroid/view/SurfaceHolder;
 
     monitor-enter p0
 

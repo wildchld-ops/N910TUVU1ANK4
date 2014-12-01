@@ -33,14 +33,12 @@
 # virtual methods
 .method public onDone(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method public onError(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "TextToSpeechSettings"
 
@@ -53,7 +51,6 @@
 
 .method public onStart(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     return-void
 .end method

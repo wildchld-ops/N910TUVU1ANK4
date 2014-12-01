@@ -16,8 +16,6 @@
 # virtual methods
 .method public approvePasteRequest(ILandroid/content/ClipData;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/content/ClipData;
 
     const/4 v0, 0x1
 
@@ -26,8 +24,6 @@
 
 .method public notifyCopy(ILandroid/content/ClipData;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Landroid/content/ClipData;
 
     return-void
 .end method

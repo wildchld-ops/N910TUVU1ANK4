@@ -33,10 +33,6 @@
 # direct methods
 .method public constructor <init>(Landroid/widget/RemoteViews;IFIF)V
     .locals 1
-    .param p2    # I
-    .param p3    # F
-    .param p4    # I
-    .param p5    # F
 
     iput-object p1, p0, Landroid/widget/RemoteViews$AddStrokeAction;->this$0:Landroid/widget/RemoteViews;
 
@@ -61,7 +57,6 @@
 
 .method public constructor <init>(Landroid/widget/RemoteViews;Landroid/os/Parcel;)V
     .locals 1
-    .param p2    # Landroid/os/Parcel;
 
     iput-object p1, p0, Landroid/widget/RemoteViews$AddStrokeAction;->this$0:Landroid/widget/RemoteViews;
 
@@ -104,9 +99,6 @@
 # virtual methods
 .method public apply(Landroid/view/View;Landroid/view/ViewGroup;Landroid/widget/RemoteViews$OnClickHandler;)V
     .locals 4
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/widget/RemoteViews$OnClickHandler;
 
     iget v1, p0, Landroid/widget/RemoteViews$Action;->viewId:I
 
@@ -143,8 +135,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     const/16 v0, 0x17
 

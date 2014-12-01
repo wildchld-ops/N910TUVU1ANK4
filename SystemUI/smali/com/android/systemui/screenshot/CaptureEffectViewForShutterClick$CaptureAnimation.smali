@@ -21,8 +21,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/systemui/screenshot/CaptureEffectViewForShutterClick;FF)V
     .locals 3
-    .param p2    # F
-    .param p3    # F
 
     const/4 v2, 0x1
 
@@ -49,8 +47,6 @@
 # virtual methods
 .method protected applyTransformation(FLandroid/view/animation/Transformation;)V
     .locals 2
-    .param p1    # F
-    .param p2    # Landroid/view/animation/Transformation;
 
     invoke-super {p0, p1, p2}, Landroid/view/animation/AlphaAnimation;->applyTransformation(FLandroid/view/animation/Transformation;)V
 

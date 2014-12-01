@@ -181,7 +181,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -192,8 +191,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -204,9 +201,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 18
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     invoke-direct/range {p0 .. p3}, Landroid/view/ViewGroup;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
@@ -957,8 +951,6 @@
 
 .method static synthetic access$002(Lcom/android/launcher2/CellLayout;F)F
     .locals 0
-    .param p0    # Lcom/android/launcher2/CellLayout;
-    .param p1    # F
 
     iput p1, p0, Lcom/android/launcher2/CellLayout;->mCrosshairsVisibility:F
 
@@ -967,7 +959,6 @@
 
 .method static synthetic access$100(Lcom/android/launcher2/CellLayout;)[F
     .locals 1
-    .param p0    # Lcom/android/launcher2/CellLayout;
 
     iget-object v0, p0, Lcom/android/launcher2/CellLayout;->mDragOutlineAlphas:[F
 
@@ -976,7 +967,6 @@
 
 .method static synthetic access$200(Lcom/android/launcher2/CellLayout;)[Landroid/graphics/Rect;
     .locals 1
-    .param p0    # Lcom/android/launcher2/CellLayout;
 
     iget-object v0, p0, Lcom/android/launcher2/CellLayout;->mDragOutlines:[Landroid/graphics/Rect;
 
@@ -985,7 +975,6 @@
 
 .method private cleanupWidgetAutoResize(Lcom/android/launcher2/DragState;)V
     .locals 7
-    .param p1    # Lcom/android/launcher2/DragState;
 
     invoke-virtual {p1}, Lcom/android/launcher2/DragState;->getView()Landroid/view/View;
 
@@ -1043,12 +1032,6 @@
 
 .method static findVacantCell([IIIII[[Z)Z
     .locals 9
-    .param p0    # [I
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # [[Z
 
     const/4 v6, 0x1
 
@@ -1162,8 +1145,6 @@
 
 .method static heightInLandscape(Landroid/content/res/Resources;I)I
     .locals 4
-    .param p0    # Landroid/content/res/Resources;
-    .param p1    # I
 
     const v2, 0x7f0c0199
 
@@ -1200,7 +1181,6 @@
 
 .method private invalidateAppIconView(Lcom/android/launcher2/AppIconView;)V
     .locals 6
-    .param p1    # Lcom/android/launcher2/AppIconView;
 
     invoke-virtual {p1}, Lcom/android/launcher2/AppIconView;->getPressedOrFocusedBackgroundPadding()I
 
@@ -1283,7 +1263,6 @@
 
 .method private onLauncherTiltChanged(F)V
     .locals 3
-    .param p1    # F
 
     invoke-virtual {p0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
 
@@ -1312,7 +1291,6 @@
 
 .method private setChildrenAlpha(F)V
     .locals 3
-    .param p1    # F
 
     iput p1, p0, Lcom/android/launcher2/CellLayout;->mChildrenAlpha:F
 
@@ -1419,8 +1397,6 @@
 
 .method static widthInPortrait(Landroid/content/res/Resources;I)I
     .locals 4
-    .param p0    # Landroid/content/res/Resources;
-    .param p1    # I
 
     const v2, 0x7f0c019c
 
@@ -1467,7 +1443,6 @@
 
 .method public addChildrenLayout(Lcom/android/launcher2/CellLayoutChildren;)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/CellLayoutChildren;
 
     const/4 v0, -0x1
 
@@ -1478,8 +1453,6 @@
 
 .method public addChildrenLayout(Lcom/android/launcher2/CellLayoutChildren;I)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/CellLayoutChildren;
-    .param p2    # I
 
     invoke-virtual {p0, p1, p2}, Landroid/view/ViewGroup;->addView(Landroid/view/View;I)V
 
@@ -1495,7 +1468,6 @@
 
 .method public addItem(Lcom/android/launcher2/BaseItem;)Z
     .locals 3
-    .param p1    # Lcom/android/launcher2/BaseItem;
 
     const/4 v0, 0x0
 
@@ -1543,11 +1515,6 @@
 
 .method public addViewToCellLayout(Landroid/view/View;IILcom/android/launcher2/CellLayout$LayoutParams;Z)Z
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Lcom/android/launcher2/CellLayout$LayoutParams;
-    .param p5    # Z
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -1631,12 +1598,6 @@
 
 .method public animateChildToPosition(Landroid/view/View;IIIIZ)Z
     .locals 9
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Z
 
     const/4 v6, 0x1
 
@@ -1757,10 +1718,6 @@
 
 .method public animateIcon(Landroid/view/View;IZZ)Z
     .locals 11
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # Z
 
     iget-boolean v1, p0, Lcom/android/launcher2/CellLayout;->mAnimateChildInstantly:Z
 
@@ -1924,9 +1881,6 @@
 
 .method cellToPoint(II[I)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [I
 
     invoke-virtual {p0}, Landroid/view/View;->getPaddingLeft()I
 
@@ -1969,7 +1923,6 @@
 
 .method protected checkLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Z
     .locals 1
-    .param p1    # Landroid/view/ViewGroup$LayoutParams;
 
     instance-of v0, p1, Lcom/android/launcher2/CellLayout$LayoutParams;
 
@@ -2168,7 +2121,6 @@
 
 .method public createViewForItem(Lcom/android/launcher2/BaseItem;)Landroid/view/View;
     .locals 3
-    .param p1    # Lcom/android/launcher2/BaseItem;
 
     sget-object v1, Lcom/android/launcher2/CellLayout$5;->$SwitchMap$com$android$launcher2$BaseItem$Type:[I
 
@@ -2294,7 +2246,6 @@
 
 .method public dispatchDragEvent(Landroid/view/DragEvent;)Z
     .locals 4
-    .param p1    # Landroid/view/DragEvent;
 
     const/4 v1, 0x1
 
@@ -2347,7 +2298,6 @@
 
 .method protected dispatchDraw(Landroid/graphics/Canvas;)V
     .locals 8
-    .param p1    # Landroid/graphics/Canvas;
 
     const/4 v7, 0x0
 
@@ -2478,7 +2428,6 @@
 
 .method public drawChildren(Landroid/graphics/Canvas;)V
     .locals 1
-    .param p1    # Landroid/graphics/Canvas;
 
     iget-object v0, p0, Lcom/android/launcher2/CellLayout;->mChildren:Lcom/android/launcher2/CellLayoutChildren;
 
@@ -2499,11 +2448,6 @@
 
 .method estimateDropCell(IIII[I)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # [I
 
     const/4 v6, 0x1
 
@@ -2580,9 +2524,6 @@
 
 .method findCellForSpan([III)Z
     .locals 6
-    .param p1    # [I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v4, -0x1
 
@@ -2605,11 +2546,6 @@
 
 .method findCellForSpanThatIntersects([IIIII)Z
     .locals 15
-    .param p1    # [I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     const/4 v3, 0x0
 
@@ -2857,11 +2793,6 @@
 
 .method findDragCell(Lcom/android/launcher2/DragState;II[I[I)Z
     .locals 7
-    .param p1    # Lcom/android/launcher2/DragState;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # [I
-    .param p5    # [I
 
     const/4 v6, 0x0
 
@@ -2886,12 +2817,6 @@
 
 .method findDragCell(Lcom/android/launcher2/DragState;II[I[IZ)Z
     .locals 17
-    .param p1    # Lcom/android/launcher2/DragState;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # [I
-    .param p5    # [I
-    .param p6    # Z
 
     move-object/from16 v0, p0
 
@@ -3248,11 +3173,6 @@
 
 .method findNearestVacantArea(IIII[I)[I
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # [I
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -3289,7 +3209,6 @@
 
 .method public generateLayoutParams(Landroid/util/AttributeSet;)Landroid/view/ViewGroup$LayoutParams;
     .locals 2
-    .param p1    # Landroid/util/AttributeSet;
 
     new-instance v0, Lcom/android/launcher2/CellLayout$LayoutParams;
 
@@ -3304,7 +3223,6 @@
 
 .method protected generateLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Landroid/view/ViewGroup$LayoutParams;
     .locals 1
-    .param p1    # Landroid/view/ViewGroup$LayoutParams;
 
     new-instance v0, Lcom/android/launcher2/CellLayout$LayoutParams;
 
@@ -3315,8 +3233,6 @@
 
 .method public getAbsMatrix(Landroid/graphics/Matrix;Landroid/view/ViewParent;)Landroid/graphics/Matrix;
     .locals 4
-    .param p1    # Landroid/graphics/Matrix;
-    .param p2    # Landroid/view/ViewParent;
 
     invoke-virtual {p0}, Landroid/view/View;->getMatrix()Landroid/graphics/Matrix;
 
@@ -3452,8 +3368,6 @@
 
 .method public getChildAt(II)Landroid/view/View;
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/launcher2/CellLayout;->mChildren:Lcom/android/launcher2/CellLayoutChildren;
 
@@ -3466,7 +3380,6 @@
 
 .method public getChildOnPageAt(I)Landroid/view/View;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/launcher2/CellLayout;->mChildren:Lcom/android/launcher2/CellLayoutChildren;
 
@@ -3557,7 +3470,6 @@
 
 .method getContentRect(Landroid/graphics/Rect;)Landroid/graphics/Rect;
     .locals 6
-    .param p1    # Landroid/graphics/Rect;
 
     if-nez p1, :cond_0
 
@@ -3645,7 +3557,6 @@
 
 .method public getDesiredHeightForRows(I)I
     .locals 5
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/launcher2/CellLayout;->getContainer()Lcom/android/launcher2/CellLayoutContainer;
 
@@ -3715,7 +3626,6 @@
 
 .method public getDesiredWidthForColumns(I)I
     .locals 3
-    .param p1    # I
 
     iget v1, p0, Lcom/android/launcher2/CellLayout;->mCellWidth:I
 
@@ -3749,8 +3659,6 @@
 
 .method public getExpandabilityArrayForView(Landroid/view/View;[I)V
     .locals 7
-    .param p1    # Landroid/view/View;
-    .param p2    # [I
 
     const/4 v6, 0x2
 
@@ -3872,8 +3780,6 @@
 
 .method public getItemAt(II)Lcom/android/launcher2/BaseItem;
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/launcher2/CellLayout;->mChildren:Lcom/android/launcher2/CellLayoutChildren;
 
@@ -3972,7 +3878,6 @@
 
 .method public getViewForItem(Lcom/android/launcher2/BaseItem;)Landroid/view/View;
     .locals 2
-    .param p1    # Lcom/android/launcher2/BaseItem;
 
     iget-object v1, p0, Lcom/android/launcher2/CellLayout;->mChildren:Lcom/android/launcher2/CellLayoutChildren;
 
@@ -4002,7 +3907,6 @@
 
 .method public hide(Lcom/android/launcher2/BaseItem;)V
     .locals 2
-    .param p1    # Lcom/android/launcher2/BaseItem;
 
     iget-object v0, p0, Lcom/android/launcher2/CellLayout;->mChildren:Lcom/android/launcher2/CellLayoutChildren;
 
@@ -4015,7 +3919,6 @@
 
 .method public indexOfChildOnPage(Landroid/view/View;)I
     .locals 1
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Lcom/android/launcher2/CellLayout;->mChildren:Lcom/android/launcher2/CellLayoutChildren;
 
@@ -4036,8 +3939,6 @@
 
 .method public isOccupiedNoThrow(II)Z
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     const/4 v1, 0x0
 
@@ -4098,10 +3999,6 @@
 
 .method protected noRoomForDrop(Lcom/android/launcher2/DragState;III)V
     .locals 0
-    .param p1    # Lcom/android/launcher2/DragState;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     return-void
 .end method
@@ -4171,7 +4068,6 @@
 
 .method public onDragEvent(Landroid/view/DragEvent;)Z
     .locals 38
-    .param p1    # Landroid/view/DragEvent;
 
     const/4 v2, 0x0
 
@@ -5696,7 +5592,6 @@
 
 .method protected onDraw(Landroid/graphics/Canvas;)V
     .locals 22
-    .param p1    # Landroid/graphics/Canvas;
 
     move-object/from16 v0, p0
 
@@ -6130,7 +6025,6 @@
 
 .method onDropChild(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     if-eqz p1, :cond_0
 
@@ -6152,7 +6046,6 @@
 
 .method public onFailedDrop(Lcom/android/launcher2/BaseItem;)V
     .locals 0
-    .param p1    # Lcom/android/launcher2/BaseItem;
 
     return-void
 .end method
@@ -6214,7 +6107,6 @@
 
 .method public onInterceptTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 3
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getAction()I
 
@@ -6284,11 +6176,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 11
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getChildCount()I
 
@@ -6408,8 +6295,6 @@
 
 .method protected onMeasure(II)V
     .locals 21
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual/range {p0 .. p0}, Lcom/android/launcher2/CellLayout;->getDesiredWidth()I
 
@@ -6941,15 +6826,12 @@
 
 .method public onPreDeltaVisualize(Landroid/view/View;Lcom/android/launcher2/BaseItem;)V
     .locals 0
-    .param p1    # Landroid/view/View;
-    .param p2    # Lcom/android/launcher2/BaseItem;
 
     return-void
 .end method
 
 .method protected onSetAlpha(I)Z
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -6958,10 +6840,6 @@
 
 .method protected onSizeChanged(IIII)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/4 v1, 0x0
 
@@ -6998,7 +6876,6 @@
 
 .method public onStateAnimationEnd(Lcom/android/launcher2/Workspace$State;)V
     .locals 10
-    .param p1    # Lcom/android/launcher2/Workspace$State;
 
     const/4 v9, 0x0
 
@@ -7098,7 +6975,6 @@
 
 .method public onViewAddedToLayout(Landroid/view/View;)V
     .locals 10
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p1}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
@@ -7166,9 +7042,6 @@
 
 .method pointToCellExact(II[I)V
     .locals 8
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [I
 
     const/4 v4, 0x0
 
@@ -7229,13 +7102,6 @@
 
 .method pointToCellExact(II[IIIII)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
 
     const/4 v6, 0x1
 
@@ -7310,9 +7176,6 @@
 
 .method pointToCellRounded(II[I)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [I
 
     iget v0, p0, Lcom/android/launcher2/CellLayout;->mCellWidth:I
 
@@ -7333,7 +7196,6 @@
 
 .method realRemoveView(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     invoke-super {p0, p1}, Landroid/view/ViewGroup;->removeView(Landroid/view/View;)V
 
@@ -7454,7 +7316,6 @@
 
 .method public removeItem(Lcom/android/launcher2/BaseItem;)Z
     .locals 4
-    .param p1    # Lcom/android/launcher2/BaseItem;
 
     iget-object v3, p0, Lcom/android/launcher2/CellLayout;->mChildren:Lcom/android/launcher2/CellLayoutChildren;
 
@@ -7519,7 +7380,6 @@
 
 .method public removeView(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     instance-of v0, p1, Lcom/android/launcher2/Folder;
 
@@ -7540,7 +7400,6 @@
 
 .method public removeViewAt(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/launcher2/CellLayout;->mChildren:Lcom/android/launcher2/CellLayoutChildren;
 
@@ -7551,7 +7410,6 @@
 
 .method public removeViewInLayout(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Lcom/android/launcher2/CellLayout;->mChildren:Lcom/android/launcher2/CellLayoutChildren;
 
@@ -7562,7 +7420,6 @@
 
 .method public removeViewOnPageAt(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/launcher2/CellLayout;->mChildren:Lcom/android/launcher2/CellLayoutChildren;
 
@@ -7573,7 +7430,6 @@
 
 .method public removeViewWithoutMarkingCells(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Lcom/android/launcher2/CellLayout;->mChildren:Lcom/android/launcher2/CellLayoutChildren;
 
@@ -7584,8 +7440,6 @@
 
 .method public removeViews(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/launcher2/CellLayout;->mChildren:Lcom/android/launcher2/CellLayoutChildren;
 
@@ -7596,8 +7450,6 @@
 
 .method public removeViewsInLayout(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/launcher2/CellLayout;->mChildren:Lcom/android/launcher2/CellLayoutChildren;
 
@@ -7624,7 +7476,6 @@
 
 .method public setAcceptsDrops(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-boolean v0, p0, Lcom/android/launcher2/CellLayout;->mAcceptsDrops:Z
 
@@ -7640,7 +7491,6 @@
 
 .method public setAccessibilityEnabled(Z)V
     .locals 5
-    .param p1    # Z
 
     const/4 v1, 0x0
 
@@ -7709,7 +7559,6 @@
 
 .method public setAlpha(F)V
     .locals 0
-    .param p1    # F
 
     invoke-direct {p0, p1}, Lcom/android/launcher2/CellLayout;->setChildrenAlpha(F)V
 
@@ -7718,8 +7567,6 @@
 
 .method public setBackgroundAlpha(FF)V
     .locals 1
-    .param p1    # F
-    .param p2    # F
 
     const/4 v0, 0x0
 
@@ -7730,9 +7577,6 @@
 
 .method public setBackgroundAlpha(FFZ)V
     .locals 2
-    .param p1    # F
-    .param p2    # F
-    .param p3    # Z
 
     iput p1, p0, Lcom/android/launcher2/CellLayout;->mBackgroundAlpha:F
 
@@ -7778,7 +7622,6 @@
 
 .method public setBackgroundBaseDarken(F)V
     .locals 2
-    .param p1    # F
 
     invoke-virtual {p0}, Landroid/view/View;->getBackground()Landroid/graphics/drawable/Drawable;
 
@@ -7798,7 +7641,6 @@
 
 .method public setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
     .locals 2
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     invoke-super {p0, p1}, Landroid/view/View;->setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
 
@@ -7823,8 +7665,6 @@
 
 .method setCellSize(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     iput p1, p0, Lcom/android/launcher2/CellLayout;->mCellWidth:I
 
@@ -7835,7 +7675,6 @@
 
 .method protected setChildrenDrawingCacheEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/launcher2/CellLayout;->mChildren:Lcom/android/launcher2/CellLayoutChildren;
 
@@ -7846,7 +7685,6 @@
 
 .method protected setChildrenDrawnWithCacheEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/launcher2/CellLayout;->mChildren:Lcom/android/launcher2/CellLayoutChildren;
 
@@ -7857,7 +7695,6 @@
 
 .method public setCrosshairsVisibility(F)V
     .locals 1
-    .param p1    # F
 
     iget-object v0, p0, Lcom/android/launcher2/CellLayout;->mCrosshairsAnimator:Lcom/android/launcher2/InterruptibleInOutAnimator;
 
@@ -7875,8 +7712,6 @@
 
 .method setDummyPanelProperties(FI)V
     .locals 1
-    .param p1    # F
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/launcher2/CellLayout;->mDummyPanelView:Lcom/android/launcher2/DummyPanelView;
 
@@ -7919,7 +7754,6 @@
 
 .method public setEmptyMessageVisibility(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/launcher2/CellLayout;->mEmptyMessage:Landroid/widget/TextView;
 
@@ -7969,8 +7803,6 @@
 
 .method setGaps(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     iput p1, p0, Lcom/android/launcher2/CellLayout;->mGapX:I
 
@@ -7983,8 +7815,6 @@
 
 .method public setGridSize(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     iget v0, p0, Lcom/android/launcher2/CellLayout;->mCountX:I
 
@@ -8049,7 +7879,6 @@
 
 .method public setHomeView(Lcom/android/launcher2/HomeView;)V
     .locals 0
-    .param p1    # Lcom/android/launcher2/HomeView;
 
     iput-object p1, p0, Lcom/android/launcher2/CellLayout;->mHomeView:Lcom/android/launcher2/HomeView;
 
@@ -8058,7 +7887,6 @@
 
 .method public setHoverAlpha(F)V
     .locals 0
-    .param p1    # F
 
     iput p1, p0, Lcom/android/launcher2/CellLayout;->mGlowBackgroundAlpha:F
 
@@ -8069,7 +7897,6 @@
 
 .method public setHoverScale(F)V
     .locals 1
-    .param p1    # F
 
     iget v0, p0, Lcom/android/launcher2/CellLayout;->mGlowBackgroundScale:F
 
@@ -8101,7 +7928,6 @@
 
 .method public setIsDefaultDropTarget(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-boolean v0, p0, Lcom/android/launcher2/CellLayout;->mIsDefaultDropTarget:Z
 
@@ -8117,7 +7943,6 @@
 
 .method setIsDragOccuring(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-boolean v0, p0, Lcom/android/launcher2/CellLayout;->mIsDragOccuring:Z
 
@@ -8133,7 +7958,6 @@
 
 .method setIsDragOverlapping(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-boolean v0, p0, Lcom/android/launcher2/CellLayout;->mIsDragOverlapping:Z
 
@@ -8149,7 +7973,6 @@
 
 .method public setIsPaused(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/launcher2/CellLayout;->mIsPaused:Z
 
@@ -8158,13 +7981,6 @@
 
 .method public setItemLocation(Lcom/android/launcher2/BaseItem;IIIIIJ)V
     .locals 11
-    .param p1    # Lcom/android/launcher2/BaseItem;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # J
 
     instance-of v0, p1, Lcom/android/launcher2/HomeItem;
 
@@ -8236,7 +8052,6 @@
 
 .method public setItemViewBuilder(Lcom/android/launcher2/ItemViewBuilder;)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/ItemViewBuilder;
 
     iget-object v0, p0, Lcom/android/launcher2/CellLayout;->mChildren:Lcom/android/launcher2/CellLayoutChildren;
 
@@ -8247,7 +8062,6 @@
 
 .method public setNoNeedToDraw(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/launcher2/CellLayout;->mNoNeedToDraw:Z
 
@@ -8256,7 +8070,6 @@
 
 .method public setOnDragListener(Landroid/view/View$OnDragListener;)V
     .locals 0
-    .param p1    # Landroid/view/View$OnDragListener;
 
     iput-object p1, p0, Lcom/android/launcher2/CellLayout;->mOnDragListener:Landroid/view/View$OnDragListener;
 
@@ -8267,7 +8080,6 @@
 
 .method public setOnInterceptTouchListener(Landroid/view/View$OnTouchListener;)V
     .locals 0
-    .param p1    # Landroid/view/View$OnTouchListener;
 
     iput-object p1, p0, Lcom/android/launcher2/CellLayout;->mInterceptTouchListener:Landroid/view/View$OnTouchListener;
 
@@ -8276,8 +8088,6 @@
 
 .method setOverScrollAmount(FZ)V
     .locals 2
-    .param p1    # F
-    .param p2    # Z
 
     if-eqz p2, :cond_1
 
@@ -8331,7 +8141,6 @@
 
 .method public setPageType(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/launcher2/CellLayout;->mPageType:I
 
@@ -8340,7 +8149,6 @@
 
 .method setPressedOrFocusedIcon(Lcom/android/launcher2/AppIconView;)V
     .locals 2
-    .param p1    # Lcom/android/launcher2/AppIconView;
 
     iget-object v0, p0, Lcom/android/launcher2/CellLayout;->mPressedOrFocusedIcon:Lcom/android/launcher2/AppIconView;
 
@@ -8365,7 +8173,6 @@
 
 .method public setSecretPageMetaphorVisibility(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/launcher2/CellLayout;->mSecretPageMetaphor:Landroid/widget/ImageView;
 
@@ -8381,8 +8188,6 @@
 
 .method public setTagToCellInfoForPoint(II)V
     .locals 13
-    .param p1    # I
-    .param p2    # I
 
     const/4 v12, 0x0
 
@@ -8650,7 +8455,6 @@
 
 .method public show(Lcom/android/launcher2/BaseItem;)V
     .locals 2
-    .param p1    # Lcom/android/launcher2/BaseItem;
 
     iget-object v0, p0, Lcom/android/launcher2/CellLayout;->mChildren:Lcom/android/launcher2/CellLayoutChildren;
 
@@ -8663,8 +8467,6 @@
 
 .method public spanToPixel(II)[I
     .locals 5
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x2
 
@@ -8707,11 +8509,6 @@
 
 .method visualizeDropLocation(Landroid/view/View;Landroid/graphics/Bitmap;[III)V
     .locals 38
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/graphics/Bitmap;
-    .param p3    # [I
-    .param p4    # I
-    .param p5    # I
 
     sget-boolean v30, Lcom/android/launcher2/Launcher;->CSCFEATURE_LAUNCHER_HOMESCREENEDITMODE:Z
 

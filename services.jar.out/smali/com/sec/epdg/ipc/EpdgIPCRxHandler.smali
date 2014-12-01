@@ -258,7 +258,6 @@
 
 .method private static getParamsForUserBin(Lcom/sec/epdg/ipc/EpdgIpcMessage;)Ljava/lang/String;
     .locals 2
-    .param p0    # Lcom/sec/epdg/ipc/EpdgIpcMessage;
 
     invoke-virtual {p0}, Lcom/sec/epdg/ipc/EpdgIpcMessage;->getMainCmd()I
 
@@ -295,7 +294,6 @@
 
 .method private handleHandOverStatus(Lcom/sec/epdg/ipc/EpdgNetIpcMessage;)V
     .locals 6
-    .param p1    # Lcom/sec/epdg/ipc/EpdgNetIpcMessage;
 
     const/4 v1, 0x1
 
@@ -340,7 +338,6 @@
 
 .method private handleIPSecConnectionInitRequest(Lcom/sec/epdg/ipc/EpdgGprsIpcMessage;)V
     .locals 8
-    .param p1    # Lcom/sec/epdg/ipc/EpdgGprsIpcMessage;
 
     const/4 v7, 0x0
 
@@ -635,7 +632,6 @@
 
 .method private handleIPSecConnectionToggleRequest(Lcom/sec/epdg/ipc/EpdgGprsIpcMessage;)V
     .locals 9
-    .param p1    # Lcom/sec/epdg/ipc/EpdgGprsIpcMessage;
 
     const/4 v8, 0x1
 
@@ -1041,7 +1037,6 @@
 
 .method private handleNetRegQuery(Lcom/sec/epdg/ipc/EpdgNetIpcMessage;)V
     .locals 5
-    .param p1    # Lcom/sec/epdg/ipc/EpdgNetIpcMessage;
 
     const/4 v4, 0x2
 
@@ -1100,7 +1095,6 @@
 
 .method private processIpcMessage(Lcom/sec/epdg/ipc/EpdgIpcMessage;)V
     .locals 6
-    .param p1    # Lcom/sec/epdg/ipc/EpdgIpcMessage;
 
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -1336,8 +1330,6 @@
 # virtual methods
 .method public receive([BI)V
     .locals 4
-    .param p1    # [B
-    .param p2    # I
 
     :try_start_0
     invoke-static {p1, p2}, Lcom/sec/epdg/ipc/EpdgIpcMessageFactory;->fromByteArray([BI)Lcom/sec/epdg/ipc/EpdgIpcMessage;

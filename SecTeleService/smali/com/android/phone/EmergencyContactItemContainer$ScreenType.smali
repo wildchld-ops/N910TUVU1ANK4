@@ -104,7 +104,7 @@
 
     sget-object v0, Lcom/android/phone/EmergencyContactItemContainer$ScreenType;->$VALUES:[Lcom/android/phone/EmergencyContactItemContainer$ScreenType;
 
-    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
+    invoke-virtual {v0}, [Lcom/android/phone/EmergencyContactItemContainer$ScreenType;->clone()Ljava/lang/Object;
 
     move-result-object v0
 

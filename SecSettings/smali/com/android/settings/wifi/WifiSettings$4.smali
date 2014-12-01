@@ -36,7 +36,6 @@
 # virtual methods
 .method public onFailure(I)V
     .locals 3
-    .param p1    # I
 
     # getter for: Lcom/android/settings/wifi/WifiSettings;->DEBUG:Z
     invoke-static {}, Lcom/android/settings/wifi/WifiSettings;->access$300()Z

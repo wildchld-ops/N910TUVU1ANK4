@@ -107,9 +107,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;II)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # I
 
     const-wide/16 v2, 0x0
 
@@ -272,7 +269,6 @@
 
 .method static synthetic access$000(Lcom/sec/android/visualeffect/expressme/pattern/PatternEffect;)F
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/expressme/pattern/PatternEffect;
 
     iget v0, p0, Lcom/sec/android/visualeffect/expressme/pattern/PatternEffect;->animationValue:F
 
@@ -281,8 +277,6 @@
 
 .method static synthetic access$002(Lcom/sec/android/visualeffect/expressme/pattern/PatternEffect;F)F
     .locals 0
-    .param p0    # Lcom/sec/android/visualeffect/expressme/pattern/PatternEffect;
-    .param p1    # F
 
     iput p1, p0, Lcom/sec/android/visualeffect/expressme/pattern/PatternEffect;->animationValue:F
 
@@ -291,7 +285,6 @@
 
 .method static synthetic access$100(Lcom/sec/android/visualeffect/expressme/pattern/PatternEffect;)F
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/expressme/pattern/PatternEffect;
 
     iget v0, p0, Lcom/sec/android/visualeffect/expressme/pattern/PatternEffect;->leadPoint:F
 
@@ -300,8 +293,6 @@
 
 .method static synthetic access$1002(Lcom/sec/android/visualeffect/expressme/pattern/PatternEffect;F)F
     .locals 0
-    .param p0    # Lcom/sec/android/visualeffect/expressme/pattern/PatternEffect;
-    .param p1    # F
 
     iput p1, p0, Lcom/sec/android/visualeffect/expressme/pattern/PatternEffect;->scaleValue:F
 
@@ -310,8 +301,6 @@
 
 .method static synthetic access$102(Lcom/sec/android/visualeffect/expressme/pattern/PatternEffect;F)F
     .locals 0
-    .param p0    # Lcom/sec/android/visualeffect/expressme/pattern/PatternEffect;
-    .param p1    # F
 
     iput p1, p0, Lcom/sec/android/visualeffect/expressme/pattern/PatternEffect;->leadPoint:F
 
@@ -320,7 +309,6 @@
 
 .method static synthetic access$1100(Lcom/sec/android/visualeffect/expressme/pattern/PatternEffect;)F
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/expressme/pattern/PatternEffect;
 
     iget v0, p0, Lcom/sec/android/visualeffect/expressme/pattern/PatternEffect;->SCALE_BACKGROUND_VALUE:F
 
@@ -329,7 +317,6 @@
 
 .method static synthetic access$1200(Lcom/sec/android/visualeffect/expressme/pattern/PatternEffect;)Landroid/graphics/ColorMatrix;
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/expressme/pattern/PatternEffect;
 
     iget-object v0, p0, Lcom/sec/android/visualeffect/expressme/pattern/PatternEffect;->cm:Landroid/graphics/ColorMatrix;
 
@@ -338,9 +325,6 @@
 
 .method static synthetic access$1300(Lcom/sec/android/visualeffect/expressme/pattern/PatternEffect;Landroid/graphics/ColorMatrix;F)V
     .locals 0
-    .param p0    # Lcom/sec/android/visualeffect/expressme/pattern/PatternEffect;
-    .param p1    # Landroid/graphics/ColorMatrix;
-    .param p2    # F
 
     invoke-direct {p0, p1, p2}, Lcom/sec/android/visualeffect/expressme/pattern/PatternEffect;->setBrightness(Landroid/graphics/ColorMatrix;F)V
 
@@ -349,7 +333,6 @@
 
 .method static synthetic access$1400(Lcom/sec/android/visualeffect/expressme/pattern/PatternEffect;)Landroid/graphics/Paint;
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/expressme/pattern/PatternEffect;
 
     iget-object v0, p0, Lcom/sec/android/visualeffect/expressme/pattern/PatternEffect;->paintBrightness:Landroid/graphics/Paint;
 
@@ -358,7 +341,6 @@
 
 .method static synthetic access$1500(Lcom/sec/android/visualeffect/expressme/pattern/PatternEffect;)V
     .locals 0
-    .param p0    # Lcom/sec/android/visualeffect/expressme/pattern/PatternEffect;
 
     invoke-direct {p0}, Lcom/sec/android/visualeffect/expressme/pattern/PatternEffect;->stopAnimator()V
 
@@ -367,7 +349,6 @@
 
 .method static synthetic access$1600(Lcom/sec/android/visualeffect/expressme/pattern/PatternEffect;)I
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/expressme/pattern/PatternEffect;
 
     iget v0, p0, Lcom/sec/android/visualeffect/expressme/pattern/PatternEffect;->patternWidth:I
 
@@ -376,7 +357,6 @@
 
 .method static synthetic access$1700(Lcom/sec/android/visualeffect/expressme/pattern/PatternEffect;)I
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/expressme/pattern/PatternEffect;
 
     iget v0, p0, Lcom/sec/android/visualeffect/expressme/pattern/PatternEffect;->patternHeight:I
 
@@ -385,8 +365,6 @@
 
 .method static synthetic access$1802(Lcom/sec/android/visualeffect/expressme/pattern/PatternEffect;F)F
     .locals 0
-    .param p0    # Lcom/sec/android/visualeffect/expressme/pattern/PatternEffect;
-    .param p1    # F
 
     iput p1, p0, Lcom/sec/android/visualeffect/expressme/pattern/PatternEffect;->twinklePos:F
 
@@ -395,7 +373,6 @@
 
 .method static synthetic access$200(Lcom/sec/android/visualeffect/expressme/pattern/PatternEffect;)F
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/expressme/pattern/PatternEffect;
 
     iget v0, p0, Lcom/sec/android/visualeffect/expressme/pattern/PatternEffect;->stopTiltValue:F
 
@@ -404,7 +381,6 @@
 
 .method static synthetic access$300(Lcom/sec/android/visualeffect/expressme/pattern/PatternEffect;)V
     .locals 0
-    .param p0    # Lcom/sec/android/visualeffect/expressme/pattern/PatternEffect;
 
     invoke-direct {p0}, Lcom/sec/android/visualeffect/expressme/pattern/PatternEffect;->startAnimator()V
 
@@ -413,7 +389,6 @@
 
 .method static synthetic access$400(Lcom/sec/android/visualeffect/expressme/pattern/PatternEffect;)Z
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/expressme/pattern/PatternEffect;
 
     iget-boolean v0, p0, Lcom/sec/android/visualeffect/expressme/pattern/PatternEffect;->isTwinkle:Z
 
@@ -422,8 +397,6 @@
 
 .method static synthetic access$500(Lcom/sec/android/visualeffect/expressme/pattern/PatternEffect;J)V
     .locals 0
-    .param p0    # Lcom/sec/android/visualeffect/expressme/pattern/PatternEffect;
-    .param p1    # J
 
     invoke-direct {p0, p1, p2}, Lcom/sec/android/visualeffect/expressme/pattern/PatternEffect;->checkTwinkle(J)V
 
@@ -432,7 +405,6 @@
 
 .method static synthetic access$600(Lcom/sec/android/visualeffect/expressme/pattern/PatternEffect;)F
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/expressme/pattern/PatternEffect;
 
     iget v0, p0, Lcom/sec/android/visualeffect/expressme/pattern/PatternEffect;->followPointForBg:F
 
@@ -441,8 +413,6 @@
 
 .method static synthetic access$616(Lcom/sec/android/visualeffect/expressme/pattern/PatternEffect;F)F
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/expressme/pattern/PatternEffect;
-    .param p1    # F
 
     iget v0, p0, Lcom/sec/android/visualeffect/expressme/pattern/PatternEffect;->followPointForBg:F
 
@@ -455,7 +425,6 @@
 
 .method static synthetic access$700(Lcom/sec/android/visualeffect/expressme/pattern/PatternEffect;)F
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/expressme/pattern/PatternEffect;
 
     iget v0, p0, Lcom/sec/android/visualeffect/expressme/pattern/PatternEffect;->followPointForMask:F
 
@@ -464,8 +433,6 @@
 
 .method static synthetic access$716(Lcom/sec/android/visualeffect/expressme/pattern/PatternEffect;F)F
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/expressme/pattern/PatternEffect;
-    .param p1    # F
 
     iget v0, p0, Lcom/sec/android/visualeffect/expressme/pattern/PatternEffect;->followPointForMask:F
 
@@ -478,7 +445,6 @@
 
 .method static synthetic access$800(Lcom/sec/android/visualeffect/expressme/pattern/PatternEffect;)F
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/expressme/pattern/PatternEffect;
 
     iget v0, p0, Lcom/sec/android/visualeffect/expressme/pattern/PatternEffect;->brightnessValue:F
 
@@ -487,8 +453,6 @@
 
 .method static synthetic access$802(Lcom/sec/android/visualeffect/expressme/pattern/PatternEffect;F)F
     .locals 0
-    .param p0    # Lcom/sec/android/visualeffect/expressme/pattern/PatternEffect;
-    .param p1    # F
 
     iput p1, p0, Lcom/sec/android/visualeffect/expressme/pattern/PatternEffect;->brightnessValue:F
 
@@ -497,7 +461,6 @@
 
 .method static synthetic access$900(Lcom/sec/android/visualeffect/expressme/pattern/PatternEffect;)I
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/expressme/pattern/PatternEffect;
 
     iget v0, p0, Lcom/sec/android/visualeffect/expressme/pattern/PatternEffect;->BRIGHTNESS_VALUE:I
 
@@ -535,7 +498,6 @@
 
 .method private checkTwinkle(J)V
     .locals 6
-    .param p1    # J
 
     const-wide/16 v4, 0x0
 
@@ -578,7 +540,6 @@
 
 .method private scaledImage(Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
     .locals 4
-    .param p1    # Landroid/graphics/Bitmap;
 
     const/16 v3, 0xa00
 
@@ -712,8 +673,6 @@
 
 .method private setBrightness(Landroid/graphics/ColorMatrix;F)V
     .locals 4
-    .param p1    # Landroid/graphics/ColorMatrix;
-    .param p2    # F
 
     const/high16 v3, 0x3f800000
 
@@ -955,7 +914,6 @@
 
 .method public handleSensorEvent(Landroid/hardware/SensorEvent;)V
     .locals 1
-    .param p1    # Landroid/hardware/SensorEvent;
 
     iget-object v0, p0, Lcom/sec/android/visualeffect/expressme/pattern/PatternEffect;->mTiltManager:Lcom/sec/android/visualeffect/expressme/common/TiltManager;
 
@@ -966,8 +924,6 @@
 
 .method public handleTouchEvent(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     const/4 v0, 0x0
 
@@ -976,7 +932,6 @@
 
 .method protected onDraw(Landroid/graphics/Canvas;)V
     .locals 12
-    .param p1    # Landroid/graphics/Canvas;
 
     const/high16 v11, 0x45200000
 
@@ -1124,8 +1079,6 @@
 
 .method public setBackgroundImage(Landroid/graphics/Bitmap;Landroid/graphics/Bitmap;)V
     .locals 4
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # Landroid/graphics/Bitmap;
 
     const/4 v3, 0x0
 
@@ -1255,9 +1208,6 @@
 
 .method public setBackgroundImage(Landroid/graphics/Bitmap;Landroid/graphics/Bitmap;Landroid/graphics/Bitmap;)V
     .locals 4
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # Landroid/graphics/Bitmap;
-    .param p3    # Landroid/graphics/Bitmap;
 
     const/4 v3, 0x0
 
@@ -1391,7 +1341,6 @@
 
 .method public setPattern(I)V
     .locals 7
-    .param p1    # I
 
     const/16 v6, 0x82
 

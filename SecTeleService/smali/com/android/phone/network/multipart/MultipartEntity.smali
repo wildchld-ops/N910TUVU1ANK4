@@ -92,7 +92,7 @@
 
     const-string v0, "multipart/form-data"
 
-    invoke-virtual {p0, v0}, Lorg/apache/http/entity/AbstractHttpEntity;->setContentType(Ljava/lang/String;)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/network/multipart/MultipartEntity;->setContentType(Ljava/lang/String;)V
 
     invoke-direct {p0, p2}, Lcom/android/phone/network/multipart/MultipartEntity;->generateMultipartBoundary(Ljava/lang/String;)[B
 

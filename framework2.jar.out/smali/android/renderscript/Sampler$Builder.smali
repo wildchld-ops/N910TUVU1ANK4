@@ -33,7 +33,6 @@
 # direct methods
 .method public constructor <init>(Landroid/renderscript/RenderScript;)V
     .locals 1
-    .param p1    # Landroid/renderscript/RenderScript;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -138,7 +137,6 @@
 
 .method public setAnisotropy(F)V
     .locals 2
-    .param p1    # F
 
     const/4 v0, 0x0
 
@@ -162,7 +160,6 @@
 
 .method public setMagnification(Landroid/renderscript/Sampler$Value;)V
     .locals 2
-    .param p1    # Landroid/renderscript/Sampler$Value;
 
     sget-object v0, Landroid/renderscript/Sampler$Value;->NEAREST:Landroid/renderscript/Sampler$Value;
 
@@ -189,7 +186,6 @@
 
 .method public setMinification(Landroid/renderscript/Sampler$Value;)V
     .locals 2
-    .param p1    # Landroid/renderscript/Sampler$Value;
 
     sget-object v0, Landroid/renderscript/Sampler$Value;->NEAREST:Landroid/renderscript/Sampler$Value;
 
@@ -224,7 +220,6 @@
 
 .method public setWrapS(Landroid/renderscript/Sampler$Value;)V
     .locals 2
-    .param p1    # Landroid/renderscript/Sampler$Value;
 
     sget-object v0, Landroid/renderscript/Sampler$Value;->WRAP:Landroid/renderscript/Sampler$Value;
 
@@ -255,7 +250,6 @@
 
 .method public setWrapT(Landroid/renderscript/Sampler$Value;)V
     .locals 2
-    .param p1    # Landroid/renderscript/Sampler$Value;
 
     sget-object v0, Landroid/renderscript/Sampler$Value;->WRAP:Landroid/renderscript/Sampler$Value;
 

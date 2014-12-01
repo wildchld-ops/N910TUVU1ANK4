@@ -14,8 +14,6 @@
 
 .method public static getDisplay(Ljava/lang/Object;I)Landroid/view/Display;
     .locals 1
-    .param p0    # Ljava/lang/Object;
-    .param p1    # I
 
     check-cast p0, Landroid/hardware/display/DisplayManager;
 
@@ -28,7 +26,6 @@
 
 .method public static getDisplayManager(Landroid/content/Context;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     const-string v0, "display"
 
@@ -41,7 +38,6 @@
 
 .method public static getDisplays(Ljava/lang/Object;)[Landroid/view/Display;
     .locals 1
-    .param p0    # Ljava/lang/Object;
 
     check-cast p0, Landroid/hardware/display/DisplayManager;
 
@@ -54,8 +50,6 @@
 
 .method public static getDisplays(Ljava/lang/Object;Ljava/lang/String;)[Landroid/view/Display;
     .locals 1
-    .param p0    # Ljava/lang/Object;
-    .param p1    # Ljava/lang/String;
 
     check-cast p0, Landroid/hardware/display/DisplayManager;
 

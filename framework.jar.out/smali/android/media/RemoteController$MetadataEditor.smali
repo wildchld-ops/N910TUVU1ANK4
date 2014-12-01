@@ -31,8 +31,6 @@
 
 .method protected constructor <init>(Landroid/media/RemoteController;Landroid/os/Bundle;J)V
     .locals 3
-    .param p2    # Landroid/os/Bundle;
-    .param p3    # J
 
     const/16 v2, 0x64
 
@@ -78,8 +76,6 @@
 
 .method static synthetic access$1200(Landroid/media/RemoteController$MetadataEditor;I)V
     .locals 0
-    .param p0    # Landroid/media/RemoteController$MetadataEditor;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/media/RemoteController$MetadataEditor;->cleanupBitmapFromBundle(I)V
 
@@ -88,7 +84,6 @@
 
 .method private cleanupBitmapFromBundle(I)V
     .locals 2
-    .param p1    # I
 
     sget-object v0, Landroid/media/RemoteController$MetadataEditor;->METADATA_KEYS_TYPE:Landroid/util/SparseIntArray;
 

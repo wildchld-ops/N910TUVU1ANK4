@@ -65,7 +65,6 @@
 
 .method static synthetic access$000(Landroid/support/v4/content/AsyncTaskLoader$LoadTask;)Ljava/util/concurrent/CountDownLatch;
     .locals 1
-    .param p0    # Landroid/support/v4/content/AsyncTaskLoader$LoadTask;
 
     iget-object v0, p0, Landroid/support/v4/content/AsyncTaskLoader$LoadTask;->done:Ljava/util/concurrent/CountDownLatch;
 
@@ -76,7 +75,6 @@
 # virtual methods
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [Ljava/lang/Void;
 
@@ -89,7 +87,6 @@
 
 .method protected varargs doInBackground([Ljava/lang/Void;)Ljava/lang/Object;
     .locals 1
-    .param p1    # [Ljava/lang/Void;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([",

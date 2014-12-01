@@ -10,7 +10,6 @@
 # direct methods
 .method public constructor <init>(Ljava/nio/ByteBuffer;)V
     .locals 0
-    .param p1    # Ljava/nio/ByteBuffer;
 
     invoke-direct {p0}, Ljava/io/InputStream;-><init>()V
 
@@ -51,9 +50,6 @@
 
 .method public read([BII)I
     .locals 1
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
 
     iget-object v0, p0, Lcom/android/mms/exif/ByteBufferInputStream;->mBuf:Ljava/nio/ByteBuffer;
 

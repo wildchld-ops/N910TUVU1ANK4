@@ -53,7 +53,6 @@
 # virtual methods
 .method public findMatchingTypeface(Ljava/lang/String;)Lcom/android/server/enterprise/general/Typeface;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -99,7 +98,6 @@
 
 .method public findMatchingTypefaceByName(Ljava/lang/String;)Lcom/android/server/enterprise/general/Typeface;
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -193,8 +191,6 @@
 
 .method public findTypefaces(Landroid/content/res/AssetManager;Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Landroid/content/res/AssetManager;
-    .param p2    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -271,8 +267,6 @@
 
 .method public getMonospaceEntries(Ljava/util/Vector;Ljava/util/Vector;)V
     .locals 3
-    .param p1    # Ljava/util/Vector;
-    .param p2    # Ljava/util/Vector;
 
     const-string v2, "default"
 
@@ -334,9 +328,6 @@
 
 .method public getSansEntries(Ljava/util/Vector;Ljava/util/Vector;Ljava/util/Vector;)V
     .locals 4
-    .param p1    # Ljava/util/Vector;
-    .param p2    # Ljava/util/Vector;
-    .param p3    # Ljava/util/Vector;
 
     const-string v2, "default"
 
@@ -424,8 +415,6 @@
 
 .method public getSerifEntries(Ljava/util/Vector;Ljava/util/Vector;)V
     .locals 3
-    .param p1    # Ljava/util/Vector;
-    .param p2    # Ljava/util/Vector;
 
     const-string v2, "default"
 
@@ -487,9 +476,6 @@
 
 .method public parseTypefaceXml(Ljava/lang/String;Ljava/io/InputStream;Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/io/InputStream;
-    .param p3    # Ljava/lang/String;
 
     :try_start_0
     invoke-static {}, Ljavax/xml/parsers/SAXParserFactory;->newInstance()Ljavax/xml/parsers/SAXParserFactory;

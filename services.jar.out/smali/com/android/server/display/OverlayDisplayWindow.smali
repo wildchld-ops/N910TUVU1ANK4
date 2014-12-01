@@ -97,14 +97,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Ljava/lang/String;IIIIZLcom/android/server/display/OverlayDisplayWindow$Listener;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # Z
-    .param p8    # Lcom/android/server/display/OverlayDisplayWindow$Listener;
 
     const/4 v4, 0x0
 
@@ -302,7 +294,6 @@
 
 .method static synthetic access$000(Lcom/android/server/display/OverlayDisplayWindow;)Landroid/view/Display;
     .locals 1
-    .param p0    # Lcom/android/server/display/OverlayDisplayWindow;
 
     iget-object v0, p0, Lcom/android/server/display/OverlayDisplayWindow;->mDefaultDisplay:Landroid/view/Display;
 
@@ -311,7 +302,6 @@
 
 .method static synthetic access$100(Lcom/android/server/display/OverlayDisplayWindow;)Z
     .locals 1
-    .param p0    # Lcom/android/server/display/OverlayDisplayWindow;
 
     invoke-direct {p0}, Lcom/android/server/display/OverlayDisplayWindow;->updateDefaultDisplayInfo()Z
 
@@ -322,7 +312,6 @@
 
 .method static synthetic access$200(Lcom/android/server/display/OverlayDisplayWindow;)Landroid/view/DisplayInfo;
     .locals 1
-    .param p0    # Lcom/android/server/display/OverlayDisplayWindow;
 
     iget-object v0, p0, Lcom/android/server/display/OverlayDisplayWindow;->mDefaultDisplayInfo:Landroid/view/DisplayInfo;
 
@@ -331,7 +320,6 @@
 
 .method static synthetic access$300(Lcom/android/server/display/OverlayDisplayWindow;)Lcom/android/server/display/OverlayDisplayWindow$Listener;
     .locals 1
-    .param p0    # Lcom/android/server/display/OverlayDisplayWindow;
 
     iget-object v0, p0, Lcom/android/server/display/OverlayDisplayWindow;->mListener:Lcom/android/server/display/OverlayDisplayWindow$Listener;
 
@@ -340,7 +328,6 @@
 
 .method static synthetic access$400(Lcom/android/server/display/OverlayDisplayWindow;)Landroid/view/GestureDetector;
     .locals 1
-    .param p0    # Lcom/android/server/display/OverlayDisplayWindow;
 
     iget-object v0, p0, Lcom/android/server/display/OverlayDisplayWindow;->mGestureDetector:Landroid/view/GestureDetector;
 
@@ -349,7 +336,6 @@
 
 .method static synthetic access$500(Lcom/android/server/display/OverlayDisplayWindow;)Landroid/view/ScaleGestureDetector;
     .locals 1
-    .param p0    # Lcom/android/server/display/OverlayDisplayWindow;
 
     iget-object v0, p0, Lcom/android/server/display/OverlayDisplayWindow;->mScaleGestureDetector:Landroid/view/ScaleGestureDetector;
 
@@ -358,7 +344,6 @@
 
 .method static synthetic access$600(Lcom/android/server/display/OverlayDisplayWindow;)V
     .locals 0
-    .param p0    # Lcom/android/server/display/OverlayDisplayWindow;
 
     invoke-direct {p0}, Lcom/android/server/display/OverlayDisplayWindow;->saveWindowParams()V
 
@@ -367,8 +352,6 @@
 
 .method static synthetic access$724(Lcom/android/server/display/OverlayDisplayWindow;F)F
     .locals 1
-    .param p0    # Lcom/android/server/display/OverlayDisplayWindow;
-    .param p1    # F
 
     iget v0, p0, Lcom/android/server/display/OverlayDisplayWindow;->mLiveTranslationX:F
 
@@ -381,8 +364,6 @@
 
 .method static synthetic access$824(Lcom/android/server/display/OverlayDisplayWindow;F)F
     .locals 1
-    .param p0    # Lcom/android/server/display/OverlayDisplayWindow;
-    .param p1    # F
 
     iget v0, p0, Lcom/android/server/display/OverlayDisplayWindow;->mLiveTranslationY:F
 
@@ -395,8 +376,6 @@
 
 .method static synthetic access$932(Lcom/android/server/display/OverlayDisplayWindow;F)F
     .locals 1
-    .param p0    # Lcom/android/server/display/OverlayDisplayWindow;
-    .param p1    # F
 
     iget v0, p0, Lcom/android/server/display/OverlayDisplayWindow;->mLiveScale:F
 
@@ -899,7 +878,6 @@
 
 .method public dump(Ljava/io/PrintWriter;)V
     .locals 2
-    .param p1    # Ljava/io/PrintWriter;
 
     new-instance v0, Ljava/lang/StringBuilder;
 

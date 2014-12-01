@@ -93,7 +93,6 @@
 
 .method private constructor <init>(Landroid/os/Handler;)V
     .locals 1
-    .param p1    # Landroid/os/Handler;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -118,7 +117,6 @@
 
 .method static synthetic access$102(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/samsung/android/privatemode/PrivateModeManager;->mIsServiceBind:Z
 
@@ -127,7 +125,6 @@
 
 .method static synthetic access$202(Lcom/samsung/android/privatemode/IPrivateModeManager;)Lcom/samsung/android/privatemode/IPrivateModeManager;
     .locals 0
-    .param p0    # Lcom/samsung/android/privatemode/IPrivateModeManager;
 
     sput-object p0, Lcom/samsung/android/privatemode/PrivateModeManager;->mService:Lcom/samsung/android/privatemode/IPrivateModeManager;
 
@@ -144,10 +141,6 @@
 
 .method static synthetic access$400(Lcom/samsung/android/privatemode/PrivateModeManager;Ljava/lang/String;Ljava/lang/Exception;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/samsung/android/privatemode/PrivateModeManager;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Exception;
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/samsung/android/privatemode/PrivateModeManager;->logExceptionInDetail(Ljava/lang/String;Ljava/lang/Exception;Ljava/lang/String;)V
 
@@ -217,8 +210,6 @@
 
 .method public static declared-synchronized getInstance(Landroid/content/Context;Lcom/samsung/android/privatemode/IPrivateModeClient;)Lcom/samsung/android/privatemode/PrivateModeManager;
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/samsung/android/privatemode/IPrivateModeClient;
 
     const/4 v0, 0x0
 
@@ -375,7 +366,6 @@
 
 .method public static getPrivateStorageDir(Landroid/content/Context;)Ljava/lang/String;
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     const-string v0, "/storage/Private"
 
@@ -384,7 +374,6 @@
 
 .method private static isKnoxMode(Landroid/content/Context;)Z
     .locals 6
-    .param p0    # Landroid/content/Context;
 
     const/4 v2, -0x1
 
@@ -554,7 +543,6 @@
 
 .method public static isPrivateStorageMounted(Landroid/content/Context;)Z
     .locals 8
-    .param p0    # Landroid/content/Context;
 
     const/4 v4, 0x0
 
@@ -677,7 +665,6 @@
 
 .method public static isReady(Landroid/content/Context;)Z
     .locals 6
-    .param p0    # Landroid/content/Context;
 
     const/4 v2, 0x1
 
@@ -803,9 +790,6 @@
 
 .method private logExceptionInDetail(Ljava/lang/String;Ljava/lang/Exception;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Exception;
-    .param p3    # Ljava/lang/String;
 
     sget-boolean v0, Lcom/samsung/android/privatemode/PrivateModeManager;->DEBUG:Z
 
@@ -1028,7 +1012,6 @@
 
 .method public registerClient(Lcom/samsung/android/privatemode/IPrivateModeClient;)Landroid/os/IBinder;
     .locals 5
-    .param p1    # Lcom/samsung/android/privatemode/IPrivateModeClient;
 
     const/4 v2, 0x0
 
@@ -1098,7 +1081,6 @@
 
 .method public unregisterClient(Landroid/os/IBinder;)Z
     .locals 6
-    .param p1    # Landroid/os/IBinder;
 
     const/4 v5, 0x0
 
@@ -1181,8 +1163,6 @@
 
 .method public unregisterClient(Landroid/os/IBinder;Z)Z
     .locals 6
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Z
 
     const/4 v5, 0x0
 

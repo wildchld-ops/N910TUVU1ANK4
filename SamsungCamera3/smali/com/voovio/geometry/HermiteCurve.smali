@@ -62,7 +62,6 @@
 
 .method public constructor <init>(I)V
     .locals 6
-    .param p1    # I
 
     const/4 v5, 0x2
 
@@ -139,7 +138,6 @@
 
 .method public constructor <init>([Lcom/voovio/geometry/HermiteCurve$HermitePoint;)V
     .locals 3
-    .param p1    # [Lcom/voovio/geometry/HermiteCurve$HermitePoint;
 
     const/4 v2, 0x2
 
@@ -194,8 +192,6 @@
 
 .method public getNormal(FLcom/voovio/geometry/Point;)V
     .locals 11
-    .param p1    # F
-    .param p2    # Lcom/voovio/geometry/Point;
 
     const/high16 v10, 0x40400000
 
@@ -352,7 +348,6 @@
 
 .method public getPoint(I)Lcom/voovio/geometry/Point;
     .locals 8
-    .param p1    # I
 
     const/4 v7, 0x1
 
@@ -487,8 +482,6 @@
 
 .method public getPoint(FLcom/voovio/geometry/Point;)V
     .locals 12
-    .param p1    # F
-    .param p2    # Lcom/voovio/geometry/Point;
 
     const/high16 v11, 0x40400000
 
@@ -637,8 +630,6 @@
 
 .method public getPoint(ILcom/voovio/geometry/Point;)V
     .locals 6
-    .param p1    # I
-    .param p2    # Lcom/voovio/geometry/Point;
 
     const/4 v5, 0x1
 
@@ -773,9 +764,6 @@
 
 .method public getPointAndNormalForValueX(FLcom/voovio/geometry/Point;Lcom/voovio/geometry/Point;)Z
     .locals 7
-    .param p1    # F
-    .param p2    # Lcom/voovio/geometry/Point;
-    .param p3    # Lcom/voovio/geometry/Point;
 
     const/4 v4, 0x0
 
@@ -851,9 +839,6 @@
 
 .method public getPointAndNormalForValueY(FLcom/voovio/geometry/Point;Lcom/voovio/geometry/Point;)Z
     .locals 7
-    .param p1    # F
-    .param p2    # Lcom/voovio/geometry/Point;
-    .param p3    # Lcom/voovio/geometry/Point;
 
     const/4 v4, 0x0
 
@@ -929,7 +914,6 @@
 
 .method public getPoints([F)V
     .locals 9
-    .param p1    # [F
 
     const/4 v8, 0x1
 
@@ -1090,12 +1074,6 @@
 
 .method public setCurveParameters(Lcom/voovio/geometry/Point;Lcom/voovio/geometry/Point;FLcom/voovio/geometry/Point;Lcom/voovio/geometry/Point;F)V
     .locals 3
-    .param p1    # Lcom/voovio/geometry/Point;
-    .param p2    # Lcom/voovio/geometry/Point;
-    .param p3    # F
-    .param p4    # Lcom/voovio/geometry/Point;
-    .param p5    # Lcom/voovio/geometry/Point;
-    .param p6    # F
 
     const/4 v2, 0x1
 

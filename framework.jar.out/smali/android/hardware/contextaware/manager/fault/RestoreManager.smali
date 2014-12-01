@@ -28,7 +28,6 @@
 # direct methods
 .method protected constructor <init>(Landroid/hardware/contextaware/manager/ContextManager;)V
     .locals 3
-    .param p1    # Landroid/hardware/contextaware/manager/ContextManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -87,10 +86,6 @@
 
 .method protected final runRestore(Ljava/lang/String;Landroid/hardware/contextaware/manager/ContextAwareService$Listener;ILandroid/hardware/contextaware/manager/IContextObserver;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/hardware/contextaware/manager/ContextAwareService$Listener;
-    .param p3    # I
-    .param p4    # Landroid/hardware/contextaware/manager/IContextObserver;
 
     iget-boolean v2, p0, Landroid/hardware/contextaware/manager/fault/RestoreManager;->mIsRestore:Z
 

@@ -23,11 +23,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/res/Resources;Landroid/inputmethodservice/Keyboard$Row;IILandroid/content/res/XmlResourceParser;)V
     .locals 1
-    .param p1    # Landroid/content/res/Resources;
-    .param p2    # Landroid/inputmethodservice/Keyboard$Row;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Landroid/content/res/XmlResourceParser;
 
     invoke-direct/range {p0 .. p5}, Landroid/inputmethodservice/Keyboard$Key;-><init>(Landroid/content/res/Resources;Landroid/inputmethodservice/Keyboard$Row;IILandroid/content/res/XmlResourceParser;)V
 
@@ -69,8 +64,6 @@
 
 .method public isInside(II)Z
     .locals 5
-    .param p1    # I
-    .param p2    # I
 
     const/4 v1, 0x0
 
@@ -140,7 +133,6 @@
 
 .method public onReleased(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-boolean v0, p0, Lcom/android/internal/widget/PasswordEntryKeyboard$LatinKey;->mShiftLockEnabled:Z
 
@@ -171,7 +163,6 @@
 
 .method setEnabled(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/internal/widget/PasswordEntryKeyboard$LatinKey;->mEnabled:Z
 

@@ -100,7 +100,7 @@
 
     const v6, 0x7f090495
 
-    invoke-virtual {v5, v6}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {v5, v6}, Lcom/android/phone/CallFeaturesSetting;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
@@ -110,7 +110,7 @@
 
     const v6, 0x7f090496
 
-    invoke-virtual {v5, v6}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {v5, v6}, Lcom/android/phone/CallFeaturesSetting;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
@@ -147,7 +147,7 @@
     if-eqz v0, :cond_4
 
     :goto_1
-    invoke-virtual {v5, v3}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+    invoke-virtual {v5, v3}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     goto :goto_0
 
@@ -182,7 +182,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v3, v4}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+    invoke-virtual {v3, v4}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     goto/16 :goto_0
 

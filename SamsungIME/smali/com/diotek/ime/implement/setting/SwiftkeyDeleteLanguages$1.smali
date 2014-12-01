@@ -36,7 +36,6 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Lcom/diotek/ime/implement/setting/SwiftkeyDeleteLanguages$1;->this$0:Lcom/diotek/ime/implement/setting/SwiftkeyDeleteLanguages;
 

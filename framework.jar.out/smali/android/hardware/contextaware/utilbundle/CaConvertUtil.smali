@@ -14,7 +14,6 @@
 
 .method public static byteArrToString([B)Ljava/lang/String;
     .locals 7
-    .param p0    # [B
 
     if-eqz p0, :cond_0
 
@@ -103,7 +102,6 @@
 
 .method public static getCompleteOfTwo(I)I
     .locals 2
-    .param p0    # I
 
     move v0, p0
 
@@ -119,8 +117,6 @@
 
 .method public static intToByteArr(II)[B
     .locals 5
-    .param p0    # I
-    .param p1    # I
 
     const/4 v4, 0x4
 
@@ -178,7 +174,6 @@
 
 .method public static strToDouble(Ljava/lang/String;)D
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     const-wide/16 v3, 0x0
 
@@ -223,7 +218,6 @@
 
 .method public static strToFloat(Ljava/lang/String;)F
     .locals 7
-    .param p0    # Ljava/lang/String;
 
     const/4 v5, 0x0
 
@@ -311,7 +305,6 @@
 
 .method public static strToInt(Ljava/lang/String;)I
     .locals 7
-    .param p0    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -412,7 +405,6 @@
 
 .method public static strToLong(Ljava/lang/String;)J
     .locals 8
-    .param p0    # Ljava/lang/String;
 
     const-wide/16 v4, 0x0
 
@@ -484,7 +476,6 @@
 
 .method public static stringToByteArray(Ljava/lang/String;)[B
     .locals 11
-    .param p0    # Ljava/lang/String;
 
     const/4 v10, 0x1
 

@@ -40,7 +40,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/settings/PushMessagesSettings;)Landroid/widget/Switch;
     .locals 1
-    .param p0    # Lcom/android/mms/settings/PushMessagesSettings;
 
     iget-object v0, p0, Lcom/android/mms/settings/PushMessagesSettings;->mSwitch:Landroid/widget/Switch;
 
@@ -49,7 +48,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/settings/PushMessagesSettings;)V
     .locals 0
-    .param p0    # Lcom/android/mms/settings/PushMessagesSettings;
 
     invoke-direct {p0}, Lcom/android/mms/settings/PushMessagesSettings;->setElementEnable()V
 
@@ -58,7 +56,6 @@
 
 .method public static getServiceLoading(Landroid/content/Context;)I
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Landroid/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -81,7 +78,6 @@
 
 .method public static getServiceLoading(Ljava/lang/String;)I
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "Mms/PushMessagesSettings"
 
@@ -139,7 +135,6 @@
 
 .method private getServiceLoadingActionName(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -175,8 +170,6 @@
 
 .method private removePreference(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)V
     .locals 0
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     if-eqz p1, :cond_0
 
@@ -218,7 +211,6 @@
 
 .method private setServiceLoadingSummary(Landroid/content/SharedPreferences;)V
     .locals 4
-    .param p1    # Landroid/content/SharedPreferences;
 
     invoke-static {}, Lcom/android/mms/MmsConfig;->getEnableServiceLoading()Z
 
@@ -258,7 +250,6 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onCreate(Landroid/os/Bundle;)V
 
@@ -304,7 +295,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 3
-    .param p1    # Landroid/view/Menu;
 
     invoke-virtual {p0}, Landroid/app/Activity;->getMenuInflater()Landroid/view/MenuInflater;
 
@@ -361,7 +351,6 @@
 
 .method public onMenuItemClick(Landroid/view/MenuItem;)Z
     .locals 2
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v0, 0x0
 
@@ -437,7 +426,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -499,7 +487,6 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)Z
     .locals 4
-    .param p1    # Landroid/view/Menu;
 
     invoke-virtual {p0}, Landroid/preference/PreferenceActivity;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
@@ -587,8 +574,6 @@
 
 .method public onSharedPreferenceChanged(Landroid/content/SharedPreferences;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Landroid/content/SharedPreferences;
-    .param p2    # Ljava/lang/String;
 
     const-string v0, "pref_key_service_loading_action"
 

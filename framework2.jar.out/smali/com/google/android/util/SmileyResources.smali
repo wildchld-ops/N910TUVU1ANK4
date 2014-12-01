@@ -25,8 +25,6 @@
 # direct methods
 .method public constructor <init>([Ljava/lang/String;[I)V
     .locals 4
-    .param p1    # [Ljava/lang/String;
-    .param p2    # [I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -114,7 +112,6 @@
 
 .method public getSmileyRes(Ljava/lang/String;)I
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/google/android/util/SmileyResources;->mSmileyToRes:Ljava/util/HashMap;
 

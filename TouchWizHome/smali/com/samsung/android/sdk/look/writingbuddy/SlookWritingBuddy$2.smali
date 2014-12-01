@@ -36,7 +36,6 @@
 # virtual methods
 .method public onImageReceived(Landroid/graphics/Bitmap;)V
     .locals 1
-    .param p1    # Landroid/graphics/Bitmap;
 
     iget-object v0, p0, Lcom/samsung/android/sdk/look/writingbuddy/SlookWritingBuddy$2;->this$0:Lcom/samsung/android/sdk/look/writingbuddy/SlookWritingBuddy;
 

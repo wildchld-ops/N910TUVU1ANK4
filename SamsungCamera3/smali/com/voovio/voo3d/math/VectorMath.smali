@@ -56,8 +56,6 @@
 
 .method public static add(Lcom/voovio/voo3d/data/Vector3;Lcom/voovio/voo3d/data/Vector3;)Lcom/voovio/voo3d/data/Vector3;
     .locals 5
-    .param p0    # Lcom/voovio/voo3d/data/Vector3;
-    .param p1    # Lcom/voovio/voo3d/data/Vector3;
 
     new-instance v0, Lcom/voovio/voo3d/data/Vector3;
 
@@ -86,8 +84,6 @@
 
 .method public static distance(Lcom/voovio/voo3d/data/Vector3;Lcom/voovio/voo3d/data/Vector3;)F
     .locals 6
-    .param p0    # Lcom/voovio/voo3d/data/Vector3;
-    .param p1    # Lcom/voovio/voo3d/data/Vector3;
 
     iget v4, p0, Lcom/voovio/voo3d/data/Vector3;->x:F
 
@@ -130,9 +126,6 @@
 
 .method public static dotPerp(Lcom/voovio/voo3d/data/Vector3;Lcom/voovio/voo3d/data/Vector3;Lcom/voovio/voo3d/data/Vector3;)F
     .locals 1
-    .param p0    # Lcom/voovio/voo3d/data/Vector3;
-    .param p1    # Lcom/voovio/voo3d/data/Vector3;
-    .param p2    # Lcom/voovio/voo3d/data/Vector3;
 
     invoke-virtual {p0, p1}, Lcom/voovio/voo3d/data/Vector3;->cross(Lcom/voovio/voo3d/data/Vector3;)Lcom/voovio/voo3d/data/Vector3;
 
@@ -147,7 +140,6 @@
 
 .method public static negate(Lcom/voovio/voo3d/data/Vector3;)Lcom/voovio/voo3d/data/Vector3;
     .locals 4
-    .param p0    # Lcom/voovio/voo3d/data/Vector3;
 
     new-instance v0, Lcom/voovio/voo3d/data/Vector3;
 
@@ -170,8 +162,6 @@
 
 .method public static scale(Lcom/voovio/voo3d/data/Vector3;F)Lcom/voovio/voo3d/data/Vector3;
     .locals 4
-    .param p0    # Lcom/voovio/voo3d/data/Vector3;
-    .param p1    # F
 
     new-instance v0, Lcom/voovio/voo3d/data/Vector3;
 
@@ -194,8 +184,6 @@
 
 .method public static sub(Lcom/voovio/voo3d/data/Vector3;Lcom/voovio/voo3d/data/Vector3;)Lcom/voovio/voo3d/data/Vector3;
     .locals 5
-    .param p0    # Lcom/voovio/voo3d/data/Vector3;
-    .param p1    # Lcom/voovio/voo3d/data/Vector3;
 
     new-instance v0, Lcom/voovio/voo3d/data/Vector3;
 

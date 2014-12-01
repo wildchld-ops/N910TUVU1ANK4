@@ -47,7 +47,6 @@
 
 .method synthetic constructor <init>(Landroid/database/sqlite/SQLiteConnection$1;)V
     .locals 0
-    .param p1    # Landroid/database/sqlite/SQLiteConnection$1;
 
     invoke-direct {p0}, Landroid/database/sqlite/SQLiteConnection$OperationLog;-><init>()V
 
@@ -56,7 +55,6 @@
 
 .method private endOperationDeferLogLocked(I)Z
     .locals 7
-    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -108,7 +106,6 @@
 
 .method private getOperationLocked(I)Landroid/database/sqlite/SQLiteConnection$Operation;
     .locals 3
-    .param p1    # I
 
     and-int/lit16 v0, p1, 0xff
 
@@ -131,8 +128,6 @@
 
 .method private logOperationLocked(ILjava/lang/String;)V
     .locals 4
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Landroid/database/sqlite/SQLiteConnection$OperationLog;->getOperationLocked(I)Landroid/database/sqlite/SQLiteConnection$Operation;
 
@@ -170,7 +165,6 @@
 
 .method private newOperationCookieLocked(I)I
     .locals 2
-    .param p1    # I
 
     iget v0, p0, Landroid/database/sqlite/SQLiteConnection$OperationLog;->mGeneration:I
 
@@ -189,9 +183,6 @@
 # virtual methods
 .method public beginOperation(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)I
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # [Ljava/lang/Object;
 
     iget-object v5, p0, Landroid/database/sqlite/SQLiteConnection$OperationLog;->mOperations:[Landroid/database/sqlite/SQLiteConnection$Operation;
 
@@ -397,8 +388,6 @@
 
 .method public dump(Landroid/util/Printer;Z)V
     .locals 7
-    .param p1    # Landroid/util/Printer;
-    .param p2    # Z
 
     iget-object v5, p0, Landroid/database/sqlite/SQLiteConnection$OperationLog;->mOperations:[Landroid/database/sqlite/SQLiteConnection$Operation;
 
@@ -532,7 +521,6 @@
 
 .method public endOperation(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Landroid/database/sqlite/SQLiteConnection$OperationLog;->mOperations:[Landroid/database/sqlite/SQLiteConnection$Operation;
 
@@ -566,7 +554,6 @@
 
 .method public endOperationDeferLog(I)Z
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Landroid/database/sqlite/SQLiteConnection$OperationLog;->mOperations:[Landroid/database/sqlite/SQLiteConnection$Operation;
 
@@ -593,8 +580,6 @@
 
 .method public failOperation(ILjava/lang/Exception;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/Exception;
 
     iget-object v2, p0, Landroid/database/sqlite/SQLiteConnection$OperationLog;->mOperations:[Landroid/database/sqlite/SQLiteConnection$Operation;
 
@@ -626,8 +611,6 @@
 
 .method public logOperation(ILjava/lang/String;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     iget-object v1, p0, Landroid/database/sqlite/SQLiteConnection$OperationLog;->mOperations:[Landroid/database/sqlite/SQLiteConnection$Operation;
 

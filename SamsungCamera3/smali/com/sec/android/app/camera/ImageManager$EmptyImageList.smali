@@ -28,7 +28,6 @@
 
 .method synthetic constructor <init>(Lcom/sec/android/app/camera/ImageManager$1;)V
     .locals 0
-    .param p1    # Lcom/sec/android/app/camera/ImageManager$1;
 
     invoke-direct {p0}, Lcom/sec/android/app/camera/ImageManager$EmptyImageList;-><init>()V
 
@@ -73,7 +72,6 @@
 
 .method public getImageAt(I)Lcom/sec/android/app/camera/gallery/IImage;
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -82,7 +80,6 @@
 
 .method public getImageForUri(Landroid/net/Uri;)Lcom/sec/android/app/camera/gallery/IImage;
     .locals 1
-    .param p1    # Landroid/net/Uri;
 
     const/4 v0, 0x0
 
@@ -91,7 +88,6 @@
 
 .method public getImageIndex(Lcom/sec/android/app/camera/gallery/IImage;)I
     .locals 1
-    .param p1    # Lcom/sec/android/app/camera/gallery/IImage;
 
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
@@ -110,7 +106,6 @@
 
 .method public removeImage(Lcom/sec/android/app/camera/gallery/IImage;)Z
     .locals 1
-    .param p1    # Lcom/sec/android/app/camera/gallery/IImage;
 
     const/4 v0, 0x0
 
@@ -119,7 +114,6 @@
 
 .method public removeImageAt(I)Z
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 

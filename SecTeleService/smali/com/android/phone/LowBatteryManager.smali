@@ -303,7 +303,7 @@
 
     iget-object v2, p0, Lcom/android/phone/LowBatteryManager;->mLowBatteryReceiver:Landroid/content/BroadcastReceiver;
 
-    invoke-virtual {v1, v2, v0}, Landroid/content/ContextWrapper;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
+    invoke-virtual {v1, v2, v0}, Lcom/android/phone/PhoneGlobals;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
     const/4 v0, 0x0
 
@@ -415,7 +415,7 @@
 
     const v3, 0x7f090424
 
-    invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {v2, v3}, Lcom/android/phone/PhoneGlobals;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
@@ -443,7 +443,7 @@
 
     const v3, 0x7f090574
 
-    invoke-virtual {v2, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {v2, v3}, Lcom/android/phone/PhoneGlobals;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
@@ -465,7 +465,7 @@
 
     iget-object v0, p0, Lcom/android/phone/LowBatteryManager;->mApp:Lcom/android/phone/PhoneGlobals;
 
-    invoke-virtual {v0}, Landroid/content/ContextWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {v0}, Lcom/android/phone/PhoneGlobals;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 

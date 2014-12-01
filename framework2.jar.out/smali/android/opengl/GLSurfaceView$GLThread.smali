@@ -116,8 +116,6 @@
 
 .method static synthetic access$1102(Landroid/opengl/GLSurfaceView$GLThread;Z)Z
     .locals 0
-    .param p0    # Landroid/opengl/GLSurfaceView$GLThread;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/opengl/GLSurfaceView$GLThread;->mExited:Z
 
@@ -1430,8 +1428,6 @@
 
 .method public onWindowResize(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     # getter for: Landroid/opengl/GLSurfaceView;->sGLThreadManager:Landroid/opengl/GLSurfaceView$GLThreadManager;
     invoke-static {}, Landroid/opengl/GLSurfaceView;->access$800()Landroid/opengl/GLSurfaceView$GLThreadManager;
@@ -1530,7 +1526,6 @@
 
 .method public queueEvent(Ljava/lang/Runnable;)V
     .locals 2
-    .param p1    # Ljava/lang/Runnable;
 
     if-nez p1, :cond_0
 
@@ -1769,7 +1764,6 @@
 
 .method public setRenderMode(I)V
     .locals 2
-    .param p1    # I
 
     if-ltz p1, :cond_0
 

@@ -118,7 +118,7 @@
 
     aput-object v4, v3, v5
 
-    invoke-virtual {v1, v2, v3}, Landroid/app/Fragment;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {v1, v2, v3}, Lcom/android/phone/callsettings/EditRejectCallWithMsgScreen;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -128,7 +128,7 @@
 
     iget-object v1, p0, Lcom/android/phone/callsettings/EditRejectCallWithMsgScreen$3;->this$0:Lcom/android/phone/callsettings/EditRejectCallWithMsgScreen;
 
-    invoke-virtual {v1}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v1}, Lcom/android/phone/callsettings/EditRejectCallWithMsgScreen;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 

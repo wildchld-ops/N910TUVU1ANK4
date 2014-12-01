@@ -21,8 +21,6 @@
 # direct methods
 .method constructor <init>(Lcom/sec/android/samsungapps/util/PreloadUpdate;Landroid/content/Context;Ljava/lang/String;)V
     .locals 0
-    .param p2    # Landroid/content/Context;
-    .param p3    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/sec/android/samsungapps/util/PreloadUpdate$1;->this$0:Lcom/sec/android/samsungapps/util/PreloadUpdate;
 
@@ -35,7 +33,6 @@
 # virtual methods
 .method protected bindService(Landroid/os/IBinder;)V
     .locals 2
-    .param p1    # Landroid/os/IBinder;
 
     iget-object v0, p0, Lcom/sec/android/samsungapps/util/PreloadUpdate$1;->this$0:Lcom/sec/android/samsungapps/util/PreloadUpdate;
 

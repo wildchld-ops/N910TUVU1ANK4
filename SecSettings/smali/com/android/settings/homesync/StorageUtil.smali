@@ -14,8 +14,6 @@
 
 .method static doesFileExist(Lcom/sec/android/spc/service/ISpcBackupService;Ljava/io/File;)Z
     .locals 4
-    .param p0    # Lcom/sec/android/spc/service/ISpcBackupService;
-    .param p1    # Ljava/io/File;
 
     const/4 v1, 0x0
 
@@ -62,7 +60,6 @@
 
 .method static getBackupVolume(Landroid/content/Context;)Landroid/os/storage/StorageVolume;
     .locals 11
-    .param p0    # Landroid/content/Context;
 
     const/4 v1, -0x1
 
@@ -155,9 +152,6 @@
 
 .method static isNewerFile(Lcom/sec/android/spc/service/ISpcBackupService;Ljava/io/File;Ljava/io/File;)Z
     .locals 8
-    .param p0    # Lcom/sec/android/spc/service/ISpcBackupService;
-    .param p1    # Ljava/io/File;
-    .param p2    # Ljava/io/File;
 
     const/4 v5, 0x1
 
@@ -246,9 +240,6 @@
 
 .method static isSameFile(Lcom/sec/android/spc/service/ISpcBackupService;Ljava/io/File;Ljava/io/File;)Z
     .locals 12
-    .param p0    # Lcom/sec/android/spc/service/ISpcBackupService;
-    .param p1    # Ljava/io/File;
-    .param p2    # Ljava/io/File;
 
     const/4 v9, 0x0
 

@@ -24,11 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/speech/tts/TextToSpeechService$UtteranceProgressDispatcher;Ljava/lang/Object;Landroid/content/Context;Landroid/net/Uri;I)V
     .locals 1
-    .param p1    # Landroid/speech/tts/TextToSpeechService$UtteranceProgressDispatcher;
-    .param p2    # Ljava/lang/Object;
-    .param p3    # Landroid/content/Context;
-    .param p4    # Landroid/net/Uri;
-    .param p5    # I
 
     invoke-direct {p0, p1, p2}, Landroid/speech/tts/PlaybackQueueItem;-><init>(Landroid/speech/tts/TextToSpeechService$UtteranceProgressDispatcher;Ljava/lang/Object;)V
 
@@ -57,7 +52,6 @@
 
 .method static synthetic access$000(Landroid/speech/tts/AudioPlaybackQueueItem;)Landroid/os/ConditionVariable;
     .locals 1
-    .param p0    # Landroid/speech/tts/AudioPlaybackQueueItem;
 
     iget-object v0, p0, Landroid/speech/tts/AudioPlaybackQueueItem;->mDone:Landroid/os/ConditionVariable;
 
@@ -66,8 +60,6 @@
 
 .method static synthetic access$102(Landroid/speech/tts/AudioPlaybackQueueItem;Z)Z
     .locals 0
-    .param p0    # Landroid/speech/tts/AudioPlaybackQueueItem;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/speech/tts/AudioPlaybackQueueItem;->mFinished:Z
 
@@ -195,7 +187,6 @@
 
 .method stop(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Landroid/speech/tts/AudioPlaybackQueueItem;->mDone:Landroid/os/ConditionVariable;
 

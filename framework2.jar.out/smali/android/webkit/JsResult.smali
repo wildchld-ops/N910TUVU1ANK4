@@ -20,7 +20,6 @@
 # direct methods
 .method public constructor <init>(Landroid/webkit/JsResult$ResultReceiver;)V
     .locals 0
-    .param p1    # Landroid/webkit/JsResult$ResultReceiver;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

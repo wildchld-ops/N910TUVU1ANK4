@@ -60,8 +60,6 @@
 
 .method synthetic constructor <init>(Lcom/android/incallui/DialpadFragment;Lcom/android/incallui/DialpadFragment$1;)V
     .locals 0
-    .param p1    # Lcom/android/incallui/DialpadFragment;
-    .param p2    # Lcom/android/incallui/DialpadFragment$1;
 
     invoke-direct {p0, p1}, Lcom/android/incallui/DialpadFragment$DTMFKeyListener;-><init>(Lcom/android/incallui/DialpadFragment;)V
 
@@ -70,7 +68,6 @@
 
 .method private lookup(Landroid/view/KeyEvent;)C
     .locals 4
-    .param p1    # Landroid/view/KeyEvent;
 
     invoke-virtual {p1}, Landroid/view/KeyEvent;->getMetaState()I
 
@@ -109,10 +106,6 @@
 # virtual methods
 .method public backspace(Landroid/view/View;Landroid/text/Editable;ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/text/Editable;
-    .param p3    # I
-    .param p4    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x0
 
@@ -121,10 +114,6 @@
 
 .method public forwardDelete(Landroid/view/View;Landroid/text/Editable;ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/text/Editable;
-    .param p3    # I
-    .param p4    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x0
 
@@ -141,7 +130,6 @@
 
 .method public onKeyDown(Landroid/view/KeyEvent;)Z
     .locals 4
-    .param p1    # Landroid/view/KeyEvent;
 
     const/4 v2, 0x1
 
@@ -340,10 +328,6 @@
 
 .method public onKeyDown(Landroid/view/View;Landroid/text/Editable;ILandroid/view/KeyEvent;)Z
     .locals 4
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/text/Editable;
-    .param p3    # I
-    .param p4    # Landroid/view/KeyEvent;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -492,7 +476,6 @@
 
 .method public onKeyUp(Landroid/view/KeyEvent;)Z
     .locals 4
-    .param p1    # Landroid/view/KeyEvent;
 
     const/4 v2, 0x1
 
@@ -592,10 +575,6 @@
 
 .method public onKeyUp(Landroid/view/View;Landroid/text/Editable;ILandroid/view/KeyEvent;)Z
     .locals 4
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/text/Editable;
-    .param p3    # I
-    .param p4    # Landroid/view/KeyEvent;
 
     new-instance v2, Ljava/lang/StringBuilder;
 

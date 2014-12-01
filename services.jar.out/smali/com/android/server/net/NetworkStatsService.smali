@@ -144,9 +144,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/os/INetworkManagementService;Landroid/app/IAlarmManager;)V
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/INetworkManagementService;
-    .param p3    # Landroid/app/IAlarmManager;
 
     invoke-static {p1}, Landroid/util/NtpTrustedTime;->getInstance(Landroid/content/Context;)Landroid/util/NtpTrustedTime;
 
@@ -175,12 +172,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/os/INetworkManagementService;Landroid/app/IAlarmManager;Landroid/util/TrustedTime;Ljava/io/File;Lcom/android/server/net/NetworkStatsService$NetworkStatsSettings;)V
     .locals 8
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/INetworkManagementService;
-    .param p3    # Landroid/app/IAlarmManager;
-    .param p4    # Landroid/util/TrustedTime;
-    .param p5    # Ljava/io/File;
-    .param p6    # Lcom/android/server/net/NetworkStatsService$NetworkStatsSettings;
 
     const-wide/16 v6, 0x0
 
@@ -425,7 +416,6 @@
 
 .method static synthetic access$100(Lcom/android/server/net/NetworkStatsService;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Lcom/android/server/net/NetworkStatsService;
 
     iget-object v0, p0, Lcom/android/server/net/NetworkStatsService;->mStatsLock:Ljava/lang/Object;
 
@@ -434,8 +424,6 @@
 
 .method static synthetic access$1000(Lcom/android/server/net/NetworkStatsService;[I)V
     .locals 0
-    .param p0    # Lcom/android/server/net/NetworkStatsService;
-    .param p1    # [I
 
     invoke-direct {p0, p1}, Lcom/android/server/net/NetworkStatsService;->removeUidsLocked([I)V
 
@@ -444,8 +432,6 @@
 
 .method static synthetic access$1100(Lcom/android/server/net/NetworkStatsService;I)V
     .locals 0
-    .param p0    # Lcom/android/server/net/NetworkStatsService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/net/NetworkStatsService;->removeUserLocked(I)V
 
@@ -454,7 +440,6 @@
 
 .method static synthetic access$1200(Lcom/android/server/net/NetworkStatsService;)V
     .locals 0
-    .param p0    # Lcom/android/server/net/NetworkStatsService;
 
     invoke-direct {p0}, Lcom/android/server/net/NetworkStatsService;->shutdownLocked()V
 
@@ -463,7 +448,6 @@
 
 .method static synthetic access$1300(Lcom/android/server/net/NetworkStatsService;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/server/net/NetworkStatsService;
 
     iget-object v0, p0, Lcom/android/server/net/NetworkStatsService;->mContext:Landroid/content/Context;
 
@@ -472,7 +456,6 @@
 
 .method static synthetic access$1400(Lcom/android/server/net/NetworkStatsService;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/server/net/NetworkStatsService;
 
     iget-object v0, p0, Lcom/android/server/net/NetworkStatsService;->mHandler:Landroid/os/Handler;
 
@@ -481,7 +464,6 @@
 
 .method static synthetic access$1500(Lcom/android/server/net/NetworkStatsService;)I
     .locals 1
-    .param p0    # Lcom/android/server/net/NetworkStatsService;
 
     iget v0, p0, Lcom/android/server/net/NetworkStatsService;->mLastPhoneState:I
 
@@ -490,8 +472,6 @@
 
 .method static synthetic access$1502(Lcom/android/server/net/NetworkStatsService;I)I
     .locals 0
-    .param p0    # Lcom/android/server/net/NetworkStatsService;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/net/NetworkStatsService;->mLastPhoneState:I
 
@@ -500,7 +480,6 @@
 
 .method static synthetic access$1600(Lcom/android/server/net/NetworkStatsService;)I
     .locals 1
-    .param p0    # Lcom/android/server/net/NetworkStatsService;
 
     iget v0, p0, Lcom/android/server/net/NetworkStatsService;->mLastPhoneNetworkType:I
 
@@ -509,8 +488,6 @@
 
 .method static synthetic access$1602(Lcom/android/server/net/NetworkStatsService;I)I
     .locals 0
-    .param p0    # Lcom/android/server/net/NetworkStatsService;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/net/NetworkStatsService;->mLastPhoneNetworkType:I
 
@@ -519,7 +496,6 @@
 
 .method static synthetic access$200(Lcom/android/server/net/NetworkStatsService;)Lcom/android/server/net/NetworkStatsRecorder;
     .locals 1
-    .param p0    # Lcom/android/server/net/NetworkStatsService;
 
     iget-object v0, p0, Lcom/android/server/net/NetworkStatsService;->mUidRecorder:Lcom/android/server/net/NetworkStatsRecorder;
 
@@ -528,7 +504,6 @@
 
 .method static synthetic access$300(Lcom/android/server/net/NetworkStatsService;)Lcom/android/server/net/NetworkStatsRecorder;
     .locals 1
-    .param p0    # Lcom/android/server/net/NetworkStatsService;
 
     iget-object v0, p0, Lcom/android/server/net/NetworkStatsService;->mUidTagRecorder:Lcom/android/server/net/NetworkStatsRecorder;
 
@@ -537,10 +512,6 @@
 
 .method static synthetic access$400(Lcom/android/server/net/NetworkStatsService;Landroid/net/NetworkTemplate;JJ)Landroid/net/NetworkStats;
     .locals 1
-    .param p0    # Lcom/android/server/net/NetworkStatsService;
-    .param p1    # Landroid/net/NetworkTemplate;
-    .param p2    # J
-    .param p4    # J
 
     invoke-direct/range {p0 .. p5}, Lcom/android/server/net/NetworkStatsService;->internalGetSummaryForNetwork(Landroid/net/NetworkTemplate;JJ)Landroid/net/NetworkStats;
 
@@ -551,9 +522,6 @@
 
 .method static synthetic access$500(Lcom/android/server/net/NetworkStatsService;Landroid/net/NetworkTemplate;I)Landroid/net/NetworkStatsHistory;
     .locals 1
-    .param p0    # Lcom/android/server/net/NetworkStatsService;
-    .param p1    # Landroid/net/NetworkTemplate;
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/net/NetworkStatsService;->internalGetHistoryForNetwork(Landroid/net/NetworkTemplate;I)Landroid/net/NetworkStatsHistory;
 
@@ -564,7 +532,6 @@
 
 .method static synthetic access$600(Lcom/android/server/net/NetworkStatsService;)V
     .locals 0
-    .param p0    # Lcom/android/server/net/NetworkStatsService;
 
     invoke-direct {p0}, Lcom/android/server/net/NetworkStatsService;->updateIfaces()V
 
@@ -573,8 +540,6 @@
 
 .method static synthetic access$700(Lcom/android/server/net/NetworkStatsService;I)V
     .locals 0
-    .param p0    # Lcom/android/server/net/NetworkStatsService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/net/NetworkStatsService;->performPoll(I)V
 
@@ -583,7 +548,6 @@
 
 .method static synthetic access$800(Lcom/android/server/net/NetworkStatsService;)V
     .locals 0
-    .param p0    # Lcom/android/server/net/NetworkStatsService;
 
     invoke-direct {p0}, Lcom/android/server/net/NetworkStatsService;->registerGlobalAlert()V
 
@@ -592,7 +556,6 @@
 
 .method static synthetic access$900(Lcom/android/server/net/NetworkStatsService;)Landroid/os/PowerManager$WakeLock;
     .locals 1
-    .param p0    # Lcom/android/server/net/NetworkStatsService;
 
     iget-object v0, p0, Lcom/android/server/net/NetworkStatsService;->mWakeLock:Landroid/os/PowerManager$WakeLock;
 
@@ -727,9 +690,6 @@
 
 .method private buildRecorder(Ljava/lang/String;Lcom/android/server/net/NetworkStatsService$NetworkStatsSettings$Config;Z)Lcom/android/server/net/NetworkStatsRecorder;
     .locals 11
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/server/net/NetworkStatsService$NetworkStatsSettings$Config;
-    .param p3    # Z
 
     iget-object v0, p0, Lcom/android/server/net/NetworkStatsService;->mContext:Landroid/content/Context;
 
@@ -776,8 +736,6 @@
 
 .method private combineNetworkStatsVideoCall(II)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     :try_start_0
     invoke-direct {p0, p1, p2}, Lcom/android/server/net/NetworkStatsService;->getNetworkStatsVideoCall(II)Landroid/net/NetworkStats;
@@ -922,8 +880,6 @@
 
 .method private getNetworkStatsVideoCall(II)Landroid/net/NetworkStats;
     .locals 8
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -988,8 +944,6 @@
 
 .method private internalGetHistoryForNetwork(Landroid/net/NetworkTemplate;I)Landroid/net/NetworkStatsHistory;
     .locals 25
-    .param p1    # Landroid/net/NetworkTemplate;
-    .param p2    # I
 
     move-object/from16 v0, p0
 
@@ -1182,9 +1136,6 @@
 
 .method private internalGetSummaryForNetwork(Landroid/net/NetworkTemplate;JJ)Landroid/net/NetworkStats;
     .locals 10
-    .param p1    # Landroid/net/NetworkTemplate;
-    .param p2    # J
-    .param p4    # J
 
     iget-object v0, p0, Lcom/android/server/net/NetworkStatsService;->mSettings:Lcom/android/server/net/NetworkStatsService$NetworkStatsSettings;
 
@@ -1440,7 +1391,6 @@
 
 .method private performPoll(I)V
     .locals 4
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/net/NetworkStatsService;->mTime:Landroid/util/TrustedTime;
 
@@ -1509,7 +1459,6 @@
 
 .method private performPollLocked(I)V
     .locals 24
-    .param p1    # I
 
     move-object/from16 v0, p0
 
@@ -2328,7 +2277,6 @@
 
 .method private varargs removeUidsLocked([I)V
     .locals 7
-    .param p1    # [I
 
     const-string v4, "NetworkStats"
 
@@ -2391,7 +2339,6 @@
 
 .method private removeUserLocked(I)V
     .locals 8
-    .param p1    # I
 
     const-string v5, "NetworkStats"
 
@@ -3058,7 +3005,6 @@
 # virtual methods
 .method public advisePersistThreshold(J)V
     .locals 8
-    .param p1    # J
 
     iget-object v0, p0, Lcom/android/server/net/NetworkStatsService;->mContext:Landroid/content/Context;
 
@@ -3195,7 +3141,6 @@
 
 .method public bindConnectivityManager(Landroid/net/IConnectivityManager;)V
     .locals 1
-    .param p1    # Landroid/net/IConnectivityManager;
 
     const-string v0, "missing IConnectivityManager"
 
@@ -3212,9 +3157,6 @@
 
 .method protected dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 18
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     move-object/from16 v0, p0
 
@@ -3607,7 +3549,6 @@
 
 .method public getDataLayerSnapshotForUid(I)Landroid/net/NetworkStats;
     .locals 9
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3708,9 +3649,6 @@
 
 .method public getNetworkTotalBytes(Landroid/net/NetworkTemplate;JJ)J
     .locals 3
-    .param p1    # Landroid/net/NetworkTemplate;
-    .param p2    # J
-    .param p4    # J
 
     iget-object v0, p0, Lcom/android/server/net/NetworkStatsService;->mContext:Landroid/content/Context;
 
@@ -3735,9 +3673,6 @@
 
 .method public incrementOperationCount(III)V
     .locals 17
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     invoke-static {}, Landroid/os/Binder;->getCallingUid()I
 
@@ -3889,8 +3824,6 @@
 
 .method public setUidForeground(IZ)V
     .locals 5
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v1, 0x0
 
@@ -3945,9 +3878,6 @@
 
 .method public startNetworkStatsOnPorts(Ljava/lang/String;II)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4099,9 +4029,6 @@
 
 .method public stopNetworkStatsOnPorts(Ljava/lang/String;II)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

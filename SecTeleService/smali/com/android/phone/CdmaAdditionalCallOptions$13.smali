@@ -49,7 +49,7 @@
 
     invoke-direct {v1, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v0, v1}, Landroid/app/Fragment;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {v0, v1}, Lcom/android/phone/CdmaAdditionalCallOptions;->startActivity(Landroid/content/Intent;)V
 
     return-void
 .end method

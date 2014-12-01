@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Lcom/android/mms/ui/ComposeMessageFragment;Lcom/android/mms/ui/ComposeMessageFragment$1;)V
     .locals 0
-    .param p1    # Lcom/android/mms/ui/ComposeMessageFragment;
-    .param p2    # Lcom/android/mms/ui/ComposeMessageFragment$1;
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/ComposeMessageFragment$CancelSendingListener;-><init>(Lcom/android/mms/ui/ComposeMessageFragment;)V
 
@@ -46,8 +44,6 @@
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 3
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     iget-object v1, p0, Lcom/android/mms/ui/ComposeMessageFragment$CancelSendingListener;->this$0:Lcom/android/mms/ui/ComposeMessageFragment;
 

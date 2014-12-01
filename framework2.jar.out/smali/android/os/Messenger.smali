@@ -38,7 +38,6 @@
 
 .method public constructor <init>(Landroid/os/Handler;)V
     .locals 1
-    .param p1    # Landroid/os/Handler;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -53,7 +52,6 @@
 
 .method public constructor <init>(Landroid/os/IBinder;)V
     .locals 1
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -68,7 +66,6 @@
 
 .method public static readMessengerOrNullFromParcel(Landroid/os/Parcel;)Landroid/os/Messenger;
     .locals 2
-    .param p0    # Landroid/os/Parcel;
 
     invoke-virtual {p0}, Landroid/os/Parcel;->readStrongBinder()Landroid/os/IBinder;
 
@@ -91,8 +88,6 @@
 
 .method public static writeMessengerOrNullToParcel(Landroid/os/Messenger;Landroid/os/Parcel;)V
     .locals 1
-    .param p0    # Landroid/os/Messenger;
-    .param p1    # Landroid/os/Parcel;
 
     if-eqz p0, :cond_0
 
@@ -125,7 +120,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 3
-    .param p1    # Ljava/lang/Object;
 
     const/4 v0, 0x0
 
@@ -194,7 +188,6 @@
 
 .method public send(Landroid/os/Message;)V
     .locals 1
-    .param p1    # Landroid/os/Message;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -210,8 +203,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v0, p0, Landroid/os/Messenger;->mTarget:Landroid/os/IMessenger;
 

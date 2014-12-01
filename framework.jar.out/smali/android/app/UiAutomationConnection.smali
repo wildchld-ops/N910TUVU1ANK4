@@ -80,7 +80,6 @@
 
 .method private registerUiTestAutomationServiceLocked(Landroid/accessibilityservice/IAccessibilityServiceClient;)V
     .locals 5
-    .param p1    # Landroid/accessibilityservice/IAccessibilityServiceClient;
 
     const-string v3, "accessibility"
 
@@ -316,7 +315,6 @@
 # virtual methods
 .method public connect(Landroid/accessibilityservice/IAccessibilityServiceClient;)V
     .locals 3
-    .param p1    # Landroid/accessibilityservice/IAccessibilityServiceClient;
 
     if-nez p1, :cond_0
 
@@ -432,8 +430,6 @@
 
 .method public injectInputEvent(Landroid/view/InputEvent;Z)Z
     .locals 5
-    .param p1    # Landroid/view/InputEvent;
-    .param p2    # Z
 
     iget-object v4, p0, Landroid/app/UiAutomationConnection;->mLock:Ljava/lang/Object;
 
@@ -499,7 +495,6 @@
 
 .method public setRotation(I)Z
     .locals 4
-    .param p1    # I
 
     iget-object v3, p0, Landroid/app/UiAutomationConnection;->mLock:Ljava/lang/Object;
 
@@ -626,8 +621,6 @@
 
 .method public takeScreenshot(II)Landroid/graphics/Bitmap;
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     iget-object v3, p0, Landroid/app/UiAutomationConnection;->mLock:Ljava/lang/Object;
 

@@ -103,9 +103,6 @@
 
 .method public constructor <init>(Landroid/content/pm/PackageManager;Landroid/content/pm/ResolveInfo;Z)V
     .locals 23
-    .param p1    # Landroid/content/pm/PackageManager;
-    .param p2    # Landroid/content/pm/ResolveInfo;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -1232,13 +1229,6 @@
 
 .method public constructor <init>(Landroid/content/pm/ResolveInfo;ZLjava/lang/String;Ljava/util/ArrayList;ZILandroid/graphics/drawable/Drawable;Landroid/nfc/cardemulation/ApduServiceInfo$ESeInfo;)V
     .locals 4
-    .param p1    # Landroid/content/pm/ResolveInfo;
-    .param p2    # Z
-    .param p3    # Ljava/lang/String;
-    .param p5    # Z
-    .param p6    # I
-    .param p7    # Landroid/graphics/drawable/Drawable;
-    .param p8    # Landroid/nfc/cardemulation/ApduServiceInfo$ESeInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1326,11 +1316,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Ljava/util/ArrayList;Landroid/graphics/drawable/Drawable;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p3    # Landroid/graphics/drawable/Drawable;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1455,8 +1440,6 @@
 
 .method private buildResolveInfo(Ljava/lang/String;Ljava/lang/String;)Landroid/content/pm/ResolveInfo;
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v3, 0x1
 
@@ -1493,7 +1476,6 @@
 
 .method static isValidAid(Ljava/lang/String;)Z
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -1597,7 +1579,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 3
-    .param p1    # Ljava/lang/Object;
 
     if-ne p0, p1, :cond_0
 
@@ -1740,7 +1721,6 @@
 
 .method public hasCategory(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/nfc/cardemulation/ApduServiceInfo;->mCategoryToGroup:Ljava/util/HashMap;
 
@@ -1775,7 +1755,6 @@
 
 .method public loadBanner(Landroid/content/pm/PackageManager;)Landroid/graphics/drawable/Drawable;
     .locals 5
-    .param p1    # Landroid/content/pm/PackageManager;
 
     const/4 v0, 0x0
 
@@ -1844,7 +1823,6 @@
 
 .method public loadIcon(Landroid/content/pm/PackageManager;)Landroid/graphics/drawable/Drawable;
     .locals 2
-    .param p1    # Landroid/content/pm/PackageManager;
 
     iget-object v0, p0, Landroid/nfc/cardemulation/ApduServiceInfo;->mService:Landroid/content/pm/ResolveInfo;
 
@@ -1873,7 +1851,6 @@
 
 .method public loadLabel(Landroid/content/pm/PackageManager;)Ljava/lang/CharSequence;
     .locals 2
-    .param p1    # Landroid/content/pm/PackageManager;
 
     iget-object v0, p0, Landroid/nfc/cardemulation/ApduServiceInfo;->mService:Landroid/content/pm/ResolveInfo;
 
@@ -1986,8 +1963,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 4
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     const/4 v2, 0x1
 

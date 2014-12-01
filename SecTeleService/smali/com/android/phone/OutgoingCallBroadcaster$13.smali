@@ -41,7 +41,7 @@
 
     iget-object v0, p0, Lcom/android/phone/OutgoingCallBroadcaster$13;->this$0:Lcom/android/phone/OutgoingCallBroadcaster;
 
-    invoke-virtual {v0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {v0}, Lcom/android/phone/OutgoingCallBroadcaster;->finish()V
 
     return-void
 .end method

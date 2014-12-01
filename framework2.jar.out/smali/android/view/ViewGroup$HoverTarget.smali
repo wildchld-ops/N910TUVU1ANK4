@@ -53,7 +53,6 @@
 
 .method public static obtain(Landroid/view/View;)Landroid/view/ViewGroup$HoverTarget;
     .locals 3
-    .param p0    # Landroid/view/View;
 
     sget-object v2, Landroid/view/ViewGroup$HoverTarget;->sRecycleLock:Ljava/lang/Object;
 

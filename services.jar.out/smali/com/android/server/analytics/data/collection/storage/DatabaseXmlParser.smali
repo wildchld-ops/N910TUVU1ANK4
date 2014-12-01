@@ -36,8 +36,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/res/XmlResourceParser;Lcom/android/server/analytics/data/collection/storage/TableCallback;)V
     .locals 0
-    .param p1    # Landroid/content/res/XmlResourceParser;
-    .param p2    # Lcom/android/server/analytics/data/collection/storage/TableCallback;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -50,7 +48,6 @@
 
 .method private getType(Ljava/lang/String;)Lcom/android/server/analytics/data/collection/storage/Column$DATA_TYPE;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -119,7 +116,6 @@
 
 .method private isPrimaryKey(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 

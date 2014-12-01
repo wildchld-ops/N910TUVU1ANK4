@@ -25,7 +25,6 @@
 # direct methods
 .method public constructor <init>(Landroid/webkitsec/WebViewInputDispatcher;Landroid/os/Looper;)V
     .locals 0
-    .param p2    # Landroid/os/Looper;
 
     iput-object p1, p0, Landroid/webkitsec/WebViewInputDispatcher$WebKitHandler;->this$0:Landroid/webkitsec/WebViewInputDispatcher;
 
@@ -38,7 +37,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 3
-    .param p1    # Landroid/os/Message;
 
     sget-boolean v0, Landroid/webkitsec/WebViewInputDispatcher;->DEBUG:Z
 

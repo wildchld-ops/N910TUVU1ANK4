@@ -17,7 +17,6 @@
 # direct methods
 .method public constructor <init>(Landroid/os/Handler;)V
     .locals 0
-    .param p1    # Landroid/os/Handler;
 
     invoke-direct {p0, p1}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
 
@@ -28,7 +27,6 @@
 # virtual methods
 .method public register(Landroid/content/ContentResolver;)V
     .locals 2
-    .param p1    # Landroid/content/ContentResolver;
 
     const-string v0, "enabled_print_services"
 
@@ -45,7 +43,6 @@
 
 .method public unregister(Landroid/content/ContentResolver;)V
     .locals 0
-    .param p1    # Landroid/content/ContentResolver;
 
     invoke-virtual {p1, p0}, Landroid/content/ContentResolver;->unregisterContentObserver(Landroid/database/ContentObserver;)V
 

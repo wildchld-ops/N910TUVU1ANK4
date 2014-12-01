@@ -49,7 +49,6 @@
 
 .method static synthetic access$5800(Lcom/android/server/NotificationManagerService$OverTurnPlayer;)V
     .locals 0
-    .param p0    # Lcom/android/server/NotificationManagerService$OverTurnPlayer;
 
     invoke-direct {p0}, Lcom/android/server/NotificationManagerService$OverTurnPlayer;->update()V
 

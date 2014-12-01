@@ -28,7 +28,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/settings/wifi/WifiConfigController;Landroid/widget/EditText;)V
     .locals 0
-    .param p2    # Landroid/widget/EditText;
 
     iput-object p1, p0, Lcom/android/settings/wifi/WifiConfigController$WifiEapIdTextWatcher;->this$0:Lcom/android/settings/wifi/WifiConfigController;
 
@@ -43,7 +42,6 @@
 # virtual methods
 .method public afterTextChanged(Landroid/text/Editable;)V
     .locals 1
-    .param p1    # Landroid/text/Editable;
 
     iget-object v0, p0, Lcom/android/settings/wifi/WifiConfigController$WifiEapIdTextWatcher;->this$0:Lcom/android/settings/wifi/WifiConfigController;
 
@@ -54,10 +52,6 @@
 
 .method public beforeTextChanged(Ljava/lang/CharSequence;III)V
     .locals 2
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     if-eqz p1, :cond_0
 
@@ -89,10 +83,6 @@
 
 .method public onTextChanged(Ljava/lang/CharSequence;III)V
     .locals 6
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/16 v2, 0xc8
 

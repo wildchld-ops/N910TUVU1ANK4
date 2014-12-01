@@ -42,7 +42,6 @@
 # direct methods
 .method constructor <init>(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v1, -0x1
 
@@ -82,7 +81,6 @@
 
 .method static synthetic access$1100(Lcom/android/server/cocktailbar/CocktailBarManagerServiceImpl$CocktailBarDecorData;)Landroid/os/RemoteCallbackList;
     .locals 1
-    .param p0    # Lcom/android/server/cocktailbar/CocktailBarManagerServiceImpl$CocktailBarDecorData;
 
     iget-object v0, p0, Lcom/android/server/cocktailbar/CocktailBarManagerServiceImpl$CocktailBarDecorData;->callbacks:Landroid/os/RemoteCallbackList;
 

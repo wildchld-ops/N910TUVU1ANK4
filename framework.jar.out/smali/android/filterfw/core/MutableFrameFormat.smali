@@ -14,8 +14,6 @@
 
 .method public constructor <init>(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Landroid/filterfw/core/FrameFormat;-><init>(II)V
 
@@ -26,7 +24,6 @@
 # virtual methods
 .method public setBaseType(I)V
     .locals 1
-    .param p1    # I
 
     iput p1, p0, Landroid/filterfw/core/FrameFormat;->mBaseType:I
 
@@ -41,7 +38,6 @@
 
 .method public setBytesPerSample(I)V
     .locals 1
-    .param p1    # I
 
     iput p1, p0, Landroid/filterfw/core/FrameFormat;->mBytesPerSample:I
 
@@ -54,7 +50,6 @@
 
 .method public setDimensionCount(I)V
     .locals 1
-    .param p1    # I
 
     new-array v0, p1, [I
 
@@ -65,7 +60,6 @@
 
 .method public setDimensions(I)V
     .locals 2
-    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -86,8 +80,6 @@
 
 .method public setDimensions(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     const/4 v1, 0x2
 
@@ -112,9 +104,6 @@
 
 .method public setDimensions(III)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v1, 0x3
 
@@ -143,7 +132,6 @@
 
 .method public setDimensions([I)V
     .locals 1
-    .param p1    # [I
 
     if-nez p1, :cond_0
 
@@ -170,8 +158,6 @@
 
 .method public setMetaValue(Ljava/lang/String;Ljava/lang/Object;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Object;
 
     iget-object v0, p0, Landroid/filterfw/core/FrameFormat;->mMetaData:Landroid/filterfw/core/KeyValueMap;
 
@@ -193,7 +179,6 @@
 
 .method public setObjectClass(Ljava/lang/Class;)V
     .locals 0
-    .param p1    # Ljava/lang/Class;
 
     iput-object p1, p0, Landroid/filterfw/core/FrameFormat;->mObjectClass:Ljava/lang/Class;
 
@@ -202,7 +187,6 @@
 
 .method public setTarget(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/filterfw/core/FrameFormat;->mTarget:I
 

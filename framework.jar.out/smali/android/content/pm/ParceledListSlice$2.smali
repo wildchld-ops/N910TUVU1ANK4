@@ -40,7 +40,6 @@
 # virtual methods
 .method public createFromParcel(Landroid/os/Parcel;)Landroid/content/pm/ParceledListSlice;
     .locals 2
-    .param p1    # Landroid/os/Parcel;
 
     const/4 v1, 0x0
 
@@ -53,8 +52,6 @@
 
 .method public createFromParcel(Landroid/os/Parcel;Ljava/lang/ClassLoader;)Landroid/content/pm/ParceledListSlice;
     .locals 2
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # Ljava/lang/ClassLoader;
 
     new-instance v0, Landroid/content/pm/ParceledListSlice;
 
@@ -67,7 +64,6 @@
 
 .method public bridge synthetic createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     invoke-virtual {p0, p1}, Landroid/content/pm/ParceledListSlice$2;->createFromParcel(Landroid/os/Parcel;)Landroid/content/pm/ParceledListSlice;
 
@@ -78,8 +74,6 @@
 
 .method public bridge synthetic createFromParcel(Landroid/os/Parcel;Ljava/lang/ClassLoader;)Ljava/lang/Object;
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # Ljava/lang/ClassLoader;
 
     invoke-virtual {p0, p1, p2}, Landroid/content/pm/ParceledListSlice$2;->createFromParcel(Landroid/os/Parcel;Ljava/lang/ClassLoader;)Landroid/content/pm/ParceledListSlice;
 
@@ -90,7 +84,6 @@
 
 .method public newArray(I)[Landroid/content/pm/ParceledListSlice;
     .locals 1
-    .param p1    # I
 
     new-array v0, p1, [Landroid/content/pm/ParceledListSlice;
 
@@ -99,7 +92,6 @@
 
 .method public bridge synthetic newArray(I)[Ljava/lang/Object;
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/content/pm/ParceledListSlice$2;->newArray(I)[Landroid/content/pm/ParceledListSlice;
 

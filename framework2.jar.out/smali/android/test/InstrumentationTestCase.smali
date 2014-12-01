@@ -18,10 +18,6 @@
 
 .method static synthetic access$000(Landroid/test/InstrumentationTestCase;Ljava/lang/reflect/Method;IZ)V
     .locals 0
-    .param p0    # Landroid/test/InstrumentationTestCase;
-    .param p1    # Ljava/lang/reflect/Method;
-    .param p2    # I
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Throwable;
@@ -35,8 +31,6 @@
 
 .method private runMethod(Ljava/lang/reflect/Method;I)V
     .locals 1
-    .param p1    # Ljava/lang/reflect/Method;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Throwable;
@@ -52,9 +46,6 @@
 
 .method private runMethod(Ljava/lang/reflect/Method;IZ)V
     .locals 7
-    .param p1    # Ljava/lang/reflect/Method;
-    .param p2    # I
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Throwable;
@@ -210,7 +201,6 @@
 
 .method public injectInsrumentation(Landroid/app/Instrumentation;)V
     .locals 0
-    .param p1    # Landroid/app/Instrumentation;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -221,7 +211,6 @@
 
 .method public injectInstrumentation(Landroid/app/Instrumentation;)V
     .locals 0
-    .param p1    # Landroid/app/Instrumentation;
 
     iput-object p1, p0, Landroid/test/InstrumentationTestCase;->mInstrumentation:Landroid/app/Instrumentation;
 
@@ -230,8 +219,6 @@
 
 .method public final launchActivity(Ljava/lang/String;Ljava/lang/Class;Landroid/os/Bundle;)Landroid/app/Activity;
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p3    # Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -265,8 +252,6 @@
 
 .method public final launchActivityWithIntent(Ljava/lang/String;Ljava/lang/Class;Landroid/content/Intent;)Landroid/app/Activity;
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p3    # Landroid/content/Intent;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -507,7 +492,6 @@
 
 .method public runTestOnUiThread(Ljava/lang/Runnable;)V
     .locals 4
-    .param p1    # Ljava/lang/Runnable;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Throwable;
@@ -544,7 +528,6 @@
 
 .method public sendKeys(Ljava/lang/String;)V
     .locals 14
-    .param p1    # Ljava/lang/String;
 
     const-string v11, " "
 
@@ -754,7 +737,6 @@
 
 .method public varargs sendKeys([I)V
     .locals 4
-    .param p1    # [I
 
     array-length v0, p1
 
@@ -792,7 +774,6 @@
 
 .method public varargs sendRepeatedKeys([I)V
     .locals 8
-    .param p1    # [I
 
     array-length v0, p1
 

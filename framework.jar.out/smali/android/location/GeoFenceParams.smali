@@ -54,12 +54,6 @@
 
 .method public constructor <init>(DDFJLandroid/app/PendingIntent;Ljava/lang/String;)V
     .locals 11
-    .param p1    # D
-    .param p3    # D
-    .param p5    # F
-    .param p6    # J
-    .param p8    # Landroid/app/PendingIntent;
-    .param p9    # Ljava/lang/String;
 
     invoke-static {}, Landroid/os/Binder;->getCallingUid()I
 
@@ -86,13 +80,6 @@
 
 .method public constructor <init>(IDDFJLandroid/app/PendingIntent;Ljava/lang/String;)V
     .locals 0
-    .param p1    # I
-    .param p2    # D
-    .param p4    # D
-    .param p6    # F
-    .param p7    # J
-    .param p9    # Landroid/app/PendingIntent;
-    .param p10    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -115,7 +102,6 @@
 
 .method private constructor <init>(Landroid/os/Parcel;)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -170,8 +156,6 @@
 
 .method synthetic constructor <init>(Landroid/os/Parcel;Landroid/location/GeoFenceParams$1;)V
     .locals 0
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # Landroid/location/GeoFenceParams$1;
 
     invoke-direct {p0, p1}, Landroid/location/GeoFenceParams;-><init>(Landroid/os/Parcel;)V
 
@@ -190,8 +174,6 @@
 
 .method public dump(Ljava/io/PrintWriter;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/io/PrintWriter;
-    .param p2    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -378,8 +360,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget v0, p0, Landroid/location/GeoFenceParams;->mUid:I
 

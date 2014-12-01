@@ -45,7 +45,6 @@
 # virtual methods
 .method public onTransitionCancel(Landroid/transition/Transition;)V
     .locals 2
-    .param p1    # Landroid/transition/Transition;
 
     iget-object v0, p0, Landroid/transition/Fade$1;->val$endView:Landroid/view/View;
 
@@ -62,7 +61,6 @@
 
 .method public onTransitionEnd(Landroid/transition/Transition;)V
     .locals 2
-    .param p1    # Landroid/transition/Transition;
 
     iget-boolean v0, p0, Landroid/transition/Fade$1;->mCanceled:Z
 
@@ -80,7 +78,6 @@
 
 .method public onTransitionPause(Landroid/transition/Transition;)V
     .locals 2
-    .param p1    # Landroid/transition/Transition;
 
     iget-object v0, p0, Landroid/transition/Fade$1;->val$endView:Landroid/view/View;
 
@@ -101,7 +98,6 @@
 
 .method public onTransitionResume(Landroid/transition/Transition;)V
     .locals 2
-    .param p1    # Landroid/transition/Transition;
 
     iget-object v0, p0, Landroid/transition/Fade$1;->val$endView:Landroid/view/View;
 

@@ -42,8 +42,6 @@
 
 .method static synthetic access$000(Lcom/samsung/location/CellGeofenceProvider;I)V
     .locals 0
-    .param p0    # Lcom/samsung/location/CellGeofenceProvider;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/samsung/location/CellGeofenceProvider;->native_init_cell_geofence(I)V
 
@@ -52,8 +50,6 @@
 
 .method static synthetic access$100(Lcom/samsung/location/CellGeofenceProvider;I)V
     .locals 0
-    .param p0    # Lcom/samsung/location/CellGeofenceProvider;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/samsung/location/CellGeofenceProvider;->native_add_cell_geofence(I)V
 
@@ -62,9 +58,6 @@
 
 .method static synthetic access$200(Lcom/samsung/location/CellGeofenceProvider;II)V
     .locals 0
-    .param p0    # Lcom/samsung/location/CellGeofenceProvider;
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/samsung/location/CellGeofenceProvider;->native_enable_cell_geofence(II)V
 
@@ -73,8 +66,6 @@
 
 .method static synthetic access$300(Lcom/samsung/location/CellGeofenceProvider;I)V
     .locals 0
-    .param p0    # Lcom/samsung/location/CellGeofenceProvider;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/samsung/location/CellGeofenceProvider;->native_remove_cell_geofence(I)V
 
@@ -83,8 +74,6 @@
 
 .method static synthetic access$400(Lcom/samsung/location/CellGeofenceProvider;I)V
     .locals 0
-    .param p0    # Lcom/samsung/location/CellGeofenceProvider;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/samsung/location/CellGeofenceProvider;->native_start_collect_cell(I)V
 
@@ -93,8 +82,6 @@
 
 .method static synthetic access$500(Lcom/samsung/location/CellGeofenceProvider;I)V
     .locals 0
-    .param p0    # Lcom/samsung/location/CellGeofenceProvider;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/samsung/location/CellGeofenceProvider;->native_stop_collect_cell(I)V
 
@@ -103,11 +90,6 @@
 
 .method static synthetic access$600(Lcom/samsung/location/CellGeofenceProvider;[II[II)V
     .locals 0
-    .param p0    # Lcom/samsung/location/CellGeofenceProvider;
-    .param p1    # [I
-    .param p2    # I
-    .param p3    # [I
-    .param p4    # I
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/samsung/location/CellGeofenceProvider;->native_sync_cell_geofence([II[II)V
 
@@ -146,8 +128,6 @@
 
 .method private reportCellGeofenceDetected(II)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     const-string/jumbo v2, "sec_location"
 
@@ -186,7 +166,6 @@
 
 .method private reportCellGeofenceRequestFail(I)V
     .locals 4
-    .param p1    # I
 
     const-string/jumbo v2, "sec_location"
 

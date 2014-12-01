@@ -61,11 +61,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/internal/app/ProcessStats$ProcessState;Ljava/lang/String;ILjava/lang/String;J)V
     .locals 2
-    .param p1    # Lcom/android/internal/app/ProcessStats$ProcessState;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
-    .param p5    # J
 
     const/4 v1, -0x1
 
@@ -94,10 +89,6 @@
 
 .method public constructor <init>(Lcom/android/internal/app/ProcessStats;Ljava/lang/String;ILjava/lang/String;)V
     .locals 1
-    .param p1    # Lcom/android/internal/app/ProcessStats;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
 
     const/4 v0, -0x1
 
@@ -118,10 +109,6 @@
 
 .method private addCachedKill(IJJJ)V
     .locals 4
-    .param p1    # I
-    .param p2    # J
-    .param p4    # J
-    .param p6    # J
 
     iget v0, p0, Lcom/android/internal/app/ProcessStats$ProcessState;->mNumCachedKill:I
 
@@ -270,7 +257,6 @@
 
 .method private pullFixedProc(Landroid/util/ArrayMap;I)Lcom/android/internal/app/ProcessStats$ProcessState;
     .locals 6
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -524,7 +510,6 @@
 # virtual methods
 .method add(Lcom/android/internal/app/ProcessStats$ProcessState;)V
     .locals 18
-    .param p1    # Lcom/android/internal/app/ProcessStats$ProcessState;
 
     invoke-virtual/range {p0 .. p1}, Lcom/android/internal/app/ProcessStats$DurationsTable;->addDurations(Lcom/android/internal/app/ProcessStats$DurationsTable;)V
 
@@ -708,14 +693,6 @@
 
 .method addPss(IIJJJJJJ)V
     .locals 14
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
-    .param p5    # J
-    .param p7    # J
-    .param p9    # J
-    .param p11    # J
-    .param p13    # J
 
     iget-object v7, p0, Lcom/android/internal/app/ProcessStats$ProcessState;->mPssTable:[I
 
@@ -984,9 +961,6 @@
 
 .method public addPss(JJZLandroid/util/ArrayMap;)V
     .locals 20
-    .param p1    # J
-    .param p3    # J
-    .param p5    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(JJZ",
@@ -1153,8 +1127,6 @@
 
 .method clone(Ljava/lang/String;J)Lcom/android/internal/app/ProcessStats$ProcessState;
     .locals 12
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
 
     new-instance v0, Lcom/android/internal/app/ProcessStats$ProcessState;
 
@@ -1308,7 +1280,6 @@
 
 .method commitStateTime(J)V
     .locals 4
-    .param p1    # J
 
     iget v2, p0, Lcom/android/internal/app/ProcessStats$ProcessState;->mCurState:I
 
@@ -1338,7 +1309,6 @@
 
 .method decActiveServices(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/internal/app/ProcessStats$ProcessState;->mCommonProcess:Lcom/android/internal/app/ProcessStats$ProcessState;
 
@@ -1427,9 +1397,6 @@
 
 .method decStartedServices(IJLjava/lang/String;)V
     .locals 3
-    .param p1    # I
-    .param p2    # J
-    .param p4    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/internal/app/ProcessStats$ProcessState;->mCommonProcess:Lcom/android/internal/app/ProcessStats$ProcessState;
 
@@ -1528,8 +1495,6 @@
 
 .method getDuration(IJ)J
     .locals 4
-    .param p1    # I
-    .param p2    # J
 
     invoke-super {p0, p1, p2, p3}, Lcom/android/internal/app/ProcessStats$DurationsTable;->getDuration(IJ)J
 
@@ -1551,7 +1516,6 @@
 
 .method getPssAverage(I)J
     .locals 4
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/internal/app/ProcessStats$ProcessState;->mPssTable:[I
 
@@ -1586,7 +1550,6 @@
 
 .method getPssMaximum(I)J
     .locals 4
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/internal/app/ProcessStats$ProcessState;->mPssTable:[I
 
@@ -1621,7 +1584,6 @@
 
 .method getPssMinimum(I)J
     .locals 4
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/internal/app/ProcessStats$ProcessState;->mPssTable:[I
 
@@ -1656,7 +1618,6 @@
 
 .method getPssSampleCount(I)J
     .locals 4
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/internal/app/ProcessStats$ProcessState;->mPssTable:[I
 
@@ -1691,7 +1652,6 @@
 
 .method getPssUssAverage(I)J
     .locals 4
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/internal/app/ProcessStats$ProcessState;->mPssTable:[I
 
@@ -1726,7 +1686,6 @@
 
 .method getPssUssMaximum(I)J
     .locals 4
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/internal/app/ProcessStats$ProcessState;->mPssTable:[I
 
@@ -1761,7 +1720,6 @@
 
 .method getPssUssMinimum(I)J
     .locals 4
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/internal/app/ProcessStats$ProcessState;->mPssTable:[I
 
@@ -1796,7 +1754,6 @@
 
 .method incActiveServices(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/internal/app/ProcessStats$ProcessState;->mCommonProcess:Lcom/android/internal/app/ProcessStats$ProcessState;
 
@@ -1818,9 +1775,6 @@
 
 .method incStartedServices(IJLjava/lang/String;)V
     .locals 2
-    .param p1    # I
-    .param p2    # J
-    .param p4    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/internal/app/ProcessStats$ProcessState;->mCommonProcess:Lcom/android/internal/app/ProcessStats$ProcessState;
 
@@ -1926,7 +1880,6 @@
 
 .method pullFixedProc(Ljava/lang/String;)Lcom/android/internal/app/ProcessStats$ProcessState;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-boolean v1, p0, Lcom/android/internal/app/ProcessStats$ProcessState;->mMultiPackage:Z
 
@@ -1973,8 +1926,6 @@
 
 .method readFromParcel(Landroid/os/Parcel;Z)Z
     .locals 6
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # Z
 
     const/4 v2, 0x1
 
@@ -2099,7 +2050,6 @@
 
 .method public reportCachedKill(Landroid/util/ArrayMap;J)V
     .locals 9
-    .param p2    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2277,7 +2227,6 @@
 
 .method resetSafely(J)V
     .locals 4
-    .param p1    # J
 
     const-wide/16 v2, 0x0
 
@@ -2316,9 +2265,6 @@
 
 .method public setState(IIJLandroid/util/ArrayMap;)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(IIJ",
@@ -2395,8 +2341,6 @@
 
 .method setState(IJ)V
     .locals 1
-    .param p1    # I
-    .param p2    # J
 
     invoke-direct {p0}, Lcom/android/internal/app/ProcessStats$ProcessState;->ensureNotDead()V
 
@@ -2504,8 +2448,6 @@
 
 .method writeToParcel(Landroid/os/Parcel;J)V
     .locals 3
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # J
 
     iget-boolean v1, p0, Lcom/android/internal/app/ProcessStats$ProcessState;->mMultiPackage:Z
 

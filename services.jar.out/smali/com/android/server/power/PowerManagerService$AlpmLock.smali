@@ -26,7 +26,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/power/PowerManagerService;Landroid/os/IBinder;)V
     .locals 2
-    .param p2    # Landroid/os/IBinder;
 
     iput-object p1, p0, Lcom/android/server/power/PowerManagerService$AlpmLock;->this$0:Lcom/android/server/power/PowerManagerService;
 

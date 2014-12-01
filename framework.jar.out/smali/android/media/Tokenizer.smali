@@ -35,7 +35,6 @@
 # direct methods
 .method constructor <init>(Landroid/media/Tokenizer$OnTokenListener;)V
     .locals 1
-    .param p1    # Landroid/media/Tokenizer$OnTokenListener;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -60,7 +59,6 @@
 
 .method static synthetic access$000(Landroid/media/Tokenizer;)Ljava/lang/String;
     .locals 1
-    .param p0    # Landroid/media/Tokenizer;
 
     iget-object v0, p0, Landroid/media/Tokenizer;->mLine:Ljava/lang/String;
 
@@ -69,7 +67,6 @@
 
 .method static synthetic access$100(Landroid/media/Tokenizer;)I
     .locals 1
-    .param p0    # Landroid/media/Tokenizer;
 
     iget v0, p0, Landroid/media/Tokenizer;->mHandledLen:I
 
@@ -78,8 +75,6 @@
 
 .method static synthetic access$102(Landroid/media/Tokenizer;I)I
     .locals 0
-    .param p0    # Landroid/media/Tokenizer;
-    .param p1    # I
 
     iput p1, p0, Landroid/media/Tokenizer;->mHandledLen:I
 
@@ -88,7 +83,6 @@
 
 .method static synthetic access$108(Landroid/media/Tokenizer;)I
     .locals 2
-    .param p0    # Landroid/media/Tokenizer;
 
     iget v0, p0, Landroid/media/Tokenizer;->mHandledLen:I
 
@@ -101,8 +95,6 @@
 
 .method static synthetic access$112(Landroid/media/Tokenizer;I)I
     .locals 1
-    .param p0    # Landroid/media/Tokenizer;
-    .param p1    # I
 
     iget v0, p0, Landroid/media/Tokenizer;->mHandledLen:I
 
@@ -115,8 +107,6 @@
 
 .method static synthetic access$202(Landroid/media/Tokenizer;Landroid/media/Tokenizer$TokenizerPhase;)Landroid/media/Tokenizer$TokenizerPhase;
     .locals 0
-    .param p0    # Landroid/media/Tokenizer;
-    .param p1    # Landroid/media/Tokenizer$TokenizerPhase;
 
     iput-object p1, p0, Landroid/media/Tokenizer;->mPhase:Landroid/media/Tokenizer$TokenizerPhase;
 
@@ -125,7 +115,6 @@
 
 .method static synthetic access$300(Landroid/media/Tokenizer;)Landroid/media/Tokenizer$TokenizerPhase;
     .locals 1
-    .param p0    # Landroid/media/Tokenizer;
 
     iget-object v0, p0, Landroid/media/Tokenizer;->mTagTokenizer:Landroid/media/Tokenizer$TokenizerPhase;
 
@@ -134,7 +123,6 @@
 
 .method static synthetic access$400(Landroid/media/Tokenizer;)Landroid/media/Tokenizer$OnTokenListener;
     .locals 1
-    .param p0    # Landroid/media/Tokenizer;
 
     iget-object v0, p0, Landroid/media/Tokenizer;->mListener:Landroid/media/Tokenizer$OnTokenListener;
 
@@ -143,7 +131,6 @@
 
 .method static synthetic access$500(Landroid/media/Tokenizer;)Landroid/media/Tokenizer$TokenizerPhase;
     .locals 1
-    .param p0    # Landroid/media/Tokenizer;
 
     iget-object v0, p0, Landroid/media/Tokenizer;->mDataTokenizer:Landroid/media/Tokenizer$TokenizerPhase;
 
@@ -168,7 +155,6 @@
 
 .method tokenize(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 

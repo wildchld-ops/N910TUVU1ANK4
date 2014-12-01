@@ -42,8 +42,6 @@
 # direct methods
 .method private constructor <init>(Lcom/android/server/NsdService;Lcom/android/internal/util/AsyncChannel;Landroid/os/Messenger;)V
     .locals 3
-    .param p2    # Lcom/android/internal/util/AsyncChannel;
-    .param p3    # Landroid/os/Messenger;
 
     iput-object p1, p0, Lcom/android/server/NsdService$ClientInfo;->this$0:Lcom/android/server/NsdService;
 
@@ -96,10 +94,6 @@
 
 .method synthetic constructor <init>(Lcom/android/server/NsdService;Lcom/android/internal/util/AsyncChannel;Landroid/os/Messenger;Lcom/android/server/NsdService$1;)V
     .locals 0
-    .param p1    # Lcom/android/server/NsdService;
-    .param p2    # Lcom/android/internal/util/AsyncChannel;
-    .param p3    # Landroid/os/Messenger;
-    .param p4    # Lcom/android/server/NsdService$1;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/server/NsdService$ClientInfo;-><init>(Lcom/android/server/NsdService;Lcom/android/internal/util/AsyncChannel;Landroid/os/Messenger;)V
 
@@ -108,7 +102,6 @@
 
 .method static synthetic access$1200(Lcom/android/server/NsdService$ClientInfo;)Landroid/util/SparseArray;
     .locals 1
-    .param p0    # Lcom/android/server/NsdService$ClientInfo;
 
     iget-object v0, p0, Lcom/android/server/NsdService$ClientInfo;->mClientIds:Landroid/util/SparseArray;
 
@@ -117,7 +110,6 @@
 
 .method static synthetic access$2300(Lcom/android/server/NsdService$ClientInfo;)Landroid/net/nsd/NsdServiceInfo;
     .locals 1
-    .param p0    # Lcom/android/server/NsdService$ClientInfo;
 
     iget-object v0, p0, Lcom/android/server/NsdService$ClientInfo;->mResolvedService:Landroid/net/nsd/NsdServiceInfo;
 
@@ -126,8 +118,6 @@
 
 .method static synthetic access$2302(Lcom/android/server/NsdService$ClientInfo;Landroid/net/nsd/NsdServiceInfo;)Landroid/net/nsd/NsdServiceInfo;
     .locals 0
-    .param p0    # Lcom/android/server/NsdService$ClientInfo;
-    .param p1    # Landroid/net/nsd/NsdServiceInfo;
 
     iput-object p1, p0, Lcom/android/server/NsdService$ClientInfo;->mResolvedService:Landroid/net/nsd/NsdServiceInfo;
 
@@ -136,7 +126,6 @@
 
 .method static synthetic access$2500(Lcom/android/server/NsdService$ClientInfo;)Lcom/android/internal/util/AsyncChannel;
     .locals 1
-    .param p0    # Lcom/android/server/NsdService$ClientInfo;
 
     iget-object v0, p0, Lcom/android/server/NsdService$ClientInfo;->mChannel:Lcom/android/internal/util/AsyncChannel;
 

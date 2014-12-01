@@ -233,7 +233,6 @@
 
 .method public outputRotationAngle([D)I
     .locals 2
-    .param p1    # [D
 
     const/4 v0, 0x0
 
@@ -258,8 +257,6 @@
 
 .method public outputRotationMatrix3x3(I[D)I
     .locals 2
-    .param p1    # I
-    .param p2    # [D
 
     const/4 v0, 0x0
 
@@ -284,7 +281,6 @@
 
 .method public setAppState(I)I
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -309,7 +305,6 @@
 
 .method public setMode(I)I
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -334,8 +329,6 @@
 
 .method public setOffset(Lcom/sec/android/app/camera/panorama360/core/MorphoSensorFusion$SensorData;I)I
     .locals 2
-    .param p1    # Lcom/sec/android/app/camera/panorama360/core/MorphoSensorFusion$SensorData;
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -360,7 +353,6 @@
 
 .method public setOffsetMode(I)I
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -385,7 +377,6 @@
 
 .method public setRotation(I)I
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -410,8 +401,6 @@
 
 .method public setSensorData([Ljava/lang/Object;I)I
     .locals 2
-    .param p1    # [Ljava/lang/Object;
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -436,8 +425,6 @@
 
 .method public setSensorReliability(II)I
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x0
 

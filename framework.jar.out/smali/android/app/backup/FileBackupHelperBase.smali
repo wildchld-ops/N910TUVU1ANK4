@@ -18,7 +18,6 @@
 # direct methods
 .method constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -41,11 +40,6 @@
 
 .method static performBackup_checked(Landroid/os/ParcelFileDescriptor;Landroid/app/backup/BackupDataOutput;Landroid/os/ParcelFileDescriptor;[Ljava/lang/String;[Ljava/lang/String;)V
     .locals 10
-    .param p0    # Landroid/os/ParcelFileDescriptor;
-    .param p1    # Landroid/app/backup/BackupDataOutput;
-    .param p2    # Landroid/os/ParcelFileDescriptor;
-    .param p3    # [Ljava/lang/String;
-    .param p4    # [Ljava/lang/String;
 
     array-length v7, p3
 
@@ -253,8 +247,6 @@
 
 .method isKeyInList(Ljava/lang/String;[Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/String;
 
     move-object v0, p2
 
@@ -291,8 +283,6 @@
 
 .method writeFile(Ljava/io/File;Landroid/app/backup/BackupDataInputStream;)Z
     .locals 6
-    .param p1    # Ljava/io/File;
-    .param p2    # Landroid/app/backup/BackupDataInputStream;
 
     const/4 v2, 0x1
 
@@ -392,7 +382,6 @@
 
 .method public writeNewStateDescription(Landroid/os/ParcelFileDescriptor;)V
     .locals 3
-    .param p1    # Landroid/os/ParcelFileDescriptor;
 
     iget v1, p0, Landroid/app/backup/FileBackupHelperBase;->mPtr:I
 

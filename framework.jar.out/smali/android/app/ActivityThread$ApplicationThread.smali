@@ -45,8 +45,6 @@
 
 .method synthetic constructor <init>(Landroid/app/ActivityThread;Landroid/app/ActivityThread$1;)V
     .locals 0
-    .param p1    # Landroid/app/ActivityThread;
-    .param p2    # Landroid/app/ActivityThread$1;
 
     invoke-direct {p0, p1}, Landroid/app/ActivityThread$ApplicationThread;-><init>(Landroid/app/ActivityThread;)V
 
@@ -55,11 +53,6 @@
 
 .method private dumpMemInfo(Ljava/io/PrintWriter;Landroid/os/Debug$MemoryInfo;ZZZ)V
     .locals 45
-    .param p1    # Ljava/io/PrintWriter;
-    .param p2    # Landroid/os/Debug$MemoryInfo;
-    .param p3    # Z
-    .param p4    # Z
-    .param p5    # Z
 
     invoke-static {}, Landroid/os/Debug;->getNativeHeapSize()J
 
@@ -1025,7 +1018,6 @@
 
 .method private updatePendingConfiguration(Landroid/content/res/Configuration;)V
     .locals 2
-    .param p1    # Landroid/content/res/Configuration;
 
     iget-object v0, p0, Landroid/app/ActivityThread$ApplicationThread;->this$0:Landroid/app/ActivityThread;
 
@@ -1077,22 +1069,6 @@
 # virtual methods
 .method public final bindApplication(Ljava/lang/String;Landroid/content/pm/ApplicationInfo;Ljava/util/List;Landroid/content/ComponentName;Ljava/lang/String;Landroid/os/ParcelFileDescriptor;ZLandroid/os/Bundle;Landroid/app/IInstrumentationWatcher;Landroid/app/IUiAutomationConnection;IZZZLandroid/content/res/Configuration;Landroid/content/res/CompatibilityInfo;Ljava/util/Map;Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/pm/ApplicationInfo;
-    .param p4    # Landroid/content/ComponentName;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Landroid/os/ParcelFileDescriptor;
-    .param p7    # Z
-    .param p8    # Landroid/os/Bundle;
-    .param p9    # Landroid/app/IInstrumentationWatcher;
-    .param p10    # Landroid/app/IUiAutomationConnection;
-    .param p11    # I
-    .param p12    # Z
-    .param p13    # Z
-    .param p14    # Z
-    .param p15    # Landroid/content/res/Configuration;
-    .param p16    # Landroid/content/res/CompatibilityInfo;
-    .param p18    # Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1199,8 +1175,6 @@
 
 .method public dispatchPackageBroadcast(I[Ljava/lang/String;)V
     .locals 2
-    .param p1    # I
-    .param p2    # [Ljava/lang/String;
 
     iget-object v0, p0, Landroid/app/ActivityThread$ApplicationThread;->this$0:Landroid/app/ActivityThread;
 
@@ -1214,10 +1188,6 @@
 
 .method public dumpActivity(Ljava/io/FileDescriptor;Landroid/os/IBinder;Ljava/lang/String;[Ljava/lang/String;)V
     .locals 7
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Landroid/os/IBinder;
-    .param p3    # Ljava/lang/String;
-    .param p4    # [Ljava/lang/String;
 
     new-instance v2, Landroid/app/ActivityThread$DumpComponentInfo;
 
@@ -1268,8 +1238,6 @@
 
 .method public dumpDbInfo(Ljava/io/FileDescriptor;[Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # [Ljava/lang/String;
 
     new-instance v1, Lcom/android/internal/util/FastPrintWriter;
 
@@ -1292,8 +1260,6 @@
 
 .method public dumpGfxInfo(Ljava/io/FileDescriptor;[Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # [Ljava/lang/String;
 
     iget-object v0, p0, Landroid/app/ActivityThread$ApplicationThread;->this$0:Landroid/app/ActivityThread;
 
@@ -1311,9 +1277,6 @@
 
 .method public dumpHeap(ZLjava/lang/String;Landroid/os/ParcelFileDescriptor;)V
     .locals 6
-    .param p1    # Z
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/os/ParcelFileDescriptor;
 
     const/4 v5, 0x1
 
@@ -1349,7 +1312,6 @@
 
 .method public dumpLooper(Ljava/io/FileDescriptor;)V
     .locals 4
-    .param p1    # Ljava/io/FileDescriptor;
 
     new-instance v0, Landroid/app/ActivityThread$DumpComponentInfo;
 
@@ -1386,12 +1348,6 @@
 
 .method public dumpMemInfo(Ljava/io/FileDescriptor;Landroid/os/Debug$MemoryInfo;ZZZ[Ljava/lang/String;)V
     .locals 7
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Landroid/os/Debug$MemoryInfo;
-    .param p3    # Z
-    .param p4    # Z
-    .param p5    # Z
-    .param p6    # [Ljava/lang/String;
 
     new-instance v6, Ljava/io/FileOutputStream;
 
@@ -1430,9 +1386,6 @@
 
 .method public dumpProvider(Ljava/io/FileDescriptor;Landroid/os/IBinder;[Ljava/lang/String;)V
     .locals 7
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Landroid/os/IBinder;
-    .param p3    # [Ljava/lang/String;
 
     new-instance v2, Landroid/app/ActivityThread$DumpComponentInfo;
 
@@ -1481,9 +1434,6 @@
 
 .method public dumpService(Ljava/io/FileDescriptor;Landroid/os/IBinder;[Ljava/lang/String;)V
     .locals 7
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Landroid/os/IBinder;
-    .param p3    # [Ljava/lang/String;
 
     new-instance v2, Landroid/app/ActivityThread$DumpComponentInfo;
 
@@ -1560,10 +1510,6 @@
 
 .method public profilerControl(ZLjava/lang/String;Landroid/os/ParcelFileDescriptor;I)V
     .locals 4
-    .param p1    # Z
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/os/ParcelFileDescriptor;
-    .param p4    # I
 
     new-instance v0, Landroid/app/ActivityThread$ProfilerControlData;
 
@@ -1595,9 +1541,6 @@
 
 .method public requestAssistContextExtras(Landroid/os/IBinder;Landroid/os/IBinder;I)V
     .locals 3
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Landroid/os/IBinder;
-    .param p3    # I
 
     new-instance v0, Landroid/app/ActivityThread$RequestAssistContextExtras;
 
@@ -1621,7 +1564,6 @@
 
 .method public requestThumbnail(Landroid/os/IBinder;)V
     .locals 2
-    .param p1    # Landroid/os/IBinder;
 
     iget-object v0, p0, Landroid/app/ActivityThread$ApplicationThread;->this$0:Landroid/app/ActivityThread;
 
@@ -1635,7 +1577,6 @@
 
 .method public scheduleActivityConfigurationChanged(Landroid/os/IBinder;)V
     .locals 2
-    .param p1    # Landroid/os/IBinder;
 
     iget-object v0, p0, Landroid/app/ActivityThread$ApplicationThread;->this$0:Landroid/app/ActivityThread;
 
@@ -1649,10 +1590,6 @@
 
 .method public final scheduleBindService(Landroid/os/IBinder;Landroid/content/Intent;ZI)V
     .locals 3
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Landroid/content/Intent;
-    .param p3    # Z
-    .param p4    # I
 
     const/4 v1, 0x0
 
@@ -1680,7 +1617,6 @@
 
 .method public scheduleConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 2
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-direct {p0, p1}, Landroid/app/ActivityThread$ApplicationThread;->updatePendingConfiguration(Landroid/content/res/Configuration;)V
 
@@ -1696,7 +1632,6 @@
 
 .method public scheduleCrash(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/app/ActivityThread$ApplicationThread;->this$0:Landroid/app/ActivityThread;
 
@@ -1710,9 +1645,6 @@
 
 .method public final scheduleCreateBackupAgent(Landroid/content/pm/ApplicationInfo;Landroid/content/res/CompatibilityInfo;I)V
     .locals 3
-    .param p1    # Landroid/content/pm/ApplicationInfo;
-    .param p2    # Landroid/content/res/CompatibilityInfo;
-    .param p3    # I
 
     new-instance v0, Landroid/app/ActivityThread$CreateBackupAgentData;
 
@@ -1736,10 +1668,6 @@
 
 .method public final scheduleCreateService(Landroid/os/IBinder;Landroid/content/pm/ServiceInfo;Landroid/content/res/CompatibilityInfo;I)V
     .locals 3
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Landroid/content/pm/ServiceInfo;
-    .param p3    # Landroid/content/res/CompatibilityInfo;
-    .param p4    # I
 
     const/4 v1, 0x0
 
@@ -1767,9 +1695,6 @@
 
 .method public final scheduleDestroyActivity(Landroid/os/IBinder;ZI)V
     .locals 3
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Z
-    .param p3    # I
 
     iget-object v1, p0, Landroid/app/ActivityThread$ApplicationThread;->this$0:Landroid/app/ActivityThread;
 
@@ -1793,8 +1718,6 @@
 
 .method public final scheduleDestroyBackupAgent(Landroid/content/pm/ApplicationInfo;Landroid/content/res/CompatibilityInfo;)V
     .locals 3
-    .param p1    # Landroid/content/pm/ApplicationInfo;
-    .param p2    # Landroid/content/res/CompatibilityInfo;
 
     new-instance v0, Landroid/app/ActivityThread$CreateBackupAgentData;
 
@@ -1816,7 +1739,6 @@
 
 .method public scheduleDisplayMetricsChanged(Landroid/view/DisplayInfo;)V
     .locals 2
-    .param p1    # Landroid/view/DisplayInfo;
 
     iget-object v0, p0, Landroid/app/ActivityThread$ApplicationThread;->this$0:Landroid/app/ActivityThread;
 
@@ -1845,7 +1767,6 @@
 
 .method public scheduleInstallProvider(Landroid/content/pm/ProviderInfo;)V
     .locals 2
-    .param p1    # Landroid/content/pm/ProviderInfo;
 
     iget-object v0, p0, Landroid/app/ActivityThread$ApplicationThread;->this$0:Landroid/app/ActivityThread;
 
@@ -1859,19 +1780,6 @@
 
 .method public final scheduleLaunchActivity(Landroid/content/Intent;Landroid/os/IBinder;ILandroid/content/pm/ActivityInfo;Landroid/content/res/Configuration;Landroid/content/res/CompatibilityInfo;ILandroid/os/Bundle;Ljava/util/List;Ljava/util/List;ZZLjava/lang/String;Landroid/os/ParcelFileDescriptor;Z)V
     .locals 4
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Landroid/os/IBinder;
-    .param p3    # I
-    .param p4    # Landroid/content/pm/ActivityInfo;
-    .param p5    # Landroid/content/res/Configuration;
-    .param p6    # Landroid/content/res/CompatibilityInfo;
-    .param p7    # I
-    .param p8    # Landroid/os/Bundle;
-    .param p11    # Z
-    .param p12    # Z
-    .param p13    # Ljava/lang/String;
-    .param p14    # Landroid/os/ParcelFileDescriptor;
-    .param p15    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1968,9 +1876,6 @@
 
 .method public scheduleMultiWindowStyleChanged(Landroid/os/IBinder;Lcom/samsung/android/multiwindow/MultiWindowStyle;I)V
     .locals 3
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Lcom/samsung/android/multiwindow/MultiWindowStyle;
-    .param p3    # I
 
     iget-object v0, p0, Landroid/app/ActivityThread$ApplicationThread;->this$0:Landroid/app/ActivityThread;
 
@@ -1988,7 +1893,6 @@
 
 .method public final scheduleNewIntent(Ljava/util/List;Landroid/os/IBinder;)V
     .locals 3
-    .param p2    # Landroid/os/IBinder;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2021,10 +1925,6 @@
 
 .method public final schedulePauseActivity(Landroid/os/IBinder;ZZI)V
     .locals 3
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Z
-    .param p3    # Z
-    .param p4    # I
 
     iget-object v2, p0, Landroid/app/ActivityThread$ApplicationThread;->this$0:Landroid/app/ActivityThread;
 
@@ -2060,15 +1960,6 @@
 
 .method public final scheduleReceiver(Landroid/content/Intent;Landroid/content/pm/ActivityInfo;Landroid/content/res/CompatibilityInfo;ILjava/lang/String;Landroid/os/Bundle;ZII)V
     .locals 10
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Landroid/content/pm/ActivityInfo;
-    .param p3    # Landroid/content/res/CompatibilityInfo;
-    .param p4    # I
-    .param p5    # Ljava/lang/String;
-    .param p6    # Landroid/os/Bundle;
-    .param p7    # Z
-    .param p8    # I
-    .param p9    # I
 
     const/4 v2, 0x0
 
@@ -2118,15 +2009,6 @@
 
 .method public scheduleRegisteredReceiver(Landroid/content/IIntentReceiver;Landroid/content/Intent;ILjava/lang/String;Landroid/os/Bundle;ZZII)V
     .locals 1
-    .param p1    # Landroid/content/IIntentReceiver;
-    .param p2    # Landroid/content/Intent;
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
-    .param p5    # Landroid/os/Bundle;
-    .param p6    # Z
-    .param p7    # Z
-    .param p8    # I
-    .param p9    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2144,10 +2026,6 @@
 
 .method public final scheduleRelaunchActivity(Landroid/os/IBinder;Ljava/util/List;Ljava/util/List;IZLandroid/content/res/Configuration;)V
     .locals 8
-    .param p1    # Landroid/os/IBinder;
-    .param p4    # I
-    .param p5    # Z
-    .param p6    # Landroid/content/res/Configuration;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2188,8 +2066,6 @@
 
 .method public scheduleResetTargetHeapUtilization(Landroid/os/IBinder;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/app/ActivityThread$ApplicationThread;->this$0:Landroid/app/ActivityThread;
 
@@ -2203,9 +2079,6 @@
 
 .method public final scheduleResumeActivity(Landroid/os/IBinder;IZ)V
     .locals 3
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # I
-    .param p3    # Z
 
     const/4 v0, 0x0
 
@@ -2228,7 +2101,6 @@
 
 .method public final scheduleSendResult(Landroid/os/IBinder;Ljava/util/List;)V
     .locals 3
-    .param p1    # Landroid/os/IBinder;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2260,11 +2132,6 @@
 
 .method public final scheduleServiceArgs(Landroid/os/IBinder;ZIILandroid/content/Intent;)V
     .locals 3
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Z
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Landroid/content/Intent;
 
     new-instance v0, Landroid/app/ActivityThread$ServiceArgsData;
 
@@ -2292,8 +2159,6 @@
 
 .method public final scheduleSleeping(Landroid/os/IBinder;Z)V
     .locals 3
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Z
 
     iget-object v1, p0, Landroid/app/ActivityThread$ApplicationThread;->this$0:Landroid/app/ActivityThread;
 
@@ -2317,9 +2182,6 @@
 
 .method public final scheduleStopActivity(Landroid/os/IBinder;ZI)V
     .locals 3
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Z
-    .param p3    # I
 
     iget-object v1, p0, Landroid/app/ActivityThread$ApplicationThread;->this$0:Landroid/app/ActivityThread;
 
@@ -2343,7 +2205,6 @@
 
 .method public final scheduleStopService(Landroid/os/IBinder;)V
     .locals 2
-    .param p1    # Landroid/os/IBinder;
 
     iget-object v0, p0, Landroid/app/ActivityThread$ApplicationThread;->this$0:Landroid/app/ActivityThread;
 
@@ -2372,8 +2233,6 @@
 
 .method public scheduleTranslucentConversionComplete(Landroid/os/IBinder;Z)V
     .locals 3
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Z
 
     iget-object v1, p0, Landroid/app/ActivityThread$ApplicationThread;->this$0:Landroid/app/ActivityThread;
 
@@ -2397,7 +2256,6 @@
 
 .method public scheduleTrimMemory(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v0, p0, Landroid/app/ActivityThread$ApplicationThread;->this$0:Landroid/app/ActivityThread;
 
@@ -2413,8 +2271,6 @@
 
 .method public final scheduleUnbindService(Landroid/os/IBinder;Landroid/content/Intent;)V
     .locals 3
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Landroid/content/Intent;
 
     new-instance v0, Landroid/app/ActivityThread$BindServiceData;
 
@@ -2436,8 +2292,6 @@
 
 .method public final scheduleWindowVisibility(Landroid/os/IBinder;Z)V
     .locals 2
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Z
 
     iget-object v1, p0, Landroid/app/ActivityThread$ApplicationThread;->this$0:Landroid/app/ActivityThread;
 
@@ -2459,7 +2313,6 @@
 
 .method public setCoreSettings(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     iget-object v0, p0, Landroid/app/ActivityThread$ApplicationThread;->this$0:Landroid/app/ActivityThread;
 
@@ -2473,10 +2326,6 @@
 
 .method public setHttpProxy(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     invoke-static {p1, p2, p3, p4}, Landroid/net/Proxy;->setHttpProxySystemProperty(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
@@ -2485,12 +2334,6 @@
 
 .method public setHttpProxy(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Ljava/lang/String;
 
     invoke-static/range {p1 .. p6}, Landroid/net/Proxy;->setHttpProxySystemProperty(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
@@ -2499,7 +2342,6 @@
 
 .method public setProcessState(I)V
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -2510,7 +2352,6 @@
 
 .method public setSchedulingGroup(I)V
     .locals 4
-    .param p1    # I
 
     :try_start_0
     invoke-static {}, Landroid/os/Process;->myPid()I
@@ -2554,7 +2395,6 @@
 
 .method public unstableProviderDied(Landroid/os/IBinder;)V
     .locals 2
-    .param p1    # Landroid/os/IBinder;
 
     iget-object v0, p0, Landroid/app/ActivityThread$ApplicationThread;->this$0:Landroid/app/ActivityThread;
 
@@ -2568,8 +2408,6 @@
 
 .method public updatePackageCompatibilityInfo(Ljava/lang/String;Landroid/content/res/CompatibilityInfo;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/res/CompatibilityInfo;
 
     new-instance v0, Landroid/app/ActivityThread$UpdateCompatibilityData;
 
@@ -2591,8 +2429,6 @@
 
 .method public updateProcessState(IZ)V
     .locals 1
-    .param p1    # I
-    .param p2    # Z
 
     monitor-enter p0
 

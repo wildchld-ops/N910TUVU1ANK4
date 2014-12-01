@@ -24,7 +24,6 @@
 
 .method public static declared-synchronized getInstance(Landroid/content/Context;)Lcom/android/server/enterprise/adapterlayer/BluetoothManagerAdapter;
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     const-class v1, Lcom/android/server/enterprise/adapterlayer/BluetoothManagerAdapter;
 
@@ -70,7 +69,6 @@
 # virtual methods
 .method public removeBond(Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     sget-object v4, Lcom/android/server/enterprise/adapterlayer/BluetoothManagerAdapter;->mBluetoothAdapter:Landroid/bluetooth/BluetoothAdapter;

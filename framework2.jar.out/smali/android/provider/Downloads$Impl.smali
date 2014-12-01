@@ -395,7 +395,6 @@
 
 .method public static isDownloadCompleted(I)Z
     .locals 1
-    .param p0    # I
 
     const/16 v0, 0xa
 
@@ -419,8 +418,6 @@
 
 .method public static isDownloadSuccessCompleted(II)Z
     .locals 1
-    .param p0    # I
-    .param p1    # I
 
     const/16 v0, 0xa
 
@@ -447,7 +444,6 @@
 
 .method public static isNotificationToBeDisplayed(I)Z
     .locals 2
-    .param p0    # I
 
     const/4 v0, 0x1
 
@@ -469,7 +465,6 @@
 
 .method public static isStatusClientError(I)Z
     .locals 1
-    .param p0    # I
 
     const/16 v0, 0x190
 
@@ -502,7 +497,6 @@
 
 .method public static isStatusCompleted(I)Z
     .locals 1
-    .param p0    # I
 
     const/16 v0, 0xc8
 
@@ -540,7 +534,6 @@
 
 .method public static isStatusError(I)Z
     .locals 1
-    .param p0    # I
 
     const/16 v0, 0x190
 
@@ -569,7 +562,6 @@
 
 .method public static isStatusInformational(I)Z
     .locals 1
-    .param p0    # I
 
     const/16 v0, 0x64
 
@@ -592,7 +584,6 @@
 
 .method public static isStatusServerError(I)Z
     .locals 1
-    .param p0    # I
 
     const/16 v0, 0x1f4
 
@@ -615,7 +606,6 @@
 
 .method public static isStatusSuccess(I)Z
     .locals 1
-    .param p0    # I
 
     const/16 v0, 0xc8
 
@@ -638,7 +628,6 @@
 
 .method public static isStatusSuspended(I)Z
     .locals 1
-    .param p0    # I
 
     const/16 v0, 0xbf
 
@@ -662,7 +651,6 @@
 
 .method public static statusToString(I)Ljava/lang/String;
     .locals 1
-    .param p0    # I
 
     sparse-switch p0, :sswitch_data_0
 

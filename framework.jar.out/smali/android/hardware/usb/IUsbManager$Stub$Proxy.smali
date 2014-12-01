@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,8 +36,6 @@
 # virtual methods
 .method public allowUsbDebugging(ZLjava/lang/String;)V
     .locals 5
-    .param p1    # Z
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -107,8 +104,6 @@
 
 .method public clearDefaults(Ljava/lang/String;I)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -435,7 +430,6 @@
 
 .method public getDeviceList(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -502,8 +496,6 @@
 
 .method public grantAccessoryPermission(Landroid/hardware/usb/UsbAccessory;I)V
     .locals 5
-    .param p1    # Landroid/hardware/usb/UsbAccessory;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -576,8 +568,6 @@
 
 .method public grantDevicePermission(Landroid/hardware/usb/UsbDevice;I)V
     .locals 5
-    .param p1    # Landroid/hardware/usb/UsbDevice;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -650,7 +640,6 @@
 
 .method public hasAccessoryPermission(Landroid/hardware/usb/UsbAccessory;)Z
     .locals 7
-    .param p1    # Landroid/hardware/usb/UsbAccessory;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -737,8 +726,6 @@
 
 .method public hasDefaults(Ljava/lang/String;I)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -803,7 +790,6 @@
 
 .method public hasDevicePermission(Landroid/hardware/usb/UsbDevice;)Z
     .locals 7
-    .param p1    # Landroid/hardware/usb/UsbDevice;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1010,7 +996,6 @@
 
 .method public openAccessory(Landroid/hardware/usb/UsbAccessory;)Landroid/os/ParcelFileDescriptor;
     .locals 6
-    .param p1    # Landroid/hardware/usb/UsbAccessory;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1101,7 +1086,6 @@
 
 .method public openDevice(Ljava/lang/String;)Landroid/os/ParcelFileDescriptor;
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1173,9 +1157,6 @@
 
 .method public requestAccessoryPermission(Landroid/hardware/usb/UsbAccessory;Ljava/lang/String;Landroid/app/PendingIntent;)V
     .locals 5
-    .param p1    # Landroid/hardware/usb/UsbAccessory;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/app/PendingIntent;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1269,9 +1250,6 @@
 
 .method public requestDevicePermission(Landroid/hardware/usb/UsbDevice;Ljava/lang/String;Landroid/app/PendingIntent;)V
     .locals 5
-    .param p1    # Landroid/hardware/usb/UsbDevice;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/app/PendingIntent;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1365,7 +1343,6 @@
 
 .method public restoreCurrentFunctions(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1417,7 +1394,6 @@
 
 .method public saveCurrentFunctions(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1469,9 +1445,6 @@
 
 .method public setAccessoryPackage(Landroid/hardware/usb/UsbAccessory;Ljava/lang/String;I)V
     .locals 5
-    .param p1    # Landroid/hardware/usb/UsbAccessory;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1546,8 +1519,6 @@
 
 .method public setCurrentFunction(Ljava/lang/String;Z)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1608,9 +1579,6 @@
 
 .method public setDevicePackage(Landroid/hardware/usb/UsbDevice;Ljava/lang/String;I)V
     .locals 5
-    .param p1    # Landroid/hardware/usb/UsbDevice;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1685,7 +1653,6 @@
 
 .method public setMassStorageBackingFile(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1737,7 +1704,6 @@
 
 .method public setUsb30Mode(Z)V
     .locals 5
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

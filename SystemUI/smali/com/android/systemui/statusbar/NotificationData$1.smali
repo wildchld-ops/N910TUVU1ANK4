@@ -46,8 +46,6 @@
 # virtual methods
 .method public compare(Lcom/android/systemui/statusbar/NotificationData$Entry;Lcom/android/systemui/statusbar/NotificationData$Entry;)I
     .locals 7
-    .param p1    # Lcom/android/systemui/statusbar/NotificationData$Entry;
-    .param p2    # Lcom/android/systemui/statusbar/NotificationData$Entry;
 
     iget-object v1, p1, Lcom/android/systemui/statusbar/NotificationData$Entry;->notification:Landroid/service/notification/StatusBarNotification;
 
@@ -121,8 +119,6 @@
 
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p1, Lcom/android/systemui/statusbar/NotificationData$Entry;
 

@@ -18,7 +18,6 @@
 # direct methods
 .method public constructor <init>(Ljava/io/File;)V
     .locals 2
-    .param p1    # Ljava/io/File;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -36,8 +35,6 @@
 
 .method public constructor <init>(Ljava/io/File;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/io/File;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -55,10 +52,6 @@
 
 .method public constructor <init>(Ljava/io/File;Ljava/lang/String;ZLjava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/io/File;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
-    .param p4    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -157,8 +150,6 @@
 
 .method public constructor <init>(Ljava/io/File;Z)V
     .locals 1
-    .param p1    # Ljava/io/File;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -174,9 +165,6 @@
 
 .method public constructor <init>(Ljava/io/File;ZLjava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/io/File;
-    .param p2    # Z
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -192,7 +180,6 @@
 
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -210,8 +197,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Z)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -227,9 +212,6 @@
 
 .method public constructor <init>(Ljava/lang/String;ZLjava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -247,7 +229,6 @@
 
 .method static class$(Ljava/lang/String;)Ljava/lang/Class;
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     :try_start_0
     invoke-static {p0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
@@ -369,9 +350,6 @@
 
 .method private initWriter(Ljava/io/File;Ljava/lang/String;Z)Ljava/io/Writer;
     .locals 7
-    .param p1    # Ljava/io/File;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -483,7 +461,6 @@
 
 .method private testLockDir(Ljava/io/File;)V
     .locals 3
-    .param p1    # Ljava/io/File;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -613,7 +590,6 @@
 
 .method public write(I)V
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -629,7 +605,6 @@
 
 .method public write(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -645,9 +620,6 @@
 
 .method public write(Ljava/lang/String;II)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -663,7 +635,6 @@
 
 .method public write([C)V
     .locals 1
-    .param p1    # [C
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -679,9 +650,6 @@
 
 .method public write([CII)V
     .locals 1
-    .param p1    # [C
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

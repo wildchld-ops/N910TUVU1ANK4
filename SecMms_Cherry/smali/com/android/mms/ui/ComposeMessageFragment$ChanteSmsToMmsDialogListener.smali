@@ -28,8 +28,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/mms/ui/ComposeMessageFragment;Landroid/content/Context;Ljava/lang/CharSequence;)V
     .locals 0
-    .param p2    # Landroid/content/Context;
-    .param p3    # Ljava/lang/CharSequence;
 
     iput-object p1, p0, Lcom/android/mms/ui/ComposeMessageFragment$ChanteSmsToMmsDialogListener;->this$0:Lcom/android/mms/ui/ComposeMessageFragment;
 
@@ -46,8 +44,6 @@
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 3
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     const/4 v2, 0x0
 

@@ -97,10 +97,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Landroid/content/Context;Lcom/touchtype_fluency/util/LanguagePackManager;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/content/Context;
-    .param p4    # Lcom/touchtype_fluency/util/LanguagePackManager;
 
     const/4 v0, 0x0
 
@@ -146,13 +142,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/touchtype/personalizer/PersonalizationListener;Landroid/content/Context;Lcom/touchtype_fluency/util/LanguagePackManager;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Lcom/touchtype/personalizer/PersonalizationListener;
-    .param p6    # Landroid/content/Context;
-    .param p7    # Lcom/touchtype_fluency/util/LanguagePackManager;
 
     const/4 v0, 0x0
 
@@ -204,7 +193,6 @@
 
 .method static synthetic access$000(Lcom/touchtype/personalizer/PersonalizationRequest;)Lcom/touchtype_fluency/util/LanguagePackManager;
     .locals 1
-    .param p0    # Lcom/touchtype/personalizer/PersonalizationRequest;
 
     iget-object v0, p0, Lcom/touchtype/personalizer/PersonalizationRequest;->mLanguagePackManager:Lcom/touchtype_fluency/util/LanguagePackManager;
 
@@ -213,7 +201,6 @@
 
 .method static synthetic access$100(Lcom/touchtype/personalizer/PersonalizationRequest;)Z
     .locals 1
-    .param p0    # Lcom/touchtype/personalizer/PersonalizationRequest;
 
     iget-boolean v0, p0, Lcom/touchtype/personalizer/PersonalizationRequest;->mMergeResult:Z
 
@@ -222,8 +209,6 @@
 
 .method static synthetic access$102(Lcom/touchtype/personalizer/PersonalizationRequest;Z)Z
     .locals 0
-    .param p0    # Lcom/touchtype/personalizer/PersonalizationRequest;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/touchtype/personalizer/PersonalizationRequest;->mMergeResult:Z
 
@@ -232,7 +217,6 @@
 
 .method static synthetic access$1100(Ljava/net/URL;)Ljava/net/URL;
     .locals 1
-    .param p0    # Ljava/net/URL;
 
     invoke-static {p0}, Lcom/touchtype/personalizer/PersonalizationRequest;->addRandToUrl(Ljava/net/URL;)Ljava/net/URL;
 
@@ -243,7 +227,6 @@
 
 .method static synthetic access$1200(Lcom/touchtype/personalizer/PersonalizationRequest;)I
     .locals 1
-    .param p0    # Lcom/touchtype/personalizer/PersonalizationRequest;
 
     iget v0, p0, Lcom/touchtype/personalizer/PersonalizationRequest;->mPollCount:I
 
@@ -252,7 +235,6 @@
 
 .method static synthetic access$1208(Lcom/touchtype/personalizer/PersonalizationRequest;)I
     .locals 2
-    .param p0    # Lcom/touchtype/personalizer/PersonalizationRequest;
 
     iget v0, p0, Lcom/touchtype/personalizer/PersonalizationRequest;->mPollCount:I
 
@@ -265,7 +247,6 @@
 
 .method static synthetic access$1300(Lcom/touchtype/personalizer/PersonalizationRequest;)V
     .locals 0
-    .param p0    # Lcom/touchtype/personalizer/PersonalizationRequest;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -281,7 +262,6 @@
 
 .method static synthetic access$200(Lcom/touchtype/personalizer/PersonalizationRequest;)Lcom/touchtype/personalizer/PersonalizationListener;
     .locals 1
-    .param p0    # Lcom/touchtype/personalizer/PersonalizationRequest;
 
     iget-object v0, p0, Lcom/touchtype/personalizer/PersonalizationRequest;->mListener:Lcom/touchtype/personalizer/PersonalizationListener;
 
@@ -290,7 +270,6 @@
 
 .method static synthetic access$300(Lcom/touchtype/personalizer/PersonalizationRequest;)Lcom/diotek/ime/framework/common/InputManager;
     .locals 1
-    .param p0    # Lcom/touchtype/personalizer/PersonalizationRequest;
 
     iget-object v0, p0, Lcom/touchtype/personalizer/PersonalizationRequest;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -307,7 +286,6 @@
 
 .method static synthetic access$500(Lcom/touchtype/personalizer/PersonalizationRequest;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/touchtype/personalizer/PersonalizationRequest;
 
     iget-object v0, p0, Lcom/touchtype/personalizer/PersonalizationRequest;->mDownloadPath:Ljava/lang/String;
 
@@ -316,7 +294,6 @@
 
 .method static synthetic access$600(Lcom/touchtype/personalizer/PersonalizationRequest;)Lcom/touchtype_fluency/service/util/UrlManager;
     .locals 1
-    .param p0    # Lcom/touchtype/personalizer/PersonalizationRequest;
 
     iget-object v0, p0, Lcom/touchtype/personalizer/PersonalizationRequest;->mUrlManager:Lcom/touchtype_fluency/service/util/UrlManager;
 
@@ -333,7 +310,6 @@
 
 .method static synthetic access$900(Lcom/touchtype/personalizer/PersonalizationRequest;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/touchtype/personalizer/PersonalizationRequest;
 
     iget-object v0, p0, Lcom/touchtype/personalizer/PersonalizationRequest;->mHandler:Landroid/os/Handler;
 
@@ -342,8 +318,6 @@
 
 .method static synthetic access$902(Lcom/touchtype/personalizer/PersonalizationRequest;Landroid/os/Handler;)Landroid/os/Handler;
     .locals 0
-    .param p0    # Lcom/touchtype/personalizer/PersonalizationRequest;
-    .param p1    # Landroid/os/Handler;
 
     iput-object p1, p0, Lcom/touchtype/personalizer/PersonalizationRequest;->mHandler:Landroid/os/Handler;
 
@@ -352,7 +326,6 @@
 
 .method private addAuthToParams(Ljava/lang/String;)Ljava/lang/String;
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     const-string v6, "SHA-1"
@@ -507,7 +480,6 @@
 
 .method private addLocaleLanguageInfo(Ljava/lang/String;)Ljava/lang/String;
     .locals 10
-    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
 
@@ -789,7 +761,6 @@
 
 .method private static addRandToUrl(Ljava/net/URL;)Ljava/net/URL;
     .locals 8
-    .param p0    # Ljava/net/URL;
 
     invoke-virtual {p0}, Ljava/net/URL;->toString()Ljava/lang/String;
 
@@ -896,7 +867,6 @@
 
 .method private addTextRetentionToParams(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -1255,7 +1225,6 @@
 # virtual methods
 .method public deleteRemoteData(Lcom/touchtype/personalizer/PersonalizationListener;)V
     .locals 4
-    .param p1    # Lcom/touchtype/personalizer/PersonalizationListener;
 
     const-string v2, ""
 

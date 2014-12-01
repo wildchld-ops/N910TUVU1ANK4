@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Landroid/media/AudioService;Landroid/media/AudioService$1;)V
     .locals 0
-    .param p1    # Landroid/media/AudioService;
-    .param p2    # Landroid/media/AudioService$1;
 
     invoke-direct {p0, p1}, Landroid/media/AudioService$AudioHandler;-><init>(Landroid/media/AudioService;)V
 
@@ -41,8 +39,6 @@
 
 .method static synthetic access$5400(Landroid/media/AudioService$AudioHandler;Landroid/media/MediaPlayer;)V
     .locals 0
-    .param p0    # Landroid/media/AudioService$AudioHandler;
-    .param p1    # Landroid/media/MediaPlayer;
 
     invoke-direct {p0, p1}, Landroid/media/AudioService$AudioHandler;->cleanupPlayer(Landroid/media/MediaPlayer;)V
 
@@ -51,7 +47,6 @@
 
 .method private cleanupPlayer(Landroid/media/MediaPlayer;)V
     .locals 4
-    .param p1    # Landroid/media/MediaPlayer;
 
     if-eqz p1, :cond_0
 
@@ -895,7 +890,6 @@
 
 .method private onPersistSafeVolumeState(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Landroid/media/AudioService$AudioHandler;->this$0:Landroid/media/AudioService;
 
@@ -913,8 +907,6 @@
 
 .method private onPlaySoundEffect(II)V
     .locals 12
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Landroid/media/AudioService$AudioHandler;->this$0:Landroid/media/AudioService;
 
@@ -1465,7 +1457,6 @@
 
 .method private persistRingerMode(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Landroid/media/AudioService$AudioHandler;->this$0:Landroid/media/AudioService;
 
@@ -1496,8 +1487,6 @@
 
 .method private persistVolume(Landroid/media/AudioService$VolumeStreamState;I)V
     .locals 5
-    .param p1    # Landroid/media/AudioService$VolumeStreamState;
-    .param p2    # I
 
     iget-object v1, p0, Landroid/media/AudioService$AudioHandler;->this$0:Landroid/media/AudioService;
 
@@ -1675,7 +1664,6 @@
 
 .method private setAllVolumes(Landroid/media/AudioService$VolumeStreamState;)V
     .locals 4
-    .param p1    # Landroid/media/AudioService$VolumeStreamState;
 
     invoke-virtual {p1}, Landroid/media/AudioService$VolumeStreamState;->applyAllVolumes()V
 
@@ -1733,8 +1721,6 @@
 
 .method private setDeviceVolume(Landroid/media/AudioService$VolumeStreamState;I)V
     .locals 10
-    .param p1    # Landroid/media/AudioService$VolumeStreamState;
-    .param p2    # I
 
     const-string v0, "AudioService"
 
@@ -1914,8 +1900,6 @@
 
 .method private setForceUse(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     invoke-static {p1, p2}, Landroid/media/AudioSystem;->setForceUse(II)I
 
@@ -1926,7 +1910,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 24
-    .param p1    # Landroid/os/Message;
 
     const-string v1, "AudioService"
 

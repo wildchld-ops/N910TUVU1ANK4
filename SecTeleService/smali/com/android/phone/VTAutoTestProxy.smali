@@ -180,7 +180,7 @@
 
     iget-object v1, p0, Lcom/android/phone/VTAutoTestProxy;->mApp:Lcom/android/phone/PhoneGlobals;
 
-    invoke-virtual {v1, v0}, Landroid/content/ContextWrapper;->sendBroadcast(Landroid/content/Intent;)V
+    invoke-virtual {v1, v0}, Lcom/android/phone/PhoneGlobals;->sendBroadcast(Landroid/content/Intent;)V
 
     return-void
 .end method
@@ -235,7 +235,7 @@
 
     iget-object v1, p0, Lcom/android/phone/VTAutoTestProxy;->mApp:Lcom/android/phone/PhoneGlobals;
 
-    invoke-virtual {v1, v0}, Landroid/content/ContextWrapper;->sendBroadcast(Landroid/content/Intent;)V
+    invoke-virtual {v1, v0}, Lcom/android/phone/PhoneGlobals;->sendBroadcast(Landroid/content/Intent;)V
 
     return-void
 .end method
@@ -535,7 +535,7 @@
 
     iget-object v2, p0, Lcom/android/phone/VTAutoTestProxy;->CallStateReceiver:Landroid/content/BroadcastReceiver;
 
-    invoke-virtual {v1, v2, v0}, Landroid/content/ContextWrapper;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
+    invoke-virtual {v1, v2, v0}, Lcom/android/phone/PhoneGlobals;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
     return-void
 .end method

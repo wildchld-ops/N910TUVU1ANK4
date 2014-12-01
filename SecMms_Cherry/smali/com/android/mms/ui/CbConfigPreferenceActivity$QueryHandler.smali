@@ -21,8 +21,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/mms/ui/CbConfigPreferenceActivity;Landroid/content/ContentResolver;Lcom/android/mms/ui/CbConfigPreferenceActivity;)V
     .locals 0
-    .param p2    # Landroid/content/ContentResolver;
-    .param p3    # Lcom/android/mms/ui/CbConfigPreferenceActivity;
 
     iput-object p1, p0, Lcom/android/mms/ui/CbConfigPreferenceActivity$QueryHandler;->this$0:Lcom/android/mms/ui/CbConfigPreferenceActivity;
 
@@ -35,9 +33,6 @@
 # virtual methods
 .method protected onQueryComplete(ILjava/lang/Object;Landroid/database/Cursor;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/Object;
-    .param p3    # Landroid/database/Cursor;
 
     iget-object v0, p0, Lcom/android/mms/ui/CbConfigPreferenceActivity$QueryHandler;->this$0:Lcom/android/mms/ui/CbConfigPreferenceActivity;
 

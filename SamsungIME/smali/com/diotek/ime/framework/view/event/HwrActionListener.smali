@@ -30,9 +30,6 @@
 # virtual methods
 .method public onTouchCancel(IIJ)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/event/HwrActionListener;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -45,9 +42,6 @@
 
 .method public onTouchDown(IIJ)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/event/HwrActionListener;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -60,9 +54,6 @@
 
 .method public onTouchMove(IIJ)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/event/HwrActionListener;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -75,9 +66,6 @@
 
 .method public onTouchUp(IIJ)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/event/HwrActionListener;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 

@@ -437,7 +437,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 27
-    .param p1    # Landroid/content/Context;
 
     invoke-direct/range {p0 .. p0}, Landroid/app/backup/IBackupManager$Stub;-><init>()V
 
@@ -2154,8 +2153,6 @@
 
 .method static synthetic access$000(Lcom/android/server/BackupManagerService;J)V
     .locals 0
-    .param p0    # Lcom/android/server/BackupManagerService;
-    .param p1    # J
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/BackupManagerService;->startBackupAlarmsLocked(J)V
 
@@ -2164,8 +2161,6 @@
 
 .method static synthetic access$100(Lcom/android/server/BackupManagerService;Ljava/lang/String;)Lcom/android/internal/backup/IBackupTransport;
     .locals 1
-    .param p0    # Lcom/android/server/BackupManagerService;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/BackupManagerService;->getTransport(Ljava/lang/String;)Lcom/android/internal/backup/IBackupTransport;
 
@@ -2176,7 +2171,6 @@
 
 .method static synthetic access$1000(Lcom/android/server/BackupManagerService;)Landroid/app/IActivityManager;
     .locals 1
-    .param p0    # Lcom/android/server/BackupManagerService;
 
     iget-object v0, p0, Lcom/android/server/BackupManagerService;->mActivityManager:Landroid/app/IActivityManager;
 
@@ -2185,7 +2179,6 @@
 
 .method static synthetic access$1100(Lcom/android/server/BackupManagerService;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/server/BackupManagerService;
 
     iget-object v0, p0, Lcom/android/server/BackupManagerService;->mContext:Landroid/content/Context;
 
@@ -2194,9 +2187,6 @@
 
 .method static synthetic access$1200(Lcom/android/server/BackupManagerService;Landroid/os/ParcelFileDescriptor;Ljava/io/OutputStream;)V
     .locals 0
-    .param p0    # Lcom/android/server/BackupManagerService;
-    .param p1    # Landroid/os/ParcelFileDescriptor;
-    .param p2    # Ljava/io/OutputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -2210,8 +2200,6 @@
 
 .method static synthetic access$1500(Lcom/android/server/BackupManagerService;Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Lcom/android/server/BackupManagerService;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/BackupManagerService;->backupPasswordMatches(Ljava/lang/String;)Z
 
@@ -2222,8 +2210,6 @@
 
 .method static synthetic access$1600(Lcom/android/server/BackupManagerService;I)[B
     .locals 1
-    .param p0    # Lcom/android/server/BackupManagerService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/BackupManagerService;->randomBytes(I)[B
 
@@ -2234,11 +2220,6 @@
 
 .method static synthetic access$1700(Lcom/android/server/BackupManagerService;Ljava/lang/String;Ljava/lang/String;[BI)Ljavax/crypto/SecretKey;
     .locals 1
-    .param p0    # Lcom/android/server/BackupManagerService;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # [B
-    .param p4    # I
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/server/BackupManagerService;->buildPasswordKey(Ljava/lang/String;Ljava/lang/String;[BI)Ljavax/crypto/SecretKey;
 
@@ -2249,7 +2230,6 @@
 
 .method static synthetic access$1800(Lcom/android/server/BackupManagerService;)Ljava/security/SecureRandom;
     .locals 1
-    .param p0    # Lcom/android/server/BackupManagerService;
 
     iget-object v0, p0, Lcom/android/server/BackupManagerService;->mRng:Ljava/security/SecureRandom;
 
@@ -2258,8 +2238,6 @@
 
 .method static synthetic access$1900(Lcom/android/server/BackupManagerService;[B)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/server/BackupManagerService;
-    .param p1    # [B
 
     invoke-direct {p0, p1}, Lcom/android/server/BackupManagerService;->byteArrayToHex([B)Ljava/lang/String;
 
@@ -2270,7 +2248,6 @@
 
 .method static synthetic access$200(Lcom/android/server/BackupManagerService;)V
     .locals 0
-    .param p0    # Lcom/android/server/BackupManagerService;
 
     invoke-direct {p0}, Lcom/android/server/BackupManagerService;->warnEdmAdminOperationCompleted()V
 
@@ -2279,11 +2256,6 @@
 
 .method static synthetic access$2000(Lcom/android/server/BackupManagerService;Ljava/lang/String;[B[BI)[B
     .locals 1
-    .param p0    # Lcom/android/server/BackupManagerService;
-    .param p1    # Ljava/lang/String;
-    .param p2    # [B
-    .param p3    # [B
-    .param p4    # I
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/server/BackupManagerService;->makeKeyChecksum(Ljava/lang/String;[B[BI)[B
 
@@ -2294,8 +2266,6 @@
 
 .method static synthetic access$2100(Lcom/android/server/BackupManagerService;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/server/BackupManagerService;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/BackupManagerService;->debugBackupState(Ljava/lang/String;)V
 
@@ -2304,8 +2274,6 @@
 
 .method static synthetic access$2200(Lcom/android/server/BackupManagerService;Ljava/lang/String;)[B
     .locals 1
-    .param p0    # Lcom/android/server/BackupManagerService;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/BackupManagerService;->hexToByteArray(Ljava/lang/String;)[B
 
@@ -2316,9 +2284,6 @@
 
 .method static synthetic access$2300(Lcom/android/server/BackupManagerService;[Landroid/content/pm/Signature;Landroid/content/pm/PackageInfo;)Z
     .locals 1
-    .param p0    # Lcom/android/server/BackupManagerService;
-    .param p1    # [Landroid/content/pm/Signature;
-    .param p2    # Landroid/content/pm/PackageInfo;
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/BackupManagerService;->signaturesMatch([Landroid/content/pm/Signature;Landroid/content/pm/PackageInfo;)Z
 
@@ -2329,9 +2294,6 @@
 
 .method static synthetic access$2400(Lcom/android/server/BackupManagerService;Ljava/lang/String;Ljava/util/HashSet;)V
     .locals 0
-    .param p0    # Lcom/android/server/BackupManagerService;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/util/HashSet;
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/BackupManagerService;->dataChangedImpl(Ljava/lang/String;Ljava/util/HashSet;)V
 
@@ -2340,8 +2302,6 @@
 
 .method static synthetic access$2700(Lcom/android/server/BackupManagerService;I)V
     .locals 0
-    .param p0    # Lcom/android/server/BackupManagerService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/BackupManagerService;->resetEdmBackupTags(I)V
 
@@ -2350,8 +2310,6 @@
 
 .method static synthetic access$2800(Lcom/android/server/BackupManagerService;I)V
     .locals 0
-    .param p0    # Lcom/android/server/BackupManagerService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/BackupManagerService;->resetEdmRestoreTags(I)V
 
@@ -2360,7 +2318,6 @@
 
 .method static synthetic access$300(Lcom/android/server/BackupManagerService;)Landroid/app/AlarmManager;
     .locals 1
-    .param p0    # Lcom/android/server/BackupManagerService;
 
     iget-object v0, p0, Lcom/android/server/BackupManagerService;->mAlarmManager:Landroid/app/AlarmManager;
 
@@ -2369,10 +2326,6 @@
 
 .method static synthetic access$700(Lcom/android/server/BackupManagerService;Ljava/lang/String;Ljava/lang/String;Lcom/android/internal/backup/IBackupTransport;)V
     .locals 0
-    .param p0    # Lcom/android/server/BackupManagerService;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/android/internal/backup/IBackupTransport;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/server/BackupManagerService;->registerTransport(Ljava/lang/String;Ljava/lang/String;Lcom/android/internal/backup/IBackupTransport;)V
 
@@ -2381,7 +2334,6 @@
 
 .method static synthetic access$800(Lcom/android/server/BackupManagerService;)Landroid/content/pm/PackageManager;
     .locals 1
-    .param p0    # Lcom/android/server/BackupManagerService;
 
     iget-object v0, p0, Lcom/android/server/BackupManagerService;->mPackageManager:Landroid/content/pm/PackageManager;
 
@@ -2390,8 +2342,6 @@
 
 .method static synthetic access$900(Lcom/android/server/BackupManagerService;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/server/BackupManagerService;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/BackupManagerService;->dataChangedImpl(Ljava/lang/String;)V
 
@@ -2400,7 +2350,6 @@
 
 .method private addPackageParticipantsLockedInner(Ljava/lang/String;Ljava/util/List;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2504,7 +2453,6 @@
 
 .method private backupPasswordMatches(Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     const/16 v5, 0x2710
 
@@ -2568,10 +2516,6 @@
 
 .method private buildCharArrayKey(Ljava/lang/String;[C[BI)Ljavax/crypto/SecretKey;
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # [C
-    .param p3    # [B
-    .param p4    # I
 
     :try_start_0
     invoke-static {p1}, Ljavax/crypto/SecretKeyFactory;->getInstance(Ljava/lang/String;)Ljavax/crypto/SecretKeyFactory;
@@ -2622,10 +2566,6 @@
 
 .method private buildPasswordHash(Ljava/lang/String;Ljava/lang/String;[BI)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # [B
-    .param p4    # I
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/server/BackupManagerService;->buildPasswordKey(Ljava/lang/String;Ljava/lang/String;[BI)Ljavax/crypto/SecretKey;
 
@@ -2652,10 +2592,6 @@
 
 .method private buildPasswordKey(Ljava/lang/String;Ljava/lang/String;[BI)Ljavax/crypto/SecretKey;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # [B
-    .param p4    # I
 
     invoke-virtual {p2}, Ljava/lang/String;->toCharArray()[C
 
@@ -2670,7 +2606,6 @@
 
 .method private byteArrayToHex([B)Ljava/lang/String;
     .locals 4
-    .param p1    # [B
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -2711,7 +2646,6 @@
 
 .method private dataChangedImpl(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/BackupManagerService;->dataChangedTargets(Ljava/lang/String;)Ljava/util/HashSet;
 
@@ -2724,7 +2658,6 @@
 
 .method private dataChangedImpl(Ljava/lang/String;Ljava/util/HashSet;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2852,7 +2785,6 @@
 
 .method private dataChangedTargets(Ljava/lang/String;)Ljava/util/HashSet;
     .locals 8
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2973,7 +2905,6 @@
 
 .method private debugBackupState(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const-string/jumbo v0, "ro.debuggable"
 
@@ -2999,7 +2930,6 @@
 
 .method private dumpInternal(Ljava/io/PrintWriter;)V
     .locals 26
-    .param p1    # Ljava/io/PrintWriter;
 
     move-object/from16 v0, p0
 
@@ -4305,7 +4235,6 @@
 
 .method private getTransport(Ljava/lang/String;)Lcom/android/internal/backup/IBackupTransport;
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     iget-object v2, p0, Lcom/android/server/BackupManagerService;->mTransports:Ljava/util/HashMap;
 
@@ -4361,7 +4290,6 @@
 
 .method private hexToByteArray(Ljava/lang/String;)[B
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p1}, Ljava/lang/String;->length()I
 
@@ -5016,10 +4944,6 @@
 
 .method private makeKeyChecksum(Ljava/lang/String;[B[BI)[B
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # [B
-    .param p3    # [B
-    .param p4    # I
 
     array-length v3, p2
 
@@ -5257,7 +5181,6 @@
 
 .method private randomBytes(I)[B
     .locals 2
-    .param p1    # I
 
     div-int/lit8 v1, p1, 0x8
 
@@ -5272,9 +5195,6 @@
 
 .method private registerTransport(Ljava/lang/String;Ljava/lang/String;Lcom/android/internal/backup/IBackupTransport;)V
     .locals 12
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/android/internal/backup/IBackupTransport;
 
     iget-object v7, p0, Lcom/android/server/BackupManagerService;->mTransports:Ljava/util/HashMap;
 
@@ -5477,7 +5397,6 @@
 
 .method private removePackageFromSetLocked(Ljava/util/HashSet;Ljava/lang/String;)V
     .locals 1
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -5508,7 +5427,6 @@
 
 .method private resetEdmBackupTags(I)V
     .locals 4
-    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -5552,7 +5470,6 @@
 
 .method private resetEdmRestoreTags(I)V
     .locals 4
-    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -5596,8 +5513,6 @@
 
 .method private routeSocketDataToOutput(Landroid/os/ParcelFileDescriptor;Ljava/io/OutputStream;)V
     .locals 8
-    .param p1    # Landroid/os/ParcelFileDescriptor;
-    .param p2    # Ljava/io/OutputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -5660,8 +5575,6 @@
 
 .method private signaturesMatch([Landroid/content/pm/Signature;Landroid/content/pm/PackageInfo;)Z
     .locals 10
-    .param p1    # [Landroid/content/pm/Signature;
-    .param p2    # Landroid/content/pm/PackageInfo;
 
     const/4 v7, 0x0
 
@@ -5784,7 +5697,6 @@
 
 .method private startBackupAlarmsLocked(J)V
     .locals 10
-    .param p1    # J
 
     const v6, 0x493e0
 
@@ -5856,7 +5768,6 @@
 
 .method private writeToJournalLocked(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -6013,11 +5924,6 @@
 # virtual methods
 .method public acknowledgeFullBackupOrRestore(IZLjava/lang/String;Ljava/lang/String;Landroid/app/backup/IFullBackupRestoreObserver;)V
     .locals 12
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Landroid/app/backup/IFullBackupRestoreObserver;
 
     const-string v8, "BackupManagerService"
 
@@ -6280,7 +6186,6 @@
 
 .method addBackupTrace(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/server/BackupManagerService;->mBackupTrace:Ljava/util/List;
 
@@ -6307,7 +6212,6 @@
 
 .method addPackageParticipantsLocked([Ljava/lang/String;)V
     .locals 8
-    .param p1    # [Ljava/lang/String;
 
     invoke-virtual {p0}, Lcom/android/server/BackupManagerService;->allAgentPackages()Ljava/util/List;
 
@@ -6373,8 +6277,6 @@
 
 .method public agentConnected(Ljava/lang/String;Landroid/os/IBinder;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/IBinder;
 
     iget-object v2, p0, Lcom/android/server/BackupManagerService;->mAgentConnectLock:Ljava/lang/Object;
 
@@ -6487,7 +6389,6 @@
 
 .method public agentDisconnected(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/server/BackupManagerService;->mAgentConnectLock:Ljava/lang/Object;
 
@@ -6719,8 +6620,6 @@
 
 .method public beginRestoreSession(Ljava/lang/String;Ljava/lang/String;)Landroid/app/backup/IRestoreSession;
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const-string v3, "BackupManagerService"
 
@@ -6948,8 +6847,6 @@
 
 .method bindToAgentSynchronous(Landroid/content/pm/ApplicationInfo;I)Landroid/app/IBackupAgent;
     .locals 11
-    .param p1    # Landroid/content/pm/ApplicationInfo;
-    .param p2    # I
 
     const/4 v10, 0x1
 
@@ -7184,7 +7081,6 @@
 
 .method clearApplicationDataSynchronous(Ljava/lang/String;)V
     .locals 12
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     iget-boolean v6, p0, Lcom/android/server/BackupManagerService;->isEdmRestoreRequest:Z
@@ -7395,8 +7291,6 @@
 
 .method public clearBackupData(Ljava/lang/String;Ljava/lang/String;)V
     .locals 15
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const-string v11, "BackupManagerService"
 
@@ -7681,7 +7575,6 @@
 
 .method clearRestoreSession(Lcom/android/server/BackupManagerService$ActiveRestoreSession;)V
     .locals 2
-    .param p1    # Lcom/android/server/BackupManagerService$ActiveRestoreSession;
 
     monitor-enter p0
 
@@ -7734,7 +7627,6 @@
 
 .method public dataChanged(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Landroid/os/UserHandle;->getCallingUserId()I
 
@@ -7835,9 +7727,6 @@
 
 .method public dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     iget-object v2, p0, Lcom/android/server/BackupManagerService;->mContext:Landroid/content/Context;
 
@@ -7870,13 +7759,6 @@
 
 .method public fullBackup(Landroid/os/ParcelFileDescriptor;ZZZZZ[Ljava/lang/String;)V
     .locals 13
-    .param p1    # Landroid/os/ParcelFileDescriptor;
-    .param p2    # Z
-    .param p3    # Z
-    .param p4    # Z
-    .param p5    # Z
-    .param p6    # Z
-    .param p7    # [Ljava/lang/String;
 
     iget-boolean v2, p0, Lcom/android/server/BackupManagerService;->isEdmBackupRequest:Z
 
@@ -8325,7 +8207,6 @@
 
 .method public fullRestore(Landroid/os/ParcelFileDescriptor;)V
     .locals 11
-    .param p1    # Landroid/os/ParcelFileDescriptor;
 
     iget-boolean v0, p0, Lcom/android/server/BackupManagerService;->isEdmRestoreRequest:Z
 
@@ -8841,7 +8722,6 @@
 
 .method getAvailableRestoreToken(Ljava/lang/String;)J
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     iget-wide v0, p0, Lcom/android/server/BackupManagerService;->mAncestralToken:J
 
@@ -8877,7 +8757,6 @@
 
 .method public getConfigurationIntent(Ljava/lang/String;)Landroid/content/Intent;
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     iget-object v2, p0, Lcom/android/server/BackupManagerService;->mContext:Landroid/content/Context;
 
@@ -8956,7 +8835,6 @@
 
 .method public getDestinationString(Ljava/lang/String;)Ljava/lang/String;
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     iget-object v2, p0, Lcom/android/server/BackupManagerService;->mContext:Landroid/content/Context;
 
@@ -9019,8 +8897,6 @@
 
 .method handleTimeout(ILjava/lang/Object;)V
     .locals 7
-    .param p1    # I
-    .param p2    # Ljava/lang/Object;
 
     const/4 v2, -0x1
 
@@ -9260,7 +9136,6 @@
 
 .method logBackupComplete(Ljava/lang/String;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const-string v3, "@pm@"
 
@@ -9450,7 +9325,6 @@
 
 .method public opComplete(I)V
     .locals 6
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -9522,9 +9396,6 @@
 
 .method passwordMatchesSaved(Ljava/lang/String;Ljava/lang/String;I)Z
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     const/4 v4, 0x1
 
@@ -9644,9 +9515,6 @@
 
 .method prepareOperationTimeout(IJLcom/android/server/BackupManagerService$BackupRestoreTask;)V
     .locals 5
-    .param p1    # I
-    .param p2    # J
-    .param p4    # Lcom/android/server/BackupManagerService$BackupRestoreTask;
 
     iget-object v2, p0, Lcom/android/server/BackupManagerService;->mCurrentOpLock:Ljava/lang/Object;
 
@@ -9693,8 +9561,6 @@
 
 .method recordInitPendingLocked(ZLjava/lang/String;)V
     .locals 9
-    .param p1    # Z
-    .param p2    # Ljava/lang/String;
 
     const/16 v8, 0xb
 
@@ -9835,7 +9701,6 @@
 
 .method removeEverBackedUp(Ljava/lang/String;)V
     .locals 10
-    .param p1    # Ljava/lang/String;
 
     const-string v6, "BackupManagerService"
 
@@ -10096,8 +9961,6 @@
 
 .method removePackageParticipantsLocked([Ljava/lang/String;I)V
     .locals 8
-    .param p1    # [Ljava/lang/String;
-    .param p2    # I
 
     if-nez p1, :cond_1
 
@@ -10192,7 +10055,6 @@
 
 .method resetBackupState(Ljava/io/File;)V
     .locals 12
-    .param p1    # Ljava/io/File;
 
     iget-object v9, p0, Lcom/android/server/BackupManagerService;->mQueueLock:Ljava/lang/Object;
 
@@ -10332,8 +10194,6 @@
 
 .method public restoreAtInstall(Ljava/lang/String;I)V
     .locals 13
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-static {}, Landroid/os/Binder;->getCallingUid()I
 
@@ -10555,7 +10415,6 @@
 
 .method public selectBackupTransport(Ljava/lang/String;)Ljava/lang/String;
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/server/BackupManagerService;->mContext:Landroid/content/Context;
 
@@ -10670,7 +10529,6 @@
 
 .method public setAutoRestore(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/server/BackupManagerService;->mContext:Landroid/content/Context;
 
@@ -10743,7 +10601,6 @@
 
 .method public setBackupEnabled(Z)V
     .locals 13
-    .param p1    # Z
 
     const/4 v8, 0x0
 
@@ -11001,8 +10858,6 @@
 
 .method public setBackupPassword(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 22
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     move-object/from16 v0, p0
 
@@ -11516,7 +11371,6 @@
 
 .method public setBackupProvisioned(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/server/BackupManagerService;->mContext:Landroid/content/Context;
 
@@ -11531,9 +11385,6 @@
 
 .method public setupEdmBackupRestore(ZLjava/lang/String;I)Z
     .locals 3
-    .param p1    # Z
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     const/4 v0, 0x1
 
@@ -11607,7 +11458,6 @@
 
 .method signalFullBackupRestoreCompletion(Lcom/android/server/BackupManagerService$FullParams;)V
     .locals 4
-    .param p1    # Lcom/android/server/BackupManagerService$FullParams;
 
     const/4 v3, -0x2
 
@@ -11664,8 +11514,6 @@
 
 .method startConfirmationTimeout(ILcom/android/server/BackupManagerService$FullParams;)V
     .locals 4
-    .param p1    # I
-    .param p2    # Lcom/android/server/BackupManagerService$FullParams;
 
     iget-object v1, p0, Lcom/android/server/BackupManagerService;->mBackupHandler:Lcom/android/server/BackupManagerService$BackupHandler;
 
@@ -11688,8 +11536,6 @@
 
 .method startConfirmationUi(ILjava/lang/String;)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     :try_start_0
     new-instance v0, Landroid/content/Intent;
@@ -11731,7 +11577,6 @@
 
 .method waitForCompletion(Lcom/android/server/BackupManagerService$FullParams;)V
     .locals 2
-    .param p1    # Lcom/android/server/BackupManagerService$FullParams;
 
     iget-object v1, p1, Lcom/android/server/BackupManagerService$FullParams;->latch:Ljava/util/concurrent/atomic/AtomicBoolean;
 
@@ -11782,7 +11627,6 @@
 
 .method waitUntilOperationComplete(I)Z
     .locals 6
-    .param p1    # I
 
     const/4 v4, 0x1
 

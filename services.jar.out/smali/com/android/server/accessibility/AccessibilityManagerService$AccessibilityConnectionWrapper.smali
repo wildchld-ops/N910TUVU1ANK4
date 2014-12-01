@@ -30,9 +30,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/accessibility/AccessibilityManagerService;ILandroid/view/accessibility/IAccessibilityInteractionConnection;I)V
     .locals 0
-    .param p2    # I
-    .param p3    # Landroid/view/accessibility/IAccessibilityInteractionConnection;
-    .param p4    # I
 
     iput-object p1, p0, Lcom/android/server/accessibility/AccessibilityManagerService$AccessibilityConnectionWrapper;->this$0:Lcom/android/server/accessibility/AccessibilityManagerService;
 
@@ -49,7 +46,6 @@
 
 .method static synthetic access$3700(Lcom/android/server/accessibility/AccessibilityManagerService$AccessibilityConnectionWrapper;)Landroid/view/accessibility/IAccessibilityInteractionConnection;
     .locals 1
-    .param p0    # Lcom/android/server/accessibility/AccessibilityManagerService$AccessibilityConnectionWrapper;
 
     iget-object v0, p0, Lcom/android/server/accessibility/AccessibilityManagerService$AccessibilityConnectionWrapper;->mConnection:Landroid/view/accessibility/IAccessibilityInteractionConnection;
 

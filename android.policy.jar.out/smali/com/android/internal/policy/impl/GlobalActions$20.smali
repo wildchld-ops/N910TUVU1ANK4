@@ -23,9 +23,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/internal/policy/impl/GlobalActions;ILandroid/graphics/drawable/Drawable;Ljava/lang/CharSequence;Landroid/content/pm/UserInfo;)V
     .locals 0
-    .param p2    # I
-    .param p3    # Landroid/graphics/drawable/Drawable;
-    .param p4    # Ljava/lang/CharSequence;
 
     iput-object p1, p0, Lcom/android/internal/policy/impl/GlobalActions$20;->this$0:Lcom/android/internal/policy/impl/GlobalActions;
 

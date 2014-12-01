@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,8 +36,6 @@
 # virtual methods
 .method public applicationStarted(Ljava/lang/String;I)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -92,7 +89,6 @@
 
 .method public applicationStopping(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -152,8 +148,6 @@
 
 .method public getCertificationManager(Ljava/lang/String;Lcom/mirrorlink/android/commonapi/ICertificationListener;)Lcom/mirrorlink/android/commonapi/ICertificationManager;
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/mirrorlink/android/commonapi/ICertificationListener;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -280,8 +274,6 @@
 
 .method public getConnectionManager(Ljava/lang/String;Lcom/mirrorlink/android/commonapi/IConnectionListener;)Lcom/mirrorlink/android/commonapi/IConnectionManager;
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/mirrorlink/android/commonapi/IConnectionListener;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -355,8 +347,6 @@
 
 .method public getContextManager(Ljava/lang/String;Lcom/mirrorlink/android/commonapi/IContextListener;)Lcom/mirrorlink/android/commonapi/IContextManager;
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/mirrorlink/android/commonapi/IContextListener;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -430,8 +420,6 @@
 
 .method public getDataServicesManager(Ljava/lang/String;Lcom/mirrorlink/android/commonapi/IDataServicesListener;)Lcom/mirrorlink/android/commonapi/IDataServicesManager;
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/mirrorlink/android/commonapi/IDataServicesListener;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -505,8 +493,6 @@
 
 .method public getDeviceInfoManager(Ljava/lang/String;Lcom/mirrorlink/android/commonapi/IDeviceInfoListener;)Lcom/mirrorlink/android/commonapi/IDeviceInfoManager;
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/mirrorlink/android/commonapi/IDeviceInfoListener;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -580,8 +566,6 @@
 
 .method public getDeviceStatusManager(Ljava/lang/String;Lcom/mirrorlink/android/commonapi/IDeviceStatusListener;)Lcom/mirrorlink/android/commonapi/IDeviceStatusManager;
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/mirrorlink/android/commonapi/IDeviceStatusListener;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -655,8 +639,6 @@
 
 .method public getDisplayManager(Ljava/lang/String;Lcom/mirrorlink/android/commonapi/IDisplayListener;)Lcom/mirrorlink/android/commonapi/IDisplayManager;
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/mirrorlink/android/commonapi/IDisplayListener;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -730,8 +712,6 @@
 
 .method public getEventMappingManager(Ljava/lang/String;Lcom/mirrorlink/android/commonapi/IEventMappingListener;)Lcom/mirrorlink/android/commonapi/IEventMappingManager;
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/mirrorlink/android/commonapi/IEventMappingListener;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -813,8 +793,6 @@
 
 .method public getNotificationManager(Ljava/lang/String;Lcom/mirrorlink/android/commonapi/INotificationListener;)Lcom/mirrorlink/android/commonapi/INotificationManager;
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/mirrorlink/android/commonapi/INotificationListener;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

@@ -21,7 +21,6 @@
 # direct methods
 .method constructor <init>(Lcom/sec/android/app/camera/glwidget/TwGLSelfieAlarmMenu;Landroid/os/Looper;)V
     .locals 0
-    .param p2    # Landroid/os/Looper;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLSelfieAlarmMenu$MyHandler;->this$0:Lcom/sec/android/app/camera/glwidget/TwGLSelfieAlarmMenu;
 
@@ -34,7 +33,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 4
-    .param p1    # Landroid/os/Message;
 
     iget v0, p1, Landroid/os/Message;->what:I
 

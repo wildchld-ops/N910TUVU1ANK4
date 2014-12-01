@@ -68,7 +68,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/wifi/WifiHiddenApListFragment;)Lcom/android/settings/wifi/WifiHiddenApAddDialog;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiHiddenApListFragment;
 
     iget-object v0, p0, Lcom/android/settings/wifi/WifiHiddenApListFragment;->mDialogConfigure:Lcom/android/settings/wifi/WifiHiddenApAddDialog;
 
@@ -77,7 +76,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/wifi/WifiHiddenApListFragment;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiHiddenApListFragment;
 
     iget-object v0, p0, Lcom/android/settings/wifi/WifiHiddenApListFragment;->mList:Ljava/util/ArrayList;
 
@@ -86,7 +84,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/wifi/WifiHiddenApListFragment;)Landroid/widget/ListView;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiHiddenApListFragment;
 
     iget-object v0, p0, Lcom/android/settings/wifi/WifiHiddenApListFragment;->mListView:Landroid/widget/ListView;
 
@@ -95,8 +92,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/wifi/WifiHiddenApListFragment;Ljava/lang/String;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiHiddenApListFragment;
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
@@ -107,7 +102,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/wifi/WifiHiddenApListFragment;)Landroid/widget/ArrayAdapter;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiHiddenApListFragment;
 
     iget-object v0, p0, Lcom/android/settings/wifi/WifiHiddenApListFragment;->mAdapter:Landroid/widget/ArrayAdapter;
 
@@ -116,7 +110,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/wifi/WifiHiddenApListFragment;)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/WifiHiddenApListFragment;
 
     invoke-direct {p0}, Lcom/android/settings/wifi/WifiHiddenApListFragment;->saveFile()V
 
@@ -277,7 +270,6 @@
 
 .method private updateEmptyView(I)V
     .locals 3
-    .param p1    # I
 
     const/16 v2, 0x8
 
@@ -314,7 +306,6 @@
 # virtual methods
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 1
-    .param p1    # Landroid/content/res/Configuration;
 
     iget v0, p1, Landroid/content/res/Configuration;->orientation:I
 
@@ -327,7 +318,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -342,8 +332,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
     .locals 4
-    .param p1    # Landroid/view/Menu;
-    .param p2    # Landroid/view/MenuInflater;
 
     const/4 v3, 0x1
 
@@ -392,9 +380,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 6
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const v2, 0x7f0402aa
 

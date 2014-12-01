@@ -14,7 +14,6 @@
 
 .method public static reverse([D)[D
     .locals 6
-    .param p0    # [D
 
     const/4 v0, 0x0
 

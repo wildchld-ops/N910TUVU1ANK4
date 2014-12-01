@@ -10,8 +10,6 @@
 # direct methods
 .method protected constructor <init>(Landroid/content/Context;I)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     invoke-direct {p0, p2}, Landroid/hardware/contextaware/utilbundle/autotest/OperationDebugging;-><init>(I)V
 
@@ -32,7 +30,6 @@
 # virtual methods
 .method protected final doDebugging([B)V
     .locals 4
-    .param p1    # [B
 
     iget-object v1, p0, Landroid/hardware/contextaware/utilbundle/autotest/SensorHubOperationDebugging;->mSensorHubManager:Landroid/hardware/sensorhub/SensorHubManager;
 

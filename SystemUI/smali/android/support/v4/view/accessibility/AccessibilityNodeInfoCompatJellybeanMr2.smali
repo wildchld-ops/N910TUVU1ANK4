@@ -14,7 +14,6 @@
 
 .method public static getViewIdResourceName(Ljava/lang/Object;)Ljava/lang/String;
     .locals 1
-    .param p0    # Ljava/lang/Object;
 
     check-cast p0, Landroid/view/accessibility/AccessibilityNodeInfo;
 
@@ -27,8 +26,6 @@
 
 .method public static setViewIdResourceName(Ljava/lang/Object;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Ljava/lang/Object;
-    .param p1    # Ljava/lang/String;
 
     check-cast p0, Landroid/view/accessibility/AccessibilityNodeInfo;
 

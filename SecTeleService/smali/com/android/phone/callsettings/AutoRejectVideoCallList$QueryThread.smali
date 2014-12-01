@@ -140,7 +140,7 @@
 
     iget-object v0, p0, Lcom/android/phone/callsettings/AutoRejectVideoCallList$QueryThread;->this$0:Lcom/android/phone/callsettings/AutoRejectVideoCallList;
 
-    invoke-virtual {v0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v0}, Lcom/android/phone/callsettings/AutoRejectVideoCallList;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 

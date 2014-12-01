@@ -120,8 +120,6 @@
 
 .method private copyParams(Landroid/view/ViewGroup;Landroid/view/ViewGroup;)V
     .locals 1
-    .param p1    # Landroid/view/ViewGroup;
-    .param p2    # Landroid/view/ViewGroup;
 
     if-eqz p2, :cond_0
 
@@ -160,9 +158,6 @@
 # virtual methods
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 3
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const-string v1, "onCreateView..."
 
@@ -300,8 +295,6 @@
 
 .method public onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/os/Bundle;
 
     const/16 v3, 0x8
 
@@ -1026,7 +1019,6 @@
 
 .method public showHighQualitySoundText(Z)V
     .locals 8
-    .param p1    # Z
 
     const/4 v3, -0x2
 
@@ -1295,7 +1287,6 @@
 
 .method public updatePrimaryCallBanner(I)V
     .locals 2
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -1440,7 +1431,6 @@
 
 .method public updatePrimaryCallBannerLayout(I)V
     .locals 11
-    .param p1    # I
 
     const v10, 0x7f0d009d
 

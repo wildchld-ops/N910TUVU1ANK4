@@ -27,7 +27,6 @@
 
 .method public constructor <init>(Z)V
     .locals 0
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Landroid/text/LoginFilter;-><init>(Z)V
 
@@ -38,7 +37,6 @@
 # virtual methods
 .method public isAllowed(C)Z
     .locals 2
-    .param p1    # C
 
     const/4 v0, 0x1
 

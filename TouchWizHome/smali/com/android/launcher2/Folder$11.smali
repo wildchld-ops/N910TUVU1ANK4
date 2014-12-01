@@ -36,8 +36,6 @@
 # virtual methods
 .method public buildView(Lcom/android/launcher2/BaseItem;Lcom/android/launcher2/CellLayout;)Landroid/view/View;
     .locals 5
-    .param p1    # Lcom/android/launcher2/BaseItem;
-    .param p2    # Lcom/android/launcher2/CellLayout;
 
     const/4 v0, 0x0
 
@@ -86,9 +84,6 @@
 
 .method public onViewAdded(Landroid/view/View;Lcom/android/launcher2/BaseItem;Lcom/android/launcher2/CellLayout;)V
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # Lcom/android/launcher2/BaseItem;
-    .param p3    # Lcom/android/launcher2/CellLayout;
 
     const/4 v1, -0x1
 

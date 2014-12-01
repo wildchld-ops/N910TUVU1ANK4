@@ -19,18 +19,6 @@
 # direct methods
 .method public constructor <init>(Lcom/sec/android/app/camera/gallery/BaseImageList;Landroid/content/ContentResolver;JILandroid/net/Uri;Ljava/lang/String;JLjava/lang/String;JLjava/lang/String;Ljava/lang/String;I)V
     .locals 0
-    .param p1    # Lcom/sec/android/app/camera/gallery/BaseImageList;
-    .param p2    # Landroid/content/ContentResolver;
-    .param p3    # J
-    .param p5    # I
-    .param p6    # Landroid/net/Uri;
-    .param p7    # Ljava/lang/String;
-    .param p8    # J
-    .param p10    # Ljava/lang/String;
-    .param p11    # J
-    .param p13    # Ljava/lang/String;
-    .param p14    # Ljava/lang/String;
-    .param p15    # I
 
     invoke-direct/range {p0 .. p14}, Lcom/sec/android/app/camera/gallery/BaseImage;-><init>(Lcom/sec/android/app/camera/gallery/BaseImageList;Landroid/content/ContentResolver;JILandroid/net/Uri;Ljava/lang/String;JLjava/lang/String;JLjava/lang/String;Ljava/lang/String;)V
 
@@ -95,7 +83,6 @@
 
 .method private setExifRotation(I)V
     .locals 5
-    .param p1    # I
 
     :try_start_0
     rem-int/lit16 p1, p1, 0x168
@@ -239,8 +226,6 @@
 
 .method public replaceExifTag(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/sec/android/app/camera/gallery/Image;->loadExifData()V
 
@@ -258,7 +243,6 @@
 
 .method public rotateImageBy(I)Z
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/gallery/Image;->getDegreesRotated()I
 
@@ -279,7 +263,6 @@
 
 .method protected setDegreesRotated(I)V
     .locals 4
-    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -318,7 +301,6 @@
 
 .method public thumbBitmap(Z)Landroid/graphics/Bitmap;
     .locals 4
-    .param p1    # Z
 
     const/4 v0, 0x0
 

@@ -59,7 +59,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -70,8 +69,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 12
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v11, 0x1
 
@@ -322,11 +319,6 @@
 
 .method static measureChildForCells(Landroid/view/View;IIII)I
     .locals 13
-    .param p0    # Landroid/view/View;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-virtual {p0}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
@@ -456,8 +448,6 @@
 
 .method private onMeasureExactFormat(II)V
     .locals 43
-    .param p1    # I
-    .param p2    # I
 
     invoke-static/range {p2 .. p2}, Landroid/view/View$MeasureSpec;->getMode(I)I
 
@@ -1724,7 +1714,6 @@
 
 .method protected checkLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Z
     .locals 1
-    .param p1    # Landroid/view/ViewGroup$LayoutParams;
 
     if-eqz p1, :cond_0
 
@@ -1745,7 +1734,6 @@
 
 .method public dispatchPopulateAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
 
     const/4 v0, 0x0
 
@@ -1790,7 +1778,6 @@
 
 .method public bridge synthetic generateLayoutParams(Landroid/util/AttributeSet;)Landroid/view/ViewGroup$LayoutParams;
     .locals 1
-    .param p1    # Landroid/util/AttributeSet;
 
     invoke-virtual {p0, p1}, Lcom/android/internal/view/menu/ActionMenuView;->generateLayoutParams(Landroid/util/AttributeSet;)Lcom/android/internal/view/menu/ActionMenuView$LayoutParams;
 
@@ -1801,7 +1788,6 @@
 
 .method protected bridge synthetic generateLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Landroid/view/ViewGroup$LayoutParams;
     .locals 1
-    .param p1    # Landroid/view/ViewGroup$LayoutParams;
 
     invoke-virtual {p0, p1}, Lcom/android/internal/view/menu/ActionMenuView;->generateLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Lcom/android/internal/view/menu/ActionMenuView$LayoutParams;
 
@@ -1812,7 +1798,6 @@
 
 .method public bridge synthetic generateLayoutParams(Landroid/util/AttributeSet;)Landroid/widget/LinearLayout$LayoutParams;
     .locals 1
-    .param p1    # Landroid/util/AttributeSet;
 
     invoke-virtual {p0, p1}, Lcom/android/internal/view/menu/ActionMenuView;->generateLayoutParams(Landroid/util/AttributeSet;)Lcom/android/internal/view/menu/ActionMenuView$LayoutParams;
 
@@ -1823,7 +1808,6 @@
 
 .method protected bridge synthetic generateLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Landroid/widget/LinearLayout$LayoutParams;
     .locals 1
-    .param p1    # Landroid/view/ViewGroup$LayoutParams;
 
     invoke-virtual {p0, p1}, Lcom/android/internal/view/menu/ActionMenuView;->generateLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Lcom/android/internal/view/menu/ActionMenuView$LayoutParams;
 
@@ -1834,7 +1818,6 @@
 
 .method public generateLayoutParams(Landroid/util/AttributeSet;)Lcom/android/internal/view/menu/ActionMenuView$LayoutParams;
     .locals 2
-    .param p1    # Landroid/util/AttributeSet;
 
     new-instance v0, Lcom/android/internal/view/menu/ActionMenuView$LayoutParams;
 
@@ -1849,7 +1832,6 @@
 
 .method protected generateLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Lcom/android/internal/view/menu/ActionMenuView$LayoutParams;
     .locals 2
-    .param p1    # Landroid/view/ViewGroup$LayoutParams;
 
     if-eqz p1, :cond_2
 
@@ -1915,7 +1897,6 @@
 
 .method protected hasDividerBeforeChildAt(I)Z
     .locals 5
-    .param p1    # I
 
     iget-boolean v3, p0, Lcom/android/internal/view/menu/ActionMenuView;->mIsParentThemeDeviceDefault:Z
 
@@ -2043,7 +2024,6 @@
 
 .method public initialize(Lcom/android/internal/view/menu/MenuBuilder;)V
     .locals 0
-    .param p1    # Lcom/android/internal/view/menu/MenuBuilder;
 
     iput-object p1, p0, Lcom/android/internal/view/menu/ActionMenuView;->mMenu:Lcom/android/internal/view/menu/MenuBuilder;
 
@@ -2052,7 +2032,6 @@
 
 .method public invokeItem(Lcom/android/internal/view/menu/MenuItemImpl;)Z
     .locals 2
-    .param p1    # Lcom/android/internal/view/menu/MenuItemImpl;
 
     iget-object v0, p0, Lcom/android/internal/view/menu/ActionMenuView;->mMenu:Lcom/android/internal/view/menu/MenuBuilder;
 
@@ -2083,7 +2062,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 10
-    .param p1    # Landroid/content/res/Configuration;
 
     const/4 v9, 0x0
 
@@ -2242,11 +2220,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 32
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     move-object/from16 v0, p0
 
@@ -2747,8 +2720,6 @@
 
 .method protected onMeasure(II)V
     .locals 10
-    .param p1    # I
-    .param p2    # I
 
     const/4 v7, 0x1
 
@@ -2865,7 +2836,6 @@
 
 .method public setMaxItemHeight(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/internal/view/menu/ActionMenuView;->mMaxItemHeight:I
 
@@ -2876,7 +2846,6 @@
 
 .method public setOverflowReserved(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/internal/view/menu/ActionMenuView;->mReserveOverflow:Z
 
@@ -2885,7 +2854,6 @@
 
 .method public setPresenter(Lcom/android/internal/view/menu/ActionMenuPresenter;)V
     .locals 0
-    .param p1    # Lcom/android/internal/view/menu/ActionMenuPresenter;
 
     iput-object p1, p0, Lcom/android/internal/view/menu/ActionMenuView;->mPresenter:Lcom/android/internal/view/menu/ActionMenuPresenter;
 

@@ -18,7 +18,6 @@
 
 .method public static getInstance(Landroid/content/Context;)Landroid/webkitsec/WebViewDatabase;
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     invoke-static {}, Landroid/webkitsec/WebViewFactory;->getProvider()Landroid/webkitsec/WebViewFactoryProvider;
 

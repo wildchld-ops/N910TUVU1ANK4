@@ -23,8 +23,6 @@
 # direct methods
 .method constructor <init>(Ljava/lang/String;Landroid/content/Intent;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/Intent;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

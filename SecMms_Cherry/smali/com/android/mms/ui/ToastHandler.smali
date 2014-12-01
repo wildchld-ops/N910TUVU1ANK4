@@ -14,7 +14,6 @@
 # direct methods
 .method public constructor <init>(Landroid/os/Looper;)V
     .locals 2
-    .param p1    # Landroid/os/Looper;
 
     invoke-direct {p0, p1}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
@@ -29,8 +28,6 @@
 
 .method public static createToastInfo(Ljava/lang/String;I)Landroid/os/Bundle;
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
 
     new-instance v0, Landroid/os/Bundle;
 
@@ -53,7 +50,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 9
-    .param p1    # Landroid/os/Message;
 
     const-string v6, "Mms/ToastHandler"
 

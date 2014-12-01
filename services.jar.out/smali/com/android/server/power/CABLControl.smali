@@ -62,7 +62,6 @@
 
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     const/4 v3, 0x0
 
@@ -199,7 +198,6 @@
 
 .method private CablDaemonControl(Ljava/lang/String;)V
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     const/4 v7, 0x0
 
@@ -378,7 +376,6 @@
 
 .method static synthetic access$102(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/server/power/CABLControl;->mAutoBrightnessEnabled:Z
 
@@ -387,7 +384,6 @@
 
 .method static synthetic access$200(Lcom/android/server/power/CABLControl;)Z
     .locals 1
-    .param p0    # Lcom/android/server/power/CABLControl;
 
     invoke-direct {p0}, Lcom/android/server/power/CABLControl;->isTablet()Z
 
@@ -406,7 +402,6 @@
 
 .method public static getInstance(Landroid/content/Context;)Lcom/android/server/power/CABLControl;
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     sget-object v0, Lcom/android/server/power/CABLControl;->s_CablInstance:Lcom/android/server/power/CABLControl;
 
@@ -456,8 +451,6 @@
 
 .method private sysfsWrite(Ljava/lang/String;I)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v4, 0x0
 
@@ -539,7 +532,6 @@
 # virtual methods
 .method protected handleSetAmoledACL(Z)Z
     .locals 3
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/power/CABLControl;->enable_parameter:Z
 
@@ -594,7 +586,6 @@
 
 .method public setAmoledACL(Z)Z
     .locals 1
-    .param p1    # Z
 
     invoke-virtual {p0, p1}, Lcom/android/server/power/CABLControl;->handleSetAmoledACL(Z)Z
 

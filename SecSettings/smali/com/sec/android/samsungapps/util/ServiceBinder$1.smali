@@ -159,8 +159,6 @@
 # virtual methods
 .method public onServiceConnected(Landroid/content/ComponentName;Landroid/os/IBinder;)V
     .locals 2
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Landroid/os/IBinder;
 
     invoke-static {}, Lcom/sec/android/samsungapps/util/ServiceBinder$1;->$SWITCH_TABLE$com$sec$android$samsungapps$util$ServiceBinder$State()[I
 
@@ -207,7 +205,6 @@
 
 .method public onServiceDisconnected(Landroid/content/ComponentName;)V
     .locals 2
-    .param p1    # Landroid/content/ComponentName;
 
     invoke-static {}, Lcom/sec/android/samsungapps/util/ServiceBinder$1;->$SWITCH_TABLE$com$sec$android$samsungapps$util$ServiceBinder$State()[I
 

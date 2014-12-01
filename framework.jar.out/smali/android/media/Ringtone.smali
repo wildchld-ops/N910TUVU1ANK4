@@ -68,8 +68,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Z)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Z
 
     const/4 v1, 0x0
 
@@ -156,9 +154,6 @@
 
 .method private static getTitle(Landroid/content/Context;Landroid/net/Uri;Z)Ljava/lang/String;
     .locals 12
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Z
 
     const/4 v11, 0x1
 
@@ -510,7 +505,6 @@
 
 .method public getTitle(Landroid/content/Context;)Ljava/lang/String;
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     iget-object v0, p0, Landroid/media/Ringtone;->mTitle:Ljava/lang/String;
 
@@ -812,7 +806,6 @@
 
 .method public setRepeat(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Landroid/media/Ringtone;->mLocalPlayer:Landroid/media/MediaPlayer;
 
@@ -828,7 +821,6 @@
 
 .method public setSecForSeek(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/media/Ringtone;->mSecForSeek:I
 
@@ -837,7 +829,6 @@
 
 .method public setStreamType(I)V
     .locals 1
-    .param p1    # I
 
     iput p1, p0, Landroid/media/Ringtone;->mStreamType:I
 
@@ -850,7 +841,6 @@
 
 .method setTitle(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/media/Ringtone;->mTitle:Ljava/lang/String;
 
@@ -859,7 +849,6 @@
 
 .method public setUri(Landroid/net/Uri;)Z
     .locals 6
-    .param p1    # Landroid/net/Uri;
 
     const/4 v1, 0x1
 
@@ -1028,8 +1017,6 @@
 
 .method public setVolume(FF)V
     .locals 1
-    .param p1    # F
-    .param p2    # F
 
     iget-object v0, p0, Landroid/media/Ringtone;->mLocalPlayer:Landroid/media/MediaPlayer;
 

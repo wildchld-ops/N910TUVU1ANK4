@@ -29,7 +29,7 @@
 
     invoke-super {p0, p1}, Landroid/app/Dialog;->onCreate(Landroid/os/Bundle;)V
 
-    invoke-virtual {p0}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
+    invoke-virtual {p0}, Lcom/android/phone/IccPanel;->getWindow()Landroid/view/Window;
 
     move-result-object v1
 
@@ -49,7 +49,7 @@
 
     const-string v2, "statusbar"
 
-    invoke-virtual {v0, v2}, Landroid/content/ContextWrapper;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v0, v2}, Lcom/android/phone/PhoneGlobals;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v2
 
@@ -59,7 +59,7 @@
 
     const/4 v2, 0x1
 
-    invoke-virtual {p0, v2}, Landroid/app/Dialog;->requestWindowFeature(I)Z
+    invoke-virtual {p0, v2}, Lcom/android/phone/IccPanel;->requestWindowFeature(I)Z
 
     return-void
 .end method

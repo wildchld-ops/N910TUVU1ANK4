@@ -39,7 +39,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/analytics/data/collection/LogCollectionManager;Landroid/os/IBinder;)V
     .locals 1
-    .param p2    # Landroid/os/IBinder;
 
     iput-object p1, p0, Lcom/android/server/analytics/data/collection/LogCollectionManager$LogClient;->this$0:Lcom/android/server/analytics/data/collection/LogCollectionManager;
 
@@ -58,7 +57,6 @@
 
 .method static synthetic access$300(Lcom/android/server/analytics/data/collection/LogCollectionManager$LogClient;)Landroid/util/SparseArray;
     .locals 1
-    .param p0    # Lcom/android/server/analytics/data/collection/LogCollectionManager$LogClient;
 
     iget-object v0, p0, Lcom/android/server/analytics/data/collection/LogCollectionManager$LogClient;->files:Landroid/util/SparseArray;
 

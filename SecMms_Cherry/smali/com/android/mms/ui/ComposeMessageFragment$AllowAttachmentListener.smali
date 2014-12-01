@@ -38,10 +38,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/mms/ui/ComposeMessageFragment;Ljava/lang/String;Landroid/net/Uri;IZ)V
     .locals 1
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/net/Uri;
-    .param p4    # I
-    .param p5    # Z
 
     iput-object p1, p0, Lcom/android/mms/ui/ComposeMessageFragment$AllowAttachmentListener;->this$0:Lcom/android/mms/ui/ComposeMessageFragment;
 
@@ -64,7 +60,6 @@
 
 .method static synthetic access$7800(Lcom/android/mms/ui/ComposeMessageFragment$AllowAttachmentListener;)Landroid/net/Uri;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment$AllowAttachmentListener;
 
     iget-object v0, p0, Lcom/android/mms/ui/ComposeMessageFragment$AllowAttachmentListener;->mDataUri:Landroid/net/Uri;
 
@@ -73,7 +68,6 @@
 
 .method static synthetic access$7900(Lcom/android/mms/ui/ComposeMessageFragment$AllowAttachmentListener;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment$AllowAttachmentListener;
 
     iget-boolean v0, p0, Lcom/android/mms/ui/ComposeMessageFragment$AllowAttachmentListener;->mAppend:Z
 
@@ -82,7 +76,6 @@
 
 .method static synthetic access$8100(Lcom/android/mms/ui/ComposeMessageFragment$AllowAttachmentListener;)I
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMessageFragment$AllowAttachmentListener;
 
     iget v0, p0, Lcom/android/mms/ui/ComposeMessageFragment$AllowAttachmentListener;->mReqCode:I
 
@@ -93,8 +86,6 @@
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 8
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     const v5, 0x7f0c017f
 

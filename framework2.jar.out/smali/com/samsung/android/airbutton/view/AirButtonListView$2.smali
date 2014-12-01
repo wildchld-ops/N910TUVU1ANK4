@@ -36,7 +36,6 @@
 # virtual methods
 .method public onAnimationCancel(Landroid/animation/Animator;)V
     .locals 2
-    .param p1    # Landroid/animation/Animator;
 
     iget-object v0, p0, Lcom/samsung/android/airbutton/view/AirButtonListView$2;->this$0:Lcom/samsung/android/airbutton/view/AirButtonListView;
 
@@ -49,7 +48,6 @@
 
 .method public onAnimationEnd(Landroid/animation/Animator;)V
     .locals 3
-    .param p1    # Landroid/animation/Animator;
 
     iget-object v0, p0, Lcom/samsung/android/airbutton/view/AirButtonListView$2;->this$0:Lcom/samsung/android/airbutton/view/AirButtonListView;
 
@@ -74,14 +72,12 @@
 
 .method public onAnimationRepeat(Landroid/animation/Animator;)V
     .locals 0
-    .param p1    # Landroid/animation/Animator;
 
     return-void
 .end method
 
 .method public onAnimationStart(Landroid/animation/Animator;)V
     .locals 0
-    .param p1    # Landroid/animation/Animator;
 
     return-void
 .end method

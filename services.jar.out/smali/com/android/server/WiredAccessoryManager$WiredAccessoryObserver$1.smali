@@ -33,7 +33,6 @@
 # virtual methods
 .method public onUEvent(Landroid/os/UEventObserver$UEvent;)V
     .locals 12
-    .param p1    # Landroid/os/UEventObserver$UEvent;
 
     # getter for: Lcom/android/server/WiredAccessoryManager;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/android/server/WiredAccessoryManager;->access$500()Ljava/lang/String;

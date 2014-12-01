@@ -60,7 +60,7 @@
 
     iput-object v1, p0, Lcom/android/phone/GlobalGsmUmtsSystemSelectListPreference;->mTelephonyManager:Landroid/telephony/TelephonyManager;
 
-    invoke-virtual {p0}, Landroid/preference/ListPreference;->getValue()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/android/phone/GlobalGsmUmtsSystemSelectListPreference;->getValue()Ljava/lang/String;
 
     move-result-object v1
 
@@ -88,7 +88,7 @@
 
     move-result-object v1
 
-    invoke-virtual {p0, v1}, Landroid/preference/ListPreference;->setValue(Ljava/lang/String;)V
+    invoke-virtual {p0, v1}, Lcom/android/phone/GlobalGsmUmtsSystemSelectListPreference;->setValue(Ljava/lang/String;)V
 
     :cond_0
     return-void
@@ -146,7 +146,7 @@
     return-void
 
     :cond_1
-    invoke-virtual {p0}, Landroid/preference/ListPreference;->getValue()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/android/phone/GlobalGsmUmtsSystemSelectListPreference;->getValue()Ljava/lang/String;
 
     move-result-object v2
 
@@ -391,7 +391,7 @@
     return-void
 
     :cond_0
-    invoke-super {p0, p1}, Landroid/preference/DialogPreference;->showDialog(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Landroid/preference/ListPreference;->showDialog(Landroid/os/Bundle;)V
 
     goto :goto_0
 .end method

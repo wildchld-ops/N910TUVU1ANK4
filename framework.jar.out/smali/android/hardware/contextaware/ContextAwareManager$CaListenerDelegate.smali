@@ -31,8 +31,6 @@
 # direct methods
 .method constructor <init>(Landroid/hardware/contextaware/ContextAwareManager;Landroid/hardware/contextaware/manager/ContextAwareListener;Landroid/os/Handler;)V
     .locals 2
-    .param p2    # Landroid/hardware/contextaware/manager/ContextAwareListener;
-    .param p3    # Landroid/os/Handler;
 
     iput-object p1, p0, Landroid/hardware/contextaware/ContextAwareManager$CaListenerDelegate;->this$0:Landroid/hardware/contextaware/ContextAwareManager;
 
@@ -68,7 +66,6 @@
 
 .method static synthetic access$100(Landroid/hardware/contextaware/ContextAwareManager$CaListenerDelegate;)Landroid/hardware/contextaware/manager/ContextAwareListener;
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/ContextAwareManager$CaListenerDelegate;
 
     iget-object v0, p0, Landroid/hardware/contextaware/ContextAwareManager$CaListenerDelegate;->mListener:Landroid/hardware/contextaware/manager/ContextAwareListener;
 
@@ -79,8 +76,6 @@
 # virtual methods
 .method public declared-synchronized caCallback(ILandroid/os/Bundle;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

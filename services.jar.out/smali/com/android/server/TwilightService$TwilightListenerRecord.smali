@@ -26,8 +26,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/TwilightService$TwilightListener;Landroid/os/Handler;)V
     .locals 0
-    .param p1    # Lcom/android/server/TwilightService$TwilightListener;
-    .param p2    # Landroid/os/Handler;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

@@ -22,8 +22,6 @@
 
 .method public static addAccessibilityStateChangeListener(Landroid/view/accessibility/AccessibilityManager;Ljava/lang/Object;)Z
     .locals 1
-    .param p0    # Landroid/view/accessibility/AccessibilityManager;
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Landroid/view/accessibility/AccessibilityManager$AccessibilityStateChangeListener;
 
@@ -36,8 +34,6 @@
 
 .method public static getEnabledAccessibilityServiceList(Landroid/view/accessibility/AccessibilityManager;I)Ljava/util/List;
     .locals 1
-    .param p0    # Landroid/view/accessibility/AccessibilityManager;
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -59,7 +55,6 @@
 
 .method public static getInstalledAccessibilityServiceList(Landroid/view/accessibility/AccessibilityManager;)Ljava/util/List;
     .locals 1
-    .param p0    # Landroid/view/accessibility/AccessibilityManager;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -81,7 +76,6 @@
 
 .method public static isTouchExplorationEnabled(Landroid/view/accessibility/AccessibilityManager;)Z
     .locals 1
-    .param p0    # Landroid/view/accessibility/AccessibilityManager;
 
     invoke-virtual {p0}, Landroid/view/accessibility/AccessibilityManager;->isTouchExplorationEnabled()Z
 
@@ -92,7 +86,6 @@
 
 .method public static newAccessibilityStateChangeListener(Landroid/support/v4/view/accessibility/AccessibilityManagerCompatIcs$AccessibilityStateChangeListenerBridge;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Landroid/support/v4/view/accessibility/AccessibilityManagerCompatIcs$AccessibilityStateChangeListenerBridge;
 
     new-instance v0, Landroid/support/v4/view/accessibility/AccessibilityManagerCompatIcs$1;
 
@@ -103,8 +96,6 @@
 
 .method public static removeAccessibilityStateChangeListener(Landroid/view/accessibility/AccessibilityManager;Ljava/lang/Object;)Z
     .locals 1
-    .param p0    # Landroid/view/accessibility/AccessibilityManager;
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Landroid/view/accessibility/AccessibilityManager$AccessibilityStateChangeListener;
 

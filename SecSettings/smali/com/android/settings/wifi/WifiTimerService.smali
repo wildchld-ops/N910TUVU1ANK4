@@ -42,7 +42,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/wifi/WifiTimerService;)Landroid/content/SharedPreferences;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiTimerService;
 
     iget-object v0, p0, Lcom/android/settings/wifi/WifiTimerService;->mSharedPref:Landroid/content/SharedPreferences;
 
@@ -51,7 +50,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/wifi/WifiTimerService;)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/WifiTimerService;
 
     invoke-direct {p0}, Lcom/android/settings/wifi/WifiTimerService;->cancelAllAlarms()V
 
@@ -60,7 +58,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/wifi/WifiTimerService;)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/WifiTimerService;
 
     invoke-direct {p0}, Lcom/android/settings/wifi/WifiTimerService;->sheduleAllAlarms()V
 
@@ -69,8 +66,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/wifi/WifiTimerService;Ljava/lang/Boolean;)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/WifiTimerService;
-    .param p1    # Ljava/lang/Boolean;
 
     invoke-direct {p0, p1}, Lcom/android/settings/wifi/WifiTimerService;->enableWifi(Ljava/lang/Boolean;)V
 
@@ -217,7 +212,6 @@
 
 .method private enableWifi(Ljava/lang/Boolean;)V
     .locals 11
-    .param p1    # Ljava/lang/Boolean;
 
     const/4 v7, 0x1
 
@@ -414,7 +408,6 @@
 
 .method private showNotification(Ljava/lang/Boolean;)V
     .locals 13
-    .param p1    # Ljava/lang/Boolean;
 
     const v12, 0x7f090463
 
@@ -897,7 +890,6 @@
 # virtual methods
 .method public onBind(Landroid/content/Intent;)Landroid/os/IBinder;
     .locals 1
-    .param p1    # Landroid/content/Intent;
 
     const/4 v0, 0x0
 
@@ -978,9 +970,6 @@
 
 .method public onStartCommand(Landroid/content/Intent;II)I
     .locals 4
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
-    .param p3    # I
 
     const-string v1, "WifiTimer"
 

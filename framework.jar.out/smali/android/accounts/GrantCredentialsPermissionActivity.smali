@@ -49,7 +49,6 @@
 
 .method private getAccountLabel(Landroid/accounts/Account;)Ljava/lang/String;
     .locals 7
-    .param p1    # Landroid/accounts/Account;
 
     invoke-static {p0}, Landroid/accounts/AccountManager;->get(Landroid/content/Context;)Landroid/accounts/AccountManager;
 
@@ -126,7 +125,6 @@
 
 .method private newPackageView(Ljava/lang/String;)Landroid/view/View;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Landroid/accounts/GrantCredentialsPermissionActivity;->mInflater:Landroid/view/LayoutInflater;
 
@@ -196,7 +194,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 7
-    .param p1    # Landroid/view/View;
 
     const/4 v6, 0x1
 
@@ -274,7 +271,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 21
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super/range {p0 .. p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
@@ -662,7 +658,6 @@
 
 .method public final setAccountAuthenticatorResult(Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     iput-object p1, p0, Landroid/accounts/GrantCredentialsPermissionActivity;->mResultBundle:Landroid/os/Bundle;
 

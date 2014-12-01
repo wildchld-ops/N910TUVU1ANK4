@@ -172,7 +172,7 @@
 
     iget-object v5, v5, Lcom/android/phone/callsettings/CaptureImageViewer$4;->this$0:Lcom/android/phone/callsettings/CaptureImageViewer;
 
-    invoke-virtual {v5}, Landroid/app/Fragment;->getView()Landroid/view/View;
+    invoke-virtual {v5}, Lcom/android/phone/callsettings/CaptureImageViewer;->getView()Landroid/view/View;
 
     move-result-object v5
 
@@ -188,11 +188,11 @@
 
     iget-object v5, v5, Lcom/android/phone/callsettings/CaptureImageViewer$4;->this$0:Lcom/android/phone/callsettings/CaptureImageViewer;
 
-    invoke-virtual {v5}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v5}, Lcom/android/phone/callsettings/CaptureImageViewer;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    invoke-virtual {v3, v7}, Landroid/widget/AbsSpinner;->setAdapter(Landroid/widget/SpinnerAdapter;)V
+    invoke-virtual {v3, v7}, Landroid/widget/Gallery;->setAdapter(Landroid/widget/SpinnerAdapter;)V
 
     new-instance v5, Lcom/android/phone/callsettings/CaptureImageViewer$ImageAdapter;
 
@@ -202,9 +202,9 @@
 
     invoke-direct {v5, v6, v1}, Lcom/android/phone/callsettings/CaptureImageViewer$ImageAdapter;-><init>(Lcom/android/phone/callsettings/CaptureImageViewer;Landroid/content/Context;)V
 
-    invoke-virtual {v3, v5}, Landroid/widget/AbsSpinner;->setAdapter(Landroid/widget/SpinnerAdapter;)V
+    invoke-virtual {v3, v5}, Landroid/widget/Gallery;->setAdapter(Landroid/widget/SpinnerAdapter;)V
 
-    invoke-virtual {v3}, Landroid/widget/AbsSpinner;->getAdapter()Landroid/widget/SpinnerAdapter;
+    invoke-virtual {v3}, Landroid/widget/Gallery;->getAdapter()Landroid/widget/SpinnerAdapter;
 
     move-result-object v5
 
@@ -222,7 +222,7 @@
 
     move-result-object v6
 
-    invoke-virtual {v3}, Landroid/widget/AbsSpinner;->getAdapter()Landroid/widget/SpinnerAdapter;
+    invoke-virtual {v3}, Landroid/widget/Gallery;->getAdapter()Landroid/widget/SpinnerAdapter;
 
     move-result-object v7
 
@@ -240,7 +240,7 @@
 
     invoke-static {v5, v6}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-virtual {v3}, Landroid/widget/AbsSpinner;->getAdapter()Landroid/widget/SpinnerAdapter;
+    invoke-virtual {v3}, Landroid/widget/Gallery;->getAdapter()Landroid/widget/SpinnerAdapter;
 
     move-result-object v5
 
@@ -254,7 +254,7 @@
 
     iget-object v5, v5, Lcom/android/phone/callsettings/CaptureImageViewer$4;->this$0:Lcom/android/phone/callsettings/CaptureImageViewer;
 
-    invoke-virtual {v5}, Landroid/app/Fragment;->getView()Landroid/view/View;
+    invoke-virtual {v5}, Lcom/android/phone/callsettings/CaptureImageViewer;->getView()Landroid/view/View;
 
     move-result-object v5
 
@@ -264,13 +264,13 @@
 
     check-cast v0, Landroid/widget/RelativeLayout;
 
-    invoke-virtual {v0, v8}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v8}, Landroid/widget/RelativeLayout;->setVisibility(I)V
 
     iget-object v5, p0, Lcom/android/phone/callsettings/CaptureImageViewer$4$1;->this$1:Lcom/android/phone/callsettings/CaptureImageViewer$4;
 
     iget-object v5, v5, Lcom/android/phone/callsettings/CaptureImageViewer$4;->this$0:Lcom/android/phone/callsettings/CaptureImageViewer;
 
-    invoke-virtual {v5}, Landroid/app/Fragment;->getView()Landroid/view/View;
+    invoke-virtual {v5}, Lcom/android/phone/callsettings/CaptureImageViewer;->getView()Landroid/view/View;
 
     move-result-object v5
 
@@ -280,7 +280,7 @@
 
     check-cast v0, Landroid/widget/RelativeLayout;
 
-    invoke-virtual {v0, v9}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v9}, Landroid/widget/RelativeLayout;->setVisibility(I)V
 
     :cond_0
     :goto_0
@@ -293,7 +293,7 @@
 
     iget-object v5, v5, Lcom/android/phone/callsettings/CaptureImageViewer$4;->this$0:Lcom/android/phone/callsettings/CaptureImageViewer;
 
-    invoke-virtual {v5}, Landroid/app/Fragment;->getView()Landroid/view/View;
+    invoke-virtual {v5}, Lcom/android/phone/callsettings/CaptureImageViewer;->getView()Landroid/view/View;
 
     move-result-object v5
 
@@ -303,13 +303,13 @@
 
     check-cast v0, Landroid/widget/RelativeLayout;
 
-    invoke-virtual {v0, v8}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v8}, Landroid/widget/RelativeLayout;->setVisibility(I)V
 
     iget-object v5, p0, Lcom/android/phone/callsettings/CaptureImageViewer$4$1;->this$1:Lcom/android/phone/callsettings/CaptureImageViewer$4;
 
     iget-object v5, v5, Lcom/android/phone/callsettings/CaptureImageViewer$4;->this$0:Lcom/android/phone/callsettings/CaptureImageViewer;
 
-    invoke-virtual {v5}, Landroid/app/Fragment;->getView()Landroid/view/View;
+    invoke-virtual {v5}, Lcom/android/phone/callsettings/CaptureImageViewer;->getView()Landroid/view/View;
 
     move-result-object v5
 
@@ -319,7 +319,7 @@
 
     check-cast v0, Landroid/widget/RelativeLayout;
 
-    invoke-virtual {v0, v9}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v9}, Landroid/widget/RelativeLayout;->setVisibility(I)V
 
     goto :goto_0
 .end method

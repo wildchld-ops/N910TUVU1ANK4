@@ -47,7 +47,6 @@
 
 .method static synthetic access$000(Landroid/view/ViewTreeObserver$CopyOnWriteArray$Access;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Landroid/view/ViewTreeObserver$CopyOnWriteArray$Access;
 
     iget-object v0, p0, Landroid/view/ViewTreeObserver$CopyOnWriteArray$Access;->mData:Ljava/util/ArrayList;
 
@@ -56,8 +55,6 @@
 
 .method static synthetic access$002(Landroid/view/ViewTreeObserver$CopyOnWriteArray$Access;Ljava/util/ArrayList;)Ljava/util/ArrayList;
     .locals 0
-    .param p0    # Landroid/view/ViewTreeObserver$CopyOnWriteArray$Access;
-    .param p1    # Ljava/util/ArrayList;
 
     iput-object p1, p0, Landroid/view/ViewTreeObserver$CopyOnWriteArray$Access;->mData:Ljava/util/ArrayList;
 
@@ -66,8 +63,6 @@
 
 .method static synthetic access$102(Landroid/view/ViewTreeObserver$CopyOnWriteArray$Access;I)I
     .locals 0
-    .param p0    # Landroid/view/ViewTreeObserver$CopyOnWriteArray$Access;
-    .param p1    # I
 
     iput p1, p0, Landroid/view/ViewTreeObserver$CopyOnWriteArray$Access;->mSize:I
 
@@ -78,7 +73,6 @@
 # virtual methods
 .method get(I)Ljava/lang/Object;
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)TT;"

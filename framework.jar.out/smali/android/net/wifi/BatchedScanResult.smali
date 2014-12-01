@@ -65,7 +65,6 @@
 
 .method public constructor <init>(Landroid/net/wifi/BatchedScanResult;)V
     .locals 4
-    .param p1    # Landroid/net/wifi/BatchedScanResult;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -208,8 +207,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 3
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-boolean v2, p0, Landroid/net/wifi/BatchedScanResult;->truncated:Z
 

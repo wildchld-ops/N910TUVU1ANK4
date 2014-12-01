@@ -22,11 +22,6 @@
 # direct methods
 .method public constructor <init>([BIII[I)V
     .locals 2
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # [I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -99,7 +94,6 @@
 
 .method private adjustRectangle(Landroid/graphics/Rect;)V
     .locals 4
-    .param p1    # Landroid/graphics/Rect;
 
     invoke-virtual {p1}, Landroid/graphics/Rect;->width()I
 
@@ -170,8 +164,6 @@
 
 .method private calculateStrides(II)[I
     .locals 5
-    .param p1    # I
-    .param p2    # I
 
     const/4 v4, 0x1
 
@@ -224,8 +216,6 @@
 # virtual methods
 .method calculateOffsets(II)[I
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     const/4 v5, 0x1
 
@@ -319,9 +309,6 @@
 
 .method public compressToJpeg(Landroid/graphics/Rect;ILjava/io/OutputStream;)Z
     .locals 10
-    .param p1    # Landroid/graphics/Rect;
-    .param p2    # I
-    .param p3    # Ljava/io/OutputStream;
 
     const/4 v2, 0x0
 

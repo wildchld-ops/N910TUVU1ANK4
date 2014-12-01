@@ -29,10 +29,6 @@
 # direct methods
 .method public constructor <init>(Lcom/samsung/android/hermes/HermesServiceManager;JJLjava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p2    # J
-    .param p4    # J
-    .param p6    # Ljava/lang/String;
-    .param p7    # Ljava/lang/String;
 
     const-wide/16 v1, 0x0
 

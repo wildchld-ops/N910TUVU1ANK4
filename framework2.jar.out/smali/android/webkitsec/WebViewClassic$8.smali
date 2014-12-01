@@ -44,7 +44,6 @@
 # virtual methods
 .method protected varargs doInBackground([Ljava/io/InputStream;)Landroid/webkitsec/WebViewCore$DrawData;
     .locals 2
-    .param p1    # [Ljava/io/InputStream;
 
     const/4 v1, 0x0
 
@@ -70,7 +69,6 @@
 
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [Ljava/io/InputStream;
 
@@ -83,7 +81,6 @@
 
 .method protected onPostExecute(Landroid/webkitsec/WebViewCore$DrawData;)V
     .locals 6
-    .param p1    # Landroid/webkitsec/WebViewCore$DrawData;
 
     if-nez p1, :cond_0
 
@@ -177,7 +174,6 @@
 
 .method protected bridge synthetic onPostExecute(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Landroid/webkitsec/WebViewCore$DrawData;
 

@@ -42,7 +42,6 @@
 
 .method static synthetic access$000(J)V
     .locals 0
-    .param p0    # J
 
     invoke-static {p0, p1}, Lcom/android/server/SecNetworkTimeReceiver;->sec_update_networktime(J)V
 
@@ -56,8 +55,6 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     iput-object p1, p0, Lcom/android/server/SecNetworkTimeReceiver;->mContext:Landroid/content/Context;
 

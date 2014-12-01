@@ -24,6 +24,8 @@
 
 .field private mDensity:F
 
+.field private mMaximumSize:Landroid/graphics/Rect;
+
 .field private mMultiWindow:Lcom/samsung/android/sdk/multiwindow/SMultiWindow;
 
 .field private mMultiWindowReflator:Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;
@@ -77,9 +79,9 @@
 
     const/4 v1, 0x0
 
-    const/4 v7, 0x1
+    const/4 v6, 0x1
 
-    const/4 v6, 0x0
+    const/4 v7, 0x0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -117,11 +119,11 @@
 
     sget-object v5, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
-    aput-object v5, v4, v6
+    aput-object v5, v4, v7
 
     sget-object v5, Ljava/lang/Boolean;->TYPE:Ljava/lang/Class;
 
-    aput-object v5, v4, v7
+    aput-object v5, v4, v6
 
     invoke-virtual {v0, v2, p1, v3, v4}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->putMethod(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Class;)V
 
@@ -227,7 +229,7 @@
 
     invoke-virtual {v0, v2, v3, v4, v1}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->putMethod(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Class;)V
 
-    invoke-virtual {p1}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p1}, Landroid/app/Activity;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -431,16 +433,6 @@
     aput-object v6, v4, v5
 
     invoke-virtual {v0, v2, v1, v3, v4}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->putMethod(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Class;)V
-
-    iget-object v3, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mMultiWindowReflator:Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;
-
-    const-string v4, "getScaleInfo"
-
-    const/4 v0, 0x0
-
-    check-cast v0, [Ljava/lang/Class;
-
-    invoke-virtual {v3, v2, v1, v4, v0}, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->putMethod(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Class;)V
     :try_end_1
     .catch Ljava/lang/NoClassDefFoundError; {:try_start_1 .. :try_end_1} :catch_0
 
@@ -463,6 +455,30 @@
     iput-object v0, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mDefaultSize:Landroid/graphics/Rect;
 
     :cond_1
+    new-instance v0, Landroid/graphics/Point;
+
+    invoke-direct {v0}, Landroid/graphics/Point;-><init>()V
+
+    invoke-virtual {p1}, Landroid/app/Activity;->getWindowManager()Landroid/view/WindowManager;
+
+    move-result-object v1
+
+    invoke-interface {v1}, Landroid/view/WindowManager;->getDefaultDisplay()Landroid/view/Display;
+
+    move-result-object v1
+
+    invoke-virtual {v1, v0}, Landroid/view/Display;->getSize(Landroid/graphics/Point;)V
+
+    new-instance v1, Landroid/graphics/Rect;
+
+    iget v2, v0, Landroid/graphics/Point;->x:I
+
+    iget v0, v0, Landroid/graphics/Point;->y:I
+
+    invoke-direct {v1, v7, v7, v2, v0}, Landroid/graphics/Rect;-><init>(IIII)V
+
+    iput-object v1, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowActivity;->mMaximumSize:Landroid/graphics/Rect;
+
     return-void
 
     :catch_0

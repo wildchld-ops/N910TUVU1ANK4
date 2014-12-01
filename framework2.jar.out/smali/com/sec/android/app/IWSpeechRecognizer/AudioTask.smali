@@ -180,10 +180,6 @@
 # direct methods
 .method constructor <init>(Lcom/sec/android/app/IWSpeechRecognizer/IWSpeechRecognizerListener;Ljava/lang/String;II)V
     .locals 7
-    .param p1    # Lcom/sec/android/app/IWSpeechRecognizer/IWSpeechRecognizerListener;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
 
     const/4 v6, 0x3
 
@@ -426,7 +422,6 @@
 
 .method static synthetic access$000(Lcom/sec/android/app/IWSpeechRecognizer/AudioTask;)Lcom/sec/android/app/IWSpeechRecognizer/IWSpeechRecognizerListener;
     .locals 1
-    .param p0    # Lcom/sec/android/app/IWSpeechRecognizer/AudioTask;
 
     iget-object v0, p0, Lcom/sec/android/app/IWSpeechRecognizer/AudioTask;->m_listener:Lcom/sec/android/app/IWSpeechRecognizer/IWSpeechRecognizerListener;
 
@@ -435,7 +430,6 @@
 
 .method private getAudioRecord(I)Landroid/media/AudioRecord;
     .locals 9
-    .param p1    # I
 
     const/4 v8, 0x0
 
@@ -755,8 +749,6 @@
 
 .method public static twoBytesToShort(BB)S
     .locals 2
-    .param p0    # B
-    .param p1    # B
 
     and-int/lit16 v0, p0, 0xff
 
@@ -773,7 +765,6 @@
 # virtual methods
 .method public SendHandlerMessage([Ljava/lang/String;)V
     .locals 3
-    .param p1    # [Ljava/lang/String;
 
     iget-object v2, p0, Lcom/sec/android/app/IWSpeechRecognizer/AudioTask;->handler:Landroid/os/Handler;
 
@@ -823,8 +814,6 @@
 
 .method public getSensoryBargeInAct(ILjava/lang/String;)I
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v2, 0x3
 
@@ -1833,11 +1822,6 @@
 
 .method init(Ljava/util/concurrent/LinkedBlockingQueue;ILcom/sec/android/app/IWSpeechRecognizer/IWSpeechRecognizerListener;Ljava/lang/String;II)V
     .locals 6
-    .param p2    # I
-    .param p3    # Lcom/sec/android/app/IWSpeechRecognizer/IWSpeechRecognizerListener;
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
-    .param p6    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3045,7 +3029,6 @@
 
 .method public isBargeInFile(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/io/File;
 
@@ -5569,7 +5552,6 @@
 
 .method public setBlockSize(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/app/IWSpeechRecognizer/AudioTask;->block_size:I
 
@@ -5663,7 +5645,6 @@
 
 .method public setFilePath(I)V
     .locals 1
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -5821,8 +5802,6 @@
 
 .method public setSensoryFilePath(II)V
     .locals 9
-    .param p1    # I
-    .param p2    # I
 
     const/4 v8, 0x7
 

@@ -36,9 +36,6 @@
 # direct methods
 .method private constructor <init>(Lcom/android/settings/net/UidDetailProvider;Lcom/android/settings/DataUsageSummary$AppItem;Landroid/view/View;)V
     .locals 1
-    .param p1    # Lcom/android/settings/net/UidDetailProvider;
-    .param p2    # Lcom/android/settings/DataUsageSummary$AppItem;
-    .param p3    # Landroid/view/View;
 
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
 
@@ -71,8 +68,6 @@
 
 .method private static bindView(Lcom/android/settings/net/UidDetail;Landroid/view/View;)V
     .locals 4
-    .param p0    # Lcom/android/settings/net/UidDetail;
-    .param p1    # Landroid/view/View;
 
     const/4 v3, 0x0
 
@@ -115,9 +110,6 @@
 
 .method public static bindView(Lcom/android/settings/net/UidDetailProvider;Lcom/android/settings/DataUsageSummary$AppItem;Landroid/view/View;)V
     .locals 5
-    .param p0    # Lcom/android/settings/net/UidDetailProvider;
-    .param p1    # Lcom/android/settings/DataUsageSummary$AppItem;
-    .param p2    # Landroid/view/View;
 
     const/4 v4, 0x0
 
@@ -167,7 +159,6 @@
 # virtual methods
 .method protected varargs doInBackground([Ljava/lang/Void;)Lcom/android/settings/net/UidDetail;
     .locals 3
-    .param p1    # [Ljava/lang/Void;
 
     iget-object v0, p0, Lcom/android/settings/DataUsageSummary$UidDetailTask;->mProvider:Lcom/android/settings/net/UidDetailProvider;
 
@@ -186,7 +177,6 @@
 
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [Ljava/lang/Void;
 
@@ -199,7 +189,6 @@
 
 .method protected onPostExecute(Lcom/android/settings/net/UidDetail;)V
     .locals 1
-    .param p1    # Lcom/android/settings/net/UidDetail;
 
     iget-object v0, p0, Lcom/android/settings/DataUsageSummary$UidDetailTask;->mTarget:Landroid/view/View;
 
@@ -210,7 +199,6 @@
 
 .method protected bridge synthetic onPostExecute(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/android/settings/net/UidDetail;
 

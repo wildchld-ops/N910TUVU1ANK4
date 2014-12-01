@@ -107,7 +107,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Lcom/sec/enterprise/knox/vpn/IEnterpriseVpnPolicy$Stub;-><init>()V
 
@@ -164,7 +163,6 @@
 
 .method static synthetic access$100(Lcom/android/server/enterprise/vpn/EnterpriseVpnPolicyService;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/vpn/EnterpriseVpnPolicyService;
 
     iget-object v0, p0, Lcom/android/server/enterprise/vpn/EnterpriseVpnPolicyService;->mContext:Landroid/content/Context;
 
@@ -173,9 +171,6 @@
 
 .method static synthetic access$200(Lcom/android/server/enterprise/vpn/EnterpriseVpnPolicyService;Ljava/lang/String;Lcom/android/server/enterprise/vpn/EnterpriseVpnPolicyService$EnterpriseVpnServiceConnection;)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/vpn/EnterpriseVpnPolicyService;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/server/enterprise/vpn/EnterpriseVpnPolicyService$EnterpriseVpnServiceConnection;
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/enterprise/vpn/EnterpriseVpnPolicyService;->addVpnSolutionConnection(Ljava/lang/String;Lcom/android/server/enterprise/vpn/EnterpriseVpnPolicyService$EnterpriseVpnServiceConnection;)V
 
@@ -184,8 +179,6 @@
 
 .method static synthetic access$300(Lcom/android/server/enterprise/vpn/EnterpriseVpnPolicyService;Ljava/lang/String;)Lcom/android/server/enterprise/vpn/EnterpriseVpnPolicyService$EnterpriseVpnServiceConnection;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/vpn/EnterpriseVpnPolicyService;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/vpn/EnterpriseVpnPolicyService;->removeVpnSolutionConnection(Ljava/lang/String;)Lcom/android/server/enterprise/vpn/EnterpriseVpnPolicyService$EnterpriseVpnServiceConnection;
 
@@ -196,8 +189,6 @@
 
 .method private declared-synchronized addVpnSolutionConnection(Ljava/lang/String;Lcom/android/server/enterprise/vpn/EnterpriseVpnPolicyService$EnterpriseVpnServiceConnection;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/server/enterprise/vpn/EnterpriseVpnPolicyService$EnterpriseVpnServiceConnection;
 
     monitor-enter p0
 
@@ -284,7 +275,6 @@
 
 .method private declared-synchronized getVpnSolutionService(Ljava/lang/String;)Lcom/sec/enterprise/knox/vpn/IEnterpriseVpnSolution;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -323,7 +313,6 @@
 
 .method private declared-synchronized removeVpnSolutionConnection(Ljava/lang/String;)Lcom/android/server/enterprise/vpn/EnterpriseVpnPolicyService$EnterpriseVpnServiceConnection;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -376,9 +365,6 @@
 # virtual methods
 .method public activateVpnProfile(Ljava/lang/String;Ljava/lang/String;Z)Landroid/app/enterprise/EnterpriseResponseData;
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -461,9 +447,6 @@
 
 .method public addAllContainerPackagesToVpn(Ljava/lang/String;ILjava/lang/String;)Landroid/app/enterprise/EnterpriseResponseData;
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -547,10 +530,6 @@
 
 .method public addPackagesToVpn(Ljava/lang/String;I[Ljava/lang/String;Ljava/lang/String;)Landroid/app/enterprise/EnterpriseResponseData;
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # [Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -643,7 +622,6 @@
 
 .method public bindKnoxVpnInterface(Ljava/lang/String;)Z
     .locals 7
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -780,7 +758,6 @@
 
 .method public containerPackageListFromVpnDatabase(I)[Ljava/lang/String;
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -842,8 +819,6 @@
 
 .method public createVpnProfile(Ljava/lang/String;Ljava/lang/String;)Landroid/app/enterprise/EnterpriseResponseData;
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -926,9 +901,6 @@
 
 .method public getAllPackagesInVpnProfile(Ljava/lang/String;ILjava/lang/String;)Landroid/app/enterprise/EnterpriseResponseData;
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1012,7 +984,6 @@
 
 .method public getAllVpnProfiles(Ljava/lang/String;)Landroid/app/enterprise/EnterpriseResponseData;
     .locals 7
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1094,8 +1065,6 @@
 
 .method public getCACertificate(Ljava/lang/String;Ljava/lang/String;)Landroid/app/enterprise/EnterpriseResponseData;
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1178,8 +1147,6 @@
 
 .method public getErrorString(Ljava/lang/String;Ljava/lang/String;)Landroid/app/enterprise/EnterpriseResponseData;
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1262,8 +1229,6 @@
 
 .method public getState(Ljava/lang/String;Ljava/lang/String;)Landroid/app/enterprise/EnterpriseResponseData;
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1346,8 +1311,6 @@
 
 .method public getUserCertificate(Ljava/lang/String;Ljava/lang/String;)Landroid/app/enterprise/EnterpriseResponseData;
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1430,8 +1393,6 @@
 
 .method public getVpnModeOfOperation(Ljava/lang/String;Ljava/lang/String;)Landroid/app/enterprise/EnterpriseResponseData;
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1514,8 +1475,6 @@
 
 .method public getVpnProfile(Ljava/lang/String;Ljava/lang/String;)Landroid/app/enterprise/EnterpriseResponseData;
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1598,7 +1557,6 @@
 
 .method public notifyContainerAppLaunch(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1656,7 +1614,6 @@
 
 .method public onAdminAdded(I)V
     .locals 3
-    .param p1    # I
 
     sget-object v1, Lcom/android/server/enterprise/vpn/EnterpriseVpnPolicyService;->TAG:Ljava/lang/String;
 
@@ -1685,7 +1642,6 @@
 
 .method public onAdminRemoved(I)V
     .locals 3
-    .param p1    # I
 
     sget-object v1, Lcom/android/server/enterprise/vpn/EnterpriseVpnPolicyService;->TAG:Ljava/lang/String;
 
@@ -1714,8 +1670,6 @@
 
 .method public onContainerCreation(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     sget-object v1, Lcom/android/server/enterprise/vpn/EnterpriseVpnPolicyService;->TAG:Ljava/lang/String;
 
@@ -1748,8 +1702,6 @@
 
 .method public onContainerRemoved(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     sget-object v1, Lcom/android/server/enterprise/vpn/EnterpriseVpnPolicyService;->TAG:Ljava/lang/String;
 
@@ -1782,7 +1734,6 @@
 
 .method public onPreAdminRemoval(I)V
     .locals 3
-    .param p1    # I
 
     sget-object v1, Lcom/android/server/enterprise/vpn/EnterpriseVpnPolicyService;->TAG:Ljava/lang/String;
 
@@ -1811,17 +1762,12 @@
 
 .method public onPreContainerRemoval(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     return-void
 .end method
 
 .method public removeAllContainerPackagesFromVpn(Ljava/lang/String;ILjava/lang/String;)Landroid/app/enterprise/EnterpriseResponseData;
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1905,10 +1851,6 @@
 
 .method public removePackagesFromVpn(Ljava/lang/String;I[Ljava/lang/String;Ljava/lang/String;)Landroid/app/enterprise/EnterpriseResponseData;
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # [Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2001,8 +1943,6 @@
 
 .method public removeVpnProfile(Ljava/lang/String;Ljava/lang/String;)Landroid/app/enterprise/EnterpriseResponseData;
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2085,9 +2025,6 @@
 
 .method public setAutoRetryOnConnectionError(Ljava/lang/String;Ljava/lang/String;Z)Landroid/app/enterprise/EnterpriseResponseData;
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2159,9 +2096,6 @@
 
 .method public setCACertificate(Ljava/lang/String;Ljava/lang/String;[B)Landroid/app/enterprise/EnterpriseResponseData;
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # [B
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2244,11 +2178,6 @@
 
 .method public setServerCertValidationUserAcceptanceCriteria(Ljava/lang/String;Ljava/lang/String;ZLjava/util/List;I)Landroid/app/enterprise/EnterpriseResponseData;
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
-    .param p4    # Ljava/util/List;
-    .param p5    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2330,10 +2259,6 @@
 
 .method public setUserCertificate(Ljava/lang/String;Ljava/lang/String;[BLjava/lang/String;)Landroid/app/enterprise/EnterpriseResponseData;
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # [B
-    .param p4    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2426,7 +2351,6 @@
 
 .method public setVpnFrameworkSystemProperty(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "net.vpn.framework"
 
@@ -2437,9 +2361,6 @@
 
 .method public setVpnModeOfOperation(Ljava/lang/String;Ljava/lang/String;I)Landroid/app/enterprise/EnterpriseResponseData;
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2522,8 +2443,6 @@
 
 .method public startConnection(Ljava/lang/String;Ljava/lang/String;)Landroid/app/enterprise/EnterpriseResponseData;
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2606,8 +2525,6 @@
 
 .method public stopConnection(Ljava/lang/String;Ljava/lang/String;)Landroid/app/enterprise/EnterpriseResponseData;
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

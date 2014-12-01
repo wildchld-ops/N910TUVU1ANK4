@@ -131,7 +131,6 @@
 
 .method synthetic constructor <init>(Landroid/net/Uri$1;)V
     .locals 0
-    .param p1    # Landroid/net/Uri$1;
 
     invoke-direct {p0}, Landroid/net/Uri;-><init>()V
 
@@ -156,7 +155,6 @@
 
 .method public static decode(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -179,7 +177,6 @@
 
 .method public static encode(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -192,8 +189,6 @@
 
 .method public static encode(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 12
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     if-nez p0, :cond_1
 
@@ -358,7 +353,6 @@
 
 .method public static fromFile(Ljava/io/File;)Landroid/net/Uri;
     .locals 7
-    .param p0    # Ljava/io/File;
 
     if-nez p0, :cond_0
 
@@ -398,9 +392,6 @@
 
 .method public static fromParts(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri;
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     if-nez p0, :cond_0
 
@@ -443,8 +434,6 @@
 
 .method private static isAllowed(CLjava/lang/String;)Z
     .locals 2
-    .param p0    # C
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, -0x1
 
@@ -505,7 +494,6 @@
 
 .method public static parse(Ljava/lang/String;)Landroid/net/Uri;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     new-instance v0, Landroid/net/Uri$StringUri;
 
@@ -518,8 +506,6 @@
 
 .method public static withAppendedPath(Landroid/net/Uri;Ljava/lang/String;)Landroid/net/Uri;
     .locals 2
-    .param p0    # Landroid/net/Uri;
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Landroid/net/Uri;->buildUpon()Landroid/net/Uri$Builder;
 
@@ -538,8 +524,6 @@
 
 .method public static writeToParcel(Landroid/os/Parcel;Landroid/net/Uri;)V
     .locals 1
-    .param p0    # Landroid/os/Parcel;
-    .param p1    # Landroid/net/Uri;
 
     const/4 v0, 0x0
 
@@ -563,7 +547,6 @@
 
 .method public checkFileUriExposed(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "file"
 
@@ -585,7 +568,6 @@
 
 .method public compareTo(Landroid/net/Uri;)I
     .locals 2
-    .param p1    # Landroid/net/Uri;
 
     invoke-virtual {p0}, Landroid/net/Uri;->toString()Ljava/lang/String;
 
@@ -604,7 +586,6 @@
 
 .method public bridge synthetic compareTo(Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Landroid/net/Uri;
 
@@ -617,7 +598,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 3
-    .param p1    # Ljava/lang/Object;
 
     instance-of v1, p1, Landroid/net/Uri;
 
@@ -653,8 +633,6 @@
 
 .method public getBooleanQueryParameter(Ljava/lang/String;Z)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     invoke-virtual {p0, p1}, Landroid/net/Uri;->getQueryParameter(Ljava/lang/String;)Ljava/lang/String;
 
@@ -848,7 +826,6 @@
 
 .method public getQueryParameter(Ljava/lang/String;)Ljava/lang/String;
     .locals 13
-    .param p1    # Ljava/lang/String;
 
     const/4 v12, 0x0
 
@@ -1092,7 +1069,6 @@
 
 .method public getQueryParameters(Ljava/lang/String;)Ljava/util/List;
     .locals 11
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

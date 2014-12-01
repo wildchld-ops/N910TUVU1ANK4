@@ -64,7 +64,6 @@
 
 .method constructor <init>(Ljava/util/ArrayList;Landroid/os/Parcel;)V
     .locals 2
-    .param p2    # Landroid/os/Parcel;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -116,7 +115,6 @@
 # virtual methods
 .method addCountLocked(J)V
     .locals 2
-    .param p1    # J
 
     iget-wide v0, p0, Lcom/android/internal/os/BatteryStatsImpl$LongSamplingCounter;->mCount:J
 
@@ -139,7 +137,6 @@
 
 .method public getCountLocked(I)J
     .locals 4
-    .param p1    # I
 
     const/4 v2, 0x1
 
@@ -176,9 +173,6 @@
 
 .method public plug(JJJ)V
     .locals 2
-    .param p1    # J
-    .param p3    # J
-    .param p5    # J
 
     iget-wide v0, p0, Lcom/android/internal/os/BatteryStatsImpl$LongSamplingCounter;->mCount:J
 
@@ -189,7 +183,6 @@
 
 .method readSummaryFromParcelLocked(Landroid/os/Parcel;)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readLong()J
 
@@ -216,7 +209,6 @@
 
 .method reset(Z)V
     .locals 2
-    .param p1    # Z
 
     const-wide/16 v0, 0x0
 
@@ -240,9 +232,6 @@
 
 .method public unplug(JJJ)V
     .locals 2
-    .param p1    # J
-    .param p3    # J
-    .param p5    # J
 
     iget-wide v0, p0, Lcom/android/internal/os/BatteryStatsImpl$LongSamplingCounter;->mPluggedCount:J
 
@@ -257,7 +246,6 @@
 
 .method writeSummaryFromParcelLocked(Landroid/os/Parcel;)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
 
     iget-wide v0, p0, Lcom/android/internal/os/BatteryStatsImpl$LongSamplingCounter;->mCount:J
 
@@ -268,7 +256,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
 
     iget-wide v0, p0, Lcom/android/internal/os/BatteryStatsImpl$LongSamplingCounter;->mCount:J
 

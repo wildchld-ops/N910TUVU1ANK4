@@ -185,7 +185,7 @@
 
     const v6, 0x7f0a00bf
 
-    invoke-virtual {p0, v6}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v6}, Lcom/android/phone/DsaPhoneNumber;->findViewById(I)Landroid/view/View;
 
     move-result-object v1
 
@@ -211,15 +211,15 @@
 
     iget-object v6, p0, Lcom/android/phone/DsaPhoneNumber;->mSim1value:Landroid/widget/EditText;
 
-    invoke-virtual {v6, v8}, Landroid/widget/TextView;->setHint(I)V
+    invoke-virtual {v6, v8}, Landroid/widget/EditText;->setHint(I)V
 
     iget-object v6, p0, Lcom/android/phone/DsaPhoneNumber;->mSim1value:Landroid/widget/EditText;
 
-    invoke-virtual {v6, v7}, Landroid/widget/TextView;->setInputType(I)V
+    invoke-virtual {v6, v7}, Landroid/widget/EditText;->setInputType(I)V
 
     const v6, 0x7f0a00c0
 
-    invoke-virtual {p0, v6}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v6}, Lcom/android/phone/DsaPhoneNumber;->findViewById(I)Landroid/view/View;
 
     move-result-object v2
 
@@ -245,11 +245,11 @@
 
     iget-object v6, p0, Lcom/android/phone/DsaPhoneNumber;->mSim2value:Landroid/widget/EditText;
 
-    invoke-virtual {v6, v8}, Landroid/widget/TextView;->setHint(I)V
+    invoke-virtual {v6, v8}, Landroid/widget/EditText;->setHint(I)V
 
     iget-object v6, p0, Lcom/android/phone/DsaPhoneNumber;->mSim2value:Landroid/widget/EditText;
 
-    invoke-virtual {v6, v7}, Landroid/widget/TextView;->setInputType(I)V
+    invoke-virtual {v6, v7}, Landroid/widget/EditText;->setInputType(I)V
 
     sget-object v6, Lcom/android/phone/DsaPhoneNumber;->mSimnumber:[Ljava/lang/String;
 
@@ -415,7 +415,7 @@
 
     aget-object v7, v7, v10
 
-    invoke-virtual {v6, v7}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {v6, v7}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
     iget-object v6, p0, Lcom/android/phone/DsaPhoneNumber;->mSim1value:Landroid/widget/EditText;
 
@@ -450,7 +450,7 @@
 
     aget-object v7, v7, v11
 
-    invoke-virtual {v6, v7}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {v6, v7}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
     iget-object v6, p0, Lcom/android/phone/DsaPhoneNumber;->mSim2value:Landroid/widget/EditText;
 
@@ -497,27 +497,27 @@
     :cond_5
     iget-object v6, p0, Lcom/android/phone/DsaPhoneNumber;->mRightSoftBtn:Landroid/widget/LinearLayout;
 
-    invoke-virtual {v6, v10}, Landroid/view/View;->setEnabled(Z)V
+    invoke-virtual {v6, v10}, Landroid/widget/LinearLayout;->setEnabled(Z)V
 
     :goto_0
     iget-object v6, p0, Lcom/android/phone/DsaPhoneNumber;->mSim1value:Landroid/widget/EditText;
 
     iget-object v7, p0, Lcom/android/phone/DsaPhoneNumber;->tw:Landroid/text/TextWatcher;
 
-    invoke-virtual {v6, v7}, Landroid/widget/TextView;->addTextChangedListener(Landroid/text/TextWatcher;)V
+    invoke-virtual {v6, v7}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
     iget-object v6, p0, Lcom/android/phone/DsaPhoneNumber;->mSim2value:Landroid/widget/EditText;
 
     iget-object v7, p0, Lcom/android/phone/DsaPhoneNumber;->tw:Landroid/text/TextWatcher;
 
-    invoke-virtual {v6, v7}, Landroid/widget/TextView;->addTextChangedListener(Landroid/text/TextWatcher;)V
+    invoke-virtual {v6, v7}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
     return-void
 
     :cond_6
     iget-object v6, p0, Lcom/android/phone/DsaPhoneNumber;->mLeftSoftBtn:Landroid/widget/LinearLayout;
 
-    invoke-virtual {v6, v10}, Landroid/view/View;->setEnabled(Z)V
+    invoke-virtual {v6, v10}, Landroid/widget/LinearLayout;->setEnabled(Z)V
 
     goto :goto_0
 
@@ -533,14 +533,14 @@
     :cond_8
     iget-object v6, p0, Lcom/android/phone/DsaPhoneNumber;->mRightSoftBtn:Landroid/widget/LinearLayout;
 
-    invoke-virtual {v6, v11}, Landroid/view/View;->setEnabled(Z)V
+    invoke-virtual {v6, v11}, Landroid/widget/LinearLayout;->setEnabled(Z)V
 
     goto :goto_0
 
     :cond_9
     iget-object v6, p0, Lcom/android/phone/DsaPhoneNumber;->mLeftSoftBtn:Landroid/widget/LinearLayout;
 
-    invoke-virtual {v6, v11}, Landroid/view/View;->setEnabled(Z)V
+    invoke-virtual {v6, v11}, Landroid/widget/LinearLayout;->setEnabled(Z)V
 
     goto :goto_0
 .end method
@@ -567,11 +567,11 @@
 
     const v1, 0x7f04002c
 
-    invoke-virtual {p0, v1}, Landroid/app/Activity;->setContentView(I)V
+    invoke-virtual {p0, v1}, Lcom/android/phone/DsaPhoneNumber;->setContentView(I)V
 
     const-string v1, "dsa_phone_number"
 
-    invoke-virtual {p0, v1, v4}, Landroid/content/ContextWrapper;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+    invoke-virtual {p0, v1, v4}, Lcom/android/phone/DsaPhoneNumber;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
 
     move-result-object v1
 
@@ -655,7 +655,7 @@
     aput-object v3, v1, v5
 
     :cond_1
-    invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/phone/DsaPhoneNumber;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
 
@@ -729,7 +729,7 @@
 
     const v1, 0x7f0a00c6
 
-    invoke-virtual {p0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v1}, Lcom/android/phone/DsaPhoneNumber;->findViewById(I)Landroid/view/View;
 
     move-result-object v1
 
@@ -739,7 +739,7 @@
 
     const v1, 0x7f0a00c1
 
-    invoke-virtual {p0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v1}, Lcom/android/phone/DsaPhoneNumber;->findViewById(I)Landroid/view/View;
 
     move-result-object v1
 
@@ -753,7 +753,7 @@
 
     const v1, 0x7f0a00c7
 
-    invoke-virtual {p0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v1}, Lcom/android/phone/DsaPhoneNumber;->findViewById(I)Landroid/view/View;
 
     move-result-object v1
 
@@ -763,7 +763,7 @@
 
     const v1, 0x7f0a00c8
 
-    invoke-virtual {p0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v1}, Lcom/android/phone/DsaPhoneNumber;->findViewById(I)Landroid/view/View;
 
     move-result-object v1
 
@@ -773,11 +773,11 @@
 
     iget-object v1, p0, Lcom/android/phone/DsaPhoneNumber;->mLeftSoftBtn:Landroid/widget/LinearLayout;
 
-    invoke-virtual {v1, v4}, Landroid/view/View;->setEnabled(Z)V
+    invoke-virtual {v1, v4}, Landroid/widget/LinearLayout;->setEnabled(Z)V
 
     const v1, 0x7f0a00c9
 
-    invoke-virtual {p0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v1}, Lcom/android/phone/DsaPhoneNumber;->findViewById(I)Landroid/view/View;
 
     move-result-object v1
 
@@ -787,7 +787,7 @@
 
     const v1, 0x7f0a00ca
 
-    invoke-virtual {p0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v1}, Lcom/android/phone/DsaPhoneNumber;->findViewById(I)Landroid/view/View;
 
     move-result-object v1
 
@@ -797,7 +797,7 @@
 
     iget-object v1, p0, Lcom/android/phone/DsaPhoneNumber;->mRightSoftBtn:Landroid/widget/LinearLayout;
 
-    invoke-virtual {v1, v5}, Landroid/view/View;->setEnabled(Z)V
+    invoke-virtual {v1, v5}, Landroid/widget/LinearLayout;->setEnabled(Z)V
 
     :goto_0
     iget-object v1, p0, Lcom/android/phone/DsaPhoneNumber;->mLeftSoftBtn:Landroid/widget/LinearLayout;
@@ -806,7 +806,7 @@
 
     invoke-direct {v2, p0}, Lcom/android/phone/DsaPhoneNumber$1;-><init>(Lcom/android/phone/DsaPhoneNumber;)V
 
-    invoke-virtual {v1, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v1, v2}, Landroid/widget/LinearLayout;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     iget-object v1, p0, Lcom/android/phone/DsaPhoneNumber;->mRightSoftBtn:Landroid/widget/LinearLayout;
 
@@ -814,7 +814,7 @@
 
     invoke-direct {v2, p0}, Lcom/android/phone/DsaPhoneNumber$2;-><init>(Lcom/android/phone/DsaPhoneNumber;)V
 
-    invoke-virtual {v1, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v1, v2}, Landroid/widget/LinearLayout;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     invoke-direct {p0}, Lcom/android/phone/DsaPhoneNumber;->initContentView()V
 
@@ -832,7 +832,7 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/DsaPhoneNumber;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
@@ -846,7 +846,7 @@
     :cond_3
     const v1, 0x7f0a00c2
 
-    invoke-virtual {p0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v1}, Lcom/android/phone/DsaPhoneNumber;->findViewById(I)Landroid/view/View;
 
     move-result-object v1
 
@@ -856,7 +856,7 @@
 
     const v1, 0x7f0a00c3
 
-    invoke-virtual {p0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v1}, Lcom/android/phone/DsaPhoneNumber;->findViewById(I)Landroid/view/View;
 
     move-result-object v1
 
@@ -866,11 +866,11 @@
 
     iget-object v1, p0, Lcom/android/phone/DsaPhoneNumber;->mLeftSoftBtn:Landroid/widget/LinearLayout;
 
-    invoke-virtual {v1, v4}, Landroid/view/View;->setEnabled(Z)V
+    invoke-virtual {v1, v4}, Landroid/widget/LinearLayout;->setEnabled(Z)V
 
     const v1, 0x7f0a00c4
 
-    invoke-virtual {p0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v1}, Lcom/android/phone/DsaPhoneNumber;->findViewById(I)Landroid/view/View;
 
     move-result-object v1
 
@@ -880,7 +880,7 @@
 
     const v1, 0x7f0a00c5
 
-    invoke-virtual {p0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v1}, Lcom/android/phone/DsaPhoneNumber;->findViewById(I)Landroid/view/View;
 
     move-result-object v1
 
@@ -890,7 +890,7 @@
 
     iget-object v1, p0, Lcom/android/phone/DsaPhoneNumber;->mRightSoftBtn:Landroid/widget/LinearLayout;
 
-    invoke-virtual {v1, v5}, Landroid/view/View;->setEnabled(Z)V
+    invoke-virtual {v1, v5}, Landroid/widget/LinearLayout;->setEnabled(Z)V
 
     goto :goto_0
 .end method
@@ -943,7 +943,7 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getActionBar()Landroid/app/ActionBar;
+    invoke-virtual {p0}, Lcom/android/phone/DsaPhoneNumber;->getActionBar()Landroid/app/ActionBar;
 
     move-result-object v0
 
@@ -996,7 +996,7 @@
 
     const v1, 0x7f090789
 
-    invoke-virtual {p0, v1}, Landroid/app/Activity;->setTitle(I)V
+    invoke-virtual {p0, v1}, Lcom/android/phone/DsaPhoneNumber;->setTitle(I)V
 
     invoke-interface {p1, v6}, Landroid/view/Menu;->findItem(I)Landroid/view/MenuItem;
 
@@ -1008,7 +1008,7 @@
 
     iget-object v2, p0, Lcom/android/phone/DsaPhoneNumber;->mLeftSoftBtn:Landroid/widget/LinearLayout;
 
-    invoke-virtual {v2}, Landroid/view/View;->isEnabled()Z
+    invoke-virtual {v2}, Landroid/widget/LinearLayout;->isEnabled()Z
 
     move-result v2
 
@@ -1053,7 +1053,7 @@
 
     if-ne p1, v2, :cond_0
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/phone/DsaPhoneNumber;->getIntent()Landroid/content/Intent;
 
     move-result-object v1
 
@@ -1065,7 +1065,7 @@
 
     if-eqz v2, :cond_0
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/DsaPhoneNumber;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 
@@ -1097,7 +1097,7 @@
 
     invoke-virtual {v0, v2}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/DsaPhoneNumber;->startActivity(Landroid/content/Intent;)V
 
     const/4 v2, 0x1
 
@@ -1134,7 +1134,7 @@
     return v0
 
     :sswitch_0
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/DsaPhoneNumber;->finish()V
 
     goto :goto_0
 
@@ -1191,16 +1191,16 @@
 
     iget-object v0, p0, Lcom/android/phone/DsaPhoneNumber;->mSoftLayoutSW:Landroid/widget/RelativeLayout;
 
-    invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v2}, Landroid/widget/RelativeLayout;->setVisibility(I)V
 
     iget-object v0, p0, Lcom/android/phone/DsaPhoneNumber;->mSoftLayout:Landroid/widget/LinearLayout;
 
-    invoke-virtual {v0, v4}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v4}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
     :goto_0
     iget-object v0, p0, Lcom/android/phone/DsaPhoneNumber;->mSim1value:Landroid/widget/EditText;
 
-    invoke-virtual {v0}, Landroid/widget/TextView;->length()I
+    invoke-virtual {v0}, Landroid/widget/EditText;->length()I
 
     move-result v0
 
@@ -1208,7 +1208,7 @@
 
     iget-object v0, p0, Lcom/android/phone/DsaPhoneNumber;->mSim2value:Landroid/widget/EditText;
 
-    invoke-virtual {v0}, Landroid/widget/TextView;->length()I
+    invoke-virtual {v0}, Landroid/widget/EditText;->length()I
 
     move-result v0
 
@@ -1226,11 +1226,11 @@
     :cond_1
     iget-object v0, p0, Lcom/android/phone/DsaPhoneNumber;->mRightSoftBtn:Landroid/widget/LinearLayout;
 
-    invoke-virtual {v0, v2}, Landroid/view/View;->setEnabled(Z)V
+    invoke-virtual {v0, v2}, Landroid/widget/LinearLayout;->setEnabled(Z)V
 
     iget-object v0, p0, Lcom/android/phone/DsaPhoneNumber;->mLeftSoftBtn:Landroid/widget/LinearLayout;
 
-    invoke-virtual {v0, v3}, Landroid/view/View;->setEnabled(Z)V
+    invoke-virtual {v0, v3}, Landroid/widget/LinearLayout;->setEnabled(Z)V
 
     :goto_1
     return-void
@@ -1252,44 +1252,44 @@
 
     iget-object v0, p0, Lcom/android/phone/DsaPhoneNumber;->mSoftLayout:Landroid/widget/LinearLayout;
 
-    invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v2}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
     iget-object v0, p0, Lcom/android/phone/DsaPhoneNumber;->mSoftLayoutSW:Landroid/widget/RelativeLayout;
 
-    invoke-virtual {v0, v4}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v4}, Landroid/widget/RelativeLayout;->setVisibility(I)V
 
     goto :goto_0
 
     :cond_3
     iget-object v0, p0, Lcom/android/phone/DsaPhoneNumber;->mSoftLayout:Landroid/widget/LinearLayout;
 
-    invoke-virtual {v0, v4}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v4}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
     iget-object v0, p0, Lcom/android/phone/DsaPhoneNumber;->mSoftLayoutSW:Landroid/widget/RelativeLayout;
 
-    invoke-virtual {v0, v4}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v4}, Landroid/widget/RelativeLayout;->setVisibility(I)V
 
     goto :goto_0
 
     :cond_4
     iget-object v0, p0, Lcom/android/phone/DsaPhoneNumber;->mLeftSoftBtn:Landroid/widget/LinearLayout;
 
-    invoke-virtual {v0, v2}, Landroid/view/View;->setEnabled(Z)V
+    invoke-virtual {v0, v2}, Landroid/widget/LinearLayout;->setEnabled(Z)V
 
     iget-object v0, p0, Lcom/android/phone/DsaPhoneNumber;->mRightSoftBtn:Landroid/widget/LinearLayout;
 
-    invoke-virtual {v0, v3}, Landroid/view/View;->setEnabled(Z)V
+    invoke-virtual {v0, v3}, Landroid/widget/LinearLayout;->setEnabled(Z)V
 
     goto :goto_1
 
     :cond_5
     iget-object v0, p0, Lcom/android/phone/DsaPhoneNumber;->mLeftSoftBtn:Landroid/widget/LinearLayout;
 
-    invoke-virtual {v0, v3}, Landroid/view/View;->setEnabled(Z)V
+    invoke-virtual {v0, v3}, Landroid/widget/LinearLayout;->setEnabled(Z)V
 
     iget-object v0, p0, Lcom/android/phone/DsaPhoneNumber;->mRightSoftBtn:Landroid/widget/LinearLayout;
 
-    invoke-virtual {v0, v3}, Landroid/view/View;->setEnabled(Z)V
+    invoke-virtual {v0, v3}, Landroid/widget/LinearLayout;->setEnabled(Z)V
 
     goto :goto_1
 .end method
@@ -1312,7 +1312,7 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/DsaPhoneNumber;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 
@@ -1320,7 +1320,7 @@
 
     invoke-static {v2, v3, v5}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/phone/DsaPhoneNumber;->getIntent()Landroid/content/Intent;
 
     move-result-object v1
 
@@ -1356,11 +1356,11 @@
 
     invoke-virtual {v0, v2}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/DsaPhoneNumber;->startActivity(Landroid/content/Intent;)V
 
     :cond_0
     :goto_0
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/DsaPhoneNumber;->finish()V
 
     return-void
 
@@ -1375,7 +1375,7 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/DsaPhoneNumber;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 
@@ -1816,7 +1816,7 @@
 
     invoke-virtual {v1, v2}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/phone/DsaPhoneNumber;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
 
@@ -1833,10 +1833,10 @@
     invoke-virtual {v1, v2, v5}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
     :cond_2
-    invoke-virtual {p0, v1}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v1}, Lcom/android/phone/DsaPhoneNumber;->startActivity(Landroid/content/Intent;)V
 
     :goto_0
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/DsaPhoneNumber;->finish()V
 
     return-void
 
@@ -2023,7 +2023,7 @@
     :cond_5
     const/4 v2, -0x1
 
-    invoke-virtual {p0, v2}, Landroid/app/Activity;->setResult(I)V
+    invoke-virtual {p0, v2}, Lcom/android/phone/DsaPhoneNumber;->setResult(I)V
 
     goto/16 :goto_0
 

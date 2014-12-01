@@ -48,7 +48,6 @@
 # virtual methods
 .method public getDate(Ljava/lang/String;)Ljava/util/Date;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -82,7 +81,6 @@
 
 .method public getTagName(Ljava/lang/String;)Ljava/lang/String;
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/16 v4, 0x20
 

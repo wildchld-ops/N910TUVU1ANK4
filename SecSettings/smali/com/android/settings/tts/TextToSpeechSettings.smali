@@ -161,7 +161,6 @@
 
 .method private checkVoiceData(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     new-instance v1, Landroid/content/Intent;
 
@@ -850,8 +849,6 @@
 
 .method private onSampleTextReceived(ILandroid/content/Intent;)V
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/content/Intent;
 
     invoke-direct {p0}, Lcom/android/settings/tts/TextToSpeechSettings;->getDefaultSampleString()Ljava/lang/String;
 
@@ -951,7 +948,6 @@
 
 .method private onVoiceDataIntegrityCheckDone(Landroid/content/Intent;)V
     .locals 8
-    .param p1    # Landroid/content/Intent;
 
     iget-object v5, p0, Lcom/android/settings/tts/TextToSpeechSettings;->mTts:Landroid/speech/tts/TextToSpeech;
 
@@ -1171,7 +1167,6 @@
 
 .method private updateDefaultEngine(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const-string v1, "TextToSpeechSettings"
 
@@ -1300,7 +1295,6 @@
 
 .method private updateEngineStatus(I)V
     .locals 6
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/settings/tts/TextToSpeechSettings;->mCurrentDefaultLocale:Ljava/util/Locale;
 
@@ -1353,7 +1347,6 @@
 
 .method private updateWidgetState(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/settings/tts/TextToSpeechSettings;->mPlayExample:Landroid/preference/Preference;
 
@@ -1390,9 +1383,6 @@
 
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const/16 v0, 0x7bf
 
@@ -1416,7 +1406,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -1564,7 +1553,6 @@
 
 .method public onInitEngine(I)V
     .locals 1
-    .param p1    # I
 
     if-nez p1, :cond_0
 
@@ -1600,8 +1588,6 @@
 
 .method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
     .locals 4
-    .param p1    # Landroid/preference/Preference;
-    .param p2    # Ljava/lang/Object;
 
     const-string v1, "tts_default_rate"
 
@@ -1697,7 +1683,6 @@
 
 .method public onPreferenceClick(Landroid/preference/Preference;)Z
     .locals 1
-    .param p1    # Landroid/preference/Preference;
 
     iget-object v0, p0, Lcom/android/settings/tts/TextToSpeechSettings;->mPlayExample:Landroid/preference/Preference;
 
@@ -1787,7 +1772,6 @@
 
 .method public onUpdateEngine(I)V
     .locals 4
-    .param p1    # I
 
     if-nez p1, :cond_1
 
@@ -1876,7 +1860,6 @@
 
 .method public setCurrentChecked(Landroid/widget/Checkable;)V
     .locals 0
-    .param p1    # Landroid/widget/Checkable;
 
     iput-object p1, p0, Lcom/android/settings/tts/TextToSpeechSettings;->mCurrentChecked:Landroid/widget/Checkable;
 
@@ -1885,7 +1868,6 @@
 
 .method public setCurrentKey(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/settings/tts/TextToSpeechSettings;->mCurrentEngine:Ljava/lang/String;
 

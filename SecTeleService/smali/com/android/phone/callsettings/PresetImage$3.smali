@@ -48,7 +48,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Landroid/view/View;->getWidth()I
+    invoke-virtual {v1}, Landroid/widget/ImageButton;->getWidth()I
 
     move-result v1
 
@@ -63,7 +63,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Landroid/view/View;->getHeight()I
+    invoke-virtual {v1}, Landroid/widget/ImageButton;->getHeight()I
 
     move-result v1
 

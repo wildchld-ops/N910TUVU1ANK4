@@ -33,8 +33,6 @@
 
 .method synthetic constructor <init>(Lcom/android/server/accessibility/ScreenMagnifier;Lcom/android/server/accessibility/ScreenMagnifier$1;)V
     .locals 0
-    .param p1    # Lcom/android/server/accessibility/ScreenMagnifier;
-    .param p2    # Lcom/android/server/accessibility/ScreenMagnifier$1;
 
     invoke-direct {p0, p1}, Lcom/android/server/accessibility/ScreenMagnifier$StateViewportDraggingHandler;-><init>(Lcom/android/server/accessibility/ScreenMagnifier;)V
 
@@ -43,9 +41,6 @@
 
 .method static synthetic access$600(Lcom/android/server/accessibility/ScreenMagnifier$StateViewportDraggingHandler;Landroid/view/MotionEvent;I)V
     .locals 0
-    .param p0    # Lcom/android/server/accessibility/ScreenMagnifier$StateViewportDraggingHandler;
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/accessibility/ScreenMagnifier$StateViewportDraggingHandler;->onMotionEvent(Landroid/view/MotionEvent;I)V
 
@@ -54,8 +49,6 @@
 
 .method private onMotionEvent(Landroid/view/MotionEvent;I)V
     .locals 8
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # I
 
     const/4 v7, 0x0
 

@@ -31,7 +31,6 @@
 
 .method private varargs checkNonNull([Ljava/lang/Object;)Z
     .locals 5
-    .param p1    # [Ljava/lang/Object;
 
     move-object v0, p1
 
@@ -64,7 +63,6 @@
 
 .method private intern(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p1}, Ljava/lang/String;->intern()Ljava/lang/String;
 
@@ -90,9 +88,6 @@
 
 .method public getFeaturesForLanguage(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)[Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     iget-object v2, p0, Landroid/speech/tts/TextToSpeechService$1;->this$0:Landroid/speech/tts/TextToSpeechService;
 
@@ -137,9 +132,6 @@
 
 .method public isLanguageAvailable(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -213,10 +205,6 @@
 
 .method public loadLanguage(Landroid/os/IBinder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
     .locals 10
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     const/4 v1, 0x1
 
@@ -302,10 +290,6 @@
 
 .method public playAudio(Landroid/os/IBinder;Landroid/net/Uri;ILandroid/os/Bundle;)I
     .locals 7
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Landroid/net/Uri;
-    .param p3    # I
-    .param p4    # Landroid/os/Bundle;
 
     const/4 v1, 0x3
 
@@ -371,10 +355,6 @@
 
 .method public playSilence(Landroid/os/IBinder;JILandroid/os/Bundle;)I
     .locals 8
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # J
-    .param p4    # I
-    .param p5    # Landroid/os/Bundle;
 
     const/4 v1, 0x2
 
@@ -436,8 +416,6 @@
 
 .method public setCallback(Landroid/os/IBinder;Landroid/speech/tts/ITextToSpeechCallback;)V
     .locals 2
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Landroid/speech/tts/ITextToSpeechCallback;
 
     const/4 v0, 0x1
 
@@ -471,10 +449,6 @@
 
 .method public speak(Landroid/os/IBinder;Ljava/lang/String;ILandroid/os/Bundle;)I
     .locals 7
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Landroid/os/Bundle;
 
     const/4 v1, 0x3
 
@@ -540,7 +514,6 @@
 
 .method public stop(Landroid/os/IBinder;)I
     .locals 2
-    .param p1    # Landroid/os/IBinder;
 
     const/4 v0, 0x1
 
@@ -578,10 +551,6 @@
 
 .method public synthesizeToFileDescriptor(Landroid/os/IBinder;Ljava/lang/String;Landroid/os/ParcelFileDescriptor;Landroid/os/Bundle;)I
     .locals 10
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/os/ParcelFileDescriptor;
-    .param p4    # Landroid/os/Bundle;
 
     const/4 v9, 0x1
 

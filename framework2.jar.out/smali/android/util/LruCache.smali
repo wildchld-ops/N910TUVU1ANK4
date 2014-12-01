@@ -44,7 +44,6 @@
 # direct methods
 .method public constructor <init>(I)V
     .locals 4
-    .param p1    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -167,7 +166,6 @@
 
 .method protected entryRemoved(ZLjava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(ZTK;TV;TV;)V"
@@ -596,7 +594,6 @@
 
 .method public resize(I)V
     .locals 2
-    .param p1    # I
 
     if-gtz p1, :cond_0
 
@@ -788,7 +785,6 @@
 
 .method public trimToSize(I)V
     .locals 6
-    .param p1    # I
 
     :goto_0
     monitor-enter p0

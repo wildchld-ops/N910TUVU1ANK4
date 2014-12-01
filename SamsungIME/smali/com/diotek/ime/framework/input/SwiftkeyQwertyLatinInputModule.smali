@@ -14,7 +14,6 @@
 
 .method private composingForLao(I)I
     .locals 6
-    .param p1    # I
 
     const/16 v5, 0xeb6
 
@@ -127,7 +126,6 @@
 
 .method private hasEmoji(Ljava/lang/StringBuilder;)Z
     .locals 2
-    .param p1    # Ljava/lang/StringBuilder;
 
     invoke-virtual {p1}, Ljava/lang/StringBuilder;->length()I
 
@@ -156,7 +154,6 @@
 
 .method private isAcceptableIndoChina(I)Z
     .locals 4
-    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -310,7 +307,6 @@
 
 .method private isAcceptableThai(I)Z
     .locals 4
-    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -1091,8 +1087,6 @@
 
 .method private processSingleTap(I[I)V
     .locals 26
-    .param p1    # I
-    .param p2    # [I
 
     move-object/from16 v0, p0
 
@@ -2652,8 +2646,6 @@
 
 .method private processWordSeparator(I[I)V
     .locals 12
-    .param p1    # I
-    .param p2    # [I
 
     const/16 v11, 0x20
 
@@ -3262,8 +3254,6 @@
 
 .method public onCharacterKey(I[I)V
     .locals 11
-    .param p1    # I
-    .param p2    # [I
 
     const/4 v10, 0x2
 
@@ -3542,16 +3532,12 @@
 
 .method public onHwrPanelLongPressed(ILjava/lang/String;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method public pickSuggestionManually(ILjava/lang/CharSequence;)V
     .locals 17
-    .param p1    # I
-    .param p2    # Ljava/lang/CharSequence;
 
     move-object/from16 v0, p0
 
@@ -4157,8 +4143,6 @@
 
 .method protected processSymbolicKey(I[I)V
     .locals 10
-    .param p1    # I
-    .param p2    # [I
 
     const/16 v9, 0x20
 

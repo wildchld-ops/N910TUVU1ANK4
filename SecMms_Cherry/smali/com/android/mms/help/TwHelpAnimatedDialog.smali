@@ -65,7 +65,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -100,8 +99,6 @@
 
 .method public constructor <init>(Landroid/content/Context;I)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -136,9 +133,6 @@
 
 .method protected constructor <init>(Landroid/content/Context;ZLandroid/content/DialogInterface$OnCancelListener;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Z
-    .param p3    # Landroid/content/DialogInterface$OnCancelListener;
 
     const/4 v0, 0x0
 
@@ -173,7 +167,6 @@
 
 .method private SetAnimationEffectonLand(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     new-instance v1, Ljava/util/ArrayList;
 
@@ -272,7 +265,6 @@
 
 .method private SetAnimationEffectonPot(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     new-instance v1, Ljava/util/ArrayList;
 
@@ -371,7 +363,6 @@
 
 .method private SetAnimationEffectonPot2(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     new-instance v1, Ljava/util/ArrayList;
 
@@ -470,7 +461,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/help/TwHelpAnimatedDialog;)Landroid/view/animation/Animation;
     .locals 1
-    .param p0    # Lcom/android/mms/help/TwHelpAnimatedDialog;
 
     iget-object v0, p0, Lcom/android/mms/help/TwHelpAnimatedDialog;->mBubbleAnimation:Landroid/view/animation/Animation;
 
@@ -479,7 +469,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/help/TwHelpAnimatedDialog;)I
     .locals 1
-    .param p0    # Lcom/android/mms/help/TwHelpAnimatedDialog;
 
     iget v0, p0, Lcom/android/mms/help/TwHelpAnimatedDialog;->mCurrentPointAnimation:I
 
@@ -488,8 +477,6 @@
 
 .method static synthetic access$102(Lcom/android/mms/help/TwHelpAnimatedDialog;I)I
     .locals 0
-    .param p0    # Lcom/android/mms/help/TwHelpAnimatedDialog;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/mms/help/TwHelpAnimatedDialog;->mCurrentPointAnimation:I
 
@@ -498,7 +485,6 @@
 
 .method static synthetic access$108(Lcom/android/mms/help/TwHelpAnimatedDialog;)I
     .locals 2
-    .param p0    # Lcom/android/mms/help/TwHelpAnimatedDialog;
 
     iget v0, p0, Lcom/android/mms/help/TwHelpAnimatedDialog;->mCurrentPointAnimation:I
 
@@ -511,7 +497,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/help/TwHelpAnimatedDialog;)Ljava/util/List;
     .locals 1
-    .param p0    # Lcom/android/mms/help/TwHelpAnimatedDialog;
 
     iget-object v0, p0, Lcom/android/mms/help/TwHelpAnimatedDialog;->mPointAnimations_pot:Ljava/util/List;
 
@@ -520,7 +505,6 @@
 
 .method static synthetic access$300(Lcom/android/mms/help/TwHelpAnimatedDialog;)I
     .locals 1
-    .param p0    # Lcom/android/mms/help/TwHelpAnimatedDialog;
 
     iget v0, p0, Lcom/android/mms/help/TwHelpAnimatedDialog;->mCurrentPointAnimation3:I
 
@@ -529,8 +513,6 @@
 
 .method static synthetic access$302(Lcom/android/mms/help/TwHelpAnimatedDialog;I)I
     .locals 0
-    .param p0    # Lcom/android/mms/help/TwHelpAnimatedDialog;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/mms/help/TwHelpAnimatedDialog;->mCurrentPointAnimation3:I
 
@@ -539,7 +521,6 @@
 
 .method static synthetic access$308(Lcom/android/mms/help/TwHelpAnimatedDialog;)I
     .locals 2
-    .param p0    # Lcom/android/mms/help/TwHelpAnimatedDialog;
 
     iget v0, p0, Lcom/android/mms/help/TwHelpAnimatedDialog;->mCurrentPointAnimation3:I
 
@@ -552,7 +533,6 @@
 
 .method static synthetic access$400(Lcom/android/mms/help/TwHelpAnimatedDialog;)Ljava/util/List;
     .locals 1
-    .param p0    # Lcom/android/mms/help/TwHelpAnimatedDialog;
 
     iget-object v0, p0, Lcom/android/mms/help/TwHelpAnimatedDialog;->mPointAnimations_pot2:Ljava/util/List;
 
@@ -561,7 +541,6 @@
 
 .method static synthetic access$500(Lcom/android/mms/help/TwHelpAnimatedDialog;)Ljava/util/List;
     .locals 1
-    .param p0    # Lcom/android/mms/help/TwHelpAnimatedDialog;
 
     iget-object v0, p0, Lcom/android/mms/help/TwHelpAnimatedDialog;->mPointAnimations_land:Ljava/util/List;
 
@@ -570,7 +549,6 @@
 
 .method static synthetic access$600(Lcom/android/mms/help/TwHelpAnimatedDialog;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/mms/help/TwHelpAnimatedDialog;
 
     iget-object v0, p0, Lcom/android/mms/help/TwHelpAnimatedDialog;->mPointAnimationView_pot:Landroid/view/View;
 
@@ -579,7 +557,6 @@
 
 .method static synthetic access$700(Lcom/android/mms/help/TwHelpAnimatedDialog;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/mms/help/TwHelpAnimatedDialog;
 
     iget-object v0, p0, Lcom/android/mms/help/TwHelpAnimatedDialog;->mPointAnimationView_pot2:Landroid/view/View;
 
@@ -588,7 +565,6 @@
 
 .method static synthetic access$800(Lcom/android/mms/help/TwHelpAnimatedDialog;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/mms/help/TwHelpAnimatedDialog;
 
     iget-object v0, p0, Lcom/android/mms/help/TwHelpAnimatedDialog;->mPointAnimationView_land:Landroid/view/View;
 
@@ -597,7 +573,6 @@
 
 .method private init(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Lcom/android/mms/help/TwHelpAnimatedDialog;->SetAnimationEffectonPot(Landroid/content/Context;)V
 

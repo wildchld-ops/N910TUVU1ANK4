@@ -50,7 +50,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -155,7 +154,6 @@
 # virtual methods
 .method public enableBezelInteraction(Z)V
     .locals 4
-    .param p1    # Z
 
     :try_start_0
     invoke-direct {p0}, Lcom/samsung/android/sdk/look/bezelinteraction/SlookBezelInteraction;->getService()Lcom/samsung/android/bezelinteraction/IBezelManager;
@@ -186,7 +184,6 @@
 
 .method public registerListener(Lcom/samsung/android/sdk/look/bezelinteraction/SlookBezelInteraction$BezelListener;)V
     .locals 10
-    .param p1    # Lcom/samsung/android/sdk/look/bezelinteraction/SlookBezelInteraction$BezelListener;
 
     const-string v6, "SlookBezelInteraction"
 
@@ -351,7 +348,6 @@
 
 .method public unregisterListener(Lcom/samsung/android/sdk/look/bezelinteraction/SlookBezelInteraction$BezelListener;)V
     .locals 8
-    .param p1    # Lcom/samsung/android/sdk/look/bezelinteraction/SlookBezelInteraction$BezelListener;
 
     const-string v5, "SlookBezelInteraction"
 

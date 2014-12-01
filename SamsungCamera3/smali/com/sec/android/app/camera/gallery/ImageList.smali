@@ -113,11 +113,6 @@
 
 .method public constructor <init>(Landroid/content/ContentResolver;Landroid/net/Uri;Landroid/net/Uri;ILjava/lang/String;)V
     .locals 0
-    .param p1    # Landroid/content/ContentResolver;
-    .param p2    # Landroid/net/Uri;
-    .param p3    # Landroid/net/Uri;
-    .param p4    # I
-    .param p5    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2, p4, p5}, Lcom/sec/android/app/camera/gallery/BaseImageList;-><init>(Landroid/content/ContentResolver;Landroid/net/Uri;ILjava/lang/String;)V
 
@@ -270,7 +265,6 @@
 
 .method protected getImageId(Landroid/database/Cursor;)J
     .locals 2
-    .param p1    # Landroid/database/Cursor;
 
     const/4 v0, 0x0
 
@@ -283,7 +277,6 @@
 
 .method protected loadImageFromCursor(Landroid/database/Cursor;)Lcom/sec/android/app/camera/gallery/BaseImage;
     .locals 17
-    .param p1    # Landroid/database/Cursor;
 
     const/4 v1, 0x0
 

@@ -36,7 +36,6 @@
 # virtual methods
 .method public onInit(I)V
     .locals 2
-    .param p1    # I
 
     if-eqz p1, :cond_0
 

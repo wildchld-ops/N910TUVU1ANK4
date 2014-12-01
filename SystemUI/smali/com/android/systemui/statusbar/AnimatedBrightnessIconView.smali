@@ -47,7 +47,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -60,8 +59,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -74,9 +71,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/16 v2, 0x14
 
@@ -289,7 +283,6 @@
 
 .method private setAnimation(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v0, 0x2
 
@@ -344,7 +337,6 @@
 # virtual methods
 .method public onAnimationUpdate(Landroid/animation/ValueAnimator;)V
     .locals 1
-    .param p1    # Landroid/animation/ValueAnimator;
 
     invoke-virtual {p1}, Landroid/animation/ValueAnimator;->getAnimatedValue()Ljava/lang/Object;
 
@@ -371,7 +363,6 @@
 
 .method protected onDraw(Landroid/graphics/Canvas;)V
     .locals 5
-    .param p1    # Landroid/graphics/Canvas;
 
     const/high16 v4, 0x40000000
 
@@ -444,7 +435,6 @@
 
 .method public setAnimationEnableValue(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/AnimatedBrightnessIconView;->TAG:Ljava/lang/String;
 
@@ -475,7 +465,6 @@
 
 .method public setBrightnessValueMax(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/AnimatedBrightnessIconView;->TAG:Ljava/lang/String;
 
@@ -506,7 +495,6 @@
 
 .method public setBrightnessValueMin(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/AnimatedBrightnessIconView;->TAG:Ljava/lang/String;
 
@@ -537,12 +525,6 @@
 
 .method public setIcon(IIIIII)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/AnimatedBrightnessIconView;->TAG:Ljava/lang/String;
 
@@ -575,8 +557,6 @@
 
 .method public setIcon(IZ)V
     .locals 2
-    .param p1    # I
-    .param p2    # Z
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/AnimatedBrightnessIconView;->TAG:Ljava/lang/String;
 
@@ -614,7 +594,6 @@
 
 .method public setValue(I)V
     .locals 4
-    .param p1    # I
 
     const/16 v3, 0x64
 

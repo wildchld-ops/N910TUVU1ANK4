@@ -31,7 +31,6 @@
 # direct methods
 .method public constructor <init>(Landroid/renderscript/RenderScript;)V
     .locals 2
-    .param p1    # Landroid/renderscript/RenderScript;
 
     const/16 v1, 0x8
 
@@ -62,8 +61,6 @@
 # virtual methods
 .method public add(Landroid/renderscript/Element;Ljava/lang/String;)Landroid/renderscript/Element$Builder;
     .locals 1
-    .param p1    # Landroid/renderscript/Element;
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -76,9 +73,6 @@
 
 .method public add(Landroid/renderscript/Element;Ljava/lang/String;I)Landroid/renderscript/Element$Builder;
     .locals 7
-    .param p1    # Landroid/renderscript/Element;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     const/4 v6, 0x1
 

@@ -33,7 +33,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 9
-    .param p1    # Landroid/content/Context;
 
     const v2, 0x7f0b012b
 
@@ -122,7 +121,6 @@
 
 .method static synthetic access$000(Lcom/android/systemui/statusbar/policy/quicksetting/CarModeQuickSettingButton;)I
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/policy/quicksetting/CarModeQuickSettingButton;
 
     invoke-direct {p0}, Lcom/android/systemui/statusbar/policy/quicksetting/CarModeQuickSettingButton;->getMode()I
 
@@ -133,8 +131,6 @@
 
 .method static synthetic access$102(Lcom/android/systemui/statusbar/policy/quicksetting/CarModeQuickSettingButton;Z)Z
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/policy/quicksetting/CarModeQuickSettingButton;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/systemui/statusbar/policy/quicksetting/CarModeQuickSettingButton;->mState:Z
 
@@ -143,7 +139,6 @@
 
 .method static synthetic access$200(Lcom/android/systemui/statusbar/policy/quicksetting/CarModeQuickSettingButton;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/policy/quicksetting/CarModeQuickSettingButton;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -170,7 +165,6 @@
 
 .method private setMode(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -247,7 +241,6 @@
 
 .method public onClick(Z)V
     .locals 5
-    .param p1    # Z
 
     const/4 v1, 0x0
 
@@ -402,7 +395,6 @@
 
 .method public userSwitched(Landroid/content/pm/UserInfo;)V
     .locals 2
-    .param p1    # Landroid/content/pm/UserInfo;
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/quicksetting/CarModeQuickSettingButton;->mCarModeObserver:Lcom/android/systemui/statusbar/policy/quicksetting/CarModeQuickSettingButton$CarModeObserver;
 

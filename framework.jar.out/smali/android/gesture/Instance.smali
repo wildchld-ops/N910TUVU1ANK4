@@ -50,9 +50,6 @@
 
 .method private constructor <init>(J[FLjava/lang/String;)V
     .locals 0
-    .param p1    # J
-    .param p3    # [F
-    .param p4    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -67,10 +64,6 @@
 
 .method static createInstance(IILandroid/gesture/Gesture;Ljava/lang/String;)Landroid/gesture/Instance;
     .locals 4
-    .param p0    # I
-    .param p1    # I
-    .param p2    # Landroid/gesture/Gesture;
-    .param p3    # Ljava/lang/String;
 
     const/4 v2, 0x2
 
@@ -165,7 +158,6 @@
 
 .method private static spatialSampler(Landroid/gesture/Gesture;)[F
     .locals 2
-    .param p0    # Landroid/gesture/Gesture;
 
     const/16 v0, 0x10
 
@@ -180,8 +172,6 @@
 
 .method private static temporalSampler(ILandroid/gesture/Gesture;)[F
     .locals 13
-    .param p0    # I
-    .param p1    # Landroid/gesture/Gesture;
 
     const/4 v12, 0x1
 

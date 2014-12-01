@@ -34,7 +34,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/ContextualPageHelp;)Landroid/widget/ImageView;
     .locals 1
-    .param p0    # Lcom/android/settings/ContextualPageHelp;
 
     iget-object v0, p0, Lcom/android/settings/ContextualPageHelp;->launchbtnplay:Landroid/widget/ImageView;
 
@@ -43,7 +42,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/ContextualPageHelp;)Landroid/graphics/drawable/AnimationDrawable;
     .locals 1
-    .param p0    # Lcom/android/settings/ContextualPageHelp;
 
     iget-object v0, p0, Lcom/android/settings/ContextualPageHelp;->mAni1:Landroid/graphics/drawable/AnimationDrawable;
 
@@ -52,7 +50,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/ContextualPageHelp;)Landroid/widget/ImageView;
     .locals 1
-    .param p0    # Lcom/android/settings/ContextualPageHelp;
 
     iget-object v0, p0, Lcom/android/settings/ContextualPageHelp;->recommendbtnplay:Landroid/widget/ImageView;
 
@@ -61,7 +58,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/ContextualPageHelp;)Landroid/graphics/drawable/AnimationDrawable;
     .locals 1
-    .param p0    # Lcom/android/settings/ContextualPageHelp;
 
     iget-object v0, p0, Lcom/android/settings/ContextualPageHelp;->mAni2:Landroid/graphics/drawable/AnimationDrawable;
 
@@ -72,7 +68,6 @@
 # virtual methods
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -81,9 +76,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 4
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const v1, 0x7f04004d
 

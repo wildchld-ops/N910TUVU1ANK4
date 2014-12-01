@@ -46,8 +46,6 @@
 
 .method synthetic constructor <init>(Landroid/view/View;Landroid/view/View$1;)V
     .locals 0
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/View$1;
 
     invoke-direct {p0, p1}, Landroid/view/View$SendViewStateChangedAccessibilityEvent;-><init>(Landroid/view/View;)V
 
@@ -109,7 +107,6 @@
 
 .method public runOrPost(I)V
     .locals 9
-    .param p1    # I
 
     const/4 v8, 0x1
 

@@ -51,8 +51,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;I)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Landroid/widget/ArrayAdapter;-><init>(Landroid/content/Context;I)V
 
@@ -77,8 +75,6 @@
 
 .method public constructor <init>(Landroid/content/Context;ILjava/util/ArrayList;Ljava/util/ArrayList;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -112,7 +108,6 @@
 # virtual methods
 .method public add(Lcom/diotek/ime/implement/setting/AutoSubstitutionsData;)V
     .locals 1
-    .param p1    # Lcom/diotek/ime/implement/setting/AutoSubstitutionsData;
 
     iget-object v0, p0, Lcom/diotek/ime/implement/setting/adapter/DoubleArrayAdapter;->item:Ljava/util/ArrayList;
 
@@ -125,7 +120,6 @@
 
 .method public bridge synthetic add(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/diotek/ime/implement/setting/AutoSubstitutionsData;
 
@@ -189,9 +183,6 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 7
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     const v6, 0x7f0800ce
 

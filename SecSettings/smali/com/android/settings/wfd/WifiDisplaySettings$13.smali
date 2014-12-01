@@ -40,7 +40,6 @@
 # virtual methods
 .method public onFailure(I)V
     .locals 3
-    .param p1    # I
 
     const-string v1, "WifiDisplaySettings"
 

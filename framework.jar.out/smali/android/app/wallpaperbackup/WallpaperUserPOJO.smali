@@ -26,11 +26,6 @@
 
 .method public constructor <init>(IILjava/lang/String;Ljava/lang/String;I)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -91,7 +86,6 @@
 
 .method public setComponent(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/app/wallpaperbackup/WallpaperUserPOJO;->component:Ljava/lang/String;
 
@@ -100,7 +94,6 @@
 
 .method public setHeight(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/app/wallpaperbackup/WallpaperUserPOJO;->height:I
 
@@ -109,7 +102,6 @@
 
 .method public setName(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/app/wallpaperbackup/WallpaperUserPOJO;->name:Ljava/lang/String;
 
@@ -118,7 +110,6 @@
 
 .method public setUserId(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/app/wallpaperbackup/WallpaperUserPOJO;->userId:I
 
@@ -127,7 +118,6 @@
 
 .method public setWidth(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/app/wallpaperbackup/WallpaperUserPOJO;->width:I
 

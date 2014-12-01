@@ -90,8 +90,6 @@
 
 .method public constructor <init>(Ljava/lang/Object;I)V
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # I
 
     const-class v0, Landroid/view/InputEventConsistencyVerifier;
 
@@ -106,9 +104,6 @@
 
 .method public constructor <init>(Ljava/lang/Object;ILjava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -135,9 +130,6 @@
 
 .method private addKeyState(III)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     invoke-static {p1, p2, p3}, Landroid/view/InputEventConsistencyVerifier$KeyState;->obtain(III)Landroid/view/InputEventConsistencyVerifier$KeyState;
 
@@ -154,10 +146,6 @@
 
 .method private static appendEvent(Ljava/lang/StringBuilder;ILandroid/view/InputEvent;Z)V
     .locals 3
-    .param p0    # Ljava/lang/StringBuilder;
-    .param p1    # I
-    .param p2    # Landroid/view/InputEvent;
-    .param p3    # Z
 
     invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -193,7 +181,6 @@
 
 .method private ensureHistorySizeIsZeroForThisAction(Landroid/view/MotionEvent;)V
     .locals 3
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getHistorySize()I
 
@@ -245,7 +232,6 @@
 
 .method private ensureMetaStateIsNormalized(I)V
     .locals 5
-    .param p1    # I
 
     invoke-static {p1}, Landroid/view/KeyEvent;->normalizeMetaState(I)I
 
@@ -287,7 +273,6 @@
 
 .method private ensurePointerCountIsOneForThisAction(Landroid/view/MotionEvent;)V
     .locals 3
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getPointerCount()I
 
@@ -341,10 +326,6 @@
 
 .method private findKeyState(IIIZ)Landroid/view/InputEventConsistencyVerifier$KeyState;
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Z
 
     const/4 v2, 0x0
 
@@ -593,7 +574,6 @@
 
 .method private problem(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/view/InputEventConsistencyVerifier;->mViolationMessage:Ljava/lang/StringBuilder;
 
@@ -645,9 +625,6 @@
 
 .method private startEvent(Landroid/view/InputEvent;ILjava/lang/String;)Z
     .locals 3
-    .param p1    # Landroid/view/InputEvent;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -706,8 +683,6 @@
 # virtual methods
 .method public onGenericMotionEvent(Landroid/view/MotionEvent;I)V
     .locals 3
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # I
 
     const-string v2, "GenericMotionEvent"
 
@@ -840,8 +815,6 @@
 
 .method public onInputEvent(Landroid/view/InputEvent;I)V
     .locals 3
-    .param p1    # Landroid/view/InputEvent;
-    .param p2    # I
 
     instance-of v2, p1, Landroid/view/KeyEvent;
 
@@ -892,8 +865,6 @@
 
 .method public onKeyEvent(Landroid/view/KeyEvent;I)V
     .locals 7
-    .param p1    # Landroid/view/KeyEvent;
-    .param p2    # I
 
     const-string v5, "KeyEvent"
 
@@ -1057,8 +1028,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;I)V
     .locals 13
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # I
 
     const/4 v10, 0x0
 
@@ -1667,8 +1636,6 @@
 
 .method public onTrackballEvent(Landroid/view/MotionEvent;I)V
     .locals 5
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # I
 
     const/4 v4, 0x0
 
@@ -1872,8 +1839,6 @@
 
 .method public onUnhandledEvent(Landroid/view/InputEvent;I)V
     .locals 9
-    .param p1    # Landroid/view/InputEvent;
-    .param p2    # I
 
     const/4 v8, 0x1
 

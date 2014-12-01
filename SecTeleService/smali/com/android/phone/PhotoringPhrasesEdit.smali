@@ -165,7 +165,7 @@
 
     invoke-static {v0, v1}, Landroid/util/secutil/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/PhotoringPhrasesEdit;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -448,7 +448,7 @@
 
     :cond_0
     :try_start_0
-    invoke-virtual {p0, v1, v2}, Landroid/app/Activity;->startActivityForResult(Landroid/content/Intent;I)V
+    invoke-virtual {p0, v1, v2}, Lcom/android/phone/PhotoringPhrasesEdit;->startActivityForResult(Landroid/content/Intent;I)V
     :try_end_0
     .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -458,7 +458,7 @@
     :cond_1
     const v5, 0x7f0902a2
 
-    invoke-virtual {p0, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v5}, Lcom/android/phone/PhotoringPhrasesEdit;->getString(I)Ljava/lang/String;
 
     move-result-object v5
 
@@ -587,11 +587,11 @@
 
     iget-object v0, p0, Lcom/android/phone/PhotoringPhrasesEdit;->menuDlg:Landroid/app/AlertDialog;
 
-    invoke-virtual {v0, v1}, Landroid/app/Dialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
+    invoke-virtual {v0, v1}, Landroid/app/AlertDialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
     iget-object v0, p0, Lcom/android/phone/PhotoringPhrasesEdit;->menuDlg:Landroid/app/AlertDialog;
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->dismiss()V
+    invoke-virtual {v0}, Landroid/app/AlertDialog;->dismiss()V
 
     iput-object v1, p0, Lcom/android/phone/PhotoringPhrasesEdit;->menuDlg:Landroid/app/AlertDialog;
 
@@ -685,9 +685,9 @@
 
     const/4 v2, -0x1
 
-    invoke-virtual {p0, v2, v1}, Landroid/app/Activity;->setResult(ILandroid/content/Intent;)V
+    invoke-virtual {p0, v2, v1}, Lcom/android/phone/PhotoringPhrasesEdit;->setResult(ILandroid/content/Intent;)V
 
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/PhotoringPhrasesEdit;->finish()V
 
     return-void
 
@@ -733,7 +733,7 @@
 
     const/4 v3, 0x4
 
-    invoke-virtual {v2, v3}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v2, v3}, Landroid/widget/TextView;->setVisibility(I)V
 
     return-void
 .end method
@@ -817,7 +817,7 @@
 
     const/4 v3, 0x4
 
-    invoke-virtual {v2, v3}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v2, v3}, Landroid/widget/TextView;->setVisibility(I)V
 
     iget-object v2, p0, Lcom/android/phone/PhotoringPhrasesEdit;->mvImage:Landroid/widget/ImageView;
 
@@ -894,7 +894,7 @@
 
     iget-object v1, p0, Lcom/android/phone/PhotoringPhrasesEdit;->mtvTxt:Landroid/widget/TextView;
 
-    invoke-virtual {v1, v5}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v1, v5}, Landroid/widget/TextView;->setVisibility(I)V
 
     iget-object v1, p0, Lcom/android/phone/PhotoringPhrasesEdit;->phrase:Lcom/android/phone/PhotoringPhrase;
 
@@ -940,7 +940,7 @@
 
     iget-object v1, p0, Lcom/android/phone/PhotoringPhrasesEdit;->menuDlg:Landroid/app/AlertDialog;
 
-    invoke-virtual {v1}, Landroid/app/Dialog;->show()V
+    invoke-virtual {v1}, Landroid/app/AlertDialog;->show()V
 
     return-void
 .end method
@@ -1124,7 +1124,7 @@
     const/4 v0, 0x6
 
     :try_start_0
-    invoke-virtual {p0, v1, v0}, Landroid/app/Activity;->startActivityForResult(Landroid/content/Intent;I)V
+    invoke-virtual {p0, v1, v0}, Lcom/android/phone/PhotoringPhrasesEdit;->startActivityForResult(Landroid/content/Intent;I)V
     :try_end_0
     .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -1241,7 +1241,7 @@
     const/4 v0, 0x5
 
     :try_start_1
-    invoke-virtual {p0, v1, v0}, Landroid/app/Activity;->startActivityForResult(Landroid/content/Intent;I)V
+    invoke-virtual {p0, v1, v0}, Lcom/android/phone/PhotoringPhrasesEdit;->startActivityForResult(Landroid/content/Intent;I)V
     :try_end_1
     .catch Landroid/content/ActivityNotFoundException; {:try_start_1 .. :try_end_1} :catch_1
 
@@ -1362,7 +1362,7 @@
     invoke-virtual {v1, v5, v6}, Landroid/content/Intent;->setDataAndType(Landroid/net/Uri;Ljava/lang/String;)Landroid/content/Intent;
 
     :try_start_0
-    invoke-virtual {p0, v1}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v1}, Lcom/android/phone/PhotoringPhrasesEdit;->startActivity(Landroid/content/Intent;)V
     :try_end_0
     .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -1478,7 +1478,7 @@
     const/4 v5, 0x5
 
     :try_start_1
-    invoke-virtual {p0, v3, v5}, Landroid/app/Activity;->startActivityForResult(Landroid/content/Intent;I)V
+    invoke-virtual {p0, v3, v5}, Lcom/android/phone/PhotoringPhrasesEdit;->startActivityForResult(Landroid/content/Intent;I)V
     :try_end_1
     .catch Landroid/content/ActivityNotFoundException; {:try_start_1 .. :try_end_1} :catch_1
 
@@ -1535,7 +1535,7 @@
 
     iget-object v5, p0, Lcom/android/phone/PhotoringPhrasesEdit;->mtvTxt:Landroid/widget/TextView;
 
-    invoke-virtual {v5, v7}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v5, v7}, Landroid/widget/TextView;->setVisibility(I)V
 
     iget-object v5, p0, Lcom/android/phone/PhotoringPhrasesEdit;->phrase:Lcom/android/phone/PhotoringPhrase;
 
@@ -1571,9 +1571,9 @@
 
     const v6, 0x7f04006c
 
-    invoke-virtual {p0, v6}, Landroid/app/Activity;->setContentView(I)V
+    invoke-virtual {p0, v6}, Lcom/android/phone/PhotoringPhrasesEdit;->setContentView(I)V
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/PhotoringPhrasesEdit;->getResources()Landroid/content/res/Resources;
 
     move-result-object v6
 
@@ -1585,7 +1585,7 @@
 
     iput v6, p0, Lcom/android/phone/PhotoringPhrasesEdit;->mThumbHeight:I
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getActionBar()Landroid/app/ActionBar;
+    invoke-virtual {p0}, Lcom/android/phone/PhotoringPhrasesEdit;->getActionBar()Landroid/app/ActionBar;
 
     move-result-object v0
 
@@ -1602,7 +1602,7 @@
     :cond_0
     const v6, 0x7f0a019d
 
-    invoke-virtual {p0, v6}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v6}, Lcom/android/phone/PhotoringPhrasesEdit;->findViewById(I)Landroid/view/View;
 
     move-result-object v6
 
@@ -1612,7 +1612,7 @@
 
     const v6, 0x7f0a019e
 
-    invoke-virtual {p0, v6}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v6}, Lcom/android/phone/PhotoringPhrasesEdit;->findViewById(I)Landroid/view/View;
 
     move-result-object v6
 
@@ -1630,7 +1630,7 @@
 
     invoke-direct {v7, p0, v8, v9}, Lcom/android/phone/PhotoringUtil$PhraseTextWatcher;-><init>(Landroid/content/Context;Landroid/widget/EditText;Landroid/widget/TextView;)V
 
-    invoke-virtual {v6, v7}, Landroid/widget/TextView;->addTextChangedListener(Landroid/text/TextWatcher;)V
+    invoke-virtual {v6, v7}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
     const/4 v6, 0x1
 
@@ -1646,17 +1646,17 @@
 
     iget-object v6, p0, Lcom/android/phone/PhotoringPhrasesEdit;->mtvPhrase:Landroid/widget/EditText;
 
-    invoke-virtual {v6, v3}, Landroid/widget/TextView;->setFilters([Landroid/text/InputFilter;)V
+    invoke-virtual {v6, v3}, Landroid/widget/EditText;->setFilters([Landroid/text/InputFilter;)V
 
     iget-object v6, p0, Lcom/android/phone/PhotoringPhrasesEdit;->mtvPhrase:Landroid/widget/EditText;
 
     const-string v7, "disableEmoticonInput=true"
 
-    invoke-virtual {v6, v7}, Landroid/widget/TextView;->setPrivateImeOptions(Ljava/lang/String;)V
+    invoke-virtual {v6, v7}, Landroid/widget/EditText;->setPrivateImeOptions(Ljava/lang/String;)V
 
     const v6, 0x7f0a019f
 
-    invoke-virtual {p0, v6}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v6}, Lcom/android/phone/PhotoringPhrasesEdit;->findViewById(I)Landroid/view/View;
 
     move-result-object v6
 
@@ -1666,7 +1666,7 @@
 
     iget-object v6, p0, Lcom/android/phone/PhotoringPhrasesEdit;->mvImage:Landroid/widget/ImageView;
 
-    invoke-virtual {p0, v6}, Landroid/app/Activity;->registerForContextMenu(Landroid/view/View;)V
+    invoke-virtual {p0, v6}, Lcom/android/phone/PhotoringPhrasesEdit;->registerForContextMenu(Landroid/view/View;)V
 
     iget-object v6, p0, Lcom/android/phone/PhotoringPhrasesEdit;->mvImage:Landroid/widget/ImageView;
 
@@ -1674,11 +1674,11 @@
 
     invoke-direct {v7, p0}, Lcom/android/phone/PhotoringPhrasesEdit$1;-><init>(Lcom/android/phone/PhotoringPhrasesEdit;)V
 
-    invoke-virtual {v6, v7}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v6, v7}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     const v6, 0x7f0a01a0
 
-    invoke-virtual {p0, v6}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v6}, Lcom/android/phone/PhotoringPhrasesEdit;->findViewById(I)Landroid/view/View;
 
     move-result-object v6
 
@@ -1686,7 +1686,7 @@
 
     iput-object v6, p0, Lcom/android/phone/PhotoringPhrasesEdit;->mtvTxt:Landroid/widget/TextView;
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getFilesDir()Ljava/io/File;
+    invoke-virtual {p0}, Lcom/android/phone/PhotoringPhrasesEdit;->getFilesDir()Ljava/io/File;
 
     move-result-object v6
 
@@ -1702,7 +1702,7 @@
 
     iput-object v6, p0, Lcom/android/phone/PhotoringPhrasesEdit;->file:Ljava/io/File;
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/phone/PhotoringPhrasesEdit;->getIntent()Landroid/content/Intent;
 
     move-result-object v4
 
@@ -1727,7 +1727,7 @@
     const/4 v6, 0x1
 
     :goto_0
-    invoke-virtual {v7, v6}, Landroid/widget/TextView;->setEnabled(Z)V
+    invoke-virtual {v7, v6}, Landroid/widget/EditText;->setEnabled(Z)V
 
     iget v6, p0, Lcom/android/phone/PhotoringPhrasesEdit;->mScreenMode:I
 
@@ -1737,7 +1737,7 @@
 
     const v6, 0x7f090812
 
-    invoke-virtual {p0, v6}, Landroid/app/Activity;->setTitle(I)V
+    invoke-virtual {p0, v6}, Lcom/android/phone/PhotoringPhrasesEdit;->setTitle(I)V
 
     :goto_1
     iget v6, p0, Lcom/android/phone/PhotoringPhrasesEdit;->mScreenMode:I
@@ -1841,7 +1841,7 @@
 
     iget-object v7, v7, Lcom/android/phone/PhotoringPhrase;->message:Ljava/lang/String;
 
-    invoke-virtual {v6, v7}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {v6, v7}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
     iget-object v6, p0, Lcom/android/phone/PhotoringPhrasesEdit;->phrase:Lcom/android/phone/PhotoringPhrase;
 
@@ -1860,7 +1860,7 @@
     const/4 v6, 0x4
 
     :goto_2
-    invoke-virtual {v7, v6}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v7, v6}, Landroid/widget/TextView;->setVisibility(I)V
 
     :cond_2
     :goto_3
@@ -1880,14 +1880,14 @@
 
     const v6, 0x7f090811
 
-    invoke-virtual {p0, v6}, Landroid/app/Activity;->setTitle(I)V
+    invoke-virtual {p0, v6}, Lcom/android/phone/PhotoringPhrasesEdit;->setTitle(I)V
 
     goto/16 :goto_1
 
     :cond_5
     const v6, 0x7f090810
 
-    invoke-virtual {p0, v6}, Landroid/app/Activity;->setTitle(I)V
+    invoke-virtual {p0, v6}, Lcom/android/phone/PhotoringPhrasesEdit;->setTitle(I)V
 
     goto/16 :goto_1
 
@@ -1984,7 +1984,7 @@
 
     const/4 v7, 0x0
 
-    invoke-virtual {v6, v7}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v6, v7}, Landroid/widget/TextView;->setVisibility(I)V
 
     iget-object v6, p0, Lcom/android/phone/PhotoringPhrasesEdit;->mtvTxt:Landroid/widget/TextView;
 
@@ -2181,7 +2181,7 @@
 
     if-ne v9, v2, :cond_0
 
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/PhotoringPhrasesEdit;->finish()V
 
     :goto_0
     return v1
@@ -2288,7 +2288,7 @@
 
     invoke-virtual {v0}, Lcom/android/phone/PhotoRingDB;->close()V
 
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/PhotoringPhrasesEdit;->finish()V
 
     goto :goto_1
 
@@ -2486,7 +2486,7 @@
 
     invoke-virtual {v0}, Lcom/android/phone/PhotoRingDB;->close()V
 
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/PhotoringPhrasesEdit;->finish()V
 
     goto/16 :goto_1
 
@@ -2646,7 +2646,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Landroid/app/Dialog;->show()V
+    invoke-virtual {v1}, Landroid/app/AlertDialog;->show()V
 
     goto/16 :goto_1
 
@@ -2831,25 +2831,25 @@
 
     const/4 v1, 0x1
 
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setInputType(I)V
+    invoke-virtual {v0, v1}, Landroid/widget/EditText;->setInputType(I)V
 
     iget-object v0, p0, Lcom/android/phone/PhotoringPhrasesEdit;->mtvPhrase:Landroid/widget/EditText;
 
     const/4 v1, 0x6
 
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setImeOptions(I)V
+    invoke-virtual {v0, v1}, Landroid/widget/EditText;->setImeOptions(I)V
 
     iget-object v0, p0, Lcom/android/phone/PhotoringPhrasesEdit;->mtvPhrase:Landroid/widget/EditText;
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setHorizontallyScrolling(Z)V
+    invoke-virtual {v0, v1}, Landroid/widget/EditText;->setHorizontallyScrolling(Z)V
 
     iget-object v0, p0, Lcom/android/phone/PhotoringPhrasesEdit;->mtvPhrase:Landroid/widget/EditText;
 
     const v1, 0x7fffffff
 
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setMaxLines(I)V
+    invoke-virtual {v0, v1}, Landroid/widget/EditText;->setMaxLines(I)V
 
     invoke-direct {p0}, Lcom/android/phone/PhotoringPhrasesEdit;->setPhrasePreviewInit()V
 

@@ -176,8 +176,6 @@
 
 .method public static formatDate(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -190,10 +188,6 @@
 
 .method public static formatDate(Landroid/content/Context;Ljava/lang/String;ZZ)Ljava/lang/String;
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # Z
 
     if-nez p1, :cond_0
 
@@ -324,7 +318,6 @@
 
 .method private static getDateFormatterString(Landroid/content/Context;)Ljava/lang/String;
     .locals 6
-    .param p0    # Landroid/content/Context;
 
     new-instance v2, Ljava/lang/String;
 
@@ -670,8 +663,6 @@
 
 .method private static getFormatedDate(Landroid/content/Context;J)Ljava/lang/String;
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
 
     invoke-static {p0}, Lcom/android/incallui/callerinfocard/DateUtils;->getDateFormatterString(Landroid/content/Context;)Ljava/lang/String;
 
@@ -690,7 +681,6 @@
 
 .method private static getLocalizedDateFormat(Landroid/content/Context;)Ljava/text/SimpleDateFormat;
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     const v3, 0x7f09033e
 
@@ -875,8 +865,6 @@
 
 .method private static getLocalizedDateFormatWithoutYear(Landroid/content/Context;Z)Ljava/text/DateFormat;
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
 
     const/4 v3, 0x1
 
@@ -1006,9 +994,6 @@
 
 .method private static final getUtcDate(III)Ljava/util/Calendar;
     .locals 3
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
 
     sget-object v1, Lcom/android/incallui/callerinfocard/DateUtils;->UTC_TIMEZONE:Ljava/util/TimeZone;
 
@@ -1037,8 +1022,6 @@
 
 .method private static final getUtcDate(Ljava/util/Date;Z)Ljava/util/Calendar;
     .locals 3
-    .param p0    # Ljava/util/Date;
-    .param p1    # Z
 
     sget-object v1, Lcom/android/incallui/callerinfocard/DateUtils;->UTC_TIMEZONE:Ljava/util/TimeZone;
 
@@ -1064,7 +1047,6 @@
 
 .method private static isMonthBeforeDay(Landroid/content/Context;)Z
     .locals 5
-    .param p0    # Landroid/content/Context;
 
     const/4 v2, 0x0
 
@@ -1108,7 +1090,6 @@
 
 .method private static isYearSet(Ljava/util/Calendar;)Z
     .locals 2
-    .param p0    # Ljava/util/Calendar;
 
     const/4 v0, 0x1
 
@@ -1129,8 +1110,6 @@
 
 .method private static parseDate(Ljava/lang/String;Z)Ljava/util/Calendar;
     .locals 8
-    .param p0    # Ljava/lang/String;
-    .param p1    # Z
 
     const/4 v5, 0x1
 

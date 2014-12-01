@@ -52,7 +52,6 @@
 # virtual methods
 .method public Read(Ljava/nio/ByteBuffer;)V
     .locals 10
-    .param p1    # Ljava/nio/ByteBuffer;
 
     invoke-virtual {p1}, Ljava/nio/ByteBuffer;->getInt()I
 
@@ -133,7 +132,6 @@
 
 .method public Transform(Lcom/voovio/voo3d/data/Matrix4;)V
     .locals 3
-    .param p1    # Lcom/voovio/voo3d/data/Matrix4;
 
     iget-object v2, p0, Lcom/voovio/voo3d/geometry/Polyline3D;->m_aVertices:Ljava/util/ArrayList;
 
@@ -166,7 +164,6 @@
 
 .method public Write(Lcom/voovio/io/LittleEndianDataOutputStream;)V
     .locals 8
-    .param p1    # Lcom/voovio/io/LittleEndianDataOutputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -256,7 +253,6 @@
 
 .method public appendVertex(Lcom/voovio/voo3d/geometry/Vertex3D;)V
     .locals 5
-    .param p1    # Lcom/voovio/voo3d/geometry/Vertex3D;
 
     iget-object v1, p0, Lcom/voovio/voo3d/geometry/Polyline3D;->m_aVertices:Ljava/util/ArrayList;
 

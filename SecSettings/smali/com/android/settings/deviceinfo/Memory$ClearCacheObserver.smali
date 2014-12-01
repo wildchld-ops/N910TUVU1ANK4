@@ -23,8 +23,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/settings/deviceinfo/Memory;I)V
     .locals 0
-    .param p1    # Lcom/android/settings/deviceinfo/Memory;
-    .param p2    # I
 
     invoke-direct {p0}, Landroid/content/pm/IPackageDataObserver$Stub;-><init>()V
 
@@ -39,8 +37,6 @@
 # virtual methods
 .method public onRemoveCompleted(Ljava/lang/String;Z)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     monitor-enter p0
 

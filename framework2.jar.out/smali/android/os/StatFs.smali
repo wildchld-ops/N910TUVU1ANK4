@@ -10,7 +10,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -25,7 +24,6 @@
 
 .method private static doStat(Ljava/lang/String;)Llibcore/io/StructStatVfs;
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     :try_start_0
     sget-object v1, Llibcore/io/Libcore;->os:Llibcore/io/Os;
@@ -214,7 +212,6 @@
 
 .method public restat(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Landroid/os/StatFs;->doStat(Ljava/lang/String;)Llibcore/io/StructStatVfs;
 

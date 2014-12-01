@@ -81,8 +81,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -93,9 +91,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v0, 0x1
 
@@ -191,7 +186,6 @@
 
 .method static synthetic access$000(Lcom/android/launcher2/SmoothPagedView;)I
     .locals 1
-    .param p0    # Lcom/android/launcher2/SmoothPagedView;
 
     iget v0, p0, Lcom/android/launcher2/SmoothPagedView;->mScrollState:I
 
@@ -200,7 +194,6 @@
 
 .method static synthetic access$100(Lcom/android/launcher2/SmoothPagedView;)I
     .locals 1
-    .param p0    # Lcom/android/launcher2/SmoothPagedView;
 
     iget v0, p0, Lcom/android/launcher2/SmoothPagedView;->mScrollDelay:I
 
@@ -209,7 +202,6 @@
 
 .method static synthetic access$200(Lcom/android/launcher2/SmoothPagedView;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/launcher2/SmoothPagedView;
 
     iget-object v0, p0, Lcom/android/launcher2/SmoothPagedView;->mHandler:Landroid/os/Handler;
 
@@ -218,8 +210,6 @@
 
 .method private checkEdgeScroll(II)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     sget-boolean v5, Lcom/android/launcher2/Launcher;->isHelpAppRunning:Z
 
@@ -314,8 +304,6 @@
 
 .method private scrollToLeft(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -339,8 +327,6 @@
 
 .method private scrollToRight(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x1
 
@@ -364,9 +350,6 @@
 
 .method private snapToPageWithVelocity(IIZ)V
     .locals 8
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     invoke-virtual {p0, p1}, Lcom/android/launcher2/PagedView;->getAdjustedPageIndex(I)I
 
@@ -580,7 +563,6 @@
 
 .method public dispatchDragEvent(Landroid/view/DragEvent;)Z
     .locals 4
-    .param p1    # Landroid/view/DragEvent;
 
     const/4 v3, 0x0
 
@@ -669,7 +651,6 @@
 
 .method protected getUnEncumberedPagedViewBounds(Landroid/graphics/Rect;)Z
     .locals 1
-    .param p1    # Landroid/graphics/Rect;
 
     const/4 v0, 0x0
 
@@ -678,7 +659,6 @@
 
 .method protected onDrawComplete(Landroid/graphics/Canvas;)V
     .locals 5
-    .param p1    # Landroid/graphics/Canvas;
 
     invoke-direct {p0}, Lcom/android/launcher2/SmoothPagedView;->isInsideScrollZone()Z
 
@@ -858,9 +838,6 @@
 
 .method protected onEnterScrollArea(III)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v0, 0x1
 
@@ -875,10 +852,6 @@
 
 .method public onScrollChanged(IIII)V
     .locals 8
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-super {p0, p1, p2, p3, p4}, Landroid/view/View;->onScrollChanged(IIII)V
 
@@ -944,8 +917,6 @@
 
 .method public scrollToLeft(ZZ)V
     .locals 4
-    .param p1    # Z
-    .param p2    # Z
 
     invoke-virtual {p0}, Lcom/android/launcher2/PagedView;->getCurrentPage()I
 
@@ -1031,7 +1002,6 @@
 
 .method protected snapToPage(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -1054,8 +1024,6 @@
 
 .method protected snapToPageWithVelocity(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     const/4 v1, 0x1
 

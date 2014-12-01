@@ -89,8 +89,6 @@
 
 .method private getContactHeaderString(Ljava/lang/String;I)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v0, 0x4
 
@@ -147,7 +145,6 @@
 
 .method private getDefaultAvatarImageId(J)I
     .locals 3
-    .param p1    # J
 
     const/4 v0, 0x0
 
@@ -173,8 +170,6 @@
 
 .method private static loadNotificationPref(Landroid/content/Context;I)V
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     invoke-static {p0}, Landroid/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -222,11 +217,6 @@
 
 .method private makeMmsText(Landroid/content/Context;Landroid/widget/RemoteViews;Ljava/lang/String;Ljava/lang/String;I)V
     .locals 8
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/widget/RemoteViews;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
 
     const v7, 0x7f0b0280
 
@@ -397,7 +387,6 @@
 
 .method public static notifyDatasetChanged(Landroid/content/Context;)V
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -412,7 +401,6 @@
 
 .method public static removeRemoteView(Landroid/content/Context;)V
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     const-string v1, "keyguard"
 
@@ -431,9 +419,6 @@
 
 .method private setDefaultMsgView(Landroid/widget/RemoteViews;IJ)V
     .locals 10
-    .param p1    # Landroid/widget/RemoteViews;
-    .param p2    # I
-    .param p3    # J
 
     const/high16 v9, 0x41700000
 
@@ -532,11 +517,6 @@
 
 .method private setMsgBody(Landroid/widget/RemoteViews;ZLjava/lang/String;Ljava/lang/String;I)V
     .locals 8
-    .param p1    # Landroid/widget/RemoteViews;
-    .param p2    # Z
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
 
     const/4 v7, 0x1
 
@@ -598,15 +578,6 @@
 
 .method private setMsgView(Landroid/widget/RemoteViews;Ljava/lang/String;IIJZLjava/lang/String;Ljava/lang/String;I)V
     .locals 7
-    .param p1    # Landroid/widget/RemoteViews;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # J
-    .param p7    # Z
-    .param p8    # Ljava/lang/String;
-    .param p9    # Ljava/lang/String;
-    .param p10    # I
 
     const v0, 0x7f0b0281
 
@@ -768,11 +739,6 @@
 
 .method private updateAvatarView(Landroid/widget/RemoteViews;ILjava/lang/String;JI)V
     .locals 5
-    .param p1    # Landroid/widget/RemoteViews;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # J
-    .param p6    # I
 
     const v4, 0x7f020162
 
@@ -873,9 +839,6 @@
 # virtual methods
 .method public checkBubbleThread(Landroid/content/Context;Landroid/widget/RemoteViews;J)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/widget/RemoteViews;
-    .param p3    # J
 
     const/4 v5, 0x1
 
@@ -938,8 +901,6 @@
 
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 22
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     move-object/from16 v0, p1
 

@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/incallui/cover/CoverDialog;Landroid/content/Context;)V
     .locals 4
-    .param p2    # Landroid/content/Context;
 
     iput-object p1, p0, Lcom/android/incallui/cover/CoverDialog$ClearCoverDialog;->this$0:Lcom/android/incallui/cover/CoverDialog;
 

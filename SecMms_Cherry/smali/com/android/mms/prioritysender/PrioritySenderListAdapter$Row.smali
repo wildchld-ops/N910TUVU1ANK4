@@ -25,8 +25,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/mms/prioritysender/PrioritySenderListAdapter;JJ)V
     .locals 0
-    .param p2    # J
-    .param p4    # J
 
     iput-object p1, p0, Lcom/android/mms/prioritysender/PrioritySenderListAdapter$Row;->this$0:Lcom/android/mms/prioritysender/PrioritySenderListAdapter;
 
@@ -41,7 +39,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/prioritysender/PrioritySenderListAdapter$Row;)J
     .locals 2
-    .param p0    # Lcom/android/mms/prioritysender/PrioritySenderListAdapter$Row;
 
     iget-wide v0, p0, Lcom/android/mms/prioritysender/PrioritySenderListAdapter$Row;->mPriority:J
 
@@ -50,7 +47,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/prioritysender/PrioritySenderListAdapter$Row;)J
     .locals 2
-    .param p0    # Lcom/android/mms/prioritysender/PrioritySenderListAdapter$Row;
 
     iget-wide v0, p0, Lcom/android/mms/prioritysender/PrioritySenderListAdapter$Row;->mId:J
 

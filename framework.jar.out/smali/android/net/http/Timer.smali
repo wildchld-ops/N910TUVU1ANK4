@@ -30,7 +30,6 @@
 # virtual methods
 .method public mark(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 

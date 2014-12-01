@@ -68,7 +68,6 @@
 
 .method public onBindSuccess(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/launcher2/HomeView$22;->this$0:Lcom/android/launcher2/HomeView;
 

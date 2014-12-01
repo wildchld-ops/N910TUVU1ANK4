@@ -92,7 +92,6 @@
 
 .method public constructor <init>(Lorg/apache/commons/io/IOCase;)V
     .locals 0
-    .param p1    # Lorg/apache/commons/io/IOCase;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -110,8 +109,6 @@
 # virtual methods
 .method public compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 5
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Object;
 
     move-object v0, p1
 

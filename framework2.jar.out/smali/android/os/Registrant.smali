@@ -14,9 +14,6 @@
 # direct methods
 .method public constructor <init>(Landroid/os/Handler;ILjava/lang/Object;)V
     .locals 1
-    .param p1    # Landroid/os/Handler;
-    .param p2    # I
-    .param p3    # Ljava/lang/Object;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -73,8 +70,6 @@
 
 .method internalNotifyRegistrant(Ljava/lang/Object;Ljava/lang/Throwable;)V
     .locals 4
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Throwable;
 
     invoke-virtual {p0}, Landroid/os/Registrant;->getHandler()Landroid/os/Handler;
 
@@ -143,7 +138,6 @@
 
 .method public notifyException(Ljava/lang/Throwable;)V
     .locals 1
-    .param p1    # Ljava/lang/Throwable;
 
     const/4 v0, 0x0
 
@@ -164,7 +158,6 @@
 
 .method public notifyRegistrant(Landroid/os/AsyncResult;)V
     .locals 2
-    .param p1    # Landroid/os/AsyncResult;
 
     iget-object v0, p1, Landroid/os/AsyncResult;->result:Ljava/lang/Object;
 
@@ -177,7 +170,6 @@
 
 .method public notifyResult(Ljava/lang/Object;)V
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     const/4 v0, 0x0
 

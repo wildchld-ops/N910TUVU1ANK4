@@ -386,7 +386,6 @@
 
 .method private constructor <init>(Ljava/lang/String;II)V
     .locals 0
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)V"
@@ -402,7 +401,6 @@
 
 .method public static getIkeErrorFromCode(I)Lcom/sec/epdg/IWlanError$IkeError;
     .locals 5
-    .param p0    # I
 
     invoke-static {}, Lcom/sec/epdg/IWlanError$IkeError;->values()[Lcom/sec/epdg/IWlanError$IkeError;
 
@@ -439,7 +437,6 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/sec/epdg/IWlanError$IkeError;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-class v0, Lcom/sec/epdg/IWlanError$IkeError;
 

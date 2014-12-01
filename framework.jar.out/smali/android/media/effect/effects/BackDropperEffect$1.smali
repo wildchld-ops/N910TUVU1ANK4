@@ -36,7 +36,6 @@
 # virtual methods
 .method public onLearningDone(Landroid/filterpacks/videoproc/BackDropperFilter;)V
     .locals 3
-    .param p1    # Landroid/filterpacks/videoproc/BackDropperFilter;
 
     iget-object v0, p0, Landroid/media/effect/effects/BackDropperEffect$1;->this$0:Landroid/media/effect/effects/BackDropperEffect;
 

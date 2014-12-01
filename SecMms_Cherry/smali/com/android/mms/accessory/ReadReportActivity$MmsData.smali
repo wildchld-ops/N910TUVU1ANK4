@@ -25,9 +25,6 @@
 # direct methods
 .method public constructor <init>(JLjava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p1    # J
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,7 +39,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/accessory/ReadReportActivity$MmsData;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/mms/accessory/ReadReportActivity$MmsData;
 
     iget-object v0, p0, Lcom/android/mms/accessory/ReadReportActivity$MmsData;->mAddress:Ljava/lang/String;
 
@@ -51,7 +47,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/accessory/ReadReportActivity$MmsData;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/mms/accessory/ReadReportActivity$MmsData;
 
     iget-object v0, p0, Lcom/android/mms/accessory/ReadReportActivity$MmsData;->mMessageId:Ljava/lang/String;
 
@@ -60,7 +55,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/accessory/ReadReportActivity$MmsData;)J
     .locals 2
-    .param p0    # Lcom/android/mms/accessory/ReadReportActivity$MmsData;
 
     iget-wide v0, p0, Lcom/android/mms/accessory/ReadReportActivity$MmsData;->mId:J
 

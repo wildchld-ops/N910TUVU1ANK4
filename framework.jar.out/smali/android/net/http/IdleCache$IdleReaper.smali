@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Landroid/net/http/IdleCache;Landroid/net/http/IdleCache$1;)V
     .locals 0
-    .param p1    # Landroid/net/http/IdleCache;
-    .param p2    # Landroid/net/http/IdleCache$1;
 
     invoke-direct {p0, p1}, Landroid/net/http/IdleCache$IdleReaper;-><init>(Landroid/net/http/IdleCache;)V
 

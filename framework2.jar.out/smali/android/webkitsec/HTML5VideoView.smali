@@ -120,8 +120,6 @@
 
 .method protected static generateHeaders(Ljava/lang/String;Landroid/webkitsec/HTML5VideoViewProxy;)Ljava/util/Map;
     .locals 5
-    .param p0    # Ljava/lang/String;
-    .param p1    # Landroid/webkitsec/HTML5VideoViewProxy;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -293,9 +291,6 @@
 
 .method public enterFullScreenVideoState(ILandroid/webkitsec/HTML5VideoViewProxy;Landroid/webkitsec/WebViewClassic;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Landroid/webkitsec/HTML5VideoViewProxy;
-    .param p3    # Landroid/webkitsec/WebViewClassic;
 
     return-void
 .end method
@@ -426,9 +421,6 @@
 
 .method public init(IIZ)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     const/4 v2, 0x0
 
@@ -527,7 +519,6 @@
 
 .method public onAudioFocusChange(I)V
     .locals 3
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -591,7 +582,6 @@
 
 .method public onPrepared(Landroid/media/MediaPlayer;)V
     .locals 1
-    .param p1    # Landroid/media/MediaPlayer;
 
     const/4 v0, 0x2
 
@@ -717,7 +707,6 @@
 
 .method public pauseAndDispatch(Landroid/webkitsec/HTML5VideoViewProxy;)V
     .locals 0
-    .param p1    # Landroid/webkitsec/HTML5VideoViewProxy;
 
     invoke-virtual {p0}, Landroid/webkitsec/HTML5VideoView;->pause()V
 
@@ -731,7 +720,6 @@
 
 .method public prepareDataAndDisplayMode(Landroid/webkitsec/HTML5VideoViewProxy;)V
     .locals 0
-    .param p1    # Landroid/webkitsec/HTML5VideoViewProxy;
 
     invoke-virtual {p0}, Landroid/webkitsec/HTML5VideoView;->decideDisplayMode()V
 
@@ -750,7 +738,6 @@
 
 .method public prepareDataCommon(Landroid/webkitsec/HTML5VideoViewProxy;)V
     .locals 5
-    .param p1    # Landroid/webkitsec/HTML5VideoViewProxy;
 
     iget-boolean v1, p0, Landroid/webkitsec/HTML5VideoView;->mSkipPrepare:Z
 
@@ -831,7 +818,6 @@
 
 .method public reprepareData(Landroid/webkitsec/HTML5VideoViewProxy;)V
     .locals 1
-    .param p1    # Landroid/webkitsec/HTML5VideoViewProxy;
 
     sget-object v0, Landroid/webkitsec/HTML5VideoView;->mPlayer:Landroid/media/MediaPlayer;
 
@@ -963,7 +949,6 @@
 
 .method public seekTo(I)V
     .locals 2
-    .param p1    # I
 
     sget v0, Landroid/webkitsec/HTML5VideoView;->mCurrentState:I
 
@@ -986,7 +971,6 @@
 
 .method public setOnCompletionListener(Landroid/webkitsec/HTML5VideoViewProxy;)V
     .locals 1
-    .param p1    # Landroid/webkitsec/HTML5VideoViewProxy;
 
     sget-object v0, Landroid/webkitsec/HTML5VideoView;->mPlayer:Landroid/media/MediaPlayer;
 
@@ -997,7 +981,6 @@
 
 .method public setOnErrorListener(Landroid/webkitsec/HTML5VideoViewProxy;)V
     .locals 1
-    .param p1    # Landroid/webkitsec/HTML5VideoViewProxy;
 
     sget-object v0, Landroid/webkitsec/HTML5VideoView;->mPlayer:Landroid/media/MediaPlayer;
 
@@ -1008,7 +991,6 @@
 
 .method public setOnInfoListener(Landroid/webkitsec/HTML5VideoViewProxy;)V
     .locals 1
-    .param p1    # Landroid/webkitsec/HTML5VideoViewProxy;
 
     sget-object v0, Landroid/webkitsec/HTML5VideoView;->mPlayer:Landroid/media/MediaPlayer;
 
@@ -1019,7 +1001,6 @@
 
 .method public setOnPreparedListener(Landroid/webkitsec/HTML5VideoViewProxy;)V
     .locals 1
-    .param p1    # Landroid/webkitsec/HTML5VideoViewProxy;
 
     iput-object p1, p0, Landroid/webkitsec/HTML5VideoView;->mProxy:Landroid/webkitsec/HTML5VideoViewProxy;
 
@@ -1032,7 +1013,6 @@
 
 .method public setPlayerBuffering(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/webkitsec/HTML5VideoView;->mPlayerBuffering:Z
 
@@ -1043,7 +1023,6 @@
 
 .method public setStartWhenPrepared(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/webkitsec/HTML5VideoView;->mStartWhenPrepared:Z
 
@@ -1052,8 +1031,6 @@
 
 .method public setVideoURI(Ljava/lang/String;Landroid/webkitsec/HTML5VideoViewProxy;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/webkitsec/HTML5VideoViewProxy;
 
     invoke-static {p1}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
@@ -1072,7 +1049,6 @@
 
 .method public setVolume(F)V
     .locals 2
-    .param p1    # F
 
     sget v0, Landroid/webkitsec/HTML5VideoView;->mCurrentState:I
 
@@ -1285,7 +1261,6 @@
 
 .method protected switchProgressView(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method

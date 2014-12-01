@@ -40,8 +40,6 @@
 
 .method private extractMemValue([BI)J
     .locals 6
-    .param p1    # [B
-    .param p2    # I
 
     const/16 v5, 0x39
 
@@ -122,10 +120,6 @@
 
 .method private findKeyword([BIILjava/lang/String;)I
     .locals 4
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
 
     invoke-virtual {p4}, Ljava/lang/String;->length()I
 
@@ -170,9 +164,6 @@
 
 .method private matchText([BILjava/lang/String;)Z
     .locals 5
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -428,7 +419,6 @@
 
 .method public getUssByPid(I)J
     .locals 16
-    .param p1    # I
 
     const-wide/16 v4, 0x0
 

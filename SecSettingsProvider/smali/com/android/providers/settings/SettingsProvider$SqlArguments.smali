@@ -25,7 +25,6 @@
 # direct methods
 .method constructor <init>(Landroid/net/Uri;)V
     .locals 3
-    .param p1    # Landroid/net/Uri;
 
     const/4 v2, 0x0
 
@@ -126,9 +125,6 @@
 
 .method constructor <init>(Landroid/net/Uri;Ljava/lang/String;[Ljava/lang/String;)V
     .locals 5
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Ljava/lang/String;
-    .param p3    # [Ljava/lang/String;
 
     const/4 v4, 0x0
 

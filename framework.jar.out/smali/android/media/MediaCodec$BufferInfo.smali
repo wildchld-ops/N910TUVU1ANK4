@@ -37,10 +37,6 @@
 # virtual methods
 .method public set(IIJI)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
-    .param p5    # I
 
     iput p1, p0, Landroid/media/MediaCodec$BufferInfo;->offset:I
 

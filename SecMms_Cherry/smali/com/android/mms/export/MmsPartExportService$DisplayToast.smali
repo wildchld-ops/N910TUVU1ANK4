@@ -28,8 +28,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/mms/export/MmsPartExportService;Ljava/lang/CharSequence;I)V
     .locals 0
-    .param p2    # Ljava/lang/CharSequence;
-    .param p3    # I
 
     iput-object p1, p0, Lcom/android/mms/export/MmsPartExportService$DisplayToast;->this$0:Lcom/android/mms/export/MmsPartExportService;
 

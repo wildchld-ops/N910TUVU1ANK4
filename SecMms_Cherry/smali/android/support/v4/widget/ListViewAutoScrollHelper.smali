@@ -10,7 +10,6 @@
 # direct methods
 .method public constructor <init>(Landroid/widget/ListView;)V
     .locals 0
-    .param p1    # Landroid/widget/ListView;
 
     invoke-direct {p0, p1}, Landroid/support/v4/widget/AutoScrollHelper;-><init>(Landroid/view/View;)V
 
@@ -23,7 +22,6 @@
 # virtual methods
 .method public canTargetScrollHorizontally(I)Z
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -32,7 +30,6 @@
 
 .method public canTargetScrollVertically(I)Z
     .locals 10
-    .param p1    # I
 
     const/4 v7, 0x0
 
@@ -99,8 +96,6 @@
 
 .method public scrollTargetBy(II)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
 
     iget-object v3, p0, Landroid/support/v4/widget/ListViewAutoScrollHelper;->mTarget:Landroid/widget/ListView;
 

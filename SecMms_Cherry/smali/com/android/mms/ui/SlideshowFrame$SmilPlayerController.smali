@@ -28,7 +28,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/mms/ui/SlideshowFrame;Lcom/android/mms/dom/smil/SmilPlayer;)V
     .locals 1
-    .param p2    # Lcom/android/mms/dom/smil/SmilPlayer;
 
     iput-object p1, p0, Lcom/android/mms/ui/SlideshowFrame$SmilPlayerController;->this$0:Lcom/android/mms/ui/SlideshowFrame;
 
@@ -47,7 +46,6 @@
 # virtual methods
 .method public SlideShowActivityRunnable(Lcom/android/mms/model/SlideshowModel;)V
     .locals 0
-    .param p1    # Lcom/android/mms/model/SlideshowModel;
 
     return-void
 .end method
@@ -230,14 +228,12 @@
 
 .method public seek(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public setPlayerState(Lcom/android/mms/dom/smil/SmilPlayer$SmilPlayerState;)V
     .locals 0
-    .param p1    # Lcom/android/mms/dom/smil/SmilPlayer$SmilPlayerState;
 
     return-void
 .end method

@@ -48,7 +48,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/encryption/CryptSDCardFullOption;)Landroid/dirEncryption/SDCardEncryptionPolicies;
     .locals 1
-    .param p0    # Lcom/android/settings/encryption/CryptSDCardFullOption;
 
     iget-object v0, p0, Lcom/android/settings/encryption/CryptSDCardFullOption;->mUserPolicies:Landroid/dirEncryption/SDCardEncryptionPolicies;
 
@@ -57,7 +56,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/encryption/CryptSDCardFullOption;)V
     .locals 0
-    .param p0    # Lcom/android/settings/encryption/CryptSDCardFullOption;
 
     invoke-direct {p0}, Lcom/android/settings/encryption/CryptSDCardFullOption;->applyEncryptionUpdates()V
 
@@ -256,7 +254,6 @@
 # virtual methods
 .method public onAttach(Landroid/app/Activity;)V
     .locals 2
-    .param p1    # Landroid/app/Activity;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onAttach(Landroid/app/Activity;)V
 
@@ -273,9 +270,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 4
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const/4 v3, -0x1
 

@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,8 +36,6 @@
 # virtual methods
 .method public KeyStore3_del(Ljava/lang/String;I)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -103,8 +100,6 @@
 
 .method public KeyStore3_exist(Ljava/lang/String;I)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -169,8 +164,6 @@
 
 .method public KeyStore3_get(Ljava/lang/String;[C)[B
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # [C
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -228,7 +221,6 @@
 
 .method public KeyStore3_getmtime(Ljava/lang/String;)J
     .locals 7
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -337,10 +329,6 @@
 
 .method public KeyStore3_put(Ljava/lang/String;[BI[C)I
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # [B
-    .param p3    # I
-    .param p4    # [C
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -402,8 +390,6 @@
 
 .method public KeyStore3_saw(Ljava/lang/String;I)[Ljava/lang/String;
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -469,7 +455,6 @@
 
 .method public attestation([B)[B
     .locals 6
-    .param p1    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -525,10 +510,6 @@
 
 .method public ccmRegisterForDefaultCertificate(ILjava/lang/String;Ljava/lang/String;Z)I
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -597,8 +578,6 @@
 
 .method public checkEvent(II)Ljava/lang/String;
     .locals 6
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -656,8 +635,6 @@
 
 .method public checkHistory(II)Ljava/lang/String;
     .locals 6
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -715,7 +692,6 @@
 
 .method public displayEvent(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -873,7 +849,6 @@
 
 .method public getEventList(I)Ljava/util/List;
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -1106,8 +1081,6 @@
 
 .method public keystoreInstallKey(I[B)I
     .locals 6
-    .param p1    # I
-    .param p2    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1165,7 +1138,6 @@
 
 .method public keystoreRetrieveKey(I)[B
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1274,10 +1246,6 @@
 
 .method public launchTui(Ljava/lang/String;[BZI)[B
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # [B
-    .param p3    # Z
-    .param p4    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1346,11 +1314,6 @@
 
 .method public launchTuiWithSecretId(Ljava/lang/String;Ljava/lang/String;[BZI)[B
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # [B
-    .param p4    # Z
-    .param p5    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1474,7 +1437,6 @@
 
 .method public setISLCallback(Landroid/service/tima/ITimaISLCallback;)V
     .locals 5
-    .param p1    # Landroid/service/tima/ITimaISLCallback;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1538,8 +1500,6 @@
 
 .method public tuiDecryptPinHash(Ljava/lang/String;[B)[B
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1703,10 +1663,6 @@
 
 .method public tuiInitSecret([BIILjava/lang/String;)I
     .locals 6
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1768,10 +1724,6 @@
 
 .method public tuiInitSecretFile(Ljava/lang/String;IILjava/lang/String;)I
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1833,11 +1785,6 @@
 
 .method public tuiInitSecretMemoryFile(Landroid/os/ParcelFileDescriptor;IIILjava/lang/String;)I
     .locals 6
-    .param p1    # Landroid/os/ParcelFileDescriptor;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1920,8 +1867,6 @@
 
 .method public tuiRegAppImage(Ljava/lang/String;[B)[I
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1979,8 +1924,6 @@
 
 .method public tuiRegAppImageFile(Ljava/lang/String;Ljava/lang/String;)[I
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2091,7 +2034,6 @@
 
 .method public verifyCertChain([B)[B
     .locals 6
-    .param p1    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

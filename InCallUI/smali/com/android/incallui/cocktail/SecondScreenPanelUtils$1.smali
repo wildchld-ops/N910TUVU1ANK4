@@ -30,8 +30,6 @@
 # virtual methods
 .method public onContactInfoComplete(ILcom/android/incallui/ContactInfoCache$ContactCacheEntry;)V
     .locals 6
-    .param p1    # I
-    .param p2    # Lcom/android/incallui/ContactInfoCache$ContactCacheEntry;
 
     invoke-static {}, Lcom/android/incallui/CallList;->getInstance()Lcom/android/incallui/CallList;
 
@@ -114,8 +112,6 @@
 
 .method public onImageLoadComplete(ILcom/android/incallui/ContactInfoCache$ContactCacheEntry;)V
     .locals 6
-    .param p1    # I
-    .param p2    # Lcom/android/incallui/ContactInfoCache$ContactCacheEntry;
 
     invoke-static {}, Lcom/android/incallui/CallList;->getInstance()Lcom/android/incallui/CallList;
 

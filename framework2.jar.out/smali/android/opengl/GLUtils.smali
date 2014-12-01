@@ -22,7 +22,6 @@
 
 .method public static getEGLErrorString(I)Ljava/lang/String;
     .locals 2
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -148,7 +147,6 @@
 
 .method public static getInternalFormat(Landroid/graphics/Bitmap;)I
     .locals 3
-    .param p0    # Landroid/graphics/Bitmap;
 
     if-nez p0, :cond_0
 
@@ -196,7 +194,6 @@
 
 .method public static getType(Landroid/graphics/Bitmap;)I
     .locals 3
-    .param p0    # Landroid/graphics/Bitmap;
 
     if-nez p0, :cond_0
 
@@ -262,11 +259,6 @@
 
 .method public static texImage2D(IIILandroid/graphics/Bitmap;I)V
     .locals 6
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/graphics/Bitmap;
-    .param p4    # I
 
     if-nez p3, :cond_0
 
@@ -326,12 +318,6 @@
 
 .method public static texImage2D(IIILandroid/graphics/Bitmap;II)V
     .locals 2
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/graphics/Bitmap;
-    .param p4    # I
-    .param p5    # I
 
     if-nez p3, :cond_0
 
@@ -379,10 +365,6 @@
 
 .method public static texImage2D(IILandroid/graphics/Bitmap;I)V
     .locals 6
-    .param p0    # I
-    .param p1    # I
-    .param p2    # Landroid/graphics/Bitmap;
-    .param p3    # I
 
     const/4 v2, -0x1
 
@@ -442,11 +424,6 @@
 
 .method public static texSubImage2D(IIIILandroid/graphics/Bitmap;)V
     .locals 7
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/graphics/Bitmap;
 
     if-nez p4, :cond_0
 
@@ -510,13 +487,6 @@
 
 .method public static texSubImage2D(IIIILandroid/graphics/Bitmap;II)V
     .locals 2
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/graphics/Bitmap;
-    .param p5    # I
-    .param p6    # I
 
     if-nez p4, :cond_0
 

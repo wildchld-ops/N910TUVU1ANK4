@@ -72,7 +72,7 @@
         }
     .end annotation
 
-    iget-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedObject;->mutex:Ljava/lang/Object;
+    iget-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedCollection;->mutex:Ljava/lang/Object;
 
     monitor-enter v1
 
@@ -109,7 +109,7 @@
         }
     .end annotation
 
-    iget-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedObject;->mutex:Ljava/lang/Object;
+    iget-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedCollection;->mutex:Ljava/lang/Object;
 
     monitor-enter v1
 
@@ -139,7 +139,7 @@
 .method public clear()V
     .locals 2
 
-    iget-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedObject;->mutex:Ljava/lang/Object;
+    iget-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedCollection;->mutex:Ljava/lang/Object;
 
     monitor-enter v1
 
@@ -168,7 +168,7 @@
     .locals 2
     .param p1    # Ljava/lang/Object;
 
-    iget-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedObject;->mutex:Ljava/lang/Object;
+    iget-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedCollection;->mutex:Ljava/lang/Object;
 
     monitor-enter v1
 
@@ -205,7 +205,7 @@
         }
     .end annotation
 
-    iget-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedObject;->mutex:Ljava/lang/Object;
+    iget-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedCollection;->mutex:Ljava/lang/Object;
 
     monitor-enter v1
 
@@ -264,7 +264,7 @@
 .method public isEmpty()Z
     .locals 2
 
-    iget-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedObject;->mutex:Ljava/lang/Object;
+    iget-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedCollection;->mutex:Ljava/lang/Object;
 
     monitor-enter v1
 
@@ -316,7 +316,7 @@
     .locals 2
     .param p1    # Ljava/lang/Object;
 
-    iget-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedObject;->mutex:Ljava/lang/Object;
+    iget-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedCollection;->mutex:Ljava/lang/Object;
 
     monitor-enter v1
 
@@ -353,7 +353,7 @@
         }
     .end annotation
 
-    iget-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedObject;->mutex:Ljava/lang/Object;
+    iget-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedCollection;->mutex:Ljava/lang/Object;
 
     monitor-enter v1
 
@@ -390,7 +390,7 @@
         }
     .end annotation
 
-    iget-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedObject;->mutex:Ljava/lang/Object;
+    iget-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedCollection;->mutex:Ljava/lang/Object;
 
     monitor-enter v1
 
@@ -420,7 +420,7 @@
 .method public size()I
     .locals 2
 
-    iget-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedObject;->mutex:Ljava/lang/Object;
+    iget-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedCollection;->mutex:Ljava/lang/Object;
 
     monitor-enter v1
 
@@ -450,7 +450,7 @@
 .method public toArray()[Ljava/lang/Object;
     .locals 2
 
-    iget-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedObject;->mutex:Ljava/lang/Object;
+    iget-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedCollection;->mutex:Ljava/lang/Object;
 
     monitor-enter v1
 
@@ -487,7 +487,7 @@
         }
     .end annotation
 
-    iget-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedObject;->mutex:Ljava/lang/Object;
+    iget-object v1, p0, Lcom/google/common/collect/Synchronized$SynchronizedCollection;->mutex:Ljava/lang/Object;
 
     monitor-enter v1
 

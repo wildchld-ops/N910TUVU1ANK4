@@ -9,4 +9,4 @@ packageInfo:
 versionInfo:
   versionCode: '19'
   versionName: 4.4.4-N910TUVU1ANK4
-compressionType: false
+compressionType: true

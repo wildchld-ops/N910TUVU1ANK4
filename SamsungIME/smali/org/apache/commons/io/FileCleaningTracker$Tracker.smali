@@ -23,10 +23,6 @@
 # direct methods
 .method constructor <init>(Ljava/lang/String;Lorg/apache/commons/io/FileDeleteStrategy;Ljava/lang/Object;Ljava/lang/ref/ReferenceQueue;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lorg/apache/commons/io/FileDeleteStrategy;
-    .param p3    # Ljava/lang/Object;
-    .param p4    # Ljava/lang/ref/ReferenceQueue;
 
     invoke-direct {p0, p3, p4}, Ljava/lang/ref/PhantomReference;-><init>(Ljava/lang/Object;Ljava/lang/ref/ReferenceQueue;)V
 

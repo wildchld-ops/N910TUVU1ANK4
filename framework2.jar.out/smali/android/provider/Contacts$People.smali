@@ -147,9 +147,6 @@
 
 .method public static addToGroup(Landroid/content/ContentResolver;JJ)Landroid/net/Uri;
     .locals 3
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # J
-    .param p3    # J
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -184,9 +181,6 @@
 
 .method public static addToGroup(Landroid/content/ContentResolver;JLjava/lang/String;)Landroid/net/Uri;
     .locals 9
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # J
-    .param p3    # Ljava/lang/String;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -266,8 +260,6 @@
 
 .method public static addToMyContactsGroup(Landroid/content/ContentResolver;J)Landroid/net/Uri;
     .locals 4
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # J
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -299,8 +291,6 @@
 
 .method public static createPersonInMyContactsGroup(Landroid/content/ContentResolver;Landroid/content/ContentValues;)Landroid/net/Uri;
     .locals 4
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # Landroid/content/ContentValues;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -346,10 +336,6 @@
 
 .method public static loadContactPhoto(Landroid/content/Context;Landroid/net/Uri;ILandroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # I
-    .param p3    # Landroid/graphics/BitmapFactory$Options;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -392,9 +378,6 @@
 
 .method private static loadPlaceholderPhoto(ILandroid/content/Context;Landroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;
     .locals 1
-    .param p0    # I
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/graphics/BitmapFactory$Options;
 
     if-nez p0, :cond_0
 
@@ -417,8 +400,6 @@
 
 .method public static markAsContacted(Landroid/content/ContentResolver;J)V
     .locals 6
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # J
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -459,8 +440,6 @@
 
 .method public static openContactPhotoInputStream(Landroid/content/ContentResolver;Landroid/net/Uri;)Ljava/io/InputStream;
     .locals 8
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # Landroid/net/Uri;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -550,8 +529,6 @@
 
 .method public static queryGroups(Landroid/content/ContentResolver;J)Landroid/database/Cursor;
     .locals 6
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # J
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -586,9 +563,6 @@
 
 .method public static setPhotoData(Landroid/content/ContentResolver;Landroid/net/Uri;[B)V
     .locals 4
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # [B
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -615,7 +589,6 @@
 
 .method public static tryGetMyContactsGroupId(Landroid/content/ContentResolver;)J
     .locals 7
-    .param p0    # Landroid/content/ContentResolver;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 

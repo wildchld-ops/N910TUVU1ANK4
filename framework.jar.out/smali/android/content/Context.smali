@@ -231,10 +231,6 @@
 
 .method public bindServiceAsUser(Landroid/content/Intent;Landroid/content/ServiceConnection;ILandroid/os/UserHandle;)Z
     .locals 2
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Landroid/content/ServiceConnection;
-    .param p3    # I
-    .param p4    # Landroid/os/UserHandle;
 
     new-instance v0, Ljava/lang/RuntimeException;
 
@@ -293,9 +289,6 @@
 
 .method public createPackageContext(Ljava/lang/String;Ljava/lang/ClassLoader;I)Landroid/content/Context;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/ClassLoader;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/pm/PackageManager$NameNotFoundException;
@@ -457,7 +450,6 @@
 
 .method public final getString(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -472,8 +464,6 @@
 
 .method public final varargs getString(I[Ljava/lang/Object;)Ljava/lang/String;
     .locals 1
-    .param p1    # I
-    .param p2    # [Ljava/lang/Object;
 
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -491,7 +481,6 @@
 
 .method public final getText(I)Ljava/lang/CharSequence;
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -554,8 +543,6 @@
 
 .method public final obtainStyledAttributes(I[I)Landroid/content/res/TypedArray;
     .locals 1
-    .param p1    # I
-    .param p2    # [I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/res/Resources$NotFoundException;
@@ -575,8 +562,6 @@
 
 .method public final obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
     .locals 2
-    .param p1    # Landroid/util/AttributeSet;
-    .param p2    # [I
 
     const/4 v1, 0x0
 
@@ -593,10 +578,6 @@
 
 .method public final obtainStyledAttributes(Landroid/util/AttributeSet;[III)Landroid/content/res/TypedArray;
     .locals 1
-    .param p1    # Landroid/util/AttributeSet;
-    .param p2    # [I
-    .param p3    # I
-    .param p4    # I
 
     invoke-virtual {p0}, Landroid/content/Context;->getTheme()Landroid/content/res/Resources$Theme;
 
@@ -611,7 +592,6 @@
 
 .method public final obtainStyledAttributes([I)Landroid/content/res/TypedArray;
     .locals 1
-    .param p1    # [I
 
     invoke-virtual {p0}, Landroid/content/Context;->getTheme()Landroid/content/res/Resources$Theme;
 
@@ -653,7 +633,6 @@
 
 .method public registerComponentCallbacks(Landroid/content/ComponentCallbacks;)V
     .locals 1
-    .param p1    # Landroid/content/ComponentCallbacks;
 
     invoke-virtual {p0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
@@ -754,9 +733,6 @@
 
 .method public startActivitiesAsUser([Landroid/content/Intent;Landroid/os/Bundle;Landroid/os/UserHandle;)V
     .locals 2
-    .param p1    # [Landroid/content/Intent;
-    .param p2    # Landroid/os/Bundle;
-    .param p3    # Landroid/os/UserHandle;
 
     new-instance v0, Ljava/lang/RuntimeException;
 
@@ -775,9 +751,6 @@
 
 .method public startActivityAsUser(Landroid/content/Intent;Landroid/os/Bundle;Landroid/os/UserHandle;)V
     .locals 2
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Landroid/os/Bundle;
-    .param p3    # Landroid/os/UserHandle;
 
     new-instance v0, Ljava/lang/RuntimeException;
 
@@ -790,8 +763,6 @@
 
 .method public startActivityAsUser(Landroid/content/Intent;Landroid/os/UserHandle;)V
     .locals 2
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Landroid/os/UserHandle;
 
     new-instance v0, Ljava/lang/RuntimeException;
 
@@ -838,7 +809,6 @@
 
 .method public unregisterComponentCallbacks(Landroid/content/ComponentCallbacks;)V
     .locals 1
-    .param p1    # Landroid/content/ComponentCallbacks;
 
     invoke-virtual {p0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 

@@ -59,9 +59,6 @@
 
 .method public static equals(JI[C)Z
     .locals 5
-    .param p0    # J
-    .param p2    # I
-    .param p3    # [C
 
     const/4 v2, 0x1
 
@@ -152,10 +149,6 @@
 
 .method public static update(JI[CLjava/lang/String;)V
     .locals 1
-    .param p0    # J
-    .param p2    # I
-    .param p3    # [C
-    .param p4    # Ljava/lang/String;
 
     sput-wide p0, Lcom/android/mms/ui/MessageUtils$CachedDate;->sWhen:J
 

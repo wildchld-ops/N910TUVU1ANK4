@@ -27,10 +27,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/pm/PackageManagerService;Ljava/lang/String;IZZ)V
     .locals 0
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Z
-    .param p5    # Z
 
     iput-object p1, p0, Lcom/android/server/pm/PackageManagerService$AppDirObserver;->this$0:Lcom/android/server/pm/PackageManagerService;
 
@@ -49,8 +45,6 @@
 # virtual methods
 .method public onEvent(ILjava/lang/String;)V
     .locals 25
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/16 v24, 0x0
 

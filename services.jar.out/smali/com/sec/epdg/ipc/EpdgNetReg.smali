@@ -26,8 +26,6 @@
 
 .method public constructor <init>(BB)V
     .locals 0
-    .param p1    # B
-    .param p2    # B
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -58,7 +56,6 @@
 
 .method public setAct(B)V
     .locals 0
-    .param p1    # B
 
     iput-byte p1, p0, Lcom/sec/epdg/ipc/EpdgNetReg;->act:B
 
@@ -67,7 +64,6 @@
 
 .method public setSrvdomain(B)V
     .locals 0
-    .param p1    # B
 
     iput-byte p1, p0, Lcom/sec/epdg/ipc/EpdgNetReg;->srvdomain:B
 

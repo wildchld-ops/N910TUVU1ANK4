@@ -30,8 +30,6 @@
 # direct methods
 .method constructor <init>(Landroid/content/res/AssetManager;I)V
     .locals 3
-    .param p1    # Landroid/content/res/AssetManager;
-    .param p2    # I
 
     const/4 v0, 0x1
 
@@ -62,7 +60,6 @@
 
 .method public constructor <init>([B)V
     .locals 3
-    .param p1    # [B
 
     const/4 v0, 0x1
 
@@ -103,9 +100,6 @@
 
 .method public constructor <init>([BII)V
     .locals 3
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
 
     const/4 v0, 0x1
 
@@ -144,7 +138,6 @@
 
 .method static synthetic access$008(Landroid/content/res/XmlBlock;)I
     .locals 2
-    .param p0    # Landroid/content/res/XmlBlock;
 
     iget v0, p0, Landroid/content/res/XmlBlock;->mOpenCount:I
 
@@ -157,7 +150,6 @@
 
 .method static synthetic access$100(I)I
     .locals 1
-    .param p0    # I
 
     invoke-static {p0}, Landroid/content/res/XmlBlock;->nativeGetText(I)I
 
@@ -168,9 +160,6 @@
 
 .method static synthetic access$1000(ILjava/lang/String;Ljava/lang/String;)I
     .locals 1
-    .param p0    # I
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-static {p0, p1, p2}, Landroid/content/res/XmlBlock;->nativeGetAttributeIndex(ILjava/lang/String;Ljava/lang/String;)I
 
@@ -181,8 +170,6 @@
 
 .method static synthetic access$1100(II)I
     .locals 1
-    .param p0    # I
-    .param p1    # I
 
     invoke-static {p0, p1}, Landroid/content/res/XmlBlock;->nativeGetAttributeResource(II)I
 
@@ -193,7 +180,6 @@
 
 .method static synthetic access$1200(I)I
     .locals 1
-    .param p0    # I
 
     invoke-static {p0}, Landroid/content/res/XmlBlock;->nativeGetIdAttribute(I)I
 
@@ -204,7 +190,6 @@
 
 .method static synthetic access$1300(I)I
     .locals 1
-    .param p0    # I
 
     invoke-static {p0}, Landroid/content/res/XmlBlock;->nativeGetClassAttribute(I)I
 
@@ -215,7 +200,6 @@
 
 .method static synthetic access$1400(I)I
     .locals 1
-    .param p0    # I
 
     invoke-static {p0}, Landroid/content/res/XmlBlock;->nativeGetStyleAttribute(I)I
 
@@ -226,7 +210,6 @@
 
 .method static synthetic access$1500(I)V
     .locals 0
-    .param p0    # I
 
     invoke-static {p0}, Landroid/content/res/XmlBlock;->nativeDestroyParseState(I)V
 
@@ -235,7 +218,6 @@
 
 .method static synthetic access$1600(Landroid/content/res/XmlBlock;)V
     .locals 0
-    .param p0    # Landroid/content/res/XmlBlock;
 
     invoke-direct {p0}, Landroid/content/res/XmlBlock;->decOpenCountLocked()V
 
@@ -244,7 +226,6 @@
 
 .method static synthetic access$200(I)I
     .locals 1
-    .param p0    # I
 
     invoke-static {p0}, Landroid/content/res/XmlBlock;->nativeGetLineNumber(I)I
 
@@ -255,7 +236,6 @@
 
 .method static synthetic access$300(I)I
     .locals 1
-    .param p0    # I
 
     invoke-static {p0}, Landroid/content/res/XmlBlock;->nativeGetNamespace(I)I
 
@@ -266,8 +246,6 @@
 
 .method static synthetic access$400(II)I
     .locals 1
-    .param p0    # I
-    .param p1    # I
 
     invoke-static {p0, p1}, Landroid/content/res/XmlBlock;->nativeGetAttributeNamespace(II)I
 
@@ -278,8 +256,6 @@
 
 .method static synthetic access$500(II)I
     .locals 1
-    .param p0    # I
-    .param p1    # I
 
     invoke-static {p0, p1}, Landroid/content/res/XmlBlock;->nativeGetAttributeName(II)I
 
@@ -290,7 +266,6 @@
 
 .method static synthetic access$600(I)I
     .locals 1
-    .param p0    # I
 
     invoke-static {p0}, Landroid/content/res/XmlBlock;->nativeGetAttributeCount(I)I
 
@@ -301,8 +276,6 @@
 
 .method static synthetic access$700(II)I
     .locals 1
-    .param p0    # I
-    .param p1    # I
 
     invoke-static {p0, p1}, Landroid/content/res/XmlBlock;->nativeGetAttributeStringValue(II)I
 
@@ -313,8 +286,6 @@
 
 .method static synthetic access$800(II)I
     .locals 1
-    .param p0    # I
-    .param p1    # I
 
     invoke-static {p0, p1}, Landroid/content/res/XmlBlock;->nativeGetAttributeDataType(II)I
 
@@ -325,8 +296,6 @@
 
 .method static synthetic access$900(II)I
     .locals 1
-    .param p0    # I
-    .param p1    # I
 
     invoke-static {p0, p1}, Landroid/content/res/XmlBlock;->nativeGetAttributeData(II)I
 

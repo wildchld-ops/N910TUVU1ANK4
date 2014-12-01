@@ -217,8 +217,6 @@
 
 .method static synthetic access$000(Landroid/service/wallpaper/WallpaperService$Engine;Landroid/view/MotionEvent;)V
     .locals 0
-    .param p0    # Landroid/service/wallpaper/WallpaperService$Engine;
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-direct {p0, p1}, Landroid/service/wallpaper/WallpaperService$Engine;->dispatchPointer(Landroid/view/MotionEvent;)V
 
@@ -227,7 +225,6 @@
 
 .method private dispatchPointer(Landroid/view/MotionEvent;)V
     .locals 4
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual {p1}, Landroid/view/MotionEvent;->isTouchEvent()Z
 
@@ -297,7 +294,6 @@
 # virtual methods
 .method attach(Landroid/service/wallpaper/WallpaperService$IWallpaperEngineWrapper;)V
     .locals 4
-    .param p1    # Landroid/service/wallpaper/WallpaperService$IWallpaperEngineWrapper;
 
     const/4 v3, 0x0
 
@@ -487,7 +483,6 @@
 
 .method doCommand(Landroid/service/wallpaper/WallpaperService$WallpaperCommand;)V
     .locals 8
-    .param p1    # Landroid/service/wallpaper/WallpaperService$WallpaperCommand;
 
     iget-boolean v0, p0, Landroid/service/wallpaper/WallpaperService$Engine;->mDestroyed:Z
 
@@ -546,8 +541,6 @@
 
 .method doDesiredSizeChanged(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget-boolean v0, p0, Landroid/service/wallpaper/WallpaperService$Engine;->mDestroyed:Z
 
@@ -573,7 +566,6 @@
 
 .method doOffsetsChanged(Z)V
     .locals 13
-    .param p1    # Z
 
     const/high16 v12, 0x3f000000
 
@@ -730,7 +722,6 @@
 
 .method doVisibilityChanged(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-boolean v0, p0, Landroid/service/wallpaper/WallpaperService$Engine;->mDestroyed:Z
 
@@ -746,10 +737,6 @@
 
 .method protected dump(Ljava/lang/String;Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/io/FileDescriptor;
-    .param p3    # Ljava/io/PrintWriter;
-    .param p4    # [Ljava/lang/String;
 
     invoke-virtual {p3, p1}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
@@ -1099,12 +1086,6 @@
 
 .method public onCommand(Ljava/lang/String;IIILandroid/os/Bundle;Z)Landroid/os/Bundle;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Landroid/os/Bundle;
-    .param p6    # Z
 
     const/4 v0, 0x0
 
@@ -1113,15 +1094,12 @@
 
 .method public onCreate(Landroid/view/SurfaceHolder;)V
     .locals 0
-    .param p1    # Landroid/view/SurfaceHolder;
 
     return-void
 .end method
 
 .method public onDesiredSizeChanged(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     return-void
 .end method
@@ -1134,57 +1112,42 @@
 
 .method public onOffsetsChanged(FFFFII)V
     .locals 0
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # I
-    .param p6    # I
 
     return-void
 .end method
 
 .method public onSurfaceChanged(Landroid/view/SurfaceHolder;III)V
     .locals 0
-    .param p1    # Landroid/view/SurfaceHolder;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     return-void
 .end method
 
 .method public onSurfaceCreated(Landroid/view/SurfaceHolder;)V
     .locals 0
-    .param p1    # Landroid/view/SurfaceHolder;
 
     return-void
 .end method
 
 .method public onSurfaceDestroyed(Landroid/view/SurfaceHolder;)V
     .locals 0
-    .param p1    # Landroid/view/SurfaceHolder;
 
     return-void
 .end method
 
 .method public onSurfaceRedrawNeeded(Landroid/view/SurfaceHolder;)V
     .locals 0
-    .param p1    # Landroid/view/SurfaceHolder;
 
     return-void
 .end method
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)V
     .locals 0
-    .param p1    # Landroid/view/MotionEvent;
 
     return-void
 .end method
 
 .method public onVisibilityChanged(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
@@ -1286,7 +1249,6 @@
 
 .method public setFixedSizeAllowed(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/service/wallpaper/WallpaperService$Engine;->mFixedSizeAllowed:Z
 
@@ -1295,7 +1257,6 @@
 
 .method public setOffsetNotificationsEnabled(Z)V
     .locals 2
-    .param p1    # Z
 
     const/4 v1, 0x0
 
@@ -1327,7 +1288,6 @@
 
 .method public setTouchEventsEnabled(Z)V
     .locals 2
-    .param p1    # Z
 
     const/4 v1, 0x0
 
@@ -1359,9 +1319,6 @@
 
 .method updateSurface(ZZZ)V
     .locals 35
-    .param p1    # Z
-    .param p2    # Z
-    .param p3    # Z
 
     move-object/from16 v0, p0
 

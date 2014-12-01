@@ -38,7 +38,6 @@
 
 .method public constructor <init>(Lcom/voovio/sweep/Sweep;)V
     .locals 7
-    .param p1    # Lcom/voovio/sweep/Sweep;
 
     const/4 v6, 0x0
 
@@ -141,9 +140,6 @@
 
 .method private GetIntermediatePoint(Lcom/voovio/voo3d/data/Vector3;FLcom/voovio/voo3d/data/Vector3;)Lcom/voovio/voo3d/data/Vector3;
     .locals 22
-    .param p1    # Lcom/voovio/voo3d/data/Vector3;
-    .param p2    # F
-    .param p3    # Lcom/voovio/voo3d/data/Vector3;
 
     move-object/from16 v0, p0
 
@@ -1077,8 +1073,6 @@
 # virtual methods
 .method public AddVoovio(Lcom/voovio/sweep/Voovio;I)V
     .locals 1
-    .param p1    # Lcom/voovio/sweep/Voovio;
-    .param p2    # I
 
     if-ltz p2, :cond_0
 
@@ -1102,7 +1096,6 @@
 
 .method public FromAngle(F)V
     .locals 1
-    .param p1    # F
 
     const/4 v0, 0x0
 
@@ -1113,8 +1106,6 @@
 
 .method public FromAngle(FF)V
     .locals 41
-    .param p1    # F
-    .param p2    # F
 
     move-object/from16 v0, p0
 
@@ -2197,7 +2188,6 @@
 
 .method public FromTemplate(Lcom/voovio/sweep/Template;)V
     .locals 24
-    .param p1    # Lcom/voovio/sweep/Template;
 
     move-object/from16 v0, p0
 
@@ -3014,7 +3004,6 @@
 
 .method public FromTranslation(Lcom/voovio/voo3d/data/Vector3;)V
     .locals 12
-    .param p1    # Lcom/voovio/voo3d/data/Vector3;
 
     iget-object v9, p0, Lcom/voovio/sweep/Transition;->m_aVoovios:[Lcom/voovio/sweep/Voovio;
 
@@ -3271,7 +3260,6 @@
 
 .method public RemoveVoovio(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/voovio/sweep/Transition;->m_aVoovios:[Lcom/voovio/sweep/Voovio;
 
@@ -3290,7 +3278,6 @@
 
 .method public RemoveVoovio(Lcom/voovio/sweep/Voovio;)V
     .locals 2
-    .param p1    # Lcom/voovio/sweep/Voovio;
 
     const/4 v0, 0x0
 
@@ -3321,7 +3308,6 @@
 
 .method TranslateRearPortal(Lcom/voovio/sweep/Portal;)V
     .locals 7
-    .param p1    # Lcom/voovio/sweep/Portal;
 
     const/4 v6, 0x1
 
@@ -3630,7 +3616,6 @@
 
 .method public setRotationAngle(F)V
     .locals 0
-    .param p1    # F
 
     iput p1, p0, Lcom/voovio/sweep/Transition;->m_fRotationAngle:F
 
@@ -3639,7 +3624,6 @@
 
 .method public setWalkingSteps(F)V
     .locals 0
-    .param p1    # F
 
     iput p1, p0, Lcom/voovio/sweep/Transition;->m_fWalkingSteps:F
 

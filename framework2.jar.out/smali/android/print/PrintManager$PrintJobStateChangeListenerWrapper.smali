@@ -41,8 +41,6 @@
 # direct methods
 .method public constructor <init>(Landroid/print/PrintManager$PrintJobStateChangeListener;Landroid/os/Handler;)V
     .locals 1
-    .param p1    # Landroid/print/PrintManager$PrintJobStateChangeListener;
-    .param p2    # Landroid/os/Handler;
 
     invoke-direct {p0}, Landroid/print/IPrintJobStateChangeListener$Stub;-><init>()V
 
@@ -89,7 +87,6 @@
 
 .method public onPrintJobStateChanged(Landroid/print/PrintJobId;)V
     .locals 4
-    .param p1    # Landroid/print/PrintJobId;
 
     iget-object v3, p0, Landroid/print/PrintManager$PrintJobStateChangeListenerWrapper;->mWeakHandler:Ljava/lang/ref/WeakReference;
 

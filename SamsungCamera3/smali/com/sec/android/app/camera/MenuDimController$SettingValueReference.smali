@@ -25,7 +25,6 @@
 # direct methods
 .method public constructor <init>(Lcom/sec/android/app/camera/MenuDimController;I)V
     .locals 1
-    .param p2    # I
 
     iput-object p1, p0, Lcom/sec/android/app/camera/MenuDimController$SettingValueReference;->this$0:Lcom/sec/android/app/camera/MenuDimController;
 

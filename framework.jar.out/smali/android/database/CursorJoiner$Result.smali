@@ -103,7 +103,6 @@
 
 .method public static valueOf(Ljava/lang/String;)Landroid/database/CursorJoiner$Result;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-class v0, Landroid/database/CursorJoiner$Result;
 

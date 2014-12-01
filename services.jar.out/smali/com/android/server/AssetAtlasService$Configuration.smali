@@ -29,10 +29,6 @@
 # direct methods
 .method constructor <init>(Landroid/graphics/Atlas$Type;III)V
     .locals 6
-    .param p1    # Landroid/graphics/Atlas$Type;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/4 v5, 0x2
 
@@ -53,11 +49,6 @@
 
 .method constructor <init>(Landroid/graphics/Atlas$Type;IIII)V
     .locals 0
-    .param p1    # Landroid/graphics/Atlas$Type;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

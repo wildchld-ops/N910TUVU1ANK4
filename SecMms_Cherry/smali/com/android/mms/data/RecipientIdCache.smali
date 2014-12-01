@@ -62,7 +62,6 @@
 
 .method constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -320,7 +319,6 @@
 
 .method public static fill(J)V
     .locals 12
-    .param p0    # J
 
     const/4 v3, 0x0
 
@@ -477,7 +475,6 @@
 
 .method public static getAddresses(Ljava/lang/String;)Ljava/util/List;
     .locals 15
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -697,7 +694,6 @@
 
 .method static init(Landroid/content/Context;)V
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     new-instance v0, Lcom/android/mms/data/RecipientIdCache;
 
@@ -722,8 +718,6 @@
 
 .method private updateCanonicalAddressInDb(JLjava/lang/String;)V
     .locals 7
-    .param p1    # J
-    .param p3    # Ljava/lang/String;
 
     const-string v0, "Mms:app"
 
@@ -817,7 +811,6 @@
 
 .method public static updateNumber(Lcom/android/mms/data/Contact;)V
     .locals 6
-    .param p0    # Lcom/android/mms/data/Contact;
 
     sget-object v4, Lcom/android/mms/data/RecipientIdCache;->sInstance:Lcom/android/mms/data/RecipientIdCache;
 
@@ -899,8 +892,6 @@
 
 .method public static updateNumbers(JLcom/android/mms/data/ContactList;)V
     .locals 11
-    .param p0    # J
-    .param p2    # Lcom/android/mms/data/ContactList;
 
     const/4 v10, 0x0
 

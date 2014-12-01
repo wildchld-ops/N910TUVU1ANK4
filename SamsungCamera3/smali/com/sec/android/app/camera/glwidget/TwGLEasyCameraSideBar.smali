@@ -141,12 +141,6 @@
 
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;FFFFI)V
     .locals 21
-    .param p1    # Lcom/sec/android/app/camera/Camera;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # I
 
     invoke-virtual/range {p1 .. p1}, Lcom/sec/android/app/camera/Camera;->getGLContext()Lcom/sec/android/glview/TwGLContext;
 
@@ -629,7 +623,6 @@
 
 .method public onClick(Lcom/sec/android/glview/TwGLView;)Z
     .locals 4
-    .param p1    # Lcom/sec/android/glview/TwGLView;
 
     const/4 v0, 0x1
 

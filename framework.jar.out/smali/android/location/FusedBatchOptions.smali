@@ -117,7 +117,6 @@
 
 .method public isFlagSet(I)Z
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/location/FusedBatchOptions;->mFlags:I
 
@@ -138,7 +137,6 @@
 
 .method public isSourceToUseSet(I)Z
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/location/FusedBatchOptions;->mSourcesToUse:I
 
@@ -159,7 +157,6 @@
 
 .method public resetFlag(I)V
     .locals 2
-    .param p1    # I
 
     iget v0, p0, Landroid/location/FusedBatchOptions;->mFlags:I
 
@@ -174,7 +171,6 @@
 
 .method public resetSourceToUse(I)V
     .locals 2
-    .param p1    # I
 
     iget v0, p0, Landroid/location/FusedBatchOptions;->mSourcesToUse:I
 
@@ -189,7 +185,6 @@
 
 .method public setFlag(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/location/FusedBatchOptions;->mFlags:I
 
@@ -202,7 +197,6 @@
 
 .method public setMaxPowerAllocationInMW(D)V
     .locals 0
-    .param p1    # D
 
     iput-wide p1, p0, Landroid/location/FusedBatchOptions;->mMaxPowerAllocationInMW:D
 
@@ -211,7 +205,6 @@
 
 .method public setPeriodInNS(J)V
     .locals 0
-    .param p1    # J
 
     iput-wide p1, p0, Landroid/location/FusedBatchOptions;->mPeriodInNS:J
 
@@ -220,7 +213,6 @@
 
 .method public setSourceToUse(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/location/FusedBatchOptions;->mSourcesToUse:I
 
@@ -233,8 +225,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-wide v0, p0, Landroid/location/FusedBatchOptions;->mMaxPowerAllocationInMW:D
 

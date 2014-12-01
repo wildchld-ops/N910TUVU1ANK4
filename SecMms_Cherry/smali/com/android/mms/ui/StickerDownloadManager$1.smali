@@ -36,8 +36,6 @@
 # virtual methods
 .method public onServiceConnected(Landroid/content/ComponentName;Landroid/os/IBinder;)V
     .locals 4
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Landroid/os/IBinder;
 
     # getter for: Lcom/android/mms/ui/StickerDownloadManager;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/android/mms/ui/StickerDownloadManager;->access$000()Ljava/lang/String;
@@ -110,7 +108,6 @@
 
 .method public onServiceDisconnected(Landroid/content/ComponentName;)V
     .locals 2
-    .param p1    # Landroid/content/ComponentName;
 
     # getter for: Lcom/android/mms/ui/StickerDownloadManager;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/android/mms/ui/StickerDownloadManager;->access$000()Ljava/lang/String;

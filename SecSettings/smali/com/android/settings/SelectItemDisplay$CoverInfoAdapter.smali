@@ -27,9 +27,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/settings/SelectItemDisplay;[I[Ljava/lang/String;Z)V
     .locals 0
-    .param p2    # [I
-    .param p3    # [Ljava/lang/String;
-    .param p4    # Z
 
     iput-object p1, p0, Lcom/android/settings/SelectItemDisplay$CoverInfoAdapter;->this$0:Lcom/android/settings/SelectItemDisplay;
 
@@ -58,7 +55,6 @@
 
 .method public getItem(I)Ljava/lang/Object;
     .locals 1
-    .param p1    # I
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -69,7 +65,6 @@
 
 .method public getItemId(I)J
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/settings/SelectItemDisplay$CoverInfoAdapter;->mTitleID:[I
 
@@ -82,9 +77,6 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     const/4 v2, 0x1
 

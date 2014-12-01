@@ -148,7 +148,7 @@
 
     const/4 v2, 0x0
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/FdnList;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -156,7 +156,7 @@
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/FdnList;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -189,9 +189,9 @@
 
     const/4 v6, 0x0
 
-    iget-object v0, p0, Lcom/android/phone/ADNList;->mCursor:Landroid/database/Cursor;
+    iget-object v0, p0, Lcom/android/phone/FdnList;->mCursor:Landroid/database/Cursor;
 
-    invoke-virtual {p0}, Landroid/app/ListFragment;->getSelectedItemPosition()I
+    invoke-virtual {p0}, Lcom/android/phone/FdnList;->getSelectedItemPosition()I
 
     move-result v1
 
@@ -201,13 +201,13 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/phone/ADNList;->mCursor:Landroid/database/Cursor;
+    iget-object v0, p0, Lcom/android/phone/FdnList;->mCursor:Landroid/database/Cursor;
 
     invoke-interface {v0, v6}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/phone/ADNList;->mCursor:Landroid/database/Cursor;
+    iget-object v1, p0, Lcom/android/phone/FdnList;->mCursor:Landroid/database/Cursor;
 
     const/4 v2, 0x1
 
@@ -215,7 +215,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/phone/ADNList;->mCursor:Landroid/database/Cursor;
+    iget-object v2, p0, Lcom/android/phone/FdnList;->mCursor:Landroid/database/Cursor;
 
     const/4 v3, 0x7
 
@@ -239,7 +239,7 @@
 
     invoke-virtual {v2, v0, v3}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/FdnList;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -247,7 +247,7 @@
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/FdnList;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -272,7 +272,7 @@
 .method private editSelected()V
     .locals 1
 
-    invoke-virtual {p0}, Landroid/app/ListFragment;->getSelectedItemPosition()I
+    invoke-virtual {p0}, Lcom/android/phone/FdnList;->getSelectedItemPosition()I
 
     move-result v0
 
@@ -290,7 +290,7 @@
 
     const/4 v6, 0x0
 
-    iget-object v0, p0, Lcom/android/phone/ADNList;->mCursor:Landroid/database/Cursor;
+    iget-object v0, p0, Lcom/android/phone/FdnList;->mCursor:Landroid/database/Cursor;
 
     invoke-interface {v0, p1}, Landroid/database/Cursor;->moveToPosition(I)Z
 
@@ -298,19 +298,19 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/phone/ADNList;->mCursor:Landroid/database/Cursor;
+    iget-object v0, p0, Lcom/android/phone/FdnList;->mCursor:Landroid/database/Cursor;
 
     invoke-interface {v0, v6}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/phone/ADNList;->mCursor:Landroid/database/Cursor;
+    iget-object v1, p0, Lcom/android/phone/FdnList;->mCursor:Landroid/database/Cursor;
 
     invoke-interface {v1, v8}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/phone/ADNList;->mCursor:Landroid/database/Cursor;
+    iget-object v2, p0, Lcom/android/phone/FdnList;->mCursor:Landroid/database/Cursor;
 
     const/4 v3, 0x7
 
@@ -356,7 +356,7 @@
 
     invoke-virtual {v2, v0, v3}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/FdnList;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -364,7 +364,7 @@
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/FdnList;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -420,7 +420,7 @@
 
     invoke-direct {v0, v2, v3}, Landroid/content/Intent;-><init>(Ljava/lang/String;Landroid/net/Uri;)V
 
-    invoke-virtual {p0, v0}, Landroid/app/Fragment;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/FdnList;->startActivity(Landroid/content/Intent;)V
 
     :cond_0
     return-void
@@ -431,13 +431,13 @@
 
     new-instance v0, Lcom/android/phone/FdnList$FDNAdapter;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/FdnList;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
     const v2, 0x7f04003e
 
-    iget-object v3, p0, Lcom/android/phone/ADNList;->mCursor:Landroid/database/Cursor;
+    iget-object v3, p0, Lcom/android/phone/FdnList;->mCursor:Landroid/database/Cursor;
 
     invoke-direct {v0, p0, v1, v2, v3}, Lcom/android/phone/FdnList$FDNAdapter;-><init>(Lcom/android/phone/FdnList;Landroid/content/Context;ILandroid/database/Cursor;)V
 
@@ -450,7 +450,7 @@
 
     invoke-super {p0, p1}, Lcom/android/phone/ADNList;->onCreate(Landroid/os/Bundle;)V
 
-    invoke-virtual {p0}, Lcom/android/phone/ADNList;->getActionBar()Landroid/app/ActionBar;
+    invoke-virtual {p0}, Lcom/android/phone/FdnList;->getActionBar()Landroid/app/ActionBar;
 
     move-result-object v0
 
@@ -471,9 +471,9 @@
 
     const/4 v3, 0x0
 
-    invoke-super {p0, p1, p2}, Landroid/app/Fragment;->onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
+    invoke-super {p0, p1, p2}, Lcom/android/phone/ADNList;->onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/FdnList;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -552,7 +552,7 @@
     sparse-switch v1, :sswitch_data_0
 
     :cond_0
-    invoke-super {p0, p1}, Landroid/app/Fragment;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
+    invoke-super {p0, p1}, Lcom/android/phone/ADNList;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
 
     move-result v0
 
@@ -560,7 +560,7 @@
     return v0
 
     :sswitch_0
-    invoke-virtual {p0}, Landroid/app/Fragment;->getFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual {p0}, Lcom/android/phone/FdnList;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v1
 
@@ -572,7 +572,7 @@
 
     new-instance v1, Landroid/content/Intent;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/FdnList;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -588,9 +588,9 @@
 
     invoke-virtual {v1, v2}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
-    invoke-virtual {p0, v1}, Landroid/app/Fragment;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v1}, Lcom/android/phone/FdnList;->startActivity(Landroid/content/Intent;)V
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/FdnList;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -636,9 +636,9 @@
 
     const/4 v2, 0x0
 
-    invoke-super {p0, p1}, Landroid/app/Fragment;->onPrepareOptionsMenu(Landroid/view/Menu;)V
+    invoke-super {p0, p1}, Lcom/android/phone/ADNList;->onPrepareOptionsMenu(Landroid/view/Menu;)V
 
-    invoke-virtual {p0}, Landroid/app/ListFragment;->getSelectedItemPosition()I
+    invoke-virtual {p0}, Lcom/android/phone/FdnList;->getSelectedItemPosition()I
 
     move-result v3
 
@@ -702,7 +702,7 @@
 
     const/4 v4, 0x1
 
-    invoke-virtual {p0}, Lcom/android/phone/ADNList;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/phone/FdnList;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
 

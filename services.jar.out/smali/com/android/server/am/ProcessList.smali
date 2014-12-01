@@ -661,8 +661,6 @@
 
 .method public static appendRamKb(Ljava/lang/StringBuilder;J)V
     .locals 4
-    .param p0    # Ljava/lang/StringBuilder;
-    .param p1    # J
 
     const/4 v1, 0x0
 
@@ -698,10 +696,6 @@
 
 .method private static buildOomTag(Ljava/lang/String;Ljava/lang/String;II)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     if-ne p2, p3, :cond_1
 
@@ -765,10 +759,6 @@
 
 .method public static computeNextPssTime(IZZJ)J
     .locals 3
-    .param p0    # I
-    .param p1    # Z
-    .param p2    # Z
-    .param p3    # J
 
     if-eqz p2, :cond_1
 
@@ -803,7 +793,6 @@
 
 .method public static makeOomAdjString(I)Ljava/lang/String;
     .locals 6
-    .param p0    # I
 
     const/4 v5, 0x1
 
@@ -1004,7 +993,6 @@
 
 .method public static makeProcStateString(I)Ljava/lang/String;
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -1112,8 +1100,6 @@
 
 .method public static procStatesDifferForMem(II)Z
     .locals 2
-    .param p0    # I
-    .param p1    # I
 
     sget-object v0, Lcom/android/server/am/ProcessList;->sProcStateToProcMem:[I
 
@@ -1169,7 +1155,6 @@
 
 .method public static updateILS(Ljava/lang/String;)V
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     sget-boolean v1, Lcom/android/server/am/ProcessList;->mILS_Enable:Z
 
@@ -1241,9 +1226,6 @@
 
 .method private updateOomLevels(IIZ)V
     .locals 37
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     move-object/from16 v0, p0
 
@@ -2784,8 +2766,6 @@
 
 .method private writeFile(Ljava/lang/String;Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -2914,7 +2894,6 @@
 # virtual methods
 .method applyDisplaySize(Lcom/android/server/wm/WindowManagerService;)V
     .locals 4
-    .param p1    # Lcom/android/server/wm/WindowManagerService;
 
     const/4 v3, 0x1
 
@@ -2952,8 +2931,6 @@
 
 .method decrementEmptyAppCount(II)I
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -3035,7 +3012,6 @@
 
 .method getLMKThreshold(I)J
     .locals 2
-    .param p1    # I
 
     const/16 v0, 0xf
 
@@ -3073,7 +3049,6 @@
 
 .method getMemLevel(I)J
     .locals 5
-    .param p1    # I
 
     const-wide/16 v3, 0x400
 
@@ -3132,7 +3107,6 @@
 
 .method public setSmartDHADefaultMargin(J)V
     .locals 0
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/android/server/am/ProcessList;->mSmartDHADefaultMargin:J
 
@@ -3141,7 +3115,6 @@
 
 .method public setTrimCachedApps(I)V
     .locals 0
-    .param p1    # I
 
     sput p1, Lcom/android/server/am/ProcessList;->TRIM_CACHED_APPS:I
 
@@ -3150,7 +3123,6 @@
 
 .method public setTrimCriticalTH(I)V
     .locals 0
-    .param p1    # I
 
     sput p1, Lcom/android/server/am/ProcessList;->TRIM_CRITICAL_THRESHOLD:I
 
@@ -3159,7 +3131,6 @@
 
 .method public setTrimEmptyApps(I)V
     .locals 0
-    .param p1    # I
 
     sput p1, Lcom/android/server/am/ProcessList;->TRIM_EMPTY_APPS:I
 
@@ -3168,7 +3139,6 @@
 
 .method public setTrimLowlTH(I)V
     .locals 0
-    .param p1    # I
 
     sput p1, Lcom/android/server/am/ProcessList;->TRIM_LOW_THRESHOLD:I
 
@@ -3177,9 +3147,6 @@
 
 .method public updateHiddenAppNum(III)I
     .locals 19
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     move-object/from16 v0, p0
 

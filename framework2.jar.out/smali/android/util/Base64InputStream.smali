@@ -36,8 +36,6 @@
 
 .method public constructor <init>(Ljava/io/InputStream;I)V
     .locals 1
-    .param p1    # Ljava/io/InputStream;
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -48,9 +46,6 @@
 
 .method public constructor <init>(Ljava/io/InputStream;IZ)V
     .locals 4
-    .param p1    # Ljava/io/InputStream;
-    .param p2    # I
-    .param p3    # Z
 
     const/4 v1, 0x0
 
@@ -214,7 +209,6 @@
 
 .method public mark(I)V
     .locals 1
-    .param p1    # I
 
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
@@ -279,9 +273,6 @@
 
 .method public read([BII)I
     .locals 3
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -348,7 +339,6 @@
 
 .method public skip(J)J
     .locals 4
-    .param p1    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

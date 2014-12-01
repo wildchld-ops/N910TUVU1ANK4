@@ -40,7 +40,6 @@
 
 .method public static initService(Landroid/content/Context;)V
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     sput-object p0, Lcom/android/server/enterprise/utils/EDMNativeHelper;->mContext:Landroid/content/Context;
 
@@ -133,7 +132,6 @@
 
 .method public static isCameraEnabled(I)Z
     .locals 6
-    .param p0    # I
 
     const/4 v3, 0x1
 
@@ -195,7 +193,6 @@
 
 .method public static isMicrophoneEnabled(I)Z
     .locals 4
-    .param p0    # I
 
     const/4 v0, 0x1
 
@@ -284,12 +281,6 @@
 
 .method public static nativeLogger(IIIILjava/lang/String;[B)V
     .locals 10
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
-    .param p5    # [B
 
     :try_start_0
     new-instance v9, Ljava/lang/String;
@@ -346,12 +337,6 @@
 
 .method public static nativeLogger(IIZILjava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p0    # I
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
 
     invoke-static/range {p0 .. p5}, Landroid/sec/enterprise/auditlog/AuditLog;->log(IIZILjava/lang/String;Ljava/lang/String;)V
 
@@ -360,7 +345,6 @@
 
 .method public static sendIntent(I)V
     .locals 2
-    .param p0    # I
 
     sget-object v1, Lcom/android/server/enterprise/utils/EDMNativeHelper;->mContext:Landroid/content/Context;
 

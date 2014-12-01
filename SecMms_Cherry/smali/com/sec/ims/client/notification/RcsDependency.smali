@@ -46,7 +46,6 @@
 
 .method public constructor <init>(Landroid/os/Parcel;)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -91,11 +90,6 @@
 
 .method public constructor <init>(Lcom/sec/ims/client/notification/RcsWidgetType;ILcom/sec/ims/client/notification/RcsWidgetType;ILcom/sec/ims/client/notification/RcsDependencyType;)V
     .locals 1
-    .param p1    # Lcom/sec/ims/client/notification/RcsWidgetType;
-    .param p2    # I
-    .param p3    # Lcom/sec/ims/client/notification/RcsWidgetType;
-    .param p4    # I
-    .param p5    # Lcom/sec/ims/client/notification/RcsDependencyType;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -182,11 +176,6 @@
 
 .method public static make(Lcom/sec/ims/client/notification/RcsWidgetType;ILcom/sec/ims/client/notification/RcsWidgetType;ILcom/sec/ims/client/notification/RcsDependencyType;)Lcom/sec/ims/client/notification/RcsDependency;
     .locals 6
-    .param p0    # Lcom/sec/ims/client/notification/RcsWidgetType;
-    .param p1    # I
-    .param p2    # Lcom/sec/ims/client/notification/RcsWidgetType;
-    .param p3    # I
-    .param p4    # Lcom/sec/ims/client/notification/RcsDependencyType;
 
     new-instance v0, Lcom/sec/ims/client/notification/RcsDependency;
 
@@ -257,8 +246,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/sec/ims/client/notification/RcsDependency;->mOriginType:Lcom/sec/ims/client/notification/RcsWidgetType;
 

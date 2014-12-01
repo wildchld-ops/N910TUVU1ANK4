@@ -59,7 +59,7 @@
 
     iget-object v1, p0, Lcom/android/phone/LGTRoamingDualClockSetting$1;->this$0:Lcom/android/phone/LGTRoamingDualClockSetting;
 
-    invoke-virtual {v1, v3}, Landroid/app/Activity;->dismissDialog(I)V
+    invoke-virtual {v1, v3}, Lcom/android/phone/LGTRoamingDualClockSetting;->dismissDialog(I)V
 
     iget-object v1, p0, Lcom/android/phone/LGTRoamingDualClockSetting$1;->this$0:Lcom/android/phone/LGTRoamingDualClockSetting;
 

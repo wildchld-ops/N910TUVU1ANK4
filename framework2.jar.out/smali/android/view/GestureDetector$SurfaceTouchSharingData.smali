@@ -333,7 +333,6 @@
 
 .method public PreUpdate(Landroid/view/MotionEvent;)V
     .locals 12
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v11, 0x2
 
@@ -539,7 +538,6 @@
 
 .method public Update(Landroid/view/MotionEvent;)V
     .locals 10
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v9, 0x2
 

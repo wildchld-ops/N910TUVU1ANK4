@@ -41,7 +41,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x1
 
@@ -236,8 +235,6 @@
 
 .method private isZoomRingKeyEvent(II)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     const/16 v0, 0xa8
 
@@ -321,9 +318,6 @@
 
 .method private onInputZoomRingMoveAction(IIZ)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     const/4 v2, 0x1
 
@@ -437,7 +431,6 @@
 
 .method private setStateControlZoomRing(I)V
     .locals 1
-    .param p1    # I
 
     if-nez p1, :cond_0
 
@@ -462,7 +455,6 @@
 # virtual methods
 .method public handleKeyEvent(Landroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/KeyEvent;
 
     const/high16 v0, -0x80000000
 
@@ -475,8 +467,6 @@
 
 .method public handleKeyEvent(Landroid/view/KeyEvent;I)Z
     .locals 8
-    .param p1    # Landroid/view/KeyEvent;
-    .param p2    # I
 
     const/4 v5, 0x1
 

@@ -27,8 +27,6 @@
 # direct methods
 .method public constructor <init>(Landroid/filterfw/core/SerializedFrame;[BI)V
     .locals 1
-    .param p2    # [B
-    .param p3    # I
 
     iput-object p1, p0, Landroid/filterfw/core/SerializedFrame$DirectByteInputStream;->this$0:Landroid/filterfw/core/SerializedFrame;
 
@@ -91,9 +89,6 @@
 
 .method public final read([BII)I
     .locals 2
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
 
     iget v0, p0, Landroid/filterfw/core/SerializedFrame$DirectByteInputStream;->mPos:I
 
@@ -141,7 +136,6 @@
 
 .method public final skip(J)J
     .locals 6
-    .param p1    # J
 
     const-wide/16 v0, 0x0
 

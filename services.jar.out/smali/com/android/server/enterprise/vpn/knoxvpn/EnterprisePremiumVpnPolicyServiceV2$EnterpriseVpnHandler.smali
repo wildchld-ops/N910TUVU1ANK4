@@ -67,7 +67,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 44
-    .param p1    # Landroid/os/Message;
 
     # getter for: Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/android/server/enterprise/vpn/knoxvpn/EnterprisePremiumVpnPolicyServiceV2;->access$100()Ljava/lang/String;

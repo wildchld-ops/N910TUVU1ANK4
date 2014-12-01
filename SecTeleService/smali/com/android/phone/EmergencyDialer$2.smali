@@ -105,7 +105,7 @@
     :cond_1
     iget-object v0, p0, Lcom/android/phone/EmergencyDialer$2;->this$0:Lcom/android/phone/EmergencyDialer;
 
-    invoke-virtual {v0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {v0}, Lcom/android/phone/EmergencyDialer;->finish()V
 
     goto :goto_0
 

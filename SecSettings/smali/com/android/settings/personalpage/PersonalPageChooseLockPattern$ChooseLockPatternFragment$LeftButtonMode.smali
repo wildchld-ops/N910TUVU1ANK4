@@ -138,8 +138,6 @@
 
 .method private constructor <init>(Ljava/lang/String;IIZ)V
     .locals 0
-    .param p3    # I
-    .param p4    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(IZ)V"

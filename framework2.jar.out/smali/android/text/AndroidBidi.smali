@@ -14,11 +14,6 @@
 
 .method public static bidi(I[C[BIZ)I
     .locals 2
-    .param p0    # I
-    .param p1    # [C
-    .param p2    # [B
-    .param p3    # I
-    .param p4    # Z
 
     if-eqz p1, :cond_0
 
@@ -106,12 +101,6 @@
 
 .method public static directions(I[BI[CII)Landroid/text/Layout$Directions;
     .locals 23
-    .param p0    # I
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # [C
-    .param p4    # I
-    .param p5    # I
 
     if-nez p5, :cond_0
 

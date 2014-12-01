@@ -93,10 +93,6 @@
 
 .method static synthetic access$500(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     invoke-static {p0, p1, p2, p3}, Landroid/hardware/contextaware/utilbundle/logger/CaLogger;->getFilePattern(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
@@ -115,7 +111,6 @@
 
 .method public static debug(Ljava/lang/String;)V
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     sget-object v1, Landroid/hardware/contextaware/utilbundle/logger/CaLogger$Level;->DEBUG:Landroid/hardware/contextaware/utilbundle/logger/CaLogger$Level;
 
@@ -139,7 +134,6 @@
 
 .method public static error(Ljava/lang/String;)V
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     sget-object v1, Landroid/hardware/contextaware/utilbundle/logger/CaLogger$Level;->ERROR:Landroid/hardware/contextaware/utilbundle/logger/CaLogger$Level;
 
@@ -163,7 +157,6 @@
 
 .method public static exception(Ljava/lang/Throwable;)V
     .locals 5
-    .param p0    # Ljava/lang/Throwable;
 
     sget-object v3, Landroid/hardware/contextaware/utilbundle/logger/CaLogger$Level;->EXCEPTION:Landroid/hardware/contextaware/utilbundle/logger/CaLogger$Level;
 
@@ -231,10 +224,6 @@
 
 .method private static getFilePattern(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 11
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     invoke-static {}, Ljava/util/Calendar;->getInstance()Ljava/util/Calendar;
 
@@ -406,7 +395,6 @@
 
 .method public static info(Ljava/lang/String;)V
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     sget-object v1, Landroid/hardware/contextaware/utilbundle/logger/CaLogger$Level;->INFO:Landroid/hardware/contextaware/utilbundle/logger/CaLogger$Level;
 
@@ -430,7 +418,6 @@
 
 .method public static notifyLoggingObserver(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     sget-object v0, Landroid/hardware/contextaware/utilbundle/logger/CaLogger;->mLoggingObserver:Landroid/hardware/contextaware/utilbundle/logger/ILoggingObserver;
 
@@ -446,7 +433,6 @@
 
 .method public static registerLoggingObserver(Landroid/hardware/contextaware/utilbundle/logger/ILoggingObserver;)V
     .locals 0
-    .param p0    # Landroid/hardware/contextaware/utilbundle/logger/ILoggingObserver;
 
     sput-object p0, Landroid/hardware/contextaware/utilbundle/logger/CaLogger;->mLoggingObserver:Landroid/hardware/contextaware/utilbundle/logger/ILoggingObserver;
 
@@ -455,7 +441,6 @@
 
 .method public static setConsoleLoggingEnable(Z)V
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Landroid/hardware/contextaware/utilbundle/logger/CaLogger;->isConsoleLogging:Z
 
@@ -464,7 +449,6 @@
 
 .method public static setFileLoggingEnable(Z)V
     .locals 3
-    .param p0    # Z
 
     const/4 v0, 0x0
 
@@ -504,7 +488,6 @@
 
 .method public static setGrayBoxTestingEnable(Z)V
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Landroid/hardware/contextaware/utilbundle/logger/CaLogger;->isGrayBoxTesting:Z
 
@@ -513,8 +496,6 @@
 
 .method public static setLogOption(IZ)V
     .locals 0
-    .param p0    # I
-    .param p1    # Z
 
     sput p0, Landroid/hardware/contextaware/utilbundle/logger/CaLogger;->mLevel:I
 
@@ -552,7 +533,6 @@
 
 .method public static unregisterLoggingObserver(Landroid/hardware/contextaware/utilbundle/logger/ILoggingObserver;)V
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/utilbundle/logger/ILoggingObserver;
 
     const/4 v0, 0x0
 
@@ -563,7 +543,6 @@
 
 .method public static warning(Ljava/lang/String;)V
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     sget-object v1, Landroid/hardware/contextaware/utilbundle/logger/CaLogger$Level;->WARN:Landroid/hardware/contextaware/utilbundle/logger/CaLogger$Level;
 

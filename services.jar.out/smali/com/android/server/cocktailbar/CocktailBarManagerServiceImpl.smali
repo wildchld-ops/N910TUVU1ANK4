@@ -143,8 +143,6 @@
 # direct methods
 .method constructor <init>(Landroid/content/Context;I)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     const/4 v1, 0x0
 
@@ -329,7 +327,6 @@
 
 .method static synthetic access$000(Lcom/android/server/cocktailbar/CocktailBarManagerServiceImpl;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/server/cocktailbar/CocktailBarManagerServiceImpl;
 
     iget-object v0, p0, Lcom/android/server/cocktailbar/CocktailBarManagerServiceImpl;->mContext:Landroid/content/Context;
 
@@ -338,7 +335,6 @@
 
 .method static synthetic access$100(Lcom/android/server/cocktailbar/CocktailBarManagerServiceImpl;)I
     .locals 1
-    .param p0    # Lcom/android/server/cocktailbar/CocktailBarManagerServiceImpl;
 
     iget v0, p0, Lcom/android/server/cocktailbar/CocktailBarManagerServiceImpl;->mUserId:I
 
@@ -347,7 +343,6 @@
 
 .method static synthetic access$1000(I)Ljava/io/File;
     .locals 1
-    .param p0    # I
 
     invoke-static {p0}, Lcom/android/server/cocktailbar/CocktailBarManagerServiceImpl;->getCocktailBarDecorDir(I)Ljava/io/File;
 
@@ -358,7 +353,6 @@
 
 .method static synthetic access$200(Lcom/android/server/cocktailbar/CocktailBarManagerServiceImpl;)Landroid/util/SparseArray;
     .locals 1
-    .param p0    # Lcom/android/server/cocktailbar/CocktailBarManagerServiceImpl;
 
     iget-object v0, p0, Lcom/android/server/cocktailbar/CocktailBarManagerServiceImpl;->mCocktailArr:Landroid/util/SparseArray;
 
@@ -367,7 +361,6 @@
 
 .method static synthetic access$300(Lcom/android/server/cocktailbar/CocktailBarManagerServiceImpl;)V
     .locals 0
-    .param p0    # Lcom/android/server/cocktailbar/CocktailBarManagerServiceImpl;
 
     invoke-direct {p0}, Lcom/android/server/cocktailbar/CocktailBarManagerServiceImpl;->ensureStateLoadedLocked()V
 
@@ -376,7 +369,6 @@
 
 .method static synthetic access$400(Lcom/android/server/cocktailbar/CocktailBarManagerServiceImpl;)Lcom/android/server/cocktailbar/utils/CocktailBarUtils$CocktailBarSettings;
     .locals 1
-    .param p0    # Lcom/android/server/cocktailbar/CocktailBarManagerServiceImpl;
 
     iget-object v0, p0, Lcom/android/server/cocktailbar/CocktailBarManagerServiceImpl;->mSettings:Lcom/android/server/cocktailbar/utils/CocktailBarUtils$CocktailBarSettings;
 
@@ -385,7 +377,6 @@
 
 .method static synthetic access$500(Lcom/android/server/cocktailbar/CocktailBarManagerServiceImpl;)V
     .locals 0
-    .param p0    # Lcom/android/server/cocktailbar/CocktailBarManagerServiceImpl;
 
     invoke-direct {p0}, Lcom/android/server/cocktailbar/CocktailBarManagerServiceImpl;->updateFromSettingsLocked()V
 
@@ -394,7 +385,6 @@
 
 .method static synthetic access$600(Lcom/android/server/cocktailbar/CocktailBarManagerServiceImpl;)Lcom/android/server/cocktailbar/policy/CocktailBarPolicy;
     .locals 1
-    .param p0    # Lcom/android/server/cocktailbar/CocktailBarManagerServiceImpl;
 
     iget-object v0, p0, Lcom/android/server/cocktailbar/CocktailBarManagerServiceImpl;->mPolicy:Lcom/android/server/cocktailbar/policy/CocktailBarPolicy;
 
@@ -403,7 +393,6 @@
 
 .method static synthetic access$700(Lcom/android/server/cocktailbar/CocktailBarManagerServiceImpl;)Z
     .locals 1
-    .param p0    # Lcom/android/server/cocktailbar/CocktailBarManagerServiceImpl;
 
     invoke-direct {p0}, Lcom/android/server/cocktailbar/CocktailBarManagerServiceImpl;->getKidsMode()Z
 
@@ -414,8 +403,6 @@
 
 .method static synthetic access$800(Lcom/android/server/cocktailbar/CocktailBarManagerServiceImpl;I)Z
     .locals 1
-    .param p0    # Lcom/android/server/cocktailbar/CocktailBarManagerServiceImpl;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/cocktailbar/CocktailBarManagerServiceImpl;->setModeLocked(I)Z
 
@@ -426,7 +413,6 @@
 
 .method static synthetic access$900(Lcom/android/server/cocktailbar/CocktailBarManagerServiceImpl;)V
     .locals 0
-    .param p0    # Lcom/android/server/cocktailbar/CocktailBarManagerServiceImpl;
 
     invoke-direct {p0}, Lcom/android/server/cocktailbar/CocktailBarManagerServiceImpl;->saveStateLocked()V
 
@@ -435,7 +421,6 @@
 
 .method private addProviderLocked(Landroid/content/pm/ResolveInfo;)Lcom/samsung/android/cocktailbar/Cocktail;
     .locals 7
-    .param p1    # Landroid/content/pm/ResolveInfo;
 
     const/4 v3, 0x0
 
@@ -575,7 +560,6 @@
 
 .method private addProvidersForPackageLocked(Ljava/lang/String;)Z
     .locals 14
-    .param p1    # Ljava/lang/String;
 
     const-string v10, "CocktailBarManagerServiceImpl"
 
@@ -725,7 +709,6 @@
 
 .method private applyBooster(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/cocktailbar/CocktailBarManagerServiceImpl;->supportedCPUFreqTable:[I
 
@@ -768,7 +751,6 @@
 
 .method private cancelBroadcasts(Lcom/samsung/android/cocktailbar/Cocktail;)V
     .locals 4
-    .param p1    # Lcom/samsung/android/cocktailbar/Cocktail;
 
     invoke-virtual {p1}, Lcom/samsung/android/cocktailbar/Cocktail;->getBroadcast()Landroid/app/PendingIntent;
 
@@ -808,7 +790,6 @@
 
 .method private decrementCocktailServiceRefCount(Lcom/samsung/android/cocktailbar/Cocktail;)V
     .locals 4
-    .param p1    # Lcom/samsung/android/cocktailbar/Cocktail;
 
     iget-object v3, p0, Lcom/android/server/cocktailbar/CocktailBarManagerServiceImpl;->mRemoteViewsServicesCocktails:Ljava/util/HashMap;
 
@@ -878,8 +859,6 @@
 
 .method private destroyRemoteViewsService(Landroid/content/Intent;Lcom/samsung/android/cocktailbar/Cocktail;)V
     .locals 7
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Lcom/samsung/android/cocktailbar/Cocktail;
 
     new-instance v0, Lcom/android/server/cocktailbar/CocktailBarManagerServiceImpl$4;
 
@@ -924,9 +903,6 @@
 
 .method private dumpCocktail(Lcom/samsung/android/cocktailbar/Cocktail;ILjava/io/PrintWriter;)V
     .locals 2
-    .param p1    # Lcom/samsung/android/cocktailbar/Cocktail;
-    .param p2    # I
-    .param p3    # Ljava/io/PrintWriter;
 
     invoke-virtual {p1}, Lcom/samsung/android/cocktailbar/Cocktail;->getProviderInfo()Lcom/samsung/android/cocktailbar/CocktailProviderInfo;
 
@@ -1108,7 +1084,6 @@
 
 .method private findCocktailsByCategoryLocked(I)Ljava/util/ArrayList;
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -1172,7 +1147,6 @@
 
 .method private findCocktailsByPrivateModeLocked(Ljava/lang/String;)Ljava/util/ArrayList;
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1244,7 +1218,6 @@
 
 .method private static getCocktailBarDecorDir(I)Ljava/io/File;
     .locals 3
-    .param p0    # I
 
     new-instance v0, Ljava/io/File;
 
@@ -1261,7 +1234,6 @@
 
 .method static getCocktailIds(Lcom/samsung/android/cocktailbar/Cocktail;)[I
     .locals 3
-    .param p0    # Lcom/samsung/android/cocktailbar/Cocktail;
 
     const/4 v1, 0x1
 
@@ -1280,7 +1252,6 @@
 
 .method private getCocktailLocked(I)Lcom/samsung/android/cocktailbar/Cocktail;
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/server/cocktailbar/CocktailBarManagerServiceImpl;->mCocktailArr:Landroid/util/SparseArray;
 
@@ -1358,7 +1329,6 @@
 
 .method private static getSettingsFile(I)Ljava/io/File;
     .locals 3
-    .param p0    # I
 
     new-instance v0, Ljava/io/File;
 
@@ -1375,7 +1345,6 @@
 
 .method private getUidForPackage(Ljava/lang/String;)I
     .locals 4
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/pm/PackageManager$NameNotFoundException;
@@ -1426,7 +1395,6 @@
 
 .method private handleNotifyWakeUp(Z)V
     .locals 3
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/cocktailbar/CocktailBarManagerServiceImpl;->mCocktaiBarWakeupState:Z
 
@@ -1457,8 +1425,6 @@
 
 .method private incrementCocktailServiceRefCount(ILandroid/content/Intent$FilterComparison;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/content/Intent$FilterComparison;
 
     const/4 v0, 0x0
 
@@ -1766,7 +1732,6 @@
 
 .method private lookupProviderLocked(Landroid/content/ComponentName;)Lcom/samsung/android/cocktailbar/Cocktail;
     .locals 5
-    .param p1    # Landroid/content/ComponentName;
 
     const-string v3, "CocktailBarManagerServiceImpl"
 
@@ -1823,7 +1788,6 @@
 
 .method private notifyCallbacksLocked(Lcom/android/server/cocktailbar/CocktailBarManagerServiceImpl$CocktailBarDecorData;)V
     .locals 6
-    .param p1    # Lcom/android/server/cocktailbar/CocktailBarManagerServiceImpl$CocktailBarDecorData;
 
     # getter for: Lcom/android/server/cocktailbar/CocktailBarManagerServiceImpl$CocktailBarDecorData;->callbacks:Landroid/os/RemoteCallbackList;
     invoke-static {p1}, Lcom/android/server/cocktailbar/CocktailBarManagerServiceImpl$CocktailBarDecorData;->access$1100(Lcom/android/server/cocktailbar/CocktailBarManagerServiceImpl$CocktailBarDecorData;)Landroid/os/RemoteCallbackList;
@@ -1902,8 +1866,6 @@
 
 .method private notifyCocktailViewDataChangedInstanceLocked(Lcom/samsung/android/cocktailbar/Cocktail;I)V
     .locals 11
-    .param p1    # Lcom/samsung/android/cocktailbar/Cocktail;
-    .param p2    # I
 
     iget-object v8, p0, Lcom/android/server/cocktailbar/CocktailBarManagerServiceImpl;->mCallbackHost:Lcom/samsung/android/cocktailbar/ICocktailHost;
 
@@ -2029,7 +1991,6 @@
 
 .method private notifyScreenTurnedOn(Lcom/samsung/android/cocktailbar/ICocktailBarShowCallback;)V
     .locals 3
-    .param p1    # Lcom/samsung/android/cocktailbar/ICocktailBarShowCallback;
 
     iget-object v1, p0, Lcom/android/server/cocktailbar/CocktailBarManagerServiceImpl;->mCallbackHost:Lcom/samsung/android/cocktailbar/ICocktailHost;
 
@@ -2058,9 +2019,6 @@
 
 .method private parseAndUpdateProviderInfoXml(Lcom/samsung/android/cocktailbar/Cocktail;Landroid/content/ComponentName;Landroid/content/pm/ResolveInfo;)Z
     .locals 10
-    .param p1    # Lcom/samsung/android/cocktailbar/Cocktail;
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # Landroid/content/pm/ResolveInfo;
 
     const/4 v7, 0x1
 
@@ -2260,8 +2218,6 @@
 
 .method private parseProviderInfoXml(Landroid/content/ComponentName;Landroid/content/pm/ResolveInfo;)Lcom/samsung/android/cocktailbar/Cocktail;
     .locals 2
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Landroid/content/pm/ResolveInfo;
 
     new-instance v0, Lcom/samsung/android/cocktailbar/Cocktail;
 
@@ -2448,7 +2404,6 @@
 
 .method private readStateFromFileLocked(Ljava/io/FileInputStream;)V
     .locals 28
-    .param p1    # Ljava/io/FileInputStream;
 
     const/16 v20, 0x0
 
@@ -4825,7 +4780,6 @@
 
 .method private registerForBroadcastsLocked(Lcom/samsung/android/cocktailbar/Cocktail;)V
     .locals 13
-    .param p1    # Lcom/samsung/android/cocktailbar/Cocktail;
 
     const/4 v7, 0x1
 
@@ -4985,7 +4939,6 @@
 
 .method private removeCocktailInHostLocked(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/server/cocktailbar/CocktailBarManagerServiceImpl;->mCallbackHost:Lcom/samsung/android/cocktailbar/ICocktailHost;
 
@@ -5016,7 +4969,6 @@
 
 .method private removeCocktailLocked(I)V
     .locals 5
-    .param p1    # I
 
     const-string v2, "CocktailBarManagerServiceImpl"
 
@@ -5152,8 +5104,6 @@
 
 .method private removeProviderLocked(ILcom/samsung/android/cocktailbar/Cocktail;)Z
     .locals 2
-    .param p1    # I
-    .param p2    # Lcom/samsung/android/cocktailbar/Cocktail;
 
     invoke-virtual {p2}, Lcom/samsung/android/cocktailbar/Cocktail;->getCocktailId()I
 
@@ -5190,7 +5140,6 @@
 
 .method private removeProvidersForPackageLocked(Ljava/lang/String;)Z
     .locals 9
-    .param p1    # Ljava/lang/String;
 
     const-string v6, "CocktailBarManagerServiceImpl"
 
@@ -5485,7 +5434,6 @@
 
 .method private resetModeLocked(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/cocktailbar/CocktailBarManagerServiceImpl;->mPolicy:Lcom/android/server/cocktailbar/policy/CocktailBarPolicy;
 
@@ -5643,8 +5591,6 @@
 
 .method private sendCocktailChangedVisibilityIntentLocked(Lcom/samsung/android/cocktailbar/Cocktail;I)V
     .locals 4
-    .param p1    # Lcom/samsung/android/cocktailbar/Cocktail;
-    .param p2    # I
 
     const-string v1, "CocktailBarManagerServiceImpl"
 
@@ -5695,7 +5641,6 @@
 
 .method private sendDisableIntentLocked(Lcom/samsung/android/cocktailbar/Cocktail;)V
     .locals 4
-    .param p1    # Lcom/samsung/android/cocktailbar/Cocktail;
 
     const-string v1, "CocktailBarManagerServiceImpl"
 
@@ -5756,8 +5701,6 @@
 
 .method private sendDragEventLocked(Lcom/samsung/android/cocktailbar/Cocktail;Landroid/view/DragEvent;)V
     .locals 4
-    .param p1    # Lcom/samsung/android/cocktailbar/Cocktail;
-    .param p2    # Landroid/view/DragEvent;
 
     const-string v1, "CocktailBarManagerServiceImpl"
 
@@ -5800,8 +5743,6 @@
 
 .method private sendEnableAndUpdateBroadcastLocked(Lcom/samsung/android/cocktailbar/Cocktail;Z)V
     .locals 1
-    .param p1    # Lcom/samsung/android/cocktailbar/Cocktail;
-    .param p2    # Z
 
     if-eqz p1, :cond_1
 
@@ -5828,7 +5769,6 @@
 
 .method private sendEnableIntentLocked(Lcom/samsung/android/cocktailbar/Cocktail;)V
     .locals 4
-    .param p1    # Lcom/samsung/android/cocktailbar/Cocktail;
 
     const-string v1, "CocktailBarManagerServiceImpl"
 
@@ -5941,8 +5881,6 @@
 
 .method private sendUpdateIntentLocked(Lcom/samsung/android/cocktailbar/Cocktail;Z)V
     .locals 6
-    .param p1    # Lcom/samsung/android/cocktailbar/Cocktail;
-    .param p2    # Z
 
     const/4 v5, 0x0
 
@@ -6035,7 +5973,6 @@
 
 .method private setModeLocked(I)Z
     .locals 8
-    .param p1    # I
 
     const/4 v6, 0x1
 
@@ -6268,7 +6205,6 @@
 
 .method private unbindCocktailRemoteViewsServicesLocked(Lcom/samsung/android/cocktailbar/Cocktail;)V
     .locals 5
-    .param p1    # Lcom/samsung/android/cocktailbar/Cocktail;
 
     invoke-virtual {p1}, Lcom/samsung/android/cocktailbar/Cocktail;->getCocktailId()I
 
@@ -6334,7 +6270,6 @@
 
 .method private unsetModeLocked(I)V
     .locals 4
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -6473,7 +6408,6 @@
 
 .method private updateProvidersForPackageLocked(Ljava/lang/String;Ljava/util/Set;)Z
     .locals 17
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -6847,7 +6781,6 @@
 
 .method private writeStateToFileLocked(Ljava/io/FileOutputStream;)Z
     .locals 10
-    .param p1    # Ljava/io/FileOutputStream;
 
     const/4 v7, 0x1
 
@@ -6996,9 +6929,6 @@
 # virtual methods
 .method public bindRemoteViewsService(ILandroid/content/Intent;Landroid/os/IBinder;)V
     .locals 17
-    .param p1    # I
-    .param p2    # Landroid/content/Intent;
-    .param p3    # Landroid/os/IBinder;
 
     move-object/from16 v0, p0
 
@@ -7318,8 +7248,6 @@
 
 .method public closeCocktail(II)V
     .locals 8
-    .param p1    # I
-    .param p2    # I
 
     iget-object v6, p0, Lcom/android/server/cocktailbar/CocktailBarManagerServiceImpl;->mCocktailArr:Landroid/util/SparseArray;
 
@@ -7452,9 +7380,6 @@
 
 .method dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     iget-object v3, p0, Lcom/android/server/cocktailbar/CocktailBarManagerServiceImpl;->mContext:Landroid/content/Context;
 
@@ -7651,7 +7576,6 @@
 
 .method public getCocktail(I)Lcom/samsung/android/cocktailbar/Cocktail;
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/server/cocktailbar/CocktailBarManagerServiceImpl;->mCocktailArr:Landroid/util/SparseArray;
 
@@ -7678,8 +7602,6 @@
 
 .method public getCocktailBarDecor(Lcom/samsung/android/cocktailbar/ICocktailBarDecorManagerCallback;Landroid/os/Bundle;)Landroid/os/ParcelFileDescriptor;
     .locals 8
-    .param p1    # Lcom/samsung/android/cocktailbar/ICocktailBarDecorManagerCallback;
-    .param p2    # Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -7823,7 +7745,6 @@
 
 .method public getCocktailId(Landroid/content/ComponentName;)I
     .locals 7
-    .param p1    # Landroid/content/ComponentName;
 
     const/4 v3, -0x1
 
@@ -7918,7 +7839,6 @@
 
 .method public getCocktailIds(Landroid/content/ComponentName;)[I
     .locals 4
-    .param p1    # Landroid/content/ComponentName;
 
     iget-object v2, p0, Lcom/android/server/cocktailbar/CocktailBarManagerServiceImpl;->mCocktailArr:Landroid/util/SparseArray;
 
@@ -8079,7 +7999,6 @@
 
 .method public notifyCocktailBarDecorChanged(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/server/cocktailbar/CocktailBarManagerServiceImpl;->mDecorLock:Ljava/lang/Object;
 
@@ -8110,8 +8029,6 @@
 
 .method public notifyCocktailViewDataChanged(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     iget-object v2, p0, Lcom/android/server/cocktailbar/CocktailBarManagerServiceImpl;->mCocktailArr:Landroid/util/SparseArray;
 
@@ -8142,8 +8059,6 @@
 
 .method public notifyCocktailVisibiltyChanged(II)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     const-string v1, "CocktailBarManagerServiceImpl"
 
@@ -8205,7 +8120,6 @@
 
 .method public notifyKeyguardState(Z)V
     .locals 3
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/cocktailbar/CocktailBarManagerServiceImpl;->mKeyguardState:Z
 
@@ -8238,7 +8152,6 @@
 
 .method public onBroadcastReceived(Landroid/content/Intent;)V
     .locals 17
-    .param p1    # Landroid/content/Intent;
 
     invoke-virtual/range {p1 .. p1}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
@@ -8997,7 +8910,6 @@
 
 .method public onScreenTurnedOn(Lcom/samsung/android/cocktailbar/ICocktailBarShowCallback;)V
     .locals 0
-    .param p1    # Lcom/samsung/android/cocktailbar/ICocktailBarShowCallback;
 
     invoke-direct {p0, p1}, Lcom/android/server/cocktailbar/CocktailBarManagerServiceImpl;->notifyScreenTurnedOn(Lcom/samsung/android/cocktailbar/ICocktailBarShowCallback;)V
 
@@ -9006,8 +8918,6 @@
 
 .method public partiallyUpdateCocktail(ILandroid/widget/RemoteViews;)V
     .locals 7
-    .param p1    # I
-    .param p2    # Landroid/widget/RemoteViews;
 
     iget-object v5, p0, Lcom/android/server/cocktailbar/CocktailBarManagerServiceImpl;->mCocktailArr:Landroid/util/SparseArray;
 
@@ -9112,7 +9022,6 @@
 
 .method public requestToDisableCocktail(I)Z
     .locals 3
-    .param p1    # I
 
     const-string v0, "CocktailBarManagerServiceImpl"
 
@@ -9169,7 +9078,6 @@
 
 .method public requestToDisableCocktailByCategory(I)Z
     .locals 7
-    .param p1    # I
 
     const-string v4, "CocktailBarManagerServiceImpl"
 
@@ -9259,7 +9167,6 @@
 
 .method public requestToDisableCocktailByPrivateMode(Ljava/lang/String;)Z
     .locals 11
-    .param p1    # Ljava/lang/String;
 
     const/4 v6, 0x0
 
@@ -9400,7 +9307,6 @@
 
 .method public requestToUpdateCocktail(I)Z
     .locals 3
-    .param p1    # I
 
     const-string v0, "CocktailBarManagerServiceImpl"
 
@@ -9457,7 +9363,6 @@
 
 .method public requestToUpdateCocktailByCategory(I)Z
     .locals 7
-    .param p1    # I
 
     const-string v4, "CocktailBarManagerServiceImpl"
 
@@ -9547,7 +9452,6 @@
 
 .method public requestToUpdateCocktailByPrivateMode(Ljava/lang/String;)Z
     .locals 11
-    .param p1    # Ljava/lang/String;
 
     const/4 v6, 0x0
 
@@ -9686,7 +9590,6 @@
 
 .method public resetMode(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/server/cocktailbar/CocktailBarManagerServiceImpl;->mCocktailArr:Landroid/util/SparseArray;
 
@@ -9711,8 +9614,6 @@
 
 .method public sendDragEvent(ILandroid/view/DragEvent;)V
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/view/DragEvent;
 
     const-string v1, "CocktailBarManagerServiceImpl"
 
@@ -9774,7 +9675,6 @@
 
 .method public sendExtraDataToCocktailBar(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     iget-object v1, p0, Lcom/android/server/cocktailbar/CocktailBarManagerServiceImpl;->mCallbackHost:Lcom/samsung/android/cocktailbar/ICocktailHost;
 
@@ -9872,7 +9772,6 @@
 
 .method public setCocktailBarDecor(Ljava/lang/String;)Landroid/os/ParcelFileDescriptor;
     .locals 8
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -9961,8 +9860,6 @@
 
 .method public setCocktailBarVisibility(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     iput p1, p0, Lcom/android/server/cocktailbar/CocktailBarManagerServiceImpl;->mCocktailBarVisibility:I
 
@@ -9993,8 +9890,6 @@
 
 .method public setCocktailHostCallbacks(Lcom/samsung/android/cocktailbar/ICocktailHost;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Lcom/samsung/android/cocktailbar/ICocktailHost;
-    .param p2    # Ljava/lang/String;
 
     iget-boolean v0, p0, Lcom/android/server/cocktailbar/CocktailBarManagerServiceImpl;->mHasFeature:Z
 
@@ -10033,7 +9928,6 @@
 
 .method public setDecorType(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/server/cocktailbar/CocktailBarManagerServiceImpl;->mDecorLock:Ljava/lang/Object;
 
@@ -10060,7 +9954,6 @@
 
 .method public setDisableTickerView(I)V
     .locals 3
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/cocktailbar/CocktailBarManagerServiceImpl;->mTickerDisableflags:I
 
@@ -10093,7 +9986,6 @@
 
 .method public setMode(I)Z
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/server/cocktailbar/CocktailBarManagerServiceImpl;->mCocktailArr:Landroid/util/SparseArray;
 
@@ -10120,7 +10012,6 @@
 
 .method public setTransparentCocktail(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v1, p0, Lcom/android/server/cocktailbar/CocktailBarManagerServiceImpl;->mCallbackHost:Lcom/samsung/android/cocktailbar/ICocktailHost;
 
@@ -10149,7 +10040,6 @@
 
 .method public showCocktail(I)V
     .locals 7
-    .param p1    # I
 
     iget-object v5, p0, Lcom/android/server/cocktailbar/CocktailBarManagerServiceImpl;->mCocktailArr:Landroid/util/SparseArray;
 
@@ -10232,8 +10122,6 @@
 
 .method public startListening(Lcom/samsung/android/cocktailbar/ICocktailHost;Ljava/lang/String;Ljava/util/List;)[I
     .locals 10
-    .param p1    # Lcom/samsung/android/cocktailbar/ICocktailHost;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -10424,8 +10312,6 @@
 
 .method public unbindRemoteViewsService(ILandroid/content/Intent;)V
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/content/Intent;
 
     iget-object v4, p0, Lcom/android/server/cocktailbar/CocktailBarManagerServiceImpl;->mCocktailArr:Landroid/util/SparseArray;
 
@@ -10517,8 +10403,6 @@
 
 .method public updateCocktail(ILcom/samsung/android/cocktailbar/CocktailInfo;)V
     .locals 7
-    .param p1    # I
-    .param p2    # Lcom/samsung/android/cocktailbar/CocktailInfo;
 
     const-string v4, "CocktailBarManagerServiceImpl"
 
@@ -10619,8 +10503,6 @@
 
 .method updateCocktailBarDecorLocked(Ljava/lang/String;Lcom/android/server/cocktailbar/CocktailBarManagerServiceImpl$CocktailBarDecorData;)Landroid/os/ParcelFileDescriptor;
     .locals 13
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/server/cocktailbar/CocktailBarManagerServiceImpl$CocktailBarDecorData;
 
     const/4 v8, 0x0
 
@@ -10750,7 +10632,6 @@
 
 .method public updateLongpressGesture(Z)V
     .locals 6
-    .param p1    # Z
 
     const/4 v2, 0x0
 
@@ -10940,8 +10821,6 @@
 
 .method public updateWakeupGesture(IZ)V
     .locals 7
-    .param p1    # I
-    .param p2    # Z
 
     iget-object v5, p0, Lcom/android/server/cocktailbar/CocktailBarManagerServiceImpl;->mContext:Landroid/content/Context;
 
@@ -11140,7 +11019,6 @@
 
 .method public wakeupCocktailBar(Z)V
     .locals 1
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 

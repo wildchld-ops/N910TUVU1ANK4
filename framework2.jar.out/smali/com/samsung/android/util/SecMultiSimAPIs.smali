@@ -162,31 +162,24 @@
 
 .method public static appendPropertySimSlot(Ljava/lang/String;I)Ljava/lang/String;
     .locals 0
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
 
     return-object p0
 .end method
 
 .method public static appendSimSlot(Ljava/lang/String;I)Ljava/lang/String;
     .locals 0
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
 
     return-object p0
 .end method
 
 .method private static appendSocketNameSimSlot(Ljava/lang/String;I)Ljava/lang/String;
     .locals 0
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
 
     return-object p0
 .end method
 
 .method private static getActivatedSimNum(Landroid/content/Context;)I
     .locals 5
-    .param p0    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -295,8 +288,6 @@
 
 .method private static getIsSIMOn(Landroid/content/Context;I)Z
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -327,7 +318,6 @@
 
 .method private static getLogicalSimSlot(I)I
     .locals 4
-    .param p0    # I
 
     if-ltz p0, :cond_0
 
@@ -368,7 +358,6 @@
 
 .method private static getPhysicalSimSlot(I)I
     .locals 6
-    .param p0    # I
 
     if-ltz p0, :cond_0
 
@@ -470,8 +459,6 @@
 
 .method public static getSimCardIcon(Landroid/content/Context;I)I
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -566,8 +553,6 @@
 
 .method public static getSimCardName(Landroid/content/Context;I)Ljava/lang/String;
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -1122,8 +1107,6 @@
 
 .method private static isActivatedSimSlot(Landroid/content/Context;I)Z
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -1177,7 +1160,6 @@
 
 .method private static isInsertedSimSlot(I)Z
     .locals 4
-    .param p0    # I
 
     const/4 v1, 0x0
 
@@ -1336,9 +1318,6 @@
 
 .method private static setIsSIMOn(Landroid/content/Context;IZ)V
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # Z
 
     const-string v0, "SecMultiSimAPIs"
 
@@ -1387,9 +1366,6 @@
 
 .method private static setSimCardIcon(Landroid/content/Context;II)V
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # I
 
     const-string v0, "SecMultiSimAPIs"
 
@@ -1438,9 +1414,6 @@
 
 .method private static setSimCardName(Landroid/content/Context;ILjava/lang/String;)V
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 

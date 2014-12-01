@@ -24,6 +24,8 @@
 
 
 # instance fields
+.field private mColor:I
+
 .field protected mDisabledIconResid:I
 
 .field protected mDisabledStatusMessageResId:I
@@ -32,23 +34,22 @@
 
 .field protected mEnabledStatusMessageResId:I
 
+.field private mIconColor:I
+
 .field mLayoutId:I
 
 .field protected mMessageResId:I
 
 .field protected mState:Lcom/android/internal/policy/impl/GlobalActions$ToggleAction$State;
 
+.field private mcolorstate:I
+
 
 # direct methods
 .method public constructor <init>(IIIII)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     sget-object v0, Lcom/android/internal/policy/impl/GlobalActions$ToggleAction$State;->Off:Lcom/android/internal/policy/impl/GlobalActions$ToggleAction$State;
 
@@ -75,7 +76,6 @@
 # virtual methods
 .method protected changeStateFromPress(Z)V
     .locals 3
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -114,12 +114,138 @@
     goto :goto_0
 .end method
 
+.method color_icon(Landroid/content/Context;)V
+    .locals 5
+
+    invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v1
+
+    const-string v2, "link_power"
+
+    const/4 v3, 0x0
+
+    invoke-static {v1, v2, v3}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+
+    move-result v1
+
+    const/4 v4, 0x1
+
+    if-ne v1, v4, :cond_0
+
+    invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v1
+
+    const-string v2, "theme_color"
+
+    const v3, -0x1
+
+    invoke-static {v1, v2, v3}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+
+    move-result v1
+
+    iput v1, p0, Lcom/android/internal/policy/impl/GlobalActions$ToggleAction;->mIconColor:I
+
+    return-void
+
+    :cond_0
+    invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v1
+
+    const-string v2, "powericon_color"
+
+    const v3, -0x1
+
+    invoke-static {v1, v2, v3}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+
+    move-result v1
+
+    iput v1, p0, Lcom/android/internal/policy/impl/GlobalActions$ToggleAction;->mIconColor:I
+
+    return-void
+.end method
+
+.method color_text(Landroid/content/Context;)V
+    .locals 5
+
+    invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v1
+
+    const-string v2, "power_color_state"
+
+    const/4 v3, 0x0
+
+    invoke-static {v1, v2, v3}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    const/4 v4, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v4, 0x0
+
+    :goto_0
+    iput v4, p0, Lcom/android/internal/policy/impl/GlobalActions$ToggleAction;->mcolorstate:I
+
+    invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v1
+
+    const-string v2, "link_power_text"
+
+    const/4 v3, 0x0
+
+    invoke-static {v1, v2, v3}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+
+    move-result v1
+
+    const/4 v4, 0x1
+
+    if-ne v1, v4, :cond_1
+
+    invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v1
+
+    const-string v2, "theme_color"
+
+    const v3, -0x1
+
+    invoke-static {v1, v2, v3}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+
+    move-result v1
+
+    iput v1, p0, Lcom/android/internal/policy/impl/GlobalActions$ToggleAction;->mColor:I
+
+    return-void
+
+    :cond_1
+    invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v1
+
+    const-string v2, "power_text_color"
+
+    const v3, -0x1
+
+    invoke-static {v1, v2, v3}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+
+    move-result v1
+
+    iput v1, p0, Lcom/android/internal/policy/impl/GlobalActions$ToggleAction;->mColor:I
+
+    return-void
+.end method
+
 .method public create(Landroid/content/Context;Landroid/view/View;Landroid/view/ViewGroup;Landroid/view/LayoutInflater;)Landroid/view/View;
-    .locals 9
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
-    .param p4    # Landroid/view/LayoutInflater;
+    .locals 11
 
     const/4 v7, 0x0
 
@@ -159,38 +285,49 @@
 
     move-result v0
 
-    if-eqz v2, :cond_0
+    if-eqz v2, :cond_1
 
     iget v6, p0, Lcom/android/internal/policy/impl/GlobalActions$ToggleAction;->mMessageResId:I
 
     invoke-virtual {v2, v6}, Landroid/widget/TextView;->setText(I)V
 
-    invoke-virtual {v2, v0}, Landroid/widget/TextView;->setEnabled(Z)V
+    invoke-virtual {p0, p1}, Lcom/android/internal/policy/impl/GlobalActions$ToggleAction;->color_text(Landroid/content/Context;)V
+
+    iget v9, p0, Lcom/android/internal/policy/impl/GlobalActions$ToggleAction;->mcolorstate:I
+
+    if-eqz v9, :cond_0
+
+    iget v9, p0, Lcom/android/internal/policy/impl/GlobalActions$ToggleAction;->mColor:I
+
+    invoke-virtual {v2, v9}, Landroid/widget/TextView;->setTextColor(I)V
 
     :cond_0
+    invoke-virtual {v2, v0}, Landroid/widget/TextView;->setEnabled(Z)V
+
+    :cond_1
     iget-object v6, p0, Lcom/android/internal/policy/impl/GlobalActions$ToggleAction;->mState:Lcom/android/internal/policy/impl/GlobalActions$ToggleAction$State;
 
     sget-object v8, Lcom/android/internal/policy/impl/GlobalActions$ToggleAction$State;->On:Lcom/android/internal/policy/impl/GlobalActions$ToggleAction$State;
 
-    if-eq v6, v8, :cond_1
+    if-eq v6, v8, :cond_2
 
     iget-object v6, p0, Lcom/android/internal/policy/impl/GlobalActions$ToggleAction;->mState:Lcom/android/internal/policy/impl/GlobalActions$ToggleAction$State;
 
     sget-object v8, Lcom/android/internal/policy/impl/GlobalActions$ToggleAction$State;->TurningOn:Lcom/android/internal/policy/impl/GlobalActions$ToggleAction$State;
 
-    if-ne v6, v8, :cond_4
+    if-ne v6, v8, :cond_6
 
-    :cond_1
+    :cond_2
     const/4 v3, 0x1
 
     :goto_0
-    if-eqz v1, :cond_2
+    if-eqz v1, :cond_3
 
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v8
 
-    if-eqz v3, :cond_5
+    if-eqz v3, :cond_7
 
     iget v6, p0, Lcom/android/internal/policy/impl/GlobalActions$ToggleAction;->mEnabledIconResId:I
 
@@ -201,38 +338,57 @@
 
     invoke-virtual {v1, v6}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    invoke-virtual {v1, v0}, Landroid/view/View;->setEnabled(Z)V
+    invoke-virtual {p0, p1}, Lcom/android/internal/policy/impl/GlobalActions$ToggleAction;->color_icon(Landroid/content/Context;)V
 
-    :cond_2
-    if-eqz v4, :cond_3
+    iget v9, p0, Lcom/android/internal/policy/impl/GlobalActions$ToggleAction;->mIconColor:I
 
-    if-eqz v3, :cond_6
+    sget-object v10, Landroid/graphics/PorterDuff$Mode;->MULTIPLY:Landroid/graphics/PorterDuff$Mode;
+
+    invoke-virtual {v1, v9, v10}, Landroid/widget/ImageView;->setColorFilter(ILandroid/graphics/PorterDuff$Mode;)V
+
+    invoke-virtual {v1, v0}, Landroid/widget/ImageView;->setEnabled(Z)V
+
+    :cond_3
+    if-eqz v4, :cond_5
+
+    if-eqz v3, :cond_8
 
     iget v6, p0, Lcom/android/internal/policy/impl/GlobalActions$ToggleAction;->mEnabledStatusMessageResId:I
 
     :goto_2
     invoke-virtual {v4, v6}, Landroid/widget/TextView;->setText(I)V
 
-    invoke-virtual {v4, v7}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {p0, p1}, Lcom/android/internal/policy/impl/GlobalActions$ToggleAction;->color_text(Landroid/content/Context;)V
+
+    iget v9, p0, Lcom/android/internal/policy/impl/GlobalActions$ToggleAction;->mcolorstate:I
+
+    if-eqz v9, :cond_4
+
+    iget v9, p0, Lcom/android/internal/policy/impl/GlobalActions$ToggleAction;->mColor:I
+
+    invoke-virtual {v4, v9}, Landroid/widget/TextView;->setTextColor(I)V
+
+    :cond_4
+    invoke-virtual {v4, v7}, Landroid/widget/TextView;->setVisibility(I)V
 
     invoke-virtual {v4, v0}, Landroid/widget/TextView;->setEnabled(Z)V
 
-    :cond_3
+    :cond_5
     invoke-virtual {v5, v0}, Landroid/view/View;->setEnabled(Z)V
 
     return-object v5
 
-    :cond_4
+    :cond_6
     move v3, v7
 
     goto :goto_0
 
-    :cond_5
+    :cond_7
     iget v6, p0, Lcom/android/internal/policy/impl/GlobalActions$ToggleAction;->mDisabledIconResid:I
 
     goto :goto_1
 
-    :cond_6
+    :cond_8
     iget v6, p0, Lcom/android/internal/policy/impl/GlobalActions$ToggleAction;->mDisabledStatusMessageResId:I
 
     goto :goto_2
@@ -449,7 +605,6 @@
 
 .method public updateState(Lcom/android/internal/policy/impl/GlobalActions$ToggleAction$State;)V
     .locals 0
-    .param p1    # Lcom/android/internal/policy/impl/GlobalActions$ToggleAction$State;
 
     iput-object p1, p0, Lcom/android/internal/policy/impl/GlobalActions$ToggleAction;->mState:Lcom/android/internal/policy/impl/GlobalActions$ToggleAction$State;
 

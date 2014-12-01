@@ -66,9 +66,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;ILjava/lang/String;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     const/4 v2, 0x1
 
@@ -173,9 +170,6 @@
 
 .method buildDependencyChain(Landroid/content/Context;Landroid/content/pm/PackageManager;I)Z
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/pm/PackageManager;
-    .param p3    # I
 
     iget-object v4, p0, Lcom/android/settings/applications/RunningState$ProcessItem;->mDependentProcesses:Landroid/util/SparseArray;
 
@@ -248,7 +242,6 @@
 
 .method ensureLabel(Landroid/content/pm/PackageManager;)V
     .locals 11
-    .param p1    # Landroid/content/pm/PackageManager;
 
     iget-object v8, p0, Lcom/android/settings/applications/RunningState$BaseItem;->mLabel:Ljava/lang/String;
 
@@ -542,8 +535,6 @@
 
 .method updateService(Landroid/content/Context;Landroid/app/ActivityManager$RunningServiceInfo;)Z
     .locals 12
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/app/ActivityManager$RunningServiceInfo;
 
     invoke-virtual {p1}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -814,9 +805,6 @@
 
 .method updateSize(Landroid/content/Context;JI)Z
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # J
-    .param p4    # I
 
     const/4 v3, 0x0
 

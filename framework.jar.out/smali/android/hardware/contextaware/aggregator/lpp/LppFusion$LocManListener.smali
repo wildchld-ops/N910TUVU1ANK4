@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Landroid/hardware/contextaware/aggregator/lpp/LppFusion;Landroid/hardware/contextaware/aggregator/lpp/LppFusion$1;)V
     .locals 0
-    .param p1    # Landroid/hardware/contextaware/aggregator/lpp/LppFusion;
-    .param p2    # Landroid/hardware/contextaware/aggregator/lpp/LppFusion$1;
 
     invoke-direct {p0, p1}, Landroid/hardware/contextaware/aggregator/lpp/LppFusion$LocManListener;-><init>(Landroid/hardware/contextaware/aggregator/lpp/LppFusion;)V
 
@@ -68,7 +66,6 @@
 
 .method public batchLocUpdate(Landroid/location/Location;)V
     .locals 2
-    .param p1    # Landroid/location/Location;
 
     iget-object v0, p0, Landroid/hardware/contextaware/aggregator/lpp/LppFusion$LocManListener;->this$0:Landroid/hardware/contextaware/aggregator/lpp/LppFusion;
 
@@ -185,7 +182,6 @@
 
 .method public locPassBatchUpdate(Landroid/location/Location;)V
     .locals 2
-    .param p1    # Landroid/location/Location;
 
     iget-object v0, p0, Landroid/hardware/contextaware/aggregator/lpp/LppFusion$LocManListener;->this$0:Landroid/hardware/contextaware/aggregator/lpp/LppFusion;
 
@@ -199,7 +195,6 @@
 
 .method public locPassUpdate(Landroid/location/Location;)V
     .locals 2
-    .param p1    # Landroid/location/Location;
 
     iget-object v0, p0, Landroid/hardware/contextaware/aggregator/lpp/LppFusion$LocManListener;->this$0:Landroid/hardware/contextaware/aggregator/lpp/LppFusion;
 
@@ -269,7 +264,6 @@
 
 .method public logData(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/hardware/contextaware/aggregator/lpp/LppFusion$LocManListener;->this$0:Landroid/hardware/contextaware/aggregator/lpp/LppFusion;
 
@@ -287,7 +281,6 @@
 
 .method public logNmeaData(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/hardware/contextaware/aggregator/lpp/LppFusion$LocManListener;->this$0:Landroid/hardware/contextaware/aggregator/lpp/LppFusion;
 
@@ -305,7 +298,6 @@
 
 .method public status(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/hardware/contextaware/aggregator/lpp/LppFusion$LocManListener;->this$0:Landroid/hardware/contextaware/aggregator/lpp/LppFusion;
 

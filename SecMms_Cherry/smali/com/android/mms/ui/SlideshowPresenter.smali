@@ -59,9 +59,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Lcom/android/mms/ui/ViewInterface;Lcom/android/mms/model/Model;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/mms/ui/ViewInterface;
-    .param p3    # Lcom/android/mms/model/Model;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/mms/ui/Presenter;-><init>(Landroid/content/Context;Lcom/android/mms/ui/ViewInterface;Lcom/android/mms/model/Model;)V
 
@@ -131,9 +128,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/ui/SlideshowPresenter;II)F
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SlideshowPresenter;
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/mms/ui/SlideshowPresenter;->getTransformRatio(II)F
 
@@ -144,7 +138,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/ui/SlideshowPresenter;)Lcom/android/mms/dom/smil/SmilPlayer;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SlideshowPresenter;
 
     iget-object v0, p0, Lcom/android/mms/ui/SlideshowPresenter;->player:Lcom/android/mms/dom/smil/SmilPlayer;
 
@@ -153,8 +146,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/ui/SlideshowPresenter;I)I
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SlideshowPresenter;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/SlideshowPresenter;->getCurrentSlideIndex(I)I
 
@@ -165,8 +156,6 @@
 
 .method private doAudioAction(Lcom/android/mms/ui/SlideViewInterface;Lcom/android/mms/model/AudioModel;)V
     .locals 2
-    .param p1    # Lcom/android/mms/ui/SlideViewInterface;
-    .param p2    # Lcom/android/mms/model/AudioModel;
 
     invoke-virtual {p2}, Lcom/android/mms/model/MediaModel;->getCurrentAction()Lcom/android/mms/model/MediaModel$MediaAction;
 
@@ -216,8 +205,6 @@
 
 .method private doImageAction(Lcom/android/mms/ui/SlideViewInterface;Lcom/android/mms/model/ImageModel;)V
     .locals 2
-    .param p1    # Lcom/android/mms/ui/SlideViewInterface;
-    .param p2    # Lcom/android/mms/model/ImageModel;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -263,8 +250,6 @@
 
 .method private doVideoAction(Lcom/android/mms/ui/SlideViewInterface;Lcom/android/mms/model/VideoModel;)V
     .locals 4
-    .param p1    # Lcom/android/mms/ui/SlideViewInterface;
-    .param p2    # Lcom/android/mms/model/VideoModel;
 
     invoke-virtual {p2}, Lcom/android/mms/model/MediaModel;->getCurrentAction()Lcom/android/mms/model/MediaModel$MediaAction;
 
@@ -339,7 +324,6 @@
 
 .method private getCurrentSlideIndex(I)I
     .locals 4
-    .param p1    # I
 
     const-string v1, "Mms/SlideshowPresenter"
 
@@ -436,7 +420,6 @@
 
 .method private getCurrentSlideIndexForVideo(I)I
     .locals 3
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -496,8 +479,6 @@
 
 .method private getHeightTransformRatio(II)F
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     if-lez p1, :cond_0
 
@@ -518,8 +499,6 @@
 
 .method private getTransformRatio(II)F
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     if-lez p1, :cond_0
 
@@ -585,8 +564,6 @@
 
 .method private getWidthTransformRatio(II)F
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     if-lez p1, :cond_0
 
@@ -637,8 +614,6 @@
 
 .method private loadAGIF(Lcom/android/mms/ui/SlideViewInterface;Lcom/android/mms/model/ImageModel;)V
     .locals 10
-    .param p1    # Lcom/android/mms/ui/SlideViewInterface;
-    .param p2    # Lcom/android/mms/model/ImageModel;
 
     const/4 v3, 0x0
 
@@ -936,8 +911,6 @@
 
 .method private presentModel(Lcom/android/mms/ui/SlideViewInterface;Lcom/android/mms/model/SlideModel;)V
     .locals 6
-    .param p1    # Lcom/android/mms/ui/SlideViewInterface;
-    .param p2    # Lcom/android/mms/model/SlideModel;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1033,7 +1006,6 @@
 
 .method private transformHeight(I)I
     .locals 2
-    .param p1    # I
 
     int-to-float v0, p1
 
@@ -1048,7 +1020,6 @@
 
 .method private transformMediaSize(I)I
     .locals 2
-    .param p1    # I
 
     int-to-float v0, p1
 
@@ -1063,7 +1034,6 @@
 
 .method private transformWidth(I)I
     .locals 2
-    .param p1    # I
 
     int-to-float v0, p1
 
@@ -1080,8 +1050,6 @@
 # virtual methods
 .method public findAttachmentList(JZ)Ljava/util/ArrayList;
     .locals 3
-    .param p1    # J
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(JZ)",
@@ -1180,7 +1148,6 @@
 
 .method public getCurrentSlideTime(I)I
     .locals 4
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -1363,8 +1330,6 @@
 
 .method public onModelChanged(Lcom/android/mms/model/Model;Z)V
     .locals 3
-    .param p1    # Lcom/android/mms/model/Model;
-    .param p2    # Z
 
     iget-object v0, p0, Lcom/android/mms/ui/Presenter;->mView:Lcom/android/mms/ui/ViewInterface;
 
@@ -1486,16 +1451,12 @@
 
 .method public present(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method protected presentAudio(Lcom/android/mms/ui/SlideViewInterface;Lcom/android/mms/model/AudioModel;Z)V
     .locals 3
-    .param p1    # Lcom/android/mms/ui/SlideViewInterface;
-    .param p2    # Lcom/android/mms/model/AudioModel;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1526,10 +1487,6 @@
 
 .method protected presentImage(Lcom/android/mms/ui/SlideViewInterface;Lcom/android/mms/model/ImageModel;Lcom/android/mms/model/RegionModel;Z)V
     .locals 6
-    .param p1    # Lcom/android/mms/ui/SlideViewInterface;
-    .param p2    # Lcom/android/mms/model/ImageModel;
-    .param p3    # Lcom/android/mms/model/RegionModel;
-    .param p4    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1704,9 +1661,6 @@
 
 .method protected presentRegionMedia(Lcom/android/mms/ui/SlideViewInterface;Lcom/android/mms/model/RegionMediaModel;Z)V
     .locals 2
-    .param p1    # Lcom/android/mms/ui/SlideViewInterface;
-    .param p2    # Lcom/android/mms/model/RegionMediaModel;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1760,8 +1714,6 @@
 
 .method protected presentSlide(Lcom/android/mms/ui/SlideViewInterface;Lcom/android/mms/model/SlideModel;)V
     .locals 7
-    .param p1    # Lcom/android/mms/ui/SlideViewInterface;
-    .param p2    # Lcom/android/mms/model/SlideModel;
 
     const/4 v6, 0x0
 
@@ -1869,10 +1821,6 @@
 
 .method protected presentText(Lcom/android/mms/ui/SlideViewInterface;Lcom/android/mms/model/TextModel;Lcom/android/mms/model/RegionModel;Z)V
     .locals 12
-    .param p1    # Lcom/android/mms/ui/SlideViewInterface;
-    .param p2    # Lcom/android/mms/model/TextModel;
-    .param p3    # Lcom/android/mms/model/RegionModel;
-    .param p4    # Z
 
     iget-boolean v0, p0, Lcom/android/mms/ui/SlideshowPresenter;->mFullScreenText:Z
 
@@ -2057,10 +2005,6 @@
 
 .method protected presentVideo(Lcom/android/mms/ui/SlideViewInterface;Lcom/android/mms/model/VideoModel;Lcom/android/mms/model/RegionModel;Z)V
     .locals 5
-    .param p1    # Lcom/android/mms/ui/SlideViewInterface;
-    .param p2    # Lcom/android/mms/model/VideoModel;
-    .param p3    # Lcom/android/mms/model/RegionModel;
-    .param p4    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -2149,7 +2093,6 @@
 
 .method public setLocation(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/mms/ui/SlideshowPresenter;->mLocation:I
 
@@ -2158,7 +2101,6 @@
 
 .method protected setPreviewState(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/SlideshowPresenter;->mIsPreview:Z
 
@@ -2167,7 +2109,6 @@
 
 .method public setSmilPlayer(Lcom/android/mms/dom/smil/SmilPlayer;)V
     .locals 2
-    .param p1    # Lcom/android/mms/dom/smil/SmilPlayer;
 
     iput-object p1, p0, Lcom/android/mms/ui/SlideshowPresenter;->player:Lcom/android/mms/dom/smil/SmilPlayer;
 
@@ -2252,8 +2193,6 @@
 
 .method public streamToBytes(Ljava/io/InputStream;I)[B
     .locals 3
-    .param p1    # Ljava/io/InputStream;
-    .param p2    # I
 
     new-array v0, p2, [B
 

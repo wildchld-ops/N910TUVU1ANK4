@@ -45,7 +45,6 @@
 
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -77,8 +76,6 @@
 
 .method private getFormattedNumber(CZ)Ljava/lang/String;
     .locals 1
-    .param p1    # C
-    .param p2    # Z
 
     if-eqz p2, :cond_0
 
@@ -103,9 +100,6 @@
 
 .method private hasSeparator(Ljava/lang/CharSequence;II)Z
     .locals 3
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
 
     move v1, p2
 
@@ -142,8 +136,6 @@
 
 .method private reformat(Ljava/lang/CharSequence;I)Ljava/lang/String;
     .locals 8
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
 
     add-int/lit8 v1, p2, -0x1
 
@@ -226,7 +218,6 @@
 # virtual methods
 .method public declared-synchronized afterTextChanged(Landroid/text/Editable;)V
     .locals 7
-    .param p1    # Landroid/text/Editable;
 
     const/4 v0, 0x1
 
@@ -334,10 +325,6 @@
 
 .method public beforeTextChanged(Ljava/lang/CharSequence;III)V
     .locals 2
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iget-boolean v0, p0, Landroid/telephony/PhoneNumberFormattingTextWatcher;->mSelfChange:Z
 
@@ -410,10 +397,6 @@
 
 .method public onTextChanged(Ljava/lang/CharSequence;III)V
     .locals 3
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/4 v2, 0x3
 

@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,9 +36,6 @@
 # virtual methods
 .method public addAppForPersona(Ljava/lang/String;Ljava/lang/String;I)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -95,7 +91,6 @@
 
 .method public addLockOnImage(Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
     .locals 6
-    .param p1    # Landroid/graphics/Bitmap;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -186,8 +181,6 @@
 
 .method public addPackageToInstallWhiteList(Ljava/lang/String;I)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -241,8 +234,6 @@
 
 .method public adminLockPersona(ILjava/lang/String;)Z
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -307,7 +298,6 @@
 
 .method public adminUnLockPersona(I)Z
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -378,8 +368,6 @@
 
 .method public canAccess(Ljava/lang/String;I)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -444,8 +432,6 @@
 
 .method public clearAppListForPersona(Ljava/lang/String;I)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -499,8 +485,6 @@
 
 .method public convertContainerType(II)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -554,14 +538,6 @@
 
 .method public createPersona(Ljava/lang/String;Ljava/lang/String;JLjava/lang/String;Ljava/lang/String;Landroid/net/Uri;Landroid/net/Uri;Ljava/lang/String;)I
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # J
-    .param p5    # Ljava/lang/String;
-    .param p6    # Ljava/lang/String;
-    .param p7    # Landroid/net/Uri;
-    .param p8    # Landroid/net/Uri;
-    .param p9    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -669,7 +645,6 @@
 
 .method public disablePersonaKeyGuard(I)Z
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -732,7 +707,6 @@
 
 .method public enablePersonaKeyGuard(I)Z
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -795,7 +769,6 @@
 
 .method public exists(I)Z
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -858,7 +831,6 @@
 
 .method public getAdminUidForPersona(I)I
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -914,8 +886,6 @@
 
 .method public getAppListForPersona(Ljava/lang/String;I)Ljava/util/List;
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -985,7 +955,6 @@
 
 .method public getCurrentPersonaForUser(I)I
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1041,8 +1010,6 @@
 
 .method public getDisabledHomeLaunchers(IZ)Ljava/util/List;
     .locals 6
-    .param p1    # I
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(IZ)",
@@ -1117,7 +1084,6 @@
 
 .method public getFingerCount(I)I
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1181,7 +1147,6 @@
 
 .method public getIsFingerAsSupplement(I)Z
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1244,7 +1209,6 @@
 
 .method public getIsFingerIdentifyFailed(I)Z
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1307,7 +1271,6 @@
 
 .method public getKeyguardShowState(I)Z
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1370,7 +1333,6 @@
 
 .method public getLastShortcutState(I)Z
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1493,7 +1455,6 @@
 
 .method public getNormalizedState(I)I
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1549,7 +1510,6 @@
 
 .method public getPackagesFromInstallWhiteList(I)Ljava/util/List;
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -1615,7 +1575,6 @@
 
 .method public getParentId(I)I
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1777,7 +1736,6 @@
 
 .method public getPersonaBackgroundTime(I)J
     .locals 7
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1833,7 +1791,6 @@
 
 .method public getPersonaIcon(I)Landroid/graphics/Bitmap;
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1905,7 +1862,6 @@
 
 .method public getPersonaIdentification(I)Ljava/lang/String;
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2014,7 +1970,6 @@
 
 .method public getPersonaInfo(I)Landroid/content/pm/PersonaInfo;
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2086,7 +2041,6 @@
 
 .method public getPersonaSamsungAccount(I)Ljava/lang/String;
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2142,7 +2096,6 @@
 
 .method public getPersonaState(I)I
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2198,7 +2151,6 @@
 
 .method public getPersonaType(I)Ljava/lang/String;
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2254,7 +2206,6 @@
 
 .method public getPersonas(Z)Ljava/util/List;
     .locals 6
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(Z)",
@@ -2329,8 +2280,6 @@
 
 .method public getPersonasForCreator(IZ)Ljava/util/List;
     .locals 6
-    .param p1    # I
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(IZ)",
@@ -2407,8 +2356,6 @@
 
 .method public getPersonasForUser(IZ)Ljava/util/List;
     .locals 6
-    .param p1    # I
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(IZ)",
@@ -2538,7 +2485,6 @@
 
 .method public getScreenOffTime(I)J
     .locals 7
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2594,7 +2540,6 @@
 
 .method public getShortcutMode(I)Z
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2657,7 +2602,6 @@
 
 .method public getUserManagedPersonas(Z)Ljava/util/List;
     .locals 6
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(Z)",
@@ -2792,7 +2736,6 @@
 
 .method public installApplications(ILjava/util/List;)Z
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -2867,7 +2810,6 @@
 
 .method public isFingerSupplementActivated(I)Z
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2990,7 +2932,6 @@
 
 .method public isKioskModeEnabled(I)Z
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3053,8 +2994,6 @@
 
 .method public isPackageInInstallWhiteList(Ljava/lang/String;I)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3119,7 +3058,6 @@
 
 .method public isResetPersonaOnRebootEnabled(I)Z
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3182,7 +3120,6 @@
 
 .method public isSessionExpired(I)Z
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3245,7 +3182,6 @@
 
 .method public lockPersona(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3297,8 +3233,6 @@
 
 .method public markForRemoval(ILandroid/content/ComponentName;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3371,8 +3305,6 @@
 
 .method public notifyKeyguardShow(IZ)V
     .locals 5
-    .param p1    # I
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3493,11 +3425,6 @@
 
 .method public onWakeLockChange(ZIIILjava/lang/String;)V
     .locals 5
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3564,7 +3491,6 @@
 
 .method public refreshTimer(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3616,9 +3542,6 @@
 
 .method public registerHandler(Ljava/lang/String;Landroid/os/IBinder;Landroid/content/pm/IPersonaObserver;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/IBinder;
-    .param p3    # Landroid/content/pm/IPersonaObserver;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3686,7 +3609,6 @@
 
 .method public registerObserver(Landroid/content/pm/IPersonaObserver;)V
     .locals 5
-    .param p1    # Landroid/content/pm/IPersonaObserver;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3750,8 +3672,6 @@
 
 .method public registerOutsideObserver(ILandroid/content/pm/IPersonaObserver;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/content/pm/IPersonaObserver;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3817,7 +3737,6 @@
 
 .method public registerSystemPersonaObserver(Landroid/content/pm/ISystemPersonaObserver;)Z
     .locals 6
-    .param p1    # Landroid/content/pm/ISystemPersonaObserver;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3892,7 +3811,6 @@
 
 .method public registerUser(Landroid/content/pm/IPersonaCallback;)Z
     .locals 7
-    .param p1    # Landroid/content/pm/IPersonaCallback;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3972,9 +3890,6 @@
 
 .method public removeAppForPersona(Ljava/lang/String;Ljava/lang/String;I)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4030,8 +3945,6 @@
 
 .method public removePackageFromInstallWhiteList(Ljava/lang/String;I)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4085,7 +3998,6 @@
 
 .method public removePersona(I)I
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4141,7 +4053,6 @@
 
 .method public resetPassword(Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4204,7 +4115,6 @@
 
 .method public resetPersona(I)I
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4260,8 +4170,6 @@
 
 .method public resetPersonaOnReboot(IZ)Z
     .locals 7
-    .param p1    # I
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4341,7 +4249,6 @@
 
 .method public rollBackToPersona(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4393,7 +4300,6 @@
 
 .method public rollUpToParent(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4445,8 +4351,6 @@
 
 .method public savePasswordInTima(ILjava/lang/String;)Z
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4511,9 +4415,6 @@
 
 .method public setAccessPermission(Ljava/lang/String;IZ)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4576,8 +4477,6 @@
 
 .method public setBackPressed(IZ)V
     .locals 5
-    .param p1    # I
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4638,8 +4537,6 @@
 
 .method public setCurrentPersonaForUser(II)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4693,8 +4590,6 @@
 
 .method public setFingerCount(II)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4748,8 +4643,6 @@
 
 .method public setFsMountState(IZ)V
     .locals 5
-    .param p1    # I
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4810,8 +4703,6 @@
 
 .method public setIsFingerAsSupplement(IZ)V
     .locals 5
-    .param p1    # I
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4872,8 +4763,6 @@
 
 .method public setIsFingerIdentifyFailed(IZ)V
     .locals 5
-    .param p1    # I
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4934,8 +4823,6 @@
 
 .method public setMaximumScreenOffTimeoutFromDeviceAdmin(JI)V
     .locals 5
-    .param p1    # J
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4989,7 +4876,6 @@
 
 .method public setMoveToKnoxStatus(Z)V
     .locals 5
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5048,8 +4934,6 @@
 
 .method public setPersonaIcon(ILandroid/graphics/Bitmap;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/graphics/Bitmap;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5122,8 +5006,6 @@
 
 .method public setPersonaName(ILjava/lang/String;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5177,8 +5059,6 @@
 
 .method public setPersonaSamsungAccount(ILjava/lang/String;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5232,8 +5112,6 @@
 
 .method public setPersonaState(II)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5287,8 +5165,6 @@
 
 .method public setPersonaType(ILjava/lang/String;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5342,7 +5218,6 @@
 
 .method public setPhoneCaller(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5394,8 +5269,6 @@
 
 .method public setShortcutGuideDisplay(IZ)V
     .locals 5
-    .param p1    # I
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5456,8 +5329,6 @@
 
 .method public setShortcutMode(IZ)V
     .locals 5
-    .param p1    # I
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5518,8 +5389,6 @@
 
 .method public setSuperLock(IZ)V
     .locals 5
-    .param p1    # I
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5580,7 +5449,6 @@
 
 .method public settingSyncAllowed(I)Z
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5643,7 +5511,6 @@
 
 .method public switchPersona(I)Z
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5706,8 +5573,6 @@
 
 .method public switchPersonaAndLaunch(ILandroid/content/Intent;)Z
     .locals 7
-    .param p1    # I
-    .param p2    # Landroid/content/Intent;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5796,7 +5661,6 @@
 
 .method public unInstallSystemApplications(ILjava/util/List;)I
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -5864,7 +5728,6 @@
 
 .method public unmarkForRemoval(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5916,7 +5779,6 @@
 
 .method public unregisterObserver(Landroid/content/pm/IPersonaObserver;)V
     .locals 5
-    .param p1    # Landroid/content/pm/IPersonaObserver;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5980,10 +5842,6 @@
 
 .method public updatePersonaInfo(ILjava/lang/String;II)Z
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -6052,7 +5910,6 @@
 
 .method public userActivity(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

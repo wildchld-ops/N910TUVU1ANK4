@@ -6,7 +6,6 @@
 # direct methods
 .method public constructor <init>(Landroid/graphics/ColorMatrix;)V
     .locals 2
-    .param p1    # Landroid/graphics/ColorMatrix;
 
     invoke-direct {p0}, Landroid/graphics/ColorFilter;-><init>()V
 
@@ -33,7 +32,6 @@
 
 .method public constructor <init>([F)V
     .locals 2
-    .param p1    # [F
 
     invoke-direct {p0}, Landroid/graphics/ColorFilter;-><init>()V
 

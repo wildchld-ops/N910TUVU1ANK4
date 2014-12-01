@@ -67,14 +67,6 @@
 # virtual methods
 .method draw(Landroid/graphics/Canvas;Lcom/android/launcher2/PagedView;IIIFF[Z)Z
     .locals 9
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # Lcom/android/launcher2/PagedView;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # F
-    .param p7    # F
-    .param p8    # [Z
 
     iget-object v4, p0, Lcom/android/launcher2/PageIndicator$Page;->this$0:Lcom/android/launcher2/PageIndicator;
 
@@ -698,7 +690,6 @@
 
 .method public getScale(J)F
     .locals 8
-    .param p1    # J
 
     const/4 v7, 0x3
 
@@ -805,8 +796,6 @@
 
 .method isFolderPage(Lcom/android/launcher2/PagedView;I)Z
     .locals 1
-    .param p1    # Lcom/android/launcher2/PagedView;
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -815,7 +804,6 @@
 
 .method public setDraggedOn(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/launcher2/PageIndicator$Page;->mIsDraggedOn:Z
 
@@ -824,7 +812,6 @@
 
 .method setDrawState(I)V
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -835,8 +822,6 @@
 
 .method setDrawState(IZ)V
     .locals 2
-    .param p1    # I
-    .param p2    # Z
 
     iget v0, p0, Lcom/android/launcher2/PageIndicator$Page;->mDrawState:I
 

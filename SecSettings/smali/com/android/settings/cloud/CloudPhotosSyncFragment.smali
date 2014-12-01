@@ -30,7 +30,6 @@
 # virtual methods
 .method protected broadcastStatus(I)V
     .locals 5
-    .param p1    # I
 
     if-nez p1, :cond_1
 
@@ -187,7 +186,6 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/settings/cloud/SyncFragment;->onActivityCreated(Landroid/os/Bundle;)V
 
@@ -228,7 +226,6 @@
 
 .method protected toggleCheckbox(Z)V
     .locals 2
-    .param p1    # Z
 
     invoke-static {}, Lcom/android/settings/cloud/CloudSettings;->getInstance()Lcom/android/settings/cloud/CloudSettings;
 
@@ -243,7 +240,6 @@
 
 .method protected togglePreferences(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-static {}, Lcom/android/settings/cloud/CloudSettings;->getInstance()Lcom/android/settings/cloud/CloudSettings;
 

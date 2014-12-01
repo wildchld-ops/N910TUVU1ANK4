@@ -28,7 +28,6 @@
 
 .method synthetic constructor <init>(Landroid/text/MultiSelection$1;)V
     .locals 0
-    .param p1    # Landroid/text/MultiSelection$1;
 
     invoke-direct {p0}, Landroid/text/MultiSelection$START;-><init>()V
 

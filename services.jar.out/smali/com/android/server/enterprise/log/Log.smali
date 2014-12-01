@@ -51,7 +51,6 @@
 
 .method public static declared-synchronized addLogger(Lcom/android/server/enterprise/log/Logger;)Z
     .locals 3
-    .param p0    # Lcom/android/server/enterprise/log/Logger;
 
     const/4 v0, 0x0
 
@@ -97,8 +96,6 @@
 
 .method public static d(Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     sget-object v2, Lcom/android/server/enterprise/log/Log;->mLoggerList:Ljava/util/ArrayList;
 
@@ -131,9 +128,6 @@
 
 .method public static d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
     .locals 5
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Throwable;
 
     sget-object v2, Lcom/android/server/enterprise/log/Log;->mLoggerList:Ljava/util/ArrayList;
 
@@ -192,8 +186,6 @@
 
 .method public static e(Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     sget-object v2, Lcom/android/server/enterprise/log/Log;->mLoggerList:Ljava/util/ArrayList;
 
@@ -226,9 +218,6 @@
 
 .method public static e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
     .locals 5
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Throwable;
 
     sget-object v2, Lcom/android/server/enterprise/log/Log;->mLoggerList:Ljava/util/ArrayList;
 
@@ -287,7 +276,6 @@
 
 .method public static declared-synchronized getLogger(Ljava/lang/String;)Lcom/android/server/enterprise/log/Logger;
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -352,7 +340,6 @@
 
 .method public static getStackTraceString(Ljava/lang/Throwable;)Ljava/lang/String;
     .locals 4
-    .param p0    # Ljava/lang/Throwable;
 
     if-nez p0, :cond_0
 
@@ -402,8 +389,6 @@
 
 .method public static i(Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     sget-object v2, Lcom/android/server/enterprise/log/Log;->mLoggerList:Ljava/util/ArrayList;
 
@@ -436,9 +421,6 @@
 
 .method public static i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
     .locals 5
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Throwable;
 
     sget-object v2, Lcom/android/server/enterprise/log/Log;->mLoggerList:Ljava/util/ArrayList;
 
@@ -497,7 +479,6 @@
 
 .method public static declared-synchronized removeLogger(Lcom/android/server/enterprise/log/Logger;)Z
     .locals 2
-    .param p0    # Lcom/android/server/enterprise/log/Logger;
 
     const-class v1, Lcom/android/server/enterprise/log/Log;
 
@@ -536,8 +517,6 @@
 
 .method public static s(Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     sget-object v2, Lcom/android/server/enterprise/log/Log;->mLoggerList:Ljava/util/ArrayList;
 
@@ -570,9 +549,6 @@
 
 .method public static s(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
     .locals 5
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Throwable;
 
     sget-object v2, Lcom/android/server/enterprise/log/Log;->mLoggerList:Ljava/util/ArrayList;
 
@@ -631,7 +607,6 @@
 
 .method public static stringValueOf(I)Ljava/lang/String;
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -683,8 +658,6 @@
 
 .method public static v(Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     sget-object v2, Lcom/android/server/enterprise/log/Log;->mLoggerList:Ljava/util/ArrayList;
 
@@ -717,9 +690,6 @@
 
 .method public static v(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
     .locals 5
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Throwable;
 
     sget-object v2, Lcom/android/server/enterprise/log/Log;->mLoggerList:Ljava/util/ArrayList;
 
@@ -778,8 +748,6 @@
 
 .method public static w(Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     sget-object v2, Lcom/android/server/enterprise/log/Log;->mLoggerList:Ljava/util/ArrayList;
 
@@ -812,9 +780,6 @@
 
 .method public static w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
     .locals 5
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Throwable;
 
     sget-object v2, Lcom/android/server/enterprise/log/Log;->mLoggerList:Ljava/util/ArrayList;
 

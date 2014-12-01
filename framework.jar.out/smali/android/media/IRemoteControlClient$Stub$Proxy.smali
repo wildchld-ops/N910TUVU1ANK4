@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -45,8 +44,6 @@
 
 .method public enableRemoteControlDisplay(Landroid/media/IRemoteControlDisplay;Z)V
     .locals 5
-    .param p1    # Landroid/media/IRemoteControlDisplay;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -119,9 +116,6 @@
 
 .method public informationRequestForDisplay(Landroid/media/IRemoteControlDisplay;II)V
     .locals 5
-    .param p1    # Landroid/media/IRemoteControlDisplay;
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -178,8 +172,6 @@
 
 .method public onInformationRequested(II)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -225,9 +217,6 @@
 
 .method public plugRemoteControlDisplay(Landroid/media/IRemoteControlDisplay;II)V
     .locals 5
-    .param p1    # Landroid/media/IRemoteControlDisplay;
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -284,8 +273,6 @@
 
 .method public seekTo(IJ)V
     .locals 5
-    .param p1    # I
-    .param p2    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -331,9 +318,6 @@
 
 .method public setBitmapSizeForDisplay(Landroid/media/IRemoteControlDisplay;II)V
     .locals 5
-    .param p1    # Landroid/media/IRemoteControlDisplay;
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -390,9 +374,6 @@
 
 .method public setCommand(III)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -440,7 +421,6 @@
 
 .method public setCurrentClientGenerationId(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -484,8 +464,6 @@
 
 .method public setWantsSyncForDisplay(Landroid/media/IRemoteControlDisplay;Z)V
     .locals 5
-    .param p1    # Landroid/media/IRemoteControlDisplay;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -550,7 +528,6 @@
 
 .method public unplugRemoteControlDisplay(Landroid/media/IRemoteControlDisplay;)V
     .locals 5
-    .param p1    # Landroid/media/IRemoteControlDisplay;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -603,9 +580,6 @@
 
 .method public updateMetadata(IILandroid/media/Rating;)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/media/Rating;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

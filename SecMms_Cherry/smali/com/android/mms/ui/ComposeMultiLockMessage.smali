@@ -24,7 +24,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/mms/ui/ComposeMessageFragment;)V
     .locals 2
-    .param p1    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     const/4 v1, 0x0
 
@@ -47,7 +46,6 @@
 # virtual methods
 .method public setActivity(Landroid/app/Activity;)V
     .locals 0
-    .param p1    # Landroid/app/Activity;
 
     iput-object p1, p0, Lcom/android/mms/ui/ComposeMultiLockMessage;->mActivity:Landroid/app/Activity;
 

@@ -57,7 +57,7 @@
 
     const/4 v0, 0x0
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/LGTRoamingDualClockSetting;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
@@ -87,11 +87,11 @@
 
     const v0, 0x7f06003e
 
-    invoke-virtual {p0, v0}, Landroid/preference/PreferenceActivity;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/LGTRoamingDualClockSetting;->addPreferencesFromResource(I)V
 
     const-string v0, "use_dualclock_key"
 
-    invoke-virtual {p0, v0}, Landroid/preference/PreferenceActivity;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/phone/LGTRoamingDualClockSetting;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -101,7 +101,7 @@
 
     const-string v0, "dualclock_manual_select_key"
 
-    invoke-virtual {p0, v0}, Landroid/preference/PreferenceActivity;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/phone/LGTRoamingDualClockSetting;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -115,7 +115,7 @@
 
     iget-object v0, p0, Lcom/android/phone/LGTRoamingDualClockSetting;->use_dualclock:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v0, v1}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+    invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     :goto_0
     return-void
@@ -123,7 +123,7 @@
     :pswitch_0
     iget-object v0, p0, Lcom/android/phone/LGTRoamingDualClockSetting;->use_dualclock:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v0, v1}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+    invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     goto :goto_0
 
@@ -151,7 +151,7 @@
     :pswitch_0
     new-instance v0, Landroid/app/ProgressDialog;
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/LGTRoamingDualClockSetting;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -163,7 +163,7 @@
 
     const v1, 0x7f090604
 
-    invoke-virtual {p0, v1}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v1}, Lcom/android/phone/LGTRoamingDualClockSetting;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v1
 
@@ -175,11 +175,11 @@
 
     iget-object v0, p0, Lcom/android/phone/LGTRoamingDualClockSetting;->mProgressDialog:Landroid/app/ProgressDialog;
 
-    invoke-virtual {v0, v2}, Landroid/app/Dialog;->setCancelable(Z)V
+    invoke-virtual {v0, v2}, Landroid/app/ProgressDialog;->setCancelable(Z)V
 
     iget-object v0, p0, Lcom/android/phone/LGTRoamingDualClockSetting;->mProgressDialog:Landroid/app/ProgressDialog;
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
+    invoke-virtual {v0}, Landroid/app/ProgressDialog;->getWindow()Landroid/view/Window;
 
     move-result-object v0
 
@@ -197,7 +197,7 @@
 
     iget-object v0, p0, Lcom/android/phone/LGTRoamingDualClockSetting;->progressThread:Lcom/android/phone/LGTRoamingDualClockSetting$ProgressThread;
 
-    invoke-virtual {v0}, Ljava/lang/Thread;->start()V
+    invoke-virtual {v0}, Lcom/android/phone/LGTRoamingDualClockSetting$ProgressThread;->start()V
 
     iget-object v0, p0, Lcom/android/phone/LGTRoamingDualClockSetting;->mProgressDialog:Landroid/app/ProgressDialog;
 
@@ -230,13 +230,13 @@
 
     sput v5, Lcom/android/phone/LGTRoamingDualClockSetting;->mSelect:I
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/LGTRoamingDualClockSetting;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
     iget-object v6, p0, Lcom/android/phone/LGTRoamingDualClockSetting;->use_dualclock:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v6}, Landroid/preference/TwoStatePreference;->isChecked()Z
+    invoke-virtual {v6}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
     move-result v6
 
@@ -244,9 +244,9 @@
 
     iget-object v6, p0, Lcom/android/phone/LGTRoamingDualClockSetting;->use_dualclock:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v6, v4}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+    invoke-virtual {v6, v4}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/LGTRoamingDualClockSetting;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v6
 
@@ -268,9 +268,9 @@
     :cond_0
     iget-object v6, p0, Lcom/android/phone/LGTRoamingDualClockSetting;->use_dualclock:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v6, v5}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+    invoke-virtual {v6, v5}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/LGTRoamingDualClockSetting;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v6
 
@@ -321,7 +321,7 @@
 
     invoke-virtual {v2, v5}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
 
-    invoke-virtual {p0, v2}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v2}, Lcom/android/phone/LGTRoamingDualClockSetting;->startActivity(Landroid/content/Intent;)V
 
     goto :goto_0
 
@@ -334,7 +334,7 @@
 .method public onResume()V
     .locals 2
 
-    invoke-super {p0}, Landroid/app/Activity;->onResume()V
+    invoke-super {p0}, Landroid/preference/PreferenceActivity;->onResume()V
 
     iget-object v0, p0, Lcom/android/phone/LGTRoamingDualClockSetting;->use_dualclock:Landroid/preference/CheckBoxPreference;
 
@@ -342,7 +342,7 @@
 
     move-result v1
 
-    invoke-virtual {v0, v1}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+    invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     return-void
 .end method

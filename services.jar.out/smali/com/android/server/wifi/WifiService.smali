@@ -344,7 +344,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 10
-    .param p1    # Landroid/content/Context;
 
     const/16 v9, 0xa
 
@@ -836,8 +835,6 @@
 
 .method static synthetic access$1100(Lcom/android/server/wifi/WifiService;Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/server/wifi/WifiService;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/wifi/WifiService;->removeDoubleQuotes(Ljava/lang/String;)Ljava/lang/String;
 
@@ -848,8 +845,6 @@
 
 .method static synthetic access$1200(Lcom/android/server/wifi/WifiService;Landroid/net/wifi/WifiConfiguration;)I
     .locals 1
-    .param p0    # Lcom/android/server/wifi/WifiService;
-    .param p1    # Landroid/net/wifi/WifiConfiguration;
 
     invoke-direct {p0, p1}, Lcom/android/server/wifi/WifiService;->getSecurity(Landroid/net/wifi/WifiConfiguration;)I
 
@@ -860,8 +855,6 @@
 
 .method static synthetic access$1300(Lcom/android/server/wifi/WifiService;Landroid/net/wifi/ScanResult;)I
     .locals 1
-    .param p0    # Lcom/android/server/wifi/WifiService;
-    .param p1    # Landroid/net/wifi/ScanResult;
 
     invoke-direct {p0, p1}, Lcom/android/server/wifi/WifiService;->getSecurity(Landroid/net/wifi/ScanResult;)I
 
@@ -872,8 +865,6 @@
 
 .method static synthetic access$1402(Lcom/android/server/wifi/WifiService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/wifi/WifiService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/wifi/WifiService;->isBootCompleted:Z
 
@@ -890,7 +881,6 @@
 
 .method static synthetic access$1502([Lcom/android/server/wifi/WifiService$ApInfo;)[Lcom/android/server/wifi/WifiService$ApInfo;
     .locals 0
-    .param p0    # [Lcom/android/server/wifi/WifiService$ApInfo;
 
     sput-object p0, Lcom/android/server/wifi/WifiService;->mApInfo:[Lcom/android/server/wifi/WifiService$ApInfo;
 
@@ -907,7 +897,6 @@
 
 .method static synthetic access$1602([Lcom/android/server/wifi/WifiService$ApInfo;)[Lcom/android/server/wifi/WifiService$ApInfo;
     .locals 0
-    .param p0    # [Lcom/android/server/wifi/WifiService$ApInfo;
 
     sput-object p0, Lcom/android/server/wifi/WifiService;->mGeneralNwInfo:[Lcom/android/server/wifi/WifiService$ApInfo;
 
@@ -924,7 +913,6 @@
 
 .method static synthetic access$1702([Lcom/android/server/wifi/WifiService$ApInfo;)[Lcom/android/server/wifi/WifiService$ApInfo;
     .locals 0
-    .param p0    # [Lcom/android/server/wifi/WifiService$ApInfo;
 
     sput-object p0, Lcom/android/server/wifi/WifiService;->mPrevNetworkName:[Lcom/android/server/wifi/WifiService$ApInfo;
 
@@ -941,7 +929,6 @@
 
 .method static synthetic access$1802(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/server/wifi/WifiService;->flagForDefaultAp:Z
 
@@ -958,7 +945,6 @@
 
 .method static synthetic access$200(Lcom/android/server/wifi/WifiService;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/server/wifi/WifiService;
 
     iget-object v0, p0, Lcom/android/server/wifi/WifiService;->mContext:Landroid/content/Context;
 
@@ -975,7 +961,6 @@
 
 .method static synthetic access$2002(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/server/wifi/WifiService;->flagForNWNameCreate:Z
 
@@ -992,7 +977,6 @@
 
 .method static synthetic access$2102(Ljava/io/File;)Ljava/io/File;
     .locals 0
-    .param p0    # Ljava/io/File;
 
     sput-object p0, Lcom/android/server/wifi/WifiService;->mFilePath:Ljava/io/File;
 
@@ -1001,7 +985,6 @@
 
 .method static synthetic access$2202(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/server/wifi/WifiService;->mFirstScanAddProfile:Z
 
@@ -1018,7 +1001,6 @@
 
 .method static synthetic access$2302(Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Ljava/lang/String;
 
     sput-object p0, Lcom/android/server/wifi/WifiService;->mMatchedNetworkName:Ljava/lang/String;
 
@@ -1035,7 +1017,6 @@
 
 .method static synthetic access$2402(Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Ljava/lang/String;
 
     sput-object p0, Lcom/android/server/wifi/WifiService;->mMatchedPrevNetworkName:Ljava/lang/String;
 
@@ -1044,7 +1025,6 @@
 
 .method static synthetic access$2502(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/server/wifi/WifiService;->mWifiProfileLoaded:Z
 
@@ -1053,7 +1033,6 @@
 
 .method static synthetic access$2602(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/server/wifi/WifiService;->mRemoveWifiProfile:Z
 
@@ -1062,10 +1041,6 @@
 
 .method static synthetic access$2700(Lcom/android/server/wifi/WifiService;Landroid/net/wifi/BatchedScanSettings;II)V
     .locals 0
-    .param p0    # Lcom/android/server/wifi/WifiService;
-    .param p1    # Landroid/net/wifi/BatchedScanSettings;
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/server/wifi/WifiService;->stopBatchedScan(Landroid/net/wifi/BatchedScanSettings;II)V
 
@@ -1074,8 +1049,6 @@
 
 .method static synthetic access$2900(Lcom/android/server/wifi/WifiService;Landroid/os/IBinder;)Z
     .locals 1
-    .param p0    # Lcom/android/server/wifi/WifiService;
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0, p1}, Lcom/android/server/wifi/WifiService;->releaseWifiLockLocked(Landroid/os/IBinder;)Z
 
@@ -1086,7 +1059,6 @@
 
 .method static synthetic access$300(Lcom/android/server/wifi/WifiService;)Landroid/net/wifi/PppoeStateMachine;
     .locals 1
-    .param p0    # Lcom/android/server/wifi/WifiService;
 
     iget-object v0, p0, Lcom/android/server/wifi/WifiService;->mPppoeStateMachine:Landroid/net/wifi/PppoeStateMachine;
 
@@ -1095,7 +1067,6 @@
 
 .method static synthetic access$3000(Lcom/android/server/wifi/WifiService;)I
     .locals 1
-    .param p0    # Lcom/android/server/wifi/WifiService;
 
     iget v0, p0, Lcom/android/server/wifi/WifiService;->mFullHighPerfLocksAcquired:I
 
@@ -1104,7 +1075,6 @@
 
 .method static synthetic access$3100(Lcom/android/server/wifi/WifiService;)I
     .locals 1
-    .param p0    # Lcom/android/server/wifi/WifiService;
 
     iget v0, p0, Lcom/android/server/wifi/WifiService;->mFullHighPerfLocksReleased:I
 
@@ -1113,7 +1083,6 @@
 
 .method static synthetic access$3200(Lcom/android/server/wifi/WifiService;)I
     .locals 1
-    .param p0    # Lcom/android/server/wifi/WifiService;
 
     iget v0, p0, Lcom/android/server/wifi/WifiService;->mFullLocksAcquired:I
 
@@ -1122,7 +1091,6 @@
 
 .method static synthetic access$3300(Lcom/android/server/wifi/WifiService;)I
     .locals 1
-    .param p0    # Lcom/android/server/wifi/WifiService;
 
     iget v0, p0, Lcom/android/server/wifi/WifiService;->mFullLocksReleased:I
 
@@ -1131,7 +1099,6 @@
 
 .method static synthetic access$3800(Lcom/android/server/wifi/WifiService;)Ljava/util/List;
     .locals 1
-    .param p0    # Lcom/android/server/wifi/WifiService;
 
     iget-object v0, p0, Lcom/android/server/wifi/WifiService;->mMulticasters:Ljava/util/List;
 
@@ -1140,9 +1107,6 @@
 
 .method static synthetic access$3900(Lcom/android/server/wifi/WifiService;II)V
     .locals 0
-    .param p0    # Lcom/android/server/wifi/WifiService;
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/wifi/WifiService;->removeMulticasterLocked(II)V
 
@@ -1151,8 +1115,6 @@
 
 .method static synthetic access$402(Lcom/android/server/wifi/WifiService;Lcom/android/internal/util/AsyncChannel;)Lcom/android/internal/util/AsyncChannel;
     .locals 0
-    .param p0    # Lcom/android/server/wifi/WifiService;
-    .param p1    # Lcom/android/internal/util/AsyncChannel;
 
     iput-object p1, p0, Lcom/android/server/wifi/WifiService;->mWifiStateMachineChannel:Lcom/android/internal/util/AsyncChannel;
 
@@ -1161,7 +1123,6 @@
 
 .method static synthetic access$500(Lcom/android/server/wifi/WifiService;)Lcom/android/server/wifi/WifiController;
     .locals 1
-    .param p0    # Lcom/android/server/wifi/WifiService;
 
     iget-object v0, p0, Lcom/android/server/wifi/WifiService;->mWifiController:Lcom/android/server/wifi/WifiController;
 
@@ -1170,8 +1131,6 @@
 
 .method static synthetic access$602(Lcom/android/server/wifi/WifiService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/wifi/WifiService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/wifi/WifiService;->mWifiEnabled:Z
 
@@ -1180,7 +1139,6 @@
 
 .method static synthetic access$700(Lcom/android/server/wifi/WifiService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/wifi/WifiService;
 
     iget-boolean v0, p0, Lcom/android/server/wifi/WifiService;->mNotificationHS20Enabled:Z
 
@@ -1189,7 +1147,6 @@
 
 .method static synthetic access$800(Lcom/android/server/wifi/WifiService;)V
     .locals 0
-    .param p0    # Lcom/android/server/wifi/WifiService;
 
     invoke-direct {p0}, Lcom/android/server/wifi/WifiService;->handleSecurityPolicy()V
 
@@ -1198,7 +1155,6 @@
 
 .method static synthetic access$900(Lcom/android/server/wifi/WifiService;)Lcom/android/server/wifi/WifiService$WifiProfile;
     .locals 1
-    .param p0    # Lcom/android/server/wifi/WifiService;
 
     iget-object v0, p0, Lcom/android/server/wifi/WifiService;->mWifiProfile:Lcom/android/server/wifi/WifiService$WifiProfile;
 
@@ -1207,7 +1163,6 @@
 
 .method private acquireWifiLockLocked(Lcom/android/server/wifi/WifiService$WifiLock;)Z
     .locals 6
-    .param p1    # Lcom/android/server/wifi/WifiService$WifiLock;
 
     sget-boolean v3, Lcom/android/server/wifi/WifiService;->DBG:Z
 
@@ -1330,8 +1285,6 @@
 
 .method private checkSensorStatus(Landroid/content/Context;Z)Z
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p2    # Z
 
     const/4 v2, 0x0
 
@@ -1553,7 +1506,6 @@
 
 .method private getSecurity(Landroid/net/wifi/ScanResult;)I
     .locals 2
-    .param p1    # Landroid/net/wifi/ScanResult;
 
     iget-object v0, p1, Landroid/net/wifi/ScanResult;->capabilities:Ljava/lang/String;
 
@@ -1608,7 +1560,6 @@
 
 .method private getSecurity(Landroid/net/wifi/WifiConfiguration;)I
     .locals 5
-    .param p1    # Landroid/net/wifi/WifiConfiguration;
 
     const/4 v3, 0x3
 
@@ -1854,7 +1805,6 @@
 
 .method private static hexStringToByteArray(Ljava/lang/String;)[B
     .locals 7
-    .param p0    # Ljava/lang/String;
 
     const/16 v6, 0x10
 
@@ -2122,7 +2072,6 @@
 
 .method private isSecuredAp(I)Z
     .locals 7
-    .param p1    # I
 
     const/4 v4, 0x0
 
@@ -2206,7 +2155,6 @@
 
 .method private noteAcquireWifiLock(Lcom/android/server/wifi/WifiService$WifiLock;)V
     .locals 2
-    .param p1    # Lcom/android/server/wifi/WifiService$WifiLock;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2239,7 +2187,6 @@
 
 .method private noteReleaseWifiLock(Lcom/android/server/wifi/WifiService$WifiLock;)V
     .locals 2
-    .param p1    # Lcom/android/server/wifi/WifiService$WifiLock;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2272,7 +2219,6 @@
 
 .method private readWifiVersion(Ljava/lang/String;)Ljava/lang/String;
     .locals 10
-    .param p1    # Ljava/lang/String;
 
     new-instance v6, Ljava/lang/StringBuffer;
 
@@ -2630,7 +2576,6 @@
 
 .method private releaseWifiLockLocked(Landroid/os/IBinder;)Z
     .locals 7
-    .param p1    # Landroid/os/IBinder;
 
     iget-object v4, p0, Lcom/android/server/wifi/WifiService;->mLocks:Lcom/android/server/wifi/WifiService$LockList;
 
@@ -2762,7 +2707,6 @@
 
 .method private removeDoubleQuotes(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/16 v3, 0x22
 
@@ -2802,8 +2746,6 @@
 
 .method private removeMulticasterLocked(II)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     iget-object v3, p0, Lcom/android/server/wifi/WifiService;->mMulticasters:Ljava/util/List;
 
@@ -3232,8 +3174,6 @@
 
 .method private declared-synchronized setWifiEnabled(ZI)Z
     .locals 13
-    .param p1    # Z
-    .param p2    # I
 
     const/4 v9, 0x3
 
@@ -3570,9 +3510,6 @@
 
 .method private stopBatchedScan(Landroid/net/wifi/BatchedScanSettings;II)V
     .locals 5
-    .param p1    # Landroid/net/wifi/BatchedScanSettings;
-    .param p2    # I
-    .param p3    # I
 
     new-instance v0, Ljava/util/ArrayList;
 
@@ -3676,7 +3613,6 @@
 
 .method private writeCredInfo(Ljava/lang/String;)V
     .locals 12
-    .param p1    # Ljava/lang/String;
 
     const-string v4, "/data/misc/wifi/"
 
@@ -4033,8 +3969,6 @@
 # virtual methods
 .method public acquireMulticastLock(Landroid/os/IBinder;Ljava/lang/String;)V
     .locals 6
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/server/wifi/WifiService;->enforceMulticastChangePermission()V
 
@@ -4111,10 +4045,6 @@
 
 .method public acquireWifiLock(Landroid/os/IBinder;ILjava/lang/String;Landroid/os/WorkSource;)Z
     .locals 6
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Landroid/os/WorkSource;
 
     iget-object v1, p0, Lcom/android/server/wifi/WifiService;->mContext:Landroid/content/Context;
 
@@ -4267,7 +4197,6 @@
 
 .method public addOrUpdateNetwork(Landroid/net/wifi/WifiConfiguration;)I
     .locals 3
-    .param p1    # Landroid/net/wifi/WifiConfiguration;
 
     const/4 v0, -0x1
 
@@ -4324,7 +4253,6 @@
 
 .method public addToBlacklist(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/server/wifi/WifiService;->enforceChangePermission()V
 
@@ -4337,7 +4265,6 @@
 
 .method public callSECApi(Landroid/os/Message;)I
     .locals 14
-    .param p1    # Landroid/os/Message;
 
     const/4 v9, 0x1
 
@@ -5796,7 +5723,6 @@
 
 .method public callSECStringApi(Landroid/os/Message;)Ljava/lang/String;
     .locals 7
-    .param p1    # Landroid/os/Message;
 
     const/4 v1, 0x0
 
@@ -6178,7 +6104,6 @@
 
 .method public checkAndStartWifiAp(I)V
     .locals 8
-    .param p1    # I
 
     const/4 v7, 0x1
 
@@ -6359,7 +6284,6 @@
 
 .method public disableNetwork(I)Z
     .locals 4
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -6506,9 +6430,6 @@
 
 .method protected dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 11
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     const/4 v10, 0x0
 
@@ -7058,8 +6979,6 @@
 
 .method public enableNetwork(IZ)Z
     .locals 2
-    .param p1    # I
-    .param p2    # Z
 
     invoke-direct {p0}, Lcom/android/server/wifi/WifiService;->enforceChangePermission()V
 
@@ -7092,8 +7011,6 @@
 
 .method public enableTdls(Ljava/lang/String;Z)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     new-instance v0, Lcom/android/server/wifi/WifiService$TdlsTaskParams;
 
@@ -7122,8 +7039,6 @@
 
 .method public enableTdlsWithMacAddress(Ljava/lang/String;Z)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     iget-object v0, p0, Lcom/android/server/wifi/WifiService;->mWifiStateMachine:Landroid/net/wifi/WifiStateMachine;
 
@@ -7134,8 +7049,6 @@
 
 .method enforceWakeSourcePermission(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     invoke-static {}, Landroid/os/Process;->myUid()I
 
@@ -7160,7 +7073,6 @@
 
 .method public getBatchedScanResults(Ljava/lang/String;)Ljava/util/List;
     .locals 7
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -7677,7 +7589,6 @@
 
 .method public getPartialScanResults([I)Ljava/util/List;
     .locals 1
-    .param p1    # [I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([I)",
@@ -7757,7 +7668,6 @@
 
 .method public getS69BssInfo(Ljava/lang/String;)Landroid/net/wifi/S69BssInfo;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/server/wifi/WifiService;->enforceAccessPermission()V
 
@@ -7780,8 +7690,6 @@
 
 .method public getS69PartMsg(II)Ljava/lang/String;
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0}, Lcom/android/server/wifi/WifiService;->enforceAccessPermission()V
 
@@ -7803,7 +7711,6 @@
 
 .method public getScanResults(Ljava/lang/String;)Ljava/util/List;
     .locals 7
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -7890,7 +7797,6 @@
 
 .method public getSpecificNetwork(I)Landroid/net/wifi/WifiConfiguration;
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0}, Lcom/android/server/wifi/WifiService;->enforceAccessPermission()V
 
@@ -8274,7 +8180,6 @@
 
 .method public modifyPasspointCred(Ljava/lang/String;)I
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/server/wifi/WifiService;->enforceAccessSecuredPermission()V
 
@@ -8454,7 +8359,6 @@
 
 .method public releaseWifiLock(Landroid/os/IBinder;)Z
     .locals 3
-    .param p1    # Landroid/os/IBinder;
 
     iget-object v0, p0, Lcom/android/server/wifi/WifiService;->mContext:Landroid/content/Context;
 
@@ -8489,7 +8393,6 @@
 
 .method public removeNetwork(I)Z
     .locals 2
-    .param p1    # I
 
     invoke-direct {p0}, Lcom/android/server/wifi/WifiService;->enforceChangePermission()V
 
@@ -8522,7 +8425,6 @@
 
 .method public removeNetworkByMDM(I)Z
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/wifi/WifiService;->mWifiStateMachineChannel:Lcom/android/internal/util/AsyncChannel;
 
@@ -8553,9 +8455,6 @@
 
 .method public requestBatchedScan(Landroid/net/wifi/BatchedScanSettings;Landroid/os/IBinder;Landroid/os/WorkSource;)Z
     .locals 4
-    .param p1    # Landroid/net/wifi/BatchedScanSettings;
-    .param p2    # Landroid/os/IBinder;
-    .param p3    # Landroid/os/WorkSource;
 
     const/4 v2, 0x0
 
@@ -8660,7 +8559,6 @@
 
 .method public saveNetworkByMDM(Landroid/net/wifi/WifiConfiguration;)Z
     .locals 2
-    .param p1    # Landroid/net/wifi/WifiConfiguration;
 
     iget-object v0, p0, Lcom/android/server/wifi/WifiService;->mWifiStateMachineChannel:Lcom/android/internal/util/AsyncChannel;
 
@@ -8691,7 +8589,6 @@
 
 .method public sendS69LocationServiceRequest(Ljava/lang/String;)I
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/server/wifi/WifiService;->enforceAccessPermission()V
 
@@ -8713,8 +8610,6 @@
 
 .method public setCountryCode(Ljava/lang/String;Z)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const-string v2, "WifiService"
 
@@ -8775,7 +8670,6 @@
 
 .method public setCountryRev(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/server/wifi/WifiService;->enforceChangePermission()V
 
@@ -8790,8 +8684,6 @@
 
 .method public setFrequencyBand(IZ)V
     .locals 5
-    .param p1    # I
-    .param p2    # Z
 
     invoke-direct {p0}, Lcom/android/server/wifi/WifiService;->enforceChangePermission()V
 
@@ -8862,7 +8754,6 @@
 
 .method public setFullRoamScanPeriod(I)Z
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0}, Lcom/android/server/wifi/WifiService;->enforceChangePermission()V
 
@@ -8877,7 +8768,6 @@
 
 .method public setIsFmcNetwork(Z)Z
     .locals 2
-    .param p1    # Z
 
     const/4 v0, 0x0
 
@@ -8915,7 +8805,6 @@
 
 .method public setRoamBand(I)Z
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0}, Lcom/android/server/wifi/WifiService;->enforceChangePermission()V
 
@@ -8930,7 +8819,6 @@
 
 .method public setRoamDelta(I)Z
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0}, Lcom/android/server/wifi/WifiService;->enforceChangePermission()V
 
@@ -8945,7 +8833,6 @@
 
 .method public setRoamScanPeriod(I)Z
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0}, Lcom/android/server/wifi/WifiService;->enforceChangePermission()V
 
@@ -8960,7 +8847,6 @@
 
 .method public setRoamTrigger(I)Z
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0}, Lcom/android/server/wifi/WifiService;->enforceChangePermission()V
 
@@ -9017,7 +8903,6 @@
 
 .method public setWifiApConfigTxPower(I)V
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0}, Lcom/android/server/wifi/WifiService;->enforceAccessSecuredPermission()V
 
@@ -9030,7 +8915,6 @@
 
 .method public setWifiApConfiguration(Landroid/net/wifi/WifiConfiguration;)V
     .locals 3
-    .param p1    # Landroid/net/wifi/WifiConfiguration;
 
     invoke-direct {p0}, Lcom/android/server/wifi/WifiService;->enforceChangePermission()V
 
@@ -9109,8 +8993,6 @@
 
 .method public setWifiApEnabled(Landroid/net/wifi/WifiConfiguration;Z)V
     .locals 9
-    .param p1    # Landroid/net/wifi/WifiConfiguration;
-    .param p2    # Z
 
     const/4 v6, 0x0
 
@@ -9348,7 +9230,6 @@
 
 .method public setWifiApTimeOut(I)V
     .locals 4
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/server/wifi/WifiService;->mContext:Landroid/content/Context;
 
@@ -9403,7 +9284,6 @@
 
 .method public declared-synchronized setWifiEnabled(Z)Z
     .locals 5
-    .param p1    # Z
 
     const/4 v4, 0x1
 
@@ -9553,7 +9433,6 @@
 
 .method public declared-synchronized setWifiIBSSEnabled(Z)Z
     .locals 5
-    .param p1    # Z
 
     monitor-enter p0
 
@@ -9684,8 +9563,6 @@
 
 .method public setWifiScanWithSensor(II)I
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     const-string v0, "WifiService"
 
@@ -9816,8 +9693,6 @@
 
 .method public showHS20WifiNotification(Lcom/android/server/wifi/WifiService$HS20_ConType;Landroid/net/wifi/WifiConfiguration;)V
     .locals 10
-    .param p1    # Lcom/android/server/wifi/WifiService$HS20_ConType;
-    .param p2    # Landroid/net/wifi/WifiConfiguration;
 
     const-string v5, "WifiService"
 
@@ -10123,7 +9998,6 @@
 
 .method public startPPPOE(Landroid/net/wifi/PPPOEConfig;)V
     .locals 3
-    .param p1    # Landroid/net/wifi/PPPOEConfig;
 
     iget-object v0, p0, Lcom/android/server/wifi/WifiService;->mClientHandler:Lcom/android/server/wifi/WifiService$ClientHandler;
 
@@ -10142,7 +10016,6 @@
 
 .method public startScan(Landroid/os/WorkSource;)V
     .locals 3
-    .param p1    # Landroid/os/WorkSource;
 
     invoke-direct {p0}, Lcom/android/server/wifi/WifiService;->enforceChangePermission()V
 
@@ -10247,7 +10120,6 @@
 
 .method public stopBatchedScan(Landroid/net/wifi/BatchedScanSettings;)V
     .locals 2
-    .param p1    # Landroid/net/wifi/BatchedScanSettings;
 
     invoke-direct {p0}, Lcom/android/server/wifi/WifiService;->enforceChangePermission()V
 
@@ -10306,8 +10178,6 @@
 
 .method public updateWifiLockWorkSource(Landroid/os/IBinder;Landroid/os/WorkSource;)V
     .locals 9
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Landroid/os/WorkSource;
 
     invoke-static {}, Landroid/os/Binder;->getCallingUid()I
 

@@ -75,7 +75,6 @@
 
 .method public constructor <init>(Landroid/os/Parcel;)V
     .locals 3
-    .param p1    # Landroid/os/Parcel;
 
     const/4 v2, 0x0
 
@@ -196,7 +195,6 @@
 
 .method public setContainerAdmin(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/enterprise/knox/EnterpriseContainerObject;->admin:I
 
@@ -205,7 +203,6 @@
 
 .method public setContainerEmail(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/sec/enterprise/knox/EnterpriseContainerObject;->email:Ljava/lang/String;
 
@@ -214,7 +211,6 @@
 
 .method public setContainerId(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/enterprise/knox/EnterpriseContainerObject;->id:I
 
@@ -223,7 +219,6 @@
 
 .method public setContainerLockType(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/enterprise/knox/EnterpriseContainerObject;->lockType:I
 
@@ -232,7 +227,6 @@
 
 .method public setContainerName(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/sec/enterprise/knox/EnterpriseContainerObject;->name:Ljava/lang/String;
 
@@ -241,7 +235,6 @@
 
 .method public setContainerType(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/enterprise/knox/EnterpriseContainerObject;->containerType:I
 
@@ -250,8 +243,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget v0, p0, Lcom/sec/enterprise/knox/EnterpriseContainerObject;->id:I
 

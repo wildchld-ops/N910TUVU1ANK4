@@ -21,8 +21,6 @@
 # direct methods
 .method public constructor <init>(Landroid/view/ViewRootImpl;Landroid/view/InputChannel;Landroid/os/Looper;)V
     .locals 0
-    .param p2    # Landroid/view/InputChannel;
-    .param p3    # Landroid/os/Looper;
 
     iput-object p1, p0, Landroid/view/ViewRootImpl$WindowInputEventReceiver;->this$0:Landroid/view/ViewRootImpl;
 
@@ -57,7 +55,6 @@
 
 .method public onInputEvent(Landroid/view/InputEvent;)V
     .locals 3
-    .param p1    # Landroid/view/InputEvent;
 
     iget-object v0, p0, Landroid/view/ViewRootImpl$WindowInputEventReceiver;->this$0:Landroid/view/ViewRootImpl;
 

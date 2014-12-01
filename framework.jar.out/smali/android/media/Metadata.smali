@@ -176,7 +176,6 @@
 
 .method private checkMetadataId(I)Z
     .locals 3
-    .param p1    # I
 
     if-lez p1, :cond_0
 
@@ -224,8 +223,6 @@
 
 .method private checkType(II)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
 
     iget-object v2, p0, Landroid/media/Metadata;->mKeyToPosMap:Ljava/util/HashMap;
 
@@ -319,8 +316,6 @@
 
 .method private scanAllRecords(Landroid/os/Parcel;I)Z
     .locals 10
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     const/16 v9, 0xc
 
@@ -504,7 +499,6 @@
 # virtual methods
 .method public getBoolean(I)Z
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -531,7 +525,6 @@
 
 .method public getByteArray(I)[B
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x7
 
@@ -548,7 +541,6 @@
 
 .method public getDate(I)Ljava/util/Date;
     .locals 6
-    .param p1    # I
 
     const/4 v5, 0x6
 
@@ -599,7 +591,6 @@
 
 .method public getDouble(I)D
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x5
 
@@ -616,7 +607,6 @@
 
 .method public getInt(I)I
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x2
 
@@ -633,7 +623,6 @@
 
 .method public getLong(I)J
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x4
 
@@ -650,7 +639,6 @@
 
 .method public getString(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -667,7 +655,6 @@
 
 .method public has(I)Z
     .locals 3
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/media/Metadata;->checkMetadataId(I)Z
 
@@ -736,7 +723,6 @@
 
 .method public parse(Landroid/os/Parcel;)Z
     .locals 7
-    .param p1    # Landroid/os/Parcel;
 
     const/16 v5, 0x8
 

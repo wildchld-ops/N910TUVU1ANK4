@@ -17,8 +17,6 @@
 
 .method protected static ok([CC)Z
     .locals 2
-    .param p0    # [C
-    .param p1    # C
 
     array-length v1, p0
 
@@ -51,12 +49,6 @@
 # virtual methods
 .method public filter(Ljava/lang/CharSequence;IILandroid/text/Spanned;II)Ljava/lang/CharSequence;
     .locals 8
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/text/Spanned;
-    .param p5    # I
-    .param p6    # I
 
     invoke-virtual {p0}, Landroid/text/method/NumberKeyListener;->getAcceptedChars()[C
 
@@ -145,8 +137,6 @@
 
 .method protected lookup(Landroid/view/KeyEvent;Landroid/text/Spannable;)I
     .locals 2
-    .param p1    # Landroid/view/KeyEvent;
-    .param p2    # Landroid/text/Spannable;
 
     invoke-virtual {p0}, Landroid/text/method/NumberKeyListener;->getAcceptedChars()[C
 
@@ -165,10 +155,6 @@
 
 .method public onKeyDown(Landroid/view/View;Landroid/text/Editable;ILandroid/view/KeyEvent;)Z
     .locals 9
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/text/Editable;
-    .param p3    # I
-    .param p4    # Landroid/view/KeyEvent;
 
     const/16 v8, 0x30
 

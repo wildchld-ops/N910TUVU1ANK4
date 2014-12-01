@@ -52,8 +52,6 @@
 # direct methods
 .method public constructor <init>(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -284,7 +282,6 @@
 
 .method private getStatement(Z)Landroid/database/sqlite/SQLiteStatement;
     .locals 4
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/database/SQLException;
@@ -374,8 +371,6 @@
 
 .method private insertInternal(Landroid/content/ContentValues;Z)J
     .locals 11
-    .param p1    # Landroid/content/ContentValues;
-    .param p2    # Z
 
     iget-object v8, p0, Landroid/database/DatabaseUtils$InsertHelper;->mDb:Landroid/database/sqlite/SQLiteDatabase;
 
@@ -512,8 +507,6 @@
 # virtual methods
 .method public bind(ID)V
     .locals 1
-    .param p1    # I
-    .param p2    # D
 
     iget-object v0, p0, Landroid/database/DatabaseUtils$InsertHelper;->mPreparedStatement:Landroid/database/sqlite/SQLiteStatement;
 
@@ -524,8 +517,6 @@
 
 .method public bind(IF)V
     .locals 3
-    .param p1    # I
-    .param p2    # F
 
     iget-object v0, p0, Landroid/database/DatabaseUtils$InsertHelper;->mPreparedStatement:Landroid/database/sqlite/SQLiteStatement;
 
@@ -538,8 +529,6 @@
 
 .method public bind(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Landroid/database/DatabaseUtils$InsertHelper;->mPreparedStatement:Landroid/database/sqlite/SQLiteStatement;
 
@@ -552,8 +541,6 @@
 
 .method public bind(IJ)V
     .locals 1
-    .param p1    # I
-    .param p2    # J
 
     iget-object v0, p0, Landroid/database/DatabaseUtils$InsertHelper;->mPreparedStatement:Landroid/database/sqlite/SQLiteStatement;
 
@@ -564,8 +551,6 @@
 
 .method public bind(ILjava/lang/String;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     if-nez p2, :cond_0
 
@@ -586,8 +571,6 @@
 
 .method public bind(IZ)V
     .locals 3
-    .param p1    # I
-    .param p2    # Z
 
     iget-object v2, p0, Landroid/database/DatabaseUtils$InsertHelper;->mPreparedStatement:Landroid/database/sqlite/SQLiteStatement;
 
@@ -608,8 +591,6 @@
 
 .method public bind(I[B)V
     .locals 1
-    .param p1    # I
-    .param p2    # [B
 
     if-nez p2, :cond_0
 
@@ -630,7 +611,6 @@
 
 .method public bindNull(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/database/DatabaseUtils$InsertHelper;->mPreparedStatement:Landroid/database/sqlite/SQLiteStatement;
 
@@ -752,7 +732,6 @@
 
 .method public getColumnIndex(Ljava/lang/String;)I
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -808,7 +787,6 @@
 
 .method public insert(Landroid/content/ContentValues;)J
     .locals 2
-    .param p1    # Landroid/content/ContentValues;
 
     const/4 v0, 0x0
 
@@ -857,7 +835,6 @@
 
 .method public replace(Landroid/content/ContentValues;)J
     .locals 2
-    .param p1    # Landroid/content/ContentValues;
 
     const/4 v0, 0x1
 

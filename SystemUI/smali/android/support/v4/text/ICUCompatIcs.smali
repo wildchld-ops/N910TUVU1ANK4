@@ -86,7 +86,6 @@
 
 .method public static addLikelySubtags(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     :try_start_0
     sget-object v2, Landroid/support/v4/text/ICUCompatIcs;->sAddLikelySubtagsMethod:Ljava/lang/reflect/Method;
@@ -142,7 +141,6 @@
 
 .method public static getScript(Ljava/lang/String;)Ljava/lang/String;
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     const/4 v3, 0x0
 

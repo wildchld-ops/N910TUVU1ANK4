@@ -18,9 +18,6 @@
 # direct methods
 .method constructor <init>(Landroid/print/PrintJobId;Landroid/printservice/IPrintServiceClient;Landroid/print/PrintDocumentInfo;)V
     .locals 0
-    .param p1    # Landroid/print/PrintJobId;
-    .param p2    # Landroid/printservice/IPrintServiceClient;
-    .param p3    # Landroid/print/PrintDocumentInfo;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

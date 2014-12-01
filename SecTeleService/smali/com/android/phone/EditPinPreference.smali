@@ -96,13 +96,13 @@
 
     const v1, 0x7f040075
 
-    invoke-virtual {p0, v1}, Landroid/preference/DialogPreference;->setDialogLayoutResource(I)V
+    invoke-virtual {p0, v1}, Lcom/android/phone/EditPinPreference;->setDialogLayoutResource(I)V
 
-    invoke-super {p0}, Landroid/preference/DialogPreference;->onCreateDialogView()Landroid/view/View;
+    invoke-super {p0}, Landroid/preference/EditTextPreference;->onCreateDialogView()Landroid/view/View;
 
     move-result-object v0
 
-    invoke-virtual {p0}, Landroid/preference/EditTextPreference;->getEditText()Landroid/widget/EditText;
+    invoke-virtual {p0}, Lcom/android/phone/EditPinPreference;->getEditText()Landroid/widget/EditText;
 
     move-result-object v1
 
@@ -110,7 +110,7 @@
 
     iget-object v1, p0, Lcom/android/phone/EditPinPreference;->textfield:Landroid/widget/EditText;
 
-    invoke-virtual {v1, v3}, Landroid/widget/TextView;->setSingleLine(Z)V
+    invoke-virtual {v1, v3}, Landroid/widget/EditText;->setSingleLine(Z)V
 
     iget-object v1, p0, Lcom/android/phone/EditPinPreference;->textfield:Landroid/widget/EditText;
 
@@ -118,7 +118,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v1, v2}, Landroid/widget/TextView;->setTransformationMethod(Landroid/text/method/TransformationMethod;)V
+    invoke-virtual {v1, v2}, Landroid/widget/EditText;->setTransformationMethod(Landroid/text/method/TransformationMethod;)V
 
     iget-object v1, p0, Lcom/android/phone/EditPinPreference;->textfield:Landroid/widget/EditText;
 
@@ -126,7 +126,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v1, v2}, Landroid/widget/TextView;->setKeyListener(Landroid/text/method/KeyListener;)V
+    invoke-virtual {v1, v2}, Landroid/widget/EditText;->setKeyListener(Landroid/text/method/KeyListener;)V
 
     iget-object v1, p0, Lcom/android/phone/EditPinPreference;->textfield:Landroid/widget/EditText;
 
@@ -142,25 +142,25 @@
 
     aput-object v4, v2, v3
 
-    invoke-virtual {v1, v2}, Landroid/widget/TextView;->setFilters([Landroid/text/InputFilter;)V
+    invoke-virtual {v1, v2}, Landroid/widget/EditText;->setFilters([Landroid/text/InputFilter;)V
 
     iget-object v1, p0, Lcom/android/phone/EditPinPreference;->textfield:Landroid/widget/EditText;
 
     iget-object v2, p0, Lcom/android/phone/EditPinPreference;->textfield:Landroid/widget/EditText;
 
-    invoke-virtual {v2}, Landroid/widget/TextView;->getInputType()I
+    invoke-virtual {v2}, Landroid/widget/EditText;->getInputType()I
 
     move-result v2
 
     or-int/lit8 v2, v2, 0x10
 
-    invoke-virtual {v1, v2}, Landroid/widget/TextView;->setInputType(I)V
+    invoke-virtual {v1, v2}, Landroid/widget/EditText;->setInputType(I)V
 
     iget-object v1, p0, Lcom/android/phone/EditPinPreference;->textfield:Landroid/widget/EditText;
 
     const/high16 v2, 0x10000000
 
-    invoke-virtual {v1, v2}, Landroid/widget/TextView;->setImeOptions(I)V
+    invoke-virtual {v1, v2}, Landroid/widget/EditText;->setImeOptions(I)V
 
     return-object v0
 .end method
@@ -189,7 +189,7 @@
 
     const/4 v1, 0x0
 
-    invoke-super {p0, p1}, Landroid/preference/DialogPreference;->onPrepareDialogBuilder(Landroid/app/AlertDialog$Builder;)V
+    invoke-super {p0, p1}, Landroid/preference/EditTextPreference;->onPrepareDialogBuilder(Landroid/app/AlertDialog$Builder;)V
 
     iget-boolean v0, p0, Lcom/android/phone/EditPinPreference;->shouldHideButtons:Z
 
@@ -216,9 +216,9 @@
     .locals 3
     .param p1    # Landroid/os/Bundle;
 
-    invoke-super {p0, p1}, Landroid/preference/DialogPreference;->showDialog(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Landroid/preference/EditTextPreference;->showDialog(Landroid/os/Bundle;)V
 
-    invoke-virtual {p0}, Landroid/preference/DialogPreference;->getDialog()Landroid/app/Dialog;
+    invoke-virtual {p0}, Lcom/android/phone/EditPinPreference;->getDialog()Landroid/app/Dialog;
 
     move-result-object v1
 
@@ -230,7 +230,7 @@
 
     invoke-virtual {v0, v1}, Landroid/view/Window;->setSoftInputMode(I)V
 
-    invoke-virtual {p0}, Landroid/preference/DialogPreference;->getDialog()Landroid/app/Dialog;
+    invoke-virtual {p0}, Lcom/android/phone/EditPinPreference;->getDialog()Landroid/app/Dialog;
 
     move-result-object v1
 
@@ -252,7 +252,7 @@
 
     iget-object v1, p0, Lcom/android/phone/EditPinPreference;->textfield:Landroid/widget/EditText;
 
-    invoke-virtual {v1}, Landroid/widget/TextView;->length()I
+    invoke-virtual {v1}, Landroid/widget/EditText;->length()I
 
     move-result v1
 
@@ -261,7 +261,7 @@
     const/4 v1, 0x1
 
     :goto_0
-    invoke-virtual {v2, v1}, Landroid/widget/TextView;->setEnabled(Z)V
+    invoke-virtual {v2, v1}, Landroid/widget/Button;->setEnabled(Z)V
 
     iget-object v1, p0, Lcom/android/phone/EditPinPreference;->textfield:Landroid/widget/EditText;
 
@@ -269,7 +269,7 @@
 
     invoke-direct {v2, p0}, Lcom/android/phone/EditPinPreference$1;-><init>(Lcom/android/phone/EditPinPreference;)V
 
-    invoke-virtual {v1, v2}, Landroid/widget/TextView;->addTextChangedListener(Landroid/text/TextWatcher;)V
+    invoke-virtual {v1, v2}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
     :cond_0
     return-void

@@ -35,9 +35,6 @@
 # direct methods
 .method public constructor <init>(IIZ)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -72,8 +69,6 @@
 # virtual methods
 .method getMarked(II)I
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView$CroppingMatrix;->mMatrix:[I
 
@@ -90,9 +85,6 @@
 
 .method public mark(III)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView$CroppingMatrix;->mMatrix:[I
 
@@ -121,7 +113,6 @@
 
 .method public setPortrait(Z)V
     .locals 1
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 

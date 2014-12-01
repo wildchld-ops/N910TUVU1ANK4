@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Lcom/android/mms/spam/SetupSpamNumberList;Lcom/android/mms/spam/SetupSpamNumberList$1;)V
     .locals 0
-    .param p1    # Lcom/android/mms/spam/SetupSpamNumberList;
-    .param p2    # Lcom/android/mms/spam/SetupSpamNumberList$1;
 
     invoke-direct {p0, p1}, Lcom/android/mms/spam/SetupSpamNumberList$QueryThread;-><init>(Lcom/android/mms/spam/SetupSpamNumberList;)V
 

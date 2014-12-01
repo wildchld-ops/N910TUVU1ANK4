@@ -77,7 +77,6 @@
 
 .method constructor <init>(Lcom/android/server/pm/PackageSettingBase;)V
     .locals 5
-    .param p1    # Lcom/android/server/pm/PackageSettingBase;
 
     invoke-direct {p0, p1}, Lcom/android/server/pm/GrantedPermissions;-><init>(Lcom/android/server/pm/GrantedPermissions;)V
 
@@ -234,13 +233,6 @@
 
 .method constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/io/File;Ljava/io/File;Ljava/lang/String;II)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/io/File;
-    .param p4    # Ljava/io/File;
-    .param p5    # Ljava/lang/String;
-    .param p6    # I
-    .param p7    # I
 
     invoke-direct {p0, p7}, Lcom/android/server/pm/GrantedPermissions;-><init>(I)V
 
@@ -277,7 +269,6 @@
 
 .method private modifyUserState(I)Landroid/content/pm/PackageUserState;
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/server/pm/PackageSettingBase;->userState:Landroid/util/SparseArray;
 
@@ -305,8 +296,6 @@
 # virtual methods
 .method addDisabledComponent(Ljava/lang/String;I)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v0, 0x1
 
@@ -325,8 +314,6 @@
 
 .method addEnabledComponent(Ljava/lang/String;I)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -345,7 +332,6 @@
 
 .method public copyFrom(Lcom/android/server/pm/PackageSettingBase;)V
     .locals 4
-    .param p1    # Lcom/android/server/pm/PackageSettingBase;
 
     iget-object v1, p1, Lcom/android/server/pm/GrantedPermissions;->grantedPermissions:Ljava/util/HashSet;
 
@@ -432,8 +418,6 @@
 
 .method disableComponentLPw(Ljava/lang/String;I)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -467,8 +451,6 @@
 
 .method enableComponentLPw(Ljava/lang/String;I)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -502,7 +484,6 @@
 
 .method getBlocked(I)Z
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/server/pm/PackageSettingBase;->readUserState(I)Landroid/content/pm/PackageUserState;
 
@@ -515,8 +496,6 @@
 
 .method getCurrentEnabledStateLPr(Ljava/lang/String;I)I
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-virtual {p0, p2}, Lcom/android/server/pm/PackageSettingBase;->readUserState(I)Landroid/content/pm/PackageUserState;
 
@@ -564,7 +543,6 @@
 
 .method getDisabledComponents(I)Ljava/util/HashSet;
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -586,7 +564,6 @@
 
 .method getEnabled(I)I
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/server/pm/PackageSettingBase;->readUserState(I)Landroid/content/pm/PackageUserState;
 
@@ -599,7 +576,6 @@
 
 .method getEnabledComponents(I)Ljava/util/HashSet;
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -629,7 +605,6 @@
 
 .method getInstalled(I)Z
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/server/pm/PackageSettingBase;->readUserState(I)Landroid/content/pm/PackageUserState;
 
@@ -650,7 +625,6 @@
 
 .method getLastDisabledAppCaller(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/server/pm/PackageSettingBase;->readUserState(I)Landroid/content/pm/PackageUserState;
 
@@ -663,7 +637,6 @@
 
 .method getNotLaunched(I)Z
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/server/pm/PackageSettingBase;->readUserState(I)Landroid/content/pm/PackageUserState;
 
@@ -676,7 +649,6 @@
 
 .method getStopped(I)Z
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/server/pm/PackageSettingBase;->readUserState(I)Landroid/content/pm/PackageUserState;
 
@@ -689,10 +661,6 @@
 
 .method init(Ljava/io/File;Ljava/io/File;Ljava/lang/String;I)V
     .locals 1
-    .param p1    # Ljava/io/File;
-    .param p2    # Ljava/io/File;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
 
     iput-object p1, p0, Lcom/android/server/pm/PackageSettingBase;->codePath:Ljava/io/File;
 
@@ -719,7 +687,6 @@
 
 .method isAnyInstalled([I)Z
     .locals 5
-    .param p1    # [I
 
     move-object v0, p1
 
@@ -758,9 +725,6 @@
 
 .method modifyUserStateComponents(IZZ)Landroid/content/pm/PackageUserState;
     .locals 3
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # Z
 
     const/4 v2, 0x1
 
@@ -799,8 +763,6 @@
 
 .method queryInstalledUsers([IZ)[I
     .locals 7
-    .param p1    # [I
-    .param p2    # Z
 
     const/4 v3, 0x0
 
@@ -865,7 +827,6 @@
 
 .method public readUserState(I)Landroid/content/pm/PackageUserState;
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/server/pm/PackageSettingBase;->userState:Landroid/util/SparseArray;
 
@@ -888,7 +849,6 @@
 
 .method removeUser(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/pm/PackageSettingBase;->userState:Landroid/util/SparseArray;
 
@@ -899,8 +859,6 @@
 
 .method restoreComponentLPw(Ljava/lang/String;I)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v3, 0x1
 
@@ -944,8 +902,6 @@
 
 .method setBlocked(ZI)V
     .locals 1
-    .param p1    # Z
-    .param p2    # I
 
     invoke-direct {p0, p2}, Lcom/android/server/pm/PackageSettingBase;->modifyUserState(I)Landroid/content/pm/PackageUserState;
 
@@ -958,7 +914,6 @@
 
 .method setDisabledComponents(Ljava/util/HashSet;I)V
     .locals 1
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -980,7 +935,6 @@
 
 .method setDisabledComponentsCopy(Ljava/util/HashSet;I)V
     .locals 2
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1014,9 +968,6 @@
 
 .method setEnabled(IILjava/lang/String;)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0, p2}, Lcom/android/server/pm/PackageSettingBase;->modifyUserState(I)Landroid/content/pm/PackageUserState;
 
@@ -1031,7 +982,6 @@
 
 .method setEnabledComponents(Ljava/util/HashSet;I)V
     .locals 1
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1053,7 +1003,6 @@
 
 .method setEnabledComponentsCopy(Ljava/util/HashSet;I)V
     .locals 2
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1087,7 +1036,6 @@
 
 .method public setInstallStatus(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/pm/PackageSettingBase;->installStatus:I
 
@@ -1096,8 +1044,6 @@
 
 .method setInstalled(ZI)V
     .locals 1
-    .param p1    # Z
-    .param p2    # I
 
     invoke-direct {p0, p2}, Lcom/android/server/pm/PackageSettingBase;->modifyUserState(I)Landroid/content/pm/PackageUserState;
 
@@ -1110,7 +1056,6 @@
 
 .method public setInstallerPackageName(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/server/pm/PackageSettingBase;->installerPackageName:Ljava/lang/String;
 
@@ -1119,8 +1064,6 @@
 
 .method setNotLaunched(ZI)V
     .locals 1
-    .param p1    # Z
-    .param p2    # I
 
     invoke-direct {p0, p2}, Lcom/android/server/pm/PackageSettingBase;->modifyUserState(I)Landroid/content/pm/PackageUserState;
 
@@ -1133,8 +1076,6 @@
 
 .method setStopped(ZI)V
     .locals 1
-    .param p1    # Z
-    .param p2    # I
 
     invoke-direct {p0, p2}, Lcom/android/server/pm/PackageSettingBase;->modifyUserState(I)Landroid/content/pm/PackageUserState;
 
@@ -1147,7 +1088,6 @@
 
 .method public setTimeStamp(J)V
     .locals 0
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/android/server/pm/PackageSettingBase;->timeStamp:J
 
@@ -1156,12 +1096,6 @@
 
 .method setUserState(IIZZZLjava/lang/String;Ljava/util/HashSet;Ljava/util/HashSet;)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # Z
-    .param p5    # Z
-    .param p6    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(IIZZZ",
@@ -1200,13 +1134,6 @@
 
 .method setUserState(IIZZZZLjava/lang/String;Ljava/util/HashSet;Ljava/util/HashSet;)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # Z
-    .param p5    # Z
-    .param p6    # Z
-    .param p7    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(IIZZZZ",

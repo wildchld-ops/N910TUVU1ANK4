@@ -103,7 +103,6 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/android/internal/annotations/VisibleForTesting$Visibility;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-class v0, Lcom/android/internal/annotations/VisibleForTesting$Visibility;
 

@@ -100,7 +100,6 @@
 
 .method synthetic constructor <init>(Landroid/view/FocusFinder$1;)V
     .locals 0
-    .param p1    # Landroid/view/FocusFinder$1;
 
     invoke-direct {p0}, Landroid/view/FocusFinder;-><init>()V
 
@@ -109,10 +108,6 @@
 
 .method private findNextFocus(Landroid/view/ViewGroup;Landroid/view/View;Landroid/graphics/Rect;I)Landroid/view/View;
     .locals 8
-    .param p1    # Landroid/view/ViewGroup;
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/graphics/Rect;
-    .param p4    # I
 
     const/4 v6, 0x0
 
@@ -177,10 +172,6 @@
 
 .method private findNextFocus(Landroid/view/ViewGroup;Landroid/view/View;Landroid/graphics/Rect;ILjava/util/ArrayList;)Landroid/view/View;
     .locals 6
-    .param p1    # Landroid/view/ViewGroup;
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/graphics/Rect;
-    .param p4    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -348,10 +339,6 @@
 
 .method private findNextFocusInRelativeDirection(Ljava/util/ArrayList;Landroid/view/ViewGroup;Landroid/view/View;Landroid/graphics/Rect;I)Landroid/view/View;
     .locals 3
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/view/View;
-    .param p4    # Landroid/graphics/Rect;
-    .param p5    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -441,9 +428,6 @@
 
 .method private findNextUserSpecifiedFocus(Landroid/view/ViewGroup;Landroid/view/View;I)Landroid/view/View;
     .locals 2
-    .param p1    # Landroid/view/ViewGroup;
-    .param p2    # Landroid/view/View;
-    .param p3    # I
 
     invoke-virtual {p2, p1, p3}, Landroid/view/View;->findUserSetNextFocus(Landroid/view/View;I)Landroid/view/View;
 
@@ -495,8 +479,6 @@
 
 .method private static getNextFocusable(Landroid/view/View;Ljava/util/ArrayList;I)Landroid/view/View;
     .locals 2
-    .param p0    # Landroid/view/View;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -557,8 +539,6 @@
 
 .method private static getPreviousFocusable(Landroid/view/View;Ljava/util/ArrayList;I)Landroid/view/View;
     .locals 2
-    .param p0    # Landroid/view/View;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -615,10 +595,6 @@
 
 .method private isTouchCandidate(IILandroid/graphics/Rect;I)Z
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/graphics/Rect;
-    .param p4    # I
 
     const/4 v0, 0x1
 
@@ -721,9 +697,6 @@
 
 .method static majorAxisDistance(ILandroid/graphics/Rect;Landroid/graphics/Rect;)I
     .locals 2
-    .param p0    # I
-    .param p1    # Landroid/graphics/Rect;
-    .param p2    # Landroid/graphics/Rect;
 
     const/4 v0, 0x0
 
@@ -740,9 +713,6 @@
 
 .method static majorAxisDistanceRaw(ILandroid/graphics/Rect;Landroid/graphics/Rect;)I
     .locals 2
-    .param p0    # I
-    .param p1    # Landroid/graphics/Rect;
-    .param p2    # Landroid/graphics/Rect;
 
     sparse-switch p0, :sswitch_data_0
 
@@ -804,9 +774,6 @@
 
 .method static majorAxisDistanceToFarEdge(ILandroid/graphics/Rect;Landroid/graphics/Rect;)I
     .locals 2
-    .param p0    # I
-    .param p1    # Landroid/graphics/Rect;
-    .param p2    # Landroid/graphics/Rect;
 
     const/4 v0, 0x1
 
@@ -823,9 +790,6 @@
 
 .method static majorAxisDistanceToFarEdgeRaw(ILandroid/graphics/Rect;Landroid/graphics/Rect;)I
     .locals 2
-    .param p0    # I
-    .param p1    # Landroid/graphics/Rect;
-    .param p2    # Landroid/graphics/Rect;
 
     sparse-switch p0, :sswitch_data_0
 
@@ -887,9 +851,6 @@
 
 .method static minorAxisDistance(ILandroid/graphics/Rect;Landroid/graphics/Rect;)I
     .locals 3
-    .param p0    # I
-    .param p1    # Landroid/graphics/Rect;
-    .param p2    # Landroid/graphics/Rect;
 
     sparse-switch p0, :sswitch_data_0
 
@@ -973,8 +934,6 @@
 
 .method private setFocusBottomRight(Landroid/view/ViewGroup;Landroid/graphics/Rect;)V
     .locals 4
-    .param p1    # Landroid/view/ViewGroup;
-    .param p2    # Landroid/graphics/Rect;
 
     invoke-virtual {p1}, Landroid/view/View;->getScrollY()I
 
@@ -1003,8 +962,6 @@
 
 .method private setFocusTopLeft(Landroid/view/ViewGroup;Landroid/graphics/Rect;)V
     .locals 2
-    .param p1    # Landroid/view/ViewGroup;
-    .param p2    # Landroid/graphics/Rect;
 
     invoke-virtual {p1}, Landroid/view/View;->getScrollY()I
 
@@ -1023,10 +980,6 @@
 # virtual methods
 .method beamBeats(ILandroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Rect;)Z
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/graphics/Rect;
-    .param p3    # Landroid/graphics/Rect;
-    .param p4    # Landroid/graphics/Rect;
 
     const/4 v3, 0x0
 
@@ -1083,9 +1036,6 @@
 
 .method beamsOverlap(ILandroid/graphics/Rect;Landroid/graphics/Rect;)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/graphics/Rect;
-    .param p3    # Landroid/graphics/Rect;
 
     const/4 v0, 0x1
 
@@ -1152,11 +1102,6 @@
 
 .method public findNearestTouchable(Landroid/view/ViewGroup;III[I)Landroid/view/View;
     .locals 15
-    .param p1    # Landroid/view/ViewGroup;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # [I
 
     invoke-virtual/range {p1 .. p1}, Landroid/view/View;->getTouchables()Ljava/util/ArrayList;
 
@@ -1346,9 +1291,6 @@
 
 .method public final findNextFocus(Landroid/view/ViewGroup;Landroid/view/View;I)Landroid/view/View;
     .locals 1
-    .param p1    # Landroid/view/ViewGroup;
-    .param p2    # Landroid/view/View;
-    .param p3    # I
 
     const/4 v0, 0x0
 
@@ -1361,9 +1303,6 @@
 
 .method public findNextFocusFromRect(Landroid/view/ViewGroup;Landroid/graphics/Rect;I)Landroid/view/View;
     .locals 2
-    .param p1    # Landroid/view/ViewGroup;
-    .param p2    # Landroid/graphics/Rect;
-    .param p3    # I
 
     iget-object v0, p0, Landroid/view/FocusFinder;->mFocusedRect:Landroid/graphics/Rect;
 
@@ -1382,10 +1321,6 @@
 
 .method findNextFocusInAbsoluteDirection(Ljava/util/ArrayList;Landroid/view/ViewGroup;Landroid/view/View;Landroid/graphics/Rect;I)Landroid/view/View;
     .locals 7
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/view/View;
-    .param p4    # Landroid/graphics/Rect;
-    .param p5    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1536,8 +1471,6 @@
 
 .method getWeightedDistanceFor(II)I
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     mul-int/lit8 v0, p1, 0xd
 
@@ -1552,10 +1485,6 @@
 
 .method isBetterCandidate(ILandroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Rect;)Z
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/graphics/Rect;
-    .param p3    # Landroid/graphics/Rect;
-    .param p4    # Landroid/graphics/Rect;
 
     const/4 v0, 0x1
 
@@ -1630,9 +1559,6 @@
 
 .method isCandidate(Landroid/graphics/Rect;Landroid/graphics/Rect;I)Z
     .locals 4
-    .param p1    # Landroid/graphics/Rect;
-    .param p2    # Landroid/graphics/Rect;
-    .param p3    # I
 
     const/4 v0, 0x1
 
@@ -1763,9 +1689,6 @@
 
 .method isToDirectionOf(ILandroid/graphics/Rect;Landroid/graphics/Rect;)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/graphics/Rect;
-    .param p3    # Landroid/graphics/Rect;
 
     const/4 v0, 0x1
 

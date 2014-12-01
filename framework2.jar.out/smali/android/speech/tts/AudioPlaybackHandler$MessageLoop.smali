@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Landroid/speech/tts/AudioPlaybackHandler;Landroid/speech/tts/AudioPlaybackHandler$1;)V
     .locals 0
-    .param p1    # Landroid/speech/tts/AudioPlaybackHandler;
-    .param p2    # Landroid/speech/tts/AudioPlaybackHandler$1;
 
     invoke-direct {p0, p1}, Landroid/speech/tts/AudioPlaybackHandler$MessageLoop;-><init>(Landroid/speech/tts/AudioPlaybackHandler;)V
 

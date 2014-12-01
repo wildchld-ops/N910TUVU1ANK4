@@ -151,7 +151,6 @@
 
 .method static synthetic access$1600(Landroid/view/View$TransformationInfo;)Landroid/graphics/Matrix;
     .locals 1
-    .param p0    # Landroid/view/View$TransformationInfo;
 
     iget-object v0, p0, Landroid/view/View$TransformationInfo;->mMatrix:Landroid/graphics/Matrix;
 
@@ -160,7 +159,6 @@
 
 .method static synthetic access$1700(Landroid/view/View$TransformationInfo;)Z
     .locals 1
-    .param p0    # Landroid/view/View$TransformationInfo;
 
     iget-boolean v0, p0, Landroid/view/View$TransformationInfo;->mMatrixIsIdentity:Z
 
@@ -169,8 +167,6 @@
 
 .method static synthetic access$1702(Landroid/view/View$TransformationInfo;Z)Z
     .locals 0
-    .param p0    # Landroid/view/View$TransformationInfo;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/view/View$TransformationInfo;->mMatrixIsIdentity:Z
 
@@ -179,7 +175,6 @@
 
 .method static synthetic access$1800(Landroid/view/View$TransformationInfo;)I
     .locals 1
-    .param p0    # Landroid/view/View$TransformationInfo;
 
     iget v0, p0, Landroid/view/View$TransformationInfo;->mPrevWidth:I
 
@@ -188,8 +183,6 @@
 
 .method static synthetic access$1802(Landroid/view/View$TransformationInfo;I)I
     .locals 0
-    .param p0    # Landroid/view/View$TransformationInfo;
-    .param p1    # I
 
     iput p1, p0, Landroid/view/View$TransformationInfo;->mPrevWidth:I
 
@@ -198,7 +191,6 @@
 
 .method static synthetic access$1900(Landroid/view/View$TransformationInfo;)I
     .locals 1
-    .param p0    # Landroid/view/View$TransformationInfo;
 
     iget v0, p0, Landroid/view/View$TransformationInfo;->mPrevHeight:I
 
@@ -207,8 +199,6 @@
 
 .method static synthetic access$1902(Landroid/view/View$TransformationInfo;I)I
     .locals 0
-    .param p0    # Landroid/view/View$TransformationInfo;
-    .param p1    # I
 
     iput p1, p0, Landroid/view/View$TransformationInfo;->mPrevHeight:I
 
@@ -217,7 +207,6 @@
 
 .method static synthetic access$2000(Landroid/view/View$TransformationInfo;)Landroid/graphics/Camera;
     .locals 1
-    .param p0    # Landroid/view/View$TransformationInfo;
 
     iget-object v0, p0, Landroid/view/View$TransformationInfo;->mCamera:Landroid/graphics/Camera;
 
@@ -226,8 +215,6 @@
 
 .method static synthetic access$2002(Landroid/view/View$TransformationInfo;Landroid/graphics/Camera;)Landroid/graphics/Camera;
     .locals 0
-    .param p0    # Landroid/view/View$TransformationInfo;
-    .param p1    # Landroid/graphics/Camera;
 
     iput-object p1, p0, Landroid/view/View$TransformationInfo;->mCamera:Landroid/graphics/Camera;
 
@@ -236,7 +223,6 @@
 
 .method static synthetic access$2100(Landroid/view/View$TransformationInfo;)Landroid/graphics/Matrix;
     .locals 1
-    .param p0    # Landroid/view/View$TransformationInfo;
 
     iget-object v0, p0, Landroid/view/View$TransformationInfo;->matrix3D:Landroid/graphics/Matrix;
 
@@ -245,8 +231,6 @@
 
 .method static synthetic access$2102(Landroid/view/View$TransformationInfo;Landroid/graphics/Matrix;)Landroid/graphics/Matrix;
     .locals 0
-    .param p0    # Landroid/view/View$TransformationInfo;
-    .param p1    # Landroid/graphics/Matrix;
 
     iput-object p1, p0, Landroid/view/View$TransformationInfo;->matrix3D:Landroid/graphics/Matrix;
 
@@ -255,7 +239,6 @@
 
 .method static synthetic access$2200(Landroid/view/View$TransformationInfo;)Z
     .locals 1
-    .param p0    # Landroid/view/View$TransformationInfo;
 
     iget-boolean v0, p0, Landroid/view/View$TransformationInfo;->mInverseMatrixDirty:Z
 
@@ -264,8 +247,6 @@
 
 .method static synthetic access$2202(Landroid/view/View$TransformationInfo;Z)Z
     .locals 0
-    .param p0    # Landroid/view/View$TransformationInfo;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/view/View$TransformationInfo;->mInverseMatrixDirty:Z
 
@@ -274,7 +255,6 @@
 
 .method static synthetic access$2300(Landroid/view/View$TransformationInfo;)Landroid/graphics/Matrix;
     .locals 1
-    .param p0    # Landroid/view/View$TransformationInfo;
 
     iget-object v0, p0, Landroid/view/View$TransformationInfo;->mInverseMatrix:Landroid/graphics/Matrix;
 
@@ -283,8 +263,6 @@
 
 .method static synthetic access$2302(Landroid/view/View$TransformationInfo;Landroid/graphics/Matrix;)Landroid/graphics/Matrix;
     .locals 0
-    .param p0    # Landroid/view/View$TransformationInfo;
-    .param p1    # Landroid/graphics/Matrix;
 
     iput-object p1, p0, Landroid/view/View$TransformationInfo;->mInverseMatrix:Landroid/graphics/Matrix;
 

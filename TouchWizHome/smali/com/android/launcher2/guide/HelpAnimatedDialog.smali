@@ -64,8 +64,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/view/View;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -104,7 +102,6 @@
 
 .method static synthetic access$000(Lcom/android/launcher2/guide/HelpAnimatedDialog;)Landroid/view/animation/Animation;
     .locals 1
-    .param p0    # Lcom/android/launcher2/guide/HelpAnimatedDialog;
 
     iget-object v0, p0, Lcom/android/launcher2/guide/HelpAnimatedDialog;->mFlashingAnimation:Landroid/view/animation/Animation;
 
@@ -121,7 +118,6 @@
 
 .method static synthetic access$200(Lcom/android/launcher2/guide/HelpAnimatedDialog;)I
     .locals 1
-    .param p0    # Lcom/android/launcher2/guide/HelpAnimatedDialog;
 
     iget v0, p0, Lcom/android/launcher2/guide/HelpAnimatedDialog;->flashCount:I
 
@@ -130,7 +126,6 @@
 
 .method static synthetic access$208(Lcom/android/launcher2/guide/HelpAnimatedDialog;)I
     .locals 2
-    .param p0    # Lcom/android/launcher2/guide/HelpAnimatedDialog;
 
     iget v0, p0, Lcom/android/launcher2/guide/HelpAnimatedDialog;->flashCount:I
 
@@ -143,7 +138,6 @@
 
 .method static synthetic access$300(Lcom/android/launcher2/guide/HelpAnimatedDialog;)Landroid/view/animation/Animation;
     .locals 1
-    .param p0    # Lcom/android/launcher2/guide/HelpAnimatedDialog;
 
     iget-object v0, p0, Lcom/android/launcher2/guide/HelpAnimatedDialog;->mFadingAnimation:Landroid/view/animation/Animation;
 
@@ -152,8 +146,6 @@
 
 .method private init(Landroid/content/Context;Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/view/View;
 
     sput-object p2, Lcom/android/launcher2/guide/HelpAnimatedDialog;->mGoalAnimationView:Landroid/view/View;
 
@@ -270,9 +262,6 @@
 
 .method public startZoom(FFLandroid/view/View;)V
     .locals 9
-    .param p1    # F
-    .param p2    # F
-    .param p3    # Landroid/view/View;
 
     const/4 v5, 0x1
 

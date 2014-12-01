@@ -107,15 +107,6 @@
 
 .method public static addImage(Landroid/content/ContentResolver;Ljava/lang/String;JLandroid/location/Location;Ljava/lang/String;Ljava/lang/String;Landroid/graphics/Bitmap;[B[I)Landroid/net/Uri;
     .locals 12
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
-    .param p4    # Landroid/location/Location;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Ljava/lang/String;
-    .param p7    # Landroid/graphics/Bitmap;
-    .param p8    # [B
-    .param p9    # [I
 
     const/4 v6, 0x0
 
@@ -371,16 +362,6 @@
 
 .method public static addImage(Landroid/content/ContentResolver;Ljava/lang/String;JLandroid/location/Location;Ljava/lang/String;Ljava/lang/String;Landroid/graphics/Bitmap;[B[II)Landroid/net/Uri;
     .locals 1
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
-    .param p4    # Landroid/location/Location;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Ljava/lang/String;
-    .param p7    # Landroid/graphics/Bitmap;
-    .param p8    # [B
-    .param p9    # [I
-    .param p10    # I
 
     invoke-static/range {p0 .. p9}, Lcom/sec/android/app/camera/ImageManager;->addImage(Landroid/content/ContentResolver;Ljava/lang/String;JLandroid/location/Location;Ljava/lang/String;Ljava/lang/String;Landroid/graphics/Bitmap;[B[I)Landroid/net/Uri;
 
@@ -560,7 +541,6 @@
 
 .method public static getBucketId(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     invoke-virtual {p0}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
 
@@ -593,7 +573,6 @@
 
 .method public static getExifOrientation(Ljava/lang/String;)I
     .locals 8
-    .param p0    # Ljava/lang/String;
 
     const/4 v7, -0x1
 
@@ -669,10 +648,6 @@
 
 .method public static getImageListParam(Lcom/sec/android/app/camera/ImageManager$DataLocation;IILjava/lang/String;)Lcom/sec/android/app/camera/ImageManager$ImageListParam;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/ImageManager$DataLocation;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     new-instance v0, Lcom/sec/android/app/camera/ImageManager$ImageListParam;
 
@@ -755,7 +730,6 @@
 
 .method public static getSingleImageListParam(Landroid/net/Uri;)Lcom/sec/android/app/camera/ImageManager$ImageListParam;
     .locals 1
-    .param p0    # Landroid/net/Uri;
 
     new-instance v0, Lcom/sec/android/app/camera/ImageManager$ImageListParam;
 
@@ -812,7 +786,6 @@
 
 .method public static hasStorage(Z)Z
     .locals 3
-    .param p0    # Z
 
     const/4 v1, 0x1
 
@@ -857,7 +830,6 @@
 
 .method public static isImage(Lcom/sec/android/app/camera/gallery/IImage;)Z
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/gallery/IImage;
 
     invoke-interface {p0}, Lcom/sec/android/app/camera/gallery/IImage;->getMimeType()Ljava/lang/String;
 
@@ -872,7 +844,6 @@
 
 .method public static isImageMimeType(Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "image/"
 
@@ -885,7 +856,6 @@
 
 .method public static isMediaScannerScanning(Landroid/content/ContentResolver;)Z
     .locals 10
-    .param p0    # Landroid/content/ContentResolver;
 
     const/4 v9, 0x1
 
@@ -944,7 +914,6 @@
 
 .method static isSingleImageMode(Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     sget-object v0, Landroid/provider/MediaStore$Images$Media;->EXTERNAL_CONTENT_URI:Landroid/net/Uri;
 
@@ -983,7 +952,6 @@
 
 .method public static isVideo(Lcom/sec/android/app/camera/gallery/IImage;)Z
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/gallery/IImage;
 
     instance-of v0, p0, Lcom/sec/android/app/camera/gallery/VideoObject;
 
@@ -1008,9 +976,6 @@
 
 .method public static makeImageList(Landroid/content/ContentResolver;Landroid/net/Uri;I)Lcom/sec/android/app/camera/gallery/IImageList;
     .locals 5
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # I
 
     const/4 v3, 0x4
 
@@ -1122,11 +1087,6 @@
 
 .method public static makeImageList(Landroid/content/ContentResolver;Lcom/sec/android/app/camera/ImageManager$DataLocation;IILjava/lang/String;)Lcom/sec/android/app/camera/gallery/IImageList;
     .locals 2
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # Lcom/sec/android/app/camera/ImageManager$DataLocation;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
 
     invoke-static {p1, p2, p3, p4}, Lcom/sec/android/app/camera/ImageManager;->getImageListParam(Lcom/sec/android/app/camera/ImageManager$DataLocation;IILjava/lang/String;)Lcom/sec/android/app/camera/ImageManager$ImageListParam;
 
@@ -1141,8 +1101,6 @@
 
 .method public static makeImageList(Landroid/content/ContentResolver;Lcom/sec/android/app/camera/ImageManager$ImageListParam;)Lcom/sec/android/app/camera/gallery/IImageList;
     .locals 17
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # Lcom/sec/android/app/camera/ImageManager$ImageListParam;
 
     move-object/from16 v0, p1
 
@@ -1348,8 +1306,6 @@
 
 .method public static makeSingleImageList(Landroid/content/ContentResolver;Landroid/net/Uri;)Lcom/sec/android/app/camera/gallery/IImageList;
     .locals 1
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # Landroid/net/Uri;
 
     invoke-static {p1}, Lcom/sec/android/app/camera/ImageManager;->getSingleImageListParam(Landroid/net/Uri;)Lcom/sec/android/app/camera/ImageManager$ImageListParam;
 
@@ -1364,12 +1320,6 @@
 
 .method private static query(Landroid/content/ContentResolver;Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
     .locals 2
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # [Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -1396,9 +1346,6 @@
 
 .method public static setImageSize(Landroid/content/ContentResolver;Landroid/net/Uri;J)V
     .locals 4
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # J
 
     const/4 v3, 0x0
 

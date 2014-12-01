@@ -114,7 +114,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -125,8 +124,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 9
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/view/View;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -489,8 +486,6 @@
 
 .method private checkForNewHit(FF)Lcom/android/internal/widget/LockPatternView$Cell;
     .locals 4
-    .param p1    # F
-    .param p2    # F
 
     const/4 v2, 0x0
 
@@ -528,10 +523,6 @@
 
 .method private drawCircle(Landroid/graphics/Canvas;IIZ)V
     .locals 13
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Z
 
     if-eqz p4, :cond_0
 
@@ -747,7 +738,6 @@
 
 .method private getColumnHit(F)I
     .locals 8
-    .param p1    # F
 
     iget v4, p0, Lcom/android/internal/widget/LockPatternView;->mSquareWidth:F
 
@@ -806,7 +796,6 @@
 
 .method private getRowHit(F)I
     .locals 8
-    .param p1    # F
 
     iget v4, p0, Lcom/android/internal/widget/LockPatternView;->mSquareHeight:F
 
@@ -865,7 +854,6 @@
 
 .method private handleActionDown(Landroid/view/MotionEvent;)V
     .locals 11
-    .param p1    # Landroid/view/MotionEvent;
 
     const/high16 v8, 0x40000000
 
@@ -960,7 +948,6 @@
 
 .method private handleActionUp(Landroid/view/MotionEvent;)V
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-object v0, p0, Lcom/android/internal/widget/LockPatternView;->mPattern:Ljava/util/ArrayList;
 
@@ -1042,8 +1029,6 @@
 
 .method private resolveMeasured(II)I
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -1085,7 +1070,6 @@
 
 .method private sendAccessEvent(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -1102,7 +1086,6 @@
 # virtual methods
 .method protected addCellToPattern(Lcom/android/internal/widget/LockPatternView$Cell;)V
     .locals 3
-    .param p1    # Lcom/android/internal/widget/LockPatternView$Cell;
 
     iget-object v0, p0, Lcom/android/internal/widget/LockPatternView;->mPatternDrawLookup:[[Z
 
@@ -1175,8 +1158,6 @@
 
 .method protected detectAndAddHit(FF)Lcom/android/internal/widget/LockPatternView$Cell;
     .locals 13
-    .param p1    # F
-    .param p2    # F
 
     const/4 v12, 0x2
 
@@ -1331,11 +1312,6 @@
 
 .method protected drawArrow(Landroid/graphics/Canvas;FFLcom/android/internal/widget/LockPatternView$Cell;Lcom/android/internal/widget/LockPatternView$Cell;)V
     .locals 21
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # Lcom/android/internal/widget/LockPatternView$Cell;
-    .param p5    # Lcom/android/internal/widget/LockPatternView$Cell;
 
     move-object/from16 v0, p0
 
@@ -1744,7 +1720,6 @@
 
 .method protected getBitmapFor(I)Landroid/graphics/Bitmap;
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
@@ -1763,7 +1738,6 @@
 
 .method protected getCenterXForColumn(I)F
     .locals 3
-    .param p1    # I
 
     iget v0, p0, Landroid/view/View;->mPaddingLeft:I
 
@@ -1790,7 +1764,6 @@
 
 .method protected getCenterYForRow(I)F
     .locals 3
-    .param p1    # I
 
     iget v0, p0, Landroid/view/View;->mPaddingTop:I
 
@@ -1837,7 +1810,6 @@
 
 .method protected handleActionMove(Landroid/view/MotionEvent;)V
     .locals 30
-    .param p1    # Landroid/view/MotionEvent;
 
     move-object/from16 v0, p0
 
@@ -2306,7 +2278,6 @@
 
 .method protected onDraw(Landroid/graphics/Canvas;)V
     .locals 36
-    .param p1    # Landroid/graphics/Canvas;
 
     move-object/from16 v0, p0
 
@@ -2863,7 +2834,6 @@
 
 .method public onHoverEvent(Landroid/view/MotionEvent;)Z
     .locals 2
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-object v1, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -2930,8 +2900,6 @@
 
 .method protected onMeasure(II)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0}, Lcom/android/internal/widget/LockPatternView;->getSuggestedMinimumWidth()I
 
@@ -2993,7 +2961,6 @@
 
 .method protected onRestoreInstanceState(Landroid/os/Parcelable;)V
     .locals 3
-    .param p1    # Landroid/os/Parcelable;
 
     move-object v0, p1
 
@@ -3086,10 +3053,6 @@
 
 .method protected onSizeChanged(IIII)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/high16 v4, 0x40400000
 
@@ -3126,7 +3089,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 3
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v1, 0x0
 
@@ -3210,7 +3172,6 @@
 
 .method public setDisplayMode(Lcom/android/internal/widget/LockPatternView$DisplayMode;)V
     .locals 3
-    .param p1    # Lcom/android/internal/widget/LockPatternView$DisplayMode;
 
     iput-object p1, p0, Lcom/android/internal/widget/LockPatternView;->mPatternDisplayMode:Lcom/android/internal/widget/LockPatternView$DisplayMode;
 
@@ -3281,7 +3242,6 @@
 
 .method public setInStealthMode(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/internal/widget/LockPatternView;->mInStealthMode:Z
 
@@ -3290,7 +3250,6 @@
 
 .method public setOnPatternListener(Lcom/android/internal/widget/LockPatternView$OnPatternListener;)V
     .locals 0
-    .param p1    # Lcom/android/internal/widget/LockPatternView$OnPatternListener;
 
     iput-object p1, p0, Lcom/android/internal/widget/LockPatternView;->mOnPatternListener:Lcom/android/internal/widget/LockPatternView$OnPatternListener;
 
@@ -3299,7 +3258,6 @@
 
 .method public setOnTouchEventHandlerForKeyguardEffect(Lcom/android/internal/widget/LockPatternView$OnTouchEventHandlerForKeyguardEffect;)V
     .locals 0
-    .param p1    # Lcom/android/internal/widget/LockPatternView$OnTouchEventHandlerForKeyguardEffect;
 
     iput-object p1, p0, Lcom/android/internal/widget/LockPatternView;->mTouchEventHandlerForKeyguardEffect:Lcom/android/internal/widget/LockPatternView$OnTouchEventHandlerForKeyguardEffect;
 
@@ -3308,7 +3266,6 @@
 
 .method public setPattern(Lcom/android/internal/widget/LockPatternView$DisplayMode;Ljava/util/List;)V
     .locals 5
-    .param p1    # Lcom/android/internal/widget/LockPatternView$DisplayMode;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3373,7 +3330,6 @@
 
 .method public setTactileFeedbackEnabled(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/internal/widget/LockPatternView;->mEnableHapticFeedback:Z
 

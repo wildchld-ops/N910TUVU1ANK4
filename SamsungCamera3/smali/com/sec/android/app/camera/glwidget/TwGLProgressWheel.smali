@@ -68,11 +68,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;FFFF)V
     .locals 9
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
 
     const/4 v1, 0x0
 
@@ -357,7 +352,6 @@
 
 .method public setProgress(I)V
     .locals 12
-    .param p1    # I
 
     int-to-float v0, p1
 

@@ -87,9 +87,9 @@
 
     const/4 v8, 0x0
 
-    invoke-virtual {p0, v9}, Landroid/app/Activity;->requestWindowFeature(I)Z
+    invoke-virtual {p0, v9}, Lcom/android/phone/FlatRateAlertActivity;->requestWindowFeature(I)Z
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
+    invoke-virtual {p0}, Lcom/android/phone/FlatRateAlertActivity;->getWindow()Landroid/view/Window;
 
     move-result-object v5
 
@@ -101,7 +101,7 @@
 
     invoke-super {p0, p1}, Lcom/android/internal/app/AlertActivity;->onCreate(Landroid/os/Bundle;)V
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/FlatRateAlertActivity;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v5
 
@@ -115,7 +115,7 @@
 
     const-string v5, "layout_inflater"
 
-    invoke-virtual {v0, v5}, Landroid/view/ContextThemeWrapper;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v0, v5}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -147,13 +147,13 @@
 
     const v5, 0x7f09051f
 
-    invoke-virtual {p0, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v5}, Lcom/android/phone/FlatRateAlertActivity;->getString(I)Ljava/lang/String;
 
     move-result-object v3
 
     const v5, 0x7f090520
 
-    invoke-virtual {p0, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v5}, Lcom/android/phone/FlatRateAlertActivity;->getString(I)Ljava/lang/String;
 
     move-result-object v5
 
@@ -181,7 +181,7 @@
 
     sget-object v5, Lcom/android/phone/FlatRateAlertActivity;->mRadioGroup:Landroid/widget/RadioGroup;
 
-    invoke-virtual {v5, v8}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v5, v8}, Landroid/widget/RadioGroup;->setVisibility(I)V
 
     sget-object v5, Lcom/android/phone/FlatRateAlertActivity;->mRadioGroup:Landroid/widget/RadioGroup;
 
@@ -226,14 +226,14 @@
 
     iget-object v5, p0, Lcom/android/phone/FlatRateAlertActivity;->mAlertDialog:Landroid/app/AlertDialog;
 
-    invoke-virtual {v5}, Landroid/app/Dialog;->show()V
+    invoke-virtual {v5}, Landroid/app/AlertDialog;->show()V
 
     return-void
 
     :cond_0
     const v5, 0x7f09051b
 
-    invoke-virtual {p0, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v5}, Lcom/android/phone/FlatRateAlertActivity;->getString(I)Ljava/lang/String;
 
     move-result-object v3
 
@@ -243,13 +243,13 @@
 
     const v7, 0x7f09051d
 
-    invoke-virtual {p0, v7}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v7}, Lcom/android/phone/FlatRateAlertActivity;->getString(I)Ljava/lang/String;
 
     move-result-object v7
 
     aput-object v7, v6, v8
 
-    invoke-virtual {p0, v5, v6}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {p0, v5, v6}, Lcom/android/phone/FlatRateAlertActivity;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v5
 
@@ -285,14 +285,14 @@
 
     iget-object v0, p0, Lcom/android/phone/FlatRateAlertActivity;->mAlertDialog:Landroid/app/AlertDialog;
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->dismiss()V
+    invoke-virtual {v0}, Landroid/app/AlertDialog;->dismiss()V
 
     const/4 v0, 0x0
 
     iput-object v0, p0, Lcom/android/phone/FlatRateAlertActivity;->mAlertDialog:Landroid/app/AlertDialog;
 
     :cond_0
-    invoke-super {p0}, Landroid/app/Activity;->onDestroy()V
+    invoke-super {p0}, Lcom/android/internal/app/AlertActivity;->onDestroy()V
 
     return-void
 .end method

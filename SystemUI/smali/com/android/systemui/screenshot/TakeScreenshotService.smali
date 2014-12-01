@@ -38,7 +38,6 @@
 
 .method static synthetic access$002(Lcom/android/systemui/screenshot/GlobalScreenshot;)Lcom/android/systemui/screenshot/GlobalScreenshot;
     .locals 0
-    .param p0    # Lcom/android/systemui/screenshot/GlobalScreenshot;
 
     sput-object p0, Lcom/android/systemui/screenshot/TakeScreenshotService;->mScreenshot:Lcom/android/systemui/screenshot/GlobalScreenshot;
 
@@ -49,7 +48,6 @@
 # virtual methods
 .method public onBind(Landroid/content/Intent;)Landroid/os/IBinder;
     .locals 2
-    .param p1    # Landroid/content/Intent;
 
     new-instance v0, Landroid/os/Messenger;
 

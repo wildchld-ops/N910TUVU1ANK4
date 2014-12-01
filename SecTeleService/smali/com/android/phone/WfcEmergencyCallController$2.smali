@@ -49,7 +49,7 @@
 
     sget-object v1, Lcom/android/phone/WfcEmergencyCallController$6;->$SwitchMap$com$samsung$tmowfc$wfcutils$WfcDbHelper$EmergencyCallModePreferenceContract$Ecmp:[I
 
-    invoke-virtual {v0}, Ljava/lang/Enum;->ordinal()I
+    invoke-virtual {v0}, Lcom/samsung/tmowfc/wfcutils/WfcDbHelper$EmergencyCallModePreferenceContract$Ecmp;->ordinal()I
 
     move-result v2
 

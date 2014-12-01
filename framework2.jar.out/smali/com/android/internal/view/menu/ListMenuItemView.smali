@@ -45,8 +45,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -57,9 +55,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v3, 0x0
 
@@ -274,8 +269,6 @@
 
 .method public initialize(Lcom/android/internal/view/menu/MenuItemImpl;I)V
     .locals 6
-    .param p1    # Lcom/android/internal/view/menu/MenuItemImpl;
-    .param p2    # I
 
     const/4 v3, 0x0
 
@@ -428,7 +421,6 @@
 
 .method public onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
     .locals 1
-    .param p1    # Landroid/view/accessibility/AccessibilityNodeInfo;
 
     invoke-super {p0, p1}, Landroid/widget/LinearLayout;->onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
 
@@ -454,8 +446,6 @@
 
 .method protected onMeasure(II)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     iget-object v2, p0, Lcom/android/internal/view/menu/ListMenuItemView;->mIconView:Landroid/widget/ImageView;
 
@@ -525,7 +515,6 @@
 
 .method public setCheckable(Z)V
     .locals 5
-    .param p1    # Z
 
     const/16 v3, 0x8
 
@@ -642,7 +631,6 @@
 
 .method public setChecked(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v1, p0, Lcom/android/internal/view/menu/ListMenuItemView;->mItemData:Lcom/android/internal/view/menu/MenuItemImpl;
 
@@ -681,7 +669,6 @@
 
 .method public setForceShowIcon(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/internal/view/menu/ListMenuItemView;->mForceShowIcon:Z
 
@@ -692,7 +679,6 @@
 
 .method public setIcon(Landroid/graphics/drawable/Drawable;)V
     .locals 4
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     const/4 v1, 0x0
 
@@ -828,8 +814,6 @@
 
 .method public setShortcut(ZC)V
     .locals 3
-    .param p1    # Z
-    .param p2    # C
 
     if-eqz p1, :cond_2
 
@@ -880,7 +864,6 @@
 
 .method public setTitle(Ljava/lang/CharSequence;)V
     .locals 2
-    .param p1    # Ljava/lang/CharSequence;
 
     const/16 v1, 0x8
 

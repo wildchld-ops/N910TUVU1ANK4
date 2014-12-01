@@ -24,10 +24,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Lcom/android/server/am/ActivityManagerService;Lcom/android/server/am/AppErrorResult;Lcom/android/server/am/ProcessRecord;)V
     .locals 11
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/server/am/ActivityManagerService;
-    .param p3    # Lcom/android/server/am/AppErrorResult;
-    .param p4    # Lcom/android/server/am/ProcessRecord;
 
     invoke-direct {p0, p1}, Lcom/android/server/am/BaseErrorDialog;-><init>(Landroid/content/Context;)V
 
@@ -326,7 +322,6 @@
 
 .method static synthetic access$000(Lcom/android/server/am/AppErrorDialog;)Lcom/android/server/am/ActivityManagerService;
     .locals 1
-    .param p0    # Lcom/android/server/am/AppErrorDialog;
 
     iget-object v0, p0, Lcom/android/server/am/AppErrorDialog;->mService:Lcom/android/server/am/ActivityManagerService;
 
@@ -335,7 +330,6 @@
 
 .method static synthetic access$100(Lcom/android/server/am/AppErrorDialog;)Lcom/android/server/am/ProcessRecord;
     .locals 1
-    .param p0    # Lcom/android/server/am/AppErrorDialog;
 
     iget-object v0, p0, Lcom/android/server/am/AppErrorDialog;->mProc:Lcom/android/server/am/ProcessRecord;
 
@@ -344,7 +338,6 @@
 
 .method static synthetic access$200(Lcom/android/server/am/AppErrorDialog;)Lcom/android/server/am/AppErrorResult;
     .locals 1
-    .param p0    # Lcom/android/server/am/AppErrorDialog;
 
     iget-object v0, p0, Lcom/android/server/am/AppErrorDialog;->mResult:Lcom/android/server/am/AppErrorResult;
 

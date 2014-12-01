@@ -25,8 +25,6 @@
 # direct methods
 .method constructor <init>(Landroid/content/ContentResolver;Landroid/os/ParcelFileDescriptor;Landroid/content/IContentProvider;)V
     .locals 0
-    .param p2    # Landroid/os/ParcelFileDescriptor;
-    .param p3    # Landroid/content/IContentProvider;
 
     iput-object p1, p0, Landroid/content/ContentResolver$ParcelFileDescriptorInner;->this$0:Landroid/content/ContentResolver;
 

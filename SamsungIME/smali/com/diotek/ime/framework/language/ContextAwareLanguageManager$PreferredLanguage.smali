@@ -25,8 +25,6 @@
 # direct methods
 .method public constructor <init>(Lcom/diotek/ime/framework/language/ContextAwareLanguageManager;IB)V
     .locals 1
-    .param p2    # I
-    .param p3    # B
 
     const/4 v0, 0x0
 

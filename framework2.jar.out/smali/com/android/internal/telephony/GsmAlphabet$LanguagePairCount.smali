@@ -25,7 +25,6 @@
 # direct methods
 .method constructor <init>(I)V
     .locals 7
-    .param p1    # I
 
     const/4 v6, 0x2
 

@@ -49,7 +49,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/LoadAverageService;Landroid/content/Context;)V
     .locals 12
-    .param p2    # Landroid/content/Context;
 
     const/4 v11, 0x1
 
@@ -341,7 +340,6 @@
 
 .method static synthetic access$000(Lcom/android/systemui/LoadAverageService$LoadView;)Lcom/android/systemui/LoadAverageService$CpuTracker;
     .locals 1
-    .param p0    # Lcom/android/systemui/LoadAverageService$LoadView;
 
     iget-object v0, p0, Lcom/android/systemui/LoadAverageService$LoadView;->mStats:Lcom/android/systemui/LoadAverageService$CpuTracker;
 
@@ -380,7 +378,6 @@
 
 .method public onDraw(Landroid/graphics/Canvas;)V
     .locals 29
-    .param p1    # Landroid/graphics/Canvas;
 
     invoke-super/range {p0 .. p1}, Landroid/view/View;->onDraw(Landroid/graphics/Canvas;)V
 
@@ -1035,8 +1032,6 @@
 
 .method protected onMeasure(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget v0, p0, Lcom/android/systemui/LoadAverageService$LoadView;->mNeededWidth:I
 

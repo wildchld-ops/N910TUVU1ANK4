@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Landroid/view/InputChannel;)V
     .locals 1
-    .param p1    # Landroid/view/InputChannel;
 
     invoke-static {}, Lcom/android/server/UiThread;->getHandler()Landroid/os/Handler;
 
@@ -52,7 +51,6 @@
 # virtual methods
 .method public onInputEvent(Landroid/view/InputEvent;)V
     .locals 8
-    .param p1    # Landroid/view/InputEvent;
 
     const/4 v7, 0x0
 
@@ -155,7 +153,6 @@
 
 .method public registerInputEventListener(Landroid/view/WindowManagerPolicy$PointerEventListener;)V
     .locals 4
-    .param p1    # Landroid/view/WindowManagerPolicy$PointerEventListener;
 
     iget-object v1, p0, Lcom/android/server/wm/PointerEventDispatcher;->mListeners:Ljava/util/ArrayList;
 
@@ -228,7 +225,6 @@
 
 .method public unregisterInputEventListener(Landroid/view/WindowManagerPolicy$PointerEventListener;)V
     .locals 4
-    .param p1    # Landroid/view/WindowManagerPolicy$PointerEventListener;
 
     iget-object v1, p0, Lcom/android/server/wm/PointerEventDispatcher;->mListeners:Ljava/util/ArrayList;
 

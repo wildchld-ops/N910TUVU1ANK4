@@ -21,9 +21,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/settings/accessibility/directaccess/DirectAccessActions;III)V
     .locals 0
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iput-object p1, p0, Lcom/android/settings/accessibility/directaccess/DirectAccessActions$4;->this$0:Lcom/android/settings/accessibility/directaccess/DirectAccessActions;
 
@@ -36,7 +33,6 @@
 # virtual methods
 .method protected changeStateFromPress(Z)V
     .locals 2
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -70,7 +66,6 @@
 
 .method onToggle(Z)V
     .locals 3
-    .param p1    # Z
 
     const/4 v2, 0x0
 

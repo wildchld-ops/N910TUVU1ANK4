@@ -32,9 +32,6 @@
 # direct methods
 .method public constructor <init>(Landroid/hardware/TriggerEventListener;Landroid/os/Looper;Landroid/hardware/SystemSensorManager;)V
     .locals 1
-    .param p1    # Landroid/hardware/TriggerEventListener;
-    .param p2    # Landroid/os/Looper;
-    .param p3    # Landroid/hardware/SystemSensorManager;
 
     invoke-direct {p0, p2, p3}, Landroid/hardware/SystemSensorManager$BaseEventQueue;-><init>(Landroid/os/Looper;Landroid/hardware/SystemSensorManager;)V
 
@@ -53,7 +50,6 @@
 # virtual methods
 .method public addSensorEvent(Landroid/hardware/Sensor;)V
     .locals 4
-    .param p1    # Landroid/hardware/Sensor;
 
     new-instance v0, Landroid/hardware/TriggerEvent;
 
@@ -99,17 +95,12 @@
 
 .method protected dispatchFlushCompleteEvent(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method protected dispatchSensorEvent(I[FIJ)V
     .locals 6
-    .param p1    # I
-    .param p2    # [F
-    .param p3    # I
-    .param p4    # J
 
     const/4 v5, 0x0
 
@@ -212,7 +203,6 @@
 
 .method public removeSensorEvent(Landroid/hardware/Sensor;)V
     .locals 3
-    .param p1    # Landroid/hardware/Sensor;
 
     iget-object v1, p0, Landroid/hardware/SystemSensorManager$TriggerEventQueue;->mTriggerEvents:Landroid/util/SparseArray;
 

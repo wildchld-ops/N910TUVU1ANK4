@@ -191,7 +191,6 @@
 
 .method public static declared-synchronized getInstance(Ljava/lang/String;)Lcom/diotek/ime/framework/util/CSCReadAndSet;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     const-class v1, Lcom/diotek/ime/framework/util/CSCReadAndSet;
 
@@ -227,8 +226,6 @@
 
 .method private getTagNode(Lorg/w3c/dom/Node;Ljava/lang/String;)Lorg/w3c/dom/Node;
     .locals 8
-    .param p1    # Lorg/w3c/dom/Node;
-    .param p2    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -358,7 +355,6 @@
 
 .method private getTagValue(Ljava/lang/String;)Ljava/lang/String;
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -433,8 +429,6 @@
 
 .method private getTagValueReturnBoolean(Ljava/lang/String;Z)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     if-nez p1, :cond_1
 
@@ -522,8 +516,6 @@
 
 .method private getTagValueReturnString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -593,7 +585,6 @@
 
 .method private loadXMLFile(Ljava/lang/String;)V
     .locals 10
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     invoke-static {}, Ljavax/xml/parsers/DocumentBuilderFactory;->newInstance()Ljavax/xml/parsers/DocumentBuilderFactory;
@@ -977,8 +968,6 @@
 # virtual methods
 .method public setCustomerCSC(Landroid/content/Context;Z)V
     .locals 34
-    .param p1    # Landroid/content/Context;
-    .param p2    # Z
 
     move-object/from16 v0, p1
 
@@ -4189,8 +4178,6 @@
 
 .method public setSupportLanguageFromCustomerCSC(Landroid/content/Context;Z)V
     .locals 25
-    .param p1    # Landroid/content/Context;
-    .param p2    # Z
 
     move-object/from16 v0, p1
 

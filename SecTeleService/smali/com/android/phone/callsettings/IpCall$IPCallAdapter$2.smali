@@ -130,7 +130,7 @@
 
     iget-object v1, v1, Lcom/android/phone/callsettings/IpCall$IPCallAdapter;->this$0:Lcom/android/phone/callsettings/IpCall;
 
-    invoke-virtual {v1, v5}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {v1, v5}, Lcom/android/phone/callsettings/IpCall;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -182,7 +182,7 @@
 
     iget-object v1, v1, Lcom/android/phone/callsettings/IpCall$IPCallAdapter;->this$0:Lcom/android/phone/callsettings/IpCall;
 
-    invoke-virtual {v1, v3}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {v1, v3}, Lcom/android/phone/callsettings/IpCall;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -232,7 +232,7 @@
 
     iget-object v1, v1, Lcom/android/phone/callsettings/IpCall$IPCallAdapter;->this$0:Lcom/android/phone/callsettings/IpCall;
 
-    invoke-virtual {v1, v3}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {v1, v3}, Lcom/android/phone/callsettings/IpCall;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -290,7 +290,7 @@
 
     iget-object v1, v1, Lcom/android/phone/callsettings/IpCall$IPCallAdapter;->this$0:Lcom/android/phone/callsettings/IpCall;
 
-    invoke-virtual {v1, v5}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {v1, v5}, Lcom/android/phone/callsettings/IpCall;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -346,7 +346,7 @@
 
     const v1, 0x7f09047a
 
-    invoke-virtual {v0, v1}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {v0, v1}, Lcom/android/phone/callsettings/IpCall;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 

@@ -42,7 +42,6 @@
 # virtual methods
 .method public bridge synthetic onCallbackDied(Landroid/os/IInterface;)V
     .locals 0
-    .param p1    # Landroid/os/IInterface;
 
     check-cast p1, Landroid/print/IPrinterDiscoveryObserver;
 
@@ -53,7 +52,6 @@
 
 .method public onCallbackDied(Landroid/print/IPrinterDiscoveryObserver;)V
     .locals 2
-    .param p1    # Landroid/print/IPrinterDiscoveryObserver;
 
     iget-object v0, p0, Lcom/android/server/print/UserState$PrinterDiscoverySessionMediator$1;->this$1:Lcom/android/server/print/UserState$PrinterDiscoverySessionMediator;
 

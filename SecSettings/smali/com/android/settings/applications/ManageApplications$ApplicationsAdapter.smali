@@ -79,9 +79,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/settings/applications/ApplicationsState;Lcom/android/settings/applications/ManageApplications$TabInfo;I)V
     .locals 1
-    .param p1    # Lcom/android/settings/applications/ApplicationsState;
-    .param p2    # Lcom/android/settings/applications/ManageApplications$TabInfo;
-    .param p3    # I
 
     invoke-direct {p0}, Landroid/widget/BaseAdapter;-><init>()V
 
@@ -130,7 +127,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/applications/ManageApplications$ApplicationsAdapter;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/settings/applications/ManageApplications$ApplicationsAdapter;
 
     iget-object v0, p0, Lcom/android/settings/applications/ManageApplications$ApplicationsAdapter;->mBaseEntries:Ljava/util/ArrayList;
 
@@ -139,8 +135,6 @@
 
 .method static synthetic access$602(Lcom/android/settings/applications/ManageApplications$ApplicationsAdapter;Ljava/util/ArrayList;)Ljava/util/ArrayList;
     .locals 0
-    .param p0    # Lcom/android/settings/applications/ManageApplications$ApplicationsAdapter;
-    .param p1    # Ljava/util/ArrayList;
 
     iput-object p1, p0, Lcom/android/settings/applications/ManageApplications$ApplicationsAdapter;->mEntries:Ljava/util/ArrayList;
 
@@ -149,7 +143,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/applications/ManageApplications$ApplicationsAdapter;)Lcom/android/settings/applications/ManageApplications$TabInfo;
     .locals 1
-    .param p0    # Lcom/android/settings/applications/ManageApplications$ApplicationsAdapter;
 
     iget-object v0, p0, Lcom/android/settings/applications/ManageApplications$ApplicationsAdapter;->mTab:Lcom/android/settings/applications/ManageApplications$TabInfo;
 
@@ -160,7 +153,6 @@
 # virtual methods
 .method applyPrefixFilter(Ljava/lang/CharSequence;Ljava/util/ArrayList;)Ljava/util/ArrayList;
     .locals 8
-    .param p1    # Ljava/lang/CharSequence;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -265,7 +257,6 @@
 
 .method public getAppEntry(I)Lcom/android/settings/applications/ApplicationsState$AppEntry;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/settings/applications/ManageApplications$ApplicationsAdapter;->mEntries:Ljava/util/ArrayList;
 
@@ -310,7 +301,6 @@
 
 .method public getItem(I)Ljava/lang/Object;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/settings/applications/ManageApplications$ApplicationsAdapter;->mEntries:Ljava/util/ArrayList;
 
@@ -323,7 +313,6 @@
 
 .method public getItemId(I)J
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/settings/applications/ManageApplications$ApplicationsAdapter;->mEntries:Ljava/util/ArrayList;
 
@@ -340,9 +329,6 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     const/4 v2, 0x0
 
@@ -546,7 +532,6 @@
 
 .method public onMovedToScrapHeap(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Lcom/android/settings/applications/ManageApplications$ApplicationsAdapter;->mActive:Ljava/util/ArrayList;
 
@@ -573,7 +558,6 @@
 
 .method public onPackageSizeChanged(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -791,7 +775,6 @@
 
 .method public onRunningStateChanged(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/settings/applications/ManageApplications$ApplicationsAdapter;->mTab:Lcom/android/settings/applications/ManageApplications$TabInfo;
 
@@ -827,7 +810,6 @@
 
 .method public rebuild(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Lcom/android/settings/applications/ManageApplications$ApplicationsAdapter;->mLastSortMode:I
 
@@ -848,7 +830,6 @@
 
 .method public rebuild(Z)V
     .locals 9
-    .param p1    # Z
 
     const/4 v8, 0x1
 
@@ -1090,7 +1071,6 @@
 
 .method public resume(I)V
     .locals 4
-    .param p1    # I
 
     const/4 v3, 0x1
 

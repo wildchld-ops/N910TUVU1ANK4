@@ -62,7 +62,6 @@
 # direct methods
 .method public constructor <init>(Landroid/app/LauncherActivity;Landroid/app/LauncherActivity$IconResizer;)V
     .locals 1
-    .param p2    # Landroid/app/LauncherActivity$IconResizer;
 
     iput-object p1, p0, Landroid/app/LauncherActivity$ActivityAdapter;->this$0:Landroid/app/LauncherActivity;
 
@@ -103,7 +102,6 @@
 
 .method static synthetic access$100(Landroid/app/LauncherActivity$ActivityAdapter;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Landroid/app/LauncherActivity$ActivityAdapter;
 
     iget-object v0, p0, Landroid/app/LauncherActivity$ActivityAdapter;->mOriginalValues:Ljava/util/ArrayList;
 
@@ -112,8 +110,6 @@
 
 .method static synthetic access$102(Landroid/app/LauncherActivity$ActivityAdapter;Ljava/util/ArrayList;)Ljava/util/ArrayList;
     .locals 0
-    .param p0    # Landroid/app/LauncherActivity$ActivityAdapter;
-    .param p1    # Ljava/util/ArrayList;
 
     iput-object p1, p0, Landroid/app/LauncherActivity$ActivityAdapter;->mOriginalValues:Ljava/util/ArrayList;
 
@@ -122,7 +118,6 @@
 
 .method static synthetic access$200(Landroid/app/LauncherActivity$ActivityAdapter;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Landroid/app/LauncherActivity$ActivityAdapter;
 
     iget-object v0, p0, Landroid/app/LauncherActivity$ActivityAdapter;->lock:Ljava/lang/Object;
 
@@ -131,8 +126,6 @@
 
 .method private bindView(Landroid/view/View;Landroid/app/LauncherActivity$ListItem;)V
     .locals 5
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/app/LauncherActivity$ListItem;
 
     const/4 v4, 0x0
 
@@ -228,7 +221,6 @@
 
 .method public getItem(I)Ljava/lang/Object;
     .locals 1
-    .param p1    # I
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -239,7 +231,6 @@
 
 .method public getItemId(I)J
     .locals 2
-    .param p1    # I
 
     int-to-long v0, p1
 
@@ -248,9 +239,6 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     if-nez p2, :cond_0
 
@@ -285,7 +273,6 @@
 
 .method public intentForPosition(I)Landroid/content/Intent;
     .locals 4
-    .param p1    # I
 
     iget-object v2, p0, Landroid/app/LauncherActivity$ActivityAdapter;->mActivitiesList:Ljava/util/List;
 
@@ -333,7 +320,6 @@
 
 .method public itemForPosition(I)Landroid/app/LauncherActivity$ListItem;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/app/LauncherActivity$ActivityAdapter;->mActivitiesList:Ljava/util/List;
 

@@ -45,7 +45,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/mms/ui/ComposeMessageFragment$queryEventRegulator;Lcom/android/mms/ui/ComposeMessageFragment;)V
     .locals 2
-    .param p2    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     const/4 v1, 0x0
 
@@ -70,7 +69,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 2
-    .param p1    # Landroid/os/Message;
 
     const/4 v0, 0x0
 
@@ -216,8 +214,6 @@
 
 .method public setPendingTime(IZ)V
     .locals 4
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v0, 0x0
 

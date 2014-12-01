@@ -30,17 +30,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[BZIIILandroid/dirEncryption/IDirEncryptionManagerCallBack;Ljava/lang/String;I)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # [B
-    .param p5    # Z
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
-    .param p9    # Landroid/dirEncryption/IDirEncryptionManagerCallBack;
-    .param p10    # Ljava/lang/String;
-    .param p11    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

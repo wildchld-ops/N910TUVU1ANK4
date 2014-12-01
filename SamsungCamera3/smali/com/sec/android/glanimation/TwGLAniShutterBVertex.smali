@@ -14,12 +14,6 @@
 # direct methods
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;FFFFZ)V
     .locals 1
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # Z
 
     invoke-direct/range {p0 .. p5}, Lcom/sec/android/glview/TwGLAniVertex;-><init>(Lcom/sec/android/glview/TwGLContext;FFFF)V
 
@@ -98,7 +92,6 @@
 
 .method protected setCustomAnimation(F)V
     .locals 21
-    .param p1    # F
 
     invoke-virtual/range {p0 .. p0}, Lcom/sec/android/glview/TwGLView;->getLeft()F
 

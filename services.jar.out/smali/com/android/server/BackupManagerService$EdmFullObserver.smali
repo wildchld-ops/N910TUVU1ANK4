@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Lcom/android/server/BackupManagerService;Lcom/android/server/BackupManagerService$1;)V
     .locals 0
-    .param p1    # Lcom/android/server/BackupManagerService;
-    .param p2    # Lcom/android/server/BackupManagerService$1;
 
     invoke-direct {p0, p1}, Lcom/android/server/BackupManagerService$EdmFullObserver;-><init>(Lcom/android/server/BackupManagerService;)V
 
@@ -43,7 +41,6 @@
 # virtual methods
 .method public onBackupPackage(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -143,7 +140,6 @@
 
 .method public onRestorePackage(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

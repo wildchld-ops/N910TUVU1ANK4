@@ -23,8 +23,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/mms/transaction/TransactionService;Landroid/os/Looper;Lcom/android/mms/transaction/Observer;)V
     .locals 0
-    .param p2    # Landroid/os/Looper;
-    .param p3    # Lcom/android/mms/transaction/Observer;
 
     iput-object p1, p0, Lcom/android/mms/transaction/TransactionService$ServiceHandler;->this$0:Lcom/android/mms/transaction/TransactionService;
 
@@ -37,10 +35,6 @@
 
 .method static synthetic access$2200(Lcom/android/mms/transaction/TransactionService$ServiceHandler;Lcom/android/mms/transaction/Transaction;Lcom/android/mms/transaction/TransactionSettings;I)V
     .locals 0
-    .param p0    # Lcom/android/mms/transaction/TransactionService$ServiceHandler;
-    .param p1    # Lcom/android/mms/transaction/Transaction;
-    .param p2    # Lcom/android/mms/transaction/TransactionSettings;
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/mms/transaction/TransactionService$ServiceHandler;->processPendingTransaction(Lcom/android/mms/transaction/Transaction;Lcom/android/mms/transaction/TransactionSettings;I)V
 
@@ -49,7 +43,6 @@
 
 .method private decodeMessage(Landroid/os/Message;)Ljava/lang/String;
     .locals 2
-    .param p1    # Landroid/os/Message;
 
     iget v0, p1, Landroid/os/Message;->what:I
 
@@ -125,7 +118,6 @@
 
 .method private decodeTransactionType(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     if-nez p1, :cond_0
 
@@ -169,9 +161,6 @@
 
 .method private processPendingTransaction(Lcom/android/mms/transaction/Transaction;Lcom/android/mms/transaction/TransactionSettings;I)V
     .locals 1
-    .param p1    # Lcom/android/mms/transaction/Transaction;
-    .param p2    # Lcom/android/mms/transaction/TransactionSettings;
-    .param p3    # I
 
     const/4 v0, 0x0
 
@@ -182,7 +171,6 @@
 
 .method private processTransaction(Lcom/android/mms/transaction/Transaction;)Z
     .locals 2
-    .param p1    # Lcom/android/mms/transaction/Transaction;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -202,9 +190,6 @@
 
 .method private processTransaction(Lcom/android/mms/transaction/Transaction;ILjava/lang/String;)Z
     .locals 21
-    .param p1    # Lcom/android/mms/transaction/Transaction;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1757,9 +1742,6 @@
 # virtual methods
 .method public failSendMessageMMS(Landroid/net/Uri;JI)Z
     .locals 19
-    .param p1    # Landroid/net/Uri;
-    .param p2    # J
-    .param p4    # I
 
     move-object/from16 v0, p0
 
@@ -2129,7 +2111,6 @@
 
 .method public failWriteProc(I)V
     .locals 26
-    .param p1    # I
 
     move-object/from16 v0, p0
 
@@ -2600,7 +2581,6 @@
 
 .method public handleMessage(Landroid/os/Message;)V
     .locals 32
-    .param p1    # Landroid/os/Message;
 
     move-object/from16 v0, p0
 
@@ -5187,10 +5167,6 @@
 
 .method public processPendingTransaction(Lcom/android/mms/transaction/Transaction;Lcom/android/mms/transaction/TransactionSettings;ZI)V
     .locals 8
-    .param p1    # Lcom/android/mms/transaction/Transaction;
-    .param p2    # Lcom/android/mms/transaction/TransactionSettings;
-    .param p3    # Z
-    .param p4    # I
 
     iget-object v5, p0, Lcom/android/mms/transaction/TransactionService$ServiceHandler;->this$0:Lcom/android/mms/transaction/TransactionService;
 

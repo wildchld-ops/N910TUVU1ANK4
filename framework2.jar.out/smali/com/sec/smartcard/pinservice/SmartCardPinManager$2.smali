@@ -61,7 +61,6 @@
 
 .method public onUserEnteredPin([C)V
     .locals 2
-    .param p1    # [C
 
     iget-object v0, p0, Lcom/sec/smartcard/pinservice/SmartCardPinManager$2;->this$0:Lcom/sec/smartcard/pinservice/SmartCardPinManager;
 
@@ -84,7 +83,6 @@
 
 .method public onUserPinError(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/smartcard/pinservice/SmartCardPinManager$2;->this$0:Lcom/sec/smartcard/pinservice/SmartCardPinManager;
 

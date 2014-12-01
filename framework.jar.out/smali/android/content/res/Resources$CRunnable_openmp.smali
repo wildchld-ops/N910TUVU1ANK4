@@ -33,11 +33,6 @@
 # direct methods
 .method constructor <init>(Landroid/content/res/Resources;Landroid/util/TypedValue;Ljava/lang/String;Landroid/content/res/Resources;JZ)V
     .locals 1
-    .param p2    # Landroid/util/TypedValue;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Landroid/content/res/Resources;
-    .param p5    # J
-    .param p7    # Z
 
     iput-object p1, p0, Landroid/content/res/Resources$CRunnable_openmp;->this$0:Landroid/content/res/Resources;
 

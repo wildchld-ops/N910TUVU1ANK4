@@ -27,8 +27,6 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/cover/CoverManager;Lcom/samsung/android/cover/CoverManager$StateListener;Landroid/os/Handler;)V
     .locals 3
-    .param p2    # Lcom/samsung/android/cover/CoverManager$StateListener;
-    .param p3    # Landroid/os/Handler;
 
     iput-object p1, p0, Lcom/samsung/android/cover/CoverManager$CoverListenerDelegate;->this$0:Lcom/samsung/android/cover/CoverManager;
 
@@ -85,7 +83,6 @@
 
 .method static synthetic access$100(Lcom/samsung/android/cover/CoverManager$CoverListenerDelegate;)Lcom/samsung/android/cover/CoverManager$StateListener;
     .locals 1
-    .param p0    # Lcom/samsung/android/cover/CoverManager$CoverListenerDelegate;
 
     iget-object v0, p0, Lcom/samsung/android/cover/CoverManager$CoverListenerDelegate;->mListener:Lcom/samsung/android/cover/CoverManager$StateListener;
 
@@ -94,7 +91,6 @@
 
 .method static synthetic access$200(Lcom/samsung/android/cover/CoverManager$CoverListenerDelegate;)Landroid/os/PersonaManager;
     .locals 1
-    .param p0    # Lcom/samsung/android/cover/CoverManager$CoverListenerDelegate;
 
     iget-object v0, p0, Lcom/samsung/android/cover/CoverManager$CoverListenerDelegate;->mPersona:Landroid/os/PersonaManager;
 
@@ -105,7 +101,6 @@
 # virtual methods
 .method public coverCallback(Lcom/samsung/android/cover/CoverState;)V
     .locals 2
-    .param p1    # Lcom/samsung/android/cover/CoverState;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

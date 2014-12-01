@@ -67,7 +67,6 @@
 
 .method private getValueAt(J)F
     .locals 10
-    .param p1    # J
 
     const/high16 v9, 0x3f800000
 
@@ -154,7 +153,6 @@
 
 .method private interpolateValue(F)F
     .locals 2
-    .param p1    # F
 
     const/high16 v0, -0x3f800000
 
@@ -365,7 +363,6 @@
 
 .method public setRampDownDuration(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/internal/widget/AutoScrollHelper$ClampedScroller;->mRampDownDuration:I
 
@@ -374,7 +371,6 @@
 
 .method public setRampUpDuration(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/internal/widget/AutoScrollHelper$ClampedScroller;->mRampUpDuration:I
 
@@ -383,8 +379,6 @@
 
 .method public setTargetVelocity(FF)V
     .locals 0
-    .param p1    # F
-    .param p2    # F
 
     iput p1, p0, Lcom/android/internal/widget/AutoScrollHelper$ClampedScroller;->mTargetVelocityX:F
 

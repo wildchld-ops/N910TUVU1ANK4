@@ -29,7 +29,6 @@
 # direct methods
 .method constructor <init>(Landroid/webkitsec/CallbackProxy;)V
     .locals 1
-    .param p1    # Landroid/webkitsec/CallbackProxy;
 
     invoke-direct {p0}, Landroid/webkitsec/WebBackForwardList;-><init>()V
 
@@ -53,7 +52,6 @@
 
 .method private declared-synchronized removeHistoryItem(I)V
     .locals 2
-    .param p1    # I
 
     monitor-enter p0
 
@@ -93,7 +91,6 @@
 # virtual methods
 .method declared-synchronized addHistoryItem(Landroid/webkitsec/WebHistoryItem;)V
     .locals 6
-    .param p1    # Landroid/webkitsec/WebHistoryItem;
 
     monitor-enter p0
 
@@ -272,7 +269,6 @@
 
 .method declared-synchronized close(I)V
     .locals 1
-    .param p1    # I
 
     monitor-enter p0
 
@@ -387,7 +383,6 @@
 
 .method public bridge synthetic getItemAtIndex(I)Landroid/webkitsec/WebHistoryItem;
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/webkitsec/WebBackForwardListClassic;->getItemAtIndex(I)Landroid/webkitsec/WebHistoryItemClassic;
 
@@ -398,7 +393,6 @@
 
 .method public declared-synchronized getItemAtIndex(I)Landroid/webkitsec/WebHistoryItemClassic;
     .locals 1
-    .param p1    # I
 
     monitor-enter p0
 
@@ -495,7 +489,6 @@
 
 .method declared-synchronized setCurrentIndex(I)V
     .locals 2
-    .param p1    # I
 
     monitor-enter p0
 

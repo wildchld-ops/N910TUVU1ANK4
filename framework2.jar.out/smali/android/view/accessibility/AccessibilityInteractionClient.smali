@@ -360,8 +360,6 @@
 
 .method private finalizeAndCacheAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;I)V
     .locals 1
-    .param p1    # Landroid/view/accessibility/AccessibilityNodeInfo;
-    .param p2    # I
 
     if-eqz p1, :cond_0
 
@@ -381,7 +379,6 @@
 
 .method private finalizeAndCacheAccessibilityNodeInfos(Ljava/util/List;I)V
     .locals 3
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -421,7 +418,6 @@
 
 .method private getFindAccessibilityNodeInfoResultAndClear(I)Landroid/view/accessibility/AccessibilityNodeInfo;
     .locals 4
-    .param p1    # I
 
     iget-object v3, p0, Landroid/view/accessibility/AccessibilityInteractionClient;->mInstanceLock:Ljava/lang/Object;
 
@@ -460,7 +456,6 @@
 
 .method private getFindAccessibilityNodeInfosResultAndClear(I)Ljava/util/List;
     .locals 4
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -537,7 +532,6 @@
 
 .method public static getInstanceForThread(J)Landroid/view/accessibility/AccessibilityInteractionClient;
     .locals 3
-    .param p0    # J
 
     sget-object v2, Landroid/view/accessibility/AccessibilityInteractionClient;->sStaticLock:Ljava/lang/Object;
 
@@ -579,7 +573,6 @@
 
 .method private getPerformAccessibilityActionResultAndClear(I)Z
     .locals 4
-    .param p1    # I
 
     iget-object v3, p0, Landroid/view/accessibility/AccessibilityInteractionClient;->mInstanceLock:Ljava/lang/Object;
 
@@ -646,7 +639,6 @@
 
 .method private waitForResultTimedLocked(I)Z
     .locals 10
-    .param p1    # I
 
     const/4 v7, 0x0
 
@@ -719,8 +711,6 @@
 # virtual methods
 .method public addConnection(ILandroid/accessibilityservice/IAccessibilityServiceConnection;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/accessibilityservice/IAccessibilityServiceConnection;
 
     sget-object v1, Landroid/view/accessibility/AccessibilityInteractionClient;->sConnectionCache:Landroid/util/SparseArray;
 
@@ -757,11 +747,6 @@
 
 .method public findAccessibilityNodeInfoByAccessibilityId(IIJZI)Landroid/view/accessibility/AccessibilityNodeInfo;
     .locals 14
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
-    .param p5    # Z
-    .param p6    # I
 
     :try_start_0
     invoke-virtual {p0, p1}, Landroid/view/accessibility/AccessibilityInteractionClient;->getConnection(I)Landroid/accessibilityservice/IAccessibilityServiceConnection;
@@ -853,10 +838,6 @@
 
 .method public findAccessibilityNodeInfosByText(IIJLjava/lang/String;)Ljava/util/List;
     .locals 11
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
-    .param p5    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(IIJ",
@@ -930,10 +911,6 @@
 
 .method public findAccessibilityNodeInfosByViewId(IIJLjava/lang/String;)Ljava/util/List;
     .locals 11
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
-    .param p5    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(IIJ",
@@ -1007,10 +984,6 @@
 
 .method public findFocus(IIJI)Landroid/view/accessibility/AccessibilityNodeInfo;
     .locals 11
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
-    .param p5    # I
 
     :try_start_0
     invoke-virtual {p0, p1}, Landroid/view/accessibility/AccessibilityInteractionClient;->getConnection(I)Landroid/accessibilityservice/IAccessibilityServiceConnection;
@@ -1069,10 +1042,6 @@
 
 .method public focusSearch(IIJI)Landroid/view/accessibility/AccessibilityNodeInfo;
     .locals 11
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
-    .param p5    # I
 
     :try_start_0
     invoke-virtual {p0, p1}, Landroid/view/accessibility/AccessibilityInteractionClient;->getConnection(I)Landroid/accessibilityservice/IAccessibilityServiceConnection;
@@ -1131,7 +1100,6 @@
 
 .method public getConnection(I)Landroid/accessibilityservice/IAccessibilityServiceConnection;
     .locals 2
-    .param p1    # I
 
     sget-object v1, Landroid/view/accessibility/AccessibilityInteractionClient;->sConnectionCache:Landroid/util/SparseArray;
 
@@ -1162,7 +1130,6 @@
 
 .method public getRootInActiveWindow(I)Landroid/view/accessibility/AccessibilityNodeInfo;
     .locals 7
-    .param p1    # I
 
     const/4 v2, -0x1
 
@@ -1185,7 +1152,6 @@
 
 .method public onAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
     .locals 1
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
 
     sget-object v0, Landroid/view/accessibility/AccessibilityInteractionClient;->sAccessibilityNodeInfoCache:Landroid/view/accessibility/AccessibilityNodeInfoCache;
 
@@ -1196,11 +1162,6 @@
 
 .method public performAccessibilityAction(IIJILandroid/os/Bundle;)Z
     .locals 11
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
-    .param p5    # I
-    .param p6    # Landroid/os/Bundle;
 
     :try_start_0
     invoke-virtual {p0, p1}, Landroid/view/accessibility/AccessibilityInteractionClient;->getConnection(I)Landroid/accessibilityservice/IAccessibilityServiceConnection;
@@ -1259,7 +1220,6 @@
 
 .method public removeConnection(I)V
     .locals 2
-    .param p1    # I
 
     sget-object v1, Landroid/view/accessibility/AccessibilityInteractionClient;->sConnectionCache:Landroid/util/SparseArray;
 
@@ -1286,8 +1246,6 @@
 
 .method public setFindAccessibilityNodeInfoResult(Landroid/view/accessibility/AccessibilityNodeInfo;I)V
     .locals 2
-    .param p1    # Landroid/view/accessibility/AccessibilityNodeInfo;
-    .param p2    # I
 
     iget-object v1, p0, Landroid/view/accessibility/AccessibilityInteractionClient;->mInstanceLock:Ljava/lang/Object;
 
@@ -1323,7 +1281,6 @@
 
 .method public setFindAccessibilityNodeInfosResult(Ljava/util/List;I)V
     .locals 4
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1412,8 +1369,6 @@
 
 .method public setPerformAccessibilityActionResult(ZI)V
     .locals 2
-    .param p1    # Z
-    .param p2    # I
 
     iget-object v1, p0, Landroid/view/accessibility/AccessibilityInteractionClient;->mInstanceLock:Ljava/lang/Object;
 
@@ -1449,7 +1404,6 @@
 
 .method public setSameThreadMessage(Landroid/os/Message;)V
     .locals 2
-    .param p1    # Landroid/os/Message;
 
     iget-object v1, p0, Landroid/view/accessibility/AccessibilityInteractionClient;->mInstanceLock:Ljava/lang/Object;
 

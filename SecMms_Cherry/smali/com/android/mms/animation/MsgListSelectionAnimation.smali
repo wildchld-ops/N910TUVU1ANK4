@@ -26,8 +26,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Lcom/android/mms/ui/MsgSweepActionListView;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/mms/ui/MsgSweepActionListView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -80,7 +78,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/animation/MsgListSelectionAnimation;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/mms/animation/MsgListSelectionAnimation;
 
     iget-object v0, p0, Lcom/android/mms/animation/MsgListSelectionAnimation;->TAG:Ljava/lang/String;
 
@@ -89,7 +86,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/animation/MsgListSelectionAnimation;)Lcom/android/mms/ui/MsgSweepActionListView;
     .locals 1
-    .param p0    # Lcom/android/mms/animation/MsgListSelectionAnimation;
 
     iget-object v0, p0, Lcom/android/mms/animation/MsgListSelectionAnimation;->mListView:Lcom/android/mms/ui/MsgSweepActionListView;
 
@@ -98,7 +94,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/animation/MsgListSelectionAnimation;)I
     .locals 1
-    .param p0    # Lcom/android/mms/animation/MsgListSelectionAnimation;
 
     invoke-direct {p0}, Lcom/android/mms/animation/MsgListSelectionAnimation;->getChbTransX()I
 
@@ -109,7 +104,6 @@
 
 .method static synthetic access$300(Lcom/android/mms/animation/MsgListSelectionAnimation;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/animation/MsgListSelectionAnimation;
 
     iget-boolean v0, p0, Lcom/android/mms/animation/MsgListSelectionAnimation;->mIsShowMode:Z
 
@@ -118,11 +112,6 @@
 
 .method static synthetic access$400(Lcom/android/mms/animation/MsgListSelectionAnimation;Landroid/view/View;IIF)V
     .locals 0
-    .param p0    # Lcom/android/mms/animation/MsgListSelectionAnimation;
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # F
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/mms/animation/MsgListSelectionAnimation;->prepareCheckBoxAnimate(Landroid/view/View;IIF)V
 
@@ -131,10 +120,6 @@
 
 .method static synthetic access$500(Lcom/android/mms/animation/MsgListSelectionAnimation;Landroid/view/View;II)V
     .locals 0
-    .param p0    # Lcom/android/mms/animation/MsgListSelectionAnimation;
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/mms/animation/MsgListSelectionAnimation;->prepareContainerSlideInAnimate(Landroid/view/View;II)V
 
@@ -143,10 +128,6 @@
 
 .method static synthetic access$600(Lcom/android/mms/animation/MsgListSelectionAnimation;Landroid/view/View;II)V
     .locals 0
-    .param p0    # Lcom/android/mms/animation/MsgListSelectionAnimation;
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/mms/animation/MsgListSelectionAnimation;->prepareContainerSlideOutAnimate(Landroid/view/View;II)V
 
@@ -192,10 +173,6 @@
 
 .method private prepareCheckBoxAnimate(Landroid/view/View;IIF)V
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # F
 
     int-to-float v0, p2
 
@@ -242,9 +219,6 @@
 
 .method private prepareContainerSlideInAnimate(Landroid/view/View;II)V
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # I
 
     int-to-float v0, p2
 
@@ -287,9 +261,6 @@
 
 .method private prepareContainerSlideOutAnimate(Landroid/view/View;II)V
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # I
 
     int-to-float v0, p2
 
@@ -336,8 +307,6 @@
 # virtual methods
 .method public setCheckBoxAnimation(Lcom/android/mms/ui/MsgSweepActionListView;Z)V
     .locals 5
-    .param p1    # Lcom/android/mms/ui/MsgSweepActionListView;
-    .param p2    # Z
 
     if-nez p1, :cond_1
 

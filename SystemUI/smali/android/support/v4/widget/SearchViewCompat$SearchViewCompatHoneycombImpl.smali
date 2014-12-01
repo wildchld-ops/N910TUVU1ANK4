@@ -27,7 +27,6 @@
 # virtual methods
 .method public getQuery(Landroid/view/View;)Ljava/lang/CharSequence;
     .locals 1
-    .param p1    # Landroid/view/View;
 
     invoke-static {p1}, Landroid/support/v4/widget/SearchViewCompatHoneycomb;->getQuery(Landroid/view/View;)Ljava/lang/CharSequence;
 
@@ -38,7 +37,6 @@
 
 .method public isIconified(Landroid/view/View;)Z
     .locals 1
-    .param p1    # Landroid/view/View;
 
     invoke-static {p1}, Landroid/support/v4/widget/SearchViewCompatHoneycomb;->isIconified(Landroid/view/View;)Z
 
@@ -49,7 +47,6 @@
 
 .method public isQueryRefinementEnabled(Landroid/view/View;)Z
     .locals 1
-    .param p1    # Landroid/view/View;
 
     invoke-static {p1}, Landroid/support/v4/widget/SearchViewCompatHoneycomb;->isQueryRefinementEnabled(Landroid/view/View;)Z
 
@@ -60,7 +57,6 @@
 
 .method public isSubmitButtonEnabled(Landroid/view/View;)Z
     .locals 1
-    .param p1    # Landroid/view/View;
 
     invoke-static {p1}, Landroid/support/v4/widget/SearchViewCompatHoneycomb;->isSubmitButtonEnabled(Landroid/view/View;)Z
 
@@ -71,7 +67,6 @@
 
 .method public newOnCloseListener(Landroid/support/v4/widget/SearchViewCompat$OnCloseListenerCompat;)Ljava/lang/Object;
     .locals 1
-    .param p1    # Landroid/support/v4/widget/SearchViewCompat$OnCloseListenerCompat;
 
     new-instance v0, Landroid/support/v4/widget/SearchViewCompat$SearchViewCompatHoneycombImpl$2;
 
@@ -86,7 +81,6 @@
 
 .method public newOnQueryTextListener(Landroid/support/v4/widget/SearchViewCompat$OnQueryTextListenerCompat;)Ljava/lang/Object;
     .locals 1
-    .param p1    # Landroid/support/v4/widget/SearchViewCompat$OnQueryTextListenerCompat;
 
     new-instance v0, Landroid/support/v4/widget/SearchViewCompat$SearchViewCompatHoneycombImpl$1;
 
@@ -101,7 +95,6 @@
 
 .method public newSearchView(Landroid/content/Context;)Landroid/view/View;
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-static {p1}, Landroid/support/v4/widget/SearchViewCompatHoneycomb;->newSearchView(Landroid/content/Context;)Landroid/view/View;
 
@@ -112,8 +105,6 @@
 
 .method public setIconified(Landroid/view/View;Z)V
     .locals 0
-    .param p1    # Landroid/view/View;
-    .param p2    # Z
 
     invoke-static {p1, p2}, Landroid/support/v4/widget/SearchViewCompatHoneycomb;->setIconified(Landroid/view/View;Z)V
 
@@ -122,8 +113,6 @@
 
 .method public setMaxWidth(Landroid/view/View;I)V
     .locals 0
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     invoke-static {p1, p2}, Landroid/support/v4/widget/SearchViewCompatHoneycomb;->setMaxWidth(Landroid/view/View;I)V
 
@@ -132,8 +121,6 @@
 
 .method public setOnCloseListener(Ljava/lang/Object;Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Object;
 
     invoke-static {p1, p2}, Landroid/support/v4/widget/SearchViewCompatHoneycomb;->setOnCloseListener(Ljava/lang/Object;Ljava/lang/Object;)V
 
@@ -142,8 +129,6 @@
 
 .method public setOnQueryTextListener(Ljava/lang/Object;Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Object;
 
     invoke-static {p1, p2}, Landroid/support/v4/widget/SearchViewCompatHoneycomb;->setOnQueryTextListener(Ljava/lang/Object;Ljava/lang/Object;)V
 
@@ -152,9 +137,6 @@
 
 .method public setQuery(Landroid/view/View;Ljava/lang/CharSequence;Z)V
     .locals 0
-    .param p1    # Landroid/view/View;
-    .param p2    # Ljava/lang/CharSequence;
-    .param p3    # Z
 
     invoke-static {p1, p2, p3}, Landroid/support/v4/widget/SearchViewCompatHoneycomb;->setQuery(Landroid/view/View;Ljava/lang/CharSequence;Z)V
 
@@ -163,8 +145,6 @@
 
 .method public setQueryHint(Landroid/view/View;Ljava/lang/CharSequence;)V
     .locals 0
-    .param p1    # Landroid/view/View;
-    .param p2    # Ljava/lang/CharSequence;
 
     invoke-static {p1, p2}, Landroid/support/v4/widget/SearchViewCompatHoneycomb;->setQueryHint(Landroid/view/View;Ljava/lang/CharSequence;)V
 
@@ -173,8 +153,6 @@
 
 .method public setQueryRefinementEnabled(Landroid/view/View;Z)V
     .locals 0
-    .param p1    # Landroid/view/View;
-    .param p2    # Z
 
     invoke-static {p1, p2}, Landroid/support/v4/widget/SearchViewCompatHoneycomb;->setQueryRefinementEnabled(Landroid/view/View;Z)V
 
@@ -183,8 +161,6 @@
 
 .method public setSearchableInfo(Landroid/view/View;Landroid/content/ComponentName;)V
     .locals 0
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/content/ComponentName;
 
     invoke-static {p1, p2}, Landroid/support/v4/widget/SearchViewCompatHoneycomb;->setSearchableInfo(Landroid/view/View;Landroid/content/ComponentName;)V
 
@@ -193,8 +169,6 @@
 
 .method public setSubmitButtonEnabled(Landroid/view/View;Z)V
     .locals 0
-    .param p1    # Landroid/view/View;
-    .param p2    # Z
 
     invoke-static {p1, p2}, Landroid/support/v4/widget/SearchViewCompatHoneycomb;->setSubmitButtonEnabled(Landroid/view/View;Z)V
 

@@ -59,7 +59,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/touchsensibility/TapAndHoldDelayCustomFragment;)Lcom/android/settings/touchsensibility/TapAndHoldView;
     .locals 1
-    .param p0    # Lcom/android/settings/touchsensibility/TapAndHoldDelayCustomFragment;
 
     iget-object v0, p0, Lcom/android/settings/touchsensibility/TapAndHoldDelayCustomFragment;->mTabAndHoldView:Lcom/android/settings/touchsensibility/TapAndHoldView;
 
@@ -68,7 +67,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/touchsensibility/TapAndHoldDelayCustomFragment;)Landroid/widget/Button;
     .locals 1
-    .param p0    # Lcom/android/settings/touchsensibility/TapAndHoldDelayCustomFragment;
 
     iget-object v0, p0, Lcom/android/settings/touchsensibility/TapAndHoldDelayCustomFragment;->mSaveBttn:Landroid/widget/Button;
 
@@ -85,7 +83,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/touchsensibility/TapAndHoldDelayCustomFragment;)Ljava/lang/Runnable;
     .locals 1
-    .param p0    # Lcom/android/settings/touchsensibility/TapAndHoldDelayCustomFragment;
 
     iget-object v0, p0, Lcom/android/settings/touchsensibility/TapAndHoldDelayCustomFragment;->mRunnable:Ljava/lang/Runnable;
 
@@ -94,7 +91,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/touchsensibility/TapAndHoldDelayCustomFragment;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/settings/touchsensibility/TapAndHoldDelayCustomFragment;
 
     iget-object v0, p0, Lcom/android/settings/touchsensibility/TapAndHoldDelayCustomFragment;->mHandler:Landroid/os/Handler;
 
@@ -103,7 +99,6 @@
 
 .method private updateLongPressTimeOut(I)V
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/settings/SettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -120,7 +115,6 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 3
-    .param p1    # Landroid/view/View;
 
     iget-object v1, p0, Lcom/android/settings/touchsensibility/TapAndHoldDelayCustomFragment;->mSaveBttn:Landroid/widget/Button;
 
@@ -148,7 +142,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 1
-    .param p1    # Landroid/content/res/Configuration;
 
     iget-object v0, p0, Lcom/android/settings/touchsensibility/TapAndHoldDelayCustomFragment;->mTabAndHoldView:Lcom/android/settings/touchsensibility/TapAndHoldView;
 
@@ -159,9 +152,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 3
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const v1, 0x7f040248
 

@@ -26,7 +26,6 @@
 # direct methods
 .method public constructor <init>(I)V
     .locals 1
-    .param p1    # I
 
     invoke-static {p1}, Landroid/hardware/camera2/CameraAccessException;->getDefaultMessage(I)Ljava/lang/String;
 
@@ -41,8 +40,6 @@
 
 .method public constructor <init>(ILjava/lang/String;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p2}, Landroid/util/AndroidException;-><init>(Ljava/lang/String;)V
 
@@ -53,9 +50,6 @@
 
 .method public constructor <init>(ILjava/lang/String;Ljava/lang/Throwable;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/Throwable;
 
     invoke-direct {p0, p2, p3}, Landroid/util/AndroidException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
 
@@ -66,8 +60,6 @@
 
 .method public constructor <init>(ILjava/lang/Throwable;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/Throwable;
 
     invoke-static {p1}, Landroid/hardware/camera2/CameraAccessException;->getDefaultMessage(I)Ljava/lang/String;
 
@@ -82,7 +74,6 @@
 
 .method private static getDefaultMessage(I)Ljava/lang/String;
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 

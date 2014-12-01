@@ -21,7 +21,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/settings/fingerprint/RegisterFingerprint;Landroid/graphics/drawable/AnimationDrawable;)V
     .locals 0
-    .param p2    # Landroid/graphics/drawable/AnimationDrawable;
 
     iput-object p1, p0, Lcom/android/settings/fingerprint/RegisterFingerprint$16;->this$0:Lcom/android/settings/fingerprint/RegisterFingerprint;
 

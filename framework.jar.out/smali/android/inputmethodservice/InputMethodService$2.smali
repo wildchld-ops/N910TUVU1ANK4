@@ -36,7 +36,6 @@
 # virtual methods
 .method public onComputeInternalInsets(Landroid/view/ViewTreeObserver$InternalInsetsInfo;)V
     .locals 4
-    .param p1    # Landroid/view/ViewTreeObserver$InternalInsetsInfo;
 
     iget-object v1, p0, Landroid/inputmethodservice/InputMethodService$2;->this$0:Landroid/inputmethodservice/InputMethodService;
 

@@ -65,8 +65,6 @@
 
 .method public setDensity(II)Z
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     const/4 v2, 0x0
 
@@ -129,7 +127,6 @@
 
 .method public setEnable(Z)Z
     .locals 6
-    .param p1    # Z
 
     const/4 v2, 0x0
 
@@ -214,7 +211,6 @@
 
 .method public setInternalEnable(Z)Z
     .locals 6
-    .param p1    # Z
 
     const/4 v2, 0x0
 
@@ -277,7 +273,6 @@
 
 .method public setLevel(I)Z
     .locals 6
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -340,8 +335,6 @@
 
 .method public setSharpness(II)Z
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     const/4 v2, 0x0
 
@@ -404,8 +397,6 @@
 
 .method public setStrength(II)Z
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     const/4 v2, 0x0
 

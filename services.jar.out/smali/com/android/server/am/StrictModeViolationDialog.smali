@@ -26,10 +26,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Lcom/android/server/am/ActivityManagerService;Lcom/android/server/am/AppErrorResult;Lcom/android/server/am/ProcessRecord;)V
     .locals 9
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/server/am/ActivityManagerService;
-    .param p3    # Lcom/android/server/am/AppErrorResult;
-    .param p4    # Lcom/android/server/am/ProcessRecord;
 
     const/4 v8, 0x1
 
@@ -244,7 +240,6 @@
 
 .method static synthetic access$000(Lcom/android/server/am/StrictModeViolationDialog;)Lcom/android/server/am/ActivityManagerService;
     .locals 1
-    .param p0    # Lcom/android/server/am/StrictModeViolationDialog;
 
     iget-object v0, p0, Lcom/android/server/am/StrictModeViolationDialog;->mService:Lcom/android/server/am/ActivityManagerService;
 
@@ -253,7 +248,6 @@
 
 .method static synthetic access$100(Lcom/android/server/am/StrictModeViolationDialog;)Lcom/android/server/am/ProcessRecord;
     .locals 1
-    .param p0    # Lcom/android/server/am/StrictModeViolationDialog;
 
     iget-object v0, p0, Lcom/android/server/am/StrictModeViolationDialog;->mProc:Lcom/android/server/am/ProcessRecord;
 
@@ -262,7 +256,6 @@
 
 .method static synthetic access$200(Lcom/android/server/am/StrictModeViolationDialog;)Lcom/android/server/am/AppErrorResult;
     .locals 1
-    .param p0    # Lcom/android/server/am/StrictModeViolationDialog;
 
     iget-object v0, p0, Lcom/android/server/am/StrictModeViolationDialog;->mResult:Lcom/android/server/am/AppErrorResult;
 

@@ -64,7 +64,6 @@
 
 .method public constructor <init>(Landroid/net/wifi/WpsResult$Status;)V
     .locals 1
-    .param p1    # Landroid/net/wifi/WpsResult$Status;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -79,7 +78,6 @@
 
 .method public constructor <init>(Landroid/net/wifi/WpsResult;)V
     .locals 1
-    .param p1    # Landroid/net/wifi/WpsResult;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -155,8 +153,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v0, p0, Landroid/net/wifi/WpsResult;->status:Landroid/net/wifi/WpsResult$Status;
 

@@ -38,7 +38,6 @@
 
 .method synthetic constructor <init>(Lcom/sec/android/app/camera/gallery/ImageListUber$1;)V
     .locals 0
-    .param p1    # Lcom/sec/android/app/camera/gallery/ImageListUber$1;
 
     invoke-direct {p0}, Lcom/sec/android/app/camera/gallery/ImageListUber$DescendingComparator;-><init>()V
 
@@ -49,8 +48,6 @@
 # virtual methods
 .method public compare(Lcom/sec/android/app/camera/gallery/ImageListUber$MergeSlot;Lcom/sec/android/app/camera/gallery/ImageListUber$MergeSlot;)I
     .locals 4
-    .param p1    # Lcom/sec/android/app/camera/gallery/ImageListUber$MergeSlot;
-    .param p2    # Lcom/sec/android/app/camera/gallery/ImageListUber$MergeSlot;
 
     iget-wide v0, p1, Lcom/sec/android/app/camera/gallery/ImageListUber$MergeSlot;->mDateTaken:J
 
@@ -90,8 +87,6 @@
 
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p1, Lcom/sec/android/app/camera/gallery/ImageListUber$MergeSlot;
 

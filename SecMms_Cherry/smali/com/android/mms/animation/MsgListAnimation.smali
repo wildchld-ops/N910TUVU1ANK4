@@ -46,8 +46,6 @@
 
 .method private createCheckBoxAnimation(Landroid/view/View;Z)Landroid/view/animation/Animation;
     .locals 6
-    .param p1    # Landroid/view/View;
-    .param p2    # Z
 
     const-wide/16 v1, 0x12c
 
@@ -74,7 +72,6 @@
 
 .method private createDateAnimation(Landroid/view/View;)Landroid/view/animation/Animation;
     .locals 6
-    .param p1    # Landroid/view/View;
 
     const-wide/16 v1, 0x258
 
@@ -101,7 +98,6 @@
 
 .method private createStatusAnimation(Landroid/view/View;)Landroid/view/animation/Animation;
     .locals 6
-    .param p1    # Landroid/view/View;
 
     const/4 v0, 0x0
 
@@ -139,7 +135,6 @@
 
 .method private createUnreadCountAnimation(Landroid/view/View;)Landroid/view/animation/Animation;
     .locals 6
-    .param p1    # Landroid/view/View;
 
     const/4 v0, 0x0
 
@@ -179,13 +174,6 @@
 
 .method private hideCheckBoxAnimation(Landroid/view/View;Landroid/view/View;Landroid/view/View;Landroid/view/View;Landroid/view/View;ZI)V
     .locals 7
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/View;
-    .param p4    # Landroid/view/View;
-    .param p5    # Landroid/view/View;
-    .param p6    # Z
-    .param p7    # I
 
     const/16 v6, 0x8
 
@@ -441,9 +429,6 @@
 
 .method public setLayout(Landroid/widget/LinearLayout;Lcom/sec/android/touchwiz/widget/TwCheckBox;Lcom/android/mms/ui/MsgSweepActionListView;)V
     .locals 0
-    .param p1    # Landroid/widget/LinearLayout;
-    .param p2    # Lcom/sec/android/touchwiz/widget/TwCheckBox;
-    .param p3    # Lcom/android/mms/ui/MsgSweepActionListView;
 
     iput-object p1, p0, Lcom/android/mms/animation/MsgListAnimation;->mSelectAllLayout:Landroid/widget/LinearLayout;
 

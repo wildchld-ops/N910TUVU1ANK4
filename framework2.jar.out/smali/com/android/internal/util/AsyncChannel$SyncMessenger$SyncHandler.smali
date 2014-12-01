@@ -25,7 +25,6 @@
 # direct methods
 .method private constructor <init>(Lcom/android/internal/util/AsyncChannel$SyncMessenger;Landroid/os/Looper;)V
     .locals 1
-    .param p2    # Landroid/os/Looper;
 
     iput-object p1, p0, Lcom/android/internal/util/AsyncChannel$SyncMessenger$SyncHandler;->this$0:Lcom/android/internal/util/AsyncChannel$SyncMessenger;
 
@@ -42,9 +41,6 @@
 
 .method synthetic constructor <init>(Lcom/android/internal/util/AsyncChannel$SyncMessenger;Landroid/os/Looper;Lcom/android/internal/util/AsyncChannel$1;)V
     .locals 0
-    .param p1    # Lcom/android/internal/util/AsyncChannel$SyncMessenger;
-    .param p2    # Landroid/os/Looper;
-    .param p3    # Lcom/android/internal/util/AsyncChannel$1;
 
     invoke-direct {p0, p1, p2}, Lcom/android/internal/util/AsyncChannel$SyncMessenger$SyncHandler;-><init>(Lcom/android/internal/util/AsyncChannel$SyncMessenger;Landroid/os/Looper;)V
 
@@ -53,7 +49,6 @@
 
 .method static synthetic access$300(Lcom/android/internal/util/AsyncChannel$SyncMessenger$SyncHandler;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Lcom/android/internal/util/AsyncChannel$SyncMessenger$SyncHandler;
 
     iget-object v0, p0, Lcom/android/internal/util/AsyncChannel$SyncMessenger$SyncHandler;->mLockObject:Ljava/lang/Object;
 
@@ -62,7 +57,6 @@
 
 .method static synthetic access$400(Lcom/android/internal/util/AsyncChannel$SyncMessenger$SyncHandler;)Landroid/os/Message;
     .locals 1
-    .param p0    # Lcom/android/internal/util/AsyncChannel$SyncMessenger$SyncHandler;
 
     iget-object v0, p0, Lcom/android/internal/util/AsyncChannel$SyncMessenger$SyncHandler;->mResultMsg:Landroid/os/Message;
 
@@ -71,8 +65,6 @@
 
 .method static synthetic access$402(Lcom/android/internal/util/AsyncChannel$SyncMessenger$SyncHandler;Landroid/os/Message;)Landroid/os/Message;
     .locals 0
-    .param p0    # Lcom/android/internal/util/AsyncChannel$SyncMessenger$SyncHandler;
-    .param p1    # Landroid/os/Message;
 
     iput-object p1, p0, Lcom/android/internal/util/AsyncChannel$SyncMessenger$SyncHandler;->mResultMsg:Landroid/os/Message;
 
@@ -83,7 +75,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 2
-    .param p1    # Landroid/os/Message;
 
     invoke-static {}, Landroid/os/Message;->obtain()Landroid/os/Message;
 

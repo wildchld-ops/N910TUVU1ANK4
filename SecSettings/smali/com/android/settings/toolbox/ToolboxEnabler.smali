@@ -25,8 +25,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/widget/Switch;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/widget/Switch;
 
     const/4 v0, 0x0
 
@@ -69,7 +67,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/toolbox/ToolboxEnabler;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/settings/toolbox/ToolboxEnabler;
 
     iget-object v0, p0, Lcom/android/settings/toolbox/ToolboxEnabler;->mContext:Landroid/content/Context;
 
@@ -78,7 +75,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/toolbox/ToolboxEnabler;)Landroid/widget/Switch;
     .locals 1
-    .param p0    # Lcom/android/settings/toolbox/ToolboxEnabler;
 
     iget-object v0, p0, Lcom/android/settings/toolbox/ToolboxEnabler;->mSwitch:Landroid/widget/Switch;
 
@@ -151,8 +147,6 @@
 # virtual methods
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 3
-    .param p1    # Landroid/widget/CompoundButton;
-    .param p2    # Z
 
     if-eqz p2, :cond_0
 
@@ -324,8 +318,6 @@
 
 .method public setHeaderPosition(Landroid/preference/PreferenceActivity$Header;I)V
     .locals 0
-    .param p1    # Landroid/preference/PreferenceActivity$Header;
-    .param p2    # I
 
     iput-object p1, p0, Lcom/android/settings/toolbox/ToolboxEnabler;->mHeader:Landroid/preference/PreferenceActivity$Header;
 
@@ -336,7 +328,6 @@
 
 .method public setSwitch(Landroid/widget/Switch;)V
     .locals 3
-    .param p1    # Landroid/widget/Switch;
 
     const/4 v0, 0x0
 

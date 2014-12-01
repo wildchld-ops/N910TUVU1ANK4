@@ -48,7 +48,6 @@
 
 .method private constructor <init>(Landroid/os/Parcel;)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0, p1}, Landroid/view/View$BaseSavedState;-><init>(Landroid/os/Parcel;)V
 
@@ -69,8 +68,6 @@
 
 .method synthetic constructor <init>(Landroid/os/Parcel;Landroid/widget/TimePicker$1;)V
     .locals 0
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # Landroid/widget/TimePicker$1;
 
     invoke-direct {p0, p1}, Landroid/widget/TimePicker$SavedState;-><init>(Landroid/os/Parcel;)V
 
@@ -79,9 +76,6 @@
 
 .method private constructor <init>(Landroid/os/Parcelable;II)V
     .locals 0
-    .param p1    # Landroid/os/Parcelable;
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0, p1}, Landroid/view/View$BaseSavedState;-><init>(Landroid/os/Parcelable;)V
 
@@ -94,10 +88,6 @@
 
 .method synthetic constructor <init>(Landroid/os/Parcelable;IILandroid/widget/TimePicker$1;)V
     .locals 0
-    .param p1    # Landroid/os/Parcelable;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/widget/TimePicker$1;
 
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/TimePicker$SavedState;-><init>(Landroid/os/Parcelable;II)V
 
@@ -124,8 +114,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     invoke-super {p0, p1, p2}, Landroid/view/AbsSavedState;->writeToParcel(Landroid/os/Parcel;I)V
 

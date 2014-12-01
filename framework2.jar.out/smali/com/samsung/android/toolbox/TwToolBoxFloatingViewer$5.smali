@@ -33,8 +33,6 @@
 # virtual methods
 .method public isContain(II)Z
     .locals 4
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -104,9 +102,6 @@
 
 .method public receiveMessage(Ljava/lang/String;II)V
     .locals 11
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

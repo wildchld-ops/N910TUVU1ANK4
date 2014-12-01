@@ -36,8 +36,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/preference/SwitchPreference;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/preference/SwitchPreference;
 
     const/4 v0, 0x0
 
@@ -86,8 +84,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/widget/Switch;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/widget/Switch;
 
     const/4 v0, 0x0
 
@@ -130,9 +126,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/widget/Switch;Z)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/widget/Switch;
-    .param p3    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/settings/powersavingmode/PowerSavingEnabler2014;-><init>(Landroid/content/Context;Landroid/widget/Switch;)V
 
@@ -143,8 +136,6 @@
 
 .method static synthetic access$002(Lcom/android/settings/powersavingmode/PowerSavingEnabler2014;I)I
     .locals 0
-    .param p0    # Lcom/android/settings/powersavingmode/PowerSavingEnabler2014;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/settings/powersavingmode/PowerSavingEnabler2014;->mCheck:I
 
@@ -153,7 +144,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/powersavingmode/PowerSavingEnabler2014;)Landroid/widget/Switch;
     .locals 1
-    .param p0    # Lcom/android/settings/powersavingmode/PowerSavingEnabler2014;
 
     iget-object v0, p0, Lcom/android/settings/powersavingmode/PowerSavingEnabler2014;->mSwitch:Landroid/widget/Switch;
 
@@ -162,7 +152,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/powersavingmode/PowerSavingEnabler2014;)Landroid/preference/SwitchPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/powersavingmode/PowerSavingEnabler2014;
 
     iget-object v0, p0, Lcom/android/settings/powersavingmode/PowerSavingEnabler2014;->mSwitchPref:Landroid/preference/SwitchPreference;
 
@@ -472,8 +461,6 @@
 
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 5
-    .param p1    # Landroid/widget/CompoundButton;
-    .param p2    # Z
 
     const/4 v4, 0x1
 
@@ -584,8 +571,6 @@
 
 .method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
     .locals 6
-    .param p1    # Landroid/preference/Preference;
-    .param p2    # Ljava/lang/Object;
 
     const/4 v3, 0x1
 

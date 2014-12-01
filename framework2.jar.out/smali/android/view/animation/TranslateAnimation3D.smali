@@ -140,8 +140,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/high16 v5, 0x3f800000
 
@@ -392,8 +390,6 @@
 # virtual methods
 .method protected applyTransformation(FLandroid/view/animation/Transformation;)V
     .locals 9
-    .param p1    # F
-    .param p2    # Landroid/view/animation/Transformation;
 
     invoke-virtual {p2}, Landroid/view/animation/Transformation;->getTransformationType()I
 
@@ -488,10 +484,6 @@
 
 .method public initialize(IIII)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/4 v1, 0x1
 
@@ -717,7 +709,6 @@
 
 .method public setAbsolute(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/view/animation/TranslateAnimation3D;->isAbsolute:Z
 
@@ -726,8 +717,6 @@
 
 .method public setAlphaAnimation(FF)V
     .locals 0
-    .param p1    # F
-    .param p2    # F
 
     iput p1, p0, Landroid/view/animation/TranslateAnimation3D;->mFromAlpha:F
 

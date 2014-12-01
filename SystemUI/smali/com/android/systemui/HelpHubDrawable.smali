@@ -26,7 +26,6 @@
 # direct methods
 .method public constructor <init>(Landroid/graphics/drawable/BitmapDrawable;)V
     .locals 2
-    .param p1    # Landroid/graphics/drawable/BitmapDrawable;
 
     const/4 v1, 0x0
 
@@ -115,7 +114,6 @@
 # virtual methods
 .method public draw(Landroid/graphics/Canvas;)V
     .locals 3
-    .param p1    # Landroid/graphics/Canvas;
 
     iget-object v1, p0, Lcom/android/systemui/HelpHubDrawable;->mBitmapDrawable:Landroid/graphics/drawable/BitmapDrawable;
 
@@ -214,7 +212,6 @@
 
 .method public setAlpha(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/systemui/HelpHubDrawable;->mBitmapDrawable:Landroid/graphics/drawable/BitmapDrawable;
 
@@ -225,7 +222,6 @@
 
 .method public setBitmapY(F)V
     .locals 0
-    .param p1    # F
 
     iput p1, p0, Lcom/android/systemui/HelpHubDrawable;->mBitmapY:F
 
@@ -234,10 +230,6 @@
 
 .method public setBounds(IIII)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-super {p0, p1, p2, p3, p4}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
 
@@ -260,7 +252,6 @@
 
 .method public setBounds(Landroid/graphics/Rect;)V
     .locals 4
-    .param p1    # Landroid/graphics/Rect;
 
     iget v0, p1, Landroid/graphics/Rect;->left:I
 
@@ -277,7 +268,6 @@
 
 .method public setColorFilter(Landroid/graphics/ColorFilter;)V
     .locals 1
-    .param p1    # Landroid/graphics/ColorFilter;
 
     iget-object v0, p0, Lcom/android/systemui/HelpHubDrawable;->mBitmapDrawable:Landroid/graphics/drawable/BitmapDrawable;
 
@@ -288,7 +278,6 @@
 
 .method public setGravity(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/systemui/HelpHubDrawable;->mBitmapDrawable:Landroid/graphics/drawable/BitmapDrawable;
 
@@ -299,7 +288,6 @@
 
 .method public setHeight(I)V
     .locals 5
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/graphics/drawable/Drawable;->copyBounds()Landroid/graphics/Rect;
 
@@ -322,7 +310,6 @@
 
 .method public setPadding(Landroid/graphics/Rect;)V
     .locals 1
-    .param p1    # Landroid/graphics/Rect;
 
     iget v0, p1, Landroid/graphics/Rect;->left:I
 
@@ -347,7 +334,6 @@
 
 .method public setWidth(I)V
     .locals 5
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/graphics/drawable/Drawable;->copyBounds()Landroid/graphics/Rect;
 

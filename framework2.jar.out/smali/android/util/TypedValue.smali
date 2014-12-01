@@ -196,9 +196,6 @@
 
 .method public static applyDimension(IFLandroid/util/DisplayMetrics;)F
     .locals 2
-    .param p0    # I
-    .param p1    # F
-    .param p2    # Landroid/util/DisplayMetrics;
 
     packed-switch p0, :pswitch_data_0
 
@@ -266,8 +263,6 @@
 
 .method public static final coerceToString(II)Ljava/lang/String;
     .locals 3
-    .param p0    # I
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -512,8 +507,6 @@
 
 .method public static complexToDimension(ILandroid/util/DisplayMetrics;)F
     .locals 2
-    .param p0    # I
-    .param p1    # Landroid/util/DisplayMetrics;
 
     shr-int/lit8 v0, p0, 0x0
 
@@ -532,8 +525,6 @@
 
 .method public static complexToDimensionNoisy(ILandroid/util/DisplayMetrics;)F
     .locals 5
-    .param p0    # I
-    .param p1    # Landroid/util/DisplayMetrics;
 
     invoke-static {p0, p1}, Landroid/util/TypedValue;->complexToDimension(ILandroid/util/DisplayMetrics;)F
 
@@ -622,8 +613,6 @@
 
 .method public static complexToDimensionPixelOffset(ILandroid/util/DisplayMetrics;)I
     .locals 2
-    .param p0    # I
-    .param p1    # Landroid/util/DisplayMetrics;
 
     shr-int/lit8 v0, p0, 0x0
 
@@ -644,8 +633,6 @@
 
 .method public static complexToDimensionPixelSize(ILandroid/util/DisplayMetrics;)I
     .locals 5
-    .param p0    # I
-    .param p1    # Landroid/util/DisplayMetrics;
 
     const/4 v4, 0x0
 
@@ -698,7 +685,6 @@
 
 .method public static complexToFloat(I)F
     .locals 3
-    .param p0    # I
 
     and-int/lit16 v0, p0, -0x100
 
@@ -719,9 +705,6 @@
 
 .method public static complexToFraction(IFF)F
     .locals 1
-    .param p0    # I
-    .param p1    # F
-    .param p2    # F
 
     shr-int/lit8 v0, p0, 0x0
 
@@ -789,7 +772,6 @@
 
 .method public getDimension(Landroid/util/DisplayMetrics;)F
     .locals 1
-    .param p1    # Landroid/util/DisplayMetrics;
 
     iget v0, p0, Landroid/util/TypedValue;->data:I
 
@@ -814,8 +796,6 @@
 
 .method public getFraction(FF)F
     .locals 1
-    .param p1    # F
-    .param p2    # F
 
     iget v0, p0, Landroid/util/TypedValue;->data:I
 
@@ -828,7 +808,6 @@
 
 .method public setTo(Landroid/util/TypedValue;)V
     .locals 1
-    .param p1    # Landroid/util/TypedValue;
 
     iget v0, p1, Landroid/util/TypedValue;->type:I
 

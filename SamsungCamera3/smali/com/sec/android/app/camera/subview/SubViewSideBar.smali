@@ -48,7 +48,6 @@
 
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;)V
     .locals 1
-    .param p1    # Lcom/sec/android/app/camera/Camera;
 
     const/4 v0, 0x0
 
@@ -77,9 +76,6 @@
 
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;Lcom/sec/android/app/camera/subview/SubViewManager;I)V
     .locals 1
-    .param p1    # Lcom/sec/android/app/camera/Camera;
-    .param p2    # Lcom/sec/android/app/camera/subview/SubViewManager;
-    .param p3    # I
 
     invoke-direct {p0, p1, p2}, Lcom/sec/android/app/camera/subview/SubViewBase;-><init>(Lcom/sec/android/app/camera/Camera;Lcom/sec/android/app/camera/subview/SubViewManager;)V
 
@@ -266,7 +262,6 @@
 
 .method public handleDimButtons(Z)V
     .locals 4
-    .param p1    # Z
 
     const/4 v3, 0x0
 

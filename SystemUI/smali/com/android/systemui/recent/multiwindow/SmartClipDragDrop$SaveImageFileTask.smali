@@ -40,9 +40,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/systemui/recent/multiwindow/SmartClipDragDrop;Landroid/view/View;Landroid/graphics/Rect;I)V
     .locals 1
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/graphics/Rect;
-    .param p4    # I
 
     iput-object p1, p0, Lcom/android/systemui/recent/multiwindow/SmartClipDragDrop$SaveImageFileTask;->this$0:Lcom/android/systemui/recent/multiwindow/SmartClipDragDrop;
 
@@ -65,7 +62,6 @@
 # virtual methods
 .method protected varargs doInBackground([Ljava/lang/Void;)Landroid/content/ClipData;
     .locals 5
-    .param p1    # [Ljava/lang/Void;
 
     iget-object v2, p0, Lcom/android/systemui/recent/multiwindow/SmartClipDragDrop$SaveImageFileTask;->this$0:Lcom/android/systemui/recent/multiwindow/SmartClipDragDrop;
 
@@ -132,7 +128,6 @@
 
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [Ljava/lang/Void;
 
@@ -145,7 +140,6 @@
 
 .method protected onPostExecute(Landroid/content/ClipData;)V
     .locals 6
-    .param p1    # Landroid/content/ClipData;
 
     const/4 v5, 0x0
 
@@ -227,7 +221,6 @@
 
 .method protected bridge synthetic onPostExecute(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Landroid/content/ClipData;
 

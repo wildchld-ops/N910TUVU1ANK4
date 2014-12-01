@@ -37,7 +37,6 @@
 # virtual methods
 .method public userStopAborted(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "PersonaManagerService"
 
@@ -84,7 +83,6 @@
 
 .method public userStopped(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v2, 0x0
 

@@ -49,8 +49,6 @@
 
 .method synthetic constructor <init>(Lcom/android/mms/transaction/WapPushReceiverService;Lcom/android/mms/transaction/WapPushReceiverService$1;)V
     .locals 0
-    .param p1    # Lcom/android/mms/transaction/WapPushReceiverService;
-    .param p2    # Lcom/android/mms/transaction/WapPushReceiverService$1;
 
     invoke-direct {p0, p1}, Lcom/android/mms/transaction/WapPushReceiverService$WPMInfo;-><init>(Lcom/android/mms/transaction/WapPushReceiverService;)V
 
@@ -59,7 +57,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/transaction/WapPushReceiverService$WPMInfo;)J
     .locals 2
-    .param p0    # Lcom/android/mms/transaction/WapPushReceiverService$WPMInfo;
 
     iget-wide v0, p0, Lcom/android/mms/transaction/WapPushReceiverService$WPMInfo;->created:J
 
@@ -68,8 +65,6 @@
 
 .method static synthetic access$002(Lcom/android/mms/transaction/WapPushReceiverService$WPMInfo;J)J
     .locals 0
-    .param p0    # Lcom/android/mms/transaction/WapPushReceiverService$WPMInfo;
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/android/mms/transaction/WapPushReceiverService$WPMInfo;->created:J
 
@@ -78,7 +73,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/transaction/WapPushReceiverService$WPMInfo;)I
     .locals 1
-    .param p0    # Lcom/android/mms/transaction/WapPushReceiverService$WPMInfo;
 
     iget v0, p0, Lcom/android/mms/transaction/WapPushReceiverService$WPMInfo;->id:I
 
@@ -87,8 +81,6 @@
 
 .method static synthetic access$102(Lcom/android/mms/transaction/WapPushReceiverService$WPMInfo;I)I
     .locals 0
-    .param p0    # Lcom/android/mms/transaction/WapPushReceiverService$WPMInfo;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/mms/transaction/WapPushReceiverService$WPMInfo;->id:I
 
@@ -97,7 +89,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/transaction/WapPushReceiverService$WPMInfo;)I
     .locals 1
-    .param p0    # Lcom/android/mms/transaction/WapPushReceiverService$WPMInfo;
 
     iget v0, p0, Lcom/android/mms/transaction/WapPushReceiverService$WPMInfo;->action:I
 
@@ -106,8 +97,6 @@
 
 .method static synthetic access$202(Lcom/android/mms/transaction/WapPushReceiverService$WPMInfo;I)I
     .locals 0
-    .param p0    # Lcom/android/mms/transaction/WapPushReceiverService$WPMInfo;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/mms/transaction/WapPushReceiverService$WPMInfo;->action:I
 

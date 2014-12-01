@@ -32,7 +32,6 @@
 
 .method public static isUspFeatureEnabled(Landroid/content/Context;)Z
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     const/4 v3, 0x1
 

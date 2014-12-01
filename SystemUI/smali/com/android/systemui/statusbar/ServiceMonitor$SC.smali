@@ -39,8 +39,6 @@
 
 .method synthetic constructor <init>(Lcom/android/systemui/statusbar/ServiceMonitor;Lcom/android/systemui/statusbar/ServiceMonitor$1;)V
     .locals 0
-    .param p1    # Lcom/android/systemui/statusbar/ServiceMonitor;
-    .param p2    # Lcom/android/systemui/statusbar/ServiceMonitor$1;
 
     invoke-direct {p0, p1}, Lcom/android/systemui/statusbar/ServiceMonitor$SC;-><init>(Lcom/android/systemui/statusbar/ServiceMonitor;)V
 
@@ -102,8 +100,6 @@
 
 .method public onServiceConnected(Landroid/content/ComponentName;Landroid/os/IBinder;)V
     .locals 4
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Landroid/os/IBinder;
 
     iget-object v1, p0, Lcom/android/systemui/statusbar/ServiceMonitor$SC;->this$0:Lcom/android/systemui/statusbar/ServiceMonitor;
 
@@ -185,7 +181,6 @@
 
 .method public onServiceDisconnected(Landroid/content/ComponentName;)V
     .locals 5
-    .param p1    # Landroid/content/ComponentName;
 
     iget-object v1, p0, Lcom/android/systemui/statusbar/ServiceMonitor$SC;->this$0:Lcom/android/systemui/statusbar/ServiceMonitor;
 

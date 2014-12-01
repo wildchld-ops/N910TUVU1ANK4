@@ -39,9 +39,6 @@
 
 .method constructor <init>(Landroid/content/pm/PackageManager;Landroid/content/pm/ResolveInfo;Landroid/app/LauncherActivity$IconResizer;)V
     .locals 2
-    .param p1    # Landroid/content/pm/PackageManager;
-    .param p2    # Landroid/content/pm/ResolveInfo;
-    .param p3    # Landroid/app/LauncherActivity$IconResizer;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

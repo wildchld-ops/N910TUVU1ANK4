@@ -52,13 +52,6 @@
 
 .method public constructor <init>(Ljava/lang/String;IIIII[Landroid/os/Parcelable;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # [Landroid/os/Parcelable;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -81,7 +74,6 @@
 
 .method public static getDeviceId(Ljava/lang/String;)I
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Landroid/hardware/usb/UsbDevice;->native_get_device_id(Ljava/lang/String;)I
 
@@ -92,7 +84,6 @@
 
 .method public static getDeviceName(I)Ljava/lang/String;
     .locals 1
-    .param p0    # I
 
     invoke-static {p0}, Landroid/hardware/usb/UsbDevice;->native_get_device_name(I)Ljava/lang/String;
 
@@ -119,7 +110,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 2
-    .param p1    # Ljava/lang/Object;
 
     instance-of v0, p1, Landroid/hardware/usb/UsbDevice;
 
@@ -205,7 +195,6 @@
 
 .method public getInterface(I)Landroid/hardware/usb/UsbInterface;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/hardware/usb/UsbDevice;->mInterfaces:[Landroid/os/Parcelable;
 
@@ -360,8 +349,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v0, p0, Landroid/hardware/usb/UsbDevice;->mName:Ljava/lang/String;
 

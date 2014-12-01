@@ -45,8 +45,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;ILjava/util/ArrayList;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -74,7 +72,6 @@
 
 .method static synthetic access$000(Lcom/android/incallui/callerinfocard/CallerInfoCardViewAdapter;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/incallui/callerinfocard/CallerInfoCardViewAdapter;
 
     iget-object v0, p0, Lcom/android/incallui/callerinfocard/CallerInfoCardViewAdapter;->mContext:Landroid/content/Context;
 
@@ -83,10 +80,6 @@
 
 .method private createViewFromResource(ILandroid/view/View;Landroid/view/ViewGroup;I)Landroid/view/View;
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
-    .param p4    # I
 
     if-nez p2, :cond_1
 
@@ -161,8 +154,6 @@
 
 .method private init(Landroid/content/Context;I)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     const-string v0, "layout_inflater"
 
@@ -185,7 +176,6 @@
 # virtual methods
 .method public allItemsEnabled(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/incallui/callerinfocard/CallerInfoCardViewAdapter;->mAreAllItemsEnabled:Z
 
@@ -248,9 +238,6 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     iget v0, p0, Lcom/android/incallui/callerinfocard/CallerInfoCardViewAdapter;->mResource:I
 
@@ -263,7 +250,6 @@
 
 .method public isEnabled(I)Z
     .locals 1
-    .param p1    # I
 
     iget-boolean v0, p0, Lcom/android/incallui/callerinfocard/CallerInfoCardViewAdapter;->mAreAllItemsEnabled:Z
 

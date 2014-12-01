@@ -52,7 +52,6 @@
 # virtual methods
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [Ljava/lang/Void;
 
@@ -65,7 +64,6 @@
 
 .method protected varargs doInBackground([Ljava/lang/Void;)Ljava/lang/Void;
     .locals 3
-    .param p1    # [Ljava/lang/Void;
 
     iget-object v0, p0, Lcom/android/settings/accounts/AuthenticatorHelper$1;->this$0:Lcom/android/settings/accounts/AuthenticatorHelper;
 

@@ -351,7 +351,6 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/android/systemui/PhoneSettingService$SettingMode;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-class v0, Lcom/android/systemui/PhoneSettingService$SettingMode;
 

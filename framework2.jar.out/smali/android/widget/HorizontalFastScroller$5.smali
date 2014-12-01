@@ -26,7 +26,6 @@
 # direct methods
 .method constructor <init>(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Landroid/util/IntProperty;-><init>(Ljava/lang/String;)V
 
@@ -37,7 +36,6 @@
 # virtual methods
 .method public get(Landroid/view/View;)Ljava/lang/Integer;
     .locals 1
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p1}, Landroid/view/View;->getTop()I
 
@@ -52,7 +50,6 @@
 
 .method public bridge synthetic get(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Landroid/view/View;
 
@@ -65,8 +62,6 @@
 
 .method public setValue(Landroid/view/View;I)V
     .locals 0
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     invoke-virtual {p1, p2}, Landroid/view/View;->setTop(I)V
 
@@ -75,8 +70,6 @@
 
 .method public bridge synthetic setValue(Ljava/lang/Object;I)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
-    .param p2    # I
 
     check-cast p1, Landroid/view/View;
 

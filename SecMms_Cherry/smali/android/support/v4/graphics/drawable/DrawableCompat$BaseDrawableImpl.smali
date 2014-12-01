@@ -30,7 +30,6 @@
 # virtual methods
 .method public isAutoMirrored(Landroid/graphics/drawable/Drawable;)Z
     .locals 1
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     const/4 v0, 0x0
 
@@ -39,15 +38,12 @@
 
 .method public jumpToCurrentState(Landroid/graphics/drawable/Drawable;)V
     .locals 0
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     return-void
 .end method
 
 .method public setAutoMirrored(Landroid/graphics/drawable/Drawable;Z)V
     .locals 0
-    .param p1    # Landroid/graphics/drawable/Drawable;
-    .param p2    # Z
 
     return-void
 .end method

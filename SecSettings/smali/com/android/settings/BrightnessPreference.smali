@@ -117,8 +117,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v1, 0x1
 
@@ -290,8 +288,6 @@
 
 .method static synthetic access$002(Lcom/android/settings/BrightnessPreference;I)I
     .locals 0
-    .param p0    # Lcom/android/settings/BrightnessPreference;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/settings/BrightnessPreference;->mCurBrightness:I
 
@@ -300,7 +296,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/BrightnessPreference;)V
     .locals 0
-    .param p0    # Lcom/android/settings/BrightnessPreference;
 
     invoke-direct {p0}, Lcom/android/settings/BrightnessPreference;->onBrightnessChanged()V
 
@@ -309,7 +304,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/BrightnessPreference;)V
     .locals 0
-    .param p0    # Lcom/android/settings/BrightnessPreference;
 
     invoke-direct {p0}, Lcom/android/settings/BrightnessPreference;->onBrightnessModeChanged()V
 
@@ -318,7 +312,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/BrightnessPreference;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/BrightnessPreference;
 
     iget-boolean v0, p0, Lcom/android/settings/BrightnessPreference;->mTracking:Z
 
@@ -327,7 +320,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/BrightnessPreference;)V
     .locals 0
-    .param p0    # Lcom/android/settings/BrightnessPreference;
 
     invoke-direct {p0}, Lcom/android/settings/BrightnessPreference;->onAutoBrightnessDetailChanged()V
 
@@ -438,7 +430,6 @@
 
 .method private getBrightnessMode(I)I
     .locals 3
-    .param p1    # I
 
     move v0, p1
 
@@ -470,7 +461,6 @@
 
 .method private static isFolderOpen(Landroid/content/Context;)Z
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     const/4 v1, 0x1
 
@@ -960,8 +950,6 @@
 
 .method private setBrightness(IZ)V
     .locals 7
-    .param p1    # I
-    .param p2    # Z
 
     const v6, 0x461c4000
 
@@ -1098,7 +1086,6 @@
 
 .method private setMode(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -1144,7 +1131,6 @@
 
 .method public static final toDigitString(I)Ljava/lang/String;
     .locals 4
-    .param p0    # I
 
     const/4 v2, 0x1
 
@@ -1197,7 +1183,6 @@
 
 .method initCustomBar(Landroid/view/View;)V
     .locals 3
-    .param p1    # Landroid/view/View;
 
     const/16 v0, 0xa
 
@@ -1350,7 +1335,6 @@
 
 .method protected onBindDialogView(Landroid/view/View;)V
     .locals 10
-    .param p1    # Landroid/view/View;
 
     const/4 v9, -0x1
 
@@ -1873,8 +1857,6 @@
 
 .method public onCheckedChanged(Lcom/sec/android/touchwiz/widget/TwCompoundButton;Z)V
     .locals 5
-    .param p1    # Lcom/sec/android/touchwiz/widget/TwCompoundButton;
-    .param p2    # Z
 
     const/4 v1, 0x1
 
@@ -1967,7 +1949,6 @@
 
 .method protected onDialogClosed(Z)V
     .locals 3
-    .param p1    # Z
 
     invoke-super {p0, p1}, Landroid/preference/SeekBarDialogPreference;->onDialogClosed(Z)V
 
@@ -2039,9 +2020,6 @@
 
 .method public onKey(Landroid/view/View;ILandroid/view/KeyEvent;)Z
     .locals 5
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # Landroid/view/KeyEvent;
 
     const/4 v1, 0x1
 
@@ -2182,9 +2160,6 @@
 
 .method public onProgressChanged(Landroid/widget/SeekBar;IZ)V
     .locals 3
-    .param p1    # Landroid/widget/SeekBar;
-    .param p2    # I
-    .param p3    # Z
 
     const/4 v2, 0x0
 
@@ -2255,9 +2230,6 @@
 
 .method public onProgressChanged(Lcom/sec/android/touchwiz/widget/TwSeekBarSplit;IZ)V
     .locals 5
-    .param p1    # Lcom/sec/android/touchwiz/widget/TwSeekBarSplit;
-    .param p2    # I
-    .param p3    # Z
 
     const-string v2, "BrightnessPreference"
 
@@ -2522,14 +2494,12 @@
 
 .method public onStartTrackingTouch(Landroid/widget/SeekBar;)V
     .locals 0
-    .param p1    # Landroid/widget/SeekBar;
 
     return-void
 .end method
 
 .method public onStartTrackingTouch(Lcom/sec/android/touchwiz/widget/TwSeekBarSplit;)V
     .locals 3
-    .param p1    # Lcom/sec/android/touchwiz/widget/TwSeekBarSplit;
 
     const/4 v0, 0x1
 
@@ -2569,14 +2539,12 @@
 
 .method public onStopTrackingTouch(Landroid/widget/SeekBar;)V
     .locals 0
-    .param p1    # Landroid/widget/SeekBar;
 
     return-void
 .end method
 
 .method public onStopTrackingTouch(Lcom/sec/android/touchwiz/widget/TwSeekBarSplit;)V
     .locals 3
-    .param p1    # Lcom/sec/android/touchwiz/widget/TwSeekBarSplit;
 
     const/4 v0, 0x0
 
@@ -2616,7 +2584,6 @@
 
 .method public returnMaxBrightness(I)I
     .locals 1
-    .param p1    # I
 
     const/4 v0, -0x1
 
@@ -2633,7 +2600,6 @@
 
 .method public setFlipCloseStatus(I)V
     .locals 4
-    .param p1    # I
 
     const/4 v3, 0x1
 
@@ -2745,7 +2711,6 @@
 
 .method public setObject(Lcom/android/settings/DisplaySettings;)V
     .locals 0
-    .param p1    # Lcom/android/settings/DisplaySettings;
 
     iput-object p1, p0, Lcom/android/settings/BrightnessPreference;->mBrightness:Lcom/android/settings/DisplaySettings;
 
@@ -2754,7 +2719,6 @@
 
 .method protected showDialog(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v4, 0x0
 

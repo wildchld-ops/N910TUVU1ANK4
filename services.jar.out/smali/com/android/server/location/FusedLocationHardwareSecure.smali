@@ -14,9 +14,6 @@
 # direct methods
 .method public constructor <init>(Landroid/hardware/location/IFusedLocationHardware;Landroid/content/Context;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Landroid/hardware/location/IFusedLocationHardware;
-    .param p2    # Landroid/content/Context;
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0}, Landroid/hardware/location/IFusedLocationHardware$Stub;-><init>()V
 
@@ -80,7 +77,6 @@
 
 .method public injectDeviceContext(I)V
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -98,7 +94,6 @@
 
 .method public injectDiagnosticData(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -116,7 +111,6 @@
 
 .method public registerSink(Landroid/hardware/location/IFusedLocationHardwareSink;)V
     .locals 1
-    .param p1    # Landroid/hardware/location/IFusedLocationHardwareSink;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -134,7 +128,6 @@
 
 .method public requestBatchOfLocations(I)V
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -152,8 +145,6 @@
 
 .method public startBatching(ILandroid/location/FusedBatchOptions;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/location/FusedBatchOptions;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -171,7 +162,6 @@
 
 .method public stopBatching(I)V
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -227,7 +217,6 @@
 
 .method public unregisterSink(Landroid/hardware/location/IFusedLocationHardwareSink;)V
     .locals 1
-    .param p1    # Landroid/hardware/location/IFusedLocationHardwareSink;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -245,8 +234,6 @@
 
 .method public updateBatchingOptions(ILandroid/location/FusedBatchOptions;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/location/FusedBatchOptions;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

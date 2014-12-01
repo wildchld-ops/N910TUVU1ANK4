@@ -92,7 +92,7 @@
     return v2
 
     :cond_0
-    invoke-virtual/range {p0 .. p0}, Landroid/content/BroadcastReceiver;->getResultData()Ljava/lang/String;
+    invoke-virtual/range {p0 .. p0}, Lcom/android/phone/OutgoingCallBroadcaster$OutgoingCallReceiver;->getResultData()Ljava/lang/String;
 
     move-result-object v6
 
@@ -424,7 +424,7 @@
 
     iget-object v2, v0, Lcom/android/phone/OutgoingCallBroadcaster$OutgoingCallReceiver;->this$0:Lcom/android/phone/OutgoingCallBroadcaster;
 
-    invoke-virtual {v2}, Landroid/app/Activity;->finish()V
+    invoke-virtual {v2}, Lcom/android/phone/OutgoingCallBroadcaster;->finish()V
 
     const/4 v2, 0x0
 
@@ -1097,7 +1097,7 @@
 
     iget-object v1, p0, Lcom/android/phone/OutgoingCallBroadcaster$OutgoingCallReceiver;->this$0:Lcom/android/phone/OutgoingCallBroadcaster;
 
-    invoke-virtual {v1}, Landroid/app/Activity;->finish()V
+    invoke-virtual {v1}, Lcom/android/phone/OutgoingCallBroadcaster;->finish()V
 
     return-void
 .end method

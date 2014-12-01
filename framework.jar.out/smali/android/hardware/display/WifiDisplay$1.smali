@@ -40,7 +40,6 @@
 # virtual methods
 .method public createFromParcel(Landroid/os/Parcel;)Landroid/hardware/display/WifiDisplay;
     .locals 10
-    .param p1    # Landroid/os/Parcel;
 
     const/4 v0, 0x1
 
@@ -113,7 +112,6 @@
 
 .method public bridge synthetic createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     invoke-virtual {p0, p1}, Landroid/hardware/display/WifiDisplay$1;->createFromParcel(Landroid/os/Parcel;)Landroid/hardware/display/WifiDisplay;
 
@@ -124,7 +122,6 @@
 
 .method public newArray(I)[Landroid/hardware/display/WifiDisplay;
     .locals 1
-    .param p1    # I
 
     if-nez p1, :cond_0
 
@@ -141,7 +138,6 @@
 
 .method public bridge synthetic newArray(I)[Ljava/lang/Object;
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/hardware/display/WifiDisplay$1;->newArray(I)[Landroid/hardware/display/WifiDisplay;
 

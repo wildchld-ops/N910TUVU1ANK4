@@ -14,8 +14,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;Lcom/visionobjects/resourcemanager/Version;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/visionobjects/resourcemanager/Version;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -32,9 +30,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Lcom/visionobjects/resourcemanager/Version;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/visionobjects/resourcemanager/Version;
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

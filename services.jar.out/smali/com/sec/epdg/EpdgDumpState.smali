@@ -190,8 +190,6 @@
 
 .method public static addEpdgToRilMsgs(Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     sget-object v0, Lcom/sec/epdg/EpdgDumpState;->epdgToRilMsgs:Ljava/util/ArrayList;
 
@@ -257,9 +255,6 @@
 
 .method static addL2WApiCall(ILjava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p0    # I
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     sget-object v0, Lcom/sec/epdg/EpdgDumpState;->l2wApiCall:Ljava/util/ArrayList;
 
@@ -333,7 +328,6 @@
 
 .method static addL2WHOResult(Z)V
     .locals 3
-    .param p0    # Z
 
     sget-object v0, Lcom/sec/epdg/EpdgDumpState;->l2wHOResult:Ljava/util/ArrayList;
 
@@ -496,8 +490,6 @@
 
 .method public static addRilToEpdgMsgs(Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     sget-object v0, Lcom/sec/epdg/EpdgDumpState;->rilToEpdgMsgs:Ljava/util/ArrayList;
 
@@ -563,9 +555,6 @@
 
 .method static addW2LApiCall(ILjava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p0    # I
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     sget-object v0, Lcom/sec/epdg/EpdgDumpState;->w2lApiCall:Ljava/util/ArrayList;
 
@@ -639,7 +628,6 @@
 
 .method static addW2LHOResult(Z)V
     .locals 3
-    .param p0    # Z
 
     sget-object v0, Lcom/sec/epdg/EpdgDumpState;->w2lHOResult:Ljava/util/ArrayList;
 
@@ -802,7 +790,6 @@
 
 .method static dump(Ljava/io/PrintWriter;)V
     .locals 1
-    .param p0    # Ljava/io/PrintWriter;
 
     const-string v0, "L2wRegistrants:"
 
@@ -873,7 +860,6 @@
 
 .method static dumpLastEpdgState(Ljava/lang/String;)V
     .locals 0
-    .param p0    # Ljava/lang/String;
 
     sput-object p0, Lcom/sec/epdg/EpdgDumpState;->lastEpdgState:Ljava/lang/String;
 
@@ -902,7 +888,6 @@
 
 .method private static printList(Ljava/io/PrintWriter;Ljava/util/ArrayList;)V
     .locals 3
-    .param p0    # Ljava/io/PrintWriter;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

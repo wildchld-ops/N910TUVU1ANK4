@@ -51,8 +51,6 @@
 
 .method synthetic constructor <init>(Landroid/net/DnsPinger;Landroid/net/DnsPinger$1;)V
     .locals 0
-    .param p1    # Landroid/net/DnsPinger;
-    .param p2    # Landroid/net/DnsPinger$1;
 
     invoke-direct {p0, p1}, Landroid/net/DnsPinger$ActivePing;-><init>(Landroid/net/DnsPinger;)V
 

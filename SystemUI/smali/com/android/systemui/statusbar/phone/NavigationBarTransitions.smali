@@ -26,7 +26,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/systemui/statusbar/phone/NavigationBarView;)V
     .locals 1
-    .param p1    # Lcom/android/systemui/statusbar/phone/NavigationBarView;
 
     const v0, 0x7f0200ad
 
@@ -57,10 +56,6 @@
 
 .method static synthetic access$000(Lcom/android/systemui/statusbar/phone/NavigationBarTransitions;ZZZ)V
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/phone/NavigationBarTransitions;
-    .param p1    # Z
-    .param p2    # Z
-    .param p3    # Z
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/systemui/statusbar/phone/NavigationBarTransitions;->applyLightsOut(ZZZ)V
 
@@ -69,7 +64,6 @@
 
 .method static synthetic access$100(Lcom/android/systemui/statusbar/phone/NavigationBarTransitions;)Lcom/android/internal/statusbar/IStatusBarService;
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/phone/NavigationBarTransitions;
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/NavigationBarTransitions;->mBarService:Lcom/android/internal/statusbar/IStatusBarService;
 
@@ -78,7 +72,6 @@
 
 .method private alphaForMode(I)F
     .locals 2
-    .param p1    # I
 
     if-eqz p1, :cond_0
 
@@ -110,9 +103,6 @@
 
 .method private applyLightsOut(ZZZ)V
     .locals 11
-    .param p1    # Z
-    .param p2    # Z
-    .param p3    # Z
 
     const/16 v6, 0x8
 
@@ -295,9 +285,6 @@
 
 .method private applyMode(IZZ)V
     .locals 3
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # Z
 
     const/high16 v2, 0x3f000000
 
@@ -366,8 +353,6 @@
 
 .method private fadeContent(Landroid/view/View;F)V
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # F
 
     if-eqz p1, :cond_0
 
@@ -389,8 +374,6 @@
 
 .method private static maxVisibleQuiescentAlpha(FLandroid/view/View;)F
     .locals 1
-    .param p0    # F
-    .param p1    # Landroid/view/View;
 
     instance-of v0, p1, Lcom/android/systemui/statusbar/policy/KeyButtonView;
 
@@ -418,9 +401,6 @@
 
 .method private setKeyButtonViewQuiescentAlpha(Landroid/view/View;FZ)V
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # F
-    .param p3    # Z
 
     instance-of v0, p1, Lcom/android/systemui/statusbar/policy/KeyButtonView;
 
@@ -438,8 +418,6 @@
 # virtual methods
 .method public applyBackButtonQuiescentAlpha(IZ)V
     .locals 2
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v0, 0x0
 
@@ -513,7 +491,6 @@
 
 .method public init(Z)V
     .locals 3
-    .param p1    # Z
 
     const/4 v2, 0x0
 
@@ -540,9 +517,6 @@
 
 .method protected onTransition(IIZ)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     invoke-super {p0, p1, p2, p3}, Lcom/android/systemui/statusbar/phone/BarTransitions;->onTransition(IIZ)V
 
@@ -555,7 +529,6 @@
 
 .method public setContentVisible(Z)V
     .locals 2
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -588,7 +561,6 @@
 
 .method public setVertical(Z)V
     .locals 2
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/systemui/statusbar/phone/NavigationBarTransitions;->mVertical:Z
 
@@ -603,8 +575,6 @@
 
 .method public transitionTo(IZ)V
     .locals 1
-    .param p1    # I
-    .param p2    # Z
 
     iput p1, p0, Lcom/android/systemui/statusbar/phone/NavigationBarTransitions;->mRequestedMode:I
 

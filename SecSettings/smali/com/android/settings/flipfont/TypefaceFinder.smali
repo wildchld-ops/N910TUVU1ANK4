@@ -43,7 +43,6 @@
 
 .method private findTypefacesWithCR(Ljava/lang/String;)Z
     .locals 11
-    .param p1    # Ljava/lang/String;
 
     const/4 v8, 0x0
 
@@ -207,7 +206,6 @@
 # virtual methods
 .method public findMatchingTypeface(Ljava/lang/String;)Lcom/android/settings/flipfont/Typeface;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -251,8 +249,6 @@
 
 .method public findTypefaces(Landroid/content/res/AssetManager;Ljava/lang/String;)Z
     .locals 7
-    .param p1    # Landroid/content/res/AssetManager;
-    .param p2    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -364,10 +360,6 @@
 
 .method public getSansEntries(Landroid/content/pm/PackageManager;Ljava/util/Vector;Ljava/util/Vector;Ljava/util/Vector;)V
     .locals 17
-    .param p1    # Landroid/content/pm/PackageManager;
-    .param p2    # Ljava/util/Vector;
-    .param p3    # Ljava/util/Vector;
-    .param p4    # Ljava/util/Vector;
 
     move-object/from16 v0, p0
 
@@ -721,9 +713,6 @@
 
 .method public parseTypefaceXml(Ljava/lang/String;Ljava/io/InputStream;Ljava/lang/String;)V
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/io/InputStream;
-    .param p3    # Ljava/lang/String;
 
     :try_start_0
     invoke-static {}, Ljavax/xml/parsers/SAXParserFactory;->newInstance()Ljavax/xml/parsers/SAXParserFactory;

@@ -48,9 +48,6 @@
 # virtual methods
 .method public setPrintJobTag(Landroid/print/IPrintSpooler;Landroid/print/PrintJobId;Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Landroid/print/IPrintSpooler;
-    .param p2    # Landroid/print/PrintJobId;
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;,

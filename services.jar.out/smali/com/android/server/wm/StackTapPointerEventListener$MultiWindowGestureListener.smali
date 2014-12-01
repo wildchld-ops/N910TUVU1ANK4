@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Lcom/android/server/wm/StackTapPointerEventListener;Lcom/android/server/wm/StackTapPointerEventListener$1;)V
     .locals 0
-    .param p1    # Lcom/android/server/wm/StackTapPointerEventListener;
-    .param p2    # Lcom/android/server/wm/StackTapPointerEventListener$1;
 
     invoke-direct {p0, p1}, Lcom/android/server/wm/StackTapPointerEventListener$MultiWindowGestureListener;-><init>(Lcom/android/server/wm/StackTapPointerEventListener;)V
 
@@ -43,7 +41,6 @@
 # virtual methods
 .method public onDoubleTap(Landroid/view/MotionEvent;)Z
     .locals 10
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-object v7, p0, Lcom/android/server/wm/StackTapPointerEventListener$MultiWindowGestureListener;->this$0:Lcom/android/server/wm/StackTapPointerEventListener;
 
@@ -443,7 +440,6 @@
 
 .method public onSingleTapUp(Landroid/view/MotionEvent;)Z
     .locals 11
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v6, 0x1
 

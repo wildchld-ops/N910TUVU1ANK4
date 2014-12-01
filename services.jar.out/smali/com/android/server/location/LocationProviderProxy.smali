@@ -35,13 +35,6 @@
 # direct methods
 .method private constructor <init>(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;IIILandroid/os/Handler;)V
     .locals 9
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # Landroid/os/Handler;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -118,7 +111,6 @@
 
 .method static synthetic access$000(Lcom/android/server/location/LocationProviderProxy;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Lcom/android/server/location/LocationProviderProxy;
 
     iget-object v0, p0, Lcom/android/server/location/LocationProviderProxy;->mLock:Ljava/lang/Object;
 
@@ -127,7 +119,6 @@
 
 .method static synthetic access$100(Lcom/android/server/location/LocationProviderProxy;)Z
     .locals 1
-    .param p0    # Lcom/android/server/location/LocationProviderProxy;
 
     iget-boolean v0, p0, Lcom/android/server/location/LocationProviderProxy;->mEnabled:Z
 
@@ -136,7 +127,6 @@
 
 .method static synthetic access$200(Lcom/android/server/location/LocationProviderProxy;)Lcom/android/internal/location/ProviderRequest;
     .locals 1
-    .param p0    # Lcom/android/server/location/LocationProviderProxy;
 
     iget-object v0, p0, Lcom/android/server/location/LocationProviderProxy;->mRequest:Lcom/android/internal/location/ProviderRequest;
 
@@ -145,7 +135,6 @@
 
 .method static synthetic access$300(Lcom/android/server/location/LocationProviderProxy;)Landroid/os/WorkSource;
     .locals 1
-    .param p0    # Lcom/android/server/location/LocationProviderProxy;
 
     iget-object v0, p0, Lcom/android/server/location/LocationProviderProxy;->mWorksource:Landroid/os/WorkSource;
 
@@ -154,7 +143,6 @@
 
 .method static synthetic access$400(Lcom/android/server/location/LocationProviderProxy;)Lcom/android/internal/location/ILocationProvider;
     .locals 1
-    .param p0    # Lcom/android/server/location/LocationProviderProxy;
 
     invoke-direct {p0}, Lcom/android/server/location/LocationProviderProxy;->getService()Lcom/android/internal/location/ILocationProvider;
 
@@ -165,7 +153,6 @@
 
 .method static synthetic access$500(Lcom/android/server/location/LocationProviderProxy;)Lcom/android/server/ServiceWatcher;
     .locals 1
-    .param p0    # Lcom/android/server/location/LocationProviderProxy;
 
     iget-object v0, p0, Lcom/android/server/location/LocationProviderProxy;->mServiceWatcher:Lcom/android/server/ServiceWatcher;
 
@@ -174,8 +161,6 @@
 
 .method static synthetic access$602(Lcom/android/server/location/LocationProviderProxy;Lcom/android/internal/location/ProviderProperties;)Lcom/android/internal/location/ProviderProperties;
     .locals 0
-    .param p0    # Lcom/android/server/location/LocationProviderProxy;
-    .param p1    # Lcom/android/internal/location/ProviderProperties;
 
     iput-object p1, p0, Lcom/android/server/location/LocationProviderProxy;->mProperties:Lcom/android/internal/location/ProviderProperties;
 
@@ -196,13 +181,6 @@
 
 .method public static createAndBind(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;IIILandroid/os/Handler;)Lcom/android/server/location/LocationProviderProxy;
     .locals 8
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Landroid/os/Handler;
 
     new-instance v0, Lcom/android/server/location/LocationProviderProxy;
 
@@ -344,9 +322,6 @@
 
 .method public dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     const-string v2, "REMOTE SERVICE"
 
@@ -624,7 +599,6 @@
 
 .method public getStatus(Landroid/os/Bundle;)I
     .locals 6
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v2, 0x1
 
@@ -785,8 +759,6 @@
 
 .method public sendExtraCommand(Ljava/lang/String;Landroid/os/Bundle;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Bundle;
 
     const/4 v2, 0x0
 
@@ -855,8 +827,6 @@
 
 .method public setRequest(Lcom/android/internal/location/ProviderRequest;Landroid/os/WorkSource;)V
     .locals 5
-    .param p1    # Lcom/android/internal/location/ProviderRequest;
-    .param p2    # Landroid/os/WorkSource;
 
     iget-object v3, p0, Lcom/android/server/location/LocationProviderProxy;->mLock:Ljava/lang/Object;
 

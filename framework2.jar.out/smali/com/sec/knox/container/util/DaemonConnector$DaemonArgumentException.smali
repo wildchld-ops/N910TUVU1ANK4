@@ -17,8 +17,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;Lcom/sec/knox/container/util/DaemonEvent;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/sec/knox/container/util/DaemonEvent;
 
     invoke-direct {p0, p1, p2}, Lcom/sec/knox/container/util/DaemonConnectorException;-><init>(Ljava/lang/String;Lcom/sec/knox/container/util/DaemonEvent;)V
 

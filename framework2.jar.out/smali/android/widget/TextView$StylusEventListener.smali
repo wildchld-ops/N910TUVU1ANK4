@@ -78,8 +78,6 @@
 
 .method synthetic constructor <init>(Landroid/widget/TextView;Landroid/widget/TextView$1;)V
     .locals 0
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # Landroid/widget/TextView$1;
 
     invoke-direct {p0, p1}, Landroid/widget/TextView$StylusEventListener;-><init>(Landroid/widget/TextView;)V
 
@@ -90,8 +88,6 @@
 # virtual methods
 .method public onStylusButtonEvent(Landroid/view/MotionEvent;I)V
     .locals 21
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # I
 
     invoke-virtual/range {p1 .. p1}, Landroid/view/MotionEvent;->getActionMasked()I
 

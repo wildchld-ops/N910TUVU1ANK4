@@ -35,17 +35,6 @@
 
 .method public static addImage(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;IJLandroid/location/Location;Landroid/net/Uri;IIJI)Landroid/net/Uri;
     .locals 6
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # J
-    .param p6    # Landroid/location/Location;
-    .param p7    # Landroid/net/Uri;
-    .param p8    # I
-    .param p9    # I
-    .param p10    # J
-    .param p12    # I
 
     const-string v3, "TwGLPanorama360Menu"
 
@@ -221,16 +210,6 @@
 
 .method public static addImageExternal(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;IJLandroid/location/Location;IIJI)Landroid/net/Uri;
     .locals 13
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # J
-    .param p6    # Landroid/location/Location;
-    .param p7    # I
-    .param p8    # I
-    .param p9    # J
-    .param p11    # I
 
     sget-object v7, Landroid/provider/MediaStore$Images$Media;->EXTERNAL_CONTENT_URI:Landroid/net/Uri;
 
@@ -263,7 +242,6 @@
 
 .method public static createDateStringForAppSeg(J)Ljava/lang/String;
     .locals 3
-    .param p0    # J
 
     new-instance v0, Ljava/util/Date;
 

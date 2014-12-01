@@ -65,9 +65,6 @@
 
 .method constructor <init>(Lcom/android/server/am/ActivityManagerService;Lcom/android/server/am/PendingIntentRecord$Key;I)V
     .locals 1
-    .param p1    # Lcom/android/server/am/ActivityManagerService;
-    .param p2    # Lcom/android/server/am/PendingIntentRecord$Key;
-    .param p3    # I
 
     const/4 v0, 0x0
 
@@ -143,8 +140,6 @@
 
 .method dump(Ljava/io/PrintWriter;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/io/PrintWriter;
-    .param p2    # Ljava/lang/String;
 
     const/4 v2, 0x1
 
@@ -368,11 +363,6 @@
 
 .method public send(ILandroid/content/Intent;Ljava/lang/String;Landroid/content/IIntentReceiver;Ljava/lang/String;)I
     .locals 12
-    .param p1    # I
-    .param p2    # Landroid/content/Intent;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Landroid/content/IIntentReceiver;
-    .param p5    # Ljava/lang/String;
 
     const/4 v6, 0x0
 
@@ -407,17 +397,6 @@
 
 .method sendInner(ILandroid/content/Intent;Ljava/lang/String;Landroid/content/IIntentReceiver;Ljava/lang/String;Landroid/os/IBinder;Ljava/lang/String;IIILandroid/os/Bundle;)I
     .locals 30
-    .param p1    # I
-    .param p2    # Landroid/content/Intent;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Landroid/content/IIntentReceiver;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Landroid/os/IBinder;
-    .param p7    # Ljava/lang/String;
-    .param p8    # I
-    .param p9    # I
-    .param p10    # I
-    .param p11    # Landroid/os/Bundle;
 
     move-object/from16 v0, p0
 

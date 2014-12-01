@@ -29,7 +29,6 @@
 # direct methods
 .method protected constructor <init>(Lcom/android/mms/dom/DocumentImpl;)V
     .locals 1
-    .param p1    # Lcom/android/mms/dom/DocumentImpl;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -52,7 +51,6 @@
 
 .method private setParentNode(Lorg/w3c/dom/Node;)V
     .locals 0
-    .param p1    # Lorg/w3c/dom/Node;
 
     iput-object p1, p0, Lcom/android/mms/dom/NodeImpl;->mParentNode:Lorg/w3c/dom/Node;
 
@@ -63,9 +61,6 @@
 # virtual methods
 .method public addEventListener(Ljava/lang/String;Lorg/w3c/dom/events/EventListener;Z)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lorg/w3c/dom/events/EventListener;
-    .param p3    # Z
 
     iget-object v0, p0, Lcom/android/mms/dom/NodeImpl;->mEventTarget:Lorg/w3c/dom/events/EventTarget;
 
@@ -76,7 +71,6 @@
 
 .method public appendChild(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;
     .locals 1
-    .param p1    # Lorg/w3c/dom/Node;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;
@@ -102,7 +96,6 @@
 
 .method public cloneNode(Z)Lorg/w3c/dom/Node;
     .locals 1
-    .param p1    # Z
 
     const/4 v0, 0x0
 
@@ -111,7 +104,6 @@
 
 .method public compareDocumentPosition(Lorg/w3c/dom/Node;)S
     .locals 3
-    .param p1    # Lorg/w3c/dom/Node;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;
@@ -131,7 +123,6 @@
 
 .method public dispatchEvent(Lorg/w3c/dom/events/Event;)Z
     .locals 1
-    .param p1    # Lorg/w3c/dom/events/Event;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/events/EventException;
@@ -179,8 +170,6 @@
 
 .method public getFeature(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Object;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -409,7 +398,6 @@
 
 .method public getUserData(Ljava/lang/String;)Ljava/lang/Object;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -448,8 +436,6 @@
 
 .method public insertBefore(Lorg/w3c/dom/Node;Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;
     .locals 1
-    .param p1    # Lorg/w3c/dom/Node;
-    .param p2    # Lorg/w3c/dom/Node;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;
@@ -463,7 +449,6 @@
 
 .method public isDefaultNamespace(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Lorg/w3c/dom/DOMException;
 
@@ -478,7 +463,6 @@
 
 .method public isEqualNode(Lorg/w3c/dom/Node;)Z
     .locals 3
-    .param p1    # Lorg/w3c/dom/Node;
 
     new-instance v0, Lorg/w3c/dom/DOMException;
 
@@ -493,7 +477,6 @@
 
 .method public isSameNode(Lorg/w3c/dom/Node;)Z
     .locals 3
-    .param p1    # Lorg/w3c/dom/Node;
 
     new-instance v0, Lorg/w3c/dom/DOMException;
 
@@ -508,8 +491,6 @@
 
 .method public isSupported(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -518,7 +499,6 @@
 
 .method public lookupNamespaceURI(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -527,7 +507,6 @@
 
 .method public lookupPrefix(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -542,7 +521,6 @@
 
 .method public removeChild(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;
     .locals 3
-    .param p1    # Lorg/w3c/dom/Node;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;
@@ -583,9 +561,6 @@
 
 .method public removeEventListener(Ljava/lang/String;Lorg/w3c/dom/events/EventListener;Z)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lorg/w3c/dom/events/EventListener;
-    .param p3    # Z
 
     iget-object v0, p0, Lcom/android/mms/dom/NodeImpl;->mEventTarget:Lorg/w3c/dom/events/EventTarget;
 
@@ -596,8 +571,6 @@
 
 .method public replaceChild(Lorg/w3c/dom/Node;Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;
     .locals 3
-    .param p1    # Lorg/w3c/dom/Node;
-    .param p2    # Lorg/w3c/dom/Node;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;
@@ -663,7 +636,6 @@
 
 .method public setNodeValue(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;
@@ -675,7 +647,6 @@
 
 .method public setPrefix(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;
@@ -687,7 +658,6 @@
 
 .method public setTextContent(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;
@@ -707,9 +677,6 @@
 
 .method public setUserData(Ljava/lang/String;Ljava/lang/Object;Lorg/w3c/dom/UserDataHandler;)Ljava/lang/Object;
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Object;
-    .param p3    # Lorg/w3c/dom/UserDataHandler;
 
     new-instance v0, Lorg/w3c/dom/DOMException;
 

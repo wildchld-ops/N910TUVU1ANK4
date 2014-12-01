@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Landroid/app/UiAutomation;Landroid/os/Looper;)V
     .locals 2
-    .param p2    # Landroid/os/Looper;
 
     iput-object p1, p0, Landroid/app/UiAutomation$IAccessibilityServiceClientImpl;->this$0:Landroid/app/UiAutomation;
 

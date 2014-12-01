@@ -32,10 +32,6 @@
 # direct methods
 .method constructor <init>(Landroid/speech/tts/SynthesisRequest;IILjava/lang/String;)V
     .locals 3
-    .param p1    # Landroid/speech/tts/SynthesisRequest;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
 
     const/4 v2, 0x0
 

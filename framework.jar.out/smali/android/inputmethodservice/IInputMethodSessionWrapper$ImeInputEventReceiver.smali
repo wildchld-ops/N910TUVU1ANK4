@@ -35,8 +35,6 @@
 # direct methods
 .method public constructor <init>(Landroid/inputmethodservice/IInputMethodSessionWrapper;Landroid/view/InputChannel;Landroid/os/Looper;)V
     .locals 1
-    .param p2    # Landroid/view/InputChannel;
-    .param p3    # Landroid/os/Looper;
 
     iput-object p1, p0, Landroid/inputmethodservice/IInputMethodSessionWrapper$ImeInputEventReceiver;->this$0:Landroid/inputmethodservice/IInputMethodSessionWrapper;
 
@@ -55,8 +53,6 @@
 # virtual methods
 .method public finishedEvent(IZ)V
     .locals 3
-    .param p1    # I
-    .param p2    # Z
 
     iget-object v2, p0, Landroid/inputmethodservice/IInputMethodSessionWrapper$ImeInputEventReceiver;->mPendingEvents:Landroid/util/SparseArray;
 
@@ -86,7 +82,6 @@
 
 .method public onInputEvent(Landroid/view/InputEvent;)V
     .locals 4
-    .param p1    # Landroid/view/InputEvent;
 
     iget-object v3, p0, Landroid/inputmethodservice/IInputMethodSessionWrapper$ImeInputEventReceiver;->this$0:Landroid/inputmethodservice/IInputMethodSessionWrapper;
 

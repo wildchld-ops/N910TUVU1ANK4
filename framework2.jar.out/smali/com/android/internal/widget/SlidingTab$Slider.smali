@@ -49,10 +49,6 @@
 # direct methods
 .method constructor <init>(Landroid/view/ViewGroup;III)V
     .locals 5
-    .param p1    # Landroid/view/ViewGroup;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/4 v4, 0x4
 
@@ -177,7 +173,6 @@
 
 .method static synthetic access$100(Lcom/android/internal/widget/SlidingTab$Slider;)Landroid/widget/ImageView;
     .locals 1
-    .param p0    # Lcom/android/internal/widget/SlidingTab$Slider;
 
     iget-object v0, p0, Lcom/android/internal/widget/SlidingTab$Slider;->tab:Landroid/widget/ImageView;
 
@@ -186,7 +181,6 @@
 
 .method static synthetic access$700(Lcom/android/internal/widget/SlidingTab$Slider;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/android/internal/widget/SlidingTab$Slider;
 
     iget-object v0, p0, Lcom/android/internal/widget/SlidingTab$Slider;->text:Landroid/widget/TextView;
 
@@ -364,11 +358,6 @@
 
 .method layout(IIIII)V
     .locals 26
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     move/from16 v0, p5
 
@@ -830,7 +819,6 @@
 
 .method reset(Z)V
     .locals 9
-    .param p1    # Z
 
     const/4 v2, 0x1
 
@@ -1020,7 +1008,6 @@
 
 .method setBarBackgroundResource(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/internal/widget/SlidingTab$Slider;->text:Landroid/widget/TextView;
 
@@ -1031,7 +1018,6 @@
 
 .method setHintText(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/internal/widget/SlidingTab$Slider;->text:Landroid/widget/TextView;
 
@@ -1042,7 +1028,6 @@
 
 .method setIcon(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/internal/widget/SlidingTab$Slider;->tab:Landroid/widget/ImageView;
 
@@ -1053,7 +1038,6 @@
 
 .method setState(I)V
     .locals 5
-    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -1174,7 +1158,6 @@
 
 .method setTabBackgroundResource(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/internal/widget/SlidingTab$Slider;->tab:Landroid/widget/ImageView;
 
@@ -1185,7 +1168,6 @@
 
 .method setTarget(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/internal/widget/SlidingTab$Slider;->target:Landroid/widget/ImageView;
 
@@ -1196,7 +1178,6 @@
 
 .method show(Z)V
     .locals 7
-    .param p1    # Z
 
     const/4 v2, 0x1
 
@@ -1345,8 +1326,6 @@
 
 .method public startAnimation(Landroid/view/animation/Animation;Landroid/view/animation/Animation;)V
     .locals 1
-    .param p1    # Landroid/view/animation/Animation;
-    .param p2    # Landroid/view/animation/Animation;
 
     iget-object v0, p0, Lcom/android/internal/widget/SlidingTab$Slider;->tab:Landroid/widget/ImageView;
 

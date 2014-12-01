@@ -34,7 +34,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/RemoteCallbackList;Landroid/os/IInterface;Ljava/lang/Object;)V
     .locals 0
-    .param p3    # Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;",

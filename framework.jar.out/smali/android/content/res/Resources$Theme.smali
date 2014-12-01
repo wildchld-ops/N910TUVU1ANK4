@@ -49,8 +49,6 @@
 # virtual methods
 .method public applyStyle(IZ)V
     .locals 1
-    .param p1    # I
-    .param p2    # Z
 
     iget v0, p0, Landroid/content/res/Resources$Theme;->mTheme:I
 
@@ -61,9 +59,6 @@
 
 .method public dump(ILjava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     iget v0, p0, Landroid/content/res/Resources$Theme;->mTheme:I
 
@@ -93,8 +88,6 @@
 
 .method public obtainStyledAttributes(I[I)Landroid/content/res/TypedArray;
     .locals 9
-    .param p1    # I
-    .param p2    # [I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/res/Resources$NotFoundException;
@@ -133,10 +126,6 @@
 
 .method public obtainStyledAttributes(Landroid/util/AttributeSet;[III)Landroid/content/res/TypedArray;
     .locals 10
-    .param p1    # Landroid/util/AttributeSet;
-    .param p2    # [I
-    .param p3    # I
-    .param p4    # I
 
     array-length v8, p2
 
@@ -184,7 +173,6 @@
 
 .method public obtainStyledAttributes([I)Landroid/content/res/TypedArray;
     .locals 9
-    .param p1    # [I
 
     const/4 v1, 0x0
 
@@ -218,9 +206,6 @@
 
 .method public resolveAttribute(ILandroid/util/TypedValue;Z)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/util/TypedValue;
-    .param p3    # Z
 
     iget-object v1, p0, Landroid/content/res/Resources$Theme;->mAssets:Landroid/content/res/AssetManager;
 
@@ -235,7 +220,6 @@
 
 .method public setTo(Landroid/content/res/Resources$Theme;)V
     .locals 2
-    .param p1    # Landroid/content/res/Resources$Theme;
 
     iget v0, p0, Landroid/content/res/Resources$Theme;->mTheme:I
 

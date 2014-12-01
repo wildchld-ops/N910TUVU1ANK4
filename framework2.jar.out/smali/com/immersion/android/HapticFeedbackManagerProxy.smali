@@ -54,9 +54,6 @@
 
 .method static synthetic access$100(Lcom/immersion/android/HapticFeedbackManagerProxy;Landroid/content/Context;Landroid/os/Looper;)V
     .locals 0
-    .param p0    # Lcom/immersion/android/HapticFeedbackManagerProxy;
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/Looper;
 
     invoke-direct {p0, p1, p2}, Lcom/immersion/android/HapticFeedbackManagerProxy;->initialize(Landroid/content/Context;Landroid/os/Looper;)V
 
@@ -65,7 +62,6 @@
 
 .method public static create(Landroid/content/Context;)Lcom/immersion/android/HapticFeedbackManagerProxy;
     .locals 9
-    .param p0    # Landroid/content/Context;
 
     const/4 v2, 0x0
 
@@ -174,8 +170,6 @@
 
 .method private initialize(Landroid/content/Context;Landroid/os/Looper;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/Looper;
 
     const/4 v1, 0x1
 
@@ -215,9 +209,6 @@
 # virtual methods
 .method public performHapticFeedback(IILandroid/view/View;)Z
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/view/View;
 
     const/4 v2, 0x0
 
@@ -297,8 +288,6 @@
 
 .method public performHapticFeedback(ILandroid/view/View;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/View;
 
     const/4 v0, 0x0
 

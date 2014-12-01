@@ -28,7 +28,6 @@
 
 .method synthetic constructor <init>(Lcom/sec/android/visualeffect/brilliantcuteffect/BrilliantCutView$1;)V
     .locals 0
-    .param p1    # Lcom/sec/android/visualeffect/brilliantcuteffect/BrilliantCutView$1;
 
     invoke-direct {p0}, Lcom/sec/android/visualeffect/brilliantcuteffect/BrilliantCutView$VFXConfigChooser;-><init>()V
 
@@ -39,8 +38,6 @@
 # virtual methods
 .method public chooseConfig(Ljavax/microedition/khronos/egl/EGL10;Ljavax/microedition/khronos/egl/EGLDisplay;)Ljavax/microedition/khronos/egl/EGLConfig;
     .locals 7
-    .param p1    # Ljavax/microedition/khronos/egl/EGL10;
-    .param p2    # Ljavax/microedition/khronos/egl/EGLDisplay;
 
     const/4 v6, 0x0
 

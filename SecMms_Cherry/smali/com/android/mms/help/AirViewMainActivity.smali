@@ -63,7 +63,6 @@
 
 .method public static hideInfoBubble(Landroid/app/Activity;)V
     .locals 4
-    .param p0    # Landroid/app/Activity;
 
     sget-object v0, Lcom/android/mms/help/AirViewMainActivity;->infoCompleteBubble:Landroid/widget/Button;
 
@@ -155,7 +154,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 9
-    .param p1    # Landroid/content/res/Configuration;
 
     const/16 v8, 0x8
 
@@ -294,7 +292,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 13
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
@@ -750,7 +747,6 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)Z
     .locals 3
-    .param p1    # Landroid/view/Menu;
 
     const/4 v2, 0x0
 
@@ -795,7 +791,6 @@
 
 .method protected showDialog(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Lcom/android/mms/help/AirViewMainActivity;->mHelpDialog:Lcom/android/mms/help/TwHelpAnimatedDialog;
 

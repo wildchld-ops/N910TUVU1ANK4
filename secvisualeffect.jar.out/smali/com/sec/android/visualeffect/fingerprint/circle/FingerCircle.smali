@@ -66,13 +66,6 @@
 # direct methods
 .method public constructor <init>(IIIFFII)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # F
-    .param p5    # F
-    .param p6    # I
-    .param p7    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -183,7 +176,6 @@
 
 .method private cubicEaseOut(F)F
     .locals 2
-    .param p1    # F
 
     const/high16 v1, 0x3f800000
 
@@ -200,7 +192,6 @@
 
 .method private getColorFromBlueToWhite(F)I
     .locals 6
-    .param p1    # F
 
     const v3, -0xfa310a
 
@@ -420,8 +411,6 @@
 
 .method public draw(Landroid/graphics/Canvas;F)V
     .locals 10
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # F
 
     const/high16 v9, -0x3c4c0000
 
@@ -763,7 +752,6 @@
 
 .method public setCurrentLineStatus(Lcom/sec/android/visualeffect/fingerprint/circle/FingerCircle$LineStatus;)V
     .locals 0
-    .param p1    # Lcom/sec/android/visualeffect/fingerprint/circle/FingerCircle$LineStatus;
 
     iput-object p1, p0, Lcom/sec/android/visualeffect/fingerprint/circle/FingerCircle;->currentLineStatus:Lcom/sec/android/visualeffect/fingerprint/circle/FingerCircle$LineStatus;
 
@@ -772,7 +760,6 @@
 
 .method public setCurrentStepStatus(Lcom/sec/android/visualeffect/fingerprint/circle/FingerCircle$StepStatus;)V
     .locals 1
-    .param p1    # Lcom/sec/android/visualeffect/fingerprint/circle/FingerCircle$StepStatus;
 
     iget-object v0, p0, Lcom/sec/android/visualeffect/fingerprint/circle/FingerCircle;->currentStepStatus:Lcom/sec/android/visualeffect/fingerprint/circle/FingerCircle$StepStatus;
 

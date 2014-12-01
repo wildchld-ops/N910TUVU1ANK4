@@ -38,7 +38,6 @@
 
 .method public constructor <init>(Lcom/android/incallui/rcs/RcsBroadcastReceiver$RcsActionHandler;)V
     .locals 1
-    .param p1    # Lcom/android/incallui/rcs/RcsBroadcastReceiver$RcsActionHandler;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -1298,7 +1297,6 @@
 
 .method public register(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     iget-boolean v0, p0, Lcom/android/incallui/rcs/RcsBroadcastReceiver;->mRegistered:Z
 
@@ -1320,7 +1318,6 @@
 
 .method public unregister(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     iget-boolean v0, p0, Lcom/android/incallui/rcs/RcsBroadcastReceiver;->mRegistered:Z
 

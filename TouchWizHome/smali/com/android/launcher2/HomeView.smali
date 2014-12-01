@@ -367,7 +367,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -378,8 +377,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -390,9 +387,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v6, -0x1
 
@@ -619,7 +613,6 @@
 
 .method static synthetic access$000(Lcom/android/launcher2/HomeView;)Lcom/android/launcher2/Workspace;
     .locals 1
-    .param p0    # Lcom/android/launcher2/HomeView;
 
     iget-object v0, p0, Lcom/android/launcher2/HomeView;->mWorkspace:Lcom/android/launcher2/Workspace;
 
@@ -628,8 +621,6 @@
 
 .method static synthetic access$100(Lcom/android/launcher2/HomeView;Z)V
     .locals 0
-    .param p0    # Lcom/android/launcher2/HomeView;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/launcher2/HomeView;->performOnHomePressed(Z)V
 
@@ -638,7 +629,6 @@
 
 .method static synthetic access$1000(Lcom/android/launcher2/HomeView;)Ljava/util/HashMap;
     .locals 1
-    .param p0    # Lcom/android/launcher2/HomeView;
 
     iget-object v0, p0, Lcom/android/launcher2/HomeView;->mWidgetsToAdvance:Ljava/util/HashMap;
 
@@ -647,8 +637,6 @@
 
 .method static synthetic access$1100(Lcom/android/launcher2/HomeView;J)V
     .locals 0
-    .param p0    # Lcom/android/launcher2/HomeView;
-    .param p1    # J
 
     invoke-direct {p0, p1, p2}, Lcom/android/launcher2/HomeView;->sendAdvanceMessage(J)V
 
@@ -657,7 +645,6 @@
 
 .method static synthetic access$1200(Lcom/android/launcher2/HomeView;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/launcher2/HomeView;
 
     iget-object v0, p0, Lcom/android/launcher2/HomeView;->mMarketSample:Landroid/view/View;
 
@@ -666,7 +653,6 @@
 
 .method static synthetic access$1300(Lcom/android/launcher2/HomeView;)Landroid/view/View$OnTouchListener;
     .locals 1
-    .param p0    # Lcom/android/launcher2/HomeView;
 
     iget-object v0, p0, Lcom/android/launcher2/HomeView;->mMarketSampleTouchListener:Landroid/view/View$OnTouchListener;
 
@@ -675,9 +661,6 @@
 
 .method static synthetic access$1400(Lcom/android/launcher2/HomeView;ILcom/android/launcher2/HomePendingWidget;)V
     .locals 0
-    .param p0    # Lcom/android/launcher2/HomeView;
-    .param p1    # I
-    .param p2    # Lcom/android/launcher2/HomePendingWidget;
 
     invoke-direct {p0, p1, p2}, Lcom/android/launcher2/HomeView;->addAppWidgetImpl(ILcom/android/launcher2/HomePendingWidget;)V
 
@@ -686,7 +669,6 @@
 
 .method static synthetic access$1500(Lcom/android/launcher2/HomeView;)V
     .locals 0
-    .param p0    # Lcom/android/launcher2/HomeView;
 
     invoke-direct {p0}, Lcom/android/launcher2/HomeView;->onAppWidgetReset()V
 
@@ -695,7 +677,6 @@
 
 .method static synthetic access$1600(Lcom/android/launcher2/HomeView;)V
     .locals 0
-    .param p0    # Lcom/android/launcher2/HomeView;
 
     invoke-direct {p0}, Lcom/android/launcher2/HomeView;->ChangeTphoneMode()V
 
@@ -704,7 +685,6 @@
 
 .method static synthetic access$1700(Lcom/android/launcher2/HomeView;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/launcher2/HomeView;
 
     iget-object v0, p0, Lcom/android/launcher2/HomeView;->mHomeSearchBtn:Landroid/view/View;
 
@@ -713,7 +693,6 @@
 
 .method static synthetic access$1800(Lcom/android/launcher2/HomeView;)Lcom/android/launcher2/Hotseat;
     .locals 1
-    .param p0    # Lcom/android/launcher2/HomeView;
 
     iget-object v0, p0, Lcom/android/launcher2/HomeView;->mHotseat:Lcom/android/launcher2/Hotseat;
 
@@ -722,7 +701,6 @@
 
 .method static synthetic access$1900(Lcom/android/launcher2/HomeView;)Lcom/android/launcher2/QuickLaunch;
     .locals 1
-    .param p0    # Lcom/android/launcher2/HomeView;
 
     iget-object v0, p0, Lcom/android/launcher2/HomeView;->mQuickLaunch:Lcom/android/launcher2/QuickLaunch;
 
@@ -731,7 +709,6 @@
 
 .method static synthetic access$200(Lcom/android/launcher2/HomeView;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/launcher2/HomeView;
 
     iget-object v0, p0, Lcom/android/launcher2/HomeView;->mHomePhoneBtn:Landroid/view/View;
 
@@ -740,7 +717,6 @@
 
 .method static synthetic access$2000(Lcom/android/launcher2/HomeView;)Lcom/android/launcher2/QuickLaunch;
     .locals 1
-    .param p0    # Lcom/android/launcher2/HomeView;
 
     iget-object v0, p0, Lcom/android/launcher2/HomeView;->mQuickLaunchCamera:Lcom/android/launcher2/QuickLaunch;
 
@@ -749,7 +725,6 @@
 
 .method static synthetic access$2100(Lcom/android/launcher2/HomeView;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/launcher2/HomeView;
 
     iget-object v0, p0, Lcom/android/launcher2/HomeView;->mHomeTopBar:Landroid/view/View;
 
@@ -758,7 +733,6 @@
 
 .method static synthetic access$2200(Lcom/android/launcher2/HomeView;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/launcher2/HomeView;
 
     iget-object v0, p0, Lcom/android/launcher2/HomeView;->mHomeBottomBar:Landroid/view/View;
 
@@ -767,7 +741,6 @@
 
 .method static synthetic access$300(Lcom/android/launcher2/HomeView;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/launcher2/HomeView;
 
     iget-object v0, p0, Lcom/android/launcher2/HomeView;->mHomeAppsBtn:Landroid/view/View;
 
@@ -776,7 +749,6 @@
 
 .method static synthetic access$400(Lcom/android/launcher2/HomeView;)Z
     .locals 1
-    .param p0    # Lcom/android/launcher2/HomeView;
 
     iget-boolean v0, p0, Lcom/android/launcher2/HomeView;->removeHotseat:Z
 
@@ -793,7 +765,6 @@
 
 .method static synthetic access$600(Lcom/android/launcher2/HomeView;)Landroid/appwidget/AppWidgetManager;
     .locals 1
-    .param p0    # Lcom/android/launcher2/HomeView;
 
     iget-object v0, p0, Lcom/android/launcher2/HomeView;->mAppWidgetManager:Landroid/appwidget/AppWidgetManager;
 
@@ -802,7 +773,6 @@
 
 .method static synthetic access$700(Lcom/android/launcher2/HomeView;)Z
     .locals 1
-    .param p0    # Lcom/android/launcher2/HomeView;
 
     iget-boolean v0, p0, Lcom/android/launcher2/HomeView;->mRestoring:Z
 
@@ -811,7 +781,6 @@
 
 .method static synthetic access$800(Lcom/android/launcher2/HomeView;)Lcom/android/launcher2/LauncherAppWidgetHost;
     .locals 1
-    .param p0    # Lcom/android/launcher2/HomeView;
 
     iget-object v0, p0, Lcom/android/launcher2/HomeView;->mAppWidgetHost:Lcom/android/launcher2/LauncherAppWidgetHost;
 
@@ -820,7 +789,6 @@
 
 .method static synthetic access$900(Lcom/android/launcher2/HomeView;)Lcom/android/launcher2/WorkspaceSpanCalculator;
     .locals 1
-    .param p0    # Lcom/android/launcher2/HomeView;
 
     iget-object v0, p0, Lcom/android/launcher2/HomeView;->mSpanCalculator:Lcom/android/launcher2/WorkspaceSpanCalculator;
 
@@ -829,8 +797,6 @@
 
 .method private addAppWidgetImpl(ILcom/android/launcher2/HomePendingWidget;)V
     .locals 20
-    .param p1    # I
-    .param p2    # Lcom/android/launcher2/HomePendingWidget;
 
     move-object/from16 v0, p0
 
@@ -1157,7 +1123,6 @@
 
 .method private addSamsungWidget(Lcom/android/launcher2/HomePendingSamsungWidget;)Z
     .locals 36
-    .param p1    # Lcom/android/launcher2/HomePendingSamsungWidget;
 
     sget-object v30, Lcom/android/launcher2/SamsungWidgetPackageManager;->INSTANCE:Lcom/android/launcher2/SamsungWidgetPackageManager;
 
@@ -1595,7 +1560,6 @@
 
 .method private addSurfaceWidget(Lcom/android/launcher2/HomePendingSurfaceWidget;)Z
     .locals 32
-    .param p1    # Lcom/android/launcher2/HomePendingSurfaceWidget;
 
     new-instance v26, Lcom/android/launcher2/SurfaceWidgetItem;
 
@@ -2025,7 +1989,6 @@
 
 .method private adjustAppsAndPhoneBtnsForTB(I)V
     .locals 4
-    .param p1    # I
 
     const v3, 0x7f0c0247
 
@@ -2106,9 +2069,6 @@
 
 .method private adjustAppsAndPhoneBtnsMargins(Landroid/content/res/Resources;II)V
     .locals 3
-    .param p1    # Landroid/content/res/Resources;
-    .param p2    # I
-    .param p3    # I
 
     iget-object v2, p0, Lcom/android/launcher2/HomeView;->mHomeAppsBtn:Landroid/view/View;
 
@@ -2153,10 +2113,6 @@
 
 .method private calcFinalSpan(Lcom/android/launcher2/HomeItem;I[I[I)V
     .locals 6
-    .param p1    # Lcom/android/launcher2/HomeItem;
-    .param p2    # I
-    .param p3    # [I
-    .param p4    # [I
 
     const/4 v5, 0x3
 
@@ -2623,7 +2579,6 @@
 
 .method private completeAdd(Lcom/android/launcher2/HomeView$PendingAddArguments;)Z
     .locals 12
-    .param p1    # Lcom/android/launcher2/HomeView$PendingAddArguments;
 
     const/4 v7, 0x1
 
@@ -2750,8 +2705,6 @@
 
 .method private completeAddAppWidget(ILcom/android/launcher2/HomeItem;)V
     .locals 35
-    .param p1    # I
-    .param p2    # Lcom/android/launcher2/HomeItem;
 
     move-object/from16 v0, p0
 
@@ -3405,11 +3358,6 @@
 
 .method private completeAddShortcut(Landroid/content/Intent;JIII)V
     .locals 7
-    .param p1    # Landroid/content/Intent;
-    .param p2    # J
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     const-string v0, "android.intent.extra.shortcut.INTENT"
 
@@ -3452,8 +3400,6 @@
 
 .method private static copyHomeItemToPendingAdd(Lcom/android/launcher2/HomeView$PendingAddArguments;Lcom/android/launcher2/HomeItem;)V
     .locals 2
-    .param p0    # Lcom/android/launcher2/HomeView$PendingAddArguments;
-    .param p1    # Lcom/android/launcher2/HomeItem;
 
     iget-wide v0, p1, Lcom/android/launcher2/HomeItem;->container:J
 
@@ -3492,8 +3438,6 @@
 
 .method private static copyPendingAddToHomeItem(Lcom/android/launcher2/HomeItem;Lcom/android/launcher2/HomeView$PendingAddArguments;)V
     .locals 2
-    .param p0    # Lcom/android/launcher2/HomeItem;
-    .param p1    # Lcom/android/launcher2/HomeView$PendingAddArguments;
 
     iget-wide v0, p1, Lcom/android/launcher2/HomeView$PendingAddArguments;->container:J
 
@@ -3532,8 +3476,6 @@
 
 .method private copySpans([I[I)V
     .locals 3
-    .param p1    # [I
-    .param p2    # [I
 
     const/4 v2, 0x4
 
@@ -3622,7 +3564,6 @@
 
 .method private copyToPendingAddInfo(Lcom/android/launcher2/HomePendingWidget;)V
     .locals 3
-    .param p1    # Lcom/android/launcher2/HomePendingWidget;
 
     iget-object v0, p0, Lcom/android/launcher2/HomeView;->mPendingAddInfo:Lcom/android/launcher2/HomeItem;
 
@@ -3780,13 +3721,6 @@
 
 .method public static findEmptySpanOnHomeScreen([IILandroid/content/Context;Lcom/android/launcher2/HomeView$DropPos;IIZ)Z
     .locals 10
-    .param p0    # [I
-    .param p1    # I
-    .param p2    # Landroid/content/Context;
-    .param p3    # Lcom/android/launcher2/HomeView$DropPos;
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Z
 
     if-nez p3, :cond_1
 
@@ -3963,7 +3897,6 @@
 
 .method private getExternalPackageToolbarIcon(Landroid/content/ComponentName;)Landroid/graphics/drawable/Drawable;
     .locals 9
-    .param p1    # Landroid/content/ComponentName;
 
     :try_start_0
     invoke-virtual {p0}, Lcom/android/launcher2/HomeView;->getActivity()Landroid/app/Activity;
@@ -4089,7 +4022,6 @@
 
 .method public static getFolderById(J)Lcom/android/launcher2/HomeFolderItem;
     .locals 2
-    .param p0    # J
 
     sget-object v0, Lcom/android/launcher2/HomeView;->sFolders:Ljava/util/HashMap;
 
@@ -4123,7 +4055,6 @@
 
 .method private performOnHomePressed(Z)V
     .locals 8
-    .param p1    # Z
 
     const v7, 0x7f09008f
 
@@ -4333,10 +4264,6 @@
 
 .method private reAddCreatedPageForDragIfNeeded(Lcom/android/launcher2/CellLayout;JILcom/android/launcher2/HomeItem;)Lcom/android/launcher2/CellLayout;
     .locals 5
-    .param p1    # Lcom/android/launcher2/CellLayout;
-    .param p2    # J
-    .param p4    # I
-    .param p5    # Lcom/android/launcher2/HomeItem;
 
     const/4 v4, 0x1
 
@@ -4545,7 +4472,6 @@
 
 .method private restoreState(Lcom/android/launcher2/HomeView$SavedState;)V
     .locals 14
-    .param p1    # Lcom/android/launcher2/HomeView$SavedState;
 
     const/4 v9, 0x1
 
@@ -4706,7 +4632,6 @@
 
 .method private sendAdvanceMessage(J)V
     .locals 3
-    .param p1    # J
 
     const/4 v2, 0x1
 
@@ -4735,7 +4660,6 @@
 
 .method private setupHomeViewAfterRotationForTB(I)V
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/launcher2/HomeView;->getResources()Landroid/content/res/Resources;
 
@@ -5494,8 +5418,6 @@
 
 .method private setupWorkspaceScreenForTB(Landroid/view/ViewGroup$MarginLayoutParams;I)Landroid/view/ViewGroup$MarginLayoutParams;
     .locals 4
-    .param p1    # Landroid/view/ViewGroup$MarginLayoutParams;
-    .param p2    # I
 
     const v3, 0x7f0c01aa
 
@@ -5563,7 +5485,6 @@
 
 .method public static showNoRoomAnyPageMessage(Landroid/content/Context;)V
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     const v0, 0x7f0f00b9
 
@@ -5584,7 +5505,6 @@
 
 .method public static showOutOfSpaceMessage(Landroid/content/Context;)V
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     const v0, 0x7f0f00d6
 
@@ -5605,9 +5525,6 @@
 
 .method private updateButtonWithIconFromExternalActivity(ILandroid/content/ComponentName;I)Landroid/graphics/drawable/Drawable$ConstantState;
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # I
 
     invoke-virtual {p0, p1}, Lcom/android/launcher2/HomeView;->findViewById(I)Landroid/view/View;
 
@@ -5734,9 +5651,6 @@
 
 .method private updateTextButtonWithIconFromExternalActivity(ILandroid/content/ComponentName;I)Landroid/graphics/drawable/Drawable$ConstantState;
     .locals 8
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # I
 
     const/4 v7, 0x0
 
@@ -6194,7 +6108,6 @@
 
 .method public addAppWidgetFromDrop(Lcom/android/launcher2/HomePendingWidget;)V
     .locals 3
-    .param p1    # Lcom/android/launcher2/HomePendingWidget;
 
     iget-object v0, p0, Lcom/android/launcher2/HomeView;->mAppWidgetBinder:Lcom/android/launcher2/AppWidgetBinder;
 
@@ -6211,7 +6124,6 @@
 
 .method addAppWidgetFromPick(Landroid/content/Intent;)V
     .locals 3
-    .param p1    # Landroid/content/Intent;
 
     const-string v1, "appWidgetId"
 
@@ -6617,7 +6529,6 @@
 
 .method public addSamsungWidgetFromDrop(Lcom/android/launcher2/HomePendingSamsungWidget;)Z
     .locals 5
-    .param p1    # Lcom/android/launcher2/HomePendingSamsungWidget;
 
     const/4 v0, 0x0
 
@@ -6805,7 +6716,6 @@
 
 .method public addSurfaceWidgetFromDrop(Lcom/android/launcher2/HomePendingSurfaceWidget;)Z
     .locals 5
-    .param p1    # Lcom/android/launcher2/HomePendingSurfaceWidget;
 
     const/4 v0, 0x0
 
@@ -6849,7 +6759,6 @@
 
 .method public addWidgetFromIntent(Lcom/android/launcher2/HomeWidgetItem;)V
     .locals 3
-    .param p1    # Lcom/android/launcher2/HomeWidgetItem;
 
     iget-object v0, p0, Lcom/android/launcher2/HomeView;->mAppWidgetBinder:Lcom/android/launcher2/AppWidgetBinder;
 
@@ -6868,8 +6777,6 @@
 
 .method addWidgetToAutoAdvanceIfNeeded(Landroid/view/View;Landroid/appwidget/AppWidgetProviderInfo;)V
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/appwidget/AppWidgetProviderInfo;
 
     if-eqz p2, :cond_0
 
@@ -6909,7 +6816,6 @@
 
 .method public bindAppWidget(Lcom/android/launcher2/HomeWidgetItem;)V
     .locals 24
-    .param p1    # Lcom/android/launcher2/HomeWidgetItem;
 
     const-wide/16 v15, 0x0
 
@@ -8079,7 +7985,6 @@
 
 .method public bindHomeItemsUpdated(Ljava/util/List;Z)V
     .locals 1
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -8220,8 +8125,6 @@
 
 .method public bindItems(Ljava/util/List;II)V
     .locals 7
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -8301,7 +8204,6 @@
 
 .method public bindSamsungWidget(Lcom/android/launcher2/SamsungWidgetItem;)V
     .locals 9
-    .param p1    # Lcom/android/launcher2/SamsungWidgetItem;
 
     const-wide/16 v3, 0x0
 
@@ -8409,7 +8311,6 @@
 
 .method public bindSurfaceWidget(Lcom/android/launcher2/SurfaceWidgetItem;)V
     .locals 9
-    .param p1    # Lcom/android/launcher2/SurfaceWidgetItem;
 
     const-wide/16 v3, 0x0
 
@@ -8595,7 +8496,6 @@
 
 .method public closeQuickViewWorkspace(Z)V
     .locals 1
-    .param p1    # Z
 
     const/4 v0, 0x1
 
@@ -8606,8 +8506,6 @@
 
 .method public closeQuickViewWorkspace(ZZ)V
     .locals 8
-    .param p1    # Z
-    .param p2    # Z
 
     const/4 v7, 0x0
 
@@ -8758,7 +8656,6 @@
 
 .method closeSystemDialogs(Ljava/lang/Boolean;)V
     .locals 3
-    .param p1    # Ljava/lang/Boolean;
 
     invoke-virtual {p0}, Lcom/android/launcher2/HomeView;->getContext()Landroid/content/Context;
 
@@ -8903,11 +8800,6 @@
 
 .method completeAddFolderWithShortcutItem(Lcom/android/launcher2/HomeShortcutItem;Ljava/lang/String;JZZ)V
     .locals 27
-    .param p1    # Lcom/android/launcher2/HomeShortcutItem;
-    .param p2    # Ljava/lang/String;
-    .param p3    # J
-    .param p5    # Z
-    .param p6    # Z
 
     invoke-virtual/range {p0 .. p0}, Lcom/android/launcher2/HomeView;->getActivity()Landroid/app/Activity;
 
@@ -9374,11 +9266,6 @@
 
 .method public completeAddShortcut(Lcom/android/launcher2/HomeShortcutItem;JIII)V
     .locals 36
-    .param p1    # Lcom/android/launcher2/HomeShortcutItem;
-    .param p2    # J
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     const-wide/16 v5, 0x0
 
@@ -9950,9 +9837,6 @@
 
 .method createFolder(Lcom/android/launcher2/HomeFolderItem;ILandroid/view/ViewGroup;)Landroid/view/View;
     .locals 3
-    .param p1    # Lcom/android/launcher2/HomeFolderItem;
-    .param p2    # I
-    .param p3    # Landroid/view/ViewGroup;
 
     iget-object v1, p0, Lcom/android/launcher2/HomeView;->mPkgResCache:Lcom/android/launcher2/PkgResCache;
 
@@ -9985,8 +9869,6 @@
 
 .method createShortcut(Lcom/android/launcher2/HomeShortcutItem;I)Landroid/view/View;
     .locals 3
-    .param p1    # Lcom/android/launcher2/HomeShortcutItem;
-    .param p2    # I
 
     invoke-static {p1}, Lcom/android/launcher2/AppIconView;->getHomeIconLayout(Lcom/android/launcher2/BaseItem;)I
 
@@ -10015,9 +9897,6 @@
 
 .method createShortcut(Lcom/android/launcher2/HomeShortcutItem;ILandroid/view/ViewGroup;)Landroid/view/View;
     .locals 7
-    .param p1    # Lcom/android/launcher2/HomeShortcutItem;
-    .param p2    # I
-    .param p3    # Landroid/view/ViewGroup;
 
     const/4 v6, 0x1
 
@@ -10127,7 +10006,6 @@
 
 .method public deletePage(I)V
     .locals 19
-    .param p1    # I
 
     move-object/from16 v0, p0
 
@@ -10479,7 +10357,6 @@
 
 .method public determineEmptyPageMsgVisibility(I)Z
     .locals 3
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/launcher2/HomeView;->getActivity()Landroid/app/Activity;
 
@@ -10506,7 +10383,6 @@
 
 .method public dispatchDragEvent(Landroid/view/DragEvent;)Z
     .locals 4
-    .param p1    # Landroid/view/DragEvent;
 
     const/4 v3, 0x1
 
@@ -10586,7 +10462,6 @@
 
 .method public dispatchTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-super {p0, p1}, Landroid/widget/FrameLayout;->dispatchTouchEvent(Landroid/view/MotionEvent;)Z
 
@@ -10597,10 +10472,6 @@
 
 .method public dump(Ljava/lang/String;Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/io/FileDescriptor;
-    .param p3    # Ljava/io/PrintWriter;
-    .param p4    # [Ljava/lang/String;
 
     const-string v1, " "
 
@@ -10840,7 +10711,6 @@
 
 .method public findItemById(J)Lcom/android/launcher2/HomeItem;
     .locals 6
-    .param p1    # J
 
     const/4 v0, 0x0
 
@@ -11099,8 +10969,6 @@
 
 .method getCellLayout(JI)Lcom/android/launcher2/CellLayout;
     .locals 2
-    .param p1    # J
-    .param p3    # I
 
     const-wide/16 v0, -0x65
 
@@ -11140,7 +11008,6 @@
 
 .method public getCreateFolderColor(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/launcher2/HomeView;->mCreateFolderColor:I
 
@@ -11409,7 +11276,6 @@
 
 .method public bridge synthetic getPage(I)Landroid/view/View;
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/launcher2/HomeView;->getPage(I)Lcom/android/launcher2/CellLayout;
 
@@ -11420,7 +11286,6 @@
 
 .method public getPage(I)Lcom/android/launcher2/CellLayout;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/launcher2/HomeView;->mWorkspace:Lcom/android/launcher2/Workspace;
 
@@ -11493,7 +11358,6 @@
 
 .method public getPagesLocationOnScreen([I)V
     .locals 1
-    .param p1    # [I
 
     iget-object v0, p0, Lcom/android/launcher2/HomeView;->mWorkspace:Lcom/android/launcher2/Workspace;
 
@@ -11746,7 +11610,6 @@
 
 .method hideHotseat(Z)V
     .locals 3
-    .param p1    # Z
 
     const/4 v1, 0x0
 
@@ -11838,7 +11701,6 @@
 
 .method public isFolderPage(I)Z
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -11847,7 +11709,6 @@
 
 .method isHotseatLayout(Landroid/view/View;)Z
     .locals 1
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Lcom/android/launcher2/HomeView;->mHotseat:Lcom/android/launcher2/Hotseat;
 
@@ -11876,7 +11737,6 @@
 
 .method public isIncludeItem(I)Z
     .locals 3
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -11990,8 +11850,6 @@
 
 .method public movePage(II)V
     .locals 8
-    .param p1    # I
-    .param p2    # I
 
     if-ne p1, p2, :cond_0
 
@@ -12129,9 +11987,6 @@
 
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 10
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const/4 v9, 0x0
 
@@ -12290,14 +12145,12 @@
 
 .method public onAnimationCancel(Landroid/animation/Animator;)V
     .locals 0
-    .param p1    # Landroid/animation/Animator;
 
     return-void
 .end method
 
 .method public onAnimationEnd(Landroid/animation/Animator;)V
     .locals 3
-    .param p1    # Landroid/animation/Animator;
 
     const/4 v1, 0x0
 
@@ -12319,14 +12172,12 @@
 
 .method public onAnimationRepeat(Landroid/animation/Animator;)V
     .locals 0
-    .param p1    # Landroid/animation/Animator;
 
     return-void
 .end method
 
 .method public onAnimationStart(Landroid/animation/Animator;)V
     .locals 2
-    .param p1    # Landroid/animation/Animator;
 
     const/4 v0, 0x2
 
@@ -12405,7 +12256,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 11
-    .param p1    # Landroid/view/View;
 
     const/4 v10, 0x1
 
@@ -12558,7 +12408,6 @@
 
 .method public onClickAllAppsButton(Landroid/view/View;)V
     .locals 4
-    .param p1    # Landroid/view/View;
 
     sget-boolean v2, Lcom/android/launcher2/Launcher;->isHelpAppRunning:Z
 
@@ -12702,7 +12551,6 @@
 
 .method public onClickAlwaysButton(Landroid/view/View;)V
     .locals 3
-    .param p1    # Landroid/view/View;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -12737,7 +12585,6 @@
 
 .method public onClickEditButton(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     const/4 v1, 0x1
 
@@ -12755,7 +12602,6 @@
 
 .method public onClickSearchButton(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p0}, Lcom/android/launcher2/HomeView;->getActivity()Landroid/app/Activity;
 
@@ -12997,13 +12843,6 @@
 
 .method public onFolderCreated(Lcom/android/launcher2/BaseItem;Ljava/lang/String;JZZII)V
     .locals 7
-    .param p1    # Lcom/android/launcher2/BaseItem;
-    .param p2    # Ljava/lang/String;
-    .param p3    # J
-    .param p5    # Z
-    .param p6    # Z
-    .param p7    # I
-    .param p8    # I
 
     move-object v1, p1
 
@@ -13026,7 +12865,6 @@
 
 .method public onHomePressed(Z)Z
     .locals 3
-    .param p1    # Z
 
     const/4 v0, 0x1
 
@@ -13068,7 +12906,6 @@
 
 .method public onInterceptTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 11
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v10, 0x1
 
@@ -13232,11 +13069,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 12
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     sget-boolean v7, Lcom/android/launcher2/Launcher;->is_TB:Z
 
@@ -13364,7 +13196,6 @@
 
 .method public onLongClick(Landroid/view/View;)Z
     .locals 14
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p0}, Lcom/android/launcher2/HomeView;->getContext()Landroid/content/Context;
 
@@ -14109,8 +13940,6 @@
 
 .method public onPageSwitch(Landroid/view/View;I)V
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     iget-object v1, p0, Lcom/android/launcher2/HomeView;->mWorkspace:Lcom/android/launcher2/Workspace;
 
@@ -14231,7 +14060,6 @@
 
 .method public onRestoreInstanceState(Landroid/os/Parcelable;)V
     .locals 2
-    .param p1    # Landroid/os/Parcelable;
 
     instance-of v1, p1, Lcom/android/launcher2/HomeView$SavedState;
 
@@ -14649,8 +14477,6 @@
 
 .method public onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     const/4 v0, 0x1
 
@@ -14663,8 +14489,6 @@
 
 .method public onVisibilityChanged(Landroid/view/View;I)V
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     const/4 v2, 0x0
 
@@ -14728,7 +14552,6 @@
 
 .method public onWindowVisibilityChanged(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/launcher2/HomeView;->updateRunning()V
 
@@ -14758,8 +14581,6 @@
 
 .method openQuickViewWorkspace(Lcom/android/launcher2/HomeView$SavedState;Z)V
     .locals 13
-    .param p1    # Lcom/android/launcher2/HomeView$SavedState;
-    .param p2    # Z
 
     iget-object v10, p0, Lcom/android/launcher2/HomeView;->mWorkspace:Lcom/android/launcher2/Workspace;
 
@@ -15328,7 +15149,6 @@
 
 .method processItemDropToNewFolder(Landroid/content/ComponentName;)V
     .locals 4
-    .param p1    # Landroid/content/ComponentName;
 
     invoke-direct {p0}, Lcom/android/launcher2/HomeView;->resetAddInfo()V
 
@@ -15355,12 +15175,6 @@
 
 .method processShortcutFromDrop(Landroid/content/ComponentName;JI[I[IZ)V
     .locals 4
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # J
-    .param p4    # I
-    .param p5    # [I
-    .param p6    # [I
-    .param p7    # Z
 
     const/4 v3, 0x1
 
@@ -15414,7 +15228,6 @@
 
 .method public refreshQuickViewWorkspace(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/launcher2/HomeView;->mQuickViewWorkspace:Lcom/android/launcher2/QuickViewWorkspace;
 
@@ -15455,7 +15268,6 @@
 
 .method public removeAppWidget(Lcom/android/launcher2/HomeWidgetItem;)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/HomeWidgetItem;
 
     iget-object v0, p1, Lcom/android/launcher2/HomeWidgetItem;->hostView:Landroid/appwidget/AppWidgetHostView;
 
@@ -15470,7 +15282,6 @@
 
 .method removeFolder(Lcom/android/launcher2/HomeFolderItem;)V
     .locals 3
-    .param p1    # Lcom/android/launcher2/HomeFolderItem;
 
     sget-object v0, Lcom/android/launcher2/HomeView;->sFolders:Ljava/util/HashMap;
 
@@ -15501,7 +15312,6 @@
 
 .method removeWidgetToAutoAdvance(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Lcom/android/launcher2/HomeView;->mWidgetsToAdvance:Ljava/util/HashMap;
 
@@ -15606,7 +15416,6 @@
 
 .method public restoreOpenFolder(Landroid/os/Bundle;)Z
     .locals 12
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v8, 0x0
 
@@ -15747,7 +15556,6 @@
 
 .method public saveOpenFolderState(Landroid/os/Bundle;)Z
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v2, 0x0
 
@@ -15944,7 +15752,6 @@
 
 .method public setCurrentDragItem(Lcom/android/launcher2/BaseItem;)V
     .locals 0
-    .param p1    # Lcom/android/launcher2/BaseItem;
 
     iput-object p1, p0, Lcom/android/launcher2/HomeView;->mCurrentDragItem:Lcom/android/launcher2/BaseItem;
 
@@ -15953,7 +15760,6 @@
 
 .method public setCurrentResizeWidgetItem(Lcom/android/launcher2/BaseItem;)V
     .locals 0
-    .param p1    # Lcom/android/launcher2/BaseItem;
 
     iput-object p1, p0, Lcom/android/launcher2/HomeView;->mCurrentResizeWidgetItem:Lcom/android/launcher2/BaseItem;
 
@@ -15962,7 +15768,6 @@
 
 .method public setDarkenViewAlpha(F)V
     .locals 2
-    .param p1    # F
 
     iget-object v0, p0, Lcom/android/launcher2/HomeView;->mDarkenView:Landroid/view/View;
 
@@ -15990,7 +15795,6 @@
 
 .method setDestinationNewFolderId(J)V
     .locals 0
-    .param p1    # J
 
     sput-wide p1, Lcom/android/launcher2/HomeView;->mDestinationNewFolderId:J
 
@@ -16158,7 +15962,6 @@
 
 .method public setEditBar(Lcom/android/launcher2/HomeEditBar;)V
     .locals 0
-    .param p1    # Lcom/android/launcher2/HomeEditBar;
 
     iput-object p1, p0, Lcom/android/launcher2/HomeView;->mEditBar:Lcom/android/launcher2/HomeEditBar;
 
@@ -16167,7 +15970,6 @@
 
 .method public setHomeEditItem(Landroid/view/MenuItem;)V
     .locals 0
-    .param p1    # Landroid/view/MenuItem;
 
     iput-object p1, p0, Lcom/android/launcher2/HomeView;->mHomeEditItem:Landroid/view/MenuItem;
 
@@ -16176,7 +15978,6 @@
 
 .method public setHomeScreenAt(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/launcher2/HomeView;->getActivity()Landroid/app/Activity;
 
@@ -16189,7 +15990,6 @@
 
 .method public setHotseat(Lcom/android/launcher2/Hotseat;)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/Hotseat;
 
     iput-object p1, p0, Lcom/android/launcher2/HomeView;->mHotseat:Lcom/android/launcher2/Hotseat;
 
@@ -16202,7 +16002,6 @@
 
 .method public setPage(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/launcher2/HomeView;->mWorkspace:Lcom/android/launcher2/Workspace;
 
@@ -16213,7 +16012,6 @@
 
 .method public setPanelBackgroundAlpha(F)V
     .locals 0
-    .param p1    # F
 
     iput p1, p0, Lcom/android/launcher2/HomeView;->mPanelBackgroundAlpha:F
 
@@ -16224,7 +16022,6 @@
 
 .method public setPanelViewport(Landroid/view/View;)V
     .locals 3
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p1}, Landroid/view/View;->getWidth()I
 
@@ -16250,7 +16047,6 @@
 
 .method public setQuickLaunch(Lcom/android/launcher2/QuickLaunch;)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/QuickLaunch;
 
     iput-object p1, p0, Lcom/android/launcher2/HomeView;->mQuickLaunch:Lcom/android/launcher2/QuickLaunch;
 
@@ -16263,7 +16059,6 @@
 
 .method public setQuickLaunchCamera(Lcom/android/launcher2/QuickLaunch;)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/QuickLaunch;
 
     iput-object p1, p0, Lcom/android/launcher2/HomeView;->mQuickLaunchCamera:Lcom/android/launcher2/QuickLaunch;
 
@@ -16276,7 +16071,6 @@
 
 .method public setStateTargetFolder(Lcom/android/launcher2/FolderItem;)V
     .locals 2
-    .param p1    # Lcom/android/launcher2/FolderItem;
 
     invoke-interface {p1}, Lcom/android/launcher2/FolderItem;->getId()J
 
@@ -16364,7 +16158,6 @@
 
 .method public setVisibilityHomeOptionMenu(I)V
     .locals 3
-    .param p1    # I
 
     const v1, 0x7f0900c7
 
@@ -16411,7 +16204,6 @@
 
 .method public setVisibilityHotseat(I)V
     .locals 2
-    .param p1    # I
 
     const v1, 0x7f09007b
 
@@ -16439,7 +16231,6 @@
 
 .method public setupCameraCut(I)V
     .locals 2
-    .param p1    # I
 
     const v0, 0x7f090086
 
@@ -16497,8 +16288,6 @@
 
 .method public showCameraCut(ZZ)V
     .locals 3
-    .param p1    # Z
-    .param p2    # Z
 
     if-eqz p2, :cond_1
 
@@ -16637,7 +16426,6 @@
 
 .method showHotseat(Z)V
     .locals 3
-    .param p1    # Z
 
     const/high16 v1, 0x3f800000
 
@@ -16687,7 +16475,6 @@
 
 .method showWorkspace(Z)V
     .locals 7
-    .param p1    # Z
 
     const/4 v6, 0x1
 
@@ -16751,7 +16538,6 @@
 
 .method showWorkspaceEditmode(Z)V
     .locals 6
-    .param p1    # Z
 
     const/4 v4, 0x1
 
@@ -16805,8 +16591,6 @@
 
 .method public startActivityForResult(Landroid/content/Intent;I)V
     .locals 1
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
 
     if-ltz p2, :cond_0
 
@@ -16828,8 +16612,6 @@
 
 .method startActivityForResultSafely(Landroid/content/Intent;I)V
     .locals 4
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
 
     const v3, 0x7f0f0011
 
@@ -16911,7 +16693,6 @@
 
 .method startApplicationDetailsActivity(Landroid/content/ComponentName;)V
     .locals 5
-    .param p1    # Landroid/content/ComponentName;
 
     invoke-virtual {p1}, Landroid/content/ComponentName;->getPackageName()Ljava/lang/String;
 
@@ -16946,7 +16727,6 @@
 
 .method startApplicationUninstallActivity(Lcom/android/launcher2/AppItem;)V
     .locals 6
-    .param p1    # Lcom/android/launcher2/AppItem;
 
     iget-object v4, p1, Lcom/android/launcher2/AppItem;->mComponentName:Landroid/content/ComponentName;
 
@@ -17136,7 +16916,6 @@
 
 .method startWallpaper(I)V
     .locals 8
-    .param p1    # I
 
     const v7, 0x7f0f0011
 
@@ -17358,7 +17137,6 @@
 
 .method updateWallpaperVisibility(Z)V
     .locals 4
-    .param p1    # Z
 
     const/high16 v2, 0x100000
 

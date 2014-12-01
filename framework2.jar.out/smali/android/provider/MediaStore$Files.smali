@@ -31,7 +31,6 @@
 
 .method public static getContentUri(Ljava/lang/String;)Landroid/net/Uri;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -66,8 +65,6 @@
 
 .method public static final getContentUri(Ljava/lang/String;J)Landroid/net/Uri;
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # J
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -106,7 +103,6 @@
 
 .method public static getMtpObjectsUri(Ljava/lang/String;)Landroid/net/Uri;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -141,8 +137,6 @@
 
 .method public static final getMtpObjectsUri(Ljava/lang/String;J)Landroid/net/Uri;
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # J
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -181,8 +175,6 @@
 
 .method public static final getMtpReferencesUri(Ljava/lang/String;J)Landroid/net/Uri;
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # J
 
     new-instance v0, Ljava/lang/StringBuilder;
 

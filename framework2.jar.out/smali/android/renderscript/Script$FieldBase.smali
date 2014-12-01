@@ -61,8 +61,6 @@
 
 .method protected init(Landroid/renderscript/RenderScript;I)V
     .locals 2
-    .param p1    # Landroid/renderscript/RenderScript;
-    .param p2    # I
 
     iget-object v0, p0, Landroid/renderscript/Script$FieldBase;->mElement:Landroid/renderscript/Element;
 
@@ -79,9 +77,6 @@
 
 .method protected init(Landroid/renderscript/RenderScript;II)V
     .locals 2
-    .param p1    # Landroid/renderscript/RenderScript;
-    .param p2    # I
-    .param p3    # I
 
     iget-object v0, p0, Landroid/renderscript/Script$FieldBase;->mElement:Landroid/renderscript/Element;
 

@@ -41,9 +41,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/launcher2/WidgetFolder;Landroid/widget/GridLayout;ILjava/util/ArrayList;Z)V
     .locals 0
-    .param p2    # Landroid/widget/GridLayout;
-    .param p3    # I
-    .param p5    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

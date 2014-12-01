@@ -30,7 +30,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -41,8 +40,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -53,9 +50,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Landroid/preference/Preference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
@@ -144,8 +138,6 @@
 
 .method protected onGetDefaultValue(Landroid/content/res/TypedArray;I)Ljava/lang/Object;
     .locals 1
-    .param p1    # Landroid/content/res/TypedArray;
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -162,7 +154,6 @@
 
 .method protected onRestoreInstanceState(Landroid/os/Parcelable;)V
     .locals 3
-    .param p1    # Landroid/os/Parcelable;
 
     if-eqz p1, :cond_0
 
@@ -236,8 +227,6 @@
 
 .method protected onSetInitialValue(ZLjava/lang/Object;)V
     .locals 1
-    .param p1    # Z
-    .param p2    # Ljava/lang/Object;
 
     if-eqz p1, :cond_0
 
@@ -264,7 +253,6 @@
 
 .method sendAccessibilityEvent(Landroid/view/View;)V
     .locals 3
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p0}, Landroid/preference/Preference;->getContext()Landroid/content/Context;
 
@@ -308,7 +296,6 @@
 
 .method public setChecked(Z)V
     .locals 3
-    .param p1    # Z
 
     const/4 v1, 0x1
 
@@ -355,7 +342,6 @@
 
 .method public setDisableDependentsState(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/preference/TwoStatePreference;->mDisableDependentsState:Z
 
@@ -364,7 +350,6 @@
 
 .method public setSummaryOff(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/preference/Preference;->getContext()Landroid/content/Context;
 
@@ -381,7 +366,6 @@
 
 .method public setSummaryOff(Ljava/lang/CharSequence;)V
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
 
     iput-object p1, p0, Landroid/preference/TwoStatePreference;->mSummaryOff:Ljava/lang/CharSequence;
 
@@ -399,7 +383,6 @@
 
 .method public setSummaryOn(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/preference/Preference;->getContext()Landroid/content/Context;
 
@@ -416,7 +399,6 @@
 
 .method public setSummaryOn(Ljava/lang/CharSequence;)V
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
 
     iput-object p1, p0, Landroid/preference/TwoStatePreference;->mSummaryOn:Ljava/lang/CharSequence;
 
@@ -477,7 +459,6 @@
 
 .method syncSummaryView(Landroid/view/View;)V
     .locals 5
-    .param p1    # Landroid/view/View;
 
     const v4, 0x1020010
 

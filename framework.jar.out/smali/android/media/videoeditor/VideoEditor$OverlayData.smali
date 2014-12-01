@@ -107,7 +107,6 @@
 
 .method public renderOverlay(Landroid/graphics/Bitmap;)V
     .locals 14
-    .param p1    # Landroid/graphics/Bitmap;
 
     const/4 v13, 0x0
 
@@ -486,8 +485,6 @@
 
 .method set(Landroid/graphics/Bitmap;I)V
     .locals 1
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # I
 
     iput-object p1, p0, Landroid/media/videoeditor/VideoEditor$OverlayData;->mOverlayBitmap:Landroid/graphics/Bitmap;
 

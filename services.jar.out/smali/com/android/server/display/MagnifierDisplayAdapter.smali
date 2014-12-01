@@ -34,11 +34,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/display/DisplayManagerService$SyncRoot;Landroid/content/Context;Landroid/os/Handler;Lcom/android/server/display/DisplayAdapter$Listener;Landroid/os/Handler;)V
     .locals 6
-    .param p1    # Lcom/android/server/display/DisplayManagerService$SyncRoot;
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/os/Handler;
-    .param p4    # Lcom/android/server/display/DisplayAdapter$Listener;
-    .param p5    # Landroid/os/Handler;
 
     const-string v5, "MagnifierDisplayAdapter"
 
@@ -83,14 +78,12 @@
 # virtual methods
 .method public dump(Ljava/io/PrintWriter;)V
     .locals 0
-    .param p1    # Ljava/io/PrintWriter;
 
     return-void
 .end method
 
 .method public dumpLocked(Ljava/io/PrintWriter;)V
     .locals 0
-    .param p1    # Ljava/io/PrintWriter;
 
     invoke-super {p0, p1}, Lcom/android/server/display/DisplayAdapter;->dumpLocked(Ljava/io/PrintWriter;)V
 
@@ -99,7 +92,6 @@
 
 .method public enable(Z)V
     .locals 4
-    .param p1    # Z
 
     const/4 v3, 0x0
 
@@ -215,7 +207,6 @@
 
 .method public onChangeSurface(Landroid/view/Surface;)V
     .locals 3
-    .param p1    # Landroid/view/Surface;
 
     const-string v0, "MagnifierDisplayAdapter"
 
@@ -262,8 +253,6 @@
 
 .method public onCreateSurface(Landroid/view/Surface;F)V
     .locals 7
-    .param p1    # Landroid/view/Surface;
-    .param p2    # F
 
     invoke-virtual {p0}, Lcom/android/server/display/DisplayAdapter;->getSyncRoot()Lcom/android/server/display/DisplayManagerService$SyncRoot;
 
@@ -346,9 +335,6 @@
 
 .method public setMagnificationSettings(IIF)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # F
 
     iget-object v0, p0, Lcom/android/server/display/MagnifierDisplayAdapter;->mPolicy:Lcom/android/server/display/MagnifierDisplayPolicy;
 
@@ -361,7 +347,6 @@
 
 .method public updateMagnificationSpec(Landroid/view/MagnificationSpec;)V
     .locals 3
-    .param p1    # Landroid/view/MagnificationSpec;
 
     iget-object v1, p0, Lcom/android/server/display/MagnifierDisplayAdapter;->mTempSpec:Landroid/view/MagnificationSpec;
 

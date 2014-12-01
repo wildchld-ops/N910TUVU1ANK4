@@ -36,9 +36,6 @@
 # direct methods
 .method constructor <init>(Landroid/content/Context;Landroid/content/pm/PackageManager;Landroid/content/pm/ResolveInfo;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/pm/PackageManager;
-    .param p3    # Landroid/content/pm/ResolveInfo;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -96,9 +93,6 @@
 
 .method constructor <init>(Landroid/content/Context;Ljava/lang/CharSequence;Landroid/graphics/drawable/Drawable;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/CharSequence;
-    .param p3    # Landroid/graphics/drawable/Drawable;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -121,7 +115,6 @@
 # virtual methods
 .method getIntent(Landroid/content/Intent;)Landroid/content/Intent;
     .locals 3
-    .param p1    # Landroid/content/Intent;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -177,7 +170,6 @@
 
 .method protected getResizer(Landroid/content/Context;)Lcom/android/settings/ActivityPicker$IconResizer;
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     sget-object v2, Lcom/android/settings/ActivityPicker$PickAdapter$Item;->sResizer:Lcom/android/settings/ActivityPicker$IconResizer;
 

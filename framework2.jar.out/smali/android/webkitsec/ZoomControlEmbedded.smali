@@ -26,8 +26,6 @@
 # direct methods
 .method public constructor <init>(Landroid/webkitsec/ZoomManager;Landroid/webkitsec/WebViewClassic;)V
     .locals 0
-    .param p1    # Landroid/webkitsec/ZoomManager;
-    .param p2    # Landroid/webkitsec/WebViewClassic;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -40,7 +38,6 @@
 
 .method static synthetic access$100(Landroid/webkitsec/ZoomControlEmbedded;)Landroid/webkitsec/WebViewClassic;
     .locals 1
-    .param p0    # Landroid/webkitsec/ZoomControlEmbedded;
 
     iget-object v0, p0, Landroid/webkitsec/ZoomControlEmbedded;->mWebView:Landroid/webkitsec/WebViewClassic;
 
@@ -49,7 +46,6 @@
 
 .method static synthetic access$200(Landroid/webkitsec/ZoomControlEmbedded;)Landroid/widget/ZoomButtonsController;
     .locals 1
-    .param p0    # Landroid/webkitsec/ZoomControlEmbedded;
 
     iget-object v0, p0, Landroid/webkitsec/ZoomControlEmbedded;->mZoomButtonsController:Landroid/widget/ZoomButtonsController;
 

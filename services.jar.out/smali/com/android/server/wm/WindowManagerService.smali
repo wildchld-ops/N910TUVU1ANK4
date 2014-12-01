@@ -796,13 +796,6 @@
 
 .method private constructor <init>(Landroid/content/Context;Lcom/android/server/power/PowerManagerService;Lcom/android/server/display/DisplayManagerService;Lcom/android/server/input/InputManagerService;ZZZ)V
     .locals 13
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/server/power/PowerManagerService;
-    .param p3    # Lcom/android/server/display/DisplayManagerService;
-    .param p4    # Lcom/android/server/input/InputManagerService;
-    .param p5    # Z
-    .param p6    # Z
-    .param p7    # Z
 
     invoke-direct {p0}, Landroid/view/IWindowManager$Stub;-><init>()V
 
@@ -1706,14 +1699,6 @@
 
 .method synthetic constructor <init>(Landroid/content/Context;Lcom/android/server/power/PowerManagerService;Lcom/android/server/display/DisplayManagerService;Lcom/android/server/input/InputManagerService;ZZZLcom/android/server/wm/WindowManagerService$1;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/server/power/PowerManagerService;
-    .param p3    # Lcom/android/server/display/DisplayManagerService;
-    .param p4    # Lcom/android/server/input/InputManagerService;
-    .param p5    # Z
-    .param p6    # Z
-    .param p7    # Z
-    .param p8    # Lcom/android/server/wm/WindowManagerService$1;
 
     invoke-direct/range {p0 .. p7}, Lcom/android/server/wm/WindowManagerService;-><init>(Landroid/content/Context;Lcom/android/server/power/PowerManagerService;Lcom/android/server/display/DisplayManagerService;Lcom/android/server/input/InputManagerService;ZZZ)V
 
@@ -1722,7 +1707,6 @@
 
 .method static synthetic access$000(Lcom/android/server/wm/WindowManagerService;)Lcom/android/server/wm/KeyguardDisableHandler;
     .locals 1
-    .param p0    # Lcom/android/server/wm/WindowManagerService;
 
     iget-object v0, p0, Lcom/android/server/wm/WindowManagerService;->mKeyguardDisableHandler:Lcom/android/server/wm/KeyguardDisableHandler;
 
@@ -1731,7 +1715,6 @@
 
 .method static synthetic access$1000(Lcom/android/server/wm/WindowManagerService;)V
     .locals 0
-    .param p0    # Lcom/android/server/wm/WindowManagerService;
 
     invoke-direct {p0}, Lcom/android/server/wm/WindowManagerService;->stopFreezingDisplayLocked()V
 
@@ -1740,7 +1723,6 @@
 
 .method static synthetic access$1100(Lcom/android/server/wm/WindowManagerService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/wm/WindowManagerService;
 
     iget-boolean v0, p0, Lcom/android/server/wm/WindowManagerService;->mWindowsChanged:Z
 
@@ -1749,8 +1731,6 @@
 
 .method static synthetic access$1102(Lcom/android/server/wm/WindowManagerService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/wm/WindowManagerService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/wm/WindowManagerService;->mWindowsChanged:Z
 
@@ -1759,7 +1739,6 @@
 
 .method static synthetic access$1200(Lcom/android/server/wm/WindowManagerService;)V
     .locals 0
-    .param p0    # Lcom/android/server/wm/WindowManagerService;
 
     invoke-direct {p0}, Lcom/android/server/wm/WindowManagerService;->notifyWindowsChanged()V
 
@@ -1768,9 +1747,6 @@
 
 .method static synthetic access$1300(Lcom/android/server/wm/WindowManagerService;II)V
     .locals 0
-    .param p0    # Lcom/android/server/wm/WindowManagerService;
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/wm/WindowManagerService;->showStrictModeViolation(II)V
 
@@ -1779,8 +1755,6 @@
 
 .method static synthetic access$1400(Lcom/android/server/wm/WindowManagerService;I)V
     .locals 0
-    .param p0    # Lcom/android/server/wm/WindowManagerService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/wm/WindowManagerService;->handleDisplayAddedLocked(I)V
 
@@ -1789,8 +1763,6 @@
 
 .method static synthetic access$1500(Lcom/android/server/wm/WindowManagerService;I)V
     .locals 0
-    .param p0    # Lcom/android/server/wm/WindowManagerService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/wm/WindowManagerService;->handleDisplayRemovedLocked(I)V
 
@@ -1799,8 +1771,6 @@
 
 .method static synthetic access$1600(Lcom/android/server/wm/WindowManagerService;I)V
     .locals 0
-    .param p0    # Lcom/android/server/wm/WindowManagerService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/wm/WindowManagerService;->handleDisplayChangedLocked(I)V
 
@@ -1809,8 +1779,6 @@
 
 .method static synthetic access$1700(Lcom/android/server/wm/WindowManagerService;Z)V
     .locals 0
-    .param p0    # Lcom/android/server/wm/WindowManagerService;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/wm/WindowManagerService;->notifyCoverStateChanged(Z)V
 
@@ -1819,11 +1787,6 @@
 
 .method static synthetic access$200(Lcom/android/server/wm/WindowManagerService;FFLandroid/os/IBinder;Z)Lcom/android/server/wm/WindowState;
     .locals 1
-    .param p0    # Lcom/android/server/wm/WindowManagerService;
-    .param p1    # F
-    .param p2    # F
-    .param p3    # Landroid/os/IBinder;
-    .param p4    # Z
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/server/wm/WindowManagerService;->findTargetWindow(FFLandroid/os/IBinder;Z)Lcom/android/server/wm/WindowState;
 
@@ -1858,9 +1821,6 @@
 
 .method static synthetic access$300(Lcom/android/server/wm/WindowManagerService;Lcom/android/server/wm/WindowState;Lcom/android/server/wm/WindowState;)V
     .locals 0
-    .param p0    # Lcom/android/server/wm/WindowManagerService;
-    .param p1    # Lcom/android/server/wm/WindowState;
-    .param p2    # Lcom/android/server/wm/WindowState;
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/wm/WindowManagerService;->placeWindowAfter(Lcom/android/server/wm/WindowState;Lcom/android/server/wm/WindowState;)V
 
@@ -1869,7 +1829,6 @@
 
 .method static synthetic access$3000(Lcom/android/server/wm/WindowManagerService;)Ljava/util/Map;
     .locals 1
-    .param p0    # Lcom/android/server/wm/WindowManagerService;
 
     iget-object v0, p0, Lcom/android/server/wm/WindowManagerService;->mCapturedScreensLandFile:Ljava/util/Map;
 
@@ -1878,7 +1837,6 @@
 
 .method static synthetic access$3100(Lcom/android/server/wm/WindowManagerService;)Ljava/util/Map;
     .locals 1
-    .param p0    # Lcom/android/server/wm/WindowManagerService;
 
     iget-object v0, p0, Lcom/android/server/wm/WindowManagerService;->mCapturedScreensPortFile:Ljava/util/Map;
 
@@ -1887,8 +1845,6 @@
 
 .method static synthetic access$400(Lcom/android/server/wm/WindowManagerService;Lcom/android/server/wm/WindowList;)V
     .locals 0
-    .param p0    # Lcom/android/server/wm/WindowManagerService;
-    .param p1    # Lcom/android/server/wm/WindowList;
 
     invoke-direct {p0, p1}, Lcom/android/server/wm/WindowManagerService;->assignLayersLocked(Lcom/android/server/wm/WindowList;)V
 
@@ -1897,7 +1853,6 @@
 
 .method static synthetic access$500(Lcom/android/server/wm/WindowManagerService;)V
     .locals 0
-    .param p0    # Lcom/android/server/wm/WindowManagerService;
 
     invoke-direct {p0}, Lcom/android/server/wm/WindowManagerService;->performLayoutAndPlaceSurfacesLocked()V
 
@@ -1906,7 +1861,6 @@
 
 .method static synthetic access$700(Lcom/android/server/wm/WindowManagerService;)V
     .locals 0
-    .param p0    # Lcom/android/server/wm/WindowManagerService;
 
     invoke-direct {p0}, Lcom/android/server/wm/WindowManagerService;->notifyFocusChanged()V
 
@@ -1915,7 +1869,6 @@
 
 .method static synthetic access$800(Lcom/android/server/wm/WindowManagerService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/wm/WindowManagerService;
 
     iget-boolean v0, p0, Lcom/android/server/wm/WindowManagerService;->mbEnableHoveringUI:Z
 
@@ -1924,8 +1877,6 @@
 
 .method static synthetic access$900(Lcom/android/server/wm/WindowManagerService;Lcom/android/server/wm/AppWindowToken;)V
     .locals 0
-    .param p0    # Lcom/android/server/wm/WindowManagerService;
-    .param p1    # Lcom/android/server/wm/AppWindowToken;
 
     invoke-direct {p0, p1}, Lcom/android/server/wm/WindowManagerService;->appTokenDrawnForMultiWindow(Lcom/android/server/wm/AppWindowToken;)V
 
@@ -1934,7 +1885,6 @@
 
 .method private addAppWindowToListLocked(Lcom/android/server/wm/WindowState;)I
     .locals 31
-    .param p1    # Lcom/android/server/wm/WindowState;
 
     move-object/from16 v0, p1
 
@@ -2569,8 +2519,6 @@
 
 .method private addAttachedWindowToListLocked(Lcom/android/server/wm/WindowState;Z)V
     .locals 12
-    .param p1    # Lcom/android/server/wm/WindowState;
-    .param p2    # Z
 
     iget-object v6, p1, Lcom/android/server/wm/WindowState;->mToken:Lcom/android/server/wm/WindowToken;
 
@@ -2684,7 +2632,6 @@
 
 .method private addFreeWindowToListLocked(Lcom/android/server/wm/WindowState;)V
     .locals 10
-    .param p1    # Lcom/android/server/wm/WindowState;
 
     const/16 v9, 0x7dc
 
@@ -2879,8 +2826,6 @@
 
 .method private addWindowToListInOrderLocked(Lcom/android/server/wm/WindowState;Z)V
     .locals 12
-    .param p1    # Lcom/android/server/wm/WindowState;
-    .param p2    # Z
 
     const/4 v9, 0x0
 
@@ -3051,10 +2996,6 @@
 
 .method private adjustDisplaySizeRanges(Landroid/view/DisplayInfo;III)V
     .locals 3
-    .param p1    # Landroid/view/DisplayInfo;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iget-object v2, p0, Lcom/android/server/wm/WindowManagerService;->mPolicy:Landroid/view/WindowManagerPolicy;
 
@@ -3101,7 +3042,6 @@
 
 .method private appTokenDrawnForMultiWindow(Lcom/android/server/wm/AppWindowToken;)V
     .locals 4
-    .param p1    # Lcom/android/server/wm/AppWindowToken;
 
     if-eqz p1, :cond_0
 
@@ -3162,10 +3102,6 @@
 
 .method private applyAnimationLocked(Lcom/android/server/wm/AppWindowToken;Landroid/view/WindowManager$LayoutParams;IZ)Z
     .locals 11
-    .param p1    # Lcom/android/server/wm/AppWindowToken;
-    .param p2    # Landroid/view/WindowManager$LayoutParams;
-    .param p3    # I
-    .param p4    # Z
 
     invoke-virtual {p0}, Lcom/android/server/wm/WindowManagerService;->okToDisplay()Z
 
@@ -3404,7 +3340,6 @@
 
 .method private final assignLayersLocked(Lcom/android/server/wm/WindowList;)V
     .locals 12
-    .param p1    # Lcom/android/server/wm/WindowList;
 
     invoke-virtual {p1}, Lcom/android/server/wm/WindowList;->size()I
 
@@ -3615,7 +3550,6 @@
 
 .method private assignMultiWindowScaleLocked(Lcom/android/server/wm/TaskStack;)V
     .locals 8
-    .param p1    # Lcom/android/server/wm/TaskStack;
 
     if-nez p1, :cond_1
 
@@ -3693,8 +3627,6 @@
 
 .method private assignMultiWindowScaleLockedInner(Lcom/android/server/wm/WindowState;Lcom/android/server/wm/TaskStack;)V
     .locals 12
-    .param p1    # Lcom/android/server/wm/WindowState;
-    .param p2    # Lcom/android/server/wm/TaskStack;
 
     invoke-virtual {p2}, Lcom/android/server/wm/TaskStack;->getDisplayContent()Lcom/android/server/wm/DisplayContent;
 
@@ -4144,7 +4076,6 @@
 
 .method static canBeImeTarget(Lcom/android/server/wm/WindowState;)Z
     .locals 4
-    .param p0    # Lcom/android/server/wm/WindowState;
 
     const v3, 0x20008
 
@@ -4228,10 +4159,6 @@
 
 .method private computeCompatSmallestWidth(ZLandroid/util/DisplayMetrics;II)I
     .locals 12
-    .param p1    # Z
-    .param p2    # Landroid/util/DisplayMetrics;
-    .param p3    # I
-    .param p4    # I
 
     iget-object v0, p0, Lcom/android/server/wm/WindowManagerService;->mTmpDisplayMetrics:Landroid/util/DisplayMetrics;
 
@@ -4373,12 +4300,6 @@
 
 .method private computeSizeRangesAndScreenLayout(Landroid/view/DisplayInfo;ZIIFLandroid/content/res/Configuration;)V
     .locals 13
-    .param p1    # Landroid/view/DisplayInfo;
-    .param p2    # Z
-    .param p3    # I
-    .param p4    # I
-    .param p5    # F
-    .param p6    # Landroid/content/res/Configuration;
 
     if-eqz p2, :cond_0
 
@@ -4507,7 +4428,6 @@
 
 .method private configureDisplayPolicyLocked(Lcom/android/server/wm/DisplayContent;)V
     .locals 7
-    .param p1    # Lcom/android/server/wm/DisplayContent;
 
     iget-object v0, p0, Lcom/android/server/wm/WindowManagerService;->mPolicy:Landroid/view/WindowManagerPolicy;
 
@@ -4548,7 +4468,6 @@
 
 .method private convertActivityResultToComponentName(Landroid/os/IBinder;)Landroid/content/ComponentName;
     .locals 11
-    .param p1    # Landroid/os/IBinder;
 
     const/4 v7, 0x0
 
@@ -4682,10 +4601,6 @@
 
 .method private createTask(IIILcom/android/server/wm/AppWindowToken;)Lcom/android/server/wm/Task;
     .locals 7
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Lcom/android/server/wm/AppWindowToken;
 
     const/4 v6, 0x1
 
@@ -4761,7 +4676,6 @@
 
 .method private displayReady(I)V
     .locals 10
-    .param p1    # I
 
     iget-object v4, p0, Lcom/android/server/wm/WindowManagerService;->mWindowMap:Ljava/util/HashMap;
 
@@ -4889,7 +4803,6 @@
 
 .method private findAppWindowInsertionPointLocked(Lcom/android/server/wm/AppWindowToken;)I
     .locals 22
-    .param p1    # Lcom/android/server/wm/AppWindowToken;
 
     move-object/from16 v0, p1
 
@@ -5245,7 +5158,6 @@
 
 .method private findFocusedWindowLocked(Lcom/android/server/wm/DisplayContent;)Lcom/android/server/wm/WindowState;
     .locals 12
-    .param p1    # Lcom/android/server/wm/DisplayContent;
 
     const/4 v10, 0x0
 
@@ -5401,7 +5313,6 @@
 
 .method private findIdxBasedOnAppTokens(Lcom/android/server/wm/WindowState;)I
     .locals 5
-    .param p1    # Lcom/android/server/wm/WindowState;
 
     invoke-virtual {p1}, Lcom/android/server/wm/WindowState;->getWindowList()Lcom/android/server/wm/WindowList;
 
@@ -5444,9 +5355,6 @@
 
 .method private findTargetWindow(FFLandroid/os/IBinder;)Lcom/android/server/wm/WindowState;
     .locals 1
-    .param p1    # F
-    .param p2    # F
-    .param p3    # Landroid/os/IBinder;
 
     const/4 v0, 0x0
 
@@ -5459,10 +5367,6 @@
 
 .method private findTargetWindow(FFLandroid/os/IBinder;Z)Lcom/android/server/wm/WindowState;
     .locals 12
-    .param p1    # F
-    .param p2    # F
-    .param p3    # Landroid/os/IBinder;
-    .param p4    # Z
 
     const/4 v6, 0x0
 
@@ -5824,7 +5728,6 @@
 
 .method private findWindow(I)Lcom/android/server/wm/WindowState;
     .locals 8
-    .param p1    # I
 
     const/4 v6, -0x1
 
@@ -5923,7 +5826,6 @@
 
 .method private finishUpdateFocusedWindowAfterAssignLayersLocked(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/server/wm/WindowManagerService;->mInputMonitor:Lcom/android/server/wm/InputMonitor;
 
@@ -5936,7 +5838,6 @@
 
 .method static fixScale(F)F
     .locals 1
-    .param p0    # F
 
     const/4 v0, 0x0
 
@@ -6002,11 +5903,6 @@
 
 .method static getPropertyInt([Ljava/lang/String;IIILandroid/util/DisplayMetrics;)I
     .locals 3
-    .param p0    # [Ljava/lang/String;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/util/DisplayMetrics;
 
     array-length v2, p0
 
@@ -6056,8 +5952,6 @@
 
 .method private getTaskImageFromFile(Ljava/lang/String;I)Landroid/graphics/Bitmap;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -6148,7 +6042,6 @@
 
 .method private handleDisplayAddedLocked(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/server/wm/WindowManagerService;->mDisplayManager:Landroid/hardware/display/DisplayManager;
 
@@ -6168,7 +6061,6 @@
 
 .method private handleDisplayChangedLocked(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/server/wm/WindowManagerService;->getDisplayContentLocked(I)Lcom/android/server/wm/DisplayContent;
 
@@ -6184,7 +6076,6 @@
 
 .method private handleDisplayRemovedLocked(I)V
     .locals 5
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/server/wm/WindowManagerService;->getDisplayContentLocked(I)Lcom/android/server/wm/DisplayContent;
 
@@ -6254,9 +6145,6 @@
 
 .method private handleFlagDimBehind(Lcom/android/server/wm/WindowState;II)V
     .locals 5
-    .param p1    # Lcom/android/server/wm/WindowState;
-    .param p2    # I
-    .param p3    # I
 
     iget-object v0, p1, Lcom/android/server/wm/WindowState;->mAttrs:Landroid/view/WindowManager$LayoutParams;
 
@@ -6385,10 +6273,6 @@
 
 .method private handleNotObscuredLocked(Lcom/android/server/wm/WindowState;JII)V
     .locals 9
-    .param p1    # Lcom/android/server/wm/WindowState;
-    .param p2    # J
-    .param p4    # I
-    .param p5    # I
 
     iget-object v1, p1, Lcom/android/server/wm/WindowState;->mAttrs:Landroid/view/WindowManager$LayoutParams;
 
@@ -6801,8 +6685,6 @@
 
 .method private indexOfWinInWindowList(Lcom/android/server/wm/WindowState;Lcom/android/server/wm/WindowList;)I
     .locals 3
-    .param p1    # Lcom/android/server/wm/WindowState;
-    .param p2    # Lcom/android/server/wm/WindowList;
 
     invoke-virtual {p2}, Lcom/android/server/wm/WindowList;->size()I
 
@@ -6855,7 +6737,6 @@
 
 .method private initPolicy(Landroid/os/Handler;)V
     .locals 3
-    .param p1    # Landroid/os/Handler;
 
     new-instance v0, Lcom/android/server/wm/WindowManagerService$3;
 
@@ -6870,7 +6751,6 @@
 
 .method private isContainsCenterBarIncludeChild(Lcom/android/server/wm/WindowState;)Z
     .locals 9
-    .param p1    # Lcom/android/server/wm/WindowState;
 
     const/4 v6, 0x5
 
@@ -7011,10 +6891,6 @@
 
 .method static logSurface(Landroid/view/SurfaceControl;Ljava/lang/String;Ljava/lang/String;Ljava/lang/RuntimeException;)V
     .locals 3
-    .param p0    # Landroid/view/SurfaceControl;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/RuntimeException;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -7073,9 +6949,6 @@
 
 .method static logSurface(Lcom/android/server/wm/WindowState;Ljava/lang/String;Ljava/lang/RuntimeException;)V
     .locals 3
-    .param p0    # Lcom/android/server/wm/WindowState;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/RuntimeException;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -7124,14 +6997,6 @@
 
 .method public static main(Landroid/content/Context;Lcom/android/server/power/PowerManagerService;Lcom/android/server/display/DisplayManagerService;Lcom/android/server/input/InputManagerService;Landroid/os/Handler;ZZZ)Lcom/android/server/wm/WindowManagerService;
     .locals 9
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/server/power/PowerManagerService;
-    .param p2    # Lcom/android/server/display/DisplayManagerService;
-    .param p3    # Lcom/android/server/input/InputManagerService;
-    .param p4    # Landroid/os/Handler;
-    .param p5    # Z
-    .param p6    # Z
-    .param p7    # Z
 
     const/4 v0, 0x1
 
@@ -7210,7 +7075,6 @@
 
 .method private newDisplayContentLocked(Landroid/view/Display;)Lcom/android/server/wm/DisplayContent;
     .locals 6
-    .param p1    # Landroid/view/Display;
 
     new-instance v0, Lcom/android/server/wm/DisplayContent;
 
@@ -7315,7 +7179,6 @@
 
 .method private notifyCoverStateChanged(Z)V
     .locals 6
-    .param p1    # Z
 
     iget-object v5, p0, Lcom/android/server/wm/WindowManagerService;->mWindowMap:Ljava/util/HashMap;
 
@@ -7554,7 +7417,6 @@
 
 .method private final performLayoutAndPlaceSurfacesLockedInner(Z)V
     .locals 62
-    .param p1    # Z
 
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 
@@ -10686,9 +10548,6 @@
 
 .method private final performLayoutLockedInner(Lcom/android/server/wm/DisplayContent;ZZ)V
     .locals 27
-    .param p1    # Lcom/android/server/wm/DisplayContent;
-    .param p2    # Z
-    .param p3    # Z
 
     move-object/from16 v0, p1
 
@@ -11647,8 +11506,6 @@
 
 .method private placeWindowAfter(Lcom/android/server/wm/WindowState;Lcom/android/server/wm/WindowState;)V
     .locals 3
-    .param p1    # Lcom/android/server/wm/WindowState;
-    .param p2    # Lcom/android/server/wm/WindowState;
 
     invoke-virtual {p1}, Lcom/android/server/wm/WindowState;->getWindowList()Lcom/android/server/wm/WindowList;
 
@@ -11671,8 +11528,6 @@
 
 .method private placeWindowBefore(Lcom/android/server/wm/WindowState;Lcom/android/server/wm/WindowState;)V
     .locals 5
-    .param p1    # Lcom/android/server/wm/WindowState;
-    .param p2    # Lcom/android/server/wm/WindowState;
 
     invoke-virtual {p1}, Lcom/android/server/wm/WindowState;->getWindowList()Lcom/android/server/wm/WindowList;
 
@@ -11730,9 +11585,6 @@
 
 .method private final reAddAppWindowsLocked(Lcom/android/server/wm/DisplayContent;ILcom/android/server/wm/WindowToken;)I
     .locals 4
-    .param p1    # Lcom/android/server/wm/DisplayContent;
-    .param p2    # I
-    .param p3    # Lcom/android/server/wm/WindowToken;
 
     iget-object v3, p3, Lcom/android/server/wm/WindowToken;->windows:Lcom/android/server/wm/WindowList;
 
@@ -11772,8 +11624,6 @@
 
 .method private final reAddWindowLocked(ILcom/android/server/wm/WindowState;)I
     .locals 7
-    .param p1    # I
-    .param p2    # Lcom/android/server/wm/WindowState;
 
     const/4 v6, 0x0
 
@@ -11846,7 +11696,6 @@
 
 .method private reAddWindowToListInOrderLocked(Lcom/android/server/wm/WindowState;)V
     .locals 3
-    .param p1    # Lcom/android/server/wm/WindowState;
 
     const/4 v2, 0x0
 
@@ -11876,7 +11725,6 @@
 
 .method private readForcedDisplaySizeAndDensityLocked(Lcom/android/server/wm/DisplayContent;)V
     .locals 11
-    .param p1    # Lcom/android/server/wm/DisplayContent;
 
     const/4 v10, 0x0
 
@@ -12134,7 +11982,6 @@
 
 .method private rebuildAppWindowListLocked(Lcom/android/server/wm/DisplayContent;)V
     .locals 27
-    .param p1    # Lcom/android/server/wm/DisplayContent;
 
     invoke-virtual/range {p1 .. p1}, Lcom/android/server/wm/DisplayContent;->getWindowList()Lcom/android/server/wm/WindowList;
 
@@ -12569,7 +12416,6 @@
 
 .method private reconfigureDisplayLocked(Lcom/android/server/wm/DisplayContent;)V
     .locals 5
-    .param p1    # Lcom/android/server/wm/DisplayContent;
 
     const/4 v4, 0x1
 
@@ -12642,11 +12488,6 @@
 
 .method private reduceCompatConfigWidthSize(IILandroid/util/DisplayMetrics;II)I
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/util/DisplayMetrics;
-    .param p4    # I
-    .param p5    # I
 
     iget-object v2, p0, Lcom/android/server/wm/WindowManagerService;->mPolicy:Landroid/view/WindowManagerPolicy;
 
@@ -12699,11 +12540,6 @@
 
 .method private reduceConfigLayout(IIFII)I
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # F
-    .param p4    # I
-    .param p5    # I
 
     iget-object v5, p0, Lcom/android/server/wm/WindowManagerService;->mPolicy:Landroid/view/WindowManagerPolicy;
 
@@ -12751,8 +12587,6 @@
 
 .method private removeWindowInnerLocked(Lcom/android/server/wm/Session;Lcom/android/server/wm/WindowState;)V
     .locals 11
-    .param p1    # Lcom/android/server/wm/Session;
-    .param p2    # Lcom/android/server/wm/WindowState;
 
     iget-boolean v7, p2, Lcom/android/server/wm/WindowState;->mRemoved:Z
 
@@ -13234,9 +13068,6 @@
 
 .method private removeWindowLocked(Lcom/android/server/wm/Session;Lcom/android/server/wm/WindowState;Z)V
     .locals 8
-    .param p1    # Lcom/android/server/wm/Session;
-    .param p2    # Lcom/android/server/wm/WindowState;
-    .param p3    # Z
 
     const/4 v5, 0x3
 
@@ -13472,7 +13303,6 @@
 
 .method private setAnimatorDurationScale(F)V
     .locals 0
-    .param p1    # F
 
     iput p1, p0, Lcom/android/server/wm/WindowManagerService;->mAnimatorDurationScale:F
 
@@ -13483,8 +13313,6 @@
 
 .method private setForcedDisplayDensityLocked(Lcom/android/server/wm/DisplayContent;I)V
     .locals 3
-    .param p1    # Lcom/android/server/wm/DisplayContent;
-    .param p2    # I
 
     const-string v0, "WindowManager"
 
@@ -13536,9 +13364,6 @@
 
 .method private setForcedDisplaySizeLocked(Lcom/android/server/wm/DisplayContent;II)V
     .locals 3
-    .param p1    # Lcom/android/server/wm/DisplayContent;
-    .param p2    # I
-    .param p3    # I
 
     const-string v0, "WindowManager"
 
@@ -13602,11 +13427,6 @@
 
 .method private setOverscanLocked(Lcom/android/server/wm/DisplayContent;IIII)V
     .locals 7
-    .param p1    # Lcom/android/server/wm/DisplayContent;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-virtual {p1}, Lcom/android/server/wm/DisplayContent;->getDisplayInfo()Landroid/view/DisplayInfo;
 
@@ -13664,8 +13484,6 @@
 
 .method private showStrictModeViolation(II)V
     .locals 12
-    .param p1    # I
-    .param p2    # I
 
     if-eqz p1, :cond_1
 
@@ -13818,9 +13636,6 @@
 
 .method private startFreezingDisplayLocked(ZII)V
     .locals 9
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
 
     const/4 v5, 0x0
 
@@ -14316,8 +14131,6 @@
 
 .method private tmpRemoveAppWindowsLocked(Lcom/android/server/wm/DisplayContent;Lcom/android/server/wm/WindowToken;)Z
     .locals 7
-    .param p1    # Lcom/android/server/wm/DisplayContent;
-    .param p2    # Lcom/android/server/wm/WindowToken;
 
     const/4 v5, 0x1
 
@@ -14404,7 +14217,6 @@
 
 .method private tmpRemoveAppWindowsLocked(Lcom/android/server/wm/WindowToken;)Z
     .locals 1
-    .param p1    # Lcom/android/server/wm/WindowToken;
 
     const/4 v0, 0x0
 
@@ -14417,8 +14229,6 @@
 
 .method private tmpRemoveWindowLocked(ILcom/android/server/wm/WindowState;)I
     .locals 6
-    .param p1    # I
-    .param p2    # Lcom/android/server/wm/WindowState;
 
     invoke-virtual {p2}, Lcom/android/server/wm/WindowState;->getWindowList()Lcom/android/server/wm/WindowList;
 
@@ -14482,7 +14292,6 @@
 
 .method private toBrightnessOverride(F)I
     .locals 1
-    .param p1    # F
 
     const/high16 v0, 0x437f0000
 
@@ -14495,7 +14304,6 @@
 
 .method private updateAllDrawnLocked(Lcom/android/server/wm/DisplayContent;)V
     .locals 11
-    .param p1    # Lcom/android/server/wm/DisplayContent;
 
     invoke-virtual {p1}, Lcom/android/server/wm/DisplayContent;->getTasks()Ljava/util/ArrayList;
 
@@ -14577,8 +14385,6 @@
 
 .method private updateFocusedWindowLocked(IZ)Z
     .locals 12
-    .param p1    # I
-    .param p2    # Z
 
     const-wide/16 v10, 0x20
 
@@ -14721,8 +14527,6 @@
 
 .method private updateOrientationFromAppTokensLocked(Landroid/content/res/Configuration;Landroid/os/IBinder;)Landroid/content/res/Configuration;
     .locals 8
-    .param p1    # Landroid/content/res/Configuration;
-    .param p2    # Landroid/os/IBinder;
 
     const/4 v7, 0x1
 
@@ -14839,7 +14643,6 @@
 
 .method private updateResizingWindows(Lcom/android/server/wm/WindowState;)V
     .locals 7
-    .param p1    # Lcom/android/server/wm/WindowState;
 
     const/4 v3, 0x1
 
@@ -15087,15 +14890,6 @@
 # virtual methods
 .method public addAppToken(ILandroid/view/IApplicationToken;IIIZZII)V
     .locals 12
-    .param p1    # I
-    .param p2    # Landroid/view/IApplicationToken;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Z
-    .param p7    # Z
-    .param p8    # I
-    .param p9    # I
 
     const/4 v10, 0x0
 
@@ -15128,17 +14922,6 @@
 
 .method public addAppToken(ILandroid/view/IApplicationToken;IIIZZIILcom/samsung/android/multiwindow/MultiWindowStyle;Z)V
     .locals 10
-    .param p1    # I
-    .param p2    # Landroid/view/IApplicationToken;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Z
-    .param p7    # Z
-    .param p8    # I
-    .param p9    # I
-    .param p10    # Lcom/samsung/android/multiwindow/MultiWindowStyle;
-    .param p11    # Z
 
     const-string v6, "android.permission.MANAGE_APP_TOKENS"
 
@@ -15354,15 +15137,6 @@
 
 .method public addFakeWindow(Landroid/os/Looper;Landroid/view/InputEventReceiver$Factory;Ljava/lang/String;IIIZZZ)Landroid/view/WindowManagerPolicy$FakeWindow;
     .locals 13
-    .param p1    # Landroid/os/Looper;
-    .param p2    # Landroid/view/InputEventReceiver$Factory;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # Z
-    .param p8    # Z
-    .param p9    # Z
 
     iget-object v12, p0, Lcom/android/server/wm/WindowManagerService;->mWindowMap:Ljava/util/HashMap;
 
@@ -15445,7 +15219,6 @@
 
 .method addInputMethodWindowToListLocked(Lcom/android/server/wm/WindowState;)V
     .locals 3
-    .param p1    # Lcom/android/server/wm/WindowState;
 
     const/4 v2, 0x1
 
@@ -15490,8 +15263,6 @@
 
 .method public addScaledPid(ILjava/lang/String;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/server/wm/WindowManagerService;->mScaledPids:Ljava/util/HashMap;
 
@@ -15510,9 +15281,6 @@
 
 .method public addTask(IIZ)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     const/4 v0, 0x1
 
@@ -15523,10 +15291,6 @@
 
 .method public addTask(IIZZ)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # Z
 
     const/4 v4, 0x1
 
@@ -15547,11 +15311,6 @@
 
 .method public addTask(IIZZZ)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # Z
-    .param p5    # Z
 
     iget-object v6, p0, Lcom/android/server/wm/WindowManagerService;->mWindowMap:Ljava/util/HashMap;
 
@@ -15660,14 +15419,6 @@
 
 .method public addWindow(Lcom/android/server/wm/Session;Landroid/view/IWindow;ILandroid/view/WindowManager$LayoutParams;IILandroid/graphics/Rect;Landroid/view/InputChannel;)I
     .locals 29
-    .param p1    # Lcom/android/server/wm/Session;
-    .param p2    # Landroid/view/IWindow;
-    .param p3    # I
-    .param p4    # Landroid/view/WindowManager$LayoutParams;
-    .param p5    # I
-    .param p6    # I
-    .param p7    # Landroid/graphics/Rect;
-    .param p8    # Landroid/view/InputChannel;
 
     const/4 v3, 0x1
 
@@ -17327,7 +17078,6 @@
 
 .method public addWindowChangeListener(Lcom/android/server/wm/WindowManagerService$WindowChangeListener;)V
     .locals 2
-    .param p1    # Lcom/android/server/wm/WindowManagerService$WindowChangeListener;
 
     iget-object v1, p0, Lcom/android/server/wm/WindowManagerService;->mWindowMap:Ljava/util/HashMap;
 
@@ -17354,8 +17104,6 @@
 
 .method public addWindowToken(Landroid/os/IBinder;I)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # I
 
     const-string v1, "android.permission.MANAGE_APP_TOKENS"
 
@@ -17454,7 +17202,6 @@
 
 .method adjustAnimationBackground(Lcom/android/server/wm/WindowStateAnimator;)I
     .locals 4
-    .param p1    # Lcom/android/server/wm/WindowStateAnimator;
 
     iget-object v3, p1, Lcom/android/server/wm/WindowStateAnimator;->mWin:Lcom/android/server/wm/WindowState;
 
@@ -18654,7 +18401,6 @@
 
 .method public appMinimizingStarted(Landroid/os/IBinder;)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
 
     iget-object v2, p0, Lcom/android/server/wm/WindowManagerService;->mWindowMap:Ljava/util/HashMap;
 
@@ -18696,7 +18442,6 @@
 
 .method public assignMultiWindowScale(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v2, p0, Lcom/android/server/wm/WindowManagerService;->mWindowMap:Ljava/util/HashMap;
 
@@ -18742,9 +18487,6 @@
 
 .method public captureFullScreen(Landroid/os/IBinder;Ljava/lang/String;Z)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     const-string v1, "android.permission.READ_FRAME_BUFFER"
 
@@ -18838,10 +18580,6 @@
 
 .method public changeDisplayScale(IFFF)V
     .locals 8
-    .param p1    # I
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
 
     const/4 v4, 0x0
 
@@ -18990,8 +18728,6 @@
 
 .method changeMultiWindowStyle(Lcom/android/server/wm/AppWindowToken;Lcom/samsung/android/multiwindow/MultiWindowStyle;)Z
     .locals 5
-    .param p1    # Lcom/android/server/wm/AppWindowToken;
-    .param p2    # Lcom/samsung/android/multiwindow/MultiWindowStyle;
 
     const/4 v1, 0x0
 
@@ -19085,8 +18821,6 @@
 
 .method checkCallingPermission(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v1, 0x1
 
@@ -19313,7 +19047,6 @@
 
 .method public clearForcedDisplayDensity(I)V
     .locals 7
-    .param p1    # I
 
     iget-object v3, p0, Lcom/android/server/wm/WindowManagerService;->mContext:Landroid/content/Context;
 
@@ -19411,7 +19144,6 @@
 
 .method public clearForcedDisplaySize(I)V
     .locals 7
-    .param p1    # I
 
     iget-object v3, p0, Lcom/android/server/wm/WindowManagerService;->mContext:Landroid/content/Context;
 
@@ -19511,7 +19243,6 @@
 
 .method public closeSystemDialogs(Ljava/lang/String;)V
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     iget-object v7, p0, Lcom/android/server/wm/WindowManagerService;->mWindowMap:Ljava/util/HashMap;
 
@@ -19604,7 +19335,6 @@
 
 .method public cocktailBarVisibilityChanged(Z)V
     .locals 4
-    .param p1    # Z
 
     iget-object v2, p0, Lcom/android/server/wm/WindowManagerService;->mPolicy:Landroid/view/WindowManagerPolicy;
 
@@ -19839,7 +19569,6 @@
 
 .method computeScreenConfigurationLocked(Landroid/content/res/Configuration;)Z
     .locals 30
-    .param p1    # Landroid/content/res/Configuration;
 
     move-object/from16 v0, p0
 
@@ -20544,7 +20273,6 @@
 
 .method public convertPointToWeight(Landroid/graphics/Point;)Ljava/util/ArrayList;
     .locals 4
-    .param p1    # Landroid/graphics/Point;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -20753,8 +20481,6 @@
 
 .method countWindowsBetween(Lcom/android/server/wm/WindowState;Lcom/android/server/wm/WindowState;)I
     .locals 3
-    .param p1    # Lcom/android/server/wm/WindowState;
-    .param p2    # Lcom/android/server/wm/WindowState;
 
     const/4 v1, 0x0
 
@@ -20798,8 +20524,6 @@
 
 .method countWindowsBetweenTargetAndWidget(Lcom/android/server/wm/WindowState;Lcom/android/server/wm/WindowState;)I
     .locals 6
-    .param p1    # Lcom/android/server/wm/WindowState;
-    .param p2    # Lcom/android/server/wm/WindowState;
 
     invoke-virtual {p0}, Lcom/android/server/wm/WindowManagerService;->getDefaultDisplayContentLocked()Lcom/android/server/wm/DisplayContent;
 
@@ -20858,7 +20582,6 @@
 
 .method public createDisplayContentLocked(Landroid/view/Display;)V
     .locals 2
-    .param p1    # Landroid/view/Display;
 
     if-nez p1, :cond_0
 
@@ -20882,10 +20605,6 @@
 
 .method public createStack(IIIF)V
     .locals 10
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # F
 
     iget-object v7, p0, Lcom/android/server/wm/WindowManagerService;->mWindowMap:Ljava/util/HashMap;
 
@@ -21062,9 +20781,6 @@
 
 .method public createStack(IILandroid/graphics/Rect;)V
     .locals 8
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/graphics/Rect;
 
     iget-object v5, p0, Lcom/android/server/wm/WindowManagerService;->mWindowMap:Ljava/util/HashMap;
 
@@ -21439,8 +21155,6 @@
 
 .method debugLayoutRepeats(Ljava/lang/String;I)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     iget v0, p0, Lcom/android/server/wm/WindowManagerService;->mLayoutRepeatCount:I
 
@@ -21743,8 +21457,6 @@
 
 .method public disableKeyguard(Landroid/os/IBinder;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/server/wm/WindowManagerService;->mContext:Landroid/content/Context;
 
@@ -21841,9 +21553,6 @@
 
 .method public dispatchAirButtonHitTest(III)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     int-to-float v2, p2
 
@@ -21908,8 +21617,6 @@
 
 .method public dispatchSmartClipDataExtractionEvent(Lcom/samsung/android/smartclip/SmartClipDataExtractionEvent;Landroid/os/IBinder;)V
     .locals 8
-    .param p1    # Lcom/samsung/android/smartclip/SmartClipDataExtractionEvent;
-    .param p2    # Landroid/os/IBinder;
 
     const/high16 v7, 0x40000000
 
@@ -22001,8 +21708,6 @@
 
 .method dispatchWallpaperVisibility(Lcom/android/server/wm/WindowState;Z)V
     .locals 1
-    .param p1    # Lcom/android/server/wm/WindowState;
-    .param p2    # Z
 
     iget-boolean v0, p1, Lcom/android/server/wm/WindowState;->mWallpaperVisible:Z
 
@@ -22162,9 +21867,6 @@
 
 .method public dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 7
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/server/wm/WindowManagerService;->mContext:Landroid/content/Context;
 
@@ -22837,9 +22539,6 @@
 
 .method dumpAnimatorLocked(Ljava/io/PrintWriter;[Ljava/lang/String;Z)V
     .locals 2
-    .param p1    # Ljava/io/PrintWriter;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # Z
 
     const-string v0, "WINDOW MANAGER ANIMATOR STATE (dumpsys window animator)"
 
@@ -22998,8 +22697,6 @@
 
 .method dumpDisplayContentsLocked(Ljava/io/PrintWriter;Z)V
     .locals 4
-    .param p1    # Ljava/io/PrintWriter;
-    .param p2    # Z
 
     const-string v3, "WINDOW MANAGER DISPLAY CONTENTS (dumpsys window displays)"
 
@@ -23047,7 +22744,6 @@
 
 .method dumpLastANRLocked(Ljava/io/PrintWriter;)V
     .locals 1
-    .param p1    # Ljava/io/PrintWriter;
 
     const-string v0, "WINDOW MANAGER LAST ANR (dumpsys window lastanr)"
 
@@ -23074,9 +22770,6 @@
 
 .method dumpPolicyLocked(Ljava/io/PrintWriter;[Ljava/lang/String;Z)V
     .locals 2
-    .param p1    # Ljava/io/PrintWriter;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # Z
 
     const-string v0, "WINDOW MANAGER POLICY STATE (dumpsys window policy)"
 
@@ -23093,8 +22786,6 @@
 
 .method dumpSessionsLocked(Ljava/io/PrintWriter;Z)V
     .locals 3
-    .param p1    # Ljava/io/PrintWriter;
-    .param p2    # Z
 
     const-string v2, "WINDOW MANAGER SESSIONS (dumpsys window sessions)"
 
@@ -23149,8 +22840,6 @@
 
 .method dumpTokensLocked(Ljava/io/PrintWriter;Z)V
     .locals 6
-    .param p1    # Ljava/io/PrintWriter;
-    .param p2    # Z
 
     const/16 v5, 0x20
 
@@ -23399,11 +23088,6 @@
 
 .method dumpWindows(Ljava/io/PrintWriter;Ljava/lang/String;[Ljava/lang/String;IZ)Z
     .locals 9
-    .param p1    # Ljava/io/PrintWriter;
-    .param p2    # Ljava/lang/String;
-    .param p3    # [Ljava/lang/String;
-    .param p4    # I
-    .param p5    # Z
 
     new-instance v6, Lcom/android/server/wm/WindowList;
 
@@ -23747,8 +23431,6 @@
 
 .method dumpWindowsLocked(Ljava/io/PrintWriter;ZLjava/util/ArrayList;)V
     .locals 1
-    .param p1    # Ljava/io/PrintWriter;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -23772,8 +23454,6 @@
 
 .method dumpWindowsNoHeaderLocked(Ljava/io/PrintWriter;ZLjava/util/ArrayList;)V
     .locals 12
-    .param p1    # Ljava/io/PrintWriter;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -24947,7 +24627,6 @@
 
 .method public exitKeyguardSecurely(Landroid/view/IOnKeyguardExitResult;)V
     .locals 2
-    .param p1    # Landroid/view/IOnKeyguardExitResult;
 
     iget-object v0, p0, Lcom/android/server/wm/WindowManagerService;->mContext:Landroid/content/Context;
 
@@ -24995,7 +24674,6 @@
 
 .method findAppWindowToken(Landroid/os/IBinder;)Lcom/android/server/wm/AppWindowToken;
     .locals 2
-    .param p1    # Landroid/os/IBinder;
 
     iget-object v1, p0, Lcom/android/server/wm/WindowManagerService;->mTokenMap:Ljava/util/HashMap;
 
@@ -25020,7 +24698,6 @@
 
 .method findDesiredInputMethodWindowIndexLocked(Z)I
     .locals 17
-    .param p1    # Z
 
     invoke-virtual/range {p0 .. p0}, Lcom/android/server/wm/WindowManagerService;->getDefaultWindowListLocked()Lcom/android/server/wm/WindowList;
 
@@ -25557,7 +25234,6 @@
 
 .method findForceLocalOrientationWindowLayer(Lcom/android/server/wm/DisplayContent;)I
     .locals 6
-    .param p1    # Lcom/android/server/wm/DisplayContent;
 
     invoke-virtual {p1}, Lcom/android/server/wm/DisplayContent;->getWindowList()Lcom/android/server/wm/WindowList;
 
@@ -25666,9 +25342,6 @@
 
 .method public findNextFocusableStackBoxInfo(IZZ)Landroid/app/ActivityManager$StackBoxInfo;
     .locals 14
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # Z
 
     iget-object v11, p0, Lcom/android/server/wm/WindowManagerService;->mStackIdToStack:Landroid/util/SparseArray;
 
@@ -25877,8 +25550,6 @@
 
 .method public finishDrawingWindow(Lcom/android/server/wm/Session;Landroid/view/IWindow;)V
     .locals 6
-    .param p1    # Lcom/android/server/wm/Session;
-    .param p2    # Landroid/view/IWindow;
 
     invoke-static {}, Landroid/os/Binder;->clearCallingIdentity()J
 
@@ -25969,7 +25640,6 @@
 
 .method public finishMultiWindowTransition(Lcom/android/server/wm/DisplayContent;)V
     .locals 3
-    .param p1    # Lcom/android/server/wm/DisplayContent;
 
     iget-object v1, p0, Lcom/android/server/wm/WindowManagerService;->mAnimator:Lcom/android/server/wm/WindowAnimator;
 
@@ -26101,7 +25771,6 @@
 
 .method public freezeRotation(I)V
     .locals 6
-    .param p1    # I
 
     const/4 v5, 0x0
 
@@ -26176,7 +25845,6 @@
 
 .method public getAnimationScale(I)F
     .locals 1
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -26238,7 +25906,6 @@
 
 .method public getAppOrientation(Landroid/view/IApplicationToken;)I
     .locals 3
-    .param p1    # Landroid/view/IApplicationToken;
 
     iget-object v2, p0, Lcom/android/server/wm/WindowManagerService;->mWindowMap:Ljava/util/HashMap;
 
@@ -26281,7 +25948,6 @@
 
 .method public getAppWindowMode(Landroid/view/IApplicationToken;)Lcom/samsung/android/multiwindow/MultiWindowStyle;
     .locals 5
-    .param p1    # Landroid/view/IApplicationToken;
 
     const-string v1, "android.permission.MANAGE_APP_TOKENS"
 
@@ -26428,8 +26094,6 @@
 
 .method public getAvailableSplitStackId(ILcom/samsung/android/multiwindow/MultiWindowStyle;)I
     .locals 3
-    .param p1    # I
-    .param p2    # Lcom/samsung/android/multiwindow/MultiWindowStyle;
 
     iget-object v2, p0, Lcom/android/server/wm/WindowManagerService;->mWindowMap:Ljava/util/HashMap;
 
@@ -26476,7 +26140,6 @@
 
 .method public getBaseDisplayDensity(I)I
     .locals 4
-    .param p1    # I
 
     iget-object v2, p0, Lcom/android/server/wm/WindowManagerService;->mWindowMap:Ljava/util/HashMap;
 
@@ -26553,8 +26216,6 @@
 
 .method public getBaseDisplaySize(ILandroid/graphics/Point;)V
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/graphics/Point;
 
     iget-object v2, p0, Lcom/android/server/wm/WindowManagerService;->mWindowMap:Ljava/util/HashMap;
 
@@ -26785,7 +26446,6 @@
 
 .method getCapturedImageFromFile(Lcom/android/server/wm/AppWindowToken;)Landroid/graphics/Bitmap;
     .locals 12
-    .param p1    # Lcom/android/server/wm/AppWindowToken;
 
     const-wide/16 v10, 0x400
 
@@ -26975,7 +26635,6 @@
 
 .method public getCompatibleMagnificationSpecForWindow(Landroid/os/IBinder;)Landroid/view/MagnificationSpec;
     .locals 6
-    .param p1    # Landroid/os/IBinder;
 
     const/4 v2, 0x0
 
@@ -27139,7 +26798,6 @@
 
 .method public getDisplayContentLocked(I)Lcom/android/server/wm/DisplayContent;
     .locals 3
-    .param p1    # I
 
     iget-object v2, p0, Lcom/android/server/wm/WindowManagerService;->mDisplayContents:Landroid/util/SparseArray;
 
@@ -27169,7 +26827,6 @@
 
 .method public getDssScaleFactor(I)F
     .locals 6
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -27231,7 +26888,6 @@
 
 .method getEasyOneHandScaleSpecLocked(I)Landroid/view/MagnificationSpec;
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/server/wm/WindowManagerService;->getDisplayContentLocked(I)Lcom/android/server/wm/DisplayContent;
 
@@ -27449,7 +27105,6 @@
 
 .method public getInitialDisplayDensity(I)I
     .locals 4
-    .param p1    # I
 
     iget-object v2, p0, Lcom/android/server/wm/WindowManagerService;->mWindowMap:Ljava/util/HashMap;
 
@@ -27526,8 +27181,6 @@
 
 .method public getInitialDisplaySize(ILandroid/graphics/Point;)V
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/graphics/Point;
 
     iget-object v2, p0, Lcom/android/server/wm/WindowManagerService;->mWindowMap:Ljava/util/HashMap;
 
@@ -27826,7 +27479,6 @@
 
 .method public getMainWindowAttributes(Landroid/view/IApplicationToken;)Landroid/view/WindowManager$LayoutParams;
     .locals 5
-    .param p1    # Landroid/view/IApplicationToken;
 
     const/4 v2, 0x0
 
@@ -28663,7 +28315,6 @@
 
 .method public getRootStackBoxInfo(I)Landroid/app/ActivityManager$StackBoxInfo;
     .locals 3
-    .param p1    # I
 
     iget-object v2, p0, Lcom/android/server/wm/WindowManagerService;->mWindowMap:Ljava/util/HashMap;
 
@@ -28704,7 +28355,6 @@
 
 .method public getStackBound(I)Landroid/graphics/Rect;
     .locals 4
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -28753,7 +28403,6 @@
 
 .method public getStackBounds(I)Landroid/graphics/Rect;
     .locals 4
-    .param p1    # I
 
     iget-object v3, p0, Lcom/android/server/wm/WindowManagerService;->mDisplayContents:Landroid/util/SparseArray;
 
@@ -28796,7 +28445,6 @@
 
 .method public getStackBoxId(I)I
     .locals 3
-    .param p1    # I
 
     iget-object v2, p0, Lcom/android/server/wm/WindowManagerService;->mWindowMap:Ljava/util/HashMap;
 
@@ -28880,8 +28528,6 @@
 
 .method public getStackBoxPosition(ILandroid/os/IBinder;)Landroid/graphics/Point;
     .locals 12
-    .param p1    # I
-    .param p2    # Landroid/os/IBinder;
 
     invoke-virtual {p0, p1}, Lcom/android/server/wm/WindowManagerService;->getStackBound(I)Landroid/graphics/Rect;
 
@@ -29052,7 +28698,6 @@
 
 .method public getStackBoxWeight(I)F
     .locals 2
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -29093,7 +28738,6 @@
 
 .method public getStackOrder(Z)Ljava/util/ArrayList;
     .locals 3
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(Z)",
@@ -29133,8 +28777,6 @@
 
 .method public getStackOriginalBound(ILandroid/os/IBinder;)Landroid/graphics/Rect;
     .locals 8
-    .param p1    # I
-    .param p2    # Landroid/os/IBinder;
 
     iget-object v7, p0, Lcom/android/server/wm/WindowManagerService;->mWindowMap:Ljava/util/HashMap;
 
@@ -29500,8 +29142,6 @@
 
 .method getTokenWindowsOnDisplay(Lcom/android/server/wm/WindowToken;Lcom/android/server/wm/DisplayContent;)Lcom/android/server/wm/WindowList;
     .locals 5
-    .param p1    # Lcom/android/server/wm/WindowToken;
-    .param p2    # Lcom/android/server/wm/DisplayContent;
 
     new-instance v3, Lcom/android/server/wm/WindowList;
 
@@ -29543,9 +29183,6 @@
 
 .method public getWindowContentFrame(Lcom/android/server/wm/Session;Landroid/view/IWindow;Landroid/graphics/Rect;)V
     .locals 3
-    .param p1    # Lcom/android/server/wm/Session;
-    .param p2    # Landroid/view/IWindow;
-    .param p3    # Landroid/graphics/Rect;
 
     iget-object v2, p0, Lcom/android/server/wm/WindowManagerService;->mWindowMap:Ljava/util/HashMap;
 
@@ -29588,9 +29225,6 @@
 
 .method public getWindowDisplayFrame(Lcom/android/server/wm/Session;Landroid/view/IWindow;Landroid/graphics/Rect;)V
     .locals 4
-    .param p1    # Lcom/android/server/wm/Session;
-    .param p2    # Landroid/view/IWindow;
-    .param p3    # Landroid/graphics/Rect;
 
     iget-object v2, p0, Lcom/android/server/wm/WindowManagerService;->mWindowMap:Ljava/util/HashMap;
 
@@ -29687,8 +29321,6 @@
 
 .method public getWindowFrame(Landroid/os/IBinder;Landroid/graphics/Rect;)V
     .locals 3
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Landroid/graphics/Rect;
 
     const-string v1, "android.permission.RETRIEVE_WINDOW_INFO"
 
@@ -29750,7 +29382,6 @@
 
 .method public getWindowId(Landroid/os/IBinder;)Landroid/view/IWindowId;
     .locals 3
-    .param p1    # Landroid/os/IBinder;
 
     iget-object v2, p0, Lcom/android/server/wm/WindowManagerService;->mWindowMap:Ljava/util/HashMap;
 
@@ -29791,7 +29422,6 @@
 
 .method public getWindowListLocked(I)Lcom/android/server/wm/WindowList;
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/server/wm/WindowManagerService;->getDisplayContentLocked(I)Lcom/android/server/wm/DisplayContent;
 
@@ -29814,7 +29444,6 @@
 
 .method public getWindowListLocked(Landroid/view/Display;)Lcom/android/server/wm/WindowList;
     .locals 1
-    .param p1    # Landroid/view/Display;
 
     invoke-virtual {p1}, Landroid/view/Display;->getDisplayId()I
 
@@ -29837,7 +29466,6 @@
 
 .method public handleAppTransitionReadyLocked(Lcom/android/server/wm/WindowList;)I
     .locals 44
-    .param p1    # Lcom/android/server/wm/WindowList;
 
     const/16 v21, 0x0
 
@@ -30940,7 +30568,6 @@
 
 .method hasShownAnySecureWindowsLocked(Lcom/android/server/wm/DisplayContent;)Z
     .locals 5
-    .param p1    # Lcom/android/server/wm/DisplayContent;
 
     invoke-virtual {p1}, Lcom/android/server/wm/DisplayContent;->getWindowList()Lcom/android/server/wm/WindowList;
 
@@ -31031,7 +30658,6 @@
 
 .method public inputMethodClientHasFocus(Lcom/android/internal/view/IInputMethodClient;)Z
     .locals 10
-    .param p1    # Lcom/android/internal/view/IInputMethodClient;
 
     const/4 v4, 0x1
 
@@ -31239,7 +30865,6 @@
 
 .method public isFrontStack(I)Z
     .locals 3
-    .param p1    # I
 
     iget-object v2, p0, Lcom/android/server/wm/WindowManagerService;->mWindowMap:Ljava/util/HashMap;
 
@@ -31396,7 +31021,6 @@
 
 .method public isMetaKeyEventRequested(Landroid/content/ComponentName;)Z
     .locals 1
-    .param p1    # Landroid/content/ComponentName;
 
     iget-object v0, p0, Lcom/android/server/wm/WindowManagerService;->mPolicy:Landroid/view/WindowManagerPolicy;
 
@@ -31475,7 +31099,6 @@
 
 .method public isScaledPid(I)Z
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/wm/WindowManagerService;->mScaledPids:Ljava/util/HashMap;
 
@@ -31520,7 +31143,6 @@
 
 .method public isSplitedStack(I)Z
     .locals 3
-    .param p1    # I
 
     iget-object v2, p0, Lcom/android/server/wm/WindowManagerService;->mWindowMap:Ljava/util/HashMap;
 
@@ -31601,8 +31223,6 @@
 
 .method public isSystemKeyEventRequested(ILandroid/content/ComponentName;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
 
     iget-object v0, p0, Lcom/android/server/wm/WindowManagerService;->mPolicy:Landroid/view/WindowManagerPolicy;
 
@@ -31658,7 +31278,6 @@
 
 .method final isWallpaperVisible(Lcom/android/server/wm/WindowState;)Z
     .locals 1
-    .param p1    # Lcom/android/server/wm/WindowState;
 
     if-eqz p1, :cond_0
 
@@ -31701,7 +31320,6 @@
 
 .method public lockNow(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     iget-object v0, p0, Lcom/android/server/wm/WindowManagerService;->mPolicy:Landroid/view/WindowManagerPolicy;
 
@@ -31712,8 +31330,6 @@
 
 .method logWindowList(Lcom/android/server/wm/WindowList;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Lcom/android/server/wm/WindowList;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p1}, Lcom/android/server/wm/WindowList;->size()I
 
@@ -31772,7 +31388,6 @@
 
 .method makeWindowFreezingScreenIfNeededLocked(Lcom/android/server/wm/WindowState;)V
     .locals 4
-    .param p1    # Lcom/android/server/wm/WindowState;
 
     const/16 v3, 0xb
 
@@ -31838,7 +31453,6 @@
 
 .method public monitorInput(Ljava/lang/String;)Landroid/view/InputChannel;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/server/wm/WindowManagerService;->mInputManager:Lcom/android/server/input/InputManagerService;
 
@@ -31851,7 +31465,6 @@
 
 .method moveInputMethodDialogsLocked(I)V
     .locals 8
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/server/wm/WindowManagerService;->mInputMethodDialogs:Ljava/util/ArrayList;
 
@@ -31957,7 +31570,6 @@
 
 .method moveInputMethodWindowsIfNeededLocked(Z)Z
     .locals 13
-    .param p1    # Z
 
     const/4 v4, 0x0
 
@@ -32170,7 +31782,6 @@
 
 .method moveMultiWindowCenterBar(Z)Z
     .locals 17
-    .param p1    # Z
 
     move-object/from16 v0, p0
 
@@ -33063,7 +32674,6 @@
 
 .method moveStackWindowsLocked(Lcom/android/server/wm/DisplayContent;)V
     .locals 2
-    .param p1    # Lcom/android/server/wm/DisplayContent;
 
     const/4 v0, 0x1
 
@@ -33076,9 +32686,6 @@
 
 .method moveStackWindowsLocked(Lcom/android/server/wm/DisplayContent;ZZ)V
     .locals 11
-    .param p1    # Lcom/android/server/wm/DisplayContent;
-    .param p2    # Z
-    .param p3    # Z
 
     const/4 v10, 0x0
 
@@ -33243,7 +32850,6 @@
 
 .method public moveTaskToBottom(I)V
     .locals 8
-    .param p1    # I
 
     const/4 v4, 0x0
 
@@ -33361,7 +32967,6 @@
 
 .method public moveTaskToTop(I)V
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -33372,8 +32977,6 @@
 
 .method public moveTaskToTop(IZ)V
     .locals 13
-    .param p1    # I
-    .param p2    # Z
 
     invoke-static {}, Landroid/os/Binder;->clearCallingIdentity()J
 
@@ -33533,7 +33136,6 @@
 
 .method public multiwindowSettingChanged(Z)V
     .locals 1
-    .param p1    # Z
 
     :try_start_0
     iget-object v0, p0, Lcom/android/server/wm/WindowManagerService;->mActivityManager:Landroid/app/IActivityManager;
@@ -33553,7 +33155,6 @@
 
 .method public notifyCocktailBarVisibility(Z)V
     .locals 7
-    .param p1    # Z
 
     iget-object v5, p0, Lcom/android/server/wm/WindowManagerService;->mWindowMap:Ljava/util/HashMap;
 
@@ -33666,7 +33267,6 @@
 
 .method notifyOrientationToSSRM(Z)V
     .locals 4
-    .param p1    # Z
 
     :try_start_0
     sget-object v1, Lcom/android/server/wm/WindowManagerService;->cfmsService:Landroid/os/ICustomFrequencyManager;
@@ -33727,7 +33327,6 @@
 
 .method public notifySystemUiVisibility(I)V
     .locals 10
-    .param p1    # I
 
     iget-object v6, p0, Lcom/android/server/wm/WindowManagerService;->mWindowMap:Ljava/util/HashMap;
 
@@ -33857,7 +33456,6 @@
 
 .method public onDisplayAdded(I)V
     .locals 4
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/wm/WindowManagerService;->mH:Lcom/android/server/wm/WindowManagerService$H;
 
@@ -33878,7 +33476,6 @@
 
 .method public onDisplayChanged(I)V
     .locals 4
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/wm/WindowManagerService;->mH:Lcom/android/server/wm/WindowManagerService$H;
 
@@ -33899,7 +33496,6 @@
 
 .method public onDisplayRemoved(I)V
     .locals 4
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/wm/WindowManagerService;->mH:Lcom/android/server/wm/WindowManagerService$H;
 
@@ -33920,9 +33516,6 @@
 
 .method public onRectangleOnScreenRequested(Landroid/os/IBinder;Landroid/graphics/Rect;Z)V
     .locals 3
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Landroid/graphics/Rect;
-    .param p3    # Z
 
     iget-object v2, p0, Lcom/android/server/wm/WindowManagerService;->mWindowMap:Ljava/util/HashMap;
 
@@ -33970,10 +33563,6 @@
 
 .method public onTransact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/os/Parcel;
-    .param p3    # Landroid/os/Parcel;
-    .param p4    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -34008,8 +33597,6 @@
 
 .method public openSession(Lcom/android/internal/view/IInputMethodClient;Lcom/android/internal/view/IInputContext;)Landroid/view/IWindowSession;
     .locals 3
-    .param p1    # Lcom/android/internal/view/IInputMethodClient;
-    .param p2    # Lcom/android/internal/view/IInputContext;
 
     if-nez p1, :cond_0
 
@@ -34042,8 +33629,6 @@
 
 .method public outOfMemoryWindow(Lcom/android/server/wm/Session;Landroid/view/IWindow;)Z
     .locals 7
-    .param p1    # Lcom/android/server/wm/Session;
-    .param p2    # Landroid/view/IWindow;
 
     const/4 v3, 0x0
 
@@ -34119,10 +33704,6 @@
 
 .method public overridePendingAppTransition(Ljava/lang/String;IILandroid/os/IRemoteCallback;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/os/IRemoteCallback;
 
     iget-object v1, p0, Lcom/android/server/wm/WindowManagerService;->mWindowMap:Ljava/util/HashMap;
 
@@ -34149,10 +33730,6 @@
 
 .method public overridePendingAppTransitionScaleUp(IIII)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iget-object v1, p0, Lcom/android/server/wm/WindowManagerService;->mWindowMap:Ljava/util/HashMap;
 
@@ -34179,11 +33756,6 @@
 
 .method public overridePendingAppTransitionThumb(Landroid/graphics/Bitmap;IILandroid/os/IRemoteCallback;Z)V
     .locals 7
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/os/IRemoteCallback;
-    .param p5    # Z
 
     iget-object v6, p0, Lcom/android/server/wm/WindowManagerService;->mWindowMap:Ljava/util/HashMap;
 
@@ -34220,7 +33792,6 @@
 
 .method public pauseKeyDispatching(Landroid/os/IBinder;)V
     .locals 3
-    .param p1    # Landroid/os/IBinder;
 
     const-string v1, "android.permission.MANAGE_APP_TOKENS"
 
@@ -34341,8 +33912,6 @@
 
 .method public performDeferredDestroyWindow(Lcom/android/server/wm/Session;Landroid/view/IWindow;)V
     .locals 5
-    .param p1    # Lcom/android/server/wm/Session;
-    .param p2    # Landroid/view/IWindow;
 
     invoke-static {}, Landroid/os/Binder;->clearCallingIdentity()J
 
@@ -35057,8 +34626,6 @@
 
 .method public prepareAppTransition(IZ)V
     .locals 6
-    .param p1    # I
-    .param p2    # Z
 
     const-string v1, "android.permission.MANAGE_APP_TOKENS"
 
@@ -35249,12 +34816,6 @@
 
 .method prepareDragSurface(Landroid/view/IWindow;Landroid/view/SurfaceSession;IIILandroid/view/Surface;)Landroid/os/IBinder;
     .locals 17
-    .param p1    # Landroid/view/IWindow;
-    .param p2    # Landroid/view/SurfaceSession;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Landroid/view/Surface;
 
     invoke-static {}, Landroid/os/Binder;->getCallingPid()I
 
@@ -35521,8 +35082,6 @@
 
 .method public prepareMutiWindowTransition(Landroid/os/IBinder;I)V
     .locals 6
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # I
 
     iget-boolean v4, p0, Lcom/android/server/wm/WindowManagerService;->mWindowsFreezingScreen:Z
 
@@ -35594,7 +35153,6 @@
 
 .method public reboot(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/server/wm/WindowManagerService;->mContext:Landroid/content/Context;
 
@@ -35633,9 +35191,6 @@
 
 .method reclaimSomeSurfaceMemoryLocked(Lcom/android/server/wm/WindowStateAnimator;Ljava/lang/String;Z)Z
     .locals 22
-    .param p1    # Lcom/android/server/wm/WindowStateAnimator;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     move-object/from16 v0, p1
 
@@ -36408,7 +35963,6 @@
 
 .method public reenableKeyguard(Landroid/os/IBinder;)V
     .locals 3
-    .param p1    # Landroid/os/IBinder;
 
     iget-object v0, p0, Lcom/android/server/wm/WindowManagerService;->mContext:Landroid/content/Context;
 
@@ -36480,7 +36034,6 @@
 
 .method public registerEasyOneHandWatcher(Landroid/sec/easyonehand/IEasyOneHandWatcher;)V
     .locals 5
-    .param p1    # Landroid/sec/easyonehand/IEasyOneHandWatcher;
 
     invoke-interface {p1}, Landroid/sec/easyonehand/IEasyOneHandWatcher;->asBinder()Landroid/os/IBinder;
 
@@ -36547,7 +36100,6 @@
 
 .method public registerPointerEventListener(Landroid/view/WindowManagerPolicy$PointerEventListener;)V
     .locals 1
-    .param p1    # Landroid/view/WindowManagerPolicy$PointerEventListener;
 
     iget-object v0, p0, Lcom/android/server/wm/WindowManagerService;->mPointerEventDispatcher:Lcom/android/server/wm/PointerEventDispatcher;
 
@@ -36582,22 +36134,6 @@
 
 .method public relayoutWindow(Lcom/android/server/wm/Session;Landroid/view/IWindow;ILandroid/view/WindowManager$LayoutParams;IIIILandroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/content/res/Configuration;Landroid/view/Surface;Landroid/graphics/PointF;Landroid/graphics/Rect;)I
     .locals 48
-    .param p1    # Lcom/android/server/wm/Session;
-    .param p2    # Landroid/view/IWindow;
-    .param p3    # I
-    .param p4    # Landroid/view/WindowManager$LayoutParams;
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
-    .param p9    # Landroid/graphics/Rect;
-    .param p10    # Landroid/graphics/Rect;
-    .param p11    # Landroid/graphics/Rect;
-    .param p12    # Landroid/graphics/Rect;
-    .param p13    # Landroid/content/res/Configuration;
-    .param p14    # Landroid/view/Surface;
-    .param p15    # Landroid/graphics/PointF;
-    .param p16    # Landroid/graphics/Rect;
 
     const/16 v37, 0x0
 
@@ -39019,7 +38555,6 @@
 
 .method public removeAdaptiveEvent(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/server/wm/WindowManagerService;->mPolicy:Landroid/view/WindowManagerPolicy;
 
@@ -39030,7 +38565,6 @@
 
 .method public removeAppToken(Landroid/os/IBinder;)V
     .locals 14
-    .param p1    # Landroid/os/IBinder;
 
     const-string v0, "android.permission.MANAGE_APP_TOKENS"
 
@@ -39283,14 +38817,12 @@
 
 .method public removeCaptureFiles(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method public removeContextualEvent(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/server/wm/WindowManagerService;->mPolicy:Landroid/view/WindowManagerPolicy;
 
@@ -39301,7 +38833,6 @@
 
 .method removeFakeWindowLocked(Landroid/view/WindowManagerPolicy$FakeWindow;)Z
     .locals 6
-    .param p1    # Landroid/view/WindowManagerPolicy$FakeWindow;
 
     const/4 v1, 0x1
 
@@ -39365,7 +38896,6 @@
 
 .method public removeRotationWatcher(Landroid/view/IRotationWatcher;)V
     .locals 8
-    .param p1    # Landroid/view/IRotationWatcher;
 
     invoke-interface {p1}, Landroid/view/IRotationWatcher;->asBinder()Landroid/os/IBinder;
 
@@ -39449,7 +38979,6 @@
 
 .method public removeScaledPid(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/wm/WindowManagerService;->mScaledPids:Ljava/util/HashMap;
 
@@ -39495,7 +39024,6 @@
 
 .method public removeStack(I)I
     .locals 7
-    .param p1    # I
 
     const/4 v2, 0x1
 
@@ -39580,7 +39108,6 @@
 
 .method removeStartingWindowTimeout(Lcom/android/server/wm/AppWindowToken;)V
     .locals 2
-    .param p1    # Lcom/android/server/wm/AppWindowToken;
 
     if-eqz p1, :cond_0
 
@@ -39596,7 +39123,6 @@
 
 .method public removeTask(I)V
     .locals 7
-    .param p1    # I
 
     iget-object v3, p0, Lcom/android/server/wm/WindowManagerService;->mWindowMap:Ljava/util/HashMap;
 
@@ -39669,8 +39195,6 @@
 
 .method public removeWindow(Lcom/android/server/wm/Session;Landroid/view/IWindow;)V
     .locals 3
-    .param p1    # Lcom/android/server/wm/Session;
-    .param p2    # Landroid/view/IWindow;
 
     iget-object v2, p0, Lcom/android/server/wm/WindowManagerService;->mWindowMap:Ljava/util/HashMap;
 
@@ -39709,7 +39233,6 @@
 
 .method public removeWindowChangeListener(Lcom/android/server/wm/WindowManagerService$WindowChangeListener;)V
     .locals 2
-    .param p1    # Lcom/android/server/wm/WindowManagerService$WindowChangeListener;
 
     iget-object v1, p0, Lcom/android/server/wm/WindowManagerService;->mWindowMap:Ljava/util/HashMap;
 
@@ -39736,8 +39259,6 @@
 
 .method public removeWindowLocked(Lcom/android/server/wm/Session;Lcom/android/server/wm/WindowState;)V
     .locals 1
-    .param p1    # Lcom/android/server/wm/Session;
-    .param p2    # Lcom/android/server/wm/WindowState;
 
     const/4 v0, 0x0
 
@@ -39748,7 +39269,6 @@
 
 .method public removeWindowToken(Landroid/os/IBinder;)V
     .locals 13
-    .param p1    # Landroid/os/IBinder;
 
     const-string v9, "android.permission.MANAGE_APP_TOKENS"
 
@@ -39965,7 +39485,6 @@
 
 .method public requestHideSoftInputMethodLocked(Lcom/android/server/wm/WindowState;)V
     .locals 2
-    .param p1    # Lcom/android/server/wm/WindowState;
 
     if-eqz p1, :cond_0
 
@@ -40027,8 +39546,6 @@
 
 .method public requestMetaKeyEvent(Landroid/content/ComponentName;Z)V
     .locals 1
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Z
 
     iget-object v0, p0, Lcom/android/server/wm/WindowManagerService;->mPolicy:Landroid/view/WindowManagerPolicy;
 
@@ -40073,9 +39590,6 @@
 
 .method public requestSystemKeyEvent(ILandroid/content/ComponentName;Z)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # Z
 
     iget-object v0, p0, Lcom/android/server/wm/WindowManagerService;->mPolicy:Landroid/view/WindowManagerPolicy;
 
@@ -40143,8 +39657,6 @@
 
 .method public resizeStackBox(IF)V
     .locals 5
-    .param p1    # I
-    .param p2    # F
 
     const v2, 0x3dcccccd
 
@@ -40273,8 +39785,6 @@
 
 .method public resizeWeight(Landroid/graphics/Point;Z)V
     .locals 3
-    .param p1    # Landroid/graphics/Point;
-    .param p2    # Z
 
     iget-object v1, p0, Lcom/android/server/wm/WindowManagerService;->mWindowMap:Ljava/util/HashMap;
 
@@ -40326,7 +39836,6 @@
 
 .method public resumeKeyDispatching(Landroid/os/IBinder;)V
     .locals 3
-    .param p1    # Landroid/os/IBinder;
 
     const-string v1, "android.permission.MANAGE_APP_TOKENS"
 
@@ -40446,9 +39955,6 @@
 
 .method public saveANRStateLocked(Lcom/android/server/wm/AppWindowToken;Lcom/android/server/wm/WindowState;Ljava/lang/String;)V
     .locals 5
-    .param p1    # Lcom/android/server/wm/AppWindowToken;
-    .param p2    # Lcom/android/server/wm/WindowState;
-    .param p3    # Ljava/lang/String;
 
     new-instance v1, Ljava/io/StringWriter;
 
@@ -40656,7 +40162,6 @@
 
 .method scheduleRemoveStartingWindow(Lcom/android/server/wm/AppWindowToken;)V
     .locals 3
-    .param p1    # Lcom/android/server/wm/AppWindowToken;
 
     if-eqz p1, :cond_0
 
@@ -40684,11 +40189,6 @@
 
 .method public screenshotApplications(Landroid/os/IBinder;IIIZ)Landroid/graphics/Bitmap;
     .locals 51
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Z
 
     const-string v44, "android.permission.READ_FRAME_BUFFER"
 
@@ -42055,13 +41555,6 @@
 
 .method public sendWindowWallpaperCommandLocked(Lcom/android/server/wm/WindowState;Ljava/lang/String;IIILandroid/os/Bundle;Z)Landroid/os/Bundle;
     .locals 12
-    .param p1    # Lcom/android/server/wm/WindowState;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Landroid/os/Bundle;
-    .param p7    # Z
 
     iget-object v0, p0, Lcom/android/server/wm/WindowManagerService;->mWallpaperTarget:Lcom/android/server/wm/WindowState;
 
@@ -42155,9 +41648,6 @@
 
 .method public setAdaptiveEvent(Ljava/lang/String;Landroid/widget/RemoteViews;Landroid/widget/RemoteViews;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/widget/RemoteViews;
-    .param p3    # Landroid/widget/RemoteViews;
 
     iget-object v0, p0, Lcom/android/server/wm/WindowManagerService;->mPolicy:Landroid/view/WindowManagerPolicy;
 
@@ -42168,8 +41658,6 @@
 
 .method public setAnimationScale(IF)V
     .locals 2
-    .param p1    # I
-    .param p2    # F
 
     const-string v0, "android.permission.SET_ANIMATION_SCALE"
 
@@ -42232,7 +41720,6 @@
 
 .method public setAnimationScales([F)V
     .locals 4
-    .param p1    # [F
 
     const/4 v3, 0x2
 
@@ -42313,8 +41800,6 @@
 
 .method public setAppFullscreen(Landroid/os/IBinder;Z)V
     .locals 1
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Z
 
     invoke-virtual {p0, p1}, Lcom/android/server/wm/WindowManagerService;->findAppWindowToken(Landroid/os/IBinder;)Lcom/android/server/wm/AppWindowToken;
 
@@ -42332,8 +41817,6 @@
 
 .method public setAppGroupId(Landroid/os/IBinder;I)V
     .locals 7
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # I
 
     const-string v3, "android.permission.MANAGE_APP_TOKENS"
 
@@ -42454,10 +41937,6 @@
 
 .method public setAppMultiWindowStyle(Landroid/view/IApplicationToken;Lcom/samsung/android/multiwindow/MultiWindowStyle;ZI)V
     .locals 18
-    .param p1    # Landroid/view/IApplicationToken;
-    .param p2    # Lcom/samsung/android/multiwindow/MultiWindowStyle;
-    .param p3    # Z
-    .param p4    # I
 
     const-string v14, "android.permission.MANAGE_APP_TOKENS"
 
@@ -43065,8 +42544,6 @@
 
 .method public setAppOrientation(Landroid/view/IApplicationToken;I)V
     .locals 5
-    .param p1    # Landroid/view/IApplicationToken;
-    .param p2    # I
 
     const-string v1, "android.permission.MANAGE_APP_TOKENS"
 
@@ -43148,17 +42625,6 @@
 
 .method public setAppStartingWindow(Landroid/os/IBinder;Ljava/lang/String;ILandroid/content/res/CompatibilityInfo;Ljava/lang/CharSequence;IIIILandroid/os/IBinder;Z)V
     .locals 13
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Landroid/content/res/CompatibilityInfo;
-    .param p5    # Ljava/lang/CharSequence;
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
-    .param p9    # I
-    .param p10    # Landroid/os/IBinder;
-    .param p11    # Z
 
     new-instance v12, Lcom/android/server/wm/PrecapData;
 
@@ -43195,18 +42661,6 @@
 
 .method public setAppStartingWindow(Landroid/os/IBinder;Ljava/lang/String;ILandroid/content/res/CompatibilityInfo;Ljava/lang/CharSequence;IIIILandroid/os/IBinder;ZLcom/android/server/wm/PrecapData;)V
     .locals 21
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Landroid/content/res/CompatibilityInfo;
-    .param p5    # Ljava/lang/CharSequence;
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
-    .param p9    # I
-    .param p10    # Landroid/os/IBinder;
-    .param p11    # Z
-    .param p12    # Lcom/android/server/wm/PrecapData;
 
     const-string v2, "android.permission.MANAGE_APP_TOKENS"
 
@@ -43907,8 +43361,6 @@
 
 .method public setAppVisibility(Landroid/os/IBinder;Z)V
     .locals 9
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Z
 
     const/4 v0, 0x1
 
@@ -44120,7 +43572,6 @@
 
 .method public setAppWillBeHidden(Landroid/os/IBinder;)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
 
     const-string v1, "android.permission.MANAGE_APP_TOKENS"
 
@@ -44200,7 +43651,6 @@
 
 .method public setBendedPendingIntent(Landroid/app/PendingIntent;)V
     .locals 1
-    .param p1    # Landroid/app/PendingIntent;
 
     iget-object v0, p0, Lcom/android/server/wm/WindowManagerService;->mPolicy:Landroid/view/WindowManagerPolicy;
 
@@ -44211,8 +43661,6 @@
 
 .method public setContextualEvent(Ljava/lang/String;Landroid/widget/RemoteViews;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/widget/RemoteViews;
 
     iget-object v0, p0, Lcom/android/server/wm/WindowManagerService;->mPolicy:Landroid/view/WindowManagerPolicy;
 
@@ -44223,7 +43671,6 @@
 
 .method public setCoverConfiguration(I)Z
     .locals 3
-    .param p1    # I
 
     const/4 v2, 0x1
 
@@ -44251,7 +43698,6 @@
 
 .method public setCurrentInputMethodClient(Landroid/os/IBinder;)V
     .locals 4
-    .param p1    # Landroid/os/IBinder;
 
     iget-object v2, p0, Lcom/android/server/wm/WindowManagerService;->mWindowMap:Ljava/util/HashMap;
 
@@ -44340,7 +43786,6 @@
 
 .method public setCurrentUser(I)V
     .locals 6
-    .param p1    # I
 
     iget-object v5, p0, Lcom/android/server/wm/WindowManagerService;->mWindowMap:Ljava/util/HashMap;
 
@@ -44405,7 +43850,6 @@
 
 .method public setDismissKeyguardOnNextActivity(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/wm/WindowManagerService;->mRequestedDismissKeyguardOnNextActivity:Z
 
@@ -44414,10 +43858,6 @@
 
 .method public setDssSystemWide(ZIII)V
     .locals 10
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iget-object v3, p0, Lcom/android/server/wm/WindowManagerService;->mContext:Landroid/content/Context;
 
@@ -44684,7 +44124,6 @@
 
 .method public setEventDispatching(Z)V
     .locals 2
-    .param p1    # Z
 
     const-string v0, "android.permission.MANAGE_APP_TOKENS"
 
@@ -44739,8 +44178,6 @@
 
 .method public setFocusedApp(Landroid/os/IBinder;Z)V
     .locals 9
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Z
 
     const/4 v6, 0x0
 
@@ -45012,8 +44449,6 @@
 
 .method setFocusedStackFrame(ZZ)V
     .locals 22
-    .param p1    # Z
-    .param p2    # Z
 
     move-object/from16 v0, p0
 
@@ -45935,8 +45370,6 @@
 
 .method public setForcedDisplayDensity(II)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
 
     iget-object v3, p0, Lcom/android/server/wm/WindowManagerService;->mContext:Landroid/content/Context;
 
@@ -46034,9 +45467,6 @@
 
 .method public setForcedDisplaySize(III)V
     .locals 11
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     iget-object v6, p0, Lcom/android/server/wm/WindowManagerService;->mContext:Landroid/content/Context;
 
@@ -46186,7 +45616,6 @@
 
 .method public setHardKeyboardEnabled(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v1, p0, Lcom/android/server/wm/WindowManagerService;->mWindowMap:Ljava/util/HashMap;
 
@@ -46222,7 +45651,6 @@
 
 .method setHoldScreenLocked(Lcom/android/server/wm/Session;)V
     .locals 5
-    .param p1    # Lcom/android/server/wm/Session;
 
     if-eqz p1, :cond_2
 
@@ -46289,7 +45717,6 @@
 
 .method public setInTouchMode(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v1, p0, Lcom/android/server/wm/WindowManagerService;->mWindowMap:Ljava/util/HashMap;
 
@@ -46314,7 +45741,6 @@
 
 .method public setInputFilter(Landroid/view/IInputFilter;)V
     .locals 2
-    .param p1    # Landroid/view/IInputFilter;
 
     const-string v0, "android.permission.FILTER_EVENTS"
 
@@ -46344,7 +45770,6 @@
 
 .method setInputMethodAnimLayerAdjustment(I)V
     .locals 6
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/wm/WindowManagerService;->mInputMethodAnimLayerAdjustment:I
 
@@ -46425,12 +45850,6 @@
 
 .method setInsetsWindow(Lcom/android/server/wm/Session;Landroid/view/IWindow;ILandroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Region;)V
     .locals 6
-    .param p1    # Lcom/android/server/wm/Session;
-    .param p2    # Landroid/view/IWindow;
-    .param p3    # I
-    .param p4    # Landroid/graphics/Rect;
-    .param p5    # Landroid/graphics/Rect;
-    .param p6    # Landroid/graphics/Region;
 
     invoke-static {}, Landroid/os/Binder;->clearCallingIdentity()J
 
@@ -46537,7 +45956,6 @@
 
 .method public setMagnificationCallbacks(Landroid/view/IMagnificationCallbacks;)V
     .locals 3
-    .param p1    # Landroid/view/IMagnificationCallbacks;
 
     const-string v0, "android.permission.MAGNIFY_DISPLAY"
 
@@ -46620,7 +46038,6 @@
 
 .method public setMagnificationSpec(Landroid/view/MagnificationSpec;)V
     .locals 3
-    .param p1    # Landroid/view/MagnificationSpec;
 
     const-string v0, "android.permission.MAGNIFY_DISPLAY"
 
@@ -46695,8 +46112,6 @@
 
 .method public setMonitorChannelFilter(Landroid/view/InputChannel;I)V
     .locals 1
-    .param p1    # Landroid/view/InputChannel;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/server/wm/WindowManagerService;->mInputManager:Lcom/android/server/input/InputManagerService;
 
@@ -46707,7 +46122,6 @@
 
 .method public setMultiWindowTrayOpenState(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/server/wm/WindowManagerService;->mPolicy:Landroid/view/WindowManagerPolicy;
 
@@ -46718,7 +46132,6 @@
 
 .method public setNewConfiguration(Landroid/content/res/Configuration;)V
     .locals 2
-    .param p1    # Landroid/content/res/Configuration;
 
     const-string v0, "android.permission.MANAGE_APP_TOKENS"
 
@@ -46781,7 +46194,6 @@
 
 .method public setOnHardKeyboardStatusChangeListener(Lcom/android/server/wm/WindowManagerService$OnHardKeyboardStatusChangeListener;)V
     .locals 2
-    .param p1    # Lcom/android/server/wm/WindowManagerService$OnHardKeyboardStatusChangeListener;
 
     iget-object v1, p0, Lcom/android/server/wm/WindowManagerService;->mWindowMap:Ljava/util/HashMap;
 
@@ -46806,11 +46218,6 @@
 
 .method public setOverscan(IIIII)V
     .locals 9
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     iget-object v0, p0, Lcom/android/server/wm/WindowManagerService;->mContext:Landroid/content/Context;
 
@@ -46893,7 +46300,6 @@
 
 .method public setSkipDrawFocusedStackFrame(I)V
     .locals 3
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/wm/WindowManagerService;->isSkipDrawFocusedStackFrame:I
 
@@ -46926,7 +46332,6 @@
 
 .method public setSkipDrawFocusedStackFrameForTask(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/server/wm/WindowManagerService;->mTaskIdToTask:Landroid/util/SparseArray;
 
@@ -46950,7 +46355,6 @@
 
 .method public setSpecialKeysFilter(Landroid/os/IBinder;)V
     .locals 2
-    .param p1    # Landroid/os/IBinder;
 
     const-string v0, "com.vmware.mvp.permission.GRAB_HOME_KEY"
 
@@ -46980,8 +46384,6 @@
 
 .method public setStackBound(ILandroid/graphics/Rect;)V
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/graphics/Rect;
 
     iget-object v3, p0, Lcom/android/server/wm/WindowManagerService;->mWindowMap:Ljava/util/HashMap;
 
@@ -47090,7 +46492,6 @@
 
 .method public setStrictModeVisualIndicatorPreference(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string/jumbo v0, "persist.sys.strictmode.visual"
 
@@ -47101,7 +46502,6 @@
 
 .method public setTabFrontStack(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/wm/WindowManagerService;->mTabFrontStack:I
 
@@ -47110,11 +46510,6 @@
 
 .method setTokenVisibilityLocked(Lcom/android/server/wm/AppWindowToken;Landroid/view/WindowManager$LayoutParams;ZIZ)Z
     .locals 17
-    .param p1    # Lcom/android/server/wm/AppWindowToken;
-    .param p2    # Landroid/view/WindowManager$LayoutParams;
-    .param p3    # Z
-    .param p4    # I
-    .param p5    # Z
 
     const/4 v7, 0x0
 
@@ -47540,7 +46935,6 @@
 
 .method public setTouchExplorationEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/server/wm/WindowManagerService;->mPolicy:Landroid/view/WindowManagerPolicy;
 
@@ -47551,9 +46945,6 @@
 
 .method setTransparentRegionWindow(Lcom/android/server/wm/Session;Landroid/view/IWindow;Landroid/graphics/Region;)V
     .locals 6
-    .param p1    # Lcom/android/server/wm/Session;
-    .param p2    # Landroid/view/IWindow;
-    .param p3    # Landroid/graphics/Region;
 
     invoke-static {}, Landroid/os/Binder;->clearCallingIdentity()J
 
@@ -47623,14 +47014,6 @@
 
 .method public setUniverseTransformLocked(Lcom/android/server/wm/WindowState;FFFFFFF)V
     .locals 10
-    .param p1    # Lcom/android/server/wm/WindowState;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # F
-    .param p7    # F
-    .param p8    # F
 
     iget-object v0, p1, Lcom/android/server/wm/WindowState;->mWinAnimator:Lcom/android/server/wm/WindowStateAnimator;
 
@@ -47761,7 +47144,6 @@
 
 .method setWallpaperAnimLayerAdjustmentLocked(I)V
     .locals 6
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/wm/WindowManagerService;->mWallpaperAnimLayerAdjustment:I
 
@@ -47819,11 +47201,6 @@
 
 .method public setWindowWallpaperPositionLocked(Lcom/android/server/wm/WindowState;FFFF)V
     .locals 1
-    .param p1    # Lcom/android/server/wm/WindowState;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
 
     iget v0, p1, Lcom/android/server/wm/WindowState;->mWallpaperX:F
 
@@ -47856,8 +47233,6 @@
 
 .method public shouldHandleOrientation(ILcom/samsung/android/multiwindow/MultiWindowStyle;)Z
     .locals 2
-    .param p1    # I
-    .param p2    # Lcom/samsung/android/multiwindow/MultiWindowStyle;
 
     const/4 v0, 0x1
 
@@ -47917,8 +47292,6 @@
 
 .method public showBootMessage(Ljava/lang/CharSequence;Z)V
     .locals 3
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Z
 
     const/4 v0, 0x0
 
@@ -47992,7 +47365,6 @@
 
 .method public showStrictModeViolation(Z)V
     .locals 5
-    .param p1    # Z
 
     iget-boolean v1, p0, Lcom/android/server/wm/WindowManagerService;->mHeadless:Z
 
@@ -48045,7 +47417,6 @@
 
 .method public shutdown(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/server/wm/WindowManagerService;->mContext:Landroid/content/Context;
 
@@ -48056,7 +47427,6 @@
 
 .method public sleep(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/server/wm/WindowManagerService;->mContext:Landroid/content/Context;
 
@@ -48069,8 +47439,6 @@
 
 .method public startAppFreezingScreen(Landroid/os/IBinder;I)V
     .locals 7
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # I
 
     const-string v3, "android.permission.MANAGE_APP_TOKENS"
 
@@ -48175,8 +47543,6 @@
 
 .method public startAppFreezingScreenLocked(Lcom/android/server/wm/AppWindowToken;I)V
     .locals 8
-    .param p1    # Lcom/android/server/wm/AppWindowToken;
-    .param p2    # I
 
     const/16 v7, 0x11
 
@@ -48262,8 +47628,6 @@
 
 .method public startFreezingScreen(II)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
 
     const-string v2, "android.permission.FREEZE_SCREEN"
 
@@ -48351,7 +47715,6 @@
 
 .method public startViewServer(I)Z
     .locals 4
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -48446,7 +47809,6 @@
 
 .method public statusBarVisibilityChanged(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/wm/WindowManagerService;->mContext:Landroid/content/Context;
 
@@ -48498,8 +47860,6 @@
 
 .method public stopAppFreezingScreen(Landroid/os/IBinder;Z)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Z
 
     const-string v3, "android.permission.MANAGE_APP_TOKENS"
 
@@ -48682,8 +48042,6 @@
 
 .method public switchKeyboardLayout(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/server/wm/WindowManagerService;->mInputManager:Lcom/android/server/input/InputManagerService;
 
@@ -48694,7 +48052,6 @@
 
 .method public switchStackBox(I)V
     .locals 5
-    .param p1    # I
 
     iget-object v3, p0, Lcom/android/server/wm/WindowManagerService;->mWindowMap:Ljava/util/HashMap;
 
@@ -48848,7 +48205,6 @@
 
 .method public unregisterEasyOneHandWatcher(Landroid/sec/easyonehand/IEasyOneHandWatcher;)V
     .locals 3
-    .param p1    # Landroid/sec/easyonehand/IEasyOneHandWatcher;
 
     invoke-interface {p1}, Landroid/sec/easyonehand/IEasyOneHandWatcher;->asBinder()Landroid/os/IBinder;
 
@@ -48895,7 +48251,6 @@
 
 .method public unregisterPointerEventListener(Landroid/view/WindowManagerPolicy$PointerEventListener;)V
     .locals 1
-    .param p1    # Landroid/view/WindowManagerPolicy$PointerEventListener;
 
     iget-object v0, p0, Lcom/android/server/wm/WindowManagerService;->mPointerEventDispatcher:Lcom/android/server/wm/PointerEventDispatcher;
 
@@ -48906,9 +48261,6 @@
 
 .method unsetAppFreezingScreenLocked(Lcom/android/server/wm/AppWindowToken;ZZ)V
     .locals 9
-    .param p1    # Lcom/android/server/wm/AppWindowToken;
-    .param p2    # Z
-    .param p3    # Z
 
     const/4 v6, 0x1
 
@@ -49023,9 +48375,6 @@
 
 .method public updateAdaptiveEvent(Ljava/lang/String;Landroid/widget/RemoteViews;Landroid/widget/RemoteViews;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/widget/RemoteViews;
-    .param p3    # Landroid/widget/RemoteViews;
 
     iget-object v0, p0, Lcom/android/server/wm/WindowManagerService;->mPolicy:Landroid/view/WindowManagerPolicy;
 
@@ -49141,8 +48490,6 @@
 
 .method public updateContextualEvent(Ljava/lang/String;Landroid/widget/RemoteViews;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/widget/RemoteViews;
 
     iget-object v0, p0, Lcom/android/server/wm/WindowManagerService;->mPolicy:Landroid/view/WindowManagerPolicy;
 
@@ -49153,7 +48500,6 @@
 
 .method public updateCoverSwitchState(Lcom/samsung/android/cover/CoverState;)V
     .locals 3
-    .param p1    # Lcom/samsung/android/cover/CoverState;
 
     const/16 v2, 0x69
 
@@ -49178,7 +48524,6 @@
 
 .method public updateDisplayMetricsInfo(Landroid/view/DisplayInfo;)V
     .locals 4
-    .param p1    # Landroid/view/DisplayInfo;
 
     invoke-virtual {p0}, Lcom/android/server/wm/WindowManagerService;->getDefaultDisplayContentLocked()Lcom/android/server/wm/DisplayContent;
 
@@ -49217,8 +48562,6 @@
 
 .method public updateMinimizeSize(I[I)V
     .locals 3
-    .param p1    # I
-    .param p2    # [I
 
     iget-object v2, p0, Lcom/android/server/wm/WindowManagerService;->mWindowMap:Ljava/util/HashMap;
 
@@ -49256,8 +48599,6 @@
 
 .method public updateOrientationFromAppTokens(Landroid/content/res/Configuration;Landroid/os/IBinder;)Landroid/content/res/Configuration;
     .locals 5
-    .param p1    # Landroid/content/res/Configuration;
-    .param p2    # Landroid/os/IBinder;
 
     const-string v3, "android.permission.MANAGE_APP_TOKENS"
 
@@ -49314,7 +48655,6 @@
 
 .method updateOrientationFromAppTokensLocked(Z)Z
     .locals 5
-    .param p1    # Z
 
     const/4 v3, 0x0
 
@@ -49396,8 +48736,6 @@
 
 .method public updateRotation(ZZ)V
     .locals 0
-    .param p1    # Z
-    .param p2    # Z
 
     invoke-virtual {p0, p1, p2}, Lcom/android/server/wm/WindowManagerService;->updateRotationUnchecked(ZZ)V
 
@@ -49406,8 +48744,6 @@
 
 .method public updateRotationUnchecked(ZZ)V
     .locals 6
-    .param p1    # Z
-    .param p2    # Z
 
     invoke-static {}, Landroid/os/Binder;->clearCallingIdentity()J
 
@@ -49469,7 +48805,6 @@
 
 .method public updateRotationUncheckedLocked(Z)Z
     .locals 1
-    .param p1    # Z
 
     const/4 v0, 0x0
 
@@ -49482,8 +48817,6 @@
 
 .method public updateRotationUncheckedLocked(ZZ)Z
     .locals 17
-    .param p1    # Z
-    .param p2    # Z
 
     move-object/from16 v0, p0
 
@@ -49930,7 +49263,6 @@
 
 .method updateStatusBarVisibilityLocked(I)V
     .locals 10
-    .param p1    # I
 
     iget-object v8, p0, Lcom/android/server/wm/WindowManagerService;->mInputManager:Lcom/android/server/input/InputManagerService;
 
@@ -50050,8 +49382,6 @@
 
 .method updateSurfacesInTransactionLocked(Lcom/android/server/wm/DisplayContent;Landroid/graphics/Matrix;)Z
     .locals 9
-    .param p1    # Lcom/android/server/wm/DisplayContent;
-    .param p2    # Landroid/graphics/Matrix;
 
     const/4 v4, 0x0
 
@@ -50140,8 +49470,6 @@
 
 .method updateWallpaperOffsetLocked(Lcom/android/server/wm/WindowState;Z)V
     .locals 12
-    .param p1    # Lcom/android/server/wm/WindowState;
-    .param p2    # Z
 
     const/4 v11, 0x0
 
@@ -50272,10 +49600,6 @@
 
 .method updateWallpaperOffsetLocked(Lcom/android/server/wm/WindowState;IIZ)Z
     .locals 19
-    .param p1    # Lcom/android/server/wm/WindowState;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Z
 
     const/4 v10, 0x0
 
@@ -50786,7 +50110,6 @@
 
 .method public validateAppTokens(ILjava/util/List;)V
     .locals 19
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -51138,14 +50461,12 @@
 
 .method public validateStackOrder([Ljava/lang/Integer;)V
     .locals 0
-    .param p1    # [Ljava/lang/Integer;
 
     return-void
 .end method
 
 .method viewServerGetFocusedWindow(Ljava/net/Socket;)Z
     .locals 8
-    .param p1    # Ljava/net/Socket;
 
     invoke-direct {p0}, Lcom/android/server/wm/WindowManagerService;->isSystemSecure()Z
 
@@ -51307,7 +50628,6 @@
 
 .method viewServerListWindows(Ljava/net/Socket;)Z
     .locals 14
-    .param p1    # Ljava/net/Socket;
 
     invoke-direct {p0}, Lcom/android/server/wm/WindowManagerService;->isSystemSecure()Z
 
@@ -51543,9 +50863,6 @@
 
 .method viewServerWindowCommand(Ljava/net/Socket;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 15
-    .param p1    # Ljava/net/Socket;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/server/wm/WindowManagerService;->isSystemSecure()Z
 
@@ -51879,8 +51196,6 @@
 
 .method public waitForWindowDrawn(Landroid/os/IBinder;Landroid/os/IRemoteCallback;)Z
     .locals 8
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Landroid/os/IRemoteCallback;
 
     const/4 v3, 0x1
 
@@ -51958,8 +51273,6 @@
 
 .method wallpaperCommandComplete(Landroid/os/IBinder;Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Landroid/os/Bundle;
 
     iget-object v1, p0, Lcom/android/server/wm/WindowManagerService;->mWindowMap:Ljava/util/HashMap;
 
@@ -52005,7 +51318,6 @@
 
 .method wallpaperOffsetsComplete(Landroid/os/IBinder;)V
     .locals 2
-    .param p1    # Landroid/os/IBinder;
 
     iget-object v1, p0, Lcom/android/server/wm/WindowManagerService;->mWindowMap:Ljava/util/HashMap;
 
@@ -52051,7 +51363,6 @@
 
 .method public watchRotation(Landroid/view/IRotationWatcher;)I
     .locals 5
-    .param p1    # Landroid/view/IRotationWatcher;
 
     invoke-interface {p1}, Landroid/view/IRotationWatcher;->asBinder()Landroid/os/IBinder;
 
@@ -52110,9 +51421,6 @@
 
 .method final windowForClientLocked(Lcom/android/server/wm/Session;Landroid/os/IBinder;Z)Lcom/android/server/wm/WindowState;
     .locals 5
-    .param p1    # Lcom/android/server/wm/Session;
-    .param p2    # Landroid/os/IBinder;
-    .param p3    # Z
 
     const/4 v2, 0x0
 
@@ -52240,9 +51548,6 @@
 
 .method final windowForClientLocked(Lcom/android/server/wm/Session;Landroid/view/IWindow;Z)Lcom/android/server/wm/WindowState;
     .locals 1
-    .param p1    # Lcom/android/server/wm/Session;
-    .param p2    # Landroid/view/IWindow;
-    .param p3    # Z
 
     invoke-interface {p2}, Landroid/view/IWindow;->asBinder()Landroid/os/IBinder;
 

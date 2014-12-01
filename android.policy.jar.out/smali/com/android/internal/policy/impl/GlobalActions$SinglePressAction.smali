@@ -78,8 +78,6 @@
 
 .method protected constructor <init>(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     const/4 v1, 0x0
 
@@ -106,9 +104,6 @@
 
 .method protected constructor <init>(ILandroid/graphics/drawable/Drawable;Ljava/lang/CharSequence;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/graphics/drawable/Drawable;
-    .param p3    # Ljava/lang/CharSequence;
 
     const/4 v0, 0x0
 
@@ -133,8 +128,6 @@
 
 .method protected constructor <init>(ILjava/lang/CharSequence;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/CharSequence;
 
     const/4 v0, 0x0
 
@@ -161,9 +154,6 @@
 
 .method protected constructor <init>(Landroid/graphics/drawable/Drawable;Ljava/lang/String;I)V
     .locals 1
-    .param p1    # Landroid/graphics/drawable/Drawable;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     const/4 v0, 0x0
 
@@ -204,10 +194,6 @@
 # virtual methods
 .method public create(Landroid/content/Context;Landroid/view/View;Landroid/view/ViewGroup;Landroid/view/LayoutInflater;)Landroid/view/View;
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
-    .param p4    # Landroid/view/LayoutInflater;
 
     const v3, 0x1090057
 

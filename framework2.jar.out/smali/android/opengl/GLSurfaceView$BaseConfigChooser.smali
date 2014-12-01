@@ -26,7 +26,6 @@
 # direct methods
 .method public constructor <init>(Landroid/opengl/GLSurfaceView;[I)V
     .locals 1
-    .param p2    # [I
 
     iput-object p1, p0, Landroid/opengl/GLSurfaceView$BaseConfigChooser;->this$0:Landroid/opengl/GLSurfaceView;
 
@@ -43,7 +42,6 @@
 
 .method private filterConfigSpec([I)[I
     .locals 5
-    .param p1    # [I
 
     const/4 v4, 0x0
 
@@ -97,8 +95,6 @@
 # virtual methods
 .method public chooseConfig(Ljavax/microedition/khronos/egl/EGL10;Ljavax/microedition/khronos/egl/EGLDisplay;)Ljavax/microedition/khronos/egl/EGLConfig;
     .locals 7
-    .param p1    # Ljavax/microedition/khronos/egl/EGL10;
-    .param p2    # Ljavax/microedition/khronos/egl/EGLDisplay;
 
     const/4 v4, 0x0
 

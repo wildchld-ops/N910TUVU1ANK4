@@ -50,7 +50,6 @@
 
 .method public set(Landroid/content/res/CompatibilityInfo;)V
     .locals 1
-    .param p1    # Landroid/content/res/CompatibilityInfo;
 
     if-eqz p1, :cond_1
 

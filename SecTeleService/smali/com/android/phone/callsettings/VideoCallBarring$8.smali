@@ -77,7 +77,7 @@
     move v1, v2
 
     :goto_0
-    invoke-virtual {v0, v1}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+    invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     iget-object v0, p0, Lcom/android/phone/callsettings/VideoCallBarring$8;->this$0:Lcom/android/phone/callsettings/VideoCallBarring;
 

@@ -40,9 +40,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Ljava/util/List;Lcom/android/settings/accounts/AuthenticatorHelper;Landroid/app/admin/DevicePolicyManager;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p3    # Lcom/android/settings/accounts/AuthenticatorHelper;
-    .param p4    # Landroid/app/admin/DevicePolicyManager;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -80,7 +77,6 @@
 
 .method public static getHeaderType(Landroid/preference/PreferenceActivity$Header;)I
     .locals 5
-    .param p0    # Landroid/preference/PreferenceActivity$Header;
 
     const/4 v0, 0x1
 
@@ -141,8 +137,6 @@
 
 .method private setHeaderIcon(Lcom/android/settings/GridSettings$HeaderAdapter$HeaderViewHolder;Landroid/graphics/drawable/Drawable;)V
     .locals 3
-    .param p1    # Lcom/android/settings/GridSettings$HeaderAdapter$HeaderViewHolder;
-    .param p2    # Landroid/graphics/drawable/Drawable;
 
     iget-object v1, p1, Lcom/android/settings/GridSettings$HeaderAdapter$HeaderViewHolder;->icon:Landroid/widget/ImageView;
 
@@ -183,8 +177,6 @@
 
 .method private updateCommonHeaderView(Landroid/preference/PreferenceActivity$Header;Lcom/android/settings/GridSettings$HeaderAdapter$HeaderViewHolder;)V
     .locals 5
-    .param p1    # Landroid/preference/PreferenceActivity$Header;
-    .param p2    # Lcom/android/settings/GridSettings$HeaderAdapter$HeaderViewHolder;
 
     iget-object v3, p1, Landroid/preference/PreferenceActivity$Header;->extras:Landroid/os/Bundle;
 
@@ -289,7 +281,6 @@
 
 .method public getItemViewType(I)I
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/settings/GridSettings$HeaderAdapter;->getItem(I)Ljava/lang/Object;
 
@@ -306,9 +297,6 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 11
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     invoke-virtual {p0, p1}, Lcom/android/settings/GridSettings$HeaderAdapter;->getItem(I)Ljava/lang/Object;
 
@@ -800,7 +788,6 @@
 
 .method public isEnabled(I)Z
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/settings/GridSettings$HeaderAdapter;->getItemViewType(I)I
 

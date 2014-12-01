@@ -28,7 +28,6 @@
 
 .method public static postDnsRetryRequest(I)V
     .locals 4
-    .param p0    # I
 
     invoke-static {}, Lcom/sec/epdg/EpdgService;->getEpdgServiceHandler()Landroid/os/Handler;
 
@@ -53,7 +52,6 @@
 
 .method public static postEnableEpdgFailure(I)V
     .locals 4
-    .param p0    # I
 
     invoke-static {}, Lcom/sec/epdg/EpdgService;->getEpdgServiceHandler()Landroid/os/Handler;
 
@@ -78,9 +76,6 @@
 
 .method public static postNotifyRegistrants(IILjava/lang/String;)V
     .locals 3
-    .param p0    # I
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     invoke-static {}, Lcom/sec/epdg/EpdgService;->getEpdgServiceHandler()Landroid/os/Handler;
 
@@ -103,7 +98,6 @@
 
 .method public static postRetryL2WIfRequired(Ljava/lang/String;)V
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     invoke-static {}, Lcom/sec/epdg/EpdgService;->getEpdgServiceHandler()Landroid/os/Handler;
 
@@ -126,8 +120,6 @@
 
 .method public static triggerHandover(ILjava/lang/Boolean;)V
     .locals 4
-    .param p0    # I
-    .param p1    # Ljava/lang/Boolean;
 
     invoke-static {}, Lcom/sec/epdg/EpdgService;->getEpdgServiceHandler()Landroid/os/Handler;
 

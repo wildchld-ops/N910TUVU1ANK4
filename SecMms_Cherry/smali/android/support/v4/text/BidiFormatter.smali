@@ -106,9 +106,6 @@
 
 .method private constructor <init>(ZILandroid/support/v4/text/TextDirectionHeuristicCompat;)V
     .locals 0
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # Landroid/support/v4/text/TextDirectionHeuristicCompat;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -123,10 +120,6 @@
 
 .method synthetic constructor <init>(ZILandroid/support/v4/text/TextDirectionHeuristicCompat;Landroid/support/v4/text/BidiFormatter$1;)V
     .locals 0
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # Landroid/support/v4/text/TextDirectionHeuristicCompat;
-    .param p4    # Landroid/support/v4/text/BidiFormatter$1;
 
     invoke-direct {p0, p1, p2, p3}, Landroid/support/v4/text/BidiFormatter;-><init>(ZILandroid/support/v4/text/TextDirectionHeuristicCompat;)V
 
@@ -135,7 +128,6 @@
 
 .method static synthetic access$000(Ljava/util/Locale;)Z
     .locals 1
-    .param p0    # Ljava/util/Locale;
 
     invoke-static {p0}, Landroid/support/v4/text/BidiFormatter;->isRtlLocale(Ljava/util/Locale;)Z
 
@@ -170,7 +162,6 @@
 
 .method private static getEntryDir(Ljava/lang/String;)I
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     new-instance v0, Landroid/support/v4/text/BidiFormatter$DirectionalityEstimator;
 
@@ -187,7 +178,6 @@
 
 .method private static getExitDir(Ljava/lang/String;)I
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     new-instance v0, Landroid/support/v4/text/BidiFormatter$DirectionalityEstimator;
 
@@ -218,7 +208,6 @@
 
 .method public static getInstance(Ljava/util/Locale;)Landroid/support/v4/text/BidiFormatter;
     .locals 1
-    .param p0    # Ljava/util/Locale;
 
     new-instance v0, Landroid/support/v4/text/BidiFormatter$Builder;
 
@@ -233,7 +222,6 @@
 
 .method public static getInstance(Z)Landroid/support/v4/text/BidiFormatter;
     .locals 1
-    .param p0    # Z
 
     new-instance v0, Landroid/support/v4/text/BidiFormatter$Builder;
 
@@ -248,7 +236,6 @@
 
 .method private static isRtlLocale(Ljava/util/Locale;)Z
     .locals 2
-    .param p0    # Ljava/util/Locale;
 
     const/4 v0, 0x1
 
@@ -269,8 +256,6 @@
 
 .method private markAfter(Ljava/lang/String;Landroid/support/v4/text/TextDirectionHeuristicCompat;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/support/v4/text/TextDirectionHeuristicCompat;
 
     const/4 v1, 0x0
 
@@ -330,8 +315,6 @@
 
 .method private markBefore(Ljava/lang/String;Landroid/support/v4/text/TextDirectionHeuristicCompat;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/support/v4/text/TextDirectionHeuristicCompat;
 
     const/4 v1, 0x0
 
@@ -413,7 +396,6 @@
 
 .method public isRtl(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/support/v4/text/BidiFormatter;->mDefaultTextDirectionHeuristicCompat:Landroid/support/v4/text/TextDirectionHeuristicCompat;
 
@@ -440,7 +422,6 @@
 
 .method public unicodeWrap(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/support/v4/text/BidiFormatter;->mDefaultTextDirectionHeuristicCompat:Landroid/support/v4/text/TextDirectionHeuristicCompat;
 
@@ -455,8 +436,6 @@
 
 .method public unicodeWrap(Ljava/lang/String;Landroid/support/v4/text/TextDirectionHeuristicCompat;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/support/v4/text/TextDirectionHeuristicCompat;
 
     const/4 v0, 0x1
 
@@ -469,9 +448,6 @@
 
 .method public unicodeWrap(Ljava/lang/String;Landroid/support/v4/text/TextDirectionHeuristicCompat;Z)Ljava/lang/String;
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/support/v4/text/TextDirectionHeuristicCompat;
-    .param p3    # Z
 
     const/4 v2, 0x0
 
@@ -568,8 +544,6 @@
 
 .method public unicodeWrap(Ljava/lang/String;Z)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     iget-object v0, p0, Landroid/support/v4/text/BidiFormatter;->mDefaultTextDirectionHeuristicCompat:Landroid/support/v4/text/TextDirectionHeuristicCompat;
 

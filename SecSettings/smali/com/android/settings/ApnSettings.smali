@@ -155,7 +155,6 @@
 
 .method static synthetic access$000(Landroid/content/Intent;)Lcom/android/internal/telephony/PhoneConstants$DataState;
     .locals 1
-    .param p0    # Landroid/content/Intent;
 
     invoke-static {p0}, Lcom/android/settings/ApnSettings;->getMobileDataState(Landroid/content/Intent;)Lcom/android/internal/telephony/PhoneConstants$DataState;
 
@@ -182,7 +181,6 @@
 
 .method static synthetic access$102(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/settings/ApnSettings;->mRestoreDefaultApnMode:Z
 
@@ -191,7 +189,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/ApnSettings;)V
     .locals 0
-    .param p0    # Lcom/android/settings/ApnSettings;
 
     invoke-direct {p0}, Lcom/android/settings/ApnSettings;->fillList()V
 
@@ -200,7 +197,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/ApnSettings;)Lcom/android/settings/ApnSettings$RestoreApnUiHandler;
     .locals 1
-    .param p0    # Lcom/android/settings/ApnSettings;
 
     iget-object v0, p0, Lcom/android/settings/ApnSettings;->mRestoreApnUiHandler:Lcom/android/settings/ApnSettings$RestoreApnUiHandler;
 
@@ -209,8 +205,6 @@
 
 .method static synthetic access$302(Lcom/android/settings/ApnSettings;Lcom/android/settings/ApnSettings$RestoreApnUiHandler;)Lcom/android/settings/ApnSettings$RestoreApnUiHandler;
     .locals 0
-    .param p0    # Lcom/android/settings/ApnSettings;
-    .param p1    # Lcom/android/settings/ApnSettings$RestoreApnUiHandler;
 
     iput-object p1, p0, Lcom/android/settings/ApnSettings;->mRestoreApnUiHandler:Lcom/android/settings/ApnSettings$RestoreApnUiHandler;
 
@@ -219,7 +213,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/ApnSettings;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/ApnSettings;
 
     invoke-direct {p0}, Lcom/android/settings/ApnSettings;->isTetheringEnabled()Z
 
@@ -230,7 +223,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/ApnSettings;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/ApnSettings;
 
     invoke-direct {p0}, Lcom/android/settings/ApnSettings;->restoreDefaultApn()Z
 
@@ -241,8 +233,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/ApnSettings;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/settings/ApnSettings;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/settings/ApnSettings;->setSelectedApnKey(Ljava/lang/String;)V
 
@@ -251,7 +241,6 @@
 
 .method static synthetic access$800(Lcom/android/settings/ApnSettings;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/ApnSettings;
 
     iget-boolean v0, p0, Lcom/android/settings/ApnSettings;->isVzw:Z
 
@@ -260,7 +249,6 @@
 
 .method static synthetic access$900(Lcom/android/settings/ApnSettings;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/ApnSettings;
 
     iget-boolean v0, p0, Lcom/android/settings/ApnSettings;->isVzwSimEnable:Z
 
@@ -2178,7 +2166,6 @@
 
 .method private isHideApn(Ljava/lang/String;)Z
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -2797,7 +2784,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 13
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onCreate(Landroid/os/Bundle;)V
 
@@ -3737,7 +3723,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 2
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v0, 0x1
 
@@ -3928,8 +3913,6 @@
 
 .method protected onPrepareDialog(ILandroid/app/Dialog;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/app/Dialog;
 
     const/16 v0, 0x3e9
 

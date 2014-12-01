@@ -43,7 +43,6 @@
 
 .method static synthetic access$000(Landroid/hardware/contextaware/dataprovider/sensorhubprovider/SensorHubParserProvider;)I
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/dataprovider/sensorhubprovider/SensorHubParserProvider;
 
     iget v0, p0, Landroid/hardware/contextaware/dataprovider/sensorhubprovider/SensorHubParserProvider;->mApStatus:I
 
@@ -52,7 +51,6 @@
 
 .method static synthetic access$100(Landroid/hardware/contextaware/dataprovider/sensorhubprovider/SensorHubParserProvider;)Landroid/hardware/contextaware/dataprovider/sensorhubprovider/TypeParser;
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/dataprovider/sensorhubprovider/SensorHubParserProvider;
 
     iget-object v0, p0, Landroid/hardware/contextaware/dataprovider/sensorhubprovider/SensorHubParserProvider;->mLibParser:Landroid/hardware/contextaware/dataprovider/sensorhubprovider/TypeParser;
 
@@ -61,8 +59,6 @@
 
 .method static synthetic access$200(Landroid/hardware/contextaware/dataprovider/sensorhubprovider/SensorHubParserProvider;[B)I
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/dataprovider/sensorhubprovider/SensorHubParserProvider;
-    .param p1    # [B
 
     invoke-direct {p0, p1}, Landroid/hardware/contextaware/dataprovider/sensorhubprovider/SensorHubParserProvider;->parse([B)I
 
@@ -73,7 +69,6 @@
 
 .method private checkInstruction(B)Z
     .locals 5
-    .param p1    # B
 
     invoke-static {}, Landroid/hardware/contextaware/dataprovider/sensorhubprovider/SensorHubParserProtocol$INSTRUCTION;->values()[Landroid/hardware/contextaware/dataprovider/sensorhubprovider/SensorHubParserProtocol$INSTRUCTION;
 
@@ -110,7 +105,6 @@
 
 .method private checkLibType(B)Z
     .locals 5
-    .param p1    # B
 
     invoke-static {}, Landroid/hardware/contextaware/dataprovider/sensorhubprovider/SensorHubParserProtocol$LIB_TYPE;->values()[Landroid/hardware/contextaware/dataprovider/sensorhubprovider/SensorHubParserProtocol$LIB_TYPE;
 
@@ -147,7 +141,6 @@
 
 .method private checkPacketSize([B)I
     .locals 2
-    .param p1    # [B
 
     array-length v0, p1
 
@@ -232,7 +225,6 @@
 
 .method private parse([B)I
     .locals 8
-    .param p1    # [B
 
     invoke-virtual {p1}, Ljava/lang/Object;->clone()Ljava/lang/Object;
 
@@ -401,10 +393,6 @@
 
 .method private parseData(BB[BI)I
     .locals 4
-    .param p1    # B
-    .param p2    # B
-    .param p3    # [B
-    .param p4    # I
 
     const/4 v2, -0x1
 
@@ -539,10 +527,6 @@
 
 .method private parseDebugMsg(BB[BI)I
     .locals 4
-    .param p1    # B
-    .param p2    # B
-    .param p3    # [B
-    .param p4    # I
 
     move v1, p4
 
@@ -587,10 +571,6 @@
 
 .method private parseNotiPowerData(BB[BI)I
     .locals 4
-    .param p1    # B
-    .param p2    # B
-    .param p3    # [B
-    .param p4    # I
 
     move v1, p4
 
@@ -661,7 +641,6 @@
 
 .method public final initialize(Landroid/content/Context;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
 
     const/4 v4, 0x0
 
@@ -731,7 +710,6 @@
 
 .method public final parseForScenarioTesting([B)V
     .locals 2
-    .param p1    # [B
 
     invoke-direct {p0, p1}, Landroid/hardware/contextaware/dataprovider/sensorhubprovider/SensorHubParserProvider;->parse([B)I
 
@@ -797,8 +775,6 @@
 
 .method public final updateApPowerStatus(IJ)V
     .locals 3
-    .param p1    # I
-    .param p2    # J
 
     iput p1, p0, Landroid/hardware/contextaware/dataprovider/sensorhubprovider/SensorHubParserProvider;->mApStatus:I
 

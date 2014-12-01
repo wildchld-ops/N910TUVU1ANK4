@@ -44,8 +44,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/os/Handler;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/Handler;
 
     invoke-direct {p0}, Landroid/service/dreams/IDreamManager$Stub;-><init>()V
 
@@ -98,7 +96,6 @@
 
 .method static synthetic access$000(Lcom/android/server/dreams/DreamManagerService;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Lcom/android/server/dreams/DreamManagerService;
 
     iget-object v0, p0, Lcom/android/server/dreams/DreamManagerService;->mLock:Ljava/lang/Object;
 
@@ -107,7 +104,6 @@
 
 .method static synthetic access$100(Lcom/android/server/dreams/DreamManagerService;)V
     .locals 0
-    .param p0    # Lcom/android/server/dreams/DreamManagerService;
 
     invoke-direct {p0}, Lcom/android/server/dreams/DreamManagerService;->stopDreamLocked()V
 
@@ -116,7 +112,6 @@
 
 .method static synthetic access$200(Lcom/android/server/dreams/DreamManagerService;)Lcom/android/server/dreams/DreamController;
     .locals 1
-    .param p0    # Lcom/android/server/dreams/DreamManagerService;
 
     iget-object v0, p0, Lcom/android/server/dreams/DreamManagerService;->mController:Lcom/android/server/dreams/DreamController;
 
@@ -125,7 +120,6 @@
 
 .method static synthetic access$300(Lcom/android/server/dreams/DreamManagerService;)Landroid/view/inputmethod/InputMethodManager;
     .locals 1
-    .param p0    # Lcom/android/server/dreams/DreamManagerService;
 
     iget-object v0, p0, Lcom/android/server/dreams/DreamManagerService;->mInputMethodManager:Landroid/view/inputmethod/InputMethodManager;
 
@@ -134,7 +128,6 @@
 
 .method static synthetic access$400(Lcom/android/server/dreams/DreamManagerService;)Landroid/os/Binder;
     .locals 1
-    .param p0    # Lcom/android/server/dreams/DreamManagerService;
 
     iget-object v0, p0, Lcom/android/server/dreams/DreamManagerService;->mCurrentDreamToken:Landroid/os/Binder;
 
@@ -143,7 +136,6 @@
 
 .method static synthetic access$500(Lcom/android/server/dreams/DreamManagerService;)V
     .locals 0
-    .param p0    # Lcom/android/server/dreams/DreamManagerService;
 
     invoke-direct {p0}, Lcom/android/server/dreams/DreamManagerService;->cleanupDreamLocked()V
 
@@ -152,7 +144,6 @@
 
 .method private checkPermission(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/server/dreams/DreamManagerService;->mContext:Landroid/content/Context;
 
@@ -206,7 +197,6 @@
 
 .method private chooseDreamForUser(I)Landroid/content/ComponentName;
     .locals 2
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/dreams/DreamManagerService;->getDreamComponentsForUser(I)[Landroid/content/ComponentName;
 
@@ -251,7 +241,6 @@
 
 .method private static componentsFromString(Ljava/lang/String;)[Landroid/content/ComponentName;
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     if-nez p0, :cond_1
 
@@ -293,7 +282,6 @@
 
 .method private static componentsToString([Landroid/content/ComponentName;)Ljava/lang/String;
     .locals 6
-    .param p0    # [Landroid/content/ComponentName;
 
     new-instance v4, Ljava/lang/StringBuilder;
 
@@ -343,7 +331,6 @@
 
 .method private getDreamComponentsForUser(I)[Landroid/content/ComponentName;
     .locals 11
-    .param p1    # I
 
     iget-object v8, p0, Lcom/android/server/dreams/DreamManagerService;->mContext:Landroid/content/Context;
 
@@ -477,7 +464,6 @@
 
 .method private serviceExists(Landroid/content/ComponentName;)Z
     .locals 4
-    .param p1    # Landroid/content/ComponentName;
 
     const/4 v1, 0x0
 
@@ -514,9 +500,6 @@
 
 .method private startDreamLocked(Landroid/content/ComponentName;ZI)V
     .locals 7
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Z
-    .param p3    # I
 
     iget-object v0, p0, Lcom/android/server/dreams/DreamManagerService;->mCurrentDreamName:Landroid/content/ComponentName;
 
@@ -686,9 +669,6 @@
 
 .method protected dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/server/dreams/DreamManagerService;->mContext:Landroid/content/Context;
 
@@ -853,7 +833,6 @@
 
 .method public finishSelf(Landroid/os/IBinder;)V
     .locals 4
-    .param p1    # Landroid/os/IBinder;
 
     if-nez p1, :cond_0
 
@@ -1049,7 +1028,6 @@
 
 .method public setDreamComponents([Landroid/content/ComponentName;)V
     .locals 6
-    .param p1    # [Landroid/content/ComponentName;
 
     const-string v3, "android.permission.WRITE_DREAM_STATE"
 
@@ -1179,7 +1157,6 @@
 
 .method public testDream(Landroid/content/ComponentName;)V
     .locals 7
-    .param p1    # Landroid/content/ComponentName;
 
     const-string v4, "android.permission.WRITE_DREAM_STATE"
 

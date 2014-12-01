@@ -137,8 +137,6 @@
 
 .method private AddNumberByRecipientEditor(ZZ)Z
     .locals 14
-    .param p1    # Z
-    .param p2    # Z
 
     iget-object v12, p0, Lcom/android/mms/ui/GroupMessagingRecipientListActivity;->mAddRecipientsEditor:Lcom/android/mms/ui/GroupMessagingRecipientsEditor;
 
@@ -317,8 +315,6 @@
 
 .method private AddNumberToList(Ljava/lang/String;Z)I
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const/4 v6, 0x4
 
@@ -551,7 +547,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/ui/GroupMessagingRecipientListActivity;)Lcom/android/mms/ui/GroupMessagingRecipientListAdapter;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/GroupMessagingRecipientListActivity;
 
     iget-object v0, p0, Lcom/android/mms/ui/GroupMessagingRecipientListActivity;->mListAdapter:Lcom/android/mms/ui/GroupMessagingRecipientListAdapter;
 
@@ -560,7 +555,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/ui/GroupMessagingRecipientListActivity;)Landroid/widget/ListView;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/GroupMessagingRecipientListActivity;
 
     iget-object v0, p0, Lcom/android/mms/ui/GroupMessagingRecipientListActivity;->list:Landroid/widget/ListView;
 
@@ -569,7 +563,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/ui/GroupMessagingRecipientListActivity;)Lcom/android/mms/data/ContactList;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/GroupMessagingRecipientListActivity;
 
     iget-object v0, p0, Lcom/android/mms/ui/GroupMessagingRecipientListActivity;->GroupMessagingList:Lcom/android/mms/data/ContactList;
 
@@ -578,7 +571,6 @@
 
 .method static synthetic access$300(Lcom/android/mms/ui/GroupMessagingRecipientListActivity;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/GroupMessagingRecipientListActivity;
 
     invoke-direct {p0}, Lcom/android/mms/ui/GroupMessagingRecipientListActivity;->updateList()V
 
@@ -587,9 +579,6 @@
 
 .method static synthetic access$400(Lcom/android/mms/ui/GroupMessagingRecipientListActivity;ZZ)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/GroupMessagingRecipientListActivity;
-    .param p1    # Z
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/mms/ui/GroupMessagingRecipientListActivity;->AddNumberByRecipientEditor(ZZ)Z
 
@@ -600,7 +589,6 @@
 
 .method static synthetic access$500(Lcom/android/mms/ui/GroupMessagingRecipientListActivity;)Lcom/android/mms/ui/GroupMessagingRecipientsEditor;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/GroupMessagingRecipientListActivity;
 
     iget-object v0, p0, Lcom/android/mms/ui/GroupMessagingRecipientListActivity;->mAddRecipientsEditor:Lcom/android/mms/ui/GroupMessagingRecipientsEditor;
 
@@ -1003,7 +991,6 @@
 # virtual methods
 .method public AddContactFromContact(Lcom/android/mms/data/ContactList;)V
     .locals 8
-    .param p1    # Lcom/android/mms/data/ContactList;
 
     new-instance v1, Lcom/android/mms/data/ContactList;
 
@@ -1183,8 +1170,6 @@
 
 .method public ReplyAllMessage(Landroid/content/Context;[Ljava/lang/String;)V
     .locals 8
-    .param p1    # Landroid/content/Context;
-    .param p2    # [Ljava/lang/String;
 
     const/4 v7, 0x1
 
@@ -1249,8 +1234,6 @@
 
 .method public alertInvalidRecipientsPopup(Landroid/content/Context;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
@@ -1285,9 +1268,6 @@
 
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const/4 v6, 0x1
 
@@ -1456,7 +1436,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 4
-    .param p1    # Landroid/view/View;
 
     const/4 v3, 0x1
 
@@ -1547,7 +1526,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 0
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -1556,7 +1534,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
@@ -1625,8 +1602,6 @@
 
 .method public onMenuItemSelected(ILandroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/MenuItem;
 
     invoke-interface {p2}, Landroid/view/MenuItem;->getItemId()I
 
@@ -1658,7 +1633,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 2
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -1710,7 +1684,6 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)Z
     .locals 2
-    .param p1    # Landroid/view/Menu;
 
     const/4 v1, 0x0
 
@@ -1779,7 +1752,6 @@
 
 .method public onUpdate(Lcom/android/mms/data/Contact;)V
     .locals 2
-    .param p1    # Lcom/android/mms/data/Contact;
 
     const-string v0, "Mms/GroupMessagingRecipientListActivity"
 

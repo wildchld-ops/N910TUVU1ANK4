@@ -89,8 +89,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/wm/WindowManagerService;Lcom/android/server/wm/DisplayContent;)V
     .locals 2
-    .param p1    # Lcom/android/server/wm/WindowManagerService;
-    .param p2    # Lcom/android/server/wm/DisplayContent;
 
     const/4 v1, 0x0
 
@@ -195,7 +193,6 @@
 
 .method static synthetic access$000(Lcom/android/server/wm/MultiWindowPointerEventListener;)Lcom/samsung/android/multiwindow/ui/GuideView;
     .locals 1
-    .param p0    # Lcom/android/server/wm/MultiWindowPointerEventListener;
 
     iget-object v0, p0, Lcom/android/server/wm/MultiWindowPointerEventListener;->mGuideView:Lcom/samsung/android/multiwindow/ui/GuideView;
 
@@ -204,8 +201,6 @@
 
 .method static synthetic access$102(Lcom/android/server/wm/MultiWindowPointerEventListener;I)I
     .locals 0
-    .param p0    # Lcom/android/server/wm/MultiWindowPointerEventListener;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/wm/MultiWindowPointerEventListener;->mResizeState:I
 
@@ -214,8 +209,6 @@
 
 .method static synthetic access$202(Lcom/android/server/wm/MultiWindowPointerEventListener;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/wm/MultiWindowPointerEventListener;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/wm/MultiWindowPointerEventListener;->mMoved:Z
 
@@ -224,8 +217,6 @@
 
 .method static synthetic access$302(Lcom/android/server/wm/MultiWindowPointerEventListener;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/wm/MultiWindowPointerEventListener;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/wm/MultiWindowPointerEventListener;->mValidMotion:Z
 
@@ -234,8 +225,6 @@
 
 .method private calcPosX(II)I
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget v0, p0, Lcom/android/server/wm/MultiWindowPointerEventListener;->mScreenRatio:F
 
@@ -279,8 +268,6 @@
 
 .method private calcPosY(II)I
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     const/high16 v3, 0x3f800000
 
@@ -356,9 +343,6 @@
 
 .method private findApplicationTargetWindow(FFZ)Lcom/android/server/wm/WindowState;
     .locals 11
-    .param p1    # F
-    .param p2    # F
-    .param p3    # Z
 
     float-to-int v6, p1
 
@@ -592,7 +576,6 @@
 
 .method private getApplicationName(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
     .locals 10
-    .param p1    # Ljava/lang/CharSequence;
 
     :try_start_0
     iget-object v7, p0, Lcom/android/server/wm/MultiWindowPointerEventListener;->mService:Lcom/android/server/wm/WindowManagerService;
@@ -703,7 +686,6 @@
 
 .method private insertLog(Lcom/android/server/wm/AppWindowToken;)V
     .locals 6
-    .param p1    # Lcom/android/server/wm/AppWindowToken;
 
     const/4 v2, 0x0
 
@@ -767,8 +749,6 @@
 
 .method private isCancelArea(II)Z
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     iget v1, p0, Lcom/android/server/wm/MultiWindowPointerEventListener;->mScreenHeight:I
 
@@ -803,8 +783,6 @@
 
 .method private isTerminativeArea(II)Z
     .locals 11
-    .param p1    # I
-    .param p2    # I
 
     const/high16 v10, 0x3f800000
 
@@ -962,8 +940,6 @@
 
 .method private isValidMotion(II)Z
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     const/4 v3, 0x0
 
@@ -1063,8 +1039,6 @@
 
 .method private showGuide(II)V
     .locals 8
-    .param p1    # I
-    .param p2    # I
 
     const/4 v3, 0x0
 
@@ -1200,7 +1174,6 @@
 # virtual methods
 .method public dismissGuide(Z)V
     .locals 4
-    .param p1    # Z
 
     const/4 v1, 0x0
 
@@ -1334,7 +1307,6 @@
 
 .method public onPointerEvent(Landroid/view/MotionEvent;)V
     .locals 14
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v13, 0x2
 
@@ -1934,7 +1906,6 @@
 
 .method public startResizing(Lcom/android/server/wm/WindowState;)Z
     .locals 12
-    .param p1    # Lcom/android/server/wm/WindowState;
 
     if-nez p1, :cond_0
 

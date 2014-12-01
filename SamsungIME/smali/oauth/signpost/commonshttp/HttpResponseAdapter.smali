@@ -13,7 +13,6 @@
 # direct methods
 .method public constructor <init>(Lorg/apache/http/HttpResponse;)V
     .locals 0
-    .param p1    # Lorg/apache/http/HttpResponse;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

@@ -23,7 +23,6 @@
 # direct methods
 .method constructor <init>(Ljava/lang/String;ILandroid/os/StrictMode$ViolationInfo;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput p2, p0, Landroid/os/StrictMode$5;->val$violationMaskSubset:I
 

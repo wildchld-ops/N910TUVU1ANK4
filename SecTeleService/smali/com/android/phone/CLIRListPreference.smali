@@ -167,7 +167,7 @@
     invoke-static {v1, v2}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :try_start_0
-    invoke-virtual {p0}, Landroid/preference/Preference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/CLIRListPreference;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -228,7 +228,7 @@
     move v0, v4
 
     :goto_0
-    invoke-virtual {p0, v0}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/CLIRListPreference;->setEnabled(Z)V
 
     const/4 v2, 0x0
 
@@ -240,7 +240,7 @@
     const/4 v2, 0x0
 
     :goto_1
-    invoke-virtual {p0, v2}, Landroid/preference/ListPreference;->setValueIndex(I)V
+    invoke-virtual {p0, v2}, Lcom/android/phone/CLIRListPreference;->setValueIndex(I)V
 
     iput v2, p0, Lcom/android/phone/CLIRListPreference;->prev_CLIR_value:I
 
@@ -249,7 +249,7 @@
     packed-switch v2, :pswitch_data_1
 
     :goto_2
-    invoke-virtual {p0, v1}, Landroid/preference/Preference;->setSummary(I)V
+    invoke-virtual {p0, v1}, Lcom/android/phone/CLIRListPreference;->setSummary(I)V
 
     invoke-direct {p0, v2}, Lcom/android/phone/CLIRListPreference;->saveClirInSystemSettings(I)V
 
@@ -352,13 +352,13 @@
 
     const/16 v3, 0x64
 
-    invoke-virtual {v2, v3}, Landroid/os/Handler;->obtainMessage(I)Landroid/os/Message;
+    invoke-virtual {v2, v3}, Lcom/android/phone/CLIRListPreference$MyHandler;->obtainMessage(I)Landroid/os/Message;
 
     move-result-object v2
 
     const-wide/16 v3, 0x7d0
 
-    invoke-virtual {v1, v2, v3, v4}, Landroid/os/Handler;->sendMessageDelayed(Landroid/os/Message;J)Z
+    invoke-virtual {v1, v2, v3, v4}, Lcom/android/phone/CLIRListPreference$MyHandler;->sendMessageDelayed(Landroid/os/Message;J)Z
 
     :cond_1
     :goto_0
@@ -369,7 +369,7 @@
 
     iget-object v2, p0, Lcom/android/phone/CLIRListPreference;->mHandler:Lcom/android/phone/CLIRListPreference$MyHandler;
 
-    invoke-virtual {v2, v4, v4, v4}, Landroid/os/Handler;->obtainMessage(III)Landroid/os/Message;
+    invoke-virtual {v2, v4, v4, v4}, Lcom/android/phone/CLIRListPreference$MyHandler;->obtainMessage(III)Landroid/os/Message;
 
     move-result-object v2
 
@@ -472,11 +472,11 @@
 
     iget v0, p0, Lcom/android/phone/CLIRListPreference;->prev_CLIR_value:I
 
-    invoke-virtual {p0}, Landroid/preference/ListPreference;->getValue()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/android/phone/CLIRListPreference;->getValue()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-virtual {p0, v1}, Landroid/preference/ListPreference;->findIndexOfValue(Ljava/lang/String;)I
+    invoke-virtual {p0, v1}, Lcom/android/phone/CLIRListPreference;->findIndexOfValue(Ljava/lang/String;)I
 
     move-result v1
 
@@ -495,17 +495,17 @@
     :cond_1
     iget-object v0, p0, Lcom/android/phone/CLIRListPreference;->mPhone:Lcom/android/internal/telephony/Phone;
 
-    invoke-virtual {p0}, Landroid/preference/ListPreference;->getValue()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/android/phone/CLIRListPreference;->getValue()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-virtual {p0, v1}, Landroid/preference/ListPreference;->findIndexOfValue(Ljava/lang/String;)I
+    invoke-virtual {p0, v1}, Lcom/android/phone/CLIRListPreference;->findIndexOfValue(Ljava/lang/String;)I
 
     move-result v1
 
     iget-object v2, p0, Lcom/android/phone/CLIRListPreference;->mHandler:Lcom/android/phone/CLIRListPreference$MyHandler;
 
-    invoke-virtual {v2, v3}, Landroid/os/Handler;->obtainMessage(I)Landroid/os/Message;
+    invoke-virtual {v2, v3}, Lcom/android/phone/CLIRListPreference$MyHandler;->obtainMessage(I)Landroid/os/Message;
 
     move-result-object v2
 

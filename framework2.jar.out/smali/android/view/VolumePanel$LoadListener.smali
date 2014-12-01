@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Landroid/view/VolumePanel;Landroid/view/VolumePanel$1;)V
     .locals 0
-    .param p1    # Landroid/view/VolumePanel;
-    .param p2    # Landroid/view/VolumePanel$1;
 
     invoke-direct {p0, p1}, Landroid/view/VolumePanel$LoadListener;-><init>(Landroid/view/VolumePanel;)V
 
@@ -46,9 +44,6 @@
 # virtual methods
 .method public onLoadComplete(Landroid/media/SoundPool;II)V
     .locals 3
-    .param p1    # Landroid/media/SoundPool;
-    .param p2    # I
-    .param p3    # I
 
     const-string v0, "VolumePanel"
 

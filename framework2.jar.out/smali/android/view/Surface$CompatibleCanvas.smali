@@ -37,8 +37,6 @@
 
 .method synthetic constructor <init>(Landroid/view/Surface;Landroid/view/Surface$1;)V
     .locals 0
-    .param p1    # Landroid/view/Surface;
-    .param p2    # Landroid/view/Surface$1;
 
     invoke-direct {p0, p1}, Landroid/view/Surface$CompatibleCanvas;-><init>(Landroid/view/Surface;)V
 
@@ -49,7 +47,6 @@
 # virtual methods
 .method public getMatrix(Landroid/graphics/Matrix;)V
     .locals 1
-    .param p1    # Landroid/graphics/Matrix;
 
     invoke-super {p0, p1}, Landroid/graphics/Canvas;->getMatrix(Landroid/graphics/Matrix;)V
 
@@ -73,7 +70,6 @@
 
 .method public setMatrix(Landroid/graphics/Matrix;)V
     .locals 2
-    .param p1    # Landroid/graphics/Matrix;
 
     iget-object v1, p0, Landroid/view/Surface$CompatibleCanvas;->this$0:Landroid/view/Surface;
 

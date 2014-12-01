@@ -47,7 +47,6 @@
 
 .method public static isSupportedMode(I)Z
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -182,7 +181,6 @@
 
 .method public setIsMultiLockMode(Z)V
     .locals 1
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -201,7 +199,6 @@
 
 .method public setMultiMode(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/mms/ui/ComposeMessageFragment$MultiModeInfo;->mMultiMode:I
 

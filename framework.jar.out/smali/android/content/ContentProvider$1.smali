@@ -68,7 +68,6 @@
 # virtual methods
 .method protected varargs doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 7
-    .param p1    # [Ljava/lang/Object;
 
     const/4 v2, 0x1
 

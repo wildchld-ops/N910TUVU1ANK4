@@ -118,7 +118,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v2}, Landroid/preference/DialogPreference;->getDialog()Landroid/app/Dialog;
+    invoke-virtual {v2}, Landroid/preference/ListPreference;->getDialog()Landroid/app/Dialog;
 
     move-result-object v1
 
@@ -296,15 +296,15 @@
 
     const/16 v3, 0x64
 
-    invoke-virtual {v2, v3}, Landroid/app/Activity;->removeDialog(I)V
+    invoke-virtual {v2, v3}, Lcom/android/phone/NetworkSetting;->removeDialog(I)V
 
     iget-object v2, p0, Lcom/android/phone/NetworkSetting$3;->this$0:Lcom/android/phone/NetworkSetting;
 
-    invoke-virtual {v2}, Landroid/preference/PreferenceActivity;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {v2}, Lcom/android/phone/NetworkSetting;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v2
 
-    invoke-virtual {v2, v5}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v2, v5}, Landroid/preference/PreferenceScreen;->setEnabled(Z)V
 
     const-string v2, "feature_att"
 
@@ -505,17 +505,17 @@
 
     iget-object v2, p0, Lcom/android/phone/NetworkSetting$3;->this$0:Lcom/android/phone/NetworkSetting;
 
-    invoke-virtual {v2, v7}, Landroid/app/Activity;->removeDialog(I)V
+    invoke-virtual {v2, v7}, Lcom/android/phone/NetworkSetting;->removeDialog(I)V
 
     :cond_c
     :goto_2
     iget-object v2, p0, Lcom/android/phone/NetworkSetting$3;->this$0:Lcom/android/phone/NetworkSetting;
 
-    invoke-virtual {v2}, Landroid/preference/PreferenceActivity;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {v2}, Lcom/android/phone/NetworkSetting;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v2
 
-    invoke-virtual {v2, v5}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v2, v5}, Landroid/preference/PreferenceScreen;->setEnabled(Z)V
 
     iget-object v0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
@@ -574,7 +574,7 @@
 
     iget-object v2, p0, Lcom/android/phone/NetworkSetting$3;->this$0:Lcom/android/phone/NetworkSetting;
 
-    invoke-virtual {v2, v8}, Landroid/app/Activity;->removeDialog(I)V
+    invoke-virtual {v2, v8}, Lcom/android/phone/NetworkSetting;->removeDialog(I)V
 
     goto :goto_2
 
@@ -961,15 +961,15 @@
 
     const/16 v3, 0x384
 
-    invoke-virtual {v2, v3}, Landroid/app/Activity;->removeDialog(I)V
+    invoke-virtual {v2, v3}, Lcom/android/phone/NetworkSetting;->removeDialog(I)V
 
     iget-object v2, p0, Lcom/android/phone/NetworkSetting$3;->this$0:Lcom/android/phone/NetworkSetting;
 
-    invoke-virtual {v2}, Landroid/preference/PreferenceActivity;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {v2}, Lcom/android/phone/NetworkSetting;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v2
 
-    invoke-virtual {v2, v5}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v2, v5}, Landroid/preference/PreferenceScreen;->setEnabled(Z)V
 
     iget-object v2, p0, Lcom/android/phone/NetworkSetting$3;->this$0:Lcom/android/phone/NetworkSetting;
 
@@ -991,7 +991,7 @@
 
     iget-boolean v3, v3, Lcom/android/phone/NetworkSetting;->mPLMN:Z
 
-    invoke-virtual {v2, v3}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v2, v3}, Landroid/preference/ListPreference;->setEnabled(Z)V
 
     iget-object v2, p0, Lcom/android/phone/NetworkSetting$3;->this$0:Lcom/android/phone/NetworkSetting;
 

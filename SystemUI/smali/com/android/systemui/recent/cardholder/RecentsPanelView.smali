@@ -239,8 +239,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -251,9 +249,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v4, 0x0
 
@@ -629,7 +624,6 @@
 
 .method static synthetic access$000(Lcom/android/systemui/recent/cardholder/RecentsPanelView;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/systemui/recent/cardholder/RecentsPanelView;
 
     iget-object v0, p0, Lcom/android/systemui/recent/cardholder/RecentsPanelView;->mRecentTaskDescriptions:Ljava/util/ArrayList;
 
@@ -638,7 +632,6 @@
 
 .method static synthetic access$100(Lcom/android/systemui/recent/cardholder/RecentsPanelView;)I
     .locals 1
-    .param p0    # Lcom/android/systemui/recent/cardholder/RecentsPanelView;
 
     iget v0, p0, Lcom/android/systemui/recent/cardholder/RecentsPanelView;->mRecentItemLayoutId:I
 
@@ -647,7 +640,6 @@
 
 .method static synthetic access$1000(Lcom/android/systemui/recent/cardholder/RecentsPanelView;)V
     .locals 0
-    .param p0    # Lcom/android/systemui/recent/cardholder/RecentsPanelView;
 
     invoke-direct {p0}, Lcom/android/systemui/recent/cardholder/RecentsPanelView;->updateUiElements()V
 
@@ -656,7 +648,6 @@
 
 .method static synthetic access$1100(Lcom/android/systemui/recent/cardholder/RecentsPanelView;)V
     .locals 0
-    .param p0    # Lcom/android/systemui/recent/cardholder/RecentsPanelView;
 
     invoke-direct {p0}, Lcom/android/systemui/recent/cardholder/RecentsPanelView;->showIfReady()V
 
@@ -665,7 +656,6 @@
 
 .method static synthetic access$1700(Lcom/android/systemui/recent/cardholder/RecentsPanelView;)Z
     .locals 1
-    .param p0    # Lcom/android/systemui/recent/cardholder/RecentsPanelView;
 
     invoke-direct {p0}, Lcom/android/systemui/recent/cardholder/RecentsPanelView;->isTaskManagerInstalled()Z
 
@@ -676,7 +666,6 @@
 
 .method static synthetic access$1800(Lcom/android/systemui/recent/cardholder/RecentsPanelView;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/systemui/recent/cardholder/RecentsPanelView;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -685,7 +674,6 @@
 
 .method static synthetic access$1900(Lcom/android/systemui/recent/cardholder/RecentsPanelView;)Lcom/android/systemui/recent/IRecentsUI;
     .locals 1
-    .param p0    # Lcom/android/systemui/recent/cardholder/RecentsPanelView;
 
     iget-object v0, p0, Lcom/android/systemui/recent/cardholder/RecentsPanelView;->mRecentsCallbacks:Lcom/android/systemui/recent/IRecentsUI;
 
@@ -694,7 +682,6 @@
 
 .method static synthetic access$200(Lcom/android/systemui/recent/cardholder/RecentsPanelView;)Lcom/android/systemui/recent/cardholder/RecentTasksLoader;
     .locals 1
-    .param p0    # Lcom/android/systemui/recent/cardholder/RecentsPanelView;
 
     iget-object v0, p0, Lcom/android/systemui/recent/cardholder/RecentsPanelView;->mRecentTasksLoader:Lcom/android/systemui/recent/cardholder/RecentTasksLoader;
 
@@ -703,7 +690,6 @@
 
 .method static synthetic access$2000(Lcom/android/systemui/recent/cardholder/RecentsPanelView;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/systemui/recent/cardholder/RecentsPanelView;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -712,7 +698,6 @@
 
 .method static synthetic access$2100(Lcom/android/systemui/recent/cardholder/RecentsPanelView;)[Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/systemui/recent/cardholder/RecentsPanelView;
 
     iget-object v0, p0, Lcom/android/systemui/recent/cardholder/RecentsPanelView;->mShortcutComponentNames:[Ljava/lang/String;
 
@@ -721,7 +706,6 @@
 
 .method static synthetic access$2200(Lcom/android/systemui/recent/cardholder/RecentsPanelView;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/systemui/recent/cardholder/RecentsPanelView;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -730,7 +714,6 @@
 
 .method static synthetic access$2300(Lcom/android/systemui/recent/cardholder/RecentsPanelView;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/systemui/recent/cardholder/RecentsPanelView;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -739,7 +722,6 @@
 
 .method static synthetic access$2400(Lcom/android/systemui/recent/cardholder/RecentsPanelView;)Landroid/widget/CheckBox;
     .locals 1
-    .param p0    # Lcom/android/systemui/recent/cardholder/RecentsPanelView;
 
     iget-object v0, p0, Lcom/android/systemui/recent/cardholder/RecentsPanelView;->mDisableAlertCheckBox:Landroid/widget/CheckBox;
 
@@ -748,7 +730,6 @@
 
 .method static synthetic access$2500(Lcom/android/systemui/recent/cardholder/RecentsPanelView;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/systemui/recent/cardholder/RecentsPanelView;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -757,7 +738,6 @@
 
 .method static synthetic access$2600(Lcom/android/systemui/recent/cardholder/RecentsPanelView;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/systemui/recent/cardholder/RecentsPanelView;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -766,7 +746,6 @@
 
 .method static synthetic access$2700(Lcom/android/systemui/recent/cardholder/RecentsPanelView;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/systemui/recent/cardholder/RecentsPanelView;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -775,7 +754,6 @@
 
 .method static synthetic access$2800(Lcom/android/systemui/recent/cardholder/RecentsPanelView;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/systemui/recent/cardholder/RecentsPanelView;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -784,7 +762,6 @@
 
 .method static synthetic access$2900(Lcom/android/systemui/recent/cardholder/RecentsPanelView;)Landroid/app/AlertDialog;
     .locals 1
-    .param p0    # Lcom/android/systemui/recent/cardholder/RecentsPanelView;
 
     iget-object v0, p0, Lcom/android/systemui/recent/cardholder/RecentsPanelView;->mRecentHelpDialog:Landroid/app/AlertDialog;
 
@@ -793,11 +770,6 @@
 
 .method static synthetic access$300(Lcom/android/systemui/recent/cardholder/RecentsPanelView;Lcom/android/systemui/recent/cardholder/RecentsPanelView$ViewHolder;Landroid/graphics/Bitmap;ZZ)V
     .locals 0
-    .param p0    # Lcom/android/systemui/recent/cardholder/RecentsPanelView;
-    .param p1    # Lcom/android/systemui/recent/cardholder/RecentsPanelView$ViewHolder;
-    .param p2    # Landroid/graphics/Bitmap;
-    .param p3    # Z
-    .param p4    # Z
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/systemui/recent/cardholder/RecentsPanelView;->updateThumbnail(Lcom/android/systemui/recent/cardholder/RecentsPanelView$ViewHolder;Landroid/graphics/Bitmap;ZZ)V
 
@@ -806,7 +778,6 @@
 
 .method static synthetic access$3000(Lcom/android/systemui/recent/cardholder/RecentsPanelView;)Z
     .locals 1
-    .param p0    # Lcom/android/systemui/recent/cardholder/RecentsPanelView;
 
     iget-boolean v0, p0, Lcom/android/systemui/recent/cardholder/RecentsPanelView;->mShowing:Z
 
@@ -815,7 +786,6 @@
 
 .method static synthetic access$3100(Lcom/android/systemui/recent/cardholder/RecentsPanelView;)Landroid/view/WindowManager;
     .locals 1
-    .param p0    # Lcom/android/systemui/recent/cardholder/RecentsPanelView;
 
     iget-object v0, p0, Lcom/android/systemui/recent/cardholder/RecentsPanelView;->mWindowManager:Landroid/view/WindowManager;
 
@@ -824,7 +794,6 @@
 
 .method static synthetic access$3200(Lcom/android/systemui/recent/cardholder/RecentsPanelView;)I
     .locals 1
-    .param p0    # Lcom/android/systemui/recent/cardholder/RecentsPanelView;
 
     iget v0, p0, Lcom/android/systemui/recent/cardholder/RecentsPanelView;->mDisplayWidth:I
 
@@ -833,8 +802,6 @@
 
 .method static synthetic access$3202(Lcom/android/systemui/recent/cardholder/RecentsPanelView;I)I
     .locals 0
-    .param p0    # Lcom/android/systemui/recent/cardholder/RecentsPanelView;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/systemui/recent/cardholder/RecentsPanelView;->mDisplayWidth:I
 
@@ -843,7 +810,6 @@
 
 .method static synthetic access$3300(Lcom/android/systemui/recent/cardholder/RecentsPanelView;)I
     .locals 1
-    .param p0    # Lcom/android/systemui/recent/cardholder/RecentsPanelView;
 
     iget v0, p0, Lcom/android/systemui/recent/cardholder/RecentsPanelView;->mDisplayHeight:I
 
@@ -852,8 +818,6 @@
 
 .method static synthetic access$3302(Lcom/android/systemui/recent/cardholder/RecentsPanelView;I)I
     .locals 0
-    .param p0    # Lcom/android/systemui/recent/cardholder/RecentsPanelView;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/systemui/recent/cardholder/RecentsPanelView;->mDisplayHeight:I
 
@@ -862,7 +826,6 @@
 
 .method static synthetic access$3400(Lcom/android/systemui/recent/cardholder/RecentsPanelView;)Landroid/widget/ImageView;
     .locals 1
-    .param p0    # Lcom/android/systemui/recent/cardholder/RecentsPanelView;
 
     iget-object v0, p0, Lcom/android/systemui/recent/cardholder/RecentsPanelView;->mGuideLineLayout:Landroid/widget/ImageView;
 
@@ -871,7 +834,6 @@
 
 .method static synthetic access$3500(Lcom/android/systemui/recent/cardholder/RecentsPanelView;)Landroid/widget/ImageView;
     .locals 1
-    .param p0    # Lcom/android/systemui/recent/cardholder/RecentsPanelView;
 
     iget-object v0, p0, Lcom/android/systemui/recent/cardholder/RecentsPanelView;->mRecentPenWindowFakeView:Landroid/widget/ImageView;
 
@@ -880,7 +842,6 @@
 
 .method static synthetic access$3600(Lcom/android/systemui/recent/cardholder/RecentsPanelView;)I
     .locals 1
-    .param p0    # Lcom/android/systemui/recent/cardholder/RecentsPanelView;
 
     iget v0, p0, Lcom/android/systemui/recent/cardholder/RecentsPanelView;->mGuideLineTopPos:I
 
@@ -889,8 +850,6 @@
 
 .method static synthetic access$3602(Lcom/android/systemui/recent/cardholder/RecentsPanelView;I)I
     .locals 0
-    .param p0    # Lcom/android/systemui/recent/cardholder/RecentsPanelView;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/systemui/recent/cardholder/RecentsPanelView;->mGuideLineTopPos:I
 
@@ -899,7 +858,6 @@
 
 .method static synthetic access$3700(Lcom/android/systemui/recent/cardholder/RecentsPanelView;)I
     .locals 1
-    .param p0    # Lcom/android/systemui/recent/cardholder/RecentsPanelView;
 
     iget v0, p0, Lcom/android/systemui/recent/cardholder/RecentsPanelView;->mTriggerBy:I
 
@@ -908,7 +866,6 @@
 
 .method static synthetic access$3800(Lcom/android/systemui/recent/cardholder/RecentsPanelView;)Z
     .locals 1
-    .param p0    # Lcom/android/systemui/recent/cardholder/RecentsPanelView;
 
     iget-boolean v0, p0, Lcom/android/systemui/recent/cardholder/RecentsPanelView;->mFullGuideRect:Z
 
@@ -917,8 +874,6 @@
 
 .method static synthetic access$3802(Lcom/android/systemui/recent/cardholder/RecentsPanelView;Z)Z
     .locals 0
-    .param p0    # Lcom/android/systemui/recent/cardholder/RecentsPanelView;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/systemui/recent/cardholder/RecentsPanelView;->mFullGuideRect:Z
 
@@ -927,7 +882,6 @@
 
 .method static synthetic access$3900(Lcom/android/systemui/recent/cardholder/RecentsPanelView;)I
     .locals 1
-    .param p0    # Lcom/android/systemui/recent/cardholder/RecentsPanelView;
 
     iget v0, p0, Lcom/android/systemui/recent/cardholder/RecentsPanelView;->mRecentCurIndex:I
 
@@ -936,7 +890,6 @@
 
 .method static synthetic access$400(Lcom/android/systemui/recent/cardholder/RecentsPanelView;)I
     .locals 1
-    .param p0    # Lcom/android/systemui/recent/cardholder/RecentsPanelView;
 
     iget v0, p0, Lcom/android/systemui/recent/cardholder/RecentsPanelView;->mItemWidth:I
 
@@ -945,7 +898,6 @@
 
 .method static synthetic access$4000(Lcom/android/systemui/recent/cardholder/RecentsPanelView;)I
     .locals 1
-    .param p0    # Lcom/android/systemui/recent/cardholder/RecentsPanelView;
 
     iget v0, p0, Lcom/android/systemui/recent/cardholder/RecentsPanelView;->mAppIconIndex:I
 
@@ -954,7 +906,6 @@
 
 .method static synthetic access$4100(Lcom/android/systemui/recent/cardholder/RecentsPanelView;)I
     .locals 1
-    .param p0    # Lcom/android/systemui/recent/cardholder/RecentsPanelView;
 
     iget v0, p0, Lcom/android/systemui/recent/cardholder/RecentsPanelView;->mDisplayOrientation:I
 
@@ -963,7 +914,6 @@
 
 .method static synthetic access$4200(Lcom/android/systemui/recent/cardholder/RecentsPanelView;)[B
     .locals 1
-    .param p0    # Lcom/android/systemui/recent/cardholder/RecentsPanelView;
 
     iget-object v0, p0, Lcom/android/systemui/recent/cardholder/RecentsPanelView;->mIvt:[B
 
@@ -972,7 +922,6 @@
 
 .method static synthetic access$4300(Lcom/android/systemui/recent/cardholder/RecentsPanelView;)Landroid/widget/ImageView;
     .locals 1
-    .param p0    # Lcom/android/systemui/recent/cardholder/RecentsPanelView;
 
     iget-object v0, p0, Lcom/android/systemui/recent/cardholder/RecentsPanelView;->mPositionGuideline:Landroid/widget/ImageView;
 
@@ -981,7 +930,6 @@
 
 .method static synthetic access$4400(Lcom/android/systemui/recent/cardholder/RecentsPanelView;)I
     .locals 1
-    .param p0    # Lcom/android/systemui/recent/cardholder/RecentsPanelView;
 
     iget v0, p0, Lcom/android/systemui/recent/cardholder/RecentsPanelView;->mStatusBarHeight:I
 
@@ -990,7 +938,6 @@
 
 .method static synthetic access$500(Lcom/android/systemui/recent/cardholder/RecentsPanelView;)I
     .locals 1
-    .param p0    # Lcom/android/systemui/recent/cardholder/RecentsPanelView;
 
     iget v0, p0, Lcom/android/systemui/recent/cardholder/RecentsPanelView;->mItemHeight:I
 
@@ -999,7 +946,6 @@
 
 .method static synthetic access$600(Lcom/android/systemui/recent/cardholder/RecentsPanelView;)Landroid/graphics/drawable/Drawable;
     .locals 1
-    .param p0    # Lcom/android/systemui/recent/cardholder/RecentsPanelView;
 
     iget-object v0, p0, Lcom/android/systemui/recent/cardholder/RecentsPanelView;->mDefaultDrawable:Landroid/graphics/drawable/Drawable;
 
@@ -1008,11 +954,6 @@
 
 .method static synthetic access$700(Lcom/android/systemui/recent/cardholder/RecentsPanelView;Lcom/android/systemui/recent/cardholder/RecentsPanelView$ViewHolder;Landroid/graphics/drawable/Drawable;ZZ)V
     .locals 0
-    .param p0    # Lcom/android/systemui/recent/cardholder/RecentsPanelView;
-    .param p1    # Lcom/android/systemui/recent/cardholder/RecentsPanelView$ViewHolder;
-    .param p2    # Landroid/graphics/drawable/Drawable;
-    .param p3    # Z
-    .param p4    # Z
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/systemui/recent/cardholder/RecentsPanelView;->updateIcon(Lcom/android/systemui/recent/cardholder/RecentsPanelView$ViewHolder;Landroid/graphics/drawable/Drawable;ZZ)V
 
@@ -1021,7 +962,6 @@
 
 .method static synthetic access$800(Lcom/android/systemui/recent/cardholder/RecentsPanelView;)Lcom/android/systemui/recent/multiwindowUtils/AppListController;
     .locals 1
-    .param p0    # Lcom/android/systemui/recent/cardholder/RecentsPanelView;
 
     iget-object v0, p0, Lcom/android/systemui/recent/cardholder/RecentsPanelView;->mAppListController:Lcom/android/systemui/recent/multiwindowUtils/AppListController;
 
@@ -1030,7 +970,6 @@
 
 .method static synthetic access$900(Lcom/android/systemui/recent/cardholder/RecentsPanelView;)Landroid/view/ViewGroup;
     .locals 1
-    .param p0    # Lcom/android/systemui/recent/cardholder/RecentsPanelView;
 
     iget-object v0, p0, Lcom/android/systemui/recent/cardholder/RecentsPanelView;->mRecentsContainer:Landroid/view/ViewGroup;
 
@@ -1171,7 +1110,6 @@
 
 .method private createCustomAnimations(Landroid/animation/LayoutTransition;)V
     .locals 3
-    .param p1    # Landroid/animation/LayoutTransition;
 
     const-wide/16 v0, 0xc8
 
@@ -1194,7 +1132,6 @@
 
 .method private getActivityOptions(Landroid/view/View;)Landroid/os/Bundle;
     .locals 7
-    .param p1    # Landroid/view/View;
 
     const/4 v2, 0x0
 
@@ -1428,7 +1365,6 @@
 
 .method public static isEnableEmergencyMode(Landroid/content/Context;)Z
     .locals 9
-    .param p0    # Landroid/content/Context;
 
     const/16 v7, 0x200
 
@@ -1556,7 +1492,6 @@
 
 .method private isLaunchingBlockedItem(I)Z
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/systemui/recent/cardholder/RecentsPanelView;->mAppListController:Lcom/android/systemui/recent/multiwindowUtils/AppListController;
 
@@ -1846,9 +1781,6 @@
 
 .method private pointInside(IILandroid/view/View;)Z
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/view/View;
 
     invoke-virtual {p3}, Landroid/view/View;->getLeft()I
 
@@ -1887,7 +1819,6 @@
 
 .method private refreshRecentTasksList(Ljava/util/ArrayList;Z)V
     .locals 1
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1960,8 +1891,6 @@
 
 .method static sendCloseSystemWindows(Landroid/content/Context;Ljava/lang/String;)V
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Landroid/app/ActivityManagerNative;->isSystemReady()Z
 
@@ -2009,7 +1938,6 @@
 
 .method private showImpl(Z)V
     .locals 6
-    .param p1    # Z
 
     const/4 v2, 0x1
 
@@ -2127,7 +2055,6 @@
 
 .method private startApplicationDetailsActivity(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -2174,10 +2101,6 @@
 
 .method private updateIcon(Lcom/android/systemui/recent/cardholder/RecentsPanelView$ViewHolder;Landroid/graphics/drawable/Drawable;ZZ)V
     .locals 3
-    .param p1    # Lcom/android/systemui/recent/cardholder/RecentsPanelView$ViewHolder;
-    .param p2    # Landroid/graphics/drawable/Drawable;
-    .param p3    # Z
-    .param p4    # Z
 
     if-eqz p2, :cond_1
 
@@ -2222,10 +2145,6 @@
 
 .method private updateThumbnail(Lcom/android/systemui/recent/cardholder/RecentsPanelView$ViewHolder;Landroid/graphics/Bitmap;ZZ)V
     .locals 3
-    .param p1    # Lcom/android/systemui/recent/cardholder/RecentsPanelView$ViewHolder;
-    .param p2    # Landroid/graphics/Bitmap;
-    .param p3    # Z
-    .param p4    # Z
 
     if-eqz p2, :cond_4
 
@@ -2484,7 +2403,6 @@
 
 .method public dispatchHoverEvent(Landroid/view/MotionEvent;)Z
     .locals 3
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getX()F
 
@@ -2529,7 +2447,6 @@
 
 .method public getItemIndex(Landroid/view/View;)I
     .locals 2
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p1}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
@@ -2560,7 +2477,6 @@
 
 .method public handleDismiss(Landroid/view/View;)V
     .locals 14
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p1}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
@@ -2864,9 +2780,6 @@
 
 .method public handleLongPress(Landroid/view/View;Landroid/view/View;Landroid/view/View;)V
     .locals 12
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/View;
 
     const/4 v11, 0x1
 
@@ -3082,7 +2995,6 @@
 
 .method public handleOnClick(Landroid/view/View;)V
     .locals 15
-    .param p1    # Landroid/view/View;
 
     invoke-virtual/range {p1 .. p1}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
@@ -3312,7 +3224,6 @@
 
 .method public handleOnClickMultiWindowBtn(Landroid/view/View;)V
     .locals 11
-    .param p1    # Landroid/view/View;
 
     const/4 v10, 0x0
 
@@ -3419,7 +3330,6 @@
 
 .method public handleOnClickPenWindowBtn(Landroid/view/View;)V
     .locals 5
-    .param p1    # Landroid/view/View;
 
     iget-object v3, p0, Lcom/android/systemui/recent/cardholder/RecentsPanelView;->mMultiWindowFacade:Lcom/samsung/android/multiwindow/MultiWindowFacade;
 
@@ -3467,7 +3377,6 @@
 
 .method public handleSwipe(Landroid/view/View;)V
     .locals 7
-    .param p1    # Landroid/view/View;
 
     const/4 v5, 0x1
 
@@ -3621,8 +3530,6 @@
 
 .method public isInContentArea(II)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/systemui/recent/cardholder/RecentsPanelView;->mRecentsContainer:Landroid/view/ViewGroup;
 
@@ -3682,14 +3589,12 @@
 
 .method public onAnimationCancel(Landroid/animation/Animator;)V
     .locals 0
-    .param p1    # Landroid/animation/Animator;
 
     return-void
 .end method
 
 .method public onAnimationEnd(Landroid/animation/Animator;)V
     .locals 3
-    .param p1    # Landroid/animation/Animator;
 
     iget-boolean v1, p0, Lcom/android/systemui/recent/cardholder/RecentsPanelView;->mShowing:Z
 
@@ -3722,21 +3627,18 @@
 
 .method public onAnimationRepeat(Landroid/animation/Animator;)V
     .locals 0
-    .param p1    # Landroid/animation/Animator;
 
     return-void
 .end method
 
 .method public onAnimationStart(Landroid/animation/Animator;)V
     .locals 0
-    .param p1    # Landroid/animation/Animator;
 
     return-void
 .end method
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 2
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/view/View;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -4941,7 +4843,6 @@
 
 .method public onInterceptTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-object v0, p0, Lcom/android/systemui/recent/cardholder/RecentsPanelView;->mPopup:Landroid/widget/PopupMenu;
 
@@ -4962,9 +4863,6 @@
 
 .method public onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
     .locals 0
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -4982,11 +4880,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 0
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-super/range {p0 .. p5}, Landroid/widget/FrameLayout;->onLayout(ZIIII)V
 
@@ -5014,7 +4907,6 @@
 
 .method onTaskThumbnailLoaded(Lcom/android/systemui/recent/cardholder/TaskDescription;)V
     .locals 8
-    .param p1    # Lcom/android/systemui/recent/cardholder/TaskDescription;
 
     monitor-enter p1
 
@@ -5128,7 +5020,6 @@
 
 .method public onTasksLoaded(Ljava/util/ArrayList;Z)V
     .locals 1
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -5201,7 +5092,6 @@
 
 .method public onWindowFocusChanged(Z)V
     .locals 0
-    .param p1    # Z
 
     invoke-super {p0, p1}, Landroid/view/ViewGroup;->onWindowFocusChanged(Z)V
 
@@ -5236,7 +5126,6 @@
 
 .method public setMinSwipeAlpha(F)V
     .locals 2
-    .param p1    # F
 
     iget-object v1, p0, Lcom/android/systemui/recent/cardholder/RecentsPanelView;->mRecentsContainer:Landroid/view/ViewGroup;
 
@@ -5256,7 +5145,6 @@
 
 .method public setRecentTasksLoader(Lcom/android/systemui/recent/cardholder/RecentTasksLoader;)V
     .locals 0
-    .param p1    # Lcom/android/systemui/recent/cardholder/RecentTasksLoader;
 
     iput-object p1, p0, Lcom/android/systemui/recent/cardholder/RecentsPanelView;->mRecentTasksLoader:Lcom/android/systemui/recent/cardholder/RecentTasksLoader;
 
@@ -5265,7 +5153,6 @@
 
 .method public setRecentsCallbacks(Lcom/android/systemui/recent/IRecentsUI;)V
     .locals 0
-    .param p1    # Lcom/android/systemui/recent/IRecentsUI;
 
     iput-object p1, p0, Lcom/android/systemui/recent/cardholder/RecentsPanelView;->mRecentsCallbacks:Lcom/android/systemui/recent/IRecentsUI;
 
@@ -5274,7 +5161,6 @@
 
 .method public show(Z)V
     .locals 2
-    .param p1    # Z
 
     const/4 v1, 0x0
 
@@ -5287,9 +5173,6 @@
 
 .method public show(ZLjava/util/ArrayList;ZZ)V
     .locals 4
-    .param p1    # Z
-    .param p3    # Z
-    .param p4    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(Z",
@@ -5508,7 +5391,6 @@
 
 .method public simulateClick(I)Z
     .locals 3
-    .param p1    # I
 
     iget-object v2, p0, Lcom/android/systemui/recent/cardholder/RecentsPanelView;->mRecentsContainer:Landroid/view/ViewGroup;
 

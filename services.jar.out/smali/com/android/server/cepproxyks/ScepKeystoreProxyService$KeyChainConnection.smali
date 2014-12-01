@@ -28,9 +28,6 @@
 # direct methods
 .method private constructor <init>(Landroid/content/Context;Landroid/content/ServiceConnection;Landroid/security/IKeyChainService;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/ServiceConnection;
-    .param p3    # Landroid/security/IKeyChainService;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -45,10 +42,6 @@
 
 .method synthetic constructor <init>(Landroid/content/Context;Landroid/content/ServiceConnection;Landroid/security/IKeyChainService;Lcom/android/server/cepproxyks/ScepKeystoreProxyService$1;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/ServiceConnection;
-    .param p3    # Landroid/security/IKeyChainService;
-    .param p4    # Lcom/android/server/cepproxyks/ScepKeystoreProxyService$1;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/server/cepproxyks/ScepKeystoreProxyService$KeyChainConnection;-><init>(Landroid/content/Context;Landroid/content/ServiceConnection;Landroid/security/IKeyChainService;)V
 

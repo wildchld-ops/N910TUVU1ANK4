@@ -39,7 +39,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -101,7 +100,6 @@
 
 .method public setAlgorithmParameterSpec(Ljava/security/spec/AlgorithmParameterSpec;)Landroid/security/KeyPairGeneratorSpec$Builder;
     .locals 2
-    .param p1    # Ljava/security/spec/AlgorithmParameterSpec;
 
     if-nez p1, :cond_0
 
@@ -121,7 +119,6 @@
 
 .method public setAlias(Ljava/lang/String;)Landroid/security/KeyPairGeneratorSpec$Builder;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -153,7 +150,6 @@
 
 .method public setEndDate(Ljava/util/Date;)Landroid/security/KeyPairGeneratorSpec$Builder;
     .locals 2
-    .param p1    # Ljava/util/Date;
 
     if-nez p1, :cond_0
 
@@ -173,7 +169,6 @@
 
 .method public setKeySize(I)Landroid/security/KeyPairGeneratorSpec$Builder;
     .locals 2
-    .param p1    # I
 
     if-gez p1, :cond_0
 
@@ -193,7 +188,6 @@
 
 .method public setKeyType(Ljava/lang/String;)Landroid/security/KeyPairGeneratorSpec$Builder;
     .locals 4
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/security/NoSuchAlgorithmException;
@@ -250,7 +244,6 @@
 
 .method public setSerialNumber(Ljava/math/BigInteger;)Landroid/security/KeyPairGeneratorSpec$Builder;
     .locals 2
-    .param p1    # Ljava/math/BigInteger;
 
     if-nez p1, :cond_0
 
@@ -270,7 +263,6 @@
 
 .method public setStartDate(Ljava/util/Date;)Landroid/security/KeyPairGeneratorSpec$Builder;
     .locals 2
-    .param p1    # Ljava/util/Date;
 
     if-nez p1, :cond_0
 
@@ -290,7 +282,6 @@
 
 .method public setSubject(Ljavax/security/auth/x500/X500Principal;)Landroid/security/KeyPairGeneratorSpec$Builder;
     .locals 2
-    .param p1    # Ljavax/security/auth/x500/X500Principal;
 
     if-nez p1, :cond_0
 

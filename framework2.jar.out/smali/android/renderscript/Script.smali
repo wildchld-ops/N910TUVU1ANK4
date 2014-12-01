@@ -42,8 +42,6 @@
 # direct methods
 .method constructor <init>(ILandroid/renderscript/RenderScript;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/renderscript/RenderScript;
 
     invoke-direct {p0, p1, p2}, Landroid/renderscript/BaseObj;-><init>(ILandroid/renderscript/RenderScript;)V
 
@@ -66,8 +64,6 @@
 # virtual methods
 .method public bindAllocation(Landroid/renderscript/Allocation;I)V
     .locals 3
-    .param p1    # Landroid/renderscript/Allocation;
-    .param p2    # I
 
     iget-object v0, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
@@ -112,8 +108,6 @@
 
 .method protected createFieldID(ILandroid/renderscript/Element;)Landroid/renderscript/Script$FieldID;
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/renderscript/Element;
 
     iget-object v3, p0, Landroid/renderscript/Script;->mFIDs:Landroid/util/SparseArray;
 
@@ -171,10 +165,6 @@
 
 .method protected createKernelID(IILandroid/renderscript/Element;Landroid/renderscript/Element;)Landroid/renderscript/Script$KernelID;
     .locals 7
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/renderscript/Element;
-    .param p4    # Landroid/renderscript/Element;
 
     iget-object v2, p0, Landroid/renderscript/Script;->mKIDs:Landroid/util/SparseArray;
 
@@ -238,10 +228,6 @@
 
 .method protected forEach(ILandroid/renderscript/Allocation;Landroid/renderscript/Allocation;Landroid/renderscript/FieldPacker;)V
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/renderscript/Allocation;
-    .param p3    # Landroid/renderscript/Allocation;
-    .param p4    # Landroid/renderscript/FieldPacker;
 
     if-nez p2, :cond_0
 
@@ -304,11 +290,6 @@
 
 .method protected forEach(ILandroid/renderscript/Allocation;Landroid/renderscript/Allocation;Landroid/renderscript/FieldPacker;Landroid/renderscript/Script$LaunchOptions;)V
     .locals 12
-    .param p1    # I
-    .param p2    # Landroid/renderscript/Allocation;
-    .param p3    # Landroid/renderscript/Allocation;
-    .param p4    # Landroid/renderscript/FieldPacker;
-    .param p5    # Landroid/renderscript/Script$LaunchOptions;
 
     if-nez p2, :cond_0
 
@@ -409,7 +390,6 @@
 
 .method public getVarB(I)Z
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
@@ -438,7 +418,6 @@
 
 .method public getVarD(I)D
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
@@ -457,7 +436,6 @@
 
 .method public getVarF(I)F
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
@@ -476,7 +454,6 @@
 
 .method public getVarI(I)I
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
@@ -495,7 +472,6 @@
 
 .method public getVarJ(I)J
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
@@ -514,8 +490,6 @@
 
 .method public getVarV(ILandroid/renderscript/FieldPacker;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/renderscript/FieldPacker;
 
     iget-object v0, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
@@ -536,7 +510,6 @@
 
 .method protected invoke(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
@@ -553,8 +526,6 @@
 
 .method protected invoke(ILandroid/renderscript/FieldPacker;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/renderscript/FieldPacker;
 
     if-eqz p2, :cond_0
 
@@ -591,7 +562,6 @@
 
 .method public setTimeZone(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
@@ -630,8 +600,6 @@
 
 .method public setVar(ID)V
     .locals 2
-    .param p1    # I
-    .param p2    # D
 
     iget-object v0, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
@@ -648,8 +616,6 @@
 
 .method public setVar(IF)V
     .locals 2
-    .param p1    # I
-    .param p2    # F
 
     iget-object v0, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
@@ -666,8 +632,6 @@
 
 .method public setVar(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
@@ -684,8 +648,6 @@
 
 .method public setVar(IJ)V
     .locals 2
-    .param p1    # I
-    .param p2    # J
 
     iget-object v0, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
@@ -702,8 +664,6 @@
 
 .method public setVar(ILandroid/renderscript/BaseObj;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/renderscript/BaseObj;
 
     iget-object v1, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
@@ -734,8 +694,6 @@
 
 .method public setVar(ILandroid/renderscript/FieldPacker;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/renderscript/FieldPacker;
 
     iget-object v0, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
@@ -756,10 +714,6 @@
 
 .method public setVar(ILandroid/renderscript/FieldPacker;Landroid/renderscript/Element;[I)V
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/renderscript/FieldPacker;
-    .param p3    # Landroid/renderscript/Element;
-    .param p4    # [I
 
     iget-object v0, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 
@@ -790,8 +744,6 @@
 
 .method public setVar(IZ)V
     .locals 3
-    .param p1    # I
-    .param p2    # Z
 
     iget-object v1, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 

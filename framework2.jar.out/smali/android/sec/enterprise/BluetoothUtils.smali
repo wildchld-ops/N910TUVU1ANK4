@@ -26,9 +26,6 @@
 
 .method public static bluetoothLog(Ljava/lang/String;ILandroid/bluetooth/BluetoothDevice;)V
     .locals 8
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
-    .param p2    # Landroid/bluetooth/BluetoothDevice;
 
     const/16 v7, 0xa
 
@@ -162,8 +159,6 @@
 
 .method private static bluetoothLog(Ljava/lang/String;Ljava/lang/String;)V
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     invoke-static {}, Landroid/sec/enterprise/EnterpriseDeviceManager;->getInstance()Landroid/sec/enterprise/EnterpriseDeviceManager;
@@ -195,9 +190,6 @@
 
 .method public static bluetoothLog(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/16 v3, 0xa
 
@@ -281,10 +273,6 @@
 
 .method public static bluetoothSocketLog(Ljava/lang/String;Landroid/bluetooth/BluetoothDevice;II)V
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
-    .param p2    # I
-    .param p3    # I
 
     if-nez p1, :cond_0
 
@@ -418,7 +406,6 @@
 
 .method private static convertBluetoothProfile(I)Ljava/lang/String;
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -481,7 +468,6 @@
 
 .method private static getBluetoothProfileEnabled(Landroid/os/ParcelUuid;)Z
     .locals 2
-    .param p0    # Landroid/os/ParcelUuid;
 
     const/4 v0, -0x1
 
@@ -663,7 +649,6 @@
 
 .method public static isHeadsetAllowedBySecurityPolicy(Landroid/bluetooth/BluetoothDevice;)Z
     .locals 5
-    .param p0    # Landroid/bluetooth/BluetoothDevice;
 
     const/4 v2, 0x1
 
@@ -800,7 +785,6 @@
 
 .method public static isPairingAllowedbySecurityPolicy(Ljava/lang/String;)Z
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -850,7 +834,6 @@
 
 .method public static isProfileAuthorizedBySecurityPolicy(Landroid/os/ParcelUuid;)Z
     .locals 1
-    .param p0    # Landroid/os/ParcelUuid;
 
     const/4 v0, 0x1
 
@@ -863,8 +846,6 @@
 
 .method public static isProfileAuthorizedBySecurityPolicy(Landroid/os/ParcelUuid;I)Z
     .locals 8
-    .param p0    # Landroid/os/ParcelUuid;
-    .param p1    # I
 
     const/4 v7, 0x1
 
@@ -1159,10 +1140,6 @@
 
 .method public static isSocketAllowedBySecurityPolicy(Landroid/bluetooth/BluetoothDevice;IILandroid/os/ParcelUuid;)Z
     .locals 11
-    .param p0    # Landroid/bluetooth/BluetoothDevice;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/os/ParcelUuid;
 
     const/4 v0, 0x5
 
@@ -1399,7 +1376,6 @@
 
 .method public static isSvcRfComPortNumberBlockedBySecurityPolicy(I)Z
     .locals 12
-    .param p0    # I
 
     const/4 v8, 0x1
 

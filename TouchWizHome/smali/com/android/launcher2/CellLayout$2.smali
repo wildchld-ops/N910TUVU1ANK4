@@ -44,7 +44,6 @@
 # virtual methods
 .method public onAnimationUpdate(Landroid/animation/ValueAnimator;)V
     .locals 4
-    .param p1    # Landroid/animation/ValueAnimator;
 
     iget-object v1, p0, Lcom/android/launcher2/CellLayout$2;->val$anim:Lcom/android/launcher2/InterruptibleInOutAnimator;
 

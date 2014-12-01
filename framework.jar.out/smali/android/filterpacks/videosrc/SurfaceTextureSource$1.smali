@@ -36,7 +36,6 @@
 # virtual methods
 .method public onFrameAvailable(Landroid/graphics/SurfaceTexture;)V
     .locals 2
-    .param p1    # Landroid/graphics/SurfaceTexture;
 
     # getter for: Landroid/filterpacks/videosrc/SurfaceTextureSource;->mLogVerbose:Z
     invoke-static {}, Landroid/filterpacks/videosrc/SurfaceTextureSource;->access$000()Z

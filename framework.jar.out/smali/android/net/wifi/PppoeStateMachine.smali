@@ -94,7 +94,6 @@
 
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     const-string v0, "PppoeStateMachine"
 
@@ -245,8 +244,6 @@
 
 .method static synthetic access$002(Landroid/net/wifi/PppoeStateMachine;Z)Z
     .locals 0
-    .param p0    # Landroid/net/wifi/PppoeStateMachine;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/net/wifi/PppoeStateMachine;->mWifiConnected:Z
 
@@ -255,7 +252,6 @@
 
 .method static synthetic access$100(Landroid/net/wifi/PppoeStateMachine;)Landroid/os/INetworkManagementService;
     .locals 1
-    .param p0    # Landroid/net/wifi/PppoeStateMachine;
 
     iget-object v0, p0, Landroid/net/wifi/PppoeStateMachine;->mNetworkManagementService:Landroid/os/INetworkManagementService;
 
@@ -264,8 +260,6 @@
 
 .method static synthetic access$1000(Landroid/net/wifi/PppoeStateMachine;Lcom/android/internal/util/IState;)V
     .locals 0
-    .param p0    # Landroid/net/wifi/PppoeStateMachine;
-    .param p1    # Lcom/android/internal/util/IState;
 
     invoke-virtual {p0, p1}, Landroid/net/wifi/PppoeStateMachine;->transitionTo(Lcom/android/internal/util/IState;)V
 
@@ -274,8 +268,6 @@
 
 .method static synthetic access$102(Landroid/net/wifi/PppoeStateMachine;Landroid/os/INetworkManagementService;)Landroid/os/INetworkManagementService;
     .locals 0
-    .param p0    # Landroid/net/wifi/PppoeStateMachine;
-    .param p1    # Landroid/os/INetworkManagementService;
 
     iput-object p1, p0, Landroid/net/wifi/PppoeStateMachine;->mNetworkManagementService:Landroid/os/INetworkManagementService;
 
@@ -284,8 +276,6 @@
 
 .method static synthetic access$1100(Landroid/net/wifi/PppoeStateMachine;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Landroid/net/wifi/PppoeStateMachine;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Landroid/net/wifi/PppoeStateMachine;->setPppoeState(Ljava/lang/String;)V
 
@@ -294,8 +284,6 @@
 
 .method static synthetic access$1200(Landroid/net/wifi/PppoeStateMachine;Lcom/android/internal/util/IState;)V
     .locals 0
-    .param p0    # Landroid/net/wifi/PppoeStateMachine;
-    .param p1    # Lcom/android/internal/util/IState;
 
     invoke-virtual {p0, p1}, Landroid/net/wifi/PppoeStateMachine;->transitionTo(Lcom/android/internal/util/IState;)V
 
@@ -304,7 +292,6 @@
 
 .method static synthetic access$1300(Landroid/net/wifi/PppoeStateMachine;)Landroid/net/wifi/PppoeStateMachine$OnlineState;
     .locals 1
-    .param p0    # Landroid/net/wifi/PppoeStateMachine;
 
     iget-object v0, p0, Landroid/net/wifi/PppoeStateMachine;->mOnlineState:Landroid/net/wifi/PppoeStateMachine$OnlineState;
 
@@ -313,8 +300,6 @@
 
 .method static synthetic access$1400(Landroid/net/wifi/PppoeStateMachine;Lcom/android/internal/util/IState;)V
     .locals 0
-    .param p0    # Landroid/net/wifi/PppoeStateMachine;
-    .param p1    # Lcom/android/internal/util/IState;
 
     invoke-virtual {p0, p1}, Landroid/net/wifi/PppoeStateMachine;->transitionTo(Lcom/android/internal/util/IState;)V
 
@@ -323,9 +308,6 @@
 
 .method static synthetic access$1500(Landroid/net/wifi/PppoeStateMachine;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Landroid/net/wifi/PppoeStateMachine;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Landroid/net/wifi/PppoeStateMachine;->sendPppoeCompletedBroadcast(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -334,8 +316,6 @@
 
 .method static synthetic access$1600(Landroid/net/wifi/PppoeStateMachine;I)V
     .locals 0
-    .param p0    # Landroid/net/wifi/PppoeStateMachine;
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/net/wifi/PppoeStateMachine;->removeMessages(I)V
 
@@ -344,8 +324,6 @@
 
 .method static synthetic access$1702(Landroid/net/wifi/PppoeStateMachine;J)J
     .locals 0
-    .param p0    # Landroid/net/wifi/PppoeStateMachine;
-    .param p1    # J
 
     iput-wide p1, p0, Landroid/net/wifi/PppoeStateMachine;->mPppoeRunningTime:J
 
@@ -354,7 +332,6 @@
 
 .method static synthetic access$200(Landroid/net/wifi/PppoeStateMachine;)Ljava/lang/String;
     .locals 1
-    .param p0    # Landroid/net/wifi/PppoeStateMachine;
 
     iget-object v0, p0, Landroid/net/wifi/PppoeStateMachine;->mOldDns1:Ljava/lang/String;
 
@@ -363,8 +340,6 @@
 
 .method static synthetic access$202(Landroid/net/wifi/PppoeStateMachine;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Landroid/net/wifi/PppoeStateMachine;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/net/wifi/PppoeStateMachine;->mOldDns1:Ljava/lang/String;
 
@@ -373,7 +348,6 @@
 
 .method static synthetic access$300(Landroid/net/wifi/PppoeStateMachine;)Ljava/lang/String;
     .locals 1
-    .param p0    # Landroid/net/wifi/PppoeStateMachine;
 
     iget-object v0, p0, Landroid/net/wifi/PppoeStateMachine;->mOldDns2:Ljava/lang/String;
 
@@ -382,8 +356,6 @@
 
 .method static synthetic access$302(Landroid/net/wifi/PppoeStateMachine;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Landroid/net/wifi/PppoeStateMachine;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/net/wifi/PppoeStateMachine;->mOldDns2:Ljava/lang/String;
 
@@ -392,10 +364,6 @@
 
 .method static synthetic access$400(Landroid/net/wifi/PppoeStateMachine;Landroid/os/Message;II)V
     .locals 0
-    .param p0    # Landroid/net/wifi/PppoeStateMachine;
-    .param p1    # Landroid/os/Message;
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Landroid/net/wifi/PppoeStateMachine;->replyToMessage(Landroid/os/Message;II)V
 
@@ -404,8 +372,6 @@
 
 .method static synthetic access$500(Landroid/net/wifi/PppoeStateMachine;Landroid/net/wifi/PPPOEInfo$Status;)V
     .locals 0
-    .param p0    # Landroid/net/wifi/PppoeStateMachine;
-    .param p1    # Landroid/net/wifi/PPPOEInfo$Status;
 
     invoke-direct {p0, p1}, Landroid/net/wifi/PppoeStateMachine;->setPppoeInfo(Landroid/net/wifi/PPPOEInfo$Status;)V
 
@@ -414,7 +380,6 @@
 
 .method static synthetic access$600(Landroid/net/wifi/PppoeStateMachine;)Landroid/net/wifi/PPPOEConfig;
     .locals 1
-    .param p0    # Landroid/net/wifi/PppoeStateMachine;
 
     iget-object v0, p0, Landroid/net/wifi/PppoeStateMachine;->mPppoeConfig:Landroid/net/wifi/PPPOEConfig;
 
@@ -423,8 +388,6 @@
 
 .method static synthetic access$602(Landroid/net/wifi/PppoeStateMachine;Landroid/net/wifi/PPPOEConfig;)Landroid/net/wifi/PPPOEConfig;
     .locals 0
-    .param p0    # Landroid/net/wifi/PppoeStateMachine;
-    .param p1    # Landroid/net/wifi/PPPOEConfig;
 
     iput-object p1, p0, Landroid/net/wifi/PppoeStateMachine;->mPppoeConfig:Landroid/net/wifi/PPPOEConfig;
 
@@ -433,7 +396,6 @@
 
 .method static synthetic access$700(Landroid/net/wifi/PppoeStateMachine;)Landroid/net/wifi/PppoeStateMachine$ConnectingState;
     .locals 1
-    .param p0    # Landroid/net/wifi/PppoeStateMachine;
 
     iget-object v0, p0, Landroid/net/wifi/PppoeStateMachine;->mConnectingState:Landroid/net/wifi/PppoeStateMachine$ConnectingState;
 
@@ -442,8 +404,6 @@
 
 .method static synthetic access$800(Landroid/net/wifi/PppoeStateMachine;Lcom/android/internal/util/IState;)V
     .locals 0
-    .param p0    # Landroid/net/wifi/PppoeStateMachine;
-    .param p1    # Lcom/android/internal/util/IState;
 
     invoke-virtual {p0, p1}, Landroid/net/wifi/PppoeStateMachine;->transitionTo(Lcom/android/internal/util/IState;)V
 
@@ -452,7 +412,6 @@
 
 .method static synthetic access$900(Landroid/net/wifi/PppoeStateMachine;)Landroid/net/wifi/PppoeStateMachine$OfflineState;
     .locals 1
-    .param p0    # Landroid/net/wifi/PppoeStateMachine;
 
     iget-object v0, p0, Landroid/net/wifi/PppoeStateMachine;->mOfflineState:Landroid/net/wifi/PppoeStateMachine$OfflineState;
 
@@ -461,7 +420,6 @@
 
 .method public static makePppoeStateMachine(Landroid/content/Context;)Landroid/net/wifi/PppoeStateMachine;
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     new-instance v0, Landroid/net/wifi/PppoeStateMachine;
 
@@ -474,7 +432,6 @@
 
 .method private obtainMessageWithArg2(Landroid/os/Message;)Landroid/os/Message;
     .locals 2
-    .param p1    # Landroid/os/Message;
 
     invoke-static {}, Landroid/os/Message;->obtain()Landroid/os/Message;
 
@@ -489,9 +446,6 @@
 
 .method private replyToMessage(Landroid/os/Message;II)V
     .locals 2
-    .param p1    # Landroid/os/Message;
-    .param p2    # I
-    .param p3    # I
 
     iget-object v1, p1, Landroid/os/Message;->replyTo:Landroid/os/Messenger;
 
@@ -518,8 +472,6 @@
 
 .method private sendPppoeCompletedBroadcast(Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -553,7 +505,6 @@
 
 .method private setPppoeInfo(Landroid/net/wifi/PPPOEInfo$Status;)V
     .locals 1
-    .param p1    # Landroid/net/wifi/PPPOEInfo$Status;
 
     iget-object v0, p0, Landroid/net/wifi/PppoeStateMachine;->mPppoeInfo:Landroid/net/wifi/PPPOEInfo;
 
@@ -564,7 +515,6 @@
 
 .method private setPppoeState(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Landroid/net/wifi/PppoeStateMachine;->mContext:Landroid/content/Context;
 

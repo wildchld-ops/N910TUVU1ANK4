@@ -65,11 +65,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/am/ActivityManagerService;Landroid/content/pm/ProviderInfo;Landroid/content/pm/ApplicationInfo;Landroid/content/ComponentName;Z)V
     .locals 2
-    .param p1    # Lcom/android/server/am/ActivityManagerService;
-    .param p2    # Landroid/content/pm/ProviderInfo;
-    .param p3    # Landroid/content/pm/ApplicationInfo;
-    .param p4    # Landroid/content/ComponentName;
-    .param p5    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -129,7 +124,6 @@
 
 .method public constructor <init>(Lcom/android/server/am/ContentProviderRecord;)V
     .locals 1
-    .param p1    # Lcom/android/server/am/ContentProviderRecord;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -172,8 +166,6 @@
 
 .method static synthetic access$100(Lcom/android/server/am/ContentProviderRecord;Landroid/os/IBinder;)V
     .locals 0
-    .param p0    # Lcom/android/server/am/ContentProviderRecord;
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0, p1}, Lcom/android/server/am/ContentProviderRecord;->removeExternalProcessHandleInternalLocked(Landroid/os/IBinder;)V
 
@@ -182,7 +174,6 @@
 
 .method private removeExternalProcessHandleInternalLocked(Landroid/os/IBinder;)V
     .locals 2
-    .param p1    # Landroid/os/IBinder;
 
     iget-object v1, p0, Lcom/android/server/am/ContentProviderRecord;->externalProcessTokenToHandle:Ljava/util/HashMap;
 
@@ -218,7 +209,6 @@
 # virtual methods
 .method public addExternalProcessHandleLocked(Landroid/os/IBinder;)V
     .locals 2
-    .param p1    # Landroid/os/IBinder;
 
     if-nez p1, :cond_0
 
@@ -270,7 +260,6 @@
 
 .method public canRunHere(Lcom/android/server/am/ProcessRecord;)Z
     .locals 2
-    .param p1    # Lcom/android/server/am/ProcessRecord;
 
     iget-object v0, p0, Lcom/android/server/am/ContentProviderRecord;->info:Landroid/content/pm/ProviderInfo;
 
@@ -312,9 +301,6 @@
 
 .method dump(Ljava/io/PrintWriter;Ljava/lang/String;Z)V
     .locals 3
-    .param p1    # Ljava/io/PrintWriter;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     if-eqz p3, :cond_0
 
@@ -628,7 +614,6 @@
 
 .method public newHolder(Lcom/android/server/am/ContentProviderConnection;)Landroid/app/IActivityManager$ContentProviderHolder;
     .locals 2
-    .param p1    # Lcom/android/server/am/ContentProviderConnection;
 
     new-instance v0, Landroid/app/IActivityManager$ContentProviderHolder;
 
@@ -651,7 +636,6 @@
 
 .method public removeExternalProcessHandleLocked(Landroid/os/IBinder;)Z
     .locals 4
-    .param p1    # Landroid/os/IBinder;
 
     const/4 v2, 0x1
 

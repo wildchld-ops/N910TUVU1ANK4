@@ -71,7 +71,6 @@
 
 .method public setCallbackType(I)Landroid/bluetooth/le/ScanSettings$Builder;
     .locals 3
-    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -118,7 +117,6 @@
 
 .method public setReportDelaySeconds(J)Landroid/bluetooth/le/ScanSettings$Builder;
     .locals 0
-    .param p1    # J
 
     iput-wide p1, p0, Landroid/bluetooth/le/ScanSettings$Builder;->mReportDelaySeconds:J
 
@@ -127,7 +125,6 @@
 
 .method public setScanMode(I)Landroid/bluetooth/le/ScanSettings$Builder;
     .locals 3
-    .param p1    # I
 
     if-ltz p1, :cond_0
 
@@ -168,7 +165,6 @@
 
 .method public setScanResultType(I)Landroid/bluetooth/le/ScanSettings$Builder;
     .locals 3
-    .param p1    # I
 
     if-ltz p1, :cond_0
 

@@ -26,7 +26,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/mms/ui/ConversationListFragment;Landroid/content/Intent;)V
     .locals 0
-    .param p2    # Landroid/content/Intent;
 
     iput-object p1, p0, Lcom/android/mms/ui/ConversationListFragment$CreateSpamGroupChatListener;->this$0:Lcom/android/mms/ui/ConversationListFragment;
 
@@ -41,8 +40,6 @@
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 12
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     const/4 v11, 0x0
 

@@ -42,7 +42,6 @@
 
 .method public constructor <init>(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-direct {p0}, Landroid/telephony/CellLocation;-><init>()V
 
@@ -111,8 +110,6 @@
 
 .method private static equalsHandlesNulls(Ljava/lang/Object;Ljava/lang/Object;)Z
     .locals 1
-    .param p0    # Ljava/lang/Object;
-    .param p1    # Ljava/lang/Object;
 
     if-nez p0, :cond_1
 
@@ -140,7 +137,6 @@
 # virtual methods
 .method public equals(Ljava/lang/Object;)Z
     .locals 6
-    .param p1    # Ljava/lang/Object;
 
     const/4 v3, 0x0
 
@@ -226,7 +222,6 @@
 
 .method public fillInNotifierBundle(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "lac"
 
@@ -369,8 +364,6 @@
 
 .method public setLacAndCid(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     iput p1, p0, Landroid/telephony/gsm/GsmCellLocation;->mLac:I
 
@@ -381,7 +374,6 @@
 
 .method public setPsc(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/telephony/gsm/GsmCellLocation;->mPsc:I
 
@@ -410,8 +402,6 @@
 
 .method public setpsLacAndCid(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     iput p1, p0, Landroid/telephony/gsm/GsmCellLocation;->mpsLac:I
 
@@ -422,7 +412,6 @@
 
 .method public setpsPsc(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/telephony/gsm/GsmCellLocation;->mpsPsc:I
 

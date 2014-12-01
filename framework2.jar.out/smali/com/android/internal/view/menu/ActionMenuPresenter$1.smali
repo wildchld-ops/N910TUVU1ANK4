@@ -23,7 +23,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/internal/view/menu/ActionMenuPresenter;Landroid/view/View;Lcom/android/internal/view/menu/MenuItemImpl;)V
     .locals 0
-    .param p2    # Landroid/view/View;
 
     iput-object p1, p0, Lcom/android/internal/view/menu/ActionMenuPresenter$1;->this$0:Lcom/android/internal/view/menu/ActionMenuPresenter;
 

@@ -60,8 +60,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Z)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Z
 
     const/4 v0, 0x0
 
@@ -80,8 +78,6 @@
 
 .method static synthetic access$502(Landroid/widget/ListPopupWindow$DropDownListView;Z)Z
     .locals 0
-    .param p0    # Landroid/widget/ListPopupWindow$DropDownListView;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/widget/ListPopupWindow$DropDownListView;->mListSelectionHidden:Z
 
@@ -117,8 +113,6 @@
 
 .method private clickPressedItem(Landroid/view/View;I)V
     .locals 7
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     invoke-virtual {p0, p2}, Landroid/widget/AdapterView;->getItemIdAtPosition(I)J
 
@@ -187,8 +181,6 @@
 
 .method private setPressedItem(Landroid/view/View;I)V
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     const/4 v0, 0x1
 
@@ -329,8 +321,6 @@
 
 .method obtainView(I[Z)Landroid/view/View;
     .locals 3
-    .param p1    # I
-    .param p2    # [Z
 
     invoke-super {p0, p1, p2}, Landroid/widget/AbsListView;->obtainView(I[Z)Landroid/view/View;
 
@@ -354,8 +344,6 @@
 
 .method public onForwardedEvent(Landroid/view/MotionEvent;I)Z
     .locals 10
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # I
 
     const/4 v9, 0x1
 

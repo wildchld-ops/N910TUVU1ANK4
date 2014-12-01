@@ -36,8 +36,6 @@
 
 .method synthetic constructor <init>(Lcom/android/server/am/ActiveServices;Lcom/android/server/am/ActiveServices$1;)V
     .locals 0
-    .param p1    # Lcom/android/server/am/ActiveServices;
-    .param p2    # Lcom/android/server/am/ActiveServices$1;
 
     invoke-direct {p0, p1}, Lcom/android/server/am/ActiveServices$ServiceRestarter;-><init>(Lcom/android/server/am/ActiveServices;)V
 
@@ -78,7 +76,6 @@
 
 .method setService(Lcom/android/server/am/ServiceRecord;)V
     .locals 0
-    .param p1    # Lcom/android/server/am/ServiceRecord;
 
     iput-object p1, p0, Lcom/android/server/am/ActiveServices$ServiceRestarter;->mService:Lcom/android/server/am/ServiceRecord;
 

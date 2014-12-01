@@ -28,7 +28,6 @@
 
 .method synthetic constructor <init>(Lcom/android/settings/bluetooth/BluetoothDeviceFilter$1;)V
     .locals 0
-    .param p1    # Lcom/android/settings/bluetooth/BluetoothDeviceFilter$1;
 
     invoke-direct {p0}, Lcom/android/settings/bluetooth/BluetoothDeviceFilter$AllFilter;-><init>()V
 
@@ -39,7 +38,6 @@
 # virtual methods
 .method public matches(Landroid/bluetooth/BluetoothDevice;)Z
     .locals 1
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
 
     const/4 v0, 0x1
 

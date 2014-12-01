@@ -35,8 +35,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/view/View;
 
     const/4 v0, 0x0
 
@@ -47,9 +45,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/view/View;I)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/view/View;
-    .param p3    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -88,7 +83,6 @@
 
 .method static synthetic access$000(Landroid/widget/PopupMenu;)Lcom/android/internal/view/menu/MenuPopupHelper;
     .locals 1
-    .param p0    # Landroid/widget/PopupMenu;
 
     iget-object v0, p0, Landroid/widget/PopupMenu;->mPopup:Lcom/android/internal/view/menu/MenuPopupHelper;
 
@@ -150,7 +144,6 @@
 
 .method public inflate(I)V
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/widget/PopupMenu;->getMenuInflater()Landroid/view/MenuInflater;
 
@@ -165,8 +158,6 @@
 
 .method public onCloseMenu(Lcom/android/internal/view/menu/MenuBuilder;Z)V
     .locals 1
-    .param p1    # Lcom/android/internal/view/menu/MenuBuilder;
-    .param p2    # Z
 
     iget-object v0, p0, Landroid/widget/PopupMenu;->mDismissListener:Landroid/widget/PopupMenu$OnDismissListener;
 
@@ -182,15 +173,12 @@
 
 .method public onCloseSubMenu(Lcom/android/internal/view/menu/SubMenuBuilder;)V
     .locals 0
-    .param p1    # Lcom/android/internal/view/menu/SubMenuBuilder;
 
     return-void
 .end method
 
 .method public onMenuItemSelected(Lcom/android/internal/view/menu/MenuBuilder;Landroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # Lcom/android/internal/view/menu/MenuBuilder;
-    .param p2    # Landroid/view/MenuItem;
 
     iget-object v0, p0, Landroid/widget/PopupMenu;->mMenuItemClickListener:Landroid/widget/PopupMenu$OnMenuItemClickListener;
 
@@ -213,14 +201,12 @@
 
 .method public onMenuModeChange(Lcom/android/internal/view/menu/MenuBuilder;)V
     .locals 0
-    .param p1    # Lcom/android/internal/view/menu/MenuBuilder;
 
     return-void
 .end method
 
 .method public onOpenSubMenu(Lcom/android/internal/view/menu/MenuBuilder;)Z
     .locals 4
-    .param p1    # Lcom/android/internal/view/menu/MenuBuilder;
 
     const/4 v0, 0x1
 
@@ -254,7 +240,6 @@
 
 .method public setOnDismissListener(Landroid/widget/PopupMenu$OnDismissListener;)V
     .locals 0
-    .param p1    # Landroid/widget/PopupMenu$OnDismissListener;
 
     iput-object p1, p0, Landroid/widget/PopupMenu;->mDismissListener:Landroid/widget/PopupMenu$OnDismissListener;
 
@@ -263,7 +248,6 @@
 
 .method public setOnMenuItemClickListener(Landroid/widget/PopupMenu$OnMenuItemClickListener;)V
     .locals 0
-    .param p1    # Landroid/widget/PopupMenu$OnMenuItemClickListener;
 
     iput-object p1, p0, Landroid/widget/PopupMenu;->mMenuItemClickListener:Landroid/widget/PopupMenu$OnMenuItemClickListener;
 

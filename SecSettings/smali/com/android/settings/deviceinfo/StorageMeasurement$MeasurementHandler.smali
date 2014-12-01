@@ -42,8 +42,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/settings/deviceinfo/StorageMeasurement;Landroid/content/Context;Landroid/os/Looper;)V
     .locals 1
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/os/Looper;
 
     iput-object p1, p0, Lcom/android/settings/deviceinfo/StorageMeasurement$MeasurementHandler;->this$0:Lcom/android/settings/deviceinfo/StorageMeasurement;
 
@@ -76,8 +74,6 @@
 
 .method static synthetic access$102(Lcom/android/settings/deviceinfo/StorageMeasurement$MeasurementHandler;Lcom/android/internal/app/IMediaContainerService;)Lcom/android/internal/app/IMediaContainerService;
     .locals 0
-    .param p0    # Lcom/android/settings/deviceinfo/StorageMeasurement$MeasurementHandler;
-    .param p1    # Lcom/android/internal/app/IMediaContainerService;
 
     iput-object p1, p0, Lcom/android/settings/deviceinfo/StorageMeasurement$MeasurementHandler;->mDefaultContainer:Lcom/android/internal/app/IMediaContainerService;
 
@@ -86,8 +82,6 @@
 
 .method static synthetic access$202(Lcom/android/settings/deviceinfo/StorageMeasurement$MeasurementHandler;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/deviceinfo/StorageMeasurement$MeasurementHandler;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/deviceinfo/StorageMeasurement$MeasurementHandler;->mBound:Z
 
@@ -329,7 +323,6 @@
 
 .method private measureApproximateStorage(Lcom/android/internal/app/IMediaContainerService;)V
     .locals 14
-    .param p1    # Lcom/android/internal/app/IMediaContainerService;
 
     iget-object v8, p0, Lcom/android/settings/deviceinfo/StorageMeasurement$MeasurementHandler;->this$0:Lcom/android/settings/deviceinfo/StorageMeasurement;
 
@@ -518,7 +511,6 @@
 
 .method private measureExactStorage(Lcom/android/internal/app/IMediaContainerService;)V
     .locals 27
-    .param p1    # Lcom/android/internal/app/IMediaContainerService;
 
     move-object/from16 v0, p0
 
@@ -960,7 +952,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 8
-    .param p1    # Landroid/os/Message;
 
     const/4 v0, 0x0
 

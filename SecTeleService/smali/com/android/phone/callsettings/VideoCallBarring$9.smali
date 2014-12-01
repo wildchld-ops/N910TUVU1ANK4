@@ -50,7 +50,7 @@
 
     iget-object v0, v0, Lcom/android/phone/callsettings/VideoCallBarring;->editText:Landroid/widget/EditText;
 
-    invoke-virtual {v0}, Landroid/widget/TextView;->length()I
+    invoke-virtual {v0}, Landroid/widget/EditText;->length()I
 
     move-result v0
 
@@ -59,7 +59,7 @@
     const/4 v0, 0x1
 
     :goto_0
-    invoke-virtual {v1, v0}, Landroid/widget/TextView;->setEnabled(Z)V
+    invoke-virtual {v1, v0}, Landroid/widget/Button;->setEnabled(Z)V
 
     iget-object v0, p0, Lcom/android/phone/callsettings/VideoCallBarring$9;->this$0:Lcom/android/phone/callsettings/VideoCallBarring;
 
@@ -69,7 +69,7 @@
 
     invoke-direct {v1, p0}, Lcom/android/phone/callsettings/VideoCallBarring$9$1;-><init>(Lcom/android/phone/callsettings/VideoCallBarring$9;)V
 
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->addTextChangedListener(Landroid/text/TextWatcher;)V
+    invoke-virtual {v0, v1}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
     return-void
 

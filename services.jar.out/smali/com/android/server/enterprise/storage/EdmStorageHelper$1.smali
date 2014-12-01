@@ -40,7 +40,6 @@
 # virtual methods
 .method public onTableFound(Lcom/android/server/enterprise/storage/Table;)V
     .locals 10
-    .param p1    # Lcom/android/server/enterprise/storage/Table;
 
     iget-object v4, p1, Lcom/android/server/enterprise/storage/Table;->mTableName:Ljava/lang/String;
 

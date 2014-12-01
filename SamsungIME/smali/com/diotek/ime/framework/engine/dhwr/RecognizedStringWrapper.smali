@@ -146,13 +146,6 @@
 
 .method public constructor <init>(Ljava/lang/String;IFFIILandroid/graphics/Typeface;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # F
-    .param p4    # F
-    .param p5    # I
-    .param p6    # I
-    .param p7    # Landroid/graphics/Typeface;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/diotek/ime/framework/engine/dhwr/CannotSetStringOnHereException;
@@ -258,7 +251,6 @@
 
 .method private calculateRectSize(Landroid/graphics/RectF;)D
     .locals 2
-    .param p1    # Landroid/graphics/RectF;
 
     invoke-virtual {p1}, Landroid/graphics/RectF;->height()F
 
@@ -314,8 +306,6 @@
 
 .method private setStartAndEndPoint(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     sget-boolean v0, Lcom/diotek/ime/framework/util/Debug;->DEBUG:Z
 
@@ -363,8 +353,6 @@
 
 .method private setStartPoint(FF)V
     .locals 3
-    .param p1    # F
-    .param p2    # F
 
     iget-object v0, p0, Lcom/diotek/ime/framework/engine/dhwr/RecognizedStringWrapper;->mFontStartPoint:Landroid/graphics/PointF;
 
@@ -1329,8 +1317,6 @@
 # virtual methods
 .method public addNewString(Ljava/lang/String;Landroid/graphics/RectF;)I
     .locals 11
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/graphics/RectF;
 
     const/high16 v10, -0x40800000
 
@@ -1889,7 +1875,6 @@
 
 .method public getStringOnLongClick(Landroid/graphics/Point;)Ljava/lang/String;
     .locals 16
-    .param p1    # Landroid/graphics/Point;
 
     new-instance v5, Landroid/graphics/RectF;
 
@@ -2158,7 +2143,6 @@
 
 .method public handleAwayGesture(Landroid/graphics/RectF;)Z
     .locals 14
-    .param p1    # Landroid/graphics/RectF;
 
     const/4 v10, 0x1
 
@@ -2592,8 +2576,6 @@
 
 .method public handleDeleteGesture(Landroid/graphics/RectF;I)Z
     .locals 9
-    .param p1    # Landroid/graphics/RectF;
-    .param p2    # I
 
     const/4 v4, 0x1
 
@@ -2753,7 +2735,6 @@
 
 .method public handleMergeGesture(Landroid/graphics/RectF;)Z
     .locals 13
-    .param p1    # Landroid/graphics/RectF;
 
     const/4 v8, 0x0
 
@@ -2950,7 +2931,6 @@
 
 .method public handleSpaceGesture(Landroid/graphics/RectF;)Z
     .locals 8
-    .param p1    # Landroid/graphics/RectF;
 
     const/4 v5, 0x0
 
@@ -3125,7 +3105,6 @@
 
 .method public isRTLText(Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p1}, Ljava/lang/String;->toCharArray()[C
 
@@ -3208,7 +3187,6 @@
 
 .method public isSameArea(Landroid/graphics/RectF;)Z
     .locals 10
-    .param p1    # Landroid/graphics/RectF;
 
     const v9, 0x3ea3d70a
 
@@ -3365,7 +3343,6 @@
 
 .method public isSameLine(Landroid/graphics/RectF;)Z
     .locals 9
-    .param p1    # Landroid/graphics/RectF;
 
     const/4 v2, 0x1
 
@@ -3461,7 +3438,6 @@
 
 .method public modifyRecognizedString(Ljava/lang/String;)V
     .locals 10
-    .param p1    # Ljava/lang/String;
 
     const/4 v9, -0x1
 
@@ -3937,7 +3913,6 @@
 
 .method public setDeleteOverlapStartAndEndPoint(Landroid/graphics/RectF;)V
     .locals 12
-    .param p1    # Landroid/graphics/RectF;
 
     sget-boolean v9, Lcom/diotek/ime/framework/util/Debug;->DEBUG:Z
 
@@ -4283,7 +4258,6 @@
 
 .method public setFont(Landroid/graphics/Typeface;)V
     .locals 0
-    .param p1    # Landroid/graphics/Typeface;
 
     iput-object p1, p0, Lcom/diotek/ime/framework/engine/dhwr/RecognizedStringWrapper;->mFontRosemary:Landroid/graphics/Typeface;
 
@@ -4292,7 +4266,6 @@
 
 .method public setOverlapStartAndEndPoint(Landroid/graphics/RectF;)V
     .locals 12
-    .param p1    # Landroid/graphics/RectF;
 
     sget-boolean v9, Lcom/diotek/ime/framework/util/Debug;->DEBUG:Z
 
@@ -4642,8 +4615,6 @@
 
 .method public setOverlapStartAndEndPoint(Landroid/graphics/RectF;Ljava/lang/String;)V
     .locals 12
-    .param p1    # Landroid/graphics/RectF;
-    .param p2    # Ljava/lang/String;
 
     sget-boolean v9, Lcom/diotek/ime/framework/util/Debug;->DEBUG:Z
 
@@ -5065,7 +5036,6 @@
 
 .method public setRecognizedString(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/engine/dhwr/RecognizedStringWrapper;->mRecognizedString:Ljava/lang/String;
 

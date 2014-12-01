@@ -32,8 +32,6 @@
 
 .method public constructor <init>(ILjava/lang/Object;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Ljava/lang/Object;
 
     const-wide/16 v3, 0x23
 
@@ -210,7 +208,6 @@
 
 .method private getPeriods(J)Ljava/lang/String;
     .locals 6
-    .param p1    # J
 
     const-wide/16 v4, 0x3c
 
@@ -237,7 +234,6 @@
 
 .method public static registerContentObserver(Landroid/content/Context;)V
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     const/4 v3, 0x1
 
@@ -276,7 +272,6 @@
 
 .method public static unregisterContentObserver(Landroid/content/Context;)V
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     sget-object v0, Lcom/android/incallui/callerinfocard/queryargs/MessageQueryArgs;->mContentObserver:Landroid/database/ContentObserver;
 

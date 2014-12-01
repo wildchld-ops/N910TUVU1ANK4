@@ -55,7 +55,6 @@
 
 .method static synthetic access$000(Lcom/android/server/display/MagnifierDisplayPolicy$DisplayInfo;)Landroid/graphics/Point;
     .locals 1
-    .param p0    # Lcom/android/server/display/MagnifierDisplayPolicy$DisplayInfo;
 
     iget-object v0, p0, Lcom/android/server/display/MagnifierDisplayPolicy$DisplayInfo;->mSurfaceOffset:Landroid/graphics/Point;
 
@@ -64,7 +63,6 @@
 
 .method static synthetic access$100(Lcom/android/server/display/MagnifierDisplayPolicy$DisplayInfo;)Landroid/graphics/Point;
     .locals 1
-    .param p0    # Lcom/android/server/display/MagnifierDisplayPolicy$DisplayInfo;
 
     iget-object v0, p0, Lcom/android/server/display/MagnifierDisplayPolicy$DisplayInfo;->mAbsOffset:Landroid/graphics/Point;
 
@@ -73,7 +71,6 @@
 
 .method static synthetic access$200(Lcom/android/server/display/MagnifierDisplayPolicy$DisplayInfo;)Landroid/graphics/Rect;
     .locals 1
-    .param p0    # Lcom/android/server/display/MagnifierDisplayPolicy$DisplayInfo;
 
     iget-object v0, p0, Lcom/android/server/display/MagnifierDisplayPolicy$DisplayInfo;->mSurfaceCropRect:Landroid/graphics/Rect;
 

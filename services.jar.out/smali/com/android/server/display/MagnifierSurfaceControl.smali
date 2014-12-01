@@ -65,10 +65,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Lcom/android/server/display/MagnifierSurfaceControl$Listener;Landroid/os/Handler;Lcom/android/server/display/MagnifierDisplayPolicy;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/server/display/MagnifierSurfaceControl$Listener;
-    .param p3    # Landroid/os/Handler;
-    .param p4    # Lcom/android/server/display/MagnifierDisplayPolicy;
 
     const/high16 v1, -0x40800000
 
@@ -129,7 +125,6 @@
 
 .method static synthetic access$000(Lcom/android/server/display/MagnifierSurfaceControl;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Lcom/android/server/display/MagnifierSurfaceControl;
 
     iget-object v0, p0, Lcom/android/server/display/MagnifierSurfaceControl;->mLock:Ljava/lang/Object;
 
@@ -138,7 +133,6 @@
 
 .method static synthetic access$100(Lcom/android/server/display/MagnifierSurfaceControl;)Landroid/view/SurfaceControl;
     .locals 1
-    .param p0    # Lcom/android/server/display/MagnifierSurfaceControl;
 
     iget-object v0, p0, Lcom/android/server/display/MagnifierSurfaceControl;->mSurfaceControl:Landroid/view/SurfaceControl;
 
@@ -147,7 +141,6 @@
 
 .method static synthetic access$1000(Lcom/android/server/display/MagnifierSurfaceControl;)I
     .locals 1
-    .param p0    # Lcom/android/server/display/MagnifierSurfaceControl;
 
     iget v0, p0, Lcom/android/server/display/MagnifierSurfaceControl;->mState:I
 
@@ -156,8 +149,6 @@
 
 .method static synthetic access$1002(Lcom/android/server/display/MagnifierSurfaceControl;I)I
     .locals 0
-    .param p0    # Lcom/android/server/display/MagnifierSurfaceControl;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/display/MagnifierSurfaceControl;->mState:I
 
@@ -166,7 +157,6 @@
 
 .method static synthetic access$200(Lcom/android/server/display/MagnifierSurfaceControl;)V
     .locals 0
-    .param p0    # Lcom/android/server/display/MagnifierSurfaceControl;
 
     invoke-direct {p0}, Lcom/android/server/display/MagnifierSurfaceControl;->hide()V
 
@@ -175,7 +165,6 @@
 
 .method static synthetic access$300(Lcom/android/server/display/MagnifierSurfaceControl;)V
     .locals 0
-    .param p0    # Lcom/android/server/display/MagnifierSurfaceControl;
 
     invoke-direct {p0}, Lcom/android/server/display/MagnifierSurfaceControl;->destroyMainSurface()V
 
@@ -184,7 +173,6 @@
 
 .method static synthetic access$400(Lcom/android/server/display/MagnifierSurfaceControl;)V
     .locals 0
-    .param p0    # Lcom/android/server/display/MagnifierSurfaceControl;
 
     invoke-direct {p0}, Lcom/android/server/display/MagnifierSurfaceControl;->createDefaultSurface()V
 
@@ -193,7 +181,6 @@
 
 .method static synthetic access$500(Lcom/android/server/display/MagnifierSurfaceControl;)Lcom/android/server/display/MagnifierSurfaceControl$Listener;
     .locals 1
-    .param p0    # Lcom/android/server/display/MagnifierSurfaceControl;
 
     iget-object v0, p0, Lcom/android/server/display/MagnifierSurfaceControl;->mListener:Lcom/android/server/display/MagnifierSurfaceControl$Listener;
 
@@ -202,7 +189,6 @@
 
 .method static synthetic access$600(Lcom/android/server/display/MagnifierSurfaceControl;)Landroid/view/Surface;
     .locals 1
-    .param p0    # Lcom/android/server/display/MagnifierSurfaceControl;
 
     iget-object v0, p0, Lcom/android/server/display/MagnifierSurfaceControl;->mSurface:Landroid/view/Surface;
 
@@ -211,7 +197,6 @@
 
 .method static synthetic access$700(Lcom/android/server/display/MagnifierSurfaceControl;)Lcom/android/server/display/MagnifierSurfaceControl$Border;
     .locals 1
-    .param p0    # Lcom/android/server/display/MagnifierSurfaceControl;
 
     iget-object v0, p0, Lcom/android/server/display/MagnifierSurfaceControl;->mBorder:Lcom/android/server/display/MagnifierSurfaceControl$Border;
 
@@ -220,8 +205,6 @@
 
 .method static synthetic access$702(Lcom/android/server/display/MagnifierSurfaceControl;Lcom/android/server/display/MagnifierSurfaceControl$Border;)Lcom/android/server/display/MagnifierSurfaceControl$Border;
     .locals 0
-    .param p0    # Lcom/android/server/display/MagnifierSurfaceControl;
-    .param p1    # Lcom/android/server/display/MagnifierSurfaceControl$Border;
 
     iput-object p1, p0, Lcom/android/server/display/MagnifierSurfaceControl;->mBorder:Lcom/android/server/display/MagnifierSurfaceControl$Border;
 
@@ -230,7 +213,6 @@
 
 .method static synthetic access$800(Lcom/android/server/display/MagnifierSurfaceControl;)Lcom/android/server/display/MagnifierDisplayPolicy;
     .locals 1
-    .param p0    # Lcom/android/server/display/MagnifierSurfaceControl;
 
     iget-object v0, p0, Lcom/android/server/display/MagnifierSurfaceControl;->mPolicy:Lcom/android/server/display/MagnifierDisplayPolicy;
 
@@ -239,7 +221,6 @@
 
 .method static synthetic access$900(Lcom/android/server/display/MagnifierSurfaceControl;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/server/display/MagnifierSurfaceControl;
 
     iget-object v0, p0, Lcom/android/server/display/MagnifierSurfaceControl;->mContext:Landroid/content/Context;
 
@@ -484,7 +465,6 @@
 
 .method private show(Landroid/view/MagnificationSpec;)V
     .locals 10
-    .param p1    # Landroid/view/MagnificationSpec;
 
     const/4 v9, 0x2
 
@@ -814,7 +794,6 @@
 
 .method public dump(Ljava/io/PrintWriter;)V
     .locals 1
-    .param p1    # Ljava/io/PrintWriter;
 
     iget-object v0, p0, Lcom/android/server/display/MagnifierSurfaceControl;->mPolicy:Lcom/android/server/display/MagnifierDisplayPolicy;
 
@@ -825,7 +804,6 @@
 
 .method public onDisplayAdded(I)V
     .locals 4
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/server/display/MagnifierSurfaceControl;->mPolicy:Lcom/android/server/display/MagnifierDisplayPolicy;
 
@@ -867,14 +845,12 @@
 
 .method public onDisplayChanged(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onDisplayRemoved(I)V
     .locals 4
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/server/display/MagnifierSurfaceControl;->mPolicy:Lcom/android/server/display/MagnifierDisplayPolicy;
 
@@ -918,7 +894,6 @@
 
 .method public updateMagnificationSpec(Landroid/view/MagnificationSpec;)V
     .locals 3
-    .param p1    # Landroid/view/MagnificationSpec;
 
     const/high16 v2, 0x40e00000
 

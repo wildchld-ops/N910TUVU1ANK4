@@ -29,10 +29,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/content/ContentResolver;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Landroid/content/ContentResolver;
 
     const/4 v0, 0x0
 
@@ -63,7 +59,6 @@
 
 .method static synthetic access$000(Lcom/android/server/CertBlacklister$BlacklistObserver;)Ljava/io/File;
     .locals 1
-    .param p0    # Lcom/android/server/CertBlacklister$BlacklistObserver;
 
     iget-object v0, p0, Lcom/android/server/CertBlacklister$BlacklistObserver;->mTmpDir:Ljava/io/File;
 
@@ -72,7 +67,6 @@
 
 .method static synthetic access$100(Lcom/android/server/CertBlacklister$BlacklistObserver;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/server/CertBlacklister$BlacklistObserver;
 
     iget-object v0, p0, Lcom/android/server/CertBlacklister$BlacklistObserver;->mPath:Ljava/lang/String;
 
@@ -111,7 +105,6 @@
 
 .method public onChange(Z)V
     .locals 0
-    .param p1    # Z
 
     invoke-super {p0, p1}, Landroid/database/ContentObserver;->onChange(Z)V
 

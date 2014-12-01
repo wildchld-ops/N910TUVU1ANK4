@@ -32,7 +32,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/Class;Ljava/lang/String;)V
     .locals 0
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -54,7 +53,6 @@
 
 .method public static of(Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/String;)Landroid/util/Property;
     .locals 1
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",

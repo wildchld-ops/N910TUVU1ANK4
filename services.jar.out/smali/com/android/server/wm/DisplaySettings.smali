@@ -36,7 +36,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -75,8 +74,6 @@
 
 .method private getIntAttribute(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)I
     .locals 4
-    .param p1    # Lorg/xmlpull/v1/XmlPullParser;
-    .param p2    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -107,7 +104,6 @@
 
 .method private readDisplay(Lorg/xmlpull/v1/XmlPullParser;)V
     .locals 4
-    .param p1    # Lorg/xmlpull/v1/XmlPullParser;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/NumberFormatException;,
@@ -176,8 +172,6 @@
 # virtual methods
 .method public getOverscanLocked(Ljava/lang/String;Landroid/graphics/Rect;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/graphics/Rect;
 
     const/4 v2, 0x0
 
@@ -706,11 +700,6 @@
 
 .method public setOverscanLocked(Ljava/lang/String;IIII)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     if-nez p2, :cond_0
 

@@ -201,7 +201,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 3
-    .param p1    # Landroid/view/View;
 
     const/4 v2, 0x0
 
@@ -282,7 +281,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 25
-    .param p1    # Landroid/os/Bundle;
 
     const/16 v21, 0x1
 

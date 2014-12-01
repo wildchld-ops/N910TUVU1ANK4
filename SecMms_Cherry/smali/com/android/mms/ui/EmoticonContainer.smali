@@ -229,7 +229,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -336,8 +335,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Lcom/android/mms/ui/ComposeMessageFragment;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     const/4 v1, 0x0
 
@@ -454,7 +451,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/ui/EmoticonContainer;)Landroid/content/AsyncQueryHandler;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/EmoticonContainer;
 
     iget-object v0, p0, Lcom/android/mms/ui/EmoticonContainer;->mAsyncQueryHandler:Landroid/content/AsyncQueryHandler;
 
@@ -463,7 +459,6 @@
 
 .method static synthetic access$1100(Lcom/android/mms/ui/EmoticonContainer;)Landroid/widget/EditText;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/EmoticonContainer;
 
     iget-object v0, p0, Lcom/android/mms/ui/EmoticonContainer;->mFocusedEdit:Landroid/widget/EditText;
 
@@ -472,8 +467,6 @@
 
 .method static synthetic access$1102(Lcom/android/mms/ui/EmoticonContainer;Landroid/widget/EditText;)Landroid/widget/EditText;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/EmoticonContainer;
-    .param p1    # Landroid/widget/EditText;
 
     iput-object p1, p0, Lcom/android/mms/ui/EmoticonContainer;->mFocusedEdit:Landroid/widget/EditText;
 
@@ -482,7 +475,6 @@
 
 .method static synthetic access$1200(Lcom/android/mms/ui/EmoticonContainer;)Lcom/android/mms/ui/ComposeMessageFragment;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/EmoticonContainer;
 
     iget-object v0, p0, Lcom/android/mms/ui/EmoticonContainer;->mComposer:Lcom/android/mms/ui/ComposeMessageFragment;
 
@@ -491,7 +483,6 @@
 
 .method static synthetic access$1300(Lcom/android/mms/ui/EmoticonContainer;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/EmoticonContainer;
 
     iget-object v0, p0, Lcom/android/mms/ui/EmoticonContainer;->mDeleteHandler:Landroid/os/Handler;
 
@@ -500,8 +491,6 @@
 
 .method static synthetic access$1302(Lcom/android/mms/ui/EmoticonContainer;Landroid/os/Handler;)Landroid/os/Handler;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/EmoticonContainer;
-    .param p1    # Landroid/os/Handler;
 
     iput-object p1, p0, Lcom/android/mms/ui/EmoticonContainer;->mDeleteHandler:Landroid/os/Handler;
 
@@ -510,7 +499,6 @@
 
 .method static synthetic access$1400(Lcom/android/mms/ui/EmoticonContainer;)Ljava/lang/Runnable;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/EmoticonContainer;
 
     iget-object v0, p0, Lcom/android/mms/ui/EmoticonContainer;->mDeleteRunnable:Ljava/lang/Runnable;
 
@@ -519,8 +507,6 @@
 
 .method static synthetic access$1402(Lcom/android/mms/ui/EmoticonContainer;Ljava/lang/Runnable;)Ljava/lang/Runnable;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/EmoticonContainer;
-    .param p1    # Ljava/lang/Runnable;
 
     iput-object p1, p0, Lcom/android/mms/ui/EmoticonContainer;->mDeleteRunnable:Ljava/lang/Runnable;
 
@@ -529,7 +515,6 @@
 
 .method static synthetic access$1500(Lcom/android/mms/ui/EmoticonContainer;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/EmoticonContainer;
 
     iget-boolean v0, p0, Lcom/android/mms/ui/EmoticonContainer;->mStartMethod:Z
 
@@ -538,8 +523,6 @@
 
 .method static synthetic access$1502(Lcom/android/mms/ui/EmoticonContainer;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/ui/EmoticonContainer;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/EmoticonContainer;->mStartMethod:Z
 
@@ -548,7 +531,6 @@
 
 .method static synthetic access$1600(Lcom/android/mms/ui/EmoticonContainer;)Landroid/widget/AdapterView$OnItemClickListener;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/EmoticonContainer;
 
     iget-object v0, p0, Lcom/android/mms/ui/EmoticonContainer;->mOnEmoticonSelectedListener:Landroid/widget/AdapterView$OnItemClickListener;
 
@@ -557,7 +539,6 @@
 
 .method static synthetic access$1700(Lcom/android/mms/ui/EmoticonContainer;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/EmoticonContainer;
 
     iget-object v0, p0, Lcom/android/mms/ui/EmoticonContainer;->mStickerInfoList:Ljava/util/ArrayList;
 
@@ -566,7 +547,6 @@
 
 .method static synthetic access$2100(Lcom/android/mms/ui/EmoticonContainer;)Ljava/util/Map;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/EmoticonContainer;
 
     iget-object v0, p0, Lcom/android/mms/ui/EmoticonContainer;->mPagerViewMap:Ljava/util/Map;
 
@@ -575,8 +555,6 @@
 
 .method static synthetic access$2200(Lcom/android/mms/ui/EmoticonContainer;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/EmoticonContainer;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/EmoticonContainer;->requestDownload(Ljava/lang/String;)V
 
@@ -585,8 +563,6 @@
 
 .method static synthetic access$2300(Lcom/android/mms/ui/EmoticonContainer;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/EmoticonContainer;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/EmoticonContainer;->requestCancelDownload(Ljava/lang/String;)V
 
@@ -595,8 +571,6 @@
 
 .method static synthetic access$2500(Lcom/android/mms/ui/EmoticonContainer;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/EmoticonContainer;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/EmoticonContainer;->changePanel(Ljava/lang/String;)V
 
@@ -605,10 +579,6 @@
 
 .method static synthetic access$300(Lcom/android/mms/ui/EmoticonContainer;ILjava/lang/Object;Landroid/database/Cursor;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/EmoticonContainer;
-    .param p1    # I
-    .param p2    # Ljava/lang/Object;
-    .param p3    # Landroid/database/Cursor;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/mms/ui/EmoticonContainer;->onQueryCompleted(ILjava/lang/Object;Landroid/database/Cursor;)V
 
@@ -617,7 +587,6 @@
 
 .method static synthetic access$3100(Lcom/android/mms/ui/EmoticonContainer;)Ljava/util/Map;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/EmoticonContainer;
 
     iget-object v0, p0, Lcom/android/mms/ui/EmoticonContainer;->mStickerInfoMap:Ljava/util/Map;
 
@@ -626,7 +595,6 @@
 
 .method static synthetic access$3200(Lcom/android/mms/ui/EmoticonContainer;)Ljava/util/Map;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/EmoticonContainer;
 
     iget-object v0, p0, Lcom/android/mms/ui/EmoticonContainer;->mPanelImageMapDialog:Ljava/util/Map;
 
@@ -635,7 +603,6 @@
 
 .method static synthetic access$3300(Lcom/android/mms/ui/EmoticonContainer;)Ljava/util/Map;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/EmoticonContainer;
 
     iget-object v0, p0, Lcom/android/mms/ui/EmoticonContainer;->mPanelImageMap:Ljava/util/Map;
 
@@ -644,7 +611,6 @@
 
 .method static synthetic access$3400(Lcom/android/mms/ui/EmoticonContainer;)Lcom/android/mms/ui/EmoticonContainer$StickerPagersAdapter;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/EmoticonContainer;
 
     iget-object v0, p0, Lcom/android/mms/ui/EmoticonContainer;->mStickerPagersAdapter:Lcom/android/mms/ui/EmoticonContainer$StickerPagersAdapter;
 
@@ -653,7 +619,6 @@
 
 .method static synthetic access$3500(Lcom/android/mms/ui/EmoticonContainer;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/EmoticonContainer;
 
     iget-object v0, p0, Lcom/android/mms/ui/EmoticonContainer;->mCurrentStickerId:Ljava/lang/String;
 
@@ -662,7 +627,6 @@
 
 .method static synthetic access$3600(Lcom/android/mms/ui/EmoticonContainer;)Landroid/support/v4/view/ViewPager;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/EmoticonContainer;
 
     iget-object v0, p0, Lcom/android/mms/ui/EmoticonContainer;->mStickersViewPager:Landroid/support/v4/view/ViewPager;
 
@@ -671,9 +635,6 @@
 
 .method static synthetic access$3700(Lcom/android/mms/ui/EmoticonContainer;Ljava/lang/String;Z)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/EmoticonContainer;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/mms/ui/EmoticonContainer;->setDownloadVisibility(Ljava/lang/String;Z)V
 
@@ -682,7 +643,6 @@
 
 .method static synthetic access$3800(Lcom/android/mms/ui/EmoticonContainer;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/EmoticonContainer;
 
     iget-object v0, p0, Lcom/android/mms/ui/EmoticonContainer;->mEmoticonsNoRecent:Landroid/widget/TextView;
 
@@ -691,7 +651,6 @@
 
 .method static synthetic access$3900(Lcom/android/mms/ui/EmoticonContainer;)Landroid/view/View$OnClickListener;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/EmoticonContainer;
 
     iget-object v0, p0, Lcom/android/mms/ui/EmoticonContainer;->onCancelButtonClick:Landroid/view/View$OnClickListener;
 
@@ -700,7 +659,6 @@
 
 .method static synthetic access$4000(Lcom/android/mms/ui/EmoticonContainer;)Landroid/view/View$OnClickListener;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/EmoticonContainer;
 
     iget-object v0, p0, Lcom/android/mms/ui/EmoticonContainer;->onDownloadButtonClick:Landroid/view/View$OnClickListener;
 
@@ -709,7 +667,6 @@
 
 .method static synthetic access$4100(Lcom/android/mms/ui/EmoticonContainer;)Lcom/android/mms/data/Conversation;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/EmoticonContainer;
 
     iget-object v0, p0, Lcom/android/mms/ui/EmoticonContainer;->mConversation:Lcom/android/mms/data/Conversation;
 
@@ -718,8 +675,6 @@
 
 .method static synthetic access$4102(Lcom/android/mms/ui/EmoticonContainer;Lcom/android/mms/data/Conversation;)Lcom/android/mms/data/Conversation;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/EmoticonContainer;
-    .param p1    # Lcom/android/mms/data/Conversation;
 
     iput-object p1, p0, Lcom/android/mms/ui/EmoticonContainer;->mConversation:Lcom/android/mms/data/Conversation;
 
@@ -728,7 +683,6 @@
 
 .method static synthetic access$4200(Lcom/android/mms/ui/EmoticonContainer;)Lcom/android/mms/data/WorkingMessage;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/EmoticonContainer;
 
     iget-object v0, p0, Lcom/android/mms/ui/EmoticonContainer;->mWorkingMessage:Lcom/android/mms/data/WorkingMessage;
 
@@ -737,8 +691,6 @@
 
 .method static synthetic access$4202(Lcom/android/mms/ui/EmoticonContainer;Lcom/android/mms/data/WorkingMessage;)Lcom/android/mms/data/WorkingMessage;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/EmoticonContainer;
-    .param p1    # Lcom/android/mms/data/WorkingMessage;
 
     iput-object p1, p0, Lcom/android/mms/ui/EmoticonContainer;->mWorkingMessage:Lcom/android/mms/data/WorkingMessage;
 
@@ -747,7 +699,6 @@
 
 .method static synthetic access$4300(Lcom/android/mms/ui/EmoticonContainer;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/EmoticonContainer;
 
     iget-boolean v0, p0, Lcom/android/mms/ui/EmoticonContainer;->mEnaleShopAgent:Z
 
@@ -756,7 +707,6 @@
 
 .method static synthetic access$700(Lcom/android/mms/ui/EmoticonContainer;)Landroid/widget/ImageView;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/EmoticonContainer;
 
     iget-object v0, p0, Lcom/android/mms/ui/EmoticonContainer;->mDeleteTab:Landroid/widget/ImageView;
 
@@ -765,8 +715,6 @@
 
 .method static synthetic access$702(Lcom/android/mms/ui/EmoticonContainer;Landroid/widget/ImageView;)Landroid/widget/ImageView;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/EmoticonContainer;
-    .param p1    # Landroid/widget/ImageView;
 
     iput-object p1, p0, Lcom/android/mms/ui/EmoticonContainer;->mDeleteTab:Landroid/widget/ImageView;
 
@@ -775,7 +723,6 @@
 
 .method static synthetic access$800(Lcom/android/mms/ui/EmoticonContainer;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/EmoticonContainer;
 
     iget-object v0, p0, Lcom/android/mms/ui/EmoticonContainer;->mContext:Landroid/content/Context;
 
@@ -784,7 +731,6 @@
 
 .method static synthetic access$900(Lcom/android/mms/ui/EmoticonContainer;)Landroid/support/v4/view/ViewPager;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/EmoticonContainer;
 
     iget-object v0, p0, Lcom/android/mms/ui/EmoticonContainer;->mEmoticonsPager:Landroid/support/v4/view/ViewPager;
 
@@ -793,7 +739,6 @@
 
 .method private changePanel(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -958,8 +903,6 @@
 
 .method private createPanelImage(Ljava/lang/String;J)Landroid/widget/ImageView;
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
 
     iget-object v4, p0, Lcom/android/mms/ui/EmoticonContainer;->mContext:Landroid/content/Context;
 
@@ -1049,8 +992,6 @@
 
 .method private createPanelImageDialog(Ljava/lang/String;J)Landroid/widget/ImageView;
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
 
     iget-object v4, p0, Lcom/android/mms/ui/EmoticonContainer;->mContext:Landroid/content/Context;
 
@@ -1140,9 +1081,6 @@
 
 .method private onQueryCompleted(ILjava/lang/Object;Landroid/database/Cursor;)V
     .locals 22
-    .param p1    # I
-    .param p2    # Ljava/lang/Object;
-    .param p3    # Landroid/database/Cursor;
 
     move-object/from16 v0, p0
 
@@ -1635,7 +1573,6 @@
 
 .method private requestCancelDownload(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
@@ -1654,7 +1591,6 @@
 
 .method private requestDownload(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x1
 
@@ -1694,8 +1630,6 @@
 
 .method private setDownloadVisibility(Ljava/lang/String;Z)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const/16 v2, 0x8
 
@@ -1846,8 +1780,6 @@
 # virtual methods
 .method public asyncSendSticker(Lcom/android/mms/data/Conversation;Landroid/view/View;)V
     .locals 3
-    .param p1    # Lcom/android/mms/data/Conversation;
-    .param p2    # Landroid/view/View;
 
     new-instance v0, Ljava/lang/Thread;
 
@@ -1957,8 +1889,6 @@
 
 .method public inflateDownloadView(Ljava/lang/String;Z)Landroid/view/View;
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     iget-object v4, p0, Lcom/android/mms/ui/EmoticonContainer;->mContext:Landroid/content/Context;
 
@@ -2005,8 +1935,6 @@
 
 .method public inflateGridView(Ljava/lang/String;Z)Landroid/view/View;
     .locals 13
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const/4 v1, 0x1
 
@@ -2704,7 +2632,6 @@
 
 .method protected insertSticker(Landroid/view/View;)V
     .locals 29
-    .param p1    # Landroid/view/View;
 
     invoke-virtual/range {p1 .. p1}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
@@ -3330,7 +3257,6 @@
 
 .method public setToggleTab(Z)V
     .locals 4
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/mms/ui/EmoticonContainer;->mContainerView:Landroid/widget/FrameLayout;
 

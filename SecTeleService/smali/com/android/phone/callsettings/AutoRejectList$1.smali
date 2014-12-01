@@ -48,7 +48,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Landroid/widget/BaseAdapter;->notifyDataSetChanged()V
+    invoke-virtual {v0}, Lcom/android/phone/callsettings/AutoRejectList$AutoRejectAdapter;->notifyDataSetChanged()V
 
     iget-object v0, p0, Lcom/android/phone/callsettings/AutoRejectList$1;->this$0:Lcom/android/phone/callsettings/AutoRejectList;
 

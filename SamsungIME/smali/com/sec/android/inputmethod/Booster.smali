@@ -72,7 +72,6 @@
 
 .method static synthetic access$000(Lcom/sec/android/inputmethod/Booster;)Landroid/os/DVFSHelper;
     .locals 1
-    .param p0    # Lcom/sec/android/inputmethod/Booster;
 
     iget-object v0, p0, Lcom/sec/android/inputmethod/Booster;->mCPUBooster:Landroid/os/DVFSHelper;
 
@@ -81,8 +80,6 @@
 
 .method static synthetic access$002(Lcom/sec/android/inputmethod/Booster;Landroid/os/DVFSHelper;)Landroid/os/DVFSHelper;
     .locals 0
-    .param p0    # Lcom/sec/android/inputmethod/Booster;
-    .param p1    # Landroid/os/DVFSHelper;
 
     iput-object p1, p0, Lcom/sec/android/inputmethod/Booster;->mCPUBooster:Landroid/os/DVFSHelper;
 
@@ -91,7 +88,6 @@
 
 .method static synthetic access$100(Lcom/sec/android/inputmethod/Booster;)Landroid/os/DVFSHelper;
     .locals 1
-    .param p0    # Lcom/sec/android/inputmethod/Booster;
 
     iget-object v0, p0, Lcom/sec/android/inputmethod/Booster;->mCPUMaxBooster:Landroid/os/DVFSHelper;
 
@@ -100,8 +96,6 @@
 
 .method static synthetic access$102(Lcom/sec/android/inputmethod/Booster;Landroid/os/DVFSHelper;)Landroid/os/DVFSHelper;
     .locals 0
-    .param p0    # Lcom/sec/android/inputmethod/Booster;
-    .param p1    # Landroid/os/DVFSHelper;
 
     iput-object p1, p0, Lcom/sec/android/inputmethod/Booster;->mCPUMaxBooster:Landroid/os/DVFSHelper;
 
@@ -110,8 +104,6 @@
 
 .method private doBoost(IZ)V
     .locals 9
-    .param p1    # I
-    .param p2    # Z
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
@@ -269,7 +261,6 @@
 
 .method public static getInstance(Landroid/content/Context;)Lcom/sec/android/inputmethod/Booster;
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     sget-object v0, Lcom/sec/android/inputmethod/Booster;->sInstance:Lcom/sec/android/inputmethod/Booster;
 
@@ -293,7 +284,6 @@
 # virtual methods
 .method public doBoost(I)V
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 

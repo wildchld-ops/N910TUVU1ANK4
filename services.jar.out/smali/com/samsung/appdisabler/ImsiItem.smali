@@ -125,8 +125,6 @@
 
 .method private checkStringToBoolean(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v1, 0x1
 
@@ -188,8 +186,6 @@
 
 .method private isElementEmpty(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -265,8 +261,6 @@
 
 .method private normalizeEnd(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -334,8 +328,6 @@
 
 .method private normalizeStart(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -403,7 +395,6 @@
 
 .method private stringToLong(Ljava/lang/String;)J
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const-wide/16 v1, -0x1
 
@@ -451,7 +442,6 @@
 # virtual methods
 .method public appendErrorMsg(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/samsung/appdisabler/ImsiItem;->errorStringBuilder:Ljava/lang/StringBuilder;
 
@@ -577,7 +567,6 @@
 
 .method public looseCompare(Ljava/lang/String;)Z
     .locals 17
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -851,7 +840,6 @@
 
 .method public setAddShortcutToScreen(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "add_shortcut_to_homescreen"
 
@@ -885,7 +873,6 @@
 
 .method public setForceApplicationTurnOff(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "force_application_turn_off"
 
@@ -919,7 +906,6 @@
 
 .method public setHideAfterTimeout(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "hide_after_timeout"
 
@@ -953,7 +939,6 @@
 
 .method public setImsiNumericBase(Lcom/samsung/appdisabler/ImsiNumeric;)V
     .locals 2
-    .param p1    # Lcom/samsung/appdisabler/ImsiNumeric;
 
     iget-object v0, p0, Lcom/samsung/appdisabler/ImsiItem;->simNumeric:Ljava/util/List;
 
@@ -986,7 +971,6 @@
 
 .method public setNetworkNumeric(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "network_numeric"
 
@@ -1009,7 +993,6 @@
 
 .method public setPackageToHide(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "package_to_hide"
 
@@ -1032,7 +1015,6 @@
 
 .method public setSimNumeric(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const-string/jumbo v0, "sim_numeric"
 
@@ -1076,7 +1058,6 @@
 
 .method public setSimSpn(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string/jumbo v0, "sim_spn"
 

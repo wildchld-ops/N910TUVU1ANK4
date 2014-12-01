@@ -38,7 +38,6 @@
 # virtual methods
 .method public Copy(Lcom/voovio/sweep/Transform;)V
     .locals 5
-    .param p1    # Lcom/voovio/sweep/Transform;
 
     const/4 v4, 0x2
 
@@ -87,7 +86,6 @@
 
 .method public CopyTo(Lcom/voovio/sweep/Transform;)V
     .locals 5
-    .param p1    # Lcom/voovio/sweep/Transform;
 
     const/4 v4, 0x2
 
@@ -136,7 +134,6 @@
 
 .method public GlobalToLocal(Lcom/voovio/sweep/Transform;)V
     .locals 3
-    .param p1    # Lcom/voovio/sweep/Transform;
 
     invoke-static {}, Lcom/voovio/voo3d/data/Matrix4Pool;->getMatrix4()Lcom/voovio/voo3d/data/Matrix4;
 
@@ -237,9 +234,6 @@
 
 .method public Rotate(FFF)V
     .locals 3
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
 
     invoke-static {}, Lcom/voovio/voo3d/data/Matrix4Pool;->getMatrix4()Lcom/voovio/voo3d/data/Matrix4;
 
@@ -280,7 +274,6 @@
 
 .method public Rotate(Lcom/voovio/voo3d/data/Vector3;)V
     .locals 3
-    .param p1    # Lcom/voovio/voo3d/data/Vector3;
 
     iget v0, p1, Lcom/voovio/voo3d/data/Vector3;->x:F
 
@@ -295,7 +288,6 @@
 
 .method public TransformWith(Lcom/voovio/sweep/Transform;)V
     .locals 4
-    .param p1    # Lcom/voovio/sweep/Transform;
 
     iget-object v0, p0, Lcom/voovio/sweep/Transform;->m_oM:Lcom/voovio/voo3d/data/Matrix4;
 
@@ -362,9 +354,6 @@
 
 .method public Translate(FFF)V
     .locals 1
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
 
     iget-object v0, p0, Lcom/voovio/sweep/Transform;->m_oM:Lcom/voovio/voo3d/data/Matrix4;
 
@@ -383,7 +372,6 @@
 
 .method public Translate(Lcom/voovio/voo3d/data/Vector3;)V
     .locals 3
-    .param p1    # Lcom/voovio/voo3d/data/Vector3;
 
     iget v0, p1, Lcom/voovio/voo3d/data/Vector3;->x:F
 

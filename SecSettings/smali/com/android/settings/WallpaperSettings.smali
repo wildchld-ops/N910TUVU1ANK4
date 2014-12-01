@@ -43,7 +43,6 @@
 
 .method private getResolveInfo(Ljava/lang/String;)Landroid/content/pm/ResolveInfo;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v2, p0, Lcom/android/settings/WallpaperSettings;->mAppList:Ljava/util/List;
 
@@ -91,7 +90,6 @@
 # virtual methods
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -275,8 +273,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 1
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     invoke-static {}, Lcom/android/settings/Utils;->isSupportMenuTreeForK()Z
 

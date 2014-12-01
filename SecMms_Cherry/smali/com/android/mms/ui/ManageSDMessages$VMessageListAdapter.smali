@@ -46,8 +46,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/mms/ui/ManageSDMessages;Landroid/content/Context;ILjava/util/ArrayList;)V
     .locals 1
-    .param p2    # Landroid/content/Context;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -108,7 +106,6 @@
 
 .method public bridge synthetic getItem(I)Ljava/lang/Object;
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/mms/ui/ManageSDMessages$VMessageListAdapter;->getItem(I)Ljava/lang/String;
 
@@ -119,7 +116,6 @@
 
 .method public getItem(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/mms/ui/ManageSDMessages$VMessageListAdapter;->arMsg:Ljava/util/ArrayList;
 
@@ -136,7 +132,6 @@
 
 .method public getItemId(I)J
     .locals 2
-    .param p1    # I
 
     int-to-long v0, p1
 
@@ -145,9 +140,6 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 22
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     const/16 v17, 0x0
 
@@ -625,7 +617,6 @@
 
 .method public setMessageListMode(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-boolean v0, p0, Lcom/android/mms/ui/ManageSDMessages$VMessageListAdapter;->mIsMsgMultiMode:Z
 

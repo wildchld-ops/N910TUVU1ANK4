@@ -21,7 +21,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/statusbar/ServiceMonitor;Landroid/os/Handler;)V
     .locals 0
-    .param p2    # Landroid/os/Handler;
 
     iput-object p1, p0, Lcom/android/systemui/statusbar/ServiceMonitor$2;->this$0:Lcom/android/systemui/statusbar/ServiceMonitor;
 
@@ -34,7 +33,6 @@
 # virtual methods
 .method public onChange(Z)V
     .locals 1
-    .param p1    # Z
 
     const/4 v0, 0x0
 
@@ -45,8 +43,6 @@
 
 .method public onChange(ZLandroid/net/Uri;)V
     .locals 5
-    .param p1    # Z
-    .param p2    # Landroid/net/Uri;
 
     iget-object v1, p0, Lcom/android/systemui/statusbar/ServiceMonitor$2;->this$0:Lcom/android/systemui/statusbar/ServiceMonitor;
 

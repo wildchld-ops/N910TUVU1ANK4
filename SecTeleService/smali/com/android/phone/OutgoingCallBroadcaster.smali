@@ -941,7 +941,7 @@
 
     const/4 v0, 0x1
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->showDialog(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/OutgoingCallBroadcaster;->showDialog(I)V
 
     return-void
 .end method
@@ -1527,7 +1527,7 @@
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v3}, Landroid/app/Activity;->showDialog(I)V
+    invoke-virtual {v0, v3}, Lcom/android/phone/OutgoingCallBroadcaster;->showDialog(I)V
 
     :goto_0
     return-void
@@ -1537,7 +1537,7 @@
 
     move-result-object v20
 
-    invoke-virtual/range {p0 .. p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual/range {p0 .. p0}, Lcom/android/phone/OutgoingCallBroadcaster;->getResources()Landroid/content/res/Resources;
 
     move-result-object v3
 
@@ -1732,7 +1732,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v4}, Landroid/telephony/TelephonyManager;->getVoiceMailNumber()Ljava/lang/String;
+    invoke-virtual {v4}, Landroid/telephony/MultiSimTelephonyManager;->getVoiceMailNumber()Ljava/lang/String;
 
     move-object/from16 v0, v20
 
@@ -1825,7 +1825,7 @@
 
     move-result-object v5
 
-    invoke-virtual {v5}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v5}, Lcom/android/phone/PhoneGlobals;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v5
 
@@ -2221,7 +2221,7 @@
 
     move-result-object v5
 
-    invoke-virtual {v5}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v5}, Lcom/android/phone/PhoneGlobals;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v5
 
@@ -2420,7 +2420,7 @@
 
     invoke-static {v3, v4}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-virtual/range {p0 .. p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual/range {p0 .. p0}, Lcom/android/phone/OutgoingCallBroadcaster;->finish()V
 
     goto/16 :goto_0
 
@@ -2513,7 +2513,7 @@
     const/4 v6, 0x1
 
     :cond_15
-    invoke-virtual/range {p0 .. p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual/range {p0 .. p0}, Lcom/android/phone/OutgoingCallBroadcaster;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v12
 
@@ -2535,7 +2535,7 @@
 
     if-eqz v6, :cond_19
 
-    invoke-virtual/range {p0 .. p0}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual/range {p0 .. p0}, Lcom/android/phone/OutgoingCallBroadcaster;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v6
 
@@ -2800,12 +2800,12 @@
 
     invoke-virtual {v3}, Landroid/widget/Toast;->show()V
 
-    invoke-virtual/range {p0 .. p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual/range {p0 .. p0}, Lcom/android/phone/OutgoingCallBroadcaster;->finish()V
 
     goto/16 :goto_0
 
     :cond_19
-    invoke-virtual/range {p0 .. p0}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual/range {p0 .. p0}, Lcom/android/phone/OutgoingCallBroadcaster;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v6
 
@@ -2855,7 +2855,7 @@
 
     if-nez v6, :cond_1e
 
-    invoke-virtual/range {p0 .. p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual/range {p0 .. p0}, Lcom/android/phone/OutgoingCallBroadcaster;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v6
 
@@ -2867,7 +2867,7 @@
 
     move-result v6
 
-    invoke-virtual/range {p0 .. p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual/range {p0 .. p0}, Lcom/android/phone/OutgoingCallBroadcaster;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v7
 
@@ -3222,7 +3222,7 @@
 
     invoke-static {v3, v4}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-virtual/range {p0 .. p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual/range {p0 .. p0}, Lcom/android/phone/OutgoingCallBroadcaster;->finish()V
 
     goto/16 :goto_0
 
@@ -3524,7 +3524,7 @@
 
     invoke-virtual {v3}, Landroid/widget/Toast;->show()V
 
-    invoke-virtual/range {p0 .. p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual/range {p0 .. p0}, Lcom/android/phone/OutgoingCallBroadcaster;->finish()V
 
     goto/16 :goto_0
 
@@ -3543,7 +3543,7 @@
 
     invoke-virtual {v3}, Landroid/widget/Toast;->show()V
 
-    invoke-virtual/range {p0 .. p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual/range {p0 .. p0}, Lcom/android/phone/OutgoingCallBroadcaster;->finish()V
 
     goto/16 :goto_0
 
@@ -3721,7 +3721,7 @@
 
     const/4 v3, 0x7
 
-    invoke-virtual/range {p0 .. p0}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual/range {p0 .. p0}, Lcom/android/phone/OutgoingCallBroadcaster;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v12
 
@@ -4184,7 +4184,7 @@
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v3}, Landroid/app/Activity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v0, v3}, Lcom/android/phone/OutgoingCallBroadcaster;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v3
 
@@ -4220,7 +4220,7 @@
 
     if-nez v3, :cond_46
 
-    invoke-virtual/range {p0 .. p0}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual/range {p0 .. p0}, Lcom/android/phone/OutgoingCallBroadcaster;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v3
 
@@ -4234,7 +4234,7 @@
 
     invoke-virtual {v3}, Landroid/widget/Toast;->show()V
 
-    invoke-virtual/range {p0 .. p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual/range {p0 .. p0}, Lcom/android/phone/OutgoingCallBroadcaster;->finish()V
 
     const-string v3, "OutgoingCallBroadcaster"
 
@@ -4541,7 +4541,7 @@
 
     invoke-virtual {v3}, Landroid/widget/Toast;->show()V
 
-    invoke-virtual/range {p0 .. p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual/range {p0 .. p0}, Lcom/android/phone/OutgoingCallBroadcaster;->finish()V
 
     goto/16 :goto_0
 
@@ -4584,7 +4584,7 @@
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v3}, Landroid/app/Activity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v0, v3}, Lcom/android/phone/OutgoingCallBroadcaster;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v3
 
@@ -4595,7 +4595,7 @@
 
     move-result-object v6
 
-    invoke-virtual/range {p0 .. p0}, Landroid/app/Activity;->getActivityToken()Landroid/os/IBinder;
+    invoke-virtual/range {p0 .. p0}, Lcom/android/phone/OutgoingCallBroadcaster;->getActivityToken()Landroid/os/IBinder;
 
     move-result-object v16
 
@@ -4609,7 +4609,7 @@
 
     move-result-object v6
 
-    invoke-virtual/range {p0 .. p0}, Landroid/app/Activity;->getActivityToken()Landroid/os/IBinder;
+    invoke-virtual/range {p0 .. p0}, Lcom/android/phone/OutgoingCallBroadcaster;->getActivityToken()Landroid/os/IBinder;
 
     move-result-object v18
 
@@ -4668,7 +4668,7 @@
 
     invoke-static {v3, v4}, Lcom/android/phone/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-virtual/range {p0 .. p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual/range {p0 .. p0}, Lcom/android/phone/OutgoingCallBroadcaster;->finish()V
 
     goto/16 :goto_0
 
@@ -5270,7 +5270,7 @@
 
     invoke-direct {v4}, Landroid/content/Intent;-><init>()V
 
-    invoke-virtual/range {p0 .. p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual/range {p0 .. p0}, Lcom/android/phone/OutgoingCallBroadcaster;->getResources()Landroid/content/res/Resources;
 
     move-result-object v5
 
@@ -5339,9 +5339,9 @@
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v4}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {v0, v4}, Lcom/android/phone/OutgoingCallBroadcaster;->startActivity(Landroid/content/Intent;)V
 
-    invoke-virtual/range {p0 .. p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual/range {p0 .. p0}, Lcom/android/phone/OutgoingCallBroadcaster;->finish()V
 
     goto/16 :goto_0
 
@@ -5494,7 +5494,7 @@
 
     invoke-virtual {v3}, Landroid/widget/Toast;->show()V
 
-    invoke-virtual/range {p0 .. p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual/range {p0 .. p0}, Lcom/android/phone/OutgoingCallBroadcaster;->finish()V
 
     goto/16 :goto_0
 
@@ -5718,7 +5718,7 @@
 
     invoke-static {v0, v3, v7, v4, v5}, Lcom/android/phone/PhoneUtils;->placeCall(Landroid/content/Context;Lcom/android/internal/telephony/Phone;Ljava/lang/String;Landroid/net/Uri;Z)I
 
-    invoke-virtual/range {p0 .. p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual/range {p0 .. p0}, Lcom/android/phone/OutgoingCallBroadcaster;->finish()V
 
     goto/16 :goto_0
 
@@ -5850,7 +5850,7 @@
 
     invoke-static {v3}, Lcom/android/phone/PhoneUtilsExt;->setEmptyFlash(Z)V
 
-    invoke-virtual/range {p0 .. p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual/range {p0 .. p0}, Lcom/android/phone/OutgoingCallBroadcaster;->finish()V
 
     goto/16 :goto_0
 
@@ -5913,7 +5913,7 @@
 
     invoke-static {v3, v4}, Lcom/android/phone/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-virtual/range {p0 .. p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual/range {p0 .. p0}, Lcom/android/phone/OutgoingCallBroadcaster;->finish()V
 
     goto/16 :goto_0
 
@@ -6043,7 +6043,7 @@
 
     invoke-static {v0, v3, v7, v4, v5}, Lcom/android/phone/PhoneUtils;->placeCall(Landroid/content/Context;Lcom/android/internal/telephony/Phone;Ljava/lang/String;Landroid/net/Uri;Z)I
 
-    invoke-virtual/range {p0 .. p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual/range {p0 .. p0}, Lcom/android/phone/OutgoingCallBroadcaster;->finish()V
 
     goto/16 :goto_0
 
@@ -6078,7 +6078,7 @@
 
     invoke-static {v3, v4}, Lcom/android/phone/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-virtual/range {p0 .. p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual/range {p0 .. p0}, Lcom/android/phone/OutgoingCallBroadcaster;->finish()V
 
     goto/16 :goto_0
 
@@ -6131,7 +6131,7 @@
 
     invoke-static {v3, v4}, Lcom/android/phone/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-virtual/range {p0 .. p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual/range {p0 .. p0}, Lcom/android/phone/OutgoingCallBroadcaster;->finish()V
 
     goto/16 :goto_0
 
@@ -6168,7 +6168,7 @@
 
     invoke-virtual {v3}, Landroid/widget/Toast;->show()V
 
-    invoke-virtual/range {p0 .. p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual/range {p0 .. p0}, Lcom/android/phone/OutgoingCallBroadcaster;->finish()V
 
     goto/16 :goto_0
 
@@ -6214,7 +6214,7 @@
 
     invoke-static {v3, v4}, Lcom/android/phone/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-virtual/range {p0 .. p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual/range {p0 .. p0}, Lcom/android/phone/OutgoingCallBroadcaster;->finish()V
 
     goto/16 :goto_0
 
@@ -6247,7 +6247,7 @@
 
     invoke-virtual {v3}, Landroid/widget/Toast;->show()V
 
-    invoke-virtual/range {p0 .. p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual/range {p0 .. p0}, Lcom/android/phone/OutgoingCallBroadcaster;->finish()V
 
     goto/16 :goto_0
 
@@ -6390,7 +6390,7 @@
 
     invoke-static {v3}, Lcom/android/phone/PhoneUtils;->sendEmptyFlash(Lcom/android/internal/telephony/Phone;)V
 
-    invoke-virtual/range {p0 .. p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual/range {p0 .. p0}, Lcom/android/phone/OutgoingCallBroadcaster;->finish()V
 
     goto/16 :goto_0
 
@@ -6470,7 +6470,7 @@
 
     if-eqz v3, :cond_76
 
-    invoke-virtual/range {p0 .. p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual/range {p0 .. p0}, Lcom/android/phone/OutgoingCallBroadcaster;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v3
 
@@ -6522,7 +6522,7 @@
 
     if-ne v3, v6, :cond_76
 
-    invoke-virtual/range {p0 .. p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual/range {p0 .. p0}, Lcom/android/phone/OutgoingCallBroadcaster;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v3
 
@@ -6536,7 +6536,7 @@
 
     const/4 v3, 0x7
 
-    invoke-virtual/range {p0 .. p0}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual/range {p0 .. p0}, Lcom/android/phone/OutgoingCallBroadcaster;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v6
 
@@ -6672,7 +6672,7 @@
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v3}, Landroid/app/Activity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v0, v3}, Lcom/android/phone/OutgoingCallBroadcaster;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v3
 
@@ -6747,7 +6747,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v3}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v3}, Lcom/android/phone/PhoneGlobals;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v3
 
@@ -6909,7 +6909,7 @@
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v3}, Landroid/app/Activity;->showDialog(I)V
+    invoke-virtual {v0, v3}, Lcom/android/phone/OutgoingCallBroadcaster;->showDialog(I)V
 
     goto/16 :goto_0
 
@@ -7014,7 +7014,7 @@
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v3}, Landroid/app/Activity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v0, v3}, Lcom/android/phone/OutgoingCallBroadcaster;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v3
 
@@ -7024,7 +7024,7 @@
 
     move-result v3
 
-    invoke-virtual/range {p0 .. p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual/range {p0 .. p0}, Lcom/android/phone/OutgoingCallBroadcaster;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v6
 
@@ -7250,7 +7250,7 @@
 
     invoke-virtual {v3}, Landroid/widget/Toast;->show()V
 
-    invoke-virtual/range {p0 .. p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual/range {p0 .. p0}, Lcom/android/phone/OutgoingCallBroadcaster;->finish()V
 
     goto/16 :goto_0
 
@@ -7364,7 +7364,7 @@
 
     invoke-direct/range {v3 .. v8}, Lcom/android/phone/OutgoingCallBroadcaster;->startSipCallOptionHandler(Landroid/content/Context;Landroid/content/Intent;Landroid/net/Uri;Ljava/lang/String;Ljava/lang/String;)V
 
-    invoke-virtual/range {p0 .. p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual/range {p0 .. p0}, Lcom/android/phone/OutgoingCallBroadcaster;->finish()V
 
     goto/16 :goto_0
 
@@ -7613,7 +7613,7 @@
 
     if-eqz v3, :cond_99
 
-    invoke-virtual/range {v20 .. v20}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual/range {v20 .. v20}, Lcom/android/phone/PhoneGlobals;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v3
 
@@ -7635,7 +7635,7 @@
 
     if-ne v6, v3, :cond_9f
 
-    invoke-virtual/range {v20 .. v20}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual/range {v20 .. v20}, Lcom/android/phone/PhoneGlobals;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v3
 
@@ -7725,7 +7725,7 @@
 
     if-eqz v3, :cond_9b
 
-    invoke-virtual/range {p0 .. p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual/range {p0 .. p0}, Lcom/android/phone/OutgoingCallBroadcaster;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v3
 
@@ -7925,7 +7925,7 @@
 
     if-eqz v3, :cond_9e
 
-    invoke-virtual/range {p0 .. p0}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual/range {p0 .. p0}, Lcom/android/phone/OutgoingCallBroadcaster;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v3
 
@@ -8007,7 +8007,7 @@
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v3}, Landroid/app/Activity;->showDialog(I)V
+    invoke-virtual {v0, v3}, Lcom/android/phone/OutgoingCallBroadcaster;->showDialog(I)V
 
     goto/16 :goto_0
 
@@ -8016,7 +8016,7 @@
 
     if-ne v6, v3, :cond_a0
 
-    invoke-virtual/range {v20 .. v20}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual/range {v20 .. v20}, Lcom/android/phone/PhoneGlobals;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v3
 
@@ -8262,7 +8262,7 @@
     goto/16 :goto_35
 
     :cond_a9
-    invoke-virtual/range {p0 .. p0}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual/range {p0 .. p0}, Lcom/android/phone/OutgoingCallBroadcaster;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v16
 
@@ -8418,7 +8418,7 @@
 
     iput-object v7, v0, Lcom/android/phone/OutgoingCallBroadcaster;->phoneNumber:Ljava/lang/String;
 
-    invoke-virtual/range {p0 .. p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual/range {p0 .. p0}, Lcom/android/phone/OutgoingCallBroadcaster;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v3
 
@@ -8448,7 +8448,7 @@
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v3, v4}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {v0, v3, v4}, Lcom/android/phone/OutgoingCallBroadcaster;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v3
 
@@ -8507,7 +8507,7 @@
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v3}, Landroid/app/Activity;->showDialog(I)V
+    invoke-virtual {v0, v3}, Lcom/android/phone/OutgoingCallBroadcaster;->showDialog(I)V
 
     goto/16 :goto_0
 
@@ -8556,7 +8556,7 @@
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v3}, Landroid/app/Activity;->showDialog(I)V
+    invoke-virtual {v0, v3}, Lcom/android/phone/OutgoingCallBroadcaster;->showDialog(I)V
 
     goto/16 :goto_0
 
@@ -8713,7 +8713,7 @@
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v3}, Landroid/app/Activity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v0, v3}, Lcom/android/phone/OutgoingCallBroadcaster;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v3
 
@@ -8745,9 +8745,9 @@
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v3}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {v0, v3}, Lcom/android/phone/OutgoingCallBroadcaster;->startActivity(Landroid/content/Intent;)V
 
-    invoke-virtual/range {p0 .. p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual/range {p0 .. p0}, Lcom/android/phone/OutgoingCallBroadcaster;->finish()V
 
     goto/16 :goto_0
 
@@ -8861,7 +8861,7 @@
 
     iput-boolean v3, v0, Lcom/android/phone/OutgoingCallBroadcaster;->bSlot1CtcGsmCard:Z
 
-    invoke-virtual/range {p0 .. p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual/range {p0 .. p0}, Lcom/android/phone/OutgoingCallBroadcaster;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v3
 
@@ -9126,7 +9126,7 @@
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v3}, Landroid/app/Activity;->showDialog(I)V
+    invoke-virtual {v0, v3}, Lcom/android/phone/OutgoingCallBroadcaster;->showDialog(I)V
 
     goto/16 :goto_0
 
@@ -9223,7 +9223,7 @@
 
     if-eqz v3, :cond_cb
 
-    invoke-virtual/range {p0 .. p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual/range {p0 .. p0}, Lcom/android/phone/OutgoingCallBroadcaster;->finish()V
 
     goto/16 :goto_0
 
@@ -9287,7 +9287,7 @@
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v3}, Landroid/app/Activity;->showDialog(I)V
+    invoke-virtual {v0, v3}, Lcom/android/phone/OutgoingCallBroadcaster;->showDialog(I)V
 
     goto/16 :goto_0
 
@@ -9336,7 +9336,7 @@
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v3}, Landroid/app/Activity;->showDialog(I)V
+    invoke-virtual {v0, v3}, Lcom/android/phone/OutgoingCallBroadcaster;->showDialog(I)V
 
     goto/16 :goto_0
 
@@ -9369,7 +9369,7 @@
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v3}, Landroid/app/Activity;->showDialog(I)V
+    invoke-virtual {v0, v3}, Lcom/android/phone/OutgoingCallBroadcaster;->showDialog(I)V
 
     goto/16 :goto_0
 
@@ -9478,7 +9478,7 @@
 .method private removeTopStoryCard(Ljava/lang/String;)V
     .locals 4
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/OutgoingCallBroadcaster;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -9586,7 +9586,7 @@
 
     iput-object p2, p0, Lcom/android/phone/OutgoingCallBroadcaster;->roamingNumber:Ljava/lang/String;
 
-    invoke-virtual {p0, v2}, Landroid/app/Activity;->showDialog(I)V
+    invoke-virtual {p0, v2}, Lcom/android/phone/OutgoingCallBroadcaster;->showDialog(I)V
 
     :cond_0
     :goto_0
@@ -9616,7 +9616,7 @@
 
     iput-object p2, p0, Lcom/android/phone/OutgoingCallBroadcaster;->roamingNumber:Ljava/lang/String;
 
-    invoke-virtual {p0, v2}, Landroid/app/Activity;->showDialog(I)V
+    invoke-virtual {p0, v2}, Lcom/android/phone/OutgoingCallBroadcaster;->showDialog(I)V
 
     goto :goto_0
 
@@ -9656,7 +9656,7 @@
 
     iput-object p2, p0, Lcom/android/phone/OutgoingCallBroadcaster;->roamingNumber:Ljava/lang/String;
 
-    invoke-virtual {p0, v2}, Landroid/app/Activity;->showDialog(I)V
+    invoke-virtual {p0, v2}, Lcom/android/phone/OutgoingCallBroadcaster;->showDialog(I)V
 
     goto :goto_0
 .end method
@@ -9841,7 +9841,7 @@
     iput-object v0, p0, Lcom/android/phone/OutgoingCallBroadcaster;->mMajorMcc:Ljava/lang/String;
 
     :cond_0
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/OutgoingCallBroadcaster;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v3
 
@@ -9855,7 +9855,7 @@
 
     move-result-object v3
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/OutgoingCallBroadcaster;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v4
 
@@ -9965,7 +9965,7 @@
 
     move-object v8, v5
 
-    invoke-virtual/range {v0 .. v8}, Landroid/content/ContextWrapper;->sendOrderedBroadcastAsUser(Landroid/content/Intent;Landroid/os/UserHandle;Ljava/lang/String;Landroid/content/BroadcastReceiver;Landroid/os/Handler;ILjava/lang/String;Landroid/os/Bundle;)V
+    invoke-virtual/range {v0 .. v8}, Lcom/android/phone/OutgoingCallBroadcaster;->sendOrderedBroadcastAsUser(Landroid/content/Intent;Landroid/os/UserHandle;Ljava/lang/String;Landroid/content/BroadcastReceiver;Landroid/os/Handler;ILjava/lang/String;Landroid/os/Bundle;)V
 
     return-void
 .end method
@@ -10037,7 +10037,7 @@
 
     invoke-virtual {v0}, Landroid/widget/Toast;->show()V
 
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/OutgoingCallBroadcaster;->finish()V
 
     :goto_1
     return v1
@@ -10080,7 +10080,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v0}, Lcom/android/phone/PhoneGlobals;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -10190,7 +10190,7 @@
 
     invoke-virtual {v0}, Landroid/widget/Toast;->show()V
 
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/OutgoingCallBroadcaster;->finish()V
 
     goto/16 :goto_1
 
@@ -10246,7 +10246,7 @@
 
     invoke-virtual {v0}, Landroid/widget/Toast;->show()V
 
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/OutgoingCallBroadcaster;->finish()V
 
     goto/16 :goto_1
 
@@ -10304,7 +10304,7 @@
 
     if-eqz v0, :cond_d
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/OutgoingCallBroadcaster;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -10316,7 +10316,7 @@
 
     invoke-virtual {v0}, Landroid/widget/Toast;->show()V
 
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/OutgoingCallBroadcaster;->finish()V
 
     goto/16 :goto_1
 
@@ -10494,7 +10494,7 @@
 
     move-result v0
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/OutgoingCallBroadcaster;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v3
 
@@ -11101,7 +11101,7 @@
     move v0, v1
 
     :goto_3
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/OutgoingCallBroadcaster;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v3
 
@@ -11121,7 +11121,7 @@
 
     if-eqz v3, :cond_1e
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/OutgoingCallBroadcaster;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v3
 
@@ -11391,7 +11391,7 @@
 
     if-ne v5, v1, :cond_1a
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/OutgoingCallBroadcaster;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -11411,7 +11411,7 @@
 
     if-eqz v0, :cond_1d
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/OutgoingCallBroadcaster;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -11648,7 +11648,7 @@
 
     const/4 v0, 0x0
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getMultiWindowStyle()Lcom/samsung/android/multiwindow/MultiWindowStyle;
+    invoke-virtual {p0}, Lcom/android/phone/OutgoingCallBroadcaster;->getMultiWindowStyle()Lcom/samsung/android/multiwindow/MultiWindowStyle;
 
     move-result-object v1
 
@@ -11742,7 +11742,7 @@
 
     :cond_0
     :goto_0
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/OutgoingCallBroadcaster;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -11899,7 +11899,7 @@
 
     if-eqz v0, :cond_4
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/OutgoingCallBroadcaster;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -12031,7 +12031,7 @@
     return-object v1
 
     :cond_4
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/OutgoingCallBroadcaster;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -12044,7 +12044,7 @@
     goto :goto_0
 
     :cond_5
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/OutgoingCallBroadcaster;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -12177,7 +12177,7 @@
 
     if-eqz v1, :cond_b
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/OutgoingCallBroadcaster;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -12192,7 +12192,7 @@
     :cond_b
     if-ne v0, v4, :cond_c
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/OutgoingCallBroadcaster;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -12238,7 +12238,7 @@
 
     if-eqz v0, :cond_e
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/OutgoingCallBroadcaster;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -12251,7 +12251,7 @@
     goto/16 :goto_0
 
     :cond_e
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/OutgoingCallBroadcaster;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -12268,7 +12268,7 @@
     goto/16 :goto_0
 
     :cond_f
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/OutgoingCallBroadcaster;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -12310,7 +12310,7 @@
     if-ne p2, v4, :cond_15
 
     :cond_13
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/OutgoingCallBroadcaster;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -12350,7 +12350,7 @@
     goto/16 :goto_0
 
     :cond_15
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/OutgoingCallBroadcaster;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -12390,7 +12390,7 @@
     goto/16 :goto_0
 
     :cond_17
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/OutgoingCallBroadcaster;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -12468,7 +12468,7 @@
     .locals 0
     .param p1    # Landroid/content/DialogInterface;
 
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/OutgoingCallBroadcaster;->finish()V
 
     return-void
 .end method
@@ -12478,7 +12478,7 @@
     .param p1    # Landroid/content/DialogInterface;
     .param p2    # I
 
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/OutgoingCallBroadcaster;->finish()V
 
     return-void
 .end method
@@ -12521,11 +12521,11 @@
 
     const v0, 0x7f040066
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->setContentView(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/OutgoingCallBroadcaster;->setContentView(I)V
 
     const v0, 0x7f0a017f
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/phone/OutgoingCallBroadcaster;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -12533,7 +12533,7 @@
 
     iput-object v0, p0, Lcom/android/phone/OutgoingCallBroadcaster;->mWaitingSpinner:Landroid/widget/ProgressBar;
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/phone/OutgoingCallBroadcaster;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
 
@@ -12543,7 +12543,7 @@
 
     invoke-static {v1, v2}, Landroid/util/Slog;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/OutgoingCallBroadcaster;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -12675,7 +12675,7 @@
 
     invoke-virtual {v0}, Landroid/widget/Toast;->show()V
 
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/OutgoingCallBroadcaster;->finish()V
 
     :goto_0
     return-void
@@ -12706,7 +12706,7 @@
 
     move-result-object v1
 
-    invoke-virtual {p0}, Landroid/app/Activity;->isFinishing()Z
+    invoke-virtual {p0}, Lcom/android/phone/OutgoingCallBroadcaster;->isFinishing()Z
 
     move-result v2
 
@@ -12847,7 +12847,7 @@
 
     if-eqz v1, :cond_1
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/OutgoingCallBroadcaster;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -12864,7 +12864,7 @@
 
     if-eqz v1, :cond_2
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/OutgoingCallBroadcaster;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -12944,7 +12944,7 @@
 
     if-eqz v1, :cond_2
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/OutgoingCallBroadcaster;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -13137,7 +13137,7 @@
 
     const-string v0, "layout_inflater"
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Lcom/android/phone/OutgoingCallBroadcaster;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v5
 
@@ -13422,7 +13422,7 @@
 
     move-result-object v0
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/OutgoingCallBroadcaster;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -13488,7 +13488,7 @@
     .locals 0
     .param p1    # Landroid/content/DialogInterface;
 
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/OutgoingCallBroadcaster;->finish()V
 
     return-void
 .end method
@@ -13524,7 +13524,7 @@
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->removeMessages(I)V
 
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/OutgoingCallBroadcaster;->finish()V
 
     :cond_0
     return-void
@@ -13537,39 +13537,39 @@
 
     const/4 v0, 0x1
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->removeDialog(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/OutgoingCallBroadcaster;->removeDialog(I)V
 
     const/4 v0, 0x2
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->removeDialog(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/OutgoingCallBroadcaster;->removeDialog(I)V
 
     const/4 v0, 0x3
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->removeDialog(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/OutgoingCallBroadcaster;->removeDialog(I)V
 
     const/4 v0, 0x4
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->removeDialog(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/OutgoingCallBroadcaster;->removeDialog(I)V
 
     const/4 v0, 0x5
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->removeDialog(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/OutgoingCallBroadcaster;->removeDialog(I)V
 
     const/4 v0, 0x6
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->removeDialog(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/OutgoingCallBroadcaster;->removeDialog(I)V
 
     const/16 v0, 0x8
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->removeDialog(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/OutgoingCallBroadcaster;->removeDialog(I)V
 
     const/16 v0, 0xa
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->removeDialog(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/OutgoingCallBroadcaster;->removeDialog(I)V
 
     const/16 v0, 0xb
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->removeDialog(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/OutgoingCallBroadcaster;->removeDialog(I)V
 
     iput-object v2, p0, Lcom/android/phone/OutgoingCallBroadcaster;->mCurrentNumber:Ljava/lang/String;
 
@@ -13592,7 +13592,7 @@
     :cond_0
     const/4 v0, 0x7
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->removeDialog(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/OutgoingCallBroadcaster;->removeDialog(I)V
 
     :cond_1
     const-string v0, "multisim_carrier_match"
@@ -13605,7 +13605,7 @@
 
     const/16 v0, 0x9
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->removeDialog(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/OutgoingCallBroadcaster;->removeDialog(I)V
 
     :cond_2
     iput-object v2, p0, Lcom/android/phone/OutgoingCallBroadcaster;->roamingIntent:Landroid/content/Intent;
@@ -13689,7 +13689,7 @@
 
     invoke-static {v1, v2}, Lcom/android/phone/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/OutgoingCallBroadcaster;->startActivity(Landroid/content/Intent;)V
 
     return-void
 .end method

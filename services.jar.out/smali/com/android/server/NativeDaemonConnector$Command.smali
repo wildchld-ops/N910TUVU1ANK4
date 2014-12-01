@@ -32,8 +32,6 @@
 # direct methods
 .method public varargs constructor <init>(Ljava/lang/String;[Ljava/lang/Object;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/Object;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -68,7 +66,6 @@
 
 .method static synthetic access$000(Lcom/android/server/NativeDaemonConnector$Command;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/server/NativeDaemonConnector$Command;
 
     iget-object v0, p0, Lcom/android/server/NativeDaemonConnector$Command;->mCmd:Ljava/lang/String;
 
@@ -77,7 +74,6 @@
 
 .method static synthetic access$100(Lcom/android/server/NativeDaemonConnector$Command;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/server/NativeDaemonConnector$Command;
 
     iget-object v0, p0, Lcom/android/server/NativeDaemonConnector$Command;->mArguments:Ljava/util/ArrayList;
 
@@ -88,7 +84,6 @@
 # virtual methods
 .method public appendArg(Ljava/lang/Object;)Lcom/android/server/NativeDaemonConnector$Command;
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     iget-object v0, p0, Lcom/android/server/NativeDaemonConnector$Command;->mArguments:Ljava/util/ArrayList;
 

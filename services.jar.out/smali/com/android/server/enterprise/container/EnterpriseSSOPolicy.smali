@@ -165,7 +165,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     const/4 v3, 0x0
 
@@ -274,9 +273,6 @@
 
 .method private TakeInterfaceOnBlockingQueueKnox2(IILjava/lang/String;)Z
     .locals 11
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -498,8 +494,6 @@
 
 .method static synthetic access$100(Lcom/android/server/enterprise/container/EnterpriseSSOPolicy;I)Z
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/container/EnterpriseSSOPolicy;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/container/EnterpriseSSOPolicy;->isSSOServiceInstalled(I)Z
 
@@ -510,8 +504,6 @@
 
 .method static synthetic access$200(Lcom/android/server/enterprise/container/EnterpriseSSOPolicy;I)I
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/container/EnterpriseSSOPolicy;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/container/EnterpriseSSOPolicy;->bindSSOInterfaces(I)I
 
@@ -522,7 +514,6 @@
 
 .method static synthetic access$300(Lcom/android/server/enterprise/container/EnterpriseSSOPolicy;)Lcom/android/server/enterprise/container/EnterpriseSSOPolicy$SSOInterfaceList1;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/container/EnterpriseSSOPolicy;
 
     iget-object v0, p0, Lcom/android/server/enterprise/container/EnterpriseSSOPolicy;->mSSOInterfaceList1:Lcom/android/server/enterprise/container/EnterpriseSSOPolicy$SSOInterfaceList1;
 
@@ -531,7 +522,6 @@
 
 .method static synthetic access$400(Lcom/android/server/enterprise/container/EnterpriseSSOPolicy;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/container/EnterpriseSSOPolicy;
 
     iget-object v0, p0, Lcom/android/server/enterprise/container/EnterpriseSSOPolicy;->mContext:Landroid/content/Context;
 
@@ -540,8 +530,6 @@
 
 .method static synthetic access$502(Lcom/android/server/enterprise/container/EnterpriseSSOPolicy;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/container/EnterpriseSSOPolicy;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/enterprise/container/EnterpriseSSOPolicy;->mSSOServiceInitialized:Z
 
@@ -566,7 +554,6 @@
 
 .method static synthetic access$800(Lcom/android/server/enterprise/container/EnterpriseSSOPolicy;)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/container/EnterpriseSSOPolicy;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/container/EnterpriseSSOPolicy;->printArtifacts()V
 
@@ -575,8 +562,6 @@
 
 .method static synthetic access$900(Lcom/android/server/enterprise/container/EnterpriseSSOPolicy;I)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/container/EnterpriseSSOPolicy;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/container/EnterpriseSSOPolicy;->removeClintEntry(I)V
 
@@ -585,7 +570,6 @@
 
 .method private bindSSOInterfaces(I)I
     .locals 8
-    .param p1    # I
 
     const/4 v7, 0x1
 
@@ -699,9 +683,6 @@
 
 .method private bindSSOInterfaces(IILjava/lang/String;)I
     .locals 11
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     const/4 v10, 0x1
 
@@ -864,9 +845,6 @@
 
 .method private declared-synchronized bindSSOInterfacesSync(Landroid/app/enterprise/ContextInfo;ILjava/lang/String;)Landroid/app/enterprise/EnterpriseResponseData;
     .locals 11
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1237,7 +1215,6 @@
 
 .method private declared-synchronized bindSSOInterfacesWithClientsList(I)V
     .locals 17
-    .param p1    # I
 
     monitor-enter p0
 
@@ -1623,7 +1600,6 @@
 
 .method private enforceEnterpriseSSOPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/container/EnterpriseSSOPolicy;->getEDM()Landroid/app/enterprise/EnterpriseDeviceManager;
 
@@ -1696,7 +1672,6 @@
 
 .method private getSSOnterface(I)Lcom/sec/android/service/singlesignon/IEnterpriseSecurityManager2;
     .locals 5
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -1797,8 +1772,6 @@
 
 .method private isExistingOrFirstClient(II)Z
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     const-string v3, "EnterpriseSSOPolicyService"
 
@@ -1963,7 +1936,6 @@
 
 .method private isSSOServiceInstalled(I)Z
     .locals 10
-    .param p1    # I
 
     const/4 v6, 0x0
 
@@ -2327,7 +2299,6 @@
 
 .method private removeClintEntry(I)V
     .locals 7
-    .param p1    # I
 
     iget-object v4, p0, Lcom/android/server/enterprise/container/EnterpriseSSOPolicy;->clientsList:Ljava/util/ArrayList;
 
@@ -2460,8 +2431,6 @@
 
 .method private updateClintEntry(ILjava/lang/String;)V
     .locals 8
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const-string v5, "EnterpriseSSOPolicyService"
 
@@ -2834,10 +2803,6 @@
 # virtual methods
 .method public deleteSSOWhiteList(Landroid/app/enterprise/ContextInfo;ILjava/lang/String;Ljava/lang/String;Ljava/util/List;)Landroid/app/enterprise/EnterpriseResponseData;
     .locals 14
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3395,9 +3360,6 @@
 
 .method public forceReauthenticate(Landroid/app/enterprise/ContextInfo;ILjava/lang/String;)Landroid/app/enterprise/EnterpriseResponseData;
     .locals 11
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3732,10 +3694,6 @@
 
 .method public getAppAllowedState(Landroid/app/enterprise/ContextInfo;ILjava/lang/String;Ljava/lang/String;)Landroid/app/enterprise/EnterpriseResponseData;
     .locals 9
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -4149,9 +4107,6 @@
 
 .method public getSSOCustomerId(Landroid/app/enterprise/ContextInfo;ILjava/lang/String;)Landroid/app/enterprise/EnterpriseResponseData;
     .locals 9
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -4387,7 +4342,6 @@
 
 .method getUserId(Landroid/app/enterprise/ContextInfo;)I
     .locals 4
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-static {p1}, Lcom/android/server/enterprise/EnterpriseDeviceManagerService;->getCallingOrCurrentUserId(Landroid/app/enterprise/ContextInfo;)I
 
@@ -4420,9 +4374,6 @@
 
 .method public isSSOReady(Landroid/app/enterprise/ContextInfo;ILjava/lang/String;)Landroid/app/enterprise/EnterpriseResponseData;
     .locals 10
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -4653,21 +4604,18 @@
 
 .method public onAdminAdded(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onAdminRemoved(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onPreAdminRemoval(I)V
     .locals 12
-    .param p1    # I
 
     const-string v9, "EnterpriseSSOPolicyService"
 
@@ -4926,10 +4874,6 @@
 
 .method public pushSSOData(Landroid/app/enterprise/ContextInfo;ILjava/lang/String;Landroid/os/Bundle;)Landroid/app/enterprise/EnterpriseResponseData;
     .locals 9
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -5251,11 +5195,6 @@
 
 .method public setCustomerInfo(Landroid/app/enterprise/ContextInfo;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/app/enterprise/EnterpriseResponseData;
     .locals 8
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -5595,10 +5534,6 @@
 
 .method public setSSOCustomerId(Landroid/app/enterprise/ContextInfo;ILjava/lang/String;Ljava/lang/String;)Landroid/app/enterprise/EnterpriseResponseData;
     .locals 8
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -5876,10 +5811,6 @@
 
 .method public setSSOWhiteList(Landroid/app/enterprise/ContextInfo;ILjava/lang/String;Ljava/lang/String;Ljava/util/List;)Landroid/app/enterprise/EnterpriseResponseData;
     .locals 14
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -6443,9 +6374,6 @@
 
 .method public setupSSO(Landroid/app/enterprise/ContextInfo;ILjava/lang/String;)Landroid/app/enterprise/EnterpriseResponseData;
     .locals 10
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -6848,9 +6776,6 @@
 
 .method public unenroll(Landroid/app/enterprise/ContextInfo;ILjava/lang/String;)Landroid/app/enterprise/EnterpriseResponseData;
     .locals 12
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

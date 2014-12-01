@@ -81,9 +81,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Lcom/android/server/wm/WindowManagerService;Lcom/android/server/input/InputManagerService;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/server/wm/WindowManagerService;
-    .param p3    # Lcom/android/server/input/InputManagerService;
 
     invoke-direct {p0}, Lcom/samsung/android/cover/ICoverManager$Stub;-><init>()V
 
@@ -220,8 +217,6 @@
 
 .method static synthetic access$002(Lcom/android/server/cover/CoverManagerService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/cover/CoverManagerService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/cover/CoverManagerService;->mBootCompleted:Z
 
@@ -230,9 +225,6 @@
 
 .method static synthetic access$100(Lcom/android/server/cover/CoverManagerService;ZZ)V
     .locals 0
-    .param p0    # Lcom/android/server/cover/CoverManagerService;
-    .param p1    # Z
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/cover/CoverManagerService;->updateCoverAttachState(ZZ)V
 
@@ -241,9 +233,6 @@
 
 .method static synthetic access$200(Lcom/android/server/cover/CoverManagerService;ZZ)V
     .locals 0
-    .param p0    # Lcom/android/server/cover/CoverManagerService;
-    .param p1    # Z
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/cover/CoverManagerService;->updateCoverSwitchState(ZZ)V
 
@@ -252,7 +241,6 @@
 
 .method private sendCoverAttachStateLocked(Z)V
     .locals 5
-    .param p1    # Z
 
     const/4 v1, 0x1
 
@@ -337,8 +325,6 @@
 
 .method private sendCoverSwitchStateLocked(ZZ)V
     .locals 3
-    .param p1    # Z
-    .param p2    # Z
 
     iget-object v0, p0, Lcom/android/server/cover/CoverManagerService;->mCoverState:Lcom/samsung/android/cover/CoverState;
 
@@ -468,8 +454,6 @@
 
 .method private updateCoverAttachState(ZZ)V
     .locals 4
-    .param p1    # Z
-    .param p2    # Z
 
     iget-object v1, p0, Lcom/android/server/cover/CoverManagerService;->mCoverState:Lcom/samsung/android/cover/CoverState;
 
@@ -561,8 +545,6 @@
 
 .method private updateCoverSwitchState(ZZ)V
     .locals 4
-    .param p1    # Z
-    .param p2    # Z
 
     iget-object v1, p0, Lcom/android/server/cover/CoverManagerService;->mCoverState:Lcom/samsung/android/cover/CoverState;
 
@@ -692,7 +674,6 @@
 
 .method private updateCoverSwitchStateLocked(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/server/cover/CoverManagerService;->mCoverState:Lcom/samsung/android/cover/CoverState;
 
@@ -705,9 +686,6 @@
 # virtual methods
 .method public disableCoverManager(ZLandroid/os/IBinder;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Z
-    .param p2    # Landroid/os/IBinder;
-    .param p3    # Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -771,9 +749,6 @@
 
 .method protected dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/server/cover/CoverManagerService;->mContext:Landroid/content/Context;
 
@@ -1051,8 +1026,6 @@
 
 .method public notifyCoverAttachStateChanged(JZ)V
     .locals 2
-    .param p1    # J
-    .param p3    # Z
 
     iget-boolean v0, p0, Lcom/android/server/cover/CoverManagerService;->mBootCompleted:Z
 
@@ -1082,8 +1055,6 @@
 
 .method public notifyCoverSwitchStateChanged(JZ)V
     .locals 2
-    .param p1    # J
-    .param p3    # Z
 
     iget-boolean v0, p0, Lcom/android/server/cover/CoverManagerService;->mBootCompleted:Z
 
@@ -1130,8 +1101,6 @@
 
 .method public registerCallback(Landroid/os/IBinder;Landroid/content/ComponentName;)V
     .locals 1
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1147,9 +1116,6 @@
 
 .method public registerListenerCallback(Landroid/os/IBinder;Landroid/content/ComponentName;I)V
     .locals 1
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1165,8 +1131,6 @@
 
 .method public sendDataToCover(I[B)V
     .locals 1
-    .param p1    # I
-    .param p2    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1192,7 +1156,6 @@
 
 .method public unregisterCallback(Landroid/os/IBinder;)Z
     .locals 1
-    .param p1    # Landroid/os/IBinder;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

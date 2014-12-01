@@ -266,7 +266,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Lcom/android/internal/widget/ILockSettings$Stub;-><init>()V
 
@@ -291,11 +290,6 @@
 
 .method static synthetic access$000(Lcom/android/server/LockSettingsService;Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Ljava/lang/String;I)V
     .locals 0
-    .param p0    # Lcom/android/server/LockSettingsService;
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/server/LockSettingsService;->writeToDb(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Ljava/lang/String;I)V
 
@@ -304,7 +298,6 @@
 
 .method static synthetic access$100(Lcom/android/server/LockSettingsService;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/server/LockSettingsService;
 
     iget-object v0, p0, Lcom/android/server/LockSettingsService;->mContext:Landroid/content/Context;
 
@@ -313,7 +306,6 @@
 
 .method static synthetic access$200(Lcom/android/server/LockSettingsService;)Lcom/android/internal/widget/LockPatternUtils;
     .locals 1
-    .param p0    # Lcom/android/server/LockSettingsService;
 
     iget-object v0, p0, Lcom/android/server/LockSettingsService;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
 
@@ -322,7 +314,6 @@
 
 .method private checkFingerprintPasswordForKeystore(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/LockSettingsService;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
 
@@ -374,7 +365,6 @@
 
 .method private final checkPasswordReadPermission(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/LockSettingsService;->mContext:Landroid/content/Context;
 
@@ -389,8 +379,6 @@
 
 .method private final checkReadPermission(Ljava/lang/String;I)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-static {}, Landroid/os/Binder;->getCallingUid()I
 
@@ -492,7 +480,6 @@
 
 .method private final checkWritePermission(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/LockSettingsService;->mContext:Landroid/content/Context;
 
@@ -507,7 +494,6 @@
 
 .method private getLockBackupPinFilename(I)Ljava/lang/String;
     .locals 4
-    .param p1    # I
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -578,7 +564,6 @@
 
 .method private getLockFingerprintPasswordFilename(I)Ljava/lang/String;
     .locals 4
-    .param p1    # I
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -649,7 +634,6 @@
 
 .method private getLockParentControlPasswordFilename(I)Ljava/lang/String;
     .locals 3
-    .param p1    # I
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -740,7 +724,6 @@
 
 .method private getLockPasswordFilename(I)Ljava/lang/String;
     .locals 4
-    .param p1    # I
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -811,7 +794,6 @@
 
 .method private getLockPatternFilename(I)Ljava/lang/String;
     .locals 4
-    .param p1    # I
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -882,7 +864,6 @@
 
 .method private getLockSKTPasswordFilename(I)Ljava/lang/String;
     .locals 4
-    .param p1    # I
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -953,7 +934,6 @@
 
 .method private getPersonalModeBackupPinFilename(I)Ljava/lang/String;
     .locals 4
-    .param p1    # I
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -1024,7 +1004,6 @@
 
 .method private getPersonalModeFingerprintPasswordFilename(I)Ljava/lang/String;
     .locals 4
-    .param p1    # I
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -1095,7 +1074,6 @@
 
 .method private getPersonalModePasswordFilename(I)Ljava/lang/String;
     .locals 4
-    .param p1    # I
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -1166,7 +1144,6 @@
 
 .method private getPersonalModePatternFilename(I)Ljava/lang/String;
     .locals 4
-    .param p1    # I
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -1237,7 +1214,6 @@
 
 .method private getPersonalModePinFilename(I)Ljava/lang/String;
     .locals 4
-    .param p1    # I
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -1308,7 +1284,6 @@
 
 .method private getSignatureBackupPinFilename(I)Ljava/lang/String;
     .locals 4
-    .param p1    # I
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -1379,7 +1354,6 @@
 
 .method private getSignatureFilename(I)Ljava/lang/String;
     .locals 4
-    .param p1    # I
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -1450,8 +1424,6 @@
 
 .method private maybeUpdateKeystore(Ljava/lang/String;I)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     if-nez p2, :cond_0
 
@@ -1849,9 +1821,6 @@
 
 .method private readFromDb(Ljava/lang/String;Ljava/lang/String;I)Ljava/lang/String;
     .locals 11
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     const/4 v8, 0x0
 
@@ -1951,8 +1920,6 @@
 
 .method private updateKeystore(Ljava/lang/String;I)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/16 v5, 0x14
 
@@ -2083,8 +2050,6 @@
 
 .method private writeFile(Ljava/lang/String;[B)V
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # [B
 
     const/4 v2, 0x0
 
@@ -2222,10 +2187,6 @@
 
 .method private writeToDb(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Ljava/lang/String;I)V
     .locals 6
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
 
     new-instance v0, Landroid/content/ContentValues;
 
@@ -2296,9 +2257,6 @@
 
 .method private writeToDb(Ljava/lang/String;Ljava/lang/String;I)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     iget-object v0, p0, Lcom/android/server/LockSettingsService;->mOpenHelper:Lcom/android/server/LockSettingsService$DatabaseHelper;
 
@@ -2315,8 +2273,6 @@
 # virtual methods
 .method public checkBackupPin(Ljava/lang/String;I)Z
     .locals 13
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2517,8 +2473,6 @@
 
 .method public checkFingerprintPassword(Ljava/lang/String;I)Z
     .locals 11
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2661,8 +2615,6 @@
 
 .method public checkParentControlPassword([BI)Z
     .locals 9
-    .param p1    # [B
-    .param p2    # I
 
     const/4 v5, 0x1
 
@@ -2769,8 +2721,6 @@
 
 .method public checkPassword(Ljava/lang/String;I)Z
     .locals 16
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3087,8 +3037,6 @@
 
 .method public checkPattern(Ljava/lang/String;I)Z
     .locals 13
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3261,8 +3209,6 @@
 
 .method public checkPersonalModeBackupPin(Ljava/lang/String;I)Z
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3380,8 +3326,6 @@
 
 .method public checkPersonalModeFingerprintPassword(Ljava/lang/String;I)Z
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3499,8 +3443,6 @@
 
 .method public checkPersonalModePassword(Ljava/lang/String;I)Z
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3618,8 +3560,6 @@
 
 .method public checkPersonalModePattern(Ljava/lang/String;I)Z
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3739,8 +3679,6 @@
 
 .method public checkPersonalModePin(Ljava/lang/String;I)Z
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3858,8 +3796,6 @@
 
 .method public checkSKTPassword(Ljava/lang/String;I)Z
     .locals 12
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4038,8 +3974,6 @@
 
 .method public checkSignatureBackupPin([BI)Z
     .locals 11
-    .param p1    # [B
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4212,9 +4146,6 @@
 
 .method public getBoolean(Ljava/lang/String;ZI)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4268,7 +4199,6 @@
 
 .method public getLockPasswordHashSize(I)I
     .locals 10
-    .param p1    # I
 
     const/4 v6, -0x1
 
@@ -4420,9 +4350,6 @@
 
 .method public getLong(Ljava/lang/String;JI)J
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
-    .param p4    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4456,7 +4383,6 @@
 
 .method public getParentControlPasswordHashSize(I)I
     .locals 8
-    .param p1    # I
 
     const/4 v4, -0x1
 
@@ -4562,7 +4488,6 @@
 
 .method public getSignatureInfo(I)[B
     .locals 13
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4840,9 +4765,6 @@
 
 .method public getString(Ljava/lang/String;Ljava/lang/String;I)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4860,7 +4782,6 @@
 
 .method public haveBackupPin(I)Z
     .locals 4
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4898,7 +4819,6 @@
 
 .method public haveFingerprintPassword(I)Z
     .locals 4
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4936,7 +4856,6 @@
 
 .method public haveParentControlPassword(I)Z
     .locals 4
-    .param p1    # I
 
     new-instance v0, Ljava/io/File;
 
@@ -4969,7 +4888,6 @@
 
 .method public havePassword(I)Z
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5040,7 +4958,6 @@
 
 .method public havePattern(I)Z
     .locals 4
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5078,7 +4995,6 @@
 
 .method public havePersonalModeBackupPin(I)Z
     .locals 4
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5116,7 +5032,6 @@
 
 .method public havePersonalModeFingerprintPassword(I)Z
     .locals 4
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5154,7 +5069,6 @@
 
 .method public havePersonalModePassword(I)Z
     .locals 4
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5192,7 +5106,6 @@
 
 .method public havePersonalModePattern(I)Z
     .locals 4
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5230,7 +5143,6 @@
 
 .method public havePersonalModePin(I)Z
     .locals 4
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5268,7 +5180,6 @@
 
 .method public haveSKTPassword(I)Z
     .locals 4
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5306,7 +5217,6 @@
 
 .method public haveSignature(I)Z
     .locals 4
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5344,7 +5254,6 @@
 
 .method public haveSignatureBackupPin(I)Z
     .locals 4
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5382,7 +5291,6 @@
 
 .method public lock(I)Z
     .locals 2
-    .param p1    # I
 
     invoke-static {}, Lcom/android/server/LockSettingsService$KeyStoreMdpp;->getInstance()Lcom/android/server/LockSettingsService$KeyStoreMdpp;
 
@@ -5413,7 +5321,6 @@
 
 .method public removeUser(I)V
     .locals 5
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/LockSettingsService;->checkWritePermission(I)V
 
@@ -5525,9 +5432,6 @@
 
 .method public setBoolean(Ljava/lang/String;ZI)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5553,8 +5457,6 @@
 
 .method public setLockBackupPin(Ljava/lang/String;I)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5580,8 +5482,6 @@
 
 .method public setLockFingerprintPassword(Ljava/lang/String;I)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5630,8 +5530,6 @@
 
 .method public setLockParentControlPassword([BI)V
     .locals 1
-    .param p1    # [B
-    .param p2    # I
 
     invoke-direct {p0, p2}, Lcom/android/server/LockSettingsService;->checkWritePermission(I)V
 
@@ -5646,8 +5544,6 @@
 
 .method public setLockPassword(Ljava/lang/String;I)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5726,8 +5622,6 @@
 
 .method public setLockPattern(Ljava/lang/String;I)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5862,8 +5756,6 @@
 
 .method public setLockSKTPassword(Ljava/lang/String;I)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5889,9 +5781,6 @@
 
 .method public setLong(Ljava/lang/String;JI)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
-    .param p4    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5911,8 +5800,6 @@
 
 .method public setPersonalModeFingerprintPassword(Ljava/lang/String;I)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5938,8 +5825,6 @@
 
 .method public setPersonalModeLockBackupPin(Ljava/lang/String;I)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5965,8 +5850,6 @@
 
 .method public setPersonalModeLockPassword(Ljava/lang/String;I)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5992,8 +5875,6 @@
 
 .method public setPersonalModeLockPattern(Ljava/lang/String;I)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -6039,8 +5920,6 @@
 
 .method public setPersonalModeLockPin(Ljava/lang/String;I)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -6066,8 +5945,6 @@
 
 .method public setSignatureBackupPin([BI)V
     .locals 1
-    .param p1    # [B
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -6087,8 +5964,6 @@
 
 .method public setSignatureInfo([BI)V
     .locals 3
-    .param p1    # [B
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -6134,9 +6009,6 @@
 
 .method public setString(Ljava/lang/String;Ljava/lang/String;I)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

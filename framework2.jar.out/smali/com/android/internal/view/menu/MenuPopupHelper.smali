@@ -66,8 +66,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Lcom/android/internal/view/menu/MenuBuilder;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/internal/view/menu/MenuBuilder;
 
     const/4 v0, 0x0
 
@@ -80,9 +78,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Lcom/android/internal/view/menu/MenuBuilder;Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/internal/view/menu/MenuBuilder;
-    .param p3    # Landroid/view/View;
 
     const/4 v0, 0x0
 
@@ -93,10 +88,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Lcom/android/internal/view/menu/MenuBuilder;Landroid/view/View;Z)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/internal/view/menu/MenuBuilder;
-    .param p3    # Landroid/view/View;
-    .param p4    # Z
 
     const/4 v2, 0x1
 
@@ -209,7 +200,6 @@
 
 .method static synthetic access$100(Lcom/android/internal/view/menu/MenuPopupHelper;)Z
     .locals 1
-    .param p0    # Lcom/android/internal/view/menu/MenuPopupHelper;
 
     iget-boolean v0, p0, Lcom/android/internal/view/menu/MenuPopupHelper;->mOverflowOnly:Z
 
@@ -218,7 +208,6 @@
 
 .method static synthetic access$200(Lcom/android/internal/view/menu/MenuPopupHelper;)Z
     .locals 1
-    .param p0    # Lcom/android/internal/view/menu/MenuPopupHelper;
 
     invoke-direct {p0}, Lcom/android/internal/view/menu/MenuPopupHelper;->twIsPopupMenuDisplay()Z
 
@@ -229,7 +218,6 @@
 
 .method static synthetic access$300(Lcom/android/internal/view/menu/MenuPopupHelper;)Landroid/view/LayoutInflater;
     .locals 1
-    .param p0    # Lcom/android/internal/view/menu/MenuPopupHelper;
 
     iget-object v0, p0, Lcom/android/internal/view/menu/MenuPopupHelper;->mInflater:Landroid/view/LayoutInflater;
 
@@ -238,7 +226,6 @@
 
 .method static synthetic access$400(Lcom/android/internal/view/menu/MenuPopupHelper;)Lcom/android/internal/view/menu/MenuBuilder;
     .locals 1
-    .param p0    # Lcom/android/internal/view/menu/MenuPopupHelper;
 
     iget-object v0, p0, Lcom/android/internal/view/menu/MenuPopupHelper;->mMenu:Lcom/android/internal/view/menu/MenuBuilder;
 
@@ -368,8 +355,6 @@
 # virtual methods
 .method public collapseItemActionView(Lcom/android/internal/view/menu/MenuBuilder;Lcom/android/internal/view/menu/MenuItemImpl;)Z
     .locals 1
-    .param p1    # Lcom/android/internal/view/menu/MenuBuilder;
-    .param p2    # Lcom/android/internal/view/menu/MenuItemImpl;
 
     const/4 v0, 0x0
 
@@ -395,8 +380,6 @@
 
 .method public expandItemActionView(Lcom/android/internal/view/menu/MenuBuilder;Lcom/android/internal/view/menu/MenuItemImpl;)Z
     .locals 1
-    .param p1    # Lcom/android/internal/view/menu/MenuBuilder;
-    .param p2    # Lcom/android/internal/view/menu/MenuItemImpl;
 
     const/4 v0, 0x0
 
@@ -421,7 +404,6 @@
 
 .method public getMenuView(Landroid/view/ViewGroup;)Lcom/android/internal/view/menu/MenuView;
     .locals 2
-    .param p1    # Landroid/view/ViewGroup;
 
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
@@ -442,8 +424,6 @@
 
 .method public initForMenu(Landroid/content/Context;Lcom/android/internal/view/menu/MenuBuilder;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/internal/view/menu/MenuBuilder;
 
     return-void
 .end method
@@ -476,8 +456,6 @@
 
 .method public onCloseMenu(Lcom/android/internal/view/menu/MenuBuilder;Z)V
     .locals 1
-    .param p1    # Lcom/android/internal/view/menu/MenuBuilder;
-    .param p2    # Z
 
     iget-object v0, p0, Lcom/android/internal/view/menu/MenuPopupHelper;->mMenu:Lcom/android/internal/view/menu/MenuBuilder;
 
@@ -589,9 +567,6 @@
 
 .method public onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
     .locals 4
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -622,9 +597,6 @@
 
 .method public onKey(Landroid/view/View;ILandroid/view/KeyEvent;)Z
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x1
 
@@ -651,7 +623,6 @@
 
 .method public onRestoreInstanceState(Landroid/os/Parcelable;)V
     .locals 0
-    .param p1    # Landroid/os/Parcelable;
 
     return-void
 .end method
@@ -666,7 +637,6 @@
 
 .method public onSubMenuSelected(Lcom/android/internal/view/menu/SubMenuBuilder;)Z
     .locals 8
-    .param p1    # Lcom/android/internal/view/menu/SubMenuBuilder;
 
     const/4 v5, 0x0
 
@@ -748,14 +718,12 @@
 
 .method public onViewAttachedToWindow(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     return-void
 .end method
 
 .method public onViewDetachedFromWindow(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Lcom/android/internal/view/menu/MenuPopupHelper;->mTreeObserver:Landroid/view/ViewTreeObserver;
 
@@ -788,7 +756,6 @@
 
 .method public setAnchorView(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     iput-object p1, p0, Lcom/android/internal/view/menu/MenuPopupHelper;->mAnchorView:Landroid/view/View;
 
@@ -797,7 +764,6 @@
 
 .method public setCallback(Lcom/android/internal/view/menu/MenuPresenter$Callback;)V
     .locals 0
-    .param p1    # Lcom/android/internal/view/menu/MenuPresenter$Callback;
 
     iput-object p1, p0, Lcom/android/internal/view/menu/MenuPopupHelper;->mPresenterCallback:Lcom/android/internal/view/menu/MenuPresenter$Callback;
 
@@ -806,7 +772,6 @@
 
 .method public setForceShowIcon(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/internal/view/menu/MenuPopupHelper;->mForceShowIcon:Z
 
@@ -815,7 +780,6 @@
 
 .method public setGravity(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/internal/view/menu/MenuPopupHelper;->mDropDownGravity:I
 
@@ -1041,7 +1005,6 @@
 
 .method public updateAnchorView(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     iput-object p1, p0, Lcom/android/internal/view/menu/MenuPopupHelper;->mAnchorView:Landroid/view/View;
 
@@ -1054,7 +1017,6 @@
 
 .method public updateMenuView(Z)V
     .locals 1
-    .param p1    # Z
 
     const/4 v0, 0x0
 

@@ -18,7 +18,6 @@
 
 .method static displayToast(I)V
     .locals 1
-    .param p0    # I
 
     invoke-static {}, Lcom/android/incallui/InCallApp;->getInstance()Lcom/android/incallui/InCallApp;
 
@@ -35,7 +34,6 @@
 
 .method static displayToast(Ljava/lang/String;)V
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     sget-object v1, Lcom/android/incallui/SoundEffect;->mToast:Landroid/widget/Toast;
 
@@ -464,8 +462,6 @@
 
 .method private static log(Ljava/lang/String;Z)V
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Z
 
     const-string v0, "SoundEffect"
 
@@ -476,7 +472,6 @@
 
 .method static noiseReductionBroadcast(I)V
     .locals 4
-    .param p0    # I
 
     invoke-static {}, Lcom/android/incallui/InCallApp;->getInstance()Lcom/android/incallui/InCallApp;
 
@@ -509,8 +504,6 @@
 
 .method static setVoiceCallEq(ZZ)V
     .locals 0
-    .param p0    # Z
-    .param p1    # Z
 
     return-void
 .end method
@@ -723,7 +716,6 @@
 
 .method static turnOnExtraVol(Z)V
     .locals 6
-    .param p0    # Z
 
     const/4 v5, 0x1
 

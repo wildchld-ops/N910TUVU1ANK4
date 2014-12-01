@@ -1575,8 +1575,6 @@
 
 .method public static checkTodayIsFestivalJpn(Landroid/content/Context;Landroid/content/ContentResolver;)I
     .locals 13
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/content/ContentResolver;
 
     const/4 v2, 0x1
 
@@ -1690,9 +1688,6 @@
 
 .method private static createBackgroundBitmapDrawable(Landroid/app/Activity;ZZ)Lcom/android/mms/ui/FixedSizeBitmapDrawable;
     .locals 24
-    .param p0    # Landroid/app/Activity;
-    .param p1    # Z
-    .param p2    # Z
 
     const-string v19, "Mms/DisplayStyleActivity"
 
@@ -2174,8 +2169,6 @@
 
 .method private static createFestivalBackgroundBitmapDrawableJpn(Landroid/app/Activity;Landroid/graphics/Bitmap;)Lcom/android/mms/ui/FixedSizeBitmapDrawable;
     .locals 11
-    .param p0    # Landroid/app/Activity;
-    .param p1    # Landroid/graphics/Bitmap;
 
     const-string v9, "Mms/DisplayStyleActivity"
 
@@ -2299,7 +2292,6 @@
 
 .method public static getBGStyleArray(Z)[I
     .locals 1
-    .param p0    # Z
 
     invoke-static {p0}, Lcom/android/mms/settings/DisplayStyleActivity;->updateBGStyleArray(Z)V
 
@@ -2310,8 +2302,6 @@
 
 .method public static getCropedBackground(Landroid/app/Activity;Z)Lcom/android/mms/ui/FixedSizeBitmapDrawable;
     .locals 6
-    .param p0    # Landroid/app/Activity;
-    .param p1    # Z
 
     const/4 v2, 0x1
 
@@ -2400,8 +2390,6 @@
 
 .method public static getCropedFestivalBackgroundJpn(Landroid/app/Activity;Landroid/graphics/Bitmap;)Lcom/android/mms/ui/FixedSizeBitmapDrawable;
     .locals 1
-    .param p0    # Landroid/app/Activity;
-    .param p1    # Landroid/graphics/Bitmap;
 
     const/4 v0, 0x0
 
@@ -2414,8 +2402,6 @@
 
 .method public static getFestivalBackgroundJpn(Landroid/app/Activity;Landroid/content/ContentResolver;)Landroid/graphics/drawable/Drawable;
     .locals 12
-    .param p0    # Landroid/app/Activity;
-    .param p1    # Landroid/content/ContentResolver;
 
     const/4 v11, 0x0
 
@@ -2531,7 +2517,6 @@
 
 .method public static getTopLayoutSizeWithStatusBar(Landroid/app/Activity;)I
     .locals 9
-    .param p0    # Landroid/app/Activity;
 
     new-instance v1, Landroid/graphics/Rect;
 
@@ -2718,9 +2703,6 @@
 
 .method public static isEnableFestivalEffectJpn(Landroid/content/Context;Landroid/content/ContentResolver;I)Z
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/content/ContentResolver;
-    .param p2    # I
 
     const/4 v5, 0x0
 
@@ -2758,7 +2740,6 @@
 
 .method public static isFestivalDayJpn(I)Z
     .locals 2
-    .param p0    # I
 
     const/4 v0, 0x0
 
@@ -2774,7 +2755,6 @@
 
 .method protected static recycleBitmap(Landroid/graphics/Bitmap;)V
     .locals 2
-    .param p0    # Landroid/graphics/Bitmap;
 
     if-nez p0, :cond_0
 
@@ -2795,7 +2775,6 @@
 
 .method protected static recycleBitmap(Landroid/graphics/drawable/BitmapDrawable;)V
     .locals 3
-    .param p0    # Landroid/graphics/drawable/BitmapDrawable;
 
     if-nez p0, :cond_0
 
@@ -2824,7 +2803,6 @@
 
 .method protected static recycleBitmap(Landroid/graphics/drawable/Drawable;)V
     .locals 3
-    .param p0    # Landroid/graphics/drawable/Drawable;
 
     if-nez p0, :cond_0
 
@@ -3164,7 +3142,6 @@
 
 .method protected static updateBGStyleArray(Z)V
     .locals 2
-    .param p0    # Z
 
     invoke-static {}, Lcom/android/mms/MmsConfig;->getDisableBackgroundStyleWithImage()Z
 
@@ -3344,10 +3321,6 @@
 # virtual methods
 .method protected calculateScrollPosition(IIII)I
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     div-int v0, p4, p2
 
@@ -3681,7 +3654,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 3
-    .param p1    # Landroid/content/res/Configuration;
 
     const/4 v1, 0x1
 
@@ -3760,7 +3732,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
@@ -3820,7 +3791,6 @@
 
 .method protected refreshLayout(I)V
     .locals 0
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -3976,7 +3946,6 @@
 
 .method protected setCustomBackground(Z)V
     .locals 6
-    .param p1    # Z
 
     const/4 v5, 0x0
 
@@ -4190,8 +4159,6 @@
 
 .method public updatePreviewItems(II)V
     .locals 11
-    .param p1    # I
-    .param p2    # I
 
     const/4 v10, 0x1
 

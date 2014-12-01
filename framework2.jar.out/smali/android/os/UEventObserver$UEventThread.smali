@@ -63,7 +63,6 @@
 
 .method private sendEvent(Ljava/lang/String;)V
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     iget-object v6, p0, Landroid/os/UEventObserver$UEventThread;->mKeysAndObservers:Ljava/util/ArrayList;
 
@@ -179,8 +178,6 @@
 # virtual methods
 .method public addObserver(Ljava/lang/String;Landroid/os/UEventObserver;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/UEventObserver;
 
     iget-object v1, p0, Landroid/os/UEventObserver$UEventThread;->mKeysAndObservers:Ljava/util/ArrayList;
 
@@ -214,7 +211,6 @@
 
 .method public removeObserver(Landroid/os/UEventObserver;)V
     .locals 5
-    .param p1    # Landroid/os/UEventObserver;
 
     iget-object v3, p0, Landroid/os/UEventObserver$UEventThread;->mKeysAndObservers:Ljava/util/ArrayList;
 

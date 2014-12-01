@@ -30,7 +30,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/settings/deviceinfo/Status;)V
     .locals 1
-    .param p1    # Lcom/android/settings/deviceinfo/Status;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
@@ -47,7 +46,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 5
-    .param p1    # Landroid/os/Message;
 
     iget-object v2, p0, Lcom/android/settings/deviceinfo/Status$MyHandler;->mStatus:Ljava/lang/ref/WeakReference;
 

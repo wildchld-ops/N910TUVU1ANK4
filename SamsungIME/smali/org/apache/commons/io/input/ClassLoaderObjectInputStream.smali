@@ -10,8 +10,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/ClassLoader;Ljava/io/InputStream;)V
     .locals 0
-    .param p1    # Ljava/lang/ClassLoader;
-    .param p2    # Ljava/io/InputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -30,7 +28,6 @@
 # virtual methods
 .method protected resolveClass(Ljava/io/ObjectStreamClass;)Ljava/lang/Class;
     .locals 4
-    .param p1    # Ljava/io/ObjectStreamClass;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,

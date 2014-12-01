@@ -75,7 +75,6 @@
 
 .method public constructor <init>(Landroid/net/LinkCapabilities;)V
     .locals 2
-    .param p1    # Landroid/net/LinkCapabilities;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -104,7 +103,6 @@
 
 .method static synthetic access$000(Landroid/net/LinkCapabilities;)Ljava/util/HashMap;
     .locals 1
-    .param p0    # Landroid/net/LinkCapabilities;
 
     iget-object v0, p0, Landroid/net/LinkCapabilities;->mCapabilities:Ljava/util/HashMap;
 
@@ -113,7 +111,6 @@
 
 .method public static createNeedsMap(Ljava/lang/String;)Landroid/net/LinkCapabilities;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     new-instance v0, Landroid/net/LinkCapabilities;
 
@@ -124,7 +121,6 @@
 
 .method protected static log(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "LinkCapabilities"
 
@@ -147,7 +143,6 @@
 
 .method public containsKey(I)Z
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Landroid/net/LinkCapabilities;->mCapabilities:Ljava/util/HashMap;
 
@@ -164,7 +159,6 @@
 
 .method public containsValue(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/net/LinkCapabilities;->mCapabilities:Ljava/util/HashMap;
 
@@ -209,7 +203,6 @@
 
 .method public get(I)Ljava/lang/String;
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Landroid/net/LinkCapabilities;->mCapabilities:Ljava/util/HashMap;
 
@@ -261,8 +254,6 @@
 
 .method public put(ILjava/lang/String;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/net/LinkCapabilities;->mCapabilities:Ljava/util/HashMap;
 
@@ -394,8 +385,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 3
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v2, p0, Landroid/net/LinkCapabilities;->mCapabilities:Ljava/util/HashMap;
 

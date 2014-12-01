@@ -376,7 +376,6 @@
 
 .method public static setImMaxSize1To1(J)V
     .locals 2
-    .param p0    # J
 
     const-wide/16 v0, 0x0
 
@@ -392,7 +391,6 @@
 
 .method public static setImMaxSize1ToM(J)V
     .locals 2
-    .param p0    # J
 
     const-wide/16 v0, 0x0
 

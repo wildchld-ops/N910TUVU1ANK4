@@ -46,13 +46,13 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Landroid/widget/CompoundButton;->isChecked()Z
+    invoke-virtual {v1}, Landroid/widget/CheckBox;->isChecked()Z
 
     move-result v0
 
     iget-object v1, p0, Lcom/android/phone/PhotoRingScreen$6;->this$0:Lcom/android/phone/PhotoRingScreen;
 
-    invoke-virtual {v1}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v1}, Lcom/android/phone/PhotoRingScreen;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 

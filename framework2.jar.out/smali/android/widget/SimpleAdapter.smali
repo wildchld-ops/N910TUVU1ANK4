@@ -61,10 +61,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Ljava/util/List;I[Ljava/lang/String;[I)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p3    # I
-    .param p4    # [Ljava/lang/String;
-    .param p5    # [I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -107,7 +103,6 @@
 
 .method static synthetic access$100(Landroid/widget/SimpleAdapter;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Landroid/widget/SimpleAdapter;
 
     iget-object v0, p0, Landroid/widget/SimpleAdapter;->mUnfilteredData:Ljava/util/ArrayList;
 
@@ -116,8 +111,6 @@
 
 .method static synthetic access$102(Landroid/widget/SimpleAdapter;Ljava/util/ArrayList;)Ljava/util/ArrayList;
     .locals 0
-    .param p0    # Landroid/widget/SimpleAdapter;
-    .param p1    # Ljava/util/ArrayList;
 
     iput-object p1, p0, Landroid/widget/SimpleAdapter;->mUnfilteredData:Ljava/util/ArrayList;
 
@@ -126,7 +119,6 @@
 
 .method static synthetic access$200(Landroid/widget/SimpleAdapter;)Ljava/util/List;
     .locals 1
-    .param p0    # Landroid/widget/SimpleAdapter;
 
     iget-object v0, p0, Landroid/widget/SimpleAdapter;->mData:Ljava/util/List;
 
@@ -135,8 +127,6 @@
 
 .method static synthetic access$202(Landroid/widget/SimpleAdapter;Ljava/util/List;)Ljava/util/List;
     .locals 0
-    .param p0    # Landroid/widget/SimpleAdapter;
-    .param p1    # Ljava/util/List;
 
     iput-object p1, p0, Landroid/widget/SimpleAdapter;->mData:Ljava/util/List;
 
@@ -145,7 +135,6 @@
 
 .method static synthetic access$300(Landroid/widget/SimpleAdapter;)[I
     .locals 1
-    .param p0    # Landroid/widget/SimpleAdapter;
 
     iget-object v0, p0, Landroid/widget/SimpleAdapter;->mTo:[I
 
@@ -154,7 +143,6 @@
 
 .method static synthetic access$400(Landroid/widget/SimpleAdapter;)[Ljava/lang/String;
     .locals 1
-    .param p0    # Landroid/widget/SimpleAdapter;
 
     iget-object v0, p0, Landroid/widget/SimpleAdapter;->mFrom:[Ljava/lang/String;
 
@@ -163,8 +151,6 @@
 
 .method private bindView(ILandroid/view/View;)V
     .locals 13
-    .param p1    # I
-    .param p2    # Landroid/view/View;
 
     iget-object v10, p0, Landroid/widget/SimpleAdapter;->mData:Ljava/util/List;
 
@@ -400,10 +386,6 @@
 
 .method private createViewFromResource(ILandroid/view/View;Landroid/view/ViewGroup;I)Landroid/view/View;
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
-    .param p4    # I
 
     if-nez p2, :cond_0
 
@@ -442,9 +424,6 @@
 
 .method public getDropDownView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     iget v0, p0, Landroid/widget/SimpleAdapter;->mDropDownResource:I
 
@@ -478,7 +457,6 @@
 
 .method public getItem(I)Ljava/lang/Object;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/widget/SimpleAdapter;->mData:Ljava/util/List;
 
@@ -491,7 +469,6 @@
 
 .method public getItemId(I)J
     .locals 2
-    .param p1    # I
 
     int-to-long v0, p1
 
@@ -500,9 +477,6 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     iget v0, p0, Landroid/widget/SimpleAdapter;->mResource:I
 
@@ -523,7 +497,6 @@
 
 .method public setDropDownViewResource(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/widget/SimpleAdapter;->mDropDownResource:I
 
@@ -532,7 +505,6 @@
 
 .method public setViewBinder(Landroid/widget/SimpleAdapter$ViewBinder;)V
     .locals 0
-    .param p1    # Landroid/widget/SimpleAdapter$ViewBinder;
 
     iput-object p1, p0, Landroid/widget/SimpleAdapter;->mViewBinder:Landroid/widget/SimpleAdapter$ViewBinder;
 
@@ -541,8 +513,6 @@
 
 .method public setViewImage(Landroid/widget/ImageView;I)V
     .locals 0
-    .param p1    # Landroid/widget/ImageView;
-    .param p2    # I
 
     invoke-virtual {p1, p2}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -551,8 +521,6 @@
 
 .method public setViewImage(Landroid/widget/ImageView;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Landroid/widget/ImageView;
-    .param p2    # Ljava/lang/String;
 
     :try_start_0
     invoke-static {p2}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
@@ -580,8 +548,6 @@
 
 .method public setViewText(Landroid/widget/TextView;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 

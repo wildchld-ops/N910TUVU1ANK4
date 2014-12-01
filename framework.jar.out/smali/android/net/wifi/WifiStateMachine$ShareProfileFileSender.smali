@@ -41,12 +41,6 @@
 # direct methods
 .method public constructor <init>(Landroid/net/wifi/WifiStateMachine;Ljava/net/Socket;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
     .locals 4
-    .param p2    # Ljava/net/Socket;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Ljava/lang/String;
-    .param p7    # Z
 
     iput-object p1, p0, Landroid/net/wifi/WifiStateMachine$ShareProfileFileSender;->this$0:Landroid/net/wifi/WifiStateMachine;
 

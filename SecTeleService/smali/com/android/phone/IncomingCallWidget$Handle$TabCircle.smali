@@ -135,7 +135,7 @@
     :goto_1
     iget-object v0, p0, Lcom/android/phone/IncomingCallWidget$Handle$TabCircle;->mLinePaint:Landroid/graphics/Paint;
 
-    invoke-virtual {p0, v4, v0}, Landroid/view/View;->setLayerType(ILandroid/graphics/Paint;)V
+    invoke-virtual {p0, v4, v0}, Lcom/android/phone/IncomingCallWidget$Handle$TabCircle;->setLayerType(ILandroid/graphics/Paint;)V
 
     :cond_1
     iput p1, p0, Lcom/android/phone/IncomingCallWidget$Handle$TabCircle;->mRadius:F
@@ -270,13 +270,13 @@
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v13}, Landroid/view/View;->getLocationOnScreen([I)V
+    invoke-virtual {v0, v13}, Lcom/android/phone/IncomingCallWidget$Handle$TabCircle;->getLocationOnScreen([I)V
 
     const/4 v14, 0x0
 
     aget v14, v13, v14
 
-    invoke-virtual/range {p0 .. p0}, Landroid/view/View;->getWidth()I
+    invoke-virtual/range {p0 .. p0}, Lcom/android/phone/IncomingCallWidget$Handle$TabCircle;->getWidth()I
 
     move-result v15
 
@@ -290,7 +290,7 @@
 
     aget v14, v13, v14
 
-    invoke-virtual/range {p0 .. p0}, Landroid/view/View;->getHeight()I
+    invoke-virtual/range {p0 .. p0}, Lcom/android/phone/IncomingCallWidget$Handle$TabCircle;->getHeight()I
 
     move-result v15
 
@@ -416,7 +416,7 @@
     .locals 4
     .param p1    # Landroid/graphics/Canvas;
 
-    invoke-virtual {p0}, Landroid/view/View;->getWidth()I
+    invoke-virtual {p0}, Lcom/android/phone/IncomingCallWidget$Handle$TabCircle;->getWidth()I
 
     move-result v0
 
@@ -424,7 +424,7 @@
 
     int-to-float v0, v0
 
-    invoke-virtual {p0}, Landroid/view/View;->getHeight()I
+    invoke-virtual {p0}, Lcom/android/phone/IncomingCallWidget$Handle$TabCircle;->getHeight()I
 
     move-result v1
 

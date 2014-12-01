@@ -34,8 +34,6 @@
 
 .method public getTransformation(Ljava/lang/CharSequence;Landroid/view/View;)Ljava/lang/CharSequence;
     .locals 7
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Landroid/view/View;
 
     invoke-virtual {p0}, Landroid/text/method/ReplacementTransformationMethod;->getOriginal()[C
 
@@ -140,11 +138,6 @@
 
 .method public onFocusChanged(Landroid/view/View;Ljava/lang/CharSequence;ZILandroid/graphics/Rect;)V
     .locals 0
-    .param p1    # Landroid/view/View;
-    .param p2    # Ljava/lang/CharSequence;
-    .param p3    # Z
-    .param p4    # I
-    .param p5    # Landroid/graphics/Rect;
 
     return-void
 .end method

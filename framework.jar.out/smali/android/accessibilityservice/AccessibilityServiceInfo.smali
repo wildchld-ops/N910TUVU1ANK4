@@ -183,8 +183,6 @@
 
 .method public constructor <init>(Landroid/content/pm/ResolveInfo;Landroid/content/Context;)V
     .locals 17
-    .param p1    # Landroid/content/pm/ResolveInfo;
-    .param p2    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -563,8 +561,6 @@
 
 .method static synthetic access$000(Landroid/accessibilityservice/AccessibilityServiceInfo;Landroid/os/Parcel;)V
     .locals 0
-    .param p0    # Landroid/accessibilityservice/AccessibilityServiceInfo;
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0, p1}, Landroid/accessibilityservice/AccessibilityServiceInfo;->initFromParcel(Landroid/os/Parcel;)V
 
@@ -573,8 +569,6 @@
 
 .method private static appendCapabilities(Ljava/lang/StringBuilder;I)V
     .locals 3
-    .param p0    # Ljava/lang/StringBuilder;
-    .param p1    # I
 
     const-string v1, "capabilities:"
 
@@ -624,8 +618,6 @@
 
 .method private static appendEventTypes(Ljava/lang/StringBuilder;I)V
     .locals 3
-    .param p0    # Ljava/lang/StringBuilder;
-    .param p1    # I
 
     const-string v1, "eventTypes:"
 
@@ -675,8 +667,6 @@
 
 .method private static appendFeedbackTypes(Ljava/lang/StringBuilder;I)V
     .locals 3
-    .param p0    # Ljava/lang/StringBuilder;
-    .param p1    # I
 
     const-string v1, "feedbackTypes:"
 
@@ -726,8 +716,6 @@
 
 .method private static appendFlags(Ljava/lang/StringBuilder;I)V
     .locals 3
-    .param p0    # Ljava/lang/StringBuilder;
-    .param p1    # I
 
     const-string v1, "flags:"
 
@@ -777,8 +765,6 @@
 
 .method private static appendPackageNames(Ljava/lang/StringBuilder;[Ljava/lang/String;)V
     .locals 3
-    .param p0    # Ljava/lang/StringBuilder;
-    .param p1    # [Ljava/lang/String;
 
     const-string v2, "packageNames:"
 
@@ -824,7 +810,6 @@
 
 .method public static capabilityToString(I)Ljava/lang/String;
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -869,7 +854,6 @@
 
 .method public static feedbackTypeToString(I)Ljava/lang/String;
     .locals 4
-    .param p0    # I
 
     const/4 v3, 0x1
 
@@ -1030,7 +1014,6 @@
 
 .method public static flagToString(I)Ljava/lang/String;
     .locals 1
-    .param p0    # I
 
     sparse-switch p0, :sswitch_data_0
 
@@ -1084,7 +1067,6 @@
 
 .method private initFromParcel(Landroid/os/Parcel;)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
@@ -1171,7 +1153,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 5
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x1
 
@@ -1385,7 +1366,6 @@
 
 .method public loadDescription(Landroid/content/pm/PackageManager;)Ljava/lang/String;
     .locals 5
-    .param p1    # Landroid/content/pm/PackageManager;
 
     iget v2, p0, Landroid/accessibilityservice/AccessibilityServiceInfo;->mDescriptionResId:I
 
@@ -1431,7 +1411,6 @@
 
 .method public setCapabilities(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/accessibilityservice/AccessibilityServiceInfo;->mCapabilities:I
 
@@ -1440,7 +1419,6 @@
 
 .method public setComponentName(Landroid/content/ComponentName;)V
     .locals 1
-    .param p1    # Landroid/content/ComponentName;
 
     invoke-virtual {p1}, Landroid/content/ComponentName;->flattenToShortString()Ljava/lang/String;
 
@@ -1559,7 +1537,6 @@
 
 .method public updateDynamicallyConfigurableProperties(Landroid/accessibilityservice/AccessibilityServiceInfo;)V
     .locals 2
-    .param p1    # Landroid/accessibilityservice/AccessibilityServiceInfo;
 
     iget v0, p1, Landroid/accessibilityservice/AccessibilityServiceInfo;->eventTypes:I
 
@@ -1586,8 +1563,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget v0, p0, Landroid/accessibilityservice/AccessibilityServiceInfo;->eventTypes:I
 

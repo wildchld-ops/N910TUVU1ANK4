@@ -33,7 +33,6 @@
 
 .method synthetic constructor <init>(Lcom/sec/android/visualeffect/jni/JNILoadClass$1;)V
     .locals 0
-    .param p1    # Lcom/sec/android/visualeffect/jni/JNILoadClass$1;
 
     invoke-direct {p0}, Lcom/sec/android/visualeffect/jni/JNILoadClass;-><init>()V
 

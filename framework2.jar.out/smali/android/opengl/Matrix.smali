@@ -32,14 +32,6 @@
 
 .method public static frustumM([FIFFFFFF)V
     .locals 11
-    .param p0    # [F
-    .param p1    # I
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # F
-    .param p7    # F
 
     cmpl-float v9, p2, p3
 
@@ -249,10 +241,6 @@
 
 .method public static invertM([FI[FI)Z
     .locals 61
-    .param p0    # [F
-    .param p1    # I
-    .param p2    # [F
-    .param p3    # I
 
     add-int/lit8 v58, p3, 0x0
 
@@ -849,9 +837,6 @@
 
 .method public static length(FFF)F
     .locals 2
-    .param p0    # F
-    .param p1    # F
-    .param p2    # F
 
     mul-float v0, p0, p0
 
@@ -882,14 +867,6 @@
 
 .method public static orthoM([FIFFFFFF)V
     .locals 11
-    .param p0    # [F
-    .param p1    # I
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # F
-    .param p7    # F
 
     cmpl-float v9, p2, p3
 
@@ -1067,12 +1044,6 @@
 
 .method public static perspectiveM([FIFFFF)V
     .locals 8
-    .param p0    # [F
-    .param p1    # I
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
 
     const/high16 v7, 0x3f800000
 
@@ -1181,12 +1152,6 @@
 
 .method public static rotateM([FIFFFF)V
     .locals 7
-    .param p0    # [F
-    .param p1    # I
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
 
     sget-object v6, Landroid/opengl/Matrix;->sTemp:[F
 
@@ -1245,14 +1210,6 @@
 
 .method public static rotateM([FI[FIFFFF)V
     .locals 7
-    .param p0    # [F
-    .param p1    # I
-    .param p2    # [F
-    .param p3    # I
-    .param p4    # F
-    .param p5    # F
-    .param p6    # F
-    .param p7    # F
 
     sget-object v6, Landroid/opengl/Matrix;->sTemp:[F
 
@@ -1303,11 +1260,6 @@
 
 .method public static scaleM([FIFFF)V
     .locals 4
-    .param p0    # [F
-    .param p1    # I
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
 
     const/4 v0, 0x0
 
@@ -1350,13 +1302,6 @@
 
 .method public static scaleM([FI[FIFFF)V
     .locals 5
-    .param p0    # [F
-    .param p1    # I
-    .param p2    # [F
-    .param p3    # I
-    .param p4    # F
-    .param p5    # F
-    .param p6    # F
 
     const/4 v0, 0x0
 
@@ -1413,8 +1358,6 @@
 
 .method public static setIdentityM([FI)V
     .locals 4
-    .param p0    # [F
-    .param p1    # I
 
     const/16 v3, 0x10
 
@@ -1455,17 +1398,6 @@
 
 .method public static setLookAtM([FIFFFFFFFFF)V
     .locals 15
-    .param p0    # [F
-    .param p1    # I
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # F
-    .param p7    # F
-    .param p8    # F
-    .param p9    # F
-    .param p10    # F
 
     sub-float v1, p5, p2
 
@@ -1642,11 +1574,6 @@
 
 .method public static setRotateEulerM([FIFFF)V
     .locals 11
-    .param p0    # [F
-    .param p1    # I
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
 
     const v8, 0x3c8efa35
 
@@ -1835,12 +1762,6 @@
 
 .method public static setRotateM([FIFFFF)V
     .locals 13
-    .param p0    # [F
-    .param p1    # I
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
 
     add-int/lit8 v11, p1, 0x3
 
@@ -2232,11 +2153,6 @@
 
 .method public static translateM([FIFFF)V
     .locals 6
-    .param p0    # [F
-    .param p1    # I
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
 
     const/4 v0, 0x0
 
@@ -2285,13 +2201,6 @@
 
 .method public static translateM([FI[FIFFF)V
     .locals 6
-    .param p0    # [F
-    .param p1    # I
-    .param p2    # [F
-    .param p3    # I
-    .param p4    # F
-    .param p5    # F
-    .param p6    # F
 
     const/4 v0, 0x0
 
@@ -2364,10 +2273,6 @@
 
 .method public static transposeM([FI[FI)V
     .locals 4
-    .param p0    # [F
-    .param p1    # I
-    .param p2    # [F
-    .param p3    # I
 
     const/4 v0, 0x0
 

@@ -28,7 +28,6 @@
 
 .method public static setHasVoiceLoggingInfo(Z)V
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/common/userhappiness/UserHappinessSignals;->mHasVoiceLoggingInfo:Z
 
@@ -37,7 +36,6 @@
 
 .method public static userAcceptedImeText(Landroid/content/Context;)V
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     sget-boolean v1, Lcom/android/common/userhappiness/UserHappinessSignals;->mHasVoiceLoggingInfo:Z
 

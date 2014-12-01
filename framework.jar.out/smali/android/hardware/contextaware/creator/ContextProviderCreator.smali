@@ -40,10 +40,6 @@
 
 .method protected constructor <init>(Landroid/content/Context;Landroid/os/Looper;Landroid/hardware/contextaware/dataprovider/sensorhubprovider/ISensorHubResetObservable;I)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/Looper;
-    .param p3    # Landroid/hardware/contextaware/dataprovider/sensorhubprovider/ISensorHubResetObservable;
-    .param p4    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -60,8 +56,6 @@
 
 .method private create(Ljava/lang/String;Z)Landroid/hardware/contextaware/manager/ContextComponent;
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     invoke-virtual {p0, p1}, Landroid/hardware/contextaware/creator/ContextProviderCreator;->existContextProvider(Ljava/lang/String;)Z
 
@@ -153,7 +147,6 @@
 
 .method protected static final removeObj(Ljava/lang/String;)Z
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -195,7 +188,6 @@
 
 .method private static setAPPowerObservable(Landroid/hardware/contextaware/dataprovider/sensorhubprovider/ISensorHubResetObservable;)V
     .locals 0
-    .param p0    # Landroid/hardware/contextaware/dataprovider/sensorhubprovider/ISensorHubResetObservable;
 
     sput-object p0, Landroid/hardware/contextaware/creator/ContextProviderCreator;->sAPPowerObservable:Landroid/hardware/contextaware/dataprovider/sensorhubprovider/ISensorHubResetObservable;
 
@@ -204,7 +196,6 @@
 
 .method private static setContext(Landroid/content/Context;)V
     .locals 0
-    .param p0    # Landroid/content/Context;
 
     sput-object p0, Landroid/hardware/contextaware/creator/ContextProviderCreator;->sContext:Landroid/content/Context;
 
@@ -213,7 +204,6 @@
 
 .method private static setLooper(Landroid/os/Looper;)V
     .locals 0
-    .param p0    # Landroid/os/Looper;
 
     sput-object p0, Landroid/hardware/contextaware/creator/ContextProviderCreator;->sLooper:Landroid/os/Looper;
 
@@ -222,7 +212,6 @@
 
 .method public static setVersion(I)V
     .locals 0
-    .param p0    # I
 
     sput p0, Landroid/hardware/contextaware/creator/ContextProviderCreator;->sVersion:I
 
@@ -233,7 +222,6 @@
 # virtual methods
 .method public create(Ljava/lang/String;)Landroid/hardware/contextaware/manager/ContextComponent;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -246,9 +234,6 @@
 
 .method public final varargs create(Ljava/lang/String;Z[Ljava/lang/Object;)Landroid/hardware/contextaware/manager/ContextComponent;
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # [Ljava/lang/Object;
 
     invoke-virtual {p0, p1}, Landroid/hardware/contextaware/creator/ContextProviderCreator;->existContextProvider(Ljava/lang/String;)Z
 
@@ -304,8 +289,6 @@
 
 .method public varargs create(Ljava/lang/String;[Ljava/lang/Object;)Landroid/hardware/contextaware/manager/ContextComponent;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/Object;
 
     const/4 v0, 0x0
 
@@ -318,7 +301,6 @@
 
 .method public final existContextProvider(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x1
 
@@ -343,7 +325,6 @@
 
 .method public final removeContextObj(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Landroid/hardware/contextaware/creator/ContextProviderCreator;->existContextProvider(Ljava/lang/String;)Z
 

@@ -6,7 +6,6 @@
 # direct methods
 .method public constructor <init>(Landroid/hardware/contextaware/manager/ContextComponent;)V
     .locals 0
-    .param p1    # Landroid/hardware/contextaware/manager/ContextComponent;
 
     invoke-direct {p0, p1}, Landroid/hardware/contextaware/manager/BatchContextProvider;-><init>(Landroid/hardware/contextaware/manager/ContextComponent;)V
 
@@ -17,8 +16,6 @@
 # virtual methods
 .method public final start(Landroid/hardware/contextaware/manager/ContextAwareService$Listener;I)V
     .locals 1
-    .param p1    # Landroid/hardware/contextaware/manager/ContextAwareService$Listener;
-    .param p2    # I
 
     invoke-static {}, Landroid/hardware/contextaware/utilbundle/logger/CaLogger;->trace()V
 
@@ -31,8 +28,6 @@
 
 .method public final stop(Landroid/hardware/contextaware/manager/ContextAwareService$Listener;I)V
     .locals 1
-    .param p1    # Landroid/hardware/contextaware/manager/ContextAwareService$Listener;
-    .param p2    # I
 
     invoke-static {}, Landroid/hardware/contextaware/utilbundle/logger/CaLogger;->trace()V
 

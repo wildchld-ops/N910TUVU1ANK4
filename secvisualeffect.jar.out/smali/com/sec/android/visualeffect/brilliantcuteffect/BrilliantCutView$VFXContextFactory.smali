@@ -28,7 +28,6 @@
 # direct methods
 .method public constructor <init>(Lcom/sec/android/visualeffect/brilliantcuteffect/BrilliantCutRenderer;)V
     .locals 1
-    .param p1    # Lcom/sec/android/visualeffect/brilliantcuteffect/BrilliantCutRenderer;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -49,9 +48,6 @@
 # virtual methods
 .method public createContext(Ljavax/microedition/khronos/egl/EGL10;Ljavax/microedition/khronos/egl/EGLDisplay;Ljavax/microedition/khronos/egl/EGLConfig;)Ljavax/microedition/khronos/egl/EGLContext;
     .locals 2
-    .param p1    # Ljavax/microedition/khronos/egl/EGL10;
-    .param p2    # Ljavax/microedition/khronos/egl/EGLDisplay;
-    .param p3    # Ljavax/microedition/khronos/egl/EGLConfig;
 
     const/4 v1, 0x3
 
@@ -79,9 +75,6 @@
 
 .method public destroyContext(Ljavax/microedition/khronos/egl/EGL10;Ljavax/microedition/khronos/egl/EGLDisplay;Ljavax/microedition/khronos/egl/EGLContext;)V
     .locals 1
-    .param p1    # Ljavax/microedition/khronos/egl/EGL10;
-    .param p2    # Ljavax/microedition/khronos/egl/EGLDisplay;
-    .param p3    # Ljavax/microedition/khronos/egl/EGLContext;
 
     iget-object v0, p0, Lcom/sec/android/visualeffect/brilliantcuteffect/BrilliantCutView$VFXContextFactory;->mRenderer:Lcom/sec/android/visualeffect/brilliantcuteffect/BrilliantCutRenderer;
 

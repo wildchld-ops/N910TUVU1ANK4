@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -53,7 +52,6 @@
 
 .method public onCountryDetected(Landroid/location/Country;)V
     .locals 5
-    .param p1    # Landroid/location/Country;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

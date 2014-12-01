@@ -36,7 +36,6 @@
 
 .method static closeStream(Ljava/io/Closeable;)V
     .locals 3
-    .param p0    # Ljava/io/Closeable;
 
     if-eqz p0, :cond_0
 
@@ -63,7 +62,6 @@
 
 .method static computeCentroid([F)[F
     .locals 9
-    .param p0    # [F
 
     const/high16 v8, 0x40000000
 
@@ -122,7 +120,6 @@
 
 .method private static computeCoVariance([F)[[F
     .locals 10
-    .param p0    # [F
 
     const/4 v5, 0x2
 
@@ -269,7 +266,6 @@
 
 .method private static computeOrientation([[F)[F
     .locals 12
-    .param p0    # [[F
 
     const/4 v8, 0x2
 
@@ -532,7 +528,6 @@
 
 .method public static computeOrientedBoundingBox([F)Landroid/gesture/OrientedBoundingBox;
     .locals 5
-    .param p0    # [F
 
     array-length v3, p0
 
@@ -565,8 +560,6 @@
 
 .method private static computeOrientedBoundingBox([F[F)Landroid/gesture/OrientedBoundingBox;
     .locals 15
-    .param p0    # [F
-    .param p1    # [F
 
     const/4 v0, 0x0
 
@@ -729,7 +722,6 @@
 
 .method static computeStraightness([F)F
     .locals 5
-    .param p0    # [F
 
     invoke-static {p0}, Landroid/gesture/GestureUtils;->computeTotalLength([F)F
 
@@ -776,8 +768,6 @@
 
 .method static computeStraightness([FF)F
     .locals 4
-    .param p0    # [F
-    .param p1    # F
 
     const/4 v2, 0x2
 
@@ -820,7 +810,6 @@
 
 .method static computeTotalLength([F)F
     .locals 9
-    .param p0    # [F
 
     const/4 v4, 0x0
 
@@ -879,8 +868,6 @@
 
 .method static cosineDistance([F[F)F
     .locals 5
-    .param p0    # [F
-    .param p1    # [F
 
     const/4 v2, 0x0
 
@@ -917,9 +904,6 @@
 
 .method static minimumCosineDistance([F[FI)F
     .locals 19
-    .param p0    # [F
-    .param p1    # [F
-    .param p2    # I
 
     move-object/from16 v0, p0
 
@@ -1063,10 +1047,6 @@
 
 .method private static plot(FF[FI)V
     .locals 25
-    .param p0    # F
-    .param p1    # F
-    .param p2    # [F
-    .param p3    # I
 
     const/16 v21, 0x0
 
@@ -1367,8 +1347,6 @@
 
 .method static rotate([FF)[F
     .locals 8
-    .param p0    # [F
-    .param p1    # F
 
     float-to-double v6, p1
 
@@ -1433,9 +1411,6 @@
 
 .method static scale([FFF)[F
     .locals 4
-    .param p0    # [F
-    .param p1    # F
-    .param p2    # F
 
     array-length v1, p0
 
@@ -1468,8 +1443,6 @@
 
 .method public static spatialSampling(Landroid/gesture/Gesture;I)[F
     .locals 1
-    .param p0    # Landroid/gesture/Gesture;
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -1482,9 +1455,6 @@
 
 .method public static spatialSampling(Landroid/gesture/Gesture;IZ)[F
     .locals 35
-    .param p0    # Landroid/gesture/Gesture;
-    .param p1    # I
-    .param p2    # Z
 
     add-int/lit8 v33, p1, -0x1
 
@@ -2023,8 +1993,6 @@
 
 .method static squaredEuclideanDistance([F[F)F
     .locals 6
-    .param p0    # [F
-    .param p1    # [F
 
     const/4 v3, 0x0
 
@@ -2059,8 +2027,6 @@
 
 .method public static temporalSampling(Landroid/gesture/GestureStroke;I)[F
     .locals 22
-    .param p0    # Landroid/gesture/GestureStroke;
-    .param p1    # I
 
     move-object/from16 v0, p0
 
@@ -2246,9 +2212,6 @@
 
 .method static translate([FFF)[F
     .locals 4
-    .param p0    # [F
-    .param p1    # F
-    .param p2    # F
 
     array-length v1, p0
 

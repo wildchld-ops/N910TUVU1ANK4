@@ -23,7 +23,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/SEAMService;Landroid/os/Looper;)V
     .locals 1
-    .param p2    # Landroid/os/Looper;
 
     iput-object p1, p0, Lcom/android/server/SEAMService$DrsHandler;->this$0:Lcom/android/server/SEAMService;
 
@@ -42,7 +41,6 @@
 # virtual methods
 .method doHandleMessage(Landroid/os/Message;)V
     .locals 3
-    .param p1    # Landroid/os/Message;
 
     iget v2, p1, Landroid/os/Message;->what:I
 
@@ -97,7 +95,6 @@
 
 .method public handleMessage(Landroid/os/Message;)V
     .locals 2
-    .param p1    # Landroid/os/Message;
 
     const/16 v1, 0xa
 

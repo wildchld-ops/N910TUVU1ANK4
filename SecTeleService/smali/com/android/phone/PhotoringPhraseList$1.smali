@@ -50,7 +50,7 @@
 
     iget-object v0, v0, Lcom/android/phone/PhotoringPhraseList;->mcbSelectAll:Landroid/widget/CheckBox;
 
-    invoke-virtual {v0}, Landroid/widget/CompoundButton;->isChecked()Z
+    invoke-virtual {v0}, Landroid/widget/CheckBox;->isChecked()Z
 
     move-result v0
 
@@ -59,7 +59,7 @@
     move v0, v1
 
     :goto_0
-    invoke-virtual {v3, v0}, Landroid/widget/CompoundButton;->setChecked(Z)V
+    invoke-virtual {v3, v0}, Landroid/widget/CheckBox;->setChecked(Z)V
 
     iget-object v0, p0, Lcom/android/phone/PhotoringPhraseList$1;->this$0:Lcom/android/phone/PhotoringPhraseList;
 
@@ -69,7 +69,7 @@
 
     iget-object v3, v3, Lcom/android/phone/PhotoringPhraseList;->mcbSelectAll:Landroid/widget/CheckBox;
 
-    invoke-virtual {v3}, Landroid/widget/CompoundButton;->isChecked()Z
+    invoke-virtual {v3}, Landroid/widget/CheckBox;->isChecked()Z
 
     move-result v3
 
@@ -83,7 +83,7 @@
 
     iget-object v3, v3, Lcom/android/phone/PhotoringPhraseList;->mcbSelectAll:Landroid/widget/CheckBox;
 
-    invoke-virtual {v3}, Landroid/widget/CompoundButton;->isChecked()Z
+    invoke-virtual {v3}, Landroid/widget/CheckBox;->isChecked()Z
 
     move-result v3
 

@@ -47,7 +47,6 @@
 
 .method public static completeWakefulIntent(Landroid/content/Intent;)Z
     .locals 7
-    .param p0    # Landroid/content/Intent;
 
     const/4 v3, 0x1
 
@@ -133,8 +132,6 @@
 
 .method public static startWakefulService(Landroid/content/Context;Landroid/content/Intent;)Landroid/content/ComponentName;
     .locals 8
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/content/Intent;
 
     sget-object v5, Landroid/support/v4/content/WakefulBroadcastReceiver;->mActiveWakeLocks:Landroid/util/SparseArray;
 

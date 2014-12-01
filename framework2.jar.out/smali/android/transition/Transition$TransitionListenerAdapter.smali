@@ -30,35 +30,30 @@
 # virtual methods
 .method public onTransitionCancel(Landroid/transition/Transition;)V
     .locals 0
-    .param p1    # Landroid/transition/Transition;
 
     return-void
 .end method
 
 .method public onTransitionEnd(Landroid/transition/Transition;)V
     .locals 0
-    .param p1    # Landroid/transition/Transition;
 
     return-void
 .end method
 
 .method public onTransitionPause(Landroid/transition/Transition;)V
     .locals 0
-    .param p1    # Landroid/transition/Transition;
 
     return-void
 .end method
 
 .method public onTransitionResume(Landroid/transition/Transition;)V
     .locals 0
-    .param p1    # Landroid/transition/Transition;
 
     return-void
 .end method
 
 .method public onTransitionStart(Landroid/transition/Transition;)V
     .locals 0
-    .param p1    # Landroid/transition/Transition;
 
     return-void
 .end method

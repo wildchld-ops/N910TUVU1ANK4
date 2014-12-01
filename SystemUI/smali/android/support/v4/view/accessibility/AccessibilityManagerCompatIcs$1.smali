@@ -36,7 +36,6 @@
 # virtual methods
 .method public onAccessibilityStateChanged(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Landroid/support/v4/view/accessibility/AccessibilityManagerCompatIcs$1;->val$bridge:Landroid/support/v4/view/accessibility/AccessibilityManagerCompatIcs$AccessibilityStateChangeListenerBridge;
 

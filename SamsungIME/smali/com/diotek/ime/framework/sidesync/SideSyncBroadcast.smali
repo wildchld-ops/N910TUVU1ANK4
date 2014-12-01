@@ -16,8 +16,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Lcom/diotek/ime/framework/sidesync/SideSyncManager;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/diotek/ime/framework/sidesync/SideSyncManager;
 
     const/4 v0, 0x0
 
@@ -67,9 +65,6 @@
 
 .method static synthetic access$000(Lcom/diotek/ime/framework/sidesync/SideSyncBroadcast;Landroid/content/Context;Landroid/content/Intent;)V
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/sidesync/SideSyncBroadcast;
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     invoke-direct {p0, p1, p2}, Lcom/diotek/ime/framework/sidesync/SideSyncBroadcast;->broadcastEventParser(Landroid/content/Context;Landroid/content/Intent;)V
 
@@ -138,8 +133,6 @@
 
 .method private broadcastEventParser(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
@@ -293,8 +286,6 @@
 
 .method private setSideSyncCtrlPressedState(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     const-string v1, "SIDESYNC.extra.CTRL_PRESSED_STATE"
 
@@ -311,8 +302,6 @@
 
 .method private setSideSyncExistTextBeforeCursorState(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     const-string v1, "SIDESYNC.extra.EXIST_TEXT_BEFORE_CURSOR_STATE"
 
@@ -329,8 +318,6 @@
 
 .method private setSideSyncInputText(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     const-string v1, "SIDESYNC.extra.INPUT_TEXT"
 
@@ -347,8 +334,6 @@
 
 .method private setSideSyncKeyCode(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     const-string v1, "KEY_CODE"
 
@@ -367,8 +352,6 @@
 
 .method private setSideSyncLanguageState(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     const-string v1, "LANGUAGE_ID"
 
@@ -387,8 +370,6 @@
 
 .method private setSideSyncPredictiveText(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     const-string v1, "SIDESYNC.extra.PREDICTIVE_TEXT"
 
@@ -405,8 +386,6 @@
 
 .method private setSideSyncShiftPressedState(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     const-string v1, "SIDESYNC.extra.SHIFT_PRESSED_STATE"
 
@@ -423,8 +402,6 @@
 
 .method private setSideSyncSourceBinder(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     invoke-virtual {p2}, Landroid/content/Intent;->getExtras()Landroid/os/Bundle;
 
@@ -462,8 +439,6 @@
 
 .method private setSideSyncSourceHideSoftINput(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/sidesync/SideSyncBroadcast;->mSideSyncManager:Lcom/diotek/ime/framework/sidesync/SideSyncManager;
 

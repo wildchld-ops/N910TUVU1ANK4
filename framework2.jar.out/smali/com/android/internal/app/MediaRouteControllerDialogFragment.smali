@@ -26,8 +26,6 @@
 # virtual methods
 .method public onCreateControllerDialog(Landroid/content/Context;Landroid/os/Bundle;)Lcom/android/internal/app/MediaRouteControllerDialog;
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/Bundle;
 
     new-instance v0, Lcom/android/internal/app/MediaRouteControllerDialog;
 
@@ -42,7 +40,6 @@
 
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 

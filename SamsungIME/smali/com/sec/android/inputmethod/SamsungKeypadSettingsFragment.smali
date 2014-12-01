@@ -492,7 +492,6 @@
 
 .method static synthetic access$000(Lcom/sec/android/inputmethod/SamsungKeypadSettingsFragment;)Lcom/diotek/ime/framework/common/InputManager;
     .locals 1
-    .param p0    # Lcom/sec/android/inputmethod/SamsungKeypadSettingsFragment;
 
     iget-object v0, p0, Lcom/sec/android/inputmethod/SamsungKeypadSettingsFragment;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -501,7 +500,6 @@
 
 .method static synthetic access$100(Lcom/sec/android/inputmethod/SamsungKeypadSettingsFragment;)Landroid/app/Activity;
     .locals 1
-    .param p0    # Lcom/sec/android/inputmethod/SamsungKeypadSettingsFragment;
 
     iget-object v0, p0, Lcom/sec/android/inputmethod/SamsungKeypadSettingsFragment;->settingActivity:Landroid/app/Activity;
 
@@ -510,7 +508,6 @@
 
 .method static synthetic access$1000(Lcom/sec/android/inputmethod/SamsungKeypadSettingsFragment;)Z
     .locals 1
-    .param p0    # Lcom/sec/android/inputmethod/SamsungKeypadSettingsFragment;
 
     iget-boolean v0, p0, Lcom/sec/android/inputmethod/SamsungKeypadSettingsFragment;->mIsCheckDontShowPredictiveTextGuide:Z
 
@@ -519,8 +516,6 @@
 
 .method static synthetic access$1002(Lcom/sec/android/inputmethod/SamsungKeypadSettingsFragment;Z)Z
     .locals 0
-    .param p0    # Lcom/sec/android/inputmethod/SamsungKeypadSettingsFragment;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/inputmethod/SamsungKeypadSettingsFragment;->mIsCheckDontShowPredictiveTextGuide:Z
 
@@ -529,7 +524,6 @@
 
 .method static synthetic access$1100(Lcom/sec/android/inputmethod/SamsungKeypadSettingsFragment;)Landroid/graphics/drawable/AnimationDrawable;
     .locals 1
-    .param p0    # Lcom/sec/android/inputmethod/SamsungKeypadSettingsFragment;
 
     iget-object v0, p0, Lcom/sec/android/inputmethod/SamsungKeypadSettingsFragment;->mMotionTutorialAnimationDrawble:Landroid/graphics/drawable/AnimationDrawable;
 
@@ -538,7 +532,6 @@
 
 .method static synthetic access$1200(Lcom/sec/android/inputmethod/SamsungKeypadSettingsFragment;)Landroid/graphics/drawable/AnimationDrawable;
     .locals 1
-    .param p0    # Lcom/sec/android/inputmethod/SamsungKeypadSettingsFragment;
 
     iget-object v0, p0, Lcom/sec/android/inputmethod/SamsungKeypadSettingsFragment;->mMovingTutorialAnimationDrawble:Landroid/graphics/drawable/AnimationDrawable;
 
@@ -547,7 +540,6 @@
 
 .method static synthetic access$1300(Lcom/sec/android/inputmethod/SamsungKeypadSettingsFragment;)Z
     .locals 1
-    .param p0    # Lcom/sec/android/inputmethod/SamsungKeypadSettingsFragment;
 
     invoke-direct {p0}, Lcom/sec/android/inputmethod/SamsungKeypadSettingsFragment;->areAllLanguagesDisable()Z
 
@@ -558,7 +550,6 @@
 
 .method static synthetic access$1400(Lcom/sec/android/inputmethod/SamsungKeypadSettingsFragment;)V
     .locals 0
-    .param p0    # Lcom/sec/android/inputmethod/SamsungKeypadSettingsFragment;
 
     invoke-direct {p0}, Lcom/sec/android/inputmethod/SamsungKeypadSettingsFragment;->showAutoReplacementGuideDialogToEnalbe()V
 
@@ -567,7 +558,6 @@
 
 .method static synthetic access$200(Lcom/sec/android/inputmethod/SamsungKeypadSettingsFragment;)Z
     .locals 1
-    .param p0    # Lcom/sec/android/inputmethod/SamsungKeypadSettingsFragment;
 
     iget-boolean v0, p0, Lcom/sec/android/inputmethod/SamsungKeypadSettingsFragment;->mIsKorMode:Z
 
@@ -584,7 +574,6 @@
 
 .method static synthetic access$400(Lcom/sec/android/inputmethod/SamsungKeypadSettingsFragment;)Landroid/widget/Toast;
     .locals 1
-    .param p0    # Lcom/sec/android/inputmethod/SamsungKeypadSettingsFragment;
 
     iget-object v0, p0, Lcom/sec/android/inputmethod/SamsungKeypadSettingsFragment;->mT9Toast:Landroid/widget/Toast;
 
@@ -601,7 +590,6 @@
 
 .method static synthetic access$502(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/sec/android/inputmethod/SamsungKeypadSettingsFragment;->mChangeUseTraceByChangeListener:Z
 
@@ -610,7 +598,6 @@
 
 .method static synthetic access$600(Lcom/sec/android/inputmethod/SamsungKeypadSettingsFragment;)Z
     .locals 1
-    .param p0    # Lcom/sec/android/inputmethod/SamsungKeypadSettingsFragment;
 
     iget-boolean v0, p0, Lcom/sec/android/inputmethod/SamsungKeypadSettingsFragment;->mIsSwiftKeySDK:Z
 
@@ -619,7 +606,6 @@
 
 .method static synthetic access$700(Lcom/sec/android/inputmethod/SamsungKeypadSettingsFragment;)I
     .locals 1
-    .param p0    # Lcom/sec/android/inputmethod/SamsungKeypadSettingsFragment;
 
     iget v0, p0, Lcom/sec/android/inputmethod/SamsungKeypadSettingsFragment;->mXt9Version:I
 
@@ -628,8 +614,6 @@
 
 .method static synthetic access$800(Lcom/sec/android/inputmethod/SamsungKeypadSettingsFragment;Z)V
     .locals 0
-    .param p0    # Lcom/sec/android/inputmethod/SamsungKeypadSettingsFragment;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/sec/android/inputmethod/SamsungKeypadSettingsFragment;->setSummaryForPredictiveText(Z)V
 
@@ -638,7 +622,6 @@
 
 .method static synthetic access$900(Lcom/sec/android/inputmethod/SamsungKeypadSettingsFragment;)Z
     .locals 1
-    .param p0    # Lcom/sec/android/inputmethod/SamsungKeypadSettingsFragment;
 
     iget-boolean v0, p0, Lcom/sec/android/inputmethod/SamsungKeypadSettingsFragment;->mIsCheckDontShowPinchZoomGuide:Z
 
@@ -647,8 +630,6 @@
 
 .method static synthetic access$902(Lcom/sec/android/inputmethod/SamsungKeypadSettingsFragment;Z)Z
     .locals 0
-    .param p0    # Lcom/sec/android/inputmethod/SamsungKeypadSettingsFragment;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/inputmethod/SamsungKeypadSettingsFragment;->mIsCheckDontShowPinchZoomGuide:Z
 
@@ -657,10 +638,6 @@
 
 .method private addLanguageActivityPreferenceItem(Landroid/preference/PreferenceCategory;Ljava/lang/String;Lcom/diotek/ime/framework/common/Language;I)V
     .locals 11
-    .param p1    # Landroid/preference/PreferenceCategory;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/diotek/ime/framework/common/Language;
-    .param p4    # I
 
     const/4 v2, 0x0
 
@@ -838,10 +815,6 @@
 
 .method private addLanguageListPreferenceItem(Landroid/preference/PreferenceCategory;Ljava/lang/String;Lcom/diotek/ime/framework/common/Language;I)V
     .locals 14
-    .param p1    # Landroid/preference/PreferenceCategory;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/diotek/ime/framework/common/Language;
-    .param p4    # I
 
     iget-object v1, p0, Lcom/sec/android/inputmethod/SamsungKeypadSettingsFragment;->settingActivity:Landroid/app/Activity;
 
@@ -1249,10 +1222,6 @@
 
 .method private addLanguagePreferenceItem(Landroid/preference/PreferenceCategory;Ljava/lang/String;Lcom/diotek/ime/framework/common/Language;I)V
     .locals 1
-    .param p1    # Landroid/preference/PreferenceCategory;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/diotek/ime/framework/common/Language;
-    .param p4    # I
 
     iget-boolean v0, p0, Lcom/sec/android/inputmethod/SamsungKeypadSettingsFragment;->misTablet:Z
 
@@ -1531,7 +1500,6 @@
 
 .method private changeSwipe(Landroid/preference/Preference;)V
     .locals 3
-    .param p1    # Landroid/preference/Preference;
 
     const/4 v2, 0x1
 
@@ -1694,12 +1662,6 @@
 
 .method private createLanguageListDialogPref(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;II)Landroid/preference/ListPreference;
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
-    .param p6    # I
 
     new-instance v0, Landroid/preference/ListPreference;
 
@@ -2957,7 +2919,6 @@
 
 .method private setSummaryForPredictiveText(Z)V
     .locals 5
-    .param p1    # Z
 
     const/4 v4, 0x0
 
@@ -3162,7 +3123,6 @@
 # virtual methods
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 11
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -3331,7 +3291,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 38
-    .param p1    # Landroid/os/Bundle;
 
     invoke-virtual/range {p0 .. p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 
@@ -5953,8 +5912,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
     .locals 5
-    .param p1    # Landroid/view/Menu;
-    .param p2    # Landroid/view/MenuInflater;
 
     const/4 v4, 0x0
 
@@ -6003,9 +5960,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 2
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const v0, 0x7f030080
 
@@ -6024,7 +5978,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 3
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v1, 0x1
 
@@ -6086,7 +6039,6 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)V
     .locals 5
-    .param p1    # Landroid/view/Menu;
 
     const/4 v4, 0x0
 
@@ -8427,7 +8379,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/preference/PreferenceFragment;->onSaveInstanceState(Landroid/os/Bundle;)V
 

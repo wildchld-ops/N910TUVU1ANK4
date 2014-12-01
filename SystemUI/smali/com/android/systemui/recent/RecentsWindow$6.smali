@@ -33,8 +33,6 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     # getter for: Lcom/android/systemui/recent/RecentsWindow;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/android/systemui/recent/RecentsWindow;->access$500()Ljava/lang/String;

@@ -80,10 +80,6 @@
 
 .method public constructor <init>(Landroid/media/videoeditor/VideoEditor;Ljava/lang/String;Ljava/lang/String;I)V
     .locals 12
-    .param p1    # Landroid/media/videoeditor/VideoEditor;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -117,15 +113,6 @@
 
 .method constructor <init>(Landroid/media/videoeditor/VideoEditor;Ljava/lang/String;Ljava/lang/String;IJJIZLjava/lang/String;)V
     .locals 10
-    .param p1    # Landroid/media/videoeditor/VideoEditor;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
-    .param p5    # J
-    .param p7    # J
-    .param p9    # I
-    .param p10    # Z
-    .param p11    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -546,7 +533,6 @@
 # virtual methods
 .method public addEffect(Landroid/media/videoeditor/Effect;)V
     .locals 2
-    .param p1    # Landroid/media/videoeditor/Effect;
 
     instance-of v0, p1, Landroid/media/videoeditor/EffectKenBurns;
 
@@ -568,7 +554,6 @@
 
 .method public extractAudioWaveform(Landroid/media/videoeditor/ExtractAudioWaveformProgressListener;)V
     .locals 10
-    .param p1    # Landroid/media/videoeditor/ExtractAudioWaveformProgressListener;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -840,9 +825,6 @@
 
 .method public getThumbnail(IIJ)Landroid/graphics/Bitmap;
     .locals 8
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
 
     iget-wide v0, p0, Landroid/media/videoeditor/MediaVideoItem;->mDurationMs:J
 
@@ -931,13 +913,6 @@
 
 .method public getThumbnailList(IIJJI[ILandroid/media/videoeditor/MediaItem$GetThumbnailListCallback;)V
     .locals 13
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
-    .param p5    # J
-    .param p7    # I
-    .param p8    # [I
-    .param p9    # Landroid/media/videoeditor/MediaItem$GetThumbnailListCallback;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1260,8 +1235,6 @@
 
 .method invalidateTransitions(JJ)V
     .locals 9
-    .param p1    # J
-    .param p3    # J
 
     iget-object v0, p0, Landroid/media/videoeditor/MediaVideoItem;->mBeginTransition:Landroid/media/videoeditor/Transition;
 
@@ -1328,10 +1301,6 @@
 
 .method invalidateTransitions(JJJJ)V
     .locals 11
-    .param p1    # J
-    .param p3    # J
-    .param p5    # J
-    .param p7    # J
 
     iget-object v0, p0, Landroid/media/videoeditor/MediaVideoItem;->mBeginTransition:Landroid/media/videoeditor/Transition;
 
@@ -1494,8 +1463,6 @@
 
 .method public renderFrame(Landroid/view/SurfaceHolder;J)J
     .locals 7
-    .param p1    # Landroid/view/SurfaceHolder;
-    .param p2    # J
 
     const-wide/16 v2, 0x0
 
@@ -1569,8 +1536,6 @@
 
 .method public setExtractBoundaries(JJ)V
     .locals 6
-    .param p1    # J
-    .param p3    # J
 
     const-wide/16 v4, 0x0
 
@@ -1696,7 +1661,6 @@
 
 .method public setMute(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Landroid/media/videoeditor/MediaVideoItem;->mMANativeHelper:Landroid/media/videoeditor/MediaArtistNativeHelper;
 
@@ -1729,7 +1693,6 @@
 
 .method public setVolume(I)V
     .locals 2
-    .param p1    # I
 
     if-ltz p1, :cond_0
 

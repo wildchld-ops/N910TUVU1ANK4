@@ -22,8 +22,6 @@
 # direct methods
 .method public constructor <init>(Landroid/bluetooth/IBluetoothGatt;I)V
     .locals 0
-    .param p1    # Landroid/bluetooth/IBluetoothGatt;
-    .param p2    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -160,7 +158,6 @@
 
 .method public removeManufacturerCodeAndData(I)V
     .locals 4
-    .param p1    # I
 
     iget-object v1, p0, Landroid/bluetooth/BluetoothAdvScanData;->mBluetoothGatt:Landroid/bluetooth/IBluetoothGatt;
 
@@ -207,8 +204,6 @@
 
 .method public setManufacturerData(I[B)Z
     .locals 4
-    .param p1    # I
-    .param p2    # [B
 
     const/4 v1, 0x0
 
@@ -245,7 +240,6 @@
 
 .method public setServiceData([B)Z
     .locals 4
-    .param p1    # [B
 
     const/4 v1, 0x0
 

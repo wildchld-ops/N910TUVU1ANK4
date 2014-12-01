@@ -43,7 +43,6 @@
 # direct methods
 .method constructor <init>(Landroid/util/MapCollections;I)V
     .locals 1
-    .param p2    # I
 
     iput-object p1, p0, Landroid/util/MapCollections$ArrayIterator;->this$0:Landroid/util/MapCollections;
 

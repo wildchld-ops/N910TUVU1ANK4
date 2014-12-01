@@ -27,8 +27,6 @@
 # direct methods
 .method constructor <init>(JI)V
     .locals 3
-    .param p1    # J
-    .param p3    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -51,7 +49,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/ui/SecretCacheManager$SecretModeCacheData;)I
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SecretCacheManager$SecretModeCacheData;
 
     iget v0, p0, Lcom/android/mms/ui/SecretCacheManager$SecretModeCacheData;->mSecretMode:I
 
@@ -60,8 +57,6 @@
 
 .method static synthetic access$002(Lcom/android/mms/ui/SecretCacheManager$SecretModeCacheData;I)I
     .locals 0
-    .param p0    # Lcom/android/mms/ui/SecretCacheManager$SecretModeCacheData;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/mms/ui/SecretCacheManager$SecretModeCacheData;->mSecretMode:I
 
@@ -70,7 +65,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/ui/SecretCacheManager$SecretModeCacheData;)J
     .locals 2
-    .param p0    # Lcom/android/mms/ui/SecretCacheManager$SecretModeCacheData;
 
     iget-wide v0, p0, Lcom/android/mms/ui/SecretCacheManager$SecretModeCacheData;->mId:J
 
@@ -79,7 +73,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/ui/SecretCacheManager$SecretModeCacheData;)Landroid/graphics/drawable/Drawable;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SecretCacheManager$SecretModeCacheData;
 
     iget-object v0, p0, Lcom/android/mms/ui/SecretCacheManager$SecretModeCacheData;->mAvatarDrawable:Landroid/graphics/drawable/Drawable;
 
@@ -88,7 +81,6 @@
 
 .method static synthetic access$300(Lcom/android/mms/ui/SecretCacheManager$SecretModeCacheData;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SecretCacheManager$SecretModeCacheData;
 
     iget-boolean v0, p0, Lcom/android/mms/ui/SecretCacheManager$SecretModeCacheData;->mIsStale:Z
 
@@ -97,8 +89,6 @@
 
 .method static synthetic access$302(Lcom/android/mms/ui/SecretCacheManager$SecretModeCacheData;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/ui/SecretCacheManager$SecretModeCacheData;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/SecretCacheManager$SecretModeCacheData;->mIsStale:Z
 
@@ -133,8 +123,6 @@
 # virtual methods
 .method public setSecretAvatarDrawable(JI)Z
     .locals 10
-    .param p1    # J
-    .param p3    # I
 
     const/4 v6, 0x0
 

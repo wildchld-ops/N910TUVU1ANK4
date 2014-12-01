@@ -15,8 +15,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Lcom/android/settings/wifi/mobileap/WifiApConnectedDevice;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/settings/wifi/mobileap/WifiApConnectedDevice;
 
     invoke-direct {p0, p1}, Landroid/app/AlertDialog;-><init>(Landroid/content/Context;)V
 
@@ -27,7 +25,6 @@
 
 .method private convertMilsToHHMMSS(J)Ljava/lang/String;
     .locals 13
-    .param p1    # J
 
     const-wide/16 v8, 0xe10
 
@@ -144,15 +141,12 @@
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 0
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     return-void
 .end method
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 11
-    .param p1    # Landroid/os/Bundle;
 
     const-wide/16 v9, 0x3e8
 

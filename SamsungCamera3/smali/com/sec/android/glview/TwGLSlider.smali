@@ -66,12 +66,6 @@
 # direct methods
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;FFFFI)V
     .locals 4
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # I
 
     const/4 v3, 0x1
 
@@ -145,15 +139,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;FFFFIIIZ)V
     .locals 7
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
-    .param p9    # Z
 
     invoke-direct/range {p0 .. p5}, Lcom/sec/android/glview/TwGLView;-><init>(Lcom/sec/android/glview/TwGLContext;FFFF)V
 
@@ -291,14 +276,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;FFFFIIZ)V
     .locals 7
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # I
-    .param p7    # I
-    .param p8    # Z
 
     invoke-direct/range {p0 .. p5}, Lcom/sec/android/glview/TwGLView;-><init>(Lcom/sec/android/glview/TwGLContext;FFFF)V
 
@@ -420,10 +397,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;FFI)V
     .locals 3
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # I
 
     const/4 v2, 0x0
 
@@ -473,7 +446,6 @@
 
 .method static synthetic access$000(Lcom/sec/android/glview/TwGLSlider;)Landroid/graphics/PointF;
     .locals 1
-    .param p0    # Lcom/sec/android/glview/TwGLSlider;
 
     iget-object v0, p0, Lcom/sec/android/glview/TwGLSlider;->mGaugeMarkerPos:Landroid/graphics/PointF;
 
@@ -482,7 +454,6 @@
 
 .method static synthetic access$100(Lcom/sec/android/glview/TwGLSlider;)Ljava/util/List;
     .locals 1
-    .param p0    # Lcom/sec/android/glview/TwGLSlider;
 
     iget-object v0, p0, Lcom/sec/android/glview/TwGLSlider;->mStepPosition:Ljava/util/List;
 
@@ -491,7 +462,6 @@
 
 .method static synthetic access$200(Lcom/sec/android/glview/TwGLSlider;)Lcom/sec/android/glview/TwGLButton;
     .locals 1
-    .param p0    # Lcom/sec/android/glview/TwGLSlider;
 
     iget-object v0, p0, Lcom/sec/android/glview/TwGLSlider;->mGaugeMarker:Lcom/sec/android/glview/TwGLButton;
 
@@ -500,9 +470,6 @@
 
 .method static synthetic access$300(Lcom/sec/android/glview/TwGLSlider;FF)I
     .locals 1
-    .param p0    # Lcom/sec/android/glview/TwGLSlider;
-    .param p1    # F
-    .param p2    # F
 
     invoke-direct {p0, p1, p2}, Lcom/sec/android/glview/TwGLSlider;->findNearestStepId(FF)I
 
@@ -513,7 +480,6 @@
 
 .method static synthetic access$400(Lcom/sec/android/glview/TwGLSlider;)I
     .locals 1
-    .param p0    # Lcom/sec/android/glview/TwGLSlider;
 
     iget v0, p0, Lcom/sec/android/glview/TwGLSlider;->mCurrentStep:I
 
@@ -522,8 +488,6 @@
 
 .method static synthetic access$500(Lcom/sec/android/glview/TwGLSlider;I)I
     .locals 1
-    .param p0    # Lcom/sec/android/glview/TwGLSlider;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/sec/android/glview/TwGLSlider;->translateStepByOrdering(I)I
 
@@ -534,8 +498,6 @@
 
 .method private findNearestStepId(FF)I
     .locals 7
-    .param p1    # F
-    .param p2    # F
 
     const/high16 v6, 0x40000000
 
@@ -1069,7 +1031,6 @@
 
 .method private translateStepByOrdering(I)I
     .locals 2
-    .param p1    # I
 
     iget v0, p0, Lcom/sec/android/glview/TwGLSlider;->mOrder:I
 
@@ -1137,8 +1098,6 @@
 
 .method public expandTouchAreaFromCenter(FF)V
     .locals 3
-    .param p1    # F
-    .param p2    # F
 
     const/high16 v2, 0x40000000
 
@@ -1272,7 +1231,6 @@
 
 .method public moveStep(I)Z
     .locals 12
-    .param p1    # I
 
     const-wide/16 v10, 0x0
 
@@ -1756,8 +1714,6 @@
 
 .method public onTouch(Lcom/sec/android/glview/TwGLView;Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Lcom/sec/android/glview/TwGLView;
-    .param p2    # Landroid/view/MotionEvent;
 
     invoke-virtual {p0, p2}, Lcom/sec/android/glview/TwGLView;->touchEvent(Landroid/view/MotionEvent;)Z
 
@@ -1768,7 +1724,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 11
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-static {p1}, Landroid/view/MotionEvent;->obtain(Landroid/view/MotionEvent;)Landroid/view/MotionEvent;
 
@@ -2616,7 +2571,6 @@
 
 .method public setCurrentStep(I)Z
     .locals 7
-    .param p1    # I
 
     const/4 v6, 0x0
 
@@ -2753,9 +2707,6 @@
 
 .method public setGaugeBar(FFI)V
     .locals 2
-    .param p1    # F
-    .param p2    # F
-    .param p3    # I
 
     new-instance v0, Lcom/sec/android/glview/TwGLNinePatch;
 
@@ -3024,10 +2975,6 @@
 
 .method public setGaugeMarker(IIFF)V
     .locals 9
-    .param p1    # I
-    .param p2    # I
-    .param p3    # F
-    .param p4    # F
 
     const/4 v2, 0x0
 
@@ -3189,7 +3136,6 @@
 
 .method public setGaugeZeroStep(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/glview/TwGLSlider;->mStepPosition:Ljava/util/List;
 
@@ -3242,7 +3188,6 @@
 
 .method public setOnSliderChangeListener(Lcom/sec/android/glview/TwGLSlider$OnSliderChangeListener;)V
     .locals 0
-    .param p1    # Lcom/sec/android/glview/TwGLSlider$OnSliderChangeListener;
 
     iput-object p1, p0, Lcom/sec/android/glview/TwGLSlider;->mOnSliderChangeListener:Lcom/sec/android/glview/TwGLSlider$OnSliderChangeListener;
 
@@ -3251,7 +3196,6 @@
 
 .method public setOrder(I)Z
     .locals 1
-    .param p1    # I
 
     const/16 v0, 0xa
 
@@ -3277,12 +3221,6 @@
 
 .method public setSliderBackground(FFFFIZ)V
     .locals 7
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # I
-    .param p6    # Z
 
     if-eqz p6, :cond_1
 

@@ -16,7 +16,6 @@
 # direct methods
 .method public constructor <init>(Landroid/graphics/drawable/Drawable;)V
     .locals 0
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -27,8 +26,6 @@
 
 .method public constructor <init>(Landroid/graphics/drawable/Drawable;I)V
     .locals 0
-    .param p1    # Landroid/graphics/drawable/Drawable;
-    .param p2    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -43,12 +40,6 @@
 # virtual methods
 .method public chooseHeight(Ljava/lang/CharSequence;IIIILandroid/graphics/Paint$FontMetricsInt;)V
     .locals 4
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Landroid/graphics/Paint$FontMetricsInt;
 
     check-cast p1, Landroid/text/Spanned;
 
@@ -111,18 +102,6 @@
 
 .method public drawLeadingMargin(Landroid/graphics/Canvas;Landroid/graphics/Paint;IIIIILjava/lang/CharSequence;IIZLandroid/text/Layout;)V
     .locals 9
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # Landroid/graphics/Paint;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # Ljava/lang/CharSequence;
-    .param p9    # I
-    .param p10    # I
-    .param p11    # Z
-    .param p12    # Landroid/text/Layout;
 
     check-cast p8, Landroid/text/Spanned;
 
@@ -175,7 +154,6 @@
 
 .method public getLeadingMargin(Z)I
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Landroid/text/style/DrawableMarginSpan;->mDrawable:Landroid/graphics/drawable/Drawable;
 

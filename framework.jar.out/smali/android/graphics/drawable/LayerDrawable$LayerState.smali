@@ -41,9 +41,6 @@
 # direct methods
 .method constructor <init>(Landroid/graphics/drawable/LayerDrawable$LayerState;Landroid/graphics/drawable/LayerDrawable;Landroid/content/res/Resources;)V
     .locals 7
-    .param p1    # Landroid/graphics/drawable/LayerDrawable$LayerState;
-    .param p2    # Landroid/graphics/drawable/LayerDrawable;
-    .param p3    # Landroid/content/res/Resources;
 
     const/4 v5, 0x0
 
@@ -198,7 +195,6 @@
 
 .method static synthetic access$000(Landroid/graphics/drawable/LayerDrawable$LayerState;)Z
     .locals 1
-    .param p0    # Landroid/graphics/drawable/LayerDrawable$LayerState;
 
     iget-boolean v0, p0, Landroid/graphics/drawable/LayerDrawable$LayerState;->mAutoMirrored:Z
 
@@ -207,8 +203,6 @@
 
 .method static synthetic access$002(Landroid/graphics/drawable/LayerDrawable$LayerState;Z)Z
     .locals 0
-    .param p0    # Landroid/graphics/drawable/LayerDrawable$LayerState;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/graphics/drawable/LayerDrawable$LayerState;->mAutoMirrored:Z
 
@@ -410,7 +404,6 @@
 
 .method public newDrawable(Landroid/content/res/Resources;)Landroid/graphics/drawable/Drawable;
     .locals 1
-    .param p1    # Landroid/content/res/Resources;
 
     new-instance v0, Landroid/graphics/drawable/LayerDrawable;
 

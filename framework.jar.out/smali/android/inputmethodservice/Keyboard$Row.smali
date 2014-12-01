@@ -44,9 +44,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/res/Resources;Landroid/inputmethodservice/Keyboard;Landroid/content/res/XmlResourceParser;)V
     .locals 6
-    .param p1    # Landroid/content/res/Resources;
-    .param p2    # Landroid/inputmethodservice/Keyboard;
-    .param p3    # Landroid/content/res/XmlResourceParser;
 
     const/4 v5, 0x1
 
@@ -169,7 +166,6 @@
 
 .method public constructor <init>(Landroid/inputmethodservice/Keyboard;)V
     .locals 1
-    .param p1    # Landroid/inputmethodservice/Keyboard;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -186,7 +182,6 @@
 
 .method static synthetic access$600(Landroid/inputmethodservice/Keyboard$Row;)Landroid/inputmethodservice/Keyboard;
     .locals 1
-    .param p0    # Landroid/inputmethodservice/Keyboard$Row;
 
     iget-object v0, p0, Landroid/inputmethodservice/Keyboard$Row;->parent:Landroid/inputmethodservice/Keyboard;
 

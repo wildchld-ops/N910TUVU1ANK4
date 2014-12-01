@@ -41,7 +41,7 @@
 
     iget-object v0, p0, Lcom/android/phone/DeleteFdnContactScreen$1;->this$0:Lcom/android/phone/DeleteFdnContactScreen;
 
-    invoke-virtual {v0}, Landroid/app/Fragment;->isAdded()Z
+    invoke-virtual {v0}, Lcom/android/phone/DeleteFdnContactScreen;->isAdded()Z
 
     move-result v0
 

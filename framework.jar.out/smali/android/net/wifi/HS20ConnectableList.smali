@@ -64,7 +64,6 @@
 
 .method public constructor <init>(Landroid/net/wifi/HS20ConnectableList;)V
     .locals 5
-    .param p1    # Landroid/net/wifi/HS20ConnectableList;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -216,8 +215,6 @@
 
 .method private getSecuredMacAddress(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/16 v5, 0xe
 
@@ -394,7 +391,6 @@
 
 .method public get(Ljava/lang/String;)Landroid/net/wifi/Hs20ScanResult;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -464,7 +460,6 @@
 
 .method public remove(Landroid/net/wifi/HS20ConnectableList;)Z
     .locals 4
-    .param p1    # Landroid/net/wifi/HS20ConnectableList;
 
     const/4 v2, 0x0
 
@@ -508,7 +503,6 @@
 
 .method public remove(Landroid/net/wifi/Hs20ScanResult;)Z
     .locals 4
-    .param p1    # Landroid/net/wifi/Hs20ScanResult;
 
     const/4 v2, 0x0
 
@@ -623,7 +617,6 @@
 
 .method public update(Landroid/net/wifi/Hs20ScanResult;)V
     .locals 8
-    .param p1    # Landroid/net/wifi/Hs20ScanResult;
 
     const/4 v7, 0x0
 
@@ -782,8 +775,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 3
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v2, p0, Landroid/net/wifi/HS20ConnectableList;->mConnectableAPs:Ljava/util/LinkedHashMap;
 

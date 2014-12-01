@@ -74,7 +74,6 @@
 
 .method private static parseResponse(Ljava/lang/String;)Ljava/util/List;
     .locals 14
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -207,16 +206,12 @@
 # virtual methods
 .method public connectFailed(Ljava/net/URI;Ljava/net/SocketAddress;Ljava/io/IOException;)V
     .locals 0
-    .param p1    # Ljava/net/URI;
-    .param p2    # Ljava/net/SocketAddress;
-    .param p3    # Ljava/io/IOException;
 
     return-void
 .end method
 
 .method public select(Ljava/net/URI;)Ljava/util/List;
     .locals 6
-    .param p1    # Ljava/net/URI;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

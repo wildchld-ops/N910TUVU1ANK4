@@ -36,7 +36,6 @@
 # virtual methods
 .method public onDismiss(Landroid/content/DialogInterface;)V
     .locals 3
-    .param p1    # Landroid/content/DialogInterface;
 
     iget-object v1, p0, Lcom/android/settings/wifi/WifiPoorConnection$4;->this$0:Lcom/android/settings/wifi/WifiPoorConnection;
 

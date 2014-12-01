@@ -36,7 +36,6 @@
 # direct methods
 .method constructor <init>(I)V
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -55,7 +54,6 @@
 # virtual methods
 .method protected varargs doInBackground([Lcom/android/launcher2/MenuWidgets$AsyncTaskPageData;)Lcom/android/launcher2/MenuWidgets$AsyncTaskPageData;
     .locals 3
-    .param p1    # [Lcom/android/launcher2/MenuWidgets$AsyncTaskPageData;
 
     const/4 v2, 0x0
 
@@ -86,7 +84,6 @@
 
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [Lcom/android/launcher2/MenuWidgets$AsyncTaskPageData;
 
@@ -99,7 +96,6 @@
 
 .method protected onPostExecute(Lcom/android/launcher2/MenuWidgets$AsyncTaskPageData;)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/MenuWidgets$AsyncTaskPageData;
 
     iget-object v0, p1, Lcom/android/launcher2/MenuWidgets$AsyncTaskPageData;->postExecuteCallback:Lcom/android/launcher2/MenuWidgets$AsyncTaskPageData$AsyncTaskCallback;
 
@@ -110,7 +106,6 @@
 
 .method protected bridge synthetic onPostExecute(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/android/launcher2/MenuWidgets$AsyncTaskPageData;
 
@@ -121,7 +116,6 @@
 
 .method public requestCancel(Z)Z
     .locals 1
-    .param p1    # Z
 
     const/4 v0, 0x1
 
@@ -136,7 +130,6 @@
 
 .method setThreadPriority(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/launcher2/MenuWidgets$AppsCustomizeAsyncTask;->threadPriority:I
 

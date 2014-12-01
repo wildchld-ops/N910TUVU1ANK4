@@ -36,8 +36,6 @@
 # virtual methods
 .method public onAniProgress(Lcom/sec/android/glview/TwGLView;I)V
     .locals 2
-    .param p1    # Lcom/sec/android/glview/TwGLView;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLPostViewShutter$1;->this$0:Lcom/sec/android/app/camera/glwidget/TwGLPostViewShutter;
 

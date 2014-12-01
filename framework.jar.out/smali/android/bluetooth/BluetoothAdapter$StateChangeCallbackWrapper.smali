@@ -23,7 +23,6 @@
 # direct methods
 .method constructor <init>(Landroid/bluetooth/BluetoothAdapter;Landroid/bluetooth/BluetoothAdapter$BluetoothStateChangeCallback;)V
     .locals 0
-    .param p2    # Landroid/bluetooth/BluetoothAdapter$BluetoothStateChangeCallback;
 
     iput-object p1, p0, Landroid/bluetooth/BluetoothAdapter$StateChangeCallbackWrapper;->this$0:Landroid/bluetooth/BluetoothAdapter;
 
@@ -38,7 +37,6 @@
 # virtual methods
 .method public onBluetoothStateChange(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Landroid/bluetooth/BluetoothAdapter$StateChangeCallbackWrapper;->mCallback:Landroid/bluetooth/BluetoothAdapter$BluetoothStateChangeCallback;
 

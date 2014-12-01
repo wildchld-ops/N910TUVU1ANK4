@@ -17,7 +17,6 @@
 
 .method private getBottomLine(Landroid/widget/TextView;)I
     .locals 3
-    .param p1    # Landroid/widget/TextView;
 
     invoke-virtual {p1}, Landroid/widget/TextView;->getLayout()Landroid/text/Layout;
 
@@ -42,7 +41,6 @@
 
 .method private getCharacterWidth(Landroid/widget/TextView;)I
     .locals 2
-    .param p1    # Landroid/widget/TextView;
 
     invoke-virtual {p1}, Landroid/widget/TextView;->getPaint()Landroid/text/TextPaint;
 
@@ -65,7 +63,6 @@
 
 .method private getInnerHeight(Landroid/widget/TextView;)I
     .locals 2
-    .param p1    # Landroid/widget/TextView;
 
     invoke-virtual {p1}, Landroid/view/View;->getHeight()I
 
@@ -88,7 +85,6 @@
 
 .method private getInnerWidth(Landroid/widget/TextView;)I
     .locals 2
-    .param p1    # Landroid/widget/TextView;
 
     invoke-virtual {p1}, Landroid/view/View;->getWidth()I
 
@@ -111,7 +107,6 @@
 
 .method private getScrollBoundsLeft(Landroid/widget/TextView;)I
     .locals 8
-    .param p1    # Landroid/widget/TextView;
 
     invoke-virtual {p1}, Landroid/widget/TextView;->getLayout()Landroid/text/Layout;
 
@@ -164,7 +159,6 @@
 
 .method private getScrollBoundsRight(Landroid/widget/TextView;)I
     .locals 8
-    .param p1    # Landroid/widget/TextView;
 
     invoke-virtual {p1}, Landroid/widget/TextView;->getLayout()Landroid/text/Layout;
 
@@ -217,7 +211,6 @@
 
 .method private getTopLine(Landroid/widget/TextView;)I
     .locals 2
-    .param p1    # Landroid/widget/TextView;
 
     invoke-virtual {p1}, Landroid/widget/TextView;->getLayout()Landroid/text/Layout;
 
@@ -238,8 +231,6 @@
 # virtual methods
 .method protected bottom(Landroid/widget/TextView;Landroid/text/Spannable;)Z
     .locals 1
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # Landroid/text/Spannable;
 
     const/4 v0, 0x0
 
@@ -256,8 +247,6 @@
 
 .method protected down(Landroid/widget/TextView;Landroid/text/Spannable;)Z
     .locals 1
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # Landroid/text/Spannable;
 
     const/4 v0, 0x0
 
@@ -266,8 +255,6 @@
 
 .method protected end(Landroid/widget/TextView;Landroid/text/Spannable;)Z
     .locals 1
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # Landroid/text/Spannable;
 
     const/4 v0, 0x0
 
@@ -276,8 +263,6 @@
 
 .method protected getMovementMetaState(Landroid/text/Spannable;Landroid/view/KeyEvent;)I
     .locals 2
-    .param p1    # Landroid/text/Spannable;
-    .param p2    # Landroid/view/KeyEvent;
 
     invoke-static {p1, p2}, Landroid/text/method/MetaKeyKeyListener;->getMetaState(Ljava/lang/CharSequence;Landroid/view/KeyEvent;)I
 
@@ -296,11 +281,6 @@
 
 .method protected handleMovementKey(Landroid/widget/TextView;Landroid/text/Spannable;IILandroid/view/KeyEvent;)Z
     .locals 3
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # Landroid/text/Spannable;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Landroid/view/KeyEvent;
 
     const/16 v2, 0x1000
 
@@ -565,8 +545,6 @@
 
 .method protected home(Landroid/widget/TextView;Landroid/text/Spannable;)Z
     .locals 1
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # Landroid/text/Spannable;
 
     const/4 v0, 0x0
 
@@ -575,16 +553,12 @@
 
 .method public initialize(Landroid/widget/TextView;Landroid/text/Spannable;)V
     .locals 0
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # Landroid/text/Spannable;
 
     return-void
 .end method
 
 .method protected left(Landroid/widget/TextView;Landroid/text/Spannable;)Z
     .locals 1
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # Landroid/text/Spannable;
 
     const/4 v0, 0x0
 
@@ -593,8 +567,6 @@
 
 .method protected leftWord(Landroid/widget/TextView;Landroid/text/Spannable;)Z
     .locals 1
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # Landroid/text/Spannable;
 
     const/4 v0, 0x0
 
@@ -603,8 +575,6 @@
 
 .method protected lineEnd(Landroid/widget/TextView;Landroid/text/Spannable;)Z
     .locals 1
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # Landroid/text/Spannable;
 
     const/4 v0, 0x0
 
@@ -613,8 +583,6 @@
 
 .method protected lineStart(Landroid/widget/TextView;Landroid/text/Spannable;)Z
     .locals 1
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # Landroid/text/Spannable;
 
     const/4 v0, 0x0
 
@@ -623,9 +591,6 @@
 
 .method public onGenericMotionEvent(Landroid/widget/TextView;Landroid/text/Spannable;Landroid/view/MotionEvent;)Z
     .locals 6
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # Landroid/text/Spannable;
-    .param p3    # Landroid/view/MotionEvent;
 
     const/16 v4, 0x9
 
@@ -781,10 +746,6 @@
 
 .method public onKeyDown(Landroid/widget/TextView;Landroid/text/Spannable;ILandroid/view/KeyEvent;)Z
     .locals 7
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # Landroid/text/Spannable;
-    .param p3    # I
-    .param p4    # Landroid/view/KeyEvent;
 
     invoke-virtual {p0, p2, p4}, Landroid/text/method/BaseMovementMethod;->getMovementMetaState(Landroid/text/Spannable;Landroid/view/KeyEvent;)I
 
@@ -816,9 +777,6 @@
 
 .method public onKeyOther(Landroid/widget/TextView;Landroid/text/Spannable;Landroid/view/KeyEvent;)Z
     .locals 9
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # Landroid/text/Spannable;
-    .param p3    # Landroid/view/KeyEvent;
 
     invoke-virtual {p0, p2, p3}, Landroid/text/method/BaseMovementMethod;->getMovementMetaState(Landroid/text/Spannable;Landroid/view/KeyEvent;)I
 
@@ -889,10 +847,6 @@
 
 .method public onKeyUp(Landroid/widget/TextView;Landroid/text/Spannable;ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # Landroid/text/Spannable;
-    .param p3    # I
-    .param p4    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x0
 
@@ -901,18 +855,12 @@
 
 .method public onTakeFocus(Landroid/widget/TextView;Landroid/text/Spannable;I)V
     .locals 0
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # Landroid/text/Spannable;
-    .param p3    # I
 
     return-void
 .end method
 
 .method public onTouchEvent(Landroid/widget/TextView;Landroid/text/Spannable;Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # Landroid/text/Spannable;
-    .param p3    # Landroid/view/MotionEvent;
 
     const/4 v0, 0x0
 
@@ -921,9 +869,6 @@
 
 .method public onTrackballEvent(Landroid/widget/TextView;Landroid/text/Spannable;Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # Landroid/text/Spannable;
-    .param p3    # Landroid/view/MotionEvent;
 
     const/4 v0, 0x0
 
@@ -932,8 +877,6 @@
 
 .method protected pageDown(Landroid/widget/TextView;Landroid/text/Spannable;)Z
     .locals 1
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # Landroid/text/Spannable;
 
     const/4 v0, 0x0
 
@@ -942,8 +885,6 @@
 
 .method protected pageUp(Landroid/widget/TextView;Landroid/text/Spannable;)Z
     .locals 1
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # Landroid/text/Spannable;
 
     const/4 v0, 0x0
 
@@ -952,8 +893,6 @@
 
 .method protected right(Landroid/widget/TextView;Landroid/text/Spannable;)Z
     .locals 1
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # Landroid/text/Spannable;
 
     const/4 v0, 0x0
 
@@ -962,8 +901,6 @@
 
 .method protected rightWord(Landroid/widget/TextView;Landroid/text/Spannable;)Z
     .locals 1
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # Landroid/text/Spannable;
 
     const/4 v0, 0x0
 
@@ -972,8 +909,6 @@
 
 .method protected scrollBottom(Landroid/widget/TextView;Landroid/text/Spannable;)Z
     .locals 5
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # Landroid/text/Spannable;
 
     invoke-virtual {p1}, Landroid/widget/TextView;->getLayout()Landroid/text/Layout;
 
@@ -1020,9 +955,6 @@
 
 .method protected scrollDown(Landroid/widget/TextView;Landroid/text/Spannable;I)Z
     .locals 7
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # Landroid/text/Spannable;
-    .param p3    # I
 
     invoke-virtual {p1}, Landroid/widget/TextView;->getLayout()Landroid/text/Layout;
 
@@ -1098,9 +1030,6 @@
 
 .method protected scrollLeft(Landroid/widget/TextView;Landroid/text/Spannable;I)Z
     .locals 3
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # Landroid/text/Spannable;
-    .param p3    # I
 
     invoke-direct {p0, p1}, Landroid/text/method/BaseMovementMethod;->getScrollBoundsLeft(Landroid/widget/TextView;)I
 
@@ -1143,8 +1072,6 @@
 
 .method protected scrollLineEnd(Landroid/widget/TextView;Landroid/text/Spannable;)Z
     .locals 4
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # Landroid/text/Spannable;
 
     invoke-direct {p0, p1}, Landroid/text/method/BaseMovementMethod;->getScrollBoundsRight(Landroid/widget/TextView;)I
 
@@ -1181,8 +1108,6 @@
 
 .method protected scrollLineStart(Landroid/widget/TextView;Landroid/text/Spannable;)Z
     .locals 3
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # Landroid/text/Spannable;
 
     invoke-direct {p0, p1}, Landroid/text/method/BaseMovementMethod;->getScrollBoundsLeft(Landroid/widget/TextView;)I
 
@@ -1213,8 +1138,6 @@
 
 .method protected scrollPageDown(Landroid/widget/TextView;Landroid/text/Spannable;)Z
     .locals 6
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # Landroid/text/Spannable;
 
     invoke-virtual {p1}, Landroid/widget/TextView;->getLayout()Landroid/text/Layout;
 
@@ -1271,8 +1194,6 @@
 
 .method protected scrollPageUp(Landroid/widget/TextView;Landroid/text/Spannable;)Z
     .locals 5
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # Landroid/text/Spannable;
 
     invoke-virtual {p1}, Landroid/widget/TextView;->getLayout()Landroid/text/Layout;
 
@@ -1317,9 +1238,6 @@
 
 .method protected scrollRight(Landroid/widget/TextView;Landroid/text/Spannable;I)Z
     .locals 4
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # Landroid/text/Spannable;
-    .param p3    # I
 
     invoke-direct {p0, p1}, Landroid/text/method/BaseMovementMethod;->getScrollBoundsRight(Landroid/widget/TextView;)I
 
@@ -1368,8 +1286,6 @@
 
 .method protected scrollTop(Landroid/widget/TextView;Landroid/text/Spannable;)Z
     .locals 3
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # Landroid/text/Spannable;
 
     const/4 v1, 0x0
 
@@ -1401,9 +1317,6 @@
 
 .method protected scrollUp(Landroid/widget/TextView;Landroid/text/Spannable;I)Z
     .locals 5
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # Landroid/text/Spannable;
-    .param p3    # I
 
     const/4 v3, 0x0
 
@@ -1456,8 +1369,6 @@
 
 .method protected top(Landroid/widget/TextView;Landroid/text/Spannable;)Z
     .locals 1
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # Landroid/text/Spannable;
 
     const/4 v0, 0x0
 
@@ -1466,8 +1377,6 @@
 
 .method protected up(Landroid/widget/TextView;Landroid/text/Spannable;)Z
     .locals 1
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # Landroid/text/Spannable;
 
     const/4 v0, 0x0
 

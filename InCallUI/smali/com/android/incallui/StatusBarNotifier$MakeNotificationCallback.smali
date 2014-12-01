@@ -26,7 +26,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/incallui/StatusBarNotifier;Z)V
     .locals 1
-    .param p2    # Z
 
     iput-object p1, p0, Lcom/android/incallui/StatusBarNotifier$MakeNotificationCallback;->this$0:Lcom/android/incallui/StatusBarNotifier;
 
@@ -45,8 +44,6 @@
 # virtual methods
 .method public onContactInfoComplete(ILcom/android/incallui/ContactInfoCache$ContactCacheEntry;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Lcom/android/incallui/ContactInfoCache$ContactCacheEntry;
 
     invoke-static {}, Lcom/android/incallui/CallList;->getInstance()Lcom/android/incallui/CallList;
 
@@ -78,8 +75,6 @@
 
 .method public onImageLoadComplete(ILcom/android/incallui/ContactInfoCache$ContactCacheEntry;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Lcom/android/incallui/ContactInfoCache$ContactCacheEntry;
 
     invoke-static {}, Lcom/android/incallui/CallList;->getInstance()Lcom/android/incallui/CallList;
 

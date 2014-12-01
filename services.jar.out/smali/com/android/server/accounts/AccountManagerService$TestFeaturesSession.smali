@@ -25,10 +25,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/accounts/AccountManagerService;Lcom/android/server/accounts/AccountManagerService$UserAccounts;Landroid/accounts/IAccountManagerResponse;Landroid/accounts/Account;[Ljava/lang/String;)V
     .locals 7
-    .param p2    # Lcom/android/server/accounts/AccountManagerService$UserAccounts;
-    .param p3    # Landroid/accounts/IAccountManagerResponse;
-    .param p4    # Landroid/accounts/Account;
-    .param p5    # [Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/server/accounts/AccountManagerService$TestFeaturesSession;->this$0:Lcom/android/server/accounts/AccountManagerService;
 
@@ -59,7 +55,6 @@
 # virtual methods
 .method public onResult(Landroid/os/Bundle;)V
     .locals 7
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v6, 0x2
 
@@ -206,7 +201,6 @@
 
 .method protected toDebugString(J)Ljava/lang/String;
     .locals 3
-    .param p1    # J
 
     new-instance v0, Ljava/lang/StringBuilder;
 

@@ -70,7 +70,6 @@
 # virtual methods
 .method public final onGpsStatusChanged(I)V
     .locals 10
-    .param p1    # I
 
     const/4 v9, 0x4
 

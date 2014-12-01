@@ -78,13 +78,6 @@
 
 .method public static apply(IIILandroid/graphics/Rect;IILandroid/graphics/Rect;)V
     .locals 5
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/graphics/Rect;
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Landroid/graphics/Rect;
 
     const/16 v4, 0x80
 
@@ -432,14 +425,6 @@
 
 .method public static apply(IIILandroid/graphics/Rect;IILandroid/graphics/Rect;I)V
     .locals 7
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/graphics/Rect;
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Landroid/graphics/Rect;
-    .param p7    # I
 
     invoke-static {p0, p7}, Landroid/view/Gravity;->getAbsoluteGravity(II)I
 
@@ -464,11 +449,6 @@
 
 .method public static apply(IIILandroid/graphics/Rect;Landroid/graphics/Rect;)V
     .locals 7
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/graphics/Rect;
-    .param p4    # Landroid/graphics/Rect;
 
     const/4 v4, 0x0
 
@@ -491,12 +471,6 @@
 
 .method public static apply(IIILandroid/graphics/Rect;Landroid/graphics/Rect;I)V
     .locals 7
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/graphics/Rect;
-    .param p4    # Landroid/graphics/Rect;
-    .param p5    # I
 
     const/4 v4, 0x0
 
@@ -521,19 +495,6 @@
 
 .method public static apply(IIILandroid/graphics/Rect;Landroid/graphics/Rect;IILandroid/graphics/Rect;ZZZFF)V
     .locals 4
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/graphics/Rect;
-    .param p4    # Landroid/graphics/Rect;
-    .param p5    # I
-    .param p6    # I
-    .param p7    # Landroid/graphics/Rect;
-    .param p8    # Z
-    .param p9    # Z
-    .param p10    # Z
-    .param p11    # F
-    .param p12    # F
 
     if-eqz p8, :cond_1
 
@@ -1099,9 +1060,6 @@
 
 .method public static applyDisplay(ILandroid/graphics/Rect;Landroid/graphics/Rect;)V
     .locals 4
-    .param p0    # I
-    .param p1    # Landroid/graphics/Rect;
-    .param p2    # Landroid/graphics/Rect;
 
     const/high16 v1, 0x10000000
 
@@ -1308,10 +1266,6 @@
 
 .method public static applyDisplay(ILandroid/graphics/Rect;Landroid/graphics/Rect;I)V
     .locals 1
-    .param p0    # I
-    .param p1    # Landroid/graphics/Rect;
-    .param p2    # Landroid/graphics/Rect;
-    .param p3    # I
 
     invoke-static {p0, p3}, Landroid/view/Gravity;->getAbsoluteGravity(II)I
 
@@ -1324,8 +1278,6 @@
 
 .method public static getAbsoluteGravity(II)I
     .locals 5
-    .param p0    # I
-    .param p1    # I
 
     const v4, 0x800005
 
@@ -1390,7 +1342,6 @@
 
 .method public static isHorizontal(I)Z
     .locals 1
-    .param p0    # I
 
     if-lez p0, :cond_0
 
@@ -1413,7 +1364,6 @@
 
 .method public static isVertical(I)Z
     .locals 1
-    .param p0    # I
 
     if-lez p0, :cond_0
 

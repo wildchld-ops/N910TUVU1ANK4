@@ -21,7 +21,6 @@
 # direct methods
 .method constructor <init>(F)V
     .locals 1
-    .param p1    # F
 
     invoke-direct {p0}, Landroid/animation/Keyframe;-><init>()V
 
@@ -36,8 +35,6 @@
 
 .method constructor <init>(FF)V
     .locals 1
-    .param p1    # F
-    .param p2    # F
 
     invoke-direct {p0}, Landroid/animation/Keyframe;-><init>()V
 
@@ -143,7 +140,6 @@
 
 .method public setValue(Ljava/lang/Object;)V
     .locals 2
-    .param p1    # Ljava/lang/Object;
 
     if-eqz p1, :cond_0
 

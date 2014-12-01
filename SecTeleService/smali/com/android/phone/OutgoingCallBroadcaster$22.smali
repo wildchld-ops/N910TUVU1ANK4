@@ -43,11 +43,11 @@
 
     const/16 v1, 0x9
 
-    invoke-virtual {v0, v1}, Landroid/app/Activity;->removeDialog(I)V
+    invoke-virtual {v0, v1}, Lcom/android/phone/OutgoingCallBroadcaster;->removeDialog(I)V
 
     iget-object v0, p0, Lcom/android/phone/OutgoingCallBroadcaster$22;->this$0:Lcom/android/phone/OutgoingCallBroadcaster;
 
-    invoke-virtual {v0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v0}, Lcom/android/phone/OutgoingCallBroadcaster;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 

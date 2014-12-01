@@ -83,11 +83,6 @@
 # direct methods
 .method public constructor <init>(IIIII)V
     .locals 9
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;
@@ -236,7 +231,6 @@
 
 .method static synthetic access$000(Landroid/media/AudioRecord;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Landroid/media/AudioRecord;
 
     iget-object v0, p0, Landroid/media/AudioRecord;->mPositionListenerLock:Ljava/lang/Object;
 
@@ -245,7 +239,6 @@
 
 .method static synthetic access$100(Landroid/media/AudioRecord;)Landroid/media/AudioRecord$OnRecordPositionUpdateListener;
     .locals 1
-    .param p0    # Landroid/media/AudioRecord;
 
     iget-object v0, p0, Landroid/media/AudioRecord;->mPositionListener:Landroid/media/AudioRecord$OnRecordPositionUpdateListener;
 
@@ -254,7 +247,6 @@
 
 .method static synthetic access$200(Ljava/lang/String;)V
     .locals 0
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Landroid/media/AudioRecord;->loge(Ljava/lang/String;)V
 
@@ -263,7 +255,6 @@
 
 .method private audioBuffSizeCheck(I)V
     .locals 4
-    .param p1    # I
 
     iget v2, p0, Landroid/media/AudioRecord;->mAudioFormat:I
 
@@ -325,10 +316,6 @@
 
 .method private audioParamCheck(IIII)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/4 v1, 0x2
 
@@ -666,9 +653,6 @@
 
 .method public static getMinBufferSize(III)I
     .locals 5
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
 
     const/4 v3, -0x1
 
@@ -770,7 +754,6 @@
 
 .method private static logd(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "android.media.AudioRecord"
 
@@ -781,7 +764,6 @@
 
 .method private static loge(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "android.media.AudioRecord"
 
@@ -831,11 +813,6 @@
 
 .method private static postEventFromNative(Ljava/lang/Object;IIILjava/lang/Object;)V
     .locals 3
-    .param p0    # Ljava/lang/Object;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/Object;
 
     check-cast p0, Ljava/lang/ref/WeakReference;
 
@@ -983,8 +960,6 @@
 
 .method public read(Ljava/nio/ByteBuffer;I)I
     .locals 4
-    .param p1    # Ljava/nio/ByteBuffer;
-    .param p2    # I
 
     const/4 v3, 0x1
 
@@ -1047,9 +1022,6 @@
 
 .method public read([BII)I
     .locals 4
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
 
     const/4 v3, 0x1
 
@@ -1124,9 +1096,6 @@
 
 .method public read([SII)I
     .locals 4
-    .param p1    # [S
-    .param p2    # I
-    .param p3    # I
 
     const/4 v3, 0x1
 
@@ -1224,7 +1193,6 @@
 
 .method public setNotificationMarkerPosition(I)I
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/media/AudioRecord;->mState:I
 
@@ -1252,7 +1220,6 @@
 
 .method public setPositionNotificationPeriod(I)I
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/media/AudioRecord;->mState:I
 
@@ -1276,7 +1243,6 @@
 
 .method public setRecordPositionUpdateListener(Landroid/media/AudioRecord$OnRecordPositionUpdateListener;)V
     .locals 1
-    .param p1    # Landroid/media/AudioRecord$OnRecordPositionUpdateListener;
 
     const/4 v0, 0x0
 
@@ -1287,8 +1253,6 @@
 
 .method public setRecordPositionUpdateListener(Landroid/media/AudioRecord$OnRecordPositionUpdateListener;Landroid/os/Handler;)V
     .locals 3
-    .param p1    # Landroid/media/AudioRecord$OnRecordPositionUpdateListener;
-    .param p2    # Landroid/os/Handler;
 
     iget-object v1, p0, Landroid/media/AudioRecord;->mPositionListenerLock:Ljava/lang/Object;
 
@@ -1418,7 +1382,6 @@
 
 .method public startRecording(Landroid/media/MediaSyncEvent;)V
     .locals 3
-    .param p1    # Landroid/media/MediaSyncEvent;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;

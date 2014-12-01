@@ -30,7 +30,6 @@
 # virtual methods
 .method public getLayoutDirection(Landroid/view/ViewGroup$MarginLayoutParams;)I
     .locals 1
-    .param p1    # Landroid/view/ViewGroup$MarginLayoutParams;
 
     const/4 v0, 0x0
 
@@ -39,7 +38,6 @@
 
 .method public getMarginEnd(Landroid/view/ViewGroup$MarginLayoutParams;)I
     .locals 1
-    .param p1    # Landroid/view/ViewGroup$MarginLayoutParams;
 
     iget v0, p1, Landroid/view/ViewGroup$MarginLayoutParams;->rightMargin:I
 
@@ -48,7 +46,6 @@
 
 .method public getMarginStart(Landroid/view/ViewGroup$MarginLayoutParams;)I
     .locals 1
-    .param p1    # Landroid/view/ViewGroup$MarginLayoutParams;
 
     iget v0, p1, Landroid/view/ViewGroup$MarginLayoutParams;->leftMargin:I
 
@@ -57,7 +54,6 @@
 
 .method public isMarginRelative(Landroid/view/ViewGroup$MarginLayoutParams;)Z
     .locals 1
-    .param p1    # Landroid/view/ViewGroup$MarginLayoutParams;
 
     const/4 v0, 0x0
 
@@ -66,24 +62,18 @@
 
 .method public resolveLayoutDirection(Landroid/view/ViewGroup$MarginLayoutParams;I)V
     .locals 0
-    .param p1    # Landroid/view/ViewGroup$MarginLayoutParams;
-    .param p2    # I
 
     return-void
 .end method
 
 .method public setLayoutDirection(Landroid/view/ViewGroup$MarginLayoutParams;I)V
     .locals 0
-    .param p1    # Landroid/view/ViewGroup$MarginLayoutParams;
-    .param p2    # I
 
     return-void
 .end method
 
 .method public setMarginEnd(Landroid/view/ViewGroup$MarginLayoutParams;I)V
     .locals 0
-    .param p1    # Landroid/view/ViewGroup$MarginLayoutParams;
-    .param p2    # I
 
     iput p2, p1, Landroid/view/ViewGroup$MarginLayoutParams;->rightMargin:I
 
@@ -92,8 +82,6 @@
 
 .method public setMarginStart(Landroid/view/ViewGroup$MarginLayoutParams;I)V
     .locals 0
-    .param p1    # Landroid/view/ViewGroup$MarginLayoutParams;
-    .param p2    # I
 
     iput p2, p1, Landroid/view/ViewGroup$MarginLayoutParams;->leftMargin:I
 

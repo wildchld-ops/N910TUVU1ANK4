@@ -30,14 +30,6 @@
 # virtual methods
 .method public apply(IIILandroid/graphics/Rect;IILandroid/graphics/Rect;I)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/graphics/Rect;
-    .param p5    # I
-    .param p6    # I
-    .param p7    # Landroid/graphics/Rect;
-    .param p8    # I
 
     invoke-static/range {p1 .. p7}, Landroid/view/Gravity;->apply(IIILandroid/graphics/Rect;IILandroid/graphics/Rect;)V
 
@@ -46,12 +38,6 @@
 
 .method public apply(IIILandroid/graphics/Rect;Landroid/graphics/Rect;I)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/graphics/Rect;
-    .param p5    # Landroid/graphics/Rect;
-    .param p6    # I
 
     invoke-static {p1, p2, p3, p4, p5}, Landroid/view/Gravity;->apply(IIILandroid/graphics/Rect;Landroid/graphics/Rect;)V
 
@@ -60,10 +46,6 @@
 
 .method public applyDisplay(ILandroid/graphics/Rect;Landroid/graphics/Rect;I)V
     .locals 0
-    .param p1    # I
-    .param p2    # Landroid/graphics/Rect;
-    .param p3    # Landroid/graphics/Rect;
-    .param p4    # I
 
     invoke-static {p1, p2, p3}, Landroid/view/Gravity;->applyDisplay(ILandroid/graphics/Rect;Landroid/graphics/Rect;)V
 
@@ -72,8 +54,6 @@
 
 .method public getAbsoluteGravity(II)I
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     const v0, -0x800001
 

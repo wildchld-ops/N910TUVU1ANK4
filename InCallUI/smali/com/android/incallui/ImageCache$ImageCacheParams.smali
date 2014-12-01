@@ -39,7 +39,6 @@
 
 .method private static getMemoryClass(Landroid/content/Context;)I
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     const-string v0, "activity"
 
@@ -60,8 +59,6 @@
 # virtual methods
 .method public setMemCacheSizePercent(Landroid/content/Context;F)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # F
 
     const/high16 v1, 0x44800000
 

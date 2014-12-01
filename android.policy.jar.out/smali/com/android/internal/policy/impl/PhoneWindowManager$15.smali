@@ -36,7 +36,6 @@
 # virtual methods
 .method public onKeyguardExitResult(Z)V
     .locals 2
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 

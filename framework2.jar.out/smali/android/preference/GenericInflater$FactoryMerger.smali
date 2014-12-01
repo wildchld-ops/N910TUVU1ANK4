@@ -74,9 +74,6 @@
 # virtual methods
 .method public onCreateItem(Ljava/lang/String;Landroid/content/Context;Landroid/util/AttributeSet;)Ljava/lang/Object;
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/util/AttributeSet;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

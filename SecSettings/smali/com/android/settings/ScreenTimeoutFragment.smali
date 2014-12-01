@@ -494,7 +494,6 @@
 
 .method private getScreenTimeoutValue(I)I
     .locals 1
-    .param p1    # I
 
     sget-object v0, Lcom/android/settings/ScreenTimeoutFragment;->mScreenTimeoutValues:[Ljava/lang/String;
 
@@ -513,7 +512,6 @@
 
 .method private getScreenTimoutIndex(J)I
     .locals 3
-    .param p1    # J
 
     const/4 v0, 0x0
 
@@ -564,7 +562,6 @@
 
 .method private static getTimeoutNewEntry(J)Ljava/lang/String;
     .locals 14
-    .param p0    # J
 
     const-wide/16 v12, 0x3c
 
@@ -720,7 +717,6 @@
 
 .method private static isInDefaultTimeoutList(J)Z
     .locals 5
-    .param p0    # J
 
     const/4 v2, 0x0
 
@@ -798,7 +794,6 @@
 
 .method private setScreenTimeoutValue(I)V
     .locals 13
-    .param p1    # I
 
     const-wide/16 v7, 0x0
 
@@ -1100,7 +1095,6 @@
 # virtual methods
 .method public getTimeoutSummary(J)Ljava/lang/String;
     .locals 19
-    .param p1    # J
 
     const/4 v6, 0x0
 
@@ -1512,8 +1506,6 @@
 
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 1
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     invoke-direct {p0, p2}, Lcom/android/settings/ScreenTimeoutFragment;->getScreenTimeoutValue(I)I
 
@@ -1528,7 +1520,6 @@
 
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
     .locals 8
-    .param p1    # Landroid/os/Bundle;
 
     invoke-static {}, Lcom/android/settings/ScreenTimeoutFragment;->updateScreenTimeoutValue()V
 

@@ -35,8 +35,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -47,9 +45,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     invoke-direct {p0, p1, p2}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -179,8 +174,6 @@
 
 .method public initialize(Lcom/android/launcher2/popup/MenuItemImpl;I)V
     .locals 2
-    .param p1    # Lcom/android/launcher2/popup/MenuItemImpl;
-    .param p2    # I
 
     iput-object p1, p0, Lcom/android/launcher2/popup/ListMenuItemView;->mItemData:Lcom/android/launcher2/popup/MenuItemImpl;
 
@@ -286,8 +279,6 @@
 
 .method protected onMeasure(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     iget-object v2, p0, Lcom/android/launcher2/popup/ListMenuItemView;->mIconView:Landroid/widget/ImageView;
 
@@ -337,7 +328,6 @@
 
 .method public setCheckable(Z)V
     .locals 5
-    .param p1    # Z
 
     const/16 v3, 0x8
 
@@ -454,7 +444,6 @@
 
 .method public setChecked(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v1, p0, Lcom/android/launcher2/popup/ListMenuItemView;->mItemData:Lcom/android/launcher2/popup/MenuItemImpl;
 
@@ -493,7 +482,6 @@
 
 .method public setForceShowIcon(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/launcher2/popup/ListMenuItemView;->mForceShowIcon:Z
 
@@ -504,7 +492,6 @@
 
 .method public setIcon(Landroid/graphics/drawable/Drawable;)V
     .locals 3
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     const/4 v1, 0x0
 
@@ -603,8 +590,6 @@
 
 .method public setShortcut(ZC)V
     .locals 3
-    .param p1    # Z
-    .param p2    # C
 
     if-eqz p1, :cond_2
 
@@ -655,7 +640,6 @@
 
 .method public setTitle(Ljava/lang/CharSequence;)V
     .locals 2
-    .param p1    # Ljava/lang/CharSequence;
 
     const/16 v1, 0x8
 

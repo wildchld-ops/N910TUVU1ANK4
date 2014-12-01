@@ -34,8 +34,6 @@
 # virtual methods
 .method get(Ljava/lang/String;Ljava/lang/String;)Landroid/sax/Element;
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -97,9 +95,6 @@
 
 .method getOrCreate(Landroid/sax/Element;Ljava/lang/String;Ljava/lang/String;)Landroid/sax/Element;
     .locals 9
-    .param p1    # Landroid/sax/Element;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     invoke-virtual {p2}, Ljava/lang/String;->hashCode()I
 

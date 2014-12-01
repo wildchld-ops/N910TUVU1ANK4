@@ -30,9 +30,6 @@
 # direct methods
 .method constructor <init>(Lcom/sec/android/app/camera/gallery/LruCache;IFZI)V
     .locals 0
-    .param p2    # I
-    .param p3    # F
-    .param p4    # Z
 
     iput-object p1, p0, Lcom/sec/android/app/camera/gallery/LruCache$1;->this$0:Lcom/sec/android/app/camera/gallery/LruCache;
 

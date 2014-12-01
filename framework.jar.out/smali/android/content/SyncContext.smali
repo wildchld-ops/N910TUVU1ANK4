@@ -16,7 +16,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/ISyncContext;)V
     .locals 2
-    .param p1    # Landroid/content/ISyncContext;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -98,7 +97,6 @@
 
 .method public onFinished(Landroid/content/SyncResult;)V
     .locals 1
-    .param p1    # Landroid/content/SyncResult;
 
     :try_start_0
     iget-object v0, p0, Landroid/content/SyncContext;->mSyncContext:Landroid/content/ISyncContext;
@@ -123,7 +121,6 @@
 
 .method public setStatusText(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Landroid/content/SyncContext;->updateHeartbeat()V
 

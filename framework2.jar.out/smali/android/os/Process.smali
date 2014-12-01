@@ -169,7 +169,6 @@
 
 .method public static final getParentPid(I)I
     .locals 5
-    .param p0    # I
 
     const/4 v3, 0x1
 
@@ -240,7 +239,6 @@
 
 .method public static final getThreadGroupLeader(I)I
     .locals 5
-    .param p0    # I
 
     const/4 v3, 0x1
 
@@ -307,7 +305,6 @@
 
 .method public static final getUidForPid(I)I
     .locals 5
-    .param p0    # I
 
     const/4 v3, 0x1
 
@@ -390,7 +387,6 @@
 
 .method public static final killProcess(I)V
     .locals 1
-    .param p0    # I
 
     const/16 v0, 0x9
 
@@ -401,7 +397,6 @@
 
 .method public static final killProcessQuiet(I)V
     .locals 1
-    .param p0    # I
 
     const/16 v0, 0x9
 
@@ -725,18 +720,6 @@
 
 .method public static final start(Ljava/lang/String;Ljava/lang/String;II[IIIILjava/lang/String;II[Ljava/lang/String;)Landroid/os/Process$ProcessStartResult;
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # [I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # Ljava/lang/String;
-    .param p9    # I
-    .param p10    # I
-    .param p11    # [Ljava/lang/String;
 
     :try_start_0
     invoke-static/range {p0 .. p11}, Landroid/os/Process;->startViaZygote(Ljava/lang/String;Ljava/lang/String;II[IIIILjava/lang/String;II[Ljava/lang/String;)Landroid/os/Process$ProcessStartResult;
@@ -767,18 +750,6 @@
 
 .method private static startViaZygote(Ljava/lang/String;Ljava/lang/String;II[IIIILjava/lang/String;II[Ljava/lang/String;)Landroid/os/Process$ProcessStartResult;
     .locals 12
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # [I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # Ljava/lang/String;
-    .param p9    # I
-    .param p10    # I
-    .param p11    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/ZygoteStartFailedEx;

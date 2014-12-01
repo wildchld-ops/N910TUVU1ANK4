@@ -294,7 +294,6 @@
 
 .method static synthetic access$500(Landroid/widget/MultiSelectPopupWindow$MultiSelectQuickPopupWindow;)Landroid/widget/HorizontalScrollView;
     .locals 1
-    .param p0    # Landroid/widget/MultiSelectPopupWindow$MultiSelectQuickPopupWindow;
 
     iget-object v0, p0, Landroid/widget/MultiSelectPopupWindow$MultiSelectQuickPopupWindow;->mHorizontalScrollView:Landroid/widget/HorizontalScrollView;
 
@@ -576,7 +575,6 @@
 
 .method private getMultiSelectQuickPopupPosition([I)V
     .locals 35
-    .param p1    # [I
 
     if-nez p1, :cond_0
 
@@ -2426,7 +2424,6 @@
 
 .method private setPopupWindowWidth(I)V
     .locals 4
-    .param p1    # I
 
     iget v0, p0, Landroid/widget/MultiSelectPopupWindow$MultiSelectQuickPopupWindow;->mMenuItemCount:I
 
@@ -2818,7 +2815,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     # getter for: Landroid/widget/MultiSelectPopupWindow;->mTextView:Landroid/widget/TextView;
     invoke-static {}, Landroid/widget/MultiSelectPopupWindow;->access$000()Landroid/widget/TextView;
@@ -3001,7 +2997,6 @@
 
 .method public relocateMultiSelectQuickPopupWindow(I)V
     .locals 1
-    .param p1    # I
 
     if-ltz p1, :cond_0
 
@@ -3192,10 +3187,6 @@
 
 .method public updatePosition(IIZZ)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # Z
 
     invoke-virtual {p0}, Landroid/widget/MultiSelectPopupWindow$MultiSelectQuickPopupWindow;->isShowing()Z
 

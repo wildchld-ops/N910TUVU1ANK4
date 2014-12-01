@@ -30,11 +30,6 @@
 # virtual methods
 .method public getPendingIntent(Landroid/content/Context;[Landroid/content/Intent;IILandroid/os/Bundle;)Landroid/app/PendingIntent;
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # [Landroid/content/Intent;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Landroid/os/Bundle;
 
     new-instance v0, Landroid/content/Intent;
 

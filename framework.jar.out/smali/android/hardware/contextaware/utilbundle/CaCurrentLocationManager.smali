@@ -30,9 +30,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/os/Looper;Landroid/hardware/contextaware/manager/ICurrrentLocationObserver;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/Looper;
-    .param p3    # Landroid/hardware/contextaware/manager/ICurrrentLocationObserver;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -57,7 +54,6 @@
 
 .method static synthetic access$000(Landroid/hardware/contextaware/utilbundle/CaCurrentLocationManager;)Landroid/location/LocationListener;
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/utilbundle/CaCurrentLocationManager;
 
     iget-object v0, p0, Landroid/hardware/contextaware/utilbundle/CaCurrentLocationManager;->mLocationListener:Landroid/location/LocationListener;
 
@@ -66,7 +62,6 @@
 
 .method static synthetic access$100(Landroid/hardware/contextaware/utilbundle/CaCurrentLocationManager;)Landroid/os/Looper;
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/utilbundle/CaCurrentLocationManager;
 
     iget-object v0, p0, Landroid/hardware/contextaware/utilbundle/CaCurrentLocationManager;->mLooper:Landroid/os/Looper;
 
@@ -75,7 +70,6 @@
 
 .method static synthetic access$200(Landroid/hardware/contextaware/utilbundle/CaCurrentLocationManager;)Landroid/location/LocationManager;
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/utilbundle/CaCurrentLocationManager;
 
     iget-object v0, p0, Landroid/hardware/contextaware/utilbundle/CaCurrentLocationManager;->mGpsManager:Landroid/location/LocationManager;
 
@@ -231,7 +225,6 @@
 
 .method public final initializeManager(Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     const/4 v3, 0x1
 
@@ -303,11 +296,6 @@
 
 .method public final notifyCurrentLocationObserver(JJDDD)V
     .locals 11
-    .param p1    # J
-    .param p3    # J
-    .param p5    # D
-    .param p7    # D
-    .param p9    # D
 
     iget-object v0, p0, Landroid/hardware/contextaware/utilbundle/CaCurrentLocationManager;->mListener:Landroid/hardware/contextaware/manager/ICurrrentLocationObserver;
 
@@ -335,7 +323,6 @@
 
 .method public final registerCurrentLocationObserver(Landroid/hardware/contextaware/manager/ICurrrentLocationObserver;)V
     .locals 0
-    .param p1    # Landroid/hardware/contextaware/manager/ICurrrentLocationObserver;
 
     iput-object p1, p0, Landroid/hardware/contextaware/utilbundle/CaCurrentLocationManager;->mListener:Landroid/hardware/contextaware/manager/ICurrrentLocationObserver;
 

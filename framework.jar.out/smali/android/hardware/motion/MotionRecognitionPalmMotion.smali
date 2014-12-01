@@ -96,7 +96,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -570,7 +569,6 @@
 
 .method static synthetic access$1500(Landroid/hardware/motion/MotionRecognitionPalmMotion;)Landroid/hardware/motion/MotionRecognitionPalmMotion$GestureSurfaceTouch;
     .locals 1
-    .param p0    # Landroid/hardware/motion/MotionRecognitionPalmMotion;
 
     iget-object v0, p0, Landroid/hardware/motion/MotionRecognitionPalmMotion;->mGestureSurfaceTouch:Landroid/hardware/motion/MotionRecognitionPalmMotion$GestureSurfaceTouch;
 
@@ -579,7 +577,6 @@
 
 .method static synthetic access$2300(Landroid/hardware/motion/MotionRecognitionPalmMotion;)Landroid/hardware/motion/MotionRecognitionPalmMotion$PalmTouchRecognizer;
     .locals 1
-    .param p0    # Landroid/hardware/motion/MotionRecognitionPalmMotion;
 
     iget-object v0, p0, Landroid/hardware/motion/MotionRecognitionPalmMotion;->mPalmTouchRecognizer:Landroid/hardware/motion/MotionRecognitionPalmMotion$PalmTouchRecognizer;
 
@@ -588,7 +585,6 @@
 
 .method static synthetic access$2500(Landroid/hardware/motion/MotionRecognitionPalmMotion;)Landroid/hardware/motion/MotionRecognitionPalmMotion$SurfaceTouchSharingData;
     .locals 1
-    .param p0    # Landroid/hardware/motion/MotionRecognitionPalmMotion;
 
     iget-object v0, p0, Landroid/hardware/motion/MotionRecognitionPalmMotion;->mSurfaceTouchSharingData:Landroid/hardware/motion/MotionRecognitionPalmMotion$SurfaceTouchSharingData;
 
@@ -597,7 +593,6 @@
 
 .method static synthetic access$2600(Landroid/hardware/motion/MotionRecognitionPalmMotion;)Landroid/database/ContentObserver;
     .locals 1
-    .param p0    # Landroid/hardware/motion/MotionRecognitionPalmMotion;
 
     iget-object v0, p0, Landroid/hardware/motion/MotionRecognitionPalmMotion;->mPalmObserver:Landroid/database/ContentObserver;
 
@@ -606,7 +601,6 @@
 
 .method static synthetic access$300(Landroid/hardware/motion/MotionRecognitionPalmMotion;)Z
     .locals 1
-    .param p0    # Landroid/hardware/motion/MotionRecognitionPalmMotion;
 
     iget-boolean v0, p0, Landroid/hardware/motion/MotionRecognitionPalmMotion;->mUseGestureDetectorTouchEventEx:Z
 
@@ -615,8 +609,6 @@
 
 .method static synthetic access$302(Landroid/hardware/motion/MotionRecognitionPalmMotion;Z)Z
     .locals 0
-    .param p0    # Landroid/hardware/motion/MotionRecognitionPalmMotion;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/hardware/motion/MotionRecognitionPalmMotion;->mUseGestureDetectorTouchEventEx:Z
 
@@ -633,7 +625,6 @@
 
 .method static synthetic access$402(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Landroid/hardware/motion/MotionRecognitionPalmMotion;->g_IsBootCompleted:Z
 
@@ -642,7 +633,6 @@
 
 .method static synthetic access$500(Landroid/hardware/motion/MotionRecognitionPalmMotion;)Landroid/content/Context;
     .locals 1
-    .param p0    # Landroid/hardware/motion/MotionRecognitionPalmMotion;
 
     iget-object v0, p0, Landroid/hardware/motion/MotionRecognitionPalmMotion;->mContext:Landroid/content/Context;
 
@@ -651,7 +641,6 @@
 
 .method static synthetic access$600(Landroid/hardware/motion/MotionRecognitionPalmMotion;)Landroid/hardware/motion/MotionRecognitionPalmMotion$PalmSweepRecognizer;
     .locals 1
-    .param p0    # Landroid/hardware/motion/MotionRecognitionPalmMotion;
 
     iget-object v0, p0, Landroid/hardware/motion/MotionRecognitionPalmMotion;->mPalmSweepRecognizer:Landroid/hardware/motion/MotionRecognitionPalmMotion$PalmSweepRecognizer;
 
@@ -660,8 +649,6 @@
 
 .method static synthetic access$902(Landroid/hardware/motion/MotionRecognitionPalmMotion;Z)Z
     .locals 0
-    .param p0    # Landroid/hardware/motion/MotionRecognitionPalmMotion;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/hardware/motion/MotionRecognitionPalmMotion;->mPalmMotionRecognizer:Z
 
@@ -672,7 +659,6 @@
 # virtual methods
 .method public onTouchEvent_ex(Landroid/view/MotionEvent;)Z
     .locals 4
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v3, 0x0
 

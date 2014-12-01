@@ -172,13 +172,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Lcom/android/server/wm/DisplayContent;Landroid/view/SurfaceSession;ZZIZ)V
     .locals 15
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/server/wm/DisplayContent;
-    .param p3    # Landroid/view/SurfaceSession;
-    .param p4    # Z
-    .param p5    # Z
-    .param p6    # I
-    .param p7    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -591,12 +584,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Lcom/android/server/wm/DisplayContent;Landroid/view/SurfaceSession;ZZZ)V
     .locals 8
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/server/wm/DisplayContent;
-    .param p3    # Landroid/view/SurfaceSession;
-    .param p4    # Z
-    .param p5    # Z
-    .param p6    # Z
 
     const/4 v6, -0x1
 
@@ -621,10 +608,6 @@
 
 .method public static createRotationMatrix(IIILandroid/graphics/Matrix;)V
     .locals 2
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/graphics/Matrix;
 
     const/4 v1, 0x0
 
@@ -684,8 +667,6 @@
 
 .method static deltaRotation(II)I
     .locals 1
-    .param p0    # I
-    .param p1    # I
 
     sub-int v0, p1, p0
 
@@ -722,7 +703,6 @@
 
 .method private setRotationInTransaction(I)V
     .locals 4
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/wm/ScreenRotationAnimation;->mCurRotation:I
 
@@ -751,8 +731,6 @@
 
 .method private setSnapshotTransformInTransaction(Landroid/graphics/Matrix;F)V
     .locals 8
-    .param p1    # Landroid/graphics/Matrix;
-    .param p2    # F
 
     iget-object v2, p0, Lcom/android/server/wm/ScreenRotationAnimation;->mSurfaceControl:Landroid/view/SurfaceControl;
 
@@ -843,14 +821,6 @@
 
 .method private startAnimation(Landroid/view/SurfaceSession;JFIIZII)Z
     .locals 15
-    .param p1    # Landroid/view/SurfaceSession;
-    .param p2    # J
-    .param p4    # F
-    .param p5    # I
-    .param p6    # I
-    .param p7    # Z
-    .param p8    # I
-    .param p9    # I
 
     iget-object v2, p0, Lcom/android/server/wm/ScreenRotationAnimation;->mSurfaceControl:Landroid/view/SurfaceControl;
 
@@ -1372,7 +1342,6 @@
 
 .method private stepAnimation(J)Z
     .locals 6
-    .param p1    # J
 
     const-wide/16 v0, 0x0
 
@@ -1532,13 +1501,6 @@
 # virtual methods
 .method public dismiss(Landroid/view/SurfaceSession;JFIIII)Z
     .locals 10
-    .param p1    # Landroid/view/SurfaceSession;
-    .param p2    # J
-    .param p4    # F
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
 
     iget-object v0, p0, Lcom/android/server/wm/ScreenRotationAnimation;->mSurfaceControl:Landroid/view/SurfaceControl;
 
@@ -1735,8 +1697,6 @@
 
 .method public printTo(Ljava/lang/String;Ljava/io/PrintWriter;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/io/PrintWriter;
 
     invoke-virtual {p2, p1}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
@@ -2212,12 +2172,6 @@
 
 .method public setRotationInTransaction(ILandroid/view/SurfaceSession;JFII)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/SurfaceSession;
-    .param p3    # J
-    .param p5    # F
-    .param p6    # I
-    .param p7    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/wm/ScreenRotationAnimation;->setRotationInTransaction(I)V
 
@@ -2228,7 +2182,6 @@
 
 .method public stepAnimationLocked(J)Z
     .locals 4
-    .param p1    # J
 
     const/4 v0, 0x0
 

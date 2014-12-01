@@ -255,7 +255,6 @@
 
 .method static synthetic access$000(Landroid/inputmethodservice/InputMethodService;)Z
     .locals 1
-    .param p0    # Landroid/inputmethodservice/InputMethodService;
 
     invoke-direct {p0}, Landroid/inputmethodservice/InputMethodService;->getIsVisibleWindow()Z
 
@@ -266,7 +265,6 @@
 
 .method static synthetic access$100(Landroid/inputmethodservice/InputMethodService;)Z
     .locals 1
-    .param p0    # Landroid/inputmethodservice/InputMethodService;
 
     invoke-direct {p0}, Landroid/inputmethodservice/InputMethodService;->is34Keypad()Z
 
@@ -277,7 +275,6 @@
 
 .method static synthetic access$200(Landroid/inputmethodservice/InputMethodService;)V
     .locals 0
-    .param p0    # Landroid/inputmethodservice/InputMethodService;
 
     invoke-direct {p0}, Landroid/inputmethodservice/InputMethodService;->doHideWindow()V
 
@@ -286,9 +283,6 @@
 
 .method static synthetic access$300(Landroid/inputmethodservice/InputMethodService;II)V
     .locals 0
-    .param p0    # Landroid/inputmethodservice/InputMethodService;
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Landroid/inputmethodservice/InputMethodService;->onToggleSoftInput(II)V
 
@@ -297,8 +291,6 @@
 
 .method static synthetic access$400(Landroid/inputmethodservice/InputMethodService;I)V
     .locals 0
-    .param p0    # Landroid/inputmethodservice/InputMethodService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/inputmethodservice/InputMethodService;->onShowSideSyncSoftInput(I)V
 
@@ -307,7 +299,6 @@
 
 .method static synthetic access$500(Landroid/inputmethodservice/InputMethodService;)Z
     .locals 1
-    .param p0    # Landroid/inputmethodservice/InputMethodService;
 
     iget-boolean v0, p0, Landroid/inputmethodservice/InputMethodService;->mHasPerformedLongPress:Z
 
@@ -467,7 +458,6 @@
 
 .method private handleBack(Z)Z
     .locals 4
-    .param p1    # Z
 
     const/4 v1, 0x1
 
@@ -552,7 +542,6 @@
 
 .method private onShowSideSyncSoftInput(I)V
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -565,8 +554,6 @@
 
 .method private onToggleSoftInput(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0}, Landroid/inputmethodservice/InputMethodService;->isInputViewShown()Z
 
@@ -587,7 +574,6 @@
 
 .method private requestShowSelf(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Landroid/inputmethodservice/InputMethodService;->mImm:Landroid/view/inputmethod/InputMethodManager;
 
@@ -648,7 +634,6 @@
 
 .method private setFlagIsVisibleWindow(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/inputmethodservice/InputMethodService;->mIsVisibleWindow:Z
 
@@ -705,9 +690,6 @@
 
 .method doMovementKey(ILandroid/view/KeyEvent;I)Z
     .locals 9
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
-    .param p3    # I
 
     const/4 v6, 0x0
 
@@ -888,9 +870,6 @@
 
 .method doStartInput(Landroid/view/inputmethod/InputConnection;Landroid/view/inputmethod/EditorInfo;Z)V
     .locals 2
-    .param p1    # Landroid/view/inputmethod/InputConnection;
-    .param p2    # Landroid/view/inputmethod/EditorInfo;
-    .param p3    # Z
 
     const/4 v1, 0x1
 
@@ -945,9 +924,6 @@
 
 .method protected dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     new-instance v0, Landroid/util/PrintWriterPrinter;
 
@@ -1806,7 +1782,6 @@
 
 .method public getTextForImeAction(I)Ljava/lang/CharSequence;
     .locals 1
-    .param p1    # I
 
     and-int/lit16 v0, p1, 0xff
 
@@ -2242,8 +2217,6 @@
 
 .method public onAppPrivateCommand(Ljava/lang/String;Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Bundle;
 
     return-void
 .end method
@@ -2256,7 +2229,6 @@
 
 .method public onComputeInsets(Landroid/inputmethodservice/InputMethodService$Insets;)V
     .locals 4
-    .param p1    # Landroid/inputmethodservice/InputMethodService$Insets;
 
     const/4 v3, 0x1
 
@@ -2358,7 +2330,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 11
-    .param p1    # Landroid/content/res/Configuration;
 
     const/4 v10, 0x1
 
@@ -2504,9 +2475,6 @@
 
 .method public onConfigureWindow(Landroid/view/Window;ZZ)V
     .locals 6
-    .param p1    # Landroid/view/Window;
-    .param p2    # Z
-    .param p3    # Z
 
     const/4 v2, -0x1
 
@@ -2763,7 +2731,6 @@
 
 .method protected onCurrentInputMethodSubtypeChanged(Landroid/view/inputmethod/InputMethodSubtype;)V
     .locals 0
-    .param p1    # Landroid/view/inputmethod/InputMethodSubtype;
 
     return-void
 .end method
@@ -2823,7 +2790,6 @@
 
 .method public onDisplayCompletions([Landroid/view/inputmethod/CompletionInfo;)V
     .locals 0
-    .param p1    # [Landroid/view/inputmethod/CompletionInfo;
 
     return-void
 .end method
@@ -3093,7 +3059,6 @@
 
 .method public onExtractTextContextMenuItem(I)Z
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/inputmethodservice/InputMethodService;->getCurrentInputConnection()Landroid/view/inputmethod/InputConnection;
 
@@ -3111,8 +3076,6 @@
 
 .method public onExtractedCursorMovement(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Landroid/inputmethodservice/InputMethodService;->mExtractEditText:Landroid/inputmethodservice/ExtractEditText;
 
@@ -3142,8 +3105,6 @@
 
 .method public onExtractedDeleteText(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0}, Landroid/inputmethodservice/InputMethodService;->getCurrentInputConnection()Landroid/view/inputmethod/InputConnection;
 
@@ -3165,9 +3126,6 @@
 
 .method public onExtractedReplaceText(IILjava/lang/CharSequence;)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/CharSequence;
 
     invoke-virtual {p0}, Landroid/inputmethodservice/InputMethodService;->getCurrentInputConnection()Landroid/view/inputmethod/InputConnection;
 
@@ -3187,8 +3145,6 @@
 
 .method public onExtractedSelectionChanged(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0}, Landroid/inputmethodservice/InputMethodService;->getCurrentInputConnection()Landroid/view/inputmethod/InputConnection;
 
@@ -3204,10 +3160,6 @@
 
 .method public onExtractedSetSpan(Ljava/lang/Object;III)V
     .locals 6
-    .param p1    # Ljava/lang/Object;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/4 v5, 0x1
 
@@ -3284,7 +3236,6 @@
 
 .method public onExtractingInputChanged(Landroid/view/inputmethod/EditorInfo;)V
     .locals 1
-    .param p1    # Landroid/view/inputmethod/EditorInfo;
 
     iget v0, p1, Landroid/view/inputmethod/EditorInfo;->inputType:I
 
@@ -3300,7 +3251,6 @@
 
 .method public onFinishCandidatesView(Z)V
     .locals 1
-    .param p1    # Z
 
     if-nez p1, :cond_0
 
@@ -3333,7 +3283,6 @@
 
 .method public onFinishInputView(Z)V
     .locals 1
-    .param p1    # Z
 
     if-nez p1, :cond_0
 
@@ -3351,7 +3300,6 @@
 
 .method public onGenericMotionEvent(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v0, 0x0
 
@@ -3366,8 +3314,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x1
 
@@ -3416,8 +3362,6 @@
 
 .method public onKeyLongPress(ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x0
 
@@ -3426,9 +3370,6 @@
 
 .method public onKeyMultiple(IILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/view/KeyEvent;
 
     invoke-virtual {p0, p1, p3, p2}, Landroid/inputmethodservice/InputMethodService;->doMovementKey(ILandroid/view/KeyEvent;I)Z
 
@@ -3439,8 +3380,6 @@
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     invoke-virtual {p2}, Landroid/view/KeyEvent;->getKeyCode()I
 
@@ -3492,8 +3431,6 @@
 
 .method public onReplaceDeleteText(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)V
     .locals 4
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Ljava/lang/CharSequence;
 
     const/4 v3, 0x0
 
@@ -3525,8 +3462,6 @@
 
 .method public onShowInputRequested(IZ)Z
     .locals 6
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v2, 0x1
 
@@ -3647,31 +3582,24 @@
 
 .method public onStartCandidatesView(Landroid/view/inputmethod/EditorInfo;Z)V
     .locals 0
-    .param p1    # Landroid/view/inputmethod/EditorInfo;
-    .param p2    # Z
 
     return-void
 .end method
 
 .method public onStartInput(Landroid/view/inputmethod/EditorInfo;Z)V
     .locals 0
-    .param p1    # Landroid/view/inputmethod/EditorInfo;
-    .param p2    # Z
 
     return-void
 .end method
 
 .method public onStartInputView(Landroid/view/inputmethod/EditorInfo;Z)V
     .locals 0
-    .param p1    # Landroid/view/inputmethod/EditorInfo;
-    .param p2    # Z
 
     return-void
 .end method
 
 .method public onTrackballEvent(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v0, 0x0
 
@@ -3686,15 +3614,12 @@
 
 .method public onUpdateCursor(Landroid/graphics/Rect;)V
     .locals 0
-    .param p1    # Landroid/graphics/Rect;
 
     return-void
 .end method
 
 .method public onUpdateExtractedText(ILandroid/view/inputmethod/ExtractedText;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/inputmethod/ExtractedText;
 
     iget v0, p0, Landroid/inputmethodservice/InputMethodService;->mExtractedToken:I
 
@@ -3722,7 +3647,6 @@
 
 .method public onUpdateExtractingViews(Landroid/view/inputmethod/EditorInfo;)V
     .locals 4
-    .param p1    # Landroid/view/inputmethod/EditorInfo;
 
     const/4 v0, 0x1
 
@@ -3842,7 +3766,6 @@
 
 .method public onUpdateExtractingVisibility(Landroid/view/inputmethod/EditorInfo;)V
     .locals 2
-    .param p1    # Landroid/view/inputmethod/EditorInfo;
 
     iget v0, p1, Landroid/view/inputmethod/EditorInfo;->inputType:I
 
@@ -3874,12 +3797,6 @@
 
 .method public onUpdateSelection(IIIIII)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     iget-object v0, p0, Landroid/inputmethodservice/InputMethodService;->mExtractEditText:Landroid/inputmethodservice/ExtractEditText;
 
@@ -3949,7 +3866,6 @@
 
 .method public onViewClicked(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
@@ -3968,9 +3884,6 @@
 
 .method prepareSpacesAroundPaste(IILjava/lang/CharSequence;)J
     .locals 7
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/CharSequence;
 
     const/16 v6, 0xa
 
@@ -4169,8 +4082,6 @@
 
 .method reportExtractedMovement(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -4216,7 +4127,6 @@
 
 .method public requestHideSelf(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Landroid/inputmethodservice/InputMethodService;->mImm:Landroid/view/inputmethod/InputMethodManager;
 
@@ -4229,7 +4139,6 @@
 
 .method public sendDefaultEditorAction(Z)Z
     .locals 5
-    .param p1    # Z
 
     const/4 v2, 0x1
 
@@ -4280,7 +4189,6 @@
 
 .method public sendDownUpKeyEvents(I)V
     .locals 13
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/inputmethodservice/InputMethodService;->getCurrentInputConnection()Landroid/view/inputmethod/InputConnection;
 
@@ -4347,7 +4255,6 @@
 
 .method public sendKeyChar(C)V
     .locals 3
-    .param p1    # C
 
     const/4 v2, 0x1
 
@@ -4407,7 +4314,6 @@
 
 .method public setBackDisposition(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/inputmethodservice/InputMethodService;->mBackDisposition:I
 
@@ -4416,7 +4322,6 @@
 
 .method public setCandidatesView(Landroid/view/View;)V
     .locals 4
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Landroid/inputmethodservice/InputMethodService;->mCandidatesFrame:Landroid/widget/FrameLayout;
 
@@ -4439,7 +4344,6 @@
 
 .method public setCandidatesViewShown(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-virtual {p0, p1}, Landroid/inputmethodservice/InputMethodService;->updateCandidatesVisibility(Z)V
 
@@ -4489,7 +4393,6 @@
 
 .method public setExtractView(Landroid/view/View;)V
     .locals 6
-    .param p1    # Landroid/view/View;
 
     const/4 v5, 0x0
 
@@ -4583,7 +4486,6 @@
 
 .method public setExtractViewShown(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-boolean v0, p0, Landroid/inputmethodservice/InputMethodService;->mExtractViewHidden:Z
 
@@ -4609,7 +4511,6 @@
 
 .method public setInputView(Landroid/view/View;)V
     .locals 4
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Landroid/inputmethodservice/InputMethodService;->mInputFrame:Landroid/widget/FrameLayout;
 
@@ -4634,7 +4535,6 @@
 
 .method public setIs34Keypad(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/inputmethodservice/InputMethodService;->mIs34Keypad:Z
 
@@ -4643,7 +4543,6 @@
 
 .method public setIsMovable(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/inputmethodservice/InputMethodService;->mIsMovable:Z
 
@@ -4652,7 +4551,6 @@
 
 .method public setTheme(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Landroid/inputmethodservice/InputMethodService;->mWindow:Landroid/inputmethodservice/SoftInputWindow;
 
@@ -4674,7 +4572,6 @@
 
 .method public showStatusIcon(I)V
     .locals 3
-    .param p1    # I
 
     iput p1, p0, Landroid/inputmethodservice/InputMethodService;->mStatusIcon:I
 
@@ -4693,7 +4590,6 @@
 
 .method public showWindow(Z)V
     .locals 4
-    .param p1    # Z
 
     const/4 v3, 0x1
 
@@ -4773,7 +4669,6 @@
 
 .method showWindowInner(Z)V
     .locals 10
-    .param p1    # Z
 
     const/4 v9, 0x1
 
@@ -5042,7 +4937,6 @@
 
 .method startExtractingText(Z)V
     .locals 13
-    .param p1    # Z
 
     const/4 v12, 0x2
 
@@ -5373,7 +5267,6 @@
 
 .method public switchInputMethod(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/inputmethodservice/InputMethodService;->mImm:Landroid/view/inputmethod/InputMethodManager;
 
@@ -5386,7 +5279,6 @@
 
 .method updateCandidatesVisibility(Z)V
     .locals 2
-    .param p1    # Z
 
     if-eqz p1, :cond_1
 

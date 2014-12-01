@@ -119,7 +119,6 @@
 # direct methods
 .method public constructor <init>(Ljava/io/File;)V
     .locals 1
-    .param p1    # Ljava/io/File;
 
     invoke-direct {p0}, Lcom/android/internal/app/IAppOpsService$Stub;-><init>()V
 
@@ -192,8 +191,6 @@
 
 .method private static addCallbacks(Ljava/util/HashMap;Ljava/lang/String;ILjava/util/ArrayList;)Ljava/util/HashMap;
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -286,10 +283,6 @@
 
 .method private askOperationLocked(IILjava/lang/String;Lcom/android/server/AppOpsService$Op;)Lcom/android/server/PermissionDialogResult$Result;
     .locals 7
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Lcom/android/server/AppOpsService$Op;
 
     new-instance v4, Lcom/android/server/PermissionDialogResult$Result;
 
@@ -352,8 +345,6 @@
 
 .method private collectOps(Lcom/android/server/AppOpsService$Ops;[I)Ljava/util/ArrayList;
     .locals 11
-    .param p1    # Lcom/android/server/AppOpsService$Ops;
-    .param p2    # [I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -461,9 +452,6 @@
 
 .method private getDefaultMode(IILjava/lang/String;)I
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/server/AppOpsService;->isStrict(IILjava/lang/String;)Z
 
@@ -478,10 +466,6 @@
 
 .method private getOpLocked(IILjava/lang/String;Z)Lcom/android/server/AppOpsService$Op;
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Z
 
     invoke-direct {p0, p2, p3, p4}, Lcom/android/server/AppOpsService;->getOpsLocked(ILjava/lang/String;Z)Lcom/android/server/AppOpsService$Ops;
 
@@ -504,9 +488,6 @@
 
 .method private getOpLocked(Lcom/android/server/AppOpsService$Ops;IZ)Lcom/android/server/AppOpsService$Op;
     .locals 4
-    .param p1    # Lcom/android/server/AppOpsService$Ops;
-    .param p2    # I
-    .param p3    # Z
 
     invoke-virtual {p1, p2}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
 
@@ -555,9 +536,6 @@
 
 .method private getOpsLocked(ILjava/lang/String;Z)Lcom/android/server/AppOpsService$Ops;
     .locals 10
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     const/4 v6, 0x0
 
@@ -751,7 +729,6 @@
 
 .method private isInWhitelist(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/server/AppOpsService;->mWhitelist:Ljava/util/ArrayList;
 
@@ -764,9 +741,6 @@
 
 .method private isStrict(IILjava/lang/String;)Z
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -796,9 +770,6 @@
 
 .method private printOperationLocked(Lcom/android/server/AppOpsService$Op;ILjava/lang/String;)V
     .locals 2
-    .param p1    # Lcom/android/server/AppOpsService$Op;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -824,9 +795,6 @@
 
 .method private pruneOp(Lcom/android/server/AppOpsService$Op;ILjava/lang/String;)V
     .locals 6
-    .param p1    # Lcom/android/server/AppOpsService$Op;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     const-wide/16 v4, 0x0
 
@@ -890,10 +858,6 @@
 
 .method private recordOperationLocked(IILjava/lang/String;I)V
     .locals 9
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
 
     const-wide/16 v7, 0x0
 
@@ -1087,7 +1051,6 @@
 
 .method private verifyIncomingOp(I)V
     .locals 3
-    .param p1    # I
 
     if-ltz p1, :cond_0
 
@@ -1125,7 +1088,6 @@
 
 .method private verifyIncomingUid(I)V
     .locals 5
-    .param p1    # I
 
     invoke-static {}, Landroid/os/Binder;->getCallingUid()I
 
@@ -1171,9 +1133,6 @@
 # virtual methods
 .method public checkOperation(IILjava/lang/String;)I
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0, p2}, Lcom/android/server/AppOpsService;->verifyIncomingUid(I)V
 
@@ -1222,8 +1181,6 @@
 
 .method public checkPackage(ILjava/lang/String;)I
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -1262,9 +1219,6 @@
 
 .method protected dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 16
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     move-object/from16 v0, p0
 
@@ -2052,10 +2006,6 @@
 
 .method public finishOperation(Landroid/os/IBinder;IILjava/lang/String;)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
 
     invoke-direct {p0, p3}, Lcom/android/server/AppOpsService;->verifyIncomingUid(I)V
 
@@ -2166,7 +2116,6 @@
 
 .method finishOperationLocked(Lcom/android/server/AppOpsService$Op;)V
     .locals 4
-    .param p1    # Lcom/android/server/AppOpsService$Op;
 
     const/4 v1, 0x1
 
@@ -2307,9 +2256,6 @@
 
 .method public getOpsForPackage(ILjava/lang/String;[I)Ljava/util/List;
     .locals 8
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # [I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -2399,7 +2345,6 @@
 
 .method public getPackagesForOps([I)Ljava/util/List;
     .locals 13
-    .param p1    # [I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([I)",
@@ -2549,7 +2494,6 @@
 
 .method public getToken(Landroid/os/IBinder;)Landroid/os/IBinder;
     .locals 2
-    .param p1    # Landroid/os/IBinder;
 
     monitor-enter p0
 
@@ -2589,9 +2533,6 @@
 
 .method public noteOperation(IILjava/lang/String;)I
     .locals 12
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     const/4 v5, 0x2
 
@@ -2797,11 +2738,6 @@
 
 .method public notifyOperation(IILjava/lang/String;IZ)V
     .locals 9
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
-    .param p5    # Z
 
     invoke-direct {p0, p2}, Lcom/android/server/AppOpsService;->verifyIncomingUid(I)V
 
@@ -2991,8 +2927,6 @@
 
 .method public packageRemoved(ILjava/lang/String;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -3043,7 +2977,6 @@
 
 .method public publish(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     iput-object p1, p0, Lcom/android/server/AppOpsService;->mContext:Landroid/content/Context;
 
@@ -3060,7 +2993,6 @@
 
 .method readPackage(Lorg/xmlpull/v1/XmlPullParser;)V
     .locals 8
-    .param p1    # Lorg/xmlpull/v1/XmlPullParser;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/NumberFormatException;,
@@ -3762,8 +3694,6 @@
 
 .method readUid(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)V
     .locals 17
-    .param p1    # Lorg/xmlpull/v1/XmlPullParser;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/NumberFormatException;,
@@ -5084,10 +5014,6 @@
 
 .method public setMode(IILjava/lang/String;I)V
     .locals 8
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
 
     invoke-direct {p0, p2}, Lcom/android/server/AppOpsService;->verifyIncomingUid(I)V
 
@@ -5303,10 +5229,6 @@
 
 .method public startOperation(Landroid/os/IBinder;IILjava/lang/String;)I
     .locals 10
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
 
     const/4 v7, 0x2
 
@@ -5467,9 +5389,6 @@
 
 .method public startWatchingMode(ILjava/lang/String;Lcom/android/internal/app/IAppOpsCallback;)V
     .locals 4
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/android/internal/app/IAppOpsCallback;
 
     monitor-enter p0
 
@@ -5571,7 +5490,6 @@
 
 .method public stopWatchingMode(Lcom/android/internal/app/IAppOpsCallback;)V
     .locals 5
-    .param p1    # Lcom/android/internal/app/IAppOpsCallback;
 
     monitor-enter p0
 
@@ -5856,7 +5774,6 @@
 
 .method public uidRemoved(I)V
     .locals 1
-    .param p1    # I
 
     monitor-enter p0
 

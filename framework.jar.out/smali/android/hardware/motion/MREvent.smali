@@ -322,7 +322,6 @@
 
 .method public constructor <init>(Landroid/os/Parcel;)V
     .locals 0
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -423,7 +422,6 @@
 
 .method public readFromParcel(Landroid/os/Parcel;)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
@@ -484,7 +482,6 @@
 
 .method public setMotion(I)V
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -504,7 +501,6 @@
 
 .method public setPanningDx(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/hardware/motion/MREvent;->panningDx:I
 
@@ -513,7 +509,6 @@
 
 .method public setPanningDxImage(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/hardware/motion/MREvent;->panningDxImage:I
 
@@ -522,7 +517,6 @@
 
 .method public setPanningDy(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/hardware/motion/MREvent;->panningDy:I
 
@@ -531,7 +525,6 @@
 
 .method public setPanningDyImage(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/hardware/motion/MREvent;->panningDyImage:I
 
@@ -540,7 +533,6 @@
 
 .method public setPanningDz(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/hardware/motion/MREvent;->panningDz:I
 
@@ -549,7 +541,6 @@
 
 .method public setPanningDzImage(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/hardware/motion/MREvent;->panningDzImage:I
 
@@ -558,7 +549,6 @@
 
 .method public setTilt(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/hardware/motion/MREvent;->tilt:I
 
@@ -567,7 +557,6 @@
 
 .method public setWalkingStatus(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/hardware/motion/MREvent;->walkingStatus:I
 
@@ -3308,8 +3297,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget v0, p0, Landroid/hardware/motion/MREvent;->motion:I
 

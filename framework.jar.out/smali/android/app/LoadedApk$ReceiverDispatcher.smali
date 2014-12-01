@@ -44,11 +44,6 @@
 # direct methods
 .method constructor <init>(Landroid/content/BroadcastReceiver;Landroid/content/Context;Landroid/os/Handler;Landroid/app/Instrumentation;Z)V
     .locals 2
-    .param p1    # Landroid/content/BroadcastReceiver;
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/os/Handler;
-    .param p4    # Landroid/app/Instrumentation;
-    .param p5    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -140,13 +135,6 @@
 
 .method public performReceive(Landroid/content/Intent;ILjava/lang/String;Landroid/os/Bundle;ZZI)V
     .locals 10
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Landroid/os/Bundle;
-    .param p5    # Z
-    .param p6    # Z
-    .param p7    # I
 
     new-instance v0, Landroid/app/LoadedApk$ReceiverDispatcher$Args;
 
@@ -194,7 +182,6 @@
 
 .method setUnregisterLocation(Ljava/lang/RuntimeException;)V
     .locals 0
-    .param p1    # Ljava/lang/RuntimeException;
 
     iput-object p1, p0, Landroid/app/LoadedApk$ReceiverDispatcher;->mUnregisterLocation:Ljava/lang/RuntimeException;
 
@@ -203,8 +190,6 @@
 
 .method validate(Landroid/content/Context;Landroid/os/Handler;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/Handler;
 
     iget-object v0, p0, Landroid/app/LoadedApk$ReceiverDispatcher;->mContext:Landroid/content/Context;
 

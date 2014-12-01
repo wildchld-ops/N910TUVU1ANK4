@@ -112,7 +112,6 @@
 
 .method protected constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -133,8 +132,6 @@
 
 .method protected constructor <init>(Landroid/view/LayoutInflater;Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -171,9 +168,6 @@
 
 .method private failNotAllowed(Ljava/lang/String;Ljava/lang/String;Landroid/util/AttributeSet;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/util/AttributeSet;
 
     new-instance v0, Landroid/view/InflateException;
 
@@ -229,7 +223,6 @@
 
 .method public static from(Landroid/content/Context;)Landroid/view/LayoutInflater;
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     const-string v1, "layout_inflater"
 
@@ -255,9 +248,6 @@
 
 .method private parseInclude(Lorg/xmlpull/v1/XmlPullParser;Landroid/view/View;Landroid/util/AttributeSet;)V
     .locals 23
-    .param p1    # Lorg/xmlpull/v1/XmlPullParser;
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/util/AttributeSet;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -726,8 +716,6 @@
 
 .method private parseRequestFocus(Lorg/xmlpull/v1/XmlPullParser;Landroid/view/View;)V
     .locals 3
-    .param p1    # Lorg/xmlpull/v1/XmlPullParser;
-    .param p2    # Landroid/view/View;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -772,9 +760,6 @@
 
 .method public final createView(Ljava/lang/String;Ljava/lang/String;Landroid/util/AttributeSet;)Landroid/view/View;
     .locals 13
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/util/AttributeSet;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/ClassNotFoundException;,
@@ -1203,9 +1188,6 @@
 
 .method createViewFromTag(Landroid/view/View;Ljava/lang/String;Landroid/util/AttributeSet;)Landroid/view/View;
     .locals 5
-    .param p1    # Landroid/view/View;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/util/AttributeSet;
 
     const/4 v4, 0x0
 
@@ -1420,8 +1402,6 @@
 
 .method public inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/ViewGroup;
 
     if-eqz p2, :cond_0
 
@@ -1442,9 +1422,6 @@
 
 .method public inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Z
 
     invoke-virtual {p0}, Landroid/view/LayoutInflater;->getContext()Landroid/content/Context;
 
@@ -1479,8 +1456,6 @@
 
 .method public inflate(Lorg/xmlpull/v1/XmlPullParser;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 1
-    .param p1    # Lorg/xmlpull/v1/XmlPullParser;
-    .param p2    # Landroid/view/ViewGroup;
 
     if-eqz p2, :cond_0
 
@@ -1501,9 +1476,6 @@
 
 .method public inflate(Lorg/xmlpull/v1/XmlPullParser;Landroid/view/ViewGroup;Z)Landroid/view/View;
     .locals 17
-    .param p1    # Lorg/xmlpull/v1/XmlPullParser;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Z
 
     move-object/from16 v0, p0
 
@@ -1873,9 +1845,6 @@
 
 .method protected onCreateView(Landroid/view/View;Ljava/lang/String;Landroid/util/AttributeSet;)Landroid/view/View;
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/util/AttributeSet;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/ClassNotFoundException;
@@ -1891,8 +1860,6 @@
 
 .method protected onCreateView(Ljava/lang/String;Landroid/util/AttributeSet;)Landroid/view/View;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/util/AttributeSet;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/ClassNotFoundException;
@@ -1910,10 +1877,6 @@
 
 .method rInflate(Lorg/xmlpull/v1/XmlPullParser;Landroid/view/View;Landroid/util/AttributeSet;Z)V
     .locals 8
-    .param p1    # Lorg/xmlpull/v1/XmlPullParser;
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/util/AttributeSet;
-    .param p4    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -2089,7 +2052,6 @@
 
 .method public setFactory(Landroid/view/LayoutInflater$Factory;)V
     .locals 4
-    .param p1    # Landroid/view/LayoutInflater$Factory;
 
     iget-boolean v0, p0, Landroid/view/LayoutInflater;->mFactorySet:Z
 
@@ -2146,7 +2108,6 @@
 
 .method public setFactory2(Landroid/view/LayoutInflater$Factory2;)V
     .locals 3
-    .param p1    # Landroid/view/LayoutInflater$Factory2;
 
     iget-boolean v0, p0, Landroid/view/LayoutInflater;->mFactorySet:Z
 
@@ -2203,7 +2164,6 @@
 
 .method public setFilter(Landroid/view/LayoutInflater$Filter;)V
     .locals 1
-    .param p1    # Landroid/view/LayoutInflater$Filter;
 
     iput-object p1, p0, Landroid/view/LayoutInflater;->mFilter:Landroid/view/LayoutInflater$Filter;
 
@@ -2221,7 +2181,6 @@
 
 .method public setPrivateFactory(Landroid/view/LayoutInflater$Factory2;)V
     .locals 0
-    .param p1    # Landroid/view/LayoutInflater$Factory2;
 
     iput-object p1, p0, Landroid/view/LayoutInflater;->mPrivateFactory:Landroid/view/LayoutInflater$Factory2;
 

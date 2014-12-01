@@ -78,7 +78,7 @@
 
     move-result-object v11
 
-    invoke-virtual {v11}, Landroid/telephony/TelephonyManager;->getSubscriberId()Ljava/lang/String;
+    invoke-virtual {v11}, Landroid/telephony/MultiSimTelephonyManager;->getSubscriberId()Ljava/lang/String;
 
     move-result-object v5
 
@@ -88,7 +88,7 @@
 
     move-result-object v11
 
-    invoke-virtual {v11}, Landroid/telephony/TelephonyManager;->getSubscriberId()Ljava/lang/String;
+    invoke-virtual {v11}, Landroid/telephony/MultiSimTelephonyManager;->getSubscriberId()Ljava/lang/String;
 
     move-result-object v6
 
@@ -303,14 +303,14 @@
     :catch_0
     move-exception v4
 
-    invoke-virtual {v4}, Ljava/lang/Throwable;->printStackTrace()V
+    invoke-virtual {v4}, Landroid/provider/Settings$SettingNotFoundException;->printStackTrace()V
 
     goto :goto_0
 
     :catch_1
     move-exception v4
 
-    invoke-virtual {v4}, Ljava/lang/Throwable;->printStackTrace()V
+    invoke-virtual {v4}, Landroid/provider/Settings$SettingNotFoundException;->printStackTrace()V
 
     goto :goto_1
 
@@ -407,7 +407,7 @@
 
     const-string v7, "dsa_Initial"
 
-    invoke-virtual {p0, v7, v9}, Landroid/content/ContextWrapper;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+    invoke-virtual {p0, v7, v9}, Lcom/android/phone/DsaMainParser;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
 
     move-result-object v7
 
@@ -421,7 +421,7 @@
 
     sput-object v7, Lcom/android/phone/DsaMainParser;->mEdit:Landroid/content/SharedPreferences$Editor;
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/phone/DsaMainParser;->getIntent()Landroid/content/Intent;
 
     move-result-object v2
 
@@ -453,7 +453,7 @@
 
     const-string v7, "dsa_phone_number"
 
-    invoke-virtual {p0, v7, v9}, Landroid/content/ContextWrapper;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+    invoke-virtual {p0, v7, v9}, Lcom/android/phone/DsaMainParser;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
 
     move-result-object v6
 
@@ -473,7 +473,7 @@
 
     const-string v7, "dsa_main"
 
-    invoke-virtual {p0, v7, v9}, Landroid/content/ContextWrapper;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+    invoke-virtual {p0, v7, v9}, Lcom/android/phone/DsaMainParser;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
 
     move-result-object v6
 
@@ -495,7 +495,7 @@
 
     aget-object v3, v7, v9
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/DsaMainParser;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v7
 
@@ -503,7 +503,7 @@
 
     invoke-static {v7, v8, v9}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/DsaMainParser;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v7
 
@@ -518,7 +518,7 @@
 
     if-nez v7, :cond_1
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/DsaMainParser;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v7
 
@@ -533,7 +533,7 @@
     :cond_1
     const-string v7, "dsa_phone_number"
 
-    invoke-virtual {p0, v7, v9}, Landroid/content/ContextWrapper;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+    invoke-virtual {p0, v7, v9}, Lcom/android/phone/DsaMainParser;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
 
     move-result-object v6
 
@@ -565,7 +565,7 @@
 
     const-string v7, "SelectSimStatus"
 
-    invoke-virtual {p0, v7, v9}, Landroid/content/ContextWrapper;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+    invoke-virtual {p0, v7, v9}, Lcom/android/phone/DsaMainParser;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
 
     move-result-object v6
 
@@ -591,7 +591,7 @@
 
     invoke-interface {v1}, Landroid/content/SharedPreferences$Editor;->commit()Z
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/DsaMainParser;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v7
 
@@ -655,7 +655,7 @@
 
     invoke-virtual {v1, p0, v2}, Landroid/content/Intent;->setClassName(Landroid/content/Context;Ljava/lang/String;)Landroid/content/Intent;
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/phone/DsaMainParser;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
 
@@ -675,7 +675,7 @@
 
     :cond_0
     :goto_0
-    invoke-virtual {p0, v1}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v1}, Lcom/android/phone/DsaMainParser;->startActivity(Landroid/content/Intent;)V
 
     return-void
 

@@ -45,7 +45,6 @@
 
 .method public setColorMode(I)Landroid/print/PrintAttributes$Builder;
     .locals 2
-    .param p1    # I
 
     invoke-static {p1}, Ljava/lang/Integer;->bitCount(I)I
 
@@ -73,7 +72,6 @@
 
 .method public setMediaSize(Landroid/print/PrintAttributes$MediaSize;)Landroid/print/PrintAttributes$Builder;
     .locals 1
-    .param p1    # Landroid/print/PrintAttributes$MediaSize;
 
     iget-object v0, p0, Landroid/print/PrintAttributes$Builder;->mAttributes:Landroid/print/PrintAttributes;
 
@@ -84,7 +82,6 @@
 
 .method public setMinMargins(Landroid/print/PrintAttributes$Margins;)Landroid/print/PrintAttributes$Builder;
     .locals 1
-    .param p1    # Landroid/print/PrintAttributes$Margins;
 
     iget-object v0, p0, Landroid/print/PrintAttributes$Builder;->mAttributes:Landroid/print/PrintAttributes;
 
@@ -95,7 +92,6 @@
 
 .method public setResolution(Landroid/print/PrintAttributes$Resolution;)Landroid/print/PrintAttributes$Builder;
     .locals 1
-    .param p1    # Landroid/print/PrintAttributes$Resolution;
 
     iget-object v0, p0, Landroid/print/PrintAttributes$Builder;->mAttributes:Landroid/print/PrintAttributes;
 

@@ -21,7 +21,6 @@
 # direct methods
 .method constructor <init>(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -114,9 +113,6 @@
 
 .method public SetVrClocks(Ljava/lang/String;II)[I
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v4, 0x0
 
@@ -154,7 +150,6 @@
 
 .method public getOption(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -186,7 +181,6 @@
 
 .method public getSystemOption(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -435,7 +429,6 @@
 
 .method public relFreq(Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -467,7 +460,6 @@
 
 .method public releaseCPUMhz(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     invoke-direct {p0}, Landroid/app/VRManager;->getService()Lcom/android/internal/app/IVRManagerService;
@@ -495,7 +487,6 @@
 
 .method public releaseGPUMhz(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     invoke-direct {p0}, Landroid/app/VRManager;->getService()Lcom/android/internal/app/IVRManagerService;
@@ -560,9 +551,6 @@
 
 .method public setCPUClockMhz(Ljava/lang/String;[II)[I
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # [I
-    .param p3    # I
 
     const/4 v4, 0x0
 
@@ -600,8 +588,6 @@
 
 .method public setGPUClockMhz(Ljava/lang/String;I)I
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v1, 0x0
 
@@ -633,8 +619,6 @@
 
 .method public setOption(Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     :try_start_0
     invoke-direct {p0}, Landroid/app/VRManager;->getService()Lcom/android/internal/app/IVRManagerService;
@@ -662,8 +646,6 @@
 
 .method public setSystemOption(Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     :try_start_0
     invoke-direct {p0}, Landroid/app/VRManager;->getService()Lcom/android/internal/app/IVRManagerService;
@@ -691,10 +673,6 @@
 
 .method public setThreadSchedFifo(Ljava/lang/String;III)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/4 v1, 0x0
 
@@ -726,7 +704,6 @@
 
 .method public setVRBright(I)V
     .locals 3
-    .param p1    # I
 
     :try_start_0
     invoke-direct {p0}, Landroid/app/VRManager;->getService()Lcom/android/internal/app/IVRManagerService;
@@ -754,7 +731,6 @@
 
 .method public setVRColorTemperature(I)V
     .locals 3
-    .param p1    # I
 
     :try_start_0
     invoke-direct {p0}, Landroid/app/VRManager;->getService()Lcom/android/internal/app/IVRManagerService;
@@ -782,7 +758,6 @@
 
 .method public setVRComfortableView(Z)V
     .locals 3
-    .param p1    # Z
 
     :try_start_0
     invoke-direct {p0}, Landroid/app/VRManager;->getService()Lcom/android/internal/app/IVRManagerService;
@@ -810,7 +785,6 @@
 
 .method public setVRDarkAdaptation(Z)V
     .locals 3
-    .param p1    # Z
 
     :try_start_0
     invoke-direct {p0}, Landroid/app/VRManager;->getService()Lcom/android/internal/app/IVRManagerService;
@@ -838,7 +812,6 @@
 
 .method public setVRLowPersistence(Z)V
     .locals 3
-    .param p1    # Z
 
     :try_start_0
     invoke-direct {p0}, Landroid/app/VRManager;->getService()Lcom/android/internal/app/IVRManagerService;
@@ -866,7 +839,6 @@
 
 .method public setVRMode(Z)V
     .locals 3
-    .param p1    # Z
 
     :try_start_0
     invoke-direct {p0}, Landroid/app/VRManager;->getService()Lcom/android/internal/app/IVRManagerService;
@@ -894,9 +866,6 @@
 
 .method public setVideoMode(Ljava/lang/String;FZ)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # F
-    .param p3    # Z
 
     const/4 v1, 0x0
 

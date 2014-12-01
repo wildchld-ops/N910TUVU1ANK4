@@ -36,10 +36,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;Ljava/net/InetAddress;Ljava/lang/String;Ljava/net/InetAddress;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/net/InetAddress;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/net/InetAddress;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/net/SocketException;
@@ -137,11 +133,6 @@
 
 .method public static doArp(Ljava/lang/String;Landroid/net/LinkProperties;III)Z
     .locals 15
-    .param p0    # Ljava/lang/String;
-    .param p1    # Landroid/net/LinkProperties;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-virtual/range {p1 .. p1}, Landroid/net/LinkProperties;->getInterfaceName()Ljava/lang/String;
 
@@ -303,7 +294,6 @@
 
 .method public doArp(I)[B
     .locals 14
-    .param p1    # I
 
     const/16 v0, 0x5dc
 

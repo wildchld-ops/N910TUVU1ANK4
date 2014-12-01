@@ -27,7 +27,6 @@
 
 .method synthetic constructor <init>(Lcom/android/settings/widget/SettingsAppWidgetProvider$1;)V
     .locals 0
-    .param p1    # Lcom/android/settings/widget/SettingsAppWidgetProvider$1;
 
     invoke-direct {p0}, Lcom/android/settings/widget/SettingsAppWidgetProvider$BluetoothStateTracker;-><init>()V
 
@@ -36,7 +35,6 @@
 
 .method private static bluetoothStateToFiveState(I)I
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -80,7 +78,6 @@
 # virtual methods
 .method public getActualState(Landroid/content/Context;)I
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     # getter for: Lcom/android/settings/widget/SettingsAppWidgetProvider;->sLocalBluetoothAdapter:Lcom/android/settings/bluetooth/LocalBluetoothAdapter;
     invoke-static {}, Lcom/android/settings/widget/SettingsAppWidgetProvider;->access$900()Lcom/android/settings/bluetooth/LocalBluetoothAdapter;
@@ -143,7 +140,6 @@
 
 .method public getButtonImageId(Z)I
     .locals 1
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -176,8 +172,6 @@
 
 .method public onActualStateChange(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     const-string v1, "android.bluetooth.adapter.action.STATE_CHANGED"
 
@@ -214,8 +208,6 @@
 
 .method protected requestStateChange(Landroid/content/Context;Z)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Z
 
     # getter for: Lcom/android/settings/widget/SettingsAppWidgetProvider;->sLocalBluetoothAdapter:Lcom/android/settings/bluetooth/LocalBluetoothAdapter;
     invoke-static {}, Lcom/android/settings/widget/SettingsAppWidgetProvider;->access$900()Lcom/android/settings/bluetooth/LocalBluetoothAdapter;

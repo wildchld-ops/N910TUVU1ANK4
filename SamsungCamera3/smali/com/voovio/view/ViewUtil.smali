@@ -14,7 +14,6 @@
 
 .method public static unbindDrawables(Landroid/view/View;)V
     .locals 3
-    .param p0    # Landroid/view/View;
 
     invoke-virtual {p0}, Landroid/view/View;->getBackground()Landroid/graphics/drawable/Drawable;
 

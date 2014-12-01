@@ -72,8 +72,6 @@
 # direct methods
 .method constructor <init>(Landroid/content/Context;Landroid/bluetooth/IBluetoothGatt;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/bluetooth/IBluetoothGatt;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -118,7 +116,6 @@
 
 .method static synthetic access$000(Landroid/bluetooth/BluetoothGattServer;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Landroid/bluetooth/BluetoothGattServer;
 
     iget-object v0, p0, Landroid/bluetooth/BluetoothGattServer;->mServerIfLock:Ljava/lang/Object;
 
@@ -127,7 +124,6 @@
 
 .method static synthetic access$100(Landroid/bluetooth/BluetoothGattServer;)Landroid/bluetooth/BluetoothGattServerCallback;
     .locals 1
-    .param p0    # Landroid/bluetooth/BluetoothGattServer;
 
     iget-object v0, p0, Landroid/bluetooth/BluetoothGattServer;->mCallback:Landroid/bluetooth/BluetoothGattServerCallback;
 
@@ -136,8 +132,6 @@
 
 .method static synthetic access$202(Landroid/bluetooth/BluetoothGattServer;I)I
     .locals 0
-    .param p0    # Landroid/bluetooth/BluetoothGattServer;
-    .param p1    # I
 
     iput p1, p0, Landroid/bluetooth/BluetoothGattServer;->mServerIf:I
 
@@ -146,7 +140,6 @@
 
 .method static synthetic access$300(Landroid/bluetooth/BluetoothGattServer;)Landroid/bluetooth/BluetoothAdapter;
     .locals 1
-    .param p0    # Landroid/bluetooth/BluetoothGattServer;
 
     iget-object v0, p0, Landroid/bluetooth/BluetoothGattServer;->mAdapter:Landroid/bluetooth/BluetoothAdapter;
 
@@ -228,7 +221,6 @@
 # virtual methods
 .method public addService(Landroid/bluetooth/BluetoothGattService;)Z
     .locals 18
-    .param p1    # Landroid/bluetooth/BluetoothGattService;
 
     const-string v1, "BluetoothGattServer"
 
@@ -520,7 +512,6 @@
 
 .method public cancelConnection(Landroid/bluetooth/BluetoothDevice;)V
     .locals 4
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
 
     const-string v1, "BluetoothGattServer"
 
@@ -653,8 +644,6 @@
 
 .method public connect(Landroid/bluetooth/BluetoothDevice;Z)Z
     .locals 7
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
-    .param p2    # Z
 
     const/4 v1, 0x1
 
@@ -773,7 +762,6 @@
 
 .method public getConnectionState(Landroid/bluetooth/BluetoothDevice;)I
     .locals 2
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
 
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
@@ -786,7 +774,6 @@
 
 .method public getDevicesMatchingConnectionStates([I)Ljava/util/List;
     .locals 2
-    .param p1    # [I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([I)",
@@ -808,7 +795,6 @@
 
 .method public getService(Ljava/util/UUID;)Landroid/bluetooth/BluetoothGattService;
     .locals 3
-    .param p1    # Ljava/util/UUID;
 
     iget-object v2, p0, Landroid/bluetooth/BluetoothGattServer;->mServices:Ljava/util/List;
 
@@ -850,9 +836,6 @@
 
 .method getService(Ljava/util/UUID;II)Landroid/bluetooth/BluetoothGattService;
     .locals 3
-    .param p1    # Ljava/util/UUID;
-    .param p2    # I
-    .param p3    # I
 
     iget-object v2, p0, Landroid/bluetooth/BluetoothGattServer;->mServices:Ljava/util/List;
 
@@ -923,7 +906,6 @@
 
 .method public listen(Z)V
     .locals 4
-    .param p1    # Z
 
     const-string v1, "BluetoothGattServer"
 
@@ -985,9 +967,6 @@
 
 .method public notifyCharacteristicChanged(Landroid/bluetooth/BluetoothDevice;Landroid/bluetooth/BluetoothGattCharacteristic;Z)Z
     .locals 12
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
-    .param p2    # Landroid/bluetooth/BluetoothGattCharacteristic;
-    .param p3    # Z
 
     const-string v0, "BluetoothGattServer"
 
@@ -1108,7 +1087,6 @@
 
 .method registerCallback(Landroid/bluetooth/BluetoothGattServerCallback;)Z
     .locals 7
-    .param p1    # Landroid/bluetooth/BluetoothGattServerCallback;
 
     const/4 v2, 0x0
 
@@ -1290,7 +1268,6 @@
 
 .method public removeService(Landroid/bluetooth/BluetoothGattService;)Z
     .locals 9
-    .param p1    # Landroid/bluetooth/BluetoothGattService;
 
     const/4 v2, 0x0
 
@@ -1398,11 +1375,6 @@
 
 .method public sendResponse(Landroid/bluetooth/BluetoothDevice;III[B)Z
     .locals 9
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # [B
 
     const/4 v8, 0x0
 
@@ -1488,8 +1460,6 @@
 
 .method public setAdvParams(II)Z
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     const-string v0, "BluetoothGattServer"
 
@@ -1534,9 +1504,6 @@
 
 .method public setAdvParams(IIZ)Z
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     const/4 v2, 0x0
 
@@ -1643,7 +1610,6 @@
 
 .method public setAdvertiseMode(I)I
     .locals 4
-    .param p1    # I
 
     const/high16 v1, -0x80000000
 
@@ -1688,13 +1654,6 @@
 
 .method public setServerAdvData(ZZZLjava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;[Ljava/lang/Byte;)V
     .locals 13
-    .param p1    # Z
-    .param p2    # Z
-    .param p3    # Z
-    .param p4    # Ljava/lang/Integer;
-    .param p5    # Ljava/lang/Integer;
-    .param p6    # Ljava/lang/Integer;
-    .param p7    # [Ljava/lang/Byte;
 
     const-string v1, "BluetoothGattServer"
 
@@ -1828,14 +1787,6 @@
 
 .method public setServerAdvData(ZZZLjava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;[Ljava/lang/Byte;[Ljava/lang/Byte;)V
     .locals 13
-    .param p1    # Z
-    .param p2    # Z
-    .param p3    # Z
-    .param p4    # Ljava/lang/Integer;
-    .param p5    # Ljava/lang/Integer;
-    .param p6    # Ljava/lang/Integer;
-    .param p7    # [Ljava/lang/Byte;
-    .param p8    # [Ljava/lang/Byte;
 
     const-string v1, "BluetoothGattServer"
 
@@ -1999,11 +1950,6 @@
 
 .method public updateConnParams(Landroid/bluetooth/BluetoothDevice;IIII)Z
     .locals 8
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     const/4 v7, 0x0
 

@@ -181,7 +181,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const-wide/16 v0, -0x2710
 
@@ -235,9 +234,6 @@
 
 .method static synthetic access$000(Lcom/android/server/enterprise/sso/GenericSSOService;ILandroid/os/Bundle;)Landroid/app/enterprise/sso/TokenInfo;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/sso/GenericSSOService;
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/enterprise/sso/GenericSSOService;->getTokenFromConfigData(ILandroid/os/Bundle;)Landroid/app/enterprise/sso/TokenInfo;
 
@@ -248,7 +244,6 @@
 
 .method static synthetic access$102(Ljavax/crypto/SecretKey;)Ljavax/crypto/SecretKey;
     .locals 0
-    .param p0    # Ljavax/crypto/SecretKey;
 
     sput-object p0, Lcom/android/server/enterprise/sso/GenericSSOService;->sSecretKeyFromAndroidKeyStore:Ljavax/crypto/SecretKey;
 
@@ -273,7 +268,6 @@
 
 .method static synthetic access$1400(Lcom/android/server/enterprise/sso/GenericSSOService;)J
     .locals 2
-    .param p0    # Lcom/android/server/enterprise/sso/GenericSSOService;
 
     iget-wide v0, p0, Lcom/android/server/enterprise/sso/GenericSSOService;->initUTCTime:J
 
@@ -282,8 +276,6 @@
 
 .method static synthetic access$1402(Lcom/android/server/enterprise/sso/GenericSSOService;J)J
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/sso/GenericSSOService;
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/android/server/enterprise/sso/GenericSSOService;->initUTCTime:J
 
@@ -300,7 +292,6 @@
 
 .method static synthetic access$202(Ljava/security/Key;)Ljava/security/Key;
     .locals 0
-    .param p0    # Ljava/security/Key;
 
     sput-object p0, Lcom/android/server/enterprise/sso/GenericSSOService;->key:Ljava/security/Key;
 
@@ -309,7 +300,6 @@
 
 .method static synthetic access$302(Ljava/security/KeyPair;)Ljava/security/KeyPair;
     .locals 0
-    .param p0    # Ljava/security/KeyPair;
 
     sput-object p0, Lcom/android/server/enterprise/sso/GenericSSOService;->mKeyPair:Ljava/security/KeyPair;
 
@@ -318,9 +308,6 @@
 
 .method private addAppTokenToSecureStorageForUser(ILjava/lang/String;Landroid/app/enterprise/sso/TokenInfo;)I
     .locals 11
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/app/enterprise/sso/TokenInfo;
 
     :try_start_0
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/sso/GenericSSOService;->getTokenConfigForUserId(I)Lcom/android/server/enterprise/sso/GenericSSOService$TokenConfigDocument;
@@ -551,9 +538,6 @@
 
 .method private addTokenToGenericSSO(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Landroid/app/enterprise/sso/TokenInfo;)I
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/app/enterprise/sso/TokenInfo;
 
     invoke-direct {p0, p2}, Lcom/android/server/enterprise/sso/GenericSSOService;->isNullOrEmpty(Ljava/lang/String;)Z
 
@@ -653,9 +637,6 @@
 
 .method private addTokenToSecureStorage(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Landroid/app/enterprise/sso/TokenInfo;)I
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/app/enterprise/sso/TokenInfo;
 
     invoke-static {p1}, Lcom/android/server/enterprise/EnterpriseDeviceManagerService;->getCallingOrCurrentUserId(Landroid/app/enterprise/ContextInfo;)I
 
@@ -670,9 +651,6 @@
 
 .method private addTokenToSecureStorageForUser(ILjava/lang/String;Landroid/app/enterprise/sso/TokenInfo;)I
     .locals 13
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/app/enterprise/sso/TokenInfo;
 
     if-eqz p3, :cond_0
 
@@ -994,8 +972,6 @@
 
 .method private addUserAndDeviceCertificatesForUser(ILandroid/app/enterprise/sso/TokenInfo;)I
     .locals 12
-    .param p1    # I
-    .param p2    # Landroid/app/enterprise/sso/TokenInfo;
 
     :try_start_0
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/sso/GenericSSOService;->getTokenConfigForUserId(I)Lcom/android/server/enterprise/sso/GenericSSOService$TokenConfigDocument;
@@ -1222,8 +1198,6 @@
 
 .method private bindToService(ILandroid/content/Intent;)V
     .locals 8
-    .param p1    # I
-    .param p2    # Landroid/content/Intent;
 
     new-instance v0, Lcom/android/server/enterprise/sso/GenericSSOService$SSOServiceConnection;
 
@@ -1371,9 +1345,6 @@
 
 .method private callingAppIsPermitted(ILjava/lang/String;Landroid/os/Bundle;)Z
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/os/Bundle;
 
     const/4 v2, 0x1
 
@@ -1538,7 +1509,6 @@
 
 .method private cleanUpSSOConnections(I)V
     .locals 3
-    .param p1    # I
 
     sget-object v0, Lcom/android/server/enterprise/sso/GenericSSOService;->mSSOInterfaceMap:Ljava/util/Map;
 
@@ -1601,7 +1571,6 @@
 
 .method private clearConfigAndTokenForAuthenticator(I)I
     .locals 6
-    .param p1    # I
 
     :try_start_0
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/sso/GenericSSOService;->unregisterByAuthenticator(I)I
@@ -1688,7 +1657,6 @@
 
 .method private clearUserCertAndAppToken(Landroid/app/enterprise/ContextInfo;)I
     .locals 10
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     :try_start_0
     invoke-static {p1}, Lcom/android/server/enterprise/EnterpriseDeviceManagerService;->getCallingOrCurrentUserId(Landroid/app/enterprise/ContextInfo;)I
@@ -1854,7 +1822,6 @@
 
 .method private decrypt(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Landroid/os/Binder;->clearCallingIdentity()J
 
@@ -1883,8 +1850,6 @@
 
 .method private decrypt(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 11
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v7, 0x0
 
@@ -2233,8 +2198,6 @@
 
 .method private deleteAppTokenForUser(ILjava/lang/String;)I
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p2}, Lcom/android/server/enterprise/sso/GenericSSOService;->isNullOrEmpty(Ljava/lang/String;)Z
 
@@ -2385,7 +2348,6 @@
 
 .method private deleteUserAndDeviceCertForUser(I)I
     .locals 6
-    .param p1    # I
 
     :try_start_0
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/sso/GenericSSOService;->getTokenConfigForUserId(I)Lcom/android/server/enterprise/sso/GenericSSOService$TokenConfigDocument;
@@ -2514,7 +2476,6 @@
 
 .method private encrypt(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Landroid/os/Binder;->clearCallingIdentity()J
 
@@ -2543,8 +2504,6 @@
 
 .method private encrypt(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 13
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v10, 0x0
 
@@ -2924,7 +2883,6 @@
 
 .method private enforceKnoxSSOPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/sso/GenericSSOService;->getEDM()Landroid/app/enterprise/EnterpriseDeviceManager;
 
@@ -2941,7 +2899,6 @@
 
 .method private enforceOwnerOnlyAndKnoxSSOPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/sso/GenericSSOService;->getEDM()Landroid/app/enterprise/EnterpriseDeviceManager;
 
@@ -2958,8 +2915,6 @@
 
 .method private existedNode(Lorg/w3c/dom/Node;Ljava/lang/String;)Lorg/w3c/dom/Node;
     .locals 8
-    .param p1    # Lorg/w3c/dom/Node;
-    .param p2    # Ljava/lang/String;
 
     const/4 v6, 0x0
 
@@ -3080,10 +3035,6 @@
 
 .method private fillChildNodes(Lcom/android/server/enterprise/sso/GenericSSOService$TokenConfigDocument;Lorg/w3c/dom/Element;Ljava/lang/String;Ljava/lang/String;)V
     .locals 6
-    .param p1    # Lcom/android/server/enterprise/sso/GenericSSOService$TokenConfigDocument;
-    .param p2    # Lorg/w3c/dom/Element;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     if-eqz p2, :cond_0
 
@@ -3243,8 +3194,6 @@
 
 .method private findNodeByAttribute(Ljava/util/List;Ljava/lang/String;Ljava/lang/String;)Lorg/w3c/dom/Node;
     .locals 5
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3322,7 +3271,6 @@
 
 .method private getAccessTokenByProtocolType(Landroid/app/enterprise/sso/TokenInfo;)Ljava/lang/String;
     .locals 5
-    .param p1    # Landroid/app/enterprise/sso/TokenInfo;
 
     const/4 v2, 0x0
 
@@ -3399,8 +3347,6 @@
 
 .method private getAppTokenFromSecureStorageForUser(ILjava/lang/String;)Landroid/app/enterprise/sso/TokenInfo;
     .locals 12
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v8, 0x0
 
@@ -3599,8 +3545,6 @@
 
 .method private getAttributeNode(Lorg/w3c/dom/Node;Ljava/lang/String;)Lorg/w3c/dom/Node;
     .locals 1
-    .param p1    # Lorg/w3c/dom/Node;
-    .param p2    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -3632,7 +3576,6 @@
 
 .method private getChildNodes(Lorg/w3c/dom/Node;)Ljava/util/ArrayList;
     .locals 8
-    .param p1    # Lorg/w3c/dom/Node;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3724,8 +3667,6 @@
 
 .method private getChildNodes(Lorg/w3c/dom/Node;Ljava/lang/String;)Ljava/util/ArrayList;
     .locals 8
-    .param p1    # Lorg/w3c/dom/Node;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3835,8 +3776,6 @@
 
 .method private getConfigData(ILjava/lang/String;)Landroid/os/Bundle;
     .locals 7
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/sso/GenericSSOService;->getConfigDataForSSOVendor(I)Landroid/os/Bundle;
 
@@ -3943,8 +3882,6 @@
 
 .method private getConfigDataForPkgName(ILjava/lang/String;)Landroid/os/Bundle;
     .locals 12
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     :try_start_0
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/sso/GenericSSOService;->getSSOConfigForUserId(I)Lcom/android/server/enterprise/sso/GenericSSOService$RequestConfigDocument;
@@ -4127,7 +4064,6 @@
 
 .method private getConfigDataForSSOVendor(I)Landroid/os/Bundle;
     .locals 12
-    .param p1    # I
 
     sget-boolean v10, Landroid/app/enterprise/sso/GenericSSOConstants;->DEBUG:Z
 
@@ -4315,7 +4251,6 @@
 
 .method private getDeviceCertificate(I)Landroid/app/enterprise/sso/TokenInfo;
     .locals 10
-    .param p1    # I
 
     new-instance v6, Landroid/app/enterprise/sso/TokenInfo;
 
@@ -4427,7 +4362,6 @@
 
 .method private getExpirationTimeByProtocolType(Landroid/app/enterprise/sso/TokenInfo;)Ljava/lang/String;
     .locals 5
-    .param p1    # Landroid/app/enterprise/sso/TokenInfo;
 
     const/4 v2, 0x0
 
@@ -4549,7 +4483,6 @@
 
 .method private getInstanceOfKeyStore(Ljava/lang/String;)Ljava/security/KeyStore;
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -4953,8 +4886,6 @@
 
 .method private getPackageCertForPkgname(ILjava/lang/String;)Ljava/lang/String;
     .locals 17
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v8, 0x0
 
@@ -5110,8 +5041,6 @@
 
 .method private getPackageInfoForPid(II)Ljava/lang/String;
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     packed-switch p2, :pswitch_data_0
 
@@ -5157,7 +5086,6 @@
 
 .method private getPackageNameForPid(I)Ljava/lang/String;
     .locals 11
-    .param p1    # I
 
     const/4 v9, 0x0
 
@@ -5324,7 +5252,6 @@
 
 .method private getRefreshTokenByProtocolType(Landroid/app/enterprise/sso/TokenInfo;)Ljava/lang/String;
     .locals 5
-    .param p1    # Landroid/app/enterprise/sso/TokenInfo;
 
     const/4 v2, 0x0
 
@@ -5381,7 +5308,6 @@
 
 .method private getRequestConfigFilePath(I)Ljava/lang/String;
     .locals 2
-    .param p1    # I
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -5418,7 +5344,6 @@
 
 .method private getSSOConfigForUserId(I)Lcom/android/server/enterprise/sso/GenericSSOService$RequestConfigDocument;
     .locals 3
-    .param p1    # I
 
     :try_start_0
     sget-object v1, Lcom/android/server/enterprise/sso/GenericSSOService;->requestConfigXMLDocs:Landroid/util/SparseArray;
@@ -5461,7 +5386,6 @@
 
 .method private getSSOService(I)Landroid/app/enterprise/sso/GenericSSOSupportSolution;
     .locals 4
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -5536,7 +5460,6 @@
 
 .method private getSSOServiceIntent(Ljava/lang/String;)Landroid/content/Intent;
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     new-instance v1, Landroid/content/Intent;
@@ -5994,7 +5917,6 @@
 
 .method private getTempConfigFilePath(I)Ljava/lang/String;
     .locals 2
-    .param p1    # I
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -6047,8 +5969,6 @@
 
 .method private getTokenByRefreshToken(Landroid/app/enterprise/ContextInfo;Landroid/os/Bundle;)Landroid/app/enterprise/sso/TokenInfo;
     .locals 13
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Landroid/os/Bundle;
 
     const/4 v12, 0x0
 
@@ -6197,7 +6117,6 @@
 
 .method private getTokenConfigFilePath(I)Ljava/lang/String;
     .locals 2
-    .param p1    # I
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -6234,7 +6153,6 @@
 
 .method private getTokenConfigForUserId(I)Lcom/android/server/enterprise/sso/GenericSSOService$TokenConfigDocument;
     .locals 3
-    .param p1    # I
 
     :try_start_0
     sget-object v1, Lcom/android/server/enterprise/sso/GenericSSOService;->tokenConfigXMLDocs:Landroid/util/SparseArray;
@@ -6277,8 +6195,6 @@
 
 .method private getTokenFromConfigData(ILandroid/os/Bundle;)Landroid/app/enterprise/sso/TokenInfo;
     .locals 12
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     const/4 v11, 0x0
 
@@ -6423,8 +6339,6 @@
 
 .method private getTokenFromGenericSSO(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Landroid/app/enterprise/sso/TokenInfo;
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p2}, Lcom/android/server/enterprise/sso/GenericSSOService;->isNullOrEmpty(Ljava/lang/String;)Z
 
@@ -6524,8 +6438,6 @@
 
 .method private getTokenFromLocalCache(Landroid/app/enterprise/ContextInfo;Landroid/os/Bundle;)Landroid/app/enterprise/sso/TokenInfo;
     .locals 10
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Landroid/os/Bundle;
 
     invoke-static {p1}, Lcom/android/server/enterprise/EnterpriseDeviceManagerService;->getCallingOrCurrentUserId(Landroid/app/enterprise/ContextInfo;)I
 
@@ -6641,7 +6553,6 @@
 
 .method private getUserAndDeviceCertificatesForUser(I)Landroid/app/enterprise/sso/TokenInfo;
     .locals 12
-    .param p1    # I
 
     const/4 v11, 0x1
 
@@ -6816,7 +6727,6 @@
 
 .method private getUserCertificate(I)Landroid/app/enterprise/sso/TokenInfo;
     .locals 10
-    .param p1    # I
 
     new-instance v5, Landroid/app/enterprise/sso/TokenInfo;
 
@@ -6954,7 +6864,6 @@
 
 .method private getWhitelistAppNode(Lorg/w3c/dom/Node;)Ljava/util/ArrayList;
     .locals 4
-    .param p1    # Lorg/w3c/dom/Node;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -7038,8 +6947,6 @@
 
 .method private hasTokenExpired(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 10
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const-wide/16 v8, 0x0
 
@@ -7365,7 +7272,6 @@
 
 .method private initRequestConfigDoc(I)V
     .locals 12
-    .param p1    # I
 
     const/4 v6, 0x0
 
@@ -7601,7 +7507,6 @@
 
 .method private initTokenConfigDoc(I)V
     .locals 12
-    .param p1    # I
 
     const/4 v6, 0x0
 
@@ -7843,8 +7748,6 @@
 
 .method private installedServiceIsPermitted(ILandroid/os/Bundle;)Z
     .locals 8
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     const/4 v4, 0x1
 
@@ -7955,8 +7858,6 @@
 
 .method private isCallingMDMMatch(II)Z
     .locals 9
-    .param p1    # I
-    .param p2    # I
 
     const/4 v4, 0x1
 
@@ -8082,7 +7983,6 @@
 
 .method private isFileExist(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/io/File;
 
@@ -8172,7 +8072,6 @@
 
 .method private isNullOrEmpty(Landroid/os/Bundle;)Z
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     if-eqz p1, :cond_0
 
@@ -8196,7 +8095,6 @@
 
 .method private isNullOrEmpty(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -8220,7 +8118,6 @@
 
 .method private loadKey(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -8526,9 +8423,6 @@
 
 .method private pushAuthenticatorConfig(ILjava/lang/String;Landroid/os/Bundle;)I
     .locals 10
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/os/Bundle;
 
     const/4 v6, -0x1
 
@@ -8697,7 +8591,6 @@
 
 .method private reAuthenInAuthenticator(I)I
     .locals 14
-    .param p1    # I
 
     :try_start_0
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/sso/GenericSSOService;->getSSOConfigForUserId(I)Lcom/android/server/enterprise/sso/GenericSSOService$RequestConfigDocument;
@@ -8905,7 +8798,6 @@
 
 .method private static readKeyData(Ljava/io/File;)[B
     .locals 6
-    .param p0    # Ljava/io/File;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -9015,8 +8907,6 @@
 
 .method private saveConfigToFile(Lorg/w3c/dom/Document;Ljava/lang/String;)V
     .locals 10
-    .param p1    # Lorg/w3c/dom/Document;
-    .param p2    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -9335,8 +9225,6 @@
 
 .method private stopAuthenticatorApplication(Ljava/lang/String;I)V
     .locals 13
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     if-nez p1, :cond_1
 
@@ -9501,9 +9389,6 @@
 
 .method private unRegisterInAuthenticator(ILjava/lang/String;Landroid/os/Bundle;)I
     .locals 7
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/os/Bundle;
 
     const/4 v4, -0x1
 
@@ -9601,7 +9486,6 @@
 
 .method private unregisterByAuthenticator(I)I
     .locals 17
-    .param p1    # I
 
     const/4 v10, 0x0
 
@@ -9798,8 +9682,6 @@
 
 .method private unwrap(Ljavax/crypto/Cipher;[B)Ljavax/crypto/SecretKey;
     .locals 2
-    .param p1    # Ljavax/crypto/Cipher;
-    .param p2    # [B
     .annotation build Landroid/annotation/TargetApi;
         value = 0x12
     .end annotation
@@ -9835,8 +9717,6 @@
 
 .method private updateCacheAndFile(ILcom/android/server/enterprise/sso/GenericSSOService$RequestConfigDocument;)V
     .locals 4
-    .param p1    # I
-    .param p2    # Lcom/android/server/enterprise/sso/GenericSSOService$RequestConfigDocument;
 
     # invokes: Lcom/android/server/enterprise/sso/GenericSSOService$RequestConfigDocument;->update()V
     invoke-static {p2}, Lcom/android/server/enterprise/sso/GenericSSOService$RequestConfigDocument;->access$500(Lcom/android/server/enterprise/sso/GenericSSOService$RequestConfigDocument;)V
@@ -9906,8 +9786,6 @@
 
 .method private updateCacheAndFile(ILcom/android/server/enterprise/sso/GenericSSOService$TokenConfigDocument;)V
     .locals 4
-    .param p1    # I
-    .param p2    # Lcom/android/server/enterprise/sso/GenericSSOService$TokenConfigDocument;
 
     # invokes: Lcom/android/server/enterprise/sso/GenericSSOService$TokenConfigDocument;->update()V
     invoke-static {p2}, Lcom/android/server/enterprise/sso/GenericSSOService$TokenConfigDocument;->access$600(Lcom/android/server/enterprise/sso/GenericSSOService$TokenConfigDocument;)V
@@ -9977,8 +9855,6 @@
 
 .method private vendorPermissionCheck(ILjava/lang/String;)Z
     .locals 9
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v6, 0x1
 
@@ -10085,8 +9961,6 @@
 
 .method private wrap(Ljavax/crypto/Cipher;Ljavax/crypto/SecretKey;)[B
     .locals 2
-    .param p1    # Ljavax/crypto/Cipher;
-    .param p2    # Ljavax/crypto/SecretKey;
     .annotation build Landroid/annotation/TargetApi;
         value = 0x12
     .end annotation
@@ -10116,8 +9990,6 @@
 
 .method private static writeKeyData(Ljava/io/File;[B)V
     .locals 3
-    .param p0    # Ljava/io/File;
-    .param p1    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -10160,8 +10032,6 @@
 # virtual methods
 .method protected acquireUserInfo(ILandroid/os/Bundle;)Landroid/app/enterprise/sso/UserInfo;
     .locals 12
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     const/4 v11, 0x0
 
@@ -10306,9 +10176,6 @@
 
 .method public addAppTokenToGenericSSO(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Landroid/app/enterprise/sso/TokenInfo;)I
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/app/enterprise/sso/TokenInfo;
 
     invoke-direct {p0, p2}, Lcom/android/server/enterprise/sso/GenericSSOService;->isNullOrEmpty(Ljava/lang/String;)Z
 
@@ -10387,8 +10254,6 @@
 
 .method public addUserAndDeviceCertToGenericSSO(Landroid/app/enterprise/ContextInfo;Landroid/app/enterprise/sso/TokenInfo;)I
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Landroid/app/enterprise/sso/TokenInfo;
 
     if-eqz p2, :cond_0
 
@@ -10461,7 +10326,6 @@
 
 .method public addWhiteListPackages(Landroid/app/enterprise/ContextInfo;Ljava/util/List;)I
     .locals 22
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -11013,8 +10877,6 @@
 
 .method public configureSSOByFile(Landroid/app/enterprise/ContextInfo;[B)I
     .locals 31
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # [B
 
     invoke-direct/range {p0 .. p1}, Lcom/android/server/enterprise/sso/GenericSSOService;->enforceKnoxSSOPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -11656,7 +11518,6 @@
 
 .method public deleteWhiteListPackages(Landroid/app/enterprise/ContextInfo;Ljava/util/List;)I
     .locals 12
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -11911,10 +11772,6 @@
 
 .method public enrollSSOVendor(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)I
     .locals 27
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Landroid/os/Bundle;
 
     const/4 v15, 0x0
 
@@ -12634,7 +12491,6 @@
 
 .method public forceAuthenticate(Landroid/app/enterprise/ContextInfo;)I
     .locals 9
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/sso/GenericSSOService;->enforceKnoxSSOPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -12765,8 +12621,6 @@
 
 .method public getAppTokenFromGenericSSO(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Landroid/app/enterprise/sso/TokenInfo;
     .locals 6
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -12833,7 +12687,6 @@
 
 .method public getCustomerBrandInfo(Landroid/app/enterprise/ContextInfo;)Landroid/os/Bundle;
     .locals 15
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     :try_start_0
     invoke-static/range {p1 .. p1}, Lcom/android/server/enterprise/EnterpriseDeviceManagerService;->getCallingOrCurrentUserId(Landroid/app/enterprise/ContextInfo;)I
@@ -13000,7 +12853,6 @@
 
 .method public getEnrolledSSOVendor(Landroid/app/enterprise/ContextInfo;)Ljava/lang/String;
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/sso/GenericSSOService;->enforceKnoxSSOPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -13032,9 +12884,6 @@
 
 .method public getToken(Landroid/app/enterprise/ContextInfo;ZLandroid/app/enterprise/sso/IGenericSSOCallback;)V
     .locals 14
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
-    .param p3    # Landroid/app/enterprise/sso/IGenericSSOCallback;
 
     :try_start_0
     invoke-direct {p0}, Lcom/android/server/enterprise/sso/GenericSSOService;->isNetworkAvailable()Z
@@ -13318,7 +13167,6 @@
 
 .method public getUserAndDeviceCertFromGenericSSO(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/sso/TokenInfo;
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-static {p1}, Lcom/android/server/enterprise/EnterpriseDeviceManagerService;->getCallingOrCurrentUserId(Landroid/app/enterprise/ContextInfo;)I
 
@@ -13366,8 +13214,6 @@
 
 .method public getUserInfo(Landroid/app/enterprise/ContextInfo;Landroid/app/enterprise/sso/IGenericSSOCallback;)V
     .locals 11
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Landroid/app/enterprise/sso/IGenericSSOCallback;
 
     :try_start_0
     invoke-direct {p0}, Lcom/android/server/enterprise/sso/GenericSSOService;->isNetworkAvailable()Z
@@ -13563,7 +13409,6 @@
 
 .method public getWhiteListPackages(Landroid/app/enterprise/ContextInfo;)Ljava/util/List;
     .locals 11
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -13713,14 +13558,12 @@
 
 .method public onAdminAdded(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onAdminRemoved(I)V
     .locals 7
-    .param p1    # I
 
     sget-boolean v4, Landroid/app/enterprise/sso/GenericSSOConstants;->DEBUG:Z
 
@@ -13835,7 +13678,6 @@
 
 .method public onPreAdminRemoval(I)V
     .locals 3
-    .param p1    # I
 
     sget-boolean v0, Landroid/app/enterprise/sso/GenericSSOConstants;->DEBUG:Z
 
@@ -13869,8 +13711,6 @@
 
 .method public processWebServiceRequest(Landroid/app/enterprise/ContextInfo;Landroid/app/enterprise/sso/WebServiceRequest;)Landroid/app/enterprise/sso/WebServiceResponse;
     .locals 14
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Landroid/app/enterprise/sso/WebServiceRequest;
 
     :try_start_0
     invoke-direct {p0}, Lcom/android/server/enterprise/sso/GenericSSOService;->isNetworkAvailable()Z
@@ -14116,8 +13956,6 @@
 
 .method public removeAppTokenFromGenericSSO(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)I
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p2}, Lcom/android/server/enterprise/sso/GenericSSOService;->isNullOrEmpty(Ljava/lang/String;)Z
 
@@ -14182,7 +14020,6 @@
 
 .method public removeUserAndDeviceCertFromGenericSSO(Landroid/app/enterprise/ContextInfo;)I
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-static {p1}, Lcom/android/server/enterprise/EnterpriseDeviceManagerService;->getCallingOrCurrentUserId(Landroid/app/enterprise/ContextInfo;)I
 
@@ -14230,8 +14067,6 @@
 
 .method public setCustomerBrandInfo(Landroid/app/enterprise/ContextInfo;Landroid/os/Bundle;)I
     .locals 17
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Landroid/os/Bundle;
 
     invoke-direct/range {p0 .. p1}, Lcom/android/server/enterprise/sso/GenericSSOService;->enforceKnoxSSOPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -14563,8 +14398,6 @@
 
 .method public unenrollSSOVendor(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)I
     .locals 9
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const/4 v4, -0x3
 

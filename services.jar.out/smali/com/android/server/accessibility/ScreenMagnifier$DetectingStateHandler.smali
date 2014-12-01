@@ -55,8 +55,6 @@
 
 .method synthetic constructor <init>(Lcom/android/server/accessibility/ScreenMagnifier;Lcom/android/server/accessibility/ScreenMagnifier$1;)V
     .locals 0
-    .param p1    # Lcom/android/server/accessibility/ScreenMagnifier;
-    .param p2    # Lcom/android/server/accessibility/ScreenMagnifier$1;
 
     invoke-direct {p0, p1}, Lcom/android/server/accessibility/ScreenMagnifier$DetectingStateHandler;-><init>(Lcom/android/server/accessibility/ScreenMagnifier;)V
 
@@ -65,9 +63,6 @@
 
 .method static synthetic access$1700(Lcom/android/server/accessibility/ScreenMagnifier$DetectingStateHandler;Landroid/view/MotionEvent;I)V
     .locals 0
-    .param p0    # Lcom/android/server/accessibility/ScreenMagnifier$DetectingStateHandler;
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/accessibility/ScreenMagnifier$DetectingStateHandler;->onActionTapAndHold(Landroid/view/MotionEvent;I)V
 
@@ -76,7 +71,6 @@
 
 .method static synthetic access$1800(Lcom/android/server/accessibility/ScreenMagnifier$DetectingStateHandler;)V
     .locals 0
-    .param p0    # Lcom/android/server/accessibility/ScreenMagnifier$DetectingStateHandler;
 
     invoke-direct {p0}, Lcom/android/server/accessibility/ScreenMagnifier$DetectingStateHandler;->sendDelayedMotionEvents()V
 
@@ -85,7 +79,6 @@
 
 .method static synthetic access$800(Lcom/android/server/accessibility/ScreenMagnifier$DetectingStateHandler;)Lcom/android/server/accessibility/ScreenMagnifier$MotionEventInfo;
     .locals 1
-    .param p0    # Lcom/android/server/accessibility/ScreenMagnifier$DetectingStateHandler;
 
     iget-object v0, p0, Lcom/android/server/accessibility/ScreenMagnifier$DetectingStateHandler;->mDelayedEventQueue:Lcom/android/server/accessibility/ScreenMagnifier$MotionEventInfo;
 
@@ -94,9 +87,6 @@
 
 .method private cacheDelayedMotionEvent(Landroid/view/MotionEvent;Landroid/view/MotionEvent;I)V
     .locals 3
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # Landroid/view/MotionEvent;
-    .param p3    # I
 
     invoke-static {p1, p2, p3}, Lcom/android/server/accessibility/ScreenMagnifier$MotionEventInfo;->obtain(Landroid/view/MotionEvent;Landroid/view/MotionEvent;I)Lcom/android/server/accessibility/ScreenMagnifier$MotionEventInfo;
 
@@ -215,8 +205,6 @@
 
 .method private obtainEventWithOffsetTimeAndDownTime(Landroid/view/MotionEvent;J)Landroid/view/MotionEvent;
     .locals 19
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # J
 
     invoke-virtual/range {p1 .. p1}, Landroid/view/MotionEvent;->getPointerCount()I
 
@@ -321,8 +309,6 @@
 
 .method private onActionTap(Landroid/view/MotionEvent;I)V
     .locals 5
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # I
 
     const/4 v4, 0x1
 
@@ -381,8 +367,6 @@
 
 .method private onActionTapAndHold(Landroid/view/MotionEvent;I)V
     .locals 5
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # I
 
     invoke-virtual {p0}, Lcom/android/server/accessibility/ScreenMagnifier$DetectingStateHandler;->clear()V
 
@@ -536,9 +520,6 @@
 
 .method public onMotionEvent(Landroid/view/MotionEvent;Landroid/view/MotionEvent;I)V
     .locals 11
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # Landroid/view/MotionEvent;
-    .param p3    # I
 
     const/4 v10, 0x3
 

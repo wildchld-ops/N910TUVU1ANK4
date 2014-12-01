@@ -27,7 +27,6 @@
 # virtual methods
 .method public getAddedCount(Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     invoke-static {p1}, Landroid/support/v4/view/accessibility/AccessibilityRecordCompatIcs;->getAddedCount(Ljava/lang/Object;)I
 
@@ -38,7 +37,6 @@
 
 .method public getBeforeText(Ljava/lang/Object;)Ljava/lang/CharSequence;
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     invoke-static {p1}, Landroid/support/v4/view/accessibility/AccessibilityRecordCompatIcs;->getBeforeText(Ljava/lang/Object;)Ljava/lang/CharSequence;
 
@@ -49,7 +47,6 @@
 
 .method public getClassName(Ljava/lang/Object;)Ljava/lang/CharSequence;
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     invoke-static {p1}, Landroid/support/v4/view/accessibility/AccessibilityRecordCompatIcs;->getClassName(Ljava/lang/Object;)Ljava/lang/CharSequence;
 
@@ -60,7 +57,6 @@
 
 .method public getContentDescription(Ljava/lang/Object;)Ljava/lang/CharSequence;
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     invoke-static {p1}, Landroid/support/v4/view/accessibility/AccessibilityRecordCompatIcs;->getContentDescription(Ljava/lang/Object;)Ljava/lang/CharSequence;
 
@@ -71,7 +67,6 @@
 
 .method public getCurrentItemIndex(Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     invoke-static {p1}, Landroid/support/v4/view/accessibility/AccessibilityRecordCompatIcs;->getCurrentItemIndex(Ljava/lang/Object;)I
 
@@ -82,7 +77,6 @@
 
 .method public getFromIndex(Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     invoke-static {p1}, Landroid/support/v4/view/accessibility/AccessibilityRecordCompatIcs;->getFromIndex(Ljava/lang/Object;)I
 
@@ -93,7 +87,6 @@
 
 .method public getItemCount(Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     invoke-static {p1}, Landroid/support/v4/view/accessibility/AccessibilityRecordCompatIcs;->getItemCount(Ljava/lang/Object;)I
 
@@ -104,7 +97,6 @@
 
 .method public getParcelableData(Ljava/lang/Object;)Landroid/os/Parcelable;
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     invoke-static {p1}, Landroid/support/v4/view/accessibility/AccessibilityRecordCompatIcs;->getParcelableData(Ljava/lang/Object;)Landroid/os/Parcelable;
 
@@ -115,7 +107,6 @@
 
 .method public getRemovedCount(Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     invoke-static {p1}, Landroid/support/v4/view/accessibility/AccessibilityRecordCompatIcs;->getRemovedCount(Ljava/lang/Object;)I
 
@@ -126,7 +117,6 @@
 
 .method public getScrollX(Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     invoke-static {p1}, Landroid/support/v4/view/accessibility/AccessibilityRecordCompatIcs;->getScrollX(Ljava/lang/Object;)I
 
@@ -137,7 +127,6 @@
 
 .method public getScrollY(Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     invoke-static {p1}, Landroid/support/v4/view/accessibility/AccessibilityRecordCompatIcs;->getScrollY(Ljava/lang/Object;)I
 
@@ -148,7 +137,6 @@
 
 .method public getSource(Ljava/lang/Object;)Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompat;
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     invoke-static {p1}, Landroid/support/v4/view/accessibility/AccessibilityRecordCompatIcs;->getSource(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -163,7 +151,6 @@
 
 .method public getText(Ljava/lang/Object;)Ljava/util/List;
     .locals 1
-    .param p1    # Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -185,7 +172,6 @@
 
 .method public getToIndex(Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     invoke-static {p1}, Landroid/support/v4/view/accessibility/AccessibilityRecordCompatIcs;->getToIndex(Ljava/lang/Object;)I
 
@@ -196,7 +182,6 @@
 
 .method public getWindowId(Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     invoke-static {p1}, Landroid/support/v4/view/accessibility/AccessibilityRecordCompatIcs;->getWindowId(Ljava/lang/Object;)I
 
@@ -207,7 +192,6 @@
 
 .method public isChecked(Ljava/lang/Object;)Z
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     invoke-static {p1}, Landroid/support/v4/view/accessibility/AccessibilityRecordCompatIcs;->isChecked(Ljava/lang/Object;)Z
 
@@ -218,7 +202,6 @@
 
 .method public isEnabled(Ljava/lang/Object;)Z
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     invoke-static {p1}, Landroid/support/v4/view/accessibility/AccessibilityRecordCompatIcs;->isEnabled(Ljava/lang/Object;)Z
 
@@ -229,7 +212,6 @@
 
 .method public isFullScreen(Ljava/lang/Object;)Z
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     invoke-static {p1}, Landroid/support/v4/view/accessibility/AccessibilityRecordCompatIcs;->isFullScreen(Ljava/lang/Object;)Z
 
@@ -240,7 +222,6 @@
 
 .method public isPassword(Ljava/lang/Object;)Z
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     invoke-static {p1}, Landroid/support/v4/view/accessibility/AccessibilityRecordCompatIcs;->isPassword(Ljava/lang/Object;)Z
 
@@ -251,7 +232,6 @@
 
 .method public isScrollable(Ljava/lang/Object;)Z
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     invoke-static {p1}, Landroid/support/v4/view/accessibility/AccessibilityRecordCompatIcs;->isScrollable(Ljava/lang/Object;)Z
 
@@ -272,7 +252,6 @@
 
 .method public obtain(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     invoke-static {p1}, Landroid/support/v4/view/accessibility/AccessibilityRecordCompatIcs;->obtain(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -283,7 +262,6 @@
 
 .method public recycle(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     invoke-static {p1}, Landroid/support/v4/view/accessibility/AccessibilityRecordCompatIcs;->recycle(Ljava/lang/Object;)V
 
@@ -292,8 +270,6 @@
 
 .method public setAddedCount(Ljava/lang/Object;I)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
-    .param p2    # I
 
     invoke-static {p1, p2}, Landroid/support/v4/view/accessibility/AccessibilityRecordCompatIcs;->setAddedCount(Ljava/lang/Object;I)V
 
@@ -302,8 +278,6 @@
 
 .method public setBeforeText(Ljava/lang/Object;Ljava/lang/CharSequence;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/CharSequence;
 
     invoke-static {p1, p2}, Landroid/support/v4/view/accessibility/AccessibilityRecordCompatIcs;->setBeforeText(Ljava/lang/Object;Ljava/lang/CharSequence;)V
 
@@ -312,8 +286,6 @@
 
 .method public setChecked(Ljava/lang/Object;Z)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Z
 
     invoke-static {p1, p2}, Landroid/support/v4/view/accessibility/AccessibilityRecordCompatIcs;->setChecked(Ljava/lang/Object;Z)V
 
@@ -322,8 +294,6 @@
 
 .method public setClassName(Ljava/lang/Object;Ljava/lang/CharSequence;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/CharSequence;
 
     invoke-static {p1, p2}, Landroid/support/v4/view/accessibility/AccessibilityRecordCompatIcs;->setClassName(Ljava/lang/Object;Ljava/lang/CharSequence;)V
 
@@ -332,8 +302,6 @@
 
 .method public setContentDescription(Ljava/lang/Object;Ljava/lang/CharSequence;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/CharSequence;
 
     invoke-static {p1, p2}, Landroid/support/v4/view/accessibility/AccessibilityRecordCompatIcs;->setContentDescription(Ljava/lang/Object;Ljava/lang/CharSequence;)V
 
@@ -342,8 +310,6 @@
 
 .method public setCurrentItemIndex(Ljava/lang/Object;I)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
-    .param p2    # I
 
     invoke-static {p1, p2}, Landroid/support/v4/view/accessibility/AccessibilityRecordCompatIcs;->setCurrentItemIndex(Ljava/lang/Object;I)V
 
@@ -352,8 +318,6 @@
 
 .method public setEnabled(Ljava/lang/Object;Z)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Z
 
     invoke-static {p1, p2}, Landroid/support/v4/view/accessibility/AccessibilityRecordCompatIcs;->setEnabled(Ljava/lang/Object;Z)V
 
@@ -362,8 +326,6 @@
 
 .method public setFromIndex(Ljava/lang/Object;I)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
-    .param p2    # I
 
     invoke-static {p1, p2}, Landroid/support/v4/view/accessibility/AccessibilityRecordCompatIcs;->setFromIndex(Ljava/lang/Object;I)V
 
@@ -372,8 +334,6 @@
 
 .method public setFullScreen(Ljava/lang/Object;Z)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Z
 
     invoke-static {p1, p2}, Landroid/support/v4/view/accessibility/AccessibilityRecordCompatIcs;->setFullScreen(Ljava/lang/Object;Z)V
 
@@ -382,8 +342,6 @@
 
 .method public setItemCount(Ljava/lang/Object;I)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
-    .param p2    # I
 
     invoke-static {p1, p2}, Landroid/support/v4/view/accessibility/AccessibilityRecordCompatIcs;->setItemCount(Ljava/lang/Object;I)V
 
@@ -392,8 +350,6 @@
 
 .method public setParcelableData(Ljava/lang/Object;Landroid/os/Parcelable;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Landroid/os/Parcelable;
 
     invoke-static {p1, p2}, Landroid/support/v4/view/accessibility/AccessibilityRecordCompatIcs;->setParcelableData(Ljava/lang/Object;Landroid/os/Parcelable;)V
 
@@ -402,8 +358,6 @@
 
 .method public setPassword(Ljava/lang/Object;Z)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Z
 
     invoke-static {p1, p2}, Landroid/support/v4/view/accessibility/AccessibilityRecordCompatIcs;->setPassword(Ljava/lang/Object;Z)V
 
@@ -412,8 +366,6 @@
 
 .method public setRemovedCount(Ljava/lang/Object;I)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
-    .param p2    # I
 
     invoke-static {p1, p2}, Landroid/support/v4/view/accessibility/AccessibilityRecordCompatIcs;->setRemovedCount(Ljava/lang/Object;I)V
 
@@ -422,8 +374,6 @@
 
 .method public setScrollX(Ljava/lang/Object;I)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
-    .param p2    # I
 
     invoke-static {p1, p2}, Landroid/support/v4/view/accessibility/AccessibilityRecordCompatIcs;->setScrollX(Ljava/lang/Object;I)V
 
@@ -432,8 +382,6 @@
 
 .method public setScrollY(Ljava/lang/Object;I)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
-    .param p2    # I
 
     invoke-static {p1, p2}, Landroid/support/v4/view/accessibility/AccessibilityRecordCompatIcs;->setScrollY(Ljava/lang/Object;I)V
 
@@ -442,8 +390,6 @@
 
 .method public setScrollable(Ljava/lang/Object;Z)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Z
 
     invoke-static {p1, p2}, Landroid/support/v4/view/accessibility/AccessibilityRecordCompatIcs;->setScrollable(Ljava/lang/Object;Z)V
 
@@ -452,8 +398,6 @@
 
 .method public setSource(Ljava/lang/Object;Landroid/view/View;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Landroid/view/View;
 
     invoke-static {p1, p2}, Landroid/support/v4/view/accessibility/AccessibilityRecordCompatIcs;->setSource(Ljava/lang/Object;Landroid/view/View;)V
 
@@ -462,8 +406,6 @@
 
 .method public setToIndex(Ljava/lang/Object;I)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
-    .param p2    # I
 
     invoke-static {p1, p2}, Landroid/support/v4/view/accessibility/AccessibilityRecordCompatIcs;->setToIndex(Ljava/lang/Object;I)V
 

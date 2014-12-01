@@ -59,7 +59,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/ui/PushMessageDialog;)Landroid/app/AlertDialog;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/PushMessageDialog;
 
     iget-object v0, p0, Lcom/android/mms/ui/PushMessageDialog;->mDialog:Landroid/app/AlertDialog;
 
@@ -68,7 +67,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/ui/PushMessageDialog;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/PushMessageDialog;
 
     invoke-direct {p0}, Lcom/android/mms/ui/PushMessageDialog;->processNextMessage()V
 
@@ -77,7 +75,6 @@
 
 .method private displayWappushMessage(Landroid/content/Intent;)V
     .locals 7
-    .param p1    # Landroid/content/Intent;
 
     const-string v4, "Mms/PushMessageDialog"
 
@@ -326,7 +323,6 @@
 
 .method private queueMsgFromIntent(Landroid/content/Intent;)Z
     .locals 4
-    .param p1    # Landroid/content/Intent;
 
     const-string v2, "Mms/PushMessageDialog"
 
@@ -388,7 +384,6 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v2, 0x1
 
@@ -467,7 +462,6 @@
 
 .method protected onNewIntent(Landroid/content/Intent;)V
     .locals 2
-    .param p1    # Landroid/content/Intent;
 
     const-string v0, "Mms/PushMessageDialog"
 

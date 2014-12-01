@@ -16,7 +16,6 @@
 # virtual methods
 .method protected isValidFragment(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "SubSettings"
 

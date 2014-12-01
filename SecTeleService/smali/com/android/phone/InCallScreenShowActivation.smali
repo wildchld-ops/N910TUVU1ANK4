@@ -192,7 +192,7 @@
 
     invoke-direct {v2}, Landroid/content/Intent;-><init>()V
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/phone/InCallScreenShowActivation;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
 
@@ -240,12 +240,12 @@
 
     invoke-virtual {v2, p0, v0}, Landroid/content/Intent;->setClassName(Landroid/content/Context;Ljava/lang/String;)Landroid/content/Intent;
 
-    invoke-virtual {p0, v2}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v2}, Lcom/android/phone/InCallScreenShowActivation;->startActivity(Landroid/content/Intent;)V
 
     :goto_1
     const/4 v0, -0x1
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->setResult(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/InCallScreenShowActivation;->setResult(I)V
 
     return-void
 
@@ -263,7 +263,7 @@
 
     invoke-virtual {v2, p0, v0}, Landroid/content/Intent;->setClassName(Landroid/content/Context;Ljava/lang/String;)Landroid/content/Intent;
 
-    invoke-virtual {p0, v2}, Landroid/content/ContextWrapper;->startService(Landroid/content/Intent;)Landroid/content/ComponentName;
+    invoke-virtual {p0, v2}, Lcom/android/phone/InCallScreenShowActivation;->startService(Landroid/content/Intent;)Landroid/content/ComponentName;
 
     goto :goto_1
 .end method
@@ -280,7 +280,7 @@
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/phone/InCallScreenShowActivation;->getIntent()Landroid/content/Intent;
 
     move-result-object v3
 
@@ -390,9 +390,9 @@
 
     invoke-static {v7, v8}, Lcom/android/phone/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-virtual {p0, v10}, Landroid/app/Activity;->setResult(I)V
+    invoke-virtual {p0, v10}, Lcom/android/phone/InCallScreenShowActivation;->setResult(I)V
 
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/InCallScreenShowActivation;->finish()V
 
     :goto_0
     return-void
@@ -410,7 +410,7 @@
 
     if-eqz v7, :cond_a
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/InCallScreenShowActivation;->getResources()Landroid/content/res/Resources;
 
     move-result-object v7
 
@@ -430,7 +430,7 @@
 
     invoke-direct {p0}, Lcom/android/phone/InCallScreenShowActivation;->startHfa()V
 
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/InCallScreenShowActivation;->finish()V
 
     goto :goto_0
 
@@ -537,10 +537,10 @@
     :cond_5
     invoke-static {p0}, Lcom/android/phone/OtaUtils;->startInteractiveOtasp(Landroid/content/Context;)V
 
-    invoke-virtual {p0, v11}, Landroid/app/Activity;->setResult(I)V
+    invoke-virtual {p0, v11}, Lcom/android/phone/InCallScreenShowActivation;->setResult(I)V
 
     :goto_1
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/InCallScreenShowActivation;->finish()V
 
     goto/16 :goto_0
 
@@ -591,7 +591,7 @@
     :cond_8
     const/4 v7, 0x2
 
-    invoke-virtual {p0, v7}, Landroid/app/Activity;->setResult(I)V
+    invoke-virtual {p0, v7}, Lcom/android/phone/InCallScreenShowActivation;->setResult(I)V
 
     goto :goto_1
 
@@ -620,7 +620,7 @@
 
     const/4 v7, 0x3
 
-    invoke-virtual {p0, v7}, Landroid/app/Activity;->setResult(I)V
+    invoke-virtual {p0, v7}, Lcom/android/phone/InCallScreenShowActivation;->setResult(I)V
 
     goto :goto_1
 
@@ -647,7 +647,7 @@
 
     invoke-static {v7, v8}, Lcom/android/phone/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-virtual {p0, v10}, Landroid/app/Activity;->setResult(I)V
+    invoke-virtual {p0, v10}, Lcom/android/phone/InCallScreenShowActivation;->setResult(I)V
 
     goto :goto_1
 .end method

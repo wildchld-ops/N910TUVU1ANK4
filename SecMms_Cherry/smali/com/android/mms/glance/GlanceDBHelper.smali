@@ -192,7 +192,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -203,7 +202,6 @@
 
 .method private getTableName(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -254,9 +252,6 @@
 
 .method public delete(Ljava/lang/String;[Ljava/lang/String;I)I
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # I
 
     const/4 v1, 0x0
 
@@ -362,8 +357,6 @@
 
 .method public insert(Landroid/content/ContentValues;I)J
     .locals 4
-    .param p1    # Landroid/content/ContentValues;
-    .param p2    # I
 
     :try_start_0
     iget-object v1, p0, Lcom/android/mms/glance/GlanceDBHelper;->mGlanceDb:Landroid/database/sqlite/SQLiteDatabase;
@@ -451,11 +444,6 @@
 
 .method public query([Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;I)Landroid/database/Cursor;
     .locals 10
-    .param p1    # [Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # [Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
 
     const/4 v8, 0x0
 
@@ -521,10 +509,6 @@
 
 .method public update(Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;I)I
     .locals 5
-    .param p1    # Landroid/content/ContentValues;
-    .param p2    # Ljava/lang/String;
-    .param p3    # [Ljava/lang/String;
-    .param p4    # I
 
     const/4 v1, 0x0
 

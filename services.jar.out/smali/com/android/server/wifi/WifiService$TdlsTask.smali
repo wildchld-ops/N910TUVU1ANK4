@@ -44,7 +44,6 @@
 # virtual methods
 .method protected varargs doInBackground([Lcom/android/server/wifi/WifiService$TdlsTaskParams;)Ljava/lang/Integer;
     .locals 14
-    .param p1    # [Lcom/android/server/wifi/WifiService$TdlsTaskParams;
 
     const/4 v11, 0x0
 
@@ -301,7 +300,6 @@
 
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [Lcom/android/server/wifi/WifiService$TdlsTaskParams;
 

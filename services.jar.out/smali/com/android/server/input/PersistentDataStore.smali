@@ -75,8 +75,6 @@
 
 .method private getInputDeviceState(Ljava/lang/String;Z)Lcom/android/server/input/PersistentDataStore$InputDeviceState;
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     invoke-direct {p0}, Lcom/android/server/input/PersistentDataStore;->loadIfNeeded()V
 
@@ -194,7 +192,6 @@
 
 .method private loadFromXml(Lorg/xmlpull/v1/XmlPullParser;)V
     .locals 3
-    .param p1    # Lorg/xmlpull/v1/XmlPullParser;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -257,7 +254,6 @@
 
 .method private loadInputDevicesFromXml(Lorg/xmlpull/v1/XmlPullParser;)V
     .locals 6
-    .param p1    # Lorg/xmlpull/v1/XmlPullParser;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -431,7 +427,6 @@
 
 .method private saveToXml(Lorg/xmlpull/v1/XmlSerializer;)V
     .locals 7
-    .param p1    # Lorg/xmlpull/v1/XmlSerializer;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -539,8 +534,6 @@
 # virtual methods
 .method public addKeyboardLayout(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v1, 0x1
 
@@ -567,7 +560,6 @@
 
 .method public getCurrentKeyboardLayout(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -592,7 +584,6 @@
 
 .method public getKeyboardLayouts(Ljava/lang/String;)[Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -625,8 +616,6 @@
 
 .method public removeKeyboardLayout(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v1, 0x1
 
@@ -734,8 +723,6 @@
 
 .method public setCurrentKeyboardLayout(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v1, 0x1
 
@@ -762,8 +749,6 @@
 
 .method public switchKeyboardLayout(Ljava/lang/String;I)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v1, 0x0
 

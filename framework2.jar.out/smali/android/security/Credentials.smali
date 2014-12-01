@@ -80,7 +80,6 @@
 
 .method public static convertFromPem([B)Ljava/util/List;
     .locals 10
-    .param p0    # [B
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([B)",
@@ -196,7 +195,6 @@
 
 .method public static varargs convertToPem([Ljava/security/cert/Certificate;)[B
     .locals 10
-    .param p0    # [Ljava/security/cert/Certificate;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -257,8 +255,6 @@
 
 .method static deleteAllTypesForAlias(Landroid/security/KeyStore;Ljava/lang/String;)Z
     .locals 2
-    .param p0    # Landroid/security/KeyStore;
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -293,8 +289,6 @@
 
 .method static deleteCertificateTypesForAlias(Landroid/security/KeyStore;Ljava/lang/String;)Z
     .locals 3
-    .param p0    # Landroid/security/KeyStore;
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -368,7 +362,6 @@
 # virtual methods
 .method public install(Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     :try_start_0
     invoke-static {}, Landroid/security/KeyChain;->createInstallIntent()Landroid/content/Intent;
@@ -417,9 +410,6 @@
 
 .method public install(Landroid/content/Context;Ljava/lang/String;[B)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # [B
 
     :try_start_0
     invoke-static {}, Landroid/security/KeyChain;->createInstallIntent()Landroid/content/Intent;
@@ -470,8 +460,6 @@
 
 .method public install(Landroid/content/Context;Ljava/security/KeyPair;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/security/KeyPair;
 
     :try_start_0
     invoke-static {}, Landroid/security/KeyChain;->createInstallIntent()Landroid/content/Intent;
@@ -544,7 +532,6 @@
 
 .method public unlock(Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     :try_start_0
     new-instance v1, Landroid/content/Intent;

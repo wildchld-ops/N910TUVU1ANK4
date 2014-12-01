@@ -27,9 +27,6 @@
 # direct methods
 .method public constructor <init>(Landroid/webkitsec/WebViewClassic$InvokeListBox;JLandroid/widget/ListView;Landroid/widget/Adapter;)V
     .locals 0
-    .param p2    # J
-    .param p4    # Landroid/widget/ListView;
-    .param p5    # Landroid/widget/Adapter;
 
     iput-object p1, p0, Landroid/webkitsec/WebViewClassic$InvokeListBox$SingleDataSetObserver;->this$1:Landroid/webkitsec/WebViewClassic$InvokeListBox;
 

@@ -18,7 +18,6 @@
 # direct methods
 .method public constructor <init>(Landroid/graphics/Bitmap;)V
     .locals 2
-    .param p1    # Landroid/graphics/Bitmap;
 
     const/4 v1, 0x1
 
@@ -81,8 +80,6 @@
 
 .method private ensureBitmapIntegrity(Ljava/lang/String;Landroid/graphics/Bitmap;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/graphics/Bitmap;
 
     if-nez p2, :cond_0
 
@@ -179,7 +176,6 @@
 # virtual methods
 .method public draw(Landroid/graphics/Canvas;)V
     .locals 5
-    .param p1    # Landroid/graphics/Canvas;
 
     iget v1, p0, Lcom/android/launcher2/FastBitmapDrawable;->mAlpha:I
 
@@ -287,7 +283,6 @@
 
 .method public setAlpha(I)V
     .locals 1
-    .param p1    # I
 
     iput p1, p0, Lcom/android/launcher2/FastBitmapDrawable;->mAlpha:I
 
@@ -300,7 +295,6 @@
 
 .method public setBitmap(Landroid/graphics/Bitmap;)V
     .locals 1
-    .param p1    # Landroid/graphics/Bitmap;
 
     const-string v0, "FastBitmapDrawable setBitmap"
 
@@ -341,7 +335,6 @@
 
 .method public setColorFilter(Landroid/graphics/ColorFilter;)V
     .locals 1
-    .param p1    # Landroid/graphics/ColorFilter;
 
     iget-object v0, p0, Lcom/android/launcher2/FastBitmapDrawable;->mPaint:Landroid/graphics/Paint;
 
@@ -352,7 +345,6 @@
 
 .method public setFilterBitmap(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/launcher2/FastBitmapDrawable;->mPaint:Landroid/graphics/Paint;
 

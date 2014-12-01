@@ -43,8 +43,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;I)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     invoke-direct {p0}, Landroid/graphics/drawable/Drawable;-><init>()V
 
@@ -91,9 +89,6 @@
 # virtual methods
 .method public applyModeBackground(IIZ)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     iget v2, p0, Lcom/android/systemui/statusbar/phone/BarTransitions$BarBackgroundDrawable;->mMode:I
 
@@ -137,7 +132,6 @@
 
 .method public draw(Landroid/graphics/Canvas;)V
     .locals 13
-    .param p1    # Landroid/graphics/Canvas;
 
     const/high16 v12, 0x3f800000
 
@@ -464,7 +458,6 @@
 
 .method protected onBoundsChange(Landroid/graphics/Rect;)V
     .locals 1
-    .param p1    # Landroid/graphics/Rect;
 
     invoke-super {p0, p1}, Landroid/graphics/drawable/Drawable;->onBoundsChange(Landroid/graphics/Rect;)V
 
@@ -477,14 +470,12 @@
 
 .method public setAlpha(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public setColorFilter(Landroid/graphics/ColorFilter;)V
     .locals 0
-    .param p1    # Landroid/graphics/ColorFilter;
 
     return-void
 .end method

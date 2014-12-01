@@ -18,7 +18,6 @@
 # direct methods
 .method public constructor <init>(Landroid/os/Looper;)V
     .locals 2
-    .param p1    # Landroid/os/Looper;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -64,9 +63,6 @@
 
 .method private dispatchHotplug(JIZ)V
     .locals 0
-    .param p1    # J
-    .param p3    # I
-    .param p4    # Z
 
     invoke-virtual {p0, p1, p2, p3, p4}, Landroid/view/DisplayEventReceiver;->onHotplug(JIZ)V
 
@@ -75,9 +71,6 @@
 
 .method private dispatchVsync(JII)V
     .locals 0
-    .param p1    # J
-    .param p3    # I
-    .param p4    # I
 
     invoke-virtual {p0, p1, p2, p3, p4}, Landroid/view/DisplayEventReceiver;->onVsync(JII)V
 
@@ -86,7 +79,6 @@
 
 .method private dispose(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Landroid/view/DisplayEventReceiver;->mCloseGuard:Ldalvik/system/CloseGuard;
 
@@ -174,18 +166,12 @@
 
 .method public onHotplug(JIZ)V
     .locals 0
-    .param p1    # J
-    .param p3    # I
-    .param p4    # Z
 
     return-void
 .end method
 
 .method public onVsync(JII)V
     .locals 0
-    .param p1    # J
-    .param p3    # I
-    .param p4    # I
 
     return-void
 .end method

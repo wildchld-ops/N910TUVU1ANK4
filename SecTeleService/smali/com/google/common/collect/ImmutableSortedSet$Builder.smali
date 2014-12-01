@@ -147,7 +147,7 @@
 
     iget-object v0, p0, Lcom/google/common/collect/ImmutableSortedSet$Builder;->comparator:Ljava/util/Comparator;
 
-    iget-object v1, p0, Lcom/google/common/collect/ImmutableSet$Builder;->contents:Ljava/util/ArrayList;
+    iget-object v1, p0, Lcom/google/common/collect/ImmutableSortedSet$Builder;->contents:Ljava/util/ArrayList;
 
     invoke-virtual {v1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 

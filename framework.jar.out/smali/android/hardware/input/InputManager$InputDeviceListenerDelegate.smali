@@ -21,8 +21,6 @@
 # direct methods
 .method public constructor <init>(Landroid/hardware/input/InputManager$InputDeviceListener;Landroid/os/Handler;)V
     .locals 1
-    .param p1    # Landroid/hardware/input/InputManager$InputDeviceListener;
-    .param p2    # Landroid/os/Handler;
 
     if-eqz p2, :cond_0
 
@@ -49,7 +47,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 2
-    .param p1    # Landroid/os/Message;
 
     iget v0, p1, Landroid/os/Message;->what:I
 

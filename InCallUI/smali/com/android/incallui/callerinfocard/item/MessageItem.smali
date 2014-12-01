@@ -6,10 +6,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/net/Uri;Landroid/database/Cursor;Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/net/Uri;
-    .param p3    # Landroid/database/Cursor;
-    .param p4    # Ljava/lang/Object;
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/incallui/callerinfocard/item/CallerInfoCardItem;-><init>(Landroid/content/Context;Landroid/net/Uri;Landroid/database/Cursor;Ljava/lang/Object;)V
 
@@ -18,7 +14,6 @@
 
 .method private getLogTypeDrawable(I)Landroid/graphics/drawable/Drawable;
     .locals 3
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -68,7 +63,6 @@
 
 .method private getMessageTypeDrawable(Ljava/lang/String;)Landroid/graphics/drawable/Drawable;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -154,8 +148,6 @@
 
 .method private setLogType(Landroid/database/Cursor;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Landroid/database/Cursor;
-    .param p2    # Ljava/lang/String;
 
     invoke-interface {p1, p2}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
 
@@ -181,9 +173,6 @@
 
 .method private setMainText(Landroid/database/Cursor;Ljava/lang/String;Ljava/lang/String;)V
     .locals 7
-    .param p1    # Landroid/database/Cursor;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const/4 v6, -0x1
 
@@ -327,7 +316,6 @@
 
 .method private setMessageType(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/incallui/callerinfocard/item/MessageItem;->getMessageTypeDrawable(Ljava/lang/String;)Landroid/graphics/drawable/Drawable;
 
@@ -380,10 +368,6 @@
 
 .method protected setItem(Landroid/content/Context;Landroid/net/Uri;Landroid/database/Cursor;Ljava/lang/Object;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/net/Uri;
-    .param p3    # Landroid/database/Cursor;
-    .param p4    # Ljava/lang/Object;
 
     const/4 v4, 0x1
 
@@ -551,8 +535,6 @@
 
 .method protected setMainText(Landroid/database/Cursor;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Landroid/database/Cursor;
-    .param p2    # Ljava/lang/String;
 
     invoke-interface {p1, p2}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
 

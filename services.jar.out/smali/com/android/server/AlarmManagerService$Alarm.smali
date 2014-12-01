@@ -43,14 +43,6 @@
 # direct methods
 .method public constructor <init>(IJJJJJLandroid/app/PendingIntent;Landroid/os/WorkSource;)V
     .locals 1
-    .param p1    # I
-    .param p2    # J
-    .param p4    # J
-    .param p6    # J
-    .param p8    # J
-    .param p10    # J
-    .param p12    # Landroid/app/PendingIntent;
-    .param p13    # Landroid/os/WorkSource;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -91,9 +83,6 @@
 # virtual methods
 .method public dump(Ljava/io/PrintWriter;Ljava/lang/String;J)V
     .locals 2
-    .param p1    # Ljava/io/PrintWriter;
-    .param p2    # Ljava/lang/String;
-    .param p3    # J
 
     invoke-virtual {p1, p2}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 

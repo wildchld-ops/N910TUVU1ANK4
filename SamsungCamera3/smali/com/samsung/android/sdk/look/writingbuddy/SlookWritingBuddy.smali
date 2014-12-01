@@ -35,7 +35,6 @@
 # direct methods
 .method public constructor <init>(Landroid/view/ViewGroup;)V
     .locals 2
-    .param p1    # Landroid/view/ViewGroup;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -76,7 +75,6 @@
 
 .method public constructor <init>(Landroid/widget/EditText;)V
     .locals 2
-    .param p1    # Landroid/widget/EditText;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -117,7 +115,6 @@
 
 .method static synthetic access$000(Lcom/samsung/android/sdk/look/writingbuddy/SlookWritingBuddy;)Lcom/samsung/android/sdk/look/writingbuddy/SlookWritingBuddy$TextWritingListener;
     .locals 1
-    .param p0    # Lcom/samsung/android/sdk/look/writingbuddy/SlookWritingBuddy;
 
     iget-object v0, p0, Lcom/samsung/android/sdk/look/writingbuddy/SlookWritingBuddy;->mTextWritingListener:Lcom/samsung/android/sdk/look/writingbuddy/SlookWritingBuddy$TextWritingListener;
 
@@ -126,7 +123,6 @@
 
 .method static synthetic access$100(Lcom/samsung/android/sdk/look/writingbuddy/SlookWritingBuddy;)Lcom/samsung/android/sdk/look/writingbuddy/SlookWritingBuddy$ImageWritingListener;
     .locals 1
-    .param p0    # Lcom/samsung/android/sdk/look/writingbuddy/SlookWritingBuddy;
 
     iget-object v0, p0, Lcom/samsung/android/sdk/look/writingbuddy/SlookWritingBuddy;->mImageWritingListener:Lcom/samsung/android/sdk/look/writingbuddy/SlookWritingBuddy$ImageWritingListener;
 
@@ -135,7 +131,6 @@
 
 .method private isSupport(I)Z
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/samsung/android/sdk/look/writingbuddy/SlookWritingBuddy;->mSlook:Lcom/samsung/android/sdk/look/Slook;
 
@@ -227,7 +222,6 @@
 
 .method public setEditorType(I)V
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -250,7 +244,6 @@
 
 .method public setEnabled(Z)V
     .locals 2
-    .param p1    # Z
 
     const/4 v0, 0x1
 
@@ -318,7 +311,6 @@
 
 .method public setImageWritingListener(Lcom/samsung/android/sdk/look/writingbuddy/SlookWritingBuddy$ImageWritingListener;)V
     .locals 2
-    .param p1    # Lcom/samsung/android/sdk/look/writingbuddy/SlookWritingBuddy$ImageWritingListener;
 
     const/4 v1, 0x1
 
@@ -368,7 +360,6 @@
 
 .method public setTextWritingListener(Lcom/samsung/android/sdk/look/writingbuddy/SlookWritingBuddy$TextWritingListener;)V
     .locals 2
-    .param p1    # Lcom/samsung/android/sdk/look/writingbuddy/SlookWritingBuddy$TextWritingListener;
 
     const/4 v0, 0x1
 

@@ -258,8 +258,6 @@
 
 .method private setListShown(ZZ)V
     .locals 6
-    .param p1    # Z
-    .param p2    # Z
 
     const v5, 0x10a0001
 
@@ -444,9 +442,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 12
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const/16 v11, 0x11
 
@@ -597,18 +592,12 @@
 
 .method public onListItemClick(Landroid/widget/ListView;Landroid/view/View;IJ)V
     .locals 0
-    .param p1    # Landroid/widget/ListView;
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
 
     return-void
 .end method
 
 .method public onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/os/Bundle;
 
     invoke-super {p0, p1, p2}, Landroid/support/v4/app/Fragment;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
 
@@ -619,7 +608,6 @@
 
 .method public setEmptyText(Ljava/lang/CharSequence;)V
     .locals 2
-    .param p1    # Ljava/lang/CharSequence;
 
     invoke-direct {p0}, Landroid/support/v4/app/ListFragment;->ensureList()V
 
@@ -658,7 +646,6 @@
 
 .method public setListAdapter(Landroid/widget/ListAdapter;)V
     .locals 4
-    .param p1    # Landroid/widget/ListAdapter;
 
     const/4 v2, 0x0
 
@@ -713,7 +700,6 @@
 
 .method public setListShown(Z)V
     .locals 1
-    .param p1    # Z
 
     const/4 v0, 0x1
 
@@ -724,7 +710,6 @@
 
 .method public setListShownNoAnimation(Z)V
     .locals 1
-    .param p1    # Z
 
     const/4 v0, 0x0
 
@@ -735,7 +720,6 @@
 
 .method public setSelection(I)V
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0}, Landroid/support/v4/app/ListFragment;->ensureList()V
 

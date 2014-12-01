@@ -21,7 +21,6 @@
 # direct methods
 .method constructor <init>(Landroid/view/accessibility/CaptioningManager;Landroid/os/Handler;)V
     .locals 0
-    .param p2    # Landroid/os/Handler;
 
     iput-object p1, p0, Landroid/view/accessibility/CaptioningManager$1;->this$0:Landroid/view/accessibility/CaptioningManager;
 
@@ -34,8 +33,6 @@
 # virtual methods
 .method public onChange(ZLandroid/net/Uri;)V
     .locals 4
-    .param p1    # Z
-    .param p2    # Landroid/net/Uri;
 
     invoke-virtual {p2}, Landroid/net/Uri;->getPath()Ljava/lang/String;
 

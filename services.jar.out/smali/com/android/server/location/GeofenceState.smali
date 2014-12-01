@@ -38,12 +38,6 @@
 # direct methods
 .method public constructor <init>(Landroid/location/Geofence;JIILjava/lang/String;Landroid/app/PendingIntent;)V
     .locals 3
-    .param p1    # Landroid/location/Geofence;
-    .param p2    # J
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Ljava/lang/String;
-    .param p7    # Landroid/app/PendingIntent;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -134,7 +128,6 @@
 
 .method public processLocation(Landroid/location/Location;)I
     .locals 9
-    .param p1    # Landroid/location/Location;
 
     const/4 v3, 0x2
 

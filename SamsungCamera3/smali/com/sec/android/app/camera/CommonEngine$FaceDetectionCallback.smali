@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Lcom/sec/android/app/camera/CommonEngine;Lcom/sec/android/app/camera/CommonEngine$1;)V
     .locals 0
-    .param p1    # Lcom/sec/android/app/camera/CommonEngine;
-    .param p2    # Lcom/sec/android/app/camera/CommonEngine$1;
 
     invoke-direct {p0, p1}, Lcom/sec/android/app/camera/CommonEngine$FaceDetectionCallback;-><init>(Lcom/sec/android/app/camera/CommonEngine;)V
 
@@ -46,8 +44,6 @@
 # virtual methods
 .method public onFaceDetection([Lcom/sec/android/seccamera/SecCamera$Face;Lcom/sec/android/seccamera/SecCamera;)V
     .locals 14
-    .param p1    # [Lcom/sec/android/seccamera/SecCamera$Face;
-    .param p2    # Lcom/sec/android/seccamera/SecCamera;
 
     # getter for: Lcom/sec/android/app/camera/CommonEngine;->m_bIsTouchAutoFocusing:Z
     invoke-static {}, Lcom/sec/android/app/camera/CommonEngine;->access$1100()Z

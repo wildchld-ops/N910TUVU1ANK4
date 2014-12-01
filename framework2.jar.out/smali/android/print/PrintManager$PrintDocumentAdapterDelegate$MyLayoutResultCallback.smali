@@ -25,8 +25,6 @@
 # direct methods
 .method public constructor <init>(Landroid/print/PrintManager$PrintDocumentAdapterDelegate;Landroid/print/ILayoutResultCallback;I)V
     .locals 0
-    .param p2    # Landroid/print/ILayoutResultCallback;
-    .param p3    # I
 
     iput-object p1, p0, Landroid/print/PrintManager$PrintDocumentAdapterDelegate$MyLayoutResultCallback;->this$0:Landroid/print/PrintManager$PrintDocumentAdapterDelegate;
 
@@ -113,7 +111,6 @@
 
 .method public onLayoutFailed(Ljava/lang/CharSequence;)V
     .locals 5
-    .param p1    # Ljava/lang/CharSequence;
 
     iget-object v2, p0, Landroid/print/PrintManager$PrintDocumentAdapterDelegate$MyLayoutResultCallback;->this$0:Landroid/print/PrintManager$PrintDocumentAdapterDelegate;
 
@@ -190,8 +187,6 @@
 
 .method public onLayoutFinished(Landroid/print/PrintDocumentInfo;Z)V
     .locals 5
-    .param p1    # Landroid/print/PrintDocumentInfo;
-    .param p2    # Z
 
     if-nez p1, :cond_0
 

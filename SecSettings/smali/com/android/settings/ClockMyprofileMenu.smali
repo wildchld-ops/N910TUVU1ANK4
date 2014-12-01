@@ -31,7 +31,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/ClockMyprofileMenu;)Landroid/widget/ListView;
     .locals 1
-    .param p0    # Lcom/android/settings/ClockMyprofileMenu;
 
     iget-object v0, p0, Lcom/android/settings/ClockMyprofileMenu;->mListView:Landroid/widget/ListView;
 
@@ -40,7 +39,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/ClockMyprofileMenu;)Landroid/app/enterprise/EnterpriseDeviceManager;
     .locals 1
-    .param p0    # Lcom/android/settings/ClockMyprofileMenu;
 
     invoke-direct {p0}, Lcom/android/settings/ClockMyprofileMenu;->getEDM()Landroid/app/enterprise/EnterpriseDeviceManager;
 
@@ -51,7 +49,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/ClockMyprofileMenu;)Landroid/app/enterprise/EnterpriseDeviceManager;
     .locals 1
-    .param p0    # Lcom/android/settings/ClockMyprofileMenu;
 
     iget-object v0, p0, Lcom/android/settings/ClockMyprofileMenu;->mEDM:Landroid/app/enterprise/EnterpriseDeviceManager;
 
@@ -160,7 +157,6 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 9
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v8, 0x2
 
@@ -316,7 +312,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 2
-    .param p1    # Landroid/view/Menu;
 
     invoke-virtual {p0}, Landroid/app/Activity;->getMenuInflater()Landroid/view/MenuInflater;
 
@@ -343,9 +338,6 @@
 
 .method public onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
     .locals 3
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -416,8 +408,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     invoke-super {p0, p1, p2}, Landroid/app/Activity;->onKeyDown(ILandroid/view/KeyEvent;)Z
 
@@ -428,7 +418,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 4
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v0, 0x1
 

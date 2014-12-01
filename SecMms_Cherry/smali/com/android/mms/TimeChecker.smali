@@ -104,8 +104,6 @@
 
 .method public static sEnd(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Lcom/android/mms/TimeChecker;->sEnd()Ljava/lang/String;
 
@@ -220,8 +218,6 @@
 
 .method public end(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p0}, Lcom/android/mms/TimeChecker;->end()Ljava/lang/String;
 

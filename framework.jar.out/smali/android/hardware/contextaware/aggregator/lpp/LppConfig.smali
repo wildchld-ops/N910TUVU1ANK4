@@ -37,10 +37,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;III)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/4 v1, 0x0
 
@@ -103,7 +99,6 @@
 
 .method public constructor <init>(Landroid/hardware/contextaware/aggregator/lpp/LppConfig;)V
     .locals 5
-    .param p1    # Landroid/hardware/contextaware/aggregator/lpp/LppConfig;
 
     const/4 v4, 0x4
 
@@ -208,16 +203,6 @@
 
 .method public constructor <init>(ZZZZIIIILjava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Z
-    .param p2    # Z
-    .param p3    # Z
-    .param p4    # Z
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
-    .param p9    # Ljava/lang/String;
-    .param p10    # Ljava/lang/String;
 
     const/4 v2, 0x1
 
@@ -304,13 +289,6 @@
 
 .method public constructor <init>(ZZZZIZLjava/lang/String;)V
     .locals 3
-    .param p1    # Z
-    .param p2    # Z
-    .param p3    # Z
-    .param p4    # Z
-    .param p5    # I
-    .param p6    # Z
-    .param p7    # Ljava/lang/String;
 
     const/4 v2, 0x1
 
@@ -431,7 +409,6 @@
 
 .method public setContext(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     iput-object p1, p0, Landroid/hardware/contextaware/aggregator/lpp/LppConfig;->mcontext:Landroid/content/Context;
 
@@ -440,12 +417,6 @@
 
 .method public setLogParameter(ZZZZLjava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Z
-    .param p2    # Z
-    .param p3    # Z
-    .param p4    # Z
-    .param p5    # Ljava/lang/String;
-    .param p6    # Ljava/lang/String;
 
     const/4 v2, 0x1
 

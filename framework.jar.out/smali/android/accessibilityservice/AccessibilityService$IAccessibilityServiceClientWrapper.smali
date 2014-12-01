@@ -44,9 +44,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/os/Looper;Landroid/accessibilityservice/AccessibilityService$Callbacks;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/Looper;
-    .param p3    # Landroid/accessibilityservice/AccessibilityService$Callbacks;
 
     invoke-direct {p0}, Landroid/accessibilityservice/IAccessibilityServiceClient$Stub;-><init>()V
 
@@ -85,7 +82,6 @@
 
 .method public executeMessage(Landroid/os/Message;)V
     .locals 8
-    .param p1    # Landroid/os/Message;
 
     iget v5, p1, Landroid/os/Message;->what:I
 
@@ -284,7 +280,6 @@
 
 .method public onAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
     .locals 3
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
 
     iget-object v1, p0, Landroid/accessibilityservice/AccessibilityService$IAccessibilityServiceClientWrapper;->mCaller:Lcom/android/internal/os/HandlerCaller;
 
@@ -303,7 +298,6 @@
 
 .method public onGesture(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Landroid/accessibilityservice/AccessibilityService$IAccessibilityServiceClientWrapper;->mCaller:Lcom/android/internal/os/HandlerCaller;
 
@@ -340,8 +334,6 @@
 
 .method public onKeyEvent(Landroid/view/KeyEvent;I)V
     .locals 3
-    .param p1    # Landroid/view/KeyEvent;
-    .param p2    # I
 
     iget-object v1, p0, Landroid/accessibilityservice/AccessibilityService$IAccessibilityServiceClientWrapper;->mCaller:Lcom/android/internal/os/HandlerCaller;
 
@@ -360,8 +352,6 @@
 
 .method public setConnection(Landroid/accessibilityservice/IAccessibilityServiceConnection;I)V
     .locals 3
-    .param p1    # Landroid/accessibilityservice/IAccessibilityServiceConnection;
-    .param p2    # I
 
     iget-object v1, p0, Landroid/accessibilityservice/AccessibilityService$IAccessibilityServiceClientWrapper;->mCaller:Lcom/android/internal/os/HandlerCaller;
 

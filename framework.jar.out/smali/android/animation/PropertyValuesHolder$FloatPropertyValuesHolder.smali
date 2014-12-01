@@ -56,8 +56,6 @@
 
 .method public constructor <init>(Landroid/util/Property;Landroid/animation/FloatKeyframeSet;)V
     .locals 1
-    .param p1    # Landroid/util/Property;
-    .param p2    # Landroid/animation/FloatKeyframeSet;
 
     const/4 v0, 0x0
 
@@ -91,8 +89,6 @@
 
 .method public varargs constructor <init>(Landroid/util/Property;[F)V
     .locals 1
-    .param p1    # Landroid/util/Property;
-    .param p2    # [F
 
     const/4 v0, 0x0
 
@@ -116,8 +112,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Landroid/animation/FloatKeyframeSet;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/animation/FloatKeyframeSet;
 
     const/4 v0, 0x0
 
@@ -140,8 +134,6 @@
 
 .method public varargs constructor <init>(Ljava/lang/String;[F)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # [F
 
     const/4 v0, 0x0
 
@@ -156,7 +148,6 @@
 # virtual methods
 .method calculateValue(F)V
     .locals 1
-    .param p1    # F
 
     iget-object v0, p0, Landroid/animation/PropertyValuesHolder$FloatPropertyValuesHolder;->mFloatKeyframeSet:Landroid/animation/FloatKeyframeSet;
 
@@ -226,7 +217,6 @@
 
 .method setAnimatedValue(Ljava/lang/Object;)V
     .locals 4
-    .param p1    # Ljava/lang/Object;
 
     iget-object v1, p0, Landroid/animation/PropertyValuesHolder$FloatPropertyValuesHolder;->mFloatProperty:Landroid/util/FloatProperty;
 
@@ -331,7 +321,6 @@
 
 .method public varargs setFloatValues([F)V
     .locals 1
-    .param p1    # [F
 
     invoke-super {p0, p1}, Landroid/animation/PropertyValuesHolder;->setFloatValues([F)V
 
@@ -346,7 +335,6 @@
 
 .method setupSetter(Ljava/lang/Class;)V
     .locals 5
-    .param p1    # Ljava/lang/Class;
 
     iget-object v3, p0, Landroid/animation/PropertyValuesHolder$FloatPropertyValuesHolder;->mProperty:Landroid/util/Property;
 

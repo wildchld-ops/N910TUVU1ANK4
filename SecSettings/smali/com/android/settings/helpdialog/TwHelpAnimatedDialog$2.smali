@@ -36,7 +36,6 @@
 # virtual methods
 .method public onAnimationEnd(Landroid/view/animation/Animation;)V
     .locals 3
-    .param p1    # Landroid/view/animation/Animation;
 
     iget-object v0, p0, Lcom/android/settings/helpdialog/TwHelpAnimatedDialog$2;->this$0:Lcom/android/settings/helpdialog/TwHelpAnimatedDialog;
 
@@ -98,14 +97,12 @@
 
 .method public onAnimationRepeat(Landroid/view/animation/Animation;)V
     .locals 0
-    .param p1    # Landroid/view/animation/Animation;
 
     return-void
 .end method
 
 .method public onAnimationStart(Landroid/view/animation/Animation;)V
     .locals 0
-    .param p1    # Landroid/view/animation/Animation;
 
     return-void
 .end method

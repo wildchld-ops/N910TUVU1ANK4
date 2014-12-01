@@ -92,7 +92,6 @@
 
 .method public static getContentUri(Ljava/lang/String;)Landroid/net/Uri;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -127,7 +126,6 @@
 
 .method public static getContentUriForPath(Ljava/lang/String;)Landroid/net/Uri;
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     sget-object v0, Landroid/provider/MediaStore$Audio$Media;->EXTERNAL_PATHS:[Ljava/lang/String;
 

@@ -58,7 +58,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -69,8 +68,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v6, 0x1
 
@@ -286,7 +283,6 @@
 
 .method protected onDraw(Landroid/graphics/Canvas;)V
     .locals 12
-    .param p1    # Landroid/graphics/Canvas;
 
     const v11, 0xffffff
 
@@ -404,7 +400,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 6
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v4, 0x1
 
@@ -559,7 +554,6 @@
 
 .method public setBackgroundColor(I)V
     .locals 1
-    .param p1    # I
 
     invoke-super {p0, p1}, Landroid/view/View;->setBackgroundColor(I)V
 
@@ -589,7 +583,6 @@
 
 .method public setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
     .locals 1
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     invoke-super {p0, p1}, Landroid/view/View;->setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
 
@@ -615,7 +608,6 @@
 
 .method public setBackgroundResource(I)V
     .locals 1
-    .param p1    # I
 
     invoke-super {p0, p1}, Landroid/view/View;->setBackgroundResource(I)V
 
@@ -641,7 +633,6 @@
 
 .method public setDrawFullUnderline(Z)V
     .locals 1
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/support/v4/view/PagerTabStrip;->mDrawFullUnderline:Z
 
@@ -656,10 +647,6 @@
 
 .method public setPadding(IIII)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iget v0, p0, Landroid/support/v4/view/PagerTabStrip;->mMinPaddingBottom:I
 
@@ -675,7 +662,6 @@
 
 .method public setTabIndicatorColor(I)V
     .locals 2
-    .param p1    # I
 
     iput p1, p0, Landroid/support/v4/view/PagerTabStrip;->mIndicatorColor:I
 
@@ -692,7 +678,6 @@
 
 .method public setTabIndicatorColorResource(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
@@ -713,7 +698,6 @@
 
 .method public setTextSpacing(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/support/v4/view/PagerTabStrip;->mMinTextSpacing:I
 
@@ -729,9 +713,6 @@
 
 .method updateTextPositions(IFZ)V
     .locals 7
-    .param p1    # I
-    .param p2    # F
-    .param p3    # Z
 
     iget-object v2, p0, Landroid/support/v4/view/PagerTabStrip;->mTempRect:Landroid/graphics/Rect;
 

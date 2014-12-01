@@ -43,7 +43,6 @@
 # virtual methods
 .method public onChange(Z)V
     .locals 6
-    .param p1    # Z
 
     const/4 v5, 0x1
 

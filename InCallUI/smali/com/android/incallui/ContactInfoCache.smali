@@ -78,7 +78,6 @@
 
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -119,11 +118,6 @@
 
 .method static synthetic access$100(Lcom/android/incallui/ContactInfoCache;Lcom/android/services/telephony/common/CallIdentification;Lcom/android/incallui/CallerInfo;ZZ)V
     .locals 0
-    .param p0    # Lcom/android/incallui/ContactInfoCache;
-    .param p1    # Lcom/android/services/telephony/common/CallIdentification;
-    .param p2    # Lcom/android/incallui/CallerInfo;
-    .param p3    # Z
-    .param p4    # Z
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/incallui/ContactInfoCache;->findInfoQueryComplete(Lcom/android/services/telephony/common/CallIdentification;Lcom/android/incallui/CallerInfo;ZZ)V
 
@@ -132,7 +126,6 @@
 
 .method static synthetic access$200(Lcom/android/incallui/ContactInfoCache;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/incallui/ContactInfoCache;
 
     iget-object v0, p0, Lcom/android/incallui/ContactInfoCache;->mContext:Landroid/content/Context;
 
@@ -141,9 +134,6 @@
 
 .method public static buildCacheEntryFromCall(Landroid/content/Context;Lcom/android/services/telephony/common/CallIdentification;Z)Lcom/android/incallui/ContactInfoCache$ContactCacheEntry;
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/services/telephony/common/CallIdentification;
-    .param p2    # Z
 
     new-instance v0, Lcom/android/incallui/ContactInfoCache$ContactCacheEntry;
 
@@ -164,12 +154,6 @@
 
 .method private buildEntry(Landroid/content/Context;ILcom/android/incallui/CallerInfo;IZI)Lcom/android/incallui/ContactInfoCache$ContactCacheEntry;
     .locals 10
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Lcom/android/incallui/CallerInfo;
-    .param p4    # I
-    .param p5    # Z
-    .param p6    # I
 
     const/4 v4, 0x0
 
@@ -491,7 +475,6 @@
 
 .method private clearCallbacks(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/incallui/ContactInfoCache;->mCallBacks:Ljava/util/HashMap;
 
@@ -506,10 +489,6 @@
 
 .method private findInfoQueryComplete(Lcom/android/services/telephony/common/CallIdentification;Lcom/android/incallui/CallerInfo;ZZ)V
     .locals 10
-    .param p1    # Lcom/android/services/telephony/common/CallIdentification;
-    .param p2    # Lcom/android/incallui/CallerInfo;
-    .param p3    # Z
-    .param p4    # Z
 
     const/4 v9, 0x1
 
@@ -704,7 +683,6 @@
 
 .method private getDefaultPhotoDrawable(Landroid/content/Context;)Landroid/graphics/drawable/Drawable;
     .locals 8
-    .param p1    # Landroid/content/Context;
 
     const v5, 0x7f02047a
 
@@ -933,7 +911,6 @@
 
 .method public static declared-synchronized getInstance(Landroid/content/Context;)Lcom/android/incallui/ContactInfoCache;
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     const-class v1, Lcom/android/incallui/ContactInfoCache;
 
@@ -969,8 +946,6 @@
 
 .method private getPresenceMode(Landroid/content/Context;J)I
     .locals 9
-    .param p1    # Landroid/content/Context;
-    .param p2    # J
 
     const/4 v8, 0x1
 
@@ -1119,11 +1094,6 @@
 
 .method public static populateCacheEntry(Landroid/content/Context;Lcom/android/incallui/CallerInfo;Lcom/android/incallui/ContactInfoCache$ContactCacheEntry;IZ)V
     .locals 31
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/incallui/CallerInfo;
-    .param p2    # Lcom/android/incallui/ContactInfoCache$ContactCacheEntry;
-    .param p3    # I
-    .param p4    # Z
 
     invoke-static/range {p1 .. p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -2342,8 +2312,6 @@
 
 .method private sendImageNotifications(ILcom/android/incallui/ContactInfoCache$ContactCacheEntry;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Lcom/android/incallui/ContactInfoCache$ContactCacheEntry;
 
     iget-object v3, p0, Lcom/android/incallui/ContactInfoCache;->mCallBacks:Ljava/util/HashMap;
 
@@ -2390,8 +2358,6 @@
 
 .method private sendInfoNotifications(ILcom/android/incallui/ContactInfoCache$ContactCacheEntry;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Lcom/android/incallui/ContactInfoCache$ContactCacheEntry;
 
     iget-object v3, p0, Lcom/android/incallui/ContactInfoCache;->mCallBacks:Ljava/util/HashMap;
 
@@ -2447,8 +2413,6 @@
 
 .method private setDefaultphoto(Landroid/content/Context;Lcom/android/incallui/ContactInfoCache$ContactCacheEntry;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/incallui/ContactInfoCache$ContactCacheEntry;
 
     if-nez p2, :cond_1
 
@@ -2494,9 +2458,6 @@
 
 .method public findInfo(Lcom/android/services/telephony/common/CallIdentification;ZLcom/android/incallui/ContactInfoCache$ContactInfoCacheCallback;)V
     .locals 9
-    .param p1    # Lcom/android/services/telephony/common/CallIdentification;
-    .param p2    # Z
-    .param p3    # Lcom/android/incallui/ContactInfoCache$ContactInfoCacheCallback;
 
     const/4 v6, 0x0
 
@@ -2732,7 +2693,6 @@
 
 .method public getInfo(I)Lcom/android/incallui/ContactInfoCache$ContactCacheEntry;
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/incallui/ContactInfoCache;->mInfoMap:Ljava/util/HashMap;
 
@@ -2751,10 +2711,6 @@
 
 .method public onImageLoadComplete(ILandroid/graphics/drawable/Drawable;Landroid/graphics/Bitmap;Ljava/lang/Object;)V
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/graphics/drawable/Drawable;
-    .param p3    # Landroid/graphics/Bitmap;
-    .param p4    # Ljava/lang/Object;
 
     const/4 v5, 0x1
 
@@ -2876,8 +2832,6 @@
 
 .method public updateDefaultCachePhoto(Landroid/content/Context;Lcom/android/services/telephony/common/CallIdentification;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/services/telephony/common/CallIdentification;
 
     invoke-virtual {p2}, Lcom/android/services/telephony/common/CallIdentification;->getCallId()I
 

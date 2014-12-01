@@ -64,7 +64,6 @@
 
 .method public constructor <init>(I)V
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -85,8 +84,6 @@
 
 .method public constructor <init>(ILcom/samsung/android/cocktailbar/CocktailInfo;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Lcom/samsung/android/cocktailbar/CocktailInfo;
 
     invoke-direct {p0, p1}, Lcom/samsung/android/cocktailbar/Cocktail;-><init>(I)V
 
@@ -99,7 +96,6 @@
 # virtual methods
 .method public addCocktailInfo(Lcom/samsung/android/cocktailbar/CocktailInfo;)V
     .locals 0
-    .param p1    # Lcom/samsung/android/cocktailbar/CocktailInfo;
 
     iput-object p1, p0, Lcom/samsung/android/cocktailbar/Cocktail;->mCocktailInfo:Lcom/samsung/android/cocktailbar/CocktailInfo;
 
@@ -288,7 +284,6 @@
 
 .method public readFromParcel(Landroid/os/Parcel;)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
@@ -349,7 +344,6 @@
 
 .method public setBroadcast(Landroid/app/PendingIntent;)V
     .locals 0
-    .param p1    # Landroid/app/PendingIntent;
 
     iput-object p1, p0, Lcom/samsung/android/cocktailbar/Cocktail;->mBroadcast:Landroid/app/PendingIntent;
 
@@ -358,7 +352,6 @@
 
 .method public setProviderInfo(Lcom/samsung/android/cocktailbar/CocktailProviderInfo;)V
     .locals 0
-    .param p1    # Lcom/samsung/android/cocktailbar/CocktailProviderInfo;
 
     iput-object p1, p0, Lcom/samsung/android/cocktailbar/Cocktail;->mProviderInfo:Lcom/samsung/android/cocktailbar/CocktailProviderInfo;
 
@@ -367,7 +360,6 @@
 
 .method public setUid(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/android/cocktailbar/Cocktail;->mUid:I
 
@@ -376,8 +368,6 @@
 
 .method public updateCocktailContentView(Landroid/widget/RemoteViews;Z)V
     .locals 1
-    .param p1    # Landroid/widget/RemoteViews;
-    .param p2    # Z
 
     iget-object v0, p0, Lcom/samsung/android/cocktailbar/Cocktail;->mCocktailInfo:Lcom/samsung/android/cocktailbar/CocktailInfo;
 
@@ -393,7 +383,6 @@
 
 .method public updateCocktailInfo(Lcom/samsung/android/cocktailbar/CocktailInfo;)V
     .locals 0
-    .param p1    # Lcom/samsung/android/cocktailbar/CocktailInfo;
 
     iput-object p1, p0, Lcom/samsung/android/cocktailbar/Cocktail;->mCocktailInfo:Lcom/samsung/android/cocktailbar/CocktailInfo;
 
@@ -402,8 +391,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget v0, p0, Lcom/samsung/android/cocktailbar/Cocktail;->mCocktailId:I
 

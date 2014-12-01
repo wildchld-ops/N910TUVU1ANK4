@@ -36,8 +36,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/preference/SwitchPreference;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/preference/SwitchPreference;
 
     const/4 v1, 0x0
 
@@ -98,8 +96,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/widget/Switch;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/widget/Switch;
 
     const/4 v1, 0x0
 
@@ -154,9 +150,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/widget/Switch;Z)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/widget/Switch;
-    .param p3    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/settings/powersavingmode/PowerSavingEnabler;-><init>(Landroid/content/Context;Landroid/widget/Switch;)V
 
@@ -167,7 +160,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/powersavingmode/PowerSavingEnabler;)Landroid/widget/Switch;
     .locals 1
-    .param p0    # Lcom/android/settings/powersavingmode/PowerSavingEnabler;
 
     iget-object v0, p0, Lcom/android/settings/powersavingmode/PowerSavingEnabler;->mSwitch:Landroid/widget/Switch;
 
@@ -176,7 +168,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/powersavingmode/PowerSavingEnabler;)Landroid/preference/SwitchPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/powersavingmode/PowerSavingEnabler;
 
     iget-object v0, p0, Lcom/android/settings/powersavingmode/PowerSavingEnabler;->mSwitchPref:Landroid/preference/SwitchPreference;
 
@@ -185,7 +176,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/powersavingmode/PowerSavingEnabler;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/settings/powersavingmode/PowerSavingEnabler;
 
     iget-object v0, p0, Lcom/android/settings/powersavingmode/PowerSavingEnabler;->mContext:Landroid/content/Context;
 
@@ -194,7 +184,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/powersavingmode/PowerSavingEnabler;)Landroid/preference/PreferenceActivity$Header;
     .locals 1
-    .param p0    # Lcom/android/settings/powersavingmode/PowerSavingEnabler;
 
     iget-object v0, p0, Lcom/android/settings/powersavingmode/PowerSavingEnabler;->mHeader:Landroid/preference/PreferenceActivity$Header;
 
@@ -203,7 +192,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/powersavingmode/PowerSavingEnabler;)I
     .locals 1
-    .param p0    # Lcom/android/settings/powersavingmode/PowerSavingEnabler;
 
     iget v0, p0, Lcom/android/settings/powersavingmode/PowerSavingEnabler;->mPosition:I
 
@@ -487,8 +475,6 @@
 
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 5
-    .param p1    # Landroid/widget/CompoundButton;
-    .param p2    # Z
 
     const/4 v4, 0x1
 
@@ -579,8 +565,6 @@
 
 .method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
     .locals 6
-    .param p1    # Landroid/preference/Preference;
-    .param p2    # Ljava/lang/Object;
 
     const/4 v5, 0x0
 
@@ -1051,8 +1035,6 @@
 
 .method public setHeaderPosition(Landroid/preference/PreferenceActivity$Header;I)V
     .locals 0
-    .param p1    # Landroid/preference/PreferenceActivity$Header;
-    .param p2    # I
 
     iput-object p1, p0, Lcom/android/settings/powersavingmode/PowerSavingEnabler;->mHeader:Landroid/preference/PreferenceActivity$Header;
 
@@ -1063,7 +1045,6 @@
 
 .method public setSwitch(Landroid/widget/Switch;)V
     .locals 7
-    .param p1    # Landroid/widget/Switch;
 
     const/4 v6, 0x0
 

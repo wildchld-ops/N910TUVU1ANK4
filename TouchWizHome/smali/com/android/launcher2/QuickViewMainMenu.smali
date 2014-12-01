@@ -255,7 +255,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -266,8 +265,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -278,9 +275,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 8
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v7, 0x0
 
@@ -465,8 +459,6 @@
 
 .method static synthetic access$102(Lcom/android/launcher2/QuickViewMainMenu;Z)Z
     .locals 0
-    .param p0    # Lcom/android/launcher2/QuickViewMainMenu;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/launcher2/QuickViewMainMenu;->mConfigurationChangeIsInProgress:Z
 
@@ -475,7 +467,6 @@
 
 .method static synthetic access$200(Lcom/android/launcher2/QuickViewMainMenu;)I
     .locals 1
-    .param p0    # Lcom/android/launcher2/QuickViewMainMenu;
 
     iget v0, p0, Lcom/android/launcher2/QuickViewMainMenu;->mScrollState:I
 
@@ -484,7 +475,6 @@
 
 .method static synthetic access$300(Lcom/android/launcher2/QuickViewMainMenu;)Z
     .locals 1
-    .param p0    # Lcom/android/launcher2/QuickViewMainMenu;
 
     iget-boolean v0, p0, Lcom/android/launcher2/QuickViewMainMenu;->mIsReadOnly:Z
 
@@ -493,7 +483,6 @@
 
 .method static synthetic access$400(Lcom/android/launcher2/QuickViewMainMenu;)I
     .locals 1
-    .param p0    # Lcom/android/launcher2/QuickViewMainMenu;
 
     iget v0, p0, Lcom/android/launcher2/QuickViewMainMenu;->mReadOnlyToastResId:I
 
@@ -502,7 +491,6 @@
 
 .method static synthetic access$500(Lcom/android/launcher2/QuickViewMainMenu;)I
     .locals 1
-    .param p0    # Lcom/android/launcher2/QuickViewMainMenu;
 
     iget v0, p0, Lcom/android/launcher2/QuickViewMainMenu;->mScrollDelay:I
 
@@ -511,7 +499,6 @@
 
 .method static synthetic access$600(Lcom/android/launcher2/QuickViewMainMenu;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/launcher2/QuickViewMainMenu;
 
     iget-object v0, p0, Lcom/android/launcher2/QuickViewMainMenu;->mHandler:Landroid/os/Handler;
 
@@ -520,9 +507,6 @@
 
 .method private getViewLayout(III)V
     .locals 23
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     if-lez p1, :cond_0
 
@@ -910,8 +894,6 @@
 
 .method private makeScreen(IZ)Landroid/view/View;
     .locals 11
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v10, 0x0
 
@@ -1039,7 +1021,6 @@
 
 .method private onDrawComplete(Landroid/graphics/Canvas;)V
     .locals 6
-    .param p1    # Landroid/graphics/Canvas;
 
     iget v1, p0, Lcom/android/launcher2/QuickViewMainMenu;->mScrollState:I
 
@@ -1223,9 +1204,6 @@
 
 .method private scroll(IIZ)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     const/4 v3, 0x0
 
@@ -1287,9 +1265,6 @@
 
 .method public static zOrderTweakMoveChild(Landroid/view/ViewGroup;II)V
     .locals 4
-    .param p0    # Landroid/view/ViewGroup;
-    .param p1    # I
-    .param p2    # I
 
     if-ne p1, p2, :cond_0
 
@@ -1496,7 +1471,6 @@
 
 .method public dispatchDraw(Landroid/graphics/Canvas;)V
     .locals 18
-    .param p1    # Landroid/graphics/Canvas;
 
     invoke-virtual/range {p0 .. p0}, Landroid/view/ViewGroup;->getChildCount()I
 
@@ -2338,9 +2312,6 @@
 
 .method protected drawChild(Landroid/graphics/Canvas;Landroid/view/View;I)V
     .locals 29
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # Landroid/view/View;
-    .param p3    # I
 
     invoke-virtual/range {p2 .. p2}, Landroid/view/View;->getWidth()I
 
@@ -3087,8 +3058,6 @@
 
 .method protected drop(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     invoke-super {p0, p1, p2}, Lcom/android/launcher2/QuickView;->drop(II)V
 
@@ -3302,7 +3271,6 @@
 
 .method public initScreen(Lcom/android/launcher2/QuickView$QuickViewInfoProvider;)V
     .locals 9
-    .param p1    # Lcom/android/launcher2/QuickView$QuickViewInfoProvider;
 
     const/4 v8, 0x0
 
@@ -3479,7 +3447,6 @@
 
 .method protected isValidTag(Ljava/lang/Object;)Z
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     if-eqz p1, :cond_0
 
@@ -3654,7 +3621,6 @@
 
 .method public moveCurrentPage(Z)Z
     .locals 5
-    .param p1    # Z
 
     const/4 v4, 0x2
 
@@ -3715,7 +3681,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p0}, Lcom/android/launcher2/QuickView;->isAnimStateOkayForClickEvents()Z
 
@@ -3774,7 +3739,6 @@
 
 .method protected onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 10
-    .param p1    # Landroid/content/res/Configuration;
 
     const/4 v7, 0x0
 
@@ -3941,7 +3905,6 @@
 
 .method public onInterceptTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 16
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual/range {p0 .. p0}, Lcom/android/launcher2/QuickView;->isAnimating()Z
 
@@ -4440,11 +4403,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 17
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-virtual/range {p0 .. p0}, Lcom/android/launcher2/QuickView;->isChangingOrientation()Z
 
@@ -4960,7 +4918,6 @@
 
 .method public onLongClick(Landroid/view/View;)Z
     .locals 3
-    .param p1    # Landroid/view/View;
 
     const/4 v1, 0x1
 
@@ -5014,8 +4971,6 @@
 
 .method protected onMeasure(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     invoke-static {p1}, Landroid/view/View$MeasureSpec;->getMode(I)I
 
@@ -5069,7 +5024,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 18
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual/range {p0 .. p0}, Lcom/android/launcher2/QuickView;->isAnimating()Z
 
@@ -5766,7 +5720,6 @@
 
 .method public scrollStart(I)V
     .locals 3
-    .param p1    # I
 
     iget v0, p0, Lcom/android/launcher2/QuickView;->mDraggingIndex:I
 
@@ -5842,7 +5795,6 @@
 
 .method public setQvPage(I)Z
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getChildCount()I
 
@@ -5871,7 +5823,6 @@
 
 .method public setReadOnly(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/launcher2/QuickViewMainMenu;->mIsReadOnly:Z
 
@@ -5880,7 +5831,6 @@
 
 .method public setReadOnlyToastId(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/launcher2/QuickViewMainMenu;->mReadOnlyToastResId:I
 
@@ -5889,9 +5839,6 @@
 
 .method public final smoothScrollBy(IIZ)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     if-eqz p3, :cond_0
 
@@ -6019,7 +5966,6 @@
 
 .method protected swapScreen(I)V
     .locals 4
-    .param p1    # I
 
     const/4 v0, 0x0
 

@@ -46,7 +46,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/incallui/InCallActivity;)V
     .locals 2
-    .param p1    # Lcom/android/incallui/InCallActivity;
 
     const/4 v0, 0x0
 
@@ -95,7 +94,6 @@
 # virtual methods
 .method public checkAndHideFragment(Ljava/lang/Enum;)V
     .locals 2
-    .param p1    # Ljava/lang/Enum;
 
     sget-object v0, Lcom/android/incallui/CallButtonFragmentManager$1;->$SwitchMap$com$android$incallui$CallButtonFragmentManager$CallButtonMode:[I
 
@@ -211,7 +209,6 @@
 
 .method protected bridge synthetic checkAndSet(Z)Lcom/android/incallui/BaseFragment;
     .locals 1
-    .param p1    # Z
 
     invoke-virtual {p0, p1}, Lcom/android/incallui/CallButtonFragmentManager;->checkAndSet(Z)Lcom/android/incallui/CallButtonFragment;
 
@@ -222,7 +219,6 @@
 
 .method protected checkAndSet(Z)Lcom/android/incallui/CallButtonFragment;
     .locals 17
-    .param p1    # Z
 
     move-object/from16 v0, p0
 
@@ -1185,7 +1181,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 1
-    .param p1    # Landroid/content/res/Configuration;
 
     const/4 v0, 0x1
 
@@ -1196,7 +1191,6 @@
 
 .method public onCoverStatusChanged(Z)V
     .locals 1
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/incallui/CallButtonFragmentManager;->mIsCoverClosed:Z
 
@@ -1253,8 +1247,6 @@
 
 .method public onIncomingCall(Lcom/android/incallui/InCallPresenter$InCallState;Lcom/android/services/telephony/common/Call;)V
     .locals 1
-    .param p1    # Lcom/android/incallui/InCallPresenter$InCallState;
-    .param p2    # Lcom/android/services/telephony/common/Call;
 
     invoke-static {}, Lcom/android/incallui/CallList;->getInstance()Lcom/android/incallui/CallList;
 
@@ -1267,7 +1259,6 @@
 
 .method public onSideSyncCallForwardStateChanged(Z)V
     .locals 1
-    .param p1    # Z
 
     const/4 v0, 0x1
 
@@ -1278,8 +1269,6 @@
 
 .method public onStateChange(Lcom/android/incallui/InCallPresenter$InCallState;Lcom/android/incallui/CallList;)V
     .locals 2
-    .param p1    # Lcom/android/incallui/InCallPresenter$InCallState;
-    .param p2    # Lcom/android/incallui/CallList;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -1312,7 +1301,6 @@
 
 .method public onWindowStatusChanged(Z)V
     .locals 1
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/incallui/CallButtonFragmentManager;->mIsMultiWindowMode:Z
 
@@ -1325,7 +1313,6 @@
 
 .method protected bridge synthetic setCurrentFragment(Lcom/android/incallui/BaseFragment;)V
     .locals 0
-    .param p1    # Lcom/android/incallui/BaseFragment;
 
     check-cast p1, Lcom/android/incallui/CallButtonFragment;
 
@@ -1336,7 +1323,6 @@
 
 .method protected setCurrentFragment(Lcom/android/incallui/CallButtonFragment;)V
     .locals 0
-    .param p1    # Lcom/android/incallui/CallButtonFragment;
 
     iput-object p1, p0, Lcom/android/incallui/CallButtonFragmentManager;->currentFragment:Lcom/android/incallui/CallButtonFragment;
 
@@ -1345,8 +1331,6 @@
 
 .method protected setFragment(Ljava/lang/Enum;Z)V
     .locals 4
-    .param p1    # Ljava/lang/Enum;
-    .param p2    # Z
 
     const v0, 0x7f0e015f
 
@@ -1545,7 +1529,6 @@
 
 .method public updateCallButtonFragment(Z)V
     .locals 4
-    .param p1    # Z
 
     const/4 v0, 0x0
 

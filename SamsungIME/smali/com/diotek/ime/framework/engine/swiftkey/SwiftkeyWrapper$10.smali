@@ -33,9 +33,6 @@
 # virtual methods
 .method public onComplete(ZZZ)V
     .locals 2
-    .param p1    # Z
-    .param p2    # Z
-    .param p3    # Z
 
     iget-object v0, p0, Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyWrapper$10;->this$0:Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyWrapper;
 

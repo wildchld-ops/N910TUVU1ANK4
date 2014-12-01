@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -45,7 +44,6 @@
 
 .method public enableBezelInteraction(Z)V
     .locals 5
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -172,8 +170,6 @@
 
 .method public registerCallback(Landroid/os/IBinder;Landroid/content/ComponentName;)Z
     .locals 7
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -262,7 +258,6 @@
 
 .method public selectedItemCallback(Lcom/samsung/android/bezelinteraction/BezelEvent;)V
     .locals 5
-    .param p1    # Lcom/samsung/android/bezelinteraction/BezelEvent;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -333,7 +328,6 @@
 
 .method public unregisterCallback(Landroid/os/IBinder;)Z
     .locals 6
-    .param p1    # Landroid/os/IBinder;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

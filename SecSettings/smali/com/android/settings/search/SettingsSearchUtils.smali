@@ -1777,8 +1777,6 @@
 
 .method private compareMenuInfoItem(ILcom/android/settings/search/SearchItem$MenuInfoItem;)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Lcom/android/settings/search/SearchItem$MenuInfoItem;
 
     sget-object v1, Lcom/android/settings/search/SettingsSearchUtils;->mMenuInfoItem:Ljava/util/ArrayList;
 
@@ -17456,10 +17454,6 @@
 
 .method private menuInfo(Ljava/lang/String;IILjava/lang/String;)Lcom/android/settings/search/SearchItem$MenuInfoItem;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
 
     new-instance v0, Lcom/android/settings/search/SearchItem$MenuInfoItem;
 

@@ -55,7 +55,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/display/WfdBridgeBase;I)V
     .locals 1
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -74,8 +73,6 @@
 
 .method public constructor <init>(Lcom/android/server/display/WfdBridgeBase;ILcom/android/server/display/WfdBridgeBase$BridgePeer;)V
     .locals 1
-    .param p2    # I
-    .param p3    # Lcom/android/server/display/WfdBridgeBase$BridgePeer;
 
     iput-object p1, p0, Lcom/android/server/display/WfdBridgeBase$WBPMsg;->this$0:Lcom/android/server/display/WfdBridgeBase;
 
@@ -94,9 +91,6 @@
 
 .method public constructor <init>(Lcom/android/server/display/WfdBridgeBase;ILjava/lang/String;Lcom/android/server/display/WfdBridgeBase$BridgePeer;)V
     .locals 0
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Lcom/android/server/display/WfdBridgeBase$BridgePeer;
 
     iput-object p1, p0, Lcom/android/server/display/WfdBridgeBase$WBPMsg;->this$0:Lcom/android/server/display/WfdBridgeBase;
 
@@ -113,11 +107,6 @@
 
 .method public constructor <init>(Lcom/android/server/display/WfdBridgeBase;ILjava/lang/String;Lcom/android/server/display/WfdBridgeBase$BridgePeer;II)V
     .locals 0
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Lcom/android/server/display/WfdBridgeBase$BridgePeer;
-    .param p5    # I
-    .param p6    # I
 
     iput-object p1, p0, Lcom/android/server/display/WfdBridgeBase$WBPMsg;->this$0:Lcom/android/server/display/WfdBridgeBase;
 
@@ -138,8 +127,6 @@
 
 .method public constructor <init>(Lcom/android/server/display/WfdBridgeBase;Ljava/lang/String;Lcom/android/server/display/WfdBridgeBase$BridgePeer;)V
     .locals 1
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/android/server/display/WfdBridgeBase$BridgePeer;
 
     iput-object p1, p0, Lcom/android/server/display/WfdBridgeBase$WBPMsg;->this$0:Lcom/android/server/display/WfdBridgeBase;
 

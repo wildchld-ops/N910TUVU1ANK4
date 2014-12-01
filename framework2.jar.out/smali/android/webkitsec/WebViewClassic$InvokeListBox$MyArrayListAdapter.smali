@@ -201,7 +201,6 @@
 
 .method private item(I)Landroid/webkitsec/WebViewClassic$InvokeListBox$Container;
     .locals 1
-    .param p1    # I
 
     if-ltz p1, :cond_0
 
@@ -239,7 +238,6 @@
 
 .method public getItemId(I)J
     .locals 3
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/webkitsec/WebViewClassic$InvokeListBox$MyArrayListAdapter;->item(I)Landroid/webkitsec/WebViewClassic$InvokeListBox$Container;
 
@@ -262,9 +260,6 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 8
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     const/4 v7, 0x0
 
@@ -392,7 +387,6 @@
 
 .method public isEnabled(I)Z
     .locals 4
-    .param p1    # I
 
     const/4 v1, 0x1
 

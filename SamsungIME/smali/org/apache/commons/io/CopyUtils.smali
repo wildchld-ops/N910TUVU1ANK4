@@ -18,8 +18,6 @@
 
 .method public static copy(Ljava/io/InputStream;Ljava/io/OutputStream;)I
     .locals 4
-    .param p0    # Ljava/io/InputStream;
-    .param p1    # Ljava/io/OutputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -57,8 +55,6 @@
 
 .method public static copy(Ljava/io/Reader;Ljava/io/Writer;)I
     .locals 4
-    .param p0    # Ljava/io/Reader;
-    .param p1    # Ljava/io/Writer;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -96,8 +92,6 @@
 
 .method public static copy(Ljava/io/InputStream;Ljava/io/Writer;)V
     .locals 1
-    .param p0    # Ljava/io/InputStream;
-    .param p1    # Ljava/io/Writer;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -115,9 +109,6 @@
 
 .method public static copy(Ljava/io/InputStream;Ljava/io/Writer;Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/io/InputStream;
-    .param p1    # Ljava/io/Writer;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -135,8 +126,6 @@
 
 .method public static copy(Ljava/io/Reader;Ljava/io/OutputStream;)V
     .locals 1
-    .param p0    # Ljava/io/Reader;
-    .param p1    # Ljava/io/OutputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -156,8 +145,6 @@
 
 .method public static copy(Ljava/lang/String;Ljava/io/OutputStream;)V
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/io/OutputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -181,8 +168,6 @@
 
 .method public static copy(Ljava/lang/String;Ljava/io/Writer;)V
     .locals 0
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/io/Writer;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -196,8 +181,6 @@
 
 .method public static copy([BLjava/io/OutputStream;)V
     .locals 0
-    .param p0    # [B
-    .param p1    # Ljava/io/OutputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -211,8 +194,6 @@
 
 .method public static copy([BLjava/io/Writer;)V
     .locals 1
-    .param p0    # [B
-    .param p1    # Ljava/io/Writer;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -230,9 +211,6 @@
 
 .method public static copy([BLjava/io/Writer;Ljava/lang/String;)V
     .locals 1
-    .param p0    # [B
-    .param p1    # Ljava/io/Writer;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

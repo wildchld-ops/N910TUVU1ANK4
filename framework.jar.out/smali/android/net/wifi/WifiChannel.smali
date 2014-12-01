@@ -73,10 +73,6 @@
 
 .method public constructor <init>(IIII)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -109,7 +105,6 @@
 
 .method public constructor <init>(Landroid/net/wifi/WifiChannel;)V
     .locals 1
-    .param p1    # Landroid/net/wifi/WifiChannel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -146,7 +141,6 @@
 
 .method static synthetic access$000(Landroid/os/Parcel;)Ljava/util/BitSet;
     .locals 1
-    .param p0    # Landroid/os/Parcel;
 
     invoke-static {p0}, Landroid/net/wifi/WifiChannel;->readBitSet(Landroid/os/Parcel;)Ljava/util/BitSet;
 
@@ -157,7 +151,6 @@
 
 .method private static readBitSet(Landroid/os/Parcel;)Ljava/util/BitSet;
     .locals 4
-    .param p0    # Landroid/os/Parcel;
 
     invoke-virtual {p0}, Landroid/os/Parcel;->readInt()I
 
@@ -188,8 +181,6 @@
 
 .method private static writeBitSet(Landroid/os/Parcel;Ljava/util/BitSet;)V
     .locals 2
-    .param p0    # Landroid/os/Parcel;
-    .param p1    # Ljava/util/BitSet;
 
     const/4 v0, -0x1
 
@@ -384,8 +375,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget v0, p0, Landroid/net/wifi/WifiChannel;->channel:I
 

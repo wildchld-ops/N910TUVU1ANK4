@@ -153,7 +153,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/wifi/mobileap/WifiApTestConfigure;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApTestConfigure;
 
     invoke-direct {p0}, Lcom/android/settings/wifi/mobileap/WifiApTestConfigure;->getChgType()Z
 
@@ -164,7 +163,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/wifi/mobileap/WifiApTestConfigure;)I
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApTestConfigure;
 
     iget v0, p0, Lcom/android/settings/wifi/mobileap/WifiApTestConfigure;->mNumBasedOnCharger:I
 
@@ -173,7 +171,6 @@
 
 .method static synthetic access$1000(Lcom/android/settings/wifi/mobileap/WifiApTestConfigure;)Lcom/sec/android/touchwiz/widget/TwCheckBox;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApTestConfigure;
 
     iget-object v0, p0, Lcom/android/settings/wifi/mobileap/WifiApTestConfigure;->CheckBoxChannel5g:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
@@ -182,8 +179,6 @@
 
 .method static synthetic access$102(Lcom/android/settings/wifi/mobileap/WifiApTestConfigure;I)I
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApTestConfigure;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/settings/wifi/mobileap/WifiApTestConfigure;->mNumBasedOnCharger:I
 
@@ -192,7 +187,6 @@
 
 .method static synthetic access$1100(Lcom/android/settings/wifi/mobileap/WifiApTestConfigure;)Lcom/sec/android/touchwiz/widget/TwCheckBox;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApTestConfigure;
 
     iget-object v0, p0, Lcom/android/settings/wifi/mobileap/WifiApTestConfigure;->CheckBoxChannel2g:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
@@ -201,7 +195,6 @@
 
 .method static synthetic access$1200(Lcom/android/settings/wifi/mobileap/WifiApTestConfigure;)Landroid/widget/Spinner;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApTestConfigure;
 
     iget-object v0, p0, Lcom/android/settings/wifi/mobileap/WifiApTestConfigure;->mChannel:Landroid/widget/Spinner;
 
@@ -210,7 +203,6 @@
 
 .method static synthetic access$1300(Lcom/android/settings/wifi/mobileap/WifiApTestConfigure;)I
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApTestConfigure;
 
     iget v0, p0, Lcom/android/settings/wifi/mobileap/WifiApTestConfigure;->mLast2gChannel:I
 
@@ -219,7 +211,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/wifi/mobileap/WifiApTestConfigure;)[Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApTestConfigure;
 
     iget-object v0, p0, Lcom/android/settings/wifi/mobileap/WifiApTestConfigure;->wifiAp5gItem:[Ljava/lang/String;
 
@@ -228,8 +219,6 @@
 
 .method static synthetic access$202(Lcom/android/settings/wifi/mobileap/WifiApTestConfigure;[Ljava/lang/String;)[Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApTestConfigure;
-    .param p1    # [Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/settings/wifi/mobileap/WifiApTestConfigure;->wifiAp5gItem:[Ljava/lang/String;
 
@@ -238,7 +227,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/wifi/mobileap/WifiApTestConfigure;)I
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApTestConfigure;
 
     iget v0, p0, Lcom/android/settings/wifi/mobileap/WifiApTestConfigure;->mNumBasedOnCountry:I
 
@@ -247,7 +235,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/wifi/mobileap/WifiApTestConfigure;)[Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApTestConfigure;
 
     iget-object v0, p0, Lcom/android/settings/wifi/mobileap/WifiApTestConfigure;->wifiAp5gItemBasedOnCharger:[Ljava/lang/String;
 
@@ -256,7 +243,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/wifi/mobileap/WifiApTestConfigure;)[Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApTestConfigure;
 
     iget-object v0, p0, Lcom/android/settings/wifi/mobileap/WifiApTestConfigure;->wifiAp5gItemBasedOnCountry:[Ljava/lang/String;
 
@@ -265,7 +251,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/wifi/mobileap/WifiApTestConfigure;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApTestConfigure;
 
     iget-object v0, p0, Lcom/android/settings/wifi/mobileap/WifiApTestConfigure;->mContext:Landroid/content/Context;
 
@@ -274,7 +259,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/wifi/mobileap/WifiApTestConfigure;)Landroid/widget/Spinner;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApTestConfigure;
 
     iget-object v0, p0, Lcom/android/settings/wifi/mobileap/WifiApTestConfigure;->mChannel5g:Landroid/widget/Spinner;
 
@@ -283,7 +267,6 @@
 
 .method static synthetic access$800(Lcom/android/settings/wifi/mobileap/WifiApTestConfigure;)I
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApTestConfigure;
 
     iget v0, p0, Lcom/android/settings/wifi/mobileap/WifiApTestConfigure;->mLast5gChannel:I
 
@@ -292,7 +275,6 @@
 
 .method static synthetic access$900(Lcom/android/settings/wifi/mobileap/WifiApTestConfigure;)I
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApTestConfigure;
 
     iget v0, p0, Lcom/android/settings/wifi/mobileap/WifiApTestConfigure;->mSelectedChannel:I
 
@@ -301,8 +283,6 @@
 
 .method static synthetic access$902(Lcom/android/settings/wifi/mobileap/WifiApTestConfigure;I)I
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApTestConfigure;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/settings/wifi/mobileap/WifiApTestConfigure;->mSelectedChannel:I
 
@@ -471,7 +451,6 @@
 
 .method public static getSecurityTypeIndex(Landroid/net/wifi/WifiConfiguration;)I
     .locals 2
-    .param p0    # Landroid/net/wifi/WifiConfiguration;
 
     const/4 v0, 0x1
 
@@ -699,7 +678,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 11
-    .param p1    # Landroid/view/View;
 
     const/4 v10, 0x3
 
@@ -1090,7 +1068,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 10
-    .param p1    # Landroid/os/Bundle;
 
     const/16 v9, 0x8
 
@@ -1617,9 +1594,6 @@
 
 .method public onItemSelected(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
     .locals 1
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

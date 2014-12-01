@@ -64,7 +64,6 @@
 
 .method public isTimaKeystoreEnabledForPackage(Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     invoke-static {}, Landroid/sec/enterprise/EnterpriseDeviceManager$EDMProxyServiceHelper;->getService()Landroid/sec/enterprise/IEDMProxy;

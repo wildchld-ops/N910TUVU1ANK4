@@ -78,8 +78,6 @@
 
 .method static addMediaElementEventListeners(Lorg/w3c/dom/events/EventTarget;Lcom/android/mms/model/MediaModel;)V
     .locals 2
-    .param p0    # Lorg/w3c/dom/events/EventTarget;
-    .param p1    # Lcom/android/mms/model/MediaModel;
 
     const/4 v1, 0x0
 
@@ -104,7 +102,6 @@
 
 .method public static addPar(Lorg/w3c/dom/smil/SMILDocument;)Lorg/w3c/dom/smil/SMILParElement;
     .locals 2
-    .param p0    # Lorg/w3c/dom/smil/SMILDocument;
 
     const-string v1, "par"
 
@@ -136,8 +133,6 @@
 
 .method static addParElementEventListeners(Lorg/w3c/dom/events/EventTarget;Lcom/android/mms/model/SlideModel;)V
     .locals 2
-    .param p0    # Lorg/w3c/dom/events/EventTarget;
-    .param p1    # Lcom/android/mms/model/SlideModel;
 
     const/4 v1, 0x0
 
@@ -154,9 +149,6 @@
 
 .method public static createMediaElement(Ljava/lang/String;Lorg/w3c/dom/smil/SMILDocument;Ljava/lang/String;)Lorg/w3c/dom/smil/SMILMediaElement;
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Lorg/w3c/dom/smil/SMILDocument;
-    .param p2    # Ljava/lang/String;
 
     invoke-interface {p1, p0}, Lorg/w3c/dom/smil/SMILDocument;->createElement(Ljava/lang/String;)Lorg/w3c/dom/Element;
 
@@ -186,7 +178,6 @@
 
 .method private static createSmilDocument(Lcom/android/mms/model/SlideshowModel;)Lorg/w3c/dom/smil/SMILDocument;
     .locals 31
-    .param p0    # Lcom/android/mms/model/SlideshowModel;
 
     new-instance v7, Lcom/android/mms/dom/smil/SmilDocumentImpl;
 
@@ -720,8 +711,6 @@
 
 .method private static createSmilDocument(Lcom/google/android/mms/pdu/PduBody;Landroid/content/Context;)Lorg/w3c/dom/smil/SMILDocument;
     .locals 23
-    .param p0    # Lcom/google/android/mms/pdu/PduBody;
-    .param p1    # Landroid/content/Context;
 
     new-instance v6, Lcom/android/mms/dom/smil/SmilDocumentImpl;
 
@@ -1060,7 +1049,6 @@
 
 .method public static escapeXML(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "&"
 
@@ -1107,7 +1095,6 @@
 
 .method private static findRegionElementById(Ljava/util/ArrayList;Ljava/lang/String;)Lorg/w3c/dom/smil/SMILRegionElement;
     .locals 3
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1159,7 +1146,6 @@
 
 .method private static findSmilPart(Lcom/google/android/mms/pdu/PduBody;)Lcom/google/android/mms/pdu/PduPart;
     .locals 5
-    .param p0    # Lcom/google/android/mms/pdu/PduBody;
 
     if-eqz p0, :cond_1
 
@@ -1208,7 +1194,6 @@
 
 .method public static getDocument(Lcom/android/mms/model/SlideshowModel;)Lorg/w3c/dom/smil/SMILDocument;
     .locals 1
-    .param p0    # Lcom/android/mms/model/SlideshowModel;
 
     invoke-static {p0}, Lcom/android/mms/model/SmilHelper;->createSmilDocument(Lcom/android/mms/model/SlideshowModel;)Lorg/w3c/dom/smil/SMILDocument;
 
@@ -1219,8 +1204,6 @@
 
 .method public static getDocument(Lcom/google/android/mms/pdu/PduBody;Landroid/content/Context;)Lorg/w3c/dom/smil/SMILDocument;
     .locals 4
-    .param p0    # Lcom/google/android/mms/pdu/PduBody;
-    .param p1    # Landroid/content/Context;
 
     invoke-static {p0}, Lcom/android/mms/model/SmilHelper;->findSmilPart(Lcom/google/android/mms/pdu/PduBody;)Lcom/google/android/mms/pdu/PduPart;
 
@@ -1260,7 +1243,6 @@
 
 .method private static getSecured(Ljava/lang/String;)Ljava/lang/String;
     .locals 8
-    .param p0    # Ljava/lang/String;
 
     new-instance v5, Ljava/lang/StringBuilder;
 
@@ -1306,7 +1288,6 @@
 
 .method private static getSmilDocument(Lcom/google/android/mms/pdu/PduPart;)Lorg/w3c/dom/smil/SMILDocument;
     .locals 6
-    .param p0    # Lcom/google/android/mms/pdu/PduPart;
 
     :try_start_0
     invoke-virtual {p0}, Lcom/google/android/mms/pdu/PduPart;->getData()[B
@@ -1399,10 +1380,6 @@
 
 .method private static removeSrcInTag(Ljava/lang/String;Ljava/lang/StringBuilder;Ljava/lang/String;I)I
     .locals 6
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/StringBuilder;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     const/4 v4, -0x1
 
@@ -1449,10 +1426,6 @@
 
 .method public static replaceSrcInTagWithFirstMatch(Lorg/w3c/dom/smil/SMILDocument;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lorg/w3c/dom/smil/SMILDocument;
     .locals 10
-    .param p0    # Lorg/w3c/dom/smil/SMILDocument;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const-string v4, "\""
 
@@ -1622,10 +1595,6 @@
 
 .method private static setRegion(Lorg/w3c/dom/smil/SMILRegionMediaElement;Ljava/util/ArrayList;Lorg/w3c/dom/smil/SMILLayoutElement;Ljava/lang/String;Z)Z
     .locals 2
-    .param p0    # Lorg/w3c/dom/smil/SMILRegionMediaElement;
-    .param p2    # Lorg/w3c/dom/smil/SMILLayoutElement;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1665,7 +1634,6 @@
 
 .method private static validate(Lorg/w3c/dom/smil/SMILDocument;)Lorg/w3c/dom/smil/SMILDocument;
     .locals 0
-    .param p0    # Lorg/w3c/dom/smil/SMILDocument;
 
     return-object p0
 .end method

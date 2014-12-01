@@ -67,7 +67,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -124,8 +123,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v1, 0x0
 
@@ -182,9 +179,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v1, 0x0
 
@@ -241,8 +235,6 @@
 
 .method static synthetic access$002(Lcom/sec/android/visualeffect/particlespace/ParticleSpaceEffect;F)F
     .locals 0
-    .param p0    # Lcom/sec/android/visualeffect/particlespace/ParticleSpaceEffect;
-    .param p1    # F
 
     iput p1, p0, Lcom/sec/android/visualeffect/particlespace/ParticleSpaceEffect;->screenOnAnimationValue:F
 
@@ -251,7 +243,6 @@
 
 .method static synthetic access$100(Lcom/sec/android/visualeffect/particlespace/ParticleSpaceEffect;)V
     .locals 0
-    .param p0    # Lcom/sec/android/visualeffect/particlespace/ParticleSpaceEffect;
 
     invoke-direct {p0}, Lcom/sec/android/visualeffect/particlespace/ParticleSpaceEffect;->animateScreenOn()V
 
@@ -260,7 +251,6 @@
 
 .method static synthetic access$200(Lcom/sec/android/visualeffect/particlespace/ParticleSpaceEffect;)I
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/particlespace/ParticleSpaceEffect;
 
     iget v0, p0, Lcom/sec/android/visualeffect/particlespace/ParticleSpaceEffect;->CREATED_DOTS_AMOUNT_AFFORDANCE:I
 
@@ -269,7 +259,6 @@
 
 .method static synthetic access$300(Lcom/sec/android/visualeffect/particlespace/ParticleSpaceEffect;)Lcom/sec/android/visualeffect/particlespace/particle/ParticleEffect;
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/particlespace/ParticleSpaceEffect;
 
     iget-object v0, p0, Lcom/sec/android/visualeffect/particlespace/ParticleSpaceEffect;->particleEffect:Lcom/sec/android/visualeffect/particlespace/particle/ParticleEffect;
 
@@ -278,8 +267,6 @@
 
 .method static synthetic access$402(Lcom/sec/android/visualeffect/particlespace/ParticleSpaceEffect;Ljava/lang/Runnable;)Ljava/lang/Runnable;
     .locals 0
-    .param p0    # Lcom/sec/android/visualeffect/particlespace/ParticleSpaceEffect;
-    .param p1    # Ljava/lang/Runnable;
 
     iput-object p1, p0, Lcom/sec/android/visualeffect/particlespace/ParticleSpaceEffect;->affordanceRunnable:Ljava/lang/Runnable;
 
@@ -288,7 +275,6 @@
 
 .method static synthetic access$500(Lcom/sec/android/visualeffect/particlespace/ParticleSpaceEffect;)V
     .locals 0
-    .param p0    # Lcom/sec/android/visualeffect/particlespace/ParticleSpaceEffect;
 
     invoke-direct {p0}, Lcom/sec/android/visualeffect/particlespace/ParticleSpaceEffect;->unlockFinished()V
 
@@ -345,8 +331,6 @@
 
 .method private getColor(FF)I
     .locals 17
-    .param p1    # F
-    .param p2    # F
 
     const v4, 0xffffff
 
@@ -883,12 +867,6 @@
 
 .method private setViewProperties(Landroid/view/View;FFFFF)V
     .locals 0
-    .param p1    # Landroid/view/View;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # F
 
     invoke-virtual {p1, p2}, Landroid/view/View;->setX(F)V
 
@@ -995,8 +973,6 @@
 
 .method public handleTouchEvent(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 6
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     const/4 v5, 0x0
 
@@ -1129,7 +1105,6 @@
 
 .method protected onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 2
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/view/View;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -1196,8 +1171,6 @@
 
 .method public setLayers(Landroid/widget/FrameLayout;Landroid/widget/FrameLayout;)V
     .locals 3
-    .param p1    # Landroid/widget/FrameLayout;
-    .param p2    # Landroid/widget/FrameLayout;
 
     const-string v0, "VisualEffectParticleEffect"
 
@@ -1236,7 +1209,6 @@
 
 .method public setWallpaperBitmap(Landroid/graphics/Bitmap;)V
     .locals 3
-    .param p1    # Landroid/graphics/Bitmap;
 
     const-string v0, "VisualEffectParticleEffect"
 
@@ -1311,8 +1283,6 @@
 
 .method public showUnlockAffordance(JLandroid/graphics/Rect;)V
     .locals 3
-    .param p1    # J
-    .param p3    # Landroid/graphics/Rect;
 
     const-string v0, "VisualEffectParticleEffect"
 

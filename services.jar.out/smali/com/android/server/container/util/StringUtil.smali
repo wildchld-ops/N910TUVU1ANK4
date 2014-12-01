@@ -30,8 +30,6 @@
 
 .method public static getBroadcastingKey(II)Ljava/lang/String;
     .locals 2
-    .param p0    # I
-    .param p1    # I
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -68,7 +66,6 @@
 
 .method public static getEventStrings([I)[Ljava/lang/String;
     .locals 4
-    .param p0    # [I
 
     if-eqz p0, :cond_0
 
@@ -111,8 +108,6 @@
 
 .method public static getMountedPath(Ljava/lang/String;I)Ljava/lang/String;
     .locals 5
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
 
     if-eqz p0, :cond_0
 
@@ -243,8 +238,6 @@
 
 .method public static getRegisteringKey(II)[Ljava/lang/String;
     .locals 2
-    .param p0    # I
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -263,8 +256,6 @@
 
 .method public static getRegisteringKey(I[I)[Ljava/lang/String;
     .locals 4
-    .param p0    # I
-    .param p1    # [I
 
     if-eqz p1, :cond_0
 

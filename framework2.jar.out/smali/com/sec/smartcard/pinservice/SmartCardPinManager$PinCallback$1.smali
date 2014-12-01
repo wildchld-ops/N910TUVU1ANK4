@@ -48,7 +48,6 @@
 
 .method public onUserEnteredPin([C)V
     .locals 1
-    .param p1    # [C
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -64,7 +63,6 @@
 
 .method public onUserPinError(I)V
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

@@ -62,8 +62,6 @@
 
 .method private static getBestFreq([II)I
     .locals 6
-    .param p0    # [I
-    .param p1    # I
 
     const/4 v4, 0x0
 
@@ -103,7 +101,6 @@
 
 .method public static lock(I)V
     .locals 2
-    .param p0    # I
 
     sget-object v0, Lcom/sec/android/visualeffect/utils/VisualEffectDVFS;->TAG:Ljava/lang/String;
 
@@ -244,7 +241,6 @@
 
 .method public static release(I)V
     .locals 2
-    .param p0    # I
 
     sget-object v0, Lcom/sec/android/visualeffect/utils/VisualEffectDVFS;->TAG:Ljava/lang/String;
 
@@ -427,10 +423,6 @@
 
 .method public static setLimit(Landroid/content/Context;III)V
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     packed-switch p1, :pswitch_data_0
 

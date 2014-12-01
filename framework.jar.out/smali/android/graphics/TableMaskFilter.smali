@@ -6,7 +6,6 @@
 # direct methods
 .method private constructor <init>(I)V
     .locals 0
-    .param p1    # I
 
     invoke-direct {p0}, Landroid/graphics/MaskFilter;-><init>()V
 
@@ -17,7 +16,6 @@
 
 .method public constructor <init>([B)V
     .locals 2
-    .param p1    # [B
 
     invoke-direct {p0}, Landroid/graphics/MaskFilter;-><init>()V
 
@@ -47,8 +45,6 @@
 
 .method public static CreateClipTable(II)Landroid/graphics/TableMaskFilter;
     .locals 2
-    .param p0    # I
-    .param p1    # I
 
     new-instance v0, Landroid/graphics/TableMaskFilter;
 
@@ -63,7 +59,6 @@
 
 .method public static CreateGammaTable(F)Landroid/graphics/TableMaskFilter;
     .locals 2
-    .param p0    # F
 
     new-instance v0, Landroid/graphics/TableMaskFilter;
 

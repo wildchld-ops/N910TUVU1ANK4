@@ -54,7 +54,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Landroid/view/ViewGroup;-><init>(Landroid/content/Context;)V
 
@@ -69,8 +68,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/view/ViewGroup;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -85,9 +82,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Landroid/view/ViewGroup;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
@@ -102,9 +96,6 @@
 
 .method protected static next(IIZ)I
     .locals 1
-    .param p0    # I
-    .param p1    # I
-    .param p2    # Z
 
     if-eqz p2, :cond_0
 
@@ -123,7 +114,6 @@
 # virtual methods
 .method public animateToVisibility(I)V
     .locals 11
-    .param p1    # I
 
     const/high16 v10, 0x3f800000
 
@@ -455,10 +445,6 @@
 
 .method protected measureChildView(Landroid/view/View;III)I
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/high16 v0, -0x80000000
 
@@ -487,7 +473,6 @@
 
 .method protected onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 9
-    .param p1    # Landroid/content/res/Configuration;
 
     const/4 v8, 0x0
 
@@ -612,11 +597,6 @@
 
 .method protected positionChild(Landroid/view/View;IIIZ)I
     .locals 5
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Z
 
     invoke-virtual {p1}, Landroid/view/View;->getMeasuredWidth()I
 
@@ -672,7 +652,6 @@
 
 .method public setContentHeight(I)V
     .locals 2
-    .param p1    # I
 
     iput p1, p0, Lcom/android/internal/widget/AbsActionBarView;->mContentHeight:I
 
@@ -694,7 +673,6 @@
 
 .method public setSplitActionBar(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/internal/widget/AbsActionBarView;->mSplitActionBar:Z
 
@@ -703,7 +681,6 @@
 
 .method public setSplitView(Lcom/android/internal/widget/ActionBarContainer;)V
     .locals 0
-    .param p1    # Lcom/android/internal/widget/ActionBarContainer;
 
     iput-object p1, p0, Lcom/android/internal/widget/AbsActionBarView;->mSplitView:Lcom/android/internal/widget/ActionBarContainer;
 
@@ -712,7 +689,6 @@
 
 .method public setSplitWhenNarrow(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/internal/widget/AbsActionBarView;->mSplitWhenNarrow:Z
 
@@ -721,7 +697,6 @@
 
 .method public setVisibility(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/view/View;->getVisibility()I
 

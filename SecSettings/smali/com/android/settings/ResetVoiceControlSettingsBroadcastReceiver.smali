@@ -14,7 +14,6 @@
 
 .method private resetVoiceControl(Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     invoke-static {}, Lcom/android/settings/Utils;->isSupportMenuTreeForK()Z
 
@@ -96,8 +95,6 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     invoke-direct {p0, p1}, Lcom/android/settings/ResetVoiceControlSettingsBroadcastReceiver;->resetVoiceControl(Landroid/content/Context;)V
 

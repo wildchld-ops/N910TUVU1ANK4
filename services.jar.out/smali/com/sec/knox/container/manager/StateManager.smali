@@ -53,7 +53,6 @@
 
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 10
-    .param p1    # Landroid/content/Context;
 
     const/4 v9, 0x4
 
@@ -2037,7 +2036,6 @@
 
 .method public static getInstance(Landroid/content/Context;)Lcom/sec/knox/container/manager/StateManager;
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     sget-object v0, Lcom/sec/knox/container/manager/StateManager;->mInstance:Lcom/sec/knox/container/manager/StateManager;
 
@@ -2057,9 +2055,6 @@
 
 .method private updateStateChangeToClients(ILcom/sec/knox/container/constants/CSState;Lcom/sec/knox/container/constants/CSState;)I
     .locals 3
-    .param p1    # I
-    .param p2    # Lcom/sec/knox/container/constants/CSState;
-    .param p3    # Lcom/sec/knox/container/constants/CSState;
 
     iget-object v2, p0, Lcom/sec/knox/container/manager/StateManager;->mClientList:Ljava/util/ArrayList;
 
@@ -2094,9 +2089,6 @@
 # virtual methods
 .method public declared-synchronized checkStateTransition(ILcom/sec/knox/container/constants/CSState;Lcom/sec/knox/container/constants/CSEvent;)Lcom/sec/knox/container/constants/CSState;
     .locals 3
-    .param p1    # I
-    .param p2    # Lcom/sec/knox/container/constants/CSState;
-    .param p3    # Lcom/sec/knox/container/constants/CSEvent;
 
     monitor-enter p0
 
@@ -2183,7 +2175,6 @@
 
 .method public getContainerStatus(I)Lcom/sec/knox/container/constants/CSState;
     .locals 5
-    .param p1    # I
 
     iget-object v2, p0, Lcom/sec/knox/container/manager/StateManager;->TAG:Ljava/lang/String;
 
@@ -2311,7 +2302,6 @@
 
 .method public registerClientCallback(Lcom/sec/knox/container/manager/IStateManagerCallback;)I
     .locals 1
-    .param p1    # Lcom/sec/knox/container/manager/IStateManagerCallback;
 
     iget-object v0, p0, Lcom/sec/knox/container/manager/StateManager;->mClientList:Ljava/util/ArrayList;
 
@@ -2324,9 +2314,6 @@
 
 .method public declared-synchronized transitState(ILcom/sec/knox/container/constants/CSState;Lcom/sec/knox/container/constants/CSEvent;)Lcom/sec/knox/container/constants/CSState;
     .locals 7
-    .param p1    # I
-    .param p2    # Lcom/sec/knox/container/constants/CSState;
-    .param p3    # Lcom/sec/knox/container/constants/CSEvent;
 
     monitor-enter p0
 
@@ -2673,7 +2660,6 @@
 
 .method public unRegisterClientCallback(Lcom/sec/knox/container/manager/IStateManagerCallback;)I
     .locals 1
-    .param p1    # Lcom/sec/knox/container/manager/IStateManagerCallback;
 
     const/4 v0, -0x1
 

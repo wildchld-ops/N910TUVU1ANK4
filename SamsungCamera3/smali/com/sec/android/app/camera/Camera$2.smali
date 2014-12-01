@@ -36,7 +36,6 @@
 # virtual methods
 .method public onDisplayAdded(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v2, 0x1
 
@@ -181,7 +180,6 @@
 
 .method public onDisplayChanged(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "Camera3"
 
@@ -216,7 +214,6 @@
 
 .method public onDisplayRemoved(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "Camera3"
 

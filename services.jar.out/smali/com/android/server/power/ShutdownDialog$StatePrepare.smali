@@ -38,8 +38,6 @@
 
 .method synthetic constructor <init>(Lcom/android/server/power/ShutdownDialog;Lcom/android/server/power/ShutdownDialog$1;)V
     .locals 0
-    .param p1    # Lcom/android/server/power/ShutdownDialog;
-    .param p2    # Lcom/android/server/power/ShutdownDialog$1;
 
     invoke-direct {p0, p1}, Lcom/android/server/power/ShutdownDialog$StatePrepare;-><init>(Lcom/android/server/power/ShutdownDialog;)V
 
@@ -117,8 +115,6 @@
 
 .method private prepareWindowRotation(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     iget-object v2, p0, Lcom/android/server/power/ShutdownDialog$StatePrepare;->this$0:Lcom/android/server/power/ShutdownDialog;
 

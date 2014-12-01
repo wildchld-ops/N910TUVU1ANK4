@@ -32,10 +32,6 @@
 
 .method constructor <init>(Landroid/content/Context;Lorg/apache/http/HttpHost;Lorg/apache/http/HttpHost;Landroid/net/http/RequestFeeder;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lorg/apache/http/HttpHost;
-    .param p3    # Lorg/apache/http/HttpHost;
-    .param p4    # Landroid/net/http/RequestFeeder;
 
     const/4 v1, 0x0
 
@@ -82,7 +78,6 @@
 
 .method public static initializeEngine(Ljava/io/File;)V
     .locals 7
-    .param p0    # Ljava/io/File;
 
     const/4 v0, 0x0
 
@@ -255,7 +250,6 @@
 
 .method openConnection(Landroid/net/http/Request;)Landroid/net/http/AndroidHttpClientConnection;
     .locals 30
-    .param p1    # Landroid/net/http/Request;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1034,7 +1028,6 @@
 
 .method restartConnection(Z)V
     .locals 3
-    .param p1    # Z
 
     const/4 v0, 0x0
 
@@ -1079,7 +1072,6 @@
 
 .method setCertificate(Landroid/net/http/SslCertificate;)V
     .locals 0
-    .param p1    # Landroid/net/http/SslCertificate;
 
     iput-object p1, p0, Landroid/net/http/HttpsConnection;->mCertificate:Landroid/net/http/SslCertificate;
 

@@ -25,7 +25,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/firewall/IntentFirewall;Ljava/io/File;)V
     .locals 2
-    .param p2    # Ljava/io/File;
 
     iput-object p1, p0, Lcom/android/server/firewall/IntentFirewall$RuleObserver;->this$0:Lcom/android/server/firewall/IntentFirewall;
 
@@ -44,8 +43,6 @@
 # virtual methods
 .method public onEvent(ILjava/lang/String;)V
     .locals 4
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v3, 0x0
 

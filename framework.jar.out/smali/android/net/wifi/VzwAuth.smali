@@ -16,7 +16,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -334,7 +333,6 @@
 
 .method private static toHex([B)Ljava/lang/String;
     .locals 6
-    .param p0    # [B
 
     new-instance v0, Ljava/lang/StringBuffer;
 
@@ -413,7 +411,6 @@
 # virtual methods
 .method public encryptSha1(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/security/NoSuchAlgorithmException;

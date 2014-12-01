@@ -150,8 +150,6 @@
 # direct methods
 .method public constructor <init>(II)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     const/16 v3, 0x16
 
@@ -182,8 +180,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 13
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/high16 v11, -0x80000000
 
@@ -652,7 +648,6 @@
 
 .method public constructor <init>(Landroid/view/ViewGroup$LayoutParams;)V
     .locals 4
-    .param p1    # Landroid/view/ViewGroup$LayoutParams;
 
     const/16 v3, 0x16
 
@@ -683,7 +678,6 @@
 
 .method public constructor <init>(Landroid/view/ViewGroup$MarginLayoutParams;)V
     .locals 4
-    .param p1    # Landroid/view/ViewGroup$MarginLayoutParams;
 
     const/16 v3, 0x16
 
@@ -714,7 +708,6 @@
 
 .method public constructor <init>(Landroid/widget/RelativeLayout$LayoutParams;)V
     .locals 4
-    .param p1    # Landroid/widget/RelativeLayout$LayoutParams;
 
     const/high16 v1, -0x80000000
 
@@ -769,7 +762,6 @@
 
 .method static synthetic access$100(Landroid/widget/RelativeLayout$LayoutParams;)I
     .locals 1
-    .param p0    # Landroid/widget/RelativeLayout$LayoutParams;
 
     iget v0, p0, Landroid/widget/RelativeLayout$LayoutParams;->mLeft:I
 
@@ -778,8 +770,6 @@
 
 .method static synthetic access$102(Landroid/widget/RelativeLayout$LayoutParams;I)I
     .locals 0
-    .param p0    # Landroid/widget/RelativeLayout$LayoutParams;
-    .param p1    # I
 
     iput p1, p0, Landroid/widget/RelativeLayout$LayoutParams;->mLeft:I
 
@@ -788,8 +778,6 @@
 
 .method static synthetic access$112(Landroid/widget/RelativeLayout$LayoutParams;I)I
     .locals 1
-    .param p0    # Landroid/widget/RelativeLayout$LayoutParams;
-    .param p1    # I
 
     iget v0, p0, Landroid/widget/RelativeLayout$LayoutParams;->mLeft:I
 
@@ -802,8 +790,6 @@
 
 .method static synthetic access$120(Landroid/widget/RelativeLayout$LayoutParams;I)I
     .locals 1
-    .param p0    # Landroid/widget/RelativeLayout$LayoutParams;
-    .param p1    # I
 
     iget v0, p0, Landroid/widget/RelativeLayout$LayoutParams;->mLeft:I
 
@@ -816,7 +802,6 @@
 
 .method static synthetic access$200(Landroid/widget/RelativeLayout$LayoutParams;)I
     .locals 1
-    .param p0    # Landroid/widget/RelativeLayout$LayoutParams;
 
     iget v0, p0, Landroid/widget/RelativeLayout$LayoutParams;->mRight:I
 
@@ -825,8 +810,6 @@
 
 .method static synthetic access$202(Landroid/widget/RelativeLayout$LayoutParams;I)I
     .locals 0
-    .param p0    # Landroid/widget/RelativeLayout$LayoutParams;
-    .param p1    # I
 
     iput p1, p0, Landroid/widget/RelativeLayout$LayoutParams;->mRight:I
 
@@ -835,8 +818,6 @@
 
 .method static synthetic access$212(Landroid/widget/RelativeLayout$LayoutParams;I)I
     .locals 1
-    .param p0    # Landroid/widget/RelativeLayout$LayoutParams;
-    .param p1    # I
 
     iget v0, p0, Landroid/widget/RelativeLayout$LayoutParams;->mRight:I
 
@@ -849,8 +830,6 @@
 
 .method static synthetic access$220(Landroid/widget/RelativeLayout$LayoutParams;I)I
     .locals 1
-    .param p0    # Landroid/widget/RelativeLayout$LayoutParams;
-    .param p1    # I
 
     iget v0, p0, Landroid/widget/RelativeLayout$LayoutParams;->mRight:I
 
@@ -863,7 +842,6 @@
 
 .method static synthetic access$300(Landroid/widget/RelativeLayout$LayoutParams;)I
     .locals 1
-    .param p0    # Landroid/widget/RelativeLayout$LayoutParams;
 
     iget v0, p0, Landroid/widget/RelativeLayout$LayoutParams;->mBottom:I
 
@@ -872,8 +850,6 @@
 
 .method static synthetic access$302(Landroid/widget/RelativeLayout$LayoutParams;I)I
     .locals 0
-    .param p0    # Landroid/widget/RelativeLayout$LayoutParams;
-    .param p1    # I
 
     iput p1, p0, Landroid/widget/RelativeLayout$LayoutParams;->mBottom:I
 
@@ -882,8 +858,6 @@
 
 .method static synthetic access$312(Landroid/widget/RelativeLayout$LayoutParams;I)I
     .locals 1
-    .param p0    # Landroid/widget/RelativeLayout$LayoutParams;
-    .param p1    # I
 
     iget v0, p0, Landroid/widget/RelativeLayout$LayoutParams;->mBottom:I
 
@@ -896,7 +870,6 @@
 
 .method static synthetic access$400(Landroid/widget/RelativeLayout$LayoutParams;)I
     .locals 1
-    .param p0    # Landroid/widget/RelativeLayout$LayoutParams;
 
     iget v0, p0, Landroid/widget/RelativeLayout$LayoutParams;->mTop:I
 
@@ -905,8 +878,6 @@
 
 .method static synthetic access$402(Landroid/widget/RelativeLayout$LayoutParams;I)I
     .locals 0
-    .param p0    # Landroid/widget/RelativeLayout$LayoutParams;
-    .param p1    # I
 
     iput p1, p0, Landroid/widget/RelativeLayout$LayoutParams;->mTop:I
 
@@ -915,8 +886,6 @@
 
 .method static synthetic access$412(Landroid/widget/RelativeLayout$LayoutParams;I)I
     .locals 1
-    .param p0    # Landroid/widget/RelativeLayout$LayoutParams;
-    .param p1    # I
 
     iget v0, p0, Landroid/widget/RelativeLayout$LayoutParams;->mTop:I
 
@@ -929,7 +898,6 @@
 
 .method static synthetic access$700(Landroid/widget/RelativeLayout$LayoutParams;)[I
     .locals 1
-    .param p0    # Landroid/widget/RelativeLayout$LayoutParams;
 
     iget-object v0, p0, Landroid/widget/RelativeLayout$LayoutParams;->mRules:[I
 
@@ -1001,7 +969,6 @@
 
 .method private resolveRules(I)V
     .locals 10
-    .param p1    # I
 
     const/16 v9, 0x11
 
@@ -1550,7 +1517,6 @@
 # virtual methods
 .method public addRule(I)V
     .locals 2
-    .param p1    # I
 
     const/4 v1, -0x1
 
@@ -1571,8 +1537,6 @@
 
 .method public addRule(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Landroid/widget/RelativeLayout$LayoutParams;->mRules:[I
 
@@ -1591,7 +1555,6 @@
 
 .method public debug(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -1656,7 +1619,6 @@
 
 .method public getRules(I)[I
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0}, Landroid/widget/RelativeLayout$LayoutParams;->hasRelativeRules()Z
 
@@ -1693,7 +1655,6 @@
 
 .method public removeRule(I)V
     .locals 2
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -1714,7 +1675,6 @@
 
 .method public resolveLayoutDirection(I)V
     .locals 3
-    .param p1    # I
 
     const/high16 v2, -0x80000000
 

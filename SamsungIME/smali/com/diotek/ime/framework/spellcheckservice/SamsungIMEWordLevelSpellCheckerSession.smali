@@ -31,7 +31,6 @@
 # direct methods
 .method constructor <init>(Lcom/diotek/ime/framework/spellcheckservice/SamsungIMESpellCheckerService;)V
     .locals 6
-    .param p1    # Lcom/diotek/ime/framework/spellcheckservice/SamsungIMESpellCheckerService;
 
     const/4 v5, 0x1
 
@@ -92,7 +91,6 @@
 
 .method static synthetic access$000(Lcom/diotek/ime/framework/spellcheckservice/SamsungIMEWordLevelSpellCheckerSession;)V
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/spellcheckservice/SamsungIMEWordLevelSpellCheckerSession;
 
     invoke-direct {p0}, Lcom/diotek/ime/framework/spellcheckservice/SamsungIMEWordLevelSpellCheckerSession;->clearTypoListAndCache()V
 
@@ -125,7 +123,6 @@
 
 .method private isContainLanguageDB(Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x1
 
@@ -241,7 +238,6 @@
 
 .method private isContainTypoList(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/spellcheckservice/SamsungIMEWordLevelSpellCheckerSession;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -272,8 +268,6 @@
 
 .method public onGetSuggestions(Landroid/view/textservice/TextInfo;I)Landroid/view/textservice/SuggestionsInfo;
     .locals 1
-    .param p1    # Landroid/view/textservice/TextInfo;
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -286,9 +280,6 @@
 
 .method protected onGetSuggestions(Landroid/view/textservice/TextInfo;Ljava/lang/String;I)Landroid/view/textservice/SuggestionsInfo;
     .locals 7
-    .param p1    # Landroid/view/textservice/TextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     const-string v5, "SamsungIMEWordLevelSpellCheckerSession"
 

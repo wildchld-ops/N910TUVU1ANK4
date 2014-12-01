@@ -84,7 +84,6 @@
 
 .method synthetic constructor <init>(Landroid/widget/RelativeLayout$1;)V
     .locals 0
-    .param p1    # Landroid/widget/RelativeLayout$1;
 
     invoke-direct {p0}, Landroid/widget/RelativeLayout$DependencyGraph;-><init>()V
 
@@ -93,7 +92,6 @@
 
 .method static synthetic access$500(Landroid/widget/RelativeLayout$DependencyGraph;)Landroid/util/SparseArray;
     .locals 1
-    .param p0    # Landroid/widget/RelativeLayout$DependencyGraph;
 
     iget-object v0, p0, Landroid/widget/RelativeLayout$DependencyGraph;->mKeyNodes:Landroid/util/SparseArray;
 
@@ -102,7 +100,6 @@
 
 .method private findRoots([I)Ljava/util/ArrayDeque;
     .locals 13
-    .param p1    # [I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([I)",
@@ -253,7 +250,6 @@
 # virtual methods
 .method add(Landroid/view/View;)V
     .locals 3
-    .param p1    # Landroid/view/View;
 
     if-nez p1, :cond_0
 
@@ -327,8 +323,6 @@
 
 .method varargs getSortedViews([Landroid/view/View;[I)V
     .locals 13
-    .param p1    # [Landroid/view/View;
-    .param p2    # [I
 
     invoke-direct {p0, p2}, Landroid/widget/RelativeLayout$DependencyGraph;->findRoots([I)Ljava/util/ArrayDeque;
 

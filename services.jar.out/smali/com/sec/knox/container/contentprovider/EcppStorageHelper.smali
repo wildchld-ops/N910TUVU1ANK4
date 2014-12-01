@@ -30,8 +30,6 @@
 
 .method private constructor <init>(Landroid/content/Context;Landroid/database/DatabaseErrorHandler;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/database/DatabaseErrorHandler;
 
     const-string v2, "/data/system/container/databases/ecpp.enterprise.db"
 
@@ -54,9 +52,6 @@
 
 .method public static getCount(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Ljava/lang/String;)I
     .locals 7
-    .param p0    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -202,8 +197,6 @@
 
 .method static declared-synchronized getInstance(Landroid/content/Context;Landroid/database/DatabaseErrorHandler;)Lcom/sec/knox/container/contentprovider/EcppStorageHelper;
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/database/DatabaseErrorHandler;
 
     const-class v3, Lcom/sec/knox/container/contentprovider/EcppStorageHelper;
 
@@ -302,8 +295,6 @@
 
 .method private static isTableExists(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;)Z
     .locals 4
-    .param p0    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -376,8 +367,6 @@
 # virtual methods
 .method public dbExist(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 12
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v11, 0x0
 
@@ -451,8 +440,6 @@
 
 .method public delete(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -503,9 +490,6 @@
 
 .method public deleteDataByFields(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;)Z
     .locals 12
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # [Ljava/lang/String;
 
     const/4 v9, 0x0
 
@@ -622,10 +606,6 @@
 
 .method getDataByFields(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;)Ljava/util/ArrayList;
     .locals 21
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # [Ljava/lang/String;
-    .param p4    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -868,9 +848,6 @@
 
 .method insertOrUpdate(Ljava/lang/String;Landroid/content/ContentValues;Ljava/lang/String;)Z
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/ContentValues;
-    .param p3    # Ljava/lang/String;
 
     const-wide/16 v7, -0x1
 
@@ -1004,7 +981,6 @@
 
 .method public onCreate(Landroid/database/sqlite/SQLiteDatabase;)V
     .locals 4
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
 
     const-string v1, "EcppStorageHelper"
 
@@ -1206,9 +1182,6 @@
 
 .method public onDowngrade(Landroid/database/sqlite/SQLiteDatabase;II)V
     .locals 2
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p2    # I
-    .param p3    # I
 
     const-string v0, "EcppStorageHelper"
 
@@ -1221,9 +1194,6 @@
 
 .method public onUpgrade(Landroid/database/sqlite/SQLiteDatabase;II)V
     .locals 4
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p2    # I
-    .param p3    # I
 
     const-string v1, "EcppStorageHelper"
 
@@ -1578,8 +1548,6 @@
 
 .method public rawQuery(Ljava/lang/String;[Ljava/lang/String;)Landroid/database/Cursor;
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/String;
 
     invoke-static {}, Landroid/os/StrictMode;->getThreadPolicy()Landroid/os/StrictMode$ThreadPolicy;
 
@@ -1666,7 +1634,6 @@
 
 .method remove(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -1690,11 +1657,6 @@
 
 .method select(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
     .locals 11
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
 
     :try_start_0
     invoke-virtual {p0}, Landroid/database/sqlite/SQLiteOpenHelper;->getReadableDatabase()Landroid/database/sqlite/SQLiteDatabase;
@@ -1821,10 +1783,6 @@
 
 .method select(Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
     .locals 11
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     :try_start_0
     invoke-virtual {p0}, Landroid/database/sqlite/SQLiteOpenHelper;->getReadableDatabase()Landroid/database/sqlite/SQLiteDatabase;
@@ -1911,8 +1869,6 @@
 
 .method update(Ljava/lang/String;Landroid/content/ContentValues;Ljava/util/HashMap;)I
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/ContentValues;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

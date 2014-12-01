@@ -321,9 +321,6 @@
 
 .method constructor <init>(Landroid/content/Context;Lcom/android/server/StatusBarManagerService;Lcom/android/server/LightsService;)V
     .locals 20
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/server/StatusBarManagerService;
-    .param p3    # Lcom/android/server/LightsService;
 
     invoke-direct/range {p0 .. p0}, Landroid/app/INotificationManager$Stub;-><init>()V
 
@@ -1389,7 +1386,6 @@
 
 .method static synthetic access$000(Lcom/android/server/NotificationManagerService;)V
     .locals 0
-    .param p0    # Lcom/android/server/NotificationManagerService;
 
     invoke-direct {p0}, Lcom/android/server/NotificationManagerService;->updateSoundLocked()V
 
@@ -1398,7 +1394,6 @@
 
 .method static synthetic access$1000(Lcom/android/server/NotificationManagerService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/NotificationManagerService;
 
     iget-boolean v0, p0, Lcom/android/server/NotificationManagerService;->mIsPlaying:Z
 
@@ -1407,8 +1402,6 @@
 
 .method static synthetic access$1002(Lcom/android/server/NotificationManagerService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/NotificationManagerService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/NotificationManagerService;->mIsPlaying:Z
 
@@ -1417,7 +1410,6 @@
 
 .method static synthetic access$1100(Lcom/android/server/NotificationManagerService;)Landroid/os/SystemVibrator;
     .locals 1
-    .param p0    # Lcom/android/server/NotificationManagerService;
 
     iget-object v0, p0, Lcom/android/server/NotificationManagerService;->mVibrator:Landroid/os/SystemVibrator;
 
@@ -1426,7 +1418,6 @@
 
 .method static synthetic access$1200(Lcom/android/server/NotificationManagerService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/NotificationManagerService;
 
     iget-boolean v0, p0, Lcom/android/server/NotificationManagerService;->mSystemReady:Z
 
@@ -1435,7 +1426,6 @@
 
 .method static synthetic access$1300(Lcom/android/server/NotificationManagerService;)Landroid/app/AlarmManager;
     .locals 1
-    .param p0    # Lcom/android/server/NotificationManagerService;
 
     iget-object v0, p0, Lcom/android/server/NotificationManagerService;->notificationAlarmManager:Landroid/app/AlarmManager;
 
@@ -1444,7 +1434,6 @@
 
 .method static synthetic access$1400(Lcom/android/server/NotificationManagerService;)Landroid/app/PendingIntent;
     .locals 1
-    .param p0    # Lcom/android/server/NotificationManagerService;
 
     iget-object v0, p0, Lcom/android/server/NotificationManagerService;->notificationPendingIntent:Landroid/app/PendingIntent;
 
@@ -1453,7 +1442,6 @@
 
 .method static synthetic access$1500(Lcom/android/server/NotificationManagerService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/NotificationManagerService;
 
     iget-boolean v0, p0, Lcom/android/server/NotificationManagerService;->isNotificationAlarmOn:Z
 
@@ -1462,8 +1450,6 @@
 
 .method static synthetic access$1502(Lcom/android/server/NotificationManagerService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/NotificationManagerService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/NotificationManagerService;->isNotificationAlarmOn:Z
 
@@ -1472,14 +1458,6 @@
 
 .method static synthetic access$1600(Lcom/android/server/NotificationManagerService;Ljava/lang/String;Ljava/lang/String;IIIZI)V
     .locals 0
-    .param p0    # Lcom/android/server/NotificationManagerService;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Z
-    .param p7    # I
 
     invoke-direct/range {p0 .. p7}, Lcom/android/server/NotificationManagerService;->cancelNotification(Ljava/lang/String;Ljava/lang/String;IIIZI)V
 
@@ -1488,8 +1466,6 @@
 
 .method static synthetic access$1702(Lcom/android/server/NotificationManagerService;Lcom/android/server/NotificationManagerService$NotificationRecord;)Lcom/android/server/NotificationManagerService$NotificationRecord;
     .locals 0
-    .param p0    # Lcom/android/server/NotificationManagerService;
-    .param p1    # Lcom/android/server/NotificationManagerService$NotificationRecord;
 
     iput-object p1, p0, Lcom/android/server/NotificationManagerService;->mSoundNotification:Lcom/android/server/NotificationManagerService$NotificationRecord;
 
@@ -1498,8 +1474,6 @@
 
 .method static synthetic access$1802(Lcom/android/server/NotificationManagerService;Lcom/android/server/NotificationManagerService$NotificationRecord;)Lcom/android/server/NotificationManagerService$NotificationRecord;
     .locals 0
-    .param p0    # Lcom/android/server/NotificationManagerService;
-    .param p1    # Lcom/android/server/NotificationManagerService$NotificationRecord;
 
     iput-object p1, p0, Lcom/android/server/NotificationManagerService;->mVibrateNotification:Lcom/android/server/NotificationManagerService$NotificationRecord;
 
@@ -1508,7 +1482,6 @@
 
 .method static synthetic access$1900(Lcom/android/server/NotificationManagerService;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/server/NotificationManagerService;
 
     iget-object v0, p0, Lcom/android/server/NotificationManagerService;->mLights:Ljava/util/ArrayList;
 
@@ -1517,7 +1490,6 @@
 
 .method static synthetic access$200(Lcom/android/server/NotificationManagerService;)Ljava/util/HashSet;
     .locals 1
-    .param p0    # Lcom/android/server/NotificationManagerService;
 
     iget-object v0, p0, Lcom/android/server/NotificationManagerService;->mEnabledListenersForCurrentUser:Ljava/util/HashSet;
 
@@ -1526,7 +1498,6 @@
 
 .method static synthetic access$2000(Lcom/android/server/NotificationManagerService;)Lcom/android/server/NotificationManagerService$NotificationRecord;
     .locals 1
-    .param p0    # Lcom/android/server/NotificationManagerService;
 
     iget-object v0, p0, Lcom/android/server/NotificationManagerService;->mLedNotification:Lcom/android/server/NotificationManagerService$NotificationRecord;
 
@@ -1535,8 +1506,6 @@
 
 .method static synthetic access$2002(Lcom/android/server/NotificationManagerService;Lcom/android/server/NotificationManagerService$NotificationRecord;)Lcom/android/server/NotificationManagerService$NotificationRecord;
     .locals 0
-    .param p0    # Lcom/android/server/NotificationManagerService;
-    .param p1    # Lcom/android/server/NotificationManagerService$NotificationRecord;
 
     iput-object p1, p0, Lcom/android/server/NotificationManagerService;->mLedNotification:Lcom/android/server/NotificationManagerService$NotificationRecord;
 
@@ -1545,7 +1514,6 @@
 
 .method static synthetic access$2100(Lcom/android/server/NotificationManagerService;)V
     .locals 0
-    .param p0    # Lcom/android/server/NotificationManagerService;
 
     invoke-direct {p0}, Lcom/android/server/NotificationManagerService;->updateLightsLocked()V
 
@@ -1554,7 +1522,6 @@
 
 .method static synthetic access$2200(Lcom/android/server/NotificationManagerService;)Ljava/util/HashSet;
     .locals 1
-    .param p0    # Lcom/android/server/NotificationManagerService;
 
     iget-object v0, p0, Lcom/android/server/NotificationManagerService;->mEnabledListenerPackageNames:Ljava/util/HashSet;
 
@@ -1563,8 +1530,6 @@
 
 .method static synthetic access$2302(Lcom/android/server/NotificationManagerService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/NotificationManagerService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/NotificationManagerService;->mScreenOn:Z
 
@@ -1573,7 +1538,6 @@
 
 .method static synthetic access$2500(Lcom/android/server/NotificationManagerService;)Ljava/lang/reflect/Method;
     .locals 1
-    .param p0    # Lcom/android/server/NotificationManagerService;
 
     iget-object v0, p0, Lcom/android/server/NotificationManagerService;->mMethodRingtonePlayer:Ljava/lang/reflect/Method;
 
@@ -1582,7 +1546,6 @@
 
 .method static synthetic access$2600(Lcom/android/server/NotificationManagerService;)V
     .locals 0
-    .param p0    # Lcom/android/server/NotificationManagerService;
 
     invoke-direct {p0}, Lcom/android/server/NotificationManagerService;->updateNotificationPulse()V
 
@@ -1591,7 +1554,6 @@
 
 .method static synthetic access$2800(Lcom/android/server/NotificationManagerService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/NotificationManagerService;
 
     iget-boolean v0, p0, Lcom/android/server/NotificationManagerService;->mInCall:Z
 
@@ -1600,8 +1562,6 @@
 
 .method static synthetic access$2802(Lcom/android/server/NotificationManagerService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/NotificationManagerService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/NotificationManagerService;->mInCall:Z
 
@@ -1610,7 +1570,6 @@
 
 .method static synthetic access$2900(Lcom/android/server/NotificationManagerService;)Lcom/android/server/LightsService$Light;
     .locals 1
-    .param p0    # Lcom/android/server/NotificationManagerService;
 
     iget-object v0, p0, Lcom/android/server/NotificationManagerService;->mNotificationLight:Lcom/android/server/LightsService$Light;
 
@@ -1619,7 +1578,6 @@
 
 .method static synthetic access$300(Lcom/android/server/NotificationManagerService;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/server/NotificationManagerService;
 
     iget-object v0, p0, Lcom/android/server/NotificationManagerService;->mNotificationList:Ljava/util/ArrayList;
 
@@ -1628,8 +1586,6 @@
 
 .method static synthetic access$3000(Lcom/android/server/NotificationManagerService;Z)V
     .locals 0
-    .param p0    # Lcom/android/server/NotificationManagerService;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/NotificationManagerService;->setLEDCoverState(Z)V
 
@@ -1638,7 +1594,6 @@
 
 .method static synthetic access$3100(Lcom/android/server/NotificationManagerService;)Lcom/android/server/NotificationManagerService$SettingsObserver;
     .locals 1
-    .param p0    # Lcom/android/server/NotificationManagerService;
 
     iget-object v0, p0, Lcom/android/server/NotificationManagerService;->mSettingsObserver:Lcom/android/server/NotificationManagerService$SettingsObserver;
 
@@ -1647,8 +1602,6 @@
 
 .method static synthetic access$3202(Lcom/android/server/NotificationManagerService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/NotificationManagerService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/NotificationManagerService;->isDormantModeOn:Z
 
@@ -1657,8 +1610,6 @@
 
 .method static synthetic access$3302(Lcom/android/server/NotificationManagerService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/NotificationManagerService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/NotificationManagerService;->isDormantModeLedDisabled:Z
 
@@ -1667,7 +1618,6 @@
 
 .method static synthetic access$3400(Lcom/android/server/NotificationManagerService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/NotificationManagerService;
 
     iget-boolean v0, p0, Lcom/android/server/NotificationManagerService;->mNotificationPulseEnabled:Z
 
@@ -1676,8 +1626,6 @@
 
 .method static synthetic access$3402(Lcom/android/server/NotificationManagerService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/NotificationManagerService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/NotificationManagerService;->mNotificationPulseEnabled:Z
 
@@ -1686,7 +1634,6 @@
 
 .method static synthetic access$3500(Lcom/android/server/NotificationManagerService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/NotificationManagerService;
 
     iget-boolean v0, p0, Lcom/android/server/NotificationManagerService;->mMissedNotificationLightEnabled:Z
 
@@ -1695,8 +1642,6 @@
 
 .method static synthetic access$3502(Lcom/android/server/NotificationManagerService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/NotificationManagerService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/NotificationManagerService;->mMissedNotificationLightEnabled:Z
 
@@ -1705,7 +1650,6 @@
 
 .method static synthetic access$3600(Lcom/android/server/NotificationManagerService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/NotificationManagerService;
 
     iget-boolean v0, p0, Lcom/android/server/NotificationManagerService;->mMissedNotificationReminderLightEnabled:Z
 
@@ -1714,8 +1658,6 @@
 
 .method static synthetic access$3602(Lcom/android/server/NotificationManagerService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/NotificationManagerService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/NotificationManagerService;->mMissedNotificationReminderLightEnabled:Z
 
@@ -1724,7 +1666,6 @@
 
 .method static synthetic access$3700(Lcom/android/server/NotificationManagerService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/NotificationManagerService;
 
     iget-boolean v0, p0, Lcom/android/server/NotificationManagerService;->mMissedSoundEnabled:Z
 
@@ -1733,8 +1674,6 @@
 
 .method static synthetic access$3702(Lcom/android/server/NotificationManagerService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/NotificationManagerService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/NotificationManagerService;->mMissedSoundEnabled:Z
 
@@ -1743,7 +1682,6 @@
 
 .method static synthetic access$3800(Lcom/android/server/NotificationManagerService;)V
     .locals 0
-    .param p0    # Lcom/android/server/NotificationManagerService;
 
     invoke-direct {p0}, Lcom/android/server/NotificationManagerService;->sendMsg()V
 
@@ -1752,7 +1690,6 @@
 
 .method static synthetic access$400(Lcom/android/server/NotificationManagerService;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/server/NotificationManagerService;
 
     iget-object v0, p0, Lcom/android/server/NotificationManagerService;->mServicesBinding:Ljava/util/ArrayList;
 
@@ -1761,8 +1698,6 @@
 
 .method static synthetic access$4000(Lcom/android/server/NotificationManagerService;Lcom/android/server/NotificationManagerService$ToastRecord;)V
     .locals 0
-    .param p0    # Lcom/android/server/NotificationManagerService;
-    .param p1    # Lcom/android/server/NotificationManagerService$ToastRecord;
 
     invoke-direct {p0, p1}, Lcom/android/server/NotificationManagerService;->handleTimeout(Lcom/android/server/NotificationManagerService$ToastRecord;)V
 
@@ -1771,9 +1706,6 @@
 
 .method static synthetic access$4100(III)I
     .locals 1
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
 
     invoke-static {p0, p1, p2}, Lcom/android/server/NotificationManagerService;->clamp(III)I
 
@@ -1784,7 +1716,6 @@
 
 .method static synthetic access$4200(Lcom/android/server/NotificationManagerService;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/server/NotificationManagerService;
 
     iget-object v0, p0, Lcom/android/server/NotificationManagerService;->mScorers:Ljava/util/ArrayList;
 
@@ -1793,9 +1724,6 @@
 
 .method static synthetic access$4300(Lcom/android/server/NotificationManagerService;Ljava/lang/String;I)Z
     .locals 1
-    .param p0    # Lcom/android/server/NotificationManagerService;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/NotificationManagerService;->noteNotificationOp(Ljava/lang/String;I)Z
 
@@ -1806,11 +1734,6 @@
 
 .method static synthetic access$4400(Lcom/android/server/NotificationManagerService;Ljava/lang/String;Ljava/lang/String;II)I
     .locals 1
-    .param p0    # Lcom/android/server/NotificationManagerService;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/server/NotificationManagerService;->indexOfNotificationLocked(Ljava/lang/String;Ljava/lang/String;II)I
 
@@ -1821,8 +1744,6 @@
 
 .method static synthetic access$4500(Lcom/android/server/NotificationManagerService;Ljava/util/ArrayList;)Z
     .locals 1
-    .param p0    # Lcom/android/server/NotificationManagerService;
-    .param p1    # Ljava/util/ArrayList;
 
     invoke-direct {p0, p1}, Lcom/android/server/NotificationManagerService;->hasClearableItems(Ljava/util/ArrayList;)Z
 
@@ -1833,7 +1754,6 @@
 
 .method static synthetic access$4600(Lcom/android/server/NotificationManagerService;)Lcom/android/server/StatusBarManagerService;
     .locals 1
-    .param p0    # Lcom/android/server/NotificationManagerService;
 
     iget-object v0, p0, Lcom/android/server/NotificationManagerService;->mStatusBar:Lcom/android/server/StatusBarManagerService;
 
@@ -1842,9 +1762,6 @@
 
 .method static synthetic access$4700(Lcom/android/server/NotificationManagerService;Landroid/app/Notification;Ljava/lang/CharSequence;)V
     .locals 0
-    .param p0    # Lcom/android/server/NotificationManagerService;
-    .param p1    # Landroid/app/Notification;
-    .param p2    # Ljava/lang/CharSequence;
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/NotificationManagerService;->sendAccessibilityEvent(Landroid/app/Notification;Ljava/lang/CharSequence;)V
 
@@ -1853,8 +1770,6 @@
 
 .method static synthetic access$4800(Lcom/android/server/NotificationManagerService;Lcom/android/server/NotificationManagerService$NotificationRecord;)V
     .locals 0
-    .param p0    # Lcom/android/server/NotificationManagerService;
-    .param p1    # Lcom/android/server/NotificationManagerService$NotificationRecord;
 
     invoke-direct {p0, p1}, Lcom/android/server/NotificationManagerService;->notifyPostedLocked(Lcom/android/server/NotificationManagerService$NotificationRecord;)V
 
@@ -1863,8 +1778,6 @@
 
 .method static synthetic access$4900(Lcom/android/server/NotificationManagerService;Lcom/android/server/NotificationManagerService$NotificationRecord;)V
     .locals 0
-    .param p0    # Lcom/android/server/NotificationManagerService;
-    .param p1    # Lcom/android/server/NotificationManagerService$NotificationRecord;
 
     invoke-direct {p0, p1}, Lcom/android/server/NotificationManagerService;->notifyRemovedLocked(Lcom/android/server/NotificationManagerService$NotificationRecord;)V
 
@@ -1873,7 +1786,6 @@
 
 .method static synthetic access$500(Lcom/android/server/NotificationManagerService;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/server/NotificationManagerService;
 
     iget-object v0, p0, Lcom/android/server/NotificationManagerService;->mListeners:Ljava/util/ArrayList;
 
@@ -1882,7 +1794,6 @@
 
 .method static synthetic access$5000(Lcom/android/server/NotificationManagerService;)Landroid/os/IBinder;
     .locals 1
-    .param p0    # Lcom/android/server/NotificationManagerService;
 
     iget-object v0, p0, Lcom/android/server/NotificationManagerService;->mNotificationPlayerBinder:Landroid/os/IBinder;
 
@@ -1891,8 +1802,6 @@
 
 .method static synthetic access$5002(Lcom/android/server/NotificationManagerService;Landroid/os/IBinder;)Landroid/os/IBinder;
     .locals 0
-    .param p0    # Lcom/android/server/NotificationManagerService;
-    .param p1    # Landroid/os/IBinder;
 
     iput-object p1, p0, Lcom/android/server/NotificationManagerService;->mNotificationPlayerBinder:Landroid/os/IBinder;
 
@@ -1901,8 +1810,6 @@
 
 .method static synthetic access$5100(Lcom/android/server/NotificationManagerService;I)Z
     .locals 1
-    .param p0    # Lcom/android/server/NotificationManagerService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/NotificationManagerService;->doesItUseHaptic(I)Z
 
@@ -1913,10 +1820,6 @@
 
 .method static synthetic access$5200(Lcom/android/server/NotificationManagerService;ZZLandroid/app/Notification;)V
     .locals 0
-    .param p0    # Lcom/android/server/NotificationManagerService;
-    .param p1    # Z
-    .param p2    # Z
-    .param p3    # Landroid/app/Notification;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/server/NotificationManagerService;->doVibrate(ZZLandroid/app/Notification;)V
 
@@ -1925,10 +1828,6 @@
 
 .method static synthetic access$5300(Lcom/android/server/NotificationManagerService;Lcom/android/server/NotificationManagerService$NotificationRecord;ZI)V
     .locals 0
-    .param p0    # Lcom/android/server/NotificationManagerService;
-    .param p1    # Lcom/android/server/NotificationManagerService$NotificationRecord;
-    .param p2    # Z
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/server/NotificationManagerService;->cancelNotificationLocked(Lcom/android/server/NotificationManagerService$NotificationRecord;ZI)V
 
@@ -1937,7 +1836,6 @@
 
 .method static synthetic access$5400(Lcom/android/server/NotificationManagerService;)Landroid/os/PowerManager$WakeLock;
     .locals 1
-    .param p0    # Lcom/android/server/NotificationManagerService;
 
     iget-object v0, p0, Lcom/android/server/NotificationManagerService;->mWakeLock:Landroid/os/PowerManager$WakeLock;
 
@@ -1946,7 +1844,6 @@
 
 .method static synthetic access$5600(Lcom/android/server/NotificationManagerService;)Landroid/content/Intent;
     .locals 1
-    .param p0    # Lcom/android/server/NotificationManagerService;
 
     iget-object v0, p0, Lcom/android/server/NotificationManagerService;->mPlckupIntent:Landroid/content/Intent;
 
@@ -1955,8 +1852,6 @@
 
 .method static synthetic access$5602(Lcom/android/server/NotificationManagerService;Landroid/content/Intent;)Landroid/content/Intent;
     .locals 0
-    .param p0    # Lcom/android/server/NotificationManagerService;
-    .param p1    # Landroid/content/Intent;
 
     iput-object p1, p0, Lcom/android/server/NotificationManagerService;->mPlckupIntent:Landroid/content/Intent;
 
@@ -1965,7 +1860,6 @@
 
 .method static synthetic access$5700(Lcom/android/server/NotificationManagerService;)Lcom/android/server/NotificationManagerService$WorkerHandler;
     .locals 1
-    .param p0    # Lcom/android/server/NotificationManagerService;
 
     iget-object v0, p0, Lcom/android/server/NotificationManagerService;->mHandler:Lcom/android/server/NotificationManagerService$WorkerHandler;
 
@@ -1974,9 +1868,6 @@
 
 .method static synthetic access$600(Landroid/content/Context;Ljava/lang/String;I)Ljava/lang/String;
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-static {p0, p1, p2}, Lcom/android/server/NotificationManagerService;->idDebugString(Landroid/content/Context;Ljava/lang/String;I)Ljava/lang/String;
 
@@ -1987,7 +1878,6 @@
 
 .method static synthetic access$700(Lcom/android/server/NotificationManagerService;)I
     .locals 1
-    .param p0    # Lcom/android/server/NotificationManagerService;
 
     iget v0, p0, Lcom/android/server/NotificationManagerService;->mDisabledNotifications:I
 
@@ -1996,8 +1886,6 @@
 
 .method static synthetic access$702(Lcom/android/server/NotificationManagerService;I)I
     .locals 0
-    .param p0    # Lcom/android/server/NotificationManagerService;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/NotificationManagerService;->mDisabledNotifications:I
 
@@ -2006,7 +1894,6 @@
 
 .method static synthetic access$800(Lcom/android/server/NotificationManagerService;)Landroid/media/IAudioService;
     .locals 1
-    .param p0    # Lcom/android/server/NotificationManagerService;
 
     iget-object v0, p0, Lcom/android/server/NotificationManagerService;->mAudioService:Landroid/media/IAudioService;
 
@@ -2015,7 +1902,6 @@
 
 .method static synthetic access$900(Lcom/android/server/NotificationManagerService;)Lcom/android/server/NotificationManagerService$OverTurnPlayer;
     .locals 1
-    .param p0    # Lcom/android/server/NotificationManagerService;
 
     iget-object v0, p0, Lcom/android/server/NotificationManagerService;->mOverTurnPlayer:Lcom/android/server/NotificationManagerService$OverTurnPlayer;
 
@@ -2024,13 +1910,6 @@
 
 .method private cancelNotification(Ljava/lang/String;Ljava/lang/String;IIIZI)V
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Z
-    .param p7    # I
 
     iget-object v9, p0, Lcom/android/server/NotificationManagerService;->mHandler:Lcom/android/server/NotificationManagerService$WorkerHandler;
 
@@ -2061,9 +1940,6 @@
 
 .method private cancelNotificationLocked(Lcom/android/server/NotificationManagerService$NotificationRecord;ZI)V
     .locals 11
-    .param p1    # Lcom/android/server/NotificationManagerService$NotificationRecord;
-    .param p2    # Z
-    .param p3    # I
 
     const/4 v10, 0x0
 
@@ -2421,7 +2297,6 @@
 
 .method private cancelToastLocked(I)V
     .locals 5
-    .param p1    # I
 
     iget-object v2, p0, Lcom/android/server/NotificationManagerService;->mToastQueue:Ljava/util/ArrayList;
 
@@ -2504,7 +2379,6 @@
 
 .method private checkListenerToken(Landroid/service/notification/INotificationListener;)Lcom/android/server/NotificationManagerService$NotificationListenerInfo;
     .locals 7
-    .param p1    # Landroid/service/notification/INotificationListener;
 
     invoke-interface {p1}, Landroid/service/notification/INotificationListener;->asBinder()Landroid/os/IBinder;
 
@@ -2572,9 +2446,6 @@
 
 .method private static final clamp(III)I
     .locals 0
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
 
     if-ge p0, p1, :cond_0
 
@@ -2596,9 +2467,6 @@
 
 .method private doVibrate(ZZLandroid/app/Notification;)V
     .locals 8
-    .param p1    # Z
-    .param p2    # Z
-    .param p3    # Landroid/app/Notification;
 
     if-eqz p1, :cond_0
 
@@ -2682,7 +2550,6 @@
 
 .method private doesItUseHaptic(I)Z
     .locals 1
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -2712,10 +2579,6 @@
 
 .method static getLongArray(Landroid/content/res/Resources;II[J)[J
     .locals 6
-    .param p0    # Landroid/content/res/Resources;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [J
 
     invoke-virtual {p0, p1}, Landroid/content/res/Resources;->getIntArray(I)[I
 
@@ -2764,7 +2627,6 @@
 
 .method private handleTimeout(Lcom/android/server/NotificationManagerService$ToastRecord;)V
     .locals 4
-    .param p1    # Lcom/android/server/NotificationManagerService$ToastRecord;
 
     iget-object v2, p0, Lcom/android/server/NotificationManagerService;->mToastQueue:Ljava/util/ArrayList;
 
@@ -2888,9 +2750,6 @@
 
 .method private static idDebugString(Landroid/content/Context;Ljava/lang/String;I)Ljava/lang/String;
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -3015,10 +2874,6 @@
 
 .method private indexOfNotificationLocked(Ljava/lang/String;Ljava/lang/String;II)I
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
 
     iget-object v2, p0, Lcom/android/server/NotificationManagerService;->mNotificationList:Ljava/util/ArrayList;
 
@@ -3107,8 +2962,6 @@
 
 .method private indexOfToastLocked(Ljava/lang/String;Landroid/app/ITransientNotification;)I
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/app/ITransientNotification;
 
     invoke-interface {p2}, Landroid/app/ITransientNotification;->asBinder()Landroid/os/IBinder;
 
@@ -3163,7 +3016,6 @@
 
 .method public static isPrayModeEnabled(Landroid/content/Context;)Z
     .locals 5
-    .param p0    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -3205,7 +3057,6 @@
 
 .method private keepProcessAliveLocked(I)V
     .locals 9
-    .param p1    # I
 
     const/4 v5, 0x1
 
@@ -3527,8 +3378,6 @@
 
 .method private noteNotificationOp(Ljava/lang/String;I)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/server/NotificationManagerService;->mAppOps:Landroid/app/AppOpsManager;
 
@@ -3575,8 +3424,6 @@
 
 .method private notificationMatchesUserId(Lcom/android/server/NotificationManagerService$NotificationRecord;I)Z
     .locals 2
-    .param p1    # Lcom/android/server/NotificationManagerService$NotificationRecord;
-    .param p2    # I
 
     const/4 v1, -0x1
 
@@ -3608,7 +3455,6 @@
 
 .method private notifyPostedLocked(Lcom/android/server/NotificationManagerService$NotificationRecord;)V
     .locals 5
-    .param p1    # Lcom/android/server/NotificationManagerService$NotificationRecord;
 
     iget-object v3, p1, Lcom/android/server/NotificationManagerService$NotificationRecord;->sbn:Landroid/service/notification/StatusBarNotification;
 
@@ -3651,7 +3497,6 @@
 
 .method private notifyRemovedLocked(Lcom/android/server/NotificationManagerService$NotificationRecord;)V
     .locals 5
-    .param p1    # Lcom/android/server/NotificationManagerService$NotificationRecord;
 
     iget-object v3, p1, Lcom/android/server/NotificationManagerService$NotificationRecord;->sbn:Landroid/service/notification/StatusBarNotification;
 
@@ -3694,8 +3539,6 @@
 
 .method private registerListenerService(Landroid/content/ComponentName;I)V
     .locals 12
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # I
 
     invoke-virtual {p0}, Lcom/android/server/NotificationManagerService;->checkCallerIsSystem()V
 
@@ -3937,7 +3780,6 @@
 
 .method private scheduleTimeoutLocked(Lcom/android/server/NotificationManagerService$ToastRecord;)V
     .locals 5
-    .param p1    # Lcom/android/server/NotificationManagerService$ToastRecord;
 
     const/4 v4, 0x2
 
@@ -3983,8 +3825,6 @@
 
 .method private sendAccessibilityEvent(Landroid/app/Notification;Ljava/lang/CharSequence;)V
     .locals 4
-    .param p1    # Landroid/app/Notification;
-    .param p2    # Ljava/lang/CharSequence;
 
     iget-object v3, p0, Lcom/android/server/NotificationManagerService;->mContext:Landroid/content/Context;
 
@@ -4150,7 +3990,6 @@
 
 .method private setLEDCoverState(Z)V
     .locals 7
-    .param p1    # Z
 
     const/16 v6, 0x12
 
@@ -4314,8 +4153,6 @@
 
 .method private unregisterListenerService(Landroid/content/ComponentName;I)V
     .locals 8
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # I
 
     invoke-virtual {p0}, Lcom/android/server/NotificationManagerService;->checkCallerIsSystem()V
 
@@ -4928,8 +4765,6 @@
 # virtual methods
 .method public areNotificationsEnabledForPackage(Ljava/lang/String;I)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-virtual {p0}, Lcom/android/server/NotificationManagerService;->checkCallerIsSystem()V
 
@@ -4956,7 +4791,6 @@
 
 .method cancelAll(I)V
     .locals 8
-    .param p1    # I
 
     iget-object v6, p0, Lcom/android/server/NotificationManagerService;->mNotificationList:Ljava/util/ArrayList;
 
@@ -5121,8 +4955,6 @@
 
 .method public cancelAllNotifications(Ljava/lang/String;I)V
     .locals 11
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v3, 0x1
 
@@ -5167,7 +4999,6 @@
 
 .method public cancelAllNotificationsFromListener(Landroid/service/notification/INotificationListener;)V
     .locals 4
-    .param p1    # Landroid/service/notification/INotificationListener;
 
     invoke-direct {p0, p1}, Lcom/android/server/NotificationManagerService;->checkListenerToken(Landroid/service/notification/INotificationListener;)Lcom/android/server/NotificationManagerService$NotificationListenerInfo;
 
@@ -5198,11 +5029,6 @@
 
 .method cancelAllNotificationsInt(Ljava/lang/String;IIZI)Z
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Z
-    .param p5    # I
 
     const/4 v5, 0x1
 
@@ -5402,10 +5228,6 @@
 
 .method public cancelNotificationFromListener(Landroid/service/notification/INotificationListener;Ljava/lang/String;Ljava/lang/String;I)V
     .locals 11
-    .param p1    # Landroid/service/notification/INotificationListener;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/NotificationManagerService;->checkListenerToken(Landroid/service/notification/INotificationListener;)Lcom/android/server/NotificationManagerService$NotificationListenerInfo;
 
@@ -5450,10 +5272,6 @@
 
 .method public cancelNotificationWithTag(Ljava/lang/String;Ljava/lang/String;II)V
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
 
     const/4 v4, 0x0
 
@@ -5514,8 +5332,6 @@
 
 .method public cancelToast(Ljava/lang/String;Landroid/app/ITransientNotification;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/app/ITransientNotification;
 
     const-string v3, "NotificationService"
 
@@ -5721,7 +5537,6 @@
 
 .method checkCallerIsSystemOrSameApp(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Lcom/android/server/NotificationManagerService;->isCallerSystem()Z
 
@@ -5848,7 +5663,6 @@
 
 .method public clearAllNotificationsAsUser(I)V
     .locals 0
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/server/NotificationManagerService;->checkCallerIsSystem()V
 
@@ -6088,9 +5902,6 @@
 
 .method protected dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 10
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     iget-object v6, p0, Lcom/android/server/NotificationManagerService;->mContext:Landroid/content/Context;
 
@@ -6688,15 +6499,6 @@
 
 .method public enqueueNotificationInternal(Ljava/lang/String;Ljava/lang/String;IILjava/lang/String;ILandroid/app/Notification;[II)V
     .locals 19
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Ljava/lang/String;
-    .param p6    # I
-    .param p7    # Landroid/app/Notification;
-    .param p8    # [I
-    .param p9    # I
 
     invoke-virtual/range {p0 .. p1}, Lcom/android/server/NotificationManagerService;->checkCallerIsSystemOrSameApp(Ljava/lang/String;)V
 
@@ -7145,13 +6947,6 @@
 
 .method public enqueueNotificationWithTag(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILandroid/app/Notification;[II)V
     .locals 16
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
-    .param p5    # Landroid/app/Notification;
-    .param p6    # [I
-    .param p7    # I
 
     :try_start_0
     invoke-static {}, Landroid/sec/enterprise/EnterpriseDeviceManager;->getInstance()Landroid/sec/enterprise/EnterpriseDeviceManager;
@@ -7387,9 +7182,6 @@
 
 .method public enqueueToast(Ljava/lang/String;Landroid/app/ITransientNotification;I)V
     .locals 17
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/app/ITransientNotification;
-    .param p3    # I
 
     if-eqz p1, :cond_0
 
@@ -7716,7 +7508,6 @@
 
 .method public getActiveNotifications(Ljava/lang/String;)[Landroid/service/notification/StatusBarNotification;
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     iget-object v4, p0, Lcom/android/server/NotificationManagerService;->mContext:Landroid/content/Context;
 
@@ -7800,7 +7591,6 @@
 
 .method public getActiveNotificationsFromListener(Landroid/service/notification/INotificationListener;)[Landroid/service/notification/StatusBarNotification;
     .locals 8
-    .param p1    # Landroid/service/notification/INotificationListener;
 
     invoke-direct {p0, p1}, Lcom/android/server/NotificationManagerService;->checkListenerToken(Landroid/service/notification/INotificationListener;)Lcom/android/server/NotificationManagerService$NotificationListenerInfo;
 
@@ -7879,8 +7669,6 @@
 
 .method public getHistoricalNotifications(Ljava/lang/String;I)[Landroid/service/notification/StatusBarNotification;
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     iget-object v2, p0, Lcom/android/server/NotificationManagerService;->mContext:Landroid/content/Context;
 
@@ -7934,8 +7722,6 @@
 
 .method public getNotificationInfo(Ljava/lang/String;I)Landroid/app/NotificationInfo;
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     iget-object v3, p0, Lcom/android/server/NotificationManagerService;->mNotificationList:Ljava/util/ArrayList;
 
@@ -8047,7 +7833,6 @@
 
 .method isUidSystem(I)Z
     .locals 2
-    .param p1    # I
 
     invoke-static {p1}, Landroid/os/UserHandle;->getAppId(I)I
 
@@ -8360,9 +8145,6 @@
 
 .method public registerListener(Landroid/service/notification/INotificationListener;Landroid/content/ComponentName;I)V
     .locals 7
-    .param p1    # Landroid/service/notification/INotificationListener;
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # I
 
     invoke-virtual {p0}, Lcom/android/server/NotificationManagerService;->checkCallerIsSystem()V
 
@@ -8423,8 +8205,6 @@
 
 .method removeListenerImpl(Landroid/service/notification/INotificationListener;I)Lcom/android/server/NotificationManagerService$NotificationListenerInfo;
     .locals 8
-    .param p1    # Landroid/service/notification/INotificationListener;
-    .param p2    # I
 
     const/4 v4, 0x0
 
@@ -8502,9 +8282,6 @@
 
 .method public setNotificationsEnabledForPackage(Ljava/lang/String;IZ)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Z
 
     const/4 v4, 0x1
 
@@ -8679,8 +8456,6 @@
 
 .method public unregisterListener(Landroid/service/notification/INotificationListener;I)V
     .locals 3
-    .param p1    # Landroid/service/notification/INotificationListener;
-    .param p2    # I
 
     if-nez p1, :cond_1
 

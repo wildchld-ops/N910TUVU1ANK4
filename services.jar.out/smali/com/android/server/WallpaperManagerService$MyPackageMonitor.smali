@@ -33,8 +33,6 @@
 # virtual methods
 .method doPackagesChangedLocked(ZLcom/android/server/WallpaperManagerService$WallpaperData;)Z
     .locals 10
-    .param p1    # Z
-    .param p2    # Lcom/android/server/WallpaperManagerService$WallpaperData;
 
     const/4 v9, 0x3
 
@@ -239,10 +237,6 @@
 
 .method public onHandleForceStop(Landroid/content/Intent;[Ljava/lang/String;IZ)Z
     .locals 6
-    .param p1    # Landroid/content/Intent;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Z
 
     iget-object v3, p0, Lcom/android/server/WallpaperManagerService$MyPackageMonitor;->this$0:Lcom/android/server/WallpaperManagerService;
 
@@ -312,7 +306,6 @@
 
 .method public onPackageModified(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/server/WallpaperManagerService$MyPackageMonitor;->this$0:Lcom/android/server/WallpaperManagerService;
 
@@ -399,8 +392,6 @@
 
 .method public onPackageUpdateFinished(Ljava/lang/String;I)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/server/WallpaperManagerService$MyPackageMonitor;->this$0:Lcom/android/server/WallpaperManagerService;
 
@@ -514,8 +505,6 @@
 
 .method public onPackageUpdateStarted(Ljava/lang/String;I)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     iget-object v1, p0, Lcom/android/server/WallpaperManagerService$MyPackageMonitor;->this$0:Lcom/android/server/WallpaperManagerService;
 

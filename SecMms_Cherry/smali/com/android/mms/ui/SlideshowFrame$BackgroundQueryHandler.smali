@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/mms/ui/SlideshowFrame;Landroid/content/ContentResolver;)V
     .locals 0
-    .param p2    # Landroid/content/ContentResolver;
 
     iput-object p1, p0, Lcom/android/mms/ui/SlideshowFrame$BackgroundQueryHandler;->this$0:Lcom/android/mms/ui/SlideshowFrame;
 
@@ -34,9 +33,6 @@
 # virtual methods
 .method protected onDeleteComplete(ILjava/lang/Object;I)V
     .locals 2
-    .param p1    # I
-    .param p2    # Ljava/lang/Object;
-    .param p3    # I
 
     packed-switch p1, :pswitch_data_0
 

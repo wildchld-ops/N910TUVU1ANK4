@@ -12,7 +12,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -176,7 +175,6 @@
 
 .method public loadFrame(Landroid/graphics/Bitmap;)I
     .locals 1
-    .param p1    # Landroid/graphics/Bitmap;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -194,7 +192,6 @@
 
 .method public setCurrentFrame(I)I
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/server/power/LibQmg;->ensureQmgHandle()V
 

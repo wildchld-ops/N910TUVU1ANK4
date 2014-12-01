@@ -36,8 +36,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;J)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -52,7 +50,6 @@
 # virtual methods
 .method public compareTo(Lcom/android/server/enterprise/adapterlayer/PackageManagerAdapter$AppInfoTask;)I
     .locals 4
-    .param p1    # Lcom/android/server/enterprise/adapterlayer/PackageManagerAdapter$AppInfoTask;
 
     iget-wide v0, p0, Lcom/android/server/enterprise/adapterlayer/PackageManagerAdapter$AppInfoTask;->mUsage:J
 
@@ -89,7 +86,6 @@
 
 .method public bridge synthetic compareTo(Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/android/server/enterprise/adapterlayer/PackageManagerAdapter$AppInfoTask;
 

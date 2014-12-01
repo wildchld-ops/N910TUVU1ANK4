@@ -225,7 +225,6 @@
 
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -246,9 +245,6 @@
 
 .method static synthetic access$000(Ljava/lang/String;Ljava/lang/CharSequence;[Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # [Ljava/lang/String;
 
     invoke-static {p0, p1, p2}, Landroid/content/pm/PackageParser;->buildClassName(Ljava/lang/String;Ljava/lang/CharSequence;[Ljava/lang/String;)Ljava/lang/String;
 
@@ -259,12 +255,6 @@
 
 .method static synthetic access$100(Ljava/lang/String;Ljava/lang/String;Ljava/lang/CharSequence;I[Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/CharSequence;
-    .param p3    # I
-    .param p4    # [Ljava/lang/String;
-    .param p5    # [Ljava/lang/String;
 
     invoke-static/range {p0 .. p5}, Landroid/content/pm/PackageParser;->buildProcessName(Ljava/lang/String;Ljava/lang/String;Ljava/lang/CharSequence;I[Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;
 
@@ -275,9 +265,6 @@
 
 .method private static buildClassName(Ljava/lang/String;Ljava/lang/CharSequence;[Ljava/lang/String;)Ljava/lang/String;
     .locals 7
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # [Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -426,10 +413,6 @@
 
 .method private static buildCompoundName(Ljava/lang/String;Ljava/lang/CharSequence;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;
     .locals 9
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Ljava/lang/String;
-    .param p3    # [Ljava/lang/String;
 
     const/4 v8, 0x1
 
@@ -671,12 +654,6 @@
 
 .method private static buildProcessName(Ljava/lang/String;Ljava/lang/String;Ljava/lang/CharSequence;I[Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/CharSequence;
-    .param p3    # I
-    .param p4    # [Ljava/lang/String;
-    .param p5    # [Ljava/lang/String;
 
     and-int/lit8 v2, p3, 0x8
 
@@ -761,10 +738,6 @@
 
 .method private static buildTaskAffinityName(Ljava/lang/String;Ljava/lang/String;Ljava/lang/CharSequence;[Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/CharSequence;
-    .param p3    # [Ljava/lang/String;
 
     if-nez p2, :cond_0
 
@@ -794,8 +767,6 @@
 
 .method private static checkUseInstalledOrBlocked(ILandroid/content/pm/PackageUserState;)Z
     .locals 2
-    .param p0    # I
-    .param p1    # Landroid/content/pm/PackageUserState;
 
     iget-boolean v1, p1, Landroid/content/pm/PackageUserState;->installed:Z
 
@@ -824,11 +795,6 @@
 
 .method private static copyNeeded(ILandroid/content/pm/PackageParser$Package;Landroid/content/pm/PackageUserState;Landroid/os/Bundle;I)Z
     .locals 4
-    .param p0    # I
-    .param p1    # Landroid/content/pm/PackageParser$Package;
-    .param p2    # Landroid/content/pm/PackageUserState;
-    .param p3    # Landroid/os/Bundle;
-    .param p4    # I
 
     const/4 v2, 0x0
 
@@ -903,10 +869,6 @@
 
 .method public static final generateActivityInfo(Landroid/content/pm/PackageParser$Activity;ILandroid/content/pm/PackageUserState;I)Landroid/content/pm/ActivityInfo;
     .locals 3
-    .param p0    # Landroid/content/pm/PackageParser$Activity;
-    .param p1    # I
-    .param p2    # Landroid/content/pm/PackageUserState;
-    .param p3    # I
 
     const/4 v0, 0x0
 
@@ -961,9 +923,6 @@
 
 .method public static generateApplicationInfo(Landroid/content/pm/PackageParser$Package;ILandroid/content/pm/PackageUserState;)Landroid/content/pm/ApplicationInfo;
     .locals 1
-    .param p0    # Landroid/content/pm/PackageParser$Package;
-    .param p1    # I
-    .param p2    # Landroid/content/pm/PackageUserState;
 
     invoke-static {}, Landroid/os/UserHandle;->getCallingUserId()I
 
@@ -978,10 +937,6 @@
 
 .method public static generateApplicationInfo(Landroid/content/pm/PackageParser$Package;ILandroid/content/pm/PackageUserState;I)Landroid/content/pm/ApplicationInfo;
     .locals 5
-    .param p0    # Landroid/content/pm/PackageParser$Package;
-    .param p1    # I
-    .param p2    # Landroid/content/pm/PackageUserState;
-    .param p3    # I
 
     const/4 v0, 0x0
 
@@ -1124,8 +1079,6 @@
 
 .method public static final generateInstrumentationInfo(Landroid/content/pm/PackageParser$Instrumentation;I)Landroid/content/pm/InstrumentationInfo;
     .locals 2
-    .param p0    # Landroid/content/pm/PackageParser$Instrumentation;
-    .param p1    # I
 
     if-nez p0, :cond_0
 
@@ -1159,12 +1112,6 @@
 
 .method public static generatePackageInfo(Landroid/content/pm/PackageParser$Package;[IIJJLjava/util/HashSet;Landroid/content/pm/PackageUserState;)Landroid/content/pm/PackageInfo;
     .locals 10
-    .param p0    # Landroid/content/pm/PackageParser$Package;
-    .param p1    # [I
-    .param p2    # I
-    .param p3    # J
-    .param p5    # J
-    .param p8    # Landroid/content/pm/PackageUserState;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1207,13 +1154,6 @@
 
 .method public static generatePackageInfo(Landroid/content/pm/PackageParser$Package;[IIJJLjava/util/HashSet;Landroid/content/pm/PackageUserState;I)Landroid/content/pm/PackageInfo;
     .locals 18
-    .param p0    # Landroid/content/pm/PackageParser$Package;
-    .param p1    # [I
-    .param p2    # I
-    .param p3    # J
-    .param p5    # J
-    .param p8    # Landroid/content/pm/PackageUserState;
-    .param p9    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2218,8 +2158,6 @@
 
 .method public static final generatePermissionGroupInfo(Landroid/content/pm/PackageParser$PermissionGroup;I)Landroid/content/pm/PermissionGroupInfo;
     .locals 2
-    .param p0    # Landroid/content/pm/PackageParser$PermissionGroup;
-    .param p1    # I
 
     if-nez p0, :cond_0
 
@@ -2253,8 +2191,6 @@
 
 .method public static final generatePermissionInfo(Landroid/content/pm/PackageParser$Permission;I)Landroid/content/pm/PermissionInfo;
     .locals 2
-    .param p0    # Landroid/content/pm/PackageParser$Permission;
-    .param p1    # I
 
     if-nez p0, :cond_0
 
@@ -2288,10 +2224,6 @@
 
 .method public static final generateProviderInfo(Landroid/content/pm/PackageParser$Provider;ILandroid/content/pm/PackageUserState;I)Landroid/content/pm/ProviderInfo;
     .locals 4
-    .param p0    # Landroid/content/pm/PackageParser$Provider;
-    .param p1    # I
-    .param p2    # Landroid/content/pm/PackageUserState;
-    .param p3    # I
 
     const/4 v1, 0x0
 
@@ -2370,10 +2302,6 @@
 
 .method public static final generateServiceInfo(Landroid/content/pm/PackageParser$Service;ILandroid/content/pm/PackageUserState;I)Landroid/content/pm/ServiceInfo;
     .locals 3
-    .param p0    # Landroid/content/pm/PackageParser$Service;
-    .param p1    # I
-    .param p2    # Landroid/content/pm/PackageUserState;
-    .param p3    # I
 
     const/4 v0, 0x0
 
@@ -2428,8 +2356,6 @@
 
 .method public static getHashValueOfPackage(Ljava/io/File;Ljava/lang/StringBuilder;)V
     .locals 11
-    .param p0    # Ljava/io/File;
-    .param p1    # Ljava/lang/StringBuilder;
 
     const/4 v3, 0x0
 
@@ -2855,7 +2781,6 @@
 
 .method public static isAvailable(Landroid/content/pm/PackageUserState;)Z
     .locals 1
-    .param p0    # Landroid/content/pm/PackageUserState;
 
     const/4 v0, 0x0
 
@@ -2868,7 +2793,6 @@
 
 .method private static final isPackageFilename(Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, ".apk"
 
@@ -2881,9 +2805,6 @@
 
 .method private loadCertificates(Ljava/util/jar/JarFile;Ljava/util/jar/JarEntry;[B)[Ljava/security/cert/Certificate;
     .locals 6
-    .param p1    # Ljava/util/jar/JarFile;
-    .param p2    # Ljava/util/jar/JarEntry;
-    .param p3    # [B
 
     const/4 v2, 0x0
 
@@ -3013,14 +2934,6 @@
 
 .method private parseActivity(Landroid/content/pm/PackageParser$Package;Landroid/content/res/Resources;Lorg/xmlpull/v1/XmlPullParser;Landroid/util/AttributeSet;I[Ljava/lang/String;ZZ)Landroid/content/pm/PackageParser$Activity;
     .locals 22
-    .param p1    # Landroid/content/pm/PackageParser$Package;
-    .param p2    # Landroid/content/res/Resources;
-    .param p3    # Lorg/xmlpull/v1/XmlPullParser;
-    .param p4    # Landroid/util/AttributeSet;
-    .param p5    # I
-    .param p6    # [Ljava/lang/String;
-    .param p7    # Z
-    .param p8    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -4332,12 +4245,6 @@
 
 .method private parseActivityAlias(Landroid/content/pm/PackageParser$Package;Landroid/content/res/Resources;Lorg/xmlpull/v1/XmlPullParser;Landroid/util/AttributeSet;I[Ljava/lang/String;)Landroid/content/pm/PackageParser$Activity;
     .locals 28
-    .param p1    # Landroid/content/pm/PackageParser$Package;
-    .param p2    # Landroid/content/res/Resources;
-    .param p3    # Lorg/xmlpull/v1/XmlPullParser;
-    .param p4    # Landroid/util/AttributeSet;
-    .param p5    # I
-    .param p6    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -5167,12 +5074,6 @@
 
 .method private parseAllMetaData(Landroid/content/res/Resources;Lorg/xmlpull/v1/XmlPullParser;Landroid/util/AttributeSet;Ljava/lang/String;Landroid/content/pm/PackageParser$Component;[Ljava/lang/String;)Z
     .locals 8
-    .param p1    # Landroid/content/res/Resources;
-    .param p2    # Lorg/xmlpull/v1/XmlPullParser;
-    .param p3    # Landroid/util/AttributeSet;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Landroid/content/pm/PackageParser$Component;
-    .param p6    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -5325,12 +5226,6 @@
 
 .method private parseApplication(Landroid/content/pm/PackageParser$Package;Landroid/content/res/Resources;Lorg/xmlpull/v1/XmlPullParser;Landroid/util/AttributeSet;I[Ljava/lang/String;)Z
     .locals 43
-    .param p1    # Landroid/content/pm/PackageParser$Package;
-    .param p2    # Landroid/content/res/Resources;
-    .param p3    # Lorg/xmlpull/v1/XmlPullParser;
-    .param p4    # Landroid/util/AttributeSet;
-    .param p5    # I
-    .param p6    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -6744,11 +6639,6 @@
 
 .method private parseInstrumentation(Landroid/content/pm/PackageParser$Package;Landroid/content/res/Resources;Lorg/xmlpull/v1/XmlPullParser;Landroid/util/AttributeSet;[Ljava/lang/String;)Landroid/content/pm/PackageParser$Instrumentation;
     .locals 9
-    .param p1    # Landroid/content/pm/PackageParser$Package;
-    .param p2    # Landroid/content/res/Resources;
-    .param p3    # Lorg/xmlpull/v1/XmlPullParser;
-    .param p4    # Landroid/util/AttributeSet;
-    .param p5    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -6928,12 +6818,6 @@
 
 .method private parseIntent(Landroid/content/res/Resources;Lorg/xmlpull/v1/XmlPullParser;Landroid/util/AttributeSet;ZLandroid/content/pm/PackageParser$IntentInfo;[Ljava/lang/String;)Z
     .locals 16
-    .param p1    # Landroid/content/res/Resources;
-    .param p2    # Lorg/xmlpull/v1/XmlPullParser;
-    .param p3    # Landroid/util/AttributeSet;
-    .param p4    # Z
-    .param p5    # Landroid/content/pm/PackageParser$IntentInfo;
-    .param p6    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -7446,11 +7330,6 @@
 
 .method private parseKeys(Landroid/content/pm/PackageParser$Package;Landroid/content/res/Resources;Lorg/xmlpull/v1/XmlPullParser;Landroid/util/AttributeSet;[Ljava/lang/String;)Z
     .locals 22
-    .param p1    # Landroid/content/pm/PackageParser$Package;
-    .param p2    # Landroid/content/res/Resources;
-    .param p3    # Lorg/xmlpull/v1/XmlPullParser;
-    .param p4    # Landroid/util/AttributeSet;
-    .param p5    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -7878,11 +7757,6 @@
 
 .method private parseMetaData(Landroid/content/res/Resources;Lorg/xmlpull/v1/XmlPullParser;Landroid/util/AttributeSet;Landroid/os/Bundle;[Ljava/lang/String;)Landroid/os/Bundle;
     .locals 9
-    .param p1    # Landroid/content/res/Resources;
-    .param p2    # Lorg/xmlpull/v1/XmlPullParser;
-    .param p3    # Landroid/util/AttributeSet;
-    .param p4    # Landroid/os/Bundle;
-    .param p5    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -8110,10 +7984,6 @@
 
 .method private parsePackage(Landroid/content/res/Resources;Landroid/content/res/XmlResourceParser;I[Ljava/lang/String;)Landroid/content/pm/PackageParser$Package;
     .locals 49
-    .param p1    # Landroid/content/res/Resources;
-    .param p2    # Landroid/content/res/XmlResourceParser;
-    .param p3    # I
-    .param p4    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -10351,15 +10221,6 @@
 
 .method private parsePackageItemInfo(Landroid/content/pm/PackageParser$Package;Landroid/content/pm/PackageItemInfo;[Ljava/lang/String;Ljava/lang/String;Landroid/content/res/TypedArray;IIII)Z
     .locals 8
-    .param p1    # Landroid/content/pm/PackageParser$Package;
-    .param p2    # Landroid/content/pm/PackageItemInfo;
-    .param p3    # [Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Landroid/content/res/TypedArray;
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
-    .param p9    # I
 
     const/4 v5, 0x0
 
@@ -10476,11 +10337,6 @@
 
 .method private static parsePackageLite(Landroid/content/res/Resources;Lorg/xmlpull/v1/XmlPullParser;Landroid/util/AttributeSet;I[Ljava/lang/String;)Landroid/content/pm/PackageParser$PackageLite;
     .locals 15
-    .param p0    # Landroid/content/res/Resources;
-    .param p1    # Lorg/xmlpull/v1/XmlPullParser;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
-    .param p4    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -10777,8 +10633,6 @@
 
 .method public static parsePackageLite(Ljava/lang/String;I)Landroid/content/pm/PackageParser$PackageLite;
     .locals 32
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
 
     const/16 v23, 0x0
 
@@ -11053,10 +10907,6 @@
 
 .method private static parsePackageName(Lorg/xmlpull/v1/XmlPullParser;Landroid/util/AttributeSet;I[Ljava/lang/String;)Ljava/lang/String;
     .locals 8
-    .param p0    # Lorg/xmlpull/v1/XmlPullParser;
-    .param p1    # Landroid/util/AttributeSet;
-    .param p2    # I
-    .param p3    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -11189,11 +11039,6 @@
 
 .method private parsePermission(Landroid/content/pm/PackageParser$Package;Landroid/content/res/Resources;Lorg/xmlpull/v1/XmlPullParser;Landroid/util/AttributeSet;[Ljava/lang/String;)Landroid/content/pm/PackageParser$Permission;
     .locals 15
-    .param p1    # Landroid/content/pm/PackageParser$Package;
-    .param p2    # Landroid/content/res/Resources;
-    .param p3    # Lorg/xmlpull/v1/XmlPullParser;
-    .param p4    # Landroid/util/AttributeSet;
-    .param p5    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -11426,12 +11271,6 @@
 
 .method private parsePermissionGroup(Landroid/content/pm/PackageParser$Package;ILandroid/content/res/Resources;Lorg/xmlpull/v1/XmlPullParser;Landroid/util/AttributeSet;[Ljava/lang/String;)Landroid/content/pm/PackageParser$PermissionGroup;
     .locals 15
-    .param p1    # Landroid/content/pm/PackageParser$Package;
-    .param p2    # I
-    .param p3    # Landroid/content/res/Resources;
-    .param p4    # Lorg/xmlpull/v1/XmlPullParser;
-    .param p5    # Landroid/util/AttributeSet;
-    .param p6    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -11584,11 +11423,6 @@
 
 .method private parsePermissionTree(Landroid/content/pm/PackageParser$Package;Landroid/content/res/Resources;Lorg/xmlpull/v1/XmlPullParser;Landroid/util/AttributeSet;[Ljava/lang/String;)Landroid/content/pm/PackageParser$Permission;
     .locals 16
-    .param p1    # Landroid/content/pm/PackageParser$Package;
-    .param p2    # Landroid/content/res/Resources;
-    .param p3    # Lorg/xmlpull/v1/XmlPullParser;
-    .param p4    # Landroid/util/AttributeSet;
-    .param p5    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -11772,12 +11606,6 @@
 
 .method private parseProvider(Landroid/content/pm/PackageParser$Package;Landroid/content/res/Resources;Lorg/xmlpull/v1/XmlPullParser;Landroid/util/AttributeSet;I[Ljava/lang/String;)Landroid/content/pm/PackageParser$Provider;
     .locals 18
-    .param p1    # Landroid/content/pm/PackageParser$Package;
-    .param p2    # Landroid/content/res/Resources;
-    .param p3    # Lorg/xmlpull/v1/XmlPullParser;
-    .param p4    # Landroid/util/AttributeSet;
-    .param p5    # I
-    .param p6    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -12268,11 +12096,6 @@
 
 .method private parseProviderTags(Landroid/content/res/Resources;Lorg/xmlpull/v1/XmlPullParser;Landroid/util/AttributeSet;Landroid/content/pm/PackageParser$Provider;[Ljava/lang/String;)Z
     .locals 28
-    .param p1    # Landroid/content/res/Resources;
-    .param p2    # Lorg/xmlpull/v1/XmlPullParser;
-    .param p3    # Landroid/util/AttributeSet;
-    .param p4    # Landroid/content/pm/PackageParser$Provider;
-    .param p5    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -13092,7 +12915,6 @@
 
 .method public static final parsePublicKey(Ljava/lang/String;)Ljava/security/PublicKey;
     .locals 7
-    .param p0    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -13186,12 +13008,6 @@
 
 .method private parseService(Landroid/content/pm/PackageParser$Package;Landroid/content/res/Resources;Lorg/xmlpull/v1/XmlPullParser;Landroid/util/AttributeSet;I[Ljava/lang/String;)Landroid/content/pm/PackageParser$Service;
     .locals 20
-    .param p1    # Landroid/content/pm/PackageParser$Package;
-    .param p2    # Landroid/content/res/Resources;
-    .param p3    # Lorg/xmlpull/v1/XmlPullParser;
-    .param p4    # Landroid/util/AttributeSet;
-    .param p5    # I
-    .param p6    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -13755,11 +13571,6 @@
 
 .method private parseUsesPermission(Landroid/content/pm/PackageParser$Package;Landroid/content/res/Resources;Landroid/content/res/XmlResourceParser;Landroid/util/AttributeSet;[Ljava/lang/String;)Z
     .locals 10
-    .param p1    # Landroid/content/pm/PackageParser$Package;
-    .param p2    # Landroid/content/res/Resources;
-    .param p3    # Landroid/content/res/XmlResourceParser;
-    .param p4    # Landroid/util/AttributeSet;
-    .param p5    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -13887,11 +13698,6 @@
 
 .method private static parseVerifier(Landroid/content/res/Resources;Lorg/xmlpull/v1/XmlPullParser;Landroid/util/AttributeSet;I[Ljava/lang/String;)Landroid/content/pm/VerifierInfo;
     .locals 8
-    .param p0    # Landroid/content/res/Resources;
-    .param p1    # Lorg/xmlpull/v1/XmlPullParser;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
-    .param p4    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -13987,7 +13793,6 @@
 
 .method public static setCompatibilityModeEnabled(Z)V
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Landroid/content/pm/PackageParser;->sCompatibilityModeEnabled:Z
 
@@ -13996,7 +13801,6 @@
 
 .method public static stringToSignature(Ljava/lang/String;)Landroid/content/pm/Signature;
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
@@ -14031,9 +13835,6 @@
 
 .method private static updateApplicationInfo(Landroid/content/pm/ApplicationInfo;ILandroid/content/pm/PackageUserState;)V
     .locals 4
-    .param p0    # Landroid/content/pm/ApplicationInfo;
-    .param p1    # I
-    .param p2    # Landroid/content/pm/PackageUserState;
 
     const/4 v1, 0x0
 
@@ -14152,8 +13953,6 @@
 
 .method private static validateName(Ljava/lang/String;Z)Ljava/lang/String;
     .locals 7
-    .param p0    # Ljava/lang/String;
-    .param p1    # Z
 
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
@@ -14273,8 +14072,6 @@
 # virtual methods
 .method public collectCertificates(Landroid/content/pm/PackageParser$Package;I)Z
     .locals 21
-    .param p1    # Landroid/content/pm/PackageParser$Package;
-    .param p2    # I
 
     const/16 v17, 0x0
 
@@ -15208,7 +15005,6 @@
 
 .method public collectManifestDigest(Landroid/content/pm/PackageParser$Package;)Z
     .locals 4
-    .param p1    # Landroid/content/pm/PackageParser$Package;
 
     :try_start_0
     new-instance v1, Ljava/util/jar/JarFile;
@@ -15276,10 +15072,6 @@
 
 .method public parsePackage(Ljava/io/File;Ljava/lang/String;Landroid/util/DisplayMetrics;I)Landroid/content/pm/PackageParser$Package;
     .locals 33
-    .param p1    # Ljava/io/File;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/util/DisplayMetrics;
-    .param p4    # I
 
     const/4 v6, 0x1
 
@@ -15758,7 +15550,6 @@
 
 .method public setOnlyCoreApps(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/content/pm/PackageParser;->mOnlyCoreApps:Z
 
@@ -15767,7 +15558,6 @@
 
 .method public setSeparateProcesses([Ljava/lang/String;)V
     .locals 0
-    .param p1    # [Ljava/lang/String;
 
     iput-object p1, p0, Landroid/content/pm/PackageParser;->mSeparateProcesses:[Ljava/lang/String;
 

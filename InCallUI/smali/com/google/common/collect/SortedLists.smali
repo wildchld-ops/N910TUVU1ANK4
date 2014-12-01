@@ -24,8 +24,6 @@
 
 .method public static binarySearch(Ljava/util/List;Ljava/lang/Object;Ljava/util/Comparator;Lcom/google/common/collect/SortedLists$KeyPresentBehavior;Lcom/google/common/collect/SortedLists$KeyAbsentBehavior;)I
     .locals 6
-    .param p3    # Lcom/google/common/collect/SortedLists$KeyPresentBehavior;
-    .param p4    # Lcom/google/common/collect/SortedLists$KeyAbsentBehavior;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",

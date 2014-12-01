@@ -114,7 +114,6 @@
 
 .method public static getConsonants(Ljava/lang/String;)Ljava/lang/String;
     .locals 9
-    .param p0    # Ljava/lang/String;
 
     const v8, 0xac00
 
@@ -201,7 +200,6 @@
 
 .method public static haveKoreanConsonants(Ljava/lang/String;)Z
     .locals 6
-    .param p0    # Ljava/lang/String;
 
     const/16 v5, 0x3131
 
@@ -285,7 +283,6 @@
 
 .method public static isIncludingKorean(Ljava/lang/String;)Z
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     const/4 v2, 0x0
 

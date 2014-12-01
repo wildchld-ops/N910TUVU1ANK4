@@ -15,7 +15,6 @@
 # direct methods
 .method public constructor <init>(I)V
     .locals 0
-    .param p1    # I
 
     invoke-direct {p0}, Landroid/text/style/MetricAffectingSpan;-><init>()V
 
@@ -26,8 +25,6 @@
 
 .method public constructor <init>(IZ)V
     .locals 0
-    .param p1    # I
-    .param p2    # Z
 
     invoke-direct {p0}, Landroid/text/style/MetricAffectingSpan;-><init>()V
 
@@ -40,7 +37,6 @@
 
 .method public constructor <init>(Landroid/os/Parcel;)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Landroid/text/style/MetricAffectingSpan;-><init>()V
 
@@ -105,7 +101,6 @@
 
 .method public updateDrawState(Landroid/text/TextPaint;)V
     .locals 2
-    .param p1    # Landroid/text/TextPaint;
 
     iget-boolean v0, p0, Landroid/text/style/AbsoluteSizeSpan;->mDip:Z
 
@@ -136,7 +131,6 @@
 
 .method public updateMeasureState(Landroid/text/TextPaint;)V
     .locals 2
-    .param p1    # Landroid/text/TextPaint;
 
     iget-boolean v0, p0, Landroid/text/style/AbsoluteSizeSpan;->mDip:Z
 
@@ -167,8 +161,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget v0, p0, Landroid/text/style/AbsoluteSizeSpan;->mSize:I
 

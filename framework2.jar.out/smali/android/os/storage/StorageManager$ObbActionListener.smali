@@ -48,8 +48,6 @@
 
 .method synthetic constructor <init>(Landroid/os/storage/StorageManager;Landroid/os/storage/StorageManager$1;)V
     .locals 0
-    .param p1    # Landroid/os/storage/StorageManager;
-    .param p2    # Landroid/os/storage/StorageManager$1;
 
     invoke-direct {p0, p1}, Landroid/os/storage/StorageManager$ObbActionListener;-><init>(Landroid/os/storage/StorageManager;)V
 
@@ -60,7 +58,6 @@
 # virtual methods
 .method public addListener(Landroid/os/storage/OnObbStateChangeListener;)I
     .locals 4
-    .param p1    # Landroid/os/storage/OnObbStateChangeListener;
 
     new-instance v0, Landroid/os/storage/StorageManager$ObbListenerDelegate;
 
@@ -106,9 +103,6 @@
 
 .method public onObbResult(Ljava/lang/String;II)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     iget-object v2, p0, Landroid/os/storage/StorageManager$ObbActionListener;->mListeners:Landroid/util/SparseArray;
 

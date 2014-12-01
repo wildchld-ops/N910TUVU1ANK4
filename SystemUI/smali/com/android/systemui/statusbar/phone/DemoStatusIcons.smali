@@ -17,8 +17,6 @@
 # direct methods
 .method public constructor <init>(Landroid/widget/LinearLayout;I)V
     .locals 2
-    .param p1    # Landroid/widget/LinearLayout;
-    .param p2    # I
 
     invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
 
@@ -71,9 +69,6 @@
 
 .method private updateSlot(Ljava/lang/String;Ljava/lang/String;I)V
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     const/4 v4, 0x0
 
@@ -191,8 +186,6 @@
 # virtual methods
 .method public dispatchDemoCommand(Ljava/lang/String;Landroid/os/Bundle;)V
     .locals 12
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Bundle;
 
     iget-boolean v10, p0, Lcom/android/systemui/statusbar/phone/DemoStatusIcons;->mDemoMode:Z
 

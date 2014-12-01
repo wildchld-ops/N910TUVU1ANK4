@@ -25,7 +25,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 8
-    .param p1    # Landroid/content/Context;
 
     const/4 v3, 0x0
 
@@ -78,8 +77,6 @@
 
 .method static synthetic access$000(Lcom/android/systemui/statusbar/policy/quicksetting/BluetoothQuickSettingButton;I)I
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/policy/quicksetting/BluetoothQuickSettingButton;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/systemui/statusbar/policy/quicksetting/BluetoothQuickSettingButton;->handleStateChanged(I)I
 
@@ -90,7 +87,6 @@
 
 .method private handleStateChanged(I)I
     .locals 1
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -127,7 +123,6 @@
 
 .method private isBlocked(Landroid/os/IDeviceManager3LM;)Z
     .locals 1
-    .param p1    # Landroid/os/IDeviceManager3LM;
 
     const/4 v0, 0x0
 
@@ -193,7 +188,6 @@
 
 .method public onClick(Z)V
     .locals 3
-    .param p1    # Z
 
     const/4 v2, 0x1
 

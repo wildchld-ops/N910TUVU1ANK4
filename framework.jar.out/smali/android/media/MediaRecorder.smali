@@ -183,7 +183,6 @@
 
 .method static synthetic access$000(Landroid/media/MediaRecorder;)I
     .locals 1
-    .param p0    # Landroid/media/MediaRecorder;
 
     iget v0, p0, Landroid/media/MediaRecorder;->mNativeContext:I
 
@@ -192,7 +191,6 @@
 
 .method static synthetic access$100(Landroid/media/MediaRecorder;)Landroid/media/MediaRecorder$OnErrorListener;
     .locals 1
-    .param p0    # Landroid/media/MediaRecorder;
 
     iget-object v0, p0, Landroid/media/MediaRecorder;->mOnErrorListener:Landroid/media/MediaRecorder$OnErrorListener;
 
@@ -201,7 +199,6 @@
 
 .method static synthetic access$200(Landroid/media/MediaRecorder;)Landroid/media/MediaRecorder$OnInfoListener;
     .locals 1
-    .param p0    # Landroid/media/MediaRecorder;
 
     iget-object v0, p0, Landroid/media/MediaRecorder;->mOnInfoListener:Landroid/media/MediaRecorder$OnInfoListener;
 
@@ -441,11 +438,6 @@
 
 .method private static postEventFromNative(Ljava/lang/Object;IIILjava/lang/Object;)V
     .locals 4
-    .param p0    # Ljava/lang/Object;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/Object;
 
     const/4 v3, 0x1
 
@@ -775,7 +767,6 @@
 
 .method public setAudioChannels(I)V
     .locals 2
-    .param p1    # I
 
     if-gtz p1, :cond_0
 
@@ -821,7 +812,6 @@
 
 .method public setAudioEncodingBitRate(I)V
     .locals 2
-    .param p1    # I
 
     if-gtz p1, :cond_0
 
@@ -859,7 +849,6 @@
 
 .method public setAudioSamplingRate(I)V
     .locals 2
-    .param p1    # I
 
     if-gtz p1, :cond_0
 
@@ -897,7 +886,6 @@
 
 .method public setAudioSource(I)V
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;
@@ -932,7 +920,6 @@
 
 .method public setAuxiliaryOutputFile(Ljava/io/FileDescriptor;)V
     .locals 2
-    .param p1    # Ljava/io/FileDescriptor;
 
     const-string v0, "MediaRecorder"
 
@@ -945,7 +932,6 @@
 
 .method public setAuxiliaryOutputFile(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "MediaRecorder"
 
@@ -961,7 +947,6 @@
 
 .method public setCaptureRate(D)V
     .locals 5
-    .param p1    # D
 
     const-string v3, "time-lapse-enable=1"
 
@@ -1002,8 +987,6 @@
 
 .method public setLocation(FF)V
     .locals 8
-    .param p1    # F
-    .param p2    # F
 
     const v7, 0x461c4000
 
@@ -1166,7 +1149,6 @@
 
 .method public setOnErrorListener(Landroid/media/MediaRecorder$OnErrorListener;)V
     .locals 0
-    .param p1    # Landroid/media/MediaRecorder$OnErrorListener;
 
     iput-object p1, p0, Landroid/media/MediaRecorder;->mOnErrorListener:Landroid/media/MediaRecorder$OnErrorListener;
 
@@ -1175,7 +1157,6 @@
 
 .method public setOnInfoListener(Landroid/media/MediaRecorder$OnInfoListener;)V
     .locals 0
-    .param p1    # Landroid/media/MediaRecorder$OnInfoListener;
 
     iput-object p1, p0, Landroid/media/MediaRecorder;->mOnInfoListener:Landroid/media/MediaRecorder$OnInfoListener;
 
@@ -1184,7 +1165,6 @@
 
 .method public setOrientationHint(I)V
     .locals 3
-    .param p1    # I
 
     if-eqz p1, :cond_0
 
@@ -1250,7 +1230,6 @@
 
 .method public setOutputFile(Ljava/io/FileDescriptor;)V
     .locals 1
-    .param p1    # Ljava/io/FileDescriptor;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;
@@ -1268,7 +1247,6 @@
 
 .method public setOutputFile(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;
@@ -1294,7 +1272,6 @@
 
 .method public setPreviewDisplay(Landroid/view/Surface;)V
     .locals 0
-    .param p1    # Landroid/view/Surface;
 
     iput-object p1, p0, Landroid/media/MediaRecorder;->mSurface:Landroid/view/Surface;
 
@@ -1303,7 +1280,6 @@
 
 .method public setProfile(Landroid/media/CamcorderProfile;)V
     .locals 2
-    .param p1    # Landroid/media/CamcorderProfile;
 
     iget v0, p1, Landroid/media/CamcorderProfile;->fileFormat:I
 
@@ -1372,7 +1348,6 @@
 
 .method public setVideoEncodingBitRate(I)V
     .locals 2
-    .param p1    # I
 
     if-gtz p1, :cond_0
 
@@ -1426,7 +1401,6 @@
 
 .method public setVideoSource(I)V
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;

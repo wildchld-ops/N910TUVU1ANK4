@@ -27,9 +27,6 @@
 # direct methods
 .method public constructor <init>(Lcom/diotek/ime/framework/common/InputManagerImpl;Ljava/lang/String;IZ)V
     .locals 0
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Z
 
     iput-object p1, p0, Lcom/diotek/ime/framework/common/InputManagerImpl$Xt9LearningContents;->this$0:Lcom/diotek/ime/framework/common/InputManagerImpl;
 

@@ -18,8 +18,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/preference/CheckBoxPreference;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/preference/CheckBoxPreference;
 
     invoke-direct {p0}, Lcom/android/settings/location/LocationSettingsBase;-><init>()V
 
@@ -46,7 +44,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/powersavingmode/PowerSavingLocationEnabler;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/settings/powersavingmode/PowerSavingLocationEnabler;
 
     iget-object v0, p0, Lcom/android/settings/powersavingmode/PowerSavingLocationEnabler;->mContext:Landroid/content/Context;
 
@@ -55,7 +52,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/powersavingmode/PowerSavingLocationEnabler;)Landroid/preference/CheckBoxPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/powersavingmode/PowerSavingLocationEnabler;
 
     iget-object v0, p0, Lcom/android/settings/powersavingmode/PowerSavingLocationEnabler;->mCheckPref:Landroid/preference/CheckBoxPreference;
 
@@ -91,8 +87,6 @@
 
 .method public onModeChanged(IZ)V
     .locals 0
-    .param p1    # I
-    .param p2    # Z
 
     return-void
 .end method
@@ -242,7 +236,6 @@
 
 .method public setLocationMode(I)V
     .locals 3
-    .param p1    # I
 
     new-instance v0, Landroid/content/Intent;
 

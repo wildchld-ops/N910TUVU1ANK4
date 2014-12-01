@@ -41,7 +41,6 @@
 # virtual methods
 .method public addProcess(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/am/ApplicationState;->mProcessIds:Ljava/util/HashSet;
 
@@ -68,8 +67,6 @@
 
 .method public removeProcess(II)Z
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget v0, p0, Lcom/android/server/am/ApplicationState;->mStopReason:I
 

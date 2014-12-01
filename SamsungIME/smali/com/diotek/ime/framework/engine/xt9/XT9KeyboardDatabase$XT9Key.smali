@@ -47,14 +47,6 @@
 # direct methods
 .method constructor <init>(IIIIIILjava/lang/CharSequence;Z)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # Ljava/lang/CharSequence;
-    .param p8    # Z
 
     const/4 v5, 0x1
 
@@ -175,13 +167,6 @@
 
 .method constructor <init>(Ljava/util/List;IIIIILjava/lang/CharSequence;Z)V
     .locals 5
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # Ljava/lang/CharSequence;
-    .param p8    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -372,14 +357,6 @@
 
 .method constructor <init>([IIIIIILjava/lang/CharSequence;Z)V
     .locals 7
-    .param p1    # [I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # Ljava/lang/CharSequence;
-    .param p8    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

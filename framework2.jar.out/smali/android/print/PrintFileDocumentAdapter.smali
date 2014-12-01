@@ -28,9 +28,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Ljava/io/File;Landroid/print/PrintDocumentInfo;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/io/File;
-    .param p3    # Landroid/print/PrintDocumentInfo;
 
     invoke-direct {p0}, Landroid/print/PrintDocumentAdapter;-><init>()V
 
@@ -67,7 +64,6 @@
 
 .method static synthetic access$000(Landroid/print/PrintFileDocumentAdapter;)Ljava/io/File;
     .locals 1
-    .param p0    # Landroid/print/PrintFileDocumentAdapter;
 
     iget-object v0, p0, Landroid/print/PrintFileDocumentAdapter;->mFile:Ljava/io/File;
 
@@ -76,7 +72,6 @@
 
 .method static synthetic access$100(Landroid/print/PrintFileDocumentAdapter;)Landroid/content/Context;
     .locals 1
-    .param p0    # Landroid/print/PrintFileDocumentAdapter;
 
     iget-object v0, p0, Landroid/print/PrintFileDocumentAdapter;->mContext:Landroid/content/Context;
 
@@ -87,11 +82,6 @@
 # virtual methods
 .method public onLayout(Landroid/print/PrintAttributes;Landroid/print/PrintAttributes;Landroid/os/CancellationSignal;Landroid/print/PrintDocumentAdapter$LayoutResultCallback;Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/print/PrintAttributes;
-    .param p2    # Landroid/print/PrintAttributes;
-    .param p3    # Landroid/os/CancellationSignal;
-    .param p4    # Landroid/print/PrintDocumentAdapter$LayoutResultCallback;
-    .param p5    # Landroid/os/Bundle;
 
     iget-object v0, p0, Landroid/print/PrintFileDocumentAdapter;->mDocumentInfo:Landroid/print/PrintDocumentInfo;
 
@@ -104,10 +94,6 @@
 
 .method public onWrite([Landroid/print/PageRange;Landroid/os/ParcelFileDescriptor;Landroid/os/CancellationSignal;Landroid/print/PrintDocumentAdapter$WriteResultCallback;)V
     .locals 3
-    .param p1    # [Landroid/print/PageRange;
-    .param p2    # Landroid/os/ParcelFileDescriptor;
-    .param p3    # Landroid/os/CancellationSignal;
-    .param p4    # Landroid/print/PrintDocumentAdapter$WriteResultCallback;
 
     new-instance v0, Landroid/print/PrintFileDocumentAdapter$WriteFileAsyncTask;
 

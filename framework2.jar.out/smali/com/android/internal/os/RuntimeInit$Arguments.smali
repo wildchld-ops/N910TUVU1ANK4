@@ -23,7 +23,6 @@
 # direct methods
 .method constructor <init>([Ljava/lang/String;)V
     .locals 0
-    .param p1    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;
@@ -39,7 +38,6 @@
 
 .method private parseArgs([Ljava/lang/String;)V
     .locals 6
-    .param p1    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;

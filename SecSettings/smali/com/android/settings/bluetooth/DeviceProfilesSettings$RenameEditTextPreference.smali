@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Lcom/android/settings/bluetooth/DeviceProfilesSettings;Lcom/android/settings/bluetooth/DeviceProfilesSettings$1;)V
     .locals 0
-    .param p1    # Lcom/android/settings/bluetooth/DeviceProfilesSettings;
-    .param p2    # Lcom/android/settings/bluetooth/DeviceProfilesSettings$1;
 
     invoke-direct {p0, p1}, Lcom/android/settings/bluetooth/DeviceProfilesSettings$RenameEditTextPreference;-><init>(Lcom/android/settings/bluetooth/DeviceProfilesSettings;)V
 
@@ -46,7 +44,6 @@
 # virtual methods
 .method public afterTextChanged(Landroid/text/Editable;)V
     .locals 7
-    .param p1    # Landroid/text/Editable;
 
     const/16 v6, 0x20
 
@@ -179,10 +176,6 @@
 
 .method public beforeTextChanged(Ljava/lang/CharSequence;III)V
     .locals 2
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     if-eqz p1, :cond_0
 
@@ -214,10 +207,6 @@
 
 .method public onTextChanged(Ljava/lang/CharSequence;III)V
     .locals 6
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const v5, 0x7f090e60
 

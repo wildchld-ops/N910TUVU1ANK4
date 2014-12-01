@@ -46,10 +46,6 @@
 
 .method public constructor <init>(Landroid/accounts/Account;Ljava/lang/String;Landroid/os/Bundle;J)V
     .locals 2
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/os/Bundle;
-    .param p4    # J
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -86,11 +82,6 @@
 
 .method public constructor <init>(Landroid/accounts/Account;Ljava/lang/String;Landroid/os/Bundle;JJ)V
     .locals 1
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/os/Bundle;
-    .param p4    # J
-    .param p6    # J
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -113,7 +104,6 @@
 
 .method public constructor <init>(Landroid/content/PeriodicSync;)V
     .locals 2
-    .param p1    # Landroid/content/PeriodicSync;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -146,7 +136,6 @@
 
 .method private constructor <init>(Landroid/os/Parcel;)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -189,8 +178,6 @@
 
 .method synthetic constructor <init>(Landroid/os/Parcel;Landroid/content/PeriodicSync$1;)V
     .locals 0
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # Landroid/content/PeriodicSync$1;
 
     invoke-direct {p0, p1}, Landroid/content/PeriodicSync;-><init>(Landroid/os/Parcel;)V
 
@@ -199,8 +186,6 @@
 
 .method public static syncExtrasEquals(Landroid/os/Bundle;Landroid/os/Bundle;)Z
     .locals 6
-    .param p0    # Landroid/os/Bundle;
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v3, 0x1
 
@@ -293,7 +278,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 7
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x1
 
@@ -433,8 +417,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v0, p0, Landroid/content/PeriodicSync;->account:Landroid/accounts/Account;
 

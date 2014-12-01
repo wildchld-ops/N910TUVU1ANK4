@@ -42,9 +42,6 @@
 
 .method private constructor <init>(Landroid/content/Context;ZZ)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Z
-    .param p3    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -65,7 +62,6 @@
 
 .method private addThrottleManager(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/sec/epdg/throttle/ThrottleController;->mThrottleManagerList:Ljava/util/Map;
 
@@ -86,9 +82,6 @@
 
 .method public static declared-synchronized createInstance(Landroid/content/Context;ZZ)V
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
-    .param p2    # Z
 
     const-class v1, Lcom/sec/epdg/throttle/ThrottleController;
 
@@ -206,7 +199,6 @@
 
 .method private handleWifiConnected(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const-string v2, "ThrottleController"
 
@@ -300,7 +292,6 @@
 
 .method private isEpdgNotAvailableRequired(Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -347,7 +338,6 @@
 # virtual methods
 .method public declared-synchronized getThrottleCount(Ljava/lang/String;)I
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -445,8 +435,6 @@
 
 .method public declared-synchronized handleWifiStatusChanged(ZLjava/lang/String;)V
     .locals 1
-    .param p1    # Z
-    .param p2    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -480,7 +468,6 @@
 
 .method public declared-synchronized isThrottleTimerRunning(Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -578,8 +565,6 @@
 
 .method public declared-synchronized onSettingUpdated(ZZ)V
     .locals 3
-    .param p1    # Z
-    .param p2    # Z
 
     monitor-enter p0
 
@@ -642,7 +627,6 @@
 
 .method public declared-synchronized resetThrottleState(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -706,8 +690,6 @@
 
 .method public declared-synchronized updateThrottleState(Ljava/lang/String;Lcom/sec/epdg/IWlanError;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/sec/epdg/IWlanError;
 
     monitor-enter p0
 

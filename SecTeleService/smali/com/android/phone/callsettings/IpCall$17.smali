@@ -45,7 +45,7 @@
 
     iget-object v1, p0, Lcom/android/phone/callsettings/IpCall$17;->this$0:Lcom/android/phone/callsettings/IpCall;
 
-    invoke-virtual {v1}, Landroid/app/Fragment;->isAdded()Z
+    invoke-virtual {v1}, Lcom/android/phone/callsettings/IpCall;->isAdded()Z
 
     move-result v1
 
@@ -111,7 +111,7 @@
 
     iget-object v4, p0, Lcom/android/phone/callsettings/IpCall$17;->this$0:Lcom/android/phone/callsettings/IpCall;
 
-    invoke-virtual {v4}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v4}, Lcom/android/phone/callsettings/IpCall;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
 

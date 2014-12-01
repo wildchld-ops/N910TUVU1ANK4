@@ -71,7 +71,6 @@
 
 .method private isWifiSettingScreen(Landroid/content/Context;)I
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     sget-boolean v0, Lcom/android/settings/wifi/WifiStatusReceiver;->DEBUG:Z
 
@@ -140,9 +139,6 @@
 
 .method private startWifiPickerActivity(Landroid/content/Context;Landroid/content/Intent;I)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
-    .param p3    # I
 
     sget-boolean v2, Lcom/android/settings/wifi/WifiStatusReceiver;->DEBUG:Z
 
@@ -324,8 +320,6 @@
 
 .method private updateResources(Landroid/content/Context;Landroid/net/wifi/WifiManager;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/net/wifi/WifiManager;
 
     sget-boolean v0, Lcom/android/settings/wifi/WifiStatusReceiver;->DEBUG:Z
 
@@ -352,8 +346,6 @@
 
 .method private watchdogAnsExceptionNotification(Landroid/content/Context;Z)V
     .locals 12
-    .param p1    # Landroid/content/Context;
-    .param p2    # Z
 
     const v11, 0x7f090510
 
@@ -526,7 +518,19 @@
 .end method
 
 .method private watchdogPoorConnectionNotification(Landroid/content/Context;Z)V
-    .locals 11
+    .locals 13
+
+    new-instance v11, Ljava/io/File;
+
+    const-string v12, "/sdcard/infamous-mod/unstable_wifi"
+
+    invoke-direct {v11, v12}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v11}, Ljava/io/File;->exists()Z
+
+    move-result v11
+
+    if-eqz v11, :cond_0
 
     const v10, 0x7f0904fe
 
@@ -758,8 +762,6 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 20
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     const-string v17, "wifi"
 

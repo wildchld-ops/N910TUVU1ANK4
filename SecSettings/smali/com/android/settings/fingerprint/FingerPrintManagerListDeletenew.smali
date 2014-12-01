@@ -129,7 +129,6 @@
 
 .method private ToggleAllCheck(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v2, p0, Lcom/android/settings/fingerprint/FingerPrintManagerListDeletenew;->mlistView:Landroid/widget/ListView;
 
@@ -167,7 +166,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/fingerprint/FingerPrintManagerListDeletenew;)Lcom/android/settings/fingerprint/FingerPrintManagerListDeletenew$FingerListAdapter;
     .locals 1
-    .param p0    # Lcom/android/settings/fingerprint/FingerPrintManagerListDeletenew;
 
     iget-object v0, p0, Lcom/android/settings/fingerprint/FingerPrintManagerListDeletenew;->mFingerListAdapter:Lcom/android/settings/fingerprint/FingerPrintManagerListDeletenew$FingerListAdapter;
 
@@ -176,7 +174,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/fingerprint/FingerPrintManagerListDeletenew;)V
     .locals 0
-    .param p0    # Lcom/android/settings/fingerprint/FingerPrintManagerListDeletenew;
 
     invoke-direct {p0}, Lcom/android/settings/fingerprint/FingerPrintManagerListDeletenew;->initializeActionBarTitle()V
 
@@ -185,7 +182,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/fingerprint/FingerPrintManagerListDeletenew;)Landroid/widget/ListView;
     .locals 1
-    .param p0    # Lcom/android/settings/fingerprint/FingerPrintManagerListDeletenew;
 
     iget-object v0, p0, Lcom/android/settings/fingerprint/FingerPrintManagerListDeletenew;->mlistView:Landroid/widget/ListView;
 
@@ -202,7 +198,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/fingerprint/FingerPrintManagerListDeletenew;)V
     .locals 0
-    .param p0    # Lcom/android/settings/fingerprint/FingerPrintManagerListDeletenew;
 
     invoke-direct {p0}, Lcom/android/settings/fingerprint/FingerPrintManagerListDeletenew;->resetFingerprintSupportingFeatures()V
 
@@ -211,7 +206,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/fingerprint/FingerPrintManagerListDeletenew;)Lcom/samsung/android/fingerprint/FingerprintManager;
     .locals 1
-    .param p0    # Lcom/android/settings/fingerprint/FingerPrintManagerListDeletenew;
 
     iget-object v0, p0, Lcom/android/settings/fingerprint/FingerPrintManagerListDeletenew;->mFingerprintManager:Lcom/samsung/android/fingerprint/FingerprintManager;
 
@@ -220,7 +214,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/fingerprint/FingerPrintManagerListDeletenew;)V
     .locals 0
-    .param p0    # Lcom/android/settings/fingerprint/FingerPrintManagerListDeletenew;
 
     invoke-direct {p0}, Lcom/android/settings/fingerprint/FingerPrintManagerListDeletenew;->showSensorErrorDialog()V
 
@@ -237,7 +230,6 @@
 
 .method static synthetic access$702(Lcom/sec/android/touchwiz/widget/TwCheckBox;)Lcom/sec/android/touchwiz/widget/TwCheckBox;
     .locals 0
-    .param p0    # Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
     sput-object p0, Lcom/android/settings/fingerprint/FingerPrintManagerListDeletenew;->mFingerCheckbox:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
@@ -612,7 +604,6 @@
 
 .method private deRegisterAllFingerprint(I)V
     .locals 13
-    .param p1    # I
 
     const/high16 v12, 0x1040000
 
@@ -1547,7 +1538,6 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 7
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v6, 0x1
 
@@ -1754,7 +1744,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     sget-object v1, Lcom/android/settings/fingerprint/FingerPrintManagerListDeletenew;->mSelectAllCheck:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
@@ -1791,7 +1780,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 1
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/app/ListFragment;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -1806,8 +1794,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
     .locals 6
-    .param p1    # Landroid/view/Menu;
-    .param p2    # Landroid/view/MenuInflater;
 
     const/16 v5, 0x8
 
@@ -1871,9 +1857,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 2
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const v0, 0x7f0400c1
 
@@ -1940,10 +1923,6 @@
 
 .method public onListItemClick(Landroid/widget/ListView;Landroid/view/View;IJ)V
     .locals 6
-    .param p1    # Landroid/widget/ListView;
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
 
     const/4 v5, 0x0
 
@@ -2111,7 +2090,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 12
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -2423,7 +2401,6 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)V
     .locals 4
-    .param p1    # Landroid/view/Menu;
 
     const/4 v3, 0x0
 

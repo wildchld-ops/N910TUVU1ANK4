@@ -24,7 +24,6 @@
 
 .method public static declared-synchronized getInstance(Landroid/content/Context;)Lcom/android/server/enterprise/adapterlayer/WifiManagerAdapter;
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     const-class v1, Lcom/android/server/enterprise/adapterlayer/WifiManagerAdapter;
 
@@ -84,8 +83,6 @@
 # virtual methods
 .method public addDns(Landroid/net/wifi/WifiConfiguration;Ljava/net/InetAddress;)V
     .locals 1
-    .param p1    # Landroid/net/wifi/WifiConfiguration;
-    .param p2    # Ljava/net/InetAddress;
 
     iget-object v0, p1, Landroid/net/wifi/WifiConfiguration;->linkProperties:Landroid/net/LinkProperties;
 
@@ -107,7 +104,6 @@
 
 .method public forget(Landroid/net/wifi/WifiConfiguration;)Z
     .locals 3
-    .param p1    # Landroid/net/wifi/WifiConfiguration;
 
     :try_start_0
     sget-object v1, Lcom/android/server/enterprise/adapterlayer/WifiManagerAdapter;->mWifiService:Landroid/net/wifi/IWifiManager;
@@ -139,7 +135,6 @@
 
 .method public prefixLengthToNetmaskInt(I)I
     .locals 1
-    .param p1    # I
 
     invoke-static {p1}, Landroid/net/NetworkUtils;->prefixLengthToNetmaskInt(I)I
 
@@ -150,7 +145,6 @@
 
 .method public save(Landroid/net/wifi/WifiConfiguration;)Z
     .locals 3
-    .param p1    # Landroid/net/wifi/WifiConfiguration;
 
     :try_start_0
     sget-object v1, Lcom/android/server/enterprise/adapterlayer/WifiManagerAdapter;->mWifiService:Landroid/net/wifi/IWifiManager;
@@ -180,7 +174,6 @@
 
 .method public setWifiApConfiguration(Landroid/net/wifi/WifiConfiguration;)Z
     .locals 1
-    .param p1    # Landroid/net/wifi/WifiConfiguration;
 
     sget-object v0, Lcom/android/server/enterprise/adapterlayer/WifiManagerAdapter;->mWifiManager:Landroid/net/wifi/WifiManager;
 

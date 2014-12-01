@@ -14,7 +14,6 @@
 
 .method static synthetic access$000(Landroid/content/Context;)Landroid/content/SharedPreferences;
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Lcom/android/settings/bluetooth/LocalBluetoothPreferences;->getSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -25,7 +24,6 @@
 
 .method static getDiscoverableEndTimestamp(Landroid/content/Context;)J
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Lcom/android/settings/bluetooth/LocalBluetoothPreferences;->getSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -44,8 +42,6 @@
 
 .method static getDockAutoConnectSetting(Landroid/content/Context;Ljava/lang/String;)Z
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/android/settings/bluetooth/LocalBluetoothPreferences;->getSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -80,7 +76,6 @@
 
 .method private static getSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     const-string v0, "bluetooth_settings"
 
@@ -95,8 +90,6 @@
 
 .method static hasDockAutoConnectSetting(Landroid/content/Context;Ljava/lang/String;)Z
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/android/settings/bluetooth/LocalBluetoothPreferences;->getSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -129,8 +122,6 @@
 
 .method static persistDiscoverableEndTimestamp(Landroid/content/Context;J)V
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
 
     invoke-static {p0}, Lcom/android/settings/bluetooth/LocalBluetoothPreferences;->getSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -151,7 +142,6 @@
 
 .method static persistDiscoveringTimestamp(Landroid/content/Context;)V
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     invoke-static {}, Landroid/app/QueuedWork;->singleThreadExecutor()Ljava/util/concurrent/ExecutorService;
 
@@ -168,8 +158,6 @@
 
 .method static persistSelectedDeviceInPicker(Landroid/content/Context;Ljava/lang/String;)V
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/android/settings/bluetooth/LocalBluetoothPreferences;->getSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -198,8 +186,6 @@
 
 .method static removeDockAutoConnectSetting(Landroid/content/Context;Ljava/lang/String;)V
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/android/settings/bluetooth/LocalBluetoothPreferences;->getSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -236,9 +222,6 @@
 
 .method static saveDockAutoConnectSetting(Landroid/content/Context;Ljava/lang/String;Z)V
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     invoke-static {p0}, Lcom/android/settings/bluetooth/LocalBluetoothPreferences;->getSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 

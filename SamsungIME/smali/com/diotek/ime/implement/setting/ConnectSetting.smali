@@ -62,7 +62,6 @@
 
 .method static synthetic access$000(Lcom/diotek/ime/implement/setting/ConnectSetting;)V
     .locals 0
-    .param p0    # Lcom/diotek/ime/implement/setting/ConnectSetting;
 
     invoke-direct {p0}, Lcom/diotek/ime/implement/setting/ConnectSetting;->showXt9GuideDialog()V
 
@@ -71,7 +70,6 @@
 
 .method static synthetic access$100(Lcom/diotek/ime/implement/setting/ConnectSetting;)Lcom/diotek/ime/framework/acmanager/ACDownloadManager;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/setting/ConnectSetting;
 
     iget-object v0, p0, Lcom/diotek/ime/implement/setting/ConnectSetting;->mACDownloadManager:Lcom/diotek/ime/framework/acmanager/ACDownloadManager;
 
@@ -80,7 +78,6 @@
 
 .method static synthetic access$200(Lcom/diotek/ime/implement/setting/ConnectSetting;)V
     .locals 0
-    .param p0    # Lcom/diotek/ime/implement/setting/ConnectSetting;
 
     invoke-direct {p0}, Lcom/diotek/ime/implement/setting/ConnectSetting;->showLiveLanguageGuideDialog()V
 
@@ -311,7 +308,6 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 9
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onCreate(Landroid/os/Bundle;)V
 
@@ -668,7 +664,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 

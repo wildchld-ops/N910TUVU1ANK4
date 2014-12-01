@@ -25,8 +25,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/mms/ui/BoxListFrame;JLjava/lang/String;)V
     .locals 0
-    .param p2    # J
-    .param p4    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/mms/ui/BoxListFrame$MessageData;->this$0:Lcom/android/mms/ui/BoxListFrame;
 
@@ -41,7 +39,6 @@
 
 .method static synthetic access$4100(Lcom/android/mms/ui/BoxListFrame$MessageData;)J
     .locals 2
-    .param p0    # Lcom/android/mms/ui/BoxListFrame$MessageData;
 
     iget-wide v0, p0, Lcom/android/mms/ui/BoxListFrame$MessageData;->mId:J
 
@@ -50,7 +47,6 @@
 
 .method static synthetic access$4200(Lcom/android/mms/ui/BoxListFrame$MessageData;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/BoxListFrame$MessageData;
 
     iget-object v0, p0, Lcom/android/mms/ui/BoxListFrame$MessageData;->mType:Ljava/lang/String;
 
@@ -61,8 +57,6 @@
 # virtual methods
 .method public equals(JLjava/lang/String;)Z
     .locals 2
-    .param p1    # J
-    .param p3    # Ljava/lang/String;
 
     iget-wide v0, p0, Lcom/android/mms/ui/BoxListFrame$MessageData;->mId:J
 
@@ -91,7 +85,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 6
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x0
 
@@ -131,8 +124,6 @@
 
 .method public setData(JLjava/lang/String;)V
     .locals 0
-    .param p1    # J
-    .param p3    # Ljava/lang/String;
 
     iput-wide p1, p0, Lcom/android/mms/ui/BoxListFrame$MessageData;->mId:J
 

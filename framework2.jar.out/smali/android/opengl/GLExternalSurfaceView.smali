@@ -99,7 +99,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Landroid/view/ExternalSurfaceView;-><init>(Landroid/content/Context;)V
 
@@ -114,8 +113,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/view/ExternalSurfaceView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -130,9 +127,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Landroid/view/ExternalSurfaceView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
@@ -147,7 +141,6 @@
 
 .method static synthetic access$1000(Landroid/opengl/GLExternalSurfaceView;)Z
     .locals 1
-    .param p0    # Landroid/opengl/GLExternalSurfaceView;
 
     iget-boolean v0, p0, Landroid/opengl/GLExternalSurfaceView;->mSizeChanged:Z
 
@@ -156,8 +149,6 @@
 
 .method static synthetic access$1002(Landroid/opengl/GLExternalSurfaceView;Z)Z
     .locals 0
-    .param p0    # Landroid/opengl/GLExternalSurfaceView;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/opengl/GLExternalSurfaceView;->mSizeChanged:Z
 
@@ -166,7 +157,6 @@
 
 .method static synthetic access$1100(Landroid/opengl/GLExternalSurfaceView;)Landroid/opengl/GLExternalSurfaceView$GLThread;
     .locals 1
-    .param p0    # Landroid/opengl/GLExternalSurfaceView;
 
     iget-object v0, p0, Landroid/opengl/GLExternalSurfaceView;->mGLThread:Landroid/opengl/GLExternalSurfaceView$GLThread;
 
@@ -175,7 +165,6 @@
 
 .method static synthetic access$200(Landroid/opengl/GLExternalSurfaceView;)I
     .locals 1
-    .param p0    # Landroid/opengl/GLExternalSurfaceView;
 
     iget v0, p0, Landroid/opengl/GLExternalSurfaceView;->mEGLContextClientVersion:I
 
@@ -184,7 +173,6 @@
 
 .method static synthetic access$300(Landroid/opengl/GLExternalSurfaceView;)Landroid/opengl/GLExternalSurfaceView$EGLConfigChooser;
     .locals 1
-    .param p0    # Landroid/opengl/GLExternalSurfaceView;
 
     iget-object v0, p0, Landroid/opengl/GLExternalSurfaceView;->mEGLConfigChooser:Landroid/opengl/GLExternalSurfaceView$EGLConfigChooser;
 
@@ -193,7 +181,6 @@
 
 .method static synthetic access$400(Landroid/opengl/GLExternalSurfaceView;)Landroid/opengl/GLExternalSurfaceView$EGLContextFactory;
     .locals 1
-    .param p0    # Landroid/opengl/GLExternalSurfaceView;
 
     iget-object v0, p0, Landroid/opengl/GLExternalSurfaceView;->mEGLContextFactory:Landroid/opengl/GLExternalSurfaceView$EGLContextFactory;
 
@@ -202,7 +189,6 @@
 
 .method static synthetic access$500(Landroid/opengl/GLExternalSurfaceView;)Landroid/opengl/GLExternalSurfaceView$EGLWindowSurfaceFactory;
     .locals 1
-    .param p0    # Landroid/opengl/GLExternalSurfaceView;
 
     iget-object v0, p0, Landroid/opengl/GLExternalSurfaceView;->mEGLWindowSurfaceFactory:Landroid/opengl/GLExternalSurfaceView$EGLWindowSurfaceFactory;
 
@@ -211,7 +197,6 @@
 
 .method static synthetic access$600(Landroid/opengl/GLExternalSurfaceView;)Landroid/opengl/GLExternalSurfaceView$GLWrapper;
     .locals 1
-    .param p0    # Landroid/opengl/GLExternalSurfaceView;
 
     iget-object v0, p0, Landroid/opengl/GLExternalSurfaceView;->mGLWrapper:Landroid/opengl/GLExternalSurfaceView$GLWrapper;
 
@@ -220,7 +205,6 @@
 
 .method static synthetic access$700(Landroid/opengl/GLExternalSurfaceView;)I
     .locals 1
-    .param p0    # Landroid/opengl/GLExternalSurfaceView;
 
     iget v0, p0, Landroid/opengl/GLExternalSurfaceView;->mDebugFlags:I
 
@@ -237,7 +221,6 @@
 
 .method static synthetic access$900(Landroid/opengl/GLExternalSurfaceView;)Z
     .locals 1
-    .param p0    # Landroid/opengl/GLExternalSurfaceView;
 
     iget-boolean v0, p0, Landroid/opengl/GLExternalSurfaceView;->mPreserveEGLContextOnPause:Z
 
@@ -279,7 +262,6 @@
 # virtual methods
 .method public flipExtDisplayFlag(Z)V
     .locals 0
-    .param p1    # Z
 
     invoke-virtual {p0}, Landroid/opengl/GLExternalSurfaceView;->onPause()V
 
@@ -446,7 +428,6 @@
 
 .method public queueEvent(Ljava/lang/Runnable;)V
     .locals 1
-    .param p1    # Ljava/lang/Runnable;
 
     iget-object v0, p0, Landroid/opengl/GLExternalSurfaceView;->mGLThread:Landroid/opengl/GLExternalSurfaceView$GLThread;
 
@@ -467,7 +448,6 @@
 
 .method public setDebugFlags(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/opengl/GLExternalSurfaceView;->mDebugFlags:I
 
@@ -476,12 +456,6 @@
 
 .method public setEGLConfigChooser(IIIIII)V
     .locals 8
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     new-instance v0, Landroid/opengl/GLExternalSurfaceView$ComponentSizeChooser;
 
@@ -508,7 +482,6 @@
 
 .method public setEGLConfigChooser(Landroid/opengl/GLExternalSurfaceView$EGLConfigChooser;)V
     .locals 0
-    .param p1    # Landroid/opengl/GLExternalSurfaceView$EGLConfigChooser;
 
     invoke-direct {p0}, Landroid/opengl/GLExternalSurfaceView;->checkRenderThreadState()V
 
@@ -519,7 +492,6 @@
 
 .method public setEGLConfigChooser(Z)V
     .locals 1
-    .param p1    # Z
 
     new-instance v0, Landroid/opengl/GLExternalSurfaceView$SimpleEGLConfigChooser;
 
@@ -532,7 +504,6 @@
 
 .method public setEGLContextClientVersion(I)V
     .locals 0
-    .param p1    # I
 
     invoke-direct {p0}, Landroid/opengl/GLExternalSurfaceView;->checkRenderThreadState()V
 
@@ -543,7 +514,6 @@
 
 .method public setEGLContextFactory(Landroid/opengl/GLExternalSurfaceView$EGLContextFactory;)V
     .locals 0
-    .param p1    # Landroid/opengl/GLExternalSurfaceView$EGLContextFactory;
 
     invoke-direct {p0}, Landroid/opengl/GLExternalSurfaceView;->checkRenderThreadState()V
 
@@ -554,7 +524,6 @@
 
 .method public setEGLWindowSurfaceFactory(Landroid/opengl/GLExternalSurfaceView$EGLWindowSurfaceFactory;)V
     .locals 0
-    .param p1    # Landroid/opengl/GLExternalSurfaceView$EGLWindowSurfaceFactory;
 
     invoke-direct {p0}, Landroid/opengl/GLExternalSurfaceView;->checkRenderThreadState()V
 
@@ -565,7 +534,6 @@
 
 .method public setGLWrapper(Landroid/opengl/GLExternalSurfaceView$GLWrapper;)V
     .locals 0
-    .param p1    # Landroid/opengl/GLExternalSurfaceView$GLWrapper;
 
     iput-object p1, p0, Landroid/opengl/GLExternalSurfaceView;->mGLWrapper:Landroid/opengl/GLExternalSurfaceView$GLWrapper;
 
@@ -574,7 +542,6 @@
 
 .method public setPreserveEGLContextOnPause(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/opengl/GLExternalSurfaceView;->mPreserveEGLContextOnPause:Z
 
@@ -583,7 +550,6 @@
 
 .method public setRenderMode(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/opengl/GLExternalSurfaceView;->mGLThread:Landroid/opengl/GLExternalSurfaceView$GLThread;
 
@@ -594,7 +560,6 @@
 
 .method public setRenderer(Landroid/opengl/GLExternalSurfaceView$Renderer;)V
     .locals 3
-    .param p1    # Landroid/opengl/GLExternalSurfaceView$Renderer;
 
     const/4 v2, 0x0
 
@@ -652,10 +617,6 @@
 
 .method public surfaceChanged(Landroid/view/SurfaceHolder;III)V
     .locals 1
-    .param p1    # Landroid/view/SurfaceHolder;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iget-object v0, p0, Landroid/opengl/GLExternalSurfaceView;->mGLThread:Landroid/opengl/GLExternalSurfaceView$GLThread;
 
@@ -666,7 +627,6 @@
 
 .method public surfaceCreated(Landroid/view/SurfaceHolder;)V
     .locals 1
-    .param p1    # Landroid/view/SurfaceHolder;
 
     iget-object v0, p0, Landroid/opengl/GLExternalSurfaceView;->mGLThread:Landroid/opengl/GLExternalSurfaceView$GLThread;
 
@@ -677,7 +637,6 @@
 
 .method public surfaceDestroyed(Landroid/view/SurfaceHolder;)V
     .locals 1
-    .param p1    # Landroid/view/SurfaceHolder;
 
     iget-object v0, p0, Landroid/opengl/GLExternalSurfaceView;->mGLThread:Landroid/opengl/GLExternalSurfaceView$GLThread;
 

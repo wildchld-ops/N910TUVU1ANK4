@@ -71,7 +71,6 @@
 
 .method static synthetic access$2800(Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;)Z
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;
 
     iget-boolean v0, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;->mCurDown:Z
 
@@ -80,8 +79,6 @@
 
 .method static synthetic access$2802(Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;Z)Z
     .locals 0
-    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;->mCurDown:Z
 
@@ -90,7 +87,6 @@
 
 .method static synthetic access$2900(Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;)Landroid/view/MotionEvent$PointerCoords;
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;->mCoords:Landroid/view/MotionEvent$PointerCoords;
 
@@ -99,8 +95,6 @@
 
 .method static synthetic access$3002(Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;I)I
     .locals 0
-    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;->mToolType:I
 
@@ -109,7 +103,6 @@
 
 .method static synthetic access$3100(Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;)I
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;
 
     iget v0, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;->mTraceCount:I
 
@@ -118,7 +111,6 @@
 
 .method static synthetic access$3200(Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;)[F
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;->mTraceX:[F
 
@@ -127,7 +119,6 @@
 
 .method static synthetic access$3300(Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;)[F
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/spengesture/SPenGestureView$PointerState;->mTraceY:[F
 
@@ -138,8 +129,6 @@
 # virtual methods
 .method public addTrace(FF)V
     .locals 6
-    .param p1    # F
-    .param p2    # F
 
     const/4 v5, 0x0
 

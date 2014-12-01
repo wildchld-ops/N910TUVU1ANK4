@@ -64,7 +64,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Landroid/app/enterprise/geofencing/IGeofencing$Stub;-><init>()V
 
@@ -153,8 +152,6 @@
 
 .method static synthetic access$000(Lcom/android/server/enterprise/geofencing/GeofenceService;I)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/geofencing/GeofenceService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/geofencing/GeofenceService;->loadGeofenceActiveList(I)V
 
@@ -163,7 +160,6 @@
 
 .method static synthetic access$100(Lcom/android/server/enterprise/geofencing/GeofenceService;)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/geofencing/GeofenceService;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/geofencing/GeofenceService;->checkMonitoring()V
 
@@ -172,8 +168,6 @@
 
 .method static synthetic access$200(Lcom/android/server/enterprise/geofencing/GeofenceService;I)Ljava/util/List;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/geofencing/GeofenceService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/geofencing/GeofenceService;->isDeviceInsideGeofence(I)Ljava/util/List;
 
@@ -184,8 +178,6 @@
 
 .method static synthetic access$300(Lcom/android/server/enterprise/geofencing/GeofenceService;I)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/geofencing/GeofenceService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/geofencing/GeofenceService;->getPackageNameForUid(I)Ljava/lang/String;
 
@@ -196,7 +188,6 @@
 
 .method static synthetic access$400(Lcom/android/server/enterprise/geofencing/GeofenceService;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/geofencing/GeofenceService;
 
     iget-object v0, p0, Lcom/android/server/enterprise/geofencing/GeofenceService;->mContext:Landroid/content/Context;
 
@@ -205,7 +196,6 @@
 
 .method static synthetic access$500(Lcom/android/server/enterprise/geofencing/GeofenceService;)Lcom/android/server/enterprise/storage/EdmStorageProvider;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/geofencing/GeofenceService;
 
     iget-object v0, p0, Lcom/android/server/enterprise/geofencing/GeofenceService;->mEdmStorageProvider:Lcom/android/server/enterprise/storage/EdmStorageProvider;
 
@@ -214,8 +204,6 @@
 
 .method static synthetic access$600(Lcom/android/server/enterprise/geofencing/GeofenceService;I)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/geofencing/GeofenceService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/geofencing/GeofenceService;->deleteGeofenceActiveListByAdmin(I)V
 
@@ -224,8 +212,6 @@
 
 .method static synthetic access$702(Lcom/android/server/enterprise/geofencing/GeofenceService;Landroid/location/Location;)Landroid/location/Location;
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/geofencing/GeofenceService;
-    .param p1    # Landroid/location/Location;
 
     iput-object p1, p0, Lcom/android/server/enterprise/geofencing/GeofenceService;->mLocation:Landroid/location/Location;
 
@@ -234,9 +220,6 @@
 
 .method static synthetic access$800(Lcom/android/server/enterprise/geofencing/GeofenceService;Landroid/location/Location;Z)Ljava/util/List;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/geofencing/GeofenceService;
-    .param p1    # Landroid/location/Location;
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/enterprise/geofencing/GeofenceService;->checkDeviceInsideOrOutsideGeo(Landroid/location/Location;Z)Ljava/util/List;
 
@@ -369,8 +352,6 @@
 
 .method private checkDeviceInsideBoundingbox(Landroid/location/Location;Landroid/app/enterprise/geofencing/BoundingBox;)Z
     .locals 7
-    .param p1    # Landroid/location/Location;
-    .param p2    # Landroid/app/enterprise/geofencing/BoundingBox;
 
     const/4 v4, 0x0
 
@@ -432,8 +413,6 @@
 
 .method private checkDeviceInsideCircleSpherical(Landroid/location/Location;Landroid/app/enterprise/geofencing/CircularGeofence;)Z
     .locals 30
-    .param p1    # Landroid/location/Location;
-    .param p2    # Landroid/app/enterprise/geofencing/CircularGeofence;
 
     const-wide v2, 0x40b8e30000000000L
 
@@ -548,8 +527,6 @@
 
 .method private checkDeviceInsideLinear(Landroid/location/Location;Landroid/app/enterprise/geofencing/LinearGeofence;)Z
     .locals 9
-    .param p1    # Landroid/location/Location;
-    .param p2    # Landroid/app/enterprise/geofencing/LinearGeofence;
 
     const/4 v8, 0x0
 
@@ -598,8 +575,6 @@
 
 .method private declared-synchronized checkDeviceInsideOrOutsideGeo(Landroid/location/Location;Z)Ljava/util/List;
     .locals 5
-    .param p1    # Landroid/location/Location;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -731,8 +706,6 @@
 
 .method private checkDeviceInsidePolygon(Landroid/location/Location;Landroid/app/enterprise/geofencing/PolygonalGeofence;)Z
     .locals 11
-    .param p1    # Landroid/location/Location;
-    .param p2    # Landroid/app/enterprise/geofencing/PolygonalGeofence;
 
     const/4 v10, 0x0
 
@@ -814,8 +787,6 @@
 
 .method private checkDeviceInsidePolygonRayCasting(Ljava/util/List;DD)I
     .locals 13
-    .param p2    # D
-    .param p4    # D
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -970,8 +941,6 @@
 
 .method private checkGeofenceInsideOrOutside(Landroid/location/Location;Landroid/app/enterprise/geofencing/Geofence;)Z
     .locals 3
-    .param p1    # Landroid/location/Location;
-    .param p2    # Landroid/app/enterprise/geofencing/Geofence;
 
     const/4 v1, 0x1
 
@@ -1210,7 +1179,6 @@
 
 .method private convertToLinear(Landroid/app/enterprise/geofencing/LinearGeofence;)Ljava/util/List;
     .locals 14
-    .param p1    # Landroid/app/enterprise/geofencing/LinearGeofence;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1314,7 +1282,6 @@
 
 .method private createGracePoints(Ljava/util/List;D)Ljava/util/List;
     .locals 47
-    .param p2    # D
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1951,8 +1918,6 @@
 
 .method private declared-synchronized deleteFromDB(Landroid/app/enterprise/ContextInfo;I)Z
     .locals 4
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # I
 
     monitor-enter p0
 
@@ -2018,7 +1983,6 @@
 
 .method private declared-synchronized deleteGeofenceActiveListByAdmin(I)V
     .locals 5
-    .param p1    # I
 
     monitor-enter p0
 
@@ -2110,7 +2074,6 @@
 
 .method private static deserializeGeoFence([B)Ljava/lang/Object;
     .locals 6
-    .param p0    # [B
 
     const/4 v4, 0x0
 
@@ -2152,7 +2115,6 @@
 
 .method private deviceLocationUnavailableMessage(I)V
     .locals 5
-    .param p1    # I
 
     const-string v2, "GeofenceService"
 
@@ -2214,7 +2176,6 @@
 
 .method private enforceGeofencingPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     iget-object v0, p0, Lcom/android/server/enterprise/geofencing/GeofenceService;->mEDM:Landroid/app/enterprise/EnterpriseDeviceManager;
 
@@ -2584,7 +2545,6 @@
 
 .method private getActiveGeofenceIdsbyAdmin(Ljava/util/List;I)Ljava/util/List;
     .locals 11
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2937,7 +2897,6 @@
 
 .method private getPackageNameForUid(I)Ljava/lang/String;
     .locals 5
-    .param p1    # I
 
     const-string v2, "GeofenceService"
 
@@ -3048,7 +3007,6 @@
 
 .method private isAdminHasGeofence(I)Z
     .locals 6
-    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -3139,7 +3097,6 @@
 
 .method private isDeviceInsideGeofence(I)Ljava/util/List;
     .locals 12
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -3253,7 +3210,6 @@
 
 .method private declared-synchronized loadGeofenceActiveList(I)V
     .locals 12
-    .param p1    # I
 
     monitor-enter p0
 
@@ -3401,7 +3357,6 @@
 
 .method private parseStringToFloat(Ljava/lang/String;)F
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     invoke-static {p1}, Ljava/lang/Float;->parseFloat(Ljava/lang/String;)F
@@ -3423,7 +3378,6 @@
 
 .method private parseStringToLong(Ljava/lang/String;)J
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     invoke-static {p1}, Ljava/lang/Long;->parseLong(Ljava/lang/String;)J
@@ -3789,7 +3743,6 @@
 
 .method private serializeGeoFence(Ljava/lang/Object;)[B
     .locals 4
-    .param p1    # Ljava/lang/Object;
 
     new-instance v0, Ljava/io/ByteArrayOutputStream;
 
@@ -3843,7 +3796,6 @@
 
 .method private declared-synchronized updateGeofenceActiveListbyAdmin(I)V
     .locals 13
-    .param p1    # I
 
     const/4 v12, 0x3
 
@@ -4044,8 +3996,6 @@
 
 .method private validateCircularGeofence(Landroid/app/enterprise/geofencing/LatLongPoint;D)Z
     .locals 5
-    .param p1    # Landroid/app/enterprise/geofencing/LatLongPoint;
-    .param p2    # D
 
     const/4 v0, 0x1
 
@@ -4182,9 +4132,6 @@
 
 .method private writeGeofenceToDB(Landroid/app/enterprise/ContextInfo;I[B)I
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # I
-    .param p3    # [B
 
     iget v0, p1, Landroid/app/enterprise/ContextInfo;->mCallerUid:I
 
@@ -4237,8 +4184,6 @@
 # virtual methods
 .method public createGeofence(Landroid/app/enterprise/ContextInfo;Landroid/app/enterprise/geofencing/CircularGeofence;)I
     .locals 9
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Landroid/app/enterprise/geofencing/CircularGeofence;
 
     const/4 v8, 0x1
 
@@ -4314,8 +4259,6 @@
 
 .method public createGeofence(Landroid/app/enterprise/ContextInfo;Landroid/app/enterprise/geofencing/Geofence;)I
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Landroid/app/enterprise/geofencing/Geofence;
 
     const/4 v0, -0x1
 
@@ -4368,8 +4311,6 @@
 
 .method public createGeofence(Landroid/app/enterprise/ContextInfo;Landroid/app/enterprise/geofencing/LinearGeofence;)I
     .locals 15
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Landroid/app/enterprise/geofencing/LinearGeofence;
 
     const-string v11, "GeofenceService"
 
@@ -4538,8 +4479,6 @@
 
 .method public createGeofence(Landroid/app/enterprise/ContextInfo;Landroid/app/enterprise/geofencing/PolygonalGeofence;)I
     .locals 13
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Landroid/app/enterprise/geofencing/PolygonalGeofence;
 
     const-string v1, "GeofenceService"
 
@@ -4672,7 +4611,6 @@
 
 .method public createPolygonalPoints2(Ljava/util/List;D)Ljava/util/List;
     .locals 58
-    .param p2    # D
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -5843,8 +5781,6 @@
 
 .method public declared-synchronized destroyGeofence(Landroid/app/enterprise/ContextInfo;I)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # I
 
     monitor-enter p0
 
@@ -5945,8 +5881,6 @@
 
 .method public findDistance(Landroid/app/enterprise/geofencing/LatLongPoint;Landroid/app/enterprise/geofencing/LatLongPoint;)D
     .locals 19
-    .param p1    # Landroid/app/enterprise/geofencing/LatLongPoint;
-    .param p2    # Landroid/app/enterprise/geofencing/LatLongPoint;
 
     const-wide v1, 0x40aeed880a82edb3L
 
@@ -6023,7 +5957,6 @@
 
 .method public getGeofences(Landroid/app/enterprise/ContextInfo;)Ljava/util/List;
     .locals 13
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -6225,7 +6158,6 @@
 
 .method public getMinDistanceParameter(Landroid/app/enterprise/ContextInfo;)F
     .locals 4
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-static {p1}, Lcom/android/server/enterprise/EnterpriseDeviceManagerService;->getCallingOrUserUid(Landroid/app/enterprise/ContextInfo;)I
 
@@ -6250,7 +6182,6 @@
 
 .method public getMinTimeParameter(Landroid/app/enterprise/ContextInfo;)J
     .locals 4
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-static {p1}, Lcom/android/server/enterprise/EnterpriseDeviceManagerService;->getCallingOrUserUid(Landroid/app/enterprise/ContextInfo;)I
 
@@ -6275,7 +6206,6 @@
 
 .method public isDeviceInsideGeofence(Landroid/app/enterprise/ContextInfo;)Ljava/util/List;
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -6303,7 +6233,6 @@
 
 .method public isGeofencingEnabled(Landroid/app/enterprise/ContextInfo;)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v1, 0x1
 
@@ -6348,21 +6277,18 @@
 
 .method public onAdminAdded(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onAdminRemoved(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onPreAdminRemoval(I)V
     .locals 3
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/geofencing/GeofenceService;->deleteGeofenceActiveListByAdmin(I)V
 
@@ -6387,8 +6313,6 @@
 
 .method public setMinDistanceParameter(Landroid/app/enterprise/ContextInfo;F)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # F
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/geofencing/GeofenceService;->enforceGeofencingPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -6446,8 +6370,6 @@
 
 .method public setMinTimeParameter(Landroid/app/enterprise/ContextInfo;J)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # J
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/geofencing/GeofenceService;->enforceGeofencingPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -6505,7 +6427,6 @@
 
 .method public startGeofencing(Landroid/app/enterprise/ContextInfo;)Z
     .locals 6
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v2, 0x1
 
@@ -6580,7 +6501,6 @@
 
 .method public stopGeofencing(Landroid/app/enterprise/ContextInfo;)Z
     .locals 6
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v2, 0x0
 

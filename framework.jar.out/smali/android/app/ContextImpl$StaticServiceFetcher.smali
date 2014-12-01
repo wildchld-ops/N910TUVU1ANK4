@@ -34,7 +34,6 @@
 
 .method public final getService(Landroid/app/ContextImpl;)Ljava/lang/Object;
     .locals 2
-    .param p1    # Landroid/app/ContextImpl;
 
     monitor-enter p0
 

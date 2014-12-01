@@ -60,7 +60,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/ui/CMASDialog;)Landroid/app/StatusBarManager;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/CMASDialog;
 
     iget-object v0, p0, Lcom/android/mms/ui/CMASDialog;->mStatusbarManager:Landroid/app/StatusBarManager;
 
@@ -69,7 +68,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/ui/CMASDialog;)Landroid/net/Uri;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/CMASDialog;
 
     iget-object v0, p0, Lcom/android/mms/ui/CMASDialog;->messageUri:Landroid/net/Uri;
 
@@ -78,8 +76,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/ui/CMASDialog;Landroid/net/Uri;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/CMASDialog;
-    .param p1    # Landroid/net/Uri;
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/CMASDialog;->markAsRead(Landroid/net/Uri;)V
 
@@ -88,8 +84,6 @@
 
 .method static synthetic access$302(Lcom/android/mms/ui/CMASDialog;Landroid/app/AlertDialog;)Landroid/app/AlertDialog;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/CMASDialog;
-    .param p1    # Landroid/app/AlertDialog;
 
     iput-object p1, p0, Lcom/android/mms/ui/CMASDialog;->sDialog:Landroid/app/AlertDialog;
 
@@ -98,7 +92,6 @@
 
 .method static synthetic access$400(Lcom/android/mms/ui/CMASDialog;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/CMASDialog;
 
     invoke-direct {p0}, Lcom/android/mms/ui/CMASDialog;->checkLockScreenOn()Z
 
@@ -109,7 +102,6 @@
 
 .method static synthetic access$500(Lcom/android/mms/ui/CMASDialog;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/CMASDialog;
 
     invoke-direct {p0}, Lcom/android/mms/ui/CMASDialog;->launchMessage()V
 
@@ -118,7 +110,6 @@
 
 .method static synthetic access$600(Lcom/android/mms/ui/CMASDialog;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/CMASDialog;
 
     invoke-direct {p0}, Lcom/android/mms/ui/CMASDialog;->showCMASUserPropmtDialog()V
 
@@ -127,7 +118,6 @@
 
 .method static synthetic access$702(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/mms/ui/CMASDialog;->inCall:Z
 
@@ -197,7 +187,6 @@
 
 .method private isLockscreenExist(Landroid/content/Context;)Z
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const-string v1, "keyguard"
 
@@ -263,7 +252,6 @@
 
 .method private markAsRead(Landroid/net/Uri;)V
     .locals 5
-    .param p1    # Landroid/net/Uri;
 
     const/4 v4, 0x0
 
@@ -374,7 +362,6 @@
 
 .method private updateScreenOnWindowFlags(Z)V
     .locals 3
-    .param p1    # Z
 
     const/high16 v2, 0x200000
 
@@ -502,7 +489,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 14
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 

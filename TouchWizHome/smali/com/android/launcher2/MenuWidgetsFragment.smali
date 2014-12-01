@@ -72,7 +72,6 @@
 
 .method static synthetic access$000(Lcom/android/launcher2/MenuWidgetsFragment;)Lcom/android/launcher2/MenuWidgets;
     .locals 1
-    .param p0    # Lcom/android/launcher2/MenuWidgetsFragment;
 
     iget-object v0, p0, Lcom/android/launcher2/MenuWidgetsFragment;->mWidgets:Lcom/android/launcher2/MenuWidgets;
 
@@ -81,7 +80,6 @@
 
 .method static synthetic access$100(Lcom/android/launcher2/MenuWidgetsFragment;)Lcom/android/launcher2/MenuWidgets$WidgetState;
     .locals 1
-    .param p0    # Lcom/android/launcher2/MenuWidgetsFragment;
 
     iget-object v0, p0, Lcom/android/launcher2/MenuWidgetsFragment;->mWidgetState:Lcom/android/launcher2/MenuWidgets$WidgetState;
 
@@ -90,7 +88,6 @@
 
 .method static synthetic access$200(Lcom/android/launcher2/MenuWidgetsFragment;)Landroid/os/Bundle;
     .locals 1
-    .param p0    # Lcom/android/launcher2/MenuWidgetsFragment;
 
     iget-object v0, p0, Lcom/android/launcher2/MenuWidgetsFragment;->mWidgetStateBundle:Landroid/os/Bundle;
 
@@ -99,7 +96,6 @@
 
 .method static synthetic access$300(Lcom/android/launcher2/MenuWidgetsFragment;)Lcom/android/launcher2/MenuView;
     .locals 1
-    .param p0    # Lcom/android/launcher2/MenuWidgetsFragment;
 
     iget-object v0, p0, Lcom/android/launcher2/MenuWidgetsFragment;->mTabHost:Lcom/android/launcher2/MenuView;
 
@@ -143,7 +139,6 @@
 # virtual methods
 .method public changeWidgetState(Lcom/android/launcher2/MenuWidgets$WidgetState;)V
     .locals 3
-    .param p1    # Lcom/android/launcher2/MenuWidgets$WidgetState;
 
     iget-object v0, p0, Lcom/android/launcher2/MenuWidgetsFragment;->mWidgetState:Lcom/android/launcher2/MenuWidgets$WidgetState;
 
@@ -311,9 +306,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 4
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const/4 v3, -0x1
 
@@ -542,14 +534,12 @@
 
 .method public onHideTab(Lcom/android/launcher2/MenuView;)V
     .locals 0
-    .param p1    # Lcom/android/launcher2/MenuView;
 
     return-void
 .end method
 
 .method public onHomePressed(Z)Z
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/launcher2/MenuWidgetsFragment;->mWidgetState:Lcom/android/launcher2/MenuWidgets$WidgetState;
 
@@ -584,7 +574,6 @@
 
 .method public onOptionSelectedSearch(Lcom/android/launcher2/MenuView;)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/MenuView;
 
     sget-object v0, Lcom/android/launcher2/MenuWidgets$WidgetState;->SEARCH:Lcom/android/launcher2/MenuWidgets$WidgetState;
 
@@ -595,7 +584,6 @@
 
 .method public onOptionSelectedUninstall(Lcom/android/launcher2/MenuView;)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/MenuView;
 
     sget-object v0, Lcom/android/launcher2/MenuWidgets$WidgetState;->UNINSTALL:Lcom/android/launcher2/MenuWidgets$WidgetState;
 
@@ -741,7 +729,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onSaveInstanceState(Landroid/os/Bundle;)V
 
@@ -793,7 +780,6 @@
 
 .method public onShowTab(Lcom/android/launcher2/MenuView;)V
     .locals 2
-    .param p1    # Lcom/android/launcher2/MenuView;
 
     iget-object v0, p0, Lcom/android/launcher2/MenuWidgetsFragment;->mWidgets:Lcom/android/launcher2/MenuWidgets;
 
@@ -932,7 +918,6 @@
 
 .method public setTabHost(Lcom/android/launcher2/MenuView;)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/MenuView;
 
     iput-object p1, p0, Lcom/android/launcher2/MenuWidgetsFragment;->mTabHost:Lcom/android/launcher2/MenuView;
 

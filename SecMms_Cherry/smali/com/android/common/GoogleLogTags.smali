@@ -60,10 +60,6 @@
 
 .method public static writeC2Dm(ILjava/lang/String;II)V
     .locals 4
-    .param p0    # I
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     const v0, 0x31ce5
 
@@ -106,7 +102,6 @@
 
 .method public static writeGlsAccountSaved(I)V
     .locals 1
-    .param p0    # I
 
     const v0, 0x320d1
 
@@ -117,7 +112,6 @@
 
 .method public static writeGlsAccountTried(I)V
     .locals 1
-    .param p0    # I
 
     const v0, 0x320d0
 
@@ -128,8 +122,6 @@
 
 .method public static writeGlsAuthenticate(ILjava/lang/String;)V
     .locals 4
-    .param p0    # I
-    .param p1    # Ljava/lang/String;
 
     const v0, 0x320d2
 
@@ -156,10 +148,6 @@
 
 .method public static writeGoogleHttpRequest(JILjava/lang/String;I)V
     .locals 4
-    .param p0    # J
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
 
     const v0, 0x318fa
 
@@ -202,7 +190,6 @@
 
 .method public static writeGoogleMailSwitch(I)V
     .locals 1
-    .param p0    # I
 
     const v0, 0x320d3
 
@@ -213,8 +200,6 @@
 
 .method public static writeGtalkConnClose(II)V
     .locals 4
-    .param p0    # I
-    .param p1    # I
 
     const v0, 0x31ce3
 
@@ -245,7 +230,6 @@
 
 .method public static writeGtalkConnection(I)V
     .locals 1
-    .param p0    # I
 
     const v0, 0x31ce2
 
@@ -256,8 +240,6 @@
 
 .method public static writeGtalkHeartbeatReset(ILjava/lang/String;)V
     .locals 4
-    .param p0    # I
-    .param p1    # Ljava/lang/String;
 
     const v0, 0x31ce4
 
@@ -284,7 +266,6 @@
 
 .method public static writeGtalkservice(I)V
     .locals 1
-    .param p0    # I
 
     const v0, 0x31ce1
 
@@ -309,7 +290,6 @@
 
 .method public static writeSetupIoError(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const v0, 0x320cb
 
@@ -334,7 +314,6 @@
 
 .method public static writeSetupRequiredCaptcha(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const v0, 0x320ca
 
@@ -387,10 +366,6 @@
 
 .method public static writeSyncDetails(Ljava/lang/String;IILjava/lang/String;)V
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     const v0, 0x318f9
 
@@ -429,10 +404,6 @@
 
 .method public static writeSystemUpdate(IIJLjava/lang/String;)V
     .locals 4
-    .param p0    # I
-    .param p1    # I
-    .param p2    # J
-    .param p4    # Ljava/lang/String;
 
     const v0, 0x31129
 
@@ -475,7 +446,6 @@
 
 .method public static writeSystemUpdateUser(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const v0, 0x3112a
 
@@ -486,7 +456,6 @@
 
 .method public static writeTransactionEvent(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const v0, 0x31895
 
@@ -497,7 +466,6 @@
 
 .method public static writeVendingReconstruct(I)V
     .locals 1
-    .param p0    # I
 
     const v0, 0x31511
 

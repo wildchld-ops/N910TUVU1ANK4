@@ -57,8 +57,6 @@
 # virtual methods
 .method public addDialogAttribute(Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/ipsec/client/IPsecRelayData;->mDialogAttributes:Ljava/util/Vector;
 
@@ -180,7 +178,6 @@
 
 .method protected setDialogMessage(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/ipsec/client/IPsecRelayData;->mDialogMessage:Ljava/lang/String;
 
@@ -189,7 +186,6 @@
 
 .method protected setHashAlgorithm(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/ipsec/client/IPsecRelayData;->mHashAlgorithm:Ljava/lang/String;
 
@@ -198,7 +194,6 @@
 
 .method public setSignatureData([B)V
     .locals 0
-    .param p1    # [B
 
     iput-object p1, p0, Lcom/ipsec/client/IPsecRelayData;->mSignatureData:[B
 

@@ -36,16 +36,12 @@
 # virtual methods
 .method public onPageScrollStateChanged(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onPageScrolled(IFI)V
     .locals 3
-    .param p1    # I
-    .param p2    # F
-    .param p3    # I
 
     if-nez p1, :cond_1
 
@@ -127,7 +123,6 @@
 
 .method public onPageSelected(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/mms/ui/EmoticonContainer$11;->this$0:Lcom/android/mms/ui/EmoticonContainer;
 

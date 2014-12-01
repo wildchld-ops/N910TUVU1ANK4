@@ -33,7 +33,6 @@
 # virtual methods
 .method public valueChanged(Landroid/os/Bundle;)V
     .locals 22
-    .param p1    # Landroid/os/Bundle;
 
     const-string v19, "IPSC/IPsecClient"
 

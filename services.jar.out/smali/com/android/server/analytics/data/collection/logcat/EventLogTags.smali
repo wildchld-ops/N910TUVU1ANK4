@@ -24,7 +24,6 @@
 
 .method static synthetic access$000(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/android/server/analytics/data/collection/logcat/EventLogTags;->extractTagName(Ljava/lang/String;)Ljava/lang/String;
 
@@ -35,7 +34,6 @@
 
 .method private static final extractTagName(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     const-string v2, " "
 
@@ -62,7 +60,6 @@
 
 .method public static getTagNames(Ljava/lang/String;)Ljava/util/List;
     .locals 2
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

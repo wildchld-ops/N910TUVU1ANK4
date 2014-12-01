@@ -36,8 +36,6 @@
 
 .method synthetic constructor <init>(Landroid/webkitsec/ZoomManager;Landroid/webkitsec/ZoomManager$1;)V
     .locals 0
-    .param p1    # Landroid/webkitsec/ZoomManager;
-    .param p2    # Landroid/webkitsec/ZoomManager$1;
 
     invoke-direct {p0, p1}, Landroid/webkitsec/ZoomManager$ScaleDetectorListener;-><init>(Landroid/webkitsec/ZoomManager;)V
 
@@ -48,7 +46,6 @@
 # virtual methods
 .method public handleScale(Landroid/view/ScaleGestureDetector;)Z
     .locals 9
-    .param p1    # Landroid/view/ScaleGestureDetector;
 
     const/4 v8, 0x0
 
@@ -720,7 +717,6 @@
 
 .method public isPanningOnly(Landroid/view/ScaleGestureDetector;)Z
     .locals 12
-    .param p1    # Landroid/view/ScaleGestureDetector;
 
     const/4 v6, 0x0
 
@@ -1008,7 +1004,6 @@
 
 .method public onScale(Landroid/view/ScaleGestureDetector;)Z
     .locals 2
-    .param p1    # Landroid/view/ScaleGestureDetector;
 
     invoke-virtual {p0, p1}, Landroid/webkitsec/ZoomManager$ScaleDetectorListener;->isPanningOnly(Landroid/view/ScaleGestureDetector;)Z
 
@@ -1068,7 +1063,6 @@
 
 .method public onScaleBegin(Landroid/view/ScaleGestureDetector;)Z
     .locals 5
-    .param p1    # Landroid/view/ScaleGestureDetector;
 
     const/4 v4, 0x1
 
@@ -1294,7 +1288,6 @@
 
 .method public onScaleEnd(Landroid/view/ScaleGestureDetector;)V
     .locals 9
-    .param p1    # Landroid/view/ScaleGestureDetector;
 
     const/4 v2, 0x1
 

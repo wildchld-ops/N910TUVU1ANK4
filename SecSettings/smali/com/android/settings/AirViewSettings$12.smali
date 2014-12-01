@@ -40,7 +40,6 @@
 # virtual methods
 .method public onDismiss(Landroid/content/DialogInterface;)V
     .locals 8
-    .param p1    # Landroid/content/DialogInterface;
 
     const/4 v7, 0x1
 

@@ -149,7 +149,6 @@
 
 .method static synthetic access$000(Landroid/media/JetPlayer;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Landroid/media/JetPlayer;
 
     iget-object v0, p0, Landroid/media/JetPlayer;->mEventListenerLock:Ljava/lang/Object;
 
@@ -158,7 +157,6 @@
 
 .method static synthetic access$100(Landroid/media/JetPlayer;)Landroid/media/JetPlayer$OnJetEventListener;
     .locals 1
-    .param p0    # Landroid/media/JetPlayer;
 
     iget-object v0, p0, Landroid/media/JetPlayer;->mJetEventListener:Landroid/media/JetPlayer$OnJetEventListener;
 
@@ -167,7 +165,6 @@
 
 .method static synthetic access$200(Ljava/lang/String;)V
     .locals 0
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Landroid/media/JetPlayer;->loge(Ljava/lang/String;)V
 
@@ -203,7 +200,6 @@
 
 .method private static logd(Ljava/lang/String;)V
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "JetPlayer-J"
 
@@ -232,7 +228,6 @@
 
 .method private static loge(Ljava/lang/String;)V
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "JetPlayer-J"
 
@@ -306,10 +301,6 @@
 
 .method private static postEventFromNative(Ljava/lang/Object;III)V
     .locals 4
-    .param p0    # Ljava/lang/Object;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     check-cast p0, Ljava/lang/ref/WeakReference;
 
@@ -388,7 +379,6 @@
 
 .method public loadJetFile(Landroid/content/res/AssetFileDescriptor;)Z
     .locals 6
-    .param p1    # Landroid/content/res/AssetFileDescriptor;
 
     invoke-virtual {p1}, Landroid/content/res/AssetFileDescriptor;->getLength()J
 
@@ -428,7 +418,6 @@
 
 .method public loadJetFile(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Landroid/media/JetPlayer;->native_loadJetFromFile(Ljava/lang/String;)Z
 
@@ -459,12 +448,6 @@
 
 .method public queueJetSegment(IIIIIB)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # B
 
     invoke-direct/range {p0 .. p6}, Landroid/media/JetPlayer;->native_queueJetSegment(IIIIIB)Z
 
@@ -475,12 +458,6 @@
 
 .method public queueJetSegmentMuteArray(IIII[ZB)Z
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # [Z
-    .param p6    # B
 
     array-length v0, p5
 
@@ -517,7 +494,6 @@
 
 .method public setEventListener(Landroid/media/JetPlayer$OnJetEventListener;)V
     .locals 1
-    .param p1    # Landroid/media/JetPlayer$OnJetEventListener;
 
     const/4 v0, 0x0
 
@@ -528,8 +504,6 @@
 
 .method public setEventListener(Landroid/media/JetPlayer$OnJetEventListener;Landroid/os/Handler;)V
     .locals 3
-    .param p1    # Landroid/media/JetPlayer$OnJetEventListener;
-    .param p2    # Landroid/os/Handler;
 
     iget-object v1, p0, Landroid/media/JetPlayer;->mEventListenerLock:Ljava/lang/Object;
 
@@ -590,8 +564,6 @@
 
 .method public setMuteArray([ZZ)Z
     .locals 2
-    .param p1    # [Z
-    .param p2    # Z
 
     array-length v0, p1
 
@@ -616,9 +588,6 @@
 
 .method public setMuteFlag(IZZ)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # Z
 
     invoke-direct {p0, p1, p2, p3}, Landroid/media/JetPlayer;->native_setMuteFlag(IZZ)Z
 
@@ -629,8 +598,6 @@
 
 .method public setMuteFlags(IZ)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Landroid/media/JetPlayer;->native_setMuteFlags(IZ)Z
 
@@ -641,7 +608,6 @@
 
 .method public triggerClip(I)Z
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/media/JetPlayer;->native_triggerClip(I)Z
 

@@ -54,9 +54,6 @@
 
 .method public vibrate(ILjava/lang/String;J)V
     .locals 0
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # J
 
     invoke-virtual {p0, p3, p4}, Landroid/os/NullVibrator;->vibrate(J)V
 
@@ -65,10 +62,6 @@
 
 .method public vibrate(ILjava/lang/String;[JI)V
     .locals 0
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # [J
-    .param p4    # I
 
     invoke-virtual {p0, p3, p4}, Landroid/os/NullVibrator;->vibrate([JI)V
 
@@ -77,15 +70,12 @@
 
 .method public vibrate(J)V
     .locals 0
-    .param p1    # J
 
     return-void
 .end method
 
 .method public vibrate([JI)V
     .locals 1
-    .param p1    # [J
-    .param p2    # I
 
     array-length v0, p1
 

@@ -36,8 +36,6 @@
 # virtual methods
 .method public onServiceConnected(ILandroid/bluetooth/BluetoothProfile;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/bluetooth/BluetoothProfile;
 
     iget-object v0, p0, Lcom/android/server/enterprise/restriction/RestrictionPolicy$5;->this$0:Lcom/android/server/enterprise/restriction/RestrictionPolicy;
 
@@ -51,7 +49,6 @@
 
 .method public onServiceDisconnected(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/enterprise/restriction/RestrictionPolicy$5;->this$0:Lcom/android/server/enterprise/restriction/RestrictionPolicy;
 

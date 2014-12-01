@@ -66,7 +66,6 @@
 
 .method private notifyTouchEvent(Landroid/view/MotionEvent;)V
     .locals 6
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-object v3, p0, Landroid/view/ViewRootImpl$MotionEventMonitor;->mListeners:Ljava/util/ArrayList;
 
@@ -126,7 +125,6 @@
 # virtual methods
 .method public dispatchInputEvent(Landroid/view/InputEvent;)V
     .locals 5
-    .param p1    # Landroid/view/InputEvent;
 
     iget-object v2, p0, Landroid/view/ViewRootImpl$MotionEventMonitor;->mListeners:Ljava/util/ArrayList;
 
@@ -214,7 +212,6 @@
 
 .method public registerMotionEventMonitor(Landroid/view/ViewRootImpl$MotionEventMonitor$OnTouchListener;)V
     .locals 3
-    .param p1    # Landroid/view/ViewRootImpl$MotionEventMonitor$OnTouchListener;
 
     iget-object v0, p0, Landroid/view/ViewRootImpl$MotionEventMonitor;->mListeners:Ljava/util/ArrayList;
 
@@ -276,7 +273,6 @@
 
 .method public unregisterMotionEventMonitor(Landroid/view/ViewRootImpl$MotionEventMonitor$OnTouchListener;)V
     .locals 3
-    .param p1    # Landroid/view/ViewRootImpl$MotionEventMonitor$OnTouchListener;
 
     iget-object v0, p0, Landroid/view/ViewRootImpl$MotionEventMonitor;->mListeners:Ljava/util/ArrayList;
 

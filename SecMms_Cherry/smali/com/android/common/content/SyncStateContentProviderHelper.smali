@@ -113,7 +113,6 @@
 # virtual methods
 .method public createDatabase(Landroid/database/sqlite/SQLiteDatabase;)V
     .locals 4
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
 
     const-string v1, "DROP TABLE IF EXISTS _sync_state"
 
@@ -156,9 +155,6 @@
 
 .method public delete(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;[Ljava/lang/String;)I
     .locals 1
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p2    # Ljava/lang/String;
-    .param p3    # [Ljava/lang/String;
 
     const-string v0, "_sync_state"
 
@@ -171,8 +167,6 @@
 
 .method public insert(Landroid/database/sqlite/SQLiteDatabase;Landroid/content/ContentValues;)J
     .locals 2
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p2    # Landroid/content/ContentValues;
 
     const-string v0, "_sync_state"
 
@@ -187,8 +181,6 @@
 
 .method public onAccountsChanged(Landroid/database/sqlite/SQLiteDatabase;[Landroid/accounts/Account;)V
     .locals 12
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p2    # [Landroid/accounts/Account;
 
     const/4 v3, 0x0
 
@@ -278,7 +270,6 @@
 
 .method public onDatabaseOpened(Landroid/database/sqlite/SQLiteDatabase;)V
     .locals 4
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
 
     const-string v2, "SELECT version FROM _sync_state_metadata"
 
@@ -302,11 +293,6 @@
 
 .method public query(Landroid/database/sqlite/SQLiteDatabase;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
     .locals 8
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # [Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
 
     const/4 v5, 0x0
 
@@ -333,9 +319,6 @@
 
 .method public update(Landroid/database/sqlite/SQLiteDatabase;JLjava/lang/Object;)I
     .locals 6
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p2    # J
-    .param p4    # Ljava/lang/Object;
 
     const/4 v1, 0x1
 
@@ -396,10 +379,6 @@
 
 .method public update(Landroid/database/sqlite/SQLiteDatabase;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)I
     .locals 1
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p2    # Landroid/content/ContentValues;
-    .param p3    # Ljava/lang/String;
-    .param p4    # [Ljava/lang/String;
 
     const-string v0, "_sync_state"
 

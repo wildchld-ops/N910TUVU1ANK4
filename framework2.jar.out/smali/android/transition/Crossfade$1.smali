@@ -44,7 +44,6 @@
 # virtual methods
 .method public onAnimationUpdate(Landroid/animation/ValueAnimator;)V
     .locals 2
-    .param p1    # Landroid/animation/ValueAnimator;
 
     iget-object v0, p0, Landroid/transition/Crossfade$1;->val$view:Landroid/view/View;
 

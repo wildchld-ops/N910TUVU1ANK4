@@ -132,7 +132,6 @@
 
 .method static synthetic access$000(Landroid/media/MediaActionSound;)I
     .locals 1
-    .param p0    # Landroid/media/MediaActionSound;
 
     iget v0, p0, Landroid/media/MediaActionSound;->mSoundIdToPlay:I
 
@@ -141,8 +140,6 @@
 
 .method static synthetic access$002(Landroid/media/MediaActionSound;I)I
     .locals 0
-    .param p0    # Landroid/media/MediaActionSound;
-    .param p1    # I
 
     iput p1, p0, Landroid/media/MediaActionSound;->mSoundIdToPlay:I
 
@@ -153,7 +150,6 @@
 # virtual methods
 .method public declared-synchronized load(I)V
     .locals 4
-    .param p1    # I
 
     monitor-enter p0
 
@@ -236,7 +232,6 @@
 
 .method public declared-synchronized play(I)V
     .locals 7
-    .param p1    # I
 
     monitor-enter p0
 

@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Landroid/content/AbstractThreadedSyncAdapter;Landroid/content/AbstractThreadedSyncAdapter$1;)V
     .locals 0
-    .param p1    # Landroid/content/AbstractThreadedSyncAdapter;
-    .param p2    # Landroid/content/AbstractThreadedSyncAdapter$1;
 
     invoke-direct {p0, p1}, Landroid/content/AbstractThreadedSyncAdapter$ISyncAdapterImpl;-><init>(Landroid/content/AbstractThreadedSyncAdapter;)V
 
@@ -43,7 +41,6 @@
 # virtual methods
 .method public cancelSync(Landroid/content/ISyncContext;)V
     .locals 6
-    .param p1    # Landroid/content/ISyncContext;
 
     const/4 v2, 0x0
 
@@ -146,8 +143,6 @@
 
 .method public initialize(Landroid/accounts/Account;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -173,10 +168,6 @@
 
 .method public startSync(Landroid/content/ISyncContext;Ljava/lang/String;Landroid/accounts/Account;Landroid/os/Bundle;)V
     .locals 11
-    .param p1    # Landroid/content/ISyncContext;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/accounts/Account;
-    .param p4    # Landroid/os/Bundle;
 
     new-instance v3, Landroid/content/SyncContext;
 

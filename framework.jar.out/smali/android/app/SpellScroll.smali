@@ -137,7 +137,6 @@
 
 .method private constructor <init>(Landroid/app/SpellScroll;)V
     .locals 1
-    .param p1    # Landroid/app/SpellScroll;
 
     invoke-direct {p0}, Landroid/app/ExtraAttr$Owner;-><init>()V
 
@@ -214,10 +213,6 @@
 
 .method private constructor <init>(Landroid/content/Context;Landroid/content/pm/ActivityInfo;Landroid/content/ComponentName;Z)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/pm/ActivityInfo;
-    .param p3    # Landroid/content/ComponentName;
-    .param p4    # Z
 
     invoke-direct {p0}, Landroid/app/ExtraAttr$Owner;-><init>()V
 
@@ -336,10 +331,6 @@
 
 .method private constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;Landroid/content/ComponentName;Z)V
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # Landroid/content/ComponentName;
-    .param p4    # Z
 
     const/4 v6, 0x0
 
@@ -532,7 +523,6 @@
 
 .method constructor <init>(Landroid/os/Parcel;)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Landroid/app/ExtraAttr$Owner;-><init>()V
 
@@ -728,8 +718,6 @@
 
 .method private static createPackageContext(Landroid/content/Context;Landroid/content/ComponentName;)Landroid/content/Context;
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/content/ComponentName;
 
     const/4 v1, 0x0
 
@@ -815,9 +803,6 @@
 
 .method public static createPseudoSpellScroll(Landroid/content/Context;Landroid/content/pm/ActivityInfo;Z)Landroid/app/SpellScroll;
     .locals 9
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/content/pm/ActivityInfo;
-    .param p2    # Z
 
     if-nez p1, :cond_0
 
@@ -888,11 +873,6 @@
 
 .method private static getComponentMetaData(Landroid/content/Context;Lorg/xmlpull/v1/XmlPullParser;Landroid/content/ComponentName;IZ)Landroid/app/SpellScroll;
     .locals 24
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lorg/xmlpull/v1/XmlPullParser;
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # I
-    .param p4    # Z
 
     const/4 v15, 0x0
 
@@ -1939,10 +1919,6 @@
 
 .method public static getMetaData(Landroid/content/Context;Landroid/content/pm/PackageItemInfo;IZ)Landroid/app/SpellScroll;
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/content/pm/PackageItemInfo;
-    .param p2    # I
-    .param p3    # Z
 
     const/4 v1, 0x0
 
@@ -2137,7 +2113,6 @@
 # virtual methods
 .method public declared-synchronized addSpell(Landroid/app/SpellScroll$Spell;)V
     .locals 3
-    .param p1    # Landroid/app/SpellScroll$Spell;
 
     monitor-enter p0
 
@@ -2221,7 +2196,6 @@
 
 .method public declared-synchronized addSpellSet(Landroid/app/SpellScroll$SpellSet;)V
     .locals 1
-    .param p1    # Landroid/app/SpellScroll$SpellSet;
 
     monitor-enter p0
 
@@ -2254,7 +2228,6 @@
 
 .method public dump(Ljava/io/PrintWriter;)V
     .locals 6
-    .param p1    # Ljava/io/PrintWriter;
 
     new-instance v4, Ljava/lang/StringBuilder;
 
@@ -2604,7 +2577,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 4
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x0
 
@@ -2783,7 +2755,6 @@
 
 .method public declared-synchronized getMatchedInstantSpell(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -2859,7 +2830,6 @@
 
 .method public getPackageContext(Landroid/content/Context;)Landroid/content/Context;
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     iget-object v0, p0, Landroid/app/SpellScroll;->mSpellScrollComponent:Landroid/content/ComponentName;
 
@@ -2924,7 +2894,6 @@
 
 .method public declared-synchronized getSpell(Ljava/lang/String;)Landroid/app/SpellScroll$Spell;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -3022,7 +2991,6 @@
 
 .method public declared-synchronized getSpellSet(Ljava/lang/String;)Landroid/app/SpellScroll$SpellSet;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -3113,7 +3081,6 @@
 
 .method public declared-synchronized hasIngredientName(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -3261,7 +3228,6 @@
 
 .method public isMergable(Landroid/app/SpellScroll;)Z
     .locals 2
-    .param p1    # Landroid/app/SpellScroll;
 
     if-nez p1, :cond_0
 
@@ -3299,7 +3265,6 @@
 
 .method public declared-synchronized merge(Landroid/app/SpellScroll;)V
     .locals 4
-    .param p1    # Landroid/app/SpellScroll;
 
     monitor-enter p0
 
@@ -3392,8 +3357,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 5
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     const/4 v3, 0x0
 

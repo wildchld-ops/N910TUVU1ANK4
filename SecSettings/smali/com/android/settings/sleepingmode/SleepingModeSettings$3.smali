@@ -21,7 +21,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/settings/sleepingmode/SleepingModeSettings;Landroid/content/Context;)V
     .locals 0
-    .param p2    # Landroid/content/Context;
 
     iput-object p1, p0, Lcom/android/settings/sleepingmode/SleepingModeSettings$3;->this$0:Lcom/android/settings/sleepingmode/SleepingModeSettings;
 
@@ -34,7 +33,6 @@
 # virtual methods
 .method protected onBindView(Landroid/view/View;)V
     .locals 5
-    .param p1    # Landroid/view/View;
 
     invoke-super {p0, p1}, Landroid/preference/Preference;->onBindView(Landroid/view/View;)V
 

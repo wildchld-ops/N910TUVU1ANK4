@@ -35,12 +35,6 @@
 # direct methods
 .method public constructor <init>(Landroid/opengl/GLSurfaceView;IIIIII)V
     .locals 4
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
 
     const/4 v3, 0x1
 
@@ -137,11 +131,6 @@
 
 .method private findConfigAttrib(Ljavax/microedition/khronos/egl/EGL10;Ljavax/microedition/khronos/egl/EGLDisplay;Ljavax/microedition/khronos/egl/EGLConfig;II)I
     .locals 2
-    .param p1    # Ljavax/microedition/khronos/egl/EGL10;
-    .param p2    # Ljavax/microedition/khronos/egl/EGLDisplay;
-    .param p3    # Ljavax/microedition/khronos/egl/EGLConfig;
-    .param p4    # I
-    .param p5    # I
 
     iget-object v0, p0, Landroid/opengl/GLSurfaceView$ComponentSizeChooser;->mValue:[I
 
@@ -165,9 +154,6 @@
 # virtual methods
 .method public chooseConfig(Ljavax/microedition/khronos/egl/EGL10;Ljavax/microedition/khronos/egl/EGLDisplay;[Ljavax/microedition/khronos/egl/EGLConfig;)Ljavax/microedition/khronos/egl/EGLConfig;
     .locals 15
-    .param p1    # Ljavax/microedition/khronos/egl/EGL10;
-    .param p2    # Ljavax/microedition/khronos/egl/EGLDisplay;
-    .param p3    # [Ljavax/microedition/khronos/egl/EGLConfig;
 
     move-object/from16 v7, p3
 

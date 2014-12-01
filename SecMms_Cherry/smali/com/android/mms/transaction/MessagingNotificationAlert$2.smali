@@ -36,7 +36,6 @@
 # virtual methods
 .method public onInit(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/mms/transaction/MessagingNotificationAlert$2;->this$0:Lcom/android/mms/transaction/MessagingNotificationAlert;
 

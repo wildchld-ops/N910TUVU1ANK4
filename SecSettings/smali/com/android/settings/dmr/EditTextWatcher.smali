@@ -53,7 +53,6 @@
 # virtual methods
 .method public afterTextChanged(Landroid/text/Editable;)V
     .locals 8
-    .param p1    # Landroid/text/Editable;
 
     const/4 v6, 0x0
 
@@ -305,10 +304,6 @@
 
 .method public beforeTextChanged(Ljava/lang/CharSequence;III)V
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
@@ -325,18 +320,12 @@
 
 .method public onTextChanged(Ljava/lang/CharSequence;III)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     return-void
 .end method
 
 .method public setDialog(Landroid/app/Dialog;Landroid/content/Context;)V
     .locals 5
-    .param p1    # Landroid/app/Dialog;
-    .param p2    # Landroid/content/Context;
 
     const/4 v4, 0x0
 

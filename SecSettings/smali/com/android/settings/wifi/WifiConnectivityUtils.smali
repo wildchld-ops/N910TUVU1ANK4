@@ -34,7 +34,6 @@
 
 .method public static forgetNetWork(Landroid/net/wifi/WifiManager;)V
     .locals 6
-    .param p0    # Landroid/net/wifi/WifiManager;
 
     invoke-virtual {p0}, Landroid/net/wifi/WifiManager;->getConfiguredNetworks()Ljava/util/List;
 
@@ -115,7 +114,6 @@
 
 .method public static getWifiNetworkID(Landroid/net/wifi/WifiManager;)I
     .locals 2
-    .param p0    # Landroid/net/wifi/WifiManager;
 
     if-eqz p0, :cond_0
 
@@ -542,7 +540,6 @@
 
 .method private static lookupHost(Ljava/lang/String;)Ljava/net/InetAddress;
     .locals 8
-    .param p0    # Ljava/lang/String;
 
     const/4 v6, 0x0
 
@@ -591,7 +588,6 @@
 
 .method public static setCustomTitle(Landroid/app/Activity;)V
     .locals 3
-    .param p0    # Landroid/app/Activity;
 
     invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
 

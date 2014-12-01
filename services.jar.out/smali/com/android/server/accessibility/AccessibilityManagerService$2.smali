@@ -33,7 +33,6 @@
 # virtual methods
 .method public onDone(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const-string/jumbo v1, "talkbackOn"
 
@@ -120,14 +119,12 @@
 
 .method public onError(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method public onStart(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     return-void
 .end method

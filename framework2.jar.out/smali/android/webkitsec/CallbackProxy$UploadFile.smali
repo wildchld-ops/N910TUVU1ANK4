@@ -46,8 +46,6 @@
 
 .method synthetic constructor <init>(Landroid/webkitsec/CallbackProxy;Landroid/webkitsec/CallbackProxy$1;)V
     .locals 0
-    .param p1    # Landroid/webkitsec/CallbackProxy;
-    .param p2    # Landroid/webkitsec/CallbackProxy$1;
 
     invoke-direct {p0, p1}, Landroid/webkitsec/CallbackProxy$UploadFile;-><init>(Landroid/webkitsec/CallbackProxy;)V
 
@@ -66,7 +64,6 @@
 
 .method public onReceiveValue(Landroid/net/Uri;)V
     .locals 2
-    .param p1    # Landroid/net/Uri;
 
     iput-object p1, p0, Landroid/webkitsec/CallbackProxy$UploadFile;->mValue:Landroid/net/Uri;
 
@@ -95,7 +92,6 @@
 
 .method public bridge synthetic onReceiveValue(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Landroid/net/Uri;
 

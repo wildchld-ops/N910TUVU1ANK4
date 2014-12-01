@@ -245,7 +245,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/LockscreenMenuSettings;)Landroid/preference/SwitchPreferenceScreen;
     .locals 1
-    .param p0    # Lcom/android/settings/LockscreenMenuSettings;
 
     iget-object v0, p0, Lcom/android/settings/LockscreenMenuSettings;->mSafetyZone:Landroid/preference/SwitchPreferenceScreen;
 
@@ -254,7 +253,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/LockscreenMenuSettings;)Landroid/telephony/TelephonyManager;
     .locals 1
-    .param p0    # Lcom/android/settings/LockscreenMenuSettings;
 
     iget-object v0, p0, Lcom/android/settings/LockscreenMenuSettings;->mTelephonyManager:Landroid/telephony/TelephonyManager;
 
@@ -263,7 +261,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/LockscreenMenuSettings;)Landroid/preference/CheckBoxPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/LockscreenMenuSettings;
 
     iget-object v0, p0, Lcom/android/settings/LockscreenMenuSettings;->mCameraShortcut:Landroid/preference/CheckBoxPreference;
 
@@ -272,7 +269,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/LockscreenMenuSettings;)Landroid/preference/SwitchPreferenceScreen;
     .locals 1
-    .param p0    # Lcom/android/settings/LockscreenMenuSettings;
 
     iget-object v0, p0, Lcom/android/settings/LockscreenMenuSettings;->mDualclock:Landroid/preference/SwitchPreferenceScreen;
 
@@ -281,8 +277,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/LockscreenMenuSettings;Z)V
     .locals 0
-    .param p0    # Lcom/android/settings/LockscreenMenuSettings;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/settings/LockscreenMenuSettings;->broadcastMotionChanged(Z)V
 
@@ -291,7 +285,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/LockscreenMenuSettings;)Landroid/preference/SwitchPreferenceScreen;
     .locals 1
-    .param p0    # Lcom/android/settings/LockscreenMenuSettings;
 
     iget-object v0, p0, Lcom/android/settings/LockscreenMenuSettings;->mMotionCameraShortCut:Landroid/preference/SwitchPreferenceScreen;
 
@@ -300,7 +293,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/LockscreenMenuSettings;)V
     .locals 0
-    .param p0    # Lcom/android/settings/LockscreenMenuSettings;
 
     invoke-direct {p0}, Lcom/android/settings/LockscreenMenuSettings;->showSafetyZoneEnableDialog()V
 
@@ -309,7 +301,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/LockscreenMenuSettings;)V
     .locals 0
-    .param p0    # Lcom/android/settings/LockscreenMenuSettings;
 
     invoke-direct {p0}, Lcom/android/settings/LockscreenMenuSettings;->saveCameraShortcutSharedPreferences()V
 
@@ -6477,7 +6468,6 @@
 
 .method private isToggled(Landroid/preference/Preference;)Z
     .locals 1
-    .param p1    # Landroid/preference/Preference;
 
     check-cast p1, Landroid/preference/CheckBoxPreference;
 
@@ -7928,8 +7918,6 @@
 
 .method protected isEnabledPkg(Landroid/content/Context;Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -7993,7 +7981,6 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onActivityCreated(Landroid/os/Bundle;)V
 
@@ -8142,8 +8129,6 @@
 
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 0
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     return-void
 .end method

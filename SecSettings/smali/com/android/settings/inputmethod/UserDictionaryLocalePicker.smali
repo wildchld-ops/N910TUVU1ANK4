@@ -6,7 +6,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/settings/inputmethod/UserDictionaryAddWordFragment;)V
     .locals 0
-    .param p1    # Lcom/android/settings/inputmethod/UserDictionaryAddWordFragment;
 
     invoke-direct {p0}, Lcom/android/internal/app/LocalePicker;-><init>()V
 

@@ -23,7 +23,6 @@
 # direct methods
 .method public constructor <init>(Landroid/service/wallpaper/WallpaperService;Landroid/service/wallpaper/WallpaperService;)V
     .locals 0
-    .param p2    # Landroid/service/wallpaper/WallpaperService;
 
     iput-object p1, p0, Landroid/service/wallpaper/WallpaperService$IWallpaperServiceWrapper;->this$0:Landroid/service/wallpaper/WallpaperService;
 
@@ -38,12 +37,6 @@
 # virtual methods
 .method public attach(Landroid/service/wallpaper/IWallpaperConnection;Landroid/os/IBinder;IZII)V
     .locals 9
-    .param p1    # Landroid/service/wallpaper/IWallpaperConnection;
-    .param p2    # Landroid/os/IBinder;
-    .param p3    # I
-    .param p4    # Z
-    .param p5    # I
-    .param p6    # I
 
     new-instance v0, Landroid/service/wallpaper/WallpaperService$IWallpaperEngineWrapper;
 

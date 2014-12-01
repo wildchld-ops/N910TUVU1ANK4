@@ -40,12 +40,6 @@
 # virtual methods
 .method public add(DDFJLandroid/app/PendingIntent;Ljava/lang/String;)V
     .locals 10
-    .param p1    # D
-    .param p3    # D
-    .param p5    # F
-    .param p6    # J
-    .param p8    # Landroid/app/PendingIntent;
-    .param p9    # Ljava/lang/String;
 
     new-instance v0, Landroid/location/GeoFenceParams;
 
@@ -70,7 +64,6 @@
 
 .method public add(Landroid/location/GeoFenceParams;)V
     .locals 3
-    .param p1    # Landroid/location/GeoFenceParams;
 
     iget-object v1, p0, Lcom/android/server/location/GeoFencerBase;->mGeoFences:Ljava/util/HashMap;
 
@@ -134,8 +127,6 @@
 
 .method public dump(Ljava/io/PrintWriter;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/io/PrintWriter;
-    .param p2    # Ljava/lang/String;
 
     iget-object v2, p0, Lcom/android/server/location/GeoFencerBase;->mGeoFences:Ljava/util/HashMap;
 
@@ -271,7 +262,6 @@
 
 .method public getGeoFence(Landroid/app/PendingIntent;)Landroid/location/GeoFenceParams;
     .locals 1
-    .param p1    # Landroid/app/PendingIntent;
 
     iget-object v0, p0, Lcom/android/server/location/GeoFencerBase;->mGeoFences:Ljava/util/HashMap;
 
@@ -298,7 +288,6 @@
 
 .method public hasCaller(I)Z
     .locals 3
-    .param p1    # I
 
     iget-object v2, p0, Lcom/android/server/location/GeoFencerBase;->mGeoFences:Ljava/util/HashMap;
 
@@ -340,7 +329,6 @@
 
 .method public remove(Landroid/app/PendingIntent;)V
     .locals 1
-    .param p1    # Landroid/app/PendingIntent;
 
     const/4 v0, 0x0
 
@@ -351,8 +339,6 @@
 
 .method public remove(Landroid/app/PendingIntent;Z)V
     .locals 5
-    .param p1    # Landroid/app/PendingIntent;
-    .param p2    # Z
 
     const/4 v1, 0x0
 
@@ -428,7 +414,6 @@
 
 .method public removeCaller(I)V
     .locals 6
-    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -509,7 +494,6 @@
 
 .method public transferService(Lcom/android/server/location/GeoFencerBase;)V
     .locals 3
-    .param p1    # Lcom/android/server/location/GeoFencerBase;
 
     iget-object v2, p1, Lcom/android/server/location/GeoFencerBase;->mGeoFences:Ljava/util/HashMap;
 

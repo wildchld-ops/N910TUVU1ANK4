@@ -50,7 +50,6 @@
 
 .method private setEnableMagazine(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-static {}, Lcom/android/launcher2/Launcher;->getInstance()Lcom/android/launcher2/Launcher;
 
@@ -66,7 +65,6 @@
 
 .method private setEnableTransitionEffect(I)V
     .locals 5
-    .param p1    # I
 
     invoke-static {}, Lcom/android/launcher2/Launcher;->getInstance()Lcom/android/launcher2/Launcher;
 
@@ -111,7 +109,6 @@
 
 .method private setSummaryTransitionList(I)V
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -151,9 +148,6 @@
 # virtual methods
 .method protected onActivityResult(IILandroid/content/Intent;)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     sget-object v0, Lcom/android/launcher2/HomeScreenOptionSettings;->TAG:Ljava/lang/String;
 
@@ -182,7 +176,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 7
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v6, 0x1
 
@@ -438,7 +431,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -470,8 +462,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 4
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     const/4 v3, 0x0
 

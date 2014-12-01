@@ -33,9 +33,6 @@
 # virtual methods
 .method public onStorageStateChanged(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/server/usb/UsbStorageNotification$1;->this$0:Lcom/android/server/usb/UsbStorageNotification;
 
@@ -52,7 +49,6 @@
 
 .method public onUsbMassStorageConnectionChanged(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method

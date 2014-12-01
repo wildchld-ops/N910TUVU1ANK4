@@ -92,7 +92,7 @@
     :cond_0
     iget-object v1, p0, Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode$ImageDlg;->mDlgGrid:Landroid/widget/GridView;
 
-    invoke-virtual {v1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+    invoke-virtual {v1}, Landroid/widget/GridView;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v0
 
@@ -131,7 +131,7 @@
 
     move-result v1
 
-    iput v1, v0, Landroid/view/ViewGroup$LayoutParams;->width:I
+    iput v1, v0, Landroid/view/ViewGroup$MarginLayoutParams;->width:I
 
     iget-object v1, p0, Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode$ImageDlg;->this$0:Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;
 
@@ -156,7 +156,7 @@
     :goto_1
     iget-object v1, p0, Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode$ImageDlg;->mDlgGrid:Landroid/widget/GridView;
 
-    invoke-virtual {v1, v0}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+    invoke-virtual {v1, v0}, Landroid/widget/GridView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
     goto :goto_0
 
@@ -190,7 +190,7 @@
 
     move-result v1
 
-    iput v1, v0, Landroid/view/ViewGroup$LayoutParams;->width:I
+    iput v1, v0, Landroid/view/ViewGroup$MarginLayoutParams;->width:I
 
     iget-object v1, p0, Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode$ImageDlg;->this$0:Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;
 
@@ -233,11 +233,11 @@
 
     const v1, 0x7f040081
 
-    invoke-virtual {p0, v1}, Landroid/app/Dialog;->setContentView(I)V
+    invoke-virtual {p0, v1}, Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode$ImageDlg;->setContentView(I)V
 
     const v1, 0x7f0a01d7
 
-    invoke-virtual {p0, v1}, Landroid/app/Dialog;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v1}, Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode$ImageDlg;->findViewById(I)Landroid/view/View;
 
     move-result-object v1
 
@@ -247,7 +247,7 @@
 
     iget-object v1, p0, Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode$ImageDlg;->this$0:Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;
 
-    invoke-virtual {v1}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v1}, Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -303,7 +303,7 @@
 
     invoke-direct {v2, p0}, Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode$ImageDlg$1;-><init>(Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode$ImageDlg;)V
 
-    invoke-virtual {v1, v2}, Landroid/widget/AdapterView;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
+    invoke-virtual {v1, v2}, Landroid/widget/GridView;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
 
     return-void
 .end method

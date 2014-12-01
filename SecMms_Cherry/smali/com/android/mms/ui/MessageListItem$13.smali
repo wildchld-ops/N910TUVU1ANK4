@@ -36,7 +36,6 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 14
-    .param p1    # Landroid/view/View;
 
     iget-object v10, p0, Lcom/android/mms/ui/MessageListItem$13;->this$0:Lcom/android/mms/ui/MessageListItem;
 

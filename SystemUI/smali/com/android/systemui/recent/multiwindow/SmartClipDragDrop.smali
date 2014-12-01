@@ -241,7 +241,6 @@
 
 .method static synthetic access$100(Lcom/android/systemui/recent/multiwindow/SmartClipDragDrop;)V
     .locals 0
-    .param p0    # Lcom/android/systemui/recent/multiwindow/SmartClipDragDrop;
 
     invoke-direct {p0}, Lcom/android/systemui/recent/multiwindow/SmartClipDragDrop;->notifyStartDragMode()V
 
@@ -250,11 +249,6 @@
 
 .method static synthetic access$1000(Lcom/android/systemui/recent/multiwindow/SmartClipDragDrop;Landroid/view/View;Ljava/lang/String;Landroid/graphics/Rect;I)V
     .locals 0
-    .param p0    # Lcom/android/systemui/recent/multiwindow/SmartClipDragDrop;
-    .param p1    # Landroid/view/View;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/graphics/Rect;
-    .param p4    # I
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/systemui/recent/multiwindow/SmartClipDragDrop;->startTextDrag(Landroid/view/View;Ljava/lang/String;Landroid/graphics/Rect;I)V
 
@@ -263,10 +257,6 @@
 
 .method static synthetic access$1100(Lcom/android/systemui/recent/multiwindow/SmartClipDragDrop;Landroid/view/View;Landroid/graphics/Rect;I)V
     .locals 0
-    .param p0    # Lcom/android/systemui/recent/multiwindow/SmartClipDragDrop;
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/graphics/Rect;
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/systemui/recent/multiwindow/SmartClipDragDrop;->startImageDrag(Landroid/view/View;Landroid/graphics/Rect;I)V
 
@@ -275,7 +265,6 @@
 
 .method static synthetic access$1200(Lcom/android/systemui/recent/multiwindow/SmartClipDragDrop;)V
     .locals 0
-    .param p0    # Lcom/android/systemui/recent/multiwindow/SmartClipDragDrop;
 
     invoke-direct {p0}, Lcom/android/systemui/recent/multiwindow/SmartClipDragDrop;->stopSmartClipDragDropThread()V
 
@@ -284,9 +273,6 @@
 
 .method static synthetic access$1300(Lcom/android/systemui/recent/multiwindow/SmartClipDragDrop;Landroid/graphics/Rect;I)Landroid/graphics/Bitmap;
     .locals 1
-    .param p0    # Lcom/android/systemui/recent/multiwindow/SmartClipDragDrop;
-    .param p1    # Landroid/graphics/Rect;
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/systemui/recent/multiwindow/SmartClipDragDrop;->cropScreen(Landroid/graphics/Rect;I)Landroid/graphics/Bitmap;
 
@@ -297,8 +283,6 @@
 
 .method static synthetic access$1400(Lcom/android/systemui/recent/multiwindow/SmartClipDragDrop;Landroid/graphics/Bitmap;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/systemui/recent/multiwindow/SmartClipDragDrop;
-    .param p1    # Landroid/graphics/Bitmap;
 
     invoke-direct {p0, p1}, Lcom/android/systemui/recent/multiwindow/SmartClipDragDrop;->saveImageFile(Landroid/graphics/Bitmap;)Ljava/lang/String;
 
@@ -309,7 +293,6 @@
 
 .method static synthetic access$1500(Lcom/android/systemui/recent/multiwindow/SmartClipDragDrop;)V
     .locals 0
-    .param p0    # Lcom/android/systemui/recent/multiwindow/SmartClipDragDrop;
 
     invoke-direct {p0}, Lcom/android/systemui/recent/multiwindow/SmartClipDragDrop;->minimize()V
 
@@ -318,7 +301,6 @@
 
 .method static synthetic access$1600(Lcom/android/systemui/recent/multiwindow/SmartClipDragDrop;)[B
     .locals 1
-    .param p0    # Lcom/android/systemui/recent/multiwindow/SmartClipDragDrop;
 
     iget-object v0, p0, Lcom/android/systemui/recent/multiwindow/SmartClipDragDrop;->mIvt:[B
 
@@ -327,7 +309,6 @@
 
 .method static synthetic access$1700(Lcom/android/systemui/recent/multiwindow/SmartClipDragDrop;)Landroid/os/SystemVibrator;
     .locals 1
-    .param p0    # Lcom/android/systemui/recent/multiwindow/SmartClipDragDrop;
 
     iget-object v0, p0, Lcom/android/systemui/recent/multiwindow/SmartClipDragDrop;->mVibrator:Landroid/os/SystemVibrator;
 
@@ -336,7 +317,6 @@
 
 .method static synthetic access$1800(Lcom/android/systemui/recent/multiwindow/SmartClipDragDrop;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/systemui/recent/multiwindow/SmartClipDragDrop;
 
     iget-object v0, p0, Lcom/android/systemui/recent/multiwindow/SmartClipDragDrop;->mContext:Landroid/content/Context;
 
@@ -345,8 +325,6 @@
 
 .method static synthetic access$202(Lcom/android/systemui/recent/multiwindow/SmartClipDragDrop;Z)Z
     .locals 0
-    .param p0    # Lcom/android/systemui/recent/multiwindow/SmartClipDragDrop;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/systemui/recent/multiwindow/SmartClipDragDrop;->mIsDragging:Z
 
@@ -355,7 +333,6 @@
 
 .method static synthetic access$300(Lcom/android/systemui/recent/multiwindow/SmartClipDragDrop;)Landroid/os/HandlerThread;
     .locals 1
-    .param p0    # Lcom/android/systemui/recent/multiwindow/SmartClipDragDrop;
 
     iget-object v0, p0, Lcom/android/systemui/recent/multiwindow/SmartClipDragDrop;->mThread:Landroid/os/HandlerThread;
 
@@ -364,7 +341,6 @@
 
 .method static synthetic access$400(Lcom/android/systemui/recent/multiwindow/SmartClipDragDrop;)Landroid/os/Looper;
     .locals 1
-    .param p0    # Lcom/android/systemui/recent/multiwindow/SmartClipDragDrop;
 
     iget-object v0, p0, Lcom/android/systemui/recent/multiwindow/SmartClipDragDrop;->mServiceLooper:Landroid/os/Looper;
 
@@ -373,8 +349,6 @@
 
 .method static synthetic access$402(Lcom/android/systemui/recent/multiwindow/SmartClipDragDrop;Landroid/os/Looper;)Landroid/os/Looper;
     .locals 0
-    .param p0    # Lcom/android/systemui/recent/multiwindow/SmartClipDragDrop;
-    .param p1    # Landroid/os/Looper;
 
     iput-object p1, p0, Lcom/android/systemui/recent/multiwindow/SmartClipDragDrop;->mServiceLooper:Landroid/os/Looper;
 
@@ -383,7 +357,6 @@
 
 .method static synthetic access$500(Lcom/android/systemui/recent/multiwindow/SmartClipDragDrop;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/systemui/recent/multiwindow/SmartClipDragDrop;
 
     iget-object v0, p0, Lcom/android/systemui/recent/multiwindow/SmartClipDragDrop;->mServiceHandler:Landroid/os/Handler;
 
@@ -392,8 +365,6 @@
 
 .method static synthetic access$502(Lcom/android/systemui/recent/multiwindow/SmartClipDragDrop;Landroid/os/Handler;)Landroid/os/Handler;
     .locals 0
-    .param p0    # Lcom/android/systemui/recent/multiwindow/SmartClipDragDrop;
-    .param p1    # Landroid/os/Handler;
 
     iput-object p1, p0, Lcom/android/systemui/recent/multiwindow/SmartClipDragDrop;->mServiceHandler:Landroid/os/Handler;
 
@@ -402,9 +373,6 @@
 
 .method static synthetic access$600(Lcom/android/systemui/recent/multiwindow/SmartClipDragDrop;Landroid/view/View;Landroid/view/MotionEvent;)V
     .locals 0
-    .param p0    # Lcom/android/systemui/recent/multiwindow/SmartClipDragDrop;
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     invoke-direct {p0, p1, p2}, Lcom/android/systemui/recent/multiwindow/SmartClipDragDrop;->getSmartClipData(Landroid/view/View;Landroid/view/MotionEvent;)V
 
@@ -413,8 +381,6 @@
 
 .method static synthetic access$700(Lcom/android/systemui/recent/multiwindow/SmartClipDragDrop;Lcom/samsung/android/smartclip/SmartClipDataRepositoryImpl;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/systemui/recent/multiwindow/SmartClipDragDrop;
-    .param p1    # Lcom/samsung/android/smartclip/SmartClipDataRepositoryImpl;
 
     invoke-direct {p0, p1}, Lcom/android/systemui/recent/multiwindow/SmartClipDragDrop;->getTextMetaData(Lcom/samsung/android/smartclip/SmartClipDataRepositoryImpl;)Ljava/lang/String;
 
@@ -425,8 +391,6 @@
 
 .method static synthetic access$800(Lcom/android/systemui/recent/multiwindow/SmartClipDragDrop;Lcom/samsung/android/smartclip/SmartClipDataRepositoryImpl;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/systemui/recent/multiwindow/SmartClipDragDrop;
-    .param p1    # Lcom/samsung/android/smartclip/SmartClipDataRepositoryImpl;
 
     invoke-direct {p0, p1}, Lcom/android/systemui/recent/multiwindow/SmartClipDragDrop;->getUrlMetaData(Lcom/samsung/android/smartclip/SmartClipDataRepositoryImpl;)Ljava/lang/String;
 
@@ -437,8 +401,6 @@
 
 .method static synthetic access$900(Lcom/android/systemui/recent/multiwindow/SmartClipDragDrop;Lcom/samsung/android/smartclip/SmartClipDataRepositoryImpl;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/systemui/recent/multiwindow/SmartClipDragDrop;
-    .param p1    # Lcom/samsung/android/smartclip/SmartClipDataRepositoryImpl;
 
     invoke-direct {p0, p1}, Lcom/android/systemui/recent/multiwindow/SmartClipDragDrop;->getTextSelectionMetaData(Lcom/samsung/android/smartclip/SmartClipDataRepositoryImpl;)Ljava/lang/String;
 
@@ -449,7 +411,6 @@
 
 .method private adjustCropRectForReduceScreen(Landroid/graphics/Rect;)V
     .locals 9
-    .param p1    # Landroid/graphics/Rect;
 
     const/4 v8, 0x0
 
@@ -642,8 +603,6 @@
 
 .method private cropScreen(Landroid/graphics/Rect;I)Landroid/graphics/Bitmap;
     .locals 12
-    .param p1    # Landroid/graphics/Rect;
-    .param p2    # I
 
     const/4 v7, 0x0
 
@@ -779,7 +738,6 @@
 
 .method private getDegreesForRotation(I)F
     .locals 1
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -813,7 +771,6 @@
 
 .method private getFullScreenShotBitmap(I)Landroid/graphics/Bitmap;
     .locals 1
-    .param p1    # I
 
     const/16 v0, 0x4e20
 
@@ -826,8 +783,6 @@
 
 .method private getFullScreenShotBitmap(II)Landroid/graphics/Bitmap;
     .locals 29
-    .param p1    # I
-    .param p2    # I
 
     const-string v24, "SmartClipDragDrop"
 
@@ -1460,8 +1415,6 @@
 
 .method private getSmartClipData(Landroid/view/View;Landroid/view/MotionEvent;)V
     .locals 8
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     invoke-virtual {p2}, Landroid/view/MotionEvent;->getX()F
 
@@ -1540,7 +1493,6 @@
 
 .method private getTextMetaData(Lcom/samsung/android/smartclip/SmartClipDataRepositoryImpl;)Ljava/lang/String;
     .locals 8
-    .param p1    # Lcom/samsung/android/smartclip/SmartClipDataRepositoryImpl;
 
     const/4 v5, 0x0
 
@@ -1618,7 +1570,6 @@
 
 .method private getTextSelectionMetaData(Lcom/samsung/android/smartclip/SmartClipDataRepositoryImpl;)Ljava/lang/String;
     .locals 8
-    .param p1    # Lcom/samsung/android/smartclip/SmartClipDataRepositoryImpl;
 
     const/4 v5, 0x0
 
@@ -1696,7 +1647,6 @@
 
 .method private getTextThumbnailBuilder(Ljava/lang/CharSequence;)Landroid/view/View$DragShadowBuilder;
     .locals 7
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v6, -0x2
 
@@ -1829,7 +1779,6 @@
 
 .method private getUrlMetaData(Lcom/samsung/android/smartclip/SmartClipDataRepositoryImpl;)Ljava/lang/String;
     .locals 2
-    .param p1    # Lcom/samsung/android/smartclip/SmartClipDataRepositoryImpl;
 
     const-string v1, "url"
 
@@ -1971,7 +1920,6 @@
 
 .method private saveImageFile(Landroid/graphics/Bitmap;)Ljava/lang/String;
     .locals 16
-    .param p1    # Landroid/graphics/Bitmap;
 
     move-object/from16 v0, p0
 
@@ -2175,9 +2123,6 @@
 
 .method private startImageDrag(Landroid/view/View;Landroid/graphics/Rect;I)V
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/graphics/Rect;
-    .param p3    # I
 
     new-instance v0, Lcom/android/systemui/recent/multiwindow/SmartClipDragDrop$SaveImageFileTask;
 
@@ -2194,10 +2139,6 @@
 
 .method private startTextDrag(Landroid/view/View;Ljava/lang/String;Landroid/graphics/Rect;I)V
     .locals 8
-    .param p1    # Landroid/view/View;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/graphics/Rect;
-    .param p4    # I
 
     const v5, 0x7f0b0268
 
@@ -2744,9 +2685,6 @@
 
 .method public onStartCommand(Landroid/content/Intent;II)I
     .locals 1
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
-    .param p3    # I
 
     invoke-super {p0, p1, p2, p3}, Landroid/app/SallyService;->onStartCommand(Landroid/content/Intent;II)I
 

@@ -18,9 +18,6 @@
 # direct methods
 .method public constructor <init>([FLandroid/graphics/RectF;[F)V
     .locals 2
-    .param p1    # [F
-    .param p2    # Landroid/graphics/RectF;
-    .param p3    # [F
 
     const/16 v1, 0x8
 
@@ -212,8 +209,6 @@
 
 .method public draw(Landroid/graphics/Canvas;Landroid/graphics/Paint;)V
     .locals 1
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # Landroid/graphics/Paint;
 
     iget-object v0, p0, Landroid/graphics/drawable/shapes/RoundRectShape;->mPath:Landroid/graphics/Path;
 
@@ -224,8 +219,6 @@
 
 .method protected onResize(FF)V
     .locals 7
-    .param p1    # F
-    .param p2    # F
 
     invoke-super {p0, p1, p2}, Landroid/graphics/drawable/shapes/RectShape;->onResize(FF)V
 

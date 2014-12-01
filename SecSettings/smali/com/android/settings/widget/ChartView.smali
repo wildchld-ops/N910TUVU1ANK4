@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -34,8 +33,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -46,9 +43,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v2, -0x1
 
@@ -99,8 +93,6 @@
 # virtual methods
 .method init(Lcom/android/settings/widget/ChartAxis;Lcom/android/settings/widget/ChartAxis;)V
     .locals 1
-    .param p1    # Lcom/android/settings/widget/ChartAxis;
-    .param p2    # Lcom/android/settings/widget/ChartAxis;
 
     const-string v0, "missing horiz"
 
@@ -127,7 +119,6 @@
 
 .method protected layoutSweep(Lcom/android/settings/widget/ChartSweepView;)V
     .locals 6
-    .param p1    # Lcom/android/settings/widget/ChartSweepView;
 
     new-instance v1, Landroid/graphics/Rect;
 
@@ -156,9 +147,6 @@
 
 .method protected layoutSweep(Lcom/android/settings/widget/ChartSweepView;Landroid/graphics/Rect;Landroid/graphics/Rect;)V
     .locals 5
-    .param p1    # Lcom/android/settings/widget/ChartSweepView;
-    .param p2    # Landroid/graphics/Rect;
-    .param p3    # Landroid/graphics/Rect;
 
     const v4, 0x800033
 
@@ -275,11 +263,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 13
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     iget-object v7, p0, Lcom/android/settings/widget/ChartView;->mContent:Landroid/graphics/Rect;
 
@@ -422,8 +405,6 @@
 
 .method protected onMeasure(II)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
 
     invoke-super {p0, p1, p2}, Landroid/widget/FrameLayout;->onMeasure(II)V
 
@@ -469,8 +450,6 @@
 
 .method public setOptimalWidth(IF)V
     .locals 0
-    .param p1    # I
-    .param p2    # F
 
     iput p1, p0, Lcom/android/settings/widget/ChartView;->mOptimalWidth:I
 

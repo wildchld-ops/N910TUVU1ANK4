@@ -32,113 +32,104 @@
 
 # virtual methods
 .method public onCoverStateChanged(Lcom/samsung/android/sdk/cover/ScoverState;)V
-    .locals 4
+    .locals 3
     .param p1    # Lcom/samsung/android/sdk/cover/ScoverState;
 
-    const/4 v3, 0x1
+    const/4 v2, 0x1
 
-    iget-object v1, p0, Lcom/android/phone/TPhoneService$1;->this$0:Lcom/android/phone/TPhoneService;
+    iget-object v0, p0, Lcom/android/phone/TPhoneService$1;->this$0:Lcom/android/phone/TPhoneService;
 
-    iget-object v1, v1, Lcom/android/phone/TPhoneService;->mCoverManager:Lcom/samsung/android/sdk/cover/ScoverManager;
+    iget-object v0, v0, Lcom/android/phone/TPhoneService;->mCoverManager:Lcom/samsung/android/sdk/cover/ScoverManager;
 
-    invoke-virtual {v1}, Lcom/samsung/android/sdk/cover/ScoverManager;->getCoverState()Lcom/samsung/android/sdk/cover/ScoverState;
+    if-eqz v0, :cond_1
+
+    iget-object v0, p0, Lcom/android/phone/TPhoneService$1;->this$0:Lcom/android/phone/TPhoneService;
+
+    iget-object v0, v0, Lcom/android/phone/TPhoneService;->mCoverManager:Lcom/samsung/android/sdk/cover/ScoverManager;
+
+    invoke-virtual {v0}, Lcom/samsung/android/sdk/cover/ScoverManager;->getCoverState()Lcom/samsung/android/sdk/cover/ScoverState;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/phone/TPhoneService$1;->this$0:Lcom/android/phone/TPhoneService;
+    if-eqz v0, :cond_1
 
-    iget-object v1, v1, Lcom/android/phone/TPhoneService;->mCoverManager:Lcom/samsung/android/sdk/cover/ScoverManager;
+    iget-object v0, p0, Lcom/android/phone/TPhoneService$1;->this$0:Lcom/android/phone/TPhoneService;
 
-    if-eqz v1, :cond_2
+    iget-object v0, v0, Lcom/android/phone/TPhoneService;->mCoverManager:Lcom/samsung/android/sdk/cover/ScoverManager;
 
-    if-eqz v0, :cond_2
+    invoke-virtual {v0}, Lcom/samsung/android/sdk/cover/ScoverManager;->getCoverState()Lcom/samsung/android/sdk/cover/ScoverState;
 
-    invoke-virtual {v0}, Lcom/samsung/android/sdk/cover/ScoverState;->getType()I
-
-    move-result v1
-
-    if-eqz v1, :cond_0
+    move-result-object v0
 
     invoke-virtual {v0}, Lcom/samsung/android/sdk/cover/ScoverState;->getType()I
 
-    move-result v1
+    move-result v0
 
-    const/4 v2, 0x7
+    if-nez v0, :cond_1
 
-    if-eq v1, v2, :cond_0
+    iget-object v0, p0, Lcom/android/phone/TPhoneService$1;->this$0:Lcom/android/phone/TPhoneService;
 
-    invoke-virtual {v0}, Lcom/samsung/android/sdk/cover/ScoverState;->getType()I
+    const-string v1, "ignore TYPE_FLIP_COVER "
 
-    move-result v1
-
-    const/16 v2, 0x64
-
-    if-ne v1, v2, :cond_2
+    # invokes: Lcom/android/phone/TPhoneService;->log(Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/android/phone/TPhoneService;->access$100(Lcom/android/phone/TPhoneService;Ljava/lang/String;)V
 
     :cond_0
-    iget-object v1, p0, Lcom/android/phone/TPhoneService$1;->this$0:Lcom/android/phone/TPhoneService;
-
-    const-string v2, "ignore TYPE_FLIP_COVER "
-
-    # invokes: Lcom/android/phone/TPhoneService;->log(Ljava/lang/String;Z)V
-    invoke-static {v1, v2, v3}, Lcom/android/phone/TPhoneService;->access$100(Lcom/android/phone/TPhoneService;Ljava/lang/String;Z)V
-
-    :cond_1
     :goto_0
     return-void
 
-    :cond_2
+    :cond_1
     invoke-virtual {p1}, Lcom/samsung/android/sdk/cover/ScoverState;->getSwitchState()Z
 
-    move-result v1
+    move-result v0
 
-    if-ne v1, v3, :cond_3
+    if-ne v0, v2, :cond_2
 
-    const-string v1, "TPhoneService"
+    const-string v0, "TPhoneService"
 
-    const-string v2, "Scover : State Open"
+    const-string v1, "Scover : State Open"
 
-    invoke-static {v1, v2, v3}, Lcom/android/phone/Log;->i(Ljava/lang/String;Ljava/lang/String;Z)I
+    invoke-static {v0, v1, v2}, Lcom/android/phone/Log;->i(Ljava/lang/String;Ljava/lang/String;Z)I
 
-    iget-object v1, p0, Lcom/android/phone/TPhoneService$1;->this$0:Lcom/android/phone/TPhoneService;
+    iget-object v0, p0, Lcom/android/phone/TPhoneService$1;->this$0:Lcom/android/phone/TPhoneService;
 
     # setter for: Lcom/android/phone/TPhoneService;->mCoverState:I
-    invoke-static {v1, v3}, Lcom/android/phone/TPhoneService;->access$202(Lcom/android/phone/TPhoneService;I)I
+    invoke-static {v0, v2}, Lcom/android/phone/TPhoneService;->access$202(Lcom/android/phone/TPhoneService;I)I
 
     :goto_1
     invoke-static {}, Lcom/android/phone/PhoneUtils;->isTPhoneMode()Z
 
-    move-result v1
+    move-result v0
 
-    if-eqz v1, :cond_1
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lcom/android/phone/TPhoneService$1;->this$0:Lcom/android/phone/TPhoneService;
 
     iget-object v1, p0, Lcom/android/phone/TPhoneService$1;->this$0:Lcom/android/phone/TPhoneService;
 
-    iget-object v2, p0, Lcom/android/phone/TPhoneService$1;->this$0:Lcom/android/phone/TPhoneService;
-
     # getter for: Lcom/android/phone/TPhoneService;->mCoverState:I
-    invoke-static {v2}, Lcom/android/phone/TPhoneService;->access$200(Lcom/android/phone/TPhoneService;)I
+    invoke-static {v1}, Lcom/android/phone/TPhoneService;->access$200(Lcom/android/phone/TPhoneService;)I
 
-    move-result v2
+    move-result v1
 
     # invokes: Lcom/android/phone/TPhoneService;->sendCoverStateChanged(I)V
-    invoke-static {v1, v2}, Lcom/android/phone/TPhoneService;->access$300(Lcom/android/phone/TPhoneService;I)V
+    invoke-static {v0, v1}, Lcom/android/phone/TPhoneService;->access$300(Lcom/android/phone/TPhoneService;I)V
 
     goto :goto_0
 
-    :cond_3
-    const-string v1, "TPhoneService"
+    :cond_2
+    const-string v0, "TPhoneService"
 
-    const-string v2, "Scover : State Close"
+    const-string v1, "Scover : State Close"
 
-    invoke-static {v1, v2, v3}, Lcom/android/phone/Log;->i(Ljava/lang/String;Ljava/lang/String;Z)I
+    invoke-static {v0, v1, v2}, Lcom/android/phone/Log;->i(Ljava/lang/String;Ljava/lang/String;Z)I
 
-    iget-object v1, p0, Lcom/android/phone/TPhoneService$1;->this$0:Lcom/android/phone/TPhoneService;
+    iget-object v0, p0, Lcom/android/phone/TPhoneService$1;->this$0:Lcom/android/phone/TPhoneService;
 
-    const/4 v2, 0x0
+    const/4 v1, 0x0
 
     # setter for: Lcom/android/phone/TPhoneService;->mCoverState:I
-    invoke-static {v1, v2}, Lcom/android/phone/TPhoneService;->access$202(Lcom/android/phone/TPhoneService;I)I
+    invoke-static {v0, v1}, Lcom/android/phone/TPhoneService;->access$202(Lcom/android/phone/TPhoneService;I)I
 
     goto :goto_1
 .end method

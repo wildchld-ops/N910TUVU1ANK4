@@ -99,7 +99,6 @@
 
 .method private constructor <init>(I)V
     .locals 2
-    .param p1    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -146,7 +145,6 @@
 
 .method public constructor <init>(Landroid/graphics/SurfaceTexture;)V
     .locals 3
-    .param p1    # Landroid/graphics/SurfaceTexture;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -230,7 +228,6 @@
 
 .method static synthetic access$100(Landroid/view/Surface;)Landroid/graphics/Matrix;
     .locals 1
-    .param p0    # Landroid/view/Surface;
 
     iget-object v0, p0, Landroid/view/Surface;->mCompatibleMatrix:Landroid/graphics/Matrix;
 
@@ -317,7 +314,6 @@
 
 .method public static rotationToString(I)Ljava/lang/String;
     .locals 3
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -377,7 +373,6 @@
 
 .method private setNativeObjectLocked(I)V
     .locals 2
-    .param p1    # I
 
     iget v0, p0, Landroid/view/Surface;->mNativeObject:I
 
@@ -424,7 +419,6 @@
 
 .method public static setOrientationEnd(Z)V
     .locals 0
-    .param p0    # Z
 
     invoke-static {p0}, Landroid/view/Surface;->nativeSetOrientationEnd(Z)V
 
@@ -433,7 +427,6 @@
 
 .method public static setTransition(Z)V
     .locals 0
-    .param p0    # Z
 
     invoke-static {p0}, Landroid/view/Surface;->nativeSetTransition(Z)V
 
@@ -444,7 +437,6 @@
 # virtual methods
 .method public copyFrom(Landroid/view/SurfaceControl;)V
     .locals 4
-    .param p1    # Landroid/view/SurfaceControl;
 
     if-nez p1, :cond_0
 
@@ -653,7 +645,6 @@
 
 .method public lockCanvas(Landroid/graphics/Rect;)Landroid/graphics/Canvas;
     .locals 3
-    .param p1    # Landroid/graphics/Rect;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/view/Surface$OutOfResourcesException;,
@@ -712,7 +703,6 @@
 
 .method public readFromParcel(Landroid/os/Parcel;)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
 
     if-nez p1, :cond_0
 
@@ -795,7 +785,6 @@
 
 .method setCompatibilityTranslator(Landroid/content/res/CompatibilityInfo$Translator;)V
     .locals 2
-    .param p1    # Landroid/content/res/CompatibilityInfo$Translator;
 
     if-eqz p1, :cond_0
 
@@ -817,7 +806,6 @@
 
 .method public setDirtyRect(Landroid/graphics/Rect;)V
     .locals 1
-    .param p1    # Landroid/graphics/Rect;
 
     iget v0, p0, Landroid/view/Surface;->mNativeObject:I
 
@@ -893,7 +881,6 @@
 
 .method public transferFrom(Landroid/view/Surface;)V
     .locals 3
-    .param p1    # Landroid/view/Surface;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -971,7 +958,6 @@
 
 .method public unlockCanvas(Landroid/graphics/Canvas;)V
     .locals 1
-    .param p1    # Landroid/graphics/Canvas;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -984,7 +970,6 @@
 
 .method public unlockCanvasAndPost(Landroid/graphics/Canvas;)V
     .locals 4
-    .param p1    # Landroid/graphics/Canvas;
 
     iget-object v0, p0, Landroid/view/Surface;->mCanvas:Landroid/graphics/Canvas;
 
@@ -1119,8 +1104,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     if-nez p1, :cond_0
 

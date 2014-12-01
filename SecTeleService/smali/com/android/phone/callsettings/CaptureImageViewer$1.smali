@@ -51,7 +51,7 @@
 
     iget-object v0, p0, Lcom/android/phone/callsettings/CaptureImageViewer$1;->this$0:Lcom/android/phone/callsettings/CaptureImageViewer;
 
-    invoke-virtual {v0, v1}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->showDialog(I)V
+    invoke-virtual {v0, v1}, Lcom/android/phone/callsettings/CaptureImageViewer;->showDialog(I)V
 
     :cond_0
     return v1

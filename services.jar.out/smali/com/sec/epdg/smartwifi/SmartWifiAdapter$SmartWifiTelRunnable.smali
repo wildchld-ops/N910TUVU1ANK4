@@ -26,7 +26,6 @@
 # direct methods
 .method constructor <init>(Lcom/sec/epdg/smartwifi/SmartWifiAdapter;Landroid/telephony/SignalStrength;)V
     .locals 0
-    .param p2    # Landroid/telephony/SignalStrength;
 
     iput-object p1, p0, Lcom/sec/epdg/smartwifi/SmartWifiAdapter$SmartWifiTelRunnable;->this$0:Lcom/sec/epdg/smartwifi/SmartWifiAdapter;
 

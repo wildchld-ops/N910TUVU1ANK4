@@ -21,8 +21,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/internal/policy/impl/PhoneWindowManager;Landroid/view/InputChannel;Landroid/os/Looper;)V
     .locals 0
-    .param p2    # Landroid/view/InputChannel;
-    .param p3    # Landroid/os/Looper;
 
     iput-object p1, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$HideNavInputEventReceiver;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
 
@@ -35,7 +33,6 @@
 # virtual methods
 .method public onInputEvent(Landroid/view/InputEvent;)V
     .locals 14
-    .param p1    # Landroid/view/InputEvent;
 
     const/4 v13, 0x0
 

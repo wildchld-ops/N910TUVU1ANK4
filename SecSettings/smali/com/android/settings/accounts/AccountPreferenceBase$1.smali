@@ -36,7 +36,6 @@
 # virtual methods
 .method public onStatusChanged(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/settings/accounts/AccountPreferenceBase$1;->this$0:Lcom/android/settings/accounts/AccountPreferenceBase;
 

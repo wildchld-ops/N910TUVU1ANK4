@@ -63,7 +63,6 @@
 
 .method public constructor <init>(Landroid/os/Parcel;)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     const/4 v0, 0x0
 
@@ -74,8 +73,6 @@
 
 .method public constructor <init>(Landroid/os/Parcel;Z)V
     .locals 3
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -160,8 +157,6 @@
 
 .method public constructor <init>(Ljava/lang/Throwable;I)V
     .locals 7
-    .param p1    # Ljava/lang/Throwable;
-    .param p2    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -296,8 +291,6 @@
 # virtual methods
 .method public dump(Landroid/util/Printer;Ljava/lang/String;)V
     .locals 10
-    .param p1    # Landroid/util/Printer;
-    .param p2    # Ljava/lang/String;
 
     iget-object v6, p0, Landroid/os/StrictMode$ViolationInfo;->crashInfo:Landroid/app/ApplicationErrorReport$CrashInfo;
 
@@ -651,8 +644,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v0, p0, Landroid/os/StrictMode$ViolationInfo;->crashInfo:Landroid/app/ApplicationErrorReport$CrashInfo;
 

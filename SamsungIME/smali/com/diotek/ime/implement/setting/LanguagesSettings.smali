@@ -38,7 +38,6 @@
 
 .method static synthetic access$000(Lcom/diotek/ime/implement/setting/LanguagesSettings;)V
     .locals 0
-    .param p0    # Lcom/diotek/ime/implement/setting/LanguagesSettings;
 
     invoke-direct {p0}, Lcom/diotek/ime/implement/setting/LanguagesSettings;->initLanguageSettingsWithSystemLocale()V
 
@@ -47,7 +46,6 @@
 
 .method static synthetic access$100(Lcom/diotek/ime/implement/setting/LanguagesSettings;)Lcom/diotek/ime/framework/repository/Repository;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/setting/LanguagesSettings;
 
     iget-object v0, p0, Lcom/diotek/ime/implement/setting/LanguagesSettings;->mRepository:Lcom/diotek/ime/framework/repository/Repository;
 
@@ -56,7 +54,6 @@
 
 .method private checkDefaultEnglishPreference([Lcom/diotek/ime/framework/common/Language;)V
     .locals 7
-    .param p1    # [Lcom/diotek/ime/framework/common/Language;
 
     const/4 v6, 0x0
 
@@ -481,7 +478,6 @@
 
 .method private isLatinLanguage(Lcom/diotek/ime/framework/common/Language;)Z
     .locals 3
-    .param p1    # Lcom/diotek/ime/framework/common/Language;
 
     const/4 v0, 0x1
 
@@ -513,7 +509,6 @@
 # virtual methods
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 14
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onCreate(Landroid/os/Bundle;)V
 
@@ -833,7 +828,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 

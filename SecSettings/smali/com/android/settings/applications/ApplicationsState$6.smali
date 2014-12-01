@@ -30,7 +30,6 @@
 # virtual methods
 .method public filterApp(Landroid/content/pm/ApplicationInfo;)Z
     .locals 2
-    .param p1    # Landroid/content/pm/ApplicationInfo;
 
     const/4 v0, 0x1
 

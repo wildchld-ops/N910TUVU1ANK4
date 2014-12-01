@@ -49,7 +49,6 @@
 
 .method static synthetic access$000(Landroid/media/ImageReader$SurfaceImage;)V
     .locals 0
-    .param p0    # Landroid/media/ImageReader$SurfaceImage;
 
     invoke-direct {p0}, Landroid/media/ImageReader$SurfaceImage;->createSurfacePlanes()V
 
@@ -58,8 +57,6 @@
 
 .method static synthetic access$100(Landroid/media/ImageReader$SurfaceImage;Z)V
     .locals 0
-    .param p0    # Landroid/media/ImageReader$SurfaceImage;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Landroid/media/ImageReader$SurfaceImage;->setImageValid(Z)V
 
@@ -68,7 +65,6 @@
 
 .method static synthetic access$1100(Landroid/media/ImageReader$SurfaceImage;)Z
     .locals 1
-    .param p0    # Landroid/media/ImageReader$SurfaceImage;
 
     invoke-direct {p0}, Landroid/media/ImageReader$SurfaceImage;->isImageValid()Z
 
@@ -79,8 +75,6 @@
 
 .method static synthetic access$1200(Landroid/media/ImageReader$SurfaceImage;I)Ljava/nio/ByteBuffer;
     .locals 1
-    .param p0    # Landroid/media/ImageReader$SurfaceImage;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/media/ImageReader$SurfaceImage;->nativeImageGetBuffer(I)Ljava/nio/ByteBuffer;
 
@@ -91,7 +85,6 @@
 
 .method static synthetic access$200(Landroid/media/ImageReader$SurfaceImage;)V
     .locals 0
-    .param p0    # Landroid/media/ImageReader$SurfaceImage;
 
     invoke-direct {p0}, Landroid/media/ImageReader$SurfaceImage;->clearSurfacePlanes()V
 
@@ -200,7 +193,6 @@
 
 .method private setImageValid(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/media/ImageReader$SurfaceImage;->mIsImageValid:Z
 

@@ -192,7 +192,6 @@
 
 .method public constructor <init>(Landroid/net/wifi/p2p/WifiP2pDevice;)V
     .locals 1
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pDevice;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -276,7 +275,6 @@
 
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 12
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;
@@ -644,7 +642,6 @@
 
 .method private parseHex(Ljava/lang/String;)I
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -724,7 +721,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 4
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x1
 
@@ -1049,7 +1045,6 @@
 
 .method public update(Landroid/net/wifi/p2p/WifiP2pDevice;)V
     .locals 1
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pDevice;
 
     invoke-virtual {p0, p1}, Landroid/net/wifi/p2p/WifiP2pDevice;->updateSupplicantDetails(Landroid/net/wifi/p2p/WifiP2pDevice;)V
 
@@ -1062,7 +1057,6 @@
 
 .method updateSupplicantDetails(Landroid/net/wifi/p2p/WifiP2pDevice;)V
     .locals 2
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pDevice;
 
     if-nez p1, :cond_0
 
@@ -1204,8 +1198,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v0, p0, Landroid/net/wifi/p2p/WifiP2pDevice;->deviceName:Ljava/lang/String;
 

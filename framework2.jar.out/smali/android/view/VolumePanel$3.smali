@@ -21,8 +21,6 @@
 # direct methods
 .method constructor <init>(Landroid/view/VolumePanel;Landroid/content/Context;I)V
     .locals 0
-    .param p2    # Landroid/content/Context;
-    .param p3    # I
 
     iput-object p1, p0, Landroid/view/VolumePanel$3;->this$0:Landroid/view/VolumePanel;
 
@@ -35,7 +33,6 @@
 # virtual methods
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 2
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual {p0}, Landroid/app/Dialog;->isShowing()Z
 

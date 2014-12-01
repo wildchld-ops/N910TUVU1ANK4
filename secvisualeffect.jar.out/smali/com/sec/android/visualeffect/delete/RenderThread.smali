@@ -80,8 +80,6 @@
 # direct methods
 .method constructor <init>(Landroid/graphics/SurfaceTexture;Landroid/os/Handler;)V
     .locals 3
-    .param p1    # Landroid/graphics/SurfaceTexture;
-    .param p2    # Landroid/os/Handler;
 
     const/4 v2, 0x0
 
@@ -785,9 +783,6 @@
 # virtual methods
 .method createContext(Ljavax/microedition/khronos/egl/EGL10;Ljavax/microedition/khronos/egl/EGLDisplay;Ljavax/microedition/khronos/egl/EGLConfig;)Ljavax/microedition/khronos/egl/EGLContext;
     .locals 2
-    .param p1    # Ljavax/microedition/khronos/egl/EGL10;
-    .param p2    # Ljavax/microedition/khronos/egl/EGLDisplay;
-    .param p3    # Ljavax/microedition/khronos/egl/EGLConfig;
 
     const/4 v1, 0x3
 
@@ -861,20 +856,6 @@
 
 .method public initModel(FFFFLandroid/graphics/Bitmap;Landroid/graphics/Bitmap;FFFFFZII)V
     .locals 1
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # Landroid/graphics/Bitmap;
-    .param p6    # Landroid/graphics/Bitmap;
-    .param p7    # F
-    .param p8    # F
-    .param p9    # F
-    .param p10    # F
-    .param p11    # F
-    .param p12    # Z
-    .param p13    # I
-    .param p14    # I
 
     iput p1, p0, Lcom/sec/android/visualeffect/delete/RenderThread;->mPosX:F
 
@@ -911,10 +892,6 @@
 
 .method public initView(FFFLandroid/graphics/Bitmap;)V
     .locals 0
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # Landroid/graphics/Bitmap;
 
     iput p1, p0, Lcom/sec/android/visualeffect/delete/RenderThread;->mBgColorR:F
 
@@ -1003,8 +980,6 @@
 
 .method public onSurfaceChanged(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iput p1, p0, Lcom/sec/android/visualeffect/delete/RenderThread;->mWidth:I
 
@@ -1031,7 +1006,6 @@
 
 .method public declared-synchronized pauseNResume(Z)V
     .locals 3
-    .param p1    # Z
 
     monitor-enter p0
 
@@ -1130,8 +1104,6 @@
 
 .method public setSurface(Landroid/graphics/SurfaceTexture;Landroid/os/Handler;)V
     .locals 0
-    .param p1    # Landroid/graphics/SurfaceTexture;
-    .param p2    # Landroid/os/Handler;
 
     iput-object p1, p0, Lcom/sec/android/visualeffect/delete/RenderThread;->mSurface:Landroid/graphics/SurfaceTexture;
 
@@ -1142,7 +1114,6 @@
 
 .method public setTextureView(Landroid/view/TextureView;)V
     .locals 0
-    .param p1    # Landroid/view/TextureView;
 
     iput-object p1, p0, Lcom/sec/android/visualeffect/delete/RenderThread;->mView:Landroid/view/TextureView;
 
@@ -1151,14 +1122,6 @@
 
 .method public startAnimation(FFFFFFFF)V
     .locals 0
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # F
-    .param p7    # F
-    .param p8    # F
 
     invoke-static/range {p1 .. p8}, Lcom/sec/android/visualeffect/jni/VEJNILib;->deleteStartAnimation(FFFFFFFF)V
 

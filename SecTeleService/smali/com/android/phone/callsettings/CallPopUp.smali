@@ -82,7 +82,7 @@
     if-nez v0, :cond_3
 
     :goto_1
-    invoke-virtual {v3, v1}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v3, v1}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     :cond_0
     iget-object v1, p0, Lcom/android/phone/callsettings/CallPopUp;->mPopupOverlay:Landroid/preference/CheckBoxPreference;
@@ -93,7 +93,7 @@
 
     iget-object v1, p0, Lcom/android/phone/callsettings/CallPopUp;->mPopupOverlay:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v1, v2}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v1, v2}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     :cond_1
     return-void
@@ -162,7 +162,7 @@
     const/4 v2, 0x1
 
     :goto_0
-    invoke-virtual {v3, v2}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v3, v2}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     :cond_1
     return-void
@@ -185,7 +185,7 @@
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallPopUp;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -199,12 +199,12 @@
 
     iget-object v0, p0, Lcom/android/phone/callsettings/CallPopUp;->mPopupIncomingCall:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v0, v3}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+    invoke-virtual {v0, v3}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     :goto_0
     iget-object v0, p0, Lcom/android/phone/callsettings/CallPopUp;->mPopupIncomingCall:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v0, p1}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v0, p1}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     :cond_0
     return-void
@@ -212,7 +212,7 @@
     :cond_1
     iget-object v0, p0, Lcom/android/phone/callsettings/CallPopUp;->mPopupIncomingCall:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v0, v2}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+    invoke-virtual {v0, v2}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     goto :goto_0
 .end method
@@ -230,7 +230,7 @@
 
     if-eqz v0, :cond_1
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallPopUp;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -246,7 +246,7 @@
 
     invoke-direct {p0, v0}, Lcom/android/phone/callsettings/CallPopUp;->log(Ljava/lang/String;)V
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallPopUp;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v3
 
@@ -266,7 +266,7 @@
     invoke-static {v3, v4, v0}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
     :cond_0
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallPopUp;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -284,7 +284,7 @@
 
     iget-object v0, p0, Lcom/android/phone/callsettings/CallPopUp;->mPopupIncomingCall:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v0, v1}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+    invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     :cond_1
     :goto_1
@@ -302,7 +302,7 @@
 
     iget-object v0, p0, Lcom/android/phone/callsettings/CallPopUp;->mPopupIncomingCall:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v0, v2}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+    invoke-virtual {v0, v2}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     goto :goto_1
 .end method
@@ -316,7 +316,7 @@
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallPopUp;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -334,7 +334,7 @@
 
     iget-object v0, p0, Lcom/android/phone/callsettings/CallPopUp;->mSecondScreenCall:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v0, v2}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+    invoke-virtual {v0, v2}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     :cond_0
     :goto_0
@@ -349,7 +349,7 @@
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+    invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     goto :goto_0
 .end method
@@ -366,11 +366,11 @@
 
     const v1, 0x7f06000a
 
-    invoke-virtual {p0, v1}, Landroid/preference/PreferenceFragment;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v1}, Lcom/android/phone/callsettings/CallPopUp;->addPreferencesFromResource(I)V
 
     const-string v1, "call_popup_preference"
 
-    invoke-virtual {p0, v1}, Landroid/preference/PreferenceFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v1}, Lcom/android/phone/callsettings/CallPopUp;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v1
 
@@ -380,7 +380,7 @@
 
     const-string v1, "call_overlay_popup_preference"
 
-    invoke-virtual {p0, v1}, Landroid/preference/PreferenceFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v1}, Lcom/android/phone/callsettings/CallPopUp;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v1
 
@@ -390,7 +390,7 @@
 
     const-string v1, "second_screen_preference"
 
-    invoke-virtual {p0, v1}, Landroid/preference/PreferenceFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v1}, Lcom/android/phone/callsettings/CallPopUp;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v1
 
@@ -410,13 +410,13 @@
 
     if-eqz v1, :cond_0
 
-    invoke-virtual {p0}, Landroid/preference/PreferenceFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallPopUp;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v1
 
     iget-object v2, p0, Lcom/android/phone/callsettings/CallPopUp;->mPopupIncomingCall:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v1, v2}, Landroid/preference/PreferenceGroup;->removePreference(Landroid/preference/Preference;)Z
+    invoke-virtual {v1, v2}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
     :cond_0
     const-string v1, "support_second_screen"
@@ -431,13 +431,13 @@
 
     if-eqz v1, :cond_1
 
-    invoke-virtual {p0}, Landroid/preference/PreferenceFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallPopUp;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v1
 
     iget-object v2, p0, Lcom/android/phone/callsettings/CallPopUp;->mPopupIncomingCall:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v1, v2}, Landroid/preference/PreferenceGroup;->removePreference(Landroid/preference/Preference;)Z
+    invoke-virtual {v1, v2}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
     iput-object v3, p0, Lcom/android/phone/callsettings/CallPopUp;->mPopupIncomingCall:Landroid/preference/CheckBoxPreference;
 
@@ -446,11 +446,11 @@
 
     if-eqz v1, :cond_2
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallPopUp;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {v1}, Landroid/app/Activity;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -462,11 +462,11 @@
 
     iget-object v1, p0, Lcom/android/phone/callsettings/CallPopUp;->mSecondScreenCall:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallPopUp;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
-    invoke-virtual {v2}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {v2}, Landroid/app/Activity;->getResources()Landroid/content/res/Resources;
 
     move-result-object v2
 
@@ -482,15 +482,15 @@
 
     move-result-object v2
 
-    invoke-virtual {v1, v2}, Landroid/preference/Preference;->setTitle(Ljava/lang/CharSequence;)V
+    invoke-virtual {v1, v2}, Landroid/preference/CheckBoxPreference;->setTitle(Ljava/lang/CharSequence;)V
 
     iget-object v1, p0, Lcom/android/phone/callsettings/CallPopUp;->mSecondScreenCall:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallPopUp;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
-    invoke-virtual {v2}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {v2}, Landroid/app/Activity;->getResources()Landroid/content/res/Resources;
 
     move-result-object v2
 
@@ -506,13 +506,13 @@
 
     move-result-object v2
 
-    invoke-virtual {v1, v2}, Landroid/preference/Preference;->setSummary(Ljava/lang/CharSequence;)V
+    invoke-virtual {v1, v2}, Landroid/preference/CheckBoxPreference;->setSummary(Ljava/lang/CharSequence;)V
 
     :cond_2
     :goto_0
     new-instance v1, Lcom/samsung/tmowfc/wfcutils/WfcRegistrationStateHelper;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallPopUp;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -533,13 +533,13 @@
 
     if-eqz v1, :cond_2
 
-    invoke-virtual {p0}, Landroid/preference/PreferenceFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallPopUp;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v1
 
     iget-object v2, p0, Lcom/android/phone/callsettings/CallPopUp;->mSecondScreenCall:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v1, v2}, Landroid/preference/PreferenceGroup;->removePreference(Landroid/preference/Preference;)Z
+    invoke-virtual {v1, v2}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
     iput-object v3, p0, Lcom/android/phone/callsettings/CallPopUp;->mSecondScreenCall:Landroid/preference/CheckBoxPreference;
 
@@ -558,7 +558,7 @@
 
     if-ne v1, v2, :cond_1
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallPopUp;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v2
 
@@ -568,7 +568,7 @@
 
     if-gtz v2, :cond_1
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallPopUp;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -624,10 +624,10 @@
 
     invoke-virtual {v0, v2}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
-    invoke-virtual {p0, v0}, Landroid/app/Fragment;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/callsettings/CallPopUp;->startActivity(Landroid/content/Intent;)V
 
     :cond_0
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallPopUp;->finish()V
 
     const/4 v2, 0x1
 
@@ -669,7 +669,7 @@
 
     check-cast p2, Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {p2}, Landroid/preference/TwoStatePreference;->isChecked()Z
+    invoke-virtual {p2}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
     move-result v3
 
@@ -678,7 +678,7 @@
     move v0, v2
 
     :cond_0
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallPopUp;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v3
 
@@ -696,7 +696,7 @@
 
     check-cast p2, Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {p2}, Landroid/preference/TwoStatePreference;->isChecked()Z
+    invoke-virtual {p2}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
     move-result v3
 
@@ -705,7 +705,7 @@
     move v1, v2
 
     :goto_1
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallPopUp;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v3
 
@@ -727,13 +727,13 @@
 
     check-cast p2, Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {p2}, Landroid/preference/TwoStatePreference;->isChecked()Z
+    invoke-virtual {p2}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
     move-result v3
 
     if-eqz v3, :cond_4
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallPopUp;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v3
 
@@ -741,7 +741,7 @@
 
     invoke-static {v3, v4, v2}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallPopUp;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v3
 
@@ -752,7 +752,7 @@
     goto :goto_0
 
     :cond_4
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallPopUp;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v3
 
@@ -760,7 +760,7 @@
 
     invoke-static {v3, v4, v0}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallPopUp;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v3
 
@@ -771,7 +771,7 @@
     goto :goto_0
 
     :cond_5
-    invoke-super {p0, p1, p2}, Landroid/preference/PreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
+    invoke-super {p0, p1, p2}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
 
     move-result v2
 

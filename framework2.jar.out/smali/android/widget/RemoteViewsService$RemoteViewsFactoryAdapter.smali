@@ -23,8 +23,6 @@
 # direct methods
 .method public constructor <init>(Landroid/widget/RemoteViewsService$RemoteViewsFactory;Z)V
     .locals 2
-    .param p1    # Landroid/widget/RemoteViewsService$RemoteViewsFactory;
-    .param p2    # Z
 
     invoke-direct {p0}, Lcom/android/internal/widget/IRemoteViewsFactory$Stub;-><init>()V
 
@@ -109,7 +107,6 @@
 
 .method public declared-synchronized getItemId(I)J
     .locals 5
-    .param p1    # I
 
     monitor-enter p0
 
@@ -231,7 +228,6 @@
 
 .method public declared-synchronized getViewAt(I)Landroid/widget/RemoteViews;
     .locals 5
-    .param p1    # I
 
     monitor-enter p0
 
@@ -536,7 +532,6 @@
 
 .method public onDestroy(Landroid/content/Intent;)V
     .locals 6
-    .param p1    # Landroid/content/Intent;
 
     # getter for: Landroid/widget/RemoteViewsService;->sLock:Ljava/lang/Object;
     invoke-static {}, Landroid/widget/RemoteViewsService;->access$200()Ljava/lang/Object;

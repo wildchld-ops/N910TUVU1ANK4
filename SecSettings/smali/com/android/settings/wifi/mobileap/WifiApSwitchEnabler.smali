@@ -112,8 +112,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/preference/SwitchPreference;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/preference/SwitchPreference;
 
     const/4 v2, 0x0
 
@@ -186,9 +184,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/preference/SwitchPreference;Lcom/android/settings/wifi/mobileap/WifiApSwitchEnabler$IMobileAPHelpController;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/preference/SwitchPreference;
-    .param p3    # Lcom/android/settings/wifi/mobileap/WifiApSwitchEnabler$IMobileAPHelpController;
 
     const/4 v2, 0x0
 
@@ -263,9 +258,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/widget/Switch;Lcom/android/settings/wifi/mobileap/WifiApSwitchEnabler$IMobileAPHelpController;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/widget/Switch;
-    .param p3    # Lcom/android/settings/wifi/mobileap/WifiApSwitchEnabler$IMobileAPHelpController;
 
     const/4 v2, 0x0
 
@@ -332,8 +324,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Lcom/android/settings/SettingsTextSwitchPreference;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/settings/SettingsTextSwitchPreference;
 
     const/4 v2, 0x0
 
@@ -398,8 +388,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/wifi/mobileap/WifiApSwitchEnabler;I)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApSwitchEnabler;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/settings/wifi/mobileap/WifiApSwitchEnabler;->handleWifiApStateChanged(I)V
 
@@ -408,10 +396,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/wifi/mobileap/WifiApSwitchEnabler;[Ljava/lang/Object;[Ljava/lang/Object;[Ljava/lang/Object;)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApSwitchEnabler;
-    .param p1    # [Ljava/lang/Object;
-    .param p2    # [Ljava/lang/Object;
-    .param p3    # [Ljava/lang/Object;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/settings/wifi/mobileap/WifiApSwitchEnabler;->updateTetherState([Ljava/lang/Object;[Ljava/lang/Object;[Ljava/lang/Object;)V
 
@@ -420,7 +404,6 @@
 
 .method static synthetic access$1000(Lcom/android/settings/wifi/mobileap/WifiApSwitchEnabler;)Landroid/net/wifi/WifiConfiguration;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApSwitchEnabler;
 
     iget-object v0, p0, Lcom/android/settings/wifi/mobileap/WifiApSwitchEnabler;->mWifiConfig:Landroid/net/wifi/WifiConfiguration;
 
@@ -429,8 +412,6 @@
 
 .method static synthetic access$1002(Lcom/android/settings/wifi/mobileap/WifiApSwitchEnabler;Landroid/net/wifi/WifiConfiguration;)Landroid/net/wifi/WifiConfiguration;
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApSwitchEnabler;
-    .param p1    # Landroid/net/wifi/WifiConfiguration;
 
     iput-object p1, p0, Lcom/android/settings/wifi/mobileap/WifiApSwitchEnabler;->mWifiConfig:Landroid/net/wifi/WifiConfiguration;
 
@@ -439,7 +420,6 @@
 
 .method static synthetic access$1100(Lcom/android/settings/wifi/mobileap/WifiApSwitchEnabler;)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApSwitchEnabler;
 
     invoke-direct {p0}, Lcom/android/settings/wifi/mobileap/WifiApSwitchEnabler;->disableWifiDialog()V
 
@@ -448,7 +428,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/wifi/mobileap/WifiApSwitchEnabler;)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApSwitchEnabler;
 
     invoke-direct {p0}, Lcom/android/settings/wifi/mobileap/WifiApSwitchEnabler;->enableWifiCheckBox()V
 
@@ -457,7 +436,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/wifi/mobileap/WifiApSwitchEnabler;)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApSwitchEnabler;
 
     invoke-direct {p0}, Lcom/android/settings/wifi/mobileap/WifiApSwitchEnabler;->preProvisioning()V
 
@@ -466,7 +444,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/wifi/mobileap/WifiApSwitchEnabler;)Landroid/net/wifi/WifiManager;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApSwitchEnabler;
 
     iget-object v0, p0, Lcom/android/settings/wifi/mobileap/WifiApSwitchEnabler;->mWifiManager:Landroid/net/wifi/WifiManager;
 
@@ -475,7 +452,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/wifi/mobileap/WifiApSwitchEnabler;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApSwitchEnabler;
 
     iget-object v0, p0, Lcom/android/settings/wifi/mobileap/WifiApSwitchEnabler;->mContext:Landroid/content/Context;
 
@@ -484,8 +460,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/wifi/mobileap/WifiApSwitchEnabler;I)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApSwitchEnabler;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/settings/wifi/mobileap/WifiApSwitchEnabler;->startProvisioningIfNecessary(I)V
 
@@ -494,7 +468,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/wifi/mobileap/WifiApSwitchEnabler;)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApSwitchEnabler;
 
     invoke-direct {p0}, Lcom/android/settings/wifi/mobileap/WifiApSwitchEnabler;->afterAttentionDialog()V
 
@@ -503,7 +476,6 @@
 
 .method static synthetic access$800(Lcom/android/settings/wifi/mobileap/WifiApSwitchEnabler;)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApSwitchEnabler;
 
     invoke-direct {p0}, Lcom/android/settings/wifi/mobileap/WifiApSwitchEnabler;->afterSsidDialog()V
 
@@ -512,7 +484,6 @@
 
 .method static synthetic access$900(Lcom/android/settings/wifi/mobileap/WifiApSwitchEnabler;)Lcom/android/settings/wifi/WifiApDialog;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApSwitchEnabler;
 
     iget-object v0, p0, Lcom/android/settings/wifi/mobileap/WifiApSwitchEnabler;->mDialogConfigure:Lcom/android/settings/wifi/WifiApDialog;
 
@@ -1434,7 +1405,6 @@
 
 .method private setSummary(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/settings/wifi/mobileap/WifiApSwitchEnabler;->mSwitchPref:Landroid/preference/SwitchPreference;
 
@@ -1459,7 +1429,6 @@
 
 .method private setSummary(Ljava/lang/CharSequence;)V
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
 
     iget-object v0, p0, Lcom/android/settings/wifi/mobileap/WifiApSwitchEnabler;->mSwitchPref:Landroid/preference/SwitchPreference;
 
@@ -1558,9 +1527,6 @@
 
 .method private updateTetherState([Ljava/lang/Object;[Ljava/lang/Object;[Ljava/lang/Object;)V
     .locals 13
-    .param p1    # [Ljava/lang/Object;
-    .param p2    # [Ljava/lang/Object;
-    .param p3    # [Ljava/lang/Object;
 
     const/4 v11, 0x0
 
@@ -1701,7 +1667,6 @@
 # virtual methods
 .method public dismissDialog(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -1911,8 +1876,6 @@
 
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 2
-    .param p1    # Landroid/widget/CompoundButton;
-    .param p2    # Z
 
     const/4 v1, 0x0
 
@@ -2304,7 +2267,6 @@
 
 .method public sendSetChecked(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/settings/wifi/mobileap/WifiApSwitchEnabler;->mHandler:Lcom/android/settings/wifi/mobileap/WifiApSwitchEnabler$SwitchHandler;
 
@@ -2334,7 +2296,6 @@
 
 .method public setChecked(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/settings/wifi/mobileap/WifiApSwitchEnabler;->mSwitch:Landroid/widget/Switch;
 
@@ -2376,7 +2337,6 @@
 
 .method public setEnabled(Z)V
     .locals 3
-    .param p1    # Z
 
     const/4 v0, 0x0
 
@@ -2487,7 +2447,6 @@
 
 .method public setSoftapEnabled(Z)Z
     .locals 11
-    .param p1    # Z
 
     const/4 v9, 0x3
 
@@ -2777,7 +2736,6 @@
 
 .method public setSwitch(Landroid/widget/Switch;)V
     .locals 7
-    .param p1    # Landroid/widget/Switch;
 
     const/4 v3, 0x1
 
@@ -2858,7 +2816,6 @@
 
 .method public showDialog(I)V
     .locals 27
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -4062,7 +4019,6 @@
 
 .method public updateConfigSummary(Landroid/net/wifi/WifiConfiguration;)V
     .locals 4
-    .param p1    # Landroid/net/wifi/WifiConfiguration;
 
     iget-object v1, p0, Lcom/android/settings/wifi/mobileap/WifiApSwitchEnabler;->mContext:Landroid/content/Context;
 

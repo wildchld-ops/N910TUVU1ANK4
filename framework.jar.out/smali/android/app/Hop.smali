@@ -48,11 +48,6 @@
 
 .method public constructor <init>(IIIII)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     const v2, 0xffff
 
@@ -142,7 +137,6 @@
 
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     const/4 v5, 0x0
 

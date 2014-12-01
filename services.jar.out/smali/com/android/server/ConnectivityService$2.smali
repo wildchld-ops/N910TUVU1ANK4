@@ -33,8 +33,6 @@
 # virtual methods
 .method public interfaceClassDataActivityChanged(Ljava/lang/String;Z)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     invoke-static {p1}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
 

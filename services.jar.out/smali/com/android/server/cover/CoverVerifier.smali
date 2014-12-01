@@ -55,7 +55,6 @@
 
 .method constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -213,7 +212,6 @@
 
 .method private getSupportSViewCoverHeight(I)I
     .locals 1
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -248,7 +246,6 @@
 
 .method private getSupportSViewCoverWidth(I)I
     .locals 1
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -356,9 +353,6 @@
 # virtual methods
 .method dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     const-string v0, " Current CoverVerifier state:"
 
@@ -475,7 +469,6 @@
 
 .method onUpdateCoverAttachedLocked(Z)Z
     .locals 4
-    .param p1    # Z
 
     const/4 v3, 0x1
 
@@ -758,7 +751,6 @@
 
 .method updateCoverPropertiesLocked(Lcom/samsung/android/cover/CoverState;)V
     .locals 8
-    .param p1    # Lcom/samsung/android/cover/CoverState;
 
     iget-object v0, p0, Lcom/android/server/cover/CoverVerifier;->mContext:Landroid/content/Context;
 

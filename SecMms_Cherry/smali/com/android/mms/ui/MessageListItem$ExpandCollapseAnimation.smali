@@ -25,10 +25,6 @@
 # direct methods
 .method public constructor <init>(Landroid/view/View;III)V
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-direct {p0}, Landroid/view/animation/Animation;-><init>()V
 
@@ -87,8 +83,6 @@
 # virtual methods
 .method protected applyTransformation(FLandroid/view/animation/Transformation;)V
     .locals 4
-    .param p1    # F
-    .param p2    # Landroid/view/animation/Transformation;
 
     const/high16 v3, 0x3f800000
 

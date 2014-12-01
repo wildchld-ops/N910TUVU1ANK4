@@ -60,7 +60,6 @@
 # virtual methods
 .method public add(Lcom/android/mms/ui/RecipientList$Recipient;)V
     .locals 2
-    .param p1    # Lcom/android/mms/ui/RecipientList$Recipient;
 
     if-eqz p1, :cond_0
 

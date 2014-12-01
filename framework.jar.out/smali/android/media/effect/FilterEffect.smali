@@ -12,8 +12,6 @@
 # direct methods
 .method protected constructor <init>(Landroid/media/effect/EffectContext;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Landroid/media/effect/EffectContext;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0}, Landroid/media/effect/Effect;-><init>()V
 
@@ -52,9 +50,6 @@
 
 .method protected frameFromTexture(III)Landroid/filterfw/core/Frame;
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v4, 0x3
 

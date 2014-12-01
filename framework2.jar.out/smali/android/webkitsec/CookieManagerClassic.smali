@@ -62,7 +62,6 @@
 
 .method static synthetic access$100(Landroid/webkitsec/CookieManagerClassic;)V
     .locals 0
-    .param p0    # Landroid/webkitsec/CookieManagerClassic;
 
     invoke-direct {p0}, Landroid/webkitsec/CookieManagerClassic;->signalCookieOperationsComplete()V
 
@@ -263,7 +262,6 @@
 
 .method public declared-synchronized getCookie(Landroid/net/WebAddress;)Ljava/lang/String;
     .locals 2
-    .param p1    # Landroid/net/WebAddress;
 
     monitor-enter p0
 
@@ -294,7 +292,6 @@
 
 .method public getCookie(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -307,8 +304,6 @@
 
 .method public getCookie(Ljava/lang/String;Z)Ljava/lang/String;
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     :try_start_0
     new-instance v1, Landroid/net/WebAddress;
@@ -406,7 +401,6 @@
 
 .method public declared-synchronized hasCookies(Z)Z
     .locals 1
-    .param p1    # Z
 
     monitor-enter p0
 
@@ -465,7 +459,6 @@
 
 .method public declared-synchronized setAcceptCookie(Z)V
     .locals 2
-    .param p1    # Z
 
     monitor-enter p0
 
@@ -517,7 +510,6 @@
 
 .method protected setAcceptFileSchemeCookiesImpl(Z)V
     .locals 0
-    .param p1    # Z
 
     invoke-static {p1}, Landroid/webkitsec/CookieManagerClassic;->nativeSetAcceptFileSchemeCookies(Z)V
 
@@ -526,8 +518,6 @@
 
 .method public setCookie(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -538,9 +528,6 @@
 
 .method setCookie(Ljava/lang/String;Ljava/lang/String;Z)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     :try_start_0
     new-instance v1, Landroid/net/WebAddress;

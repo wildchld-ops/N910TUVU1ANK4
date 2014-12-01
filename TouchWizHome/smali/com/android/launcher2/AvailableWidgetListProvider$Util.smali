@@ -29,7 +29,6 @@
 
 .method public static canUninstall(Landroid/content/pm/ApplicationInfo;)Z
     .locals 3
-    .param p0    # Landroid/content/pm/ApplicationInfo;
 
     const/4 v0, 0x0
 
@@ -71,8 +70,6 @@
 
 .method public static canUninstall(Landroid/content/pm/PackageManager;Ljava/lang/String;)Z
     .locals 2
-    .param p0    # Landroid/content/pm/PackageManager;
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -100,8 +97,6 @@
 
 .method public static isSecret(Landroid/content/pm/PackageManager;Ljava/lang/String;)Z
     .locals 2
-    .param p0    # Landroid/content/pm/PackageManager;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Landroid/os/UserHandle;->getCallingUserId()I
 

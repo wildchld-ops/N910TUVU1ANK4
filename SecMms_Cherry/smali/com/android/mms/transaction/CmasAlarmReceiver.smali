@@ -62,7 +62,6 @@
 
 .method public static setReminderCount(I)V
     .locals 3
-    .param p0    # I
 
     const-string v0, "Mms/CmasAlarmReceiver"
 
@@ -95,8 +94,6 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 8
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     const-wide/16 v6, -0x1
 

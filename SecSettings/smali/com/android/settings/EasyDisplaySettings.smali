@@ -78,7 +78,6 @@
 
 .method private update7StepFontsizeList(Landroid/preference/ListPreference;)V
     .locals 5
-    .param p1    # Landroid/preference/ListPreference;
 
     invoke-virtual {p0}, Landroid/app/Fragment;->getResources()Landroid/content/res/Resources;
 
@@ -141,7 +140,6 @@
 # virtual methods
 .method floatToIndex(F)I
     .locals 6
-    .param p1    # F
 
     invoke-static {}, Lcom/android/settings/Utils;->has7StepsFontSizeFeature()Z
 
@@ -228,7 +226,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 3
-    .param p1    # Landroid/content/res/Configuration;
 
     :try_start_0
     iget-object v1, p0, Lcom/android/settings/EasyDisplaySettings;->mCurConfig:Landroid/content/res/Configuration;
@@ -264,7 +261,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 7
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -423,7 +419,6 @@
 
 .method public onCreateDialog(I)Landroid/app/Dialog;
     .locals 8
-    .param p1    # I
 
     const/4 v5, 0x0
 
@@ -531,8 +526,6 @@
 
 .method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
     .locals 10
-    .param p1    # Landroid/preference/Preference;
-    .param p2    # Ljava/lang/Object;
 
     const/4 v9, 0x1
 
@@ -690,7 +683,6 @@
 
 .method public onPreferenceClick(Landroid/preference/Preference;)Z
     .locals 1
-    .param p1    # Landroid/preference/Preference;
 
     const/4 v0, 0x0
 
@@ -699,8 +691,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 1
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     invoke-super {p0, p1, p2}, Landroid/preference/PreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
 
@@ -770,7 +760,6 @@
 
 .method public readFontSizePreference(Landroid/preference/ListPreference;)V
     .locals 10
-    .param p1    # Landroid/preference/ListPreference;
 
     const/4 v9, 0x1
 
@@ -951,7 +940,6 @@
 
 .method public writeFontSizePreference(Ljava/lang/Object;)V
     .locals 5
-    .param p1    # Ljava/lang/Object;
 
     :try_start_0
     invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;

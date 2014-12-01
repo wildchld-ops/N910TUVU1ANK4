@@ -88,8 +88,6 @@
 
 .method private static listAppend(Ljava/lang/StringBuffer;Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/StringBuffer;
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Ljava/lang/StringBuffer;->length()I
 
@@ -109,7 +107,6 @@
 
 .method public static toString(I)Ljava/lang/String;
     .locals 3
-    .param p0    # I
 
     sget v1, Lcom/android/services/telephony/common/AudioMode;->ALL_MODES:I
 

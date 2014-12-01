@@ -46,8 +46,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Z)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Z
 
     const/4 v2, 0x1
 
@@ -134,7 +132,6 @@
 
 .method static synthetic access$000(Landroid/hardware/motion/MotionRecognitionFlipCover;)I
     .locals 1
-    .param p0    # Landroid/hardware/motion/MotionRecognitionFlipCover;
 
     iget v0, p0, Landroid/hardware/motion/MotionRecognitionFlipCover;->mPostLightVal:I
 
@@ -143,8 +140,6 @@
 
 .method static synthetic access$002(Landroid/hardware/motion/MotionRecognitionFlipCover;I)I
     .locals 0
-    .param p0    # Landroid/hardware/motion/MotionRecognitionFlipCover;
-    .param p1    # I
 
     iput p1, p0, Landroid/hardware/motion/MotionRecognitionFlipCover;->mPostLightVal:I
 
@@ -153,7 +148,6 @@
 
 .method static synthetic access$100(Landroid/hardware/motion/MotionRecognitionFlipCover;)Z
     .locals 1
-    .param p0    # Landroid/hardware/motion/MotionRecognitionFlipCover;
 
     iget-boolean v0, p0, Landroid/hardware/motion/MotionRecognitionFlipCover;->mProxEnabled:Z
 
@@ -162,8 +156,6 @@
 
 .method static synthetic access$102(Landroid/hardware/motion/MotionRecognitionFlipCover;Z)Z
     .locals 0
-    .param p0    # Landroid/hardware/motion/MotionRecognitionFlipCover;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/hardware/motion/MotionRecognitionFlipCover;->mProxEnabled:Z
 
@@ -172,7 +164,6 @@
 
 .method static synthetic access$200(Landroid/hardware/motion/MotionRecognitionFlipCover;)Landroid/hardware/SensorEventListener;
     .locals 1
-    .param p0    # Landroid/hardware/motion/MotionRecognitionFlipCover;
 
     iget-object v0, p0, Landroid/hardware/motion/MotionRecognitionFlipCover;->sensorProxListener:Landroid/hardware/SensorEventListener;
 
@@ -181,7 +172,6 @@
 
 .method static synthetic access$300(Landroid/hardware/motion/MotionRecognitionFlipCover;)Landroid/hardware/SensorManager;
     .locals 1
-    .param p0    # Landroid/hardware/motion/MotionRecognitionFlipCover;
 
     iget-object v0, p0, Landroid/hardware/motion/MotionRecognitionFlipCover;->sensorManager:Landroid/hardware/SensorManager;
 
@@ -190,7 +180,6 @@
 
 .method static synthetic access$400(Landroid/hardware/motion/MotionRecognitionFlipCover;)Z
     .locals 1
-    .param p0    # Landroid/hardware/motion/MotionRecognitionFlipCover;
 
     iget-boolean v0, p0, Landroid/hardware/motion/MotionRecognitionFlipCover;->mProxClosed:Z
 
@@ -199,8 +188,6 @@
 
 .method static synthetic access$402(Landroid/hardware/motion/MotionRecognitionFlipCover;Z)Z
     .locals 0
-    .param p0    # Landroid/hardware/motion/MotionRecognitionFlipCover;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/hardware/motion/MotionRecognitionFlipCover;->mProxClosed:Z
 
@@ -209,7 +196,6 @@
 
 .method static synthetic access$500(Landroid/hardware/motion/MotionRecognitionFlipCover;)I
     .locals 1
-    .param p0    # Landroid/hardware/motion/MotionRecognitionFlipCover;
 
     iget v0, p0, Landroid/hardware/motion/MotionRecognitionFlipCover;->mPostProxVal:I
 
@@ -218,8 +204,6 @@
 
 .method static synthetic access$502(Landroid/hardware/motion/MotionRecognitionFlipCover;I)I
     .locals 0
-    .param p0    # Landroid/hardware/motion/MotionRecognitionFlipCover;
-    .param p1    # I
 
     iput p1, p0, Landroid/hardware/motion/MotionRecognitionFlipCover;->mPostProxVal:I
 
@@ -228,7 +212,6 @@
 
 .method static synthetic access$600(Landroid/hardware/motion/MotionRecognitionFlipCover;)Z
     .locals 1
-    .param p0    # Landroid/hardware/motion/MotionRecognitionFlipCover;
 
     iget-boolean v0, p0, Landroid/hardware/motion/MotionRecognitionFlipCover;->mIsLightSensorExist:Z
 

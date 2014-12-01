@@ -162,8 +162,6 @@
 
 .method public static create(Landroid/content/Context;Landroid/os/Handler;)Ljava/lang/Object;
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/os/Handler;
 
     :try_start_0
     const-string v3, "android.app.enterprise.EnterpriseDeviceManager"
@@ -215,8 +213,6 @@
 
 .method public static createKnox(Landroid/content/Context;Landroid/os/Handler;)Ljava/lang/Object;
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/os/Handler;
 
     const/4 v4, 0x0
 
@@ -699,7 +695,6 @@
 
 .method public getELMPermissions(Ljava/lang/String;)Ljava/util/List;
     .locals 2
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

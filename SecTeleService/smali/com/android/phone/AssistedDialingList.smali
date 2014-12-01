@@ -284,7 +284,7 @@
 
     const v0, 0x7f04000c
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->setContentView(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/AssistedDialingList;->setContentView(I)V
 
     const-string v0, "AssistedDialingList"
 
@@ -292,7 +292,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/AssistedDialingList;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -300,7 +300,7 @@
 
     const v0, 0x7f0a0026
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/phone/AssistedDialingList;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -310,7 +310,7 @@
 
     const v0, 0x7f0a0025
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/phone/AssistedDialingList;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -318,7 +318,7 @@
 
     iput-object v0, p0, Lcom/android/phone/AssistedDialingList;->searchtext:Landroid/widget/EditText;
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/phone/AssistedDialingList;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
 
@@ -332,14 +332,14 @@
 
     const v0, 0x7f0906b4
 
-    invoke-virtual {p0, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lcom/android/phone/AssistedDialingList;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->setTitle(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/AssistedDialingList;->setTitle(Ljava/lang/CharSequence;)V
 
     :cond_0
-    invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/phone/AssistedDialingList;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
 
@@ -417,7 +417,7 @@
 
     invoke-direct {v1, p0}, Lcom/android/phone/AssistedDialingList$1;-><init>(Lcom/android/phone/AssistedDialingList;)V
 
-    invoke-virtual {v0, v1}, Landroid/widget/AdapterView;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
+    invoke-virtual {v0, v1}, Landroid/widget/ListView;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
 
     iget-object v0, p0, Lcom/android/phone/AssistedDialingList;->searchtext:Landroid/widget/EditText;
 
@@ -425,9 +425,9 @@
 
     invoke-direct {v1, p0}, Lcom/android/phone/AssistedDialingList$2;-><init>(Lcom/android/phone/AssistedDialingList;)V
 
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->addTextChangedListener(Landroid/text/TextWatcher;)V
+    invoke-virtual {v0, v1}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getActionBar()Landroid/app/ActionBar;
+    invoke-virtual {p0}, Lcom/android/phone/AssistedDialingList;->getActionBar()Landroid/app/ActionBar;
 
     move-result-object v7
 
@@ -484,7 +484,7 @@
     return v0
 
     :pswitch_0
-    invoke-virtual {p0}, Landroid/app/Activity;->onBackPressed()V
+    invoke-virtual {p0}, Lcom/android/phone/AssistedDialingList;->onBackPressed()V
 
     const/4 v0, 0x1
 

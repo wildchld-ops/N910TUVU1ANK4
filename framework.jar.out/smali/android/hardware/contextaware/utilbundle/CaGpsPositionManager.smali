@@ -30,9 +30,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/os/Looper;Landroid/hardware/contextaware/manager/ICurrrentPositionObserver;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/Looper;
-    .param p3    # Landroid/hardware/contextaware/manager/ICurrrentPositionObserver;
 
     const-wide/16 v2, 0x0
 
@@ -71,7 +68,6 @@
 
 .method static synthetic access$000(Landroid/hardware/contextaware/utilbundle/CaGpsPositionManager;)Landroid/location/LocationListener;
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/utilbundle/CaGpsPositionManager;
 
     iget-object v0, p0, Landroid/hardware/contextaware/utilbundle/CaGpsPositionManager;->mLocationListener:Landroid/location/LocationListener;
 
@@ -80,7 +76,6 @@
 
 .method static synthetic access$100(Landroid/hardware/contextaware/utilbundle/CaGpsPositionManager;)Landroid/location/LocationManager;
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/utilbundle/CaGpsPositionManager;
 
     iget-object v0, p0, Landroid/hardware/contextaware/utilbundle/CaGpsPositionManager;->mGpsManager:Landroid/location/LocationManager;
 
@@ -89,8 +84,6 @@
 
 .method static synthetic access$200(Landroid/hardware/contextaware/utilbundle/CaGpsPositionManager;Landroid/location/Location;)V
     .locals 0
-    .param p0    # Landroid/hardware/contextaware/utilbundle/CaGpsPositionManager;
-    .param p1    # Landroid/location/Location;
 
     invoke-direct {p0, p1}, Landroid/hardware/contextaware/utilbundle/CaGpsPositionManager;->notifyListener(Landroid/location/Location;)V
 
@@ -99,8 +92,6 @@
 
 .method static synthetic access$302(Landroid/hardware/contextaware/utilbundle/CaGpsPositionManager;D)D
     .locals 0
-    .param p0    # Landroid/hardware/contextaware/utilbundle/CaGpsPositionManager;
-    .param p1    # D
 
     iput-wide p1, p0, Landroid/hardware/contextaware/utilbundle/CaGpsPositionManager;->preLatitude:D
 
@@ -109,8 +100,6 @@
 
 .method static synthetic access$402(Landroid/hardware/contextaware/utilbundle/CaGpsPositionManager;D)D
     .locals 0
-    .param p0    # Landroid/hardware/contextaware/utilbundle/CaGpsPositionManager;
-    .param p1    # D
 
     iput-wide p1, p0, Landroid/hardware/contextaware/utilbundle/CaGpsPositionManager;->preLongitude:D
 
@@ -119,7 +108,6 @@
 
 .method static synthetic access$500(Landroid/hardware/contextaware/utilbundle/CaGpsPositionManager;)Landroid/os/Looper;
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/utilbundle/CaGpsPositionManager;
 
     iget-object v0, p0, Landroid/hardware/contextaware/utilbundle/CaGpsPositionManager;->mLooper:Landroid/os/Looper;
 
@@ -128,7 +116,6 @@
 
 .method private notifyListener(Landroid/location/Location;)V
     .locals 17
-    .param p1    # Landroid/location/Location;
 
     move-object/from16 v0, p0
 
@@ -360,7 +347,6 @@
 
 .method public final initializeManager(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const-string v0, "location"
 
@@ -404,7 +390,6 @@
 
 .method public registerCurrentPositionObserver(Landroid/hardware/contextaware/manager/ICurrrentPositionObserver;)V
     .locals 0
-    .param p1    # Landroid/hardware/contextaware/manager/ICurrrentPositionObserver;
 
     iput-object p1, p0, Landroid/hardware/contextaware/utilbundle/CaGpsPositionManager;->mObserver:Landroid/hardware/contextaware/manager/ICurrrentPositionObserver;
 
@@ -413,7 +398,6 @@
 
 .method public setGpsUpdateTime(J)V
     .locals 0
-    .param p1    # J
 
     iput-wide p1, p0, Landroid/hardware/contextaware/utilbundle/CaGpsPositionManager;->mGpsTime:J
 

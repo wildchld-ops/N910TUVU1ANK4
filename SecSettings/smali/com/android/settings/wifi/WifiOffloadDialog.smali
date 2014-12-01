@@ -70,8 +70,6 @@
 
 .method static synthetic access$002(Lcom/android/settings/wifi/WifiOffloadDialog;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/WifiOffloadDialog;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/wifi/WifiOffloadDialog;->mIsUserAction:Z
 
@@ -80,7 +78,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/wifi/WifiOffloadDialog;)Landroid/net/wifi/WifiOffloadManager;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiOffloadDialog;
 
     iget-object v0, p0, Lcom/android/settings/wifi/WifiOffloadDialog;->mWifiOffloadManager:Landroid/net/wifi/WifiOffloadManager;
 
@@ -89,7 +86,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/wifi/WifiOffloadDialog;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiOffloadDialog;
 
     iget-object v0, p0, Lcom/android/settings/wifi/WifiOffloadDialog;->mSearchingText:Landroid/widget/TextView;
 
@@ -98,7 +94,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/wifi/WifiOffloadDialog;)Landroid/widget/ProgressBar;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiOffloadDialog;
 
     iget-object v0, p0, Lcom/android/settings/wifi/WifiOffloadDialog;->mProgress:Landroid/widget/ProgressBar;
 
@@ -322,7 +317,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 3
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -372,7 +366,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 

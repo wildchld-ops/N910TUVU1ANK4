@@ -115,7 +115,6 @@
 # direct methods
 .method public constructor <init>(Z)V
     .locals 4
-    .param p1    # Z
 
     const/4 v3, 0x4
 
@@ -218,10 +217,6 @@
 
 .method private calcRotationMatrix([DDDD)V
     .locals 7
-    .param p1    # [D
-    .param p2    # D
-    .param p4    # D
-    .param p6    # D
 
     invoke-direct {p0}, Lcom/sec/android/app/camera/panorama360/SensorFusion;->createMatrix()[D
 
@@ -633,9 +628,6 @@
 
 .method private multMatrix([D[D[D)V
     .locals 12
-    .param p1    # [D
-    .param p2    # [D
-    .param p3    # [D
 
     const/4 v11, 0x0
 
@@ -708,8 +700,6 @@
 
 .method private setInputSensorData([Ljava/lang/Object;I)I
     .locals 1
-    .param p1    # [Ljava/lang/Object;
-    .param p2    # I
 
     if-nez p1, :cond_0
 
@@ -999,10 +989,6 @@
 
 .method public getSensorMatrix([D[D[D[I)I
     .locals 7
-    .param p1    # [D
-    .param p2    # [D
-    .param p3    # [D
-    .param p4    # [I
 
     const/4 v1, 0x0
 
@@ -1207,15 +1193,12 @@
 
 .method public onAccuracyChanged(Landroid/hardware/Sensor;I)V
     .locals 0
-    .param p1    # Landroid/hardware/Sensor;
-    .param p2    # I
 
     return-void
 .end method
 
 .method public onSensorChanged(Landroid/hardware/SensorEvent;)V
     .locals 6
-    .param p1    # Landroid/hardware/SensorEvent;
 
     const/16 v5, 0x200
 
@@ -1423,7 +1406,6 @@
 
 .method public setAppState(I)V
     .locals 1
-    .param p1    # I
 
     monitor-enter p0
 
@@ -1448,7 +1430,6 @@
 
 .method public setInitialOrientation(I)V
     .locals 8
-    .param p1    # I
 
     const-wide/16 v2, 0x0
 
@@ -1499,7 +1480,6 @@
 
 .method public setMode(I)V
     .locals 1
-    .param p1    # I
 
     monitor-enter p0
 
@@ -1526,7 +1506,6 @@
 
 .method public setOffsetMode(I)V
     .locals 1
-    .param p1    # I
 
     monitor-enter p0
 
@@ -1551,7 +1530,6 @@
 
 .method public setRotation(I)V
     .locals 1
-    .param p1    # I
 
     monitor-enter p0
 

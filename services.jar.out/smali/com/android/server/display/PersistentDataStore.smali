@@ -65,7 +65,6 @@
 
 .method private findRememberedWifiDisplay(Ljava/lang/String;)I
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v2, p0, Lcom/android/server/display/PersistentDataStore;->mRememberedWifiDisplays:Ljava/util/ArrayList;
 
@@ -196,7 +195,6 @@
 
 .method private loadFromXml(Lorg/xmlpull/v1/XmlPullParser;)V
     .locals 3
-    .param p1    # Lorg/xmlpull/v1/XmlPullParser;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -259,7 +257,6 @@
 
 .method private loadRememberedWifiDisplaysFromXml(Lorg/xmlpull/v1/XmlPullParser;)V
     .locals 11
-    .param p1    # Lorg/xmlpull/v1/XmlPullParser;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -456,7 +453,6 @@
 
 .method private saveToXml(Lorg/xmlpull/v1/XmlSerializer;)V
     .locals 5
-    .param p1    # Lorg/xmlpull/v1/XmlSerializer;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -588,7 +584,6 @@
 # virtual methods
 .method public applyWifiDisplayAlias(Landroid/hardware/display/WifiDisplay;)Landroid/hardware/display/WifiDisplay;
     .locals 9
-    .param p1    # Landroid/hardware/display/WifiDisplay;
 
     if-eqz p1, :cond_1
 
@@ -668,7 +663,6 @@
 
 .method public applyWifiDisplayAliases([Landroid/hardware/display/WifiDisplay;)[Landroid/hardware/display/WifiDisplay;
     .locals 6
-    .param p1    # [Landroid/hardware/display/WifiDisplay;
 
     const/4 v5, 0x0
 
@@ -713,7 +707,6 @@
 
 .method public forgetWifiDisplay(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/display/PersistentDataStore;->findRememberedWifiDisplay(Ljava/lang/String;)I
 
@@ -740,7 +733,6 @@
 
 .method public getRememberedWifiDisplay(Ljava/lang/String;)Landroid/hardware/display/WifiDisplay;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/server/display/PersistentDataStore;->loadIfNeeded()V
 
@@ -793,7 +785,6 @@
 
 .method public rememberWifiDisplay(Landroid/hardware/display/WifiDisplay;)Z
     .locals 3
-    .param p1    # Landroid/hardware/display/WifiDisplay;
 
     invoke-direct {p0}, Lcom/android/server/display/PersistentDataStore;->loadIfNeeded()V
 

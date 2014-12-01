@@ -36,7 +36,6 @@
 # virtual methods
 .method public onDreamStopped(Landroid/os/Binder;)V
     .locals 2
-    .param p1    # Landroid/os/Binder;
 
     iget-object v0, p0, Lcom/android/server/dreams/DreamManagerService$5;->this$0:Lcom/android/server/dreams/DreamManagerService;
 

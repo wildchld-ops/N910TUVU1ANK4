@@ -26,9 +26,6 @@
 # direct methods
 .method public constructor <init>(ILandroid/content/Context;Landroid/hardware/contextaware/dataprovider/sensorhubprovider/ISensorHubResetObservable;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/hardware/contextaware/dataprovider/sensorhubprovider/ISensorHubResetObservable;
 
     const/4 v1, 0x1
 
@@ -199,7 +196,6 @@
 
 .method public final setPropertyValue(ILjava/lang/Object;)Z
     .locals 3
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",

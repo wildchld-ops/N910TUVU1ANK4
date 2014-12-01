@@ -126,7 +126,6 @@
 
 .method static synthetic access$102(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Landroid/net/EthernetDataTracker;->mLinkUp:Z
 
@@ -135,8 +134,6 @@
 
 .method static synthetic access$200(Landroid/net/EthernetDataTracker;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Landroid/net/EthernetDataTracker;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Landroid/net/EthernetDataTracker;->interfaceAdded(Ljava/lang/String;)V
 
@@ -145,8 +142,6 @@
 
 .method static synthetic access$300(Landroid/net/EthernetDataTracker;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Landroid/net/EthernetDataTracker;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Landroid/net/EthernetDataTracker;->interfaceRemoved(Ljava/lang/String;)V
 
@@ -155,7 +150,6 @@
 
 .method static synthetic access$400(Landroid/net/EthernetDataTracker;)Ljava/lang/String;
     .locals 1
-    .param p0    # Landroid/net/EthernetDataTracker;
 
     iget-object v0, p0, Landroid/net/EthernetDataTracker;->mHwAddr:Ljava/lang/String;
 
@@ -164,7 +158,6 @@
 
 .method static synthetic access$500(Landroid/net/EthernetDataTracker;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Landroid/net/EthernetDataTracker;
 
     iget-object v0, p0, Landroid/net/EthernetDataTracker;->mCsHandler:Landroid/os/Handler;
 
@@ -208,7 +201,6 @@
 
 .method private interfaceAdded(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     sget-object v2, Landroid/net/EthernetDataTracker;->sIfaceMatch:Ljava/lang/String;
 
@@ -344,7 +336,6 @@
 
 .method private interfaceRemoved(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     sget-object v0, Landroid/net/EthernetDataTracker;->mIface:Ljava/lang/String;
 
@@ -424,7 +415,6 @@
 
 .method public addStackedLink(Landroid/net/LinkProperties;)V
     .locals 1
-    .param p1    # Landroid/net/LinkProperties;
 
     iget-object v0, p0, Landroid/net/EthernetDataTracker;->mLinkProperties:Landroid/net/LinkProperties;
 
@@ -441,14 +431,12 @@
 
 .method public captivePortalCheckCompleted(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method public defaultRouteSet(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Landroid/net/EthernetDataTracker;->mDefaultRouteSet:Ljava/util/concurrent/atomic/AtomicBoolean;
 
@@ -700,7 +688,6 @@
 
 .method public privateDnsRouteSet(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Landroid/net/EthernetDataTracker;->mPrivateDnsRouteSet:Ljava/util/concurrent/atomic/AtomicBoolean;
 
@@ -732,7 +719,6 @@
 
 .method public removeStackedLink(Landroid/net/LinkProperties;)V
     .locals 1
-    .param p1    # Landroid/net/LinkProperties;
 
     iget-object v0, p0, Landroid/net/EthernetDataTracker;->mLinkProperties:Landroid/net/LinkProperties;
 
@@ -743,14 +729,12 @@
 
 .method public setDependencyMet(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method public setPolicyDataEnable(Z)V
     .locals 3
-    .param p1    # Z
 
     const-string v0, "Ethernet"
 
@@ -785,7 +769,6 @@
 
 .method public setRadio(Z)Z
     .locals 1
-    .param p1    # Z
 
     const/4 v0, 0x1
 
@@ -794,7 +777,6 @@
 
 .method public setTeardownRequested(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Landroid/net/EthernetDataTracker;->mTeardownRequested:Ljava/util/concurrent/atomic/AtomicBoolean;
 
@@ -805,7 +787,6 @@
 
 .method public setUserDataEnable(Z)V
     .locals 3
-    .param p1    # Z
 
     const-string v0, "Ethernet"
 
@@ -840,16 +821,12 @@
 
 .method public setUserDataEnableEx(ZI)V
     .locals 0
-    .param p1    # Z
-    .param p2    # I
 
     return-void
 .end method
 
 .method public startMonitoring(Landroid/content/Context;Landroid/os/Handler;)V
     .locals 11
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/Handler;
 
     iput-object p1, p0, Landroid/net/EthernetDataTracker;->mContext:Landroid/content/Context;
 
@@ -1038,9 +1015,6 @@
 
 .method public startUsingNetworkFeature(Ljava/lang/String;II)I
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v0, -0x1
 
@@ -1049,9 +1023,6 @@
 
 .method public stopUsingNetworkFeature(Ljava/lang/String;II)I
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v0, -0x1
 
@@ -1060,7 +1031,6 @@
 
 .method public supplyMessenger(Landroid/os/Messenger;)V
     .locals 0
-    .param p1    # Landroid/os/Messenger;
 
     return-void
 .end method

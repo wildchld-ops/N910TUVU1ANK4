@@ -38,10 +38,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/internal/app/ResolverActivity;Landroid/content/Context;Landroid/content/Intent;[Landroid/content/Intent;I)V
     .locals 4
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/content/Intent;
-    .param p4    # [Landroid/content/Intent;
-    .param p5    # I
 
     iput-object p1, p0, Lcom/android/internal/app/ResolverActivity$RemoteShareRecentHistoryListAdapter;->this$0:Lcom/android/internal/app/ResolverActivity;
 
@@ -100,7 +96,6 @@
 
 .method static synthetic access$2800(Lcom/android/internal/app/ResolverActivity$RemoteShareRecentHistoryListAdapter;)Ljava/util/List;
     .locals 1
-    .param p0    # Lcom/android/internal/app/ResolverActivity$RemoteShareRecentHistoryListAdapter;
 
     iget-object v0, p0, Lcom/android/internal/app/ResolverActivity$RemoteShareRecentHistoryListAdapter;->mRemoteShareRecentHistoryList:Ljava/util/List;
 
@@ -109,8 +104,6 @@
 
 .method private final bindView(Landroid/view/View;Lcom/android/internal/app/ResolverActivity$RemoteShareRecentHistoryListInfo;)V
     .locals 8
-    .param p1    # Landroid/view/View;
-    .param p2    # Lcom/android/internal/app/ResolverActivity$RemoteShareRecentHistoryListInfo;
 
     const v7, 0x1020433
 
@@ -229,7 +222,6 @@
 
 .method public getItem(I)Ljava/lang/Object;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/internal/app/ResolverActivity$RemoteShareRecentHistoryListAdapter;->mRemoteShareRecentHistoryList:Ljava/util/List;
 
@@ -242,7 +234,6 @@
 
 .method public getItemId(I)J
     .locals 2
-    .param p1    # I
 
     int-to-long v0, p1
 
@@ -251,9 +242,6 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     if-nez p2, :cond_0
 

@@ -24,8 +24,6 @@
 
 .method private declared-synchronized internalNotifyRegistrants(Ljava/lang/Object;Ljava/lang/Throwable;)V
     .locals 4
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Throwable;
 
     monitor-enter p0
 
@@ -74,9 +72,6 @@
 # virtual methods
 .method public declared-synchronized add(Landroid/os/Handler;ILjava/lang/Object;)V
     .locals 1
-    .param p1    # Landroid/os/Handler;
-    .param p2    # I
-    .param p3    # Ljava/lang/Object;
 
     monitor-enter p0
 
@@ -103,7 +98,6 @@
 
 .method public declared-synchronized add(Landroid/os/Registrant;)V
     .locals 1
-    .param p1    # Landroid/os/Registrant;
 
     monitor-enter p0
 
@@ -130,9 +124,6 @@
 
 .method public declared-synchronized addUnique(Landroid/os/Handler;ILjava/lang/Object;)V
     .locals 1
-    .param p1    # Landroid/os/Handler;
-    .param p2    # I
-    .param p3    # Ljava/lang/Object;
 
     monitor-enter p0
 
@@ -161,7 +152,6 @@
 
 .method public declared-synchronized get(I)Ljava/lang/Object;
     .locals 1
-    .param p1    # I
 
     monitor-enter p0
 
@@ -188,7 +178,6 @@
 
 .method public notifyException(Ljava/lang/Throwable;)V
     .locals 1
-    .param p1    # Ljava/lang/Throwable;
 
     const/4 v0, 0x0
 
@@ -209,7 +198,6 @@
 
 .method public notifyRegistrants(Landroid/os/AsyncResult;)V
     .locals 2
-    .param p1    # Landroid/os/AsyncResult;
 
     iget-object v0, p1, Landroid/os/AsyncResult;->result:Ljava/lang/Object;
 
@@ -222,7 +210,6 @@
 
 .method public notifyResult(Ljava/lang/Object;)V
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     const/4 v0, 0x0
 
@@ -233,7 +220,6 @@
 
 .method public declared-synchronized remove(Landroid/os/Handler;)V
     .locals 5
-    .param p1    # Landroid/os/Handler;
 
     monitor-enter p0
 

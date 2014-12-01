@@ -67,8 +67,6 @@
 
 .method private account_icon_resize(Landroid/content/Context;Landroid/graphics/drawable/Drawable;)Landroid/graphics/drawable/Drawable;
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/graphics/drawable/Drawable;
 
     const v4, 0x7f0f0068
 
@@ -597,7 +595,6 @@
 # virtual methods
 .method public onAccountsUpdated([Landroid/accounts/Account;)V
     .locals 2
-    .param p1    # [Landroid/accounts/Account;
 
     iget-object v0, p0, Lcom/android/settings/AccountMenu;->mAuthenticatorHelper:Lcom/android/settings/accounts/AuthenticatorHelper;
 
@@ -618,7 +615,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v1, 0x1
 
@@ -744,8 +740,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
     .locals 5
-    .param p1    # Landroid/view/Menu;
-    .param p2    # Landroid/view/MenuInflater;
 
     const/4 v1, 0x1
 
@@ -832,7 +826,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 4
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v1, 0x1
 
@@ -930,7 +923,6 @@
 
 .method public onPreferenceClick(Landroid/preference/Preference;)Z
     .locals 9
-    .param p1    # Landroid/preference/Preference;
 
     const/4 v6, 0x0
 

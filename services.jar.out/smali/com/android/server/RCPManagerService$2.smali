@@ -33,7 +33,6 @@
 # virtual methods
 .method public onPersonaActive(I)V
     .locals 4
-    .param p1    # I
 
     const-string v1, "onPersonaActive"
 
@@ -128,7 +127,6 @@
 
 .method public onRemovePersona(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "onRemovePersona"
 
@@ -186,7 +184,6 @@
 
 .method public onResetPersona(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "onResetPersona"
 
@@ -227,9 +224,6 @@
 
 .method public onSwitchPersona(IIZ)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     const-string v0, "onSwitchPersona"
 

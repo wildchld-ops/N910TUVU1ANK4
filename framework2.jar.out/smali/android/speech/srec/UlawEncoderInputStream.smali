@@ -26,8 +26,6 @@
 # direct methods
 .method public constructor <init>(Ljava/io/InputStream;I)V
     .locals 2
-    .param p1    # Ljava/io/InputStream;
-    .param p2    # I
 
     const/4 v1, 0x0
 
@@ -58,12 +56,6 @@
 
 .method public static encode([BI[BIII)V
     .locals 8
-    .param p0    # [B
-    .param p1    # I
-    .param p2    # [B
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     if-gtz p5, :cond_0
 
@@ -354,9 +346,6 @@
 
 .method public static maxAbsPcm([BII)I
     .locals 6
-    .param p0    # [B
-    .param p1    # I
-    .param p2    # I
 
     const/4 v1, 0x0
 
@@ -485,7 +474,6 @@
 
 .method public read([B)I
     .locals 2
-    .param p1    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -505,9 +493,6 @@
 
 .method public read([BII)I
     .locals 9
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

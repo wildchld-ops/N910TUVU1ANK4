@@ -29,8 +29,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/enterprise/browser/BrowserPolicy;II)V
     .locals 1
-    .param p2    # I
-    .param p3    # I
 
     iput-object p1, p0, Lcom/android/server/enterprise/browser/BrowserPolicy$BrowserProxyCache;->this$0:Lcom/android/server/enterprise/browser/BrowserPolicy;
 
@@ -53,7 +51,6 @@
 
 .method static synthetic access$100(Lcom/android/server/enterprise/browser/BrowserPolicy$BrowserProxyCache;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/browser/BrowserPolicy$BrowserProxyCache;
 
     iget-object v0, p0, Lcom/android/server/enterprise/browser/BrowserPolicy$BrowserProxyCache;->mProxySetting:Ljava/lang/String;
 
@@ -138,7 +135,6 @@
 
 .method isOwner(I)Z
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Lcom/android/server/enterprise/browser/BrowserPolicy$BrowserProxyCache;->mAdminUid:I
 
@@ -157,9 +153,6 @@
 
 .method setProxy(ILjava/lang/String;Z)V
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     if-eqz p2, :cond_0
 

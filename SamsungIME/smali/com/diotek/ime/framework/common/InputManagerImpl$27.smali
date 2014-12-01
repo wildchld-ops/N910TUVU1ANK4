@@ -21,7 +21,6 @@
 # direct methods
 .method constructor <init>(Lcom/diotek/ime/framework/common/InputManagerImpl;Landroid/os/Handler;)V
     .locals 0
-    .param p2    # Landroid/os/Handler;
 
     iput-object p1, p0, Lcom/diotek/ime/framework/common/InputManagerImpl$27;->this$0:Lcom/diotek/ime/framework/common/InputManagerImpl;
 
@@ -34,7 +33,6 @@
 # virtual methods
 .method public onChange(Z)V
     .locals 6
-    .param p1    # Z
 
     const/4 v5, 0x1
 

@@ -30,7 +30,6 @@
 # direct methods
 .method constructor <init>(Landroid/widget/ScrollView;)V
     .locals 1
-    .param p1    # Landroid/widget/ScrollView;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
@@ -47,7 +46,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 2
-    .param p1    # Landroid/os/Message;
 
     iget-object v1, p0, Landroid/widget/ScrollView$HoverScrollHandler;->mScrollView:Ljava/lang/ref/WeakReference;
 

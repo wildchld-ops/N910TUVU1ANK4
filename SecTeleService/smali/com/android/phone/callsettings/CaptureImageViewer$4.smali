@@ -41,7 +41,7 @@
 
     iget-object v2, p0, Lcom/android/phone/callsettings/CaptureImageViewer$4;->this$0:Lcom/android/phone/callsettings/CaptureImageViewer;
 
-    invoke-virtual {v2}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v2}, Lcom/android/phone/callsettings/CaptureImageViewer;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -53,7 +53,7 @@
 
     const v3, 0x7f090458
 
-    invoke-virtual {v2, v3}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {v2, v3}, Lcom/android/phone/callsettings/CaptureImageViewer;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
@@ -63,7 +63,7 @@
 
     const v3, 0x7f09053d
 
-    invoke-virtual {v2, v3}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {v2, v3}, Lcom/android/phone/callsettings/CaptureImageViewer;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
@@ -73,7 +73,7 @@
 
     const v3, 0x7f090223
 
-    invoke-virtual {v2, v3}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {v2, v3}, Lcom/android/phone/callsettings/CaptureImageViewer;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
@@ -87,7 +87,7 @@
 
     const v3, 0x7f090904
 
-    invoke-virtual {v2, v3}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {v2, v3}, Lcom/android/phone/callsettings/CaptureImageViewer;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 

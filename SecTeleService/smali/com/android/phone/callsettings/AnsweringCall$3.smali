@@ -47,7 +47,7 @@
 
     iget-object v0, p0, Lcom/android/phone/callsettings/AnsweringCall$3;->val$check:Landroid/widget/CheckBox;
 
-    invoke-virtual {v0}, Landroid/widget/CompoundButton;->isChecked()Z
+    invoke-virtual {v0}, Landroid/widget/CheckBox;->isChecked()Z
 
     move-result v0
 
@@ -55,11 +55,11 @@
 
     iget-object v0, p0, Lcom/android/phone/callsettings/AnsweringCall$3;->this$0:Lcom/android/phone/callsettings/AnsweringCall;
 
-    invoke-virtual {v0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v0}, Lcom/android/phone/callsettings/AnsweringCall;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v0}, Landroid/app/Activity;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -70,11 +70,11 @@
     :cond_0
     iget-object v0, p0, Lcom/android/phone/callsettings/AnsweringCall$3;->this$0:Lcom/android/phone/callsettings/AnsweringCall;
 
-    invoke-virtual {v0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v0}, Lcom/android/phone/callsettings/AnsweringCall;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v0}, Landroid/app/Activity;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 

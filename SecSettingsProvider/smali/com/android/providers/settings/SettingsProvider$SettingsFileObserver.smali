@@ -27,8 +27,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/providers/settings/SettingsProvider;ILjava/lang/String;)V
     .locals 2
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/providers/settings/SettingsProvider$SettingsFileObserver;->this$0:Lcom/android/providers/settings/SettingsProvider;
 
@@ -55,8 +53,6 @@
 # virtual methods
 .method public onEvent(ILjava/lang/String;)V
     .locals 4
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v3, 0x0
 

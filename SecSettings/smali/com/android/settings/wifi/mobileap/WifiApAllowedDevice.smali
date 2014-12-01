@@ -21,10 +21,6 @@
 # direct methods
 .method constructor <init>(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Lcom/android/settings/wifi/mobileap/WifiApAllowedList;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Lcom/android/settings/wifi/mobileap/WifiApAllowedList;
 
     invoke-direct {p0, p1}, Landroid/preference/Preference;-><init>(Landroid/content/Context;)V
 
@@ -51,7 +47,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/wifi/mobileap/WifiApAllowedDevice;)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApAllowedDevice;
 
     invoke-direct {p0}, Lcom/android/settings/wifi/mobileap/WifiApAllowedDevice;->showDialog()V
 
@@ -60,8 +55,6 @@
 
 .method static synthetic access$102(Lcom/android/settings/wifi/mobileap/WifiApAllowedDevice;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApAllowedDevice;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/wifi/mobileap/WifiApAllowedDevice;->mMenuHasFocus:Z
 
@@ -91,7 +84,6 @@
 # virtual methods
 .method public compareTo(Landroid/preference/Preference;)I
     .locals 3
-    .param p1    # Landroid/preference/Preference;
 
     instance-of v1, p1, Lcom/android/settings/wifi/mobileap/WifiApAllowedDevice;
 
@@ -120,7 +112,6 @@
 
 .method public bridge synthetic compareTo(Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Landroid/preference/Preference;
 
@@ -141,7 +132,6 @@
 
 .method protected onBindView(Landroid/view/View;)V
     .locals 7
-    .param p1    # Landroid/view/View;
 
     new-instance v0, Lcom/android/settings/wifi/mobileap/WifiApWhitelistDialog;
 
@@ -216,8 +206,6 @@
 
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 2
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     const/4 v1, 0x0
 
@@ -257,9 +245,6 @@
 
 .method public onKey(Landroid/view/View;ILandroid/view/KeyEvent;)Z
     .locals 4
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x1
 
@@ -326,8 +311,6 @@
 
 .method update(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v2, 0x0
 

@@ -577,8 +577,6 @@
 
 .method public constructor <init>(I[B)V
     .locals 2
-    .param p1    # I
-    .param p2    # [B
 
     const/4 v1, 0x0
 
@@ -611,7 +609,6 @@
 # virtual methods
 .method public maxOutputSize(I)I
     .locals 1
-    .param p1    # I
 
     mul-int/lit8 v0, p1, 0x3
 
@@ -624,10 +621,6 @@
 
 .method public process([BIIZ)Z
     .locals 11
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Z
 
     iget v9, p0, Landroid/util/Base64$Decoder;->state:I
 

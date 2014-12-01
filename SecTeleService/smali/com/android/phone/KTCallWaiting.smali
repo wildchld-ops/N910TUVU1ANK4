@@ -189,7 +189,7 @@
 .method private destoryProgressDialogFromNoResponse()V
     .locals 6
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/KTCallWaiting;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -233,7 +233,7 @@
 
     const/4 v3, 0x0
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/KTCallWaiting;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -247,7 +247,7 @@
     :cond_0
     iget-object v2, p0, Lcom/android/phone/KTCallWaiting;->mProgress:Ljava/lang/ref/WeakReference;
 
-    invoke-virtual {v2}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
+    invoke-virtual {v2}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
 
     move-result-object v1
 
@@ -255,13 +255,13 @@
 
     if-eqz v1, :cond_1
 
-    invoke-virtual {v1}, Landroid/app/Dialog;->isShowing()Z
+    invoke-virtual {v1}, Landroid/app/ProgressDialog;->isShowing()Z
 
     move-result v2
 
     if-eqz v2, :cond_1
 
-    invoke-virtual {v1}, Landroid/app/Dialog;->dismiss()V
+    invoke-virtual {v1}, Landroid/app/ProgressDialog;->dismiss()V
 
     iput-boolean v3, p0, Lcom/android/phone/KTCallWaiting;->mCheckedProgressDialog:Z
 
@@ -315,7 +315,7 @@
 
     const/4 v3, 0x0
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/KTCallWaiting;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -329,7 +329,7 @@
     :cond_0
     iget-object v2, p0, Lcom/android/phone/KTCallWaiting;->mProgress:Ljava/lang/ref/WeakReference;
 
-    invoke-virtual {v2}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
+    invoke-virtual {v2}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
 
     move-result-object v1
 
@@ -337,13 +337,13 @@
 
     if-eqz v1, :cond_1
 
-    invoke-virtual {v1}, Landroid/app/Dialog;->isShowing()Z
+    invoke-virtual {v1}, Landroid/app/ProgressDialog;->isShowing()Z
 
     move-result v2
 
     if-eqz v2, :cond_1
 
-    invoke-virtual {v1}, Landroid/app/Dialog;->dismiss()V
+    invoke-virtual {v1}, Landroid/app/ProgressDialog;->dismiss()V
 
     iput-boolean v3, p0, Lcom/android/phone/KTCallWaiting;->mCheckedProgressDialog:Z
 
@@ -431,7 +431,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-super {p0, p1}, Landroid/app/Fragment;->onConfigurationChanged(Landroid/content/res/Configuration;)V
+    invoke-super {p0, p1}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
     return-void
 .end method
@@ -444,11 +444,11 @@
 
     const v0, 0x7f06002f
 
-    invoke-virtual {p0, v0}, Landroid/preference/PreferenceFragment;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/KTCallWaiting;->addPreferencesFromResource(I)V
 
     const-string v0, "setting_on_preference"
 
-    invoke-virtual {p0, v0}, Landroid/preference/PreferenceFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/phone/KTCallWaiting;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -458,7 +458,7 @@
 
     const-string v0, "setting_off_preference"
 
-    invoke-virtual {p0, v0}, Landroid/preference/PreferenceFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/phone/KTCallWaiting;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -468,7 +468,7 @@
 
     const-string v0, "setting_status__preference"
 
-    invoke-virtual {p0, v0}, Landroid/preference/PreferenceFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/phone/KTCallWaiting;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -478,7 +478,7 @@
 
     const-string v0, "setting_info_preference"
 
-    invoke-virtual {p0, v0}, Landroid/preference/PreferenceFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/phone/KTCallWaiting;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -518,7 +518,7 @@
 
     const/4 v2, 0x0
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/KTCallWaiting;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -538,7 +538,7 @@
 
     new-instance v4, Ljava/lang/ref/WeakReference;
 
-    invoke-virtual {p0, v6}, Landroid/app/Fragment;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v6}, Lcom/android/phone/KTCallWaiting;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v5
 
@@ -558,7 +558,7 @@
 
     iget-object v6, p0, Lcom/android/phone/KTCallWaiting;->mHandler:Lcom/android/phone/KTCallWaiting$MyHandler;
 
-    invoke-virtual {v6, v3}, Landroid/os/Handler;->obtainMessage(I)Landroid/os/Message;
+    invoke-virtual {v6, v3}, Lcom/android/phone/KTCallWaiting$MyHandler;->obtainMessage(I)Landroid/os/Message;
 
     move-result-object v6
 
@@ -589,7 +589,7 @@
 
     new-instance v4, Ljava/lang/ref/WeakReference;
 
-    invoke-virtual {p0, v6}, Landroid/app/Fragment;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v6}, Lcom/android/phone/KTCallWaiting;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v5
 
@@ -609,7 +609,7 @@
 
     iget-object v6, p0, Lcom/android/phone/KTCallWaiting;->mHandler:Lcom/android/phone/KTCallWaiting$MyHandler;
 
-    invoke-virtual {v6, v3}, Landroid/os/Handler;->obtainMessage(I)Landroid/os/Message;
+    invoke-virtual {v6, v3}, Lcom/android/phone/KTCallWaiting$MyHandler;->obtainMessage(I)Landroid/os/Message;
 
     move-result-object v6
 
@@ -636,7 +636,7 @@
 
     new-instance v5, Ljava/lang/ref/WeakReference;
 
-    invoke-virtual {p0, v6}, Landroid/app/Fragment;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v6}, Lcom/android/phone/KTCallWaiting;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v6
 
@@ -652,7 +652,7 @@
 
     iget-object v6, p0, Lcom/android/phone/KTCallWaiting;->mHandler:Lcom/android/phone/KTCallWaiting$MyHandler;
 
-    invoke-virtual {v6, v4}, Landroid/os/Handler;->obtainMessage(I)Landroid/os/Message;
+    invoke-virtual {v6, v4}, Lcom/android/phone/KTCallWaiting$MyHandler;->obtainMessage(I)Landroid/os/Message;
 
     move-result-object v4
 
@@ -719,7 +719,7 @@
 
     const/4 v7, 0x0
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/KTCallWaiting;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 

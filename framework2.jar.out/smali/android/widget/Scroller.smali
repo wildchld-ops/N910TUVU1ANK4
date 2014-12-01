@@ -368,7 +368,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -379,8 +378,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/view/animation/Interpolator;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/view/animation/Interpolator;
 
     invoke-virtual {p1}, Landroid/content/Context;->getApplicationInfo()Landroid/content/pm/ApplicationInfo;
 
@@ -407,9 +404,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/view/animation/Interpolator;Z)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/view/animation/Interpolator;
-    .param p3    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -466,7 +460,6 @@
 
 .method private computeDeceleration(F)F
     .locals 2
-    .param p1    # F
 
     const v0, 0x43c10b3d
 
@@ -481,7 +474,6 @@
 
 .method private getSplineDeceleration(F)D
     .locals 3
-    .param p1    # F
 
     const v0, 0x3eb33333
 
@@ -510,7 +502,6 @@
 
 .method private getSplineFlingDistance(F)D
     .locals 8
-    .param p1    # F
 
     invoke-direct {p0, p1}, Landroid/widget/Scroller;->getSplineDeceleration(F)D
 
@@ -551,7 +542,6 @@
 
 .method private getSplineFlingDuration(F)I
     .locals 8
-    .param p1    # F
 
     invoke-direct {p0, p1}, Landroid/widget/Scroller;->getSplineDeceleration(F)D
 
@@ -582,7 +572,6 @@
 
 .method static viscousFluid(F)F
     .locals 4
-    .param p0    # F
 
     const/high16 v3, 0x3f800000
 
@@ -953,7 +942,6 @@
 
 .method public extendDuration(I)V
     .locals 3
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/widget/Scroller;->timePassed()I
 
@@ -982,14 +970,6 @@
 
 .method public fling(IIIIIIII)V
     .locals 17
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
 
     move-object/from16 v0, p0
 
@@ -1353,7 +1333,6 @@
 
 .method public final forceFinished(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/widget/Scroller;->mFinished:Z
 
@@ -1462,8 +1441,6 @@
 
 .method public isScrollingInDirection(FF)Z
     .locals 3
-    .param p1    # F
-    .param p2    # F
 
     iget-boolean v0, p0, Landroid/widget/Scroller;->mFinished:Z
 
@@ -1522,7 +1499,6 @@
 
 .method public setFinalX(I)V
     .locals 2
-    .param p1    # I
 
     iput p1, p0, Landroid/widget/Scroller;->mFinalX:I
 
@@ -1545,7 +1521,6 @@
 
 .method public setFinalY(I)V
     .locals 2
-    .param p1    # I
 
     iput p1, p0, Landroid/widget/Scroller;->mFinalY:I
 
@@ -1568,7 +1543,6 @@
 
 .method public final setFriction(F)V
     .locals 1
-    .param p1    # F
 
     invoke-direct {p0, p1}, Landroid/widget/Scroller;->computeDeceleration(F)F
 
@@ -1583,10 +1557,6 @@
 
 .method public startScroll(IIII)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/16 v5, 0xfa
 
@@ -1607,11 +1577,6 @@
 
 .method public startScroll(IIIII)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     const/4 v0, 0x0
 

@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -45,8 +44,6 @@
 
 .method public dismiss(IZ)V
     .locals 5
-    .param p1    # I
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -107,7 +104,6 @@
 
 .method public getImage(I)Landroid/os/ParcelFileDescriptor;
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -247,16 +243,6 @@
 
 .method public show(ILandroid/os/IBinder;Landroid/os/IBinder;Landroid/os/IBinder;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/view/inputmethod/ExtractedText;Landroid/view/inputmethod/EditorInfo;I)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/os/IBinder;
-    .param p3    # Landroid/os/IBinder;
-    .param p4    # Landroid/os/IBinder;
-    .param p5    # Landroid/graphics/Rect;
-    .param p6    # Landroid/graphics/Rect;
-    .param p7    # Landroid/graphics/Rect;
-    .param p8    # Landroid/view/inputmethod/ExtractedText;
-    .param p9    # Landroid/view/inputmethod/EditorInfo;
-    .param p10    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -412,8 +398,6 @@
 
 .method public showPopup(II)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -467,17 +451,6 @@
 
 .method public showTemplate(ILandroid/os/IBinder;Landroid/os/IBinder;Landroid/os/IBinder;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Rect;ILandroid/view/inputmethod/ExtractedText;Landroid/view/inputmethod/EditorInfo;I)V
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/os/IBinder;
-    .param p3    # Landroid/os/IBinder;
-    .param p4    # Landroid/os/IBinder;
-    .param p5    # Landroid/graphics/Rect;
-    .param p6    # Landroid/graphics/Rect;
-    .param p7    # Landroid/graphics/Rect;
-    .param p8    # I
-    .param p9    # Landroid/view/inputmethod/ExtractedText;
-    .param p10    # Landroid/view/inputmethod/EditorInfo;
-    .param p11    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -639,9 +612,6 @@
 
 .method public updateDialog(ILandroid/graphics/Rect;Landroid/graphics/Rect;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/graphics/Rect;
-    .param p3    # Landroid/graphics/Rect;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -735,9 +705,6 @@
 
 .method public updatePosition(ILandroid/graphics/Rect;Landroid/graphics/Rect;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/graphics/Rect;
-    .param p3    # Landroid/graphics/Rect;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

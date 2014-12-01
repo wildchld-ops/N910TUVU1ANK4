@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager;Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$1;)V
     .locals 0
-    .param p1    # Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager;
-    .param p2    # Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$1;
 
     invoke-direct {p0, p1}, Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$GpsNmeaListener;-><init>(Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager;)V
 
@@ -46,8 +44,6 @@
 # virtual methods
 .method public onNmeaReceived(JLjava/lang/String;)V
     .locals 3
-    .param p1    # J
-    .param p3    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$GpsNmeaListener;->this$0:Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager;
 

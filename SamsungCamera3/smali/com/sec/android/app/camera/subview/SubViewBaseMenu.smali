@@ -121,8 +121,6 @@
 
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;Lcom/sec/android/app/camera/subview/SubViewManager;)V
     .locals 2
-    .param p1    # Lcom/sec/android/app/camera/Camera;
-    .param p2    # Lcom/sec/android/app/camera/subview/SubViewManager;
 
     const/4 v1, 0x3
 
@@ -194,7 +192,6 @@
 
 .method static synthetic access$000(Lcom/sec/android/app/camera/subview/SubViewBaseMenu;)Landroid/graphics/PointF;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/subview/SubViewBaseMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/subview/SubViewBaseMenu;->mInitTouchPoint:Landroid/graphics/PointF;
 
@@ -203,7 +200,6 @@
 
 .method static synthetic access$100(Lcom/sec/android/app/camera/subview/SubViewBaseMenu;)Landroid/widget/ImageView;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/subview/SubViewBaseMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/subview/SubViewBaseMenu;->mShutterButton:Landroid/widget/ImageView;
 
@@ -212,7 +208,6 @@
 
 .method static synthetic access$200(Lcom/sec/android/app/camera/subview/SubViewBaseMenu;)Landroid/widget/ImageView;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/subview/SubViewBaseMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/subview/SubViewBaseMenu;->mRecordingButton:Landroid/widget/ImageView;
 
@@ -221,7 +216,6 @@
 
 .method static synthetic access$300(Lcom/sec/android/app/camera/subview/SubViewBaseMenu;)Landroid/widget/ImageView;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/subview/SubViewBaseMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/subview/SubViewBaseMenu;->mModeButton:Landroid/widget/ImageView;
 
@@ -1899,7 +1893,6 @@
 
 .method public getEditableSideBar(I)Lcom/sec/android/app/camera/subview/SubViewEditableSideBar;
     .locals 1
-    .param p1    # I
 
     const/16 v0, 0x42
 
@@ -2195,7 +2188,6 @@
 
 .method public handleDimButtons(Z)V
     .locals 4
-    .param p1    # Z
 
     const/4 v3, 0x0
 
@@ -2666,8 +2658,6 @@
 
 .method public onCameraSettingsChanged(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     return-void
 .end method
@@ -3156,7 +3146,6 @@
 
 .method public setShutterBtnPressed(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/sec/android/app/camera/subview/SubViewBaseMenu;->mShutterButton:Landroid/widget/ImageView;
 

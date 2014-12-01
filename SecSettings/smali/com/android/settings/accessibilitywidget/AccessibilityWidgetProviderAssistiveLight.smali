@@ -90,7 +90,6 @@
 
 .method static synthetic access$100(Landroid/content/Context;)Z
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Lcom/android/settings/accessibilitywidget/AccessibilityWidgetProviderAssistiveLight;->getWidgetMode(Landroid/content/Context;)Z
 
@@ -109,7 +108,6 @@
 
 .method static synthetic access$202(I)I
     .locals 0
-    .param p0    # I
 
     sput p0, Lcom/android/settings/accessibilitywidget/AccessibilityWidgetProviderAssistiveLight;->mStaticBatteryLevel:I
 
@@ -118,7 +116,6 @@
 
 .method static synthetic access$302(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/settings/accessibilitywidget/AccessibilityWidgetProviderAssistiveLight;->mStaticBatteryCharging:Z
 
@@ -135,7 +132,6 @@
 
 .method static buildUpdate(Landroid/content/Context;)Landroid/widget/RemoteViews;
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     const v2, 0x7f040008
 
@@ -229,7 +225,6 @@
 
 .method private static checkBroadcastReceiver(Landroid/content/Context;)V
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     sget-object v0, Lcom/android/settings/accessibilitywidget/AccessibilityWidgetProviderAssistiveLight;->sBroadcastReceiver:Lcom/android/settings/accessibilitywidget/AccessibilityWidgetProviderAssistiveLight$SettingsBroadcastReceiver;
 
@@ -303,7 +298,6 @@
 
 .method private static getWidgetMode(Landroid/content/Context;)Z
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -349,7 +343,6 @@
 
 .method private sendWidgetStateUpdateIntent(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -372,7 +365,6 @@
 
 .method private toggleWidgetMode(Landroid/content/Context;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
 
     const/4 v5, 0x1
 
@@ -517,8 +509,6 @@
 
 .method private turnOnAssistiveLightOptions(Landroid/content/Context;Z)V
     .locals 10
-    .param p1    # Landroid/content/Context;
-    .param p2    # Z
 
     const-string v6, "AccessibilityWidgetProviderAssistiveLight"
 
@@ -787,8 +777,6 @@
 
 .method private static updateButtons(Landroid/widget/RemoteViews;Landroid/content/Context;)V
     .locals 8
-    .param p0    # Landroid/widget/RemoteViews;
-    .param p1    # Landroid/content/Context;
 
     const v5, 0x7f0b0032
 
@@ -977,7 +965,6 @@
 
 .method public static updateWidget(Landroid/content/Context;)V
     .locals 5
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Lcom/android/settings/accessibilitywidget/AccessibilityWidgetProviderAssistiveLight;->buildUpdate(Landroid/content/Context;)Landroid/widget/RemoteViews;
 
@@ -1024,8 +1011,6 @@
 # virtual methods
 .method public onDeleted(Landroid/content/Context;[I)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # [I
 
     const/4 v4, 0x0
 
@@ -1084,7 +1069,6 @@
 
 .method public onDisabled(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     const/4 v2, 0x0
 
@@ -1114,7 +1098,6 @@
 
 .method public onEnabled(Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     sput-object p1, Lcom/android/settings/accessibilitywidget/AccessibilityWidgetProviderAssistiveLight;->mContext:Landroid/content/Context;
 
@@ -1147,8 +1130,6 @@
 
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 12
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     const v11, 0x7f090ecf
 
@@ -1395,9 +1376,6 @@
 
 .method public onUpdate(Landroid/content/Context;Landroid/appwidget/AppWidgetManager;[I)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/appwidget/AppWidgetManager;
-    .param p3    # [I
 
     const-string v2, "AccessibilityWidgetProviderAssistiveLight"
 

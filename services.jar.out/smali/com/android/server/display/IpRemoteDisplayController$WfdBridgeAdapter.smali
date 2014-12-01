@@ -65,7 +65,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/display/IpRemoteDisplayController;Ljava/net/InetAddress;)V
     .locals 3
-    .param p2    # Ljava/net/InetAddress;
 
     const/4 v2, 0x0
 
@@ -122,7 +121,6 @@
 
 .method static synthetic access$2000(Lcom/android/server/display/IpRemoteDisplayController$WfdBridgeAdapter;)I
     .locals 1
-    .param p0    # Lcom/android/server/display/IpRemoteDisplayController$WfdBridgeAdapter;
 
     iget v0, p0, Lcom/android/server/display/IpRemoteDisplayController$WfdBridgeAdapter;->mScreenState:I
 
@@ -131,7 +129,6 @@
 
 .method static synthetic access$2100(Lcom/android/server/display/IpRemoteDisplayController$WfdBridgeAdapter;)I
     .locals 1
-    .param p0    # Lcom/android/server/display/IpRemoteDisplayController$WfdBridgeAdapter;
 
     iget v0, p0, Lcom/android/server/display/IpRemoteDisplayController$WfdBridgeAdapter;->mPendingDev:I
 
@@ -140,8 +137,6 @@
 
 .method static synthetic access$2102(Lcom/android/server/display/IpRemoteDisplayController$WfdBridgeAdapter;I)I
     .locals 0
-    .param p0    # Lcom/android/server/display/IpRemoteDisplayController$WfdBridgeAdapter;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/display/IpRemoteDisplayController$WfdBridgeAdapter;->mPendingDev:I
 
@@ -150,7 +145,6 @@
 
 .method static synthetic access$2200(Lcom/android/server/display/IpRemoteDisplayController$WfdBridgeAdapter;)I
     .locals 1
-    .param p0    # Lcom/android/server/display/IpRemoteDisplayController$WfdBridgeAdapter;
 
     iget v0, p0, Lcom/android/server/display/IpRemoteDisplayController$WfdBridgeAdapter;->mPendingType:I
 
@@ -159,8 +153,6 @@
 
 .method static synthetic access$2202(Lcom/android/server/display/IpRemoteDisplayController$WfdBridgeAdapter;I)I
     .locals 0
-    .param p0    # Lcom/android/server/display/IpRemoteDisplayController$WfdBridgeAdapter;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/display/IpRemoteDisplayController$WfdBridgeAdapter;->mPendingType:I
 
@@ -331,8 +323,6 @@
 
 .method public requestSink(Landroid/net/wifi/p2p/WifiP2pDevice;I)I
     .locals 4
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pDevice;
-    .param p2    # I
 
     const/4 v0, 0x1
 
@@ -406,7 +396,6 @@
 
 .method public requestSource(I)I
     .locals 4
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -468,7 +457,6 @@
 
 .method public setScreenState(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/display/IpRemoteDisplayController$WfdBridgeAdapter;->mScreenState:I
 
@@ -477,7 +465,6 @@
 
 .method public setSinkState(I)V
     .locals 3
-    .param p1    # I
 
     iget v0, p0, Lcom/android/server/display/IpRemoteDisplayController$WfdBridgeAdapter;->mSinkState:I
 
@@ -507,7 +494,6 @@
 
 .method public setSourceState(I)V
     .locals 3
-    .param p1    # I
 
     iget v0, p0, Lcom/android/server/display/IpRemoteDisplayController$WfdBridgeAdapter;->mSourceState:I
 
@@ -537,9 +523,6 @@
 
 .method public startWFDEngine(IILjava/net/InetAddress;)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/net/InetAddress;
 
     const/4 v3, 0x1
 
@@ -651,7 +634,6 @@
 
 .method public updateClientDevice(Landroid/net/wifi/p2p/WifiP2pDevice;)V
     .locals 2
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pDevice;
 
     invoke-virtual {p0}, Lcom/android/server/display/IpRemoteDisplayController$WfdBridgeAdapter;->getBridgeConnType()I
 

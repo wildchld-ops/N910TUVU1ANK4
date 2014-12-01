@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Lcom/android/incallui/CallCardFragment;Lcom/android/incallui/CallCardFragment$1;)V
     .locals 0
-    .param p1    # Lcom/android/incallui/CallCardFragment;
-    .param p2    # Lcom/android/incallui/CallCardFragment$1;
 
     invoke-direct {p0, p1}, Lcom/android/incallui/CallCardFragment$CallCardFragmentBroadcastReceiver;-><init>(Lcom/android/incallui/CallCardFragment;)V
 
@@ -43,8 +41,6 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     const/4 v4, 0x0
 

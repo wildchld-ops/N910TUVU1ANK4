@@ -29,9 +29,6 @@
 # direct methods
 .method public constructor <init>(IILandroid/util/DisplayMetrics;)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/util/DisplayMetrics;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -72,7 +69,6 @@
 # virtual methods
 .method public createIconThumbnail(Landroid/graphics/drawable/Drawable;)Landroid/graphics/drawable/Drawable;
     .locals 22
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     move-object/from16 v0, p0
 

@@ -22,7 +22,6 @@
 
 .method static e(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "http"
 
@@ -33,7 +32,6 @@
 
 .method static v(Ljava/lang/String;)V
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "http"
 

@@ -33,7 +33,6 @@
 # virtual methods
 .method public onCoverStateChanged(Lcom/samsung/android/cover/CoverState;)V
     .locals 4
-    .param p1    # Lcom/samsung/android/cover/CoverState;
 
     iget-object v0, p0, Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer$6;->this$0:Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;
 

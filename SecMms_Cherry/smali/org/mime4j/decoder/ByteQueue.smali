@@ -30,7 +30,6 @@
 
 .method public constructor <init>(I)V
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -107,7 +106,6 @@
 
 .method public enqueue(B)V
     .locals 1
-    .param p1    # B
 
     iget-object v0, p0, Lorg/mime4j/decoder/ByteQueue;->buf:Lorg/mime4j/decoder/UnboundedFifoByteBuffer;
 

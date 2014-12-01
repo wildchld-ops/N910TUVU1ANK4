@@ -123,8 +123,6 @@
 
 .method public constructor <init>(Landroid/webkitsec/WebViewCore;I)V
     .locals 3
-    .param p1    # Landroid/webkitsec/WebViewCore;
-    .param p2    # I
 
     const/4 v1, 0x0
 
@@ -181,7 +179,6 @@
 
 .method static synthetic access$000(Landroid/webkitsec/HTML5Audio;)V
     .locals 0
-    .param p0    # Landroid/webkitsec/HTML5Audio;
 
     invoke-direct {p0}, Landroid/webkitsec/HTML5Audio;->pause()V
 
@@ -245,7 +242,6 @@
 
 .method private pause(I)V
     .locals 2
-    .param p1    # I
 
     iget v0, p0, Landroid/webkitsec/HTML5Audio;->mState:I
 
@@ -483,7 +479,6 @@
 
 .method private seek(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v2, 0x1
 
@@ -518,7 +513,6 @@
 
 .method private setDataSource(Ljava/lang/String;)V
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     const/16 v7, 0x80
 
@@ -675,7 +669,6 @@
 
 .method private setVolume(F)V
     .locals 2
-    .param p1    # F
 
     iget v0, p0, Landroid/webkitsec/HTML5Audio;->mState:I
 
@@ -717,7 +710,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 4
-    .param p1    # Landroid/os/Message;
 
     iget v2, p1, Landroid/os/Message;->what:I
 
@@ -774,7 +766,6 @@
 
 .method public onAudioFocusChange(I)V
     .locals 2
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -875,8 +866,6 @@
 
 .method public onBufferingUpdate(Landroid/media/MediaPlayer;I)V
     .locals 1
-    .param p1    # Landroid/media/MediaPlayer;
-    .param p2    # I
 
     iget v0, p0, Landroid/webkitsec/HTML5Audio;->mNativePointer:I
 
@@ -887,7 +876,6 @@
 
 .method public onCompletion(Landroid/media/MediaPlayer;)V
     .locals 3
-    .param p1    # Landroid/media/MediaPlayer;
 
     const/4 v2, 0x1
 
@@ -921,9 +909,6 @@
 
 .method public onError(Landroid/media/MediaPlayer;II)Z
     .locals 1
-    .param p1    # Landroid/media/MediaPlayer;
-    .param p2    # I
-    .param p3    # I
 
     sget v0, Landroid/webkitsec/HTML5Audio;->ERROR:I
 
@@ -942,7 +927,6 @@
 
 .method public onPrepared(Landroid/media/MediaPlayer;)V
     .locals 7
-    .param p1    # Landroid/media/MediaPlayer;
 
     const-wide/16 v2, 0xfa
 
@@ -991,7 +975,6 @@
 
 .method public onSeekComplete(Landroid/media/MediaPlayer;)V
     .locals 2
-    .param p1    # Landroid/media/MediaPlayer;
 
     invoke-virtual {p1}, Landroid/media/MediaPlayer;->getCurrentPosition()I
 

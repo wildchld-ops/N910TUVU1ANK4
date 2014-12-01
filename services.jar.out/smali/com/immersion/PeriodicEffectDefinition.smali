@@ -26,15 +26,6 @@
 # direct methods
 .method public constructor <init>(IIIIIIIII)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
-    .param p9    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -135,7 +126,6 @@
 
 .method public setActuatorIndex(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/immersion/PeriodicEffectDefinition;->nActuatorIndex:I
 
@@ -144,7 +134,6 @@
 
 .method public setAttackLevel(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/immersion/PeriodicEffectDefinition;->nAttackLevel:I
 
@@ -153,7 +142,6 @@
 
 .method public setAttackTime(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/immersion/PeriodicEffectDefinition;->nAttackTime:I
 
@@ -162,7 +150,6 @@
 
 .method public setDuration(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/immersion/PeriodicEffectDefinition;->nDuration:I
 
@@ -171,7 +158,6 @@
 
 .method public setFadeLevel(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/immersion/PeriodicEffectDefinition;->nFadeLevel:I
 
@@ -180,7 +166,6 @@
 
 .method public setFadeTime(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/immersion/PeriodicEffectDefinition;->nFadeTime:I
 
@@ -189,7 +174,6 @@
 
 .method public setMagnitude(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/immersion/PeriodicEffectDefinition;->nMagnitude:I
 
@@ -198,7 +182,6 @@
 
 .method public setPeriod(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/immersion/PeriodicEffectDefinition;->nPeriod:I
 
@@ -207,7 +190,6 @@
 
 .method public setStyleAndWaveType(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/immersion/PeriodicEffectDefinition;->nStyleAndWaveType:I
 

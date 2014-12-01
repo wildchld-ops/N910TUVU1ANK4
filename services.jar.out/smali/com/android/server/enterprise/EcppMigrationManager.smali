@@ -40,7 +40,6 @@
 
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -93,9 +92,6 @@
 
 .method private copyMaximumFailedPasswordsForDisable(ILandroid/app/enterprise/ContextInfo;Landroid/content/ComponentName;)V
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/app/enterprise/ContextInfo;
-    .param p3    # Landroid/content/ComponentName;
 
     const/4 v1, 0x0
 
@@ -151,9 +147,6 @@
 
 .method private copyMaximumFailedPasswordsForWipe(IILandroid/content/ComponentName;)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/ComponentName;
 
     const/4 v1, 0x0
 
@@ -209,9 +202,6 @@
 
 .method private copyMaximumTimeToLockPassword(IILandroid/content/ComponentName;)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/ComponentName;
 
     const-wide/16 v1, 0x0
 
@@ -267,9 +257,6 @@
 
 .method private copyPasswordExpirationTimeout(IILandroid/content/ComponentName;)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/ComponentName;
 
     const-wide/16 v1, 0x0
 
@@ -325,9 +312,6 @@
 
 .method private copyPasswordHistoryLength(IILandroid/content/ComponentName;)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/ComponentName;
 
     const/4 v1, 0x0
 
@@ -383,9 +367,6 @@
 
 .method private copyPasswordMinimumLength(IILandroid/content/ComponentName;)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/ComponentName;
 
     const/4 v1, 0x0
 
@@ -441,9 +422,6 @@
 
 .method private copyPasswordMinimumLetters(IILandroid/content/ComponentName;)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/ComponentName;
 
     const/4 v1, 0x0
 
@@ -499,9 +477,6 @@
 
 .method private copyPasswordMinimumNonLetter(IILandroid/content/ComponentName;)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/ComponentName;
 
     const/4 v1, 0x0
 
@@ -557,9 +532,6 @@
 
 .method private copyPasswordMinimumNumeric(IILandroid/content/ComponentName;)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/ComponentName;
 
     const/4 v1, 0x0
 
@@ -615,9 +587,6 @@
 
 .method private copyPasswordMinimumSymbols(IILandroid/content/ComponentName;)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/ComponentName;
 
     const/4 v1, 0x0
 
@@ -673,9 +642,6 @@
 
 .method private copyPasswordQuality(IILandroid/content/ComponentName;)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/ComponentName;
 
     const/4 v1, 0x0
 
@@ -731,8 +697,6 @@
 
 .method private copyPasswordVisible(ILandroid/app/enterprise/ContextInfo;)V
     .locals 9
-    .param p1    # I
-    .param p2    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v3, 0x0
 
@@ -1004,8 +968,6 @@
 
 .method private findContainerData(ILandroid/content/ComponentName;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
 
     iget-object v0, p0, Lcom/android/server/enterprise/EcppMigrationManager;->mEcppStorageProvider:Lcom/android/server/enterprise/storage/EcppStorageProvider;
 
@@ -1018,7 +980,6 @@
 
 .method static declared-synchronized getInstance(Landroid/content/Context;)Lcom/android/server/enterprise/EcppMigrationManager;
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     const-class v1, Lcom/android/server/enterprise/EcppMigrationManager;
 
@@ -1056,9 +1017,6 @@
 # virtual methods
 .method public migrateEcppDB(Landroid/content/ComponentName;IJ)Z
     .locals 8
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # I
-    .param p3    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;

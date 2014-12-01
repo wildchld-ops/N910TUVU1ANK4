@@ -17,9 +17,6 @@
 # direct methods
 .method constructor <init>(Landroid/graphics/drawable/TransitionDrawable$TransitionState;Landroid/graphics/drawable/TransitionDrawable;Landroid/content/res/Resources;)V
     .locals 0
-    .param p1    # Landroid/graphics/drawable/TransitionDrawable$TransitionState;
-    .param p2    # Landroid/graphics/drawable/TransitionDrawable;
-    .param p3    # Landroid/content/res/Resources;
 
     invoke-direct {p0, p1, p2, p3}, Landroid/graphics/drawable/LayerDrawable$LayerState;-><init>(Landroid/graphics/drawable/LayerDrawable$LayerState;Landroid/graphics/drawable/LayerDrawable;Landroid/content/res/Resources;)V
 
@@ -54,7 +51,6 @@
 
 .method public newDrawable(Landroid/content/res/Resources;)Landroid/graphics/drawable/Drawable;
     .locals 2
-    .param p1    # Landroid/content/res/Resources;
 
     new-instance v0, Landroid/graphics/drawable/TransitionDrawable;
 

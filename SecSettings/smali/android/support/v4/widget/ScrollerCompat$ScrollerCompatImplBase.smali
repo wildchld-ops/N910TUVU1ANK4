@@ -30,7 +30,6 @@
 # virtual methods
 .method public abortAnimation(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Landroid/widget/Scroller;
 
@@ -41,7 +40,6 @@
 
 .method public computeScrollOffset(Ljava/lang/Object;)Z
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Landroid/widget/Scroller;
 
@@ -54,8 +52,6 @@
 
 .method public createScroller(Landroid/content/Context;Landroid/view/animation/Interpolator;)Ljava/lang/Object;
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/view/animation/Interpolator;
 
     if-eqz p2, :cond_0
 
@@ -76,7 +72,6 @@
 
 .method public getCurrX(Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Landroid/widget/Scroller;
 
@@ -89,7 +84,6 @@
 
 .method public getCurrY(Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Landroid/widget/Scroller;
 
@@ -102,7 +96,6 @@
 
 .method public getFinalX(Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Landroid/widget/Scroller;
 
@@ -115,7 +108,6 @@
 
 .method public getFinalY(Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Landroid/widget/Scroller;
 
@@ -128,7 +120,6 @@
 
 .method public isFinished(Ljava/lang/Object;)Z
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Landroid/widget/Scroller;
 
@@ -141,12 +132,6 @@
 
 .method public startScroll(Ljava/lang/Object;IIIII)V
     .locals 6
-    .param p1    # Ljava/lang/Object;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     move-object v0, p1
 

@@ -62,7 +62,6 @@
 
 .method private handleAccelerationDistrust(F)V
     .locals 2
-    .param p1    # F
 
     const/high16 v0, 0x3fc00000
 
@@ -102,9 +101,6 @@
 
 .method private lowpassFilter(FFF)F
     .locals 2
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
 
     mul-float v0, p3, p1
 
@@ -121,8 +117,6 @@
 
 .method private tiltAngle(FF)F
     .locals 2
-    .param p1    # F
-    .param p2    # F
 
     div-float v0, p1, p2
 
@@ -143,9 +137,6 @@
 
 .method private vectorMagnitude(FFF)F
     .locals 2
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
 
     mul-float v0, p1, p1
 
@@ -172,15 +163,12 @@
 # virtual methods
 .method public onAccuracyChanged(Landroid/hardware/Sensor;I)V
     .locals 0
-    .param p1    # Landroid/hardware/Sensor;
-    .param p2    # I
 
     return-void
 .end method
 
 .method public onSensorChanged(Landroid/hardware/SensorEvent;)V
     .locals 9
-    .param p1    # Landroid/hardware/SensorEvent;
 
     iget-object v7, p1, Landroid/hardware/SensorEvent;->values:[F
 

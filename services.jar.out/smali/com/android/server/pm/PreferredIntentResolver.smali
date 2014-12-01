@@ -28,9 +28,6 @@
 # virtual methods
 .method protected bridge synthetic dumpFilter(Ljava/io/PrintWriter;Ljava/lang/String;Landroid/content/IntentFilter;)V
     .locals 0
-    .param p1    # Ljava/io/PrintWriter;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/content/IntentFilter;
 
     check-cast p3, Lcom/android/server/pm/PreferredActivity;
 
@@ -41,9 +38,6 @@
 
 .method protected dumpFilter(Ljava/io/PrintWriter;Ljava/lang/String;Lcom/android/server/pm/PreferredActivity;)V
     .locals 1
-    .param p1    # Ljava/io/PrintWriter;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/android/server/pm/PreferredActivity;
 
     iget-object v0, p3, Lcom/android/server/pm/PreferredActivity;->mPref:Lcom/android/server/PreferredComponent;
 
@@ -54,8 +48,6 @@
 
 .method protected bridge synthetic isPackageForFilter(Ljava/lang/String;Landroid/content/IntentFilter;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/IntentFilter;
 
     check-cast p2, Lcom/android/server/pm/PreferredActivity;
 
@@ -68,8 +60,6 @@
 
 .method protected isPackageForFilter(Ljava/lang/String;Lcom/android/server/pm/PreferredActivity;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/server/pm/PreferredActivity;
 
     iget-object v0, p2, Lcom/android/server/pm/PreferredActivity;->mPref:Lcom/android/server/PreferredComponent;
 
@@ -88,7 +78,6 @@
 
 .method protected bridge synthetic newArray(I)[Landroid/content/IntentFilter;
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/server/pm/PreferredIntentResolver;->newArray(I)[Lcom/android/server/pm/PreferredActivity;
 
@@ -99,7 +88,6 @@
 
 .method protected newArray(I)[Lcom/android/server/pm/PreferredActivity;
     .locals 1
-    .param p1    # I
 
     new-array v0, p1, [Lcom/android/server/pm/PreferredActivity;
 

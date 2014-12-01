@@ -63,8 +63,6 @@
 
 .method public constructor <init>(Landroid/content/pm/ResolveInfo;Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/pm/ResolveInfo;
-    .param p2    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -103,10 +101,6 @@
 
 .method public constructor <init>(Landroid/content/pm/ResolveInfo;Ljava/lang/String;Ljava/lang/String;[BLjava/util/List;)V
     .locals 1
-    .param p1    # Landroid/content/pm/ResolveInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # [B
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -142,7 +136,6 @@
 
 .method public constructor <init>(Landroid/content/pm/ResolveInfo;Ljava/util/List;)V
     .locals 1
-    .param p1    # Landroid/content/pm/ResolveInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -177,7 +170,6 @@
 
 .method public constructor <init>(Landroid/os/Parcel;)V
     .locals 3
-    .param p1    # Landroid/os/Parcel;
 
     const/4 v2, 0x0
 
@@ -244,8 +236,6 @@
 
 .method private parsePolicies(Landroid/content/Context;Landroid/content/pm/ResolveInfo;)V
     .locals 16
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/pm/ResolveInfo;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -507,7 +497,6 @@
 
 .method public getDescription(Landroid/content/pm/PackageManager;)Ljava/lang/String;
     .locals 4
-    .param p1    # Landroid/content/pm/PackageManager;
 
     iget v2, p0, Landroid/app/admin/ProxyDeviceAdminInfo;->mType:I
 
@@ -559,7 +548,6 @@
 
 .method public getIcon(Landroid/content/pm/PackageManager;)Landroid/graphics/drawable/Drawable;
     .locals 4
-    .param p1    # Landroid/content/pm/PackageManager;
 
     const/4 v1, 0x0
 
@@ -607,7 +595,6 @@
 
 .method public getLabel(Landroid/content/pm/PackageManager;)Ljava/lang/String;
     .locals 2
-    .param p1    # Landroid/content/pm/PackageManager;
 
     iget v0, p0, Landroid/app/admin/ProxyDeviceAdminInfo;->mType:I
 
@@ -1189,8 +1176,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v0, p0, Landroid/app/admin/ProxyDeviceAdminInfo;->mReceiver:Landroid/content/pm/ResolveInfo;
 

@@ -25,7 +25,6 @@
 
 .method synthetic constructor <init>(Landroid/support/v4/content/ModernAsyncTask$1;)V
     .locals 0
-    .param p1    # Landroid/support/v4/content/ModernAsyncTask$1;
 
     invoke-direct {p0}, Landroid/support/v4/content/ModernAsyncTask$InternalHandler;-><init>()V
 
@@ -36,7 +35,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 4
-    .param p1    # Landroid/os/Message;
 
     iget-object v0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 

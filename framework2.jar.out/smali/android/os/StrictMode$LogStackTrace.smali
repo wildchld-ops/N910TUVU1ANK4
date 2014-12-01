@@ -25,7 +25,6 @@
 
 .method synthetic constructor <init>(Landroid/os/StrictMode$1;)V
     .locals 0
-    .param p1    # Landroid/os/StrictMode$1;
 
     invoke-direct {p0}, Landroid/os/StrictMode$LogStackTrace;-><init>()V
 

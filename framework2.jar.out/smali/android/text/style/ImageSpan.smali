@@ -18,8 +18,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;I)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -30,9 +28,6 @@
 
 .method public constructor <init>(Landroid/content/Context;II)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0, p3}, Landroid/text/style/DynamicDrawableSpan;-><init>(I)V
 
@@ -45,8 +40,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/graphics/Bitmap;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/graphics/Bitmap;
 
     const/4 v0, 0x0
 
@@ -57,9 +50,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/graphics/Bitmap;I)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/graphics/Bitmap;
-    .param p3    # I
 
     const/4 v3, 0x0
 
@@ -124,8 +114,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/net/Uri;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/net/Uri;
 
     const/4 v0, 0x0
 
@@ -136,9 +124,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/net/Uri;I)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/net/Uri;
-    .param p3    # I
 
     invoke-direct {p0, p3}, Landroid/text/style/DynamicDrawableSpan;-><init>(I)V
 
@@ -157,7 +142,6 @@
 
 .method public constructor <init>(Landroid/graphics/Bitmap;)V
     .locals 2
-    .param p1    # Landroid/graphics/Bitmap;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -172,8 +156,6 @@
 
 .method public constructor <init>(Landroid/graphics/Bitmap;I)V
     .locals 1
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # I
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -186,7 +168,6 @@
 
 .method public constructor <init>(Landroid/graphics/drawable/Drawable;)V
     .locals 1
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     const/4 v0, 0x0
 
@@ -197,8 +178,6 @@
 
 .method public constructor <init>(Landroid/graphics/drawable/Drawable;I)V
     .locals 0
-    .param p1    # Landroid/graphics/drawable/Drawable;
-    .param p2    # I
 
     invoke-direct {p0, p2}, Landroid/text/style/DynamicDrawableSpan;-><init>(I)V
 
@@ -209,8 +188,6 @@
 
 .method public constructor <init>(Landroid/graphics/drawable/Drawable;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Landroid/graphics/drawable/Drawable;
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -221,9 +198,6 @@
 
 .method public constructor <init>(Landroid/graphics/drawable/Drawable;Ljava/lang/String;I)V
     .locals 0
-    .param p1    # Landroid/graphics/drawable/Drawable;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     invoke-direct {p0, p3}, Landroid/text/style/DynamicDrawableSpan;-><init>(I)V
 

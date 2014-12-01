@@ -71,11 +71,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/internal/util/FileRotator;Landroid/net/NetworkStats$NonMonotonicObserver;Landroid/os/DropBoxManager;Ljava/lang/String;JZ)V
     .locals 2
-    .param p1    # Lcom/android/internal/util/FileRotator;
-    .param p3    # Landroid/os/DropBoxManager;
-    .param p4    # Ljava/lang/String;
-    .param p5    # J
-    .param p7    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -213,8 +208,6 @@
 # virtual methods
 .method public dumpLocked(Lcom/android/internal/util/IndentingPrintWriter;Z)V
     .locals 2
-    .param p1    # Lcom/android/internal/util/IndentingPrintWriter;
-    .param p2    # Z
 
     const-string v0, "Pending bytes: "
 
@@ -257,7 +250,6 @@
 
 .method public forcePersistLocked(J)V
     .locals 3
-    .param p1    # J
 
     iget-object v1, p0, Lcom/android/server/net/NetworkStatsRecorder;->mPending:Lcom/android/server/net/NetworkStatsCollection;
 
@@ -426,7 +418,6 @@
 
 .method public getTotalSinceBootLocked(Landroid/net/NetworkTemplate;)Landroid/net/NetworkStats$Entry;
     .locals 6
-    .param p1    # Landroid/net/NetworkTemplate;
 
     iget-object v0, p0, Lcom/android/server/net/NetworkStatsRecorder;->mSinceBoot:Lcom/android/server/net/NetworkStatsCollection;
 
@@ -451,7 +442,6 @@
 
 .method public importLegacyNetworkLocked(Ljava/io/File;)V
     .locals 7
-    .param p1    # Ljava/io/File;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -502,7 +492,6 @@
 
 .method public importLegacyUidLocked(Ljava/io/File;)V
     .locals 7
-    .param p1    # Ljava/io/File;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -555,7 +544,6 @@
 
 .method public maybePersistLocked(J)V
     .locals 4
-    .param p1    # J
 
     iget-object v2, p0, Lcom/android/server/net/NetworkStatsRecorder;->mPending:Lcom/android/server/net/NetworkStatsCollection;
 
@@ -584,8 +572,6 @@
 
 .method public recordSnapshotLocked(Landroid/net/NetworkStats;Ljava/util/Map;J)V
     .locals 15
-    .param p1    # Landroid/net/NetworkStats;
-    .param p3    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -787,7 +773,6 @@
 
 .method public removeUidsLocked([I)V
     .locals 6
-    .param p1    # [I
 
     :try_start_0
     iget-object v2, p0, Lcom/android/server/net/NetworkStatsRecorder;->mRotator:Lcom/android/internal/util/FileRotator;
@@ -943,7 +928,6 @@
 
 .method public setPersistThreshold(J)V
     .locals 6
-    .param p1    # J
 
     const-wide/16 v2, 0x400
 

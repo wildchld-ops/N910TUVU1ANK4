@@ -43,14 +43,6 @@
 # direct methods
 .method constructor <init>(Landroid/view/SurfaceSession;IIIIIIZ)V
     .locals 10
-    .param p1    # Landroid/view/SurfaceSession;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/view/SurfaceControl$OutOfResourcesException;
@@ -469,7 +461,6 @@
 
 .method setAnimationTransform(Landroid/view/animation/Transformation;)V
     .locals 10
-    .param p1    # Landroid/view/animation/Transformation;
 
     iget-object v4, p0, Lcom/android/server/wm/MultiWindowTransition$ScreenFreezeSurface;->mTmpMatrix:Landroid/graphics/Matrix;
 

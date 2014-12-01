@@ -88,8 +88,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/os/IDeviceManagerRestrictable3LM;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/IDeviceManagerRestrictable3LM;
 
     const/4 v5, 0x1
 
@@ -192,8 +190,6 @@
 
 .method static synthetic access$002(Lcom/android/server/OemExtendedApi3LMService;Lcom/samsung/felicaremotelock/IFelica;)Lcom/samsung/felicaremotelock/IFelica;
     .locals 0
-    .param p0    # Lcom/android/server/OemExtendedApi3LMService;
-    .param p1    # Lcom/samsung/felicaremotelock/IFelica;
 
     iput-object p1, p0, Lcom/android/server/OemExtendedApi3LMService;->binder:Lcom/samsung/felicaremotelock/IFelica;
 
@@ -202,8 +198,6 @@
 
 .method static synthetic access$100(Lcom/android/server/OemExtendedApi3LMService;I)V
     .locals 0
-    .param p0    # Lcom/android/server/OemExtendedApi3LMService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/OemExtendedApi3LMService;->setCurrentUserId(I)V
 
@@ -212,7 +206,6 @@
 
 .method static synthetic access$200(Lcom/android/server/OemExtendedApi3LMService;)Landroid/os/IDeviceManager3LM;
     .locals 1
-    .param p0    # Lcom/android/server/OemExtendedApi3LMService;
 
     iget-object v0, p0, Lcom/android/server/OemExtendedApi3LMService;->mDeviceManager:Landroid/os/IDeviceManager3LM;
 
@@ -261,7 +254,6 @@
 
 .method private setCurrentUserId(I)V
     .locals 3
-    .param p1    # I
 
     sput p1, Lcom/android/server/OemExtendedApi3LMService;->mCurrentUserId:I
 
@@ -294,7 +286,6 @@
 
 .method private setFelicaSavedState(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/OemExtendedApi3LMService;->FelicaSavedState:I
 
@@ -431,9 +422,6 @@
 
 .method public setEmergencyLock(ZLjava/lang/String;Z)Z
     .locals 1
-    .param p1    # Z
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     const/4 v0, 0x1
 
@@ -442,7 +430,6 @@
 
 .method public setEmergencyLockState(I)V
     .locals 5
-    .param p1    # I
 
     const-string v0, "OemExtendedApi3LM"
 
@@ -527,28 +514,24 @@
 
 .method public setFelicaState(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public setInfraredState(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public setOneSegState(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public setisSimulatorPermitted(Z)V
     .locals 3
-    .param p1    # Z
 
     const-string v0, "OemExtendedApi3LM"
 

@@ -33,7 +33,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -127,8 +126,6 @@
 
 .method private broadcastIntentAsUser(ZI)V
     .locals 5
-    .param p1    # Z
-    .param p2    # I
 
     new-instance v0, Landroid/content/Intent;
 
@@ -249,8 +246,6 @@
 
 .method private getVpnProfileCountAsUser(ILjava/lang/String;)I
     .locals 9
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v5, 0x0
 
@@ -357,7 +352,6 @@
 
 .method private isAuthenticationEnabledAsUser(I)Z
     .locals 2
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -402,7 +396,6 @@
 
 .method public isCredentialRequired(Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -444,14 +437,12 @@
 
 .method public onAdminAdded(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onAdminRemoved(I)V
     .locals 4
-    .param p1    # I
 
     new-instance v3, Landroid/app/enterprise/ContextInfo;
 
@@ -482,15 +473,12 @@
 
 .method public onPreAdminRemoval(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public requireCredentials(Ljava/lang/String;Z)Z
     .locals 12
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const/4 v10, 0x0
 

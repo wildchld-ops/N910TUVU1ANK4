@@ -66,7 +66,6 @@
 
 .method public setImsiNumericBase(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/samsung/appdisabler/ImsiNumeric;->imsiNumericBase:Ljava/lang/String;
 
@@ -87,7 +86,6 @@
 
 .method public setImsiRangeEnd(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/samsung/appdisabler/ImsiNumeric;->imsiRangeEnd:Ljava/lang/String;
 
@@ -108,7 +106,6 @@
 
 .method public setImsiRangeStart(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/samsung/appdisabler/ImsiNumeric;->imsiRangeStart:Ljava/lang/String;
 

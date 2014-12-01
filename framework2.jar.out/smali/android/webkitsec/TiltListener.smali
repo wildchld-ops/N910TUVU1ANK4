@@ -70,9 +70,6 @@
 # direct methods
 .method constructor <init>(Landroid/content/Context;Landroid/view/ScaleGestureDetector$OnScaleGestureListener;Landroid/view/ScaleGestureDetector;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/view/ScaleGestureDetector$OnScaleGestureListener;
-    .param p3    # Landroid/view/ScaleGestureDetector;
 
     const-wide/16 v1, 0x0
 
@@ -193,7 +190,6 @@
 
 .method public onMREvent(Landroid/hardware/motion/MREvent;)V
     .locals 4
-    .param p1    # Landroid/hardware/motion/MREvent;
 
     new-instance v0, Ljava/util/ArrayList;
 
@@ -269,7 +265,6 @@
 
 .method public setCurrTilt(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/webkitsec/TiltListener;->mCurrTilt:I
 
@@ -278,7 +273,6 @@
 
 .method public setTiltStartTime(J)V
     .locals 0
-    .param p1    # J
 
     iput-wide p1, p0, Landroid/webkitsec/TiltListener;->mOnScaleBeginTime:J
 
@@ -287,7 +281,6 @@
 
 .method public setTiltUse(Z)V
     .locals 1
-    .param p1    # Z
 
     const/4 v0, 0x0
 

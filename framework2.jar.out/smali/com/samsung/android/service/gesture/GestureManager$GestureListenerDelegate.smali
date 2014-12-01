@@ -25,8 +25,6 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/service/gesture/GestureManager;Lcom/samsung/android/service/gesture/GestureListener;Landroid/os/Handler;)V
     .locals 2
-    .param p2    # Lcom/samsung/android/service/gesture/GestureListener;
-    .param p3    # Landroid/os/Handler;
 
     iput-object p1, p0, Lcom/samsung/android/service/gesture/GestureManager$GestureListenerDelegate;->this$0:Lcom/samsung/android/service/gesture/GestureManager;
 
@@ -64,7 +62,6 @@
 
 .method static synthetic access$500(Lcom/samsung/android/service/gesture/GestureManager$GestureListenerDelegate;)Lcom/samsung/android/service/gesture/GestureListener;
     .locals 1
-    .param p0    # Lcom/samsung/android/service/gesture/GestureManager$GestureListenerDelegate;
 
     iget-object v0, p0, Lcom/samsung/android/service/gesture/GestureManager$GestureListenerDelegate;->mListener:Lcom/samsung/android/service/gesture/GestureListener;
 
@@ -75,7 +72,6 @@
 # virtual methods
 .method public gestureCallback(Lcom/samsung/android/service/gesture/GestureEvent;)V
     .locals 2
-    .param p1    # Lcom/samsung/android/service/gesture/GestureEvent;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

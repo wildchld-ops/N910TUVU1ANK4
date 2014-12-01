@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Landroid/view/View;)V
     .locals 5
-    .param p1    # Landroid/view/View;
 
     invoke-direct {p0, p1}, Landroid/view/View$DragShadowBuilder;-><init>(Landroid/view/View;)V
 
@@ -130,7 +129,6 @@
 # virtual methods
 .method public onDrawShadow(Landroid/graphics/Canvas;)V
     .locals 1
-    .param p1    # Landroid/graphics/Canvas;
 
     sget-object v0, Lcom/android/incallui/CallCardVideoFragment$CameraPreviewDragShadowBuilder;->shadow:Landroid/graphics/drawable/Drawable;
 
@@ -141,8 +139,6 @@
 
 .method public onProvideShadowMetrics(Landroid/graphics/Point;Landroid/graphics/Point;)V
     .locals 4
-    .param p1    # Landroid/graphics/Point;
-    .param p2    # Landroid/graphics/Point;
 
     const/4 v3, 0x0
 

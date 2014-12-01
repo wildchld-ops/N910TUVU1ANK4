@@ -40,7 +40,7 @@
 
     iget-object v0, p0, Lcom/android/phone/IccNetworkDepersonalizationPanel$1;->this$0:Lcom/android/phone/IccNetworkDepersonalizationPanel;
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->getContext()Landroid/content/Context;
+    invoke-virtual {v0}, Lcom/android/phone/IccNetworkDepersonalizationPanel;->getContext()Landroid/content/Context;
 
     move-result-object v0
 

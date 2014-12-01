@@ -89,7 +89,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/AlarmManagerServiceExt$SyncScheduler;Landroid/content/Context;)V
     .locals 9
-    .param p2    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -266,7 +265,6 @@
 
 .method static synthetic access$1100(Lcom/android/server/AlarmManagerServiceExt$SyncScheduler$TrafficAnalyzer;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Lcom/android/server/AlarmManagerServiceExt$SyncScheduler$TrafficAnalyzer;
 
     iget-object v0, p0, Lcom/android/server/AlarmManagerServiceExt$SyncScheduler$TrafficAnalyzer;->mSafeLock:Ljava/lang/Object;
 
@@ -275,7 +273,6 @@
 
 .method static synthetic access$1200(Lcom/android/server/AlarmManagerServiceExt$SyncScheduler$TrafficAnalyzer;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/server/AlarmManagerServiceExt$SyncScheduler$TrafficAnalyzer;
 
     iget-object v0, p0, Lcom/android/server/AlarmManagerServiceExt$SyncScheduler$TrafficAnalyzer;->mWatchlist:Ljava/util/ArrayList;
 
@@ -284,7 +281,6 @@
 
 .method static synthetic access$1300(Lcom/android/server/AlarmManagerServiceExt$SyncScheduler$TrafficAnalyzer;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/server/AlarmManagerServiceExt$SyncScheduler$TrafficAnalyzer;
 
     iget-object v0, p0, Lcom/android/server/AlarmManagerServiceExt$SyncScheduler$TrafficAnalyzer;->mWHITElist:Ljava/util/ArrayList;
 
@@ -293,7 +289,6 @@
 
 .method static synthetic access$1500(Lcom/android/server/AlarmManagerServiceExt$SyncScheduler$TrafficAnalyzer;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/server/AlarmManagerServiceExt$SyncScheduler$TrafficAnalyzer;
 
     iget-object v0, p0, Lcom/android/server/AlarmManagerServiceExt$SyncScheduler$TrafficAnalyzer;->mIgnorelist:Ljava/util/ArrayList;
 
@@ -302,7 +297,6 @@
 
 .method static synthetic access$1800(Lcom/android/server/AlarmManagerServiceExt$SyncScheduler$TrafficAnalyzer;)Landroid/net/ConnectivityManager;
     .locals 1
-    .param p0    # Lcom/android/server/AlarmManagerServiceExt$SyncScheduler$TrafficAnalyzer;
 
     invoke-direct {p0}, Lcom/android/server/AlarmManagerServiceExt$SyncScheduler$TrafficAnalyzer;->getConnectivityManager()Landroid/net/ConnectivityManager;
 
@@ -313,7 +307,6 @@
 
 .method static synthetic access$1900(Lcom/android/server/AlarmManagerServiceExt$SyncScheduler$TrafficAnalyzer;)Landroid/util/SparseBooleanArray;
     .locals 1
-    .param p0    # Lcom/android/server/AlarmManagerServiceExt$SyncScheduler$TrafficAnalyzer;
 
     iget-object v0, p0, Lcom/android/server/AlarmManagerServiceExt$SyncScheduler$TrafficAnalyzer;->mFgActivities:Landroid/util/SparseBooleanArray;
 
@@ -368,8 +361,6 @@
 # virtual methods
 .method public ForegroundAppsCheckLocked(IJ)V
     .locals 6
-    .param p1    # I
-    .param p2    # J
 
     iget-object v2, p0, Lcom/android/server/AlarmManagerServiceExt$SyncScheduler$TrafficAnalyzer;->mWatchlist:Ljava/util/ArrayList;
 
@@ -433,7 +424,6 @@
 
 .method public determineListTypeLocked(Lcom/android/server/AlarmManagerServiceExt$SyncScheduler$TrafficAnalyzer$AlarmRecord;)Z
     .locals 13
-    .param p1    # Lcom/android/server/AlarmManagerServiceExt$SyncScheduler$TrafficAnalyzer$AlarmRecord;
 
     const/4 v8, 0x0
 
@@ -968,10 +958,6 @@
 
 .method public lookForObjectInListLocked(Ljava/util/ArrayList;IIIJ)I
     .locals 9
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1243,8 +1229,6 @@
 
 .method public queryTrafficPeriodicity(Lcom/android/server/AlarmManagerServiceExt$AlarmExt;J)J
     .locals 25
-    .param p1    # Lcom/android/server/AlarmManagerServiceExt$AlarmExt;
-    .param p2    # J
 
     const/16 v17, 0x1
 
@@ -1800,8 +1784,6 @@
 
 .method public removeAlarmRecord(Ljava/lang/String;I)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v6, -0x1
 
@@ -1970,7 +1952,6 @@
 
 .method public removeUnusedAlarmRecord(J)V
     .locals 13
-    .param p1    # J
 
     iget-object v8, p0, Lcom/android/server/AlarmManagerServiceExt$SyncScheduler$TrafficAnalyzer;->mSafeLock:Ljava/lang/Object;
 
@@ -2421,9 +2402,6 @@
 
 .method public updateAlarmTriggerInfo(Landroid/app/PendingIntent;IJ)V
     .locals 19
-    .param p1    # Landroid/app/PendingIntent;
-    .param p2    # I
-    .param p3    # J
 
     const/4 v7, -0x1
 
@@ -3064,9 +3042,6 @@
 
 .method public updateEmailSyncStatus(JJ[J)J
     .locals 24
-    .param p1    # J
-    .param p3    # J
-    .param p5    # [J
 
     const/4 v12, 0x0
 
@@ -3409,7 +3384,6 @@
 
 .method updateGmsBundlingState(Z)V
     .locals 2
-    .param p1    # Z
 
     if-eqz p1, :cond_1
 

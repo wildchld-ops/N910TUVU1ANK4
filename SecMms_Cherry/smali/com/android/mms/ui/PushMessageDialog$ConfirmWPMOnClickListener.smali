@@ -26,7 +26,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/mms/ui/PushMessageDialog;Ljava/lang/String;)V
     .locals 1
-    .param p2    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/mms/ui/PushMessageDialog$ConfirmWPMOnClickListener;->this$0:Lcom/android/mms/ui/PushMessageDialog;
 

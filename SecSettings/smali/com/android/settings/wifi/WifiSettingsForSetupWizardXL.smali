@@ -632,7 +632,6 @@
 
 .method private refreshAccessPoints(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-direct {p0}, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->showScanningState()V
 
@@ -937,7 +936,6 @@
 # virtual methods
 .method changeNextButtonState(Z)V
     .locals 2
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -962,8 +960,6 @@
 
 .method initSecurityFields(Landroid/view/View;I)Z
     .locals 6
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     const v5, 0x7f0b0688
 
@@ -1110,7 +1106,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 3
-    .param p1    # Landroid/view/View;
 
     const/4 v2, 0x1
 
@@ -1305,7 +1300,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v1, 0x1
 
@@ -1364,7 +1358,6 @@
 
 .method setPaddingVisibility(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/settings/wifi/WifiSettingsForSetupWizardXL;->mTopPadding:Landroid/view/View;
 

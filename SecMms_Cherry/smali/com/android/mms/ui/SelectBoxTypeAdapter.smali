@@ -18,7 +18,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-static {p1}, Lcom/android/mms/ui/SelectBoxTypeAdapter;->getData(Landroid/content/Context;)Ljava/util/List;
 
@@ -31,8 +30,6 @@
 
 .method private static adjustBoxTypeString(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -103,7 +100,6 @@
 
 .method protected static getData(Landroid/content/Context;)Ljava/util/List;
     .locals 13
-    .param p0    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

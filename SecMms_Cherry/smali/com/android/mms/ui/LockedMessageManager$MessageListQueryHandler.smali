@@ -23,7 +23,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/mms/ui/LockedMessageManager;Landroid/content/ContentResolver;)V
     .locals 0
-    .param p2    # Landroid/content/ContentResolver;
 
     iput-object p1, p0, Lcom/android/mms/ui/LockedMessageManager$MessageListQueryHandler;->this$0:Lcom/android/mms/ui/LockedMessageManager;
 
@@ -36,9 +35,6 @@
 # virtual methods
 .method protected onDeleteComplete(ILjava/lang/Object;I)V
     .locals 4
-    .param p1    # I
-    .param p2    # Ljava/lang/Object;
-    .param p3    # I
 
     const/4 v3, 0x1
 
@@ -124,9 +120,6 @@
 
 .method protected onQueryComplete(ILjava/lang/Object;Landroid/database/Cursor;)V
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/Object;
-    .param p3    # Landroid/database/Cursor;
 
     const/4 v5, 0x1
 
@@ -399,9 +392,6 @@
 
 .method protected onUpdateComplete(ILjava/lang/Object;I)V
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/Object;
-    .param p3    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -457,7 +447,6 @@
 
 .method public setmDeleteEventHandler(Landroid/os/Handler;)V
     .locals 0
-    .param p1    # Landroid/os/Handler;
 
     iput-object p1, p0, Lcom/android/mms/ui/LockedMessageManager$MessageListQueryHandler;->mDeleteEventHandler:Landroid/os/Handler;
 

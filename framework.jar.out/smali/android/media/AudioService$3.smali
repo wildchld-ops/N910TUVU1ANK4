@@ -33,7 +33,6 @@
 # virtual methods
 .method public onUEvent(Landroid/os/UEventObserver$UEvent;)V
     .locals 8
-    .param p1    # Landroid/os/UEventObserver$UEvent;
 
     const/16 v1, 0x1b
 

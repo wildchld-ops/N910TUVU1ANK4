@@ -45,11 +45,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;ILcom/android/mms/data/ContactList;IZ)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Lcom/android/mms/data/ContactList;
-    .param p4    # I
-    .param p5    # Z
 
     const/4 v0, 0x0
 
@@ -96,7 +91,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/ui/UpdatePrioritySenderAdapter;)Landroid/util/SparseBooleanArray;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/UpdatePrioritySenderAdapter;
 
     iget-object v0, p0, Lcom/android/mms/ui/UpdatePrioritySenderAdapter;->mCheckStates:Landroid/util/SparseBooleanArray;
 
@@ -105,7 +99,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/ui/UpdatePrioritySenderAdapter;)Lcom/sec/android/touchwiz/widget/TwCheckBox;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/UpdatePrioritySenderAdapter;
 
     iget-object v0, p0, Lcom/android/mms/ui/UpdatePrioritySenderAdapter;->mSelectAllCheckbox:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
@@ -114,7 +107,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/ui/UpdatePrioritySenderAdapter;)Landroid/widget/Button;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/UpdatePrioritySenderAdapter;
 
     iget-object v0, p0, Lcom/android/mms/ui/UpdatePrioritySenderAdapter;->mSaveButton:Landroid/widget/Button;
 
@@ -123,7 +115,6 @@
 
 .method static synthetic access$300(Lcom/android/mms/ui/UpdatePrioritySenderAdapter;)I
     .locals 1
-    .param p0    # Lcom/android/mms/ui/UpdatePrioritySenderAdapter;
 
     iget v0, p0, Lcom/android/mms/ui/UpdatePrioritySenderAdapter;->mSize:I
 
@@ -132,7 +123,6 @@
 
 .method static synthetic access$400(Lcom/android/mms/ui/UpdatePrioritySenderAdapter;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/UpdatePrioritySenderAdapter;
 
     iget-boolean v0, p0, Lcom/android/mms/ui/UpdatePrioritySenderAdapter;->mSave:Z
 
@@ -141,7 +131,6 @@
 
 .method static synthetic access$500(Lcom/android/mms/ui/UpdatePrioritySenderAdapter;)I
     .locals 1
-    .param p0    # Lcom/android/mms/ui/UpdatePrioritySenderAdapter;
 
     iget v0, p0, Lcom/android/mms/ui/UpdatePrioritySenderAdapter;->mAvailableCount:I
 
@@ -150,7 +139,6 @@
 
 .method static synthetic access$600(Lcom/android/mms/ui/UpdatePrioritySenderAdapter;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/UpdatePrioritySenderAdapter;
 
     iget-object v0, p0, Lcom/android/mms/ui/UpdatePrioritySenderAdapter;->mContext:Landroid/content/Context;
 
@@ -241,9 +229,6 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     const/4 v5, 0x0
 
@@ -371,7 +356,6 @@
 
 .method public isChecked(I)Z
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/mms/ui/UpdatePrioritySenderAdapter;->mCheckStates:Landroid/util/SparseBooleanArray;
 
@@ -386,7 +370,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 9
-    .param p1    # Landroid/view/View;
 
     const/4 v8, 0x0
 
@@ -467,8 +450,6 @@
 
 .method public setChecked(IZ)V
     .locals 1
-    .param p1    # I
-    .param p2    # Z
 
     iget-object v0, p0, Lcom/android/mms/ui/UpdatePrioritySenderAdapter;->mCheckStates:Landroid/util/SparseBooleanArray;
 
@@ -486,8 +467,6 @@
 
 .method public setSaveButton(Landroid/widget/Button;Ljava/lang/Boolean;)V
     .locals 2
-    .param p1    # Landroid/widget/Button;
-    .param p2    # Ljava/lang/Boolean;
 
     iput-object p1, p0, Lcom/android/mms/ui/UpdatePrioritySenderAdapter;->mSaveButton:Landroid/widget/Button;
 
@@ -504,7 +483,6 @@
 
 .method public setSelectAllCheckbox(Lcom/sec/android/touchwiz/widget/TwCheckBox;)V
     .locals 0
-    .param p1    # Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
     iput-object p1, p0, Lcom/android/mms/ui/UpdatePrioritySenderAdapter;->mSelectAllCheckbox:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
@@ -513,7 +491,6 @@
 
 .method public toggle(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/mms/ui/UpdatePrioritySenderAdapter;->isChecked(I)Z
 

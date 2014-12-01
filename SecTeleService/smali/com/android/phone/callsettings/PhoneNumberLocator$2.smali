@@ -69,7 +69,7 @@
 
     iget-object v0, p0, Lcom/android/phone/callsettings/PhoneNumberLocator$2;->this$0:Lcom/android/phone/callsettings/PhoneNumberLocator;
 
-    invoke-virtual {v0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v0}, Lcom/android/phone/callsettings/PhoneNumberLocator;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -77,7 +77,7 @@
 
     iget-object v2, p0, Lcom/android/phone/callsettings/PhoneNumberLocator$2;->this$0:Lcom/android/phone/callsettings/PhoneNumberLocator;
 
-    invoke-virtual {v2}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v2}, Lcom/android/phone/callsettings/PhoneNumberLocator;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -85,7 +85,7 @@
 
     invoke-direct {v1, v2, v3}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    invoke-virtual {v0, v1}, Landroid/content/ContextWrapper;->stopService(Landroid/content/Intent;)Z
+    invoke-virtual {v0, v1}, Landroid/app/Activity;->stopService(Landroid/content/Intent;)Z
 
     iget-object v0, p0, Lcom/android/phone/callsettings/PhoneNumberLocator$2;->this$0:Lcom/android/phone/callsettings/PhoneNumberLocator;
 
@@ -99,7 +99,7 @@
 
     iget-object v1, p0, Lcom/android/phone/callsettings/PhoneNumberLocator$2;->this$0:Lcom/android/phone/callsettings/PhoneNumberLocator;
 
-    invoke-virtual {v1}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v1}, Lcom/android/phone/callsettings/PhoneNumberLocator;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -141,7 +141,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->show()V
+    invoke-virtual {v0}, Landroid/app/AlertDialog;->show()V
 
     goto :goto_0
 .end method

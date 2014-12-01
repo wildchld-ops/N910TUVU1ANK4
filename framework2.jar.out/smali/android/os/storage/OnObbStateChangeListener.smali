@@ -34,8 +34,6 @@
 # virtual methods
 .method public onObbStateChange(Ljava/lang/String;I)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     return-void
 .end method

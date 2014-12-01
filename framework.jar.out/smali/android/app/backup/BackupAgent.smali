@@ -58,7 +58,6 @@
 
 .method static synthetic access$100(Landroid/app/backup/BackupAgent;)V
     .locals 0
-    .param p0    # Landroid/app/backup/BackupAgent;
 
     invoke-direct {p0}, Landroid/app/backup/BackupAgent;->waitForSharedPrefs()V
 
@@ -111,7 +110,6 @@
 # virtual methods
 .method public attach(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     invoke-virtual {p0, p1}, Landroid/app/backup/BackupAgent;->attachBaseContext(Landroid/content/Context;)V
 
@@ -120,8 +118,6 @@
 
 .method public final fullBackupFile(Ljava/io/File;Landroid/app/backup/FullBackupDataOutput;)V
     .locals 17
-    .param p1    # Ljava/io/File;
-    .param p2    # Landroid/app/backup/FullBackupDataOutput;
 
     const/4 v11, 0x0
 
@@ -433,10 +429,6 @@
 
 .method protected final fullBackupFileTree(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/HashSet;Landroid/app/backup/FullBackupDataOutput;)V
     .locals 17
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p5    # Landroid/app/backup/FullBackupDataOutput;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -700,7 +692,6 @@
 
 .method public onFullBackup(Landroid/app/backup/FullBackupDataOutput;)V
     .locals 28
-    .param p1    # Landroid/app/backup/FullBackupDataOutput;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -928,13 +919,6 @@
 
 .method protected onRestoreFile(Landroid/os/ParcelFileDescriptor;JILjava/lang/String;Ljava/lang/String;JJ)V
     .locals 19
-    .param p1    # Landroid/os/ParcelFileDescriptor;
-    .param p2    # J
-    .param p4    # I
-    .param p5    # Ljava/lang/String;
-    .param p6    # Ljava/lang/String;
-    .param p7    # J
-    .param p9    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1407,12 +1391,6 @@
 
 .method public onRestoreFile(Landroid/os/ParcelFileDescriptor;JLjava/io/File;IJJ)V
     .locals 9
-    .param p1    # Landroid/os/ParcelFileDescriptor;
-    .param p2    # J
-    .param p4    # Ljava/io/File;
-    .param p5    # I
-    .param p6    # J
-    .param p8    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

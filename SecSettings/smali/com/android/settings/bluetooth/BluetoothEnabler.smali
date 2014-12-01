@@ -33,8 +33,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/widget/Switch;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/widget/Switch;
 
     const/4 v3, 0x0
 
@@ -132,7 +130,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/bluetooth/BluetoothEnabler;)V
     .locals 0
-    .param p0    # Lcom/android/settings/bluetooth/BluetoothEnabler;
 
     invoke-direct {p0}, Lcom/android/settings/bluetooth/BluetoothEnabler;->updateSummaryInSettings()V
 
@@ -141,7 +138,6 @@
 
 .method private onSwitchChanged(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/settings/bluetooth/BluetoothEnabler;->mEnabalerListener:Lcom/android/settings/guide/OnInternalSwitcherListener;
 
@@ -325,7 +321,6 @@
 # virtual methods
 .method handleStateChanged(I)V
     .locals 4
-    .param p1    # I
 
     const/4 v3, 0x1
 
@@ -417,8 +412,6 @@
 
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 3
-    .param p1    # Landroid/widget/CompoundButton;
-    .param p2    # Z
 
     const/4 v2, 0x0
 
@@ -607,7 +600,6 @@
 
 .method public setSwitch(Landroid/widget/Switch;)V
     .locals 7
-    .param p1    # Landroid/widget/Switch;
 
     const/4 v3, 0x1
 
@@ -729,9 +721,6 @@
 
 .method public setSwitch(Landroid/widget/Switch;Landroid/preference/PreferenceActivity$Header;Landroid/widget/TextView;)V
     .locals 3
-    .param p1    # Landroid/widget/Switch;
-    .param p2    # Landroid/preference/PreferenceActivity$Header;
-    .param p3    # Landroid/widget/TextView;
 
     iput-object p2, p0, Lcom/android/settings/bluetooth/BluetoothEnabler;->mHeader:Landroid/preference/PreferenceActivity$Header;
 

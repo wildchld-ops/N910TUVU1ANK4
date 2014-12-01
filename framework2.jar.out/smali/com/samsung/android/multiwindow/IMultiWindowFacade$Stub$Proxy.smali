@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,7 +36,6 @@
 # virtual methods
 .method public addTab(Landroid/os/IBinder;)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -89,7 +87,6 @@
 
 .method public appMinimizingStarted(Landroid/os/IBinder;)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -149,9 +146,6 @@
 
 .method public changeTaskToCascade(Landroid/graphics/Point;IZ)Z
     .locals 7
-    .param p1    # Landroid/graphics/Point;
-    .param p2    # I
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -252,7 +246,6 @@
 
 .method public changeTaskToFull(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -304,8 +297,6 @@
 
 .method public exchangeTopTaskToZone(II)Z
     .locals 6
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -704,7 +695,6 @@
 
 .method public getFrontActivityMultiWindowStyle(I)Lcom/samsung/android/multiwindow/MultiWindowStyle;
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -837,7 +827,6 @@
 
 .method public getMultiWindowStyle(Landroid/os/IBinder;)Lcom/samsung/android/multiwindow/MultiWindowStyle;
     .locals 6
-    .param p1    # Landroid/os/IBinder;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -909,8 +898,6 @@
 
 .method public getRecentTaskSize(II)I
     .locals 6
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1135,7 +1122,6 @@
 
 .method public getStackBound(Landroid/os/IBinder;)Landroid/graphics/Rect;
     .locals 6
-    .param p1    # Landroid/os/IBinder;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1207,7 +1193,6 @@
 
 .method public getStackBoxPosition(Landroid/os/IBinder;)Landroid/graphics/Point;
     .locals 6
-    .param p1    # Landroid/os/IBinder;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1279,7 +1264,6 @@
 
 .method public getStackId(Landroid/os/IBinder;)I
     .locals 6
-    .param p1    # Landroid/os/IBinder;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1335,7 +1319,6 @@
 
 .method public getStackOriginalBound(Landroid/os/IBinder;)Landroid/graphics/Rect;
     .locals 6
-    .param p1    # Landroid/os/IBinder;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1468,7 +1451,6 @@
 
 .method public getZoneBounds(I)Landroid/graphics/Rect;
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1600,7 +1582,6 @@
 
 .method public minimizeWindow(Landroid/os/IBinder;)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1652,10 +1633,6 @@
 
 .method public moveOnlySpecificTaskToFront(ILandroid/os/Bundle;ILcom/samsung/android/multiwindow/MultiWindowStyle;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
-    .param p3    # I
-    .param p4    # Lcom/samsung/android/multiwindow/MultiWindowStyle;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1811,8 +1788,6 @@
 
 .method public removeAllTasks(Landroid/os/IBinder;I)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1866,7 +1841,6 @@
 
 .method public removeTab(I)Z
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1929,7 +1903,6 @@
 
 .method public requestSplitPreview(Z)V
     .locals 5
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1988,8 +1961,6 @@
 
 .method public setAppVisibility(Landroid/os/IBinder;Z)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2050,7 +2021,6 @@
 
 .method public setCenterBarPoint(Landroid/graphics/Point;)V
     .locals 5
-    .param p1    # Landroid/graphics/Point;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2121,7 +2091,6 @@
 
 .method public setFocusAppByZone(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2173,8 +2142,6 @@
 
 .method public setFocusedStack(IZ)V
     .locals 5
-    .param p1    # I
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2235,8 +2202,6 @@
 
 .method public setMultiWindowStyle(Landroid/os/IBinder;Lcom/samsung/android/multiwindow/MultiWindowStyle;)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Lcom/samsung/android/multiwindow/MultiWindowStyle;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2309,7 +2274,6 @@
 
 .method public setMultiWindowTrayOpenState(Z)V
     .locals 5
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2368,7 +2332,6 @@
 
 .method public setPreviewFullAppZone(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2420,8 +2383,6 @@
 
 .method public setStackBound(Landroid/os/IBinder;Landroid/graphics/Rect;)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Landroid/graphics/Rect;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2494,8 +2455,6 @@
 
 .method public setStackBoundByStackId(ILandroid/graphics/Rect;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/graphics/Rect;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2568,7 +2527,6 @@
 
 .method public updateIsolatedCenterPoint(Landroid/graphics/Point;)V
     .locals 5
-    .param p1    # Landroid/graphics/Point;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2639,8 +2597,6 @@
 
 .method public updateMinimizeSize(Landroid/os/IBinder;[I)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # [I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

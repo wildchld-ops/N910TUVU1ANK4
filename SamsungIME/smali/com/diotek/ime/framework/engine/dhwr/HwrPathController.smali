@@ -110,7 +110,6 @@
 
 .method private add(Lcom/diotek/ime/framework/engine/dhwr/HwrPathController$Diopoint;)Z
     .locals 2
-    .param p1    # Lcom/diotek/ime/framework/engine/dhwr/HwrPathController$Diopoint;
 
     invoke-virtual {p1}, Lcom/diotek/ime/framework/engine/dhwr/HwrPathController$Diopoint;->getX()Ljava/util/List;
 
@@ -174,14 +173,6 @@
 
 .method private checkBound(FFFFFFFF)Z
     .locals 2
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # F
-    .param p7    # F
-    .param p8    # F
 
     const/4 v0, 0x0
 
@@ -373,14 +364,6 @@
 
 .method private lineIntersect(FFFFFFFF)Z
     .locals 13
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # F
-    .param p7    # F
-    .param p8    # F
 
     invoke-direct/range {p0 .. p8}, Lcom/diotek/ime/framework/engine/dhwr/HwrPathController;->checkBound(FFFFFFFF)Z
 
@@ -548,7 +531,6 @@
 
 .method private pnpoly(Ljava/util/List;Ljava/util/List;[[F)Z
     .locals 11
-    .param p3    # [[F
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -773,7 +755,6 @@
 
 .method private recoverErasedLines(Z)Z
     .locals 5
-    .param p1    # Z
 
     const/4 v0, 0x0
 
@@ -1051,8 +1032,6 @@
 
 .method private setLassoGroup(IZ)V
     .locals 4
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v1, 0x0
 
@@ -1105,9 +1084,6 @@
 # virtual methods
 .method public addPoint(FFI)Z
     .locals 2
-    .param p1    # F
-    .param p2    # F
-    .param p3    # I
 
     if-nez p3, :cond_0
 
@@ -1190,8 +1166,6 @@
 
 .method public delete(ID)Landroid/graphics/Rect;
     .locals 22
-    .param p1    # I
-    .param p2    # D
 
     const/4 v4, 0x0
 
@@ -1818,7 +1792,6 @@
 
 .method public getDioPoint(I)Lcom/diotek/ime/framework/engine/dhwr/HwrPathController$Diopoint;
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -1854,7 +1827,6 @@
 
 .method public getFirstPoint(I)Landroid/graphics/Point;
     .locals 4
-    .param p1    # I
 
     new-instance v1, Landroid/graphics/Point;
 
@@ -1890,7 +1862,6 @@
 
 .method public getLassoGroupColor(I)I
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/diotek/ime/framework/engine/dhwr/HwrPathController;->mColorArray:Ljava/util/ArrayList;
 
@@ -1911,7 +1882,6 @@
 
 .method public getLassoGroupId(I)I
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lcom/diotek/ime/framework/engine/dhwr/HwrPathController;->mXYdata:Ljava/util/Map;
 
@@ -1942,7 +1912,6 @@
 
 .method public getLastPoint(I)Landroid/graphics/Point;
     .locals 4
-    .param p1    # I
 
     new-instance v1, Landroid/graphics/Point;
 
@@ -1978,7 +1947,6 @@
 
 .method public getMatrix(I)Landroid/graphics/Matrix;
     .locals 4
-    .param p1    # I
 
     iget-object v2, p0, Lcom/diotek/ime/framework/engine/dhwr/HwrPathController;->mXYdata:Ljava/util/Map;
 
@@ -2026,7 +1994,6 @@
 
 .method public getPath(I)Landroid/graphics/Path;
     .locals 4
-    .param p1    # I
 
     new-instance v0, Landroid/graphics/Path;
 
@@ -2102,7 +2069,6 @@
 
 .method public getPoint(I)[[F
     .locals 4
-    .param p1    # I
 
     iget-object v2, p0, Lcom/diotek/ime/framework/engine/dhwr/HwrPathController;->mXYdata:Ljava/util/Map;
 
@@ -2160,7 +2126,6 @@
 
 .method public getUnusedLastPoint(I)Landroid/graphics/Point;
     .locals 4
-    .param p1    # I
 
     new-instance v1, Landroid/graphics/Point;
 
@@ -2196,7 +2161,6 @@
 
 .method public isCurrentLasso(I)Z
     .locals 1
-    .param p1    # I
 
     const/16 v0, 0x3e7
 
@@ -2233,7 +2197,6 @@
 
 .method public matrixTuning(Landroid/graphics/Matrix;)V
     .locals 8
-    .param p1    # Landroid/graphics/Matrix;
 
     const/4 v7, 0x2
 
@@ -2316,9 +2279,6 @@
 
 .method public rectOfRecognizeStroke(IDI)Landroid/graphics/Rect;
     .locals 23
-    .param p1    # I
-    .param p2    # D
-    .param p4    # I
 
     const/4 v4, 0x0
 
@@ -3035,8 +2995,6 @@
 
 .method public setLassoGroupColor(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/diotek/ime/framework/engine/dhwr/HwrPathController;->mColorArray:Ljava/util/ArrayList;
 
@@ -3073,7 +3031,6 @@
 
 .method public setLassoGroupId(I)V
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -3084,7 +3041,6 @@
 
 .method public setMatrix(Landroid/graphics/Matrix;)V
     .locals 4
-    .param p1    # Landroid/graphics/Matrix;
 
     const/4 v0, 0x0
 

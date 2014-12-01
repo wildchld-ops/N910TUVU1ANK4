@@ -16,7 +16,6 @@
 # direct methods
 .method private constructor <init>(Landroid/app/Activity;)V
     .locals 2
-    .param p1    # Landroid/app/Activity;
 
     invoke-direct {p0, p1}, Lcom/android/internal/policy/impl/multiwindow/ApplicationThumbnail;-><init>(Landroid/app/Activity;)V
 
@@ -53,8 +52,6 @@
 
 .method private constructor <init>(Landroid/app/Activity;Landroid/content/ComponentName;)V
     .locals 2
-    .param p1    # Landroid/app/Activity;
-    .param p2    # Landroid/content/ComponentName;
 
     invoke-direct {p0, p1, p2}, Lcom/android/internal/policy/impl/multiwindow/ApplicationThumbnail;-><init>(Landroid/app/Activity;Landroid/content/ComponentName;)V
 
@@ -91,7 +88,6 @@
 
 .method public static create(Landroid/app/Activity;)Lcom/android/internal/policy/impl/multiwindow/ApplicationThumbnail;
     .locals 1
-    .param p0    # Landroid/app/Activity;
 
     new-instance v0, Lcom/android/internal/policy/impl/multiwindow/ApplicationSquareThumbnail;
 
@@ -102,8 +98,6 @@
 
 .method public static create(Landroid/app/Activity;Landroid/content/ComponentName;)Lcom/android/internal/policy/impl/multiwindow/ApplicationThumbnail;
     .locals 1
-    .param p0    # Landroid/app/Activity;
-    .param p1    # Landroid/content/ComponentName;
 
     new-instance v0, Lcom/android/internal/policy/impl/multiwindow/ApplicationSquareThumbnail;
 
@@ -116,7 +110,6 @@
 # virtual methods
 .method protected getMinimizedBitmap(Z)Landroid/graphics/Bitmap;
     .locals 12
-    .param p1    # Z
 
     const/4 v9, 0x0
 

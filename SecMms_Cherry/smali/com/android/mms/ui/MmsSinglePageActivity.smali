@@ -441,7 +441,6 @@
 
 .method private LogForMotionEvent(Landroid/view/MotionEvent;)V
     .locals 5
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v1, 0x0
 
@@ -521,7 +520,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/ui/MmsSinglePageActivity;)Lcom/android/mms/ui/MessageItem;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/MmsSinglePageActivity;
 
     iget-object v0, p0, Lcom/android/mms/ui/MmsSinglePageActivity;->mMsgItem:Lcom/android/mms/ui/MessageItem;
 
@@ -530,7 +528,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/ui/MmsSinglePageActivity;)Lcom/android/mms/ui/ViewTitleHeader;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/MmsSinglePageActivity;
 
     iget-object v0, p0, Lcom/android/mms/ui/MmsSinglePageActivity;->mViewTitleHeader:Lcom/android/mms/ui/ViewTitleHeader;
 
@@ -539,12 +536,6 @@
 
 .method static synthetic access$1000(Lcom/android/mms/ui/MmsSinglePageActivity;Landroid/text/Spannable;Ljava/lang/String;Ljava/lang/String;II)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/MmsSinglePageActivity;
-    .param p1    # Landroid/text/Spannable;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
-    .param p5    # I
 
     invoke-direct/range {p0 .. p5}, Lcom/android/mms/ui/MmsSinglePageActivity;->setTextLink(Landroid/text/Spannable;Ljava/lang/String;Ljava/lang/String;II)V
 
@@ -553,7 +544,6 @@
 
 .method static synthetic access$1100(Lcom/android/mms/ui/MmsSinglePageActivity;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/MmsSinglePageActivity;
 
     iget-object v0, p0, Lcom/android/mms/ui/MmsSinglePageActivity;->mSelectedUrl:Ljava/lang/String;
 
@@ -562,8 +552,6 @@
 
 .method static synthetic access$1102(Lcom/android/mms/ui/MmsSinglePageActivity;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/MmsSinglePageActivity;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/mms/ui/MmsSinglePageActivity;->mSelectedUrl:Ljava/lang/String;
 
@@ -572,7 +560,6 @@
 
 .method static synthetic access$1200(Lcom/android/mms/ui/MmsSinglePageActivity;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/MmsSinglePageActivity;
 
     iget-object v0, p0, Lcom/android/mms/ui/MmsSinglePageActivity;->mSelectedText:Ljava/lang/String;
 
@@ -581,7 +568,6 @@
 
 .method static synthetic access$1300(Lcom/android/mms/ui/MmsSinglePageActivity;)Landroid/text/style/ForegroundColorSpan;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/MmsSinglePageActivity;
 
     iget-object v0, p0, Lcom/android/mms/ui/MmsSinglePageActivity;->mSelectedUrlSpan:Landroid/text/style/ForegroundColorSpan;
 
@@ -590,8 +576,6 @@
 
 .method static synthetic access$1400(Lcom/android/mms/ui/MmsSinglePageActivity;Landroid/net/Uri;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/MmsSinglePageActivity;
-    .param p1    # Landroid/net/Uri;
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/MmsSinglePageActivity;->saveAttachFile(Landroid/net/Uri;)V
 
@@ -600,7 +584,6 @@
 
 .method static synthetic access$1500(Lcom/android/mms/ui/MmsSinglePageActivity;)Landroid/content/Intent;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/MmsSinglePageActivity;
 
     iget-object v0, p0, Lcom/android/mms/ui/MmsSinglePageActivity;->mIntent:Landroid/content/Intent;
 
@@ -609,7 +592,6 @@
 
 .method static synthetic access$1600(Lcom/android/mms/ui/MmsSinglePageActivity;)I
     .locals 1
-    .param p0    # Lcom/android/mms/ui/MmsSinglePageActivity;
 
     iget v0, p0, Lcom/android/mms/ui/MmsSinglePageActivity;->mStartSlideAnim:I
 
@@ -618,7 +600,6 @@
 
 .method static synthetic access$1700(Lcom/android/mms/ui/MmsSinglePageActivity;)I
     .locals 1
-    .param p0    # Lcom/android/mms/ui/MmsSinglePageActivity;
 
     iget v0, p0, Lcom/android/mms/ui/MmsSinglePageActivity;->mEndSlideAnim:I
 
@@ -627,7 +608,6 @@
 
 .method static synthetic access$1800(Lcom/android/mms/ui/MmsSinglePageActivity;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/MmsSinglePageActivity;
 
     invoke-direct {p0}, Lcom/android/mms/ui/MmsSinglePageActivity;->initActionBar()V
 
@@ -636,7 +616,6 @@
 
 .method static synthetic access$1900(Lcom/android/mms/ui/MmsSinglePageActivity;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/MmsSinglePageActivity;
 
     invoke-direct {p0}, Lcom/android/mms/ui/MmsSinglePageActivity;->drawTitle_Subject()V
 
@@ -645,7 +624,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/ui/MmsSinglePageActivity;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/MmsSinglePageActivity;
 
     invoke-direct {p0}, Lcom/android/mms/ui/MmsSinglePageActivity;->adjustSubjectWidth()V
 
@@ -654,7 +632,6 @@
 
 .method static synthetic access$300(Lcom/android/mms/ui/MmsSinglePageActivity;)Lcom/android/mms/data/ContactList;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/MmsSinglePageActivity;
 
     iget-object v0, p0, Lcom/android/mms/ui/MmsSinglePageActivity;->mContactList:Lcom/android/mms/data/ContactList;
 
@@ -663,8 +640,6 @@
 
 .method static synthetic access$400(Lcom/android/mms/ui/MmsSinglePageActivity;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/MmsSinglePageActivity;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/MmsSinglePageActivity;->dumpLogs(Ljava/lang/String;)V
 
@@ -673,8 +648,6 @@
 
 .method static synthetic access$500(Lcom/android/mms/ui/MmsSinglePageActivity;Lcom/android/mms/model/MediaModel;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/MmsSinglePageActivity;
-    .param p1    # Lcom/android/mms/model/MediaModel;
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/MmsSinglePageActivity;->getContentType(Lcom/android/mms/model/MediaModel;)Ljava/lang/String;
 
@@ -685,9 +658,6 @@
 
 .method static synthetic access$600(Lcom/android/mms/ui/MmsSinglePageActivity;Landroid/net/Uri;Ljava/lang/String;)Landroid/content/Intent;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/MmsSinglePageActivity;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Lcom/android/mms/ui/MmsSinglePageActivity;->getTypeIntent(Landroid/net/Uri;Ljava/lang/String;)Landroid/content/Intent;
 
@@ -698,9 +668,6 @@
 
 .method static synthetic access$700(Lcom/android/mms/ui/MmsSinglePageActivity;Landroid/content/ActivityNotFoundException;Landroid/content/Intent;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/MmsSinglePageActivity;
-    .param p1    # Landroid/content/ActivityNotFoundException;
-    .param p2    # Landroid/content/Intent;
 
     invoke-direct {p0, p1, p2}, Lcom/android/mms/ui/MmsSinglePageActivity;->handlerIfNoActivityFound(Landroid/content/ActivityNotFoundException;Landroid/content/Intent;)V
 
@@ -709,8 +676,6 @@
 
 .method static synthetic access$800(Lcom/android/mms/ui/MmsSinglePageActivity;Lcom/android/mms/model/MediaModel;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/MmsSinglePageActivity;
-    .param p1    # Lcom/android/mms/model/MediaModel;
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/MmsSinglePageActivity;->saveAttachFile(Lcom/android/mms/model/MediaModel;)V
 
@@ -1102,7 +1067,6 @@
 
 .method private checkContactValidityWithDelay(I)V
     .locals 4
-    .param p1    # I
 
     const-string v0, "Mms/MmsSinglePageActivity"
 
@@ -1267,8 +1231,6 @@
 
 .method public static createVideoThumbnailForManualPlay(Landroid/content/Context;Landroid/net/Uri;)Landroid/graphics/Bitmap;
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
 
     const/4 v0, 0x0
 
@@ -1640,7 +1602,6 @@
 
 .method private dumpLogs(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "Mms/MmsSinglePageActivity"
 
@@ -1651,7 +1612,6 @@
 
 .method private enqueueMotionEvent(Landroid/view/MotionEvent;)V
     .locals 3
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v2, 0x0
 
@@ -2311,8 +2271,6 @@
 
 .method private formatDate(Landroid/content/Context;J)Ljava/lang/String;
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # J
 
     invoke-static {p1}, Landroid/text/format/DateFormat;->getDateFormat(Landroid/content/Context;)Ljava/text/DateFormat;
 
@@ -2343,7 +2301,6 @@
 
 .method private getBoxUriFromBoxId(I)Landroid/net/Uri;
     .locals 4
-    .param p1    # I
 
     const-string v1, "Mms/MmsSinglePageActivity"
 
@@ -2411,9 +2368,6 @@
 
 .method private getCachedMessageItem(Landroid/net/Uri;JLjava/lang/String;)Lcom/android/mms/ui/MessageItem;
     .locals 11
-    .param p1    # Landroid/net/Uri;
-    .param p2    # J
-    .param p4    # Ljava/lang/String;
 
     invoke-virtual {p0}, Lcom/android/mms/ui/MmsSinglePageActivity;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -2613,7 +2567,6 @@
 
 .method private getContentType(Lcom/android/mms/model/MediaModel;)Ljava/lang/String;
     .locals 3
-    .param p1    # Lcom/android/mms/model/MediaModel;
 
     const/4 v0, 0x0
 
@@ -2926,8 +2879,6 @@
 
 .method private getTypeIntent(Landroid/net/Uri;Ljava/lang/String;)Landroid/content/Intent;
     .locals 2
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Ljava/lang/String;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -2946,8 +2897,6 @@
 
 .method private handlerIfNoActivityFound(Landroid/content/ActivityNotFoundException;Landroid/content/Intent;)V
     .locals 3
-    .param p1    # Landroid/content/ActivityNotFoundException;
-    .param p2    # Landroid/content/Intent;
 
     sget-boolean v0, Lcom/android/mms/ui/MmsSinglePageActivity;->DEBUG_LOG:Z
 
@@ -2987,7 +2936,6 @@
 
 .method private hasTopText(Lcom/android/mms/model/SlideshowModel;)Z
     .locals 2
-    .param p1    # Lcom/android/mms/model/SlideshowModel;
 
     const/4 v0, 0x1
 
@@ -4336,7 +4284,6 @@
 
 .method private isMessageExist(J)Z
     .locals 2
-    .param p1    # J
 
     const/4 v0, 0x0
 
@@ -4369,7 +4316,6 @@
 
 .method private isMessageExist(Landroid/net/Uri;)Z
     .locals 5
-    .param p1    # Landroid/net/Uri;
 
     const/4 v1, 0x0
 
@@ -4491,9 +4437,6 @@
 
 .method private static loadPart(Landroid/content/Context;JLandroid/net/Uri;)Lcom/google/android/mms/pdu/PduPart;
     .locals 12
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
-    .param p3    # Landroid/net/Uri;
 
     const/4 v8, 0x0
 
@@ -4664,7 +4607,6 @@
 
 .method private moveSmsView(Z)V
     .locals 19
-    .param p1    # Z
 
     const/4 v12, 0x0
 
@@ -5267,7 +5209,6 @@
 
 .method private navigateMsgFolderViewMode(Z)V
     .locals 21
-    .param p1    # Z
 
     const/4 v14, 0x0
 
@@ -5703,9 +5644,6 @@
 
 .method private preCalculateImageBoudns(Landroid/widget/ImageView;II)V
     .locals 4
-    .param p1    # Landroid/widget/ImageView;
-    .param p2    # I
-    .param p3    # I
 
     new-instance v1, Landroid/graphics/Point;
 
@@ -5808,7 +5746,6 @@
 
 .method private presentModel(Lcom/android/mms/model/SlideshowModel;)V
     .locals 12
-    .param p1    # Lcom/android/mms/model/SlideshowModel;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -6057,8 +5994,6 @@
 
 .method private presentSlide_inOnePage(Lcom/android/mms/model/SlideshowModel;I)V
     .locals 5
-    .param p1    # Lcom/android/mms/model/SlideshowModel;
-    .param p2    # I
 
     invoke-direct {p0}, Lcom/android/mms/ui/MmsSinglePageActivity;->clearArrayListsForSinglePage()V
 
@@ -6130,7 +6065,6 @@
 
 .method private saveAttachFile(Landroid/net/Uri;)V
     .locals 1
-    .param p1    # Landroid/net/Uri;
 
     const/4 v0, 0x1
 
@@ -6145,7 +6079,6 @@
 
 .method private saveAttachFile(Lcom/android/mms/model/MediaModel;)V
     .locals 2
-    .param p1    # Lcom/android/mms/model/MediaModel;
 
     invoke-virtual {p1}, Lcom/android/mms/model/MediaModel;->isDrmProtected()Z
 
@@ -6176,7 +6109,6 @@
 
 .method public static setAttachment(Lcom/android/mms/model/AttachmentModel;)V
     .locals 0
-    .param p0    # Lcom/android/mms/model/AttachmentModel;
 
     sput-object p0, Lcom/android/mms/ui/MmsSinglePageActivity;->staticAttachment:Lcom/android/mms/model/AttachmentModel;
 
@@ -6185,7 +6117,6 @@
 
 .method public static setAudioModel(Lcom/android/mms/model/AudioModel;)V
     .locals 2
-    .param p0    # Lcom/android/mms/model/AudioModel;
 
     sget-boolean v0, Lcom/android/mms/ui/MmsSinglePageActivity;->DEBUG_LOG:Z
 
@@ -6205,7 +6136,6 @@
 
 .method public static setClickUri(Landroid/net/Uri;)V
     .locals 3
-    .param p0    # Landroid/net/Uri;
 
     sget-boolean v0, Lcom/android/mms/ui/MmsSinglePageActivity;->DEBUG_LOG:Z
 
@@ -6241,7 +6171,6 @@
 
 .method public static setImageModel(Lcom/android/mms/model/ImageModel;)V
     .locals 0
-    .param p0    # Lcom/android/mms/model/ImageModel;
 
     sput-object p0, Lcom/android/mms/ui/MmsSinglePageActivity;->staticImageModel:Lcom/android/mms/model/ImageModel;
 
@@ -6250,7 +6179,6 @@
 
 .method public static setSlideIndex(I)V
     .locals 3
-    .param p0    # I
 
     sget-boolean v0, Lcom/android/mms/ui/MmsSinglePageActivity;->DEBUG_LOG:Z
 
@@ -6286,11 +6214,6 @@
 
 .method private setTextLink(Landroid/text/Spannable;Ljava/lang/String;Ljava/lang/String;II)V
     .locals 3
-    .param p1    # Landroid/text/Spannable;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
-    .param p5    # I
 
     iput-object p2, p0, Lcom/android/mms/ui/MmsSinglePageActivity;->mSelectedUrl:Ljava/lang/String;
 
@@ -6331,7 +6254,6 @@
 
 .method public static setVideoModel(Lcom/android/mms/model/VideoModel;)V
     .locals 2
-    .param p0    # Lcom/android/mms/model/VideoModel;
 
     sget-boolean v0, Lcom/android/mms/ui/MmsSinglePageActivity;->DEBUG_LOG:Z
 
@@ -6351,7 +6273,6 @@
 
 .method private startYellowPage(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const-string v1, "Mms/MmsSinglePageActivity"
 
@@ -6388,11 +6309,6 @@
 
 .method private touchListener(IIIIJ)V
     .locals 8
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # J
 
     const/4 v7, 0x0
 
@@ -6688,7 +6604,6 @@
 
 .method private updateActionBarTitle(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Lcom/android/mms/ui/MmsSinglePageActivity;->getActionBar()Landroid/app/ActionBar;
 
@@ -6909,7 +6824,6 @@
 
 .method public addAttachmentOneView(Lcom/android/mms/model/AttachmentModel;)V
     .locals 19
-    .param p1    # Lcom/android/mms/model/AttachmentModel;
 
     sget-boolean v14, Lcom/android/mms/ui/MmsSinglePageActivity;->DEBUG_LOG:Z
 
@@ -7280,9 +7194,6 @@
 
 .method public addAudioInfo(Landroid/net/Uri;Ljava/lang/String;Ljava/util/Map;Lcom/android/mms/model/AudioModel;)V
     .locals 15
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Ljava/lang/String;
-    .param p4    # Lcom/android/mms/model/AudioModel;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -7771,7 +7682,6 @@
 
 .method public dispatchTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 10
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v9, 0x0
 
@@ -8141,8 +8051,6 @@
 
 .method public findAttachmentList(JZ)Ljava/util/ArrayList;
     .locals 2
-    .param p1    # J
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(JZ)",
@@ -8189,7 +8097,6 @@
 
 .method public getContactHeaderString(Lcom/android/mms/data/ContactList;)Ljava/lang/String;
     .locals 6
-    .param p1    # Lcom/android/mms/data/ContactList;
 
     const v5, 0x7f0c013b
 
@@ -8497,8 +8404,6 @@
 
 .method public declared-synchronized markAsRead(Ljava/lang/Runnable;Z)V
     .locals 13
-    .param p1    # Ljava/lang/Runnable;
-    .param p2    # Z
 
     const/4 v7, 0x1
 
@@ -9097,9 +9002,6 @@
 
 .method protected onActivityResult(IILandroid/content/Intent;)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const/16 v0, 0xa
 
@@ -9130,7 +9032,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 4
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-direct {p0}, Lcom/android/mms/ui/MmsSinglePageActivity;->findCurrentScrollPos()V
 
@@ -9220,7 +9121,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 11
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v10, 0x0
 
@@ -9648,8 +9548,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v1, 0x0
 
@@ -9840,8 +9738,6 @@
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x1
 
@@ -9939,7 +9835,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 6
-    .param p1    # Landroid/view/MenuItem;
 
     const/16 v5, 0x1d
 
@@ -10208,7 +10103,6 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)Z
     .locals 3
-    .param p1    # Landroid/view/Menu;
 
     const/4 v2, 0x0
 
@@ -10449,7 +10343,6 @@
 
 .method public onUpdate(Lcom/android/mms/data/Contact;)V
     .locals 2
-    .param p1    # Lcom/android/mms/data/Contact;
 
     iget-object v0, p0, Lcom/android/mms/ui/MmsSinglePageActivity;->mMsgItem:Lcom/android/mms/ui/MessageItem;
 
@@ -10520,8 +10413,6 @@
 
 .method protected presentAudioInfoOnly(Lcom/android/mms/model/AudioModel;Z)V
     .locals 3
-    .param p1    # Lcom/android/mms/model/AudioModel;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -10547,8 +10438,6 @@
 
 .method protected presentImage(Lcom/android/mms/model/ImageModel;I)V
     .locals 2
-    .param p1    # Lcom/android/mms/model/ImageModel;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -10585,8 +10474,6 @@
 
 .method protected presentText(Lcom/android/mms/model/TextModel;I)V
     .locals 6
-    .param p1    # Lcom/android/mms/model/TextModel;
-    .param p2    # I
 
     const/4 v3, 0x0
 
@@ -10625,8 +10512,6 @@
 
 .method protected presentVideo(Lcom/android/mms/model/VideoModel;I)V
     .locals 3
-    .param p1    # Lcom/android/mms/model/VideoModel;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -10677,9 +10562,6 @@
 
 .method public setImageWithFrame(Ljava/lang/String;Lcom/android/mms/model/ImageModel;I)V
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/mms/model/ImageModel;
-    .param p3    # I
 
     sget-boolean v7, Lcom/android/mms/ui/MmsSinglePageActivity;->DEBUG_LOG:Z
 
@@ -10878,7 +10760,6 @@
 
 .method public setLockIcon(Z)V
     .locals 3
-    .param p1    # Z
 
     sget-boolean v0, Lcom/android/mms/ui/MmsSinglePageActivity;->DEBUG_LOG:Z
 
@@ -10930,7 +10811,6 @@
 
 .method public setScrollPosition(I)V
     .locals 7
-    .param p1    # I
 
     const/4 v6, 0x0
 
@@ -11261,10 +11141,6 @@
 
 .method public setTextWithTextView(Ljava/lang/String;Ljava/lang/String;ZI)V
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
-    .param p4    # I
 
     const/16 v7, 0xe
 
@@ -11602,10 +11478,6 @@
 
 .method public setVideoThumbnail(Ljava/lang/String;Landroid/graphics/Bitmap;ILcom/android/mms/model/VideoModel;)V
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/graphics/Bitmap;
-    .param p3    # I
-    .param p4    # Lcom/android/mms/model/VideoModel;
 
     const/4 v9, 0x0
 
@@ -11997,7 +11869,6 @@
 
 .method public viewMessageDetail(Lcom/android/mms/ui/MessageItem;)Ljava/lang/String;
     .locals 12
-    .param p1    # Lcom/android/mms/ui/MessageItem;
 
     const/4 v5, 0x0
 

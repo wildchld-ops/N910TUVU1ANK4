@@ -33,9 +33,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/settings/accessibility/ToggleMagnifierPreferenceFragment;Landroid/content/Context;IZ)V
     .locals 1
-    .param p2    # Landroid/content/Context;
-    .param p3    # I
-    .param p4    # Z
 
     iput-object p1, p0, Lcom/android/settings/accessibility/ToggleMagnifierPreferenceFragment$MagnifierImageView;->this$0:Lcom/android/settings/accessibility/ToggleMagnifierPreferenceFragment;
 
@@ -84,7 +81,6 @@
 # virtual methods
 .method public ImageChange(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/settings/accessibility/ToggleMagnifierPreferenceFragment$MagnifierImageView;->img:Landroid/widget/ImageView;
 
@@ -150,7 +146,6 @@
 
 .method protected onBindView(Landroid/view/View;)V
     .locals 3
-    .param p1    # Landroid/view/View;
 
     invoke-super {p0, p1}, Landroid/preference/Preference;->onBindView(Landroid/view/View;)V
 
@@ -199,7 +194,6 @@
 
 .method public setEnabled(Z)V
     .locals 3
-    .param p1    # Z
 
     const-string v0, "ToggleMagnifierPreferenceFragment"
 
@@ -260,7 +254,6 @@
 
 .method public setHoverZoomImageLevel(I)V
     .locals 1
-    .param p1    # I
 
     iput p1, p0, Lcom/android/settings/accessibility/ToggleMagnifierPreferenceFragment$MagnifierImageView;->currentMag:I
 

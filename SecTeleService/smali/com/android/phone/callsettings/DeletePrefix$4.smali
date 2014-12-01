@@ -45,7 +45,7 @@
 
     iget-object v1, p0, Lcom/android/phone/callsettings/DeletePrefix$4;->this$0:Lcom/android/phone/callsettings/DeletePrefix;
 
-    invoke-virtual {v1}, Landroid/app/Fragment;->isAdded()Z
+    invoke-virtual {v1}, Lcom/android/phone/callsettings/DeletePrefix;->isAdded()Z
 
     move-result v1
 
@@ -84,7 +84,7 @@
 
     iget-object v4, p0, Lcom/android/phone/callsettings/DeletePrefix$4;->this$0:Lcom/android/phone/callsettings/DeletePrefix;
 
-    invoke-virtual {v4}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v4}, Lcom/android/phone/callsettings/DeletePrefix;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
 

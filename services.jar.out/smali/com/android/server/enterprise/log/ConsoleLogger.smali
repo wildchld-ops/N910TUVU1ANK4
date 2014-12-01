@@ -10,7 +10,6 @@
 # direct methods
 .method constructor <init>(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/log/Logger;-><init>(Ljava/lang/String;)V
 
@@ -21,7 +20,6 @@
 # virtual methods
 .method public isLoggable(I)Z
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -44,9 +42,6 @@
 
 .method public log(ILjava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lcom/android/server/enterprise/log/ConsoleLogger;->isLoggable(I)Z
 

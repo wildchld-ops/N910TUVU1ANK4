@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Landroid/view/ViewRootImpl;Landroid/view/ViewRootImpl$InputStage;)V
     .locals 0
-    .param p2    # Landroid/view/ViewRootImpl$InputStage;
 
     iput-object p1, p0, Landroid/view/ViewRootImpl$EarlyPostImeInputStage;->this$0:Landroid/view/ViewRootImpl;
 
@@ -32,7 +31,6 @@
 
 .method private processKeyEvent(Landroid/view/ViewRootImpl$QueuedInputEvent;)I
     .locals 2
-    .param p1    # Landroid/view/ViewRootImpl$QueuedInputEvent;
 
     iget-object v0, p1, Landroid/view/ViewRootImpl$QueuedInputEvent;->mEvent:Landroid/view/InputEvent;
 
@@ -66,7 +64,6 @@
 
 .method private processPointerEvent(Landroid/view/ViewRootImpl$QueuedInputEvent;)I
     .locals 4
-    .param p1    # Landroid/view/ViewRootImpl$QueuedInputEvent;
 
     iget-object v1, p1, Landroid/view/ViewRootImpl$QueuedInputEvent;->mEvent:Landroid/view/InputEvent;
 
@@ -156,7 +153,6 @@
 # virtual methods
 .method protected onProcess(Landroid/view/ViewRootImpl$QueuedInputEvent;)I
     .locals 2
-    .param p1    # Landroid/view/ViewRootImpl$QueuedInputEvent;
 
     iget-object v1, p1, Landroid/view/ViewRootImpl$QueuedInputEvent;->mEvent:Landroid/view/InputEvent;
 

@@ -19,7 +19,6 @@
 # direct methods
 .method public constructor <init>(Ljava/io/InputStream;)V
     .locals 1
-    .param p1    # Ljava/io/InputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -35,8 +34,6 @@
 
 .method public constructor <init>(Ljava/io/InputStream;I)V
     .locals 1
-    .param p1    # Ljava/io/InputStream;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -58,7 +55,6 @@
 
 .method private consumeBuf(I)V
     .locals 4
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -146,7 +142,6 @@
 
 .method private invalidLong(I)Ljava/lang/NumberFormatException;
     .locals 6
-    .param p1    # I
 
     new-instance v0, Ljava/lang/NumberFormatException;
 
@@ -251,7 +246,6 @@
 
 .method private parseAndConsumeLong(I)J
     .locals 11
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -353,7 +347,6 @@
 
 .method private parseAndConsumeString(I)Ljava/lang/String;
     .locals 4
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -548,7 +541,6 @@
 
 .method public nextOptionalLong(J)J
     .locals 2
-    .param p1    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

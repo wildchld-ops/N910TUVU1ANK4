@@ -42,8 +42,6 @@
 
 .method synthetic constructor <init>(Lcom/android/settings/homesync/RestoreFragment;Lcom/android/settings/homesync/RestoreFragment$1;)V
     .locals 0
-    .param p1    # Lcom/android/settings/homesync/RestoreFragment;
-    .param p2    # Lcom/android/settings/homesync/RestoreFragment$1;
 
     invoke-direct {p0, p1}, Lcom/android/settings/homesync/RestoreFragment$CalculateDirectorySizeTask;-><init>(Lcom/android/settings/homesync/RestoreFragment;)V
 
@@ -54,7 +52,6 @@
 # virtual methods
 .method protected varargs doInBackground([Ljava/lang/String;)Ljava/lang/Long;
     .locals 6
-    .param p1    # [Ljava/lang/String;
 
     iget-object v2, p0, Lcom/android/settings/homesync/RestoreFragment$CalculateDirectorySizeTask;->this$0:Lcom/android/settings/homesync/RestoreFragment;
 
@@ -159,7 +156,6 @@
 
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [Ljava/lang/String;
 
@@ -172,7 +168,6 @@
 
 .method protected onPostExecute(Ljava/lang/Long;)V
     .locals 5
-    .param p1    # Ljava/lang/Long;
 
     new-instance v0, Lcom/android/settings/homesync/RestoreFragment$ListItemAdapter;
 
@@ -219,7 +214,6 @@
 
 .method protected bridge synthetic onPostExecute(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Ljava/lang/Long;
 

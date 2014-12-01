@@ -139,7 +139,6 @@
 
 .method public onBluetoothServiceUp(Landroid/bluetooth/IBluetooth;)V
     .locals 6
-    .param p1    # Landroid/bluetooth/IBluetooth;
 
     iget-object v3, p0, Landroid/bluetooth/BluetoothAdapter$2;->this$0:Landroid/bluetooth/BluetoothAdapter;
 

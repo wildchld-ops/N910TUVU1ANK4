@@ -27,7 +27,6 @@
 
 .method synthetic constructor <init>(Landroid/graphics/ImageFilter$1;)V
     .locals 0
-    .param p1    # Landroid/graphics/ImageFilter$1;
 
     invoke-direct {p0}, Landroid/graphics/ImageFilter$DirectionalBlurFilter;-><init>()V
 
@@ -38,7 +37,6 @@
 # virtual methods
 .method public setAngle(F)V
     .locals 1
-    .param p1    # F
 
     const/4 v0, 0x1
 
@@ -49,7 +47,6 @@
 
 .method public setDistance(F)V
     .locals 1
-    .param p1    # F
 
     const/4 v0, 0x0
 

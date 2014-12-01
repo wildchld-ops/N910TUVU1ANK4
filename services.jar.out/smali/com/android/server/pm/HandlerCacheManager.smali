@@ -152,7 +152,6 @@
 
 .method public static declared-synchronized clearHandlersForPersona(I)V
     .locals 6
-    .param p0    # I
 
     const-class v3, Lcom/android/server/pm/HandlerCacheManager;
 
@@ -241,7 +240,6 @@
 
 .method public static declared-synchronized getHandler(Ljava/lang/String;)Ljava/lang/Object;
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     const-class v2, Lcom/android/server/pm/HandlerCacheManager;
 
@@ -421,8 +419,6 @@
 
 .method public static declared-synchronized getHandlerForPersona(ILjava/lang/String;)Ljava/lang/Object;
     .locals 6
-    .param p0    # I
-    .param p1    # Ljava/lang/String;
 
     const-class v3, Lcom/android/server/pm/HandlerCacheManager;
 
@@ -683,10 +679,6 @@
 
 .method public static declared-synchronized registerHandler(ILjava/lang/String;Ljava/lang/Object;Landroid/content/pm/IPersonaObserver;)V
     .locals 7
-    .param p0    # I
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Object;
-    .param p3    # Landroid/content/pm/IPersonaObserver;
 
     const-class v4, Lcom/android/server/pm/HandlerCacheManager;
 
@@ -932,8 +924,6 @@
 
 .method public static declared-synchronized registerObserver(ILandroid/content/pm/IPersonaObserver;)V
     .locals 7
-    .param p0    # I
-    .param p1    # Landroid/content/pm/IPersonaObserver;
 
     const-class v4, Lcom/android/server/pm/HandlerCacheManager;
 
@@ -1042,7 +1032,6 @@
 
 .method public static declared-synchronized setCurrentUser(I)V
     .locals 3
-    .param p0    # I
 
     const-class v1, Lcom/android/server/pm/HandlerCacheManager;
 
@@ -1081,8 +1070,6 @@
 
 .method public static declared-synchronized unregisterObserver(ILandroid/content/pm/IPersonaObserver;)V
     .locals 7
-    .param p0    # I
-    .param p1    # Landroid/content/pm/IPersonaObserver;
 
     const-class v4, Lcom/android/server/pm/HandlerCacheManager;
 
@@ -1181,7 +1168,6 @@
 # virtual methods
 .method public onFirstBoot(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/pm/HandlerCacheManager;->handler:Landroid/os/Handler;
 
@@ -1196,7 +1182,6 @@
 
 .method public onInit(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/pm/HandlerCacheManager;->handler:Landroid/os/Handler;
 
@@ -1211,8 +1196,6 @@
 
 .method public onKeyGuardStateChanged(IZ)V
     .locals 2
-    .param p1    # I
-    .param p2    # Z
 
     const-string v0, "HandlerCacheManager"
 
@@ -1233,7 +1216,6 @@
 
 .method public onPersonaSwitch(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/pm/HandlerCacheManager;->handler:Landroid/os/Handler;
 
@@ -1248,7 +1230,6 @@
 
 .method public onSessionExpired(I)V
     .locals 2
-    .param p1    # I
 
     const-string v0, "HandlerCacheManager"
 
@@ -1269,9 +1250,6 @@
 
 .method public onStateChange(III)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     iget-object v0, p0, Lcom/android/server/pm/HandlerCacheManager;->handler:Landroid/os/Handler;
 

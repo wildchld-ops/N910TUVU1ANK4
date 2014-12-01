@@ -36,7 +36,6 @@
 
 .method private static isScreenSaverActivatedOnDock(Landroid/content/Context;)Z
     .locals 6
-    .param p0    # Landroid/content/Context;
 
     const/4 v1, 0x1
 
@@ -87,7 +86,6 @@
 
 .method private static isScreenSaverEnabled(Landroid/content/Context;)Z
     .locals 6
-    .param p0    # Landroid/content/Context;
 
     const/4 v1, 0x1
 
@@ -138,8 +136,6 @@
 
 .method public static shouldStartDockApp(Landroid/content/Context;Landroid/content/Intent;)Z
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/content/Intent;
 
     invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -172,8 +168,6 @@
 
 .method private static startDream(Landroid/content/Context;Z)V
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
 
     :try_start_0
     const-string v3, "dreams"
@@ -248,7 +242,6 @@
 
 .method public static startDreamByUserRequest(Landroid/content/Context;)V
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -259,7 +252,6 @@
 
 .method public static startDreamWhenDockedIfAppropriate(Landroid/content/Context;)V
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Landroid/service/dreams/Sandman;->isScreenSaverEnabled(Landroid/content/Context;)Z
 

@@ -30,8 +30,6 @@
 
 .method public constructor <init>(Landroid/content/Context;I)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     invoke-direct {p0, p1}, Landroid/content/ContextWrapper;-><init>(Landroid/content/Context;)V
 
@@ -95,7 +93,6 @@
 # virtual methods
 .method public applyOverrideConfiguration(Landroid/content/res/Configuration;)V
     .locals 2
-    .param p1    # Landroid/content/res/Configuration;
 
     iget-object v0, p0, Landroid/view/ContextThemeWrapper;->mResources:Landroid/content/res/Resources;
 
@@ -134,7 +131,6 @@
 
 .method protected attachBaseContext(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     invoke-super {p0, p1}, Landroid/content/ContextWrapper;->attachBaseContext(Landroid/content/Context;)V
 
@@ -190,7 +186,6 @@
 
 .method public getSystemService(Ljava/lang/String;)Ljava/lang/Object;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "layout_inflater"
 
@@ -276,9 +271,6 @@
 
 .method protected onApplyThemeResource(Landroid/content/res/Resources$Theme;IZ)V
     .locals 1
-    .param p1    # Landroid/content/res/Resources$Theme;
-    .param p2    # I
-    .param p3    # Z
 
     const/4 v0, 0x1
 
@@ -289,7 +281,6 @@
 
 .method public setTheme(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/view/ContextThemeWrapper;->mThemeResource:I
 

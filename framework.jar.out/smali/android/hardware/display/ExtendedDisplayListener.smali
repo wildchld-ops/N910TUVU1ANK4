@@ -20,7 +20,6 @@
 # virtual methods
 .method public onBridgeStatusChanged(I)V
     .locals 2
-    .param p1    # I
 
     const-string v0, "ExtendedDisplayListener"
 
@@ -33,7 +32,6 @@
 
 .method public onConnectionStatusChanged(I)V
     .locals 2
-    .param p1    # I
 
     const-string v0, "ExtendedDisplayListener"
 
@@ -46,7 +44,6 @@
 
 .method public onQoSLevelChanged(I)V
     .locals 2
-    .param p1    # I
 
     const-string v0, "ExtendedDisplayListener"
 

@@ -68,11 +68,6 @@
 
 .method static go(Lcom/android/internal/os/TransferPipe$Caller;Landroid/os/IInterface;Ljava/io/FileDescriptor;Ljava/lang/String;[Ljava/lang/String;)V
     .locals 7
-    .param p0    # Lcom/android/internal/os/TransferPipe$Caller;
-    .param p1    # Landroid/os/IInterface;
-    .param p2    # Ljava/io/FileDescriptor;
-    .param p3    # Ljava/lang/String;
-    .param p4    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -99,12 +94,6 @@
 
 .method static go(Lcom/android/internal/os/TransferPipe$Caller;Landroid/os/IInterface;Ljava/io/FileDescriptor;Ljava/lang/String;[Ljava/lang/String;J)V
     .locals 2
-    .param p0    # Lcom/android/internal/os/TransferPipe$Caller;
-    .param p1    # Landroid/os/IInterface;
-    .param p2    # Ljava/io/FileDescriptor;
-    .param p3    # Ljava/lang/String;
-    .param p4    # [Ljava/lang/String;
-    .param p5    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -167,9 +156,6 @@
 
 .method static goDump(Landroid/os/IBinder;Ljava/io/FileDescriptor;[Ljava/lang/String;)V
     .locals 2
-    .param p0    # Landroid/os/IBinder;
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -186,10 +172,6 @@
 
 .method static goDump(Landroid/os/IBinder;Ljava/io/FileDescriptor;[Ljava/lang/String;J)V
     .locals 2
-    .param p0    # Landroid/os/IBinder;
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -250,7 +232,6 @@
 # virtual methods
 .method closeFd(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/internal/os/TransferPipe;->mFds:[Landroid/os/ParcelFileDescriptor;
 
@@ -309,7 +290,6 @@
 
 .method public go(Ljava/io/FileDescriptor;)V
     .locals 2
-    .param p1    # Ljava/io/FileDescriptor;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -325,8 +305,6 @@
 
 .method public go(Ljava/io/FileDescriptor;J)V
     .locals 6
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -647,7 +625,6 @@
 
 .method public setBufferPrefix(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/internal/os/TransferPipe;->mBufferPrefix:Ljava/lang/String;
 

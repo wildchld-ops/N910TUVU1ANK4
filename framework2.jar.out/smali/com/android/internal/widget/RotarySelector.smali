@@ -126,7 +126,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -137,8 +136,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v4, 0x0
 
@@ -333,7 +330,6 @@
 
 .method private dispatchTriggerEvent(I)V
     .locals 2
-    .param p1    # I
 
     const-wide/16 v0, 0x14
 
@@ -353,10 +349,6 @@
 
 .method private drawCentered(Landroid/graphics/Bitmap;Landroid/graphics/Canvas;II)V
     .locals 5
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # Landroid/graphics/Canvas;
-    .param p3    # I
-    .param p4    # I
 
     invoke-virtual {p1}, Landroid/graphics/Bitmap;->getWidth()I
 
@@ -387,7 +379,6 @@
 
 .method private getBitmapFor(I)Landroid/graphics/Bitmap;
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
@@ -406,10 +397,6 @@
 
 .method private getYOnArc(IIII)I
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     sub-int v4, p3, p2
 
@@ -462,7 +449,6 @@
 
 .method private log(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "RotarySelector"
 
@@ -491,7 +477,6 @@
 
 .method private setGrabbedState(I)V
     .locals 2
-    .param p1    # I
 
     iget v0, p0, Lcom/android/internal/widget/RotarySelector;->mGrabbedState:I
 
@@ -515,9 +500,6 @@
 
 .method private startAnimation(III)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v2, 0x0
 
@@ -550,9 +532,6 @@
 
 .method private startAnimationWithVelocity(III)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v0, 0x1
 
@@ -720,7 +699,6 @@
 
 .method private declared-synchronized vibrate(J)V
     .locals 5
-    .param p1    # J
 
     const/4 v0, 0x1
 
@@ -795,7 +773,6 @@
 # virtual methods
 .method protected onDraw(Landroid/graphics/Canvas;)V
     .locals 21
-    .param p1    # Landroid/graphics/Canvas;
 
     invoke-super/range {p0 .. p1}, Landroid/view/View;->onDraw(Landroid/graphics/Canvas;)V
 
@@ -1732,8 +1709,6 @@
 
 .method protected onMeasure(II)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0}, Lcom/android/internal/widget/RotarySelector;->isHoriz()Z
 
@@ -1792,10 +1767,6 @@
 
 .method protected onSizeChanged(IIII)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/4 v5, 0x0
 
@@ -1896,7 +1867,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 14
-    .param p1    # Landroid/view/MotionEvent;
 
     const/16 v13, 0x8
 
@@ -2335,7 +2305,6 @@
 
 .method public setLeftHandleResource(I)V
     .locals 1
-    .param p1    # I
 
     if-eqz p1, :cond_0
 
@@ -2353,7 +2322,6 @@
 
 .method public setOnDialTriggerListener(Lcom/android/internal/widget/RotarySelector$OnDialTriggerListener;)V
     .locals 0
-    .param p1    # Lcom/android/internal/widget/RotarySelector$OnDialTriggerListener;
 
     iput-object p1, p0, Lcom/android/internal/widget/RotarySelector;->mOnDialTriggerListener:Lcom/android/internal/widget/RotarySelector$OnDialTriggerListener;
 
@@ -2362,7 +2330,6 @@
 
 .method public setRightHandleResource(I)V
     .locals 1
-    .param p1    # I
 
     if-eqz p1, :cond_0
 

@@ -98,7 +98,6 @@
 
 .method private enableSwitchButton2(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v1, p0, Lcom/android/incallui/InCallButtonVideoFragment;->mSwitchCameraButton2:Landroid/view/View;
 
@@ -206,7 +205,6 @@
 
 .method private handleModifyOptionClick(I)V
     .locals 4
-    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -311,7 +309,6 @@
 
 .method private isAudio(I)Z
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/incallui/BaseFragment;->getPresenter()Lcom/android/incallui/Presenter;
 
@@ -505,7 +502,6 @@
 
 .method private showOutgoingButtons(Z)V
     .locals 3
-    .param p1    # Z
 
     const/16 v2, 0x8
 
@@ -671,7 +667,6 @@
 
 .method private showPrimaryCallBanner(Z)V
     .locals 2
-    .param p1    # Z
 
     if-eqz p1, :cond_1
 
@@ -721,8 +716,6 @@
 
 .method private startAnimation(Landroid/view/View;Z)V
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # Z
 
     if-nez p1, :cond_0
 
@@ -865,7 +858,6 @@
 
 .method private updateButtonState(I)V
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x5
 
@@ -893,7 +885,6 @@
 # virtual methods
 .method public enableGroupCall(Z)V
     .locals 0
-    .param p1    # Z
 
     invoke-virtual {p0, p1}, Lcom/android/incallui/InCallButtonVideoFragment;->showGroupCall(Z)V
 
@@ -902,7 +893,6 @@
 
 .method public enableSwitchButton(Z)V
     .locals 2
-    .param p1    # Z
 
     const/4 v0, 0x1
 
@@ -1030,7 +1020,6 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/incallui/CallButtonFragment;->onActivityCreated(Landroid/os/Bundle;)V
 
@@ -1189,21 +1178,18 @@
 
 .method public onCaptureAndRecordEvent(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onCastingEvent(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onClick(Landroid/view/View;)V
     .locals 6
-    .param p1    # Landroid/view/View;
 
     const/4 v5, 0x1
 
@@ -1593,9 +1579,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 3
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const-string v1, "onCreateView..."
 
@@ -1672,7 +1655,6 @@
 
 .method protected onFinishInflate(Landroid/view/View;)V
     .locals 9
-    .param p1    # Landroid/view/View;
 
     const v8, 0x7f0e0151
 
@@ -2251,7 +2233,6 @@
 
 .method public onMenuItemClick(Landroid/view/MenuItem;)Z
     .locals 2
-    .param p1    # Landroid/view/MenuItem;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -2386,15 +2367,12 @@
 
 .method public onVideoCallEvent(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onVideoCallEvent(ILsiso/vt/VideoTelephonyData;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Lsiso/vt/VideoTelephonyData;
 
     return-void
 .end method
@@ -2429,7 +2407,6 @@
 
 .method public setAudio(I)V
     .locals 2
-    .param p1    # I
 
     invoke-super {p0, p1}, Lcom/android/incallui/CallButtonFragment;->setAudio(I)V
 
@@ -2471,7 +2448,6 @@
 
 .method public setCallState(I)V
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/incallui/InCallButtonVideoFragment;->updateButtonState(I)V
 
@@ -2528,7 +2504,6 @@
 
 .method public setEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-super {p0, p1}, Lcom/android/incallui/CallButtonFragment;->setEnabled(Z)V
 
@@ -2582,7 +2557,6 @@
 
 .method public setHideShowButton(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/incallui/InCallButtonVideoFragment;->mHideShowToggleButton:Landroid/widget/ToggleButton;
 
@@ -2640,7 +2614,6 @@
 
 .method public setVisibleByDialpad(Z)V
     .locals 3
-    .param p1    # Z
 
     const/4 v1, 0x1
 
@@ -2694,7 +2667,6 @@
 
 .method public setupActionBarItems(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     invoke-super {p0, p1}, Lcom/android/incallui/CallButtonFragment;->setupActionBarItems(Landroid/view/View;)V
 
@@ -2712,7 +2684,6 @@
 
 .method public showCallBannerByMenu(Z)V
     .locals 0
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/incallui/InCallButtonVideoFragment;->showPrimaryCallBanner(Z)V
 
@@ -2721,7 +2692,6 @@
 
 .method public showCameraEffectPanel(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v1, p0, Lcom/android/incallui/InCallButtonVideoFragment;->mPreviewEffectContainer:Lcom/android/incallui/vt/PreviewEffectUI;
 
@@ -2787,7 +2757,6 @@
 
 .method public showDialPadButton(Z)V
     .locals 5
-    .param p1    # Z
 
     const/4 v3, 0x1
 
@@ -2834,14 +2803,12 @@
 
 .method public showEncryptCall(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method public showGroupCall(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/incallui/InCallButtonVideoFragment;->mSwitchVCButton:Landroid/widget/ImageButton;
 
@@ -2894,7 +2861,6 @@
 
 .method public showHideShowButton(Z)V
     .locals 2
-    .param p1    # Z
 
     const/4 v1, 0x1
 
@@ -2943,7 +2909,6 @@
 
 .method public showLeftDialPadButton(Z)V
     .locals 4
-    .param p1    # Z
 
     const/4 v2, 0x1
 
@@ -2980,7 +2945,6 @@
 
 .method public showModifyCall(Z)V
     .locals 2
-    .param p1    # Z
 
     const-string v0, "att_volte_ui"
 
@@ -3029,7 +2993,6 @@
 
 .method public showMute(Z)V
     .locals 3
-    .param p1    # Z
 
     const/4 v1, 0x0
 
@@ -3076,7 +3039,6 @@
 
 .method public showSwitchButton(Z)V
     .locals 3
-    .param p1    # Z
 
     const/16 v1, 0x8
 
@@ -3224,7 +3186,6 @@
 
 .method public updateConfUI(Z)V
     .locals 1
-    .param p1    # Z
 
     const/4 v0, 0x0
 
@@ -3235,7 +3196,6 @@
 
 .method public updateInCallButton(Z)V
     .locals 3
-    .param p1    # Z
 
     const/4 v2, 0x1
 
@@ -3825,7 +3785,6 @@
 
 .method public updatePreviewEffectLayout(Z)V
     .locals 4
-    .param p1    # Z
 
     iget-object v1, p0, Lcom/android/incallui/InCallButtonVideoFragment;->mPreviewEffectContainer:Lcom/android/incallui/vt/PreviewEffectUI;
 
@@ -4078,7 +4037,6 @@
 
 .method public updateSwitchButtonLayout(Z)V
     .locals 5
-    .param p1    # Z
 
     iget-object v2, p0, Lcom/android/incallui/InCallButtonVideoFragment;->mSwitchCallButtons:Landroid/view/View;
 

@@ -60,7 +60,6 @@
 
 .method synthetic constructor <init>(Landroid/net/wifi/WifiSsid$1;)V
     .locals 0
-    .param p1    # Landroid/net/wifi/WifiSsid$1;
 
     invoke-direct {p0}, Landroid/net/wifi/WifiSsid;-><init>()V
 
@@ -69,7 +68,6 @@
 
 .method private convertToBytes(Ljava/lang/String;)V
     .locals 9
-    .param p1    # Ljava/lang/String;
 
     const/16 v8, 0x37
 
@@ -332,7 +330,6 @@
 
 .method public static createFromAsciiEncoded(Ljava/lang/String;)Landroid/net/wifi/WifiSsid;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     new-instance v0, Landroid/net/wifi/WifiSsid;
 
@@ -345,7 +342,6 @@
 
 .method public static createFromHex(Ljava/lang/String;)Landroid/net/wifi/WifiSsid;
     .locals 7
-    .param p0    # Ljava/lang/String;
 
     new-instance v0, Landroid/net/wifi/WifiSsid;
 
@@ -428,7 +424,6 @@
 
 .method private isArrayAllZeroes([B)Z
     .locals 2
-    .param p1    # [B
 
     const/4 v0, 0x0
 
@@ -646,8 +641,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v0, p0, Landroid/net/wifi/WifiSsid;->octets:Ljava/io/ByteArrayOutputStream;
 

@@ -33,9 +33,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/mms/dom/smil/SmilPlayer;DLorg/w3c/dom/smil/ElementTime;I)V
     .locals 0
-    .param p2    # D
-    .param p4    # Lorg/w3c/dom/smil/ElementTime;
-    .param p5    # I
 
     iput-object p1, p0, Lcom/android/mms/dom/smil/SmilPlayer$TimelineEntry;->this$0:Lcom/android/mms/dom/smil/SmilPlayer;
 
@@ -52,7 +49,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/dom/smil/SmilPlayer$TimelineEntry;)D
     .locals 2
-    .param p0    # Lcom/android/mms/dom/smil/SmilPlayer$TimelineEntry;
 
     iget-wide v0, p0, Lcom/android/mms/dom/smil/SmilPlayer$TimelineEntry;->mOffsetTime:D
 

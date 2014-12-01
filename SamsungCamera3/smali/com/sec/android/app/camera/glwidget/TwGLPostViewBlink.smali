@@ -24,11 +24,6 @@
 # direct methods
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;FFFF)V
     .locals 16
-    .param p1    # Lcom/sec/android/app/camera/Camera;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
 
     invoke-virtual/range {p1 .. p1}, Lcom/sec/android/app/camera/Camera;->getGLContext()Lcom/sec/android/glview/TwGLContext;
 
@@ -609,12 +604,6 @@
 
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;FFFFI)V
     .locals 15
-    .param p1    # Lcom/sec/android/app/camera/Camera;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # I
 
     invoke-virtual/range {p1 .. p1}, Lcom/sec/android/app/camera/Camera;->getGLContext()Lcom/sec/android/glview/TwGLContext;
 
@@ -1025,7 +1014,6 @@
 
 .method static synthetic access$000(Lcom/sec/android/app/camera/glwidget/TwGLPostViewBlink;)Lcom/sec/android/glview/TwGLAniViewGroup$OnProgressListener;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLPostViewBlink;
 
     iget-object v0, p0, Lcom/sec/android/glview/TwGLAniViewGroup;->mOnProgressListener:Lcom/sec/android/glview/TwGLAniViewGroup$OnProgressListener;
 
@@ -1034,7 +1022,6 @@
 
 .method static synthetic access$100(Lcom/sec/android/app/camera/glwidget/TwGLPostViewBlink;)Lcom/sec/android/glview/TwGLAniViewGroup$OnProgressListener;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLPostViewBlink;
 
     iget-object v0, p0, Lcom/sec/android/glview/TwGLAniViewGroup;->mOnProgressListener:Lcom/sec/android/glview/TwGLAniViewGroup$OnProgressListener;
 
@@ -1043,7 +1030,6 @@
 
 .method static synthetic access$1000(Lcom/sec/android/app/camera/glwidget/TwGLPostViewBlink;)Lcom/sec/android/glview/TwGLAniViewGroup$OnProgressListener;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLPostViewBlink;
 
     iget-object v0, p0, Lcom/sec/android/glview/TwGLAniViewGroup;->mOnProgressListener:Lcom/sec/android/glview/TwGLAniViewGroup$OnProgressListener;
 
@@ -1052,8 +1038,6 @@
 
 .method static synthetic access$1100(Lcom/sec/android/app/camera/glwidget/TwGLPostViewBlink;I)V
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLPostViewBlink;
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/sec/android/glview/TwGLAniViewGroup;->playAnimation(I)V
 
@@ -1062,8 +1046,6 @@
 
 .method static synthetic access$200(Lcom/sec/android/app/camera/glwidget/TwGLPostViewBlink;I)V
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLPostViewBlink;
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/sec/android/glview/TwGLAniViewGroup;->playAnimation(I)V
 
@@ -1072,7 +1054,6 @@
 
 .method static synthetic access$300(Lcom/sec/android/app/camera/glwidget/TwGLPostViewBlink;)Lcom/sec/android/glview/TwGLAniViewGroup$OnProgressListener;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLPostViewBlink;
 
     iget-object v0, p0, Lcom/sec/android/glview/TwGLAniViewGroup;->mOnProgressListener:Lcom/sec/android/glview/TwGLAniViewGroup$OnProgressListener;
 
@@ -1081,7 +1062,6 @@
 
 .method static synthetic access$400(Lcom/sec/android/app/camera/glwidget/TwGLPostViewBlink;)Lcom/sec/android/glview/TwGLAniViewGroup$OnProgressListener;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLPostViewBlink;
 
     iget-object v0, p0, Lcom/sec/android/glview/TwGLAniViewGroup;->mOnProgressListener:Lcom/sec/android/glview/TwGLAniViewGroup$OnProgressListener;
 
@@ -1090,8 +1070,6 @@
 
 .method static synthetic access$500(Lcom/sec/android/app/camera/glwidget/TwGLPostViewBlink;I)V
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLPostViewBlink;
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/sec/android/glview/TwGLAniViewGroup;->playAnimation(I)V
 
@@ -1100,7 +1078,6 @@
 
 .method static synthetic access$600(Lcom/sec/android/app/camera/glwidget/TwGLPostViewBlink;)Lcom/sec/android/glview/TwGLAniViewGroup$OnProgressListener;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLPostViewBlink;
 
     iget-object v0, p0, Lcom/sec/android/glview/TwGLAniViewGroup;->mOnProgressListener:Lcom/sec/android/glview/TwGLAniViewGroup$OnProgressListener;
 
@@ -1109,7 +1086,6 @@
 
 .method static synthetic access$700(Lcom/sec/android/app/camera/glwidget/TwGLPostViewBlink;)Lcom/sec/android/glview/TwGLAniViewGroup$OnProgressListener;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLPostViewBlink;
 
     iget-object v0, p0, Lcom/sec/android/glview/TwGLAniViewGroup;->mOnProgressListener:Lcom/sec/android/glview/TwGLAniViewGroup$OnProgressListener;
 
@@ -1118,8 +1094,6 @@
 
 .method static synthetic access$800(Lcom/sec/android/app/camera/glwidget/TwGLPostViewBlink;I)V
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLPostViewBlink;
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/sec/android/glview/TwGLAniViewGroup;->playAnimation(I)V
 
@@ -1128,7 +1102,6 @@
 
 .method static synthetic access$900(Lcom/sec/android/app/camera/glwidget/TwGLPostViewBlink;)Lcom/sec/android/glview/TwGLAniViewGroup$OnProgressListener;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLPostViewBlink;
 
     iget-object v0, p0, Lcom/sec/android/glview/TwGLAniViewGroup;->mOnProgressListener:Lcom/sec/android/glview/TwGLAniViewGroup$OnProgressListener;
 
@@ -1139,7 +1112,6 @@
 # virtual methods
 .method protected setAnimationStep(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v2, 0x2
 

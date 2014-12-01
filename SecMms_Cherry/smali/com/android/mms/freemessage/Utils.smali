@@ -18,7 +18,6 @@
 
 .method public static getFileSize(Ljava/lang/String;)J
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -60,8 +59,6 @@
 
 .method public static getPathFromUri(Landroid/content/ContentResolver;Landroid/net/Uri;)Ljava/lang/String;
     .locals 14
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # Landroid/net/Uri;
 
     const/4 v13, 0x0
 
@@ -211,8 +208,6 @@
 
 .method private static getPathOfVCard(Landroid/content/ContentResolver;Landroid/net/Uri;)Ljava/lang/String;
     .locals 12
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # Landroid/net/Uri;
 
     const/4 v4, 0x0
 
@@ -639,7 +634,6 @@
 
 .method public static getPathsFromUris(Landroid/content/Context;Ljava/util/ArrayList;)Ljava/util/ArrayList;
     .locals 6
-    .param p0    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -707,7 +701,6 @@
 
 .method public static getStoreDirectory(Ljava/lang/String;)Ljava/lang/String;
     .locals 13
-    .param p0    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -848,7 +841,6 @@
 
 .method private static isAudio(Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "audio"
 
@@ -861,7 +853,6 @@
 
 .method private static isImage(Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "image"
 
@@ -874,7 +865,6 @@
 
 .method private static isVideo(Ljava/lang/String;)Z
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     invoke-virtual {p0}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
 

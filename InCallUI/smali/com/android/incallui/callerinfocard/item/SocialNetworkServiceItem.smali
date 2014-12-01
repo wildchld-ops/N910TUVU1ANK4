@@ -10,10 +10,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/net/Uri;Landroid/database/Cursor;Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/net/Uri;
-    .param p3    # Landroid/database/Cursor;
-    .param p4    # Ljava/lang/Object;
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/incallui/callerinfocard/item/CallerInfoCardItem;-><init>(Landroid/content/Context;Landroid/net/Uri;Landroid/database/Cursor;Ljava/lang/Object;)V
 
@@ -143,10 +139,6 @@
 
 .method protected setItem(Landroid/content/Context;Landroid/net/Uri;Landroid/database/Cursor;Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/net/Uri;
-    .param p3    # Landroid/database/Cursor;
-    .param p4    # Ljava/lang/Object;
 
     iput-object p3, p0, Lcom/android/incallui/callerinfocard/item/SocialNetworkServiceItem;->mCursor:Landroid/database/Cursor;
 
@@ -169,8 +161,6 @@
 
 .method protected setOptionalBottomText1(Landroid/database/Cursor;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Landroid/database/Cursor;
-    .param p2    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -208,8 +198,6 @@
 
 .method protected setOptionalBottomText2(Landroid/database/Cursor;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Landroid/database/Cursor;
-    .param p2    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -247,9 +235,6 @@
 
 .method protected setOptionalIconText(Landroid/database/Cursor;ZLjava/lang/String;)V
     .locals 3
-    .param p1    # Landroid/database/Cursor;
-    .param p2    # Z
-    .param p3    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -314,8 +299,6 @@
 
 .method protected setPhotoUrls(Landroid/database/Cursor;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Landroid/database/Cursor;
-    .param p2    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -369,8 +352,6 @@
 
 .method protected setUpdateTime(Landroid/database/Cursor;Ljava/lang/String;)V
     .locals 9
-    .param p1    # Landroid/database/Cursor;
-    .param p2    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 

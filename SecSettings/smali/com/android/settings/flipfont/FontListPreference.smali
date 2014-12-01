@@ -169,7 +169,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -191,8 +190,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 9
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const v8, 0x7f090c52
 
@@ -370,7 +367,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/flipfont/FontListPreference;)Lcom/android/settings/flipfont/FontListAdapter;
     .locals 1
-    .param p0    # Lcom/android/settings/flipfont/FontListPreference;
 
     iget-object v0, p0, Lcom/android/settings/flipfont/FontListPreference;->mFontListAdapter:Lcom/android/settings/flipfont/FontListAdapter;
 
@@ -379,8 +375,6 @@
 
 .method static synthetic access$002(Lcom/android/settings/flipfont/FontListPreference;Lcom/android/settings/flipfont/FontListAdapter;)Lcom/android/settings/flipfont/FontListAdapter;
     .locals 0
-    .param p0    # Lcom/android/settings/flipfont/FontListPreference;
-    .param p1    # Lcom/android/settings/flipfont/FontListAdapter;
 
     iput-object p1, p0, Lcom/android/settings/flipfont/FontListPreference;->mFontListAdapter:Lcom/android/settings/flipfont/FontListAdapter;
 
@@ -389,8 +383,6 @@
 
 .method static synthetic access$102(Lcom/android/settings/flipfont/FontListPreference;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/flipfont/FontListPreference;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/flipfont/FontListPreference;->mBuyButtonClicked:Z
 
@@ -399,7 +391,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/flipfont/FontListPreference;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/settings/flipfont/FontListPreference;
 
     iget-object v0, p0, Lcom/android/settings/flipfont/FontListPreference;->context:Landroid/content/Context;
 
@@ -408,8 +399,6 @@
 
 .method static synthetic access$302(Lcom/android/settings/flipfont/FontListPreference;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/flipfont/FontListPreference;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/flipfont/FontListPreference;->mSelectDialogIsActive:Z
 
@@ -418,7 +407,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/flipfont/FontListPreference;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/settings/flipfont/FontListPreference;
 
     iget-object v0, p0, Lcom/android/settings/flipfont/FontListPreference;->mPackageName:Ljava/lang/String;
 
@@ -427,8 +415,6 @@
 
 .method static synthetic access$702(Lcom/android/settings/flipfont/FontListPreference;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/flipfont/FontListPreference;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/flipfont/FontListPreference;->mRebootDialogIsActive:Z
 
@@ -437,7 +423,6 @@
 
 .method static synthetic access$800(Lcom/android/settings/flipfont/FontListPreference;)Lcom/android/settings/FontMenu;
     .locals 1
-    .param p0    # Lcom/android/settings/flipfont/FontListPreference;
 
     iget-object v0, p0, Lcom/android/settings/flipfont/FontListPreference;->mFontMenu:Lcom/android/settings/FontMenu;
 
@@ -446,7 +431,6 @@
 
 .method static synthetic access$900(Lcom/android/settings/flipfont/FontListPreference;)Lcom/android/settings/DisplaySettings;
     .locals 1
-    .param p0    # Lcom/android/settings/flipfont/FontListPreference;
 
     iget-object v0, p0, Lcom/android/settings/flipfont/FontListPreference;->mDisplaySettings:Lcom/android/settings/DisplaySettings;
 
@@ -455,11 +439,6 @@
 
 .method private copyFileWithCR(Lcom/android/settings/flipfont/FontWriter;Ljava/io/File;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 7
-    .param p1    # Lcom/android/settings/flipfont/FontWriter;
-    .param p2    # Ljava/io/File;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -552,7 +531,6 @@
 
 .method private deleteWhiteSpace(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuffer;
 
@@ -596,7 +574,6 @@
 
 .method private getFontName(Ljava/lang/String;)Ljava/lang/String;
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const v4, 0x7f090c65
 
@@ -2528,6 +2505,8 @@
 
     move-result v0
 
+    const/4 v0, 0x0
+
     if-eqz v0, :cond_2
 
     iget v0, p0, Lcom/android/settings/flipfont/FontListPreference;->mSavedClickedItem:I
@@ -3313,7 +3292,6 @@
 
 .method protected onPrepareDialogBuilder(Landroid/app/AlertDialog$Builder;)V
     .locals 6
-    .param p1    # Landroid/app/AlertDialog$Builder;
 
     const v5, 0x7f090c55
 
@@ -3959,7 +3937,6 @@
 
 .method public setObject(Lcom/android/settings/DisplaySettings;)V
     .locals 0
-    .param p1    # Lcom/android/settings/DisplaySettings;
 
     iput-object p1, p0, Lcom/android/settings/flipfont/FontListPreference;->mDisplaySettings:Lcom/android/settings/DisplaySettings;
 
@@ -3968,7 +3945,6 @@
 
 .method public setObject(Lcom/android/settings/FontMenu;)V
     .locals 0
-    .param p1    # Lcom/android/settings/FontMenu;
 
     iput-object p1, p0, Lcom/android/settings/flipfont/FontListPreference;->mFontMenu:Lcom/android/settings/FontMenu;
 
@@ -3977,7 +3953,6 @@
 
 .method protected showDialog(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v2, 0x0
 

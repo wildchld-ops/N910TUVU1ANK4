@@ -37,11 +37,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/accounts/AccountManagerService;Lcom/android/server/accounts/AccountManagerService$UserAccounts;Landroid/accounts/IAccountManagerResponse;Ljava/lang/String;ZZLandroid/os/Bundle;Landroid/accounts/Account;Ljava/lang/String;ZZIZLcom/android/server/accounts/AccountManagerService$UserAccounts;)V
     .locals 0
-    .param p2    # Lcom/android/server/accounts/AccountManagerService$UserAccounts;
-    .param p3    # Landroid/accounts/IAccountManagerResponse;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Z
-    .param p6    # Z
 
     iput-object p1, p0, Lcom/android/server/accounts/AccountManagerService$6;->this$0:Lcom/android/server/accounts/AccountManagerService;
 
@@ -70,7 +65,6 @@
 # virtual methods
 .method public onResult(Landroid/os/Bundle;)V
     .locals 10
-    .param p1    # Landroid/os/Bundle;
 
     if-eqz p1, :cond_4
 
@@ -262,7 +256,6 @@
 
 .method protected toDebugString(J)Ljava/lang/String;
     .locals 2
-    .param p1    # J
 
     iget-object v0, p0, Lcom/android/server/accounts/AccountManagerService$6;->val$loginOptions:Landroid/os/Bundle;
 

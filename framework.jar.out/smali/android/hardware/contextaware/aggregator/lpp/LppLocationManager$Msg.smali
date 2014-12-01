@@ -423,7 +423,6 @@
 
 .method public static valueOf(Ljava/lang/String;)Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$Msg;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-class v0, Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$Msg;
 

@@ -28,9 +28,6 @@
 # direct methods
 .method public constructor <init>(Landroid/media/MediaScanner;Ljava/lang/String;Landroid/net/Uri;Landroid/database/Cursor;)V
     .locals 5
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/net/Uri;
-    .param p4    # Landroid/database/Cursor;
 
     iput-object p1, p0, Landroid/media/MediaScanner$WplHandler;->this$0:Landroid/media/MediaScanner;
 
@@ -91,7 +88,6 @@
 
 .method public start(Lorg/xml/sax/Attributes;)V
     .locals 3
-    .param p1    # Lorg/xml/sax/Attributes;
 
     const-string v1, ""
 

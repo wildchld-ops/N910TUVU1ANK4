@@ -43,8 +43,6 @@
 
 .method private isLastChar(II)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     add-int/lit8 v0, p2, 0x1
 
@@ -63,9 +61,6 @@
 
 .method private isNextChar(Ljava/lang/StringBuffer;IC)Z
     .locals 2
-    .param p1    # Ljava/lang/StringBuffer;
-    .param p2    # I
-    .param p3    # C
 
     const/4 v0, 0x0
 
@@ -101,9 +96,6 @@
 
 .method private isPreviousChar(Ljava/lang/StringBuffer;IC)Z
     .locals 2
-    .param p1    # Ljava/lang/StringBuffer;
-    .param p2    # I
-    .param p3    # C
 
     const/4 v0, 0x0
 
@@ -137,8 +129,6 @@
 
 .method private isVowel(Ljava/lang/StringBuffer;I)Z
     .locals 2
-    .param p1    # Ljava/lang/StringBuffer;
-    .param p2    # I
 
     iget-object v0, p0, Lorg/apache/commons/codec/language/Metaphone;->vowels:Ljava/lang/String;
 
@@ -165,9 +155,6 @@
 
 .method private regionMatch(Ljava/lang/StringBuffer;ILjava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/StringBuffer;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -209,7 +196,6 @@
 # virtual methods
 .method public encode(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 2
-    .param p1    # Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/commons/codec/EncoderException;
@@ -240,7 +226,6 @@
 
 .method public encode(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lorg/apache/commons/codec/language/Metaphone;->metaphone(Ljava/lang/String;)Ljava/lang/String;
 
@@ -259,8 +244,6 @@
 
 .method public isMetaphoneEqual(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lorg/apache/commons/codec/language/Metaphone;->metaphone(Ljava/lang/String;)Ljava/lang/String;
 
@@ -279,7 +262,6 @@
 
 .method public metaphone(Ljava/lang/String;)Ljava/lang/String;
     .locals 14
-    .param p1    # Ljava/lang/String;
 
     const/16 v13, 0x58
 
@@ -1060,7 +1042,6 @@
 
 .method public setMaxCodeLen(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lorg/apache/commons/codec/language/Metaphone;->maxCodeLen:I
 

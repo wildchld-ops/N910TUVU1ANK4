@@ -40,11 +40,6 @@
 # virtual methods
 .method public onAppear(Landroid/view/ViewGroup;Landroid/transition/TransitionValues;ILandroid/transition/TransitionValues;I)Landroid/animation/Animator;
     .locals 6
-    .param p1    # Landroid/view/ViewGroup;
-    .param p2    # Landroid/transition/TransitionValues;
-    .param p3    # I
-    .param p4    # Landroid/transition/TransitionValues;
-    .param p5    # I
 
     if-eqz p4, :cond_0
 
@@ -103,11 +98,6 @@
 
 .method public onDisappear(Landroid/view/ViewGroup;Landroid/transition/TransitionValues;ILandroid/transition/TransitionValues;I)Landroid/animation/Animator;
     .locals 6
-    .param p1    # Landroid/view/ViewGroup;
-    .param p2    # Landroid/transition/TransitionValues;
-    .param p3    # I
-    .param p4    # Landroid/transition/TransitionValues;
-    .param p5    # I
 
     const/4 v5, 0x0
 

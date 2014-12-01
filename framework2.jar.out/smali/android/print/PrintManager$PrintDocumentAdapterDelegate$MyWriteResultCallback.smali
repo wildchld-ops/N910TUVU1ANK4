@@ -27,9 +27,6 @@
 # direct methods
 .method public constructor <init>(Landroid/print/PrintManager$PrintDocumentAdapterDelegate;Landroid/print/IWriteResultCallback;Landroid/os/ParcelFileDescriptor;I)V
     .locals 0
-    .param p2    # Landroid/print/IWriteResultCallback;
-    .param p3    # Landroid/os/ParcelFileDescriptor;
-    .param p4    # I
 
     iput-object p1, p0, Landroid/print/PrintManager$PrintDocumentAdapterDelegate$MyWriteResultCallback;->this$0:Landroid/print/PrintManager$PrintDocumentAdapterDelegate;
 
@@ -124,7 +121,6 @@
 
 .method public onWriteFailed(Ljava/lang/CharSequence;)V
     .locals 5
-    .param p1    # Ljava/lang/CharSequence;
 
     iget-object v2, p0, Landroid/print/PrintManager$PrintDocumentAdapterDelegate$MyWriteResultCallback;->this$0:Landroid/print/PrintManager$PrintDocumentAdapterDelegate;
 
@@ -201,7 +197,6 @@
 
 .method public onWriteFinished([Landroid/print/PageRange;)V
     .locals 5
-    .param p1    # [Landroid/print/PageRange;
 
     iget-object v2, p0, Landroid/print/PrintManager$PrintDocumentAdapterDelegate$MyWriteResultCallback;->this$0:Landroid/print/PrintManager$PrintDocumentAdapterDelegate;
 

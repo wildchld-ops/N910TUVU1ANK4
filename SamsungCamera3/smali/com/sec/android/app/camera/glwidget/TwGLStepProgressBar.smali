@@ -90,14 +90,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;FFFFFFI)V
     .locals 7
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # F
-    .param p7    # F
-    .param p8    # I
 
     const/4 v6, 0x0
 
@@ -202,17 +194,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;FFFFFFIFFF)V
     .locals 12
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # F
-    .param p7    # F
-    .param p8    # I
-    .param p9    # F
-    .param p10    # F
-    .param p11    # F
 
     invoke-direct/range {p0 .. p5}, Lcom/sec/android/glview/TwGLViewGroup;-><init>(Lcom/sec/android/glview/TwGLContext;FFFF)V
 
@@ -492,7 +473,6 @@
 
 .method public setProgress(I)V
     .locals 4
-    .param p1    # I
 
     const/4 v3, 0x1
 

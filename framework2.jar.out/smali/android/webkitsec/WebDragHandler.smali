@@ -112,7 +112,6 @@
 
 .method static startDragSelection(Landroid/webkitsec/WebViewClassic;)V
     .locals 9
-    .param p0    # Landroid/webkitsec/WebViewClassic;
 
     const/4 v8, 0x0
 
@@ -240,9 +239,6 @@
 
 .method static startDragSelection(Landroid/webkitsec/WebViewClassic;Ljava/lang/String;Ljava/lang/String;)V
     .locals 6
-    .param p0    # Landroid/webkitsec/WebViewClassic;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v5, 0x0
 
@@ -326,8 +322,6 @@
 # virtual methods
 .method public onDrag(Landroid/view/View;Landroid/view/DragEvent;)Z
     .locals 4
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/DragEvent;
 
     const/4 v3, 0x0
 

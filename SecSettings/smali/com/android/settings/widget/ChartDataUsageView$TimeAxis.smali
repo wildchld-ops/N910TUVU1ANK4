@@ -70,9 +70,6 @@
 # virtual methods
 .method public buildLabel(Landroid/content/res/Resources;Landroid/text/SpannableStringBuilder;J)J
     .locals 3
-    .param p1    # Landroid/content/res/Resources;
-    .param p2    # Landroid/text/SpannableStringBuilder;
-    .param p3    # J
 
     const/4 v0, 0x0
 
@@ -91,7 +88,6 @@
 
 .method public convertToPoint(J)F
     .locals 5
-    .param p1    # J
 
     iget v0, p0, Lcom/android/settings/widget/ChartDataUsageView$TimeAxis;->mSize:F
 
@@ -118,7 +114,6 @@
 
 .method public convertToValue(F)J
     .locals 5
-    .param p1    # F
 
     iget-wide v0, p0, Lcom/android/settings/widget/ChartDataUsageView$TimeAxis;->mMin:J
 
@@ -282,8 +277,6 @@
 
 .method public setBounds(JJ)Z
     .locals 2
-    .param p1    # J
-    .param p3    # J
 
     iget-wide v0, p0, Lcom/android/settings/widget/ChartDataUsageView$TimeAxis;->mMin:J
 
@@ -315,7 +308,6 @@
 
 .method public setSize(F)Z
     .locals 1
-    .param p1    # F
 
     iget v0, p0, Lcom/android/settings/widget/ChartDataUsageView$TimeAxis;->mSize:F
 
@@ -338,7 +330,6 @@
 
 .method public shouldAdjustAxis(J)I
     .locals 1
-    .param p1    # J
 
     const/4 v0, 0x0
 

@@ -23,7 +23,6 @@
 # direct methods
 .method public constructor <init>(Landroid/os/storage/StorageManager;Z)V
     .locals 1
-    .param p2    # Z
 
     iput-object p1, p0, Landroid/os/storage/StorageManager$UmsConnectionChangedStorageEvent;->this$0:Landroid/os/storage/StorageManager;
 

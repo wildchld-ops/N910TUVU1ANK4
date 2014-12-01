@@ -14,7 +14,6 @@
 
 .method public static newInstance(Lcom/diotek/ime/framework/spellcheckservice/SamsungIMESpellCheckerService;)Landroid/service/textservice/SpellCheckerService$Session;
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/spellcheckservice/SamsungIMESpellCheckerService;
 
     new-instance v0, Lcom/diotek/ime/framework/spellcheckservice/SamsungIMESpellCheckerSession;
 

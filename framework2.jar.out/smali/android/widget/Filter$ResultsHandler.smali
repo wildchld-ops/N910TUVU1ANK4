@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Landroid/widget/Filter;Landroid/widget/Filter$1;)V
     .locals 0
-    .param p1    # Landroid/widget/Filter;
-    .param p2    # Landroid/widget/Filter$1;
 
     invoke-direct {p0, p1}, Landroid/widget/Filter$ResultsHandler;-><init>(Landroid/widget/Filter;)V
 
@@ -43,7 +41,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 5
-    .param p1    # Landroid/os/Message;
 
     iget-object v0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 

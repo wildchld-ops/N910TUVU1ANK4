@@ -56,7 +56,6 @@
 
 .method public static getLayoutDirection(Landroid/view/ViewGroup$MarginLayoutParams;)I
     .locals 1
-    .param p0    # Landroid/view/ViewGroup$MarginLayoutParams;
 
     sget-object v0, Landroid/support/v4/view/MarginLayoutParamsCompat;->IMPL:Landroid/support/v4/view/MarginLayoutParamsCompat$MarginLayoutParamsCompatImpl;
 
@@ -69,7 +68,6 @@
 
 .method public static getMarginEnd(Landroid/view/ViewGroup$MarginLayoutParams;)I
     .locals 1
-    .param p0    # Landroid/view/ViewGroup$MarginLayoutParams;
 
     sget-object v0, Landroid/support/v4/view/MarginLayoutParamsCompat;->IMPL:Landroid/support/v4/view/MarginLayoutParamsCompat$MarginLayoutParamsCompatImpl;
 
@@ -82,7 +80,6 @@
 
 .method public static getMarginStart(Landroid/view/ViewGroup$MarginLayoutParams;)I
     .locals 1
-    .param p0    # Landroid/view/ViewGroup$MarginLayoutParams;
 
     sget-object v0, Landroid/support/v4/view/MarginLayoutParamsCompat;->IMPL:Landroid/support/v4/view/MarginLayoutParamsCompat$MarginLayoutParamsCompatImpl;
 
@@ -95,7 +92,6 @@
 
 .method public static isMarginRelative(Landroid/view/ViewGroup$MarginLayoutParams;)Z
     .locals 1
-    .param p0    # Landroid/view/ViewGroup$MarginLayoutParams;
 
     sget-object v0, Landroid/support/v4/view/MarginLayoutParamsCompat;->IMPL:Landroid/support/v4/view/MarginLayoutParamsCompat$MarginLayoutParamsCompatImpl;
 
@@ -108,8 +104,6 @@
 
 .method public static resolveLayoutDirection(Landroid/view/ViewGroup$MarginLayoutParams;I)V
     .locals 1
-    .param p0    # Landroid/view/ViewGroup$MarginLayoutParams;
-    .param p1    # I
 
     sget-object v0, Landroid/support/v4/view/MarginLayoutParamsCompat;->IMPL:Landroid/support/v4/view/MarginLayoutParamsCompat$MarginLayoutParamsCompatImpl;
 
@@ -120,8 +114,6 @@
 
 .method public static setLayoutDirection(Landroid/view/ViewGroup$MarginLayoutParams;I)V
     .locals 1
-    .param p0    # Landroid/view/ViewGroup$MarginLayoutParams;
-    .param p1    # I
 
     sget-object v0, Landroid/support/v4/view/MarginLayoutParamsCompat;->IMPL:Landroid/support/v4/view/MarginLayoutParamsCompat$MarginLayoutParamsCompatImpl;
 
@@ -132,8 +124,6 @@
 
 .method public static setMarginEnd(Landroid/view/ViewGroup$MarginLayoutParams;I)V
     .locals 1
-    .param p0    # Landroid/view/ViewGroup$MarginLayoutParams;
-    .param p1    # I
 
     sget-object v0, Landroid/support/v4/view/MarginLayoutParamsCompat;->IMPL:Landroid/support/v4/view/MarginLayoutParamsCompat$MarginLayoutParamsCompatImpl;
 
@@ -144,8 +134,6 @@
 
 .method public static setMarginStart(Landroid/view/ViewGroup$MarginLayoutParams;I)V
     .locals 1
-    .param p0    # Landroid/view/ViewGroup$MarginLayoutParams;
-    .param p1    # I
 
     sget-object v0, Landroid/support/v4/view/MarginLayoutParamsCompat;->IMPL:Landroid/support/v4/view/MarginLayoutParamsCompat$MarginLayoutParamsCompatImpl;
 

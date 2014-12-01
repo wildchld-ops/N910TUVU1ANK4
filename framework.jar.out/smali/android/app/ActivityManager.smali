@@ -161,8 +161,6 @@
 
 .method constructor <init>(Landroid/content/Context;Landroid/os/Handler;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/Handler;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -175,8 +173,6 @@
 
 .method public static allowRuleCheck(Ljava/lang/String;I)Z
     .locals 12
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
 
     const/4 v8, 0x0
 
@@ -288,14 +284,6 @@
 
 .method public static checkComponentPermission(Landroid/content/Intent;Ljava/lang/String;Ljava/lang/String;IILjava/lang/String;ZZ)I
     .locals 8
-    .param p0    # Landroid/content/Intent;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Ljava/lang/String;
-    .param p6    # Z
-    .param p7    # Z
 
     if-eqz p3, :cond_1
 
@@ -445,10 +433,6 @@
 
 .method public static checkComponentPermission(Ljava/lang/String;IIZ)I
     .locals 5
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     const/16 v4, 0x3e8
 
@@ -529,12 +513,6 @@
 
 .method private static checkContainerAppPermission(Landroid/content/Intent;Ljava/lang/String;IILjava/lang/String;Z)I
     .locals 16
-    .param p0    # Landroid/content/Intent;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
-    .param p5    # Z
 
     const/4 v12, 0x0
 
@@ -980,8 +958,6 @@
 
 .method public static checkUidPermission(Ljava/lang/String;I)I
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
 
     :try_start_0
     invoke-static {}, Landroid/app/AppGlobals;->getPackageManager()Landroid/content/pm/IPackageManager;
@@ -1013,8 +989,6 @@
 
 .method public static dumpPackageStateStatic(Ljava/io/FileDescriptor;Ljava/lang/String;)V
     .locals 8
-    .param p0    # Ljava/io/FileDescriptor;
-    .param p1    # Ljava/lang/String;
 
     const/4 v7, 0x2
 
@@ -1117,10 +1091,6 @@
 
 .method private static dumpService(Ljava/io/PrintWriter;Ljava/io/FileDescriptor;Ljava/lang/String;[Ljava/lang/String;)V
     .locals 5
-    .param p0    # Ljava/io/PrintWriter;
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/lang/String;
-    .param p3    # [Ljava/lang/String;
 
     const-string v4, "DUMP OF SERVICE "
 
@@ -1237,7 +1207,6 @@
 
 .method public static getMyMemoryState(Landroid/app/ActivityManager$RunningAppProcessInfo;)V
     .locals 1
-    .param p0    # Landroid/app/ActivityManager$RunningAppProcessInfo;
 
     :try_start_0
     invoke-static {}, Landroid/app/ActivityManagerNative;->getDefault()Landroid/app/IActivityManager;
@@ -1259,13 +1228,6 @@
 
 .method public static handleIncomingUser(IIIZZLjava/lang/String;Ljava/lang/String;)I
     .locals 9
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # Z
-    .param p5    # Ljava/lang/String;
-    .param p6    # Ljava/lang/String;
 
     invoke-static {p1}, Landroid/os/UserHandle;->getUserId(I)I
 
@@ -1318,8 +1280,6 @@
 
 .method public static isContainerAllowedPackage(Ljava/lang/String;I)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
 
     invoke-static {p0, p1}, Landroid/app/ActivityManager;->allowRuleCheck(Ljava/lang/String;I)Z
 
@@ -1529,8 +1489,6 @@
 
 .method public clearApplicationUserData(Ljava/lang/String;Landroid/content/pm/IPackageDataObserver;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/pm/IPackageDataObserver;
 
     :try_start_0
     invoke-static {}, Landroid/app/ActivityManagerNative;->getDefault()Landroid/app/IActivityManager;
@@ -1560,8 +1518,6 @@
 
 .method public dumpPackageState(Ljava/io/FileDescriptor;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/lang/String;
 
     invoke-static {p1, p2}, Landroid/app/ActivityManager;->dumpPackageStateStatic(Ljava/io/FileDescriptor;Ljava/lang/String;)V
 
@@ -1570,7 +1526,6 @@
 
 .method public forceStopPackage(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     invoke-static {}, Landroid/app/ActivityManagerNative;->getDefault()Landroid/app/IActivityManager;
@@ -2004,7 +1959,6 @@
 
 .method public getMemoryInfo(Landroid/app/ActivityManager$MemoryInfo;)V
     .locals 1
-    .param p1    # Landroid/app/ActivityManager$MemoryInfo;
 
     :try_start_0
     invoke-static {}, Landroid/app/ActivityManagerNative;->getDefault()Landroid/app/IActivityManager;
@@ -2026,7 +1980,6 @@
 
 .method public getPackageAskScreenCompat(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     invoke-static {}, Landroid/app/ActivityManagerNative;->getDefault()Landroid/app/IActivityManager;
@@ -2052,7 +2005,6 @@
 
 .method public getPackageScreenCompatMode(Ljava/lang/String;)I
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     invoke-static {}, Landroid/app/ActivityManagerNative;->getDefault()Landroid/app/IActivityManager;
@@ -2078,7 +2030,6 @@
 
 .method public getProcessMemoryInfo([I)[Landroid/os/Debug$MemoryInfo;
     .locals 2
-    .param p1    # [I
 
     :try_start_0
     invoke-static {}, Landroid/app/ActivityManagerNative;->getDefault()Landroid/app/IActivityManager;
@@ -2138,8 +2089,6 @@
 
 .method public getRecentTasks(II)Ljava/util/List;
     .locals 3
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II)",
@@ -2184,9 +2133,6 @@
 
 .method public getRecentTasksForUser(III)Ljava/util/List;
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(III)",
@@ -2295,7 +2241,6 @@
 
 .method public getRunningServiceControlPanel(Landroid/content/ComponentName;)Landroid/app/PendingIntent;
     .locals 2
-    .param p1    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -2326,7 +2271,6 @@
 
 .method public getRunningServices(I)Ljava/util/List;
     .locals 3
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -2369,7 +2313,6 @@
 
 .method public getRunningTasks(I)Ljava/util/List;
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -2399,8 +2342,6 @@
 
 .method public getRunningTasks(II)Ljava/util/List;
     .locals 1
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II)",
@@ -2428,9 +2369,6 @@
 
 .method public getRunningTasks(IILandroid/app/IThumbnailReceiver;)Ljava/util/List;
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/app/IThumbnailReceiver;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II",
@@ -2473,7 +2411,6 @@
 
 .method public getTaskThumbnails(I)Landroid/app/ActivityManager$TaskThumbnails;
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -2504,7 +2441,6 @@
 
 .method public getTaskTopIsSecretMode(I)Z
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2535,7 +2471,6 @@
 
 .method public getTaskTopThumbnail(I)Landroid/graphics/Bitmap;
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -2576,7 +2511,6 @@
 
 .method public isUserRunning(I)Z
     .locals 4
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -2604,7 +2538,6 @@
 
 .method public killBackgroundProcesses(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     invoke-static {}, Landroid/app/ActivityManagerNative;->getDefault()Landroid/app/IActivityManager;
@@ -2630,8 +2563,6 @@
 
 .method public moveTaskToFront(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -2642,9 +2573,6 @@
 
 .method public moveTaskToFront(IILandroid/os/Bundle;)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/os/Bundle;
 
     :try_start_0
     invoke-static {}, Landroid/app/ActivityManagerNative;->getDefault()Landroid/app/IActivityManager;
@@ -2666,8 +2594,6 @@
 
 .method public removeSubTask(II)Z
     .locals 2
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -2698,8 +2624,6 @@
 
 .method public removeTask(II)Z
     .locals 2
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -2730,7 +2654,6 @@
 
 .method public restartPackage(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -2741,7 +2664,6 @@
 
 .method public setFrontActivityScreenCompatMode(I)V
     .locals 1
-    .param p1    # I
 
     :try_start_0
     invoke-static {}, Landroid/app/ActivityManagerNative;->getDefault()Landroid/app/IActivityManager;
@@ -2763,8 +2685,6 @@
 
 .method public setPackageAskScreenCompat(Ljava/lang/String;Z)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     :try_start_0
     invoke-static {}, Landroid/app/ActivityManagerNative;->getDefault()Landroid/app/IActivityManager;
@@ -2786,8 +2706,6 @@
 
 .method public setPackageScreenCompatMode(Ljava/lang/String;I)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     :try_start_0
     invoke-static {}, Landroid/app/ActivityManagerNative;->getDefault()Landroid/app/IActivityManager;
@@ -2809,7 +2727,6 @@
 
 .method public softStartPersonas([I)Z
     .locals 2
-    .param p1    # [I
 
     :try_start_0
     invoke-static {}, Landroid/app/ActivityManagerNative;->getDefault()Landroid/app/IActivityManager;
@@ -2835,7 +2752,6 @@
 
 .method public switchPersona(I)Z
     .locals 2
-    .param p1    # I
 
     :try_start_0
     invoke-static {}, Landroid/app/ActivityManagerNative;->getDefault()Landroid/app/IActivityManager;
@@ -2861,8 +2777,6 @@
 
 .method public switchPersonaAndLaunch(ILandroid/content/Intent;)Z
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/content/Intent;
 
     :try_start_0
     invoke-static {}, Landroid/app/ActivityManagerNative;->getDefault()Landroid/app/IActivityManager;
@@ -2888,9 +2802,6 @@
 
 .method public switchPersonaConditional(IZZ)Z
     .locals 2
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # Z
 
     :try_start_0
     invoke-static {}, Landroid/app/ActivityManagerNative;->getDefault()Landroid/app/IActivityManager;
@@ -2916,7 +2827,6 @@
 
 .method public switchUser(I)Z
     .locals 2
-    .param p1    # I
 
     :try_start_0
     invoke-static {}, Landroid/app/ActivityManagerNative;->getDefault()Landroid/app/IActivityManager;
@@ -2942,7 +2852,6 @@
 
 .method public updateCascadeHiddenFlag(I)Z
     .locals 2
-    .param p1    # I
 
     :try_start_0
     invoke-static {}, Landroid/app/ActivityManagerNative;->getDefault()Landroid/app/IActivityManager;

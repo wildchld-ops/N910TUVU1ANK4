@@ -44,8 +44,6 @@
 
 .method synthetic constructor <init>(Landroid/widget/Editor;Landroid/widget/Editor$1;)V
     .locals 0
-    .param p1    # Landroid/widget/Editor;
-    .param p2    # Landroid/widget/Editor$1;
 
     invoke-direct {p0, p1}, Landroid/widget/Editor$EasyEditPopupWindow;-><init>(Landroid/widget/Editor;)V
 
@@ -54,7 +52,6 @@
 
 .method static synthetic access$1200(Landroid/widget/Editor$EasyEditPopupWindow;)Landroid/text/style/EasyEditSpan;
     .locals 1
-    .param p0    # Landroid/widget/Editor$EasyEditPopupWindow;
 
     iget-object v0, p0, Landroid/widget/Editor$EasyEditPopupWindow;->mEasyEditSpan:Landroid/text/style/EasyEditSpan;
 
@@ -63,8 +60,6 @@
 
 .method static synthetic access$1400(Landroid/widget/Editor$EasyEditPopupWindow;Landroid/widget/Editor$EasyEditDeleteListener;)V
     .locals 0
-    .param p0    # Landroid/widget/Editor$EasyEditPopupWindow;
-    .param p1    # Landroid/widget/Editor$EasyEditDeleteListener;
 
     invoke-direct {p0, p1}, Landroid/widget/Editor$EasyEditPopupWindow;->setOnDeleteListener(Landroid/widget/Editor$EasyEditDeleteListener;)V
 
@@ -73,7 +68,6 @@
 
 .method private setOnDeleteListener(Landroid/widget/Editor$EasyEditDeleteListener;)V
     .locals 0
-    .param p1    # Landroid/widget/Editor$EasyEditDeleteListener;
 
     iput-object p1, p0, Landroid/widget/Editor$EasyEditPopupWindow;->mOnDeleteListener:Landroid/widget/Editor$EasyEditDeleteListener;
 
@@ -84,7 +78,6 @@
 # virtual methods
 .method protected clipVertically(I)I
     .locals 0
-    .param p1    # I
 
     return p1
 .end method
@@ -155,7 +148,6 @@
 
 .method protected getVerticalLocalPosition(I)I
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/widget/Editor$EasyEditPopupWindow;->this$0:Landroid/widget/Editor;
 
@@ -290,7 +282,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Landroid/widget/Editor$EasyEditPopupWindow;->mDeleteTextView:Landroid/widget/TextView;
 
@@ -324,7 +315,6 @@
 
 .method public setEasyEditSpan(Landroid/text/style/EasyEditSpan;)V
     .locals 0
-    .param p1    # Landroid/text/style/EasyEditSpan;
 
     iput-object p1, p0, Landroid/widget/Editor$EasyEditPopupWindow;->mEasyEditSpan:Landroid/text/style/EasyEditSpan;
 

@@ -35,8 +35,6 @@
 
 .method synthetic constructor <init>(Lcom/android/mms/ui/ManageSDMessages;Lcom/android/mms/ui/ManageSDMessages$1;)V
     .locals 0
-    .param p1    # Lcom/android/mms/ui/ManageSDMessages;
-    .param p2    # Lcom/android/mms/ui/ManageSDMessages$1;
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/ManageSDMessages$CancelListener;-><init>(Lcom/android/mms/ui/ManageSDMessages;)V
 
@@ -47,7 +45,6 @@
 # virtual methods
 .method public onCancel(Landroid/content/DialogInterface;)V
     .locals 2
-    .param p1    # Landroid/content/DialogInterface;
 
     iget-object v0, p0, Lcom/android/mms/ui/ManageSDMessages$CancelListener;->this$0:Lcom/android/mms/ui/ManageSDMessages;
 
@@ -68,8 +65,6 @@
 
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 0
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     return-void
 .end method

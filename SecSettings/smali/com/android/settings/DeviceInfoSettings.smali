@@ -318,7 +318,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/DeviceInfoSettings;)Landroid/preference/CheckBoxPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/DeviceInfoSettings;
 
     iget-object v0, p0, Lcom/android/settings/DeviceInfoSettings;->mDiagnosticInfo:Landroid/preference/CheckBoxPreference;
 
@@ -343,7 +342,6 @@
 
 .method static synthetic access$202(Lcom/sec/android/service/sm/aidl/ISecurityManager;)Lcom/sec/android/service/sm/aidl/ISecurityManager;
     .locals 0
-    .param p0    # Lcom/sec/android/service/sm/aidl/ISecurityManager;
 
     sput-object p0, Lcom/android/settings/DeviceInfoSettings;->mSecurityManager:Lcom/sec/android/service/sm/aidl/ISecurityManager;
 
@@ -352,7 +350,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/DeviceInfoSettings;)V
     .locals 0
-    .param p0    # Lcom/android/settings/DeviceInfoSettings;
 
     invoke-direct {p0}, Lcom/android/settings/DeviceInfoSettings;->showSecuritySWVersion()V
 
@@ -1489,7 +1486,6 @@
 
 .method private initSecuritySWVersion(Ljava/lang/Runnable;)V
     .locals 0
-    .param p1    # Ljava/lang/Runnable;
 
     sput-object p1, Lcom/android/settings/DeviceInfoSettings;->mBoundRunnable:Ljava/lang/Runnable;
 
@@ -1574,7 +1570,6 @@
 
 .method private static readLine(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1886,8 +1881,6 @@
 
 .method private removePreferenceIfBoolFalse(Ljava/lang/String;I)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-virtual {p0}, Landroid/app/Fragment;->getResources()Landroid/content/res/Resources;
 
@@ -2135,8 +2128,6 @@
 
 .method private setStringSummary(Ljava/lang/String;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     :try_start_0
     invoke-virtual {p0, p1}, Landroid/preference/PreferenceFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
@@ -2174,8 +2165,6 @@
 
 .method private setValueSummary(Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     :try_start_0
     invoke-virtual {p0, p1}, Landroid/preference/PreferenceFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
@@ -4112,7 +4101,6 @@
 # virtual methods
 .method public isPackageExists(Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x0
 

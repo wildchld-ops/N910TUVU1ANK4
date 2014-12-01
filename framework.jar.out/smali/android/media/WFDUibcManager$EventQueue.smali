@@ -48,8 +48,6 @@
 
 .method synthetic constructor <init>(Landroid/media/WFDUibcManager;Landroid/media/WFDUibcManager$1;)V
     .locals 0
-    .param p1    # Landroid/media/WFDUibcManager;
-    .param p2    # Landroid/media/WFDUibcManager$1;
 
     invoke-direct {p0, p1}, Landroid/media/WFDUibcManager$EventQueue;-><init>(Landroid/media/WFDUibcManager;)V
 
@@ -60,7 +58,6 @@
 # virtual methods
 .method public addEvent(Landroid/view/InputEvent;)V
     .locals 3
-    .param p1    # Landroid/view/InputEvent;
 
     :try_start_0
     iget-object v1, p0, Landroid/media/WFDUibcManager$EventQueue;->queuedEvents:Ljava/util/concurrent/BlockingQueue;

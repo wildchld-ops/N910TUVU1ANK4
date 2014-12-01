@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,10 +36,6 @@
 # virtual methods
 .method public addClient(Lcom/android/internal/view/IInputMethodClient;Lcom/android/internal/view/IInputContext;II)V
     .locals 5
-    .param p1    # Lcom/android/internal/view/IInputMethodClient;
-    .param p2    # Lcom/android/internal/view/IInputContext;
-    .param p3    # I
-    .param p4    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -176,7 +171,6 @@
 
 .method public finishInput(Lcom/android/internal/view/IInputMethodClient;)V
     .locals 5
-    .param p1    # Lcom/android/internal/view/IInputMethodClient;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -374,8 +368,6 @@
 
 .method public getEnabledInputMethodSubtypeList(Ljava/lang/String;Z)Ljava/util/List;
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -717,8 +709,6 @@
 
 .method public hideMySoftInput(Landroid/os/IBinder;I)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -772,9 +762,6 @@
 
 .method public hideSoftInput(Lcom/android/internal/view/IInputMethodClient;ILandroid/os/ResultReceiver;)Z
     .locals 7
-    .param p1    # Lcom/android/internal/view/IInputMethodClient;
-    .param p2    # I
-    .param p3    # Landroid/os/ResultReceiver;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1050,9 +1037,6 @@
 
 .method public notifySuggestionPicked(Landroid/text/style/SuggestionSpan;Ljava/lang/String;I)Z
     .locals 7
-    .param p1    # Landroid/text/style/SuggestionSpan;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1143,7 +1127,6 @@
 
 .method public registerSuggestionSpansForNotification([Landroid/text/style/SuggestionSpan;)V
     .locals 5
-    .param p1    # [Landroid/text/style/SuggestionSpan;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1197,7 +1180,6 @@
 
 .method public removeClient(Lcom/android/internal/view/IInputMethodClient;)V
     .locals 5
-    .param p1    # Lcom/android/internal/view/IInputMethodClient;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1261,8 +1243,6 @@
 
 .method public setAdditionalInputMethodSubtypes(Ljava/lang/String;[Landroid/view/inputmethod/InputMethodSubtype;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Landroid/view/inputmethod/InputMethodSubtype;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1318,7 +1298,6 @@
 
 .method public setCurrentInputMethodSubtype(Landroid/view/inputmethod/InputMethodSubtype;)Z
     .locals 7
-    .param p1    # Landroid/view/inputmethod/InputMethodSubtype;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1405,9 +1384,6 @@
 
 .method public setImeWindowStatus(Landroid/os/IBinder;II)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1463,8 +1439,6 @@
 
 .method public setInputMethod(Landroid/os/IBinder;Ljava/lang/String;)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1518,9 +1492,6 @@
 
 .method public setInputMethodAndSubtype(Landroid/os/IBinder;Ljava/lang/String;Landroid/view/inputmethod/InputMethodSubtype;)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/view/inputmethod/InputMethodSubtype;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1595,8 +1566,6 @@
 
 .method public setInputMethodEnabled(Ljava/lang/String;Z)Z
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1676,7 +1645,6 @@
 
 .method public setScreenBrightness(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1728,7 +1696,6 @@
 
 .method public setWACOMPen(Z)V
     .locals 5
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1787,7 +1754,6 @@
 
 .method public shouldOfferSwitchingToNextInputMethod(Landroid/os/IBinder;)Z
     .locals 6
-    .param p1    # Landroid/os/IBinder;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1850,8 +1816,6 @@
 
 .method public showInputMethodAndSubtypeEnablerFromClient(Lcom/android/internal/view/IInputMethodClient;Ljava/lang/String;)V
     .locals 5
-    .param p1    # Lcom/android/internal/view/IInputMethodClient;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1917,7 +1881,6 @@
 
 .method public showInputMethodPickerFromClient(Lcom/android/internal/view/IInputMethodClient;)V
     .locals 5
-    .param p1    # Lcom/android/internal/view/IInputMethodClient;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1981,8 +1944,6 @@
 
 .method public showMySoftInput(Landroid/os/IBinder;I)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2036,9 +1997,6 @@
 
 .method public showSoftInput(Lcom/android/internal/view/IInputMethodClient;ILandroid/os/ResultReceiver;)Z
     .locals 7
-    .param p1    # Lcom/android/internal/view/IInputMethodClient;
-    .param p2    # I
-    .param p3    # Landroid/os/ResultReceiver;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2141,10 +2099,6 @@
 
 .method public startInput(Lcom/android/internal/view/IInputMethodClient;Lcom/android/internal/view/IInputContext;Landroid/view/inputmethod/EditorInfo;I)Lcom/android/internal/view/InputBindResult;
     .locals 6
-    .param p1    # Lcom/android/internal/view/IInputMethodClient;
-    .param p2    # Lcom/android/internal/view/IInputContext;
-    .param p3    # Landroid/view/inputmethod/EditorInfo;
-    .param p4    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2262,7 +2216,6 @@
 
 .method public switchToLastInputMethod(Landroid/os/IBinder;)Z
     .locals 6
-    .param p1    # Landroid/os/IBinder;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2325,8 +2278,6 @@
 
 .method public switchToNextInputMethod(Landroid/os/IBinder;Z)Z
     .locals 7
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2406,9 +2357,6 @@
 
 .method public updateStatusIcon(Landroid/os/IBinder;Ljava/lang/String;I)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2464,13 +2412,6 @@
 
 .method public windowGainedFocus(Lcom/android/internal/view/IInputMethodClient;Landroid/os/IBinder;IIILandroid/view/inputmethod/EditorInfo;Lcom/android/internal/view/IInputContext;)Lcom/android/internal/view/InputBindResult;
     .locals 6
-    .param p1    # Lcom/android/internal/view/IInputMethodClient;
-    .param p2    # Landroid/os/IBinder;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Landroid/view/inputmethod/EditorInfo;
-    .param p7    # Lcom/android/internal/view/IInputContext;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

@@ -59,8 +59,6 @@
 
 .method public static extractPoiString(Landroid/app/Activity;Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
     .locals 9
-    .param p0    # Landroid/app/Activity;
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v8, 0x2
 
@@ -181,7 +179,6 @@
 
 .method public static init(Landroid/content/Context;)V
     .locals 7
-    .param p0    # Landroid/content/Context;
 
     const/4 v6, 0x1
 

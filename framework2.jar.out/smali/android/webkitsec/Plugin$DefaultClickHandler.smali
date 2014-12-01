@@ -40,8 +40,6 @@
 
 .method synthetic constructor <init>(Landroid/webkitsec/Plugin;Landroid/webkitsec/Plugin$1;)V
     .locals 0
-    .param p1    # Landroid/webkitsec/Plugin;
-    .param p2    # Landroid/webkitsec/Plugin$1;
 
     invoke-direct {p0, p1}, Landroid/webkitsec/Plugin$DefaultClickHandler;-><init>(Landroid/webkitsec/Plugin;)V
 
@@ -52,7 +50,6 @@
 # virtual methods
 .method public handleClickEvent(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -110,8 +107,6 @@
 
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 1
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 

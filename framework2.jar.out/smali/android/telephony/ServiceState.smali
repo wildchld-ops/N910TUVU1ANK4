@@ -214,7 +214,6 @@
 
 .method public constructor <init>(Landroid/os/Parcel;)V
     .locals 3
-    .param p1    # Landroid/os/Parcel;
 
     const/4 v2, 0x0
 
@@ -375,7 +374,6 @@
 
 .method public constructor <init>(Landroid/telephony/ServiceState;)V
     .locals 1
-    .param p1    # Landroid/telephony/ServiceState;
 
     const/4 v0, 0x1
 
@@ -398,8 +396,6 @@
 
 .method private static equalsHandlesNulls(Ljava/lang/Object;Ljava/lang/Object;)Z
     .locals 1
-    .param p0    # Ljava/lang/Object;
-    .param p1    # Ljava/lang/Object;
 
     if-nez p0, :cond_1
 
@@ -425,7 +421,6 @@
 
 .method public static is1xEvdo(I)Z
     .locals 1
-    .param p0    # I
 
     const/4 v0, 0x4
 
@@ -465,7 +460,6 @@
 
 .method public static isCdma(I)Z
     .locals 1
-    .param p0    # I
 
     const/4 v0, 0x4
 
@@ -509,7 +503,6 @@
 
 .method public static isDataInLegacy3gpp(I)Z
     .locals 2
-    .param p0    # I
 
     const/4 v0, 0x1
 
@@ -555,7 +548,6 @@
 
 .method public static isGsm(I)Z
     .locals 2
-    .param p0    # I
 
     const/4 v0, 0x1
 
@@ -613,7 +605,6 @@
 
 .method public static newFromBundle(Landroid/os/Bundle;)Landroid/telephony/ServiceState;
     .locals 1
-    .param p0    # Landroid/os/Bundle;
 
     new-instance v0, Landroid/telephony/ServiceState;
 
@@ -626,7 +617,6 @@
 
 .method private rilRadioTechnologyToNetworkType(I)I
     .locals 2
-    .param p1    # I
 
     const/4 v1, 0x2
 
@@ -769,7 +759,6 @@
 
 .method public static rilRadioTechnologyToString(I)Ljava/lang/String;
     .locals 4
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -1080,7 +1069,6 @@
 
 .method private setFromNotifierBundle(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     const-string/jumbo v0, "voiceRegState"
 
@@ -1207,7 +1195,6 @@
 
 .method private setNullState(I)V
     .locals 6
-    .param p1    # I
 
     const/4 v5, 0x0
 
@@ -1280,7 +1267,6 @@
 # virtual methods
 .method protected copyFrom(Landroid/telephony/ServiceState;)V
     .locals 1
-    .param p1    # Landroid/telephony/ServiceState;
 
     iget v0, p1, Landroid/telephony/ServiceState;->mVoiceRegState:I
 
@@ -1363,7 +1349,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 6
-    .param p1    # Ljava/lang/Object;
 
     const/4 v3, 0x0
 
@@ -1581,7 +1566,6 @@
 
 .method public fillInNotifierBundle(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     const-string/jumbo v0, "voiceRegState"
 
@@ -2166,7 +2150,6 @@
 
 .method public setCdmaDefaultRoamingIndicator(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/telephony/ServiceState;->mCdmaDefaultRoamingIndicator:I
 
@@ -2175,7 +2158,6 @@
 
 .method public setCdmaEriIconIndex(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/telephony/ServiceState;->mCdmaEriIconIndex:I
 
@@ -2184,7 +2166,6 @@
 
 .method public setCdmaEriIconMode(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/telephony/ServiceState;->mCdmaEriIconMode:I
 
@@ -2193,7 +2174,6 @@
 
 .method public setCdmaRoamingIndicator(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/telephony/ServiceState;->mCdmaRoamingIndicator:I
 
@@ -2202,7 +2182,6 @@
 
 .method public setCssIndicator(I)V
     .locals 1
-    .param p1    # I
 
     if-eqz p1, :cond_0
 
@@ -2221,7 +2200,6 @@
 
 .method public setDataRegState(I)V
     .locals 3
-    .param p1    # I
 
     iput p1, p0, Landroid/telephony/ServiceState;->mDataRegState:I
 
@@ -2254,7 +2232,6 @@
 
 .method public setEmergencyOnly(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/telephony/ServiceState;->mIsEmergencyOnly:Z
 
@@ -2263,7 +2240,6 @@
 
 .method public setIsManualSelection(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/telephony/ServiceState;->mIsManualNetworkSelection:Z
 
@@ -2272,7 +2248,6 @@
 
 .method public setOperatorAlphaLong(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/telephony/ServiceState;->mOperatorAlphaLong:Ljava/lang/String;
 
@@ -2281,9 +2256,6 @@
 
 .method public setOperatorName(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/telephony/ServiceState;->mOperatorAlphaLong:Ljava/lang/String;
 
@@ -2296,7 +2268,6 @@
 
 .method public setOptionalRadioTech(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/telephony/ServiceState;->mOptionalRadioTech:I
 
@@ -2305,7 +2276,6 @@
 
 .method public setRilDataRadioTechnology(I)V
     .locals 3
-    .param p1    # I
 
     iput p1, p0, Landroid/telephony/ServiceState;->mRilDataRadioTechnology:I
 
@@ -2338,7 +2308,6 @@
 
 .method public setRilVoiceRadioTechnology(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/telephony/ServiceState;->mRilVoiceRadioTechnology:I
 
@@ -2347,7 +2316,6 @@
 
 .method public setRoaming(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/telephony/ServiceState;->mRoaming:Z
 
@@ -2356,7 +2324,6 @@
 
 .method public setState(I)V
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/telephony/ServiceState;->setVoiceRegState(I)V
 
@@ -2391,8 +2358,6 @@
 
 .method public setSystemAndNetworkId(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     iput p1, p0, Landroid/telephony/ServiceState;->mSystemId:I
 
@@ -2403,7 +2368,6 @@
 
 .method public setVoiceRegState(I)V
     .locals 3
-    .param p1    # I
 
     iput p1, p0, Landroid/telephony/ServiceState;->mVoiceRegState:I
 
@@ -2842,8 +2806,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 3
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     const/4 v1, 0x1
 

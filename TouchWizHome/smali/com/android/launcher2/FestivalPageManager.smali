@@ -158,7 +158,6 @@
 
 .method public constructor <init>(Lcom/android/launcher2/Launcher;)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/Launcher;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -187,7 +186,6 @@
 
 .method static synthetic access$100(Lcom/android/launcher2/FestivalPageManager;)I
     .locals 1
-    .param p0    # Lcom/android/launcher2/FestivalPageManager;
 
     invoke-direct {p0}, Lcom/android/launcher2/FestivalPageManager;->checkNetwork()I
 
@@ -198,9 +196,6 @@
 
 .method static synthetic access$200(Lcom/android/launcher2/FestivalPageManager;II)V
     .locals 0
-    .param p0    # Lcom/android/launcher2/FestivalPageManager;
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/launcher2/FestivalPageManager;->show_checkbox_dialog(II)V
 
@@ -209,8 +204,6 @@
 
 .method static synthetic access$300(Lcom/android/launcher2/FestivalPageManager;I)V
     .locals 0
-    .param p0    # Lcom/android/launcher2/FestivalPageManager;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/launcher2/FestivalPageManager;->showRetry(I)V
 
@@ -219,8 +212,6 @@
 
 .method static synthetic access$400(Lcom/android/launcher2/FestivalPageManager;I)V
     .locals 0
-    .param p0    # Lcom/android/launcher2/FestivalPageManager;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/launcher2/FestivalPageManager;->launchLearnAboutFestivalDayURL(I)V
 
@@ -229,7 +220,6 @@
 
 .method static synthetic access$500(Lcom/android/launcher2/FestivalPageManager;)Lcom/android/launcher2/Workspace;
     .locals 1
-    .param p0    # Lcom/android/launcher2/FestivalPageManager;
 
     iget-object v0, p0, Lcom/android/launcher2/FestivalPageManager;->mWorkspace:Lcom/android/launcher2/Workspace;
 
@@ -238,7 +228,6 @@
 
 .method static synthetic access$600(Lcom/android/launcher2/FestivalPageManager;)Lcom/android/launcher2/HomeView;
     .locals 1
-    .param p0    # Lcom/android/launcher2/FestivalPageManager;
 
     iget-object v0, p0, Lcom/android/launcher2/FestivalPageManager;->mHomeView:Lcom/android/launcher2/HomeView;
 
@@ -314,7 +303,6 @@
 
 .method public static checkPrevFestivalStatus(Ljava/lang/String;)Z
     .locals 7
-    .param p0    # Ljava/lang/String;
 
     const/4 v3, 0x1
 
@@ -436,7 +424,6 @@
 
 .method public static getFestivalType(Ljava/lang/String;)I
     .locals 6
-    .param p0    # Ljava/lang/String;
 
     const/4 v0, -0x1
 
@@ -540,7 +527,6 @@
 
 .method private isApplicationInstalled(Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -583,7 +569,6 @@
 
 .method private launchLearnAboutFestivalDayURL(I)V
     .locals 6
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -758,7 +743,6 @@
 
 .method private setFestivalDateEffect(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     sget-object v2, Lcom/android/launcher2/FestivalPageManager;->mLauncher:Lcom/android/launcher2/Launcher;
 
@@ -785,7 +769,6 @@
 
 .method public static setFestivalString(Ljava/lang/String;)V
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     sget-object v2, Lcom/android/launcher2/FestivalPageManager;->mLauncher:Lcom/android/launcher2/Launcher;
 
@@ -812,7 +795,6 @@
 
 .method private showRetry(I)V
     .locals 6
-    .param p1    # I
 
     sget-object v3, Lcom/android/launcher2/FestivalPageManager;->mLauncher:Lcom/android/launcher2/Launcher;
 
@@ -897,8 +879,6 @@
 
 .method private show_checkbox_dialog(II)V
     .locals 11
-    .param p1    # I
-    .param p2    # I
 
     const/4 v10, 0x0
 
@@ -1102,8 +1082,6 @@
 
 .method private updateFestivalTitle(Lcom/android/launcher2/CellLayout;I)V
     .locals 16
-    .param p1    # Lcom/android/launcher2/CellLayout;
-    .param p2    # I
 
     const v12, 0x7f0900d8
 
@@ -2121,8 +2099,6 @@
 # virtual methods
 .method public ShowEqualPageWithItem(Lcom/android/launcher2/BaseItem;Lcom/android/launcher2/Workspace$State;)V
     .locals 6
-    .param p1    # Lcom/android/launcher2/BaseItem;
-    .param p2    # Lcom/android/launcher2/Workspace$State;
 
     const/4 v5, 0x2
 
@@ -2487,10 +2463,6 @@
 
 .method public bindFestivalWidget(Lcom/android/launcher2/AppWidgetBinder;IILjava/lang/String;)V
     .locals 3
-    .param p1    # Lcom/android/launcher2/AppWidgetBinder;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -2576,8 +2548,6 @@
 
 .method public drawFestivalPageTitle(Lcom/android/launcher2/CellLayout;I)Z
     .locals 6
-    .param p1    # Lcom/android/launcher2/CellLayout;
-    .param p2    # I
 
     iget-object v3, p0, Lcom/android/launcher2/FestivalPageManager;->mWorkspace:Lcom/android/launcher2/Workspace;
 
@@ -2737,7 +2707,6 @@
 
 .method public initFestivalPage(Lcom/android/launcher2/HomeView;)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/HomeView;
 
     iput-object p1, p0, Lcom/android/launcher2/FestivalPageManager;->mHomeView:Lcom/android/launcher2/HomeView;
 
@@ -2915,9 +2884,6 @@
 
 .method public sendFestivalWidgetType(IILjava/lang/String;)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -3013,7 +2979,6 @@
 
 .method public setCompleteShowHidedPage(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/launcher2/FestivalPageManager;->mCompleteShowHidedPage:Z
 
@@ -3022,7 +2987,6 @@
 
 .method public setPageSwitchByFestivalMode(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/launcher2/FestivalPageManager;->mPageSwitchByFestivalMode:Z
 

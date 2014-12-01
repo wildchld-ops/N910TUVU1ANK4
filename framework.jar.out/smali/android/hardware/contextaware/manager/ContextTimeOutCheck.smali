@@ -23,7 +23,6 @@
 # direct methods
 .method protected constructor <init>(Landroid/hardware/contextaware/utilbundle/ITimeOutCheckObserver;)V
     .locals 0
-    .param p1    # Landroid/hardware/contextaware/utilbundle/ITimeOutCheckObserver;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -125,7 +124,6 @@
 
 .method public final setTimeOutOccurence(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/hardware/contextaware/manager/ContextTimeOutCheck;->mTimeOutOccurrence:Z
 

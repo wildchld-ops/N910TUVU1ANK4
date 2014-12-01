@@ -94,8 +94,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Lcom/android/server/BatteryService;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/server/BatteryService;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -216,7 +214,6 @@
 
 .method private deviceStatePermitsIdleMaintenanceStart(Z)Z
     .locals 6
-    .param p1    # Z
 
     invoke-direct {p0}, Lcom/android/server/IdleMaintenanceService;->isBatteryCharging()Z
 
@@ -320,7 +317,6 @@
 
 .method private lastRunPermitsIdleMaintenanceStart(Z)Z
     .locals 5
-    .param p1    # Z
 
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
@@ -382,7 +378,6 @@
 
 .method private lastUserActivityPermitsIdleMaintenanceStart(Z)Z
     .locals 5
-    .param p1    # Z
 
     iget-wide v1, p0, Lcom/android/server/IdleMaintenanceService;->mLastUserActivityElapsedTimeMillis:J
 
@@ -430,7 +425,6 @@
 
 .method private scheduleUpdateIdleMaintenanceState(J)V
     .locals 5
-    .param p1    # J
 
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
@@ -538,7 +532,6 @@
 
 .method private updateIdleMaintenanceState(Z)V
     .locals 8
-    .param p1    # Z
 
     const-wide/32 v1, 0x4100a0
 
@@ -701,8 +694,6 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 9
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     const-wide/32 v7, 0x4100a0
 
@@ -859,7 +850,6 @@
 
 .method public register(Landroid/os/Handler;)V
     .locals 6
-    .param p1    # Landroid/os/Handler;
 
     new-instance v3, Landroid/content/IntentFilter;
 

@@ -38,7 +38,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Landroid/view/View;-><init>()V
 
@@ -53,8 +52,6 @@
 
 .method public constructor <init>(Landroid/content/Context;I)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     invoke-direct {p0}, Landroid/view/View;-><init>()V
 
@@ -71,8 +68,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -83,9 +78,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v3, -0x1
 
@@ -140,7 +132,6 @@
 
 .method private initialize(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     iput-object p1, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -159,14 +150,12 @@
 # virtual methods
 .method protected dispatchDraw(Landroid/graphics/Canvas;)V
     .locals 0
-    .param p1    # Landroid/graphics/Canvas;
 
     return-void
 .end method
 
 .method public draw(Landroid/graphics/Canvas;)V
     .locals 0
-    .param p1    # Landroid/graphics/Canvas;
 
     return-void
 .end method
@@ -309,8 +298,6 @@
 
 .method protected onMeasure(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -321,7 +308,6 @@
 
 .method public setInflatedId(I)V
     .locals 0
-    .param p1    # I
     .annotation runtime Landroid/view/RemotableViewMethod;
     .end annotation
 
@@ -332,7 +318,6 @@
 
 .method public setLayoutInflater(Landroid/view/LayoutInflater;)V
     .locals 0
-    .param p1    # Landroid/view/LayoutInflater;
 
     iput-object p1, p0, Landroid/view/ViewStub;->mInflater:Landroid/view/LayoutInflater;
 
@@ -341,7 +326,6 @@
 
 .method public setLayoutResource(I)V
     .locals 0
-    .param p1    # I
     .annotation runtime Landroid/view/RemotableViewMethod;
     .end annotation
 
@@ -352,7 +336,6 @@
 
 .method public setOnInflateListener(Landroid/view/ViewStub$OnInflateListener;)V
     .locals 0
-    .param p1    # Landroid/view/ViewStub$OnInflateListener;
 
     iput-object p1, p0, Landroid/view/ViewStub;->mInflateListener:Landroid/view/ViewStub$OnInflateListener;
 
@@ -361,7 +344,6 @@
 
 .method public setVisibility(I)V
     .locals 3
-    .param p1    # I
     .annotation runtime Landroid/view/RemotableViewMethod;
     .end annotation
 

@@ -41,7 +41,6 @@
 
 .method constructor <init>(Landroid/os/StrictMode$ThreadSpanState;)V
     .locals 0
-    .param p1    # Landroid/os/StrictMode$ThreadSpanState;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -52,7 +51,6 @@
 
 .method static synthetic access$1800(Landroid/os/StrictMode$Span;)Landroid/os/StrictMode$Span;
     .locals 1
-    .param p0    # Landroid/os/StrictMode$Span;
 
     iget-object v0, p0, Landroid/os/StrictMode$Span;->mNext:Landroid/os/StrictMode$Span;
 
@@ -61,8 +59,6 @@
 
 .method static synthetic access$1802(Landroid/os/StrictMode$Span;Landroid/os/StrictMode$Span;)Landroid/os/StrictMode$Span;
     .locals 0
-    .param p0    # Landroid/os/StrictMode$Span;
-    .param p1    # Landroid/os/StrictMode$Span;
 
     iput-object p1, p0, Landroid/os/StrictMode$Span;->mNext:Landroid/os/StrictMode$Span;
 
@@ -71,7 +67,6 @@
 
 .method static synthetic access$1900(Landroid/os/StrictMode$Span;)Ljava/lang/String;
     .locals 1
-    .param p0    # Landroid/os/StrictMode$Span;
 
     iget-object v0, p0, Landroid/os/StrictMode$Span;->mName:Ljava/lang/String;
 
@@ -80,8 +75,6 @@
 
 .method static synthetic access$1902(Landroid/os/StrictMode$Span;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Landroid/os/StrictMode$Span;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/os/StrictMode$Span;->mName:Ljava/lang/String;
 
@@ -90,8 +83,6 @@
 
 .method static synthetic access$2002(Landroid/os/StrictMode$Span;J)J
     .locals 0
-    .param p0    # Landroid/os/StrictMode$Span;
-    .param p1    # J
 
     iput-wide p1, p0, Landroid/os/StrictMode$Span;->mCreateMillis:J
 
@@ -100,8 +91,6 @@
 
 .method static synthetic access$2102(Landroid/os/StrictMode$Span;Landroid/os/StrictMode$Span;)Landroid/os/StrictMode$Span;
     .locals 0
-    .param p0    # Landroid/os/StrictMode$Span;
-    .param p1    # Landroid/os/StrictMode$Span;
 
     iput-object p1, p0, Landroid/os/StrictMode$Span;->mPrev:Landroid/os/StrictMode$Span;
 

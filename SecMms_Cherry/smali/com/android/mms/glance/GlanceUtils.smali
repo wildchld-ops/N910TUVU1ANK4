@@ -28,10 +28,6 @@
 
 .method public static addPrioritySender(Landroid/content/Context;Ljava/lang/String;JZ)V
     .locals 11
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
-    .param p4    # Z
 
     const-wide/16 v9, 0x0
 
@@ -129,14 +125,6 @@
 
 .method private static createOrUpdate(IILjava/lang/String;[Ljava/lang/String;Ljava/lang/String;IIZ)Z
     .locals 7
-    .param p0    # I
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # [Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
-    .param p6    # I
-    .param p7    # Z
 
     const-string v4, "mms/GlanceUtil"
 
@@ -349,8 +337,6 @@
 
 .method public static deletePrioritySender(Landroid/content/Context;Ljava/lang/String;)I
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const-string v1, "mms/GlanceUtil"
 
@@ -383,7 +369,6 @@
 
 .method public static declared-synchronized getGlanceDbHelper(Landroid/content/Context;)Lcom/android/mms/glance/GlanceDBHelper;
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     const-class v1, Lcom/android/mms/glance/GlanceUtils;
 
@@ -423,7 +408,6 @@
 
 .method public static getPrioritySenderCount(Landroid/content/Context;)I
     .locals 9
-    .param p0    # Landroid/content/Context;
 
     const/4 v2, 0x0
 
@@ -530,7 +514,6 @@
 
 .method public static getPrioritySenderList(Landroid/content/Context;)Ljava/util/ArrayList;
     .locals 10
-    .param p0    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -632,8 +615,6 @@
 
 .method public static isPrioritySender(Landroid/content/Context;Ljava/lang/String;Ljava/util/ArrayList;)Z
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -711,8 +692,6 @@
 
 .method public static updateCount(Ljava/lang/String;I)Z
     .locals 23
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
 
     const/16 v22, 0x0
 
@@ -1027,9 +1006,6 @@
 
 .method public static updateDeletedField(Landroid/content/Context;II)V
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # I
 
     const/4 v5, 0x1
 
@@ -1094,9 +1070,6 @@
 
 .method public static updatePrioritySenderPriority(Landroid/content/Context;JJ)I
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
-    .param p3    # J
 
     const-string v2, "mms/GlanceUtil"
 

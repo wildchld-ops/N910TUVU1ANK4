@@ -112,9 +112,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Ljava/lang/String;I)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -195,9 +192,6 @@
 
 .method static synthetic access$000(Landroid/provider/SearchRecentSuggestions;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Landroid/provider/SearchRecentSuggestions;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Landroid/provider/SearchRecentSuggestions;->saveRecentQueryBlocking(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -214,8 +208,6 @@
 
 .method private saveRecentQueryBlocking(Ljava/lang/String;Ljava/lang/String;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v5, p0, Landroid/provider/SearchRecentSuggestions;->mContext:Landroid/content/Context;
 
@@ -302,8 +294,6 @@
 
 .method public saveRecentQuery(Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -345,8 +335,6 @@
 
 .method protected truncateHistory(Landroid/content/ContentResolver;I)V
     .locals 4
-    .param p1    # Landroid/content/ContentResolver;
-    .param p2    # I
 
     if-gez p2, :cond_0
 

@@ -237,7 +237,6 @@
 
 .method private checkXT9WordWrappingRule(C)Z
     .locals 3
-    .param p1    # C
 
     const/4 v0, 0x1
 
@@ -269,9 +268,6 @@
 
 .method private getWordOfContextBuffer(Ljava/lang/StringBuilder;Ljava/lang/StringBuilder;[I)Ljava/lang/StringBuilder;
     .locals 5
-    .param p1    # Ljava/lang/StringBuilder;
-    .param p2    # Ljava/lang/StringBuilder;
-    .param p3    # [I
 
     const/4 v4, 0x0
 
@@ -402,7 +398,6 @@
 
 .method private setAddwordbyCheckLDB(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/input/xt9/AbstractXt9InputModule;->mIsDisableAddwordbyCheckLDB:Z
 
@@ -413,7 +408,6 @@
 # virtual methods
 .method public addMyWord(Ljava/lang/CharSequence;)I
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/input/xt9/AbstractXt9InputModule;->mEngineManager:Lcom/diotek/ime/framework/engine/InputEngineManager;
 
@@ -426,7 +420,6 @@
 
 .method protected autoPeriod(I)V
     .locals 14
-    .param p1    # I
 
     const/4 v13, 0x3
 
@@ -770,7 +763,6 @@
 
 .method public commitHwrTextAndInitComposing(Ljava/lang/CharSequence;)V
     .locals 2
-    .param p1    # Ljava/lang/CharSequence;
 
     iget-object v1, p0, Lcom/diotek/ime/framework/input/xt9/AbstractXt9InputModule;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -796,7 +788,6 @@
 
 .method protected commitText(Ljava/lang/CharSequence;)V
     .locals 2
-    .param p1    # Ljava/lang/CharSequence;
 
     iget-object v1, p0, Lcom/diotek/ime/framework/input/xt9/AbstractXt9InputModule;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -816,7 +807,6 @@
 
 .method public commitTextAndInitComposing(Ljava/lang/CharSequence;)V
     .locals 7
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v6, 0x0
 
@@ -976,7 +966,6 @@
 
 .method public commitTextAndInitComposingForThai(Ljava/lang/CharSequence;)V
     .locals 3
-    .param p1    # Ljava/lang/CharSequence;
 
     iget-object v1, p0, Lcom/diotek/ime/framework/input/xt9/AbstractXt9InputModule;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -1088,7 +1077,6 @@
 
 .method protected doNextWordPrediction(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/diotek/ime/framework/input/xt9/AbstractXt9InputModule;->mEngineManager:Lcom/diotek/ime/framework/engine/InputEngineManager;
 
@@ -1129,7 +1117,6 @@
 
 .method public findWordInUDB(Ljava/lang/CharSequence;)I
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/input/xt9/AbstractXt9InputModule;->mEngineManager:Lcom/diotek/ime/framework/engine/InputEngineManager;
 
@@ -1189,7 +1176,6 @@
 
 .method public finishComposing(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v1, p0, Lcom/diotek/ime/framework/input/xt9/AbstractXt9InputModule;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -1745,10 +1731,6 @@
 
 .method public initInputEngineAndComposing(IIII)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     return-void
 .end method
@@ -1981,7 +1963,6 @@
 
 .method public isNeedToAddUDB(Ljava/lang/CharSequence;)V
     .locals 4
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v3, 0x0
 
@@ -2295,7 +2276,6 @@
 
 .method public isThaiAcceptable(Z)Z
     .locals 9
-    .param p1    # Z
 
     const/4 v8, 0x2
 
@@ -2392,7 +2372,6 @@
 
 .method protected isTimerRunning(Lcom/diotek/ime/framework/input/InputModule$Timer;)Z
     .locals 1
-    .param p1    # Lcom/diotek/ime/framework/input/InputModule$Timer;
 
     invoke-virtual {p1}, Lcom/diotek/ime/framework/input/InputModule$Timer;->isRunning()Z
 
@@ -2492,8 +2471,6 @@
 
 .method public onCharacterKeyForHwKeyboard(I[I)V
     .locals 1
-    .param p1    # I
-    .param p2    # [I
 
     invoke-static {}, Lcom/diotek/ime/framework/input/ComposingTextManager;->isEmpty()Z
 
@@ -2529,9 +2506,6 @@
 
 .method public onHwrTouchCancel(IIJ)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
 
     const/4 v0, 0x0
 
@@ -2540,9 +2514,6 @@
 
 .method public onHwrTouchDown(IIJ)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
 
     const/4 v0, 0x0
 
@@ -2551,9 +2522,6 @@
 
 .method public onHwrTouchMove(IIJ)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
 
     const/4 v0, 0x0
 
@@ -2562,9 +2530,6 @@
 
 .method public onHwrTouchUp(IIJ)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
 
     const/4 v0, 0x0
 
@@ -2573,7 +2538,6 @@
 
 .method protected onKeyDownUpHandle(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/diotek/ime/framework/input/xt9/AbstractXt9InputModule;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -2584,7 +2548,6 @@
 
 .method public onText(Ljava/lang/CharSequence;)V
     .locals 6
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v3, 0x1
 
@@ -2634,8 +2597,6 @@
 
 .method public pickSuggestionManually(ILjava/lang/CharSequence;)V
     .locals 28
-    .param p1    # I
-    .param p2    # Ljava/lang/CharSequence;
 
     move-object/from16 v0, p0
 
@@ -4465,8 +4426,6 @@
 
 .method public previewTrace(IZ)V
     .locals 9
-    .param p1    # I
-    .param p2    # Z
 
     const/16 v8, 0x20
 
@@ -4683,8 +4642,6 @@
 
 .method protected processKeyForHwKeyboard(I[I)V
     .locals 4
-    .param p1    # I
-    .param p2    # [I
 
     const/4 v3, 0x1
 
@@ -4773,8 +4730,6 @@
 
 .method protected processMultiTapSymbolicKey(I[I)V
     .locals 9
-    .param p1    # I
-    .param p2    # [I
 
     const/4 v8, 0x0
 
@@ -5035,7 +4990,6 @@
 
 .method protected processReCaptureForXT9(I)V
     .locals 12
-    .param p1    # I
 
     iget-object v8, p0, Lcom/diotek/ime/framework/input/xt9/AbstractXt9InputModule;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -5366,8 +5320,6 @@
 
 .method public processVietnameseTone(IZ)V
     .locals 6
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v5, 0x1
 
@@ -5463,7 +5415,6 @@
 
 .method public removeTerm(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
@@ -5617,7 +5568,6 @@
 
 .method protected selectWordInList(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lcom/diotek/ime/framework/input/xt9/AbstractXt9InputModule;->mInputModeManager:Lcom/diotek/ime/framework/inputmode/InputModeManager;
 
@@ -5737,7 +5687,6 @@
 
 .method public setBeforeTraceInput(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/input/xt9/AbstractXt9InputModule;->mIsBeforeTraceInput:Z
 
@@ -5925,7 +5874,6 @@
 
 .method public setComposingTextWithoutBatch(Landroid/view/inputmethod/InputConnection;)V
     .locals 2
-    .param p1    # Landroid/view/inputmethod/InputConnection;
 
     if-eqz p1, :cond_0
 
@@ -5945,7 +5893,6 @@
 
 .method public setDeleteCount(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, ""
 
@@ -5968,7 +5915,6 @@
 
 .method public setPredictionWord(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/input/xt9/AbstractXt9InputModule;->mIgnorePredictionWord:Z
 
@@ -5977,7 +5923,6 @@
 
 .method public setTimeoutComposingLength(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/diotek/ime/framework/input/xt9/AbstractXt9InputModule;->mTimeoutComposingLength:I
 
@@ -6017,8 +5962,6 @@
 
 .method protected startTimer(Lcom/diotek/ime/framework/input/InputModule$Timer;I)V
     .locals 3
-    .param p1    # Lcom/diotek/ime/framework/input/InputModule$Timer;
-    .param p2    # I
 
     const/4 v0, 0x1
 
@@ -6035,7 +5978,6 @@
 
 .method protected stopTimer(Lcom/diotek/ime/framework/input/InputModule$Timer;)V
     .locals 1
-    .param p1    # Lcom/diotek/ime/framework/input/InputModule$Timer;
 
     const/4 v0, 0x0
 
@@ -6050,7 +5992,6 @@
 
 .method protected swapPunctuation(I)V
     .locals 12
-    .param p1    # I
 
     const/4 v8, 0x3
 
@@ -6244,7 +6185,6 @@
 
 .method public wordSeparatorPretreatment(I)V
     .locals 9
-    .param p1    # I
 
     const/16 v6, 0xa
 

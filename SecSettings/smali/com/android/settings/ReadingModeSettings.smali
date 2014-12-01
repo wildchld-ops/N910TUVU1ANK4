@@ -405,7 +405,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/ReadingModeSettings;)I
     .locals 1
-    .param p0    # Lcom/android/settings/ReadingModeSettings;
 
     invoke-direct {p0}, Lcom/android/settings/ReadingModeSettings;->getCheckedReadingModeAppNum()I
 
@@ -416,7 +415,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/ReadingModeSettings;)Lcom/android/settings/ReadingModeSettings$AppListAdapter;
     .locals 1
-    .param p0    # Lcom/android/settings/ReadingModeSettings;
 
     iget-object v0, p0, Lcom/android/settings/ReadingModeSettings;->mAppListAdapter:Lcom/android/settings/ReadingModeSettings$AppListAdapter;
 
@@ -425,7 +423,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/ReadingModeSettings;)Ljava/util/LinkedHashMap;
     .locals 1
-    .param p0    # Lcom/android/settings/ReadingModeSettings;
 
     iget-object v0, p0, Lcom/android/settings/ReadingModeSettings;->mTempCheckedApplist:Ljava/util/LinkedHashMap;
 
@@ -434,7 +431,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/ReadingModeSettings;)Ljava/util/LinkedHashMap;
     .locals 1
-    .param p0    # Lcom/android/settings/ReadingModeSettings;
 
     iget-object v0, p0, Lcom/android/settings/ReadingModeSettings;->mTempApplist:Ljava/util/LinkedHashMap;
 
@@ -443,7 +439,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/ReadingModeSettings;)Landroid/content/pm/PackageManager;
     .locals 1
-    .param p0    # Lcom/android/settings/ReadingModeSettings;
 
     iget-object v0, p0, Lcom/android/settings/ReadingModeSettings;->mPm:Landroid/content/pm/PackageManager;
 
@@ -452,9 +447,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/ReadingModeSettings;ILandroid/content/pm/ActivityInfo;)Landroid/graphics/drawable/Drawable;
     .locals 1
-    .param p0    # Lcom/android/settings/ReadingModeSettings;
-    .param p1    # I
-    .param p2    # Landroid/content/pm/ActivityInfo;
 
     invoke-direct {p0, p1, p2}, Lcom/android/settings/ReadingModeSettings;->loadAppIcon(ILandroid/content/pm/ActivityInfo;)Landroid/graphics/drawable/Drawable;
 
@@ -540,8 +532,6 @@
 
 .method private loadAppIcon(ILandroid/content/pm/ActivityInfo;)Landroid/graphics/drawable/Drawable;
     .locals 12
-    .param p1    # I
-    .param p2    # Landroid/content/pm/ActivityInfo;
 
     new-instance v7, Lcom/android/settings/lockscreenshortcut/IconResizer;
 
@@ -699,7 +689,6 @@
 # virtual methods
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 17
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super/range {p0 .. p1}, Landroid/app/Fragment;->onActivityCreated(Landroid/os/Bundle;)V
 
@@ -1663,7 +1652,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 10
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v5, 0x1
 
@@ -1871,8 +1859,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
     .locals 4
-    .param p1    # Landroid/view/Menu;
-    .param p2    # Landroid/view/MenuInflater;
 
     const/4 v3, 0x1
 
@@ -1911,9 +1897,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 3
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const v1, 0x7f0401f7
 
@@ -1940,7 +1923,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 3
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v0, 0x1
 

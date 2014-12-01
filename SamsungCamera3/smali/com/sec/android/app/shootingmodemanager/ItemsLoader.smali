@@ -126,7 +126,6 @@
 
 .method public getAlignedPosition(I)I
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/app/shootingmodemanager/ItemsLoader;->mExternalShootingModesOrder:Landroid/util/SparseIntArray;
 
@@ -147,7 +146,6 @@
 
 .method public getExternalItemAt(I)Lcom/sec/android/app/shootingmodemanager/ShootingModeItem;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/app/shootingmodemanager/ItemsLoader;->mExternalShootingModes:Ljava/util/ArrayList;
 
@@ -174,8 +172,6 @@
 
 .method public insert(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget-object v1, p0, Lcom/sec/android/app/shootingmodemanager/ItemsLoader;->mExternalShootingModes:Ljava/util/ArrayList;
 
@@ -206,8 +202,6 @@
 
 .method public loadExternalItems(Landroid/content/Context;Z)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Z
 
     const/4 v1, 0x0
 
@@ -252,7 +246,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -277,7 +270,6 @@
 
 .method setItems(Ljava/util/ArrayList;Landroid/util/SparseIntArray;)V
     .locals 1
-    .param p2    # Landroid/util/SparseIntArray;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -308,7 +300,6 @@
 
 .method public setOwner(Lcom/sec/android/app/shootingmodemanager/ItemsLoader$ItemsLoaderOwner;)V
     .locals 0
-    .param p1    # Lcom/sec/android/app/shootingmodemanager/ItemsLoader$ItemsLoaderOwner;
 
     iput-object p1, p0, Lcom/sec/android/app/shootingmodemanager/ItemsLoader;->mOwner:Lcom/sec/android/app/shootingmodemanager/ItemsLoader$ItemsLoaderOwner;
 
@@ -317,9 +308,6 @@
 
 .method public updateHide(Landroid/content/Context;ZLcom/sec/android/app/shootingmodemanager/ShootingModeItem;)V
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p2    # Z
-    .param p3    # Lcom/sec/android/app/shootingmodemanager/ShootingModeItem;
 
     const/4 v6, 0x0
 

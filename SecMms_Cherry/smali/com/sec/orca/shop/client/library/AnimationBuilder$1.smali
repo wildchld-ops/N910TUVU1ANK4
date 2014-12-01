@@ -40,8 +40,6 @@
 # virtual methods
 .method public compare(Ljava/io/File;Ljava/io/File;)I
     .locals 1
-    .param p1    # Ljava/io/File;
-    .param p2    # Ljava/io/File;
 
     invoke-virtual {p1, p2}, Ljava/io/File;->compareTo(Ljava/io/File;)I
 

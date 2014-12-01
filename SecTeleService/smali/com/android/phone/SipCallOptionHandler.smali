@@ -274,7 +274,7 @@
 
     const-string v3, "layout_inflater"
 
-    invoke-virtual {p0, v3}, Landroid/app/Activity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v3}, Lcom/android/phone/SipCallOptionHandler;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -298,9 +298,9 @@
 
     const v3, 0x7f090213
 
-    invoke-virtual {v1, v3}, Landroid/widget/TextView;->setText(I)V
+    invoke-virtual {v1, v3}, Landroid/widget/CheckBox;->setText(I)V
 
-    invoke-virtual {v1, p0}, Landroid/widget/CompoundButton;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
+    invoke-virtual {v1, p0}, Landroid/widget/CheckBox;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
     const v3, 0x10202f5
 
@@ -322,7 +322,7 @@
 
     const/16 v4, 0x8
 
-    invoke-virtual {v3, v4}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v3, v4}, Landroid/widget/TextView;->setVisibility(I)V
 
     check-cast p1, Landroid/app/AlertDialog;
 
@@ -532,7 +532,7 @@
 
     invoke-direct {v1, p0}, Lcom/android/phone/SipCallOptionHandler$4;-><init>(Lcom/android/phone/SipCallOptionHandler;)V
 
-    invoke-virtual {p0, v1}, Landroid/app/Activity;->runOnUiThread(Ljava/lang/Runnable;)V
+    invoke-virtual {p0, v1}, Lcom/android/phone/SipCallOptionHandler;->runOnUiThread(Ljava/lang/Runnable;)V
 
     :goto_0
     return-void
@@ -643,7 +643,7 @@
 
     move-result-object v9
 
-    invoke-virtual {v9}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v9}, Lcom/android/phone/PhoneGlobals;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v9
 
@@ -682,7 +682,7 @@
 
     move-result-object v9
 
-    invoke-virtual {v9}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v9}, Lcom/android/phone/PhoneGlobals;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v9
 
@@ -804,7 +804,7 @@
 
     invoke-static {v9, v10, v7}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/SipCallOptionHandler;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v9
 
@@ -932,7 +932,7 @@
 
     invoke-direct {v0, v7}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {p0, v0}, Landroid/content/ContextWrapper;->sendBroadcast(Landroid/content/Intent;)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/SipCallOptionHandler;->sendBroadcast(Landroid/content/Intent;)V
 
     const-string v7, "SipCallOptionHandler"
 
@@ -1000,7 +1000,7 @@
 
     invoke-virtual {v4, v7, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
-    invoke-virtual {p0, v4}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v4}, Lcom/android/phone/SipCallOptionHandler;->startActivity(Landroid/content/Intent;)V
 
     :goto_5
     return-void
@@ -1015,7 +1015,7 @@
 
     move-result-object v9
 
-    invoke-virtual {v9}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v9}, Lcom/android/phone/PhoneGlobals;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v9
 
@@ -1097,7 +1097,7 @@
 
     const-string v4, "connectivity"
 
-    invoke-virtual {p0, v4}, Landroid/app/Activity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v4}, Lcom/android/phone/SipCallOptionHandler;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -1153,7 +1153,7 @@
 
     invoke-direct {v0, p0}, Lcom/android/phone/SipCallOptionHandler$2;-><init>(Lcom/android/phone/SipCallOptionHandler;)V
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->runOnUiThread(Ljava/lang/Runnable;)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/SipCallOptionHandler;->runOnUiThread(Ljava/lang/Runnable;)V
 
     return-void
 .end method
@@ -1194,7 +1194,7 @@
     .locals 0
     .param p1    # Landroid/content/DialogInterface;
 
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/SipCallOptionHandler;->finish()V
 
     return-void
 .end method
@@ -1212,7 +1212,7 @@
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setVisibility(I)V
 
     :goto_0
     return-void
@@ -1222,7 +1222,7 @@
 
     const/4 v1, 0x4
 
-    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setVisibility(I)V
 
     goto :goto_0
 .end method
@@ -1236,7 +1236,7 @@
 
     if-ne p2, v0, :cond_0
 
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/SipCallOptionHandler;->finish()V
 
     :goto_0
     return-void
@@ -1250,7 +1250,7 @@
 
     if-ne p1, v0, :cond_1
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/SipCallOptionHandler;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -1286,7 +1286,7 @@
 
     const v1, 0x7f090216
 
-    invoke-virtual {p0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v1}, Lcom/android/phone/SipCallOptionHandler;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -1350,7 +1350,7 @@
     if-ne p1, v0, :cond_5
 
     :cond_4
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/SipCallOptionHandler;->finish()V
 
     goto :goto_0
 
@@ -1369,10 +1369,10 @@
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/SipCallOptionHandler;->startActivity(Landroid/content/Intent;)V
 
     :cond_6
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/SipCallOptionHandler;->finish()V
 
     goto/16 :goto_0
 .end method
@@ -1389,7 +1389,7 @@
 
     invoke-static {v10, v11}, Landroid/util/Slog;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/phone/SipCallOptionHandler;->getIntent()Landroid/content/Intent;
 
     move-result-object v2
 
@@ -1447,7 +1447,7 @@
 
     invoke-static {v10, v11}, Lcom/android/phone/Log;->wtf(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/SipCallOptionHandler;->finish()V
 
     :goto_0
     return-void
@@ -1467,7 +1467,7 @@
 
     if-nez v10, :cond_1
 
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/SipCallOptionHandler;->finish()V
 
     goto :goto_0
 
@@ -1490,7 +1490,7 @@
 
     const/4 v10, 0x1
 
-    invoke-virtual {p0, v10}, Landroid/app/Activity;->setRequestedOrientation(I)V
+    invoke-virtual {p0, v10}, Lcom/android/phone/SipCallOptionHandler;->setRequestedOrientation(I)V
 
     :cond_2
     invoke-static {}, Lcom/android/phone/PhoneUtils;->isVoipSupported()Z
@@ -1797,7 +1797,7 @@
 
     const/4 v10, 0x4
 
-    invoke-virtual {p0, v10}, Landroid/app/Activity;->showDialog(I)V
+    invoke-virtual {p0, v10}, Lcom/android/phone/SipCallOptionHandler;->showDialog(I)V
 
     goto/16 :goto_0
 
@@ -1825,14 +1825,14 @@
 
     const/4 v10, 0x3
 
-    invoke-virtual {p0, v10}, Landroid/app/Activity;->showDialog(I)V
+    invoke-virtual {p0, v10}, Lcom/android/phone/SipCallOptionHandler;->showDialog(I)V
 
     goto/16 :goto_0
 
     :cond_e
     const-string v10, "keyguard"
 
-    invoke-virtual {p0, v10}, Landroid/app/Activity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v10}, Lcom/android/phone/SipCallOptionHandler;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v6
 
@@ -1860,7 +1860,7 @@
 
     const/4 v10, 0x0
 
-    invoke-virtual {p0, v10}, Landroid/app/Activity;->showDialog(I)V
+    invoke-virtual {p0, v10}, Lcom/android/phone/SipCallOptionHandler;->showDialog(I)V
 
     goto/16 :goto_0
 
@@ -2207,7 +2207,7 @@
 
     invoke-static {v4, v5}, Lcom/android/phone/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-virtual {p0}, Landroid/app/Activity;->isFinishing()Z
+    invoke-virtual {p0}, Lcom/android/phone/SipCallOptionHandler;->isFinishing()Z
 
     move-result v4
 
@@ -2238,7 +2238,7 @@
     goto :goto_1
 
     :cond_2
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/SipCallOptionHandler;->finish()V
 
     goto :goto_0
 .end method

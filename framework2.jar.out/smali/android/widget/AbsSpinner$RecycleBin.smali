@@ -90,7 +90,6 @@
 
 .method get(I)Landroid/view/View;
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Landroid/widget/AbsSpinner$RecycleBin;->mScrapHeap:Landroid/util/SparseArray;
 
@@ -112,8 +111,6 @@
 
 .method public put(ILandroid/view/View;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/View;
 
     iget-object v0, p0, Landroid/widget/AbsSpinner$RecycleBin;->mScrapHeap:Landroid/util/SparseArray;
 

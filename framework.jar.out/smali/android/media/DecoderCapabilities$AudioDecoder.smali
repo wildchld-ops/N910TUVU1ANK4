@@ -71,7 +71,6 @@
 
 .method public static valueOf(Ljava/lang/String;)Landroid/media/DecoderCapabilities$AudioDecoder;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-class v0, Landroid/media/DecoderCapabilities$AudioDecoder;
 

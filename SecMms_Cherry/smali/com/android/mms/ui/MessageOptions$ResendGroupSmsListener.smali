@@ -32,10 +32,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/mms/ui/MessageOptions;Lcom/android/mms/ui/MessageItem;[Ljava/lang/String;Lcom/android/mms/data/Conversation;Z)V
     .locals 1
-    .param p2    # Lcom/android/mms/ui/MessageItem;
-    .param p3    # [Ljava/lang/String;
-    .param p4    # Lcom/android/mms/data/Conversation;
-    .param p5    # Z
 
     iput-object p1, p0, Lcom/android/mms/ui/MessageOptions$ResendGroupSmsListener;->this$0:Lcom/android/mms/ui/MessageOptions;
 
@@ -62,8 +58,6 @@
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 4
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/mms/ui/MessageOptions$ResendGroupSmsListener;->this$0:Lcom/android/mms/ui/MessageOptions;
 

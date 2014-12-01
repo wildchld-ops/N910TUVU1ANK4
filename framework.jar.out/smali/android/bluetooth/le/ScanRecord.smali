@@ -61,13 +61,6 @@
 # direct methods
 .method private constructor <init>(Ljava/util/List;Landroid/os/ParcelUuid;[BI[BIILjava/lang/String;)V
     .locals 0
-    .param p2    # Landroid/os/ParcelUuid;
-    .param p3    # [B
-    .param p4    # I
-    .param p5    # [B
-    .param p6    # I
-    .param p7    # I
-    .param p8    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -105,9 +98,6 @@
 
 .method private static extractBytes([BII)[B
     .locals 2
-    .param p0    # [B
-    .param p1    # I
-    .param p2    # I
 
     new-array v0, p2, [B
 
@@ -120,7 +110,6 @@
 
 .method public static getManudatCount([B)I
     .locals 12
-    .param p0    # [B
 
     const/4 v8, 0x0
 
@@ -241,7 +230,6 @@
 
 .method public static getManudataList([B)Ljava/util/ArrayList;
     .locals 13
-    .param p0    # [B
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([B)",
@@ -389,7 +377,6 @@
 
 .method public static parseFromBytes([B)Landroid/bluetooth/le/ScanRecord;
     .locals 22
-    .param p0    # [B
 
     if-nez p0, :cond_0
 
@@ -668,10 +655,6 @@
 
 .method private static parseServiceUuid([BIIILjava/util/List;)I
     .locals 2
-    .param p0    # [B
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([BIII",

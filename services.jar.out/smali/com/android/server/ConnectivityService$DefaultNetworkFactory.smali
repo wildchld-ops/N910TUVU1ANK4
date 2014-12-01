@@ -26,8 +26,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/os/Handler;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/Handler;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,8 +40,6 @@
 # virtual methods
 .method public createTracker(ILandroid/net/NetworkConfig;)Landroid/net/NetworkStateTracker;
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/net/NetworkConfig;
 
     iget v0, p2, Landroid/net/NetworkConfig;->radio:I
 

@@ -58,7 +58,7 @@
 
     const/4 v0, 0x0
 
-    invoke-virtual {p0, v0}, Landroid/content/BroadcastReceiver;->setResultCode(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/PhoneGlobals$12;->setResultCode(I)V
 
     :cond_0
     return-void

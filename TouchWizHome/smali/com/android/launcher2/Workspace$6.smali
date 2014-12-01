@@ -21,7 +21,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/launcher2/Workspace;Ljava/lang/String;)V
     .locals 0
-    .param p2    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/launcher2/Workspace$6;->this$0:Lcom/android/launcher2/Workspace;
 

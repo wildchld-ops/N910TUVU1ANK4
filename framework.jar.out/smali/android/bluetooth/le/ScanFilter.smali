@@ -70,17 +70,6 @@
 
 .method private constructor <init>(Ljava/lang/String;Ljava/lang/String;Landroid/os/ParcelUuid;Landroid/os/ParcelUuid;[B[BI[B[BII)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/os/ParcelUuid;
-    .param p4    # Landroid/os/ParcelUuid;
-    .param p5    # [B
-    .param p6    # [B
-    .param p7    # I
-    .param p8    # [B
-    .param p9    # [B
-    .param p10    # I
-    .param p11    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -111,18 +100,6 @@
 
 .method synthetic constructor <init>(Ljava/lang/String;Ljava/lang/String;Landroid/os/ParcelUuid;Landroid/os/ParcelUuid;[B[BI[B[BIILandroid/bluetooth/le/ScanFilter$1;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/os/ParcelUuid;
-    .param p4    # Landroid/os/ParcelUuid;
-    .param p5    # [B
-    .param p6    # [B
-    .param p7    # I
-    .param p8    # [B
-    .param p9    # [B
-    .param p10    # I
-    .param p11    # I
-    .param p12    # Landroid/bluetooth/le/ScanFilter$1;
 
     invoke-direct/range {p0 .. p11}, Landroid/bluetooth/le/ScanFilter;-><init>(Ljava/lang/String;Ljava/lang/String;Landroid/os/ParcelUuid;Landroid/os/ParcelUuid;[B[BI[B[BII)V
 
@@ -131,9 +108,6 @@
 
 .method private matchesPartialData([B[B[B)Z
     .locals 5
-    .param p1    # [B
-    .param p2    # [B
-    .param p3    # [B
 
     const/4 v1, 0x0
 
@@ -195,9 +169,6 @@
 
 .method private matchesServiceUuid(Ljava/util/UUID;Ljava/util/UUID;Ljava/util/UUID;)Z
     .locals 7
-    .param p1    # Ljava/util/UUID;
-    .param p2    # Ljava/util/UUID;
-    .param p3    # Ljava/util/UUID;
 
     const/4 v0, 0x0
 
@@ -267,8 +238,6 @@
 
 .method private matchesServiceUuids(Landroid/os/ParcelUuid;Landroid/os/ParcelUuid;Ljava/util/List;)Z
     .locals 7
-    .param p1    # Landroid/os/ParcelUuid;
-    .param p2    # Landroid/os/ParcelUuid;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -361,7 +330,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 5
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x1
 
@@ -682,7 +650,6 @@
 
 .method public matches(Landroid/bluetooth/le/ScanResult;)Z
     .locals 18
-    .param p1    # Landroid/bluetooth/le/ScanResult;
 
     if-nez p1, :cond_0
 
@@ -1194,7 +1161,6 @@
 
 .method public toBytes(I)[B
     .locals 3
-    .param p1    # I
 
     const/4 v1, 0x4
 
@@ -1403,8 +1369,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 3
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     const/4 v2, 0x1
 

@@ -27,10 +27,6 @@
 # direct methods
 .method constructor <init>(ILjava/lang/String;Landroid/app/ITransientNotification;I)V
     .locals 0
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/app/ITransientNotification;
-    .param p4    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -49,8 +45,6 @@
 # virtual methods
 .method dump(Ljava/io/PrintWriter;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/io/PrintWriter;
-    .param p2    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -143,7 +137,6 @@
 
 .method update(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/NotificationManagerService$ToastRecord;->duration:I
 

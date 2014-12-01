@@ -27,7 +27,6 @@
 # virtual methods
 .method public dispatchChange(Z)V
     .locals 1
-    .param p1    # Z
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -40,8 +39,6 @@
 
 .method public dispatchChange(ZLandroid/net/Uri;)V
     .locals 4
-    .param p1    # Z
-    .param p2    # Landroid/net/Uri;
 
     iget-object v3, p0, Landroid/database/Observable;->mObservers:Ljava/util/ArrayList;
 
@@ -101,7 +98,6 @@
 
 .method public notifyChange(Z)V
     .locals 4
-    .param p1    # Z
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -155,7 +151,6 @@
 
 .method public registerObserver(Landroid/database/ContentObserver;)V
     .locals 0
-    .param p1    # Landroid/database/ContentObserver;
 
     invoke-super {p0, p1}, Landroid/database/Observable;->registerObserver(Ljava/lang/Object;)V
 
@@ -164,7 +159,6 @@
 
 .method public bridge synthetic registerObserver(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Landroid/database/ContentObserver;
 

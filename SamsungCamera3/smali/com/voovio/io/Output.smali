@@ -14,8 +14,6 @@
 
 .method public static WriteBooleanArray(Lcom/voovio/io/LittleEndianDataOutputStream;[Z)V
     .locals 3
-    .param p0    # Lcom/voovio/io/LittleEndianDataOutputStream;
-    .param p1    # [Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -53,8 +51,6 @@
 
 .method public static WriteFloatArray(Lcom/voovio/io/LittleEndianDataOutputStream;[F)V
     .locals 3
-    .param p0    # Lcom/voovio/io/LittleEndianDataOutputStream;
-    .param p1    # [F
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -82,8 +78,6 @@
 
 .method public static WriteImageToFile([BLjava/io/File;)V
     .locals 2
-    .param p0    # [B
-    .param p1    # Ljava/io/File;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -122,8 +116,6 @@
 
 .method public static WriteIntArray(Lcom/voovio/io/LittleEndianDataOutputStream;[I)V
     .locals 3
-    .param p0    # Lcom/voovio/io/LittleEndianDataOutputStream;
-    .param p1    # [I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -151,8 +143,6 @@
 
 .method public static WritePoint(Lcom/voovio/io/LittleEndianDataOutputStream;Lcom/voovio/geometry/Point;)V
     .locals 1
-    .param p0    # Lcom/voovio/io/LittleEndianDataOutputStream;
-    .param p1    # Lcom/voovio/geometry/Point;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -172,8 +162,6 @@
 
 .method public static WriteString(Lcom/voovio/io/LittleEndianDataOutputStream;Ljava/lang/String;)V
     .locals 3
-    .param p0    # Lcom/voovio/io/LittleEndianDataOutputStream;
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -203,8 +191,6 @@
 
 .method public static WriteVector3(Lcom/voovio/io/LittleEndianDataOutputStream;Lcom/voovio/voo3d/data/Vector3;)V
     .locals 1
-    .param p0    # Lcom/voovio/io/LittleEndianDataOutputStream;
-    .param p1    # Lcom/voovio/voo3d/data/Vector3;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -228,8 +214,6 @@
 
 .method public static WriteVector3Array(Lcom/voovio/io/LittleEndianDataOutputStream;[Lcom/voovio/voo3d/data/Vector3;)V
     .locals 4
-    .param p0    # Lcom/voovio/io/LittleEndianDataOutputStream;
-    .param p1    # [Lcom/voovio/voo3d/data/Vector3;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

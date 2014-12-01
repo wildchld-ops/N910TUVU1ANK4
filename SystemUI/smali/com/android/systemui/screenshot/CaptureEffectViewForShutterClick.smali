@@ -35,8 +35,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;I)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     const/16 v1, 0xe
 
@@ -91,8 +89,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/16 v1, 0xe
 
@@ -133,7 +129,6 @@
 
 .method static synthetic access$000(Lcom/android/systemui/screenshot/CaptureEffectViewForShutterClick;)Lcom/android/systemui/screenshot/CaptureEffectViewForShutterClick$OnCaptureAnimationListener;
     .locals 1
-    .param p0    # Lcom/android/systemui/screenshot/CaptureEffectViewForShutterClick;
 
     iget-object v0, p0, Lcom/android/systemui/screenshot/CaptureEffectViewForShutterClick;->mCaptureAnimationListener:Lcom/android/systemui/screenshot/CaptureEffectViewForShutterClick$OnCaptureAnimationListener;
 
@@ -144,7 +139,6 @@
 # virtual methods
 .method public onDraw(Landroid/graphics/Canvas;)V
     .locals 8
-    .param p1    # Landroid/graphics/Canvas;
 
     iget-boolean v0, p0, Lcom/android/systemui/screenshot/CaptureEffectViewForShutterClick;->isRectInit:Z
 
@@ -222,7 +216,6 @@
 
 .method public setOnCaptureAnimationListener(Lcom/android/systemui/screenshot/CaptureEffectViewForShutterClick$OnCaptureAnimationListener;)V
     .locals 0
-    .param p1    # Lcom/android/systemui/screenshot/CaptureEffectViewForShutterClick$OnCaptureAnimationListener;
 
     iput-object p1, p0, Lcom/android/systemui/screenshot/CaptureEffectViewForShutterClick;->mCaptureAnimationListener:Lcom/android/systemui/screenshot/CaptureEffectViewForShutterClick$OnCaptureAnimationListener;
 

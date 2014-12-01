@@ -130,13 +130,6 @@
 
 .method private getSpanForWidget(IIII[ILcom/android/launcher2/WorkspaceSpanCalculator$SpanCountCalculator;Z)[I
     .locals 14
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # [I
-    .param p6    # Lcom/android/launcher2/WorkspaceSpanCalculator$SpanCountCalculator;
-    .param p7    # Z
 
     if-eqz p5, :cond_0
 
@@ -334,7 +327,6 @@
 
 .method private useGEDMode(Landroid/appwidget/AppWidgetProviderInfo;)Z
     .locals 1
-    .param p1    # Landroid/appwidget/AppWidgetProviderInfo;
 
     instance-of v0, p1, Lcom/samsung/surfacewidget/SurfaceWidgetProviderInfo;
 
@@ -353,7 +345,6 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/android/launcher2/WorkspaceSpanCalculator;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-class v0, Lcom/android/launcher2/WorkspaceSpanCalculator;
 
@@ -384,7 +375,6 @@
 # virtual methods
 .method public getPaddingForWidget(Landroid/content/ComponentName;)Lcom/android/launcher2/WorkspaceSpanCalculator$Padding;
     .locals 7
-    .param p1    # Landroid/content/ComponentName;
 
     iget-object v2, p0, Lcom/android/launcher2/WorkspaceSpanCalculator;->mPaddingZero:Lcom/android/launcher2/WorkspaceSpanCalculator$Padding;
 
@@ -427,8 +417,6 @@
 
 .method public getResizeSpanForWidget(Landroid/appwidget/AppWidgetProviderInfo;[I)[I
     .locals 13
-    .param p1    # Landroid/appwidget/AppWidgetProviderInfo;
-    .param p2    # [I
 
     if-eqz p2, :cond_0
 
@@ -609,10 +597,6 @@
 
 .method public getSpanForAppWidget(Landroid/appwidget/AppWidgetProviderInfo;II[I)[I
     .locals 8
-    .param p1    # Landroid/appwidget/AppWidgetProviderInfo;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # [I
 
     invoke-direct {p0, p1}, Lcom/android/launcher2/WorkspaceSpanCalculator;->useGEDMode(Landroid/appwidget/AppWidgetProviderInfo;)Z
 
@@ -641,11 +625,6 @@
 
 .method public getSpanForSamsungWidget(IIII[I)[I
     .locals 8
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # [I
 
     iget-object v6, p0, Lcom/android/launcher2/WorkspaceSpanCalculator;->mSpanCalcRoundUp:Lcom/android/launcher2/WorkspaceSpanCalculator$SpanCountCalculatorRoundUp;
 
@@ -672,9 +651,6 @@
 
 .method public getSpanForSurfaceWidget(II[I)[I
     .locals 8
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [I
 
     iget-object v6, p0, Lcom/android/launcher2/WorkspaceSpanCalculator;->mSpanCalcRoundUp:Lcom/android/launcher2/WorkspaceSpanCalculator$SpanCountCalculatorRoundUp;
 
@@ -701,8 +677,6 @@
 
 .method public getSpanForWidget(Landroid/appwidget/AppWidgetProviderInfo;[I)[I
     .locals 12
-    .param p1    # Landroid/appwidget/AppWidgetProviderInfo;
-    .param p2    # [I
 
     iget-object v0, p1, Landroid/appwidget/AppWidgetProviderInfo;->provider:Landroid/content/ComponentName;
 
@@ -857,7 +831,6 @@
 
 .method public setLauncherApplication(Lcom/android/launcher2/LauncherApplication;)V
     .locals 6
-    .param p1    # Lcom/android/launcher2/LauncherApplication;
 
     invoke-virtual {p1}, Lcom/android/launcher2/LauncherApplication;->getResources()Landroid/content/res/Resources;
 
@@ -1024,10 +997,6 @@
 
 .method public updateWidgetSizeRanges(Landroid/appwidget/AppWidgetHostView;Lcom/android/launcher2/Launcher;II)V
     .locals 10
-    .param p1    # Landroid/appwidget/AppWidgetHostView;
-    .param p2    # Lcom/android/launcher2/Launcher;
-    .param p3    # I
-    .param p4    # I
 
     sget-boolean v0, Lcom/android/launcher2/Launcher;->isHelpAppRunning:Z
 

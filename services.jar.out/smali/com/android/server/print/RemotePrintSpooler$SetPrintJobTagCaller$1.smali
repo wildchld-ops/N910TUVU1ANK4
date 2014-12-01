@@ -35,8 +35,6 @@
 # virtual methods
 .method public onSetPrintJobTagResult(ZI)V
     .locals 2
-    .param p1    # Z
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/server/print/RemotePrintSpooler$SetPrintJobTagCaller$1;->this$0:Lcom/android/server/print/RemotePrintSpooler$SetPrintJobTagCaller;
 

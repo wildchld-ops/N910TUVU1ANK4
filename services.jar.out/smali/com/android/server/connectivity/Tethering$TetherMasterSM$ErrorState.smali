@@ -35,7 +35,6 @@
 # virtual methods
 .method notify(I)V
     .locals 4
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/connectivity/Tethering$TetherMasterSM$ErrorState;->mErrorNotification:I
 
@@ -77,7 +76,6 @@
 
 .method public processMessage(Landroid/os/Message;)Z
     .locals 3
-    .param p1    # Landroid/os/Message;
 
     const/4 v0, 0x1
 

@@ -57,11 +57,6 @@
 # direct methods
 .method public constructor <init>(Lcom/diotek/ime/framework/language/ContextAwareLanguageManager;ILjava/lang/String;IIZ)V
     .locals 6
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Z
 
     const/4 v5, 0x0
 
@@ -156,9 +151,6 @@
 
 .method public constructor <init>(Lcom/diotek/ime/framework/language/ContextAwareLanguageManager;ILjava/lang/String;Ljava/lang/Long;Landroid/util/SparseArray;)V
     .locals 3
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/Long;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -222,9 +214,6 @@
 
 .method public constructor <init>(Lcom/diotek/ime/framework/language/ContextAwareLanguageManager;ILjava/lang/String;Ljava/lang/Long;Ljava/util/LinkedList;)V
     .locals 4
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/Long;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -286,8 +275,6 @@
 
 .method private increaseLanguagePreference(II)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
 
     const/4 v1, 0x0
 
@@ -463,7 +450,6 @@
 
 .method public findSubItem(I)Z
     .locals 5
-    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -538,7 +524,6 @@
 
 .method public getBestPreferredLanguageID(I)I
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lcom/diotek/ime/framework/language/ContextAwareLanguageManager$ContextAwareLanguageDataStructure;->mCurPreferredLanguageList:Ljava/util/LinkedList;
 
@@ -684,7 +669,6 @@
 
 .method public getPreferredLanguageListSet(I)Lcom/diotek/ime/framework/language/ContextAwareLanguageManager$PreferredLanguageSet;
     .locals 1
-    .param p1    # I
 
     iget-boolean v0, p0, Lcom/diotek/ime/framework/language/ContextAwareLanguageManager$ContextAwareLanguageDataStructure;->mUseSubItem:Z
 
@@ -779,8 +763,6 @@
 
 .method public makeSubLanguageItem(II)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     const/4 v5, 0x1
 
@@ -846,7 +828,6 @@
 
 .method public setIndex(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/diotek/ime/framework/language/ContextAwareLanguageManager$ContextAwareLanguageDataStructure;->mIndex:I
 
@@ -855,7 +836,6 @@
 
 .method public setTimestamp(Ljava/lang/Long;)V
     .locals 2
-    .param p1    # Ljava/lang/Long;
 
     invoke-virtual {p1}, Ljava/lang/Long;->longValue()J
 
@@ -868,7 +848,6 @@
 
 .method public updatePreferredLanguage(I)V
     .locals 5
-    .param p1    # I
 
     const/4 v2, -0x1
 

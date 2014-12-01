@@ -554,7 +554,6 @@
 
 .method public processMessage(Landroid/os/Message;)Z
     .locals 25
-    .param p1    # Landroid/os/Message;
 
     move-object/from16 v0, p0
 

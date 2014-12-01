@@ -46,7 +46,7 @@
 
     iget-object v0, p0, Lcom/android/phone/PhotoringPhrasesEdit$3;->this$0:Lcom/android/phone/PhotoringPhrasesEdit;
 
-    invoke-virtual {v0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {v0}, Lcom/android/phone/PhotoringPhrasesEdit;->finish()V
 
     return-void
 .end method

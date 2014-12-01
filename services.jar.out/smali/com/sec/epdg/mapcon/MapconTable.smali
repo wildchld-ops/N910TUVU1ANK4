@@ -51,8 +51,6 @@
 
 .method private declared-synchronized addToMap(Ljava/lang/String;Ljava/lang/String;)Ljava/util/EnumMap;
     .locals 11
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -213,7 +211,6 @@
 
 .method private declared-synchronized getMapconRat(Ljava/lang/String;)[Lcom/sec/epdg/mapcon/MapconConstants$MapconRat;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -248,7 +245,6 @@
 # virtual methods
 .method public declared-synchronized IsLteOnlyAllowed(Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -300,7 +296,6 @@
 
 .method public declared-synchronized IsWifiOnlyAllowed(Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -352,7 +347,6 @@
 
 .method public declared-synchronized createMapconTable(Landroid/content/Context;)Z
     .locals 11
-    .param p1    # Landroid/content/Context;
 
     const/4 v9, 0x1
 
@@ -507,11 +501,6 @@
 
 .method public declared-synchronized notifyHandoverResult(Landroid/content/Context;Lcom/sec/epdg/mapcon/MapconConstants$MapconApnType;Lcom/sec/epdg/mapcon/MapconConstants$MapconRat;ZZ)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/sec/epdg/mapcon/MapconConstants$MapconApnType;
-    .param p3    # Lcom/sec/epdg/mapcon/MapconConstants$MapconRat;
-    .param p4    # Z
-    .param p5    # Z
 
     monitor-enter p0
 
@@ -548,7 +537,6 @@
 
 .method public declared-synchronized resetAppPolicy(Lcom/sec/epdg/mapcon/MapconConstants$MapconApnType;)V
     .locals 1
-    .param p1    # Lcom/sec/epdg/mapcon/MapconConstants$MapconApnType;
 
     monitor-enter p0
 
@@ -575,10 +563,6 @@
 
 .method public declared-synchronized setAppPolicy(Landroid/content/Context;Lcom/sec/epdg/mapcon/MapconConstants$MapconRat;Lcom/sec/epdg/mapcon/MapconConstants$MapconApnType;Landroid/app/PendingIntent;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/sec/epdg/mapcon/MapconConstants$MapconRat;
-    .param p3    # Lcom/sec/epdg/mapcon/MapconConstants$MapconApnType;
-    .param p4    # Landroid/app/PendingIntent;
 
     monitor-enter p0
 
@@ -605,7 +589,6 @@
 
 .method public declared-synchronized shouldMoveToLte(Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -666,7 +649,6 @@
 
 .method public declared-synchronized shouldMoveToWifi(Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -885,9 +867,6 @@
 
 .method public updateMapconTable(Landroid/content/Context;Ljava/lang/String;Lcom/sec/epdg/mapcon/MapconConstants$MapconMode;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/sec/epdg/mapcon/MapconConstants$MapconMode;
 
     new-instance v0, Landroid/content/ContentValues;
 
@@ -943,9 +922,6 @@
 
 .method public updateMapconTable(Landroid/content/Context;[Ljava/lang/String;Lcom/sec/epdg/mapcon/MapconConstants$MapconMode;)V
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # Lcom/sec/epdg/mapcon/MapconConstants$MapconMode;
 
     array-length v1, p2
 

@@ -91,7 +91,6 @@
 
 .method static synthetic access$100(Landroid/content/SyncRequest$Builder;)J
     .locals 2
-    .param p0    # Landroid/content/SyncRequest$Builder;
 
     iget-wide v0, p0, Landroid/content/SyncRequest$Builder;->mSyncFlexTimeSecs:J
 
@@ -100,7 +99,6 @@
 
 .method static synthetic access$1000(Landroid/content/SyncRequest$Builder;)Landroid/os/Bundle;
     .locals 1
-    .param p0    # Landroid/content/SyncRequest$Builder;
 
     iget-object v0, p0, Landroid/content/SyncRequest$Builder;->mSyncConfigExtras:Landroid/os/Bundle;
 
@@ -109,7 +107,6 @@
 
 .method static synthetic access$1100(Landroid/content/SyncRequest$Builder;)Z
     .locals 1
-    .param p0    # Landroid/content/SyncRequest$Builder;
 
     iget-boolean v0, p0, Landroid/content/SyncRequest$Builder;->mDisallowMetered:Z
 
@@ -118,7 +115,6 @@
 
 .method static synthetic access$1200(Landroid/content/SyncRequest$Builder;)J
     .locals 2
-    .param p0    # Landroid/content/SyncRequest$Builder;
 
     iget-wide v0, p0, Landroid/content/SyncRequest$Builder;->mTxBytes:J
 
@@ -127,7 +123,6 @@
 
 .method static synthetic access$1300(Landroid/content/SyncRequest$Builder;)J
     .locals 2
-    .param p0    # Landroid/content/SyncRequest$Builder;
 
     iget-wide v0, p0, Landroid/content/SyncRequest$Builder;->mRxBytes:J
 
@@ -136,7 +131,6 @@
 
 .method static synthetic access$200(Landroid/content/SyncRequest$Builder;)J
     .locals 2
-    .param p0    # Landroid/content/SyncRequest$Builder;
 
     iget-wide v0, p0, Landroid/content/SyncRequest$Builder;->mSyncRunTimeSecs:J
 
@@ -145,7 +139,6 @@
 
 .method static synthetic access$300(Landroid/content/SyncRequest$Builder;)Landroid/accounts/Account;
     .locals 1
-    .param p0    # Landroid/content/SyncRequest$Builder;
 
     iget-object v0, p0, Landroid/content/SyncRequest$Builder;->mAccount:Landroid/accounts/Account;
 
@@ -154,7 +147,6 @@
 
 .method static synthetic access$400(Landroid/content/SyncRequest$Builder;)Ljava/lang/String;
     .locals 1
-    .param p0    # Landroid/content/SyncRequest$Builder;
 
     iget-object v0, p0, Landroid/content/SyncRequest$Builder;->mAuthority:Ljava/lang/String;
 
@@ -163,7 +155,6 @@
 
 .method static synthetic access$500(Landroid/content/SyncRequest$Builder;)Landroid/content/ComponentName;
     .locals 1
-    .param p0    # Landroid/content/SyncRequest$Builder;
 
     iget-object v0, p0, Landroid/content/SyncRequest$Builder;->mComponentName:Landroid/content/ComponentName;
 
@@ -172,7 +163,6 @@
 
 .method static synthetic access$600(Landroid/content/SyncRequest$Builder;)I
     .locals 1
-    .param p0    # Landroid/content/SyncRequest$Builder;
 
     iget v0, p0, Landroid/content/SyncRequest$Builder;->mSyncType:I
 
@@ -181,7 +171,6 @@
 
 .method static synthetic access$700(Landroid/content/SyncRequest$Builder;)I
     .locals 1
-    .param p0    # Landroid/content/SyncRequest$Builder;
 
     iget v0, p0, Landroid/content/SyncRequest$Builder;->mSyncTarget:I
 
@@ -190,7 +179,6 @@
 
 .method static synthetic access$800(Landroid/content/SyncRequest$Builder;)Z
     .locals 1
-    .param p0    # Landroid/content/SyncRequest$Builder;
 
     iget-boolean v0, p0, Landroid/content/SyncRequest$Builder;->mExpedited:Z
 
@@ -199,7 +187,6 @@
 
 .method static synthetic access$900(Landroid/content/SyncRequest$Builder;)Landroid/os/Bundle;
     .locals 1
-    .param p0    # Landroid/content/SyncRequest$Builder;
 
     iget-object v0, p0, Landroid/content/SyncRequest$Builder;->mCustomExtras:Landroid/os/Bundle;
 
@@ -208,8 +195,6 @@
 
 .method private setupInterval(JJ)V
     .locals 2
-    .param p1    # J
-    .param p3    # J
 
     cmp-long v0, p3, p1
 
@@ -233,7 +218,6 @@
 
 .method private validatePeriodicExtras(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v1, 0x0
 
@@ -497,7 +481,6 @@
 
 .method public setDisallowMetered(Z)Landroid/content/SyncRequest$Builder;
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/content/SyncRequest$Builder;->mDisallowMetered:Z
 
@@ -506,7 +489,6 @@
 
 .method public setExpedited(Z)Landroid/content/SyncRequest$Builder;
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/content/SyncRequest$Builder;->mExpedited:Z
 
@@ -515,7 +497,6 @@
 
 .method public setExtras(Landroid/os/Bundle;)Landroid/content/SyncRequest$Builder;
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     iput-object p1, p0, Landroid/content/SyncRequest$Builder;->mCustomExtras:Landroid/os/Bundle;
 
@@ -524,7 +505,6 @@
 
 .method public setIgnoreBackoff(Z)Landroid/content/SyncRequest$Builder;
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/content/SyncRequest$Builder;->mIgnoreBackoff:Z
 
@@ -533,7 +513,6 @@
 
 .method public setIgnoreSettings(Z)Landroid/content/SyncRequest$Builder;
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/content/SyncRequest$Builder;->mIgnoreSettings:Z
 
@@ -542,7 +521,6 @@
 
 .method public setManual(Z)Landroid/content/SyncRequest$Builder;
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/content/SyncRequest$Builder;->mIsManual:Z
 
@@ -551,7 +529,6 @@
 
 .method public setNoRetry(Z)Landroid/content/SyncRequest$Builder;
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/content/SyncRequest$Builder;->mNoRetry:Z
 
@@ -560,7 +537,6 @@
 
 .method public setPriority(I)Landroid/content/SyncRequest$Builder;
     .locals 2
-    .param p1    # I
 
     const/4 v0, -0x2
 
@@ -587,8 +563,6 @@
 
 .method public setSyncAdapter(Landroid/accounts/Account;Ljava/lang/String;)Landroid/content/SyncRequest$Builder;
     .locals 2
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # Ljava/lang/String;
 
     iget v0, p0, Landroid/content/SyncRequest$Builder;->mSyncTarget:I
 
@@ -637,8 +611,6 @@
 
 .method public setTransferSize(JJ)Landroid/content/SyncRequest$Builder;
     .locals 0
-    .param p1    # J
-    .param p3    # J
 
     iput-wide p1, p0, Landroid/content/SyncRequest$Builder;->mRxBytes:J
 
@@ -676,8 +648,6 @@
 
 .method public syncPeriodic(JJ)Landroid/content/SyncRequest$Builder;
     .locals 2
-    .param p1    # J
-    .param p3    # J
 
     iget v0, p0, Landroid/content/SyncRequest$Builder;->mSyncType:I
 

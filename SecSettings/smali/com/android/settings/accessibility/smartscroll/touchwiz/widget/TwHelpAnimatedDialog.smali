@@ -29,7 +29,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Lcom/android/settings/accessibility/smartscroll/touchwiz/widget/TwHelpDialog;-><init>(Landroid/content/Context;)V
 
@@ -48,8 +47,6 @@
 
 .method public constructor <init>(Landroid/content/Context;I)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/settings/accessibility/smartscroll/touchwiz/widget/TwHelpDialog;-><init>(Landroid/content/Context;I)V
 
@@ -68,9 +65,6 @@
 
 .method protected constructor <init>(Landroid/content/Context;ZLandroid/content/DialogInterface$OnCancelListener;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Z
-    .param p3    # Landroid/content/DialogInterface$OnCancelListener;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/settings/accessibility/smartscroll/touchwiz/widget/TwHelpDialog;-><init>(Landroid/content/Context;ZLandroid/content/DialogInterface$OnCancelListener;)V
 
@@ -89,7 +83,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/accessibility/smartscroll/touchwiz/widget/TwHelpAnimatedDialog;)I
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/smartscroll/touchwiz/widget/TwHelpAnimatedDialog;
 
     iget v0, p0, Lcom/android/settings/accessibility/smartscroll/touchwiz/widget/TwHelpAnimatedDialog;->mCurrentPointAnimation:I
 
@@ -98,7 +91,6 @@
 
 .method static synthetic access$008(Lcom/android/settings/accessibility/smartscroll/touchwiz/widget/TwHelpAnimatedDialog;)I
     .locals 2
-    .param p0    # Lcom/android/settings/accessibility/smartscroll/touchwiz/widget/TwHelpAnimatedDialog;
 
     iget v0, p0, Lcom/android/settings/accessibility/smartscroll/touchwiz/widget/TwHelpAnimatedDialog;->mCurrentPointAnimation:I
 
@@ -111,7 +103,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/accessibility/smartscroll/touchwiz/widget/TwHelpAnimatedDialog;)Ljava/util/List;
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/smartscroll/touchwiz/widget/TwHelpAnimatedDialog;
 
     iget-object v0, p0, Lcom/android/settings/accessibility/smartscroll/touchwiz/widget/TwHelpAnimatedDialog;->mPointAnimations:Ljava/util/List;
 
@@ -120,7 +111,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/accessibility/smartscroll/touchwiz/widget/TwHelpAnimatedDialog;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/smartscroll/touchwiz/widget/TwHelpAnimatedDialog;
 
     iget-object v0, p0, Lcom/android/settings/accessibility/smartscroll/touchwiz/widget/TwHelpAnimatedDialog;->mPointAnimationView:Landroid/view/View;
 

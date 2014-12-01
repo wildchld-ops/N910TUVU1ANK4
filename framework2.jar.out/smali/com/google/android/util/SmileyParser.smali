@@ -10,8 +10,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;Lcom/google/android/util/SmileyResources;)V
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/google/android/util/SmileyResources;
 
     const/4 v3, 0x0
 
@@ -48,7 +46,6 @@
 
 .method public getSpannableString(Landroid/content/Context;)Ljava/lang/CharSequence;
     .locals 11
-    .param p1    # Landroid/content/Context;
 
     new-instance v0, Landroid/text/SpannableStringBuilder;
 

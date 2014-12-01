@@ -77,7 +77,6 @@
 
 .method constructor <init>(Landroid/os/Parcel;)V
     .locals 3
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Landroid/app/ExtraAttr$Owner;-><init>()V
 
@@ -122,9 +121,6 @@
 
 .method private compileDataInternal(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     :goto_0
     new-instance v0, Ljava/lang/StringBuilder;
@@ -193,7 +189,6 @@
 
 .method private static declared-synchronized convertIntentFlags(Ljava/lang/String;)I
     .locals 8
-    .param p0    # Ljava/lang/String;
 
     const-class v5, Landroid/app/SpellScroll$SpellEffect;
 
@@ -512,8 +507,6 @@
 
 .method private tokenizeValues(Ljava/lang/String;Ljava/lang/String;)[Ljava/lang/String;
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     new-instance v2, Ljava/util/ArrayList;
 
@@ -565,7 +558,6 @@
 # virtual methods
 .method public addIntent(Landroid/content/Intent;)V
     .locals 2
-    .param p1    # Landroid/content/Intent;
 
     iget-object v0, p0, Landroid/app/SpellScroll$SpellEffect;->mIntents:Ljava/util/List;
 
@@ -580,7 +572,6 @@
 
 .method public compile(Ljava/util/List;Landroid/os/Bundle;)Ljava/util/List;
     .locals 26
-    .param p2    # Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1071,7 +1062,6 @@
 
 .method dump(Ljava/io/PrintWriter;)V
     .locals 4
-    .param p1    # Ljava/io/PrintWriter;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -1207,7 +1197,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 8
-    .param p1    # Ljava/lang/Object;
 
     const/4 v5, 0x0
 
@@ -1491,7 +1480,6 @@
 
 .method public setIntent(Landroid/content/Intent;)V
     .locals 2
-    .param p1    # Landroid/content/Intent;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -1508,8 +1496,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 3
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v2, p0, Landroid/app/SpellScroll$SpellEffect;->mIntents:Ljava/util/List;
 

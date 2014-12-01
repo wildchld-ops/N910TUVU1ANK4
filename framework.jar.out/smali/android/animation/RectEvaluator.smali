@@ -31,9 +31,6 @@
 # virtual methods
 .method public evaluate(FLandroid/graphics/Rect;Landroid/graphics/Rect;)Landroid/graphics/Rect;
     .locals 7
-    .param p1    # F
-    .param p2    # Landroid/graphics/Rect;
-    .param p3    # Landroid/graphics/Rect;
 
     new-instance v0, Landroid/graphics/Rect;
 
@@ -108,9 +105,6 @@
 
 .method public bridge synthetic evaluate(FLjava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # F
-    .param p2    # Ljava/lang/Object;
-    .param p3    # Ljava/lang/Object;
 
     check-cast p2, Landroid/graphics/Rect;
 

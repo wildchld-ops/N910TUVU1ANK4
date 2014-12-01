@@ -94,7 +94,6 @@
 
 .method public constructor <init>(I)V
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -134,7 +133,6 @@
 
 .method public constructor <init>(Landroid/graphics/Bitmap;)V
     .locals 2
-    .param p1    # Landroid/graphics/Bitmap;
 
     const/4 v0, 0x0
 
@@ -190,7 +188,6 @@
 
 .method static synthetic access$000(I)V
     .locals 0
-    .param p0    # I
 
     invoke-static {p0}, Landroid/graphics/Canvas;->finalizer(I)V
 
@@ -199,9 +196,6 @@
 
 .method protected static checkRange(III)V
     .locals 1
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
 
     or-int v0, p1, p2
 
@@ -368,8 +362,6 @@
 
 .method private safeCanvasSwap(IZ)V
     .locals 2
-    .param p1    # I
-    .param p2    # Z
 
     iget v0, p0, Landroid/graphics/Canvas;->mNativeCanvas:I
 
@@ -394,7 +386,6 @@
 
 .method protected static throwIfCannotDraw(Landroid/graphics/Bitmap;)V
     .locals 3
-    .param p0    # Landroid/graphics/Bitmap;
 
     invoke-virtual {p0}, Landroid/graphics/Bitmap;->isRecycled()Z
 
@@ -479,7 +470,6 @@
 # virtual methods
 .method public clipPath(Landroid/graphics/Path;)Z
     .locals 1
-    .param p1    # Landroid/graphics/Path;
 
     sget-object v0, Landroid/graphics/Region$Op;->INTERSECT:Landroid/graphics/Region$Op;
 
@@ -492,8 +482,6 @@
 
 .method public clipPath(Landroid/graphics/Path;Landroid/graphics/Region$Op;)Z
     .locals 3
-    .param p1    # Landroid/graphics/Path;
-    .param p2    # Landroid/graphics/Region$Op;
 
     iget v0, p0, Landroid/graphics/Canvas;->mNativeCanvas:I
 
@@ -515,11 +503,6 @@
 
 .method public clipRect(FFFFLandroid/graphics/Region$Op;)Z
     .locals 6
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # Landroid/graphics/Region$Op;
 
     iget v0, p0, Landroid/graphics/Canvas;->mNativeCanvas:I
 
@@ -548,8 +531,6 @@
 
 .method public clipRect(Landroid/graphics/Rect;Landroid/graphics/Region$Op;)Z
     .locals 6
-    .param p1    # Landroid/graphics/Rect;
-    .param p2    # Landroid/graphics/Region$Op;
 
     iget v0, p0, Landroid/graphics/Canvas;->mNativeCanvas:I
 
@@ -583,8 +564,6 @@
 
 .method public clipRect(Landroid/graphics/RectF;Landroid/graphics/Region$Op;)Z
     .locals 6
-    .param p1    # Landroid/graphics/RectF;
-    .param p2    # Landroid/graphics/Region$Op;
 
     iget v0, p0, Landroid/graphics/Canvas;->mNativeCanvas:I
 
@@ -607,7 +586,6 @@
 
 .method public clipRegion(Landroid/graphics/Region;)Z
     .locals 1
-    .param p1    # Landroid/graphics/Region;
 
     sget-object v0, Landroid/graphics/Region$Op;->INTERSECT:Landroid/graphics/Region$Op;
 
@@ -620,8 +598,6 @@
 
 .method public clipRegion(Landroid/graphics/Region;Landroid/graphics/Region$Op;)Z
     .locals 3
-    .param p1    # Landroid/graphics/Region;
-    .param p2    # Landroid/graphics/Region$Op;
 
     iget v0, p0, Landroid/graphics/Canvas;->mNativeCanvas:I
 
@@ -640,7 +616,6 @@
 
 .method public concat(Landroid/graphics/Matrix;)V
     .locals 2
-    .param p1    # Landroid/graphics/Matrix;
 
     if-eqz p1, :cond_0
 
@@ -656,10 +631,6 @@
 
 .method public drawARGB(IIII)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iget v0, p0, Landroid/graphics/Canvas;->mNativeCanvas:I
 
@@ -670,11 +641,6 @@
 
 .method public drawArc(Landroid/graphics/RectF;FFZLandroid/graphics/Paint;)V
     .locals 6
-    .param p1    # Landroid/graphics/RectF;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # Z
-    .param p5    # Landroid/graphics/Paint;
 
     if-nez p1, :cond_0
 
@@ -704,10 +670,6 @@
 
 .method public drawBitmap(Landroid/graphics/Bitmap;FFLandroid/graphics/Paint;)V
     .locals 9
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # Landroid/graphics/Paint;
 
     invoke-static {p1}, Landroid/graphics/Canvas;->throwIfCannotDraw(Landroid/graphics/Bitmap;)V
 
@@ -746,9 +708,6 @@
 
 .method public drawBitmap(Landroid/graphics/Bitmap;Landroid/graphics/Matrix;Landroid/graphics/Paint;)V
     .locals 4
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # Landroid/graphics/Matrix;
-    .param p3    # Landroid/graphics/Paint;
 
     iget v1, p0, Landroid/graphics/Canvas;->mNativeCanvas:I
 
@@ -777,10 +736,6 @@
 
 .method public drawBitmap(Landroid/graphics/Bitmap;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Paint;)V
     .locals 7
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # Landroid/graphics/Rect;
-    .param p3    # Landroid/graphics/Rect;
-    .param p4    # Landroid/graphics/Paint;
 
     if-nez p3, :cond_0
 
@@ -824,10 +779,6 @@
 
 .method public drawBitmap(Landroid/graphics/Bitmap;Landroid/graphics/Rect;Landroid/graphics/RectF;Landroid/graphics/Paint;)V
     .locals 8
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # Landroid/graphics/Rect;
-    .param p3    # Landroid/graphics/RectF;
-    .param p4    # Landroid/graphics/Paint;
 
     if-nez p3, :cond_0
 
@@ -873,15 +824,6 @@
 
 .method public drawBitmap([IIIFFIIZLandroid/graphics/Paint;)V
     .locals 13
-    .param p1    # [I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # F
-    .param p5    # F
-    .param p6    # I
-    .param p7    # I
-    .param p8    # Z
-    .param p9    # Landroid/graphics/Paint;
 
     if-gez p6, :cond_0
 
@@ -996,15 +938,6 @@
 
 .method public drawBitmap([IIIIIIIZLandroid/graphics/Paint;)V
     .locals 10
-    .param p1    # [I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # Z
-    .param p9    # Landroid/graphics/Paint;
 
     int-to-float v4, p4
 
@@ -1033,14 +966,6 @@
 
 .method public drawBitmapMesh(Landroid/graphics/Bitmap;II[FI[IILandroid/graphics/Paint;)V
     .locals 11
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # [F
-    .param p5    # I
-    .param p6    # [I
-    .param p7    # I
-    .param p8    # Landroid/graphics/Paint;
 
     or-int v1, p2, p3
 
@@ -1128,10 +1053,6 @@
 
 .method public drawCircle(FFFLandroid/graphics/Paint;)V
     .locals 2
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # Landroid/graphics/Paint;
 
     iget v0, p0, Landroid/graphics/Canvas;->mNativeCanvas:I
 
@@ -1144,7 +1065,6 @@
 
 .method public drawColor(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/graphics/Canvas;->mNativeCanvas:I
 
@@ -1155,8 +1075,6 @@
 
 .method public drawColor(ILandroid/graphics/PorterDuff$Mode;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/graphics/PorterDuff$Mode;
 
     iget v0, p0, Landroid/graphics/Canvas;->mNativeCanvas:I
 
@@ -1169,11 +1087,6 @@
 
 .method public drawLine(FFFFLandroid/graphics/Paint;)V
     .locals 6
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # Landroid/graphics/Paint;
 
     iget v0, p0, Landroid/graphics/Canvas;->mNativeCanvas:I
 
@@ -1197,8 +1110,6 @@
 
 .method public drawLines([FLandroid/graphics/Paint;)V
     .locals 2
-    .param p1    # [F
-    .param p2    # Landroid/graphics/Paint;
 
     const/4 v0, 0x0
 
@@ -1211,8 +1122,6 @@
 
 .method public drawOval(Landroid/graphics/RectF;Landroid/graphics/Paint;)V
     .locals 2
-    .param p1    # Landroid/graphics/RectF;
-    .param p2    # Landroid/graphics/Paint;
 
     if-nez p1, :cond_0
 
@@ -1234,7 +1143,6 @@
 
 .method public drawPaint(Landroid/graphics/Paint;)V
     .locals 2
-    .param p1    # Landroid/graphics/Paint;
 
     iget v0, p0, Landroid/graphics/Canvas;->mNativeCanvas:I
 
@@ -1247,9 +1155,6 @@
 
 .method public drawPatch(Landroid/graphics/NinePatch;Landroid/graphics/Rect;Landroid/graphics/Paint;)V
     .locals 0
-    .param p1    # Landroid/graphics/NinePatch;
-    .param p2    # Landroid/graphics/Rect;
-    .param p3    # Landroid/graphics/Paint;
 
     invoke-virtual {p1, p0, p2, p3}, Landroid/graphics/NinePatch;->drawSoftware(Landroid/graphics/Canvas;Landroid/graphics/Rect;Landroid/graphics/Paint;)V
 
@@ -1258,9 +1163,6 @@
 
 .method public drawPatch(Landroid/graphics/NinePatch;Landroid/graphics/RectF;Landroid/graphics/Paint;)V
     .locals 0
-    .param p1    # Landroid/graphics/NinePatch;
-    .param p2    # Landroid/graphics/RectF;
-    .param p3    # Landroid/graphics/Paint;
 
     invoke-virtual {p1, p0, p2, p3}, Landroid/graphics/NinePatch;->drawSoftware(Landroid/graphics/Canvas;Landroid/graphics/RectF;Landroid/graphics/Paint;)V
 
@@ -1269,8 +1171,6 @@
 
 .method public drawPath(Landroid/graphics/Path;Landroid/graphics/Paint;)V
     .locals 3
-    .param p1    # Landroid/graphics/Path;
-    .param p2    # Landroid/graphics/Paint;
 
     iget v0, p0, Landroid/graphics/Canvas;->mNativeCanvas:I
 
@@ -1287,7 +1187,6 @@
 
 .method public drawPicture(Landroid/graphics/Picture;)V
     .locals 1
-    .param p1    # Landroid/graphics/Picture;
 
     invoke-virtual {p1}, Landroid/graphics/Picture;->endRecording()V
 
@@ -1304,8 +1203,6 @@
 
 .method public drawPicture(Landroid/graphics/Picture;Landroid/graphics/Rect;)V
     .locals 3
-    .param p1    # Landroid/graphics/Picture;
-    .param p2    # Landroid/graphics/Rect;
 
     invoke-virtual {p0}, Landroid/graphics/Canvas;->save()I
 
@@ -1371,8 +1268,6 @@
 
 .method public drawPicture(Landroid/graphics/Picture;Landroid/graphics/RectF;)V
     .locals 3
-    .param p1    # Landroid/graphics/Picture;
-    .param p2    # Landroid/graphics/RectF;
 
     invoke-virtual {p0}, Landroid/graphics/Canvas;->save()I
 
@@ -1436,8 +1331,6 @@
 
 .method public drawPoints([FLandroid/graphics/Paint;)V
     .locals 2
-    .param p1    # [F
-    .param p2    # Landroid/graphics/Paint;
 
     const/4 v0, 0x0
 
@@ -1450,9 +1343,6 @@
 
 .method public drawPosText(Ljava/lang/String;[FLandroid/graphics/Paint;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # [F
-    .param p3    # Landroid/graphics/Paint;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -1486,11 +1376,6 @@
 
 .method public drawPosText([CII[FLandroid/graphics/Paint;)V
     .locals 6
-    .param p1    # [C
-    .param p2    # I
-    .param p3    # I
-    .param p4    # [F
-    .param p5    # Landroid/graphics/Paint;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -1537,9 +1422,6 @@
 
 .method public drawRGB(III)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     iget v0, p0, Landroid/graphics/Canvas;->mNativeCanvas:I
 
@@ -1550,11 +1432,6 @@
 
 .method public drawRect(FFFFLandroid/graphics/Paint;)V
     .locals 6
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # Landroid/graphics/Paint;
 
     iget v0, p0, Landroid/graphics/Canvas;->mNativeCanvas:I
 
@@ -1575,8 +1452,6 @@
 
 .method public drawRect(Landroid/graphics/Rect;Landroid/graphics/Paint;)V
     .locals 6
-    .param p1    # Landroid/graphics/Rect;
-    .param p2    # Landroid/graphics/Paint;
 
     iget v0, p1, Landroid/graphics/Rect;->left:I
 
@@ -1605,8 +1480,6 @@
 
 .method public drawRect(Landroid/graphics/RectF;Landroid/graphics/Paint;)V
     .locals 2
-    .param p1    # Landroid/graphics/RectF;
-    .param p2    # Landroid/graphics/Paint;
 
     iget v0, p0, Landroid/graphics/Canvas;->mNativeCanvas:I
 
@@ -1619,10 +1492,6 @@
 
 .method public drawRoundRect(Landroid/graphics/RectF;FFLandroid/graphics/Paint;)V
     .locals 2
-    .param p1    # Landroid/graphics/RectF;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # Landroid/graphics/Paint;
 
     if-nez p1, :cond_0
 
@@ -1644,12 +1513,6 @@
 
 .method public drawText(Ljava/lang/CharSequence;IIFFLandroid/graphics/Paint;)V
     .locals 8
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # F
-    .param p5    # F
-    .param p6    # Landroid/graphics/Paint;
 
     const/4 v2, 0x0
 
@@ -1746,10 +1609,6 @@
 
 .method public drawText(Ljava/lang/String;FFLandroid/graphics/Paint;)V
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # Landroid/graphics/Paint;
 
     invoke-virtual {p4, p4}, Landroid/graphics/Paint;->set(Landroid/graphics/Paint;)V
 
@@ -1778,12 +1637,6 @@
 
 .method public drawText(Ljava/lang/String;IIFFLandroid/graphics/Paint;)V
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # F
-    .param p5    # F
-    .param p6    # Landroid/graphics/Paint;
 
     or-int v0, p2, p3
 
@@ -1833,12 +1686,6 @@
 
 .method public drawText([CIIFFLandroid/graphics/Paint;)V
     .locals 8
-    .param p1    # [C
-    .param p2    # I
-    .param p3    # I
-    .param p4    # F
-    .param p5    # F
-    .param p6    # Landroid/graphics/Paint;
 
     or-int v0, p2, p3
 
@@ -1888,11 +1735,6 @@
 
 .method public drawTextOnPath(Ljava/lang/String;Landroid/graphics/Path;FFLandroid/graphics/Paint;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/graphics/Path;
-    .param p3    # F
-    .param p4    # F
-    .param p5    # Landroid/graphics/Paint;
 
     invoke-virtual {p5, p5}, Landroid/graphics/Paint;->set(Landroid/graphics/Paint;)V
 
@@ -1926,13 +1768,6 @@
 
 .method public drawTextOnPath([CIILandroid/graphics/Path;FFLandroid/graphics/Paint;)V
     .locals 11
-    .param p1    # [C
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/graphics/Path;
-    .param p5    # F
-    .param p6    # F
-    .param p7    # Landroid/graphics/Paint;
 
     if-ltz p2, :cond_0
 
@@ -1987,15 +1822,6 @@
 
 .method public drawTextRun(Ljava/lang/CharSequence;IIIIFFILandroid/graphics/Paint;)V
     .locals 12
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # F
-    .param p7    # F
-    .param p8    # I
-    .param p9    # Landroid/graphics/Paint;
 
     if-nez p1, :cond_0
 
@@ -2167,15 +1993,6 @@
 
 .method public drawTextRun([CIIIIFFILandroid/graphics/Paint;)V
     .locals 12
-    .param p1    # [C
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # F
-    .param p7    # F
-    .param p8    # I
-    .param p9    # Landroid/graphics/Paint;
 
     if-nez p1, :cond_0
 
@@ -2288,18 +2105,6 @@
 
 .method public drawVertices(Landroid/graphics/Canvas$VertexMode;I[FI[FI[II[SIILandroid/graphics/Paint;)V
     .locals 15
-    .param p1    # Landroid/graphics/Canvas$VertexMode;
-    .param p2    # I
-    .param p3    # [F
-    .param p4    # I
-    .param p5    # [F
-    .param p6    # I
-    .param p7    # [I
-    .param p8    # I
-    .param p9    # [S
-    .param p10    # I
-    .param p11    # I
-    .param p12    # Landroid/graphics/Paint;
 
     move-object/from16 v0, p3
 
@@ -2399,7 +2204,6 @@
 
 .method public getClipBounds(Landroid/graphics/Rect;)Z
     .locals 1
-    .param p1    # Landroid/graphics/Rect;
 
     iget v0, p0, Landroid/graphics/Canvas;->mNativeCanvas:I
 
@@ -2455,7 +2259,6 @@
 
 .method public getMatrix(Landroid/graphics/Matrix;)V
     .locals 2
-    .param p1    # Landroid/graphics/Matrix;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -2511,11 +2314,6 @@
 
 .method public quickReject(FFFFLandroid/graphics/Canvas$EdgeType;)Z
     .locals 1
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # Landroid/graphics/Canvas$EdgeType;
 
     iget v0, p0, Landroid/graphics/Canvas;->mNativeCanvas:I
 
@@ -2528,8 +2326,6 @@
 
 .method public quickReject(Landroid/graphics/Path;Landroid/graphics/Canvas$EdgeType;)Z
     .locals 2
-    .param p1    # Landroid/graphics/Path;
-    .param p2    # Landroid/graphics/Canvas$EdgeType;
 
     iget v0, p0, Landroid/graphics/Canvas;->mNativeCanvas:I
 
@@ -2546,8 +2342,6 @@
 
 .method public quickReject(Landroid/graphics/RectF;Landroid/graphics/Canvas$EdgeType;)Z
     .locals 1
-    .param p1    # Landroid/graphics/RectF;
-    .param p2    # Landroid/graphics/Canvas$EdgeType;
 
     iget v0, p0, Landroid/graphics/Canvas;->mNativeCanvas:I
 
@@ -2579,9 +2373,6 @@
 
 .method public final rotate(FFF)V
     .locals 2
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
 
     invoke-virtual {p0, p2, p3}, Landroid/graphics/Canvas;->translate(FF)V
 
@@ -2604,12 +2395,6 @@
 
 .method public saveLayer(FFFFLandroid/graphics/Paint;I)I
     .locals 7
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # Landroid/graphics/Paint;
-    .param p6    # I
 
     iget v0, p0, Landroid/graphics/Canvas;->mNativeCanvas:I
 
@@ -2642,9 +2427,6 @@
 
 .method public saveLayer(Landroid/graphics/RectF;Landroid/graphics/Paint;I)I
     .locals 2
-    .param p1    # Landroid/graphics/RectF;
-    .param p2    # Landroid/graphics/Paint;
-    .param p3    # I
 
     iget v1, p0, Landroid/graphics/Canvas;->mNativeCanvas:I
 
@@ -2667,12 +2449,6 @@
 
 .method public saveLayerAlpha(FFFFII)I
     .locals 7
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # I
-    .param p6    # I
 
     iget v0, p0, Landroid/graphics/Canvas;->mNativeCanvas:I
 
@@ -2697,9 +2473,6 @@
 
 .method public saveLayerAlpha(Landroid/graphics/RectF;II)I
     .locals 2
-    .param p1    # Landroid/graphics/RectF;
-    .param p2    # I
-    .param p3    # I
 
     const/16 v0, 0xff
 
@@ -2727,10 +2500,6 @@
 
 .method public final scale(FFFF)V
     .locals 2
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
 
     invoke-virtual {p0, p3, p4}, Landroid/graphics/Canvas;->translate(FF)V
 
@@ -2747,7 +2516,6 @@
 
 .method public setBitmap(Landroid/graphics/Bitmap;)V
     .locals 2
-    .param p1    # Landroid/graphics/Bitmap;
 
     const/4 v1, 0x0
 
@@ -2818,7 +2586,6 @@
 
 .method public setDensity(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/graphics/Canvas;->mBitmap:Landroid/graphics/Bitmap;
 
@@ -2836,7 +2603,6 @@
 
 .method public setDrawFilter(Landroid/graphics/DrawFilter;)V
     .locals 2
-    .param p1    # Landroid/graphics/DrawFilter;
 
     const/4 v0, 0x0
 
@@ -2856,7 +2622,6 @@
 
 .method public setMatrix(Landroid/graphics/Matrix;)V
     .locals 2
-    .param p1    # Landroid/graphics/Matrix;
 
     iget v1, p0, Landroid/graphics/Canvas;->mNativeCanvas:I
 
@@ -2877,7 +2642,6 @@
 
 .method public setScreenDensity(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/graphics/Canvas;->mScreenDensity:I
 
@@ -2886,8 +2650,6 @@
 
 .method public setViewport(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     return-void
 .end method

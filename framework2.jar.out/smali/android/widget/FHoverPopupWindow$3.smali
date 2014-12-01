@@ -36,7 +36,6 @@
 # virtual methods
 .method public onAnimationUpdate(Landroid/animation/ValueAnimator;)V
     .locals 4
-    .param p1    # Landroid/animation/ValueAnimator;
 
     const/4 v3, -0x1
 

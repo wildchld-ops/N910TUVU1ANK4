@@ -23,7 +23,6 @@
 # direct methods
 .method public constructor <init>(I)V
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -48,9 +47,6 @@
 # virtual methods
 .method public declared-synchronized dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     monitor-enter p0
 
@@ -97,7 +93,6 @@
 
 .method public declared-synchronized log(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 

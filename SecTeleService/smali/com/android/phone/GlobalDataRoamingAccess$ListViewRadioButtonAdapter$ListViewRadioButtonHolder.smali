@@ -73,7 +73,7 @@
 
     iget-object v1, p0, Lcom/android/phone/GlobalDataRoamingAccess$ListViewRadioButtonAdapter$ListViewRadioButtonHolder;->mRadioButton:Landroid/widget/RadioButton;
 
-    invoke-virtual {v1, p3}, Landroid/view/View;->setId(I)V
+    invoke-virtual {v1, p3}, Landroid/widget/RadioButton;->setId(I)V
 
     iget-object v1, p1, Lcom/android/phone/GlobalDataRoamingAccess$ListViewRadioButtonAdapter;->this$0:Lcom/android/phone/GlobalDataRoamingAccess;
 
@@ -84,7 +84,7 @@
 
     iget-object v1, p0, Lcom/android/phone/GlobalDataRoamingAccess$ListViewRadioButtonAdapter$ListViewRadioButtonHolder;->mRadioButton:Landroid/widget/RadioButton;
 
-    invoke-virtual {v1, v0}, Landroid/widget/CompoundButton;->setChecked(Z)V
+    invoke-virtual {v1, v0}, Landroid/widget/RadioButton;->setChecked(Z)V
 
     iget-object v1, p1, Lcom/android/phone/GlobalDataRoamingAccess$ListViewRadioButtonAdapter;->this$0:Lcom/android/phone/GlobalDataRoamingAccess;
 

@@ -14,10 +14,10 @@ versionInfo:
   versionName: '3.0'
 compressionType: false
 unknownFiles:
-  com/samsung/dmc/ux/db/PersonalSettingInfo.aidl: '8'
-  com/samsung/dmc/ux/db/ProcessInfo.aidl: '8'
-  com/samsung/dmc/ux/db/UserInfo.aidl: '8'
-  com/samsung/shareshot/IShareShotCallbackRegister.aidl: '8'
-  com/samsung/shareshot/IShareShotService.aidl: '8'
-  com/samsung/shareshot/IShareShotServiceCallback.aidl: '8'
-  com/samsung/shareshot/User.aidl: '8'
+  com/samsung/dmc/ux/db/PersonalSettingInfo.aidl: '0'
+  com/samsung/dmc/ux/db/ProcessInfo.aidl: '0'
+  com/samsung/dmc/ux/db/UserInfo.aidl: '0'
+  com/samsung/shareshot/IShareShotService.aidl: '0'
+  com/samsung/shareshot/IShareShotServiceCallback.aidl: '0'
+  com/samsung/shareshot/User.aidl: '0'
+  com/samsung/shareshot/IShareShotCallbackRegister.aidl: '0'

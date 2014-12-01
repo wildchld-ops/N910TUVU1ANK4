@@ -26,7 +26,6 @@
 # direct methods
 .method private constructor <init>(Landroid/widget/TabHost;I)V
     .locals 3
-    .param p2    # I
 
     iput-object p1, p0, Landroid/widget/TabHost$ViewIdContentStrategy;->this$0:Landroid/widget/TabHost;
 
@@ -83,9 +82,6 @@
 
 .method synthetic constructor <init>(Landroid/widget/TabHost;ILandroid/widget/TabHost$1;)V
     .locals 0
-    .param p1    # Landroid/widget/TabHost;
-    .param p2    # I
-    .param p3    # Landroid/widget/TabHost$1;
 
     invoke-direct {p0, p1, p2}, Landroid/widget/TabHost$ViewIdContentStrategy;-><init>(Landroid/widget/TabHost;I)V
 

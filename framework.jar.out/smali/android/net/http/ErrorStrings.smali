@@ -18,7 +18,6 @@
 
 .method public static getResource(I)I
     .locals 4
-    .param p0    # I
 
     const v0, 0x104019b
 
@@ -150,8 +149,6 @@
 
 .method public static getString(ILandroid/content/Context;)Ljava/lang/String;
     .locals 1
-    .param p0    # I
-    .param p1    # Landroid/content/Context;
 
     invoke-static {p0}, Landroid/net/http/ErrorStrings;->getResource(I)I
 

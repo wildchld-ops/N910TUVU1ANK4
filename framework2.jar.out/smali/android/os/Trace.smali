@@ -86,9 +86,6 @@
 
 .method public static asyncTraceBegin(JLjava/lang/String;I)V
     .locals 1
-    .param p0    # J
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     invoke-static {p0, p1}, Landroid/os/Trace;->isTagEnabled(J)Z
 
@@ -104,9 +101,6 @@
 
 .method public static asyncTraceEnd(JLjava/lang/String;I)V
     .locals 1
-    .param p0    # J
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     invoke-static {p0, p1}, Landroid/os/Trace;->isTagEnabled(J)Z
 
@@ -122,7 +116,6 @@
 
 .method public static beginSection(Ljava/lang/String;)V
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     const-wide/16 v2, 0x1000
 
@@ -186,7 +179,6 @@
 
 .method public static isTagEnabled(J)Z
     .locals 6
-    .param p0    # J
 
     sget-wide v0, Landroid/os/Trace;->sEnabledTags:J
 
@@ -246,7 +238,6 @@
 
 .method public static setAppTracingAllowed(Z)V
     .locals 0
-    .param p0    # Z
 
     invoke-static {p0}, Landroid/os/Trace;->nativeSetAppTracingAllowed(Z)V
 
@@ -257,7 +248,6 @@
 
 .method public static setTracingEnabled(Z)V
     .locals 0
-    .param p0    # Z
 
     invoke-static {p0}, Landroid/os/Trace;->nativeSetTracingEnabled(Z)V
 
@@ -268,8 +258,6 @@
 
 .method public static traceBegin(JLjava/lang/String;)V
     .locals 1
-    .param p0    # J
-    .param p2    # Ljava/lang/String;
 
     invoke-static {p0, p1}, Landroid/os/Trace;->isTagEnabled(J)Z
 
@@ -285,9 +273,6 @@
 
 .method public static traceCounter(JLjava/lang/String;I)V
     .locals 1
-    .param p0    # J
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     invoke-static {p0, p1}, Landroid/os/Trace;->isTagEnabled(J)Z
 
@@ -303,7 +288,6 @@
 
 .method public static traceEnd(J)V
     .locals 1
-    .param p0    # J
 
     invoke-static {p0, p1}, Landroid/os/Trace;->isTagEnabled(J)Z
 

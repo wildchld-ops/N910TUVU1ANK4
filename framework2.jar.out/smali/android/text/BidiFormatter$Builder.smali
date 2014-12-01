@@ -44,7 +44,6 @@
 
 .method public constructor <init>(Ljava/util/Locale;)V
     .locals 1
-    .param p1    # Ljava/util/Locale;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -60,7 +59,6 @@
 
 .method public constructor <init>(Z)V
     .locals 0
-    .param p1    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -71,7 +69,6 @@
 
 .method private static getDefaultInstanceFromContext(Z)Landroid/text/BidiFormatter;
     .locals 1
-    .param p0    # Z
 
     if-eqz p0, :cond_0
 
@@ -94,7 +91,6 @@
 
 .method private initialize(Z)V
     .locals 1
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/text/BidiFormatter$Builder;->mIsRtlContext:Z
 
@@ -159,7 +155,6 @@
 
 .method public setTextDirectionHeuristic(Landroid/text/TextDirectionHeuristic;)Landroid/text/BidiFormatter$Builder;
     .locals 0
-    .param p1    # Landroid/text/TextDirectionHeuristic;
 
     iput-object p1, p0, Landroid/text/BidiFormatter$Builder;->mTextDirectionHeuristic:Landroid/text/TextDirectionHeuristic;
 
@@ -168,7 +163,6 @@
 
 .method public stereoReset(Z)Landroid/text/BidiFormatter$Builder;
     .locals 1
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 

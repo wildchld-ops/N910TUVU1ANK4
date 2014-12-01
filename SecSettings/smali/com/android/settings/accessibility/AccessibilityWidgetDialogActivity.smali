@@ -18,7 +18,6 @@
 
 .method public static isSamsungAppsPackageInstalled(Landroid/content/Context;)Z
     .locals 5
-    .param p0    # Landroid/content/Context;
 
     const/4 v3, 0x0
 
@@ -48,8 +47,6 @@
 
 .method public static startSamsungApps(Landroid/content/Context;Ljava/lang/String;)V
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/android/settings/accessibility/AccessibilityWidgetDialogActivity;->isSamsungAppsPackageInstalled(Landroid/content/Context;)Z
 
@@ -105,7 +102,6 @@
 # virtual methods
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
@@ -136,9 +132,6 @@
 
 .method public showDownloadDialog(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
     .locals 15
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     invoke-virtual {p0}, Lcom/android/settings/accessibility/AccessibilityWidgetDialogActivity;->getApplicationContext()Landroid/content/Context;
 

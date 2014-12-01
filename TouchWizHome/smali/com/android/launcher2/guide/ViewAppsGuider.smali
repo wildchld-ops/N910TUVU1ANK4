@@ -25,7 +25,6 @@
 # direct methods
 .method public constructor <init>(Landroid/app/Activity;)V
     .locals 2
-    .param p1    # Landroid/app/Activity;
 
     invoke-direct {p0, p1}, Lcom/android/launcher2/guide/GuiderBase;-><init>(Landroid/app/Activity;)V
 
@@ -160,14 +159,12 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     return-void
 .end method
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 1
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-virtual {p0}, Lcom/android/launcher2/guide/ViewAppsGuider;->dismissHelpDialog()V
 
@@ -193,7 +190,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     return-void
 .end method
@@ -218,8 +214,6 @@
 
 .method public bridge synthetic onSwitcherChanged(Landroid/widget/CompoundButton;Z)Z
     .locals 1
-    .param p1    # Landroid/widget/CompoundButton;
-    .param p2    # Z
 
     invoke-super {p0, p1, p2}, Lcom/android/launcher2/guide/GuiderBase;->onSwitcherChanged(Landroid/widget/CompoundButton;Z)Z
 

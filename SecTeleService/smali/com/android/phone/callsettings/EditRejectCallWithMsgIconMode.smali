@@ -389,7 +389,7 @@
     invoke-virtual {v4, v1}, Landroid/content/Intent;->putExtras(Landroid/os/Bundle;)Landroid/content/Intent;
 
     :cond_3
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
 
@@ -403,7 +403,7 @@
 .method private getDimensions()V
     .locals 2
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -493,7 +493,7 @@
 .method private isLandscape()Z
     .locals 3
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -528,9 +528,9 @@
     .locals 2
     .param p1    # Landroid/content/res/Configuration;
 
-    invoke-super {p0, p1}, Landroid/app/Fragment;->onConfigurationChanged(Landroid/content/res/Configuration;)V
+    invoke-super {p0, p1}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -559,7 +559,7 @@
 
     invoke-super {p0, p1}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getArguments()Landroid/os/Bundle;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;->getArguments()Landroid/os/Bundle;
 
     move-result-object v1
 
@@ -640,7 +640,7 @@
     :cond_0
     invoke-direct {p0}, Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;->getDimensions()V
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getActionBar()Landroid/app/ActionBar;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;->getActionBar()Landroid/app/ActionBar;
 
     move-result-object v0
 
@@ -685,7 +685,7 @@
 
     invoke-direct {v6, p0}, Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode$1;-><init>(Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;)V
 
-    invoke-virtual {v2, v6}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v2, v6}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     const v6, 0x7f0a008d
 
@@ -701,7 +701,7 @@
 
     const v7, 0x7f090151
 
-    invoke-virtual {v6, v7}, Landroid/widget/TextView;->setText(I)V
+    invoke-virtual {v6, v7}, Landroid/widget/Button;->setText(I)V
 
     const/4 v4, 0x1
 
@@ -745,7 +745,7 @@
     :goto_0
     iget-object v6, p0, Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;->mSaveButton:Landroid/widget/Button;
 
-    invoke-virtual {v6, v4}, Landroid/widget/TextView;->setEnabled(Z)V
+    invoke-virtual {v6, v4}, Landroid/widget/Button;->setEnabled(Z)V
 
     iget-object v6, p0, Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;->mSaveButton:Landroid/widget/Button;
 
@@ -753,14 +753,14 @@
 
     invoke-direct {v7, p0}, Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode$2;-><init>(Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;)V
 
-    invoke-virtual {v6, v7}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v6, v7}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     :cond_3
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;->getActivity()Landroid/app/Activity;
 
     const-string v6, "input_method"
 
-    invoke-virtual {p0, v6}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v6}, Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v6
 
@@ -879,7 +879,7 @@
 
     invoke-interface {v3, v2}, Landroid/view/MenuItem;->setVisible(Z)Landroid/view/MenuItem;
 
-    invoke-super {p0, p1, p2}, Landroid/app/Fragment;->onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
+    invoke-super {p0, p1, p2}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
 
     return-void
 
@@ -956,11 +956,11 @@
 
     iget-object v3, p0, Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;->mTitleMsg:Ljava/lang/String;
 
-    invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {v2, v3}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
     iget-object v2, p0, Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;->mTitleEditText:Landroid/widget/EditText;
 
-    invoke-virtual {v2}, Landroid/widget/TextView;->length()I
+    invoke-virtual {v2}, Landroid/widget/EditText;->length()I
 
     move-result v0
 
@@ -983,7 +983,7 @@
 
     aput-object v4, v3, v6
 
-    invoke-virtual {v2, v3}, Landroid/widget/TextView;->setFilters([Landroid/text/InputFilter;)V
+    invoke-virtual {v2, v3}, Landroid/widget/EditText;->setFilters([Landroid/text/InputFilter;)V
 
     iget-object v2, p0, Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;->mTitleEditText:Landroid/widget/EditText;
 
@@ -991,7 +991,7 @@
 
     invoke-direct {v3, p0}, Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode$3;-><init>(Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;)V
 
-    invoke-virtual {v2, v3}, Landroid/widget/TextView;->addTextChangedListener(Landroid/text/TextWatcher;)V
+    invoke-virtual {v2, v3}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
     const v2, 0x7f0a01d6
 
@@ -1011,7 +1011,7 @@
 
     iget-object v3, p0, Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;->mBodyMsg:Ljava/lang/String;
 
-    invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {v2, v3}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
     :cond_1
     iget-object v2, p0, Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;->mBodyEditText:Landroid/widget/EditText;
@@ -1026,7 +1026,7 @@
 
     aput-object v4, v3, v6
 
-    invoke-virtual {v2, v3}, Landroid/widget/TextView;->setFilters([Landroid/text/InputFilter;)V
+    invoke-virtual {v2, v3}, Landroid/widget/EditText;->setFilters([Landroid/text/InputFilter;)V
 
     iget-object v2, p0, Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;->mBodyEditText:Landroid/widget/EditText;
 
@@ -1034,7 +1034,7 @@
 
     invoke-direct {v3, p0}, Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode$4;-><init>(Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;)V
 
-    invoke-virtual {v2, v3}, Landroid/widget/TextView;->addTextChangedListener(Landroid/text/TextWatcher;)V
+    invoke-virtual {v2, v3}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
     const v2, 0x7f0a01d4
 
@@ -1060,7 +1060,7 @@
 
     aget v3, v3, v4
 
-    invoke-virtual {v2, v3}, Landroid/widget/ImageView;->setImageResource(I)V
+    invoke-virtual {v2, v3}, Landroid/widget/ImageButton;->setImageResource(I)V
 
     :goto_0
     iget-object v2, p0, Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;->mImageButton:Landroid/widget/ImageButton;
@@ -1069,7 +1069,7 @@
 
     invoke-direct {v3, p0}, Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode$5;-><init>(Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;)V
 
-    invoke-virtual {v2, v3}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v2, v3}, Landroid/widget/ImageButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     return-object v1
 
@@ -1080,7 +1080,7 @@
 
     aget v3, v3, v6
 
-    invoke-virtual {v2, v3}, Landroid/widget/ImageView;->setImageResource(I)V
+    invoke-virtual {v2, v3}, Landroid/widget/ImageButton;->setImageResource(I)V
 
     iput v6, p0, Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;->mNewIconIndex:I
 
@@ -1096,7 +1096,7 @@
 
     iget-object v1, p0, Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;->mTitleEditText:Landroid/widget/EditText;
 
-    invoke-virtual {v1}, Landroid/view/View;->getWindowToken()Landroid/os/IBinder;
+    invoke-virtual {v1}, Landroid/widget/EditText;->getWindowToken()Landroid/os/IBinder;
 
     move-result-object v1
 
@@ -1106,13 +1106,13 @@
 
     iget-object v1, p0, Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;->mBodyEditText:Landroid/widget/EditText;
 
-    invoke-virtual {v1}, Landroid/view/View;->getWindowToken()Landroid/os/IBinder;
+    invoke-virtual {v1}, Landroid/widget/EditText;->getWindowToken()Landroid/os/IBinder;
 
     move-result-object v1
 
     invoke-virtual {v0, v1, v2}, Landroid/view/inputmethod/InputMethodManager;->hideSoftInputFromWindow(Landroid/os/IBinder;I)Z
 
-    invoke-super {p0}, Landroid/preference/PreferenceFragment;->onDestroyView()V
+    invoke-super {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onDestroyView()V
 
     const-string v0, "EditIconMode"
 
@@ -1143,7 +1143,7 @@
     return v0
 
     :sswitch_0
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;->finish()V
 
     goto :goto_0
 
@@ -1269,7 +1269,7 @@
     invoke-interface {v3, v7}, Landroid/view/MenuItem;->setVisible(Z)Landroid/view/MenuItem;
 
     :goto_0
-    invoke-super {p0, p1}, Landroid/app/Fragment;->onPrepareOptionsMenu(Landroid/view/Menu;)V
+    invoke-super {p0, p1}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onPrepareOptionsMenu(Landroid/view/Menu;)V
 
     return-void
 

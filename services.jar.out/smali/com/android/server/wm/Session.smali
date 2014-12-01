@@ -29,9 +29,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/wm/WindowManagerService;Lcom/android/internal/view/IInputMethodClient;Lcom/android/internal/view/IInputContext;)V
     .locals 8
-    .param p1    # Lcom/android/server/wm/WindowManagerService;
-    .param p2    # Lcom/android/internal/view/IInputMethodClient;
-    .param p3    # Lcom/android/internal/view/IInputContext;
 
     const/4 v5, 0x0
 
@@ -273,12 +270,6 @@
 # virtual methods
 .method public add(Landroid/view/IWindow;ILandroid/view/WindowManager$LayoutParams;ILandroid/graphics/Rect;Landroid/view/InputChannel;)I
     .locals 8
-    .param p1    # Landroid/view/IWindow;
-    .param p2    # I
-    .param p3    # Landroid/view/WindowManager$LayoutParams;
-    .param p4    # I
-    .param p5    # Landroid/graphics/Rect;
-    .param p6    # Landroid/view/InputChannel;
 
     const/4 v5, 0x0
 
@@ -305,13 +296,6 @@
 
 .method public addToDisplay(Landroid/view/IWindow;ILandroid/view/WindowManager$LayoutParams;IILandroid/graphics/Rect;Landroid/view/InputChannel;)I
     .locals 9
-    .param p1    # Landroid/view/IWindow;
-    .param p2    # I
-    .param p3    # Landroid/view/WindowManager$LayoutParams;
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Landroid/graphics/Rect;
-    .param p7    # Landroid/view/InputChannel;
 
     iget-object v0, p0, Lcom/android/server/wm/Session;->mService:Lcom/android/server/wm/WindowManagerService;
 
@@ -340,12 +324,6 @@
 
 .method public addToDisplayWithoutInputChannel(Landroid/view/IWindow;ILandroid/view/WindowManager$LayoutParams;IILandroid/graphics/Rect;)I
     .locals 9
-    .param p1    # Landroid/view/IWindow;
-    .param p2    # I
-    .param p3    # Landroid/view/WindowManager$LayoutParams;
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Landroid/graphics/Rect;
 
     iget-object v0, p0, Lcom/android/server/wm/Session;->mService:Lcom/android/server/wm/WindowManagerService;
 
@@ -374,11 +352,6 @@
 
 .method public addWithoutInputChannel(Landroid/view/IWindow;ILandroid/view/WindowManager$LayoutParams;ILandroid/graphics/Rect;)I
     .locals 7
-    .param p1    # Landroid/view/IWindow;
-    .param p2    # I
-    .param p3    # Landroid/view/WindowManager$LayoutParams;
-    .param p4    # I
-    .param p5    # Landroid/graphics/Rect;
 
     const/4 v5, 0x0
 
@@ -467,22 +440,18 @@
 
 .method public dragRecipientEntered(Landroid/view/IWindow;)V
     .locals 0
-    .param p1    # Landroid/view/IWindow;
 
     return-void
 .end method
 
 .method public dragRecipientExited(Landroid/view/IWindow;)V
     .locals 0
-    .param p1    # Landroid/view/IWindow;
 
     return-void
 .end method
 
 .method dump(Ljava/io/PrintWriter;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/io/PrintWriter;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
@@ -515,7 +484,6 @@
 
 .method public finishDrawing(Landroid/view/IWindow;)V
     .locals 1
-    .param p1    # Landroid/view/IWindow;
 
     iget-object v0, p0, Lcom/android/server/wm/Session;->mService:Lcom/android/server/wm/WindowManagerService;
 
@@ -526,8 +494,6 @@
 
 .method public getContentFrame(Landroid/view/IWindow;Landroid/graphics/Rect;)V
     .locals 1
-    .param p1    # Landroid/view/IWindow;
-    .param p2    # Landroid/graphics/Rect;
 
     iget-object v0, p0, Lcom/android/server/wm/Session;->mService:Lcom/android/server/wm/WindowManagerService;
 
@@ -538,8 +504,6 @@
 
 .method public getDisplayFrame(Landroid/view/IWindow;Landroid/graphics/Rect;)V
     .locals 1
-    .param p1    # Landroid/view/IWindow;
-    .param p2    # Landroid/graphics/Rect;
 
     iget-object v0, p0, Lcom/android/server/wm/Session;->mService:Lcom/android/server/wm/WindowManagerService;
 
@@ -578,7 +542,6 @@
 
 .method public getWindowId(Landroid/os/IBinder;)Landroid/view/IWindowId;
     .locals 1
-    .param p1    # Landroid/os/IBinder;
 
     iget-object v0, p0, Lcom/android/server/wm/Session;->mService:Lcom/android/server/wm/WindowManagerService;
 
@@ -681,9 +644,6 @@
 
 .method public onRectangleOnScreenRequested(Landroid/os/IBinder;Landroid/graphics/Rect;Z)V
     .locals 4
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Landroid/graphics/Rect;
-    .param p3    # Z
 
     iget-object v2, p0, Lcom/android/server/wm/Session;->mService:Lcom/android/server/wm/WindowManagerService;
 
@@ -731,10 +691,6 @@
 
 .method public onTransact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/os/Parcel;
-    .param p3    # Landroid/os/Parcel;
-    .param p4    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -769,7 +725,6 @@
 
 .method public outOfMemory(Landroid/view/IWindow;)Z
     .locals 1
-    .param p1    # Landroid/view/IWindow;
 
     iget-object v0, p0, Lcom/android/server/wm/Session;->mService:Lcom/android/server/wm/WindowManagerService;
 
@@ -782,7 +737,6 @@
 
 .method public performDeferredDestroy(Landroid/view/IWindow;)V
     .locals 1
-    .param p1    # Landroid/view/IWindow;
 
     iget-object v0, p0, Lcom/android/server/wm/Session;->mService:Lcom/android/server/wm/WindowManagerService;
 
@@ -793,13 +747,6 @@
 
 .method public performDrag(Landroid/view/IWindow;Landroid/os/IBinder;FFFFLandroid/content/ClipData;)Z
     .locals 11
-    .param p1    # Landroid/view/IWindow;
-    .param p2    # Landroid/os/IBinder;
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # F
-    .param p7    # Landroid/content/ClipData;
 
     iget-object v7, p0, Lcom/android/server/wm/Session;->mService:Lcom/android/server/wm/WindowManagerService;
 
@@ -1151,9 +1098,6 @@
 
 .method public performHapticFeedback(Landroid/view/IWindow;IZ)Z
     .locals 6
-    .param p1    # Landroid/view/IWindow;
-    .param p2    # I
-    .param p3    # Z
 
     iget-object v2, p0, Lcom/android/server/wm/Session;->mService:Lcom/android/server/wm/WindowManagerService;
 
@@ -1213,11 +1157,6 @@
 
 .method public prepareDrag(Landroid/view/IWindow;IIILandroid/view/Surface;)Landroid/os/IBinder;
     .locals 7
-    .param p1    # Landroid/view/IWindow;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Landroid/view/Surface;
 
     iget-object v0, p0, Lcom/android/server/wm/Session;->mService:Lcom/android/server/wm/WindowManagerService;
 
@@ -1242,21 +1181,6 @@
 
 .method public relayout(Landroid/view/IWindow;ILandroid/view/WindowManager$LayoutParams;IIIILandroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/content/res/Configuration;Landroid/view/Surface;Landroid/graphics/PointF;Landroid/graphics/Rect;)I
     .locals 19
-    .param p1    # Landroid/view/IWindow;
-    .param p2    # I
-    .param p3    # Landroid/view/WindowManager$LayoutParams;
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # Landroid/graphics/Rect;
-    .param p9    # Landroid/graphics/Rect;
-    .param p10    # Landroid/graphics/Rect;
-    .param p11    # Landroid/graphics/Rect;
-    .param p12    # Landroid/content/res/Configuration;
-    .param p13    # Landroid/view/Surface;
-    .param p14    # Landroid/graphics/PointF;
-    .param p15    # Landroid/graphics/Rect;
 
     move-object/from16 v0, p0
 
@@ -1303,7 +1227,6 @@
 
 .method public remove(Landroid/view/IWindow;)V
     .locals 1
-    .param p1    # Landroid/view/IWindow;
 
     iget-object v0, p0, Lcom/android/server/wm/Session;->mService:Lcom/android/server/wm/WindowManagerService;
 
@@ -1314,8 +1237,6 @@
 
 .method public reportDropResult(Landroid/view/IWindow;Z)V
     .locals 11
-    .param p1    # Landroid/view/IWindow;
-    .param p2    # Z
 
     invoke-interface {p1}, Landroid/view/IWindow;->asBinder()Landroid/os/IBinder;
 
@@ -1577,13 +1498,6 @@
 
 .method public sendWallpaperCommand(Landroid/os/IBinder;Ljava/lang/String;IIILandroid/os/Bundle;Z)Landroid/os/Bundle;
     .locals 11
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Landroid/os/Bundle;
-    .param p7    # Z
 
     iget-object v0, p0, Lcom/android/server/wm/Session;->mService:Lcom/android/server/wm/WindowManagerService;
 
@@ -1653,7 +1567,6 @@
 
 .method public setInTouchMode(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/server/wm/Session;->mService:Lcom/android/server/wm/WindowManagerService;
 
@@ -1682,11 +1595,6 @@
 
 .method public setInsets(Landroid/view/IWindow;ILandroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Region;)V
     .locals 7
-    .param p1    # Landroid/view/IWindow;
-    .param p2    # I
-    .param p3    # Landroid/graphics/Rect;
-    .param p4    # Landroid/graphics/Rect;
-    .param p5    # Landroid/graphics/Region;
 
     iget-object v0, p0, Lcom/android/server/wm/Session;->mService:Lcom/android/server/wm/WindowManagerService;
 
@@ -1709,8 +1617,6 @@
 
 .method public setTransparentRegion(Landroid/view/IWindow;Landroid/graphics/Region;)V
     .locals 1
-    .param p1    # Landroid/view/IWindow;
-    .param p2    # Landroid/graphics/Region;
 
     iget-object v0, p0, Lcom/android/server/wm/Session;->mService:Lcom/android/server/wm/WindowManagerService;
 
@@ -1721,14 +1627,6 @@
 
 .method public setUniverseTransform(Landroid/os/IBinder;FFFFFFF)V
     .locals 12
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # F
-    .param p7    # F
-    .param p8    # F
 
     iget-object v0, p0, Lcom/android/server/wm/Session;->mService:Lcom/android/server/wm/WindowManagerService;
 
@@ -1798,11 +1696,6 @@
 
 .method public setWallpaperPosition(Landroid/os/IBinder;FFFF)V
     .locals 9
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
 
     iget-object v0, p0, Lcom/android/server/wm/Session;->mService:Lcom/android/server/wm/WindowManagerService;
 
@@ -1874,8 +1767,6 @@
 
 .method public wallpaperCommandComplete(Landroid/os/IBinder;Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Landroid/os/Bundle;
 
     iget-object v0, p0, Lcom/android/server/wm/Session;->mService:Lcom/android/server/wm/WindowManagerService;
 
@@ -1886,7 +1777,6 @@
 
 .method public wallpaperOffsetsComplete(Landroid/os/IBinder;)V
     .locals 1
-    .param p1    # Landroid/os/IBinder;
 
     iget-object v0, p0, Lcom/android/server/wm/Session;->mService:Lcom/android/server/wm/WindowManagerService;
 

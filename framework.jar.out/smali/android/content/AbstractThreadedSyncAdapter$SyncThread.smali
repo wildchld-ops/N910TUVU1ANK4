@@ -31,11 +31,6 @@
 # direct methods
 .method private constructor <init>(Landroid/content/AbstractThreadedSyncAdapter;Ljava/lang/String;Landroid/content/SyncContext;Ljava/lang/String;Landroid/accounts/Account;Landroid/os/Bundle;)V
     .locals 1
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/content/SyncContext;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Landroid/accounts/Account;
-    .param p6    # Landroid/os/Bundle;
 
     iput-object p1, p0, Landroid/content/AbstractThreadedSyncAdapter$SyncThread;->this$0:Landroid/content/AbstractThreadedSyncAdapter;
 
@@ -61,13 +56,6 @@
 
 .method synthetic constructor <init>(Landroid/content/AbstractThreadedSyncAdapter;Ljava/lang/String;Landroid/content/SyncContext;Ljava/lang/String;Landroid/accounts/Account;Landroid/os/Bundle;Landroid/content/AbstractThreadedSyncAdapter$1;)V
     .locals 0
-    .param p1    # Landroid/content/AbstractThreadedSyncAdapter;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/content/SyncContext;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Landroid/accounts/Account;
-    .param p6    # Landroid/os/Bundle;
-    .param p7    # Landroid/content/AbstractThreadedSyncAdapter$1;
 
     invoke-direct/range {p0 .. p6}, Landroid/content/AbstractThreadedSyncAdapter$SyncThread;-><init>(Landroid/content/AbstractThreadedSyncAdapter;Ljava/lang/String;Landroid/content/SyncContext;Ljava/lang/String;Landroid/accounts/Account;Landroid/os/Bundle;)V
 
@@ -76,7 +64,6 @@
 
 .method static synthetic access$700(Landroid/content/AbstractThreadedSyncAdapter$SyncThread;)Landroid/content/SyncContext;
     .locals 1
-    .param p0    # Landroid/content/AbstractThreadedSyncAdapter$SyncThread;
 
     iget-object v0, p0, Landroid/content/AbstractThreadedSyncAdapter$SyncThread;->mSyncContext:Landroid/content/SyncContext;
 

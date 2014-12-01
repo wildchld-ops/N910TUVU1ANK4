@@ -278,7 +278,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/ui/ManageSimMessages;)Landroid/widget/TabHost;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ManageSimMessages;
 
     iget-object v0, p0, Lcom/android/mms/ui/ManageSimMessages;->mTabs:Landroid/widget/TabHost;
 
@@ -287,7 +286,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/ui/ManageSimMessages;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ManageSimMessages;
 
     invoke-direct {p0}, Lcom/android/mms/ui/ManageSimMessages;->startQuery()V
 
@@ -296,7 +294,6 @@
 
 .method static synthetic access$1000(Lcom/android/mms/ui/ManageSimMessages;)Lcom/android/mms/ui/SimMessageListAdapter;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ManageSimMessages;
 
     iget-object v0, p0, Lcom/android/mms/ui/ManageSimMessages;->mListAdapter:Lcom/android/mms/ui/SimMessageListAdapter;
 
@@ -305,7 +302,6 @@
 
 .method static synthetic access$1100(Lcom/android/mms/ui/ManageSimMessages;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ManageSimMessages;
 
     iget-boolean v0, p0, Lcom/android/mms/ui/ManageSimMessages;->mIsLandscape:Z
 
@@ -314,8 +310,6 @@
 
 .method static synthetic access$1200(Lcom/android/mms/ui/ManageSimMessages;Z)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ManageSimMessages;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/ManageSimMessages;->setEmptyBgImage(Z)V
 
@@ -324,7 +318,6 @@
 
 .method static synthetic access$1300(Lcom/android/mms/ui/ManageSimMessages;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ManageSimMessages;
 
     iget-object v0, p0, Lcom/android/mms/ui/ManageSimMessages;->mSIMCount:Landroid/widget/TextView;
 
@@ -333,9 +326,6 @@
 
 .method static synthetic access$1400(Lcom/android/mms/ui/ManageSimMessages;Landroid/database/Cursor;I)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ManageSimMessages;
-    .param p1    # Landroid/database/Cursor;
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/mms/ui/ManageSimMessages;->setSIMMessageCountUI(Landroid/database/Cursor;I)V
 
@@ -344,11 +334,6 @@
 
 .method static synthetic access$1500(Lcom/android/mms/ui/ManageSimMessages;ILjava/lang/String;Ljava/lang/String;J)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ManageSimMessages;
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # J
 
     invoke-direct/range {p0 .. p5}, Lcom/android/mms/ui/ManageSimMessages;->copyToPhoneMemory(ILjava/lang/String;Ljava/lang/String;J)Z
 
@@ -359,7 +344,6 @@
 
 .method static synthetic access$1600(Lcom/android/mms/ui/ManageSimMessages;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ManageSimMessages;
 
     iget-object v0, p0, Lcom/android/mms/ui/ManageSimMessages;->mCompleteHandler:Landroid/os/Handler;
 
@@ -368,8 +352,6 @@
 
 .method static synthetic access$1700(Lcom/android/mms/ui/ManageSimMessages;I)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ManageSimMessages;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/ManageSimMessages;->showProgressDialog(I)V
 
@@ -378,8 +360,6 @@
 
 .method static synthetic access$1900(Lcom/android/mms/ui/ManageSimMessages;I)I
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ManageSimMessages;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/ManageSimMessages;->deleteFromSim(I)I
 
@@ -390,7 +370,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/ui/ManageSimMessages;)Landroid/view/ActionMode;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ManageSimMessages;
 
     iget-object v0, p0, Lcom/android/mms/ui/ManageSimMessages;->mSimMultiActionMode:Landroid/view/ActionMode;
 
@@ -407,8 +386,6 @@
 
 .method static synthetic access$202(Lcom/android/mms/ui/ManageSimMessages;Landroid/view/ActionMode;)Landroid/view/ActionMode;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ManageSimMessages;
-    .param p1    # Landroid/view/ActionMode;
 
     iput-object p1, p0, Lcom/android/mms/ui/ManageSimMessages;->mSimMultiActionMode:Landroid/view/ActionMode;
 
@@ -433,7 +410,6 @@
 
 .method static synthetic access$2300(Lcom/android/mms/ui/ManageSimMessages;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ManageSimMessages;
 
     iget-object v0, p0, Lcom/android/mms/ui/ManageSimMessages;->mContext:Landroid/content/Context;
 
@@ -442,7 +418,6 @@
 
 .method static synthetic access$2400(Lcom/android/mms/ui/ManageSimMessages;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ManageSimMessages;
 
     invoke-direct {p0}, Lcom/android/mms/ui/ManageSimMessages;->cancelSimFullNotification()V
 
@@ -451,7 +426,6 @@
 
 .method static synthetic access$2500(Lcom/android/mms/ui/ManageSimMessages;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ManageSimMessages;
 
     iget-object v0, p0, Lcom/android/mms/ui/ManageSimMessages;->mCheckedMsgIds:Ljava/util/ArrayList;
 
@@ -460,8 +434,6 @@
 
 .method static synthetic access$2502(Lcom/android/mms/ui/ManageSimMessages;Ljava/util/ArrayList;)Ljava/util/ArrayList;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ManageSimMessages;
-    .param p1    # Ljava/util/ArrayList;
 
     iput-object p1, p0, Lcom/android/mms/ui/ManageSimMessages;->mCheckedMsgIds:Ljava/util/ArrayList;
 
@@ -470,7 +442,6 @@
 
 .method static synthetic access$2600(Lcom/android/mms/ui/ManageSimMessages;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ManageSimMessages;
 
     iget-object v0, p0, Lcom/android/mms/ui/ManageSimMessages;->mActionbarTitle:Landroid/widget/TextView;
 
@@ -479,8 +450,6 @@
 
 .method static synthetic access$2602(Lcom/android/mms/ui/ManageSimMessages;Landroid/widget/TextView;)Landroid/widget/TextView;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ManageSimMessages;
-    .param p1    # Landroid/widget/TextView;
 
     iput-object p1, p0, Lcom/android/mms/ui/ManageSimMessages;->mActionbarTitle:Landroid/widget/TextView;
 
@@ -489,7 +458,6 @@
 
 .method static synthetic access$2700(Lcom/android/mms/ui/ManageSimMessages;)Landroid/widget/Button;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ManageSimMessages;
 
     iget-object v0, p0, Lcom/android/mms/ui/ManageSimMessages;->mSelectedButton:Landroid/widget/Button;
 
@@ -498,8 +466,6 @@
 
 .method static synthetic access$2702(Lcom/android/mms/ui/ManageSimMessages;Landroid/widget/Button;)Landroid/widget/Button;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ManageSimMessages;
-    .param p1    # Landroid/widget/Button;
 
     iput-object p1, p0, Lcom/android/mms/ui/ManageSimMessages;->mSelectedButton:Landroid/widget/Button;
 
@@ -508,7 +474,6 @@
 
 .method static synthetic access$2800(Lcom/android/mms/ui/ManageSimMessages;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ManageSimMessages;
 
     invoke-direct {p0}, Lcom/android/mms/ui/ManageSimMessages;->deleteSelectedMessage()V
 
@@ -517,7 +482,6 @@
 
 .method static synthetic access$2900(Lcom/android/mms/ui/ManageSimMessages;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ManageSimMessages;
 
     invoke-direct {p0}, Lcom/android/mms/ui/ManageSimMessages;->copySelectedMessage()V
 
@@ -526,7 +490,6 @@
 
 .method static synthetic access$300(Lcom/android/mms/ui/ManageSimMessages;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ManageSimMessages;
 
     invoke-direct {p0}, Lcom/android/mms/ui/ManageSimMessages;->startQuery2()V
 
@@ -535,7 +498,6 @@
 
 .method static synthetic access$3000(Lcom/android/mms/ui/ManageSimMessages;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ManageSimMessages;
 
     invoke-direct {p0}, Lcom/android/mms/ui/ManageSimMessages;->addToContact()V
 
@@ -544,7 +506,6 @@
 
 .method static synthetic access$3100(Lcom/android/mms/ui/ManageSimMessages;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ManageSimMessages;
 
     invoke-direct {p0}, Lcom/android/mms/ui/ManageSimMessages;->viewContact()V
 
@@ -553,7 +514,6 @@
 
 .method static synthetic access$3200(Lcom/android/mms/ui/ManageSimMessages;)Landroid/widget/LinearLayout;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ManageSimMessages;
 
     iget-object v0, p0, Lcom/android/mms/ui/ManageSimMessages;->mSelectAll:Landroid/widget/LinearLayout;
 
@@ -570,7 +530,6 @@
 
 .method static synthetic access$3302(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/mms/ui/ManageSimMessages;->isDirectEnter:Z
 
@@ -579,7 +538,6 @@
 
 .method static synthetic access$3400(Lcom/android/mms/ui/ManageSimMessages;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ManageSimMessages;
 
     invoke-direct {p0}, Lcom/android/mms/ui/ManageSimMessages;->checkActiveMsg()Z
 
@@ -590,7 +548,6 @@
 
 .method static synthetic access$3500(Lcom/android/mms/ui/ManageSimMessages;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ManageSimMessages;
 
     invoke-direct {p0}, Lcom/android/mms/ui/ManageSimMessages;->contactExistsInDatabase()Z
 
@@ -601,7 +558,6 @@
 
 .method static synthetic access$3600(Lcom/android/mms/ui/ManageSimMessages;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ManageSimMessages;
 
     iget-boolean v0, p0, Lcom/android/mms/ui/ManageSimMessages;->mIsSelectAllmode:Z
 
@@ -610,8 +566,6 @@
 
 .method static synthetic access$3602(Lcom/android/mms/ui/ManageSimMessages;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ManageSimMessages;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/ManageSimMessages;->mIsSelectAllmode:Z
 
@@ -620,7 +574,6 @@
 
 .method static synthetic access$3700(Lcom/android/mms/ui/ManageSimMessages;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ManageSimMessages;
 
     iget-boolean v0, p0, Lcom/android/mms/ui/ManageSimMessages;->mIsLastItemOfSelectAll:Z
 
@@ -629,8 +582,6 @@
 
 .method static synthetic access$3702(Lcom/android/mms/ui/ManageSimMessages;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ManageSimMessages;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/ManageSimMessages;->mIsLastItemOfSelectAll:Z
 
@@ -639,7 +590,6 @@
 
 .method static synthetic access$3800(Lcom/android/mms/ui/ManageSimMessages;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ManageSimMessages;
 
     iget-boolean v0, p0, Lcom/android/mms/ui/ManageSimMessages;->mIsInEditMode:Z
 
@@ -648,8 +598,6 @@
 
 .method static synthetic access$3802(Lcom/android/mms/ui/ManageSimMessages;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ManageSimMessages;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/ManageSimMessages;->mIsInEditMode:Z
 
@@ -658,7 +606,6 @@
 
 .method static synthetic access$3900(Lcom/android/mms/ui/ManageSimMessages;)I
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ManageSimMessages;
 
     iget v0, p0, Lcom/android/mms/ui/ManageSimMessages;->CHECKBOX_FLOATING_DEFAULT_DURATION:I
 
@@ -667,7 +614,6 @@
 
 .method static synthetic access$4000(Lcom/android/mms/ui/ManageSimMessages;)Landroid/view/animation/Interpolator;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ManageSimMessages;
 
     iget-object v0, p0, Lcom/android/mms/ui/ManageSimMessages;->SINE_IN_OUT_70:Landroid/view/animation/Interpolator;
 
@@ -676,7 +622,6 @@
 
 .method static synthetic access$500(Lcom/android/mms/ui/ManageSimMessages;)Lcom/sec/android/touchwiz/widget/TwCheckBox;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ManageSimMessages;
 
     iget-object v0, p0, Lcom/android/mms/ui/ManageSimMessages;->mSelectAllCheckBox:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
@@ -685,7 +630,6 @@
 
 .method static synthetic access$700(Lcom/android/mms/ui/ManageSimMessages;)I
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ManageSimMessages;
 
     iget v0, p0, Lcom/android/mms/ui/ManageSimMessages;->mListMultiMode:I
 
@@ -694,8 +638,6 @@
 
 .method static synthetic access$702(Lcom/android/mms/ui/ManageSimMessages;I)I
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ManageSimMessages;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/mms/ui/ManageSimMessages;->mListMultiMode:I
 
@@ -704,7 +646,6 @@
 
 .method static synthetic access$800(Lcom/android/mms/ui/ManageSimMessages;)Landroid/widget/ListView;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ManageSimMessages;
 
     iget-object v0, p0, Lcom/android/mms/ui/ManageSimMessages;->mSimList:Landroid/widget/ListView;
 
@@ -713,7 +654,6 @@
 
 .method static synthetic access$900(Lcom/android/mms/ui/ManageSimMessages;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ManageSimMessages;
 
     invoke-direct {p0}, Lcom/android/mms/ui/ManageSimMessages;->refreshMessageList()V
 
@@ -890,8 +830,6 @@
 
 .method private confirmMultipleDeleteDialog(Lcom/android/mms/ui/ManageSimMessages$DeleteClickListener;I)V
     .locals 8
-    .param p1    # Lcom/android/mms/ui/ManageSimMessages$DeleteClickListener;
-    .param p2    # I
 
     const v7, 0x7f0c0235
 
@@ -1275,10 +1213,6 @@
 
 .method private copyToPhoneMemory(ILjava/lang/String;Ljava/lang/String;J)Z
     .locals 10
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # J
 
     const-string v0, "Mms/ManageSimMessages"
 
@@ -1559,7 +1493,6 @@
 
 .method private deleteFromSim(I)I
     .locals 6
-    .param p1    # I
 
     const/4 v5, 0x0
 
@@ -1831,7 +1764,6 @@
 
 .method private isCheckedItem(J)Z
     .locals 2
-    .param p1    # J
 
     iget-object v0, p0, Lcom/android/mms/ui/ManageSimMessages;->mCheckedMsgIds:Ljava/util/ArrayList;
 
@@ -1906,7 +1838,6 @@
 
 .method private setEmptyBgImage(Z)V
     .locals 3
-    .param p1    # Z
 
     invoke-direct {p0}, Lcom/android/mms/ui/ManageSimMessages;->isEmptyViewVisible()Z
 
@@ -2014,8 +1945,6 @@
 
 .method private setSIMMessageCountUI(Landroid/database/Cursor;I)V
     .locals 16
-    .param p1    # Landroid/database/Cursor;
-    .param p2    # I
 
     if-eqz p1, :cond_2
 
@@ -2855,7 +2784,6 @@
 
 .method private showProgressDialog(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/mms/ui/ManageSimMessages;->mProgressDialog:Landroid/app/ProgressDialog;
 
@@ -3345,7 +3273,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 2
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -3397,7 +3324,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 8
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v7, 0x0
 
@@ -3840,7 +3766,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 2
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v1, 0x1
 
@@ -3907,7 +3832,6 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)Z
     .locals 3
-    .param p1    # Landroid/view/Menu;
 
     const/4 v2, 0x0
 
@@ -4033,7 +3957,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "Mms/ManageSimMessages"
 
@@ -4089,7 +4012,6 @@
 
 .method public onUpdate(Lcom/android/mms/data/Contact;)V
     .locals 1
-    .param p1    # Lcom/android/mms/data/Contact;
 
     new-instance v0, Lcom/android/mms/ui/ManageSimMessages$8;
 

@@ -42,7 +42,6 @@
 # direct methods
 .method public constructor <init>(C)V
     .locals 0
-    .param p1    # C
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -145,7 +144,6 @@
 
 .method public setString(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/text/TextUtils$SimpleStringSplitter;->mString:Ljava/lang/String;
 

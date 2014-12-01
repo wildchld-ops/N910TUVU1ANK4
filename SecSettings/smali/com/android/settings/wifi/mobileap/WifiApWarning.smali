@@ -112,7 +112,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/wifi/mobileap/WifiApWarning;)I
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApWarning;
 
     iget v0, p0, Lcom/android/settings/wifi/mobileap/WifiApWarning;->extra_type:I
 
@@ -121,8 +120,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/wifi/mobileap/WifiApWarning;I)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApWarning;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/settings/wifi/mobileap/WifiApWarning;->handleWifiApStateChanged(I)V
 
@@ -131,7 +128,6 @@
 
 .method static synthetic access$1000(Lcom/android/settings/wifi/mobileap/WifiApWarning;)Landroid/app/AlertDialog;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApWarning;
 
     iget-object v0, p0, Lcom/android/settings/wifi/mobileap/WifiApWarning;->mApDisableDialog:Landroid/app/AlertDialog;
 
@@ -140,7 +136,6 @@
 
 .method static synthetic access$1100(Lcom/android/settings/wifi/mobileap/WifiApWarning;)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApWarning;
 
     invoke-direct {p0}, Lcom/android/settings/wifi/mobileap/WifiApWarning;->preProvisioning()V
 
@@ -149,7 +144,6 @@
 
 .method static synthetic access$1200(Lcom/android/settings/wifi/mobileap/WifiApWarning;)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApWarning;
 
     invoke-direct {p0}, Lcom/android/settings/wifi/mobileap/WifiApWarning;->sendBroadcastEnablingHotspotCancel()V
 
@@ -158,8 +152,6 @@
 
 .method static synthetic access$1300(Lcom/android/settings/wifi/mobileap/WifiApWarning;Z)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApWarning;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/settings/wifi/mobileap/WifiApWarning;->secSetSoftapEnabled(Z)V
 
@@ -168,7 +160,6 @@
 
 .method static synthetic access$1400(Lcom/android/settings/wifi/mobileap/WifiApWarning;)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApWarning;
 
     invoke-direct {p0}, Lcom/android/settings/wifi/mobileap/WifiApWarning;->afterAttentionDialog()V
 
@@ -177,7 +168,6 @@
 
 .method static synthetic access$1500(Lcom/android/settings/wifi/mobileap/WifiApWarning;)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApWarning;
 
     invoke-direct {p0}, Lcom/android/settings/wifi/mobileap/WifiApWarning;->afterBatteryDialog()V
 
@@ -186,7 +176,6 @@
 
 .method static synthetic access$1600(Lcom/android/settings/wifi/mobileap/WifiApWarning;)Lcom/android/settings/wifi/WifiApDialog;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApWarning;
 
     iget-object v0, p0, Lcom/android/settings/wifi/mobileap/WifiApWarning;->mDialogConfigure:Lcom/android/settings/wifi/WifiApDialog;
 
@@ -195,8 +184,6 @@
 
 .method static synthetic access$1702(Lcom/android/settings/wifi/mobileap/WifiApWarning;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApWarning;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/wifi/mobileap/WifiApWarning;->mWifiDisabledByEnablingHotspot:Z
 
@@ -205,8 +192,6 @@
 
 .method static synthetic access$1800(Lcom/android/settings/wifi/mobileap/WifiApWarning;I)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApWarning;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/settings/wifi/mobileap/WifiApWarning;->startProvisioningIfNecessary(I)V
 
@@ -215,7 +200,6 @@
 
 .method static synthetic access$1900(Lcom/android/settings/wifi/mobileap/WifiApWarning;)Landroid/net/wifi/WifiConfiguration;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApWarning;
 
     iget-object v0, p0, Lcom/android/settings/wifi/mobileap/WifiApWarning;->mWifiConfig:Landroid/net/wifi/WifiConfiguration;
 
@@ -224,8 +208,6 @@
 
 .method static synthetic access$1902(Lcom/android/settings/wifi/mobileap/WifiApWarning;Landroid/net/wifi/WifiConfiguration;)Landroid/net/wifi/WifiConfiguration;
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApWarning;
-    .param p1    # Landroid/net/wifi/WifiConfiguration;
 
     iput-object p1, p0, Lcom/android/settings/wifi/mobileap/WifiApWarning;->mWifiConfig:Landroid/net/wifi/WifiConfiguration;
 
@@ -234,7 +216,6 @@
 
 .method static synthetic access$2000(Lcom/android/settings/wifi/mobileap/WifiApWarning;)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApWarning;
 
     invoke-direct {p0}, Lcom/android/settings/wifi/mobileap/WifiApWarning;->disableWifiDialog()V
 
@@ -243,8 +224,6 @@
 
 .method static synthetic access$202(Lcom/android/settings/wifi/mobileap/WifiApWarning;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApWarning;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/wifi/mobileap/WifiApWarning;->isAirplaneMode:Z
 
@@ -253,7 +232,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/wifi/mobileap/WifiApWarning;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApWarning;
 
     iget-object v0, p0, Lcom/android/settings/wifi/mobileap/WifiApWarning;->mContext:Landroid/content/Context;
 
@@ -262,7 +240,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/wifi/mobileap/WifiApWarning;)Landroid/net/wifi/WifiManager;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApWarning;
 
     iget-object v0, p0, Lcom/android/settings/wifi/mobileap/WifiApWarning;->mWifiManager:Landroid/net/wifi/WifiManager;
 
@@ -271,7 +248,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/wifi/mobileap/WifiApWarning;)Landroid/app/AlertDialog;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApWarning;
 
     iget-object v0, p0, Lcom/android/settings/wifi/mobileap/WifiApWarning;->mNaiMismatchDialog:Landroid/app/AlertDialog;
 
@@ -280,7 +256,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/wifi/mobileap/WifiApWarning;)I
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApWarning;
 
     iget v0, p0, Lcom/android/settings/wifi/mobileap/WifiApWarning;->mDialogType:I
 
@@ -289,8 +264,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/wifi/mobileap/WifiApWarning;I)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApWarning;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/settings/wifi/mobileap/WifiApWarning;->showProgressDialog(I)V
 
@@ -299,7 +272,6 @@
 
 .method static synthetic access$800(Lcom/android/settings/wifi/mobileap/WifiApWarning;)I
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApWarning;
 
     iget v0, p0, Lcom/android/settings/wifi/mobileap/WifiApWarning;->req_type:I
 
@@ -308,7 +280,6 @@
 
 .method static synthetic access$900(Lcom/android/settings/wifi/mobileap/WifiApWarning;)Landroid/net/ConnectivityManager;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApWarning;
 
     iget-object v0, p0, Lcom/android/settings/wifi/mobileap/WifiApWarning;->mConnectivityManager:Landroid/net/ConnectivityManager;
 
@@ -616,7 +587,6 @@
 
 .method private handleWifiApStateChanged(I)V
     .locals 6
-    .param p1    # I
 
     const/16 v5, 0xb
 
@@ -948,7 +918,6 @@
 
 .method private secSetSoftapEnabled(Z)V
     .locals 2
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -1284,7 +1253,6 @@
 
 .method private showNextHotspotDialog(I)V
     .locals 23
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -2320,8 +2288,6 @@
 
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 0
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     invoke-virtual {p0}, Landroid/app/Activity;->finish()V
 
@@ -2330,7 +2296,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 14
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v13, -0x1
 

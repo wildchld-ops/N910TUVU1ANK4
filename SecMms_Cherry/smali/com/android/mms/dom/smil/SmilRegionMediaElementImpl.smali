@@ -13,8 +13,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/mms/dom/smil/SmilDocumentImpl;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Lcom/android/mms/dom/smil/SmilDocumentImpl;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Lcom/android/mms/dom/smil/SmilMediaElementImpl;-><init>(Lcom/android/mms/dom/smil/SmilDocumentImpl;Ljava/lang/String;)V
 
@@ -94,7 +92,6 @@
 
 .method public setRegion(Lorg/w3c/dom/smil/SMILRegionElement;)V
     .locals 2
-    .param p1    # Lorg/w3c/dom/smil/SMILRegionElement;
 
     const-string v0, "region"
 

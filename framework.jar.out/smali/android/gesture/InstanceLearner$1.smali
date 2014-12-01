@@ -40,8 +40,6 @@
 # virtual methods
 .method public compare(Landroid/gesture/Prediction;Landroid/gesture/Prediction;)I
     .locals 5
-    .param p1    # Landroid/gesture/Prediction;
-    .param p2    # Landroid/gesture/Prediction;
 
     iget-wide v0, p1, Landroid/gesture/Prediction;->score:D
 
@@ -73,8 +71,6 @@
 
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p1, Landroid/gesture/Prediction;
 

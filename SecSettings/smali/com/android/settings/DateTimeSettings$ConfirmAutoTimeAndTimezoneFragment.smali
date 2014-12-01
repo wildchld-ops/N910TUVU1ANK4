@@ -25,7 +25,6 @@
 
 .method public static show(Lcom/android/settings/DateTimeSettings;)V
     .locals 3
-    .param p0    # Lcom/android/settings/DateTimeSettings;
 
     invoke-virtual {p0}, Landroid/app/Fragment;->isAdded()Z
 
@@ -60,7 +59,6 @@
 # virtual methods
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 

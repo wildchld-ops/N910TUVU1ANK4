@@ -98,7 +98,6 @@
 
 .method private determineLength(Landroid/net/http/Headers;)J
     .locals 8
-    .param p1    # Landroid/net/http/Headers;
 
     const-wide/16 v4, -0x1
 
@@ -138,8 +137,6 @@
 # virtual methods
 .method public bind(Ljava/net/Socket;Lorg/apache/http/params/HttpParams;)V
     .locals 6
-    .param p1    # Ljava/net/Socket;
-    .param p2    # Lorg/apache/http/params/HttpParams;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -547,7 +544,6 @@
 
 .method public parseResponseHeader(Landroid/net/http/Headers;)Lorg/apache/http/StatusLine;
     .locals 14
-    .param p1    # Landroid/net/http/Headers;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -778,7 +774,6 @@
 
 .method public receiveResponseEntity(Landroid/net/http/Headers;)Lorg/apache/http/HttpEntity;
     .locals 10
-    .param p1    # Landroid/net/http/Headers;
 
     const/4 v9, 0x0
 
@@ -872,7 +867,6 @@
 
 .method public sendRequestEntity(Lorg/apache/http/HttpEntityEnclosingRequest;)V
     .locals 3
-    .param p1    # Lorg/apache/http/HttpEntityEnclosingRequest;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/HttpException;,
@@ -918,7 +912,6 @@
 
 .method public sendRequestHeader(Lorg/apache/http/HttpRequest;)V
     .locals 2
-    .param p1    # Lorg/apache/http/HttpRequest;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/HttpException;,
@@ -952,7 +945,6 @@
 
 .method public setSocketTimeout(I)V
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0}, Landroid/net/http/AndroidHttpClientConnection;->assertOpen()V
 

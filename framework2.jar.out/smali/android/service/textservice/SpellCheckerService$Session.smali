@@ -72,8 +72,6 @@
 
 .method public onGetSentenceSuggestionsMultiple([Landroid/view/textservice/TextInfo;I)[Landroid/view/textservice/SentenceSuggestionsInfo;
     .locals 11
-    .param p1    # [Landroid/view/textservice/TextInfo;
-    .param p2    # I
 
     if-eqz p1, :cond_0
 
@@ -213,9 +211,6 @@
 
 .method public onGetSuggestionsMultiple([Landroid/view/textservice/TextInfo;IZ)[Landroid/view/textservice/SuggestionsInfo;
     .locals 6
-    .param p1    # [Landroid/view/textservice/TextInfo;
-    .param p2    # I
-    .param p3    # Z
 
     array-length v1, p1
 
@@ -260,7 +255,6 @@
 
 .method public final setInternalISpellCheckerSession(Landroid/service/textservice/SpellCheckerService$InternalISpellCheckerSession;)V
     .locals 0
-    .param p1    # Landroid/service/textservice/SpellCheckerService$InternalISpellCheckerSession;
 
     iput-object p1, p0, Landroid/service/textservice/SpellCheckerService$Session;->mInternalSession:Landroid/service/textservice/SpellCheckerService$InternalISpellCheckerSession;
 

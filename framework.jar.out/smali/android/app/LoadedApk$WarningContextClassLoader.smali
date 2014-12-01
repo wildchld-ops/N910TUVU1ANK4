@@ -39,7 +39,6 @@
 
 .method synthetic constructor <init>(Landroid/app/LoadedApk$1;)V
     .locals 0
-    .param p1    # Landroid/app/LoadedApk$1;
 
     invoke-direct {p0}, Landroid/app/LoadedApk$WarningContextClassLoader;-><init>()V
 
@@ -48,7 +47,6 @@
 
 .method private warn(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     sget-boolean v0, Landroid/app/LoadedApk$WarningContextClassLoader;->warned:Z
 
@@ -153,7 +151,6 @@
 
 .method public getResource(Ljava/lang/String;)Ljava/net/URL;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "getResource"
 
@@ -172,7 +169,6 @@
 
 .method public getResourceAsStream(Ljava/lang/String;)Ljava/io/InputStream;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "getResourceAsStream"
 
@@ -191,7 +187,6 @@
 
 .method public getResources(Ljava/lang/String;)Ljava/util/Enumeration;
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -227,7 +222,6 @@
 
 .method public loadClass(Ljava/lang/String;)Ljava/lang/Class;
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -261,8 +255,6 @@
 
 .method public setClassAssertionStatus(Ljava/lang/String;Z)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const-string v0, "setClassAssertionStatus"
 
@@ -279,7 +271,6 @@
 
 .method public setDefaultAssertionStatus(Z)V
     .locals 1
-    .param p1    # Z
 
     const-string v0, "setDefaultAssertionStatus"
 
@@ -296,8 +287,6 @@
 
 .method public setPackageAssertionStatus(Ljava/lang/String;Z)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const-string v0, "setPackageAssertionStatus"
 

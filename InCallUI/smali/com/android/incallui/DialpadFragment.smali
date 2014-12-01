@@ -296,7 +296,6 @@
 
 .method private disableHovering(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     const/4 v1, 0x0
 
@@ -407,7 +406,6 @@
 
 .method private resetAnimation(Z)V
     .locals 3
-    .param p1    # Z
 
     const/4 v2, 0x4
 
@@ -467,8 +465,6 @@
 
 .method private setPrimaryCallElapsedTimeTitleForDialpad(ZZ)V
     .locals 6
-    .param p1    # Z
-    .param p2    # Z
 
     invoke-virtual {p0}, Landroid/app/Fragment;->getView()Landroid/view/View;
 
@@ -542,7 +538,6 @@
 
 .method private setupKeypad(Landroid/view/View;)V
     .locals 4
-    .param p1    # Landroid/view/View;
 
     const-string v3, "dtmf_smaller_hit_target"
 
@@ -618,7 +613,6 @@
 # virtual methods
 .method public appendDigitsToField(C)V
     .locals 1
-    .param p1    # C
 
     iget-object v0, p0, Lcom/android/incallui/DialpadFragment;->mDtmfDialerField:Landroid/widget/EditText;
 
@@ -743,7 +737,6 @@
 
 .method public onChangeSideDialPad(I)V
     .locals 6
-    .param p1    # I
 
     new-instance v4, Ljava/lang/StringBuilder;
 
@@ -933,7 +926,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 7
-    .param p1    # Landroid/view/View;
 
     const/4 v6, 0x1
 
@@ -1047,7 +1039,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/incallui/BaseFragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -1056,9 +1047,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 3
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const v1, 0x7f040029
 
@@ -1104,7 +1092,6 @@
 
 .method onDialerKeyDown(Landroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/KeyEvent;
 
     const-string v0, "Notifying dtmf key down."
 
@@ -1131,7 +1118,6 @@
 
 .method public onDialerKeyUp(Landroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/KeyEvent;
 
     const-string v0, "Notifying dtmf key up."
 
@@ -1158,7 +1144,6 @@
 
 .method protected onFinishInflate(Landroid/view/View;)V
     .locals 4
-    .param p1    # Landroid/view/View;
 
     const/4 v3, 0x0
 
@@ -1309,8 +1294,6 @@
 
 .method public onHover(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 10
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     const/4 v9, 0x0
 
@@ -1428,9 +1411,6 @@
 
 .method public onKey(Landroid/view/View;ILandroid/view/KeyEvent;)Z
     .locals 4
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # Landroid/view/KeyEvent;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -1587,8 +1567,6 @@
 
 .method public onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 4
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     const-string v1, "onTouch"
 
@@ -1698,8 +1676,6 @@
 
 .method public setPrimaryCallElapsedTimeForDialpad(Ljava/lang/String;Z)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     iget-object v0, p0, Lcom/android/incallui/DialpadFragment;->mDialpadElapsedTime:Landroid/widget/TextView;
 
@@ -1744,7 +1720,6 @@
 
 .method public setVisible(Z)V
     .locals 3
-    .param p1    # Z
 
     const/4 v0, 0x0
 
@@ -1796,7 +1771,6 @@
 
 .method public setVisibleByAninmation(Z)V
     .locals 3
-    .param p1    # Z
 
     const/4 v2, 0x4
 

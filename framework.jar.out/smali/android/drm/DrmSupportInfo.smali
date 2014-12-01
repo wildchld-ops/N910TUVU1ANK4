@@ -58,7 +58,6 @@
 # virtual methods
 .method public addFileSuffix(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const-string v0, ""
 
@@ -82,7 +81,6 @@
 
 .method public addMimeType(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -117,7 +115,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 4
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x0
 
@@ -253,7 +250,6 @@
 
 .method isSupportedFileSuffix(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/drm/DrmSupportInfo;->mFileSuffixList:Ljava/util/ArrayList;
 
@@ -266,7 +262,6 @@
 
 .method isSupportedMimeType(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_1
 
@@ -321,7 +316,6 @@
 
 .method public setDescription(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 

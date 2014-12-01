@@ -36,7 +36,6 @@
 # virtual methods
 .method public onCompletion(Landroid/media/MediaPlayer;)V
     .locals 1
-    .param p1    # Landroid/media/MediaPlayer;
 
     const-string v0, "- Playing completed "
 

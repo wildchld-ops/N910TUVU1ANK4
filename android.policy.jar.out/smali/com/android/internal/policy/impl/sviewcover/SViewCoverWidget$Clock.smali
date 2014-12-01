@@ -65,8 +65,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -98,7 +96,6 @@
 
 .method static synthetic access$200(Lcom/android/internal/policy/impl/sviewcover/SViewCoverWidget$Clock;)V
     .locals 0
-    .param p0    # Lcom/android/internal/policy/impl/sviewcover/SViewCoverWidget$Clock;
 
     invoke-direct {p0}, Lcom/android/internal/policy/impl/sviewcover/SViewCoverWidget$Clock;->onTimeChanged()V
 
@@ -107,7 +104,6 @@
 
 .method static synthetic access$300(Lcom/android/internal/policy/impl/sviewcover/SViewCoverWidget$Clock;)Landroid/widget/LinearLayout;
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/sviewcover/SViewCoverWidget$Clock;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/sviewcover/SViewCoverWidget$Clock;->mClockView:Landroid/widget/LinearLayout;
 
@@ -116,7 +112,6 @@
 
 .method public static getCurrentDateFormat(Landroid/content/Context;)Ljava/lang/String;
     .locals 9
-    .param p0    # Landroid/content/Context;
 
     new-instance v5, Ljava/lang/StringBuilder;
 
@@ -191,7 +186,6 @@
 
 .method private initClock(Landroid/content/Context;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
 
     iget-object v1, p0, Lcom/android/internal/policy/impl/sviewcover/SViewCoverWidget$Clock;->mCalendar:Ljava/util/Calendar;
 
@@ -710,7 +704,6 @@
 
 .method public onPopulateAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
     .locals 1
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
 
     invoke-super {p0, p1}, Landroid/view/View;->onPopulateAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
 

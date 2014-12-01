@@ -35,9 +35,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/mms/ui/BoxListAdapter;IFZ)V
     .locals 0
-    .param p2    # I
-    .param p3    # F
-    .param p4    # Z
 
     iput-object p1, p0, Lcom/android/mms/ui/BoxListAdapter$1;->this$0:Lcom/android/mms/ui/BoxListAdapter;
 
@@ -50,7 +47,6 @@
 # virtual methods
 .method protected removeEldestEntry(Ljava/util/Map$Entry;)Z
     .locals 2
-    .param p1    # Ljava/util/Map$Entry;
 
     invoke-virtual {p0}, Ljava/util/HashMap;->size()I
 

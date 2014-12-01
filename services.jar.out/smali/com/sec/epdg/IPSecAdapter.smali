@@ -101,7 +101,6 @@
 
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -156,8 +155,6 @@
 
 .method static synthetic access$1000(Lcom/sec/epdg/IPSecAdapter;Lcom/sec/epdg/IPSecAdapter$IPSecEventInfo;)V
     .locals 0
-    .param p0    # Lcom/sec/epdg/IPSecAdapter;
-    .param p1    # Lcom/sec/epdg/IPSecAdapter$IPSecEventInfo;
 
     invoke-direct {p0, p1}, Lcom/sec/epdg/IPSecAdapter;->onIpSecAdapterConnectionStatusChanged(Lcom/sec/epdg/IPSecAdapter$IPSecEventInfo;)V
 
@@ -166,9 +163,6 @@
 
 .method static synthetic access$1100(Lcom/sec/epdg/IPSecAdapter;Lcom/sec/epdg/IPSecAdapter$ConnectInfo;I)V
     .locals 0
-    .param p0    # Lcom/sec/epdg/IPSecAdapter;
-    .param p1    # Lcom/sec/epdg/IPSecAdapter$ConnectInfo;
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/sec/epdg/IPSecAdapter;->onConnectRequestRecv(Lcom/sec/epdg/IPSecAdapter$ConnectInfo;I)V
 
@@ -177,8 +171,6 @@
 
 .method static synthetic access$1200(Lcom/sec/epdg/IPSecAdapter;I)V
     .locals 0
-    .param p0    # Lcom/sec/epdg/IPSecAdapter;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/sec/epdg/IPSecAdapter;->onDisconnectRequestRecv(I)V
 
@@ -187,9 +179,6 @@
 
 .method static synthetic access$1300(Lcom/sec/epdg/IPSecAdapter;II)V
     .locals 0
-    .param p0    # Lcom/sec/epdg/IPSecAdapter;
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/sec/epdg/IPSecAdapter;->onCheckConnectionRequestRecv(II)V
 
@@ -198,8 +187,6 @@
 
 .method static synthetic access$900(Lcom/sec/epdg/IPSecAdapter;Lcom/sec/epdg/IPSecAdapter$IPSecServiceStatus;)V
     .locals 0
-    .param p0    # Lcom/sec/epdg/IPSecAdapter;
-    .param p1    # Lcom/sec/epdg/IPSecAdapter$IPSecServiceStatus;
 
     invoke-direct {p0, p1}, Lcom/sec/epdg/IPSecAdapter;->onIpSecAdapterServiceStatusChanged(Lcom/sec/epdg/IPSecAdapter$IPSecServiceStatus;)V
 
@@ -208,8 +195,6 @@
 
 .method private addIPsecConnectionDb(ILcom/ipsec/client/IPsecConnection;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Lcom/ipsec/client/IPsecConnection;
 
     const-string v0, "[IPSECADAPTER]"
 
@@ -236,7 +221,6 @@
 
 .method private getCidfromConnDb(Lcom/ipsec/client/IPsecConnection;)I
     .locals 6
-    .param p1    # Lcom/ipsec/client/IPsecConnection;
 
     const-string v3, "[IPSECADAPTER]"
 
@@ -350,7 +334,6 @@
 
 .method private getConnectionInformation(I)Lcom/sec/epdg/EpdgRilInterface$IWlanLinkProperties;
     .locals 37
-    .param p1    # I
 
     const-string v2, "[IPSECADAPTER]"
 
@@ -2171,7 +2154,6 @@
 
 .method private getIWlanAdapterConf(Lcom/ipsec/client/IPsecConnection$VirtualAdapterConfigurationMethod;)Lcom/sec/epdg/IWlanEnum$AdapterConf;
     .locals 3
-    .param p1    # Lcom/ipsec/client/IPsecConnection$VirtualAdapterConfigurationMethod;
 
     const-string v0, "[IPSECADAPTER]"
 
@@ -2237,7 +2219,6 @@
 
 .method private getIWlanEAPTypeValue(Ljava/util/Vector;)Lcom/sec/epdg/IWlanEnum$IkeEapType;
     .locals 4
-    .param p1    # Ljava/util/Vector;
 
     const-string v1, "[IPSECADAPTER]"
 
@@ -2313,7 +2294,6 @@
 
 .method private getIWlanEncryptType(Lcom/ipsec/client/IPsecConnection$IkeEncryption;)Lcom/sec/epdg/IWlanEnum$IkeEncryption;
     .locals 3
-    .param p1    # Lcom/ipsec/client/IPsecConnection$IkeEncryption;
 
     const-string v0, "[IPSECADAPTER]"
 
@@ -2443,7 +2423,6 @@
 
 .method private getIWlanEncryptType(Lcom/ipsec/client/IPsecConnection$IPsecEncryption;)Lcom/sec/epdg/IWlanEnum$IpSecEncryptionType;
     .locals 3
-    .param p1    # Lcom/ipsec/client/IPsecConnection$IPsecEncryption;
 
     const-string v0, "[IPSECADAPTER]"
 
@@ -2573,8 +2552,6 @@
 
 .method private getIWlanErrorFromIpsecError(Lcom/ipsec/client/IPsecError;I)Lcom/sec/epdg/IWlanError;
     .locals 4
-    .param p1    # Lcom/ipsec/client/IPsecError;
-    .param p2    # I
 
     sget-object v0, Lcom/sec/epdg/IPSecAdapter$1;->$SwitchMap$com$ipsec$client$IPsecError:[I
 
@@ -2732,7 +2709,6 @@
 
 .method private getIWlanEventbyIPSecEvent(Lcom/ipsec/client/IPsecEvent;)I
     .locals 3
-    .param p1    # Lcom/ipsec/client/IPsecEvent;
 
     const/16 v0, 0x32
 
@@ -2790,8 +2766,6 @@
 
 .method private getIWlanIdentityType(Lcom/ipsec/client/IPsecConnection$IdentityType;I)Lcom/sec/epdg/IWlanEnum$IdentityType;
     .locals 3
-    .param p1    # Lcom/ipsec/client/IPsecConnection$IdentityType;
-    .param p2    # I
 
     const-string v0, "[IPSECADAPTER]"
 
@@ -2906,7 +2880,6 @@
 
 .method private getIWlanIkeIntegrityValue(Lcom/ipsec/client/IPsecConnection$IkeIntegrity;)Lcom/sec/epdg/IWlanEnum$IkeIntegrity;
     .locals 3
-    .param p1    # Lcom/ipsec/client/IPsecConnection$IkeIntegrity;
 
     const-string v0, "[IPSECADAPTER]"
 
@@ -3012,7 +2985,6 @@
 
 .method private getIWlanIkeVersionValue(Lcom/ipsec/client/IPsecConnection$IkeVersion;)Lcom/sec/epdg/IWlanEnum$Ikeversion;
     .locals 3
-    .param p1    # Lcom/ipsec/client/IPsecConnection$IkeVersion;
 
     const-string v0, "[IPSECADAPTER]"
 
@@ -3070,7 +3042,6 @@
 
 .method private getIWlanIkegroupValue(Lcom/ipsec/client/IPsecConnection$IkeGroup;)Lcom/sec/epdg/IWlanEnum$IkeDhGroup;
     .locals 3
-    .param p1    # Lcom/ipsec/client/IPsecConnection$IkeGroup;
 
     const-string v0, "[IPSECADAPTER]"
 
@@ -3232,7 +3203,6 @@
 
 .method private getIWlanTunnelType(Lcom/ipsec/client/IPsecConnection$TunnelMode;)Lcom/sec/epdg/IWlanEnum$TunnelModeType;
     .locals 3
-    .param p1    # Lcom/ipsec/client/IPsecConnection$TunnelMode;
 
     const-string v0, "[IPSECADAPTER]"
 
@@ -3290,7 +3260,6 @@
 
 .method public static getInstance(Landroid/content/Context;)Lcom/sec/epdg/IPSecAdapter;
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     sget-object v0, Lcom/sec/epdg/IPSecAdapter;->mInstance:Lcom/sec/epdg/IPSecAdapter;
 
@@ -3327,8 +3296,6 @@
 
 .method public static getInstance(Landroid/content/Context;Landroid/os/Handler;)Lcom/sec/epdg/IPSecAdapter;
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/os/Handler;
 
     sget-object v0, Lcom/sec/epdg/IPSecAdapter;->mInstance:Lcom/sec/epdg/IPSecAdapter;
 
@@ -3369,7 +3336,6 @@
 
 .method private getIpSecConnectionbyCid(I)Lcom/ipsec/client/IPsecConnection;
     .locals 2
-    .param p1    # I
 
     const-string v0, "[IPSECADAPTER]"
 
@@ -3404,7 +3370,6 @@
 
 .method private getIpSeclibAdapterConf(Lcom/sec/epdg/IWlanEnum$AdapterConf;)Lcom/ipsec/client/IPsecConnection$VirtualAdapterConfigurationMethod;
     .locals 3
-    .param p1    # Lcom/sec/epdg/IWlanEnum$AdapterConf;
 
     const-string v0, "[IPSECADAPTER]"
 
@@ -3470,7 +3435,6 @@
 
 .method private getIpSeclibEncryptType(Lcom/sec/epdg/IWlanEnum$IpSecEncryptionType;)Lcom/ipsec/client/IPsecConnection$IPsecEncryption;
     .locals 3
-    .param p1    # Lcom/sec/epdg/IWlanEnum$IpSecEncryptionType;
 
     const-string v0, "[IPSECADAPTER]"
 
@@ -3600,7 +3564,6 @@
 
 .method private getIpSeclibikegrpValue(Lcom/sec/epdg/IWlanEnum$IkeDhGroup;)Lcom/ipsec/client/IPsecConnection$IkeGroup;
     .locals 3
-    .param p1    # Lcom/sec/epdg/IWlanEnum$IkeDhGroup;
 
     const-string v0, "[IPSECADAPTER]"
 
@@ -3762,7 +3725,6 @@
 
 .method private getIpSeclibintegrityType(Lcom/sec/epdg/IWlanEnum$IpSecIntegrityType;)Lcom/ipsec/client/IPsecConnection$IPsecIntegrity;
     .locals 3
-    .param p1    # Lcom/sec/epdg/IWlanEnum$IpSecIntegrityType;
 
     const-string v0, "[IPSECADAPTER]"
 
@@ -3892,7 +3854,6 @@
 
 .method private getIpsecIwlanAuthType(Lcom/ipsec/client/IPsecConnection$HostAuthentication;)Lcom/sec/epdg/IWlanEnum$IPSecAuthType;
     .locals 3
-    .param p1    # Lcom/ipsec/client/IPsecConnection$HostAuthentication;
 
     const-string v0, "[IPSECADAPTER]"
 
@@ -3958,7 +3919,6 @@
 
 .method private getIpsecIwlanIpType(Lcom/ipsec/client/IPsecConnection$IPVersion;)Lcom/sec/epdg/IWlanEnum$IPSecIpType;
     .locals 3
-    .param p1    # Lcom/ipsec/client/IPsecConnection$IPVersion;
 
     const-string v0, "[IPSECADAPTER]"
 
@@ -4024,7 +3984,6 @@
 
 .method private getIpseclibAuthVal(Lcom/sec/epdg/IWlanEnum$IPSecAuthType;)Lcom/ipsec/client/IPsecConnection$HostAuthentication;
     .locals 3
-    .param p1    # Lcom/sec/epdg/IWlanEnum$IPSecAuthType;
 
     const-string v0, "[IPSECADAPTER]"
 
@@ -4090,8 +4049,6 @@
 
 .method private getIpseclibIdentityType(Lcom/sec/epdg/IWlanEnum$IdentityType;I)Lcom/ipsec/client/IPsecConnection$IdentityType;
     .locals 3
-    .param p1    # Lcom/sec/epdg/IWlanEnum$IdentityType;
-    .param p2    # I
 
     const-string v0, "[IPSECADAPTER]"
 
@@ -4192,7 +4149,6 @@
 
 .method private getIpseclibIkeEncryptType(Lcom/sec/epdg/IWlanEnum$IkeEncryption;)Lcom/ipsec/client/IPsecConnection$IkeEncryption;
     .locals 3
-    .param p1    # Lcom/sec/epdg/IWlanEnum$IkeEncryption;
 
     const-string v0, "[IPSECADAPTER]"
 
@@ -4322,7 +4278,6 @@
 
 .method private getIpseclibIkeVersionValue(Lcom/sec/epdg/IWlanEnum$Ikeversion;)Lcom/ipsec/client/IPsecConnection$IkeVersion;
     .locals 3
-    .param p1    # Lcom/sec/epdg/IWlanEnum$Ikeversion;
 
     const-string v0, "[IPSECADAPTER]"
 
@@ -4380,7 +4335,6 @@
 
 .method private getIpseclibIkeintegrityValue(Lcom/sec/epdg/IWlanEnum$IkeIntegrity;)Lcom/ipsec/client/IPsecConnection$IkeIntegrity;
     .locals 3
-    .param p1    # Lcom/sec/epdg/IWlanEnum$IkeIntegrity;
 
     const-string v0, "[IPSECADAPTER]"
 
@@ -4486,7 +4440,6 @@
 
 .method private getIpseclibIpTypeVal(Lcom/sec/epdg/IWlanEnum$IPSecIpType;)Lcom/ipsec/client/IPsecConnection$IPVersion;
     .locals 3
-    .param p1    # Lcom/sec/epdg/IWlanEnum$IPSecIpType;
 
     const-string v0, "[IPSECADAPTER]"
 
@@ -4552,7 +4505,6 @@
 
 .method private getIpseclibLifeType(Lcom/sec/epdg/IWlanEnum$IpSecLifeTimeType;)Lcom/ipsec/client/IPsecConnection$IPsecLifeType;
     .locals 3
-    .param p1    # Lcom/sec/epdg/IWlanEnum$IpSecLifeTimeType;
 
     const-string v0, "[IPSECADAPTER]"
 
@@ -4610,7 +4562,6 @@
 
 .method private getIpseclibTunnelMode(Lcom/sec/epdg/IWlanEnum$TunnelModeType;)Lcom/ipsec/client/IPsecConnection$TunnelMode;
     .locals 3
-    .param p1    # Lcom/sec/epdg/IWlanEnum$TunnelModeType;
 
     const-string v0, "[IPSECADAPTER]"
 
@@ -4668,7 +4619,6 @@
 
 .method private getIpseclibValue(Lcom/sec/epdg/IWlanEnum$IpSecDHGroup;)Lcom/ipsec/client/IPsecConnection$IPsecGroup;
     .locals 3
-    .param p1    # Lcom/sec/epdg/IWlanEnum$IpSecDHGroup;
 
     const-string v0, "[IPSECADAPTER]"
 
@@ -4822,7 +4772,6 @@
 
 .method private getIwlanIpsecLifeType(Lcom/ipsec/client/IPsecConnection$IPsecLifeType;)Lcom/sec/epdg/IWlanEnum$IpSecLifeTimeType;
     .locals 3
-    .param p1    # Lcom/ipsec/client/IPsecConnection$IPsecLifeType;
 
     const-string v0, "[IPSECADAPTER]"
 
@@ -4880,7 +4829,6 @@
 
 .method private getIwlanintegrityType(Lcom/ipsec/client/IPsecConnection$IPsecIntegrity;)Lcom/sec/epdg/IWlanEnum$IpSecIntegrityType;
     .locals 3
-    .param p1    # Lcom/ipsec/client/IPsecConnection$IPsecIntegrity;
 
     const-string v0, "[IPSECADAPTER]"
 
@@ -5010,7 +4958,6 @@
 
 .method private getIwlanipsecgroup(Lcom/ipsec/client/IPsecConnection$IPsecGroup;)Lcom/sec/epdg/IWlanEnum$IpSecDHGroup;
     .locals 3
-    .param p1    # Lcom/ipsec/client/IPsecConnection$IPsecGroup;
 
     const-string v0, "[IPSECADAPTER]"
 
@@ -5164,7 +5111,6 @@
 
 .method private initIpSecClient(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const-string v0, "[IPSECADAPTER]"
 
@@ -5189,10 +5135,6 @@
 
 .method private mapIwlanSettingToIPsecConnection(Lcom/sec/epdg/IWlanApnSetting;Ljava/lang/String;Ljava/lang/String;I)Lcom/ipsec/client/IPsecConnection;
     .locals 19
-    .param p1    # Lcom/sec/epdg/IWlanApnSetting;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -6464,8 +6406,6 @@
 
 .method private onCheckConnectionRequestRecv(II)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     iget-boolean v1, p0, Lcom/sec/epdg/IPSecAdapter;->mbStarted:Z
 
@@ -6553,8 +6493,6 @@
 
 .method private onConnectRequestRecv(Lcom/sec/epdg/IPSecAdapter$ConnectInfo;I)V
     .locals 13
-    .param p1    # Lcom/sec/epdg/IPSecAdapter$ConnectInfo;
-    .param p2    # I
 
     const/4 v12, 0x0
 
@@ -6857,7 +6795,6 @@
 
 .method private onDisconnectRequestRecv(I)V
     .locals 6
-    .param p1    # I
 
     iget-boolean v2, p0, Lcom/sec/epdg/IPSecAdapter;->mbStarted:Z
 
@@ -6943,7 +6880,6 @@
 
 .method private onIpSecAdapterConnectionStatusChanged(Lcom/sec/epdg/IPSecAdapter$IPSecEventInfo;)V
     .locals 8
-    .param p1    # Lcom/sec/epdg/IPSecAdapter$IPSecEventInfo;
 
     iget-object v2, p1, Lcom/sec/epdg/IPSecAdapter$IPSecEventInfo;->event:Lcom/ipsec/client/IPsecEvent;
 
@@ -7094,7 +7030,6 @@
 
 .method private onIpSecAdapterServiceStatusChanged(Lcom/sec/epdg/IPSecAdapter$IPSecServiceStatus;)V
     .locals 6
-    .param p1    # Lcom/sec/epdg/IPSecAdapter$IPSecServiceStatus;
 
     const/4 v5, 0x0
 
@@ -7244,7 +7179,6 @@
 
 .method private setIkeEAPTypeValue(Lcom/sec/epdg/IWlanEnum$IkeEapType;)Lcom/ipsec/client/IPsecConnection$EapMethod;
     .locals 3
-    .param p1    # Lcom/sec/epdg/IWlanEnum$IkeEapType;
 
     const-string v0, "[IPSECADAPTER]"
 
@@ -7314,8 +7248,6 @@
 
 .method private showToastOnConnectionStatusChanged(Lcom/ipsec/client/IPsecEvent;Lcom/ipsec/client/IPsecEventData;)V
     .locals 6
-    .param p1    # Lcom/ipsec/client/IPsecEvent;
-    .param p2    # Lcom/ipsec/client/IPsecEventData;
 
     new-instance v1, Ljava/lang/StringBuffer;
 
@@ -7629,8 +7561,6 @@
 # virtual methods
 .method public onServiceStatusChanged(Lcom/ipsec/client/IPsecError;Lcom/ipsec/client/IPsecEventData;)V
     .locals 6
-    .param p1    # Lcom/ipsec/client/IPsecError;
-    .param p2    # Lcom/ipsec/client/IPsecEventData;
 
     const-string v4, "[IPSECADAPTER]"
 
@@ -7677,8 +7607,6 @@
 
 .method public onUpdate(Lcom/ipsec/client/IPsecEvent;Lcom/ipsec/client/IPsecEventData;)V
     .locals 4
-    .param p1    # Lcom/ipsec/client/IPsecEvent;
-    .param p2    # Lcom/ipsec/client/IPsecEventData;
 
     const-string v2, "[IPSECADAPTER]"
 
@@ -7715,9 +7643,6 @@
 
 .method public postCheckConnectionMessage(IILjava/lang/Object;)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/Object;
 
     iget-object v1, p0, Lcom/sec/epdg/IPSecAdapter;->mHandler:Lcom/sec/epdg/IPSecAdapter$IpSecAdapterHandler;
 
@@ -7742,11 +7667,6 @@
 
 .method public postConnectMessage(IILjava/lang/Object;Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/Object;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
 
     new-instance v0, Lcom/sec/epdg/IPSecAdapter$ConnectInfo;
 
@@ -7788,9 +7708,6 @@
 
 .method public postDisconnectMessage(IILjava/lang/Object;)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/Object;
 
     iget-object v1, p0, Lcom/sec/epdg/IPSecAdapter;->mHandler:Lcom/sec/epdg/IPSecAdapter$IpSecAdapterHandler;
 

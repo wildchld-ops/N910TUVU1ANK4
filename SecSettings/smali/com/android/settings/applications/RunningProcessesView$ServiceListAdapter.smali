@@ -49,7 +49,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/settings/applications/RunningProcessesView;Lcom/android/settings/applications/RunningState;)V
     .locals 2
-    .param p2    # Lcom/android/settings/applications/RunningState;
 
     iput-object p1, p0, Lcom/android/settings/applications/RunningProcessesView$ServiceListAdapter;->this$0:Lcom/android/settings/applications/RunningProcessesView;
 
@@ -94,8 +93,6 @@
 
 .method public bindView(Landroid/view/View;I)V
     .locals 6
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     iget-object v3, p0, Lcom/android/settings/applications/RunningProcessesView$ServiceListAdapter;->mState:Lcom/android/settings/applications/RunningState;
 
@@ -176,7 +173,6 @@
 
 .method public getItem(I)Ljava/lang/Object;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/settings/applications/RunningProcessesView$ServiceListAdapter;->mItems:Ljava/util/ArrayList;
 
@@ -189,7 +185,6 @@
 
 .method public getItemId(I)J
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/settings/applications/RunningProcessesView$ServiceListAdapter;->mItems:Ljava/util/ArrayList;
 
@@ -218,9 +213,6 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     if-nez p2, :cond_0
 
@@ -279,7 +271,6 @@
 
 .method public isEnabled(I)Z
     .locals 2
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -323,7 +314,6 @@
 
 .method public newView(Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 4
-    .param p1    # Landroid/view/ViewGroup;
 
     iget-object v1, p0, Lcom/android/settings/applications/RunningProcessesView$ServiceListAdapter;->mInflater:Landroid/view/LayoutInflater;
 
@@ -407,7 +397,6 @@
 
 .method setShowBackground(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-boolean v0, p0, Lcom/android/settings/applications/RunningProcessesView$ServiceListAdapter;->mShowBackground:Z
 

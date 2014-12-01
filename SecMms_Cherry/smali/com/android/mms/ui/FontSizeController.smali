@@ -329,7 +329,6 @@
 
 .method public static decreaseFontSize(Landroid/content/Context;)V
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     invoke-static {}, Lcom/android/mms/ui/FontSizeController;->getFontSizeIndexForUi()I
 
@@ -350,7 +349,6 @@
 
 .method public static ensureValid(I)I
     .locals 2
-    .param p0    # I
 
     const/4 v1, 0x1
 
@@ -396,7 +394,6 @@
 
 .method private static getBigger(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     const-string v1, "Follow system font size"
 
@@ -486,7 +483,6 @@
 
 .method public static getFontSize(I)F
     .locals 1
-    .param p0    # I
 
     invoke-static {}, Lcom/android/mms/ui/FontSizeController;->getFontSizeIndexForUi()I
 
@@ -501,8 +497,6 @@
 
 .method public static getFontSize(II)F
     .locals 1
-    .param p0    # I
-    .param p1    # I
 
     invoke-static {}, Lcom/android/mms/MmsConfig;->getEnableSupport7StepFontSize()Z
 
@@ -527,8 +521,6 @@
 
 .method private static getFontSize7StepInternal(II)F
     .locals 4
-    .param p0    # I
-    .param p1    # I
 
     const/4 v3, 0x3
 
@@ -647,8 +639,6 @@
 
 .method private static getFontSizeIndex(Landroid/content/Context;I)I
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     if-nez p1, :cond_0
 
@@ -774,8 +764,6 @@
 
 .method private static getFontSizeInternal(II)F
     .locals 4
-    .param p0    # I
-    .param p1    # I
 
     const/4 v3, 0x3
 
@@ -915,7 +903,6 @@
 
 .method private static getFontSizeNormal(I)F
     .locals 2
-    .param p0    # I
 
     const/4 v0, 0x0
 
@@ -1139,7 +1126,6 @@
 
 .method public static getFontSizeRateArray(I)[F
     .locals 3
-    .param p0    # I
 
     const/4 v2, 0x5
 
@@ -1219,7 +1205,6 @@
 
 .method protected static getFontSizeSettingDialogFontSize(I)F
     .locals 9
-    .param p0    # I
 
     const/4 v8, 0x4
 
@@ -1549,7 +1534,6 @@
 
 .method private static getSmaller(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     const-string v1, "Follow system font size"
 
@@ -1582,7 +1566,6 @@
 
 .method private static getSystemFontSizeIndex(Landroid/content/Context;)I
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -1603,7 +1586,6 @@
 
 .method public static increaseFontSize(Landroid/content/Context;)V
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     invoke-static {}, Lcom/android/mms/ui/FontSizeController;->getFontSizeIndexForUi()I
 
@@ -1624,7 +1606,6 @@
 
 .method private static indexOf(Ljava/lang/String;)I
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     invoke-static {}, Lcom/android/mms/MmsConfig;->getEnableSupport7StepFontSize()Z
 
@@ -1866,7 +1847,6 @@
 
 .method public static nameOf(I)Ljava/lang/String;
     .locals 2
-    .param p0    # I
 
     const/4 v0, 0x0
 
@@ -1987,8 +1967,6 @@
 
 .method public static showFontSizeSettingDialog(Landroid/content/Context;Lcom/android/mms/ui/FontSizeController$OnFontSizeSettingChangedListener;)V
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/mms/ui/FontSizeController$OnFontSizeSettingChangedListener;
 
     new-instance v1, Lcom/android/mms/ui/FontSizeController$1;
 

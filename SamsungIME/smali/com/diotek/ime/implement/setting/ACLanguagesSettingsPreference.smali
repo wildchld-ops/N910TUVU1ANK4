@@ -74,10 +74,6 @@
 # direct methods
 .method public constructor <init>(Lcom/diotek/ime/implement/setting/ACLanguagesSettings;Lcom/diotek/ime/framework/common/Language;II)V
     .locals 4
-    .param p1    # Lcom/diotek/ime/implement/setting/ACLanguagesSettings;
-    .param p2    # Lcom/diotek/ime/framework/common/Language;
-    .param p3    # I
-    .param p4    # I
 
     const/4 v0, 0x0
 
@@ -172,7 +168,6 @@
 
 .method static synthetic access$000(Lcom/diotek/ime/implement/setting/ACLanguagesSettingsPreference;)Lcom/diotek/ime/framework/common/Language;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/setting/ACLanguagesSettingsPreference;
 
     iget-object v0, p0, Lcom/diotek/ime/implement/setting/ACLanguagesSettingsPreference;->mLanguage:Lcom/diotek/ime/framework/common/Language;
 
@@ -181,7 +176,6 @@
 
 .method static synthetic access$100(Lcom/diotek/ime/implement/setting/ACLanguagesSettingsPreference;)Lcom/diotek/ime/implement/setting/ACLanguagesSettings;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/setting/ACLanguagesSettingsPreference;
 
     iget-object v0, p0, Lcom/diotek/ime/implement/setting/ACLanguagesSettingsPreference;->parent:Lcom/diotek/ime/implement/setting/ACLanguagesSettings;
 
@@ -190,7 +184,6 @@
 
 .method static synthetic access$200(Lcom/diotek/ime/implement/setting/ACLanguagesSettingsPreference;)V
     .locals 0
-    .param p0    # Lcom/diotek/ime/implement/setting/ACLanguagesSettingsPreference;
 
     invoke-direct {p0}, Lcom/diotek/ime/implement/setting/ACLanguagesSettingsPreference;->cancelDownload()V
 
@@ -199,7 +192,6 @@
 
 .method static synthetic access$300(Lcom/diotek/ime/implement/setting/ACLanguagesSettingsPreference;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/setting/ACLanguagesSettingsPreference;
 
     iget-object v0, p0, Lcom/diotek/ime/implement/setting/ACLanguagesSettingsPreference;->key:Ljava/lang/String;
 
@@ -208,7 +200,6 @@
 
 .method static synthetic access$400(Lcom/diotek/ime/implement/setting/ACLanguagesSettingsPreference;)V
     .locals 0
-    .param p0    # Lcom/diotek/ime/implement/setting/ACLanguagesSettingsPreference;
 
     invoke-direct {p0}, Lcom/diotek/ime/implement/setting/ACLanguagesSettingsPreference;->startDownload()V
 
@@ -217,7 +208,6 @@
 
 .method static synthetic access$500(Lcom/diotek/ime/implement/setting/ACLanguagesSettingsPreference;)Z
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/setting/ACLanguagesSettingsPreference;
 
     iget-boolean v0, p0, Lcom/diotek/ime/implement/setting/ACLanguagesSettingsPreference;->mIsCheckboxDontShowDownloadForRoam:Z
 
@@ -226,8 +216,6 @@
 
 .method static synthetic access$502(Lcom/diotek/ime/implement/setting/ACLanguagesSettingsPreference;Z)Z
     .locals 0
-    .param p0    # Lcom/diotek/ime/implement/setting/ACLanguagesSettingsPreference;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/implement/setting/ACLanguagesSettingsPreference;->mIsCheckboxDontShowDownloadForRoam:Z
 
@@ -236,7 +224,6 @@
 
 .method static synthetic access$600(Lcom/diotek/ime/implement/setting/ACLanguagesSettingsPreference;)Z
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/setting/ACLanguagesSettingsPreference;
 
     iget-boolean v0, p0, Lcom/diotek/ime/implement/setting/ACLanguagesSettingsPreference;->mIsCheckboxDontShowDownloadForWifi:Z
 
@@ -245,8 +232,6 @@
 
 .method static synthetic access$602(Lcom/diotek/ime/implement/setting/ACLanguagesSettingsPreference;Z)Z
     .locals 0
-    .param p0    # Lcom/diotek/ime/implement/setting/ACLanguagesSettingsPreference;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/implement/setting/ACLanguagesSettingsPreference;->mIsCheckboxDontShowDownloadForWifi:Z
 
@@ -418,7 +403,6 @@
 # virtual methods
 .method public IntentForDialog(I)V
     .locals 5
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/preference/Preference;->getContext()Landroid/content/Context;
 
@@ -770,7 +754,6 @@
 
 .method protected checkAndSetViewState(Landroid/view/View;)V
     .locals 10
-    .param p1    # Landroid/view/View;
 
     const v9, 0x7f090556
 
@@ -1084,7 +1067,6 @@
 
 .method protected onBindView(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     iput-object p1, p0, Lcom/diotek/ime/implement/setting/ACLanguagesSettingsPreference;->selfView:Landroid/view/View;
 
@@ -1434,7 +1416,6 @@
 
 .method public setCurrentState(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/diotek/ime/implement/setting/ACLanguagesSettingsPreference;->mCurrentState:I
 
@@ -1640,7 +1621,6 @@
 
 .method public updated(I)V
     .locals 7
-    .param p1    # I
 
     const v6, 0x66724652
 

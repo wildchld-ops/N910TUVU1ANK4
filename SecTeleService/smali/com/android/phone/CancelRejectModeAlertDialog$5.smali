@@ -40,7 +40,7 @@
 
     iget-object v0, p0, Lcom/android/phone/CancelRejectModeAlertDialog$5;->this$0:Lcom/android/phone/CancelRejectModeAlertDialog;
 
-    invoke-virtual {v0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {v0}, Lcom/android/phone/CancelRejectModeAlertDialog;->finish()V
 
     return-void
 .end method

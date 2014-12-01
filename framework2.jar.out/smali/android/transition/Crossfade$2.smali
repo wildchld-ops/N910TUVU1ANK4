@@ -49,7 +49,6 @@
 # virtual methods
 .method public onAnimationEnd(Landroid/animation/Animator;)V
     .locals 3
-    .param p1    # Landroid/animation/Animator;
 
     iget-boolean v1, p0, Landroid/transition/Crossfade$2;->val$useParentOverlay:Z
 

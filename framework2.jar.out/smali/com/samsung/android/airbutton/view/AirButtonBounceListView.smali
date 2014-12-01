@@ -22,9 +22,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Lcom/samsung/android/airbutton/AirButtonAdapterWrapper;Lcom/samsung/android/airbutton/Attributes;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/samsung/android/airbutton/AirButtonAdapterWrapper;
-    .param p3    # Lcom/samsung/android/airbutton/Attributes;
 
     const/4 v1, 0x3
 
@@ -61,7 +58,6 @@
 
 .method static synthetic access$000(Lcom/samsung/android/airbutton/view/AirButtonBounceListView;)V
     .locals 0
-    .param p0    # Lcom/samsung/android/airbutton/view/AirButtonBounceListView;
 
     invoke-direct {p0}, Lcom/samsung/android/airbutton/view/AirButtonBounceListView;->generateAndPlaySecondAnimation()V
 
@@ -385,7 +381,6 @@
 # virtual methods
 .method protected adjustViewDelta(I)V
     .locals 2
-    .param p1    # I
 
     invoke-super {p0, p1}, Lcom/samsung/android/airbutton/view/AirButtonListView;->adjustViewDelta(I)V
 
@@ -404,7 +399,6 @@
 
 .method public dispatchTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 4
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v3, 0x1
 
@@ -793,9 +787,6 @@
 
 .method protected getAnimationRotation(IIF)F
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # F
 
     const/4 v4, 0x1
 
@@ -872,7 +863,6 @@
 
 .method protected getRotation(I)F
     .locals 3
-    .param p1    # I
 
     const/4 v2, 0x1
 
@@ -933,8 +923,6 @@
 
 .method protected getStartRotateAnimation(II)Landroid/animation/ObjectAnimator;
     .locals 10
-    .param p1    # I
-    .param p2    # I
 
     const/4 v9, 0x1
 
@@ -999,7 +987,6 @@
 
 .method protected getTouchUpRotateAnimation(I)Landroid/animation/AnimatorSet;
     .locals 11
-    .param p1    # I
 
     const/4 v10, 0x2
 
@@ -1084,7 +1071,6 @@
 
 .method protected onTouchUp(Landroid/view/MotionEvent;)V
     .locals 3
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-super {p0, p1}, Lcom/samsung/android/airbutton/view/AirButtonListView;->onTouchUp(Landroid/view/MotionEvent;)V
 
@@ -1134,8 +1120,6 @@
 
 .method public requestSendAccessibilityEvent(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/accessibility/AccessibilityEvent;
 
     const/4 v0, 0x1
 
@@ -1144,7 +1128,6 @@
 
 .method public sendAccessibilityEvent(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method

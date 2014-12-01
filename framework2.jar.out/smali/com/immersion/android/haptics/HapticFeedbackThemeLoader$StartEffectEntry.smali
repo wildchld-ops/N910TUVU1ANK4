@@ -41,8 +41,6 @@
 
 .method synthetic constructor <init>(Lcom/immersion/android/haptics/HapticFeedbackThemeLoader;Lcom/immersion/android/haptics/HapticFeedbackThemeLoader$1;)V
     .locals 0
-    .param p1    # Lcom/immersion/android/haptics/HapticFeedbackThemeLoader;
-    .param p2    # Lcom/immersion/android/haptics/HapticFeedbackThemeLoader$1;
 
     invoke-direct {p0, p1}, Lcom/immersion/android/haptics/HapticFeedbackThemeLoader$StartEffectEntry;-><init>(Lcom/immersion/android/haptics/HapticFeedbackThemeLoader;)V
 

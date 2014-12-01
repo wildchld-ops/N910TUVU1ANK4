@@ -74,7 +74,6 @@
 
 .method public constructor <init>(J)V
     .locals 4
-    .param p1    # J
 
     const-wide/16 v2, 0x0
 
@@ -111,8 +110,6 @@
 
 .method public constructor <init>(JF)V
     .locals 4
-    .param p1    # J
-    .param p3    # F
 
     const-wide/16 v2, 0x0
 
@@ -153,9 +150,6 @@
 
 .method public constructor <init>(JFLandroid/view/animation/Interpolator;)V
     .locals 4
-    .param p1    # J
-    .param p3    # F
-    .param p4    # Landroid/view/animation/Interpolator;
 
     const-wide/16 v2, 0x0
 
@@ -198,8 +192,6 @@
 
 .method public constructor <init>(JLandroid/view/animation/Interpolator;)V
     .locals 4
-    .param p1    # J
-    .param p3    # Landroid/view/animation/Interpolator;
 
     const-wide/16 v2, 0x0
 
@@ -238,7 +230,6 @@
 
 .method public constructor <init>(Landroid/view/animation/Interpolator;)V
     .locals 4
-    .param p1    # Landroid/view/animation/Interpolator;
 
     const-wide/16 v2, 0x0
 
@@ -306,7 +297,6 @@
 
 .method public abort(F)Z
     .locals 3
-    .param p1    # F
 
     invoke-virtual {p0}, Lcom/android/launcher2/ScalarAnimator;->isAnimating()Z
 
@@ -329,8 +319,6 @@
 
 .method public extend(FJ)V
     .locals 4
-    .param p1    # F
-    .param p2    # J
 
     const-wide/16 v2, 0x0
 
@@ -423,7 +411,6 @@
 
 .method public get(J)F
     .locals 9
-    .param p1    # J
 
     const-wide/16 v7, 0x0
 
@@ -509,7 +496,6 @@
 
 .method public getFactor(J)F
     .locals 7
-    .param p1    # J
 
     const/4 v2, 0x0
 
@@ -586,7 +572,6 @@
 
 .method public setDefaultDuration(J)V
     .locals 0
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/android/launcher2/ScalarAnimator;->mDefaultDuration:J
 
@@ -595,7 +580,6 @@
 
 .method public setEndListener(Lcom/android/launcher2/ScalarAnimator$ScalarAnimatorListener;)V
     .locals 0
-    .param p1    # Lcom/android/launcher2/ScalarAnimator$ScalarAnimatorListener;
 
     iput-object p1, p0, Lcom/android/launcher2/ScalarAnimator;->mEndListener:Lcom/android/launcher2/ScalarAnimator$ScalarAnimatorListener;
 
@@ -604,7 +588,6 @@
 
 .method public setInterpolator(Landroid/view/animation/Interpolator;)V
     .locals 0
-    .param p1    # Landroid/view/animation/Interpolator;
 
     iput-object p1, p0, Lcom/android/launcher2/ScalarAnimator;->mInterpolator:Landroid/view/animation/Interpolator;
 
@@ -613,8 +596,6 @@
 
 .method public start(FF)V
     .locals 2
-    .param p1    # F
-    .param p2    # F
 
     iget-wide v0, p0, Lcom/android/launcher2/ScalarAnimator;->mDefaultDuration:J
 
@@ -625,9 +606,6 @@
 
 .method public start(FFJ)V
     .locals 7
-    .param p1    # F
-    .param p2    # F
-    .param p3    # J
 
     const-wide/16 v5, 0x0
 
@@ -646,10 +624,6 @@
 
 .method public start(FFJJ)V
     .locals 4
-    .param p1    # F
-    .param p2    # F
-    .param p3    # J
-    .param p5    # J
 
     const-wide/16 v2, 0x0
 
@@ -717,7 +691,6 @@
 
 .method public to(F)V
     .locals 2
-    .param p1    # F
 
     iget-wide v0, p0, Lcom/android/launcher2/ScalarAnimator;->mDefaultDuration:J
 
@@ -728,8 +701,6 @@
 
 .method public to(FJ)V
     .locals 6
-    .param p1    # F
-    .param p2    # J
 
     const-wide/16 v4, 0x0
 
@@ -746,9 +717,6 @@
 
 .method public to(FJJ)V
     .locals 7
-    .param p1    # F
-    .param p2    # J
-    .param p4    # J
 
     iget v0, p0, Lcom/android/launcher2/ScalarAnimator;->mStop:F
 

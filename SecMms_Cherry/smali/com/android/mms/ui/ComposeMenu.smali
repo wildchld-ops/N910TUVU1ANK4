@@ -300,7 +300,6 @@
 
 .method public constructor <init>(Lcom/android/mms/ui/ComposeMessageFragment;)V
     .locals 5
-    .param p1    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     const-wide/16 v3, 0x0
 
@@ -968,7 +967,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/ui/ComposeMenu;)Lcom/android/mms/ui/ComposeMessageFragment;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMenu;
 
     iget-object v0, p0, Lcom/android/mms/ui/ComposeMenu;->mComposer:Lcom/android/mms/ui/ComposeMessageFragment;
 
@@ -977,7 +975,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/ui/ComposeMenu;)Landroid/app/Activity;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMenu;
 
     iget-object v0, p0, Lcom/android/mms/ui/ComposeMenu;->mActivity:Landroid/app/Activity;
 
@@ -986,7 +983,6 @@
 
 .method static synthetic access$1000(Lcom/android/mms/ui/ComposeMenu;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMenu;
 
     iget-object v0, p0, Lcom/android/mms/ui/ComposeMenu;->mSendNowBody:Ljava/lang/String;
 
@@ -995,8 +991,6 @@
 
 .method static synthetic access$1002(Lcom/android/mms/ui/ComposeMenu;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeMenu;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/mms/ui/ComposeMenu;->mSendNowBody:Ljava/lang/String;
 
@@ -1005,7 +999,6 @@
 
 .method static synthetic access$1100(Lcom/android/mms/ui/ComposeMenu;)J
     .locals 2
-    .param p0    # Lcom/android/mms/ui/ComposeMenu;
 
     iget-wide v0, p0, Lcom/android/mms/ui/ComposeMenu;->mSendNowSize:J
 
@@ -1014,8 +1007,6 @@
 
 .method static synthetic access$1102(Lcom/android/mms/ui/ComposeMenu;J)J
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeMenu;
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/android/mms/ui/ComposeMenu;->mSendNowSize:J
 
@@ -1024,7 +1015,6 @@
 
 .method static synthetic access$1200(Lcom/android/mms/ui/ComposeMenu;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMenu;
 
     iget-boolean v0, p0, Lcom/android/mms/ui/ComposeMenu;->mSendNowLocked:Z
 
@@ -1033,8 +1023,6 @@
 
 .method static synthetic access$1202(Lcom/android/mms/ui/ComposeMenu;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeMenu;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/ComposeMenu;->mSendNowLocked:Z
 
@@ -1043,7 +1031,6 @@
 
 .method static synthetic access$1300(Lcom/android/mms/ui/ComposeMenu;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMenu;
 
     iget-object v0, p0, Lcom/android/mms/ui/ComposeMenu;->mSentTimeStamp:Ljava/lang/String;
 
@@ -1052,8 +1039,6 @@
 
 .method static synthetic access$1302(Lcom/android/mms/ui/ComposeMenu;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeMenu;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/mms/ui/ComposeMenu;->mSentTimeStamp:Ljava/lang/String;
 
@@ -1062,7 +1047,6 @@
 
 .method static synthetic access$1400(Lcom/android/mms/ui/ComposeMenu;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMenu;
 
     iget-boolean v0, p0, Lcom/android/mms/ui/ComposeMenu;->mSendNowDeliveryReport:Z
 
@@ -1071,8 +1055,6 @@
 
 .method static synthetic access$1402(Lcom/android/mms/ui/ComposeMenu;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeMenu;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/ComposeMenu;->mSendNowDeliveryReport:Z
 
@@ -1081,7 +1063,6 @@
 
 .method static synthetic access$1500(Lcom/android/mms/ui/ComposeMenu;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMenu;
 
     iget-boolean v0, p0, Lcom/android/mms/ui/ComposeMenu;->mSendNowReadReport:Z
 
@@ -1090,8 +1071,6 @@
 
 .method static synthetic access$1502(Lcom/android/mms/ui/ComposeMenu;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeMenu;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/ComposeMenu;->mSendNowReadReport:Z
 
@@ -1100,7 +1079,6 @@
 
 .method static synthetic access$1600(Lcom/android/mms/ui/ComposeMenu;)I
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMenu;
 
     iget v0, p0, Lcom/android/mms/ui/ComposeMenu;->mSendSimSlot:I
 
@@ -1109,8 +1087,6 @@
 
 .method static synthetic access$1602(Lcom/android/mms/ui/ComposeMenu;I)I
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeMenu;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/mms/ui/ComposeMenu;->mSendSimSlot:I
 
@@ -1119,8 +1095,6 @@
 
 .method static synthetic access$1702(Lcom/android/mms/ui/ComposeMenu;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeMenu;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/ComposeMenu;->mIsDelayForSearch:Z
 
@@ -1129,7 +1103,6 @@
 
 .method static synthetic access$1802(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/mms/ui/ComposeMenu;->mIsSearchMode:Z
 
@@ -1138,7 +1111,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/ui/ComposeMenu;)Lcom/android/mms/ui/MessageOptions;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMenu;
 
     iget-object v0, p0, Lcom/android/mms/ui/ComposeMenu;->mTempmessageOptions:Lcom/android/mms/ui/MessageOptions;
 
@@ -1147,8 +1119,6 @@
 
 .method static synthetic access$202(Lcom/android/mms/ui/ComposeMenu;Lcom/android/mms/ui/MessageOptions;)Lcom/android/mms/ui/MessageOptions;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeMenu;
-    .param p1    # Lcom/android/mms/ui/MessageOptions;
 
     iput-object p1, p0, Lcom/android/mms/ui/ComposeMenu;->mTempmessageOptions:Lcom/android/mms/ui/MessageOptions;
 
@@ -1157,7 +1127,6 @@
 
 .method static synthetic access$300(Lcom/android/mms/ui/ComposeMenu;)Lcom/android/mms/ui/MessageItem;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMenu;
 
     iget-object v0, p0, Lcom/android/mms/ui/ComposeMenu;->mTempMsgItem:Lcom/android/mms/ui/MessageItem;
 
@@ -1166,8 +1135,6 @@
 
 .method static synthetic access$302(Lcom/android/mms/ui/ComposeMenu;Lcom/android/mms/ui/MessageItem;)Lcom/android/mms/ui/MessageItem;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeMenu;
-    .param p1    # Lcom/android/mms/ui/MessageItem;
 
     iput-object p1, p0, Lcom/android/mms/ui/ComposeMenu;->mTempMsgItem:Lcom/android/mms/ui/MessageItem;
 
@@ -1176,7 +1143,6 @@
 
 .method static synthetic access$400(Lcom/android/mms/ui/ComposeMenu;)Lcom/android/mms/ui/MessageListItem;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMenu;
 
     iget-object v0, p0, Lcom/android/mms/ui/ComposeMenu;->mMsgListItem:Lcom/android/mms/ui/MessageListItem;
 
@@ -1185,7 +1151,6 @@
 
 .method static synthetic access$500(Lcom/android/mms/ui/ComposeMenu;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMenu;
 
     iget-object v0, p0, Lcom/android/mms/ui/ComposeMenu;->mNumberList:Ljava/util/ArrayList;
 
@@ -1194,7 +1159,6 @@
 
 .method static synthetic access$600(Lcom/android/mms/ui/ComposeMenu;)Landroid/net/Uri;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMenu;
 
     iget-object v0, p0, Lcom/android/mms/ui/ComposeMenu;->mSendNowUri:Landroid/net/Uri;
 
@@ -1203,8 +1167,6 @@
 
 .method static synthetic access$602(Lcom/android/mms/ui/ComposeMenu;Landroid/net/Uri;)Landroid/net/Uri;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeMenu;
-    .param p1    # Landroid/net/Uri;
 
     iput-object p1, p0, Lcom/android/mms/ui/ComposeMenu;->mSendNowUri:Landroid/net/Uri;
 
@@ -1213,7 +1175,6 @@
 
 .method static synthetic access$700(Lcom/android/mms/ui/ComposeMenu;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMenu;
 
     iget-object v0, p0, Lcom/android/mms/ui/ComposeMenu;->mSendNowType:Ljava/lang/String;
 
@@ -1222,8 +1183,6 @@
 
 .method static synthetic access$702(Lcom/android/mms/ui/ComposeMenu;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeMenu;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/mms/ui/ComposeMenu;->mSendNowType:Ljava/lang/String;
 
@@ -1232,7 +1191,6 @@
 
 .method static synthetic access$800(Lcom/android/mms/ui/ComposeMenu;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ComposeMenu;
 
     iget-object v0, p0, Lcom/android/mms/ui/ComposeMenu;->mSendNowAddr:Ljava/lang/String;
 
@@ -1241,8 +1199,6 @@
 
 .method static synthetic access$802(Lcom/android/mms/ui/ComposeMenu;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeMenu;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/mms/ui/ComposeMenu;->mSendNowAddr:Ljava/lang/String;
 
@@ -1251,7 +1207,6 @@
 
 .method static synthetic access$900(Lcom/android/mms/ui/ComposeMenu;)J
     .locals 2
-    .param p0    # Lcom/android/mms/ui/ComposeMenu;
 
     iget-wide v0, p0, Lcom/android/mms/ui/ComposeMenu;->mSendNowThreadId:J
 
@@ -1260,8 +1215,6 @@
 
 .method static synthetic access$902(Lcom/android/mms/ui/ComposeMenu;J)J
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ComposeMenu;
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/android/mms/ui/ComposeMenu;->mSendNowThreadId:J
 
@@ -1270,7 +1223,6 @@
 
 .method private buildAddAddressToContactMenuItem(Landroid/view/Menu;)V
     .locals 10
-    .param p1    # Landroid/view/Menu;
 
     const v9, 0x7f0c004b
 
@@ -1416,7 +1368,6 @@
 
 .method private buildAddAndRemoveToSpamNumberMenuItem(Landroid/view/Menu;)V
     .locals 14
-    .param p1    # Landroid/view/Menu;
 
     const v13, 0x7f02010d
 
@@ -1713,7 +1664,6 @@
 
 .method private getDrmMimeMenuStringRsrc(J)I
     .locals 1
-    .param p1    # J
 
     iget-object v0, p0, Lcom/android/mms/ui/ComposeMenu;->mActivity:Landroid/app/Activity;
 
@@ -1764,7 +1714,6 @@
 
 .method private getSelectedUriFromMessageList(Lcom/android/mms/ui/MessageListItem;)Landroid/net/Uri;
     .locals 11
-    .param p1    # Lcom/android/mms/ui/MessageListItem;
 
     const/4 v8, 0x0
 
@@ -1902,7 +1851,6 @@
 
 .method private isAvaliableSelectTextMenu(Lcom/android/mms/ui/MessageItem;)Z
     .locals 2
-    .param p1    # Lcom/android/mms/ui/MessageItem;
 
     const/4 v0, 0x0
 
@@ -1949,9 +1897,6 @@
 # virtual methods
 .method public addUriSpecificMenuItems(Landroid/view/ContextMenu;Landroid/view/View;Lcom/android/mms/ui/MessageListItem;)V
     .locals 10
-    .param p1    # Landroid/view/ContextMenu;
-    .param p2    # Landroid/view/View;
-    .param p3    # Lcom/android/mms/ui/MessageListItem;
 
     const/4 v5, 0x0
 
@@ -1997,7 +1942,6 @@
 
 .method public buildAddAndRemoveToPrioritySenderMenuItem(Landroid/view/Menu;)V
     .locals 14
-    .param p1    # Landroid/view/Menu;
 
     const v13, 0x7f0c044c
 
@@ -2193,7 +2137,6 @@
 
 .method public closeSearchView(Z)V
     .locals 3
-    .param p1    # Z
 
     const-string v0, "Mms/ComposerMenu"
 
@@ -2239,9 +2182,6 @@
 
 .method public confirmCmasForwardMessage(Landroid/content/Context;Lcom/android/mms/ui/MessageOptions;Lcom/android/mms/ui/MessageItem;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/mms/ui/MessageOptions;
-    .param p3    # Lcom/android/mms/ui/MessageItem;
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
@@ -2280,7 +2220,6 @@
 
 .method public confirmRegisterAsSpamNumber(Lcom/android/mms/ui/ComposeMenu$DeleteSpamThreadListener;)V
     .locals 7
-    .param p1    # Lcom/android/mms/ui/ComposeMenu$DeleteSpamThreadListener;
 
     const/4 v6, 0x0
 
@@ -2371,7 +2310,6 @@
 
 .method public isFreeMessageSystemMessage(Lcom/android/mms/ui/MessageItem;)Z
     .locals 4
-    .param p1    # Lcom/android/mms/ui/MessageItem;
 
     const/4 v1, 0x1
 
@@ -2454,9 +2392,6 @@
 
 .method public onCreateContextMenu(Landroid/view/ContextMenu;Landroid/view/View;Lcom/android/mms/ui/MessageItem;)V
     .locals 15
-    .param p1    # Landroid/view/ContextMenu;
-    .param p2    # Landroid/view/View;
-    .param p3    # Lcom/android/mms/ui/MessageItem;
 
     if-nez p3, :cond_1
 
@@ -4401,7 +4336,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 47
-    .param p1    # Landroid/view/MenuItem;
 
     move-object/from16 v0, p0
 
@@ -8259,7 +8193,6 @@
 
 .method public onPrepareFreeMessageOptionsMenu(Landroid/view/Menu;)V
     .locals 14
-    .param p1    # Landroid/view/Menu;
 
     const v9, 0x7f0c0005
 
@@ -9510,7 +9443,6 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)V
     .locals 29
-    .param p1    # Landroid/view/Menu;
 
     const-string v21, "Mms/ComposerMenu"
 
@@ -13698,7 +13630,6 @@
 
 .method public onPrepareRcsOptionsMenu(Landroid/view/Menu;)V
     .locals 11
-    .param p1    # Landroid/view/Menu;
 
     const v6, 0x7f0c0005
 
@@ -14677,7 +14608,6 @@
 
 .method public setActivity(Landroid/app/Activity;)V
     .locals 0
-    .param p1    # Landroid/app/Activity;
 
     iput-object p1, p0, Lcom/android/mms/ui/ComposeMenu;->mActivity:Landroid/app/Activity;
 

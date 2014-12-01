@@ -74,10 +74,6 @@
 
 .method static cancelThumbnailRequest(Landroid/content/ContentResolver;JLandroid/net/Uri;J)V
     .locals 7
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # J
-    .param p3    # Landroid/net/Uri;
-    .param p4    # J
 
     invoke-virtual {p3}, Landroid/net/Uri;->buildUpon()Landroid/net/Uri$Builder;
 
@@ -154,10 +150,6 @@
 
 .method private static getMiniThumbFromFile(Landroid/database/Cursor;Landroid/net/Uri;Landroid/content/ContentResolver;Landroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;
     .locals 10
-    .param p0    # Landroid/database/Cursor;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Landroid/content/ContentResolver;
-    .param p3    # Landroid/graphics/BitmapFactory$Options;
 
     const/4 v0, 0x0
 
@@ -319,13 +311,6 @@
 
 .method static getThumbnail(Landroid/content/ContentResolver;JJILandroid/graphics/BitmapFactory$Options;Landroid/net/Uri;Z)Landroid/graphics/Bitmap;
     .locals 23
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # J
-    .param p3    # J
-    .param p5    # I
-    .param p6    # Landroid/graphics/BitmapFactory$Options;
-    .param p7    # Landroid/net/Uri;
-    .param p8    # Z
 
     const/4 v13, 0x0
 

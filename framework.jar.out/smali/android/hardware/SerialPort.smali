@@ -18,7 +18,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -111,8 +110,6 @@
 
 .method public open(Landroid/os/ParcelFileDescriptor;I)V
     .locals 1
-    .param p1    # Landroid/os/ParcelFileDescriptor;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -132,7 +129,6 @@
 
 .method public read(Ljava/nio/ByteBuffer;)I
     .locals 2
-    .param p1    # Ljava/nio/ByteBuffer;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -197,8 +193,6 @@
 
 .method public write(Ljava/nio/ByteBuffer;I)V
     .locals 2
-    .param p1    # Ljava/nio/ByteBuffer;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

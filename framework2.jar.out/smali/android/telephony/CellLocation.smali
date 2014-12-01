@@ -55,7 +55,6 @@
 
 .method public static newFromBundle(Landroid/os/Bundle;)Landroid/telephony/CellLocation;
     .locals 1
-    .param p0    # Landroid/os/Bundle;
 
     invoke-static {}, Landroid/telephony/TelephonyManager;->getDefault()Landroid/telephony/TelephonyManager;
 
@@ -97,8 +96,6 @@
 
 .method public static newFromBundle(Landroid/os/Bundle;I)Landroid/telephony/CellLocation;
     .locals 1
-    .param p0    # Landroid/os/Bundle;
-    .param p1    # I
 
     invoke-static {p1}, Landroid/telephony/MultiSimTelephonyManager;->getDefault(I)Landroid/telephony/MultiSimTelephonyManager;
 

@@ -720,8 +720,6 @@
 
 .method public static final AddPoint(SS)I
     .locals 1
-    .param p0    # S
-    .param p1    # S
 
     sget-object v0, Lcom/diotek/dhwr/DHWR;->mInk:Lcom/diotek/dhwr/DHWR$Ink;
 
@@ -750,7 +748,6 @@
 
 .method private static final BIT_FLAG(I)I
     .locals 1
-    .param p0    # I
 
     const/4 v0, 0x1
 
@@ -761,7 +758,6 @@
 
 .method public static final CheckWordInDict([C)I
     .locals 1
-    .param p0    # [C
 
     const/4 v0, 0x0
 
@@ -868,8 +864,6 @@
 
 .method public static final EraseAddPoint(SS)I
     .locals 2
-    .param p0    # S
-    .param p1    # S
 
     sget-object v0, Lcom/diotek/dhwr/DHWR;->mInk:Lcom/diotek/dhwr/DHWR$Ink;
 
@@ -906,7 +900,6 @@
 
 .method public static final EraseSetThick(I)I
     .locals 1
-    .param p0    # I
 
     sget-object v0, Lcom/diotek/dhwr/DHWR;->mInk:Lcom/diotek/dhwr/DHWR$Ink;
 
@@ -949,7 +942,6 @@
 
 .method public static final GetInkCount([I)I
     .locals 2
-    .param p0    # [I
 
     const/4 v1, 0x0
 
@@ -978,8 +970,6 @@
 
 .method public static final GetLanguageStatus(Landroid/content/Context;I)Z
     .locals 9
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     const/4 v6, 0x0
 
@@ -1052,7 +1042,6 @@
 
 .method public static GetLibraryPath(Ljava/lang/String;)Ljava/lang/String;
     .locals 24
-    .param p0    # Ljava/lang/String;
 
     const-string v13, "libdhwr.so"
 
@@ -1710,8 +1699,6 @@
 
 .method public static final LoadDict([B[B)I
     .locals 1
-    .param p0    # [B
-    .param p1    # [B
 
     const/4 v0, 0x0
 
@@ -1720,9 +1707,6 @@
 
 .method public static final PrintLog(ILjava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p0    # I
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-static {}, Lcom/diotek/dhwr/DHWR;->GetLogLevel()B
 
@@ -1763,8 +1747,6 @@
 
 .method public static final Recognize(Lcom/diotek/dhwr/DHWR$Ink;Lcom/diotek/dhwr/DHWR$Result;)I
     .locals 25
-    .param p0    # Lcom/diotek/dhwr/DHWR$Ink;
-    .param p1    # Lcom/diotek/dhwr/DHWR$Result;
 
     invoke-virtual/range {p1 .. p1}, Ljava/util/ArrayList;->clear()V
 
@@ -2038,7 +2020,6 @@
 
 .method public static final Recognize(Z)I
     .locals 12
-    .param p0    # Z
 
     const/4 v9, 0x1
 
@@ -2185,10 +2166,6 @@
 
 .method public static final SetAttribute(I[[II[I)I
     .locals 6
-    .param p0    # I
-    .param p1    # [[I
-    .param p2    # I
-    .param p3    # [I
 
     const/4 v5, 0x0
 
@@ -2242,7 +2219,6 @@
 
 .method public static SetAttribute(Lcom/diotek/dhwr/DHWR$Setting;)I
     .locals 2
-    .param p0    # Lcom/diotek/dhwr/DHWR$Setting;
 
     sget-object v0, Lcom/diotek/dhwr/DHWR;->mInnerCodeSet:[C
 
@@ -2335,8 +2311,6 @@
 
 .method public static final SetUserCharSet([CI)I
     .locals 1
-    .param p0    # [C
-    .param p1    # I
 
     sput-object p0, Lcom/diotek/dhwr/DHWR;->mInnerCodeSet:[C
 
@@ -2347,11 +2321,6 @@
 
 .method public static final SetWritingArea(IIIII)I
     .locals 6
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     sget-object v0, Lcom/diotek/dhwr/DHWR;->mSetting:Lcom/diotek/dhwr/DHWR$Setting;
 

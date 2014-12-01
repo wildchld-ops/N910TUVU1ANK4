@@ -28,7 +28,6 @@
 
 .method synthetic constructor <init>(Landroid/graphics/Atlas$1;)V
     .locals 0
-    .param p1    # Landroid/graphics/Atlas$1;
 
     invoke-direct {p0}, Landroid/graphics/Atlas$SlicePolicy$LongerFreeAxisSplitDecision;-><init>()V
 
@@ -39,10 +38,6 @@
 # virtual methods
 .method public splitHorizontal(IIII)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     if-le p1, p2, :cond_0
 

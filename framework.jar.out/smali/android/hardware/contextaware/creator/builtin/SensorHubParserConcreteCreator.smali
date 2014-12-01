@@ -23,7 +23,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -44,7 +43,6 @@
 
 .method static synthetic access$102(Landroid/hardware/contextaware/dataprovider/sensorhubprovider/PowerResetNotiParser;)Landroid/hardware/contextaware/dataprovider/sensorhubprovider/PowerResetNotiParser;
     .locals 0
-    .param p0    # Landroid/hardware/contextaware/dataprovider/sensorhubprovider/PowerResetNotiParser;
 
     sput-object p0, Landroid/hardware/contextaware/creator/builtin/SensorHubParserConcreteCreator;->sPowerResetNotiObservable:Landroid/hardware/contextaware/dataprovider/sensorhubprovider/PowerResetNotiParser;
 

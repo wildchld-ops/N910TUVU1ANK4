@@ -31,7 +31,6 @@
 
 .method synthetic constructor <init>(Landroid/webkitsec/WebViewInputDispatcher$1;)V
     .locals 0
-    .param p1    # Landroid/webkitsec/WebViewInputDispatcher$1;
 
     invoke-direct {p0}, Landroid/webkitsec/WebViewInputDispatcher$DispatchEventQueue;-><init>()V
 
@@ -88,7 +87,6 @@
 
 .method public enqueue(Landroid/webkitsec/WebViewInputDispatcher$DispatchEvent;)V
     .locals 1
-    .param p1    # Landroid/webkitsec/WebViewInputDispatcher$DispatchEvent;
 
     iget-object v0, p0, Landroid/webkitsec/WebViewInputDispatcher$DispatchEventQueue;->mHead:Landroid/webkitsec/WebViewInputDispatcher$DispatchEvent;
 

@@ -41,7 +41,6 @@
 # direct methods
 .method private constructor <init>(Landroid/security/IKeystoreService;)V
     .locals 0
-    .param p1    # Landroid/security/IKeystoreService;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -122,7 +121,6 @@
 
 .method private refreshRollbackUserKeystore(I)V
     .locals 3
-    .param p1    # I
 
     invoke-direct {p0}, Lcom/android/server/LockSettingsService$KeyStoreMdpp;->getCertificateService()Lcom/sec/enterprise/knox/certificate/ICertificatePolicy;
 
@@ -183,8 +181,6 @@
 # virtual methods
 .method public checkPassword(Ljava/lang/String;I)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v3, 0x1
 
@@ -237,7 +233,6 @@
 
 .method public isEmpty(I)Z
     .locals 5
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -290,7 +285,6 @@
 
 .method public isUnlocked(I)Z
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/server/LockSettingsService$KeyStoreMdpp;->state(I)Lcom/android/server/LockSettingsService$KeyStoreMdpp$State;
 
@@ -313,7 +307,6 @@
 
 .method public lock(I)Z
     .locals 5
-    .param p1    # I
 
     const/4 v3, 0x1
 
@@ -366,8 +359,6 @@
 
 .method public password(Ljava/lang/String;I)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v3, 0x1
 
@@ -426,7 +417,6 @@
 
 .method public reset(I)Z
     .locals 5
-    .param p1    # I
 
     const/4 v3, 0x1
 
@@ -479,7 +469,6 @@
 
 .method public resetHard(I)Z
     .locals 5
-    .param p1    # I
 
     const/4 v3, 0x1
 
@@ -532,7 +521,6 @@
 
 .method public setMaxRetryCount(I)Z
     .locals 5
-    .param p1    # I
 
     const/4 v3, 0x1
 
@@ -585,7 +573,6 @@
 
 .method public state(I)Lcom/android/server/LockSettingsService$KeyStoreMdpp$State;
     .locals 4
-    .param p1    # I
 
     :try_start_0
     iget-object v2, p0, Lcom/android/server/LockSettingsService$KeyStoreMdpp;->mBinder:Landroid/security/IKeystoreService;
@@ -645,8 +632,6 @@
 
 .method public unlock(Ljava/lang/String;I)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v3, 0x1
 

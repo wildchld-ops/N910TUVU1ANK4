@@ -286,7 +286,6 @@
 
 .method public run([Ljava/lang/String;)V
     .locals 4
-    .param p1    # [Ljava/lang/String;
 
     const/4 v2, 0x1
 
@@ -373,7 +372,6 @@
 
 .method public showError(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     sget-object v0, Ljava/lang/System;->err:Ljava/io/PrintStream;
 

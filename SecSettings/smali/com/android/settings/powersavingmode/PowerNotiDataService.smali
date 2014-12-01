@@ -60,7 +60,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/powersavingmode/PowerNotiDataService;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/powersavingmode/PowerNotiDataService;
 
     iget-object v0, p0, Lcom/android/settings/powersavingmode/PowerNotiDataService;->mContentResolver:Landroid/content/ContentResolver;
 
@@ -69,9 +68,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/powersavingmode/PowerNotiDataService;[Ljava/lang/String;Z)V
     .locals 0
-    .param p0    # Lcom/android/settings/powersavingmode/PowerNotiDataService;
-    .param p1    # [Ljava/lang/String;
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/settings/powersavingmode/PowerNotiDataService;->setUidAllowedForData([Ljava/lang/String;Z)V
 
@@ -80,8 +76,6 @@
 
 .method private setUidAllowedForData([Ljava/lang/String;Z)V
     .locals 6
-    .param p1    # [Ljava/lang/String;
-    .param p2    # Z
 
     sget-object v3, Lcom/android/settings/powersavingmode/PowerNotiDataService;->mContext:Landroid/content/Context;
 
@@ -238,7 +232,6 @@
 
 .method public getUid(Ljava/lang/String;)I
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     sget-object v3, Lcom/android/settings/powersavingmode/PowerNotiDataService;->mContext:Landroid/content/Context;
 
@@ -272,7 +265,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 

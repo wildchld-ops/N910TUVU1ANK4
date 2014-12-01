@@ -24,11 +24,6 @@
 # direct methods
 .method public constructor <init>(IILjava/lang/String;Ljava/lang/String;Z)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -49,8 +44,6 @@
 
 .method public static buildNetworkIdentity(Landroid/content/Context;Landroid/net/NetworkState;)Landroid/net/NetworkIdentity;
     .locals 8
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/NetworkState;
 
     iget-object v0, p1, Landroid/net/NetworkState;->networkInfo:Landroid/net/NetworkInfo;
 
@@ -270,7 +263,6 @@
 
 .method public static scrubSubscriberId(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "eng"
 
@@ -334,7 +326,6 @@
 # virtual methods
 .method public equals(Ljava/lang/Object;)Z
     .locals 4
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x0
 

@@ -26,7 +26,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/DirEncryptServiceHelper;Landroid/os/storage/IDirEncryptServiceListener;)V
     .locals 0
-    .param p2    # Landroid/os/storage/IDirEncryptServiceListener;
 
     iput-object p1, p0, Lcom/android/server/DirEncryptServiceHelper$DirEncryptServiceBinderListener;->this$0:Lcom/android/server/DirEncryptServiceHelper;
 

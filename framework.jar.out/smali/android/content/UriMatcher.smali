@@ -75,7 +75,6 @@
 
 .method public constructor <init>(I)V
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -102,9 +101,6 @@
 # virtual methods
 .method public addURI(Ljava/lang/String;Ljava/lang/String;I)V
     .locals 14
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     if-gez p3, :cond_0
 
@@ -305,7 +301,6 @@
 
 .method public match(Landroid/net/Uri;)I
     .locals 13
-    .param p1    # Landroid/net/Uri;
 
     invoke-virtual {p1}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
 

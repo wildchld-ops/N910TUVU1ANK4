@@ -36,7 +36,6 @@
 # virtual methods
 .method public onGroupInfoAvailable(Landroid/net/wifi/p2p/WifiP2pGroup;)V
     .locals 5
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pGroup;
 
     const/4 v4, 0x0
 

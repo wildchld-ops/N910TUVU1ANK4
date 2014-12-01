@@ -155,7 +155,6 @@
 
 .method private getKeyVibrateType(I)I
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -179,7 +178,6 @@
 
 .method private isFunctionKey(I)Z
     .locals 5
-    .param p1    # I
 
     const/4 v2, 0x1
 
@@ -361,7 +359,6 @@
 
 .method private setSystemSettingsVibrateOn(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/implement/effect/HapticVibrateController;->mIsSystemSettingsVibrateOn:Z
 
@@ -372,7 +369,6 @@
 # virtual methods
 .method public getKeySection(I)I
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/diotek/ime/implement/effect/HapticVibrateController;->isFunctionKey(I)Z
 
@@ -527,7 +523,6 @@
 
 .method public setMagnitudeLevel(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/diotek/ime/implement/effect/HapticVibrateController;->mVibratorMagnitudeLevel:I
 
@@ -536,7 +531,6 @@
 
 .method public setVibrateOn(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/implement/effect/HapticVibrateController;->mVibrateOn:Z
 
@@ -585,8 +579,6 @@
 
 .method public vibrate(IZ)V
     .locals 3
-    .param p1    # I
-    .param p2    # Z
 
     iget-boolean v0, p0, Lcom/diotek/ime/implement/effect/HapticVibrateController;->mVibrateOn:Z
 
@@ -637,9 +629,6 @@
 
 .method public vibrate(IZZ)V
     .locals 4
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # Z
 
     iget-boolean v0, p0, Lcom/diotek/ime/implement/effect/HapticVibrateController;->mVibrateOn:Z
 

@@ -162,7 +162,6 @@
 # virtual methods
 .method public isAndroidBeamAllowed(Z)Z
     .locals 4
-    .param p1    # Z
 
     :try_start_0
     invoke-static {}, Landroid/sec/enterprise/EnterpriseDeviceManager$EDMProxyServiceHelper;->getService()Landroid/sec/enterprise/IEDMProxy;
@@ -197,7 +196,6 @@
 
 .method public isAudioRecordAllowed(Z)Z
     .locals 4
-    .param p1    # Z
 
     :try_start_0
     invoke-static {}, Landroid/sec/enterprise/EnterpriseDeviceManager$EDMProxyServiceHelper;->getService()Landroid/sec/enterprise/IEDMProxy;
@@ -266,7 +264,6 @@
 
 .method public isBackupAllowed(Z)Z
     .locals 4
-    .param p1    # Z
 
     :try_start_0
     invoke-static {}, Landroid/sec/enterprise/EnterpriseDeviceManager$EDMProxyServiceHelper;->getService()Landroid/sec/enterprise/IEDMProxy;
@@ -301,7 +298,6 @@
 
 .method public isCameraEnabled(Z)Z
     .locals 4
-    .param p1    # Z
 
     :try_start_0
     invoke-static {}, Landroid/sec/enterprise/EnterpriseDeviceManager$EDMProxyServiceHelper;->getService()Landroid/sec/enterprise/IEDMProxy;
@@ -336,7 +332,6 @@
 
 .method public isClipboardAllowed(Z)Z
     .locals 4
-    .param p1    # Z
 
     :try_start_0
     invoke-static {}, Landroid/sec/enterprise/EnterpriseDeviceManager$EDMProxyServiceHelper;->getService()Landroid/sec/enterprise/IEDMProxy;
@@ -473,7 +468,6 @@
 
 .method public isMicrophoneEnabled(Z)Z
     .locals 4
-    .param p1    # Z
 
     :try_start_0
     invoke-static {}, Landroid/sec/enterprise/EnterpriseDeviceManager$EDMProxyServiceHelper;->getService()Landroid/sec/enterprise/IEDMProxy;
@@ -576,7 +570,6 @@
 
 .method public isPowerOffAllowed(Z)Z
     .locals 4
-    .param p1    # Z
 
     :try_start_0
     invoke-static {}, Landroid/sec/enterprise/EnterpriseDeviceManager$EDMProxyServiceHelper;->getService()Landroid/sec/enterprise/IEDMProxy;
@@ -611,7 +604,6 @@
 
 .method public isSBeamAllowed(Z)Z
     .locals 4
-    .param p1    # Z
 
     :try_start_0
     invoke-static {}, Landroid/sec/enterprise/EnterpriseDeviceManager$EDMProxyServiceHelper;->getService()Landroid/sec/enterprise/IEDMProxy;
@@ -646,7 +638,6 @@
 
 .method public isSVoiceAllowed(Z)Z
     .locals 4
-    .param p1    # Z
 
     :try_start_0
     invoke-static {}, Landroid/sec/enterprise/EnterpriseDeviceManager$EDMProxyServiceHelper;->getService()Landroid/sec/enterprise/IEDMProxy;
@@ -681,7 +672,6 @@
 
 .method public isScreenCaptureEnabled(Z)Z
     .locals 4
-    .param p1    # Z
 
     :try_start_0
     invoke-static {}, Landroid/sec/enterprise/EnterpriseDeviceManager$EDMProxyServiceHelper;->getService()Landroid/sec/enterprise/IEDMProxy;
@@ -716,7 +706,6 @@
 
 .method public isSettingsChangesAllowed(Z)Z
     .locals 4
-    .param p1    # Z
 
     :try_start_0
     invoke-static {}, Landroid/sec/enterprise/EnterpriseDeviceManager$EDMProxyServiceHelper;->getService()Landroid/sec/enterprise/IEDMProxy;
@@ -751,7 +740,6 @@
 
 .method public isVideoRecordAllowed(Z)Z
     .locals 4
-    .param p1    # Z
 
     :try_start_0
     invoke-static {}, Landroid/sec/enterprise/EnterpriseDeviceManager$EDMProxyServiceHelper;->getService()Landroid/sec/enterprise/IEDMProxy;
@@ -786,7 +774,6 @@
 
 .method public isWifiDirectAllowed(Z)Z
     .locals 4
-    .param p1    # Z
 
     :try_start_0
     invoke-static {}, Landroid/sec/enterprise/EnterpriseDeviceManager$EDMProxyServiceHelper;->getService()Landroid/sec/enterprise/IEDMProxy;

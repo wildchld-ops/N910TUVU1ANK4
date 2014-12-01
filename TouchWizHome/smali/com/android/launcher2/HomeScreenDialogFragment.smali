@@ -48,7 +48,6 @@
 
 .method static createAndShow(Landroid/app/FragmentManager;)V
     .locals 2
-    .param p0    # Landroid/app/FragmentManager;
 
     invoke-static {p0}, Lcom/android/launcher2/HomeScreenDialogFragment;->isActive(Landroid/app/FragmentManager;)Z
 
@@ -76,7 +75,6 @@
 
 .method static dismiss(Landroid/app/FragmentManager;)V
     .locals 2
-    .param p0    # Landroid/app/FragmentManager;
 
     const-string v1, "Homescreen"
 
@@ -254,7 +252,6 @@
 
 .method static isActive(Landroid/app/FragmentManager;)Z
     .locals 2
-    .param p0    # Landroid/app/FragmentManager;
 
     const/4 v0, 0x0
 
@@ -484,7 +481,6 @@
 # virtual methods
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/DialogFragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -493,7 +489,6 @@
 
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
     .locals 21
-    .param p1    # Landroid/os/Bundle;
 
     invoke-virtual/range {p0 .. p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 
@@ -933,7 +928,6 @@
 
 .method public onDismiss(Landroid/content/DialogInterface;)V
     .locals 2
-    .param p1    # Landroid/content/DialogInterface;
 
     sget-boolean v1, Lcom/android/launcher2/Launcher;->isHelpAppRunning:Z
 

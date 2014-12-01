@@ -21,8 +21,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/incallui/CallButtonFragment;Landroid/content/Context;Landroid/view/View;)V
     .locals 0
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/view/View;
 
     iput-object p1, p0, Lcom/android/incallui/CallButtonFragment$ActionBarBottomIconPopupMenu;->this$0:Lcom/android/incallui/CallButtonFragment;
 

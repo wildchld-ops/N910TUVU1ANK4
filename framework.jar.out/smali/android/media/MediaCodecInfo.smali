@@ -19,7 +19,6 @@
 # direct methods
 .method constructor <init>(I)V
     .locals 0
-    .param p1    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -32,7 +31,6 @@
 # virtual methods
 .method public final getCapabilitiesForType(Ljava/lang/String;)Landroid/media/MediaCodecInfo$CodecCapabilities;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget v0, p0, Landroid/media/MediaCodecInfo;->mIndex:I
 

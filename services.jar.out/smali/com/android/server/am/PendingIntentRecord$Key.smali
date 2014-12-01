@@ -49,16 +49,6 @@
 # direct methods
 .method constructor <init>(ILjava/lang/String;Lcom/android/server/am/ActivityRecord;Ljava/lang/String;I[Landroid/content/Intent;[Ljava/lang/String;ILandroid/os/Bundle;I)V
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/android/server/am/ActivityRecord;
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
-    .param p6    # [Landroid/content/Intent;
-    .param p7    # [Ljava/lang/String;
-    .param p8    # I
-    .param p9    # Landroid/os/Bundle;
-    .param p10    # I
 
     const/4 v2, 0x0
 
@@ -196,7 +186,6 @@
 # virtual methods
 .method public equals(Ljava/lang/Object;)Z
     .locals 5
-    .param p1    # Ljava/lang/Object;
 
     const/4 v2, 0x0
 

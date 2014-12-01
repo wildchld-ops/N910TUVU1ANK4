@@ -14,8 +14,6 @@
 # direct methods
 .method protected constructor <init>(ILandroid/renderscript/RenderScript;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Landroid/renderscript/RenderScript;
 
     invoke-direct {p0, p1, p2}, Landroid/renderscript/Script;-><init>(ILandroid/renderscript/RenderScript;)V
 
@@ -24,9 +22,6 @@
 
 .method protected constructor <init>(Landroid/renderscript/RenderScript;Landroid/content/res/Resources;I)V
     .locals 3
-    .param p1    # Landroid/renderscript/RenderScript;
-    .param p2    # Landroid/content/res/Resources;
-    .param p3    # I
 
     const/4 v1, 0x0
 
@@ -54,9 +49,6 @@
 
 .method private static declared-synchronized internalCreate(Landroid/renderscript/RenderScript;Landroid/content/res/Resources;I)I
     .locals 13
-    .param p0    # Landroid/renderscript/RenderScript;
-    .param p1    # Landroid/content/res/Resources;
-    .param p2    # I
 
     const-class v10, Landroid/renderscript/ScriptC;
 

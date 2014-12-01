@@ -38,9 +38,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/os/Looper;Landroid/hardware/contextaware/dataprovider/sensorhubprovider/IPassiveCurrrentPositionObserver;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/Looper;
-    .param p3    # Landroid/hardware/contextaware/dataprovider/sensorhubprovider/IPassiveCurrrentPositionObserver;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -71,7 +68,6 @@
 
 .method static synthetic access$000(Landroid/hardware/contextaware/utilbundle/CaPassiveCurrentPositionManager;)Landroid/hardware/contextaware/utilbundle/PositionContextBean;
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/utilbundle/CaPassiveCurrentPositionManager;
 
     iget-object v0, p0, Landroid/hardware/contextaware/utilbundle/CaPassiveCurrentPositionManager;->mPrePosition:Landroid/hardware/contextaware/utilbundle/PositionContextBean;
 
@@ -80,7 +76,6 @@
 
 .method static synthetic access$100(Landroid/hardware/contextaware/utilbundle/CaPassiveCurrentPositionManager;)I
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/utilbundle/CaPassiveCurrentPositionManager;
 
     iget v0, p0, Landroid/hardware/contextaware/utilbundle/CaPassiveCurrentPositionManager;->mSatelliteCount:I
 
@@ -89,8 +84,6 @@
 
 .method static synthetic access$102(Landroid/hardware/contextaware/utilbundle/CaPassiveCurrentPositionManager;I)I
     .locals 0
-    .param p0    # Landroid/hardware/contextaware/utilbundle/CaPassiveCurrentPositionManager;
-    .param p1    # I
 
     iput p1, p0, Landroid/hardware/contextaware/utilbundle/CaPassiveCurrentPositionManager;->mSatelliteCount:I
 
@@ -99,7 +92,6 @@
 
 .method static synthetic access$200(Landroid/hardware/contextaware/utilbundle/CaPassiveCurrentPositionManager;)Landroid/hardware/contextaware/utilbundle/PositionContextBean;
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/utilbundle/CaPassiveCurrentPositionManager;
 
     iget-object v0, p0, Landroid/hardware/contextaware/utilbundle/CaPassiveCurrentPositionManager;->mGpsInfo:Landroid/hardware/contextaware/utilbundle/PositionContextBean;
 
@@ -108,7 +100,6 @@
 
 .method static synthetic access$300(Landroid/hardware/contextaware/utilbundle/CaPassiveCurrentPositionManager;)V
     .locals 0
-    .param p0    # Landroid/hardware/contextaware/utilbundle/CaPassiveCurrentPositionManager;
 
     invoke-direct {p0}, Landroid/hardware/contextaware/utilbundle/CaPassiveCurrentPositionManager;->registerGpsListener()V
 
@@ -117,7 +108,6 @@
 
 .method static synthetic access$400(Landroid/hardware/contextaware/utilbundle/CaPassiveCurrentPositionManager;)V
     .locals 0
-    .param p0    # Landroid/hardware/contextaware/utilbundle/CaPassiveCurrentPositionManager;
 
     invoke-direct {p0}, Landroid/hardware/contextaware/utilbundle/CaPassiveCurrentPositionManager;->unregisterGpsListener()V
 
@@ -164,15 +154,6 @@
 
 .method public static sendPositionToSensorHub(I[IDDDDFFI)I
     .locals 6
-    .param p0    # I
-    .param p1    # [I
-    .param p2    # D
-    .param p4    # D
-    .param p6    # D
-    .param p8    # D
-    .param p10    # F
-    .param p11    # F
-    .param p12    # I
 
     const/16 v3, 0x16
 
@@ -554,7 +535,6 @@
 
 .method public final initializeManager(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     if-nez p1, :cond_0
 
@@ -604,7 +584,6 @@
 
 .method public final notifyPassiveCurrentPositionObserver(Landroid/hardware/contextaware/utilbundle/PositionContextBean;)V
     .locals 14
-    .param p1    # Landroid/hardware/contextaware/utilbundle/PositionContextBean;
 
     iget-object v0, p0, Landroid/hardware/contextaware/utilbundle/CaPassiveCurrentPositionManager;->mListener:Landroid/hardware/contextaware/dataprovider/sensorhubprovider/IPassiveCurrrentPositionObserver;
 
@@ -661,7 +640,6 @@
 
 .method public final registerPassiveCurrentPositionObserver(Landroid/hardware/contextaware/dataprovider/sensorhubprovider/IPassiveCurrrentPositionObserver;)V
     .locals 0
-    .param p1    # Landroid/hardware/contextaware/dataprovider/sensorhubprovider/IPassiveCurrrentPositionObserver;
 
     iput-object p1, p0, Landroid/hardware/contextaware/utilbundle/CaPassiveCurrentPositionManager;->mListener:Landroid/hardware/contextaware/dataprovider/sensorhubprovider/IPassiveCurrrentPositionObserver;
 

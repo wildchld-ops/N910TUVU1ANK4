@@ -18,7 +18,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -51,7 +50,6 @@
 
 .method public deleteSentMessage(J)V
     .locals 6
-    .param p1    # J
 
     invoke-static {}, Lcom/android/mms/rcs/Configuration$Im;->isRcsServiceEnabled()Z
 
@@ -105,10 +103,6 @@
 
 .method public insertSentMessage(JLjava/lang/String;Ljava/lang/String;Ljava/lang/Long;)V
     .locals 3
-    .param p1    # J
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/Long;
 
     invoke-static {}, Lcom/android/mms/rcs/Configuration$Im;->isRcsServiceEnabled()Z
 
@@ -162,7 +156,6 @@
 
 .method public querySentMessage(J)Landroid/database/Cursor;
     .locals 7
-    .param p1    # J
 
     const/4 v4, 0x0
 

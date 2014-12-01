@@ -56,15 +56,6 @@
 
 .method public constructor <init>(Landroid/content/Context;ILcom/android/mms/ui/MessagePickerDialog$OnDurationSetListener;IIIILjava/lang/String;I)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Lcom/android/mms/ui/MessagePickerDialog$OnDurationSetListener;
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # Ljava/lang/String;
-    .param p9    # I
 
     invoke-direct {p0, p1, p2}, Landroid/app/AlertDialog;-><init>(Landroid/content/Context;I)V
 
@@ -272,14 +263,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Lcom/android/mms/ui/MessagePickerDialog$OnDurationSetListener;IIIILjava/lang/String;I)V
     .locals 10
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/mms/ui/MessagePickerDialog$OnDurationSetListener;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # Ljava/lang/String;
-    .param p8    # I
 
     const/4 v2, 0x0
 
@@ -308,7 +291,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/ui/MessagePickerDialog;)Landroid/widget/NumberPicker;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/MessagePickerDialog;
 
     iget-object v0, p0, Lcom/android/mms/ui/MessagePickerDialog;->mNumberPicker:Landroid/widget/NumberPicker;
 
@@ -325,7 +307,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/ui/MessagePickerDialog;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/MessagePickerDialog;
 
     invoke-direct {p0}, Lcom/android/mms/ui/MessagePickerDialog;->showMinLimitWarning()V
 
@@ -342,7 +323,6 @@
 
 .method static synthetic access$400(Lcom/android/mms/ui/MessagePickerDialog;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/MessagePickerDialog;
 
     invoke-direct {p0}, Lcom/android/mms/ui/MessagePickerDialog;->showMaxLimitWarning()V
 
@@ -351,7 +331,6 @@
 
 .method static synthetic access$500(Lcom/android/mms/ui/MessagePickerDialog;)Lcom/android/mms/ui/MessagePickerDialog$OnDurationSetListener;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/MessagePickerDialog;
 
     iget-object v0, p0, Lcom/android/mms/ui/MessagePickerDialog;->mCallback:Lcom/android/mms/ui/MessagePickerDialog$OnDurationSetListener;
 
@@ -360,7 +339,6 @@
 
 .method static synthetic access$600(Lcom/android/mms/ui/MessagePickerDialog;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/MessagePickerDialog;
 
     iget-boolean v0, p0, Lcom/android/mms/ui/MessagePickerDialog;->mOnkeyDown:Z
 
@@ -369,8 +347,6 @@
 
 .method static synthetic access$602(Lcom/android/mms/ui/MessagePickerDialog;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/ui/MessagePickerDialog;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/MessagePickerDialog;->mOnkeyDown:Z
 
@@ -657,7 +633,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/AlertDialog;->onCreate(Landroid/os/Bundle;)V
 
@@ -696,8 +671,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     invoke-virtual {p2}, Landroid/view/KeyEvent;->getAction()I
 
@@ -752,7 +725,6 @@
 
 .method public onRestoreInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Dialog;->onRestoreInstanceState(Landroid/os/Bundle;)V
 
@@ -791,7 +763,6 @@
 
 .method public setLimitaion(Z)V
     .locals 5
-    .param p1    # Z
 
     iget-object v2, p0, Lcom/android/mms/ui/MessagePickerDialog;->mNumberPicker:Landroid/widget/NumberPicker;
 

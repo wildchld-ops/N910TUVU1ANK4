@@ -27,9 +27,6 @@
 # direct methods
 .method constructor <init>(Landroid/webkitsec/WebIconDatabaseClassic$EventHandler;Ljava/lang/String;Landroid/graphics/Bitmap;Landroid/webkitsec/WebIconDatabase$IconListener;)V
     .locals 0
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/graphics/Bitmap;
-    .param p4    # Landroid/webkitsec/WebIconDatabase$IconListener;
 
     iput-object p1, p0, Landroid/webkitsec/WebIconDatabaseClassic$EventHandler$IconResult;->this$0:Landroid/webkitsec/WebIconDatabaseClassic$EventHandler;
 

@@ -31,7 +31,6 @@
 
 .method static parseValue(Landroid/util/TypedValue;)Landroid/view/animation/Animation$Description;
     .locals 6
-    .param p0    # Landroid/util/TypedValue;
 
     const/4 v1, 0x1
 

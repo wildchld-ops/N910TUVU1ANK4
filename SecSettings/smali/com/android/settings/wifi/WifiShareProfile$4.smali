@@ -40,7 +40,6 @@
 # virtual methods
 .method public onCancel(Landroid/content/DialogInterface;)V
     .locals 4
-    .param p1    # Landroid/content/DialogInterface;
 
     :try_start_0
     iget-object v1, p0, Lcom/android/settings/wifi/WifiShareProfile$4;->this$0:Lcom/android/settings/wifi/WifiShareProfile;

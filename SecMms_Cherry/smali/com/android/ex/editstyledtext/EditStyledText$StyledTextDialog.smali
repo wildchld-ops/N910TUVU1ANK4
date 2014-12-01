@@ -55,7 +55,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/ex/editstyledtext/EditStyledText;)V
     .locals 0
-    .param p1    # Lcom/android/ex/editstyledtext/EditStyledText;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -66,7 +65,6 @@
 
 .method static synthetic access$1300(Lcom/android/ex/editstyledtext/EditStyledText$StyledTextDialog;)Lcom/android/ex/editstyledtext/EditStyledText;
     .locals 1
-    .param p0    # Lcom/android/ex/editstyledtext/EditStyledText$StyledTextDialog;
 
     iget-object v0, p0, Lcom/android/ex/editstyledtext/EditStyledText$StyledTextDialog;->mEST:Lcom/android/ex/editstyledtext/EditStyledText;
 
@@ -75,7 +73,6 @@
 
 .method static synthetic access$1500(Lcom/android/ex/editstyledtext/EditStyledText$StyledTextDialog;)Landroid/app/AlertDialog;
     .locals 1
-    .param p0    # Lcom/android/ex/editstyledtext/EditStyledText$StyledTextDialog;
 
     iget-object v0, p0, Lcom/android/ex/editstyledtext/EditStyledText$StyledTextDialog;->mAlertDialog:Landroid/app/AlertDialog;
 
@@ -84,8 +81,6 @@
 
 .method static synthetic access$1502(Lcom/android/ex/editstyledtext/EditStyledText$StyledTextDialog;Landroid/app/AlertDialog;)Landroid/app/AlertDialog;
     .locals 0
-    .param p0    # Lcom/android/ex/editstyledtext/EditStyledText$StyledTextDialog;
-    .param p1    # Landroid/app/AlertDialog;
 
     iput-object p1, p0, Lcom/android/ex/editstyledtext/EditStyledText$StyledTextDialog;->mAlertDialog:Landroid/app/AlertDialog;
 
@@ -94,7 +89,6 @@
 
 .method static synthetic access$1600(Lcom/android/ex/editstyledtext/EditStyledText$StyledTextDialog;)[Ljava/lang/CharSequence;
     .locals 1
-    .param p0    # Lcom/android/ex/editstyledtext/EditStyledText$StyledTextDialog;
 
     iget-object v0, p0, Lcom/android/ex/editstyledtext/EditStyledText$StyledTextDialog;->mSizeDisplayInts:[Ljava/lang/CharSequence;
 
@@ -103,7 +97,6 @@
 
 .method static synthetic access$4000(Lcom/android/ex/editstyledtext/EditStyledText$StyledTextDialog;)V
     .locals 0
-    .param p0    # Lcom/android/ex/editstyledtext/EditStyledText$StyledTextDialog;
 
     invoke-direct {p0}, Lcom/android/ex/editstyledtext/EditStyledText$StyledTextDialog;->onShowBackgroundColorAlertDialog()V
 
@@ -112,7 +105,6 @@
 
 .method static synthetic access$4600(Lcom/android/ex/editstyledtext/EditStyledText$StyledTextDialog;)V
     .locals 0
-    .param p0    # Lcom/android/ex/editstyledtext/EditStyledText$StyledTextDialog;
 
     invoke-direct {p0}, Lcom/android/ex/editstyledtext/EditStyledText$StyledTextDialog;->onShowAlignAlertDialog()V
 
@@ -121,7 +113,6 @@
 
 .method static synthetic access$4700(Lcom/android/ex/editstyledtext/EditStyledText$StyledTextDialog;)V
     .locals 0
-    .param p0    # Lcom/android/ex/editstyledtext/EditStyledText$StyledTextDialog;
 
     invoke-direct {p0}, Lcom/android/ex/editstyledtext/EditStyledText$StyledTextDialog;->onShowMarqueeAlertDialog()V
 
@@ -130,7 +121,6 @@
 
 .method static synthetic access$4800(Lcom/android/ex/editstyledtext/EditStyledText$StyledTextDialog;)V
     .locals 0
-    .param p0    # Lcom/android/ex/editstyledtext/EditStyledText$StyledTextDialog;
 
     invoke-direct {p0}, Lcom/android/ex/editstyledtext/EditStyledText$StyledTextDialog;->onShowForegroundColorAlertDialog()V
 
@@ -139,7 +129,6 @@
 
 .method static synthetic access$4900(Lcom/android/ex/editstyledtext/EditStyledText$StyledTextDialog;)V
     .locals 0
-    .param p0    # Lcom/android/ex/editstyledtext/EditStyledText$StyledTextDialog;
 
     invoke-direct {p0}, Lcom/android/ex/editstyledtext/EditStyledText$StyledTextDialog;->onShowSizeAlertDialog()V
 
@@ -148,9 +137,6 @@
 
 .method private buildAndShowColorDialogue(ILjava/lang/CharSequence;[I)V
     .locals 12
-    .param p1    # I
-    .param p2    # Ljava/lang/CharSequence;
-    .param p3    # [I
 
     const/4 v3, 0x5
 
@@ -381,9 +367,6 @@
 
 .method private buildDialogue(Ljava/lang/CharSequence;[Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)V
     .locals 4
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # [Ljava/lang/CharSequence;
-    .param p3    # Landroid/content/DialogInterface$OnClickListener;
 
     const/4 v3, 0x0
 
@@ -910,8 +893,6 @@
 # virtual methods
 .method public setAlignAlertParams(Ljava/lang/CharSequence;[Ljava/lang/CharSequence;)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # [Ljava/lang/CharSequence;
 
     iput-object p1, p0, Lcom/android/ex/editstyledtext/EditStyledText$StyledTextDialog;->mAlignTitle:Ljava/lang/CharSequence;
 
@@ -922,7 +903,6 @@
 
 .method public setBuilder(Landroid/app/AlertDialog$Builder;)V
     .locals 0
-    .param p1    # Landroid/app/AlertDialog$Builder;
 
     iput-object p1, p0, Lcom/android/ex/editstyledtext/EditStyledText$StyledTextDialog;->mBuilder:Landroid/app/AlertDialog$Builder;
 
@@ -931,10 +911,6 @@
 
 .method public setColorAlertParams(Ljava/lang/CharSequence;[Ljava/lang/CharSequence;[Ljava/lang/CharSequence;Ljava/lang/CharSequence;)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # [Ljava/lang/CharSequence;
-    .param p3    # [Ljava/lang/CharSequence;
-    .param p4    # Ljava/lang/CharSequence;
 
     iput-object p1, p0, Lcom/android/ex/editstyledtext/EditStyledText$StyledTextDialog;->mColorTitle:Ljava/lang/CharSequence;
 
@@ -949,8 +925,6 @@
 
 .method public setMarqueeAlertParams(Ljava/lang/CharSequence;[Ljava/lang/CharSequence;)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # [Ljava/lang/CharSequence;
 
     iput-object p1, p0, Lcom/android/ex/editstyledtext/EditStyledText$StyledTextDialog;->mMarqueeTitle:Ljava/lang/CharSequence;
 
@@ -961,10 +935,6 @@
 
 .method public setSizeAlertParams(Ljava/lang/CharSequence;[Ljava/lang/CharSequence;[Ljava/lang/CharSequence;[Ljava/lang/CharSequence;)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # [Ljava/lang/CharSequence;
-    .param p3    # [Ljava/lang/CharSequence;
-    .param p4    # [Ljava/lang/CharSequence;
 
     iput-object p1, p0, Lcom/android/ex/editstyledtext/EditStyledText$StyledTextDialog;->mSizeTitle:Ljava/lang/CharSequence;
 

@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -166,7 +165,6 @@
 
 .method public getProxyInfo(I)[Ljava/lang/String;
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -282,7 +280,6 @@
 
 .method public getSBInterface(I)Ljava/lang/String;
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -338,8 +335,6 @@
 
 .method public getSBInterfaceEx(II)Ljava/lang/String;
     .locals 6
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -510,7 +505,6 @@
 
 .method public getSBUsageStatus(J)I
     .locals 6
-    .param p1    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -566,7 +560,6 @@
 
 .method public getSmartBondingData(I)[J
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -682,8 +675,6 @@
 
 .method public reportSBUsage(J[J)V
     .locals 5
-    .param p1    # J
-    .param p3    # [J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -737,8 +728,6 @@
 
 .method public requestGetAllByName(JLjava/lang/String;)V
     .locals 5
-    .param p1    # J
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -792,7 +781,6 @@
 
 .method public responseGetAllByName(J)[Ljava/lang/String;
     .locals 6
-    .param p1    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -848,7 +836,6 @@
 
 .method public setHttpLogEnabled(Z)V
     .locals 5
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -907,7 +894,6 @@
 
 .method public setSBEnabled(Z)V
     .locals 5
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -971,8 +957,6 @@
 
 .method public setSBUsageStatus(IJ)V
     .locals 5
-    .param p1    # I
-    .param p2    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1026,7 +1010,6 @@
 
 .method public setWarningToast(Z)V
     .locals 5
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1085,10 +1068,6 @@
 
 .method public startSBUsage(JJJLjava/lang/String;)Z
     .locals 6
-    .param p1    # J
-    .param p3    # J
-    .param p5    # J
-    .param p7    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1157,7 +1136,6 @@
 
 .method public stopSBUsage(J)I
     .locals 6
-    .param p1    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1213,8 +1191,6 @@
 
 .method public stopSBUsageWithReason(JI)I
     .locals 6
-    .param p1    # J
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1272,8 +1248,6 @@
 
 .method public submitMultiSocketData([J[J)V
     .locals 5
-    .param p1    # [J
-    .param p2    # [J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -110,7 +109,6 @@
 
 .method public getPkgUsageStats(Landroid/content/ComponentName;)Lcom/android/internal/os/PkgUsageStats;
     .locals 6
-    .param p1    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -201,8 +199,6 @@
 
 .method public noteLaunchTime(Landroid/content/ComponentName;I)V
     .locals 5
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -275,7 +271,6 @@
 
 .method public notePauseComponent(Landroid/content/ComponentName;)V
     .locals 5
-    .param p1    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -346,8 +341,6 @@
 
 .method public noteResumeComponent(Landroid/content/ComponentName;Landroid/content/Intent;)V
     .locals 5
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Landroid/content/Intent;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -439,8 +432,6 @@
 
 .method public noteResumeComponentForMDM(Landroid/content/ComponentName;I)V
     .locals 5
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -513,7 +504,6 @@
 
 .method public setUsageStatsWatcher(Lcom/android/internal/app/IUsageStatsWatcher;)V
     .locals 5
-    .param p1    # Lcom/android/internal/app/IUsageStatsWatcher;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

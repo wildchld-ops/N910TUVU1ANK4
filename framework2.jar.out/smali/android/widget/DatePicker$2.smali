@@ -36,10 +36,6 @@
 # virtual methods
 .method public onSelectedDayChange(Landroid/widget/CalendarView;III)V
     .locals 1
-    .param p1    # Landroid/widget/CalendarView;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iget-object v0, p0, Landroid/widget/DatePicker$2;->this$0:Landroid/widget/DatePicker;
 

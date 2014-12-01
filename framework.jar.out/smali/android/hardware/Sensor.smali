@@ -492,8 +492,6 @@
 
 .method static getMaxLengthValuesArray(Landroid/hardware/Sensor;I)I
     .locals 4
-    .param p0    # Landroid/hardware/Sensor;
-    .param p1    # I
 
     const/high16 v3, 0x10000
 
@@ -546,7 +544,6 @@
 
 .method static getReportingMode(Landroid/hardware/Sensor;)I
     .locals 5
-    .param p0    # Landroid/hardware/Sensor;
 
     const/high16 v3, 0x10000
 
@@ -716,8 +713,6 @@
 
 .method setRange(FF)V
     .locals 0
-    .param p1    # F
-    .param p2    # F
 
     iput p1, p0, Landroid/hardware/Sensor;->mMaxRange:F
 

@@ -36,7 +36,6 @@
 # virtual methods
 .method public onContentChanged(Lcom/android/mms/ui/FileHistoryListAdapter;)V
     .locals 2
-    .param p1    # Lcom/android/mms/ui/FileHistoryListAdapter;
 
     const-string v0, "Mms/FileHistoryListActivity"
 

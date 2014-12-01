@@ -310,7 +310,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -319,7 +318,6 @@
 
 .method private static getBooleanFromString(Ljava/lang/String;)Z
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -368,8 +366,6 @@
 
 .method private static getCscRingtoneUri(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
     .locals 9
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const/4 v6, 0x0
 
@@ -481,7 +477,6 @@
 
 .method private static getMsgTone(Lcom/android/mms/csc/CscParser;)Ljava/lang/String;
     .locals 6
-    .param p0    # Lcom/android/mms/csc/CscParser;
 
     const/4 v4, 0x0
 
@@ -534,7 +529,6 @@
 
 .method private static getMsgToneFullPath(Lcom/android/mms/csc/CscParser;)Ljava/lang/String;
     .locals 10
-    .param p0    # Lcom/android/mms/csc/CscParser;
 
     const/4 v8, 0x0
 
@@ -662,7 +656,6 @@
 
 .method private static getStringCreationMode(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -706,7 +699,6 @@
 
 .method private static getStringMaxImageResolution(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -822,7 +814,6 @@
 
 .method private static getStringMessageSize(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -930,7 +921,6 @@
 
 .method private static getStringMmsExpire(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -990,7 +980,6 @@
 
 .method private static getStringMsgNotiAlertInterval(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -1042,7 +1031,6 @@
 
 .method private static getStringPushLoading(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -1094,7 +1082,6 @@
 
 .method private static getStringcharSupport(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -1146,9 +1133,6 @@
 
 .method private static getTagList(Lcom/android/mms/csc/CscParser;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 8
-    .param p0    # Lcom/android/mms/csc/CscParser;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v6, 0x0
 
@@ -1216,9 +1200,6 @@
 
 .method private static getTagListsToString(Lcom/android/mms/csc/CscParser;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 8
-    .param p0    # Lcom/android/mms/csc/CscParser;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v6, 0x0
 
@@ -1291,10 +1272,6 @@
 
 .method private static loadBoolean(Ljava/lang/String;Ljava/lang/String;Lcom/android/mms/csc/CscParser;Landroid/content/SharedPreferences$Editor;)V
     .locals 5
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/mms/csc/CscParser;
-    .param p3    # Landroid/content/SharedPreferences$Editor;
 
     invoke-virtual {p2, p0}, Lcom/android/mms/csc/CscParser;->get(Ljava/lang/String;)Ljava/lang/String;
 
@@ -1349,10 +1326,6 @@
 
 .method private static loadInt(Ljava/lang/String;Ljava/lang/String;Lcom/android/mms/csc/CscParser;Landroid/content/SharedPreferences$Editor;)V
     .locals 5
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/mms/csc/CscParser;
-    .param p3    # Landroid/content/SharedPreferences$Editor;
 
     invoke-virtual {p2, p0}, Lcom/android/mms/csc/CscParser;->get(Ljava/lang/String;)Ljava/lang/String;
 
@@ -1407,10 +1380,6 @@
 
 .method private static loadIntThreashhold(Ljava/lang/String;Ljava/lang/String;Lcom/android/mms/csc/CscParser;Landroid/content/SharedPreferences$Editor;)V
     .locals 5
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/mms/csc/CscParser;
-    .param p3    # Landroid/content/SharedPreferences$Editor;
 
     invoke-virtual {p2, p0}, Lcom/android/mms/csc/CscParser;->get(Ljava/lang/String;)Ljava/lang/String;
 
@@ -1467,10 +1436,6 @@
 
 .method private static loadString(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/content/SharedPreferences$Editor;)V
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/content/SharedPreferences$Editor;
 
     if-nez p1, :cond_0
 
@@ -1517,7 +1482,6 @@
 
 .method public static partialUpdate(Landroid/content/Context;)Z
     .locals 6
-    .param p0    # Landroid/content/Context;
 
     const-string v3, "Mms/CscLoader"
 
@@ -1629,8 +1593,6 @@
 
 .method public static update(Landroid/content/Context;Z)Z
     .locals 17
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
 
     const-string v14, "Mms/CscLoader"
 
@@ -2305,7 +2267,6 @@
 
 .method public static updateAutocombinationDefaultValue(Landroid/content/SharedPreferences$Editor;)V
     .locals 4
-    .param p0    # Landroid/content/SharedPreferences$Editor;
 
     invoke-static {}, Lcom/sec/android/app/CscFeature;->getInstance()Lcom/sec/android/app/CscFeature;
 
@@ -2346,8 +2307,6 @@
 
 .method private static updateChameleon(Landroid/content/SharedPreferences$Editor;I)Z
     .locals 7
-    .param p0    # Landroid/content/SharedPreferences$Editor;
-    .param p1    # I
 
     const/4 v4, 0x1
 
@@ -2477,7 +2436,6 @@
 
 .method public static updateChameleonPreset(Landroid/content/SharedPreferences$Editor;)V
     .locals 2
-    .param p0    # Landroid/content/SharedPreferences$Editor;
 
     const-string v0, "Mms/CscLoader"
 
@@ -2516,7 +2474,6 @@
 
 .method public static updateRcsDefaultValue(Landroid/content/SharedPreferences$Editor;)V
     .locals 2
-    .param p0    # Landroid/content/SharedPreferences$Editor;
 
     invoke-static {}, Lcom/android/mms/MmsConfig;->getEnableIPME()Z
 

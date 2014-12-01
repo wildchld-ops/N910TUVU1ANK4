@@ -80,8 +80,6 @@
 
 .method static synthetic access$000(Lcom/android/server/BootReceiver;Landroid/content/Context;)V
     .locals 0
-    .param p0    # Lcom/android/server/BootReceiver;
-    .param p1    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -95,8 +93,6 @@
 
 .method static synthetic access$100(Lcom/android/server/BootReceiver;Landroid/content/Context;)V
     .locals 0
-    .param p0    # Lcom/android/server/BootReceiver;
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Lcom/android/server/BootReceiver;->removeOldUpdatePackages(Landroid/content/Context;)V
 
@@ -121,12 +117,6 @@
 
 .method static synthetic access$500(Landroid/os/DropBoxManager;Landroid/content/SharedPreferences;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)V
     .locals 0
-    .param p0    # Landroid/os/DropBoxManager;
-    .param p1    # Landroid/content/SharedPreferences;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
-    .param p5    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -140,11 +130,6 @@
 
 .method private static addAuditErrorsToDropBox(Landroid/os/DropBoxManager;Landroid/content/SharedPreferences;Ljava/lang/String;ILjava/lang/String;)V
     .locals 16
-    .param p0    # Landroid/os/DropBoxManager;
-    .param p1    # Landroid/content/SharedPreferences;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -349,12 +334,6 @@
 
 .method private static addFileToDropBox(Landroid/os/DropBoxManager;Landroid/content/SharedPreferences;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)V
     .locals 8
-    .param p0    # Landroid/os/DropBoxManager;
-    .param p1    # Landroid/content/SharedPreferences;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
-    .param p5    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -482,11 +461,6 @@
 
 .method private static addFsckErrorsToDropBox(Landroid/os/DropBoxManager;Landroid/content/SharedPreferences;Ljava/lang/String;ILjava/lang/String;)V
     .locals 18
-    .param p0    # Landroid/os/DropBoxManager;
-    .param p1    # Landroid/content/SharedPreferences;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -601,7 +575,6 @@
 
 .method private logBootEvents(Landroid/content/Context;)V
     .locals 17
-    .param p1    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1126,7 +1099,6 @@
 
 .method private removeOldUpdatePackages(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const-string v0, "com.google.android.systemupdater"
 
@@ -1141,8 +1113,6 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     const-string v1, "from_quickboot"
 

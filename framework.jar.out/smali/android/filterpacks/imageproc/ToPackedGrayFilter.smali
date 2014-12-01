@@ -33,7 +33,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -54,8 +53,6 @@
 
 .method private checkOutputDimensions(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     if-lez p1, :cond_0
 
@@ -102,7 +99,6 @@
 
 .method private convertInputFormat(Landroid/filterfw/core/FrameFormat;)Landroid/filterfw/core/FrameFormat;
     .locals 6
-    .param p1    # Landroid/filterfw/core/FrameFormat;
 
     const/4 v4, 0x4
 
@@ -188,8 +184,6 @@
 # virtual methods
 .method public getOutputFormat(Ljava/lang/String;Landroid/filterfw/core/FrameFormat;)Landroid/filterfw/core/FrameFormat;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/filterfw/core/FrameFormat;
 
     invoke-direct {p0, p2}, Landroid/filterpacks/imageproc/ToPackedGrayFilter;->convertInputFormat(Landroid/filterfw/core/FrameFormat;)Landroid/filterfw/core/FrameFormat;
 
@@ -200,7 +194,6 @@
 
 .method public prepare(Landroid/filterfw/core/FilterContext;)V
     .locals 2
-    .param p1    # Landroid/filterfw/core/FilterContext;
 
     new-instance v0, Landroid/filterfw/core/ShaderProgram;
 
@@ -215,7 +208,6 @@
 
 .method public process(Landroid/filterfw/core/FilterContext;)V
     .locals 12
-    .param p1    # Landroid/filterfw/core/FilterContext;
 
     const-string v8, "image"
 

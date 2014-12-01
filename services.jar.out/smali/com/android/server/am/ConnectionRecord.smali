@@ -24,12 +24,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/am/AppBindRecord;Lcom/android/server/am/ActivityRecord;Landroid/app/IServiceConnection;IILandroid/app/PendingIntent;)V
     .locals 0
-    .param p1    # Lcom/android/server/am/AppBindRecord;
-    .param p2    # Lcom/android/server/am/ActivityRecord;
-    .param p3    # Landroid/app/IServiceConnection;
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Landroid/app/PendingIntent;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -52,8 +46,6 @@
 # virtual methods
 .method dump(Ljava/io/PrintWriter;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/io/PrintWriter;
-    .param p2    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 

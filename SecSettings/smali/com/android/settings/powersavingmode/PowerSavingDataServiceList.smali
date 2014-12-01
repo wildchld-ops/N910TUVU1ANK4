@@ -470,7 +470,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/powersavingmode/PowerSavingDataServiceList;)I
     .locals 1
-    .param p0    # Lcom/android/settings/powersavingmode/PowerSavingDataServiceList;
 
     invoke-direct {p0}, Lcom/android/settings/powersavingmode/PowerSavingDataServiceList;->getCheckedAppNum()I
 
@@ -481,7 +480,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/powersavingmode/PowerSavingDataServiceList;)Lcom/android/settings/powersavingmode/PowerSavingDataServiceList$AppListAdapter;
     .locals 1
-    .param p0    # Lcom/android/settings/powersavingmode/PowerSavingDataServiceList;
 
     iget-object v0, p0, Lcom/android/settings/powersavingmode/PowerSavingDataServiceList;->mAppListAdapter:Lcom/android/settings/powersavingmode/PowerSavingDataServiceList$AppListAdapter;
 
@@ -490,7 +488,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/powersavingmode/PowerSavingDataServiceList;)Ljava/util/LinkedHashMap;
     .locals 1
-    .param p0    # Lcom/android/settings/powersavingmode/PowerSavingDataServiceList;
 
     iget-object v0, p0, Lcom/android/settings/powersavingmode/PowerSavingDataServiceList;->mTempCheckedApplist:Ljava/util/LinkedHashMap;
 
@@ -499,7 +496,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/powersavingmode/PowerSavingDataServiceList;)Ljava/util/LinkedHashMap;
     .locals 1
-    .param p0    # Lcom/android/settings/powersavingmode/PowerSavingDataServiceList;
 
     iget-object v0, p0, Lcom/android/settings/powersavingmode/PowerSavingDataServiceList;->mTempApplist:Ljava/util/LinkedHashMap;
 
@@ -508,7 +504,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/powersavingmode/PowerSavingDataServiceList;)V
     .locals 0
-    .param p0    # Lcom/android/settings/powersavingmode/PowerSavingDataServiceList;
 
     invoke-direct {p0}, Lcom/android/settings/powersavingmode/PowerSavingDataServiceList;->SavedList()V
 
@@ -517,7 +512,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/powersavingmode/PowerSavingDataServiceList;)Landroid/content/pm/PackageManager;
     .locals 1
-    .param p0    # Lcom/android/settings/powersavingmode/PowerSavingDataServiceList;
 
     iget-object v0, p0, Lcom/android/settings/powersavingmode/PowerSavingDataServiceList;->mPm:Landroid/content/pm/PackageManager;
 
@@ -526,9 +520,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/powersavingmode/PowerSavingDataServiceList;ILandroid/content/pm/ActivityInfo;)Landroid/graphics/drawable/Drawable;
     .locals 1
-    .param p0    # Lcom/android/settings/powersavingmode/PowerSavingDataServiceList;
-    .param p1    # I
-    .param p2    # Landroid/content/pm/ActivityInfo;
 
     invoke-direct {p0, p1, p2}, Lcom/android/settings/powersavingmode/PowerSavingDataServiceList;->loadAppIcon(ILandroid/content/pm/ActivityInfo;)Landroid/graphics/drawable/Drawable;
 
@@ -642,8 +633,6 @@
 
 .method private loadAppIcon(ILandroid/content/pm/ActivityInfo;)Landroid/graphics/drawable/Drawable;
     .locals 12
-    .param p1    # I
-    .param p2    # Landroid/content/pm/ActivityInfo;
 
     new-instance v7, Lcom/android/settings/lockscreenshortcut/IconResizer;
 
@@ -801,7 +790,6 @@
 # virtual methods
 .method public getUid(Ljava/lang/String;)I
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 
@@ -837,7 +825,6 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 14
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onActivityCreated(Landroid/os/Bundle;)V
 
@@ -1333,7 +1320,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -1479,8 +1465,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
     .locals 5
-    .param p1    # Landroid/view/Menu;
-    .param p2    # Landroid/view/MenuInflater;
 
     const/4 v4, 0x1
 
@@ -1588,9 +1572,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 3
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const v1, 0x7f0401f7
 
@@ -1617,7 +1598,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 3
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v0, 0x1
 

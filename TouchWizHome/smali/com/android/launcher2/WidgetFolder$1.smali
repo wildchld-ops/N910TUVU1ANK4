@@ -33,7 +33,6 @@
 # virtual methods
 .method public onAnimationEnd(Landroid/animation/Animator;)V
     .locals 3
-    .param p1    # Landroid/animation/Animator;
 
     iget-object v0, p0, Lcom/android/launcher2/WidgetFolder$1;->this$0:Lcom/android/launcher2/WidgetFolder;
 

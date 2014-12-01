@@ -382,7 +382,6 @@
 
 .method public static getCountryDateString(Landroid/content/Context;)Ljava/lang/String;
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     const v0, 0x1040105
 
@@ -395,7 +394,6 @@
 
 .method public static getCountryTimeString(Landroid/content/Context;)Ljava/lang/String;
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     const v0, 0x1040106
 
@@ -408,7 +406,6 @@
 
 .method public static getSmartPatternsForDate(Landroid/content/Context;)Ljava/util/regex/Pattern;
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     const v0, 0x1040105
 
@@ -447,7 +444,6 @@
 
 .method public static getSmartPatternsForTime(Landroid/content/Context;)Ljava/util/regex/Pattern;
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     const v0, 0x1040106
 

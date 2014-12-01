@@ -30,9 +30,6 @@
 # direct methods
 .method public constructor <init>([CII)V
     .locals 0
-    .param p1    # [C
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -47,8 +44,6 @@
 
 .method static synthetic access$102(Landroid/widget/TextView$CharWrapper;[C)[C
     .locals 0
-    .param p0    # Landroid/widget/TextView$CharWrapper;
-    .param p1    # [C
 
     iput-object p1, p0, Landroid/widget/TextView$CharWrapper;->mChars:[C
 
@@ -59,7 +54,6 @@
 # virtual methods
 .method public charAt(I)C
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Landroid/widget/TextView$CharWrapper;->mChars:[C
 
@@ -74,12 +68,6 @@
 
 .method public drawText(Landroid/graphics/Canvas;IIFFLandroid/graphics/Paint;)V
     .locals 7
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # F
-    .param p5    # F
-    .param p6    # Landroid/graphics/Paint;
 
     iget-object v1, p0, Landroid/widget/TextView$CharWrapper;->mChars:[C
 
@@ -104,15 +92,6 @@
 
 .method public drawTextRun(Landroid/graphics/Canvas;IIIIFFILandroid/graphics/Paint;)V
     .locals 10
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # F
-    .param p7    # F
-    .param p8    # I
-    .param p9    # Landroid/graphics/Paint;
 
     sub-int v3, p3, p2
 
@@ -145,10 +124,6 @@
 
 .method public getChars(II[CI)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [C
-    .param p4    # I
 
     if-ltz p1, :cond_0
 
@@ -207,14 +182,6 @@
 
 .method public getTextRunAdvances(IIIII[FILandroid/graphics/Paint;)F
     .locals 9
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # [F
-    .param p7    # I
-    .param p8    # Landroid/graphics/Paint;
 
     sub-int v3, p2, p1
 
@@ -247,12 +214,6 @@
 
 .method public getTextRunCursor(IIIIILandroid/graphics/Paint;)I
     .locals 7
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Landroid/graphics/Paint;
 
     sub-int v3, p2, p1
 
@@ -281,10 +242,6 @@
 
 .method public getTextWidths(II[FLandroid/graphics/Paint;)I
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [F
-    .param p4    # Landroid/graphics/Paint;
 
     iget-object v0, p0, Landroid/widget/TextView$CharWrapper;->mChars:[C
 
@@ -311,9 +268,6 @@
 
 .method public measureText(IILandroid/graphics/Paint;)F
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/graphics/Paint;
 
     iget-object v0, p0, Landroid/widget/TextView$CharWrapper;->mChars:[C
 
@@ -332,9 +286,6 @@
 
 .method set([CII)V
     .locals 0
-    .param p1    # [C
-    .param p2    # I
-    .param p3    # I
 
     iput-object p1, p0, Landroid/widget/TextView$CharWrapper;->mChars:[C
 
@@ -347,8 +298,6 @@
 
 .method public subSequence(II)Ljava/lang/CharSequence;
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     if-ltz p1, :cond_0
 

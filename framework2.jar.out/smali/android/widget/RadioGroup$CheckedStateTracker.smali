@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Landroid/widget/RadioGroup;Landroid/widget/RadioGroup$1;)V
     .locals 0
-    .param p1    # Landroid/widget/RadioGroup;
-    .param p2    # Landroid/widget/RadioGroup$1;
 
     invoke-direct {p0, p1}, Landroid/widget/RadioGroup$CheckedStateTracker;-><init>(Landroid/widget/RadioGroup;)V
 
@@ -46,8 +44,6 @@
 # virtual methods
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 4
-    .param p1    # Landroid/widget/CompoundButton;
-    .param p2    # Z
 
     const/4 v3, 0x0
 

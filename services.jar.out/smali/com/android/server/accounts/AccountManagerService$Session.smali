@@ -45,11 +45,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/accounts/AccountManagerService;Lcom/android/server/accounts/AccountManagerService$UserAccounts;Landroid/accounts/IAccountManagerResponse;Ljava/lang/String;ZZ)V
     .locals 5
-    .param p2    # Lcom/android/server/accounts/AccountManagerService$UserAccounts;
-    .param p3    # Landroid/accounts/IAccountManagerResponse;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Z
-    .param p6    # Z
 
     const/4 v4, 0x0
 
@@ -156,7 +151,6 @@
 
 .method private bindToAuthenticator(Ljava/lang/String;)Z
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x1
 
@@ -579,8 +573,6 @@
 
 .method public onError(ILjava/lang/String;)V
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v5, 0x2
 
@@ -699,7 +691,6 @@
 
 .method public onResult(Landroid/os/Bundle;)V
     .locals 17
-    .param p1    # Landroid/os/Bundle;
 
     move-object/from16 v0, p0
 
@@ -1106,8 +1097,6 @@
 
 .method public onServiceConnected(Landroid/content/ComponentName;Landroid/os/IBinder;)V
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Landroid/os/IBinder;
 
     invoke-static {p2}, Landroid/accounts/IAccountAuthenticator$Stub;->asInterface(Landroid/os/IBinder;)Landroid/accounts/IAccountAuthenticator;
 
@@ -1137,7 +1126,6 @@
 
 .method public onServiceDisconnected(Landroid/content/ComponentName;)V
     .locals 4
-    .param p1    # Landroid/content/ComponentName;
 
     const/4 v2, 0x0
 
@@ -1282,7 +1270,6 @@
 
 .method protected toDebugString(J)Ljava/lang/String;
     .locals 5
-    .param p1    # J
 
     new-instance v0, Ljava/lang/StringBuilder;
 

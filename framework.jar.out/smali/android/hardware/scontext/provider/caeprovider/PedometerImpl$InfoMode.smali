@@ -103,7 +103,6 @@
 
 .method public static valueOf(Ljava/lang/String;)Landroid/hardware/scontext/provider/caeprovider/PedometerImpl$InfoMode;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-class v0, Landroid/hardware/scontext/provider/caeprovider/PedometerImpl$InfoMode;
 

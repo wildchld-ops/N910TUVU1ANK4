@@ -46,8 +46,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/os/IBinder;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/IBinder;
 
     invoke-direct {p0, p1}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;)V
 
@@ -166,7 +164,6 @@
 
 .method static synthetic access$2700(Lcom/android/internal/policy/impl/multiwindow/HeaderWindow$FloatingMenuView;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/multiwindow/HeaderWindow$FloatingMenuView;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/multiwindow/HeaderWindow$FloatingMenuView;->mContents:Landroid/view/View;
 
@@ -221,7 +218,6 @@
 
 .method private getStringLengthMargin(Landroid/widget/ImageView;)I
     .locals 7
-    .param p1    # Landroid/widget/ImageView;
 
     invoke-virtual {p1}, Landroid/view/View;->getContentDescription()Ljava/lang/CharSequence;
 
@@ -322,7 +318,6 @@
 
 .method public dispatchTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 2
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getAction()I
 
@@ -350,7 +345,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/multiwindow/HeaderWindow$FloatingMenuView;->mOnClickListener:Landroid/view/View$OnClickListener;
 
@@ -366,7 +360,6 @@
 
 .method public setLeftMargin(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/internal/policy/impl/multiwindow/HeaderWindow$FloatingMenuView;->mLeftMargin:I
 
@@ -375,7 +368,6 @@
 
 .method public setOnClickListener(Landroid/view/View$OnClickListener;)V
     .locals 0
-    .param p1    # Landroid/view/View$OnClickListener;
 
     iput-object p1, p0, Lcom/android/internal/policy/impl/multiwindow/HeaderWindow$FloatingMenuView;->mOnClickListener:Landroid/view/View$OnClickListener;
 
@@ -384,7 +376,6 @@
 
 .method public setParentRectWidth(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/internal/policy/impl/multiwindow/HeaderWindow$FloatingMenuView;->mParentRectWidth:I
 
@@ -393,7 +384,6 @@
 
 .method public setTopMargin(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/internal/policy/impl/multiwindow/HeaderWindow$FloatingMenuView;->mTopMargin:I
 
@@ -402,8 +392,6 @@
 
 .method public show(II)V
     .locals 10
-    .param p1    # I
-    .param p2    # I
 
     const/4 v9, 0x1
 

@@ -32,7 +32,6 @@
 # virtual methods
 .method public onDoubleTap(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v0, 0x0
 
@@ -41,7 +40,6 @@
 
 .method public onDoubleTapEvent(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v0, 0x0
 
@@ -50,7 +48,6 @@
 
 .method public onDown(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v0, 0x0
 
@@ -59,10 +56,6 @@
 
 .method public onFling(Landroid/view/MotionEvent;Landroid/view/MotionEvent;FF)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # Landroid/view/MotionEvent;
-    .param p3    # F
-    .param p4    # F
 
     const/4 v0, 0x0
 
@@ -71,7 +64,6 @@
 
 .method public onHandTouched(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v0, 0x0
 
@@ -80,7 +72,6 @@
 
 .method public onInitSweep(I)Z
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -89,7 +80,6 @@
 
 .method public onLiftTapEBook(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v0, 0x0
 
@@ -98,8 +88,6 @@
 
 .method public onLiftTapPointer(Landroid/view/MotionEvent;F)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # F
 
     const/4 v0, 0x0
 
@@ -108,14 +96,12 @@
 
 .method public onLongPress(Landroid/view/MotionEvent;)V
     .locals 0
-    .param p1    # Landroid/view/MotionEvent;
 
     return-void
 .end method
 
 .method public onPalm(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v0, 0x0
 
@@ -124,10 +110,6 @@
 
 .method public onScroll(Landroid/view/MotionEvent;Landroid/view/MotionEvent;FF)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # Landroid/view/MotionEvent;
-    .param p3    # F
-    .param p4    # F
 
     const/4 v0, 0x0
 
@@ -136,14 +118,12 @@
 
 .method public onShowPress(Landroid/view/MotionEvent;)V
     .locals 0
-    .param p1    # Landroid/view/MotionEvent;
 
     return-void
 .end method
 
 .method public onSingleTapConfirmed(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v0, 0x0
 
@@ -152,7 +132,6 @@
 
 .method public onSingleTapUp(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v0, 0x0
 
@@ -161,7 +140,6 @@
 
 .method public onSweepDown(I)Z
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -170,9 +148,6 @@
 
 .method public onTwist(Landroid/view/MotionEvent;Landroid/view/MotionEvent;F)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # Landroid/view/MotionEvent;
-    .param p3    # F
 
     const/4 v0, 0x0
 

@@ -63,7 +63,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/powersavingmode/PowerSavingModeSettings;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/powersavingmode/PowerSavingModeSettings;
 
     invoke-virtual {p0}, Lcom/android/settings/SettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -74,7 +73,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/powersavingmode/PowerSavingModeSettings;)Lcom/android/settings/SwitchPreferenceScreen;
     .locals 1
-    .param p0    # Lcom/android/settings/powersavingmode/PowerSavingModeSettings;
 
     iget-object v0, p0, Lcom/android/settings/powersavingmode/PowerSavingModeSettings;->mPowerSaving_tablet:Lcom/android/settings/SwitchPreferenceScreen;
 
@@ -83,7 +81,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/powersavingmode/PowerSavingModeSettings;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/powersavingmode/PowerSavingModeSettings;
 
     invoke-virtual {p0}, Lcom/android/settings/SettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -94,7 +91,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/powersavingmode/PowerSavingModeSettings;)Landroid/preference/PreferenceScreen;
     .locals 1
-    .param p0    # Lcom/android/settings/powersavingmode/PowerSavingModeSettings;
 
     iget-object v0, p0, Lcom/android/settings/powersavingmode/PowerSavingModeSettings;->mPowerSaving:Landroid/preference/PreferenceScreen;
 
@@ -103,7 +99,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/powersavingmode/PowerSavingModeSettings;)Lcom/android/settings/SwitchPreferenceScreen;
     .locals 1
-    .param p0    # Lcom/android/settings/powersavingmode/PowerSavingModeSettings;
 
     iget-object v0, p0, Lcom/android/settings/powersavingmode/PowerSavingModeSettings;->mUltraPowerSaving_tablet:Lcom/android/settings/SwitchPreferenceScreen;
 
@@ -112,7 +107,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/powersavingmode/PowerSavingModeSettings;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/powersavingmode/PowerSavingModeSettings;
 
     invoke-virtual {p0}, Lcom/android/settings/SettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -123,7 +117,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/powersavingmode/PowerSavingModeSettings;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/powersavingmode/PowerSavingModeSettings;
 
     invoke-virtual {p0}, Lcom/android/settings/SettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -134,7 +127,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/powersavingmode/PowerSavingModeSettings;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/powersavingmode/PowerSavingModeSettings;
 
     iget-boolean v0, p0, Lcom/android/settings/powersavingmode/PowerSavingModeSettings;->mIsFromHelp:Z
 
@@ -257,7 +249,6 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "PowerSavingModeSettings"
 
@@ -282,7 +273,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 2
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -317,7 +307,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 10
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v7, 0x0
 
@@ -675,8 +664,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
     .locals 3
-    .param p1    # Landroid/view/Menu;
-    .param p2    # Landroid/view/MenuInflater;
 
     const/4 v2, 0x0
 
@@ -703,7 +690,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 4
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -859,8 +845,6 @@
 
 .method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
     .locals 4
-    .param p1    # Landroid/preference/Preference;
-    .param p2    # Ljava/lang/Object;
 
     const-string v2, "PowerSavingModeSettings"
 
@@ -905,8 +889,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 1
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     invoke-super {p0, p1, p2}, Landroid/preference/PreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
 

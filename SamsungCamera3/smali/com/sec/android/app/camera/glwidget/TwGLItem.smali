@@ -989,14 +989,6 @@
 
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;FFFFLcom/sec/android/app/camera/resourcedata/MenuResourceBundle;Lcom/sec/android/app/camera/command/MenuCommand;I)V
     .locals 7
-    .param p1    # Lcom/sec/android/app/camera/Camera;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # Lcom/sec/android/app/camera/resourcedata/MenuResourceBundle;
-    .param p7    # Lcom/sec/android/app/camera/command/MenuCommand;
-    .param p8    # I
 
     const/4 v6, 0x0
 
@@ -1150,15 +1142,6 @@
 
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;FFFFLcom/sec/android/app/camera/resourcedata/MenuResourceBundle;Lcom/sec/android/app/camera/command/MenuCommand;II)V
     .locals 6
-    .param p1    # Lcom/sec/android/app/camera/Camera;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # Lcom/sec/android/app/camera/resourcedata/MenuResourceBundle;
-    .param p7    # Lcom/sec/android/app/camera/command/MenuCommand;
-    .param p8    # I
-    .param p9    # I
 
     invoke-virtual {p1}, Lcom/sec/android/app/camera/Camera;->getGLContext()Lcom/sec/android/glview/TwGLContext;
 
@@ -1322,12 +1305,6 @@
 
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;FFLcom/sec/android/app/camera/resourcedata/MenuResourceBundle;Lcom/sec/android/app/camera/command/MenuCommand;I)V
     .locals 7
-    .param p1    # Lcom/sec/android/app/camera/Camera;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # Lcom/sec/android/app/camera/resourcedata/MenuResourceBundle;
-    .param p5    # Lcom/sec/android/app/camera/command/MenuCommand;
-    .param p6    # I
 
     const/4 v2, 0x0
 
@@ -1481,10 +1458,6 @@
 
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;Lcom/sec/android/app/camera/resourcedata/MenuResourceBundle;Lcom/sec/android/app/camera/command/MenuCommand;I)V
     .locals 3
-    .param p1    # Lcom/sec/android/app/camera/Camera;
-    .param p2    # Lcom/sec/android/app/camera/resourcedata/MenuResourceBundle;
-    .param p3    # Lcom/sec/android/app/camera/command/MenuCommand;
-    .param p4    # I
 
     const/4 v2, 0x0
 
@@ -1535,7 +1508,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;)V
     .locals 8
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
 
     const v4, 0x7f0203dc
 
@@ -1782,7 +1754,6 @@
 
 .method private initContents(I)V
     .locals 21
-    .param p1    # I
 
     const/16 v20, 0x0
 
@@ -5178,7 +5149,6 @@
 
 .method public onButtonHighlightChanged(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLItem;->mDataText:Lcom/sec/android/app/camera/glwidget/TwGLItemDataText;
 
@@ -5208,7 +5178,6 @@
 
 .method public onClick(Lcom/sec/android/glview/TwGLView;)Z
     .locals 8
-    .param p1    # Lcom/sec/android/glview/TwGLView;
 
     const/high16 v7, 0x40000000
 
@@ -5653,8 +5622,6 @@
 
 .method public onFocusChanged(Lcom/sec/android/glview/TwGLView;I)Z
     .locals 1
-    .param p1    # Lcom/sec/android/glview/TwGLView;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLItem;->mOnFocusListener:Lcom/sec/android/glview/TwGLView$OnFocusListener;
 
@@ -5677,8 +5644,6 @@
 
 .method public onKeyDown(Lcom/sec/android/glview/TwGLView;Landroid/view/KeyEvent;)Z
     .locals 3
-    .param p1    # Lcom/sec/android/glview/TwGLView;
-    .param p2    # Landroid/view/KeyEvent;
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/glwidget/TwGLItem;->getCommandId()I
 
@@ -5726,8 +5691,6 @@
 
 .method public onKeyUp(Lcom/sec/android/glview/TwGLView;Landroid/view/KeyEvent;)Z
     .locals 3
-    .param p1    # Lcom/sec/android/glview/TwGLView;
-    .param p2    # Landroid/view/KeyEvent;
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/glwidget/TwGLItem;->getCommandId()I
 
@@ -5775,8 +5738,6 @@
 
 .method public onTouch(Lcom/sec/android/glview/TwGLView;Landroid/view/MotionEvent;)Z
     .locals 5
-    .param p1    # Lcom/sec/android/glview/TwGLView;
-    .param p2    # Landroid/view/MotionEvent;
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/glwidget/TwGLItem;->getCommandId()I
 
@@ -5936,7 +5897,6 @@
 
 .method public setAlpha(F)V
     .locals 1
-    .param p1    # F
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLItem;->mDataButton:Lcom/sec/android/app/camera/glwidget/TwGLItemDataButton;
 
@@ -5979,7 +5939,6 @@
 
 .method public setAnchor(Lcom/sec/android/glview/TwGLImage;)V
     .locals 0
-    .param p1    # Lcom/sec/android/glview/TwGLImage;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLItem;->mAnchor:Lcom/sec/android/glview/TwGLImage;
 
@@ -5988,7 +5947,6 @@
 
 .method public setContentType(I)V
     .locals 8
-    .param p1    # I
 
     const v7, 0x7f0a001b
 
@@ -7020,7 +6978,6 @@
 
 .method public setDim(Z)V
     .locals 5
-    .param p1    # Z
 
     const/4 v4, 0x0
 
@@ -7166,7 +7123,6 @@
 
 .method public setMute(Z)V
     .locals 1
-    .param p1    # Z
 
     iget v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLItem;->mCurrentType:I
 
@@ -7233,7 +7189,6 @@
 
 .method public setNextFocusUpView(Lcom/sec/android/glview/TwGLView;)Z
     .locals 3
-    .param p1    # Lcom/sec/android/glview/TwGLView;
 
     const/4 v0, 0x1
 
@@ -7310,7 +7265,6 @@
 
 .method public setOnKeyListener(Lcom/sec/android/glview/TwGLView$OnKeyListener;)V
     .locals 2
-    .param p1    # Lcom/sec/android/glview/TwGLView$OnKeyListener;
 
     const/4 v1, 0x0
 
@@ -7492,7 +7446,6 @@
 
 .method public setOnTouchListener(Lcom/sec/android/glview/TwGLView$OnTouchListener;)V
     .locals 2
-    .param p1    # Lcom/sec/android/glview/TwGLView$OnTouchListener;
 
     const/4 v1, 0x0
 
@@ -7674,7 +7627,6 @@
 
 .method public setSelected(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLItem;->mSelected:Z
 
@@ -7683,8 +7635,6 @@
 
 .method public setSize(FF)V
     .locals 2
-    .param p1    # F
-    .param p2    # F
 
     iget v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLItem;->mCurrentType:I
 
@@ -7742,7 +7692,6 @@
 
 .method public setZOrder(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLItem;->mZOrder:I
 

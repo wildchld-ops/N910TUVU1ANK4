@@ -111,7 +111,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -122,8 +121,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -134,9 +131,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/high16 v5, 0x3f800000
 
@@ -311,7 +305,6 @@
 
 .method static gravityToString(I)Ljava/lang/String;
     .locals 2
-    .param p0    # I
 
     and-int/lit8 v0, p0, 0x3
 
@@ -345,7 +338,6 @@
 
 .method private static hasOpaqueBackground(Landroid/view/View;)Z
     .locals 4
-    .param p0    # Landroid/view/View;
 
     const/4 v1, 0x0
 
@@ -490,8 +482,6 @@
 
 .method checkDrawerViewAbsoluteGravity(Landroid/view/View;I)Z
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     invoke-virtual {p0, p1}, Landroid/support/v4/widget/DrawerLayout;->getDrawerViewAbsoluteGravity(Landroid/view/View;)I
 
@@ -514,7 +504,6 @@
 
 .method protected checkLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Z
     .locals 1
-    .param p1    # Landroid/view/ViewGroup$LayoutParams;
 
     instance-of v0, p1, Landroid/support/v4/widget/DrawerLayout$LayoutParams;
 
@@ -539,7 +528,6 @@
 
 .method public closeDrawer(I)V
     .locals 4
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/support/v4/widget/DrawerLayout;->findDrawerWithGravity(I)Landroid/view/View;
 
@@ -583,7 +571,6 @@
 
 .method public closeDrawer(Landroid/view/View;)V
     .locals 4
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p0, p1}, Landroid/support/v4/widget/DrawerLayout;->isDrawerView(Landroid/view/View;)Z
 
@@ -698,7 +685,6 @@
 
 .method closeDrawers(Z)V
     .locals 9
-    .param p1    # Z
 
     const/4 v5, 0x0
 
@@ -872,7 +858,6 @@
 
 .method dispatchOnDrawerClosed(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
@@ -907,7 +892,6 @@
 
 .method dispatchOnDrawerOpened(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
@@ -942,8 +926,6 @@
 
 .method dispatchOnDrawerSlide(Landroid/view/View;F)V
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # F
 
     iget-object v0, p0, Landroid/support/v4/widget/DrawerLayout;->mListener:Landroid/support/v4/widget/DrawerLayout$DrawerListener;
 
@@ -959,9 +941,6 @@
 
 .method protected drawChild(Landroid/graphics/Canvas;Landroid/view/View;J)Z
     .locals 28
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # Landroid/view/View;
-    .param p3    # J
 
     invoke-virtual/range {p0 .. p0}, Landroid/view/View;->getHeight()I
 
@@ -1389,7 +1368,6 @@
 
 .method findDrawerWithGravity(I)Landroid/view/View;
     .locals 6
-    .param p1    # I
 
     invoke-static {p0}, Landroid/support/v4/view/ViewCompat;->getLayoutDirection(Landroid/view/View;)I
 
@@ -1490,7 +1468,6 @@
 
 .method public generateLayoutParams(Landroid/util/AttributeSet;)Landroid/view/ViewGroup$LayoutParams;
     .locals 2
-    .param p1    # Landroid/util/AttributeSet;
 
     new-instance v0, Landroid/support/v4/widget/DrawerLayout$LayoutParams;
 
@@ -1505,7 +1482,6 @@
 
 .method protected generateLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Landroid/view/ViewGroup$LayoutParams;
     .locals 1
-    .param p1    # Landroid/view/ViewGroup$LayoutParams;
 
     instance-of v0, p1, Landroid/support/v4/widget/DrawerLayout$LayoutParams;
 
@@ -1543,7 +1519,6 @@
 
 .method public getDrawerLockMode(I)I
     .locals 2
-    .param p1    # I
 
     invoke-static {p0}, Landroid/support/v4/view/ViewCompat;->getLayoutDirection(Landroid/view/View;)I
 
@@ -1579,7 +1554,6 @@
 
 .method public getDrawerLockMode(Landroid/view/View;)I
     .locals 2
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p0, p1}, Landroid/support/v4/widget/DrawerLayout;->getDrawerViewAbsoluteGravity(Landroid/view/View;)I
 
@@ -1611,7 +1585,6 @@
 
 .method getDrawerViewAbsoluteGravity(Landroid/view/View;)I
     .locals 2
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
@@ -1634,7 +1607,6 @@
 
 .method getDrawerViewOffset(Landroid/view/View;)F
     .locals 1
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
@@ -1649,7 +1621,6 @@
 
 .method isContentView(Landroid/view/View;)Z
     .locals 1
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
@@ -1674,7 +1645,6 @@
 
 .method public isDrawerOpen(I)Z
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/support/v4/widget/DrawerLayout;->findDrawerWithGravity(I)Landroid/view/View;
 
@@ -1697,7 +1667,6 @@
 
 .method public isDrawerOpen(Landroid/view/View;)Z
     .locals 3
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p0, p1}, Landroid/support/v4/widget/DrawerLayout;->isDrawerView(Landroid/view/View;)Z
 
@@ -1749,7 +1718,6 @@
 
 .method isDrawerView(Landroid/view/View;)Z
     .locals 3
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
@@ -1784,7 +1752,6 @@
 
 .method public isDrawerVisible(I)Z
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/support/v4/widget/DrawerLayout;->findDrawerWithGravity(I)Landroid/view/View;
 
@@ -1807,7 +1774,6 @@
 
 .method public isDrawerVisible(Landroid/view/View;)Z
     .locals 3
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p0, p1}, Landroid/support/v4/widget/DrawerLayout;->isDrawerView(Landroid/view/View;)Z
 
@@ -1873,8 +1839,6 @@
 
 .method moveDrawerToOffset(Landroid/view/View;F)V
     .locals 6
-    .param p1    # Landroid/view/View;
-    .param p2    # F
 
     invoke-virtual {p0, p1}, Landroid/support/v4/widget/DrawerLayout;->getDrawerViewOffset(Landroid/view/View;)F
 
@@ -1945,7 +1909,6 @@
 
 .method public onInterceptTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 10
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v6, 0x1
 
@@ -2084,8 +2047,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x4
 
@@ -2114,8 +2075,6 @@
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v1, 0x4
 
@@ -2158,11 +2117,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 23
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     const/16 v18, 0x1
 
@@ -2554,8 +2508,6 @@
 
 .method protected onMeasure(II)V
     .locals 20
-    .param p1    # I
-    .param p2    # I
 
     invoke-static/range {p1 .. p1}, Landroid/view/View$MeasureSpec;->getMode(I)I
 
@@ -2925,7 +2877,6 @@
 
 .method protected onRestoreInstanceState(Landroid/os/Parcelable;)V
     .locals 4
-    .param p1    # Landroid/os/Parcelable;
 
     move-object v0, p1
 
@@ -3031,7 +2982,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 13
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-object v10, p0, Landroid/support/v4/widget/DrawerLayout;->mLeftDragger:Landroid/support/v4/widget/ViewDragHelper;
 
@@ -3194,7 +3144,6 @@
 
 .method public openDrawer(I)V
     .locals 4
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/support/v4/widget/DrawerLayout;->findDrawerWithGravity(I)Landroid/view/View;
 
@@ -3238,7 +3187,6 @@
 
 .method public openDrawer(Landroid/view/View;)V
     .locals 4
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p0, p1}, Landroid/support/v4/widget/DrawerLayout;->isDrawerView(Landroid/view/View;)Z
 
@@ -3345,7 +3293,6 @@
 
 .method public requestDisallowInterceptTouchEvent(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-super {p0, p1}, Landroid/view/ViewGroup;->requestDisallowInterceptTouchEvent(Z)V
 
@@ -3376,7 +3323,6 @@
 
 .method public setDrawerListener(Landroid/support/v4/widget/DrawerLayout$DrawerListener;)V
     .locals 0
-    .param p1    # Landroid/support/v4/widget/DrawerLayout$DrawerListener;
 
     iput-object p1, p0, Landroid/support/v4/widget/DrawerLayout;->mListener:Landroid/support/v4/widget/DrawerLayout$DrawerListener;
 
@@ -3385,7 +3331,6 @@
 
 .method public setDrawerLockMode(I)V
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x3
 
@@ -3400,8 +3345,6 @@
 
 .method public setDrawerLockMode(II)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     const/4 v5, 0x3
 
@@ -3482,8 +3425,6 @@
 
 .method public setDrawerLockMode(ILandroid/view/View;)V
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/view/View;
 
     invoke-virtual {p0, p2}, Landroid/support/v4/widget/DrawerLayout;->isDrawerView(Landroid/view/View;)Z
 
@@ -3543,8 +3484,6 @@
 
 .method public setDrawerShadow(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
 
@@ -3561,8 +3500,6 @@
 
 .method public setDrawerShadow(Landroid/graphics/drawable/Drawable;I)V
     .locals 3
-    .param p1    # Landroid/graphics/drawable/Drawable;
-    .param p2    # I
 
     invoke-static {p0}, Landroid/support/v4/view/ViewCompat;->getLayoutDirection(Landroid/view/View;)I
 
@@ -3599,8 +3536,6 @@
 
 .method setDrawerViewOffset(Landroid/view/View;F)V
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # F
 
     invoke-virtual {p1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
@@ -3627,7 +3562,6 @@
 
 .method public setScrimColor(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/support/v4/widget/DrawerLayout;->mScrimColor:I
 
@@ -3638,9 +3572,6 @@
 
 .method updateDrawerState(IILandroid/view/View;)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/view/View;
 
     const/4 v6, 0x2
 

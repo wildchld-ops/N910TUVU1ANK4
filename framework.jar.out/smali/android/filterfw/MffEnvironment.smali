@@ -10,7 +10,6 @@
 # direct methods
 .method protected constructor <init>(Landroid/filterfw/core/FrameManager;)V
     .locals 1
-    .param p1    # Landroid/filterfw/core/FrameManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -122,7 +121,6 @@
 
 .method public setGLEnvironment(Landroid/filterfw/core/GLEnvironment;)V
     .locals 1
-    .param p1    # Landroid/filterfw/core/GLEnvironment;
 
     iget-object v0, p0, Landroid/filterfw/MffEnvironment;->mContext:Landroid/filterfw/core/FilterContext;
 

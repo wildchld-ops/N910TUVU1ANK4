@@ -29,7 +29,6 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/location/SLocationManager;Lcom/samsung/location/SCurrentLocListener;)V
     .locals 1
-    .param p2    # Lcom/samsung/location/SCurrentLocListener;
 
     iput-object p1, p0, Lcom/samsung/location/SLocationManager$CurrentLocListenerTransport;->this$0:Lcom/samsung/location/SLocationManager;
 
@@ -48,7 +47,6 @@
 
 .method private _handleMessage(Landroid/os/Message;)V
     .locals 2
-    .param p1    # Landroid/os/Message;
 
     iget v0, p1, Landroid/os/Message;->what:I
 
@@ -76,8 +74,6 @@
 
 .method static synthetic access$200(Lcom/samsung/location/SLocationManager$CurrentLocListenerTransport;Landroid/os/Message;)V
     .locals 0
-    .param p0    # Lcom/samsung/location/SLocationManager$CurrentLocListenerTransport;
-    .param p1    # Landroid/os/Message;
 
     invoke-direct {p0, p1}, Lcom/samsung/location/SLocationManager$CurrentLocListenerTransport;->_handleMessage(Landroid/os/Message;)V
 
@@ -88,7 +84,6 @@
 # virtual methods
 .method public onCurrentLocation(Landroid/location/Location;)V
     .locals 2
-    .param p1    # Landroid/location/Location;
 
     invoke-static {}, Landroid/os/Message;->obtain()Landroid/os/Message;
 

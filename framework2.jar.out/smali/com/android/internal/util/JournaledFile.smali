@@ -19,8 +19,6 @@
 # direct methods
 .method public constructor <init>(Ljava/io/File;Ljava/io/File;)V
     .locals 0
-    .param p1    # Ljava/io/File;
-    .param p2    # Ljava/io/File;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

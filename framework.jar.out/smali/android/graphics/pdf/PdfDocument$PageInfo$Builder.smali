@@ -21,9 +21,6 @@
 # direct methods
 .method public constructor <init>(III)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -133,7 +130,6 @@
 
 .method public setContentRect(Landroid/graphics/Rect;)Landroid/graphics/pdf/PdfDocument$PageInfo$Builder;
     .locals 2
-    .param p1    # Landroid/graphics/Rect;
 
     if-eqz p1, :cond_1
 

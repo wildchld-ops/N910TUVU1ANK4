@@ -53,7 +53,6 @@
 
 .method constructor <init>(I)V
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -84,7 +83,6 @@
 # virtual methods
 .method protected checkCollision(S)Z
     .locals 2
-    .param p1    # S
 
     iget-object v0, p0, Lcom/android/mms/exif/IfdData;->mExifTags:Ljava/util/Map;
 
@@ -111,7 +109,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 11
-    .param p1    # Ljava/lang/Object;
 
     const/4 v7, 0x1
 
@@ -264,7 +261,6 @@
 
 .method protected getTag(S)Lcom/android/mms/exif/ExifTag;
     .locals 2
-    .param p1    # S
 
     iget-object v0, p0, Lcom/android/mms/exif/IfdData;->mExifTags:Ljava/util/Map;
 
@@ -295,7 +291,6 @@
 
 .method protected removeTag(S)V
     .locals 2
-    .param p1    # S
 
     iget-object v0, p0, Lcom/android/mms/exif/IfdData;->mExifTags:Ljava/util/Map;
 
@@ -310,7 +305,6 @@
 
 .method protected setOffsetToNextIfd(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/mms/exif/IfdData;->mOffsetToNextIfd:I
 
@@ -319,7 +313,6 @@
 
 .method protected setTag(Lcom/android/mms/exif/ExifTag;)Lcom/android/mms/exif/ExifTag;
     .locals 2
-    .param p1    # Lcom/android/mms/exif/ExifTag;
 
     iget v0, p0, Lcom/android/mms/exif/IfdData;->mIfdId:I
 

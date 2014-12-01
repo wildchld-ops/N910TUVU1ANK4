@@ -23,7 +23,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -45,7 +44,6 @@
 
 .method private update(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/xml/parsers/ParserConfigurationException;,
@@ -107,7 +105,6 @@
 # virtual methods
 .method public get(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -137,7 +134,6 @@
 
 .method public search(Ljava/lang/String;)Lorg/w3c/dom/Node;
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -185,8 +181,6 @@
 
 .method public search(Lorg/w3c/dom/Node;Ljava/lang/String;)Lorg/w3c/dom/Node;
     .locals 6
-    .param p1    # Lorg/w3c/dom/Node;
-    .param p2    # Ljava/lang/String;
 
     const/4 v4, 0x0
 

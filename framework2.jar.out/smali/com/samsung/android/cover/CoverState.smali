@@ -187,9 +187,6 @@
 
 .method public constructor <init>(III)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v1, 0x0
 
@@ -216,7 +213,6 @@
 
 .method public constructor <init>(Landroid/os/Parcel;)V
     .locals 0
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -227,11 +223,6 @@
 
 .method public constructor <init>(ZIIII)V
     .locals 1
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     const/4 v0, 0x0
 
@@ -256,12 +247,6 @@
 
 .method public constructor <init>(ZIIIIZ)V
     .locals 1
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -286,13 +271,6 @@
 
 .method public constructor <init>(ZIIIIZI)V
     .locals 0
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Z
-    .param p7    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -315,7 +293,6 @@
 
 .method private readFromParcel(Landroid/os/Parcel;)V
     .locals 3
-    .param p1    # Landroid/os/Parcel;
 
     const/4 v2, 0x0
 
@@ -388,7 +365,6 @@
 # virtual methods
 .method public copyFrom(Lcom/samsung/android/cover/CoverState;)V
     .locals 1
-    .param p1    # Lcom/samsung/android/cover/CoverState;
 
     iget-boolean v0, p1, Lcom/samsung/android/cover/CoverState;->switchState:Z
 
@@ -489,7 +465,6 @@
 
 .method public setAttachState(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/android/cover/CoverState;->attached:Z
 
@@ -498,7 +473,6 @@
 
 .method public setColor(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/android/cover/CoverState;->color:I
 
@@ -507,7 +481,6 @@
 
 .method public setModel(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/android/cover/CoverState;->model:I
 
@@ -516,7 +489,6 @@
 
 .method public setSwitchState(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/android/cover/CoverState;->switchState:Z
 
@@ -525,7 +497,6 @@
 
 .method public setType(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/android/cover/CoverState;->type:I
 
@@ -534,7 +505,6 @@
 
 .method public setWindowHeight(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/android/cover/CoverState;->heightPixel:I
 
@@ -543,7 +513,6 @@
 
 .method public setWindowWidth(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/android/cover/CoverState;->widthPixel:I
 
@@ -638,10 +607,6 @@
 
 .method public updateCoverState(IIII)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iput p1, p0, Lcom/samsung/android/cover/CoverState;->type:I
 
@@ -656,11 +621,6 @@
 
 .method public updateCoverState(IIIII)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     iput p1, p0, Lcom/samsung/android/cover/CoverState;->type:I
 
@@ -677,12 +637,6 @@
 
 .method public updateCoverState(IIIIZI)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Z
-    .param p6    # I
 
     iput p1, p0, Lcom/samsung/android/cover/CoverState;->type:I
 
@@ -701,11 +655,6 @@
 
 .method public updateCoverState(ZIIII)V
     .locals 0
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     iput-boolean p1, p0, Lcom/samsung/android/cover/CoverState;->switchState:Z
 
@@ -722,12 +671,6 @@
 
 .method public updateCoverState(ZIIIIZ)V
     .locals 0
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Z
 
     iput-boolean p1, p0, Lcom/samsung/android/cover/CoverState;->switchState:Z
 
@@ -746,8 +689,6 @@
 
 .method public updateCoverWindowSize(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     iput p1, p0, Lcom/samsung/android/cover/CoverState;->widthPixel:I
 
@@ -758,8 +699,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 3
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 

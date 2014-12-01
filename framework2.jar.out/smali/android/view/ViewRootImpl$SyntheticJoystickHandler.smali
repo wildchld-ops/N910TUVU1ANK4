@@ -47,7 +47,6 @@
 
 .method private joystickAxisValueToDirection(F)I
     .locals 1
-    .param p1    # F
 
     const/high16 v0, 0x3f000000
 
@@ -79,8 +78,6 @@
 
 .method private update(Landroid/view/MotionEvent;Z)V
     .locals 31
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # Z
 
     invoke-virtual/range {p1 .. p1}, Landroid/view/MotionEvent;->getEventTime()J
 
@@ -421,7 +418,6 @@
 # virtual methods
 .method public cancel(Landroid/view/MotionEvent;)V
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v0, 0x0
 
@@ -432,7 +428,6 @@
 
 .method public handleMessage(Landroid/os/Message;)V
     .locals 6
-    .param p1    # Landroid/os/Message;
 
     iget v3, p1, Landroid/os/Message;->what:I
 
@@ -502,7 +497,6 @@
 
 .method public process(Landroid/view/MotionEvent;)V
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v0, 0x1
 

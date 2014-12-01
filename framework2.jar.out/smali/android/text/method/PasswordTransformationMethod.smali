@@ -76,7 +76,6 @@
 
 .method private static removeVisibleSpans(Landroid/text/Spannable;)V
     .locals 5
-    .param p0    # Landroid/text/Spannable;
 
     const/4 v2, 0x0
 
@@ -115,25 +114,18 @@
 # virtual methods
 .method public afterTextChanged(Landroid/text/Editable;)V
     .locals 0
-    .param p1    # Landroid/text/Editable;
 
     return-void
 .end method
 
 .method public beforeTextChanged(Ljava/lang/CharSequence;III)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     return-void
 .end method
 
 .method public getTransformation(Ljava/lang/CharSequence;Landroid/view/View;)Ljava/lang/CharSequence;
     .locals 6
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Landroid/view/View;
 
     const/4 v5, 0x0
 
@@ -193,11 +185,6 @@
 
 .method public onFocusChanged(Landroid/view/View;Ljava/lang/CharSequence;ZILandroid/graphics/Rect;)V
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # Ljava/lang/CharSequence;
-    .param p3    # Z
-    .param p4    # I
-    .param p5    # Landroid/graphics/Rect;
 
     if-nez p3, :cond_0
 
@@ -217,10 +204,6 @@
 
 .method public onTextChanged(Ljava/lang/CharSequence;III)V
     .locals 8
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     instance-of v5, p1, Landroid/text/Spannable;
 

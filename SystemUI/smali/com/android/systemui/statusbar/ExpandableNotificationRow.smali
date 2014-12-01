@@ -16,8 +16,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -60,7 +58,6 @@
 
 .method public setExpandable(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/systemui/statusbar/ExpandableNotificationRow;->mExpandable:Z
 
@@ -69,7 +66,6 @@
 
 .method public setExpanded(Z)V
     .locals 2
-    .param p1    # Z
 
     invoke-virtual {p0}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
@@ -100,7 +96,6 @@
 
 .method public setRowHeight(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/systemui/statusbar/ExpandableNotificationRow;->mRowHeight:I
 
@@ -109,7 +104,6 @@
 
 .method public setUserExpanded(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/systemui/statusbar/ExpandableNotificationRow;->mUserExpanded:Z
 
@@ -118,7 +112,6 @@
 
 .method public setUserLocked(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/systemui/statusbar/ExpandableNotificationRow;->mUserLocked:Z
 

@@ -71,7 +71,6 @@
 
 .method public static openInputChannelPair(Ljava/lang/String;)[Landroid/view/InputChannel;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     if-nez p0, :cond_0
 
@@ -170,7 +169,6 @@
 
 .method public readFromParcel(Landroid/os/Parcel;)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
 
     if-nez p1, :cond_0
 
@@ -200,7 +198,6 @@
 
 .method public transferTo(Landroid/view/InputChannel;)V
     .locals 2
-    .param p1    # Landroid/view/InputChannel;
 
     if-nez p1, :cond_0
 
@@ -220,8 +217,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     if-nez p1, :cond_0
 

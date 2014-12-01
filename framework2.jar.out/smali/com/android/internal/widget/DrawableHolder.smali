@@ -65,7 +65,6 @@
 
 .method public constructor <init>(Landroid/graphics/drawable/BitmapDrawable;)V
     .locals 1
-    .param p1    # Landroid/graphics/drawable/BitmapDrawable;
 
     const/4 v0, 0x0
 
@@ -76,9 +75,6 @@
 
 .method public constructor <init>(Landroid/graphics/drawable/BitmapDrawable;FF)V
     .locals 4
-    .param p1    # Landroid/graphics/drawable/BitmapDrawable;
-    .param p2    # F
-    .param p3    # F
 
     const/4 v3, 0x0
 
@@ -147,8 +143,6 @@
 
 .method private addAnimation(Landroid/animation/ObjectAnimator;Z)Lcom/android/internal/widget/DrawableHolder;
     .locals 1
-    .param p1    # Landroid/animation/ObjectAnimator;
-    .param p2    # Z
 
     if-eqz p1, :cond_0
 
@@ -168,11 +162,6 @@
 # virtual methods
 .method public addAnimTo(JJLjava/lang/String;FZ)Landroid/animation/ObjectAnimator;
     .locals 3
-    .param p1    # J
-    .param p3    # J
-    .param p5    # Ljava/lang/String;
-    .param p6    # F
-    .param p7    # Z
 
     if-eqz p7, :cond_0
 
@@ -240,7 +229,6 @@
 
 .method public draw(Landroid/graphics/Canvas;)V
     .locals 4
-    .param p1    # Landroid/graphics/Canvas;
 
     const/high16 v3, -0x41000000
 
@@ -389,14 +377,12 @@
 
 .method public onAnimationCancel(Landroid/animation/Animator;)V
     .locals 0
-    .param p1    # Landroid/animation/Animator;
 
     return-void
 .end method
 
 .method public onAnimationEnd(Landroid/animation/Animator;)V
     .locals 1
-    .param p1    # Landroid/animation/Animator;
 
     iget-object v0, p0, Lcom/android/internal/widget/DrawableHolder;->mAnimators:Ljava/util/ArrayList;
 
@@ -407,21 +393,18 @@
 
 .method public onAnimationRepeat(Landroid/animation/Animator;)V
     .locals 0
-    .param p1    # Landroid/animation/Animator;
 
     return-void
 .end method
 
 .method public onAnimationStart(Landroid/animation/Animator;)V
     .locals 0
-    .param p1    # Landroid/animation/Animator;
 
     return-void
 .end method
 
 .method public removeAnimationFor(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     iget-object v3, p0, Lcom/android/internal/widget/DrawableHolder;->mAnimators:Ljava/util/ArrayList;
 
@@ -469,7 +452,6 @@
 
 .method public setAlpha(F)V
     .locals 0
-    .param p1    # F
 
     iput p1, p0, Lcom/android/internal/widget/DrawableHolder;->mAlpha:F
 
@@ -478,7 +460,6 @@
 
 .method public setScaleX(F)V
     .locals 0
-    .param p1    # F
 
     iput p1, p0, Lcom/android/internal/widget/DrawableHolder;->mScaleX:F
 
@@ -487,7 +468,6 @@
 
 .method public setScaleY(F)V
     .locals 0
-    .param p1    # F
 
     iput p1, p0, Lcom/android/internal/widget/DrawableHolder;->mScaleY:F
 
@@ -496,7 +476,6 @@
 
 .method public setX(F)V
     .locals 0
-    .param p1    # F
 
     iput p1, p0, Lcom/android/internal/widget/DrawableHolder;->mX:F
 
@@ -505,7 +484,6 @@
 
 .method public setY(F)V
     .locals 0
-    .param p1    # F
 
     iput p1, p0, Lcom/android/internal/widget/DrawableHolder;->mY:F
 
@@ -514,7 +492,6 @@
 
 .method public startAnimations(Landroid/animation/ValueAnimator$AnimatorUpdateListener;)V
     .locals 3
-    .param p1    # Landroid/animation/ValueAnimator$AnimatorUpdateListener;
 
     const/4 v1, 0x0
 

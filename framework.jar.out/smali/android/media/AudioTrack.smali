@@ -105,12 +105,6 @@
 # direct methods
 .method public constructor <init>(IIIIII)V
     .locals 8
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;
@@ -140,13 +134,6 @@
 
 .method public constructor <init>(IIIIIII)V
     .locals 13
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;
@@ -482,7 +469,6 @@
 
 .method static synthetic access$000(Landroid/media/AudioTrack;)Landroid/os/Looper;
     .locals 1
-    .param p0    # Landroid/media/AudioTrack;
 
     iget-object v0, p0, Landroid/media/AudioTrack;->mInitializationLooper:Landroid/os/Looper;
 
@@ -491,7 +477,6 @@
 
 .method static synthetic access$100(Ljava/lang/String;)V
     .locals 0
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Landroid/media/AudioTrack;->loge(Ljava/lang/String;)V
 
@@ -500,7 +485,6 @@
 
 .method private audioBuffSizeCheck(I)V
     .locals 5
-    .param p1    # I
 
     const/4 v2, 0x1
 
@@ -549,11 +533,6 @@
 
 .method private audioParamCheck(IIIII)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     const/16 v4, 0xc
 
@@ -751,9 +730,6 @@
 
 .method public static getMinBufferSize(III)I
     .locals 4
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
 
     const/4 v1, -0x2
 
@@ -899,7 +875,6 @@
 
 .method public static getNativeOutputSampleRate(I)I
     .locals 1
-    .param p0    # I
 
     invoke-static {p0}, Landroid/media/AudioTrack;->native_get_output_sample_rate(I)I
 
@@ -910,7 +885,6 @@
 
 .method private static isMultichannelConfigSupported(I)Z
     .locals 5
-    .param p0    # I
 
     const/4 v2, 0x0
 
@@ -967,7 +941,6 @@
 
 .method private static logd(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "android.media.AudioTrack"
 
@@ -978,7 +951,6 @@
 
 .method private static loge(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "android.media.AudioTrack"
 
@@ -1070,11 +1042,6 @@
 
 .method private static postEventFromNative(Ljava/lang/Object;IIILjava/lang/Object;)V
     .locals 4
-    .param p0    # Ljava/lang/Object;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/Object;
 
     check-cast p0, Ljava/lang/ref/WeakReference;
 
@@ -1114,7 +1081,6 @@
 # virtual methods
 .method public attachAuxEffect(I)I
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/media/AudioTrack;->mState:I
 
@@ -1319,7 +1285,6 @@
 
 .method public getTimestamp(Landroid/media/AudioTimestamp;)Z
     .locals 6
-    .param p1    # Landroid/media/AudioTimestamp;
 
     const/4 v3, 0x1
 
@@ -1509,7 +1474,6 @@
 
 .method public setAuxEffectSendLevel(F)I
     .locals 1
-    .param p1    # F
 
     iget v0, p0, Landroid/media/AudioTrack;->mState:I
 
@@ -1556,9 +1520,6 @@
 
 .method public setLoopPoints(III)I
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v1, 0x1
 
@@ -1615,7 +1576,6 @@
 
 .method public setNotificationMarkerPosition(I)I
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/media/AudioTrack;->mState:I
 
@@ -1636,7 +1596,6 @@
 
 .method public setPlaybackHeadPosition(I)I
     .locals 2
-    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -1684,7 +1643,6 @@
 
 .method public setPlaybackPositionUpdateListener(Landroid/media/AudioTrack$OnPlaybackPositionUpdateListener;)V
     .locals 1
-    .param p1    # Landroid/media/AudioTrack$OnPlaybackPositionUpdateListener;
 
     const/4 v0, 0x0
 
@@ -1695,8 +1653,6 @@
 
 .method public setPlaybackPositionUpdateListener(Landroid/media/AudioTrack$OnPlaybackPositionUpdateListener;Landroid/os/Handler;)V
     .locals 1
-    .param p1    # Landroid/media/AudioTrack$OnPlaybackPositionUpdateListener;
-    .param p2    # Landroid/os/Handler;
 
     if-eqz p1, :cond_0
 
@@ -1719,7 +1675,6 @@
 
 .method public setPlaybackRate(I)I
     .locals 2
-    .param p1    # I
 
     iget v0, p0, Landroid/media/AudioTrack;->mState:I
 
@@ -1749,7 +1704,6 @@
 
 .method public setPositionNotificationPeriod(I)I
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/media/AudioTrack;->mState:I
 
@@ -1770,7 +1724,6 @@
 
 .method protected setState(I)V
     .locals 0
-    .param p1    # I
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -1781,8 +1734,6 @@
 
 .method public setStereoVolume(FF)I
     .locals 1
-    .param p1    # F
-    .param p2    # F
 
     iget v0, p0, Landroid/media/AudioTrack;->mState:I
 
@@ -1855,7 +1806,6 @@
 
 .method public setVolume(F)I
     .locals 1
-    .param p1    # F
 
     invoke-virtual {p0, p1, p1}, Landroid/media/AudioTrack;->setStereoVolume(FF)I
 
@@ -1914,9 +1864,6 @@
 
 .method public write([BII)I
     .locals 3
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
 
     iget v1, p0, Landroid/media/AudioTrack;->mState:I
 
@@ -1978,9 +1925,6 @@
 
 .method public write([SII)I
     .locals 3
-    .param p1    # [S
-    .param p2    # I
-    .param p3    # I
 
     iget v1, p0, Landroid/media/AudioTrack;->mState:I
 

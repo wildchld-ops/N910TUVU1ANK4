@@ -44,7 +44,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Landroid/content/Loader;-><init>(Landroid/content/Context;)V
 
@@ -59,7 +58,6 @@
 
 .method static synthetic access$2000(Lcom/android/settings/print/PrintServiceSettingsFragment$PrintersLoader;)Landroid/print/PrinterDiscoverySession;
     .locals 1
-    .param p0    # Lcom/android/settings/print/PrintServiceSettingsFragment$PrintersLoader;
 
     iget-object v0, p0, Lcom/android/settings/print/PrintServiceSettingsFragment$PrintersLoader;->mDiscoverySession:Landroid/print/PrinterDiscoverySession;
 
@@ -143,7 +141,6 @@
 # virtual methods
 .method public bridge synthetic deliverResult(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Ljava/util/List;
 

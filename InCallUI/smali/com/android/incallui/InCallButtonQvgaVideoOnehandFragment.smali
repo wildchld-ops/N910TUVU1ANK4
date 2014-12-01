@@ -25,7 +25,6 @@
 # virtual methods
 .method public changeArrow(I)V
     .locals 3
-    .param p1    # I
 
     const/16 v2, 0x8
 
@@ -116,7 +115,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 4
-    .param p1    # Landroid/view/View;
 
     const/16 v3, 0x8
 
@@ -204,9 +202,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 3
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const-string v1, "onCreateView..."
 
@@ -285,7 +280,6 @@
 
 .method protected onFinishInflate(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     invoke-super {p0, p1}, Lcom/android/incallui/InCallButtonQvgaVideoFragment;->onFinishInflate(Landroid/view/View;)V
 
@@ -348,8 +342,6 @@
 
 .method public onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/os/Bundle;
 
     invoke-super {p0, p1, p2}, Landroid/app/Fragment;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
 

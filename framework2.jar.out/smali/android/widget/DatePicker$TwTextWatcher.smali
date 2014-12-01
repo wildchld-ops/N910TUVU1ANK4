@@ -38,9 +38,6 @@
 # direct methods
 .method public constructor <init>(Landroid/widget/DatePicker;IIZ)V
     .locals 2
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Z
 
     iput-object p1, p0, Landroid/widget/DatePicker$TwTextWatcher;->this$0:Landroid/widget/DatePicker;
 
@@ -327,7 +324,6 @@
 
 .method private isMonthStr(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -371,7 +367,6 @@
 
 .method private isNumericStr(Ljava/lang/CharSequence;)Z
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v0, 0x0
 
@@ -520,7 +515,6 @@
 # virtual methods
 .method public afterTextChanged(Landroid/text/Editable;)V
     .locals 3
-    .param p1    # Landroid/text/Editable;
 
     iget-object v0, p0, Landroid/widget/DatePicker$TwTextWatcher;->this$0:Landroid/widget/DatePicker;
 
@@ -572,10 +566,6 @@
 
 .method public beforeTextChanged(Ljava/lang/CharSequence;III)V
     .locals 3
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iget-object v0, p0, Landroid/widget/DatePicker$TwTextWatcher;->this$0:Landroid/widget/DatePicker;
 
@@ -661,10 +651,6 @@
 
 .method public onTextChanged(Ljava/lang/CharSequence;III)V
     .locals 5
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/4 v4, 0x1
 

@@ -60,7 +60,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -109,7 +108,6 @@
 
 .method private getSubSystem(Landroid/os/storage/StorageVolume;)Ljava/lang/String;
     .locals 1
-    .param p1    # Landroid/os/storage/StorageVolume;
 
     invoke-virtual {p1}, Landroid/os/storage/StorageVolume;->getSubSystem()Ljava/lang/String;
 
@@ -197,7 +195,6 @@
 
 .method private static logD(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     sget-boolean v0, Landroid/dirEncryption/DirEncryptionWrapper;->LOCAL_LOGD:Z
 
@@ -213,7 +210,6 @@
 
 .method private static logE(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     sget-boolean v0, Landroid/dirEncryption/DirEncryptionWrapper;->LOCAL_LOGE:Z
 
@@ -682,7 +678,6 @@
 
 .method public registerStorageEventListener(Landroid/os/storage/StorageEventListener;)Z
     .locals 3
-    .param p1    # Landroid/os/storage/StorageEventListener;
 
     const/4 v1, 0x0
 
@@ -728,7 +723,6 @@
 
 .method public setSavedUserID(I)V
     .locals 0
-    .param p1    # I
 
     sput p1, Landroid/dirEncryption/DirEncryptionWrapper;->mSavedUserId:I
 
@@ -737,7 +731,6 @@
 
 .method public setUserDiff(Z)V
     .locals 0
-    .param p1    # Z
 
     sput-boolean p1, Landroid/dirEncryption/DirEncryptionWrapper;->mUserDiff:Z
 

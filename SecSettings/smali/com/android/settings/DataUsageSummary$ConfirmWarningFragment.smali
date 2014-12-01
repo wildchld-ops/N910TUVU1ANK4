@@ -25,7 +25,6 @@
 
 .method public static show(Lcom/android/settings/DataUsageSummary;)Landroid/app/DialogFragment;
     .locals 14
-    .param p0    # Lcom/android/settings/DataUsageSummary;
 
     const-wide/32 v12, 0x40000000
 
@@ -143,7 +142,6 @@
 # virtual methods
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
     .locals 6
-    .param p1    # Landroid/os/Bundle;
 
     invoke-virtual {p0}, Lcom/android/settings/DataUsageSummary$ConfirmWarningFragment;->getActivity()Landroid/app/Activity;
 

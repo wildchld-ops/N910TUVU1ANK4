@@ -46,7 +46,6 @@
 
 .method private static getLayoutDirectionFromFirstChar(Ljava/util/Locale;)I
     .locals 2
-    .param p0    # Ljava/util/Locale;
 
     const/4 v0, 0x0
 
@@ -83,7 +82,6 @@
 
 .method public static getLayoutDirectionFromLocale(Ljava/util/Locale;)I
     .locals 2
-    .param p0    # Ljava/util/Locale;
 
     if-eqz p0, :cond_2
 
@@ -146,7 +144,6 @@
 
 .method public static htmlEncode(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     new-instance v2, Ljava/lang/StringBuilder;
 

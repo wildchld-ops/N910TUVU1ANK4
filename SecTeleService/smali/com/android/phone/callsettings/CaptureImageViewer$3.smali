@@ -66,11 +66,11 @@
 
     move-result-object v2
 
-    invoke-virtual {v2}, Landroid/view/ViewGroup;->getFocusedChild()Landroid/view/View;
+    invoke-virtual {v2}, Landroid/widget/Gallery;->getFocusedChild()Landroid/view/View;
 
     move-result-object v2
 
-    invoke-virtual {v1, v2}, Landroid/widget/AdapterView;->getPositionForView(Landroid/view/View;)I
+    invoke-virtual {v1, v2}, Landroid/widget/Gallery;->getPositionForView(Landroid/view/View;)I
 
     move-result v0
 
@@ -81,7 +81,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1, v0}, Landroid/widget/AbsSpinner;->setSelection(I)V
+    invoke-virtual {v1, v0}, Landroid/widget/Gallery;->setSelection(I)V
 
     iget-object v1, p0, Lcom/android/phone/callsettings/CaptureImageViewer$3;->this$0:Lcom/android/phone/callsettings/CaptureImageViewer;
 
@@ -98,7 +98,7 @@
 
     iget-object v1, p0, Lcom/android/phone/callsettings/CaptureImageViewer$3;->this$0:Lcom/android/phone/callsettings/CaptureImageViewer;
 
-    invoke-virtual {v1, v3}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->showDialog(I)V
+    invoke-virtual {v1, v3}, Lcom/android/phone/callsettings/CaptureImageViewer;->showDialog(I)V
 
     :cond_0
     iget-object v1, p0, Lcom/android/phone/callsettings/CaptureImageViewer$3;->this$0:Lcom/android/phone/callsettings/CaptureImageViewer;
@@ -118,7 +118,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1, p3}, Landroid/widget/AbsSpinner;->setSelection(I)V
+    invoke-virtual {v1, p3}, Landroid/widget/Gallery;->setSelection(I)V
 
     iget-object v1, p0, Lcom/android/phone/callsettings/CaptureImageViewer$3;->this$0:Lcom/android/phone/callsettings/CaptureImageViewer;
 
@@ -135,7 +135,7 @@
 
     iget-object v1, p0, Lcom/android/phone/callsettings/CaptureImageViewer$3;->this$0:Lcom/android/phone/callsettings/CaptureImageViewer;
 
-    invoke-virtual {v1, v3}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->showDialog(I)V
+    invoke-virtual {v1, v3}, Lcom/android/phone/callsettings/CaptureImageViewer;->showDialog(I)V
 
     goto :goto_0
 .end method

@@ -36,8 +36,6 @@
 # virtual methods
 .method public compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 4
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Object;
 
     const/4 v2, 0x0
 

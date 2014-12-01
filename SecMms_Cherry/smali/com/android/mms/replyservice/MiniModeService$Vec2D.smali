@@ -27,8 +27,6 @@
 # direct methods
 .method public constructor <init>(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -49,10 +47,6 @@
 
 .method public constructor <init>(IIII)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -77,8 +71,6 @@
 
 .method public constructor <init>(Landroid/graphics/Point;Landroid/graphics/Point;)V
     .locals 2
-    .param p1    # Landroid/graphics/Point;
-    .param p2    # Landroid/graphics/Point;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -111,9 +103,6 @@
 
 .method public constructor <init>(Lcom/android/mms/replyservice/MiniModeService$Vec2D;Lcom/android/mms/replyservice/MiniModeService$Vec2D;F)V
     .locals 3
-    .param p1    # Lcom/android/mms/replyservice/MiniModeService$Vec2D;
-    .param p2    # Lcom/android/mms/replyservice/MiniModeService$Vec2D;
-    .param p3    # F
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Landroid/webkitsec/HTML5VideoViewProxy;)V
     .locals 0
-    .param p1    # Landroid/webkitsec/HTML5VideoViewProxy;
 
     invoke-direct {p0}, Ljava/util/TimerTask;-><init>()V
 

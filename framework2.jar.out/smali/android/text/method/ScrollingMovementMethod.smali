@@ -42,8 +42,6 @@
 # virtual methods
 .method protected bottom(Landroid/widget/TextView;Landroid/text/Spannable;)Z
     .locals 1
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # Landroid/text/Spannable;
 
     invoke-virtual {p0, p1, p2}, Landroid/text/method/BaseMovementMethod;->scrollBottom(Landroid/widget/TextView;Landroid/text/Spannable;)Z
 
@@ -54,8 +52,6 @@
 
 .method protected down(Landroid/widget/TextView;Landroid/text/Spannable;)Z
     .locals 1
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # Landroid/text/Spannable;
 
     const/4 v0, 0x1
 
@@ -68,8 +64,6 @@
 
 .method protected end(Landroid/widget/TextView;Landroid/text/Spannable;)Z
     .locals 1
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # Landroid/text/Spannable;
 
     invoke-virtual {p0, p1, p2}, Landroid/text/method/ScrollingMovementMethod;->bottom(Landroid/widget/TextView;Landroid/text/Spannable;)Z
 
@@ -80,8 +74,6 @@
 
 .method protected home(Landroid/widget/TextView;Landroid/text/Spannable;)Z
     .locals 1
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # Landroid/text/Spannable;
 
     invoke-virtual {p0, p1, p2}, Landroid/text/method/ScrollingMovementMethod;->top(Landroid/widget/TextView;Landroid/text/Spannable;)Z
 
@@ -92,8 +84,6 @@
 
 .method protected left(Landroid/widget/TextView;Landroid/text/Spannable;)Z
     .locals 1
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # Landroid/text/Spannable;
 
     const/4 v0, 0x1
 
@@ -106,8 +96,6 @@
 
 .method protected lineEnd(Landroid/widget/TextView;Landroid/text/Spannable;)Z
     .locals 1
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # Landroid/text/Spannable;
 
     invoke-virtual {p0, p1, p2}, Landroid/text/method/BaseMovementMethod;->scrollLineEnd(Landroid/widget/TextView;Landroid/text/Spannable;)Z
 
@@ -118,8 +106,6 @@
 
 .method protected lineStart(Landroid/widget/TextView;Landroid/text/Spannable;)Z
     .locals 1
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # Landroid/text/Spannable;
 
     invoke-virtual {p0, p1, p2}, Landroid/text/method/BaseMovementMethod;->scrollLineStart(Landroid/widget/TextView;Landroid/text/Spannable;)Z
 
@@ -130,9 +116,6 @@
 
 .method public onTakeFocus(Landroid/widget/TextView;Landroid/text/Spannable;I)V
     .locals 6
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # Landroid/text/Spannable;
-    .param p3    # I
 
     invoke-virtual {p1}, Landroid/widget/TextView;->getLayout()Landroid/text/Layout;
 
@@ -205,9 +188,6 @@
 
 .method public onTouchEvent(Landroid/widget/TextView;Landroid/text/Spannable;Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # Landroid/text/Spannable;
-    .param p3    # Landroid/view/MotionEvent;
 
     invoke-static {p1, p2, p3}, Landroid/text/method/Touch;->onTouchEvent(Landroid/widget/TextView;Landroid/text/Spannable;Landroid/view/MotionEvent;)Z
 
@@ -218,8 +198,6 @@
 
 .method protected pageDown(Landroid/widget/TextView;Landroid/text/Spannable;)Z
     .locals 1
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # Landroid/text/Spannable;
 
     invoke-virtual {p0, p1, p2}, Landroid/text/method/BaseMovementMethod;->scrollPageDown(Landroid/widget/TextView;Landroid/text/Spannable;)Z
 
@@ -230,8 +208,6 @@
 
 .method protected pageUp(Landroid/widget/TextView;Landroid/text/Spannable;)Z
     .locals 1
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # Landroid/text/Spannable;
 
     invoke-virtual {p0, p1, p2}, Landroid/text/method/BaseMovementMethod;->scrollPageUp(Landroid/widget/TextView;Landroid/text/Spannable;)Z
 
@@ -242,8 +218,6 @@
 
 .method protected right(Landroid/widget/TextView;Landroid/text/Spannable;)Z
     .locals 1
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # Landroid/text/Spannable;
 
     const/4 v0, 0x1
 
@@ -256,8 +230,6 @@
 
 .method protected top(Landroid/widget/TextView;Landroid/text/Spannable;)Z
     .locals 1
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # Landroid/text/Spannable;
 
     invoke-virtual {p0, p1, p2}, Landroid/text/method/BaseMovementMethod;->scrollTop(Landroid/widget/TextView;Landroid/text/Spannable;)Z
 
@@ -268,8 +240,6 @@
 
 .method protected up(Landroid/widget/TextView;Landroid/text/Spannable;)Z
     .locals 1
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # Landroid/text/Spannable;
 
     const/4 v0, 0x1
 

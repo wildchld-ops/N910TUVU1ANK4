@@ -54,7 +54,6 @@
 
 .method private static getDate(Ljava/lang/String;)I
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -99,7 +98,6 @@
 
 .method private static getMonth(Ljava/lang/String;)I
     .locals 6
-    .param p0    # Ljava/lang/String;
 
     const/4 v3, 0x2
 
@@ -221,7 +219,6 @@
 
 .method private static getTime(Ljava/lang/String;)Lcom/android/internal/http/HttpDateTime$TimeOfDay;
     .locals 7
-    .param p0    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -312,7 +309,6 @@
 
 .method private static getYear(Ljava/lang/String;)I
     .locals 7
-    .param p0    # Ljava/lang/String;
 
     const/4 v6, 0x3
 
@@ -450,7 +446,6 @@
 
 .method public static parse(Ljava/lang/String;)J
     .locals 12
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;

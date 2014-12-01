@@ -117,7 +117,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0, v4}, Landroid/widget/ImageView;->setVisibility(I)V
+    invoke-virtual {v0, v4}, Landroid/widget/ImageButton;->setVisibility(I)V
 
     iget-object v0, p0, Lcom/android/phone/IMSConferenceCallActivity$5;->this$0:Lcom/android/phone/IMSConferenceCallActivity;
 
@@ -126,7 +126,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0, v3}, Landroid/widget/ImageView;->setVisibility(I)V
+    invoke-virtual {v0, v3}, Landroid/widget/ImageButton;->setVisibility(I)V
 
     :cond_1
     :goto_0
@@ -154,7 +154,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0, v4}, Landroid/widget/ImageView;->setVisibility(I)V
+    invoke-virtual {v0, v4}, Landroid/widget/ImageButton;->setVisibility(I)V
 
     iget-object v0, p0, Lcom/android/phone/IMSConferenceCallActivity$5;->this$0:Lcom/android/phone/IMSConferenceCallActivity;
 
@@ -163,7 +163,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0, v3}, Landroid/widget/ImageView;->setVisibility(I)V
+    invoke-virtual {v0, v3}, Landroid/widget/ImageButton;->setVisibility(I)V
 
     goto :goto_0
 .end method
@@ -223,7 +223,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {v0, v1}, Landroid/widget/AutoCompleteTextView;->setText(Ljava/lang/CharSequence;)V
 
     iget-object v0, p0, Lcom/android/phone/IMSConferenceCallActivity$5;->this$0:Lcom/android/phone/IMSConferenceCallActivity;
 
@@ -239,11 +239,11 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Landroid/widget/TextView;->length()I
+    invoke-virtual {v1}, Landroid/widget/AutoCompleteTextView;->length()I
 
     move-result v1
 
-    invoke-virtual {v0, v1}, Landroid/widget/EditText;->setSelection(I)V
+    invoke-virtual {v0, v1}, Landroid/widget/AutoCompleteTextView;->setSelection(I)V
 
     :cond_0
     return-void

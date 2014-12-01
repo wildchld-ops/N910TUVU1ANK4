@@ -25,7 +25,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/analytics/data/collection/input/InputEventDataCollector;Landroid/os/Looper;)V
     .locals 0
-    .param p2    # Landroid/os/Looper;
 
     iput-object p1, p0, Lcom/android/server/analytics/data/collection/input/InputEventDataCollector$InternalHandler;->this$0:Lcom/android/server/analytics/data/collection/input/InputEventDataCollector;
 
@@ -38,7 +37,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 2
-    .param p1    # Landroid/os/Message;
 
     iget v0, p1, Landroid/os/Message;->what:I
 

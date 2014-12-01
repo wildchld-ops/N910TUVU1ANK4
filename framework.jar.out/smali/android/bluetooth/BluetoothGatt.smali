@@ -88,9 +88,6 @@
 # direct methods
 .method constructor <init>(Landroid/content/Context;Landroid/bluetooth/IBluetoothGatt;Landroid/bluetooth/BluetoothDevice;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/bluetooth/IBluetoothGatt;
-    .param p3    # Landroid/bluetooth/BluetoothDevice;
 
     const/4 v1, 0x0
 
@@ -129,7 +126,6 @@
 
 .method static synthetic access$000(Landroid/bluetooth/BluetoothGatt;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Landroid/bluetooth/BluetoothGatt;
 
     iget-object v0, p0, Landroid/bluetooth/BluetoothGatt;->mStateLock:Ljava/lang/Object;
 
@@ -138,7 +134,6 @@
 
 .method static synthetic access$100(Landroid/bluetooth/BluetoothGatt;)I
     .locals 1
-    .param p0    # Landroid/bluetooth/BluetoothGatt;
 
     iget v0, p0, Landroid/bluetooth/BluetoothGatt;->mConnState:I
 
@@ -147,8 +142,6 @@
 
 .method static synthetic access$102(Landroid/bluetooth/BluetoothGatt;I)I
     .locals 0
-    .param p0    # Landroid/bluetooth/BluetoothGatt;
-    .param p1    # I
 
     iput p1, p0, Landroid/bluetooth/BluetoothGatt;->mConnState:I
 
@@ -157,7 +150,6 @@
 
 .method static synthetic access$200(Landroid/bluetooth/BluetoothGatt;)I
     .locals 1
-    .param p0    # Landroid/bluetooth/BluetoothGatt;
 
     iget v0, p0, Landroid/bluetooth/BluetoothGatt;->mClientIf:I
 
@@ -166,8 +158,6 @@
 
 .method static synthetic access$202(Landroid/bluetooth/BluetoothGatt;I)I
     .locals 0
-    .param p0    # Landroid/bluetooth/BluetoothGatt;
-    .param p1    # I
 
     iput p1, p0, Landroid/bluetooth/BluetoothGatt;->mClientIf:I
 
@@ -176,7 +166,6 @@
 
 .method static synthetic access$300(Landroid/bluetooth/BluetoothGatt;)Landroid/bluetooth/BluetoothGattCallback;
     .locals 1
-    .param p0    # Landroid/bluetooth/BluetoothGatt;
 
     iget-object v0, p0, Landroid/bluetooth/BluetoothGatt;->mCallback:Landroid/bluetooth/BluetoothGattCallback;
 
@@ -185,7 +174,6 @@
 
 .method static synthetic access$400(Landroid/bluetooth/BluetoothGatt;)Landroid/bluetooth/BluetoothDevice;
     .locals 1
-    .param p0    # Landroid/bluetooth/BluetoothGatt;
 
     iget-object v0, p0, Landroid/bluetooth/BluetoothGatt;->mDevice:Landroid/bluetooth/BluetoothDevice;
 
@@ -194,7 +182,6 @@
 
 .method static synthetic access$500(Landroid/bluetooth/BluetoothGatt;)Z
     .locals 1
-    .param p0    # Landroid/bluetooth/BluetoothGatt;
 
     iget-boolean v0, p0, Landroid/bluetooth/BluetoothGatt;->mAutoConnect:Z
 
@@ -203,7 +190,6 @@
 
 .method static synthetic access$600(Landroid/bluetooth/BluetoothGatt;)Z
     .locals 1
-    .param p0    # Landroid/bluetooth/BluetoothGatt;
 
     iget-boolean v0, p0, Landroid/bluetooth/BluetoothGatt;->mUsePubilicAddr:Z
 
@@ -212,7 +198,6 @@
 
 .method static synthetic access$700(Landroid/bluetooth/BluetoothGatt;)Landroid/bluetooth/IBluetoothGatt;
     .locals 1
-    .param p0    # Landroid/bluetooth/BluetoothGatt;
 
     iget-object v0, p0, Landroid/bluetooth/BluetoothGatt;->mService:Landroid/bluetooth/IBluetoothGatt;
 
@@ -221,7 +206,6 @@
 
 .method static synthetic access$800(Landroid/bluetooth/BluetoothGatt;)Ljava/util/List;
     .locals 1
-    .param p0    # Landroid/bluetooth/BluetoothGatt;
 
     iget-object v0, p0, Landroid/bluetooth/BluetoothGatt;->mServices:Ljava/util/List;
 
@@ -230,7 +214,6 @@
 
 .method static synthetic access$900(Landroid/bluetooth/BluetoothGatt;)Z
     .locals 1
-    .param p0    # Landroid/bluetooth/BluetoothGatt;
 
     iget-boolean v0, p0, Landroid/bluetooth/BluetoothGatt;->mAuthRetry:Z
 
@@ -239,8 +222,6 @@
 
 .method static synthetic access$902(Landroid/bluetooth/BluetoothGatt;Z)Z
     .locals 0
-    .param p0    # Landroid/bluetooth/BluetoothGatt;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/bluetooth/BluetoothGatt;->mAuthRetry:Z
 
@@ -249,7 +230,6 @@
 
 .method private registerApp(Landroid/bluetooth/BluetoothGattCallback;)Z
     .locals 8
-    .param p1    # Landroid/bluetooth/BluetoothGattCallback;
 
     const/4 v3, 0x0
 
@@ -575,7 +555,6 @@
 
 .method public abortReliableWrite(Landroid/bluetooth/BluetoothDevice;)V
     .locals 0
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
 
     invoke-virtual {p0}, Landroid/bluetooth/BluetoothGatt;->abortReliableWrite()V
 
@@ -724,8 +703,6 @@
 
 .method connect(Ljava/lang/Boolean;Landroid/bluetooth/BluetoothGattCallback;)Z
     .locals 5
-    .param p1    # Ljava/lang/Boolean;
-    .param p2    # Landroid/bluetooth/BluetoothGattCallback;
 
     const/4 v1, 0x1
 
@@ -906,7 +883,6 @@
 
 .method connectUsePublicAddr(Landroid/bluetooth/BluetoothGattCallback;)Z
     .locals 5
-    .param p1    # Landroid/bluetooth/BluetoothGattCallback;
 
     const/4 v0, 0x0
 
@@ -1284,7 +1260,6 @@
 
 .method public getConnectionState(Landroid/bluetooth/BluetoothDevice;)I
     .locals 2
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
 
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
@@ -1305,7 +1280,6 @@
 
 .method public getDevicesMatchingConnectionStates([I)Ljava/util/List;
     .locals 2
-    .param p1    # [I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([I)",
@@ -1327,10 +1301,6 @@
 
 .method getService(Landroid/bluetooth/BluetoothDevice;Ljava/util/UUID;II)Landroid/bluetooth/BluetoothGattService;
     .locals 3
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
-    .param p2    # Ljava/util/UUID;
-    .param p3    # I
-    .param p4    # I
 
     iget-object v2, p0, Landroid/bluetooth/BluetoothGatt;->mServices:Ljava/util/List;
 
@@ -1394,7 +1364,6 @@
 
 .method public getService(Ljava/util/UUID;)Landroid/bluetooth/BluetoothGattService;
     .locals 4
-    .param p1    # Ljava/util/UUID;
 
     iget-object v2, p0, Landroid/bluetooth/BluetoothGatt;->mServices:Ljava/util/List;
 
@@ -1504,9 +1473,6 @@
 
 .method public monitorRssi(III)Z
     .locals 8
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v7, 0x0
 
@@ -1594,7 +1560,6 @@
 
 .method public readCharacteristic(Landroid/bluetooth/BluetoothGattCharacteristic;)Z
     .locals 13
-    .param p1    # Landroid/bluetooth/BluetoothGattCharacteristic;
 
     const/4 v12, 0x0
 
@@ -1737,7 +1702,6 @@
 
 .method public readDescriptor(Landroid/bluetooth/BluetoothGattDescriptor;)Z
     .locals 15
-    .param p1    # Landroid/bluetooth/BluetoothGattDescriptor;
 
     const-string v0, "BluetoothGatt"
 
@@ -2042,8 +2006,6 @@
 
 .method public setCharacteristicNotification(Landroid/bluetooth/BluetoothGattCharacteristic;Z)Z
     .locals 13
-    .param p1    # Landroid/bluetooth/BluetoothGattCharacteristic;
-    .param p2    # Z
 
     const/4 v12, 0x0
 
@@ -2183,7 +2145,6 @@
 
 .method public writeCharacteristic(Landroid/bluetooth/BluetoothGattCharacteristic;)Z
     .locals 14
-    .param p1    # Landroid/bluetooth/BluetoothGattCharacteristic;
 
     invoke-virtual {p1}, Landroid/bluetooth/BluetoothGattCharacteristic;->getProperties()I
 
@@ -2340,7 +2301,6 @@
 
 .method public writeDescriptor(Landroid/bluetooth/BluetoothGattDescriptor;)Z
     .locals 18
-    .param p1    # Landroid/bluetooth/BluetoothGattDescriptor;
 
     const-string v1, "BluetoothGatt"
 

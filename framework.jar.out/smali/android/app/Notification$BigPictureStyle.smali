@@ -37,7 +37,6 @@
 
 .method public constructor <init>(Landroid/app/Notification$Builder;)V
     .locals 1
-    .param p1    # Landroid/app/Notification$Builder;
 
     invoke-direct {p0}, Landroid/app/Notification$Style;-><init>()V
 
@@ -72,7 +71,6 @@
 # virtual methods
 .method public addExtras(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Notification$Style;->addExtras(Landroid/os/Bundle;)V
 
@@ -98,7 +96,6 @@
 
 .method public bigLargeIcon(Landroid/graphics/Bitmap;)Landroid/app/Notification$BigPictureStyle;
     .locals 1
-    .param p1    # Landroid/graphics/Bitmap;
 
     const/4 v0, 0x1
 
@@ -111,7 +108,6 @@
 
 .method public bigPicture(Landroid/graphics/Bitmap;)Landroid/app/Notification$BigPictureStyle;
     .locals 0
-    .param p1    # Landroid/graphics/Bitmap;
 
     iput-object p1, p0, Landroid/app/Notification$BigPictureStyle;->mPicture:Landroid/graphics/Bitmap;
 
@@ -120,7 +116,6 @@
 
 .method public buildStyled(Landroid/app/Notification;)Landroid/app/Notification;
     .locals 2
-    .param p1    # Landroid/app/Notification;
 
     iget-boolean v0, p0, Landroid/app/Notification$BigPictureStyle;->mBigLargeIconSet:Z
 
@@ -145,7 +140,6 @@
 
 .method public setBigContentTitle(Ljava/lang/CharSequence;)Landroid/app/Notification$BigPictureStyle;
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
 
     invoke-static {p1}, Landroid/app/Notification;->safeCharSequence(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
 
@@ -158,7 +152,6 @@
 
 .method public setSummaryText(Ljava/lang/CharSequence;)Landroid/app/Notification$BigPictureStyle;
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
 
     invoke-static {p1}, Landroid/app/Notification;->safeCharSequence(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
 

@@ -16,10 +16,6 @@
 # direct methods
 .method constructor <init>(Landroid/webkitsec/BrowserFrame;ILjava/lang/String;Landroid/webkitsec/SslClientCertLookupTable;)V
     .locals 0
-    .param p1    # Landroid/webkitsec/BrowserFrame;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Landroid/webkitsec/SslClientCertLookupTable;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
@@ -36,7 +32,6 @@
 
 .method static synthetic access$000(Landroid/webkitsec/ClientCertRequestHandler;)I
     .locals 1
-    .param p0    # Landroid/webkitsec/ClientCertRequestHandler;
 
     iget v0, p0, Landroid/webkitsec/ClientCertRequestHandler;->mHandle:I
 
@@ -45,7 +40,6 @@
 
 .method static synthetic access$100(Landroid/webkitsec/ClientCertRequestHandler;)Landroid/webkitsec/BrowserFrame;
     .locals 1
-    .param p0    # Landroid/webkitsec/ClientCertRequestHandler;
 
     iget-object v0, p0, Landroid/webkitsec/ClientCertRequestHandler;->mBrowserFrame:Landroid/webkitsec/BrowserFrame;
 
@@ -54,8 +48,6 @@
 
 .method private setSslClientCertFromCtx(J[[B)V
     .locals 1
-    .param p1    # J
-    .param p3    # [[B
 
     new-instance v0, Landroid/webkitsec/ClientCertRequestHandler$1;
 
@@ -68,8 +60,6 @@
 
 .method private setSslClientCertFromPKCS8([B[[B)V
     .locals 1
-    .param p1    # [B
-    .param p2    # [[B
 
     new-instance v0, Landroid/webkitsec/ClientCertRequestHandler$2;
 
@@ -132,8 +122,6 @@
 
 .method public proceed(Ljava/security/PrivateKey;[Ljava/security/cert/X509Certificate;)V
     .locals 0
-    .param p1    # Ljava/security/PrivateKey;
-    .param p2    # [Ljava/security/cert/X509Certificate;
 
     return-void
 .end method

@@ -45,7 +45,7 @@
 
     iget-object v1, p0, Lcom/android/phone/UsimDownload$1;->this$0:Lcom/android/phone/UsimDownload;
 
-    invoke-virtual {v1, v0}, Landroid/content/ContextWrapper;->sendBroadcast(Landroid/content/Intent;)V
+    invoke-virtual {v1, v0}, Lcom/android/phone/UsimDownload;->sendBroadcast(Landroid/content/Intent;)V
 
     return-void
 .end method

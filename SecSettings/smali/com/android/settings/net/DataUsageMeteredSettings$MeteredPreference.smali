@@ -25,8 +25,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/settings/net/DataUsageMeteredSettings;Landroid/content/Context;Landroid/net/NetworkTemplate;)V
     .locals 7
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/net/NetworkTemplate;
 
     const/4 v6, 0x1
 

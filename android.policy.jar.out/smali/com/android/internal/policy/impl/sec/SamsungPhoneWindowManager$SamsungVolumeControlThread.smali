@@ -65,8 +65,6 @@
 
 .method synthetic constructor <init>(Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager$1;)V
     .locals 0
-    .param p1    # Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;
-    .param p2    # Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager$1;
 
     invoke-direct {p0, p1}, Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager$SamsungVolumeControlThread;-><init>(Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;)V
 
@@ -354,8 +352,6 @@
 
 .method handleVolume(II)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
 
     iget-object v4, p0, Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager$SamsungVolumeControlThread;->this$0:Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;
 
@@ -471,7 +467,6 @@
 
 .method isAdjustableVolumeKey(I)Z
     .locals 1
-    .param p1    # I
 
     sparse-switch p1, :sswitch_data_0
 
@@ -728,9 +723,6 @@
 
 .method public updateInfo(IZZ)V
     .locals 2
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # Z
 
     monitor-enter p0
 

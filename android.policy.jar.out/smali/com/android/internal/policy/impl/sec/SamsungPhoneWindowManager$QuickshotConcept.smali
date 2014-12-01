@@ -157,8 +157,6 @@
 
 .method synthetic constructor <init>(Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager$1;)V
     .locals 0
-    .param p1    # Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;
-    .param p2    # Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager$1;
 
     invoke-direct {p0, p1}, Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager$QuickshotConcept;-><init>(Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;)V
 
@@ -167,7 +165,6 @@
 
 .method static synthetic access$2300(Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager$QuickshotConcept;)Landroid/content/Intent;
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager$QuickshotConcept;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager$QuickshotConcept;->mCameraSecureIntent:Landroid/content/Intent;
 
@@ -176,7 +173,6 @@
 
 .method static synthetic access$2400(Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager$QuickshotConcept;)Landroid/content/Intent;
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager$QuickshotConcept;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager$QuickshotConcept;->mCameraIntent:Landroid/content/Intent;
 
@@ -185,8 +181,6 @@
 
 .method static synthetic access$2500(Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager$QuickshotConcept;I)Z
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager$QuickshotConcept;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager$QuickshotConcept;->handleEvent(I)Z
 
@@ -197,7 +191,6 @@
 
 .method private determinePolicy(I)I
     .locals 9
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -552,7 +545,6 @@
 
 .method private handleEvent(I)Z
     .locals 4
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager$QuickshotConcept;->determinePolicy(I)I
 

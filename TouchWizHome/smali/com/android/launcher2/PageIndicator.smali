@@ -196,8 +196,6 @@
 
 .method public constructor <init>(Landroid/content/res/Resources;I)V
     .locals 7
-    .param p1    # Landroid/content/res/Resources;
-    .param p2    # I
 
     const/4 v6, 0x1
 
@@ -274,7 +272,6 @@
 
 .method static synthetic access$100(Lcom/android/launcher2/PageIndicator;)F
     .locals 1
-    .param p0    # Lcom/android/launcher2/PageIndicator;
 
     iget v0, p0, Lcom/android/launcher2/PageIndicator;->mGrowBy:F
 
@@ -283,7 +280,6 @@
 
 .method static synthetic access$200(Lcom/android/launcher2/PageIndicator;)Lcom/android/launcher2/ScalarAnimator;
     .locals 1
-    .param p0    # Lcom/android/launcher2/PageIndicator;
 
     iget-object v0, p0, Lcom/android/launcher2/PageIndicator;->mFastScrollFactor:Lcom/android/launcher2/ScalarAnimator;
 
@@ -292,7 +288,6 @@
 
 .method static synthetic access$300(Lcom/android/launcher2/PageIndicator;)Z
     .locals 1
-    .param p0    # Lcom/android/launcher2/PageIndicator;
 
     iget-boolean v0, p0, Lcom/android/launcher2/PageIndicator;->mIsHiding:Z
 
@@ -301,7 +296,6 @@
 
 .method static synthetic access$400(Lcom/android/launcher2/PageIndicator;)Landroid/graphics/drawable/Drawable;
     .locals 1
-    .param p0    # Lcom/android/launcher2/PageIndicator;
 
     iget-object v0, p0, Lcom/android/launcher2/PageIndicator;->mFocustDefaultPageDrawable:Landroid/graphics/drawable/Drawable;
 
@@ -310,7 +304,6 @@
 
 .method static synthetic access$500(Lcom/android/launcher2/PageIndicator;)Landroid/graphics/drawable/Drawable;
     .locals 1
-    .param p0    # Lcom/android/launcher2/PageIndicator;
 
     iget-object v0, p0, Lcom/android/launcher2/PageIndicator;->mFocusPageDrawable:Landroid/graphics/drawable/Drawable;
 
@@ -319,11 +312,6 @@
 
 .method private drawPageNumber(Landroid/content/Context;Landroid/graphics/Canvas;ILandroid/graphics/drawable/Drawable;Landroid/graphics/Paint;)V
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/graphics/Canvas;
-    .param p3    # I
-    .param p4    # Landroid/graphics/drawable/Drawable;
-    .param p5    # Landroid/graphics/Paint;
 
     const/high16 v6, 0x40000000
 
@@ -376,9 +364,6 @@
 # virtual methods
 .method draw(Landroid/graphics/Canvas;Lcom/android/launcher2/PagedView;J)Z
     .locals 20
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # Lcom/android/launcher2/PagedView;
-    .param p3    # J
 
     move-object/from16 v0, p0
 
@@ -991,12 +976,6 @@
 
 .method public drawIndicatorDots(Landroid/graphics/Canvas;Lcom/android/launcher2/PagedView;IIIJ)Z
     .locals 16
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # Lcom/android/launcher2/PagedView;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # J
 
     const/4 v13, 0x0
 
@@ -1408,7 +1387,6 @@
 
 .method enableLeftMore(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/launcher2/PageIndicator;->mIsVisibleLeftMore:Z
 
@@ -1417,7 +1395,6 @@
 
 .method enableRightMore(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/launcher2/PageIndicator;->mIsVisibleRightMore:Z
 
@@ -1484,8 +1461,6 @@
 
 .method getPageTouchArea(II)I
     .locals 13
-    .param p1    # I
-    .param p2    # I
 
     iget-object v10, p0, Lcom/android/launcher2/PageIndicator;->mPageDrawable:Landroid/graphics/drawable/Drawable;
 
@@ -1719,7 +1694,6 @@
 
 .method public handleOrientationChange(Landroid/content/res/Resources;)V
     .locals 0
-    .param p1    # Landroid/content/res/Resources;
 
     invoke-virtual {p0, p1}, Lcom/android/launcher2/PageIndicator;->setupDimens(Landroid/content/res/Resources;)V
 
@@ -1728,7 +1702,6 @@
 
 .method public hide(Z)V
     .locals 4
-    .param p1    # Z
 
     iget v1, p0, Lcom/android/launcher2/PageIndicator;->mDisplayPageCount:I
 
@@ -1776,7 +1749,6 @@
 
 .method public setAddPageDrawable(Landroid/graphics/drawable/Drawable;)V
     .locals 0
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     iput-object p1, p0, Lcom/android/launcher2/PageIndicator;->mAddPageDrawable:Landroid/graphics/drawable/Drawable;
 
@@ -1787,7 +1759,6 @@
 
 .method public setAnimationPrevented(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/launcher2/PageIndicator;->mIsAnimationPrevented:Z
 
@@ -1796,7 +1767,6 @@
 
 .method public setCameraPageDrawable(Landroid/graphics/drawable/Drawable;)V
     .locals 0
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     iput-object p1, p0, Lcom/android/launcher2/PageIndicator;->mCameraPageDrawable:Landroid/graphics/drawable/Drawable;
 
@@ -1807,9 +1777,6 @@
 
 .method setCurrentPage(IZLcom/android/launcher2/PagedView;)V
     .locals 8
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # Lcom/android/launcher2/PagedView;
 
     const/4 v7, 0x3
 
@@ -1984,7 +1951,6 @@
 
 .method public setDefaultPageDrawable(Landroid/graphics/drawable/Drawable;)V
     .locals 0
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     iput-object p1, p0, Lcom/android/launcher2/PageIndicator;->mDefaultPageDrawable:Landroid/graphics/drawable/Drawable;
 
@@ -1995,7 +1961,6 @@
 
 .method public setDisplayItem(Lcom/android/launcher2/PageIndicatorManager$DISPLAY_ITEM;)V
     .locals 0
-    .param p1    # Lcom/android/launcher2/PageIndicatorManager$DISPLAY_ITEM;
 
     iput-object p1, p0, Lcom/android/launcher2/PageIndicator;->mDisplayItem:Lcom/android/launcher2/PageIndicatorManager$DISPLAY_ITEM;
 
@@ -2004,7 +1969,6 @@
 
 .method public setFestivalPageDrawable(Landroid/graphics/drawable/Drawable;)V
     .locals 0
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     iput-object p1, p0, Lcom/android/launcher2/PageIndicator;->mFestivalPageDrawable:Landroid/graphics/drawable/Drawable;
 
@@ -2015,7 +1979,6 @@
 
 .method setFirstTextNum(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/launcher2/PageIndicator;->mFirstTextIndex:I
 
@@ -2024,7 +1987,6 @@
 
 .method public setFocusDefaultPageDrawable(Landroid/graphics/drawable/Drawable;)V
     .locals 2
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     invoke-static {}, Lcom/android/launcher2/LauncherApplication;->getSmallestWidth()I
 
@@ -2042,7 +2004,6 @@
 
 .method public setFocusPageDrawable(Landroid/graphics/drawable/Drawable;)V
     .locals 2
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     invoke-static {}, Lcom/android/launcher2/LauncherApplication;->getSmallestWidth()I
 
@@ -2060,7 +2021,6 @@
 
 .method public setFolderPageDrawable(Landroid/graphics/drawable/Drawable;)V
     .locals 0
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     iput-object p1, p0, Lcom/android/launcher2/PageIndicator;->mFolderPageDrawable:Landroid/graphics/drawable/Drawable;
 
@@ -2071,7 +2031,6 @@
 
 .method setGap(I)V
     .locals 0
-    .param p1    # I
 
     invoke-virtual {p0, p1, p1}, Lcom/android/launcher2/PageIndicator;->setGap(II)V
 
@@ -2080,8 +2039,6 @@
 
 .method setGap(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     iput p1, p0, Lcom/android/launcher2/PageIndicator;->mGap:I
 
@@ -2092,7 +2049,6 @@
 
 .method public setHeadlinesPageDrawable(Landroid/graphics/drawable/Drawable;)V
     .locals 0
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     iput-object p1, p0, Lcom/android/launcher2/PageIndicator;->mHeadlinesPageDrawable:Landroid/graphics/drawable/Drawable;
 
@@ -2103,7 +2059,6 @@
 
 .method public setMoreDrawable(Landroid/graphics/drawable/Drawable;)V
     .locals 0
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     iput-object p1, p0, Lcom/android/launcher2/PageIndicator;->mMoreDrawable:Landroid/graphics/drawable/Drawable;
 
@@ -2112,8 +2067,6 @@
 
 .method setOffset(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iput p2, p0, Lcom/android/launcher2/PageIndicator;->mTop:I
 
@@ -2137,7 +2090,6 @@
 
 .method setPageCount(I)V
     .locals 3
-    .param p1    # I
 
     iput p1, p0, Lcom/android/launcher2/PageIndicator;->mTotalPageCount:I
 
@@ -2181,7 +2133,6 @@
 
 .method public setPageDrawable(Landroid/graphics/drawable/Drawable;)V
     .locals 0
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     iput-object p1, p0, Lcom/android/launcher2/PageIndicator;->mPageDrawable:Landroid/graphics/drawable/Drawable;
 
@@ -2192,7 +2143,6 @@
 
 .method public setScrollPosition(F)V
     .locals 0
-    .param p1    # F
 
     iput p1, p0, Lcom/android/launcher2/PageIndicator;->mScrollPosition:F
 
@@ -2201,7 +2151,6 @@
 
 .method public setSecretPageDrawable(Landroid/graphics/drawable/Drawable;)V
     .locals 0
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     iput-object p1, p0, Lcom/android/launcher2/PageIndicator;->mSecretPageDrawable:Landroid/graphics/drawable/Drawable;
 
@@ -2212,7 +2161,6 @@
 
 .method public setShowHeadLinePage(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/launcher2/PageIndicator;->mShowHeadLinesPage:Z
 
@@ -2221,7 +2169,6 @@
 
 .method public setupDimens(Landroid/content/res/Resources;)V
     .locals 4
-    .param p1    # Landroid/content/res/Resources;
 
     const/4 v3, 0x0
 
@@ -2398,8 +2345,6 @@
 
 .method public show(ZZ)V
     .locals 1
-    .param p1    # Z
-    .param p2    # Z
 
     iget-boolean v0, p0, Lcom/android/launcher2/PageIndicator;->mIsDraw:Z
 

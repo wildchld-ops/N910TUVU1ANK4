@@ -58,10 +58,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/print/IPrintManager;II)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/print/IPrintManager;
-    .param p3    # I
-    .param p4    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -94,7 +90,6 @@
 # virtual methods
 .method public addPrintJobStateChangeListener(Landroid/print/PrintManager$PrintJobStateChangeListener;)V
     .locals 5
-    .param p1    # Landroid/print/PrintManager$PrintJobStateChangeListener;
 
     iget-object v2, p0, Landroid/print/PrintManager;->mPrintJobStateChangeListeners:Ljava/util/Map;
 
@@ -145,7 +140,6 @@
 
 .method cancelPrintJob(Landroid/print/PrintJobId;)V
     .locals 4
-    .param p1    # Landroid/print/PrintJobId;
 
     :try_start_0
     iget-object v1, p0, Landroid/print/PrintManager;->mService:Landroid/print/IPrintManager;
@@ -252,7 +246,6 @@
 
 .method public getGlobalPrintManagerForUser(I)Landroid/print/PrintManager;
     .locals 4
-    .param p1    # I
 
     new-instance v0, Landroid/print/PrintManager;
 
@@ -314,7 +307,6 @@
 
 .method public getPrintJob(Landroid/print/PrintJobId;)Landroid/print/PrintJob;
     .locals 5
-    .param p1    # Landroid/print/PrintJobId;
 
     :try_start_0
     iget-object v2, p0, Landroid/print/PrintManager;->mService:Landroid/print/IPrintManager;
@@ -355,7 +347,6 @@
 
 .method getPrintJobInfo(Landroid/print/PrintJobId;)Landroid/print/PrintJobInfo;
     .locals 4
-    .param p1    # Landroid/print/PrintJobId;
 
     :try_start_0
     iget-object v1, p0, Landroid/print/PrintManager;->mService:Landroid/print/IPrintManager;
@@ -486,9 +477,6 @@
 
 .method public print(Ljava/lang/String;Landroid/print/PrintDocumentAdapter;Landroid/print/PrintAttributes;)Landroid/print/PrintJob;
     .locals 13
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/print/PrintDocumentAdapter;
-    .param p3    # Landroid/print/PrintAttributes;
 
     iget-object v0, p0, Landroid/print/PrintManager;->mContext:Landroid/content/Context;
 
@@ -645,7 +633,6 @@
 
 .method public removePrintJobStateChangeListener(Landroid/print/PrintManager$PrintJobStateChangeListener;)V
     .locals 4
-    .param p1    # Landroid/print/PrintManager$PrintJobStateChangeListener;
 
     iget-object v2, p0, Landroid/print/PrintManager;->mPrintJobStateChangeListeners:Ljava/util/Map;
 
@@ -706,7 +693,6 @@
 
 .method restartPrintJob(Landroid/print/PrintJobId;)V
     .locals 4
-    .param p1    # Landroid/print/PrintJobId;
 
     :try_start_0
     iget-object v1, p0, Landroid/print/PrintManager;->mService:Landroid/print/IPrintManager;

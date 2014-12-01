@@ -139,7 +139,6 @@
 
 .method static synthetic access$000(Lcom/android/server/smartclip/GestureEffectManager;)Lcom/android/server/smartclip/SmartClipView$SPenVibrator;
     .locals 1
-    .param p0    # Lcom/android/server/smartclip/GestureEffectManager;
 
     iget-object v0, p0, Lcom/android/server/smartclip/GestureEffectManager;->mSPenVibrator:Lcom/android/server/smartclip/SmartClipView$SPenVibrator;
 
@@ -148,7 +147,6 @@
 
 .method static synthetic access$100(Lcom/android/server/smartclip/GestureEffectManager;)Landroid/widget/ImageView;
     .locals 1
-    .param p0    # Lcom/android/server/smartclip/GestureEffectManager;
 
     iget-object v0, p0, Lcom/android/server/smartclip/GestureEffectManager;->mGestureEffectImgView:Landroid/widget/ImageView;
 
@@ -157,7 +155,6 @@
 
 .method static synthetic access$200(Lcom/android/server/smartclip/GestureEffectManager;)Landroid/view/Display;
     .locals 1
-    .param p0    # Lcom/android/server/smartclip/GestureEffectManager;
 
     iget-object v0, p0, Lcom/android/server/smartclip/GestureEffectManager;->mDisplay:Landroid/view/Display;
 
@@ -166,7 +163,6 @@
 
 .method static synthetic access$300(Lcom/android/server/smartclip/GestureEffectManager;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/server/smartclip/GestureEffectManager;
 
     iget-object v0, p0, Lcom/android/server/smartclip/GestureEffectManager;->mGestureEffectImageList:Ljava/util/ArrayList;
 
@@ -175,8 +171,6 @@
 
 .method static synthetic access$400(Lcom/android/server/smartclip/GestureEffectManager;I)V
     .locals 0
-    .param p0    # Lcom/android/server/smartclip/GestureEffectManager;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/smartclip/GestureEffectManager;->injectionKeyEvent(I)V
 
@@ -185,7 +179,6 @@
 
 .method static synthetic access$500(Lcom/android/server/smartclip/GestureEffectManager;)Z
     .locals 1
-    .param p0    # Lcom/android/server/smartclip/GestureEffectManager;
 
     iget-boolean v0, p0, Lcom/android/server/smartclip/GestureEffectManager;->mIsShowingGestureEffect:Z
 
@@ -194,8 +187,6 @@
 
 .method static synthetic access$502(Lcom/android/server/smartclip/GestureEffectManager;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/smartclip/GestureEffectManager;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/smartclip/GestureEffectManager;->mIsShowingGestureEffect:Z
 
@@ -204,7 +195,6 @@
 
 .method static synthetic access$600(Lcom/android/server/smartclip/GestureEffectManager;)Z
     .locals 1
-    .param p0    # Lcom/android/server/smartclip/GestureEffectManager;
 
     iget-boolean v0, p0, Lcom/android/server/smartclip/GestureEffectManager;->DEBUG:Z
 
@@ -213,9 +203,6 @@
 
 .method static synthetic access$700(Lcom/android/server/smartclip/GestureEffectManager;II)V
     .locals 0
-    .param p0    # Lcom/android/server/smartclip/GestureEffectManager;
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/smartclip/GestureEffectManager;->sendKeyDownUpSync(II)V
 
@@ -224,7 +211,6 @@
 
 .method private injectionKeyEvent(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/smartclip/GestureEffectManager;->mSPenGestureEventDispatchThread:Ljava/lang/Thread;
 
@@ -273,8 +259,6 @@
 
 .method private sendKeyDownUpSync(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     new-instance v0, Landroid/view/KeyEvent;
 
@@ -307,10 +291,6 @@
 # virtual methods
 .method public checkDirectionGesture(FFFFLjava/util/ArrayList;)Z
     .locals 31
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(FFFF",
@@ -942,10 +922,6 @@
 
 .method public checkDownGesture(IIII)V
     .locals 10
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/16 v9, 0x320
 
@@ -1161,12 +1137,6 @@
 
 .method public init(Lcom/android/server/smartclip/SmartClipView;Landroid/os/Handler;Lcom/android/server/smartclip/SmartClipView$SPenVibrator;Ljava/lang/Runnable;Ljava/lang/Runnable;Ljava/lang/Runnable;)V
     .locals 2
-    .param p1    # Lcom/android/server/smartclip/SmartClipView;
-    .param p2    # Landroid/os/Handler;
-    .param p3    # Lcom/android/server/smartclip/SmartClipView$SPenVibrator;
-    .param p4    # Ljava/lang/Runnable;
-    .param p5    # Ljava/lang/Runnable;
-    .param p6    # Ljava/lang/Runnable;
 
     iput-object p1, p0, Lcom/android/server/smartclip/GestureEffectManager;->mSmartClipView:Lcom/android/server/smartclip/SmartClipView;
 
@@ -1213,7 +1183,6 @@
 
 .method public onAttachedToWindow(Lcom/android/server/smartclip/SmartClipView;)V
     .locals 4
-    .param p1    # Lcom/android/server/smartclip/SmartClipView;
 
     const/4 v3, -0x2
 
@@ -1334,7 +1303,6 @@
 
 .method public setPhoneWindowMangerFlag(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-boolean v0, p0, Lcom/android/server/smartclip/GestureEffectManager;->mIsShowingGestureEffect:Z
 
@@ -1348,8 +1316,6 @@
 
 .method public startEffectForGesture(IZ)V
     .locals 6
-    .param p1    # I
-    .param p2    # Z
 
     const/high16 v5, 0x41100000
 

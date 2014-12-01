@@ -352,7 +352,6 @@
 
 .method static synthetic access$1000(Ljava/lang/String;)I
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Landroid/os/StrictMode;->parseViolationFromMessage(Ljava/lang/String;)I
 
@@ -363,8 +362,6 @@
 
 .method static synthetic access$1100(ILandroid/os/StrictMode$ViolationInfo;)V
     .locals 0
-    .param p0    # I
-    .param p1    # Landroid/os/StrictMode$ViolationInfo;
 
     invoke-static {p0, p1}, Landroid/os/StrictMode;->dropboxViolationAsync(ILandroid/os/StrictMode$ViolationInfo;)V
 
@@ -373,7 +370,6 @@
 
 .method static synthetic access$1200(I)V
     .locals 0
-    .param p0    # I
 
     invoke-static {p0}, Landroid/os/StrictMode;->setThreadPolicyMask(I)V
 
@@ -382,7 +378,6 @@
 
 .method static synthetic access$1300(Landroid/os/StrictMode$ViolationInfo;)V
     .locals 0
-    .param p0    # Landroid/os/StrictMode$ViolationInfo;
 
     invoke-static {p0}, Landroid/os/StrictMode;->executeDeathPenalty(Landroid/os/StrictMode$ViolationInfo;)V
 
@@ -407,7 +402,6 @@
 
 .method static synthetic access$1502(J)J
     .locals 0
-    .param p0    # J
 
     sput-wide p0, Landroid/os/StrictMode;->sLastInstanceCountCheckMillis:J
 
@@ -808,7 +802,6 @@
 
 .method public static decrementExpectedActivityCount(Ljava/lang/Class;)V
     .locals 11
-    .param p0    # Ljava/lang/Class;
 
     const/4 v7, 0x0
 
@@ -940,8 +933,6 @@
 
 .method private static dropboxViolationAsync(ILandroid/os/StrictMode$ViolationInfo;)V
     .locals 4
-    .param p0    # I
-    .param p1    # Landroid/os/StrictMode$ViolationInfo;
 
     sget-object v1, Landroid/os/StrictMode;->sDropboxCallsInFlight:Ljava/util/concurrent/atomic/AtomicInteger;
 
@@ -1059,7 +1050,6 @@
 
 .method public static enterCriticalSpan(Ljava/lang/String;)Landroid/os/StrictMode$Span;
     .locals 6
-    .param p0    # Ljava/lang/String;
 
     sget-boolean v3, Landroid/os/StrictMode;->IS_USER_BUILD:Z
 
@@ -1233,7 +1223,6 @@
 
 .method private static executeDeathPenalty(Landroid/os/StrictMode$ViolationInfo;)V
     .locals 4
-    .param p0    # Landroid/os/StrictMode$ViolationInfo;
 
     iget-object v1, p0, Landroid/os/StrictMode$ViolationInfo;->crashInfo:Landroid/app/ApplicationErrorReport$CrashInfo;
 
@@ -1332,7 +1321,6 @@
 
 .method public static incrementExpectedActivityCount(Ljava/lang/Class;)V
     .locals 4
-    .param p0    # Ljava/lang/Class;
 
     if-nez p0, :cond_0
 
@@ -1451,7 +1439,6 @@
 
 .method public static noteSlowCall(Ljava/lang/String;)V
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     invoke-static {}, Ldalvik/system/BlockGuard;->getThreadPolicy()Ldalvik/system/BlockGuard$Policy;
 
@@ -1474,7 +1461,6 @@
 
 .method private static onBinderStrictModePolicyChange(I)V
     .locals 0
-    .param p0    # I
 
     invoke-static {p0}, Landroid/os/StrictMode;->setBlockGuardPolicy(I)V
 
@@ -1483,7 +1469,6 @@
 
 .method public static onFileUriExposed(Ljava/lang/String;)V
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -1514,7 +1499,6 @@
 
 .method public static onIntentReceiverLeaked(Ljava/lang/Throwable;)V
     .locals 1
-    .param p0    # Ljava/lang/Throwable;
 
     const/4 v0, 0x0
 
@@ -1525,7 +1509,6 @@
 
 .method public static onServiceConnectionLeaked(Ljava/lang/Throwable;)V
     .locals 1
-    .param p0    # Ljava/lang/Throwable;
 
     const/4 v0, 0x0
 
@@ -1536,8 +1519,6 @@
 
 .method public static onSqliteObjectLeaked(Ljava/lang/String;Ljava/lang/Throwable;)V
     .locals 0
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/Throwable;
 
     invoke-static {p0, p1}, Landroid/os/StrictMode;->onVmPolicyViolation(Ljava/lang/String;Ljava/lang/Throwable;)V
 
@@ -1546,8 +1527,6 @@
 
 .method public static onVmPolicyViolation(Ljava/lang/String;Ljava/lang/Throwable;)V
     .locals 21
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/Throwable;
 
     sget v17, Landroid/os/StrictMode;->sVmPolicyMask:I
 
@@ -1838,7 +1817,6 @@
 
 .method public static onWebViewMethodCalledOnWrongThread(Ljava/lang/Throwable;)V
     .locals 1
-    .param p0    # Ljava/lang/Throwable;
 
     const/4 v0, 0x0
 
@@ -1849,7 +1827,6 @@
 
 .method private static parsePolicyFromMessage(Ljava/lang/String;)I
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -1905,7 +1882,6 @@
 
 .method private static parseViolationFromMessage(Ljava/lang/String;)I
     .locals 8
-    .param p0    # Ljava/lang/String;
 
     const/4 v7, -0x1
 
@@ -1972,7 +1948,6 @@
 
 .method static readAndHandleBinderCallViolations(Landroid/os/Parcel;)V
     .locals 14
-    .param p0    # Landroid/os/Parcel;
 
     const/4 v9, 0x1
 
@@ -2119,7 +2094,6 @@
 
 .method private static setBlockGuardPolicy(I)V
     .locals 3
-    .param p0    # I
 
     if-nez p0, :cond_0
 
@@ -2164,7 +2138,6 @@
 
 .method private static setCloseGuardEnabled(Z)V
     .locals 2
-    .param p0    # Z
 
     invoke-static {}, Ldalvik/system/CloseGuard;->getReporter()Ldalvik/system/CloseGuard$Reporter;
 
@@ -2190,7 +2163,6 @@
 
 .method public static setThreadPolicy(Landroid/os/StrictMode$ThreadPolicy;)V
     .locals 1
-    .param p0    # Landroid/os/StrictMode$ThreadPolicy;
 
     iget v0, p0, Landroid/os/StrictMode$ThreadPolicy;->mask:I
 
@@ -2201,7 +2173,6 @@
 
 .method private static setThreadPolicyMask(I)V
     .locals 0
-    .param p0    # I
 
     invoke-static {p0}, Landroid/os/StrictMode;->setBlockGuardPolicy(I)V
 
@@ -2212,7 +2183,6 @@
 
 .method public static setVmPolicy(Landroid/os/StrictMode$VmPolicy;)V
     .locals 4
-    .param p0    # Landroid/os/StrictMode$VmPolicy;
 
     const-class v3, Landroid/os/StrictMode;
 
@@ -2325,7 +2295,6 @@
 
 .method public static trackActivity(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Ljava/lang/Object;
 
     new-instance v0, Landroid/os/StrictMode$InstanceTracker;
 
@@ -2416,7 +2385,6 @@
 
 .method static writeGatheredViolationsToParcel(Landroid/os/Parcel;)V
     .locals 5
-    .param p0    # Landroid/os/Parcel;
 
     const/4 v3, 0x0
 

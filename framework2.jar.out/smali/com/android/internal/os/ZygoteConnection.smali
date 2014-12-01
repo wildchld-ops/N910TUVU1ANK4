@@ -90,7 +90,6 @@
 
 .method constructor <init>(Landroid/net/LocalSocket;)V
     .locals 4
-    .param p1    # Landroid/net/LocalSocket;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -172,9 +171,6 @@
 
 .method private static applyCapabilitiesSecurityPolicy(Lcom/android/internal/os/ZygoteConnection$Arguments;Landroid/net/Credentials;Ljava/lang/String;)V
     .locals 12
-    .param p0    # Lcom/android/internal/os/ZygoteConnection$Arguments;
-    .param p1    # Landroid/net/Credentials;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/android/internal/os/ZygoteSecurityException;
@@ -290,7 +286,6 @@
 
 .method public static applyDebuggerSystemProperty(Lcom/android/internal/os/ZygoteConnection$Arguments;)V
     .locals 2
-    .param p0    # Lcom/android/internal/os/ZygoteConnection$Arguments;
 
     const-string v0, "1"
 
@@ -318,9 +313,6 @@
 
 .method private static applyInvokeWithSecurityPolicy(Lcom/android/internal/os/ZygoteConnection$Arguments;Landroid/net/Credentials;Ljava/lang/String;)V
     .locals 4
-    .param p0    # Lcom/android/internal/os/ZygoteConnection$Arguments;
-    .param p1    # Landroid/net/Credentials;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/android/internal/os/ZygoteSecurityException;
@@ -374,7 +366,6 @@
 
 .method public static applyInvokeWithSystemProperty(Lcom/android/internal/os/ZygoteConnection$Arguments;)V
     .locals 4
-    .param p0    # Lcom/android/internal/os/ZygoteConnection$Arguments;
 
     const/16 v3, 0x1f
 
@@ -451,9 +442,6 @@
 
 .method private static applyRlimitSecurityPolicy(Lcom/android/internal/os/ZygoteConnection$Arguments;Landroid/net/Credentials;Ljava/lang/String;)V
     .locals 4
-    .param p0    # Lcom/android/internal/os/ZygoteConnection$Arguments;
-    .param p1    # Landroid/net/Credentials;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/android/internal/os/ZygoteSecurityException;
@@ -511,9 +499,6 @@
 
 .method private static applyUidSecurityPolicy(Lcom/android/internal/os/ZygoteConnection$Arguments;Landroid/net/Credentials;Ljava/lang/String;)V
     .locals 7
-    .param p0    # Lcom/android/internal/os/ZygoteConnection$Arguments;
-    .param p1    # Landroid/net/Credentials;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/android/internal/os/ZygoteSecurityException;
@@ -667,9 +652,6 @@
 
 .method private static applyseInfoSecurityPolicy(Lcom/android/internal/os/ZygoteConnection$Arguments;Landroid/net/Credentials;Ljava/lang/String;)V
     .locals 4
-    .param p0    # Lcom/android/internal/os/ZygoteConnection$Arguments;
-    .param p1    # Landroid/net/Credentials;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/android/internal/os/ZygoteSecurityException;
@@ -724,10 +706,6 @@
 
 .method private handleChildProc(Lcom/android/internal/os/ZygoteConnection$Arguments;[Ljava/io/FileDescriptor;Ljava/io/FileDescriptor;Ljava/io/PrintStream;)V
     .locals 13
-    .param p1    # Lcom/android/internal/os/ZygoteConnection$Arguments;
-    .param p2    # [Ljava/io/FileDescriptor;
-    .param p3    # Ljava/io/FileDescriptor;
-    .param p4    # Ljava/io/PrintStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/android/internal/os/ZygoteInit$MethodAndArgsCaller;
@@ -928,10 +906,6 @@
 
 .method private handleParentProc(I[Ljava/io/FileDescriptor;Ljava/io/FileDescriptor;Lcom/android/internal/os/ZygoteConnection$Arguments;)Z
     .locals 12
-    .param p1    # I
-    .param p2    # [Ljava/io/FileDescriptor;
-    .param p3    # Ljava/io/FileDescriptor;
-    .param p4    # Lcom/android/internal/os/ZygoteConnection$Arguments;
 
     if-lez p1, :cond_0
 
@@ -1144,9 +1118,6 @@
 
 .method private static logAndPrintError(Ljava/io/PrintStream;Ljava/lang/String;Ljava/lang/Throwable;)V
     .locals 1
-    .param p0    # Ljava/io/PrintStream;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Throwable;
 
     const-string v0, "Zygote"
 
@@ -1275,7 +1246,6 @@
 
 .method private setChildPgid(I)V
     .locals 3
-    .param p1    # I
 
     :try_start_0
     iget-object v1, p0, Lcom/android/internal/os/ZygoteConnection;->peer:Landroid/net/Credentials;

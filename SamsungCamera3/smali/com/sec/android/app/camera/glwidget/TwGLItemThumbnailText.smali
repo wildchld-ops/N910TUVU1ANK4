@@ -34,17 +34,6 @@
 # direct methods
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;FFFFFFFFILcom/sec/android/app/camera/resourcedata/MenuResourceBundle;)V
     .locals 7
-    .param p1    # Lcom/sec/android/app/camera/Camera;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # F
-    .param p7    # F
-    .param p8    # F
-    .param p9    # F
-    .param p10    # I
-    .param p11    # Lcom/sec/android/app/camera/resourcedata/MenuResourceBundle;
 
     invoke-virtual {p1}, Lcom/sec/android/app/camera/Camera;->getGLContext()Lcom/sec/android/glview/TwGLContext;
 
@@ -121,12 +110,6 @@
 
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;FFFFI)V
     .locals 7
-    .param p1    # Lcom/sec/android/app/camera/Camera;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # I
 
     const/4 v6, 0x0
 
@@ -191,10 +174,6 @@
 
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;FFI)V
     .locals 2
-    .param p1    # Lcom/sec/android/app/camera/Camera;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # I
 
     const/4 v1, 0x0
 
@@ -592,8 +571,6 @@
 
 .method public setAlign(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLItemThumbnailText;->mText:Lcom/sec/android/glview/TwGLText;
 
@@ -609,11 +586,6 @@
 
 .method public setShadowLayer(ZFFFI)V
     .locals 6
-    .param p1    # Z
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLItemThumbnailText;->mText:Lcom/sec/android/glview/TwGLText;
 
@@ -634,7 +606,6 @@
 
 .method public setTextColor(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLItemThumbnailText;->mText:Lcom/sec/android/glview/TwGLText;
 
@@ -645,7 +616,6 @@
 
 .method public setTextShadow(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLItemThumbnailText;->mText:Lcom/sec/android/glview/TwGLText;
 

@@ -19,9 +19,6 @@
 # virtual methods
 .method protected onApplyThemeResource(Landroid/content/res/Resources$Theme;IZ)V
     .locals 5
-    .param p1    # Landroid/content/res/Resources$Theme;
-    .param p2    # I
-    .param p3    # Z
 
     invoke-virtual {p0}, Lcom/android/settings/wifi/WifiPickerActivity;->getIntent()Landroid/content/Intent;
 

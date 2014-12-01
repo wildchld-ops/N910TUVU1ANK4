@@ -160,11 +160,6 @@
 # direct methods
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;FFFF)V
     .locals 6
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
 
     const/high16 v5, 0x42c80000
 
@@ -321,8 +316,6 @@
 
 .method static synthetic access$002(Lcom/sec/android/glview/TwGLList;Z)Z
     .locals 0
-    .param p0    # Lcom/sec/android/glview/TwGLList;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/glview/TwGLList;->mScrollBarVisible:Z
 
@@ -1257,7 +1250,6 @@
 # virtual methods
 .method public addView(Lcom/sec/android/glview/TwGLView;)V
     .locals 5
-    .param p1    # Lcom/sec/android/glview/TwGLView;
 
     const/4 v4, 0x0
 
@@ -1707,8 +1699,6 @@
 
 .method public contains(FF)Z
     .locals 3
-    .param p1    # F
-    .param p2    # F
 
     invoke-virtual {p0}, Lcom/sec/android/glview/TwGLView;->getClipRect()Landroid/graphics/Rect;
 
@@ -1739,7 +1729,6 @@
 
 .method public get(I)Lcom/sec/android/glview/TwGLView;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/glview/TwGLViewGroup;->mGLViews:Ljava/util/concurrent/CopyOnWriteArrayList;
 
@@ -2030,11 +2019,6 @@
 
 .method public onDrag(Lcom/sec/android/glview/TwGLView;FFFF)V
     .locals 0
-    .param p1    # Lcom/sec/android/glview/TwGLView;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
 
     invoke-virtual {p0, p4, p5}, Lcom/sec/android/glview/TwGLView;->translate(FF)V
 
@@ -2043,18 +2027,12 @@
 
 .method public onDragEnd(Lcom/sec/android/glview/TwGLView;FF)V
     .locals 0
-    .param p1    # Lcom/sec/android/glview/TwGLView;
-    .param p2    # F
-    .param p3    # F
 
     return-void
 .end method
 
 .method public onDragStart(Lcom/sec/android/glview/TwGLView;FF)V
     .locals 0
-    .param p1    # Lcom/sec/android/glview/TwGLView;
-    .param p2    # F
-    .param p3    # F
 
     return-void
 .end method
@@ -4520,8 +4498,6 @@
 
 .method public onFocusChanged(Lcom/sec/android/glview/TwGLView;I)Z
     .locals 1
-    .param p1    # Lcom/sec/android/glview/TwGLView;
-    .param p2    # I
 
     const/4 v0, 0x1
 
@@ -4539,8 +4515,6 @@
 
 .method public onKeyDown(Lcom/sec/android/glview/TwGLView;Landroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # Lcom/sec/android/glview/TwGLView;
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x0
 
@@ -4549,8 +4523,6 @@
 
 .method public onKeyUp(Lcom/sec/android/glview/TwGLView;Landroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # Lcom/sec/android/glview/TwGLView;
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x0
 
@@ -4634,8 +4606,6 @@
 
 .method public onTouch(Lcom/sec/android/glview/TwGLView;Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Lcom/sec/android/glview/TwGLView;
-    .param p2    # Landroid/view/MotionEvent;
 
     invoke-virtual {p0, p2}, Lcom/sec/android/glview/TwGLView;->touchEvent(Landroid/view/MotionEvent;)Z
 
@@ -4646,7 +4616,6 @@
 
 .method public declared-synchronized onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 12
-    .param p1    # Landroid/view/MotionEvent;
 
     monitor-enter p0
 
@@ -6064,7 +6033,6 @@
 
 .method public removeView(Lcom/sec/android/glview/TwGLView;)V
     .locals 2
-    .param p1    # Lcom/sec/android/glview/TwGLView;
 
     iget-object v0, p0, Lcom/sec/android/glview/TwGLViewGroup;->mGLViews:Ljava/util/concurrent/CopyOnWriteArrayList;
 
@@ -6128,7 +6096,6 @@
 
 .method public scrollToVisible(Lcom/sec/android/glview/TwGLView;)V
     .locals 1
-    .param p1    # Lcom/sec/android/glview/TwGLView;
 
     const/4 v0, 0x1
 
@@ -6582,7 +6549,6 @@
 
 .method public setAdapter(Lcom/sec/android/glview/TwGLList$Adapter;)V
     .locals 1
-    .param p1    # Lcom/sec/android/glview/TwGLList$Adapter;
 
     const/4 v0, 0x0
 
@@ -6593,8 +6559,6 @@
 
 .method public setAdapter(Lcom/sec/android/glview/TwGLList$Adapter;I)V
     .locals 13
-    .param p1    # Lcom/sec/android/glview/TwGLList$Adapter;
-    .param p2    # I
 
     if-nez p1, :cond_0
 
@@ -7142,7 +7106,6 @@
 
 .method public declared-synchronized setHeight(F)V
     .locals 3
-    .param p1    # F
 
     const/4 v2, 0x1
 
@@ -7224,7 +7187,6 @@
 
 .method public setOnScrollListener(Lcom/sec/android/glview/TwGLList$OnScrollListener;)V
     .locals 0
-    .param p1    # Lcom/sec/android/glview/TwGLList$OnScrollListener;
 
     iput-object p1, p0, Lcom/sec/android/glview/TwGLList;->mOnScrollListener:Lcom/sec/android/glview/TwGLList$OnScrollListener;
 
@@ -7233,7 +7195,6 @@
 
 .method public setPaddings(Landroid/graphics/Rect;)V
     .locals 10
-    .param p1    # Landroid/graphics/Rect;
 
     const/4 v9, 0x0
 
@@ -7533,7 +7494,6 @@
 
 .method public setScroll(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/glview/TwGLList;->mScroll:I
 
@@ -7542,7 +7502,6 @@
 
 .method public setScrollBarAutoHide(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/glview/TwGLList;->mScrollBarAutoHide:Z
 
@@ -7551,7 +7510,6 @@
 
 .method public setScrollBarPadding(F)V
     .locals 0
-    .param p1    # F
 
     iput p1, p0, Lcom/sec/android/glview/TwGLList;->mScrollBarPadding:F
 
@@ -7560,7 +7518,6 @@
 
 .method public setScrollBarResource(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -7589,7 +7546,6 @@
 
 .method public setScrollThreshold(F)V
     .locals 3
-    .param p1    # F
 
     const-string v0, "TwGLList"
 
@@ -7620,7 +7576,6 @@
 
 .method public setScrolling(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-boolean v0, p0, Lcom/sec/android/glview/TwGLList;->mScrolling:Z
 
@@ -7657,8 +7612,6 @@
 
 .method public setSize(FF)V
     .locals 6
-    .param p1    # F
-    .param p2    # F
 
     const/4 v5, 0x1
 
@@ -7754,7 +7707,6 @@
 
 .method public declared-synchronized setWidth(F)V
     .locals 3
-    .param p1    # F
 
     const/4 v2, 0x1
 
@@ -7899,8 +7851,6 @@
 
 .method public translateList(FF)Z
     .locals 9
-    .param p1    # F
-    .param p2    # F
 
     const/4 v4, 0x1
 

@@ -34,7 +34,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Landroid/os/UEventObserver;-><init>()V
 
@@ -95,7 +94,6 @@
 # virtual methods
 .method public onUEvent(Landroid/os/UEventObserver$UEvent;)V
     .locals 3
-    .param p1    # Landroid/os/UEventObserver$UEvent;
 
     sget-object v0, Lcom/android/server/DenialObserver;->TAG:Ljava/lang/String;
 

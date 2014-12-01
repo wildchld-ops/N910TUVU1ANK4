@@ -24,8 +24,6 @@
 
 .method public static addressTypeMatches(Ljava/net/InetAddress;Ljava/net/InetAddress;)Z
     .locals 1
-    .param p0    # Ljava/net/InetAddress;
-    .param p1    # Ljava/net/InetAddress;
 
     instance-of v0, p0, Ljava/net/Inet4Address;
 
@@ -58,8 +56,6 @@
 
 .method public static configureInterface(Ljava/lang/String;Landroid/net/DhcpInfo;)Z
     .locals 6
-    .param p0    # Ljava/lang/String;
-    .param p1    # Landroid/net/DhcpInfo;
 
     iget v1, p1, Landroid/net/DhcpInfo;->ipAddress:I
 
@@ -94,8 +90,6 @@
 
 .method public static getNetworkPart(Ljava/net/InetAddress;I)Ljava/net/InetAddress;
     .locals 9
-    .param p0    # Ljava/net/InetAddress;
-    .param p1    # I
 
     if-nez p0, :cond_0
 
@@ -216,7 +210,6 @@
 
 .method public static hexToInet6Address(Ljava/lang/String;)Ljava/net/InetAddress;
     .locals 7
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;
@@ -384,7 +377,6 @@
 
 .method public static inetAddressToInt(Ljava/net/Inet4Address;)I
     .locals 3
-    .param p0    # Ljava/net/Inet4Address;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;
@@ -436,7 +428,6 @@
 
 .method public static intToInetAddress(I)Ljava/net/InetAddress;
     .locals 4
-    .param p0    # I
 
     const/4 v2, 0x4
 
@@ -558,7 +549,6 @@
 
 .method public static netmaskIntToPrefixLength(I)I
     .locals 1
-    .param p0    # I
 
     invoke-static {p0}, Ljava/lang/Integer;->bitCount(I)I
 
@@ -569,7 +559,6 @@
 
 .method public static numericToInetAddress(Ljava/lang/String;)Ljava/net/InetAddress;
     .locals 1
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;
@@ -585,7 +574,6 @@
 
 .method public static prefixLengthToNetmaskInt(I)I
     .locals 3
-    .param p0    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;
@@ -647,7 +635,6 @@
 
 .method public static trimV4AddrZeros(Ljava/lang/String;)Ljava/lang/String;
     .locals 8
-    .param p0    # Ljava/lang/String;
 
     const/4 v7, 0x4
 

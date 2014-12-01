@@ -17,7 +17,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IRemoteCallback;)V
     .locals 0
-    .param p1    # Landroid/os/IRemoteCallback;
 
     invoke-direct {p0, p1}, Landroid/os/RemoteCallback;-><init>(Landroid/os/IRemoteCallback;)V
 
@@ -28,7 +27,6 @@
 # virtual methods
 .method protected onResult(Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     return-void
 .end method

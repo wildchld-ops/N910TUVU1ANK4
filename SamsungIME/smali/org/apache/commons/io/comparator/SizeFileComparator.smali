@@ -72,7 +72,6 @@
 
 .method public constructor <init>(Z)V
     .locals 0
-    .param p1    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -85,8 +84,6 @@
 # virtual methods
 .method public compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 11
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Object;
 
     const-wide/16 v8, 0x0
 

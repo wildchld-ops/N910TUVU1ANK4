@@ -42,8 +42,6 @@
 
 .method synthetic constructor <init>(Landroid/widget/ActivityChooserModel;Landroid/widget/ActivityChooserModel$1;)V
     .locals 0
-    .param p1    # Landroid/widget/ActivityChooserModel;
-    .param p2    # Landroid/widget/ActivityChooserModel$1;
 
     invoke-direct {p0, p1}, Landroid/widget/ActivityChooserModel$PersistHistoryAsyncTask;-><init>(Landroid/widget/ActivityChooserModel;)V
 
@@ -54,7 +52,6 @@
 # virtual methods
 .method public bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # [Ljava/lang/Object;
 
     invoke-virtual {p0, p1}, Landroid/widget/ActivityChooserModel$PersistHistoryAsyncTask;->doInBackground([Ljava/lang/Object;)Ljava/lang/Void;
 
@@ -65,7 +62,6 @@
 
 .method public varargs doInBackground([Ljava/lang/Object;)Ljava/lang/Void;
     .locals 15
-    .param p1    # [Ljava/lang/Object;
 
     const/4 v11, 0x0
 

@@ -29,8 +29,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/mms/dom/smil/SmilDocumentImpl;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Lcom/android/mms/dom/smil/SmilDocumentImpl;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Lcom/android/mms/dom/smil/SmilElementImpl;-><init>(Lcom/android/mms/dom/smil/SmilDocumentImpl;Ljava/lang/String;)V
 
@@ -367,7 +365,6 @@
 
 .method public seekElement(F)V
     .locals 1
-    .param p1    # F
 
     iget-object v0, p0, Lcom/android/mms/dom/smil/SmilMediaElementImpl;->mElementTime:Lorg/w3c/dom/smil/ElementTime;
 
@@ -378,7 +375,6 @@
 
 .method public setAbstractAttr(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;
@@ -394,7 +390,6 @@
 
 .method public setAlt(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;
@@ -410,7 +405,6 @@
 
 .method public setAuthor(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;
@@ -426,7 +420,6 @@
 
 .method public setBegin(Lorg/w3c/dom/smil/TimeList;)V
     .locals 1
-    .param p1    # Lorg/w3c/dom/smil/TimeList;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;
@@ -442,7 +435,6 @@
 
 .method public setClipBegin(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;
@@ -458,7 +450,6 @@
 
 .method public setClipEnd(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;
@@ -474,7 +465,6 @@
 
 .method public setCopyright(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;
@@ -490,7 +480,6 @@
 
 .method public setDur(F)V
     .locals 1
-    .param p1    # F
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;
@@ -506,7 +495,6 @@
 
 .method public setEnd(Lorg/w3c/dom/smil/TimeList;)V
     .locals 1
-    .param p1    # Lorg/w3c/dom/smil/TimeList;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;
@@ -522,7 +510,6 @@
 
 .method public setFill(S)V
     .locals 1
-    .param p1    # S
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;
@@ -538,7 +525,6 @@
 
 .method public setFillDefault(S)V
     .locals 1
-    .param p1    # S
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;
@@ -554,7 +540,6 @@
 
 .method public setLongdesc(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;
@@ -570,7 +555,6 @@
 
 .method public setPort(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;
@@ -586,7 +570,6 @@
 
 .method public setReadIndex(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;
@@ -602,7 +585,6 @@
 
 .method public setRepeatCount(F)V
     .locals 1
-    .param p1    # F
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;
@@ -618,7 +600,6 @@
 
 .method public setRepeatDur(F)V
     .locals 1
-    .param p1    # F
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;
@@ -634,7 +615,6 @@
 
 .method public setRestart(S)V
     .locals 1
-    .param p1    # S
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;
@@ -650,7 +630,6 @@
 
 .method public setRtpformat(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;
@@ -666,7 +645,6 @@
 
 .method public setSrc(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;
@@ -682,7 +660,6 @@
 
 .method public setStripRepeat(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;
@@ -698,7 +675,6 @@
 
 .method public setTitle(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;
@@ -714,7 +690,6 @@
 
 .method public setTransport(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;
@@ -730,7 +705,6 @@
 
 .method public setType(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;

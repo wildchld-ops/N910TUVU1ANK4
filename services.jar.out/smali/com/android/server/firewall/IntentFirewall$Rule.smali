@@ -81,7 +81,6 @@
 
 .method synthetic constructor <init>(Lcom/android/server/firewall/IntentFirewall$1;)V
     .locals 0
-    .param p1    # Lcom/android/server/firewall/IntentFirewall$1;
 
     invoke-direct {p0}, Lcom/android/server/firewall/IntentFirewall$Rule;-><init>()V
 
@@ -100,7 +99,6 @@
 
 .method public getComponentFilter(I)Landroid/content/ComponentName;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/firewall/IntentFirewall$Rule;->mComponentFilters:Ljava/util/ArrayList;
 
@@ -127,7 +125,6 @@
 
 .method public getIntentFilter(I)Lcom/android/server/firewall/IntentFirewall$FirewallIntentFilter;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/firewall/IntentFirewall$Rule;->mIntentFilters:Ljava/util/ArrayList;
 
@@ -162,7 +159,6 @@
 
 .method protected readChild(Lorg/xmlpull/v1/XmlPullParser;)V
     .locals 7
-    .param p1    # Lorg/xmlpull/v1/XmlPullParser;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -268,7 +264,6 @@
 
 .method public bridge synthetic readFromXml(Lorg/xmlpull/v1/XmlPullParser;)Lcom/android/server/firewall/FilterList;
     .locals 1
-    .param p1    # Lorg/xmlpull/v1/XmlPullParser;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -285,7 +280,6 @@
 
 .method public readFromXml(Lorg/xmlpull/v1/XmlPullParser;)Lcom/android/server/firewall/IntentFirewall$Rule;
     .locals 2
-    .param p1    # Lorg/xmlpull/v1/XmlPullParser;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,

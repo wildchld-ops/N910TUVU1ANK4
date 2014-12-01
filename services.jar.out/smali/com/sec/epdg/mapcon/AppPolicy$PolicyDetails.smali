@@ -25,9 +25,6 @@
 # direct methods
 .method protected constructor <init>(Lcom/sec/epdg/mapcon/MapconConstants$MapconRat;Ljava/lang/String;Landroid/app/PendingIntent;)V
     .locals 0
-    .param p1    # Lcom/sec/epdg/mapcon/MapconConstants$MapconRat;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/app/PendingIntent;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

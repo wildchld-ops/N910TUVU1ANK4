@@ -177,7 +177,7 @@
     :try_start_0
     iget-object v1, p0, Lcom/android/phone/ResetSettingListener;->autoreject:Lcom/android/phone/callsettings/AutoRejectDB;
 
-    invoke-virtual {v1}, Landroid/database/sqlite/SQLiteOpenHelper;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
+    invoke-virtual {v1}, Lcom/android/phone/callsettings/AutoRejectDB;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
     move-result-object v1
 
@@ -185,7 +185,7 @@
 
     iget-object v1, p0, Lcom/android/phone/ResetSettingListener;->autorejectoutgoingcall:Lcom/android/phone/callsettings/AutoRejectOutgoingCallDB;
 
-    invoke-virtual {v1}, Landroid/database/sqlite/SQLiteOpenHelper;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
+    invoke-virtual {v1}, Lcom/android/phone/callsettings/AutoRejectOutgoingCallDB;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
     move-result-object v1
 
@@ -220,19 +220,19 @@
 
     iget-object v1, p0, Lcom/android/phone/ResetSettingListener;->autoreject_db:Landroid/database/sqlite/SQLiteDatabase;
 
-    invoke-virtual {v1}, Landroid/database/sqlite/SQLiteClosable;->close()V
+    invoke-virtual {v1}, Landroid/database/sqlite/SQLiteDatabase;->close()V
 
     iget-object v1, p0, Lcom/android/phone/ResetSettingListener;->autorejectoutgoingcall_db:Landroid/database/sqlite/SQLiteDatabase;
 
-    invoke-virtual {v1}, Landroid/database/sqlite/SQLiteClosable;->close()V
+    invoke-virtual {v1}, Landroid/database/sqlite/SQLiteDatabase;->close()V
 
     iget-object v1, p0, Lcom/android/phone/ResetSettingListener;->autoreject:Lcom/android/phone/callsettings/AutoRejectDB;
 
-    invoke-virtual {v1}, Landroid/database/sqlite/SQLiteOpenHelper;->close()V
+    invoke-virtual {v1}, Lcom/android/phone/callsettings/AutoRejectDB;->close()V
 
     iget-object v1, p0, Lcom/android/phone/ResetSettingListener;->autorejectoutgoingcall:Lcom/android/phone/callsettings/AutoRejectOutgoingCallDB;
 
-    invoke-virtual {v1}, Landroid/database/sqlite/SQLiteOpenHelper;->close()V
+    invoke-virtual {v1}, Lcom/android/phone/callsettings/AutoRejectOutgoingCallDB;->close()V
 
     const-string v1, "ResetSettingListener"
 
@@ -247,7 +247,7 @@
 
     const-string v1, "ResetSettingListener"
 
-    invoke-virtual {v0}, Ljava/lang/Throwable;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Landroid/database/sqlite/SQLiteException;->toString()Ljava/lang/String;
 
     move-result-object v2
 
@@ -278,7 +278,7 @@
     :try_start_0
     iget-object v3, p0, Lcom/android/phone/ResetSettingListener;->rejectmsg:Lcom/android/phone/callsettings/RejectCallWithMsgDB;
 
-    invoke-virtual {v3}, Landroid/database/sqlite/SQLiteOpenHelper;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
+    invoke-virtual {v3}, Lcom/android/phone/callsettings/RejectCallWithMsgDB;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
     move-result-object v3
 
@@ -362,7 +362,7 @@
 
     const-string v3, "ResetSettingListener"
 
-    invoke-virtual {v1}, Ljava/lang/Throwable;->toString()Ljava/lang/String;
+    invoke-virtual {v1}, Landroid/database/sqlite/SQLiteException;->toString()Ljava/lang/String;
 
     move-result-object v4
 
@@ -378,11 +378,11 @@
     :cond_1
     iget-object v3, p0, Lcom/android/phone/ResetSettingListener;->rejectmsg_db:Landroid/database/sqlite/SQLiteDatabase;
 
-    invoke-virtual {v3}, Landroid/database/sqlite/SQLiteClosable;->close()V
+    invoke-virtual {v3}, Landroid/database/sqlite/SQLiteDatabase;->close()V
 
     iget-object v3, p0, Lcom/android/phone/ResetSettingListener;->rejectmsg:Lcom/android/phone/callsettings/RejectCallWithMsgDB;
 
-    invoke-virtual {v3}, Landroid/database/sqlite/SQLiteOpenHelper;->close()V
+    invoke-virtual {v3}, Lcom/android/phone/callsettings/RejectCallWithMsgDB;->close()V
 
     const-string v3, "ResetSettingListener"
 

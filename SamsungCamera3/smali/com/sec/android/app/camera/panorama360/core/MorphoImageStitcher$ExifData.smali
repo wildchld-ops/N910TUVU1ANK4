@@ -79,7 +79,6 @@
 
 .method public static latitudeValueToNorS(D)Ljava/lang/String;
     .locals 3
-    .param p0    # D
 
     const-wide/16 v1, 0x0
 
@@ -100,7 +99,6 @@
 
 .method public static locationValueToRational(D)[Lcom/sec/android/app/camera/panorama360/core/MorphoImageStitcher$Rational;
     .locals 9
-    .param p0    # D
 
     const/4 v8, 0x0
 
@@ -163,7 +161,6 @@
 
 .method public static longitudeValueToEorW(D)Ljava/lang/String;
     .locals 3
-    .param p0    # D
 
     const-wide/16 v1, 0x0
 

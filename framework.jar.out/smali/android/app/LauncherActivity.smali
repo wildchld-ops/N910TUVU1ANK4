@@ -90,7 +90,6 @@
 
 .method protected intentForPosition(I)Landroid/content/Intent;
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Landroid/app/LauncherActivity;->mAdapter:Landroid/widget/ListAdapter;
 
@@ -105,7 +104,6 @@
 
 .method protected itemForPosition(I)Landroid/app/LauncherActivity$ListItem;
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Landroid/app/LauncherActivity;->mAdapter:Landroid/widget/ListAdapter;
 
@@ -181,7 +179,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v2, 0x1
 
@@ -262,10 +259,6 @@
 
 .method protected onListItemClick(Landroid/widget/ListView;Landroid/view/View;IJ)V
     .locals 1
-    .param p1    # Landroid/widget/ListView;
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
 
     invoke-virtual {p0, p3}, Landroid/app/LauncherActivity;->intentForPosition(I)Landroid/content/Intent;
 
@@ -278,7 +271,6 @@
 
 .method protected onQueryPackageManager(Landroid/content/Intent;)Ljava/util/List;
     .locals 2
-    .param p1    # Landroid/content/Intent;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -337,7 +329,6 @@
 
 .method public setTitle(I)V
     .locals 0
-    .param p1    # I
 
     invoke-super {p0, p1}, Landroid/app/ListActivity;->setTitle(I)V
 
@@ -348,7 +339,6 @@
 
 .method public setTitle(Ljava/lang/CharSequence;)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
 
     invoke-super {p0, p1}, Landroid/app/ListActivity;->setTitle(Ljava/lang/CharSequence;)V
 

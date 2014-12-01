@@ -30,7 +30,6 @@
 
 .method public static addParticipants(Ljava/lang/String;Ljava/util/ArrayList;)Landroid/content/Intent;
     .locals 3
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -68,8 +67,6 @@
 
 .method public static answerChatInvitation(Ljava/lang/String;Z)Landroid/content/Intent;
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Z
 
     const-string v1, "Mms/ActionsFactory"
 
@@ -96,7 +93,6 @@
 
 .method public static blockBuddy(J)Landroid/content/Intent;
     .locals 2
-    .param p0    # J
 
     const-string v1, "com.samsung.rcs.framework.instantmessaging.action.BLOCK_BUDDY"
 
@@ -109,7 +105,6 @@
 
 .method public static closeChat(Ljava/lang/String;)Landroid/content/Intent;
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     const-string v1, "Mms/ActionsFactory"
 
@@ -132,7 +127,6 @@
 
 .method public static createChat(Ljava/util/ArrayList;J)Landroid/content/Intent;
     .locals 3
-    .param p1    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -179,8 +173,6 @@
 
 .method public static createChat(Ljava/util/ArrayList;Ljava/lang/String;J)Landroid/content/Intent;
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -227,9 +219,6 @@
 
 .method public static createChat(Ljava/util/ArrayList;Ljava/lang/String;JI)Landroid/content/Intent;
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
-    .param p4    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -297,7 +286,6 @@
 
 .method public static deleteAllMessages(Ljava/lang/String;)Landroid/content/Intent;
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     const-string v1, "Mms/ActionsFactory"
 
@@ -384,7 +372,6 @@
 
 .method public static deleteMessages(Ljava/util/ArrayList;Z)Landroid/content/Intent;
     .locals 3
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -432,7 +419,6 @@
 
 .method private static newImAction(Ljava/lang/String;)Landroid/content/Intent;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -447,7 +433,6 @@
 
 .method public static readMessage(Ljava/lang/String;Ljava/util/ArrayList;)Landroid/content/Intent;
     .locals 2
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -479,7 +464,6 @@
 
 .method public static sendChatResponse(Ljava/lang/String;Ljava/util/ArrayList;)Landroid/content/Intent;
     .locals 2
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -511,7 +495,6 @@
 
 .method public static sendDisplayNotification(Ljava/lang/String;Ljava/util/ArrayList;)Landroid/content/Intent;
     .locals 2
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -543,9 +526,6 @@
 
 .method public static sendMessage(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const-string v0, "text/plain"
 
@@ -560,10 +540,6 @@
 
 .method public static sendMessage(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)Landroid/content/Intent;
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     const-string v0, "text/plain"
 
@@ -576,11 +552,6 @@
 
 .method public static sendMessage(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IJ)Landroid/content/Intent;
     .locals 7
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # J
 
     const-string v3, "text/plain"
 
@@ -603,10 +574,6 @@
 
 .method public static sendMessage(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;J)Landroid/content/Intent;
     .locals 7
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # J
 
     const-string v3, "text/plain"
 
@@ -629,11 +596,6 @@
 
 .method public static sendMessage(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)Landroid/content/Intent;
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
 
     const-string v1, "com.samsung.rcs.framework.instantmessaging.action.SEND_MESSAGE"
 
@@ -666,12 +628,6 @@
 
 .method public static sendMessage(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IJ)Landroid/content/Intent;
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
-    .param p5    # J
 
     const-string v1, "Mms/ActionsFactory"
 
@@ -714,8 +670,6 @@
 
 .method public static sendSmsMessage(Landroid/net/Uri;Ljava/lang/String;)Landroid/content/Intent;
     .locals 5
-    .param p0    # Landroid/net/Uri;
-    .param p1    # Ljava/lang/String;
 
     new-instance v1, Landroid/content/Intent;
 
@@ -762,9 +716,6 @@
 
 .method public static sendTypingNotification(Ljava/lang/String;ZI)Landroid/content/Intent;
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Z
-    .param p2    # I
 
     const-string v1, "com.samsung.rcs.framework.instantmessaging.action.SEND_TYPING_NOTIFICATION"
 
@@ -789,8 +740,6 @@
 
 .method public static setChatAlias(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const-string v1, "com.samsung.rcs.framework.instantmessaging.action.SET_CHAT_SUBJECT"
 
@@ -811,8 +760,6 @@
 
 .method public static setChatSetting(Ljava/lang/String;Ljava/lang/Boolean;)Landroid/content/Intent;
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/Boolean;
 
     const-string v1, "Mms/ActionsFactory"
 
@@ -843,8 +790,6 @@
 
 .method public static setGroupChatNotiStatus(Ljava/lang/String;Z)Landroid/content/Intent;
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Z
 
     const-string v1, "com.samsung.rcs.framework.instantmessaging.action.MUTE_CHAT"
 
@@ -879,7 +824,6 @@
 
 .method public static viewChat(Ljava/lang/String;Ljava/util/ArrayList;)Landroid/content/Intent;
     .locals 5
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Lcom/android/systemui/statusbar/policy/LocationController;Lcom/android/systemui/statusbar/policy/LocationController$1;)V
     .locals 0
-    .param p1    # Lcom/android/systemui/statusbar/policy/LocationController;
-    .param p2    # Lcom/android/systemui/statusbar/policy/LocationController$1;
 
     invoke-direct {p0, p1}, Lcom/android/systemui/statusbar/policy/LocationController$StatusBarHandler;-><init>(Lcom/android/systemui/statusbar/policy/LocationController;)V
 
@@ -43,7 +41,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 2
-    .param p1    # Landroid/os/Message;
 
     iget v0, p1, Landroid/os/Message;->what:I
 

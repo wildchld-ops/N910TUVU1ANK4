@@ -69,9 +69,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/os/Handler;Lcom/android/server/display/IpRemoteDisplayController$Listener;)V
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/Handler;
-    .param p3    # Lcom/android/server/display/IpRemoteDisplayController$Listener;
 
     const/4 v6, 0x0
 
@@ -190,7 +187,6 @@
 
 .method static synthetic access$000(Lcom/android/server/display/IpRemoteDisplayController;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/server/display/IpRemoteDisplayController;
 
     iget-object v0, p0, Lcom/android/server/display/IpRemoteDisplayController;->mContext:Landroid/content/Context;
 
@@ -199,7 +195,6 @@
 
 .method static synthetic access$100(Lcom/android/server/display/IpRemoteDisplayController;)Z
     .locals 1
-    .param p0    # Lcom/android/server/display/IpRemoteDisplayController;
 
     iget-boolean v0, p0, Lcom/android/server/display/IpRemoteDisplayController;->mRemoteDisplayConnected:Z
 
@@ -208,8 +203,6 @@
 
 .method static synthetic access$1000(Lcom/android/server/display/IpRemoteDisplayController;I)V
     .locals 0
-    .param p0    # Lcom/android/server/display/IpRemoteDisplayController;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/display/IpRemoteDisplayController;->disableWifiDisplay(I)V
 
@@ -218,8 +211,6 @@
 
 .method static synthetic access$102(Lcom/android/server/display/IpRemoteDisplayController;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/display/IpRemoteDisplayController;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/display/IpRemoteDisplayController;->mRemoteDisplayConnected:Z
 
@@ -228,7 +219,6 @@
 
 .method static synthetic access$1100(Lcom/android/server/display/IpRemoteDisplayController;)Lcom/android/server/display/IpRemoteDisplayController$Listener;
     .locals 1
-    .param p0    # Lcom/android/server/display/IpRemoteDisplayController;
 
     iget-object v0, p0, Lcom/android/server/display/IpRemoteDisplayController;->mListener:Lcom/android/server/display/IpRemoteDisplayController$Listener;
 
@@ -237,9 +227,6 @@
 
 .method static synthetic access$1200(Lcom/android/server/display/IpRemoteDisplayController;II)V
     .locals 0
-    .param p0    # Lcom/android/server/display/IpRemoteDisplayController;
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/display/IpRemoteDisplayController;->sendDisplayEventToExtendedListener(II)V
 
@@ -248,7 +235,6 @@
 
 .method static synthetic access$1300(Lcom/android/server/display/IpRemoteDisplayController;)Ljava/lang/Runnable;
     .locals 1
-    .param p0    # Lcom/android/server/display/IpRemoteDisplayController;
 
     iget-object v0, p0, Lcom/android/server/display/IpRemoteDisplayController;->mRtspTimeout:Ljava/lang/Runnable;
 
@@ -257,7 +243,6 @@
 
 .method static synthetic access$1400(Lcom/android/server/display/IpRemoteDisplayController;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/server/display/IpRemoteDisplayController;
 
     iget-object v0, p0, Lcom/android/server/display/IpRemoteDisplayController;->mHandler:Landroid/os/Handler;
 
@@ -266,7 +251,6 @@
 
 .method static synthetic access$1500(Lcom/android/server/display/IpRemoteDisplayController;)Landroid/media/WFDUibcManager;
     .locals 1
-    .param p0    # Lcom/android/server/display/IpRemoteDisplayController;
 
     iget-object v0, p0, Lcom/android/server/display/IpRemoteDisplayController;->mWfdUibcManager:Landroid/media/WFDUibcManager;
 
@@ -275,8 +259,6 @@
 
 .method static synthetic access$1600(Lcom/android/server/display/IpRemoteDisplayController;Landroid/net/wifi/p2p/WifiP2pDevice;)Landroid/hardware/display/WifiDisplay;
     .locals 1
-    .param p0    # Lcom/android/server/display/IpRemoteDisplayController;
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pDevice;
 
     invoke-direct {p0, p1}, Lcom/android/server/display/IpRemoteDisplayController;->createWifiDisplay(Landroid/net/wifi/p2p/WifiP2pDevice;)Landroid/hardware/display/WifiDisplay;
 
@@ -287,13 +269,6 @@
 
 .method static synthetic access$1700(Lcom/android/server/display/IpRemoteDisplayController;Landroid/hardware/display/WifiDisplay;Landroid/view/Surface;IIII)V
     .locals 0
-    .param p0    # Lcom/android/server/display/IpRemoteDisplayController;
-    .param p1    # Landroid/hardware/display/WifiDisplay;
-    .param p2    # Landroid/view/Surface;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     invoke-direct/range {p0 .. p6}, Lcom/android/server/display/IpRemoteDisplayController;->advertiseDisplay(Landroid/hardware/display/WifiDisplay;Landroid/view/Surface;IIII)V
 
@@ -302,8 +277,6 @@
 
 .method static synthetic access$1800(Lcom/android/server/display/IpRemoteDisplayController;Z)V
     .locals 0
-    .param p0    # Lcom/android/server/display/IpRemoteDisplayController;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/display/IpRemoteDisplayController;->handleConnectionFailure(Z)V
 
@@ -312,7 +285,6 @@
 
 .method static synthetic access$1900(Lcom/android/server/display/IpRemoteDisplayController;)Landroid/media/RemoteDisplay;
     .locals 1
-    .param p0    # Lcom/android/server/display/IpRemoteDisplayController;
 
     iget-object v0, p0, Lcom/android/server/display/IpRemoteDisplayController;->mRemoteDisplay:Landroid/media/RemoteDisplay;
 
@@ -321,8 +293,6 @@
 
 .method static synthetic access$200(Lcom/android/server/display/IpRemoteDisplayController;I)V
     .locals 0
-    .param p0    # Lcom/android/server/display/IpRemoteDisplayController;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/display/IpRemoteDisplayController;->requestPopup(I)V
 
@@ -331,9 +301,6 @@
 
 .method static synthetic access$2300(Lcom/android/server/display/IpRemoteDisplayController;ILjava/net/InetAddress;)V
     .locals 0
-    .param p0    # Lcom/android/server/display/IpRemoteDisplayController;
-    .param p1    # I
-    .param p2    # Ljava/net/InetAddress;
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/display/IpRemoteDisplayController;->launchWfdPlayerByWBS(ILjava/net/InetAddress;)V
 
@@ -342,9 +309,6 @@
 
 .method static synthetic access$2400(Lcom/android/server/display/IpRemoteDisplayController;ILjava/net/InetAddress;)V
     .locals 0
-    .param p0    # Lcom/android/server/display/IpRemoteDisplayController;
-    .param p1    # I
-    .param p2    # Ljava/net/InetAddress;
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/display/IpRemoteDisplayController;->enableWifiDisplay(ILjava/net/InetAddress;)V
 
@@ -353,7 +317,6 @@
 
 .method static synthetic access$300(Lcom/android/server/display/IpRemoteDisplayController;)Z
     .locals 1
-    .param p0    # Lcom/android/server/display/IpRemoteDisplayController;
 
     iget-boolean v0, p0, Lcom/android/server/display/IpRemoteDisplayController;->mWifiDisplayOnSetting:Z
 
@@ -362,8 +325,6 @@
 
 .method static synthetic access$302(Lcom/android/server/display/IpRemoteDisplayController;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/display/IpRemoteDisplayController;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/display/IpRemoteDisplayController;->mWifiDisplayOnSetting:Z
 
@@ -372,7 +333,6 @@
 
 .method static synthetic access$400(Lcom/android/server/display/IpRemoteDisplayController;)V
     .locals 0
-    .param p0    # Lcom/android/server/display/IpRemoteDisplayController;
 
     invoke-direct {p0}, Lcom/android/server/display/IpRemoteDisplayController;->reportFeatureState()V
 
@@ -381,7 +341,6 @@
 
 .method static synthetic access$500(Lcom/android/server/display/IpRemoteDisplayController;)Lcom/android/server/display/IpRemoteDisplayController$WfdBridgeAdapter;
     .locals 1
-    .param p0    # Lcom/android/server/display/IpRemoteDisplayController;
 
     iget-object v0, p0, Lcom/android/server/display/IpRemoteDisplayController;->mWfdBridgeServer:Lcom/android/server/display/IpRemoteDisplayController$WfdBridgeAdapter;
 
@@ -390,7 +349,6 @@
 
 .method static synthetic access$600(Lcom/android/server/display/IpRemoteDisplayController;)Z
     .locals 1
-    .param p0    # Lcom/android/server/display/IpRemoteDisplayController;
 
     iget-boolean v0, p0, Lcom/android/server/display/IpRemoteDisplayController;->mHDMIConnected:Z
 
@@ -399,8 +357,6 @@
 
 .method static synthetic access$602(Lcom/android/server/display/IpRemoteDisplayController;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/display/IpRemoteDisplayController;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/display/IpRemoteDisplayController;->mHDMIConnected:Z
 
@@ -409,7 +365,6 @@
 
 .method static synthetic access$700(Lcom/android/server/display/IpRemoteDisplayController;)V
     .locals 0
-    .param p0    # Lcom/android/server/display/IpRemoteDisplayController;
 
     invoke-direct {p0}, Lcom/android/server/display/IpRemoteDisplayController;->disconnect()V
 
@@ -418,7 +373,6 @@
 
 .method static synthetic access$800(Lcom/android/server/display/IpRemoteDisplayController;)Landroid/net/wifi/p2p/WifiP2pDevice;
     .locals 1
-    .param p0    # Lcom/android/server/display/IpRemoteDisplayController;
 
     iget-object v0, p0, Lcom/android/server/display/IpRemoteDisplayController;->mConnectedDevice:Landroid/net/wifi/p2p/WifiP2pDevice;
 
@@ -427,8 +381,6 @@
 
 .method static synthetic access$802(Lcom/android/server/display/IpRemoteDisplayController;Landroid/net/wifi/p2p/WifiP2pDevice;)Landroid/net/wifi/p2p/WifiP2pDevice;
     .locals 0
-    .param p0    # Lcom/android/server/display/IpRemoteDisplayController;
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pDevice;
 
     iput-object p1, p0, Lcom/android/server/display/IpRemoteDisplayController;->mConnectedDevice:Landroid/net/wifi/p2p/WifiP2pDevice;
 
@@ -437,11 +389,6 @@
 
 .method static synthetic access$900(Lcom/android/server/display/IpRemoteDisplayController;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/server/display/IpRemoteDisplayController;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/server/display/IpRemoteDisplayController;->enableWifiDisplay(Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)V
 
@@ -450,12 +397,6 @@
 
 .method private advertiseDisplay(Landroid/hardware/display/WifiDisplay;Landroid/view/Surface;IIII)V
     .locals 12
-    .param p1    # Landroid/hardware/display/WifiDisplay;
-    .param p2    # Landroid/view/Surface;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     const-string v1, "IpRemoteDisplayController"
 
@@ -725,7 +666,6 @@
 
 .method private createWifiDisplay(Landroid/net/wifi/p2p/WifiP2pDevice;)Landroid/hardware/display/WifiDisplay;
     .locals 8
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pDevice;
 
     const/4 v5, 0x0
 
@@ -750,7 +690,6 @@
 
 .method private disableWifiDisplay(I)V
     .locals 4
-    .param p1    # I
 
     const-string v1, "IpRemoteDisplayController"
 
@@ -959,8 +898,6 @@
 
 .method private enableWifiDisplay(ILjava/net/InetAddress;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/net/InetAddress;
 
     if-gez p1, :cond_0
 
@@ -1008,10 +945,6 @@
 
 .method private enableWifiDisplay(Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
 
     const/4 v5, 0x1
 
@@ -1225,7 +1158,6 @@
 
 .method private handleConnectionFailure(Z)V
     .locals 4
-    .param p1    # Z
 
     const-string v1, "IpRemoteDisplayController"
 
@@ -1277,8 +1209,6 @@
 
 .method private launchWfdPlayer(ILjava/net/InetAddress;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/net/InetAddress;
 
     const-string v0, "IpRemoteDisplayController"
 
@@ -1315,8 +1245,6 @@
 
 .method private launchWfdPlayerByWBS(ILjava/net/InetAddress;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Ljava/net/InetAddress;
 
     if-ltz p1, :cond_0
 
@@ -1383,8 +1311,6 @@
 
 .method private requestDataSetting(Lorg/json/JSONObject;I)V
     .locals 17
-    .param p1    # Lorg/json/JSONObject;
-    .param p2    # I
 
     const-string v1, "IpRemoteDisplayController"
 
@@ -1681,7 +1607,6 @@
 
 .method private requestPopup(I)V
     .locals 4
-    .param p1    # I
 
     :try_start_0
     new-instance v1, Landroid/content/Intent;
@@ -1721,8 +1646,6 @@
 
 .method private sendDisplayEventToExtendedListener(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     iget-object v1, p0, Lcom/android/server/display/IpRemoteDisplayController;->mHandler:Landroid/os/Handler;
 
@@ -1741,16 +1664,6 @@
 
 .method private setParamData(Lorg/json/JSONObject;IIIZZIZZI)V
     .locals 4
-    .param p1    # Lorg/json/JSONObject;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Z
-    .param p6    # Z
-    .param p7    # I
-    .param p8    # Z
-    .param p9    # Z
-    .param p10    # I
 
     const-string v1, "IpRemoteDisplayController"
 
@@ -1838,7 +1751,6 @@
 
 .method private tryCommunication(I)V
     .locals 3
-    .param p1    # I
 
     move v0, p1
 
@@ -1865,8 +1777,6 @@
 
 .method private tryCommunication(Landroid/net/wifi/p2p/WifiP2pDevice;I)V
     .locals 3
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pDevice;
-    .param p2    # I
 
     move v0, p2
 
@@ -1935,7 +1845,6 @@
 # virtual methods
 .method public broadcastWfdState(I)V
     .locals 4
-    .param p1    # I
 
     const-string v1, "IpRemoteDisplayController"
 
@@ -1984,7 +1893,6 @@
 
 .method public connectWfdBridgeServer(Ljava/net/InetAddress;)V
     .locals 3
-    .param p1    # Ljava/net/InetAddress;
 
     const-string v1, "IpRemoteDisplayController"
 
@@ -2159,7 +2067,6 @@
 
 .method public notifyBridgeStatus(I)V
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x6
 
@@ -2202,7 +2109,6 @@
 
 .method public requestDisableWifiDisplay(I)I
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/display/IpRemoteDisplayController;->mHandler:Landroid/os/Handler;
 
@@ -2219,10 +2125,6 @@
 
 .method public requestEnableWifiDisplay(Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)I
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
 
     const-string v0, "IpRemoteDisplayController"
 
@@ -2255,8 +2157,6 @@
 
 .method public requestEnableWifiDisplay(Landroid/net/wifi/p2p/WifiP2pDevice;I)V
     .locals 3
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pDevice;
-    .param p2    # I
 
     const-string v0, "IpRemoteDisplayController"
 
@@ -2348,7 +2248,6 @@
 
 .method public updateClientDevice(Landroid/net/wifi/p2p/WifiP2pDevice;)V
     .locals 2
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pDevice;
 
     iget-object v0, p0, Lcom/android/server/display/IpRemoteDisplayController;->mWfdBridgeServer:Lcom/android/server/display/IpRemoteDisplayController$WfdBridgeAdapter;
 

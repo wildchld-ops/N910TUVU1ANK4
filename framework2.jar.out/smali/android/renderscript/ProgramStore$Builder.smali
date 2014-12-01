@@ -39,7 +39,6 @@
 # direct methods
 .method public constructor <init>(Landroid/renderscript/RenderScript;)V
     .locals 2
-    .param p1    # Landroid/renderscript/RenderScript;
 
     const/4 v1, 0x1
 
@@ -160,8 +159,6 @@
 
 .method public setBlendFunc(Landroid/renderscript/ProgramStore$BlendSrcFunc;Landroid/renderscript/ProgramStore$BlendDstFunc;)Landroid/renderscript/ProgramStore$Builder;
     .locals 0
-    .param p1    # Landroid/renderscript/ProgramStore$BlendSrcFunc;
-    .param p2    # Landroid/renderscript/ProgramStore$BlendDstFunc;
 
     iput-object p1, p0, Landroid/renderscript/ProgramStore$Builder;->mBlendSrc:Landroid/renderscript/ProgramStore$BlendSrcFunc;
 
@@ -172,10 +169,6 @@
 
 .method public setColorMaskEnabled(ZZZZ)Landroid/renderscript/ProgramStore$Builder;
     .locals 0
-    .param p1    # Z
-    .param p2    # Z
-    .param p3    # Z
-    .param p4    # Z
 
     iput-boolean p1, p0, Landroid/renderscript/ProgramStore$Builder;->mColorMaskR:Z
 
@@ -190,7 +183,6 @@
 
 .method public setDepthFunc(Landroid/renderscript/ProgramStore$DepthFunc;)Landroid/renderscript/ProgramStore$Builder;
     .locals 0
-    .param p1    # Landroid/renderscript/ProgramStore$DepthFunc;
 
     iput-object p1, p0, Landroid/renderscript/ProgramStore$Builder;->mDepthFunc:Landroid/renderscript/ProgramStore$DepthFunc;
 
@@ -199,7 +191,6 @@
 
 .method public setDepthMaskEnabled(Z)Landroid/renderscript/ProgramStore$Builder;
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/renderscript/ProgramStore$Builder;->mDepthMask:Z
 
@@ -208,7 +199,6 @@
 
 .method public setDitherEnabled(Z)Landroid/renderscript/ProgramStore$Builder;
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/renderscript/ProgramStore$Builder;->mDither:Z
 

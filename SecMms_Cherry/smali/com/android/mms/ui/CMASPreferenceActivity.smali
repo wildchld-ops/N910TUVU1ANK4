@@ -71,7 +71,6 @@
 
 .method public static CheckCMASChannelInfo(Landroid/content/SharedPreferences;Ljava/util/ArrayList;)V
     .locals 4
-    .param p0    # Landroid/content/SharedPreferences;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -194,8 +193,6 @@
 
 .method private addSharedPref(Ljava/lang/String;Z)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const-string v3, "Mms/CMASPreferenceActivity"
 
@@ -353,7 +350,6 @@
 
 .method private confirmRestoreDialog(Landroid/content/DialogInterface$OnClickListener;)V
     .locals 3
-    .param p1    # Landroid/content/DialogInterface$OnClickListener;
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
@@ -392,7 +388,6 @@
 
 .method public static getCMASChannels(Landroid/content/SharedPreferences;)[S
     .locals 10
-    .param p0    # Landroid/content/SharedPreferences;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;
@@ -601,7 +596,6 @@
 
 .method public static read(Ljava/lang/String;)Ljava/lang/String;
     .locals 8
-    .param p0    # Ljava/lang/String;
 
     const-string v5, "Mms/CMASPreferenceActivity"
 
@@ -800,8 +794,6 @@
 
 .method private removePreference(Landroid/preference/PreferenceGroup;Landroid/preference/Preference;)V
     .locals 0
-    .param p1    # Landroid/preference/PreferenceGroup;
-    .param p2    # Landroid/preference/Preference;
 
     if-eqz p1, :cond_0
 
@@ -815,7 +807,6 @@
 
 .method private resetPreferences(Z)V
     .locals 15
-    .param p1    # Z
 
     const-string v11, "pref_key_cmas_settings_alert"
 
@@ -1426,7 +1417,6 @@
 
 .method public static setCMASConfig(Landroid/content/Context;)V
     .locals 5
-    .param p0    # Landroid/content/Context;
 
     const-string v2, "Mms/CMASPreferenceActivity"
 
@@ -1480,7 +1470,6 @@
 # virtual methods
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 2
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -1502,7 +1491,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onCreate(Landroid/os/Bundle;)V
 
@@ -1530,7 +1518,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 1
-    .param p1    # Landroid/view/Menu;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreateOptionsMenu(Landroid/view/Menu;)Z
 
@@ -1560,7 +1547,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -1657,8 +1643,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 6
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     const/4 v4, 0x0
 
@@ -1971,8 +1955,6 @@
 
 .method public onSharedPreferenceChanged(Landroid/content/SharedPreferences;Ljava/lang/String;)V
     .locals 8
-    .param p1    # Landroid/content/SharedPreferences;
-    .param p2    # Ljava/lang/String;
 
     const/4 v5, 0x1
 

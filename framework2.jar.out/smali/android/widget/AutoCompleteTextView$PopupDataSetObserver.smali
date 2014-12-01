@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Landroid/widget/AutoCompleteTextView;Landroid/widget/AutoCompleteTextView$1;)V
     .locals 0
-    .param p1    # Landroid/widget/AutoCompleteTextView;
-    .param p2    # Landroid/widget/AutoCompleteTextView$1;
 
     invoke-direct {p0, p1}, Landroid/widget/AutoCompleteTextView$PopupDataSetObserver;-><init>(Landroid/widget/AutoCompleteTextView;)V
 

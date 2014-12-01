@@ -34,7 +34,6 @@
 # direct methods
 .method constructor <init>(Lcom/sec/epdg/EpdgService;Landroid/os/Handler;)V
     .locals 1
-    .param p2    # Landroid/os/Handler;
 
     iput-object p1, p0, Lcom/sec/epdg/EpdgService$DatabaseAccessTask;->this$0:Lcom/sec/epdg/EpdgService;
 
@@ -169,7 +168,6 @@
 # virtual methods
 .method protected varargs doInBackground([Ljava/lang/Void;)Ljava/lang/Boolean;
     .locals 2
-    .param p1    # [Ljava/lang/Void;
 
     const-string v0, "[EPDGService]"
 
@@ -186,7 +184,6 @@
 
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [Ljava/lang/Void;
 
@@ -199,7 +196,6 @@
 
 .method protected onPostExecute(Ljava/lang/Boolean;)V
     .locals 2
-    .param p1    # Ljava/lang/Boolean;
 
     const-string v0, "[EPDGService]"
 
@@ -217,7 +213,6 @@
 
 .method protected bridge synthetic onPostExecute(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Ljava/lang/Boolean;
 

@@ -53,7 +53,6 @@
 
 .method private static fileWriteInt(I)V
     .locals 7
-    .param p0    # I
 
     new-instance v1, Ljava/io/File;
 

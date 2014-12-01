@@ -161,9 +161,6 @@
 # virtual methods
 .method public destroyWidget(Landroid/content/Context;Lcom/android/launcher2/SurfaceWidgetPackageManager;Z)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/launcher2/SurfaceWidgetPackageManager;
-    .param p3    # Z
 
     const/4 v3, 0x0
 
@@ -358,10 +355,6 @@
 
 .method makeSurfaceWidget(Landroid/content/Context;Lcom/samsung/surfacewidget/SurfaceWidgetProviderInfo;Lcom/android/launcher2/SurfaceWidgetView;Z)V
     .locals 10
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/samsung/surfacewidget/SurfaceWidgetProviderInfo;
-    .param p3    # Lcom/android/launcher2/SurfaceWidgetView;
-    .param p4    # Z
 
     const/4 v7, -0x1
 
@@ -639,7 +632,6 @@
 
 .method onAddToDatabase(Landroid/content/ContentValues;)V
     .locals 4
-    .param p1    # Landroid/content/ContentValues;
 
     invoke-super {p0, p1}, Lcom/android/launcher2/HomeItem;->onAddToDatabase(Landroid/content/ContentValues;)V
 
@@ -798,7 +790,6 @@
 
 .method public setState(Lcom/android/launcher2/SurfaceWidgetItem$SurfaceWidgetState;)V
     .locals 0
-    .param p1    # Lcom/android/launcher2/SurfaceWidgetItem$SurfaceWidgetState;
 
     iput-object p1, p0, Lcom/android/launcher2/SurfaceWidgetItem;->mState:Lcom/android/launcher2/SurfaceWidgetItem$SurfaceWidgetState;
 

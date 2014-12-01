@@ -28,8 +28,6 @@
 # direct methods
 .method constructor <init>(Lcom/sec/epdg/EpdgService;II)V
     .locals 0
-    .param p2    # I
-    .param p3    # I
 
     iput-object p1, p0, Lcom/sec/epdg/EpdgService$SendEventToSMRunnable;->this$0:Lcom/sec/epdg/EpdgService;
 

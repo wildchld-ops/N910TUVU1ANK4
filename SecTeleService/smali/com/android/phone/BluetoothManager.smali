@@ -334,7 +334,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v3}, Ljava/lang/Enum;->ordinal()I
+    invoke-virtual {v3}, Lcom/android/internal/telephony/PhoneConstants$State;->ordinal()I
 
     move-result v3
 

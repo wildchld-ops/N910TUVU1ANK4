@@ -62,9 +62,6 @@
 
 .method public constructor <init>(Landroid/app/Activity;Lcom/android/launcher2/MenuView;I)V
     .locals 1
-    .param p1    # Landroid/app/Activity;
-    .param p2    # Lcom/android/launcher2/MenuView;
-    .param p3    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -89,7 +86,6 @@
 
 .method private onAddTab(Landroid/app/Fragment;)V
     .locals 2
-    .param p1    # Landroid/app/Fragment;
 
     if-eqz p1, :cond_0
 
@@ -133,7 +129,6 @@
 
 .method private onHideTab(Landroid/app/Fragment;)V
     .locals 1
-    .param p1    # Landroid/app/Fragment;
 
     if-eqz p1, :cond_0
 
@@ -153,7 +148,6 @@
 
 .method private onShowTab(Landroid/app/Fragment;)V
     .locals 1
-    .param p1    # Landroid/app/Fragment;
 
     if-eqz p1, :cond_0
 
@@ -175,8 +169,6 @@
 # virtual methods
 .method public addTab(Landroid/widget/TabHost$TabSpec;Ljava/lang/Class;Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/widget/TabHost$TabSpec;
-    .param p3    # Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -327,7 +319,6 @@
 
 .method public changeTabFragment(Ljava/lang/String;Ljava/lang/Class;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -464,7 +455,6 @@
 
 .method public getFragmentForTab(Ljava/lang/String;)Landroid/app/Fragment;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -477,8 +467,6 @@
 
 .method public getFragmentForTab(Ljava/lang/String;Z)Landroid/app/Fragment;
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     iget-object v2, p0, Lcom/android/launcher2/tabs/TabManager;->mTabs:Ljava/util/HashMap;
 
@@ -621,7 +609,6 @@
 
 .method public onTabChanged(Ljava/lang/String;)V
     .locals 9
-    .param p1    # Ljava/lang/String;
 
     iget-object v6, p0, Lcom/android/launcher2/tabs/TabManager;->mTabs:Ljava/util/HashMap;
 
@@ -1115,7 +1102,6 @@
 
 .method public setLastTabKeyListener(Landroid/view/View$OnKeyListener;)V
     .locals 2
-    .param p1    # Landroid/view/View$OnKeyListener;
 
     iput-object p1, p0, Lcom/android/launcher2/tabs/TabManager;->mEndTabKeyListener:Landroid/view/View$OnKeyListener;
 

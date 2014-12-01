@@ -30,7 +30,6 @@
 # virtual methods
 .method public Clip([F)I
     .locals 17
-    .param p1    # [F
 
     const/4 v6, 0x0
 
@@ -551,7 +550,6 @@
 
 .method public Create(Lcom/voovio/sweep/Sweep;)V
     .locals 30
-    .param p1    # Lcom/voovio/sweep/Sweep;
 
     move-object/from16 v0, p1
 
@@ -1501,7 +1499,6 @@
 
 .method public DestroyVertexBuffer(Z)V
     .locals 4
-    .param p1    # Z
 
     const/4 v3, 0x1
 

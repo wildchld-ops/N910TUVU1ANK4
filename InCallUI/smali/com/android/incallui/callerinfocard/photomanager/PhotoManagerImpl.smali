@@ -88,7 +88,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 7
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Lcom/android/incallui/callerinfocard/photomanager/PhotoManager;-><init>()V
 
@@ -273,7 +272,6 @@
 
 .method static synthetic access$000(Lcom/android/incallui/callerinfocard/photomanager/PhotoManagerImpl;)V
     .locals 0
-    .param p0    # Lcom/android/incallui/callerinfocard/photomanager/PhotoManagerImpl;
 
     invoke-direct {p0}, Lcom/android/incallui/callerinfocard/photomanager/PhotoManagerImpl;->dumpStats()V
 
@@ -282,7 +280,6 @@
 
 .method static synthetic access$100(Lcom/android/incallui/callerinfocard/photomanager/PhotoManagerImpl;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/incallui/callerinfocard/photomanager/PhotoManagerImpl;
 
     iget-object v0, p0, Lcom/android/incallui/callerinfocard/photomanager/PhotoManagerImpl;->mPendingPreloadRequests:Ljava/util/ArrayList;
 
@@ -291,8 +288,6 @@
 
 .method static synthetic access$200(Lcom/android/incallui/callerinfocard/photomanager/PhotoManagerImpl;Ljava/util/Set;)V
     .locals 0
-    .param p0    # Lcom/android/incallui/callerinfocard/photomanager/PhotoManagerImpl;
-    .param p1    # Ljava/util/Set;
 
     invoke-direct {p0, p1}, Lcom/android/incallui/callerinfocard/photomanager/PhotoManagerImpl;->obtainPhotoUrlsToLoad(Ljava/util/Set;)V
 
@@ -301,7 +296,6 @@
 
 .method static synthetic access$300(Lcom/android/incallui/callerinfocard/photomanager/PhotoManagerImpl;)V
     .locals 0
-    .param p0    # Lcom/android/incallui/callerinfocard/photomanager/PhotoManagerImpl;
 
     invoke-direct {p0}, Lcom/android/incallui/callerinfocard/photomanager/PhotoManagerImpl;->checkAllocatedHeapMemory()V
 
@@ -310,10 +304,6 @@
 
 .method static synthetic access$400(Lcom/android/incallui/callerinfocard/photomanager/PhotoManagerImpl;Ljava/lang/Object;[BZ)V
     .locals 0
-    .param p0    # Lcom/android/incallui/callerinfocard/photomanager/PhotoManagerImpl;
-    .param p1    # Ljava/lang/Object;
-    .param p2    # [B
-    .param p3    # Z
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/incallui/callerinfocard/photomanager/PhotoManagerImpl;->cacheBitmap(Ljava/lang/Object;[BZ)V
 
@@ -322,7 +312,6 @@
 
 .method static synthetic access$500(Lcom/android/incallui/callerinfocard/photomanager/PhotoManagerImpl;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/incallui/callerinfocard/photomanager/PhotoManagerImpl;
 
     iget-object v0, p0, Lcom/android/incallui/callerinfocard/photomanager/PhotoManagerImpl;->mMainThreadHandler:Landroid/os/Handler;
 
@@ -331,7 +320,6 @@
 
 .method private static btk(I)Ljava/lang/String;
     .locals 2
-    .param p0    # I
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -360,9 +348,6 @@
 
 .method private cacheBitmap(Ljava/lang/Object;[BZ)V
     .locals 5
-    .param p1    # Ljava/lang/Object;
-    .param p2    # [B
-    .param p3    # Z
 
     iget-object v2, p0, Lcom/android/incallui/callerinfocard/photomanager/PhotoManagerImpl;->mBitmapHolderCache:Landroid/util/LruCache;
 
@@ -938,9 +923,6 @@
 
 .method private static inflateBitmap(Lcom/android/incallui/callerinfocard/photomanager/PhotoManagerImpl$BitmapHolder;II)V
     .locals 7
-    .param p0    # Lcom/android/incallui/callerinfocard/photomanager/PhotoManagerImpl$BitmapHolder;
-    .param p1    # I
-    .param p2    # I
 
     iget-object v1, p0, Lcom/android/incallui/callerinfocard/photomanager/PhotoManagerImpl$BitmapHolder;->bytes:[B
 
@@ -1085,7 +1067,6 @@
 
 .method private isCachedPhoto(Lcom/android/incallui/callerinfocard/photomanager/PhotoManagerImpl$Request;)Z
     .locals 3
-    .param p1    # Lcom/android/incallui/callerinfocard/photomanager/PhotoManagerImpl$Request;
 
     iget-object v1, p0, Lcom/android/incallui/callerinfocard/photomanager/PhotoManagerImpl;->mBitmapHolderCache:Landroid/util/LruCache;
 
@@ -1114,9 +1095,6 @@
 
 .method private loadCachedPhoto(Landroid/widget/ImageView;Lcom/android/incallui/callerinfocard/photomanager/PhotoManagerImpl$Request;Z)Z
     .locals 10
-    .param p1    # Landroid/widget/ImageView;
-    .param p2    # Lcom/android/incallui/callerinfocard/photomanager/PhotoManagerImpl$Request;
-    .param p3    # Z
 
     iget-object v7, p0, Lcom/android/incallui/callerinfocard/photomanager/PhotoManagerImpl;->mBitmapHolderCache:Landroid/util/LruCache;
 
@@ -1365,8 +1343,6 @@
 
 .method private loadPhoto(Landroid/widget/ImageView;Lcom/android/incallui/callerinfocard/photomanager/PhotoManagerImpl$Request;)V
     .locals 2
-    .param p1    # Landroid/widget/ImageView;
-    .param p2    # Lcom/android/incallui/callerinfocard/photomanager/PhotoManagerImpl$Request;
 
     const/4 v1, 0x0
 
@@ -1638,8 +1614,6 @@
 
 .method private static final safeDiv(II)I
     .locals 1
-    .param p0    # I
-    .param p1    # I
 
     if-nez p1, :cond_0
 
@@ -1749,7 +1723,6 @@
 
 .method public handleMessage(Landroid/os/Message;)Z
     .locals 3
-    .param p1    # Landroid/os/Message;
 
     const/4 v0, 0x1
 
@@ -1803,8 +1776,6 @@
 
 .method public loadPhoto(Landroid/widget/ImageView;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Landroid/widget/ImageView;
-    .param p2    # Ljava/lang/String;
 
     if-nez p2, :cond_0
 
@@ -1849,7 +1820,6 @@
 
 .method public onTrimMemory(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "PhotoManager"
 

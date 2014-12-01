@@ -87,7 +87,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/OneHandSideSoftKeyFragment;)Landroid/preference/PreferenceCategory;
     .locals 1
-    .param p0    # Lcom/android/settings/OneHandSideSoftKeyFragment;
 
     iget-object v0, p0, Lcom/android/settings/OneHandSideSoftKeyFragment;->mOneHandSideSoftKeySettings:Landroid/preference/PreferenceCategory;
 
@@ -96,7 +95,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/OneHandSideSoftKeyFragment;)Lcom/android/settings/OneHandSideSoftKeyTransparencyPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/OneHandSideSoftKeyFragment;
 
     iget-object v0, p0, Lcom/android/settings/OneHandSideSoftKeyFragment;->mOneHandSideSoftKeyTransparency:Lcom/android/settings/OneHandSideSoftKeyTransparencyPreference;
 
@@ -105,7 +103,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/OneHandSideSoftKeyFragment;)Landroid/preference/CheckBoxPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/OneHandSideSoftKeyFragment;
 
     iget-object v0, p0, Lcom/android/settings/OneHandSideSoftKeyFragment;->mOnehandSideSoftKeyMinimise:Landroid/preference/CheckBoxPreference;
 
@@ -114,7 +111,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/OneHandSideSoftKeyFragment;)Landroid/preference/PreferenceScreen;
     .locals 1
-    .param p0    # Lcom/android/settings/OneHandSideSoftKeyFragment;
 
     iget-object v0, p0, Lcom/android/settings/OneHandSideSoftKeyFragment;->mOneHandSideSoftKeyEditKeys:Landroid/preference/PreferenceScreen;
 
@@ -123,7 +119,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/OneHandSideSoftKeyFragment;)Landroid/widget/Switch;
     .locals 1
-    .param p0    # Lcom/android/settings/OneHandSideSoftKeyFragment;
 
     iget-object v0, p0, Lcom/android/settings/OneHandSideSoftKeyFragment;->mActionBarSwitch:Landroid/widget/Switch;
 
@@ -461,8 +456,6 @@
 
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 4
-    .param p1    # Landroid/widget/CompoundButton;
-    .param p2    # Z
 
     const/4 v3, 0x0
 
@@ -568,7 +561,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -658,8 +650,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 3
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     iget-object v0, p0, Lcom/android/settings/OneHandSideSoftKeyFragment;->mOneHandSideSoftKeyTransparency:Lcom/android/settings/OneHandSideSoftKeyTransparencyPreference;
 

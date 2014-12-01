@@ -221,7 +221,6 @@
 
 .method getPackageName(Landroid/content/Intent;)Ljava/lang/String;
     .locals 2
-    .param p1    # Landroid/content/Intent;
 
     invoke-virtual {p1}, Landroid/content/Intent;->getData()Landroid/net/Uri;
 
@@ -252,7 +251,6 @@
 
 .method public isPackageAppearing(Ljava/lang/String;)I
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/internal/content/PackageMonitor;->mAppearingPackages:[Ljava/lang/String;
 
@@ -295,7 +293,6 @@
 
 .method public isPackageDisappearing(Ljava/lang/String;)I
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/internal/content/PackageMonitor;->mDisappearingPackages:[Ljava/lang/String;
 
@@ -338,7 +335,6 @@
 
 .method public isPackageModified(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/internal/content/PackageMonitor;->mModifiedPackages:[Ljava/lang/String;
 
@@ -381,7 +377,6 @@
 
 .method isPackageUpdating(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/internal/content/PackageMonitor;->mUpdatingPackages:Ljava/util/HashSet;
 
@@ -422,10 +417,6 @@
 
 .method public onHandleForceStop(Landroid/content/Intent;[Ljava/lang/String;IZ)Z
     .locals 1
-    .param p1    # Landroid/content/Intent;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Z
 
     const/4 v0, 0x0
 
@@ -434,33 +425,24 @@
 
 .method public onHandleUserStop(Landroid/content/Intent;I)V
     .locals 0
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
 
     return-void
 .end method
 
 .method public onPackageAdded(Ljava/lang/String;I)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     return-void
 .end method
 
 .method public onPackageAppeared(Ljava/lang/String;I)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     return-void
 .end method
 
 .method public onPackageChanged(Ljava/lang/String;I[Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # [Ljava/lang/String;
 
     if-eqz p3, :cond_1
 
@@ -499,69 +481,54 @@
 
 .method public onPackageDisappeared(Ljava/lang/String;I)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     return-void
 .end method
 
 .method public onPackageModified(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method public onPackageRemoved(Ljava/lang/String;I)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     return-void
 .end method
 
 .method public onPackageRemovedAllUsers(Ljava/lang/String;I)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     return-void
 .end method
 
 .method public onPackageUpdateFinished(Ljava/lang/String;I)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     return-void
 .end method
 
 .method public onPackageUpdateStarted(Ljava/lang/String;I)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     return-void
 .end method
 
 .method public onPackagesAvailable([Ljava/lang/String;)V
     .locals 0
-    .param p1    # [Ljava/lang/String;
 
     return-void
 .end method
 
 .method public onPackagesUnavailable([Ljava/lang/String;)V
     .locals 0
-    .param p1    # [Ljava/lang/String;
 
     return-void
 .end method
 
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 13
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     const/4 v10, 0x3
 
@@ -1096,17 +1063,12 @@
 
 .method public onUidRemoved(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public register(Landroid/content/Context;Landroid/os/Looper;Landroid/os/UserHandle;Z)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/Looper;
-    .param p3    # Landroid/os/UserHandle;
-    .param p4    # Z
 
     const/4 v4, 0x0
 
@@ -1213,9 +1175,6 @@
 
 .method public register(Landroid/content/Context;Landroid/os/Looper;Z)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/Looper;
-    .param p3    # Z
 
     const/4 v0, 0x0
 

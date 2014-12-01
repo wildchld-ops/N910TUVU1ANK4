@@ -91,7 +91,7 @@
 
     iget-object v4, p0, Lcom/android/phone/PhotoringUtil$PhraseTextWatcher;->prevString:Ljava/lang/String;
 
-    invoke-virtual {v3, v4}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {v3, v4}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
     iget-object v3, p0, Lcom/android/phone/PhotoringUtil$PhraseTextWatcher;->et:Landroid/widget/EditText;
 

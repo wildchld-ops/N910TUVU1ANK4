@@ -35,8 +35,6 @@
 # virtual methods
 .method public onGetPrintJobInfoResult(Landroid/print/PrintJobInfo;I)V
     .locals 1
-    .param p1    # Landroid/print/PrintJobInfo;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/server/print/RemotePrintSpooler$GetPrintJobInfoCaller$1;->this$0:Lcom/android/server/print/RemotePrintSpooler$GetPrintJobInfoCaller;
 

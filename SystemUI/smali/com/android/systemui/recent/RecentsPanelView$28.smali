@@ -44,7 +44,6 @@
 # virtual methods
 .method protected varargs doInBackground([Ljava/lang/Void;)Landroid/content/pm/ActivityInfo;
     .locals 10
-    .param p1    # [Ljava/lang/Void;
 
     const/4 v6, 0x0
 
@@ -138,7 +137,6 @@
 
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [Ljava/lang/Void;
 
@@ -151,7 +149,6 @@
 
 .method protected onPostExecute(Landroid/content/pm/ActivityInfo;)V
     .locals 1
-    .param p1    # Landroid/content/pm/ActivityInfo;
 
     iget-object v0, p0, Lcom/android/systemui/recent/RecentsPanelView$28;->this$0:Lcom/android/systemui/recent/RecentsPanelView;
 
@@ -163,7 +160,6 @@
 
 .method protected bridge synthetic onPostExecute(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Landroid/content/pm/ActivityInfo;
 

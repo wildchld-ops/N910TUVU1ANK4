@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,8 +36,6 @@
 # virtual methods
 .method public addPlayerListener(Lcom/sec/android/allshare/dmrservice/IPlayerListener;Ljava/lang/String;)V
     .locals 5
-    .param p1    # Lcom/sec/android/allshare/dmrservice/IPlayerListener;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -104,9 +101,6 @@
 
 .method public allowDevice(Ljava/lang/String;Ljava/lang/String;I)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -170,9 +164,6 @@
 
 .method public denyDevice(Ljava/lang/String;Ljava/lang/String;I)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -479,8 +470,6 @@
 
 .method public removeDevice(Ljava/lang/String;Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -534,7 +523,6 @@
 
 .method public removePlayerListener(Lcom/sec/android/allshare/dmrservice/IPlayerListener;)V
     .locals 5
-    .param p1    # Lcom/sec/android/allshare/dmrservice/IPlayerListener;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -598,7 +586,6 @@
 
 .method public removeSlideShowPlayerListener(Lcom/sec/android/allshare/dmrservice/ISlideShowPlayerListener;)V
     .locals 5
-    .param p1    # Lcom/sec/android/allshare/dmrservice/ISlideShowPlayerListener;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -662,7 +649,6 @@
 
 .method public setDeviceAccessMode(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -714,7 +700,6 @@
 
 .method public setMediaRendererName(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -766,7 +751,6 @@
 
 .method public setPlaybackError(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -818,7 +802,6 @@
 
 .method public setPlaybackState(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -870,7 +853,6 @@
 
 .method public setPlayerMute(Z)V
     .locals 5
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -929,7 +911,6 @@
 
 .method public setPlayerVolume(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -981,7 +962,6 @@
 
 .method public setSlideShowPlayerListener(Lcom/sec/android/allshare/dmrservice/ISlideShowPlayerListener;)V
     .locals 5
-    .param p1    # Lcom/sec/android/allshare/dmrservice/ISlideShowPlayerListener;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1045,7 +1025,6 @@
 
 .method public setViewControlZoomPort(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

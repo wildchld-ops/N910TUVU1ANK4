@@ -39,7 +39,6 @@
 
 .method private setupSimTab(I)V
     .locals 8
-    .param p1    # I
 
     new-instance v0, Landroid/content/Intent;
 
@@ -112,7 +111,6 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v4, 0x1
 
@@ -176,7 +174,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -339,7 +336,6 @@
 
 .method public onTabChanged(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "NOTI_SIM2"
 

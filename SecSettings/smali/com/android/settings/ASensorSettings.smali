@@ -110,7 +110,6 @@
 
 .method static synthetic access$1100(Lcom/android/settings/ASensorSettings;)I
     .locals 1
-    .param p0    # Lcom/android/settings/ASensorSettings;
 
     iget v0, p0, Lcom/android/settings/ASensorSettings;->mHorizontalLine:I
 
@@ -119,7 +118,6 @@
 
 .method static synthetic access$1200(Lcom/android/settings/ASensorSettings;)I
     .locals 1
-    .param p0    # Lcom/android/settings/ASensorSettings;
 
     iget v0, p0, Lcom/android/settings/ASensorSettings;->mVerticalLine:I
 
@@ -136,7 +134,6 @@
 
 .method static synthetic access$1400(Lcom/android/settings/ASensorSettings;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/android/settings/ASensorSettings;
 
     iget-object v0, p0, Lcom/android/settings/ASensorSettings;->text:Landroid/widget/TextView;
 
@@ -145,7 +142,6 @@
 
 .method static synthetic access$1500(Lcom/android/settings/ASensorSettings;)Landroid/hardware/Sensor;
     .locals 1
-    .param p0    # Lcom/android/settings/ASensorSettings;
 
     iget-object v0, p0, Lcom/android/settings/ASensorSettings;->mAccelerometerSensor:Landroid/hardware/Sensor;
 
@@ -154,7 +150,6 @@
 
 .method static synthetic access$1600(Lcom/android/settings/ASensorSettings;)Landroid/hardware/SensorManager;
     .locals 1
-    .param p0    # Lcom/android/settings/ASensorSettings;
 
     iget-object v0, p0, Lcom/android/settings/ASensorSettings;->mSensorManager:Landroid/hardware/SensorManager;
 
@@ -163,7 +158,6 @@
 
 .method static synthetic access$1700(Lcom/android/settings/ASensorSettings;)V
     .locals 0
-    .param p0    # Lcom/android/settings/ASensorSettings;
 
     invoke-direct {p0}, Lcom/android/settings/ASensorSettings;->diplayCompleted()V
 
@@ -180,7 +174,6 @@
 
 .method static synthetic access$302(I)I
     .locals 0
-    .param p0    # I
 
     sput p0, Lcom/android/settings/ASensorSettings;->sampleCount:I
 
@@ -213,7 +206,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/ASensorSettings;)Lcom/android/settings/ASensorSettings$ASensorSettingsView;
     .locals 1
-    .param p0    # Lcom/android/settings/ASensorSettings;
 
     iget-object v0, p0, Lcom/android/settings/ASensorSettings;->drawView:Lcom/android/settings/ASensorSettings$ASensorSettingsView;
 
@@ -222,7 +214,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/ASensorSettings;)I
     .locals 1
-    .param p0    # Lcom/android/settings/ASensorSettings;
 
     iget v0, p0, Lcom/android/settings/ASensorSettings;->CENTER_X:I
 
@@ -231,7 +222,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/ASensorSettings;)I
     .locals 1
-    .param p0    # Lcom/android/settings/ASensorSettings;
 
     iget v0, p0, Lcom/android/settings/ASensorSettings;->ICON_RADIUS:I
 
@@ -240,7 +230,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/ASensorSettings;)I
     .locals 1
-    .param p0    # Lcom/android/settings/ASensorSettings;
 
     iget v0, p0, Lcom/android/settings/ASensorSettings;->CENTER_Y:I
 
@@ -249,7 +238,6 @@
 
 .method static synthetic access$800(Lcom/android/settings/ASensorSettings;)I
     .locals 1
-    .param p0    # Lcom/android/settings/ASensorSettings;
 
     iget v0, p0, Lcom/android/settings/ASensorSettings;->CIRCLE_RADIUS:I
 
@@ -258,7 +246,6 @@
 
 .method static synthetic access$900(Lcom/android/settings/ASensorSettings;)I
     .locals 1
-    .param p0    # Lcom/android/settings/ASensorSettings;
 
     iget v0, p0, Lcom/android/settings/ASensorSettings;->mBackgroundRadian:I
 
@@ -498,7 +485,6 @@
 # virtual methods
 .method public dpToPixel(I)F
     .locals 4
-    .param p1    # I
 
     new-instance v0, Landroid/util/DisplayMetrics;
 
@@ -569,7 +555,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 4
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p1}, Landroid/view/View;->getId()I
 
@@ -621,7 +606,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v3, 0x0
 

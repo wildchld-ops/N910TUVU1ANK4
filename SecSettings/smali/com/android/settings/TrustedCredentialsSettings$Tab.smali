@@ -110,12 +110,6 @@
 
 .method private constructor <init>(Ljava/lang/String;ILjava/lang/String;IIIIZ)V
     .locals 0
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -143,7 +137,6 @@
 
 .method static synthetic access$1800(Lcom/android/settings/TrustedCredentialsSettings$Tab;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/TrustedCredentialsSettings$Tab;
 
     iget-boolean v0, p0, Lcom/android/settings/TrustedCredentialsSettings$Tab;->mCheckbox:Z
 
@@ -152,7 +145,6 @@
 
 .method static synthetic access$2100(Lcom/android/settings/TrustedCredentialsSettings$Tab;)I
     .locals 1
-    .param p0    # Lcom/android/settings/TrustedCredentialsSettings$Tab;
 
     iget v0, p0, Lcom/android/settings/TrustedCredentialsSettings$Tab;->mProgress:I
 
@@ -161,8 +153,6 @@
 
 .method static synthetic access$2300(Lcom/android/settings/TrustedCredentialsSettings$Tab;Lcom/android/org/conscrypt/TrustedCertificateStore;)Ljava/util/Set;
     .locals 1
-    .param p0    # Lcom/android/settings/TrustedCredentialsSettings$Tab;
-    .param p1    # Lcom/android/org/conscrypt/TrustedCertificateStore;
 
     invoke-direct {p0, p1}, Lcom/android/settings/TrustedCredentialsSettings$Tab;->getAliases(Lcom/android/org/conscrypt/TrustedCertificateStore;)Ljava/util/Set;
 
@@ -173,9 +163,6 @@
 
 .method static synthetic access$2500(Lcom/android/settings/TrustedCredentialsSettings$Tab;Lcom/android/org/conscrypt/TrustedCertificateStore;Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/TrustedCredentialsSettings$Tab;
-    .param p1    # Lcom/android/org/conscrypt/TrustedCertificateStore;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Lcom/android/settings/TrustedCredentialsSettings$Tab;->deleted(Lcom/android/org/conscrypt/TrustedCertificateStore;Ljava/lang/String;)Z
 
@@ -186,8 +173,6 @@
 
 .method static synthetic access$2800(Lcom/android/settings/TrustedCredentialsSettings$Tab;Lcom/android/settings/TrustedCredentialsSettings$CertHolder;)I
     .locals 1
-    .param p0    # Lcom/android/settings/TrustedCredentialsSettings$Tab;
-    .param p1    # Lcom/android/settings/TrustedCredentialsSettings$CertHolder;
 
     invoke-direct {p0, p1}, Lcom/android/settings/TrustedCredentialsSettings$Tab;->getButtonLabel(Lcom/android/settings/TrustedCredentialsSettings$CertHolder;)I
 
@@ -198,8 +183,6 @@
 
 .method static synthetic access$3300(Lcom/android/settings/TrustedCredentialsSettings$Tab;Lcom/android/settings/TrustedCredentialsSettings$CertHolder;)I
     .locals 1
-    .param p0    # Lcom/android/settings/TrustedCredentialsSettings$Tab;
-    .param p1    # Lcom/android/settings/TrustedCredentialsSettings$CertHolder;
 
     invoke-direct {p0, p1}, Lcom/android/settings/TrustedCredentialsSettings$Tab;->getButtonConfirmation(Lcom/android/settings/TrustedCredentialsSettings$CertHolder;)I
 
@@ -210,9 +193,6 @@
 
 .method static synthetic access$3700(Lcom/android/settings/TrustedCredentialsSettings$Tab;ZLcom/android/settings/TrustedCredentialsSettings$CertHolder;)V
     .locals 0
-    .param p0    # Lcom/android/settings/TrustedCredentialsSettings$Tab;
-    .param p1    # Z
-    .param p2    # Lcom/android/settings/TrustedCredentialsSettings$CertHolder;
 
     invoke-direct {p0, p1, p2}, Lcom/android/settings/TrustedCredentialsSettings$Tab;->postOperationUpdate(ZLcom/android/settings/TrustedCredentialsSettings$CertHolder;)V
 
@@ -221,7 +201,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/TrustedCredentialsSettings$Tab;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/settings/TrustedCredentialsSettings$Tab;
 
     iget-object v0, p0, Lcom/android/settings/TrustedCredentialsSettings$Tab;->mTag:Ljava/lang/String;
 
@@ -230,7 +209,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/TrustedCredentialsSettings$Tab;)I
     .locals 1
-    .param p0    # Lcom/android/settings/TrustedCredentialsSettings$Tab;
 
     iget v0, p0, Lcom/android/settings/TrustedCredentialsSettings$Tab;->mView:I
 
@@ -239,7 +217,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/TrustedCredentialsSettings$Tab;)I
     .locals 1
-    .param p0    # Lcom/android/settings/TrustedCredentialsSettings$Tab;
 
     iget v0, p0, Lcom/android/settings/TrustedCredentialsSettings$Tab;->mLabel:I
 
@@ -248,7 +225,6 @@
 
 .method static synthetic access$800(Lcom/android/settings/TrustedCredentialsSettings$Tab;)I
     .locals 1
-    .param p0    # Lcom/android/settings/TrustedCredentialsSettings$Tab;
 
     iget v0, p0, Lcom/android/settings/TrustedCredentialsSettings$Tab;->mList:I
 
@@ -257,8 +233,6 @@
 
 .method private deleted(Lcom/android/org/conscrypt/TrustedCertificateStore;Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Lcom/android/org/conscrypt/TrustedCertificateStore;
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -300,7 +274,6 @@
 
 .method private getAliases(Lcom/android/org/conscrypt/TrustedCertificateStore;)Ljava/util/Set;
     .locals 2
-    .param p1    # Lcom/android/org/conscrypt/TrustedCertificateStore;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -355,7 +328,6 @@
 
 .method private getButtonConfirmation(Lcom/android/settings/TrustedCredentialsSettings$CertHolder;)I
     .locals 2
-    .param p1    # Lcom/android/settings/TrustedCredentialsSettings$CertHolder;
 
     sget-object v0, Lcom/android/settings/TrustedCredentialsSettings$7;->$SwitchMap$com$android$settings$TrustedCredentialsSettings$Tab:[I
 
@@ -407,7 +379,6 @@
 
 .method private getButtonLabel(Lcom/android/settings/TrustedCredentialsSettings$CertHolder;)I
     .locals 2
-    .param p1    # Lcom/android/settings/TrustedCredentialsSettings$CertHolder;
 
     sget-object v0, Lcom/android/settings/TrustedCredentialsSettings$7;->$SwitchMap$com$android$settings$TrustedCredentialsSettings$Tab:[I
 
@@ -459,8 +430,6 @@
 
 .method private postOperationUpdate(ZLcom/android/settings/TrustedCredentialsSettings$CertHolder;)V
     .locals 1
-    .param p1    # Z
-    .param p2    # Lcom/android/settings/TrustedCredentialsSettings$CertHolder;
 
     if-eqz p1, :cond_2
 

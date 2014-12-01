@@ -100,9 +100,6 @@
 
 .method public constructor <init>(ILandroid/content/Context;Ljava/lang/String;)V
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/content/Context;
-    .param p3    # Ljava/lang/String;
 
     const-wide/16 v2, 0x0
 
@@ -221,7 +218,6 @@
 
 .method static synthetic access$000(Lcom/android/server/enterprise/auditlog/CircularBuffer;)Ljava/util/List;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/auditlog/CircularBuffer;
 
     iget-object v0, p0, Lcom/android/server/enterprise/auditlog/CircularBuffer;->mDumpList:Ljava/util/List;
 
@@ -230,8 +226,6 @@
 
 .method static synthetic access$122(Lcom/android/server/enterprise/auditlog/CircularBuffer;J)J
     .locals 2
-    .param p0    # Lcom/android/server/enterprise/auditlog/CircularBuffer;
-    .param p1    # J
 
     iget-wide v0, p0, Lcom/android/server/enterprise/auditlog/CircularBuffer;->mCircularBufferSize:J
 
@@ -244,7 +238,6 @@
 
 .method static synthetic access$208(Lcom/android/server/enterprise/auditlog/CircularBuffer;)I
     .locals 2
-    .param p0    # Lcom/android/server/enterprise/auditlog/CircularBuffer;
 
     iget v0, p0, Lcom/android/server/enterprise/auditlog/CircularBuffer;->mNumberOfDeprecatedFiles:I
 
@@ -257,8 +250,6 @@
 
 .method static synthetic access$300(Lcom/android/server/enterprise/auditlog/CircularBuffer;I)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/auditlog/CircularBuffer;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/auditlog/CircularBuffer;->setNumberOfDeprecatedFiles(I)V
 
@@ -593,7 +584,6 @@
 
 .method private dirListByAscendingDate(Ljava/io/File;)[Ljava/io/File;
     .locals 19
-    .param p1    # Ljava/io/File;
 
     invoke-virtual/range {p1 .. p1}, Ljava/io/File;->isDirectory()Z
 
@@ -1198,7 +1188,6 @@
 
 .method private resizeBubbleFile(J)V
     .locals 7
-    .param p1    # J
 
     const-wide/16 v4, 0x0
 
@@ -1462,7 +1451,6 @@
 
 .method private setNumberOfDeprecatedFiles(I)V
     .locals 4
-    .param p1    # I
 
     new-instance v0, Landroid/content/ContentValues;
 
@@ -1719,7 +1707,6 @@
 
 .method public setBootCompleted(Z)V
     .locals 5
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/enterprise/auditlog/CircularBuffer;->mIsBootCompleted:Z
 
@@ -1782,7 +1769,6 @@
 
 .method public setCriticalLogSize(I)V
     .locals 1
-    .param p1    # I
 
     int-to-float v0, p1
 
@@ -1797,8 +1783,6 @@
 
 .method public declared-synchronized setIsDumping(ZZ)V
     .locals 1
-    .param p1    # Z
-    .param p2    # Z
 
     monitor-enter p0
 
@@ -1836,7 +1820,6 @@
 
 .method public setMaximumLogSize(I)V
     .locals 1
-    .param p1    # I
 
     int-to-float v0, p1
 
@@ -1851,7 +1834,6 @@
 
 .method public setTypeOfDump(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/enterprise/auditlog/CircularBuffer;->mTypeOfDump:Z
 
@@ -1880,7 +1862,6 @@
 
 .method public write(Ljava/lang/String;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const-wide/32 v5, 0x20000000
 

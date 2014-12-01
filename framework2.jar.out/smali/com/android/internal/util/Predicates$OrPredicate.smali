@@ -63,8 +63,6 @@
 
 .method synthetic constructor <init>(Ljava/lang/Iterable;Lcom/android/internal/util/Predicates$1;)V
     .locals 0
-    .param p1    # Ljava/lang/Iterable;
-    .param p2    # Lcom/android/internal/util/Predicates$1;
 
     invoke-direct {p0, p1}, Lcom/android/internal/util/Predicates$OrPredicate;-><init>(Ljava/lang/Iterable;)V
 

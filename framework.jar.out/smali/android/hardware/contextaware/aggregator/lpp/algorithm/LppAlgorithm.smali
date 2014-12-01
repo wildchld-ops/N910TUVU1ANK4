@@ -1132,7 +1132,6 @@
 
 .method private PositionFiltering(Landroid/hardware/contextaware/aggregator/lpp/LppLocation;)Landroid/hardware/contextaware/aggregator/lpp/LppLocation;
     .locals 24
-    .param p1    # Landroid/hardware/contextaware/aggregator/lpp/LppLocation;
 
     new-instance v2, Landroid/hardware/contextaware/aggregator/lpp/LppLocation;
 
@@ -2539,7 +2538,6 @@
 
 .method private SendStatus(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     return-void
 .end method
@@ -3604,7 +3602,6 @@
 
 .method private resetwithLastLoc(Landroid/location/Location;)V
     .locals 7
-    .param p1    # Landroid/location/Location;
 
     if-nez p1, :cond_0
 
@@ -3801,7 +3798,6 @@
 
 .method public deliverLocationData(Landroid/location/Location;)V
     .locals 24
-    .param p1    # Landroid/location/Location;
 
     move-object/from16 v0, p0
 
@@ -5167,7 +5163,6 @@
 
 .method public init(Landroid/hardware/contextaware/aggregator/lpp/LppAlgoListener;)V
     .locals 3
-    .param p1    # Landroid/hardware/contextaware/aggregator/lpp/LppAlgoListener;
 
     const/4 v2, 0x0
 
@@ -5190,7 +5185,6 @@
 
 .method public setGPSBatchingStatus(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/hardware/contextaware/aggregator/lpp/algorithm/LppAlgorithm;->mFlagIsGPSBatchMode:Z
 
@@ -5199,7 +5193,6 @@
 
 .method public setStayingAreaFlag(I)V
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x1
 

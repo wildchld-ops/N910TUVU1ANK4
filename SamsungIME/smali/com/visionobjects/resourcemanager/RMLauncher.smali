@@ -30,7 +30,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -43,7 +42,6 @@
 # virtual methods
 .method public launchCancelByIntent(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     sget-object v1, Lcom/visionobjects/resourcemanager/RMLauncher;->TAG:Ljava/lang/String;
 
@@ -72,7 +70,6 @@
 
 .method public launchDeleteByIntent(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     sget-object v1, Lcom/visionobjects/resourcemanager/RMLauncher;->TAG:Ljava/lang/String;
 
@@ -101,7 +98,6 @@
 
 .method public launchUpdateByIntent(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     sget-object v1, Lcom/visionobjects/resourcemanager/RMLauncher;->TAG:Ljava/lang/String;
 

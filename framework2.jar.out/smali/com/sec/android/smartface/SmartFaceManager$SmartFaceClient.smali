@@ -39,9 +39,6 @@
 # virtual methods
 .method public onInfo(ILcom/sec/android/smartface/FaceInfo;I)V
     .locals 3
-    .param p1    # I
-    .param p2    # Lcom/sec/android/smartface/FaceInfo;
-    .param p3    # I
 
     iget-object v1, p0, Lcom/sec/android/smartface/SmartFaceManager$SmartFaceClient;->this$0:Lcom/sec/android/smartface/SmartFaceManager;
 

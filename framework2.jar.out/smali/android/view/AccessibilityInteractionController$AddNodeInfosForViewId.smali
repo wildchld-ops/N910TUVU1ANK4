@@ -61,8 +61,6 @@
 
 .method synthetic constructor <init>(Landroid/view/AccessibilityInteractionController;Landroid/view/AccessibilityInteractionController$1;)V
     .locals 0
-    .param p1    # Landroid/view/AccessibilityInteractionController;
-    .param p2    # Landroid/view/AccessibilityInteractionController$1;
 
     invoke-direct {p0, p1}, Landroid/view/AccessibilityInteractionController$AddNodeInfosForViewId;-><init>(Landroid/view/AccessibilityInteractionController;)V
 
@@ -73,7 +71,6 @@
 # virtual methods
 .method public apply(Landroid/view/View;)Z
     .locals 2
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p1}, Landroid/view/View;->getId()I
 
@@ -108,7 +105,6 @@
 
 .method public bridge synthetic apply(Ljava/lang/Object;)Z
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Landroid/view/View;
 
@@ -121,7 +117,6 @@
 
 .method public init(ILjava/util/List;)V
     .locals 0
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",

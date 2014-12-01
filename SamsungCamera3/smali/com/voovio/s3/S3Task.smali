@@ -44,7 +44,6 @@
 
 .method public setFileName(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/voovio/s3/S3Task;->fileName:Ljava/lang/String;
 
@@ -53,7 +52,6 @@
 
 .method public setFilePath(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/voovio/s3/S3Task;->filePath:Ljava/lang/String;
 

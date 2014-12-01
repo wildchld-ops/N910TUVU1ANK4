@@ -186,7 +186,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;)I
     .locals 1
-    .param p0    # Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;
 
     iget v0, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mOrientation:I
 
@@ -195,7 +194,6 @@
 
 .method static synthetic access$1000(Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;)V
     .locals 0
-    .param p0    # Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;
 
     invoke-direct {p0}, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->handleNext()V
 
@@ -204,8 +202,6 @@
 
 .method static synthetic access$102(Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;I)I
     .locals 0
-    .param p0    # Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mOrientation:I
 
@@ -214,7 +210,6 @@
 
 .method static synthetic access$1100(Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;
 
     iget-object v0, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mHandler:Landroid/os/Handler;
 
@@ -223,7 +218,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;)I
     .locals 1
-    .param p0    # Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;
 
     invoke-direct {p0}, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->getDeviceOrientation()I
 
@@ -234,7 +228,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;)Landroid/inputmethodservice/KeyboardView;
     .locals 1
-    .param p0    # Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;
 
     iget-object v0, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mKeyboardView:Landroid/inputmethodservice/KeyboardView;
 
@@ -243,7 +236,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;
 
     iget-object v0, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mPasswordEntry:Landroid/widget/TextView;
 
@@ -252,7 +244,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;)Lcom/android/internal/widget/LockPatternUtils;
     .locals 1
-    .param p0    # Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;
 
     iget-object v0, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mLockPatternUtils:Lcom/android/internal/widget/LockPatternUtils;
 
@@ -261,8 +252,6 @@
 
 .method static synthetic access$602(Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->cacRegistrationComplete:Z
 
@@ -271,8 +260,6 @@
 
 .method static synthetic access$702(Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->cacRegistrationError:Z
 
@@ -281,8 +268,6 @@
 
 .method static synthetic access$802(Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->cacRegistrationResult:Ljava/lang/String;
 
@@ -291,8 +276,6 @@
 
 .method static synthetic access$902(Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->cacCardLocked:Z
 
@@ -549,7 +532,6 @@
 
 .method private executeCacRegistration(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment$2;
 
@@ -1282,8 +1264,6 @@
 
 .method private showError(Ljava/lang/String;Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment$Stage;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment$Stage;
 
     const/4 v3, 0x1
 
@@ -2644,7 +2624,6 @@
 # virtual methods
 .method public afterTextChanged(Landroid/text/Editable;)V
     .locals 2
-    .param p1    # Landroid/text/Editable;
 
     iget-boolean v0, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->cacRegistrationError:Z
 
@@ -2669,19 +2648,12 @@
 
 .method public beforeTextChanged(Ljava/lang/CharSequence;III)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     return-void
 .end method
 
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     invoke-super {p0, p1, p2, p3}, Landroid/app/Fragment;->onActivityResult(IILandroid/content/Intent;)V
 
@@ -3118,7 +3090,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 4
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -3205,7 +3176,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 13
-    .param p1    # Landroid/os/Bundle;
 
     const/high16 v12, 0x20000
 
@@ -3866,9 +3836,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 16
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const v11, 0x7f040043
 
@@ -4422,9 +4389,6 @@
 
 .method public onEditorAction(Landroid/widget/TextView;ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # I
-    .param p3    # Landroid/view/KeyEvent;
 
     if-eqz p2, :cond_0
 
@@ -4522,7 +4486,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onSaveInstanceState(Landroid/os/Bundle;)V
 
@@ -4547,17 +4510,12 @@
 
 .method public onTextChanged(Ljava/lang/CharSequence;III)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     return-void
 .end method
 
 .method protected updateStage(Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment$Stage;)V
     .locals 3
-    .param p1    # Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment$Stage;
 
     iget-object v0, p0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->mUiStage:Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment$Stage;
 

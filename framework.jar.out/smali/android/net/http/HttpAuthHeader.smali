@@ -52,7 +52,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -66,7 +65,6 @@
 
 .method private parseHeader(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -88,7 +86,6 @@
 
 .method private parseParameter(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -152,8 +149,6 @@
 
 .method private parseParameter(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -240,7 +235,6 @@
 
 .method private parseParameters(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_1
 
@@ -281,7 +275,6 @@
 
 .method private parseScheme(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_2
 
@@ -353,7 +346,6 @@
 
 .method private parseStale(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -375,7 +367,6 @@
 
 .method private static trimDoubleQuotesIfAny(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     const/16 v2, 0x22
 
@@ -600,7 +591,6 @@
 
 .method public setPassword(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/net/http/HttpAuthHeader;->mPassword:Ljava/lang/String;
 
@@ -619,7 +609,6 @@
 
 .method public setUsername(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/net/http/HttpAuthHeader;->mUsername:Ljava/lang/String;
 

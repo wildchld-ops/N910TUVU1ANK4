@@ -30,8 +30,6 @@
 # direct methods
 .method public constructor <init>(Landroid/view/InputChannel;Landroid/os/Looper;)V
     .locals 2
-    .param p1    # Landroid/view/InputChannel;
-    .param p2    # Landroid/os/Looper;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -108,8 +106,6 @@
 
 .method private dispatchInputEvent(ILandroid/view/InputEvent;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/view/InputEvent;
 
     iget-object v0, p0, Landroid/view/InputEventReceiver;->mSeqMap:Landroid/util/SparseIntArray;
 
@@ -126,7 +122,6 @@
 
 .method private dispose(Z)V
     .locals 2
-    .param p1    # Z
 
     const/4 v1, 0x0
 
@@ -194,7 +189,6 @@
 # virtual methods
 .method public final consumeBatchedInputEvents(J)Z
     .locals 2
-    .param p1    # J
 
     iget v0, p0, Landroid/view/InputEventReceiver;->mReceiverPtr:I
 
@@ -260,8 +254,6 @@
 
 .method public final finishInputEvent(Landroid/view/InputEvent;Z)V
     .locals 4
-    .param p1    # Landroid/view/InputEvent;
-    .param p2    # Z
 
     if-nez p1, :cond_0
 
@@ -340,7 +332,6 @@
 
 .method public onInputEvent(Landroid/view/InputEvent;)V
     .locals 1
-    .param p1    # Landroid/view/InputEvent;
 
     const/4 v0, 0x0
 

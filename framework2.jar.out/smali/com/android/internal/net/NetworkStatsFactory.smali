@@ -40,7 +40,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     new-instance v0, Ljava/io/File;
 
@@ -55,7 +54,6 @@
 
 .method public constructor <init>(Ljava/io/File;)V
     .locals 2
-    .param p1    # Ljava/io/File;
 
     const/4 v1, 0x0
 
@@ -98,8 +96,6 @@
 
 .method public constructor <init>(Ljava/io/File;Landroid/content/Context;)V
     .locals 2
-    .param p1    # Ljava/io/File;
-    .param p2    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -144,8 +140,6 @@
 
 .method public static javaReadNetworkStatsDetail(Ljava/io/File;I)Landroid/net/NetworkStats;
     .locals 11
-    .param p0    # Ljava/io/File;
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -427,7 +421,6 @@
 
 .method private updateStatsForKnox(Landroid/net/NetworkStats;)V
     .locals 31
-    .param p1    # Landroid/net/NetworkStats;
 
     const-string v3, "NetworkStatsFactory"
 
@@ -735,8 +728,6 @@
 # virtual methods
 .method public assertEquals(Landroid/net/NetworkStats;Landroid/net/NetworkStats;)V
     .locals 6
-    .param p1    # Landroid/net/NetworkStats;
-    .param p2    # Landroid/net/NetworkStats;
 
     invoke-virtual {p1}, Landroid/net/NetworkStats;->size()I
 
@@ -890,7 +881,6 @@
 
 .method public readNetworkStatsDetail(I)Landroid/net/NetworkStats;
     .locals 4
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

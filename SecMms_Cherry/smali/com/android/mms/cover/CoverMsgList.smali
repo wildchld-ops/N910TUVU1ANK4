@@ -57,7 +57,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -72,7 +71,6 @@
 
 .method public static RemoveCoverMsgList(Landroid/content/Context;)V
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     const-string v1, "Mms/CoverMsgList"
 
@@ -105,8 +103,6 @@
 
 .method private getContactHeaderString(Ljava/lang/String;I)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v0, 0x4
 
@@ -163,7 +159,6 @@
 
 .method private getDefaultAvatarImageId(J)I
     .locals 3
-    .param p1    # J
 
     const/4 v0, 0x0
 
@@ -189,7 +184,6 @@
 
 .method private static isLockScreenMesagePref(Landroid/content/Context;)Z
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -202,8 +196,6 @@
 
 .method private static isLockScreenMesagePref(Landroid/content/Context;I)Z
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -286,12 +278,6 @@
 
 .method private updateAvatarView(Landroid/content/Context;Landroid/widget/RemoteViews;ILjava/lang/String;JI)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/widget/RemoteViews;
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
-    .param p5    # J
-    .param p7    # I
 
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -375,13 +361,6 @@
 # virtual methods
 .method public makeCoverMsgList(Landroid/content/Context;ILjava/lang/String;ILcom/android/mms/transaction/MessagingNotification$NotificationInfo;ZLandroid/app/PendingIntent;)V
     .locals 9
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
-    .param p5    # Lcom/android/mms/transaction/MessagingNotification$NotificationInfo;
-    .param p6    # Z
-    .param p7    # Landroid/app/PendingIntent;
 
     const/4 v8, 0x0
 
@@ -408,14 +387,6 @@
 
 .method public makeCoverMsgList(Landroid/content/Context;ILjava/lang/String;ILcom/android/mms/transaction/MessagingNotification$NotificationInfo;ZLandroid/app/PendingIntent;I)V
     .locals 18
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
-    .param p5    # Lcom/android/mms/transaction/MessagingNotification$NotificationInfo;
-    .param p6    # Z
-    .param p7    # Landroid/app/PendingIntent;
-    .param p8    # I
 
     const-string v3, "Mms/CoverMsgList"
 

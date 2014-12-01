@@ -32,9 +32,6 @@
 # direct methods
 .method constructor <init>(Lcom/sec/epdg/smartwifi/SmartWifiAdapter;Landroid/os/Handler;Ljava/lang/Runnable;Ljava/lang/Runnable;)V
     .locals 1
-    .param p2    # Landroid/os/Handler;
-    .param p3    # Ljava/lang/Runnable;
-    .param p4    # Ljava/lang/Runnable;
 
     iput-object p1, p0, Lcom/sec/epdg/smartwifi/SmartWifiAdapter$ResultRunnable;->this$0:Lcom/sec/epdg/smartwifi/SmartWifiAdapter;
 
@@ -91,7 +88,6 @@
 
 .method public setReturn(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 

@@ -51,8 +51,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/view/View;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -89,8 +87,6 @@
 
 .method private GetStrPixelWidth(Ljava/lang/String;Landroid/graphics/Paint;)I
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/graphics/Paint;
 
     const/4 v0, 0x0
 
@@ -105,7 +101,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/menu/PopupList;)Landroid/widget/PopupWindow;
     .locals 1
-    .param p0    # Lcom/android/mms/menu/PopupList;
 
     iget-object v0, p0, Lcom/android/mms/menu/PopupList;->mPopupWindow:Landroid/widget/PopupWindow;
 
@@ -114,8 +109,6 @@
 
 .method static synthetic access$002(Lcom/android/mms/menu/PopupList;Landroid/widget/PopupWindow;)Landroid/widget/PopupWindow;
     .locals 0
-    .param p0    # Lcom/android/mms/menu/PopupList;
-    .param p1    # Landroid/widget/PopupWindow;
 
     iput-object p1, p0, Lcom/android/mms/menu/PopupList;->mPopupWindow:Landroid/widget/PopupWindow;
 
@@ -124,7 +117,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/menu/PopupList;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/mms/menu/PopupList;
 
     iget-object v0, p0, Lcom/android/mms/menu/PopupList;->mAnchorView:Landroid/view/View;
 
@@ -133,7 +125,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/menu/PopupList;)Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;
     .locals 1
-    .param p0    # Lcom/android/mms/menu/PopupList;
 
     iget-object v0, p0, Lcom/android/mms/menu/PopupList;->mOnGLobalLayoutListener:Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;
 
@@ -142,7 +133,6 @@
 
 .method static synthetic access$300(Lcom/android/mms/menu/PopupList;)Lcom/android/mms/menu/PopupList$OnPopupItemClickListener;
     .locals 1
-    .param p0    # Lcom/android/mms/menu/PopupList;
 
     iget-object v0, p0, Lcom/android/mms/menu/PopupList;->mOnPopupItemClickListener:Lcom/android/mms/menu/PopupList$OnPopupItemClickListener;
 
@@ -151,7 +141,6 @@
 
 .method static synthetic access$400(Lcom/android/mms/menu/PopupList;)V
     .locals 0
-    .param p0    # Lcom/android/mms/menu/PopupList;
 
     invoke-direct {p0}, Lcom/android/mms/menu/PopupList;->updatePopupLayoutParams()V
 
@@ -160,7 +149,6 @@
 
 .method static synthetic access$600(Lcom/android/mms/menu/PopupList;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/mms/menu/PopupList;
 
     iget-object v0, p0, Lcom/android/mms/menu/PopupList;->mItems:Ljava/util/ArrayList;
 
@@ -169,7 +157,6 @@
 
 .method static synthetic access$700(Lcom/android/mms/menu/PopupList;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/mms/menu/PopupList;
 
     iget-object v0, p0, Lcom/android/mms/menu/PopupList;->mContext:Landroid/content/Context;
 
@@ -395,8 +382,6 @@
 # virtual methods
 .method public addItem(ILjava/lang/String;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/mms/menu/PopupList;->mItems:Ljava/util/ArrayList;
 
@@ -421,7 +406,6 @@
 
 .method public findItem(I)Lcom/android/mms/menu/PopupList$Item;
     .locals 3
-    .param p1    # I
 
     iget-object v2, p0, Lcom/android/mms/menu/PopupList;->mItems:Ljava/util/ArrayList;
 
@@ -472,7 +456,6 @@
 
 .method public setOnPopupItemClickListener(Lcom/android/mms/menu/PopupList$OnPopupItemClickListener;)V
     .locals 0
-    .param p1    # Lcom/android/mms/menu/PopupList$OnPopupItemClickListener;
 
     iput-object p1, p0, Lcom/android/mms/menu/PopupList;->mOnPopupItemClickListener:Lcom/android/mms/menu/PopupList$OnPopupItemClickListener;
 

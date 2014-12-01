@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/cover/StateNotifier;Landroid/os/Looper;)V
     .locals 2
-    .param p2    # Landroid/os/Looper;
 
     iput-object p1, p0, Lcom/android/server/cover/StateNotifier$StateNotifierHandler;->this$0:Lcom/android/server/cover/StateNotifier;
 
@@ -38,7 +37,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 5
-    .param p1    # Landroid/os/Message;
 
     const/4 v2, 0x0
 

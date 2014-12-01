@@ -72,7 +72,6 @@
 
 .method public static declared-synchronized getPluginData(Ljava/lang/String;Ljava/util/Map;)Landroid/webkitsec/PluginData;
     .locals 6
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -159,7 +158,6 @@
 
 .method public static declared-synchronized getSurrogate(Ljava/lang/String;Ljava/util/Map;)Landroid/webkitsec/CacheManager$CacheResult;
     .locals 6
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -246,7 +244,6 @@
 
 .method public static declared-synchronized registerHandler(Landroid/webkitsec/UrlInterceptHandler;)Z
     .locals 2
-    .param p0    # Landroid/webkitsec/UrlInterceptHandler;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -295,7 +292,6 @@
 
 .method public static declared-synchronized setUrlInterceptDisabled(Z)V
     .locals 2
-    .param p0    # Z
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -322,7 +318,6 @@
 
 .method public static declared-synchronized unregisterHandler(Landroid/webkitsec/UrlInterceptHandler;)Z
     .locals 2
-    .param p0    # Landroid/webkitsec/UrlInterceptHandler;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 

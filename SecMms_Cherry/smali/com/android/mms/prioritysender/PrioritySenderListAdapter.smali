@@ -85,8 +85,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/database/Cursor;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/database/Cursor;
 
     const/4 v1, 0x0
 
@@ -131,8 +129,6 @@
 
 .method public static getContactImage(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     invoke-static {p0}, Lcom/android/mms/prioritysender/PrioritySenderListAdapter;->initContactImage(Landroid/content/Context;)V
 
@@ -152,7 +148,6 @@
 
 .method private static declared-synchronized initContactImage(Landroid/content/Context;)V
     .locals 5
-    .param p0    # Landroid/content/Context;
 
     const-class v2, Lcom/android/mms/prioritysender/PrioritySenderListAdapter;
 
@@ -250,7 +245,6 @@
 
 .method private needDeleteAnimation(Landroid/database/Cursor;)Z
     .locals 2
-    .param p1    # Landroid/database/Cursor;
 
     iget v0, p0, Lcom/android/mms/prioritysender/PrioritySenderListAdapter;->mDeletedIdx:I
 
@@ -281,7 +275,6 @@
 # virtual methods
 .method public allowDrag(I)Z
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -290,8 +283,6 @@
 
 .method public allowDrop(II)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x1
 
@@ -458,9 +449,6 @@
 
 .method public bindView(Landroid/view/View;Landroid/content/Context;Landroid/database/Cursor;)V
     .locals 11
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/database/Cursor;
 
     const/4 v4, 0x0
 
@@ -588,7 +576,6 @@
 
 .method public changeCursor(Landroid/database/Cursor;)V
     .locals 4
-    .param p1    # Landroid/database/Cursor;
 
     const-string v2, "Mms/PrioritySenderListAdapter"
 
@@ -637,7 +624,6 @@
 
 .method public delete(I)Z
     .locals 4
-    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -690,8 +676,6 @@
 
 .method public dropDone(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/mms/prioritysender/PrioritySenderListAdapter;->mPrioritySenderListCursor:Lcom/android/mms/prioritysender/PrioritySenderListCursor;
 
@@ -713,7 +697,6 @@
 
 .method public getAddress(I)Ljava/lang/String;
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -807,9 +790,6 @@
 
 .method public newView(Landroid/content/Context;Landroid/database/Cursor;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/database/Cursor;
-    .param p3    # Landroid/view/ViewGroup;
 
     iget-object v0, p0, Lcom/android/mms/prioritysender/PrioritySenderListAdapter;->mFactory:Landroid/view/LayoutInflater;
 
@@ -859,7 +839,6 @@
 
 .method public onMovedToScrapHeap(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     instance-of v1, p1, Lcom/android/mms/prioritysender/PrioritySenderListItem;
 
@@ -890,7 +869,6 @@
 
 .method public setDeleteAnimationIndex(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/mms/prioritysender/PrioritySenderListAdapter;->mDeletedIdx:I
 
@@ -899,7 +877,6 @@
 
 .method public setMenuMode(I)V
     .locals 2
-    .param p1    # I
 
     iput p1, p0, Lcom/android/mms/prioritysender/PrioritySenderListAdapter;->mMenuMode:I
 
@@ -940,7 +917,6 @@
 
 .method public setOnContentChangedListener(Lcom/android/mms/prioritysender/PrioritySenderListAdapter$OnContentChangedListener;)V
     .locals 0
-    .param p1    # Lcom/android/mms/prioritysender/PrioritySenderListAdapter$OnContentChangedListener;
 
     iput-object p1, p0, Lcom/android/mms/prioritysender/PrioritySenderListAdapter;->mOnContentChangedListener:Lcom/android/mms/prioritysender/PrioritySenderListAdapter$OnContentChangedListener;
 

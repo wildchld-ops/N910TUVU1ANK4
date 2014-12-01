@@ -43,7 +43,7 @@
 
     const/4 v1, 0x3
 
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setInputType(I)V
+    invoke-virtual {v0, v1}, Landroid/widget/EditText;->setInputType(I)V
 
     iget-object v0, p0, Lcom/android/phone/callsettings/EditAutoRejectScreen$5;->this$0:Lcom/android/phone/callsettings/EditAutoRejectScreen;
 

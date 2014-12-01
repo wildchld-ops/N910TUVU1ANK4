@@ -384,7 +384,6 @@
 
 .method private readString(Ljava/lang/String;)Ljava/lang/String;
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     const/4 v7, 0x0
 
@@ -474,7 +473,6 @@
 # virtual methods
 .method public InitBargeInRecognizer(Lcom/sec/android/app/IWSpeechRecognizer/IWSpeechRecognizerListener;)V
     .locals 1
-    .param p1    # Lcom/sec/android/app/IWSpeechRecognizer/IWSpeechRecognizerListener;
 
     iput-object p1, p0, Lcom/sec/android/app/IWSpeechRecognizer/BargeInRecognizer;->mListener:Lcom/sec/android/app/IWSpeechRecognizer/IWSpeechRecognizerListener;
 
@@ -487,7 +485,6 @@
 
 .method public SendHandlerMessage(I)V
     .locals 5
-    .param p1    # I
 
     iget-object v2, p0, Lcom/sec/android/app/IWSpeechRecognizer/BargeInRecognizer;->handler:Landroid/os/Handler;
 
@@ -547,7 +544,6 @@
 
 .method public delayedStartBargeIn(I)V
     .locals 4
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/app/IWSpeechRecognizer/BargeInRecognizer;->TAG:Ljava/lang/String;
 
@@ -867,7 +863,6 @@
 
 .method public isBargeInFile(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/io/File;
 
@@ -918,7 +913,6 @@
 
 .method public setContext(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     iget-object v0, p0, Lcom/sec/android/app/IWSpeechRecognizer/BargeInRecognizer;->TAG:Ljava/lang/String;
 
@@ -1463,7 +1457,6 @@
 
 .method public startBargeIn(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/app/IWSpeechRecognizer/BargeInRecognizer;->TAG:Ljava/lang/String;
 
@@ -1556,8 +1549,6 @@
 
 .method public startBargeIn(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/sec/android/app/IWSpeechRecognizer/BargeInRecognizer;->TAG:Ljava/lang/String;
 

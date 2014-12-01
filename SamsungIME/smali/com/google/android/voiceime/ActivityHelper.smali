@@ -24,8 +24,6 @@
 
 .method static synthetic access$000(Lcom/google/android/voiceime/ActivityHelper;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/google/android/voiceime/ActivityHelper;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/google/android/voiceime/ActivityHelper;->notifyResult(Ljava/lang/String;)V
 
@@ -34,7 +32,6 @@
 
 .method private createResultDialog([Ljava/lang/String;)Landroid/app/Dialog;
     .locals 3
-    .param p1    # [Ljava/lang/String;
 
     sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
 
@@ -89,7 +86,6 @@
 
 .method private notifyResult(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/google/android/voiceime/ActivityHelper;->mServiceBridge:Lcom/google/android/voiceime/ServiceBridge;
 
@@ -104,9 +100,6 @@
 # virtual methods
 .method protected onActivityResult(IILandroid/content/Intent;)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const/4 v1, 0x1
 
@@ -159,7 +152,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 

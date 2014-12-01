@@ -31,12 +31,6 @@
 # direct methods
 .method public constructor <init>(JLjava/lang/String;IJIJ)V
     .locals 0
-    .param p1    # J
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
-    .param p5    # J
-    .param p7    # I
-    .param p8    # J
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -57,7 +51,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/prioritysender/PrioritySenderCache$PrioritySender;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/mms/prioritysender/PrioritySenderCache$PrioritySender;
 
     iget-object v0, p0, Lcom/android/mms/prioritysender/PrioritySenderCache$PrioritySender;->mAddress:Ljava/lang/String;
 
@@ -66,7 +59,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/prioritysender/PrioritySenderCache$PrioritySender;)I
     .locals 1
-    .param p0    # Lcom/android/mms/prioritysender/PrioritySenderCache$PrioritySender;
 
     iget v0, p0, Lcom/android/mms/prioritysender/PrioritySenderCache$PrioritySender;->mMsgType:I
 
@@ -75,8 +67,6 @@
 
 .method static synthetic access$102(Lcom/android/mms/prioritysender/PrioritySenderCache$PrioritySender;I)I
     .locals 0
-    .param p0    # Lcom/android/mms/prioritysender/PrioritySenderCache$PrioritySender;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/mms/prioritysender/PrioritySenderCache$PrioritySender;->mMsgType:I
 
@@ -85,7 +75,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/prioritysender/PrioritySenderCache$PrioritySender;)J
     .locals 2
-    .param p0    # Lcom/android/mms/prioritysender/PrioritySenderCache$PrioritySender;
 
     iget-wide v0, p0, Lcom/android/mms/prioritysender/PrioritySenderCache$PrioritySender;->mMsgId:J
 
@@ -94,8 +83,6 @@
 
 .method static synthetic access$202(Lcom/android/mms/prioritysender/PrioritySenderCache$PrioritySender;J)J
     .locals 0
-    .param p0    # Lcom/android/mms/prioritysender/PrioritySenderCache$PrioritySender;
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/android/mms/prioritysender/PrioritySenderCache$PrioritySender;->mMsgId:J
 
@@ -104,7 +91,6 @@
 
 .method static synthetic access$300(Lcom/android/mms/prioritysender/PrioritySenderCache$PrioritySender;)J
     .locals 2
-    .param p0    # Lcom/android/mms/prioritysender/PrioritySenderCache$PrioritySender;
 
     iget-wide v0, p0, Lcom/android/mms/prioritysender/PrioritySenderCache$PrioritySender;->mId:J
 
@@ -113,7 +99,6 @@
 
 .method static synthetic access$400(Lcom/android/mms/prioritysender/PrioritySenderCache$PrioritySender;)J
     .locals 2
-    .param p0    # Lcom/android/mms/prioritysender/PrioritySenderCache$PrioritySender;
 
     iget-wide v0, p0, Lcom/android/mms/prioritysender/PrioritySenderCache$PrioritySender;->mThreadId:J
 
@@ -122,8 +107,6 @@
 
 .method static synthetic access$402(Lcom/android/mms/prioritysender/PrioritySenderCache$PrioritySender;J)J
     .locals 0
-    .param p0    # Lcom/android/mms/prioritysender/PrioritySenderCache$PrioritySender;
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/android/mms/prioritysender/PrioritySenderCache$PrioritySender;->mThreadId:J
 

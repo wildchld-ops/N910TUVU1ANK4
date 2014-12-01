@@ -104,7 +104,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/wifi/hs20/Hs20Settings;)Lcom/android/settings/wifi/hs20/Hs20Settings$Scanner;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/hs20/Hs20Settings;
 
     iget-object v0, p0, Lcom/android/settings/wifi/hs20/Hs20Settings;->mScanner:Lcom/android/settings/wifi/hs20/Hs20Settings$Scanner;
 
@@ -113,7 +112,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/wifi/hs20/Hs20Settings;)Landroid/net/wifi/WifiManager;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/hs20/Hs20Settings;
 
     iget-object v0, p0, Lcom/android/settings/wifi/hs20/Hs20Settings;->mWifiManager:Landroid/net/wifi/WifiManager;
 
@@ -122,8 +120,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/wifi/hs20/Hs20Settings;Ljava/lang/Boolean;)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/hs20/Hs20Settings;
-    .param p1    # Ljava/lang/Boolean;
 
     invoke-direct {p0, p1}, Lcom/android/settings/wifi/hs20/Hs20Settings;->setRefreshAction(Ljava/lang/Boolean;)V
 
@@ -132,8 +128,6 @@
 
 .method static synthetic access$402(Lcom/android/settings/wifi/hs20/Hs20Settings;Ljava/util/List;)Ljava/util/List;
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/hs20/Hs20Settings;
-    .param p1    # Ljava/util/List;
 
     iput-object p1, p0, Lcom/android/settings/wifi/hs20/Hs20Settings;->mLastScanResult:Ljava/util/List;
 
@@ -142,7 +136,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/wifi/hs20/Hs20Settings;)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/hs20/Hs20Settings;
 
     invoke-direct {p0}, Lcom/android/settings/wifi/hs20/Hs20Settings;->updateConnectableApList()V
 
@@ -193,8 +186,6 @@
 
 .method private getSecuredKey(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/16 v3, 0x11
 
@@ -276,7 +267,6 @@
 
 .method private setRefreshAction(Ljava/lang/Boolean;)V
     .locals 4
-    .param p1    # Ljava/lang/Boolean;
 
     const/4 v0, 0x1
 
@@ -692,7 +682,6 @@
 
 .method private updateConnectionState(Landroid/net/NetworkInfo$DetailedState;)V
     .locals 6
-    .param p1    # Landroid/net/NetworkInfo$DetailedState;
 
     iput-object p1, p0, Lcom/android/settings/wifi/hs20/Hs20Settings;->mLastState:Landroid/net/NetworkInfo$DetailedState;
 
@@ -897,7 +886,6 @@
 
 .method private updateWifiState(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v0, 0x3
 
@@ -945,8 +933,6 @@
 # virtual methods
 .method protected handleReceivedEvent(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
@@ -1087,7 +1073,6 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v2, 0x0
 
@@ -1194,7 +1179,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -1263,8 +1247,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
     .locals 4
-    .param p1    # Landroid/view/Menu;
-    .param p2    # Landroid/view/MenuInflater;
 
     const/4 v3, 0x5
 
@@ -1309,7 +1291,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 3
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v0, 0x1
 
@@ -1400,8 +1381,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 7
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     const/4 v6, 0x1
 

@@ -40,9 +40,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/launcher2/SurfaceWidgetConnection$ServiceConn;Lcom/android/launcher2/SurfaceWidgetConnection$Name;Lcom/android/launcher2/SurfaceWidgetView;)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/SurfaceWidgetConnection$ServiceConn;
-    .param p2    # Lcom/android/launcher2/SurfaceWidgetConnection$Name;
-    .param p3    # Lcom/android/launcher2/SurfaceWidgetView;
 
     const/4 v0, 0x0
 
@@ -79,7 +76,6 @@
 
 .method static synthetic access$200(Lcom/android/launcher2/SurfaceWidgetConnection$SurfaceInfo;)Lcom/android/launcher2/SurfaceWidgetView;
     .locals 1
-    .param p0    # Lcom/android/launcher2/SurfaceWidgetConnection$SurfaceInfo;
 
     iget-object v0, p0, Lcom/android/launcher2/SurfaceWidgetConnection$SurfaceInfo;->mSurfaceWidgetView:Lcom/android/launcher2/SurfaceWidgetView;
 
@@ -98,7 +94,6 @@
 
 .method isSameOrientation(I)Z
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Lcom/android/launcher2/SurfaceWidgetConnection$SurfaceInfo;->mOrientation:I
 
@@ -117,9 +112,6 @@
 
 .method public onSurfaceTextureAvailable(Landroid/graphics/SurfaceTexture;II)V
     .locals 10
-    .param p1    # Landroid/graphics/SurfaceTexture;
-    .param p2    # I
-    .param p3    # I
 
     invoke-virtual {p0}, Lcom/android/launcher2/SurfaceWidgetConnection$SurfaceInfo;->releaseSurface()V
 
@@ -256,7 +248,6 @@
 
 .method public onSurfaceTextureDestroyed(Landroid/graphics/SurfaceTexture;)Z
     .locals 4
-    .param p1    # Landroid/graphics/SurfaceTexture;
 
     # getter for: Lcom/android/launcher2/SurfaceWidgetConnection;->DEBUG:Z
     invoke-static {}, Lcom/android/launcher2/SurfaceWidgetConnection;->access$100()Z
@@ -334,9 +325,6 @@
 
 .method public onSurfaceTextureSizeChanged(Landroid/graphics/SurfaceTexture;II)V
     .locals 11
-    .param p1    # Landroid/graphics/SurfaceTexture;
-    .param p2    # I
-    .param p3    # I
 
     iget-object v0, p0, Lcom/android/launcher2/SurfaceWidgetConnection$SurfaceInfo;->mSavedSurfaceState:Lcom/android/launcher2/SurfaceWidgetConnection$SurfaceInfo$SavedSurfaceState;
 
@@ -508,7 +496,6 @@
 
 .method public onSurfaceTextureUpdated(Landroid/graphics/SurfaceTexture;)V
     .locals 0
-    .param p1    # Landroid/graphics/SurfaceTexture;
 
     return-void
 .end method

@@ -40,7 +40,6 @@
 # virtual methods
 .method public createFromParcel(Landroid/os/Parcel;)Lcom/samsung/shareshot/User;
     .locals 4
-    .param p1    # Landroid/os/Parcel;
 
     new-instance v0, Lcom/samsung/shareshot/User;
 
@@ -181,7 +180,6 @@
 
 .method public newArray(I)[Lcom/samsung/shareshot/User;
     .locals 1
-    .param p1    # I
 
     new-array v0, p1, [Lcom/samsung/shareshot/User;
 

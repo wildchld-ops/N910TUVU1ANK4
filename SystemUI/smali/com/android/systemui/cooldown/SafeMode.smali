@@ -27,7 +27,6 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
@@ -48,7 +47,6 @@
 
 .method protected onCreateDialog(I)Landroid/app/Dialog;
     .locals 20
-    .param p1    # I
 
     const-string v18, "ro.build.characteristics"
 
@@ -417,7 +415,6 @@
 
 .method public onDismiss(Landroid/content/DialogInterface;)V
     .locals 0
-    .param p1    # Landroid/content/DialogInterface;
 
     return-void
 .end method

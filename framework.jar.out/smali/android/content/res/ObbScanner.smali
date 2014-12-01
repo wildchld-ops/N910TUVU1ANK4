@@ -14,7 +14,6 @@
 
 .method public static getObbInfo(Ljava/lang/String;)Landroid/content/res/ObbInfo;
     .locals 6
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

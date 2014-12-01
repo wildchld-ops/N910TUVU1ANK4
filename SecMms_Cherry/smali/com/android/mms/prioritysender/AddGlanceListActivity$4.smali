@@ -36,8 +36,6 @@
 # virtual methods
 .method public onClick(Ljava/lang/String;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/mms/prioritysender/AddGlanceListActivity$4;->this$0:Lcom/android/mms/prioritysender/AddGlanceListActivity;
 

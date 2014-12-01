@@ -319,7 +319,7 @@
 
     iget-object v1, p0, Lcom/android/phone/UsCdmaCallForwardingDialog;->mCFState:Lcom/android/phone/UsCdmaCallForwardingDialog$CFState;
 
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    invoke-virtual {v1}, Lcom/android/phone/UsCdmaCallForwardingDialog$CFState;->ordinal()I
 
     move-result v1
 
@@ -331,7 +331,7 @@
 
     invoke-direct {p0, v0}, Lcom/android/phone/UsCdmaCallForwardingDialog;->log(Ljava/lang/String;)V
 
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/UsCdmaCallForwardingDialog;->finish()V
 
     :goto_0
     return-void
@@ -341,7 +341,7 @@
 
     invoke-direct {p0, v0, v2}, Lcom/android/phone/UsCdmaCallForwardingDialog;->log(Ljava/lang/String;Z)V
 
-    invoke-virtual {p0, v2}, Landroid/app/Activity;->showDialog(I)V
+    invoke-virtual {p0, v2}, Lcom/android/phone/UsCdmaCallForwardingDialog;->showDialog(I)V
 
     goto :goto_0
 
@@ -352,7 +352,7 @@
 
     const/4 v0, 0x3
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->showDialog(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/UsCdmaCallForwardingDialog;->showDialog(I)V
 
     goto :goto_0
 
@@ -363,7 +363,7 @@
 
     const/4 v0, 0x2
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->showDialog(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/UsCdmaCallForwardingDialog;->showDialog(I)V
 
     goto :goto_0
 
@@ -374,7 +374,7 @@
 
     const/4 v0, 0x4
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->showDialog(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/UsCdmaCallForwardingDialog;->showDialog(I)V
 
     goto :goto_0
 
@@ -625,7 +625,7 @@
 
     iput-object v1, p0, Lcom/android/phone/UsCdmaCallForwardingDialog;->mPhone:Lcom/android/internal/telephony/Phone;
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/phone/UsCdmaCallForwardingDialog;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
 
@@ -745,7 +745,7 @@
 
     const/high16 v7, 0x1040000
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/UsCdmaCallForwardingDialog;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v5
 
@@ -794,7 +794,7 @@
 
     invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-virtual {p0, v8}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v8}, Lcom/android/phone/UsCdmaCallForwardingDialog;->getString(I)Ljava/lang/String;
 
     move-result-object v6
 
@@ -840,7 +840,7 @@
 
     const v6, 0x7f0906cc
 
-    invoke-virtual {p0, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v6}, Lcom/android/phone/UsCdmaCallForwardingDialog;->getString(I)Ljava/lang/String;
 
     move-result-object v6
 
@@ -891,7 +891,7 @@
 
     move-result-object v5
 
-    invoke-virtual {p0, v10}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v10}, Lcom/android/phone/UsCdmaCallForwardingDialog;->getString(I)Ljava/lang/String;
 
     move-result-object v6
 
@@ -901,7 +901,7 @@
 
     const v6, 0x7f0906d0
 
-    invoke-virtual {p0, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v6}, Lcom/android/phone/UsCdmaCallForwardingDialog;->getString(I)Ljava/lang/String;
 
     move-result-object v6
 
@@ -966,7 +966,7 @@
 
     const v6, 0x7f0906cd
 
-    invoke-virtual {p0, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v6}, Lcom/android/phone/UsCdmaCallForwardingDialog;->getString(I)Ljava/lang/String;
 
     move-result-object v6
 
@@ -1044,7 +1044,7 @@
 
     iget-object v6, p0, Lcom/android/phone/UsCdmaCallForwardingDialog;->mDialNumber:Ljava/lang/String;
 
-    invoke-virtual {v5, v6}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {v5, v6}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
     iget-object v5, p0, Lcom/android/phone/UsCdmaCallForwardingDialog;->eNumberText:Landroid/widget/EditText;
 
@@ -1062,7 +1062,7 @@
 
     invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-virtual {p0, v8}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v8}, Lcom/android/phone/UsCdmaCallForwardingDialog;->getString(I)Ljava/lang/String;
 
     move-result-object v6
 
@@ -1104,7 +1104,7 @@
 
     const v5, 0x7f0906c9
 
-    invoke-virtual {p0, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v5}, Lcom/android/phone/UsCdmaCallForwardingDialog;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1117,7 +1117,7 @@
 
     move-result-object v5
 
-    invoke-virtual {p0, v10}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v10}, Lcom/android/phone/UsCdmaCallForwardingDialog;->getString(I)Ljava/lang/String;
 
     move-result-object v6
 
@@ -1127,7 +1127,7 @@
 
     const v6, 0x7f0906cb
 
-    invoke-virtual {p0, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v6}, Lcom/android/phone/UsCdmaCallForwardingDialog;->getString(I)Ljava/lang/String;
 
     move-result-object v6
 
@@ -1149,7 +1149,7 @@
 
     if-eqz v5, :cond_3
 
-    invoke-virtual {p0, v9}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v9}, Lcom/android/phone/UsCdmaCallForwardingDialog;->getString(I)Ljava/lang/String;
 
     move-result-object v3
 
@@ -1207,7 +1207,7 @@
     :cond_2
     const v5, 0x7f0906ca
 
-    invoke-virtual {p0, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v5}, Lcom/android/phone/UsCdmaCallForwardingDialog;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1216,7 +1216,7 @@
     :cond_3
     const v5, 0x7f0908a5
 
-    invoke-virtual {p0, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v5}, Lcom/android/phone/UsCdmaCallForwardingDialog;->getString(I)Ljava/lang/String;
 
     move-result-object v3
 
@@ -1225,13 +1225,13 @@
     :pswitch_2
     const v5, 0x7f0906d7
 
-    invoke-virtual {p0, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v5}, Lcom/android/phone/UsCdmaCallForwardingDialog;->getString(I)Ljava/lang/String;
 
     move-result-object v4
 
     const v5, 0x7f0906d8
 
-    invoke-virtual {p0, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v5}, Lcom/android/phone/UsCdmaCallForwardingDialog;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1280,7 +1280,7 @@
 
     const v6, 0x7f0906d2
 
-    invoke-virtual {p0, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v6}, Lcom/android/phone/UsCdmaCallForwardingDialog;->getString(I)Ljava/lang/String;
 
     move-result-object v6
 
@@ -1312,7 +1312,7 @@
 
     const v5, 0x7f0906d6
 
-    invoke-virtual {p0, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v5}, Lcom/android/phone/UsCdmaCallForwardingDialog;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1384,7 +1384,7 @@
 
     invoke-direct {p0, v0, v1}, Lcom/android/phone/UsCdmaCallForwardingDialog;->log(Ljava/lang/String;Z)V
 
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/UsCdmaCallForwardingDialog;->finish()V
 
     return-void
 .end method
@@ -1438,11 +1438,11 @@
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setEnabled(Z)V
+    invoke-virtual {v0, v1}, Landroid/widget/Button;->setEnabled(Z)V
 
     sget-object v0, Lcom/android/phone/UsCdmaCallForwardingDialog;->mCustomizeDialog:Landroid/app/AlertDialog;
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
+    invoke-virtual {v0}, Landroid/app/AlertDialog;->getWindow()Landroid/view/Window;
 
     move-result-object v0
 
@@ -1460,7 +1460,7 @@
 
     invoke-direct {v1}, Landroid/telephony/PhoneNumberFormattingTextWatcher;-><init>()V
 
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->addTextChangedListener(Landroid/text/TextWatcher;)V
+    invoke-virtual {v0, v1}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
     iget-object v0, p0, Lcom/android/phone/UsCdmaCallForwardingDialog;->eNumberText:Landroid/widget/EditText;
 
@@ -1468,7 +1468,7 @@
 
     invoke-direct {v1, p0}, Lcom/android/phone/UsCdmaCallForwardingDialog$13;-><init>(Lcom/android/phone/UsCdmaCallForwardingDialog;)V
 
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->addTextChangedListener(Landroid/text/TextWatcher;)V
+    invoke-virtual {v0, v1}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
     goto :goto_0
 

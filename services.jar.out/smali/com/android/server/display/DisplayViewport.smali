@@ -44,7 +44,6 @@
 # virtual methods
 .method public copyFrom(Lcom/android/server/display/DisplayViewport;)V
     .locals 2
-    .param p1    # Lcom/android/server/display/DisplayViewport;
 
     iget-boolean v0, p1, Lcom/android/server/display/DisplayViewport;->valid:Z
 

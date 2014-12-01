@@ -82,7 +82,6 @@
 
 .method static synthetic access$202(Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Ljava/lang/String;
 
     sput-object p0, Lcom/android/settings/fingerprint/FingerprintPassword;->mFingerprintPreviousStage:Ljava/lang/String;
 
@@ -107,7 +106,6 @@
 
 .method static synthetic access$602(I)I
     .locals 0
-    .param p0    # I
 
     sput p0, Lcom/android/settings/fingerprint/FingerprintPassword;->mFingerprintIndex:I
 
@@ -116,7 +114,6 @@
 
 .method static synthetic access$702(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/settings/fingerprint/FingerprintPassword;->bFingerprintPassword:Z
 
@@ -133,7 +130,6 @@
 
 .method static synthetic access$802(Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Ljava/lang/String;
 
     sput-object p0, Lcom/android/settings/fingerprint/FingerprintPassword;->mFingerpintOwnName:Ljava/lang/String;
 
@@ -200,7 +196,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 6
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onCreate(Landroid/os/Bundle;)V
 

@@ -37,8 +37,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/launcher2/MenuView;Lcom/android/launcher2/MenuWidgets;)V
     .locals 6
-    .param p1    # Lcom/android/launcher2/MenuView;
-    .param p2    # Lcom/android/launcher2/MenuWidgets;
 
     const/4 v5, 0x0
 
@@ -144,7 +142,6 @@
 
 .method static synthetic access$000(Lcom/android/launcher2/MenuWidgetsSearch;)Landroid/widget/SearchView;
     .locals 1
-    .param p0    # Lcom/android/launcher2/MenuWidgetsSearch;
 
     iget-object v0, p0, Lcom/android/launcher2/MenuWidgetsSearch;->mSearchEdit:Landroid/widget/SearchView;
 
@@ -153,7 +150,6 @@
 
 .method static synthetic access$100(Lcom/android/launcher2/MenuWidgetsSearch;)Lcom/android/launcher2/MenuWidgets;
     .locals 1
-    .param p0    # Lcom/android/launcher2/MenuWidgetsSearch;
 
     iget-object v0, p0, Lcom/android/launcher2/MenuWidgetsSearch;->mMenuWidgets:Lcom/android/launcher2/MenuWidgets;
 
@@ -183,7 +179,6 @@
 
 .method public enter(Lcom/android/launcher2/MenuWidgets$WidgetState;Ljava/util/List;)V
     .locals 4
-    .param p1    # Lcom/android/launcher2/MenuWidgets$WidgetState;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -364,7 +359,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 3
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Lcom/android/launcher2/MenuWidgetsSearch;->mMenuSelBackDown:Landroid/view/View;
 
@@ -388,9 +382,6 @@
 
 .method public onKey(Landroid/view/View;ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # Landroid/view/KeyEvent;
 
     invoke-virtual {p3}, Landroid/view/KeyEvent;->getAction()I
 
@@ -415,7 +406,6 @@
 
 .method public onQueryTextChange(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-boolean v0, p0, Lcom/android/launcher2/MenuWidgetsSearch;->mSkippedFirst:Z
 
@@ -444,7 +434,6 @@
 
 .method public onQueryTextSubmit(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Lcom/android/launcher2/MenuWidgetsSearch;->closeKeyboard()V
 
@@ -455,7 +444,6 @@
 
 .method public onTouchModeChanged(Z)V
     .locals 1
-    .param p1    # Z
 
     if-nez p1, :cond_0
 
@@ -469,7 +457,6 @@
 
 .method public restore(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v3, 0x1
 
@@ -515,7 +502,6 @@
 
 .method public save(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "MENU_WIDGET_SEARCH_PATTERN"
 

@@ -23,7 +23,6 @@
 
 .method public static getInstance(Landroid/content/Context;)Lcom/sec/epdg/EpdgRilAdapter;
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     sget-object v0, Lcom/sec/epdg/EpdgRilAdapter;->mInstance:Lcom/sec/epdg/EpdgRilAdapter;
 
@@ -90,8 +89,6 @@
 # virtual methods
 .method public triggerHandover(IZ)V
     .locals 5
-    .param p1    # I
-    .param p2    # Z
 
     if-eqz p2, :cond_1
 
@@ -179,11 +176,6 @@
 
 .method public updateApnConnStatus(IZLcom/sec/epdg/EpdgRilInterface$IWlanLinkProperties;ZZ)V
     .locals 11
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # Lcom/sec/epdg/EpdgRilInterface$IWlanLinkProperties;
-    .param p4    # Z
-    .param p5    # Z
 
     if-eqz p2, :cond_0
 
@@ -395,7 +387,6 @@
 
 .method public updateEpdgAvailability(Z)V
     .locals 4
-    .param p1    # Z
 
     const-string v2, "[EPDG-->RIL]"
 

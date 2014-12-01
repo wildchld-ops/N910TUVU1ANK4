@@ -158,9 +158,6 @@
 
 .method private constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;Landroid/content/ComponentName;)V
     .locals 11
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # Landroid/content/ComponentName;
 
     const/16 v10, 0x10
 
@@ -425,7 +422,6 @@
 
 .method constructor <init>(Landroid/os/Parcel;)V
     .locals 5
-    .param p1    # Landroid/os/Parcel;
 
     const/4 v4, 0x0
 
@@ -694,7 +690,6 @@
 
 .method private addActionKey(Landroid/app/SearchableInfo$ActionKeyInfo;)V
     .locals 2
-    .param p1    # Landroid/app/SearchableInfo$ActionKeyInfo;
 
     iget-object v0, p0, Landroid/app/SearchableInfo;->mActionKeys:Ljava/util/HashMap;
 
@@ -724,8 +719,6 @@
 
 .method private static createActivityContext(Landroid/content/Context;Landroid/content/ComponentName;)Landroid/content/Context;
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/content/ComponentName;
 
     const/4 v1, 0x0
 
@@ -811,9 +804,6 @@
 
 .method public static getActivityMetaData(Landroid/content/Context;Landroid/content/pm/ActivityInfo;I)Landroid/app/SearchableInfo;
     .locals 8
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/content/pm/ActivityInfo;
-    .param p2    # I
 
     const/4 v2, 0x0
 
@@ -896,9 +886,6 @@
 
 .method private static getActivityMetaData(Landroid/content/Context;Lorg/xmlpull/v1/XmlPullParser;Landroid/content/ComponentName;)Landroid/app/SearchableInfo;
     .locals 11
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lorg/xmlpull/v1/XmlPullParser;
-    .param p2    # Landroid/content/ComponentName;
 
     const/4 v7, 0x0
 
@@ -1249,8 +1236,6 @@
 # virtual methods
 .method public addExtraAttribute(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v5, 0x0
 
@@ -1397,7 +1382,6 @@
 
 .method public findActionKey(I)Landroid/app/SearchableInfo$ActionKeyInfo;
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Landroid/app/SearchableInfo;->mActionKeys:Ljava/util/HashMap;
 
@@ -1426,7 +1410,6 @@
 
 .method public getActivityContext(Landroid/content/Context;)Landroid/content/Context;
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     iget-object v0, p0, Landroid/app/SearchableInfo;->mSearchActivity:Landroid/content/ComponentName;
 
@@ -1495,8 +1478,6 @@
 
 .method public getProviderContext(Landroid/content/Context;Landroid/content/Context;)Landroid/content/Context;
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -1865,8 +1846,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 5
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     const/4 v3, 0x1
 

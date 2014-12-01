@@ -33,7 +33,6 @@
 # virtual methods
 .method public addGpsStatusListener(Landroid/location/IGpsStatusListener;)V
     .locals 7
-    .param p1    # Landroid/location/IGpsStatusListener;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -152,7 +151,6 @@
 
 .method public removeGpsStatusListener(Landroid/location/IGpsStatusListener;)V
     .locals 7
-    .param p1    # Landroid/location/IGpsStatusListener;
 
     if-nez p1, :cond_0
 

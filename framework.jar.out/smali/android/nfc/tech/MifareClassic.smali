@@ -108,7 +108,6 @@
 
 .method public constructor <init>(Landroid/nfc/Tag;)V
     .locals 6
-    .param p1    # Landroid/nfc/Tag;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -261,9 +260,6 @@
 
 .method private authenticate(I[BZ)Z
     .locals 9
-    .param p1    # I
-    .param p2    # [B
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -357,7 +353,6 @@
 
 .method public static get(Landroid/nfc/Tag;)Landroid/nfc/tech/MifareClassic;
     .locals 3
-    .param p0    # Landroid/nfc/Tag;
 
     const/4 v1, 0x0
 
@@ -392,7 +387,6 @@
 
 .method private static validateBlock(I)V
     .locals 3
-    .param p0    # I
 
     if-ltz p0, :cond_0
 
@@ -431,7 +425,6 @@
 
 .method private static validateSector(I)V
     .locals 3
-    .param p0    # I
 
     if-ltz p0, :cond_0
 
@@ -470,7 +463,6 @@
 
 .method private static validateValueOperand(I)V
     .locals 2
-    .param p0    # I
 
     if-gez p0, :cond_0
 
@@ -490,8 +482,6 @@
 # virtual methods
 .method public authenticateSectorWithKeyA(I[B)Z
     .locals 1
-    .param p1    # I
-    .param p2    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -509,8 +499,6 @@
 
 .method public authenticateSectorWithKeyB(I[B)Z
     .locals 1
-    .param p1    # I
-    .param p2    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -528,7 +516,6 @@
 
 .method public blockToSector(I)I
     .locals 1
-    .param p1    # I
 
     invoke-static {p1}, Landroid/nfc/tech/MifareClassic;->validateBlock(I)V
 
@@ -579,8 +566,6 @@
 
 .method public decrement(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -636,7 +621,6 @@
 
 .method public getBlockCountInSector(I)I
     .locals 1
-    .param p1    # I
 
     invoke-static {p1}, Landroid/nfc/tech/MifareClassic;->validateSector(I)V
 
@@ -769,8 +753,6 @@
 
 .method public increment(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -834,7 +816,6 @@
 
 .method public readBlock(I)[B
     .locals 4
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -883,7 +864,6 @@
 
 .method public restore(I)V
     .locals 4
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -917,7 +897,6 @@
 
 .method public sectorToBlock(I)I
     .locals 1
-    .param p1    # I
 
     const/16 v0, 0x20
 
@@ -940,7 +919,6 @@
 
 .method public setTimeout(I)V
     .locals 4
-    .param p1    # I
 
     :try_start_0
     iget-object v2, p0, Landroid/nfc/tech/MifareClassic;->mTag:Landroid/nfc/Tag;
@@ -982,7 +960,6 @@
 
 .method public transceive([B)[B
     .locals 1
-    .param p1    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1000,7 +977,6 @@
 
 .method public transfer(I)V
     .locals 4
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1034,8 +1010,6 @@
 
 .method public writeBlock(I[B)V
     .locals 4
-    .param p1    # I
-    .param p2    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

@@ -110,7 +110,6 @@
 
 .method static synthetic access$000(Lcom/sec/android/visualeffect/tilt/TiltAlphaProvider;)F
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/tilt/TiltAlphaProvider;
 
     iget v0, p0, Lcom/sec/android/visualeffect/tilt/TiltAlphaProvider;->mCurrentAlpha:F
 
@@ -119,8 +118,6 @@
 
 .method static synthetic access$016(Lcom/sec/android/visualeffect/tilt/TiltAlphaProvider;F)F
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/tilt/TiltAlphaProvider;
-    .param p1    # F
 
     iget v0, p0, Lcom/sec/android/visualeffect/tilt/TiltAlphaProvider;->mCurrentAlpha:F
 
@@ -133,7 +130,6 @@
 
 .method static synthetic access$100(Lcom/sec/android/visualeffect/tilt/TiltAlphaProvider;)F
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/tilt/TiltAlphaProvider;
 
     iget v0, p0, Lcom/sec/android/visualeffect/tilt/TiltAlphaProvider;->mNextAlpha:F
 
@@ -142,7 +138,6 @@
 
 .method static synthetic access$200(Lcom/sec/android/visualeffect/tilt/TiltAlphaProvider;)Z
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/tilt/TiltAlphaProvider;
 
     iget-boolean v0, p0, Lcom/sec/android/visualeffect/tilt/TiltAlphaProvider;->mParentWindowFocus:Z
 
@@ -151,7 +146,6 @@
 
 .method static synthetic access$300(Lcom/sec/android/visualeffect/tilt/TiltAlphaProvider;)V
     .locals 0
-    .param p0    # Lcom/sec/android/visualeffect/tilt/TiltAlphaProvider;
 
     invoke-direct {p0}, Lcom/sec/android/visualeffect/tilt/TiltAlphaProvider;->stopAlphaAnimation()V
 
@@ -160,7 +154,6 @@
 
 .method static synthetic access$400(Lcom/sec/android/visualeffect/tilt/TiltAlphaProvider;)Lcom/sec/android/visualeffect/tilt/TiltAlphaProvider$AlphaChangedListener;
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/tilt/TiltAlphaProvider;
 
     iget-object v0, p0, Lcom/sec/android/visualeffect/tilt/TiltAlphaProvider;->mAlphaChangedListener:Lcom/sec/android/visualeffect/tilt/TiltAlphaProvider$AlphaChangedListener;
 
@@ -169,7 +162,6 @@
 
 .method static synthetic access$500(Lcom/sec/android/visualeffect/tilt/TiltAlphaProvider;)Z
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/tilt/TiltAlphaProvider;
 
     iget-boolean v0, p0, Lcom/sec/android/visualeffect/tilt/TiltAlphaProvider;->isAlphaAnimationRunning:Z
 
@@ -178,7 +170,6 @@
 
 .method static synthetic access$600(Lcom/sec/android/visualeffect/tilt/TiltAlphaProvider;)V
     .locals 0
-    .param p0    # Lcom/sec/android/visualeffect/tilt/TiltAlphaProvider;
 
     invoke-direct {p0}, Lcom/sec/android/visualeffect/tilt/TiltAlphaProvider;->loop()V
 
@@ -262,7 +253,6 @@
 
 .method public handleSensorEvent(Landroid/hardware/SensorEvent;)V
     .locals 8
-    .param p1    # Landroid/hardware/SensorEvent;
 
     const v7, 0x3e4ccccc
 
@@ -565,7 +555,6 @@
 
 .method public registerAlphaChangedListener(Lcom/sec/android/visualeffect/tilt/TiltAlphaProvider$AlphaChangedListener;)V
     .locals 0
-    .param p1    # Lcom/sec/android/visualeffect/tilt/TiltAlphaProvider$AlphaChangedListener;
 
     iput-object p1, p0, Lcom/sec/android/visualeffect/tilt/TiltAlphaProvider;->mAlphaChangedListener:Lcom/sec/android/visualeffect/tilt/TiltAlphaProvider$AlphaChangedListener;
 
@@ -574,7 +563,6 @@
 
 .method public setParentWindowFocusState(Z)V
     .locals 3
-    .param p1    # Z
 
     const-string v0, "Tilt_TiltAlphaProvider"
 
@@ -605,7 +593,6 @@
 
 .method public setTiltEnable(Z)V
     .locals 3
-    .param p1    # Z
 
     const-string v0, "Tilt_TiltAlphaProvider"
 

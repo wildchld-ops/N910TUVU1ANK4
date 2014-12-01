@@ -120,7 +120,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1, v0}, Landroid/widget/TextView;->setFilters([Landroid/text/InputFilter;)V
+    invoke-virtual {v1, v0}, Landroid/widget/EditText;->setFilters([Landroid/text/InputFilter;)V
 
     :cond_0
     :goto_0
@@ -172,7 +172,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1, v0}, Landroid/widget/TextView;->setFilters([Landroid/text/InputFilter;)V
+    invoke-virtual {v1, v0}, Landroid/widget/EditText;->setFilters([Landroid/text/InputFilter;)V
 
     goto :goto_0
 .end method

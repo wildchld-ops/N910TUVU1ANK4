@@ -16,7 +16,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -43,7 +42,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/wifi/WifiReset;)Landroid/content/BroadcastReceiver;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiReset;
 
     iget-object v0, p0, Lcom/android/settings/wifi/WifiReset;->mReceiver:Landroid/content/BroadcastReceiver;
 
@@ -52,7 +50,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/wifi/WifiReset;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiReset;
 
     iget-object v0, p0, Lcom/android/settings/wifi/WifiReset;->mContext:Landroid/content/Context;
 

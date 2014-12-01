@@ -37,7 +37,6 @@
 # virtual methods
 .method add(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x0
 

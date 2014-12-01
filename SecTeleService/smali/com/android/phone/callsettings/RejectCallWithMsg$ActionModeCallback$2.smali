@@ -55,7 +55,7 @@
 
     iget-object v3, v3, Lcom/android/phone/callsettings/RejectCallWithMsg$ActionModeCallback;->this$0:Lcom/android/phone/callsettings/RejectCallWithMsg;
 
-    invoke-virtual {v3}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v3}, Lcom/android/phone/callsettings/RejectCallWithMsg;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 

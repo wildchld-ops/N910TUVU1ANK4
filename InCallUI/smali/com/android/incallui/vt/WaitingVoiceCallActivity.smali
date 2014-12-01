@@ -45,7 +45,6 @@
 # virtual methods
 .method automaticAccept(Lcom/android/services/telephony/common/Call;)V
     .locals 6
-    .param p1    # Lcom/android/services/telephony/common/Call;
 
     const/4 v5, 0x0
 
@@ -218,14 +217,12 @@
 
 .method public onCallListChange(Lcom/android/incallui/CallList;)V
     .locals 0
-    .param p1    # Lcom/android/incallui/CallList;
 
     return-void
 .end method
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 6
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
@@ -351,14 +348,12 @@
 
 .method public onDisconnect(Lcom/android/services/telephony/common/Call;)V
     .locals 0
-    .param p1    # Lcom/android/services/telephony/common/Call;
 
     return-void
 .end method
 
 .method public onIncomingCall(Lcom/android/services/telephony/common/Call;)V
     .locals 1
-    .param p1    # Lcom/android/services/telephony/common/Call;
 
     const-string v0, "onIncomingCall"
 

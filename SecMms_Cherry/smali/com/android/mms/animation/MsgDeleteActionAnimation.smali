@@ -47,8 +47,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/mms/ui/MsgSweepActionListView;Z)V
     .locals 4
-    .param p1    # Lcom/android/mms/ui/MsgSweepActionListView;
-    .param p2    # Z
 
     const/4 v3, 0x0
 
@@ -101,7 +99,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/animation/MsgDeleteActionAnimation;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/mms/animation/MsgDeleteActionAnimation;
 
     iget-object v0, p0, Lcom/android/mms/animation/MsgDeleteActionAnimation;->TAG:Ljava/lang/String;
 
@@ -110,7 +107,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/animation/MsgDeleteActionAnimation;)Lcom/android/mms/animation/MsgDeleteActionAnimation$ChildItemViewMgr;
     .locals 1
-    .param p0    # Lcom/android/mms/animation/MsgDeleteActionAnimation;
 
     iget-object v0, p0, Lcom/android/mms/animation/MsgDeleteActionAnimation;->mChildItemViewMgr:Lcom/android/mms/animation/MsgDeleteActionAnimation$ChildItemViewMgr;
 
@@ -119,8 +115,6 @@
 
 .method private sortVisibleDelItemsInAscending(Lcom/android/mms/ui/MsgSweepActionListView;[I)[I
     .locals 13
-    .param p1    # Lcom/android/mms/ui/MsgSweepActionListView;
-    .param p2    # [I
 
     array-length v11, p2
 
@@ -517,7 +511,6 @@
 
 .method public readyDeleteActionAnimMultiThread([I)V
     .locals 3
-    .param p1    # [I
 
     const/4 v2, 0x0
 
@@ -565,7 +558,6 @@
 
 .method public setOnMsgDeleteActionAnimation(Lcom/android/mms/animation/MsgDeleteActionAnimation$OnDeleteConversationListAnimationEndListener;)V
     .locals 0
-    .param p1    # Lcom/android/mms/animation/MsgDeleteActionAnimation$OnDeleteConversationListAnimationEndListener;
 
     iput-object p1, p0, Lcom/android/mms/animation/MsgDeleteActionAnimation;->mOnDelActionAnimListener:Lcom/android/mms/animation/MsgDeleteActionAnimation$OnDeleteConversationListAnimationEndListener;
 

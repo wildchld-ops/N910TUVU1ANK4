@@ -28,7 +28,6 @@
 
 .method synthetic constructor <init>(Landroid/app/ActivityThread$1;)V
     .locals 0
-    .param p1    # Landroid/app/ActivityThread$1;
 
     invoke-direct {p0}, Landroid/app/ActivityThread$EventLoggingReporter;-><init>()V
 
@@ -39,8 +38,6 @@
 # virtual methods
 .method public varargs report(I[Ljava/lang/Object;)V
     .locals 0
-    .param p1    # I
-    .param p2    # [Ljava/lang/Object;
 
     invoke-static {p1, p2}, Landroid/util/EventLog;->writeEvent(I[Ljava/lang/Object;)I
 

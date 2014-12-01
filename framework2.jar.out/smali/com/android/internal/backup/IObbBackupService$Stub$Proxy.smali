@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -45,10 +44,6 @@
 
 .method public backupObbs(Ljava/lang/String;Landroid/os/ParcelFileDescriptor;ILandroid/app/backup/IBackupManager;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/ParcelFileDescriptor;
-    .param p3    # I
-    .param p4    # Landroid/app/backup/IBackupManager;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -134,15 +129,6 @@
 
 .method public restoreObbFile(Ljava/lang/String;Landroid/os/ParcelFileDescriptor;JILjava/lang/String;JJILandroid/app/backup/IBackupManager;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/ParcelFileDescriptor;
-    .param p3    # J
-    .param p5    # I
-    .param p6    # Ljava/lang/String;
-    .param p7    # J
-    .param p9    # J
-    .param p11    # I
-    .param p12    # Landroid/app/backup/IBackupManager;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

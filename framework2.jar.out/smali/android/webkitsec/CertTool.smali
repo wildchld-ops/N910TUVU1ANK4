@@ -76,9 +76,6 @@
 
 .method static addCertificate(Landroid/content/Context;Ljava/lang/String;[B)V
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # [B
 
     invoke-static {}, Landroid/security/Credentials;->getInstance()Landroid/security/Credentials;
 
@@ -91,7 +88,6 @@
 
 .method static getCertType(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     sget-object v0, Landroid/webkitsec/CertTool;->sCertificateTypeMap:Ljava/util/HashMap;
 
@@ -128,9 +124,6 @@
 
 .method static getSignedPublicKey(Landroid/content/Context;ILjava/lang/String;)Ljava/lang/String;
     .locals 7
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     :try_start_0
     const-string v5, "RSA"

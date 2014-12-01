@@ -81,9 +81,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Lcom/android/mms/ui/EditChannelDialog$OnMyChannelSetListener;I)V
     .locals 8
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/mms/ui/EditChannelDialog$OnMyChannelSetListener;
-    .param p3    # I
 
     const-wide/16 v0, 0x0
 
@@ -112,13 +109,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Lcom/android/mms/ui/EditChannelDialog$OnMyChannelSetListener;Ljava/lang/Long;Ljava/lang/String;Ljava/lang/String;ZI)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/mms/ui/EditChannelDialog$OnMyChannelSetListener;
-    .param p3    # Ljava/lang/Long;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Z
-    .param p7    # I
 
     invoke-direct {p0, p1}, Landroid/app/AlertDialog;-><init>(Landroid/content/Context;)V
 
@@ -180,7 +170,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/ui/EditChannelDialog;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/EditChannelDialog;
 
     invoke-direct {p0}, Lcom/android/mms/ui/EditChannelDialog;->showToast()V
 
@@ -189,7 +178,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/ui/EditChannelDialog;)Landroid/widget/Button;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/EditChannelDialog;
 
     iget-object v0, p0, Lcom/android/mms/ui/EditChannelDialog;->mSaveButton:Landroid/widget/Button;
 
@@ -198,8 +186,6 @@
 
 .method static synthetic access$202(Lcom/android/mms/ui/EditChannelDialog;Landroid/widget/Button;)Landroid/widget/Button;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/EditChannelDialog;
-    .param p1    # Landroid/widget/Button;
 
     iput-object p1, p0, Lcom/android/mms/ui/EditChannelDialog;->mSaveButton:Landroid/widget/Button;
 
@@ -208,7 +194,6 @@
 
 .method private onReferenceViews(Landroid/view/View;)V
     .locals 4
-    .param p1    # Landroid/view/View;
 
     const v3, 0x7f0b00b3
 
@@ -389,8 +374,6 @@
 # virtual methods
 .method public onCheckedChanged(Lcom/sec/android/touchwiz/widget/TwCompoundButton;Z)V
     .locals 1
-    .param p1    # Lcom/sec/android/touchwiz/widget/TwCompoundButton;
-    .param p2    # Z
 
     const/4 v0, 0x0
 
@@ -401,8 +384,6 @@
 
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 13
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/mms/ui/EditChannelDialog;->mChannelNameEdit:Landroid/widget/EditText;
 
@@ -675,7 +656,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 6
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v1, 0x0
 
@@ -789,9 +769,6 @@
 
 .method public onEditorAction(Landroid/widget/TextView;ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # I
-    .param p3    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x0
 
@@ -800,7 +777,6 @@
 
 .method public setTitle(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/mms/ui/EditChannelDialog;->getContext()Landroid/content/Context;
 

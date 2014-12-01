@@ -21,8 +21,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/enterprise/bluetooth/BluetoothPolicy;Landroid/content/Context;Ljava/lang/String;)V
     .locals 0
-    .param p2    # Landroid/content/Context;
-    .param p3    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/server/enterprise/bluetooth/BluetoothPolicy$BluetoothProfilePolicy;->this$0:Lcom/android/server/enterprise/bluetooth/BluetoothPolicy;
 
@@ -35,7 +33,6 @@
 # virtual methods
 .method public isPolicyActive(I)Z
     .locals 4
-    .param p1    # I
 
     :try_start_0
     iget-object v1, p0, Lcom/android/server/enterprise/bluetooth/BluetoothPolicy$BluetoothProfilePolicy;->this$0:Lcom/android/server/enterprise/bluetooth/BluetoothPolicy;

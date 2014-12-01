@@ -42,12 +42,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/TextServicesManagerService;Lcom/android/server/TextServicesManagerService$InternalServiceConnection;Lcom/android/internal/textservice/ITextServicesSessionListener;Ljava/lang/String;Lcom/android/internal/textservice/ISpellCheckerSessionListener;ILandroid/os/Bundle;)V
     .locals 6
-    .param p2    # Lcom/android/server/TextServicesManagerService$InternalServiceConnection;
-    .param p3    # Lcom/android/internal/textservice/ITextServicesSessionListener;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Lcom/android/internal/textservice/ISpellCheckerSessionListener;
-    .param p6    # I
-    .param p7    # Landroid/os/Bundle;
 
     iput-object p1, p0, Lcom/android/server/TextServicesManagerService$SpellCheckerBindGroup;->this$0:Lcom/android/server/TextServicesManagerService;
 
@@ -96,7 +90,6 @@
 
 .method static synthetic access$1000(Lcom/android/server/TextServicesManagerService$SpellCheckerBindGroup;)Ljava/util/concurrent/CopyOnWriteArrayList;
     .locals 1
-    .param p0    # Lcom/android/server/TextServicesManagerService$SpellCheckerBindGroup;
 
     iget-object v0, p0, Lcom/android/server/TextServicesManagerService$SpellCheckerBindGroup;->mListeners:Ljava/util/concurrent/CopyOnWriteArrayList;
 
@@ -105,7 +98,6 @@
 
 .method static synthetic access$900(Lcom/android/server/TextServicesManagerService$SpellCheckerBindGroup;)Lcom/android/server/TextServicesManagerService$InternalServiceConnection;
     .locals 1
-    .param p0    # Lcom/android/server/TextServicesManagerService$SpellCheckerBindGroup;
 
     iget-object v0, p0, Lcom/android/server/TextServicesManagerService$SpellCheckerBindGroup;->mInternalConnection:Lcom/android/server/TextServicesManagerService$InternalServiceConnection;
 
@@ -182,11 +174,6 @@
 # virtual methods
 .method public addListener(Lcom/android/internal/textservice/ITextServicesSessionListener;Ljava/lang/String;Lcom/android/internal/textservice/ISpellCheckerSessionListener;ILandroid/os/Bundle;)Lcom/android/server/TextServicesManagerService$InternalDeathRecipient;
     .locals 12
-    .param p1    # Lcom/android/internal/textservice/ITextServicesSessionListener;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/android/internal/textservice/ISpellCheckerSessionListener;
-    .param p4    # I
-    .param p5    # Landroid/os/Bundle;
 
     const/4 v9, 0x0
 
@@ -328,7 +315,6 @@
 
 .method public onServiceConnected(Lcom/android/internal/textservice/ISpellCheckerService;)V
     .locals 7
-    .param p1    # Lcom/android/internal/textservice/ISpellCheckerService;
 
     iget-object v4, p0, Lcom/android/server/TextServicesManagerService$SpellCheckerBindGroup;->mListeners:Ljava/util/concurrent/CopyOnWriteArrayList;
 
@@ -521,7 +507,6 @@
 
 .method public removeListener(Lcom/android/internal/textservice/ISpellCheckerSessionListener;)V
     .locals 9
-    .param p1    # Lcom/android/internal/textservice/ISpellCheckerSessionListener;
 
     iget-object v6, p0, Lcom/android/server/TextServicesManagerService$SpellCheckerBindGroup;->this$0:Lcom/android/server/TextServicesManagerService;
 

@@ -52,8 +52,6 @@
 # virtual methods
 .method protected final notifyCmdProcessResultObserver(Ljava/lang/String;Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Bundle;
 
     iget-object v2, p0, Landroid/hardware/contextaware/manager/ContextObserverManager;->mCmdProcessResultObservers:Ljava/util/concurrent/CopyOnWriteArrayList;
 
@@ -87,8 +85,6 @@
 
 .method protected final notifyObserver(Ljava/lang/String;Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Bundle;
 
     iget-object v2, p0, Landroid/hardware/contextaware/manager/ContextObserverManager;->mObservers:Ljava/util/concurrent/CopyOnWriteArrayList;
 
@@ -122,7 +118,6 @@
 
 .method protected final registerCmdProcessResultObserver(Landroid/hardware/contextaware/manager/fault/ICmdProcessResultObserver;)V
     .locals 1
-    .param p1    # Landroid/hardware/contextaware/manager/fault/ICmdProcessResultObserver;
 
     if-eqz p1, :cond_0
 
@@ -144,7 +139,6 @@
 
 .method protected final registerObserver(Landroid/hardware/contextaware/manager/IContextObserver;)V
     .locals 1
-    .param p1    # Landroid/hardware/contextaware/manager/IContextObserver;
 
     if-eqz p1, :cond_0
 
@@ -166,7 +160,6 @@
 
 .method protected final unregisterCmdProcessResultObserver(Landroid/hardware/contextaware/manager/fault/ICmdProcessResultObserver;)V
     .locals 1
-    .param p1    # Landroid/hardware/contextaware/manager/fault/ICmdProcessResultObserver;
 
     if-eqz p1, :cond_0
 
@@ -188,7 +181,6 @@
 
 .method protected final unregisterObserver(Landroid/hardware/contextaware/manager/IContextObserver;)V
     .locals 1
-    .param p1    # Landroid/hardware/contextaware/manager/IContextObserver;
 
     if-eqz p1, :cond_0
 

@@ -87,8 +87,6 @@
 
 .method public constructor <init>([[I[I)V
     .locals 2
-    .param p1    # [[I
-    .param p2    # [I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -138,8 +136,6 @@
 
 .method public static createFromXml(Landroid/content/res/Resources;Lorg/xmlpull/v1/XmlPullParser;)Landroid/content/res/ColorStateList;
     .locals 4
-    .param p0    # Landroid/content/res/Resources;
-    .param p1    # Lorg/xmlpull/v1/XmlPullParser;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -185,9 +181,6 @@
 
 .method private static createFromXmlInner(Landroid/content/res/Resources;Lorg/xmlpull/v1/XmlPullParser;Landroid/util/AttributeSet;)Landroid/content/res/ColorStateList;
     .locals 5
-    .param p0    # Landroid/content/res/Resources;
-    .param p1    # Lorg/xmlpull/v1/XmlPullParser;
-    .param p2    # Landroid/util/AttributeSet;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -251,9 +244,6 @@
 
 .method private inflate(Landroid/content/res/Resources;Lorg/xmlpull/v1/XmlPullParser;Landroid/util/AttributeSet;)V
     .locals 25
-    .param p1    # Landroid/content/res/Resources;
-    .param p2    # Lorg/xmlpull/v1/XmlPullParser;
-    .param p3    # Landroid/util/AttributeSet;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -617,7 +607,6 @@
 
 .method public static valueOf(I)Landroid/content/res/ColorStateList;
     .locals 7
-    .param p0    # I
 
     sget-object v4, Landroid/content/res/ColorStateList;->sCache:Landroid/util/SparseArray;
 
@@ -708,8 +697,6 @@
 
 .method public getColorForState([II)I
     .locals 4
-    .param p1    # [I
-    .param p2    # I
 
     iget-object v3, p0, Landroid/content/res/ColorStateList;->mStateSpecs:[[I
 
@@ -837,7 +824,6 @@
 
 .method public withAlpha(I)Landroid/content/res/ColorStateList;
     .locals 5
-    .param p1    # I
 
     iget-object v3, p0, Landroid/content/res/ColorStateList;->mColors:[I
 
@@ -882,8 +868,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 3
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v2, p0, Landroid/content/res/ColorStateList;->mStateSpecs:[[I
 

@@ -556,7 +556,6 @@
 
 .method constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-static {}, Landroid/os/Environment;->getDataDirectory()Ljava/io/File;
 
@@ -569,8 +568,6 @@
 
 .method constructor <init>(Landroid/content/Context;Ljava/io/File;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/io/File;
 
     const/4 v2, -0x1
 
@@ -791,9 +788,6 @@
 
 .method private addPackageSettingLPw(Lcom/android/server/pm/PackageSetting;Ljava/lang/String;Lcom/android/server/pm/SharedUserSetting;)V
     .locals 3
-    .param p1    # Lcom/android/server/pm/PackageSetting;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/android/server/pm/SharedUserSetting;
 
     const/4 v2, 0x6
 
@@ -952,9 +946,6 @@
 
 .method private addUserIdLPw(ILjava/lang/Object;Ljava/lang/Object;)Z
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/Object;
-    .param p3    # Ljava/lang/Object;
 
     const/4 v5, 0x6
 
@@ -1095,16 +1086,6 @@
 
 .method private applyDefaultPreferredActivityLPw(Lcom/android/server/pm/PackageManagerService;Landroid/content/Intent;ILandroid/content/ComponentName;Ljava/lang/String;Landroid/os/PatternMatcher;Landroid/content/IntentFilter$AuthorityEntry;Landroid/os/PatternMatcher;Ljava/lang/String;I)V
     .locals 18
-    .param p1    # Lcom/android/server/pm/PackageManagerService;
-    .param p2    # Landroid/content/Intent;
-    .param p3    # I
-    .param p4    # Landroid/content/ComponentName;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Landroid/os/PatternMatcher;
-    .param p7    # Landroid/content/IntentFilter$AuthorityEntry;
-    .param p8    # Landroid/os/PatternMatcher;
-    .param p9    # Ljava/lang/String;
-    .param p10    # I
 
     move-object/from16 v0, p1
 
@@ -1454,10 +1435,6 @@
 
 .method private applyDefaultPreferredActivityLPw(Lcom/android/server/pm/PackageManagerService;Landroid/content/IntentFilter;Landroid/content/ComponentName;I)V
     .locals 51
-    .param p1    # Lcom/android/server/pm/PackageManagerService;
-    .param p2    # Landroid/content/IntentFilter;
-    .param p3    # Landroid/content/ComponentName;
-    .param p4    # I
 
     new-instance v30, Landroid/content/Intent;
 
@@ -2118,18 +2095,6 @@
 
 .method private getPackageLPw(Ljava/lang/String;Lcom/android/server/pm/PackageSetting;Ljava/lang/String;Lcom/android/server/pm/SharedUserSetting;Ljava/io/File;Ljava/io/File;Ljava/lang/String;IILandroid/os/UserHandle;ZZ)Lcom/android/server/pm/PackageSetting;
     .locals 20
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/server/pm/PackageSetting;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Lcom/android/server/pm/SharedUserSetting;
-    .param p5    # Ljava/io/File;
-    .param p6    # Ljava/io/File;
-    .param p7    # Ljava/lang/String;
-    .param p8    # I
-    .param p9    # I
-    .param p10    # Landroid/os/UserHandle;
-    .param p11    # Z
-    .param p12    # Z
 
     move-object/from16 v0, p0
 
@@ -2832,7 +2797,6 @@
 
 .method private getUserPackagesStateBackupFile(I)Ljava/io/File;
     .locals 3
-    .param p1    # I
 
     new-instance v0, Ljava/io/File;
 
@@ -2849,7 +2813,6 @@
 
 .method private getUserPackagesStateCorruptedFile(I)Ljava/io/File;
     .locals 4
-    .param p1    # I
 
     new-instance v0, Ljava/io/File;
 
@@ -2886,7 +2849,6 @@
 
 .method private getUserPackagesStateFile(I)Ljava/io/File;
     .locals 3
-    .param p1    # I
 
     new-instance v0, Ljava/io/File;
 
@@ -2903,7 +2865,6 @@
 
 .method private getUserPackagesStateMoreBackupFile(I)Ljava/io/File;
     .locals 4
-    .param p1    # I
 
     new-instance v0, Ljava/io/File;
 
@@ -2940,7 +2901,6 @@
 
 .method private getUserSecretPackagesBackupFile(I)Ljava/io/File;
     .locals 3
-    .param p1    # I
 
     new-instance v0, Ljava/io/File;
 
@@ -2957,7 +2917,6 @@
 
 .method private getUserSecretPackagesCorruptedFile(I)Ljava/io/File;
     .locals 4
-    .param p1    # I
 
     new-instance v0, Ljava/io/File;
 
@@ -2994,7 +2953,6 @@
 
 .method private getUserSecretPackagesFile(I)Ljava/io/File;
     .locals 3
-    .param p1    # I
 
     new-instance v0, Ljava/io/File;
 
@@ -3011,7 +2969,6 @@
 
 .method private getUserSecretPackagesMoreBackupFile(I)Ljava/io/File;
     .locals 4
-    .param p1    # I
 
     new-instance v0, Ljava/io/File;
 
@@ -3048,7 +3005,6 @@
 
 .method private newUserIdLPw(Ljava/lang/Object;)I
     .locals 3
-    .param p1    # Ljava/lang/Object;
 
     iget-object v2, p0, Lcom/android/server/pm/Settings;->mUserIds:Ljava/util/ArrayList;
 
@@ -3104,9 +3060,6 @@
 
 .method static final printFlags(Ljava/io/PrintWriter;I[Ljava/lang/Object;)V
     .locals 3
-    .param p0    # Ljava/io/PrintWriter;
-    .param p1    # I
-    .param p2    # [Ljava/lang/Object;
 
     const-string v2, "[ "
 
@@ -3156,7 +3109,6 @@
 
 .method private readComponentsLPr(Lorg/xmlpull/v1/XmlPullParser;)Ljava/util/HashSet;
     .locals 8
-    .param p1    # Lorg/xmlpull/v1/XmlPullParser;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3248,9 +3200,6 @@
 
 .method private readDefaultPreferredActivitiesLPw(Lcom/android/server/pm/PackageManagerService;Lorg/xmlpull/v1/XmlPullParser;I)V
     .locals 8
-    .param p1    # Lcom/android/server/pm/PackageManagerService;
-    .param p2    # Lorg/xmlpull/v1/XmlPullParser;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -3401,9 +3350,6 @@
 
 .method private readDisabledComponentsLPw(Lcom/android/server/pm/PackageSettingBase;Lorg/xmlpull/v1/XmlPullParser;I)V
     .locals 8
-    .param p1    # Lcom/android/server/pm/PackageSettingBase;
-    .param p2    # Lorg/xmlpull/v1/XmlPullParser;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -3537,7 +3483,6 @@
 
 .method private readDisabledSysPackageLPw(Lorg/xmlpull/v1/XmlPullParser;)V
     .locals 24
-    .param p1    # Lorg/xmlpull/v1/XmlPullParser;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -4022,9 +3967,6 @@
 
 .method private readEnabledComponentsLPw(Lcom/android/server/pm/PackageSettingBase;Lorg/xmlpull/v1/XmlPullParser;I)V
     .locals 8
-    .param p1    # Lcom/android/server/pm/PackageSettingBase;
-    .param p2    # Lorg/xmlpull/v1/XmlPullParser;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -4158,7 +4100,6 @@
 
 .method private readGrantedPermissionsLPw(Lorg/xmlpull/v1/XmlPullParser;Ljava/util/HashSet;)V
     .locals 8
-    .param p1    # Lorg/xmlpull/v1/XmlPullParser;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -4303,10 +4244,6 @@
 
 .method private readInt(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;Ljava/lang/String;I)I
     .locals 5
-    .param p1    # Lorg/xmlpull/v1/XmlPullParser;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;
@@ -4394,7 +4331,6 @@
 
 .method private readPackageLPw(Lorg/xmlpull/v1/XmlPullParser;)V
     .locals 37
-    .param p1    # Lorg/xmlpull/v1/XmlPullParser;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -5688,7 +5624,6 @@
 
 .method private readPermissionsLPw(Ljava/util/HashMap;Lorg/xmlpull/v1/XmlPullParser;)V
     .locals 12
-    .param p2    # Lorg/xmlpull/v1/XmlPullParser;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -5956,8 +5891,6 @@
 
 .method private readPreferredActivitiesLPw(Lorg/xmlpull/v1/XmlPullParser;I)V
     .locals 8
-    .param p1    # Lorg/xmlpull/v1/XmlPullParser;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -6108,7 +6041,6 @@
 
 .method private readSharedUserLPw(Lorg/xmlpull/v1/XmlPullParser;)V
     .locals 14
-    .param p1    # Lorg/xmlpull/v1/XmlPullParser;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -6465,7 +6397,6 @@
 
 .method private removeUserIdLPw(I)V
     .locals 4
-    .param p1    # I
 
     const/16 v2, 0x2710
 
@@ -6505,8 +6436,6 @@
 
 .method private replacePackageLPw(Ljava/lang/String;Lcom/android/server/pm/PackageSetting;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/server/pm/PackageSetting;
 
     iget-object v1, p0, Lcom/android/server/pm/Settings;->mPackages:Ljava/util/HashMap;
 
@@ -6548,8 +6477,6 @@
 
 .method private replaceUserIdLPw(ILjava/lang/Object;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/Object;
 
     const/16 v2, 0x2710
 
@@ -6583,7 +6510,6 @@
 
 .method private setFirstAvailableUid(I)V
     .locals 1
-    .param p1    # I
 
     sget v0, Lcom/android/server/pm/Settings;->mFirstAvailableUid:I
 
@@ -6599,8 +6525,6 @@
 # virtual methods
 .method addComponentOnlyForOwnerUser(Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/server/pm/Settings;->mComponentsOnlyForOwnerUser:Ljava/util/HashMap;
 
@@ -6664,14 +6588,6 @@
 
 .method addPackageLPw(Ljava/lang/String;Ljava/lang/String;Ljava/io/File;Ljava/io/File;Ljava/lang/String;III)Lcom/android/server/pm/PackageSetting;
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/io/File;
-    .param p4    # Ljava/io/File;
-    .param p5    # Ljava/lang/String;
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
 
     iget-object v1, p0, Lcom/android/server/pm/Settings;->mPackages:Ljava/util/HashMap;
 
@@ -6762,7 +6678,6 @@
 
 .method addPackageToCleanLPw(Landroid/content/pm/PackageCleanItem;)V
     .locals 1
-    .param p1    # Landroid/content/pm/PackageCleanItem;
 
     iget-object v0, p0, Lcom/android/server/pm/Settings;->mPackagesToBeCleaned:Ljava/util/ArrayList;
 
@@ -6782,9 +6697,6 @@
 
 .method addSharedUserLPw(Ljava/lang/String;II)Lcom/android/server/pm/SharedUserSetting;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v0, 0x0
 
@@ -6797,10 +6709,6 @@
 
 .method addSharedUserLPw(Ljava/lang/String;II[I)Lcom/android/server/pm/SharedUserSetting;
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # [I
 
     const/4 v2, 0x0
 
@@ -6890,10 +6798,6 @@
 
 .method createNewPersonaLILPw(Lcom/android/server/pm/PackageManagerService;Lcom/android/server/pm/Installer;ILjava/io/File;Ljava/util/List;)V
     .locals 8
-    .param p1    # Lcom/android/server/pm/PackageManagerService;
-    .param p2    # Lcom/android/server/pm/Installer;
-    .param p3    # I
-    .param p4    # Ljava/io/File;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -7161,11 +7065,6 @@
 
 .method createNewUserLILPw(Lcom/android/server/pm/PackageManagerService;Lcom/android/server/pm/Installer;ILjava/io/File;I)V
     .locals 21
-    .param p1    # Lcom/android/server/pm/PackageManagerService;
-    .param p2    # Lcom/android/server/pm/Installer;
-    .param p3    # I
-    .param p4    # Ljava/io/File;
-    .param p5    # I
 
     new-instance v10, Landroid/content/Intent;
 
@@ -7736,7 +7635,6 @@
 
 .method disableSystemPackageLPw(Ljava/lang/String;)Z
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -7831,12 +7729,6 @@
 
 .method dumpPackageLPr(Ljava/io/PrintWriter;Ljava/lang/String;Ljava/lang/String;Lcom/android/server/pm/PackageSetting;Ljava/text/SimpleDateFormat;Ljava/util/Date;Ljava/util/List;)V
     .locals 11
-    .param p1    # Ljava/io/PrintWriter;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Lcom/android/server/pm/PackageSetting;
-    .param p5    # Ljava/text/SimpleDateFormat;
-    .param p6    # Ljava/util/Date;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -9092,10 +8984,6 @@
 
 .method dumpPackagesLPr(Ljava/io/PrintWriter;Ljava/lang/String;Lcom/android/server/pm/PackageManagerService$DumpState;Z)V
     .locals 16
-    .param p1    # Ljava/io/PrintWriter;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/android/server/pm/PackageManagerService$DumpState;
-    .param p4    # Z
 
     new-instance v6, Ljava/text/SimpleDateFormat;
 
@@ -9624,9 +9512,6 @@
 
 .method dumpPermissionsLPr(Ljava/io/PrintWriter;Ljava/lang/String;Lcom/android/server/pm/PackageManagerService$DumpState;)V
     .locals 5
-    .param p1    # Ljava/io/PrintWriter;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/android/server/pm/PackageManagerService$DumpState;
 
     const/4 v2, 0x0
 
@@ -9809,8 +9694,6 @@
 
 .method dumpReadMessagesLPr(Ljava/io/PrintWriter;Lcom/android/server/pm/PackageManagerService$DumpState;)V
     .locals 1
-    .param p1    # Ljava/io/PrintWriter;
-    .param p2    # Lcom/android/server/pm/PackageManagerService$DumpState;
 
     const-string v0, "Settings parse messages:"
 
@@ -9829,9 +9712,6 @@
 
 .method dumpSharedUsersLPr(Ljava/io/PrintWriter;Ljava/lang/String;Lcom/android/server/pm/PackageManagerService$DumpState;)V
     .locals 6
-    .param p1    # Ljava/io/PrintWriter;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/android/server/pm/PackageManagerService$DumpState;
 
     const/4 v2, 0x0
 
@@ -9968,7 +9848,6 @@
 
 .method editPreferredActivitiesLPw(I)Lcom/android/server/pm/PreferredIntentResolver;
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/server/pm/Settings;->mPreferredActivities:Landroid/util/SparseArray;
 
@@ -9994,7 +9873,6 @@
 
 .method enableSystemPackageLPw(Ljava/lang/String;)Lcom/android/server/pm/PackageSetting;
     .locals 11
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/server/pm/Settings;->mDisabledSysPackages:Ljava/util/HashMap;
 
@@ -10092,8 +9970,6 @@
 
 .method getApplicationEnabledSettingLPr(Ljava/lang/String;I)I
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     iget-object v1, p0, Lcom/android/server/pm/Settings;->mPackages:Ljava/util/HashMap;
 
@@ -10139,8 +10015,6 @@
 
 .method getComponentEnabledSettingLPr(Landroid/content/ComponentName;I)I
     .locals 6
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # I
 
     invoke-virtual {p1}, Landroid/content/ComponentName;->getPackageName()Ljava/lang/String;
 
@@ -10194,8 +10068,6 @@
 
 .method getComponentsOnlyForOwnerUser(Lcom/android/server/pm/PackageSetting;I)Ljava/util/ArrayList;
     .locals 16
-    .param p1    # Lcom/android/server/pm/PackageSetting;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -10510,7 +10382,6 @@
 
 .method public getDisabledSystemPkgLPr(Ljava/lang/String;)Lcom/android/server/pm/PackageSetting;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/server/pm/Settings;->mDisabledSysPackages:Ljava/util/HashMap;
 
@@ -10525,7 +10396,6 @@
 
 .method getInstallerPackageNameLPr(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/server/pm/Settings;->mPackages:Ljava/util/HashMap;
 
@@ -10635,16 +10505,6 @@
 
 .method getPackageLPw(Landroid/content/pm/PackageParser$Package;Lcom/android/server/pm/PackageSetting;Ljava/lang/String;Lcom/android/server/pm/SharedUserSetting;Ljava/io/File;Ljava/io/File;Ljava/lang/String;ILandroid/os/UserHandle;Z)Lcom/android/server/pm/PackageSetting;
     .locals 14
-    .param p1    # Landroid/content/pm/PackageParser$Package;
-    .param p2    # Lcom/android/server/pm/PackageSetting;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Lcom/android/server/pm/SharedUserSetting;
-    .param p5    # Ljava/io/File;
-    .param p6    # Ljava/io/File;
-    .param p7    # Ljava/lang/String;
-    .param p8    # I
-    .param p9    # Landroid/os/UserHandle;
-    .param p10    # Z
 
     iget-object v1, p1, Landroid/content/pm/PackageParser$Package;->packageName:Ljava/lang/String;
 
@@ -10681,9 +10541,6 @@
 
 .method getSharedUserLPw(Ljava/lang/String;IZ)Lcom/android/server/pm/SharedUserSetting;
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Z
 
     iget-object v1, p0, Lcom/android/server/pm/Settings;->mSharedUsers:Ljava/util/HashMap;
 
@@ -10763,7 +10620,6 @@
 
 .method public getUserIdLPr(I)Ljava/lang/Object;
     .locals 3
-    .param p1    # I
 
     const/16 v2, 0x2710
 
@@ -10826,8 +10682,6 @@
 
 .method hasPackageOnlyForOwnerUser(Lcom/android/server/pm/PackageSetting;I)Z
     .locals 8
-    .param p1    # Lcom/android/server/pm/PackageSetting;
-    .param p2    # I
 
     const/4 v5, 0x1
 
@@ -10898,8 +10752,6 @@
 
 .method insertPackageSettingLPw(Lcom/android/server/pm/PackageSetting;Landroid/content/pm/PackageParser$Package;)V
     .locals 6
-    .param p1    # Lcom/android/server/pm/PackageSetting;
-    .param p2    # Landroid/content/pm/PackageParser$Package;
 
     iput-object p2, p1, Lcom/android/server/pm/PackageSetting;->pkg:Landroid/content/pm/PackageParser$Package;
 
@@ -11129,10 +10981,6 @@
 
 .method installApplicationsForPersonaLILPw(Lcom/android/server/pm/PackageManagerService;Lcom/android/server/pm/Installer;ILjava/io/File;Ljava/util/List;)V
     .locals 6
-    .param p1    # Lcom/android/server/pm/PackageManagerService;
-    .param p2    # Lcom/android/server/pm/Installer;
-    .param p3    # I
-    .param p4    # Ljava/io/File;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -11248,7 +11096,6 @@
 
 .method isDisabledSystemPackageLPr(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/server/pm/Settings;->mDisabledSysPackages:Ljava/util/HashMap;
 
@@ -11261,9 +11108,6 @@
 
 .method isEnabledLPr(Landroid/content/pm/ComponentInfo;II)Z
     .locals 8
-    .param p1    # Landroid/content/pm/ComponentInfo;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v7, 0x4
 
@@ -11391,7 +11235,6 @@
 
 .method isXmlDamaged(Ljava/io/File;)Z
     .locals 9
-    .param p1    # Ljava/io/File;
 
     const/4 v3, 0x0
 
@@ -11558,7 +11401,6 @@
 
 .method peekPackageLPr(Ljava/lang/String;)Lcom/android/server/pm/PackageSetting;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/server/pm/Settings;->mPackages:Ljava/util/HashMap;
 
@@ -11696,8 +11538,6 @@
 
 .method readDefaultPreferredAppsLPw(Lcom/android/server/pm/PackageManagerService;I)V
     .locals 21
-    .param p1    # Lcom/android/server/pm/PackageManagerService;
-    .param p2    # I
 
     move-object/from16 v0, p0
 
@@ -12309,9 +12149,6 @@
 
 .method readLPw(Lcom/android/server/pm/PackageManagerService;Ljava/util/List;IZ)Z
     .locals 50
-    .param p1    # Lcom/android/server/pm/PackageManagerService;
-    .param p3    # I
-    .param p4    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -14090,7 +13927,6 @@
 
 .method readPackageRestrictionsLPr(I)V
     .locals 39
-    .param p1    # I
 
     const/16 v32, 0x0
 
@@ -15214,7 +15050,6 @@
 
 .method readPackageSecretsLPr(I)V
     .locals 22
-    .param p1    # I
 
     move-object/from16 v0, p0
 
@@ -16548,7 +16383,6 @@
 
 .method removeDisabledSystemPackageLPw(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/server/pm/Settings;->mDisabledSysPackages:Ljava/util/HashMap;
 
@@ -16559,7 +16393,6 @@
 
 .method removePackageLPw(Ljava/lang/String;)I
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/server/pm/Settings;->mPackages:Ljava/util/HashMap;
 
@@ -16631,7 +16464,6 @@
 
 .method removeUserLPr(I)V
     .locals 5
-    .param p1    # I
 
     iget-object v4, p0, Lcom/android/server/pm/Settings;->mPackages:Ljava/util/HashMap;
 
@@ -16704,8 +16536,6 @@
 
 .method setInstallStatus(Ljava/lang/String;I)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     iget-object v1, p0, Lcom/android/server/pm/Settings;->mPackages:Ljava/util/HashMap;
 
@@ -16731,8 +16561,6 @@
 
 .method setInstallerPackageName(Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/server/pm/Settings;->mPackages:Ljava/util/HashMap;
 
@@ -16752,11 +16580,6 @@
 
 .method setPackageStoppedStateLPw(Ljava/lang/String;ZZII)Z
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # Z
-    .param p4    # I
-    .param p5    # I
 
     const/4 v2, 0x0
 
@@ -16909,8 +16732,6 @@
 
 .method splitByToken(Ljava/lang/String;Ljava/lang/String;)Ljava/util/Map$Entry;
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -17001,8 +16822,6 @@
 
 .method transferPermissionsLPw(Ljava/lang/String;Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v5, 0x0
 
@@ -17087,10 +16906,6 @@
 
 .method unInstallSystemApplicationsForPersonaLILPw(Lcom/android/server/pm/PackageManagerService;Lcom/android/server/pm/Installer;ILjava/io/File;Ljava/util/List;)I
     .locals 6
-    .param p1    # Lcom/android/server/pm/PackageManagerService;
-    .param p2    # Lcom/android/server/pm/Installer;
-    .param p3    # I
-    .param p4    # Ljava/io/File;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -17247,8 +17062,6 @@
 
 .method updateSharedUserPermsLPw(Lcom/android/server/pm/PackageSetting;[I)V
     .locals 10
-    .param p1    # Lcom/android/server/pm/PackageSetting;
-    .param p2    # [I
 
     if-eqz p1, :cond_0
 
@@ -17450,8 +17263,6 @@
 
 .method writeDisabledSysPackageLPr(Lorg/xmlpull/v1/XmlSerializer;Lcom/android/server/pm/PackageSetting;)V
     .locals 7
-    .param p1    # Lorg/xmlpull/v1/XmlSerializer;
-    .param p2    # Lcom/android/server/pm/PackageSetting;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -17649,8 +17460,6 @@
 
 .method writeKeySetAliasesLPr(Lorg/xmlpull/v1/XmlSerializer;Lcom/android/server/pm/PackageKeySetData;)V
     .locals 7
-    .param p1    # Lorg/xmlpull/v1/XmlSerializer;
-    .param p2    # Lcom/android/server/pm/PackageKeySetData;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -19431,8 +19240,6 @@
 
 .method writePackageLPr(Lorg/xmlpull/v1/XmlSerializer;Lcom/android/server/pm/PackageSetting;)V
     .locals 6
-    .param p1    # Lorg/xmlpull/v1/XmlSerializer;
-    .param p2    # Lcom/android/server/pm/PackageSetting;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -19685,7 +19492,6 @@
 
 .method writePackageRestrictionsLPr(I)V
     .locals 28
-    .param p1    # I
 
     invoke-direct/range {p0 .. p1}, Lcom/android/server/pm/Settings;->getUserPackagesStateFile(I)Ljava/io/File;
 
@@ -20536,7 +20342,6 @@
 
 .method writePackageSecretsLPr(I)V
     .locals 17
-    .param p1    # I
 
     invoke-direct/range {p0 .. p1}, Lcom/android/server/pm/Settings;->getUserSecretPackagesFile(I)Ljava/io/File;
 
@@ -20844,8 +20649,6 @@
 
 .method writePermissionLPr(Lorg/xmlpull/v1/XmlSerializer;Lcom/android/server/pm/BasePermission;)V
     .locals 4
-    .param p1    # Lorg/xmlpull/v1/XmlSerializer;
-    .param p2    # Lcom/android/server/pm/BasePermission;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -20964,9 +20767,6 @@
 
 .method writePreferredActivitiesLPr(Lorg/xmlpull/v1/XmlSerializer;IZ)V
     .locals 5
-    .param p1    # Lorg/xmlpull/v1/XmlSerializer;
-    .param p2    # I
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;,
@@ -21034,8 +20834,6 @@
 
 .method writeSigningKeySetsLPr(Lorg/xmlpull/v1/XmlSerializer;Lcom/android/server/pm/PackageKeySetData;)V
     .locals 8
-    .param p1    # Lorg/xmlpull/v1/XmlSerializer;
-    .param p2    # Lcom/android/server/pm/PackageKeySetData;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

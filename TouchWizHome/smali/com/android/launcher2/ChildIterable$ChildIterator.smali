@@ -51,8 +51,6 @@
 
 .method synthetic constructor <init>(Lcom/android/launcher2/ChildIterable;Lcom/android/launcher2/ChildIterable$1;)V
     .locals 0
-    .param p1    # Lcom/android/launcher2/ChildIterable;
-    .param p2    # Lcom/android/launcher2/ChildIterable$1;
 
     invoke-direct {p0, p1}, Lcom/android/launcher2/ChildIterable$ChildIterator;-><init>(Lcom/android/launcher2/ChildIterable;)V
 

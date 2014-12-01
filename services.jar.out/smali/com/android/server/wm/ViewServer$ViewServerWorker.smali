@@ -31,7 +31,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/wm/ViewServer;Ljava/net/Socket;)V
     .locals 1
-    .param p2    # Ljava/net/Socket;
 
     const/4 v0, 0x0
 

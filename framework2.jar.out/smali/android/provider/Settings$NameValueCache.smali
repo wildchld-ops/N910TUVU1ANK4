@@ -174,10 +174,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Landroid/net/Uri;Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/net/Uri;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -208,7 +204,6 @@
 
 .method private lazyGetProvider(Landroid/content/ContentResolver;)Landroid/content/IContentProvider;
     .locals 3
-    .param p1    # Landroid/content/ContentResolver;
 
     const/4 v0, 0x0
 
@@ -252,9 +247,6 @@
 # virtual methods
 .method public getStringForUser(Landroid/content/ContentResolver;Ljava/lang/String;I)Ljava/lang/String;
     .locals 20
-    .param p1    # Landroid/content/ContentResolver;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     invoke-static {}, Landroid/os/UserHandle;->myUserId()I
 
@@ -672,10 +664,6 @@
 
 .method public putStringForUser(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;I)Z
     .locals 6
-    .param p1    # Landroid/content/ContentResolver;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
 
     invoke-static {p1, p2}, Landroid/provider/Settings$LogMsg;->checkToMakeCallStackLog(Landroid/content/ContentResolver;Ljava/lang/String;)Z
 

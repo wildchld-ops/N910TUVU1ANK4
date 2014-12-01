@@ -42,7 +42,6 @@
 # direct methods
 .method public constructor <init>(Landroid/sec/clipboard/data/file/FileManager;Ljava/io/File;)V
     .locals 3
-    .param p2    # Ljava/io/File;
 
     iput-object p1, p0, Landroid/sec/clipboard/data/file/FileManager$ConnectFileSystem;->this$0:Landroid/sec/clipboard/data/file/FileManager;
 
@@ -126,7 +125,6 @@
 
 .method private deleteEquals(Ljava/util/ArrayList;[Ljava/io/File;)[Ljava/io/File;
     .locals 8
-    .param p2    # [Ljava/io/File;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -308,8 +306,6 @@
 
 .method private makeDataValue(Ljava/io/File;Landroid/sec/clipboard/data/file/WrapFileClipData;)Z
     .locals 18
-    .param p1    # Ljava/io/File;
-    .param p2    # Landroid/sec/clipboard/data/file/WrapFileClipData;
 
     invoke-virtual/range {p2 .. p2}, Landroid/sec/clipboard/data/file/WrapFileClipData;->getClipData()Landroid/sec/clipboard/data/ClipboardData;
 
@@ -1057,7 +1053,6 @@
 
 .method public createData(Landroid/sec/clipboard/data/ClipboardData;)Landroid/sec/clipboard/data/file/WrapFileClipData;
     .locals 1
-    .param p1    # Landroid/sec/clipboard/data/ClipboardData;
 
     new-instance v0, Landroid/sec/clipboard/data/file/WrapFileClipData;
 
@@ -1689,7 +1684,6 @@
 
 .method public declared-synchronized save(Landroid/sec/clipboard/data/file/WrapFileClipData;)Z
     .locals 8
-    .param p1    # Landroid/sec/clipboard/data/file/WrapFileClipData;
 
     const/4 v4, 0x0
 

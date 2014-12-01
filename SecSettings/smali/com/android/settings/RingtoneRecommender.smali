@@ -44,7 +44,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/RingtoneRecommender;)Lcom/samsung/audio/Smat;
     .locals 1
-    .param p0    # Lcom/android/settings/RingtoneRecommender;
 
     iget-object v0, p0, Lcom/android/settings/RingtoneRecommender;->mSmat:Lcom/samsung/audio/Smat;
 
@@ -53,7 +52,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/RingtoneRecommender;)Lcom/android/settings/RingtoneRecommender$OnHighlightResultListener;
     .locals 1
-    .param p0    # Lcom/android/settings/RingtoneRecommender;
 
     iget-object v0, p0, Lcom/android/settings/RingtoneRecommender;->mListener:Lcom/android/settings/RingtoneRecommender$OnHighlightResultListener;
 
@@ -169,7 +167,6 @@
 
 .method public doExtract(Lcom/android/settings/RingtoneRecommender$OnHighlightResultListener;)Z
     .locals 1
-    .param p1    # Lcom/android/settings/RingtoneRecommender$OnHighlightResultListener;
 
     const/4 v0, 0x1
 
@@ -226,7 +223,6 @@
 
 .method public open(Ljava/lang/String;)I
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -239,8 +235,6 @@
 
 .method public open(Ljava/lang/String;I)I
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     iput p2, p0, Lcom/android/settings/RingtoneRecommender;->mMode:I
 

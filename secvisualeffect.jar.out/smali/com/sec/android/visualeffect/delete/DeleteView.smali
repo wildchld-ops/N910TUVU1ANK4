@@ -86,7 +86,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Landroid/view/TextureView;-><init>(Landroid/content/Context;)V
 
@@ -113,8 +112,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/view/TextureView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -141,9 +138,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Landroid/view/TextureView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
@@ -178,7 +172,6 @@
 
 .method static synthetic access$100(Lcom/sec/android/visualeffect/delete/DeleteView;)Lcom/sec/android/visualeffect/delete/RenderThread;
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/delete/DeleteView;
 
     iget-object v0, p0, Lcom/sec/android/visualeffect/delete/DeleteView;->mRenderThread:Lcom/sec/android/visualeffect/delete/RenderThread;
 
@@ -187,7 +180,6 @@
 
 .method static synthetic access$200(Lcom/sec/android/visualeffect/delete/DeleteView;)Lcom/sec/android/visualeffect/delete/DeleteView;
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/delete/DeleteView;
 
     iget-object v0, p0, Lcom/sec/android/visualeffect/delete/DeleteView;->mView:Lcom/sec/android/visualeffect/delete/DeleteView;
 
@@ -196,7 +188,6 @@
 
 .method public static callbackFromNative(I)V
     .locals 4
-    .param p0    # I
 
     sget-object v0, Lcom/sec/android/visualeffect/delete/DeleteView;->mListener:Lcom/sec/android/visualeffect/delete/DeleteView$CrumplingEventListener;
 
@@ -457,17 +448,6 @@
 # virtual methods
 .method public initModel(IIFFLandroid/graphics/Bitmap;IIFFZI)V
     .locals 18
-    .param p1    # I
-    .param p2    # I
-    .param p3    # F
-    .param p4    # F
-    .param p5    # Landroid/graphics/Bitmap;
-    .param p6    # I
-    .param p7    # I
-    .param p8    # F
-    .param p9    # F
-    .param p10    # Z
-    .param p11    # I
 
     if-eqz p5, :cond_0
 
@@ -578,10 +558,6 @@
 
 .method public initView(FFFLandroid/graphics/Bitmap;)V
     .locals 2
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # Landroid/graphics/Bitmap;
 
     if-eqz p4, :cond_0
 
@@ -636,7 +612,6 @@
 
 .method public initView(Landroid/graphics/Bitmap;)V
     .locals 2
-    .param p1    # Landroid/graphics/Bitmap;
 
     const v1, 0x3eb4b4b5
 
@@ -649,7 +624,6 @@
 
 .method protected onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 2
-    .param p1    # Landroid/content/res/Configuration;
 
     sget-object v0, Lcom/sec/android/visualeffect/delete/DeleteView;->TAG:Ljava/lang/String;
 
@@ -676,9 +650,6 @@
 
 .method public onSurfaceTextureAvailable(Landroid/graphics/SurfaceTexture;II)V
     .locals 3
-    .param p1    # Landroid/graphics/SurfaceTexture;
-    .param p2    # I
-    .param p3    # I
 
     sget-object v0, Lcom/sec/android/visualeffect/delete/DeleteView;->TAG:Ljava/lang/String;
 
@@ -770,7 +741,6 @@
 
 .method public onSurfaceTextureDestroyed(Landroid/graphics/SurfaceTexture;)Z
     .locals 3
-    .param p1    # Landroid/graphics/SurfaceTexture;
 
     sget-object v0, Lcom/sec/android/visualeffect/delete/DeleteView;->TAG:Ljava/lang/String;
 
@@ -803,9 +773,6 @@
 
 .method public onSurfaceTextureSizeChanged(Landroid/graphics/SurfaceTexture;II)V
     .locals 3
-    .param p1    # Landroid/graphics/SurfaceTexture;
-    .param p2    # I
-    .param p3    # I
 
     sget-object v0, Lcom/sec/android/visualeffect/delete/DeleteView;->TAG:Ljava/lang/String;
 
@@ -852,14 +819,12 @@
 
 .method public onSurfaceTextureUpdated(Landroid/graphics/SurfaceTexture;)V
     .locals 0
-    .param p1    # Landroid/graphics/SurfaceTexture;
 
     return-void
 .end method
 
 .method public setCrumplingEventListener(Lcom/sec/android/visualeffect/delete/DeleteView$CrumplingEventListener;)V
     .locals 0
-    .param p1    # Lcom/sec/android/visualeffect/delete/DeleteView$CrumplingEventListener;
 
     sput-object p1, Lcom/sec/android/visualeffect/delete/DeleteView;->mListener:Lcom/sec/android/visualeffect/delete/DeleteView$CrumplingEventListener;
 
@@ -884,7 +849,6 @@
 
 .method public setVisibility(I)V
     .locals 3
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/visualeffect/delete/DeleteView;->mVisibility:I
 
@@ -961,7 +925,6 @@
 
 .method public startCrumplingAnimation(Z)V
     .locals 9
-    .param p1    # Z
 
     const/high16 v2, 0x3f800000
 

@@ -30,9 +30,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;Landroid/accounts/Account;Landroid/content/ContentResolver;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/accounts/Account;
-    .param p3    # Landroid/content/ContentResolver;
 
     const/4 v0, 0x0
 
@@ -53,7 +50,6 @@
 # virtual methods
 .method public constructInsertOperation(Ljava/util/List;I)V
     .locals 3
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -119,7 +115,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 3
-    .param p1    # Ljava/lang/Object;
 
     if-ne p0, p1, :cond_0
 

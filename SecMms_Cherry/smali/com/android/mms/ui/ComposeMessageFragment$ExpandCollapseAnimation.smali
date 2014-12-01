@@ -33,11 +33,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/mms/ui/ComposeMessageFragment;Landroid/view/View;IIII)V
     .locals 4
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     const/4 v3, 0x1
 
@@ -172,8 +167,6 @@
 # virtual methods
 .method protected applyTransformation(FLandroid/view/animation/Transformation;)V
     .locals 3
-    .param p1    # F
-    .param p2    # Landroid/view/animation/Transformation;
 
     const/4 v2, 0x1
 

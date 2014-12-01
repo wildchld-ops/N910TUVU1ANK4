@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Lcom/diotek/ime/framework/view/AbstractKeyboardView;Lcom/diotek/ime/framework/view/AbstractKeyboardView$1;)V
     .locals 0
-    .param p1    # Lcom/diotek/ime/framework/view/AbstractKeyboardView;
-    .param p2    # Lcom/diotek/ime/framework/view/AbstractKeyboardView$1;
 
     invoke-direct {p0, p1}, Lcom/diotek/ime/framework/view/AbstractKeyboardView$OnSymbolPopupKeyboardActionListener;-><init>(Lcom/diotek/ime/framework/view/AbstractKeyboardView;)V
 
@@ -43,8 +41,6 @@
 # virtual methods
 .method public onKey(I[I)V
     .locals 1
-    .param p1    # I
-    .param p2    # [I
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/AbstractKeyboardView$OnSymbolPopupKeyboardActionListener;->this$0:Lcom/diotek/ime/framework/view/AbstractKeyboardView;
 
@@ -72,7 +68,6 @@
 
 .method public onPress(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/AbstractKeyboardView$OnSymbolPopupKeyboardActionListener;->this$0:Lcom/diotek/ime/framework/view/AbstractKeyboardView;
 
@@ -85,7 +80,6 @@
 
 .method public onRelease(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/AbstractKeyboardView$OnSymbolPopupKeyboardActionListener;->this$0:Lcom/diotek/ime/framework/view/AbstractKeyboardView;
 
@@ -98,7 +92,6 @@
 
 .method public onText(Ljava/lang/CharSequence;)V
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/AbstractKeyboardView$OnSymbolPopupKeyboardActionListener;->this$0:Lcom/diotek/ime/framework/view/AbstractKeyboardView;
 

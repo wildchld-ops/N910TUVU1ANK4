@@ -72,7 +72,6 @@
 
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -141,7 +140,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/util/TelephonyPermission;)V
     .locals 0
-    .param p0    # Lcom/android/mms/util/TelephonyPermission;
 
     invoke-direct {p0}, Lcom/android/mms/util/TelephonyPermission;->notifyDefaultSmsApplication()V
 
@@ -150,7 +148,6 @@
 
 .method public static declared-synchronized getInstance(Landroid/content/Context;)Lcom/android/mms/util/TelephonyPermission;
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     const-class v1, Lcom/android/mms/util/TelephonyPermission;
 
@@ -629,7 +626,6 @@
 
 .method public sendChangeDefaultSmsAppIntent(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     if-eqz p1, :cond_0
 
@@ -649,7 +645,6 @@
 
 .method public startOperationModeMonitor(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const-string v0, "Mms/TelephonyPermission"
 

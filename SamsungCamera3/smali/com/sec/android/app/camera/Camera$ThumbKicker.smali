@@ -51,7 +51,6 @@
 
 .method static synthetic access$2800(Lcom/sec/android/app/camera/Camera$ThumbKicker;)Ljava/lang/Runnable;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/Camera$ThumbKicker;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$ThumbKicker;->mThumbSuspendKicker:Ljava/lang/Runnable;
 
@@ -60,7 +59,6 @@
 
 .method static synthetic access$2900(Lcom/sec/android/app/camera/Camera$ThumbKicker;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/Camera$ThumbKicker;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$ThumbKicker;->mThumbSuspendKickerHandler:Landroid/os/Handler;
 

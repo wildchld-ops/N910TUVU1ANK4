@@ -145,7 +145,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Lcom/sec/enterprise/knox/certificate/ICertificatePolicy$Stub;-><init>()V
 
@@ -288,7 +287,6 @@
 
 .method static synthetic access$100(Lcom/android/server/enterprise/certificate/CertificatePolicy;)Lcom/android/org/conscrypt/TrustedCertificateStore;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/certificate/CertificatePolicy;
 
     iget-object v0, p0, Lcom/android/server/enterprise/certificate/CertificatePolicy;->mCertStore:Lcom/android/org/conscrypt/TrustedCertificateStore;
 
@@ -297,7 +295,6 @@
 
 .method static synthetic access$1000(Lcom/android/server/enterprise/certificate/CertificatePolicy;)Lcom/android/server/enterprise/certificate/EdmKeyStore;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/certificate/CertificatePolicy;
 
     iget-object v0, p0, Lcom/android/server/enterprise/certificate/CertificatePolicy;->mUserKeyStore:Lcom/android/server/enterprise/certificate/EdmKeyStore;
 
@@ -306,9 +303,6 @@
 
 .method static synthetic access$1200(Lcom/android/server/enterprise/certificate/CertificatePolicy;Ljava/lang/String;Ljava/util/Collection;)Z
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/certificate/CertificatePolicy;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/util/Collection;
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/enterprise/certificate/CertificatePolicy;->putGenericList(Ljava/lang/String;Ljava/util/Collection;)Z
 
@@ -319,9 +313,6 @@
 
 .method static synthetic access$1300(Lcom/android/server/enterprise/certificate/CertificatePolicy;Ljava/lang/String;I)Ljava/util/List;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/certificate/CertificatePolicy;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/enterprise/certificate/CertificatePolicy;->getGenericListAsUser(Ljava/lang/String;I)Ljava/util/List;
 
@@ -332,9 +323,6 @@
 
 .method static synthetic access$1400(Lcom/android/server/enterprise/certificate/CertificatePolicy;Ljava/util/List;I)Ljava/util/List;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/certificate/CertificatePolicy;
-    .param p1    # Ljava/util/List;
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/enterprise/certificate/CertificatePolicy;->addUserIdPrefixToList(Ljava/util/List;I)Ljava/util/List;
 
@@ -345,7 +333,6 @@
 
 .method static synthetic access$1500(Lcom/android/server/enterprise/certificate/CertificatePolicy;)Lcom/android/server/enterprise/certificate/EdmKeyStore;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/certificate/CertificatePolicy;
 
     iget-object v0, p0, Lcom/android/server/enterprise/certificate/CertificatePolicy;->mNativeKeyStore:Lcom/android/server/enterprise/certificate/EdmKeyStore;
 
@@ -354,8 +341,6 @@
 
 .method static synthetic access$1600(Lcom/android/server/enterprise/certificate/CertificatePolicy;Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/certificate/CertificatePolicy;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/certificate/CertificatePolicy;->removeUserIdPrefix(Ljava/lang/String;)Ljava/lang/String;
 
@@ -366,10 +351,6 @@
 
 .method static synthetic access$1800(Lcom/android/server/enterprise/certificate/CertificatePolicy;Ljava/lang/String;Ljava/util/Collection;I)Z
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/certificate/CertificatePolicy;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/util/Collection;
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/server/enterprise/certificate/CertificatePolicy;->putGenericListAsUser(Ljava/lang/String;Ljava/util/Collection;I)Z
 
@@ -380,7 +361,6 @@
 
 .method static synthetic access$1900([B)Ljava/security/cert/X509Certificate;
     .locals 1
-    .param p0    # [B
 
     invoke-static {p0}, Lcom/android/server/enterprise/certificate/CertificatePolicy;->convertPemToX509([B)Ljava/security/cert/X509Certificate;
 
@@ -391,7 +371,6 @@
 
 .method static synthetic access$200(Lcom/android/server/enterprise/certificate/CertificatePolicy;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/certificate/CertificatePolicy;
 
     iget-object v0, p0, Lcom/android/server/enterprise/certificate/CertificatePolicy;->mKeyStoreLock:Ljava/lang/Object;
 
@@ -400,8 +379,6 @@
 
 .method static synthetic access$2000(Lcom/android/server/enterprise/certificate/CertificatePolicy;Landroid/content/Intent;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/certificate/CertificatePolicy;
-    .param p1    # Landroid/content/Intent;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/certificate/CertificatePolicy;->getPackageName(Landroid/content/Intent;)Ljava/lang/String;
 
@@ -412,8 +389,6 @@
 
 .method static synthetic access$2100(Lcom/android/server/enterprise/certificate/CertificatePolicy;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/certificate/CertificatePolicy;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/certificate/CertificatePolicy;->displayAppSignature(Ljava/lang/String;)V
 
@@ -422,7 +397,6 @@
 
 .method static synthetic access$2200(Lcom/android/server/enterprise/certificate/CertificatePolicy;)Landroid/content/Intent;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/certificate/CertificatePolicy;
 
     iget-object v0, p0, Lcom/android/server/enterprise/certificate/CertificatePolicy;->miAdminNotification:Landroid/content/Intent;
 
@@ -431,7 +405,6 @@
 
 .method static synthetic access$2300(Lcom/android/server/enterprise/certificate/CertificatePolicy;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/certificate/CertificatePolicy;
 
     iget-object v0, p0, Lcom/android/server/enterprise/certificate/CertificatePolicy;->mContext:Landroid/content/Context;
 
@@ -440,8 +413,6 @@
 
 .method static synthetic access$2402(Lcom/android/server/enterprise/certificate/CertificatePolicy;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/certificate/CertificatePolicy;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/enterprise/certificate/CertificatePolicy;->mBootCompleted:Z
 
@@ -450,7 +421,6 @@
 
 .method static synthetic access$2500(Lcom/android/server/enterprise/certificate/CertificatePolicy;)Landroid/content/BroadcastReceiver;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/certificate/CertificatePolicy;
 
     iget-object v0, p0, Lcom/android/server/enterprise/certificate/CertificatePolicy;->mBootReceiver:Landroid/content/BroadcastReceiver;
 
@@ -459,7 +429,6 @@
 
 .method static synthetic access$2600(Lcom/android/server/enterprise/certificate/CertificatePolicy;)[Ljava/lang/Integer;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/certificate/CertificatePolicy;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/certificate/CertificatePolicy;->getUsersKeystoreUnlocked()[Ljava/lang/Integer;
 
@@ -470,8 +439,6 @@
 
 .method static synthetic access$300(Lcom/android/server/enterprise/certificate/CertificatePolicy;I)Z
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/certificate/CertificatePolicy;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/certificate/CertificatePolicy;->isNativeKeyStoreUnlockedAsUser(I)Z
 
@@ -482,7 +449,6 @@
 
 .method static synthetic access$400(Ljava/security/cert/X509Certificate;)[B
     .locals 1
-    .param p0    # Ljava/security/cert/X509Certificate;
 
     invoke-static {p0}, Lcom/android/server/enterprise/certificate/CertificatePolicy;->convertX509ToPem(Ljava/security/cert/X509Certificate;)[B
 
@@ -493,7 +459,6 @@
 
 .method static synthetic access$500(Lcom/android/server/enterprise/certificate/CertificatePolicy;)Landroid/security/KeyStore;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/certificate/CertificatePolicy;
 
     iget-object v0, p0, Lcom/android/server/enterprise/certificate/CertificatePolicy;->mKeyStore:Landroid/security/KeyStore;
 
@@ -502,7 +467,6 @@
 
 .method static synthetic access$600(Lcom/android/server/enterprise/certificate/CertificatePolicy;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/certificate/CertificatePolicy;
 
     iget-object v0, p0, Lcom/android/server/enterprise/certificate/CertificatePolicy;->mRefreshRollbackLock:Ljava/lang/Object;
 
@@ -511,7 +475,6 @@
 
 .method static synthetic access$700(Lcom/android/server/enterprise/certificate/CertificatePolicy;)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/certificate/CertificatePolicy;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/certificate/CertificatePolicy;->sendIntentToSettings()V
 
@@ -520,8 +483,6 @@
 
 .method static synthetic access$800(Lcom/android/server/enterprise/certificate/CertificatePolicy;Ljava/lang/String;)Ljava/util/List;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/certificate/CertificatePolicy;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/certificate/CertificatePolicy;->getGenericList(Ljava/lang/String;)Ljava/util/List;
 
@@ -532,9 +493,6 @@
 
 .method static synthetic access$900(Lcom/android/server/enterprise/certificate/CertificatePolicy;Ljava/security/cert/X509Certificate;I)Z
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/certificate/CertificatePolicy;
-    .param p1    # Ljava/security/cert/X509Certificate;
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/enterprise/certificate/CertificatePolicy;->verifyCertificateTrustful(Ljava/security/cert/X509Certificate;I)Z
 
@@ -545,8 +503,6 @@
 
 .method private addListAsStringOnDatabase(ILjava/util/List;Ljava/lang/String;)Z
     .locals 7
-    .param p1    # I
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -697,7 +653,6 @@
 
 .method private addUserIdPrefixToList(Ljava/util/List;I)Ljava/util/List;
     .locals 5
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -765,8 +720,6 @@
 
 .method private checkPackageCallerOrEnforcePermission(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Landroid/app/enterprise/ContextInfo;
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -812,7 +765,6 @@
 
 .method private clearPermissionApplicationPrivateKey(I)Z
     .locals 10
-    .param p1    # I
 
     const/4 v5, 0x1
 
@@ -909,7 +861,6 @@
 
 .method private clearTrustedCertificates(I)Z
     .locals 7
-    .param p1    # I
 
     iget-object v3, p0, Lcom/android/server/enterprise/certificate/CertificatePolicy;->mCachedTrustedCertAliases:Ljava/util/Map;
 
@@ -961,7 +912,6 @@
 
 .method private clearUntrustedCertificates(I)Z
     .locals 7
-    .param p1    # I
 
     iget-object v3, p0, Lcom/android/server/enterprise/certificate/CertificatePolicy;->mCachedUntrustedCertAliases:Ljava/util/Map;
 
@@ -1094,7 +1044,6 @@
 
 .method private static convertPemToX509([B)Ljava/security/cert/X509Certificate;
     .locals 8
-    .param p0    # [B
 
     const/4 v4, 0x0
 
@@ -1196,7 +1145,6 @@
 
 .method private convertStringToList(Ljava/lang/String;)Ljava/util/List;
     .locals 7
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1295,7 +1243,6 @@
 
 .method private static convertX509ToPem(Ljava/security/cert/X509Certificate;)[B
     .locals 5
-    .param p0    # Ljava/security/cert/X509Certificate;
 
     const/4 v2, 0x0
 
@@ -1347,7 +1294,6 @@
 
 .method private displayAppSignature(Ljava/lang/String;)V
     .locals 27
-    .param p1    # Ljava/lang/String;
 
     const/16 v23, 0x0
 
@@ -1749,7 +1695,6 @@
 
 .method private enforceCertificatePermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/certificate/CertificatePolicy;->getEDM()Landroid/app/enterprise/EnterpriseDeviceManager;
 
@@ -1766,7 +1711,6 @@
 
 .method private enforceOwnerOnlyAndCertificatePermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/certificate/CertificatePolicy;->getEDM()Landroid/app/enterprise/EnterpriseDeviceManager;
 
@@ -1808,7 +1752,6 @@
 
 .method private existsPendingActionForUser(I)Z
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/enterprise/certificate/CertificatePolicy;->mPendingKeystoreAction:Ljava/util/Set;
 
@@ -1825,7 +1768,6 @@
 
 .method private fromContentValues(Landroid/content/ContentValues;)Lcom/sec/enterprise/knox/certificate/PermissionApplicationPrivateKey;
     .locals 12
-    .param p1    # Landroid/content/ContentValues;
 
     const/4 v7, 0x0
 
@@ -1953,7 +1895,6 @@
 
 .method private getCertificateChainFromSystem(Ljava/security/cert/X509Certificate;)Ljava/util/List;
     .locals 7
-    .param p1    # Ljava/security/cert/X509Certificate;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2085,7 +2026,6 @@
 
 .method private getGenericList(Ljava/lang/String;)Ljava/util/List;
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2109,8 +2049,6 @@
 
 .method private getGenericListAsUser(Ljava/lang/String;I)Ljava/util/List;
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2138,7 +2076,6 @@
 
 .method private getPackageForPid(I)Ljava/lang/String;
     .locals 6
-    .param p1    # I
 
     iget-object v4, p0, Lcom/android/server/enterprise/certificate/CertificatePolicy;->mContext:Landroid/content/Context;
 
@@ -2190,7 +2127,6 @@
 
 .method private getPackageName(Landroid/content/Intent;)Ljava/lang/String;
     .locals 2
-    .param p1    # Landroid/content/Intent;
 
     invoke-virtual {p1}, Landroid/content/Intent;->getData()Landroid/net/Uri;
 
@@ -2213,7 +2149,6 @@
 
 .method private getPackageNameForUid(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/enterprise/certificate/CertificatePolicy;->mEdmStorageProvider:Lcom/android/server/enterprise/storage/EdmStorageProvider;
 
@@ -2326,7 +2261,6 @@
 
 .method private static getValidStr(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -2517,7 +2451,6 @@
 
 .method private isNativeKeyStoreUnlockedAsUser(I)Z
     .locals 5
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -2700,8 +2633,6 @@
 
 .method private obtainMsgFromModule(Ljava/lang/String;Ljava/lang/String;)[Ljava/lang/String;
     .locals 13
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v11, 0x0
 
@@ -3755,7 +3686,6 @@
 
 .method private putGenericList(Ljava/lang/String;Ljava/util/Collection;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3778,8 +3708,6 @@
 
 .method private putGenericListAsUser(Ljava/lang/String;Ljava/util/Collection;I)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3856,7 +3784,6 @@
 
 .method private removeAliasesFromCacheAndKeyStore(ILjava/util/List;)V
     .locals 9
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -4015,8 +3942,6 @@
 
 .method private removeListFromDatabase(ILjava/util/List;Ljava/lang/String;)Z
     .locals 9
-    .param p1    # I
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -4142,7 +4067,6 @@
 
 .method private removeUntrustedCerts(ILjava/util/List;)V
     .locals 7
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -4275,7 +4199,6 @@
 
 .method private removeUserIdFromPendingList(I)Z
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/enterprise/certificate/CertificatePolicy;->mPendingKeystoreAction:Ljava/util/Set;
 
@@ -4292,7 +4215,6 @@
 
 .method private removeUserIdPrefix(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "_"
 
@@ -4311,8 +4233,6 @@
 
 .method private retrieveAppPermissionsFromDb(II)Ljava/util/List;
     .locals 9
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II)",
@@ -4444,10 +4364,6 @@
 
 .method private setPrivateKeyGrant(Ljava/lang/String;ILjava/lang/String;Z)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Z
 
     const/4 v4, 0x0
 
@@ -4550,7 +4466,6 @@
 
 .method private toContentValues(Lcom/sec/enterprise/knox/certificate/PermissionApplicationPrivateKey;)Landroid/content/ContentValues;
     .locals 3
-    .param p1    # Lcom/sec/enterprise/knox/certificate/PermissionApplicationPrivateKey;
 
     new-instance v0, Landroid/content/ContentValues;
 
@@ -4597,7 +4512,6 @@
 
 .method private validateAlias(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     iget-object v2, p0, Lcom/android/server/enterprise/certificate/CertificatePolicy;->mKeyStore:Landroid/security/KeyStore;
 
@@ -4638,7 +4552,6 @@
 
 .method private varargs validateCerts([Ljava/security/cert/X509Certificate;)I
     .locals 20
-    .param p1    # [Ljava/security/cert/X509Certificate;
 
     invoke-static/range {p1 .. p1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
@@ -5181,7 +5094,6 @@
 
 .method private validatePkey(Lcom/sec/enterprise/knox/certificate/PermissionApplicationPrivateKey;)Lcom/sec/enterprise/knox/certificate/PermissionApplicationPrivateKey;
     .locals 5
-    .param p1    # Lcom/sec/enterprise/knox/certificate/PermissionApplicationPrivateKey;
 
     if-eqz p1, :cond_0
 
@@ -5234,8 +5146,6 @@
 
 .method private verifyCertificateTrustful(Ljava/security/cert/X509Certificate;I)Z
     .locals 4
-    .param p1    # Ljava/security/cert/X509Certificate;
-    .param p2    # I
 
     const/4 v1, 0x1
 
@@ -5302,8 +5212,6 @@
 # virtual methods
 .method public addPermissionApplicationPrivateKey(Landroid/app/enterprise/ContextInfo;Lcom/sec/enterprise/knox/certificate/PermissionApplicationPrivateKey;)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Lcom/sec/enterprise/knox/certificate/PermissionApplicationPrivateKey;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/certificate/CertificatePolicy;->enforceCertificatePermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -5359,7 +5267,6 @@
 
 .method public addTrustedCaCertificateList(Landroid/app/enterprise/ContextInfo;Ljava/util/List;)Z
     .locals 13
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -5611,7 +5518,6 @@
 
 .method public addUntrustedCertificateList(Landroid/app/enterprise/ContextInfo;Ljava/util/List;)Z
     .locals 11
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -5787,8 +5693,6 @@
 
 .method public allowUserRemoveCertificates(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/certificate/CertificatePolicy;->enforceOwnerOnlyAndCertificatePermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -5816,7 +5720,6 @@
 
 .method public clearPermissionApplicationPrivateKey(Landroid/app/enterprise/ContextInfo;)Z
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/certificate/CertificatePolicy;->enforceCertificatePermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -5833,7 +5736,6 @@
 
 .method public clearTrustedCaCertificateList(Landroid/app/enterprise/ContextInfo;)Z
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/certificate/CertificatePolicy;->enforceOwnerOnlyAndCertificatePermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -5850,7 +5752,6 @@
 
 .method public clearUntrustedCertificateList(Landroid/app/enterprise/ContextInfo;)Z
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/certificate/CertificatePolicy;->enforceOwnerOnlyAndCertificatePermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -5867,8 +5768,6 @@
 
 .method public enableCertificateFailureNotification(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 4
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/certificate/CertificatePolicy;->enforceOwnerOnlyAndCertificatePermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -5891,8 +5790,6 @@
 
 .method public enableCertificateValidationAtInstall(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 4
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/certificate/CertificatePolicy;->enforceOwnerOnlyAndCertificatePermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -5915,8 +5812,6 @@
 
 .method public enableSignatureIdentityInformation(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/certificate/CertificatePolicy;->enforceCertificatePermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -5939,8 +5834,6 @@
 
 .method public getIdentitiesFromSignatures(Landroid/app/enterprise/ContextInfo;[Landroid/content/pm/Signature;)Ljava/util/List;
     .locals 17
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # [Landroid/content/pm/Signature;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -6123,7 +6016,6 @@
 
 .method public getListPermissionApplicationPrivateKey(Landroid/app/enterprise/ContextInfo;)Ljava/util/List;
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -6155,7 +6047,6 @@
 
 .method public getTrustedCaCertificateList(Landroid/app/enterprise/ContextInfo;)Ljava/util/List;
     .locals 12
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -6292,7 +6183,6 @@
 
 .method public getUntrustedCertificateList(Landroid/app/enterprise/ContextInfo;)Ljava/util/List;
     .locals 12
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -6429,8 +6319,6 @@
 
 .method public isCaCertificateDisabled(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const-string/jumbo v1, "systemDisabledList"
 
@@ -6447,9 +6335,6 @@
 
 .method public isCaCertificateTrusted(Landroid/app/enterprise/ContextInfo;Landroid/app/enterprise/CertificateInfo;Z)Z
     .locals 4
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Landroid/app/enterprise/CertificateInfo;
-    .param p3    # Z
 
     const/4 v2, 0x1
 
@@ -6529,7 +6414,6 @@
 
 .method public isCertificateFailureNotificationEnabled(Landroid/app/enterprise/ContextInfo;)Z
     .locals 6
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/certificate/CertificatePolicy;->enforceOwnerOnlyAndCertificatePermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -6579,7 +6463,6 @@
 
 .method public isCertificateValidationAtInstallEnabled(Landroid/app/enterprise/ContextInfo;)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v1, 0x0
 
@@ -6624,7 +6507,6 @@
 
 .method public isOcspCheckEnabled(Landroid/app/enterprise/ContextInfo;)Z
     .locals 4
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v2, 0x0
 
@@ -6699,10 +6581,6 @@
 
 .method public isPrivateKeyApplicationPermitted(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Ljava/lang/String;I)Ljava/lang/String;
     .locals 10
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
 
     iget v1, p1, Landroid/app/enterprise/ContextInfo;->mContainerId:I
 
@@ -6852,7 +6730,6 @@
 
 .method public isRevocationCheckEnabled(Landroid/app/enterprise/ContextInfo;)Z
     .locals 4
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v2, 0x0
 
@@ -6927,8 +6804,6 @@
 
 .method public isSignatureIdentityInformationEnabled(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 8
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     const-string v4, "com.android.packageinstaller"
 
@@ -6985,7 +6860,6 @@
 
 .method public isUserRemoveCertificatesAllowed(Landroid/app/enterprise/ContextInfo;)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v1, 0x1
 
@@ -7030,9 +6904,6 @@
 
 .method public notifyCertificateFailure(Ljava/lang/String;Ljava/lang/String;Z)V
     .locals 12
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     const/4 v11, 0x1
 
@@ -7162,9 +7033,6 @@
 
 .method public notifyCertificateFailureForContentProvider(Ljava/lang/String;Ljava/lang/String;Z)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     invoke-static {}, Lcom/android/server/enterprise/EnterpriseDeviceManagerService;->getInstance()Lcom/android/server/enterprise/EnterpriseDeviceManagerService;
 
@@ -7183,7 +7051,6 @@
 
 .method public notifyCertificateRemoved(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/certificate/CertificatePolicy;->enforceSystemUser()V
 
@@ -7214,7 +7081,6 @@
 
 .method public notifyUserKeystoreUnlocked(I)V
     .locals 5
-    .param p1    # I
 
     const/4 v3, 0x1
 
@@ -7256,21 +7122,18 @@
 
 .method public onAdminAdded(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onAdminRemoved(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onPreAdminRemoval(I)V
     .locals 0
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/certificate/CertificatePolicy;->clearTrustedCertificates(I)Z
 
@@ -7281,8 +7144,6 @@
 
 .method public removePermissionApplicationPrivateKey(Landroid/app/enterprise/ContextInfo;Lcom/sec/enterprise/knox/certificate/PermissionApplicationPrivateKey;)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Lcom/sec/enterprise/knox/certificate/PermissionApplicationPrivateKey;
 
     const/4 v3, 0x0
 
@@ -7356,7 +7217,6 @@
 
 .method public removeTrustedCaCertificateList(Landroid/app/enterprise/ContextInfo;Ljava/util/List;)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -7447,7 +7307,6 @@
 
 .method public removeUntrustedCertificateList(Landroid/app/enterprise/ContextInfo;Ljava/util/List;)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -7546,7 +7405,6 @@
 
 .method public validateCertificateAtInstall(Landroid/app/enterprise/CertificateInfo;)I
     .locals 3
-    .param p1    # Landroid/app/enterprise/CertificateInfo;
 
     invoke-virtual {p1}, Landroid/app/enterprise/CertificateInfo;->getCertificate()Ljava/security/cert/Certificate;
 

@@ -150,7 +150,6 @@
 
 .method private getKeyFromKeycode(I)Lcom/diotek/ime/framework/view/Keyboard$Key;
     .locals 10
-    .param p1    # I
 
     const/4 v9, 0x0
 
@@ -340,7 +339,6 @@
 
 .method private handleArrow(Z)V
     .locals 1
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -475,8 +473,6 @@
 
 .method private handleHwrRangeChange(ZZ)V
     .locals 4
-    .param p1    # Z
-    .param p2    # Z
 
     const/4 v0, -0x1
 
@@ -528,7 +524,6 @@
 
 .method private handleMonthKey(I)V
     .locals 4
-    .param p1    # I
 
     const/4 v3, 0x5
 
@@ -560,7 +555,6 @@
 
 .method private handleRangeChange(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v0, p0, Lcom/diotek/ime/framework/input/AbstractInputController;->mInputModeManager:Lcom/diotek/ime/framework/inputmode/InputModeManager;
 
@@ -684,7 +678,6 @@
 
 .method private handleThaiRangeChange(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/diotek/ime/framework/input/AbstractInputController;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -695,7 +688,6 @@
 
 .method private isNeedToUpdateInpuModueWithLanguage(Lcom/diotek/ime/framework/common/Language;)Z
     .locals 3
-    .param p1    # Lcom/diotek/ime/framework/common/Language;
 
     const/4 v0, 0x0
 
@@ -756,7 +748,6 @@
 
 .method private processMMKey(I)V
     .locals 8
-    .param p1    # I
 
     const/4 v7, 0x1
 
@@ -1072,8 +1063,6 @@
 
 .method private setBooleanToPreference(Ljava/lang/String;Z)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     iget-object v2, p0, Lcom/diotek/ime/framework/input/AbstractInputController;->mRepository:Lcom/diotek/ime/framework/repository/Repository;
 
@@ -1094,8 +1083,6 @@
 
 .method private setIntToPreference(Ljava/lang/String;I)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     iget-object v2, p0, Lcom/diotek/ime/framework/input/AbstractInputController;->mRepository:Lcom/diotek/ime/framework/repository/Repository;
 
@@ -1163,7 +1150,6 @@
 
 .method private showCyrillicUmlautPopup(I)Z
     .locals 5
-    .param p1    # I
 
     iget-object v2, p0, Lcom/diotek/ime/framework/input/AbstractInputController;->mRepository:Lcom/diotek/ime/framework/repository/Repository;
 
@@ -1265,7 +1251,6 @@
 
 .method private showNordicUmlautPopup(I)Z
     .locals 4
-    .param p1    # I
 
     iget-object v2, p0, Lcom/diotek/ime/framework/input/AbstractInputController;->mHwKeyManager:Lcom/diotek/ime/framework/input/hw/HwKeyManager;
 
@@ -1323,7 +1308,6 @@
 
 .method private showNormalUmlautPopup(I)Z
     .locals 8
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/diotek/ime/implement/input/InputControllerImpl;->getKeyFromKeycode(I)Lcom/diotek/ime/framework/view/Keyboard$Key;
 
@@ -2141,7 +2125,6 @@
 
 .method public changeToFullWidthSwitchMode(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/diotek/ime/framework/input/AbstractInputController;->mCurrentInputModule:Lcom/diotek/ime/framework/input/InputModule;
 
@@ -3181,9 +3164,6 @@
 
 .method protected getCurrentInputEngineIndex(III)I
     .locals 11
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v10, 0x7
 
@@ -3580,9 +3560,6 @@
 
 .method protected getCurrentInputModuleIndex(III)I
     .locals 10
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v9, 0x2
 
@@ -4323,7 +4300,6 @@
 
 .method public getHWInputEngineIndex(I)I
     .locals 5
-    .param p1    # I
 
     iget-boolean v2, p0, Lcom/diotek/ime/framework/input/AbstractInputController;->mIsSwiftKeyMode:Z
 
@@ -4361,7 +4337,6 @@
 
 .method protected getHWInputModuleIndex(I)I
     .locals 5
-    .param p1    # I
 
     const/high16 v4, 0x6b6f0000
 
@@ -4581,8 +4556,6 @@
 
 .method public handleRangeChange(ZZ)V
     .locals 5
-    .param p1    # Z
-    .param p2    # Z
 
     const/4 v4, 0x0
 
@@ -5116,7 +5089,6 @@
 
 .method protected isFunctionKey(I)Z
     .locals 10
-    .param p1    # I
 
     const/high16 v9, 0x6b6d0000
 
@@ -5309,7 +5281,6 @@
 
 .method public onLongPressHwKey(I)Z
     .locals 7
-    .param p1    # I
 
     iget-object v4, p0, Lcom/diotek/ime/framework/input/AbstractInputController;->mRepository:Lcom/diotek/ime/framework/repository/Repository;
 
@@ -5386,7 +5357,6 @@
 
 .method protected processFunctionKey(I)V
     .locals 47
-    .param p1    # I
 
     move-object/from16 v0, p0
 
@@ -11357,8 +11327,6 @@
 
 .method public sendDownUpKeyEvent(II)V
     .locals 24
-    .param p1    # I
-    .param p2    # I
 
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 
@@ -11638,7 +11606,6 @@
 
 .method public setEmojiPredictionEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/diotek/ime/framework/input/AbstractInputController;->mCurrentInputModule:Lcom/diotek/ime/framework/input/InputModule;
 
@@ -11649,7 +11616,6 @@
 
 .method public setFullWidthMode(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/implement/input/InputControllerImpl;->mFullWidthMode:Z
 
@@ -11658,8 +11624,6 @@
 
 .method public setHwrCandidateStatus(IZ)V
     .locals 1
-    .param p1    # I
-    .param p2    # Z
 
     iget-object v0, p0, Lcom/diotek/ime/framework/input/AbstractInputController;->mCurrentInputModule:Lcom/diotek/ime/framework/input/InputModule;
 
@@ -11670,7 +11634,6 @@
 
 .method public setParameterForCapsLockState(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/diotek/ime/framework/input/AbstractInputController;->mCurrentInputModule:Lcom/diotek/ime/framework/input/InputModule;
 

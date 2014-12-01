@@ -27,8 +27,6 @@
 # direct methods
 .method constructor <init>(Landroid/transition/Transition;Landroid/view/ViewGroup;)V
     .locals 0
-    .param p1    # Landroid/transition/Transition;
-    .param p2    # Landroid/view/ViewGroup;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -170,14 +168,12 @@
 
 .method public onViewAttachedToWindow(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     return-void
 .end method
 
 .method public onViewDetachedFromWindow(Landroid/view/View;)V
     .locals 5
-    .param p1    # Landroid/view/View;
 
     invoke-direct {p0}, Landroid/transition/TransitionManager$MultiListener;->removeListeners()V
 

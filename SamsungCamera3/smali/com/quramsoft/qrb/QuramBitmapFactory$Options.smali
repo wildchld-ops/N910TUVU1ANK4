@@ -123,7 +123,6 @@
 
 .method protected setHandle(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/quramsoft/qrb/QuramBitmapFactory$Options;->mDecodeHandle:I
 

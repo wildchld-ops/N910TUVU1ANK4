@@ -33,7 +33,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/accessibility/ScreenMagnifier;J)V
     .locals 5
-    .param p2    # J
 
     iput-object p1, p0, Lcom/android/server/accessibility/ScreenMagnifier$MagnificationController;->this$0:Lcom/android/server/accessibility/ScreenMagnifier;
 
@@ -112,8 +111,6 @@
 
 .method private animateMangificationSpec(Landroid/view/MagnificationSpec;Landroid/view/MagnificationSpec;)V
     .locals 3
-    .param p1    # Landroid/view/MagnificationSpec;
-    .param p2    # Landroid/view/MagnificationSpec;
 
     iget-object v0, p0, Lcom/android/server/accessibility/ScreenMagnifier$MagnificationController;->mTransformationAnimator:Landroid/animation/ValueAnimator;
 
@@ -266,8 +263,6 @@
 
 .method public offsetMagnifiedRegionCenter(FF)V
     .locals 5
-    .param p1    # F
-    .param p2    # F
 
     const/4 v4, 0x0
 
@@ -324,7 +319,6 @@
 
 .method public reset(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v1, p0, Lcom/android/server/accessibility/ScreenMagnifier$MagnificationController;->mTransformationAnimator:Landroid/animation/ValueAnimator;
 
@@ -377,7 +371,6 @@
 
 .method public setMagnificationSpec(Landroid/view/MagnificationSpec;)V
     .locals 2
-    .param p1    # Landroid/view/MagnificationSpec;
 
     :try_start_0
     iget-object v0, p0, Lcom/android/server/accessibility/ScreenMagnifier$MagnificationController;->mSentMagnificationSpec:Landroid/view/MagnificationSpec;
@@ -424,9 +417,6 @@
 
 .method public setMagnifiedRegionCenter(FFZ)V
     .locals 1
-    .param p1    # F
-    .param p2    # F
-    .param p3    # Z
 
     iget-object v0, p0, Lcom/android/server/accessibility/ScreenMagnifier$MagnificationController;->mCurrentMagnificationSpec:Landroid/view/MagnificationSpec;
 
@@ -439,10 +429,6 @@
 
 .method public setScale(FFFZ)V
     .locals 14
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # Z
 
     iget-object v3, p0, Lcom/android/server/accessibility/ScreenMagnifier$MagnificationController;->mTempRect:Landroid/graphics/Rect;
 
@@ -532,10 +518,6 @@
 
 .method public setScaleAndMagnifiedRegionCenter(FFFZ)V
     .locals 2
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # Z
 
     iget-object v0, p0, Lcom/android/server/accessibility/ScreenMagnifier$MagnificationController;->mCurrentMagnificationSpec:Landroid/view/MagnificationSpec;
 
@@ -616,9 +598,6 @@
 
 .method public updateMagnificationSpec(FFF)V
     .locals 8
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
 
     const/4 v7, 0x0
 

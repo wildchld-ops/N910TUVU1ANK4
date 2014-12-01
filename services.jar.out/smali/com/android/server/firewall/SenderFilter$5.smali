@@ -30,13 +30,6 @@
 # virtual methods
 .method public matches(Lcom/android/server/firewall/IntentFirewall;Landroid/content/ComponentName;Landroid/content/Intent;IILjava/lang/String;I)Z
     .locals 7
-    .param p1    # Lcom/android/server/firewall/IntentFirewall;
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # Landroid/content/Intent;
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Ljava/lang/String;
-    .param p7    # I
 
     const/4 v2, 0x0
 

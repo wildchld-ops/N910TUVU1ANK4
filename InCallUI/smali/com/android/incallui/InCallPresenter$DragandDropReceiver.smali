@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Lcom/android/incallui/InCallPresenter;Lcom/android/incallui/InCallPresenter$1;)V
     .locals 0
-    .param p1    # Lcom/android/incallui/InCallPresenter;
-    .param p2    # Lcom/android/incallui/InCallPresenter$1;
 
     invoke-direct {p0, p1}, Lcom/android/incallui/InCallPresenter$DragandDropReceiver;-><init>(Lcom/android/incallui/InCallPresenter;)V
 
@@ -43,8 +41,6 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 

@@ -45,8 +45,6 @@
 # virtual methods
 .method public onGetStatsCompleted(Landroid/content/pm/PackageStats;Z)V
     .locals 1
-    .param p1    # Landroid/content/pm/PackageStats;
-    .param p2    # Z
 
     monitor-enter p0
 

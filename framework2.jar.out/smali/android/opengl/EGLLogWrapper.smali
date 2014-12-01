@@ -21,9 +21,6 @@
 # direct methods
 .method public constructor <init>(Ljavax/microedition/khronos/egl/EGL;ILjava/io/Writer;)V
     .locals 3
-    .param p1    # Ljavax/microedition/khronos/egl/EGL;
-    .param p2    # I
-    .param p3    # Ljava/io/Writer;
 
     const/4 v1, 0x1
 
@@ -68,8 +65,6 @@
 
 .method private arg(Ljava/lang/String;I)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-static {p2}, Ljava/lang/Integer;->toString(I)Ljava/lang/String;
 
@@ -82,8 +77,6 @@
 
 .method private arg(Ljava/lang/String;Ljava/lang/Object;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Object;
 
     invoke-direct {p0, p2}, Landroid/opengl/EGLLogWrapper;->toString(Ljava/lang/Object;)Ljava/lang/String;
 
@@ -96,8 +89,6 @@
 
 .method private arg(Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget v0, p0, Landroid/opengl/EGLLogWrapper;->mArgCount:I
 
@@ -144,8 +135,6 @@
 
 .method private arg(Ljava/lang/String;Ljavax/microedition/khronos/egl/EGLContext;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljavax/microedition/khronos/egl/EGLContext;
 
     sget-object v0, Ljavax/microedition/khronos/egl/EGL10;->EGL_NO_CONTEXT:Ljavax/microedition/khronos/egl/EGLContext;
 
@@ -170,8 +159,6 @@
 
 .method private arg(Ljava/lang/String;Ljavax/microedition/khronos/egl/EGLDisplay;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljavax/microedition/khronos/egl/EGLDisplay;
 
     sget-object v0, Ljavax/microedition/khronos/egl/EGL10;->EGL_DEFAULT_DISPLAY:Ljava/lang/Object;
 
@@ -207,8 +194,6 @@
 
 .method private arg(Ljava/lang/String;Ljavax/microedition/khronos/egl/EGLSurface;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljavax/microedition/khronos/egl/EGLSurface;
 
     sget-object v0, Ljavax/microedition/khronos/egl/EGL10;->EGL_NO_SURFACE:Ljavax/microedition/khronos/egl/EGLSurface;
 
@@ -233,8 +218,6 @@
 
 .method private arg(Ljava/lang/String;[I)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # [I
 
     if-nez p2, :cond_0
 
@@ -261,8 +244,6 @@
 
 .method private arg(Ljava/lang/String;[Ljava/lang/Object;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/Object;
 
     if-nez p2, :cond_0
 
@@ -289,7 +270,6 @@
 
 .method private begin(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -406,7 +386,6 @@
 
 .method public static getErrorString(I)Ljava/lang/String;
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -516,7 +495,6 @@
 
 .method private static getHex(I)Ljava/lang/String;
     .locals 2
-    .param p0    # I
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -545,7 +523,6 @@
 
 .method private log(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     iget-object v0, p0, Landroid/opengl/EGLLogWrapper;->mLog:Ljava/io/Writer;
@@ -565,7 +542,6 @@
 
 .method private logLine(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -592,7 +568,6 @@
 
 .method private returns(I)V
     .locals 1
-    .param p1    # I
 
     invoke-static {p1}, Ljava/lang/Integer;->toString(I)Ljava/lang/String;
 
@@ -605,7 +580,6 @@
 
 .method private returns(Ljava/lang/Object;)V
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     invoke-direct {p0, p1}, Landroid/opengl/EGLLogWrapper;->toString(Ljava/lang/Object;)Ljava/lang/String;
 
@@ -618,7 +592,6 @@
 
 .method private returns(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -653,7 +626,6 @@
 
 .method private returns(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-static {p1}, Ljava/lang/Boolean;->toString(Z)Ljava/lang/String;
 
@@ -666,9 +638,6 @@
 
 .method private toString(I[II)Ljava/lang/String;
     .locals 6
-    .param p1    # I
-    .param p2    # [I
-    .param p3    # I
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -752,9 +721,6 @@
 
 .method private toString(I[Ljava/lang/Object;I)Ljava/lang/String;
     .locals 6
-    .param p1    # I
-    .param p2    # [Ljava/lang/Object;
-    .param p3    # I
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -838,7 +804,6 @@
 
 .method private toString(Ljava/lang/Object;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     if-nez p1, :cond_0
 
@@ -859,11 +824,6 @@
 # virtual methods
 .method public eglChooseConfig(Ljavax/microedition/khronos/egl/EGLDisplay;[I[Ljavax/microedition/khronos/egl/EGLConfig;I[I)Z
     .locals 7
-    .param p1    # Ljavax/microedition/khronos/egl/EGLDisplay;
-    .param p2    # [I
-    .param p3    # [Ljavax/microedition/khronos/egl/EGLConfig;
-    .param p4    # I
-    .param p5    # [I
 
     const-string v0, "eglChooseConfig"
 
@@ -916,9 +876,6 @@
 
 .method public eglCopyBuffers(Ljavax/microedition/khronos/egl/EGLDisplay;Ljavax/microedition/khronos/egl/EGLSurface;Ljava/lang/Object;)Z
     .locals 2
-    .param p1    # Ljavax/microedition/khronos/egl/EGLDisplay;
-    .param p2    # Ljavax/microedition/khronos/egl/EGLSurface;
-    .param p3    # Ljava/lang/Object;
 
     const-string v1, "eglCopyBuffers"
 
@@ -953,10 +910,6 @@
 
 .method public eglCreateContext(Ljavax/microedition/khronos/egl/EGLDisplay;Ljavax/microedition/khronos/egl/EGLConfig;Ljavax/microedition/khronos/egl/EGLContext;[I)Ljavax/microedition/khronos/egl/EGLContext;
     .locals 8
-    .param p1    # Ljavax/microedition/khronos/egl/EGLDisplay;
-    .param p2    # Ljavax/microedition/khronos/egl/EGLConfig;
-    .param p3    # Ljavax/microedition/khronos/egl/EGLContext;
-    .param p4    # [I
 
     const-string v0, "eglCreateContext"
 
@@ -1051,11 +1004,6 @@
 
 .method public eglCreateContextSEC(Ljavax/microedition/khronos/egl/EGLDisplay;Ljavax/microedition/khronos/egl/EGLConfig;Ljavax/microedition/khronos/egl/EGLContext;[II)Ljavax/microedition/khronos/egl/EGLContext;
     .locals 7
-    .param p1    # Ljavax/microedition/khronos/egl/EGLDisplay;
-    .param p2    # Ljavax/microedition/khronos/egl/EGLConfig;
-    .param p3    # Ljavax/microedition/khronos/egl/EGLContext;
-    .param p4    # [I
-    .param p5    # I
 
     const-string v0, "eglCreateContext"
 
@@ -1112,9 +1060,6 @@
 
 .method public eglCreatePbufferSurface(Ljavax/microedition/khronos/egl/EGLDisplay;Ljavax/microedition/khronos/egl/EGLConfig;[I)Ljavax/microedition/khronos/egl/EGLSurface;
     .locals 2
-    .param p1    # Ljavax/microedition/khronos/egl/EGLDisplay;
-    .param p2    # Ljavax/microedition/khronos/egl/EGLConfig;
-    .param p3    # [I
 
     const-string v1, "eglCreatePbufferSurface"
 
@@ -1149,10 +1094,6 @@
 
 .method public eglCreatePixmapSurface(Ljavax/microedition/khronos/egl/EGLDisplay;Ljavax/microedition/khronos/egl/EGLConfig;Ljava/lang/Object;[I)Ljavax/microedition/khronos/egl/EGLSurface;
     .locals 2
-    .param p1    # Ljavax/microedition/khronos/egl/EGLDisplay;
-    .param p2    # Ljavax/microedition/khronos/egl/EGLConfig;
-    .param p3    # Ljava/lang/Object;
-    .param p4    # [I
 
     const-string v1, "eglCreatePixmapSurface"
 
@@ -1191,10 +1132,6 @@
 
 .method public eglCreateWindowSurface(Ljavax/microedition/khronos/egl/EGLDisplay;Ljavax/microedition/khronos/egl/EGLConfig;Ljava/lang/Object;[I)Ljavax/microedition/khronos/egl/EGLSurface;
     .locals 2
-    .param p1    # Ljavax/microedition/khronos/egl/EGLDisplay;
-    .param p2    # Ljavax/microedition/khronos/egl/EGLConfig;
-    .param p3    # Ljava/lang/Object;
-    .param p4    # [I
 
     const-string v1, "eglCreateWindowSurface"
 
@@ -1233,8 +1170,6 @@
 
 .method public eglDestroyContext(Ljavax/microedition/khronos/egl/EGLDisplay;Ljavax/microedition/khronos/egl/EGLContext;)Z
     .locals 2
-    .param p1    # Ljavax/microedition/khronos/egl/EGLDisplay;
-    .param p2    # Ljavax/microedition/khronos/egl/EGLContext;
 
     const-string v1, "eglDestroyContext"
 
@@ -1265,8 +1200,6 @@
 
 .method public eglDestroySurface(Ljavax/microedition/khronos/egl/EGLDisplay;Ljavax/microedition/khronos/egl/EGLSurface;)Z
     .locals 2
-    .param p1    # Ljavax/microedition/khronos/egl/EGLDisplay;
-    .param p2    # Ljavax/microedition/khronos/egl/EGLSurface;
 
     const-string v1, "eglDestroySurface"
 
@@ -1297,10 +1230,6 @@
 
 .method public eglGetConfigAttrib(Ljavax/microedition/khronos/egl/EGLDisplay;Ljavax/microedition/khronos/egl/EGLConfig;I[I)Z
     .locals 2
-    .param p1    # Ljavax/microedition/khronos/egl/EGLDisplay;
-    .param p2    # Ljavax/microedition/khronos/egl/EGLConfig;
-    .param p3    # I
-    .param p4    # [I
 
     const-string v1, "eglGetConfigAttrib"
 
@@ -1341,10 +1270,6 @@
 
 .method public eglGetConfigs(Ljavax/microedition/khronos/egl/EGLDisplay;[Ljavax/microedition/khronos/egl/EGLConfig;I[I)Z
     .locals 2
-    .param p1    # Ljavax/microedition/khronos/egl/EGLDisplay;
-    .param p2    # [Ljavax/microedition/khronos/egl/EGLConfig;
-    .param p3    # I
-    .param p4    # [I
 
     const-string v1, "eglGetConfigs"
 
@@ -1427,7 +1352,6 @@
 
 .method public eglGetCurrentSurface(I)Ljavax/microedition/khronos/egl/EGLSurface;
     .locals 2
-    .param p1    # I
 
     const-string v1, "eglGetCurrentSurface"
 
@@ -1454,7 +1378,6 @@
 
 .method public eglGetDisplay(Ljava/lang/Object;)Ljavax/microedition/khronos/egl/EGLDisplay;
     .locals 2
-    .param p1    # Ljava/lang/Object;
 
     const-string v1, "eglGetDisplay"
 
@@ -1505,8 +1428,6 @@
 
 .method public eglInitialize(Ljavax/microedition/khronos/egl/EGLDisplay;[I)Z
     .locals 2
-    .param p1    # Ljavax/microedition/khronos/egl/EGLDisplay;
-    .param p2    # [I
 
     const-string v1, "eglInitialize"
 
@@ -1537,10 +1458,6 @@
 
 .method public eglMakeCurrent(Ljavax/microedition/khronos/egl/EGLDisplay;Ljavax/microedition/khronos/egl/EGLSurface;Ljavax/microedition/khronos/egl/EGLSurface;Ljavax/microedition/khronos/egl/EGLContext;)Z
     .locals 2
-    .param p1    # Ljavax/microedition/khronos/egl/EGLDisplay;
-    .param p2    # Ljavax/microedition/khronos/egl/EGLSurface;
-    .param p3    # Ljavax/microedition/khronos/egl/EGLSurface;
-    .param p4    # Ljavax/microedition/khronos/egl/EGLContext;
 
     const-string v1, "eglMakeCurrent"
 
@@ -1579,10 +1496,6 @@
 
 .method public eglQueryContext(Ljavax/microedition/khronos/egl/EGLDisplay;Ljavax/microedition/khronos/egl/EGLContext;I[I)Z
     .locals 2
-    .param p1    # Ljavax/microedition/khronos/egl/EGLDisplay;
-    .param p2    # Ljavax/microedition/khronos/egl/EGLContext;
-    .param p3    # I
-    .param p4    # [I
 
     const-string v1, "eglQueryContext"
 
@@ -1623,8 +1536,6 @@
 
 .method public eglQueryString(Ljavax/microedition/khronos/egl/EGLDisplay;I)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljavax/microedition/khronos/egl/EGLDisplay;
-    .param p2    # I
 
     const-string v1, "eglQueryString"
 
@@ -1655,10 +1566,6 @@
 
 .method public eglQuerySurface(Ljavax/microedition/khronos/egl/EGLDisplay;Ljavax/microedition/khronos/egl/EGLSurface;I[I)Z
     .locals 2
-    .param p1    # Ljavax/microedition/khronos/egl/EGLDisplay;
-    .param p2    # Ljavax/microedition/khronos/egl/EGLSurface;
-    .param p3    # I
-    .param p4    # [I
 
     const-string v1, "eglQuerySurface"
 
@@ -1721,8 +1628,6 @@
 
 .method public eglSwapBuffers(Ljavax/microedition/khronos/egl/EGLDisplay;Ljavax/microedition/khronos/egl/EGLSurface;)Z
     .locals 2
-    .param p1    # Ljavax/microedition/khronos/egl/EGLDisplay;
-    .param p2    # Ljavax/microedition/khronos/egl/EGLSurface;
 
     const-string v1, "eglInitialize"
 
@@ -1753,7 +1658,6 @@
 
 .method public eglTerminate(Ljavax/microedition/khronos/egl/EGLDisplay;)Z
     .locals 2
-    .param p1    # Ljavax/microedition/khronos/egl/EGLDisplay;
 
     const-string v1, "eglTerminate"
 
@@ -1802,8 +1706,6 @@
 
 .method public eglWaitNative(ILjava/lang/Object;)Z
     .locals 2
-    .param p1    # I
-    .param p2    # Ljava/lang/Object;
 
     const-string v1, "eglWaitNative"
 

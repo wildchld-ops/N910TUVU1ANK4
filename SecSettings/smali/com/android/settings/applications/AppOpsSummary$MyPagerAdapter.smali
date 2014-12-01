@@ -24,7 +24,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/settings/applications/AppOpsSummary;Landroid/app/FragmentManager;)V
     .locals 0
-    .param p2    # Landroid/app/FragmentManager;
 
     iput-object p1, p0, Lcom/android/settings/applications/AppOpsSummary$MyPagerAdapter;->this$0:Lcom/android/settings/applications/AppOpsSummary;
 
@@ -47,7 +46,6 @@
 
 .method public getItem(I)Landroid/app/Fragment;
     .locals 2
-    .param p1    # I
 
     new-instance v0, Lcom/android/settings/applications/AppOpsCategory;
 
@@ -62,7 +60,6 @@
 
 .method public getPageTitle(I)Ljava/lang/CharSequence;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/settings/applications/AppOpsSummary$MyPagerAdapter;->this$0:Lcom/android/settings/applications/AppOpsSummary;
 
@@ -75,7 +72,6 @@
 
 .method public onPageScrollStateChanged(I)V
     .locals 0
-    .param p1    # I
 
     if-nez p1, :cond_0
 
@@ -85,16 +81,12 @@
 
 .method public onPageScrolled(IFI)V
     .locals 0
-    .param p1    # I
-    .param p2    # F
-    .param p3    # I
 
     return-void
 .end method
 
 .method public onPageSelected(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/settings/applications/AppOpsSummary$MyPagerAdapter;->this$0:Lcom/android/settings/applications/AppOpsSummary;
 

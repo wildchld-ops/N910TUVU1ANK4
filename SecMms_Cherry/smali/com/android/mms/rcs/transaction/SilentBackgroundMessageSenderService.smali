@@ -76,7 +76,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/rcs/transaction/SilentBackgroundMessageSenderService;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/mms/rcs/transaction/SilentBackgroundMessageSenderService;
 
     iget-object v0, p0, Lcom/android/mms/rcs/transaction/SilentBackgroundMessageSenderService;->TAG:Ljava/lang/String;
 
@@ -85,7 +84,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/rcs/transaction/SilentBackgroundMessageSenderService;)Lcom/android/mms/rcs/transaction/SilentBackgroundMessageSenderService$MsgBGSender;
     .locals 1
-    .param p0    # Lcom/android/mms/rcs/transaction/SilentBackgroundMessageSenderService;
 
     iget-object v0, p0, Lcom/android/mms/rcs/transaction/SilentBackgroundMessageSenderService;->mMsgSender:Lcom/android/mms/rcs/transaction/SilentBackgroundMessageSenderService$MsgBGSender;
 
@@ -94,8 +92,6 @@
 
 .method static synthetic access$202(Lcom/android/mms/rcs/transaction/SilentBackgroundMessageSenderService;Lcom/android/mms/rcs/transaction/SilentBackgroundMessageSenderService$MsgBGSender;)Lcom/android/mms/rcs/transaction/SilentBackgroundMessageSenderService$MsgBGSender;
     .locals 0
-    .param p0    # Lcom/android/mms/rcs/transaction/SilentBackgroundMessageSenderService;
-    .param p1    # Lcom/android/mms/rcs/transaction/SilentBackgroundMessageSenderService$MsgBGSender;
 
     iput-object p1, p0, Lcom/android/mms/rcs/transaction/SilentBackgroundMessageSenderService;->mMsgSender:Lcom/android/mms/rcs/transaction/SilentBackgroundMessageSenderService$MsgBGSender;
 
@@ -114,7 +110,6 @@
 # virtual methods
 .method public onBind(Landroid/content/Intent;)Landroid/os/IBinder;
     .locals 1
-    .param p1    # Landroid/content/Intent;
 
     iget-object v0, p0, Lcom/android/mms/rcs/transaction/SilentBackgroundMessageSenderService;->mBinder:Landroid/os/IBinder;
 
@@ -185,9 +180,6 @@
 
 .method public onStartCommand(Landroid/content/Intent;II)I
     .locals 3
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
-    .param p3    # I
 
     iget-object v1, p0, Lcom/android/mms/rcs/transaction/SilentBackgroundMessageSenderService;->TAG:Ljava/lang/String;
 
@@ -214,8 +206,6 @@
 
 .method public sendFallbackMessage(Landroid/content/Intent;Ljava/lang/Runnable;)V
     .locals 2
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Ljava/lang/Runnable;
 
     if-eqz p1, :cond_0
 

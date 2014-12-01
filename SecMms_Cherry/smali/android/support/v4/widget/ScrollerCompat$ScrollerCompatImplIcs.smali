@@ -27,7 +27,6 @@
 # virtual methods
 .method public getCurrVelocity(Ljava/lang/Object;)F
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     invoke-static {p1}, Landroid/support/v4/widget/ScrollerCompatIcs;->getCurrVelocity(Ljava/lang/Object;)F
 

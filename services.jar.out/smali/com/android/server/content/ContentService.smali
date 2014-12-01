@@ -31,8 +31,6 @@
 # direct methods
 .method constructor <init>(Landroid/content/Context;Z)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Z
 
     invoke-direct {p0}, Landroid/content/IContentService$Stub;-><init>()V
 
@@ -153,8 +151,6 @@
 
 .method public static main(Landroid/content/Context;Z)Lcom/android/server/content/ContentService;
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
 
     new-instance v0, Lcom/android/server/content/ContentService;
 
@@ -171,10 +167,6 @@
 # virtual methods
 .method public addPeriodicSync(Landroid/accounts/Account;Ljava/lang/String;Landroid/os/Bundle;J)V
     .locals 13
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/os/Bundle;
-    .param p4    # J
 
     if-nez p1, :cond_0
 
@@ -300,8 +292,6 @@
 
 .method public addStatusChangeListener(ILandroid/content/ISyncStatusObserver;)V
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/content/ISyncStatusObserver;
 
     invoke-static {}, Lcom/android/server/content/ContentService;->clearCallingIdentity()J
 
@@ -339,8 +329,6 @@
 
 .method public cancelSync(Landroid/accounts/Account;Ljava/lang/String;)V
     .locals 6
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # Ljava/lang/String;
 
     if-eqz p2, :cond_0
 
@@ -395,9 +383,6 @@
 
 .method public cancelSyncAsUser(Landroid/accounts/Account;Ljava/lang/String;I)V
     .locals 4
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     invoke-static {}, Lcom/android/server/content/ContentService;->clearCallingIdentity()J
 
@@ -431,9 +416,6 @@
 
 .method protected declared-synchronized dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 16
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     monitor-enter p0
 
@@ -751,8 +733,6 @@
 
 .method public getIsSyncable(Landroid/accounts/Account;Ljava/lang/String;)I
     .locals 7
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # Ljava/lang/String;
 
     iget-object v4, p0, Lcom/android/server/content/ContentService;->mContext:Landroid/content/Context;
 
@@ -861,7 +841,6 @@
 
 .method public getMasterSyncAutomaticallyAsUser(I)Z
     .locals 6
-    .param p1    # I
 
     iget-object v3, p0, Lcom/android/server/content/ContentService;->mContext:Landroid/content/Context;
 
@@ -914,8 +893,6 @@
 
 .method public getPeriodicSyncs(Landroid/accounts/Account;Ljava/lang/String;)Ljava/util/List;
     .locals 6
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1034,7 +1011,6 @@
 
 .method public getSyncAdapterTypesAsUser(I)[Landroid/content/SyncAdapterType;
     .locals 4
-    .param p1    # I
 
     invoke-static {}, Lcom/android/server/content/ContentService;->clearCallingIdentity()J
 
@@ -1065,8 +1041,6 @@
 
 .method public getSyncAutomatically(Landroid/accounts/Account;Ljava/lang/String;)Z
     .locals 7
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # Ljava/lang/String;
 
     iget-object v4, p0, Lcom/android/server/content/ContentService;->mContext:Landroid/content/Context;
 
@@ -1123,9 +1097,6 @@
 
 .method public getSyncAutomaticallyAsUser(Landroid/accounts/Account;Ljava/lang/String;I)Z
     .locals 6
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     iget-object v3, p0, Lcom/android/server/content/ContentService;->mContext:Landroid/content/Context;
 
@@ -1178,8 +1149,6 @@
 
 .method public getSyncStatus(Landroid/accounts/Account;Ljava/lang/String;)Landroid/content/SyncStatusInfo;
     .locals 7
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # Ljava/lang/String;
 
     invoke-static {p2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -1251,8 +1220,6 @@
 
 .method public isSyncActive(Landroid/accounts/Account;Ljava/lang/String;)Z
     .locals 7
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # Ljava/lang/String;
 
     iget-object v4, p0, Lcom/android/server/content/ContentService;->mContext:Landroid/content/Context;
 
@@ -1309,8 +1276,6 @@
 
 .method public isSyncPending(Landroid/accounts/Account;Ljava/lang/String;)Z
     .locals 7
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # Ljava/lang/String;
 
     iget-object v4, p0, Lcom/android/server/content/ContentService;->mContext:Landroid/content/Context;
 
@@ -1367,10 +1332,6 @@
 
 .method public notifyChange(Landroid/net/Uri;Landroid/database/IContentObserver;ZZ)V
     .locals 6
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Landroid/database/IContentObserver;
-    .param p3    # Z
-    .param p4    # Z
 
     invoke-static {}, Landroid/os/UserHandle;->getCallingUserId()I
 
@@ -1393,11 +1354,6 @@
 
 .method public notifyChange(Landroid/net/Uri;Landroid/database/IContentObserver;ZZI)V
     .locals 24
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Landroid/database/IContentObserver;
-    .param p3    # Z
-    .param p4    # Z
-    .param p5    # I
 
     const-string v2, "ContentService"
 
@@ -1819,10 +1775,6 @@
 
 .method public onTransact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/os/Parcel;
-    .param p3    # Landroid/os/Parcel;
-    .param p4    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1857,9 +1809,6 @@
 
 .method public registerContentObserver(Landroid/net/Uri;ZLandroid/database/IContentObserver;)V
     .locals 1
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Z
-    .param p3    # Landroid/database/IContentObserver;
 
     invoke-static {}, Landroid/os/UserHandle;->getCallingUserId()I
 
@@ -1872,10 +1821,6 @@
 
 .method public registerContentObserver(Landroid/net/Uri;ZLandroid/database/IContentObserver;I)V
     .locals 10
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Z
-    .param p3    # Landroid/database/IContentObserver;
-    .param p4    # I
 
     if-eqz p3, :cond_0
 
@@ -1992,9 +1937,6 @@
 
 .method public removePeriodicSync(Landroid/accounts/Account;Ljava/lang/String;Landroid/os/Bundle;)V
     .locals 11
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/os/Bundle;
 
     if-nez p1, :cond_0
 
@@ -2079,7 +2021,6 @@
 
 .method public removeStatusChangeListener(Landroid/content/ISyncStatusObserver;)V
     .locals 4
-    .param p1    # Landroid/content/ISyncStatusObserver;
 
     invoke-static {}, Lcom/android/server/content/ContentService;->clearCallingIdentity()J
 
@@ -2117,16 +2058,12 @@
 
 .method public removeSync(Landroid/content/SyncRequest;)V
     .locals 0
-    .param p1    # Landroid/content/SyncRequest;
 
     return-void
 .end method
 
 .method public requestSync(Landroid/accounts/Account;Ljava/lang/String;Landroid/os/Bundle;)V
     .locals 13
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/os/Bundle;
 
     invoke-static/range {p3 .. p3}, Landroid/content/ContentResolver;->validateSyncExtrasBundle(Landroid/os/Bundle;)V
 
@@ -2180,9 +2117,6 @@
 
 .method public setIsSyncable(Landroid/accounts/Account;Ljava/lang/String;I)V
     .locals 7
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     invoke-static {p2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -2245,10 +2179,6 @@
 
 .method public setIsSyncableAsUser(Landroid/accounts/Account;Ljava/lang/String;II)V
     .locals 6
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
 
     iget-object v3, p0, Lcom/android/server/content/ContentService;->mContext:Landroid/content/Context;
 
@@ -2292,7 +2222,6 @@
 
 .method public setMasterSyncAutomatically(Z)V
     .locals 11
-    .param p1    # Z
 
     iget-object v8, p0, Lcom/android/server/content/ContentService;->mContext:Landroid/content/Context;
 
@@ -2397,8 +2326,6 @@
 
 .method public setMasterSyncAutomaticallyAsUser(ZI)V
     .locals 10
-    .param p1    # Z
-    .param p2    # I
 
     iget-object v7, p0, Lcom/android/server/content/ContentService;->mContext:Landroid/content/Context;
 
@@ -2499,9 +2426,6 @@
 
 .method public setSyncAutomatically(Landroid/accounts/Account;Ljava/lang/String;Z)V
     .locals 9
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     invoke-static {p2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -2602,10 +2526,6 @@
 
 .method public setSyncAutomaticallyAsUser(Landroid/accounts/Account;Ljava/lang/String;ZI)V
     .locals 8
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
-    .param p4    # I
 
     iget-object v5, p0, Lcom/android/server/content/ContentService;->mContext:Landroid/content/Context;
 
@@ -2687,7 +2607,6 @@
 
 .method public sync(Landroid/content/SyncRequest;)V
     .locals 22
-    .param p1    # Landroid/content/SyncRequest;
 
     invoke-virtual/range {p1 .. p1}, Landroid/content/SyncRequest;->getBundle()Landroid/os/Bundle;
 
@@ -2863,7 +2782,6 @@
 
 .method public unregisterContentObserver(Landroid/database/IContentObserver;)V
     .locals 2
-    .param p1    # Landroid/database/IContentObserver;
 
     if-nez p1, :cond_0
 

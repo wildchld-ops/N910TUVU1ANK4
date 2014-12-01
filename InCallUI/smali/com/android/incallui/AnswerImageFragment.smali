@@ -36,7 +36,6 @@
 
 .method static synthetic access$000(Lcom/android/incallui/AnswerImageFragment;)Landroid/widget/ImageView;
     .locals 1
-    .param p0    # Lcom/android/incallui/AnswerImageFragment;
 
     iget-object v0, p0, Lcom/android/incallui/AnswerImageFragment;->mRejectCallWithMsgOpenIcon:Landroid/widget/ImageView;
 
@@ -45,7 +44,6 @@
 
 .method static synthetic access$100(Lcom/android/incallui/AnswerImageFragment;)Lcom/android/incallui/widget/incomingwidget/RejectCallWithMessageDrawer;
     .locals 1
-    .param p0    # Lcom/android/incallui/AnswerImageFragment;
 
     iget-object v0, p0, Lcom/android/incallui/AnswerImageFragment;->mRejectCallWithMsgDrawer:Lcom/android/incallui/widget/incomingwidget/RejectCallWithMessageDrawer;
 
@@ -54,9 +52,6 @@
 
 .method static synthetic access$200(Lcom/android/incallui/AnswerImageFragment;Landroid/view/View;Z)V
     .locals 0
-    .param p0    # Lcom/android/incallui/AnswerImageFragment;
-    .param p1    # Landroid/view/View;
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/incallui/AnswerImageFragment;->setDescription(Landroid/view/View;Z)V
 
@@ -65,8 +60,6 @@
 
 .method private setDescription(Landroid/view/View;Z)V
     .locals 4
-    .param p1    # Landroid/view/View;
-    .param p2    # Z
 
     const/4 v0, 0x0
 
@@ -133,7 +126,6 @@
 
 .method private updateLayout(Z)V
     .locals 4
-    .param p1    # Z
 
     const/16 v3, 0x8
 
@@ -305,9 +297,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 3
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const-string v1, "onCreateView..."
 
@@ -418,7 +407,6 @@
 
 .method protected onFinishInflate(Landroid/view/View;)V
     .locals 3
-    .param p1    # Landroid/view/View;
 
     const v1, 0x7f0e0024
 
@@ -594,16 +582,12 @@
 
 .method public onGrabbedStateChange(Landroid/view/View;I)V
     .locals 0
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     return-void
 .end method
 
 .method public onTrigger(Landroid/view/View;I)V
     .locals 7
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     const/4 v6, 0x0
 
@@ -943,7 +927,6 @@
 
 .method public rejectCallWithMessage(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Lcom/android/incallui/BaseFragment;->getPresenter()Lcom/android/incallui/Presenter;
 
@@ -1010,7 +993,6 @@
 
 .method public showAnswerUi(Z)V
     .locals 2
-    .param p1    # Z
 
     invoke-super {p0, p1}, Lcom/android/incallui/AnswerFragment;->showAnswerUi(Z)V
 
@@ -1082,7 +1064,6 @@
 
 .method public showRejectCallWithMessage(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/incallui/AnswerImageFragment;->mRejectCallWithMsgDrawer:Lcom/android/incallui/widget/incomingwidget/RejectCallWithMessageDrawer;
 
@@ -1108,7 +1089,6 @@
 
 .method public startAirMotionAnimation(Lcom/android/incallui/widget/incomingwidget/IncomingCallImageHandle$HandleState;)V
     .locals 1
-    .param p1    # Lcom/android/incallui/widget/incomingwidget/IncomingCallImageHandle$HandleState;
 
     iget-object v0, p0, Lcom/android/incallui/AnswerImageFragment;->mIncomingCallImageWidget:Lcom/android/incallui/widget/incomingwidget/IncomingCallImageWidget;
 

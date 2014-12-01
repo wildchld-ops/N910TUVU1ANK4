@@ -36,7 +36,6 @@
 # virtual methods
 .method public onNumberSet(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/mms/ui/ComposeMenu$3;->this$0:Lcom/android/mms/ui/ComposeMenu;
 

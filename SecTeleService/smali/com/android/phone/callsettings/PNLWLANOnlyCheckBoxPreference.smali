@@ -115,41 +115,41 @@
 
     invoke-direct {v1, v0}, Landroid/widget/CheckBox;-><init>(Landroid/content/Context;)V
 
-    invoke-virtual {v1, v2}, Landroid/widget/CompoundButton;->setChecked(Z)V
+    invoke-virtual {v1, v2}, Landroid/widget/CheckBox;->setChecked(Z)V
 
     new-instance v0, Lcom/android/phone/callsettings/PNLWLANOnlyCheckBoxPreference$1;
 
     invoke-direct {v0, p0}, Lcom/android/phone/callsettings/PNLWLANOnlyCheckBoxPreference$1;-><init>(Lcom/android/phone/callsettings/PNLWLANOnlyCheckBoxPreference;)V
 
-    invoke-virtual {v1, v0}, Landroid/widget/CompoundButton;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
+    invoke-virtual {v1, v0}, Landroid/widget/CheckBox;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
-    invoke-virtual {v1}, Landroid/view/View;->getPaddingLeft()I
+    invoke-virtual {v1}, Landroid/widget/CheckBox;->getPaddingLeft()I
 
     move-result v0
 
     add-int/lit8 v0, v0, 0x19
 
-    invoke-virtual {v1}, Landroid/view/View;->getPaddingTop()I
+    invoke-virtual {v1}, Landroid/widget/CheckBox;->getPaddingTop()I
 
     move-result v2
 
-    invoke-virtual {v1}, Landroid/view/View;->getPaddingRight()I
+    invoke-virtual {v1}, Landroid/widget/CheckBox;->getPaddingRight()I
 
     move-result v4
 
-    invoke-virtual {v1}, Landroid/view/View;->getPaddingBottom()I
+    invoke-virtual {v1}, Landroid/widget/CheckBox;->getPaddingBottom()I
 
     move-result v5
 
-    invoke-virtual {v1, v0, v2, v4, v5}, Landroid/widget/TextView;->setPadding(IIII)V
+    invoke-virtual {v1, v0, v2, v4, v5}, Landroid/widget/CheckBox;->setPadding(IIII)V
 
     const/high16 v0, 0x41980000
 
-    invoke-virtual {v1, v0}, Landroid/widget/TextView;->setTextSize(F)V
+    invoke-virtual {v1, v0}, Landroid/widget/CheckBox;->setTextSize(F)V
 
     const v0, 0x7f09050f
 
-    invoke-virtual {v1, v0}, Landroid/widget/TextView;->setText(I)V
+    invoke-virtual {v1, v0}, Landroid/widget/CheckBox;->setText(I)V
 
     new-instance v7, Landroid/view/ViewGroup$LayoutParams;
 
@@ -159,7 +159,7 @@
 
     invoke-direct {v7, v0, v2}, Landroid/view/ViewGroup$LayoutParams;-><init>(II)V
 
-    invoke-virtual {v1, v7}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+    invoke-virtual {v1, v7}, Landroid/widget/CheckBox;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
     new-instance v6, Landroid/app/AlertDialog$Builder;
 
@@ -211,7 +211,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->show()V
+    invoke-virtual {v0}, Landroid/app/AlertDialog;->show()V
 
     return-void
 .end method
@@ -219,7 +219,7 @@
 .method private userConfirmClick()V
     .locals 0
 
-    invoke-super {p0}, Landroid/preference/TwoStatePreference;->onClick()V
+    invoke-super {p0}, Landroid/preference/CheckBoxPreference;->onClick()V
 
     return-void
 .end method
@@ -272,7 +272,7 @@
 
     if-nez v0, :cond_0
 
-    invoke-virtual {p0}, Landroid/preference/TwoStatePreference;->isChecked()Z
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/PNLWLANOnlyCheckBoxPreference;->isChecked()Z
 
     move-result v0
 
@@ -284,7 +284,7 @@
     return-void
 
     :cond_0
-    invoke-super {p0}, Landroid/preference/TwoStatePreference;->onClick()V
+    invoke-super {p0}, Landroid/preference/CheckBoxPreference;->onClick()V
 
     goto :goto_0
 .end method

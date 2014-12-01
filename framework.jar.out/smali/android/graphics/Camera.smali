@@ -36,7 +36,6 @@
 # virtual methods
 .method public applyToCanvas(Landroid/graphics/Canvas;)V
     .locals 1
-    .param p1    # Landroid/graphics/Canvas;
 
     invoke-virtual {p1}, Landroid/graphics/Canvas;->isHardwareAccelerated()Z
 
@@ -113,7 +112,6 @@
 
 .method public getMatrix(Landroid/graphics/Matrix;)V
     .locals 1
-    .param p1    # Landroid/graphics/Matrix;
 
     iget v0, p1, Landroid/graphics/Matrix;->native_instance:I
 

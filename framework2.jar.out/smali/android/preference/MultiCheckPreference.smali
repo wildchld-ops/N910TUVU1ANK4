@@ -26,7 +26,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -37,8 +36,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v2, 0x0
 
@@ -96,7 +93,6 @@
 
 .method static synthetic access$000(Landroid/preference/MultiCheckPreference;)[Z
     .locals 1
-    .param p0    # Landroid/preference/MultiCheckPreference;
 
     iget-object v0, p0, Landroid/preference/MultiCheckPreference;->mSetValues:[Z
 
@@ -105,7 +101,6 @@
 
 .method private setEntryValuesCS([Ljava/lang/CharSequence;)V
     .locals 3
-    .param p1    # [Ljava/lang/CharSequence;
 
     const/4 v1, 0x0
 
@@ -148,7 +143,6 @@
 # virtual methods
 .method public findIndexOfValue(Ljava/lang/String;)I
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_1
 
@@ -227,7 +221,6 @@
 
 .method public getValue(I)Z
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/preference/MultiCheckPreference;->mSetValues:[Z
 
@@ -246,7 +239,6 @@
 
 .method protected onDialogClosed(Z)V
     .locals 4
-    .param p1    # Z
 
     const/4 v3, 0x0
 
@@ -283,8 +275,6 @@
 
 .method protected onGetDefaultValue(Landroid/content/res/TypedArray;I)Ljava/lang/Object;
     .locals 1
-    .param p1    # Landroid/content/res/TypedArray;
-    .param p2    # I
 
     invoke-virtual {p1, p2}, Landroid/content/res/TypedArray;->getString(I)Ljava/lang/String;
 
@@ -295,7 +285,6 @@
 
 .method protected onPrepareDialogBuilder(Landroid/app/AlertDialog$Builder;)V
     .locals 3
-    .param p1    # Landroid/app/AlertDialog$Builder;
 
     invoke-super {p0, p1}, Landroid/preference/DialogPreference;->onPrepareDialogBuilder(Landroid/app/AlertDialog$Builder;)V
 
@@ -344,7 +333,6 @@
 
 .method protected onRestoreInstanceState(Landroid/os/Parcelable;)V
     .locals 3
-    .param p1    # Landroid/os/Parcelable;
 
     if-eqz p1, :cond_0
 
@@ -418,15 +406,12 @@
 
 .method protected onSetInitialValue(ZLjava/lang/Object;)V
     .locals 0
-    .param p1    # Z
-    .param p2    # Ljava/lang/Object;
 
     return-void
 .end method
 
 .method public setEntries(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/preference/Preference;->getContext()Landroid/content/Context;
 
@@ -447,7 +432,6 @@
 
 .method public setEntries([Ljava/lang/CharSequence;)V
     .locals 1
-    .param p1    # [Ljava/lang/CharSequence;
 
     iput-object p1, p0, Landroid/preference/MultiCheckPreference;->mEntries:[Ljava/lang/CharSequence;
 
@@ -468,7 +452,6 @@
 
 .method public setEntryValues(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/preference/Preference;->getContext()Landroid/content/Context;
 
@@ -489,7 +472,6 @@
 
 .method public setEntryValues([Ljava/lang/String;)V
     .locals 2
-    .param p1    # [Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -508,7 +490,6 @@
 
 .method public setSummary(Ljava/lang/CharSequence;)V
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
 
     invoke-super {p0, p1}, Landroid/preference/Preference;->setSummary(Ljava/lang/CharSequence;)V
 
@@ -548,8 +529,6 @@
 
 .method public setValue(IZ)V
     .locals 1
-    .param p1    # I
-    .param p2    # Z
 
     iget-object v0, p0, Landroid/preference/MultiCheckPreference;->mSetValues:[Z
 
@@ -560,7 +539,6 @@
 
 .method public setValues([Z)V
     .locals 4
-    .param p1    # [Z
 
     const/4 v3, 0x0
 

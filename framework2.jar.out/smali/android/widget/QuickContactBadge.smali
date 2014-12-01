@@ -95,7 +95,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -106,8 +105,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -118,9 +115,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v1, 0x0
 
@@ -174,8 +168,6 @@
 
 .method static synthetic access$002(Landroid/widget/QuickContactBadge;Landroid/net/Uri;)Landroid/net/Uri;
     .locals 0
-    .param p0    # Landroid/widget/QuickContactBadge;
-    .param p1    # Landroid/net/Uri;
 
     iput-object p1, p0, Landroid/widget/QuickContactBadge;->mContactUri:Landroid/net/Uri;
 
@@ -184,7 +176,6 @@
 
 .method static synthetic access$100(Landroid/widget/QuickContactBadge;)V
     .locals 0
-    .param p0    # Landroid/widget/QuickContactBadge;
 
     invoke-direct {p0}, Landroid/widget/QuickContactBadge;->onContactUriChanged()V
 
@@ -193,7 +184,6 @@
 
 .method static synthetic access$200(Landroid/widget/QuickContactBadge;)Landroid/content/Context;
     .locals 1
-    .param p0    # Landroid/widget/QuickContactBadge;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -202,7 +192,6 @@
 
 .method static synthetic access$300(Landroid/widget/QuickContactBadge;)Landroid/content/Context;
     .locals 1
-    .param p0    # Landroid/widget/QuickContactBadge;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -252,8 +241,6 @@
 # virtual methods
 .method public assignContactFromEmail(Ljava/lang/String;Z)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const/4 v0, 0x0
 
@@ -264,9 +251,6 @@
 
 .method public assignContactFromEmail(Ljava/lang/String;ZLandroid/os/Bundle;)V
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # Landroid/os/Bundle;
 
     const/4 v2, 0x0
 
@@ -319,8 +303,6 @@
 
 .method public assignContactFromPhone(Ljava/lang/String;Z)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     new-instance v0, Landroid/os/Bundle;
 
@@ -333,9 +315,6 @@
 
 .method public assignContactFromPhone(Ljava/lang/String;ZLandroid/os/Bundle;)V
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # Landroid/os/Bundle;
 
     const/4 v2, 0x0
 
@@ -384,7 +363,6 @@
 
 .method public assignContactUri(Landroid/net/Uri;)V
     .locals 1
-    .param p1    # Landroid/net/Uri;
 
     const/4 v0, 0x0
 
@@ -432,7 +410,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 8
-    .param p1    # Landroid/view/View;
 
     const/4 v1, 0x3
 
@@ -549,7 +526,6 @@
 
 .method protected onDraw(Landroid/graphics/Canvas;)V
     .locals 5
-    .param p1    # Landroid/graphics/Canvas;
 
     const/4 v4, 0x0
 
@@ -640,7 +616,6 @@
 
 .method public onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
     .locals 1
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
 
     invoke-super {p0, p1}, Landroid/widget/ImageView;->onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
 
@@ -657,7 +632,6 @@
 
 .method public onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
     .locals 1
-    .param p1    # Landroid/view/accessibility/AccessibilityNodeInfo;
 
     invoke-super {p0, p1}, Landroid/widget/ImageView;->onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
 
@@ -674,7 +648,6 @@
 
 .method public setExcludeMimes([Ljava/lang/String;)V
     .locals 0
-    .param p1    # [Ljava/lang/String;
 
     iput-object p1, p0, Landroid/widget/QuickContactBadge;->mExcludeMimes:[Ljava/lang/String;
 
@@ -710,7 +683,6 @@
 
 .method public setMode(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method

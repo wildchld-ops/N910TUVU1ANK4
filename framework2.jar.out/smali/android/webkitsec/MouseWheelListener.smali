@@ -56,9 +56,6 @@
 # direct methods
 .method constructor <init>(Landroid/content/Context;Landroid/view/ScaleGestureDetector$OnScaleGestureListener;Landroid/view/ScaleGestureDetector;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/view/ScaleGestureDetector$OnScaleGestureListener;
-    .param p3    # Landroid/view/ScaleGestureDetector;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -101,7 +98,6 @@
 
 .method public onDockZoomEvent(Landroid/view/MotionEvent;)V
     .locals 3
-    .param p1    # Landroid/view/MotionEvent;
 
     const/16 v1, 0x9
 

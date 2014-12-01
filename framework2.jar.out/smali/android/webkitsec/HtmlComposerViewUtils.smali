@@ -40,7 +40,6 @@
 
 .method public static escapeCharacterToDisplay(Ljava/lang/String;)Ljava/lang/String;
     .locals 10
-    .param p0    # Ljava/lang/String;
 
     const/16 v9, 0x20
 

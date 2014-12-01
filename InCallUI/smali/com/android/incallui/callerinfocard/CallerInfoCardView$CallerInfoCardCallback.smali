@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Lcom/android/incallui/callerinfocard/CallerInfoCardView;Lcom/android/incallui/callerinfocard/CallerInfoCardView$1;)V
     .locals 0
-    .param p1    # Lcom/android/incallui/callerinfocard/CallerInfoCardView;
-    .param p2    # Lcom/android/incallui/callerinfocard/CallerInfoCardView$1;
 
     invoke-direct {p0, p1}, Lcom/android/incallui/callerinfocard/CallerInfoCardView$CallerInfoCardCallback;-><init>(Lcom/android/incallui/callerinfocard/CallerInfoCardView;)V
 
@@ -46,9 +44,6 @@
 # virtual methods
 .method public onQueryComplete(ILjava/lang/Object;Lcom/android/incallui/callerinfocard/item/CallerInfoCardItem;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/Object;
-    .param p3    # Lcom/android/incallui/callerinfocard/item/CallerInfoCardItem;
 
     iget-object v0, p0, Lcom/android/incallui/callerinfocard/CallerInfoCardView$CallerInfoCardCallback;->this$0:Lcom/android/incallui/callerinfocard/CallerInfoCardView;
 

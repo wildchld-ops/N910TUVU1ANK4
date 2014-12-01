@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,9 +36,6 @@
 # virtual methods
 .method public addAccessibilityInteractionConnection(Landroid/view/IWindow;Landroid/view/accessibility/IAccessibilityInteractionConnection;I)I
     .locals 6
-    .param p1    # Landroid/view/IWindow;
-    .param p2    # Landroid/view/accessibility/IAccessibilityInteractionConnection;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -120,8 +116,6 @@
 
 .method public addClient(Landroid/view/accessibility/IAccessibilityManagerClient;I)I
     .locals 6
-    .param p1    # Landroid/view/accessibility/IAccessibilityManagerClient;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -199,7 +193,6 @@
 
 .method public assistantMenuRegister(Landroid/os/IBinder;)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -251,7 +244,6 @@
 
 .method public assistantMenuUpdate(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -371,9 +363,6 @@
 
 .method public enableMagnifier(IIF)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # F
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -429,8 +418,6 @@
 
 .method public getEnabledAccessibilityServiceList(II)Ljava/util/List;
     .locals 6
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II)",
@@ -500,7 +487,6 @@
 
 .method public getInstalledAccessibilityServiceList(I)Ljava/util/List;
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -629,7 +615,6 @@
 
 .method public interrupt(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -741,9 +726,6 @@
 
 .method public registerUiTestAutomationService(Landroid/os/IBinder;Landroid/accessibilityservice/IAccessibilityServiceClient;Landroid/accessibilityservice/AccessibilityServiceInfo;)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Landroid/accessibilityservice/IAccessibilityServiceClient;
-    .param p3    # Landroid/accessibilityservice/AccessibilityServiceInfo;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -830,7 +812,6 @@
 
 .method public removeAccessibilityInteractionConnection(Landroid/view/IWindow;)V
     .locals 5
-    .param p1    # Landroid/view/IWindow;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -894,8 +875,6 @@
 
 .method public sendAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;I)Z
     .locals 7
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -984,7 +963,6 @@
 
 .method public setMagnificationSpec(Landroid/view/MagnificationSpec;)V
     .locals 5
-    .param p1    # Landroid/view/MagnificationSpec;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1153,8 +1131,6 @@
 
 .method public setmDNIeColorBlind(Z[I)Z
     .locals 7
-    .param p1    # Z
-    .param p2    # [I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1234,7 +1210,6 @@
 
 .method public setmDNIeNegative(Z)Z
     .locals 7
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1312,8 +1287,6 @@
 
 .method public temporaryEnableAccessibilityStateUntilKeyguardRemoved(Landroid/content/ComponentName;Z)V
     .locals 5
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1398,7 +1371,6 @@
 
 .method public unregisterUiTestAutomationService(Landroid/accessibilityservice/IAccessibilityServiceClient;)V
     .locals 5
-    .param p1    # Landroid/accessibilityservice/IAccessibilityServiceClient;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

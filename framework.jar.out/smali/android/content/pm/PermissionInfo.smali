@@ -72,7 +72,6 @@
 
 .method public constructor <init>(Landroid/content/pm/PermissionInfo;)V
     .locals 1
-    .param p1    # Landroid/content/pm/PermissionInfo;
 
     invoke-direct {p0, p1}, Landroid/content/pm/PackageItemInfo;-><init>(Landroid/content/pm/PackageItemInfo;)V
 
@@ -101,7 +100,6 @@
 
 .method private constructor <init>(Landroid/os/Parcel;)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0, p1}, Landroid/content/pm/PackageItemInfo;-><init>(Landroid/os/Parcel;)V
 
@@ -144,8 +142,6 @@
 
 .method synthetic constructor <init>(Landroid/os/Parcel;Landroid/content/pm/PermissionInfo$1;)V
     .locals 0
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # Landroid/content/pm/PermissionInfo$1;
 
     invoke-direct {p0, p1}, Landroid/content/pm/PermissionInfo;-><init>(Landroid/os/Parcel;)V
 
@@ -154,7 +150,6 @@
 
 .method public static fixProtectionLevel(I)I
     .locals 1
-    .param p0    # I
 
     const/4 v0, 0x3
 
@@ -168,7 +163,6 @@
 
 .method public static protectionToString(I)Ljava/lang/String;
     .locals 3
-    .param p0    # I
 
     const-string v0, "????"
 
@@ -266,7 +260,6 @@
 
 .method public loadDescription(Landroid/content/pm/PackageManager;)Ljava/lang/CharSequence;
     .locals 4
-    .param p1    # Landroid/content/pm/PackageManager;
 
     const/4 v1, 0x0
 
@@ -353,8 +346,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     invoke-super {p0, p1, p2}, Landroid/content/pm/PackageItemInfo;->writeToParcel(Landroid/os/Parcel;I)V
 

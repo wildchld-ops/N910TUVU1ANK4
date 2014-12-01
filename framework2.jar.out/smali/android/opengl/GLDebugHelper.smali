@@ -24,9 +24,6 @@
 
 .method public static wrap(Ljavax/microedition/khronos/egl/EGL;ILjava/io/Writer;)Ljavax/microedition/khronos/egl/EGL;
     .locals 1
-    .param p0    # Ljavax/microedition/khronos/egl/EGL;
-    .param p1    # I
-    .param p2    # Ljava/io/Writer;
 
     if-eqz p2, :cond_0
 
@@ -42,9 +39,6 @@
 
 .method public static wrap(Ljavax/microedition/khronos/opengles/GL;ILjava/io/Writer;)Ljavax/microedition/khronos/opengles/GL;
     .locals 3
-    .param p0    # Ljavax/microedition/khronos/opengles/GL;
-    .param p1    # I
-    .param p2    # Ljava/io/Writer;
 
     if-eqz p1, :cond_2
 

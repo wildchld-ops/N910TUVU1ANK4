@@ -30,7 +30,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/print/RemotePrintService;)V
     .locals 1
-    .param p1    # Lcom/android/server/print/RemotePrintService;
 
     invoke-direct {p0}, Landroid/printservice/IPrintServiceClient$Stub;-><init>()V
 
@@ -45,8 +44,6 @@
 
 .method private throwIfPrinterIdTampered(Landroid/content/ComponentName;Landroid/print/PrinterId;)V
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Landroid/print/PrinterId;
 
     if-eqz p2, :cond_0
 
@@ -97,7 +94,6 @@
 
 .method private throwIfPrinterIdsForPrinterInfoTampered(Landroid/content/ComponentName;Ljava/util/List;)V
     .locals 4
-    .param p1    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -140,7 +136,6 @@
 
 .method private throwIfPrinterIdsTampered(Landroid/content/ComponentName;Ljava/util/List;)V
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -181,7 +176,6 @@
 # virtual methods
 .method public getPrintJobInfo(Landroid/print/PrintJobId;)Landroid/print/PrintJobInfo;
     .locals 5
-    .param p1    # Landroid/print/PrintJobId;
 
     iget-object v3, p0, Lcom/android/server/print/RemotePrintService$RemotePrintServiceClient;->mWeakService:Ljava/lang/ref/WeakReference;
 
@@ -296,7 +290,6 @@
 
 .method public onPrintersAdded(Landroid/content/pm/ParceledListSlice;)V
     .locals 5
-    .param p1    # Landroid/content/pm/ParceledListSlice;
 
     iget-object v4, p0, Lcom/android/server/print/RemotePrintService$RemotePrintServiceClient;->mWeakService:Ljava/lang/ref/WeakReference;
 
@@ -348,7 +341,6 @@
 
 .method public onPrintersRemoved(Landroid/content/pm/ParceledListSlice;)V
     .locals 5
-    .param p1    # Landroid/content/pm/ParceledListSlice;
 
     iget-object v4, p0, Lcom/android/server/print/RemotePrintService$RemotePrintServiceClient;->mWeakService:Ljava/lang/ref/WeakReference;
 
@@ -400,9 +392,6 @@
 
 .method public setPrintJobState(Landroid/print/PrintJobId;ILjava/lang/String;)Z
     .locals 4
-    .param p1    # Landroid/print/PrintJobId;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     iget-object v3, p0, Lcom/android/server/print/RemotePrintService$RemotePrintServiceClient;->mWeakService:Ljava/lang/ref/WeakReference;
 
@@ -450,8 +439,6 @@
 
 .method public setPrintJobTag(Landroid/print/PrintJobId;Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Landroid/print/PrintJobId;
-    .param p2    # Ljava/lang/String;
 
     iget-object v3, p0, Lcom/android/server/print/RemotePrintService$RemotePrintServiceClient;->mWeakService:Ljava/lang/ref/WeakReference;
 
@@ -499,8 +486,6 @@
 
 .method public writePrintJobData(Landroid/os/ParcelFileDescriptor;Landroid/print/PrintJobId;)V
     .locals 4
-    .param p1    # Landroid/os/ParcelFileDescriptor;
-    .param p2    # Landroid/print/PrintJobId;
 
     iget-object v3, p0, Lcom/android/server/print/RemotePrintService$RemotePrintServiceClient;->mWeakService:Ljava/lang/ref/WeakReference;
 

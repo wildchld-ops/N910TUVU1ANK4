@@ -36,7 +36,6 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 3
-    .param p1    # Landroid/view/View;
 
     # getter for: Lcom/android/mms/spam/SetupSpamNumberWriteForm;->sIsPhone:Z
     invoke-static {}, Lcom/android/mms/spam/SetupSpamNumberWriteForm;->access$000()Z

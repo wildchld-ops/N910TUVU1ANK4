@@ -103,10 +103,6 @@
 
 .method public constructor <init>(ILcom/android/systemui/SwipeHelper$Callback;FF)V
     .locals 2
-    .param p1    # I
-    .param p2    # Lcom/android/systemui/SwipeHelper$Callback;
-    .param p3    # F
-    .param p4    # F
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -169,7 +165,6 @@
 
 .method static synthetic access$000(Lcom/android/systemui/SwipeHelper;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/systemui/SwipeHelper;
 
     iget-object v0, p0, Lcom/android/systemui/SwipeHelper;->mCurrView:Landroid/view/View;
 
@@ -178,7 +173,6 @@
 
 .method static synthetic access$100(Lcom/android/systemui/SwipeHelper;)Z
     .locals 1
-    .param p0    # Lcom/android/systemui/SwipeHelper;
 
     iget-boolean v0, p0, Lcom/android/systemui/SwipeHelper;->mLongPressSent:Z
 
@@ -187,8 +181,6 @@
 
 .method static synthetic access$102(Lcom/android/systemui/SwipeHelper;Z)Z
     .locals 0
-    .param p0    # Lcom/android/systemui/SwipeHelper;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/systemui/SwipeHelper;->mLongPressSent:Z
 
@@ -197,7 +189,6 @@
 
 .method static synthetic access$200(Lcom/android/systemui/SwipeHelper;)Landroid/view/View$OnLongClickListener;
     .locals 1
-    .param p0    # Lcom/android/systemui/SwipeHelper;
 
     iget-object v0, p0, Lcom/android/systemui/SwipeHelper;->mLongPressListener:Landroid/view/View$OnLongClickListener;
 
@@ -206,7 +197,6 @@
 
 .method static synthetic access$300(Lcom/android/systemui/SwipeHelper;)Lcom/android/systemui/SwipeHelper$Callback;
     .locals 1
-    .param p0    # Lcom/android/systemui/SwipeHelper;
 
     iget-object v0, p0, Lcom/android/systemui/SwipeHelper;->mCallback:Lcom/android/systemui/SwipeHelper$Callback;
 
@@ -215,9 +205,6 @@
 
 .method static synthetic access$400(Lcom/android/systemui/SwipeHelper;Landroid/view/View;Z)V
     .locals 0
-    .param p0    # Lcom/android/systemui/SwipeHelper;
-    .param p1    # Landroid/view/View;
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/systemui/SwipeHelper;->updateAlphaFromOffset(Landroid/view/View;Z)V
 
@@ -226,8 +213,6 @@
 
 .method private createTranslationAnimation(Landroid/view/View;F)Landroid/animation/ObjectAnimator;
     .locals 4
-    .param p1    # Landroid/view/View;
-    .param p2    # F
 
     iget v1, p0, Lcom/android/systemui/SwipeHelper;->mSwipeDirection:I
 
@@ -258,7 +243,6 @@
 
 .method private getAlphaForOffset(Landroid/view/View;)F
     .locals 6
-    .param p1    # Landroid/view/View;
 
     const/high16 v5, 0x3f800000
 
@@ -330,7 +314,6 @@
 
 .method private getPerpendicularVelocity(Landroid/view/VelocityTracker;)F
     .locals 1
-    .param p1    # Landroid/view/VelocityTracker;
 
     iget v0, p0, Lcom/android/systemui/SwipeHelper;->mSwipeDirection:I
 
@@ -353,7 +336,6 @@
 
 .method private getPos(Landroid/view/MotionEvent;)F
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     iget v0, p0, Lcom/android/systemui/SwipeHelper;->mSwipeDirection:I
 
@@ -376,7 +358,6 @@
 
 .method private getSize(Landroid/view/View;)F
     .locals 1
-    .param p1    # Landroid/view/View;
 
     iget v0, p0, Lcom/android/systemui/SwipeHelper;->mSwipeDirection:I
 
@@ -403,7 +384,6 @@
 
 .method private getTranslation(Landroid/view/View;)F
     .locals 1
-    .param p1    # Landroid/view/View;
 
     iget v0, p0, Lcom/android/systemui/SwipeHelper;->mSwipeDirection:I
 
@@ -426,7 +406,6 @@
 
 .method private getVelocity(Landroid/view/VelocityTracker;)F
     .locals 1
-    .param p1    # Landroid/view/VelocityTracker;
 
     iget v0, p0, Lcom/android/systemui/SwipeHelper;->mSwipeDirection:I
 
@@ -449,7 +428,6 @@
 
 .method public static invalidateGlobalRegion(Landroid/view/View;)V
     .locals 5
-    .param p0    # Landroid/view/View;
 
     new-instance v0, Landroid/graphics/RectF;
 
@@ -486,8 +464,6 @@
 
 .method public static invalidateGlobalRegion(Landroid/view/View;Landroid/graphics/RectF;)V
     .locals 5
-    .param p0    # Landroid/view/View;
-    .param p1    # Landroid/graphics/RectF;
 
     :goto_0
     invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
@@ -566,8 +542,6 @@
 
 .method private setTranslation(Landroid/view/View;F)V
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # F
 
     iget v0, p0, Lcom/android/systemui/SwipeHelper;->mSwipeDirection:I
 
@@ -586,8 +560,6 @@
 
 .method private updateAlphaFromOffset(Landroid/view/View;Z)V
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # Z
 
     const/4 v2, 0x0
 
@@ -637,8 +609,6 @@
 # virtual methods
 .method public dismissChild(Landroid/view/View;F)V
     .locals 8
-    .param p1    # Landroid/view/View;
-    .param p2    # F
 
     const/4 v7, 0x0
 
@@ -783,7 +753,6 @@
 
 .method public onInterceptTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 7
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v4, 0x0
 
@@ -962,7 +931,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 19
-    .param p1    # Landroid/view/MotionEvent;
 
     move-object/from16 v0, p0
 
@@ -1397,7 +1365,6 @@
 
 .method public setDensityScale(F)V
     .locals 0
-    .param p1    # F
 
     iput p1, p0, Lcom/android/systemui/SwipeHelper;->mDensityScale:F
 
@@ -1406,7 +1373,6 @@
 
 .method public setLongPressListener(Landroid/view/View$OnLongClickListener;)V
     .locals 0
-    .param p1    # Landroid/view/View$OnLongClickListener;
 
     iput-object p1, p0, Lcom/android/systemui/SwipeHelper;->mLongPressListener:Landroid/view/View$OnLongClickListener;
 
@@ -1415,7 +1381,6 @@
 
 .method public setMinAlpha(F)V
     .locals 0
-    .param p1    # F
 
     iput p1, p0, Lcom/android/systemui/SwipeHelper;->mMinAlpha:F
 
@@ -1424,7 +1389,6 @@
 
 .method public setPagingTouchSlop(F)V
     .locals 0
-    .param p1    # F
 
     iput p1, p0, Lcom/android/systemui/SwipeHelper;->mPagingTouchSlop:F
 
@@ -1433,8 +1397,6 @@
 
 .method public snapChild(Landroid/view/View;F)V
     .locals 6
-    .param p1    # Landroid/view/View;
-    .param p2    # F
 
     iget-object v4, p0, Lcom/android/systemui/SwipeHelper;->mCallback:Lcom/android/systemui/SwipeHelper$Callback;
 

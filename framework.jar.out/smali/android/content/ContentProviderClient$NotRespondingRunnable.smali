@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Landroid/content/ContentProviderClient;Landroid/content/ContentProviderClient$1;)V
     .locals 0
-    .param p1    # Landroid/content/ContentProviderClient;
-    .param p2    # Landroid/content/ContentProviderClient$1;
 
     invoke-direct {p0, p1}, Landroid/content/ContentProviderClient$NotRespondingRunnable;-><init>(Landroid/content/ContentProviderClient;)V
 

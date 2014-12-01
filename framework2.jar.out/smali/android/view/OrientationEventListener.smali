@@ -40,7 +40,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x3
 
@@ -51,8 +50,6 @@
 
 .method public constructor <init>(Landroid/content/Context;I)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -102,7 +99,6 @@
 
 .method static synthetic access$000(Landroid/view/OrientationEventListener;)Landroid/view/OrientationListener;
     .locals 1
-    .param p0    # Landroid/view/OrientationEventListener;
 
     iget-object v0, p0, Landroid/view/OrientationEventListener;->mOldListener:Landroid/view/OrientationListener;
 
@@ -111,7 +107,6 @@
 
 .method static synthetic access$100(Landroid/view/OrientationEventListener;)I
     .locals 1
-    .param p0    # Landroid/view/OrientationEventListener;
 
     iget v0, p0, Landroid/view/OrientationEventListener;->mOrientation:I
 
@@ -120,8 +115,6 @@
 
 .method static synthetic access$102(Landroid/view/OrientationEventListener;I)I
     .locals 0
-    .param p0    # Landroid/view/OrientationEventListener;
-    .param p1    # I
 
     iput p1, p0, Landroid/view/OrientationEventListener;->mOrientation:I
 
@@ -229,7 +222,6 @@
 
 .method registerListener(Landroid/view/OrientationListener;)V
     .locals 0
-    .param p1    # Landroid/view/OrientationListener;
 
     iput-object p1, p0, Landroid/view/OrientationEventListener;->mOldListener:Landroid/view/OrientationListener;
 

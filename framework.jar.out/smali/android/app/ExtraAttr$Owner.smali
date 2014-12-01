@@ -43,7 +43,6 @@
 # virtual methods
 .method public addExtraAttr(Landroid/app/ExtraAttr;)V
     .locals 3
-    .param p1    # Landroid/app/ExtraAttr;
 
     if-eqz p1, :cond_0
 
@@ -107,7 +106,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 9
-    .param p1    # Ljava/lang/Object;
 
     const/4 v6, 0x0
 
@@ -332,7 +330,6 @@
 
 .method public getExtraInt(Ljava/lang/String;)I
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/app/ExtraAttr$Owner;->mBundle:Landroid/os/Bundle;
 
@@ -345,8 +342,6 @@
 
 .method public getExtraInt(Ljava/lang/String;I)I
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     iget-object v0, p0, Landroid/app/ExtraAttr$Owner;->mBundle:Landroid/os/Bundle;
 
@@ -359,7 +354,6 @@
 
 .method public getExtraString(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/app/ExtraAttr$Owner;->mBundle:Landroid/os/Bundle;
 
@@ -372,8 +366,6 @@
 
 .method public getExtraString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/app/ExtraAttr$Owner;->mBundle:Landroid/os/Bundle;
 

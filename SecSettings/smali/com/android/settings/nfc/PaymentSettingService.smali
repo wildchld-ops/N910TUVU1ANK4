@@ -39,7 +39,6 @@
 
 .method private getPaymentAppInfosComponent(Landroid/content/Context;)Ljava/util/List;
     .locals 7
-    .param p1    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -136,7 +135,6 @@
 # virtual methods
 .method public onBind(Landroid/content/Intent;)Landroid/os/IBinder;
     .locals 1
-    .param p1    # Landroid/content/Intent;
 
     const/4 v0, 0x0
 
@@ -145,9 +143,6 @@
 
 .method public onStartCommand(Landroid/content/Intent;II)I
     .locals 6
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
-    .param p3    # I
 
     const/16 v4, -0xa
 

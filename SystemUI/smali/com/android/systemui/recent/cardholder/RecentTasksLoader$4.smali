@@ -48,7 +48,6 @@
 # virtual methods
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [Ljava/lang/Void;
 
@@ -61,7 +60,6 @@
 
 .method protected varargs doInBackground([Ljava/lang/Void;)Ljava/lang/Void;
     .locals 6
-    .param p1    # [Ljava/lang/Void;
 
     const/4 v5, 0x1
 
@@ -152,7 +150,6 @@
 
 .method protected varargs onProgressUpdate([Lcom/android/systemui/recent/cardholder/TaskDescription;)V
     .locals 3
-    .param p1    # [Lcom/android/systemui/recent/cardholder/TaskDescription;
 
     invoke-virtual {p0}, Landroid/os/AsyncTask;->isCancelled()Z
 
@@ -205,7 +202,6 @@
 
 .method protected bridge synthetic onProgressUpdate([Ljava/lang/Object;)V
     .locals 0
-    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [Lcom/android/systemui/recent/cardholder/TaskDescription;
 

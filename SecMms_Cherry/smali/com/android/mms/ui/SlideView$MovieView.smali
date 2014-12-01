@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/mms/ui/SlideView;Landroid/content/Context;)V
     .locals 0
-    .param p2    # Landroid/content/Context;
 
     iput-object p1, p0, Lcom/android/mms/ui/SlideView$MovieView;->this$0:Lcom/android/mms/ui/SlideView;
 
@@ -34,7 +33,6 @@
 # virtual methods
 .method protected dispatchDraw(Landroid/graphics/Canvas;)V
     .locals 16
-    .param p1    # Landroid/graphics/Canvas;
 
     move-object/from16 v0, p0
 

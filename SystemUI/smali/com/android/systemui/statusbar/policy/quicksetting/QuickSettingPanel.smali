@@ -70,7 +70,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -81,8 +80,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -93,9 +90,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v5, -0x2
 
@@ -249,7 +243,6 @@
 
 .method private LoadAppslist(Ljava/lang/String;)[Ljava/lang/String;
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     const-string v3, "STATUSBAR-QuickSettingPanel"
 
@@ -338,7 +331,6 @@
 
 .method static synthetic access$000(Lcom/android/systemui/statusbar/policy/quicksetting/QuickSettingPanel;)V
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/policy/quicksetting/QuickSettingPanel;
 
     invoke-direct {p0}, Lcom/android/systemui/statusbar/policy/quicksetting/QuickSettingPanel;->refreshView()V
 
@@ -347,8 +339,6 @@
 
 .method static synthetic access$102(Lcom/android/systemui/statusbar/policy/quicksetting/QuickSettingPanel;I)I
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/policy/quicksetting/QuickSettingPanel;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/systemui/statusbar/policy/quicksetting/QuickSettingPanel;->mVisibleButtonNum:I
 
@@ -357,7 +347,6 @@
 
 .method static synthetic access$200(Lcom/android/systemui/statusbar/policy/quicksetting/QuickSettingPanel;)I
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/policy/quicksetting/QuickSettingPanel;
 
     invoke-direct {p0}, Lcom/android/systemui/statusbar/policy/quicksetting/QuickSettingPanel;->getButtonNumberFromDB()I
 
@@ -368,7 +357,6 @@
 
 .method static synthetic access$300(Lcom/android/systemui/statusbar/policy/quicksetting/QuickSettingPanel;)Z
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/policy/quicksetting/QuickSettingPanel;
 
     iget-boolean v0, p0, Lcom/android/systemui/statusbar/policy/quicksetting/QuickSettingPanel;->mSingleLine:Z
 
@@ -462,8 +450,6 @@
 
 .method private makeDividerVisible(II)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
 
     const/16 v2, 0x8
 
@@ -1477,9 +1463,6 @@
 # virtual methods
 .method public dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     const-string v2, "        QuickSettingButtons:"
 
@@ -1556,7 +1539,6 @@
 
 .method protected onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 4
-    .param p1    # Landroid/content/res/Configuration;
 
     iget-boolean v2, p0, Lcom/android/systemui/statusbar/policy/quicksetting/QuickSettingPanel;->mSingleLine:Z
 
@@ -1623,7 +1605,6 @@
 
 .method public setSingleLine(Z)V
     .locals 12
-    .param p1    # Z
 
     const/4 v11, 0x0
 
@@ -1936,7 +1917,6 @@
 
 .method public userSwitched(I)V
     .locals 9
-    .param p1    # I
 
     const/4 v8, -0x2
 

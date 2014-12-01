@@ -84,14 +84,6 @@
 
 .method public constructor <init>(ILjava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;ILjava/lang/String;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
-    .param p5    # Ljava/lang/String;
-    .param p6    # Ljava/lang/String;
-    .param p7    # I
-    .param p8    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -126,7 +118,6 @@
 
 .method public constructor <init>(Landroid/os/Parcel;)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -233,7 +224,6 @@
 
 .method public static isActivate(I)Z
     .locals 1
-    .param p0    # I
 
     and-int/lit8 v0, p0, 0x2
 
@@ -252,7 +242,6 @@
 
 .method public static isOnline(I)Z
     .locals 1
-    .param p0    # I
 
     const/high16 v0, 0x10000000
 
@@ -371,7 +360,6 @@
 
 .method public isSameIPAddress(Lcom/samsung/dmc/ux/db/UserInfo;)Z
     .locals 2
-    .param p1    # Lcom/samsung/dmc/ux/db/UserInfo;
 
     if-nez p1, :cond_0
 
@@ -396,7 +384,6 @@
 
 .method public setActivateStatus(Z)V
     .locals 1
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -433,7 +420,6 @@
 
 .method public setGroupID(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/dmc/ux/db/UserInfo;->groupID:I
 
@@ -442,7 +428,6 @@
 
 .method public setIPAddress(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/samsung/dmc/ux/db/UserInfo;->ipAddress:Ljava/lang/String;
 
@@ -451,7 +436,6 @@
 
 .method public setLoginTime(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/samsung/dmc/ux/db/UserInfo;->loginTime:Ljava/lang/String;
 
@@ -460,7 +444,6 @@
 
 .method public setLogoutTime(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/samsung/dmc/ux/db/UserInfo;->logoutTime:Ljava/lang/String;
 
@@ -469,7 +452,6 @@
 
 .method public setMacAddress(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/samsung/dmc/ux/db/UserInfo;->macAddress:Ljava/lang/String;
 
@@ -478,7 +460,6 @@
 
 .method public setOnlineStatus(Z)V
     .locals 2
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -507,7 +488,6 @@
 
 .method public setUserID(I)V
     .locals 1
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/dmc/ux/db/UserInfo;->userID:I
 
@@ -520,7 +500,6 @@
 
 .method public setUserStatus(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/dmc/ux/db/UserInfo;->userStatus:I
 
@@ -529,8 +508,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     invoke-virtual {p0}, Lcom/samsung/dmc/ux/db/UserInfo;->getUserID()I
 

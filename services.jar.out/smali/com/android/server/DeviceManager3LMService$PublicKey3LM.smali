@@ -25,7 +25,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 8
-    .param p1    # Landroid/content/Context;
 
     const/4 v7, 0x0
 
@@ -114,7 +113,6 @@
 
 .method private extractPublicKey([B)Ljava/security/PublicKey;
     .locals 1
-    .param p1    # [B
 
     const/4 v0, 0x0
 
@@ -125,8 +123,6 @@
 # virtual methods
 .method public comparePublicKey([BZ)Z
     .locals 1
-    .param p1    # [B
-    .param p2    # Z
 
     const/4 v0, 0x0
 

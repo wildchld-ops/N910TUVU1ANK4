@@ -34,7 +34,6 @@
 
 .method public static abs(F)F
     .locals 1
-    .param p0    # F
 
     const/4 v0, 0x0
 
@@ -53,7 +52,6 @@
 
 .method public static acos(F)F
     .locals 2
-    .param p0    # F
 
     float-to-double v0, p0
 
@@ -68,7 +66,6 @@
 
 .method public static asin(F)F
     .locals 2
-    .param p0    # F
 
     float-to-double v0, p0
 
@@ -83,7 +80,6 @@
 
 .method public static atan(F)F
     .locals 2
-    .param p0    # F
 
     float-to-double v0, p0
 
@@ -98,8 +94,6 @@
 
 .method public static atan2(FF)F
     .locals 4
-    .param p0    # F
-    .param p1    # F
 
     float-to-double v0, p0
 
@@ -116,9 +110,6 @@
 
 .method public static constrain(FFF)F
     .locals 1
-    .param p0    # F
-    .param p1    # F
-    .param p2    # F
 
     cmpg-float v0, p0, p1
 
@@ -144,9 +135,6 @@
 
 .method public static constrain(III)I
     .locals 0
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
 
     if-ge p0, p1, :cond_0
 
@@ -168,9 +156,6 @@
 
 .method public static constrain(JJJ)J
     .locals 1
-    .param p0    # J
-    .param p2    # J
-    .param p4    # J
 
     cmp-long v0, p0, p2
 
@@ -196,7 +181,6 @@
 
 .method public static degrees(F)F
     .locals 1
-    .param p0    # F
 
     const v0, 0x42652ee2
 
@@ -207,10 +191,6 @@
 
 .method public static dist(FFFF)F
     .locals 4
-    .param p0    # F
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
 
     sub-float v0, p2, p0
 
@@ -235,12 +215,6 @@
 
 .method public static dist(FFFFFF)F
     .locals 5
-    .param p0    # F
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
 
     sub-float v0, p3, p0
 
@@ -271,7 +245,6 @@
 
 .method public static exp(F)F
     .locals 2
-    .param p0    # F
 
     float-to-double v0, p0
 
@@ -286,9 +259,6 @@
 
 .method public static lerp(FFF)F
     .locals 1
-    .param p0    # F
-    .param p1    # F
-    .param p2    # F
 
     sub-float v0, p1, p0
 
@@ -301,7 +271,6 @@
 
 .method public static log(F)F
     .locals 2
-    .param p0    # F
 
     float-to-double v0, p0
 
@@ -316,8 +285,6 @@
 
 .method public static mag(FF)F
     .locals 2
-    .param p0    # F
-    .param p1    # F
 
     mul-float v0, p0, p0
 
@@ -338,9 +305,6 @@
 
 .method public static mag(FFF)F
     .locals 2
-    .param p0    # F
-    .param p1    # F
-    .param p2    # F
 
     mul-float v0, p0, p0
 
@@ -365,11 +329,6 @@
 
 .method public static map(FFFFF)F
     .locals 3
-    .param p0    # F
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
 
     sub-float v0, p2, p3
 
@@ -388,8 +347,6 @@
 
 .method public static max(FF)F
     .locals 1
-    .param p0    # F
-    .param p1    # F
 
     cmpl-float v0, p0, p1
 
@@ -406,9 +363,6 @@
 
 .method public static max(FFF)F
     .locals 1
-    .param p0    # F
-    .param p1    # F
-    .param p2    # F
 
     cmpl-float v0, p0, p1
 
@@ -436,8 +390,6 @@
 
 .method public static max(II)F
     .locals 1
-    .param p0    # I
-    .param p1    # I
 
     if-le p0, p1, :cond_0
 
@@ -454,9 +406,6 @@
 
 .method public static max(III)F
     .locals 1
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
 
     if-le p0, p1, :cond_1
 
@@ -489,8 +438,6 @@
 
 .method public static min(FF)F
     .locals 1
-    .param p0    # F
-    .param p1    # F
 
     cmpg-float v0, p0, p1
 
@@ -507,9 +454,6 @@
 
 .method public static min(FFF)F
     .locals 1
-    .param p0    # F
-    .param p1    # F
-    .param p2    # F
 
     cmpg-float v0, p0, p1
 
@@ -537,8 +481,6 @@
 
 .method public static min(II)F
     .locals 1
-    .param p0    # I
-    .param p1    # I
 
     if-ge p0, p1, :cond_0
 
@@ -555,9 +497,6 @@
 
 .method public static min(III)F
     .locals 1
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
 
     if-ge p0, p1, :cond_1
 
@@ -590,9 +529,6 @@
 
 .method public static norm(FFF)F
     .locals 2
-    .param p0    # F
-    .param p1    # F
-    .param p2    # F
 
     sub-float v0, p2, p0
 
@@ -605,8 +541,6 @@
 
 .method public static pow(FF)F
     .locals 4
-    .param p0    # F
-    .param p1    # F
 
     float-to-double v0, p0
 
@@ -623,7 +557,6 @@
 
 .method public static radians(F)F
     .locals 1
-    .param p0    # F
 
     const v0, 0x3c8efa35
 
@@ -634,7 +567,6 @@
 
 .method public static random(F)F
     .locals 1
-    .param p0    # F
 
     sget-object v0, Landroid/util/MathUtils;->sRandom:Ljava/util/Random;
 
@@ -649,8 +581,6 @@
 
 .method public static random(FF)F
     .locals 2
-    .param p0    # F
-    .param p1    # F
 
     cmpl-float v0, p0, p1
 
@@ -677,7 +607,6 @@
 
 .method public static random(I)I
     .locals 2
-    .param p0    # I
 
     sget-object v0, Landroid/util/MathUtils;->sRandom:Ljava/util/Random;
 
@@ -696,8 +625,6 @@
 
 .method public static random(II)I
     .locals 2
-    .param p0    # I
-    .param p1    # I
 
     if-lt p0, p1, :cond_0
 
@@ -728,7 +655,6 @@
 
 .method public static randomSeed(J)V
     .locals 1
-    .param p0    # J
 
     sget-object v0, Landroid/util/MathUtils;->sRandom:Ljava/util/Random;
 
@@ -739,7 +665,6 @@
 
 .method public static sq(F)F
     .locals 1
-    .param p0    # F
 
     mul-float v0, p0, p0
 
@@ -748,7 +673,6 @@
 
 .method public static tan(F)F
     .locals 2
-    .param p0    # F
 
     float-to-double v0, p0
 

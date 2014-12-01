@@ -102,8 +102,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/DockSettings;Landroid/content/Intent;)V
     .locals 0
-    .param p0    # Lcom/android/settings/DockSettings;
-    .param p1    # Landroid/content/Intent;
 
     invoke-direct {p0, p1}, Lcom/android/settings/DockSettings;->handleDockChange(Landroid/content/Intent;)V
 
@@ -112,7 +110,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/DockSettings;)Landroid/preference/ListPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/DockSettings;
 
     iget-object v0, p0, Lcom/android/settings/DockSettings;->mAudioOutput:Landroid/preference/ListPreference;
 
@@ -121,7 +118,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/DockSettings;)Landroid/preference/CheckBoxPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/DockSettings;
 
     iget-object v0, p0, Lcom/android/settings/DockSettings;->mCradleEnable:Landroid/preference/CheckBoxPreference;
 
@@ -130,7 +126,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/DockSettings;)V
     .locals 0
-    .param p0    # Lcom/android/settings/DockSettings;
 
     invoke-direct {p0}, Lcom/android/settings/DockSettings;->updateUltrasonicSensorSettingsScreen()V
 
@@ -139,7 +134,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/DockSettings;)Landroid/preference/CheckBoxPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/DockSettings;
 
     iget-object v0, p0, Lcom/android/settings/DockSettings;->mDeskHomeScreen:Landroid/preference/CheckBoxPreference;
 
@@ -148,7 +142,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/DockSettings;)Landroid/preference/CheckBoxPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/DockSettings;
 
     iget-object v0, p0, Lcom/android/settings/DockSettings;->mUltrasonicCane:Landroid/preference/CheckBoxPreference;
 
@@ -157,7 +150,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/DockSettings;)V
     .locals 0
-    .param p0    # Lcom/android/settings/DockSettings;
 
     invoke-direct {p0}, Lcom/android/settings/DockSettings;->updateState()V
 
@@ -166,7 +158,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/DockSettings;)V
     .locals 0
-    .param p0    # Lcom/android/settings/DockSettings;
 
     invoke-direct {p0}, Lcom/android/settings/DockSettings;->updateScreenSaverSummary()V
 
@@ -518,7 +509,6 @@
 
 .method private handleDockChange(Landroid/content/Intent;)V
     .locals 6
-    .param p1    # Landroid/content/Intent;
 
     const/4 v3, 0x1
 
@@ -2031,7 +2021,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -2046,7 +2035,6 @@
 
 .method public onCreateDialog(I)Landroid/app/Dialog;
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x1
 

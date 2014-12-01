@@ -57,10 +57,6 @@
 
 .method public constructor <init>(Ljava/lang/String;IIJ)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # J
 
     const/4 v1, -0x1
 
@@ -125,7 +121,6 @@
 
 .method public final setAccessTime(J)V
     .locals 0
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/kddi/android/internal/pdg/PdgStatusManager$PrivacyData;->accessTime:J
 
@@ -134,7 +129,6 @@
 
 .method public final setAuthState(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/kddi/android/internal/pdg/PdgStatusManager$PrivacyData;->authState:I
 
@@ -143,7 +137,6 @@
 
 .method public final setSettingState(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/kddi/android/internal/pdg/PdgStatusManager$PrivacyData;->settingState:I
 

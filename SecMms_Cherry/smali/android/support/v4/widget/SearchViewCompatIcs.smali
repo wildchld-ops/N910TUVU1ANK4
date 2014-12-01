@@ -22,7 +22,6 @@
 
 .method public static newSearchView(Landroid/content/Context;)Landroid/view/View;
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     new-instance v0, Landroid/support/v4/widget/SearchViewCompatIcs$MySearchView;
 
@@ -33,8 +32,6 @@
 
 .method public static setImeOptions(Landroid/view/View;I)V
     .locals 0
-    .param p0    # Landroid/view/View;
-    .param p1    # I
 
     check-cast p0, Landroid/widget/SearchView;
 
@@ -45,8 +42,6 @@
 
 .method public static setInputType(Landroid/view/View;I)V
     .locals 0
-    .param p0    # Landroid/view/View;
-    .param p1    # I
 
     check-cast p0, Landroid/widget/SearchView;
 

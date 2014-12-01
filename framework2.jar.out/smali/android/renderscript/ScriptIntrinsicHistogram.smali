@@ -10,8 +10,6 @@
 # direct methods
 .method private constructor <init>(ILandroid/renderscript/RenderScript;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Landroid/renderscript/RenderScript;
 
     invoke-direct {p0, p1, p2}, Landroid/renderscript/ScriptIntrinsic;-><init>(ILandroid/renderscript/RenderScript;)V
 
@@ -20,8 +18,6 @@
 
 .method public static create(Landroid/renderscript/RenderScript;Landroid/renderscript/Element;)Landroid/renderscript/ScriptIntrinsicHistogram;
     .locals 4
-    .param p0    # Landroid/renderscript/RenderScript;
-    .param p1    # Landroid/renderscript/Element;
 
     invoke-static {p0}, Landroid/renderscript/Element;->U8_4(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -93,7 +89,6 @@
 # virtual methods
 .method public forEach(Landroid/renderscript/Allocation;)V
     .locals 3
-    .param p1    # Landroid/renderscript/Allocation;
 
     const/4 v2, 0x0
 
@@ -192,7 +187,6 @@
 
 .method public forEach_Dot(Landroid/renderscript/Allocation;)V
     .locals 4
-    .param p1    # Landroid/renderscript/Allocation;
 
     const/4 v3, 0x0
 
@@ -309,10 +303,6 @@
 
 .method public setDotCoefficients(FFFF)V
     .locals 3
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
 
     const/4 v2, 0x0
 
@@ -386,7 +376,6 @@
 
 .method public setOutput(Landroid/renderscript/Allocation;)V
     .locals 2
-    .param p1    # Landroid/renderscript/Allocation;
 
     iput-object p1, p0, Landroid/renderscript/ScriptIntrinsicHistogram;->mOut:Landroid/renderscript/Allocation;
 

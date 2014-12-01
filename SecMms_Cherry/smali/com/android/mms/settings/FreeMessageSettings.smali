@@ -67,8 +67,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/settings/FreeMessageSettings;Z)V
     .locals 0
-    .param p0    # Lcom/android/mms/settings/FreeMessageSettings;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/mms/settings/FreeMessageSettings;->logInOutFreeMessage(Z)V
 
@@ -77,7 +75,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/settings/FreeMessageSettings;)I
     .locals 1
-    .param p0    # Lcom/android/mms/settings/FreeMessageSettings;
 
     iget v0, p0, Lcom/android/mms/settings/FreeMessageSettings;->result:I
 
@@ -86,8 +83,6 @@
 
 .method static synthetic access$102(Lcom/android/mms/settings/FreeMessageSettings;I)I
     .locals 0
-    .param p0    # Lcom/android/mms/settings/FreeMessageSettings;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/mms/settings/FreeMessageSettings;->result:I
 
@@ -96,7 +91,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/settings/FreeMessageSettings;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/settings/FreeMessageSettings;
 
     iget-boolean v0, p0, Lcom/android/mms/settings/FreeMessageSettings;->detectLogin:Z
 
@@ -105,8 +99,6 @@
 
 .method static synthetic access$202(Lcom/android/mms/settings/FreeMessageSettings;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/settings/FreeMessageSettings;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/settings/FreeMessageSettings;->detectLogin:Z
 
@@ -115,7 +107,6 @@
 
 .method static synthetic access$300(Lcom/android/mms/settings/FreeMessageSettings;)I
     .locals 1
-    .param p0    # Lcom/android/mms/settings/FreeMessageSettings;
 
     iget v0, p0, Lcom/android/mms/settings/FreeMessageSettings;->serviceStatus:I
 
@@ -124,8 +115,6 @@
 
 .method static synthetic access$302(Lcom/android/mms/settings/FreeMessageSettings;I)I
     .locals 0
-    .param p0    # Lcom/android/mms/settings/FreeMessageSettings;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/mms/settings/FreeMessageSettings;->serviceStatus:I
 
@@ -134,7 +123,6 @@
 
 .method static synthetic access$400(Lcom/android/mms/settings/FreeMessageSettings;)Landroid/app/ProgressDialog;
     .locals 1
-    .param p0    # Lcom/android/mms/settings/FreeMessageSettings;
 
     iget-object v0, p0, Lcom/android/mms/settings/FreeMessageSettings;->mLogInOutProgressDialog:Landroid/app/ProgressDialog;
 
@@ -143,8 +131,6 @@
 
 .method static synthetic access$402(Lcom/android/mms/settings/FreeMessageSettings;Landroid/app/ProgressDialog;)Landroid/app/ProgressDialog;
     .locals 0
-    .param p0    # Lcom/android/mms/settings/FreeMessageSettings;
-    .param p1    # Landroid/app/ProgressDialog;
 
     iput-object p1, p0, Lcom/android/mms/settings/FreeMessageSettings;->mLogInOutProgressDialog:Landroid/app/ProgressDialog;
 
@@ -153,7 +139,6 @@
 
 .method static synthetic access$500(Lcom/android/mms/settings/FreeMessageSettings;)Landroid/widget/Switch;
     .locals 1
-    .param p0    # Lcom/android/mms/settings/FreeMessageSettings;
 
     iget-object v0, p0, Lcom/android/mms/settings/FreeMessageSettings;->mSwitch:Landroid/widget/Switch;
 
@@ -162,7 +147,6 @@
 
 .method private logInOutFreeMessage(Z)V
     .locals 2
-    .param p1    # Z
 
     const/4 v1, 0x1
 
@@ -258,7 +242,6 @@
 # virtual methods
 .method public makeCannotChangeDialog(Z)V
     .locals 6
-    .param p1    # Z
 
     invoke-virtual {p0}, Landroid/preference/PreferenceActivity;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
@@ -333,7 +316,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onCreate(Landroid/os/Bundle;)V
 
@@ -365,7 +347,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 3
-    .param p1    # Landroid/view/Menu;
 
     invoke-virtual {p0}, Landroid/app/Activity;->getMenuInflater()Landroid/view/MenuInflater;
 
@@ -414,7 +395,6 @@
 
 .method public onMenuItemClick(Landroid/view/MenuItem;)Z
     .locals 2
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v0, 0x0
 
@@ -490,7 +470,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -532,7 +511,6 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)Z
     .locals 4
-    .param p1    # Landroid/view/Menu;
 
     const/4 v3, 0x1
 
@@ -626,7 +604,6 @@
 
 .method public showChangeProgressDialog(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/mms/settings/FreeMessageSettings;->mLogInOutProgressDialog:Landroid/app/ProgressDialog;
 
@@ -706,7 +683,6 @@
 
 .method public startChangeFreeMessageStatusProgressDialogDismissTimer(Z)V
     .locals 4
-    .param p1    # Z
 
     new-instance v0, Landroid/os/Handler;
 

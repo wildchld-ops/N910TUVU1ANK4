@@ -79,7 +79,6 @@
 
 .method protected chooseUpstreamType(Z)V
     .locals 25
-    .param p1    # Z
 
     const-string v21, "connectivity"
 
@@ -838,7 +837,6 @@
 
 .method protected enableString(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -873,8 +871,6 @@
 
 .method protected notifyTetheredOfNewUpstreamIface(Ljava/lang/String;Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const-string v3, "Tethering"
 
@@ -956,7 +952,6 @@
 
 .method public processMessage(Landroid/os/Message;)Z
     .locals 1
-    .param p1    # Landroid/os/Message;
 
     const/4 v0, 0x0
 
@@ -1422,7 +1417,6 @@
 
 .method protected turnOnUpstreamMobileConnection(I)Z
     .locals 7
-    .param p1    # I
 
     const/4 v4, 0x0
 

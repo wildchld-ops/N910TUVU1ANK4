@@ -56,7 +56,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Ljava/lang/Class;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -85,8 +84,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -114,7 +111,6 @@
 
 .method public constructor <init>(Landroid/os/Parcel;)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -161,8 +157,6 @@
 
 .method private constructor <init>(Ljava/lang/String;Landroid/os/Parcel;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -179,8 +173,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -215,9 +207,6 @@
 
 .method private static appendShortClassName(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)V
     .locals 4
-    .param p0    # Ljava/lang/StringBuilder;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p2, p1}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
@@ -256,9 +245,6 @@
 
 .method public static appendShortString(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p0    # Ljava/lang/StringBuilder;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -275,9 +261,6 @@
 
 .method private static printShortClassName(Ljava/io/PrintWriter;Ljava/lang/String;Ljava/lang/String;)V
     .locals 4
-    .param p0    # Ljava/io/PrintWriter;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p2, p1}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
@@ -318,9 +301,6 @@
 
 .method public static printShortString(Ljava/io/PrintWriter;Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/io/PrintWriter;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
@@ -335,7 +315,6 @@
 
 .method public static readFromParcel(Landroid/os/Parcel;)Landroid/content/ComponentName;
     .locals 2
-    .param p0    # Landroid/os/Parcel;
 
     invoke-virtual {p0}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
@@ -358,7 +337,6 @@
 
 .method public static unflattenFromString(Ljava/lang/String;)Landroid/content/ComponentName;
     .locals 6
-    .param p0    # Ljava/lang/String;
 
     const/4 v5, 0x0
 
@@ -435,8 +413,6 @@
 
 .method public static writeToParcel(Landroid/content/ComponentName;Landroid/os/Parcel;)V
     .locals 1
-    .param p0    # Landroid/content/ComponentName;
-    .param p1    # Landroid/os/Parcel;
 
     if-eqz p0, :cond_0
 
@@ -459,7 +435,6 @@
 # virtual methods
 .method public appendShortString(Ljava/lang/StringBuilder;)V
     .locals 2
-    .param p1    # Ljava/lang/StringBuilder;
 
     iget-object v0, p0, Landroid/content/ComponentName;->mPackage:Ljava/lang/String;
 
@@ -501,7 +476,6 @@
 
 .method public compareTo(Landroid/content/ComponentName;)I
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
 
     iget-object v1, p0, Landroid/content/ComponentName;->mPackage:Ljava/lang/String;
 
@@ -530,7 +504,6 @@
 
 .method public bridge synthetic compareTo(Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Landroid/content/ComponentName;
 
@@ -551,7 +524,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 5
-    .param p1    # Ljava/lang/Object;
 
     const/4 v2, 0x0
 
@@ -842,8 +814,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v0, p0, Landroid/content/ComponentName;->mPackage:Ljava/lang/String;
 

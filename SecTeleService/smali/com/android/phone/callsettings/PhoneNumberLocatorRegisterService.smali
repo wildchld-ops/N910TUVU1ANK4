@@ -84,7 +84,7 @@
 
     iget-object v1, p0, Lcom/android/phone/callsettings/PhoneNumberLocatorRegisterService;->mReceiver:Lcom/android/phone/callsettings/PhoneNumberLocatorBootCompletedReceiver;
 
-    invoke-virtual {p0, v1, v0}, Landroid/content/ContextWrapper;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
+    invoke-virtual {p0, v1, v0}, Lcom/android/phone/callsettings/PhoneNumberLocatorRegisterService;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
     return-void
 .end method
@@ -100,7 +100,7 @@
 
     iget-object v0, p0, Lcom/android/phone/callsettings/PhoneNumberLocatorRegisterService;->mReceiver:Lcom/android/phone/callsettings/PhoneNumberLocatorBootCompletedReceiver;
 
-    invoke-virtual {p0, v0}, Landroid/content/ContextWrapper;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/callsettings/PhoneNumberLocatorRegisterService;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
     const/4 v0, 0x0
 

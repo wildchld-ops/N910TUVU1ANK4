@@ -28,7 +28,6 @@
 
 .method protected static isAddressIPv4(Ljava/lang/String;)Z
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -82,7 +81,6 @@
 
 .method protected static isAddressIPv4Subnet(Ljava/lang/String;)Z
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -113,7 +111,6 @@
 
 .method protected static isAddressIPv6(Ljava/lang/String;)Z
     .locals 8
-    .param p0    # Ljava/lang/String;
 
     const/4 v5, 0x0
 
@@ -203,7 +200,6 @@
 
 .method protected static isAddressIPv6Subnet(Ljava/lang/String;)Z
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -234,7 +230,6 @@
 
 .method protected static isDigit(I)Z
     .locals 1
-    .param p0    # I
 
     const/16 v0, 0x30
 
@@ -257,7 +252,6 @@
 
 .method protected static isEmailUsernameChar(I)Z
     .locals 2
-    .param p0    # I
 
     const/16 v0, 0x20
 
@@ -290,7 +284,6 @@
 
 .method protected static isHexDigit(I)Z
     .locals 1
-    .param p0    # I
 
     const/16 v0, 0x30
 
@@ -332,7 +325,6 @@
 
 .method protected static isHostnameChar(I)Z
     .locals 1
-    .param p0    # I
 
     const/16 v0, 0x2e
 
@@ -386,7 +378,6 @@
 
 .method protected static isNumber(Ljava/lang/String;)Z
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -434,9 +425,6 @@
 
 .method protected static isNumber(Ljava/lang/String;II)Z
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
-    .param p2    # I
 
     const/4 v1, 0x0
 
@@ -466,7 +454,6 @@
 
 .method protected static isValidDn(Ljava/lang/String;)Z
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -520,7 +507,6 @@
 
 .method protected static isValidFqdn(Ljava/lang/String;)Z
     .locals 12
-    .param p0    # Ljava/lang/String;
 
     const/4 v11, 0x6
 
@@ -670,7 +656,6 @@
 
 .method protected static isValidHostnamePart(Ljava/lang/String;)Z
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -742,8 +727,6 @@
 
 .method protected static isValidIdentity(Lcom/ipsec/client/IPsecConnection$IdentityType;Ljava/lang/String;)Z
     .locals 3
-    .param p0    # Lcom/ipsec/client/IPsecConnection$IdentityType;
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -817,7 +800,6 @@
 
 .method protected static isValidUserFqdn(Ljava/lang/String;)Z
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -879,7 +861,6 @@
 
 .method protected static splitDistinguishedName(Ljava/lang/String;)[Ljava/lang/String;
     .locals 15
-    .param p0    # Ljava/lang/String;
 
     if-eqz p0, :cond_0
 

@@ -36,7 +36,6 @@
 # virtual methods
 .method public onLongClick(Landroid/view/View;)Z
     .locals 5
-    .param p1    # Landroid/view/View;
 
     iget-object v2, p0, Lcom/android/mms/oem/AutoSendingTestActivity$1;->this$0:Lcom/android/mms/oem/AutoSendingTestActivity;
 

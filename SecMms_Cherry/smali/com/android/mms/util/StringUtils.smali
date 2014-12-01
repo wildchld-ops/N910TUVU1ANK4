@@ -14,8 +14,6 @@
 
 .method public static cutUtf8ByByte([BI)[B
     .locals 6
-    .param p0    # [B
-    .param p1    # I
 
     if-nez p0, :cond_1
 
@@ -104,8 +102,6 @@
 
 .method public static cutUtf8ByEucByte([BI)[B
     .locals 7
-    .param p0    # [B
-    .param p1    # I
 
     if-nez p0, :cond_1
 
@@ -304,7 +300,6 @@
 
 .method public static getLengthUtf8([B)I
     .locals 5
-    .param p0    # [B
 
     if-nez p0, :cond_1
 
@@ -417,7 +412,6 @@
 
 .method public static getLengthUtf8ByEucByte([B)I
     .locals 5
-    .param p0    # [B
 
     if-nez p0, :cond_1
 

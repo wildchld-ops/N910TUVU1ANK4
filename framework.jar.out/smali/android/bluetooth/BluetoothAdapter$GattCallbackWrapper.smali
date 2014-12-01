@@ -52,13 +52,6 @@
 # direct methods
 .method public constructor <init>(Landroid/bluetooth/BluetoothAdapter;Landroid/bluetooth/BluetoothAdapter$LeScanCallback;[Ljava/util/UUID;IIZZ)V
     .locals 1
-    .param p1    # Landroid/bluetooth/BluetoothAdapter;
-    .param p2    # Landroid/bluetooth/BluetoothAdapter$LeScanCallback;
-    .param p3    # [Ljava/util/UUID;
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Z
-    .param p7    # Z
 
     invoke-direct {p0}, Landroid/bluetooth/IBluetoothGattCallback$Stub;-><init>()V
 
@@ -93,10 +86,6 @@
 
 .method public constructor <init>(Landroid/bluetooth/BluetoothAdapter;Landroid/bluetooth/BluetoothAdapter$LeScanCallback;[Ljava/util/UUID;Landroid/bluetooth/BluetoothAdapter$AdvertiseCallback;)V
     .locals 1
-    .param p1    # Landroid/bluetooth/BluetoothAdapter;
-    .param p2    # Landroid/bluetooth/BluetoothAdapter$LeScanCallback;
-    .param p3    # [Ljava/util/UUID;
-    .param p4    # Landroid/bluetooth/BluetoothAdapter$AdvertiseCallback;
 
     invoke-direct {p0}, Landroid/bluetooth/IBluetoothGattCallback$Stub;-><init>()V
 
@@ -121,7 +110,6 @@
 
 .method static synthetic access$000(Landroid/bluetooth/BluetoothAdapter$GattCallbackWrapper;)I
     .locals 1
-    .param p0    # Landroid/bluetooth/BluetoothAdapter$GattCallbackWrapper;
 
     iget v0, p0, Landroid/bluetooth/BluetoothAdapter$GattCallbackWrapper;->mLeHandle:I
 
@@ -130,7 +118,6 @@
 
 .method static synthetic access$100(Landroid/bluetooth/BluetoothAdapter$GattCallbackWrapper;)Landroid/bluetooth/BluetoothAdapter$AdvertiseCallback;
     .locals 1
-    .param p0    # Landroid/bluetooth/BluetoothAdapter$GattCallbackWrapper;
 
     iget-object v0, p0, Landroid/bluetooth/BluetoothAdapter$GattCallbackWrapper;->mAdvertiseCallback:Landroid/bluetooth/BluetoothAdapter$AdvertiseCallback;
 
@@ -139,7 +126,6 @@
 
 .method private waitForRegisteration(I)Z
     .locals 7
-    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -260,8 +246,6 @@
 
 .method public onAdvertiseStateChange(II)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     const-string v3, "BluetoothAdapter"
 
@@ -438,45 +422,24 @@
 
 .method public onCharacteristicRead(Ljava/lang/String;IIILandroid/os/ParcelUuid;ILandroid/os/ParcelUuid;[B)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Landroid/os/ParcelUuid;
-    .param p6    # I
-    .param p7    # Landroid/os/ParcelUuid;
-    .param p8    # [B
 
     return-void
 .end method
 
 .method public onCharacteristicWrite(Ljava/lang/String;IIILandroid/os/ParcelUuid;ILandroid/os/ParcelUuid;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Landroid/os/ParcelUuid;
-    .param p6    # I
-    .param p7    # Landroid/os/ParcelUuid;
 
     return-void
 .end method
 
 .method public onClientConnectionState(IIZLjava/lang/String;)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method public onClientRegistered(II)V
     .locals 10
-    .param p1    # I
-    .param p2    # I
 
     const/4 v9, -0x1
 
@@ -840,128 +803,66 @@
 
 .method public onDescriptorRead(Ljava/lang/String;IIILandroid/os/ParcelUuid;ILandroid/os/ParcelUuid;ILandroid/os/ParcelUuid;[B)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Landroid/os/ParcelUuid;
-    .param p6    # I
-    .param p7    # Landroid/os/ParcelUuid;
-    .param p8    # I
-    .param p9    # Landroid/os/ParcelUuid;
-    .param p10    # [B
 
     return-void
 .end method
 
 .method public onDescriptorWrite(Ljava/lang/String;IIILandroid/os/ParcelUuid;ILandroid/os/ParcelUuid;ILandroid/os/ParcelUuid;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Landroid/os/ParcelUuid;
-    .param p6    # I
-    .param p7    # Landroid/os/ParcelUuid;
-    .param p8    # I
-    .param p9    # Landroid/os/ParcelUuid;
 
     return-void
 .end method
 
 .method public onExecuteWrite(Ljava/lang/String;I)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     return-void
 .end method
 
 .method public onGetCharacteristic(Ljava/lang/String;IILandroid/os/ParcelUuid;ILandroid/os/ParcelUuid;I)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/os/ParcelUuid;
-    .param p5    # I
-    .param p6    # Landroid/os/ParcelUuid;
-    .param p7    # I
 
     return-void
 .end method
 
 .method public onGetDescriptor(Ljava/lang/String;IILandroid/os/ParcelUuid;ILandroid/os/ParcelUuid;ILandroid/os/ParcelUuid;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/os/ParcelUuid;
-    .param p5    # I
-    .param p6    # Landroid/os/ParcelUuid;
-    .param p7    # I
-    .param p8    # Landroid/os/ParcelUuid;
 
     return-void
 .end method
 
 .method public onGetIncludedService(Ljava/lang/String;IILandroid/os/ParcelUuid;IILandroid/os/ParcelUuid;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/os/ParcelUuid;
-    .param p5    # I
-    .param p6    # I
-    .param p7    # Landroid/os/ParcelUuid;
 
     return-void
 .end method
 
 .method public onGetService(Ljava/lang/String;IILandroid/os/ParcelUuid;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/os/ParcelUuid;
 
     return-void
 .end method
 
 .method public onMonitorRssi(Ljava/lang/String;I)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     return-void
 .end method
 
 .method public onNotify(Ljava/lang/String;IILandroid/os/ParcelUuid;ILandroid/os/ParcelUuid;[B)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/os/ParcelUuid;
-    .param p5    # I
-    .param p6    # Landroid/os/ParcelUuid;
-    .param p7    # [B
 
     return-void
 .end method
 
 .method public onReadRemoteRssi(Ljava/lang/String;II)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     return-void
 .end method
 
 .method public onScanResult(Ljava/lang/String;I[B)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # [B
 
     monitor-enter p0
 
@@ -1055,8 +956,6 @@
 
 .method public onSearchComplete(Ljava/lang/String;I)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     return-void
 .end method

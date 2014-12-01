@@ -21,7 +21,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/settings/accessibility/directaccess/DirectAccessActions;I)V
     .locals 0
-    .param p2    # I
 
     iput-object p1, p0, Lcom/android/settings/accessibility/directaccess/DirectAccessActions$2;->this$0:Lcom/android/settings/accessibility/directaccess/DirectAccessActions;
 

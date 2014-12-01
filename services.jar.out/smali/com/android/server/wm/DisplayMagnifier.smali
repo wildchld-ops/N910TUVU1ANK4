@@ -72,8 +72,6 @@
 
 .method public constructor <init>(Lcom/android/server/wm/WindowManagerService;Landroid/view/IMagnificationCallbacks;)V
     .locals 2
-    .param p1    # Lcom/android/server/wm/WindowManagerService;
-    .param p2    # Landroid/view/IMagnificationCallbacks;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -166,7 +164,6 @@
 
 .method static synthetic access$000(Lcom/android/server/wm/DisplayMagnifier;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/server/wm/DisplayMagnifier;
 
     iget-object v0, p0, Lcom/android/server/wm/DisplayMagnifier;->mContext:Landroid/content/Context;
 
@@ -175,7 +172,6 @@
 
 .method static synthetic access$100(Lcom/android/server/wm/DisplayMagnifier;)Lcom/android/server/wm/WindowManagerService;
     .locals 1
-    .param p0    # Lcom/android/server/wm/DisplayMagnifier;
 
     iget-object v0, p0, Lcom/android/server/wm/DisplayMagnifier;->mWindowManagerService:Lcom/android/server/wm/WindowManagerService;
 
@@ -184,7 +180,6 @@
 
 .method static synthetic access$1400(Lcom/android/server/wm/DisplayMagnifier;)Landroid/view/IMagnificationCallbacks;
     .locals 1
-    .param p0    # Lcom/android/server/wm/DisplayMagnifier;
 
     iget-object v0, p0, Lcom/android/server/wm/DisplayMagnifier;->mCallbacks:Landroid/view/IMagnificationCallbacks;
 
@@ -193,7 +188,6 @@
 
 .method static synthetic access$1500(Lcom/android/server/wm/DisplayMagnifier;)Lcom/android/server/wm/DisplayMagnifier$MagnifiedViewport;
     .locals 1
-    .param p0    # Lcom/android/server/wm/DisplayMagnifier;
 
     iget-object v0, p0, Lcom/android/server/wm/DisplayMagnifier;->mMagnifedViewport:Lcom/android/server/wm/DisplayMagnifier$MagnifiedViewport;
 
@@ -202,7 +196,6 @@
 
 .method static synthetic access$200(Lcom/android/server/wm/DisplayMagnifier;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/server/wm/DisplayMagnifier;
 
     iget-object v0, p0, Lcom/android/server/wm/DisplayMagnifier;->mHandler:Landroid/os/Handler;
 
@@ -211,7 +204,6 @@
 
 .method static synthetic access$300(Lcom/android/server/wm/DisplayMagnifier;)Landroid/graphics/Region;
     .locals 1
-    .param p0    # Lcom/android/server/wm/DisplayMagnifier;
 
     iget-object v0, p0, Lcom/android/server/wm/DisplayMagnifier;->mTempRegion1:Landroid/graphics/Region;
 
@@ -220,7 +212,6 @@
 
 .method static synthetic access$400(Lcom/android/server/wm/DisplayMagnifier;)Landroid/graphics/Region;
     .locals 1
-    .param p0    # Lcom/android/server/wm/DisplayMagnifier;
 
     iget-object v0, p0, Lcom/android/server/wm/DisplayMagnifier;->mTempRegion4:Landroid/graphics/Region;
 
@@ -229,7 +220,6 @@
 
 .method static synthetic access$500(Lcom/android/server/wm/DisplayMagnifier;)Landroid/graphics/Region;
     .locals 1
-    .param p0    # Lcom/android/server/wm/DisplayMagnifier;
 
     iget-object v0, p0, Lcom/android/server/wm/DisplayMagnifier;->mTempRegion2:Landroid/graphics/Region;
 
@@ -238,7 +228,6 @@
 
 .method static synthetic access$600(Lcom/android/server/wm/DisplayMagnifier;)Landroid/graphics/Rect;
     .locals 1
-    .param p0    # Lcom/android/server/wm/DisplayMagnifier;
 
     iget-object v0, p0, Lcom/android/server/wm/DisplayMagnifier;->mTempRect1:Landroid/graphics/Rect;
 
@@ -247,7 +236,6 @@
 
 .method static synthetic access$700(Lcom/android/server/wm/DisplayMagnifier;)Landroid/graphics/Region;
     .locals 1
-    .param p0    # Lcom/android/server/wm/DisplayMagnifier;
 
     iget-object v0, p0, Lcom/android/server/wm/DisplayMagnifier;->mTempRegion3:Landroid/graphics/Region;
 
@@ -256,7 +244,6 @@
 
 .method static synthetic access$800(Lcom/android/server/wm/DisplayMagnifier;)J
     .locals 2
-    .param p0    # Lcom/android/server/wm/DisplayMagnifier;
 
     iget-wide v0, p0, Lcom/android/server/wm/DisplayMagnifier;->mLongAnimationDuration:J
 
@@ -265,7 +252,6 @@
 
 .method static synthetic access$900(Lcom/android/server/wm/DisplayMagnifier;)Z
     .locals 1
-    .param p0    # Lcom/android/server/wm/DisplayMagnifier;
 
     iget-boolean v0, p0, Lcom/android/server/wm/DisplayMagnifier;->mInputMethodVisiable:Z
 
@@ -296,7 +282,6 @@
 
 .method public getMagnificationSpecForWindowLocked(Lcom/android/server/wm/WindowState;)Landroid/view/MagnificationSpec;
     .locals 5
-    .param p1    # Lcom/android/server/wm/WindowState;
 
     const/4 v3, 0x0
 
@@ -374,8 +359,6 @@
 
 .method public onAppWindowTransitionLocked(Lcom/android/server/wm/WindowState;I)V
     .locals 3
-    .param p1    # Lcom/android/server/wm/WindowState;
-    .param p2    # I
 
     iget-object v1, p0, Lcom/android/server/wm/DisplayMagnifier;->mMagnifedViewport:Lcom/android/server/wm/DisplayMagnifier$MagnifiedViewport;
 
@@ -415,8 +398,6 @@
 
 .method public onRectangleOnScreenRequestedLocked(Landroid/graphics/Rect;Z)V
     .locals 4
-    .param p1    # Landroid/graphics/Rect;
-    .param p2    # Z
 
     iget-object v2, p0, Lcom/android/server/wm/DisplayMagnifier;->mMagnifedViewport:Lcom/android/server/wm/DisplayMagnifier$MagnifiedViewport;
 
@@ -478,8 +459,6 @@
 
 .method public onRotationChangedLocked(Lcom/android/server/wm/DisplayContent;I)V
     .locals 2
-    .param p1    # Lcom/android/server/wm/DisplayContent;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/server/wm/DisplayMagnifier;->mMagnifedViewport:Lcom/android/server/wm/DisplayMagnifier$MagnifiedViewport;
 
@@ -510,8 +489,6 @@
 
 .method public onWindowTransitionLocked(Lcom/android/server/wm/WindowState;I)V
     .locals 9
-    .param p1    # Lcom/android/server/wm/WindowState;
-    .param p2    # I
 
     iget-object v4, p0, Lcom/android/server/wm/DisplayMagnifier;->mMagnifedViewport:Lcom/android/server/wm/DisplayMagnifier$MagnifiedViewport;
 
@@ -625,7 +602,6 @@
 
 .method public setMagnificationSpecLocked(Landroid/view/MagnificationSpec;)V
     .locals 1
-    .param p1    # Landroid/view/MagnificationSpec;
 
     iget-object v0, p0, Lcom/android/server/wm/DisplayMagnifier;->mMagnifedViewport:Lcom/android/server/wm/DisplayMagnifier$MagnifiedViewport;
 

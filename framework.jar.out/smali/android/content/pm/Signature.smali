@@ -53,7 +53,6 @@
 
 .method private constructor <init>(Landroid/os/Parcel;)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -68,8 +67,6 @@
 
 .method synthetic constructor <init>(Landroid/os/Parcel;Landroid/content/pm/Signature$1;)V
     .locals 0
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # Landroid/content/pm/Signature$1;
 
     invoke-direct {p0, p1}, Landroid/content/pm/Signature;-><init>(Landroid/os/Parcel;)V
 
@@ -78,7 +75,6 @@
 
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 12
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -176,7 +172,6 @@
 
 .method public constructor <init>([B)V
     .locals 1
-    .param p1    # [B
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -193,8 +188,6 @@
 
 .method public static areExactMatch([Landroid/content/pm/Signature;[Landroid/content/pm/Signature;)Z
     .locals 1
-    .param p0    # [Landroid/content/pm/Signature;
-    .param p1    # [Landroid/content/pm/Signature;
 
     invoke-static {p0, p1}, Lcom/android/internal/util/ArrayUtils;->containsAll([Ljava/lang/Object;[Ljava/lang/Object;)Z
 
@@ -221,7 +214,6 @@
 
 .method private static final parseHexDigit(I)I
     .locals 3
-    .param p0    # I
 
     const/16 v0, 0x30
 
@@ -310,7 +302,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 5
-    .param p1    # Ljava/lang/Object;
 
     const/4 v2, 0x0
 
@@ -447,8 +438,6 @@
 
 .method public toChars([C[I)[C
     .locals 10
-    .param p1    # [C
-    .param p2    # [I
 
     const/16 v9, 0xa
 
@@ -591,8 +580,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v0, p0, Landroid/content/pm/Signature;->mSignature:[B
 

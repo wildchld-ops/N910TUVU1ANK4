@@ -29,7 +29,6 @@
 # direct methods
 .method public constructor <init>(Landroid/net/http/SslCertificate;Ljava/lang/String;)V
     .locals 6
-    .param p2    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/net/http/SslCertificate$DName;->this$0:Landroid/net/http/SslCertificate;
 

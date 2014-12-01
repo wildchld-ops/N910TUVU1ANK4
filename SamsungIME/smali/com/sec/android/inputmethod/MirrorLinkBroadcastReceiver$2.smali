@@ -33,7 +33,6 @@
 # virtual methods
 .method public onAudioConnectionsChanged(Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -45,7 +44,6 @@
 
 .method public onMirrorLinkSessionChanged(Z)V
     .locals 5
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -129,7 +127,6 @@
 
 .method public onRemoteDisplayConnectionChanged(I)V
     .locals 0
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

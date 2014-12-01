@@ -1093,7 +1093,7 @@
     :cond_1
     const/16 v0, 0x1f4
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->showDialog(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/NetworkSetting;->showDialog(I)V
 
     :goto_1
     return-void
@@ -1152,7 +1152,7 @@
 
     sget-object v0, Lcom/android/phone/NetworkSetting$17;->$SwitchMap$com$android$phone$NetworkSetting$userSelectionType:[I
 
-    invoke-virtual {p1}, Ljava/lang/Enum;->ordinal()I
+    invoke-virtual {p1}, Lcom/android/phone/NetworkSetting$userSelectionType;->ordinal()I
 
     move-result v1
 
@@ -1165,21 +1165,21 @@
     :pswitch_0
     const/16 v0, 0x258
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->showDialog(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/NetworkSetting;->showDialog(I)V
 
     goto :goto_1
 
     :pswitch_1
     const/16 v0, 0x2bc
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->showDialog(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/NetworkSetting;->showDialog(I)V
 
     goto :goto_1
 
     :pswitch_2
     const/16 v0, 0x320
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->showDialog(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/NetworkSetting;->showDialog(I)V
 
     goto :goto_1
 
@@ -1203,7 +1203,7 @@
     :cond_5
     sget-object v0, Lcom/android/phone/NetworkSetting$17;->$SwitchMap$com$android$phone$NetworkSetting$userSelectionType:[I
 
-    invoke-virtual {p1}, Ljava/lang/Enum;->ordinal()I
+    invoke-virtual {p1}, Lcom/android/phone/NetworkSetting$userSelectionType;->ordinal()I
 
     move-result v1
 
@@ -1216,7 +1216,7 @@
     :pswitch_3
     const/16 v0, 0xc8
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->showDialog(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/NetworkSetting;->showDialog(I)V
 
     invoke-direct {p0}, Lcom/android/phone/NetworkSetting;->loadNetworksList()V
 
@@ -1331,13 +1331,13 @@
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {p0}, Landroid/preference/PreferenceActivity;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/phone/NetworkSetting;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/android/phone/NetworkSetting;->mSearchButton:Landroid/preference/Preference;
 
-    invoke-virtual {v0, v1}, Landroid/preference/PreferenceGroup;->removePreference(Landroid/preference/Preference;)Z
+    invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
     iput-object v2, p0, Lcom/android/phone/NetworkSetting;->mSearchButton:Landroid/preference/Preference;
 
@@ -1346,13 +1346,13 @@
 
     if-eqz v0, :cond_1
 
-    invoke-virtual {p0}, Landroid/preference/PreferenceActivity;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/phone/NetworkSetting;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/android/phone/NetworkSetting;->mAutoSelect:Landroid/preference/Preference;
 
-    invoke-virtual {v0, v1}, Landroid/preference/PreferenceGroup;->removePreference(Landroid/preference/Preference;)Z
+    invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
     iput-object v2, p0, Lcom/android/phone/NetworkSetting;->mAutoSelect:Landroid/preference/Preference;
 
@@ -1376,13 +1376,13 @@
     invoke-virtual {v0, v1}, Landroid/preference/Preference;->setTitle(I)V
 
     :cond_2
-    invoke-virtual {p0}, Landroid/preference/PreferenceActivity;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/phone/NetworkSetting;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
     const-string v1, "button_default_setup_key"
 
-    invoke-virtual {v0, v1}, Landroid/preference/PreferenceGroup;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -1470,7 +1470,7 @@
 
     invoke-direct {v1, p0}, Lcom/android/phone/NetworkSetting$15;-><init>(Lcom/android/phone/NetworkSetting;)V
 
-    invoke-virtual {v0, v1}, Landroid/preference/Preference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
+    invoke-virtual {v0, v1}, Landroid/preference/ListPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     const-string v0, "feature_att"
 
@@ -1488,7 +1488,7 @@
 
     iget-boolean v1, p0, Lcom/android/phone/NetworkSetting;->mPLMN:Z
 
-    invoke-virtual {v0, v1}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v0, v1}, Landroid/preference/ListPreference;->setEnabled(Z)V
 
     invoke-direct {p0}, Lcom/android/phone/NetworkSetting;->clearList()V
 
@@ -1559,7 +1559,7 @@
 
     iget-boolean v1, p0, Lcom/android/phone/NetworkSetting;->mPLMN:Z
 
-    invoke-virtual {v0, v1}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v0, v1}, Landroid/preference/ListPreference;->setEnabled(Z)V
 
     :cond_5
     const-string v0, "usa_gsm_support_femto_cell_network"
@@ -1570,13 +1570,13 @@
 
     if-eqz v0, :cond_6
 
-    invoke-virtual {p0}, Landroid/preference/PreferenceActivity;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/phone/NetworkSetting;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
     const-string v1, "button_srch_femto_cell_key"
 
-    invoke-virtual {v0, v1}, Landroid/preference/PreferenceGroup;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -1614,7 +1614,7 @@
 
     iget-boolean v1, p0, Lcom/android/phone/NetworkSetting;->mPLMN:Z
 
-    invoke-virtual {v0, v1}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v0, v1}, Landroid/preference/ListPreference;->setEnabled(Z)V
 
     :cond_7
     const-string v0, "feature_att"
@@ -1633,7 +1633,7 @@
 
     iget-object v1, p0, Lcom/android/phone/NetworkSetting;->mPlmnReciever:Landroid/content/BroadcastReceiver;
 
-    invoke-virtual {p0, v1, v0}, Landroid/content/ContextWrapper;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
+    invoke-virtual {p0, v1, v0}, Lcom/android/phone/NetworkSetting;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
     :cond_8
     return-void
@@ -1689,7 +1689,7 @@
     const v0, 0x7f090093
 
     :goto_0
-    invoke-virtual {v1, v0}, Landroid/preference/Preference;->setTitle(I)V
+    invoke-virtual {v1, v0}, Landroid/preference/PreferenceGroup;->setTitle(I)V
 
     return-void
 
@@ -1727,7 +1727,7 @@
     invoke-static {v0, v1}, Lcom/android/phone/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/NetworkSetting;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -1805,7 +1805,7 @@
 
     invoke-direct {p0, v0}, Lcom/android/phone/NetworkSetting;->log(Ljava/lang/String;)V
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/NetworkSetting;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -1853,7 +1853,7 @@
 
     invoke-direct {p0, v0}, Lcom/android/phone/NetworkSetting;->log(Ljava/lang/String;)V
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/NetworkSetting;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -1864,7 +1864,7 @@
     goto :goto_0
 
     :cond_1
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/NetworkSetting;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -1886,7 +1886,7 @@
 
     invoke-direct {p0, v0, v1}, Lcom/android/phone/NetworkSetting;->log(Ljava/lang/String;Z)V
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/NetworkSetting;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -1948,7 +1948,7 @@
 
     invoke-direct {p0, v0, v4}, Lcom/android/phone/NetworkSetting;->log(Ljava/lang/String;Z)V
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/NetworkSetting;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -1992,7 +1992,7 @@
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {p0}, Landroid/app/Activity;->isFinishing()Z
+    invoke-virtual {p0}, Lcom/android/phone/NetworkSetting;->isFinishing()Z
 
     move-result v0
 
@@ -2000,7 +2000,7 @@
 
     const/16 v0, 0x64
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->showDialog(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/NetworkSetting;->showDialog(I)V
 
     :cond_0
     return-void
@@ -2098,7 +2098,7 @@
 
     const/4 v1, 0x1
 
-    invoke-virtual {p0, v0, v1}, Landroid/content/ContextWrapper;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+    invoke-virtual {p0, v0, v1}, Lcom/android/phone/NetworkSetting;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
 
     move-result-object v0
 
@@ -2341,7 +2341,7 @@
 
     const-string v2, "Manual_Selected_Operator"
 
-    invoke-virtual {p0, v2, v5}, Landroid/content/ContextWrapper;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+    invoke-virtual {p0, v2, v5}, Lcom/android/phone/NetworkSetting;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
 
     move-result-object v2
 
@@ -2533,15 +2533,15 @@
 
     const/16 v0, 0xc8
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->removeDialog(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/NetworkSetting;->removeDialog(I)V
 
-    invoke-virtual {p0}, Landroid/preference/PreferenceActivity;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/phone/NetworkSetting;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
     const/4 v1, 0x1
 
-    invoke-virtual {v0, v1}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->setEnabled(Z)V
 
     const-string v0, "usa_gsm_network_setting"
 
@@ -2555,7 +2555,7 @@
 
     iget-boolean v1, p0, Lcom/android/phone/NetworkSetting;->mPLMN:Z
 
-    invoke-virtual {v0, v1}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v0, v1}, Landroid/preference/ListPreference;->setEnabled(Z)V
 
     const-string v0, "feature_att"
 
@@ -3849,7 +3849,7 @@
 
     const-string v0, "phone2"
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Lcom/android/phone/NetworkSetting;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -4488,7 +4488,7 @@
 
     invoke-direct/range {v0 .. v5}, Lcom/android/phone/NetworkSetting$16;-><init>(Lcom/android/phone/NetworkSetting;JJ)V
 
-    invoke-virtual {v0}, Landroid/os/CountDownTimer;->start()Landroid/os/CountDownTimer;
+    invoke-virtual {v0}, Lcom/android/phone/NetworkSetting$16;->start()Landroid/os/CountDownTimer;
 
     :cond_0
     return-void
@@ -4505,23 +4505,23 @@
 
     const/16 v0, 0x64
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->removeDialog(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/NetworkSetting;->removeDialog(I)V
 
     const/16 v0, 0xc8
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->removeDialog(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/NetworkSetting;->removeDialog(I)V
 
     const/16 v0, 0x12c
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->removeDialog(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/NetworkSetting;->removeDialog(I)V
 
     const/16 v0, 0x190
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->removeDialog(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/NetworkSetting;->removeDialog(I)V
 
     const/16 v0, 0x384
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->removeDialog(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/NetworkSetting;->removeDialog(I)V
 
     return-void
 .end method
@@ -5024,7 +5024,7 @@
 
     invoke-direct {v0, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/NetworkSetting;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -5093,7 +5093,7 @@
 
     const/16 v0, 0x190
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->showDialog(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/NetworkSetting;->showDialog(I)V
 
     :cond_0
     iget-object v0, p0, Lcom/android/phone/NetworkSetting;->mHandler:Landroid/os/Handler;
@@ -5123,7 +5123,7 @@
 
     const/16 v0, 0x12c
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->showDialog(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/NetworkSetting;->showDialog(I)V
 
     :cond_2
     iget-object v0, p0, Lcom/android/phone/NetworkSetting;->mHandler:Landroid/os/Handler;
@@ -5403,7 +5403,7 @@
 
     iget-object v0, p0, Lcom/android/phone/NetworkSetting;->mFailDialog:Landroid/app/AlertDialog;
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->isShowing()Z
+    invoke-virtual {v0}, Landroid/app/AlertDialog;->isShowing()Z
 
     move-result v0
 
@@ -5415,7 +5415,7 @@
 
     invoke-static {v0, v1, v4}, Lcom/android/phone/Log;->i(Ljava/lang/String;Ljava/lang/String;Z)I
 
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/NetworkSetting;->finish()V
 
     goto :goto_1
 
@@ -5596,7 +5596,7 @@
 
     if-ne p1, v1, :cond_0
 
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/NetworkSetting;->finish()V
 
     :goto_0
     return-void
@@ -5626,7 +5626,7 @@
     invoke-direct {p0, v1}, Lcom/android/phone/NetworkSetting;->enableMobileData(Z)V
 
     :cond_2
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/NetworkSetting;->finish()V
 
     goto :goto_0
 
@@ -5654,7 +5654,7 @@
     invoke-direct {p0, v2}, Lcom/android/phone/NetworkSetting;->enableMobileData(Z)V
 
     :cond_3
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/NetworkSetting;->finish()V
 
     throw v1
 .end method
@@ -5731,9 +5731,9 @@
 
     move-result-object v8
 
-    invoke-virtual {p0, v8}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v8}, Lcom/android/phone/NetworkSetting;->startActivity(Landroid/content/Intent;)V
 
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/NetworkSetting;->finish()V
     :try_end_0
     .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -5747,7 +5747,7 @@
     :cond_1
     const v8, 0x7f060013
 
-    invoke-virtual {p0, v8}, Landroid/preference/PreferenceActivity;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v8}, Lcom/android/phone/NetworkSetting;->addPreferencesFromResource(I)V
 
     const-string v8, "feature_multisim"
 
@@ -5757,7 +5757,7 @@
 
     if-eqz v8, :cond_c
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/phone/NetworkSetting;->getIntent()Landroid/content/Intent;
 
     move-result-object v4
 
@@ -5867,7 +5867,7 @@
 
     move-result-object v8
 
-    invoke-virtual {p0, v8}, Landroid/app/Activity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v8}, Lcom/android/phone/NetworkSetting;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v8
 
@@ -5885,7 +5885,7 @@
 
     move-result-object v8
 
-    invoke-virtual {p0, v8}, Landroid/app/Activity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v8}, Lcom/android/phone/NetworkSetting;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v8
 
@@ -5894,7 +5894,7 @@
     iput-object v8, p0, Lcom/android/phone/NetworkSetting;->mTelephonyManagerData:Landroid/telephony/TelephonyManager;
 
     :goto_2
-    invoke-virtual {p0}, Landroid/app/Activity;->getActionBar()Landroid/app/ActionBar;
+    invoke-virtual {p0}, Lcom/android/phone/NetworkSetting;->getActionBar()Landroid/app/ActionBar;
 
     move-result-object v0
 
@@ -5930,13 +5930,13 @@
     invoke-virtual {v8, v9, v10}, Landroid/telephony/TelephonyManager;->listen(Landroid/telephony/PhoneStateListener;I)V
 
     :goto_3
-    invoke-virtual {p0}, Landroid/preference/PreferenceActivity;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/phone/NetworkSetting;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v7
 
     const-string v8, "list_networks_key"
 
-    invoke-virtual {v7, v8}, Landroid/preference/PreferenceGroup;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {v7, v8}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v8
 
@@ -5952,7 +5952,7 @@
 
     const-string v8, "button_srch_netwrks_key"
 
-    invoke-virtual {v7, v8}, Landroid/preference/PreferenceGroup;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {v7, v8}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v8
 
@@ -5960,7 +5960,7 @@
 
     const-string v8, "button_auto_select_key"
 
-    invoke-virtual {v7, v8}, Landroid/preference/PreferenceGroup;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {v7, v8}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v8
 
@@ -5986,7 +5986,7 @@
 
     if-le v8, v9, :cond_9
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/NetworkSetting;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v8
 
@@ -6001,7 +6001,7 @@
     const/4 v6, 0x0
 
     :cond_4
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/NetworkSetting;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v8
 
@@ -6054,7 +6054,7 @@
     invoke-virtual {v8, v9}, Landroid/preference/Preference;->setEnabled(Z)V
 
     :cond_9
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/NetworkSetting;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v8
 
@@ -6085,11 +6085,11 @@
 
     const-string v8, "button_srch_femto_cell_key"
 
-    invoke-virtual {v7, v8}, Landroid/preference/PreferenceGroup;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {v7, v8}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v8
 
-    invoke-virtual {v7, v8}, Landroid/preference/PreferenceGroup;->removePreference(Landroid/preference/Preference;)Z
+    invoke-virtual {v7, v8}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
     const/4 v8, 0x0
 
@@ -6098,7 +6098,7 @@
     :cond_a
     const-string v8, "power"
 
-    invoke-virtual {p0, v8}, Landroid/app/Activity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v8}, Lcom/android/phone/NetworkSetting;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v8
 
@@ -6108,7 +6108,7 @@
 
     new-instance v8, Landroid/content/Intent;
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/NetworkSetting;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v9
 
@@ -6116,9 +6116,9 @@
 
     invoke-direct {v8, v9, v10}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    invoke-virtual {p0, v8}, Landroid/content/ContextWrapper;->startService(Landroid/content/Intent;)Landroid/content/ComponentName;
+    invoke-virtual {p0, v8}, Lcom/android/phone/NetworkSetting;->startService(Landroid/content/Intent;)Landroid/content/ComponentName;
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/NetworkSetting;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v8
 
@@ -6170,7 +6170,7 @@
 
     if-eqz v8, :cond_b
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/phone/NetworkSetting;->getIntent()Landroid/content/Intent;
 
     move-result-object v8
 
@@ -6182,7 +6182,7 @@
 
     if-eqz v8, :cond_b
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/phone/NetworkSetting;->getIntent()Landroid/content/Intent;
 
     move-result-object v8
 
@@ -6205,7 +6205,7 @@
 
     if-eqz v8, :cond_0
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/phone/NetworkSetting;->getIntent()Landroid/content/Intent;
 
     move-result-object v8
 
@@ -6229,7 +6229,7 @@
     :cond_d
     const-string v8, "phone"
 
-    invoke-virtual {p0, v8}, Landroid/app/Activity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v8}, Lcom/android/phone/NetworkSetting;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v8
 
@@ -6253,11 +6253,11 @@
     :cond_f
     const-string v8, "button_default_setup_key"
 
-    invoke-virtual {v7, v8}, Landroid/preference/PreferenceGroup;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {v7, v8}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v8
 
-    invoke-virtual {v7, v8}, Landroid/preference/PreferenceGroup;->removePreference(Landroid/preference/Preference;)Z
+    invoke-virtual {v7, v8}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
     const/4 v8, 0x0
 
@@ -6324,7 +6324,7 @@
 
     invoke-direct {v0, p0}, Landroid/app/ProgressDialog;-><init>(Landroid/content/Context;)V
 
-    invoke-virtual {v0, v5}, Landroid/app/Dialog;->setCanceledOnTouchOutside(Z)V
+    invoke-virtual {v0, v5}, Landroid/app/ProgressDialog;->setCanceledOnTouchOutside(Z)V
 
     sparse-switch p1, :sswitch_data_0
 
@@ -6339,7 +6339,7 @@
 
     move-result-object v1
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/NetworkSetting;->getResources()Landroid/content/res/Resources;
 
     move-result-object v2
 
@@ -6357,7 +6357,7 @@
 
     invoke-direct {p0, v1, v4}, Lcom/android/phone/NetworkSetting;->log(Ljava/lang/String;Z)V
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/NetworkSetting;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -6367,9 +6367,9 @@
 
     invoke-virtual {v0, v1}, Landroid/app/ProgressDialog;->setMessage(Ljava/lang/CharSequence;)V
 
-    invoke-virtual {v0, v5}, Landroid/app/Dialog;->setCanceledOnTouchOutside(Z)V
+    invoke-virtual {v0, v5}, Landroid/app/ProgressDialog;->setCanceledOnTouchOutside(Z)V
 
-    invoke-virtual {v0, p0}, Landroid/app/Dialog;->setOnCancelListener(Landroid/content/DialogInterface$OnCancelListener;)V
+    invoke-virtual {v0, p0}, Landroid/app/ProgressDialog;->setOnCancelListener(Landroid/content/DialogInterface$OnCancelListener;)V
 
     :goto_1
     return-object v0
@@ -6401,7 +6401,7 @@
 
     invoke-virtual {v0, v1}, Landroid/app/ProgressDialog;->setMessage(Ljava/lang/CharSequence;)V
 
-    invoke-virtual {v0, v5}, Landroid/app/Dialog;->setCancelable(Z)V
+    invoke-virtual {v0, v5}, Landroid/app/ProgressDialog;->setCancelable(Z)V
 
     invoke-virtual {v0, v4}, Landroid/app/ProgressDialog;->setIndeterminate(Z)V
 
@@ -6418,7 +6418,7 @@
 
     move-result-object v1
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/NetworkSetting;->getResources()Landroid/content/res/Resources;
 
     move-result-object v2
 
@@ -6438,7 +6438,7 @@
 
     invoke-direct {p0, v1, v4}, Lcom/android/phone/NetworkSetting;->log(Ljava/lang/String;Z)V
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/NetworkSetting;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -6450,7 +6450,7 @@
 
     invoke-virtual {v0, v1}, Landroid/app/ProgressDialog;->setMessage(Ljava/lang/CharSequence;)V
 
-    invoke-virtual {v0, v5}, Landroid/app/Dialog;->setCancelable(Z)V
+    invoke-virtual {v0, v5}, Landroid/app/ProgressDialog;->setCancelable(Z)V
 
     invoke-virtual {v0, v4}, Landroid/app/ProgressDialog;->setIndeterminate(Z)V
 
@@ -6467,7 +6467,7 @@
 
     move-result-object v1
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/NetworkSetting;->getResources()Landroid/content/res/Resources;
 
     move-result-object v2
 
@@ -6487,7 +6487,7 @@
 
     invoke-direct {p0, v1, v4}, Lcom/android/phone/NetworkSetting;->log(Ljava/lang/String;Z)V
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/NetworkSetting;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -6499,7 +6499,7 @@
 
     invoke-virtual {v0, v1}, Landroid/app/ProgressDialog;->setMessage(Ljava/lang/CharSequence;)V
 
-    invoke-virtual {v0, v5}, Landroid/app/Dialog;->setCancelable(Z)V
+    invoke-virtual {v0, v5}, Landroid/app/ProgressDialog;->setCancelable(Z)V
 
     invoke-virtual {v0, v4}, Landroid/app/ProgressDialog;->setIndeterminate(Z)V
 
@@ -6516,7 +6516,7 @@
 
     move-result-object v1
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/NetworkSetting;->getResources()Landroid/content/res/Resources;
 
     move-result-object v2
 
@@ -6536,7 +6536,7 @@
 
     invoke-direct {p0, v1, v4}, Lcom/android/phone/NetworkSetting;->log(Ljava/lang/String;Z)V
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/NetworkSetting;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -6548,7 +6548,7 @@
 
     invoke-virtual {v0, v1}, Landroid/app/ProgressDialog;->setMessage(Ljava/lang/CharSequence;)V
 
-    invoke-virtual {v0, v5}, Landroid/app/Dialog;->setCancelable(Z)V
+    invoke-virtual {v0, v5}, Landroid/app/ProgressDialog;->setCancelable(Z)V
 
     invoke-virtual {v0, v4}, Landroid/app/ProgressDialog;->setIndeterminate(Z)V
 
@@ -6565,7 +6565,7 @@
 
     move-result-object v1
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/NetworkSetting;->getResources()Landroid/content/res/Resources;
 
     move-result-object v2
 
@@ -6607,7 +6607,7 @@
 
     const v1, 0x7f090492
 
-    invoke-virtual {p0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v1}, Lcom/android/phone/NetworkSetting;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -6633,7 +6633,7 @@
 
     const v1, 0x7f09048e
 
-    invoke-virtual {p0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v1}, Lcom/android/phone/NetworkSetting;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -6641,7 +6641,7 @@
 
     move-result-object v1
 
-    invoke-virtual {p0, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v6}, Lcom/android/phone/NetworkSetting;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
@@ -6670,7 +6670,7 @@
 
     const v1, 0x7f09012a
 
-    invoke-virtual {p0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v1}, Lcom/android/phone/NetworkSetting;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -6680,7 +6680,7 @@
 
     const v2, 0x7f090028
 
-    invoke-virtual {p0, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v2}, Lcom/android/phone/NetworkSetting;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
@@ -6693,7 +6693,7 @@
 
     if-ne p1, v1, :cond_6
 
-    invoke-virtual {p0, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v6}, Lcom/android/phone/NetworkSetting;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -6706,7 +6706,7 @@
     :cond_5
     const v1, 0x7f090493
 
-    invoke-virtual {p0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v1}, Lcom/android/phone/NetworkSetting;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -6716,7 +6716,7 @@
 
     const v2, 0x7f090028
 
-    invoke-virtual {p0, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v2}, Lcom/android/phone/NetworkSetting;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
@@ -6731,7 +6731,7 @@
 
     if-ne p1, v1, :cond_7
 
-    invoke-virtual {p0, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v6}, Lcom/android/phone/NetworkSetting;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -6744,7 +6744,7 @@
     :cond_7
     if-ne p1, v7, :cond_3
 
-    invoke-virtual {p0, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v6}, Lcom/android/phone/NetworkSetting;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -6794,7 +6794,7 @@
 
     :cond_0
     :try_start_0
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/NetworkSetting;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -6846,7 +6846,7 @@
 
     iget-object v1, p0, Lcom/android/phone/NetworkSetting;->mPlmnReciever:Landroid/content/BroadcastReceiver;
 
-    invoke-virtual {p0, v1}, Landroid/content/ContextWrapper;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
+    invoke-virtual {p0, v1}, Lcom/android/phone/NetworkSetting;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
     :cond_2
     const-string v1, "dcm_data_enable_on_destroy"
@@ -6924,7 +6924,7 @@
 
     if-ne v0, v1, :cond_0
 
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/NetworkSetting;->finish()V
 
     const/4 v0, 0x1
 
@@ -6932,7 +6932,7 @@
     return v0
 
     :cond_0
-    invoke-super {p0, p1}, Landroid/app/Activity;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
+    invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
 
     move-result v0
 
@@ -6944,7 +6944,7 @@
 
     const/4 v1, 0x1
 
-    invoke-super {p0}, Landroid/app/Activity;->onPause()V
+    invoke-super {p0}, Landroid/preference/PreferenceActivity;->onPause()V
 
     const-string v0, "onPause"
 
@@ -7076,7 +7076,7 @@
 
     const/16 v2, 0x384
 
-    invoke-virtual {p0, v2}, Landroid/app/Activity;->showDialog(I)V
+    invoke-virtual {p0, v2}, Lcom/android/phone/NetworkSetting;->showDialog(I)V
 
     iget-object v2, p0, Lcom/android/phone/NetworkSetting;->mTelephonyManager:Landroid/telephony/TelephonyManager;
 
@@ -7206,13 +7206,13 @@
     if-ne p1, v0, :cond_1
 
     :cond_0
-    invoke-virtual {p0}, Landroid/preference/PreferenceActivity;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/phone/NetworkSetting;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->setEnabled(Z)V
 
     :cond_1
     return-void
@@ -7225,7 +7225,7 @@
 
     const/4 v4, 0x1
 
-    invoke-super {p0}, Landroid/app/Activity;->onResume()V
+    invoke-super {p0}, Landroid/preference/PreferenceActivity;->onResume()V
 
     const-string v1, "onResume"
 
@@ -7305,7 +7305,7 @@
 
     iget-boolean v2, p0, Lcom/android/phone/NetworkSetting;->mPLMN:Z
 
-    invoke-virtual {v1, v2}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v1, v2}, Landroid/preference/ListPreference;->setEnabled(Z)V
 
     iget-boolean v1, p0, Lcom/android/phone/NetworkSetting;->mPLMN:Z
 
@@ -7341,7 +7341,7 @@
 
     if-eqz v1, :cond_5
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/phone/NetworkSetting;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
 
@@ -7474,7 +7474,7 @@
     invoke-direct {p0, v1}, Lcom/android/phone/NetworkSetting;->enableMobileData(Z)V
 
     :cond_2
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/NetworkSetting;->finish()V
 
     :cond_3
     return-void
@@ -7503,7 +7503,7 @@
     invoke-direct {p0, v2}, Lcom/android/phone/NetworkSetting;->enableMobileData(Z)V
 
     :cond_4
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/NetworkSetting;->finish()V
 
     throw v1
 .end method

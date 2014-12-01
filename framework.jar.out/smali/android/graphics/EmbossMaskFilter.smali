@@ -6,10 +6,6 @@
 # direct methods
 .method public constructor <init>([FFFF)V
     .locals 2
-    .param p1    # [F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
 
     invoke-direct {p0}, Landroid/graphics/MaskFilter;-><init>()V
 

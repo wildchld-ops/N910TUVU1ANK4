@@ -79,11 +79,6 @@
 # direct methods
 .method protected constructor <init>(Ljava/lang/String;Landroid/content/Context;Lcom/sec/epdg/IWlanApnContext;Landroid/os/Handler;Landroid/os/Looper;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/Context;
-    .param p3    # Lcom/sec/epdg/IWlanApnContext;
-    .param p4    # Landroid/os/Handler;
-    .param p5    # Landroid/os/Looper;
 
     const/4 v3, 0x0
 
@@ -244,7 +239,6 @@
 
 .method static synthetic access$1000(Lcom/sec/epdg/IPSecDataConnSM;)Lcom/sec/epdg/IWlanApnContext;
     .locals 1
-    .param p0    # Lcom/sec/epdg/IPSecDataConnSM;
 
     iget-object v0, p0, Lcom/sec/epdg/IPSecDataConnSM;->mIWlanApnContext:Lcom/sec/epdg/IWlanApnContext;
 
@@ -253,7 +247,6 @@
 
 .method static synthetic access$1100(Lcom/sec/epdg/IPSecDataConnSM;)Lcom/android/internal/util/IState;
     .locals 1
-    .param p0    # Lcom/sec/epdg/IPSecDataConnSM;
 
     invoke-virtual {p0}, Lcom/android/internal/util/StateMachine;->getCurrentState()Lcom/android/internal/util/IState;
 
@@ -264,7 +257,6 @@
 
 .method static synthetic access$1200(Lcom/sec/epdg/IPSecDataConnSM;)Lcom/sec/epdg/IPSecDataConnSM$HandoverConnectingState;
     .locals 1
-    .param p0    # Lcom/sec/epdg/IPSecDataConnSM;
 
     iget-object v0, p0, Lcom/sec/epdg/IPSecDataConnSM;->mHandoverConnectingState:Lcom/sec/epdg/IPSecDataConnSM$HandoverConnectingState;
 
@@ -273,8 +265,6 @@
 
 .method static synthetic access$1300(Lcom/sec/epdg/IPSecDataConnSM;Landroid/os/Message;)V
     .locals 0
-    .param p0    # Lcom/sec/epdg/IPSecDataConnSM;
-    .param p1    # Landroid/os/Message;
 
     invoke-direct {p0, p1}, Lcom/sec/epdg/IPSecDataConnSM;->configureApnContext(Landroid/os/Message;)V
 
@@ -283,7 +273,6 @@
 
 .method static synthetic access$1400(Lcom/sec/epdg/IPSecDataConnSM;)Z
     .locals 1
-    .param p0    # Lcom/sec/epdg/IPSecDataConnSM;
 
     invoke-direct {p0}, Lcom/sec/epdg/IPSecDataConnSM;->checkDnsRetryRequired()Z
 
@@ -294,7 +283,6 @@
 
 .method static synthetic access$1500(Lcom/sec/epdg/IPSecDataConnSM;)I
     .locals 1
-    .param p0    # Lcom/sec/epdg/IPSecDataConnSM;
 
     invoke-direct {p0}, Lcom/sec/epdg/IPSecDataConnSM;->handleConnectRequest()I
 
@@ -305,8 +293,6 @@
 
 .method static synthetic access$1600(Lcom/sec/epdg/IPSecDataConnSM;I)V
     .locals 0
-    .param p0    # Lcom/sec/epdg/IPSecDataConnSM;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/sec/epdg/IPSecDataConnSM;->informHandoverFailureToRilAndFramework(I)V
 
@@ -315,7 +301,6 @@
 
 .method static synthetic access$1700(Lcom/sec/epdg/IPSecDataConnSM;)Lcom/sec/epdg/IPSecDataConnSM$ThrottleState;
     .locals 1
-    .param p0    # Lcom/sec/epdg/IPSecDataConnSM;
 
     iget-object v0, p0, Lcom/sec/epdg/IPSecDataConnSM;->mThrottleState:Lcom/sec/epdg/IPSecDataConnSM$ThrottleState;
 
@@ -324,7 +309,6 @@
 
 .method static synthetic access$1800(Lcom/sec/epdg/IPSecDataConnSM;)Lcom/sec/epdg/IPSecDataConnSM$InactiveState;
     .locals 1
-    .param p0    # Lcom/sec/epdg/IPSecDataConnSM;
 
     iget-object v0, p0, Lcom/sec/epdg/IPSecDataConnSM;->mInactiveState:Lcom/sec/epdg/IPSecDataConnSM$InactiveState;
 
@@ -333,7 +317,6 @@
 
 .method static synthetic access$1900(Lcom/sec/epdg/IPSecDataConnSM;)V
     .locals 0
-    .param p0    # Lcom/sec/epdg/IPSecDataConnSM;
 
     invoke-direct {p0}, Lcom/sec/epdg/IPSecDataConnSM;->disconnectEpdgConnection()V
 
@@ -342,8 +325,6 @@
 
 .method static synthetic access$2000(Lcom/sec/epdg/IPSecDataConnSM;Landroid/os/Message;)V
     .locals 0
-    .param p0    # Lcom/sec/epdg/IPSecDataConnSM;
-    .param p1    # Landroid/os/Message;
 
     invoke-direct {p0, p1}, Lcom/sec/epdg/IPSecDataConnSM;->handleWifiStateChange(Landroid/os/Message;)V
 
@@ -352,8 +333,6 @@
 
 .method static synthetic access$2100(Lcom/sec/epdg/IPSecDataConnSM;I)V
     .locals 0
-    .param p0    # Lcom/sec/epdg/IPSecDataConnSM;
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/internal/util/StateMachine;->removeMessages(I)V
 
@@ -362,7 +341,6 @@
 
 .method static synthetic access$2200(Lcom/sec/epdg/IPSecDataConnSM;)Lcom/android/internal/util/IState;
     .locals 1
-    .param p0    # Lcom/sec/epdg/IPSecDataConnSM;
 
     invoke-virtual {p0}, Lcom/android/internal/util/StateMachine;->getCurrentState()Lcom/android/internal/util/IState;
 
@@ -373,7 +351,6 @@
 
 .method static synthetic access$2300(Lcom/sec/epdg/IPSecDataConnSM;)Lcom/android/internal/util/IState;
     .locals 1
-    .param p0    # Lcom/sec/epdg/IPSecDataConnSM;
 
     invoke-virtual {p0}, Lcom/android/internal/util/StateMachine;->getCurrentState()Lcom/android/internal/util/IState;
 
@@ -384,7 +361,6 @@
 
 .method static synthetic access$2400(Lcom/sec/epdg/IPSecDataConnSM;)Lcom/android/internal/util/IState;
     .locals 1
-    .param p0    # Lcom/sec/epdg/IPSecDataConnSM;
 
     invoke-virtual {p0}, Lcom/android/internal/util/StateMachine;->getCurrentState()Lcom/android/internal/util/IState;
 
@@ -395,7 +371,6 @@
 
 .method static synthetic access$2500(Lcom/sec/epdg/IPSecDataConnSM;)V
     .locals 0
-    .param p0    # Lcom/sec/epdg/IPSecDataConnSM;
 
     invoke-direct {p0}, Lcom/sec/epdg/IPSecDataConnSM;->resetThrottleState()V
 
@@ -404,7 +379,6 @@
 
 .method static synthetic access$2600(Lcom/sec/epdg/IPSecDataConnSM;)Lcom/sec/epdg/IPSecDataConnSM$ConnectedState;
     .locals 1
-    .param p0    # Lcom/sec/epdg/IPSecDataConnSM;
 
     iget-object v0, p0, Lcom/sec/epdg/IPSecDataConnSM;->mConnectedState:Lcom/sec/epdg/IPSecDataConnSM$ConnectedState;
 
@@ -413,8 +387,6 @@
 
 .method static synthetic access$2700(Lcom/sec/epdg/IPSecDataConnSM;Landroid/os/Message;)V
     .locals 0
-    .param p0    # Lcom/sec/epdg/IPSecDataConnSM;
-    .param p1    # Landroid/os/Message;
 
     invoke-virtual {p0, p1}, Lcom/android/internal/util/StateMachine;->deferMessage(Landroid/os/Message;)V
 
@@ -423,7 +395,6 @@
 
 .method static synthetic access$2800(Lcom/sec/epdg/IPSecDataConnSM;)Lcom/android/internal/util/IState;
     .locals 1
-    .param p0    # Lcom/sec/epdg/IPSecDataConnSM;
 
     invoke-virtual {p0}, Lcom/android/internal/util/StateMachine;->getCurrentState()Lcom/android/internal/util/IState;
 
@@ -434,8 +405,6 @@
 
 .method static synthetic access$2900(Lcom/sec/epdg/IPSecDataConnSM;I)V
     .locals 0
-    .param p0    # Lcom/sec/epdg/IPSecDataConnSM;
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/internal/util/StateMachine;->removeMessages(I)V
 
@@ -444,7 +413,6 @@
 
 .method static synthetic access$3000(Lcom/sec/epdg/IPSecDataConnSM;)Lcom/android/internal/util/IState;
     .locals 1
-    .param p0    # Lcom/sec/epdg/IPSecDataConnSM;
 
     invoke-virtual {p0}, Lcom/android/internal/util/StateMachine;->getCurrentState()Lcom/android/internal/util/IState;
 
@@ -455,7 +423,6 @@
 
 .method static synthetic access$3100(Lcom/sec/epdg/IPSecDataConnSM;)Lcom/android/internal/util/IState;
     .locals 1
-    .param p0    # Lcom/sec/epdg/IPSecDataConnSM;
 
     invoke-virtual {p0}, Lcom/android/internal/util/StateMachine;->getCurrentState()Lcom/android/internal/util/IState;
 
@@ -466,7 +433,6 @@
 
 .method static synthetic access$3200(Lcom/sec/epdg/IPSecDataConnSM;)Lcom/android/internal/util/IState;
     .locals 1
-    .param p0    # Lcom/sec/epdg/IPSecDataConnSM;
 
     invoke-virtual {p0}, Lcom/android/internal/util/StateMachine;->getCurrentState()Lcom/android/internal/util/IState;
 
@@ -477,9 +443,6 @@
 
 .method static synthetic access$3300(Lcom/sec/epdg/IPSecDataConnSM;ZI)Z
     .locals 1
-    .param p0    # Lcom/sec/epdg/IPSecDataConnSM;
-    .param p1    # Z
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/sec/epdg/IPSecDataConnSM;->handleTCRules(ZI)Z
 
@@ -490,7 +453,6 @@
 
 .method static synthetic access$3400(Lcom/sec/epdg/IPSecDataConnSM;)Lcom/android/internal/util/IState;
     .locals 1
-    .param p0    # Lcom/sec/epdg/IPSecDataConnSM;
 
     invoke-virtual {p0}, Lcom/android/internal/util/StateMachine;->getCurrentState()Lcom/android/internal/util/IState;
 
@@ -501,8 +463,6 @@
 
 .method static synthetic access$3500(Lcom/sec/epdg/IPSecDataConnSM;Z)V
     .locals 0
-    .param p0    # Lcom/sec/epdg/IPSecDataConnSM;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/sec/epdg/IPSecDataConnSM;->notifyW2LRegistrant(Z)V
 
@@ -511,8 +471,6 @@
 
 .method static synthetic access$3600(Lcom/sec/epdg/IPSecDataConnSM;Z)V
     .locals 0
-    .param p0    # Lcom/sec/epdg/IPSecDataConnSM;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/sec/epdg/IPSecDataConnSM;->notifyL2WRegistrant(Z)V
 
@@ -521,7 +479,6 @@
 
 .method static synthetic access$3700(Lcom/sec/epdg/IPSecDataConnSM;)I
     .locals 1
-    .param p0    # Lcom/sec/epdg/IPSecDataConnSM;
 
     iget v0, p0, Lcom/sec/epdg/IPSecDataConnSM;->mRilCid:I
 
@@ -530,7 +487,6 @@
 
 .method static synthetic access$3800(Lcom/sec/epdg/IPSecDataConnSM;)Lcom/sec/epdg/IPSecDataConnSM$W2MInProgressState;
     .locals 1
-    .param p0    # Lcom/sec/epdg/IPSecDataConnSM;
 
     iget-object v0, p0, Lcom/sec/epdg/IPSecDataConnSM;->mW2MInProgressState:Lcom/sec/epdg/IPSecDataConnSM$W2MInProgressState;
 
@@ -539,10 +495,6 @@
 
 .method static synthetic access$3900(Lcom/sec/epdg/IPSecDataConnSM;III)V
     .locals 0
-    .param p0    # Lcom/sec/epdg/IPSecDataConnSM;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Lcom/sec/epdg/IPSecDataConnSM;->handleEnableEpdgFailure(III)V
 
@@ -551,8 +503,6 @@
 
 .method static synthetic access$4000(Lcom/sec/epdg/IPSecDataConnSM;Landroid/os/Message;)V
     .locals 0
-    .param p0    # Lcom/sec/epdg/IPSecDataConnSM;
-    .param p1    # Landroid/os/Message;
 
     invoke-virtual {p0, p1}, Lcom/android/internal/util/StateMachine;->deferMessage(Landroid/os/Message;)V
 
@@ -561,7 +511,6 @@
 
 .method static synthetic access$4100(Lcom/sec/epdg/IPSecDataConnSM;)Lcom/android/internal/util/IState;
     .locals 1
-    .param p0    # Lcom/sec/epdg/IPSecDataConnSM;
 
     invoke-virtual {p0}, Lcom/android/internal/util/StateMachine;->getCurrentState()Lcom/android/internal/util/IState;
 
@@ -572,8 +521,6 @@
 
 .method static synthetic access$4200(Lcom/sec/epdg/IPSecDataConnSM;I)V
     .locals 0
-    .param p0    # Lcom/sec/epdg/IPSecDataConnSM;
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/internal/util/StateMachine;->removeMessages(I)V
 
@@ -582,8 +529,6 @@
 
 .method static synthetic access$4300(Lcom/sec/epdg/IPSecDataConnSM;I)V
     .locals 0
-    .param p0    # Lcom/sec/epdg/IPSecDataConnSM;
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/internal/util/StateMachine;->removeMessages(I)V
 
@@ -592,7 +537,6 @@
 
 .method static synthetic access$4400(Lcom/sec/epdg/IPSecDataConnSM;)Lcom/android/internal/util/IState;
     .locals 1
-    .param p0    # Lcom/sec/epdg/IPSecDataConnSM;
 
     invoke-virtual {p0}, Lcom/android/internal/util/StateMachine;->getCurrentState()Lcom/android/internal/util/IState;
 
@@ -603,7 +547,6 @@
 
 .method static synthetic access$4500(Lcom/sec/epdg/IPSecDataConnSM;)Lcom/android/internal/util/IState;
     .locals 1
-    .param p0    # Lcom/sec/epdg/IPSecDataConnSM;
 
     invoke-virtual {p0}, Lcom/android/internal/util/StateMachine;->getCurrentState()Lcom/android/internal/util/IState;
 
@@ -614,7 +557,6 @@
 
 .method static synthetic access$4600(Lcom/sec/epdg/IPSecDataConnSM;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/sec/epdg/IPSecDataConnSM;
 
     iget-object v0, p0, Lcom/sec/epdg/IPSecDataConnSM;->mePdgHandler:Landroid/os/Handler;
 
@@ -623,7 +565,6 @@
 
 .method static synthetic access$4700(Lcom/sec/epdg/IPSecDataConnSM;)V
     .locals 0
-    .param p0    # Lcom/sec/epdg/IPSecDataConnSM;
 
     invoke-direct {p0}, Lcom/sec/epdg/IPSecDataConnSM;->checkConnection()V
 
@@ -632,7 +573,6 @@
 
 .method static synthetic access$4800(Lcom/sec/epdg/IPSecDataConnSM;)Lcom/android/internal/util/IState;
     .locals 1
-    .param p0    # Lcom/sec/epdg/IPSecDataConnSM;
 
     invoke-virtual {p0}, Lcom/android/internal/util/StateMachine;->getCurrentState()Lcom/android/internal/util/IState;
 
@@ -643,7 +583,6 @@
 
 .method static synthetic access$4900(Lcom/sec/epdg/IPSecDataConnSM;)Lcom/sec/epdg/IPSecDataConnSM$PeerDisconnectedState;
     .locals 1
-    .param p0    # Lcom/sec/epdg/IPSecDataConnSM;
 
     iget-object v0, p0, Lcom/sec/epdg/IPSecDataConnSM;->mPeerDisconnectedState:Lcom/sec/epdg/IPSecDataConnSM$PeerDisconnectedState;
 
@@ -652,7 +591,6 @@
 
 .method static synthetic access$5000(Lcom/sec/epdg/IPSecDataConnSM;)Lcom/android/internal/util/IState;
     .locals 1
-    .param p0    # Lcom/sec/epdg/IPSecDataConnSM;
 
     invoke-virtual {p0}, Lcom/android/internal/util/StateMachine;->getCurrentState()Lcom/android/internal/util/IState;
 
@@ -663,8 +601,6 @@
 
 .method static synthetic access$5100(Lcom/sec/epdg/IPSecDataConnSM;I)V
     .locals 0
-    .param p0    # Lcom/sec/epdg/IPSecDataConnSM;
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/internal/util/StateMachine;->removeMessages(I)V
 
@@ -673,8 +609,6 @@
 
 .method static synthetic access$5200(Lcom/sec/epdg/IPSecDataConnSM;I)V
     .locals 0
-    .param p0    # Lcom/sec/epdg/IPSecDataConnSM;
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/internal/util/StateMachine;->removeMessages(I)V
 
@@ -683,8 +617,6 @@
 
 .method static synthetic access$5300(Lcom/sec/epdg/IPSecDataConnSM;I)V
     .locals 0
-    .param p0    # Lcom/sec/epdg/IPSecDataConnSM;
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/internal/util/StateMachine;->removeMessages(I)V
 
@@ -693,7 +625,6 @@
 
 .method static synthetic access$5400(Lcom/sec/epdg/IPSecDataConnSM;)Lcom/android/internal/util/IState;
     .locals 1
-    .param p0    # Lcom/sec/epdg/IPSecDataConnSM;
 
     invoke-virtual {p0}, Lcom/android/internal/util/StateMachine;->getCurrentState()Lcom/android/internal/util/IState;
 
@@ -704,8 +635,6 @@
 
 .method static synthetic access$5500(Lcom/sec/epdg/IPSecDataConnSM;I)V
     .locals 0
-    .param p0    # Lcom/sec/epdg/IPSecDataConnSM;
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/internal/util/StateMachine;->removeMessages(I)V
 
@@ -714,7 +643,6 @@
 
 .method static synthetic access$5600(Lcom/sec/epdg/IPSecDataConnSM;)Lcom/android/internal/util/IState;
     .locals 1
-    .param p0    # Lcom/sec/epdg/IPSecDataConnSM;
 
     invoke-virtual {p0}, Lcom/android/internal/util/StateMachine;->getCurrentState()Lcom/android/internal/util/IState;
 
@@ -725,7 +653,6 @@
 
 .method static synthetic access$5700(Lcom/sec/epdg/IPSecDataConnSM;)Z
     .locals 1
-    .param p0    # Lcom/sec/epdg/IPSecDataConnSM;
 
     iget-boolean v0, p0, Lcom/sec/epdg/IPSecDataConnSM;->mIsNeededL2WHO:Z
 
@@ -734,8 +661,6 @@
 
 .method static synthetic access$5702(Lcom/sec/epdg/IPSecDataConnSM;Z)Z
     .locals 0
-    .param p0    # Lcom/sec/epdg/IPSecDataConnSM;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/epdg/IPSecDataConnSM;->mIsNeededL2WHO:Z
 
@@ -744,7 +669,6 @@
 
 .method static synthetic access$5800(Lcom/sec/epdg/IPSecDataConnSM;)Lcom/android/internal/util/IState;
     .locals 1
-    .param p0    # Lcom/sec/epdg/IPSecDataConnSM;
 
     invoke-virtual {p0}, Lcom/android/internal/util/StateMachine;->getCurrentState()Lcom/android/internal/util/IState;
 
@@ -755,7 +679,6 @@
 
 .method static synthetic access$5900(Lcom/sec/epdg/IPSecDataConnSM;)Z
     .locals 1
-    .param p0    # Lcom/sec/epdg/IPSecDataConnSM;
 
     iget-boolean v0, p0, Lcom/sec/epdg/IPSecDataConnSM;->mIsWifiConnected:Z
 
@@ -764,7 +687,6 @@
 
 .method static synthetic access$6000(Lcom/sec/epdg/IPSecDataConnSM;)Lcom/android/internal/util/IState;
     .locals 1
-    .param p0    # Lcom/sec/epdg/IPSecDataConnSM;
 
     invoke-virtual {p0}, Lcom/android/internal/util/StateMachine;->getCurrentState()Lcom/android/internal/util/IState;
 
@@ -775,7 +697,6 @@
 
 .method static synthetic access$6100(Lcom/sec/epdg/IPSecDataConnSM;)Lcom/android/internal/util/IState;
     .locals 1
-    .param p0    # Lcom/sec/epdg/IPSecDataConnSM;
 
     invoke-virtual {p0}, Lcom/android/internal/util/StateMachine;->getCurrentState()Lcom/android/internal/util/IState;
 
@@ -786,8 +707,6 @@
 
 .method static synthetic access$6200(Lcom/sec/epdg/IPSecDataConnSM;I)V
     .locals 0
-    .param p0    # Lcom/sec/epdg/IPSecDataConnSM;
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/internal/util/StateMachine;->removeMessages(I)V
 
@@ -796,7 +715,6 @@
 
 .method static synthetic access$6300(Lcom/sec/epdg/IPSecDataConnSM;)Lcom/android/internal/util/IState;
     .locals 1
-    .param p0    # Lcom/sec/epdg/IPSecDataConnSM;
 
     invoke-virtual {p0}, Lcom/android/internal/util/StateMachine;->getCurrentState()Lcom/android/internal/util/IState;
 
@@ -807,7 +725,6 @@
 
 .method static synthetic access$6400(Lcom/sec/epdg/IPSecDataConnSM;)Lcom/android/internal/util/IState;
     .locals 1
-    .param p0    # Lcom/sec/epdg/IPSecDataConnSM;
 
     invoke-virtual {p0}, Lcom/android/internal/util/StateMachine;->getCurrentState()Lcom/android/internal/util/IState;
 
@@ -818,7 +735,6 @@
 
 .method static synthetic access$6500(Lcom/sec/epdg/IPSecDataConnSM;)Lcom/sec/epdg/IPSecDataConnSM$DisconnectedState;
     .locals 1
-    .param p0    # Lcom/sec/epdg/IPSecDataConnSM;
 
     iget-object v0, p0, Lcom/sec/epdg/IPSecDataConnSM;->mDisConnectedState:Lcom/sec/epdg/IPSecDataConnSM$DisconnectedState;
 
@@ -827,7 +743,6 @@
 
 .method static synthetic access$6600(Lcom/sec/epdg/IPSecDataConnSM;)Lcom/android/internal/util/IState;
     .locals 1
-    .param p0    # Lcom/sec/epdg/IPSecDataConnSM;
 
     invoke-virtual {p0}, Lcom/android/internal/util/StateMachine;->getCurrentState()Lcom/android/internal/util/IState;
 
@@ -838,7 +753,6 @@
 
 .method static synthetic access$6700(Lcom/sec/epdg/IPSecDataConnSM;)Lcom/android/internal/util/IState;
     .locals 1
-    .param p0    # Lcom/sec/epdg/IPSecDataConnSM;
 
     invoke-virtual {p0}, Lcom/android/internal/util/StateMachine;->getCurrentState()Lcom/android/internal/util/IState;
 
@@ -849,7 +763,6 @@
 
 .method static synthetic access$6800(Lcom/sec/epdg/IPSecDataConnSM;)Lcom/android/internal/util/IState;
     .locals 1
-    .param p0    # Lcom/sec/epdg/IPSecDataConnSM;
 
     invoke-virtual {p0}, Lcom/android/internal/util/StateMachine;->getCurrentState()Lcom/android/internal/util/IState;
 
@@ -860,7 +773,6 @@
 
 .method static synthetic access$6900(Lcom/sec/epdg/IPSecDataConnSM;)Lcom/android/internal/util/IState;
     .locals 1
-    .param p0    # Lcom/sec/epdg/IPSecDataConnSM;
 
     invoke-virtual {p0}, Lcom/android/internal/util/StateMachine;->getCurrentState()Lcom/android/internal/util/IState;
 
@@ -871,7 +783,6 @@
 
 .method static synthetic access$7000(Lcom/sec/epdg/IPSecDataConnSM;)Lcom/android/internal/util/IState;
     .locals 1
-    .param p0    # Lcom/sec/epdg/IPSecDataConnSM;
 
     invoke-virtual {p0}, Lcom/android/internal/util/StateMachine;->getCurrentState()Lcom/android/internal/util/IState;
 
@@ -882,7 +793,6 @@
 
 .method static synthetic access$7100(Lcom/sec/epdg/IPSecDataConnSM;)Lcom/android/internal/util/IState;
     .locals 1
-    .param p0    # Lcom/sec/epdg/IPSecDataConnSM;
 
     invoke-virtual {p0}, Lcom/android/internal/util/StateMachine;->getCurrentState()Lcom/android/internal/util/IState;
 
@@ -893,7 +803,6 @@
 
 .method static synthetic access$7200(Lcom/sec/epdg/IPSecDataConnSM;)Lcom/android/internal/util/IState;
     .locals 1
-    .param p0    # Lcom/sec/epdg/IPSecDataConnSM;
 
     invoke-virtual {p0}, Lcom/android/internal/util/StateMachine;->getCurrentState()Lcom/android/internal/util/IState;
 
@@ -904,7 +813,6 @@
 
 .method static synthetic access$7300(Lcom/sec/epdg/IPSecDataConnSM;)Lcom/android/internal/util/IState;
     .locals 1
-    .param p0    # Lcom/sec/epdg/IPSecDataConnSM;
 
     invoke-virtual {p0}, Lcom/android/internal/util/StateMachine;->getCurrentState()Lcom/android/internal/util/IState;
 
@@ -915,7 +823,6 @@
 
 .method static synthetic access$7400(Lcom/sec/epdg/IPSecDataConnSM;)Lcom/android/internal/util/IState;
     .locals 1
-    .param p0    # Lcom/sec/epdg/IPSecDataConnSM;
 
     invoke-virtual {p0}, Lcom/android/internal/util/StateMachine;->getCurrentState()Lcom/android/internal/util/IState;
 
@@ -926,7 +833,6 @@
 
 .method static synthetic access$7500(Lcom/sec/epdg/IPSecDataConnSM;)Lcom/android/internal/util/IState;
     .locals 1
-    .param p0    # Lcom/sec/epdg/IPSecDataConnSM;
 
     invoke-virtual {p0}, Lcom/android/internal/util/StateMachine;->getCurrentState()Lcom/android/internal/util/IState;
 
@@ -937,7 +843,6 @@
 
 .method static synthetic access$900(Lcom/sec/epdg/IPSecDataConnSM;)V
     .locals 0
-    .param p0    # Lcom/sec/epdg/IPSecDataConnSM;
 
     invoke-direct {p0}, Lcom/sec/epdg/IPSecDataConnSM;->initConnectionParams()V
 
@@ -1059,7 +964,6 @@
 
 .method private configureApnContext(Landroid/os/Message;)V
     .locals 7
-    .param p1    # Landroid/os/Message;
 
     iget v2, p1, Landroid/os/Message;->arg1:I
 
@@ -1286,11 +1190,6 @@
 
 .method public static getNewStateMachineInstance(Ljava/lang/String;Landroid/content/Context;Lcom/sec/epdg/IWlanApnContext;Landroid/os/Handler;Landroid/os/Looper;)Lcom/sec/epdg/IPSecDataConnSM;
     .locals 6
-    .param p0    # Ljava/lang/String;
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/sec/epdg/IWlanApnContext;
-    .param p3    # Landroid/os/Handler;
-    .param p4    # Landroid/os/Looper;
 
     new-instance v0, Lcom/sec/epdg/IPSecDataConnSM;
 
@@ -1532,9 +1431,6 @@
 
 .method private handleEnableEpdgFailure(III)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const-string v0, "[IPSECDATACONNSM]"
 
@@ -1589,8 +1485,6 @@
 
 .method private handleTCRules(ZI)Z
     .locals 6
-    .param p1    # Z
-    .param p2    # I
 
     const/4 v5, 0x1
 
@@ -1830,8 +1724,6 @@
 
 .method private handleWifiConnect(ZLjava/lang/String;)V
     .locals 4
-    .param p1    # Z
-    .param p2    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -1901,7 +1793,6 @@
 
 .method private handleWifiStateChange(Landroid/os/Message;)V
     .locals 5
-    .param p1    # Landroid/os/Message;
 
     const/4 v3, 0x0
 
@@ -1950,7 +1841,6 @@
 
 .method private informHandoverFailureToRilAndFramework(I)V
     .locals 4
-    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -2022,7 +1912,6 @@
 
 .method private notifyL2WRegistrant(Z)V
     .locals 4
-    .param p1    # Z
 
     const/4 v1, 0x1
 
@@ -2069,7 +1958,6 @@
 
 .method private notifyW2LRegistrant(Z)V
     .locals 3
-    .param p1    # Z
 
     const-string v0, "[IPSECDATACONNSM]"
 
@@ -2138,7 +2026,6 @@
 
 .method private transition(Lcom/android/internal/util/State;)V
     .locals 0
-    .param p1    # Lcom/android/internal/util/State;
 
     invoke-super {p0, p1}, Lcom/android/internal/util/StateMachine;->transitionTo(Lcom/android/internal/util/IState;)V
 
@@ -2149,7 +2036,6 @@
 # virtual methods
 .method protected deferTransitionTo(Lcom/android/internal/util/State;)V
     .locals 0
-    .param p1    # Lcom/android/internal/util/State;
 
     invoke-virtual {p0, p1}, Lcom/android/internal/util/StateMachine;->transitionTo(Lcom/android/internal/util/IState;)V
 
@@ -2308,7 +2194,6 @@
 
 .method public setIsHandOver(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/epdg/IPSecDataConnSM;->mIsHandOver:Z
 
@@ -2317,7 +2202,6 @@
 
 .method public declared-synchronized setIsW2LRequested(Z)V
     .locals 1
-    .param p1    # Z
 
     monitor-enter p0
 
@@ -2340,7 +2224,6 @@
 
 .method public setmRetryCount(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/epdg/IPSecDataConnSM;->mRetryCount:I
 
@@ -2349,7 +2232,6 @@
 
 .method public setmRilCid(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/epdg/IPSecDataConnSM;->mRilCid:I
 

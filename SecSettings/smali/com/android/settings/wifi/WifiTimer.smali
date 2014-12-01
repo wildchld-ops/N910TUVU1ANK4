@@ -52,7 +52,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/wifi/WifiTimer;)Lcom/sec/android/touchwiz/widget/TwCheckBox;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiTimer;
 
     iget-object v0, p0, Lcom/android/settings/wifi/WifiTimer;->mStartTimeCheckBox:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
@@ -61,7 +60,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/wifi/WifiTimer;)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/WifiTimer;
 
     invoke-direct {p0}, Lcom/android/settings/wifi/WifiTimer;->hideKeypad()V
 
@@ -70,7 +68,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/wifi/WifiTimer;)Lcom/sec/android/touchwiz/widget/TwCheckBox;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiTimer;
 
     iget-object v0, p0, Lcom/android/settings/wifi/WifiTimer;->mEndTimeCheckBox:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
@@ -79,7 +76,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/wifi/WifiTimer;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiTimer;
 
     invoke-direct {p0}, Lcom/android/settings/wifi/WifiTimer;->saveChanges()Z
 
@@ -90,8 +86,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/wifi/WifiTimer;I)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/WifiTimer;
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/settings/wifi/WifiTimer;->showDialog(I)V
 
@@ -100,7 +94,6 @@
 
 .method static get24HourMode(Landroid/content/Context;)Z
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Landroid/text/format/DateFormat;->is24HourFormat(Landroid/content/Context;)Z
 
@@ -111,7 +104,6 @@
 
 .method public static getHour(Ljava/lang/String;)I
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     const-string v1, ":"
 
@@ -132,7 +124,6 @@
 
 .method public static getMinute(Ljava/lang/String;)I
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     const-string v1, ":"
 
@@ -153,8 +144,6 @@
 
 .method public static getTimeAmPmFormat(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
     .locals 10
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const/4 v7, 0x2
 
@@ -341,8 +330,6 @@
 
 .method private pickerSetTime(Landroid/widget/TimePicker;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Landroid/widget/TimePicker;
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/settings/wifi/WifiTimer;->mContext:Landroid/content/Context;
 
@@ -853,7 +840,6 @@
 # virtual methods
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 8
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v7, 0x1
 
@@ -1129,7 +1115,6 @@
 
 .method public onCreateDialog(I)Landroid/app/Dialog;
     .locals 4
-    .param p1    # I
 
     const/16 v1, 0x12d
 
@@ -1180,8 +1165,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
     .locals 4
-    .param p1    # Landroid/view/Menu;
-    .param p2    # Landroid/view/MenuInflater;
 
     const/4 v3, 0x5
 
@@ -1242,9 +1225,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 3
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const v1, 0x7f0402c8
 
@@ -1363,7 +1343,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 4
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v0, 0x1
 

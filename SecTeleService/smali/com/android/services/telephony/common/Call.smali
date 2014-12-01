@@ -2151,7 +2151,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Ljava/lang/Enum;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/android/services/telephony/common/Call$DisconnectCause;->toString()Ljava/lang/String;
 
     move-result-object v0
 

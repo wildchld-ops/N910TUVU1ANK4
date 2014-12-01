@@ -55,7 +55,6 @@
 
 .method public static checkAudioInJPEG(Ljava/lang/String;)Lcom/quramsoft/qdio/QdioJNI$QdioJPEGData;
     .locals 7
-    .param p0    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -198,8 +197,6 @@
 
 .method public static copyAdioInJPEGtoPNG(Ljava/lang/String;Ljava/lang/String;)I
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p0, p1}, Lcom/quramsoft/qdio/QdioJNI;->copyAdioData(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -210,8 +207,6 @@
 
 .method public static getAudioStreamBuffer(Lcom/quramsoft/qdio/QdioJNI$QdioJPEGData;I)[B
     .locals 9
-    .param p0    # Lcom/quramsoft/qdio/QdioJNI$QdioJPEGData;
-    .param p1    # I
 
     const/4 v5, 0x0
 
@@ -457,7 +452,6 @@
 
 .method public static isJPEG(Ljava/lang/String;)I
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     const/4 v0, -0x1
 
@@ -502,8 +496,6 @@
 
 .method public static saveAudioJPEG(Ljava/lang/String;[B)I
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # [B
 
     if-eqz p0, :cond_0
 

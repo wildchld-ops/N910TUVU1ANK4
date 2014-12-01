@@ -24,9 +24,9 @@
 
     const/4 v1, 0x1
 
-    invoke-virtual {p0, v1}, Landroid/app/Activity;->requestWindowFeature(I)Z
+    invoke-virtual {p0, v1}, Lcom/android/phone/LteReadyAlertActivity;->requestWindowFeature(I)Z
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
+    invoke-virtual {p0}, Lcom/android/phone/LteReadyAlertActivity;->getWindow()Landroid/view/Window;
 
     move-result-object v1
 
@@ -54,7 +54,7 @@
 
     iget-object v1, p0, Lcom/android/phone/LteReadyAlertActivity;->mLTENetworkDialog:Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/LteReadyAlertActivity;->getResources()Landroid/content/res/Resources;
 
     move-result-object v2
 
@@ -74,7 +74,7 @@
 
     move-result-object v1
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/LteReadyAlertActivity;->getResources()Landroid/content/res/Resources;
 
     move-result-object v2
 
@@ -110,7 +110,7 @@
 
     invoke-direct {v2, p0}, Lcom/android/phone/LteReadyAlertActivity$1;-><init>(Lcom/android/phone/LteReadyAlertActivity;)V
 
-    invoke-virtual {v1, v2}, Landroid/app/Dialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
+    invoke-virtual {v1, v2}, Landroid/app/AlertDialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
     return-void
 .end method

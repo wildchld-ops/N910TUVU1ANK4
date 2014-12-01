@@ -28,8 +28,6 @@
 
 .method public static getFingerPrintString(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -75,8 +73,6 @@
 
 .method public static getRandomNoFromSender(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
     .locals 9
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -165,7 +161,6 @@
 
 .method public static getSHA1HashValue(Ljava/lang/String;)Ljava/lang/String;
     .locals 13
-    .param p0    # Ljava/lang/String;
 
     const/4 v5, 0x0
 
@@ -259,9 +254,6 @@
 
 .method public static testSenderSignatureForSecurity(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -338,8 +330,6 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 

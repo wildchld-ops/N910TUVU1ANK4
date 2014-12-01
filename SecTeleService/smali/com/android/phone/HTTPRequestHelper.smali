@@ -156,7 +156,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v0}, Ljava/lang/Throwable;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Lorg/json/JSONException;->toString()Ljava/lang/String;
 
     move-result-object v3
 
@@ -189,7 +189,7 @@
 
     move-result-object v5
 
-    invoke-virtual {p1}, Lorg/apache/http/client/methods/HttpRequestBase;->getRequestLine()Lorg/apache/http/RequestLine;
+    invoke-virtual {p1}, Lorg/apache/http/client/methods/HttpGet;->getRequestLine()Lorg/apache/http/RequestLine;
 
     move-result-object v6
 
@@ -207,7 +207,7 @@
 
     invoke-static {v5}, Lcom/android/phone/HTTPRequestHelper;->englog(Ljava/lang/String;)V
 
-    invoke-virtual {p1}, Lorg/apache/http/message/AbstractHttpMessage;->getAllHeaders()[Lorg/apache/http/Header;
+    invoke-virtual {p1}, Lorg/apache/http/client/methods/HttpGet;->getAllHeaders()[Lorg/apache/http/Header;
 
     move-result-object v2
 
@@ -272,7 +272,7 @@
 
     move-result-object v7
 
-    invoke-virtual {p1}, Lorg/apache/http/client/methods/HttpRequestBase;->getRequestLine()Lorg/apache/http/RequestLine;
+    invoke-virtual {p1}, Lorg/apache/http/client/methods/HttpPost;->getRequestLine()Lorg/apache/http/RequestLine;
 
     move-result-object v8
 
@@ -290,7 +290,7 @@
 
     invoke-static {v7}, Lcom/android/phone/HTTPRequestHelper;->englog(Ljava/lang/String;)V
 
-    invoke-virtual {p1}, Lorg/apache/http/message/AbstractHttpMessage;->getAllHeaders()[Lorg/apache/http/Header;
+    invoke-virtual {p1}, Lorg/apache/http/client/methods/HttpPost;->getAllHeaders()[Lorg/apache/http/Header;
 
     move-result-object v3
 
@@ -339,7 +339,7 @@
 
     :cond_0
     :try_start_0
-    invoke-virtual {p1}, Lorg/apache/http/client/methods/HttpEntityEnclosingRequestBase;->getEntity()Lorg/apache/http/HttpEntity;
+    invoke-virtual {p1}, Lorg/apache/http/client/methods/HttpPost;->getEntity()Lorg/apache/http/HttpEntity;
 
     move-result-object v7
 
@@ -375,7 +375,7 @@
     :catch_0
     move-exception v1
 
-    invoke-virtual {v1}, Ljava/lang/Throwable;->printStackTrace()V
+    invoke-virtual {v1}, Ljava/io/IOException;->printStackTrace()V
 
     goto :goto_1
 .end method
@@ -560,7 +560,7 @@
 
     :goto_0
     :try_start_0
-    invoke-virtual {v4, v2}, Ljava/io/Reader;->read([C)I
+    invoke-virtual {v4, v2}, Ljava/io/InputStreamReader;->read([C)I
 
     move-result v0
 
@@ -592,7 +592,7 @@
     :catch_0
     move-exception v1
 
-    invoke-virtual {v1}, Ljava/lang/Throwable;->printStackTrace()V
+    invoke-virtual {v1}, Ljava/io/IOException;->printStackTrace()V
 
     move-object v8, v7
 
@@ -852,7 +852,7 @@
     :catch_0
     move-exception v1
 
-    invoke-virtual {v1}, Ljava/lang/Throwable;->printStackTrace()V
+    invoke-virtual {v1}, Ljava/io/IOException;->printStackTrace()V
 
     const/4 v7, 0x0
 
@@ -889,7 +889,7 @@
 
     iget-object v6, p0, Lcom/android/phone/HTTPRequestHelper;->mReqType:Lcom/android/phone/CallMessageConstants$RequestType;
 
-    invoke-virtual {v6}, Ljava/lang/Enum;->name()Ljava/lang/String;
+    invoke-virtual {v6}, Lcom/android/phone/CallMessageConstants$RequestType;->name()Ljava/lang/String;
 
     move-result-object v6
 
@@ -1261,7 +1261,7 @@
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
     :try_start_1
-    invoke-virtual {v7, v3}, Lorg/apache/http/client/methods/HttpEntityEnclosingRequestBase;->setEntity(Lorg/apache/http/HttpEntity;)V
+    invoke-virtual {v7, v3}, Lorg/apache/http/client/methods/HttpPost;->setEntity(Lorg/apache/http/HttpEntity;)V
 
     invoke-direct {p0, v7}, Lcom/android/phone/HTTPRequestHelper;->dumpHttpPost(Lorg/apache/http/client/methods/HttpPost;)V
 
@@ -1286,7 +1286,7 @@
     move-exception v1
 
     :goto_3
-    invoke-virtual {v1}, Ljava/lang/Throwable;->printStackTrace()V
+    invoke-virtual {v1}, Ljava/io/IOException;->printStackTrace()V
 
     :cond_2
     const/4 v9, 0x0
@@ -1509,7 +1509,7 @@
 
     invoke-direct {v8, v11}, Lcom/android/phone/network/multipart/MultipartEntity;-><init>([Lcom/android/phone/network/multipart/Part;)V
 
-    invoke-virtual {v9, v8}, Lorg/apache/http/client/methods/HttpEntityEnclosingRequestBase;->setEntity(Lorg/apache/http/HttpEntity;)V
+    invoke-virtual {v9, v8}, Lorg/apache/http/client/methods/HttpPost;->setEntity(Lorg/apache/http/HttpEntity;)V
 
     invoke-direct {p0, v9}, Lcom/android/phone/HTTPRequestHelper;->dumpHttpPost(Lorg/apache/http/client/methods/HttpPost;)V
 

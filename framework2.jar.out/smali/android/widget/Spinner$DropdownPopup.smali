@@ -28,9 +28,6 @@
 # direct methods
 .method public constructor <init>(Landroid/widget/Spinner;Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 2
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/util/AttributeSet;
-    .param p4    # I
 
     const/4 v1, 0x0
 
@@ -57,7 +54,6 @@
 
 .method static synthetic access$300(Landroid/widget/Spinner$DropdownPopup;)Landroid/widget/ListAdapter;
     .locals 1
-    .param p0    # Landroid/widget/Spinner$DropdownPopup;
 
     iget-object v0, p0, Landroid/widget/Spinner$DropdownPopup;->mAdapter:Landroid/widget/ListAdapter;
 
@@ -66,7 +62,6 @@
 
 .method static synthetic access$701(Landroid/widget/Spinner$DropdownPopup;)V
     .locals 0
-    .param p0    # Landroid/widget/Spinner$DropdownPopup;
 
     invoke-super {p0}, Landroid/widget/ListPopupWindow;->show()V
 
@@ -357,7 +352,6 @@
 
 .method public setAdapter(Landroid/widget/ListAdapter;)V
     .locals 0
-    .param p1    # Landroid/widget/ListAdapter;
 
     invoke-super {p0, p1}, Landroid/widget/ListPopupWindow;->setAdapter(Landroid/widget/ListAdapter;)V
 
@@ -368,7 +362,6 @@
 
 .method public setPromptText(Ljava/lang/CharSequence;)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
 
     iput-object p1, p0, Landroid/widget/Spinner$DropdownPopup;->mHintText:Ljava/lang/CharSequence;
 
@@ -377,8 +370,6 @@
 
 .method public show(II)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0}, Landroid/widget/ListPopupWindow;->isShowing()Z
 

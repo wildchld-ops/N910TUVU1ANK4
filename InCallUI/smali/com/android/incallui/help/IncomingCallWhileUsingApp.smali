@@ -170,7 +170,6 @@
 
 .method static synthetic access$008(Lcom/android/incallui/help/IncomingCallWhileUsingApp;)I
     .locals 2
-    .param p0    # Lcom/android/incallui/help/IncomingCallWhileUsingApp;
 
     iget v0, p0, Lcom/android/incallui/help/IncomingCallWhileUsingApp;->callTimerCount:I
 
@@ -183,7 +182,6 @@
 
 .method static synthetic access$100(Lcom/android/incallui/help/IncomingCallWhileUsingApp;)V
     .locals 0
-    .param p0    # Lcom/android/incallui/help/IncomingCallWhileUsingApp;
 
     invoke-direct {p0}, Lcom/android/incallui/help/IncomingCallWhileUsingApp;->dispCallDuration()V
 
@@ -192,7 +190,6 @@
 
 .method static synthetic access$200(Lcom/android/incallui/help/IncomingCallWhileUsingApp;)V
     .locals 0
-    .param p0    # Lcom/android/incallui/help/IncomingCallWhileUsingApp;
 
     invoke-direct {p0}, Lcom/android/incallui/help/IncomingCallWhileUsingApp;->showToast()V
 
@@ -201,7 +198,6 @@
 
 .method static synthetic access$300(Lcom/android/incallui/help/IncomingCallWhileUsingApp;)Landroid/widget/ImageView;
     .locals 1
-    .param p0    # Lcom/android/incallui/help/IncomingCallWhileUsingApp;
 
     iget-object v0, p0, Lcom/android/incallui/help/IncomingCallWhileUsingApp;->mTutorialPopupCallAnswerTap:Landroid/widget/ImageView;
 
@@ -210,7 +206,6 @@
 
 .method static synthetic access$400(Lcom/android/incallui/help/IncomingCallWhileUsingApp;)Landroid/widget/ImageView;
     .locals 1
-    .param p0    # Lcom/android/incallui/help/IncomingCallWhileUsingApp;
 
     iget-object v0, p0, Lcom/android/incallui/help/IncomingCallWhileUsingApp;->mTutorialPopupCallRejectTap:Landroid/widget/ImageView;
 
@@ -219,7 +214,6 @@
 
 .method static synthetic access$500(Lcom/android/incallui/help/IncomingCallWhileUsingApp;)Landroid/widget/ImageView;
     .locals 1
-    .param p0    # Lcom/android/incallui/help/IncomingCallWhileUsingApp;
 
     iget-object v0, p0, Lcom/android/incallui/help/IncomingCallWhileUsingApp;->mTutorialPopupCallEndcallTap:Landroid/widget/ImageView;
 
@@ -228,7 +222,6 @@
 
 .method static synthetic access$600(Lcom/android/incallui/help/IncomingCallWhileUsingApp;)Landroid/view/animation/Animation;
     .locals 1
-    .param p0    # Lcom/android/incallui/help/IncomingCallWhileUsingApp;
 
     iget-object v0, p0, Lcom/android/incallui/help/IncomingCallWhileUsingApp;->mFlashingAnimation:Landroid/view/animation/Animation;
 
@@ -237,7 +230,6 @@
 
 .method static synthetic access$700(Lcom/android/incallui/help/IncomingCallWhileUsingApp;)I
     .locals 1
-    .param p0    # Lcom/android/incallui/help/IncomingCallWhileUsingApp;
 
     iget v0, p0, Lcom/android/incallui/help/IncomingCallWhileUsingApp;->mBubbleCount:I
 
@@ -246,7 +238,6 @@
 
 .method static synthetic access$708(Lcom/android/incallui/help/IncomingCallWhileUsingApp;)I
     .locals 2
-    .param p0    # Lcom/android/incallui/help/IncomingCallWhileUsingApp;
 
     iget v0, p0, Lcom/android/incallui/help/IncomingCallWhileUsingApp;->mBubbleCount:I
 
@@ -259,7 +250,6 @@
 
 .method static synthetic access$800(Lcom/android/incallui/help/IncomingCallWhileUsingApp;)Landroid/view/animation/Animation;
     .locals 1
-    .param p0    # Lcom/android/incallui/help/IncomingCallWhileUsingApp;
 
     iget-object v0, p0, Lcom/android/incallui/help/IncomingCallWhileUsingApp;->mFadingAnimation:Landroid/view/animation/Animation;
 
@@ -268,7 +258,6 @@
 
 .method private animationInit(Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     const v3, 0x7f050003
 
@@ -1159,7 +1148,6 @@
 
 .method private setIncomingCallTutorialMode(Lcom/android/incallui/help/IncomingCallWhileUsingApp$IncomingCallTutorialStep;)V
     .locals 7
-    .param p1    # Lcom/android/incallui/help/IncomingCallWhileUsingApp$IncomingCallTutorialStep;
 
     const/16 v6, 0xb
 
@@ -1697,7 +1685,6 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 4
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p1}, Landroid/view/View;->getId()I
 
@@ -1787,7 +1774,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 

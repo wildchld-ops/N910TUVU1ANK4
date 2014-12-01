@@ -105,7 +105,6 @@
 
 .method public static getPersonalPageRoot(Landroid/content/Context;)Ljava/lang/String;
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     const-string v0, "/storage/Private"
 
@@ -114,7 +113,6 @@
 
 .method public static getSecretDir(Landroid/content/Context;)Ljava/lang/String;
     .locals 1
-    .param p0    # Landroid/content/Context;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -145,7 +143,6 @@
 
 .method public static isPersonalPageMounted(Landroid/content/Context;)Z
     .locals 8
-    .param p0    # Landroid/content/Context;
 
     const/4 v4, 0x0
 
@@ -290,7 +287,6 @@
 
 .method public static isSecretDirMounted(Landroid/content/Context;)Z
     .locals 1
-    .param p0    # Landroid/content/Context;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -315,9 +311,6 @@
 
 .method public static showVisualCue(Landroid/content/Context;Landroid/app/PendingIntent;Landroid/app/PendingIntent;)Z
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/app/PendingIntent;
-    .param p2    # Landroid/app/PendingIntent;
 
     new-instance v1, Landroid/content/Intent;
 

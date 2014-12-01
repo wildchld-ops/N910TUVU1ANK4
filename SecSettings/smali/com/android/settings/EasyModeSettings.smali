@@ -52,8 +52,6 @@
 
 .method static synthetic access$002(Lcom/android/settings/EasyModeSettings;I)I
     .locals 0
-    .param p0    # Lcom/android/settings/EasyModeSettings;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/settings/EasyModeSettings;->mOlderPosition:I
 
@@ -62,7 +60,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/EasyModeSettings;)Landroid/widget/ListView;
     .locals 1
-    .param p0    # Lcom/android/settings/EasyModeSettings;
 
     iget-object v0, p0, Lcom/android/settings/EasyModeSettings;->mListView:Landroid/widget/ListView;
 
@@ -71,8 +68,6 @@
 
 .method static synthetic access$202(Lcom/android/settings/EasyModeSettings;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/EasyModeSettings;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/EasyModeSettings;->flag:Z
 
@@ -81,7 +76,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/EasyModeSettings;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/settings/EasyModeSettings;
 
     iget-object v0, p0, Lcom/android/settings/EasyModeSettings;->mClassName:Ljava/lang/String;
 
@@ -411,7 +405,6 @@
 
 .method private updateOptionsMenuIcon(Z)V
     .locals 5
-    .param p1    # Z
 
     const/4 v4, 0x0
 
@@ -609,7 +602,6 @@
 # virtual methods
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v0, 0x1
 
@@ -622,7 +614,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -665,8 +656,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
     .locals 7
-    .param p1    # Landroid/view/Menu;
-    .param p2    # Landroid/view/MenuInflater;
 
     const/4 v6, 0x2
 
@@ -797,9 +786,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 12
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const v7, 0x7f0914f2
 
@@ -1203,16 +1189,12 @@
 
 .method public onDismiss(Landroid/content/DialogInterface;)V
     .locals 0
-    .param p1    # Landroid/content/DialogInterface;
 
     return-void
 .end method
 
 .method public onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
     .locals 4
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1352,7 +1334,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 2
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -1443,7 +1424,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "easymode_spinner_value"
 
@@ -1456,7 +1436,6 @@
 
 .method public setDefaultLauncher(Z)V
     .locals 11
-    .param p1    # Z
 
     const/4 v7, 0x2
 

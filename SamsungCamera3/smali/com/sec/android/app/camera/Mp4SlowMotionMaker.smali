@@ -22,8 +22,6 @@
 
 .method private byteArrayToInt([BI)I
     .locals 4
-    .param p1    # [B
-    .param p2    # I
 
     const/4 v1, 0x0
 
@@ -56,8 +54,6 @@
 
 .method private byteArrayToLong([BI)J
     .locals 7
-    .param p1    # [B
-    .param p2    # I
 
     const-wide/16 v1, 0x0
 
@@ -88,7 +84,6 @@
 
 .method private findAtom(Ljava/lang/String;)Z
     .locals 14
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -235,8 +230,6 @@
 
 .method private intToByteArray(II)[B
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     new-array v0, p2, [B
 
@@ -269,9 +262,6 @@
 
 .method private modifyData(IDI)Z
     .locals 10
-    .param p1    # I
-    .param p2    # D
-    .param p4    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -427,7 +417,6 @@
 
 .method private modifyMdhdData(D)Z
     .locals 7
-    .param p1    # D
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -492,7 +481,6 @@
 
 .method private modifyMvhdData(D)Z
     .locals 5
-    .param p1    # D
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -546,7 +534,6 @@
 
 .method private modifyTkhdData(D)Z
     .locals 5
-    .param p1    # D
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -613,8 +600,6 @@
 # virtual methods
 .method public makeMp4Slow(Ljava/lang/String;D)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # D
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

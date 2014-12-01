@@ -38,12 +38,6 @@
 
 .method public static log(IIZILjava/lang/String;Ljava/lang/String;)V
     .locals 7
-    .param p0    # I
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
 
     :try_start_0
     invoke-static {}, Landroid/sec/enterprise/EnterpriseDeviceManager$EDMProxyServiceHelper;->getService()Landroid/sec/enterprise/IEDMProxy;

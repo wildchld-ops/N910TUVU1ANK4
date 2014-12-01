@@ -26,7 +26,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     const/4 v3, 0x1
 
@@ -111,7 +110,6 @@
 
 .method private handleEvent(J)V
     .locals 7
-    .param p1    # J
 
     const/4 v4, 0x0
 
@@ -287,8 +285,6 @@
 
 .method private log(Ljava/lang/String;Z)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const-string v0, "CallAirMotion"
 
@@ -301,7 +297,6 @@
 # virtual methods
 .method public onGestureEvent(Lcom/samsung/android/service/gesture/GestureEvent;)V
     .locals 2
-    .param p1    # Lcom/samsung/android/service/gesture/GestureEvent;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -426,7 +421,6 @@
 
 .method public setCallAirMotionListener(Lcom/android/incallui/motion/CallAirMotionListener;)V
     .locals 0
-    .param p1    # Lcom/android/incallui/motion/CallAirMotionListener;
 
     iput-object p1, p0, Lcom/android/incallui/motion/CallAirMotion;->mCallAirMotionListener:Lcom/android/incallui/motion/CallAirMotionListener;
 

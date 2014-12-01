@@ -296,11 +296,6 @@
 
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;ILcom/sec/android/glview/TwGLViewGroup;Lcom/sec/android/app/camera/MenuResourceDepot;Ljava/lang/String;)V
     .locals 9
-    .param p1    # Lcom/sec/android/app/camera/Camera;
-    .param p2    # I
-    .param p3    # Lcom/sec/android/glview/TwGLViewGroup;
-    .param p4    # Lcom/sec/android/app/camera/MenuResourceDepot;
-    .param p5    # Ljava/lang/String;
 
     const/4 v5, 0x6
 
@@ -820,8 +815,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const-string v0, "TwGLOutFocusMenu"
 
@@ -875,8 +868,6 @@
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const-string v0, "TwGLOutFocusMenu"
 
@@ -930,8 +921,6 @@
 
 .method public onOutFocusComplete(ZI)V
     .locals 29
-    .param p1    # Z
-    .param p2    # I
 
     move-object/from16 v0, p0
 
@@ -1778,7 +1767,6 @@
 
 .method public reset(Z)V
     .locals 3
-    .param p1    # Z
 
     const/4 v2, 0x0
 
@@ -1818,7 +1806,6 @@
 
 .method public setCaptureProgress(I)V
     .locals 6
-    .param p1    # I
 
     const/4 v5, 0x1
 
@@ -2008,7 +1995,6 @@
 
 .method public setCaptureProgressMax(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method

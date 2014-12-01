@@ -46,8 +46,6 @@
 # virtual methods
 .method public compare(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)I
     .locals 2
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Ljava/lang/CharSequence;
 
     invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
@@ -66,8 +64,6 @@
 
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p1, Ljava/lang/CharSequence;
 

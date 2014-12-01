@@ -501,7 +501,6 @@
 
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;)V
     .locals 0
-    .param p1    # Lcom/sec/android/app/camera/Camera;
 
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
 
@@ -512,7 +511,6 @@
 
 .method public static isShootingModeExternal(I)Z
     .locals 2
-    .param p0    # I
 
     const/16 v0, 0x155
 
@@ -544,7 +542,6 @@
 
 .method public static isShootingModePreloaded(I)Z
     .locals 2
-    .param p0    # I
 
     sget-object v0, Lcom/sec/android/app/camera/PlugInShootingModesLoader;->mPreloadedShootingModesMapping:Ljava/util/HashMap;
 
@@ -563,7 +560,6 @@
 # virtual methods
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [Ljava/lang/Void;
 
@@ -576,7 +572,6 @@
 
 .method protected varargs doInBackground([Ljava/lang/Void;)Ljava/lang/Void;
     .locals 1
-    .param p1    # [Ljava/lang/Void;
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/PlugInShootingModesLoader;->loadExternalShootingModes()Z
 
@@ -1009,7 +1004,6 @@
 
 .method protected bridge synthetic onPostExecute(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Ljava/lang/Void;
 
@@ -1020,7 +1014,6 @@
 
 .method protected onPostExecute(Ljava/lang/Void;)V
     .locals 2
-    .param p1    # Ljava/lang/Void;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/PlugInShootingModesLoader;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -1040,7 +1033,6 @@
 
 .method protected bridge synthetic onProgressUpdate([Ljava/lang/Object;)V
     .locals 0
-    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [Ljava/lang/Void;
 
@@ -1051,7 +1043,6 @@
 
 .method protected varargs onProgressUpdate([Ljava/lang/Void;)V
     .locals 0
-    .param p1    # [Ljava/lang/Void;
 
     return-void
 .end method

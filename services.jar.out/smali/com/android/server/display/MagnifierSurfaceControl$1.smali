@@ -36,7 +36,6 @@
 # virtual methods
 .method public onSizeChanged(Z)V
     .locals 8
-    .param p1    # Z
 
     iget-object v1, p0, Lcom/android/server/display/MagnifierSurfaceControl$1;->this$0:Lcom/android/server/display/MagnifierSurfaceControl;
 

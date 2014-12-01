@@ -64,10 +64,6 @@
 # direct methods
 .method constructor <init>(Landroid/content/Context;Landroid/content/DialogInterface$OnClickListener;Lcom/android/internal/net/VpnProfile;Z)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/DialogInterface$OnClickListener;
-    .param p3    # Lcom/android/internal/net/VpnProfile;
-    .param p4    # Z
 
     invoke-direct {p0, p1}, Landroid/app/AlertDialog;-><init>(Landroid/content/Context;)V
 
@@ -108,11 +104,6 @@
 
 .method constructor <init>(Landroid/content/Context;Landroid/content/DialogInterface$OnClickListener;Lcom/android/internal/net/VpnProfile;ZZ)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/DialogInterface$OnClickListener;
-    .param p3    # Lcom/android/internal/net/VpnProfile;
-    .param p4    # Z
-    .param p5    # Z
 
     invoke-direct {p0, p1}, Landroid/app/AlertDialog;-><init>(Landroid/content/Context;)V
 
@@ -151,7 +142,6 @@
 
 .method private changeType(I)V
     .locals 9
-    .param p1    # I
 
     const/4 v8, 0x6
 
@@ -420,10 +410,6 @@
 
 .method private loadCertificates(Landroid/widget/Spinner;Ljava/lang/String;ILjava/lang/String;)V
     .locals 10
-    .param p1    # Landroid/widget/Spinner;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
 
     const/4 v9, 0x1
 
@@ -526,7 +512,6 @@
 
 .method private setSelectedConnectionType(I)V
     .locals 3
-    .param p1    # I
 
     invoke-direct {p0}, Lcom/android/settings/vpn2/VpnDialog;->isCcModeEnabled()Z
 
@@ -569,7 +554,6 @@
 
 .method private validate(Z)Z
     .locals 5
-    .param p1    # Z
 
     const/4 v2, 0x1
 
@@ -784,8 +768,6 @@
 
 .method private validateAddresses(Ljava/lang/String;Z)Z
     .locals 11
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     :try_start_0
     const-string v9, " "
@@ -929,7 +911,6 @@
 # virtual methods
 .method public afterTextChanged(Landroid/text/Editable;)V
     .locals 2
-    .param p1    # Landroid/text/Editable;
 
     const/4 v0, -0x1
 
@@ -950,10 +931,6 @@
 
 .method public beforeTextChanged(Ljava/lang/CharSequence;III)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     return-void
 .end method
@@ -1368,7 +1345,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     const v1, 0x7f0b05fa
 
@@ -1421,7 +1397,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 13
-    .param p1    # Landroid/os/Bundle;
 
     invoke-virtual {p0}, Lcom/android/settings/vpn2/VpnDialog;->getLayoutInflater()Landroid/view/LayoutInflater;
 
@@ -2366,8 +2341,6 @@
 
 .method public onFocusChange(Landroid/view/View;Z)V
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # Z
 
     if-eqz p2, :cond_0
 
@@ -2397,9 +2370,6 @@
 
 .method public onItemSelected(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
     .locals 5
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2509,10 +2479,6 @@
 
 .method public onTextChanged(Ljava/lang/CharSequence;III)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     return-void
 .end method

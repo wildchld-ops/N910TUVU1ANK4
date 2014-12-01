@@ -18,9 +18,6 @@
 
 .method public static configureMenuItem(Landroid/view/MenuItem;Landroid/app/Activity;Landroid/content/Intent;)V
     .locals 4
-    .param p0    # Landroid/view/MenuItem;
-    .param p1    # Landroid/app/Activity;
-    .param p2    # Landroid/content/Intent;
 
     invoke-interface {p0}, Landroid/view/MenuItem;->getActionProvider()Landroid/view/ActionProvider;
 

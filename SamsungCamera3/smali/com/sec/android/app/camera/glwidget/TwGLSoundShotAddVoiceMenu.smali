@@ -864,10 +864,6 @@
 
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;ILcom/sec/android/glview/TwGLViewGroup;Lcom/sec/android/app/camera/MenuResourceDepot;)V
     .locals 10
-    .param p1    # Lcom/sec/android/app/camera/Camera;
-    .param p2    # I
-    .param p3    # Lcom/sec/android/glview/TwGLViewGroup;
-    .param p4    # Lcom/sec/android/app/camera/MenuResourceDepot;
 
     const/4 v5, 0x6
 
@@ -1579,7 +1575,6 @@
 
 .method static synthetic access$000(Lcom/sec/android/app/camera/glwidget/TwGLSoundShotAddVoiceMenu;)[I
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLSoundShotAddVoiceMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLSoundShotAddVoiceMenu;->mMicImageArray:[I
 
@@ -1588,7 +1583,6 @@
 
 .method static synthetic access$100(Lcom/sec/android/app/camera/glwidget/TwGLSoundShotAddVoiceMenu;)Lcom/sec/android/glview/TwGLImage;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLSoundShotAddVoiceMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLSoundShotAddVoiceMenu;->mMicImage:Lcom/sec/android/glview/TwGLImage;
 
@@ -1597,7 +1591,6 @@
 
 .method static synthetic access$200(Lcom/sec/android/app/camera/glwidget/TwGLSoundShotAddVoiceMenu;)V
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLSoundShotAddVoiceMenu;
 
     invoke-direct {p0}, Lcom/sec/android/app/camera/glwidget/TwGLSoundShotAddVoiceMenu;->setRecordProgressIncreased()V
 
@@ -1606,8 +1599,6 @@
 
 .method static synthetic access$300(Lcom/sec/android/app/camera/glwidget/TwGLSoundShotAddVoiceMenu;[I)V
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLSoundShotAddVoiceMenu;
-    .param p1    # [I
 
     invoke-direct {p0, p1}, Lcom/sec/android/app/camera/glwidget/TwGLSoundShotAddVoiceMenu;->setRecoringAmplitude([I)V
 
@@ -1616,7 +1607,6 @@
 
 .method static synthetic access$400(Lcom/sec/android/app/camera/glwidget/TwGLSoundShotAddVoiceMenu;)V
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLSoundShotAddVoiceMenu;
 
     invoke-direct {p0}, Lcom/sec/android/app/camera/glwidget/TwGLSoundShotAddVoiceMenu;->updateRecordingAmplevel()V
 
@@ -1744,7 +1734,6 @@
 
 .method public static isSoundScene(Ljava/lang/String;)Z
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -1808,7 +1797,6 @@
 
 .method private setProgressBar(I)V
     .locals 3
-    .param p1    # I
 
     if-lez p1, :cond_0
 
@@ -1995,7 +1983,6 @@
 
 .method private setRecoringAmplitude([I)V
     .locals 6
-    .param p1    # [I
 
     const/16 v4, 0xa
 
@@ -2319,7 +2306,6 @@
 # virtual methods
 .method public addAudio(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "TwGLSoundShotAddVoiceMenu"
 
@@ -2366,8 +2352,6 @@
 
 .method public addRawAudioEffect(Ljava/lang/String;I)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const-string v1, "TwGLSoundShotAddVoiceMenu"
 
@@ -2547,7 +2531,6 @@
 
 .method public onActivityTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 3
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v2, 0x1
 
@@ -2569,7 +2552,6 @@
 
 .method public onClick(Lcom/sec/android/glview/TwGLView;)Z
     .locals 3
-    .param p1    # Lcom/sec/android/glview/TwGLView;
 
     const/4 v0, 0x1
 
@@ -2637,8 +2619,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v2, 0x1
 
@@ -2670,8 +2650,6 @@
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x1
 
@@ -3156,10 +3134,6 @@
 
 .method public showReviewImage(Lcom/sec/android/glview/TwGLViewGroup;Landroid/graphics/Bitmap;IZ)V
     .locals 11
-    .param p1    # Lcom/sec/android/glview/TwGLViewGroup;
-    .param p2    # Landroid/graphics/Bitmap;
-    .param p3    # I
-    .param p4    # Z
 
     const/4 v3, 0x0
 
@@ -3436,7 +3410,6 @@
 
 .method public stopSoundRecrodingByExternalEvent(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "TwGLSoundShotAddVoiceMenu"
 

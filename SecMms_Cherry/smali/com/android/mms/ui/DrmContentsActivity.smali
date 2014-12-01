@@ -42,7 +42,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/ui/DrmContentsActivity;)Lcom/android/mms/ui/DrmContentsActivity$DrmItemAdapter;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/DrmContentsActivity;
 
     iget-object v0, p0, Lcom/android/mms/ui/DrmContentsActivity;->mDrmItemAdapter:Lcom/android/mms/ui/DrmContentsActivity$DrmItemAdapter;
 
@@ -51,8 +50,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/ui/DrmContentsActivity;Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/DrmContentsActivity;
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -68,7 +65,6 @@
 
 .method private acquireLicense(Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -148,8 +144,6 @@
 
 .method private initArrayList([Ljava/lang/String;[Ljava/lang/String;)V
     .locals 5
-    .param p1    # [Ljava/lang/String;
-    .param p2    # [Ljava/lang/String;
 
     array-length v0, p1
 
@@ -186,7 +180,6 @@
 # virtual methods
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 7
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 

@@ -184,7 +184,6 @@
 
 .method protected initializeFromParcel(Landroid/os/Parcel;)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
@@ -245,7 +244,6 @@
 
 .method public setDataSampleDuration(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/net/LinkQualityInfo;->mDataSampleDuration:I
 
@@ -254,7 +252,6 @@
 
 .method public setLastDataSampleTime(J)V
     .locals 0
-    .param p1    # J
 
     iput-wide p1, p0, Landroid/net/LinkQualityInfo;->mLastDataSampleTime:J
 
@@ -263,7 +260,6 @@
 
 .method public setNetworkType(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/net/LinkQualityInfo;->mNetworkType:I
 
@@ -272,7 +268,6 @@
 
 .method public setNormalizedSignalStrength(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/net/LinkQualityInfo;->mNormalizedSignalStrength:I
 
@@ -281,7 +276,6 @@
 
 .method public setPacketCount(J)V
     .locals 0
-    .param p1    # J
 
     iput-wide p1, p0, Landroid/net/LinkQualityInfo;->mPacketCount:J
 
@@ -290,7 +284,6 @@
 
 .method public setPacketErrorCount(J)V
     .locals 0
-    .param p1    # J
 
     iput-wide p1, p0, Landroid/net/LinkQualityInfo;->mPacketErrorCount:J
 
@@ -299,7 +292,6 @@
 
 .method public setTheoreticalLatency(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/net/LinkQualityInfo;->mTheoreticalLatency:I
 
@@ -308,7 +300,6 @@
 
 .method public setTheoreticalRxBandwidth(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/net/LinkQualityInfo;->mTheoreticalRxBandwidth:I
 
@@ -317,7 +308,6 @@
 
 .method public setTheoreticalTxBandwidth(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/net/LinkQualityInfo;->mTheoreticalTxBandwidth:I
 
@@ -326,8 +316,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     const/4 v0, 0x1
 
@@ -338,9 +326,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;II)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
-    .param p3    # I
 
     invoke-virtual {p1, p3}, Landroid/os/Parcel;->writeInt(I)V
 

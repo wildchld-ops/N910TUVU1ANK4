@@ -40,8 +40,6 @@
 # direct methods
 .method constructor <init>(Landroid/app/IAlarmManager;Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/app/IAlarmManager;
-    .param p2    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -90,12 +88,6 @@
 
 .method private setImpl(IJJJLandroid/app/PendingIntent;Landroid/os/WorkSource;)V
     .locals 10
-    .param p1    # I
-    .param p2    # J
-    .param p4    # J
-    .param p6    # J
-    .param p8    # Landroid/app/PendingIntent;
-    .param p9    # Landroid/os/WorkSource;
 
     const-wide/16 v0, 0x0
 
@@ -138,7 +130,6 @@
 # virtual methods
 .method public cancel(Landroid/app/PendingIntent;)V
     .locals 1
-    .param p1    # Landroid/app/PendingIntent;
 
     :try_start_0
     iget-object v0, p0, Landroid/app/AlarmManager;->mService:Landroid/app/IAlarmManager;
@@ -158,12 +149,6 @@
 
 .method public set(IJJJLandroid/app/PendingIntent;Landroid/os/WorkSource;)V
     .locals 0
-    .param p1    # I
-    .param p2    # J
-    .param p4    # J
-    .param p6    # J
-    .param p8    # Landroid/app/PendingIntent;
-    .param p9    # Landroid/os/WorkSource;
 
     invoke-direct/range {p0 .. p9}, Landroid/app/AlarmManager;->setImpl(IJJJLandroid/app/PendingIntent;Landroid/os/WorkSource;)V
 
@@ -172,9 +157,6 @@
 
 .method public set(IJLandroid/app/PendingIntent;)V
     .locals 10
-    .param p1    # I
-    .param p2    # J
-    .param p4    # Landroid/app/PendingIntent;
 
     invoke-direct {p0}, Landroid/app/AlarmManager;->legacyExactLength()J
 
@@ -199,7 +181,6 @@
 
 .method public setAutoPowerUp(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     iget-object v0, p0, Landroid/app/AlarmManager;->mService:Landroid/app/IAlarmManager;
@@ -219,9 +200,6 @@
 
 .method public setExact(IJLandroid/app/PendingIntent;)V
     .locals 10
-    .param p1    # I
-    .param p2    # J
-    .param p4    # Landroid/app/PendingIntent;
 
     const-wide/16 v4, 0x0
 
@@ -244,10 +222,6 @@
 
 .method public setInexactRepeating(IJJLandroid/app/PendingIntent;)V
     .locals 10
-    .param p1    # I
-    .param p2    # J
-    .param p4    # J
-    .param p6    # Landroid/app/PendingIntent;
 
     const-wide/16 v4, -0x1
 
@@ -270,10 +244,6 @@
 
 .method public setRepeating(IJJLandroid/app/PendingIntent;)V
     .locals 10
-    .param p1    # I
-    .param p2    # J
-    .param p4    # J
-    .param p6    # Landroid/app/PendingIntent;
 
     invoke-direct {p0}, Landroid/app/AlarmManager;->legacyExactLength()J
 
@@ -298,7 +268,6 @@
 
 .method public setTime(J)V
     .locals 1
-    .param p1    # J
 
     :try_start_0
     iget-object v0, p0, Landroid/app/AlarmManager;->mService:Landroid/app/IAlarmManager;
@@ -318,7 +287,6 @@
 
 .method public setTimeZone(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     iget-object v0, p0, Landroid/app/AlarmManager;->mService:Landroid/app/IAlarmManager;
@@ -338,10 +306,6 @@
 
 .method public setWindow(IJJLandroid/app/PendingIntent;)V
     .locals 10
-    .param p1    # I
-    .param p2    # J
-    .param p4    # J
-    .param p6    # Landroid/app/PendingIntent;
 
     const-wide/16 v6, 0x0
 
@@ -364,8 +328,6 @@
 
 .method public shutdownTimeAfterFakeOff(ZI)I
     .locals 3
-    .param p1    # Z
-    .param p2    # I
 
     :try_start_0
     invoke-static {}, Landroid/os/Debug;->isProductShip()I

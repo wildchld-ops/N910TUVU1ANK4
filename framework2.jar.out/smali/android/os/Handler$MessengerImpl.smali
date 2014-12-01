@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Landroid/os/Handler;Landroid/os/Handler$1;)V
     .locals 0
-    .param p1    # Landroid/os/Handler;
-    .param p2    # Landroid/os/Handler$1;
 
     invoke-direct {p0, p1}, Landroid/os/Handler$MessengerImpl;-><init>(Landroid/os/Handler;)V
 
@@ -43,7 +41,6 @@
 # virtual methods
 .method public send(Landroid/os/Message;)V
     .locals 1
-    .param p1    # Landroid/os/Message;
 
     iget-object v0, p0, Landroid/os/Handler$MessengerImpl;->this$0:Landroid/os/Handler;
 

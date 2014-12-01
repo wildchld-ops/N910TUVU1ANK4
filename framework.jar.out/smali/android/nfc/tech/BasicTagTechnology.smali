@@ -21,8 +21,6 @@
 # direct methods
 .method constructor <init>(Landroid/nfc/Tag;I)V
     .locals 0
-    .param p1    # Landroid/nfc/Tag;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -411,8 +409,6 @@
 
 .method transceive([BZ)[B
     .locals 4
-    .param p1    # [B
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

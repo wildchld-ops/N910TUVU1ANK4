@@ -18,7 +18,6 @@
 
 .method public static getId(Landroid/content/Context;)Ljava/lang/String;
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Landroid/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 

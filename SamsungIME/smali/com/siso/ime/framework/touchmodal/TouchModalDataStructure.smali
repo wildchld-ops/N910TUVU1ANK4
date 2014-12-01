@@ -100,14 +100,6 @@
 # virtual methods
 .method public dump(ZIIIIII[[I)V
     .locals 15
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # [[I
 
     sget-object v12, Lcom/siso/ime/framework/touchmodal/TouchModalDataStructure;->TAG:Ljava/lang/String;
 
@@ -545,8 +537,6 @@
 
 .method public getBaseIndex(II)I
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/siso/ime/framework/touchmodal/TouchModalDataStructure;->grid:[[I
 
@@ -585,8 +575,6 @@
 
 .method public getKeyIndex(II)I
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, -0x1
 
@@ -640,23 +628,18 @@
 
 .method getValue(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     return-void
 .end method
 
 .method getValue(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method public increaseBL(III)V
     .locals 14
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v6, 0x1
 
@@ -968,9 +951,6 @@
 
 .method public increaseBR(III)V
     .locals 14
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v6, 0x1
 
@@ -1284,9 +1264,6 @@
 
 .method public increaseTL(III)V
     .locals 14
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v6, 0x1
 
@@ -1596,9 +1573,6 @@
 
 .method public increaseTR(III)V
     .locals 14
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v6, 0x1
 
@@ -1910,15 +1884,6 @@
 
 .method public initialize(Lcom/diotek/ime/framework/view/DefaultKeyboard;IIIIIIZI)Z
     .locals 20
-    .param p1    # Lcom/diotek/ime/framework/view/DefaultKeyboard;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # Z
-    .param p9    # I
 
     const/4 v5, 0x0
 
@@ -2861,8 +2826,6 @@
 
 .method public isFixed(II)Z
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/siso/ime/framework/touchmodal/TouchModalDataStructure;->grid:[[I
 
@@ -2891,14 +2854,6 @@
 
 .method public readGrid(IIIZIILcom/diotek/ime/framework/view/DefaultKeyboard;I)Z
     .locals 17
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Z
-    .param p5    # I
-    .param p6    # I
-    .param p7    # Lcom/diotek/ime/framework/view/DefaultKeyboard;
-    .param p8    # I
 
     new-instance v14, Ljava/lang/StringBuilder;
 
@@ -3379,9 +3334,6 @@
 
 .method public release(III)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     invoke-virtual {p0, p1, p2}, Lcom/siso/ime/framework/touchmodal/TouchModalDataStructure;->getKeyIndex(II)I
 
@@ -3658,8 +3610,6 @@
 
 .method public restore(II)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0, p1, p2}, Lcom/siso/ime/framework/touchmodal/TouchModalDataStructure;->getKeyIndex(II)I
 
@@ -3749,9 +3699,6 @@
 
 .method public setBaseIndex(III)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v0, -0x1
 
@@ -3832,9 +3779,6 @@
 
 .method public setFixed(IIZ)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     iget-object v0, p0, Lcom/siso/ime/framework/touchmodal/TouchModalDataStructure;->grid:[[I
 
@@ -3881,9 +3825,6 @@
 
 .method public setKeyIndex(III)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v0, -0x1
 
@@ -3960,8 +3901,6 @@
 
 .method public setParameter(ZZ)V
     .locals 0
-    .param p1    # Z
-    .param p2    # Z
 
     iput-boolean p1, p0, Lcom/siso/ime/framework/touchmodal/TouchModalDataStructure;->IS_HD:Z
 

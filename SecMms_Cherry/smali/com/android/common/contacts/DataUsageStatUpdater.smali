@@ -36,7 +36,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -51,7 +50,6 @@
 
 .method private update(Ljava/util/Collection;Ljava/util/Collection;Ljava/lang/String;)Z
     .locals 16
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

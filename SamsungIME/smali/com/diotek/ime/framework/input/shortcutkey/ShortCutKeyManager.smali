@@ -135,7 +135,6 @@
 # virtual methods
 .method public getShortCutKey(I)I
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -222,7 +221,6 @@
 
 .method public isNonLatinLanguageWithBlankKey(I)Z
     .locals 1
-    .param p1    # I
 
     const/high16 v0, 0x74680000
 
@@ -306,7 +304,6 @@
 
 .method public isShortCutActiveKey(I)Z
     .locals 5
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -358,7 +355,6 @@
 
 .method public setInputLanguage(Lcom/diotek/ime/framework/common/Language;)V
     .locals 7
-    .param p1    # Lcom/diotek/ime/framework/common/Language;
 
     const/4 v6, 0x1
 

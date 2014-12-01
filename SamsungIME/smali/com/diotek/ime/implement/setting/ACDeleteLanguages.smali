@@ -143,7 +143,6 @@
 
 .method static synthetic access$000(Lcom/diotek/ime/implement/setting/ACDeleteLanguages;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/setting/ACDeleteLanguages;
 
     iget-object v0, p0, Lcom/diotek/ime/implement/setting/ACDeleteLanguages;->mLPlist:Ljava/util/ArrayList;
 
@@ -152,7 +151,6 @@
 
 .method static synthetic access$100(Lcom/diotek/ime/implement/setting/ACDeleteLanguages;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/setting/ACDeleteLanguages;
 
     iget-object v0, p0, Lcom/diotek/ime/implement/setting/ACDeleteLanguages;->mDeletingLPList:Ljava/util/ArrayList;
 
@@ -161,7 +159,6 @@
 
 .method static synthetic access$1000(Lcom/diotek/ime/implement/setting/ACDeleteLanguages;)Landroid/content/Intent;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/setting/ACDeleteLanguages;
 
     iget-object v0, p0, Lcom/diotek/ime/implement/setting/ACDeleteLanguages;->mIntent:Landroid/content/Intent;
 
@@ -170,8 +167,6 @@
 
 .method static synthetic access$1002(Lcom/diotek/ime/implement/setting/ACDeleteLanguages;Landroid/content/Intent;)Landroid/content/Intent;
     .locals 0
-    .param p0    # Lcom/diotek/ime/implement/setting/ACDeleteLanguages;
-    .param p1    # Landroid/content/Intent;
 
     iput-object p1, p0, Lcom/diotek/ime/implement/setting/ACDeleteLanguages;->mIntent:Landroid/content/Intent;
 
@@ -180,8 +175,6 @@
 
 .method static synthetic access$200(Lcom/diotek/ime/implement/setting/ACDeleteLanguages;Z)V
     .locals 0
-    .param p0    # Lcom/diotek/ime/implement/setting/ACDeleteLanguages;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/diotek/ime/implement/setting/ACDeleteLanguages;->setDoneMenuEnabled(Z)V
 
@@ -190,7 +183,6 @@
 
 .method static synthetic access$300(Lcom/diotek/ime/implement/setting/ACDeleteLanguages;)Z
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/setting/ACDeleteLanguages;
 
     iget-boolean v0, p0, Lcom/diotek/ime/implement/setting/ACDeleteLanguages;->mAllSelected:Z
 
@@ -199,8 +191,6 @@
 
 .method static synthetic access$302(Lcom/diotek/ime/implement/setting/ACDeleteLanguages;Z)Z
     .locals 0
-    .param p0    # Lcom/diotek/ime/implement/setting/ACDeleteLanguages;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/implement/setting/ACDeleteLanguages;->mAllSelected:Z
 
@@ -209,7 +199,6 @@
 
 .method static synthetic access$400(Lcom/diotek/ime/implement/setting/ACDeleteLanguages;)Lcom/diotek/ime/implement/setting/adapter/CheckboxArrayAdapter;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/setting/ACDeleteLanguages;
 
     iget-object v0, p0, Lcom/diotek/ime/implement/setting/ACDeleteLanguages;->mSelectallAdpter:Lcom/diotek/ime/implement/setting/adapter/CheckboxArrayAdapter;
 
@@ -218,7 +207,6 @@
 
 .method static synthetic access$500(Lcom/diotek/ime/implement/setting/ACDeleteLanguages;)Landroid/widget/ListView;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/setting/ACDeleteLanguages;
 
     iget-object v0, p0, Lcom/diotek/ime/implement/setting/ACDeleteLanguages;->mSelectallview:Landroid/widget/ListView;
 
@@ -227,7 +215,6 @@
 
 .method static synthetic access$600(Lcom/diotek/ime/implement/setting/ACDeleteLanguages;)Landroid/widget/ListView;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/setting/ACDeleteLanguages;
 
     iget-object v0, p0, Lcom/diotek/ime/implement/setting/ACDeleteLanguages;->mDisplayView:Landroid/widget/ListView;
 
@@ -236,7 +223,6 @@
 
 .method static synthetic access$702(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/diotek/ime/implement/setting/ACDeleteLanguages;->mDeletePopup:Z
 
@@ -253,7 +239,6 @@
 
 .method static synthetic access$900(Lcom/diotek/ime/implement/setting/ACDeleteLanguages;)Landroid/os/Bundle;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/setting/ACDeleteLanguages;
 
     iget-object v0, p0, Lcom/diotek/ime/implement/setting/ACDeleteLanguages;->mExtraBundle:Landroid/os/Bundle;
 
@@ -262,8 +247,6 @@
 
 .method static synthetic access$902(Lcom/diotek/ime/implement/setting/ACDeleteLanguages;Landroid/os/Bundle;)Landroid/os/Bundle;
     .locals 0
-    .param p0    # Lcom/diotek/ime/implement/setting/ACDeleteLanguages;
-    .param p1    # Landroid/os/Bundle;
 
     iput-object p1, p0, Lcom/diotek/ime/implement/setting/ACDeleteLanguages;->mExtraBundle:Landroid/os/Bundle;
 
@@ -329,7 +312,6 @@
 
 .method private isSelectedLanguage(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -483,7 +465,6 @@
 
 .method private setDoneMenuEnabled(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/diotek/ime/implement/setting/ACDeleteLanguages;->mMenu:Landroid/view/Menu;
 
@@ -576,7 +557,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 3
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -617,7 +597,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 9
-    .param p1    # Landroid/os/Bundle;
 
     const v8, 0x7f0300a4
 
@@ -832,7 +811,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 3
-    .param p1    # Landroid/view/Menu;
 
     const/4 v2, 0x1
 
@@ -871,7 +849,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 2
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v0, 0x1
 

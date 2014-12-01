@@ -24,10 +24,6 @@
 
 .method public constructor <init>(Landroid/filterfw/geometry/Point;Landroid/filterfw/geometry/Point;Landroid/filterfw/geometry/Point;Landroid/filterfw/geometry/Point;)V
     .locals 0
-    .param p1    # Landroid/filterfw/geometry/Point;
-    .param p2    # Landroid/filterfw/geometry/Point;
-    .param p3    # Landroid/filterfw/geometry/Point;
-    .param p4    # Landroid/filterfw/geometry/Point;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -416,7 +412,6 @@
 
 .method public scaled(F)Landroid/filterfw/geometry/Quad;
     .locals 5
-    .param p1    # F
 
     new-instance v0, Landroid/filterfw/geometry/Quad;
 
@@ -451,8 +446,6 @@
 
 .method public scaled(FF)Landroid/filterfw/geometry/Quad;
     .locals 5
-    .param p1    # F
-    .param p2    # F
 
     new-instance v0, Landroid/filterfw/geometry/Quad;
 
@@ -555,8 +548,6 @@
 
 .method public translated(FF)Landroid/filterfw/geometry/Quad;
     .locals 5
-    .param p1    # F
-    .param p2    # F
 
     new-instance v0, Landroid/filterfw/geometry/Quad;
 
@@ -591,7 +582,6 @@
 
 .method public translated(Landroid/filterfw/geometry/Point;)Landroid/filterfw/geometry/Quad;
     .locals 5
-    .param p1    # Landroid/filterfw/geometry/Point;
 
     new-instance v0, Landroid/filterfw/geometry/Quad;
 

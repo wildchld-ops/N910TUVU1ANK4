@@ -6,7 +6,6 @@
 # direct methods
 .method protected constructor <init>(Ljava/io/Reader;)V
     .locals 0
-    .param p1    # Ljava/io/Reader;
 
     invoke-direct {p0, p1}, Ljava/io/BufferedReader;-><init>(Ljava/io/Reader;)V
 
@@ -15,8 +14,6 @@
 
 .method protected constructor <init>(Ljava/io/Reader;I)V
     .locals 0
-    .param p1    # Ljava/io/Reader;
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Ljava/io/BufferedReader;-><init>(Ljava/io/Reader;I)V
 

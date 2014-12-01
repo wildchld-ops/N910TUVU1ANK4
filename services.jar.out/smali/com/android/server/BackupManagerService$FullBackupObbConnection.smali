@@ -96,8 +96,6 @@
 # virtual methods
 .method public backupObbs(Landroid/content/pm/PackageInfo;Ljava/io/OutputStream;)Z
     .locals 8
-    .param p1    # Landroid/content/pm/PackageInfo;
-    .param p2    # Ljava/io/OutputStream;
 
     const/4 v2, 0x0
 
@@ -383,8 +381,6 @@
 
 .method public onServiceConnected(Landroid/content/ComponentName;Landroid/os/IBinder;)V
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Landroid/os/IBinder;
 
     monitor-enter p0
 
@@ -447,7 +443,6 @@
 
 .method public onServiceDisconnected(Landroid/content/ComponentName;)V
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
 
     monitor-enter p0
 
@@ -496,15 +491,6 @@
 
 .method public restoreObbFile(Ljava/lang/String;Landroid/os/ParcelFileDescriptor;JILjava/lang/String;JJILandroid/app/backup/IBackupManager;)V
     .locals 14
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/ParcelFileDescriptor;
-    .param p3    # J
-    .param p5    # I
-    .param p6    # Ljava/lang/String;
-    .param p7    # J
-    .param p9    # J
-    .param p11    # I
-    .param p12    # Landroid/app/backup/IBackupManager;
 
     invoke-direct {p0}, Lcom/android/server/BackupManagerService$FullBackupObbConnection;->waitForConnection()V
 

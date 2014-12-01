@@ -38,8 +38,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/settings/favorite/FavoriteMenuList;Landroid/content/Context;Ljava/util/ArrayList;Landroid/app/admin/DevicePolicyManager;)V
     .locals 1
-    .param p2    # Landroid/content/Context;
-    .param p4    # Landroid/app/admin/DevicePolicyManager;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -152,7 +150,6 @@
 
 .method public getItemId(I)J
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/settings/favorite/FavoriteMenuList$FavoriteAdapter;->sArrayList:Ljava/util/ArrayList;
 
@@ -169,7 +166,6 @@
 
 .method public getKey(I)Ljava/lang/String;
     .locals 4
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/settings/favorite/FavoriteMenuList$FavoriteAdapter;->getItemId(I)J
 
@@ -197,9 +193,6 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     invoke-super {p0, p1, p2, p3}, Lcom/android/settings/GridSettings$HeaderAdapter;->getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
 
@@ -231,7 +224,6 @@
 
 .method public isChecked(I)Z
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/settings/favorite/FavoriteMenuList$FavoriteAdapter;->isCheckedConfrim:[Z
 
@@ -242,7 +234,6 @@
 
 .method public setChecked(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/settings/favorite/FavoriteMenuList$FavoriteAdapter;->isCheckedConfrim:[Z
 

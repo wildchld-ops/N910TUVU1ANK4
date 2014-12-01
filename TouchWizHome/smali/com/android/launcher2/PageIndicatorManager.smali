@@ -97,10 +97,6 @@
 
 .method public constructor <init>(Lcom/android/launcher2/PagedView;III)V
     .locals 7
-    .param p1    # Lcom/android/launcher2/PagedView;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/4 v6, 0x0
 
@@ -366,7 +362,6 @@
 
 .method static synthetic access$100(Lcom/android/launcher2/PageIndicatorManager;)Z
     .locals 1
-    .param p0    # Lcom/android/launcher2/PageIndicatorManager;
 
     iget-boolean v0, p0, Lcom/android/launcher2/PageIndicatorManager;->mIsLongPressPending:Z
 
@@ -375,8 +370,6 @@
 
 .method static synthetic access$102(Lcom/android/launcher2/PageIndicatorManager;Z)Z
     .locals 0
-    .param p0    # Lcom/android/launcher2/PageIndicatorManager;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/launcher2/PageIndicatorManager;->mIsLongPressPending:Z
 
@@ -385,7 +378,6 @@
 
 .method static synthetic access$200(Lcom/android/launcher2/PageIndicatorManager;)F
     .locals 1
-    .param p0    # Lcom/android/launcher2/PageIndicatorManager;
 
     iget v0, p0, Lcom/android/launcher2/PageIndicatorManager;->mLastMotionX:F
 
@@ -394,7 +386,6 @@
 
 .method static synthetic access$300(Lcom/android/launcher2/PageIndicatorManager;)F
     .locals 1
-    .param p0    # Lcom/android/launcher2/PageIndicatorManager;
 
     iget v0, p0, Lcom/android/launcher2/PageIndicatorManager;->mLastMotionY:F
 
@@ -459,7 +450,6 @@
 
 .method private snapToScreen(I)V
     .locals 5
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -622,8 +612,6 @@
 
 .method protected checkPageIndicatorLongPress(FF)Z
     .locals 3
-    .param p1    # F
-    .param p2    # F
 
     const/4 v0, 0x1
 
@@ -681,8 +669,6 @@
 
 .method protected checkPageIndicatorTouch(FF)Z
     .locals 6
-    .param p1    # F
-    .param p2    # F
 
     const/4 v1, 0x0
 
@@ -778,8 +764,6 @@
 
 .method drawPageIndicator(Landroid/graphics/Canvas;J)V
     .locals 8
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # J
 
     const/4 v4, 0x1
 
@@ -947,8 +931,6 @@
 
 .method protected enterFastScoll(FF)V
     .locals 2
-    .param p1    # F
-    .param p2    # F
 
     invoke-virtual {p0}, Lcom/android/launcher2/PageIndicatorManager;->isFastScrolling()Z
 
@@ -1007,8 +989,6 @@
 
 .method public getHitRect(Landroid/graphics/Rect;I)V
     .locals 6
-    .param p1    # Landroid/graphics/Rect;
-    .param p2    # I
 
     iget-object v1, p0, Lcom/android/launcher2/PageIndicatorManager;->mPageIndicator:Lcom/android/launcher2/PageIndicator;
 
@@ -1073,7 +1053,6 @@
 
 .method protected getPageIndicator(Landroid/content/res/Resources;)Lcom/android/launcher2/PageIndicator;
     .locals 2
-    .param p1    # Landroid/content/res/Resources;
 
     new-instance v0, Lcom/android/launcher2/PageIndicator;
 
@@ -1086,8 +1065,6 @@
 
 .method protected getPageIndicatorArea(II)I
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/launcher2/PageIndicatorManager;->mPageIndicator:Lcom/android/launcher2/PageIndicator;
 
@@ -1118,7 +1095,6 @@
 
 .method public handleEvent(Landroid/view/MotionEvent;)Z
     .locals 6
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v4, 0x0
 
@@ -1203,9 +1179,6 @@
 
 .method handleMove(FFZ)Z
     .locals 7
-    .param p1    # F
-    .param p2    # F
-    .param p3    # Z
 
     const/4 v3, 0x0
 
@@ -1336,7 +1309,6 @@
 
 .method public hidePageIndicator(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/launcher2/PageIndicatorManager;->mPageIndicator:Lcom/android/launcher2/PageIndicator;
 
@@ -1378,8 +1350,6 @@
 
 .method protected isHoveringOnPageIndicator(FF)Z
     .locals 4
-    .param p1    # F
-    .param p2    # F
 
     iget-object v1, p0, Lcom/android/launcher2/PageIndicatorManager;->mPagedView:Lcom/android/launcher2/PagedView;
 
@@ -1422,8 +1392,6 @@
 
 .method isInPageIndicator(FF)Z
     .locals 3
-    .param p1    # F
-    .param p2    # F
 
     iget-object v0, p0, Lcom/android/launcher2/PageIndicatorManager;->mPagedView:Lcom/android/launcher2/PagedView;
 
@@ -1730,7 +1698,6 @@
 
 .method public onDragEnter(I)Z
     .locals 3
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -1776,7 +1743,6 @@
 
 .method public onDragExit(I)Z
     .locals 3
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -1822,7 +1788,6 @@
 
 .method public onDrop(I)Z
     .locals 4
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -1888,7 +1853,6 @@
 
 .method public setAnimationPrevented(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/launcher2/PageIndicatorManager;->mPageIndicator:Lcom/android/launcher2/PageIndicator;
 
@@ -1899,7 +1863,6 @@
 
 .method public setDisplayItem(Lcom/android/launcher2/PageIndicatorManager$DISPLAY_ITEM;)V
     .locals 9
-    .param p1    # Lcom/android/launcher2/PageIndicatorManager$DISPLAY_ITEM;
 
     const/4 v6, 0x1
 
@@ -2138,7 +2101,6 @@
 
 .method public setGap(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/launcher2/PageIndicatorManager;->mPageIndicatorGap:I
 
@@ -2147,7 +2109,6 @@
 
 .method public setLeftForQuickView(Z)V
     .locals 1
-    .param p1    # Z
 
     const/4 v0, 0x1
 
@@ -2172,7 +2133,6 @@
 
 .method public setTop(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/launcher2/PageIndicatorManager;->mPageIndicatorTop:I
 
@@ -2191,7 +2151,6 @@
 
 .method public showPageIndicator(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/launcher2/PageIndicatorManager;->mPageIndicator:Lcom/android/launcher2/PageIndicator;
 
@@ -2209,8 +2168,6 @@
 
 .method snapPageTouchArea(FF)I
     .locals 5
-    .param p1    # F
-    .param p2    # F
 
     const/4 v1, -0x1
 

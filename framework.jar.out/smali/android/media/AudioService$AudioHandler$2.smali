@@ -36,9 +36,6 @@
 # virtual methods
 .method public onError(Landroid/media/MediaPlayer;II)Z
     .locals 1
-    .param p1    # Landroid/media/MediaPlayer;
-    .param p2    # I
-    .param p3    # I
 
     iget-object v0, p0, Landroid/media/AudioService$AudioHandler$2;->this$1:Landroid/media/AudioService$AudioHandler;
 

@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/mms/util/TelephonyPermission;Landroid/os/Handler;)V
     .locals 0
-    .param p2    # Landroid/os/Handler;
 
     iput-object p1, p0, Lcom/android/mms/util/TelephonyPermission$DefaultSmsApplicatProviderObserver;->this$0:Lcom/android/mms/util/TelephonyPermission;
 
@@ -34,8 +33,6 @@
 # virtual methods
 .method public onChange(ZLandroid/net/Uri;)V
     .locals 2
-    .param p1    # Z
-    .param p2    # Landroid/net/Uri;
 
     const-string v0, "Mms/TelephonyPermission"
 

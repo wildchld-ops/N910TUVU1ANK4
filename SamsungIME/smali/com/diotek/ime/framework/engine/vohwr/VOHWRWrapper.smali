@@ -239,7 +239,6 @@
 
 .method private CheckAndPipingPanelText(Ljava/lang/String;)V
     .locals 10
-    .param p1    # Ljava/lang/String;
 
     const/16 v9, 0x20
 
@@ -460,7 +459,6 @@
 
 .method private SetCorrectionMode(I)V
     .locals 2
-    .param p1    # I
 
     sget-object v0, Lcom/diotek/ime/framework/engine/vohwr/VOHWRWrapper;->mWidgetApi:Lcom/visionobjects/textwidget/TextWidgetApi;
 
@@ -488,7 +486,6 @@
 
 .method private SetInsertionMode(I)V
     .locals 1
-    .param p1    # I
 
     sget-object v0, Lcom/diotek/ime/framework/engine/vohwr/VOHWRWrapper;->mWidgetApi:Lcom/visionobjects/textwidget/TextWidgetApi;
 
@@ -510,7 +507,6 @@
 
 .method static synthetic access$000(Lcom/diotek/ime/framework/engine/vohwr/VOHWRWrapper;)Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyManager;
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/engine/vohwr/VOHWRWrapper;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/engine/vohwr/VOHWRWrapper;->mCurrentSwiftkeyManager:Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyManager;
 
@@ -519,7 +515,6 @@
 
 .method private checkValideStr(Ljava/lang/String;)Z
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -634,8 +629,6 @@
 
 .method private commitEditText(Ljava/lang/String;Z)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     iget-object v1, p0, Lcom/diotek/ime/framework/engine/AbstractInputEngine;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -678,7 +671,6 @@
 
 .method private composingEditText(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/diotek/ime/framework/engine/AbstractInputEngine;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -974,7 +966,6 @@
 
 .method private createUserDictionary(Ljava/lang/String;)[Ljava/lang/String;
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -1071,7 +1062,6 @@
 
 .method private getColorIdByIndex(I)Ljava/lang/String;
     .locals 4
-    .param p1    # I
 
     const-string v0, "pen_color_green"
 
@@ -1406,7 +1396,6 @@
 
 .method private getfontSizes(I)[F
     .locals 6
-    .param p1    # I
 
     const/4 v5, 0x5
 
@@ -1439,7 +1428,6 @@
 
 .method private initSyncHwrPaneltext(I)V
     .locals 0
-    .param p1    # I
 
     invoke-static {}, Lcom/diotek/ime/framework/input/ComposingTextManager;->clear()V
 
@@ -1484,7 +1472,6 @@
 
 .method private loadKeyPressModelByThread(Lcom/diotek/ime/framework/view/Keyboard;)V
     .locals 4
-    .param p1    # Lcom/diotek/ime/framework/view/Keyboard;
 
     iget-object v2, p0, Lcom/diotek/ime/framework/engine/AbstractInputEngine;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -1606,8 +1593,6 @@
 
 .method private setComposingEditText(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget-object v1, p0, Lcom/diotek/ime/framework/engine/AbstractInputEngine;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -1631,7 +1616,6 @@
 
 .method private setCursorEditText(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Lcom/diotek/ime/framework/engine/AbstractInputEngine;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -1699,7 +1683,6 @@
 
 .method private syncHwrPaneltext(I)V
     .locals 9
-    .param p1    # I
 
     const/16 v6, 0x64
 
@@ -1981,7 +1964,6 @@
 # virtual methods
 .method public CommitAndInitText(I)V
     .locals 5
-    .param p1    # I
 
     const/4 v4, 0x3
 
@@ -2088,8 +2070,6 @@
 
 .method public SetChangeMode(II)V
     .locals 13
-    .param p1    # I
-    .param p2    # I
 
     const/4 v12, 0x0
 
@@ -2497,8 +2477,6 @@
 
 .method public SetInsertMode(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     sget-object v0, Lcom/diotek/ime/framework/engine/vohwr/VOHWRWrapper;->mWidgetApi:Lcom/visionobjects/textwidget/TextWidgetApi;
 
@@ -2517,7 +2495,6 @@
 
 .method public addTextToHWRPanel(Ljava/lang/CharSequence;)Z
     .locals 6
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v2, 0x1
 
@@ -2777,7 +2754,6 @@
 
 .method public appendText(Ljava/lang/CharSequence;)V
     .locals 3
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v2, 0x0
 
@@ -2942,9 +2918,6 @@
 
 .method public checkCurrentSequence(Ljava/lang/StringBuilder;[I[I)V
     .locals 12
-    .param p1    # Ljava/lang/StringBuilder;
-    .param p2    # [I
-    .param p3    # [I
 
     const/16 v9, 0x3f
 
@@ -3262,7 +3235,6 @@
 
 .method public doNextWordPredictionForXt9(Z)I
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/diotek/ime/framework/engine/vohwr/VOHWRWrapper;->mCurrentSwiftkeyManager:Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyManager;
 
@@ -3277,7 +3249,6 @@
 
 .method public doNoteWordDoneForXt9(I)I
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lcom/diotek/ime/framework/engine/AbstractInputEngine;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -3559,7 +3530,6 @@
 
 .method public getSuggestionForSwiftkey(Ljava/util/ArrayList;Z)V
     .locals 6
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3628,8 +3598,6 @@
 
 .method public initHwrPanel(Landroid/widget/FrameLayout;I)V
     .locals 11
-    .param p1    # Landroid/widget/FrameLayout;
-    .param p2    # I
 
     const/4 v10, 0x1
 
@@ -4161,7 +4129,6 @@
 
 .method public isContainInLanguageDB(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -4170,7 +4137,6 @@
 
 .method public isSentenceTermPunct(I)Z
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -4179,7 +4145,6 @@
 
 .method public isSentenceTermPunct(Ljava/lang/CharSequence;)Z
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v0, 0x0
 
@@ -4188,7 +4153,6 @@
 
 .method public learnSequence(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/engine/AbstractInputEngine;->mRepository:Lcom/diotek/ime/framework/repository/Repository;
 
@@ -4270,7 +4234,6 @@
 
 .method public onConfigureEnd(Z)V
     .locals 3
-    .param p1    # Z
 
     const/4 v2, 0x0
 
@@ -4351,7 +4314,6 @@
 
 .method public onCursorHandleDrag(I)V
     .locals 1
-    .param p1    # I
 
     iput p1, p0, Lcom/diotek/ime/framework/engine/vohwr/VOHWRWrapper;->mPanelCursor:I
 
@@ -4391,7 +4353,6 @@
 
 .method public onCursorHandleDragEnd(Z)V
     .locals 3
-    .param p1    # Z
 
     const/4 v2, 0x0
 
@@ -4449,7 +4410,6 @@
 
 .method public onInsertGesture(I)V
     .locals 4
-    .param p1    # I
 
     sget-object v1, Lcom/diotek/ime/framework/engine/vohwr/VOHWRWrapper;->mWidgetApi:Lcom/visionobjects/textwidget/TextWidgetApi;
 
@@ -4538,14 +4498,12 @@
 
 .method public onInsertHandleDragEnd(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method public onJoinGesture(I)V
     .locals 6
-    .param p1    # I
 
     const/16 v5, 0x20
 
@@ -4685,7 +4643,6 @@
 
 .method public onReturnGesture(I)V
     .locals 2
-    .param p1    # I
 
     sget-object v0, Lcom/diotek/ime/framework/engine/vohwr/VOHWRWrapper;->mWidgetApi:Lcom/visionobjects/textwidget/TextWidgetApi;
 
@@ -4730,10 +4687,6 @@
 
 .method public onSelectionChanged(II[Ljava/lang/String;I)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [Ljava/lang/String;
-    .param p4    # I
 
     sget-object v1, Lcom/diotek/ime/framework/engine/vohwr/VOHWRWrapper;->mWidgetApi:Lcom/visionobjects/textwidget/TextWidgetApi;
 
@@ -4930,15 +4883,12 @@
 
 .method public onSelectionGesture(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     return-void
 .end method
 
 .method public onSingleTapGesture(I)V
     .locals 1
-    .param p1    # I
 
     sget-object v0, Lcom/diotek/ime/framework/engine/vohwr/VOHWRWrapper;->mWidgetApi:Lcom/visionobjects/textwidget/TextWidgetApi;
 
@@ -4961,8 +4911,6 @@
 
 .method public onTextChanged(Ljava/lang/String;Z)V
     .locals 15
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     sget-object v12, Lcom/diotek/ime/framework/engine/vohwr/VOHWRWrapper;->mWidgetApi:Lcom/visionobjects/textwidget/TextWidgetApi;
 
@@ -6001,8 +5949,6 @@
 
 .method public onUnderlineGesture(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     sget-object v0, Lcom/diotek/ime/framework/engine/vohwr/VOHWRWrapper;->mWidgetApi:Lcom/visionobjects/textwidget/TextWidgetApi;
 
@@ -6098,7 +6044,6 @@
 
 .method public onUserScrollEnd(Z)V
     .locals 4
-    .param p1    # Z
 
     const/4 v3, 0x0
 
@@ -6253,7 +6198,6 @@
 
 .method public processWhenPickSuggestionManually(I)I
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -6262,7 +6206,6 @@
 
 .method public setKeyboard(Lcom/diotek/ime/framework/view/Keyboard;)V
     .locals 0
-    .param p1    # Lcom/diotek/ime/framework/view/Keyboard;
 
     invoke-direct {p0, p1}, Lcom/diotek/ime/framework/engine/vohwr/VOHWRWrapper;->loadKeyPressModelByThread(Lcom/diotek/ime/framework/view/Keyboard;)V
 
@@ -6496,8 +6439,6 @@
 
 .method public wordSelected(ILjava/lang/CharSequence;)I
     .locals 8
-    .param p1    # I
-    .param p2    # Ljava/lang/CharSequence;
 
     const/4 v6, 0x1
 

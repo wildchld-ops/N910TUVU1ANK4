@@ -155,7 +155,7 @@
 
     if-le v0, v2, :cond_0
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment$CallSettingsDialogFragment;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v1
 

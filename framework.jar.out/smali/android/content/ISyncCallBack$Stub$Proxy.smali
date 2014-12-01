@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -106,7 +105,6 @@
 
 .method public cancelNotification(Landroid/app/KnoxNotification;)V
     .locals 5
-    .param p1    # Landroid/app/KnoxNotification;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -177,7 +175,6 @@
 
 .method public deletePersonaData(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -286,7 +283,6 @@
 
 .method public postNotification(Landroid/app/KnoxNotification;)V
     .locals 5
-    .param p1    # Landroid/app/KnoxNotification;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -357,8 +353,6 @@
 
 .method public singleClipDeleted(Ljava/lang/String;Z)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

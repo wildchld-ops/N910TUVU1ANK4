@@ -241,7 +241,7 @@
 
     const v3, 0x7f0a0033
 
-    invoke-virtual {p0, v3}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v3}, Lcom/android/phone/PreferredNetworks;->findViewById(I)Landroid/view/View;
 
     move-result-object v1
 
@@ -251,7 +251,7 @@
 
     iget-object v3, p0, Lcom/android/phone/PreferredNetworks;->mItemClickListener:Landroid/widget/AdapterView$OnItemClickListener;
 
-    invoke-virtual {v1, v3}, Landroid/widget/AdapterView;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
+    invoke-virtual {v1, v3}, Landroid/widget/ListView;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
 
     iget-object v3, p0, Lcom/android/phone/PreferredNetworks;->mOperatorList:Ljava/util/ArrayList;
 
@@ -333,9 +333,9 @@
 
     const v1, 0x7f040078
 
-    invoke-virtual {p0, v1}, Landroid/app/Activity;->setContentView(I)V
+    invoke-virtual {p0, v1}, Lcom/android/phone/PreferredNetworks;->setContentView(I)V
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getActionBar()Landroid/app/ActionBar;
+    invoke-virtual {p0}, Lcom/android/phone/PreferredNetworks;->getActionBar()Landroid/app/ActionBar;
 
     move-result-object v0
 
@@ -358,7 +358,7 @@
 
     if-le v1, v2, :cond_1
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/phone/PreferredNetworks;->getIntent()Landroid/content/Intent;
 
     move-result-object v1
 
@@ -445,7 +445,7 @@
 
     invoke-direct {v0, p0}, Landroid/app/ProgressDialog;-><init>(Landroid/content/Context;)V
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/PreferredNetworks;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -463,7 +463,7 @@
 
     invoke-direct {v2, p0, v3}, Lcom/android/phone/PreferredNetworks$ProgressThread;-><init>(Lcom/android/phone/PreferredNetworks;Landroid/os/Handler;)V
 
-    invoke-virtual {v2}, Ljava/lang/Thread;->start()V
+    invoke-virtual {v2}, Lcom/android/phone/PreferredNetworks$ProgressThread;->start()V
 
     goto :goto_0
 
@@ -509,7 +509,7 @@
     return v3
 
     :cond_0
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/PreferredNetworks;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -545,7 +545,7 @@
 
     iput-boolean v0, p0, Lcom/android/phone/PreferredNetworks;->isDialogShown:Z
 
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/PreferredNetworks;->finish()V
 
     invoke-super {p0}, Landroid/app/Activity;->onDestroy()V
 
@@ -579,7 +579,7 @@
     return v0
 
     :sswitch_0
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/PreferredNetworks;->finish()V
 
     goto :goto_0
 
@@ -630,7 +630,7 @@
 
     invoke-virtual {v1, v2, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    invoke-virtual {p0, v1}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v1}, Lcom/android/phone/PreferredNetworks;->startActivity(Landroid/content/Intent;)V
 
     goto :goto_0
 
@@ -672,7 +672,7 @@
 
     if-le v0, v3, :cond_2
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/phone/PreferredNetworks;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
 
@@ -692,7 +692,7 @@
 
     const-string v0, "phone"
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Lcom/android/phone/PreferredNetworks;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -719,7 +719,7 @@
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {p0, v3}, Landroid/app/Activity;->showDialog(I)V
+    invoke-virtual {p0, v3}, Lcom/android/phone/PreferredNetworks;->showDialog(I)V
 
     iput-boolean v3, p0, Lcom/android/phone/PreferredNetworks;->isDialogShown:Z
 
@@ -730,7 +730,7 @@
     :cond_1
     const-string v0, "phone2"
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Lcom/android/phone/PreferredNetworks;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -741,7 +741,7 @@
     goto :goto_0
 
     :cond_2
-    invoke-virtual {p0, v3}, Landroid/app/Activity;->showDialog(I)V
+    invoke-virtual {p0, v3}, Lcom/android/phone/PreferredNetworks;->showDialog(I)V
 
     iput-boolean v3, p0, Lcom/android/phone/PreferredNetworks;->isDialogShown:Z
 

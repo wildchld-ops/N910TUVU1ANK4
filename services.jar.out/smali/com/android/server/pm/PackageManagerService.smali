@@ -841,10 +841,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Lcom/android/server/pm/Installer;ZZ)V
     .locals 59
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/server/pm/Installer;
-    .param p3    # Z
-    .param p4    # Z
 
     invoke-direct/range {p0 .. p0}, Landroid/content/pm/IPackageManager$Stub;-><init>()V
 
@@ -3956,8 +3952,6 @@
 
 .method static synthetic access$1000(Lcom/android/server/pm/PackageManagerService;Ljava/util/Set;)V
     .locals 0
-    .param p0    # Lcom/android/server/pm/PackageManagerService;
-    .param p1    # Ljava/util/Set;
 
     invoke-direct {p0, p1}, Lcom/android/server/pm/PackageManagerService;->unloadAllContainers(Ljava/util/Set;)V
 
@@ -3966,7 +3960,6 @@
 
 .method static synthetic access$1100(Lcom/android/server/pm/PackageManagerService;)Ljava/util/HashSet;
     .locals 1
-    .param p0    # Lcom/android/server/pm/PackageManagerService;
 
     iget-object v0, p0, Lcom/android/server/pm/PackageManagerService;->mDirtyUsers:Ljava/util/HashSet;
 
@@ -3975,10 +3968,6 @@
 
 .method static synthetic access$1200(Lcom/android/server/pm/PackageManagerService;ILcom/android/server/pm/PackageVerificationState;Lcom/android/server/pm/PackageVerificationResponse;)Z
     .locals 1
-    .param p0    # Lcom/android/server/pm/PackageManagerService;
-    .param p1    # I
-    .param p2    # Lcom/android/server/pm/PackageVerificationState;
-    .param p3    # Lcom/android/server/pm/PackageVerificationResponse;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/server/pm/PackageManagerService;->packageVerificationCompletion(ILcom/android/server/pm/PackageVerificationState;Lcom/android/server/pm/PackageVerificationResponse;)Z
 
@@ -3989,8 +3978,6 @@
 
 .method static synthetic access$1300(Lcom/android/server/pm/PackageManagerService;Lcom/android/server/pm/PackageVerificationState;)Z
     .locals 1
-    .param p0    # Lcom/android/server/pm/PackageManagerService;
-    .param p1    # Lcom/android/server/pm/PackageVerificationState;
 
     invoke-direct {p0, p1}, Lcom/android/server/pm/PackageManagerService;->sendOrderedBroadcastToPendingVerifier(Lcom/android/server/pm/PackageVerificationState;)Z
 
@@ -4001,9 +3988,6 @@
 
 .method static synthetic access$1400(Lcom/android/server/pm/PackageManagerService;Lcom/android/server/pm/PackageManagerService$InstallArgs;I)V
     .locals 0
-    .param p0    # Lcom/android/server/pm/PackageManagerService;
-    .param p1    # Lcom/android/server/pm/PackageManagerService$InstallArgs;
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/pm/PackageManagerService;->processPendingInstall(Lcom/android/server/pm/PackageManagerService$InstallArgs;I)V
 
@@ -4012,7 +3996,6 @@
 
 .method static synthetic access$1800(Landroid/content/pm/ApplicationInfo;)Z
     .locals 1
-    .param p0    # Landroid/content/pm/ApplicationInfo;
 
     invoke-static {p0}, Lcom/android/server/pm/PackageManagerService;->isSystemApp(Landroid/content/pm/ApplicationInfo;)Z
 
@@ -4023,9 +4006,6 @@
 
 .method static synthetic access$1900(Lcom/android/server/pm/PackageManagerService;Ljava/lang/String;Z)Z
     .locals 1
-    .param p0    # Lcom/android/server/pm/PackageManagerService;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/pm/PackageManagerService;->isHidingSecretPackage(Ljava/lang/String;Z)Z
 
@@ -4036,7 +4016,6 @@
 
 .method static synthetic access$200(Lcom/android/server/pm/PackageManagerService;)Lcom/android/internal/app/IMediaContainerService;
     .locals 1
-    .param p0    # Lcom/android/server/pm/PackageManagerService;
 
     iget-object v0, p0, Lcom/android/server/pm/PackageManagerService;->mContainerService:Lcom/android/internal/app/IMediaContainerService;
 
@@ -4045,10 +4024,6 @@
 
 .method static synthetic access$2000(Lcom/android/server/pm/PackageManagerService;Landroid/content/pm/ComponentInfo;ZI)Z
     .locals 1
-    .param p0    # Lcom/android/server/pm/PackageManagerService;
-    .param p1    # Landroid/content/pm/ComponentInfo;
-    .param p2    # Z
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/server/pm/PackageManagerService;->isShowingSecretPackage(Landroid/content/pm/ComponentInfo;ZI)Z
 
@@ -4059,8 +4034,6 @@
 
 .method static synthetic access$202(Lcom/android/server/pm/PackageManagerService;Lcom/android/internal/app/IMediaContainerService;)Lcom/android/internal/app/IMediaContainerService;
     .locals 0
-    .param p0    # Lcom/android/server/pm/PackageManagerService;
-    .param p1    # Lcom/android/internal/app/IMediaContainerService;
 
     iput-object p1, p0, Lcom/android/server/pm/PackageManagerService;->mContainerService:Lcom/android/internal/app/IMediaContainerService;
 
@@ -4077,7 +4050,6 @@
 
 .method static synthetic access$2200(Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/android/server/pm/PackageManagerService;->ignoreCodePath(Ljava/lang/String;)Z
 
@@ -4088,12 +4060,6 @@
 
 .method static synthetic access$2300(Lcom/android/server/pm/PackageManagerService;Ljava/io/File;IIJLandroid/os/UserHandle;)Landroid/content/pm/PackageParser$Package;
     .locals 1
-    .param p0    # Lcom/android/server/pm/PackageManagerService;
-    .param p1    # Ljava/io/File;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # J
-    .param p6    # Landroid/os/UserHandle;
 
     invoke-direct/range {p0 .. p6}, Lcom/android/server/pm/PackageManagerService;->scanPackageLI(Ljava/io/File;IIJLandroid/os/UserHandle;)Landroid/content/pm/PackageParser$Package;
 
@@ -4104,10 +4070,6 @@
 
 .method static synthetic access$2400(Lcom/android/server/pm/PackageManagerService;Ljava/lang/String;Landroid/content/pm/PackageParser$Package;I)V
     .locals 0
-    .param p0    # Lcom/android/server/pm/PackageManagerService;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/pm/PackageParser$Package;
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/server/pm/PackageManagerService;->updatePermissionsLPw(Ljava/lang/String;Landroid/content/pm/PackageParser$Package;I)V
 
@@ -4116,7 +4078,6 @@
 
 .method static synthetic access$2500(Lcom/android/server/pm/PackageManagerService;)Landroid/content/IHarmonyEAS;
     .locals 1
-    .param p0    # Lcom/android/server/pm/PackageManagerService;
 
     invoke-direct {p0}, Lcom/android/server/pm/PackageManagerService;->getHarmonyEAS()Landroid/content/IHarmonyEAS;
 
@@ -4135,10 +4096,6 @@
 
 .method static synthetic access$2700(Lcom/android/server/pm/PackageManagerService;Lcom/android/server/pm/PackageManagerService$InstallArgs;ZLcom/android/server/pm/PackageManagerService$PackageInstalledInfo;)V
     .locals 0
-    .param p0    # Lcom/android/server/pm/PackageManagerService;
-    .param p1    # Lcom/android/server/pm/PackageManagerService$InstallArgs;
-    .param p2    # Z
-    .param p3    # Lcom/android/server/pm/PackageManagerService$PackageInstalledInfo;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/server/pm/PackageManagerService;->installPackageLI(Lcom/android/server/pm/PackageManagerService$InstallArgs;ZLcom/android/server/pm/PackageManagerService$PackageInstalledInfo;)V
 
@@ -4147,10 +4104,6 @@
 
 .method static synthetic access$2800(Lcom/android/server/pm/PackageManagerService;Ljava/lang/String;ILandroid/content/pm/PackageStats;)Z
     .locals 1
-    .param p0    # Lcom/android/server/pm/PackageManagerService;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Landroid/content/pm/PackageStats;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/server/pm/PackageManagerService;->getPackageSizeInfoLI(Ljava/lang/String;ILandroid/content/pm/PackageStats;)Z
 
@@ -4161,8 +4114,6 @@
 
 .method static synthetic access$2900(Lcom/android/internal/app/IMediaContainerService;[Ljava/io/File;)J
     .locals 2
-    .param p0    # Lcom/android/internal/app/IMediaContainerService;
-    .param p1    # [Ljava/io/File;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4178,7 +4129,6 @@
 
 .method static synthetic access$300(Lcom/android/server/pm/PackageManagerService;)Lcom/android/server/pm/PackageManagerService$DefaultContainerConnection;
     .locals 1
-    .param p0    # Lcom/android/server/pm/PackageManagerService;
 
     iget-object v0, p0, Lcom/android/server/pm/PackageManagerService;->mDefContainerConn:Lcom/android/server/pm/PackageManagerService$DefaultContainerConnection;
 
@@ -4187,8 +4137,6 @@
 
 .method static synthetic access$3000(Lcom/android/server/pm/PackageManagerService;Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Lcom/android/server/pm/PackageManagerService;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/pm/PackageManagerService;->isUpdateOnSystemApp(Ljava/lang/String;)Z
 
@@ -4199,11 +4147,6 @@
 
 .method static synthetic access$3100(Lcom/android/server/pm/PackageManagerService;Ljava/io/File;Ljava/lang/String;ZI)Z
     .locals 1
-    .param p0    # Lcom/android/server/pm/PackageManagerService;
-    .param p1    # Ljava/io/File;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
-    .param p4    # I
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/server/pm/PackageManagerService;->isAppBlockedByDPM(Ljava/io/File;Ljava/lang/String;ZI)Z
 
@@ -4214,8 +4157,6 @@
 
 .method static synthetic access$3200(Lcom/android/server/pm/PackageManagerService;Ljava/io/File;)Ljava/io/File;
     .locals 1
-    .param p0    # Lcom/android/server/pm/PackageManagerService;
-    .param p1    # Ljava/io/File;
 
     invoke-direct {p0, p1}, Lcom/android/server/pm/PackageManagerService;->createTempPackageFile(Ljava/io/File;)Ljava/io/File;
 
@@ -4226,8 +4167,6 @@
 
 .method static synthetic access$3300(Lcom/android/server/pm/PackageManagerService;Lcom/android/server/pm/PackageManagerService$InstallParams;)Lcom/android/server/pm/PackageManagerService$InstallArgs;
     .locals 1
-    .param p0    # Lcom/android/server/pm/PackageManagerService;
-    .param p1    # Lcom/android/server/pm/PackageManagerService$InstallParams;
 
     invoke-direct {p0, p1}, Lcom/android/server/pm/PackageManagerService;->createInstallArgs(Lcom/android/server/pm/PackageManagerService$InstallParams;)Lcom/android/server/pm/PackageManagerService$InstallArgs;
 
@@ -4238,8 +4177,6 @@
 
 .method static synthetic access$3400(Lcom/android/server/pm/PackageManagerService;I)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/server/pm/PackageManagerService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/pm/PackageManagerService;->getRequiredVerifiersLPr(I)Ljava/util/ArrayList;
 
@@ -4250,8 +4187,6 @@
 
 .method static synthetic access$3500(Lcom/android/server/pm/PackageManagerService;I)Z
     .locals 1
-    .param p0    # Lcom/android/server/pm/PackageManagerService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/pm/PackageManagerService;->isVerificationEnabled(I)Z
 
@@ -4262,7 +4197,6 @@
 
 .method static synthetic access$3608(Lcom/android/server/pm/PackageManagerService;)I
     .locals 2
-    .param p0    # Lcom/android/server/pm/PackageManagerService;
 
     iget v0, p0, Lcom/android/server/pm/PackageManagerService;->mPendingVerificationToken:I
 
@@ -4275,9 +4209,6 @@
 
 .method static synthetic access$3700(Lcom/android/server/pm/PackageManagerService;Ljava/lang/String;Ljava/util/List;)Landroid/content/ComponentName;
     .locals 1
-    .param p0    # Lcom/android/server/pm/PackageManagerService;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/util/List;
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/pm/PackageManagerService;->matchComponentForVerifier(Ljava/lang/String;Ljava/util/List;)Landroid/content/ComponentName;
 
@@ -4288,10 +4219,6 @@
 
 .method static synthetic access$3800(Lcom/android/server/pm/PackageManagerService;Landroid/content/pm/PackageInfoLite;Ljava/util/List;Lcom/android/server/pm/PackageVerificationState;)Ljava/util/List;
     .locals 1
-    .param p0    # Lcom/android/server/pm/PackageManagerService;
-    .param p1    # Landroid/content/pm/PackageInfoLite;
-    .param p2    # Ljava/util/List;
-    .param p3    # Lcom/android/server/pm/PackageVerificationState;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/server/pm/PackageManagerService;->matchVerifiers(Landroid/content/pm/PackageInfoLite;Ljava/util/List;Lcom/android/server/pm/PackageVerificationState;)Ljava/util/List;
 
@@ -4302,8 +4229,6 @@
 
 .method static synthetic access$3900(Lcom/android/server/pm/PackageManagerService;Lcom/android/server/pm/PackageVerificationState;)Z
     .locals 1
-    .param p0    # Lcom/android/server/pm/PackageManagerService;
-    .param p1    # Lcom/android/server/pm/PackageVerificationState;
 
     invoke-direct {p0, p1}, Lcom/android/server/pm/PackageManagerService;->sendOrderedBroadcastToRequiredVerifier(Lcom/android/server/pm/PackageVerificationState;)Z
 
@@ -4314,8 +4239,6 @@
 
 .method static synthetic access$400(Lcom/android/server/pm/PackageManagerService;Lcom/android/server/pm/PackageManagerService$HandlerParams;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/server/pm/PackageManagerService;
-    .param p1    # Lcom/android/server/pm/PackageManagerService$HandlerParams;
 
     invoke-direct {p0, p1}, Lcom/android/server/pm/PackageManagerService;->getObserverHashCodeFromHandlerParam(Lcom/android/server/pm/PackageManagerService$HandlerParams;)Ljava/lang/String;
 
@@ -4326,7 +4249,6 @@
 
 .method static synthetic access$4000(Lcom/android/server/pm/PackageManagerService;)J
     .locals 2
-    .param p0    # Lcom/android/server/pm/PackageManagerService;
 
     invoke-direct {p0}, Lcom/android/server/pm/PackageManagerService;->getVerificationTimeout()J
 
@@ -4337,11 +4259,6 @@
 
 .method static synthetic access$4100(Lcom/android/server/pm/PackageManagerService;Landroid/net/Uri;ILjava/lang/String;Ljava/lang/String;)Lcom/android/server/pm/PackageManagerService$InstallArgs;
     .locals 1
-    .param p0    # Lcom/android/server/pm/PackageManagerService;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/server/pm/PackageManagerService;->createInstallArgs(Landroid/net/Uri;ILjava/lang/String;Ljava/lang/String;)Lcom/android/server/pm/PackageManagerService$InstallArgs;
 
@@ -4352,9 +4269,6 @@
 
 .method static synthetic access$4200(Lcom/android/server/pm/PackageManagerService;Lcom/android/server/pm/PackageManagerService$MoveParams;I)V
     .locals 0
-    .param p0    # Lcom/android/server/pm/PackageManagerService;
-    .param p1    # Lcom/android/server/pm/PackageManagerService$MoveParams;
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/pm/PackageManagerService;->processPendingMove(Lcom/android/server/pm/PackageManagerService$MoveParams;I)V
 
@@ -4363,11 +4277,6 @@
 
 .method static synthetic access$4300(Lcom/android/server/pm/PackageManagerService;Landroid/content/pm/PackageParser$Package;ZZZ)I
     .locals 1
-    .param p0    # Lcom/android/server/pm/PackageManagerService;
-    .param p1    # Landroid/content/pm/PackageParser$Package;
-    .param p2    # Z
-    .param p3    # Z
-    .param p4    # Z
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/server/pm/PackageManagerService;->performDexOptLI(Landroid/content/pm/PackageParser$Package;ZZZ)I
 
@@ -4378,9 +4287,6 @@
 
 .method static synthetic access$4400(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-static {p0, p1, p2}, Lcom/android/server/pm/PackageManagerService;->getNextCodePath(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
@@ -4391,7 +4297,6 @@
 
 .method static synthetic access$4500(Lcom/android/server/pm/PackageManagerService;)Ljava/io/File;
     .locals 1
-    .param p0    # Lcom/android/server/pm/PackageManagerService;
 
     iget-object v0, p0, Lcom/android/server/pm/PackageManagerService;->mAppLibInstallDir:Ljava/io/File;
 
@@ -4400,8 +4305,6 @@
 
 .method static synthetic access$4600(Ljava/io/File;Ljava/io/File;)I
     .locals 1
-    .param p0    # Ljava/io/File;
-    .param p1    # Ljava/io/File;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -4425,8 +4328,6 @@
 
 .method static synthetic access$4800(Lcom/android/server/pm/PackageManagerService;Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Lcom/android/server/pm/PackageManagerService;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/pm/PackageManagerService;->isAsecExternal(Ljava/lang/String;)Z
 
@@ -4437,7 +4338,6 @@
 
 .method static synthetic access$4900(Lcom/android/server/pm/PackageManagerService;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/server/pm/PackageManagerService;
 
     invoke-direct {p0}, Lcom/android/server/pm/PackageManagerService;->getEncryptKey()Ljava/lang/String;
 
@@ -4448,12 +4348,6 @@
 
 .method static synthetic access$500(Lcom/android/server/pm/PackageManagerService;Ljava/lang/String;ZZLjava/util/ArrayList;I)V
     .locals 0
-    .param p0    # Lcom/android/server/pm/PackageManagerService;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # Z
-    .param p4    # Ljava/util/ArrayList;
-    .param p5    # I
 
     invoke-direct/range {p0 .. p5}, Lcom/android/server/pm/PackageManagerService;->sendPackageChangedBroadcast(Ljava/lang/String;ZZLjava/util/ArrayList;I)V
 
@@ -4462,10 +4356,6 @@
 
 .method static synthetic access$5000(Lcom/android/server/pm/PackageManagerService;Ljava/lang/String;II)I
     .locals 1
-    .param p0    # Lcom/android/server/pm/PackageManagerService;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/server/pm/PackageManagerService;->deletePackageX(Ljava/lang/String;II)I
 
@@ -4476,9 +4366,6 @@
 
 .method static synthetic access$5200(Lcom/android/server/pm/PackageManagerService;Ljava/lang/String;I)Z
     .locals 1
-    .param p0    # Lcom/android/server/pm/PackageManagerService;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/pm/PackageManagerService;->clearApplicationUserDataLI(Ljava/lang/String;I)Z
 
@@ -4489,10 +4376,6 @@
 
 .method static synthetic access$5300(Lcom/android/server/pm/PackageManagerService;Ljava/lang/String;IZ)V
     .locals 0
-    .param p0    # Lcom/android/server/pm/PackageManagerService;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Z
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/server/pm/PackageManagerService;->clearExternalStorageDataSync(Ljava/lang/String;IZ)V
 
@@ -4501,9 +4384,6 @@
 
 .method static synthetic access$5400(Lcom/android/server/pm/PackageManagerService;Ljava/lang/String;I)Z
     .locals 1
-    .param p0    # Lcom/android/server/pm/PackageManagerService;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/pm/PackageManagerService;->deleteApplicationCacheFilesLI(Ljava/lang/String;I)Z
 
@@ -4514,10 +4394,6 @@
 
 .method static synthetic access$5500(Lcom/android/server/pm/PackageManagerService;ZZZ)V
     .locals 0
-    .param p0    # Lcom/android/server/pm/PackageManagerService;
-    .param p1    # Z
-    .param p2    # Z
-    .param p3    # Z
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/server/pm/PackageManagerService;->updateExternalMediaStatusInner(ZZZ)V
 
@@ -4526,8 +4402,6 @@
 
 .method static synthetic access$5700(Lcom/android/server/pm/PackageManagerService;Landroid/content/pm/PackageParser$Package;)I
     .locals 1
-    .param p0    # Lcom/android/server/pm/PackageManagerService;
-    .param p1    # Landroid/content/pm/PackageParser$Package;
 
     invoke-direct {p0, p1}, Lcom/android/server/pm/PackageManagerService;->moveDexFilesLI(Landroid/content/pm/PackageParser$Package;)I
 
@@ -4538,10 +4412,6 @@
 
 .method static synthetic access$5800(Lcom/android/server/pm/PackageManagerService;Ljava/lang/String;Ljava/io/File;I)V
     .locals 0
-    .param p0    # Lcom/android/server/pm/PackageManagerService;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/io/File;
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/server/pm/PackageManagerService;->saveHash(Ljava/lang/String;Ljava/io/File;I)V
 
@@ -4550,8 +4420,6 @@
 
 .method static synthetic access$5902(Lcom/android/server/pm/PackageManagerService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/pm/PackageManagerService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/pm/PackageManagerService;->mIsSecretMode:Z
 
@@ -4560,7 +4428,6 @@
 
 .method static synthetic access$600(Landroid/content/pm/PackageParser$Package;)Z
     .locals 1
-    .param p0    # Landroid/content/pm/PackageParser$Package;
 
     invoke-static {p0}, Lcom/android/server/pm/PackageManagerService;->isForwardLocked(Landroid/content/pm/PackageParser$Package;)Z
 
@@ -4571,8 +4438,6 @@
 
 .method static synthetic access$6000(Lcom/android/server/pm/PackageManagerService;I)V
     .locals 0
-    .param p0    # Lcom/android/server/pm/PackageManagerService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/pm/PackageManagerService;->processEnabledSettingOfSecretPackageList(I)V
 
@@ -4581,7 +4446,6 @@
 
 .method static synthetic access$700(Landroid/content/pm/PackageParser$Package;)Z
     .locals 1
-    .param p0    # Landroid/content/pm/PackageParser$Package;
 
     invoke-static {p0}, Lcom/android/server/pm/PackageManagerService;->isExternal(Landroid/content/pm/PackageParser$Package;)Z
 
@@ -4592,12 +4456,6 @@
 
 .method static synthetic access$800(Lcom/android/server/pm/PackageManagerService;ZZLjava/util/ArrayList;[ILandroid/content/IIntentReceiver;)V
     .locals 0
-    .param p0    # Lcom/android/server/pm/PackageManagerService;
-    .param p1    # Z
-    .param p2    # Z
-    .param p3    # Ljava/util/ArrayList;
-    .param p4    # [I
-    .param p5    # Landroid/content/IIntentReceiver;
 
     invoke-direct/range {p0 .. p5}, Lcom/android/server/pm/PackageManagerService;->sendResourcesChangedBroadcast(ZZLjava/util/ArrayList;[ILandroid/content/IIntentReceiver;)V
 
@@ -4606,7 +4464,6 @@
 
 .method static synthetic access$900(Lcom/android/server/pm/PackageManagerService;)I
     .locals 1
-    .param p0    # Lcom/android/server/pm/PackageManagerService;
 
     invoke-direct {p0}, Lcom/android/server/pm/PackageManagerService;->getUnknownSourcesSettings()I
 
@@ -4617,11 +4474,6 @@
 
 .method private addPackageHoldingPermissions(Ljava/util/ArrayList;Lcom/android/server/pm/PackageSetting;[Ljava/lang/String;[ZII)V
     .locals 6
-    .param p2    # Lcom/android/server/pm/PackageSetting;
-    .param p3    # [Ljava/lang/String;
-    .param p4    # [Z
-    .param p5    # I
-    .param p6    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -4764,12 +4616,6 @@
 
 .method private addPreferredActivityInternal(Landroid/content/IntentFilter;I[Landroid/content/ComponentName;Landroid/content/ComponentName;ZI)V
     .locals 9
-    .param p1    # Landroid/content/IntentFilter;
-    .param p2    # I
-    .param p3    # [Landroid/content/ComponentName;
-    .param p4    # Landroid/content/ComponentName;
-    .param p5    # Z
-    .param p6    # I
 
     invoke-static {}, Landroid/os/Binder;->getCallingUid()I
 
@@ -4951,9 +4797,6 @@
 
 .method private addSharedLibraryLPw(Lcom/android/server/pm/PackageManagerService$SharedLibraryEntry;ILandroid/content/pm/PackageParser$Package;)I
     .locals 5
-    .param p1    # Lcom/android/server/pm/PackageManagerService$SharedLibraryEntry;
-    .param p2    # I
-    .param p3    # Landroid/content/pm/PackageParser$Package;
 
     iget-object v3, p1, Lcom/android/server/pm/PackageManagerService$SharedLibraryEntry;->path:Ljava/lang/String;
 
@@ -5047,8 +4890,6 @@
 
 .method static appendInts([I[I)[I
     .locals 3
-    .param p0    # [I
-    .param p1    # [I
 
     if-nez p1, :cond_1
 
@@ -5084,7 +4925,6 @@
 
 .method static arrayToString([I)Ljava/lang/String;
     .locals 3
-    .param p0    # [I
 
     new-instance v0, Ljava/lang/StringBuffer;
 
@@ -5134,10 +4974,6 @@
 
 .method private broadcastPackageVerified(ILandroid/net/Uri;ILandroid/os/UserHandle;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/net/Uri;
-    .param p3    # I
-    .param p4    # Landroid/os/UserHandle;
 
     const/4 v4, 0x1
 
@@ -5243,8 +5079,6 @@
 
 .method private static calculateDirectorySize(Lcom/android/internal/app/IMediaContainerService;[Ljava/io/File;)J
     .locals 8
-    .param p0    # Lcom/android/internal/app/IMediaContainerService;
-    .param p1    # [Ljava/io/File;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5284,9 +5118,6 @@
 
 .method private checkDPMAndSaveHash(Ljava/lang/String;Ljava/io/File;I)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/io/File;
-    .param p3    # I
 
     :try_start_0
     invoke-direct {p0}, Lcom/android/server/pm/PackageManagerService;->getHarmonyEAS()Landroid/content/IHarmonyEAS;
@@ -5321,8 +5152,6 @@
 
 .method private static checkGrantRevokePermissions(Landroid/content/pm/PackageParser$Package;Lcom/android/server/pm/BasePermission;)V
     .locals 8
-    .param p0    # Landroid/content/pm/PackageParser$Package;
-    .param p1    # Lcom/android/server/pm/BasePermission;
 
     const/4 v5, 0x0
 
@@ -5517,7 +5346,6 @@
 
 .method private checkPermissionTreeLP(Ljava/lang/String;)Lcom/android/server/pm/BasePermission;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_1
 
@@ -5622,8 +5450,6 @@
 
 .method private checkSignatureIntersect([Landroid/content/pm/Signature;[Landroid/content/pm/Signature;)I
     .locals 6
-    .param p1    # [Landroid/content/pm/Signature;
-    .param p2    # [Landroid/content/pm/Signature;
 
     if-nez p1, :cond_1
 
@@ -5703,8 +5529,6 @@
 
 .method private checkValidCaller(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     invoke-static {p1}, Landroid/os/UserHandle;->getUserId(I)I
 
@@ -5759,8 +5583,6 @@
 
 .method private checkVerizonAPIUidPermission(Ljava/lang/String;I)I
     .locals 13
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v10, 0x0
 
@@ -6116,7 +5938,6 @@
 
 .method private checkWhiteAndBlackList(Landroid/content/pm/PackageParser$Package;)Z
     .locals 6
-    .param p1    # Landroid/content/pm/PackageParser$Package;
 
     const/4 v4, 0x1
 
@@ -6160,10 +5981,6 @@
 
 .method private chooseBestActivity(Landroid/content/Intent;Ljava/lang/String;ILjava/util/List;I)Landroid/content/pm/ResolveInfo;
     .locals 20
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p5    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -6630,7 +6447,6 @@
 
 .method static cidFromCodePath(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     const-string v3, "/"
 
@@ -6661,8 +6477,6 @@
 
 .method private clearApplicationUserDataLI(Ljava/lang/String;I)Z
     .locals 11
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v6, 0x0
 
@@ -6896,8 +6710,6 @@
 
 .method private static clearDirectory(Lcom/android/internal/app/IMediaContainerService;[Ljava/io/File;)V
     .locals 5
-    .param p0    # Lcom/android/internal/app/IMediaContainerService;
-    .param p1    # [Ljava/io/File;
 
     move-object v0, p1
 
@@ -6935,9 +6747,6 @@
 
 .method private clearExternalStorageDataSync(Ljava/lang/String;IZ)V
     .locals 21
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Z
 
     if-nez p1, :cond_1
 
@@ -7249,11 +7058,6 @@
 
 .method private collectCertificatesLI(Landroid/content/pm/PackageParser;Lcom/android/server/pm/PackageSetting;Landroid/content/pm/PackageParser$Package;Ljava/io/File;I)Z
     .locals 5
-    .param p1    # Landroid/content/pm/PackageParser;
-    .param p2    # Lcom/android/server/pm/PackageSetting;
-    .param p3    # Landroid/content/pm/PackageParser$Package;
-    .param p4    # Ljava/io/File;
-    .param p5    # I
 
     const/4 v0, 0x1
 
@@ -7385,8 +7189,6 @@
 
 .method static comparePermissionInfos(Landroid/content/pm/PermissionInfo;Landroid/content/pm/PermissionInfo;)Z
     .locals 3
-    .param p0    # Landroid/content/pm/PermissionInfo;
-    .param p1    # Landroid/content/pm/PermissionInfo;
 
     const/4 v0, 0x0
 
@@ -7450,95 +7252,14 @@
 
 .method static compareSignatures([Landroid/content/pm/Signature;[Landroid/content/pm/Signature;)I
     .locals 7
-    .param p0    # [Landroid/content/pm/Signature;
-    .param p1    # [Landroid/content/pm/Signature;
-
-    if-nez p0, :cond_1
-
-    if-nez p1, :cond_0
-
-    const/4 v6, 0x1
-
-    :goto_0
-    return v6
-
-    :cond_0
-    const/4 v6, -0x1
-
-    goto :goto_0
-
-    :cond_1
-    if-nez p1, :cond_2
-
-    const/4 v6, -0x2
-
-    goto :goto_0
-
-    :cond_2
-    new-instance v3, Ljava/util/HashSet;
-
-    invoke-direct {v3}, Ljava/util/HashSet;-><init>()V
-
-    move-object v0, p0
-
-    array-length v2, v0
-
-    const/4 v1, 0x0
-
-    :goto_1
-    if-ge v1, v2, :cond_3
-
-    aget-object v5, v0, v1
-
-    invoke-virtual {v3, v5}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
-
-    add-int/lit8 v1, v1, 0x1
-
-    goto :goto_1
-
-    :cond_3
-    new-instance v4, Ljava/util/HashSet;
-
-    invoke-direct {v4}, Ljava/util/HashSet;-><init>()V
-
-    move-object v0, p1
-
-    array-length v2, v0
-
-    const/4 v1, 0x0
-
-    :goto_2
-    if-ge v1, v2, :cond_4
-
-    aget-object v5, v0, v1
-
-    invoke-virtual {v4, v5}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
-
-    add-int/lit8 v1, v1, 0x1
-
-    goto :goto_2
-
-    :cond_4
-    invoke-virtual {v3, v4}, Ljava/util/HashSet;->equals(Ljava/lang/Object;)Z
-
-    move-result v6
-
-    if-eqz v6, :cond_5
 
     const/4 v6, 0x0
 
-    goto :goto_0
-
-    :cond_5
-    const/4 v6, -0x3
-
-    goto :goto_0
+    return v6
 .end method
 
 .method static compareStrings(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
     .locals 3
-    .param p0    # Ljava/lang/CharSequence;
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v0, 0x0
 
@@ -7574,8 +7295,6 @@
 
 .method private static copyNativeLibrariesForInternalApp(Ljava/io/File;Ljava/io/File;)I
     .locals 5
-    .param p0    # Ljava/io/File;
-    .param p1    # Ljava/io/File;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -7730,9 +7449,6 @@
 
 .method private createDataDirsLI(Ljava/lang/String;ILjava/lang/String;)I
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     sget-object v7, Lcom/android/server/pm/PackageManagerService;->sUserManager:Lcom/android/server/pm/UserManagerService;
 
@@ -7796,10 +7512,6 @@
 
 .method private createInstallArgs(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcom/android/server/pm/PackageManagerService$InstallArgs;
     .locals 8
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     invoke-static {p1}, Lcom/android/server/pm/PackageManagerService;->installOnSd(I)Z
 
@@ -7873,10 +7585,6 @@
 
 .method private createInstallArgs(Landroid/net/Uri;ILjava/lang/String;Ljava/lang/String;)Lcom/android/server/pm/PackageManagerService$InstallArgs;
     .locals 6
-    .param p1    # Landroid/net/Uri;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     invoke-static {p2}, Lcom/android/server/pm/PackageManagerService;->installOnSd(I)Z
 
@@ -7930,7 +7638,6 @@
 
 .method private createInstallArgs(Lcom/android/server/pm/PackageManagerService$InstallParams;)Lcom/android/server/pm/PackageManagerService$InstallArgs;
     .locals 1
-    .param p1    # Lcom/android/server/pm/PackageManagerService$InstallParams;
 
     iget v0, p1, Lcom/android/server/pm/PackageManagerService$InstallParams;->flags:I
 
@@ -7964,7 +7671,6 @@
 
 .method private createTempPackageFile(Ljava/io/File;)Ljava/io/File;
     .locals 7
-    .param p1    # Ljava/io/File;
 
     const/4 v2, 0x0
 
@@ -8035,8 +7741,6 @@
 
 .method private deleteApplicationCacheFilesLI(Ljava/lang/String;I)Z
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v3, 0x0
 
@@ -8197,13 +7901,6 @@
 
 .method private deleteInstalledPackageLI(Lcom/android/server/pm/PackageSetting;ZI[I[ZLcom/android/server/pm/PackageManagerService$PackageRemovedInfo;Z)Z
     .locals 7
-    .param p1    # Lcom/android/server/pm/PackageSetting;
-    .param p2    # Z
-    .param p3    # I
-    .param p4    # [I
-    .param p5    # [Z
-    .param p6    # Lcom/android/server/pm/PackageManagerService$PackageRemovedInfo;
-    .param p7    # Z
 
     if-eqz p6, :cond_0
 
@@ -8256,14 +7953,6 @@
 
 .method private deletePackageLI(Ljava/lang/String;Landroid/os/UserHandle;Z[I[ZILcom/android/server/pm/PackageManagerService$PackageRemovedInfo;Z)Z
     .locals 22
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/UserHandle;
-    .param p3    # Z
-    .param p4    # [I
-    .param p5    # [Z
-    .param p6    # I
-    .param p7    # Lcom/android/server/pm/PackageManagerService$PackageRemovedInfo;
-    .param p8    # Z
 
     if-nez p1, :cond_0
 
@@ -8764,15 +8453,6 @@
 
 .method private deletePackageLI(Ljava/lang/String;Landroid/os/UserHandle;Z[I[ZILcom/android/server/pm/PackageManagerService$PackageRemovedInfo;ZZ)Z
     .locals 22
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/UserHandle;
-    .param p3    # Z
-    .param p4    # [I
-    .param p5    # [Z
-    .param p6    # I
-    .param p7    # Lcom/android/server/pm/PackageManagerService$PackageRemovedInfo;
-    .param p8    # Z
-    .param p9    # Z
 
     const-string v4, "PackageManagerService"
 
@@ -9346,10 +9026,6 @@
 
 .method private deletePackageOnlyForUsers(Ljava/lang/String;Landroid/content/pm/IPackageDeleteObserver;II)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/pm/IPackageDeleteObserver;
-    .param p3    # I
-    .param p4    # I
 
     const-string v4, "PackageManager"
 
@@ -9478,9 +9154,6 @@
 
 .method private deletePackageX(Ljava/lang/String;II)I
     .locals 24
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     const-string v2, "PackageManagerService"
 
@@ -9852,12 +9525,6 @@
 
 .method private deleteSystemPackageLI(Lcom/android/server/pm/PackageSetting;[I[ZILcom/android/server/pm/PackageManagerService$PackageRemovedInfo;Z)Z
     .locals 15
-    .param p1    # Lcom/android/server/pm/PackageSetting;
-    .param p2    # [I
-    .param p3    # [Z
-    .param p4    # I
-    .param p5    # Lcom/android/server/pm/PackageManagerService$PackageRemovedInfo;
-    .param p6    # Z
 
     if-eqz p2, :cond_0
 
@@ -10183,8 +9850,6 @@
 
 .method private static final deleteTempPackageFilesInDirectory(Ljava/io/File;Ljava/io/FilenameFilter;)V
     .locals 4
-    .param p0    # Ljava/io/File;
-    .param p1    # Ljava/io/FilenameFilter;
 
     invoke-virtual {p0, p1}, Ljava/io/File;->list(Ljava/io/FilenameFilter;)[Ljava/lang/String;
 
@@ -10281,10 +9946,6 @@
 
 .method private enforceCrossUserPermission(IIZLjava/lang/String;)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # Ljava/lang/String;
 
     if-gez p2, :cond_0
 
@@ -10366,9 +10027,6 @@
 
 .method private enforceEDMPermissionLI(Ljava/lang/String;Landroid/content/pm/PackageParser$Package;Landroid/app/enterprise/EnterpriseDeviceManager;)V
     .locals 15
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/pm/PackageParser$Package;
-    .param p3    # Landroid/app/enterprise/EnterpriseDeviceManager;
 
     move-object/from16 v0, p2
 
@@ -10588,7 +10246,6 @@
 
 .method private static final enforceSystemOrRoot(Ljava/lang/String;)V
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     invoke-static {}, Landroid/os/Binder;->getCallingUid()I
 
@@ -10612,7 +10269,6 @@
 
 .method private findPermissionTreeLP(Ljava/lang/String;)Lcom/android/server/pm/BasePermission;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     iget-object v2, p0, Lcom/android/server/pm/PackageManagerService;->mSettings:Lcom/android/server/pm/Settings;
 
@@ -10684,9 +10340,6 @@
 
 .method private static fixProcessName(Ljava/lang/String;Ljava/lang/String;I)Ljava/lang/String;
     .locals 0
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     if-nez p1, :cond_0
 
@@ -10701,9 +10354,6 @@
 
 .method private generateApplicationInfoFromSettingsLPw(Ljava/lang/String;II)Landroid/content/pm/ApplicationInfo;
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v3, 0x0
 
@@ -10798,9 +10448,6 @@
 
 .method private generatePackageInfoFromSettingsLPw(Ljava/lang/String;II)Landroid/content/pm/PackageInfo;
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v2, 0x0
 
@@ -10954,8 +10601,6 @@
 
 .method static final generatePermissionInfo(Lcom/android/server/pm/BasePermission;I)Landroid/content/pm/PermissionInfo;
     .locals 2
-    .param p0    # Lcom/android/server/pm/BasePermission;
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/server/pm/BasePermission;->perm:Landroid/content/pm/PackageParser$Permission;
 
@@ -10996,7 +10641,6 @@
 
 .method static getApkName(Ljava/lang/String;)Ljava/lang/String;
     .locals 6
-    .param p0    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -11071,7 +10715,6 @@
 
 .method static getAsecPackageName(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     const-string v1, "-"
 
@@ -11259,8 +10902,6 @@
 
 .method private getDataPathForPackage(Ljava/lang/String;I)Ljava/io/File;
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     if-nez p2, :cond_2
 
@@ -11508,9 +11149,6 @@
 
 .method private static getNextCodePath(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 7
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const-string v1, ""
 
@@ -11679,7 +11317,6 @@
 
 .method private getObserverHashCodeFromHandlerParam(Lcom/android/server/pm/PackageManagerService$HandlerParams;)Ljava/lang/String;
     .locals 4
-    .param p1    # Lcom/android/server/pm/PackageManagerService$HandlerParams;
 
     new-instance v0, Ljava/lang/String;
 
@@ -11811,9 +11448,6 @@
 
 .method private getPackageSizeInfoLI(Ljava/lang/String;ILandroid/content/pm/PackageStats;)Z
     .locals 15
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Landroid/content/pm/PackageStats;
 
     if-nez p1, :cond_0
 
@@ -12069,7 +11703,6 @@
 
 .method private getRequiredVerifiersLPr(I)Ljava/util/ArrayList;
     .locals 18
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -12490,7 +12123,6 @@
 
 .method private getUidForVerifier(Landroid/content/pm/VerifierInfo;)I
     .locals 11
-    .param p1    # Landroid/content/pm/VerifierInfo;
 
     const/4 v6, -0x1
 
@@ -12655,7 +12287,6 @@
 
 .method private getUidTargetSdkVersionLockedLPr(I)I
     .locals 7
-    .param p1    # I
 
     iget-object v6, p0, Lcom/android/server/pm/PackageManagerService;->mSettings:Lcom/android/server/pm/Settings;
 
@@ -12780,8 +12411,6 @@
 
 .method private grantPermissionsLPw(Landroid/content/pm/PackageParser$Package;Z)V
     .locals 18
-    .param p1    # Landroid/content/pm/PackageParser$Package;
-    .param p2    # Z
 
     move-object/from16 v0, p1
 
@@ -13395,9 +13024,6 @@
 
 .method private grantSignaturePermission(Ljava/lang/String;Landroid/content/pm/PackageParser$Package;Lcom/android/server/pm/BasePermission;Ljava/util/HashSet;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/pm/PackageParser$Package;
-    .param p3    # Lcom/android/server/pm/BasePermission;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -13570,8 +13196,6 @@
 
 .method private static hasPermission(Landroid/content/pm/PackageParser$Package;Ljava/lang/String;)Z
     .locals 2
-    .param p0    # Landroid/content/pm/PackageParser$Package;
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Landroid/content/pm/PackageParser$Package;->permissions:Ljava/util/ArrayList;
 
@@ -13708,7 +13332,6 @@
 
 .method private static ignoreCodePath(Ljava/lang/String;)Z
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/android/server/pm/PackageManagerService;->getApkName(Ljava/lang/String;)Ljava/lang/String;
 
@@ -13759,7 +13382,6 @@
 
 .method private static installForwardLocked(I)Z
     .locals 1
-    .param p0    # I
 
     and-int/lit8 v0, p0, 0x1
 
@@ -13778,12 +13400,6 @@
 
 .method private installNewPackageLI(Landroid/content/pm/PackageParser$Package;IILandroid/os/UserHandle;Ljava/lang/String;Lcom/android/server/pm/PackageManagerService$PackageInstalledInfo;)V
     .locals 16
-    .param p1    # Landroid/content/pm/PackageParser$Package;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/os/UserHandle;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Lcom/android/server/pm/PackageManagerService$PackageInstalledInfo;
 
     move-object/from16 v0, p1
 
@@ -14302,7 +13918,6 @@
 
 .method private static installOnSd(I)Z
     .locals 2
-    .param p0    # I
 
     const/4 v0, 0x0
 
@@ -14326,9 +13941,6 @@
 
 .method private installPackageLI(Lcom/android/server/pm/PackageManagerService$InstallArgs;ZLcom/android/server/pm/PackageManagerService$PackageInstalledInfo;)V
     .locals 36
-    .param p1    # Lcom/android/server/pm/PackageManagerService$InstallArgs;
-    .param p2    # Z
-    .param p3    # Lcom/android/server/pm/PackageManagerService$PackageInstalledInfo;
 
     const-string v3, "PackageManager"
 
@@ -15595,7 +15207,6 @@
 
 .method private isAdminApplication(Landroid/content/pm/PackageParser$Package;)Z
     .locals 5
-    .param p1    # Landroid/content/pm/PackageParser$Package;
 
     iget-object v3, p1, Landroid/content/pm/PackageParser$Package;->receivers:Ljava/util/ArrayList;
 
@@ -15662,10 +15273,6 @@
 
 .method private isAppBlockedByDPM(Ljava/io/File;Ljava/lang/String;ZI)Z
     .locals 24
-    .param p1    # Ljava/io/File;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
-    .param p4    # I
 
     const/16 v16, 0x0
 
@@ -16025,7 +15632,6 @@
 
 .method private isAsecExternal(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -16055,7 +15661,6 @@
 
 .method private static isExternal(Landroid/content/pm/PackageParser$Package;)Z
     .locals 2
-    .param p0    # Landroid/content/pm/PackageParser$Package;
 
     iget-object v0, p0, Landroid/content/pm/PackageParser$Package;->applicationInfo:Landroid/content/pm/ApplicationInfo;
 
@@ -16080,7 +15685,6 @@
 
 .method private static isExternal(Lcom/android/server/pm/PackageSetting;)Z
     .locals 2
-    .param p0    # Lcom/android/server/pm/PackageSetting;
 
     iget v0, p0, Lcom/android/server/pm/PackageSetting;->pkgFlags:I
 
@@ -16136,7 +15740,6 @@
 
 .method private static isForwardLocked(Landroid/content/pm/PackageParser$Package;)Z
     .locals 2
-    .param p0    # Landroid/content/pm/PackageParser$Package;
 
     iget-object v0, p0, Landroid/content/pm/PackageParser$Package;->applicationInfo:Landroid/content/pm/ApplicationInfo;
 
@@ -16161,7 +15764,6 @@
 
 .method private isForwardLocked(Lcom/android/server/pm/PackageSetting;)Z
     .locals 2
-    .param p1    # Lcom/android/server/pm/PackageSetting;
 
     iget v0, p1, Lcom/android/server/pm/PackageSetting;->pkgFlags:I
 
@@ -16184,8 +15786,6 @@
 
 .method private isHidingSecretPackage(Ljava/lang/String;Z)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     iget-boolean v0, p0, Lcom/android/server/pm/PackageManagerService;->mIsSecretMode:Z
 
@@ -16212,8 +15812,6 @@
 
 .method private isNewPlatformPermissionForPackage(Ljava/lang/String;Landroid/content/pm/PackageParser$Package;)Z
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/pm/PackageParser$Package;
 
     const/4 v1, 0x0
 
@@ -16293,8 +15891,6 @@
 
 .method private isPackageDeviceAdmin(Ljava/lang/String;I)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const-string v1, "device_policy"
 
@@ -16340,7 +15936,6 @@
 
 .method private isPackageEnabledInAnyPersona(Ljava/lang/String;)Z
     .locals 9
-    .param p1    # Ljava/lang/String;
 
     const/4 v5, 0x0
 
@@ -16485,7 +16080,6 @@
 
 .method static final isPackageFilename(Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     if-eqz p0, :cond_0
 
@@ -16510,8 +16104,6 @@
 
 .method private isPkgEnablingBlockedByDPM(Ljava/lang/String;I)I
     .locals 19
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     if-nez p1, :cond_1
 
@@ -16753,7 +16345,6 @@
 
 .method private static isPrivilegedApp(Landroid/content/pm/PackageParser$Package;)Z
     .locals 2
-    .param p0    # Landroid/content/pm/PackageParser$Package;
 
     iget-object v0, p0, Landroid/content/pm/PackageParser$Package;->applicationInfo:Landroid/content/pm/ApplicationInfo;
 
@@ -16885,7 +16476,6 @@
 
 .method private isSdFilesystemNull(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Lcom/android/internal/content/PackageHelper;->getSdFilesystem(Ljava/lang/String;)Ljava/lang/String;
 
@@ -16906,7 +16496,6 @@
 
 .method private isSecretPackage(Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -16957,9 +16546,6 @@
 
 .method private isShowingSecretPackage(Landroid/content/pm/ComponentInfo;ZI)Z
     .locals 7
-    .param p1    # Landroid/content/pm/ComponentInfo;
-    .param p2    # Z
-    .param p3    # I
 
     const/4 v4, 0x1
 
@@ -17036,7 +16622,6 @@
 
 .method public static isSkippingApk(Ljava/lang/String;)Z
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -17083,7 +16668,6 @@
 
 .method private static isSystemApp(Landroid/content/pm/ApplicationInfo;)Z
     .locals 1
-    .param p0    # Landroid/content/pm/ApplicationInfo;
 
     iget v0, p0, Landroid/content/pm/ApplicationInfo;->flags:I
 
@@ -17104,7 +16688,6 @@
 
 .method private static isSystemApp(Landroid/content/pm/PackageParser$Package;)Z
     .locals 1
-    .param p0    # Landroid/content/pm/PackageParser$Package;
 
     iget-object v0, p0, Landroid/content/pm/PackageParser$Package;->applicationInfo:Landroid/content/pm/ApplicationInfo;
 
@@ -17127,7 +16710,6 @@
 
 .method private static isSystemApp(Lcom/android/server/pm/PackageSetting;)Z
     .locals 1
-    .param p0    # Lcom/android/server/pm/PackageSetting;
 
     iget v0, p0, Lcom/android/server/pm/PackageSetting;->pkgFlags:I
 
@@ -17148,7 +16730,6 @@
 
 .method public static isSystemDir(Ljava/io/File;)Z
     .locals 2
-    .param p0    # Ljava/io/File;
 
     if-eqz p0, :cond_1
 
@@ -17190,7 +16771,6 @@
 
 .method private isUpdateOnSystemApp(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -17220,7 +16800,6 @@
 
 .method private static isUpdatedSystemApp(Landroid/content/pm/PackageParser$Package;)Z
     .locals 1
-    .param p0    # Landroid/content/pm/PackageParser$Package;
 
     iget-object v0, p0, Landroid/content/pm/PackageParser$Package;->applicationInfo:Landroid/content/pm/ApplicationInfo;
 
@@ -17243,7 +16822,6 @@
 
 .method private static isUpdatedSystemApp(Lcom/android/server/pm/PackageSetting;)Z
     .locals 1
-    .param p0    # Lcom/android/server/pm/PackageSetting;
 
     iget v0, p0, Lcom/android/server/pm/PackageSetting;->pkgFlags:I
 
@@ -17264,8 +16842,6 @@
 
 .method private isUserRestricted(ILjava/lang/String;)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -17311,7 +16887,6 @@
 
 .method private isVerificationEnabled(I)Z
     .locals 4
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -17677,9 +17252,6 @@
 
 .method private killApplication(Ljava/lang/String;ILjava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     sget-boolean v1, Lcom/android/server/pm/PackageManagerService;->DEBUG_DEV:Z
 
@@ -17786,7 +17358,6 @@
 
 .method private loadMediaPackages(Ljava/util/HashMap;[ILjava/util/HashSet;)V
     .locals 20
-    .param p2    # [I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -18477,7 +18048,6 @@
 
 .method static locationIsPrivileged(Ljava/io/File;)Z
     .locals 6
-    .param p0    # Ljava/io/File;
 
     const/4 v2, 0x0
 
@@ -18555,8 +18125,6 @@
 
 .method static logFormat(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -18591,10 +18159,6 @@
 
 .method public static final main(Landroid/content/Context;Lcom/android/server/pm/Installer;ZZ)Landroid/content/pm/IPackageManager;
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/server/pm/Installer;
-    .param p2    # Z
-    .param p3    # Z
 
     new-instance v0, Lcom/android/server/pm/PackageManagerService;
 
@@ -18671,7 +18235,6 @@
 
 .method private matchComponentForVerifier(Ljava/lang/String;Ljava/util/List;)Landroid/content/ComponentName;
     .locals 7
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -18745,8 +18308,6 @@
 
 .method private matchVerifiers(Landroid/content/pm/PackageInfoLite;Ljava/util/List;Lcom/android/server/pm/PackageVerificationState;)Ljava/util/List;
     .locals 9
-    .param p1    # Landroid/content/pm/PackageInfoLite;
-    .param p3    # Lcom/android/server/pm/PackageVerificationState;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -18857,7 +18418,6 @@
 
 .method private moveDexFilesLI(Landroid/content/pm/PackageParser$Package;)I
     .locals 4
-    .param p1    # Landroid/content/pm/PackageParser$Package;
 
     iget-object v1, p1, Landroid/content/pm/PackageParser$Package;->applicationInfo:Landroid/content/pm/ApplicationInfo;
 
@@ -18945,7 +18505,6 @@
 
 .method private packageFlagsToInstallFlags(Lcom/android/server/pm/PackageSetting;)I
     .locals 2
-    .param p1    # Lcom/android/server/pm/PackageSetting;
 
     const/4 v0, 0x0
 
@@ -18972,9 +18531,6 @@
 
 .method private packageVerificationCompletion(ILcom/android/server/pm/PackageVerificationState;Lcom/android/server/pm/PackageVerificationResponse;)Z
     .locals 8
-    .param p1    # I
-    .param p2    # Lcom/android/server/pm/PackageVerificationState;
-    .param p3    # Lcom/android/server/pm/PackageVerificationResponse;
 
     const/4 v7, 0x6
 
@@ -19071,9 +18627,6 @@
 
 .method private performDexOptLI(Landroid/content/pm/PackageParser$Package;ZZLjava/util/HashSet;)I
     .locals 10
-    .param p1    # Landroid/content/pm/PackageParser$Package;
-    .param p2    # Z
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -19532,10 +19085,6 @@
 
 .method private performDexOptLI(Landroid/content/pm/PackageParser$Package;ZZZ)I
     .locals 3
-    .param p1    # Landroid/content/pm/PackageParser$Package;
-    .param p2    # Z
-    .param p3    # Z
-    .param p4    # Z
 
     const/4 v1, 0x0
 
@@ -19573,8 +19122,6 @@
 
 .method private performDexOptLibsLI(Ljava/util/ArrayList;ZZLjava/util/HashSet;)V
     .locals 7
-    .param p2    # Z
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -19674,7 +19221,6 @@
 
 .method private processEnabledSettingOfSecretPackageList(I)V
     .locals 12
-    .param p1    # I
 
     const/4 v11, 0x3
 
@@ -19806,8 +19352,6 @@
 
 .method private processPendingInstall(Lcom/android/server/pm/PackageManagerService$InstallArgs;I)V
     .locals 2
-    .param p1    # Lcom/android/server/pm/PackageManagerService$InstallArgs;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/server/pm/PackageManagerService;->mHandler:Lcom/android/server/pm/PackageManagerService$PackageHandler;
 
@@ -19822,8 +19366,6 @@
 
 .method private processPendingMove(Lcom/android/server/pm/PackageManagerService$MoveParams;I)V
     .locals 2
-    .param p1    # Lcom/android/server/pm/PackageManagerService$MoveParams;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/server/pm/PackageManagerService;->mHandler:Lcom/android/server/pm/PackageManagerService$PackageHandler;
 
@@ -20659,7 +20201,6 @@
 
 .method private readPermissionsFromXml(Ljava/io/File;)V
     .locals 22
-    .param p1    # Ljava/io/File;
 
     const/4 v13, 0x0
 
@@ -21516,7 +21057,6 @@
 
 .method private removeDataDirsLI(Ljava/lang/String;)I
     .locals 12
-    .param p1    # Ljava/lang/String;
 
     sget-object v9, Lcom/android/server/pm/PackageManagerService;->sUserManager:Lcom/android/server/pm/UserManagerService;
 
@@ -21671,8 +21211,6 @@
 
 .method static removeInts([I[I)[I
     .locals 3
-    .param p0    # [I
-    .param p1    # [I
 
     if-nez p1, :cond_1
 
@@ -21702,8 +21240,6 @@
 
 .method private static removeKeystoreDataIfNeeded(II)V
     .locals 8
-    .param p0    # I
-    .param p1    # I
 
     if-gez p1, :cond_1
 
@@ -21784,12 +21320,6 @@
 
 .method private removePackageDataLI(Lcom/android/server/pm/PackageSetting;[I[ZLcom/android/server/pm/PackageManagerService$PackageRemovedInfo;IZ)V
     .locals 8
-    .param p1    # Lcom/android/server/pm/PackageSetting;
-    .param p2    # [I
-    .param p3    # [Z
-    .param p4    # Lcom/android/server/pm/PackageManagerService$PackageRemovedInfo;
-    .param p5    # I
-    .param p6    # Z
 
     const/4 v5, 0x0
 
@@ -21987,8 +21517,6 @@
 
 .method private removeRLLI(Ljava/lang/String;I)V
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     sget-object v7, Lcom/android/server/pm/PackageManagerService;->sUserManager:Lcom/android/server/pm/UserManagerService;
 
@@ -22042,15 +21570,6 @@
 
 .method private replaceNonSystemPackageLI(Landroid/content/pm/PackageParser$Package;Landroid/content/pm/PackageParser$Package;IILandroid/os/UserHandle;[I[ZLjava/lang/String;Lcom/android/server/pm/PackageManagerService$PackageInstalledInfo;)V
     .locals 21
-    .param p1    # Landroid/content/pm/PackageParser$Package;
-    .param p2    # Landroid/content/pm/PackageParser$Package;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Landroid/os/UserHandle;
-    .param p6    # [I
-    .param p7    # [Z
-    .param p8    # Ljava/lang/String;
-    .param p9    # Lcom/android/server/pm/PackageManagerService$PackageInstalledInfo;
 
     const/16 v16, 0x0
 
@@ -22428,12 +21947,6 @@
 
 .method private replacePackageLI(Landroid/content/pm/PackageParser$Package;IILandroid/os/UserHandle;Ljava/lang/String;Lcom/android/server/pm/PackageManagerService$PackageInstalledInfo;)V
     .locals 16
-    .param p1    # Landroid/content/pm/PackageParser$Package;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/os/UserHandle;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Lcom/android/server/pm/PackageManagerService$PackageInstalledInfo;
 
     const-string v1, "PackageManager"
 
@@ -22735,15 +22248,6 @@
 
 .method private replaceSystemPackageLI(Landroid/content/pm/PackageParser$Package;Landroid/content/pm/PackageParser$Package;IILandroid/os/UserHandle;[I[ZLjava/lang/String;Lcom/android/server/pm/PackageManagerService$PackageInstalledInfo;)V
     .locals 16
-    .param p1    # Landroid/content/pm/PackageParser$Package;
-    .param p2    # Landroid/content/pm/PackageParser$Package;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Landroid/os/UserHandle;
-    .param p6    # [I
-    .param p7    # [Z
-    .param p8    # Ljava/lang/String;
-    .param p9    # Lcom/android/server/pm/PackageManagerService$PackageInstalledInfo;
 
     const/4 v8, 0x0
 
@@ -23270,8 +22774,6 @@
 
 .method static reportSettingsProblem(ILjava/lang/String;)V
     .locals 9
-    .param p0    # I
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     invoke-static {}, Lcom/android/server/pm/PackageManagerService;->getSettingsProblemFile()Ljava/io/File;
@@ -23359,9 +22861,6 @@
 
 .method private saveHash(Ljava/lang/String;Ljava/io/File;I)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/io/File;
-    .param p3    # I
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -23395,10 +22894,6 @@
 
 .method private scanDirLI(Ljava/io/File;IIJ)V
     .locals 11
-    .param p1    # Ljava/io/File;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # J
 
     invoke-static {p1}, Lcom/android/server/pm/PackageManagerService;->isSystemDir(Ljava/io/File;)Z
 
@@ -23545,11 +23040,6 @@
 
 .method private scanPackageLI(Landroid/content/pm/PackageParser$Package;IIJLandroid/os/UserHandle;)Landroid/content/pm/PackageParser$Package;
     .locals 79
-    .param p1    # Landroid/content/pm/PackageParser$Package;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # J
-    .param p6    # Landroid/os/UserHandle;
 
     new-instance v69, Ljava/io/File;
 
@@ -30683,11 +30173,6 @@
 
 .method private scanPackageLI(Ljava/io/File;IIJLandroid/os/UserHandle;)Landroid/content/pm/PackageParser$Package;
     .locals 31
-    .param p1    # Ljava/io/File;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # J
-    .param p6    # Landroid/os/UserHandle;
 
     const/4 v3, 0x1
 
@@ -32028,7 +31513,6 @@
 
 .method private sendOrderedBroadcastToPendingVerifier(Lcom/android/server/pm/PackageVerificationState;)Z
     .locals 5
-    .param p1    # Lcom/android/server/pm/PackageVerificationState;
 
     const/4 v3, 0x0
 
@@ -32074,8 +31558,6 @@
 
 .method private sendOrderedBroadcastToRequiredVerifier(Lcom/android/server/pm/PackageVerificationState;Landroid/content/BroadcastReceiver;)V
     .locals 9
-    .param p1    # Lcom/android/server/pm/PackageVerificationState;
-    .param p2    # Landroid/content/BroadcastReceiver;
 
     const/4 v5, 0x0
 
@@ -32155,7 +31637,6 @@
 
 .method private sendOrderedBroadcastToRequiredVerifier(Lcom/android/server/pm/PackageVerificationState;)Z
     .locals 5
-    .param p1    # Lcom/android/server/pm/PackageVerificationState;
 
     const/4 v3, 0x0
 
@@ -32197,9 +31678,6 @@
 
 .method private sendPackageAddedForUser(Ljava/lang/String;Lcom/android/server/pm/PackageSetting;I)V
     .locals 19
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/server/pm/PackageSetting;
-    .param p3    # I
 
     new-instance v3, Landroid/os/Bundle;
 
@@ -32341,9 +31819,6 @@
 
 .method private sendPackageBlockedForUser(Ljava/lang/String;Lcom/android/server/pm/PackageSetting;I)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/server/pm/PackageSetting;
-    .param p3    # I
 
     const/4 v2, 0x0
 
@@ -32376,12 +31851,6 @@
 
 .method static final sendPackageBroadcast(Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;Ljava/lang/String;Landroid/content/IIntentReceiver;[I)V
     .locals 20
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Bundle;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Landroid/content/IIntentReceiver;
-    .param p5    # [I
 
     invoke-static {}, Landroid/app/ActivityManagerNative;->getDefault()Landroid/app/IActivityManager;
 
@@ -32649,9 +32118,6 @@
 
 .method private sendPackageChangedBroadcast(Ljava/lang/String;ZLjava/util/ArrayList;I)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p4    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -32727,10 +32193,6 @@
 
 .method private sendPackageChangedBroadcast(Ljava/lang/String;ZZLjava/util/ArrayList;I)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # Z
-    .param p5    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -32810,10 +32272,6 @@
 
 .method private sendResourcesChangedBroadcast(ZZLjava/util/ArrayList;[ILandroid/content/IIntentReceiver;)V
     .locals 7
-    .param p1    # Z
-    .param p2    # Z
-    .param p4    # [I
-    .param p5    # Landroid/content/IIntentReceiver;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(ZZ",
@@ -32888,9 +32346,6 @@
 
 .method private static setApplicationInfoPaths(Landroid/content/pm/PackageParser$Package;Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p0    # Landroid/content/pm/PackageParser$Package;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/content/pm/PackageParser$Package;->mScanPath:Ljava/lang/String;
 
@@ -32909,12 +32364,6 @@
 
 .method private setEnabledSetting(Ljava/lang/String;Ljava/lang/String;IIILjava/lang/String;)V
     .locals 29
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Ljava/lang/String;
 
     move-object/from16 v0, p0
 
@@ -33979,8 +33428,6 @@
 
 .method private setInternalAppNativeLibraryPath(Landroid/content/pm/PackageParser$Package;Lcom/android/server/pm/PackageSetting;)V
     .locals 4
-    .param p1    # Landroid/content/pm/PackageParser$Package;
-    .param p2    # Lcom/android/server/pm/PackageSetting;
 
     iget-object v2, p2, Lcom/android/server/pm/PackageSetting;->codePathString:Ljava/lang/String;
 
@@ -34009,7 +33456,6 @@
 
 .method private static setPackageList(Ljava/lang/String;Ljava/util/ArrayList;)V
     .locals 8
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -34232,7 +33678,6 @@
 
 .method private setUpCustomResolverActivity(Landroid/content/pm/PackageParser$Package;)V
     .locals 4
-    .param p1    # Landroid/content/pm/PackageParser$Package;
 
     iget-object v1, p0, Lcom/android/server/pm/PackageManagerService;->mPackages:Ljava/util/HashMap;
 
@@ -34371,8 +33816,6 @@
 
 .method private setUpVrResolverActivity(Landroid/content/pm/PackageParser$Package;I)V
     .locals 3
-    .param p1    # Landroid/content/pm/PackageParser$Package;
-    .param p2    # I
 
     const/4 v2, 0x0
 
@@ -34472,8 +33915,6 @@
 
 .method static splitString(Ljava/lang/String;C)[Ljava/lang/String;
     .locals 5
-    .param p0    # Ljava/lang/String;
-    .param p1    # C
 
     const/4 v0, 0x1
 
@@ -34538,7 +33979,6 @@
 
 .method static timeToSomeThing(J)F
     .locals 2
-    .param p0    # J
 
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 
@@ -34557,10 +33997,6 @@
 
 .method private trimPersonaFromInstallation(Lcom/android/server/pm/PackageSetting;Lcom/android/server/pm/PackageSetting;ILandroid/os/UserHandle;)V
     .locals 11
-    .param p1    # Lcom/android/server/pm/PackageSetting;
-    .param p2    # Lcom/android/server/pm/PackageSetting;
-    .param p3    # I
-    .param p4    # Landroid/os/UserHandle;
 
     and-int/lit8 v8, p3, 0x10
 
@@ -35007,8 +34443,6 @@
 
 .method private unloadMediaPackages(Ljava/util/HashMap;[IZ)V
     .locals 21
-    .param p2    # [I
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -35289,8 +34723,6 @@
 
 .method private update(Ljava/lang/String;Ljava/util/List;Z)Ljava/util/List;
     .locals 21
-    .param p1    # Ljava/lang/String;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -36535,7 +35967,6 @@
 
 .method private updateAllSharedLibrariesLPw(Landroid/content/pm/PackageParser$Package;)Ljava/util/ArrayList;
     .locals 5
-    .param p1    # Landroid/content/pm/PackageParser$Package;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -36650,7 +36081,6 @@
 
 .method private updateEDMSharedUserPermsLPw(Lcom/android/server/pm/PackageSetting;)V
     .locals 13
-    .param p1    # Lcom/android/server/pm/PackageSetting;
 
     if-eqz p1, :cond_0
 
@@ -36848,9 +36278,6 @@
 
 .method private updateExternalMediaStatusInner(ZZZ)V
     .locals 27
-    .param p1    # Z
-    .param p2    # Z
-    .param p3    # Z
 
     const/16 v21, 0x0
 
@@ -37896,8 +37323,6 @@
 
 .method private updateMediaStatus(IILjava/util/Set;)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II",
@@ -38023,9 +37448,6 @@
 
 .method private updatePermissionsLPw(Ljava/lang/String;Landroid/content/pm/PackageParser$Package;I)V
     .locals 12
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/pm/PackageParser$Package;
-    .param p3    # I
 
     const/4 v7, 0x1
 
@@ -38490,11 +37912,6 @@
 
 .method private updateSettingsLI(Landroid/content/pm/PackageParser$Package;Ljava/lang/String;[I[ZLcom/android/server/pm/PackageManagerService$PackageInstalledInfo;)V
     .locals 21
-    .param p1    # Landroid/content/pm/PackageParser$Package;
-    .param p2    # Ljava/lang/String;
-    .param p3    # [I
-    .param p4    # [Z
-    .param p5    # Lcom/android/server/pm/PackageManagerService$PackageInstalledInfo;
 
     move-object/from16 v0, p1
 
@@ -38911,8 +38328,6 @@
 
 .method private updateSharedLibrariesLPw(Landroid/content/pm/PackageParser$Package;Landroid/content/pm/PackageParser$Package;)Z
     .locals 8
-    .param p1    # Landroid/content/pm/PackageParser$Package;
-    .param p2    # Landroid/content/pm/PackageParser$Package;
 
     const/4 v5, 0x0
 
@@ -39187,8 +38602,6 @@
 
 .method private verifyPackageUpdateLPr(Lcom/android/server/pm/PackageSetting;Landroid/content/pm/PackageParser$Package;)Z
     .locals 4
-    .param p1    # Lcom/android/server/pm/PackageSetting;
-    .param p2    # Landroid/content/pm/PackageParser$Package;
 
     const/4 v0, 0x0
 
@@ -39306,8 +38719,6 @@
 
 .method private verifySignaturesLP(Lcom/android/server/pm/PackageSetting;Landroid/content/pm/PackageParser$Package;)Z
     .locals 3
-    .param p1    # Lcom/android/server/pm/PackageSetting;
-    .param p2    # Landroid/content/pm/PackageParser$Package;
 
     const/4 v0, 0x0
 
@@ -39459,8 +38870,6 @@
 
 .method private willScanFor3LM(Lcom/android/server/pm/PackageManagerService$InstallArgs;Ljava/io/File;)Z
     .locals 20
-    .param p1    # Lcom/android/server/pm/PackageManagerService$InstallArgs;
-    .param p2    # Ljava/io/File;
 
     const/16 v16, 0x0
 
@@ -39815,7 +39224,6 @@
 
 .method private writeAppwithABI2Internal(Ljava/lang/String;Ljava/util/HashMap;)V
     .locals 14
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -41261,8 +40669,6 @@
 
 .method private writePermissionDeniedLog(Ljava/lang/String;Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -41378,7 +40784,6 @@
 
 .method private writeVersion(Ljava/lang/String;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     iget-object v4, p0, Lcom/android/server/pm/PackageManagerService;->mPrvVersionFile:Ljava/io/File;
@@ -41462,7 +40867,6 @@
 # virtual methods
 .method public addPackageToPreferred(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "PackageManager"
 
@@ -41475,7 +40879,6 @@
 
 .method public addPermission(Landroid/content/pm/PermissionInfo;)Z
     .locals 2
-    .param p1    # Landroid/content/pm/PermissionInfo;
 
     iget-object v1, p0, Lcom/android/server/pm/PackageManagerService;->mPackages:Ljava/util/HashMap;
 
@@ -41504,7 +40907,6 @@
 
 .method public addPermissionAsync(Landroid/content/pm/PermissionInfo;)Z
     .locals 2
-    .param p1    # Landroid/content/pm/PermissionInfo;
 
     iget-object v1, p0, Lcom/android/server/pm/PackageManagerService;->mPackages:Ljava/util/HashMap;
 
@@ -41533,8 +40935,6 @@
 
 .method addPermissionLocked(Landroid/content/pm/PermissionInfo;Z)Z
     .locals 9
-    .param p1    # Landroid/content/pm/PermissionInfo;
-    .param p2    # Z
 
     const/4 v8, 0x2
 
@@ -41738,11 +41138,6 @@
 
 .method public addPreferredActivity(Landroid/content/IntentFilter;I[Landroid/content/ComponentName;Landroid/content/ComponentName;I)V
     .locals 7
-    .param p1    # Landroid/content/IntentFilter;
-    .param p2    # I
-    .param p3    # [Landroid/content/ComponentName;
-    .param p4    # Landroid/content/ComponentName;
-    .param p5    # I
 
     const/4 v5, 0x1
 
@@ -41765,8 +41160,6 @@
 
 .method public addSecretPackage(Ljava/lang/String;I)Z
     .locals 16
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     sget-object v1, Lcom/android/server/pm/PackageManagerService;->sUserManager:Lcom/android/server/pm/UserManagerService;
 
@@ -42032,7 +41425,6 @@
 
 .method public canonicalToCurrentPackageNames([Ljava/lang/String;)[Ljava/lang/String;
     .locals 6
-    .param p1    # [Ljava/lang/String;
 
     array-length v3, p1
 
@@ -42093,8 +41485,6 @@
 
 .method public checkIfSingleContainerOwnerIsBeingAdded(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-static {p1, p2}, Lcom/android/server/pm/SELinuxMMAC;->checkIfSingleContainerOwnerIsBeingAdded(Ljava/lang/String;Ljava/lang/String;)Z
 
@@ -42105,8 +41495,6 @@
 
 .method public checkManagedStateOfPermission(Ljava/lang/String;Ljava/lang/String;)I
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -42265,8 +41653,6 @@
 
 .method public checkPermission(Ljava/lang/String;Ljava/lang/String;)I
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v3, -0x1
 
@@ -42385,8 +41771,6 @@
 
 .method public checkPermissionManaged(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -42469,8 +41853,6 @@
 
 .method public checkSignatures(Ljava/lang/String;Ljava/lang/String;)I
     .locals 11
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const-wide/16 v9, 0x64
 
@@ -42675,8 +42057,6 @@
 
 .method public checkUidPermission(Ljava/lang/String;I)I
     .locals 14
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v8, 0x0
 
@@ -43000,8 +42380,6 @@
 
 .method public checkUidSignatures(II)I
     .locals 7
-    .param p1    # I
-    .param p2    # I
 
     const/4 v4, -0x4
 
@@ -43134,7 +42512,6 @@
 
 .method public checkVerizonAPIPermission(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;
@@ -43187,8 +42564,6 @@
 
 .method cleanPackageDataStructuresLILPw(Landroid/content/pm/PackageParser$Package;Z)V
     .locals 13
-    .param p1    # Landroid/content/pm/PackageParser$Package;
-    .param p2    # Z
 
     iget-object v11, p1, Landroid/content/pm/PackageParser$Package;->providers:Ljava/util/ArrayList;
 
@@ -43580,7 +42955,6 @@
 
 .method cleanUpUserLILPw(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/pm/PackageManagerService;->mDirtyUsers:Ljava/util/HashSet;
 
@@ -43668,7 +43042,6 @@
 
 .method cleanupInstallFailedPackage(Lcom/android/server/pm/PackageSetting;)V
     .locals 3
-    .param p1    # Lcom/android/server/pm/PackageSetting;
 
     const-string v0, "PackageManager"
 
@@ -43793,9 +43166,6 @@
 
 .method public clearApplicationUserData(Ljava/lang/String;Landroid/content/pm/IPackageDataObserver;I)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/pm/IPackageDataObserver;
-    .param p3    # I
 
     const/4 v4, 0x1
 
@@ -44044,7 +43414,6 @@
 
 .method public clearPackagePreferredActivities(Ljava/lang/String;)V
     .locals 17
-    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Landroid/os/Binder;->getCallingUid()I
 
@@ -44399,8 +43768,6 @@
 
 .method public clearPackagePreferredActivitiesAsUser(Ljava/lang/String;I)V
     .locals 11
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const-wide/16 v9, 0x64
 
@@ -44561,8 +43928,6 @@
 
 .method clearPackagePreferredActivitiesLPw(Ljava/lang/String;I)Z
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v6, 0x0
 
@@ -44699,7 +44064,6 @@
 
 .method public clearSecretPackageList(I)V
     .locals 19
-    .param p1    # I
 
     sget-object v2, Lcom/android/server/pm/PackageManagerService;->sUserManager:Lcom/android/server/pm/UserManagerService;
 
@@ -44937,8 +44301,6 @@
 
 .method public createContainer(Ljava/lang/String;Ljava/lang/String;)I
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-static {p1, p2}, Lcom/android/server/pm/SELinuxMMAC;->createMyContainerID(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -44949,8 +44311,6 @@
 
 .method createNewPersonaLILPw(ILjava/io/File;Ljava/util/List;)V
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/io/File;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -44986,9 +44346,6 @@
 
 .method createNewUserLILPw(ILjava/io/File;I)V
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/io/File;
-    .param p3    # I
 
     iget-object v0, p0, Lcom/android/server/pm/PackageManagerService;->mInstaller:Lcom/android/server/pm/Installer;
 
@@ -45014,7 +44371,6 @@
 
 .method public currentToCanonicalPackageNames([Ljava/lang/String;)[Ljava/lang/String;
     .locals 6
-    .param p1    # [Ljava/lang/String;
 
     array-length v3, p1
 
@@ -45081,8 +44437,6 @@
 
 .method public deleteApplicationCacheFiles(Ljava/lang/String;Landroid/content/pm/IPackageDataObserver;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/pm/IPackageDataObserver;
 
     sget-boolean v3, Lcom/android/server/pm/PackageManagerService;->DEBUG_DEV:Z
 
@@ -45316,10 +44670,6 @@
 
 .method public deletePackageAsUser(Ljava/lang/String;Landroid/content/pm/IPackageDeleteObserver;II)V
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/pm/IPackageDeleteObserver;
-    .param p3    # I
-    .param p4    # I
 
     const-string v0, "PackageManagerService"
 
@@ -45855,10 +45205,6 @@
 
 .method deletePackageAsUserAndPersona(Ljava/lang/String;Landroid/content/pm/IPackageDeleteObserver;II)V
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/pm/IPackageDeleteObserver;
-    .param p3    # I
-    .param p4    # I
 
     sget-boolean v0, Lcom/android/server/pm/PackageManagerService;->DEBUG_DEV:Z
 
@@ -46147,9 +45493,6 @@
 
 .method protected dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 39
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     move-object/from16 v0, p0
 
@@ -48578,7 +47921,6 @@
 
 .method dumpRemovableApp(Ljava/io/PrintWriter;)V
     .locals 10
-    .param p1    # Ljava/io/PrintWriter;
 
     new-instance v3, Ljava/io/File;
 
@@ -48861,7 +48203,6 @@
 
 .method public enablePackageManaged(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-direct {p0}, Lcom/android/server/pm/PackageManagerService;->enforceCMPermissionCheck()Z
 
@@ -48898,9 +48239,6 @@
 
 .method public extendVerificationTimeout(IIJ)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
 
     const/4 v6, 0x1
 
@@ -49070,14 +48408,6 @@
 
 .method findPreferredActivity(Landroid/content/Intent;Ljava/lang/String;ILjava/util/List;IZZZI)Landroid/content/pm/ResolveInfo;
     .locals 26
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p5    # I
-    .param p6    # Z
-    .param p7    # Z
-    .param p8    # Z
-    .param p9    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -50120,7 +49450,6 @@
 
 .method public finishPackageInstall(I)V
     .locals 4
-    .param p1    # I
 
     const-string v1, "Only the system is allowed to finish installs"
 
@@ -50167,8 +49496,6 @@
 
 .method public freeStorage(JLandroid/content/IntentSender;)V
     .locals 3
-    .param p1    # J
-    .param p3    # Landroid/content/IntentSender;
 
     iget-object v0, p0, Lcom/android/server/pm/PackageManagerService;->mContext:Landroid/content/Context;
 
@@ -50191,8 +49518,6 @@
 
 .method public freeStorageAndNotify(JLandroid/content/pm/IPackageDataObserver;)V
     .locals 3
-    .param p1    # J
-    .param p3    # Landroid/content/pm/IPackageDataObserver;
 
     const-string v1, "PackageManager"
 
@@ -50275,9 +49600,6 @@
 
 .method generatePackageInfo(Landroid/content/pm/PackageParser$Package;II)Landroid/content/pm/PackageInfo;
     .locals 12
-    .param p1    # Landroid/content/pm/PackageParser$Package;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v1, 0x0
 
@@ -50402,9 +49724,6 @@
 
 .method public getActivityInfo(Landroid/content/ComponentName;II)Landroid/content/pm/ActivityInfo;
     .locals 11
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # I
-    .param p3    # I
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
@@ -50964,7 +50283,6 @@
 
 .method public getAllPermissionGroups(I)Ljava/util/List;
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -51041,8 +50359,6 @@
 
 .method public getApplicationBlockedSettingAsUser(Ljava/lang/String;I)Z
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     iget-object v4, p0, Lcom/android/server/pm/PackageManagerService;->mContext:Landroid/content/Context;
 
@@ -51154,8 +50470,6 @@
 
 .method public getApplicationEnabledSetting(Ljava/lang/String;I)I
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     sget-object v1, Lcom/android/server/pm/PackageManagerService;->sUserManager:Lcom/android/server/pm/UserManagerService;
 
@@ -51208,9 +50522,6 @@
 
 .method public getApplicationInfo(Ljava/lang/String;II)Landroid/content/pm/ApplicationInfo;
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
@@ -51709,8 +51020,6 @@
 
 .method public getComponentEnabledSetting(Landroid/content/ComponentName;I)I
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # I
 
     sget-object v1, Lcom/android/server/pm/PackageManagerService;->sUserManager:Lcom/android/server/pm/UserManagerService;
 
@@ -51763,9 +51072,6 @@
 
 .method public getContainerAllowPackageNamesFromSEContainer(III)[Ljava/lang/String;
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     invoke-static {p1, p2, p3}, Lcom/android/server/pm/SELinuxMMAC;->getContainerAllowPackageNamesFromSEContainer(III)[Ljava/lang/String;
 
@@ -51776,7 +51082,6 @@
 
 .method getDataPathForUser(I)Ljava/io/File;
     .locals 3
-    .param p1    # I
 
     new-instance v0, Ljava/io/File;
 
@@ -51870,7 +51175,6 @@
 
 .method public getFlagsForUid(I)I
     .locals 7
-    .param p1    # I
 
     iget-object v5, p0, Lcom/android/server/pm/PackageManagerService;->mPackages:Ljava/util/HashMap;
 
@@ -51943,7 +51247,6 @@
 
 .method public getGrantedPermissions(Ljava/lang/String;)Ljava/util/List;
     .locals 5
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -52171,8 +51474,6 @@
 
 .method public getInstalledApplications(II)Landroid/content/pm/ParceledListSlice;
     .locals 12
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II)",
@@ -52411,8 +51712,6 @@
 
 .method public getInstalledPackages(II)Landroid/content/pm/ParceledListSlice;
     .locals 9
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II)",
@@ -52605,7 +51904,6 @@
 
 .method public getInstallerPackageName(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -52667,8 +51965,6 @@
 
 .method public getInstrumentationInfo(Landroid/content/ComponentName;I)Landroid/content/pm/InstrumentationInfo;
     .locals 10
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # I
 
     const-wide/16 v8, 0x64
 
@@ -52801,9 +52097,6 @@
 
 .method public getLastChosenActivity(Landroid/content/Intent;Ljava/lang/String;I)Landroid/content/pm/ResolveInfo;
     .locals 10
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     const/4 v5, 0x0
 
@@ -52846,7 +52139,6 @@
 
 .method public getManagedPermissions(Ljava/lang/String;)[Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -52883,8 +52175,6 @@
 
 .method public getMyContainerIDs(Ljava/lang/String;Ljava/lang/String;)Ljava/util/HashSet;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -52907,7 +52197,6 @@
 
 .method public getNameForUid(I)Ljava/lang/String;
     .locals 7
-    .param p1    # I
 
     iget-object v5, p0, Lcom/android/server/pm/PackageManagerService;->mPackages:Ljava/util/HashMap;
 
@@ -53004,7 +52293,6 @@
 
 .method public getPackageGids(Ljava/lang/String;)[I
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     iget-object v3, p0, Lcom/android/server/pm/PackageManagerService;->mPackages:Ljava/util/HashMap;
 
@@ -53087,9 +52375,6 @@
 
 .method public getPackageInfo(Ljava/lang/String;II)Landroid/content/pm/PackageInfo;
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v1, 0x0
 
@@ -53195,9 +52480,6 @@
 
 .method public getPackageNamesFromSEContainerID(III)[Ljava/lang/String;
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     invoke-static {p1, p2, p3}, Lcom/android/server/pm/SELinuxMMAC;->getPackageNamesFromSEContainerID(III)[Ljava/lang/String;
 
@@ -53208,9 +52490,6 @@
 
 .method public getPackageSizeInfo(Ljava/lang/String;ILandroid/content/pm/IPackageStatsObserver;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Landroid/content/pm/IPackageStatsObserver;
 
     iget-object v2, p0, Lcom/android/server/pm/PackageManagerService;->mContext:Landroid/content/Context;
 
@@ -53247,8 +52526,6 @@
 
 .method public getPackageUid(Ljava/lang/String;I)I
     .locals 12
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v6, -0x1
 
@@ -53574,7 +52851,6 @@
 
 .method public getPackagesForUid(I)[Ljava/lang/String;
     .locals 12
-    .param p1    # I
 
     invoke-static {p1}, Landroid/os/UserHandle;->getAppId(I)I
 
@@ -53695,9 +52971,6 @@
 
 .method public getPackagesHoldingPermissions([Ljava/lang/String;II)Landroid/content/pm/ParceledListSlice;
     .locals 11
-    .param p1    # [Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([",
@@ -53863,8 +53136,6 @@
 
 .method public getPermissionGroupInfo(Ljava/lang/String;I)Landroid/content/pm/PermissionGroupInfo;
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     iget-object v1, p0, Lcom/android/server/pm/PackageManagerService;->mPackages:Ljava/util/HashMap;
 
@@ -53899,8 +53170,6 @@
 
 .method public getPermissionInfo(Ljava/lang/String;I)Landroid/content/pm/PermissionInfo;
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     iget-object v2, p0, Lcom/android/server/pm/PackageManagerService;->mPackages:Ljava/util/HashMap;
 
@@ -53947,7 +53216,6 @@
 
 .method public getPersistentApplications(I)Ljava/util/List;
     .locals 14
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -54163,7 +53431,6 @@
 
 .method public getPreferredActivities(Ljava/util/List;Ljava/util/List;Ljava/lang/String;)I
     .locals 7
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -54283,7 +53550,6 @@
 
 .method public getPreferredPackages(I)Ljava/util/List;
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -54303,9 +53569,6 @@
 
 .method public getProviderInfo(Landroid/content/ComponentName;II)Landroid/content/pm/ProviderInfo;
     .locals 9
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # I
-    .param p3    # I
 
     const/high16 v8, 0x10000000
 
@@ -54470,9 +53733,6 @@
 
 .method public getReceiverInfo(Landroid/content/ComponentName;II)Landroid/content/pm/ActivityInfo;
     .locals 10
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # I
-    .param p3    # I
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
@@ -54898,11 +54158,6 @@
 
 .method public getSEContainerIDFromPackageName(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;II)I
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
-    .param p5    # I
 
     invoke-static {p1, p2, p3, p4, p5}, Lcom/android/server/pm/SELinuxMMAC;->getSEContainerIDFromPackageName(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;II)I
 
@@ -54913,11 +54168,6 @@
 
 .method public getSEContainerIDsFromContainerAllowPackage(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;II)[I
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
-    .param p5    # I
 
     invoke-static {p1, p2, p3, p4, p5}, Lcom/android/server/pm/SELinuxMMAC;->getSEContainerIDsFromContainerAllowPackage(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;II)[I
 
@@ -54928,7 +54178,6 @@
 
 .method public getSecretPackageList(I)Ljava/util/List;
     .locals 4
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -55043,9 +54292,6 @@
 
 .method public getServiceInfo(Landroid/content/ComponentName;II)Landroid/content/pm/ServiceInfo;
     .locals 9
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # I
-    .param p3    # I
 
     const/high16 v8, 0x10000000
 
@@ -55462,7 +54708,6 @@
 
 .method public getSystemFeatureLevel(Ljava/lang/String;)I
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v2, p0, Lcom/android/server/pm/PackageManagerService;->mPackages:Ljava/util/HashMap;
 
@@ -55551,7 +54796,6 @@
 
 .method public getUidForSharedUser(Ljava/lang/String;)I
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, -0x1
 
@@ -55645,8 +54889,6 @@
 
 .method public grantPermission(Ljava/lang/String;Ljava/lang/String;)V
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v4, p0, Lcom/android/server/pm/PackageManagerService;->mContext:Landroid/content/Context;
 
@@ -55806,7 +55048,6 @@
 
 .method public hasSystemFeature(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/server/pm/PackageManagerService;->mPackages:Ljava/util/HashMap;
 
@@ -55843,8 +55084,6 @@
 
 .method installApplicationsForPersonaLILPw(ILjava/io/File;Ljava/util/List;)V
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/io/File;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -55880,8 +55119,6 @@
 
 .method public installExistingPackageAsUser(Ljava/lang/String;I)I
     .locals 12
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     iget-object v8, p0, Lcom/android/server/pm/PackageManagerService;->mContext:Landroid/content/Context;
 
@@ -56243,8 +55480,6 @@
 
 .method public installExistingPackageAsUserForMDM(Ljava/lang/String;I)I
     .locals 11
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v7, 0x1
 
@@ -56439,8 +55674,6 @@
 
 .method public installExistingPackageForPersona(ILjava/lang/String;)I
     .locals 12
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -56630,9 +55863,6 @@
 
 .method public installPackage(Landroid/net/Uri;Landroid/content/pm/IPackageInstallObserver;I)V
     .locals 1
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Landroid/content/pm/IPackageInstallObserver;
-    .param p3    # I
 
     const/4 v0, 0x0
 
@@ -56643,10 +55873,6 @@
 
 .method public installPackage(Landroid/net/Uri;Landroid/content/pm/IPackageInstallObserver;ILjava/lang/String;)V
     .locals 8
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Landroid/content/pm/IPackageInstallObserver;
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
 
     const/4 v5, 0x0
 
@@ -56671,11 +55897,6 @@
 
 .method public installPackageForMDM(Landroid/net/Uri;Landroid/content/pm/IPackageInstallObserver;IILjava/lang/String;)V
     .locals 14
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Landroid/content/pm/IPackageInstallObserver;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Ljava/lang/String;
 
     invoke-static {}, Landroid/os/Binder;->getCallingUid()I
 
@@ -56808,13 +56029,6 @@
 
 .method public installPackageForPersonaWithVerificationAndEncryption(ILandroid/net/Uri;Landroid/content/pm/IPackageInstallObserver;ILjava/lang/String;Landroid/content/pm/VerificationParams;Landroid/content/pm/ContainerEncryptionParams;)V
     .locals 14
-    .param p1    # I
-    .param p2    # Landroid/net/Uri;
-    .param p3    # Landroid/content/pm/IPackageInstallObserver;
-    .param p4    # I
-    .param p5    # Ljava/lang/String;
-    .param p6    # Landroid/content/pm/VerificationParams;
-    .param p7    # Landroid/content/pm/ContainerEncryptionParams;
 
     invoke-static {}, Landroid/os/Binder;->getCallingUid()I
 
@@ -56937,13 +56151,6 @@
 
 .method public installPackageWithVerification(Landroid/net/Uri;Landroid/content/pm/IPackageInstallObserver;ILjava/lang/String;Landroid/net/Uri;Landroid/content/pm/ManifestDigest;Landroid/content/pm/ContainerEncryptionParams;)V
     .locals 8
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Landroid/content/pm/IPackageInstallObserver;
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
-    .param p5    # Landroid/net/Uri;
-    .param p6    # Landroid/content/pm/ManifestDigest;
-    .param p7    # Landroid/content/pm/ContainerEncryptionParams;
 
     const/4 v2, 0x0
 
@@ -56980,12 +56187,6 @@
 
 .method public installPackageWithVerificationAndEncryption(Landroid/net/Uri;Landroid/content/pm/IPackageInstallObserver;ILjava/lang/String;Landroid/content/pm/VerificationParams;Landroid/content/pm/ContainerEncryptionParams;)V
     .locals 20
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Landroid/content/pm/IPackageInstallObserver;
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
-    .param p5    # Landroid/content/pm/VerificationParams;
-    .param p6    # Landroid/content/pm/ContainerEncryptionParams;
 
     move-object/from16 v0, p0
 
@@ -57707,7 +56908,6 @@
 
 .method public isManagedPermissionAlertDialogEnabled(Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -57779,8 +56979,6 @@
 
 .method public isPackageAvailable(Ljava/lang/String;I)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v3, 0x0
 
@@ -57859,10 +57057,6 @@
 
 .method public isPackageComponentAvailable(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)Z
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
 
     const/4 v5, 0x1
 
@@ -58098,7 +57292,6 @@
 
 .method public isPackageInstalled(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/server/pm/PackageManagerService;->mPackages:Ljava/util/HashMap;
 
@@ -58139,7 +57332,6 @@
 
 .method public isPermissionEnforced(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -58150,7 +57342,6 @@
 
 .method public isProtectedBroadcast(Ljava/lang/String;)Z
     .locals 9
-    .param p1    # Ljava/lang/String;
 
     const-wide/16 v7, 0x64
 
@@ -58277,7 +57468,6 @@
 
 .method public isSEContainerActivated(I)Z
     .locals 1
-    .param p1    # I
 
     invoke-static {p1}, Lcom/android/server/pm/SELinuxMMAC;->isSEContainerActivated(I)Z
 
@@ -58330,9 +57520,6 @@
 
 .method public movePackage(Ljava/lang/String;Landroid/content/pm/IPackageMoveObserver;I)V
     .locals 16
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/pm/IPackageMoveObserver;
-    .param p3    # I
 
     sget-boolean v2, Lcom/android/server/pm/PackageManagerService;->DEBUG_DEV:Z
 
@@ -58776,7 +57963,6 @@
 
 .method public nextPackageToClean(Landroid/content/pm/PackageCleanItem;)Landroid/content/pm/PackageCleanItem;
     .locals 4
-    .param p1    # Landroid/content/pm/PackageCleanItem;
 
     const/4 v1, 0x0
 
@@ -58844,10 +58030,6 @@
 
 .method public onTransact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/os/Parcel;
-    .param p3    # Landroid/os/Parcel;
-    .param p4    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -59077,7 +58259,6 @@
 
 .method public performDexOpt(Ljava/lang/String;)Z
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x1
 
@@ -59170,9 +58351,6 @@
 
 .method public queryContentProviders(Ljava/lang/String;II)Ljava/util/List;
     .locals 15
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -59442,8 +58620,6 @@
 
 .method public queryInstrumentation(Ljava/lang/String;I)Ljava/util/List;
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -59532,10 +58708,6 @@
 
 .method public queryIntentActivities(Landroid/content/Intent;Ljava/lang/String;II)Ljava/util/List;
     .locals 20
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -59849,13 +59021,6 @@
 
 .method public queryIntentActivityOptions(Landroid/content/ComponentName;[Landroid/content/Intent;[Ljava/lang/String;Landroid/content/Intent;Ljava/lang/String;II)Ljava/util/List;
     .locals 24
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # [Landroid/content/Intent;
-    .param p3    # [Ljava/lang/String;
-    .param p4    # Landroid/content/Intent;
-    .param p5    # Ljava/lang/String;
-    .param p6    # I
-    .param p7    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -60409,10 +59574,6 @@
 
 .method public queryIntentContentProviders(Landroid/content/Intent;Ljava/lang/String;II)Ljava/util/List;
     .locals 17
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -60589,10 +59750,6 @@
 
 .method public queryIntentReceivers(Landroid/content/Intent;Ljava/lang/String;II)Ljava/util/List;
     .locals 21
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -61042,10 +60199,6 @@
 
 .method public queryIntentServices(Landroid/content/Intent;Ljava/lang/String;II)Ljava/util/List;
     .locals 17
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -61222,8 +60375,6 @@
 
 .method public queryPermissionsByGroup(Ljava/lang/String;I)Ljava/util/List;
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -61547,8 +60698,6 @@
 
 .method readPermission(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)V
     .locals 12
-    .param p1    # Lorg/xmlpull/v1/XmlPullParser;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -62094,8 +61243,6 @@
 
 .method removeInstalledPackageLI(Landroid/content/pm/PackageParser$Package;Z)V
     .locals 4
-    .param p1    # Landroid/content/pm/PackageParser$Package;
-    .param p2    # Z
 
     iget-object v1, p0, Lcom/android/server/pm/PackageManagerService;->mPackages:Ljava/util/HashMap;
 
@@ -62210,9 +61357,6 @@
 
 .method public removeMyContainerID(Ljava/lang/String;Ljava/lang/String;I)I
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     invoke-static {p1, p2, p3}, Lcom/android/server/pm/SELinuxMMAC;->removeMyContainerID(Ljava/lang/String;Ljava/lang/String;I)I
 
@@ -62223,7 +61367,6 @@
 
 .method public removePackageFromPreferred(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "PackageManager"
 
@@ -62236,8 +61379,6 @@
 
 .method removePackageLI(Lcom/android/server/pm/PackageSetting;Z)V
     .locals 5
-    .param p1    # Lcom/android/server/pm/PackageSetting;
-    .param p2    # Z
 
     iget-object v3, p0, Lcom/android/server/pm/PackageManagerService;->mPackages:Ljava/util/HashMap;
 
@@ -62345,7 +61486,6 @@
 
 .method public removePermission(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     iget-object v2, p0, Lcom/android/server/pm/PackageManagerService;->mPackages:Ljava/util/HashMap;
 
@@ -62427,8 +61567,6 @@
 
 .method public removeSecretPackage(Ljava/lang/String;I)Z
     .locals 16
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     sget-object v1, Lcom/android/server/pm/PackageManagerService;->sUserManager:Lcom/android/server/pm/UserManagerService;
 
@@ -62675,10 +61813,6 @@
 
 .method public replacePreferredActivity(Landroid/content/IntentFilter;I[Landroid/content/ComponentName;Landroid/content/ComponentName;)V
     .locals 14
-    .param p1    # Landroid/content/IntentFilter;
-    .param p2    # I
-    .param p3    # [Landroid/content/ComponentName;
-    .param p4    # Landroid/content/ComponentName;
 
     invoke-virtual {p1}, Landroid/content/IntentFilter;->countActions()I
 
@@ -62924,7 +62058,6 @@
 
 .method public resetPreferredActivities(I)V
     .locals 4
-    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -62973,9 +62106,6 @@
 
 .method public resolveContentProvider(Ljava/lang/String;II)Landroid/content/pm/ProviderInfo;
     .locals 12
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     const-wide/16 v10, 0x64
 
@@ -63227,10 +62357,6 @@
 
 .method public resolveIntent(Landroid/content/Intent;Ljava/lang/String;II)Landroid/content/pm/ResolveInfo;
     .locals 6
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
 
     sget-object v0, Lcom/android/server/pm/PackageManagerService;->sUserManager:Lcom/android/server/pm/UserManagerService;
 
@@ -63279,10 +62405,6 @@
 
 .method public resolveService(Landroid/content/Intent;Ljava/lang/String;II)Landroid/content/pm/ResolveInfo;
     .locals 4
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
 
     const/4 v1, 0x0
 
@@ -63326,7 +62448,6 @@
 
 .method public revokeExternalPermissions(Landroid/content/pm/ResolveInfo;Ljava/util/List;)I
     .locals 13
-    .param p1    # Landroid/content/pm/ResolveInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -63556,8 +62677,6 @@
 
 .method public revokePermission(Ljava/lang/String;Ljava/lang/String;)V
     .locals 21
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v7, -0x1
 
@@ -63913,7 +63032,6 @@
 
 .method public revokePermissionEDM(Ljava/lang/String;Ljava/util/List;)Ljava/util/List;
     .locals 3
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -63962,7 +63080,6 @@
 
 .method public rollbackPermission(Ljava/lang/String;Ljava/util/List;)Ljava/util/List;
     .locals 3
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -64029,9 +63146,6 @@
 
 .method schedulePackageCleaning(Ljava/lang/String;IZ)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Z
 
     iget-object v1, p0, Lcom/android/server/pm/PackageManagerService;->mHandler:Lcom/android/server/pm/PackageManagerService$PackageHandler;
 
@@ -64060,7 +63174,6 @@
 
 .method scheduleWritePackageRestrictionsLocked(I)V
     .locals 4
-    .param p1    # I
 
     const/16 v3, 0xe
 
@@ -64127,9 +63240,6 @@
 
 .method public setApplicationBlockedSettingAsUser(Ljava/lang/String;ZI)Z
     .locals 11
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # I
 
     const/4 v6, 0x0
 
@@ -64337,11 +63447,6 @@
 
 .method public setApplicationEnabledSetting(Ljava/lang/String;IIILjava/lang/String;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Ljava/lang/String;
 
     sget-object v0, Lcom/android/server/pm/PackageManagerService;->sUserManager:Lcom/android/server/pm/UserManagerService;
 
@@ -64376,10 +63481,6 @@
 
 .method public setApplicationEnabledSettingWithList(Ljava/util/List;IIILjava/lang/String;)V
     .locals 23
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -64837,10 +63938,6 @@
 
 .method public setComponentEnabledSetting(Landroid/content/ComponentName;III)V
     .locals 7
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     sget-object v0, Lcom/android/server/pm/PackageManagerService;->sUserManager:Lcom/android/server/pm/UserManagerService;
 
@@ -64879,7 +63976,6 @@
 
 .method public setInstallLocation(I)Z
     .locals 4
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -64930,8 +64026,6 @@
 
 .method public setInstallerPackageName(Ljava/lang/String;Ljava/lang/String;)V
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-static {}, Landroid/os/Binder;->getCallingUid()I
 
@@ -65228,12 +64322,6 @@
 
 .method public setLastChosenActivity(Landroid/content/Intent;Ljava/lang/String;ILandroid/content/IntentFilter;ILandroid/content/ComponentName;)V
     .locals 21
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Landroid/content/IntentFilter;
-    .param p5    # I
-    .param p6    # Landroid/content/ComponentName;
 
     invoke-static {}, Landroid/os/UserHandle;->getCallingUserId()I
 
@@ -65296,7 +64384,6 @@
 
 .method setLastScanError(Lcom/android/server/pm/PackageSetting;)V
     .locals 1
-    .param p1    # Lcom/android/server/pm/PackageSetting;
 
     if-eqz p1, :cond_0
 
@@ -65314,7 +64401,6 @@
 
 .method public setLicensePermissions(Ljava/lang/String;)I
     .locals 14
-    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Landroid/os/Binder;->getCallingUid()I
 
@@ -65708,9 +64794,6 @@
 
 .method public setPackageStoppedState(Ljava/lang/String;ZI)V
     .locals 12
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # I
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
@@ -65931,7 +65014,6 @@
 
 .method public setPermissionAlertDialogEnableType(I)V
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0}, Lcom/android/server/pm/PackageManagerService;->enforceCMPermissionCheck()Z
 
@@ -65949,8 +65031,6 @@
 
 .method public setPermissionEnforced(Ljava/lang/String;Z)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     iget-object v3, p0, Lcom/android/server/pm/PackageManagerService;->mContext:Landroid/content/Context;
 
@@ -66081,7 +65161,6 @@
 
 .method public setSecretPackageList(Ljava/util/List;I)V
     .locals 11
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -66541,8 +65620,6 @@
 
 .method unInstallSystemApplicationsForPersonaLILPw(ILjava/io/File;Ljava/util/List;)I
     .locals 7
-    .param p1    # I
-    .param p2    # Ljava/io/File;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -66582,7 +65659,6 @@
 
 .method public updateAppInfoForPackage(Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     iget-object v2, p0, Lcom/android/server/pm/PackageManagerService;->mPackages:Ljava/util/HashMap;
 
@@ -66655,9 +65731,6 @@
 
 .method public updateAppInfoForPackage(Ljava/lang/String;IZ)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Z
 
     iget-object v2, p0, Lcom/android/server/pm/PackageManagerService;->mPackages:Ljava/util/HashMap;
 
@@ -66806,8 +65879,6 @@
 
 .method public updateExternalMediaStatus(ZZ)V
     .locals 7
-    .param p1    # Z
-    .param p2    # Z
 
     const-string v3, "PackageManager"
 
@@ -67004,9 +66075,6 @@
 
 .method public updateManagedPermissionOfPackage(I[Ljava/lang/String;Ljava/lang/String;)V
     .locals 9
-    .param p1    # I
-    .param p2    # [Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const/4 v8, 0x1
 
@@ -67283,8 +66351,6 @@
 
 .method public verifyPendingInstall(II)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

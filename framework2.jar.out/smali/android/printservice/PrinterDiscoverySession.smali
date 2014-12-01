@@ -763,7 +763,6 @@
 
 .method setObserver(Landroid/printservice/IPrintServiceClient;)V
     .locals 4
-    .param p1    # Landroid/printservice/IPrintServiceClient;
 
     iput-object p1, p0, Landroid/printservice/PrinterDiscoverySession;->mObserver:Landroid/printservice/IPrintServiceClient;
 
@@ -843,7 +842,6 @@
 
 .method startPrinterStateTracking(Landroid/print/PrinterId;)V
     .locals 1
-    .param p1    # Landroid/print/PrinterId;
 
     iget-boolean v0, p0, Landroid/printservice/PrinterDiscoverySession;->mIsDestroyed:Z
 
@@ -890,7 +888,6 @@
 
 .method stopPrinterStateTracking(Landroid/print/PrinterId;)V
     .locals 1
-    .param p1    # Landroid/print/PrinterId;
 
     iget-boolean v0, p0, Landroid/printservice/PrinterDiscoverySession;->mIsDestroyed:Z
 

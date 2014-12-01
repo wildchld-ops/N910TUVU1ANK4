@@ -29,10 +29,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/media/TextTrackCue;Landroid/view/accessibility/CaptioningManager$CaptionStyle;F)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/media/TextTrackCue;
-    .param p3    # Landroid/view/accessibility/CaptioningManager$CaptionStyle;
-    .param p4    # F
 
     const/4 v1, 0x0
 
@@ -129,7 +125,6 @@
 
 .method static synthetic access$000(Landroid/media/WebVttRenderingWidget$CueLayout;)I
     .locals 1
-    .param p0    # Landroid/media/WebVttRenderingWidget$CueLayout;
 
     iget v0, p0, Landroid/media/WebVttRenderingWidget$CueLayout;->mOrder:I
 
@@ -156,8 +151,6 @@
 
 .method public measureForParent(II)V
     .locals 10
-    .param p1    # I
-    .param p2    # I
 
     const/high16 v9, -0x80000000
 
@@ -258,8 +251,6 @@
 
 .method protected onMeasure(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     invoke-super {p0, p1, p2}, Landroid/widget/LinearLayout;->onMeasure(II)V
 
@@ -278,8 +269,6 @@
 
 .method public setCaptionStyle(Landroid/view/accessibility/CaptioningManager$CaptionStyle;F)V
     .locals 4
-    .param p1    # Landroid/view/accessibility/CaptioningManager$CaptionStyle;
-    .param p2    # F
 
     iput-object p1, p0, Landroid/media/WebVttRenderingWidget$CueLayout;->mCaptionStyle:Landroid/view/accessibility/CaptioningManager$CaptionStyle;
 
@@ -317,7 +306,6 @@
 
 .method public setOrder(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/media/WebVttRenderingWidget$CueLayout;->mOrder:I
 

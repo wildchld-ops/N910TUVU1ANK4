@@ -59,13 +59,13 @@
 
     invoke-direct {p0, v2, v4}, Lcom/android/phone/callsettings/SoundEQDialog;->log(Ljava/lang/String;Z)V
 
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/SoundEQDialog;->finish()V
 
     :goto_0
     return-void
 
     :cond_0
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/SoundEQDialog;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v2
 
@@ -85,7 +85,7 @@
     goto :goto_0
 
     :pswitch_0
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/SoundEQDialog;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 
@@ -121,7 +121,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
+    invoke-virtual {v1}, Landroid/app/AlertDialog;->getWindow()Landroid/view/Window;
 
     move-result-object v2
 
@@ -129,12 +129,12 @@
 
     invoke-virtual {v2, v3}, Landroid/view/Window;->addFlags(I)V
 
-    invoke-virtual {v1}, Landroid/app/Dialog;->show()V
+    invoke-virtual {v1}, Landroid/app/AlertDialog;->show()V
 
     goto :goto_0
 
     :cond_2
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/SoundEQDialog;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 
@@ -142,7 +142,7 @@
 
     invoke-static {v2, v3, v4}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/SoundEQDialog;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 
@@ -152,12 +152,12 @@
 
     invoke-static {v4, v4}, Lcom/android/phone/PhoneUtils;->setVoiceCallEq(ZZ)V
 
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/SoundEQDialog;->finish()V
 
     goto :goto_0
 
     :pswitch_1
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/SoundEQDialog;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 
@@ -165,7 +165,7 @@
 
     invoke-static {v2, v3, v5}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/SoundEQDialog;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 
@@ -175,7 +175,7 @@
 
     invoke-static {v4, v4}, Lcom/android/phone/PhoneUtils;->setVoiceCallEq(ZZ)V
 
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/SoundEQDialog;->finish()V
 
     goto :goto_0
 
@@ -204,7 +204,7 @@
     return-void
 
     :pswitch_0
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/SoundEQDialog;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 
@@ -240,7 +240,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
+    invoke-virtual {v1}, Landroid/app/AlertDialog;->getWindow()Landroid/view/Window;
 
     move-result-object v2
 
@@ -248,12 +248,12 @@
 
     invoke-virtual {v2, v3}, Landroid/view/Window;->addFlags(I)V
 
-    invoke-virtual {v1}, Landroid/app/Dialog;->show()V
+    invoke-virtual {v1}, Landroid/app/AlertDialog;->show()V
 
     goto :goto_0
 
     :cond_0
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/SoundEQDialog;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 
@@ -263,7 +263,7 @@
 
     invoke-static {v2, v3, v4}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/SoundEQDialog;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 
@@ -271,7 +271,7 @@
 
     invoke-static {v2, v3, v5}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/SoundEQDialog;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 
@@ -281,12 +281,12 @@
 
     invoke-static {v5, v5}, Lcom/android/phone/PhoneUtils;->setVoiceCallEq(ZZ)V
 
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/SoundEQDialog;->finish()V
 
     goto :goto_0
 
     :pswitch_1
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/SoundEQDialog;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 
@@ -294,7 +294,7 @@
 
     invoke-static {v2, v3, v4}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/SoundEQDialog;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 
@@ -304,7 +304,7 @@
 
     invoke-static {v5, v5}, Lcom/android/phone/PhoneUtils;->setVoiceCallEq(ZZ)V
 
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/SoundEQDialog;->finish()V
 
     goto :goto_0
 
@@ -323,7 +323,7 @@
 .method init()V
     .locals 5
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/SoundEQDialog;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v3
 
@@ -333,7 +333,7 @@
 
     if-eqz v3, :cond_0
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/SoundEQDialog;->getResources()Landroid/content/res/Resources;
 
     move-result-object v3
 
@@ -344,9 +344,9 @@
     move-result-object v1
 
     :goto_0
-    iget-object v0, p0, Lcom/android/internal/app/AlertActivity;->mAlertParams:Lcom/android/internal/app/AlertController$AlertParams;
+    iget-object v0, p0, Lcom/android/phone/callsettings/SoundEQDialog;->mAlertParams:Lcom/android/internal/app/AlertController$AlertParams;
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/SoundEQDialog;->getResources()Landroid/content/res/Resources;
 
     move-result-object v2
 
@@ -380,12 +380,12 @@
 
     iput v3, v0, Lcom/android/internal/app/AlertController$AlertParams;->mCheckedItem:I
 
-    invoke-virtual {p0}, Lcom/android/internal/app/AlertActivity;->setupAlert()V
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/SoundEQDialog;->setupAlert()V
 
     return-void
 
     :cond_0
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/SoundEQDialog;->getResources()Landroid/content/res/Resources;
 
     move-result-object v3
 
@@ -430,7 +430,7 @@
 
     iget-object v1, p0, Lcom/android/phone/callsettings/SoundEQDialog;->mIntentFilter:Landroid/content/IntentFilter;
 
-    invoke-virtual {p0, v0, v1}, Landroid/content/ContextWrapper;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
+    invoke-virtual {p0, v0, v1}, Lcom/android/phone/callsettings/SoundEQDialog;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
     invoke-static {}, Lcom/android/phone/PhoneUtilsCommon;->isPossibleEnableMySound()Z
 
@@ -444,7 +444,7 @@
 
     invoke-direct {p0, v0, v1}, Lcom/android/phone/callsettings/SoundEQDialog;->log(Ljava/lang/String;Z)V
 
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/SoundEQDialog;->finish()V
 
     :goto_0
     return-void
@@ -458,11 +458,11 @@
 .method protected onDestroy()V
     .locals 1
 
-    invoke-super {p0}, Landroid/app/Activity;->onDestroy()V
+    invoke-super {p0}, Lcom/android/internal/app/AlertActivity;->onDestroy()V
 
     iget-object v0, p0, Lcom/android/phone/callsettings/SoundEQDialog;->mIntentReceiver:Landroid/content/BroadcastReceiver;
 
-    invoke-virtual {p0, v0}, Landroid/content/ContextWrapper;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/callsettings/SoundEQDialog;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
     return-void
 .end method

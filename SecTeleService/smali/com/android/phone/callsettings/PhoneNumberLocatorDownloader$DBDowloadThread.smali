@@ -342,7 +342,7 @@
 
     move-object/from16 v1, v45
 
-    invoke-virtual {v0, v1, v5}, Lorg/apache/http/message/AbstractHttpMessage;->setHeader(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v5}, Lorg/apache/http/client/methods/HttpGet;->setHeader(Ljava/lang/String;Ljava/lang/String;)V
 
     const/16 v29, 0x0
 
@@ -613,7 +613,7 @@
     if-eqz v39, :cond_0
 
     :try_start_5
-    throw v39
+    invoke-virtual/range {v39 .. v39}, Ljava/io/FileOutputStream;->close()V
     :try_end_5
     .catch Ljava/io/IOException; {:try_start_5 .. :try_end_5} :catch_0
 
@@ -866,7 +866,7 @@
 
     move-object/from16 v44, v0
 
-    invoke-virtual/range {v44 .. v44}, Lorg/apache/http/client/methods/HttpRequestBase;->abort()V
+    invoke-virtual/range {v44 .. v44}, Lorg/apache/http/client/methods/HttpGet;->abort()V
     :try_end_9
     .catch Ljava/lang/Exception; {:try_start_9 .. :try_end_9} :catch_3
     .catchall {:try_start_9 .. :try_end_9} :catchall_0
@@ -1046,7 +1046,7 @@
 
     move-object/from16 v44, v0
 
-    invoke-virtual/range {v44 .. v44}, Lorg/apache/http/client/methods/HttpRequestBase;->abort()V
+    invoke-virtual/range {v44 .. v44}, Lorg/apache/http/client/methods/HttpGet;->abort()V
     :try_end_c
     .catch Ljava/lang/Exception; {:try_start_c .. :try_end_c} :catch_3
     .catchall {:try_start_c .. :try_end_c} :catchall_0
@@ -1193,7 +1193,7 @@
 
     move-object/from16 v44, v0
 
-    invoke-virtual/range {v44 .. v44}, Lorg/apache/http/client/methods/HttpRequestBase;->abort()V
+    invoke-virtual/range {v44 .. v44}, Lorg/apache/http/client/methods/HttpGet;->abort()V
 
     move-object/from16 v0, p0
 
@@ -1357,7 +1357,7 @@
 
     move-object/from16 v44, v0
 
-    invoke-virtual/range {v44 .. v44}, Lorg/apache/http/client/methods/HttpRequestBase;->abort()V
+    invoke-virtual/range {v44 .. v44}, Lorg/apache/http/client/methods/HttpGet;->abort()V
     :try_end_14
     .catch Ljava/lang/Exception; {:try_start_14 .. :try_end_14} :catch_3
     .catchall {:try_start_14 .. :try_end_14} :catchall_0
@@ -1466,7 +1466,7 @@
 
     move-object/from16 v44, v0
 
-    invoke-virtual/range {v44 .. v44}, Lorg/apache/http/client/methods/HttpRequestBase;->abort()V
+    invoke-virtual/range {v44 .. v44}, Lorg/apache/http/client/methods/HttpGet;->abort()V
 
     goto :goto_9
 
@@ -1500,7 +1500,7 @@
 
     move-object/from16 v44, v0
 
-    invoke-virtual/range {v44 .. v44}, Lorg/apache/http/client/methods/HttpRequestBase;->abort()V
+    invoke-virtual/range {v44 .. v44}, Lorg/apache/http/client/methods/HttpGet;->abort()V
 
     move-object/from16 v0, p0
 
@@ -1931,7 +1931,7 @@
     :catch_0
     move-exception v1
 
-    invoke-virtual {v1}, Ljava/lang/Throwable;->printStackTrace()V
+    invoke-virtual {v1}, Ljava/lang/Exception;->printStackTrace()V
 
     goto :goto_0
 
@@ -1989,7 +1989,7 @@
     :catch_1
     move-exception v1
 
-    invoke-virtual {v1}, Ljava/lang/Throwable;->printStackTrace()V
+    invoke-virtual {v1}, Ljava/lang/Exception;->printStackTrace()V
 
     iget-object v11, p0, Lcom/android/phone/callsettings/PhoneNumberLocatorDownloader$DBDowloadThread;->this$0:Lcom/android/phone/callsettings/PhoneNumberLocatorDownloader;
 
@@ -2382,7 +2382,7 @@
     :catch_2
     move-exception v1
 
-    invoke-virtual {v1}, Ljava/lang/Throwable;->printStackTrace()V
+    invoke-virtual {v1}, Ljava/lang/Exception;->printStackTrace()V
 
     goto/16 :goto_4
 
@@ -2916,7 +2916,7 @@
 
     iput-boolean v0, p0, Lcom/android/phone/callsettings/PhoneNumberLocatorDownloader$DBDowloadThread;->isCanceledByUser:Z
 
-    invoke-virtual {p0}, Ljava/lang/Thread;->start()V
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/PhoneNumberLocatorDownloader$DBDowloadThread;->start()V
 
     return-void
 .end method
@@ -2934,7 +2934,7 @@
 
     iget-object v0, p0, Lcom/android/phone/callsettings/PhoneNumberLocatorDownloader$DBDowloadThread;->request:Lorg/apache/http/client/methods/HttpGet;
 
-    invoke-virtual {v0}, Lorg/apache/http/client/methods/HttpRequestBase;->abort()V
+    invoke-virtual {v0}, Lorg/apache/http/client/methods/HttpGet;->abort()V
 
     :cond_0
     return-void

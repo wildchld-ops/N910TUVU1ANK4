@@ -33,7 +33,6 @@
 # virtual methods
 .method public onScale(Lcom/sec/android/touchwiz/view/TwScaleGestureDetector;)Z
     .locals 1
-    .param p1    # Lcom/sec/android/touchwiz/view/TwScaleGestureDetector;
 
     const/4 v0, 0x1
 
@@ -42,7 +41,6 @@
 
 .method public onScaleBegin(Lcom/sec/android/touchwiz/view/TwScaleGestureDetector;)Z
     .locals 5
-    .param p1    # Lcom/sec/android/touchwiz/view/TwScaleGestureDetector;
 
     invoke-virtual {p1}, Lcom/sec/android/touchwiz/view/TwScaleGestureDetector;->getFocusX()F
 
@@ -81,7 +79,6 @@
 
 .method public onScaleEnd(Lcom/sec/android/touchwiz/view/TwScaleGestureDetector;)V
     .locals 0
-    .param p1    # Lcom/sec/android/touchwiz/view/TwScaleGestureDetector;
 
     return-void
 .end method

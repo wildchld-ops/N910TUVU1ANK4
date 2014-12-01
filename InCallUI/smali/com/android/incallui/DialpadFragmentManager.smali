@@ -50,7 +50,6 @@
 
 .method public constructor <init>(Lcom/android/incallui/InCallActivity;)V
     .locals 2
-    .param p1    # Lcom/android/incallui/InCallActivity;
 
     invoke-direct {p0, p1}, Lcom/android/incallui/BaseFragmentManager;-><init>(Lcom/android/incallui/InCallActivity;)V
 
@@ -83,7 +82,6 @@
 # virtual methods
 .method protected bridge synthetic checkAndSet(Z)Lcom/android/incallui/BaseFragment;
     .locals 1
-    .param p1    # Z
 
     invoke-virtual {p0, p1}, Lcom/android/incallui/DialpadFragmentManager;->checkAndSet(Z)Lcom/android/incallui/DialpadFragment;
 
@@ -94,7 +92,6 @@
 
 .method protected checkAndSet(Z)Lcom/android/incallui/DialpadFragment;
     .locals 10
-    .param p1    # Z
 
     const/4 v6, 0x0
 
@@ -432,7 +429,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 2
-    .param p1    # Landroid/content/res/Configuration;
 
     const/4 v1, 0x0
 
@@ -508,8 +504,6 @@
 
 .method public onStateChange(Lcom/android/incallui/InCallPresenter$InCallState;Lcom/android/incallui/CallList;)V
     .locals 1
-    .param p1    # Lcom/android/incallui/InCallPresenter$InCallState;
-    .param p2    # Lcom/android/incallui/CallList;
 
     const/4 v0, 0x0
 
@@ -520,7 +514,6 @@
 
 .method protected bridge synthetic setCurrentFragment(Lcom/android/incallui/BaseFragment;)V
     .locals 0
-    .param p1    # Lcom/android/incallui/BaseFragment;
 
     check-cast p1, Lcom/android/incallui/DialpadFragment;
 
@@ -531,7 +524,6 @@
 
 .method protected setCurrentFragment(Lcom/android/incallui/DialpadFragment;)V
     .locals 0
-    .param p1    # Lcom/android/incallui/DialpadFragment;
 
     iput-object p1, p0, Lcom/android/incallui/DialpadFragmentManager;->currentFragment:Lcom/android/incallui/DialpadFragment;
 
@@ -540,7 +532,6 @@
 
 .method public setDialpadOpen(Z)V
     .locals 1
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/incallui/DialpadFragmentManager;->mIsDialpadOpen:Z
 
@@ -553,8 +544,6 @@
 
 .method protected setFragment(Ljava/lang/Enum;Z)V
     .locals 4
-    .param p1    # Ljava/lang/Enum;
-    .param p2    # Z
 
     const v0, 0x7f0e0161
 

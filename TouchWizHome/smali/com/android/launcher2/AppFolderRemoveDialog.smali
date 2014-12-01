@@ -44,9 +44,6 @@
 
 .method private animateInItem(Lcom/android/launcher2/BaseItem;Lcom/android/launcher2/CellLayout;I)V
     .locals 6
-    .param p1    # Lcom/android/launcher2/BaseItem;
-    .param p2    # Lcom/android/launcher2/CellLayout;
-    .param p3    # I
 
     sget-boolean v3, Lcom/android/launcher2/AppFolderRemoveDialog;->mFromDrag:Z
 
@@ -158,8 +155,6 @@
 
 .method static createAndShow(Lcom/android/launcher2/AppFolderItem;Landroid/app/FragmentManager;)V
     .locals 2
-    .param p0    # Lcom/android/launcher2/AppFolderItem;
-    .param p1    # Landroid/app/FragmentManager;
 
     invoke-static {p1}, Lcom/android/launcher2/AppFolderRemoveDialog;->isActive(Landroid/app/FragmentManager;)Z
 
@@ -188,9 +183,6 @@
 
 .method static createAndShow(Lcom/android/launcher2/AppFolderItem;Landroid/app/FragmentManager;Z)V
     .locals 1
-    .param p0    # Lcom/android/launcher2/AppFolderItem;
-    .param p1    # Landroid/app/FragmentManager;
-    .param p2    # Z
 
     const/4 v0, 0x0
 
@@ -203,7 +195,6 @@
 
 .method static createAndShow(Ljava/util/List;Landroid/app/FragmentManager;)V
     .locals 2
-    .param p1    # Landroid/app/FragmentManager;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -249,8 +240,6 @@
 
 .method static dismiss(Landroid/app/FragmentTransaction;Landroid/app/FragmentManager;)V
     .locals 2
-    .param p0    # Landroid/app/FragmentTransaction;
-    .param p1    # Landroid/app/FragmentManager;
 
     const-string v1, "AppFolderRemoveDialog"
 
@@ -272,7 +261,6 @@
 
 .method static getCurrentInstance(Landroid/app/FragmentManager;)Lcom/android/launcher2/AppFolderRemoveDialog;
     .locals 1
-    .param p0    # Landroid/app/FragmentManager;
 
     const-string v0, "AppFolderRemoveDialog"
 
@@ -287,7 +275,6 @@
 
 .method static isActive(Landroid/app/FragmentManager;)Z
     .locals 1
-    .param p0    # Landroid/app/FragmentManager;
 
     const-string v0, "AppFolderRemoveDialog"
 
@@ -632,8 +619,6 @@
 
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 1
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     const/4 v0, -0x1
 
@@ -657,7 +642,6 @@
 
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
@@ -700,7 +684,6 @@
 
 .method public onDismiss(Landroid/content/DialogInterface;)V
     .locals 1
-    .param p1    # Landroid/content/DialogInterface;
 
     sget-object v0, Lcom/android/launcher2/AppFolderRemoveDialog;->mFolders:Ljava/util/List;
 

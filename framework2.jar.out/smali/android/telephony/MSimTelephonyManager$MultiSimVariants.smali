@@ -119,7 +119,6 @@
 
 .method public static valueOf(Ljava/lang/String;)Landroid/telephony/MSimTelephonyManager$MultiSimVariants;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-class v0, Landroid/telephony/MSimTelephonyManager$MultiSimVariants;
 

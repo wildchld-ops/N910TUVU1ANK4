@@ -59,7 +59,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Lcom/android/server/location/CountryDetectorBase;-><init>(Landroid/content/Context;)V
 
@@ -100,8 +99,6 @@
 
 .method static synthetic access$002(Lcom/android/server/location/ComprehensiveCountryDetector;Landroid/location/Country;)Landroid/location/Country;
     .locals 0
-    .param p0    # Lcom/android/server/location/ComprehensiveCountryDetector;
-    .param p1    # Landroid/location/Country;
 
     iput-object p1, p0, Lcom/android/server/location/ComprehensiveCountryDetector;->mCountryFromLocation:Landroid/location/Country;
 
@@ -110,9 +107,6 @@
 
 .method static synthetic access$100(Lcom/android/server/location/ComprehensiveCountryDetector;ZZ)Landroid/location/Country;
     .locals 1
-    .param p0    # Lcom/android/server/location/ComprehensiveCountryDetector;
-    .param p1    # Z
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/location/ComprehensiveCountryDetector;->detectCountry(ZZ)Landroid/location/Country;
 
@@ -123,7 +117,6 @@
 
 .method static synthetic access$200(Lcom/android/server/location/ComprehensiveCountryDetector;)V
     .locals 0
-    .param p0    # Lcom/android/server/location/ComprehensiveCountryDetector;
 
     invoke-direct {p0}, Lcom/android/server/location/ComprehensiveCountryDetector;->stopLocationBasedDetector()V
 
@@ -132,7 +125,6 @@
 
 .method static synthetic access$308(Lcom/android/server/location/ComprehensiveCountryDetector;)I
     .locals 2
-    .param p0    # Lcom/android/server/location/ComprehensiveCountryDetector;
 
     iget v0, p0, Lcom/android/server/location/ComprehensiveCountryDetector;->mCountServiceStateChanges:I
 
@@ -145,7 +137,6 @@
 
 .method static synthetic access$408(Lcom/android/server/location/ComprehensiveCountryDetector;)I
     .locals 2
-    .param p0    # Lcom/android/server/location/ComprehensiveCountryDetector;
 
     iget v0, p0, Lcom/android/server/location/ComprehensiveCountryDetector;->mTotalCountServiceStateChanges:I
 
@@ -158,7 +149,6 @@
 
 .method static synthetic access$500(Lcom/android/server/location/ComprehensiveCountryDetector;)Z
     .locals 1
-    .param p0    # Lcom/android/server/location/ComprehensiveCountryDetector;
 
     invoke-direct {p0}, Lcom/android/server/location/ComprehensiveCountryDetector;->isNetworkCountryCodeAvailable()Z
 
@@ -169,7 +159,6 @@
 
 .method private addToLogs(Landroid/location/Country;)V
     .locals 2
-    .param p1    # Landroid/location/Country;
 
     if-nez p1, :cond_0
 
@@ -272,8 +261,6 @@
 
 .method private detectCountry(ZZ)Landroid/location/Country;
     .locals 3
-    .param p1    # Z
-    .param p2    # Z
 
     invoke-direct {p0}, Lcom/android/server/location/ComprehensiveCountryDetector;->getCountry()Landroid/location/Country;
 
@@ -363,8 +350,6 @@
 
 .method private notifyIfCountryChanged(Landroid/location/Country;Landroid/location/Country;)V
     .locals 1
-    .param p1    # Landroid/location/Country;
-    .param p2    # Landroid/location/Country;
 
     if-eqz p2, :cond_1
 
@@ -436,7 +421,6 @@
 
 .method private declared-synchronized startLocationBasedDetector(Landroid/location/CountryListener;)V
     .locals 1
-    .param p1    # Landroid/location/CountryListener;
 
     monitor-enter p0
 
@@ -770,10 +754,6 @@
 
 .method runAfterDetection(Landroid/location/Country;Landroid/location/Country;ZZ)V
     .locals 2
-    .param p1    # Landroid/location/Country;
-    .param p2    # Landroid/location/Country;
-    .param p3    # Z
-    .param p4    # Z
 
     const/4 v1, 0x1
 
@@ -838,10 +818,6 @@
 
 .method protected runAfterDetectionAsync(Landroid/location/Country;Landroid/location/Country;ZZ)V
     .locals 7
-    .param p1    # Landroid/location/Country;
-    .param p2    # Landroid/location/Country;
-    .param p3    # Z
-    .param p4    # Z
 
     iget-object v6, p0, Lcom/android/server/location/CountryDetectorBase;->mHandler:Landroid/os/Handler;
 
@@ -866,7 +842,6 @@
 
 .method public setCountryListener(Landroid/location/CountryListener;)V
     .locals 5
-    .param p1    # Landroid/location/CountryListener;
 
     const/4 v3, 0x0
 

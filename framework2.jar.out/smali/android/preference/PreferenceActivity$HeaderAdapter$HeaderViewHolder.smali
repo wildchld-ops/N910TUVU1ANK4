@@ -33,7 +33,6 @@
 
 .method synthetic constructor <init>(Landroid/preference/PreferenceActivity$1;)V
     .locals 0
-    .param p1    # Landroid/preference/PreferenceActivity$1;
 
     invoke-direct {p0}, Landroid/preference/PreferenceActivity$HeaderAdapter$HeaderViewHolder;-><init>()V
 

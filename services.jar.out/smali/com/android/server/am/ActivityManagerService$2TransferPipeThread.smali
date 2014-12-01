@@ -27,9 +27,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/am/ActivityManagerService;Landroid/app/IApplicationThread;Ljava/io/FileDescriptor;[Ljava/lang/String;)V
     .locals 1
-    .param p2    # Landroid/app/IApplicationThread;
-    .param p3    # Ljava/io/FileDescriptor;
-    .param p4    # [Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/server/am/ActivityManagerService$2TransferPipeThread;->this$0:Lcom/android/server/am/ActivityManagerService;
 

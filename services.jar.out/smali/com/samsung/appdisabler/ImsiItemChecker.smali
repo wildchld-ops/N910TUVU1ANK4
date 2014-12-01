@@ -81,8 +81,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Lcom/samsung/appdisabler/ImsiItemChecker$ImsiItemCheckerFinish;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/samsung/appdisabler/ImsiItemChecker$ImsiItemCheckerFinish;
 
     invoke-direct {p0}, Ljava/lang/Thread;-><init>()V
 
@@ -127,7 +125,6 @@
 
 .method static synthetic access$200(Lcom/samsung/appdisabler/ImsiItemChecker;)V
     .locals 0
-    .param p0    # Lcom/samsung/appdisabler/ImsiItemChecker;
 
     invoke-direct {p0}, Lcom/samsung/appdisabler/ImsiItemChecker;->hideAppAfterTimeout()V
 
@@ -136,7 +133,6 @@
 
 .method static synthetic access$300(Lcom/samsung/appdisabler/ImsiItemChecker;)Lcom/samsung/appdisabler/ImsiItemChecker$CheckTimeoutHandler;
     .locals 1
-    .param p0    # Lcom/samsung/appdisabler/ImsiItemChecker;
 
     iget-object v0, p0, Lcom/samsung/appdisabler/ImsiItemChecker;->mActionHandler:Lcom/samsung/appdisabler/ImsiItemChecker$CheckTimeoutHandler;
 
@@ -145,9 +141,6 @@
 
 .method static synthetic access$400(Lcom/samsung/appdisabler/ImsiItemChecker;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/samsung/appdisabler/ImsiItemChecker;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Lcom/samsung/appdisabler/ImsiItemChecker;->showErrorDialog(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -156,7 +149,6 @@
 
 .method static synthetic access$500(Lcom/samsung/appdisabler/ImsiItemChecker;)Lcom/samsung/appdisabler/ImsiItemChecker$ImsiItemCheckerFinish;
     .locals 1
-    .param p0    # Lcom/samsung/appdisabler/ImsiItemChecker;
 
     iget-object v0, p0, Lcom/samsung/appdisabler/ImsiItemChecker;->mCallingObject:Lcom/samsung/appdisabler/ImsiItemChecker$ImsiItemCheckerFinish;
 
@@ -165,7 +157,6 @@
 
 .method static synthetic access$600(Lcom/samsung/appdisabler/ImsiItemChecker;)V
     .locals 0
-    .param p0    # Lcom/samsung/appdisabler/ImsiItemChecker;
 
     invoke-direct {p0}, Lcom/samsung/appdisabler/ImsiItemChecker;->receiveNetworkNumericFromDevice()V
 
@@ -174,7 +165,6 @@
 
 .method private changeAppVisibility(Ljava/util/Set;Z)V
     .locals 10
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1686,7 +1676,6 @@
 
 .method private sendErrorMsg(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const-string v1, "There is critical error in /system/csc/appDisablerList.xml configuration file, please check bellow message and fix before releasing PDA/CSC!\n\n\n"
 
@@ -1727,8 +1716,6 @@
 
 .method private showErrorDialog(Ljava/lang/String;Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 

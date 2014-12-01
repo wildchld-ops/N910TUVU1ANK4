@@ -32,9 +32,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/mms/ui/MessageOptions;Lcom/android/mms/ui/MessageItem;Lcom/google/android/mms/pdu/SendReq;Ljava/lang/String;)V
     .locals 0
-    .param p2    # Lcom/android/mms/ui/MessageItem;
-    .param p3    # Lcom/google/android/mms/pdu/SendReq;
-    .param p4    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/mms/ui/MessageOptions$CreationOkListener;->this$0:Lcom/android/mms/ui/MessageOptions;
 
@@ -51,10 +48,6 @@
 
 .method constructor <init>(Lcom/android/mms/ui/MessageOptions;Lcom/android/mms/ui/MessageItem;Lcom/google/android/mms/pdu/SendReq;Ljava/lang/String;Ljava/lang/Runnable;)V
     .locals 0
-    .param p2    # Lcom/android/mms/ui/MessageItem;
-    .param p3    # Lcom/google/android/mms/pdu/SendReq;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/Runnable;
 
     iput-object p1, p0, Lcom/android/mms/ui/MessageOptions$CreationOkListener;->this$0:Lcom/android/mms/ui/MessageOptions;
 
@@ -75,8 +68,6 @@
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 7
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     const/4 v2, 0x0
 

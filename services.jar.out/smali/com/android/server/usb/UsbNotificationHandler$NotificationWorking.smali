@@ -46,7 +46,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/usb/UsbNotificationHandler;Ljava/lang/String;)V
     .locals 1
-    .param p2    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/server/usb/UsbNotificationHandler$NotificationWorking;->this$0:Lcom/android/server/usb/UsbNotificationHandler;
 
@@ -319,7 +318,6 @@
 
 .method public push(Lcom/android/server/usb/UsbNotificationHandler$NotificatoinUnit;)V
     .locals 5
-    .param p1    # Lcom/android/server/usb/UsbNotificationHandler$NotificatoinUnit;
 
     const/4 v2, 0x1
 

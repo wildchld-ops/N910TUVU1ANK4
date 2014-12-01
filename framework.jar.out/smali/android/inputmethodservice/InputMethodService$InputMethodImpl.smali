@@ -33,7 +33,6 @@
 # virtual methods
 .method public attachToken(Landroid/os/IBinder;)V
     .locals 1
-    .param p1    # Landroid/os/IBinder;
 
     iget-object v0, p0, Landroid/inputmethodservice/InputMethodService$InputMethodImpl;->this$0:Landroid/inputmethodservice/InputMethodService;
 
@@ -57,7 +56,6 @@
 
 .method public bindInput(Landroid/view/inputmethod/InputBinding;)V
     .locals 3
-    .param p1    # Landroid/view/inputmethod/InputBinding;
 
     iget-object v1, p0, Landroid/inputmethodservice/InputMethodService$InputMethodImpl;->this$0:Landroid/inputmethodservice/InputMethodService;
 
@@ -99,7 +97,6 @@
 
 .method public changeInputMethodSubtype(Landroid/view/inputmethod/InputMethodSubtype;)V
     .locals 1
-    .param p1    # Landroid/view/inputmethod/InputMethodSubtype;
 
     iget-object v0, p0, Landroid/inputmethodservice/InputMethodService$InputMethodImpl;->this$0:Landroid/inputmethodservice/InputMethodService;
 
@@ -110,8 +107,6 @@
 
 .method public hideSoftInput(ILandroid/os/ResultReceiver;)V
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/os/ResultReceiver;
 
     const/4 v2, 0x0
 
@@ -177,8 +172,6 @@
 
 .method public restartInput(Landroid/view/inputmethod/InputConnection;Landroid/view/inputmethod/EditorInfo;)V
     .locals 2
-    .param p1    # Landroid/view/inputmethod/InputConnection;
-    .param p2    # Landroid/view/inputmethod/EditorInfo;
 
     iget-object v0, p0, Landroid/inputmethodservice/InputMethodService$InputMethodImpl;->this$0:Landroid/inputmethodservice/InputMethodService;
 
@@ -191,8 +184,6 @@
 
 .method public showSoftInput(ILandroid/os/ResultReceiver;)V
     .locals 11
-    .param p1    # I
-    .param p2    # Landroid/os/ResultReceiver;
 
     const/4 v5, 0x2
 
@@ -372,8 +363,6 @@
 
 .method public startInput(Landroid/view/inputmethod/InputConnection;Landroid/view/inputmethod/EditorInfo;)V
     .locals 2
-    .param p1    # Landroid/view/inputmethod/InputConnection;
-    .param p2    # Landroid/view/inputmethod/EditorInfo;
 
     iget-object v0, p0, Landroid/inputmethodservice/InputMethodService$InputMethodImpl;->this$0:Landroid/inputmethodservice/InputMethodService;
 
@@ -406,7 +395,6 @@
 
 .method public updateFloatingState(I)V
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -427,7 +415,6 @@
 
 .method public updateWacomState(I)V
     .locals 2
-    .param p1    # I
 
     const/4 v1, 0x1
 

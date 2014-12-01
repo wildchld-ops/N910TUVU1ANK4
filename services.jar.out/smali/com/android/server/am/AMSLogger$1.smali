@@ -23,8 +23,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/am/AMSLogger;Ljava/lang/String;ILjava/lang/String;)V
     .locals 0
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     iput-object p1, p0, Lcom/android/server/am/AMSLogger$1;->this$0:Lcom/android/server/am/AMSLogger;
 
@@ -39,8 +37,6 @@
 # virtual methods
 .method public declared-synchronized onEvent(ILjava/lang/String;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     monitor-enter p0
 

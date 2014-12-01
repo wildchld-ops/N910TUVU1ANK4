@@ -46,11 +46,11 @@
     :cond_0
     iget-object v2, p0, Lcom/android/phone/DsaSelectSimCard$8;->this$0:Lcom/android/phone/DsaSelectSimCard;
 
-    invoke-virtual {v2}, Landroid/app/Activity;->finish()V
+    invoke-virtual {v2}, Lcom/android/phone/DsaSelectSimCard;->finish()V
 
     iget-object v2, p0, Lcom/android/phone/DsaSelectSimCard$8;->this$0:Lcom/android/phone/DsaSelectSimCard;
 
-    invoke-virtual {v2}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
+    invoke-virtual {v2}, Lcom/android/phone/DsaSelectSimCard;->getIntent()Landroid/content/Intent;
 
     move-result-object v1
 
@@ -90,7 +90,7 @@
 
     iget-object v2, p0, Lcom/android/phone/DsaSelectSimCard$8;->this$0:Lcom/android/phone/DsaSelectSimCard;
 
-    invoke-virtual {v2, v0}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {v2, v0}, Lcom/android/phone/DsaSelectSimCard;->startActivity(Landroid/content/Intent;)V
 
     :cond_1
     return-void

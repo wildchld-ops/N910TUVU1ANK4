@@ -28,7 +28,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Landroid/os/Binder;-><init>()V
 
@@ -43,9 +42,6 @@
 
 .method static synthetic access$000(Lcom/android/server/SamplingProfilerService;Ljava/io/File;Landroid/os/DropBoxManager;)V
     .locals 0
-    .param p0    # Lcom/android/server/SamplingProfilerService;
-    .param p1    # Ljava/io/File;
-    .param p2    # Landroid/os/DropBoxManager;
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/SamplingProfilerService;->handleSnapshotFile(Ljava/io/File;Landroid/os/DropBoxManager;)V
 
@@ -54,8 +50,6 @@
 
 .method private handleSnapshotFile(Ljava/io/File;Landroid/os/DropBoxManager;)V
     .locals 4
-    .param p1    # Ljava/io/File;
-    .param p2    # Landroid/os/DropBoxManager;
 
     :try_start_0
     const-string v1, "SamplingProfilerService"
@@ -122,7 +116,6 @@
 
 .method private registerSettingObserver(Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -147,7 +140,6 @@
 
 .method private startWorking(Landroid/content/Context;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
 
     const-string v3, "dropbox"
 
@@ -206,9 +198,6 @@
 # virtual methods
 .method protected dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/server/SamplingProfilerService;->mContext:Landroid/content/Context;
 

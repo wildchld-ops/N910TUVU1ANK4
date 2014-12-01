@@ -6,7 +6,6 @@
 # direct methods
 .method public constructor <init>(Ljava/io/InputStream;)V
     .locals 0
-    .param p1    # Ljava/io/InputStream;
 
     invoke-direct {p0, p1}, Lorg/apache/commons/io/input/ProxyInputStream;-><init>(Ljava/io/InputStream;)V
 

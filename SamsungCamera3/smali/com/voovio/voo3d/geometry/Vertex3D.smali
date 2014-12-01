@@ -70,9 +70,6 @@
 
 .method public constructor <init>(FFF)V
     .locals 3
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
 
     invoke-direct {p0, p1, p2, p3}, Lcom/voovio/voo3d/data/Vector3;-><init>(FFF)V
 
@@ -115,7 +112,6 @@
 
 .method public static createFromVector3(Lcom/voovio/voo3d/data/Vector3;)Lcom/voovio/voo3d/geometry/Vertex3D;
     .locals 4
-    .param p0    # Lcom/voovio/voo3d/data/Vector3;
 
     new-instance v0, Lcom/voovio/voo3d/geometry/Vertex3D;
 

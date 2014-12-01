@@ -95,7 +95,6 @@
 
 .method static synthetic access$000(Lcom/android/launcher2/PanelDrawer;)I
     .locals 1
-    .param p0    # Lcom/android/launcher2/PanelDrawer;
 
     iget v0, p0, Lcom/android/launcher2/PanelDrawer;->mVerticiesBuffer:I
 
@@ -104,7 +103,6 @@
 
 .method static synthetic access$100(Lcom/android/launcher2/PanelDrawer;)I
     .locals 1
-    .param p0    # Lcom/android/launcher2/PanelDrawer;
 
     iget v0, p0, Lcom/android/launcher2/PanelDrawer;->mLastWidth:I
 
@@ -113,8 +111,6 @@
 
 .method static synthetic access$102(Lcom/android/launcher2/PanelDrawer;I)I
     .locals 0
-    .param p0    # Lcom/android/launcher2/PanelDrawer;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/launcher2/PanelDrawer;->mLastWidth:I
 
@@ -123,7 +119,6 @@
 
 .method static synthetic access$200(Lcom/android/launcher2/PanelDrawer;)I
     .locals 1
-    .param p0    # Lcom/android/launcher2/PanelDrawer;
 
     iget v0, p0, Lcom/android/launcher2/PanelDrawer;->mLastHeight:I
 
@@ -132,8 +127,6 @@
 
 .method static synthetic access$202(Lcom/android/launcher2/PanelDrawer;I)I
     .locals 0
-    .param p0    # Lcom/android/launcher2/PanelDrawer;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/launcher2/PanelDrawer;->mLastHeight:I
 
@@ -142,7 +135,6 @@
 
 .method static synthetic access$300(Lcom/android/launcher2/PanelDrawer;)V
     .locals 0
-    .param p0    # Lcom/android/launcher2/PanelDrawer;
 
     invoke-direct {p0}, Lcom/android/launcher2/PanelDrawer;->loadVBOs()V
 
@@ -151,7 +143,6 @@
 
 .method static synthetic access$400(Lcom/android/launcher2/PanelDrawer;)I
     .locals 1
-    .param p0    # Lcom/android/launcher2/PanelDrawer;
 
     iget v0, p0, Lcom/android/launcher2/PanelDrawer;->mIndiciesBuffer:I
 
@@ -160,8 +151,6 @@
 
 .method private createProgram(Ljava/lang/String;Ljava/lang/String;)I
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v6, 0x1
 
@@ -248,8 +237,6 @@
 
 .method private loadShader(ILjava/lang/String;)I
     .locals 5
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -321,8 +308,6 @@
 
 .method private loadTexture(Landroid/content/res/Resources;I)I
     .locals 11
-    .param p1    # Landroid/content/res/Resources;
-    .param p2    # I
 
     const/4 v5, 0x1
 
@@ -872,15 +857,6 @@
 
 .method private setQuad(IFFFFFFFF)V
     .locals 8
-    .param p1    # I
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # F
-    .param p7    # F
-    .param p8    # F
-    .param p9    # F
 
     mul-int/lit8 v0, p1, 0x4
 
@@ -1039,12 +1015,6 @@
 
 .method private setVertex([FIFFFF)V
     .locals 1
-    .param p1    # [F
-    .param p2    # I
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # F
 
     add-int/lit8 v0, p2, 0x0
 
@@ -1069,7 +1039,6 @@
 # virtual methods
 .method public checkGlError(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Landroid/opengl/GLES20;->glGetError()I
 
@@ -1279,7 +1248,6 @@
 
 .method public loadResources(Landroid/content/res/Resources;)V
     .locals 1
-    .param p1    # Landroid/content/res/Resources;
 
     invoke-virtual {p0}, Lcom/android/launcher2/PanelDrawer;->compilePrograms()V
 
@@ -1330,8 +1298,6 @@
 
 .method public setViewport(II)V
     .locals 8
-    .param p1    # I
-    .param p2    # I
 
     const/4 v2, 0x0
 

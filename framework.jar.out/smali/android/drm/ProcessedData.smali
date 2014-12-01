@@ -14,8 +14,6 @@
 # direct methods
 .method constructor <init>([BLjava/lang/String;)V
     .locals 1
-    .param p1    # [B
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -36,9 +34,6 @@
 
 .method constructor <init>([BLjava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # [B
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

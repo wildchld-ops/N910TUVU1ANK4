@@ -55,7 +55,6 @@
 # direct methods
 .method private constructor <init>(Lcom/android/incallui/callerinfocard/CallerInfoCardViewAdapter;Landroid/view/View;)V
     .locals 0
-    .param p2    # Landroid/view/View;
 
     iput-object p1, p0, Lcom/android/incallui/callerinfocard/CallerInfoCardViewAdapter$ItemLayout;->this$0:Lcom/android/incallui/callerinfocard/CallerInfoCardViewAdapter;
 
@@ -70,9 +69,6 @@
 
 .method synthetic constructor <init>(Lcom/android/incallui/callerinfocard/CallerInfoCardViewAdapter;Landroid/view/View;Lcom/android/incallui/callerinfocard/CallerInfoCardViewAdapter$1;)V
     .locals 0
-    .param p1    # Lcom/android/incallui/callerinfocard/CallerInfoCardViewAdapter;
-    .param p2    # Landroid/view/View;
-    .param p3    # Lcom/android/incallui/callerinfocard/CallerInfoCardViewAdapter$1;
 
     invoke-direct {p0, p1, p2}, Lcom/android/incallui/callerinfocard/CallerInfoCardViewAdapter$ItemLayout;-><init>(Lcom/android/incallui/callerinfocard/CallerInfoCardViewAdapter;Landroid/view/View;)V
 
@@ -81,8 +77,6 @@
 
 .method static synthetic access$200(Lcom/android/incallui/callerinfocard/CallerInfoCardViewAdapter$ItemLayout;I)V
     .locals 0
-    .param p0    # Lcom/android/incallui/callerinfocard/CallerInfoCardViewAdapter$ItemLayout;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/incallui/callerinfocard/CallerInfoCardViewAdapter$ItemLayout;->update(I)V
 
@@ -91,7 +85,6 @@
 
 .method static synthetic access$300(Lcom/android/incallui/callerinfocard/CallerInfoCardViewAdapter$ItemLayout;)V
     .locals 0
-    .param p0    # Lcom/android/incallui/callerinfocard/CallerInfoCardViewAdapter$ItemLayout;
 
     invoke-direct {p0}, Lcom/android/incallui/callerinfocard/CallerInfoCardViewAdapter$ItemLayout;->clearDrawable()V
 
@@ -153,7 +146,6 @@
 
 .method private mandatoryLayout(Landroid/view/View;)V
     .locals 5
-    .param p1    # Landroid/view/View;
 
     const/4 v4, 0x0
 
@@ -325,7 +317,6 @@
 
 .method private mandatoryUpdate(Lcom/android/incallui/callerinfocard/item/CallerInfoCardItem;)V
     .locals 3
-    .param p1    # Lcom/android/incallui/callerinfocard/item/CallerInfoCardItem;
 
     iget-object v0, p0, Lcom/android/incallui/callerinfocard/CallerInfoCardViewAdapter$ItemLayout;->appIcon:Landroid/widget/ImageView;
 
@@ -394,7 +385,6 @@
 
 .method private optionalLayout(Landroid/view/View;)V
     .locals 4
-    .param p1    # Landroid/view/View;
 
     const/4 v3, 0x0
 
@@ -537,8 +527,6 @@
 
 .method private optionalUpdate(Lcom/android/incallui/callerinfocard/item/CallerInfoCardItem;Z)V
     .locals 3
-    .param p1    # Lcom/android/incallui/callerinfocard/item/CallerInfoCardItem;
-    .param p2    # Z
 
     if-eqz p2, :cond_0
 
@@ -613,8 +601,6 @@
 
 .method private setElement(Landroid/widget/ImageView;Landroid/graphics/drawable/Drawable;)V
     .locals 1
-    .param p1    # Landroid/widget/ImageView;
-    .param p2    # Landroid/graphics/drawable/Drawable;
 
     if-nez p2, :cond_0
 
@@ -641,8 +627,6 @@
 
 .method private setElement(Landroid/widget/TextView;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -653,9 +637,6 @@
 
 .method private setElement(Landroid/widget/TextView;Ljava/lang/String;Z)V
     .locals 1
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     if-nez p2, :cond_0
 
@@ -683,8 +664,6 @@
 
 .method private setElementMainText(Landroid/widget/TextView;Lcom/android/incallui/callerinfocard/item/CallerInfoCardItem;)V
     .locals 2
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # Lcom/android/incallui/callerinfocard/item/CallerInfoCardItem;
 
     invoke-virtual {p2}, Lcom/android/incallui/callerinfocard/item/CallerInfoCardItem;->getMainText()Ljava/lang/String;
 
@@ -767,8 +746,6 @@
 
 .method private setElementPhotoUrls(Landroid/view/View;Landroid/support/v4/view/ViewPager;Ljava/util/ArrayList;)V
     .locals 4
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/support/v4/view/ViewPager;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -840,7 +817,6 @@
 
 .method private update(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/incallui/callerinfocard/CallerInfoCardViewAdapter$ItemLayout;->this$0:Lcom/android/incallui/callerinfocard/CallerInfoCardViewAdapter;
 

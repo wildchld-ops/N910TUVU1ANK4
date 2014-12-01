@@ -495,8 +495,6 @@
 
 .method synthetic constructor <init>(Landroid/hardware/Camera;Landroid/hardware/Camera$1;)V
     .locals 0
-    .param p1    # Landroid/hardware/Camera;
-    .param p2    # Landroid/hardware/Camera$1;
 
     invoke-direct {p0, p1}, Landroid/hardware/Camera$Parameters;-><init>(Landroid/hardware/Camera;)V
 
@@ -505,7 +503,6 @@
 
 .method private cameraFormatForPixelFormat(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     sparse-switch p1, :sswitch_data_0
 
@@ -563,8 +560,6 @@
 
 .method private getFloat(Ljava/lang/String;F)F
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # F
 
     :try_start_0
     iget-object v1, p0, Landroid/hardware/Camera$Parameters;->mMap:Ljava/util/LinkedHashMap;
@@ -592,8 +587,6 @@
 
 .method private getInt(Ljava/lang/String;I)I
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     :try_start_0
     iget-object v1, p0, Landroid/hardware/Camera$Parameters;->mMap:Ljava/util/LinkedHashMap;
@@ -621,7 +614,6 @@
 
 .method private pixelFormatForCameraFormat(Ljava/lang/String;)I
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -712,8 +704,6 @@
 
 .method private put(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/hardware/Camera$Parameters;->mMap:Ljava/util/LinkedHashMap;
 
@@ -728,8 +718,6 @@
 
 .method private same(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -758,7 +746,6 @@
 
 .method private set(Ljava/lang/String;Ljava/util/List;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -866,7 +853,6 @@
 
 .method private split(Ljava/lang/String;)Ljava/util/ArrayList;
     .locals 5
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -923,7 +909,6 @@
 
 .method private splitArea(Ljava/lang/String;)Ljava/util/ArrayList;
     .locals 13
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1118,8 +1103,6 @@
 
 .method private splitFloat(Ljava/lang/String;[F)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # [F
 
     if-nez p1, :cond_1
 
@@ -1169,7 +1152,6 @@
 
 .method private splitInt(Ljava/lang/String;)Ljava/util/ArrayList;
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1248,8 +1230,6 @@
 
 .method private splitInt(Ljava/lang/String;[I)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # [I
 
     if-nez p1, :cond_1
 
@@ -1299,7 +1279,6 @@
 
 .method private splitRange(Ljava/lang/String;)Ljava/util/ArrayList;
     .locals 8
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1427,7 +1406,6 @@
 
 .method private splitSize(Ljava/lang/String;)Ljava/util/ArrayList;
     .locals 7
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1505,7 +1483,6 @@
 
 .method private strToSize(Ljava/lang/String;)Landroid/hardware/Camera$Size;
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -1753,7 +1730,6 @@
 
 .method public get(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/hardware/Camera$Parameters;->mMap:Ljava/util/LinkedHashMap;
 
@@ -1909,7 +1885,6 @@
 
 .method public getFocusDistances([F)V
     .locals 2
-    .param p1    # [F
 
     if-eqz p1, :cond_0
 
@@ -1970,7 +1945,6 @@
 
 .method public getInt(Ljava/lang/String;)I
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/hardware/Camera$Parameters;->mMap:Ljava/util/LinkedHashMap;
 
@@ -2210,7 +2184,6 @@
 
 .method public getPreviewFpsRange([I)V
     .locals 2
-    .param p1    # [I
 
     if-eqz p1, :cond_0
 
@@ -2903,7 +2876,6 @@
 
 .method public remove(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/hardware/Camera$Parameters;->mMap:Ljava/util/LinkedHashMap;
 
@@ -2940,8 +2912,6 @@
 
 .method public set(Ljava/lang/String;I)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-static {p2}, Ljava/lang/Integer;->toString(I)Ljava/lang/String;
 
@@ -2954,8 +2924,6 @@
 
 .method public set(Ljava/lang/String;Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/16 v4, 0x3d
 
@@ -3073,7 +3041,6 @@
 
 .method public setAntibanding(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "antibanding"
 
@@ -3084,7 +3051,6 @@
 
 .method public setAutoExposureLock(Z)V
     .locals 2
-    .param p1    # Z
 
     const-string v1, "auto-exposure-lock"
 
@@ -3105,7 +3071,6 @@
 
 .method public setAutoWhiteBalanceLock(Z)V
     .locals 2
-    .param p1    # Z
 
     const-string v1, "auto-whitebalance-lock"
 
@@ -3126,7 +3091,6 @@
 
 .method public setColorEffect(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "effect"
 
@@ -3137,7 +3101,6 @@
 
 .method public setExposureCompensation(I)V
     .locals 1
-    .param p1    # I
 
     const-string v0, "exposure-compensation"
 
@@ -3148,7 +3111,6 @@
 
 .method public setFlashMode(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "flash-mode"
 
@@ -3178,7 +3140,6 @@
 
 .method public setFocusMode(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "focus-mode"
 
@@ -3189,7 +3150,6 @@
 
 .method public setGpsAltitude(D)V
     .locals 2
-    .param p1    # D
 
     const-string v0, "gps-altitude"
 
@@ -3204,7 +3164,6 @@
 
 .method public setGpsLatitude(D)V
     .locals 2
-    .param p1    # D
 
     const-string v0, "gps-latitude"
 
@@ -3219,7 +3178,6 @@
 
 .method public setGpsLongitude(D)V
     .locals 2
-    .param p1    # D
 
     const-string v0, "gps-longitude"
 
@@ -3234,7 +3192,6 @@
 
 .method public setGpsProcessingMethod(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "gps-processing-method"
 
@@ -3245,7 +3202,6 @@
 
 .method public setGpsTimestamp(J)V
     .locals 2
-    .param p1    # J
 
     const-string v0, "gps-timestamp"
 
@@ -3260,7 +3216,6 @@
 
 .method public setJpegQuality(I)V
     .locals 1
-    .param p1    # I
 
     const-string v0, "jpeg-quality"
 
@@ -3271,7 +3226,6 @@
 
 .method public setJpegThumbnailQuality(I)V
     .locals 1
-    .param p1    # I
 
     const-string v0, "jpeg-thumbnail-quality"
 
@@ -3282,8 +3236,6 @@
 
 .method public setJpegThumbnailSize(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     const-string v0, "jpeg-thumbnail-width"
 
@@ -3317,7 +3269,6 @@
 
 .method public setPictureFormat(I)V
     .locals 4
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/hardware/Camera$Parameters;->cameraFormatForPixelFormat(I)Ljava/lang/String;
 
@@ -3359,8 +3310,6 @@
 
 .method public setPictureSize(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -3401,7 +3350,6 @@
 
 .method public setPreviewFormat(I)V
     .locals 4
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/hardware/Camera$Parameters;->cameraFormatForPixelFormat(I)Ljava/lang/String;
 
@@ -3443,8 +3391,6 @@
 
 .method public setPreviewFpsRange(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     const-string v0, "preview-fps-range"
 
@@ -3483,7 +3429,6 @@
 
 .method public setPreviewFrameRate(I)V
     .locals 1
-    .param p1    # I
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -3496,8 +3441,6 @@
 
 .method public setPreviewSize(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -3538,7 +3481,6 @@
 
 .method public setRecordingHint(Z)V
     .locals 2
-    .param p1    # Z
 
     const-string v1, "recording-hint"
 
@@ -3559,7 +3501,6 @@
 
 .method public setRotation(I)V
     .locals 3
-    .param p1    # I
 
     if-eqz p1, :cond_0
 
@@ -3614,7 +3555,6 @@
 
 .method public setSceneMode(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "scene-mode"
 
@@ -3625,7 +3565,6 @@
 
 .method public setVideoStabilization(Z)V
     .locals 2
-    .param p1    # Z
 
     const-string/jumbo v1, "video-stabilization"
 
@@ -3646,7 +3585,6 @@
 
 .method public setWhiteBalance(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const-string/jumbo v1, "whitebalance"
 
@@ -3679,7 +3617,6 @@
 
 .method public setZoom(I)V
     .locals 1
-    .param p1    # I
 
     const-string/jumbo v0, "zoom"
 
@@ -3690,7 +3627,6 @@
 
 .method public unflatten(Ljava/lang/String;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     iget-object v6, p0, Landroid/hardware/Camera$Parameters;->mMap:Ljava/util/LinkedHashMap;
 

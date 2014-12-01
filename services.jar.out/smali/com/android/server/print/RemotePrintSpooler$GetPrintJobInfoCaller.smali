@@ -48,9 +48,6 @@
 # virtual methods
 .method public getPrintJobInfo(Landroid/print/IPrintSpooler;Landroid/print/PrintJobId;I)Landroid/print/PrintJobInfo;
     .locals 2
-    .param p1    # Landroid/print/IPrintSpooler;
-    .param p2    # Landroid/print/PrintJobId;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;,

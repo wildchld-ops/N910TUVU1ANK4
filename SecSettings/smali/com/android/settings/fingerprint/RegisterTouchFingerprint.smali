@@ -162,8 +162,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/fingerprint/RegisterTouchFingerprint;Lcom/samsung/android/fingerprint/FingerprintEvent;)V
     .locals 0
-    .param p0    # Lcom/android/settings/fingerprint/RegisterTouchFingerprint;
-    .param p1    # Lcom/samsung/android/fingerprint/FingerprintEvent;
 
     invoke-direct {p0, p1}, Lcom/android/settings/fingerprint/RegisterTouchFingerprint;->eventProcess(Lcom/samsung/android/fingerprint/FingerprintEvent;)V
 
@@ -172,7 +170,6 @@
 
 .method static synthetic access$1000(Lcom/android/settings/fingerprint/RegisterTouchFingerprint;)Landroid/speech/tts/TextToSpeech;
     .locals 1
-    .param p0    # Lcom/android/settings/fingerprint/RegisterTouchFingerprint;
 
     iget-object v0, p0, Lcom/android/settings/fingerprint/RegisterTouchFingerprint;->mTts:Landroid/speech/tts/TextToSpeech;
 
@@ -181,8 +178,6 @@
 
 .method static synthetic access$102(Lcom/android/settings/fingerprint/RegisterTouchFingerprint;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/fingerprint/RegisterTouchFingerprint;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/fingerprint/RegisterTouchFingerprint;->mIsFinishedScanning:Z
 
@@ -191,8 +186,6 @@
 
 .method static synthetic access$1100(Lcom/android/settings/fingerprint/RegisterTouchFingerprint;I)V
     .locals 0
-    .param p0    # Lcom/android/settings/fingerprint/RegisterTouchFingerprint;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/settings/fingerprint/RegisterTouchFingerprint;->showGuideDialog(I)V
 
@@ -201,7 +194,6 @@
 
 .method static synthetic access$1200(Lcom/android/settings/fingerprint/RegisterTouchFingerprint;)V
     .locals 0
-    .param p0    # Lcom/android/settings/fingerprint/RegisterTouchFingerprint;
 
     invoke-direct {p0}, Lcom/android/settings/fingerprint/RegisterTouchFingerprint;->showGuidewithTipDialog()V
 
@@ -210,7 +202,6 @@
 
 .method static synthetic access$1300(Lcom/android/settings/fingerprint/RegisterTouchFingerprint;)I
     .locals 1
-    .param p0    # Lcom/android/settings/fingerprint/RegisterTouchFingerprint;
 
     iget v0, p0, Lcom/android/settings/fingerprint/RegisterTouchFingerprint;->selectedFingerIndex:I
 
@@ -219,7 +210,6 @@
 
 .method static synthetic access$1400(Lcom/android/settings/fingerprint/RegisterTouchFingerprint;)Lcom/samsung/android/fingerprint/FingerprintManager;
     .locals 1
-    .param p0    # Lcom/android/settings/fingerprint/RegisterTouchFingerprint;
 
     iget-object v0, p0, Lcom/android/settings/fingerprint/RegisterTouchFingerprint;->mFingerprintManager:Lcom/samsung/android/fingerprint/FingerprintManager;
 
@@ -228,8 +218,6 @@
 
 .method static synthetic access$1502(Lcom/android/settings/fingerprint/RegisterTouchFingerprint;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/fingerprint/RegisterTouchFingerprint;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/fingerprint/RegisterTouchFingerprint;->mBackEnabled:Z
 
@@ -238,7 +226,6 @@
 
 .method static synthetic access$1600(Lcom/android/settings/fingerprint/RegisterTouchFingerprint;)Ljava/lang/Runnable;
     .locals 1
-    .param p0    # Lcom/android/settings/fingerprint/RegisterTouchFingerprint;
 
     iget-object v0, p0, Lcom/android/settings/fingerprint/RegisterTouchFingerprint;->pRunnable:Ljava/lang/Runnable;
 
@@ -247,8 +234,6 @@
 
 .method static synthetic access$1602(Lcom/android/settings/fingerprint/RegisterTouchFingerprint;Ljava/lang/Runnable;)Ljava/lang/Runnable;
     .locals 0
-    .param p0    # Lcom/android/settings/fingerprint/RegisterTouchFingerprint;
-    .param p1    # Ljava/lang/Runnable;
 
     iput-object p1, p0, Lcom/android/settings/fingerprint/RegisterTouchFingerprint;->pRunnable:Ljava/lang/Runnable;
 
@@ -257,7 +242,6 @@
 
 .method static synthetic access$1700(Lcom/android/settings/fingerprint/RegisterTouchFingerprint;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/fingerprint/RegisterTouchFingerprint;
 
     iget-boolean v0, p0, Lcom/android/settings/fingerprint/RegisterTouchFingerprint;->isEnrolled:Z
 
@@ -266,8 +250,6 @@
 
 .method static synthetic access$1802(Lcom/android/settings/fingerprint/RegisterTouchFingerprint;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/fingerprint/RegisterTouchFingerprint;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/fingerprint/RegisterTouchFingerprint;->DoNotRemoveByForce:Z
 
@@ -276,7 +258,6 @@
 
 .method static synthetic access$1900(Lcom/android/settings/fingerprint/RegisterTouchFingerprint;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/settings/fingerprint/RegisterTouchFingerprint;
 
     iget-object v0, p0, Lcom/android/settings/fingerprint/RegisterTouchFingerprint;->mPreviousStage:Ljava/lang/String;
 
@@ -285,7 +266,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/fingerprint/RegisterTouchFingerprint;)I
     .locals 1
-    .param p0    # Lcom/android/settings/fingerprint/RegisterTouchFingerprint;
 
     invoke-direct {p0}, Lcom/android/settings/fingerprint/RegisterTouchFingerprint;->getFingerRegisterText()I
 
@@ -296,7 +276,6 @@
 
 .method static synthetic access$2000(Lcom/android/settings/fingerprint/RegisterTouchFingerprint;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/settings/fingerprint/RegisterTouchFingerprint;
 
     iget-object v0, p0, Lcom/android/settings/fingerprint/RegisterTouchFingerprint;->mOwnName:Ljava/lang/String;
 
@@ -305,7 +284,6 @@
 
 .method static synthetic access$2100(Lcom/android/settings/fingerprint/RegisterTouchFingerprint;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/fingerprint/RegisterTouchFingerprint;
 
     iget-boolean v0, p0, Lcom/android/settings/fingerprint/RegisterTouchFingerprint;->isForODE:Z
 
@@ -314,7 +292,6 @@
 
 .method static synthetic access$2200(Lcom/android/settings/fingerprint/RegisterTouchFingerprint;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/settings/fingerprint/RegisterTouchFingerprint;
 
     iget-object v0, p0, Lcom/android/settings/fingerprint/RegisterTouchFingerprint;->mHandler:Landroid/os/Handler;
 
@@ -323,8 +300,6 @@
 
 .method static synthetic access$2202(Lcom/android/settings/fingerprint/RegisterTouchFingerprint;Landroid/os/Handler;)Landroid/os/Handler;
     .locals 0
-    .param p0    # Lcom/android/settings/fingerprint/RegisterTouchFingerprint;
-    .param p1    # Landroid/os/Handler;
 
     iput-object p1, p0, Lcom/android/settings/fingerprint/RegisterTouchFingerprint;->mHandler:Landroid/os/Handler;
 
@@ -333,7 +308,6 @@
 
 .method static synthetic access$2300(Lcom/android/settings/fingerprint/RegisterTouchFingerprint;)V
     .locals 0
-    .param p0    # Lcom/android/settings/fingerprint/RegisterTouchFingerprint;
 
     invoke-direct {p0}, Lcom/android/settings/fingerprint/RegisterTouchFingerprint;->initRegisterfingerprint()V
 
@@ -342,7 +316,6 @@
 
 .method static synthetic access$2400(Lcom/android/settings/fingerprint/RegisterTouchFingerprint;)Landroid/os/IBinder;
     .locals 1
-    .param p0    # Lcom/android/settings/fingerprint/RegisterTouchFingerprint;
 
     iget-object v0, p0, Lcom/android/settings/fingerprint/RegisterTouchFingerprint;->mToken:Landroid/os/IBinder;
 
@@ -351,7 +324,6 @@
 
 .method static synthetic access$2500(Lcom/android/settings/fingerprint/RegisterTouchFingerprint;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/fingerprint/RegisterTouchFingerprint;
 
     iget-boolean v0, p0, Lcom/android/settings/fingerprint/RegisterTouchFingerprint;->fromShowGuidewithTipDialog:Z
 
@@ -360,8 +332,6 @@
 
 .method static synthetic access$2502(Lcom/android/settings/fingerprint/RegisterTouchFingerprint;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/fingerprint/RegisterTouchFingerprint;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/fingerprint/RegisterTouchFingerprint;->fromShowGuidewithTipDialog:Z
 
@@ -370,8 +340,6 @@
 
 .method static synthetic access$2602(Lcom/android/settings/fingerprint/RegisterTouchFingerprint;Landroid/app/AlertDialog;)Landroid/app/AlertDialog;
     .locals 0
-    .param p0    # Lcom/android/settings/fingerprint/RegisterTouchFingerprint;
-    .param p1    # Landroid/app/AlertDialog;
 
     iput-object p1, p0, Lcom/android/settings/fingerprint/RegisterTouchFingerprint;->mTipDialog:Landroid/app/AlertDialog;
 
@@ -380,8 +348,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/fingerprint/RegisterTouchFingerprint;I)V
     .locals 0
-    .param p0    # Lcom/android/settings/fingerprint/RegisterTouchFingerprint;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/settings/fingerprint/RegisterTouchFingerprint;->setFingerGuideText(I)V
 
@@ -390,7 +356,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/fingerprint/RegisterTouchFingerprint;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/fingerprint/RegisterTouchFingerprint;
 
     iget-boolean v0, p0, Lcom/android/settings/fingerprint/RegisterTouchFingerprint;->sensorIsRemoved:Z
 
@@ -399,8 +364,6 @@
 
 .method static synthetic access$402(Lcom/android/settings/fingerprint/RegisterTouchFingerprint;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/fingerprint/RegisterTouchFingerprint;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/fingerprint/RegisterTouchFingerprint;->sensorIsRemoved:Z
 
@@ -409,7 +372,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/fingerprint/RegisterTouchFingerprint;)V
     .locals 0
-    .param p0    # Lcom/android/settings/fingerprint/RegisterTouchFingerprint;
 
     invoke-direct {p0}, Lcom/android/settings/fingerprint/RegisterTouchFingerprint;->showSensorErrorDialog()V
 
@@ -418,9 +380,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/fingerprint/RegisterTouchFingerprint;ILjava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/settings/fingerprint/RegisterTouchFingerprint;
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Lcom/android/settings/fingerprint/RegisterTouchFingerprint;->showErrorMessage(ILjava/lang/String;)V
 
@@ -429,7 +388,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/fingerprint/RegisterTouchFingerprint;)I
     .locals 1
-    .param p0    # Lcom/android/settings/fingerprint/RegisterTouchFingerprint;
 
     iget v0, p0, Lcom/android/settings/fingerprint/RegisterTouchFingerprint;->mPrivProgressBarCount:I
 
@@ -438,8 +396,6 @@
 
 .method static synthetic access$702(Lcom/android/settings/fingerprint/RegisterTouchFingerprint;I)I
     .locals 0
-    .param p0    # Lcom/android/settings/fingerprint/RegisterTouchFingerprint;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/settings/fingerprint/RegisterTouchFingerprint;->mPrivProgressBarCount:I
 
@@ -448,7 +404,6 @@
 
 .method static synthetic access$800(Lcom/android/settings/fingerprint/RegisterTouchFingerprint;)I
     .locals 1
-    .param p0    # Lcom/android/settings/fingerprint/RegisterTouchFingerprint;
 
     iget v0, p0, Lcom/android/settings/fingerprint/RegisterTouchFingerprint;->mEventProgressBarCount:I
 
@@ -457,8 +412,6 @@
 
 .method static synthetic access$802(Lcom/android/settings/fingerprint/RegisterTouchFingerprint;I)I
     .locals 0
-    .param p0    # Lcom/android/settings/fingerprint/RegisterTouchFingerprint;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/settings/fingerprint/RegisterTouchFingerprint;->mEventProgressBarCount:I
 
@@ -467,7 +420,6 @@
 
 .method static synthetic access$900(Lcom/android/settings/fingerprint/RegisterTouchFingerprint;)I
     .locals 1
-    .param p0    # Lcom/android/settings/fingerprint/RegisterTouchFingerprint;
 
     iget v0, p0, Lcom/android/settings/fingerprint/RegisterTouchFingerprint;->mFingerprintConfirmCount:I
 
@@ -476,8 +428,6 @@
 
 .method static synthetic access$902(Lcom/android/settings/fingerprint/RegisterTouchFingerprint;I)I
     .locals 0
-    .param p0    # Lcom/android/settings/fingerprint/RegisterTouchFingerprint;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/settings/fingerprint/RegisterTouchFingerprint;->mFingerprintConfirmCount:I
 
@@ -486,7 +436,6 @@
 
 .method private eventProcess(Lcom/samsung/android/fingerprint/FingerprintEvent;)V
     .locals 2
-    .param p1    # Lcom/samsung/android/fingerprint/FingerprintEvent;
 
     move-object v0, p1
 
@@ -554,7 +503,6 @@
 
 .method private isSystemKeyEventRequested(I)Z
     .locals 5
-    .param p1    # I
 
     const-string v2, "window"
 
@@ -689,8 +637,6 @@
 
 .method private requestSystemKeyEvent(IZ)Z
     .locals 5
-    .param p1    # I
-    .param p2    # Z
 
     const-string v2, "window"
 
@@ -748,7 +694,6 @@
 
 .method private setFingerGuideText(I)V
     .locals 3
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -872,8 +817,6 @@
 
 .method private showErrorMessage(ILjava/lang/String;)V
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     invoke-static {p1}, Lcom/samsung/android/fingerprint/FingerprintManager;->getImageQualityIcon(I)I
 
@@ -988,7 +931,6 @@
 
 .method private showGuideDialog(I)V
     .locals 6
-    .param p1    # I
 
     const-string v3, "RegisterTouchFingerprint"
 
@@ -1662,9 +1604,6 @@
 # virtual methods
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     invoke-super {p0, p1, p2, p3}, Landroid/app/Activity;->onActivityResult(IILandroid/content/Intent;)V
 
@@ -1729,7 +1668,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 0
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -1740,7 +1678,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 9
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v8, 0x1
 
@@ -1974,7 +1911,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 1
-    .param p1    # Landroid/view/Menu;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreateOptionsMenu(Landroid/view/Menu;)Z
 
@@ -2037,8 +1973,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v1, 0x1
 
@@ -2080,7 +2014,6 @@
 
 .method protected onNewIntent(Landroid/content/Intent;)V
     .locals 0
-    .param p1    # Landroid/content/Intent;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onNewIntent(Landroid/content/Intent;)V
 
@@ -2093,7 +2026,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 4
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v2, 0x0
 
@@ -2240,8 +2172,6 @@
 
 .method public onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     invoke-virtual {p2}, Landroid/view/MotionEvent;->getAction()I
 

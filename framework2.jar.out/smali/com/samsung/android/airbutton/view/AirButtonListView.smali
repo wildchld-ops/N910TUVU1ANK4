@@ -50,9 +50,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Lcom/samsung/android/airbutton/AirButtonAdapterWrapper;Lcom/samsung/android/airbutton/Attributes;)V
     .locals 8
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/samsung/android/airbutton/AirButtonAdapterWrapper;
-    .param p3    # Lcom/samsung/android/airbutton/Attributes;
 
     const/4 v7, 0x3
 
@@ -611,7 +608,6 @@
 
 .method private getTouchMovePosition(Landroid/view/MotionEvent;)F
     .locals 2
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-object v0, p0, Lcom/samsung/android/airbutton/view/AbsAirButtonView;->mAttrs:Lcom/samsung/android/airbutton/Attributes;
 
@@ -682,7 +678,6 @@
 
 .method private handleMove(F)V
     .locals 6
-    .param p1    # F
 
     const/high16 v5, 0x3f800000
 
@@ -835,7 +830,6 @@
 
 .method private setTouchDownPosition(Landroid/view/MotionEvent;)V
     .locals 2
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-object v0, p0, Lcom/samsung/android/airbutton/view/AbsAirButtonView;->mAttrs:Lcom/samsung/android/airbutton/Attributes;
 
@@ -879,8 +873,6 @@
 
 .method private startFlickering(FF)Z
     .locals 9
-    .param p1    # F
-    .param p2    # F
 
     const/4 v3, 0x1
 
@@ -1002,8 +994,6 @@
 # virtual methods
 .method protected adjustAllViewPosition(II)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
 
     iget v2, p0, Lcom/samsung/android/airbutton/view/AbsAirButtonView;->mEndViewIdx:I
 
@@ -1436,7 +1426,6 @@
 
 .method protected adjustViewDelta(I)V
     .locals 8
-    .param p1    # I
 
     const/4 v7, -0x1
 
@@ -2200,7 +2189,6 @@
 
 .method public dispatchTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 4
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v3, 0x1
 
@@ -2240,7 +2228,6 @@
 
 .method public dispatchWindowFocusChanged(Z)V
     .locals 2
-    .param p1    # Z
 
     invoke-super {p0, p1}, Landroid/view/ViewGroup;->dispatchWindowFocusChanged(Z)V
 
@@ -2812,7 +2799,6 @@
 
 .method protected onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 1
-    .param p1    # Landroid/content/res/Configuration;
 
     iget-object v0, p0, Lcom/samsung/android/airbutton/view/AirButtonListView;->mFlickAnimator:Landroid/animation/ObjectAnimator;
 
@@ -2834,7 +2820,6 @@
 
 .method protected onTouchDown(Landroid/view/MotionEvent;)V
     .locals 2
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-object v0, p0, Lcom/samsung/android/airbutton/view/AbsAirButtonView;->mAttrs:Lcom/samsung/android/airbutton/Attributes;
 
@@ -2927,7 +2912,6 @@
 
 .method protected onTouchMove(Landroid/view/MotionEvent;)V
     .locals 10
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-object v0, p0, Lcom/samsung/android/airbutton/view/AbsAirButtonView;->mAttrs:Lcom/samsung/android/airbutton/Attributes;
 
@@ -3025,7 +3009,6 @@
 
 .method protected onTouchUp(Landroid/view/MotionEvent;)V
     .locals 8
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v7, 0x0
 
@@ -3126,8 +3109,6 @@
 
 .method public requestSendAccessibilityEvent(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/accessibility/AccessibilityEvent;
 
     const/4 v0, 0x1
 
@@ -3136,7 +3117,6 @@
 
 .method public sendAccessibilityEvent(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
@@ -3165,7 +3145,6 @@
 
 .method public setTotalFlickDistance(F)V
     .locals 3
-    .param p1    # F
 
     iget-object v1, p0, Lcom/samsung/android/airbutton/view/AbsAirButtonView;->mAttrs:Lcom/samsung/android/airbutton/Attributes;
 
@@ -3217,7 +3196,6 @@
 
 .method protected showHoverEnterAnimation(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -3338,7 +3316,6 @@
 
 .method protected showHoverExitAnimation(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v1, 0x1
 

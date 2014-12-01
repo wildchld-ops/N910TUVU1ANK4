@@ -217,8 +217,6 @@
 
 .method public constructor <init>(I[B)V
     .locals 3
-    .param p1    # I
-    .param p2    # [B
 
     const/4 v1, 0x1
 
@@ -311,7 +309,6 @@
 # virtual methods
 .method public maxOutputSize(I)I
     .locals 1
-    .param p1    # I
 
     mul-int/lit8 v0, p1, 0x8
 
@@ -324,10 +321,6 @@
 
 .method public process([BIIZ)Z
     .locals 14
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Z
 
     iget-object v1, p0, Landroid/util/Base64$Encoder;->alphabet:[B
 

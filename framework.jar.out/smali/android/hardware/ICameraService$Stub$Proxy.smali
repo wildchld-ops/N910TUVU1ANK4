@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,7 +36,6 @@
 # virtual methods
 .method public addListener(Landroid/hardware/ICameraServiceListener;)I
     .locals 6
-    .param p1    # Landroid/hardware/ICameraServiceListener;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -113,11 +111,6 @@
 
 .method public connect(Landroid/hardware/ICameraClient;ILjava/lang/String;ILandroid/hardware/camera2/utils/BinderHolder;)I
     .locals 6
-    .param p1    # Landroid/hardware/ICameraClient;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
-    .param p5    # Landroid/hardware/camera2/utils/BinderHolder;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -200,11 +193,6 @@
 
 .method public connectDevice(Landroid/hardware/camera2/ICameraDeviceCallbacks;ILjava/lang/String;ILandroid/hardware/camera2/utils/BinderHolder;)I
     .locals 6
-    .param p1    # Landroid/hardware/camera2/ICameraDeviceCallbacks;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
-    .param p5    # Landroid/hardware/camera2/utils/BinderHolder;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -287,11 +275,6 @@
 
 .method public connectPro(Landroid/hardware/IProCameraCallbacks;ILjava/lang/String;ILandroid/hardware/camera2/utils/BinderHolder;)I
     .locals 6
-    .param p1    # Landroid/hardware/IProCameraCallbacks;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
-    .param p5    # Landroid/hardware/camera2/utils/BinderHolder;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -374,8 +357,6 @@
 
 .method public getCameraCharacteristics(ILandroid/hardware/camera2/impl/CameraMetadataNative;)I
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/hardware/camera2/impl/CameraMetadataNative;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -440,8 +421,6 @@
 
 .method public getCameraInfo(ILandroid/hardware/CameraInfo;)I
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/hardware/CameraInfo;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -567,7 +546,6 @@
 
 .method public removeListener(Landroid/hardware/ICameraServiceListener;)I
     .locals 6
-    .param p1    # Landroid/hardware/ICameraServiceListener;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

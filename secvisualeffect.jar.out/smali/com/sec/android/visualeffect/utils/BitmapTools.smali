@@ -18,9 +18,6 @@
 
 .method public static getCenterCropBitmap(Landroid/graphics/Bitmap;II)Landroid/graphics/Bitmap;
     .locals 10
-    .param p0    # Landroid/graphics/Bitmap;
-    .param p1    # I
-    .param p2    # I
 
     const/4 v9, 0x0
 

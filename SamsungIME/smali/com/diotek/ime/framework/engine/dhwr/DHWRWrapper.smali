@@ -210,8 +210,6 @@
 
 .method static synthetic access$000(Lcom/diotek/ime/framework/engine/dhwr/DHWRWrapper;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/engine/dhwr/DHWRWrapper;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/diotek/ime/framework/engine/dhwr/DHWRWrapper;->copyAssetDBFiletoSystem(Ljava/lang/String;)V
 
@@ -220,7 +218,6 @@
 
 .method static synthetic access$100(Lcom/diotek/ime/framework/engine/dhwr/DHWRWrapper;)Z
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/engine/dhwr/DHWRWrapper;
 
     invoke-direct {p0}, Lcom/diotek/ime/framework/engine/dhwr/DHWRWrapper;->isUnitRecongnitionMode()Z
 
@@ -231,7 +228,6 @@
 
 .method static synthetic access$200(Lcom/diotek/ime/framework/engine/dhwr/DHWRWrapper;)V
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/engine/dhwr/DHWRWrapper;
 
     invoke-direct {p0}, Lcom/diotek/ime/framework/engine/dhwr/DHWRWrapper;->clearRecognitionResult()V
 
@@ -240,7 +236,6 @@
 
 .method static synthetic access$300(Lcom/diotek/ime/framework/engine/dhwr/DHWRWrapper;)Lcom/diotek/ime/framework/engine/dhwr/HwrPathController;
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/engine/dhwr/DHWRWrapper;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/engine/dhwr/DHWRWrapper;->mHwrPathController:Lcom/diotek/ime/framework/engine/dhwr/HwrPathController;
 
@@ -249,7 +244,6 @@
 
 .method static synthetic access$400(Lcom/diotek/ime/framework/engine/dhwr/DHWRWrapper;)I
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/engine/dhwr/DHWRWrapper;
 
     invoke-direct {p0}, Lcom/diotek/ime/framework/engine/dhwr/DHWRWrapper;->getEngineLanguage()I
 
@@ -260,9 +254,6 @@
 
 .method static synthetic access$500(Lcom/diotek/ime/framework/engine/dhwr/DHWRWrapper;ILandroid/graphics/RectF;)V
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/engine/dhwr/DHWRWrapper;
-    .param p1    # I
-    .param p2    # Landroid/graphics/RectF;
 
     invoke-direct {p0, p1, p2}, Lcom/diotek/ime/framework/engine/dhwr/DHWRWrapper;->setGestureOnRecognizedStringWrapper(ILandroid/graphics/RectF;)V
 
@@ -271,7 +262,6 @@
 
 .method static synthetic access$600(Lcom/diotek/ime/framework/engine/dhwr/DHWRWrapper;)V
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/engine/dhwr/DHWRWrapper;
 
     invoke-direct {p0}, Lcom/diotek/ime/framework/engine/dhwr/DHWRWrapper;->clearHwrPathController()V
 
@@ -280,7 +270,6 @@
 
 .method static synthetic access$700(Lcom/diotek/ime/framework/engine/dhwr/DHWRWrapper;)Lcom/diotek/ime/framework/common/InputManager;
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/engine/dhwr/DHWRWrapper;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/engine/AbstractInputEngine;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -289,7 +278,6 @@
 
 .method static synthetic access$800(Lcom/diotek/ime/framework/engine/dhwr/DHWRWrapper;)Lcom/diotek/ime/framework/common/InputManager;
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/engine/dhwr/DHWRWrapper;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/engine/AbstractInputEngine;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -298,8 +286,6 @@
 
 .method private addPoint(SS)Z
     .locals 4
-    .param p1    # S
-    .param p2    # S
 
     const/4 v0, 0x0
 
@@ -343,9 +329,6 @@
 
 .method private addPoint(SSZ)Z
     .locals 1
-    .param p1    # S
-    .param p2    # S
-    .param p3    # Z
 
     iget-object v0, p0, Lcom/diotek/ime/framework/engine/dhwr/DHWRWrapper;->mAddStrokeCallBack:Lcom/diotek/ime/framework/engine/dhwr/AddStroke;
 
@@ -384,10 +367,6 @@
 
 .method private changeCorrectStringUpperLowerCaseUsingRect(Ljava/lang/String;Landroid/graphics/RectF;IF)Ljava/lang/String;
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/graphics/RectF;
-    .param p3    # I
-    .param p4    # F
 
     const/16 v8, 0x79
 
@@ -533,7 +512,6 @@
 
 .method private changeLastRecognizedStringByForce(Ljava/lang/String;)V
     .locals 13
-    .param p1    # Ljava/lang/String;
 
     iget-object v10, p0, Lcom/diotek/ime/framework/engine/dhwr/DHWRWrapper;->mRecognizedStringsController:Lcom/diotek/ime/framework/engine/dhwr/RecognizedResultsController;
 
@@ -822,7 +800,6 @@
 
 .method private changeRecognizedStringBySuggestion(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, -0x1
 
@@ -870,7 +847,6 @@
 
 .method private changeSuggestionForChangeLowerUpper(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     const/4 v5, 0x0
 
@@ -1746,7 +1722,6 @@
 
 .method private copyAssetDBFiletoSystem(Ljava/lang/String;)V
     .locals 20
-    .param p1    # Ljava/lang/String;
 
     move-object/from16 v0, p0
 
@@ -2258,7 +2233,6 @@
 
 .method private deleteStrokeOfHwrPathController(I)Landroid/graphics/RectF;
     .locals 4
-    .param p1    # I
 
     sget-boolean v1, Lcom/diotek/ime/framework/util/Debug;->DEBUG:Z
 
@@ -2354,8 +2328,6 @@
 
 .method private getTextFontSize(Ljava/lang/String;Landroid/graphics/RectF;)I
     .locals 13
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/graphics/RectF;
 
     const/4 v12, 0x1
 
@@ -2603,8 +2575,6 @@
 
 .method private increaseInkCount(SS)Z
     .locals 1
-    .param p1    # S
-    .param p2    # S
 
     const/4 v0, 0x1
 
@@ -2613,7 +2583,6 @@
 
 .method private isConfusedStringUpperAndLowerCase(Ljava/lang/String;)Z
     .locals 11
-    .param p1    # Ljava/lang/String;
 
     const/4 v10, -0x1
 
@@ -2774,7 +2743,6 @@
 
 .method private isExistFile(Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     iget-object v5, p0, Lcom/diotek/ime/framework/engine/AbstractInputEngine;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -2853,7 +2821,6 @@
 
 .method private isNumberString(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -3212,7 +3179,6 @@
 
 .method private recognizeCompleteMode(Z)I
     .locals 19
-    .param p1    # Z
 
     sget-boolean v15, Lcom/diotek/ime/framework/util/Debug;->DEBUG:Z
 
@@ -3935,7 +3901,6 @@
 
 .method private recognizeGesture([C)I
     .locals 7
-    .param p1    # [C
 
     const/4 v3, -0x1
 
@@ -4365,7 +4330,6 @@
 
 .method private recognizeUnitMode(Z)I
     .locals 7
-    .param p1    # Z
 
     const/16 v3, 0xbbc
 
@@ -4528,8 +4492,6 @@
 
 .method private rectOfRecognizeStroke(II)Landroid/graphics/RectF;
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     sget-boolean v1, Lcom/diotek/ime/framework/util/Debug;->DEBUG:Z
 
@@ -4653,9 +4615,6 @@
 
 .method private setChangedTextIndex(III)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     if-gez p1, :cond_0
 
@@ -5056,7 +5015,6 @@
 
 .method private setEngineArabicLanguageAtrribute(I)V
     .locals 9
-    .param p1    # I
 
     const/4 v8, 0x2
 
@@ -5823,7 +5781,6 @@
 
 .method private setEngineAttributeThai(I)V
     .locals 10
-    .param p1    # I
 
     const/4 v9, 0x2
 
@@ -5914,7 +5871,6 @@
 
 .method private setEngineAttributeVietnamese(I)V
     .locals 9
-    .param p1    # I
 
     const/4 v4, 0x2
 
@@ -5985,7 +5941,6 @@
 
 .method private setEngineCursiveLanguageAttribute(I)V
     .locals 9
-    .param p1    # I
 
     const/4 v4, 0x2
 
@@ -6061,7 +6016,6 @@
 
 .method private setEngineHebrewLanguageAtrribute(I)V
     .locals 8
-    .param p1    # I
 
     const/4 v4, 0x2
 
@@ -6122,7 +6076,6 @@
 
 .method private setEngineLanguage(I)V
     .locals 6
-    .param p1    # I
 
     const/4 v5, 0x1
 
@@ -6181,7 +6134,6 @@
 
 .method private setEngineNonCursiveLanguageAtrribute(I)V
     .locals 9
-    .param p1    # I
 
     const/4 v4, 0x2
 
@@ -6252,8 +6204,6 @@
 
 .method private setGestureOnRecognizedStringWrapper(ILandroid/graphics/RectF;)V
     .locals 7
-    .param p1    # I
-    .param p2    # Landroid/graphics/RectF;
 
     const/4 v6, 0x0
 
@@ -6542,7 +6492,6 @@
 
 .method private setMixRecognition(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/engine/dhwr/DHWRWrapper;->mIsMixRecognition:Z
 
@@ -6551,8 +6500,6 @@
 
 .method private setNewStringOnRecognizedStringWrapper(Ljava/util/ArrayList;Ljava/lang/String;I)V
     .locals 14
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -6765,8 +6712,6 @@
 
 .method private setStringOnRecognizedStringWrapper(Ljava/util/ArrayList;Ljava/lang/String;Landroid/graphics/RectF;)V
     .locals 34
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/graphics/RectF;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -7755,7 +7700,6 @@
 
 .method private threadSafeRecog(Z)I
     .locals 3
-    .param p1    # Z
 
     sget-boolean v1, Lcom/diotek/ime/framework/util/Debug;->DEBUG:Z
 
@@ -8053,7 +7997,6 @@
 
 .method public getLanguageIDForEngine(I)I
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -8526,7 +8469,6 @@
 
 .method public inputKey(I)I
     .locals 1
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -8550,9 +8492,6 @@
 
 .method public inputStrokeData(III)Z
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v5, 0x1
 
@@ -8638,7 +8577,6 @@
 
 .method public isContainInLanguageDB(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -8647,7 +8585,6 @@
 
 .method public isSentenceTermPunct(I)Z
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -8656,7 +8593,6 @@
 
 .method public isSentenceTermPunct(Ljava/lang/CharSequence;)Z
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v0, 0x0
 
@@ -8665,7 +8601,6 @@
 
 .method public isTextCharacter(I)Z
     .locals 6
-    .param p1    # I
 
     const/16 v5, 0xa
 
@@ -8747,8 +8682,6 @@
 
 .method public onHwrPanelLongPressed(ILjava/lang/String;)I
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     iput p1, p0, Lcom/diotek/ime/framework/engine/dhwr/DHWRWrapper;->mSelectedArrayIndex:I
 
@@ -8759,8 +8692,6 @@
 
 .method public recognize(IZ)I
     .locals 6
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v5, 0x6
 
@@ -8876,17 +8807,12 @@
 
 .method public setContextAwareUniqueID(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method public setHwrPanelRect(IIII)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iget-object v0, p0, Lcom/diotek/ime/framework/engine/dhwr/DHWRWrapper;->mHwrPanelRect:Landroid/graphics/Rect;
 
@@ -8901,7 +8827,6 @@
 
 .method public setOnInputStrokeCallback(Lcom/diotek/ime/framework/engine/dhwr/AddStroke;)V
     .locals 0
-    .param p1    # Lcom/diotek/ime/framework/engine/dhwr/AddStroke;
 
     iput-object p1, p0, Lcom/diotek/ime/framework/engine/dhwr/DHWRWrapper;->mAddStrokeCallBack:Lcom/diotek/ime/framework/engine/dhwr/AddStroke;
 
@@ -8910,7 +8835,6 @@
 
 .method public setUsingLanguage(I)I
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/diotek/ime/framework/engine/dhwr/DHWRWrapper;->getLanguageIDForEngine(I)I
 
@@ -8945,8 +8869,6 @@
 
 .method public wordSelected(ILjava/lang/CharSequence;)I
     .locals 5
-    .param p1    # I
-    .param p2    # Ljava/lang/CharSequence;
 
     const/4 v4, 0x0
 

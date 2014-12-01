@@ -113,13 +113,6 @@
 
 .method public constructor <init>(Ljava/lang/CharSequence;Landroid/text/TextPaint;ILandroid/text/Layout$Alignment;FFZ)V
     .locals 9
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Landroid/text/TextPaint;
-    .param p3    # I
-    .param p4    # Landroid/text/Layout$Alignment;
-    .param p5    # F
-    .param p6    # F
-    .param p7    # Z
 
     move-object v0, p0
 
@@ -146,14 +139,6 @@
 
 .method public constructor <init>(Ljava/lang/CharSequence;Ljava/lang/CharSequence;Landroid/text/TextPaint;ILandroid/text/Layout$Alignment;FFZ)V
     .locals 11
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Ljava/lang/CharSequence;
-    .param p3    # Landroid/text/TextPaint;
-    .param p4    # I
-    .param p5    # Landroid/text/Layout$Alignment;
-    .param p6    # F
-    .param p7    # F
-    .param p8    # Z
 
     const/4 v9, 0x0
 
@@ -184,16 +169,6 @@
 
 .method public constructor <init>(Ljava/lang/CharSequence;Ljava/lang/CharSequence;Landroid/text/TextPaint;ILandroid/text/Layout$Alignment;FFZLandroid/text/TextUtils$TruncateAt;I)V
     .locals 12
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Ljava/lang/CharSequence;
-    .param p3    # Landroid/text/TextPaint;
-    .param p4    # I
-    .param p5    # Landroid/text/Layout$Alignment;
-    .param p6    # F
-    .param p7    # F
-    .param p8    # Z
-    .param p9    # Landroid/text/TextUtils$TruncateAt;
-    .param p10    # I
 
     sget-object v6, Landroid/text/TextDirectionHeuristics;->FIRSTSTRONG_LTR:Landroid/text/TextDirectionHeuristic;
 
@@ -226,17 +201,6 @@
 
 .method public constructor <init>(Ljava/lang/CharSequence;Ljava/lang/CharSequence;Landroid/text/TextPaint;ILandroid/text/Layout$Alignment;Landroid/text/TextDirectionHeuristic;FFZLandroid/text/TextUtils$TruncateAt;I)V
     .locals 19
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Ljava/lang/CharSequence;
-    .param p3    # Landroid/text/TextPaint;
-    .param p4    # I
-    .param p5    # Landroid/text/Layout$Alignment;
-    .param p6    # Landroid/text/TextDirectionHeuristic;
-    .param p7    # F
-    .param p8    # F
-    .param p9    # Z
-    .param p10    # Landroid/text/TextUtils$TruncateAt;
-    .param p11    # I
 
     if-nez p10, :cond_2
 
@@ -579,11 +543,6 @@
 
 .method static synthetic access$000(Landroid/text/DynamicLayout;Ljava/lang/CharSequence;III)V
     .locals 0
-    .param p0    # Landroid/text/DynamicLayout;
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-direct {p0, p1, p2, p3, p4}, Landroid/text/DynamicLayout;->reflow(Ljava/lang/CharSequence;III)V
 
@@ -592,7 +551,6 @@
 
 .method private addBlockAtOffset(I)V
     .locals 6
-    .param p1    # I
 
     const/4 v5, 0x0
 
@@ -749,10 +707,6 @@
 
 .method private reflow(Ljava/lang/CharSequence;III)V
     .locals 40
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     move-object/from16 v0, p0
 
@@ -1417,7 +1371,6 @@
 
 .method public getEllipsisCount(I)I
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Landroid/text/DynamicLayout;->mEllipsizeAt:Landroid/text/TextUtils$TruncateAt;
 
@@ -1442,7 +1395,6 @@
 
 .method public getEllipsisStart(I)I
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Landroid/text/DynamicLayout;->mEllipsizeAt:Landroid/text/TextUtils$TruncateAt;
 
@@ -1483,7 +1435,6 @@
 
 .method public getLineContainsTab(I)Z
     .locals 3
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -1521,7 +1472,6 @@
 
 .method public getLineDescent(I)I
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Landroid/text/DynamicLayout;->mInts:Landroid/text/PackedIntVector;
 
@@ -1536,7 +1486,6 @@
 
 .method public final getLineDirections(I)Landroid/text/Layout$Directions;
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Landroid/text/DynamicLayout;->mObjects:Landroid/text/PackedObjectVector;
 
@@ -1553,7 +1502,6 @@
 
 .method public getLineStart(I)I
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Landroid/text/DynamicLayout;->mInts:Landroid/text/PackedIntVector;
 
@@ -1572,7 +1520,6 @@
 
 .method public getLineTop(I)I
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Landroid/text/DynamicLayout;->mInts:Landroid/text/PackedIntVector;
 
@@ -1595,7 +1542,6 @@
 
 .method public getParagraphDirection(I)I
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Landroid/text/DynamicLayout;->mInts:Landroid/text/PackedIntVector;
 
@@ -1620,9 +1566,6 @@
 
 .method setBlocksDataForTest([I[II)V
     .locals 3
-    .param p1    # [I
-    .param p2    # [I
-    .param p3    # I
 
     const/4 v2, 0x0
 
@@ -1657,7 +1600,6 @@
 
 .method public setIndexFirstChangedBlock(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/text/DynamicLayout;->mIndexFirstChangedBlock:I
 
@@ -1666,9 +1608,6 @@
 
 .method updateBlocks(III)V
     .locals 25
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     move-object/from16 v0, p0
 

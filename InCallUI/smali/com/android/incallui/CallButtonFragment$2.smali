@@ -36,7 +36,6 @@
 # virtual methods
 .method public onVoWifiStateChanged(Z)V
     .locals 3
-    .param p1    # Z
 
     const/4 v1, 0x1
 

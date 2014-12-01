@@ -34,7 +34,6 @@
 
 .method private static final sendDeathNotice(Landroid/os/IBinder$DeathRecipient;)V
     .locals 3
-    .param p0    # Landroid/os/IBinder$DeathRecipient;
 
     :try_start_0
     invoke-interface {p0}, Landroid/os/IBinder$DeathRecipient;->binderDied()V
@@ -60,8 +59,6 @@
 # virtual methods
 .method public dump(Ljava/io/FileDescriptor;[Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -109,8 +106,6 @@
 
 .method public dumpAsync(Ljava/io/FileDescriptor;[Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -203,7 +198,6 @@
 
 .method public queryLocalInterface(Ljava/lang/String;)Landroid/os/IInterface;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 

@@ -76,7 +76,6 @@
 
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -113,7 +112,6 @@
 
 .method static synthetic access$000(Lcom/ipsec/client/IPsecClient;)Ljava/lang/ref/WeakReference;
     .locals 1
-    .param p0    # Lcom/ipsec/client/IPsecClient;
 
     iget-object v0, p0, Lcom/ipsec/client/IPsecClient;->mListener:Ljava/lang/ref/WeakReference;
 
@@ -122,7 +120,6 @@
 
 .method static synthetic access$100(Lcom/ipsec/client/IPsecClient;)Ljava/util/HashMap;
     .locals 1
-    .param p0    # Lcom/ipsec/client/IPsecClient;
 
     iget-object v0, p0, Lcom/ipsec/client/IPsecClient;->mActiveConnections:Ljava/util/HashMap;
 
@@ -139,7 +136,6 @@
 
 .method static synthetic access$400(Lcom/ipsec/client/IPsecClient;)Lcom/ipsec/client/IIPsecService;
     .locals 1
-    .param p0    # Lcom/ipsec/client/IPsecClient;
 
     iget-object v0, p0, Lcom/ipsec/client/IPsecClient;->mIPsecService:Lcom/ipsec/client/IIPsecService;
 
@@ -148,8 +144,6 @@
 
 .method static synthetic access$402(Lcom/ipsec/client/IPsecClient;Lcom/ipsec/client/IIPsecService;)Lcom/ipsec/client/IIPsecService;
     .locals 0
-    .param p0    # Lcom/ipsec/client/IPsecClient;
-    .param p1    # Lcom/ipsec/client/IIPsecService;
 
     iput-object p1, p0, Lcom/ipsec/client/IPsecClient;->mIPsecService:Lcom/ipsec/client/IIPsecService;
 
@@ -158,7 +152,6 @@
 
 .method static synthetic access$500(Lcom/ipsec/client/IPsecClient;)Lcom/ipsec/client/IIPsecServiceCallback;
     .locals 1
-    .param p0    # Lcom/ipsec/client/IPsecClient;
 
     iget-object v0, p0, Lcom/ipsec/client/IPsecClient;->mCallback:Lcom/ipsec/client/IIPsecServiceCallback;
 
@@ -167,7 +160,6 @@
 
 .method static synthetic access$600(Lcom/ipsec/client/IPsecClient;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/ipsec/client/IPsecClient;
 
     iget-object v0, p0, Lcom/ipsec/client/IPsecClient;->mLogFilePath:Ljava/lang/String;
 
@@ -176,8 +168,6 @@
 
 .method static synthetic access$602(Lcom/ipsec/client/IPsecClient;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/ipsec/client/IPsecClient;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/ipsec/client/IPsecClient;->mLogFilePath:Ljava/lang/String;
 
@@ -186,7 +176,6 @@
 
 .method static synthetic access$700(Lcom/ipsec/client/IPsecClient;)Lcom/ipsec/client/IPsecError;
     .locals 1
-    .param p0    # Lcom/ipsec/client/IPsecClient;
 
     invoke-direct {p0}, Lcom/ipsec/client/IPsecClient;->doStopService()Lcom/ipsec/client/IPsecError;
 
@@ -197,8 +186,6 @@
 
 .method static synthetic access$802(Lcom/ipsec/client/IPsecClient;Lcom/ipsec/client/IPsecClient$IPsecServiceConnection;)Lcom/ipsec/client/IPsecClient$IPsecServiceConnection;
     .locals 0
-    .param p0    # Lcom/ipsec/client/IPsecClient;
-    .param p1    # Lcom/ipsec/client/IPsecClient$IPsecServiceConnection;
 
     iput-object p1, p0, Lcom/ipsec/client/IPsecClient;->mIPsecServiceConnection:Lcom/ipsec/client/IPsecClient$IPsecServiceConnection;
 
@@ -207,8 +194,6 @@
 
 .method private decodeConnectionStateBundle(Landroid/os/Bundle;Lcom/ipsec/client/IPsecConnectionState;)Z
     .locals 17
-    .param p1    # Landroid/os/Bundle;
-    .param p2    # Lcom/ipsec/client/IPsecConnectionState;
 
     const-string v14, "IPSC/IPsecClient"
 
@@ -693,8 +678,6 @@
 
 .method private decodeRelayDataBundle(Landroid/os/Bundle;Lcom/ipsec/client/IPsecRelayData;)Z
     .locals 10
-    .param p1    # Landroid/os/Bundle;
-    .param p2    # Lcom/ipsec/client/IPsecRelayData;
 
     const/4 v9, 0x0
 
@@ -1248,8 +1231,6 @@
 
 .method private encodeConnectBundle(Lcom/ipsec/client/IPsecConnection;Ljava/lang/StringBuilder;)Landroid/os/Bundle;
     .locals 38
-    .param p1    # Lcom/ipsec/client/IPsecConnection;
-    .param p2    # Ljava/lang/StringBuilder;
 
     new-instance v5, Landroid/os/Bundle;
 
@@ -2908,7 +2889,6 @@
 
 .method public static declared-synchronized getInstance(Landroid/content/Context;)Lcom/ipsec/client/IPsecClient;
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     const-class v1, Lcom/ipsec/client/IPsecClient;
 
@@ -2966,8 +2946,6 @@
 
 .method private parseIPsecErrorString(Ljava/lang/String;Lcom/ipsec/client/IPsecError;)Lcom/ipsec/client/IPsecError;
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/ipsec/client/IPsecError;
 
     move-object v1, p2
 
@@ -3014,10 +2992,6 @@
 
 .method private sendLocalConnectionEvent(Lcom/ipsec/client/IPsecConnection;Lcom/ipsec/client/IPsecEvent;Ljava/lang/String;I)V
     .locals 5
-    .param p1    # Lcom/ipsec/client/IPsecConnection;
-    .param p2    # Lcom/ipsec/client/IPsecEvent;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
 
     move-object v0, p2
 
@@ -3071,8 +3045,6 @@
 # virtual methods
 .method public checkConnection(Lcom/ipsec/client/IPsecConnection;I)Lcom/ipsec/client/IPsecError;
     .locals 9
-    .param p1    # Lcom/ipsec/client/IPsecConnection;
-    .param p2    # I
 
     const-string v5, "IPSC/IPsecClient"
 
@@ -3367,7 +3339,6 @@
 
 .method public connect(Lcom/ipsec/client/IPsecConnection;)Lcom/ipsec/client/IPsecError;
     .locals 1
-    .param p1    # Lcom/ipsec/client/IPsecConnection;
 
     const/4 v0, 0x0
 
@@ -3380,8 +3351,6 @@
 
 .method public connect(Lcom/ipsec/client/IPsecConnection;Lcom/ipsec/client/IPsecEventData;)Lcom/ipsec/client/IPsecError;
     .locals 13
-    .param p1    # Lcom/ipsec/client/IPsecConnection;
-    .param p2    # Lcom/ipsec/client/IPsecEventData;
 
     const/4 v12, 0x0
 
@@ -4074,9 +4043,6 @@
 
 .method public continueConnect(Lcom/ipsec/client/IPsecConnection;Lcom/ipsec/client/IPsecEventData;Lcom/ipsec/client/IPsecRelayData;)Lcom/ipsec/client/IPsecError;
     .locals 18
-    .param p1    # Lcom/ipsec/client/IPsecConnection;
-    .param p2    # Lcom/ipsec/client/IPsecEventData;
-    .param p3    # Lcom/ipsec/client/IPsecRelayData;
 
     const-string v14, "IPSC/IPsecClient"
 
@@ -4855,7 +4821,6 @@
 
 .method public disconnect(Lcom/ipsec/client/IPsecConnection;)Lcom/ipsec/client/IPsecError;
     .locals 1
-    .param p1    # Lcom/ipsec/client/IPsecConnection;
 
     const/4 v0, 0x0
 
@@ -4868,8 +4833,6 @@
 
 .method public disconnect(Lcom/ipsec/client/IPsecConnection;Lcom/ipsec/client/IPsecEventData;)Lcom/ipsec/client/IPsecError;
     .locals 13
-    .param p1    # Lcom/ipsec/client/IPsecConnection;
-    .param p2    # Lcom/ipsec/client/IPsecEventData;
 
     const/4 v12, 0x0
 
@@ -5443,7 +5406,6 @@
 
 .method public getIPsecConnectionState(Lcom/ipsec/client/IPsecConnection;)Lcom/ipsec/client/IPsecConnectionState;
     .locals 10
-    .param p1    # Lcom/ipsec/client/IPsecConnection;
 
     const/4 v5, 0x0
 
@@ -5974,7 +5936,6 @@
 
 .method public isConnected(Lcom/ipsec/client/IPsecConnection;)Z
     .locals 10
-    .param p1    # Lcom/ipsec/client/IPsecConnection;
 
     const-string v6, "IPSC/IPsecClient"
 
@@ -6462,8 +6423,6 @@
 
 .method public queryData(Lcom/ipsec/client/IPsecConnection;Lcom/ipsec/client/IPsecRelayData;)Lcom/ipsec/client/IPsecError;
     .locals 8
-    .param p1    # Lcom/ipsec/client/IPsecConnection;
-    .param p2    # Lcom/ipsec/client/IPsecRelayData;
 
     const-string v4, "IPSC/IPsecClient"
 
@@ -6759,7 +6718,6 @@
 
 .method public setServiceListener(Lcom/ipsec/client/IIPsecListener;)V
     .locals 3
-    .param p1    # Lcom/ipsec/client/IIPsecListener;
 
     const-string v0, "IPSC/IPsecClient"
 

@@ -31,7 +31,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/settings/ASensorSettings;Landroid/content/Context;)V
     .locals 2
-    .param p2    # Landroid/content/Context;
 
     iput-object p1, p0, Lcom/android/settings/ASensorSettings$ASensorSettingsView;->this$0:Lcom/android/settings/ASensorSettings;
 
@@ -86,8 +85,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/ASensorSettings$ASensorSettingsView;I)V
     .locals 0
-    .param p0    # Lcom/android/settings/ASensorSettings$ASensorSettingsView;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/settings/ASensorSettings$ASensorSettingsView;->updateState(I)V
 
@@ -96,7 +93,6 @@
 
 .method private updateState(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/settings/ASensorSettings$ASensorSettingsView;->mState:I
 
@@ -107,7 +103,6 @@
 # virtual methods
 .method public getPoint([F)[F
     .locals 5
-    .param p1    # [F
 
     const/4 v4, 0x1
 
@@ -184,7 +179,6 @@
 
 .method protected onDraw(Landroid/graphics/Canvas;)V
     .locals 11
-    .param p1    # Landroid/graphics/Canvas;
 
     const v10, 0x7f0205bf
 
@@ -592,8 +586,6 @@
 
 .method public setPoint(FF)V
     .locals 7
-    .param p1    # F
-    .param p2    # F
 
     const-wide/high16 v5, 0x4000000000000000L
 

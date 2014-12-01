@@ -23,7 +23,6 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/cover/CoverManager$CoverStateListenerDelegate;Landroid/os/Looper;Lcom/samsung/android/cover/CoverManager;)V
     .locals 0
-    .param p2    # Landroid/os/Looper;
 
     iput-object p1, p0, Lcom/samsung/android/cover/CoverManager$CoverStateListenerDelegate$1;->this$1:Lcom/samsung/android/cover/CoverManager$CoverStateListenerDelegate;
 
@@ -38,7 +37,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 4
-    .param p1    # Landroid/os/Message;
 
     const/4 v1, 0x0
 

@@ -33,8 +33,6 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     # getter for: Lcom/android/server/enterprise/keystore/TimaKeystoreService;->DBG:Z
     invoke-static {}, Lcom/android/server/enterprise/keystore/TimaKeystoreService;->access$100()Z

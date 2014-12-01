@@ -183,8 +183,6 @@
 
 .method public deleteInfo(II)Z
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x1
 
@@ -311,7 +309,6 @@
 
 .method public getCount(I)I
     .locals 1
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -397,7 +394,6 @@
 
 .method public getEndPosition(Ljava/lang/String;)I
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -462,7 +458,6 @@
 
 .method public getInfo(I)Ljava/util/ArrayList;
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -545,7 +540,6 @@
 
 .method public getStartPosition(Ljava/lang/String;)I
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -608,8 +602,6 @@
 
 .method public setInfo(Ljava/lang/String;I)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     packed-switch p2, :pswitch_data_0
 
@@ -679,7 +671,6 @@
 
 .method public setOriginalData(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/util/secutil/SmartParsingData;->originalData:Ljava/lang/String;
 
@@ -688,7 +679,6 @@
 
 .method public setRemainData(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/util/secutil/SmartParsingData;->remainData:Ljava/lang/String;
 

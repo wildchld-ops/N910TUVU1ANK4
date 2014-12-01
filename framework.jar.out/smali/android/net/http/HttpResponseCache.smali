@@ -13,7 +13,6 @@
 # direct methods
 .method private constructor <init>(Lcom/android/okhttp/HttpResponseCache;)V
     .locals 0
-    .param p1    # Lcom/android/okhttp/HttpResponseCache;
 
     invoke-direct {p0}, Ljava/net/ResponseCache;-><init>()V
 
@@ -50,8 +49,6 @@
 
 .method public static install(Ljava/io/File;J)Landroid/net/http/HttpResponseCache;
     .locals 5
-    .param p0    # Ljava/io/File;
-    .param p1    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -197,8 +194,6 @@
 
 .method public get(Ljava/net/URI;Ljava/lang/String;Ljava/util/Map;)Ljava/net/CacheResponse;
     .locals 1
-    .param p1    # Ljava/net/URI;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -280,8 +275,6 @@
 
 .method public put(Ljava/net/URI;Ljava/net/URLConnection;)Ljava/net/CacheRequest;
     .locals 1
-    .param p1    # Ljava/net/URI;
-    .param p2    # Ljava/net/URLConnection;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

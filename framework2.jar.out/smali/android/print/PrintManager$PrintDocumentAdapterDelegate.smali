@@ -58,8 +58,6 @@
 # direct methods
 .method public constructor <init>(Landroid/app/Activity;Landroid/print/PrintDocumentAdapter;)V
     .locals 2
-    .param p1    # Landroid/app/Activity;
-    .param p2    # Landroid/print/PrintDocumentAdapter;
 
     invoke-direct {p0}, Landroid/print/IPrintDocumentAdapter$Stub;-><init>()V
 
@@ -98,7 +96,6 @@
 
 .method static synthetic access$1000(Landroid/print/PrintManager$PrintDocumentAdapterDelegate;)Z
     .locals 1
-    .param p0    # Landroid/print/PrintManager$PrintDocumentAdapterDelegate;
 
     iget-boolean v0, p0, Landroid/print/PrintManager$PrintDocumentAdapterDelegate;->mDestroyed:Z
 
@@ -107,7 +104,6 @@
 
 .method static synthetic access$1100(Landroid/print/PrintManager$PrintDocumentAdapterDelegate;)V
     .locals 0
-    .param p0    # Landroid/print/PrintManager$PrintDocumentAdapterDelegate;
 
     invoke-direct {p0}, Landroid/print/PrintManager$PrintDocumentAdapterDelegate;->doPendingWorkLocked()V
 
@@ -116,7 +112,6 @@
 
 .method static synthetic access$200(Landroid/print/PrintManager$PrintDocumentAdapterDelegate;)Z
     .locals 1
-    .param p0    # Landroid/print/PrintManager$PrintDocumentAdapterDelegate;
 
     invoke-direct {p0}, Landroid/print/PrintManager$PrintDocumentAdapterDelegate;->isFinished()Z
 
@@ -127,7 +122,6 @@
 
 .method static synthetic access$300(Landroid/print/PrintManager$PrintDocumentAdapterDelegate;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Landroid/print/PrintManager$PrintDocumentAdapterDelegate;
 
     iget-object v0, p0, Landroid/print/PrintManager$PrintDocumentAdapterDelegate;->mLock:Ljava/lang/Object;
 
@@ -136,7 +130,6 @@
 
 .method static synthetic access$400(Landroid/print/PrintManager$PrintDocumentAdapterDelegate;)Landroid/print/PrintDocumentAdapter;
     .locals 1
-    .param p0    # Landroid/print/PrintManager$PrintDocumentAdapterDelegate;
 
     iget-object v0, p0, Landroid/print/PrintManager$PrintDocumentAdapterDelegate;->mDocumentAdapter:Landroid/print/PrintDocumentAdapter;
 
@@ -145,7 +138,6 @@
 
 .method static synthetic access$500(Landroid/print/PrintManager$PrintDocumentAdapterDelegate;)Landroid/print/PrintManager$PrintDocumentAdapterDelegate$LayoutSpec;
     .locals 1
-    .param p0    # Landroid/print/PrintManager$PrintDocumentAdapterDelegate;
 
     iget-object v0, p0, Landroid/print/PrintManager$PrintDocumentAdapterDelegate;->mLastLayoutSpec:Landroid/print/PrintManager$PrintDocumentAdapterDelegate$LayoutSpec;
 
@@ -154,8 +146,6 @@
 
 .method static synthetic access$502(Landroid/print/PrintManager$PrintDocumentAdapterDelegate;Landroid/print/PrintManager$PrintDocumentAdapterDelegate$LayoutSpec;)Landroid/print/PrintManager$PrintDocumentAdapterDelegate$LayoutSpec;
     .locals 0
-    .param p0    # Landroid/print/PrintManager$PrintDocumentAdapterDelegate;
-    .param p1    # Landroid/print/PrintManager$PrintDocumentAdapterDelegate$LayoutSpec;
 
     iput-object p1, p0, Landroid/print/PrintManager$PrintDocumentAdapterDelegate;->mLastLayoutSpec:Landroid/print/PrintManager$PrintDocumentAdapterDelegate$LayoutSpec;
 
@@ -164,8 +154,6 @@
 
 .method static synthetic access$602(Landroid/print/PrintManager$PrintDocumentAdapterDelegate;Landroid/os/CancellationSignal;)Landroid/os/CancellationSignal;
     .locals 0
-    .param p0    # Landroid/print/PrintManager$PrintDocumentAdapterDelegate;
-    .param p1    # Landroid/os/CancellationSignal;
 
     iput-object p1, p0, Landroid/print/PrintManager$PrintDocumentAdapterDelegate;->mLayoutOrWriteCancellation:Landroid/os/CancellationSignal;
 
@@ -174,7 +162,6 @@
 
 .method static synthetic access$700(Landroid/print/PrintManager$PrintDocumentAdapterDelegate;)Landroid/print/PrintManager$PrintDocumentAdapterDelegate$WriteSpec;
     .locals 1
-    .param p0    # Landroid/print/PrintManager$PrintDocumentAdapterDelegate;
 
     iget-object v0, p0, Landroid/print/PrintManager$PrintDocumentAdapterDelegate;->mLastWriteSpec:Landroid/print/PrintManager$PrintDocumentAdapterDelegate$WriteSpec;
 
@@ -183,8 +170,6 @@
 
 .method static synthetic access$702(Landroid/print/PrintManager$PrintDocumentAdapterDelegate;Landroid/print/PrintManager$PrintDocumentAdapterDelegate$WriteSpec;)Landroid/print/PrintManager$PrintDocumentAdapterDelegate$WriteSpec;
     .locals 0
-    .param p0    # Landroid/print/PrintManager$PrintDocumentAdapterDelegate;
-    .param p1    # Landroid/print/PrintManager$PrintDocumentAdapterDelegate$WriteSpec;
 
     iput-object p1, p0, Landroid/print/PrintManager$PrintDocumentAdapterDelegate;->mLastWriteSpec:Landroid/print/PrintManager$PrintDocumentAdapterDelegate$WriteSpec;
 
@@ -193,7 +178,6 @@
 
 .method static synthetic access$800(Landroid/print/PrintManager$PrintDocumentAdapterDelegate;)Landroid/app/Activity;
     .locals 1
-    .param p0    # Landroid/print/PrintManager$PrintDocumentAdapterDelegate;
 
     iget-object v0, p0, Landroid/print/PrintManager$PrintDocumentAdapterDelegate;->mActivity:Landroid/app/Activity;
 
@@ -202,7 +186,6 @@
 
 .method static synthetic access$900(Landroid/print/PrintManager$PrintDocumentAdapterDelegate;)V
     .locals 0
-    .param p0    # Landroid/print/PrintManager$PrintDocumentAdapterDelegate;
 
     invoke-direct {p0}, Landroid/print/PrintManager$PrintDocumentAdapterDelegate;->clearLocked()V
 
@@ -458,11 +441,6 @@
 
 .method public layout(Landroid/print/PrintAttributes;Landroid/print/PrintAttributes;Landroid/print/ILayoutResultCallback;Landroid/os/Bundle;I)V
     .locals 5
-    .param p1    # Landroid/print/PrintAttributes;
-    .param p2    # Landroid/print/PrintAttributes;
-    .param p3    # Landroid/print/ILayoutResultCallback;
-    .param p4    # Landroid/os/Bundle;
-    .param p5    # I
 
     iget-object v3, p0, Landroid/print/PrintManager$PrintDocumentAdapterDelegate;->mLock:Ljava/lang/Object;
 
@@ -581,15 +559,12 @@
 
 .method public onActivityCreated(Landroid/app/Activity;Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/app/Activity;
-    .param p2    # Landroid/os/Bundle;
 
     return-void
 .end method
 
 .method public onActivityDestroyed(Landroid/app/Activity;)V
     .locals 4
-    .param p1    # Landroid/app/Activity;
 
     iget-object v3, p0, Landroid/print/PrintManager$PrintDocumentAdapterDelegate;->mLock:Ljava/lang/Object;
 
@@ -661,43 +636,36 @@
 
 .method public onActivityPaused(Landroid/app/Activity;)V
     .locals 0
-    .param p1    # Landroid/app/Activity;
 
     return-void
 .end method
 
 .method public onActivityResumed(Landroid/app/Activity;)V
     .locals 0
-    .param p1    # Landroid/app/Activity;
 
     return-void
 .end method
 
 .method public onActivitySaveInstanceState(Landroid/app/Activity;Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/app/Activity;
-    .param p2    # Landroid/os/Bundle;
 
     return-void
 .end method
 
 .method public onActivityStarted(Landroid/app/Activity;)V
     .locals 0
-    .param p1    # Landroid/app/Activity;
 
     return-void
 .end method
 
 .method public onActivityStopped(Landroid/app/Activity;)V
     .locals 0
-    .param p1    # Landroid/app/Activity;
 
     return-void
 .end method
 
 .method public setObserver(Landroid/print/IPrintDocumentAdapterObserver;)V
     .locals 4
-    .param p1    # Landroid/print/IPrintDocumentAdapterObserver;
 
     iget-object v3, p0, Landroid/print/PrintManager$PrintDocumentAdapterDelegate;->mLock:Ljava/lang/Object;
 
@@ -799,10 +767,6 @@
 
 .method public write([Landroid/print/PageRange;Landroid/os/ParcelFileDescriptor;Landroid/print/IWriteResultCallback;I)V
     .locals 5
-    .param p1    # [Landroid/print/PageRange;
-    .param p2    # Landroid/os/ParcelFileDescriptor;
-    .param p3    # Landroid/print/IWriteResultCallback;
-    .param p4    # I
 
     iget-object v3, p0, Landroid/print/PrintManager$PrintDocumentAdapterDelegate;->mLock:Ljava/lang/Object;
 

@@ -102,8 +102,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/media/RemoteController$OnClientUpdateListener;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/media/RemoteController$OnClientUpdateListener;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;
@@ -119,9 +117,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/media/RemoteController$OnClientUpdateListener;Landroid/os/Looper;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/media/RemoteController$OnClientUpdateListener;
-    .param p3    # Landroid/os/Looper;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;
@@ -266,7 +261,6 @@
 
 .method static synthetic access$100(Landroid/media/RemoteController;)I
     .locals 1
-    .param p0    # Landroid/media/RemoteController;
 
     iget v0, p0, Landroid/media/RemoteController;->mClientGenerationIdCurrent:I
 
@@ -275,9 +269,6 @@
 
 .method static synthetic access$1000(Landroid/media/RemoteController;IZ)V
     .locals 0
-    .param p0    # Landroid/media/RemoteController;
-    .param p1    # I
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Landroid/media/RemoteController;->onClientChange(IZ)V
 
@@ -286,8 +277,6 @@
 
 .method static synthetic access$102(Landroid/media/RemoteController;I)I
     .locals 0
-    .param p0    # Landroid/media/RemoteController;
-    .param p1    # I
 
     iput p1, p0, Landroid/media/RemoteController;->mClientGenerationIdCurrent:I
 
@@ -296,8 +285,6 @@
 
 .method static synthetic access$1100(Landroid/media/RemoteController;Z)V
     .locals 0
-    .param p0    # Landroid/media/RemoteController;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Landroid/media/RemoteController;->onDisplayEnable(Z)V
 
@@ -314,7 +301,6 @@
 
 .method static synthetic access$300(Landroid/media/RemoteController;)Landroid/media/AudioManager;
     .locals 1
-    .param p0    # Landroid/media/RemoteController;
 
     iget-object v0, p0, Landroid/media/RemoteController;->mAudioManager:Landroid/media/AudioManager;
 
@@ -323,7 +309,6 @@
 
 .method static synthetic access$400(Landroid/media/RemoteController;)Landroid/media/RemoteController$EventHandler;
     .locals 1
-    .param p0    # Landroid/media/RemoteController;
 
     iget-object v0, p0, Landroid/media/RemoteController;->mEventHandler:Landroid/media/RemoteController$EventHandler;
 
@@ -332,13 +317,6 @@
 
 .method static synthetic access$500(Landroid/os/Handler;IIIILjava/lang/Object;I)V
     .locals 0
-    .param p0    # Landroid/os/Handler;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Ljava/lang/Object;
-    .param p6    # I
 
     invoke-static/range {p0 .. p6}, Landroid/media/RemoteController;->sendMsg(Landroid/os/Handler;IIIILjava/lang/Object;I)V
 
@@ -347,9 +325,6 @@
 
 .method static synthetic access$600(Landroid/media/RemoteController;ILandroid/app/PendingIntent;)V
     .locals 0
-    .param p0    # Landroid/media/RemoteController;
-    .param p1    # I
-    .param p2    # Landroid/app/PendingIntent;
 
     invoke-direct {p0, p1, p2}, Landroid/media/RemoteController;->onNewPendingIntent(ILandroid/app/PendingIntent;)V
 
@@ -358,9 +333,6 @@
 
 .method static synthetic access$700(Landroid/media/RemoteController;ILandroid/media/RemoteController$PlaybackInfo;)V
     .locals 0
-    .param p0    # Landroid/media/RemoteController;
-    .param p1    # I
-    .param p2    # Landroid/media/RemoteController$PlaybackInfo;
 
     invoke-direct {p0, p1, p2}, Landroid/media/RemoteController;->onNewPlaybackInfo(ILandroid/media/RemoteController$PlaybackInfo;)V
 
@@ -369,9 +341,6 @@
 
 .method static synthetic access$800(Landroid/media/RemoteController;II)V
     .locals 0
-    .param p0    # Landroid/media/RemoteController;
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Landroid/media/RemoteController;->onNewTransportInfo(II)V
 
@@ -380,9 +349,6 @@
 
 .method static synthetic access$900(Landroid/media/RemoteController;ILandroid/os/Bundle;)V
     .locals 0
-    .param p0    # Landroid/media/RemoteController;
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     invoke-direct {p0, p1, p2}, Landroid/media/RemoteController;->onNewMetadata(ILandroid/os/Bundle;)V
 
@@ -391,8 +357,6 @@
 
 .method private onClientChange(IZ)V
     .locals 3
-    .param p1    # I
-    .param p2    # Z
 
     sget-object v2, Landroid/media/RemoteController;->mGenLock:Ljava/lang/Object;
 
@@ -458,7 +422,6 @@
 
 .method private onDisplayEnable(Z)V
     .locals 10
-    .param p1    # Z
 
     sget-object v2, Landroid/media/RemoteController;->mInfoLock:Ljava/lang/Object;
 
@@ -608,8 +571,6 @@
 
 .method private onNewMetadata(ILandroid/os/Bundle;)V
     .locals 9
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     const-wide/16 v7, 0x0
 
@@ -754,8 +715,6 @@
 
 .method private onNewPendingIntent(ILandroid/app/PendingIntent;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/app/PendingIntent;
 
     sget-object v1, Landroid/media/RemoteController;->mGenLock:Ljava/lang/Object;
 
@@ -809,8 +768,6 @@
 
 .method private onNewPlaybackInfo(ILandroid/media/RemoteController$PlaybackInfo;)V
     .locals 7
-    .param p1    # I
-    .param p2    # Landroid/media/RemoteController$PlaybackInfo;
 
     sget-object v2, Landroid/media/RemoteController;->mGenLock:Ljava/lang/Object;
 
@@ -897,8 +854,6 @@
 
 .method private onNewTransportInfo(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     sget-object v2, Landroid/media/RemoteController;->mGenLock:Ljava/lang/Object;
 
@@ -960,13 +915,6 @@
 
 .method private static sendMsg(Landroid/os/Handler;IIIILjava/lang/Object;I)V
     .locals 3
-    .param p0    # Landroid/os/Handler;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Ljava/lang/Object;
-    .param p6    # I
 
     if-nez p0, :cond_0
 
@@ -1212,7 +1160,6 @@
 
 .method public seekTo(J)Z
     .locals 3
-    .param p1    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;
@@ -1282,7 +1229,6 @@
 
 .method public sendMediaKeyEvent(Landroid/view/KeyEvent;)Z
     .locals 7
-    .param p1    # Landroid/view/KeyEvent;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;
@@ -1414,8 +1360,6 @@
 
 .method public setArtworkConfiguration(II)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;
@@ -1433,9 +1377,6 @@
 
 .method public setArtworkConfiguration(ZII)Z
     .locals 5
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;
@@ -1528,7 +1469,6 @@
 
 .method setIsRegistered(Z)V
     .locals 2
-    .param p1    # Z
 
     sget-object v1, Landroid/media/RemoteController;->mInfoLock:Ljava/lang/Object;
 
@@ -1553,7 +1493,6 @@
 
 .method public setSynchronizationMode(I)Z
     .locals 4
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;

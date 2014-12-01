@@ -75,8 +75,6 @@
 
 .method static synthetic access$400(Landroid/net/wifi/WifiMonitor$WifiMonitorSingleton;Ljava/lang/String;)Landroid/net/wifi/WifiMonitor;
     .locals 1
-    .param p0    # Landroid/net/wifi/WifiMonitor$WifiMonitorSingleton;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Landroid/net/wifi/WifiMonitor$WifiMonitorSingleton;->getMonitor(Ljava/lang/String;)Landroid/net/wifi/WifiMonitor;
 
@@ -87,7 +85,6 @@
 
 .method static synthetic access$500(Landroid/net/wifi/WifiMonitor$WifiMonitorSingleton;)Ljava/util/HashMap;
     .locals 1
-    .param p0    # Landroid/net/wifi/WifiMonitor$WifiMonitorSingleton;
 
     iget-object v0, p0, Landroid/net/wifi/WifiMonitor$WifiMonitorSingleton;->mIfaceMap:Ljava/util/HashMap;
 
@@ -96,8 +93,6 @@
 
 .method static synthetic access$602(Landroid/net/wifi/WifiMonitor$WifiMonitorSingleton;Z)Z
     .locals 0
-    .param p0    # Landroid/net/wifi/WifiMonitor$WifiMonitorSingleton;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/net/wifi/WifiMonitor$WifiMonitorSingleton;->mConnected:Z
 
@@ -172,7 +167,6 @@
 
 .method private declared-synchronized getMonitor(Ljava/lang/String;)Landroid/net/wifi/WifiMonitor;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -203,7 +197,6 @@
 # virtual methods
 .method public declared-synchronized killSupplicant(Z)V
     .locals 4
-    .param p1    # Z
 
     monitor-enter p0
 
@@ -269,8 +262,6 @@
 
 .method public declared-synchronized registerInterfaceMonitor(Ljava/lang/String;Landroid/net/wifi/WifiMonitor;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/net/wifi/WifiMonitor;
 
     monitor-enter p0
 
@@ -358,7 +349,6 @@
 
 .method public declared-synchronized startMonitoring(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -598,7 +588,6 @@
 
 .method public declared-synchronized stopMonitoring(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -710,7 +699,6 @@
 
 .method public declared-synchronized unregisterInterfaceMonitor(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 

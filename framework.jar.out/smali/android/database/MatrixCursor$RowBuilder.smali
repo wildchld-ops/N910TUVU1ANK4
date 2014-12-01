@@ -27,7 +27,6 @@
 # direct methods
 .method constructor <init>(Landroid/database/MatrixCursor;I)V
     .locals 2
-    .param p2    # I
 
     iput-object p1, p0, Landroid/database/MatrixCursor$RowBuilder;->this$0:Landroid/database/MatrixCursor;
 
@@ -62,7 +61,6 @@
 # virtual methods
 .method public add(Ljava/lang/Object;)Landroid/database/MatrixCursor$RowBuilder;
     .locals 3
-    .param p1    # Ljava/lang/Object;
 
     iget v0, p0, Landroid/database/MatrixCursor$RowBuilder;->index:I
 
@@ -99,8 +97,6 @@
 
 .method public add(Ljava/lang/String;Ljava/lang/Object;)Landroid/database/MatrixCursor$RowBuilder;
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Object;
 
     const/4 v0, 0x0
 

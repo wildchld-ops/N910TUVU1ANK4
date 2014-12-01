@@ -136,7 +136,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 8
-    .param p1    # Landroid/content/Context;
 
     const/4 v7, 0x0
 
@@ -266,7 +265,6 @@
 
 .method private getResourceString(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     sget-object v0, Lcom/android/settings/settingssearch/SettingsSearchManager;->mContext:Landroid/content/Context;
 
@@ -283,8 +281,6 @@
 
 .method private getResourceString(Ljava/lang/String;I)Ljava/lang/String;
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
 
@@ -350,8 +346,6 @@
 # virtual methods
 .method public Delete(ILjava/lang/String;)V
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v5, 0x1
 
@@ -741,7 +735,6 @@
 
 .method public getPathAndRegisterMode(Ljava/lang/String;)Lcom/android/settings/settingssearch/SettingsSearchItem$PathAndRegisterMode;
     .locals 22
-    .param p1    # Ljava/lang/String;
 
     new-instance v16, Lcom/android/settings/settingssearch/SettingsSearchItem$PathAndRegisterMode;
 
@@ -1174,7 +1167,6 @@
 
 .method public getPreInfo(I)Lcom/android/settings/settingssearch/SettingsSearchItem;
     .locals 18
-    .param p1    # I
 
     new-instance v7, Lcom/android/settings/settingssearch/SettingsSearchItem;
 
@@ -1352,7 +1344,6 @@
 
 .method public getPreInfo(Ljava/lang/String;)Lcom/android/settings/settingssearch/SettingsSearchItem;
     .locals 19
-    .param p1    # Ljava/lang/String;
 
     new-instance v7, Lcom/android/settings/settingssearch/SettingsSearchItem;
 
@@ -1528,7 +1519,6 @@
 
 .method public getTitleInfoDB(Ljava/lang/String;)Ljava/util/ArrayList;
     .locals 19
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1863,7 +1853,6 @@
 
 .method public getTitleInfoDBFromKey(Ljava/lang/String;)Lcom/android/settings/settingssearch/SettingsSearchItem;
     .locals 16
-    .param p1    # Ljava/lang/String;
 
     new-instance v7, Lcom/android/settings/settingssearch/SettingsSearchItem;
 
@@ -2007,7 +1996,6 @@
 
 .method public refer_settinginfo_db_for_titleinfo(Z)Ljava/util/ArrayList;
     .locals 24
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(Z)",

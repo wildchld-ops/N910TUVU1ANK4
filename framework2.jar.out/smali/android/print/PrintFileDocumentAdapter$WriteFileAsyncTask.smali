@@ -38,9 +38,6 @@
 # direct methods
 .method public constructor <init>(Landroid/print/PrintFileDocumentAdapter;Landroid/os/ParcelFileDescriptor;Landroid/os/CancellationSignal;Landroid/print/PrintDocumentAdapter$WriteResultCallback;)V
     .locals 2
-    .param p2    # Landroid/os/ParcelFileDescriptor;
-    .param p3    # Landroid/os/CancellationSignal;
-    .param p4    # Landroid/print/PrintDocumentAdapter$WriteResultCallback;
 
     iput-object p1, p0, Landroid/print/PrintFileDocumentAdapter$WriteFileAsyncTask;->this$0:Landroid/print/PrintFileDocumentAdapter;
 
@@ -67,7 +64,6 @@
 # virtual methods
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [Ljava/lang/Void;
 
@@ -80,7 +76,6 @@
 
 .method protected varargs doInBackground([Ljava/lang/Void;)Ljava/lang/Void;
     .locals 9
-    .param p1    # [Ljava/lang/Void;
 
     const/4 v1, 0x0
 
@@ -216,7 +211,6 @@
 
 .method protected bridge synthetic onCancelled(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Ljava/lang/Void;
 
@@ -227,7 +221,6 @@
 
 .method protected onCancelled(Ljava/lang/Void;)V
     .locals 3
-    .param p1    # Ljava/lang/Void;
 
     iget-object v0, p0, Landroid/print/PrintFileDocumentAdapter$WriteFileAsyncTask;->mResultCallback:Landroid/print/PrintDocumentAdapter$WriteResultCallback;
 
@@ -251,7 +244,6 @@
 
 .method protected bridge synthetic onPostExecute(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Ljava/lang/Void;
 
@@ -262,7 +254,6 @@
 
 .method protected onPostExecute(Ljava/lang/Void;)V
     .locals 4
-    .param p1    # Ljava/lang/Void;
 
     iget-object v0, p0, Landroid/print/PrintFileDocumentAdapter$WriteFileAsyncTask;->mResultCallback:Landroid/print/PrintDocumentAdapter$WriteResultCallback;
 

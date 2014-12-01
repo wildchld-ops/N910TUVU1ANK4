@@ -20,7 +20,6 @@
 # virtual methods
 .method public duplicateFrame(Landroid/filterfw/core/Frame;)Landroid/filterfw/core/Frame;
     .locals 2
-    .param p1    # Landroid/filterfw/core/Frame;
 
     invoke-virtual {p1}, Landroid/filterfw/core/Frame;->getFormat()Landroid/filterfw/core/FrameFormat;
 
@@ -37,8 +36,6 @@
 
 .method public duplicateFrameToTarget(Landroid/filterfw/core/Frame;I)Landroid/filterfw/core/Frame;
     .locals 3
-    .param p1    # Landroid/filterfw/core/Frame;
-    .param p2    # I
 
     invoke-virtual {p1}, Landroid/filterfw/core/Frame;->getFormat()Landroid/filterfw/core/FrameFormat;
 
@@ -103,7 +100,6 @@
 
 .method setContext(Landroid/filterfw/core/FilterContext;)V
     .locals 0
-    .param p1    # Landroid/filterfw/core/FilterContext;
 
     iput-object p1, p0, Landroid/filterfw/core/FrameManager;->mContext:Landroid/filterfw/core/FilterContext;
 

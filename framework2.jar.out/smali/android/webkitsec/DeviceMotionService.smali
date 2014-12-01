@@ -57,8 +57,6 @@
 
 .method public constructor <init>(Landroid/webkitsec/DeviceMotionAndOrientationManager;Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/webkitsec/DeviceMotionAndOrientationManager;
-    .param p2    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -101,7 +99,6 @@
 
 .method static synthetic access$000(Landroid/webkitsec/DeviceMotionService;)Z
     .locals 1
-    .param p0    # Landroid/webkitsec/DeviceMotionService;
 
     iget-boolean v0, p0, Landroid/webkitsec/DeviceMotionService;->mIsRunning:Z
 
@@ -110,7 +107,6 @@
 
 .method static synthetic access$100(Landroid/webkitsec/DeviceMotionService;)Landroid/webkitsec/DeviceMotionAndOrientationManager;
     .locals 1
-    .param p0    # Landroid/webkitsec/DeviceMotionService;
 
     iget-object v0, p0, Landroid/webkitsec/DeviceMotionService;->mManager:Landroid/webkitsec/DeviceMotionAndOrientationManager;
 
@@ -119,7 +115,6 @@
 
 .method static synthetic access$200(Landroid/webkitsec/DeviceMotionService;)[F
     .locals 1
-    .param p0    # Landroid/webkitsec/DeviceMotionService;
 
     iget-object v0, p0, Landroid/webkitsec/DeviceMotionService;->mLastAcceleration:[F
 
@@ -128,7 +123,6 @@
 
 .method static synthetic access$300(Landroid/webkitsec/DeviceMotionService;)Ljava/lang/Runnable;
     .locals 1
-    .param p0    # Landroid/webkitsec/DeviceMotionService;
 
     iget-object v0, p0, Landroid/webkitsec/DeviceMotionService;->mUpdateRunnable:Ljava/lang/Runnable;
 
@@ -137,7 +131,6 @@
 
 .method static synthetic access$400(Landroid/webkitsec/DeviceMotionService;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Landroid/webkitsec/DeviceMotionService;
 
     iget-object v0, p0, Landroid/webkitsec/DeviceMotionService;->mHandler:Landroid/os/Handler;
 
@@ -146,8 +139,6 @@
 
 .method static synthetic access$502(Landroid/webkitsec/DeviceMotionService;Z)Z
     .locals 0
-    .param p0    # Landroid/webkitsec/DeviceMotionService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/webkitsec/DeviceMotionService;->mHaveSentErrorEvent:Z
 
@@ -394,8 +385,6 @@
 # virtual methods
 .method public onAccuracyChanged(Landroid/hardware/Sensor;I)V
     .locals 2
-    .param p1    # Landroid/hardware/Sensor;
-    .param p2    # I
 
     sget-boolean v0, Landroid/webkitsec/DeviceMotionService;->$assertionsDisabled:Z
 
@@ -429,7 +418,6 @@
 
 .method public onSensorChanged(Landroid/hardware/SensorEvent;)V
     .locals 3
-    .param p1    # Landroid/hardware/SensorEvent;
 
     const/4 v0, 0x1
 

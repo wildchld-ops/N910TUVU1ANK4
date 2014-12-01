@@ -39,7 +39,6 @@
 
 .method public postConcat(Landroid/graphics/Matrix;)Z
     .locals 1
-    .param p1    # Landroid/graphics/Matrix;
 
     invoke-virtual {p0}, Landroid/graphics/Matrix$1;->oops()V
 
@@ -50,7 +49,6 @@
 
 .method public postRotate(F)Z
     .locals 1
-    .param p1    # F
 
     invoke-virtual {p0}, Landroid/graphics/Matrix$1;->oops()V
 
@@ -61,9 +59,6 @@
 
 .method public postRotate(FFF)Z
     .locals 1
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
 
     invoke-virtual {p0}, Landroid/graphics/Matrix$1;->oops()V
 
@@ -74,8 +69,6 @@
 
 .method public postScale(FF)Z
     .locals 1
-    .param p1    # F
-    .param p2    # F
 
     invoke-virtual {p0}, Landroid/graphics/Matrix$1;->oops()V
 
@@ -86,10 +79,6 @@
 
 .method public postScale(FFFF)Z
     .locals 1
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
 
     invoke-virtual {p0}, Landroid/graphics/Matrix$1;->oops()V
 
@@ -100,8 +89,6 @@
 
 .method public postSkew(FF)Z
     .locals 1
-    .param p1    # F
-    .param p2    # F
 
     invoke-virtual {p0}, Landroid/graphics/Matrix$1;->oops()V
 
@@ -112,10 +99,6 @@
 
 .method public postSkew(FFFF)Z
     .locals 1
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
 
     invoke-virtual {p0}, Landroid/graphics/Matrix$1;->oops()V
 
@@ -126,8 +109,6 @@
 
 .method public postTranslate(FF)Z
     .locals 1
-    .param p1    # F
-    .param p2    # F
 
     invoke-virtual {p0}, Landroid/graphics/Matrix$1;->oops()V
 
@@ -138,7 +119,6 @@
 
 .method public preConcat(Landroid/graphics/Matrix;)Z
     .locals 1
-    .param p1    # Landroid/graphics/Matrix;
 
     invoke-virtual {p0}, Landroid/graphics/Matrix$1;->oops()V
 
@@ -149,7 +129,6 @@
 
 .method public preRotate(F)Z
     .locals 1
-    .param p1    # F
 
     invoke-virtual {p0}, Landroid/graphics/Matrix$1;->oops()V
 
@@ -160,9 +139,6 @@
 
 .method public preRotate(FFF)Z
     .locals 1
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
 
     invoke-virtual {p0}, Landroid/graphics/Matrix$1;->oops()V
 
@@ -173,8 +149,6 @@
 
 .method public preScale(FF)Z
     .locals 1
-    .param p1    # F
-    .param p2    # F
 
     invoke-virtual {p0}, Landroid/graphics/Matrix$1;->oops()V
 
@@ -185,10 +159,6 @@
 
 .method public preScale(FFFF)Z
     .locals 1
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
 
     invoke-virtual {p0}, Landroid/graphics/Matrix$1;->oops()V
 
@@ -199,8 +169,6 @@
 
 .method public preSkew(FF)Z
     .locals 1
-    .param p1    # F
-    .param p2    # F
 
     invoke-virtual {p0}, Landroid/graphics/Matrix$1;->oops()V
 
@@ -211,10 +179,6 @@
 
 .method public preSkew(FFFF)Z
     .locals 1
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
 
     invoke-virtual {p0}, Landroid/graphics/Matrix$1;->oops()V
 
@@ -225,8 +189,6 @@
 
 .method public preTranslate(FF)Z
     .locals 1
-    .param p1    # F
-    .param p2    # F
 
     invoke-virtual {p0}, Landroid/graphics/Matrix$1;->oops()V
 
@@ -245,7 +207,6 @@
 
 .method public set(Landroid/graphics/Matrix;)V
     .locals 0
-    .param p1    # Landroid/graphics/Matrix;
 
     invoke-virtual {p0}, Landroid/graphics/Matrix$1;->oops()V
 
@@ -254,8 +215,6 @@
 
 .method public setConcat(Landroid/graphics/Matrix;Landroid/graphics/Matrix;)Z
     .locals 1
-    .param p1    # Landroid/graphics/Matrix;
-    .param p2    # Landroid/graphics/Matrix;
 
     invoke-virtual {p0}, Landroid/graphics/Matrix$1;->oops()V
 
@@ -266,11 +225,6 @@
 
 .method public setPolyToPoly([FI[FII)Z
     .locals 1
-    .param p1    # [F
-    .param p2    # I
-    .param p3    # [F
-    .param p4    # I
-    .param p5    # I
 
     invoke-virtual {p0}, Landroid/graphics/Matrix$1;->oops()V
 
@@ -281,9 +235,6 @@
 
 .method public setRectToRect(Landroid/graphics/RectF;Landroid/graphics/RectF;Landroid/graphics/Matrix$ScaleToFit;)Z
     .locals 1
-    .param p1    # Landroid/graphics/RectF;
-    .param p2    # Landroid/graphics/RectF;
-    .param p3    # Landroid/graphics/Matrix$ScaleToFit;
 
     invoke-virtual {p0}, Landroid/graphics/Matrix$1;->oops()V
 
@@ -294,7 +245,6 @@
 
 .method public setRotate(F)V
     .locals 0
-    .param p1    # F
 
     invoke-virtual {p0}, Landroid/graphics/Matrix$1;->oops()V
 
@@ -303,9 +253,6 @@
 
 .method public setRotate(FFF)V
     .locals 0
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
 
     invoke-virtual {p0}, Landroid/graphics/Matrix$1;->oops()V
 
@@ -314,8 +261,6 @@
 
 .method public setScale(FF)V
     .locals 0
-    .param p1    # F
-    .param p2    # F
 
     invoke-virtual {p0}, Landroid/graphics/Matrix$1;->oops()V
 
@@ -324,10 +269,6 @@
 
 .method public setScale(FFFF)V
     .locals 0
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
 
     invoke-virtual {p0}, Landroid/graphics/Matrix$1;->oops()V
 
@@ -336,8 +277,6 @@
 
 .method public setSinCos(FF)V
     .locals 0
-    .param p1    # F
-    .param p2    # F
 
     invoke-virtual {p0}, Landroid/graphics/Matrix$1;->oops()V
 
@@ -346,10 +285,6 @@
 
 .method public setSinCos(FFFF)V
     .locals 0
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
 
     invoke-virtual {p0}, Landroid/graphics/Matrix$1;->oops()V
 
@@ -358,8 +293,6 @@
 
 .method public setSkew(FF)V
     .locals 0
-    .param p1    # F
-    .param p2    # F
 
     invoke-virtual {p0}, Landroid/graphics/Matrix$1;->oops()V
 
@@ -368,10 +301,6 @@
 
 .method public setSkew(FFFF)V
     .locals 0
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
 
     invoke-virtual {p0}, Landroid/graphics/Matrix$1;->oops()V
 
@@ -380,8 +309,6 @@
 
 .method public setTranslate(FF)V
     .locals 0
-    .param p1    # F
-    .param p2    # F
 
     invoke-virtual {p0}, Landroid/graphics/Matrix$1;->oops()V
 
@@ -390,7 +317,6 @@
 
 .method public setValues([F)V
     .locals 0
-    .param p1    # [F
 
     invoke-virtual {p0}, Landroid/graphics/Matrix$1;->oops()V
 

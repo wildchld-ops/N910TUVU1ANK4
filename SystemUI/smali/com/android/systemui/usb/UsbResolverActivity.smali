@@ -30,7 +30,6 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 10
-    .param p1    # Landroid/os/Bundle;
 
     invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
 
@@ -211,9 +210,6 @@
 
 .method protected onIntentSelected(Landroid/content/pm/ResolveInfo;Landroid/content/Intent;Z)V
     .locals 7
-    .param p1    # Landroid/content/pm/ResolveInfo;
-    .param p2    # Landroid/content/Intent;
-    .param p3    # Z
 
     :try_start_0
     const-string v5, "usb"

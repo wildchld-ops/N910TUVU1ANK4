@@ -16,14 +16,12 @@
 # virtual methods
 .method public onPlayingChanged(Landroid/support/v4/media/TransportController;)V
     .locals 0
-    .param p1    # Landroid/support/v4/media/TransportController;
 
     return-void
 .end method
 
 .method public onTransportControlsChanged(Landroid/support/v4/media/TransportController;)V
     .locals 0
-    .param p1    # Landroid/support/v4/media/TransportController;
 
     return-void
 .end method

@@ -70,7 +70,6 @@
 
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -97,7 +96,6 @@
 
 .method static synthetic access$000(Lcom/sec/android/inputmethod/accessibility/AccessibilityMagnificationCompat;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/sec/android/inputmethod/accessibility/AccessibilityMagnificationCompat;
 
     iget-object v0, p0, Lcom/sec/android/inputmethod/accessibility/AccessibilityMagnificationCompat;->mContext:Landroid/content/Context;
 
@@ -106,7 +104,6 @@
 
 .method static synthetic access$102(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/sec/android/inputmethod/accessibility/AccessibilityMagnificationCompat;->mEnabledMagnification:Z
 
@@ -115,8 +112,6 @@
 
 .method static synthetic access$200(Lcom/sec/android/inputmethod/accessibility/AccessibilityMagnificationCompat;Z)V
     .locals 0
-    .param p0    # Lcom/sec/android/inputmethod/accessibility/AccessibilityMagnificationCompat;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/sec/android/inputmethod/accessibility/AccessibilityMagnificationCompat;->notifyStateChanged(Z)V
 
@@ -125,7 +120,6 @@
 
 .method public static getInstance(Landroid/content/Context;)Lcom/sec/android/inputmethod/accessibility/AccessibilityMagnificationCompat;
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     sget-object v0, Lcom/sec/android/inputmethod/accessibility/AccessibilityMagnificationCompat;->sInstance:Lcom/sec/android/inputmethod/accessibility/AccessibilityMagnificationCompat;
 
@@ -153,7 +147,6 @@
 
 .method private init(Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x1
 
@@ -215,7 +208,6 @@
 
 .method public static isEnabledMagnificationGesture(Landroid/content/Context;)Z
     .locals 6
-    .param p0    # Landroid/content/Context;
 
     const/4 v2, 0x1
 
@@ -295,7 +287,6 @@
 
 .method private notifyStateChanged(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v2, p0, Lcom/sec/android/inputmethod/accessibility/AccessibilityMagnificationCompat;->mMagnificationListenerList:Ljava/util/ArrayList;
 
@@ -367,7 +358,6 @@
 
 .method public registerMagnificationStateListener(Lcom/sec/android/inputmethod/accessibility/AccessibilityMagnificationCompat$MagnificationStateListener;)V
     .locals 1
-    .param p1    # Lcom/sec/android/inputmethod/accessibility/AccessibilityMagnificationCompat$MagnificationStateListener;
 
     iget-object v0, p0, Lcom/sec/android/inputmethod/accessibility/AccessibilityMagnificationCompat;->mMagnificationListenerList:Ljava/util/ArrayList;
 
@@ -422,7 +412,6 @@
 
 .method public unregisterMangificationStateListener(Lcom/sec/android/inputmethod/accessibility/AccessibilityMagnificationCompat$MagnificationStateListener;)V
     .locals 1
-    .param p1    # Lcom/sec/android/inputmethod/accessibility/AccessibilityMagnificationCompat$MagnificationStateListener;
 
     iget-object v0, p0, Lcom/sec/android/inputmethod/accessibility/AccessibilityMagnificationCompat;->mMagnificationListenerList:Ljava/util/ArrayList;
 

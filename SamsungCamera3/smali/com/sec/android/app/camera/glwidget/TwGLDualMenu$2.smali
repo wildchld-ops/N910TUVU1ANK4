@@ -21,7 +21,6 @@
 # direct methods
 .method constructor <init>(Lcom/sec/android/app/camera/glwidget/TwGLDualMenu;Landroid/content/Context;)V
     .locals 0
-    .param p2    # Landroid/content/Context;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLDualMenu$2;->this$0:Lcom/sec/android/app/camera/glwidget/TwGLDualMenu;
 
@@ -34,7 +33,6 @@
 # virtual methods
 .method public onOrientationChanged(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v0, -0x1
 

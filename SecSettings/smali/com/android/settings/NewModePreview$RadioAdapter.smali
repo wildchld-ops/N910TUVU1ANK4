@@ -32,9 +32,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/settings/NewModePreview;Landroid/content/Context;I[Ljava/lang/String;)V
     .locals 0
-    .param p2    # Landroid/content/Context;
-    .param p3    # I
-    .param p4    # [Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/settings/NewModePreview$RadioAdapter;->this$0:Lcom/android/settings/NewModePreview;
 
@@ -49,9 +46,6 @@
 # virtual methods
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     if-nez p2, :cond_0
 

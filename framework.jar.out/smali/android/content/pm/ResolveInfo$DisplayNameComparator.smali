@@ -36,7 +36,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/pm/PackageManager;)V
     .locals 2
-    .param p1    # Landroid/content/pm/PackageManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -61,8 +60,6 @@
 # virtual methods
 .method public final compare(Landroid/content/pm/ResolveInfo;Landroid/content/pm/ResolveInfo;)I
     .locals 10
-    .param p1    # Landroid/content/pm/ResolveInfo;
-    .param p2    # Landroid/content/pm/ResolveInfo;
 
     const/4 v9, 0x0
 
@@ -205,8 +202,6 @@
 
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p1, Landroid/content/pm/ResolveInfo;
 

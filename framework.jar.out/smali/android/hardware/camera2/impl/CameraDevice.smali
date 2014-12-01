@@ -91,9 +91,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;Landroid/hardware/camera2/CameraDevice$StateListener;Landroid/os/Handler;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/hardware/camera2/CameraDevice$StateListener;
-    .param p3    # Landroid/os/Handler;
 
     const/4 v1, 0x1
 
@@ -230,7 +227,6 @@
 
 .method static synthetic access$000(Landroid/hardware/camera2/impl/CameraDevice;)Z
     .locals 1
-    .param p0    # Landroid/hardware/camera2/impl/CameraDevice;
 
     invoke-direct {p0}, Landroid/hardware/camera2/impl/CameraDevice;->isClosed()Z
 
@@ -241,7 +237,6 @@
 
 .method static synthetic access$100(Landroid/hardware/camera2/impl/CameraDevice;)Landroid/hardware/camera2/CameraDevice$StateListener;
     .locals 1
-    .param p0    # Landroid/hardware/camera2/impl/CameraDevice;
 
     iget-object v0, p0, Landroid/hardware/camera2/impl/CameraDevice;->mDeviceListener:Landroid/hardware/camera2/CameraDevice$StateListener;
 
@@ -250,7 +245,6 @@
 
 .method static synthetic access$1000(Landroid/hardware/camera2/impl/CameraDevice;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Landroid/hardware/camera2/impl/CameraDevice;
 
     iget-object v0, p0, Landroid/hardware/camera2/impl/CameraDevice;->mRepeatingRequestIdDeletedList:Ljava/util/ArrayList;
 
@@ -259,7 +253,6 @@
 
 .method static synthetic access$200(Landroid/hardware/camera2/impl/CameraDevice;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Landroid/hardware/camera2/impl/CameraDevice;
 
     iget-object v0, p0, Landroid/hardware/camera2/impl/CameraDevice;->mLock:Ljava/lang/Object;
 
@@ -268,7 +261,6 @@
 
 .method static synthetic access$300(Landroid/hardware/camera2/impl/CameraDevice;)Ljava/lang/Runnable;
     .locals 1
-    .param p0    # Landroid/hardware/camera2/impl/CameraDevice;
 
     iget-object v0, p0, Landroid/hardware/camera2/impl/CameraDevice;->mCallOnDisconnected:Ljava/lang/Runnable;
 
@@ -277,7 +269,6 @@
 
 .method static synthetic access$400(Landroid/hardware/camera2/impl/CameraDevice;)Ljava/lang/String;
     .locals 1
-    .param p0    # Landroid/hardware/camera2/impl/CameraDevice;
 
     iget-object v0, p0, Landroid/hardware/camera2/impl/CameraDevice;->TAG:Ljava/lang/String;
 
@@ -286,7 +277,6 @@
 
 .method static synthetic access$500(Landroid/hardware/camera2/impl/CameraDevice;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Landroid/hardware/camera2/impl/CameraDevice;
 
     iget-object v0, p0, Landroid/hardware/camera2/impl/CameraDevice;->mDeviceHandler:Landroid/os/Handler;
 
@@ -295,7 +285,6 @@
 
 .method static synthetic access$600(Landroid/hardware/camera2/impl/CameraDevice;)Z
     .locals 1
-    .param p0    # Landroid/hardware/camera2/impl/CameraDevice;
 
     iget-boolean v0, p0, Landroid/hardware/camera2/impl/CameraDevice;->DEBUG:Z
 
@@ -304,7 +293,6 @@
 
 .method static synthetic access$700(Landroid/hardware/camera2/impl/CameraDevice;)Z
     .locals 1
-    .param p0    # Landroid/hardware/camera2/impl/CameraDevice;
 
     iget-boolean v0, p0, Landroid/hardware/camera2/impl/CameraDevice;->mIdle:Z
 
@@ -313,8 +301,6 @@
 
 .method static synthetic access$702(Landroid/hardware/camera2/impl/CameraDevice;Z)Z
     .locals 0
-    .param p0    # Landroid/hardware/camera2/impl/CameraDevice;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/hardware/camera2/impl/CameraDevice;->mIdle:Z
 
@@ -323,7 +309,6 @@
 
 .method static synthetic access$800(Landroid/hardware/camera2/impl/CameraDevice;)Ljava/lang/Runnable;
     .locals 1
-    .param p0    # Landroid/hardware/camera2/impl/CameraDevice;
 
     iget-object v0, p0, Landroid/hardware/camera2/impl/CameraDevice;->mCallOnIdle:Ljava/lang/Runnable;
 
@@ -332,7 +317,6 @@
 
 .method static synthetic access$900(Landroid/hardware/camera2/impl/CameraDevice;)Landroid/util/SparseArray;
     .locals 1
-    .param p0    # Landroid/hardware/camera2/impl/CameraDevice;
 
     iget-object v0, p0, Landroid/hardware/camera2/impl/CameraDevice;->mCaptureListenerMap:Landroid/util/SparseArray;
 
@@ -341,7 +325,6 @@
 
 .method private checkHandler(Landroid/os/Handler;)Landroid/os/Handler;
     .locals 3
-    .param p1    # Landroid/os/Handler;
 
     if-nez p1, :cond_1
 
@@ -423,10 +406,6 @@
 
 .method private submitCaptureRequest(Landroid/hardware/camera2/CaptureRequest;Landroid/hardware/camera2/CameraDevice$CaptureListener;Landroid/os/Handler;Z)I
     .locals 5
-    .param p1    # Landroid/hardware/camera2/CaptureRequest;
-    .param p2    # Landroid/hardware/camera2/CameraDevice$CaptureListener;
-    .param p3    # Landroid/os/Handler;
-    .param p4    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/hardware/camera2/CameraAccessException;
@@ -537,9 +516,6 @@
 # virtual methods
 .method public capture(Landroid/hardware/camera2/CaptureRequest;Landroid/hardware/camera2/CameraDevice$CaptureListener;Landroid/os/Handler;)I
     .locals 1
-    .param p1    # Landroid/hardware/camera2/CaptureRequest;
-    .param p2    # Landroid/hardware/camera2/CameraDevice$CaptureListener;
-    .param p3    # Landroid/os/Handler;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/hardware/camera2/CameraAccessException;
@@ -557,8 +533,6 @@
 
 .method public captureBurst(Ljava/util/List;Landroid/hardware/camera2/CameraDevice$CaptureListener;Landroid/os/Handler;)I
     .locals 2
-    .param p2    # Landroid/hardware/camera2/CameraDevice$CaptureListener;
-    .param p3    # Landroid/os/Handler;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -937,7 +911,6 @@
 
 .method public createCaptureRequest(I)Landroid/hardware/camera2/CaptureRequest$Builder;
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/hardware/camera2/CameraAccessException;
@@ -1117,7 +1090,6 @@
 
 .method public setRemoteDevice(Landroid/hardware/camera2/ICameraDeviceUser;)V
     .locals 3
-    .param p1    # Landroid/hardware/camera2/ICameraDeviceUser;
 
     iget-object v1, p0, Landroid/hardware/camera2/impl/CameraDevice;->mLock:Ljava/lang/Object;
 
@@ -1160,8 +1132,6 @@
 
 .method public setRepeatingBurst(Ljava/util/List;Landroid/hardware/camera2/CameraDevice$CaptureListener;Landroid/os/Handler;)I
     .locals 2
-    .param p2    # Landroid/hardware/camera2/CameraDevice$CaptureListener;
-    .param p3    # Landroid/os/Handler;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1209,9 +1179,6 @@
 
 .method public setRepeatingRequest(Landroid/hardware/camera2/CaptureRequest;Landroid/hardware/camera2/CameraDevice$CaptureListener;Landroid/os/Handler;)I
     .locals 1
-    .param p1    # Landroid/hardware/camera2/CaptureRequest;
-    .param p2    # Landroid/hardware/camera2/CameraDevice$CaptureListener;
-    .param p3    # Landroid/os/Handler;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/hardware/camera2/CameraAccessException;

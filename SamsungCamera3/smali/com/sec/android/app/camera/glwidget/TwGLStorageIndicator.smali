@@ -12,9 +12,6 @@
 # direct methods
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;FF)V
     .locals 4
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # F
-    .param p3    # F
 
     const/4 v3, 0x4
 
@@ -61,7 +58,6 @@
 # virtual methods
 .method public setStorage(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v2, 0x4
 

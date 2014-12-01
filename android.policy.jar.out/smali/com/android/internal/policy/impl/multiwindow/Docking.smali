@@ -52,8 +52,6 @@
 # direct methods
 .method public constructor <init>(Landroid/app/Activity;Lcom/samsung/android/multiwindow/MultiWindowFacade;)V
     .locals 2
-    .param p1    # Landroid/app/Activity;
-    .param p2    # Lcom/samsung/android/multiwindow/MultiWindowFacade;
 
     const/4 v1, 0x0
 
@@ -101,7 +99,6 @@
 
 .method static synthetic access$000(Lcom/android/internal/policy/impl/multiwindow/Docking;)Lcom/android/internal/policy/impl/multiwindow/Docking$OnDockingListener;
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/multiwindow/Docking;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/multiwindow/Docking;->mDockingListener:Lcom/android/internal/policy/impl/multiwindow/Docking$OnDockingListener;
 
@@ -268,8 +265,6 @@
 
 .method public static getChanagedMultiWindowStyle(ILcom/samsung/android/multiwindow/MultiWindowStyle;)Lcom/samsung/android/multiwindow/MultiWindowStyle;
     .locals 3
-    .param p0    # I
-    .param p1    # Lcom/samsung/android/multiwindow/MultiWindowStyle;
 
     const/4 v2, 0x0
 
@@ -302,7 +297,6 @@
 
 .method private isFullScreenOnly(Lcom/samsung/android/multiwindow/MultiWindowStyle;)Z
     .locals 1
-    .param p1    # Lcom/samsung/android/multiwindow/MultiWindowStyle;
 
     if-eqz p1, :cond_0
 
@@ -344,8 +338,6 @@
 
 .method private parseActivityInfoMetaData(Landroid/os/Bundle;Ljava/lang/String;)Ljava/util/ArrayList;
     .locals 3
-    .param p1    # Landroid/os/Bundle;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -432,8 +424,6 @@
 
 .method public checkDockingWindow(II)I
     .locals 7
-    .param p1    # I
-    .param p2    # I
 
     const v4, 0x3d23d70a
 
@@ -925,7 +915,6 @@
 
 .method public setOnDockingListener(Lcom/android/internal/policy/impl/multiwindow/Docking$OnDockingListener;)V
     .locals 0
-    .param p1    # Lcom/android/internal/policy/impl/multiwindow/Docking$OnDockingListener;
 
     iput-object p1, p0, Lcom/android/internal/policy/impl/multiwindow/Docking;->mDockingListener:Lcom/android/internal/policy/impl/multiwindow/Docking$OnDockingListener;
 
@@ -934,8 +923,6 @@
 
 .method public updateZone(II)Z
     .locals 7
-    .param p1    # I
-    .param p2    # I
 
     const/4 v1, 0x0
 

@@ -28,7 +28,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/mms/ui/MessageListItem;Lcom/android/mms/ui/MessageItem;)V
     .locals 7
-    .param p2    # Lcom/android/mms/ui/MessageItem;
 
     const/4 v3, 0x1
 
@@ -266,8 +265,6 @@
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 24
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     const/4 v11, 0x0
 

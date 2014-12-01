@@ -26,7 +26,6 @@
 
 .method public constructor <init>([F)V
     .locals 3
-    .param p1    # [F
 
     const/4 v2, 0x0
 
@@ -53,8 +52,6 @@
 # virtual methods
 .method public get(II)F
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Landroid/renderscript/Matrix3f;->mMat:[F
 
@@ -77,7 +74,6 @@
 
 .method public load(Landroid/renderscript/Matrix3f;)V
     .locals 4
-    .param p1    # Landroid/renderscript/Matrix3f;
 
     const/4 v3, 0x0
 
@@ -162,8 +158,6 @@
 
 .method public loadMultiply(Landroid/renderscript/Matrix3f;Landroid/renderscript/Matrix3f;)V
     .locals 11
-    .param p1    # Landroid/renderscript/Matrix3f;
-    .param p2    # Landroid/renderscript/Matrix3f;
 
     const/4 v10, 0x3
 
@@ -238,7 +232,6 @@
 
 .method public loadRotate(F)V
     .locals 5
-    .param p1    # F
 
     invoke-virtual {p0}, Landroid/renderscript/Matrix3f;->loadIdentity()V
 
@@ -293,10 +286,6 @@
 
 .method public loadRotate(FFFF)V
     .locals 14
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
 
     const v11, 0x3c8efa35
 
@@ -470,8 +459,6 @@
 
 .method public loadScale(FF)V
     .locals 2
-    .param p1    # F
-    .param p2    # F
 
     invoke-virtual {p0}, Landroid/renderscript/Matrix3f;->loadIdentity()V
 
@@ -492,9 +479,6 @@
 
 .method public loadScale(FFF)V
     .locals 2
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
 
     invoke-virtual {p0}, Landroid/renderscript/Matrix3f;->loadIdentity()V
 
@@ -521,8 +505,6 @@
 
 .method public loadTranslate(FF)V
     .locals 2
-    .param p1    # F
-    .param p2    # F
 
     invoke-virtual {p0}, Landroid/renderscript/Matrix3f;->loadIdentity()V
 
@@ -543,7 +525,6 @@
 
 .method public multiply(Landroid/renderscript/Matrix3f;)V
     .locals 1
-    .param p1    # Landroid/renderscript/Matrix3f;
 
     new-instance v0, Landroid/renderscript/Matrix3f;
 
@@ -558,7 +539,6 @@
 
 .method public rotate(F)V
     .locals 1
-    .param p1    # F
 
     new-instance v0, Landroid/renderscript/Matrix3f;
 
@@ -573,10 +553,6 @@
 
 .method public rotate(FFFF)V
     .locals 1
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
 
     new-instance v0, Landroid/renderscript/Matrix3f;
 
@@ -591,8 +567,6 @@
 
 .method public scale(FF)V
     .locals 1
-    .param p1    # F
-    .param p2    # F
 
     new-instance v0, Landroid/renderscript/Matrix3f;
 
@@ -607,9 +581,6 @@
 
 .method public scale(FFF)V
     .locals 1
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
 
     new-instance v0, Landroid/renderscript/Matrix3f;
 
@@ -624,9 +595,6 @@
 
 .method public set(IIF)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # F
 
     iget-object v0, p0, Landroid/renderscript/Matrix3f;->mMat:[F
 
@@ -641,8 +609,6 @@
 
 .method public translate(FF)V
     .locals 1
-    .param p1    # F
-    .param p2    # F
 
     new-instance v0, Landroid/renderscript/Matrix3f;
 

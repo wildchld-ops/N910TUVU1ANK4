@@ -26,9 +26,6 @@
 # direct methods
 .method public constructor <init>(ILjava/lang/String;Ljava/lang/String;)V
     .locals 4
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -131,9 +128,6 @@
 
 .method public constructor <init>(I[BLjava/lang/String;)V
     .locals 3
-    .param p1    # I
-    .param p2    # [B
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -219,7 +213,6 @@
 # virtual methods
 .method public get(Ljava/lang/String;)Ljava/lang/Object;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/drm/DrmInfo;->mAttributes:Ljava/util/HashMap;
 
@@ -352,8 +345,6 @@
 
 .method public put(Ljava/lang/String;Ljava/lang/Object;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Object;
 
     iget-object v0, p0, Landroid/drm/DrmInfo;->mAttributes:Ljava/util/HashMap;
 

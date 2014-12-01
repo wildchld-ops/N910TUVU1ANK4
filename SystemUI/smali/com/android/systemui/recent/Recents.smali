@@ -47,10 +47,6 @@
 
 .method private startMultiWindowRecent(Landroid/content/Context;Landroid/content/Intent;Lcom/android/systemui/recent/cardholder/TaskDescription;Landroid/view/View;)V
     .locals 11
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
-    .param p3    # Lcom/android/systemui/recent/cardholder/TaskDescription;
-    .param p4    # Landroid/view/View;
 
     if-nez p3, :cond_1
 
@@ -499,7 +495,6 @@
 
 .method protected onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 0
-    .param p1    # Landroid/content/res/Configuration;
 
     return-void
 .end method
@@ -653,9 +648,6 @@
 
 .method public toggleRecents(Landroid/view/Display;ILandroid/view/View;)V
     .locals 11
-    .param p1    # Landroid/view/Display;
-    .param p2    # I
-    .param p3    # Landroid/view/View;
 
     :try_start_0
     sget-boolean v7, Lcom/android/systemui/statusbar/Feature;->mUseRecentsTrayConcept:Z

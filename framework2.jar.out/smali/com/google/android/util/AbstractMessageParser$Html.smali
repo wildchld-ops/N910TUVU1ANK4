@@ -21,8 +21,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     sget-object v0, Lcom/google/android/util/AbstractMessageParser$Token$Type;->HTML:Lcom/google/android/util/AbstractMessageParser$Token$Type;
 
@@ -35,7 +33,6 @@
 
 .method private static trimLeadingWhitespace(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -70,7 +67,6 @@
 
 .method public static trimTrailingWhitespace(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
@@ -136,7 +132,6 @@
 
 .method public toHtml(Z)Ljava/lang/String;
     .locals 1
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 

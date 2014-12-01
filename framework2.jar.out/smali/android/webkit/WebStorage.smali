@@ -45,7 +45,6 @@
 
 .method public deleteOrigin(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     return-void
 .end method
@@ -67,7 +66,6 @@
 
 .method public getQuotaForOrigin(Ljava/lang/String;Landroid/webkit/ValueCallback;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -84,7 +82,6 @@
 
 .method public getUsageForOrigin(Ljava/lang/String;Landroid/webkit/ValueCallback;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -101,8 +98,6 @@
 
 .method public setQuotaForOrigin(Ljava/lang/String;J)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 

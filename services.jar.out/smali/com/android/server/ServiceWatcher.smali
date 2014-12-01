@@ -58,14 +58,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;IIILjava/lang/Runnable;Landroid/os/Handler;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # Ljava/lang/Runnable;
-    .param p8    # Landroid/os/Handler;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -164,7 +156,6 @@
 
 .method static synthetic access$000(Lcom/android/server/ServiceWatcher;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Lcom/android/server/ServiceWatcher;
 
     iget-object v0, p0, Lcom/android/server/ServiceWatcher;->mLock:Ljava/lang/Object;
 
@@ -173,7 +164,6 @@
 
 .method static synthetic access$100(Lcom/android/server/ServiceWatcher;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/server/ServiceWatcher;
 
     iget-object v0, p0, Lcom/android/server/ServiceWatcher;->mPackageName:Ljava/lang/String;
 
@@ -182,7 +172,6 @@
 
 .method static synthetic access$200(Lcom/android/server/ServiceWatcher;)V
     .locals 0
-    .param p0    # Lcom/android/server/ServiceWatcher;
 
     invoke-direct {p0}, Lcom/android/server/ServiceWatcher;->unbindLocked()V
 
@@ -191,8 +180,6 @@
 
 .method static synthetic access$300(Lcom/android/server/ServiceWatcher;Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Lcom/android/server/ServiceWatcher;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/ServiceWatcher;->bindBestPackageLocked(Ljava/lang/String;)Z
 
@@ -203,7 +190,6 @@
 
 .method private bindBestPackageLocked(Ljava/lang/String;)Z
     .locals 16
-    .param p1    # Ljava/lang/String;
 
     new-instance v6, Landroid/content/Intent;
 
@@ -404,9 +390,6 @@
 
 .method private bindToPackageLocked(Ljava/lang/String;IZ)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Z
 
     invoke-direct {p0}, Lcom/android/server/ServiceWatcher;->unbindLocked()V
 
@@ -447,7 +430,6 @@
 
 .method public static getSignatureSets(Landroid/content/Context;Ljava/util/List;)Ljava/util/ArrayList;
     .locals 11
-    .param p0    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -549,7 +531,6 @@
 
 .method private isSignatureMatch([Landroid/content/pm/Signature;)Z
     .locals 1
-    .param p1    # [Landroid/content/pm/Signature;
 
     iget-object v0, p0, Lcom/android/server/ServiceWatcher;->mSignatureSets:Ljava/util/List;
 
@@ -562,7 +543,6 @@
 
 .method public static isSignatureMatch([Landroid/content/pm/Signature;Ljava/util/List;)Z
     .locals 8
-    .param p0    # [Landroid/content/pm/Signature;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([",
@@ -738,8 +718,6 @@
 
 .method public onServiceConnected(Landroid/content/ComponentName;Landroid/os/IBinder;)V
     .locals 5
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Landroid/os/IBinder;
 
     iget-object v2, p0, Lcom/android/server/ServiceWatcher;->mLock:Ljava/lang/Object;
 
@@ -817,7 +795,6 @@
 
 .method public onServiceDisconnected(Landroid/content/ComponentName;)V
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
 
     iget-object v2, p0, Lcom/android/server/ServiceWatcher;->mLock:Ljava/lang/Object;
 

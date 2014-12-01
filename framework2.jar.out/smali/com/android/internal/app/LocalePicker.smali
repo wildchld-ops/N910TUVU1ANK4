@@ -33,7 +33,6 @@
 
 .method public static constructAdapter(Landroid/content/Context;)Landroid/widget/ArrayAdapter;
     .locals 1
-    .param p0    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -57,9 +56,6 @@
 
 .method public static constructAdapter(Landroid/content/Context;II)Landroid/widget/ArrayAdapter;
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -83,10 +79,6 @@
 
 .method public static constructAdapter(Landroid/content/Context;IIZ)Landroid/widget/ArrayAdapter;
     .locals 26
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -448,8 +440,6 @@
 
 .method public static constructAdapter(Landroid/content/Context;Z)Landroid/widget/ArrayAdapter;
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -521,9 +511,6 @@
 
 .method private static getDisplayName(Ljava/util/Locale;[Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p0    # Ljava/util/Locale;
-    .param p1    # [Ljava/lang/String;
-    .param p2    # [Ljava/lang/String;
 
     invoke-virtual {p0}, Ljava/util/Locale;->toString()Ljava/lang/String;
 
@@ -564,7 +551,6 @@
 
 .method private static toTitleCase(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
@@ -613,7 +599,6 @@
 
 .method public static updateLocale(Ljava/util/Locale;)V
     .locals 3
-    .param p0    # Ljava/util/Locale;
 
     :try_start_0
     invoke-static {}, Landroid/app/ActivityManagerNative;->getDefault()Landroid/app/IActivityManager;
@@ -655,7 +640,6 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onActivityCreated(Landroid/os/Bundle;)V
 
@@ -678,10 +662,6 @@
 
 .method public onListItemClick(Landroid/widget/ListView;Landroid/view/View;IJ)V
     .locals 2
-    .param p1    # Landroid/widget/ListView;
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
 
     iget-object v1, p0, Lcom/android/internal/app/LocalePicker;->mListener:Lcom/android/internal/app/LocalePicker$LocaleSelectionListener;
 
@@ -723,7 +703,6 @@
 
 .method public setLocaleSelectionListener(Lcom/android/internal/app/LocalePicker$LocaleSelectionListener;)V
     .locals 0
-    .param p1    # Lcom/android/internal/app/LocalePicker$LocaleSelectionListener;
 
     iput-object p1, p0, Lcom/android/internal/app/LocalePicker;->mListener:Lcom/android/internal/app/LocalePicker$LocaleSelectionListener;
 

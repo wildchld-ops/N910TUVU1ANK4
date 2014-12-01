@@ -51,8 +51,6 @@
 
 .method synthetic constructor <init>(Lcom/sec/epdg/IWlanApnSetting;Lcom/sec/epdg/IWlanApnSetting$1;)V
     .locals 0
-    .param p1    # Lcom/sec/epdg/IWlanApnSetting;
-    .param p2    # Lcom/sec/epdg/IWlanApnSetting$1;
 
     invoke-direct {p0, p1}, Lcom/sec/epdg/IWlanApnSetting$IKeSetting;-><init>(Lcom/sec/epdg/IWlanApnSetting;)V
 
@@ -61,17 +59,6 @@
 
 .method static synthetic access$300(Lcom/sec/epdg/IWlanApnSetting$IKeSetting;Lcom/sec/epdg/IWlanEnum$Ikeversion;Lcom/sec/epdg/IWlanEnum$IkeEncryption;Lcom/sec/epdg/IWlanEnum$IkeIntegrity;Lcom/sec/epdg/IWlanEnum$IkeDhGroup;IIIILcom/sec/epdg/IWlanEnum$IkeEapType;I)V
     .locals 0
-    .param p0    # Lcom/sec/epdg/IWlanApnSetting$IKeSetting;
-    .param p1    # Lcom/sec/epdg/IWlanEnum$Ikeversion;
-    .param p2    # Lcom/sec/epdg/IWlanEnum$IkeEncryption;
-    .param p3    # Lcom/sec/epdg/IWlanEnum$IkeIntegrity;
-    .param p4    # Lcom/sec/epdg/IWlanEnum$IkeDhGroup;
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
-    .param p9    # Lcom/sec/epdg/IWlanEnum$IkeEapType;
-    .param p10    # I
 
     invoke-direct/range {p0 .. p10}, Lcom/sec/epdg/IWlanApnSetting$IKeSetting;->updateIkeValues(Lcom/sec/epdg/IWlanEnum$Ikeversion;Lcom/sec/epdg/IWlanEnum$IkeEncryption;Lcom/sec/epdg/IWlanEnum$IkeIntegrity;Lcom/sec/epdg/IWlanEnum$IkeDhGroup;IIIILcom/sec/epdg/IWlanEnum$IkeEapType;I)V
 
@@ -80,16 +67,6 @@
 
 .method private updateIkeValues(Lcom/sec/epdg/IWlanEnum$Ikeversion;Lcom/sec/epdg/IWlanEnum$IkeEncryption;Lcom/sec/epdg/IWlanEnum$IkeIntegrity;Lcom/sec/epdg/IWlanEnum$IkeDhGroup;IIIILcom/sec/epdg/IWlanEnum$IkeEapType;I)V
     .locals 0
-    .param p1    # Lcom/sec/epdg/IWlanEnum$Ikeversion;
-    .param p2    # Lcom/sec/epdg/IWlanEnum$IkeEncryption;
-    .param p3    # Lcom/sec/epdg/IWlanEnum$IkeIntegrity;
-    .param p4    # Lcom/sec/epdg/IWlanEnum$IkeDhGroup;
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
-    .param p9    # Lcom/sec/epdg/IWlanEnum$IkeEapType;
-    .param p10    # I
 
     iput-object p1, p0, Lcom/sec/epdg/IWlanApnSetting$IKeSetting;->mIkeversion:Lcom/sec/epdg/IWlanEnum$Ikeversion;
 

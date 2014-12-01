@@ -34,10 +34,6 @@
 
 .method public constructor <init>(FFFF)V
     .locals 0
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -89,7 +85,6 @@
 
 .method public copy(Lcom/voovio/voo3d/data/Vector4;)V
     .locals 1
-    .param p1    # Lcom/voovio/voo3d/data/Vector4;
 
     iget v0, p1, Lcom/voovio/voo3d/data/Vector4;->x:F
 
@@ -112,7 +107,6 @@
 
 .method public equals(Lcom/voovio/voo3d/data/Vector4;)Z
     .locals 2
-    .param p1    # Lcom/voovio/voo3d/data/Vector4;
 
     iget v0, p0, Lcom/voovio/voo3d/data/Vector4;->x:F
 
@@ -159,7 +153,6 @@
 
 .method public multMatrix4(Lcom/voovio/voo3d/data/Matrix4;)Lcom/voovio/voo3d/data/Vector4;
     .locals 7
-    .param p1    # Lcom/voovio/voo3d/data/Matrix4;
 
     new-instance v0, Lcom/voovio/voo3d/data/Vector4;
 
@@ -302,7 +295,6 @@
 
 .method public toString(I)Ljava/lang/String;
     .locals 4
-    .param p1    # I
 
     new-instance v0, Ljava/text/DecimalFormat;
 

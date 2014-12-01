@@ -59,7 +59,6 @@
 
 .method private constructor <init>(Landroid/os/Parcel;)V
     .locals 5
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -100,8 +99,6 @@
 
 .method synthetic constructor <init>(Landroid/os/Parcel;Landroid/nfc/ApduList$1;)V
     .locals 0
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # Landroid/nfc/ApduList$1;
 
     invoke-direct {p0, p1}, Landroid/nfc/ApduList;-><init>(Landroid/os/Parcel;)V
 
@@ -112,7 +109,6 @@
 # virtual methods
 .method public add([B)V
     .locals 1
-    .param p1    # [B
 
     iget-object v0, p0, Landroid/nfc/ApduList;->commands:Ljava/util/ArrayList;
 
@@ -146,8 +142,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 3
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v2, p0, Landroid/nfc/ApduList;->commands:Ljava/util/ArrayList;
 

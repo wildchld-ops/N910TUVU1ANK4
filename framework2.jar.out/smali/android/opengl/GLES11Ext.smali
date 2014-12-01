@@ -512,10 +512,6 @@
 
 .method public static glMatrixIndexPointerOES(IIILjava/nio/Buffer;)V
     .locals 1
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/nio/Buffer;
 
     invoke-virtual {p3}, Ljava/nio/Buffer;->remaining()I
 
@@ -659,10 +655,6 @@
 
 .method public static glWeightPointerOES(IIILjava/nio/Buffer;)V
     .locals 1
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/nio/Buffer;
 
     invoke-virtual {p3}, Ljava/nio/Buffer;->remaining()I
 

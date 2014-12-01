@@ -39,7 +39,6 @@
 # direct methods
 .method public constructor <init>(I)V
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0}, Landroid/content/pm/IPersonaStateHandler$Stub;-><init>()V
 
@@ -62,7 +61,6 @@
 # virtual methods
 .method public dequeueTo(Ljava/lang/Object;)V
     .locals 8
-    .param p1    # Ljava/lang/Object;
 
     instance-of v5, p1, Landroid/os/IBinder;
 
@@ -224,7 +222,6 @@
 
 .method public mapToNormalizedState(I)I
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -242,7 +239,6 @@
 
 .method public postEvent(Landroid/content/pm/PersonaEvent;)I
     .locals 7
-    .param p1    # Landroid/content/pm/PersonaEvent;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -350,8 +346,6 @@
 
 .method public postEventForPersona(ILandroid/content/pm/PersonaEvent;)I
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/content/pm/PersonaEvent;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

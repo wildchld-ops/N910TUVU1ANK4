@@ -123,8 +123,6 @@
 
 .method private buildProgram(Ljava/lang/String;Ljava/lang/String;)I
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v7, 0x1
 
@@ -223,8 +221,6 @@
 
 .method private buildShader(Ljava/lang/String;I)I
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v5, 0x1
 
@@ -449,10 +445,6 @@
 
 .method private createMesh(IIFF)Ljava/nio/FloatBuffer;
     .locals 8
-    .param p1    # I
-    .param p2    # I
-    .param p3    # F
-    .param p4    # F
 
     const/4 v7, 0x0
 
@@ -581,11 +573,6 @@
 
 .method private drawWallpaperWithCanvas(Landroid/view/SurfaceHolder;IIII)V
     .locals 7
-    .param p1    # Landroid/view/SurfaceHolder;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-interface {p1}, Landroid/view/SurfaceHolder;->lockCanvas()Landroid/graphics/Canvas;
 
@@ -687,11 +674,6 @@
 
 .method private drawWallpaperWithOpenGL(Landroid/view/SurfaceHolder;IIII)Z
     .locals 26
-    .param p1    # Landroid/view/SurfaceHolder;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-direct/range {p0 .. p1}, Lcom/android/systemui/ImageWallpaper$DrawableEngine;->initGL(Landroid/view/SurfaceHolder;)Z
 
@@ -1081,7 +1063,6 @@
 
 .method private initGL(Landroid/view/SurfaceHolder;)Z
     .locals 13
-    .param p1    # Landroid/view/SurfaceHolder;
 
     const/4 v7, 0x1
 
@@ -1593,7 +1574,6 @@
 
 .method private loadTexture(Landroid/graphics/Bitmap;)I
     .locals 8
-    .param p1    # Landroid/graphics/Bitmap;
 
     const v5, 0x812f
 
@@ -1761,9 +1741,6 @@
 # virtual methods
 .method createContext(Ljavax/microedition/khronos/egl/EGL10;Ljavax/microedition/khronos/egl/EGLDisplay;Ljavax/microedition/khronos/egl/EGLConfig;)Ljavax/microedition/khronos/egl/EGLContext;
     .locals 2
-    .param p1    # Ljavax/microedition/khronos/egl/EGL10;
-    .param p2    # Ljavax/microedition/khronos/egl/EGLDisplay;
-    .param p3    # Ljavax/microedition/khronos/egl/EGLConfig;
 
     const/4 v1, 0x3
 
@@ -2193,7 +2170,6 @@
 
 .method public onCreate(Landroid/view/SurfaceHolder;)V
     .locals 1
-    .param p1    # Landroid/view/SurfaceHolder;
 
     invoke-super {p0, p1}, Landroid/service/wallpaper/WallpaperService$Engine;->onCreate(Landroid/view/SurfaceHolder;)V
 
@@ -2227,12 +2203,6 @@
 
 .method public onOffsetsChanged(FFFFII)V
     .locals 1
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # I
-    .param p6    # I
 
     iget v0, p0, Lcom/android/systemui/ImageWallpaper$DrawableEngine;->mXOffset:F
 
@@ -2263,10 +2233,6 @@
 
 .method public onSurfaceChanged(Landroid/view/SurfaceHolder;III)V
     .locals 0
-    .param p1    # Landroid/view/SurfaceHolder;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-super {p0, p1, p2, p3, p4}, Landroid/service/wallpaper/WallpaperService$Engine;->onSurfaceChanged(Landroid/view/SurfaceHolder;III)V
 
@@ -2277,7 +2243,6 @@
 
 .method public onSurfaceCreated(Landroid/view/SurfaceHolder;)V
     .locals 1
-    .param p1    # Landroid/view/SurfaceHolder;
 
     invoke-super {p0, p1}, Landroid/service/wallpaper/WallpaperService$Engine;->onSurfaceCreated(Landroid/view/SurfaceHolder;)V
 
@@ -2292,7 +2257,6 @@
 
 .method public onSurfaceDestroyed(Landroid/view/SurfaceHolder;)V
     .locals 1
-    .param p1    # Landroid/view/SurfaceHolder;
 
     invoke-super {p0, p1}, Landroid/service/wallpaper/WallpaperService$Engine;->onSurfaceDestroyed(Landroid/view/SurfaceHolder;)V
 
@@ -2307,7 +2271,6 @@
 
 .method public onSurfaceRedrawNeeded(Landroid/view/SurfaceHolder;)V
     .locals 0
-    .param p1    # Landroid/view/SurfaceHolder;
 
     invoke-super {p0, p1}, Landroid/service/wallpaper/WallpaperService$Engine;->onSurfaceRedrawNeeded(Landroid/view/SurfaceHolder;)V
 
@@ -2318,7 +2281,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)V
     .locals 0
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-super {p0, p1}, Landroid/service/wallpaper/WallpaperService$Engine;->onTouchEvent(Landroid/view/MotionEvent;)V
 
@@ -2327,7 +2289,6 @@
 
 .method public onVisibilityChanged(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-boolean v0, p0, Lcom/android/systemui/ImageWallpaper$DrawableEngine;->mVisible:Z
 
@@ -2343,7 +2304,6 @@
 
 .method public trimMemory(I)V
     .locals 2
-    .param p1    # I
 
     const/4 v1, -0x1
 
@@ -2385,7 +2345,6 @@
 
 .method updateSurfaceSize(Landroid/view/SurfaceHolder;)V
     .locals 8
-    .param p1    # Landroid/view/SurfaceHolder;
 
     invoke-direct {p0}, Lcom/android/systemui/ImageWallpaper$DrawableEngine;->getDefaultDisplaySize()Landroid/graphics/Point;
 

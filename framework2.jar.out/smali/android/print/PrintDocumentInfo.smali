@@ -68,7 +68,6 @@
 
 .method private constructor <init>(Landroid/os/Parcel;)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -101,8 +100,6 @@
 
 .method synthetic constructor <init>(Landroid/os/Parcel;Landroid/print/PrintDocumentInfo$1;)V
     .locals 0
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # Landroid/print/PrintDocumentInfo$1;
 
     invoke-direct {p0, p1}, Landroid/print/PrintDocumentInfo;-><init>(Landroid/os/Parcel;)V
 
@@ -111,7 +108,6 @@
 
 .method synthetic constructor <init>(Landroid/print/PrintDocumentInfo$1;)V
     .locals 0
-    .param p1    # Landroid/print/PrintDocumentInfo$1;
 
     invoke-direct {p0}, Landroid/print/PrintDocumentInfo;-><init>()V
 
@@ -120,7 +116,6 @@
 
 .method private constructor <init>(Landroid/print/PrintDocumentInfo;)V
     .locals 2
-    .param p1    # Landroid/print/PrintDocumentInfo;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -145,8 +140,6 @@
 
 .method synthetic constructor <init>(Landroid/print/PrintDocumentInfo;Landroid/print/PrintDocumentInfo$1;)V
     .locals 0
-    .param p1    # Landroid/print/PrintDocumentInfo;
-    .param p2    # Landroid/print/PrintDocumentInfo$1;
 
     invoke-direct {p0, p1}, Landroid/print/PrintDocumentInfo;-><init>(Landroid/print/PrintDocumentInfo;)V
 
@@ -155,8 +148,6 @@
 
 .method static synthetic access$102(Landroid/print/PrintDocumentInfo;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Landroid/print/PrintDocumentInfo;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/print/PrintDocumentInfo;->mName:Ljava/lang/String;
 
@@ -165,8 +156,6 @@
 
 .method static synthetic access$202(Landroid/print/PrintDocumentInfo;I)I
     .locals 0
-    .param p0    # Landroid/print/PrintDocumentInfo;
-    .param p1    # I
 
     iput p1, p0, Landroid/print/PrintDocumentInfo;->mPageCount:I
 
@@ -175,8 +164,6 @@
 
 .method static synthetic access$302(Landroid/print/PrintDocumentInfo;I)I
     .locals 0
-    .param p0    # Landroid/print/PrintDocumentInfo;
-    .param p1    # I
 
     iput p1, p0, Landroid/print/PrintDocumentInfo;->mContentType:I
 
@@ -185,7 +172,6 @@
 
 .method private contentTyepToString(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -223,7 +209,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 7
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x1
 
@@ -404,7 +389,6 @@
 
 .method public setDataSize(J)V
     .locals 0
-    .param p1    # J
 
     iput-wide p1, p0, Landroid/print/PrintDocumentInfo;->mDataSize:J
 
@@ -479,8 +463,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v0, p0, Landroid/print/PrintDocumentInfo;->mName:Ljava/lang/String;
 

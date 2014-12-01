@@ -13,7 +13,6 @@
 # direct methods
 .method public constructor <init>(Landroid/graphics/Rect;)V
     .locals 1
-    .param p1    # Landroid/graphics/Rect;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -28,7 +27,6 @@
 
 .method private getScreenPointOfView(Landroid/view/View;)Landroid/graphics/Point;
     .locals 3
-    .param p1    # Landroid/view/View;
 
     new-instance v1, Landroid/graphics/Point;
 
@@ -57,7 +55,6 @@
 
 .method private getScreenRectOfView(Landroid/view/View;)Landroid/graphics/Rect;
     .locals 4
-    .param p1    # Landroid/view/View;
 
     new-instance v1, Landroid/graphics/Rect;
 
@@ -110,7 +107,6 @@
 
 .method public intersects(Landroid/graphics/Rect;)Z
     .locals 1
-    .param p1    # Landroid/graphics/Rect;
 
     if-eqz p1, :cond_0
 
@@ -138,7 +134,6 @@
 
 .method public intersects(Landroid/view/View;)Z
     .locals 2
-    .param p1    # Landroid/view/View;
 
     if-eqz p1, :cond_0
 

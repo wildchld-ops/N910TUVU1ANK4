@@ -70,9 +70,6 @@
 
 .method public constructor <init>(III)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -133,8 +130,6 @@
 
 .method public findFaces(Landroid/graphics/Bitmap;[Landroid/media/FaceDetector$Face;)I
     .locals 4
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # [Landroid/media/FaceDetector$Face;
 
     sget-boolean v2, Landroid/media/FaceDetector;->sInitialized:Z
 

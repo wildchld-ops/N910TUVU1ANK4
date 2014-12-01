@@ -44,8 +44,6 @@
 # virtual methods
 .method public isHardwareKeyAllowed(IZ)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Z
 
     :try_start_0
     invoke-static {}, Landroid/sec/enterprise/EnterpriseDeviceManager$EDMProxyServiceHelper;->getService()Landroid/sec/enterprise/IEDMProxy;
@@ -84,7 +82,6 @@
 
 .method public isTaskManagerAllowed(Z)Z
     .locals 4
-    .param p1    # Z
 
     :try_start_0
     invoke-static {}, Landroid/sec/enterprise/EnterpriseDeviceManager$EDMProxyServiceHelper;->getService()Landroid/sec/enterprise/IEDMProxy;

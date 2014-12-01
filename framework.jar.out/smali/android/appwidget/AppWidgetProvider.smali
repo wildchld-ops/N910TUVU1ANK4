@@ -16,40 +16,30 @@
 # virtual methods
 .method public onAppWidgetOptionsChanged(Landroid/content/Context;Landroid/appwidget/AppWidgetManager;ILandroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/appwidget/AppWidgetManager;
-    .param p3    # I
-    .param p4    # Landroid/os/Bundle;
 
     return-void
 .end method
 
 .method public onDeleted(Landroid/content/Context;[I)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # [I
 
     return-void
 .end method
 
 .method public onDisabled(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     return-void
 .end method
 
 .method public onEnabled(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     return-void
 .end method
 
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
@@ -212,9 +202,6 @@
 
 .method public onUpdate(Landroid/content/Context;Landroid/appwidget/AppWidgetManager;[I)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/appwidget/AppWidgetManager;
-    .param p3    # [I
 
     return-void
 .end method

@@ -33,7 +33,6 @@
 # virtual methods
 .method public onAnimationEnd(Landroid/animation/Animator;)V
     .locals 2
-    .param p1    # Landroid/animation/Animator;
 
     iget-object v1, p0, Landroid/widget/HorizontalFastScroller$3;->this$0:Landroid/widget/HorizontalFastScroller;
 

@@ -75,13 +75,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/launcher2/popup/MenuBuilder;IIIILjava/lang/CharSequence;I)V
     .locals 2
-    .param p1    # Lcom/android/launcher2/popup/MenuBuilder;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Ljava/lang/CharSequence;
-    .param p7    # I
 
     const/4 v1, 0x0
 
@@ -437,7 +430,6 @@
 
 .method getTitleForItemView(Lcom/android/launcher2/popup/MenuView$ItemView;)Ljava/lang/CharSequence;
     .locals 1
-    .param p1    # Lcom/android/launcher2/popup/MenuView$ItemView;
 
     if-eqz p1, :cond_0
 
@@ -774,7 +766,6 @@
 
 .method public setActionProvider(Landroid/view/ActionProvider;)Landroid/view/MenuItem;
     .locals 2
-    .param p1    # Landroid/view/ActionProvider;
 
     const/4 v0, 0x0
 
@@ -793,7 +784,6 @@
 
 .method public setActionView(I)Landroid/view/MenuItem;
     .locals 4
-    .param p1    # I
 
     iget-object v2, p0, Lcom/android/launcher2/popup/MenuItemImpl;->mMenu:Lcom/android/launcher2/popup/MenuBuilder;
 
@@ -822,7 +812,6 @@
 
 .method public setActionView(Landroid/view/View;)Landroid/view/MenuItem;
     .locals 2
-    .param p1    # Landroid/view/View;
 
     iput-object p1, p0, Lcom/android/launcher2/popup/MenuItemImpl;->mActionView:Landroid/view/View;
 
@@ -858,7 +847,6 @@
 
 .method public setActionViewExpanded(Z)V
     .locals 2
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/launcher2/popup/MenuItemImpl;->mIsActionViewExpanded:Z
 
@@ -873,7 +861,6 @@
 
 .method public setAlphabeticShortcut(C)Landroid/view/MenuItem;
     .locals 2
-    .param p1    # C
 
     iget-char v0, p0, Lcom/android/launcher2/popup/MenuItemImpl;->mShortcutAlphabeticChar:C
 
@@ -900,7 +887,6 @@
 
 .method public setCallback(Ljava/lang/Runnable;)Landroid/view/MenuItem;
     .locals 0
-    .param p1    # Ljava/lang/Runnable;
 
     iput-object p1, p0, Lcom/android/launcher2/popup/MenuItemImpl;->mItemCallback:Ljava/lang/Runnable;
 
@@ -909,7 +895,6 @@
 
 .method public setCheckable(Z)Landroid/view/MenuItem;
     .locals 4
-    .param p1    # Z
 
     const/4 v2, 0x0
 
@@ -947,7 +932,6 @@
 
 .method public setChecked(Z)Landroid/view/MenuItem;
     .locals 1
-    .param p1    # Z
 
     iget v0, p0, Lcom/android/launcher2/popup/MenuItemImpl;->mFlags:I
 
@@ -970,7 +954,6 @@
 
 .method setCheckedInt(Z)V
     .locals 4
-    .param p1    # Z
 
     const/4 v2, 0x0
 
@@ -1008,7 +991,6 @@
 
 .method public setEnabled(Z)Landroid/view/MenuItem;
     .locals 2
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -1039,7 +1021,6 @@
 
 .method public setExclusiveCheckable(Z)V
     .locals 2
-    .param p1    # Z
 
     iget v0, p0, Lcom/android/launcher2/popup/MenuItemImpl;->mFlags:I
 
@@ -1064,7 +1045,6 @@
 
 .method public setIcon(I)Landroid/view/MenuItem;
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -1083,7 +1063,6 @@
 
 .method public setIcon(Landroid/graphics/drawable/Drawable;)Landroid/view/MenuItem;
     .locals 2
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     const/4 v1, 0x0
 
@@ -1100,7 +1079,6 @@
 
 .method public setIntent(Landroid/content/Intent;)Landroid/view/MenuItem;
     .locals 0
-    .param p1    # Landroid/content/Intent;
 
     iput-object p1, p0, Lcom/android/launcher2/popup/MenuItemImpl;->mIntent:Landroid/content/Intent;
 
@@ -1109,7 +1087,6 @@
 
 .method public setIsActionButton(Z)V
     .locals 1
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -1134,7 +1111,6 @@
 
 .method setMenuInfo(Landroid/view/ContextMenu$ContextMenuInfo;)V
     .locals 0
-    .param p1    # Landroid/view/ContextMenu$ContextMenuInfo;
 
     iput-object p1, p0, Lcom/android/launcher2/popup/MenuItemImpl;->mMenuInfo:Landroid/view/ContextMenu$ContextMenuInfo;
 
@@ -1143,7 +1119,6 @@
 
 .method public setNumericShortcut(C)Landroid/view/MenuItem;
     .locals 2
-    .param p1    # C
 
     iget-char v0, p0, Lcom/android/launcher2/popup/MenuItemImpl;->mShortcutNumericChar:C
 
@@ -1166,7 +1141,6 @@
 
 .method public setOnActionExpandListener(Landroid/view/MenuItem$OnActionExpandListener;)Landroid/view/MenuItem;
     .locals 0
-    .param p1    # Landroid/view/MenuItem$OnActionExpandListener;
 
     iput-object p1, p0, Lcom/android/launcher2/popup/MenuItemImpl;->mOnActionExpandListener:Landroid/view/MenuItem$OnActionExpandListener;
 
@@ -1175,7 +1149,6 @@
 
 .method public setOnMenuItemClickListener(Landroid/view/MenuItem$OnMenuItemClickListener;)Landroid/view/MenuItem;
     .locals 0
-    .param p1    # Landroid/view/MenuItem$OnMenuItemClickListener;
 
     iput-object p1, p0, Lcom/android/launcher2/popup/MenuItemImpl;->mClickListener:Landroid/view/MenuItem$OnMenuItemClickListener;
 
@@ -1184,8 +1157,6 @@
 
 .method public setShortcut(CC)Landroid/view/MenuItem;
     .locals 2
-    .param p1    # C
-    .param p2    # C
 
     iput-char p1, p0, Lcom/android/launcher2/popup/MenuItemImpl;->mShortcutNumericChar:C
 
@@ -1206,7 +1177,6 @@
 
 .method public setShowAsAction(I)V
     .locals 2
-    .param p1    # I
 
     and-int/lit8 v0, p1, 0x3
 
@@ -1241,7 +1211,6 @@
 
 .method public setShowAsActionFlags(I)Landroid/view/MenuItem;
     .locals 0
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/launcher2/popup/MenuItemImpl;->setShowAsAction(I)V
 
@@ -1250,7 +1219,6 @@
 
 .method setSubMenu(Lcom/android/launcher2/popup/SubMenuBuilder;)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/popup/SubMenuBuilder;
 
     iput-object p1, p0, Lcom/android/launcher2/popup/MenuItemImpl;->mSubMenu:Lcom/android/launcher2/popup/SubMenuBuilder;
 
@@ -1265,7 +1233,6 @@
 
 .method public setTitle(I)Landroid/view/MenuItem;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/launcher2/popup/MenuItemImpl;->mMenu:Lcom/android/launcher2/popup/MenuBuilder;
 
@@ -1286,7 +1253,6 @@
 
 .method public setTitle(Ljava/lang/CharSequence;)Landroid/view/MenuItem;
     .locals 2
-    .param p1    # Ljava/lang/CharSequence;
 
     iput-object p1, p0, Lcom/android/launcher2/popup/MenuItemImpl;->mTitle:Ljava/lang/CharSequence;
 
@@ -1310,7 +1276,6 @@
 
 .method public setTitleCondensed(Ljava/lang/CharSequence;)Landroid/view/MenuItem;
     .locals 2
-    .param p1    # Ljava/lang/CharSequence;
 
     iput-object p1, p0, Lcom/android/launcher2/popup/MenuItemImpl;->mTitleCondensed:Ljava/lang/CharSequence;
 
@@ -1330,7 +1295,6 @@
 
 .method public setVisible(Z)Landroid/view/MenuItem;
     .locals 1
-    .param p1    # Z
 
     invoke-virtual {p0, p1}, Lcom/android/launcher2/popup/MenuItemImpl;->setVisibleInt(Z)Z
 
@@ -1348,7 +1312,6 @@
 
 .method setVisibleInt(Z)Z
     .locals 4
-    .param p1    # Z
 
     const/4 v2, 0x0
 

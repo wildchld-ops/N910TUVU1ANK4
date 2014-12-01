@@ -49,11 +49,6 @@
 # direct methods
 .method public constructor <init>(Lcom/sec/knox/container/util/IDaemonConnectorCallbacks;Ljava/lang/String;ILjava/lang/String;I)V
     .locals 2
-    .param p1    # Lcom/sec/knox/container/util/IDaemonConnectorCallbacks;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -100,8 +95,6 @@
 
 .method static appendEscaped(Ljava/lang/StringBuilder;Ljava/lang/String;)V
     .locals 6
-    .param p0    # Ljava/lang/StringBuilder;
-    .param p1    # Ljava/lang/String;
 
     const/16 v5, 0x22
 
@@ -895,7 +888,6 @@
 
 .method private log(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/sec/knox/container/util/DaemonConnector;->TAG:Ljava/lang/String;
 
@@ -906,7 +898,6 @@
 
 .method private loge(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/sec/knox/container/util/DaemonConnector;->TAG:Ljava/lang/String;
 
@@ -917,9 +908,6 @@
 
 .method private varargs makeCommand(Ljava/lang/StringBuilder;Ljava/lang/String;[Ljava/lang/Object;)V
     .locals 8
-    .param p1    # Ljava/lang/StringBuilder;
-    .param p2    # Ljava/lang/String;
-    .param p3    # [Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/sec/knox/container/util/DaemonConnectorException;
@@ -1025,7 +1013,6 @@
 # virtual methods
 .method public doCommand(Ljava/lang/String;)Ljava/util/ArrayList;
     .locals 7
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1086,8 +1073,6 @@
 
 .method public doListCommand(Ljava/lang/String;I)[Ljava/lang/String;
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/sec/knox/container/util/DaemonConnectorException;
@@ -1226,9 +1211,6 @@
 
 .method public dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     invoke-virtual {p2}, Ljava/io/PrintWriter;->println()V
 
@@ -1241,7 +1223,6 @@
 
 .method public execute(Lcom/sec/knox/container/util/DaemonConnector$Command;)Lcom/sec/knox/container/util/DaemonEvent;
     .locals 2
-    .param p1    # Lcom/sec/knox/container/util/DaemonConnector$Command;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/sec/knox/container/util/DaemonConnectorException;
@@ -1271,8 +1252,6 @@
 
 .method public varargs execute(Ljava/lang/String;[Ljava/lang/Object;)Lcom/sec/knox/container/util/DaemonEvent;
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/sec/knox/container/util/DaemonConnectorException;
@@ -1325,9 +1304,6 @@
 
 .method public varargs execute(ILjava/lang/String;[Ljava/lang/Object;)[Lcom/sec/knox/container/util/DaemonEvent;
     .locals 18
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # [Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/sec/knox/container/util/DaemonConnectorException;
@@ -1646,7 +1622,6 @@
 
 .method public executeForList(Lcom/sec/knox/container/util/DaemonConnector$Command;)[Lcom/sec/knox/container/util/DaemonEvent;
     .locals 2
-    .param p1    # Lcom/sec/knox/container/util/DaemonConnector$Command;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/sec/knox/container/util/DaemonConnectorException;
@@ -1676,8 +1651,6 @@
 
 .method public varargs executeForList(Ljava/lang/String;[Ljava/lang/Object;)[Lcom/sec/knox/container/util/DaemonEvent;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/sec/knox/container/util/DaemonConnectorException;
@@ -1695,7 +1668,6 @@
 
 .method public handleMessage(Landroid/os/Message;)Z
     .locals 6
-    .param p1    # Landroid/os/Message;
 
     const/4 v5, 0x1
 

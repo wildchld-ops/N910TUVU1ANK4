@@ -46,7 +46,7 @@
 
     const-string v3, "connectivity"
 
-    invoke-virtual {v2, v3}, Landroid/app/Activity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v2, v3}, Lcom/android/phone/MobileNetworkSettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -97,7 +97,7 @@
 
     move-result v3
 
-    invoke-virtual {v2, v3}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+    invoke-virtual {v2, v3}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     invoke-virtual {v0}, Landroid/net/ConnectivityManager;->getMobileDataEnabled()Z
 
@@ -147,7 +147,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v2, v5}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v2, v5}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     :cond_0
     :goto_0
@@ -196,7 +196,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v2, v4}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v2, v4}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     :cond_2
     const-string v2, "volte_settings_in_mobile_networks_hongkong"
@@ -243,7 +243,7 @@
 
     iget-object v2, p0, Lcom/android/phone/MobileNetworkSettings$1;->this$0:Lcom/android/phone/MobileNetworkSettings;
 
-    invoke-virtual {v2}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v2}, Lcom/android/phone/MobileNetworkSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 
@@ -268,7 +268,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v2, v4}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+    invoke-virtual {v2, v4}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     goto :goto_0
 .end method

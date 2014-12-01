@@ -26,7 +26,6 @@
 # direct methods
 .method private constructor <init>(Landroid/widget/TabWidget;I)V
     .locals 0
-    .param p2    # I
 
     iput-object p1, p0, Landroid/widget/TabWidget$TabClickListener;->this$0:Landroid/widget/TabWidget;
 
@@ -39,9 +38,6 @@
 
 .method synthetic constructor <init>(Landroid/widget/TabWidget;ILandroid/widget/TabWidget$1;)V
     .locals 0
-    .param p1    # Landroid/widget/TabWidget;
-    .param p2    # I
-    .param p3    # Landroid/widget/TabWidget$1;
 
     invoke-direct {p0, p1, p2}, Landroid/widget/TabWidget$TabClickListener;-><init>(Landroid/widget/TabWidget;I)V
 
@@ -52,7 +48,6 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 3
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Landroid/widget/TabWidget$TabClickListener;->this$0:Landroid/widget/TabWidget;
 

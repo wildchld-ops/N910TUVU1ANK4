@@ -38,14 +38,12 @@
 # virtual methods
 .method public allow(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method public clear(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     return-void
 .end method
@@ -58,7 +56,6 @@
 
 .method public getAllowed(Ljava/lang/String;Landroid/webkitsec/ValueCallback;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

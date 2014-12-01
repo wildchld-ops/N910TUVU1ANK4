@@ -90,13 +90,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;ZZI)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
-    .param p5    # Z
-    .param p6    # Z
-    .param p7    # I
 
     const/4 v2, 0x0
 
@@ -143,14 +136,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;ZZIZ)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
-    .param p5    # Z
-    .param p6    # Z
-    .param p7    # I
-    .param p8    # Z
 
     const/4 v2, 0x0
 
@@ -201,7 +186,6 @@
 # virtual methods
 .method public equals(Ljava/lang/Object;)Z
     .locals 5
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x1
 
@@ -433,7 +417,6 @@
 
 .method public setAutoReplacement(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/common/Language;->mAutoReplacementOn:Z
 
@@ -442,7 +425,6 @@
 
 .method public setInputMethodSubType(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/diotek/ime/framework/common/Language;->mInputMethodSubType:I
 

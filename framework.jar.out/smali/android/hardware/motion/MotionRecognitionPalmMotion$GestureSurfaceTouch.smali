@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -32,9 +31,6 @@
 
 .method public static insertLog(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const-string v2, "TRUE"
 
@@ -92,7 +88,6 @@
 # virtual methods
 .method public onInitSweep(I)Z
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -101,7 +96,6 @@
 
 .method public onPalm(Landroid/view/MotionEvent;)Z
     .locals 3
-    .param p1    # Landroid/view/MotionEvent;
 
     # getter for: Landroid/hardware/motion/MotionRecognitionPalmMotion;->g_IsBootCompleted:Z
     invoke-static {}, Landroid/hardware/motion/MotionRecognitionPalmMotion;->access$400()Z
@@ -177,7 +171,6 @@
 
 .method public onSweepDown(I)Z
     .locals 5
-    .param p1    # I
 
     const/4 v0, 0x0
 

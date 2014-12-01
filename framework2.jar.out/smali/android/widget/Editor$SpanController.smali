@@ -42,9 +42,6 @@
 
 .method static synthetic access$1300(Landroid/widget/Editor$SpanController;ILandroid/text/style/EasyEditSpan;)V
     .locals 0
-    .param p0    # Landroid/widget/Editor$SpanController;
-    .param p1    # I
-    .param p2    # Landroid/text/style/EasyEditSpan;
 
     invoke-direct {p0, p1, p2}, Landroid/widget/Editor$SpanController;->sendEasySpanNotification(ILandroid/text/style/EasyEditSpan;)V
 
@@ -53,8 +50,6 @@
 
 .method private isNonIntermediateSelectionSpan(Landroid/text/Spannable;Ljava/lang/Object;)Z
     .locals 1
-    .param p1    # Landroid/text/Spannable;
-    .param p2    # Ljava/lang/Object;
 
     sget-object v0, Landroid/text/Selection;->SELECTION_START:Ljava/lang/Object;
 
@@ -86,8 +81,6 @@
 
 .method private sendEasySpanNotification(ILandroid/text/style/EasyEditSpan;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/text/style/EasyEditSpan;
 
     :try_start_0
     invoke-virtual {p2}, Landroid/text/style/EasyEditSpan;->getPendingIntent()Landroid/app/PendingIntent;
@@ -167,10 +160,6 @@
 
 .method public onSpanAdded(Landroid/text/Spannable;Ljava/lang/Object;II)V
     .locals 4
-    .param p1    # Landroid/text/Spannable;
-    .param p2    # Ljava/lang/Object;
-    .param p3    # I
-    .param p4    # I
 
     invoke-direct {p0, p1, p2}, Landroid/widget/Editor$SpanController;->isNonIntermediateSelectionSpan(Landroid/text/Spannable;Ljava/lang/Object;)Z
 
@@ -317,12 +306,6 @@
 
 .method public onSpanChanged(Landroid/text/Spannable;Ljava/lang/Object;IIII)V
     .locals 2
-    .param p1    # Landroid/text/Spannable;
-    .param p2    # Ljava/lang/Object;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     invoke-direct {p0, p1, p2}, Landroid/widget/Editor$SpanController;->isNonIntermediateSelectionSpan(Landroid/text/Spannable;Ljava/lang/Object;)Z
 
@@ -363,10 +346,6 @@
 
 .method public onSpanRemoved(Landroid/text/Spannable;Ljava/lang/Object;II)V
     .locals 1
-    .param p1    # Landroid/text/Spannable;
-    .param p2    # Ljava/lang/Object;
-    .param p3    # I
-    .param p4    # I
 
     invoke-direct {p0, p1, p2}, Landroid/widget/Editor$SpanController;->isNonIntermediateSelectionSpan(Landroid/text/Spannable;Ljava/lang/Object;)Z
 

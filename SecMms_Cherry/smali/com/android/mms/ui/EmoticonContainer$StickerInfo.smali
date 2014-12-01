@@ -29,10 +29,6 @@
 # direct methods
 .method public constructor <init>(ILjava/lang/String;JZ)V
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # J
-    .param p5    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -104,7 +100,6 @@
 
 .method static synthetic access$1800(Lcom/android/mms/ui/EmoticonContainer$StickerInfo;)J
     .locals 2
-    .param p0    # Lcom/android/mms/ui/EmoticonContainer$StickerInfo;
 
     iget-wide v0, p0, Lcom/android/mms/ui/EmoticonContainer$StickerInfo;->install:J
 
@@ -113,8 +108,6 @@
 
 .method static synthetic access$1802(Lcom/android/mms/ui/EmoticonContainer$StickerInfo;J)J
     .locals 0
-    .param p0    # Lcom/android/mms/ui/EmoticonContainer$StickerInfo;
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/android/mms/ui/EmoticonContainer$StickerInfo;->install:J
 
@@ -123,7 +116,6 @@
 
 .method static synthetic access$1900(Lcom/android/mms/ui/EmoticonContainer$StickerInfo;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/EmoticonContainer$StickerInfo;
 
     iget-boolean v0, p0, Lcom/android/mms/ui/EmoticonContainer$StickerInfo;->needUpdate:Z
 
@@ -132,8 +124,6 @@
 
 .method static synthetic access$1902(Lcom/android/mms/ui/EmoticonContainer$StickerInfo;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/ui/EmoticonContainer$StickerInfo;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/EmoticonContainer$StickerInfo;->needUpdate:Z
 
@@ -142,7 +132,6 @@
 
 .method static synthetic access$2000(Lcom/android/mms/ui/EmoticonContainer$StickerInfo;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/EmoticonContainer$StickerInfo;
 
     iget-boolean v0, p0, Lcom/android/mms/ui/EmoticonContainer$StickerInfo;->isDownloading:Z
 
@@ -151,8 +140,6 @@
 
 .method static synthetic access$2002(Lcom/android/mms/ui/EmoticonContainer$StickerInfo;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/ui/EmoticonContainer$StickerInfo;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/EmoticonContainer$StickerInfo;->isDownloading:Z
 
@@ -161,7 +148,6 @@
 
 .method static synthetic access$2400(Lcom/android/mms/ui/EmoticonContainer$StickerInfo;)I
     .locals 1
-    .param p0    # Lcom/android/mms/ui/EmoticonContainer$StickerInfo;
 
     iget v0, p0, Lcom/android/mms/ui/EmoticonContainer$StickerInfo;->itemPosition:I
 
@@ -170,7 +156,6 @@
 
 .method static synthetic access$600(Lcom/android/mms/ui/EmoticonContainer$StickerInfo;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/EmoticonContainer$StickerInfo;
 
     iget-object v0, p0, Lcom/android/mms/ui/EmoticonContainer$StickerInfo;->stickerId:Ljava/lang/String;
 

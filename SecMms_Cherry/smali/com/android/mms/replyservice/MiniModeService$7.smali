@@ -66,7 +66,6 @@
 
 .method public closeRequestedFrom(Landroid/content/ComponentName;)V
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -168,8 +167,6 @@
 
 .method public focusChanged(Landroid/content/ComponentName;Z)V
     .locals 5
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -251,9 +248,6 @@
 
 .method public movementRequested(Landroid/content/ComponentName;II)V
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

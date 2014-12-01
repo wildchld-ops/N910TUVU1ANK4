@@ -14,7 +14,6 @@
 
 .method public static getInverse(Lcom/voovio/voo3d/data/Matrix4;)Lcom/voovio/voo3d/data/Matrix4;
     .locals 37
-    .param p0    # Lcom/voovio/voo3d/data/Matrix4;
 
     invoke-virtual/range {p0 .. p0}, Lcom/voovio/voo3d/data/Matrix4;->det()F
 
@@ -661,8 +660,6 @@
 
 .method public static multiply(Lcom/voovio/voo3d/data/Matrix4;Lcom/voovio/voo3d/data/Matrix4;)Lcom/voovio/voo3d/data/Matrix4;
     .locals 51
-    .param p0    # Lcom/voovio/voo3d/data/Matrix4;
-    .param p1    # Lcom/voovio/voo3d/data/Matrix4;
 
     move-object/from16 v0, p0
 

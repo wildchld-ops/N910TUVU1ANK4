@@ -61,7 +61,6 @@
 
 .method public setRecordingData(Landroid/graphics/Bitmap;)V
     .locals 0
-    .param p1    # Landroid/graphics/Bitmap;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/RecordingData;->mRecordingOnlyBitmap:Landroid/graphics/Bitmap;
 

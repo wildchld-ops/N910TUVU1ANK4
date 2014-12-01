@@ -44,9 +44,6 @@
 
 .method private static copyZipEntry(Ljava/util/zip/ZipEntry;Ljava/util/zip/ZipFile;Ljava/util/zip/ZipOutputStream;)V
     .locals 5
-    .param p0    # Ljava/util/zip/ZipEntry;
-    .param p1    # Ljava/util/zip/ZipFile;
-    .param p2    # Ljava/util/zip/ZipOutputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -121,11 +118,6 @@
 
 .method public static createSdDir(ILjava/lang/String;Ljava/lang/String;IZ)Ljava/lang/String;
     .locals 10
-    .param p0    # I
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Z
 
     const/4 v7, 0x0
 
@@ -241,7 +233,6 @@
 
 .method public static destroySdDir(Ljava/lang/String;)Z
     .locals 6
-    .param p0    # Ljava/lang/String;
 
     const/4 v3, 0x1
 
@@ -332,8 +323,6 @@
 
 .method public static extractPublicFiles(Ljava/lang/String;Ljava/io/File;)I
     .locals 11
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/io/File;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -514,7 +503,6 @@
 
 .method public static finalizeSdDir(Ljava/lang/String;)Z
     .locals 6
-    .param p0    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -601,9 +589,6 @@
 
 .method public static fixSdPermissions(Ljava/lang/String;ILjava/lang/String;)Z
     .locals 6
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -728,7 +713,6 @@
 
 .method public static getSdDir(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     :try_start_0
     invoke-static {}, Lcom/android/internal/content/PackageHelper;->getMountService()Landroid/os/storage/IMountService;
@@ -786,7 +770,6 @@
 
 .method public static getSdFilesystem(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     :try_start_0
     invoke-static {}, Lcom/android/internal/content/PackageHelper;->getMountService()Landroid/os/storage/IMountService;
@@ -891,7 +874,6 @@
 
 .method public static isContainerMounted(Ljava/lang/String;)Z
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     :try_start_0
     invoke-static {}, Lcom/android/internal/content/PackageHelper;->getMountService()Landroid/os/storage/IMountService;
@@ -945,9 +927,6 @@
 
 .method public static mountSdDir(Ljava/lang/String;Ljava/lang/String;I)Ljava/lang/String;
     .locals 6
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v2, 0x0
 
@@ -1024,8 +1003,6 @@
 
 .method public static renameSdDir(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 6
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -1142,7 +1119,6 @@
 
 .method public static unMountSdDir(Ljava/lang/String;)Z
     .locals 6
-    .param p0    # Ljava/lang/String;
 
     const/4 v3, 0x1
 

@@ -32,7 +32,6 @@
 
 .method public static getDrawableId(I)I
     .locals 3
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -86,7 +85,6 @@
 
 .method public static getInt(I)I
     .locals 3
-    .param p0    # I
 
     const/16 v0, 0xf
 
@@ -138,8 +136,6 @@
 
 .method public static getText(Landroid/content/Context;I)Ljava/lang/CharSequence;
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 

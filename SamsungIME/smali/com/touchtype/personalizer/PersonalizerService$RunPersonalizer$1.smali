@@ -100,8 +100,6 @@
 
 .method public downloadProgress(II)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/touchtype/personalizer/PersonalizerService$RunPersonalizer$1;->this$1:Lcom/touchtype/personalizer/PersonalizerService$RunPersonalizer;
 
@@ -210,8 +208,6 @@
 
 .method public serverProgress(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     return-void
 .end method

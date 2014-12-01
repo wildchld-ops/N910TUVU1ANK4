@@ -43,17 +43,6 @@
 # direct methods
 .method protected constructor <init>(Lcom/sec/android/app/camera/gallery/BaseImageList;Landroid/content/ContentResolver;JILandroid/net/Uri;Ljava/lang/String;JLjava/lang/String;JLjava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Lcom/sec/android/app/camera/gallery/BaseImageList;
-    .param p2    # Landroid/content/ContentResolver;
-    .param p3    # J
-    .param p5    # I
-    .param p6    # Landroid/net/Uri;
-    .param p7    # Ljava/lang/String;
-    .param p8    # J
-    .param p10    # Ljava/lang/String;
-    .param p11    # J
-    .param p13    # Ljava/lang/String;
-    .param p14    # Ljava/lang/String;
 
     const/4 v0, -0x1
 
@@ -171,7 +160,6 @@
 # virtual methods
 .method public equals(Ljava/lang/Object;)Z
     .locals 2
-    .param p1    # Ljava/lang/Object;
 
     instance-of v0, p1, Lcom/sec/android/app/camera/gallery/Image;
 
@@ -198,8 +186,6 @@
 
 .method public fullSizeBitmap(II)Landroid/graphics/Bitmap;
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x1
 
@@ -214,10 +200,6 @@
 
 .method public fullSizeBitmap(IIZZ)Landroid/graphics/Bitmap;
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # Z
 
     iget-object v2, p0, Lcom/sec/android/app/camera/gallery/BaseImage;->mContainer:Lcom/sec/android/app/camera/gallery/BaseImageList;
 

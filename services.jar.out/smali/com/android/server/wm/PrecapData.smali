@@ -74,9 +74,6 @@
 
 .method public constructor <init>(Landroid/content/ComponentName;Landroid/content/pm/ActivityInfo;Z)V
     .locals 5
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Landroid/content/pm/ActivityInfo;
-    .param p3    # Z
 
     const/4 v4, 0x0
 
@@ -311,7 +308,6 @@
 
 .method public static registerContentObserverForEasyMode(Landroid/content/Context;)V
     .locals 5
-    .param p0    # Landroid/content/Context;
 
     sput-object p0, Lcom/android/server/wm/PrecapData;->mContext:Landroid/content/Context;
 

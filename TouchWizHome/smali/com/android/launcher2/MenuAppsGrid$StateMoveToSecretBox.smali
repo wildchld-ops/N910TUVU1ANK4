@@ -65,8 +65,6 @@
 
 .method synthetic constructor <init>(Lcom/android/launcher2/MenuAppsGrid;Lcom/android/launcher2/MenuAppsGrid$1;)V
     .locals 0
-    .param p1    # Lcom/android/launcher2/MenuAppsGrid;
-    .param p2    # Lcom/android/launcher2/MenuAppsGrid$1;
 
     invoke-direct {p0, p1}, Lcom/android/launcher2/MenuAppsGrid$StateMoveToSecretBox;-><init>(Lcom/android/launcher2/MenuAppsGrid;)V
 
@@ -75,7 +73,6 @@
 
 .method static synthetic access$4700(Lcom/android/launcher2/MenuAppsGrid$StateMoveToSecretBox;)Lcom/samsung/android/privatemode/PrivateModeManager;
     .locals 1
-    .param p0    # Lcom/android/launcher2/MenuAppsGrid$StateMoveToSecretBox;
 
     iget-object v0, p0, Lcom/android/launcher2/MenuAppsGrid$StateMoveToSecretBox;->mPMManager:Lcom/samsung/android/privatemode/PrivateModeManager;
 
@@ -84,7 +81,6 @@
 
 .method static synthetic access$4800(Lcom/android/launcher2/MenuAppsGrid$StateMoveToSecretBox;)Landroid/os/IBinder;
     .locals 1
-    .param p0    # Lcom/android/launcher2/MenuAppsGrid$StateMoveToSecretBox;
 
     iget-object v0, p0, Lcom/android/launcher2/MenuAppsGrid$StateMoveToSecretBox;->mBinder:Landroid/os/IBinder;
 
@@ -93,8 +89,6 @@
 
 .method static synthetic access$4802(Lcom/android/launcher2/MenuAppsGrid$StateMoveToSecretBox;Landroid/os/IBinder;)Landroid/os/IBinder;
     .locals 0
-    .param p0    # Lcom/android/launcher2/MenuAppsGrid$StateMoveToSecretBox;
-    .param p1    # Landroid/os/IBinder;
 
     iput-object p1, p0, Lcom/android/launcher2/MenuAppsGrid$StateMoveToSecretBox;->mBinder:Landroid/os/IBinder;
 
@@ -103,7 +97,6 @@
 
 .method static synthetic access$4900(Lcom/android/launcher2/MenuAppsGrid$StateMoveToSecretBox;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/launcher2/MenuAppsGrid$StateMoveToSecretBox;
 
     iget-object v0, p0, Lcom/android/launcher2/MenuAppsGrid$StateMoveToSecretBox;->mMainHandler:Landroid/os/Handler;
 
@@ -254,7 +247,6 @@
 
 .method public exit(Ljava/util/List;Lcom/android/launcher2/MenuAppsGrid$State;)V
     .locals 2
-    .param p2    # Lcom/android/launcher2/MenuAppsGrid$State;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

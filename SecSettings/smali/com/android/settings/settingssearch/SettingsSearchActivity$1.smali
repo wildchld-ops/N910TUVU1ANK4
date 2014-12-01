@@ -21,7 +21,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/settings/settingssearch/SettingsSearchActivity;Landroid/os/Handler;)V
     .locals 0
-    .param p2    # Landroid/os/Handler;
 
     iput-object p1, p0, Lcom/android/settings/settingssearch/SettingsSearchActivity$1;->this$0:Lcom/android/settings/settingssearch/SettingsSearchActivity;
 
@@ -34,7 +33,6 @@
 # virtual methods
 .method public onChange(Z)V
     .locals 3
-    .param p1    # Z
 
     # getter for: Lcom/android/settings/settingssearch/SettingsSearchActivity;->mSearchManger:Lcom/android/settings/settingssearch/SettingsSearchManager;
     invoke-static {}, Lcom/android/settings/settingssearch/SettingsSearchActivity;->access$200()Lcom/android/settings/settingssearch/SettingsSearchManager;

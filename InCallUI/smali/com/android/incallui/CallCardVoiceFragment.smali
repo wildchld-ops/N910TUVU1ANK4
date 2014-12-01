@@ -547,7 +547,6 @@
 
 .method static synthetic access$000(Lcom/android/incallui/CallCardVoiceFragment;)Landroid/app/AlertDialog;
     .locals 1
-    .param p0    # Lcom/android/incallui/CallCardVoiceFragment;
 
     iget-object v0, p0, Lcom/android/incallui/CallCardVoiceFragment;->mModifyErrorDialog:Landroid/app/AlertDialog;
 
@@ -556,7 +555,6 @@
 
 .method static synthetic access$100(Lcom/android/incallui/CallCardVoiceFragment;)Landroid/app/AlertDialog;
     .locals 1
-    .param p0    # Lcom/android/incallui/CallCardVoiceFragment;
 
     iget-object v0, p0, Lcom/android/incallui/CallCardVoiceFragment;->mVoLTESettingErrorDialog:Landroid/app/AlertDialog;
 
@@ -565,7 +563,6 @@
 
 .method static synthetic access$200(Lcom/android/incallui/CallCardVoiceFragment;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/incallui/CallCardVoiceFragment;
 
     iget-object v0, p0, Lcom/android/incallui/CallCardVoiceFragment;->mManageConfCallBtn:Landroid/view/View;
 
@@ -574,7 +571,6 @@
 
 .method static synthetic access$300(Lcom/android/incallui/CallCardVoiceFragment;)Landroid/widget/ToggleButton;
     .locals 1
-    .param p0    # Lcom/android/incallui/CallCardVoiceFragment;
 
     iget-object v0, p0, Lcom/android/incallui/CallCardVoiceFragment;->mExtraVolBtn:Landroid/widget/ToggleButton;
 
@@ -583,8 +579,6 @@
 
 .method static synthetic access$402(Lcom/android/incallui/CallCardVoiceFragment;Z)Z
     .locals 0
-    .param p0    # Lcom/android/incallui/CallCardVoiceFragment;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/incallui/CallCardVoiceFragment;->mvideoMute:Z
 
@@ -593,8 +587,6 @@
 
 .method static synthetic access$502(Lcom/android/incallui/CallCardVoiceFragment;Z)Z
     .locals 0
-    .param p0    # Lcom/android/incallui/CallCardVoiceFragment;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/incallui/CallCardVoiceFragment;->mSilentRing:Z
 
@@ -603,7 +595,6 @@
 
 .method static synthetic access$600(Lcom/android/incallui/CallCardVoiceFragment;)Landroid/widget/VideoView;
     .locals 1
-    .param p0    # Lcom/android/incallui/CallCardVoiceFragment;
 
     iget-object v0, p0, Lcom/android/incallui/CallCardVoiceFragment;->mPhotoringVideo:Landroid/widget/VideoView;
 
@@ -612,7 +603,6 @@
 
 .method static synthetic access$700(Lcom/android/incallui/CallCardVoiceFragment;)Landroid/widget/ImageView;
     .locals 1
-    .param p0    # Lcom/android/incallui/CallCardVoiceFragment;
 
     iget-object v0, p0, Lcom/android/incallui/CallCardVoiceFragment;->soundImg:Landroid/widget/ImageView;
 
@@ -621,8 +611,6 @@
 
 .method static synthetic access$802(Lcom/android/incallui/CallCardVoiceFragment;Landroid/media/MediaPlayer;)Landroid/media/MediaPlayer;
     .locals 0
-    .param p0    # Lcom/android/incallui/CallCardVoiceFragment;
-    .param p1    # Landroid/media/MediaPlayer;
 
     iput-object p1, p0, Lcom/android/incallui/CallCardVoiceFragment;->mplayer:Landroid/media/MediaPlayer;
 
@@ -1270,7 +1258,6 @@
 
 .method private updateHDVoiceCallText(I)V
     .locals 1
-    .param p1    # I
 
     sparse-switch p1, :sswitch_data_0
 
@@ -1601,7 +1588,6 @@
 
 .method public enableModifyCall(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/incallui/CallCardVoiceFragment;->mModifyCallButton:Landroid/widget/ImageButton;
 
@@ -2123,7 +2109,6 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/incallui/CallCardFragment;->onActivityCreated(Landroid/os/Bundle;)V
 
@@ -2132,7 +2117,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 11
-    .param p1    # Landroid/view/View;
 
     const/4 v9, 0x0
 
@@ -2629,9 +2613,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 3
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const-string v1, "onCreateView..."
 
@@ -2785,8 +2766,6 @@
 
 .method public onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
     .locals 13
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/os/Bundle;
 
     const v7, 0x7f0a007f
 
@@ -3388,8 +3367,6 @@
 
 .method public setActionMemoFilePath(ILjava/lang/String;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/incallui/CallCardFragment;->mCallerInfoCardView:Lcom/android/incallui/callerinfocard/CallerInfoCardView;
 
@@ -3405,7 +3382,6 @@
 
 .method public setActionMemoFilePath(ILjava/util/ArrayList;)V
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -3430,11 +3406,6 @@
 
 .method public setCallState(ILcom/android/services/telephony/common/Call$DisconnectCause;ZLjava/lang/String;Ljava/lang/String;)V
     .locals 4
-    .param p1    # I
-    .param p2    # Lcom/android/services/telephony/common/Call$DisconnectCause;
-    .param p3    # Z
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
 
     const/16 v3, 0x8
 
@@ -3646,17 +3617,6 @@
 
 .method public setPrimary(Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;ILandroid/graphics/drawable/Drawable;ZZZZZ)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
-    .param p6    # Landroid/graphics/drawable/Drawable;
-    .param p7    # Z
-    .param p8    # Z
-    .param p9    # Z
-    .param p10    # Z
-    .param p11    # Z
 
     invoke-super/range {p0 .. p11}, Lcom/android/incallui/CallCardFragment;->setPrimary(Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;ILandroid/graphics/drawable/Drawable;ZZZZZ)V
 
@@ -3828,7 +3788,6 @@
 
 .method public setPrimaryLabel(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     return-void
 .end method
@@ -5348,7 +5307,6 @@
 
 .method public showPrimaryNsriSecureCallTitle(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/incallui/CallCardVoiceFragment;->mPrimaryNsriSecureCallTitle:Landroid/widget/TextView;
 
@@ -5478,7 +5436,6 @@
 
 .method public showWebEx(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
@@ -5493,7 +5450,6 @@
 
 .method public updateBgColorForCallState(I)V
     .locals 8
-    .param p1    # I
 
     const v7, 0x7f0a007a
 
@@ -6375,7 +6331,6 @@
 
 .method public updatePrimaryLayout(I)V
     .locals 6
-    .param p1    # I
 
     const v5, 0x7f0d0213
 

@@ -59,8 +59,6 @@
 # virtual methods
 .method public filter(JF)F
     .locals 24
-    .param p1    # J
-    .param p3    # F
 
     move/from16 v16, p3
 

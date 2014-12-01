@@ -58,8 +58,6 @@
 # virtual methods
 .method public decrypt([B[B)[B
     .locals 1
-    .param p1    # [B
-    .param p2    # [B
 
     invoke-static {p1, p2}, Landroid/os/storage/sensitive/SecureStorageLSM;->lsmDecrypt([B[B)[B
 
@@ -70,9 +68,6 @@
 
 .method public encrypt([B[BI)[B
     .locals 1
-    .param p1    # [B
-    .param p2    # [B
-    .param p3    # I
 
     invoke-static {p1, p2, p3}, Landroid/os/storage/sensitive/SecureStorageLSM;->lsmEncrypt([B[BI)[B
 
@@ -83,8 +78,6 @@
 
 .method public gen_keypair([B[B)[B
     .locals 1
-    .param p1    # [B
-    .param p2    # [B
 
     invoke-static {p1, p2}, Landroid/os/storage/sensitive/SecureStorageLSM;->lsmGenKeypair([B[B)[B
 
@@ -105,8 +98,6 @@
 
 .method public keys_re_encrypt([B[B)[B
     .locals 1
-    .param p1    # [B
-    .param p2    # [B
 
     invoke-static {p1, p2}, Landroid/os/storage/sensitive/SecureStorageLSM;->lsmKeysReEncrypt([B[B)[B
 
@@ -117,8 +108,6 @@
 
 .method public set_state([BI)I
     .locals 1
-    .param p1    # [B
-    .param p2    # I
 
     invoke-static {p1, p2}, Landroid/os/storage/sensitive/SecureStorageLSM;->lsmSetState([BI)I
 

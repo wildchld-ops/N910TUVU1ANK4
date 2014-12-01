@@ -29,7 +29,6 @@
 # virtual methods
 .method public onChange(Z)V
     .locals 1
-    .param p1    # Z
 
     const/4 v0, 0x0
 
@@ -40,8 +39,6 @@
 
 .method public onChange(ZLandroid/net/Uri;)V
     .locals 8
-    .param p1    # Z
-    .param p2    # Landroid/net/Uri;
 
     # getter for: Lcom/android/incallui/EcidClient;->m_mapLookupsInProcess:Ljava/util/HashMap;
     invoke-static {}, Lcom/android/incallui/EcidClient;->access$300()Ljava/util/HashMap;

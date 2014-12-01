@@ -453,8 +453,6 @@
 
 .method static synthetic access$002(Lcom/android/incallui/CallCardEasyFragment;Z)Z
     .locals 0
-    .param p0    # Lcom/android/incallui/CallCardEasyFragment;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/incallui/CallCardEasyFragment;->mvideoMute:Z
 
@@ -463,8 +461,6 @@
 
 .method static synthetic access$102(Lcom/android/incallui/CallCardEasyFragment;Z)Z
     .locals 0
-    .param p0    # Lcom/android/incallui/CallCardEasyFragment;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/incallui/CallCardEasyFragment;->mSilentRing:Z
 
@@ -473,7 +469,6 @@
 
 .method static synthetic access$200(Lcom/android/incallui/CallCardEasyFragment;)Landroid/widget/VideoView;
     .locals 1
-    .param p0    # Lcom/android/incallui/CallCardEasyFragment;
 
     iget-object v0, p0, Lcom/android/incallui/CallCardEasyFragment;->mPhotoringVideo:Landroid/widget/VideoView;
 
@@ -482,7 +477,6 @@
 
 .method static synthetic access$300(Lcom/android/incallui/CallCardEasyFragment;)Landroid/widget/ImageView;
     .locals 1
-    .param p0    # Lcom/android/incallui/CallCardEasyFragment;
 
     iget-object v0, p0, Lcom/android/incallui/CallCardEasyFragment;->soundImg:Landroid/widget/ImageView;
 
@@ -491,8 +485,6 @@
 
 .method static synthetic access$402(Lcom/android/incallui/CallCardEasyFragment;Landroid/media/MediaPlayer;)Landroid/media/MediaPlayer;
     .locals 0
-    .param p0    # Lcom/android/incallui/CallCardEasyFragment;
-    .param p1    # Landroid/media/MediaPlayer;
 
     iput-object p1, p0, Lcom/android/incallui/CallCardEasyFragment;->mplayer:Landroid/media/MediaPlayer;
 
@@ -543,7 +535,6 @@
 
 .method private getCallName(Lcom/android/services/telephony/common/Call;)Ljava/lang/String;
     .locals 6
-    .param p1    # Lcom/android/services/telephony/common/Call;
 
     const/4 v2, 0x0
 
@@ -612,7 +603,6 @@
 
 .method public static modifiedBlockNumber(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "010"
 
@@ -636,8 +626,6 @@
 
 .method private updateIncomingPopupMsg(ILjava/lang/String;)V
     .locals 4
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p0}, Landroid/app/Fragment;->getResources()Landroid/content/res/Resources;
 
@@ -683,7 +671,6 @@
 # virtual methods
 .method public enableModifyCall(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/incallui/CallCardEasyFragment;->mModifyCallButton:Landroid/widget/ImageButton;
 
@@ -878,7 +865,6 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/incallui/CallCardFragment;->onActivityCreated(Landroid/os/Bundle;)V
 
@@ -887,7 +873,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 7
-    .param p1    # Landroid/view/View;
 
     const/4 v6, 0x0
 
@@ -1064,9 +1049,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 3
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const-string v1, "onCreateView..."
 
@@ -1149,8 +1131,6 @@
 
 .method public onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/os/Bundle;
 
     invoke-super {p0, p1, p2}, Lcom/android/incallui/CallCardFragment;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
 
@@ -1471,11 +1451,6 @@
 
 .method public setCallState(ILcom/android/services/telephony/common/Call$DisconnectCause;ZLjava/lang/String;Ljava/lang/String;)V
     .locals 4
-    .param p1    # I
-    .param p2    # Lcom/android/services/telephony/common/Call$DisconnectCause;
-    .param p3    # Z
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
 
     const/16 v3, 0x8
 
@@ -1561,8 +1536,6 @@
 
 .method public setPrimaryCnapName(ZLjava/lang/String;)V
     .locals 2
-    .param p1    # Z
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/incallui/CallCardEasyFragment;->mPrimaryCnapNameContainer:Landroid/view/View;
 
@@ -1633,22 +1606,18 @@
 
 .method public setPrimaryLabel(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method public showEncryptCall(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method public showHDVoiceIcon(ZZ)V
     .locals 4
-    .param p1    # Z
-    .param p2    # Z
 
     const/16 v2, 0x8
 
@@ -1695,7 +1664,6 @@
 
 .method public showHighQualitySoundText(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/incallui/CallCardEasyFragment;->mHighQualitySoundText:Landroid/widget/TextView;
 
@@ -1721,8 +1689,6 @@
 
 .method public showIncomingPopupForSecondCall(II)V
     .locals 8
-    .param p1    # I
-    .param p2    # I
 
     const/16 v7, 0x8
 
@@ -1861,7 +1827,6 @@
 
 .method public showMenu(Z)V
     .locals 6
-    .param p1    # Z
 
     const/16 v3, 0x8
 
@@ -1990,7 +1955,6 @@
 
 .method public showModifyCall(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/incallui/CallCardEasyFragment;->mModifyCallStub:Landroid/view/ViewStub;
 
@@ -2054,7 +2018,6 @@
 
 .method public showPrimaryNsriSecureCallTitle(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/incallui/CallCardEasyFragment;->mPrimaryNsriSecureCallTitle:Landroid/widget/TextView;
 
@@ -2080,7 +2043,6 @@
 
 .method public updateBgColorForCallState(I)V
     .locals 8
-    .param p1    # I
 
     const v7, 0x7f0a007a
 
@@ -2451,8 +2413,6 @@
 
 .method public updatePhotoringState(Lcom/android/services/telephony/common/PhotoringCommon$PhotoringMTState;I)V
     .locals 8
-    .param p1    # Lcom/android/services/telephony/common/PhotoringCommon$PhotoringMTState;
-    .param p2    # I
 
     const/4 v7, 0x0
 
@@ -2770,7 +2730,6 @@
 
 .method public updatePrimaryLayout(I)V
     .locals 6
-    .param p1    # I
 
     const v5, 0x7f0d0213
 

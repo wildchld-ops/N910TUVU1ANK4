@@ -125,7 +125,6 @@
 
 .method private constructor <init>(Landroid/os/Parcel;)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -142,8 +141,6 @@
 
 .method synthetic constructor <init>(Landroid/os/Parcel;Landroid/os/Debug$1;)V
     .locals 0
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # Landroid/os/Debug$1;
 
     invoke-direct {p0, p1}, Landroid/os/Debug$MemoryInfo;-><init>(Landroid/os/Parcel;)V
 
@@ -152,7 +149,6 @@
 
 .method public static getOtherLabel(I)Ljava/lang/String;
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -306,7 +302,6 @@
 
 .method public getOtherPrivateClean(I)I
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Landroid/os/Debug$MemoryInfo;->otherStats:[I
 
@@ -321,7 +316,6 @@
 
 .method public getOtherPrivateDirty(I)I
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Landroid/os/Debug$MemoryInfo;->otherStats:[I
 
@@ -336,7 +330,6 @@
 
 .method public getOtherPss(I)I
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Landroid/os/Debug$MemoryInfo;->otherStats:[I
 
@@ -351,7 +344,6 @@
 
 .method public getOtherSharedClean(I)I
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Landroid/os/Debug$MemoryInfo;->otherStats:[I
 
@@ -366,7 +358,6 @@
 
 .method public getOtherSharedDirty(I)I
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Landroid/os/Debug$MemoryInfo;->otherStats:[I
 
@@ -381,7 +372,6 @@
 
 .method public getOtherSwappablePss(I)I
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Landroid/os/Debug$MemoryInfo;->otherStats:[I
 
@@ -396,7 +386,6 @@
 
 .method public getOtherSwappedOut(I)I
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Landroid/os/Debug$MemoryInfo;->otherStats:[I
 
@@ -551,7 +540,6 @@
 
 .method public readFromParcel(Landroid/os/Parcel;)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
@@ -690,8 +678,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget v0, p0, Landroid/os/Debug$MemoryInfo;->dalvikPss:I
 

@@ -29,9 +29,6 @@
 
 .method private setMenuVisibility(Landroid/view/Menu;ZI)V
     .locals 1
-    .param p1    # Landroid/view/Menu;
-    .param p2    # Z
-    .param p3    # I
 
     invoke-interface {p1, p3}, Landroid/view/Menu;->findItem(I)Landroid/view/MenuItem;
 
@@ -64,8 +61,6 @@
 
 .method public onActionItemClicked(Landroid/view/ActionMode;Landroid/view/MenuItem;)Z
     .locals 11
-    .param p1    # Landroid/view/ActionMode;
-    .param p2    # Landroid/view/MenuItem;
 
     const/16 v10, 0x3e8
 
@@ -254,8 +249,6 @@
 
 .method public onCreateActionMode(Landroid/view/ActionMode;Landroid/view/Menu;)Z
     .locals 12
-    .param p1    # Landroid/view/ActionMode;
-    .param p2    # Landroid/view/Menu;
 
     const/4 v1, 0x0
 
@@ -369,7 +362,6 @@
 
 .method public onDestroyActionMode(Landroid/view/ActionMode;)V
     .locals 1
-    .param p1    # Landroid/view/ActionMode;
 
     iget-object v0, p0, Landroid/webkitsec/SelectActionModeCallback;->mWebView:Landroid/webkitsec/WebViewClassic;
 
@@ -380,8 +372,6 @@
 
 .method public onPrepareActionMode(Landroid/view/ActionMode;Landroid/view/Menu;)Z
     .locals 1
-    .param p1    # Landroid/view/ActionMode;
-    .param p2    # Landroid/view/Menu;
 
     const/4 v0, 0x1
 
@@ -390,7 +380,6 @@
 
 .method setTextSelected(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/webkitsec/SelectActionModeCallback;->mIsTextSelected:Z
 
@@ -399,7 +388,6 @@
 
 .method setWebView(Landroid/webkitsec/WebViewClassic;)V
     .locals 0
-    .param p1    # Landroid/webkitsec/WebViewClassic;
 
     iput-object p1, p0, Landroid/webkitsec/SelectActionModeCallback;->mWebView:Landroid/webkitsec/WebViewClassic;
 

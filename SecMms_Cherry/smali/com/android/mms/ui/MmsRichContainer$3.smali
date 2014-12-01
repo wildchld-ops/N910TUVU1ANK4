@@ -36,9 +36,6 @@
 # virtual methods
 .method public onPrivateCommand(ILjava/lang/CharSequence;Landroid/os/Bundle;)Z
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/CharSequence;
-    .param p3    # Landroid/os/Bundle;
 
     const/4 v5, 0x1
 

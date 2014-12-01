@@ -221,7 +221,6 @@
 
 .method protected setOnTransDelAnimListener(Lcom/android/mms/animation/MsgDeleteActionAnimation$OnTransDelAnimListener;)V
     .locals 0
-    .param p1    # Lcom/android/mms/animation/MsgDeleteActionAnimation$OnTransDelAnimListener;
 
     iput-object p1, p0, Lcom/android/mms/animation/MsgDeleteActionAnimation$TransDelAnim;->mOnTransAnimationListener:Lcom/android/mms/animation/MsgDeleteActionAnimation$OnTransDelAnimListener;
 
@@ -230,7 +229,6 @@
 
 .method public startTransAnimation(I)V
     .locals 3
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/mms/animation/MsgDeleteActionAnimation$TransDelAnim;->stopTransAnimation()V
 

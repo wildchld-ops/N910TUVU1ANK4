@@ -43,7 +43,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/settings/AppPicker;Landroid/content/Context;)V
     .locals 7
-    .param p2    # Landroid/content/Context;
 
     const/4 v6, 0x0
 
@@ -185,9 +184,6 @@
 # virtual methods
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     const/16 v5, 0x8
 

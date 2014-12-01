@@ -44,7 +44,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/accessibilitywidget/SViewTorchLightMenu;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/accessibilitywidget/SViewTorchLightMenu;
 
     iget-boolean v0, p0, Lcom/android/settings/accessibilitywidget/SViewTorchLightMenu;->mTorchEnabled:Z
 
@@ -53,8 +52,6 @@
 
 .method static synthetic access$002(Lcom/android/settings/accessibilitywidget/SViewTorchLightMenu;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/accessibilitywidget/SViewTorchLightMenu;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/accessibilitywidget/SViewTorchLightMenu;->mTorchEnabled:Z
 
@@ -63,7 +60,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/accessibilitywidget/SViewTorchLightMenu;)V
     .locals 0
-    .param p0    # Lcom/android/settings/accessibilitywidget/SViewTorchLightMenu;
 
     invoke-direct {p0}, Lcom/android/settings/accessibilitywidget/SViewTorchLightMenu;->updateViews()V
 
@@ -240,7 +236,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 22
-    .param p1    # Landroid/os/Bundle;
 
     const/16 v18, 0x1
 

@@ -33,10 +33,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/CustomFrequencyManager;IIJLjava/lang/String;)V
     .locals 5
-    .param p2    # I
-    .param p3    # I
-    .param p4    # J
-    .param p6    # Ljava/lang/String;
 
     const/4 v4, 0x1
 

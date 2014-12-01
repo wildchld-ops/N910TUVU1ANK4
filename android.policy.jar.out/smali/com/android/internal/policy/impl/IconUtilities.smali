@@ -61,7 +61,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 12
-    .param p1    # Landroid/content/Context;
 
     const/16 v11, 0x1e
 
@@ -264,7 +263,6 @@
 
 .method private createIconBitmap(Landroid/graphics/drawable/Drawable;)Landroid/graphics/Bitmap;
     .locals 16
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     move-object/from16 v0, p0
 
@@ -437,8 +435,6 @@
 
 .method private createSelectedBitmap(Landroid/graphics/Bitmap;Z)Landroid/graphics/Bitmap;
     .locals 9
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # Z
 
     const/4 v8, 0x0
 
@@ -511,7 +507,6 @@
 # virtual methods
 .method public createIconDrawable(Landroid/graphics/drawable/Drawable;)Landroid/graphics/drawable/Drawable;
     .locals 7
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     const/4 v6, 0x1
 

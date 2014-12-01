@@ -99,9 +99,6 @@
 # direct methods
 .method public constructor <init>(Landroid/app/Activity;Landroid/preference/CheckBoxPreference;Lcom/android/mms/rcs/RcsState;)V
     .locals 4
-    .param p1    # Landroid/app/Activity;
-    .param p2    # Landroid/preference/CheckBoxPreference;
-    .param p3    # Lcom/android/mms/rcs/RcsState;
 
     const/4 v3, 0x0
 
@@ -186,10 +183,6 @@
 
 .method public constructor <init>(Landroid/app/Activity;Landroid/preference/CheckBoxPreference;Lcom/android/mms/rcs/RcsState;Lcom/android/mms/rcs/Features;)V
     .locals 4
-    .param p1    # Landroid/app/Activity;
-    .param p2    # Landroid/preference/CheckBoxPreference;
-    .param p3    # Lcom/android/mms/rcs/RcsState;
-    .param p4    # Lcom/android/mms/rcs/Features;
 
     const/4 v3, 0x0
 
@@ -291,7 +284,6 @@
 
 .method public constructor <init>(Lcom/android/mms/rcs/RcsState;)V
     .locals 4
-    .param p1    # Lcom/android/mms/rcs/RcsState;
 
     const/4 v3, 0x0
 
@@ -366,7 +358,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/rcs/settings/RcsSetting;)Landroid/os/AsyncTask;
     .locals 1
-    .param p0    # Lcom/android/mms/rcs/settings/RcsSetting;
 
     iget-object v0, p0, Lcom/android/mms/rcs/settings/RcsSetting;->mTaskGetRcsEnabledState:Landroid/os/AsyncTask;
 
@@ -375,8 +366,6 @@
 
 .method static synthetic access$002(Lcom/android/mms/rcs/settings/RcsSetting;Landroid/os/AsyncTask;)Landroid/os/AsyncTask;
     .locals 0
-    .param p0    # Lcom/android/mms/rcs/settings/RcsSetting;
-    .param p1    # Landroid/os/AsyncTask;
 
     iput-object p1, p0, Lcom/android/mms/rcs/settings/RcsSetting;->mTaskGetRcsEnabledState:Landroid/os/AsyncTask;
 
@@ -385,7 +374,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/rcs/settings/RcsSetting;)Landroid/os/AsyncTask;
     .locals 1
-    .param p0    # Lcom/android/mms/rcs/settings/RcsSetting;
 
     iget-object v0, p0, Lcom/android/mms/rcs/settings/RcsSetting;->mTaskGetPermanentDisabledState:Landroid/os/AsyncTask;
 
@@ -394,8 +382,6 @@
 
 .method static synthetic access$102(Lcom/android/mms/rcs/settings/RcsSetting;Landroid/os/AsyncTask;)Landroid/os/AsyncTask;
     .locals 0
-    .param p0    # Lcom/android/mms/rcs/settings/RcsSetting;
-    .param p1    # Landroid/os/AsyncTask;
 
     iput-object p1, p0, Lcom/android/mms/rcs/settings/RcsSetting;->mTaskGetPermanentDisabledState:Landroid/os/AsyncTask;
 
@@ -404,8 +390,6 @@
 
 .method static synthetic access$202(Lcom/android/mms/rcs/settings/RcsSetting;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/rcs/settings/RcsSetting;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/rcs/settings/RcsSetting;->mPermanentDisableAvailabilityState:Z
 
@@ -446,8 +430,6 @@
 
 .method private toPreferenceValue(Ljava/lang/String;Landroid/preference/ListPreference;)I
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/preference/ListPreference;
 
     const/4 v0, 0x0
 
@@ -490,8 +472,6 @@
 
 .method private toPreferenceValue(ILandroid/preference/ListPreference;)Ljava/lang/String;
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/preference/ListPreference;
 
     const/4 v2, 0x2
 

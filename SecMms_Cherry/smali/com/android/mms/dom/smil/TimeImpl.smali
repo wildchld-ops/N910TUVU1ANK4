@@ -37,8 +37,6 @@
 # direct methods
 .method constructor <init>(Ljava/lang/String;I)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v5, 0x1
 
@@ -135,7 +133,6 @@
 
 .method public static parseClockValue(Ljava/lang/String;)F
     .locals 11
-    .param p0    # Ljava/lang/String;
 
     const/4 v9, 0x2
 
@@ -397,9 +394,6 @@
 
 .method private static parseFloat(Ljava/lang/String;IZ)F
     .locals 5
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v4, 0x0
 
@@ -559,7 +553,6 @@
 
 .method public setBaseBegin(Z)V
     .locals 0
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;
@@ -571,7 +564,6 @@
 
 .method public setBaseElement(Lorg/w3c/dom/Element;)V
     .locals 0
-    .param p1    # Lorg/w3c/dom/Element;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;
@@ -583,7 +575,6 @@
 
 .method public setEvent(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;
@@ -595,7 +586,6 @@
 
 .method public setMarker(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;
@@ -607,7 +597,6 @@
 
 .method public setOffset(D)V
     .locals 0
-    .param p1    # D
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;

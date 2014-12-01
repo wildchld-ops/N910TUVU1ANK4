@@ -36,7 +36,6 @@
 
 .method public constructor <init>(I)V
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -49,8 +48,6 @@
 
 .method public constructor <init>(IZ)V
     .locals 0
-    .param p1    # I
-    .param p2    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -61,7 +58,6 @@
 
 .method static synthetic access$000(Landroid/graphics/SurfaceTexture;)Landroid/graphics/SurfaceTexture$OnFrameAvailableListener;
     .locals 1
-    .param p0    # Landroid/graphics/SurfaceTexture;
 
     iget-object v0, p0, Landroid/graphics/SurfaceTexture;->mOnFrameAvailableListener:Landroid/graphics/SurfaceTexture$OnFrameAvailableListener;
 
@@ -70,8 +66,6 @@
 
 .method private init(IZ)V
     .locals 2
-    .param p1    # I
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/view/Surface$OutOfResourcesException;
@@ -165,7 +159,6 @@
 
 .method private static postEventFromNative(Ljava/lang/Object;)V
     .locals 4
-    .param p0    # Ljava/lang/Object;
 
     move-object v2, p0
 
@@ -205,7 +198,6 @@
 # virtual methods
 .method public attachToGLContext(I)V
     .locals 3
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/graphics/SurfaceTexture;->nativeAttachToGLContext(I)I
 
@@ -283,7 +275,6 @@
 
 .method public getTransformMatrix([F)V
     .locals 2
-    .param p1    # [F
 
     array-length v0, p1
 
@@ -321,8 +312,6 @@
 
 .method public setDefaultBufferSize(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Landroid/graphics/SurfaceTexture;->nativeSetDefaultBufferSize(II)V
 
@@ -331,7 +320,6 @@
 
 .method public setOnFrameAvailableListener(Landroid/graphics/SurfaceTexture$OnFrameAvailableListener;)V
     .locals 0
-    .param p1    # Landroid/graphics/SurfaceTexture$OnFrameAvailableListener;
 
     iput-object p1, p0, Landroid/graphics/SurfaceTexture;->mOnFrameAvailableListener:Landroid/graphics/SurfaceTexture$OnFrameAvailableListener;
 

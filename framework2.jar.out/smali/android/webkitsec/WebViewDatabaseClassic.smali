@@ -124,7 +124,6 @@
 
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Landroid/webkitsec/WebViewDatabase;-><init>()V
 
@@ -163,8 +162,6 @@
 
 .method static synthetic access$000(Landroid/webkitsec/WebViewDatabaseClassic;Landroid/content/Context;)V
     .locals 0
-    .param p0    # Landroid/webkitsec/WebViewDatabaseClassic;
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Landroid/webkitsec/WebViewDatabaseClassic;->init(Landroid/content/Context;)V
 
@@ -244,7 +241,6 @@
 
 .method public static getInstance(Landroid/content/Context;)Landroid/webkitsec/WebViewDatabaseClassic;
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     sget-object v1, Landroid/webkitsec/WebViewDatabaseClassic;->sInstanceLock:Ljava/lang/Object;
 
@@ -280,7 +276,6 @@
 
 .method private hasEntries(I)Z
     .locals 13
-    .param p1    # I
 
     const/4 v11, 0x1
 
@@ -379,7 +374,6 @@
 
 .method private declared-synchronized init(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     monitor-enter p0
 
@@ -423,7 +417,6 @@
 
 .method private initDatabase(Landroid/content/Context;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
 
     const/4 v5, 0x0
 
@@ -1605,8 +1598,6 @@
 
 .method getFormData(Ljava/lang/String;Ljava/lang/String;)Ljava/util/ArrayList;
     .locals 19
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1897,8 +1888,6 @@
 
 .method getHttpAuthUsernamePassword(Ljava/lang/String;Ljava/lang/String;)[Ljava/lang/String;
     .locals 13
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v4, 0x2
 
@@ -2072,7 +2061,6 @@
 
 .method getUsernamePassword(Ljava/lang/String;)[Ljava/lang/String;
     .locals 13
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x2
 
@@ -2324,7 +2312,6 @@
 
 .method setFormData(Ljava/lang/String;Ljava/util/HashMap;)V
     .locals 20
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2576,10 +2563,6 @@
 
 .method setHttpAuthUsernamePassword(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -2649,9 +2632,6 @@
 
 .method setUsernamePassword(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 

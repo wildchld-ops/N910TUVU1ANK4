@@ -113,8 +113,6 @@
 
 .method public constructor <init>(Landroid/content/Context;J)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # J
 
     const/4 v1, 0x0
 
@@ -173,8 +171,6 @@
 
 .method public constructor <init>(Landroid/content/Context;JLjava/util/ArrayList;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -246,7 +242,6 @@
 
 .method static synthetic access$1000(Lcom/android/mms/freemessage/FileTransfer;)Landroid/app/ProgressDialog;
     .locals 1
-    .param p0    # Lcom/android/mms/freemessage/FileTransfer;
 
     iget-object v0, p0, Lcom/android/mms/freemessage/FileTransfer;->mAttachmentProgressDialog:Landroid/app/ProgressDialog;
 
@@ -255,8 +250,6 @@
 
 .method static synthetic access$1002(Lcom/android/mms/freemessage/FileTransfer;Landroid/app/ProgressDialog;)Landroid/app/ProgressDialog;
     .locals 0
-    .param p0    # Lcom/android/mms/freemessage/FileTransfer;
-    .param p1    # Landroid/app/ProgressDialog;
 
     iput-object p1, p0, Lcom/android/mms/freemessage/FileTransfer;->mAttachmentProgressDialog:Landroid/app/ProgressDialog;
 
@@ -265,7 +258,6 @@
 
 .method static synthetic access$1100(Lcom/android/mms/freemessage/FileTransfer;)Ljava/util/HashMap;
     .locals 1
-    .param p0    # Lcom/android/mms/freemessage/FileTransfer;
 
     iget-object v0, p0, Lcom/android/mms/freemessage/FileTransfer;->mFilesHashMap:Ljava/util/HashMap;
 
@@ -274,7 +266,6 @@
 
 .method static synthetic access$1200(Lcom/android/mms/freemessage/FileTransfer;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/mms/freemessage/FileTransfer;
 
     iget-object v0, p0, Lcom/android/mms/freemessage/FileTransfer;->recipients:Ljava/util/ArrayList;
 
@@ -283,7 +274,6 @@
 
 .method static synthetic access$1300(Lcom/android/mms/freemessage/FileTransfer;)Lcom/samsung/app/share/via/external/NativeAccess;
     .locals 1
-    .param p0    # Lcom/android/mms/freemessage/FileTransfer;
 
     iget-object v0, p0, Lcom/android/mms/freemessage/FileTransfer;->mNativeAccess:Lcom/samsung/app/share/via/external/NativeAccess;
 
@@ -292,7 +282,6 @@
 
 .method static synthetic access$1400(Lcom/android/mms/freemessage/FileTransfer;)Landroid/app/ProgressDialog;
     .locals 1
-    .param p0    # Lcom/android/mms/freemessage/FileTransfer;
 
     iget-object v0, p0, Lcom/android/mms/freemessage/FileTransfer;->mVideoResizeProgressDialog:Landroid/app/ProgressDialog;
 
@@ -301,8 +290,6 @@
 
 .method static synthetic access$1402(Lcom/android/mms/freemessage/FileTransfer;Landroid/app/ProgressDialog;)Landroid/app/ProgressDialog;
     .locals 0
-    .param p0    # Lcom/android/mms/freemessage/FileTransfer;
-    .param p1    # Landroid/app/ProgressDialog;
 
     iput-object p1, p0, Lcom/android/mms/freemessage/FileTransfer;->mVideoResizeProgressDialog:Landroid/app/ProgressDialog;
 
@@ -311,7 +298,6 @@
 
 .method static synthetic access$1500(Lcom/android/mms/freemessage/FileTransfer;)V
     .locals 0
-    .param p0    # Lcom/android/mms/freemessage/FileTransfer;
 
     invoke-direct {p0}, Lcom/android/mms/freemessage/FileTransfer;->showVideoResizingProgressDialog()V
 
@@ -320,8 +306,6 @@
 
 .method static synthetic access$1600(Lcom/android/mms/freemessage/FileTransfer;Lcom/samsung/app/share/via/external/ShareviaObj;)V
     .locals 0
-    .param p0    # Lcom/android/mms/freemessage/FileTransfer;
-    .param p1    # Lcom/samsung/app/share/via/external/ShareviaObj;
 
     invoke-direct {p0, p1}, Lcom/android/mms/freemessage/FileTransfer;->nativeAccessForShareviaObj(Lcom/samsung/app/share/via/external/ShareviaObj;)V
 
@@ -330,9 +314,6 @@
 
 .method static synthetic access$1700(Lcom/android/mms/freemessage/FileTransfer;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/mms/freemessage/FileTransfer;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Lcom/android/mms/freemessage/FileTransfer;->videoResizingProgress(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -341,8 +322,6 @@
 
 .method static synthetic access$1802(Lcom/android/mms/freemessage/FileTransfer;I)I
     .locals 0
-    .param p0    # Lcom/android/mms/freemessage/FileTransfer;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/mms/freemessage/FileTransfer;->mOutFileSizeEstimated:I
 
@@ -351,7 +330,6 @@
 
 .method static synthetic access$1900(Lcom/android/mms/freemessage/FileTransfer;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/mms/freemessage/FileTransfer;
 
     iget-object v0, p0, Lcom/android/mms/freemessage/FileTransfer;->mCompleteResizeHandler:Landroid/os/Handler;
 
@@ -360,7 +338,6 @@
 
 .method static synthetic access$2000(Lcom/android/mms/freemessage/FileTransfer;)Landroid/app/AlertDialog;
     .locals 1
-    .param p0    # Lcom/android/mms/freemessage/FileTransfer;
 
     iget-object v0, p0, Lcom/android/mms/freemessage/FileTransfer;->mVideoResizeDialog:Landroid/app/AlertDialog;
 
@@ -369,8 +346,6 @@
 
 .method static synthetic access$2002(Lcom/android/mms/freemessage/FileTransfer;Landroid/app/AlertDialog;)Landroid/app/AlertDialog;
     .locals 0
-    .param p0    # Lcom/android/mms/freemessage/FileTransfer;
-    .param p1    # Landroid/app/AlertDialog;
 
     iput-object p1, p0, Lcom/android/mms/freemessage/FileTransfer;->mVideoResizeDialog:Landroid/app/AlertDialog;
 
@@ -379,8 +354,6 @@
 
 .method static synthetic access$400(Lcom/android/mms/freemessage/FileTransfer;Landroid/net/Uri;)Landroid/net/Uri;
     .locals 1
-    .param p0    # Lcom/android/mms/freemessage/FileTransfer;
-    .param p1    # Landroid/net/Uri;
 
     invoke-direct {p0, p1}, Lcom/android/mms/freemessage/FileTransfer;->createAndWriteContacts(Landroid/net/Uri;)Landroid/net/Uri;
 
@@ -391,7 +364,6 @@
 
 .method static synthetic access$500(Lcom/android/mms/freemessage/FileTransfer;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/mms/freemessage/FileTransfer;
 
     iget-object v0, p0, Lcom/android/mms/freemessage/FileTransfer;->mFiles:Ljava/util/ArrayList;
 
@@ -400,8 +372,6 @@
 
 .method static synthetic access$502(Lcom/android/mms/freemessage/FileTransfer;Ljava/util/ArrayList;)Ljava/util/ArrayList;
     .locals 0
-    .param p0    # Lcom/android/mms/freemessage/FileTransfer;
-    .param p1    # Ljava/util/ArrayList;
 
     iput-object p1, p0, Lcom/android/mms/freemessage/FileTransfer;->mFiles:Ljava/util/ArrayList;
 
@@ -434,7 +404,6 @@
 
 .method static synthetic access$900(Lcom/android/mms/freemessage/FileTransfer;)V
     .locals 0
-    .param p0    # Lcom/android/mms/freemessage/FileTransfer;
 
     invoke-direct {p0}, Lcom/android/mms/freemessage/FileTransfer;->validateFiles()V
 
@@ -485,7 +454,6 @@
 
 .method private createAndWriteContacts(Landroid/net/Uri;)Landroid/net/Uri;
     .locals 19
-    .param p1    # Landroid/net/Uri;
 
     const/4 v15, 0x0
 
@@ -908,9 +876,6 @@
 
 .method private createShareviaObj(Ljava/lang/String;Ljava/lang/String;I)Lcom/samsung/app/share/via/external/ShareviaObj;
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     const/4 v0, 0x3
 
@@ -959,7 +924,6 @@
 
 .method private static deleteDirectory(Ljava/io/File;)Z
     .locals 3
-    .param p0    # Ljava/io/File;
 
     invoke-virtual {p0}, Ljava/io/File;->exists()Z
 
@@ -1020,7 +984,6 @@
 
 .method public static exifOrientationToDegrees(I)F
     .locals 1
-    .param p0    # I
 
     const/4 v0, 0x6
 
@@ -1057,7 +1020,6 @@
 
 .method public static getExtension(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     const-string v1, "."
 
@@ -1090,7 +1052,6 @@
 
 .method public static getNextAvailableName(Ljava/lang/String;)Ljava/lang/String;
     .locals 13
-    .param p0    # Ljava/lang/String;
 
     const/4 v12, 0x1
 
@@ -1337,7 +1298,6 @@
 
 .method private getOutputFileDurationPossible(Ljava/lang/String;)I
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/mms/freemessage/FileTransfer;->mNativeAccess:Lcom/samsung/app/share/via/external/NativeAccess;
 
@@ -1373,8 +1333,6 @@
 
 .method public static getRotatedDegree(Landroid/net/Uri;Landroid/content/Context;)I
     .locals 11
-    .param p0    # Landroid/net/Uri;
-    .param p1    # Landroid/content/Context;
 
     const/4 v1, 0x1
 
@@ -1518,7 +1476,6 @@
 
 .method private getVideoFileDurationTime(Ljava/lang/String;)I
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     const/4 v6, -0x1
 
@@ -1732,7 +1689,6 @@
 
 .method private getVideoFileSize(Ljava/lang/String;)I
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -1759,7 +1715,6 @@
 
 .method private static isMediaUri(Landroid/net/Uri;)Z
     .locals 3
-    .param p0    # Landroid/net/Uri;
 
     invoke-virtual {p0}, Landroid/net/Uri;->getAuthority()Ljava/lang/String;
 
@@ -1800,7 +1755,6 @@
 
 .method private isResizableImageFormat(Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Lcom/android/mms/util/MessageMimeTypeMap;->getSingleton()Lcom/android/mms/util/MessageMimeTypeMap;
 
@@ -1862,7 +1816,6 @@
 
 .method private isResizableVideoFormat(Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Lcom/android/mms/util/MessageMimeTypeMap;->getSingleton()Lcom/android/mms/util/MessageMimeTypeMap;
 
@@ -1924,7 +1877,6 @@
 
 .method private nativeAccessForShareviaObj(Lcom/samsung/app/share/via/external/ShareviaObj;)V
     .locals 1
-    .param p1    # Lcom/samsung/app/share/via/external/ShareviaObj;
 
     new-instance v0, Lcom/android/mms/freemessage/FileTransfer$4;
 
@@ -2781,8 +2733,6 @@
 
 .method private videoResizingProgress(Ljava/lang/String;Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -2882,8 +2832,6 @@
 
 .method private writeContactToStream(Ljava/io/OutputStream;Landroid/net/Uri;)Z
     .locals 10
-    .param p1    # Ljava/io/OutputStream;
-    .param p2    # Landroid/net/Uri;
 
     const/4 v7, 0x0
 
@@ -3119,7 +3067,6 @@
 
 .method public createDirIfNotExists(Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x1
 
@@ -3153,7 +3100,6 @@
 
 .method public hasParticipantsInChat(Ljava/util/ArrayList;[Ljava/lang/String;)Z
     .locals 5
-    .param p2    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3223,7 +3169,6 @@
 
 .method public postFileSelector(Landroid/content/Intent;)V
     .locals 16
-    .param p1    # Landroid/content/Intent;
 
     invoke-virtual/range {p1 .. p1}, Landroid/content/Intent;->getExtras()Landroid/os/Bundle;
 
@@ -3443,7 +3388,6 @@
 
 .method public removeActualParticipants(Ljava/util/ArrayList;[Ljava/lang/String;)Ljava/util/ArrayList;
     .locals 6
-    .param p2    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3497,7 +3441,6 @@
 
 .method public setComposer(Lcom/android/mms/ui/ComposeMessageFragment;)V
     .locals 0
-    .param p1    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     iput-object p1, p0, Lcom/android/mms/freemessage/FileTransfer;->mComposer:Lcom/android/mms/ui/ComposeMessageFragment;
 
@@ -3506,7 +3449,6 @@
 
 .method public setHandler(Landroid/os/Handler;)V
     .locals 0
-    .param p1    # Landroid/os/Handler;
 
     sput-object p1, Lcom/android/mms/freemessage/FileTransfer;->mHandler:Landroid/os/Handler;
 

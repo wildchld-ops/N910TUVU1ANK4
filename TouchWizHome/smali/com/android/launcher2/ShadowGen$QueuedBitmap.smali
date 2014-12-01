@@ -46,7 +46,6 @@
 
 .method synthetic constructor <init>(Lcom/android/launcher2/ShadowGen$1;)V
     .locals 0
-    .param p1    # Lcom/android/launcher2/ShadowGen$1;
 
     invoke-direct {p0}, Lcom/android/launcher2/ShadowGen$QueuedBitmap;-><init>()V
 
@@ -65,7 +64,6 @@
 
 .method setBitmap(Landroid/graphics/Bitmap;)V
     .locals 0
-    .param p1    # Landroid/graphics/Bitmap;
 
     iput-object p1, p0, Lcom/android/launcher2/ShadowGen$QueuedBitmap;->bitmap:Landroid/graphics/Bitmap;
 

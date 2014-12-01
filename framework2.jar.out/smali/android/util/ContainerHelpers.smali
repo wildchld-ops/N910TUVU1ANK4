@@ -48,9 +48,6 @@
 
 .method static binarySearch([III)I
     .locals 5
-    .param p0    # [I
-    .param p1    # I
-    .param p2    # I
 
     const/4 v1, 0x0
 
@@ -87,9 +84,6 @@
 
 .method static binarySearch([JIJ)I
     .locals 6
-    .param p0    # [J
-    .param p1    # I
-    .param p2    # J
 
     const/4 v1, 0x0
 

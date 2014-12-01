@@ -77,10 +77,6 @@
 
 .method public constructor <init>(Landroid/database/Cursor;[Ljava/lang/String;Landroid/database/Cursor;[Ljava/lang/String;)V
     .locals 3
-    .param p1    # Landroid/database/Cursor;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # Landroid/database/Cursor;
-    .param p4    # [Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -172,8 +168,6 @@
 
 .method private buildColumnIndiciesArray(Landroid/database/Cursor;[Ljava/lang/String;)[I
     .locals 3
-    .param p1    # Landroid/database/Cursor;
-    .param p2    # [Ljava/lang/String;
 
     array-length v2, p2
 
@@ -204,7 +198,6 @@
 
 .method private static varargs compareStrings([Ljava/lang/String;)I
     .locals 6
-    .param p0    # [Ljava/lang/String;
 
     const/4 v3, 0x1
 
@@ -347,10 +340,6 @@
 
 .method private static populateValues([Ljava/lang/String;Landroid/database/Cursor;[II)V
     .locals 3
-    .param p0    # [Ljava/lang/String;
-    .param p1    # Landroid/database/Cursor;
-    .param p2    # [I
-    .param p3    # I
 
     sget-boolean v1, Landroid/database/CursorJoiner;->$assertionsDisabled:Z
 

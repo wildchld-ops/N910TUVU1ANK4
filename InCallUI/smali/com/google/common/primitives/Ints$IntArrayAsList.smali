@@ -44,7 +44,6 @@
 # direct methods
 .method constructor <init>([I)V
     .locals 2
-    .param p1    # [I
 
     const/4 v0, 0x0
 
@@ -57,9 +56,6 @@
 
 .method constructor <init>([III)V
     .locals 0
-    .param p1    # [I
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0}, Ljava/util/AbstractList;-><init>()V
 
@@ -76,7 +72,6 @@
 # virtual methods
 .method public contains(Ljava/lang/Object;)Z
     .locals 4
-    .param p1    # Ljava/lang/Object;
 
     instance-of v0, p1, Ljava/lang/Integer;
 
@@ -116,7 +111,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 8
-    .param p1    # Ljava/lang/Object;
 
     const/4 v3, 0x1
 
@@ -194,7 +188,6 @@
 
 .method public get(I)Ljava/lang/Integer;
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/google/common/primitives/Ints$IntArrayAsList;->size()I
 
@@ -219,7 +212,6 @@
 
 .method public bridge synthetic get(I)Ljava/lang/Object;
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/google/common/primitives/Ints$IntArrayAsList;->get(I)Ljava/lang/Integer;
 
@@ -262,7 +254,6 @@
 
 .method public indexOf(Ljava/lang/Object;)I
     .locals 5
-    .param p1    # Ljava/lang/Object;
 
     instance-of v1, p1, Ljava/lang/Integer;
 
@@ -310,7 +301,6 @@
 
 .method public lastIndexOf(Ljava/lang/Object;)I
     .locals 5
-    .param p1    # Ljava/lang/Object;
 
     instance-of v1, p1, Ljava/lang/Integer;
 
@@ -350,8 +340,6 @@
 
 .method public set(ILjava/lang/Integer;)Ljava/lang/Integer;
     .locals 4
-    .param p1    # I
-    .param p2    # Ljava/lang/Integer;
 
     invoke-virtual {p0}, Lcom/google/common/primitives/Ints$IntArrayAsList;->size()I
 
@@ -394,8 +382,6 @@
 
 .method public bridge synthetic set(ILjava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/Object;
 
     check-cast p2, Ljava/lang/Integer;
 
@@ -420,8 +406,6 @@
 
 .method public subList(II)Ljava/util/List;
     .locals 5
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II)",

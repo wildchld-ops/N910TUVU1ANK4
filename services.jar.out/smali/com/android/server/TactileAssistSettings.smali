@@ -168,7 +168,6 @@
 
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 8
-    .param p1    # Landroid/content/Context;
 
     const/4 v7, 0x1
 
@@ -346,7 +345,6 @@
 
 .method static synthetic access$100(I)Ljava/lang/String;
     .locals 1
-    .param p0    # I
 
     invoke-static {p0}, Lcom/android/server/TactileAssistSettings;->getActuatorTypeString(I)Ljava/lang/String;
 
@@ -357,11 +355,6 @@
 
 .method static synthetic access$200(Lcom/android/server/TactileAssistSettings;IIII)V
     .locals 0
-    .param p0    # Lcom/android/server/TactileAssistSettings;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/server/TactileAssistSettings;->storeLevels(IIII)V
 
@@ -370,7 +363,6 @@
 
 .method private static getActuatorTypeString(I)Ljava/lang/String;
     .locals 3
-    .param p0    # I
 
     const-string v0, ""
 
@@ -420,7 +412,6 @@
 
 .method public static getInstance(Landroid/content/Context;)Lcom/android/server/TactileAssistSettings;
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     sget-object v0, Lcom/android/server/TactileAssistSettings;->instance:Lcom/android/server/TactileAssistSettings;
 
@@ -464,9 +455,6 @@
 
 .method public static getSpinUpTime(III)I
     .locals 13
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
 
     const/16 v0, 0x9
 
@@ -600,11 +588,6 @@
 
 .method public static interpolatedValue(DDIDI)D
     .locals 6
-    .param p0    # D
-    .param p2    # D
-    .param p4    # I
-    .param p5    # D
-    .param p7    # I
 
     const-wide v4, -0x40af9db22d0e5604L
 
@@ -701,8 +684,6 @@
 
 .method private static isHapticThemePackage(Landroid/content/pm/PackageManager;Ljava/lang/String;)Z
     .locals 7
-    .param p0    # Landroid/content/pm/PackageManager;
-    .param p1    # Ljava/lang/String;
 
     const/16 v4, 0x8
 
@@ -791,7 +772,6 @@
 
 .method public static isInEESMode([I)Z
     .locals 4
-    .param p0    # [I
 
     const/16 v3, 0xd
 
@@ -827,7 +807,6 @@
 
 .method private static storeAppList(Landroid/content/SharedPreferences$Editor;)V
     .locals 13
-    .param p0    # Landroid/content/SharedPreferences$Editor;
 
     const/4 v12, 0x4
 
@@ -958,10 +937,6 @@
 
 .method private declared-synchronized storeLevels(IIII)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     monitor-enter p0
 
@@ -1171,10 +1146,6 @@
 
 .method public declared-synchronized storeTactileAssistSettings(IIIZ)V
     .locals 11
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Z
 
     monitor-enter p0
 

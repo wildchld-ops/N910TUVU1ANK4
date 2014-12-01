@@ -1,11 +1,14 @@
 .class Lcom/android/internal/policy/impl/GlobalActions$33;
-.super Lcom/android/internal/policy/impl/GlobalActions$SinglePressAction;
+.super Ljava/lang/Object;
 .source "GlobalActions.java"
+
+# interfaces
+.implements Landroid/content/ServiceConnection;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/internal/policy/impl/GlobalActions;->createDialog()Lcom/android/internal/policy/impl/GlobalActions$GlobalActionsDialog;
+    value = Lcom/android/internal/policy/impl/GlobalActions;->takeScreenshot()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -14,96 +17,131 @@
 .end annotation
 
 
-# static fields
-.field private static mFlashlight:Z
-
-
 # instance fields
 .field final synthetic this$0:Lcom/android/internal/policy/impl/GlobalActions;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/internal/policy/impl/GlobalActions;II)V
+.method constructor <init>(Lcom/android/internal/policy/impl/GlobalActions;)V
     .locals 0
 
     iput-object p1, p0, Lcom/android/internal/policy/impl/GlobalActions$33;->this$0:Lcom/android/internal/policy/impl/GlobalActions;
 
-    invoke-direct {p0, p2, p3}, Lcom/android/internal/policy/impl/GlobalActions$SinglePressAction;-><init>(II)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public onPress()V
-    .locals 5
+.method public onServiceConnected(Landroid/content/ComponentName;Landroid/os/IBinder;)V
+    .locals 8
 
-    sget-boolean v0, Lcom/android/internal/policy/impl/GlobalActions$33;->mFlashlight:Z
+    iget-object v4, p0, Lcom/android/internal/policy/impl/GlobalActions$33;->this$0:Lcom/android/internal/policy/impl/GlobalActions;
 
-    if-nez v0, :cond_0
+    iget-object v5, v4, Lcom/android/internal/policy/impl/GlobalActions;->mScreenshotLock:Ljava/lang/Object;
 
-    const/4 v2, 0x1
+    monitor-enter v5
+
+    :try_start_0
+    iget-object v4, p0, Lcom/android/internal/policy/impl/GlobalActions$33;->this$0:Lcom/android/internal/policy/impl/GlobalActions;
+
+    iget-object v4, v4, Lcom/android/internal/policy/impl/GlobalActions;->mScreenshotConnection:Landroid/content/ServiceConnection;
+
+    if-eq v4, p0, :cond_0
+
+    monitor-exit v5
+
+    :goto_0
+    return-void
+
+    :cond_0
+    new-instance v1, Landroid/os/Messenger;
+
+    invoke-direct {v1, p2}, Landroid/os/Messenger;-><init>(Landroid/os/IBinder;)V
+
+    const/4 v4, 0x0
+
+    const/4 v6, 0x1
+
+    invoke-static {v4, v6}, Landroid/os/Message;->obtain(Landroid/os/Handler;I)Landroid/os/Message;
+
+    move-result-object v2
+
+    move-object v3, p0
+
+    new-instance v0, Lcom/android/internal/policy/impl/GlobalActions$33$1;
+
+    iget-object v4, p0, Lcom/android/internal/policy/impl/GlobalActions$33;->this$0:Lcom/android/internal/policy/impl/GlobalActions;
+
+    # getter for: Lcom/android/internal/policy/impl/GlobalActions;->mHandler:Landroid/os/Handler;
+    invoke-static {v4}, Lcom/android/internal/policy/impl/GlobalActions;->access$300(Lcom/android/internal/policy/impl/GlobalActions;)Landroid/os/Handler;
+
+    move-result-object v4
+
+    invoke-virtual {v4}, Landroid/os/Handler;->getLooper()Landroid/os/Looper;
+
+    move-result-object v4
+
+    invoke-direct {v0, p0, v4, v3}, Lcom/android/internal/policy/impl/GlobalActions$33$1;-><init>(Lcom/android/internal/policy/impl/GlobalActions$33;Landroid/os/Looper;Landroid/content/ServiceConnection;)V
+
+    new-instance v4, Landroid/os/Messenger;
+
+    invoke-direct {v4, v0}, Landroid/os/Messenger;-><init>(Landroid/os/Handler;)V
+
+    iput-object v4, v2, Landroid/os/Message;->replyTo:Landroid/os/Messenger;
+
+    const/4 v4, 0x0
+
+    iput v4, v2, Landroid/os/Message;->arg2:I
+
+    iput v4, v2, Landroid/os/Message;->arg1:I
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    const-wide/16 v6, 0x5dc
+
+    :try_start_1
+    invoke-static {v6, v7}, Ljava/lang/Thread;->sleep(J)V
+    :try_end_1
+    .catch Ljava/lang/InterruptedException; {:try_start_1 .. :try_end_1} :catch_0
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    :goto_1
+    :try_start_2
+    invoke-virtual {v1, v2}, Landroid/os/Messenger;->send(Landroid/os/Message;)V
+    :try_end_2
+    .catch Landroid/os/RemoteException; {:try_start_2 .. :try_end_2} :catch_1
+    .catchall {:try_start_2 .. :try_end_2} :catchall_0
+
+    :goto_2
+    :try_start_3
+    monitor-exit v5
 
     goto :goto_0
 
-    :cond_0
-    const/4 v2, 0x0
+    :catchall_0
+    move-exception v4
 
-    :goto_0
-    sput-boolean v2, Lcom/android/internal/policy/impl/GlobalActions$33;->mFlashlight:Z
+    monitor-exit v5
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
-    invoke-static {v2}, Lcom/sec/android/hardware/SecHardwareInterface;->setTorchLight(I)V
+    throw v4
+
+    :catch_0
+    move-exception v4
+
+    goto :goto_1
+
+    :catch_1
+    move-exception v4
+
+    goto :goto_2
+.end method
+
+.method public onServiceDisconnected(Landroid/content/ComponentName;)V
+    .locals 0
 
     return-void
-.end method
-
-.method public showBeforeProvisioning()Z
-    .locals 1
-
-    const/4 v0, 0x1
-
-    return v0
-.end method
-
-.method public showConditional()Z
-    .locals 4
-
-    const/4 v0, 0x0
-
-    const/4 v1, 0x1
-
-    iget-object v2, p0, Lcom/android/internal/policy/impl/GlobalActions$33;->this$0:Lcom/android/internal/policy/impl/GlobalActions;
-
-    # getter for: Lcom/android/internal/policy/impl/GlobalActions;->mContext:Landroid/content/Context;
-    invoke-static {v2}, Lcom/android/internal/policy/impl/GlobalActions;->access$400(Lcom/android/internal/policy/impl/GlobalActions;)Landroid/content/Context;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
-
-    move-result-object v2
-
-    const-string v3, "flashlight"
-
-    invoke-static {v2, v3, v1}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
-
-    move-result v2
-
-    if-ne v2, v0, :cond_0
-
-    :goto_0
-    return v0
-
-    :cond_0
-    move v0, v1
-
-    goto :goto_0
-.end method
-
-.method public showDuringKeyguard()Z
-    .locals 1
-
-    const/4 v0, 0x1
-
-    return v0
 .end method

@@ -101,9 +101,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/database/Cursor;I)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/database/Cursor;
-    .param p3    # I
 
     const/4 v1, 0x0
 
@@ -204,7 +201,6 @@
 
 .method private formatContactListString(Lcom/android/mms/data/ContactList;)Ljava/lang/String;
     .locals 5
-    .param p1    # Lcom/android/mms/data/ContactList;
 
     const v4, 0x7f0c013b
 
@@ -363,8 +359,6 @@
 
 .method private static getKey(Ljava/lang/String;J)J
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # J
 
     const-string v0, "mms"
 
@@ -382,7 +376,6 @@
 
 .method private isCursorValid(Landroid/database/Cursor;)Z
     .locals 1
-    .param p1    # Landroid/database/Cursor;
 
     invoke-interface {p1}, Landroid/database/Cursor;->isClosed()Z
 
@@ -416,8 +409,6 @@
 
 .method private updateAvatarView(Lcom/android/mms/data/ContactList;J)V
     .locals 11
-    .param p1    # Lcom/android/mms/data/ContactList;
-    .param p2    # J
 
     const/4 v10, 0x1
 
@@ -687,9 +678,6 @@
 # virtual methods
 .method public bindView(Landroid/view/View;Landroid/content/Context;Landroid/database/Cursor;)V
     .locals 23
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/database/Cursor;
 
     move-object/from16 v16, p1
 
@@ -1609,9 +1597,6 @@
 
 .method public getCachedMessageItem(Ljava/lang/String;JLandroid/database/Cursor;)Lcom/android/mms/ui/MessageItem;
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
-    .param p4    # Landroid/database/Cursor;
 
     iget-object v1, p0, Lcom/android/mms/ui/ReservationMessageListAdapter;->mMessageItemCache:Ljava/util/LinkedHashMap;
 
@@ -1741,8 +1726,6 @@
 
 .method public isCheckedMessageId(JLjava/lang/String;)Z
     .locals 2
-    .param p1    # J
-    .param p3    # Ljava/lang/String;
 
     const-string v0, "sms"
 
@@ -1802,9 +1785,6 @@
 
 .method public newView(Landroid/content/Context;Landroid/database/Cursor;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/database/Cursor;
-    .param p3    # Landroid/view/ViewGroup;
 
     iget-object v0, p0, Lcom/android/mms/ui/ReservationMessageListAdapter;->mFactory:Landroid/view/LayoutInflater;
 
@@ -2242,7 +2222,6 @@
 
 .method public setAnimation(Lcom/android/mms/animation/MsgListAnimation;)V
     .locals 0
-    .param p1    # Lcom/android/mms/animation/MsgListAnimation;
 
     iput-object p1, p0, Lcom/android/mms/ui/ReservationMessageListAdapter;->mMsgListAnimation:Lcom/android/mms/animation/MsgListAnimation;
 
@@ -2251,7 +2230,6 @@
 
 .method public setAnimationEnable(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/ReservationMessageListAdapter;->mIsAnimationEnable:Z
 
@@ -2260,9 +2238,6 @@
 
 .method public setCheckedItem(JLjava/lang/String;Z)Z
     .locals 2
-    .param p1    # J
-    .param p3    # Ljava/lang/String;
-    .param p4    # Z
 
     const-string v0, "sms"
 
@@ -2369,7 +2344,6 @@
 
 .method public setMessageListMode(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-boolean v0, p0, Lcom/android/mms/ui/ReservationMessageListAdapter;->mIsMsgMultiMode:Z
 
@@ -2388,7 +2362,6 @@
 
 .method public setOnContentChangedListener(Lcom/android/mms/ui/ReservationMessageListAdapter$OnContentChangedListener;)V
     .locals 0
-    .param p1    # Lcom/android/mms/ui/ReservationMessageListAdapter$OnContentChangedListener;
 
     iput-object p1, p0, Lcom/android/mms/ui/ReservationMessageListAdapter;->mOnContentChangedListener:Lcom/android/mms/ui/ReservationMessageListAdapter$OnContentChangedListener;
 

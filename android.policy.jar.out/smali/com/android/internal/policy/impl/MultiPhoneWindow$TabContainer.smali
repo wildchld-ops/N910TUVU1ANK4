@@ -37,7 +37,6 @@
 # direct methods
 .method private constructor <init>(Lcom/android/internal/policy/impl/MultiPhoneWindow;Lcom/android/internal/policy/impl/MultiPhoneWindow$CustomTabLayout;)V
     .locals 4
-    .param p2    # Lcom/android/internal/policy/impl/MultiPhoneWindow$CustomTabLayout;
 
     iput-object p1, p0, Lcom/android/internal/policy/impl/MultiPhoneWindow$TabContainer;->this$0:Lcom/android/internal/policy/impl/MultiPhoneWindow;
 
@@ -96,9 +95,6 @@
 
 .method synthetic constructor <init>(Lcom/android/internal/policy/impl/MultiPhoneWindow;Lcom/android/internal/policy/impl/MultiPhoneWindow$CustomTabLayout;Lcom/android/internal/policy/impl/MultiPhoneWindow$1;)V
     .locals 0
-    .param p1    # Lcom/android/internal/policy/impl/MultiPhoneWindow;
-    .param p2    # Lcom/android/internal/policy/impl/MultiPhoneWindow$CustomTabLayout;
-    .param p3    # Lcom/android/internal/policy/impl/MultiPhoneWindow$1;
 
     invoke-direct {p0, p1, p2}, Lcom/android/internal/policy/impl/MultiPhoneWindow$TabContainer;-><init>(Lcom/android/internal/policy/impl/MultiPhoneWindow;Lcom/android/internal/policy/impl/MultiPhoneWindow$CustomTabLayout;)V
 
@@ -107,7 +103,6 @@
 
 .method static synthetic access$6300(Lcom/android/internal/policy/impl/MultiPhoneWindow$TabContainer;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/MultiPhoneWindow$TabContainer;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/MultiPhoneWindow$TabContainer;->mTabFocusedView:Landroid/view/View;
 
@@ -116,8 +111,6 @@
 
 .method static synthetic access$6302(Lcom/android/internal/policy/impl/MultiPhoneWindow$TabContainer;Landroid/view/View;)Landroid/view/View;
     .locals 0
-    .param p0    # Lcom/android/internal/policy/impl/MultiPhoneWindow$TabContainer;
-    .param p1    # Landroid/view/View;
 
     iput-object p1, p0, Lcom/android/internal/policy/impl/MultiPhoneWindow$TabContainer;->mTabFocusedView:Landroid/view/View;
 
@@ -126,7 +119,6 @@
 
 .method static synthetic access$6400(Lcom/android/internal/policy/impl/MultiPhoneWindow$TabContainer;)Landroid/view/GestureDetector;
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/MultiPhoneWindow$TabContainer;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/MultiPhoneWindow$TabContainer;->mTabGestureDetector:Landroid/view/GestureDetector;
 
@@ -135,7 +127,6 @@
 
 .method private getMinimizedDrawable(Landroid/content/ComponentName;)Landroid/graphics/drawable/Drawable;
     .locals 2
-    .param p1    # Landroid/content/ComponentName;
 
     iget-object v1, p0, Lcom/android/internal/policy/impl/MultiPhoneWindow$TabContainer;->this$0:Lcom/android/internal/policy/impl/MultiPhoneWindow;
 
@@ -510,7 +501,6 @@
 
 .method public setCurrentTabByTag(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "TAG"
 
@@ -543,7 +533,6 @@
 
 .method public setVisibility(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/MultiPhoneWindow$TabContainer;->this$0:Lcom/android/internal/policy/impl/MultiPhoneWindow;
 

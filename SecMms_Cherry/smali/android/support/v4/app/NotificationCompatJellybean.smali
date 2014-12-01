@@ -10,22 +10,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/app/Notification;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Landroid/widget/RemoteViews;ILandroid/app/PendingIntent;Landroid/app/PendingIntent;Landroid/graphics/Bitmap;IIZZILjava/lang/CharSequence;)V
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/app/Notification;
-    .param p3    # Ljava/lang/CharSequence;
-    .param p4    # Ljava/lang/CharSequence;
-    .param p5    # Ljava/lang/CharSequence;
-    .param p6    # Landroid/widget/RemoteViews;
-    .param p7    # I
-    .param p8    # Landroid/app/PendingIntent;
-    .param p9    # Landroid/app/PendingIntent;
-    .param p10    # Landroid/graphics/Bitmap;
-    .param p11    # I
-    .param p12    # I
-    .param p13    # Z
-    .param p14    # Z
-    .param p15    # I
-    .param p16    # Ljava/lang/CharSequence;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -232,9 +216,6 @@
 # virtual methods
 .method public addAction(ILjava/lang/CharSequence;Landroid/app/PendingIntent;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/CharSequence;
-    .param p3    # Landroid/app/PendingIntent;
 
     iget-object v0, p0, Landroid/support/v4/app/NotificationCompatJellybean;->b:Landroid/app/Notification$Builder;
 
@@ -245,12 +226,6 @@
 
 .method public addBigPictureStyle(Ljava/lang/CharSequence;ZLjava/lang/CharSequence;Landroid/graphics/Bitmap;Landroid/graphics/Bitmap;Z)V
     .locals 3
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Z
-    .param p3    # Ljava/lang/CharSequence;
-    .param p4    # Landroid/graphics/Bitmap;
-    .param p5    # Landroid/graphics/Bitmap;
-    .param p6    # Z
 
     new-instance v1, Landroid/app/Notification$BigPictureStyle;
 
@@ -281,10 +256,6 @@
 
 .method public addBigTextStyle(Ljava/lang/CharSequence;ZLjava/lang/CharSequence;Ljava/lang/CharSequence;)V
     .locals 3
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Z
-    .param p3    # Ljava/lang/CharSequence;
-    .param p4    # Ljava/lang/CharSequence;
 
     new-instance v1, Landroid/app/Notification$BigTextStyle;
 
@@ -310,9 +281,6 @@
 
 .method public addInboxStyle(Ljava/lang/CharSequence;ZLjava/lang/CharSequence;Ljava/util/ArrayList;)V
     .locals 5
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Z
-    .param p3    # Ljava/lang/CharSequence;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

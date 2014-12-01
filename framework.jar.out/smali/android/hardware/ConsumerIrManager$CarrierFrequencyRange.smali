@@ -25,8 +25,6 @@
 # direct methods
 .method public constructor <init>(Landroid/hardware/ConsumerIrManager;II)V
     .locals 0
-    .param p2    # I
-    .param p3    # I
 
     iput-object p1, p0, Landroid/hardware/ConsumerIrManager$CarrierFrequencyRange;->this$0:Landroid/hardware/ConsumerIrManager;
 

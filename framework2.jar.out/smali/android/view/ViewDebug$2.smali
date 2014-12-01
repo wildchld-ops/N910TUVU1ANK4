@@ -44,7 +44,6 @@
 
 .method private forceLayout(Landroid/view/View;)V
     .locals 4
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p1}, Landroid/view/View;->forceLayout()V
 
@@ -83,7 +82,6 @@
 # virtual methods
 .method public bridge synthetic post([Ljava/lang/Object;)V
     .locals 0
-    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [Ljava/lang/Void;
 
@@ -94,7 +92,6 @@
 
 .method public varargs post([Ljava/lang/Void;)V
     .locals 0
-    .param p1    # [Ljava/lang/Void;
 
     return-void
 .end method
@@ -123,7 +120,6 @@
 
 .method public bridge synthetic run([Ljava/lang/Object;)V
     .locals 0
-    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [Ljava/lang/Void;
 
@@ -134,7 +130,6 @@
 
 .method public varargs run([Ljava/lang/Void;)V
     .locals 3
-    .param p1    # [Ljava/lang/Void;
 
     iget-object v0, p0, Landroid/view/ViewDebug$2;->val$view:Landroid/view/View;
 

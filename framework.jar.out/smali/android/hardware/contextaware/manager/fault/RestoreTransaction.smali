@@ -10,7 +10,6 @@
 # direct methods
 .method protected constructor <init>(Landroid/hardware/contextaware/manager/ContextManager;)V
     .locals 0
-    .param p1    # Landroid/hardware/contextaware/manager/ContextManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

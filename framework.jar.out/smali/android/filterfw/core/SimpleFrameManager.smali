@@ -14,7 +14,6 @@
 
 .method private createNewFrame(Landroid/filterfw/core/FrameFormat;)Landroid/filterfw/core/Frame;
     .locals 5
-    .param p1    # Landroid/filterfw/core/FrameFormat;
 
     const/4 v1, 0x0
 
@@ -114,9 +113,6 @@
 # virtual methods
 .method public newBoundFrame(Landroid/filterfw/core/FrameFormat;IJ)Landroid/filterfw/core/Frame;
     .locals 7
-    .param p1    # Landroid/filterfw/core/FrameFormat;
-    .param p2    # I
-    .param p3    # J
 
     const/4 v6, 0x0
 
@@ -197,7 +193,6 @@
 
 .method public newFrame(Landroid/filterfw/core/FrameFormat;)Landroid/filterfw/core/Frame;
     .locals 1
-    .param p1    # Landroid/filterfw/core/FrameFormat;
 
     invoke-direct {p0, p1}, Landroid/filterfw/core/SimpleFrameManager;->createNewFrame(Landroid/filterfw/core/FrameFormat;)Landroid/filterfw/core/Frame;
 
@@ -208,7 +203,6 @@
 
 .method public releaseFrame(Landroid/filterfw/core/Frame;)Landroid/filterfw/core/Frame;
     .locals 3
-    .param p1    # Landroid/filterfw/core/Frame;
 
     invoke-virtual {p1}, Landroid/filterfw/core/Frame;->decRefCount()I
 
@@ -243,7 +237,6 @@
 
 .method public retainFrame(Landroid/filterfw/core/Frame;)Landroid/filterfw/core/Frame;
     .locals 0
-    .param p1    # Landroid/filterfw/core/Frame;
 
     invoke-virtual {p1}, Landroid/filterfw/core/Frame;->incRefCount()I
 

@@ -40,7 +40,7 @@
 
     iget-object v0, p0, Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode$1;->this$0:Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;
 
-    invoke-virtual {v0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->finish()V
+    invoke-virtual {v0}, Lcom/android/phone/callsettings/EditRejectCallWithMsgIconMode;->finish()V
 
     return-void
 .end method

@@ -35,8 +35,6 @@
 # direct methods
 .method public constructor <init>(Landroid/renderscript/RenderScript;I)V
     .locals 1
-    .param p1    # Landroid/renderscript/RenderScript;
-    .param p2    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -67,9 +65,6 @@
 # virtual methods
 .method public addIndexSetType(Landroid/renderscript/Element;ILandroid/renderscript/Mesh$Primitive;)Landroid/renderscript/Mesh$Builder;
     .locals 2
-    .param p1    # Landroid/renderscript/Element;
-    .param p2    # I
-    .param p3    # Landroid/renderscript/Mesh$Primitive;
 
     new-instance v0, Landroid/renderscript/Mesh$Builder$Entry;
 
@@ -94,7 +89,6 @@
 
 .method public addIndexSetType(Landroid/renderscript/Mesh$Primitive;)Landroid/renderscript/Mesh$Builder;
     .locals 2
-    .param p1    # Landroid/renderscript/Mesh$Primitive;
 
     const/4 v1, 0x0
 
@@ -121,8 +115,6 @@
 
 .method public addIndexSetType(Landroid/renderscript/Type;Landroid/renderscript/Mesh$Primitive;)Landroid/renderscript/Mesh$Builder;
     .locals 2
-    .param p1    # Landroid/renderscript/Type;
-    .param p2    # Landroid/renderscript/Mesh$Primitive;
 
     new-instance v0, Landroid/renderscript/Mesh$Builder$Entry;
 
@@ -149,8 +141,6 @@
 
 .method public addVertexType(Landroid/renderscript/Element;I)Landroid/renderscript/Mesh$Builder;
     .locals 3
-    .param p1    # Landroid/renderscript/Element;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;
@@ -221,7 +211,6 @@
 
 .method public addVertexType(Landroid/renderscript/Type;)Landroid/renderscript/Mesh$Builder;
     .locals 3
-    .param p1    # Landroid/renderscript/Type;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;
@@ -578,8 +567,6 @@
 
 .method newType(Landroid/renderscript/Element;I)Landroid/renderscript/Type;
     .locals 2
-    .param p1    # Landroid/renderscript/Element;
-    .param p2    # I
 
     new-instance v0, Landroid/renderscript/Type$Builder;
 

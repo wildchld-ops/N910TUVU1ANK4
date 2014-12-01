@@ -40,8 +40,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/Object;Landroid/content/ComponentName;I)V
     .locals 0
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TV;",

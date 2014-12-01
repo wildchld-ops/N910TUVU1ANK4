@@ -309,9 +309,9 @@
 
     const v2, 0x7f040077
 
-    invoke-virtual {p0, v2}, Landroid/preference/PreferenceActivity;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v2}, Lcom/android/phone/PreferredNetworkDetailView;->addPreferencesFromResource(I)V
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getActionBar()Landroid/app/ActionBar;
+    invoke-virtual {p0}, Lcom/android/phone/PreferredNetworkDetailView;->getActionBar()Landroid/app/ActionBar;
 
     move-result-object v0
 
@@ -365,7 +365,7 @@
     :goto_0
     const-string v2, "network_index"
 
-    invoke-virtual {p0, v2}, Landroid/preference/PreferenceActivity;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v2}, Lcom/android/phone/PreferredNetworkDetailView;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v2
 
@@ -373,7 +373,7 @@
 
     const-string v2, "network_name"
 
-    invoke-virtual {p0, v2}, Landroid/preference/PreferenceActivity;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v2}, Lcom/android/phone/PreferredNetworkDetailView;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v2
 
@@ -381,7 +381,7 @@
 
     const-string v2, "network_id"
 
-    invoke-virtual {p0, v2}, Landroid/preference/PreferenceActivity;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v2}, Lcom/android/phone/PreferredNetworkDetailView;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v2
 
@@ -389,7 +389,7 @@
 
     const-string v2, "gsm_act"
 
-    invoke-virtual {p0, v2}, Landroid/preference/PreferenceActivity;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v2}, Lcom/android/phone/PreferredNetworkDetailView;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v2
 
@@ -399,7 +399,7 @@
 
     const-string v2, "gsm_compact_act"
 
-    invoke-virtual {p0, v2}, Landroid/preference/PreferenceActivity;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v2}, Lcom/android/phone/PreferredNetworkDetailView;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v2
 
@@ -409,7 +409,7 @@
 
     const-string v2, "utran_act"
 
-    invoke-virtual {p0, v2}, Landroid/preference/PreferenceActivity;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v2}, Lcom/android/phone/PreferredNetworkDetailView;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v2
 
@@ -419,7 +419,7 @@
 
     const-string v2, "eutran_act"
 
-    invoke-virtual {p0, v2}, Landroid/preference/PreferenceActivity;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v2}, Lcom/android/phone/PreferredNetworkDetailView;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v2
 
@@ -457,7 +457,7 @@
 
     invoke-direct {v3, p0}, Lcom/android/phone/PreferredNetworkDetailView$5;-><init>(Lcom/android/phone/PreferredNetworkDetailView;)V
 
-    invoke-virtual {v2, v3}, Landroid/preference/Preference;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
+    invoke-virtual {v2, v3}, Landroid/preference/CheckBoxPreference;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
 
     iget-object v2, p0, Lcom/android/phone/PreferredNetworkDetailView;->mGsmCompactAct:Landroid/preference/CheckBoxPreference;
 
@@ -465,7 +465,7 @@
 
     invoke-direct {v3, p0}, Lcom/android/phone/PreferredNetworkDetailView$6;-><init>(Lcom/android/phone/PreferredNetworkDetailView;)V
 
-    invoke-virtual {v2, v3}, Landroid/preference/Preference;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
+    invoke-virtual {v2, v3}, Landroid/preference/CheckBoxPreference;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
 
     iget-object v2, p0, Lcom/android/phone/PreferredNetworkDetailView;->mUtranAct:Landroid/preference/CheckBoxPreference;
 
@@ -473,7 +473,7 @@
 
     invoke-direct {v3, p0}, Lcom/android/phone/PreferredNetworkDetailView$7;-><init>(Lcom/android/phone/PreferredNetworkDetailView;)V
 
-    invoke-virtual {v2, v3}, Landroid/preference/Preference;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
+    invoke-virtual {v2, v3}, Landroid/preference/CheckBoxPreference;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
 
     iget-object v2, p0, Lcom/android/phone/PreferredNetworkDetailView;->mEUtranAct:Landroid/preference/CheckBoxPreference;
 
@@ -481,9 +481,9 @@
 
     invoke-direct {v3, p0}, Lcom/android/phone/PreferredNetworkDetailView$8;-><init>(Lcom/android/phone/PreferredNetworkDetailView;)V
 
-    invoke-virtual {v2, v3}, Landroid/preference/Preference;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
+    invoke-virtual {v2, v3}, Landroid/preference/CheckBoxPreference;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/phone/PreferredNetworkDetailView;->getIntent()Landroid/content/Intent;
 
     move-result-object v1
 
@@ -612,7 +612,7 @@
 
     iget-object v2, p0, Lcom/android/phone/PreferredNetworkDetailView;->mGsmAct:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v2, v5}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+    invoke-virtual {v2, v5}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     :goto_1
     const-string v2, "act_gsm_compact"
@@ -625,7 +625,7 @@
 
     iget-object v2, p0, Lcom/android/phone/PreferredNetworkDetailView;->mGsmCompactAct:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v2, v5}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+    invoke-virtual {v2, v5}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     :goto_2
     const-string v2, "act_utran"
@@ -638,7 +638,7 @@
 
     iget-object v2, p0, Lcom/android/phone/PreferredNetworkDetailView;->mUtranAct:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v2, v5}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+    invoke-virtual {v2, v5}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     :goto_3
     const-string v2, "act_utran"
@@ -653,7 +653,7 @@
 
     iget-object v2, p0, Lcom/android/phone/PreferredNetworkDetailView;->mEUtranAct:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v2, v5}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+    invoke-virtual {v2, v5}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     :goto_4
     const-string v2, "network_mode_list_lte"
@@ -666,7 +666,7 @@
 
     iget-object v2, p0, Lcom/android/phone/PreferredNetworkDetailView;->mEUtranAct:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v2, v6}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v2, v6}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     :cond_4
     return-void
@@ -683,28 +683,28 @@
     :cond_6
     iget-object v2, p0, Lcom/android/phone/PreferredNetworkDetailView;->mGsmAct:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v2, v6}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+    invoke-virtual {v2, v6}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     goto :goto_1
 
     :cond_7
     iget-object v2, p0, Lcom/android/phone/PreferredNetworkDetailView;->mGsmCompactAct:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v2, v6}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+    invoke-virtual {v2, v6}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     goto :goto_2
 
     :cond_8
     iget-object v2, p0, Lcom/android/phone/PreferredNetworkDetailView;->mUtranAct:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v2, v6}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+    invoke-virtual {v2, v6}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     goto :goto_3
 
     :cond_9
     iget-object v2, p0, Lcom/android/phone/PreferredNetworkDetailView;->mEUtranAct:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v2, v6}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+    invoke-virtual {v2, v6}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     goto :goto_4
 .end method
@@ -715,7 +715,7 @@
 
     const v9, 0x7f090085
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/PreferredNetworkDetailView;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v2
 
@@ -755,7 +755,7 @@
 
     const/4 v6, 0x1
 
-    invoke-virtual {v5, v6}, Landroid/view/View;->setFocusable(Z)V
+    invoke-virtual {v5, v6}, Landroid/widget/EditText;->setFocusable(Z)V
 
     packed-switch p1, :pswitch_data_0
 
@@ -775,7 +775,7 @@
 
     move-result-object v6
 
-    invoke-virtual {v5, v6}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {v5, v6}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
     const v5, 0x7f0906ec
 
@@ -800,7 +800,7 @@
 
     move-result-object v6
 
-    invoke-virtual {v5, v6}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {v5, v6}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
     const v5, 0x7f0906ed
 
@@ -825,13 +825,13 @@
 
     move-result-object v6
 
-    invoke-virtual {v5, v6}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {v5, v6}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
     iget-object v5, p0, Lcom/android/phone/PreferredNetworkDetailView;->editDialog:Landroid/widget/EditText;
 
     const/4 v6, 0x2
 
-    invoke-virtual {v5, v6}, Landroid/widget/TextView;->setInputType(I)V
+    invoke-virtual {v5, v6}, Landroid/widget/EditText;->setInputType(I)V
 
     iget-object v5, p0, Lcom/android/phone/PreferredNetworkDetailView;->mHandler:Landroid/os/Handler;
 
@@ -875,7 +875,7 @@
 
     const/4 v2, 0x0
 
-    invoke-super {p0, p1}, Landroid/app/Activity;->onCreateOptionsMenu(Landroid/view/Menu;)Z
+    invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onCreateOptionsMenu(Landroid/view/Menu;)Z
 
     iget-boolean v0, p0, Lcom/android/phone/PreferredNetworkDetailView;->isNewItem:Z
 
@@ -883,7 +883,7 @@
 
     const v0, 0x7f090458
 
-    invoke-virtual {p0, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lcom/android/phone/PreferredNetworkDetailView;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -900,7 +900,7 @@
 
     const v1, 0x7f090151
 
-    invoke-virtual {p0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v1}, Lcom/android/phone/PreferredNetworkDetailView;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -916,7 +916,7 @@
 
     const v1, 0x7f0906fa
 
-    invoke-virtual {p0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v1}, Lcom/android/phone/PreferredNetworkDetailView;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -963,7 +963,7 @@
     return v9
 
     :sswitch_0
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/PreferredNetworkDetailView;->finish()V
 
     goto :goto_0
 
@@ -980,7 +980,7 @@
 
     iget-object v0, p0, Lcom/android/phone/PreferredNetworkDetailView;->mGsmAct:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v0}, Landroid/preference/TwoStatePreference;->isChecked()Z
+    invoke-virtual {v0}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
     move-result v0
 
@@ -991,7 +991,7 @@
     :goto_1
     iget-object v0, p0, Lcom/android/phone/PreferredNetworkDetailView;->mGsmCompactAct:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v0}, Landroid/preference/TwoStatePreference;->isChecked()Z
+    invoke-virtual {v0}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
     move-result v0
 
@@ -1002,7 +1002,7 @@
     :goto_2
     iget-object v0, p0, Lcom/android/phone/PreferredNetworkDetailView;->mUtranAct:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v0}, Landroid/preference/TwoStatePreference;->isChecked()Z
+    invoke-virtual {v0}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
     move-result v0
 
@@ -1015,7 +1015,7 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/android/phone/PreferredNetworkDetailView;->savePreferredNetworkInfo(ILjava/lang/String;Ljava/lang/String;IIII)V
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/PreferredNetworkDetailView;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -1027,7 +1027,7 @@
 
     invoke-virtual {v0}, Landroid/widget/Toast;->show()V
 
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/PreferredNetworkDetailView;->finish()V
 
     goto :goto_0
 
@@ -1044,7 +1044,7 @@
     :cond_2
     iget-object v0, p0, Lcom/android/phone/PreferredNetworkDetailView;->mEUtranAct:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v0}, Landroid/preference/TwoStatePreference;->isChecked()Z
+    invoke-virtual {v0}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
     move-result v0
 
@@ -1114,7 +1114,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/PreferredNetworkDetailView;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -1127,7 +1127,7 @@
     invoke-virtual {v0}, Landroid/widget/Toast;->show()V
 
     :goto_4
-    invoke-super {p0, p1}, Landroid/app/Activity;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
+    invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
 
     move-result v9
 
@@ -1157,9 +1157,9 @@
     if-le v8, v0, :cond_6
 
     :cond_5
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/PreferredNetworkDetailView;->finish()V
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/PreferredNetworkDetailView;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -1184,7 +1184,7 @@
 
     iget-object v0, p0, Lcom/android/phone/PreferredNetworkDetailView;->mGsmAct:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v0}, Landroid/preference/TwoStatePreference;->isChecked()Z
+    invoke-virtual {v0}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
     move-result v0
 
@@ -1195,7 +1195,7 @@
     :goto_5
     iget-object v0, p0, Lcom/android/phone/PreferredNetworkDetailView;->mGsmCompactAct:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v0}, Landroid/preference/TwoStatePreference;->isChecked()Z
+    invoke-virtual {v0}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
     move-result v0
 
@@ -1206,7 +1206,7 @@
     :goto_6
     iget-object v0, p0, Lcom/android/phone/PreferredNetworkDetailView;->mUtranAct:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v0}, Landroid/preference/TwoStatePreference;->isChecked()Z
+    invoke-virtual {v0}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
     move-result v0
 
@@ -1256,7 +1256,7 @@
 
     iget-object v0, p0, Lcom/android/phone/PreferredNetworkDetailView;->mGsmAct:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v0}, Landroid/preference/TwoStatePreference;->isChecked()Z
+    invoke-virtual {v0}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
     move-result v0
 
@@ -1267,7 +1267,7 @@
     :goto_8
     iget-object v0, p0, Lcom/android/phone/PreferredNetworkDetailView;->mGsmCompactAct:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v0}, Landroid/preference/TwoStatePreference;->isChecked()Z
+    invoke-virtual {v0}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
     move-result v0
 
@@ -1278,7 +1278,7 @@
     :goto_9
     iget-object v0, p0, Lcom/android/phone/PreferredNetworkDetailView;->mUtranAct:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v0}, Landroid/preference/TwoStatePreference;->isChecked()Z
+    invoke-virtual {v0}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
     move-result v0
 
@@ -1293,9 +1293,9 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/android/phone/PreferredNetworkDetailView;->savePreferredNetworkInfo(ILjava/lang/String;Ljava/lang/String;IIII)V
 
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/PreferredNetworkDetailView;->finish()V
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/PreferredNetworkDetailView;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -1322,7 +1322,7 @@
     :cond_a
     iget-object v0, p0, Lcom/android/phone/PreferredNetworkDetailView;->mEUtranAct:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v0}, Landroid/preference/TwoStatePreference;->isChecked()Z
+    invoke-virtual {v0}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
     move-result v0
 
@@ -1350,7 +1350,7 @@
     :cond_e
     iget-object v0, p0, Lcom/android/phone/PreferredNetworkDetailView;->mEUtranAct:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v0}, Landroid/preference/TwoStatePreference;->isChecked()Z
+    invoke-virtual {v0}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
     move-result v0
 
@@ -1372,7 +1372,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/PreferredNetworkDetailView;->finish()V
 
     goto/16 :goto_0
 
@@ -1388,7 +1388,7 @@
 .method protected onPause()V
     .locals 0
 
-    invoke-super {p0}, Landroid/app/Activity;->onPause()V
+    invoke-super {p0}, Landroid/preference/PreferenceActivity;->onPause()V
 
     return-void
 .end method

@@ -208,8 +208,6 @@
 
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;Lcom/sec/android/app/camera/subview/SubViewManager;)V
     .locals 2
-    .param p1    # Lcom/sec/android/app/camera/Camera;
-    .param p2    # Lcom/sec/android/app/camera/subview/SubViewManager;
 
     invoke-direct {p0, p1, p2}, Lcom/sec/android/app/camera/subview/SubViewBase;-><init>(Lcom/sec/android/app/camera/Camera;Lcom/sec/android/app/camera/subview/SubViewManager;)V
 
@@ -257,7 +255,6 @@
 
 .method static synthetic access$002(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/sec/android/app/camera/subview/SubViewTutorialRecordingMode;->mPlayAnimation:Z
 
@@ -266,7 +263,6 @@
 
 .method static synthetic access$100(Lcom/sec/android/app/camera/subview/SubViewTutorialRecordingMode;)V
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/subview/SubViewTutorialRecordingMode;
 
     invoke-direct {p0}, Lcom/sec/android/app/camera/subview/SubViewTutorialRecordingMode;->translateFocus()V
 

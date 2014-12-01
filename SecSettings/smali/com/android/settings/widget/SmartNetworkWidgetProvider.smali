@@ -44,7 +44,6 @@
 
 .method private showGuideDialog(Landroid/content/Context;)V
     .locals 8
-    .param p1    # Landroid/content/Context;
 
     const/4 v7, 0x0
 
@@ -136,7 +135,6 @@
 # virtual methods
 .method public disableGuideDialog(Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     invoke-static {p1}, Landroid/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -159,8 +157,6 @@
 
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     const/4 v4, -0x1
 
@@ -247,9 +243,6 @@
 
 .method public onUpdate(Landroid/content/Context;Landroid/appwidget/AppWidgetManager;[I)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/appwidget/AppWidgetManager;
-    .param p3    # [I
 
     iput-object p1, p0, Lcom/android/settings/widget/SmartNetworkWidgetProvider;->context:Landroid/content/Context;
 
@@ -270,7 +263,6 @@
 
 .method public shouldShowGuideDialog(Landroid/content/Context;)Z
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     const/4 v1, 0x1
 
@@ -407,7 +399,6 @@
 
 .method updateToggleButton(Landroid/widget/RemoteViews;)V
     .locals 7
-    .param p1    # Landroid/widget/RemoteViews;
 
     const v6, 0x7f0b0576
 
@@ -458,8 +449,6 @@
 
 .method updateView(Landroid/content/Context;I)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     new-instance v1, Landroid/widget/RemoteViews;
 

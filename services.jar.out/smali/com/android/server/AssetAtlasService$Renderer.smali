@@ -41,7 +41,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/AssetAtlasService;Ljava/util/ArrayList;I)V
     .locals 0
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -65,8 +64,6 @@
 
 .method private acquireCanvas(II)Landroid/graphics/Canvas;
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     new-instance v0, Landroid/graphics/Canvas;
 
@@ -84,7 +81,6 @@
 
 .method private releaseCanvas(Landroid/graphics/Canvas;)V
     .locals 1
-    .param p1    # Landroid/graphics/Canvas;
 
     iget v0, p0, Lcom/android/server/AssetAtlasService$Renderer;->mNativeBitmap:I
 
@@ -96,9 +92,6 @@
 
 .method private renderAtlas(Landroid/view/GraphicBuffer;Landroid/graphics/Atlas;I)Z
     .locals 26
-    .param p1    # Landroid/view/GraphicBuffer;
-    .param p2    # Landroid/graphics/Atlas;
-    .param p3    # I
 
     new-instance v15, Landroid/graphics/Paint;
 

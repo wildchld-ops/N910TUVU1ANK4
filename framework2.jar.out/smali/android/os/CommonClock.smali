@@ -170,7 +170,6 @@
 
 .method static synthetic access$000(Landroid/os/CommonClock;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Landroid/os/CommonClock;
 
     iget-object v0, p0, Landroid/os/CommonClock;->mListenerLock:Ljava/lang/Object;
 
@@ -179,7 +178,6 @@
 
 .method static synthetic access$100(Landroid/os/CommonClock;)Landroid/os/CommonClock$OnServerDiedListener;
     .locals 1
-    .param p0    # Landroid/os/CommonClock;
 
     iget-object v0, p0, Landroid/os/CommonClock;->mServerDiedListener:Landroid/os/CommonClock$OnServerDiedListener;
 
@@ -188,7 +186,6 @@
 
 .method static synthetic access$200(Landroid/os/CommonClock;)Landroid/os/CommonClock$OnTimelineChangedListener;
     .locals 1
-    .param p0    # Landroid/os/CommonClock;
 
     iget-object v0, p0, Landroid/os/CommonClock;->mTimelineChangedListener:Landroid/os/CommonClock$OnTimelineChangedListener;
 
@@ -585,7 +582,6 @@
 
 .method public setServerDiedListener(Landroid/os/CommonClock$OnServerDiedListener;)V
     .locals 2
-    .param p1    # Landroid/os/CommonClock$OnServerDiedListener;
 
     iget-object v1, p0, Landroid/os/CommonClock;->mListenerLock:Ljava/lang/Object;
 
@@ -610,7 +606,6 @@
 
 .method public setTimelineChangedListener(Landroid/os/CommonClock$OnTimelineChangedListener;)V
     .locals 2
-    .param p1    # Landroid/os/CommonClock$OnTimelineChangedListener;
 
     iget-object v1, p0, Landroid/os/CommonClock;->mListenerLock:Ljava/lang/Object;
 

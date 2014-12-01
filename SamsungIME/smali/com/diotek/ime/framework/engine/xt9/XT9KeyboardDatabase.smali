@@ -77,10 +77,6 @@
 
 .method public constructor <init>(IILcom/diotek/ime/framework/view/Keyboard;Z)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Lcom/diotek/ime/framework/view/Keyboard;
-    .param p4    # Z
 
     const/4 v1, 0x0
 
@@ -200,7 +196,6 @@
 # virtual methods
 .method makeKeys(Lcom/diotek/ime/framework/view/Keyboard;)Ljava/util/List;
     .locals 39
-    .param p1    # Lcom/diotek/ime/framework/view/Keyboard;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

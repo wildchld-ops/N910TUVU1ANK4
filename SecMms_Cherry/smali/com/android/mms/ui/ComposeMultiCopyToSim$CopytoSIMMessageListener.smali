@@ -24,7 +24,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/mms/ui/ComposeMultiCopyToSim;Landroid/net/Uri;)V
     .locals 0
-    .param p2    # Landroid/net/Uri;
 
     iput-object p1, p0, Lcom/android/mms/ui/ComposeMultiCopyToSim$CopytoSIMMessageListener;->this$0:Lcom/android/mms/ui/ComposeMultiCopyToSim;
 
@@ -37,8 +36,6 @@
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 26
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     move-object/from16 v0, p0
 

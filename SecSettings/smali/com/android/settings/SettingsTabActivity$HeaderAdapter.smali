@@ -80,8 +80,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Ljava/util/List;Lcom/android/settings/accounts/AuthenticatorHelper;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p3    # Lcom/android/settings/accounts/AuthenticatorHelper;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -414,7 +412,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/SettingsTabActivity$HeaderAdapter;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/settings/SettingsTabActivity$HeaderAdapter;
 
     iget-object v0, p0, Lcom/android/settings/SettingsTabActivity$HeaderAdapter;->mContext:Landroid/content/Context;
 
@@ -423,7 +420,6 @@
 
 .method static getHeaderType(Landroid/preference/PreferenceActivity$Header;)I
     .locals 7
-    .param p0    # Landroid/preference/PreferenceActivity$Header;
 
     const-wide/32 v5, 0x7f0b0751
 
@@ -910,7 +906,6 @@
 
 .method public getItemViewType(I)I
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/settings/SettingsTabActivity$HeaderAdapter;->getItem(I)Ljava/lang/Object;
 
@@ -927,9 +922,6 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 21
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     invoke-virtual/range {p0 .. p1}, Lcom/android/settings/SettingsTabActivity$HeaderAdapter;->getItem(I)Ljava/lang/Object;
 
@@ -2815,7 +2807,6 @@
 
 .method public isEnabled(I)Z
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -3020,7 +3011,6 @@
 
 .method public setEnablersForGuide(Lcom/android/settings/SettingsTabActivity;)V
     .locals 2
-    .param p1    # Lcom/android/settings/SettingsTabActivity;
 
     iget-object v0, p0, Lcom/android/settings/SettingsTabActivity$HeaderAdapter;->mWifiEnabler:Lcom/android/settings/wifi/WifiEnabler;
 
@@ -3033,7 +3023,6 @@
 
 .method public setSoftapEnabled(Z)V
     .locals 3
-    .param p1    # Z
 
     const/4 v2, 0x1
 

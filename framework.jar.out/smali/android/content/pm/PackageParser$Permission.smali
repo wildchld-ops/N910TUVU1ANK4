@@ -34,7 +34,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/pm/PackageParser$Package;)V
     .locals 1
-    .param p1    # Landroid/content/pm/PackageParser$Package;
 
     invoke-direct {p0, p1}, Landroid/content/pm/PackageParser$Component;-><init>(Landroid/content/pm/PackageParser$Package;)V
 
@@ -49,8 +48,6 @@
 
 .method public constructor <init>(Landroid/content/pm/PackageParser$Package;Landroid/content/pm/PermissionInfo;)V
     .locals 0
-    .param p1    # Landroid/content/pm/PackageParser$Package;
-    .param p2    # Landroid/content/pm/PermissionInfo;
 
     invoke-direct {p0, p1}, Landroid/content/pm/PackageParser$Component;-><init>(Landroid/content/pm/PackageParser$Package;)V
 
@@ -63,7 +60,6 @@
 # virtual methods
 .method public setPackageName(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-super {p0, p1}, Landroid/content/pm/PackageParser$Component;->setPackageName(Ljava/lang/String;)V
 

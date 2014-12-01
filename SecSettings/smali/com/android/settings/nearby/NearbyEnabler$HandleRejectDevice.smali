@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Lcom/android/settings/nearby/NearbyEnabler;Lcom/android/settings/nearby/NearbyEnabler$1;)V
     .locals 0
-    .param p1    # Lcom/android/settings/nearby/NearbyEnabler;
-    .param p2    # Lcom/android/settings/nearby/NearbyEnabler$1;
 
     invoke-direct {p0, p1}, Lcom/android/settings/nearby/NearbyEnabler$HandleRejectDevice;-><init>(Lcom/android/settings/nearby/NearbyEnabler;)V
 
@@ -46,8 +44,6 @@
 # virtual methods
 .method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
     .locals 6
-    .param p1    # Landroid/preference/Preference;
-    .param p2    # Ljava/lang/Object;
 
     const/4 v1, 0x0
 

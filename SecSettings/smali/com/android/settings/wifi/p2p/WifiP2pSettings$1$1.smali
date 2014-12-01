@@ -36,7 +36,6 @@
 # virtual methods
 .method public onGroupInfoAvailable(Landroid/net/wifi/p2p/WifiP2pGroup;)V
     .locals 0
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pGroup;
 
     # setter for: Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mCreatedGroupInfo:Landroid/net/wifi/p2p/WifiP2pGroup;
     invoke-static {p1}, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->access$802(Landroid/net/wifi/p2p/WifiP2pGroup;)Landroid/net/wifi/p2p/WifiP2pGroup;

@@ -719,10 +719,6 @@
 
 .method constructor <init>(Landroid/content/Context;Lcom/android/server/pm/PackageManagerService;Ljava/lang/Object;Ljava/lang/Object;)V
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/server/pm/PackageManagerService;
-    .param p3    # Ljava/lang/Object;
-    .param p4    # Ljava/lang/Object;
 
     invoke-static {}, Landroid/os/Environment;->getDataDirectory()Ljava/io/File;
 
@@ -755,12 +751,6 @@
 
 .method private constructor <init>(Landroid/content/Context;Lcom/android/server/pm/PackageManagerService;Ljava/lang/Object;Ljava/lang/Object;Ljava/io/File;Ljava/io/File;)V
     .locals 11
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/server/pm/PackageManagerService;
-    .param p3    # Ljava/lang/Object;
-    .param p4    # Ljava/lang/Object;
-    .param p5    # Ljava/io/File;
-    .param p6    # Ljava/io/File;
 
     invoke-direct {p0}, Landroid/os/IPersonaManager$Stub;-><init>()V
 
@@ -1606,8 +1596,6 @@
 
 .method constructor <init>(Ljava/io/File;Ljava/io/File;)V
     .locals 7
-    .param p1    # Ljava/io/File;
-    .param p2    # Ljava/io/File;
 
     const/4 v1, 0x0
 
@@ -1634,7 +1622,6 @@
 
 .method static synthetic access$100(Ljava/lang/String;)I
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/android/server/pm/PersonaManagerService;->checkCallerPermissionFor(Ljava/lang/String;)I
 
@@ -1645,7 +1632,6 @@
 
 .method static synthetic access$1000(Lcom/android/server/pm/PersonaManagerService;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Lcom/android/server/pm/PersonaManagerService;
 
     iget-object v0, p0, Lcom/android/server/pm/PersonaManagerService;->mPackagesLock:Ljava/lang/Object;
 
@@ -1654,8 +1640,6 @@
 
 .method static synthetic access$1100(Lcom/android/server/pm/PersonaManagerService;Landroid/content/pm/PersonaInfo;)V
     .locals 0
-    .param p0    # Lcom/android/server/pm/PersonaManagerService;
-    .param p1    # Landroid/content/pm/PersonaInfo;
 
     invoke-direct {p0, p1}, Lcom/android/server/pm/PersonaManagerService;->writeUserLocked(Landroid/content/pm/PersonaInfo;)V
 
@@ -1664,8 +1648,6 @@
 
 .method static synthetic access$1200(Lcom/android/server/pm/PersonaManagerService;I)V
     .locals 0
-    .param p0    # Lcom/android/server/pm/PersonaManagerService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/pm/PersonaManagerService;->notifyNeedRestartMsg(I)V
 
@@ -1674,7 +1656,6 @@
 
 .method static synthetic access$1300(Lcom/android/server/pm/PersonaManagerService;)Ljava/util/HashMap;
     .locals 1
-    .param p0    # Lcom/android/server/pm/PersonaManagerService;
 
     iget-object v0, p0, Lcom/android/server/pm/PersonaManagerService;->mTimerMap:Ljava/util/HashMap;
 
@@ -1683,9 +1664,6 @@
 
 .method static synthetic access$1400(Lcom/android/server/pm/PersonaManagerService;IZ)V
     .locals 0
-    .param p0    # Lcom/android/server/pm/PersonaManagerService;
-    .param p1    # I
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/pm/PersonaManagerService;->scheduleTimer(IZ)V
 
@@ -1694,8 +1672,6 @@
 
 .method static synthetic access$1500(Lcom/android/server/pm/PersonaManagerService;I)Z
     .locals 1
-    .param p0    # Lcom/android/server/pm/PersonaManagerService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/pm/PersonaManagerService;->isKeyGuardEnabledFromMDM(I)Z
 
@@ -1706,8 +1682,6 @@
 
 .method static synthetic access$1600(Lcom/android/server/pm/PersonaManagerService;I)V
     .locals 0
-    .param p0    # Lcom/android/server/pm/PersonaManagerService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/pm/PersonaManagerService;->killTimer(I)V
 
@@ -1716,9 +1690,6 @@
 
 .method static synthetic access$1700(Lcom/android/server/pm/PersonaManagerService;IZ)V
     .locals 0
-    .param p0    # Lcom/android/server/pm/PersonaManagerService;
-    .param p1    # I
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/pm/PersonaManagerService;->killTimer(IZ)V
 
@@ -1727,8 +1698,6 @@
 
 .method static synthetic access$1800(Lcom/android/server/pm/PersonaManagerService;I)V
     .locals 0
-    .param p0    # Lcom/android/server/pm/PersonaManagerService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/pm/PersonaManagerService;->changeStateAndSwitch(I)V
 
@@ -1737,7 +1706,6 @@
 
 .method static synthetic access$1900(Lcom/android/server/pm/PersonaManagerService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/pm/PersonaManagerService;
 
     iget-boolean v0, p0, Lcom/android/server/pm/PersonaManagerService;->isScreenOffInOwner:Z
 
@@ -1746,8 +1714,6 @@
 
 .method static synthetic access$1902(Lcom/android/server/pm/PersonaManagerService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/pm/PersonaManagerService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/pm/PersonaManagerService;->isScreenOffInOwner:Z
 
@@ -1756,7 +1722,6 @@
 
 .method static synthetic access$200(Lcom/android/server/pm/PersonaManagerService;)Lcom/android/server/pm/PersonaManagerService$PackageInstallObserver;
     .locals 1
-    .param p0    # Lcom/android/server/pm/PersonaManagerService;
 
     iget-object v0, p0, Lcom/android/server/pm/PersonaManagerService;->mPackageInstallObserver:Lcom/android/server/pm/PersonaManagerService$PackageInstallObserver;
 
@@ -1765,8 +1730,6 @@
 
 .method static synthetic access$2002(Lcom/android/server/pm/PersonaManagerService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/pm/PersonaManagerService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/pm/PersonaManagerService;->mScreenOff:Z
 
@@ -1775,9 +1738,6 @@
 
 .method static synthetic access$2100(Lcom/android/server/pm/PersonaManagerService;II)V
     .locals 0
-    .param p0    # Lcom/android/server/pm/PersonaManagerService;
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/pm/PersonaManagerService;->killTimer(II)V
 
@@ -1786,8 +1746,6 @@
 
 .method static synthetic access$2200(Lcom/android/server/pm/PersonaManagerService;I)V
     .locals 0
-    .param p0    # Lcom/android/server/pm/PersonaManagerService;
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1801,7 +1759,6 @@
 
 .method static synthetic access$2300(Lcom/android/server/pm/PersonaManagerService;)Landroid/os/RemoteCallbackList;
     .locals 1
-    .param p0    # Lcom/android/server/pm/PersonaManagerService;
 
     iget-object v0, p0, Lcom/android/server/pm/PersonaManagerService;->mISystemPersonaObserver:Landroid/os/RemoteCallbackList;
 
@@ -1810,7 +1767,6 @@
 
 .method static synthetic access$2400(Lcom/android/server/pm/PersonaManagerService;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/server/pm/PersonaManagerService;
 
     iget-object v0, p0, Lcom/android/server/pm/PersonaManagerService;->mPartialsForPrune:Ljava/util/ArrayList;
 
@@ -1819,8 +1775,6 @@
 
 .method static synthetic access$2500(Lcom/android/server/pm/PersonaManagerService;I)V
     .locals 0
-    .param p0    # Lcom/android/server/pm/PersonaManagerService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/pm/PersonaManagerService;->removePersonaHelper(I)V
 
@@ -1829,7 +1783,6 @@
 
 .method static synthetic access$2600(Lcom/android/server/pm/PersonaManagerService;)Landroid/service/tima/ITimaService;
     .locals 1
-    .param p0    # Lcom/android/server/pm/PersonaManagerService;
 
     invoke-direct {p0}, Lcom/android/server/pm/PersonaManagerService;->getTimaService()Landroid/service/tima/ITimaService;
 
@@ -1856,7 +1809,6 @@
 
 .method static synthetic access$2802(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/server/pm/PersonaManagerService;->timaVersion20:Z
 
@@ -1865,7 +1817,6 @@
 
 .method static synthetic access$2900(Lcom/android/server/pm/PersonaManagerService;)Lcom/sec/knox/container/util/KnoxFileHandler;
     .locals 1
-    .param p0    # Lcom/android/server/pm/PersonaManagerService;
 
     iget-object v0, p0, Lcom/android/server/pm/PersonaManagerService;->mFSHandler:Lcom/sec/knox/container/util/KnoxFileHandler;
 
@@ -1882,8 +1833,6 @@
 
 .method static synthetic access$302(Lcom/android/server/pm/PersonaManagerService;I)I
     .locals 0
-    .param p0    # Lcom/android/server/pm/PersonaManagerService;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/pm/PersonaManagerService;->installResult:I
 
@@ -1892,7 +1841,6 @@
 
 .method static synthetic access$3100(Lcom/android/server/pm/PersonaManagerService;)Ljava/util/List;
     .locals 1
-    .param p0    # Lcom/android/server/pm/PersonaManagerService;
 
     iget-object v0, p0, Lcom/android/server/pm/PersonaManagerService;->mTypeList:Ljava/util/List;
 
@@ -1901,8 +1849,6 @@
 
 .method static synthetic access$3102(Lcom/android/server/pm/PersonaManagerService;Ljava/util/List;)Ljava/util/List;
     .locals 0
-    .param p0    # Lcom/android/server/pm/PersonaManagerService;
-    .param p1    # Ljava/util/List;
 
     iput-object p1, p0, Lcom/android/server/pm/PersonaManagerService;->mTypeList:Ljava/util/List;
 
@@ -1911,7 +1857,6 @@
 
 .method static synthetic access$3200(Lcom/android/server/pm/PersonaManagerService;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/server/pm/PersonaManagerService;
 
     invoke-direct {p0}, Lcom/android/server/pm/PersonaManagerService;->getDeviceFirmwareVersion()Ljava/lang/String;
 
@@ -1922,8 +1867,6 @@
 
 .method static synthetic access$3300(Lcom/android/server/pm/PersonaManagerService;I)V
     .locals 0
-    .param p0    # Lcom/android/server/pm/PersonaManagerService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/pm/PersonaManagerService;->migrateAndCleanupSharedPreferences(I)V
 
@@ -1932,8 +1875,6 @@
 
 .method static synthetic access$3400(Lcom/android/server/pm/PersonaManagerService;Landroid/content/pm/PersonaInfo;)V
     .locals 0
-    .param p0    # Lcom/android/server/pm/PersonaManagerService;
-    .param p1    # Landroid/content/pm/PersonaInfo;
 
     invoke-direct {p0, p1}, Lcom/android/server/pm/PersonaManagerService;->handleFOTAUpgrade(Landroid/content/pm/PersonaInfo;)V
 
@@ -1942,7 +1883,6 @@
 
 .method static synthetic access$3500(Lcom/android/server/pm/PersonaManagerService;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Lcom/android/server/pm/PersonaManagerService;
 
     iget-object v0, p0, Lcom/android/server/pm/PersonaManagerService;->mSdpLock:Ljava/lang/Object;
 
@@ -1951,9 +1891,6 @@
 
 .method static synthetic access$3600(Lcom/android/server/pm/PersonaManagerService;IZ)V
     .locals 0
-    .param p0    # Lcom/android/server/pm/PersonaManagerService;
-    .param p1    # I
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/pm/PersonaManagerService;->setSdpActive(IZ)V
 
@@ -1962,7 +1899,6 @@
 
 .method static synthetic access$3700(Lcom/android/server/pm/PersonaManagerService;)Landroid/os/dar/SdpManager;
     .locals 1
-    .param p0    # Lcom/android/server/pm/PersonaManagerService;
 
     invoke-direct {p0}, Lcom/android/server/pm/PersonaManagerService;->getSDPManager()Landroid/os/dar/SdpManager;
 
@@ -1973,8 +1909,6 @@
 
 .method static synthetic access$3800(Lcom/android/server/pm/PersonaManagerService;I)Z
     .locals 1
-    .param p0    # Lcom/android/server/pm/PersonaManagerService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/pm/PersonaManagerService;->isPwdChangeEnforced(I)Z
 
@@ -1985,8 +1919,6 @@
 
 .method static synthetic access$3900(Lcom/android/server/pm/PersonaManagerService;I)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/server/pm/PersonaManagerService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/pm/PersonaManagerService;->getPasswordResetTokenFromTima20(I)Ljava/lang/String;
 
@@ -1997,7 +1929,6 @@
 
 .method static synthetic access$400(Lcom/android/server/pm/PersonaManagerService;)Landroid/content/BroadcastReceiver;
     .locals 1
-    .param p0    # Lcom/android/server/pm/PersonaManagerService;
 
     iget-object v0, p0, Lcom/android/server/pm/PersonaManagerService;->mReceiver:Landroid/content/BroadcastReceiver;
 
@@ -2006,8 +1937,6 @@
 
 .method static synthetic access$4000(Lcom/android/server/pm/PersonaManagerService;I)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/server/pm/PersonaManagerService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/pm/PersonaManagerService;->getPasswordResetTokenFromTima(I)Ljava/lang/String;
 
@@ -2018,9 +1947,6 @@
 
 .method static synthetic access$4100(Lcom/android/server/pm/PersonaManagerService;IZ)I
     .locals 1
-    .param p0    # Lcom/android/server/pm/PersonaManagerService;
-    .param p1    # I
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/pm/PersonaManagerService;->startResetPersona(IZ)I
 
@@ -2031,9 +1957,6 @@
 
 .method static synthetic access$4200(Lcom/android/server/pm/PersonaManagerService;ILjava/lang/String;)I
     .locals 1
-    .param p0    # Lcom/android/server/pm/PersonaManagerService;
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/pm/PersonaManagerService;->installExistingPackageForPersona(ILjava/lang/String;)I
 
@@ -2044,8 +1967,6 @@
 
 .method static synthetic access$4300(Lcom/android/server/pm/PersonaManagerService;Landroid/content/pm/PersonaInfo;)V
     .locals 0
-    .param p0    # Lcom/android/server/pm/PersonaManagerService;
-    .param p1    # Landroid/content/pm/PersonaInfo;
 
     invoke-direct {p0, p1}, Lcom/android/server/pm/PersonaManagerService;->updateContainerOnlyApks(Landroid/content/pm/PersonaInfo;)V
 
@@ -2054,7 +1975,6 @@
 
 .method static synthetic access$4400(Lcom/android/server/pm/PersonaManagerService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/pm/PersonaManagerService;
 
     invoke-direct {p0}, Lcom/android/server/pm/PersonaManagerService;->isVoiceCapable()Z
 
@@ -2065,10 +1985,6 @@
 
 .method static synthetic access$4500(Lcom/android/server/pm/PersonaManagerService;Ljava/lang/String;Ljava/lang/String;I)V
     .locals 0
-    .param p0    # Lcom/android/server/pm/PersonaManagerService;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/server/pm/PersonaManagerService;->enableComponents(Ljava/lang/String;Ljava/lang/String;I)V
 
@@ -2077,7 +1993,6 @@
 
 .method static synthetic access$4600(Lcom/android/server/pm/PersonaManagerService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/pm/PersonaManagerService;
 
     invoke-direct {p0}, Lcom/android/server/pm/PersonaManagerService;->isSMSCapable()Z
 
@@ -2088,7 +2003,6 @@
 
 .method static synthetic access$4700(Lcom/android/server/pm/PersonaManagerService;)Landroid/util/SparseArray;
     .locals 1
-    .param p0    # Lcom/android/server/pm/PersonaManagerService;
 
     iget-object v0, p0, Lcom/android/server/pm/PersonaManagerService;->mPersonas:Landroid/util/SparseArray;
 
@@ -2097,8 +2011,6 @@
 
 .method static synthetic access$4800(Lcom/android/server/pm/PersonaManagerService;I)Z
     .locals 1
-    .param p0    # Lcom/android/server/pm/PersonaManagerService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/pm/PersonaManagerService;->cleanPartition(I)Z
 
@@ -2109,10 +2021,6 @@
 
 .method static synthetic access$4900(Lcom/android/server/pm/PersonaManagerService;Ljava/lang/String;II)V
     .locals 0
-    .param p0    # Lcom/android/server/pm/PersonaManagerService;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/server/pm/PersonaManagerService;->sendIntentForAdminLock(Ljava/lang/String;II)V
 
@@ -2121,7 +2029,6 @@
 
 .method static synthetic access$500(Lcom/android/server/pm/PersonaManagerService;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/server/pm/PersonaManagerService;
 
     iget-object v0, p0, Lcom/android/server/pm/PersonaManagerService;->mContext:Landroid/content/Context;
 
@@ -2130,9 +2037,6 @@
 
 .method static synthetic access$5000(Lcom/android/server/pm/PersonaManagerService;II)V
     .locals 0
-    .param p0    # Lcom/android/server/pm/PersonaManagerService;
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/pm/PersonaManagerService;->startActivityAdminLocked(II)V
 
@@ -2141,10 +2045,6 @@
 
 .method static synthetic access$5100(Lcom/android/server/pm/PersonaManagerService;IIJ)V
     .locals 0
-    .param p0    # Lcom/android/server/pm/PersonaManagerService;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/server/pm/PersonaManagerService;->scheduleTimer(IIJ)V
 
@@ -2153,8 +2053,6 @@
 
 .method static synthetic access$5200(Lcom/android/server/pm/PersonaManagerService;I)V
     .locals 0
-    .param p0    # Lcom/android/server/pm/PersonaManagerService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/pm/PersonaManagerService;->clearResetPasswordKey(I)V
 
@@ -2163,8 +2061,6 @@
 
 .method static synthetic access$5300(Lcom/android/server/pm/PersonaManagerService;I)V
     .locals 0
-    .param p0    # Lcom/android/server/pm/PersonaManagerService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/pm/PersonaManagerService;->killSdpTimer(I)V
 
@@ -2173,7 +2069,6 @@
 
 .method static synthetic access$5400(Lcom/android/server/pm/PersonaManagerService;)Ljava/util/Map;
     .locals 1
-    .param p0    # Lcom/android/server/pm/PersonaManagerService;
 
     iget-object v0, p0, Lcom/android/server/pm/PersonaManagerService;->mPasswordMap:Ljava/util/Map;
 
@@ -2182,8 +2077,6 @@
 
 .method static synthetic access$5500(Lcom/android/server/pm/PersonaManagerService;I)V
     .locals 0
-    .param p0    # Lcom/android/server/pm/PersonaManagerService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/pm/PersonaManagerService;->clearCachedPassword(I)V
 
@@ -2192,8 +2085,6 @@
 
 .method static synthetic access$5600(Lcom/android/server/pm/PersonaManagerService;I)V
     .locals 0
-    .param p0    # Lcom/android/server/pm/PersonaManagerService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/pm/PersonaManagerService;->handleRestart(I)V
 
@@ -2202,7 +2093,6 @@
 
 .method static synthetic access$5700(Lcom/android/server/pm/PersonaManagerService;)Lcom/android/server/pm/HandlerCacheManager;
     .locals 1
-    .param p0    # Lcom/android/server/pm/PersonaManagerService;
 
     iget-object v0, p0, Lcom/android/server/pm/PersonaManagerService;->mHandlerCacheManager:Lcom/android/server/pm/HandlerCacheManager;
 
@@ -2211,7 +2101,6 @@
 
 .method static synthetic access$5800(Lcom/android/server/pm/PersonaManagerService;)Lcom/android/server/pm/PersonaStateManagerService;
     .locals 1
-    .param p0    # Lcom/android/server/pm/PersonaManagerService;
 
     iget-object v0, p0, Lcom/android/server/pm/PersonaManagerService;->mPersonaStateManagerService:Lcom/android/server/pm/PersonaStateManagerService;
 
@@ -2220,8 +2109,6 @@
 
 .method static synthetic access$5900(Lcom/android/server/pm/PersonaManagerService;I)V
     .locals 0
-    .param p0    # Lcom/android/server/pm/PersonaManagerService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/pm/PersonaManagerService;->removeUserStateExternal(I)V
 
@@ -2230,9 +2117,6 @@
 
 .method static synthetic access$600(Lcom/android/server/pm/PersonaManagerService;Landroid/content/Context;I)V
     .locals 0
-    .param p0    # Lcom/android/server/pm/PersonaManagerService;
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/pm/PersonaManagerService;->setKnoxAppsComponentSetting(Landroid/content/Context;I)V
 
@@ -2241,7 +2125,6 @@
 
 .method static synthetic access$6000(Lcom/android/server/pm/PersonaManagerService;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Lcom/android/server/pm/PersonaManagerService;
 
     iget-object v0, p0, Lcom/android/server/pm/PersonaManagerService;->mInstallLock:Ljava/lang/Object;
 
@@ -2250,8 +2133,6 @@
 
 .method static synthetic access$6100(Lcom/android/server/pm/PersonaManagerService;I)V
     .locals 0
-    .param p0    # Lcom/android/server/pm/PersonaManagerService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/pm/PersonaManagerService;->removeUserStateLocked(I)V
 
@@ -2260,7 +2141,6 @@
 
 .method static synthetic access$6200(Lcom/android/server/pm/PersonaManagerService;)Lcom/android/server/pm/PackageManagerService;
     .locals 1
-    .param p0    # Lcom/android/server/pm/PersonaManagerService;
 
     iget-object v0, p0, Lcom/android/server/pm/PersonaManagerService;->mPm:Lcom/android/server/pm/PackageManagerService;
 
@@ -2269,7 +2149,6 @@
 
 .method static synthetic access$6300(Lcom/android/server/pm/PersonaManagerService;)Landroid/util/SparseBooleanArray;
     .locals 1
-    .param p0    # Lcom/android/server/pm/PersonaManagerService;
 
     iget-object v0, p0, Lcom/android/server/pm/PersonaManagerService;->mRemovingPersonaIds:Landroid/util/SparseBooleanArray;
 
@@ -2278,8 +2157,6 @@
 
 .method static synthetic access$6402(Lcom/android/server/pm/PersonaManagerService;Lcom/android/internal/policy/IKeyguardService;)Lcom/android/internal/policy/IKeyguardService;
     .locals 0
-    .param p0    # Lcom/android/server/pm/PersonaManagerService;
-    .param p1    # Lcom/android/internal/policy/IKeyguardService;
 
     iput-object p1, p0, Lcom/android/server/pm/PersonaManagerService;->mKeyguardService:Lcom/android/internal/policy/IKeyguardService;
 
@@ -2288,8 +2165,6 @@
 
 .method static synthetic access$6500(Lcom/android/server/pm/PersonaManagerService;I)V
     .locals 0
-    .param p0    # Lcom/android/server/pm/PersonaManagerService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/pm/PersonaManagerService;->triggerAppUninstallationonReset(I)V
 
@@ -2298,7 +2173,6 @@
 
 .method static synthetic access$700(Lcom/android/server/pm/PersonaManagerService;)Landroid/content/BroadcastReceiver;
     .locals 1
-    .param p0    # Lcom/android/server/pm/PersonaManagerService;
 
     iget-object v0, p0, Lcom/android/server/pm/PersonaManagerService;->mDPMStateChangeReceiver:Landroid/content/BroadcastReceiver;
 
@@ -2307,7 +2181,6 @@
 
 .method static synthetic access$800(Lcom/android/server/pm/PersonaManagerService;)Lcom/android/server/pm/PersonaManagerService$PersonaHandler;
     .locals 1
-    .param p0    # Lcom/android/server/pm/PersonaManagerService;
 
     iget-object v0, p0, Lcom/android/server/pm/PersonaManagerService;->mPersonaHandler:Lcom/android/server/pm/PersonaManagerService$PersonaHandler;
 
@@ -2316,8 +2189,6 @@
 
 .method static synthetic access$902(Lcom/android/server/pm/PersonaManagerService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/pm/PersonaManagerService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/pm/PersonaManagerService;->mBootCompleted:Z
 
@@ -2326,9 +2197,6 @@
 
 .method private activateAdmin(Landroid/content/pm/PersonaInfo;JLjava/lang/String;)I
     .locals 20
-    .param p1    # Landroid/content/pm/PersonaInfo;
-    .param p2    # J
-    .param p4    # Ljava/lang/String;
 
     move-object/from16 v0, p0
 
@@ -2687,7 +2555,6 @@
 
 .method private changeStateAndSwitch(I)V
     .locals 10
-    .param p1    # I
 
     const/4 v6, 0x0
 
@@ -2973,7 +2840,6 @@
 
 .method private static checkCallerPermissionFor(Ljava/lang/String;)I
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     const-string v1, "PersonaManagerService"
 
@@ -3210,11 +3076,6 @@
 
 .method private checkCreatePersonaParameters(Ljava/lang/String;JLjava/lang/String;Ljava/lang/String;Landroid/net/Uri;)I
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Landroid/net/Uri;
 
     const-wide/16 v4, 0x8
 
@@ -3331,7 +3192,6 @@
 
 .method private checkIfAdminHasBeenRemoved(I)V
     .locals 8
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3605,7 +3465,6 @@
 
 .method private static final checkManagePersonasPermission(Ljava/lang/String;)V
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     invoke-static {}, Landroid/os/Binder;->getCallingUid()I
 
@@ -3659,8 +3518,6 @@
 
 .method private checkTimaError(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     packed-switch p2, :pswitch_data_0
 
@@ -3690,7 +3547,6 @@
 
 .method private cleanPartialPersona(Landroid/content/pm/PersonaInfo;)V
     .locals 3
-    .param p1    # Landroid/content/pm/PersonaInfo;
 
     const-string v0, "PersonaManagerService"
 
@@ -3743,7 +3599,6 @@
 
 .method private cleanPartition(I)Z
     .locals 5
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -3784,7 +3639,6 @@
 
 .method private cleanProviders(I)V
     .locals 7
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/server/pm/PersonaManagerService;->getPersonaInfo(I)Landroid/content/pm/PersonaInfo;
 
@@ -3900,7 +3754,6 @@
 
 .method private cleanSettingsProvider(I)V
     .locals 12
-    .param p1    # I
 
     const/4 v7, 0x0
 
@@ -4159,7 +4012,6 @@
 
 .method private clearCachedPassword(I)V
     .locals 4
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/server/pm/PersonaManagerService;->mPasswordMap:Ljava/util/Map;
 
@@ -4228,7 +4080,6 @@
 
 .method private clearResetPasswordKey(I)V
     .locals 4
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/server/pm/PersonaManagerService;->mResetPwdKeyMap:Ljava/util/Map;
 
@@ -4297,7 +4148,6 @@
 
 .method private collectInstalledPackages(ILjava/util/Set;)V
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -4439,8 +4289,6 @@
 
 .method private confirmAppExistence(Ljava/lang/String;I)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v2, 0x1
 
@@ -4475,7 +4323,6 @@
 
 .method private convertClassicToLWCContainer(I)V
     .locals 5
-    .param p1    # I
 
     const/4 v4, 0x1
 
@@ -4545,7 +4392,6 @@
 
 .method private convertLWCToClassicContainer(I)V
     .locals 4
-    .param p1    # I
 
     const-string v1, "PersonaManagerService"
 
@@ -4617,7 +4463,6 @@
 
 .method private createPasswordHint(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -4667,7 +4512,6 @@
 
 .method private deleteDirectory(Ljava/io/File;)V
     .locals 7
-    .param p1    # Ljava/io/File;
 
     invoke-virtual {p1}, Ljava/io/File;->exists()Z
 
@@ -4775,7 +4619,6 @@
 
 .method private deleteTimaKeyStoreKeys(I)V
     .locals 5
-    .param p1    # I
 
     :try_start_0
     const-string v2, "PersonaManagerService"
@@ -4894,9 +4737,6 @@
 
 .method private enableComponents(Ljava/lang/String;Ljava/lang/String;I)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     :try_start_0
     new-instance v0, Landroid/content/ComponentName;
@@ -4936,7 +4776,6 @@
 
 .method private finishSdpFotaMigration(Landroid/content/pm/PersonaInfo;)V
     .locals 12
-    .param p1    # Landroid/content/pm/PersonaInfo;
 
     const/4 v11, 0x1
 
@@ -5315,7 +5154,6 @@
 
 .method private getAdminPackageName(I)Ljava/lang/String;
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/server/pm/PersonaManagerService;->getPersonaInfo(I)Landroid/content/pm/PersonaInfo;
 
@@ -5338,8 +5176,6 @@
 
 .method private getAdminPackageName(JLjava/lang/String;)Ljava/lang/String;
     .locals 11
-    .param p1    # J
-    .param p3    # Ljava/lang/String;
 
     const-wide/16 v9, 0x40
 
@@ -5425,9 +5261,6 @@
 
 .method private getAdminUid(IJLjava/lang/String;)I
     .locals 10
-    .param p1    # I
-    .param p2    # J
-    .param p4    # Ljava/lang/String;
 
     const-string v6, "PersonaManagerService"
 
@@ -5795,7 +5628,6 @@
 
 .method private getCurrentPassword(I)Ljava/lang/String;
     .locals 7
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -5945,7 +5777,6 @@
 
 .method private getEntryPassword(I)Ljava/security/KeyStore$ProtectionParameter;
     .locals 3
-    .param p1    # I
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -5978,7 +5809,6 @@
 
 .method private getHandlerApkLocation(I)Ljava/lang/String;
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/server/pm/PersonaManagerService;->getPersonaInfo(I)Landroid/content/pm/PersonaInfo;
 
@@ -6029,7 +5859,6 @@
 
 .method private getIntent(I)Landroid/content/Intent;
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -6077,7 +5906,6 @@
 
 .method private getLauncherList(I)Ljava/util/List;
     .locals 10
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -6226,7 +6054,6 @@
 
 .method private getMaximumScreenOffTimeoutFromDeviceAdminEnforcedLocked(I)J
     .locals 4
-    .param p1    # I
 
     const-string v1, "PersonaManagerService"
 
@@ -6332,7 +6159,6 @@
 
 .method private getPasswordFromTima(I)Ljava/lang/String;
     .locals 10
-    .param p1    # I
 
     const/4 v4, 0x0
 
@@ -6643,7 +6469,6 @@
 
 .method private getPasswordFromTima20(I)Ljava/lang/String;
     .locals 13
-    .param p1    # I
 
     const/16 v10, 0x10
 
@@ -6768,7 +6593,6 @@
 
 .method private getPasswordHintFromTima(I)Ljava/lang/String;
     .locals 5
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -6828,7 +6652,6 @@
 
 .method private getPasswordHintFromTima20(I)Ljava/lang/String;
     .locals 16
-    .param p1    # I
 
     const/4 v8, 0x0
 
@@ -6973,7 +6796,6 @@
 
 .method private getPasswordHintFromTima30(I)Ljava/lang/String;
     .locals 12
-    .param p1    # I
 
     const/4 v4, 0x0
 
@@ -7315,7 +7137,6 @@
 
 .method private getPasswordResetTokenFromTima(I)Ljava/lang/String;
     .locals 12
-    .param p1    # I
 
     const/4 v4, 0x0
 
@@ -7657,7 +7478,6 @@
 
 .method private getPasswordResetTokenFromTima20(I)Ljava/lang/String;
     .locals 13
-    .param p1    # I
 
     const/16 v10, 0x10
 
@@ -7782,7 +7602,6 @@
 
 .method private getPersonaInfoLocked(I)Landroid/content/pm/PersonaInfo;
     .locals 4
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/server/pm/PersonaManagerService;->mPersonas:Landroid/util/SparseArray;
 
@@ -7855,7 +7674,6 @@
 
 .method public static final getPolicyService(Ljava/lang/String;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "getPolicyService"
 
@@ -7915,7 +7733,6 @@
 
 .method private getSaltFilepath(I)Ljava/lang/String;
     .locals 3
-    .param p1    # I
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -7960,7 +7777,6 @@
 
 .method private getSdpActivateTime(I)J
     .locals 9
-    .param p1    # I
 
     const-wide/32 v4, 0x927c0
 
@@ -8265,7 +8081,6 @@
 
 .method private getTimeToLock(I)J
     .locals 6
-    .param p1    # I
 
     const-wide/32 v1, 0x927c0
 
@@ -8305,7 +8120,6 @@
 
 .method private getUninstallablePackagesForRemovePersona(I)Ljava/util/Set;
     .locals 17
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -8769,7 +8583,6 @@
 
 .method private handleFOTAUpgrade(Landroid/content/pm/PersonaInfo;)V
     .locals 12
-    .param p1    # Landroid/content/pm/PersonaInfo;
 
     const/4 v11, 0x3
 
@@ -9041,7 +8854,6 @@
 
 .method private handleFOTAUpgradeForSdpMinor(Landroid/content/pm/PersonaInfo;)V
     .locals 7
-    .param p1    # Landroid/content/pm/PersonaInfo;
 
     if-eqz p1, :cond_0
 
@@ -9174,7 +8986,6 @@
 
 .method private handleRestart(I)V
     .locals 5
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/server/pm/PersonaManagerService;->getPersonaInfo(I)Landroid/content/pm/PersonaInfo;
 
@@ -9324,8 +9135,6 @@
 
 .method private handleSuperLockPersona(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     const/4 v1, 0x7
 
@@ -9353,7 +9162,6 @@
 
 .method private initMdppKeystore(I)Z
     .locals 8
-    .param p1    # I
 
     const/4 v5, 0x0
 
@@ -9518,9 +9326,6 @@
 
 .method private installAdminApk(IJLjava/lang/String;)I
     .locals 10
-    .param p1    # I
-    .param p2    # J
-    .param p4    # Ljava/lang/String;
 
     const-wide/16 v8, 0x40
 
@@ -9603,8 +9408,6 @@
 
 .method private installApkUriForPersona(ILandroid/net/Uri;)I
     .locals 12
-    .param p1    # I
-    .param p2    # Landroid/net/Uri;
 
     const/4 v9, 0x0
 
@@ -9836,7 +9639,6 @@
 
 .method private installDefaultApplications(ILjava/util/List;)Z
     .locals 4
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -9896,8 +9698,6 @@
 
 .method private installExistingPackageForPersona(ILjava/lang/String;)I
     .locals 5
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v1, -0x1
 
@@ -10003,9 +9803,6 @@
 
 .method private installPackageForPersona(IILjava/lang/String;)I
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     const/4 v1, -0x1
 
@@ -10058,9 +9855,6 @@
 
 .method private installPackageUriForPersona(IILandroid/net/Uri;)I
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/net/Uri;
 
     invoke-direct {p0, p1, p3}, Lcom/android/server/pm/PersonaManagerService;->installApkUriForPersona(ILandroid/net/Uri;)I
 
@@ -10105,7 +9899,6 @@
 
 .method private isCardLauncherDefault(I)Z
     .locals 7
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -10166,7 +9959,6 @@
 
 .method private isKeyGuardEnabledFromMDM(I)Z
     .locals 8
-    .param p1    # I
 
     const/4 v4, 0x1
 
@@ -10250,7 +10042,6 @@
 
 .method private isMaximumScreenOffTimeoutFromDeviceAdminEnforcedLocked(I)Z
     .locals 4
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/pm/PersonaManagerService;->getMaximumScreenOffTimeoutFromDeviceAdminEnforcedLocked(I)J
 
@@ -10321,7 +10112,6 @@
 
 .method private isPwdChangeEnforced(I)Z
     .locals 4
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -10391,7 +10181,6 @@
 
 .method private isSuperLockState(I)Z
     .locals 1
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -10449,7 +10238,6 @@
 
 .method private killSdpTimer(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/server/pm/PersonaManagerService;->mSdpTimerMap:Ljava/util/HashMap;
 
@@ -10484,7 +10272,6 @@
 
 .method private killTimer(I)V
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -10495,8 +10282,6 @@
 
 .method private killTimer(II)V
     .locals 9
-    .param p1    # I
-    .param p2    # I
 
     iget-object v6, p0, Lcom/android/server/pm/PersonaManagerService;->mTimerLock:Ljava/lang/Object;
 
@@ -10590,8 +10375,6 @@
 
 .method private killTimer(IZ)V
     .locals 8
-    .param p1    # I
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/pm/PersonaManagerService;->isKeyGuardEnabledFromMDM(I)Z
 
@@ -10697,7 +10480,6 @@
 
 .method private migrateAndCleanupSharedPreferences(I)V
     .locals 7
-    .param p1    # I
 
     const/4 v6, 0x0
 
@@ -10876,7 +10658,6 @@
 
 .method private migrateOldPassword(I)V
     .locals 10
-    .param p1    # I
 
     const-string v7, "PersonaManagerService"
 
@@ -11065,7 +10846,6 @@
 
 .method private notifyNeedRestartMsg(I)V
     .locals 4
-    .param p1    # I
 
     new-instance v0, Landroid/content/Intent;
 
@@ -11208,8 +10988,6 @@
 
 .method private readAppTypeList(ILjava/lang/String;)Ljava/util/List;
     .locals 13
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -11509,7 +11287,6 @@
 
 .method private readFile(Ljava/lang/String;)Ljava/lang/String;
     .locals 10
-    .param p1    # Ljava/lang/String;
 
     const/4 v6, 0x0
 
@@ -11651,9 +11428,6 @@
 
 .method private readIntAttribute(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;I)I
     .locals 3
-    .param p1    # Lorg/xmlpull/v1/XmlPullParser;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     const/4 v2, 0x0
 
@@ -11684,9 +11458,6 @@
 
 .method private readLongAttribute(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;J)J
     .locals 3
-    .param p1    # Lorg/xmlpull/v1/XmlPullParser;
-    .param p2    # Ljava/lang/String;
-    .param p3    # J
 
     const/4 v2, 0x0
 
@@ -11717,8 +11488,6 @@
 
 .method private readUser(II)Landroid/content/pm/PersonaInfo;
     .locals 72
-    .param p1    # I
-    .param p2    # I
 
     const/4 v8, 0x0
 
@@ -13041,7 +12810,6 @@
 
 .method private readUserListLocked(I)V
     .locals 14
-    .param p1    # I
 
     const/4 v11, 0x0
 
@@ -13883,7 +13651,6 @@
 
 .method private registerHandlerForPersona(Landroid/content/pm/PersonaInfo;)V
     .locals 11
-    .param p1    # Landroid/content/pm/PersonaInfo;
 
     if-nez p1, :cond_1
 
@@ -14042,7 +13809,6 @@
 
 .method private removeActiveAdmin(I)Z
     .locals 12
-    .param p1    # I
 
     const/4 v7, 0x0
 
@@ -14275,7 +14041,6 @@
 
 .method private removeDirectoryRecursive(Ljava/io/File;)V
     .locals 7
-    .param p1    # Ljava/io/File;
 
     invoke-virtual {p1}, Ljava/io/File;->isDirectory()Z
 
@@ -14316,9 +14081,6 @@
 
 .method private removeFilesForSysApp(Lcom/sec/knox/container/util/EnterprisePartitionManager;ILjava/io/File;)V
     .locals 7
-    .param p1    # Lcom/sec/knox/container/util/EnterprisePartitionManager;
-    .param p2    # I
-    .param p3    # Ljava/io/File;
 
     invoke-virtual {p3}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
@@ -14400,7 +14162,6 @@
 
 .method private removePersonaHelper(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "PersonaManagerService"
 
@@ -14463,7 +14224,6 @@
 
 .method private removeThirdPartyApks(I)V
     .locals 4
-    .param p1    # I
 
     const-string v1, "PersonaManagerService"
 
@@ -14518,7 +14278,6 @@
 
 .method private removeThirdPartyApksOnReset(ILjava/util/Set;)V
     .locals 8
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -14627,7 +14386,6 @@
 
 .method private removeUserStateExternal(I)V
     .locals 4
-    .param p1    # I
 
     :try_start_0
     sget-boolean v1, Lcom/android/server/pm/PersonaManagerService;->timaVersion20:Z
@@ -14685,7 +14443,6 @@
 
 .method private removeUserStateLocked(I)V
     .locals 9
-    .param p1    # I
 
     iget-object v5, p0, Lcom/android/server/pm/PersonaManagerService;->mPm:Lcom/android/server/pm/PackageManagerService;
 
@@ -14939,8 +14696,6 @@
 
 .method private savePasswordHintInTima20(ILjava/lang/String;)Z
     .locals 8
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/server/pm/PersonaManagerService;->getTimaService()Landroid/service/tima/ITimaService;
 
@@ -15092,8 +14847,6 @@
 
 .method private savePasswordInTima20(ILjava/lang/String;)Z
     .locals 9
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/server/pm/PersonaManagerService;->getTimaService()Landroid/service/tima/ITimaService;
 
@@ -15209,8 +14962,6 @@
 
 .method private savePasswordResetTokenInTima20(ILjava/lang/String;)Z
     .locals 9
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/server/pm/PersonaManagerService;->getTimaService()Landroid/service/tima/ITimaService;
 
@@ -15326,8 +15077,6 @@
 
 .method private scheduleSdpTimer(IZ)V
     .locals 8
-    .param p1    # I
-    .param p2    # Z
 
     iget-object v4, p0, Lcom/android/server/pm/PersonaManagerService;->mSdpTimerMap:Ljava/util/HashMap;
 
@@ -15485,9 +15234,6 @@
 
 .method private scheduleTimer(IIJ)V
     .locals 11
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
 
     iget-object v8, p0, Lcom/android/server/pm/PersonaManagerService;->mTimerLock:Ljava/lang/Object;
 
@@ -15613,8 +15359,6 @@
 
 .method private scheduleTimer(IZ)V
     .locals 13
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v12, 0x1
 
@@ -15813,9 +15557,6 @@
 
 .method private sendIntentForAdminLock(Ljava/lang/String;II)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     new-instance v1, Landroid/content/Intent;
 
@@ -15879,9 +15620,6 @@
 
 .method private sendIntentForRemoveContainer(Ljava/lang/String;II)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     new-instance v1, Landroid/content/Intent;
 
@@ -15945,7 +15683,6 @@
 
 .method private sendPersonaInfoChangedBroadcast(I)V
     .locals 3
-    .param p1    # I
 
     new-instance v0, Landroid/content/Intent;
 
@@ -15974,8 +15711,6 @@
 
 .method private setKnoxAppsComponentForceDisable(Landroid/content/Context;I)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     new-instance v0, Landroid/content/ComponentName;
 
@@ -16010,8 +15745,6 @@
 
 .method private setKnoxAppsComponentSetting(Landroid/content/Context;I)V
     .locals 12
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     const/4 v11, 0x1
 
@@ -16302,8 +16035,6 @@
 
 .method private setKnoxExists([IZ)V
     .locals 10
-    .param p1    # [I
-    .param p2    # Z
 
     if-eqz p1, :cond_2
 
@@ -16384,8 +16115,6 @@
 
 .method private setSdpActive(IZ)V
     .locals 3
-    .param p1    # I
-    .param p2    # Z
 
     iget-object v2, p0, Lcom/android/server/pm/PersonaManagerService;->mPackagesLock:Ljava/lang/Object;
 
@@ -16423,7 +16152,6 @@
 
 .method private setTimaCompromisedState(I)V
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x7
 
@@ -16434,8 +16162,6 @@
 
 .method private startActivityAdminLocked(II)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     const-string v1, "PersonaManagerService"
 
@@ -16506,8 +16232,6 @@
 
 .method private startResetPersona(IZ)I
     .locals 6
-    .param p1    # I
-    .param p2    # Z
 
     const-string v4, "PersonaManagerService"
 
@@ -16605,7 +16329,6 @@
 
 .method private triggerAppUninstallationonReset(I)V
     .locals 11
-    .param p1    # I
 
     const-string v8, "PersonaManagerService"
 
@@ -16693,7 +16416,6 @@
 
 .method private trimHiddenVersion(Ljava/lang/String;)Ljava/lang/String;
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/16 v4, 0x5f
 
@@ -16756,7 +16478,6 @@
 
 .method private updateContainerOnlyApks(Landroid/content/pm/PersonaInfo;)V
     .locals 14
-    .param p1    # Landroid/content/pm/PersonaInfo;
 
     if-nez p1, :cond_1
 
@@ -17297,8 +17018,6 @@
 
 .method private updateKeys(ILjava/lang/String;)V
     .locals 8
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v7, 0x1
 
@@ -17462,8 +17181,6 @@
 
 .method private updateUserApk(ILjava/lang/String;)I
     .locals 12
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v10, -0x1
 
@@ -17804,8 +17521,6 @@
 
 .method private writeAppTypeList(ILjava/lang/String;Ljava/util/List;)V
     .locals 15
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -18082,8 +17797,6 @@
 
 .method private writeBitmapLocked(Landroid/content/pm/PersonaInfo;Landroid/graphics/Bitmap;)V
     .locals 8
-    .param p1    # Landroid/content/pm/PersonaInfo;
-    .param p2    # Landroid/graphics/Bitmap;
 
     :try_start_0
     new-instance v0, Ljava/io/File;
@@ -18176,8 +17889,6 @@
 
 .method private writeFile(Ljava/lang/String;[B)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # [B
 
     const/4 v2, 0x0
 
@@ -18294,7 +18005,6 @@
 
 .method private writeUserListLocked(I)V
     .locals 12
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -18648,7 +18358,6 @@
 
 .method private writeUserLocked(Landroid/content/pm/PersonaInfo;)V
     .locals 13
-    .param p1    # Landroid/content/pm/PersonaInfo;
 
     const-string v9, "PersonaManagerService"
 
@@ -19616,9 +19325,6 @@
 # virtual methods
 .method public addAppForPersona(Ljava/lang/String;Ljava/lang/String;I)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     const-string v1, "addAppForPersona"
 
@@ -19728,8 +19434,6 @@
 
 .method public addAppListForPersona(Ljava/lang/String;Ljava/util/List;I)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -19810,7 +19514,6 @@
 
 .method public addLockOnImage(Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
     .locals 4
-    .param p1    # Landroid/graphics/Bitmap;
 
     const-string v1, "addLockOnImage"
 
@@ -19869,8 +19572,6 @@
 
 .method public addPackageToInstallWhiteList(Ljava/lang/String;I)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const-string v0, "addPackageToInstallWhiteList"
 
@@ -19921,8 +19622,6 @@
 
 .method public adminLockPersona(ILjava/lang/String;)Z
     .locals 7
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v3, 0x1
 
@@ -20054,7 +19753,6 @@
 
 .method public adminUnLockPersona(I)Z
     .locals 9
-    .param p1    # I
 
     const/4 v5, 0x0
 
@@ -20224,7 +19922,6 @@
 
 .method public calmSdp(I)V
     .locals 5
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/server/pm/PersonaManagerService;->getPersonaInfo(I)Landroid/content/pm/PersonaInfo;
 
@@ -20298,8 +19995,6 @@
 
 .method public canAccess(Ljava/lang/String;I)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-virtual {p0, p2}, Lcom/android/server/pm/PersonaManagerService;->getPersonaInfo(I)Landroid/content/pm/PersonaInfo;
 
@@ -20373,8 +20068,6 @@
 
 .method public clearAppListForPersona(Ljava/lang/String;I)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const-string v0, "clearAppListForPersona"
 
@@ -20437,8 +20130,6 @@
 
 .method public convertContainerType(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x1
 
@@ -20486,14 +20177,6 @@
 
 .method public createPersona(Ljava/lang/String;Ljava/lang/String;JLjava/lang/String;Ljava/lang/String;Landroid/net/Uri;Landroid/net/Uri;Ljava/lang/String;)I
     .locals 42
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # J
-    .param p5    # Ljava/lang/String;
-    .param p6    # Ljava/lang/String;
-    .param p7    # Landroid/net/Uri;
-    .param p8    # Landroid/net/Uri;
-    .param p9    # Ljava/lang/String;
 
     const-string v6, "createPersona"
 
@@ -22466,7 +22149,6 @@
 
 .method public disablePersonaKeyGuard(I)Z
     .locals 11
-    .param p1    # I
 
     const/4 v6, 0x0
 
@@ -22633,9 +22315,6 @@
 
 .method protected dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 16
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     move-object/from16 v0, p0
 
@@ -23710,7 +23389,6 @@
 
 .method public enablePersonaKeyGuard(I)Z
     .locals 10
-    .param p1    # I
 
     const/4 v5, 0x0
 
@@ -23863,7 +23541,6 @@
 
 .method public exists(I)Z
     .locals 2
-    .param p1    # I
 
     const-string v0, "exists"
 
@@ -23908,7 +23585,6 @@
 
 .method finishRemoveUser(I)V
     .locals 25
-    .param p1    # I
 
     const-string v4, "PersonaManagerService"
 
@@ -24175,7 +23851,6 @@
 
 .method public getAdminUidForPersona(I)I
     .locals 2
-    .param p1    # I
 
     const-string v1, "getAdminUidForPersona"
 
@@ -24202,8 +23877,6 @@
 
 .method public getAppListForPersona(Ljava/lang/String;I)Ljava/util/List;
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -24266,7 +23939,6 @@
 
 .method public getCurrentPersonaForUser(I)I
     .locals 3
-    .param p1    # I
 
     const-string v0, "getCurrentPersonaForUser"
 
@@ -24328,8 +24000,6 @@
 
 .method public getDisabledHomeLaunchers(IZ)Ljava/util/List;
     .locals 4
-    .param p1    # I
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(IZ)",
@@ -24400,9 +24070,6 @@
 
 .method public getEncodedPassword(Ljava/lang/String;IZ)Ljava/lang/String;
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Z
 
     const/4 v9, 0x0
 
@@ -24580,7 +24247,6 @@
 
 .method public getFingerCount(I)I
     .locals 3
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/server/pm/PersonaManagerService;->getPersonaInfo(I)Landroid/content/pm/PersonaInfo;
 
@@ -24609,7 +24275,6 @@
 
 .method public getHandlerComponentName(I)Landroid/content/ComponentName;
     .locals 6
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -24695,7 +24360,6 @@
 
 .method public getIsAdminLockedJustBefore(I)Z
     .locals 3
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/server/pm/PersonaManagerService;->getPersonaInfo(I)Landroid/content/pm/PersonaInfo;
 
@@ -24724,7 +24388,6 @@
 
 .method public getIsFingerAsSupplement(I)Z
     .locals 7
-    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -24826,7 +24489,6 @@
 
 .method public getIsFingerIdentifyFailed(I)Z
     .locals 3
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/server/pm/PersonaManagerService;->getPersonaInfo(I)Landroid/content/pm/PersonaInfo;
 
@@ -24855,7 +24517,6 @@
 
 .method public getIsFingerReset(I)Z
     .locals 3
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/server/pm/PersonaManagerService;->getPersonaInfo(I)Landroid/content/pm/PersonaInfo;
 
@@ -24884,7 +24545,6 @@
 
 .method public getIsFingerTimeout(I)Z
     .locals 3
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/server/pm/PersonaManagerService;->getPersonaInfo(I)Landroid/content/pm/PersonaInfo;
 
@@ -24913,7 +24573,6 @@
 
 .method public getIsUnlockedAfterTurnOn(I)Z
     .locals 3
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/server/pm/PersonaManagerService;->getPersonaInfo(I)Landroid/content/pm/PersonaInfo;
 
@@ -24942,7 +24601,6 @@
 
 .method public getKeyguardShowState(I)Z
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/pm/PersonaManagerService;->mKeyguardShown:Landroid/util/SparseBooleanArray;
 
@@ -24957,7 +24615,6 @@
 
 .method public getLastKeyguardUnlockTime(I)J
     .locals 3
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/server/pm/PersonaManagerService;->getPersonaInfo(I)Landroid/content/pm/PersonaInfo;
 
@@ -24986,7 +24643,6 @@
 
 .method public getLastShortcutState(I)Z
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/pm/PersonaManagerService;->mLastShortcutModes:Landroid/util/SparseBooleanArray;
 
@@ -25033,7 +24689,6 @@
 
 .method public getNormalizedState(I)I
     .locals 6
-    .param p1    # I
 
     const-string v4, "getNormalizedState"
 
@@ -25091,7 +24746,6 @@
 
 .method public getPackagesFromInstallWhiteList(I)Ljava/util/List;
     .locals 4
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -25153,7 +24807,6 @@
 
 .method public getParentId(I)I
     .locals 4
-    .param p1    # I
 
     const-string v1, "getParentId"
 
@@ -25242,7 +24895,6 @@
 
 .method public getParentUserForPersona(I)I
     .locals 1
-    .param p1    # I
 
     const-string v0, "getParentUserForPersona"
 
@@ -25320,7 +24972,6 @@
 
 .method public getPersonaBackgroundTime(I)J
     .locals 2
-    .param p1    # I
 
     const-string v0, "getPersonaBackgroundTime"
 
@@ -25365,7 +25016,6 @@
 
 .method public getPersonaIcon(I)Landroid/graphics/Bitmap;
     .locals 6
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -25463,7 +25113,6 @@
 
 .method public getPersonaIdentification(I)Ljava/lang/String;
     .locals 4
-    .param p1    # I
 
     const-string v1, "getPersonaIdentification"
 
@@ -25546,7 +25195,6 @@
 
 .method public getPersonaInfo(I)Landroid/content/pm/PersonaInfo;
     .locals 2
-    .param p1    # I
 
     const-string v0, "getPersonaInfo"
 
@@ -25581,7 +25229,6 @@
 
 .method public getPersonaSamsungAccount(I)Ljava/lang/String;
     .locals 4
-    .param p1    # I
 
     const-string v1, "getPersonaSamsungAccount"
 
@@ -25634,7 +25281,6 @@
 
 .method public getPersonaState(I)I
     .locals 3
-    .param p1    # I
 
     const-string v1, "getPersonaState"
 
@@ -25671,7 +25317,6 @@
 
 .method public getPersonaType(I)Ljava/lang/String;
     .locals 2
-    .param p1    # I
 
     const-string v1, "getPersonaType"
 
@@ -25698,7 +25343,6 @@
 
 .method public getPersonas(Z)Ljava/util/List;
     .locals 6
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(Z)",
@@ -25793,8 +25437,6 @@
 
 .method public getPersonasForCreator(IZ)Ljava/util/List;
     .locals 7
-    .param p1    # I
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(IZ)",
@@ -25941,8 +25583,6 @@
 
 .method public getPersonasForUser(IZ)Ljava/util/List;
     .locals 8
-    .param p1    # I
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(IZ)",
@@ -26287,7 +25927,6 @@
 
 .method public getScreenOffTime(I)J
     .locals 10
-    .param p1    # I
 
     const-wide/16 v8, 0x0
 
@@ -26433,7 +26072,6 @@
 
 .method public getSetupWizardPath(I)Ljava/lang/String;
     .locals 2
-    .param p1    # I
 
     const-string v1, "getSetupWizardPath"
 
@@ -26460,7 +26098,6 @@
 
 .method public getShortcutMode(I)Z
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/pm/PersonaManagerService;->mShortcutModes:Landroid/util/SparseBooleanArray;
 
@@ -26473,7 +26110,6 @@
 
 .method public getUserManagedPersonas(Z)Ljava/util/List;
     .locals 7
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(Z)",
@@ -26616,8 +26252,6 @@
 
 .method public handleDisableKeyguardForSdp(IZ)V
     .locals 6
-    .param p1    # I
-    .param p2    # Z
 
     const-string v3, "PersonaManagerService"
 
@@ -26871,7 +26505,6 @@
 
 .method public handleSuperUnlockPersona(Landroid/content/pm/PersonaInfo;)Z
     .locals 10
-    .param p1    # Landroid/content/pm/PersonaInfo;
 
     const-string v0, "handleSuperUnlockPersona"
 
@@ -27070,10 +26703,6 @@
 
 .method handleWakeLockChange(ZIII)V
     .locals 4
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iget-object v1, p0, Lcom/android/server/pm/PersonaManagerService;->mPersonas:Landroid/util/SparseArray;
 
@@ -27250,7 +26879,6 @@
 
 .method public installApplications(ILjava/util/List;)Z
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -27349,7 +26977,6 @@
 
 .method public isFingerSupplementActivated(I)Z
     .locals 7
-    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -27437,7 +27064,6 @@
 
 .method isFromApprovedInstaller(I)Z
     .locals 9
-    .param p1    # I
 
     const/4 v5, 0x1
 
@@ -27578,8 +27204,6 @@
 
 .method isFromApprovedInstaller(II)Z
     .locals 9
-    .param p1    # I
-    .param p2    # I
 
     const/4 v5, 0x1
 
@@ -27749,8 +27373,6 @@
 
 .method isFromApprovedUnInstaller(II)Z
     .locals 19
-    .param p1    # I
-    .param p2    # I
 
     const-string v16, "PersonaManagerService"
 
@@ -28028,7 +27650,6 @@
 
 .method public isInitialized(I)Z
     .locals 6
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -28221,7 +27842,6 @@
 
 .method public isKioskModeEnabled(I)Z
     .locals 6
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -28284,8 +27904,6 @@
 
 .method public isPackageInInstallWhiteList(Ljava/lang/String;I)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const-string v1, "PersonaManagerService"
 
@@ -28352,7 +27970,6 @@
 
 .method public isResetPersonaOnRebootEnabled(I)Z
     .locals 6
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -28447,7 +28064,6 @@
 
 .method public isSessionExpired(I)Z
     .locals 5
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -28505,7 +28121,6 @@
 
 .method public isSetupWizardInstalled(I)Z
     .locals 8
-    .param p1    # I
 
     const/4 v4, 0x0
 
@@ -28594,7 +28209,6 @@
 
 .method public lockPersona(I)V
     .locals 10
-    .param p1    # I
 
     const-string v5, "lockPersona"
 
@@ -28787,7 +28401,6 @@
 
 .method public makeInitialized(I)V
     .locals 5
-    .param p1    # I
 
     const-string v1, "makeInitialized"
 
@@ -28878,8 +28491,6 @@
 
 .method public markForRemoval(ILandroid/content/ComponentName;)V
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
 
     const-string v1, "markForRemoval"
 
@@ -28948,8 +28559,6 @@
 
 .method public needVerificationForPackage(ILjava/lang/String;)Z
     .locals 8
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v4, 0x1
 
@@ -29430,8 +29039,6 @@
 
 .method public notifyKeyguardShow(IZ)V
     .locals 10
-    .param p1    # I
-    .param p2    # Z
 
     const-string v7, "notifyKeyguardShow"
 
@@ -29619,8 +29226,6 @@
 
 .method public onPasswordChange(ILjava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     if-eqz p2, :cond_0
 
@@ -29687,8 +29292,6 @@
 
 .method public onPatternChange(ILjava/lang/String;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/pm/PersonaManagerService;->updateKeys(ILjava/lang/String;)V
 
@@ -29746,11 +29349,6 @@
 
 .method public onWakeLockChange(ZIIILjava/lang/String;)V
     .locals 5
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -29799,7 +29397,6 @@
 
 .method public postRestartMsg(I)V
     .locals 5
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/server/pm/PersonaManagerService;->getPersonaInfo(I)Landroid/content/pm/PersonaInfo;
 
@@ -29886,7 +29483,6 @@
 
 .method public refreshTimer(I)V
     .locals 3
-    .param p1    # I
 
     const-string/jumbo v1, "refreshTimer"
 
@@ -29918,9 +29514,6 @@
 
 .method public registerHandler(Ljava/lang/String;Landroid/os/IBinder;Landroid/content/pm/IPersonaObserver;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/IBinder;
-    .param p3    # Landroid/content/pm/IPersonaObserver;
 
     const-string/jumbo v1, "registerHandler"
 
@@ -29964,7 +29557,6 @@
 
 .method public registerObserver(Landroid/content/pm/IPersonaObserver;)V
     .locals 2
-    .param p1    # Landroid/content/pm/IPersonaObserver;
 
     const-string/jumbo v1, "registerObserver"
 
@@ -29981,8 +29573,6 @@
 
 .method public registerOutsideObserver(ILandroid/content/pm/IPersonaObserver;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/content/pm/IPersonaObserver;
 
     const-string/jumbo v0, "registerOutsideObserver"
 
@@ -29995,7 +29585,6 @@
 
 .method public registerSystemPersonaObserver(Landroid/content/pm/ISystemPersonaObserver;)Z
     .locals 1
-    .param p1    # Landroid/content/pm/ISystemPersonaObserver;
 
     const-string/jumbo v0, "registerSystemPersonaObserver"
 
@@ -30022,7 +29611,6 @@
 
 .method public registerUser(Landroid/content/pm/IPersonaCallback;)Z
     .locals 3
-    .param p1    # Landroid/content/pm/IPersonaCallback;
 
     const-string/jumbo v0, "registerUser"
 
@@ -30083,9 +29671,6 @@
 
 .method public removeAppForPersona(Ljava/lang/String;Ljava/lang/String;I)V
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     const-string/jumbo v4, "removeAppForPersona"
 
@@ -30234,8 +29819,6 @@
 
 .method public removePackageFromInstallWhiteList(Ljava/lang/String;I)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const-string/jumbo v0, "removePackageFromInstallWhiteList"
 
@@ -30320,7 +29903,6 @@
 
 .method public removePersona(I)I
     .locals 14
-    .param p1    # I
 
     const/4 v7, 0x0
 
@@ -30594,7 +30176,6 @@
 
 .method public resetPassword(Ljava/lang/String;)Z
     .locals 10
-    .param p1    # Ljava/lang/String;
 
     const-string/jumbo v7, "resetPassword"
 
@@ -30757,7 +30338,6 @@
 
 .method public resetPersona(I)I
     .locals 13
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -30981,7 +30561,6 @@
 
 .method public resetPersonaDataPartition(I)Z
     .locals 2
-    .param p1    # I
 
     const-string/jumbo v1, "resetPersonaDataPartition"
 
@@ -31001,8 +30580,6 @@
 
 .method public resetPersonaOnReboot(IZ)Z
     .locals 7
-    .param p1    # I
-    .param p2    # Z
 
     const-string/jumbo v4, "resetPersonaOnReboot"
 
@@ -31136,9 +30713,6 @@
 
 .method public resetPersonaPassword(ILjava/lang/String;I)V
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     invoke-virtual {p0, p1}, Lcom/android/server/pm/PersonaManagerService;->getPersonaInfo(I)Landroid/content/pm/PersonaInfo;
 
@@ -31251,7 +30825,6 @@
 
 .method public rollBackToPersona(I)V
     .locals 8
-    .param p1    # I
 
     const-string/jumbo v5, "rollBackToPersona"
 
@@ -31538,7 +31111,6 @@
 
 .method public rollUpToParent(I)V
     .locals 8
-    .param p1    # I
 
     const-string/jumbo v5, "rollUpToParent"
 
@@ -31720,8 +31292,6 @@
 
 .method public savePasswordHintInTima(ILjava/lang/String;)Z
     .locals 12
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lcom/android/server/pm/PersonaManagerService;->getPersonaInfo(I)Landroid/content/pm/PersonaInfo;
 
@@ -31902,8 +31472,6 @@
 
 .method public savePasswordInTima(ILjava/lang/String;)Z
     .locals 12
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const-string/jumbo v9, "savePasswordInTima"
 
@@ -32181,8 +31749,6 @@
 
 .method public savePasswordResetTokenInTima(ILjava/lang/String;)Z
     .locals 12
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const-string/jumbo v9, "savePasswordResetTokenInTima"
 
@@ -32460,9 +32026,6 @@
 
 .method public setAccessPermission(Ljava/lang/String;IZ)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Z
 
     invoke-virtual {p0, p2}, Lcom/android/server/pm/PersonaManagerService;->getPersonaInfo(I)Landroid/content/pm/PersonaInfo;
 
@@ -32561,8 +32124,6 @@
 
 .method public setBackPressed(IZ)V
     .locals 3
-    .param p1    # I
-    .param p2    # Z
 
     const-string/jumbo v0, "setBackPressed"
 
@@ -32609,9 +32170,6 @@
 
 .method public setCachedPassword(ILjava/lang/String;Z)V
     .locals 4
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     if-eqz p2, :cond_0
 
@@ -32701,8 +32259,6 @@
 
 .method public setCurrentPersonaForUser(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     const-string/jumbo v0, "setCurrentPersonaForUser"
 
@@ -32757,7 +32313,6 @@
 
 .method setEcryptAndPasswordIndex(Landroid/content/pm/PersonaInfo;)V
     .locals 9
-    .param p1    # Landroid/content/pm/PersonaInfo;
 
     const/4 v7, 0x4
 
@@ -32932,8 +32487,6 @@
 
 .method public setFingerCount(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0, p1}, Lcom/android/server/pm/PersonaManagerService;->getPersonaInfo(I)Landroid/content/pm/PersonaInfo;
 
@@ -32958,8 +32511,6 @@
 
 .method public setFsMountState(IZ)V
     .locals 4
-    .param p1    # I
-    .param p2    # Z
 
     const-string/jumbo v1, "setFsMountState"
 
@@ -33030,8 +32581,6 @@
 
 .method public setIsAdminLockedJustBefore(IZ)V
     .locals 3
-    .param p1    # I
-    .param p2    # Z
 
     invoke-virtual {p0, p1}, Lcom/android/server/pm/PersonaManagerService;->getPersonaInfo(I)Landroid/content/pm/PersonaInfo;
 
@@ -33056,8 +32605,6 @@
 
 .method public setIsFingerAsSupplement(IZ)V
     .locals 8
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v7, 0x0
 
@@ -33180,8 +32727,6 @@
 
 .method public setIsFingerIdentifyFailed(IZ)V
     .locals 3
-    .param p1    # I
-    .param p2    # Z
 
     invoke-virtual {p0, p1}, Lcom/android/server/pm/PersonaManagerService;->getPersonaInfo(I)Landroid/content/pm/PersonaInfo;
 
@@ -33206,8 +32751,6 @@
 
 .method public setIsFingerReset(IZ)V
     .locals 3
-    .param p1    # I
-    .param p2    # Z
 
     invoke-virtual {p0, p1}, Lcom/android/server/pm/PersonaManagerService;->getPersonaInfo(I)Landroid/content/pm/PersonaInfo;
 
@@ -33232,8 +32775,6 @@
 
 .method public setIsFingerTimeout(IZ)V
     .locals 3
-    .param p1    # I
-    .param p2    # Z
 
     invoke-virtual {p0, p1}, Lcom/android/server/pm/PersonaManagerService;->getPersonaInfo(I)Landroid/content/pm/PersonaInfo;
 
@@ -33258,8 +32799,6 @@
 
 .method public setIsUnlockedAfterTurnOn(IZ)V
     .locals 3
-    .param p1    # I
-    .param p2    # Z
 
     invoke-virtual {p0, p1}, Lcom/android/server/pm/PersonaManagerService;->getPersonaInfo(I)Landroid/content/pm/PersonaInfo;
 
@@ -33284,8 +32823,6 @@
 
 .method public setLastKeyguardUnlockTime(IJ)V
     .locals 3
-    .param p1    # I
-    .param p2    # J
 
     invoke-virtual {p0, p1}, Lcom/android/server/pm/PersonaManagerService;->getPersonaInfo(I)Landroid/content/pm/PersonaInfo;
 
@@ -33310,8 +32847,6 @@
 
 .method public setLastShortcutState(IZ)V
     .locals 3
-    .param p1    # I
-    .param p2    # Z
 
     const-string v0, "PersonaManagerService"
 
@@ -33354,8 +32889,6 @@
 
 .method public setMaximumScreenOffTimeoutFromDeviceAdmin(JI)V
     .locals 6
-    .param p1    # J
-    .param p3    # I
 
     const-string/jumbo v3, "setMaximumScreenOffTimeoutFromDeviceAdmin"
 
@@ -33491,7 +33024,6 @@
 
 .method public setMoveToKnoxStatus(Z)V
     .locals 3
-    .param p1    # Z
 
     const-string v0, "PersonaManagerService"
 
@@ -33522,8 +33054,6 @@
 
 .method public setPersonaIcon(ILandroid/graphics/Bitmap;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/graphics/Bitmap;
 
     const-string/jumbo v1, "setPersonaIcon"
 
@@ -33610,8 +33140,6 @@
 
 .method public setPersonaName(ILjava/lang/String;)V
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const-string/jumbo v2, "setPersonaName"
 
@@ -33718,8 +33246,6 @@
 
 .method public setPersonaSamsungAccount(ILjava/lang/String;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const-string/jumbo v1, "setPersonaSamsungAccount"
 
@@ -33761,8 +33287,6 @@
 
 .method public setPersonaState(II)V
     .locals 11
-    .param p1    # I
-    .param p2    # I
 
     const-string/jumbo v7, "setPersonaState"
 
@@ -34304,8 +33828,6 @@
 
 .method public setPersonaType(ILjava/lang/String;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const-string/jumbo v1, "setPersonaType"
 
@@ -34345,7 +33867,6 @@
 
 .method public setPhoneCaller(I)V
     .locals 3
-    .param p1    # I
 
     const-string/jumbo v0, "setPhoneCaller"
 
@@ -34394,8 +33915,6 @@
 
 .method public setResetPasswordState(IZ)V
     .locals 4
-    .param p1    # I
-    .param p2    # Z
 
     const-string/jumbo v1, "setResetPasswordState"
 
@@ -34470,8 +33989,6 @@
 
 .method public setShortcutGuideDisplay(IZ)V
     .locals 3
-    .param p1    # I
-    .param p2    # Z
 
     iget-object v2, p0, Lcom/android/server/pm/PersonaManagerService;->mPackagesLock:Ljava/lang/Object;
 
@@ -34510,8 +34027,6 @@
 
 .method public setShortcutMode(IZ)V
     .locals 1
-    .param p1    # I
-    .param p2    # Z
 
     const-string/jumbo v0, "setShortcutMode"
 
@@ -34526,8 +34041,6 @@
 
 .method public setSuperLock(IZ)V
     .locals 4
-    .param p1    # I
-    .param p2    # Z
 
     const-string/jumbo v1, "setSuperLock"
 
@@ -34598,7 +34111,6 @@
 
 .method public settingSyncAllowed(I)Z
     .locals 3
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -34641,7 +34153,6 @@
 
 .method public startRemovingPersona(I)I
     .locals 2
-    .param p1    # I
 
     const-string/jumbo v0, "startRemovingPersona"
 
@@ -34664,8 +34175,6 @@
 
 .method public stopAndRemovePersona(IZ)I
     .locals 5
-    .param p1    # I
-    .param p2    # Z
 
     const-string/jumbo v2, "stopAndRemovePersona"
 
@@ -34727,7 +34236,6 @@
 
 .method public stopPersona(I)I
     .locals 2
-    .param p1    # I
 
     const-string/jumbo v0, "stopPersona"
 
@@ -34750,7 +34258,6 @@
 
 .method public switchPersona(I)Z
     .locals 9
-    .param p1    # I
 
     const/4 v5, 0x0
 
@@ -34894,8 +34401,6 @@
 
 .method public switchPersonaAndLaunch(ILandroid/content/Intent;)Z
     .locals 9
-    .param p1    # I
-    .param p2    # Landroid/content/Intent;
 
     const/4 v5, 0x0
 
@@ -35322,7 +34827,6 @@
 
 .method public unInstallSystemApplications(ILjava/util/List;)I
     .locals 11
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -35477,7 +34981,6 @@
 
 .method public unmarkForRemoval(I)V
     .locals 3
-    .param p1    # I
 
     const-string/jumbo v0, "unmarkForRemoval"
 
@@ -35514,7 +35017,6 @@
 
 .method public unregisterObserver(Landroid/content/pm/IPersonaObserver;)V
     .locals 2
-    .param p1    # Landroid/content/pm/IPersonaObserver;
 
     const-string/jumbo v1, "unregisterObserver"
 
@@ -35531,10 +35033,6 @@
 
 .method public updatePersonaInfo(ILjava/lang/String;II)Z
     .locals 5
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
 
     invoke-virtual {p0, p1}, Lcom/android/server/pm/PersonaManagerService;->getPersonaInfo(I)Landroid/content/pm/PersonaInfo;
 
@@ -35582,7 +35080,6 @@
 
 .method public userActivity(I)V
     .locals 3
-    .param p1    # I
 
     const-string/jumbo v1, "userActivity"
 
@@ -35607,7 +35104,6 @@
 
 .method public userBackground(I)V
     .locals 17
-    .param p1    # I
 
     const-string/jumbo v12, "userBackground"
 
@@ -35954,7 +35450,6 @@
 
 .method public userForeground(I)V
     .locals 7
-    .param p1    # I
 
     const-string/jumbo v3, "userForeground"
 

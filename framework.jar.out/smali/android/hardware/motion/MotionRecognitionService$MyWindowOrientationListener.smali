@@ -21,8 +21,6 @@
 # direct methods
 .method constructor <init>(Landroid/hardware/motion/MotionRecognitionService;Landroid/content/Context;Landroid/os/Handler;)V
     .locals 0
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/os/Handler;
 
     iput-object p1, p0, Landroid/hardware/motion/MotionRecognitionService$MyWindowOrientationListener;->this$0:Landroid/hardware/motion/MotionRecognitionService;
 
@@ -35,7 +33,6 @@
 # virtual methods
 .method public onProposedRotationChanged(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "MotionRecognitionService"
 

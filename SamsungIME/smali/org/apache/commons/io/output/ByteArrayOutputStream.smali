@@ -44,7 +44,6 @@
 
 .method public constructor <init>(I)V
     .locals 3
-    .param p1    # I
 
     invoke-direct {p0}, Ljava/io/OutputStream;-><init>()V
 
@@ -88,7 +87,6 @@
 
 .method private getBuffer(I)[B
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lorg/apache/commons/io/output/ByteArrayOutputStream;->buffers:Ljava/util/List;
 
@@ -105,7 +103,6 @@
 
 .method private needNewBuffer(I)V
     .locals 3
-    .param p1    # I
 
     iget v1, p0, Lorg/apache/commons/io/output/ByteArrayOutputStream;->currentBufferIndex:I
 
@@ -365,7 +362,6 @@
 
 .method public toString(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/UnsupportedEncodingException;
@@ -385,7 +381,6 @@
 
 .method public declared-synchronized write(Ljava/io/InputStream;)I
     .locals 5
-    .param p1    # Ljava/io/InputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -476,7 +471,6 @@
 
 .method public declared-synchronized write(I)V
     .locals 3
-    .param p1    # I
 
     monitor-enter p0
 
@@ -530,9 +524,6 @@
 
 .method public write([BII)V
     .locals 6
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
 
     if-ltz p2, :cond_0
 
@@ -632,7 +623,6 @@
 
 .method public declared-synchronized writeTo(Ljava/io/OutputStream;)V
     .locals 5
-    .param p1    # Ljava/io/OutputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

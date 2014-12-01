@@ -60,7 +60,6 @@
 
 .method private hideStatusBar(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
@@ -145,8 +144,6 @@
 # virtual methods
 .method public addContentView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/ViewGroup$LayoutParams;
 
     const-string v0, "Sally Service"
 
@@ -163,7 +160,6 @@
 
 .method public addWindow(I)Landroid/view/Window;
     .locals 3
-    .param p1    # I
 
     const-string v1, "Sally Service"
 
@@ -184,10 +180,6 @@
 
 .method public addWindow(Landroid/view/View;III)Landroid/view/Window;
     .locals 6
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/4 v5, 0x0
 
@@ -210,11 +202,6 @@
 
 .method public addWindow(Landroid/view/View;IIII)Landroid/view/Window;
     .locals 9
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     const/4 v6, 0x0
 
@@ -442,7 +429,6 @@
 
 .method public dispatchGenericMotionEvent(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-object v0, p0, Landroid/app/SallyService;->mWindow:Landroid/view/Window;
 
@@ -465,7 +451,6 @@
 
 .method public dispatchKeyEvent(Landroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/KeyEvent;
 
     iget-object v0, p0, Landroid/app/SallyService;->mWindow:Landroid/view/Window;
 
@@ -506,7 +491,6 @@
 
 .method public dispatchKeyShortcutEvent(Landroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/KeyEvent;
 
     iget-object v0, p0, Landroid/app/SallyService;->mWindow:Landroid/view/Window;
 
@@ -529,7 +513,6 @@
 
 .method public dispatchPopulateAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
 
     const/4 v0, 0x0
 
@@ -538,7 +521,6 @@
 
 .method public dispatchTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-object v0, p0, Landroid/app/SallyService;->mWindow:Landroid/view/Window;
 
@@ -561,7 +543,6 @@
 
 .method public dispatchTrackballEvent(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-object v0, p0, Landroid/app/SallyService;->mWindow:Landroid/view/Window;
 
@@ -584,7 +565,6 @@
 
 .method public findViewById(I)Landroid/view/View;
     .locals 2
-    .param p1    # I
 
     const-string v0, "Sally Service"
 
@@ -631,14 +611,12 @@
 
 .method public onActionModeFinished(Landroid/view/ActionMode;)V
     .locals 0
-    .param p1    # Landroid/view/ActionMode;
 
     return-void
 .end method
 
 .method public onActionModeStarted(Landroid/view/ActionMode;)V
     .locals 0
-    .param p1    # Landroid/view/ActionMode;
 
     return-void
 .end method
@@ -651,7 +629,6 @@
 
 .method public onBind(Landroid/content/Intent;)Landroid/os/IBinder;
     .locals 3
-    .param p1    # Landroid/content/Intent;
 
     const-string v0, "Sally Service"
 
@@ -682,7 +659,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 1
-    .param p1    # Landroid/content/res/Configuration;
 
     iget v0, p1, Landroid/content/res/Configuration;->orientation:I
 
@@ -841,8 +817,6 @@
 
 .method public onCreatePanelMenu(ILandroid/view/Menu;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/Menu;
 
     const/4 v0, 0x0
 
@@ -851,7 +825,6 @@
 
 .method public onCreatePanelView(I)Landroid/view/View;
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -928,8 +901,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x0
 
@@ -938,8 +909,6 @@
 
 .method public onKeyLongPress(ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x0
 
@@ -948,9 +917,6 @@
 
 .method public onKeyMultiple(IILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x0
 
@@ -959,8 +925,6 @@
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x4
 
@@ -981,8 +945,6 @@
 
 .method public onMenuItemSelected(ILandroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/MenuItem;
 
     const/4 v0, 0x0
 
@@ -991,8 +953,6 @@
 
 .method public onMenuOpened(ILandroid/view/Menu;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/Menu;
 
     const/4 v0, 0x0
 
@@ -1001,17 +961,12 @@
 
 .method public onPanelClosed(ILandroid/view/Menu;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Landroid/view/Menu;
 
     return-void
 .end method
 
 .method public onPreparePanel(ILandroid/view/View;Landroid/view/Menu;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/Menu;
 
     const/4 v0, 0x0
 
@@ -1028,9 +983,6 @@
 
 .method public onStartCommand(Landroid/content/Intent;II)I
     .locals 6
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v5, 0x1
 
@@ -1146,21 +1098,18 @@
 
 .method public onWindowAttributesChanged(Landroid/view/WindowManager$LayoutParams;)V
     .locals 0
-    .param p1    # Landroid/view/WindowManager$LayoutParams;
 
     return-void
 .end method
 
 .method public onWindowFocusChanged(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method public onWindowStartingActionMode(Landroid/view/ActionMode$Callback;)Landroid/view/ActionMode;
     .locals 1
-    .param p1    # Landroid/view/ActionMode$Callback;
 
     const/4 v0, 0x0
 
@@ -1169,7 +1118,6 @@
 
 .method public removeWindow(Landroid/view/Window;)Z
     .locals 2
-    .param p1    # Landroid/view/Window;
 
     const-string v0, "Sally Service"
 
@@ -1200,7 +1148,6 @@
 
 .method public setAttributes(Landroid/view/WindowManager$LayoutParams;)V
     .locals 2
-    .param p1    # Landroid/view/WindowManager$LayoutParams;
 
     const-string v0, "Sally Service"
 
@@ -1217,7 +1164,6 @@
 
 .method public setContentView(I)V
     .locals 2
-    .param p1    # I
 
     const-string v0, "Sally Service"
 
@@ -1234,7 +1180,6 @@
 
 .method public setContentView(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     const-string v0, "Sally Service"
 
@@ -1251,8 +1196,6 @@
 
 .method public setContentView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/ViewGroup$LayoutParams;
 
     const-string v0, "Sally Service"
 

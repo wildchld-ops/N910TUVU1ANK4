@@ -153,9 +153,6 @@
 
 .method synthetic constructor <init>(Ljava/lang/String;ILandroid/hardware/contextaware/utilbundle/logger/CaLogger$1;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Landroid/hardware/contextaware/utilbundle/logger/CaLogger$1;
 
     invoke-direct {p0, p1, p2}, Landroid/hardware/contextaware/utilbundle/logger/CaLogger$Level;-><init>(Ljava/lang/String;I)V
 
@@ -164,7 +161,6 @@
 
 .method static synthetic access$300(Z)Ljava/lang/String;
     .locals 1
-    .param p0    # Z
 
     invoke-static {p0}, Landroid/hardware/contextaware/utilbundle/logger/CaLogger$Level;->getCallerInfo(Z)Ljava/lang/String;
 
@@ -175,7 +171,6 @@
 
 .method private static getCallerInfo(Z)Ljava/lang/String;
     .locals 5
-    .param p0    # Z
 
     # getter for: Landroid/hardware/contextaware/utilbundle/logger/CaLogger;->isCaller:Z
     invoke-static {}, Landroid/hardware/contextaware/utilbundle/logger/CaLogger;->access$600()Z
@@ -253,7 +248,6 @@
 
 .method public static valueOf(Ljava/lang/String;)Landroid/hardware/contextaware/utilbundle/logger/CaLogger$Level;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-class v0, Landroid/hardware/contextaware/utilbundle/logger/CaLogger$Level;
 

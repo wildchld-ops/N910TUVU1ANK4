@@ -53,8 +53,6 @@
 # virtual methods
 .method public onChange(ZLandroid/net/Uri;)V
     .locals 1
-    .param p1    # Z
-    .param p2    # Landroid/net/Uri;
 
     # getter for: Landroid/media/MediaFocusControl;->ENABLED_NOTIFICATION_LISTENERS_URI:Landroid/net/Uri;
     invoke-static {}, Landroid/media/MediaFocusControl;->access$400()Landroid/net/Uri;

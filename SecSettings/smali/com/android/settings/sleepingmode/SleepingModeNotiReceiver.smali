@@ -22,8 +22,6 @@
 
 .method private UpdateDataPowerSaving(Landroid/content/Context;I)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     const/4 v1, 0x1
 
@@ -57,7 +55,6 @@
 
 .method private cancelOnGoingAlarm(Landroid/content/Context;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
 
     const/4 v5, 0x0
 
@@ -98,7 +95,6 @@
 
 .method private isSleepingModeTime(Landroid/content/Context;)Z
     .locals 13
-    .param p1    # Landroid/content/Context;
 
     const/4 v9, 0x1
 
@@ -213,7 +209,6 @@
 
 .method private setOnGoingAlarm(Landroid/content/Context;)V
     .locals 21
-    .param p1    # Landroid/content/Context;
 
     invoke-static {}, Ljava/util/Calendar;->getInstance()Ljava/util/Calendar;
 
@@ -649,8 +644,6 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     const/4 v6, 0x2
 

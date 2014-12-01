@@ -52,7 +52,6 @@
 
 .method synthetic constructor <init>(Lcom/android/server/enterprise/log/FileLogger$1;)V
     .locals 0
-    .param p1    # Lcom/android/server/enterprise/log/FileLogger$1;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/log/FileLogger$LogBuffer;-><init>()V
 

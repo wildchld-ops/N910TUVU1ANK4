@@ -46,13 +46,6 @@
 # direct methods
 .method public constructor <init>(Landroid/net/http/RequestQueue;Ljava/lang/String;Landroid/net/WebAddress;Ljava/lang/String;Ljava/util/Map;Ljava/io/InputStream;ILandroid/net/http/Request;)V
     .locals 1
-    .param p1    # Landroid/net/http/RequestQueue;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/net/WebAddress;
-    .param p4    # Ljava/lang/String;
-    .param p6    # Ljava/io/InputStream;
-    .param p7    # I
-    .param p8    # Landroid/net/http/Request;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -111,14 +104,6 @@
 
 .method public constructor <init>(Landroid/net/http/RequestQueue;Ljava/lang/String;Landroid/net/WebAddress;Ljava/lang/String;Ljava/util/Map;Ljava/io/InputStream;ILandroid/net/http/Request;Landroid/net/http/Connection;)V
     .locals 0
-    .param p1    # Landroid/net/http/RequestQueue;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/net/WebAddress;
-    .param p4    # Ljava/lang/String;
-    .param p6    # Ljava/io/InputStream;
-    .param p7    # I
-    .param p8    # Landroid/net/http/Request;
-    .param p9    # Landroid/net/http/Connection;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -148,7 +133,6 @@
 
 .method private H(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -195,8 +179,6 @@
 
 .method private KD(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -229,7 +211,6 @@
 
 .method public static authorizationHeader(Z)Ljava/lang/String;
     .locals 1
-    .param p0    # Z
 
     if-nez p0, :cond_0
 
@@ -246,7 +227,6 @@
 
 .method private bufferToHex([B)Ljava/lang/String;
     .locals 7
-    .param p1    # [B
 
     const/16 v6, 0x10
 
@@ -340,8 +320,6 @@
 
 .method public static computeBasicAuthResponse(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p0}, Ljunit/framework/Assert;->assertNotNull(Ljava/lang/Object;)V
 
@@ -420,12 +398,6 @@
 
 .method private computeDigest(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Ljava/lang/String;
 
     if-nez p4, :cond_0
 
@@ -549,13 +521,6 @@
 
 .method private computeDigestAuthResponse(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Ljava/lang/String;
-    .param p7    # Ljava/lang/String;
 
     invoke-static {p1}, Ljunit/framework/Assert;->assertNotNull(Ljava/lang/Object;)V
 
@@ -979,7 +944,6 @@
 
 .method private doubleQuote(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -1077,7 +1041,6 @@
 
 .method public handleSslErrorResponse(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Landroid/net/http/RequestHandle;->mRequest:Landroid/net/http/Request;
 
@@ -1113,7 +1076,6 @@
 
 .method public pauseRequest(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Landroid/net/http/RequestHandle;->mRequest:Landroid/net/http/Request;
 
@@ -1146,7 +1108,6 @@
 
 .method public setRedirectCount(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/net/http/RequestHandle;->mRedirectCount:I
 
@@ -1155,9 +1116,6 @@
 
 .method public setupBasicAuthResponse(ZLjava/lang/String;Ljava/lang/String;)V
     .locals 5
-    .param p1    # Z
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     invoke-static {p2, p3}, Landroid/net/http/RequestHandle;->computeBasicAuthResponse(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
@@ -1196,14 +1154,6 @@
 
 .method public setupDigestAuthResponse(ZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 9
-    .param p1    # Z
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Ljava/lang/String;
-    .param p7    # Ljava/lang/String;
-    .param p8    # Ljava/lang/String;
 
     move-object v0, p0
 
@@ -1258,8 +1208,6 @@
 
 .method public setupRedirect(Ljava/lang/String;ILjava/util/Map;)Z
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

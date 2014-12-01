@@ -25,7 +25,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/MountService;Ljava/lang/String;)V
     .locals 1
-    .param p2    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/server/MountService$PackageInstalledMap;->this$0:Lcom/android/server/MountService;
 
@@ -42,8 +41,6 @@
 
 .method constructor <init>(Lcom/android/server/MountService;Ljava/lang/String;Z)V
     .locals 0
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     iput-object p1, p0, Lcom/android/server/MountService$PackageInstalledMap;->this$0:Lcom/android/server/MountService;
 
@@ -60,7 +57,6 @@
 # virtual methods
 .method public equals(Ljava/lang/Object;)Z
     .locals 3
-    .param p1    # Ljava/lang/Object;
 
     instance-of v1, p1, Lcom/android/server/MountService$PackageInstalledMap;
 

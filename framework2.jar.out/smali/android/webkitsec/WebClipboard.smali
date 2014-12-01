@@ -75,7 +75,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     const/4 v2, 0x0
 
@@ -150,7 +149,6 @@
 
 .method static synthetic access$000(Landroid/webkitsec/WebClipboard;)V
     .locals 0
-    .param p0    # Landroid/webkitsec/WebClipboard;
 
     invoke-direct {p0}, Landroid/webkitsec/WebClipboard;->nativeInitPasteboardJni()V
 
@@ -159,8 +157,6 @@
 
 .method static synthetic access$100(Landroid/webkitsec/WebClipboard;Landroid/sec/clipboard/data/ClipboardData;)V
     .locals 0
-    .param p0    # Landroid/webkitsec/WebClipboard;
-    .param p1    # Landroid/sec/clipboard/data/ClipboardData;
 
     invoke-direct {p0, p1}, Landroid/webkitsec/WebClipboard;->pasteClipBoardData(Landroid/sec/clipboard/data/ClipboardData;)V
 
@@ -169,7 +165,6 @@
 
 .method static synthetic access$200(Landroid/webkitsec/WebClipboard;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Landroid/webkitsec/WebClipboard;
 
     iget-object v0, p0, Landroid/webkitsec/WebClipboard;->mHandler:Landroid/os/Handler;
 
@@ -178,7 +173,6 @@
 
 .method private deleteDirectory(Ljava/io/File;)V
     .locals 5
-    .param p1    # Ljava/io/File;
 
     sget-object v2, Ljava/lang/System;->out:Ljava/io/PrintStream;
 
@@ -255,7 +249,6 @@
 
 .method private giveFileUrl(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     sget-object v2, Ljava/lang/System;->out:Ljava/io/PrintStream;
 
@@ -280,7 +273,6 @@
 
 .method private makeHtmlFragmentForInsertedImage(Ljava/lang/String;)Ljava/lang/String;
     .locals 20
-    .param p1    # Ljava/lang/String;
 
     const/4 v13, 0x0
 
@@ -815,7 +807,6 @@
 
 .method private pasteClipBoardData(Landroid/sec/clipboard/data/ClipboardData;)V
     .locals 12
-    .param p1    # Landroid/sec/clipboard/data/ClipboardData;
 
     sget-object v9, Ljava/lang/System;->out:Ljava/io/PrintStream;
 
@@ -1062,7 +1053,6 @@
 
 .method private saveBitampTemporary(Landroid/graphics/Bitmap;)Ljava/lang/String;
     .locals 12
-    .param p1    # Landroid/graphics/Bitmap;
 
     sget-object v9, Ljava/lang/System;->out:Ljava/io/PrintStream;
 
@@ -1252,7 +1242,6 @@
 
 .method private saveBitampTemporary(Ljava/lang/String;)Ljava/lang/String;
     .locals 14
-    .param p1    # Ljava/lang/String;
 
     const/4 v10, 0x0
 
@@ -1519,8 +1508,6 @@
 # virtual methods
 .method public copyFile(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v7, 0x0
 
@@ -1820,7 +1807,6 @@
 
 .method public getCloneFilePath(Ljava/lang/String;)Ljava/lang/String;
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     iget-boolean v5, p0, Landroid/webkitsec/WebClipboard;->DEBUG:Z
 
@@ -2837,8 +2823,6 @@
 
 .method public setDataToClipboard(Ljava/lang/String;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     sget-object v1, Ljava/lang/System;->out:Ljava/io/PrintStream;
 
@@ -2926,7 +2910,6 @@
 
 .method public setHTML(Ljava/lang/String;)V
     .locals 10
-    .param p1    # Ljava/lang/String;
 
     iget-boolean v7, p0, Landroid/webkitsec/WebClipboard;->DEBUG:Z
 
@@ -3040,7 +3023,6 @@
 
 .method public setInterfaceWithClipboard(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/webkitsec/WebClipboard;->mIsUsingIntent:Z
 
@@ -3049,7 +3031,6 @@
 
 .method setPasteListener(Landroid/webkitsec/WebClipboard$OnPasteFromSelectionUIListener;)V
     .locals 0
-    .param p1    # Landroid/webkitsec/WebClipboard$OnPasteFromSelectionUIListener;
 
     iput-object p1, p0, Landroid/webkitsec/WebClipboard;->mPasteListener:Landroid/webkitsec/WebClipboard$OnPasteFromSelectionUIListener;
 
@@ -3058,7 +3039,6 @@
 
 .method public setSelectionRemovalPatterns([Ljava/util/regex/Pattern;)V
     .locals 0
-    .param p1    # [Ljava/util/regex/Pattern;
 
     iput-object p1, p0, Landroid/webkitsec/WebClipboard;->mSelectionRemovalPatterns:[Ljava/util/regex/Pattern;
 
@@ -3067,7 +3047,6 @@
 
 .method public setText(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Landroid/sec/clipboard/data/list/ClipboardDataText;
 
@@ -3113,7 +3092,6 @@
 
 .method public setWidthForCopiedImage(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/webkitsec/WebClipboard;->mViewWidth:I
 
@@ -3122,7 +3100,6 @@
 
 .method public setZoomFactorForPasting(F)V
     .locals 0
-    .param p1    # F
 
     iput p1, p0, Landroid/webkitsec/WebClipboard;->mZoomFactor:F
 

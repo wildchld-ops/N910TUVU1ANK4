@@ -25,7 +25,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     const/4 v3, 0x1
 
@@ -80,8 +79,6 @@
 
 .method public constructor <init>(Landroid/content/Context;I)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     invoke-direct {p0, p1}, Lcom/android/mms/help/TwHelpDialog;-><init>(Landroid/content/Context;)V
 
@@ -90,9 +87,6 @@
 
 .method protected constructor <init>(Landroid/content/Context;ZLandroid/content/DialogInterface$OnCancelListener;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Z
-    .param p3    # Landroid/content/DialogInterface$OnCancelListener;
 
     invoke-direct {p0, p1}, Lcom/android/mms/help/TwHelpDialog;-><init>(Landroid/content/Context;)V
 
@@ -123,7 +117,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 6
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v5, 0x1
 
@@ -263,7 +256,6 @@
 
 .method public setShowWrongInputToast(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/help/TwHelpDialog;->mShowWrongInputToast:Z
 
@@ -272,7 +264,6 @@
 
 .method public setTouchTransparencyMode(Lcom/android/mms/help/TwHelpDialog$TouchMode;)V
     .locals 0
-    .param p1    # Lcom/android/mms/help/TwHelpDialog$TouchMode;
 
     iput-object p1, p0, Lcom/android/mms/help/TwHelpDialog;->mTouchTransparencyMode:Lcom/android/mms/help/TwHelpDialog$TouchMode;
 

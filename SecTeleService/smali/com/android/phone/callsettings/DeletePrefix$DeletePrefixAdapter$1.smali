@@ -108,7 +108,7 @@
 
     const v3, 0x7f090a6c
 
-    invoke-virtual {v2, v3}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {v2, v3}, Lcom/android/phone/callsettings/DeletePrefix;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
@@ -154,13 +154,13 @@
 
     iget-object v1, v1, Lcom/android/phone/callsettings/DeletePrefix$DeletePrefixAdapter;->this$0:Lcom/android/phone/callsettings/DeletePrefix;
 
-    invoke-virtual {v1, v4}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->removeDialog(I)V
+    invoke-virtual {v1, v4}, Lcom/android/phone/callsettings/DeletePrefix;->removeDialog(I)V
 
     iget-object v1, p0, Lcom/android/phone/callsettings/DeletePrefix$DeletePrefixAdapter$1;->this$1:Lcom/android/phone/callsettings/DeletePrefix$DeletePrefixAdapter;
 
     iget-object v1, v1, Lcom/android/phone/callsettings/DeletePrefix$DeletePrefixAdapter;->this$0:Lcom/android/phone/callsettings/DeletePrefix;
 
-    invoke-virtual {v1, v4}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->showDialog(I)V
+    invoke-virtual {v1, v4}, Lcom/android/phone/callsettings/DeletePrefix;->showDialog(I)V
 
     goto :goto_0
 

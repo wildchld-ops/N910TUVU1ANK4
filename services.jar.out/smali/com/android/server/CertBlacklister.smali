@@ -104,7 +104,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Landroid/os/Binder;-><init>()V
 
@@ -119,7 +118,6 @@
 
 .method private buildPubkeyObserver(Landroid/content/ContentResolver;)Lcom/android/server/CertBlacklister$BlacklistObserver;
     .locals 4
-    .param p1    # Landroid/content/ContentResolver;
 
     new-instance v0, Lcom/android/server/CertBlacklister$BlacklistObserver;
 
@@ -136,7 +134,6 @@
 
 .method private buildSerialObserver(Landroid/content/ContentResolver;)Lcom/android/server/CertBlacklister$BlacklistObserver;
     .locals 4
-    .param p1    # Landroid/content/ContentResolver;
 
     new-instance v0, Lcom/android/server/CertBlacklister$BlacklistObserver;
 
@@ -153,7 +150,6 @@
 
 .method private registerObservers(Landroid/content/ContentResolver;)V
     .locals 3
-    .param p1    # Landroid/content/ContentResolver;
 
     const/4 v2, 0x1
 

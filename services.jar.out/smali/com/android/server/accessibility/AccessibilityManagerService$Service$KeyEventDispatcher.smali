@@ -65,8 +65,6 @@
 
 .method synthetic constructor <init>(Lcom/android/server/accessibility/AccessibilityManagerService$Service;Lcom/android/server/accessibility/AccessibilityManagerService$1;)V
     .locals 0
-    .param p1    # Lcom/android/server/accessibility/AccessibilityManagerService$Service;
-    .param p2    # Lcom/android/server/accessibility/AccessibilityManagerService$1;
 
     invoke-direct {p0, p1}, Lcom/android/server/accessibility/AccessibilityManagerService$Service$KeyEventDispatcher;-><init>(Lcom/android/server/accessibility/AccessibilityManagerService$Service;)V
 
@@ -75,8 +73,6 @@
 
 .method private addPendingEventLocked(Landroid/view/KeyEvent;I)Lcom/android/server/accessibility/AccessibilityManagerService$PendingEvent;
     .locals 3
-    .param p1    # Landroid/view/KeyEvent;
-    .param p2    # I
 
     invoke-virtual {p1}, Landroid/view/InputEvent;->getSequenceNumber()I
 
@@ -138,7 +134,6 @@
 
 .method private finishPendingEventLocked(Lcom/android/server/accessibility/AccessibilityManagerService$PendingEvent;)V
     .locals 2
-    .param p1    # Lcom/android/server/accessibility/AccessibilityManagerService$PendingEvent;
 
     iget-boolean v0, p1, Lcom/android/server/accessibility/AccessibilityManagerService$PendingEvent;->handled:Z
 
@@ -167,7 +162,6 @@
 
 .method private removePendingEventLocked(I)Lcom/android/server/accessibility/AccessibilityManagerService$PendingEvent;
     .locals 4
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -216,8 +210,6 @@
 
 .method private sendKeyEventToInputFilter(Landroid/view/KeyEvent;I)V
     .locals 3
-    .param p1    # Landroid/view/KeyEvent;
-    .param p2    # I
 
     const/4 v2, 0x0
 
@@ -298,8 +290,6 @@
 
 .method public notifyKeyEvent(Landroid/view/KeyEvent;I)V
     .locals 6
-    .param p1    # Landroid/view/KeyEvent;
-    .param p2    # I
 
     iget-object v3, p0, Lcom/android/server/accessibility/AccessibilityManagerService$Service$KeyEventDispatcher;->this$1:Lcom/android/server/accessibility/AccessibilityManagerService$Service;
 
@@ -386,8 +376,6 @@
 
 .method public setOnKeyEventResult(ZI)V
     .locals 4
-    .param p1    # Z
-    .param p2    # I
 
     iget-object v1, p0, Lcom/android/server/accessibility/AccessibilityManagerService$Service$KeyEventDispatcher;->this$1:Lcom/android/server/accessibility/AccessibilityManagerService$Service;
 

@@ -277,7 +277,6 @@
 
 .method private constructor <init>(Ljava/lang/String;IILjava/lang/Class;)V
     .locals 0
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -297,11 +296,6 @@
 
 .method synthetic constructor <init>(Ljava/lang/String;IILjava/lang/Class;Lcom/android/server/connectivity/VpnNamespace$1;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/Class;
-    .param p5    # Lcom/android/server/connectivity/VpnNamespace$1;
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/server/connectivity/VpnNamespace$Cmd;-><init>(Ljava/lang/String;IILjava/lang/Class;)V
 
@@ -310,7 +304,6 @@
 
 .method static synthetic access$200(Lcom/android/server/connectivity/VpnNamespace$Cmd;)Ljava/lang/Class;
     .locals 1
-    .param p0    # Lcom/android/server/connectivity/VpnNamespace$Cmd;
 
     invoke-direct {p0}, Lcom/android/server/connectivity/VpnNamespace$Cmd;->getArgType()Ljava/lang/Class;
 
@@ -321,8 +314,6 @@
 
 .method static synthetic access$300(Lcom/android/server/connectivity/VpnNamespace$Cmd;Ljava/io/DataOutputStream;)V
     .locals 0
-    .param p0    # Lcom/android/server/connectivity/VpnNamespace$Cmd;
-    .param p1    # Ljava/io/DataOutputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -336,7 +327,6 @@
 
 .method static synthetic access$500(Ljava/io/DataInputStream;)Ljava/lang/Integer;
     .locals 1
-    .param p0    # Ljava/io/DataInputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -352,7 +342,6 @@
 
 .method static synthetic access$600(Ljava/io/DataInputStream;)Ljava/util/List;
     .locals 1
-    .param p0    # Ljava/io/DataInputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -383,7 +372,6 @@
 
 .method private static getIfListReply(Ljava/io/DataInputStream;)Ljava/util/List;
     .locals 6
-    .param p0    # Ljava/io/DataInputStream;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -462,7 +450,6 @@
 
 .method private static getIntReply(Ljava/io/DataInputStream;)Ljava/lang/Integer;
     .locals 1
-    .param p0    # Ljava/io/DataInputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -482,7 +469,6 @@
 
 .method private static getStringReply(Ljava/io/DataInputStream;)Ljava/lang/String;
     .locals 3
-    .param p0    # Ljava/io/DataInputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -506,7 +492,6 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/android/server/connectivity/VpnNamespace$Cmd;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-class v0, Lcom/android/server/connectivity/VpnNamespace$Cmd;
 
@@ -535,7 +520,6 @@
 
 .method private writeTo(Ljava/io/DataOutputStream;)V
     .locals 1
-    .param p1    # Ljava/io/DataOutputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

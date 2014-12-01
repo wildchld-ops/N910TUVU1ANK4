@@ -35,8 +35,6 @@
 
 .method synthetic constructor <init>(Landroid/view/ViewPropertyAnimator;Landroid/view/ViewPropertyAnimator$1;)V
     .locals 0
-    .param p1    # Landroid/view/ViewPropertyAnimator;
-    .param p2    # Landroid/view/ViewPropertyAnimator$1;
 
     invoke-direct {p0, p1}, Landroid/view/ViewPropertyAnimator$AnimatorEventListener;-><init>(Landroid/view/ViewPropertyAnimator;)V
 
@@ -47,7 +45,6 @@
 # virtual methods
 .method public onAnimationCancel(Landroid/animation/Animator;)V
     .locals 1
-    .param p1    # Landroid/animation/Animator;
 
     iget-object v0, p0, Landroid/view/ViewPropertyAnimator$AnimatorEventListener;->this$0:Landroid/view/ViewPropertyAnimator;
 
@@ -92,7 +89,6 @@
 
 .method public onAnimationEnd(Landroid/animation/Animator;)V
     .locals 3
-    .param p1    # Landroid/animation/Animator;
 
     iget-object v1, p0, Landroid/view/ViewPropertyAnimator$AnimatorEventListener;->this$0:Landroid/view/ViewPropertyAnimator;
 
@@ -212,7 +208,6 @@
 
 .method public onAnimationRepeat(Landroid/animation/Animator;)V
     .locals 1
-    .param p1    # Landroid/animation/Animator;
 
     iget-object v0, p0, Landroid/view/ViewPropertyAnimator$AnimatorEventListener;->this$0:Landroid/view/ViewPropertyAnimator;
 
@@ -238,7 +233,6 @@
 
 .method public onAnimationStart(Landroid/animation/Animator;)V
     .locals 2
-    .param p1    # Landroid/animation/Animator;
 
     iget-object v1, p0, Landroid/view/ViewPropertyAnimator$AnimatorEventListener;->this$0:Landroid/view/ViewPropertyAnimator;
 
@@ -338,7 +332,6 @@
 
 .method public onAnimationUpdate(Landroid/animation/ValueAnimator;)V
     .locals 14
-    .param p1    # Landroid/animation/ValueAnimator;
 
     const/4 v10, 0x1
 

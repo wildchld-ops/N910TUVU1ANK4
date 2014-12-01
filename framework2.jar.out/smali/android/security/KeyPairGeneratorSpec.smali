@@ -59,16 +59,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;ILjava/security/spec/AlgorithmParameterSpec;Ljavax/security/auth/x500/X500Principal;Ljava/math/BigInteger;Ljava/util/Date;Ljava/util/Date;I)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
-    .param p5    # Ljava/security/spec/AlgorithmParameterSpec;
-    .param p6    # Ljavax/security/auth/x500/X500Principal;
-    .param p7    # Ljava/math/BigInteger;
-    .param p8    # Ljava/util/Date;
-    .param p9    # Ljava/util/Date;
-    .param p10    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -199,9 +189,6 @@
 
 .method private static checkCorrectParametersSpec(IILjava/security/spec/AlgorithmParameterSpec;)V
     .locals 4
-    .param p0    # I
-    .param p1    # I
-    .param p2    # Ljava/security/spec/AlgorithmParameterSpec;
 
     const/16 v1, 0x74
 
@@ -299,8 +286,6 @@
 
 .method private static checkValidKeySize(II)V
     .locals 3
-    .param p0    # I
-    .param p1    # I
 
     const/16 v2, 0x2000
 
@@ -394,7 +379,6 @@
 
 .method private static getDefaultKeySizeForType(I)I
     .locals 3
-    .param p0    # I
 
     const/16 v0, 0x74
 

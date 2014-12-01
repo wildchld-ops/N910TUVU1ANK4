@@ -21,8 +21,6 @@
 # direct methods
 .method constructor <init>(Lcom/touchtype/personalizer/PersonalizerService$RunSmsParser;Landroid/content/Context;Lcom/touchtype_fluency/util/SwiftKeySession;)V
     .locals 0
-    .param p2    # Landroid/content/Context;
-    .param p3    # Lcom/touchtype_fluency/util/SwiftKeySession;
 
     iput-object p1, p0, Lcom/touchtype/personalizer/PersonalizerService$RunSmsParser$1;->this$1:Lcom/touchtype/personalizer/PersonalizerService$RunSmsParser;
 
@@ -345,8 +343,6 @@
 
 .method protected onProgress(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/touchtype/personalizer/PersonalizerService$RunSmsParser$1;->this$1:Lcom/touchtype/personalizer/PersonalizerService$RunSmsParser;
 

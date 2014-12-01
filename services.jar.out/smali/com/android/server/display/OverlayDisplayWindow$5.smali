@@ -33,7 +33,6 @@
 # virtual methods
 .method public onScale(Landroid/view/ScaleGestureDetector;)Z
     .locals 2
-    .param p1    # Landroid/view/ScaleGestureDetector;
 
     iget-object v0, p0, Lcom/android/server/display/OverlayDisplayWindow$5;->this$0:Lcom/android/server/display/OverlayDisplayWindow;
 

@@ -42,7 +42,6 @@
 
 .method static synthetic access$1000(Lcom/sec/android/app/camera/CropImage$7;)V
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/CropImage$7;
 
     invoke-direct {p0}, Lcom/sec/android/app/camera/CropImage$7;->makeDefault()V
 
@@ -51,8 +50,6 @@
 
 .method static synthetic access$900(Lcom/sec/android/app/camera/CropImage$7;Landroid/graphics/RectF;)V
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/CropImage$7;
-    .param p1    # Landroid/graphics/RectF;
 
     invoke-direct {p0, p1}, Lcom/sec/android/app/camera/CropImage$7;->handleBlinkFace(Landroid/graphics/RectF;)V
 
@@ -61,7 +58,6 @@
 
 .method private handleBlinkFace(Landroid/graphics/RectF;)V
     .locals 18
-    .param p1    # Landroid/graphics/RectF;
 
     new-instance v1, Lcom/sec/android/app/camera/HighlightView;
 

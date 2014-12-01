@@ -50,7 +50,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Landroid/app/AlertDialog;-><init>(Landroid/content/Context;)V
 
@@ -65,8 +64,6 @@
 
 .method public constructor <init>(Landroid/content/Context;I)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Landroid/app/AlertDialog;-><init>(Landroid/content/Context;I)V
 
@@ -81,7 +78,6 @@
 
 .method static synthetic access$000(Landroid/app/ProgressDialog;)Landroid/widget/ProgressBar;
     .locals 1
-    .param p0    # Landroid/app/ProgressDialog;
 
     iget-object v0, p0, Landroid/app/ProgressDialog;->mProgress:Landroid/widget/ProgressBar;
 
@@ -90,7 +86,6 @@
 
 .method static synthetic access$100(Landroid/app/ProgressDialog;)Ljava/lang/String;
     .locals 1
-    .param p0    # Landroid/app/ProgressDialog;
 
     iget-object v0, p0, Landroid/app/ProgressDialog;->mProgressNumberFormat:Ljava/lang/String;
 
@@ -99,7 +94,6 @@
 
 .method static synthetic access$200(Landroid/app/ProgressDialog;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Landroid/app/ProgressDialog;
 
     iget-object v0, p0, Landroid/app/ProgressDialog;->mProgressNumber:Landroid/widget/TextView;
 
@@ -108,7 +102,6 @@
 
 .method static synthetic access$300(Landroid/app/ProgressDialog;)Ljava/text/NumberFormat;
     .locals 1
-    .param p0    # Landroid/app/ProgressDialog;
 
     iget-object v0, p0, Landroid/app/ProgressDialog;->mProgressPercentFormat:Ljava/text/NumberFormat;
 
@@ -117,7 +110,6 @@
 
 .method static synthetic access$400(Landroid/app/ProgressDialog;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Landroid/app/ProgressDialog;
 
     iget-object v0, p0, Landroid/app/ProgressDialog;->mProgressPercent:Landroid/widget/TextView;
 
@@ -179,9 +171,6 @@
 
 .method public static show(Landroid/content/Context;Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Landroid/app/ProgressDialog;
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Ljava/lang/CharSequence;
 
     const/4 v0, 0x0
 
@@ -194,10 +183,6 @@
 
 .method public static show(Landroid/content/Context;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Z)Landroid/app/ProgressDialog;
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Ljava/lang/CharSequence;
-    .param p3    # Z
 
     const/4 v4, 0x0
 
@@ -220,11 +205,6 @@
 
 .method public static show(Landroid/content/Context;Ljava/lang/CharSequence;Ljava/lang/CharSequence;ZZ)Landroid/app/ProgressDialog;
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Ljava/lang/CharSequence;
-    .param p3    # Z
-    .param p4    # Z
 
     const/4 v5, 0x0
 
@@ -247,12 +227,6 @@
 
 .method public static show(Landroid/content/Context;Ljava/lang/CharSequence;Ljava/lang/CharSequence;ZZLandroid/content/DialogInterface$OnCancelListener;)Landroid/app/ProgressDialog;
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Ljava/lang/CharSequence;
-    .param p3    # Z
-    .param p4    # Z
-    .param p5    # Landroid/content/DialogInterface$OnCancelListener;
 
     new-instance v0, Landroid/app/ProgressDialog;
 
@@ -343,7 +317,6 @@
 
 .method public incrementProgressBy(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/app/ProgressDialog;->mProgress:Landroid/widget/ProgressBar;
 
@@ -370,7 +343,6 @@
 
 .method public incrementSecondaryProgressBy(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/app/ProgressDialog;->mProgress:Landroid/widget/ProgressBar;
 
@@ -419,7 +391,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 9
-    .param p1    # Landroid/os/Bundle;
 
     const v8, 0x102000d
 
@@ -644,7 +615,6 @@
 
 .method public setIndeterminate(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Landroid/app/ProgressDialog;->mProgress:Landroid/widget/ProgressBar;
 
@@ -665,7 +635,6 @@
 
 .method public setIndeterminateDrawable(Landroid/graphics/drawable/Drawable;)V
     .locals 1
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     iget-object v0, p0, Landroid/app/ProgressDialog;->mProgress:Landroid/widget/ProgressBar;
 
@@ -686,7 +655,6 @@
 
 .method public setMax(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/app/ProgressDialog;->mProgress:Landroid/widget/ProgressBar;
 
@@ -709,7 +677,6 @@
 
 .method public setMessage(Ljava/lang/CharSequence;)V
     .locals 2
-    .param p1    # Ljava/lang/CharSequence;
 
     iget-object v0, p0, Landroid/app/ProgressDialog;->mProgress:Landroid/widget/ProgressBar;
 
@@ -741,7 +708,6 @@
 
 .method public setProgress(I)V
     .locals 1
-    .param p1    # I
 
     iget-boolean v0, p0, Landroid/app/ProgressDialog;->mHasStarted:Z
 
@@ -764,7 +730,6 @@
 
 .method public setProgressDrawable(Landroid/graphics/drawable/Drawable;)V
     .locals 1
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     iget-object v0, p0, Landroid/app/ProgressDialog;->mProgress:Landroid/widget/ProgressBar;
 
@@ -785,7 +750,6 @@
 
 .method public setProgressNumberFormat(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/app/ProgressDialog;->mProgressNumberFormat:Ljava/lang/String;
 
@@ -796,7 +760,6 @@
 
 .method public setProgressPercentFormat(Ljava/text/NumberFormat;)V
     .locals 0
-    .param p1    # Ljava/text/NumberFormat;
 
     iput-object p1, p0, Landroid/app/ProgressDialog;->mProgressPercentFormat:Ljava/text/NumberFormat;
 
@@ -807,7 +770,6 @@
 
 .method public setProgressStyle(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/app/ProgressDialog;->mProgressStyle:I
 
@@ -816,7 +778,6 @@
 
 .method public setSecondaryProgress(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/app/ProgressDialog;->mProgress:Landroid/widget/ProgressBar;
 

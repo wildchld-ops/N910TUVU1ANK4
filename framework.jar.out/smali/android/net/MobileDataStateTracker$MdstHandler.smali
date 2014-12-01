@@ -21,8 +21,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/Looper;Landroid/net/MobileDataStateTracker;)V
     .locals 0
-    .param p1    # Landroid/os/Looper;
-    .param p2    # Landroid/net/MobileDataStateTracker;
 
     invoke-direct {p0, p1}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
@@ -35,7 +33,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 2
-    .param p1    # Landroid/os/Message;
 
     iget v0, p1, Landroid/os/Message;->what:I
 

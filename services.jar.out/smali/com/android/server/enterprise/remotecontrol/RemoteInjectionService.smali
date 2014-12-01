@@ -39,7 +39,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
 
     const/4 v3, 0x0
 
@@ -142,7 +141,6 @@
 
 .method static synthetic access$002(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/server/enterprise/remotecontrol/RemoteInjectionService;->mBlock:Z
 
@@ -151,7 +149,6 @@
 
 .method private enforceRemoteControlPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/remotecontrol/RemoteInjectionService;->getEDM()Landroid/app/enterprise/EnterpriseDeviceManager;
 
@@ -209,8 +206,6 @@
 
 .method private injectKeyEventInternal(Landroid/view/KeyEvent;Z)Z
     .locals 16
-    .param p1    # Landroid/view/KeyEvent;
-    .param p2    # Z
 
     invoke-virtual/range {p1 .. p1}, Landroid/view/KeyEvent;->getDownTime()J
 
@@ -306,8 +301,6 @@
 
 .method private injectPointerEventInternal(Landroid/view/MotionEvent;Z)Z
     .locals 3
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # Z
 
     invoke-static {p1}, Landroid/view/MotionEvent;->obtain(Landroid/view/MotionEvent;)Landroid/view/MotionEvent;
 
@@ -349,8 +342,6 @@
 
 .method private injectTrackballEventInternal(Landroid/view/MotionEvent;Z)Z
     .locals 3
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # Z
 
     invoke-static {p1}, Landroid/view/MotionEvent;->obtain(Landroid/view/MotionEvent;)Landroid/view/MotionEvent;
 
@@ -392,7 +383,6 @@
 
 .method private transformMotionEvent(Landroid/view/MotionEvent;)Landroid/view/MotionEvent;
     .locals 21
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-direct/range {p0 .. p0}, Lcom/android/server/enterprise/remotecontrol/RemoteInjectionService;->getWindowManager()Landroid/view/WindowManager;
 
@@ -537,8 +527,6 @@
 
 .method public static updateRemoteScreenDimensions(II)V
     .locals 2
-    .param p0    # I
-    .param p1    # I
 
     const-string v0, "RemoteInjection"
 
@@ -557,8 +545,6 @@
 # virtual methods
 .method public allowRemoteControl(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 10
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     const/4 v5, 0x1
 
@@ -686,8 +672,6 @@
 
 .method public injectKeyEvent(Landroid/view/KeyEvent;Z)Z
     .locals 10
-    .param p1    # Landroid/view/KeyEvent;
-    .param p2    # Z
 
     const/4 v0, 0x5
 
@@ -843,8 +827,6 @@
 
 .method public injectPointerEvent(Landroid/view/MotionEvent;Z)Z
     .locals 12
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # Z
 
     const/4 v2, 0x0
 
@@ -986,8 +968,6 @@
 
 .method public injectTrackballEvent(Landroid/view/MotionEvent;Z)Z
     .locals 12
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # Z
 
     const/4 v2, 0x0
 
@@ -1129,7 +1109,6 @@
 
 .method public isRemoteControlAllowed(I)Z
     .locals 8
-    .param p1    # I
 
     const/4 v2, 0x1
 
@@ -1189,7 +1168,6 @@
 
 .method public isRemoteControlAllowed(Landroid/app/enterprise/ContextInfo;)Z
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-static {p1}, Lcom/android/server/enterprise/EnterpriseDeviceManagerService;->getCallingOrCurrentUserId(Landroid/app/enterprise/ContextInfo;)I
 
@@ -1204,21 +1182,18 @@
 
 .method public onAdminAdded(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onAdminRemoved(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onPreAdminRemoval(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method

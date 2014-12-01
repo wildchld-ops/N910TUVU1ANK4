@@ -28,7 +28,6 @@
 
 .method synthetic constructor <init>(Landroid/support/v4/view/ScaleGestureDetectorCompat$1;)V
     .locals 0
-    .param p1    # Landroid/support/v4/view/ScaleGestureDetectorCompat$1;
 
     invoke-direct {p0}, Landroid/support/v4/view/ScaleGestureDetectorCompat$ScaleGestureDetectorCompatKitKatImpl;-><init>()V
 
@@ -39,7 +38,6 @@
 # virtual methods
 .method public isQuickScaleEnabled(Ljava/lang/Object;)Z
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     invoke-static {p1}, Landroid/support/v4/view/ScaleGestureDetectorCompatKitKat;->isQuickScaleEnabled(Ljava/lang/Object;)Z
 
@@ -50,8 +48,6 @@
 
 .method public setQuickScaleEnabled(Ljava/lang/Object;Z)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Z
 
     invoke-static {p1, p2}, Landroid/support/v4/view/ScaleGestureDetectorCompatKitKat;->setQuickScaleEnabled(Ljava/lang/Object;Z)V
 

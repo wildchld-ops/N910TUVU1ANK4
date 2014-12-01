@@ -87,7 +87,6 @@
 
 .method public static valueOf(Ljava/lang/String;)Landroid/net/wifi/WifiConfiguration$OperationMode;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-class v0, Landroid/net/wifi/WifiConfiguration$OperationMode;
 

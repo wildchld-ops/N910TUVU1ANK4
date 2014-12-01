@@ -64,7 +64,6 @@
 
 .method public constructor <init>(Landroid/net/DhcpInfo;)V
     .locals 1
-    .param p1    # Landroid/net/DhcpInfo;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -112,8 +111,6 @@
 
 .method private static putAddress(Ljava/lang/StringBuffer;I)V
     .locals 1
-    .param p0    # Ljava/lang/StringBuffer;
-    .param p1    # I
 
     invoke-static {p1}, Landroid/net/NetworkUtils;->intToInetAddress(I)Ljava/net/InetAddress;
 
@@ -229,8 +226,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget v0, p0, Landroid/net/DhcpInfo;->ipAddress:I
 

@@ -55,11 +55,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/os/INetworkManagementService;Lcom/android/server/ConnectivityService;Lcom/android/server/connectivity/Vpn;Lcom/android/internal/net/VpnProfile;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/INetworkManagementService;
-    .param p3    # Lcom/android/server/ConnectivityService;
-    .param p4    # Lcom/android/server/connectivity/Vpn;
-    .param p5    # Lcom/android/internal/net/VpnProfile;
 
     const/4 v4, 0x0
 
@@ -757,8 +752,6 @@
 
 .method private showNotification(II)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
 
     new-instance v0, Landroid/app/Notification$Builder;
 
@@ -980,7 +973,6 @@
 # virtual methods
 .method public augmentNetworkInfo(Landroid/net/NetworkInfo;)Landroid/net/NetworkInfo;
     .locals 5
-    .param p1    # Landroid/net/NetworkInfo;
 
     invoke-virtual {p1}, Landroid/net/NetworkInfo;->isConnected()Z
 
@@ -1042,7 +1034,6 @@
 
 .method public onNetworkInfoChanged(Landroid/net/NetworkInfo;)V
     .locals 2
-    .param p1    # Landroid/net/NetworkInfo;
 
     iget-object v1, p0, Lcom/android/server/net/LockdownVpnTracker;->mStateLock:Ljava/lang/Object;
 
@@ -1067,7 +1058,6 @@
 
 .method public onVpnStateChanged(Landroid/net/NetworkInfo;)V
     .locals 2
-    .param p1    # Landroid/net/NetworkInfo;
 
     invoke-virtual {p1}, Landroid/net/NetworkInfo;->getDetailedState()Landroid/net/NetworkInfo$DetailedState;
 

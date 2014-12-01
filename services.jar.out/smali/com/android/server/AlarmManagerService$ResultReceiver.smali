@@ -36,11 +36,6 @@
 # virtual methods
 .method public onSendFinished(Landroid/app/PendingIntent;Landroid/content/Intent;ILjava/lang/String;Landroid/os/Bundle;)V
     .locals 20
-    .param p1    # Landroid/app/PendingIntent;
-    .param p2    # Landroid/content/Intent;
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
-    .param p5    # Landroid/os/Bundle;
 
     move-object/from16 v0, p0
 

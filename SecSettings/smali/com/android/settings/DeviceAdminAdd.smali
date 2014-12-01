@@ -94,7 +94,6 @@
 
 .method static setViewVisibility(Ljava/util/ArrayList;I)V
     .locals 7
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -202,9 +201,6 @@
 
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     invoke-super {p0, p1, p2, p3}, Landroid/app/Activity;->onActivityResult(IILandroid/content/Intent;)V
 
@@ -244,7 +240,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 21
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super/range {p0 .. p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
@@ -1493,8 +1488,6 @@
 
 .method protected onCreateDialog(ILandroid/os/Bundle;)Landroid/app/Dialog;
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     packed-switch p1, :pswitch_data_0
 
@@ -1558,7 +1551,6 @@
 
 .method toggleMessageEllipsis(Landroid/view/View;)V
     .locals 3
-    .param p1    # Landroid/view/View;
 
     move-object v0, p1
 

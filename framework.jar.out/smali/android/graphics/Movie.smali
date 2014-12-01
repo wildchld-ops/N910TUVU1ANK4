@@ -10,7 +10,6 @@
 # direct methods
 .method private constructor <init>(I)V
     .locals 2
-    .param p1    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -35,7 +34,6 @@
 
 .method public static decodeFile(Ljava/lang/String;)Landroid/graphics/Movie;
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     :try_start_0
     new-instance v1, Ljava/io/FileInputStream;
@@ -61,7 +59,6 @@
 
 .method public static decodeStream(Ljava/io/InputStream;)Landroid/graphics/Movie;
     .locals 2
-    .param p0    # Ljava/io/InputStream;
 
     if-nez p0, :cond_0
 
@@ -97,7 +94,6 @@
 
 .method private static decodeTempStream(Ljava/io/InputStream;)Landroid/graphics/Movie;
     .locals 2
-    .param p0    # Ljava/io/InputStream;
 
     const/4 v0, 0x0
 
@@ -132,9 +128,6 @@
 # virtual methods
 .method public draw(Landroid/graphics/Canvas;FF)V
     .locals 1
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # F
-    .param p3    # F
 
     const/4 v0, 0x0
 

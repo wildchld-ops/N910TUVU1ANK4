@@ -39,11 +39,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/am/ServiceRecord;ZILandroid/content/Intent;Lcom/android/server/am/ActivityManagerService$NeededUriGrants;)V
     .locals 0
-    .param p1    # Lcom/android/server/am/ServiceRecord;
-    .param p2    # Z
-    .param p3    # I
-    .param p4    # Landroid/content/Intent;
-    .param p5    # Lcom/android/server/am/ActivityManagerService$NeededUriGrants;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

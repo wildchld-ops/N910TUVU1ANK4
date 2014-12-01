@@ -127,7 +127,6 @@
 
 .method public getCurrentSpellCheckerSubtype(Z)Landroid/view/textservice/SpellCheckerSubtype;
     .locals 5
-    .param p1    # Z
 
     const/4 v1, 0x0
 
@@ -278,10 +277,6 @@
 
 .method public newSpellCheckerSession(Landroid/os/Bundle;Ljava/util/Locale;Landroid/view/textservice/SpellCheckerSession$SpellCheckerSessionListener;Z)Landroid/view/textservice/SpellCheckerSession;
     .locals 17
-    .param p1    # Landroid/os/Bundle;
-    .param p2    # Ljava/util/Locale;
-    .param p3    # Landroid/view/textservice/SpellCheckerSession$SpellCheckerSessionListener;
-    .param p4    # Z
 
     if-nez p3, :cond_0
 
@@ -533,7 +528,6 @@
 
 .method public setCurrentSpellChecker(Landroid/view/textservice/SpellCheckerInfo;)V
     .locals 4
-    .param p1    # Landroid/view/textservice/SpellCheckerInfo;
 
     if-nez p1, :cond_0
 
@@ -595,7 +589,6 @@
 
 .method public setSpellCheckerEnabled(Z)V
     .locals 4
-    .param p1    # Z
 
     :try_start_0
     sget-object v1, Landroid/view/textservice/TextServicesManager;->sService:Lcom/android/internal/textservice/ITextServicesManager;
@@ -637,7 +630,6 @@
 
 .method public setSpellCheckerSubtype(Landroid/view/textservice/SpellCheckerSubtype;)V
     .locals 5
-    .param p1    # Landroid/view/textservice/SpellCheckerSubtype;
 
     if-nez p1, :cond_0
 

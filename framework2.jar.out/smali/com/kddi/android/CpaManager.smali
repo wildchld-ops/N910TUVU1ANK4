@@ -103,7 +103,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -402,8 +401,6 @@
 # virtual methods
 .method public changeMode(Ljava/lang/String;Lcom/kddi/android/CpaManager$Settings;)I
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/kddi/android/CpaManager$Settings;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;,

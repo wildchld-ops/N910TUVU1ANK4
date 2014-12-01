@@ -36,8 +36,6 @@
 # virtual methods
 .method public accept(Ljava/io/File;Ljava/lang/String;)Z
     .locals 8
-    .param p1    # Ljava/io/File;
-    .param p2    # Ljava/lang/String;
 
     invoke-static {p2}, Ljava/lang/Long;->parseLong(Ljava/lang/String;)J
 

@@ -32,7 +32,6 @@
 # direct methods
 .method protected constructor <init>(Landroid/hardware/contextaware/aggregator/lpp/LppFusion;Ljava/lang/String;)V
     .locals 2
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -79,7 +78,6 @@
 
 .method static synthetic access$1100(Landroid/hardware/contextaware/aggregator/lpp/LppFusion$LppFusionSM;)Landroid/hardware/contextaware/aggregator/lpp/LppFusion$LppFusionSM$LFIdleState;
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppFusion$LppFusionSM;
 
     iget-object v0, p0, Landroid/hardware/contextaware/aggregator/lpp/LppFusion$LppFusionSM;->mIdleState:Landroid/hardware/contextaware/aggregator/lpp/LppFusion$LppFusionSM$LFIdleState;
 
@@ -88,8 +86,6 @@
 
 .method static synthetic access$1200(Landroid/hardware/contextaware/aggregator/lpp/LppFusion$LppFusionSM;Lcom/android/internal/util/IState;)V
     .locals 0
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppFusion$LppFusionSM;
-    .param p1    # Lcom/android/internal/util/IState;
 
     invoke-virtual {p0, p1}, Landroid/hardware/contextaware/aggregator/lpp/LppFusion$LppFusionSM;->transitionTo(Lcom/android/internal/util/IState;)V
 
@@ -98,8 +94,6 @@
 
 .method static synthetic access$1300(Landroid/hardware/contextaware/aggregator/lpp/LppFusion$LppFusionSM;Lcom/android/internal/util/IState;)V
     .locals 0
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppFusion$LppFusionSM;
-    .param p1    # Lcom/android/internal/util/IState;
 
     invoke-virtual {p0, p1}, Landroid/hardware/contextaware/aggregator/lpp/LppFusion$LppFusionSM;->transitionTo(Lcom/android/internal/util/IState;)V
 
@@ -108,8 +102,6 @@
 
 .method static synthetic access$1500(Landroid/hardware/contextaware/aggregator/lpp/LppFusion$LppFusionSM;Lcom/android/internal/util/IState;)V
     .locals 0
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppFusion$LppFusionSM;
-    .param p1    # Lcom/android/internal/util/IState;
 
     invoke-virtual {p0, p1}, Landroid/hardware/contextaware/aggregator/lpp/LppFusion$LppFusionSM;->transitionTo(Lcom/android/internal/util/IState;)V
 
@@ -118,8 +110,6 @@
 
 .method static synthetic access$1600(Landroid/hardware/contextaware/aggregator/lpp/LppFusion$LppFusionSM;Lcom/android/internal/util/IState;)V
     .locals 0
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppFusion$LppFusionSM;
-    .param p1    # Lcom/android/internal/util/IState;
 
     invoke-virtual {p0, p1}, Landroid/hardware/contextaware/aggregator/lpp/LppFusion$LppFusionSM;->transitionTo(Lcom/android/internal/util/IState;)V
 
@@ -128,8 +118,6 @@
 
 .method static synthetic access$1700(Landroid/hardware/contextaware/aggregator/lpp/LppFusion$LppFusionSM;Lcom/android/internal/util/IState;)V
     .locals 0
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppFusion$LppFusionSM;
-    .param p1    # Lcom/android/internal/util/IState;
 
     invoke-virtual {p0, p1}, Landroid/hardware/contextaware/aggregator/lpp/LppFusion$LppFusionSM;->transitionTo(Lcom/android/internal/util/IState;)V
 
@@ -138,7 +126,6 @@
 
 .method static synthetic access$700(Landroid/hardware/contextaware/aggregator/lpp/LppFusion$LppFusionSM;)Landroid/hardware/contextaware/aggregator/lpp/LppFusion$LppFusionSM$LFWaitLocState;
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppFusion$LppFusionSM;
 
     iget-object v0, p0, Landroid/hardware/contextaware/aggregator/lpp/LppFusion$LppFusionSM;->mWaitLocState:Landroid/hardware/contextaware/aggregator/lpp/LppFusion$LppFusionSM$LFWaitLocState;
 
@@ -147,8 +134,6 @@
 
 .method static synthetic access$800(Landroid/hardware/contextaware/aggregator/lpp/LppFusion$LppFusionSM;Lcom/android/internal/util/IState;)V
     .locals 0
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppFusion$LppFusionSM;
-    .param p1    # Lcom/android/internal/util/IState;
 
     invoke-virtual {p0, p1}, Landroid/hardware/contextaware/aggregator/lpp/LppFusion$LppFusionSM;->transitionTo(Lcom/android/internal/util/IState;)V
 
@@ -157,7 +142,6 @@
 
 .method static synthetic access$900(Landroid/hardware/contextaware/aggregator/lpp/LppFusion$LppFusionSM;)V
     .locals 0
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppFusion$LppFusionSM;
 
     invoke-direct {p0}, Landroid/hardware/contextaware/aggregator/lpp/LppFusion$LppFusionSM;->goToSleep()V
 

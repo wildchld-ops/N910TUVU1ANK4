@@ -63,7 +63,6 @@
 
 .method public constructor <init>(Lcom/visionobjects/resourcemanager/Version;)V
     .locals 1
-    .param p1    # Lcom/visionobjects/resourcemanager/Version;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -80,7 +79,6 @@
 
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 12
-    .param p1    # Ljava/lang/String;
 
     const/4 v9, 0x0
 
@@ -289,7 +287,6 @@
 # virtual methods
 .method public compareTo(Lcom/visionobjects/resourcemanager/Version;)I
     .locals 8
-    .param p1    # Lcom/visionobjects/resourcemanager/Version;
 
     const/4 v5, 0x1
 
@@ -380,7 +377,6 @@
 
 .method public bridge synthetic compareTo(Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/visionobjects/resourcemanager/Version;
 
@@ -393,7 +389,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     instance-of v0, p1, Lcom/visionobjects/resourcemanager/Version;
 

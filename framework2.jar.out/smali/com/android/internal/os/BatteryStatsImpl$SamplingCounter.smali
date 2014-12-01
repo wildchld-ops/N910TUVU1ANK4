@@ -34,7 +34,6 @@
 
 .method constructor <init>(Ljava/util/ArrayList;Landroid/os/Parcel;)V
     .locals 0
-    .param p2    # Landroid/os/Parcel;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -56,7 +55,6 @@
 # virtual methods
 .method public addCountAtomic(J)V
     .locals 2
-    .param p1    # J
 
     iget-object v0, p0, Lcom/android/internal/os/BatteryStatsImpl$Counter;->mCount:Ljava/util/concurrent/atomic/AtomicInteger;
 

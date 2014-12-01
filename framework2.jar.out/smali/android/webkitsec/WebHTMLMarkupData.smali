@@ -59,7 +59,6 @@
 
 .method public setCharSet(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/webkitsec/WebHTMLMarkupData;->mCharSet:Ljava/lang/String;
 
@@ -68,7 +67,6 @@
 
 .method public setHTMLFragment(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/webkitsec/WebHTMLMarkupData;->mHTMLFragment:Ljava/lang/String;
 
@@ -77,7 +75,6 @@
 
 .method public setPlainText(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/webkitsec/WebHTMLMarkupData;->mPlainText:Ljava/lang/String;
 

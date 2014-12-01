@@ -36,7 +36,6 @@
 # virtual methods
 .method public onPreferenceClick(Landroid/preference/Preference;)Z
     .locals 6
-    .param p1    # Landroid/preference/Preference;
 
     instance-of v4, p1, Landroid/preference/CheckBoxPreference;
 

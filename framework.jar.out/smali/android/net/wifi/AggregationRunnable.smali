@@ -33,7 +33,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -48,7 +47,6 @@
 
 .method static synthetic access$000(Landroid/net/wifi/AggregationRunnable;)Ljava/lang/String;
     .locals 1
-    .param p0    # Landroid/net/wifi/AggregationRunnable;
 
     iget-object v0, p0, Landroid/net/wifi/AggregationRunnable;->TAG:Ljava/lang/String;
 
@@ -57,7 +55,6 @@
 
 .method static synthetic access$100(Landroid/net/wifi/AggregationRunnable;)Lorg/xml/sax/XMLReader;
     .locals 1
-    .param p0    # Landroid/net/wifi/AggregationRunnable;
 
     iget-object v0, p0, Landroid/net/wifi/AggregationRunnable;->xmlreader:Lorg/xml/sax/XMLReader;
 
@@ -66,7 +63,6 @@
 
 .method static synthetic access$200(Landroid/net/wifi/AggregationRunnable;)Landroid/net/wifi/AggregationHandler;
     .locals 1
-    .param p0    # Landroid/net/wifi/AggregationRunnable;
 
     iget-object v0, p0, Landroid/net/wifi/AggregationRunnable;->handler:Landroid/net/wifi/AggregationHandler;
 

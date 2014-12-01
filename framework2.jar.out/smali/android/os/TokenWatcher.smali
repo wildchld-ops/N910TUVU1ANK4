@@ -38,8 +38,6 @@
 # direct methods
 .method public constructor <init>(Landroid/os/Handler;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Landroid/os/Handler;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -80,7 +78,6 @@
 
 .method static synthetic access$000(Landroid/os/TokenWatcher;)Ljava/util/WeakHashMap;
     .locals 1
-    .param p0    # Landroid/os/TokenWatcher;
 
     iget-object v0, p0, Landroid/os/TokenWatcher;->mTokens:Ljava/util/WeakHashMap;
 
@@ -89,7 +86,6 @@
 
 .method static synthetic access$100(Landroid/os/TokenWatcher;)I
     .locals 1
-    .param p0    # Landroid/os/TokenWatcher;
 
     iget v0, p0, Landroid/os/TokenWatcher;->mNotificationQueue:I
 
@@ -98,8 +94,6 @@
 
 .method static synthetic access$102(Landroid/os/TokenWatcher;I)I
     .locals 0
-    .param p0    # Landroid/os/TokenWatcher;
-    .param p1    # I
 
     iput p1, p0, Landroid/os/TokenWatcher;->mNotificationQueue:I
 
@@ -108,7 +102,6 @@
 
 .method static synthetic access$200(Landroid/os/TokenWatcher;)Ljava/lang/String;
     .locals 1
-    .param p0    # Landroid/os/TokenWatcher;
 
     iget-object v0, p0, Landroid/os/TokenWatcher;->mTag:Ljava/lang/String;
 
@@ -258,7 +251,6 @@
 
 .method private sendNotificationLocked(Z)V
     .locals 3
-    .param p1    # Z
 
     const/4 v2, -0x1
 
@@ -308,8 +300,6 @@
 # virtual methods
 .method public acquire(Landroid/os/IBinder;Ljava/lang/String;)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Ljava/lang/String;
 
     iget-object v4, p0, Landroid/os/TokenWatcher;->mTokens:Ljava/util/WeakHashMap;
 
@@ -383,8 +373,6 @@
 
 .method public cleanup(Landroid/os/IBinder;Z)V
     .locals 4
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Z
 
     iget-object v2, p0, Landroid/os/TokenWatcher;->mTokens:Ljava/util/WeakHashMap;
 
@@ -485,7 +473,6 @@
 
 .method public dump(Ljava/io/PrintWriter;)V
     .locals 4
-    .param p1    # Ljava/io/PrintWriter;
 
     invoke-direct {p0}, Landroid/os/TokenWatcher;->dumpInternal()Ljava/util/ArrayList;
 
@@ -542,7 +529,6 @@
 
 .method public release(Landroid/os/IBinder;)V
     .locals 1
-    .param p1    # Landroid/os/IBinder;
 
     const/4 v0, 0x1
 

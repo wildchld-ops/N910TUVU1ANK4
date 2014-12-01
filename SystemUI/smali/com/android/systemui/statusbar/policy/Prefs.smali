@@ -28,7 +28,6 @@
 
 .method public static edit(Landroid/content/Context;)Landroid/content/SharedPreferences$Editor;
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     const-string v0, "status_bar"
 
@@ -47,7 +46,6 @@
 
 .method public static read(Landroid/content/Context;)Landroid/content/SharedPreferences;
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     const-string v0, "status_bar"
 

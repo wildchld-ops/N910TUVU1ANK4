@@ -33,7 +33,6 @@
 # virtual methods
 .method public onUserSwitchComplete(I)V
     .locals 10
-    .param p1    # I
 
     const/4 v9, 0x0
 
@@ -249,8 +248,6 @@
 
 .method public onUserSwitching(ILandroid/os/IRemoteCallback;)V
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/os/IRemoteCallback;
 
     const-string v3, "onUserSwitching"
 

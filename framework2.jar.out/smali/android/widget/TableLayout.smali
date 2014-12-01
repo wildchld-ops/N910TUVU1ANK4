@@ -34,7 +34,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;)V
 
@@ -45,8 +44,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 8
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/16 v7, 0x2a
 
@@ -136,8 +133,6 @@
 
 .method static synthetic access$200(Landroid/widget/TableLayout;Landroid/view/View;)V
     .locals 0
-    .param p0    # Landroid/widget/TableLayout;
-    .param p1    # Landroid/view/View;
 
     invoke-direct {p0, p1}, Landroid/widget/TableLayout;->trackCollapsedColumns(Landroid/view/View;)V
 
@@ -146,7 +141,6 @@
 
 .method private findLargestCells(I)V
     .locals 21
-    .param p1    # I
 
     const/4 v7, 0x1
 
@@ -444,10 +438,6 @@
 
 .method private mutateColumnsWidth(Landroid/util/SparseBooleanArray;ZII)V
     .locals 12
-    .param p1    # Landroid/util/SparseBooleanArray;
-    .param p2    # Z
-    .param p3    # I
-    .param p4    # I
 
     const/4 v8, 0x0
 
@@ -605,7 +595,6 @@
 
 .method private static parseColumns(Ljava/lang/String;)Landroid/util/SparseBooleanArray;
     .locals 9
-    .param p0    # Ljava/lang/String;
 
     new-instance v4, Landroid/util/SparseBooleanArray;
 
@@ -692,7 +681,6 @@
 
 .method private shrinkAndStretchColumns(I)V
     .locals 8
-    .param p1    # I
 
     iget-object v6, p0, Landroid/widget/TableLayout;->mMaxWidths:[I
 
@@ -785,7 +773,6 @@
 
 .method private trackCollapsedColumns(Landroid/view/View;)V
     .locals 7
-    .param p1    # Landroid/view/View;
 
     instance-of v6, p1, Landroid/widget/TableRow;
 
@@ -831,7 +818,6 @@
 # virtual methods
 .method public addView(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     invoke-super {p0, p1}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
 
@@ -842,8 +828,6 @@
 
 .method public addView(Landroid/view/View;I)V
     .locals 0
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     invoke-super {p0, p1, p2}, Landroid/view/ViewGroup;->addView(Landroid/view/View;I)V
 
@@ -854,9 +838,6 @@
 
 .method public addView(Landroid/view/View;ILandroid/view/ViewGroup$LayoutParams;)V
     .locals 0
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # Landroid/view/ViewGroup$LayoutParams;
 
     invoke-super {p0, p1, p2, p3}, Landroid/view/ViewGroup;->addView(Landroid/view/View;ILandroid/view/ViewGroup$LayoutParams;)V
 
@@ -867,8 +848,6 @@
 
 .method public addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
     .locals 0
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/ViewGroup$LayoutParams;
 
     invoke-super {p0, p1, p2}, Landroid/view/ViewGroup;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
@@ -879,7 +858,6 @@
 
 .method protected checkLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Z
     .locals 1
-    .param p1    # Landroid/view/ViewGroup$LayoutParams;
 
     instance-of v0, p1, Landroid/widget/TableLayout$LayoutParams;
 
@@ -908,7 +886,6 @@
 
 .method public bridge synthetic generateLayoutParams(Landroid/util/AttributeSet;)Landroid/view/ViewGroup$LayoutParams;
     .locals 1
-    .param p1    # Landroid/util/AttributeSet;
 
     invoke-virtual {p0, p1}, Landroid/widget/TableLayout;->generateLayoutParams(Landroid/util/AttributeSet;)Landroid/widget/TableLayout$LayoutParams;
 
@@ -919,7 +896,6 @@
 
 .method protected bridge synthetic generateLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Landroid/view/ViewGroup$LayoutParams;
     .locals 1
-    .param p1    # Landroid/view/ViewGroup$LayoutParams;
 
     invoke-virtual {p0, p1}, Landroid/widget/TableLayout;->generateLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Landroid/widget/LinearLayout$LayoutParams;
 
@@ -930,7 +906,6 @@
 
 .method public bridge synthetic generateLayoutParams(Landroid/util/AttributeSet;)Landroid/widget/LinearLayout$LayoutParams;
     .locals 1
-    .param p1    # Landroid/util/AttributeSet;
 
     invoke-virtual {p0, p1}, Landroid/widget/TableLayout;->generateLayoutParams(Landroid/util/AttributeSet;)Landroid/widget/TableLayout$LayoutParams;
 
@@ -941,7 +916,6 @@
 
 .method protected generateLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Landroid/widget/LinearLayout$LayoutParams;
     .locals 1
-    .param p1    # Landroid/view/ViewGroup$LayoutParams;
 
     new-instance v0, Landroid/widget/TableLayout$LayoutParams;
 
@@ -952,7 +926,6 @@
 
 .method public generateLayoutParams(Landroid/util/AttributeSet;)Landroid/widget/TableLayout$LayoutParams;
     .locals 2
-    .param p1    # Landroid/util/AttributeSet;
 
     new-instance v0, Landroid/widget/TableLayout$LayoutParams;
 
@@ -967,7 +940,6 @@
 
 .method public isColumnCollapsed(I)Z
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/widget/TableLayout;->mCollapsedColumns:Landroid/util/SparseBooleanArray;
 
@@ -980,7 +952,6 @@
 
 .method public isColumnShrinkable(I)Z
     .locals 1
-    .param p1    # I
 
     iget-boolean v0, p0, Landroid/widget/TableLayout;->mShrinkAllColumns:Z
 
@@ -1008,7 +979,6 @@
 
 .method public isColumnStretchable(I)Z
     .locals 1
-    .param p1    # I
 
     iget-boolean v0, p0, Landroid/widget/TableLayout;->mStretchAllColumns:Z
 
@@ -1052,12 +1022,6 @@
 
 .method measureChildBeforeLayout(Landroid/view/View;IIIII)V
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     instance-of v0, p1, Landroid/widget/TableRow;
 
@@ -1079,8 +1043,6 @@
 
 .method measureVertical(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1}, Landroid/widget/TableLayout;->findLargestCells(I)V
 
@@ -1093,7 +1055,6 @@
 
 .method public onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
     .locals 1
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
 
     invoke-super {p0, p1}, Landroid/widget/LinearLayout;->onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
 
@@ -1110,7 +1071,6 @@
 
 .method public onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
     .locals 1
-    .param p1    # Landroid/view/accessibility/AccessibilityNodeInfo;
 
     invoke-super {p0, p1}, Landroid/widget/LinearLayout;->onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
 
@@ -1127,11 +1087,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 0
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-virtual {p0, p2, p3, p4, p5}, Landroid/widget/LinearLayout;->layoutVertical(IIII)V
 
@@ -1140,8 +1095,6 @@
 
 .method protected onMeasure(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0, p1, p2}, Landroid/widget/TableLayout;->measureVertical(II)V
 
@@ -1182,8 +1135,6 @@
 
 .method public setColumnCollapsed(IZ)V
     .locals 4
-    .param p1    # I
-    .param p2    # Z
 
     iget-object v3, p0, Landroid/widget/TableLayout;->mCollapsedColumns:Landroid/util/SparseBooleanArray;
 
@@ -1223,8 +1174,6 @@
 
 .method public setColumnShrinkable(IZ)V
     .locals 1
-    .param p1    # I
-    .param p2    # Z
 
     iget-object v0, p0, Landroid/widget/TableLayout;->mShrinkableColumns:Landroid/util/SparseBooleanArray;
 
@@ -1237,8 +1186,6 @@
 
 .method public setColumnStretchable(IZ)V
     .locals 1
-    .param p1    # I
-    .param p2    # Z
 
     iget-object v0, p0, Landroid/widget/TableLayout;->mStretchableColumns:Landroid/util/SparseBooleanArray;
 
@@ -1251,7 +1198,6 @@
 
 .method public setOnHierarchyChangeListener(Landroid/view/ViewGroup$OnHierarchyChangeListener;)V
     .locals 1
-    .param p1    # Landroid/view/ViewGroup$OnHierarchyChangeListener;
 
     iget-object v0, p0, Landroid/widget/TableLayout;->mPassThroughListener:Landroid/widget/TableLayout$PassThroughHierarchyChangeListener;
 
@@ -1263,7 +1209,6 @@
 
 .method public setShrinkAllColumns(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/widget/TableLayout;->mShrinkAllColumns:Z
 
@@ -1272,7 +1217,6 @@
 
 .method public setStretchAllColumns(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/widget/TableLayout;->mStretchAllColumns:Z
 

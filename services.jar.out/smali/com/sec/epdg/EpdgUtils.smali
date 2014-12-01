@@ -57,7 +57,6 @@
 
 .method public static convertIpFromInetAddrToInt(Ljava/net/InetAddress;)I
     .locals 6
-    .param p0    # Ljava/net/InetAddress;
 
     const/4 v2, 0x0
 
@@ -156,7 +155,6 @@
 
 .method public static getApnNamebyType(Ljava/lang/String;)Ljava/lang/String;
     .locals 7
-    .param p0    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -269,7 +267,6 @@
 
 .method public static getApnTypeByName(Ljava/lang/String;)Ljava/lang/String;
     .locals 8
-    .param p0    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -384,7 +381,6 @@
 
 .method public static getApnTypebyNetworkType(I)Ljava/lang/String;
     .locals 4
-    .param p0    # I
 
     const-string v1, "[UTILS]"
 
@@ -506,10 +502,6 @@
 
 .method public static getBroadcast(Landroid/content/Context;ILandroid/content/Intent;I)Landroid/app/PendingIntent;
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # Landroid/content/Intent;
-    .param p3    # I
 
     sget-object v0, Landroid/os/UserHandle;->ALL:Landroid/os/UserHandle;
 
@@ -538,7 +530,6 @@
 
 .method public static getIwlanInterfaceName(I)Ljava/lang/String;
     .locals 4
-    .param p0    # I
 
     const/4 v0, 0x0
 
@@ -603,7 +594,6 @@
 
 .method public static getMobileInterfaceName(I)Ljava/lang/String;
     .locals 4
-    .param p0    # I
 
     const/4 v0, 0x0
 
@@ -676,7 +666,6 @@
 
 .method public static getNetworkTypeByApnType(Ljava/lang/String;)I
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     const/4 v0, -0x1
 
@@ -806,7 +795,6 @@
 
 .method public static getProfileIDbyNetworkType(I)I
     .locals 13
-    .param p0    # I
 
     const-string v10, "[UTILS]"
 
@@ -1247,7 +1235,6 @@
 
 .method public static getProfileIdbyApnType(Ljava/lang/String;)I
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     if-nez p0, :cond_0
 
@@ -1276,7 +1263,6 @@
 
 .method public static isAlwaysOnApn(Ljava/lang/String;)Z
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     invoke-static {}, Lcom/sec/epdg/EpdgService;->getEpdgSettings()Lcom/sec/epdg/EpdgSettings;
 
@@ -1317,7 +1303,6 @@
 
 .method public static isAttachApn(I)Z
     .locals 4
-    .param p0    # I
 
     invoke-static {}, Lcom/sec/epdg/EpdgService;->getEpdgSettings()Lcom/sec/epdg/EpdgSettings;
 
@@ -1492,7 +1477,6 @@
 
 .method public static isWifiConnected(Landroid/content/Context;)Z
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     const/4 v2, 0x1
 
@@ -1527,7 +1511,6 @@
 
 .method public static isWifiSettingOn(Landroid/content/Context;)Z
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     const-string/jumbo v1, "wifi"
 
@@ -1572,7 +1555,6 @@
 
 .method public static lookupHost(Ljava/lang/String;)I
     .locals 7
-    .param p0    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -1682,8 +1664,6 @@
 
 .method public static sendStickyBroadcast(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/content/Intent;
 
     sget-object v0, Landroid/os/UserHandle;->ALL:Landroid/os/UserHandle;
 
@@ -1694,7 +1674,6 @@
 
 .method public static shouldEpdgSupressW2LToRil(I)Z
     .locals 4
-    .param p0    # I
 
     const/4 v1, 0x1
 

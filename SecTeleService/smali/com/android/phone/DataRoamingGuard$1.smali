@@ -54,7 +54,7 @@
     :cond_0
     iget-object v0, p0, Lcom/android/phone/DataRoamingGuard$1;->this$0:Lcom/android/phone/DataRoamingGuard;
 
-    invoke-virtual {v0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {v0}, Lcom/android/phone/DataRoamingGuard;->finish()V
 
     :cond_1
     return-void

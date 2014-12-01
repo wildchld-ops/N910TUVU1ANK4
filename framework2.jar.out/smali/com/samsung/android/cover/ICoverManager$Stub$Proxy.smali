@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -45,9 +44,6 @@
 
 .method public disableCoverManager(ZLandroid/os/IBinder;Ljava/lang/String;)V
     .locals 5
-    .param p1    # Z
-    .param p2    # Landroid/os/IBinder;
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -300,8 +296,6 @@
 
 .method public notifyCoverAttachStateChanged(JZ)V
     .locals 5
-    .param p1    # J
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -362,8 +356,6 @@
 
 .method public notifyCoverSwitchStateChanged(JZ)V
     .locals 5
-    .param p1    # J
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -424,8 +416,6 @@
 
 .method public registerCallback(Landroid/os/IBinder;Landroid/content/ComponentName;)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -498,9 +488,6 @@
 
 .method public registerListenerCallback(Landroid/os/IBinder;Landroid/content/ComponentName;I)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -575,8 +562,6 @@
 
 .method public sendDataToCover(I[B)V
     .locals 5
-    .param p1    # I
-    .param p2    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -679,7 +664,6 @@
 
 .method public unregisterCallback(Landroid/os/IBinder;)Z
     .locals 6
-    .param p1    # Landroid/os/IBinder;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

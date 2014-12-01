@@ -238,7 +238,6 @@
 
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -313,7 +312,6 @@
 
 .method static synthetic access$000(Landroid/filterpacks/videosrc/MediaSource;)Z
     .locals 1
-    .param p0    # Landroid/filterpacks/videosrc/MediaSource;
 
     iget-boolean v0, p0, Landroid/filterpacks/videosrc/MediaSource;->mLogVerbose:Z
 
@@ -322,7 +320,6 @@
 
 .method static synthetic access$100(Landroid/filterpacks/videosrc/MediaSource;)Z
     .locals 1
-    .param p0    # Landroid/filterpacks/videosrc/MediaSource;
 
     iget-boolean v0, p0, Landroid/filterpacks/videosrc/MediaSource;->mGotSize:Z
 
@@ -331,8 +328,6 @@
 
 .method static synthetic access$102(Landroid/filterpacks/videosrc/MediaSource;Z)Z
     .locals 0
-    .param p0    # Landroid/filterpacks/videosrc/MediaSource;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/filterpacks/videosrc/MediaSource;->mGotSize:Z
 
@@ -341,7 +336,6 @@
 
 .method static synthetic access$200(Landroid/filterpacks/videosrc/MediaSource;)I
     .locals 1
-    .param p0    # Landroid/filterpacks/videosrc/MediaSource;
 
     iget v0, p0, Landroid/filterpacks/videosrc/MediaSource;->mOrientation:I
 
@@ -350,7 +344,6 @@
 
 .method static synthetic access$300(Landroid/filterpacks/videosrc/MediaSource;)Landroid/filterfw/core/MutableFrameFormat;
     .locals 1
-    .param p0    # Landroid/filterpacks/videosrc/MediaSource;
 
     iget-object v0, p0, Landroid/filterpacks/videosrc/MediaSource;->mOutputFormat:Landroid/filterfw/core/MutableFrameFormat;
 
@@ -359,8 +352,6 @@
 
 .method static synthetic access$402(Landroid/filterpacks/videosrc/MediaSource;I)I
     .locals 0
-    .param p0    # Landroid/filterpacks/videosrc/MediaSource;
-    .param p1    # I
 
     iput p1, p0, Landroid/filterpacks/videosrc/MediaSource;->mWidth:I
 
@@ -369,8 +360,6 @@
 
 .method static synthetic access$502(Landroid/filterpacks/videosrc/MediaSource;I)I
     .locals 0
-    .param p0    # Landroid/filterpacks/videosrc/MediaSource;
-    .param p1    # I
 
     iput p1, p0, Landroid/filterpacks/videosrc/MediaSource;->mHeight:I
 
@@ -379,8 +368,6 @@
 
 .method static synthetic access$602(Landroid/filterpacks/videosrc/MediaSource;Z)Z
     .locals 0
-    .param p0    # Landroid/filterpacks/videosrc/MediaSource;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/filterpacks/videosrc/MediaSource;->mPrepared:Z
 
@@ -389,8 +376,6 @@
 
 .method static synthetic access$702(Landroid/filterpacks/videosrc/MediaSource;Z)Z
     .locals 0
-    .param p0    # Landroid/filterpacks/videosrc/MediaSource;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/filterpacks/videosrc/MediaSource;->mCompleted:Z
 
@@ -399,8 +384,6 @@
 
 .method static synthetic access$802(Landroid/filterpacks/videosrc/MediaSource;Z)Z
     .locals 0
-    .param p0    # Landroid/filterpacks/videosrc/MediaSource;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/filterpacks/videosrc/MediaSource;->mNewFrameAvailable:Z
 
@@ -423,7 +406,6 @@
 
 .method private declared-synchronized setupMediaPlayer(Z)Z
     .locals 9
-    .param p1    # Z
 
     const/4 v8, 0x1
 
@@ -859,7 +841,6 @@
 # virtual methods
 .method public close(Landroid/filterfw/core/FilterContext;)V
     .locals 3
-    .param p1    # Landroid/filterfw/core/FilterContext;
 
     const/4 v2, 0x0
 
@@ -918,8 +899,6 @@
 
 .method public fieldPortValueUpdated(Ljava/lang/String;Landroid/filterfw/core/FilterContext;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/filterfw/core/FilterContext;
 
     iget-boolean v0, p0, Landroid/filterpacks/videosrc/MediaSource;->mLogVerbose:Z
 
@@ -1156,7 +1135,6 @@
 
 .method public open(Landroid/filterfw/core/FilterContext;)V
     .locals 5
-    .param p1    # Landroid/filterfw/core/FilterContext;
 
     iget-boolean v0, p0, Landroid/filterpacks/videosrc/MediaSource;->mLogVerbose:Z
 
@@ -1259,7 +1237,6 @@
 
 .method public declared-synchronized pauseVideo(Z)V
     .locals 1
-    .param p1    # Z
 
     monitor-enter p0
 
@@ -1316,7 +1293,6 @@
 
 .method protected prepare(Landroid/filterfw/core/FilterContext;)V
     .locals 4
-    .param p1    # Landroid/filterfw/core/FilterContext;
 
     const/high16 v3, 0x3f800000
 
@@ -1354,7 +1330,6 @@
 
 .method public process(Landroid/filterfw/core/FilterContext;)V
     .locals 20
-    .param p1    # Landroid/filterfw/core/FilterContext;
 
     move-object/from16 v0, p0
 
@@ -2030,7 +2005,6 @@
 
 .method public tearDown(Landroid/filterfw/core/FilterContext;)V
     .locals 1
-    .param p1    # Landroid/filterfw/core/FilterContext;
 
     iget-object v0, p0, Landroid/filterpacks/videosrc/MediaSource;->mMediaFrame:Landroid/filterfw/core/GLFrame;
 

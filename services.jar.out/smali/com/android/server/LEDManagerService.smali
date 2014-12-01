@@ -26,7 +26,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/LightsService;)V
     .locals 2
-    .param p1    # Lcom/android/server/LightsService;
 
     invoke-direct {p0}, Landroid/os/ILEDManager$Stub;-><init>()V
 
@@ -61,7 +60,6 @@
 
 .method static synthetic access$100(Lcom/android/server/LEDManagerService;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Lcom/android/server/LEDManagerService;
 
     iget-object v0, p0, Lcom/android/server/LEDManagerService;->mLock:Ljava/lang/Object;
 
@@ -70,7 +68,6 @@
 
 .method static synthetic access$200(Lcom/android/server/LEDManagerService;)[Lcom/android/server/LEDManagerService$LED;
     .locals 1
-    .param p0    # Lcom/android/server/LEDManagerService;
 
     iget-object v0, p0, Lcom/android/server/LEDManagerService;->mLEDList:[Lcom/android/server/LEDManagerService$LED;
 
@@ -79,7 +76,6 @@
 
 .method static synthetic access$300(Lcom/android/server/LEDManagerService;)V
     .locals 0
-    .param p0    # Lcom/android/server/LEDManagerService;
 
     invoke-direct {p0}, Lcom/android/server/LEDManagerService;->setSvcLEDLocked()V
 
@@ -88,12 +84,6 @@
 
 .method private setLEDStateLocked(Landroid/os/IBinder;IIIII)V
     .locals 3
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     iget-object v0, p0, Lcom/android/server/LEDManagerService;->mLEDList:[Lcom/android/server/LEDManagerService$LED;
 
@@ -350,12 +340,6 @@
 # virtual methods
 .method public setFlashingLED(Landroid/os/IBinder;IIIII)V
     .locals 9
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     invoke-static {}, Landroid/os/Binder;->getCallingUid()I
 
@@ -515,8 +499,6 @@
 
 .method public turnOffLED(Landroid/os/IBinder;I)V
     .locals 12
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # I
 
     invoke-static {}, Landroid/os/Binder;->getCallingUid()I
 

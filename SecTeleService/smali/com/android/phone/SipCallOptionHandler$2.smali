@@ -59,7 +59,7 @@
 
     const/4 v1, 0x3
 
-    invoke-virtual {v0, v1}, Landroid/app/Activity;->showDialog(I)V
+    invoke-virtual {v0, v1}, Lcom/android/phone/SipCallOptionHandler;->showDialog(I)V
 
     :goto_0
     return-void
@@ -184,7 +184,7 @@
 
     const/4 v1, 0x2
 
-    invoke-virtual {v0, v1}, Landroid/app/Activity;->showDialog(I)V
+    invoke-virtual {v0, v1}, Lcom/android/phone/SipCallOptionHandler;->showDialog(I)V
 
     goto :goto_0
 

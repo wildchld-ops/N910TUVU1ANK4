@@ -27,7 +27,6 @@
 # direct methods
 .method private constructor <init>(Landroid/content/res/AssetManager;I)V
     .locals 2
-    .param p2    # I
 
     iput-object p1, p0, Landroid/content/res/AssetManager$AssetInputStream;->this$0:Landroid/content/res/AssetManager;
 
@@ -47,9 +46,6 @@
 
 .method synthetic constructor <init>(Landroid/content/res/AssetManager;ILandroid/content/res/AssetManager$1;)V
     .locals 0
-    .param p1    # Landroid/content/res/AssetManager;
-    .param p2    # I
-    .param p3    # Landroid/content/res/AssetManager$1;
 
     invoke-direct {p0, p1, p2}, Landroid/content/res/AssetManager$AssetInputStream;-><init>(Landroid/content/res/AssetManager;I)V
 
@@ -167,7 +163,6 @@
 
 .method public final mark(I)V
     .locals 5
-    .param p1    # I
 
     iget-object v0, p0, Landroid/content/res/AssetManager$AssetInputStream;->this$0:Landroid/content/res/AssetManager;
 
@@ -217,7 +212,6 @@
 
 .method public final read([B)I
     .locals 4
-    .param p1    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -242,9 +236,6 @@
 
 .method public final read([BII)I
     .locals 2
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -287,7 +278,6 @@
 
 .method public final skip(J)J
     .locals 9
-    .param p1    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

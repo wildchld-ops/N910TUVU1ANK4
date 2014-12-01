@@ -20,7 +20,6 @@
 
 .method public static getCurrnetInputMethodInfo(Landroid/content/Context;)Landroid/view/inputmethod/InputMethodInfo;
     .locals 6
-    .param p0    # Landroid/content/Context;
 
     sget-object v4, Lcom/sec/android/inputmethod/inputmethodframework/InputMethodFrameWorkUtils;->mInputMethodInfo:Landroid/view/inputmethod/InputMethodInfo;
 
@@ -80,8 +79,6 @@
 
 .method public static getImeSubtype(Landroid/view/inputmethod/InputMethodInfo;Ljava/lang/String;)Landroid/view/inputmethod/InputMethodSubtype;
     .locals 9
-    .param p0    # Landroid/view/inputmethod/InputMethodInfo;
-    .param p1    # Ljava/lang/String;
 
     const/4 v5, 0x0
 
@@ -206,7 +203,6 @@
 
 .method public static getInputMethodManager(Landroid/content/Context;)Landroid/view/inputmethod/InputMethodManager;
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     sget-object v0, Lcom/sec/android/inputmethod/inputmethodframework/InputMethodFrameWorkUtils;->mInputMethodManager:Landroid/view/inputmethod/InputMethodManager;
 
@@ -230,8 +226,6 @@
 
 .method public static setCurrentInputMethodSubtype(Landroid/content/Context;Ljava/lang/String;)V
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/sec/android/inputmethod/inputmethodframework/InputMethodFrameWorkUtils;->getCurrnetInputMethodInfo(Landroid/content/Context;)Landroid/view/inputmethod/InputMethodInfo;
 

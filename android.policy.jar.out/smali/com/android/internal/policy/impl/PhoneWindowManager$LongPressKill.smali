@@ -34,7 +34,6 @@
 
 .method private getApplicationNameFromPageName(Ljava/lang/String;)Ljava/lang/String;
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     iget-object v4, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$LongPressKill;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
 
@@ -80,7 +79,6 @@
 
 .method private isHomeApplication(Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -130,7 +128,6 @@
 
 .method private isWhitelisted(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x1
 

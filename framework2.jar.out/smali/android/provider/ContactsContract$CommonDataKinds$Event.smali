@@ -41,7 +41,6 @@
 
 .method public static getTypeResource(Ljava/lang/Integer;)I
     .locals 2
-    .param p0    # Ljava/lang/Integer;
 
     const v0, 0x104053e
 

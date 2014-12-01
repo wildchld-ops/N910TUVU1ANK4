@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,7 +36,6 @@
 # virtual methods
 .method public UpdateClipboardDB(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -89,8 +87,6 @@
 
 .method public addPrimaryClipChangedListener(Landroid/content/IOnPrimaryClipChangedListener;Ljava/lang/String;)V
     .locals 5
-    .param p1    # Landroid/content/IOnPrimaryClipChangedListener;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -172,7 +168,6 @@
 
 .method public getPrimaryClip(Ljava/lang/String;)Landroid/content/ClipData;
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -244,7 +239,6 @@
 
 .method public getPrimaryClipDescription(Ljava/lang/String;)Landroid/content/ClipDescription;
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -316,7 +310,6 @@
 
 .method public hasClipboardText(Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -379,7 +372,6 @@
 
 .method public hasPrimaryClip(Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -442,7 +434,6 @@
 
 .method public removePrimaryClipChangedListener(Landroid/content/IOnPrimaryClipChangedListener;)V
     .locals 5
-    .param p1    # Landroid/content/IOnPrimaryClipChangedListener;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -506,8 +497,6 @@
 
 .method public setPrimaryClip(Landroid/content/ClipData;Ljava/lang/String;)V
     .locals 5
-    .param p1    # Landroid/content/ClipData;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

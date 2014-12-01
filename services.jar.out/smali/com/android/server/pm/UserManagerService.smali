@@ -210,11 +210,6 @@
 
 .method constructor <init>(Landroid/content/Context;Lcom/android/server/pm/PackageManagerService;Ljava/lang/Object;Ljava/lang/Object;Lcom/android/server/pm/PersonaManagerService;)V
     .locals 8
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/server/pm/PackageManagerService;
-    .param p3    # Ljava/lang/Object;
-    .param p4    # Ljava/lang/Object;
-    .param p5    # Lcom/android/server/pm/PersonaManagerService;
 
     invoke-static {}, Landroid/os/Environment;->getDataDirectory()Ljava/io/File;
 
@@ -249,13 +244,6 @@
 
 .method private constructor <init>(Landroid/content/Context;Lcom/android/server/pm/PackageManagerService;Ljava/lang/Object;Ljava/lang/Object;Ljava/io/File;Ljava/io/File;Lcom/android/server/pm/PersonaManagerService;)V
     .locals 11
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/server/pm/PackageManagerService;
-    .param p3    # Ljava/lang/Object;
-    .param p4    # Ljava/lang/Object;
-    .param p5    # Ljava/io/File;
-    .param p6    # Ljava/io/File;
-    .param p7    # Lcom/android/server/pm/PersonaManagerService;
 
     invoke-direct {p0}, Landroid/os/IUserManager$Stub;-><init>()V
 
@@ -518,8 +506,6 @@
 
 .method constructor <init>(Ljava/io/File;Ljava/io/File;)V
     .locals 8
-    .param p1    # Ljava/io/File;
-    .param p2    # Ljava/io/File;
 
     const/4 v1, 0x0
 
@@ -548,7 +534,6 @@
 
 .method static synthetic access$000(Lcom/android/server/pm/UserManagerService;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Lcom/android/server/pm/UserManagerService;
 
     iget-object v0, p0, Lcom/android/server/pm/UserManagerService;->mInstallLock:Ljava/lang/Object;
 
@@ -557,7 +542,6 @@
 
 .method static synthetic access$100(Lcom/android/server/pm/UserManagerService;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Lcom/android/server/pm/UserManagerService;
 
     iget-object v0, p0, Lcom/android/server/pm/UserManagerService;->mPackagesLock:Ljava/lang/Object;
 
@@ -566,8 +550,6 @@
 
 .method static synthetic access$200(Lcom/android/server/pm/UserManagerService;I)V
     .locals 0
-    .param p0    # Lcom/android/server/pm/UserManagerService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/pm/UserManagerService;->removeUserStateLocked(I)V
 
@@ -576,7 +558,6 @@
 
 .method static synthetic access$300(Lcom/android/server/pm/UserManagerService;)Landroid/util/SparseBooleanArray;
     .locals 1
-    .param p0    # Lcom/android/server/pm/UserManagerService;
 
     iget-object v0, p0, Lcom/android/server/pm/UserManagerService;->mRemovingUserIds:Landroid/util/SparseBooleanArray;
 
@@ -585,7 +566,6 @@
 
 .method static synthetic access$400(Lcom/android/server/pm/UserManagerService;)Lcom/android/server/pm/PackageManagerService;
     .locals 1
-    .param p0    # Lcom/android/server/pm/UserManagerService;
 
     iget-object v0, p0, Lcom/android/server/pm/UserManagerService;->mPm:Lcom/android/server/pm/PackageManagerService;
 
@@ -594,9 +574,6 @@
 
 .method static synthetic access$500(Lcom/android/server/pm/UserManagerService;Ljava/lang/String;I)Z
     .locals 1
-    .param p0    # Lcom/android/server/pm/UserManagerService;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/pm/UserManagerService;->isPackageInstalled(Ljava/lang/String;I)Z
 
@@ -607,9 +584,6 @@
 
 .method static synthetic access$600(Lcom/android/server/pm/UserManagerService;Ljava/lang/String;I)V
     .locals 0
-    .param p0    # Lcom/android/server/pm/UserManagerService;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/pm/UserManagerService;->cleanAppRestrictionsForPackage(Ljava/lang/String;I)V
 
@@ -618,7 +592,6 @@
 
 .method private static final checkManageUsersPermission(Ljava/lang/String;)V
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     invoke-static {}, Landroid/os/Binder;->getCallingUid()I
 
@@ -672,8 +645,6 @@
 
 .method private cleanAppRestrictions(IZ)V
     .locals 10
-    .param p1    # I
-    .param p2    # Z
 
     iget-object v9, p0, Lcom/android/server/pm/UserManagerService;->mPackagesLock:Ljava/lang/Object;
 
@@ -770,8 +741,6 @@
 
 .method private cleanAppRestrictionsForPackage(Ljava/lang/String;I)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     iget-object v3, p0, Lcom/android/server/pm/UserManagerService;->mPackagesLock:Ljava/lang/Object;
 
@@ -815,7 +784,6 @@
 
 .method private static convertToUserInfo(Landroid/content/pm/PersonaInfo;)Landroid/content/pm/UserInfo;
     .locals 4
-    .param p0    # Landroid/content/pm/PersonaInfo;
 
     const-string v1, "UserManagerService"
 
@@ -1017,7 +985,6 @@
 
 .method private getRemainingTimeForPinAttempt(Lcom/android/server/pm/UserManagerService$RestrictionsPinState;)I
     .locals 6
-    .param p1    # Lcom/android/server/pm/UserManagerService$RestrictionsPinState;
 
     iget v2, p1, Lcom/android/server/pm/UserManagerService$RestrictionsPinState;->failedAttempts:I
 
@@ -1074,7 +1041,6 @@
 
 .method private getUidForPackage(Ljava/lang/String;)I
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Landroid/os/Binder;->clearCallingIdentity()J
 
@@ -1122,7 +1088,6 @@
 
 .method private getUserInfoLocked(I)Landroid/content/pm/UserInfo;
     .locals 4
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/server/pm/UserManagerService;->mUsers:Landroid/util/SparseArray;
 
@@ -1176,7 +1141,6 @@
 
 .method private hasRestrictionsPinLocked(I)Z
     .locals 5
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/server/pm/UserManagerService;->mRestrictionsPinStates:Landroid/util/SparseArray;
 
@@ -1214,8 +1178,6 @@
 
 .method private isPackageInstalled(Ljava/lang/String;I)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     iget-object v1, p0, Lcom/android/server/pm/UserManagerService;->mPm:Lcom/android/server/pm/PackageManagerService;
 
@@ -1283,7 +1245,6 @@
 
 .method private packageToRestrictionsFileName(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -1314,8 +1275,6 @@
 
 .method private passwordToHash(Ljava/lang/String;J)Ljava/lang/String;
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
 
     if-nez p1, :cond_0
 
@@ -1442,8 +1401,6 @@
 
 .method private readApplicationRestrictionsLocked(Ljava/lang/String;I)Landroid/os/Bundle;
     .locals 15
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     new-instance v5, Landroid/os/Bundle;
 
@@ -1776,9 +1733,6 @@
 
 .method private readBoolean(Lorg/xmlpull/v1/XmlPullParser;Landroid/os/Bundle;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Lorg/xmlpull/v1/XmlPullParser;
-    .param p2    # Landroid/os/Bundle;
-    .param p3    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -1800,9 +1754,6 @@
 
 .method private readIntAttribute(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;I)I
     .locals 3
-    .param p1    # Lorg/xmlpull/v1/XmlPullParser;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     const/4 v2, 0x0
 
@@ -1833,9 +1784,6 @@
 
 .method private readLongAttribute(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;J)J
     .locals 3
-    .param p1    # Lorg/xmlpull/v1/XmlPullParser;
-    .param p2    # Ljava/lang/String;
-    .param p3    # J
 
     const/4 v2, 0x0
 
@@ -2265,7 +2213,6 @@
 
 .method private readUserLocked(I)Landroid/content/pm/UserInfo;
     .locals 41
-    .param p1    # I
 
     const/16 v25, 0x0
 
@@ -3317,7 +3264,6 @@
 
 .method private removeDirectoryRecursive(Ljava/io/File;)V
     .locals 7
-    .param p1    # Ljava/io/File;
 
     invoke-virtual {p1}, Ljava/io/File;->isDirectory()Z
 
@@ -3358,8 +3304,6 @@
 
 .method private removeRestrictionsForUser(IZ)V
     .locals 2
-    .param p1    # I
-    .param p2    # Z
 
     iget-object v1, p0, Lcom/android/server/pm/UserManagerService;->mPackagesLock:Ljava/lang/Object;
 
@@ -3404,7 +3348,6 @@
 
 .method private removeUserStateLocked(I)V
     .locals 5
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/server/pm/UserManagerService;->mPm:Lcom/android/server/pm/PackageManagerService;
 
@@ -3473,7 +3416,6 @@
 
 .method private restrictionsFileNameToPackage(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const-string/jumbo v0, "res_"
 
@@ -3502,7 +3444,6 @@
 
 .method private sendUserInfoChangedBroadcast(I)V
     .locals 4
-    .param p1    # I
 
     new-instance v0, Landroid/content/Intent;
 
@@ -3555,7 +3496,6 @@
 
 .method private static toHex([B)Ljava/lang/String;
     .locals 6
-    .param p0    # [B
 
     const-string v0, "0123456789ABCDEF"
 
@@ -3632,7 +3572,6 @@
 
 .method private unblockAllAppsForUser(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/pm/UserManagerService;->mHandler:Landroid/os/Handler;
 
@@ -3866,9 +3805,6 @@
 
 .method private writeApplicationRestrictionsLocked(Ljava/lang/String;Landroid/os/Bundle;I)V
     .locals 17
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Bundle;
-    .param p3    # I
 
     const/4 v5, 0x0
 
@@ -4135,8 +4071,6 @@
 
 .method private writeBitmapLocked(Landroid/content/pm/UserInfo;Landroid/graphics/Bitmap;)V
     .locals 8
-    .param p1    # Landroid/content/pm/UserInfo;
-    .param p2    # Landroid/graphics/Bitmap;
 
     :try_start_0
     new-instance v0, Ljava/io/File;
@@ -4229,9 +4163,6 @@
 
 .method private writeBoolean(Lorg/xmlpull/v1/XmlSerializer;Landroid/os/Bundle;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Lorg/xmlpull/v1/XmlSerializer;
-    .param p2    # Landroid/os/Bundle;
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -4413,7 +4344,6 @@
 
 .method private writeUserLocked(Landroid/content/pm/UserInfo;)V
     .locals 11
-    .param p1    # Landroid/content/pm/UserInfo;
 
     const/4 v1, 0x0
 
@@ -4789,7 +4719,6 @@
 # virtual methods
 .method public checkRestrictionsChallenge(Ljava/lang/String;)I
     .locals 9
-    .param p1    # Ljava/lang/String;
 
     const-string v3, "Only system can verify the restrictions pin"
 
@@ -4977,8 +4906,6 @@
 
 .method public createUser(Ljava/lang/String;I)Landroid/content/pm/UserInfo;
     .locals 16
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const-string v11, "Only the system can create users"
 
@@ -5286,9 +5213,6 @@
 
 .method protected dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 11
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     const-wide/16 v9, 0x0
 
@@ -5557,7 +5481,6 @@
 
 .method public exists(I)Z
     .locals 5
-    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -5662,7 +5585,6 @@
 
 .method finishRemoveUser(I)V
     .locals 11
-    .param p1    # I
 
     const-string v0, "UserManagerService"
 
@@ -5763,7 +5685,6 @@
 
 .method public getApplicationRestrictions(Ljava/lang/String;)Landroid/os/Bundle;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Landroid/os/UserHandle;->getCallingUserId()I
 
@@ -5778,8 +5699,6 @@
 
 .method public getApplicationRestrictionsForUser(Ljava/lang/String;I)Landroid/os/Bundle;
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-static {}, Landroid/os/UserHandle;->getCallingUserId()I
 
@@ -5852,7 +5771,6 @@
 
 .method public getUserHandle(I)I
     .locals 8
-    .param p1    # I
 
     iget-object v5, p0, Lcom/android/server/pm/UserManagerService;->mPackagesLock:Ljava/lang/Object;
 
@@ -5940,7 +5858,6 @@
 
 .method public getUserIcon(I)Landroid/graphics/Bitmap;
     .locals 7
-    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -6213,7 +6130,6 @@
 
 .method public getUserIds(Z)[I
     .locals 17
-    .param p1    # Z
 
     new-instance v11, Ljava/util/ArrayList;
 
@@ -6475,7 +6391,6 @@
 
 .method public getUserInfo(I)Landroid/content/pm/UserInfo;
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/pm/UserManagerService;->sPersonaManager:Lcom/android/server/pm/PersonaManagerService;
 
@@ -6528,7 +6443,6 @@
 
 .method public getUserRestrictions(I)Landroid/os/Bundle;
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/server/pm/UserManagerService;->sPersonaManager:Lcom/android/server/pm/PersonaManagerService;
 
@@ -6590,7 +6504,6 @@
 
 .method public getUserSerialNumber(I)I
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/server/pm/UserManagerService;->mPackagesLock:Ljava/lang/Object;
 
@@ -6653,7 +6566,6 @@
 
 .method public getUsers(Z)Ljava/util/List;
     .locals 10
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(Z)",
@@ -6910,7 +6822,6 @@
 
 .method public makeInitialized(I)V
     .locals 5
-    .param p1    # I
 
     const-string v1, "makeInitialized"
 
@@ -7013,7 +6924,6 @@
 
 .method public removeUser(I)Z
     .locals 8
-    .param p1    # I
 
     const/4 v3, 0x1
 
@@ -7145,9 +7055,6 @@
 
 .method public setApplicationRestrictions(Ljava/lang/String;Landroid/os/Bundle;I)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Bundle;
-    .param p3    # I
 
     invoke-static {}, Landroid/os/UserHandle;->getCallingUserId()I
 
@@ -7216,7 +7123,6 @@
 
 .method public setGuestEnabled(Z)V
     .locals 5
-    .param p1    # Z
 
     const-string v2, "enable guest users"
 
@@ -7327,7 +7233,6 @@
 
 .method public setRestrictionsChallenge(Ljava/lang/String;)Z
     .locals 9
-    .param p1    # Ljava/lang/String;
 
     const-string v3, "Only system can modify the restrictions pin"
 
@@ -7455,8 +7360,6 @@
 
 .method public setUserIcon(ILandroid/graphics/Bitmap;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/graphics/Bitmap;
 
     const-string/jumbo v1, "update users"
 
@@ -7535,8 +7438,6 @@
 
 .method public setUserName(ILjava/lang/String;)V
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const-string/jumbo v2, "rename users"
 
@@ -7633,8 +7534,6 @@
 
 .method public setUserRestrictions(Landroid/os/Bundle;I)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
-    .param p2    # I
 
     const-string/jumbo v0, "setUserRestrictions"
 
@@ -7733,7 +7632,6 @@
 
 .method public userForeground(I)V
     .locals 11
-    .param p1    # I
 
     const-wide/16 v6, 0x0
 
@@ -7857,7 +7755,6 @@
 
 .method public wipeUser(I)V
     .locals 1
-    .param p1    # I
 
     const-string/jumbo v0, "wipe user"
 

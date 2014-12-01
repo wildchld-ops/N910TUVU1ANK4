@@ -160,8 +160,6 @@
 
 .method public static logOnEng(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     sget-boolean v0, Landroid/sec/performance/AffinityControl;->DEBUG:Z
 
@@ -178,8 +176,6 @@
 
 .method public static readSysfs(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 7
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -411,7 +407,6 @@
 # virtual methods
 .method public ClearAffinity(I)I
     .locals 7
-    .param p1    # I
 
     const/4 v4, 0x1
 
@@ -483,8 +478,6 @@
 
 .method public varargs SetAffinity(I[I)I
     .locals 3
-    .param p1    # I
-    .param p2    # [I
 
     const/4 v0, 0x1
 
@@ -517,7 +510,6 @@
 
 .method public SetAffinityForBig(I)I
     .locals 3
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -565,7 +557,6 @@
 
 .method public SetAffinityForLittle(I)I
     .locals 3
-    .param p1    # I
 
     const/4 v0, 0x1
 

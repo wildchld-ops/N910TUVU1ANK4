@@ -20,7 +20,6 @@
 # virtual methods
 .method public initialize(Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/samsung/android/sdk/SsdkUnsupportedException;,

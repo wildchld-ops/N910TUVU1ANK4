@@ -38,8 +38,6 @@
 
 .method private closeSocketThrowException(Ljavax/net/ssl/SSLSocket;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljavax/net/ssl/SSLSocket;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -69,9 +67,6 @@
 
 .method private closeSocketThrowException(Ljavax/net/ssl/SSLSocket;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljavax/net/ssl/SSLSocket;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -93,7 +88,6 @@
 
 .method private static getInnerMessage(Ljava/lang/Throwable;)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/lang/Throwable;
 
     const/4 v0, 0x0
 
@@ -171,9 +165,6 @@
 
 .method public static verifyServerCertificates([[BLjava/lang/String;Ljava/lang/String;)Landroid/net/http/SslError;
     .locals 6
-    .param p0    # [[B
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -255,9 +246,6 @@
 
 .method private static verifyServerDomainAndCertificates([Ljava/security/cert/X509Certificate;Ljava/lang/String;Ljava/lang/String;)Landroid/net/http/SslError;
     .locals 14
-    .param p0    # [Ljava/security/cert/X509Certificate;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -536,9 +524,6 @@
 # virtual methods
 .method public doHandshakeAndValidateServerCertificates(Landroid/net/http/HttpsConnection;Ljavax/net/ssl/SSLSocket;Ljava/lang/String;)Landroid/net/http/SslError;
     .locals 5
-    .param p1    # Landroid/net/http/HttpsConnection;
-    .param p2    # Ljavax/net/ssl/SSLSocket;
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

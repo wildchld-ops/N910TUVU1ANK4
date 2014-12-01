@@ -25,10 +25,6 @@
 # direct methods
 .method constructor <init>(Landroid/media/MediaDrm;Landroid/media/MediaDrm;[BLjava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p2    # Landroid/media/MediaDrm;
-    .param p3    # [B
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/media/MediaDrm$CryptoSession;->this$0:Landroid/media/MediaDrm;
 
@@ -51,9 +47,6 @@
 # virtual methods
 .method public decrypt([B[B[B)[B
     .locals 2
-    .param p1    # [B
-    .param p2    # [B
-    .param p3    # [B
 
     iget-object v0, p0, Landroid/media/MediaDrm$CryptoSession;->mDrm:Landroid/media/MediaDrm;
 
@@ -69,9 +62,6 @@
 
 .method public encrypt([B[B[B)[B
     .locals 2
-    .param p1    # [B
-    .param p2    # [B
-    .param p3    # [B
 
     iget-object v0, p0, Landroid/media/MediaDrm$CryptoSession;->mDrm:Landroid/media/MediaDrm;
 
@@ -87,8 +77,6 @@
 
 .method public sign([B[B)[B
     .locals 2
-    .param p1    # [B
-    .param p2    # [B
 
     iget-object v0, p0, Landroid/media/MediaDrm$CryptoSession;->mDrm:Landroid/media/MediaDrm;
 
@@ -104,9 +92,6 @@
 
 .method public verify([B[B[B)Z
     .locals 2
-    .param p1    # [B
-    .param p2    # [B
-    .param p3    # [B
 
     iget-object v0, p0, Landroid/media/MediaDrm$CryptoSession;->mDrm:Landroid/media/MediaDrm;
 

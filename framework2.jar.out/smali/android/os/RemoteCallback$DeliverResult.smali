@@ -26,7 +26,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/RemoteCallback;Landroid/os/Bundle;)V
     .locals 0
-    .param p2    # Landroid/os/Bundle;
 
     iput-object p1, p0, Landroid/os/RemoteCallback$DeliverResult;->this$0:Landroid/os/RemoteCallback;
 

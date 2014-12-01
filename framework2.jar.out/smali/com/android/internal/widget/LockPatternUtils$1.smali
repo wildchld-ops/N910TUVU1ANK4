@@ -39,7 +39,6 @@
 # virtual methods
 .method public onComplete(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "LockPatternUtils"
 

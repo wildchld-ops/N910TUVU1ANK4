@@ -40,7 +40,6 @@
 
 .method public static getWACOMPenState(Landroid/view/inputmethod/InputMethodManager;)Z
     .locals 4
-    .param p0    # Landroid/view/inputmethod/InputMethodManager;
 
     const/4 v0, 0x0
 

@@ -26,7 +26,6 @@
 # direct methods
 .method public constructor <init>(Landroid/text/method/MultiTapKeyListener;Landroid/text/Editable;)V
     .locals 4
-    .param p2    # Landroid/text/Editable;
 
     iput-object p1, p0, Landroid/text/method/MultiTapKeyListener$Timeout;->this$0:Landroid/text/method/MultiTapKeyListener;
 
@@ -63,8 +62,6 @@
 
 .method static synthetic access$002(Landroid/text/method/MultiTapKeyListener$Timeout;Landroid/text/Editable;)Landroid/text/Editable;
     .locals 0
-    .param p0    # Landroid/text/method/MultiTapKeyListener$Timeout;
-    .param p1    # Landroid/text/Editable;
 
     iput-object p1, p0, Landroid/text/method/MultiTapKeyListener$Timeout;->mBuffer:Landroid/text/Editable;
 

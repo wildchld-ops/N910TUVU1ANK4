@@ -83,7 +83,6 @@
 
 .method static synthetic access$100(Landroid/service/notification/NotificationListenerService;)Ljava/lang/String;
     .locals 1
-    .param p0    # Landroid/service/notification/NotificationListenerService;
 
     iget-object v0, p0, Landroid/service/notification/NotificationListenerService;->TAG:Ljava/lang/String;
 
@@ -148,9 +147,6 @@
 
 .method public final cancelNotification(Ljava/lang/String;Ljava/lang/String;I)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     :try_start_0
     invoke-direct {p0}, Landroid/service/notification/NotificationListenerService;->getNotificationInterface()Landroid/app/INotificationManager;
@@ -213,7 +209,6 @@
 
 .method public onBind(Landroid/content/Intent;)Landroid/os/IBinder;
     .locals 2
-    .param p1    # Landroid/content/Intent;
 
     iget-object v0, p0, Landroid/service/notification/NotificationListenerService;->mWrapper:Landroid/service/notification/NotificationListenerService$INotificationListenerWrapper;
 

@@ -118,7 +118,6 @@
 
 .method public final initializeManager(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     if-nez p1, :cond_0
 
@@ -155,7 +154,6 @@
 
 .method public final vibrateAlarm(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v0, p0, Landroid/hardware/contextaware/utilbundle/CaAlarmManager;->mVibrator:Landroid/os/Vibrator;
 

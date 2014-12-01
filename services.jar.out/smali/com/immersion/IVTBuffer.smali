@@ -10,7 +10,6 @@
 # direct methods
 .method public constructor <init>(I)V
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -29,7 +28,6 @@
 
 .method public constructor <init>([B)V
     .locals 0
-    .param p1    # [B
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -40,7 +38,6 @@
 
 .method public static deleteHapticTrack(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     invoke-static {}, Lcom/immersion/ImmVibe;->getInstance()Lcom/immersion/ImmVibe;
 
@@ -97,7 +94,6 @@
 
 .method public getEffectDuration(I)I
     .locals 2
-    .param p1    # I
 
     invoke-static {}, Lcom/immersion/ImmVibe;->getInstance()Lcom/immersion/ImmVibe;
 
@@ -114,7 +110,6 @@
 
 .method public getEffectIndexFromName(Ljava/lang/String;)I
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Lcom/immersion/ImmVibe;->getInstance()Lcom/immersion/ImmVibe;
 
@@ -131,7 +126,6 @@
 
 .method public getEffectName(I)Ljava/lang/String;
     .locals 2
-    .param p1    # I
 
     invoke-static {}, Lcom/immersion/ImmVibe;->getInstance()Lcom/immersion/ImmVibe;
 
@@ -148,7 +142,6 @@
 
 .method public getEffectType(I)I
     .locals 2
-    .param p1    # I
 
     invoke-static {}, Lcom/immersion/ImmVibe;->getInstance()Lcom/immersion/ImmVibe;
 
@@ -165,7 +158,6 @@
 
 .method public getMagSweepEffectDefinitionAtIndex(I)Lcom/immersion/MagSweepEffectDefinition;
     .locals 20
-    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -246,7 +238,6 @@
 
 .method public getPeriodicEffectDefinitionAtIndex(I)Lcom/immersion/PeriodicEffectDefinition;
     .locals 22
-    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -351,8 +342,6 @@
 
 .method public insertElement(ILcom/immersion/IVTElement;)V
     .locals 4
-    .param p1    # I
-    .param p2    # Lcom/immersion/IVTElement;
 
     invoke-virtual {p2}, Lcom/immersion/IVTElement;->getType()I
 
@@ -415,8 +404,6 @@
 
 .method public readElement(II)Lcom/immersion/IVTElement;
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     invoke-static {}, Lcom/immersion/ImmVibe;->getInstance()Lcom/immersion/ImmVibe;
 
@@ -466,8 +453,6 @@
 
 .method public removeElement(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     invoke-static {}, Lcom/immersion/ImmVibe;->getInstance()Lcom/immersion/ImmVibe;
 
@@ -486,7 +471,6 @@
 
 .method public saveHapticTrack(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Lcom/immersion/ImmVibe;->getInstance()Lcom/immersion/ImmVibe;
 

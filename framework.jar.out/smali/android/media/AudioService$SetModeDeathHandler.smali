@@ -30,8 +30,6 @@
 # direct methods
 .method constructor <init>(Landroid/media/AudioService;Landroid/os/IBinder;I)V
     .locals 1
-    .param p2    # Landroid/os/IBinder;
-    .param p3    # I
 
     iput-object p1, p0, Landroid/media/AudioService$SetModeDeathHandler;->this$0:Landroid/media/AudioService;
 
@@ -163,7 +161,6 @@
 
 .method public setMode(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/media/AudioService$SetModeDeathHandler;->mMode:I
 

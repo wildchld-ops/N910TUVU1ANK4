@@ -54,7 +54,6 @@
 # direct methods
 .method constructor <init>(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v1, -0x1
 
@@ -94,7 +93,6 @@
 
 .method static synthetic access$800(Lcom/android/server/WallpaperManagerService$WallpaperData;)Landroid/os/RemoteCallbackList;
     .locals 1
-    .param p0    # Lcom/android/server/WallpaperManagerService$WallpaperData;
 
     iget-object v0, p0, Lcom/android/server/WallpaperManagerService$WallpaperData;->callbacks:Landroid/os/RemoteCallbackList;
 

@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/mms/rcs/transaction/SilentBackgroundMessageSenderService;Landroid/os/Looper;)V
     .locals 0
-    .param p2    # Landroid/os/Looper;
 
     iput-object p1, p0, Lcom/android/mms/rcs/transaction/SilentBackgroundMessageSenderService$ServiceHandler;->this$0:Lcom/android/mms/rcs/transaction/SilentBackgroundMessageSenderService;
 
@@ -34,7 +33,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 6
-    .param p1    # Landroid/os/Message;
 
     iget-object v1, p0, Lcom/android/mms/rcs/transaction/SilentBackgroundMessageSenderService$ServiceHandler;->this$0:Lcom/android/mms/rcs/transaction/SilentBackgroundMessageSenderService;
 

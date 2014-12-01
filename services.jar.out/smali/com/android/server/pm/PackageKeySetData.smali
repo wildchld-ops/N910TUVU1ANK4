@@ -48,7 +48,6 @@
 
 .method constructor <init>(Lcom/android/server/pm/PackageKeySetData;)V
     .locals 2
-    .param p1    # Lcom/android/server/pm/PackageKeySetData;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -97,8 +96,6 @@
 # virtual methods
 .method public addDefinedKeySet(JLjava/lang/String;)V
     .locals 8
-    .param p1    # J
-    .param p3    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/server/pm/PackageKeySetData;->mDefinedKeySets:[J
 
@@ -155,7 +152,6 @@
 
 .method public addSigningKeySet(J)V
     .locals 8
-    .param p1    # J
 
     iget-object v0, p0, Lcom/android/server/pm/PackageKeySetData;->mSigningKeySets:[J
 
@@ -238,7 +234,6 @@
 
 .method public packageIsSignedBy(J)Z
     .locals 6
-    .param p1    # J
 
     iget-object v0, p0, Lcom/android/server/pm/PackageKeySetData;->mSigningKeySets:[J
 
@@ -273,7 +268,6 @@
 
 .method public removeDefinedKeySet(J)V
     .locals 10
-    .param p1    # J
 
     iget-object v8, p0, Lcom/android/server/pm/PackageKeySetData;->mKeySetAliases:Ljava/util/Map;
 
@@ -373,7 +367,6 @@
 
 .method public removeSigningKeySet(J)V
     .locals 8
-    .param p1    # J
 
     invoke-virtual {p0, p1, p2}, Lcom/android/server/pm/PackageKeySetData;->packageIsSignedBy(J)Z
 

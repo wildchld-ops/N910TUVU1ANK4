@@ -50,8 +50,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p2}, Lcom/sec/orca/shop/client/library/AbstractResourceDispatcherTask;-><init>(Ljava/lang/Object;)V
 
@@ -210,8 +208,6 @@
 
 .method public onPostDispatch(Ljava/lang/Object;Z)V
     .locals 8
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Z
 
     const/4 v7, 0x0
 

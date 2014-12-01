@@ -44,7 +44,6 @@
 # virtual methods
 .method public onAnimationEnd(Landroid/view/animation/Animation;)V
     .locals 2
-    .param p1    # Landroid/view/animation/Animation;
 
     iget-boolean v0, p0, Lcom/android/mms/animation/MsgBubbleListAnimation$1;->val$changeToNormalMode:Z
 
@@ -90,14 +89,12 @@
 
 .method public onAnimationRepeat(Landroid/view/animation/Animation;)V
     .locals 0
-    .param p1    # Landroid/view/animation/Animation;
 
     return-void
 .end method
 
 .method public onAnimationStart(Landroid/view/animation/Animation;)V
     .locals 2
-    .param p1    # Landroid/view/animation/Animation;
 
     iget-object v0, p0, Lcom/android/mms/animation/MsgBubbleListAnimation$1;->this$0:Lcom/android/mms/animation/MsgBubbleListAnimation;
 

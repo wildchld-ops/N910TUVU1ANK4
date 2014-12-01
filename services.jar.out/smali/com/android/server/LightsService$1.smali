@@ -73,7 +73,6 @@
 
 .method public setFlashlightEnabled(Z)V
     .locals 4
-    .param p1    # Z
 
     iget-object v2, p0, Lcom/android/server/LightsService$1;->this$0:Lcom/android/server/LightsService;
 

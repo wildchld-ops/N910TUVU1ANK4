@@ -180,7 +180,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/storage/EdmStorageProvider;-><init>(Landroid/content/Context;)V
 
@@ -189,9 +188,6 @@
 
 .method private constructContentValues(Landroid/app/enterprise/lso/LSOItemData;IJ)Landroid/content/ContentValues;
     .locals 13
-    .param p1    # Landroid/app/enterprise/lso/LSOItemData;
-    .param p2    # I
-    .param p3    # J
 
     new-instance v0, Landroid/content/ContentValues;
 
@@ -713,9 +709,6 @@
 
 .method private deleteRecord(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)J
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # [Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/server/enterprise/lso/LSOStorageProvider;->mEdmDbHelper:Lcom/android/server/enterprise/storage/EdmStorageHelper;
 
@@ -790,7 +783,6 @@
 
 .method private getAdminUid(Ljava/lang/String;)I
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const-string v1, "ADMIN_REF"
 
@@ -831,8 +823,6 @@
 
 .method private insertRecord(Ljava/lang/String;Landroid/content/ContentValues;)J
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/ContentValues;
 
     const-string v3, "LSO"
 
@@ -926,8 +916,6 @@
 
 .method private loadContainerData(Landroid/app/enterprise/lso/LSOItemContainer;Landroid/database/Cursor;)V
     .locals 10
-    .param p1    # Landroid/app/enterprise/lso/LSOItemContainer;
-    .param p2    # Landroid/database/Cursor;
 
     const/16 v7, 0x9
 
@@ -1068,8 +1056,6 @@
 
 .method private loadImageData(Landroid/app/enterprise/lso/LSOItemImage;Landroid/database/Cursor;)V
     .locals 6
-    .param p1    # Landroid/app/enterprise/lso/LSOItemImage;
-    .param p2    # Landroid/database/Cursor;
 
     const/16 v3, 0x9
 
@@ -1156,8 +1142,6 @@
 
 .method private loadItemData(Landroid/app/enterprise/lso/LSOItemData;Landroid/database/Cursor;)V
     .locals 7
-    .param p1    # Landroid/app/enterprise/lso/LSOItemData;
-    .param p2    # Landroid/database/Cursor;
 
     const/4 v6, -0x1
 
@@ -1335,8 +1319,6 @@
 
 .method private loadTextData(Landroid/app/enterprise/lso/LSOItemText;Landroid/database/Cursor;)V
     .locals 6
-    .param p1    # Landroid/app/enterprise/lso/LSOItemText;
-    .param p2    # Landroid/database/Cursor;
 
     const/4 v4, -0x1
 
@@ -1425,8 +1407,6 @@
 
 .method private loadWidgetData(Landroid/app/enterprise/lso/LSOItemWidget;Landroid/database/Cursor;)V
     .locals 4
-    .param p1    # Landroid/app/enterprise/lso/LSOItemWidget;
-    .param p2    # Landroid/database/Cursor;
 
     const/16 v1, 0xe
 
@@ -1476,9 +1456,6 @@
 
 .method private setOverlayData(Landroid/app/enterprise/lso/LSOItemData;IJ)Z
     .locals 10
-    .param p1    # Landroid/app/enterprise/lso/LSOItemData;
-    .param p2    # I
-    .param p3    # J
 
     const/4 v4, 0x0
 
@@ -1602,10 +1579,6 @@
 
 .method private updateRecord(Ljava/lang/String;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)I
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/ContentValues;
-    .param p3    # Ljava/lang/String;
-    .param p4    # [Ljava/lang/String;
 
     const-string v2, "LSO"
 
@@ -1735,7 +1708,6 @@
 
 .method private wipeLayerData(I)V
     .locals 5
-    .param p1    # I
 
     const/4 v4, 0x1
 
@@ -1839,7 +1811,6 @@
 
 .method public getCount(Ljava/lang/String;)I
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -1924,7 +1895,6 @@
 
 .method public getOverlay(I)Landroid/app/enterprise/lso/LSOItemData;
     .locals 9
-    .param p1    # I
 
     const/4 v5, 0x0
 
@@ -2121,7 +2091,6 @@
 
 .method public resetOverlayData(I)V
     .locals 3
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/lso/LSOStorageProvider;->wipeLayerData(I)V
 
@@ -2187,10 +2156,6 @@
 
 .method public setOverlayData(JLandroid/app/enterprise/lso/LSOItemData;ILandroid/app/enterprise/lso/LSOAttributeSet;)Z
     .locals 8
-    .param p1    # J
-    .param p3    # Landroid/app/enterprise/lso/LSOItemData;
-    .param p4    # I
-    .param p5    # Landroid/app/enterprise/lso/LSOAttributeSet;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/security/InvalidParameterException;
@@ -2300,8 +2265,6 @@
 
 .method public setWallpaperData(JLjava/lang/String;)Z
     .locals 6
-    .param p1    # J
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/security/InvalidParameterException;
@@ -2376,7 +2339,6 @@
 
 .method public updateAdminPref(Landroid/app/enterprise/lso/LSOAttributeSet;)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/lso/LSOAttributeSet;
 
     const/4 v1, 0x1
 

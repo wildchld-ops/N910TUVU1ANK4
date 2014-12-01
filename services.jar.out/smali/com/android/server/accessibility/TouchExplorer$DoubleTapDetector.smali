@@ -35,8 +35,6 @@
 
 .method synthetic constructor <init>(Lcom/android/server/accessibility/TouchExplorer;Lcom/android/server/accessibility/TouchExplorer$1;)V
     .locals 0
-    .param p1    # Lcom/android/server/accessibility/TouchExplorer;
-    .param p2    # Lcom/android/server/accessibility/TouchExplorer$1;
 
     invoke-direct {p0, p1}, Lcom/android/server/accessibility/TouchExplorer$DoubleTapDetector;-><init>(Lcom/android/server/accessibility/TouchExplorer;)V
 
@@ -120,8 +118,6 @@
 
 .method public onDoubleTap(Landroid/view/MotionEvent;I)V
     .locals 28
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # I
 
     invoke-virtual/range {p1 .. p1}, Landroid/view/MotionEvent;->getPointerCount()I
 
@@ -523,8 +519,6 @@
 
 .method public onMotionEvent(Landroid/view/MotionEvent;I)V
     .locals 6
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # I
 
     const/4 v5, 0x0
 

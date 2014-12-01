@@ -37,8 +37,6 @@
 
 .method synthetic constructor <init>(Landroid/widget/TextView;Landroid/widget/TextView$1;)V
     .locals 0
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # Landroid/widget/TextView$1;
 
     invoke-direct {p0, p1}, Landroid/widget/TextView$ChangeWatcher;-><init>(Landroid/widget/TextView;)V
 
@@ -49,7 +47,6 @@
 # virtual methods
 .method public afterTextChanged(Landroid/text/Editable;)V
     .locals 1
-    .param p1    # Landroid/text/Editable;
 
     iget-object v0, p0, Landroid/widget/TextView$ChangeWatcher;->this$0:Landroid/widget/TextView;
 
@@ -73,10 +70,6 @@
 
 .method public beforeTextChanged(Ljava/lang/CharSequence;III)V
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iget-object v0, p0, Landroid/widget/TextView$ChangeWatcher;->this$0:Landroid/widget/TextView;
 
@@ -145,10 +138,6 @@
 
 .method public onSpanAdded(Landroid/text/Spannable;Ljava/lang/Object;II)V
     .locals 7
-    .param p1    # Landroid/text/Spannable;
-    .param p2    # Ljava/lang/Object;
-    .param p3    # I
-    .param p4    # I
 
     const/4 v3, -0x1
 
@@ -171,12 +160,6 @@
 
 .method public onSpanChanged(Landroid/text/Spannable;Ljava/lang/Object;IIII)V
     .locals 7
-    .param p1    # Landroid/text/Spannable;
-    .param p2    # Ljava/lang/Object;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     iget-object v0, p0, Landroid/widget/TextView$ChangeWatcher;->this$0:Landroid/widget/TextView;
 
@@ -199,10 +182,6 @@
 
 .method public onSpanRemoved(Landroid/text/Spannable;Ljava/lang/Object;II)V
     .locals 7
-    .param p1    # Landroid/text/Spannable;
-    .param p2    # Ljava/lang/Object;
-    .param p3    # I
-    .param p4    # I
 
     const/4 v4, -0x1
 
@@ -225,10 +204,6 @@
 
 .method public onTextChanged(Ljava/lang/CharSequence;III)V
     .locals 2
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iget-object v0, p0, Landroid/widget/TextView$ChangeWatcher;->this$0:Landroid/widget/TextView;
 

@@ -40,11 +40,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/media/MediaRouterService;Lcom/android/server/media/MediaRouterService$UserRecord;Landroid/media/IMediaRouterClient;ILjava/lang/String;Z)V
     .locals 0
-    .param p2    # Lcom/android/server/media/MediaRouterService$UserRecord;
-    .param p3    # Landroid/media/IMediaRouterClient;
-    .param p4    # I
-    .param p5    # Ljava/lang/String;
-    .param p6    # Z
 
     iput-object p1, p0, Lcom/android/server/media/MediaRouterService$ClientRecord;->this$0:Lcom/android/server/media/MediaRouterService;
 
@@ -93,8 +88,6 @@
 
 .method public dump(Ljava/io/PrintWriter;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/io/PrintWriter;
-    .param p2    # Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
 

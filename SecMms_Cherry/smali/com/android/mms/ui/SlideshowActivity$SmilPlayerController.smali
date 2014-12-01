@@ -54,7 +54,6 @@
 
 .method static synthetic access$1000(Lcom/android/mms/ui/SlideshowActivity$SmilPlayerController;)Lcom/android/mms/dom/smil/SmilPlayer;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SlideshowActivity$SmilPlayerController;
 
     iget-object v0, p0, Lcom/android/mms/ui/SlideshowActivity$SmilPlayerController;->mSmilPlayer:Lcom/android/mms/dom/smil/SmilPlayer;
 
@@ -63,8 +62,6 @@
 
 .method static synthetic access$1002(Lcom/android/mms/ui/SlideshowActivity$SmilPlayerController;Lcom/android/mms/dom/smil/SmilPlayer;)Lcom/android/mms/dom/smil/SmilPlayer;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/SlideshowActivity$SmilPlayerController;
-    .param p1    # Lcom/android/mms/dom/smil/SmilPlayer;
 
     iput-object p1, p0, Lcom/android/mms/ui/SlideshowActivity$SmilPlayerController;->mSmilPlayer:Lcom/android/mms/dom/smil/SmilPlayer;
 
@@ -73,7 +70,6 @@
 
 .method static synthetic access$1500(Lcom/android/mms/ui/SlideshowActivity$SmilPlayerController;)Ljava/lang/Runnable;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SlideshowActivity$SmilPlayerController;
 
     iget-object v0, p0, Lcom/android/mms/ui/SlideshowActivity$SmilPlayerController;->mSmilPlayerStart:Ljava/lang/Runnable;
 
@@ -82,7 +78,6 @@
 
 .method static synthetic access$900(Lcom/android/mms/ui/SlideshowActivity$SmilPlayerController;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/SlideshowActivity$SmilPlayerController;
 
     invoke-direct {p0}, Lcom/android/mms/ui/SlideshowActivity$SmilPlayerController;->startSmilPlayer()V
 
@@ -118,7 +113,6 @@
 # virtual methods
 .method public SlideShowActivityRunnable(Lcom/android/mms/model/SlideshowModel;)V
     .locals 3
-    .param p1    # Lcom/android/mms/model/SlideshowModel;
 
     const-string v1, "Mms/SmilPlayerController"
 
@@ -504,7 +498,6 @@
 
 .method public seek(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/mms/ui/SlideshowActivity$SmilPlayerController;->mSmilPlayer:Lcom/android/mms/dom/smil/SmilPlayer;
 
@@ -520,7 +513,6 @@
 
 .method public setPlayerState(Lcom/android/mms/dom/smil/SmilPlayer$SmilPlayerState;)V
     .locals 1
-    .param p1    # Lcom/android/mms/dom/smil/SmilPlayer$SmilPlayerState;
 
     iget-object v0, p0, Lcom/android/mms/ui/SlideshowActivity$SmilPlayerController;->mSmilPlayer:Lcom/android/mms/dom/smil/SmilPlayer;
 

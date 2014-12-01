@@ -41,12 +41,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/am/ActivityManagerService;Lcom/android/server/am/ProcessRecord;IIILandroid/content/IIntentReceiver;)V
     .locals 1
-    .param p1    # Lcom/android/server/am/ActivityManagerService;
-    .param p2    # Lcom/android/server/am/ProcessRecord;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Landroid/content/IIntentReceiver;
 
     invoke-direct {p0}, Ljava/util/ArrayList;-><init>()V
 
@@ -93,8 +87,6 @@
 
 .method dump(Ljava/io/PrintWriter;Ljava/lang/String;)V
     .locals 7
-    .param p1    # Ljava/io/PrintWriter;
-    .param p2    # Ljava/lang/String;
 
     new-instance v4, Landroid/util/PrintWriterPrinter;
 
@@ -173,8 +165,6 @@
 
 .method dumpLocal(Ljava/io/PrintWriter;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/io/PrintWriter;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
@@ -257,7 +247,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     if-ne p0, p1, :cond_0
 

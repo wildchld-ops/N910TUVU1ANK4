@@ -21,8 +21,6 @@
 # direct methods
 .method constructor <init>(Landroid/hardware/motion/MotionRecognitionService;Landroid/content/Context;Z)V
     .locals 0
-    .param p2    # Landroid/content/Context;
-    .param p3    # Z
 
     iput-object p1, p0, Landroid/hardware/motion/MotionRecognitionService$2;->this$0:Landroid/hardware/motion/MotionRecognitionService;
 
@@ -35,7 +33,6 @@
 # virtual methods
 .method public sendMotionReactiveAlert(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Landroid/hardware/motion/MotionRecognitionService$2;->this$0:Landroid/hardware/motion/MotionRecognitionService;
 

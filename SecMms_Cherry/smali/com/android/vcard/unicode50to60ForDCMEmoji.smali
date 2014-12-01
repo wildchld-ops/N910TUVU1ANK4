@@ -2062,7 +2062,6 @@
 
 .method public static convert(Ljava/lang/String;)Ljava/lang/String;
     .locals 6
-    .param p0    # Ljava/lang/String;
 
     new-instance v0, Ljava/util/HashSet;
 
@@ -2142,8 +2141,6 @@
 
 .method private static getsurogateIfNeed(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 11
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const/4 v7, 0x0
 

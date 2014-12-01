@@ -50,8 +50,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Lcom/android/internal/policy/impl/keyguard/KeyguardServiceDelegate;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/internal/policy/impl/keyguard/KeyguardServiceDelegate;
 
     const/4 v2, 0x0
 
@@ -144,7 +142,6 @@
 
 .method static synthetic access$000(Lcom/android/internal/policy/impl/sviewcover/SViewCoverManager;)Landroid/os/IPowerManager;
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/sviewcover/SViewCoverManager;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/sviewcover/SViewCoverManager;->mPMS:Landroid/os/IPowerManager;
 
@@ -153,7 +150,6 @@
 
 .method static synthetic access$100(Lcom/android/internal/policy/impl/sviewcover/SViewCoverManager;)Z
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/sviewcover/SViewCoverManager;
 
     iget-boolean v0, p0, Lcom/android/internal/policy/impl/sviewcover/SViewCoverManager;->mSuppressCoverUI:Z
 
@@ -162,8 +158,6 @@
 
 .method static synthetic access$102(Lcom/android/internal/policy/impl/sviewcover/SViewCoverManager;Z)Z
     .locals 0
-    .param p0    # Lcom/android/internal/policy/impl/sviewcover/SViewCoverManager;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/internal/policy/impl/sviewcover/SViewCoverManager;->mSuppressCoverUI:Z
 
@@ -172,7 +166,6 @@
 
 .method static synthetic access$200(Lcom/android/internal/policy/impl/sviewcover/SViewCoverManager;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/sviewcover/SViewCoverManager;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/sviewcover/SViewCoverManager;->mHandler:Landroid/os/Handler;
 
@@ -181,8 +174,6 @@
 
 .method static synthetic access$302(Lcom/android/internal/policy/impl/sviewcover/SViewCoverManager;I)I
     .locals 0
-    .param p0    # Lcom/android/internal/policy/impl/sviewcover/SViewCoverManager;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/internal/policy/impl/sviewcover/SViewCoverManager;->mPhoneState:I
 
@@ -191,7 +182,6 @@
 
 .method static synthetic access$400(Lcom/android/internal/policy/impl/sviewcover/SViewCoverManager;)Z
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/sviewcover/SViewCoverManager;
 
     iget-boolean v0, p0, Lcom/android/internal/policy/impl/sviewcover/SViewCoverManager;->mIsCoverOpen:Z
 
@@ -200,7 +190,6 @@
 
 .method static synthetic access$500(Lcom/android/internal/policy/impl/sviewcover/SViewCoverManager;)Z
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/sviewcover/SViewCoverManager;
 
     iget-boolean v0, p0, Lcom/android/internal/policy/impl/sviewcover/SViewCoverManager;->mShowingCoverUI:Z
 
@@ -209,7 +198,6 @@
 
 .method static synthetic access$600(Lcom/android/internal/policy/impl/sviewcover/SViewCoverManager;)Ljava/lang/Runnable;
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/sviewcover/SViewCoverManager;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/sviewcover/SViewCoverManager;->mGoToSleepRunnable:Ljava/lang/Runnable;
 
@@ -218,7 +206,6 @@
 
 .method static synthetic access$700(Lcom/android/internal/policy/impl/sviewcover/SViewCoverManager;)V
     .locals 0
-    .param p0    # Lcom/android/internal/policy/impl/sviewcover/SViewCoverManager;
 
     invoke-direct {p0}, Lcom/android/internal/policy/impl/sviewcover/SViewCoverManager;->handleHide()V
 
@@ -227,7 +214,6 @@
 
 .method static synthetic access$800(Lcom/android/internal/policy/impl/sviewcover/SViewCoverManager;)V
     .locals 0
-    .param p0    # Lcom/android/internal/policy/impl/sviewcover/SViewCoverManager;
 
     invoke-direct {p0}, Lcom/android/internal/policy/impl/sviewcover/SViewCoverManager;->handleShow()V
 
@@ -536,7 +522,6 @@
 
 .method public updateCoverState(Z)V
     .locals 3
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/internal/policy/impl/sviewcover/SViewCoverManager;->mIsCoverOpen:Z
 
@@ -595,7 +580,6 @@
 
 .method public updateSupressCover(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/internal/policy/impl/sviewcover/SViewCoverManager;->mSuppressCoverUI:Z
 

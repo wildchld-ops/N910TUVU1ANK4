@@ -63,7 +63,6 @@
 
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -118,8 +117,6 @@
 
 .method static synthetic access$102(Lcom/android/mms/ui/StickerDownloadManager;Landroid/os/Messenger;)Landroid/os/Messenger;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/StickerDownloadManager;
-    .param p1    # Landroid/os/Messenger;
 
     iput-object p1, p0, Lcom/android/mms/ui/StickerDownloadManager;->mService:Landroid/os/Messenger;
 
@@ -128,8 +125,6 @@
 
 .method static synthetic access$202(Lcom/android/mms/ui/StickerDownloadManager;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/ui/StickerDownloadManager;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/StickerDownloadManager;->mBound:Z
 
@@ -138,7 +133,6 @@
 
 .method static synthetic access$300(Lcom/android/mms/ui/StickerDownloadManager;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/StickerDownloadManager;
 
     iget-object v0, p0, Lcom/android/mms/ui/StickerDownloadManager;->mPendingMessageList:Ljava/util/ArrayList;
 
@@ -147,8 +141,6 @@
 
 .method static synthetic access$400(Lcom/android/mms/ui/StickerDownloadManager;Landroid/os/Message;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/StickerDownloadManager;
-    .param p1    # Landroid/os/Message;
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/StickerDownloadManager;->sendMessage(Landroid/os/Message;)V
 
@@ -157,7 +149,6 @@
 
 .method static synthetic access$500(Lcom/android/mms/ui/StickerDownloadManager;)Ljava/util/Map;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/StickerDownloadManager;
 
     iget-object v0, p0, Lcom/android/mms/ui/StickerDownloadManager;->mReplyHandlerMap:Ljava/util/Map;
 
@@ -196,7 +187,6 @@
 
 .method public static getInstance(Landroid/content/Context;)Lcom/android/mms/ui/StickerDownloadManager;
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     sget-object v0, Lcom/android/mms/ui/StickerDownloadManager;->mInstance:Lcom/android/mms/ui/StickerDownloadManager;
 
@@ -216,9 +206,6 @@
 
 .method private makeMessage(Ljava/lang/String;Landroid/os/Handler;I)Landroid/os/Message;
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Handler;
-    .param p3    # I
 
     const/4 v2, 0x0
 
@@ -249,7 +236,6 @@
 
 .method private sendMessage(Landroid/os/Message;)V
     .locals 3
-    .param p1    # Landroid/os/Message;
 
     iget-boolean v1, p0, Lcom/android/mms/ui/StickerDownloadManager;->mBound:Z
 
@@ -290,8 +276,6 @@
 # virtual methods
 .method public cancelDownloadStickerPackage(Ljava/lang/String;Landroid/os/Handler;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Handler;
 
     const/4 v1, 0x2
 
@@ -306,8 +290,6 @@
 
 .method public downloadStickerPackage(Ljava/lang/String;Landroid/os/Handler;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Handler;
 
     const/4 v1, 0x1
 

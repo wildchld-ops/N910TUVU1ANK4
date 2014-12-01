@@ -43,7 +43,6 @@
 
 .method static synthetic access$000(Lcom/diotek/ime/implement/setting/Tutorial;)Landroid/widget/EditText;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/setting/Tutorial;
 
     iget-object v0, p0, Lcom/diotek/ime/implement/setting/Tutorial;->mTutorialEditText:Landroid/widget/EditText;
 
@@ -576,14 +575,12 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     return-void
 .end method
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
@@ -617,7 +614,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 

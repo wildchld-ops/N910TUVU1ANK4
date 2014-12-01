@@ -157,8 +157,6 @@
 
 .method static synthetic access$000(Lcom/android/incallui/CallCardPresenter;Lcom/android/services/telephony/common/Call;)V
     .locals 0
-    .param p0    # Lcom/android/incallui/CallCardPresenter;
-    .param p1    # Lcom/android/services/telephony/common/Call;
 
     invoke-direct {p0, p1}, Lcom/android/incallui/CallCardPresenter;->onEcidUpdate(Lcom/android/services/telephony/common/Call;)V
 
@@ -175,7 +173,6 @@
 
 .method static synthetic access$200(Lcom/android/incallui/CallCardPresenter;)Lcom/android/services/telephony/common/Call;
     .locals 1
-    .param p0    # Lcom/android/incallui/CallCardPresenter;
 
     iget-object v0, p0, Lcom/android/incallui/CallCardPresenter;->mPrimary:Lcom/android/services/telephony/common/Call;
 
@@ -184,7 +181,6 @@
 
 .method static synthetic access$300(Lcom/android/incallui/CallCardPresenter;)Lcom/android/services/telephony/common/Call;
     .locals 1
-    .param p0    # Lcom/android/incallui/CallCardPresenter;
 
     iget-object v0, p0, Lcom/android/incallui/CallCardPresenter;->mSecondary:Lcom/android/services/telephony/common/Call;
 
@@ -193,8 +189,6 @@
 
 .method static synthetic access$400(Lcom/android/incallui/CallCardPresenter;Lcom/android/services/telephony/common/Call;)V
     .locals 0
-    .param p0    # Lcom/android/incallui/CallCardPresenter;
-    .param p1    # Lcom/android/services/telephony/common/Call;
 
     invoke-direct {p0, p1}, Lcom/android/incallui/CallCardPresenter;->updateVideoBtn(Lcom/android/services/telephony/common/Call;)V
 
@@ -203,8 +197,6 @@
 
 .method private areCallsSame(Lcom/android/services/telephony/common/Call;Lcom/android/services/telephony/common/Call;)Z
     .locals 4
-    .param p1    # Lcom/android/services/telephony/common/Call;
-    .param p2    # Lcom/android/services/telephony/common/Call;
 
     const/4 v0, 0x1
 
@@ -246,8 +238,6 @@
 
 .method private checkSpecialCases(Lcom/android/services/telephony/common/Call;Lcom/android/services/telephony/common/Call;)Z
     .locals 5
-    .param p1    # Lcom/android/services/telephony/common/Call;
-    .param p2    # Lcom/android/services/telephony/common/Call;
 
     const/4 v4, 0x2
 
@@ -390,8 +380,6 @@
 
 .method private conferenceSame(Lcom/android/services/telephony/common/Call;Lcom/android/services/telephony/common/Call;)Z
     .locals 4
-    .param p1    # Lcom/android/services/telephony/common/Call;
-    .param p2    # Lcom/android/services/telephony/common/Call;
 
     const/4 v0, 0x1
 
@@ -441,9 +429,6 @@
 
 .method private getCallToDisplay(Lcom/android/incallui/CallList;Lcom/android/services/telephony/common/Call;Z)Lcom/android/services/telephony/common/Call;
     .locals 4
-    .param p1    # Lcom/android/incallui/CallList;
-    .param p2    # Lcom/android/services/telephony/common/Call;
-    .param p3    # Z
 
     invoke-virtual {p1}, Lcom/android/incallui/CallList;->getActiveCall()Lcom/android/services/telephony/common/Call;
 
@@ -892,7 +877,6 @@
 
 .method private static isConference(Lcom/android/services/telephony/common/Call;)Z
     .locals 1
-    .param p0    # Lcom/android/services/telephony/common/Call;
 
     if-eqz p0, :cond_0
 
@@ -915,7 +899,6 @@
 
 .method private static isGenericConference(Lcom/android/services/telephony/common/Call;)Z
     .locals 1
-    .param p0    # Lcom/android/services/telephony/common/Call;
 
     if-eqz p0, :cond_0
 
@@ -940,8 +923,6 @@
 
 .method private maybeStartSearch(Lcom/android/services/telephony/common/Call;Z)V
     .locals 3
-    .param p1    # Lcom/android/services/telephony/common/Call;
-    .param p2    # Z
 
     if-eqz p1, :cond_0
 
@@ -1235,7 +1216,6 @@
 
 .method private needToShowCallerInfoCard(Lcom/android/incallui/CallList;)Z
     .locals 4
-    .param p1    # Lcom/android/incallui/CallList;
 
     const/4 v0, 0x0
 
@@ -1710,7 +1690,6 @@
 
 .method private needToUpdatePhotoForCallState(I)Z
     .locals 2
-    .param p1    # I
 
     iget v1, p0, Lcom/android/incallui/CallCardPresenter;->mPreviousCallState:I
 
@@ -1739,7 +1718,6 @@
 
 .method private needToUpdateSecondaryInfo(I)Z
     .locals 2
-    .param p1    # I
 
     iget v1, p0, Lcom/android/incallui/CallCardPresenter;->mPreviousCallState:I
 
@@ -1832,7 +1810,6 @@
 
 .method private setCityIdUi(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Lcom/android/incallui/Presenter;->getUi()Lcom/android/incallui/Ui;
 
@@ -1850,7 +1827,6 @@
 
 .method private showEnableCallerInfoCard(Lcom/android/incallui/CallList;)V
     .locals 9
-    .param p1    # Lcom/android/incallui/CallList;
 
     const/4 v5, 0x1
 
@@ -1969,9 +1945,6 @@
 
 .method private startContactInfoSearch(Lcom/android/services/telephony/common/CallIdentification;ZZ)V
     .locals 2
-    .param p1    # Lcom/android/services/telephony/common/CallIdentification;
-    .param p2    # Z
-    .param p3    # Z
 
     invoke-virtual {p0}, Lcom/android/incallui/Presenter;->getContext()Landroid/content/Context;
 
@@ -2647,7 +2620,6 @@
 
 .method private updateVideoBtn(Lcom/android/services/telephony/common/Call;)V
     .locals 9
-    .param p1    # Lcom/android/services/telephony/common/Call;
 
     const/4 v5, 0x1
 
@@ -3123,7 +3095,6 @@
 
 .method public enableCallerInfoCard(Z)V
     .locals 4
-    .param p1    # Z
 
     invoke-static {}, Lcom/android/services/telephony/common/SystemDBInterface;->isCallerInfoCardMode()Z
 
@@ -3185,7 +3156,6 @@
 
 .method protected getCapabilities(I)Z
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/incallui/CallCardPresenter;->getPrimaryCall()Lcom/android/services/telephony/common/Call;
 
@@ -3274,7 +3244,6 @@
 
 .method protected getNameForCall(Lcom/android/incallui/ContactInfoCache$ContactCacheEntry;)Ljava/lang/String;
     .locals 1
-    .param p1    # Lcom/android/incallui/ContactInfoCache$ContactCacheEntry;
 
     iget-object v0, p1, Lcom/android/incallui/ContactInfoCache$ContactCacheEntry;->name:Ljava/lang/String;
 
@@ -3537,8 +3506,6 @@
 
 .method public init(Lcom/android/incallui/CallList;Lcom/android/services/telephony/common/Call;)V
     .locals 10
-    .param p1    # Lcom/android/incallui/CallList;
-    .param p2    # Lcom/android/services/telephony/common/Call;
 
     const/4 v9, 0x0
 
@@ -3820,7 +3787,6 @@
 
 .method public isIncomingOrOutgoing(I)Z
     .locals 5
-    .param p1    # I
 
     const/4 v3, 0x1
 
@@ -3998,7 +3964,6 @@
 
 .method public onAudioMode(I)V
     .locals 6
-    .param p1    # I
 
     const-string v0, "ims_video_default_speaker_mode"
 
@@ -4393,14 +4358,12 @@
 
 .method public onCastingEvent(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onCoverStatusChanged(Z)V
     .locals 15
-    .param p1    # Z
 
     if-eqz p1, :cond_6
 
@@ -4741,7 +4704,6 @@
 
 .method public onEmergencyModeChange(Z)V
     .locals 2
-    .param p1    # Z
 
     invoke-virtual {p0}, Lcom/android/incallui/Presenter;->getUi()Lcom/android/incallui/Ui;
 
@@ -5022,8 +4984,6 @@
 
 .method public onIncomingCall(Lcom/android/incallui/InCallPresenter$InCallState;Lcom/android/services/telephony/common/Call;)V
     .locals 1
-    .param p1    # Lcom/android/incallui/InCallPresenter$InCallState;
-    .param p2    # Lcom/android/services/telephony/common/Call;
 
     const-string v0, "ims_video_default_speaker_mode"
 
@@ -5099,7 +5059,6 @@
 
 .method public onMute(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
@@ -5144,7 +5103,6 @@
 
 .method public onSideSyncCallForwardStateChanged(Z)V
     .locals 0
-    .param p1    # Z
 
     invoke-virtual {p0}, Lcom/android/incallui/CallCardPresenter;->updateExtraVolumeButton()V
 
@@ -8012,7 +7970,6 @@
 
 .method public onSupportedAudioMode(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/incallui/CallCardPresenter;->mPrimary:Lcom/android/services/telephony/common/Call;
 
@@ -8129,7 +8086,6 @@
 
 .method public onSurfaceDestroyed(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -8180,7 +8136,6 @@
 
 .method public onUiReady(Lcom/android/incallui/CallCardPresenter$CallCardUi;)V
     .locals 3
-    .param p1    # Lcom/android/incallui/CallCardPresenter$CallCardUi;
 
     const/4 v2, 0x0
 
@@ -8353,7 +8308,6 @@
 
 .method public bridge synthetic onUiReady(Lcom/android/incallui/Ui;)V
     .locals 0
-    .param p1    # Lcom/android/incallui/Ui;
 
     check-cast p1, Lcom/android/incallui/CallCardPresenter$CallCardUi;
 
@@ -8667,7 +8621,6 @@
 
 .method public onUiUnready(Lcom/android/incallui/CallCardPresenter$CallCardUi;)V
     .locals 2
-    .param p1    # Lcom/android/incallui/CallCardPresenter$CallCardUi;
 
     const/4 v1, 0x0
 
@@ -8737,7 +8690,6 @@
 
 .method public bridge synthetic onUiUnready(Lcom/android/incallui/Ui;)V
     .locals 0
-    .param p1    # Lcom/android/incallui/Ui;
 
     check-cast p1, Lcom/android/incallui/CallCardPresenter$CallCardUi;
 
@@ -8946,8 +8898,6 @@
 
 .method public onVideoCallEvent(ILsiso/vt/VideoTelephonyData;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Lsiso/vt/VideoTelephonyData;
 
     return-void
 .end method
@@ -9049,7 +8999,6 @@
 
 .method public secondCallElapsed(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/incallui/CallCardPresenter;->secondCallElapsedDriveLink:Z
 
@@ -9058,8 +9007,6 @@
 
 .method public setActionMemoFilePath(ILjava/lang/String;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p0}, Lcom/android/incallui/Presenter;->getUi()Lcom/android/incallui/Ui;
 
@@ -9081,7 +9028,6 @@
 
 .method public setActionMemoFilePath(ILjava/util/ArrayList;)V
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -9112,7 +9058,6 @@
 
 .method public setEndCallTime(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/incallui/CallCardPresenter;->mEndCallTime:Ljava/lang/String;
 
@@ -9212,7 +9157,6 @@
 
 .method public setIsShowingModifyCallDialog(Z)V
     .locals 1
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/incallui/CallCardPresenter;->mIsShowingModifyCallPromptDialog:Z
 
@@ -9278,7 +9222,6 @@
 
 .method public setResizeChecked(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/incallui/CallCardPresenter;->isResizeMenuChecked:Z
 
@@ -9287,7 +9230,6 @@
 
 .method public setSurfaceViewSwipe(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-direct {p0}, Lcom/android/incallui/CallCardPresenter;->getVideoCallManager()Lcom/android/incallui/vt/VideoCallManager;
 
@@ -9321,7 +9263,6 @@
 
 .method public showCallerInfoCard(Z)V
     .locals 3
-    .param p1    # Z
 
     invoke-static {}, Lcom/android/services/telephony/common/SystemDBInterface;->isCallerInfoCardMode()Z
 
@@ -9371,7 +9312,6 @@
 
 .method public startRender(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-direct {p0}, Lcom/android/incallui/CallCardPresenter;->getVideoCallManager()Lcom/android/incallui/vt/VideoCallManager;
 
@@ -9762,8 +9702,6 @@
 
 .method public updateCallerInfoCard(IZ)V
     .locals 3
-    .param p1    # I
-    .param p2    # Z
 
     invoke-static {}, Lcom/android/services/telephony/common/SystemDBInterface;->isCallerInfoCardMode()Z
 
@@ -9841,9 +9779,6 @@
 
 .method public updateContactEntry(Lcom/android/incallui/ContactInfoCache$ContactCacheEntry;ZZ)V
     .locals 0
-    .param p1    # Lcom/android/incallui/ContactInfoCache$ContactCacheEntry;
-    .param p2    # Z
-    .param p3    # Z
 
     if-eqz p2, :cond_0
 

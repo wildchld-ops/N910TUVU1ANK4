@@ -218,7 +218,6 @@
 
 .method public constructor <init>(Landroid/content/IntentFilter;)V
     .locals 2
-    .param p1    # Landroid/content/IntentFilter;
 
     const/4 v0, 0x0
 
@@ -339,7 +338,6 @@
 
 .method private constructor <init>(Landroid/os/Parcel;)V
     .locals 5
-    .param p1    # Landroid/os/Parcel;
 
     const/4 v2, 0x0
 
@@ -534,8 +532,6 @@
 
 .method synthetic constructor <init>(Landroid/os/Parcel;Landroid/content/IntentFilter$1;)V
     .locals 0
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # Landroid/content/IntentFilter$1;
 
     invoke-direct {p0, p1}, Landroid/content/IntentFilter;-><init>(Landroid/os/Parcel;)V
 
@@ -544,7 +540,6 @@
 
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -581,8 +576,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/IntentFilter$MalformedMimeTypeException;
@@ -626,10 +619,6 @@
 
 .method private static addStringToSet([Ljava/lang/String;Ljava/lang/String;[II)[Ljava/lang/String;
     .locals 4
-    .param p0    # [Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # [I
-    .param p3    # I
 
     const/4 v3, 0x0
 
@@ -696,8 +685,6 @@
 
 .method public static create(Ljava/lang/String;Ljava/lang/String;)Landroid/content/IntentFilter;
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     new-instance v1, Landroid/content/IntentFilter;
@@ -722,7 +709,6 @@
 
 .method private final findMimeType(Ljava/lang/String;)Z
     .locals 10
-    .param p1    # Ljava/lang/String;
 
     const/4 v6, 0x1
 
@@ -857,10 +843,6 @@
 
 .method private static findStringInSet([Ljava/lang/String;Ljava/lang/String;[II)I
     .locals 4
-    .param p0    # [Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # [I
-    .param p3    # I
 
     const/4 v2, -0x1
 
@@ -900,10 +882,6 @@
 
 .method private static removeStringFromSet([Ljava/lang/String;Ljava/lang/String;[II)[Ljava/lang/String;
     .locals 6
-    .param p0    # [Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # [I
-    .param p3    # I
 
     const/4 v5, 0x0
 
@@ -1013,7 +991,6 @@
 
 .method public final addAction(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/content/IntentFilter;->mActions:Ljava/util/ArrayList;
 
@@ -1037,7 +1014,6 @@
 
 .method public final addCategory(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/content/IntentFilter;->mCategories:Ljava/util/ArrayList;
 
@@ -1072,7 +1048,6 @@
 
 .method public final addDataAuthority(Landroid/content/IntentFilter$AuthorityEntry;)V
     .locals 1
-    .param p1    # Landroid/content/IntentFilter$AuthorityEntry;
 
     iget-object v0, p0, Landroid/content/IntentFilter;->mDataAuthorities:Ljava/util/ArrayList;
 
@@ -1094,8 +1069,6 @@
 
 .method public final addDataAuthority(Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     if-eqz p2, :cond_0
 
@@ -1119,7 +1092,6 @@
 
 .method public final addDataPath(Landroid/os/PatternMatcher;)V
     .locals 1
-    .param p1    # Landroid/os/PatternMatcher;
 
     iget-object v0, p0, Landroid/content/IntentFilter;->mDataPaths:Ljava/util/ArrayList;
 
@@ -1141,8 +1113,6 @@
 
 .method public final addDataPath(Ljava/lang/String;I)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     new-instance v0, Landroid/os/PatternMatcher;
 
@@ -1159,7 +1129,6 @@
 
 .method public final addDataScheme(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/content/IntentFilter;->mDataSchemes:Ljava/util/ArrayList;
 
@@ -1194,7 +1163,6 @@
 
 .method public final addDataSchemeSpecificPart(Landroid/os/PatternMatcher;)V
     .locals 1
-    .param p1    # Landroid/os/PatternMatcher;
 
     iget-object v0, p0, Landroid/content/IntentFilter;->mDataSchemeSpecificParts:Ljava/util/ArrayList;
 
@@ -1216,8 +1184,6 @@
 
 .method public final addDataSchemeSpecificPart(Ljava/lang/String;I)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     new-instance v0, Landroid/os/PatternMatcher;
 
@@ -1230,7 +1196,6 @@
 
 .method public final addDataType(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/IntentFilter$MalformedMimeTypeException;
@@ -1560,8 +1525,6 @@
 
 .method public dump(Landroid/util/Printer;Ljava/lang/String;)V
     .locals 8
-    .param p1    # Landroid/util/Printer;
-    .param p2    # Ljava/lang/String;
 
     const/4 v7, 0x0
 
@@ -1962,7 +1925,6 @@
 
 .method public final getAction(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/content/IntentFilter;->mActions:Ljava/util/ArrayList;
 
@@ -1977,7 +1939,6 @@
 
 .method public final getCategory(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/content/IntentFilter;->mCategories:Ljava/util/ArrayList;
 
@@ -1992,7 +1953,6 @@
 
 .method public final getDataAuthority(I)Landroid/content/IntentFilter$AuthorityEntry;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/content/IntentFilter;->mDataAuthorities:Ljava/util/ArrayList;
 
@@ -2007,7 +1967,6 @@
 
 .method public final getDataPath(I)Landroid/os/PatternMatcher;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/content/IntentFilter;->mDataPaths:Ljava/util/ArrayList;
 
@@ -2022,7 +1981,6 @@
 
 .method public final getDataScheme(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/content/IntentFilter;->mDataSchemes:Ljava/util/ArrayList;
 
@@ -2037,7 +1995,6 @@
 
 .method public final getDataSchemeSpecificPart(I)Landroid/os/PatternMatcher;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/content/IntentFilter;->mDataSchemeSpecificParts:Ljava/util/ArrayList;
 
@@ -2052,7 +2009,6 @@
 
 .method public final getDataType(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/content/IntentFilter;->mDataTypes:Ljava/util/ArrayList;
 
@@ -2075,7 +2031,6 @@
 
 .method public final hasAction(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -2100,7 +2055,6 @@
 
 .method public final hasCategory(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/content/IntentFilter;->mCategories:Ljava/util/ArrayList;
 
@@ -2127,7 +2081,6 @@
 
 .method public final hasDataAuthority(Landroid/net/Uri;)Z
     .locals 1
-    .param p1    # Landroid/net/Uri;
 
     invoke-virtual {p0, p1}, Landroid/content/IntentFilter;->matchDataAuthority(Landroid/net/Uri;)I
 
@@ -2148,7 +2101,6 @@
 
 .method public final hasDataPath(Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -2198,7 +2150,6 @@
 
 .method public final hasDataScheme(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/content/IntentFilter;->mDataSchemes:Ljava/util/ArrayList;
 
@@ -2225,7 +2176,6 @@
 
 .method public final hasDataSchemeSpecificPart(Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -2275,7 +2225,6 @@
 
 .method public final hasDataType(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/content/IntentFilter;->mDataTypes:Ljava/util/ArrayList;
 
@@ -2300,10 +2249,6 @@
 
 .method public final match(Landroid/content/ContentResolver;Landroid/content/Intent;ZLjava/lang/String;)I
     .locals 7
-    .param p1    # Landroid/content/ContentResolver;
-    .param p2    # Landroid/content/Intent;
-    .param p3    # Z
-    .param p4    # Ljava/lang/String;
 
     if-eqz p3, :cond_0
 
@@ -2348,11 +2293,6 @@
 
 .method public final match(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/net/Uri;Ljava/util/Set;Ljava/lang/String;)I
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Landroid/net/Uri;
-    .param p6    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2403,7 +2343,6 @@
 
 .method public final matchAction(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Landroid/content/IntentFilter;->hasAction(Ljava/lang/String;)Z
 
@@ -2484,9 +2423,6 @@
 
 .method public final matchData(Ljava/lang/String;Ljava/lang/String;Landroid/net/Uri;)I
     .locals 11
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/net/Uri;
 
     const/high16 v8, 0x580000
 
@@ -2655,7 +2591,6 @@
 
 .method public final matchDataAuthority(Landroid/net/Uri;)I
     .locals 6
-    .param p1    # Landroid/net/Uri;
 
     const/4 v4, -0x2
 
@@ -2738,7 +2673,6 @@
 
 .method public readFromXml(Lorg/xmlpull/v1/XmlPullParser;)V
     .locals 11
-    .param p1    # Lorg/xmlpull/v1/XmlPullParser;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -3128,7 +3062,6 @@
 
 .method public final setPriority(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/content/IntentFilter;->mPriority:I
 
@@ -3168,8 +3101,6 @@
 
 .method public final writeToParcel(Landroid/os/Parcel;I)V
     .locals 5
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     const/4 v3, 0x1
 
@@ -3355,7 +3286,6 @@
 
 .method public writeToXml(Lorg/xmlpull/v1/XmlSerializer;)V
     .locals 8
-    .param p1    # Lorg/xmlpull/v1/XmlSerializer;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

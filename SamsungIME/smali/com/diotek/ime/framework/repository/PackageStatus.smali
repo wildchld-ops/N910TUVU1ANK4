@@ -395,7 +395,6 @@
 
 .method public static setPackageName(Ljava/lang/String;)V
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     sget-object v0, Lcom/diotek/ime/framework/repository/PackageStatus;->sInstance:Lcom/diotek/ime/framework/repository/PackageStatus;
 

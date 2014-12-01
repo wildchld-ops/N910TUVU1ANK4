@@ -62,8 +62,6 @@
 
 .method private constructor <init>(Landroid/content/Context;Landroid/nfc/INfcCardEmulation;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/nfc/INfcCardEmulation;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -80,7 +78,6 @@
 
 .method public static declared-synchronized getInstance(Landroid/nfc/NfcAdapter;)Landroid/nfc/cardemulation/CardEmulation;
     .locals 8
-    .param p0    # Landroid/nfc/NfcAdapter;
 
     const-class v6, Landroid/nfc/cardemulation/CardEmulation;
 
@@ -232,7 +229,6 @@
 # virtual methods
 .method public getSelectionModeForCategory(Ljava/lang/String;)I
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const-string v1, "payment"
 
@@ -274,7 +270,6 @@
 
 .method public getServices(Ljava/lang/String;)Ljava/util/List;
     .locals 5
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -352,8 +347,6 @@
 
 .method public isDefaultServiceForAid(Landroid/content/ComponentName;Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -420,8 +413,6 @@
 
 .method public isDefaultServiceForCategory(Landroid/content/ComponentName;Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -506,7 +497,6 @@
 
 .method public setDefaultForNextTap(Landroid/content/ComponentName;)Z
     .locals 5
-    .param p1    # Landroid/content/ComponentName;
 
     const/4 v2, 0x0
 
@@ -573,8 +563,6 @@
 
 .method public setDefaultServiceForCategory(Landroid/content/ComponentName;Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Ljava/lang/String;
 
     const/4 v2, 0x0
 

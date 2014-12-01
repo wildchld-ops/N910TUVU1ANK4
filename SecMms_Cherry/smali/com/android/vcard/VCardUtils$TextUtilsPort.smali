@@ -25,7 +25,6 @@
 
 .method public static isPrintableAscii(C)Z
     .locals 3
-    .param p0    # C
 
     const/16 v0, 0x20
 
@@ -62,7 +61,6 @@
 
 .method public static isPrintableAsciiOnly(Ljava/lang/CharSequence;)Z
     .locals 3
-    .param p0    # Ljava/lang/CharSequence;
 
     invoke-interface {p0}, Ljava/lang/CharSequence;->length()I
 

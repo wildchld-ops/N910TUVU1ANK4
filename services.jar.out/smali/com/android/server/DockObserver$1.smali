@@ -21,7 +21,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/DockObserver;Z)V
     .locals 0
-    .param p2    # Z
 
     iput-object p1, p0, Lcom/android/server/DockObserver$1;->this$0:Lcom/android/server/DockObserver;
 
@@ -34,7 +33,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 1
-    .param p1    # Landroid/os/Message;
 
     iget v0, p1, Landroid/os/Message;->what:I
 

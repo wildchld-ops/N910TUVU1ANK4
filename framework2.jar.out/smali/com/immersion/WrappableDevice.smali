@@ -28,8 +28,6 @@
 
 .method public constructor <init>(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0}, Lcom/immersion/Device;-><init>()V
 
@@ -46,7 +44,6 @@
 
 .method public constructor <init>(Lcom/immersion/Device;)V
     .locals 2
-    .param p1    # Lcom/immersion/Device;
 
     iget v0, p1, Lcom/immersion/Device;->hDeviceHandle:I
 
@@ -94,7 +91,6 @@
 
 .method public setDeviceHandle(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/immersion/Device;->hDeviceHandle:I
 
@@ -103,7 +99,6 @@
 
 .method public setDeviceIndex(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/immersion/Device;->nDeviceIndex:I
 

@@ -20,9 +20,6 @@
 # direct methods
 .method public constructor <init>(IILjava/lang/String;)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2, p3}, Landroid/drm/DrmEvent;-><init>(IILjava/lang/String;)V
 
@@ -33,9 +30,6 @@
 
 .method public constructor <init>(IILjava/lang/String;Ljava/util/HashMap;)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II",
@@ -57,7 +51,6 @@
 
 .method private checkTypeValidity(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v1, 0x1
 

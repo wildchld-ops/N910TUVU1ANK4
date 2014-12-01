@@ -376,7 +376,6 @@
 # virtual methods
 .method public addCaCertificate(Ljava/security/cert/X509Certificate;)V
     .locals 2
-    .param p1    # Ljava/security/cert/X509Certificate;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/security/cert/CertificateEncodingException;
@@ -403,7 +402,6 @@
 
 .method public addEapMethod(Lcom/ipsec/client/IPsecConnection$EapMethod;)V
     .locals 2
-    .param p1    # Lcom/ipsec/client/IPsecConnection$EapMethod;
 
     if-eqz p1, :cond_0
 
@@ -423,7 +421,6 @@
 
 .method public addGroup(Lcom/ipsec/client/IPsecConnection$IkeGroup;)V
     .locals 2
-    .param p1    # Lcom/ipsec/client/IPsecConnection$IkeGroup;
 
     sget-object v0, Lcom/ipsec/client/IPsecConnection$IkeGroup;->IKE_GROUP_SUITE_B_GCM_128:Lcom/ipsec/client/IPsecConnection$IkeGroup;
 
@@ -461,7 +458,6 @@
 
 .method public addIPsecEncryption(Lcom/ipsec/client/IPsecConnection$IPsecEncryption;)V
     .locals 2
-    .param p1    # Lcom/ipsec/client/IPsecConnection$IPsecEncryption;
 
     sget-object v0, Lcom/ipsec/client/IPsecConnection$IPsecEncryption;->IPSEC_ENCRYPTION_BASIC:Lcom/ipsec/client/IPsecConnection$IPsecEncryption;
 
@@ -530,7 +526,6 @@
 
 .method public addIPsecGroup(Lcom/ipsec/client/IPsecConnection$IPsecGroup;)V
     .locals 1
-    .param p1    # Lcom/ipsec/client/IPsecConnection$IPsecGroup;
 
     if-eqz p1, :cond_0
 
@@ -544,7 +539,6 @@
 
 .method public addIPsecIntegrity(Lcom/ipsec/client/IPsecConnection$IPsecIntegrity;)V
     .locals 2
-    .param p1    # Lcom/ipsec/client/IPsecConnection$IPsecIntegrity;
 
     sget-object v0, Lcom/ipsec/client/IPsecConnection$IPsecIntegrity;->IPSEC_INTEGRITY_BASIC:Lcom/ipsec/client/IPsecConnection$IPsecIntegrity;
 
@@ -602,7 +596,6 @@
 
 .method public addIkeEncryption(Lcom/ipsec/client/IPsecConnection$IkeEncryption;)V
     .locals 2
-    .param p1    # Lcom/ipsec/client/IPsecConnection$IkeEncryption;
 
     sget-object v0, Lcom/ipsec/client/IPsecConnection$IkeEncryption;->IKE_ENCRYPTION_BASIC:Lcom/ipsec/client/IPsecConnection$IkeEncryption;
 
@@ -671,7 +664,6 @@
 
 .method public addIkeIntegrity(Lcom/ipsec/client/IPsecConnection$IkeIntegrity;)V
     .locals 2
-    .param p1    # Lcom/ipsec/client/IPsecConnection$IkeIntegrity;
 
     sget-object v0, Lcom/ipsec/client/IPsecConnection$IkeIntegrity;->IKE_INTEGRITY_BASIC:Lcom/ipsec/client/IPsecConnection$IkeIntegrity;
 
@@ -746,7 +738,6 @@
 
 .method public addImCertificate(Ljava/security/cert/X509Certificate;)V
     .locals 2
-    .param p1    # Ljava/security/cert/X509Certificate;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/security/cert/CertificateEncodingException;
@@ -773,7 +764,6 @@
 
 .method public addInterface(Lcom/ipsec/client/IPsecNetworkInterface;)V
     .locals 1
-    .param p1    # Lcom/ipsec/client/IPsecNetworkInterface;
 
     if-eqz p1, :cond_0
 
@@ -793,7 +783,6 @@
 
 .method public addInternalSubnet(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -807,7 +796,6 @@
 
 .method public addRequestIkeCfgAttribute(Lcom/ipsec/client/IPsecIkeCfgAttribute;)V
     .locals 1
-    .param p1    # Lcom/ipsec/client/IPsecIkeCfgAttribute;
 
     if-eqz p1, :cond_0
 
@@ -2220,7 +2208,6 @@
 
 .method public setAggressiveMode(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/ipsec/client/IPsecConnection;->aggressiveMode:Z
 
@@ -2229,7 +2216,6 @@
 
 .method public setCaCertificate(Ljava/security/cert/X509Certificate;)V
     .locals 0
-    .param p1    # Ljava/security/cert/X509Certificate;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/security/cert/CertificateEncodingException;
@@ -2245,7 +2231,6 @@
 
 .method public setCertCheckRevocation(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/ipsec/client/IPsecConnection;->certCheckRevocation:Z
 
@@ -2254,7 +2239,6 @@
 
 .method public setCertificate(Ljava/security/cert/X509Certificate;)V
     .locals 1
-    .param p1    # Ljava/security/cert/X509Certificate;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/security/cert/CertificateEncodingException;
@@ -2284,7 +2268,6 @@
 
 .method public setConnectTimeout(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/ipsec/client/IPsecConnection;->connectTimeout:I
 
@@ -2293,7 +2276,6 @@
 
 .method protected declared-synchronized setConnectionId(I)V
     .locals 1
-    .param p1    # I
 
     monitor-enter p0
 
@@ -2316,7 +2298,6 @@
 
 .method public setDpdTimeout(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/ipsec/client/IPsecConnection;->dpdTimeout:I
 
@@ -2325,7 +2306,6 @@
 
 .method public setGateway(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -2405,7 +2385,6 @@
 
 .method public setGlobalDnsConfiguration(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/ipsec/client/IPsecConnection;->globalDnsConfiguration:Z
 
@@ -2414,7 +2393,6 @@
 
 .method public setGroup(Lcom/ipsec/client/IPsecConnection$IkeGroup;)V
     .locals 0
-    .param p1    # Lcom/ipsec/client/IPsecConnection$IkeGroup;
 
     invoke-virtual {p0}, Lcom/ipsec/client/IPsecConnection;->clearGroup()V
 
@@ -2425,7 +2403,6 @@
 
 .method public setHostAuthentication(Lcom/ipsec/client/IPsecConnection$HostAuthentication;)V
     .locals 0
-    .param p1    # Lcom/ipsec/client/IPsecConnection$HostAuthentication;
 
     iput-object p1, p0, Lcom/ipsec/client/IPsecConnection;->hostAuthentication:Lcom/ipsec/client/IPsecConnection$HostAuthentication;
 
@@ -2434,7 +2411,6 @@
 
 .method public setHybridMode(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/ipsec/client/IPsecConnection;->hybridModeConnection:Z
 
@@ -2443,7 +2419,6 @@
 
 .method public setIPsecAntiReplay(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/ipsec/client/IPsecConnection;->ipsecAntiReplay:Z
 
@@ -2452,7 +2427,6 @@
 
 .method public setIPsecEncryption(Lcom/ipsec/client/IPsecConnection$IPsecEncryption;)V
     .locals 0
-    .param p1    # Lcom/ipsec/client/IPsecConnection$IPsecEncryption;
 
     invoke-virtual {p0}, Lcom/ipsec/client/IPsecConnection;->clearIPsecEncryption()V
 
@@ -2463,7 +2437,6 @@
 
 .method public setIPsecGroup(Lcom/ipsec/client/IPsecConnection$IPsecGroup;)V
     .locals 0
-    .param p1    # Lcom/ipsec/client/IPsecConnection$IPsecGroup;
 
     invoke-virtual {p0}, Lcom/ipsec/client/IPsecConnection;->clearIPsecGroup()V
 
@@ -2474,7 +2447,6 @@
 
 .method public setIPsecIntegrity(Lcom/ipsec/client/IPsecConnection$IPsecIntegrity;)V
     .locals 0
-    .param p1    # Lcom/ipsec/client/IPsecConnection$IPsecIntegrity;
 
     invoke-virtual {p0}, Lcom/ipsec/client/IPsecConnection;->clearIPsecIntegrity()V
 
@@ -2485,8 +2457,6 @@
 
 .method public setIPsecLife(Lcom/ipsec/client/IPsecConnection$IPsecLifeType;I)V
     .locals 3
-    .param p1    # Lcom/ipsec/client/IPsecConnection$IPsecLifeType;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -2535,7 +2505,6 @@
 
 .method public setIkeEncryption(Lcom/ipsec/client/IPsecConnection$IkeEncryption;)V
     .locals 0
-    .param p1    # Lcom/ipsec/client/IPsecConnection$IkeEncryption;
 
     invoke-virtual {p0}, Lcom/ipsec/client/IPsecConnection;->clearIkeEncryption()V
 
@@ -2546,7 +2515,6 @@
 
 .method public setIkeIntegrity(Lcom/ipsec/client/IPsecConnection$IkeIntegrity;)V
     .locals 0
-    .param p1    # Lcom/ipsec/client/IPsecConnection$IkeIntegrity;
 
     invoke-virtual {p0}, Lcom/ipsec/client/IPsecConnection;->clearIkeIntegrity()V
 
@@ -2557,7 +2525,6 @@
 
 .method public setIkeLife(I)V
     .locals 3
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -2604,7 +2571,6 @@
 
 .method public setIkeVersion(Lcom/ipsec/client/IPsecConnection$IkeVersion;)V
     .locals 0
-    .param p1    # Lcom/ipsec/client/IPsecConnection$IkeVersion;
 
     iput-object p1, p0, Lcom/ipsec/client/IPsecConnection;->ikeVersion:Lcom/ipsec/client/IPsecConnection$IkeVersion;
 
@@ -2613,7 +2579,6 @@
 
 .method public setIkeWindowSize(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/ipsec/client/IPsecConnection;->ikeWindowSize:I
 
@@ -2622,7 +2587,6 @@
 
 .method public setMobike(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/ipsec/client/IPsecConnection;->mobike:Z
 
@@ -2631,7 +2595,6 @@
 
 .method public setName(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -2654,7 +2617,6 @@
 
 .method public setNattKeepaliveTimeout(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/ipsec/client/IPsecConnection;->nattKeepaliveTimeout:I
 
@@ -2663,8 +2625,6 @@
 
 .method public setOwnIdentity(Lcom/ipsec/client/IPsecConnection$IdentityType;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Lcom/ipsec/client/IPsecConnection$IdentityType;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -2789,7 +2749,6 @@
 
 .method public setPassword(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -2812,7 +2771,6 @@
 
 .method public setPerfectForwardSecrecy(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/ipsec/client/IPsecConnection;->perfectForwardSecrecy:Z
 
@@ -2821,7 +2779,6 @@
 
 .method public setPreSharedKey(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -2890,7 +2847,6 @@
 
 .method public setPrivateKey(Ljava/security/PrivateKey;)V
     .locals 1
-    .param p1    # Ljava/security/PrivateKey;
 
     const/4 v0, 0x0
 
@@ -2935,7 +2891,6 @@
 
 .method public setPrivateKeyAlgorithm(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/ipsec/client/IPsecConnection;->privateKeyAlgorithm:Ljava/lang/String;
 
@@ -2944,7 +2899,6 @@
 
 .method public setPrivateKeyLength(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/ipsec/client/IPsecConnection;->privateKeyLength:I
 
@@ -2953,8 +2907,6 @@
 
 .method public setRemoteIdentity(Lcom/ipsec/client/IPsecConnection$IdentityType;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Lcom/ipsec/client/IPsecConnection$IdentityType;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -3020,7 +2972,6 @@
 
 .method public setRequestedRacIPv4Address(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -3071,7 +3022,6 @@
 
 .method public setRequestedRacIPv6Address(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/text/ParseException;
@@ -3119,7 +3069,6 @@
 
 .method public setSplitTunnelingDisabled(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/ipsec/client/IPsecConnection;->disableSplitTunneling:Z
 
@@ -3128,7 +3077,6 @@
 
 .method public setSubnetType(Lcom/ipsec/client/IPsecConnection$IPVersion;)V
     .locals 1
-    .param p1    # Lcom/ipsec/client/IPsecConnection$IPVersion;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -3149,7 +3097,6 @@
 
 .method public setTunnelMode(Lcom/ipsec/client/IPsecConnection$TunnelMode;)V
     .locals 0
-    .param p1    # Lcom/ipsec/client/IPsecConnection$TunnelMode;
 
     iput-object p1, p0, Lcom/ipsec/client/IPsecConnection;->tunnelMode:Lcom/ipsec/client/IPsecConnection$TunnelMode;
 
@@ -3158,7 +3105,6 @@
 
 .method public setUserAuthentication(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/ipsec/client/IPsecConnection;->userAuthentication:Z
 
@@ -3167,7 +3113,6 @@
 
 .method public setUsername(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -3190,7 +3135,6 @@
 
 .method public setVirtualAdapterConfiguration(Lcom/ipsec/client/IPsecConnection$VirtualAdapterConfigurationMethod;)V
     .locals 0
-    .param p1    # Lcom/ipsec/client/IPsecConnection$VirtualAdapterConfigurationMethod;
 
     iput-object p1, p0, Lcom/ipsec/client/IPsecConnection;->virtualAdapterConfiguration:Lcom/ipsec/client/IPsecConnection$VirtualAdapterConfigurationMethod;
 
@@ -3199,7 +3143,6 @@
 
 .method public setVirtualAdapterName(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 

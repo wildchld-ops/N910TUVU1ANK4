@@ -25,7 +25,6 @@
 # direct methods
 .method public constructor <init>(Lcom/samsung/android/toolbox/TwToolBoxFloatingViewer;Landroid/content/Context;)V
     .locals 8
-    .param p2    # Landroid/content/Context;
 
     const/4 v3, 0x0
 
@@ -107,7 +106,6 @@
 # virtual methods
 .method protected dispatchDraw(Landroid/graphics/Canvas;)V
     .locals 25
-    .param p1    # Landroid/graphics/Canvas;
 
     invoke-super/range {p0 .. p1}, Landroid/view/ViewGroup;->dispatchDraw(Landroid/graphics/Canvas;)V
 
@@ -1472,10 +1470,6 @@
 
 .method protected onSizeChanged(IIII)V
     .locals 24
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-super/range {p0 .. p4}, Landroid/widget/FrameLayout;->onSizeChanged(IIII)V
 

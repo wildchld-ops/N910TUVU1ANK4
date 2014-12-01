@@ -49,7 +49,6 @@
 
 .method public constructor <init>(Landroid/os/Parcel;)V
     .locals 0
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Landroid/hardware/scontext/SContextEventContext;-><init>()V
 
@@ -60,7 +59,6 @@
 
 .method private readFromParcel(Landroid/os/Parcel;)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readBundle()Landroid/os/Bundle;
 
@@ -99,7 +97,6 @@
 
 .method public bridge synthetic setValues(Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/hardware/scontext/SContextEventContext;->setValues(Landroid/os/Bundle;)V
 
@@ -108,8 +105,6 @@
 
 .method public bridge synthetic writeToParcel(Landroid/os/Parcel;I)V
     .locals 0
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     invoke-super {p0, p1, p2}, Landroid/hardware/scontext/SContextEventContext;->writeToParcel(Landroid/os/Parcel;I)V
 

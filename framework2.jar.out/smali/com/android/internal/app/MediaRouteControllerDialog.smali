@@ -46,8 +46,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;I)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Landroid/app/Dialog;-><init>(Landroid/content/Context;I)V
 
@@ -86,7 +84,6 @@
 
 .method static synthetic access$100(Lcom/android/internal/app/MediaRouteControllerDialog;)Z
     .locals 1
-    .param p0    # Lcom/android/internal/app/MediaRouteControllerDialog;
 
     iget-boolean v0, p0, Lcom/android/internal/app/MediaRouteControllerDialog;->mVolumeSliderTouched:Z
 
@@ -95,8 +92,6 @@
 
 .method static synthetic access$102(Lcom/android/internal/app/MediaRouteControllerDialog;Z)Z
     .locals 0
-    .param p0    # Lcom/android/internal/app/MediaRouteControllerDialog;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/internal/app/MediaRouteControllerDialog;->mVolumeSliderTouched:Z
 
@@ -105,7 +100,6 @@
 
 .method static synthetic access$200(Lcom/android/internal/app/MediaRouteControllerDialog;)V
     .locals 0
-    .param p0    # Lcom/android/internal/app/MediaRouteControllerDialog;
 
     invoke-direct {p0}, Lcom/android/internal/app/MediaRouteControllerDialog;->updateVolume()V
 
@@ -114,7 +108,6 @@
 
 .method static synthetic access$300(Lcom/android/internal/app/MediaRouteControllerDialog;)Landroid/widget/SeekBar;
     .locals 1
-    .param p0    # Lcom/android/internal/app/MediaRouteControllerDialog;
 
     iget-object v0, p0, Lcom/android/internal/app/MediaRouteControllerDialog;->mVolumeSlider:Landroid/widget/SeekBar;
 
@@ -123,7 +116,6 @@
 
 .method static synthetic access$400(Lcom/android/internal/app/MediaRouteControllerDialog;)Landroid/media/MediaRouter$RouteInfo;
     .locals 1
-    .param p0    # Lcom/android/internal/app/MediaRouteControllerDialog;
 
     iget-object v0, p0, Lcom/android/internal/app/MediaRouteControllerDialog;->mRoute:Landroid/media/MediaRouter$RouteInfo;
 
@@ -132,7 +124,6 @@
 
 .method static synthetic access$500(Lcom/android/internal/app/MediaRouteControllerDialog;)Landroid/media/MediaRouter;
     .locals 1
-    .param p0    # Lcom/android/internal/app/MediaRouteControllerDialog;
 
     iget-object v0, p0, Lcom/android/internal/app/MediaRouteControllerDialog;->mRouter:Landroid/media/MediaRouter;
 
@@ -141,7 +132,6 @@
 
 .method static synthetic access$600(Lcom/android/internal/app/MediaRouteControllerDialog;)Z
     .locals 1
-    .param p0    # Lcom/android/internal/app/MediaRouteControllerDialog;
 
     invoke-direct {p0}, Lcom/android/internal/app/MediaRouteControllerDialog;->update()Z
 
@@ -403,7 +393,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Dialog;->onCreate(Landroid/os/Bundle;)V
 
@@ -515,7 +504,6 @@
 
 .method public onCreateMediaControlView(Landroid/os/Bundle;)Landroid/view/View;
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v0, 0x0
 
@@ -538,8 +526,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/16 v3, 0x19
 
@@ -579,8 +565,6 @@
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/16 v0, 0x19
 
@@ -606,7 +590,6 @@
 
 .method public setVolumeControlEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-boolean v0, p0, Lcom/android/internal/app/MediaRouteControllerDialog;->mVolumeControlEnabled:Z
 

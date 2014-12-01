@@ -28,8 +28,6 @@
 
 .method private static createAnimatorFromXml(Landroid/content/Context;Lorg/xmlpull/v1/XmlPullParser;)Landroid/animation/Animator;
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lorg/xmlpull/v1/XmlPullParser;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -54,11 +52,6 @@
 
 .method private static createAnimatorFromXml(Landroid/content/Context;Lorg/xmlpull/v1/XmlPullParser;Landroid/util/AttributeSet;Landroid/animation/AnimatorSet;I)Landroid/animation/Animator;
     .locals 17
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lorg/xmlpull/v1/XmlPullParser;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # Landroid/animation/AnimatorSet;
-    .param p4    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -289,8 +282,6 @@
 
 .method public static loadAnimator(Landroid/content/Context;I)Landroid/animation/Animator;
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/res/Resources$NotFoundException;
@@ -408,9 +399,6 @@
 
 .method private static loadAnimator(Landroid/content/Context;Landroid/util/AttributeSet;Landroid/animation/ValueAnimator;)Landroid/animation/ValueAnimator;
     .locals 24
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/util/AttributeSet;
-    .param p2    # Landroid/animation/ValueAnimator;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/res/Resources$NotFoundException;
@@ -1118,8 +1106,6 @@
 
 .method private static loadObjectAnimator(Landroid/content/Context;Landroid/util/AttributeSet;)Landroid/animation/ObjectAnimator;
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/util/AttributeSet;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/res/Resources$NotFoundException;

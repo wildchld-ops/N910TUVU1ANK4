@@ -588,13 +588,6 @@
 
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;ILcom/sec/android/glview/TwGLViewGroup;Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;Lcom/sec/android/app/camera/MenuResourceDepot;II)V
     .locals 8
-    .param p1    # Lcom/sec/android/app/camera/Camera;
-    .param p2    # I
-    .param p3    # Lcom/sec/android/glview/TwGLViewGroup;
-    .param p4    # Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;
-    .param p5    # Lcom/sec/android/app/camera/MenuResourceDepot;
-    .param p6    # I
-    .param p7    # I
 
     const/4 v6, 0x0
 
@@ -1033,8 +1026,6 @@
 
 .method static synthetic access$002(Lcom/sec/android/app/camera/glwidget/TwGLEditQuickSettingsMenu;Z)Z
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLEditQuickSettingsMenu;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLEditQuickSettingsMenu;->mIsHelpTextHidedByTimeOut:Z
 
@@ -1911,8 +1902,6 @@
 # virtual methods
 .method public addTopBarItem(FF)V
     .locals 1
-    .param p1    # F
-    .param p2    # F
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/glwidget/TwGLEditQuickSettingsMenu;->getTopBar()Lcom/sec/android/app/camera/glwidget/TwGLEditableTopBar;
 
@@ -2091,7 +2080,6 @@
 
 .method public indexOfTopBarItem(I)I
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/glwidget/TwGLEditQuickSettingsMenu;->getTopBar()Lcom/sec/android/app/camera/glwidget/TwGLEditableTopBar;
 
@@ -2118,7 +2106,6 @@
 
 .method public onActivityTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 2
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v1, 0x1
 
@@ -2138,7 +2125,6 @@
 
 .method public onAnimationEnd(Landroid/view/animation/Animation;)Z
     .locals 1
-    .param p1    # Landroid/view/animation/Animation;
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/MenuBase;->isActive()Z
 
@@ -2154,7 +2140,6 @@
 
 .method public onAnimationStart(Landroid/view/animation/Animation;)Z
     .locals 1
-    .param p1    # Landroid/view/animation/Animation;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -2186,14 +2171,12 @@
 
 .method public onCancelDragItemInDragDropBox(Lcom/sec/android/glview/TwGLView;)V
     .locals 0
-    .param p1    # Lcom/sec/android/glview/TwGLView;
 
     return-void
 .end method
 
 .method public onDragEndItemInDragDropBox(Lcom/sec/android/glview/TwGLView;)V
     .locals 0
-    .param p1    # Lcom/sec/android/glview/TwGLView;
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/glwidget/TwGLEditQuickSettingsMenu;->removeTopBarEmptyItem()V
 
@@ -2202,11 +2185,6 @@
 
 .method public onDragItemInDragDropBox(Lcom/sec/android/glview/TwGLView;FFFF)V
     .locals 3
-    .param p1    # Lcom/sec/android/glview/TwGLView;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
 
     sget v1, Lcom/sec/android/app/camera/glwidget/TwGLEditQuickSettingsMenu;->TOPBAR_BOUNDARY_LINE:I
 
@@ -2259,7 +2237,6 @@
 
 .method public onDragStartItemInDragDropBox(Lcom/sec/android/glview/TwGLView;)V
     .locals 2
-    .param p1    # Lcom/sec/android/glview/TwGLView;
 
     if-eqz p1, :cond_0
 
@@ -2325,7 +2302,6 @@
 
 .method public onOrientationChanged(I)V
     .locals 0
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/glwidget/TwGLEditQuickSettingsMenu;->setAlignForOrientation()V
 
@@ -2344,7 +2320,6 @@
 
 .method public onShortcutBoxCancelListener(Lcom/sec/android/glview/TwGLView;)V
     .locals 1
-    .param p1    # Lcom/sec/android/glview/TwGLView;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 

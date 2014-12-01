@@ -22,7 +22,6 @@
 # direct methods
 .method public constructor <init>(J)V
     .locals 2
-    .param p1    # J
 
     const/4 v0, 0x1
 
@@ -35,9 +34,6 @@
 
 .method public constructor <init>(JZZ)V
     .locals 2
-    .param p1    # J
-    .param p3    # Z
-    .param p4    # Z
 
     invoke-direct {p0}, Ljava/io/InputStream;-><init>()V
 
@@ -162,7 +158,6 @@
 
 .method public declared-synchronized mark(I)V
     .locals 2
-    .param p1    # I
 
     monitor-enter p0
 
@@ -223,9 +218,6 @@
 
 .method protected processBytes([BII)V
     .locals 0
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
 
     return-void
 .end method
@@ -284,7 +276,6 @@
 
 .method public read([B)I
     .locals 2
-    .param p1    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -304,9 +295,6 @@
 
 .method public read([BII)I
     .locals 5
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -505,7 +493,6 @@
 
 .method public skip(J)J
     .locals 6
-    .param p1    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

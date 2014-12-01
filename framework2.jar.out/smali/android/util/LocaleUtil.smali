@@ -34,7 +34,6 @@
 
 .method private static getLayoutDirectionFromFirstChar(Ljava/util/Locale;)I
     .locals 2
-    .param p0    # Ljava/util/Locale;
 
     const/4 v0, 0x0
 
@@ -71,7 +70,6 @@
 
 .method public static getLayoutDirectionFromLocale(Ljava/util/Locale;)I
     .locals 2
-    .param p0    # Ljava/util/Locale;
 
     if-eqz p0, :cond_2
 

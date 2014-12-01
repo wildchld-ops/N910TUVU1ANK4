@@ -29,7 +29,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -56,8 +55,6 @@
 
 .method public constructor <init>(Landroid/content/Context;I)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     const/4 v1, 0x0
 
@@ -84,9 +81,6 @@
 
 .method protected constructor <init>(Landroid/content/Context;ZLandroid/content/DialogInterface$OnCancelListener;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Z
-    .param p3    # Landroid/content/DialogInterface$OnCancelListener;
 
     const/4 v1, 0x0
 
@@ -111,7 +105,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/helpdialog/TwHelpAnimatedDialog;)Landroid/view/animation/Animation;
     .locals 1
-    .param p0    # Lcom/android/settings/helpdialog/TwHelpAnimatedDialog;
 
     iget-object v0, p0, Lcom/android/settings/helpdialog/TwHelpAnimatedDialog;->mBubbleAnimation:Landroid/view/animation/Animation;
 
@@ -120,7 +113,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/helpdialog/TwHelpAnimatedDialog;)I
     .locals 1
-    .param p0    # Lcom/android/settings/helpdialog/TwHelpAnimatedDialog;
 
     iget v0, p0, Lcom/android/settings/helpdialog/TwHelpAnimatedDialog;->mCurrentPointAnimation:I
 
@@ -129,7 +121,6 @@
 
 .method static synthetic access$108(Lcom/android/settings/helpdialog/TwHelpAnimatedDialog;)I
     .locals 2
-    .param p0    # Lcom/android/settings/helpdialog/TwHelpAnimatedDialog;
 
     iget v0, p0, Lcom/android/settings/helpdialog/TwHelpAnimatedDialog;->mCurrentPointAnimation:I
 
@@ -142,7 +133,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/helpdialog/TwHelpAnimatedDialog;)Ljava/util/List;
     .locals 1
-    .param p0    # Lcom/android/settings/helpdialog/TwHelpAnimatedDialog;
 
     iget-object v0, p0, Lcom/android/settings/helpdialog/TwHelpAnimatedDialog;->mPointAnimations:Ljava/util/List;
 
@@ -151,7 +141,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/helpdialog/TwHelpAnimatedDialog;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/settings/helpdialog/TwHelpAnimatedDialog;
 
     iget-object v0, p0, Lcom/android/settings/helpdialog/TwHelpAnimatedDialog;->mPointAnimationView:Landroid/view/View;
 
@@ -160,7 +149,6 @@
 
 .method private init(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     new-instance v1, Ljava/util/ArrayList;
 

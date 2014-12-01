@@ -40,7 +40,6 @@
 # virtual methods
 .method public createFromParcel(Landroid/os/Parcel;)Lcom/samsung/android/smartclip/SmartClipDataRepositoryImpl;
     .locals 3
-    .param p1    # Landroid/os/Parcel;
 
     const-string v1, "SmartClipDataRepositoryImpl"
 
@@ -61,7 +60,6 @@
 
 .method public bridge synthetic createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     invoke-virtual {p0, p1}, Lcom/samsung/android/smartclip/SmartClipDataRepositoryImpl$1;->createFromParcel(Landroid/os/Parcel;)Lcom/samsung/android/smartclip/SmartClipDataRepositoryImpl;
 
@@ -72,7 +70,6 @@
 
 .method public newArray(I)[Lcom/samsung/android/smartclip/SmartClipDataRepositoryImpl;
     .locals 1
-    .param p1    # I
 
     new-array v0, p1, [Lcom/samsung/android/smartclip/SmartClipDataRepositoryImpl;
 
@@ -81,7 +78,6 @@
 
 .method public bridge synthetic newArray(I)[Ljava/lang/Object;
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/samsung/android/smartclip/SmartClipDataRepositoryImpl$1;->newArray(I)[Lcom/samsung/android/smartclip/SmartClipDataRepositoryImpl;
 

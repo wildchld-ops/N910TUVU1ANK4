@@ -2163,7 +2163,6 @@
 
 .method static synthetic access$000(Lcom/sec/android/app/camera/Camera;)Lcom/sec/android/app/camera/CommonEngine;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/Camera;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera;->mEngine:Lcom/sec/android/app/camera/CommonEngine;
 
@@ -2172,8 +2171,6 @@
 
 .method static synthetic access$1002(Lcom/sec/android/app/camera/Camera;Z)Z
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/Camera;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/Camera;->mRecordingStopAvailable:Z
 
@@ -2182,7 +2179,6 @@
 
 .method static synthetic access$1100(Lcom/sec/android/app/camera/Camera;)V
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/Camera;
 
     invoke-direct {p0}, Lcom/sec/android/app/camera/Camera;->initIntentFilter()V
 
@@ -2191,7 +2187,6 @@
 
 .method static synthetic access$1200(Lcom/sec/android/app/camera/Camera;)Landroid/widget/Toast;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/Camera;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera;->mFirmwareCheckToast:Landroid/widget/Toast;
 
@@ -2200,8 +2195,6 @@
 
 .method static synthetic access$1202(Lcom/sec/android/app/camera/Camera;Landroid/widget/Toast;)Landroid/widget/Toast;
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/Camera;
-    .param p1    # Landroid/widget/Toast;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/Camera;->mFirmwareCheckToast:Landroid/widget/Toast;
 
@@ -2210,7 +2203,6 @@
 
 .method static synthetic access$1300(Lcom/sec/android/app/camera/Camera;)V
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/Camera;
 
     invoke-direct {p0}, Lcom/sec/android/app/camera/Camera;->setFlashOffInHighTemperature()V
 
@@ -2219,7 +2211,6 @@
 
 .method static synthetic access$1400(Lcom/sec/android/app/camera/Camera;)I
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/Camera;
 
     iget v0, p0, Lcom/sec/android/app/camera/Camera;->mWifiDisplayBridgeStatusCheckCount:I
 
@@ -2228,8 +2219,6 @@
 
 .method static synthetic access$1402(Lcom/sec/android/app/camera/Camera;I)I
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/Camera;
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/app/camera/Camera;->mWifiDisplayBridgeStatusCheckCount:I
 
@@ -2238,7 +2227,6 @@
 
 .method static synthetic access$1404(Lcom/sec/android/app/camera/Camera;)I
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/Camera;
 
     iget v0, p0, Lcom/sec/android/app/camera/Camera;->mWifiDisplayBridgeStatusCheckCount:I
 
@@ -2251,7 +2239,6 @@
 
 .method static synthetic access$1500(Lcom/sec/android/app/camera/Camera;)I
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/Camera;
 
     iget v0, p0, Lcom/sec/android/app/camera/Camera;->mCheckWifiDisplayBridgeStatus:I
 
@@ -2260,8 +2247,6 @@
 
 .method static synthetic access$1502(Lcom/sec/android/app/camera/Camera;I)I
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/Camera;
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/app/camera/Camera;->mCheckWifiDisplayBridgeStatus:I
 
@@ -2270,7 +2255,6 @@
 
 .method static synthetic access$1600(Lcom/sec/android/app/camera/Camera;)Landroid/hardware/display/DisplayManager;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/Camera;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera;->mDisplayManager:Landroid/hardware/display/DisplayManager;
 
@@ -2279,7 +2263,6 @@
 
 .method static synthetic access$1700(Lcom/sec/android/app/camera/Camera;)V
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/Camera;
 
     invoke-direct {p0}, Lcom/sec/android/app/camera/Camera;->enableWifiDisplay()V
 
@@ -2288,7 +2271,6 @@
 
 .method static synthetic access$1800(Lcom/sec/android/app/camera/Camera;)Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/Camera;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera;->mGLCameraBaseIndicators:Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;
 
@@ -2297,8 +2279,6 @@
 
 .method static synthetic access$1802(Lcom/sec/android/app/camera/Camera;Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;)Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/Camera;
-    .param p1    # Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/Camera;->mGLCameraBaseIndicators:Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;
 
@@ -2307,7 +2287,6 @@
 
 .method static synthetic access$1900(Lcom/sec/android/app/camera/Camera;)Landroid/media/AudioManager;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/Camera;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera;->mAudioManager:Landroid/media/AudioManager;
 
@@ -2316,8 +2295,6 @@
 
 .method static synthetic access$1902(Lcom/sec/android/app/camera/Camera;Landroid/media/AudioManager;)Landroid/media/AudioManager;
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/Camera;
-    .param p1    # Landroid/media/AudioManager;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/Camera;->mAudioManager:Landroid/media/AudioManager;
 
@@ -2326,7 +2303,6 @@
 
 .method static synthetic access$2000(Lcom/sec/android/app/camera/Camera;)V
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/Camera;
 
     invoke-direct {p0}, Lcom/sec/android/app/camera/Camera;->refreshShootingModesList()V
 
@@ -2335,7 +2311,6 @@
 
 .method static synthetic access$2100(Lcom/sec/android/app/camera/Camera;)Landroid/graphics/Point;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/Camera;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera;->mLastTouchAEAFPt:Landroid/graphics/Point;
 
@@ -2344,7 +2319,6 @@
 
 .method static synthetic access$2200(Lcom/sec/android/app/camera/Camera;)Landroid/app/AlertDialog;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/Camera;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera;->mShootingModeDialog:Landroid/app/AlertDialog;
 
@@ -2353,8 +2327,6 @@
 
 .method static synthetic access$2302(Lcom/sec/android/app/camera/Camera;Z)Z
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/Camera;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/Camera;->bSkipUpdateThumbnail:Z
 
@@ -2363,7 +2335,6 @@
 
 .method static synthetic access$2400(Lcom/sec/android/app/camera/Camera;)Z
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/Camera;
 
     iget-boolean v0, p0, Lcom/sec/android/app/camera/Camera;->mIsCallingFromListener1:Z
 
@@ -2372,8 +2343,6 @@
 
 .method static synthetic access$2402(Lcom/sec/android/app/camera/Camera;Z)Z
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/Camera;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/Camera;->mIsCallingFromListener1:Z
 
@@ -2382,8 +2351,6 @@
 
 .method static synthetic access$2502(Lcom/sec/android/app/camera/Camera;Z)Z
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/Camera;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/Camera;->mIsCallStateOffHook:Z
 
@@ -2392,7 +2359,6 @@
 
 .method static synthetic access$2600(Lcom/sec/android/app/camera/Camera;)[Z
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/Camera;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera;->mDlgStatus:[Z
 
@@ -2401,8 +2367,6 @@
 
 .method static synthetic access$2702(Lcom/sec/android/app/camera/Camera;Z)Z
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/Camera;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/Camera;->mIsCall2StateOffHook:Z
 
@@ -2411,7 +2375,6 @@
 
 .method static synthetic access$300(Lcom/sec/android/app/camera/Camera;)Lcom/sec/android/app/camera/CameraSettings;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/Camera;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera;->mCameraSettings:Lcom/sec/android/app/camera/CameraSettings;
 
@@ -2420,7 +2383,6 @@
 
 .method static synthetic access$3000(Lcom/sec/android/app/camera/Camera;)Z
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/Camera;
 
     iget-boolean v0, p0, Lcom/sec/android/app/camera/Camera;->mIsDestroying:Z
 
@@ -2429,7 +2391,6 @@
 
 .method static synthetic access$3100(Lcom/sec/android/app/camera/Camera;)Ljava/lang/Thread;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/Camera;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera;->mCameraSoundLoadingThread:Ljava/lang/Thread;
 
@@ -2438,8 +2399,6 @@
 
 .method static synthetic access$3102(Lcom/sec/android/app/camera/Camera;Ljava/lang/Thread;)Ljava/lang/Thread;
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/Camera;
-    .param p1    # Ljava/lang/Thread;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/Camera;->mCameraSoundLoadingThread:Ljava/lang/Thread;
 
@@ -2448,7 +2407,6 @@
 
 .method static synthetic access$3200(Lcom/sec/android/app/camera/Camera;)Lcom/sec/android/app/IWSpeechRecognizer/BargeInRecognizer;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/Camera;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera;->mBargeInRecognizer:Lcom/sec/android/app/IWSpeechRecognizer/BargeInRecognizer;
 
@@ -2457,7 +2415,6 @@
 
 .method static synthetic access$3300(Lcom/sec/android/app/camera/Camera;)Z
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/Camera;
 
     invoke-direct {p0}, Lcom/sec/android/app/camera/Camera;->isRecordingKeyEnabled()Z
 
@@ -2468,8 +2425,6 @@
 
 .method static synthetic access$3402(Lcom/sec/android/app/camera/Camera;Z)Z
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/Camera;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/Camera;->misConnectHeadSet:Z
 
@@ -2478,8 +2433,6 @@
 
 .method static synthetic access$3502(Lcom/sec/android/app/camera/Camera;Z)Z
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/Camera;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/Camera;->bRecordingFailByVideoController:Z
 
@@ -2488,7 +2441,6 @@
 
 .method static synthetic access$3600(Lcom/sec/android/app/camera/Camera;)Landroid/media/MediaMetadataRetriever;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/Camera;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera;->mMediaMetadataRetriever:Landroid/media/MediaMetadataRetriever;
 
@@ -2497,8 +2449,6 @@
 
 .method static synthetic access$3602(Lcom/sec/android/app/camera/Camera;Landroid/media/MediaMetadataRetriever;)Landroid/media/MediaMetadataRetriever;
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/Camera;
-    .param p1    # Landroid/media/MediaMetadataRetriever;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/Camera;->mMediaMetadataRetriever:Landroid/media/MediaMetadataRetriever;
 
@@ -2507,8 +2457,6 @@
 
 .method static synthetic access$3700(Lcom/sec/android/app/camera/Camera;Landroid/content/Intent;)V
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/Camera;
-    .param p1    # Landroid/content/Intent;
 
     invoke-direct {p0, p1}, Lcom/sec/android/app/camera/Camera;->handleBatteryChanged(Landroid/content/Intent;)V
 
@@ -2517,7 +2465,6 @@
 
 .method static synthetic access$3800(Lcom/sec/android/app/camera/Camera;)I
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/Camera;
 
     iget v0, p0, Lcom/sec/android/app/camera/Camera;->battLevel:I
 
@@ -2526,8 +2473,6 @@
 
 .method static synthetic access$3900(Lcom/sec/android/app/camera/Camera;Z)V
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/Camera;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/sec/android/app/camera/Camera;->handlePluggedLowBattery(Z)V
 
@@ -2536,7 +2481,6 @@
 
 .method static synthetic access$4000(Lcom/sec/android/app/camera/Camera;)Z
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/Camera;
 
     iget-boolean v0, p0, Lcom/sec/android/app/camera/Camera;->mCheckWifiDisplay:Z
 
@@ -2545,8 +2489,6 @@
 
 .method static synthetic access$4002(Lcom/sec/android/app/camera/Camera;Z)Z
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/Camera;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/Camera;->mCheckWifiDisplay:Z
 
@@ -2555,8 +2497,6 @@
 
 .method static synthetic access$402(Lcom/sec/android/app/camera/Camera;Z)Z
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/Camera;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/Camera;->mIsSwipeToGallery:Z
 
@@ -2565,8 +2505,6 @@
 
 .method static synthetic access$4102(Lcom/sec/android/app/camera/Camera;Z)Z
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/Camera;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/Camera;->mMicrophonePlugged:Z
 
@@ -2575,7 +2513,6 @@
 
 .method static synthetic access$4200(Lcom/sec/android/app/camera/Camera;)V
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/Camera;
 
     invoke-direct {p0}, Lcom/sec/android/app/camera/Camera;->launchShootingModesSearch()V
 
@@ -2584,7 +2521,6 @@
 
 .method static synthetic access$4300(Lcom/sec/android/app/camera/Camera;)Z
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/Camera;
 
     iget-boolean v0, p0, Lcom/sec/android/app/camera/Camera;->mStartByQuickAccess:Z
 
@@ -2593,7 +2529,6 @@
 
 .method static synthetic access$4400(Lcom/sec/android/app/camera/Camera;)Z
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/Camera;
 
     iget-boolean v0, p0, Lcom/sec/android/app/camera/Camera;->mIsSurfaceInvisible:Z
 
@@ -2602,8 +2537,6 @@
 
 .method static synthetic access$4402(Lcom/sec/android/app/camera/Camera;Z)Z
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/Camera;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/Camera;->mIsSurfaceInvisible:Z
 
@@ -2612,7 +2545,6 @@
 
 .method static synthetic access$4500(Lcom/sec/android/app/camera/Camera;)[I
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/Camera;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera;->mCameraSoundPoolId:[I
 
@@ -2621,7 +2553,6 @@
 
 .method static synthetic access$4600(Lcom/sec/android/app/camera/Camera;)Landroid/media/SoundPool;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/Camera;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera;->mCameraSoundPool:Landroid/media/SoundPool;
 
@@ -2630,8 +2561,6 @@
 
 .method static synthetic access$4700(Lcom/sec/android/app/camera/Camera;Lcom/sec/android/app/camera/MenuBase;)V
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/Camera;
-    .param p1    # Lcom/sec/android/app/camera/MenuBase;
 
     invoke-direct {p0, p1}, Lcom/sec/android/app/camera/Camera;->setImmutableView(Lcom/sec/android/app/camera/MenuBase;)V
 
@@ -2640,7 +2569,6 @@
 
 .method static synthetic access$4800(Lcom/sec/android/app/camera/Camera;)Ljava/lang/Runnable;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/Camera;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera;->mModeResourceLoadingRunnable:Ljava/lang/Runnable;
 
@@ -2649,8 +2577,6 @@
 
 .method static synthetic access$4902(Lcom/sec/android/app/camera/Camera;Ljava/lang/Thread;)Ljava/lang/Thread;
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/Camera;
-    .param p1    # Ljava/lang/Thread;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/Camera;->mBaseMenuLoadingThread:Ljava/lang/Thread;
 
@@ -2667,7 +2593,6 @@
 
 .method static synthetic access$5000(Lcom/sec/android/app/camera/Camera;)Lcom/sec/android/app/camera/glwidget/TwGLProgressingPopup;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/Camera;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera;->mOutFocusProgressingPopup:Lcom/sec/android/app/camera/glwidget/TwGLProgressingPopup;
 
@@ -2676,7 +2601,6 @@
 
 .method static synthetic access$5100(Lcom/sec/android/app/camera/Camera;)Lcom/sec/android/app/camera/glwidget/TwGLProgressingPopup;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/Camera;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera;->mMagicProgressingPopup:Lcom/sec/android/app/camera/glwidget/TwGLProgressingPopup;
 
@@ -2685,7 +2609,6 @@
 
 .method static synthetic access$5200(Lcom/sec/android/app/camera/Camera;)[I
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/Camera;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera;->mStreamId:[I
 
@@ -2694,7 +2617,6 @@
 
 .method static synthetic access$5300(Lcom/sec/android/app/camera/Camera;)I
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/Camera;
 
     iget v0, p0, Lcom/sec/android/app/camera/Camera;->mSoundId:I
 
@@ -2703,7 +2625,6 @@
 
 .method static synthetic access$5400(Lcom/sec/android/app/camera/Camera;)[I
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/Camera;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera;->mSoundPoolId:[I
 
@@ -2712,7 +2633,6 @@
 
 .method static synthetic access$5500(Lcom/sec/android/app/camera/Camera;)F
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/Camera;
 
     iget v0, p0, Lcom/sec/android/app/camera/Camera;->mStreamVolume:F
 
@@ -2721,7 +2641,6 @@
 
 .method static synthetic access$5600(Lcom/sec/android/app/camera/Camera;)I
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/Camera;
 
     iget v0, p0, Lcom/sec/android/app/camera/Camera;->mSoundLoop:I
 
@@ -2730,7 +2649,6 @@
 
 .method static synthetic access$5700(Lcom/sec/android/app/camera/Camera;)Landroid/media/SoundPool;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/Camera;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera;->mSoundPool:Landroid/media/SoundPool;
 
@@ -2739,7 +2657,6 @@
 
 .method static synthetic access$5800(Lcom/sec/android/app/camera/Camera;)[I
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/Camera;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera;->mCameraStreamId:[I
 
@@ -2748,7 +2665,6 @@
 
 .method static synthetic access$5900(Lcom/sec/android/app/camera/Camera;)I
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/Camera;
 
     iget v0, p0, Lcom/sec/android/app/camera/Camera;->mCameraSoundId:I
 
@@ -2757,7 +2673,6 @@
 
 .method static synthetic access$6000(Lcom/sec/android/app/camera/Camera;)F
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/Camera;
 
     iget v0, p0, Lcom/sec/android/app/camera/Camera;->mCameraStreamVolume:F
 
@@ -2766,8 +2681,6 @@
 
 .method static synthetic access$602(Lcom/sec/android/app/camera/Camera;I)I
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/Camera;
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/app/camera/Camera;->mDirtyCount:I
 
@@ -2776,7 +2689,6 @@
 
 .method static synthetic access$604(Lcom/sec/android/app/camera/Camera;)I
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/Camera;
 
     iget v0, p0, Lcom/sec/android/app/camera/Camera;->mDirtyCount:I
 
@@ -2789,7 +2701,6 @@
 
 .method static synthetic access$6100(Lcom/sec/android/app/camera/Camera;)I
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/Camera;
 
     iget v0, p0, Lcom/sec/android/app/camera/Camera;->mCameraSoundLoop:I
 
@@ -2798,7 +2709,6 @@
 
 .method static synthetic access$6200(Lcom/sec/android/app/camera/Camera;)Z
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/Camera;
 
     iget-boolean v0, p0, Lcom/sec/android/app/camera/Camera;->bPauseAudioPlayback:Z
 
@@ -2807,7 +2717,6 @@
 
 .method static synthetic access$6300(Lcom/sec/android/app/camera/Camera;)V
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/Camera;
 
     invoke-direct {p0}, Lcom/sec/android/app/camera/Camera;->launchLocationTagSetting()V
 
@@ -2816,7 +2725,6 @@
 
 .method static synthetic access$6400(Lcom/sec/android/app/camera/Camera;)Landroid/app/AlertDialog;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/Camera;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera;->mRemoteViewFinderLaunchSettingsToTournOnGPSDialog:Landroid/app/AlertDialog;
 
@@ -2825,7 +2733,6 @@
 
 .method static synthetic access$6500(Lcom/sec/android/app/camera/Camera;)Landroid/app/AlertDialog;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/Camera;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera;->mRemoteViewFinderLaunchHelpGuideDialog:Landroid/app/AlertDialog;
 
@@ -2834,7 +2741,6 @@
 
 .method static synthetic access$6600(Lcom/sec/android/app/camera/Camera;)Landroid/app/AlertDialog;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/Camera;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera;->mRemoteViewFinderResetCameraGuideDialog:Landroid/app/AlertDialog;
 
@@ -2843,7 +2749,6 @@
 
 .method static synthetic access$6700(Lcom/sec/android/app/camera/Camera;)Landroid/app/AlertDialog;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/Camera;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera;->mVideoStabilisationDialog:Landroid/app/AlertDialog;
 
@@ -2852,7 +2757,6 @@
 
 .method static synthetic access$6800(Lcom/sec/android/app/camera/Camera;)Landroid/app/AlertDialog;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/Camera;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera;->mVideoUhdResolutionDialog:Landroid/app/AlertDialog;
 
@@ -2861,7 +2765,6 @@
 
 .method static synthetic access$6900(Lcom/sec/android/app/camera/Camera;)Landroid/app/AlertDialog;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/Camera;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera;->mVideoWqhdResolutionDialog:Landroid/app/AlertDialog;
 
@@ -2870,7 +2773,6 @@
 
 .method static synthetic access$700(Lcom/sec/android/app/camera/Camera;)Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseMenu;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/Camera;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera;->mCameraBaseMenu:Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseMenu;
 
@@ -2879,7 +2781,6 @@
 
 .method static synthetic access$7000(Lcom/sec/android/app/camera/Camera;)Landroid/app/AlertDialog;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/Camera;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera;->mVideoFhdResolutionDialog:Landroid/app/AlertDialog;
 
@@ -2888,8 +2789,6 @@
 
 .method static synthetic access$702(Lcom/sec/android/app/camera/Camera;Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseMenu;)Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseMenu;
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/Camera;
-    .param p1    # Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseMenu;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/Camera;->mCameraBaseMenu:Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseMenu;
 
@@ -2898,7 +2797,6 @@
 
 .method static synthetic access$7100(Lcom/sec/android/app/camera/Camera;)Landroid/app/AlertDialog;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/Camera;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera;->mVideoAudiozoomDialog:Landroid/app/AlertDialog;
 
@@ -2907,7 +2805,6 @@
 
 .method static synthetic access$7200(Lcom/sec/android/app/camera/Camera;)Landroid/app/Dialog;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/Camera;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera;->mAquaProtectionDialog:Landroid/app/Dialog;
 
@@ -2916,8 +2813,6 @@
 
 .method static synthetic access$7202(Lcom/sec/android/app/camera/Camera;Landroid/app/Dialog;)Landroid/app/Dialog;
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/Camera;
-    .param p1    # Landroid/app/Dialog;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/Camera;->mAquaProtectionDialog:Landroid/app/Dialog;
 
@@ -2926,8 +2821,6 @@
 
 .method static synthetic access$7302(Lcom/sec/android/app/camera/Camera;Z)Z
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/Camera;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/Camera;->mShowAuqaKeySelectDialog:Z
 
@@ -2936,7 +2829,6 @@
 
 .method static synthetic access$7400(Lcom/sec/android/app/camera/Camera;)Landroid/app/Dialog;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/Camera;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera;->mAquaShotKeySelectDialog:Landroid/app/Dialog;
 
@@ -2945,8 +2837,6 @@
 
 .method static synthetic access$7402(Lcom/sec/android/app/camera/Camera;Landroid/app/Dialog;)Landroid/app/Dialog;
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/Camera;
-    .param p1    # Landroid/app/Dialog;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/Camera;->mAquaShotKeySelectDialog:Landroid/app/Dialog;
 
@@ -2955,7 +2845,6 @@
 
 .method static synthetic access$7500(Lcom/sec/android/app/camera/Camera;)Landroid/app/Dialog;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/Camera;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera;->mAquaShotHelpDialog:Landroid/app/Dialog;
 
@@ -2964,8 +2853,6 @@
 
 .method static synthetic access$7502(Lcom/sec/android/app/camera/Camera;Landroid/app/Dialog;)Landroid/app/Dialog;
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/Camera;
-    .param p1    # Landroid/app/Dialog;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/Camera;->mAquaShotHelpDialog:Landroid/app/Dialog;
 
@@ -2974,7 +2861,6 @@
 
 .method static synthetic access$7600(Lcom/sec/android/app/camera/Camera;)Lcom/sec/android/glview/TwGLAniViewGroup;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/Camera;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera;->mCaptureBlinkRect:Lcom/sec/android/glview/TwGLAniViewGroup;
 
@@ -2983,8 +2869,6 @@
 
 .method static synthetic access$7602(Lcom/sec/android/app/camera/Camera;Lcom/sec/android/glview/TwGLAniViewGroup;)Lcom/sec/android/glview/TwGLAniViewGroup;
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/Camera;
-    .param p1    # Lcom/sec/android/glview/TwGLAniViewGroup;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/Camera;->mCaptureBlinkRect:Lcom/sec/android/glview/TwGLAniViewGroup;
 
@@ -2993,7 +2877,6 @@
 
 .method static synthetic access$7700(Lcom/sec/android/app/camera/Camera;)Lcom/sec/android/glview/TwGLAniViewGroup;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/Camera;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera;->mPostRecordingSnapImage:Lcom/sec/android/glview/TwGLAniViewGroup;
 
@@ -3002,8 +2885,6 @@
 
 .method static synthetic access$7702(Lcom/sec/android/app/camera/Camera;Lcom/sec/android/glview/TwGLAniViewGroup;)Lcom/sec/android/glview/TwGLAniViewGroup;
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/Camera;
-    .param p1    # Lcom/sec/android/glview/TwGLAniViewGroup;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/Camera;->mPostRecordingSnapImage:Lcom/sec/android/glview/TwGLAniViewGroup;
 
@@ -3012,7 +2893,6 @@
 
 .method static synthetic access$7900(Lcom/sec/android/app/camera/Camera;)Z
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/Camera;
 
     iget-boolean v0, p0, Lcom/sec/android/app/camera/Camera;->mIsFromCover:Z
 
@@ -3021,7 +2901,6 @@
 
 .method static synthetic access$800(Lcom/sec/android/app/camera/Camera;)I
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/Camera;
 
     iget v0, p0, Lcom/sec/android/app/camera/Camera;->mHardKeyStatus:I
 
@@ -3030,7 +2909,6 @@
 
 .method static synthetic access$8000(Lcom/sec/android/app/camera/Camera;)Z
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/Camera;
 
     iget-boolean v0, p0, Lcom/sec/android/app/camera/Camera;->mIsFromLockScreen:Z
 
@@ -3039,7 +2917,6 @@
 
 .method static synthetic access$8100(Lcom/sec/android/app/camera/Camera;)Z
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/Camera;
 
     iget-boolean v0, p0, Lcom/sec/android/app/camera/Camera;->mIsFromSNote:Z
 
@@ -3048,7 +2925,6 @@
 
 .method static synthetic access$8200(Lcom/sec/android/app/camera/Camera;)Landroid/net/Uri;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/Camera;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera;->mSaveUri:Landroid/net/Uri;
 
@@ -3057,7 +2933,6 @@
 
 .method static synthetic access$8300(Lcom/sec/android/app/camera/Camera;)[B
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/Camera;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera;->mLastCaptureRawData:[B
 
@@ -3066,8 +2941,6 @@
 
 .method static synthetic access$8302(Lcom/sec/android/app/camera/Camera;[B)[B
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/Camera;
-    .param p1    # [B
 
     iput-object p1, p0, Lcom/sec/android/app/camera/Camera;->mLastCaptureRawData:[B
 
@@ -3076,7 +2949,6 @@
 
 .method static synthetic access$8400(Lcom/sec/android/app/camera/Camera;)Z
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/Camera;
 
     iget-boolean v0, p0, Lcom/sec/android/app/camera/Camera;->mReturnUri:Z
 
@@ -3085,7 +2957,6 @@
 
 .method static synthetic access$8500(Lcom/sec/android/app/camera/Camera;)Z
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/Camera;
 
     iget-boolean v0, p0, Lcom/sec/android/app/camera/Camera;->mSkipSaveDiscard:Z
 
@@ -3094,7 +2965,6 @@
 
 .method static synthetic access$8600(Lcom/sec/android/app/camera/Camera;)I
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/Camera;
 
     iget v0, p0, Lcom/sec/android/app/camera/Camera;->mNfcState:I
 
@@ -3103,8 +2973,6 @@
 
 .method static synthetic access$8602(Lcom/sec/android/app/camera/Camera;I)I
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/Camera;
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/app/camera/Camera;->mNfcState:I
 
@@ -3113,7 +2981,6 @@
 
 .method static synthetic access$8700(Lcom/sec/android/app/camera/Camera;)Z
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/Camera;
 
     iget-boolean v0, p0, Lcom/sec/android/app/camera/Camera;->mAndroidBeamState:Z
 
@@ -3122,8 +2989,6 @@
 
 .method static synthetic access$8702(Lcom/sec/android/app/camera/Camera;Z)Z
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/Camera;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/Camera;->mAndroidBeamState:Z
 
@@ -3132,8 +2997,6 @@
 
 .method static synthetic access$8802(Lcom/sec/android/app/camera/Camera;Ljava/lang/Thread;)Ljava/lang/Thread;
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/Camera;
-    .param p1    # Ljava/lang/Thread;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/Camera;->mNfcInitThread:Ljava/lang/Thread;
 
@@ -3142,7 +3005,6 @@
 
 .method static synthetic access$8900(Lcom/sec/android/app/camera/Camera;)V
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/Camera;
 
     invoke-direct {p0}, Lcom/sec/android/app/camera/Camera;->handleCameraTemperatureCheck()V
 
@@ -3159,7 +3021,6 @@
 
 .method static synthetic access$9000(Lcom/sec/android/app/camera/Camera;)V
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/Camera;
 
     invoke-direct {p0}, Lcom/sec/android/app/camera/Camera;->handleFlashTemperatureCheck()V
 
@@ -3176,7 +3037,6 @@
 
 .method static synthetic access$9200(Lcom/sec/android/app/camera/Camera;)Landroid/app/AlertDialog;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/Camera;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera;->mHelpPopUpDialog:Landroid/app/AlertDialog;
 
@@ -3692,7 +3552,6 @@
 
 .method private getQuickAccessModeIntent(Landroid/content/Intent;)I
     .locals 2
-    .param p1    # Landroid/content/Intent;
 
     const-string v0, "quickaccess_mode"
 
@@ -3707,7 +3566,6 @@
 
 .method private handleBatteryChanged(Landroid/content/Intent;)V
     .locals 10
-    .param p1    # Landroid/content/Intent;
 
     const/16 v9, 0x64
 
@@ -4085,7 +3943,6 @@
 
 .method private handlePluggedLowBattery(Z)V
     .locals 5
-    .param p1    # Z
 
     const/4 v4, 0x1
 
@@ -6401,7 +6258,6 @@
 
 .method private onChkQuickAccessIntent(Landroid/content/Intent;)Z
     .locals 2
-    .param p1    # Landroid/content/Intent;
 
     const-string v0, "quickaccess"
 
@@ -6511,7 +6367,6 @@
 
 .method private onRetailModeIntent(Landroid/content/Intent;)I
     .locals 2
-    .param p1    # Landroid/content/Intent;
 
     const-string v0, "RetailMode_ShootingMode"
 
@@ -6961,7 +6816,6 @@
 
 .method private setImmutableView(Lcom/sec/android/app/camera/MenuBase;)V
     .locals 4
-    .param p1    # Lcom/sec/android/app/camera/MenuBase;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/Camera;->mGLCameraBaseIndicators:Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;
 
@@ -7009,8 +6863,6 @@
 
 .method private setQuickAccessIntent(Landroid/content/Intent;Z)V
     .locals 1
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Z
 
     const-string v0, "quickaccess"
 
@@ -7145,7 +6997,6 @@
 
 .method private showHelpPopupWinsetStyleDialog(I)V
     .locals 21
-    .param p1    # I
 
     const-string v17, "Camera3"
 
@@ -8280,7 +8131,6 @@
 
 .method private showShootingModeVersionDialog(Lcom/sec/android/app/camera/PlugInShootingModesStorage$VersionErrors;)V
     .locals 2
-    .param p1    # Lcom/sec/android/app/camera/PlugInShootingModesStorage$VersionErrors;
 
     sget-object v0, Lcom/sec/android/app/camera/Camera$181;->$SwitchMap$com$sec$android$app$camera$PlugInShootingModesStorage$VersionErrors:[I
 
@@ -8669,7 +8519,6 @@
 
 .method private trimModuleVersion(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const-string v1, " "
 
@@ -8931,8 +8780,6 @@
 
 .method public IOnDataReceived(I[I)V
     .locals 10
-    .param p1    # I
-    .param p2    # [I
 
     const/16 v9, 0x1b
 
@@ -9313,7 +9160,6 @@
 
 .method public acquireDVFS(I)V
     .locals 5
-    .param p1    # I
 
     const/4 v4, 0x0
 
@@ -9530,7 +9376,6 @@
 
 .method public acquireDVFSMax(I)V
     .locals 5
-    .param p1    # I
 
     const/4 v4, 0x0
 
@@ -9747,7 +9592,6 @@
 
 .method public addCropArea(Lcom/sec/android/glview/TwGLViewGroup;)V
     .locals 13
-    .param p1    # Lcom/sec/android/glview/TwGLViewGroup;
 
     const v0, 0x7f0a0006
 
@@ -11238,7 +11082,6 @@
 
 .method public checkOpenFolderWarningPopUp(I)Z
     .locals 3
-    .param p1    # I
 
     const/4 v2, 0x1
 
@@ -11280,7 +11123,6 @@
 
 .method public checkPhoneStorageLow(Z)V
     .locals 9
-    .param p1    # Z
 
     const/4 v8, 0x1
 
@@ -11763,8 +11605,6 @@
 
 .method public checkStorage(ZZ)V
     .locals 6
-    .param p1    # Z
-    .param p2    # Z
 
     const/4 v5, 0x2
 
@@ -11962,7 +11802,6 @@
 
 .method public checkStorageLow(I)I
     .locals 10
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/sec/android/app/camera/Camera;->getAvailableStorage(I)J
 
@@ -12310,8 +12149,6 @@
 
 .method public checkTrackingBoundary(FF)Z
     .locals 4
-    .param p1    # F
-    .param p2    # F
 
     const/16 v3, 0x50
 
@@ -12359,7 +12196,6 @@
 
 .method public checkWifiConnection(Z)Z
     .locals 3
-    .param p1    # Z
 
     const-string v1, "Camera3"
 
@@ -12391,7 +12227,6 @@
 
 .method public clearBurstProgressBar(I)V
     .locals 7
-    .param p1    # I
 
     const/4 v6, 0x0
 
@@ -12700,7 +12535,6 @@
 
 .method public convertCoordinate(Landroid/graphics/Point;)Landroid/graphics/Point;
     .locals 8
-    .param p1    # Landroid/graphics/Point;
 
     const/high16 v7, 0x44fa0000
 
@@ -13316,7 +13150,6 @@
 
 .method public enableFingerHover(Z)V
     .locals 6
-    .param p1    # Z
 
     const-string v3, "Camera3"
 
@@ -13448,7 +13281,6 @@
 
 .method public finishOnError(I)V
     .locals 10
-    .param p1    # I
 
     const v9, 0x7f0c001d
 
@@ -14053,7 +13885,6 @@
 
 .method public getAvailableStorage(I)J
     .locals 4
-    .param p1    # I
 
     invoke-static {p1}, Lcom/sec/android/app/camera/CheckMemory;->getAvailableStorage(I)J
 
@@ -14172,7 +14003,6 @@
 
 .method public getBurstRemainCount(Z)I
     .locals 6
-    .param p1    # Z
 
     const/4 v5, 0x2
 
@@ -14360,7 +14190,6 @@
 
 .method protected final getCameraTemperature(Ljava/lang/String;)I
     .locals 12
-    .param p1    # Ljava/lang/String;
 
     const/4 v8, -0x1
 
@@ -15338,7 +15167,6 @@
 
 .method public getSavingName(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
@@ -15712,7 +15540,6 @@
 
 .method public getZoomText(I)Ljava/lang/String;
     .locals 7
-    .param p1    # I
 
     const/4 v2, 0x1
 
@@ -15869,7 +15696,6 @@
 
 .method public handleCallStatusChanged(I)V
     .locals 4
-    .param p1    # I
 
     const/4 v3, 0x1
 
@@ -15966,7 +15792,6 @@
 
 .method public handleCameraModeChanged(I)V
     .locals 6
-    .param p1    # I
 
     const/4 v5, 0x1
 
@@ -16147,7 +15972,6 @@
 
 .method public handleCoverModeChanged(Z)V
     .locals 6
-    .param p1    # Z
 
     const/16 v5, 0x57
 
@@ -16423,7 +16247,6 @@
 
 .method public handleDualModeChanged(I)V
     .locals 4
-    .param p1    # I
 
     const/16 v3, 0x50
 
@@ -16533,7 +16356,6 @@
 
 .method public handleEasyModeChanged(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera;->mCameraBaseMenu:Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseMenu;
 
@@ -16549,7 +16371,6 @@
 
 .method public handleEffectModeChanged(I)V
     .locals 2
-    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -16580,7 +16401,6 @@
 
 .method public handleFlipClose(Z)V
     .locals 4
-    .param p1    # Z
 
     const/16 v3, 0x8
 
@@ -16634,7 +16454,6 @@
 
 .method protected handleLowBattery(Z)V
     .locals 4
-    .param p1    # Z
 
     const/4 v3, 0x1
 
@@ -17357,7 +17176,6 @@
 
 .method public handleRecordingCommand(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v2, 0x1
 
@@ -17789,7 +17607,6 @@
 
 .method public handleShootingModeChanged(I)V
     .locals 31
-    .param p1    # I
 
     const-string v10, "Camera3"
 
@@ -21248,7 +21065,6 @@
 
 .method public handleSideTouchModeChanged(I)V
     .locals 3
-    .param p1    # I
 
     const/16 v2, 0xe
 
@@ -21298,8 +21114,6 @@
 
 .method public handleTouchAutoFocusEvent(Landroid/view/MotionEvent;Z)V
     .locals 13
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # Z
 
     const-string v10, "Camera3"
 
@@ -21815,8 +21629,6 @@
 
 .method public handleWifiDisplayOnRVF(II)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     const/4 v3, 0x5
 
@@ -22353,7 +22165,6 @@
 
 .method public hideDlg(I)V
     .locals 2
-    .param p1    # I
 
     const/16 v0, 0xe
 
@@ -24757,8 +24568,6 @@
 
 .method public isInDualAreaBoundary(FF)Z
     .locals 4
-    .param p1    # F
-    .param p2    # F
 
     const/16 v3, 0x50
 
@@ -24806,8 +24615,6 @@
 
 .method public isInDualSplitAreaBoundary(FF)Z
     .locals 4
-    .param p1    # F
-    .param p2    # F
 
     const/16 v3, 0x50
 
@@ -26368,7 +26175,6 @@
 
 .method public isSystemKeyEventRequested(I)Z
     .locals 3
-    .param p1    # I
 
     :try_start_0
     iget-object v1, p0, Lcom/sec/android/app/camera/Camera;->mWindowManager:Landroid/view/IWindowManager;
@@ -26631,8 +26437,6 @@
 
 .method public isTouchAutoFocusArea(II)Z
     .locals 7
-    .param p1    # I
-    .param p2    # I
 
     const v6, 0x7f0a000a
 
@@ -28300,8 +28104,6 @@
 
 .method protected makeToast(ILjava/lang/String;)V
     .locals 9
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v8, 0x0
 
@@ -28484,7 +28286,6 @@
 
 .method public needToAEAWBLocked(I)Z
     .locals 1
-    .param p1    # I
 
     sparse-switch p1, :sswitch_data_0
 
@@ -28519,7 +28320,6 @@
 
 .method public needToAWBLocked(I)Z
     .locals 1
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -28918,7 +28718,6 @@
 
 .method public onAEResult(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "Camera3"
 
@@ -28972,15 +28771,12 @@
 
 .method public onAccuracyChanged(Landroid/hardware/Sensor;I)V
     .locals 0
-    .param p1    # Landroid/hardware/Sensor;
-    .param p2    # I
 
     return-void
 .end method
 
 .method public onActionShotAcquisitionProgress(I)V
     .locals 4
-    .param p1    # I
 
     const-string v1, "Camera3"
 
@@ -29116,7 +28912,6 @@
 
 .method public onActionShotCreatingResultCompleted(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v1, p0, Lcom/sec/android/app/camera/Camera;->mMenuResourceDepot:Lcom/sec/android/app/camera/MenuResourceDepot;
 
@@ -29153,7 +28948,6 @@
 
 .method public onActionShotCreatingResultProgress(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lcom/sec/android/app/camera/Camera;->mMenuResourceDepot:Lcom/sec/android/app/camera/MenuResourceDepot;
 
@@ -29222,7 +29016,6 @@
 
 .method public onActionShotRectChanged([B)V
     .locals 3
-    .param p1    # [B
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/Camera;->getCameraSettings()Lcom/sec/android/app/camera/CameraSettings;
 
@@ -29266,9 +29059,6 @@
 
 .method protected onActivityResult(IILandroid/content/Intent;)V
     .locals 28
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const-string v3, "Camera3"
 
@@ -31432,7 +31222,6 @@
 
 .method public onAudioRecordingSelect(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/Camera;->getCameraSettings()Lcom/sec/android/app/camera/CameraSettings;
 
@@ -31482,7 +31271,6 @@
 
 .method public onAutoLowLightDetectionChanged(I)V
     .locals 6
-    .param p1    # I
 
     const/4 v5, 0x3
 
@@ -31645,8 +31433,6 @@
 
 .method public onAutoNightDetectionSelect(IZ)V
     .locals 4
-    .param p1    # I
-    .param p2    # Z
 
     const/16 v3, 0x57
 
@@ -31741,7 +31527,6 @@
 
 .method public onAutocontrastSelect(I)V
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/Camera;->getCameraSettings()Lcom/sec/android/app/camera/CameraSettings;
 
@@ -31959,7 +31744,6 @@
 
 .method public onBeautyFaceModeMenuSelect(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "Camera3"
 
@@ -31998,7 +31782,6 @@
 
 .method public onBeautyLevelMenuSelect(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/Camera;->getCameraSettings()Lcom/sec/android/app/camera/CameraSettings;
 
@@ -32011,7 +31794,6 @@
 
 .method public onBeautyShotSavingProgress(I)V
     .locals 9
-    .param p1    # I
 
     const/4 v8, 0x1
 
@@ -32335,7 +32117,6 @@
 
 .method public onBurstModeSelectCommand(I)V
     .locals 4
-    .param p1    # I
 
     const/4 v3, 0x1
 
@@ -32471,8 +32252,6 @@
 
 .method public onBurstShotCapturingProgressed(II)V
     .locals 10
-    .param p1    # I
-    .param p2    # I
 
     const-string v7, "Camera3"
 
@@ -32950,7 +32729,6 @@
 
 .method public onBurstShotCapturingStopped(I)V
     .locals 8
-    .param p1    # I
 
     const/16 v7, 0x64
 
@@ -33846,7 +33624,6 @@
 
 .method public onBurstShotSavingCompleted(I)V
     .locals 4
-    .param p1    # I
 
     const-string v1, "Camera3"
 
@@ -34180,7 +33957,6 @@
 
 .method public onBurstShotStringProgressed([B)V
     .locals 5
-    .param p1    # [B
 
     const/4 v4, 0x0
 
@@ -34291,8 +34067,6 @@
 
 .method public onCamcorderAntishakeSelect(IZ)V
     .locals 2
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v1, 0x1
 
@@ -34327,8 +34101,6 @@
 
 .method public onCamcorderAudiozoomSelect(IZ)V
     .locals 2
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v1, 0x1
 
@@ -34363,7 +34135,6 @@
 
 .method public onCamcorderQualityMenuSelect(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/Camera;->getCameraSettings()Lcom/sec/android/app/camera/CameraSettings;
 
@@ -34378,7 +34149,6 @@
 
 .method public onCamcorderResolutionMenuSelect(I)V
     .locals 2
-    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -34451,7 +34221,6 @@
 
 .method public onCameraAntishakeSelect(I)V
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/Camera;->getCameraSettings()Lcom/sec/android/app/camera/CameraSettings;
 
@@ -34474,8 +34243,6 @@
 
 .method public onCameraHDRSelect(IZ)V
     .locals 4
-    .param p1    # I
-    .param p2    # Z
 
     const/16 v3, 0xc
 
@@ -34709,7 +34476,6 @@
 
 .method public onCameraQualityMenuSelect(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/Camera;->getCameraSettings()Lcom/sec/android/app/camera/CameraSettings;
 
@@ -34724,7 +34490,6 @@
 
 .method public onCameraQuickAccess(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/Camera;->getCameraSettings()Lcom/sec/android/app/camera/CameraSettings;
 
@@ -34737,7 +34502,6 @@
 
 .method public onCameraResolutionMenuSelect(I)V
     .locals 3
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/Camera;->resetTouchFocus()V
 
@@ -34797,7 +34561,6 @@
 
 .method public onCartoonShotProgressRendering(I)V
     .locals 5
-    .param p1    # I
 
     const/16 v4, 0x2d
 
@@ -34971,7 +34734,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 2
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -35028,7 +34790,6 @@
 
 .method public onContinuousMenuSelect(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/Camera;->getCameraSettings()Lcom/sec/android/app/camera/CameraSettings;
 
@@ -35041,7 +34802,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 13
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
@@ -35642,7 +35402,6 @@
 
 .method public onCreateDialog(I)Landroid/app/Dialog;
     .locals 29
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -37600,8 +37359,6 @@
 
 .method public onDramaShotCapturingProgress(II)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     const-string v1, "Camera3"
 
@@ -37924,7 +37681,6 @@
 
 .method public onDramaShotError(I)V
     .locals 4
-    .param p1    # I
 
     const-string v1, "Camera3"
 
@@ -37984,7 +37740,6 @@
 
 .method public onDramaShotInputString([B)V
     .locals 3
-    .param p1    # [B
 
     iget-object v1, p0, Lcom/sec/android/app/camera/Camera;->mMenuResourceDepot:Lcom/sec/android/app/camera/MenuResourceDepot;
 
@@ -38023,7 +37778,6 @@
 
 .method public onDramaShotResultString([B)V
     .locals 3
-    .param p1    # [B
 
     iget-object v1, p0, Lcom/sec/android/app/camera/Camera;->mMenuResourceDepot:Lcom/sec/android/app/camera/MenuResourceDepot;
 
@@ -38062,7 +37816,6 @@
 
 .method public onDramaShotSavingProgress(I)V
     .locals 5
-    .param p1    # I
 
     const/16 v4, 0x64
 
@@ -38320,7 +38073,6 @@
 
 .method public onDualCaptureAvailable(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/app/camera/Camera;->mDualCaptureAvailable:I
 
@@ -38385,7 +38137,6 @@
 
 .method public onDualCaptureModeSelect(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "Camera3"
 
@@ -38439,7 +38190,6 @@
 
 .method public onDualEffectMenuSelect(I)V
     .locals 4
-    .param p1    # I
 
     const/16 v3, 0x50
 
@@ -38944,7 +38694,6 @@
 
 .method public onDualTrackingAvailable(I)V
     .locals 8
-    .param p1    # I
 
     const/16 v7, 0x2f
 
@@ -39413,7 +39162,6 @@
 
 .method public onExposureValueMenuSelect(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/Camera;->getCameraSettings()Lcom/sec/android/app/camera/CameraSettings;
 
@@ -39428,7 +39176,6 @@
 
 .method public onExposuremeterMenuSelect(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/Camera;->resetTouchFocus()V
 
@@ -39443,7 +39190,6 @@
 
 .method public onEyeEnlargeLevelMenuSelect(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/Camera;->getCameraSettings()Lcom/sec/android/app/camera/CameraSettings;
 
@@ -39456,7 +39202,6 @@
 
 .method public onFaceDetectionMenuSelect(I)V
     .locals 2
-    .param p1    # I
 
     const-string v0, "Camera3"
 
@@ -39475,7 +39220,6 @@
 
 .method public onFacePositionChanged([Lcom/sec/android/seccamera/SecCamera$Face;)V
     .locals 1
-    .param p1    # [Lcom/sec/android/seccamera/SecCamera$Face;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera;->mGLCameraBaseIndicators:Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;
 
@@ -39491,7 +39235,6 @@
 
 .method public onFastMotionSpeedSelect(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/Camera;->getCameraSettings()Lcom/sec/android/app/camera/CameraSettings;
 
@@ -39504,7 +39247,6 @@
 
 .method public onFlashModeMenuSelect(I)V
     .locals 5
-    .param p1    # I
 
     const v4, 0x7f0c0176
 
@@ -39663,7 +39405,6 @@
 
 .method public onFlipMenuSelectCommand(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/Camera;->getCameraSettings()Lcom/sec/android/app/camera/CameraSettings;
 
@@ -39688,7 +39429,6 @@
 
 .method public onFocusModeMenuSelect(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/Camera;->resetTouchFocus()V
 
@@ -39703,7 +39443,6 @@
 
 .method public onFocusSelectModeSelected(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/Camera;->getCameraSettings()Lcom/sec/android/app/camera/CameraSettings;
 
@@ -39716,7 +39455,6 @@
 
 .method public onFocusStateChanged(I)V
     .locals 6
-    .param p1    # I
 
     const/4 v5, 0x3
 
@@ -39811,7 +39549,6 @@
 
 .method public onGLInitialized(Lcom/sec/android/glview/TwGLViewGroup;)V
     .locals 14
-    .param p1    # Lcom/sec/android/glview/TwGLViewGroup;
 
     const/16 v13, 0xcb
 
@@ -40311,7 +40048,6 @@
 
 .method public onGolfShotCreatingCompleted([B)V
     .locals 5
-    .param p1    # [B
 
     const/16 v4, 0x147
 
@@ -40441,7 +40177,6 @@
 
 .method public onGolfShotCreatingProgress(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera;->mMenuResourceDepot:Lcom/sec/android/app/camera/MenuResourceDepot;
 
@@ -40604,7 +40339,6 @@
 
 .method public onGolfShotError(I)V
     .locals 4
-    .param p1    # I
 
     const/16 v3, 0x147
 
@@ -40650,7 +40384,6 @@
 
 .method public onGolfShotSavingProgress(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera;->mMenuResourceDepot:Lcom/sec/android/app/camera/MenuResourceDepot;
 
@@ -40752,8 +40485,6 @@
 
 .method public onGpsChanged(IZ)V
     .locals 2
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v1, 0x1
 
@@ -40897,7 +40628,6 @@
 
 .method public onGuidePositionChanged(I)V
     .locals 6
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -41115,7 +40845,6 @@
 
 .method public onGuidelineSelect(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/Camera;->getCameraSettings()Lcom/sec/android/app/camera/CameraSettings;
 
@@ -41128,7 +40857,6 @@
 
 .method public onHDRShotAllProgressCompleted(Z)V
     .locals 3
-    .param p1    # Z
 
     const-string v1, "Camera3"
 
@@ -41164,7 +40892,6 @@
 
 .method public onHDRShotResultCompleted(Z)V
     .locals 7
-    .param p1    # Z
 
     const/16 v6, 0xbb
 
@@ -41240,7 +40967,6 @@
 
 .method public onHDRShotResultProgress(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lcom/sec/android/app/camera/Camera;->mMenuResourceDepot:Lcom/sec/android/app/camera/MenuResourceDepot;
 
@@ -41344,7 +41070,6 @@
 
 .method public onHDRShotYUVFileString(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     const/16 v2, 0x2e
 
@@ -41418,7 +41143,6 @@
 
 .method public onHelpPopupSelect(I)V
     .locals 4
-    .param p1    # I
 
     const-string v1, "Camera3"
 
@@ -41824,8 +41548,6 @@
 
 .method public onHoverEventChanged(Lcom/sec/android/glview/TwGLView;Landroid/view/MotionEvent;)V
     .locals 4
-    .param p1    # Lcom/sec/android/glview/TwGLView;
-    .param p2    # Landroid/view/MotionEvent;
 
     const/4 v3, 0x1
 
@@ -42065,7 +41787,6 @@
 
 .method public onISOMenuSelect(I)V
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/Camera;->getCameraSettings()Lcom/sec/android/app/camera/CameraSettings;
 
@@ -43454,8 +43175,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 10
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/16 v9, 0x19
 
@@ -44684,8 +44403,6 @@
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 10
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/16 v9, 0x2f
 
@@ -46507,7 +46224,6 @@
 
 .method public onLaunchGalleryForImage(Ljava/lang/String;Ljava/util/ArrayList;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -46703,7 +46419,6 @@
 
 .method public onLaunchGalleryForVideo(Ljava/lang/String;)V
     .locals 12
-    .param p1    # Ljava/lang/String;
 
     const/4 v11, 0x0
 
@@ -47079,7 +46794,6 @@
 
 .method public onLightConditionChanged(I)V
     .locals 6
-    .param p1    # I
 
     const/4 v5, 0x3
 
@@ -47323,7 +47037,6 @@
 
 .method public onMagicShotApplicableMode(I)V
     .locals 2
-    .param p1    # I
 
     const-string v0, "Camera3"
 
@@ -47338,8 +47051,6 @@
 
 .method public onMagicShotCaptureProgress(II)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     const-string v1, "Camera3"
 
@@ -47894,8 +47605,6 @@
 
 .method public onMagicShotProcessProgress(II)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     const/16 v3, 0x64
 
@@ -48382,8 +48091,6 @@
 
 .method public onMultiFrameShotCapturingProgressed(II)V
     .locals 9
-    .param p1    # I
-    .param p2    # I
 
     const/16 v8, 0x37
 
@@ -48962,7 +48669,6 @@
 
 .method protected onNewIntent(Landroid/content/Intent;)V
     .locals 4
-    .param p1    # Landroid/content/Intent;
 
     const/high16 v3, 0x80000
 
@@ -49038,8 +48744,6 @@
 
 .method public onOutFocusCaptureProgress(II)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     const-string v1, "Camera3"
 
@@ -49123,7 +48827,6 @@
 
 .method public onOutFocusComplete(I)V
     .locals 10
-    .param p1    # I
 
     const/16 v9, 0xbb
 
@@ -49346,8 +49049,6 @@
 
 .method public onOutFocusProcessProgress(II)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     const-wide/16 v4, 0x64
 
@@ -49600,7 +49301,6 @@
 
 .method public onOutdoorVisibilitySelect(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/Camera;->getCameraSettings()Lcom/sec/android/app/camera/CameraSettings;
 
@@ -49613,11 +49313,6 @@
 
 .method public onPafResult(SSSSS)V
     .locals 2
-    .param p1    # S
-    .param p2    # S
-    .param p3    # S
-    .param p4    # S
-    .param p5    # S
 
     const/4 v1, 0x1
 
@@ -49847,7 +49542,6 @@
 
 .method public onPanoramaDirectionChanged(I)V
     .locals 4
-    .param p1    # I
 
     const-string v1, "Camera3"
 
@@ -49937,7 +49631,6 @@
 
 .method public onPanoramaError(I)V
     .locals 6
-    .param p1    # I
 
     const/4 v5, 0x0
 
@@ -50038,7 +49731,6 @@
 
 .method public onPanoramaLivePreviewData([B)V
     .locals 3
-    .param p1    # [B
 
     iget-object v1, p0, Lcom/sec/android/app/camera/Camera;->mEngine:Lcom/sec/android/app/camera/CommonEngine;
 
@@ -50090,7 +49782,6 @@
 
 .method public onPanoramaLowResolutionData([B)V
     .locals 3
-    .param p1    # [B
 
     iget-object v1, p0, Lcom/sec/android/app/camera/Camera;->mEngine:Lcom/sec/android/app/camera/CommonEngine;
 
@@ -50172,7 +49863,6 @@
 
 .method public onPanoramaProgressStitching(I)V
     .locals 12
-    .param p1    # I
 
     const/16 v11, 0xbb
 
@@ -50467,8 +50157,6 @@
 
 .method public onPanoramaRectChanged(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     iget-object v1, p0, Lcom/sec/android/app/camera/Camera;->mMenuResourceDepot:Lcom/sec/android/app/camera/MenuResourceDepot;
 
@@ -52495,8 +52183,6 @@
 
 .method public onPrepareDialog(ILandroid/app/Dialog;)V
     .locals 8
-    .param p1    # I
-    .param p2    # Landroid/app/Dialog;
 
     const v7, 0x7f0c0006
 
@@ -52707,7 +52393,6 @@
 
 .method public onRecordingChangeKeyCode(I)I
     .locals 1
-    .param p1    # I
 
     invoke-static {p0}, Lcom/sec/android/app/camera/Util;->isDeviceLandscape(Landroid/app/Activity;)Z
 
@@ -52955,7 +52640,6 @@
 
 .method public onRecordingModeMenuSelect(I)V
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -52966,8 +52650,6 @@
 
 .method public onRecordingModeMenuSelect(IZ)V
     .locals 3
-    .param p1    # I
-    .param p2    # Z
 
     const-string v0, "Camera3"
 
@@ -53048,7 +52730,6 @@
 
 .method public onRemoteViewfinderMenuSelect(I)V
     .locals 2
-    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -53080,7 +52761,6 @@
 
 .method protected onRestoreInstanceState(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onRestoreInstanceState(Landroid/os/Bundle;)V
 
@@ -57621,7 +57301,6 @@
 
 .method public onReviewMenuSelect(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/Camera;->getCameraSettings()Lcom/sec/android/app/camera/CameraSettings;
 
@@ -57634,7 +57313,6 @@
 
 .method protected onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onSaveInstanceState(Landroid/os/Bundle;)V
 
@@ -57668,7 +57346,6 @@
 
 .method public onSaveRichtoneMenuSelect(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/Camera;->getCameraSettings()Lcom/sec/android/app/camera/CameraSettings;
 
@@ -57681,7 +57358,6 @@
 
 .method public onScale(Landroid/view/ScaleGestureDetector;)Z
     .locals 6
-    .param p1    # Landroid/view/ScaleGestureDetector;
 
     const/4 v5, 0x0
 
@@ -57924,7 +57600,6 @@
 
 .method public onScaleBegin(Landroid/view/ScaleGestureDetector;)Z
     .locals 6
-    .param p1    # Landroid/view/ScaleGestureDetector;
 
     const/16 v5, 0x50
 
@@ -58144,7 +57819,6 @@
 
 .method public onScaleEnd(Landroid/view/ScaleGestureDetector;)V
     .locals 4
-    .param p1    # Landroid/view/ScaleGestureDetector;
 
     const-string v0, "Camera3"
 
@@ -58194,7 +57868,6 @@
 
 .method public onSceneModeMenuSelect(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "Camera3"
 
@@ -58259,7 +57932,6 @@
 
 .method public onScreenFlashMenuSelectCommand(I)V
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -58300,7 +57972,6 @@
 
 .method public onSecImagingString(Ljava/lang/String;)V
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     const/4 v7, 0x0
 
@@ -58408,7 +58079,6 @@
 
 .method public onSelfieAlarmFDRectChanged([Lcom/sec/android/seccamera/SecCamera$Face;)V
     .locals 4
-    .param p1    # [Lcom/sec/android/seccamera/SecCamera$Face;
 
     const-string v1, "Camera3"
 
@@ -58484,8 +58154,6 @@
 
 .method public onSelfieAlarmGuideStateChanged(IZ)V
     .locals 1
-    .param p1    # I
-    .param p2    # Z
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera;->mGLCameraBaseIndicators:Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;
 
@@ -58539,7 +58207,6 @@
 
 .method public onSelfieHeadPoseDetectionSuccess([B)V
     .locals 3
-    .param p1    # [B
 
     const-string v1, "Camera3"
 
@@ -58591,7 +58258,6 @@
 
 .method public onSelfieIntervalMenuSelect(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "Camera3"
 
@@ -58636,7 +58302,6 @@
 
 .method public onSelfieModeMenuSelect(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "Camera3"
 
@@ -58685,7 +58350,6 @@
 
 .method public onSelfieShotHRMDetectionSuccess(Z)V
     .locals 3
-    .param p1    # Z
 
     const-string v1, "Camera3"
 
@@ -59023,7 +58687,6 @@
 
 .method public onSensorChanged(Landroid/hardware/SensorEvent;)V
     .locals 14
-    .param p1    # Landroid/hardware/SensorEvent;
 
     const-wide/high16 v12, 0x3ff8000000000000L
 
@@ -59316,7 +58979,6 @@
 
 .method public onShareModeSelect(I)V
     .locals 2
-    .param p1    # I
 
     const-string v0, "Camera3"
 
@@ -59356,7 +59018,6 @@
 
 .method public onShootingModeMenuSelect(I)V
     .locals 11
-    .param p1    # I
 
     const/16 v8, 0x2a
 
@@ -59821,7 +59482,6 @@
 
 .method public onShutterSoundMenuSelect(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/Camera;->getCameraSettings()Lcom/sec/android/app/camera/CameraSettings;
 
@@ -59834,7 +59494,6 @@
 
 .method public onSideTouchModeSelectCommand(I)V
     .locals 5
-    .param p1    # I
 
     const/16 v4, 0x1a
 
@@ -59910,7 +59569,6 @@
 
 .method public onSingleEffectMenuSelect(I)V
     .locals 6
-    .param p1    # I
 
     const v5, 0x7f0c014f
 
@@ -60094,7 +59752,6 @@
 
 .method public onSlimFaceLevelMenuSelect(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/Camera;->getCameraSettings()Lcom/sec/android/app/camera/CameraSettings;
 
@@ -60107,7 +59764,6 @@
 
 .method public onSlowMotionSpeedSelect(I)V
     .locals 3
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/Camera;->getCameraSettings()Lcom/sec/android/app/camera/CameraSettings;
 
@@ -60207,7 +59863,6 @@
 
 .method public onSmileShotFaceRectChanged([B)V
     .locals 3
-    .param p1    # [B
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/Camera;->getCameraSettings()Lcom/sec/android/app/camera/CameraSettings;
 
@@ -60255,7 +59910,6 @@
 
 .method public onSmileShotSmileRectChanged([B)V
     .locals 3
-    .param p1    # [B
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/Camera;->getCameraSettings()Lcom/sec/android/app/camera/CameraSettings;
 
@@ -60374,7 +60028,6 @@
 
 .method public onSoundShotMenuSelect(I)V
     .locals 5
-    .param p1    # I
 
     const/16 v4, 0x4b
 
@@ -60690,7 +60343,6 @@
 
 .method public onStorageMenuSelect(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v2, 0x1
 
@@ -60737,7 +60389,6 @@
 
 .method public onStoryshotSaveAudio(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/16 v3, 0x4b
 
@@ -60792,7 +60443,6 @@
 
 .method public onTimerEvent(I)V
     .locals 5
-    .param p1    # I
 
     const/16 v4, 0x3d
 
@@ -60869,7 +60519,6 @@
 
 .method public onTimerMenuSelect(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/Camera;->getCameraSettings()Lcom/sec/android/app/camera/CameraSettings;
 
@@ -60882,7 +60531,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 11
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/Camera;->getCameraSettings()Lcom/sec/android/app/camera/CameraSettings;
 
@@ -62511,7 +62159,6 @@
 
 .method public onTouchToCaptureMenuSelect(I)V
     .locals 2
-    .param p1    # I
 
     const-string v0, "Camera3"
 
@@ -62530,7 +62177,6 @@
 
 .method public onUhdSavingProgress(I)V
     .locals 7
-    .param p1    # I
 
     const/16 v6, 0x64
 
@@ -62810,7 +62456,6 @@
 
 .method public onUltraWideSelfieDirectionChanged(I)V
     .locals 4
-    .param p1    # I
 
     const-string v1, "Camera3"
 
@@ -62900,7 +62545,6 @@
 
 .method public onUltraWideSelfieError(I)V
     .locals 7
-    .param p1    # I
 
     const/4 v6, 0x1
 
@@ -63005,7 +62649,6 @@
 
 .method public onUltraWideSelfieLivePreviewData([B)V
     .locals 3
-    .param p1    # [B
 
     iget-object v1, p0, Lcom/sec/android/app/camera/Camera;->mEngine:Lcom/sec/android/app/camera/CommonEngine;
 
@@ -63057,7 +62700,6 @@
 
 .method public onUltraWideSelfieLowResolutionData([B)V
     .locals 3
-    .param p1    # [B
 
     iget-object v1, p0, Lcom/sec/android/app/camera/Camera;->mEngine:Lcom/sec/android/app/camera/CommonEngine;
 
@@ -63139,8 +62781,6 @@
 
 .method public onUltraWideSelfieNextCapturePosition(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     iget-object v1, p0, Lcom/sec/android/app/camera/Camera;->mMenuResourceDepot:Lcom/sec/android/app/camera/MenuResourceDepot;
 
@@ -63168,7 +62808,6 @@
 
 .method public onUltraWideSelfieProgressStitching(I)V
     .locals 11
-    .param p1    # I
 
     const/16 v10, 0x64
 
@@ -63401,7 +63040,6 @@
 
 .method public onUltraWideSelfieRectChanged([B)V
     .locals 3
-    .param p1    # [B
 
     iget-object v1, p0, Lcom/sec/android/app/camera/Camera;->mMenuResourceDepot:Lcom/sec/android/app/camera/MenuResourceDepot;
 
@@ -63801,7 +63439,6 @@
 
 .method public onVideoStoringCompleted(Landroid/net/Uri;)V
     .locals 10
-    .param p1    # Landroid/net/Uri;
 
     const-wide/16 v4, 0x400
 
@@ -64396,7 +64033,6 @@
 
 .method public onViewModeSelectCommand(I)V
     .locals 5
-    .param p1    # I
 
     const/4 v4, 0x1
 
@@ -64500,8 +64136,6 @@
 
 .method public onVoiceCommandMenuSelect(IZ)V
     .locals 2
-    .param p1    # I
-    .param p2    # Z
 
     const-string v0, "Camera3"
 
@@ -64535,7 +64169,6 @@
 
 .method public onVoiceGuideMenuSelect(I)V
     .locals 2
-    .param p1    # I
 
     const-string v0, "Camera3"
 
@@ -64570,7 +64203,6 @@
 
 .method public onVolumeKeyAsMenuSelect(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/Camera;->getCameraSettings()Lcom/sec/android/app/camera/CameraSettings;
 
@@ -64583,7 +64215,6 @@
 
 .method public onWhiteBalanceMenuSelect(I)V
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/Camera;->getCameraSettings()Lcom/sec/android/app/camera/CameraSettings;
 
@@ -64617,7 +64248,6 @@
 
 .method public onWindowFocusChanged(Z)V
     .locals 4
-    .param p1    # Z
 
     const/4 v3, 0x1
 
@@ -64733,7 +64363,6 @@
 
 .method public onZoomValueMenuSelect(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera;->mEngine:Lcom/sec/android/app/camera/CommonEngine;
 
@@ -64861,8 +64490,6 @@
 
 .method public playCameraSound(II)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
 
     const/4 v4, 0x2
 
@@ -64988,7 +64615,6 @@
 
 .method public playFaceCount(I)V
     .locals 6
-    .param p1    # I
 
     const/4 v3, 0x1
 
@@ -65118,8 +64744,6 @@
 
 .method public playFacePosition(II)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     const/4 v3, 0x1
 
@@ -65240,7 +64864,6 @@
 
 .method public playFacePositionBasedScreen(I)V
     .locals 4
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/Camera;->isScreenReaderActive()Z
 
@@ -65339,7 +64962,6 @@
 
 .method public playFacePositionBasedScreenForVoiceGuide(I)V
     .locals 4
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/Camera;->isScreenReaderActive()Z
 
@@ -65637,7 +65259,6 @@
 
 .method public playSelfieAlarmGuideStateSound(I)V
     .locals 5
-    .param p1    # I
 
     const/4 v3, 0x1
 
@@ -65782,8 +65403,6 @@
 
 .method public playSound(II)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     const/4 v3, 0x1
 
@@ -65867,7 +65486,6 @@
 
 .method public popMenu(I)V
     .locals 1
-    .param p1    # I
 
     :goto_0
     :try_start_0
@@ -66050,7 +65668,6 @@
 
 .method public pushMenu(Lcom/sec/android/app/camera/MenuBase;)V
     .locals 1
-    .param p1    # Lcom/sec/android/app/camera/MenuBase;
 
     :try_start_0
     invoke-virtual {p1}, Lcom/sec/android/app/camera/MenuBase;->getZorder()I
@@ -66093,7 +65710,6 @@
 
 .method public pushSelfieString(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/sec/android/app/camera/Camera;->mMenuResourceDepot:Lcom/sec/android/app/camera/MenuResourceDepot;
 
@@ -66160,7 +65776,6 @@
 
 .method public removeMenu(Lcom/sec/android/app/camera/MenuBase;)V
     .locals 1
-    .param p1    # Lcom/sec/android/app/camera/MenuBase;
 
     :try_start_0
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera;->mCameraBaseMenu:Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseMenu;
@@ -66262,8 +65877,6 @@
 
 .method public requestSystemKeyEvent(IZ)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Z
 
     :try_start_0
     iget-object v1, p0, Lcom/sec/android/app/camera/Camera;->mWindowManager:Landroid/view/IWindowManager;
@@ -66363,7 +65976,6 @@
 
 .method public resetFocus(Lcom/sec/android/app/camera/PreviewFrameLayout;)V
     .locals 1
-    .param p1    # Lcom/sec/android/app/camera/PreviewFrameLayout;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera;->mGLCameraBaseIndicators:Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;
 
@@ -66427,7 +66039,6 @@
 
 .method public resetMaxVideoDuration(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/Camera;->getCameraSettings()Lcom/sec/android/app/camera/CameraSettings;
 
@@ -67672,7 +67283,6 @@
 
 .method public resizeFullSize(Z)Z
     .locals 10
-    .param p1    # Z
 
     const/4 v9, 0x0
 
@@ -68435,7 +68045,6 @@
 
 .method public sendMessageUpdateThumbnail(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/16 v2, 0x11
 
@@ -68460,7 +68069,6 @@
 
 .method public setBroadcastCameraOpen(Z)V
     .locals 3
-    .param p1    # Z
 
     new-instance v0, Landroid/content/Intent;
 
@@ -68508,7 +68116,6 @@
 
 .method public setBroadcastCameraStatus(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera;->mCameraSettings:Lcom/sec/android/app/camera/CameraSettings;
 
@@ -68576,7 +68183,6 @@
 
 .method public setBurstCaptureShortPressed(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/Camera;->mCheckBusrtPressed:Z
 
@@ -68603,7 +68209,6 @@
 
 .method public setCamcorderAudioZoomValue(I)V
     .locals 5
-    .param p1    # I
 
     const/high16 v4, 0x3f800000
 
@@ -68680,7 +68285,6 @@
 
 .method public setCameraSelfIconLoaded(Z)V
     .locals 0
-    .param p1    # Z
 
     sput-boolean p1, Lcom/sec/android/app/camera/Camera;->mIsCameraSelfIconLoaded:Z
 
@@ -68689,7 +68293,6 @@
 
 .method public setConnectingStateGPS(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera;->mGLCameraBaseIndicators:Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;
 
@@ -68717,7 +68320,6 @@
 
 .method public setCoverModeChanged(Z)V
     .locals 5
-    .param p1    # Z
 
     const/16 v4, 0x2c
 
@@ -68925,7 +68527,6 @@
 
 .method public setDramaShotState(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "Camera3"
 
@@ -69322,7 +68923,6 @@
 
 .method public setEffectMenuSelect(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/Camera;->mEffectMenuSelect:Z
 
@@ -69331,7 +68931,6 @@
 
 .method public setEnableDirectConnect(Z)V
     .locals 0
-    .param p1    # Z
 
     sput-boolean p1, Lcom/sec/android/app/camera/Camera;->mEnableDirectConnect:Z
 
@@ -69340,7 +68939,6 @@
 
 .method public setExternalShootingMode(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/16 v1, 0x155
 
@@ -69379,7 +68977,6 @@
 
 .method public setFirstStartingAfterResume(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/Camera;->mIsFirstStartingAfterResume:Z
 
@@ -69412,7 +69009,6 @@
 
 .method public setGLQueueEvent(Ljava/lang/Runnable;)V
     .locals 1
-    .param p1    # Ljava/lang/Runnable;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera;->mGLSurfaceView:Landroid/opengl/GLSurfaceView;
 
@@ -69428,7 +69024,6 @@
 
 .method public setGolfShotStatus(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "Camera3"
 
@@ -69459,7 +69054,6 @@
 
 .method public setGuideLineSize(Lcom/sec/android/app/camera/PreviewFrameLayout;)V
     .locals 1
-    .param p1    # Lcom/sec/android/app/camera/PreviewFrameLayout;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera;->mGLCameraBaseIndicators:Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;
 
@@ -69475,7 +69069,6 @@
 
 .method public setHRMCapturestarted(Z)V
     .locals 3
-    .param p1    # Z
 
     const-string v0, "Camera3"
 
@@ -69551,7 +69144,6 @@
 
 .method public setIsLaunchGallery(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/Camera;->mChkLaunchGallery:Z
 
@@ -69560,7 +69152,6 @@
 
 .method public setIsLaunchSStudio(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/Camera;->mChkLaunchSStudio:Z
 
@@ -69569,7 +69160,6 @@
 
 .method public setIsWifiDirectRestore(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/Camera;->mIsWifiDirectRestore:Z
 
@@ -69578,7 +69168,6 @@
 
 .method public setLastContentUri(Landroid/net/Uri;)V
     .locals 1
-    .param p1    # Landroid/net/Uri;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera;->mEngine:Lcom/sec/android/app/camera/CommonEngine;
 
@@ -69589,7 +69178,6 @@
 
 .method public setLaunchGalleryOnRVF(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/Camera;->enableLaunchGalleryOnRVF:Z
 
@@ -69598,8 +69186,6 @@
 
 .method public setLcdBrightness(Ljava/lang/String;Z)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     new-instance v0, Landroid/content/Intent;
 
@@ -69648,14 +69234,12 @@
 
 .method public setLongPressEnabled(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method public setMagicShotState(I)V
     .locals 4
-    .param p1    # I
 
     iget-object v1, p0, Lcom/sec/android/app/camera/Camera;->mMagicShotStateLock:Ljava/lang/Object;
 
@@ -69757,7 +69341,6 @@
 
 .method public setOutputFile(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera;->mEngine:Lcom/sec/android/app/camera/CommonEngine;
 
@@ -69768,8 +69351,6 @@
 
 .method public setPafResult(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera;->mGLCameraBaseIndicators:Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;
 
@@ -69848,7 +69429,6 @@
 
 .method public setRecordingStopAvailable(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/Camera;->mRecordingStopAvailable:Z
 
@@ -69857,7 +69437,6 @@
 
 .method public setResizeHandleDragVibration(Z)V
     .locals 4
-    .param p1    # Z
 
     const/16 v3, 0x50
 
@@ -69903,7 +69482,6 @@
 
 .method public setSelfieContinuousCapturing(Z)V
     .locals 4
-    .param p1    # Z
 
     const/16 v3, 0x53
 
@@ -69949,7 +69527,6 @@
 
 .method public setShutterButtonDimmed(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera;->mCameraBaseMenu:Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseMenu;
 
@@ -69975,7 +69552,6 @@
 
 .method public setToResizeSelfieAlarmGuide(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v1, p0, Lcom/sec/android/app/camera/Camera;->mMenuResourceDepot:Lcom/sec/android/app/camera/MenuResourceDepot;
 
@@ -70070,7 +69646,6 @@
 
 .method public setTouchAFStarted(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/Camera;->mIsTouchAFStarted:Z
 
@@ -70079,7 +69654,6 @@
 
 .method public setTouchtoCaptureStarted(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/Camera;->mIsTouchtoCaptureStarted:Z
 
@@ -70178,7 +69752,6 @@
 
 .method public setTutorial(I)V
     .locals 8
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -70310,7 +69883,6 @@
 
 .method public setUltraWideShotCaptureError(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v1, p0, Lcom/sec/android/app/camera/Camera;->mMenuResourceDepot:Lcom/sec/android/app/camera/MenuResourceDepot;
 
@@ -70338,7 +69910,6 @@
 
 .method public setUltraWideShotHapticEnabled(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v1, p0, Lcom/sec/android/app/camera/Camera;->mMenuResourceDepot:Lcom/sec/android/app/camera/MenuResourceDepot;
 
@@ -70366,7 +69937,6 @@
 
 .method public setUltraWideShotStartCapture(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v1, p0, Lcom/sec/android/app/camera/Camera;->mMenuResourceDepot:Lcom/sec/android/app/camera/MenuResourceDepot;
 
@@ -70406,7 +69976,6 @@
 
 .method public setWaitBurstShot(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/Camera;->mIsWaitBurstShot:Z
 
@@ -70415,7 +69984,6 @@
 
 .method public setWaitingAnimation(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/Camera;->mEnableWaitingAnimation:Z
 
@@ -70424,7 +69992,6 @@
 
 .method public setWifiP2pDeviceInfo(Landroid/net/wifi/p2p/WifiP2pDevice;)V
     .locals 3
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pDevice;
 
     const-string v0, "Camera3"
 
@@ -70519,7 +70086,6 @@
 
 .method public setWinkDetected(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/Camera;->mWinkDetected:Z
 
@@ -70528,7 +70094,6 @@
 
 .method public setfaceDetectedState(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-boolean v0, p0, Lcom/sec/android/app/camera/Camera;->mfaceDetectedState:Z
 
@@ -70564,7 +70129,6 @@
 
 .method public setmDNIeUIMode(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "Camera3"
 
@@ -70679,7 +70243,6 @@
 
 .method public showApplicationDisabledPopup(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     new-instance v1, Landroid/content/Intent;
@@ -70719,7 +70282,6 @@
 
 .method public showAquaProtectionDialog(I)V
     .locals 7
-    .param p1    # I
 
     const v6, 0x7f0c0110
 
@@ -71136,7 +70698,6 @@
 
 .method public showBurstShotsGuideDialog(I)V
     .locals 10
-    .param p1    # I
 
     const/4 v9, 0x1
 
@@ -71503,7 +71064,6 @@
 
 .method public showCoverModeDialog(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     iget-object v4, p0, Lcom/sec/android/app/camera/Camera;->mCoverModeDialog:Landroid/app/AlertDialog;
 
@@ -71717,7 +71277,6 @@
 
 .method public showCropArea(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v2, 0x4
 
@@ -71799,7 +71358,6 @@
 
 .method public showDataUsageWarningDialog(I)V
     .locals 8
-    .param p1    # I
 
     const/4 v7, 0x1
 
@@ -71917,7 +71475,6 @@
 
 .method public showDlg(I)V
     .locals 2
-    .param p1    # I
 
     const/16 v0, 0xe
 
@@ -72719,7 +72276,6 @@
 
 .method public showFocusIndicator(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera;->mGLCameraBaseIndicators:Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;
 
@@ -72918,7 +72474,6 @@
 
 .method public showLCDWhitening(Z)V
     .locals 7
-    .param p1    # Z
 
     const/4 v6, 0x1
 
@@ -73387,7 +72942,6 @@
 
 .method public showPanoramaToastPopup(I)V
     .locals 2
-    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -73558,7 +73112,6 @@
 
 .method public showRemoteViewFinderConnectFailDialog(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lcom/sec/android/app/camera/Camera;->mRVFFailDialog:Landroid/app/AlertDialog;
 
@@ -74815,7 +74368,6 @@
 
 .method public showScreenFlashIndicator(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v2, 0x1
 
@@ -74950,7 +74502,6 @@
 
 .method public showShootingModeGuideDialog(I)V
     .locals 21
-    .param p1    # I
 
     move-object/from16 v0, p0
 
@@ -76563,7 +76114,6 @@
 
 .method public showStoryShotAddVoiceMenu(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/16 v4, 0x52
 
@@ -76722,7 +76272,6 @@
 
 .method public showTurnOnBurstShotHelpTextDialog(I)V
     .locals 9
-    .param p1    # I
 
     const/4 v8, 0x1
 
@@ -77015,7 +76564,6 @@
 
 .method public showUltraWideShotToastPopup(I)V
     .locals 2
-    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -78549,7 +78097,6 @@
 
 .method public declared-synchronized startPostCaptureAnimation(Landroid/graphics/Bitmap;)V
     .locals 8
-    .param p1    # Landroid/graphics/Bitmap;
 
     const/4 v3, 0x1
 
@@ -79360,7 +78907,6 @@
 
 .method public stopCameraSound(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera;->mCameraSoundPool:Landroid/media/SoundPool;
 
@@ -79768,7 +79314,6 @@
 
 .method public stopSound(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera;->mSoundPool:Landroid/media/SoundPool;
 
@@ -79903,7 +79448,6 @@
 
 .method public storeGolfimage([B)V
     .locals 22
-    .param p1    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/FileNotFoundException;
@@ -80561,7 +80105,6 @@
 
 .method public switchAudioChannelDirection(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera;->mEngine:Lcom/sec/android/app/camera/CommonEngine;
 
@@ -80661,7 +80204,6 @@
 
 .method public update3DTourThumbnail([B)V
     .locals 3
-    .param p1    # [B
 
     iget-object v1, p0, Lcom/sec/android/app/camera/Camera;->mMenuResourceDepot:Lcom/sec/android/app/camera/MenuResourceDepot;
 
@@ -80689,7 +80231,6 @@
 
 .method public updateAudioRecordIndicator(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera;->mGLCameraBaseIndicators:Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;
 
@@ -80719,7 +80260,6 @@
 
 .method public updateAudioRecordIndicatorlevel([I)V
     .locals 1
-    .param p1    # [I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera;->mGLCameraBaseIndicators:Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseIndicators;
 
@@ -80961,7 +80501,6 @@
 
 .method public updateRecordingSnapThumbnail(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera;->mCameraBaseMenu:Lcom/sec/android/app/camera/glwidget/TwGLCameraBaseMenu;
 
@@ -81074,7 +80613,6 @@
 
 .method public updateSelfieThumbnail([B)V
     .locals 3
-    .param p1    # [B
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/Camera;->hideBaseMenu()V
 
@@ -81255,8 +80793,6 @@
 
 .method public updateThumbnail(Landroid/graphics/Bitmap;I)V
     .locals 1
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera;->mChkKeyFromApp:Ljava/lang/String;
 

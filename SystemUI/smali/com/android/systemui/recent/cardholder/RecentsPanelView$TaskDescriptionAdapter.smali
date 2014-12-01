@@ -23,7 +23,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/systemui/recent/cardholder/RecentsPanelView;Landroid/content/Context;)V
     .locals 1
-    .param p2    # Landroid/content/Context;
 
     iput-object p1, p0, Lcom/android/systemui/recent/cardholder/RecentsPanelView$TaskDescriptionAdapter;->this$0:Lcom/android/systemui/recent/cardholder/RecentsPanelView;
 
@@ -42,7 +41,6 @@
 # virtual methods
 .method public createView(Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 6
-    .param p1    # Landroid/view/ViewGroup;
 
     const/high16 v5, 0x40000000
 
@@ -211,7 +209,6 @@
 
 .method public getItem(I)Ljava/lang/Object;
     .locals 1
-    .param p1    # I
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -222,7 +219,6 @@
 
 .method public getItemId(I)J
     .locals 2
-    .param p1    # I
 
     int-to-long v0, p1
 
@@ -231,9 +227,6 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 7
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     const/4 v6, 0x1
 
@@ -358,7 +351,6 @@
 
 .method public recycleView(Landroid/view/View;)V
     .locals 5
-    .param p1    # Landroid/view/View;
 
     const/4 v4, 0x0
 

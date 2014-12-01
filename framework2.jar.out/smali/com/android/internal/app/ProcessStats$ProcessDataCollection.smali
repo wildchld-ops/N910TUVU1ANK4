@@ -41,9 +41,6 @@
 # direct methods
 .method public constructor <init>([I[I[I)V
     .locals 0
-    .param p1    # [I
-    .param p2    # [I
-    .param p3    # [I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -60,9 +57,6 @@
 # virtual methods
 .method print(Ljava/io/PrintWriter;JZ)V
     .locals 6
-    .param p1    # Ljava/io/PrintWriter;
-    .param p2    # J
-    .param p4    # Z
 
     const-wide/16 v4, 0x400
 

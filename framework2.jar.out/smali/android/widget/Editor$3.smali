@@ -36,10 +36,6 @@
 # virtual methods
 .method public updatePosition(IIZZ)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # Z
 
     iget-object v1, p0, Landroid/widget/Editor$3;->this$0:Landroid/widget/Editor;
 

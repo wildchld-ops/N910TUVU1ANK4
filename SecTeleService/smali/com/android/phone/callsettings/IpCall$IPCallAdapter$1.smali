@@ -132,7 +132,7 @@
 
     iget-object v2, v2, Lcom/android/phone/callsettings/IpCall$IPCallAdapter;->this$0:Lcom/android/phone/callsettings/IpCall;
 
-    invoke-virtual {v2, v6}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {v2, v6}, Lcom/android/phone/callsettings/IpCall;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
@@ -185,7 +185,7 @@
 
     iget-object v2, v2, Lcom/android/phone/callsettings/IpCall$IPCallAdapter;->this$0:Lcom/android/phone/callsettings/IpCall;
 
-    invoke-virtual {v2, v4}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {v2, v4}, Lcom/android/phone/callsettings/IpCall;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
@@ -237,7 +237,7 @@
 
     iget-object v2, v2, Lcom/android/phone/callsettings/IpCall$IPCallAdapter;->this$0:Lcom/android/phone/callsettings/IpCall;
 
-    invoke-virtual {v2, v4}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {v2, v4}, Lcom/android/phone/callsettings/IpCall;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
@@ -297,7 +297,7 @@
 
     iget-object v2, v2, Lcom/android/phone/callsettings/IpCall$IPCallAdapter;->this$0:Lcom/android/phone/callsettings/IpCall;
 
-    invoke-virtual {v2, v6}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {v2, v6}, Lcom/android/phone/callsettings/IpCall;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
@@ -355,7 +355,7 @@
 
     const v2, 0x7f09047a
 
-    invoke-virtual {v0, v2}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {v0, v2}, Lcom/android/phone/callsettings/IpCall;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -418,13 +418,13 @@
 
     iget-object v0, v0, Lcom/android/phone/callsettings/IpCall$IPCallAdapter;->this$0:Lcom/android/phone/callsettings/IpCall;
 
-    invoke-virtual {v0, v5}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->removeDialog(I)V
+    invoke-virtual {v0, v5}, Lcom/android/phone/callsettings/IpCall;->removeDialog(I)V
 
     iget-object v0, p0, Lcom/android/phone/callsettings/IpCall$IPCallAdapter$1;->this$1:Lcom/android/phone/callsettings/IpCall$IPCallAdapter;
 
     iget-object v0, v0, Lcom/android/phone/callsettings/IpCall$IPCallAdapter;->this$0:Lcom/android/phone/callsettings/IpCall;
 
-    invoke-virtual {v0, v5}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->showDialog(I)V
+    invoke-virtual {v0, v5}, Lcom/android/phone/callsettings/IpCall;->showDialog(I)V
 
     move v0, v1
 

@@ -46,10 +46,6 @@
 # direct methods
 .method public constructor <init>(Landroid/view/Display;Landroid/view/SurfaceSession;Landroid/content/Context;Lcom/android/server/wm/WindowManagerService;)V
     .locals 10
-    .param p1    # Landroid/view/Display;
-    .param p2    # Landroid/view/SurfaceSession;
-    .param p3    # Landroid/content/Context;
-    .param p4    # Lcom/android/server/wm/WindowManagerService;
 
     const/4 v9, 0x0
 
@@ -231,8 +227,6 @@
 
 .method private draw(Landroid/graphics/Rect;I)V
     .locals 5
-    .param p1    # Landroid/graphics/Rect;
-    .param p2    # I
 
     iget-object v1, p0, Lcom/android/server/wm/FocusedStackFrame;->mService:Lcom/android/server/wm/WindowManagerService;
 
@@ -362,7 +356,6 @@
 
 .method private positionSurface(Landroid/graphics/Rect;)V
     .locals 3
-    .param p1    # Landroid/graphics/Rect;
 
     iget-object v0, p0, Lcom/android/server/wm/FocusedStackFrame;->mSurfaceControl:Landroid/view/SurfaceControl;
 
@@ -395,8 +388,6 @@
 # virtual methods
 .method public adjustBounds(Landroid/graphics/Rect;I)V
     .locals 7
-    .param p1    # Landroid/graphics/Rect;
-    .param p2    # I
 
     const/high16 v6, 0x40000000
 
@@ -688,7 +679,6 @@
 
 .method public setBounds(Landroid/graphics/Rect;)V
     .locals 1
-    .param p1    # Landroid/graphics/Rect;
 
     iget-object v0, p0, Lcom/android/server/wm/FocusedStackFrame;->mBounds:Landroid/graphics/Rect;
 
@@ -699,7 +689,6 @@
 
 .method public setForceReDraw(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/wm/FocusedStackFrame;->mForceReDraw:Z
 
@@ -708,7 +697,6 @@
 
 .method public setLayer(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/wm/FocusedStackFrame;->mSurfaceControl:Landroid/view/SurfaceControl;
 
@@ -719,7 +707,6 @@
 
 .method public setScreenSize(Landroid/graphics/Rect;)V
     .locals 1
-    .param p1    # Landroid/graphics/Rect;
 
     iget-object v0, p0, Lcom/android/server/wm/FocusedStackFrame;->mScreenSize:Landroid/graphics/Rect;
 
@@ -745,7 +732,6 @@
 
 .method public setVisibility(Z)V
     .locals 1
-    .param p1    # Z
 
     const/4 v0, 0x0
 
@@ -756,8 +742,6 @@
 
 .method setVisibility(ZZ)V
     .locals 4
-    .param p1    # Z
-    .param p2    # Z
 
     iget-object v2, p0, Lcom/android/server/wm/FocusedStackFrame;->mSurfaceControl:Landroid/view/SurfaceControl;
 

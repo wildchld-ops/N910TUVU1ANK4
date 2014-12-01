@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,8 +36,6 @@
 # virtual methods
 .method public addKeyboardLayoutForInputDevice(Ljava/lang/String;Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -100,8 +97,6 @@
 
 .method public cancelVibrate(ILandroid/os/IBinder;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/os/IBinder;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -204,7 +199,6 @@
 
 .method public getCurrentKeyboardLayoutForInputDevice(Ljava/lang/String;)Ljava/lang/String;
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -373,7 +367,6 @@
 
 .method public getInputDevice(I)Landroid/view/InputDevice;
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -506,7 +499,6 @@
 
 .method public getKeyboardLayout(Ljava/lang/String;)Landroid/hardware/input/KeyboardLayout;
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -635,7 +627,6 @@
 
 .method public getKeyboardLayoutsForInputDevice(Ljava/lang/String;)[Ljava/lang/String;
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -691,9 +682,6 @@
 
 .method public getScanCodeState(III)I
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -753,10 +741,6 @@
 
 .method public hasKeys(II[I[Z)Z
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [I
-    .param p4    # [Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -842,8 +826,6 @@
 
 .method public injectInputEvent(Landroid/view/InputEvent;I)Z
     .locals 7
-    .param p1    # Landroid/view/InputEvent;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -992,7 +974,6 @@
 
 .method public monitorInput(Ljava/lang/String;)Landroid/view/InputChannel;
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1064,8 +1045,6 @@
 
 .method public monitorInputEx(Ljava/lang/String;Z)Landroid/view/InputChannel;
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1146,7 +1125,6 @@
 
 .method public registerHoveringSpenCustomIcon(Landroid/graphics/Bitmap;)I
     .locals 6
-    .param p1    # Landroid/graphics/Bitmap;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1221,7 +1199,6 @@
 
 .method public registerInputDevicesChangedListener(Landroid/hardware/input/IInputDevicesChangedListener;)V
     .locals 5
-    .param p1    # Landroid/hardware/input/IInputDevicesChangedListener;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1285,7 +1262,6 @@
 
 .method public registerMouseCustomIcon(Landroid/graphics/Bitmap;)I
     .locals 6
-    .param p1    # Landroid/graphics/Bitmap;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1360,11 +1336,6 @@
 
 .method public reloadMousePointerIcon(IIILandroid/graphics/Point;I)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/graphics/Point;
-    .param p5    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1443,11 +1414,6 @@
 
 .method public reloadMousePointerIconForBitmap(IILandroid/graphics/Bitmap;Landroid/graphics/Point;I)I
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/graphics/Bitmap;
-    .param p4    # Landroid/graphics/Point;
-    .param p5    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1549,11 +1515,6 @@
 
 .method public reloadPointerIcon(IIILandroid/graphics/Point;I)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/graphics/Point;
-    .param p5    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1632,11 +1593,6 @@
 
 .method public reloadPointerIconForBitmap(IILandroid/graphics/Bitmap;Landroid/graphics/Point;I)I
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/graphics/Bitmap;
-    .param p4    # Landroid/graphics/Point;
-    .param p5    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1738,7 +1694,6 @@
 
 .method public removeHoveringSpenCustomIcon(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1790,8 +1745,6 @@
 
 .method public removeKeyboardLayoutForInputDevice(Ljava/lang/String;Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1845,7 +1798,6 @@
 
 .method public removeMouseCustomIcon(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1897,8 +1849,6 @@
 
 .method public setCurrentKeyboardLayoutForInputDevice(Ljava/lang/String;Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1952,7 +1902,6 @@
 
 .method public setDoNotUseVelocity(Z)I
     .locals 6
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2015,7 +1964,6 @@
 
 .method public setFlipCoverTouchEnabled(Z)V
     .locals 5
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2074,7 +2022,6 @@
 
 .method public setLedState(Z)I
     .locals 6
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2137,8 +2084,6 @@
 
 .method public setMonitorChannelFilter(Landroid/view/InputChannel;I)V
     .locals 5
-    .param p1    # Landroid/view/InputChannel;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2211,10 +2156,6 @@
 
 .method public setPointerBounds(FFFF)V
     .locals 5
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2272,7 +2213,6 @@
 
 .method public setStartedShutdown(Z)V
     .locals 5
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2331,9 +2271,6 @@
 
 .method public setWakeKeyDynamically(Ljava/lang/String;ZLjava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2396,7 +2333,6 @@
 
 .method public tryPointerSpeed(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2448,10 +2384,6 @@
 
 .method public vibrate(I[JILandroid/os/IBinder;)V
     .locals 5
-    .param p1    # I
-    .param p2    # [J
-    .param p3    # I
-    .param p4    # Landroid/os/IBinder;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

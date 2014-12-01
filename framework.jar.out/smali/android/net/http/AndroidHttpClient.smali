@@ -78,8 +78,6 @@
 
 .method private constructor <init>(Lorg/apache/http/conn/ClientConnectionManager;Lorg/apache/http/params/HttpParams;)V
     .locals 2
-    .param p1    # Lorg/apache/http/conn/ClientConnectionManager;
-    .param p2    # Lorg/apache/http/params/HttpParams;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -110,7 +108,6 @@
 
 .method static synthetic access$300(Landroid/net/http/AndroidHttpClient;)Landroid/net/http/AndroidHttpClient$LoggingConfiguration;
     .locals 1
-    .param p0    # Landroid/net/http/AndroidHttpClient;
 
     iget-object v0, p0, Landroid/net/http/AndroidHttpClient;->curlConfiguration:Landroid/net/http/AndroidHttpClient$LoggingConfiguration;
 
@@ -119,8 +116,6 @@
 
 .method static synthetic access$500(Lorg/apache/http/client/methods/HttpUriRequest;Z)Ljava/lang/String;
     .locals 1
-    .param p0    # Lorg/apache/http/client/methods/HttpUriRequest;
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -136,7 +131,6 @@
 
 .method public static getAppNameByPID(I)Ljava/lang/String;
     .locals 8
-    .param p0    # I
 
     new-instance v0, Ljava/io/File;
 
@@ -319,8 +313,6 @@
 
 .method public static getCompressedEntity([BLandroid/content/ContentResolver;)Lorg/apache/http/entity/AbstractHttpEntity;
     .locals 7
-    .param p0    # [B
-    .param p1    # Landroid/content/ContentResolver;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -376,7 +368,6 @@
 
 .method public static getMinGzipSize(Landroid/content/ContentResolver;)J
     .locals 2
-    .param p0    # Landroid/content/ContentResolver;
 
     sget-wide v0, Landroid/net/http/AndroidHttpClient;->DEFAULT_SYNC_MIN_GZIP_BYTES:J
 
@@ -385,7 +376,6 @@
 
 .method public static getUngzippedContent(Lorg/apache/http/HttpEntity;)Ljava/io/InputStream;
     .locals 5
-    .param p0    # Lorg/apache/http/HttpEntity;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -448,7 +438,6 @@
 
 .method private static isBinaryContent(Lorg/apache/http/client/methods/HttpUriRequest;)Z
     .locals 12
-    .param p0    # Lorg/apache/http/client/methods/HttpUriRequest;
 
     const/4 v9, 0x1
 
@@ -653,7 +642,6 @@
 
 .method public static modifyRequestToAcceptGzipResponse(Lorg/apache/http/HttpRequest;)V
     .locals 2
-    .param p0    # Lorg/apache/http/HttpRequest;
 
     const-string v0, "Accept-Encoding"
 
@@ -666,7 +654,6 @@
 
 .method public static newInstance(Ljava/lang/String;)Landroid/net/http/AndroidHttpClient;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -679,8 +666,6 @@
 
 .method public static newInstance(Ljava/lang/String;Landroid/content/Context;)Landroid/net/http/AndroidHttpClient;
     .locals 9
-    .param p0    # Ljava/lang/String;
-    .param p1    # Landroid/content/Context;
 
     const/4 v5, 0x0
 
@@ -761,9 +746,6 @@
 
 .method public static newInstance(Ljava/lang/String;Landroid/content/Context;[Ljavax/net/ssl/KeyManager;)Landroid/net/http/AndroidHttpClient;
     .locals 9
-    .param p0    # Ljava/lang/String;
-    .param p1    # Landroid/content/Context;
-    .param p2    # [Ljavax/net/ssl/KeyManager;
 
     const/4 v5, 0x0
 
@@ -844,7 +826,6 @@
 
 .method public static parseDate(Ljava/lang/String;)J
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/android/internal/http/HttpDateTime;->parse(Ljava/lang/String;)J
 
@@ -855,8 +836,6 @@
 
 .method private static toCurl(Lorg/apache/http/client/methods/HttpUriRequest;Z)Ljava/lang/String;
     .locals 17
-    .param p0    # Lorg/apache/http/client/methods/HttpUriRequest;
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1149,8 +1128,6 @@
 
 .method public enableCurlLogging(Ljava/lang/String;I)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     if-nez p1, :cond_0
 
@@ -1194,8 +1171,6 @@
 
 .method public execute(Lorg/apache/http/HttpHost;Lorg/apache/http/HttpRequest;Lorg/apache/http/client/ResponseHandler;)Ljava/lang/Object;
     .locals 2
-    .param p1    # Lorg/apache/http/HttpHost;
-    .param p2    # Lorg/apache/http/HttpRequest;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -1241,9 +1216,6 @@
 
 .method public execute(Lorg/apache/http/HttpHost;Lorg/apache/http/HttpRequest;Lorg/apache/http/client/ResponseHandler;Lorg/apache/http/protocol/HttpContext;)Ljava/lang/Object;
     .locals 2
-    .param p1    # Lorg/apache/http/HttpHost;
-    .param p2    # Lorg/apache/http/HttpRequest;
-    .param p4    # Lorg/apache/http/protocol/HttpContext;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -1291,7 +1263,6 @@
 
 .method public execute(Lorg/apache/http/client/methods/HttpUriRequest;Lorg/apache/http/client/ResponseHandler;)Ljava/lang/Object;
     .locals 2
-    .param p1    # Lorg/apache/http/client/methods/HttpUriRequest;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -1336,8 +1307,6 @@
 
 .method public execute(Lorg/apache/http/client/methods/HttpUriRequest;Lorg/apache/http/client/ResponseHandler;Lorg/apache/http/protocol/HttpContext;)Ljava/lang/Object;
     .locals 2
-    .param p1    # Lorg/apache/http/client/methods/HttpUriRequest;
-    .param p3    # Lorg/apache/http/protocol/HttpContext;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -1384,8 +1353,6 @@
 
 .method public execute(Lorg/apache/http/HttpHost;Lorg/apache/http/HttpRequest;)Lorg/apache/http/HttpResponse;
     .locals 2
-    .param p1    # Lorg/apache/http/HttpHost;
-    .param p2    # Lorg/apache/http/HttpRequest;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1418,9 +1385,6 @@
 
 .method public execute(Lorg/apache/http/HttpHost;Lorg/apache/http/HttpRequest;Lorg/apache/http/protocol/HttpContext;)Lorg/apache/http/HttpResponse;
     .locals 2
-    .param p1    # Lorg/apache/http/HttpHost;
-    .param p2    # Lorg/apache/http/HttpRequest;
-    .param p3    # Lorg/apache/http/protocol/HttpContext;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1453,7 +1417,6 @@
 
 .method public execute(Lorg/apache/http/client/methods/HttpUriRequest;)Lorg/apache/http/HttpResponse;
     .locals 2
-    .param p1    # Lorg/apache/http/client/methods/HttpUriRequest;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1486,8 +1449,6 @@
 
 .method public execute(Lorg/apache/http/client/methods/HttpUriRequest;Lorg/apache/http/protocol/HttpContext;)Lorg/apache/http/HttpResponse;
     .locals 2
-    .param p1    # Lorg/apache/http/client/methods/HttpUriRequest;
-    .param p2    # Lorg/apache/http/protocol/HttpContext;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

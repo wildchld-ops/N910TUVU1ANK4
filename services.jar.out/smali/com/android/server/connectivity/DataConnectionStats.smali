@@ -28,7 +28,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -59,8 +58,6 @@
 
 .method static synthetic access$002(Lcom/android/server/connectivity/DataConnectionStats;Landroid/telephony/SignalStrength;)Landroid/telephony/SignalStrength;
     .locals 0
-    .param p0    # Lcom/android/server/connectivity/DataConnectionStats;
-    .param p1    # Landroid/telephony/SignalStrength;
 
     iput-object p1, p0, Lcom/android/server/connectivity/DataConnectionStats;->mSignalStrength:Landroid/telephony/SignalStrength;
 
@@ -69,8 +66,6 @@
 
 .method static synthetic access$102(Lcom/android/server/connectivity/DataConnectionStats;Landroid/telephony/ServiceState;)Landroid/telephony/ServiceState;
     .locals 0
-    .param p0    # Lcom/android/server/connectivity/DataConnectionStats;
-    .param p1    # Landroid/telephony/ServiceState;
 
     iput-object p1, p0, Lcom/android/server/connectivity/DataConnectionStats;->mServiceState:Landroid/telephony/ServiceState;
 
@@ -79,7 +74,6 @@
 
 .method static synthetic access$200(Lcom/android/server/connectivity/DataConnectionStats;)V
     .locals 0
-    .param p0    # Lcom/android/server/connectivity/DataConnectionStats;
 
     invoke-direct {p0}, Lcom/android/server/connectivity/DataConnectionStats;->notePhoneDataConnectionState()V
 
@@ -88,8 +82,6 @@
 
 .method static synthetic access$302(Lcom/android/server/connectivity/DataConnectionStats;I)I
     .locals 0
-    .param p0    # Lcom/android/server/connectivity/DataConnectionStats;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/connectivity/DataConnectionStats;->mDataState:I
 
@@ -250,7 +242,6 @@
 
 .method private final updateSimState(Landroid/content/Intent;)V
     .locals 3
-    .param p1    # Landroid/content/Intent;
 
     const-string/jumbo v2, "ss"
 
@@ -351,8 +342,6 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 

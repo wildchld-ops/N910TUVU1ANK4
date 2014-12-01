@@ -27,7 +27,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Intent;)V
     .locals 1
-    .param p1    # Landroid/content/Intent;
 
     const/4 v0, 0x0
 
@@ -46,7 +45,6 @@
 
 .method public constructor <init>(Landroid/net/Uri;)V
     .locals 1
-    .param p1    # Landroid/net/Uri;
 
     const/4 v0, 0x0
 
@@ -65,7 +63,6 @@
 
 .method public constructor <init>(Ljava/lang/CharSequence;)V
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v0, 0x0
 
@@ -84,9 +81,6 @@
 
 .method public constructor <init>(Ljava/lang/CharSequence;Landroid/content/Intent;Landroid/net/Uri;)V
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Landroid/content/Intent;
-    .param p3    # Landroid/net/Uri;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -105,8 +99,6 @@
 
 .method public constructor <init>(Ljava/lang/CharSequence;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -125,10 +117,6 @@
 
 .method public constructor <init>(Ljava/lang/CharSequence;Ljava/lang/String;Landroid/content/Intent;Landroid/net/Uri;)V
     .locals 2
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/content/Intent;
-    .param p4    # Landroid/net/Uri;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -158,8 +146,6 @@
 
 .method private coerceToHtmlOrStyledText(Landroid/content/Context;Z)Ljava/lang/CharSequence;
     .locals 24
-    .param p1    # Landroid/content/Context;
-    .param p2    # Z
 
     move-object/from16 v0, p0
 
@@ -644,7 +630,6 @@
 
 .method private uriToHtml(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -685,7 +670,6 @@
 
 .method private uriToStyledText(Ljava/lang/String;)Ljava/lang/CharSequence;
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Landroid/text/SpannableStringBuilder;
 
@@ -714,7 +698,6 @@
 # virtual methods
 .method public coerceToHtmlText(Landroid/content/Context;)Ljava/lang/String;
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     invoke-virtual {p0}, Landroid/content/ClipData$Item;->getHtmlText()Ljava/lang/String;
 
@@ -777,7 +760,6 @@
 
 .method public coerceToStyledText(Landroid/content/Context;)Ljava/lang/CharSequence;
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     invoke-virtual {p0}, Landroid/content/ClipData$Item;->getText()Ljava/lang/CharSequence;
 
@@ -828,7 +810,6 @@
 
 .method public coerceToStyledTextForEditor(Landroid/content/Context;)Ljava/lang/CharSequence;
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     invoke-virtual {p0}, Landroid/content/ClipData$Item;->getText()Ljava/lang/CharSequence;
 
@@ -875,7 +856,6 @@
 
 .method public coerceToText(Landroid/content/Context;)Ljava/lang/CharSequence;
     .locals 13
-    .param p1    # Landroid/content/Context;
 
     invoke-virtual {p0}, Landroid/content/ClipData$Item;->getText()Ljava/lang/CharSequence;
 
@@ -1097,7 +1077,6 @@
 
 .method public toShortString(Ljava/lang/StringBuilder;)V
     .locals 6
-    .param p1    # Ljava/lang/StringBuilder;
 
     const/4 v2, 0x1
 

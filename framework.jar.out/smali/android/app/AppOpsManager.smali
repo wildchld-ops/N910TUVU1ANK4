@@ -1561,8 +1561,6 @@
 
 .method constructor <init>(Landroid/content/Context;Lcom/android/internal/app/IAppOpsService;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/internal/app/IAppOpsService;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -1589,9 +1587,6 @@
 
 .method private buildSecurityExceptionMsg(IILjava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -1634,7 +1629,6 @@
 
 .method public static getToken(Lcom/android/internal/app/IAppOpsService;)Landroid/os/IBinder;
     .locals 2
-    .param p0    # Lcom/android/internal/app/IAppOpsService;
 
     const-class v1, Landroid/app/AppOpsManager;
 
@@ -1708,7 +1702,6 @@
 
 .method public static opAllowsReset(I)Z
     .locals 1
-    .param p0    # I
 
     sget-object v0, Landroid/app/AppOpsManager;->sOpDisableReset:[Z
 
@@ -1729,8 +1722,6 @@
 
 .method public static opToDefaultMode(IZ)I
     .locals 1
-    .param p0    # I
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -1751,7 +1742,6 @@
 
 .method public static opToName(I)Ljava/lang/String;
     .locals 2
-    .param p0    # I
 
     const/4 v0, -0x1
 
@@ -1805,7 +1795,6 @@
 
 .method public static opToPermission(I)Ljava/lang/String;
     .locals 1
-    .param p0    # I
 
     sget-object v0, Landroid/app/AppOpsManager;->sOpPerms:[Ljava/lang/String;
 
@@ -1816,7 +1805,6 @@
 
 .method public static opToSwitch(I)I
     .locals 1
-    .param p0    # I
 
     sget-object v0, Landroid/app/AppOpsManager;->sOpToSwitch:[I
 
@@ -1827,7 +1815,6 @@
 
 .method private strOpToOp(Ljava/lang/String;)I
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     sget-object v1, Landroid/app/AppOpsManager;->sOpStrToOp:Ljava/util/HashMap;
 
@@ -1875,9 +1862,6 @@
 # virtual methods
 .method public checkOp(IILjava/lang/String;)I
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     :try_start_0
     iget-object v1, p0, Landroid/app/AppOpsManager;->mService:Lcom/android/internal/app/IAppOpsService;
@@ -1913,9 +1897,6 @@
 
 .method public checkOp(Ljava/lang/String;ILjava/lang/String;)I
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Landroid/app/AppOpsManager;->strOpToOp(Ljava/lang/String;)I
 
@@ -1930,9 +1911,6 @@
 
 .method public checkOpNoThrow(IILjava/lang/String;)I
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     :try_start_0
     iget-object v0, p0, Landroid/app/AppOpsManager;->mService:Lcom/android/internal/app/IAppOpsService;
@@ -1956,9 +1934,6 @@
 
 .method public checkOpNoThrow(Ljava/lang/String;ILjava/lang/String;)I
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Landroid/app/AppOpsManager;->strOpToOp(Ljava/lang/String;)I
 
@@ -1973,8 +1948,6 @@
 
 .method public checkPackage(ILjava/lang/String;)V
     .locals 4
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     :try_start_0
     iget-object v1, p0, Landroid/app/AppOpsManager;->mService:Lcom/android/internal/app/IAppOpsService;
@@ -2038,7 +2011,6 @@
 
 .method public finishOp(I)V
     .locals 2
-    .param p1    # I
 
     invoke-static {}, Landroid/os/Process;->myUid()I
 
@@ -2057,9 +2029,6 @@
 
 .method public finishOp(IILjava/lang/String;)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     :try_start_0
     iget-object v0, p0, Landroid/app/AppOpsManager;->mService:Lcom/android/internal/app/IAppOpsService;
@@ -2085,9 +2054,6 @@
 
 .method public finishOp(Ljava/lang/String;ILjava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Landroid/app/AppOpsManager;->strOpToOp(Ljava/lang/String;)I
 
@@ -2100,9 +2066,6 @@
 
 .method public getOpsForPackage(ILjava/lang/String;[I)Ljava/util/List;
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # [I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -2137,7 +2100,6 @@
 
 .method public getPackagesForOps([I)Ljava/util/List;
     .locals 1
-    .param p1    # [I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([I)",
@@ -2170,7 +2132,6 @@
 
 .method public noteOp(I)I
     .locals 2
-    .param p1    # I
 
     invoke-static {}, Landroid/os/Process;->myUid()I
 
@@ -2191,9 +2152,6 @@
 
 .method public noteOp(IILjava/lang/String;)I
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     :try_start_0
     iget-object v1, p0, Landroid/app/AppOpsManager;->mService:Lcom/android/internal/app/IAppOpsService;
@@ -2229,9 +2187,6 @@
 
 .method public noteOp(Ljava/lang/String;ILjava/lang/String;)I
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Landroid/app/AppOpsManager;->strOpToOp(Ljava/lang/String;)I
 
@@ -2246,9 +2201,6 @@
 
 .method public noteOpNoThrow(IILjava/lang/String;)I
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     :try_start_0
     iget-object v0, p0, Landroid/app/AppOpsManager;->mService:Lcom/android/internal/app/IAppOpsService;
@@ -2272,9 +2224,6 @@
 
 .method public noteOpNoThrow(Ljava/lang/String;ILjava/lang/String;)I
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Landroid/app/AppOpsManager;->strOpToOp(Ljava/lang/String;)I
 
@@ -2308,10 +2257,6 @@
 
 .method public setMode(IILjava/lang/String;I)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
 
     :try_start_0
     iget-object v0, p0, Landroid/app/AppOpsManager;->mService:Lcom/android/internal/app/IAppOpsService;
@@ -2331,7 +2276,6 @@
 
 .method public startOp(I)I
     .locals 2
-    .param p1    # I
 
     invoke-static {}, Landroid/os/Process;->myUid()I
 
@@ -2352,9 +2296,6 @@
 
 .method public startOp(IILjava/lang/String;)I
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     :try_start_0
     iget-object v1, p0, Landroid/app/AppOpsManager;->mService:Lcom/android/internal/app/IAppOpsService;
@@ -2396,9 +2337,6 @@
 
 .method public startOp(Ljava/lang/String;ILjava/lang/String;)I
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Landroid/app/AppOpsManager;->strOpToOp(Ljava/lang/String;)I
 
@@ -2413,9 +2351,6 @@
 
 .method public startOpNoThrow(IILjava/lang/String;)I
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     :try_start_0
     iget-object v0, p0, Landroid/app/AppOpsManager;->mService:Lcom/android/internal/app/IAppOpsService;
@@ -2445,9 +2380,6 @@
 
 .method public startOpNoThrow(Ljava/lang/String;ILjava/lang/String;)I
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Landroid/app/AppOpsManager;->strOpToOp(Ljava/lang/String;)I
 
@@ -2462,9 +2394,6 @@
 
 .method public startWatchingMode(ILjava/lang/String;Landroid/app/AppOpsManager$OnOpChangedListener;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/app/AppOpsManager$OnOpChangedListener;
 
     iget-object v2, p0, Landroid/app/AppOpsManager;->mModeWatchers:Landroid/util/ArrayMap;
 
@@ -2523,9 +2452,6 @@
 
 .method public startWatchingMode(Ljava/lang/String;Ljava/lang/String;Landroid/app/AppOpsManager$OnOpChangedListener;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/app/AppOpsManager$OnOpChangedListener;
 
     invoke-direct {p0, p1}, Landroid/app/AppOpsManager;->strOpToOp(Ljava/lang/String;)I
 
@@ -2538,7 +2464,6 @@
 
 .method public stopWatchingMode(Landroid/app/AppOpsManager$OnOpChangedListener;)V
     .locals 3
-    .param p1    # Landroid/app/AppOpsManager$OnOpChangedListener;
 
     iget-object v2, p0, Landroid/app/AppOpsManager;->mModeWatchers:Landroid/util/ArrayMap;
 

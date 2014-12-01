@@ -52,7 +52,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/LocationAlert;)V
     .locals 0
-    .param p0    # Lcom/android/settings/LocationAlert;
 
     invoke-direct {p0}, Lcom/android/settings/LocationAlert;->OnGps()V
 
@@ -107,7 +106,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 7
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v6, 0x1
 

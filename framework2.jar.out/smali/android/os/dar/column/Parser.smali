@@ -28,7 +28,6 @@
 # direct methods
 .method public constructor <init>(Ljava/io/InputStream;)V
     .locals 4
-    .param p1    # Ljava/io/InputStream;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

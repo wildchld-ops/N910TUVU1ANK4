@@ -142,7 +142,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     const/4 v2, 0x0
 
@@ -199,8 +198,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v2, 0x0
 
@@ -410,7 +407,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/ui/SmsViewFrame;)Lcom/android/mms/ui/MessageItem;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SmsViewFrame;
 
     iget-object v0, p0, Lcom/android/mms/ui/SmsViewFrame;->mMsgItem:Lcom/android/mms/ui/MessageItem;
 
@@ -419,7 +415,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/ui/SmsViewFrame;)Lcom/android/mms/ui/ViewTitleHeader;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SmsViewFrame;
 
     iget-object v0, p0, Lcom/android/mms/ui/SmsViewFrame;->mViewTitleHeader:Lcom/android/mms/ui/ViewTitleHeader;
 
@@ -428,7 +423,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/ui/SmsViewFrame;)Landroid/app/Activity;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SmsViewFrame;
 
     iget-object v0, p0, Lcom/android/mms/ui/SmsViewFrame;->mActivity:Landroid/app/Activity;
 
@@ -437,7 +431,6 @@
 
 .method static synthetic access$300(Lcom/android/mms/ui/SmsViewFrame;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SmsViewFrame;
 
     iget-object v0, p0, Lcom/android/mms/ui/SmsViewFrame;->mContext:Landroid/content/Context;
 
@@ -446,7 +439,6 @@
 
 .method static synthetic access$400(Lcom/android/mms/ui/SmsViewFrame;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SmsViewFrame;
 
     iget-object v0, p0, Lcom/android/mms/ui/SmsViewFrame;->mSelectedText:Ljava/lang/String;
 
@@ -455,8 +447,6 @@
 
 .method static synthetic access$402(Lcom/android/mms/ui/SmsViewFrame;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/SmsViewFrame;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/mms/ui/SmsViewFrame;->mSelectedText:Ljava/lang/String;
 
@@ -465,7 +455,6 @@
 
 .method static synthetic access$500(Lcom/android/mms/ui/SmsViewFrame;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SmsViewFrame;
 
     iget-object v0, p0, Lcom/android/mms/ui/SmsViewFrame;->mSelectedUrl:Ljava/lang/String;
 
@@ -474,8 +463,6 @@
 
 .method static synthetic access$502(Lcom/android/mms/ui/SmsViewFrame;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/SmsViewFrame;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/mms/ui/SmsViewFrame;->mSelectedUrl:Ljava/lang/String;
 
@@ -484,7 +471,6 @@
 
 .method static synthetic access$600(Lcom/android/mms/ui/SmsViewFrame;)Landroid/text/style/ForegroundColorSpan;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SmsViewFrame;
 
     iget-object v0, p0, Lcom/android/mms/ui/SmsViewFrame;->mSelectedUrlSpan:Landroid/text/style/ForegroundColorSpan;
 
@@ -493,9 +479,6 @@
 
 .method private static confirmDeleteDialog(Landroid/content/Context;Lcom/android/mms/ui/SmsViewFrame$DeleteMessageListener;Z)V
     .locals 7
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/mms/ui/SmsViewFrame$DeleteMessageListener;
-    .param p2    # Z
 
     const/4 v6, 0x0
 
@@ -1202,9 +1185,6 @@
 
 .method private getCachedMessageItem(Landroid/net/Uri;JLjava/lang/String;)Lcom/android/mms/ui/MessageItem;
     .locals 11
-    .param p1    # Landroid/net/Uri;
-    .param p2    # J
-    .param p4    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -1379,9 +1359,6 @@
 
 .method private getCachedMessageItemMmsNoti(Landroid/net/Uri;JLjava/lang/String;)Lcom/android/mms/ui/MessageItem;
     .locals 11
-    .param p1    # Landroid/net/Uri;
-    .param p2    # J
-    .param p4    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -1533,9 +1510,6 @@
 
 .method private getCachedMessageItemWpm(Landroid/net/Uri;JLjava/lang/String;)Lcom/android/mms/ui/MessageItem;
     .locals 11
-    .param p1    # Landroid/net/Uri;
-    .param p2    # J
-    .param p4    # Ljava/lang/String;
 
     const-string v1, "SmsViewFrame"
 
@@ -1824,10 +1798,6 @@
 
 .method private static getNotificationText(Landroid/content/Context;Landroid/database/Cursor;Ljava/lang/String;Lcom/android/mms/ui/MessageItem;)Ljava/lang/String;
     .locals 15
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/database/Cursor;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/android/mms/ui/MessageItem;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -2331,7 +2301,6 @@
 
 .method private makeOutgoingCall(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -2555,7 +2524,6 @@
 
 .method private declared-synchronized setIntent(Landroid/content/Intent;)V
     .locals 2
-    .param p1    # Landroid/content/Intent;
 
     monitor-enter p0
 
@@ -2607,7 +2575,6 @@
 
 .method public dispatchTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 11
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v7, 0x0
 
@@ -2934,9 +2901,6 @@
 
 .method protected onActivityResult(IILandroid/content/Intent;)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     iget v2, p0, Lcom/android/mms/ui/SmsViewFrame;->MY_DATA_CHECK_CODE:I
 
@@ -2995,9 +2959,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;Landroid/content/Intent;Z)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
-    .param p2    # Landroid/content/Intent;
-    .param p3    # Z
 
     const/4 v4, 0x1
 
@@ -3206,7 +3167,6 @@
 
 .method public onDown(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v0, 0x0
 
@@ -3215,7 +3175,6 @@
 
 .method public onInit(I)V
     .locals 6
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/mms/ui/SmsViewFrame;->mTts:Landroid/speech/tts/TextToSpeech;
 
@@ -3319,8 +3278,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x1
 
@@ -3404,8 +3361,6 @@
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v2, 0x0
 
@@ -3503,7 +3458,6 @@
 
 .method public onNewIntent(Landroid/content/Intent;)V
     .locals 0
-    .param p1    # Landroid/content/Intent;
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/SmsViewFrame;->setIntent(Landroid/content/Intent;)V
 
@@ -3516,7 +3470,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 10
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v6, 0x0
 
@@ -3776,7 +3729,6 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)Z
     .locals 3
-    .param p1    # Landroid/view/Menu;
 
     const/4 v2, 0x0
 
@@ -4103,7 +4055,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 5
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v3, 0x1
 
@@ -4146,7 +4097,6 @@
 
 .method public setActivity(Landroid/app/Activity;)V
     .locals 2
-    .param p1    # Landroid/app/Activity;
 
     const-string v0, "Mms/SmsViewFrame"
 
@@ -4161,7 +4111,6 @@
 
 .method public setOnCloseListener(Lcom/android/mms/ui/OnEventListener;)V
     .locals 0
-    .param p1    # Lcom/android/mms/ui/OnEventListener;
 
     iput-object p1, p0, Lcom/android/mms/ui/SmsViewFrame;->mOnCloseListener:Lcom/android/mms/ui/OnEventListener;
 

@@ -27,8 +27,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -90,8 +88,6 @@
 
 .method private generateFilename(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 18
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     new-instance v4, Ljava/io/File;
 
@@ -394,8 +390,6 @@
 
 .method public write(Ljava/lang/String;Ljava/lang/String;)V
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v8, 0x5
 

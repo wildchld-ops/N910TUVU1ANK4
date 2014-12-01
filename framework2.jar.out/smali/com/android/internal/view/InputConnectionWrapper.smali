@@ -25,7 +25,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/internal/view/IInputContext;)V
     .locals 0
-    .param p1    # Lcom/android/internal/view/IInputContext;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -61,7 +60,6 @@
 
 .method public clearMetaKeyStates(I)Z
     .locals 2
-    .param p1    # I
 
     :try_start_0
     iget-object v1, p0, Lcom/android/internal/view/InputConnectionWrapper;->mIInputContext:Lcom/android/internal/view/IInputContext;
@@ -85,7 +83,6 @@
 
 .method public commitCompletion(Landroid/view/inputmethod/CompletionInfo;)Z
     .locals 2
-    .param p1    # Landroid/view/inputmethod/CompletionInfo;
 
     :try_start_0
     iget-object v1, p0, Lcom/android/internal/view/InputConnectionWrapper;->mIInputContext:Lcom/android/internal/view/IInputContext;
@@ -109,7 +106,6 @@
 
 .method public commitCorrection(Landroid/view/inputmethod/CorrectionInfo;)Z
     .locals 2
-    .param p1    # Landroid/view/inputmethod/CorrectionInfo;
 
     :try_start_0
     iget-object v1, p0, Lcom/android/internal/view/InputConnectionWrapper;->mIInputContext:Lcom/android/internal/view/IInputContext;
@@ -133,8 +129,6 @@
 
 .method public commitText(Ljava/lang/CharSequence;I)Z
     .locals 2
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
 
     :try_start_0
     iget-object v1, p0, Lcom/android/internal/view/InputConnectionWrapper;->mIInputContext:Lcom/android/internal/view/IInputContext;
@@ -158,8 +152,6 @@
 
 .method public deleteSurroundingText(II)Z
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     :try_start_0
     iget-object v1, p0, Lcom/android/internal/view/InputConnectionWrapper;->mIInputContext:Lcom/android/internal/view/IInputContext;
@@ -229,7 +221,6 @@
 
 .method public getCursorCapsMode(I)I
     .locals 5
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -297,8 +288,6 @@
 
 .method public getExtractedText(Landroid/view/inputmethod/ExtractedTextRequest;I)Landroid/view/inputmethod/ExtractedText;
     .locals 5
-    .param p1    # Landroid/view/inputmethod/ExtractedTextRequest;
-    .param p2    # I
 
     const/4 v2, 0x0
 
@@ -366,7 +355,6 @@
 
 .method public getSelectedText(I)Ljava/lang/CharSequence;
     .locals 5
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -434,8 +422,6 @@
 
 .method public getTextAfterCursor(II)Ljava/lang/CharSequence;
     .locals 5
-    .param p1    # I
-    .param p2    # I
 
     const/4 v2, 0x0
 
@@ -503,8 +489,6 @@
 
 .method public getTextBeforeCursor(II)Ljava/lang/CharSequence;
     .locals 5
-    .param p1    # I
-    .param p2    # I
 
     const/4 v2, 0x0
 
@@ -572,7 +556,6 @@
 
 .method public performContextMenuAction(I)Z
     .locals 2
-    .param p1    # I
 
     :try_start_0
     iget-object v1, p0, Lcom/android/internal/view/InputConnectionWrapper;->mIInputContext:Lcom/android/internal/view/IInputContext;
@@ -596,7 +579,6 @@
 
 .method public performEditorAction(I)Z
     .locals 2
-    .param p1    # I
 
     :try_start_0
     iget-object v1, p0, Lcom/android/internal/view/InputConnectionWrapper;->mIInputContext:Lcom/android/internal/view/IInputContext;
@@ -620,8 +602,6 @@
 
 .method public performPrivateCommand(Ljava/lang/String;Landroid/os/Bundle;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Bundle;
 
     :try_start_0
     iget-object v1, p0, Lcom/android/internal/view/InputConnectionWrapper;->mIInputContext:Lcom/android/internal/view/IInputContext;
@@ -645,7 +625,6 @@
 
 .method public reportFullscreenMode(Z)Z
     .locals 2
-    .param p1    # Z
 
     :try_start_0
     iget-object v1, p0, Lcom/android/internal/view/InputConnectionWrapper;->mIInputContext:Lcom/android/internal/view/IInputContext;
@@ -669,7 +648,6 @@
 
 .method public sendKeyEvent(Landroid/view/KeyEvent;)Z
     .locals 2
-    .param p1    # Landroid/view/KeyEvent;
 
     :try_start_0
     iget-object v1, p0, Lcom/android/internal/view/InputConnectionWrapper;->mIInputContext:Lcom/android/internal/view/IInputContext;
@@ -693,8 +671,6 @@
 
 .method public setComposingRegion(II)Z
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     :try_start_0
     iget-object v1, p0, Lcom/android/internal/view/InputConnectionWrapper;->mIInputContext:Lcom/android/internal/view/IInputContext;
@@ -718,8 +694,6 @@
 
 .method public setComposingText(Ljava/lang/CharSequence;I)Z
     .locals 2
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
 
     :try_start_0
     iget-object v1, p0, Lcom/android/internal/view/InputConnectionWrapper;->mIInputContext:Lcom/android/internal/view/IInputContext;
@@ -743,8 +717,6 @@
 
 .method public setSelection(II)Z
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     :try_start_0
     iget-object v1, p0, Lcom/android/internal/view/InputConnectionWrapper;->mIInputContext:Lcom/android/internal/view/IInputContext;

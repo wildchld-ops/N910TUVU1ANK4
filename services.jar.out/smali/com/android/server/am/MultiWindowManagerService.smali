@@ -286,8 +286,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Lcom/android/server/am/ActivityManagerService;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/server/am/ActivityManagerService;
 
     const/4 v5, -0x1
 
@@ -518,7 +516,6 @@
 
 .method static synthetic access$000(Lcom/android/server/am/MultiWindowManagerService;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/server/am/MultiWindowManagerService;
 
     iget-object v0, p0, Lcom/android/server/am/MultiWindowManagerService;->mCurrMovements:Ljava/util/ArrayList;
 
@@ -527,7 +524,6 @@
 
 .method static synthetic access$100(Lcom/android/server/am/MultiWindowManagerService;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/server/am/MultiWindowManagerService;
 
     iget-object v0, p0, Lcom/android/server/am/MultiWindowManagerService;->mMovements:Ljava/util/ArrayList;
 
@@ -536,7 +532,6 @@
 
 .method static synthetic access$200(Lcom/android/server/am/MultiWindowManagerService;)I
     .locals 1
-    .param p0    # Lcom/android/server/am/MultiWindowManagerService;
 
     iget v0, p0, Lcom/android/server/am/MultiWindowManagerService;->mShiftX:I
 
@@ -545,7 +540,6 @@
 
 .method static synthetic access$300(Lcom/android/server/am/MultiWindowManagerService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/am/MultiWindowManagerService;
 
     iget-boolean v0, p0, Lcom/android/server/am/MultiWindowManagerService;->mIsTouchDown:Z
 
@@ -554,7 +548,6 @@
 
 .method static synthetic access$400(Lcom/android/server/am/MultiWindowManagerService;)I
     .locals 1
-    .param p0    # Lcom/android/server/am/MultiWindowManagerService;
 
     iget v0, p0, Lcom/android/server/am/MultiWindowManagerService;->mShiftXArrange:I
 
@@ -563,8 +556,6 @@
 
 .method static synthetic access$502(Lcom/android/server/am/MultiWindowManagerService;I)I
     .locals 0
-    .param p0    # Lcom/android/server/am/MultiWindowManagerService;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/am/MultiWindowManagerService;->mMinimizeIconState:I
 
@@ -573,8 +564,6 @@
 
 .method static synthetic access$600(Lcom/android/server/am/MultiWindowManagerService;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/server/am/MultiWindowManagerService;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/am/MultiWindowManagerService;->minimizeAll(Ljava/lang/String;)V
 
@@ -583,7 +572,6 @@
 
 .method static synthetic access$700(Lcom/android/server/am/MultiWindowManagerService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/am/MultiWindowManagerService;
 
     iget-boolean v0, p0, Lcom/android/server/am/MultiWindowManagerService;->mIsMultiDisplay:Z
 
@@ -592,7 +580,6 @@
 
 .method static synthetic access$800(Lcom/android/server/am/MultiWindowManagerService;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/server/am/MultiWindowManagerService;
 
     iget-object v0, p0, Lcom/android/server/am/MultiWindowManagerService;->mContext:Landroid/content/Context;
 
@@ -601,8 +588,6 @@
 
 .method private addMinimizeCallback(Landroid/os/IBinder;Landroid/os/IBinder;)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Landroid/os/IBinder;
 
     iget-object v2, p0, Lcom/android/server/am/MultiWindowManagerService;->mMinimizeCallbacks:Ljava/util/ArrayList;
 
@@ -650,7 +635,6 @@
 
 .method private applyCenterBarDocking(Landroid/graphics/Point;)V
     .locals 6
-    .param p1    # Landroid/graphics/Point;
 
     iget-object v3, p0, Lcom/android/server/am/MultiWindowManagerService;->mContext:Landroid/content/Context;
 
@@ -827,8 +811,6 @@
 
 .method private calculateCascadeWindowPosition(Landroid/graphics/Rect;Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/graphics/Rect;
-    .param p2    # Landroid/os/Bundle;
 
     if-eqz p2, :cond_2
 
@@ -928,9 +910,6 @@
 
 .method private calculateCascadeWindowSize(Lcom/android/server/am/ActivityRecord;Lcom/android/server/am/ActivityRecord;Z)Landroid/graphics/Rect;
     .locals 10
-    .param p1    # Lcom/android/server/am/ActivityRecord;
-    .param p2    # Lcom/android/server/am/ActivityRecord;
-    .param p3    # Z
 
     iget v4, p0, Lcom/android/server/am/MultiWindowManagerService;->mWindowDefWidth:I
 
@@ -1059,9 +1038,6 @@
 
 .method private calculateRotatedPosition(ILandroid/os/Bundle;Landroid/graphics/Point;)V
     .locals 17
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
-    .param p3    # Landroid/graphics/Point;
 
     const-string v13, "android.intent.extra.WINDOW_LAST_SIZE"
 
@@ -1337,7 +1313,6 @@
 
 .method private calculateToolkitWindowSize(I)Landroid/graphics/Rect;
     .locals 6
-    .param p1    # I
 
     new-instance v0, Landroid/graphics/Rect;
 
@@ -1454,7 +1429,6 @@
 
 .method private handleTouchDown(Landroid/view/MotionEvent;)V
     .locals 2
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getRawX()F
 
@@ -1483,7 +1457,6 @@
 
 .method private handleTouchMove(Landroid/view/MotionEvent;)V
     .locals 6
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getRawX()F
 
@@ -1574,7 +1547,6 @@
 
 .method private handleTouchUp(Landroid/view/MotionEvent;)V
     .locals 4
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v2, 0x0
 
@@ -1669,7 +1641,6 @@
 
 .method private initMinimizeInfo(Landroid/os/IBinder;)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
 
     const/4 v4, 0x0
 
@@ -1710,14 +1681,12 @@
 
 .method private minimizeAll(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method private removeMinimizeCallback(Landroid/os/IBinder;)V
     .locals 4
-    .param p1    # Landroid/os/IBinder;
 
     iget-object v2, p0, Lcom/android/server/am/MultiWindowManagerService;->mMinimizeCallbacks:Ljava/util/ArrayList;
 
@@ -2009,7 +1978,6 @@
 # virtual methods
 .method public addWindowInfo(Lcom/android/server/am/ActivityRecord;Ljava/util/ArrayList;)V
     .locals 9
-    .param p1    # Lcom/android/server/am/ActivityRecord;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2071,15 +2039,12 @@
 
 .method public applyMultiInstanceStyle(Lcom/android/server/am/ActivityRecord;)V
     .locals 0
-    .param p1    # Lcom/android/server/am/ActivityRecord;
 
     return-void
 .end method
 
 .method public applyMultiWindowLaunchStyle(Lcom/android/server/am/ActivityRecord;Lcom/android/server/am/ActivityRecord;)V
     .locals 0
-    .param p1    # Lcom/android/server/am/ActivityRecord;
-    .param p2    # Lcom/android/server/am/ActivityRecord;
 
     return-void
 .end method
@@ -2092,8 +2057,6 @@
 
 .method public arrangeToolkitWindowInfos(IILjava/util/ArrayList;)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II",
@@ -2113,8 +2076,6 @@
 
 .method public arrangeWindowInfo(ILandroid/os/Bundle;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     iget-object v3, p0, Lcom/android/server/am/MultiWindowManagerService;->mLock:Ljava/lang/Object;
 
@@ -2187,8 +2148,6 @@
 
 .method public arrangeWindowInfos(IILjava/util/ArrayList;)V
     .locals 8
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II",
@@ -2253,7 +2212,6 @@
 
 .method public calculateCenterbarPoint(Lcom/android/server/am/ActivityRecord;)Landroid/graphics/Point;
     .locals 1
-    .param p1    # Lcom/android/server/am/ActivityRecord;
 
     const/4 v0, 0x0
 
@@ -2264,7 +2222,6 @@
 
 .method public calculateSplitWindowSize(I)Landroid/graphics/Rect;
     .locals 7
-    .param p1    # I
 
     const/high16 v6, 0x3f000000
 
@@ -2475,7 +2432,6 @@
 
 .method public checkCenterBarRect(Landroid/graphics/Rect;)Landroid/graphics/Rect;
     .locals 1
-    .param p1    # Landroid/graphics/Rect;
 
     const/4 v0, 0x0
 
@@ -2484,7 +2440,6 @@
 
 .method public checkIdleStateNow(Ljava/util/ArrayList;Lcom/android/server/am/ActivityRecord;)Z
     .locals 4
-    .param p2    # Lcom/android/server/am/ActivityRecord;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2542,7 +2497,6 @@
 
 .method public checkWindowInfos(Ljava/util/ArrayList;Landroid/graphics/Rect;)Landroid/graphics/Rect;
     .locals 11
-    .param p2    # Landroid/graphics/Rect;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2647,8 +2601,6 @@
 
 .method public dispatchMinimizeEvent(Landroid/os/IBinder;Landroid/view/MotionEvent;)V
     .locals 1
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Landroid/view/MotionEvent;
 
     invoke-virtual {p2}, Landroid/view/MotionEvent;->getAction()I
 
@@ -2688,9 +2640,6 @@
 
 .method public dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 13
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     iget-object v10, p0, Lcom/android/server/am/MultiWindowManagerService;->mContext:Landroid/content/Context;
 
@@ -3116,11 +3065,6 @@
 
 .method public findDockingWindowZone(IIIII)I
     .locals 21
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-direct/range {p0 .. p0}, Lcom/android/server/am/MultiWindowManagerService;->updateWindowRects()V
 
@@ -3863,9 +3807,6 @@
 
 .method public getDefaultWindowInfoLocked(Landroid/content/pm/ActivityInfo;Landroid/content/Intent;Landroid/os/Bundle;)Landroid/os/Bundle;
     .locals 26
-    .param p1    # Landroid/content/pm/ActivityInfo;
-    .param p2    # Landroid/content/Intent;
-    .param p3    # Landroid/os/Bundle;
 
     const/4 v6, 0x0
 
@@ -4317,7 +4258,6 @@
 
 .method public getNextSplitZone(Ljava/util/ArrayList;Lcom/android/server/am/ActivityRecord;)I
     .locals 6
-    .param p2    # Lcom/android/server/am/ActivityRecord;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -4439,8 +4379,6 @@
 
 .method public getRunningTaskCnt(Lcom/android/server/am/ActivityRecord;Lcom/android/server/am/TaskRecord;)I
     .locals 6
-    .param p1    # Lcom/android/server/am/ActivityRecord;
-    .param p2    # Lcom/android/server/am/TaskRecord;
 
     const/4 v0, 0x0
 
@@ -4541,8 +4479,6 @@
 
 .method public getWindowInfo(ILandroid/content/ComponentName;)Landroid/os/Bundle;
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
 
     iget-object v4, p0, Lcom/android/server/am/MultiWindowManagerService;->mLock:Ljava/lang/Object;
 
@@ -4660,7 +4596,6 @@
 
 .method public handleDisplayRemoved(I)V
     .locals 4
-    .param p1    # I
 
     const/4 v0, -0x1
 
@@ -4851,7 +4786,6 @@
 
 .method public isEmptyZone(Ljava/util/List;I)Z
     .locals 1
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -4869,7 +4803,6 @@
 
 .method public isFixedRatioApp(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -4878,7 +4811,6 @@
 
 .method public isSupporMultiInstance(Landroid/content/pm/ActivityInfo;)Z
     .locals 3
-    .param p1    # Landroid/content/pm/ActivityInfo;
 
     const/4 v0, 0x0
 
@@ -4931,7 +4863,6 @@
 
 .method public isSupportApp(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/server/am/MultiWindowManagerService;->mSupportAppList:Ljava/util/ArrayList;
 
@@ -4963,7 +4894,6 @@
 
 .method public isSupportMultiWindow(Landroid/content/pm/ActivityInfo;)Z
     .locals 2
-    .param p1    # Landroid/content/pm/ActivityInfo;
 
     if-eqz p1, :cond_1
 
@@ -5035,7 +4965,6 @@
 
 .method public isSupportPopup(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "com.sec.android.app.popupuireceiver"
 
@@ -5075,7 +5004,6 @@
 
 .method public isSupportPopupApp(Landroid/content/pm/ActivityInfo;)Z
     .locals 3
-    .param p1    # Landroid/content/pm/ActivityInfo;
 
     const/4 v0, 0x0
 
@@ -5115,7 +5043,6 @@
 
 .method public isSupportScaleApp(Landroid/content/pm/ActivityInfo;)Z
     .locals 5
-    .param p1    # Landroid/content/pm/ActivityInfo;
 
     const/4 v2, 0x0
 
@@ -5209,7 +5136,6 @@
 
 .method public launchExternalDisplay(Z)V
     .locals 2
-    .param p1    # Z
 
     invoke-static {}, Landroid/os/Binder;->clearCallingIdentity()J
 
@@ -5638,8 +5564,6 @@
 
 .method public notifyMultiDisplayState(ZZ)Z
     .locals 3
-    .param p1    # Z
-    .param p2    # Z
 
     iget-boolean v0, p0, Lcom/android/server/am/MultiWindowManagerService;->mIsMultiDisplay:Z
 
@@ -5693,9 +5617,6 @@
 
 .method public registerCallback(Landroid/os/IBinder;ILandroid/os/IBinder;)Z
     .locals 6
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # I
-    .param p3    # Landroid/os/IBinder;
 
     const/4 v4, 0x1
 
@@ -5767,7 +5688,6 @@
 
 .method public removeWindowInfo(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/server/am/MultiWindowManagerService;->mLock:Ljava/lang/Object;
 
@@ -5798,7 +5718,6 @@
 
 .method public removeWindowInfoByComponent(Landroid/content/ComponentName;)V
     .locals 2
-    .param p1    # Landroid/content/ComponentName;
 
     iget-object v1, p0, Lcom/android/server/am/MultiWindowManagerService;->mLock:Ljava/lang/Object;
 
@@ -5825,7 +5744,6 @@
 
 .method public rotateCenterBar(I)V
     .locals 3
-    .param p1    # I
 
     iget v1, p0, Lcom/android/server/am/MultiWindowManagerService;->mCenterBarDirection:I
 
@@ -5883,7 +5801,6 @@
 
 .method public setAppListPosition(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/am/MultiWindowManagerService;->mAppListPosition:I
 
@@ -5892,7 +5809,6 @@
 
 .method public setCenterBarDirection(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/am/MultiWindowManagerService;->mCenterBarDirection:I
 
@@ -5901,7 +5817,6 @@
 
 .method public setCenterBarPoint(Landroid/graphics/Point;)V
     .locals 2
-    .param p1    # Landroid/graphics/Point;
 
     iget-object v1, p0, Lcom/android/server/am/MultiWindowManagerService;->mLock:Ljava/lang/Object;
 
@@ -5964,7 +5879,6 @@
 
 .method public setMultiDisplayState(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v1, p0, Lcom/android/server/am/MultiWindowManagerService;->mLock:Ljava/lang/Object;
 
@@ -5989,7 +5903,6 @@
 
 .method public setMultiDisplayTarget(I)Z
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/server/am/MultiWindowManagerService;->mLock:Ljava/lang/Object;
 
@@ -6016,7 +5929,6 @@
 
 .method public setToolkitRect(Landroid/graphics/Rect;)V
     .locals 3
-    .param p1    # Landroid/graphics/Rect;
 
     const/4 v1, 0x0
 
@@ -6112,7 +6024,6 @@
 
 .method public skipFullScreenCheck(Lcom/android/server/am/ActivityRecord;)Z
     .locals 1
-    .param p1    # Lcom/android/server/am/ActivityRecord;
 
     const/4 v0, 0x0
 
@@ -6188,7 +6099,6 @@
 
 .method public unRegisterCallback(Landroid/os/IBinder;)Z
     .locals 5
-    .param p1    # Landroid/os/IBinder;
 
     const/4 v3, 0x0
 
@@ -6421,8 +6331,6 @@
 
 .method public updateSplitZone(Lcom/android/server/am/ActivityRecord;Ljava/util/ArrayList;Z)V
     .locals 3
-    .param p1    # Lcom/android/server/am/ActivityRecord;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -6451,7 +6359,6 @@
 
 .method public updateSplitZoneAfterDestroy(Lcom/android/server/am/ActivityRecord;Ljava/util/List;)Z
     .locals 1
-    .param p1    # Lcom/android/server/am/ActivityRecord;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -6470,9 +6377,6 @@
 
 .method public updateWindowInfo(ILandroid/content/ComponentName;Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # Landroid/os/Bundle;
 
     iget-object v3, p0, Lcom/android/server/am/MultiWindowManagerService;->mLock:Ljava/lang/Object;
 

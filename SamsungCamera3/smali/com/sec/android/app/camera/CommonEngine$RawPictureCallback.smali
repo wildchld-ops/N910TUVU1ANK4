@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Lcom/sec/android/app/camera/CommonEngine;Lcom/sec/android/app/camera/CommonEngine$1;)V
     .locals 0
-    .param p1    # Lcom/sec/android/app/camera/CommonEngine;
-    .param p2    # Lcom/sec/android/app/camera/CommonEngine$1;
 
     invoke-direct {p0, p1}, Lcom/sec/android/app/camera/CommonEngine$RawPictureCallback;-><init>(Lcom/sec/android/app/camera/CommonEngine;)V
 
@@ -46,8 +44,6 @@
 # virtual methods
 .method public onPictureTaken([BLcom/sec/android/seccamera/SecCamera;)V
     .locals 2
-    .param p1    # [B
-    .param p2    # Lcom/sec/android/seccamera/SecCamera;
 
     const-string v0, "CommonEngine"
 

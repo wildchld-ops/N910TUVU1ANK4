@@ -89,7 +89,7 @@
     :cond_0
     iget-object v2, p0, Lcom/android/phone/CdmaVoicePrivacyCheckBoxPreference$MyHandler;->this$0:Lcom/android/phone/CdmaVoicePrivacyCheckBoxPreference;
 
-    invoke-virtual {v2, v3}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v2, v3}, Lcom/android/phone/CdmaVoicePrivacyCheckBoxPreference;->setEnabled(Z)V
 
     :goto_0
     return-void
@@ -126,11 +126,11 @@
     const/4 v2, 0x1
 
     :goto_1
-    invoke-virtual {v4, v2}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+    invoke-virtual {v4, v2}, Lcom/android/phone/CdmaVoicePrivacyCheckBoxPreference;->setChecked(Z)V
 
     iget-object v2, p0, Lcom/android/phone/CdmaVoicePrivacyCheckBoxPreference$MyHandler;->this$0:Lcom/android/phone/CdmaVoicePrivacyCheckBoxPreference;
 
-    invoke-virtual {v2}, Landroid/preference/Preference;->getContext()Landroid/content/Context;
+    invoke-virtual {v2}, Lcom/android/phone/CdmaVoicePrivacyCheckBoxPreference;->getContext()Landroid/content/Context;
 
     move-result-object v2
 
@@ -218,7 +218,7 @@
 
     const/4 v2, 0x0
 
-    invoke-virtual {p0, v2}, Landroid/os/Handler;->obtainMessage(I)Landroid/os/Message;
+    invoke-virtual {p0, v2}, Lcom/android/phone/CdmaVoicePrivacyCheckBoxPreference$MyHandler;->obtainMessage(I)Landroid/os/Message;
 
     move-result-object v2
 

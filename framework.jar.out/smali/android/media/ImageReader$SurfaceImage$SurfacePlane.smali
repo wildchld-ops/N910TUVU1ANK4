@@ -29,9 +29,6 @@
 # direct methods
 .method private constructor <init>(Landroid/media/ImageReader$SurfaceImage;III)V
     .locals 0
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iput-object p1, p0, Landroid/media/ImageReader$SurfaceImage$SurfacePlane;->this$1:Landroid/media/ImageReader$SurfaceImage;
 
@@ -48,7 +45,6 @@
 
 .method static synthetic access$900(Landroid/media/ImageReader$SurfaceImage$SurfacePlane;)V
     .locals 0
-    .param p0    # Landroid/media/ImageReader$SurfaceImage$SurfacePlane;
 
     invoke-direct {p0}, Landroid/media/ImageReader$SurfaceImage$SurfacePlane;->clearBuffer()V
 

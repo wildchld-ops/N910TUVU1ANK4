@@ -26,8 +26,6 @@
 # direct methods
 .method public constructor <init>(Landroid/filterfw/core/Filter;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Landroid/filterfw/core/Filter;
-    .param p2    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -105,8 +103,6 @@
 
 .method protected checkFrameManager(Landroid/filterfw/core/Frame;Landroid/filterfw/core/FilterContext;)V
     .locals 3
-    .param p1    # Landroid/filterfw/core/Frame;
-    .param p2    # Landroid/filterfw/core/FilterContext;
 
     invoke-virtual {p1}, Landroid/filterfw/core/Frame;->getFrameManager()Landroid/filterfw/core/FrameManager;
 
@@ -160,8 +156,6 @@
 
 .method protected checkFrameType(Landroid/filterfw/core/Frame;Z)V
     .locals 3
-    .param p1    # Landroid/filterfw/core/Frame;
-    .param p2    # Z
 
     iget-boolean v0, p0, Landroid/filterfw/core/FilterPort;->mChecksType:Z
 
@@ -406,7 +400,6 @@
 
 .method public setBlocking(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/filterfw/core/FilterPort;->mIsBlocking:Z
 
@@ -415,7 +408,6 @@
 
 .method public setChecksType(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/filterfw/core/FilterPort;->mChecksType:Z
 
@@ -427,7 +419,6 @@
 
 .method public setPortFormat(Landroid/filterfw/core/FrameFormat;)V
     .locals 0
-    .param p1    # Landroid/filterfw/core/FrameFormat;
 
     iput-object p1, p0, Landroid/filterfw/core/FilterPort;->mPortFormat:Landroid/filterfw/core/FrameFormat;
 

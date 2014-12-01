@@ -28,9 +28,6 @@
 
 .method static synthetic access$000(Landroid/view/View;Lcom/android/settings/helpdialog/TwHelpDialog;Landroid/app/Activity;)Z
     .locals 1
-    .param p0    # Landroid/view/View;
-    .param p1    # Lcom/android/settings/helpdialog/TwHelpDialog;
-    .param p2    # Landroid/app/Activity;
 
     invoke-static {p0, p1, p2}, Lcom/android/settings/guide/GuideModeHelper;->placeHandPointer(Landroid/view/View;Lcom/android/settings/helpdialog/TwHelpDialog;Landroid/app/Activity;)Z
 
@@ -41,8 +38,6 @@
 
 .method static drawActionPointerForSwitcher(Lcom/android/settings/helpdialog/TwHelpDialog;Landroid/app/Activity;)V
     .locals 5
-    .param p0    # Lcom/android/settings/helpdialog/TwHelpDialog;
-    .param p1    # Landroid/app/Activity;
 
     if-nez p0, :cond_1
 
@@ -92,8 +87,6 @@
 
 .method protected static emulateTouchOnFocusedView(Landroid/app/Activity;Lcom/android/settings/helpdialog/TwHelpDialog;)V
     .locals 17
-    .param p0    # Landroid/app/Activity;
-    .param p1    # Lcom/android/settings/helpdialog/TwHelpDialog;
 
     if-eqz p0, :cond_0
 
@@ -284,7 +277,6 @@
 
 .method static getGuideModeFromBundle(Landroid/os/Bundle;)Ljava/lang/String;
     .locals 2
-    .param p0    # Landroid/os/Bundle;
 
     const/4 v0, 0x0
 
@@ -322,8 +314,6 @@
 
 .method static getGuideModeFromIntent(Landroid/os/Bundle;Landroid/os/Bundle;)Ljava/lang/String;
     .locals 2
-    .param p0    # Landroid/os/Bundle;
-    .param p1    # Landroid/os/Bundle;
 
     if-eqz p0, :cond_1
 
@@ -351,7 +341,6 @@
 
 .method static init(Landroid/content/Context;)V
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Lcom/android/settings/Utils;->isTablet(Landroid/content/Context;)Z
 
@@ -364,7 +353,6 @@
 
 .method static isGuideCompleted(Landroid/os/Bundle;)Z
     .locals 2
-    .param p0    # Landroid/os/Bundle;
 
     const/4 v0, 0x0
 
@@ -394,7 +382,6 @@
 
 .method static isGuideModeBluetooth(Ljava/lang/String;)Z
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -416,7 +403,6 @@
 
 .method static isGuideModeWiFi(Ljava/lang/String;)Z
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -438,8 +424,6 @@
 
 .method static isInGuideMode(Landroid/os/Bundle;Landroid/os/Bundle;)Z
     .locals 2
-    .param p0    # Landroid/os/Bundle;
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v0, 0x0
 
@@ -497,9 +481,6 @@
 
 .method private static placeHandPointer(Landroid/view/View;Lcom/android/settings/helpdialog/TwHelpDialog;Landroid/app/Activity;)Z
     .locals 13
-    .param p0    # Landroid/view/View;
-    .param p1    # Lcom/android/settings/helpdialog/TwHelpDialog;
-    .param p2    # Landroid/app/Activity;
 
     const v12, 0x7f0b000b
 
@@ -668,8 +649,6 @@
 
 .method static setSettingsListEnabled(ZLandroid/app/Activity;)V
     .locals 2
-    .param p0    # Z
-    .param p1    # Landroid/app/Activity;
 
     instance-of v1, p1, Landroid/app/ListActivity;
 
@@ -705,8 +684,6 @@
 
 .method static setSettingsListFocusEnabled(ZLandroid/app/Activity;)V
     .locals 2
-    .param p0    # Z
-    .param p1    # Landroid/app/Activity;
 
     instance-of v1, p1, Landroid/app/ListActivity;
 

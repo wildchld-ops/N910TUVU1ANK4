@@ -33,7 +33,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 4
-    .param p1    # Landroid/os/Message;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$177;->this$0:Lcom/sec/android/app/camera/Camera;
 

@@ -26,7 +26,6 @@
 # direct methods
 .method constructor <init>(Landroid/media/MediaFocusControl;Landroid/os/IBinder;)V
     .locals 0
-    .param p2    # Landroid/os/IBinder;
 
     iput-object p1, p0, Landroid/media/MediaFocusControl$AudioFocusDeathHandler;->this$0:Landroid/media/MediaFocusControl;
 

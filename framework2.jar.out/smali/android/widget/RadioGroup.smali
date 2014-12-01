@@ -30,7 +30,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;)V
 
@@ -53,8 +52,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 8
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v7, 0x1
 
@@ -100,7 +97,6 @@
 
 .method static synthetic access$300(Landroid/widget/RadioGroup;)Z
     .locals 1
-    .param p0    # Landroid/widget/RadioGroup;
 
     iget-boolean v0, p0, Landroid/widget/RadioGroup;->mProtectFromCheckedChange:Z
 
@@ -109,8 +105,6 @@
 
 .method static synthetic access$302(Landroid/widget/RadioGroup;Z)Z
     .locals 0
-    .param p0    # Landroid/widget/RadioGroup;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/widget/RadioGroup;->mProtectFromCheckedChange:Z
 
@@ -119,7 +113,6 @@
 
 .method static synthetic access$400(Landroid/widget/RadioGroup;)I
     .locals 1
-    .param p0    # Landroid/widget/RadioGroup;
 
     iget v0, p0, Landroid/widget/RadioGroup;->mCheckedId:I
 
@@ -128,9 +121,6 @@
 
 .method static synthetic access$500(Landroid/widget/RadioGroup;IZ)V
     .locals 0
-    .param p0    # Landroid/widget/RadioGroup;
-    .param p1    # I
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Landroid/widget/RadioGroup;->setCheckedStateForView(IZ)V
 
@@ -139,8 +129,6 @@
 
 .method static synthetic access$600(Landroid/widget/RadioGroup;I)V
     .locals 0
-    .param p0    # Landroid/widget/RadioGroup;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/widget/RadioGroup;->setCheckedId(I)V
 
@@ -149,7 +137,6 @@
 
 .method static synthetic access$700(Landroid/widget/RadioGroup;)Landroid/widget/CompoundButton$OnCheckedChangeListener;
     .locals 1
-    .param p0    # Landroid/widget/RadioGroup;
 
     iget-object v0, p0, Landroid/widget/RadioGroup;->mChildOnCheckedChangeListener:Landroid/widget/CompoundButton$OnCheckedChangeListener;
 
@@ -182,7 +169,6 @@
 
 .method private setCheckedId(I)V
     .locals 2
-    .param p1    # I
 
     iput p1, p0, Landroid/widget/RadioGroup;->mCheckedId:I
 
@@ -202,8 +188,6 @@
 
 .method private setCheckedStateForView(IZ)V
     .locals 2
-    .param p1    # I
-    .param p2    # Z
 
     invoke-virtual {p0, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -227,9 +211,6 @@
 # virtual methods
 .method public addView(Landroid/view/View;ILandroid/view/ViewGroup$LayoutParams;)V
     .locals 4
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # Landroid/view/ViewGroup$LayoutParams;
 
     const/4 v3, 0x0
 
@@ -278,7 +259,6 @@
 
 .method public check(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v2, -0x1
 
@@ -317,7 +297,6 @@
 
 .method protected checkLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Z
     .locals 1
-    .param p1    # Landroid/view/ViewGroup$LayoutParams;
 
     instance-of v0, p1, Landroid/widget/RadioGroup$LayoutParams;
 
@@ -358,7 +337,6 @@
 
 .method public bridge synthetic generateLayoutParams(Landroid/util/AttributeSet;)Landroid/view/ViewGroup$LayoutParams;
     .locals 1
-    .param p1    # Landroid/util/AttributeSet;
 
     invoke-virtual {p0, p1}, Landroid/widget/RadioGroup;->generateLayoutParams(Landroid/util/AttributeSet;)Landroid/widget/RadioGroup$LayoutParams;
 
@@ -369,7 +347,6 @@
 
 .method public bridge synthetic generateLayoutParams(Landroid/util/AttributeSet;)Landroid/widget/LinearLayout$LayoutParams;
     .locals 1
-    .param p1    # Landroid/util/AttributeSet;
 
     invoke-virtual {p0, p1}, Landroid/widget/RadioGroup;->generateLayoutParams(Landroid/util/AttributeSet;)Landroid/widget/RadioGroup$LayoutParams;
 
@@ -380,7 +357,6 @@
 
 .method public generateLayoutParams(Landroid/util/AttributeSet;)Landroid/widget/RadioGroup$LayoutParams;
     .locals 2
-    .param p1    # Landroid/util/AttributeSet;
 
     new-instance v0, Landroid/widget/RadioGroup$LayoutParams;
 
@@ -434,7 +410,6 @@
 
 .method public onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
     .locals 1
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
 
     invoke-super {p0, p1}, Landroid/widget/LinearLayout;->onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
 
@@ -451,7 +426,6 @@
 
 .method public onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
     .locals 1
-    .param p1    # Landroid/view/accessibility/AccessibilityNodeInfo;
 
     invoke-super {p0, p1}, Landroid/widget/LinearLayout;->onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
 
@@ -468,7 +442,6 @@
 
 .method public setOnCheckedChangeListener(Landroid/widget/RadioGroup$OnCheckedChangeListener;)V
     .locals 0
-    .param p1    # Landroid/widget/RadioGroup$OnCheckedChangeListener;
 
     iput-object p1, p0, Landroid/widget/RadioGroup;->mOnCheckedChangeListener:Landroid/widget/RadioGroup$OnCheckedChangeListener;
 
@@ -477,7 +450,6 @@
 
 .method public setOnHierarchyChangeListener(Landroid/view/ViewGroup$OnHierarchyChangeListener;)V
     .locals 1
-    .param p1    # Landroid/view/ViewGroup$OnHierarchyChangeListener;
 
     iget-object v0, p0, Landroid/widget/RadioGroup;->mPassThroughListener:Landroid/widget/RadioGroup$PassThroughHierarchyChangeListener;
 

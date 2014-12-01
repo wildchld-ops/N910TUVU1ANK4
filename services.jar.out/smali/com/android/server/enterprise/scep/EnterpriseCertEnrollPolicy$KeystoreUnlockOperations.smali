@@ -48,7 +48,6 @@
 
 .method private constructor <init>(Lcom/android/server/enterprise/scep/EnterpriseCertEnrollPolicy;I)V
     .locals 3
-    .param p2    # I
 
     iput-object p1, p0, Lcom/android/server/enterprise/scep/EnterpriseCertEnrollPolicy$KeystoreUnlockOperations;->this$0:Lcom/android/server/enterprise/scep/EnterpriseCertEnrollPolicy;
 
@@ -102,8 +101,6 @@
 
 .method synthetic constructor <init>(Lcom/android/server/enterprise/scep/EnterpriseCertEnrollPolicy;Lcom/android/server/enterprise/scep/EnterpriseCertEnrollPolicy$1;)V
     .locals 0
-    .param p1    # Lcom/android/server/enterprise/scep/EnterpriseCertEnrollPolicy;
-    .param p2    # Lcom/android/server/enterprise/scep/EnterpriseCertEnrollPolicy$1;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/scep/EnterpriseCertEnrollPolicy$KeystoreUnlockOperations;-><init>(Lcom/android/server/enterprise/scep/EnterpriseCertEnrollPolicy;)V
 
@@ -114,7 +111,6 @@
 # virtual methods
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [[Ljava/lang/Integer;
 
@@ -127,7 +123,6 @@
 
 .method protected varargs doInBackground([[Ljava/lang/Integer;)Ljava/lang/Void;
     .locals 12
-    .param p1    # [[Ljava/lang/Integer;
 
     const/4 v4, 0x0
 

@@ -70,8 +70,6 @@
 
 .method static synthetic access$000(Landroid/content/res/Resources;Landroid/view/inputmethod/InputMethodInfo;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Landroid/content/res/Resources;
-    .param p1    # Landroid/view/inputmethod/InputMethodInfo;
 
     invoke-static {p0, p1}, Lcom/android/internal/inputmethod/InputMethodUtils;->getImplicitlyApplicableSubtypesLocked(Landroid/content/res/Resources;Landroid/view/inputmethod/InputMethodInfo;)Ljava/util/ArrayList;
 
@@ -90,7 +88,6 @@
 
 .method public static canAddToLastInputMethod(Landroid/view/inputmethod/InputMethodSubtype;)Z
     .locals 2
-    .param p0    # Landroid/view/inputmethod/InputMethodSubtype;
 
     const/4 v0, 0x1
 
@@ -114,9 +111,6 @@
 
 .method public static containsSubtypeOf(Landroid/view/inputmethod/InputMethodInfo;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 3
-    .param p0    # Landroid/view/inputmethod/InputMethodInfo;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p0}, Landroid/view/inputmethod/InputMethodInfo;->getSubtypeCount()I
 
@@ -181,10 +175,6 @@
 
 .method public static findLastResortApplicableSubtypeLocked(Landroid/content/res/Resources;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Z)Landroid/view/inputmethod/InputMethodSubtype;
     .locals 10
-    .param p0    # Landroid/content/res/Resources;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -393,8 +383,6 @@
 
 .method public static getDefaultEnabledImes(Landroid/content/Context;ZLjava/util/ArrayList;)Ljava/util/ArrayList;
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -491,9 +479,6 @@
 
 .method private static getEnabledInputMethodSubtypeList(Landroid/content/Context;Landroid/view/inputmethod/InputMethodInfo;Ljava/util/List;Z)Ljava/util/List;
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/view/inputmethod/InputMethodInfo;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -538,9 +523,6 @@
 
 .method public static getImeAndSubtypeDisplayName(Landroid/content/Context;Landroid/view/inputmethod/InputMethodInfo;Landroid/view/inputmethod/InputMethodSubtype;)Ljava/lang/CharSequence;
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/view/inputmethod/InputMethodInfo;
-    .param p2    # Landroid/view/inputmethod/InputMethodSubtype;
 
     invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -640,8 +622,6 @@
 
 .method private static getImplicitlyApplicableSubtypesLocked(Landroid/content/res/Resources;Landroid/view/inputmethod/InputMethodInfo;)Ljava/util/ArrayList;
     .locals 14
-    .param p0    # Landroid/content/res/Resources;
-    .param p1    # Landroid/view/inputmethod/InputMethodInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1067,8 +1047,6 @@
 
 .method public static getOverridingImplicitlyEnabledSubtypes(Landroid/view/inputmethod/InputMethodInfo;Ljava/lang/String;)Ljava/util/ArrayList;
     .locals 5
-    .param p0    # Landroid/view/inputmethod/InputMethodInfo;
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1196,8 +1174,6 @@
 
 .method public static getSubtypeIdFromHashCode(Landroid/view/inputmethod/InputMethodInfo;I)I
     .locals 4
-    .param p0    # Landroid/view/inputmethod/InputMethodInfo;
-    .param p1    # I
 
     if-eqz p0, :cond_1
 
@@ -1236,7 +1212,6 @@
 
 .method public static getSubtypes(Landroid/view/inputmethod/InputMethodInfo;)Ljava/util/ArrayList;
     .locals 4
-    .param p0    # Landroid/view/inputmethod/InputMethodInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1278,9 +1253,6 @@
 
 .method public static isDefaultEnabledIme(ZLandroid/view/inputmethod/InputMethodInfo;Landroid/content/Context;)Z
     .locals 1
-    .param p0    # Z
-    .param p1    # Landroid/view/inputmethod/InputMethodInfo;
-    .param p2    # Landroid/content/Context;
 
     invoke-static {p0, p1, p2}, Lcom/android/internal/inputmethod/InputMethodUtils;->isValidSystemDefaultIme(ZLandroid/view/inputmethod/InputMethodInfo;Landroid/content/Context;)Z
 
@@ -1308,7 +1280,6 @@
 
 .method private static isSystemAuxilialyImeThatHashAutomaticSubtype(Landroid/view/inputmethod/InputMethodInfo;)Z
     .locals 5
-    .param p0    # Landroid/view/inputmethod/InputMethodInfo;
 
     const/4 v3, 0x0
 
@@ -1360,7 +1331,6 @@
 
 .method public static isSystemIme(Landroid/view/inputmethod/InputMethodInfo;)Z
     .locals 1
-    .param p0    # Landroid/view/inputmethod/InputMethodInfo;
 
     invoke-virtual {p0}, Landroid/view/inputmethod/InputMethodInfo;->getServiceInfo()Landroid/content/pm/ServiceInfo;
 
@@ -1387,7 +1357,6 @@
 
 .method public static isSystemImeThatHasEnglishKeyboardSubtype(Landroid/view/inputmethod/InputMethodInfo;)Z
     .locals 2
-    .param p0    # Landroid/view/inputmethod/InputMethodInfo;
 
     invoke-static {p0}, Lcom/android/internal/inputmethod/InputMethodUtils;->isSystemIme(Landroid/view/inputmethod/InputMethodInfo;)Z
 
@@ -1418,8 +1387,6 @@
 
 .method public static isValidSubtypeId(Landroid/view/inputmethod/InputMethodInfo;I)Z
     .locals 2
-    .param p0    # Landroid/view/inputmethod/InputMethodInfo;
-    .param p1    # I
 
     invoke-static {p0, p1}, Lcom/android/internal/inputmethod/InputMethodUtils;->getSubtypeIdFromHashCode(Landroid/view/inputmethod/InputMethodInfo;I)I
 
@@ -1442,9 +1409,6 @@
 
 .method public static isValidSystemDefaultIme(ZLandroid/view/inputmethod/InputMethodInfo;Landroid/content/Context;)Z
     .locals 4
-    .param p0    # Z
-    .param p1    # Landroid/view/inputmethod/InputMethodInfo;
-    .param p2    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -1543,8 +1507,6 @@
 
 .method private static setDisabledUntilUsed(Landroid/content/pm/PackageManager;Ljava/lang/String;)V
     .locals 3
-    .param p0    # Landroid/content/pm/PackageManager;
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Landroid/content/pm/PackageManager;->getApplicationEnabledSetting(Ljava/lang/String;)I
 
@@ -1569,7 +1531,6 @@
 
 .method public static setNonSelectedSystemImesDisabledUntilUsed(Landroid/content/pm/PackageManager;Ljava/util/List;)V
     .locals 16
-    .param p0    # Landroid/content/pm/PackageManager;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

@@ -38,7 +38,6 @@
 # direct methods
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -69,7 +68,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/rcs/RcsOwnCapsManager;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/mms/rcs/RcsOwnCapsManager;
 
     iget-object v0, p0, Lcom/android/mms/rcs/RcsOwnCapsManager;->mContext:Landroid/content/Context;
 
@@ -78,7 +76,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/rcs/RcsOwnCapsManager;)Landroid/database/ContentObserver;
     .locals 1
-    .param p0    # Lcom/android/mms/rcs/RcsOwnCapsManager;
 
     iget-object v0, p0, Lcom/android/mms/rcs/RcsOwnCapsManager;->mFtObserver:Landroid/database/ContentObserver;
 
@@ -87,7 +84,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/rcs/RcsOwnCapsManager;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/rcs/RcsOwnCapsManager;
 
     iget-boolean v0, p0, Lcom/android/mms/rcs/RcsOwnCapsManager;->mIsEnableRcs:Z
 
@@ -96,8 +92,6 @@
 
 .method static synthetic access$202(Lcom/android/mms/rcs/RcsOwnCapsManager;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/rcs/RcsOwnCapsManager;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/rcs/RcsOwnCapsManager;->mIsEnableRcs:Z
 
@@ -106,7 +100,6 @@
 
 .method static synthetic access$300(Lcom/android/mms/rcs/RcsOwnCapsManager;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/rcs/RcsOwnCapsManager;
 
     iget-boolean v0, p0, Lcom/android/mms/rcs/RcsOwnCapsManager;->mIsLocalOffline:Z
 
@@ -115,7 +108,6 @@
 
 .method static synthetic access$400(Lcom/android/mms/rcs/RcsOwnCapsManager;)Landroid/database/ContentObserver;
     .locals 1
-    .param p0    # Lcom/android/mms/rcs/RcsOwnCapsManager;
 
     iget-object v0, p0, Lcom/android/mms/rcs/RcsOwnCapsManager;->mConfigurationChangeObserver:Landroid/database/ContentObserver;
 

@@ -45,7 +45,7 @@
 
     iget-object v1, p0, Lcom/android/phone/sip/SipEditor$3;->this$0:Lcom/android/phone/sip/SipEditor;
 
-    invoke-virtual {v1}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v1}, Lcom/android/phone/sip/SipEditor;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 

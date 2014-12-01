@@ -35,7 +35,6 @@
 # virtual methods
 .method public createService(Landroid/app/ContextImpl;)Ljava/lang/Object;
     .locals 2
-    .param p1    # Landroid/app/ContextImpl;
 
     new-instance v0, Ljava/lang/RuntimeException;
 
@@ -48,7 +47,6 @@
 
 .method public getService(Landroid/app/ContextImpl;)Ljava/lang/Object;
     .locals 5
-    .param p1    # Landroid/app/ContextImpl;
 
     iget-object v0, p1, Landroid/app/ContextImpl;->mServiceCache:Ljava/util/ArrayList;
 

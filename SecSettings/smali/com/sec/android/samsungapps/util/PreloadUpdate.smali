@@ -26,7 +26,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -93,7 +92,6 @@
 
 .method private onNotifyResult(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/samsungapps/util/PreloadUpdate;->_Handler:Landroid/os/Handler;
 
@@ -134,7 +132,6 @@
 
 .method public setListener(Lcom/sec/android/samsungapps/util/PreloadUpdate$IPreloadUpdateResultListener;)V
     .locals 0
-    .param p1    # Lcom/sec/android/samsungapps/util/PreloadUpdate$IPreloadUpdateResultListener;
 
     iput-object p1, p0, Lcom/sec/android/samsungapps/util/PreloadUpdate;->_Listener:Lcom/sec/android/samsungapps/util/PreloadUpdate$IPreloadUpdateResultListener;
 

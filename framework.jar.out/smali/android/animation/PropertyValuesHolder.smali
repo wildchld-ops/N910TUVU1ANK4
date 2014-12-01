@@ -219,7 +219,6 @@
 
 .method private constructor <init>(Landroid/util/Property;)V
     .locals 1
-    .param p1    # Landroid/util/Property;
 
     const/4 v0, 0x0
 
@@ -259,8 +258,6 @@
 
 .method synthetic constructor <init>(Landroid/util/Property;Landroid/animation/PropertyValuesHolder$1;)V
     .locals 0
-    .param p1    # Landroid/util/Property;
-    .param p2    # Landroid/animation/PropertyValuesHolder$1;
 
     invoke-direct {p0, p1}, Landroid/animation/PropertyValuesHolder;-><init>(Landroid/util/Property;)V
 
@@ -269,7 +266,6 @@
 
 .method private constructor <init>(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -300,8 +296,6 @@
 
 .method synthetic constructor <init>(Ljava/lang/String;Landroid/animation/PropertyValuesHolder$1;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/animation/PropertyValuesHolder$1;
 
     invoke-direct {p0, p1}, Landroid/animation/PropertyValuesHolder;-><init>(Ljava/lang/String;)V
 
@@ -310,9 +304,6 @@
 
 .method static synthetic access$200(Ljava/lang/Object;II)V
     .locals 0
-    .param p0    # Ljava/lang/Object;
-    .param p1    # I
-    .param p2    # I
 
     invoke-static {p0, p1, p2}, Landroid/animation/PropertyValuesHolder;->nCallIntMethod(Ljava/lang/Object;II)V
 
@@ -321,8 +312,6 @@
 
 .method static synthetic access$300(Ljava/lang/Class;Ljava/lang/String;)I
     .locals 1
-    .param p0    # Ljava/lang/Class;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p0, p1}, Landroid/animation/PropertyValuesHolder;->nGetIntMethod(Ljava/lang/Class;Ljava/lang/String;)I
 
@@ -333,9 +322,6 @@
 
 .method static synthetic access$400(Ljava/lang/Object;IF)V
     .locals 0
-    .param p0    # Ljava/lang/Object;
-    .param p1    # I
-    .param p2    # F
 
     invoke-static {p0, p1, p2}, Landroid/animation/PropertyValuesHolder;->nCallFloatMethod(Ljava/lang/Object;IF)V
 
@@ -344,8 +330,6 @@
 
 .method static synthetic access$500(Ljava/lang/Class;Ljava/lang/String;)I
     .locals 1
-    .param p0    # Ljava/lang/Class;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p0, p1}, Landroid/animation/PropertyValuesHolder;->nGetFloatMethod(Ljava/lang/Class;Ljava/lang/String;)I
 
@@ -356,8 +340,6 @@
 
 .method static getMethodName(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -413,9 +395,6 @@
 
 .method private getPropertyFunction(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/reflect/Method;
     .locals 12
-    .param p1    # Ljava/lang/Class;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/Class;
 
     const/4 v5, 0x0
 
@@ -612,7 +591,6 @@
 
 .method public static varargs ofFloat(Landroid/util/Property;[F)Landroid/animation/PropertyValuesHolder;
     .locals 1
-    .param p1    # [F
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -633,8 +611,6 @@
 
 .method public static varargs ofFloat(Ljava/lang/String;[F)Landroid/animation/PropertyValuesHolder;
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # [F
 
     new-instance v0, Landroid/animation/PropertyValuesHolder$FloatPropertyValuesHolder;
 
@@ -645,7 +621,6 @@
 
 .method public static varargs ofInt(Landroid/util/Property;[I)Landroid/animation/PropertyValuesHolder;
     .locals 1
-    .param p1    # [I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -666,8 +641,6 @@
 
 .method public static varargs ofInt(Ljava/lang/String;[I)Landroid/animation/PropertyValuesHolder;
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # [I
 
     new-instance v0, Landroid/animation/PropertyValuesHolder$IntPropertyValuesHolder;
 
@@ -678,8 +651,6 @@
 
 .method public static varargs ofKeyframe(Landroid/util/Property;[Landroid/animation/Keyframe;)Landroid/animation/PropertyValuesHolder;
     .locals 3
-    .param p0    # Landroid/util/Property;
-    .param p1    # [Landroid/animation/Keyframe;
 
     invoke-static {p1}, Landroid/animation/KeyframeSet;->ofKeyframe([Landroid/animation/Keyframe;)Landroid/animation/KeyframeSet;
 
@@ -733,8 +704,6 @@
 
 .method public static varargs ofKeyframe(Ljava/lang/String;[Landroid/animation/Keyframe;)Landroid/animation/PropertyValuesHolder;
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # [Landroid/animation/Keyframe;
 
     invoke-static {p1}, Landroid/animation/KeyframeSet;->ofKeyframe([Landroid/animation/Keyframe;)Landroid/animation/KeyframeSet;
 
@@ -788,7 +757,6 @@
 
 .method public static varargs ofObject(Landroid/util/Property;Landroid/animation/TypeEvaluator;[Ljava/lang/Object;)Landroid/animation/PropertyValuesHolder;
     .locals 1
-    .param p0    # Landroid/util/Property;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<V:",
@@ -814,9 +782,6 @@
 
 .method public static varargs ofObject(Ljava/lang/String;Landroid/animation/TypeEvaluator;[Ljava/lang/Object;)Landroid/animation/PropertyValuesHolder;
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Landroid/animation/TypeEvaluator;
-    .param p2    # [Ljava/lang/Object;
 
     new-instance v0, Landroid/animation/PropertyValuesHolder;
 
@@ -831,7 +796,6 @@
 
 .method private setupGetter(Ljava/lang/Class;)V
     .locals 3
-    .param p1    # Ljava/lang/Class;
 
     sget-object v0, Landroid/animation/PropertyValuesHolder;->sGetterPropertyMap:Ljava/util/HashMap;
 
@@ -850,9 +814,6 @@
 
 .method private setupSetterOrGetter(Ljava/lang/Class;Ljava/util/HashMap;Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/reflect/Method;
     .locals 5
-    .param p1    # Ljava/lang/Class;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/Class;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -952,8 +913,6 @@
 
 .method private setupValue(Ljava/lang/Object;Landroid/animation/Keyframe;)V
     .locals 4
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Landroid/animation/Keyframe;
 
     iget-object v2, p0, Landroid/animation/PropertyValuesHolder;->mProperty:Landroid/util/Property;
 
@@ -1035,7 +994,6 @@
 # virtual methods
 .method calculateValue(F)V
     .locals 1
-    .param p1    # F
 
     iget-object v0, p0, Landroid/animation/PropertyValuesHolder;->mKeyframeSet:Landroid/animation/KeyframeSet;
 
@@ -1173,7 +1131,6 @@
 
 .method setAnimatedValue(Ljava/lang/Object;)V
     .locals 4
-    .param p1    # Ljava/lang/Object;
 
     iget-object v1, p0, Landroid/animation/PropertyValuesHolder;->mProperty:Landroid/util/Property;
 
@@ -1245,7 +1202,6 @@
 
 .method public setEvaluator(Landroid/animation/TypeEvaluator;)V
     .locals 1
-    .param p1    # Landroid/animation/TypeEvaluator;
 
     iput-object p1, p0, Landroid/animation/PropertyValuesHolder;->mEvaluator:Landroid/animation/TypeEvaluator;
 
@@ -1258,7 +1214,6 @@
 
 .method public varargs setFloatValues([F)V
     .locals 1
-    .param p1    # [F
 
     sget-object v0, Ljava/lang/Float;->TYPE:Ljava/lang/Class;
 
@@ -1275,7 +1230,6 @@
 
 .method public varargs setIntValues([I)V
     .locals 1
-    .param p1    # [I
 
     sget-object v0, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
@@ -1292,7 +1246,6 @@
 
 .method public varargs setKeyframes([Landroid/animation/Keyframe;)V
     .locals 4
-    .param p1    # [Landroid/animation/Keyframe;
 
     array-length v2, p1
 
@@ -1339,7 +1292,6 @@
 
 .method public varargs setObjectValues([Ljava/lang/Object;)V
     .locals 1
-    .param p1    # [Ljava/lang/Object;
 
     const/4 v0, 0x0
 
@@ -1362,7 +1314,6 @@
 
 .method public setProperty(Landroid/util/Property;)V
     .locals 0
-    .param p1    # Landroid/util/Property;
 
     iput-object p1, p0, Landroid/animation/PropertyValuesHolder;->mProperty:Landroid/util/Property;
 
@@ -1371,7 +1322,6 @@
 
 .method public setPropertyName(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/animation/PropertyValuesHolder;->mPropertyName:Ljava/lang/String;
 
@@ -1380,7 +1330,6 @@
 
 .method setupEndValue(Ljava/lang/Object;)V
     .locals 2
-    .param p1    # Ljava/lang/Object;
 
     iget-object v0, p0, Landroid/animation/PropertyValuesHolder;->mKeyframeSet:Landroid/animation/KeyframeSet;
 
@@ -1409,7 +1358,6 @@
 
 .method setupSetter(Ljava/lang/Class;)V
     .locals 3
-    .param p1    # Ljava/lang/Class;
 
     sget-object v0, Landroid/animation/PropertyValuesHolder;->sSetterPropertyMap:Ljava/util/HashMap;
 
@@ -1428,7 +1376,6 @@
 
 .method setupSetterAndGetter(Ljava/lang/Object;)V
     .locals 8
-    .param p1    # Ljava/lang/Object;
 
     iget-object v5, p0, Landroid/animation/PropertyValuesHolder;->mProperty:Landroid/util/Property;
 
@@ -1633,7 +1580,6 @@
 
 .method setupStartValue(Ljava/lang/Object;)V
     .locals 2
-    .param p1    # Ljava/lang/Object;
 
     iget-object v0, p0, Landroid/animation/PropertyValuesHolder;->mKeyframeSet:Landroid/animation/KeyframeSet;
 

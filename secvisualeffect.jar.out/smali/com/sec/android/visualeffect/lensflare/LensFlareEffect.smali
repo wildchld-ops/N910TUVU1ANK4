@@ -223,7 +223,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
 
     const/16 v5, 0x1f4
 
@@ -352,8 +351,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/16 v5, 0x1f4
 
@@ -482,9 +479,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/16 v5, 0x1f4
 
@@ -613,8 +607,6 @@
 
 .method static synthetic access$002(Lcom/sec/android/visualeffect/lensflare/LensFlareEffect;F)F
     .locals 0
-    .param p0    # Lcom/sec/android/visualeffect/lensflare/LensFlareEffect;
-    .param p1    # F
 
     iput p1, p0, Lcom/sec/android/visualeffect/lensflare/LensFlareEffect;->objAnimationValue:F
 
@@ -623,7 +615,6 @@
 
 .method static synthetic access$100(Lcom/sec/android/visualeffect/lensflare/LensFlareEffect;)V
     .locals 0
-    .param p0    # Lcom/sec/android/visualeffect/lensflare/LensFlareEffect;
 
     invoke-direct {p0}, Lcom/sec/android/visualeffect/lensflare/LensFlareEffect;->animatedDragPos()V
 
@@ -632,7 +623,6 @@
 
 .method static synthetic access$1000(Lcom/sec/android/visualeffect/lensflare/LensFlareEffect;)V
     .locals 0
-    .param p0    # Lcom/sec/android/visualeffect/lensflare/LensFlareEffect;
 
     invoke-direct {p0}, Lcom/sec/android/visualeffect/lensflare/LensFlareEffect;->animatedHover()V
 
@@ -641,8 +631,6 @@
 
 .method static synthetic access$1102(Lcom/sec/android/visualeffect/lensflare/LensFlareEffect;F)F
     .locals 0
-    .param p0    # Lcom/sec/android/visualeffect/lensflare/LensFlareEffect;
-    .param p1    # F
 
     iput p1, p0, Lcom/sec/android/visualeffect/lensflare/LensFlareEffect;->hoverLightAnimationValue:F
 
@@ -651,7 +639,6 @@
 
 .method static synthetic access$1200(Lcom/sec/android/visualeffect/lensflare/LensFlareEffect;)V
     .locals 0
-    .param p0    # Lcom/sec/android/visualeffect/lensflare/LensFlareEffect;
 
     invoke-direct {p0}, Lcom/sec/android/visualeffect/lensflare/LensFlareEffect;->animatedHoverLight()V
 
@@ -660,7 +647,6 @@
 
 .method static synthetic access$1300(Lcom/sec/android/visualeffect/lensflare/LensFlareEffect;)F
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/lensflare/LensFlareEffect;
 
     iget v0, p0, Lcom/sec/android/visualeffect/lensflare/LensFlareEffect;->affordanceAnimationValue:F
 
@@ -669,8 +655,6 @@
 
 .method static synthetic access$1302(Lcom/sec/android/visualeffect/lensflare/LensFlareEffect;F)F
     .locals 0
-    .param p0    # Lcom/sec/android/visualeffect/lensflare/LensFlareEffect;
-    .param p1    # F
 
     iput p1, p0, Lcom/sec/android/visualeffect/lensflare/LensFlareEffect;->affordanceAnimationValue:F
 
@@ -679,7 +663,6 @@
 
 .method static synthetic access$1400(Lcom/sec/android/visualeffect/lensflare/LensFlareEffect;)V
     .locals 0
-    .param p0    # Lcom/sec/android/visualeffect/lensflare/LensFlareEffect;
 
     invoke-direct {p0}, Lcom/sec/android/visualeffect/lensflare/LensFlareEffect;->animatedAffordance()V
 
@@ -688,7 +671,6 @@
 
 .method static synthetic access$1500(Lcom/sec/android/visualeffect/lensflare/LensFlareEffect;)Landroid/animation/ValueAnimator;
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/lensflare/LensFlareEffect;
 
     iget-object v0, p0, Lcom/sec/android/visualeffect/lensflare/LensFlareEffect;->affordanceOnAnimator:Landroid/animation/ValueAnimator;
 
@@ -697,8 +679,6 @@
 
 .method static synthetic access$1600(Lcom/sec/android/visualeffect/lensflare/LensFlareEffect;Landroid/animation/Animator;)V
     .locals 0
-    .param p0    # Lcom/sec/android/visualeffect/lensflare/LensFlareEffect;
-    .param p1    # Landroid/animation/Animator;
 
     invoke-direct {p0, p1}, Lcom/sec/android/visualeffect/lensflare/LensFlareEffect;->cancelAnimator(Landroid/animation/Animator;)V
 
@@ -707,7 +687,6 @@
 
 .method static synthetic access$1700(Lcom/sec/android/visualeffect/lensflare/LensFlareEffect;)Landroid/animation/ValueAnimator;
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/lensflare/LensFlareEffect;
 
     iget-object v0, p0, Lcom/sec/android/visualeffect/lensflare/LensFlareEffect;->affordanceOffAnimator:Landroid/animation/ValueAnimator;
 
@@ -716,7 +695,6 @@
 
 .method static synthetic access$1800(Lcom/sec/android/visualeffect/lensflare/LensFlareEffect;)V
     .locals 0
-    .param p0    # Lcom/sec/android/visualeffect/lensflare/LensFlareEffect;
 
     invoke-direct {p0}, Lcom/sec/android/visualeffect/lensflare/LensFlareEffect;->playUnlockAffordance()V
 
@@ -725,8 +703,6 @@
 
 .method static synthetic access$1902(Lcom/sec/android/visualeffect/lensflare/LensFlareEffect;Z)Z
     .locals 0
-    .param p0    # Lcom/sec/android/visualeffect/lensflare/LensFlareEffect;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/visualeffect/lensflare/LensFlareEffect;->isPlayAffordance:Z
 
@@ -735,8 +711,6 @@
 
 .method static synthetic access$2002(Lcom/sec/android/visualeffect/lensflare/LensFlareEffect;Ljava/lang/Runnable;)Ljava/lang/Runnable;
     .locals 0
-    .param p0    # Lcom/sec/android/visualeffect/lensflare/LensFlareEffect;
-    .param p1    # Ljava/lang/Runnable;
 
     iput-object p1, p0, Lcom/sec/android/visualeffect/lensflare/LensFlareEffect;->affordanceRunnable:Ljava/lang/Runnable;
 
@@ -745,8 +719,6 @@
 
 .method static synthetic access$202(Lcom/sec/android/visualeffect/lensflare/LensFlareEffect;F)F
     .locals 0
-    .param p0    # Lcom/sec/android/visualeffect/lensflare/LensFlareEffect;
-    .param p1    # F
 
     iput p1, p0, Lcom/sec/android/visualeffect/lensflare/LensFlareEffect;->fogAnimationValue:F
 
@@ -755,7 +727,6 @@
 
 .method static synthetic access$2100(Lcom/sec/android/visualeffect/lensflare/LensFlareEffect;)V
     .locals 0
-    .param p0    # Lcom/sec/android/visualeffect/lensflare/LensFlareEffect;
 
     invoke-direct {p0}, Lcom/sec/android/visualeffect/lensflare/LensFlareEffect;->lensFlareinit()V
 
@@ -764,7 +735,6 @@
 
 .method static synthetic access$2200(Lcom/sec/android/visualeffect/lensflare/LensFlareEffect;)Landroid/media/SoundPool;
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/lensflare/LensFlareEffect;
 
     iget-object v0, p0, Lcom/sec/android/visualeffect/lensflare/LensFlareEffect;->soundpool:Landroid/media/SoundPool;
 
@@ -773,8 +743,6 @@
 
 .method static synthetic access$2202(Lcom/sec/android/visualeffect/lensflare/LensFlareEffect;Landroid/media/SoundPool;)Landroid/media/SoundPool;
     .locals 0
-    .param p0    # Lcom/sec/android/visualeffect/lensflare/LensFlareEffect;
-    .param p1    # Landroid/media/SoundPool;
 
     iput-object p1, p0, Lcom/sec/android/visualeffect/lensflare/LensFlareEffect;->soundpool:Landroid/media/SoundPool;
 
@@ -783,8 +751,6 @@
 
 .method static synthetic access$2302(Lcom/sec/android/visualeffect/lensflare/LensFlareEffect;Ljava/lang/Runnable;)Ljava/lang/Runnable;
     .locals 0
-    .param p0    # Lcom/sec/android/visualeffect/lensflare/LensFlareEffect;
-    .param p1    # Ljava/lang/Runnable;
 
     iput-object p1, p0, Lcom/sec/android/visualeffect/lensflare/LensFlareEffect;->releaseSoundRunnable:Ljava/lang/Runnable;
 
@@ -793,7 +759,6 @@
 
 .method static synthetic access$300(Lcom/sec/android/visualeffect/lensflare/LensFlareEffect;)V
     .locals 0
-    .param p0    # Lcom/sec/android/visualeffect/lensflare/LensFlareEffect;
 
     invoke-direct {p0}, Lcom/sec/android/visualeffect/lensflare/LensFlareEffect;->animatedDragAlpha()V
 
@@ -802,8 +767,6 @@
 
 .method static synthetic access$402(Lcom/sec/android/visualeffect/lensflare/LensFlareEffect;F)F
     .locals 0
-    .param p0    # Lcom/sec/android/visualeffect/lensflare/LensFlareEffect;
-    .param p1    # F
 
     iput p1, p0, Lcom/sec/android/visualeffect/lensflare/LensFlareEffect;->tapAnimationValue:F
 
@@ -812,7 +775,6 @@
 
 .method static synthetic access$500(Lcom/sec/android/visualeffect/lensflare/LensFlareEffect;)V
     .locals 0
-    .param p0    # Lcom/sec/android/visualeffect/lensflare/LensFlareEffect;
 
     invoke-direct {p0}, Lcom/sec/android/visualeffect/lensflare/LensFlareEffect;->animatedTap()V
 
@@ -821,8 +783,6 @@
 
 .method static synthetic access$602(Lcom/sec/android/visualeffect/lensflare/LensFlareEffect;F)F
     .locals 0
-    .param p0    # Lcom/sec/android/visualeffect/lensflare/LensFlareEffect;
-    .param p1    # F
 
     iput p1, p0, Lcom/sec/android/visualeffect/lensflare/LensFlareEffect;->fadeoutAnimationValue:F
 
@@ -831,7 +791,6 @@
 
 .method static synthetic access$700(Lcom/sec/android/visualeffect/lensflare/LensFlareEffect;)V
     .locals 0
-    .param p0    # Lcom/sec/android/visualeffect/lensflare/LensFlareEffect;
 
     invoke-direct {p0}, Lcom/sec/android/visualeffect/lensflare/LensFlareEffect;->animatedFadeOut()V
 
@@ -840,8 +799,6 @@
 
 .method static synthetic access$802(Lcom/sec/android/visualeffect/lensflare/LensFlareEffect;F)F
     .locals 0
-    .param p0    # Lcom/sec/android/visualeffect/lensflare/LensFlareEffect;
-    .param p1    # F
 
     iput p1, p0, Lcom/sec/android/visualeffect/lensflare/LensFlareEffect;->unlockAnimationValue:F
 
@@ -850,7 +807,6 @@
 
 .method static synthetic access$900(Lcom/sec/android/visualeffect/lensflare/LensFlareEffect;)V
     .locals 0
-    .param p0    # Lcom/sec/android/visualeffect/lensflare/LensFlareEffect;
 
     invoke-direct {p0}, Lcom/sec/android/visualeffect/lensflare/LensFlareEffect;->animatedUnlock()V
 
@@ -1759,8 +1715,6 @@
 
 .method private calculateDistance(FF)V
     .locals 8
-    .param p1    # F
-    .param p2    # F
 
     const-wide/high16 v6, 0x4000000000000000L
 
@@ -1809,7 +1763,6 @@
 
 .method private cancelAnimator(Landroid/animation/Animator;)V
     .locals 1
-    .param p1    # Landroid/animation/Animator;
 
     if-eqz p1, :cond_0
 
@@ -1927,7 +1880,6 @@
 
 .method private getCorrectAlpha(F)F
     .locals 3
-    .param p1    # F
 
     const/high16 v1, 0x3f800000
 
@@ -1955,8 +1907,6 @@
 
 .method private hoverEnter(FF)V
     .locals 1
-    .param p1    # F
-    .param p2    # F
 
     const/4 v0, 0x0
 
@@ -2015,8 +1965,6 @@
 
 .method private hoverMove(FF)V
     .locals 1
-    .param p1    # F
-    .param p2    # F
 
     const/4 v0, 0x0
 
@@ -2345,7 +2293,6 @@
 
 .method private playSound(I)V
     .locals 7
-    .param p1    # I
 
     const/4 v4, 0x0
 
@@ -2491,8 +2438,6 @@
 
 .method private setAlphaAndVisibility(Landroid/view/View;F)V
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # F
 
     const/16 v0, 0x8
 
@@ -2936,12 +2881,6 @@
 
 .method private setCenterPos(Landroid/view/View;FFFFF)V
     .locals 4
-    .param p1    # Landroid/view/View;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # F
 
     const/high16 v3, 0x40000000
 
@@ -2993,14 +2932,6 @@
 
 .method private setCenterPos(Landroid/view/View;FFFFFFI)V
     .locals 18
-    .param p1    # Landroid/view/View;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # F
-    .param p7    # F
-    .param p8    # I
 
     const/high16 v12, 0x3f000000
 
@@ -3346,7 +3277,6 @@
 
 .method private setHexagonRandomTarget(Z)V
     .locals 17
-    .param p1    # Z
 
     move-object/from16 v0, p0
 
@@ -3767,9 +3697,6 @@
 
 .method private setImageWithOption(Landroid/widget/ImageView;ILandroid/graphics/Bitmap$Config;)V
     .locals 2
-    .param p1    # Landroid/widget/ImageView;
-    .param p2    # I
-    .param p3    # Landroid/graphics/Bitmap$Config;
 
     new-instance v0, Landroid/graphics/BitmapFactory$Options;
 
@@ -4359,7 +4286,6 @@
 
 .method public handleHoverEvent(Landroid/view/MotionEvent;)Z
     .locals 4
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v3, 0x0
 
@@ -4489,8 +4415,6 @@
 
 .method public handleTouchEvent(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 4
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     const/4 v3, 0x1
 
@@ -4634,8 +4558,6 @@
 
 .method public handleTouchEventForPatternLock(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     const/4 v0, 0x0
 
@@ -4644,8 +4566,6 @@
 
 .method public handleUnlock(Landroid/view/View;Landroid/view/MotionEvent;)V
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     const-string v0, "LensFlare"
 
@@ -4678,8 +4598,6 @@
 
 .method public move(FF)V
     .locals 2
-    .param p1    # F
-    .param p2    # F
 
     iget-boolean v0, p0, Lcom/sec/android/visualeffect/lensflare/LensFlareEffect;->isTouched:Z
 
@@ -4804,16 +4722,6 @@
 
 .method public setImageResourceId(IIIIIIIIII)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
-    .param p9    # I
-    .param p10    # I
 
     iput p1, p0, Lcom/sec/android/visualeffect/lensflare/LensFlareEffect;->hexagon_blue_id:I
 
@@ -4840,8 +4748,6 @@
 
 .method public setSoundResourceId(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     iput p1, p0, Lcom/sec/android/visualeffect/lensflare/LensFlareEffect;->tap_sound_id:I
 
@@ -4921,8 +4827,6 @@
 
 .method public show(FF)V
     .locals 7
-    .param p1    # F
-    .param p2    # F
 
     const/4 v2, 0x0
 
@@ -5067,8 +4971,6 @@
 
 .method public showUnlockAffordance(JLandroid/graphics/Rect;)V
     .locals 4
-    .param p1    # J
-    .param p3    # Landroid/graphics/Rect;
 
     const-string v0, "LensFlare"
 

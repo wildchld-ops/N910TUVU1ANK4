@@ -96,11 +96,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;FFFF)V
     .locals 9
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
 
     const/4 v1, 0x1
 
@@ -249,7 +244,6 @@
 
 .method private addItem(Lcom/sec/android/glview/TwGLView;)V
     .locals 2
-    .param p1    # Lcom/sec/android/glview/TwGLView;
 
     iget v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLSelfieThumbnailList;->mNumOfItem:I
 
@@ -308,8 +302,6 @@
 # virtual methods
 .method public addThumbnail([BI)V
     .locals 12
-    .param p1    # [B
-    .param p2    # I
 
     const/4 v1, 0x0
 
@@ -517,7 +509,6 @@
 
 .method public setContinuousValue(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLSelfieThumbnailList;->mContinuousValue:I
 

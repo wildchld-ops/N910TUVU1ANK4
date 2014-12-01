@@ -60,7 +60,7 @@
 
     const v2, 0x7f090393
 
-    invoke-virtual {v1, v2}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {v1, v2}, Lcom/android/phone/callsettings/VideoCallBarring;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -94,7 +94,7 @@
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v0, v3}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+    invoke-virtual {v0, v3}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     :goto_0
     return-void

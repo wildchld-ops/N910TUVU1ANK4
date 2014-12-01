@@ -17,7 +17,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;)V
 
@@ -28,8 +27,6 @@
 # virtual methods
 .method public onRemoteViewsLoaded(Landroid/widget/RemoteViews;Landroid/widget/RemoteViews$OnClickHandler;)V
     .locals 3
-    .param p1    # Landroid/widget/RemoteViews;
-    .param p2    # Landroid/widget/RemoteViews$OnClickHandler;
 
     :try_start_0
     invoke-virtual {p0}, Landroid/view/ViewGroup;->removeAllViews()V

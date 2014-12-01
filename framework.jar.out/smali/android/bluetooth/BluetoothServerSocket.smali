@@ -19,10 +19,6 @@
 # direct methods
 .method constructor <init>(IZZI)V
     .locals 8
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # Z
-    .param p4    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -58,10 +54,6 @@
 
 .method constructor <init>(IZZLandroid/os/ParcelUuid;)V
     .locals 8
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # Z
-    .param p4    # Landroid/os/ParcelUuid;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -122,7 +114,6 @@
 
 .method public accept(I)Landroid/bluetooth/BluetoothSocket;
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -199,8 +190,6 @@
 
 .method declared-synchronized setCloseHandler(Landroid/os/Handler;I)V
     .locals 1
-    .param p1    # Landroid/os/Handler;
-    .param p2    # I
 
     monitor-enter p0
 
@@ -225,7 +214,6 @@
 
 .method setServiceName(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/bluetooth/BluetoothServerSocket;->mSocket:Landroid/bluetooth/BluetoothSocket;
 

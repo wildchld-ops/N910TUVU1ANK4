@@ -59,9 +59,6 @@
 
 .method public constructor <init>(Landroid/app/Activity;Lcom/android/settings/homesync/FileOperationProgress;Lcom/android/settings/homesync/FileOperationPaste$RequestType;)V
     .locals 3
-    .param p1    # Landroid/app/Activity;
-    .param p2    # Lcom/android/settings/homesync/FileOperationProgress;
-    .param p3    # Lcom/android/settings/homesync/FileOperationPaste$RequestType;
 
     const/4 v2, 0x0
 
@@ -142,7 +139,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/homesync/FileOperation;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/settings/homesync/FileOperation;
 
     iget-object v0, p0, Lcom/android/settings/homesync/FileOperation;->mContext:Landroid/content/Context;
 
@@ -151,7 +147,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/homesync/FileOperation;)V
     .locals 0
-    .param p0    # Lcom/android/settings/homesync/FileOperation;
 
     invoke-direct {p0}, Lcom/android/settings/homesync/FileOperation;->releasePowerWakeLock()V
 
@@ -160,7 +155,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/homesync/FileOperation;)Ljava/lang/Runnable;
     .locals 1
-    .param p0    # Lcom/android/settings/homesync/FileOperation;
 
     iget-object v0, p0, Lcom/android/settings/homesync/FileOperation;->futureTaskRunnable:Ljava/lang/Runnable;
 
@@ -169,7 +163,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/homesync/FileOperation;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/settings/homesync/FileOperation;
 
     iget-object v0, p0, Lcom/android/settings/homesync/FileOperation;->futureTaskHandler:Landroid/os/Handler;
 
@@ -178,7 +171,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/homesync/FileOperation;)V
     .locals 0
-    .param p0    # Lcom/android/settings/homesync/FileOperation;
 
     invoke-direct {p0}, Lcom/android/settings/homesync/FileOperation;->saveFileOperationTime()V
 
@@ -187,12 +179,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/homesync/FileOperation;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JJ)V
     .locals 0
-    .param p0    # Lcom/android/settings/homesync/FileOperation;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # J
-    .param p6    # J
 
     invoke-direct/range {p0 .. p7}, Lcom/android/settings/homesync/FileOperation;->process(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JJ)V
 
@@ -201,11 +187,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/homesync/FileOperation;IIJJ)V
     .locals 0
-    .param p0    # Lcom/android/settings/homesync/FileOperation;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
-    .param p5    # J
 
     invoke-direct/range {p0 .. p6}, Lcom/android/settings/homesync/FileOperation;->updateNotification(IIJJ)V
 
@@ -222,7 +203,6 @@
 
 .method private initNotification(I)V
     .locals 7
-    .param p1    # I
 
     const/high16 v6, 0x8000000
 
@@ -333,11 +313,6 @@
 
 .method private process(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JJ)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # J
-    .param p6    # J
 
     iget-object v0, p0, Lcom/android/settings/homesync/FileOperation;->mProgressScreen:Lcom/android/settings/homesync/FileOperationProgress;
 
@@ -458,7 +433,6 @@
 
 .method public static setOpStatus(Lcom/android/settings/homesync/FileOperation$OpStatus;)V
     .locals 0
-    .param p0    # Lcom/android/settings/homesync/FileOperation$OpStatus;
 
     sput-object p0, Lcom/android/settings/homesync/FileOperation;->mOpStatus:Lcom/android/settings/homesync/FileOperation$OpStatus;
 
@@ -467,10 +441,6 @@
 
 .method private updateNotification(IIJJ)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
-    .param p5    # J
 
     iget-object v0, p0, Lcom/android/settings/homesync/FileOperation;->mNotiBuilder:Landroid/app/Notification$Builder;
 
@@ -610,15 +580,6 @@
 
 .method public publish(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IIJJZ)V
     .locals 13
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
-    .param p6    # I
-    .param p7    # J
-    .param p9    # J
-    .param p11    # Z
 
     iget-object v12, p0, Lcom/android/settings/homesync/FileOperation;->futureTaskHandler:Landroid/os/Handler;
 
@@ -651,10 +612,6 @@
 
 .method protected setProgress(JJII)V
     .locals 3
-    .param p1    # J
-    .param p3    # J
-    .param p5    # I
-    .param p6    # I
 
     iget-object v0, p0, Lcom/android/settings/homesync/FileOperation;->mProgressScreen:Lcom/android/settings/homesync/FileOperationProgress;
 

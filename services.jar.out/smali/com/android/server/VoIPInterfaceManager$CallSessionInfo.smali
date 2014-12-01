@@ -89,8 +89,6 @@
 
 .method static synthetic access$102(Lcom/android/server/VoIPInterfaceManager$CallSessionInfo;Ljava/lang/Boolean;)Ljava/lang/Boolean;
     .locals 0
-    .param p0    # Lcom/android/server/VoIPInterfaceManager$CallSessionInfo;
-    .param p1    # Ljava/lang/Boolean;
 
     iput-object p1, p0, Lcom/android/server/VoIPInterfaceManager$CallSessionInfo;->useBTCall:Ljava/lang/Boolean;
 
@@ -99,8 +97,6 @@
 
 .method static synthetic access$202(Lcom/android/server/VoIPInterfaceManager$CallSessionInfo;Ljava/lang/Boolean;)Ljava/lang/Boolean;
     .locals 0
-    .param p0    # Lcom/android/server/VoIPInterfaceManager$CallSessionInfo;
-    .param p1    # Ljava/lang/Boolean;
 
     iput-object p1, p0, Lcom/android/server/VoIPInterfaceManager$CallSessionInfo;->useHoldCall:Ljava/lang/Boolean;
 
@@ -109,7 +105,6 @@
 
 .method static synthetic access$300(Lcom/android/server/VoIPInterfaceManager$CallSessionInfo;)Ljava/lang/Boolean;
     .locals 1
-    .param p0    # Lcom/android/server/VoIPInterfaceManager$CallSessionInfo;
 
     iget-object v0, p0, Lcom/android/server/VoIPInterfaceManager$CallSessionInfo;->isIncoming:Ljava/lang/Boolean;
 
@@ -118,7 +113,6 @@
 
 .method static synthetic access$400(Lcom/android/server/VoIPInterfaceManager$CallSessionInfo;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/server/VoIPInterfaceManager$CallSessionInfo;
 
     iget-object v0, p0, Lcom/android/server/VoIPInterfaceManager$CallSessionInfo;->remotePartyNumber:Ljava/lang/String;
 
@@ -127,7 +121,6 @@
 
 .method static synthetic access$500(Lcom/android/server/VoIPInterfaceManager$CallSessionInfo;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/server/VoIPInterfaceManager$CallSessionInfo;
 
     iget-object v0, p0, Lcom/android/server/VoIPInterfaceManager$CallSessionInfo;->callNumber:Ljava/lang/String;
 
@@ -136,7 +129,6 @@
 
 .method static synthetic access$600(Lcom/android/server/VoIPInterfaceManager$CallSessionInfo;)Lcom/android/server/VoIPInterfaceManager$CallState;
     .locals 1
-    .param p0    # Lcom/android/server/VoIPInterfaceManager$CallSessionInfo;
 
     iget-object v0, p0, Lcom/android/server/VoIPInterfaceManager$CallSessionInfo;->mCurrCallState:Lcom/android/server/VoIPInterfaceManager$CallState;
 
@@ -595,7 +587,6 @@
 
 .method public setBTStatus(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/server/VoIPInterfaceManager$CallSessionInfo;->this$0:Lcom/android/server/VoIPInterfaceManager;
 
@@ -631,7 +622,6 @@
 
 .method public setCallCountInThisSession(I)V
     .locals 2
-    .param p1    # I
 
     const-class v1, Lcom/android/server/VoIPInterfaceManager$CallSessionInfo;
 
@@ -656,10 +646,6 @@
 
 .method public setCallSessionInfo(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/os/IVoIPCallbackInterface;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Landroid/os/IVoIPCallbackInterface;
 
     const-class v1, Lcom/android/server/VoIPInterfaceManager$CallSessionInfo;
 
@@ -690,7 +676,6 @@
 
 .method public setCallState(Lcom/android/server/VoIPInterfaceManager$CallState;)V
     .locals 2
-    .param p1    # Lcom/android/server/VoIPInterfaceManager$CallState;
 
     const-class v1, Lcom/android/server/VoIPInterfaceManager$CallSessionInfo;
 
@@ -715,7 +700,6 @@
 
 .method public setDirection(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/server/VoIPInterfaceManager$CallSessionInfo;->this$0:Lcom/android/server/VoIPInterfaceManager;
 
@@ -751,7 +735,6 @@
 
 .method public setRemotePartyNumber(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const-class v1, Lcom/android/server/VoIPInterfaceManager$CallSessionInfo;
 

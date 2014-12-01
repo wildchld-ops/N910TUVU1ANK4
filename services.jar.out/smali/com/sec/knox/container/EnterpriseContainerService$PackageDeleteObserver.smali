@@ -27,7 +27,6 @@
 # direct methods
 .method public constructor <init>(Lcom/sec/knox/container/EnterpriseContainerService;I)V
     .locals 1
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -48,8 +47,6 @@
 # virtual methods
 .method public packageDeleted(Ljava/lang/String;I)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     monitor-enter p0
 

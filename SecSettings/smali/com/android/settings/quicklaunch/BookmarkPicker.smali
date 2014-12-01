@@ -94,8 +94,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/quicklaunch/BookmarkPicker;Ljava/util/List;)V
     .locals 0
-    .param p0    # Lcom/android/settings/quicklaunch/BookmarkPicker;
-    .param p1    # Ljava/util/List;
 
     invoke-direct {p0, p1}, Lcom/android/settings/quicklaunch/BookmarkPicker;->fillResolveList(Ljava/util/List;)V
 
@@ -104,9 +102,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/quicklaunch/BookmarkPicker;Ljava/util/List;Ljava/util/List;)V
     .locals 0
-    .param p0    # Lcom/android/settings/quicklaunch/BookmarkPicker;
-    .param p1    # Ljava/util/List;
-    .param p2    # Ljava/util/List;
 
     invoke-direct {p0, p1, p2}, Lcom/android/settings/quicklaunch/BookmarkPicker;->fillAdapterList(Ljava/util/List;Ljava/util/List;)V
 
@@ -115,9 +110,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/quicklaunch/BookmarkPicker;Ljava/util/ArrayList;Ljava/util/ArrayList;)V
     .locals 0
-    .param p0    # Lcom/android/settings/quicklaunch/BookmarkPicker;
-    .param p1    # Ljava/util/ArrayList;
-    .param p2    # Ljava/util/ArrayList;
 
     invoke-direct {p0, p1, p2}, Lcom/android/settings/quicklaunch/BookmarkPicker;->updateAdapterToUseNewLists(Ljava/util/ArrayList;Ljava/util/ArrayList;)V
 
@@ -126,7 +118,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/quicklaunch/BookmarkPicker;)Landroid/widget/SimpleAdapter;
     .locals 1
-    .param p0    # Lcom/android/settings/quicklaunch/BookmarkPicker;
 
     iget-object v0, p0, Lcom/android/settings/quicklaunch/BookmarkPicker;->mMyAdapter:Landroid/widget/SimpleAdapter;
 
@@ -135,8 +126,6 @@
 
 .method static synthetic access$302(Lcom/android/settings/quicklaunch/BookmarkPicker;Landroid/widget/SimpleAdapter;)Landroid/widget/SimpleAdapter;
     .locals 0
-    .param p0    # Lcom/android/settings/quicklaunch/BookmarkPicker;
-    .param p1    # Landroid/widget/SimpleAdapter;
 
     iput-object p1, p0, Lcom/android/settings/quicklaunch/BookmarkPicker;->mMyAdapter:Landroid/widget/SimpleAdapter;
 
@@ -145,8 +134,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/quicklaunch/BookmarkPicker;Ljava/util/List;)Landroid/widget/SimpleAdapter;
     .locals 1
-    .param p0    # Lcom/android/settings/quicklaunch/BookmarkPicker;
-    .param p1    # Ljava/util/List;
 
     invoke-direct {p0, p1}, Lcom/android/settings/quicklaunch/BookmarkPicker;->createResolveAdapter(Ljava/util/List;)Landroid/widget/SimpleAdapter;
 
@@ -157,8 +144,6 @@
 
 .method static synthetic access$502(Lcom/android/settings/quicklaunch/BookmarkPicker;Ljava/util/List;)Ljava/util/List;
     .locals 0
-    .param p0    # Lcom/android/settings/quicklaunch/BookmarkPicker;
-    .param p1    # Ljava/util/List;
 
     iput-object p1, p0, Lcom/android/settings/quicklaunch/BookmarkPicker;->mResolveList:Ljava/util/List;
 
@@ -351,8 +336,6 @@
 
 .method private finish(Landroid/content/Intent;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
 
@@ -375,8 +358,6 @@
 
 .method private static getIntentForResolveInfo(Landroid/content/pm/ResolveInfo;Ljava/lang/String;)Landroid/content/Intent;
     .locals 4
-    .param p0    # Landroid/content/pm/ResolveInfo;
-    .param p1    # Ljava/lang/String;
 
     new-instance v1, Landroid/content/Intent;
 
@@ -395,7 +376,6 @@
 
 .method private getResolveInfoTitle(Landroid/content/pm/ResolveInfo;)Ljava/lang/String;
     .locals 2
-    .param p1    # Landroid/content/pm/ResolveInfo;
 
     invoke-virtual {p0}, Landroid/content/ContextWrapper;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -429,7 +409,6 @@
 
 .method private startShortcutActivity(Landroid/content/pm/ResolveInfo;)V
     .locals 2
-    .param p1    # Landroid/content/pm/ResolveInfo;
 
     const-string v1, "android.intent.action.CREATE_SHORTCUT"
 
@@ -491,9 +470,6 @@
 # virtual methods
 .method protected onActivityResult(IILandroid/content/Intent;)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const/4 v0, -0x1
 
@@ -541,7 +517,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
@@ -552,7 +527,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 4
-    .param p1    # Landroid/view/Menu;
 
     const/4 v3, 0x1
 
@@ -583,10 +557,6 @@
 
 .method protected onListItemClick(Landroid/widget/ListView;Landroid/view/View;IJ)V
     .locals 3
-    .param p1    # Landroid/widget/ListView;
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
 
     iget-object v2, p0, Lcom/android/settings/quicklaunch/BookmarkPicker;->mResolveList:Ljava/util/List;
 
@@ -647,7 +617,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 3
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v1, 0x1
 
@@ -686,7 +655,6 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)Z
     .locals 4
-    .param p1    # Landroid/view/Menu;
 
     const/4 v2, 0x0
 
@@ -728,9 +696,6 @@
 
 .method public setViewValue(Landroid/view/View;Ljava/lang/Object;Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # Ljava/lang/Object;
-    .param p3    # Ljava/lang/String;
 
     invoke-virtual {p1}, Landroid/view/View;->getId()I
 

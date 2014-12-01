@@ -59,7 +59,6 @@
 
 .method public isAllowed(Landroid/net/http/SslError;)Z
     .locals 5
-    .param p1    # Landroid/net/http/SslError;
 
     const/4 v2, 0x0
 
@@ -112,7 +111,6 @@
 
 .method public setIsAllowed(Landroid/net/http/SslError;)V
     .locals 4
-    .param p1    # Landroid/net/http/SslError;
 
     :try_start_0
     new-instance v2, Ljava/net/URL;

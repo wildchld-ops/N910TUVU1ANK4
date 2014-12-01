@@ -53,7 +53,6 @@
 # virtual methods
 .method public onAnimationEnd(Landroid/animation/Animator;)V
     .locals 9
-    .param p1    # Landroid/animation/Animator;
 
     const/4 v8, 0x1
 

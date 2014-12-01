@@ -21,7 +21,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/wifi/WifiService;Landroid/os/Looper;)V
     .locals 0
-    .param p2    # Landroid/os/Looper;
 
     iput-object p1, p0, Lcom/android/server/wifi/WifiService$ClientHandler;->this$0:Lcom/android/server/wifi/WifiService;
 
@@ -32,8 +31,6 @@
 
 .method private replyFailed(Landroid/os/Message;I)V
     .locals 2
-    .param p1    # Landroid/os/Message;
-    .param p2    # I
 
     invoke-static {}, Landroid/os/Message;->obtain()Landroid/os/Message;
 
@@ -65,7 +62,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 9
-    .param p1    # Landroid/os/Message;
 
     const v8, 0x25008
 

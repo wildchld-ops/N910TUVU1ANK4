@@ -35,8 +35,6 @@
 
 .method synthetic constructor <init>(Landroid/media/AudioService;Landroid/media/AudioService$1;)V
     .locals 0
-    .param p1    # Landroid/media/AudioService;
-    .param p2    # Landroid/media/AudioService$1;
 
     invoke-direct {p0, p1}, Landroid/media/AudioService$ScoDevice;-><init>(Landroid/media/AudioService;)V
 

@@ -33,7 +33,6 @@
 # direct methods
 .method public constructor <init>(Landroid/widget/HoverPopupWindow;Landroid/content/Context;)V
     .locals 2
-    .param p2    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -62,7 +61,6 @@
 # virtual methods
 .method protected dispatchHoverEvent(Landroid/view/MotionEvent;)Z
     .locals 5
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getAction()I
 
@@ -144,7 +142,6 @@
 
 .method public dispatchTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 4
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-boolean v1, p0, Landroid/widget/HoverPopupWindow$TouchablePopupContainer;->mIsHoverExitCalled:Z
 

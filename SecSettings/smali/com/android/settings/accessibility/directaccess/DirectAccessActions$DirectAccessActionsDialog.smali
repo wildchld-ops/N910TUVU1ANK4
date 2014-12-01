@@ -26,8 +26,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Lcom/android/internal/app/AlertController$AlertParams;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/internal/app/AlertController$AlertParams;
 
     invoke-static {p1}, Lcom/android/settings/accessibility/directaccess/DirectAccessActions$DirectAccessActionsDialog;->getDialogTheme(Landroid/content/Context;)I
 
@@ -70,7 +68,6 @@
 
 .method private static getDialogTheme(Landroid/content/Context;)I
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     new-instance v0, Landroid/util/TypedValue;
 
@@ -107,7 +104,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Dialog;->onCreate(Landroid/os/Bundle;)V
 
@@ -120,8 +116,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     iget-object v0, p0, Lcom/android/settings/accessibility/directaccess/DirectAccessActions$DirectAccessActionsDialog;->mAlert:Lcom/android/internal/app/AlertController;
 
@@ -146,8 +140,6 @@
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     iget-object v0, p0, Lcom/android/settings/accessibility/directaccess/DirectAccessActions$DirectAccessActionsDialog;->mAlert:Lcom/android/internal/app/AlertController;
 

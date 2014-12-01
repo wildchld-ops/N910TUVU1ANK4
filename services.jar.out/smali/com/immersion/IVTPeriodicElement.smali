@@ -10,8 +10,6 @@
 # direct methods
 .method public constructor <init>(ILcom/immersion/PeriodicEffectDefinition;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Lcom/immersion/PeriodicEffectDefinition;
 
     const/4 v0, 0x0
 
@@ -150,7 +148,6 @@
 
 .method public setDefinition(Lcom/immersion/PeriodicEffectDefinition;)V
     .locals 0
-    .param p1    # Lcom/immersion/PeriodicEffectDefinition;
 
     iput-object p1, p0, Lcom/immersion/IVTPeriodicElement;->definition:Lcom/immersion/PeriodicEffectDefinition;
 

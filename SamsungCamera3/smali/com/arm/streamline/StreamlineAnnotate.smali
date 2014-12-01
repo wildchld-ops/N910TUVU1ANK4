@@ -142,9 +142,6 @@
 
 .method public static final annotate(ILcom/arm/streamline/StreamlineAnnotate$Color;Ljava/lang/String;)V
     .locals 4
-    .param p0    # I
-    .param p1    # Lcom/arm/streamline/StreamlineAnnotate$Color;
-    .param p2    # Ljava/lang/String;
 
     sget-object v2, Lcom/arm/streamline/StreamlineAnnotate;->OUT:Ljava/io/OutputStream;
 
@@ -314,8 +311,6 @@
 
 .method public static final annotate(ILjava/lang/String;)V
     .locals 1
-    .param p0    # I
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -326,8 +321,6 @@
 
 .method public static final annotate(Lcom/arm/streamline/StreamlineAnnotate$Color;Ljava/lang/String;)V
     .locals 1
-    .param p0    # Lcom/arm/streamline/StreamlineAnnotate$Color;
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -338,7 +331,6 @@
 
 .method public static final annotate(Ljava/lang/String;)V
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -363,7 +355,6 @@
 
 .method public static final end(I)V
     .locals 1
-    .param p0    # I
 
     const/4 v0, 0x0
 
@@ -384,7 +375,6 @@
 
 .method public static final marker(Lcom/arm/streamline/StreamlineAnnotate$Color;)V
     .locals 1
-    .param p0    # Lcom/arm/streamline/StreamlineAnnotate$Color;
 
     const/4 v0, 0x0
 
@@ -395,8 +385,6 @@
 
 .method public static final marker(Lcom/arm/streamline/StreamlineAnnotate$Color;Ljava/lang/String;)V
     .locals 5
-    .param p0    # Lcom/arm/streamline/StreamlineAnnotate$Color;
-    .param p1    # Ljava/lang/String;
 
     sget-object v3, Lcom/arm/streamline/StreamlineAnnotate;->OUT:Ljava/io/OutputStream;
 
@@ -536,7 +524,6 @@
 
 .method public static final marker(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -547,9 +534,6 @@
 
 .method public static nameChannel(IILjava/lang/String;)V
     .locals 4
-    .param p0    # I
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     sget-object v2, Lcom/arm/streamline/StreamlineAnnotate;->OUT:Ljava/io/OutputStream;
 
@@ -725,8 +709,6 @@
 
 .method public static nameGroup(ILjava/lang/String;)V
     .locals 4
-    .param p0    # I
-    .param p1    # Ljava/lang/String;
 
     sget-object v2, Lcom/arm/streamline/StreamlineAnnotate;->OUT:Ljava/io/OutputStream;
 
@@ -864,8 +846,6 @@
 
 .method public static final visualAnnotate(Ljava/lang/String;[B)V
     .locals 6
-    .param p0    # Ljava/lang/String;
-    .param p1    # [B
 
     const/4 v1, 0x0
 
@@ -1029,7 +1009,6 @@
 
 .method public static final visualAnnotate([B)V
     .locals 1
-    .param p0    # [B
 
     const/4 v0, 0x0
 

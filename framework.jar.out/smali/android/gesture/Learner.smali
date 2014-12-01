@@ -35,7 +35,6 @@
 # virtual methods
 .method addInstance(Landroid/gesture/Instance;)V
     .locals 1
-    .param p1    # Landroid/gesture/Instance;
 
     iget-object v0, p0, Landroid/gesture/Learner;->mInstances:Ljava/util/ArrayList;
 
@@ -75,7 +74,6 @@
 
 .method removeInstance(J)V
     .locals 6
-    .param p1    # J
 
     iget-object v3, p0, Landroid/gesture/Learner;->mInstances:Ljava/util/ArrayList;
 
@@ -113,7 +111,6 @@
 
 .method removeInstances(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     new-instance v4, Ljava/util/ArrayList;
 

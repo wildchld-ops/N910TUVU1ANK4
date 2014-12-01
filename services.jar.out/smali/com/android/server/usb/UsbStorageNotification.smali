@@ -42,8 +42,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Lcom/android/server/usb/UsbNotificationHandler;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/server/usb/UsbNotificationHandler;
 
     const/4 v2, 0x0
 
@@ -150,10 +148,6 @@
 
 .method static synthetic access$000(Lcom/android/server/usb/UsbStorageNotification;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/server/usb/UsbStorageNotification;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/server/usb/UsbStorageNotification;->onUsbHostStateChanged(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
@@ -162,10 +156,6 @@
 
 .method static synthetic access$100(Lcom/android/server/usb/UsbStorageNotification;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/server/usb/UsbStorageNotification;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/server/usb/UsbStorageNotification;->onWaterProofing(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
@@ -174,8 +164,6 @@
 
 .method static synthetic access$202(Lcom/android/server/usb/UsbStorageNotification;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/usb/UsbStorageNotification;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/usb/UsbStorageNotification;->mReady:Z
 
@@ -184,7 +172,6 @@
 
 .method static synthetic access$300(Lcom/android/server/usb/UsbStorageNotification;)Z
     .locals 1
-    .param p0    # Lcom/android/server/usb/UsbStorageNotification;
 
     iget-boolean v0, p0, Lcom/android/server/usb/UsbStorageNotification;->mNeedIntent:Z
 
@@ -193,8 +180,6 @@
 
 .method static synthetic access$302(Lcom/android/server/usb/UsbStorageNotification;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/usb/UsbStorageNotification;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/usb/UsbStorageNotification;->mNeedIntent:Z
 
@@ -203,7 +188,6 @@
 
 .method static synthetic access$400(Lcom/android/server/usb/UsbStorageNotification;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/server/usb/UsbStorageNotification;
 
     iget-object v0, p0, Lcom/android/server/usb/UsbStorageNotification;->mContext:Landroid/content/Context;
 
@@ -212,7 +196,6 @@
 
 .method private isSDCard(Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     iget-object v2, p0, Lcom/android/server/usb/UsbStorageNotification;->mStorageVolumes:[Landroid/os/storage/StorageVolume;
 
@@ -271,7 +254,6 @@
 
 .method private isUsbHostDevice(Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     iget-object v2, p0, Lcom/android/server/usb/UsbStorageNotification;->mStorageVolumes:[Landroid/os/storage/StorageVolume;
 
@@ -330,9 +312,6 @@
 
 .method private onUsbHostStateChanged(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 19
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     invoke-direct/range {p0 .. p1}, Lcom/android/server/usb/UsbStorageNotification;->isUsbHostDevice(Ljava/lang/String;)Z
 
@@ -725,9 +704,6 @@
 
 .method private onWaterProofing(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const/4 v4, 0x1
 

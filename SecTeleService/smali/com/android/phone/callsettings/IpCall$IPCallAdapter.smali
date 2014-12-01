@@ -101,7 +101,7 @@
 
     const-string v5, "layout_inflater"
 
-    invoke-virtual {v4, v5}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v4, v5}, Lcom/android/phone/callsettings/IpCall;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -236,7 +236,7 @@
 
     const v5, 0x7f09047a
 
-    invoke-virtual {v4, v5}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {v4, v5}, Lcom/android/phone/callsettings/IpCall;->getString(I)Ljava/lang/String;
 
     move-result-object v4
 
@@ -253,7 +253,7 @@
 
     const/4 v5, 0x1
 
-    invoke-virtual {v4, v5}, Landroid/widget/CompoundButton;->setChecked(Z)V
+    invoke-virtual {v4, v5}, Landroid/widget/RadioButton;->setChecked(Z)V
 
     :goto_1
     add-int/lit8 v0, v0, 0x1
@@ -265,7 +265,7 @@
 
     const/4 v5, 0x0
 
-    invoke-virtual {v4, v5}, Landroid/widget/CompoundButton;->setChecked(Z)V
+    invoke-virtual {v4, v5}, Landroid/widget/RadioButton;->setChecked(Z)V
 
     goto :goto_1
 
@@ -274,19 +274,19 @@
 
     invoke-direct {v4, p0, p1}, Lcom/android/phone/callsettings/IpCall$IPCallAdapter$1;-><init>(Lcom/android/phone/callsettings/IpCall$IPCallAdapter;I)V
 
-    invoke-virtual {v3, v4}, Landroid/view/View;->setOnLongClickListener(Landroid/view/View$OnLongClickListener;)V
+    invoke-virtual {v3, v4}, Landroid/widget/LinearLayout;->setOnLongClickListener(Landroid/view/View$OnLongClickListener;)V
 
     new-instance v4, Lcom/android/phone/callsettings/IpCall$IPCallAdapter$2;
 
     invoke-direct {v4, p0, p1}, Lcom/android/phone/callsettings/IpCall$IPCallAdapter$2;-><init>(Lcom/android/phone/callsettings/IpCall$IPCallAdapter;I)V
 
-    invoke-virtual {v3, v4}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v3, v4}, Landroid/widget/LinearLayout;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     new-instance v4, Lcom/android/phone/callsettings/IpCall$IPCallAdapter$3;
 
     invoke-direct {v4, p0, p1}, Lcom/android/phone/callsettings/IpCall$IPCallAdapter$3;-><init>(Lcom/android/phone/callsettings/IpCall$IPCallAdapter;I)V
 
-    invoke-virtual {v2, v4}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v2, v4}, Landroid/widget/LinearLayout;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     return-object p2
 .end method

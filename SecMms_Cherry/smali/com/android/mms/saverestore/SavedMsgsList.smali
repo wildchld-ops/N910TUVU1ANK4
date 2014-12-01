@@ -346,7 +346,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/saverestore/SavedMsgsList;)[J
     .locals 1
-    .param p0    # Lcom/android/mms/saverestore/SavedMsgsList;
 
     invoke-direct {p0}, Lcom/android/mms/saverestore/SavedMsgsList;->getIds()[J
 
@@ -357,7 +356,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/saverestore/SavedMsgsList;)Lcom/android/mms/saverestore/SaveRestoreOperation;
     .locals 1
-    .param p0    # Lcom/android/mms/saverestore/SavedMsgsList;
 
     iget-object v0, p0, Lcom/android/mms/saverestore/SavedMsgsList;->mSaveRestoreOperation:Lcom/android/mms/saverestore/SaveRestoreOperation;
 
@@ -366,7 +364,6 @@
 
 .method static synthetic access$1000(Lcom/android/mms/saverestore/SavedMsgsList;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/mms/saverestore/SavedMsgsList;
 
     iget-object v0, p0, Lcom/android/mms/saverestore/SavedMsgsList;->mFilesSelected:Ljava/util/ArrayList;
 
@@ -375,8 +372,6 @@
 
 .method static synthetic access$1002(Lcom/android/mms/saverestore/SavedMsgsList;Ljava/util/ArrayList;)Ljava/util/ArrayList;
     .locals 0
-    .param p0    # Lcom/android/mms/saverestore/SavedMsgsList;
-    .param p1    # Ljava/util/ArrayList;
 
     iput-object p1, p0, Lcom/android/mms/saverestore/SavedMsgsList;->mFilesSelected:Ljava/util/ArrayList;
 
@@ -385,7 +380,6 @@
 
 .method static synthetic access$1100(Lcom/android/mms/saverestore/SavedMsgsList;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/mms/saverestore/SavedMsgsList;
 
     iget-object v0, p0, Lcom/android/mms/saverestore/SavedMsgsList;->convFiles:Ljava/util/ArrayList;
 
@@ -394,7 +388,6 @@
 
 .method static synthetic access$1200(Lcom/android/mms/saverestore/SavedMsgsList;)Landroid/widget/ListView;
     .locals 1
-    .param p0    # Lcom/android/mms/saverestore/SavedMsgsList;
 
     iget-object v0, p0, Lcom/android/mms/saverestore/SavedMsgsList;->fileList:Landroid/widget/ListView;
 
@@ -403,7 +396,6 @@
 
 .method static synthetic access$1400(Lcom/android/mms/saverestore/SavedMsgsList;)I
     .locals 1
-    .param p0    # Lcom/android/mms/saverestore/SavedMsgsList;
 
     iget v0, p0, Lcom/android/mms/saverestore/SavedMsgsList;->mOperation:I
 
@@ -412,8 +404,6 @@
 
 .method static synthetic access$1500(Lcom/android/mms/saverestore/SavedMsgsList;Z)V
     .locals 0
-    .param p0    # Lcom/android/mms/saverestore/SavedMsgsList;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/mms/saverestore/SavedMsgsList;->renameFile(Z)V
 
@@ -422,7 +412,6 @@
 
 .method static synthetic access$1600(Lcom/android/mms/saverestore/SavedMsgsList;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/mms/saverestore/SavedMsgsList;
 
     iget-object v0, p0, Lcom/android/mms/saverestore/SavedMsgsList;->mTempFilesSelected:Ljava/util/ArrayList;
 
@@ -431,8 +420,6 @@
 
 .method static synthetic access$1602(Lcom/android/mms/saverestore/SavedMsgsList;Ljava/util/ArrayList;)Ljava/util/ArrayList;
     .locals 0
-    .param p0    # Lcom/android/mms/saverestore/SavedMsgsList;
-    .param p1    # Ljava/util/ArrayList;
 
     iput-object p1, p0, Lcom/android/mms/saverestore/SavedMsgsList;->mTempFilesSelected:Ljava/util/ArrayList;
 
@@ -441,7 +428,6 @@
 
 .method static synthetic access$1700(Lcom/android/mms/saverestore/SavedMsgsList;)Ljava/io/File;
     .locals 1
-    .param p0    # Lcom/android/mms/saverestore/SavedMsgsList;
 
     iget-object v0, p0, Lcom/android/mms/saverestore/SavedMsgsList;->mCurrentFilePath:Ljava/io/File;
 
@@ -450,8 +436,6 @@
 
 .method static synthetic access$1702(Lcom/android/mms/saverestore/SavedMsgsList;Ljava/io/File;)Ljava/io/File;
     .locals 0
-    .param p0    # Lcom/android/mms/saverestore/SavedMsgsList;
-    .param p1    # Ljava/io/File;
 
     iput-object p1, p0, Lcom/android/mms/saverestore/SavedMsgsList;->mCurrentFilePath:Ljava/io/File;
 
@@ -460,7 +444,6 @@
 
 .method static synthetic access$1800(Lcom/android/mms/saverestore/SavedMsgsList;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/mms/saverestore/SavedMsgsList;
 
     iget-object v0, p0, Lcom/android/mms/saverestore/SavedMsgsList;->mContext:Landroid/content/Context;
 
@@ -469,7 +452,6 @@
 
 .method static synthetic access$1900(Lcom/android/mms/saverestore/SavedMsgsList;)Lcom/android/mms/saverestore/SavedMsgsList$FileArrayAdapter;
     .locals 1
-    .param p0    # Lcom/android/mms/saverestore/SavedMsgsList;
 
     iget-object v0, p0, Lcom/android/mms/saverestore/SavedMsgsList;->filesAdapter:Lcom/android/mms/saverestore/SavedMsgsList$FileArrayAdapter;
 
@@ -478,7 +460,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/saverestore/SavedMsgsList;)Landroid/widget/EditText;
     .locals 1
-    .param p0    # Lcom/android/mms/saverestore/SavedMsgsList;
 
     iget-object v0, p0, Lcom/android/mms/saverestore/SavedMsgsList;->mEditNewFileName:Landroid/widget/EditText;
 
@@ -487,7 +468,6 @@
 
 .method static synthetic access$2000(Lcom/android/mms/saverestore/SavedMsgsList;)V
     .locals 0
-    .param p0    # Lcom/android/mms/saverestore/SavedMsgsList;
 
     invoke-direct {p0}, Lcom/android/mms/saverestore/SavedMsgsList;->updateEmptyView()V
 
@@ -496,7 +476,6 @@
 
 .method static synthetic access$2100(Lcom/android/mms/saverestore/SavedMsgsList;)Landroid/view/ActionMode;
     .locals 1
-    .param p0    # Lcom/android/mms/saverestore/SavedMsgsList;
 
     iget-object v0, p0, Lcom/android/mms/saverestore/SavedMsgsList;->mMsgsRestoreActionMode:Landroid/view/ActionMode;
 
@@ -505,8 +484,6 @@
 
 .method static synthetic access$2102(Lcom/android/mms/saverestore/SavedMsgsList;Landroid/view/ActionMode;)Landroid/view/ActionMode;
     .locals 0
-    .param p0    # Lcom/android/mms/saverestore/SavedMsgsList;
-    .param p1    # Landroid/view/ActionMode;
 
     iput-object p1, p0, Lcom/android/mms/saverestore/SavedMsgsList;->mMsgsRestoreActionMode:Landroid/view/ActionMode;
 
@@ -515,7 +492,6 @@
 
 .method static synthetic access$2200(Lcom/android/mms/saverestore/SavedMsgsList;)I
     .locals 1
-    .param p0    # Lcom/android/mms/saverestore/SavedMsgsList;
 
     iget v0, p0, Lcom/android/mms/saverestore/SavedMsgsList;->mItemSelectedIndex:I
 
@@ -524,8 +500,6 @@
 
 .method static synthetic access$2202(Lcom/android/mms/saverestore/SavedMsgsList;I)I
     .locals 0
-    .param p0    # Lcom/android/mms/saverestore/SavedMsgsList;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/mms/saverestore/SavedMsgsList;->mItemSelectedIndex:I
 
@@ -534,7 +508,6 @@
 
 .method static synthetic access$2300(Lcom/android/mms/saverestore/SavedMsgsList;)Landroid/view/MenuItem;
     .locals 1
-    .param p0    # Lcom/android/mms/saverestore/SavedMsgsList;
 
     iget-object v0, p0, Lcom/android/mms/saverestore/SavedMsgsList;->mMenuUp:Landroid/view/MenuItem;
 
@@ -543,7 +516,6 @@
 
 .method static synthetic access$2400(Lcom/android/mms/saverestore/SavedMsgsList;)Landroid/view/MenuItem;
     .locals 1
-    .param p0    # Lcom/android/mms/saverestore/SavedMsgsList;
 
     iget-object v0, p0, Lcom/android/mms/saverestore/SavedMsgsList;->mMenuHome:Landroid/view/MenuItem;
 
@@ -552,8 +524,6 @@
 
 .method static synthetic access$2500(Lcom/android/mms/saverestore/SavedMsgsList;I)V
     .locals 0
-    .param p0    # Lcom/android/mms/saverestore/SavedMsgsList;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/mms/saverestore/SavedMsgsList;->setOperation(I)V
 
@@ -562,8 +532,6 @@
 
 .method static synthetic access$2600(Lcom/android/mms/saverestore/SavedMsgsList;I)V
     .locals 0
-    .param p0    # Lcom/android/mms/saverestore/SavedMsgsList;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/mms/saverestore/SavedMsgsList;->checkIfEncrypted(I)V
 
@@ -572,7 +540,6 @@
 
 .method static synthetic access$2700(Lcom/android/mms/saverestore/SavedMsgsList;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/android/mms/saverestore/SavedMsgsList;
 
     iget-object v0, p0, Lcom/android/mms/saverestore/SavedMsgsList;->mActionbarTitle:Landroid/widget/TextView;
 
@@ -581,8 +548,6 @@
 
 .method static synthetic access$2702(Lcom/android/mms/saverestore/SavedMsgsList;Landroid/widget/TextView;)Landroid/widget/TextView;
     .locals 0
-    .param p0    # Lcom/android/mms/saverestore/SavedMsgsList;
-    .param p1    # Landroid/widget/TextView;
 
     iput-object p1, p0, Lcom/android/mms/saverestore/SavedMsgsList;->mActionbarTitle:Landroid/widget/TextView;
 
@@ -591,7 +556,6 @@
 
 .method static synthetic access$2800(Lcom/android/mms/saverestore/SavedMsgsList;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/saverestore/SavedMsgsList;
 
     invoke-direct {p0}, Lcom/android/mms/saverestore/SavedMsgsList;->selectionHasFolder()Z
 
@@ -602,8 +566,6 @@
 
 .method static synthetic access$2900(Lcom/android/mms/saverestore/SavedMsgsList;Z)Z
     .locals 1
-    .param p0    # Lcom/android/mms/saverestore/SavedMsgsList;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/mms/saverestore/SavedMsgsList;->fileAlreadyExists(Z)Z
 
@@ -614,8 +576,6 @@
 
 .method static synthetic access$302(Lcom/android/mms/saverestore/SavedMsgsList;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/saverestore/SavedMsgsList;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/saverestore/SavedMsgsList;->mNoSdCard:Z
 
@@ -624,8 +584,6 @@
 
 .method static synthetic access$3100(Lcom/android/mms/saverestore/SavedMsgsList;I)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/mms/saverestore/SavedMsgsList;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/mms/saverestore/SavedMsgsList;->constructFileName(I)Ljava/lang/String;
 
@@ -636,7 +594,6 @@
 
 .method static synthetic access$3200(Lcom/android/mms/saverestore/SavedMsgsList;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/mms/saverestore/SavedMsgsList;
 
     iget-object v0, p0, Lcom/android/mms/saverestore/SavedMsgsList;->array:Ljava/util/ArrayList;
 
@@ -645,8 +602,6 @@
 
 .method static synthetic access$3202(Lcom/android/mms/saverestore/SavedMsgsList;Ljava/util/ArrayList;)Ljava/util/ArrayList;
     .locals 0
-    .param p0    # Lcom/android/mms/saverestore/SavedMsgsList;
-    .param p1    # Ljava/util/ArrayList;
 
     iput-object p1, p0, Lcom/android/mms/saverestore/SavedMsgsList;->array:Ljava/util/ArrayList;
 
@@ -655,9 +610,6 @@
 
 .method static synthetic access$3300(Lcom/android/mms/saverestore/SavedMsgsList;Ljava/util/ArrayList;Z)Z
     .locals 1
-    .param p0    # Lcom/android/mms/saverestore/SavedMsgsList;
-    .param p1    # Ljava/util/ArrayList;
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/mms/saverestore/SavedMsgsList;->isMultipleConversations(Ljava/util/ArrayList;Z)Z
 
@@ -668,8 +620,6 @@
 
 .method static synthetic access$3402(Lcom/android/mms/saverestore/SavedMsgsList;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/saverestore/SavedMsgsList;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/saverestore/SavedMsgsList;->mSaveError:Z
 
@@ -678,7 +628,6 @@
 
 .method static synthetic access$3500(Lcom/android/mms/saverestore/SavedMsgsList;)V
     .locals 0
-    .param p0    # Lcom/android/mms/saverestore/SavedMsgsList;
 
     invoke-direct {p0}, Lcom/android/mms/saverestore/SavedMsgsList;->setSavePanelInvisible()V
 
@@ -687,7 +636,6 @@
 
 .method static synthetic access$3600(Lcom/android/mms/saverestore/SavedMsgsList;)Landroid/widget/Toast;
     .locals 1
-    .param p0    # Lcom/android/mms/saverestore/SavedMsgsList;
 
     iget-object v0, p0, Lcom/android/mms/saverestore/SavedMsgsList;->mToast:Landroid/widget/Toast;
 
@@ -696,8 +644,6 @@
 
 .method static synthetic access$3602(Lcom/android/mms/saverestore/SavedMsgsList;Landroid/widget/Toast;)Landroid/widget/Toast;
     .locals 0
-    .param p0    # Lcom/android/mms/saverestore/SavedMsgsList;
-    .param p1    # Landroid/widget/Toast;
 
     iput-object p1, p0, Lcom/android/mms/saverestore/SavedMsgsList;->mToast:Landroid/widget/Toast;
 
@@ -714,7 +660,6 @@
 
 .method static synthetic access$400(Lcom/android/mms/saverestore/SavedMsgsList;)V
     .locals 0
-    .param p0    # Lcom/android/mms/saverestore/SavedMsgsList;
 
     invoke-direct {p0}, Lcom/android/mms/saverestore/SavedMsgsList;->refreshList()V
 
@@ -723,7 +668,6 @@
 
 .method static synthetic access$500(Lcom/android/mms/saverestore/SavedMsgsList;)Landroid/widget/Button;
     .locals 1
-    .param p0    # Lcom/android/mms/saverestore/SavedMsgsList;
 
     iget-object v0, p0, Lcom/android/mms/saverestore/SavedMsgsList;->mSaveBtn:Landroid/widget/Button;
 
@@ -732,7 +676,6 @@
 
 .method static synthetic access$600(Lcom/android/mms/saverestore/SavedMsgsList;)Landroid/widget/Button;
     .locals 1
-    .param p0    # Lcom/android/mms/saverestore/SavedMsgsList;
 
     iget-object v0, p0, Lcom/android/mms/saverestore/SavedMsgsList;->mOkRenameBtn:Landroid/widget/Button;
 
@@ -741,7 +684,6 @@
 
 .method static synthetic access$700(Lcom/android/mms/saverestore/SavedMsgsList;)Landroid/widget/EditText;
     .locals 1
-    .param p0    # Lcom/android/mms/saverestore/SavedMsgsList;
 
     iget-object v0, p0, Lcom/android/mms/saverestore/SavedMsgsList;->mEditFileName:Landroid/widget/EditText;
 
@@ -750,7 +692,6 @@
 
 .method static synthetic access$800(Lcom/android/mms/saverestore/SavedMsgsList;)Landroid/view/LayoutInflater;
     .locals 1
-    .param p0    # Lcom/android/mms/saverestore/SavedMsgsList;
 
     iget-object v0, p0, Lcom/android/mms/saverestore/SavedMsgsList;->mInflater:Landroid/view/LayoutInflater;
 
@@ -759,7 +700,6 @@
 
 .method static synthetic access$900(Lcom/android/mms/saverestore/SavedMsgsList;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/saverestore/SavedMsgsList;
 
     iget-boolean v0, p0, Lcom/android/mms/saverestore/SavedMsgsList;->mMultiMode:Z
 
@@ -768,8 +708,6 @@
 
 .method static synthetic access$902(Lcom/android/mms/saverestore/SavedMsgsList;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/saverestore/SavedMsgsList;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/saverestore/SavedMsgsList;->mMultiMode:Z
 
@@ -778,7 +716,6 @@
 
 .method private checkIfEncrypted(I)V
     .locals 4
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -849,7 +786,6 @@
 
 .method private constructFileName(I)Ljava/lang/String;
     .locals 2
-    .param p1    # I
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -896,7 +832,6 @@
 
 .method private fileAlreadyExists(Z)Z
     .locals 5
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -1078,7 +1013,6 @@
 
 .method public static getFolderSize(Ljava/io/File;)J
     .locals 9
-    .param p0    # Ljava/io/File;
 
     const-wide/16 v5, 0x0
 
@@ -1226,7 +1160,6 @@
 
 .method private handleListItemClick(I)V
     .locals 5
-    .param p1    # I
 
     const/4 v4, 0x1
 
@@ -1314,7 +1247,6 @@
 
 .method private isMultipleConversations(Ljava/util/ArrayList;Z)Z
     .locals 5
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1632,7 +1564,6 @@
 
 .method private renameFile(Z)V
     .locals 5
-    .param p1    # Z
 
     new-instance v1, Ljava/io/File;
 
@@ -1769,7 +1700,6 @@
 
 .method private setOperation(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/mms/saverestore/SavedMsgsList;->mOperation:I
 
@@ -1794,7 +1724,6 @@
 
 .method private startProperActivity(I)V
     .locals 4
-    .param p1    # I
 
     new-instance v0, Lcom/android/mms/saverestore/SavedMsgsList$ReadFilesTask;
 
@@ -2238,8 +2167,6 @@
 
 .method public formatDate(JLandroid/content/Context;)Ljava/lang/String;
     .locals 1
-    .param p1    # J
-    .param p3    # Landroid/content/Context;
 
     invoke-static {p3, p1, p2}, Lcom/android/mms/ui/MessageUtils;->formatTimeStampString(Landroid/content/Context;J)Ljava/lang/String;
 
@@ -2250,7 +2177,6 @@
 
 .method public formatSize(J)Ljava/lang/String;
     .locals 11
-    .param p1    # J
 
     const-wide/16 v9, 0x1
 
@@ -2390,8 +2316,6 @@
 
 .method public getEditTextFilter(Landroid/content/Context;I)[Landroid/text/InputFilter;
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     move v1, p2
 
@@ -2499,7 +2423,6 @@
 
 .method public init(Z)V
     .locals 4
-    .param p1    # Z
 
     const/4 v3, 0x0
 
@@ -2671,7 +2594,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 6
-    .param p1    # Landroid/view/View;
 
     const/4 v3, 0x5
 
@@ -2781,7 +2703,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 3
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -2814,7 +2735,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v4, 0x1
 
@@ -3040,7 +2960,6 @@
 
 .method protected onCreateDialog(I)Landroid/app/Dialog;
     .locals 6
-    .param p1    # I
 
     new-instance v1, Landroid/app/AlertDialog$Builder;
 
@@ -3311,9 +3230,6 @@
 
 .method public onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
     .locals 1
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3335,7 +3251,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 5
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v1, 0x1
 
@@ -3397,7 +3312,6 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)Z
     .locals 4
-    .param p1    # Landroid/view/Menu;
 
     const/4 v3, 0x6
 

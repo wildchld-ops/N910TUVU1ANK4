@@ -38,7 +38,6 @@
 # direct methods
 .method public constructor <init>(Landroid/widget/ActivityChooserModel;Landroid/content/pm/ResolveInfo;)V
     .locals 0
-    .param p2    # Landroid/content/pm/ResolveInfo;
 
     iput-object p1, p0, Landroid/widget/ActivityChooserModel$ActivityResolveInfo;->this$0:Landroid/widget/ActivityChooserModel;
 
@@ -53,7 +52,6 @@
 # virtual methods
 .method public compareTo(Landroid/widget/ActivityChooserModel$ActivityResolveInfo;)I
     .locals 2
-    .param p1    # Landroid/widget/ActivityChooserModel$ActivityResolveInfo;
 
     iget v0, p1, Landroid/widget/ActivityChooserModel$ActivityResolveInfo;->weight:F
 
@@ -74,7 +72,6 @@
 
 .method public bridge synthetic compareTo(Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Landroid/widget/ActivityChooserModel$ActivityResolveInfo;
 
@@ -87,7 +84,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 5
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x1
 

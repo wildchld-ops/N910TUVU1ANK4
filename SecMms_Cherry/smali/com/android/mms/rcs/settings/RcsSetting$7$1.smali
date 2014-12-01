@@ -36,7 +36,6 @@
 # virtual methods
 .method public onResult(Ljava/lang/Boolean;)V
     .locals 2
-    .param p1    # Ljava/lang/Boolean;
 
     invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
 

@@ -78,7 +78,6 @@
 
 .method static synthetic access$000(Lcom/android/common/NetworkConnectivityListener;)Z
     .locals 1
-    .param p0    # Lcom/android/common/NetworkConnectivityListener;
 
     iget-boolean v0, p0, Lcom/android/common/NetworkConnectivityListener;->mListening:Z
 
@@ -87,7 +86,6 @@
 
 .method static synthetic access$100(Lcom/android/common/NetworkConnectivityListener;)Lcom/android/common/NetworkConnectivityListener$State;
     .locals 1
-    .param p0    # Lcom/android/common/NetworkConnectivityListener;
 
     iget-object v0, p0, Lcom/android/common/NetworkConnectivityListener;->mState:Lcom/android/common/NetworkConnectivityListener$State;
 
@@ -96,8 +94,6 @@
 
 .method static synthetic access$102(Lcom/android/common/NetworkConnectivityListener;Lcom/android/common/NetworkConnectivityListener$State;)Lcom/android/common/NetworkConnectivityListener$State;
     .locals 0
-    .param p0    # Lcom/android/common/NetworkConnectivityListener;
-    .param p1    # Lcom/android/common/NetworkConnectivityListener$State;
 
     iput-object p1, p0, Lcom/android/common/NetworkConnectivityListener;->mState:Lcom/android/common/NetworkConnectivityListener$State;
 
@@ -106,8 +102,6 @@
 
 .method static synthetic access$202(Lcom/android/common/NetworkConnectivityListener;Landroid/net/NetworkInfo;)Landroid/net/NetworkInfo;
     .locals 0
-    .param p0    # Lcom/android/common/NetworkConnectivityListener;
-    .param p1    # Landroid/net/NetworkInfo;
 
     iput-object p1, p0, Lcom/android/common/NetworkConnectivityListener;->mNetworkInfo:Landroid/net/NetworkInfo;
 
@@ -116,8 +110,6 @@
 
 .method static synthetic access$302(Lcom/android/common/NetworkConnectivityListener;Landroid/net/NetworkInfo;)Landroid/net/NetworkInfo;
     .locals 0
-    .param p0    # Lcom/android/common/NetworkConnectivityListener;
-    .param p1    # Landroid/net/NetworkInfo;
 
     iput-object p1, p0, Lcom/android/common/NetworkConnectivityListener;->mOtherNetworkInfo:Landroid/net/NetworkInfo;
 
@@ -126,8 +118,6 @@
 
 .method static synthetic access$402(Lcom/android/common/NetworkConnectivityListener;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/android/common/NetworkConnectivityListener;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/common/NetworkConnectivityListener;->mReason:Ljava/lang/String;
 
@@ -136,8 +126,6 @@
 
 .method static synthetic access$502(Lcom/android/common/NetworkConnectivityListener;Z)Z
     .locals 0
-    .param p0    # Lcom/android/common/NetworkConnectivityListener;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/common/NetworkConnectivityListener;->mIsFailover:Z
 
@@ -146,7 +134,6 @@
 
 .method static synthetic access$600(Lcom/android/common/NetworkConnectivityListener;)Ljava/util/HashMap;
     .locals 1
-    .param p0    # Lcom/android/common/NetworkConnectivityListener;
 
     iget-object v0, p0, Lcom/android/common/NetworkConnectivityListener;->mHandlers:Ljava/util/HashMap;
 
@@ -197,8 +184,6 @@
 
 .method public registerHandler(Landroid/os/Handler;I)V
     .locals 2
-    .param p1    # Landroid/os/Handler;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/common/NetworkConnectivityListener;->mHandlers:Ljava/util/HashMap;
 
@@ -213,7 +198,6 @@
 
 .method public declared-synchronized startListening(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     monitor-enter p0
 
@@ -312,7 +296,6 @@
 
 .method public unregisterHandler(Landroid/os/Handler;)V
     .locals 1
-    .param p1    # Landroid/os/Handler;
 
     iget-object v0, p0, Lcom/android/common/NetworkConnectivityListener;->mHandlers:Ljava/util/HashMap;
 

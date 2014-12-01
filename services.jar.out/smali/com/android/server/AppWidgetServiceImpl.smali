@@ -214,9 +214,6 @@
 
 .method constructor <init>(Landroid/content/Context;ILandroid/os/Handler;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Landroid/os/Handler;
 
     const/4 v0, 0x1
 
@@ -389,7 +386,6 @@
 
 .method static synthetic access$000(Lcom/android/server/AppWidgetServiceImpl;)V
     .locals 0
-    .param p0    # Lcom/android/server/AppWidgetServiceImpl;
 
     invoke-direct {p0}, Lcom/android/server/AppWidgetServiceImpl;->ensureStateLoadedLocked()V
 
@@ -398,9 +394,6 @@
 
 .method private bindAppWidgetIdImpl(ILandroid/content/ComponentName;Landroid/os/Bundle;)V
     .locals 15
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # Landroid/os/Bundle;
 
     sget-boolean v11, Lcom/android/server/AppWidgetServiceImpl;->DBG:Z
 
@@ -848,7 +841,6 @@
 
 .method private callerHasBindAppWidgetPermission(Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -907,7 +899,6 @@
 
 .method private cloneIfLocalBinder(Landroid/appwidget/AppWidgetProviderInfo;)Landroid/appwidget/AppWidgetProviderInfo;
     .locals 1
-    .param p1    # Landroid/appwidget/AppWidgetProviderInfo;
 
     invoke-direct {p0}, Lcom/android/server/AppWidgetServiceImpl;->isLocalBinder()Z
 
@@ -927,7 +918,6 @@
 
 .method private cloneIfLocalBinder(Landroid/os/Bundle;)Landroid/os/Bundle;
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     invoke-direct {p0}, Lcom/android/server/AppWidgetServiceImpl;->isLocalBinder()Z
 
@@ -954,7 +944,6 @@
 
 .method private cloneIfLocalBinder(Landroid/widget/RemoteViews;)Landroid/widget/RemoteViews;
     .locals 1
-    .param p1    # Landroid/widget/RemoteViews;
 
     invoke-direct {p0}, Lcom/android/server/AppWidgetServiceImpl;->isLocalBinder()Z
 
@@ -974,8 +963,6 @@
 
 .method private copyAppWidgetId(Lcom/android/server/AppWidgetServiceImpl$AppWidgetId;Lcom/android/server/AppWidgetServiceImpl$AppWidgetId;)V
     .locals 1
-    .param p1    # Lcom/android/server/AppWidgetServiceImpl$AppWidgetId;
-    .param p2    # Lcom/android/server/AppWidgetServiceImpl$AppWidgetId;
 
     iget v0, p2, Lcom/android/server/AppWidgetServiceImpl$AppWidgetId;->appWidgetId:I
 
@@ -1002,8 +989,6 @@
 
 .method private copyHost(Lcom/android/server/AppWidgetServiceImpl$Host;Lcom/android/server/AppWidgetServiceImpl$Host;)V
     .locals 1
-    .param p1    # Lcom/android/server/AppWidgetServiceImpl$Host;
-    .param p2    # Lcom/android/server/AppWidgetServiceImpl$Host;
 
     iget v0, p2, Lcom/android/server/AppWidgetServiceImpl$Host;->uid:I
 
@@ -1034,8 +1019,6 @@
 
 .method private copyProvider(Lcom/android/server/AppWidgetServiceImpl$Provider;Lcom/android/server/AppWidgetServiceImpl$Provider;)V
     .locals 1
-    .param p1    # Lcom/android/server/AppWidgetServiceImpl$Provider;
-    .param p2    # Lcom/android/server/AppWidgetServiceImpl$Provider;
 
     iget v0, p2, Lcom/android/server/AppWidgetServiceImpl$Provider;->uid:I
 
@@ -1610,7 +1593,6 @@
 
 .method private decrementAppWidgetServiceRefCount(Lcom/android/server/AppWidgetServiceImpl$AppWidgetId;)V
     .locals 4
-    .param p1    # Lcom/android/server/AppWidgetServiceImpl$AppWidgetId;
 
     iget-object v3, p0, Lcom/android/server/AppWidgetServiceImpl;->mRemoteViewsServicesAppWidgets:Ljava/util/HashMap;
 
@@ -1678,8 +1660,6 @@
 
 .method private destroyRemoteViewsService(Landroid/content/Intent;Lcom/android/server/AppWidgetServiceImpl$AppWidgetId;)V
     .locals 7
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Lcom/android/server/AppWidgetServiceImpl$AppWidgetId;
 
     new-instance v0, Lcom/android/server/AppWidgetServiceImpl$1;
 
@@ -1724,9 +1704,6 @@
 
 .method private dumpAppWidgetId(Lcom/android/server/AppWidgetServiceImpl$AppWidgetId;ILjava/io/PrintWriter;)V
     .locals 1
-    .param p1    # Lcom/android/server/AppWidgetServiceImpl$AppWidgetId;
-    .param p2    # I
-    .param p3    # Ljava/io/PrintWriter;
 
     const-string v0, "  ["
 
@@ -1826,9 +1803,6 @@
 
 .method private dumpHost(Lcom/android/server/AppWidgetServiceImpl$Host;ILjava/io/PrintWriter;)V
     .locals 1
-    .param p1    # Lcom/android/server/AppWidgetServiceImpl$Host;
-    .param p2    # I
-    .param p3    # Ljava/io/PrintWriter;
 
     const-string v0, "  ["
 
@@ -1897,9 +1871,6 @@
 
 .method private dumpProvider(Lcom/android/server/AppWidgetServiceImpl$Provider;ILjava/io/PrintWriter;)V
     .locals 2
-    .param p1    # Lcom/android/server/AppWidgetServiceImpl$Provider;
-    .param p2    # I
-    .param p3    # Ljava/io/PrintWriter;
 
     iget-object v0, p1, Lcom/android/server/AppWidgetServiceImpl$Provider;->info:Landroid/appwidget/AppWidgetProviderInfo;
 
@@ -2061,7 +2032,6 @@
 
 .method static getAppWidgetIds(Lcom/android/server/AppWidgetServiceImpl$Host;)[I
     .locals 4
-    .param p0    # Lcom/android/server/AppWidgetServiceImpl$Host;
 
     iget-object v3, p0, Lcom/android/server/AppWidgetServiceImpl$Host;->instances:Ljava/util/ArrayList;
 
@@ -2098,7 +2068,6 @@
 
 .method static getAppWidgetIds(Lcom/android/server/AppWidgetServiceImpl$Provider;)[I
     .locals 4
-    .param p0    # Lcom/android/server/AppWidgetServiceImpl$Provider;
 
     iget-object v3, p0, Lcom/android/server/AppWidgetServiceImpl$Provider;->instances:Ljava/util/ArrayList;
 
@@ -2207,7 +2176,6 @@
 
 .method static getSecretSettingsFile(I)Ljava/io/File;
     .locals 3
-    .param p0    # I
 
     new-instance v0, Ljava/io/File;
 
@@ -2224,7 +2192,6 @@
 
 .method static getSettingsFile(I)Ljava/io/File;
     .locals 3
-    .param p0    # I
 
     new-instance v0, Ljava/io/File;
 
@@ -2241,8 +2208,6 @@
 
 .method private incrementAppWidgetServiceRefCount(ILandroid/content/Intent$FilterComparison;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/content/Intent$FilterComparison;
 
     const/4 v0, 0x0
 
@@ -2309,7 +2274,6 @@
 
 .method private log(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "AppWidgetServiceImpl"
 
@@ -2350,8 +2314,6 @@
 
 .method private parseProviderInfoXml(Landroid/content/ComponentName;Landroid/content/pm/ResolveInfo;)Lcom/android/server/AppWidgetServiceImpl$Provider;
     .locals 17
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Landroid/content/pm/ResolveInfo;
 
     const/4 v7, 0x0
 
@@ -2838,8 +2800,6 @@
 
 .method private parseSecretProviderInfoXml(Landroid/content/ComponentName;Landroid/content/pm/ResolveInfo;)Lcom/android/server/AppWidgetServiceImpl$Provider;
     .locals 17
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Landroid/content/pm/ResolveInfo;
 
     const/4 v7, 0x0
 
@@ -3326,7 +3286,6 @@
 
 .method private performUpgrade(I)V
     .locals 7
-    .param p1    # I
 
     const/4 v6, 0x1
 
@@ -3589,7 +3548,6 @@
 
 .method private unbindAppWidgetRemoteViewsServicesLocked(Lcom/android/server/AppWidgetServiceImpl$AppWidgetId;)V
     .locals 5
-    .param p1    # Lcom/android/server/AppWidgetServiceImpl$AppWidgetId;
 
     iget v0, p1, Lcom/android/server/AppWidgetServiceImpl$AppWidgetId;->appWidgetId:I
 
@@ -3818,7 +3776,6 @@
 
 .method addProviderLocked(Landroid/content/pm/ResolveInfo;)Z
     .locals 5
-    .param p1    # Landroid/content/pm/ResolveInfo;
 
     const/4 v1, 0x0
 
@@ -3876,7 +3833,6 @@
 
 .method addProvidersForPackageLocked(Ljava/lang/String;)Z
     .locals 12
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -3981,7 +3937,6 @@
 
 .method addSecretProviderLocked(Landroid/content/pm/ResolveInfo;)Z
     .locals 8
-    .param p1    # Landroid/content/pm/ResolveInfo;
 
     const/4 v4, 0x0
 
@@ -4085,8 +4040,6 @@
 
 .method public allocateAppWidgetId(Ljava/lang/String;I)I
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-virtual {p0, p1}, Lcom/android/server/AppWidgetServiceImpl;->enforceSystemOrCallingUid(Ljava/lang/String;)I
 
@@ -4263,9 +4216,6 @@
 
 .method public bindAppWidgetId(ILandroid/content/ComponentName;Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # Landroid/os/Bundle;
 
     iget-object v0, p0, Lcom/android/server/AppWidgetServiceImpl;->mContext:Landroid/content/Context;
 
@@ -4308,10 +4258,6 @@
 
 .method public bindAppWidgetIdIfAllowed(Ljava/lang/String;ILandroid/content/ComponentName;Landroid/os/Bundle;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Landroid/content/ComponentName;
-    .param p4    # Landroid/os/Bundle;
 
     const/4 v1, 0x0
 
@@ -4355,9 +4301,6 @@
 
 .method public bindRemoteViewsService(ILandroid/content/Intent;Landroid/os/IBinder;)V
     .locals 17
-    .param p1    # I
-    .param p2    # Landroid/content/Intent;
-    .param p3    # Landroid/os/IBinder;
 
     move-object/from16 v0, p0
 
@@ -4677,8 +4620,6 @@
 
 .method canAccessAppWidgetId(Lcom/android/server/AppWidgetServiceImpl$AppWidgetId;I)Z
     .locals 3
-    .param p1    # Lcom/android/server/AppWidgetServiceImpl$AppWidgetId;
-    .param p2    # I
 
     const/4 v0, 0x1
 
@@ -4723,7 +4664,6 @@
 
 .method cancelBroadcasts(Lcom/android/server/AppWidgetServiceImpl$Provider;)V
     .locals 4
-    .param p1    # Lcom/android/server/AppWidgetServiceImpl$Provider;
 
     sget-boolean v2, Lcom/android/server/AppWidgetServiceImpl;->DBG:Z
 
@@ -4906,7 +4846,6 @@
 
 .method public deleteAppWidgetId(I)V
     .locals 4
-    .param p1    # I
 
     iget-object v3, p0, Lcom/android/server/AppWidgetServiceImpl;->mAppWidgetIds:Ljava/util/ArrayList;
 
@@ -4963,7 +4902,6 @@
 
 .method deleteAppWidgetLocked(Lcom/android/server/AppWidgetServiceImpl$AppWidgetId;)V
     .locals 7
-    .param p1    # Lcom/android/server/AppWidgetServiceImpl$AppWidgetId;
 
     invoke-direct {p0, p1}, Lcom/android/server/AppWidgetServiceImpl;->unbindAppWidgetRemoteViewsServicesLocked(Lcom/android/server/AppWidgetServiceImpl$AppWidgetId;)V
 
@@ -5151,7 +5089,6 @@
 
 .method public deleteHost(I)V
     .locals 4
-    .param p1    # I
 
     iget-object v3, p0, Lcom/android/server/AppWidgetServiceImpl;->mAppWidgetIds:Ljava/util/ArrayList;
 
@@ -5201,7 +5138,6 @@
 
 .method deleteHostLocked(Lcom/android/server/AppWidgetServiceImpl$Host;)V
     .locals 4
-    .param p1    # Lcom/android/server/AppWidgetServiceImpl$Host;
 
     iget-object v3, p1, Lcom/android/server/AppWidgetServiceImpl$Host;->instances:Ljava/util/ArrayList;
 
@@ -5250,7 +5186,6 @@
 
 .method deleteSecretAppWidgetLocked(Lcom/android/server/AppWidgetServiceImpl$AppWidgetId;)V
     .locals 7
-    .param p1    # Lcom/android/server/AppWidgetServiceImpl$AppWidgetId;
 
     iget-object v1, p1, Lcom/android/server/AppWidgetServiceImpl$AppWidgetId;->host:Lcom/android/server/AppWidgetServiceImpl$Host;
 
@@ -5334,9 +5269,6 @@
 
 .method dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     iget-object v2, p0, Lcom/android/server/AppWidgetServiceImpl;->mContext:Landroid/content/Context;
 
@@ -5687,7 +5619,6 @@
 
 .method enforceCallingUid(Ljava/lang/String;)I
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;
@@ -5768,7 +5699,6 @@
 
 .method enforceSystemOrCallingUid(Ljava/lang/String;)I
     .locals 3
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;
@@ -5829,7 +5759,6 @@
 
 .method public getAllWidgets(Ljava/lang/String;)Ljava/util/Map;
     .locals 10
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -6038,7 +5967,6 @@
 
 .method public getAppWidgetIds(Landroid/content/ComponentName;)[I
     .locals 4
-    .param p1    # Landroid/content/ComponentName;
 
     iget-object v2, p0, Lcom/android/server/AppWidgetServiceImpl;->mAppWidgetIds:Ljava/util/ArrayList;
 
@@ -6091,7 +6019,6 @@
 
 .method public getAppWidgetIdsForHost(I)[I
     .locals 4
-    .param p1    # I
 
     iget-object v3, p0, Lcom/android/server/AppWidgetServiceImpl;->mAppWidgetIds:Ljava/util/ArrayList;
 
@@ -6140,7 +6067,6 @@
 
 .method public getAppWidgetInfo(I)Landroid/appwidget/AppWidgetProviderInfo;
     .locals 4
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -6209,7 +6135,6 @@
 
 .method public getAppWidgetOptions(I)Landroid/os/Bundle;
     .locals 3
-    .param p1    # I
 
     iget-object v2, p0, Lcom/android/server/AppWidgetServiceImpl;->mAppWidgetIds:Ljava/util/ArrayList;
 
@@ -6272,7 +6197,6 @@
 
 .method public getAppWidgetViews(I)Landroid/widget/RemoteViews;
     .locals 4
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -6363,7 +6287,6 @@
 
 .method public getInstalledProviders(I)Ljava/util/List;
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -6524,7 +6447,6 @@
 
 .method public getSecretAppWidgetInfo(I)Landroid/appwidget/AppWidgetProviderInfo;
     .locals 5
-    .param p1    # I
 
     iget-object v2, p0, Lcom/android/server/AppWidgetServiceImpl;->mContext:Landroid/content/Context;
 
@@ -6644,7 +6566,6 @@
 
 .method getSettingsLogFile(I)Ljava/io/File;
     .locals 4
-    .param p1    # I
 
     new-instance v0, Ljava/io/File;
 
@@ -6681,7 +6602,6 @@
 
 .method getUidForPackage(Ljava/lang/String;)I
     .locals 4
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/pm/PackageManager$NameNotFoundException;
@@ -6732,7 +6652,6 @@
 
 .method public hasBindAppWidgetPermission(Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     iget-boolean v0, p0, Lcom/android/server/AppWidgetServiceImpl;->mHasFeature:Z
 
@@ -7133,7 +7052,6 @@
 
 .method public logToFile(Ljava/lang/String;)V
     .locals 9
-    .param p1    # Ljava/lang/String;
 
     const/4 v8, 0x5
 
@@ -7290,7 +7208,6 @@
 
 .method lookupAppWidgetIdLocked(I)Lcom/android/server/AppWidgetServiceImpl$AppWidgetId;
     .locals 5
-    .param p1    # I
 
     invoke-static {}, Landroid/os/Binder;->getCallingUid()I
 
@@ -7341,8 +7258,6 @@
 
 .method lookupHostLocked(II)Lcom/android/server/AppWidgetServiceImpl$Host;
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     iget-object v3, p0, Lcom/android/server/AppWidgetServiceImpl;->mHosts:Ljava/util/ArrayList;
 
@@ -7389,9 +7304,6 @@
 
 .method lookupOrAddHostLocked(ILjava/lang/String;I)Lcom/android/server/AppWidgetServiceImpl$Host;
     .locals 5
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     iget-object v4, p0, Lcom/android/server/AppWidgetServiceImpl;->mHosts:Ljava/util/ArrayList;
 
@@ -7454,7 +7366,6 @@
 
 .method lookupProviderLocked(Landroid/content/ComponentName;)Lcom/android/server/AppWidgetServiceImpl$Provider;
     .locals 4
-    .param p1    # Landroid/content/ComponentName;
 
     iget-object v3, p0, Lcom/android/server/AppWidgetServiceImpl;->mInstalledProviders:Ljava/util/ArrayList;
 
@@ -7501,7 +7412,6 @@
 
 .method lookupSecretAppWidgetIdLocked(I)Lcom/android/server/AppWidgetServiceImpl$AppWidgetId;
     .locals 5
-    .param p1    # I
 
     invoke-static {}, Landroid/os/Binder;->getCallingUid()I
 
@@ -7552,8 +7462,6 @@
 
 .method lookupSecretHostLocked(II)Lcom/android/server/AppWidgetServiceImpl$Host;
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     iget-object v3, p0, Lcom/android/server/AppWidgetServiceImpl;->mSecretHosts:Ljava/util/ArrayList;
 
@@ -7600,7 +7508,6 @@
 
 .method lookupSecretProviderLocked(Landroid/content/ComponentName;)Lcom/android/server/AppWidgetServiceImpl$Provider;
     .locals 4
-    .param p1    # Landroid/content/ComponentName;
 
     iget-object v3, p0, Lcom/android/server/AppWidgetServiceImpl;->mSecretProviders:Ljava/util/ArrayList;
 
@@ -7647,8 +7554,6 @@
 
 .method public notifyAppWidgetViewDataChanged([II)V
     .locals 7
-    .param p1    # [I
-    .param p2    # I
 
     iget-boolean v3, p0, Lcom/android/server/AppWidgetServiceImpl;->mNoProductShip:Z
 
@@ -7776,8 +7681,6 @@
 
 .method notifyAppWidgetViewDataChangedInstanceLocked(Lcom/android/server/AppWidgetServiceImpl$AppWidgetId;I)V
     .locals 12
-    .param p1    # Lcom/android/server/AppWidgetServiceImpl$AppWidgetId;
-    .param p2    # I
 
     iget-boolean v9, p0, Lcom/android/server/AppWidgetServiceImpl;->mNoProductShip:Z
 
@@ -8097,7 +8000,6 @@
 
 .method onBroadcastReceived(Landroid/content/Intent;)V
     .locals 19
-    .param p1    # Landroid/content/Intent;
 
     sget-boolean v15, Lcom/android/server/AppWidgetServiceImpl;->DBG:Z
 
@@ -8793,8 +8695,6 @@
 
 .method public partiallyUpdateAppWidgetIds([ILandroid/widget/RemoteViews;)V
     .locals 7
-    .param p1    # [I
-    .param p2    # Landroid/widget/RemoteViews;
 
     iget-boolean v3, p0, Lcom/android/server/AppWidgetServiceImpl;->mHasFeature:Z
 
@@ -8900,7 +8800,6 @@
 
 .method pruneHostLocked(Lcom/android/server/AppWidgetServiceImpl$Host;)V
     .locals 1
-    .param p1    # Lcom/android/server/AppWidgetServiceImpl$Host;
 
     iget-object v0, p1, Lcom/android/server/AppWidgetServiceImpl$Host;->instances:Ljava/util/ArrayList;
 
@@ -8924,7 +8823,6 @@
 
 .method pruneSecretHostLocked(Lcom/android/server/AppWidgetServiceImpl$Host;)V
     .locals 1
-    .param p1    # Lcom/android/server/AppWidgetServiceImpl$Host;
 
     iget-object v0, p1, Lcom/android/server/AppWidgetServiceImpl$Host;->instances:Ljava/util/ArrayList;
 
@@ -8948,7 +8846,6 @@
 
 .method readSecretStateFromFileLocked(Ljava/io/FileInputStream;)V
     .locals 33
-    .param p1    # Ljava/io/FileInputStream;
 
     const/16 v27, 0x0
 
@@ -10029,7 +9926,6 @@
 
 .method readStateFromFileLocked(Ljava/io/FileInputStream;)V
     .locals 44
-    .param p1    # Ljava/io/FileInputStream;
 
     const/16 v36, 0x0
 
@@ -13985,8 +13881,6 @@
 
 .method registerForBroadcastsLocked(Lcom/android/server/AppWidgetServiceImpl$Provider;[I)V
     .locals 11
-    .param p1    # Lcom/android/server/AppWidgetServiceImpl$Provider;
-    .param p2    # [I
 
     const/4 v7, 0x1
 
@@ -14127,8 +14021,6 @@
 
 .method removeProviderLocked(ILcom/android/server/AppWidgetServiceImpl$Provider;)V
     .locals 8
-    .param p1    # I
-    .param p2    # Lcom/android/server/AppWidgetServiceImpl$Provider;
 
     const/4 v7, 0x0
 
@@ -14344,7 +14236,6 @@
 
 .method removeProvidersForPackageLocked(Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -14839,7 +14730,6 @@
 
 .method sendEnableIntentLocked(Lcom/android/server/AppWidgetServiceImpl$Provider;)V
     .locals 4
-    .param p1    # Lcom/android/server/AppWidgetServiceImpl$Provider;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -14939,8 +14829,6 @@
 
 .method sendUpdateIntentLocked(Lcom/android/server/AppWidgetServiceImpl$Provider;[I)V
     .locals 4
-    .param p1    # Lcom/android/server/AppWidgetServiceImpl$Provider;
-    .param p2    # [I
 
     if-eqz p2, :cond_0
 
@@ -14984,8 +14872,6 @@
 
 .method public setBindAppWidgetPermission(Ljava/lang/String;Z)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     iget-boolean v0, p0, Lcom/android/server/AppWidgetServiceImpl;->mHasFeature:Z
 
@@ -15061,9 +14947,6 @@
 
 .method public startListening(Lcom/android/internal/appwidget/IAppWidgetHost;Ljava/lang/String;ILjava/util/List;)[I
     .locals 10
-    .param p1    # Lcom/android/internal/appwidget/IAppWidgetHost;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -15213,7 +15096,6 @@
 
 .method public stopListening(I)V
     .locals 4
-    .param p1    # I
 
     iget-object v2, p0, Lcom/android/server/AppWidgetServiceImpl;->mAppWidgetIds:Ljava/util/ArrayList;
 
@@ -15311,7 +15193,6 @@
 
 .method public systemReady(Z)V
     .locals 2
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/AppWidgetServiceImpl;->mSafeMode:Z
 
@@ -15342,8 +15223,6 @@
 
 .method public unbindRemoteViewsService(ILandroid/content/Intent;)V
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/content/Intent;
 
     iget-object v4, p0, Lcom/android/server/AppWidgetServiceImpl;->mAppWidgetIds:Ljava/util/ArrayList;
 
@@ -15435,8 +15314,6 @@
 
 .method public updateAppWidgetIds([ILandroid/widget/RemoteViews;)V
     .locals 8
-    .param p1    # [I
-    .param p2    # Landroid/widget/RemoteViews;
 
     iget-boolean v4, p0, Lcom/android/server/AppWidgetServiceImpl;->mNoProductShip:Z
 
@@ -15661,8 +15538,6 @@
 
 .method updateAppWidgetInstanceLocked(Lcom/android/server/AppWidgetServiceImpl$AppWidgetId;Landroid/widget/RemoteViews;)V
     .locals 1
-    .param p1    # Lcom/android/server/AppWidgetServiceImpl$AppWidgetId;
-    .param p2    # Landroid/widget/RemoteViews;
 
     const/4 v0, 0x0
 
@@ -15673,9 +15548,6 @@
 
 .method updateAppWidgetInstanceLocked(Lcom/android/server/AppWidgetServiceImpl$AppWidgetId;Landroid/widget/RemoteViews;Z)V
     .locals 4
-    .param p1    # Lcom/android/server/AppWidgetServiceImpl$AppWidgetId;
-    .param p2    # Landroid/widget/RemoteViews;
-    .param p3    # Z
 
     iget-boolean v1, p0, Lcom/android/server/AppWidgetServiceImpl;->mNoProductShip:Z
 
@@ -15862,8 +15734,6 @@
 
 .method public updateAppWidgetOptions(ILandroid/os/Bundle;)V
     .locals 9
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     iget-object v6, p0, Lcom/android/server/AppWidgetServiceImpl;->mAppWidgetIds:Ljava/util/ArrayList;
 
@@ -15985,8 +15855,6 @@
 
 .method public updateAppWidgetProvider(Landroid/content/ComponentName;Landroid/widget/RemoteViews;)V
     .locals 10
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Landroid/widget/RemoteViews;
 
     iget-boolean v6, p0, Lcom/android/server/AppWidgetServiceImpl;->mHasFeature:Z
 
@@ -16090,7 +15958,6 @@
 
 .method updateProvidersForPackageLocked(Ljava/lang/String;Ljava/util/Set;)Z
     .locals 25
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -16581,7 +16448,6 @@
 
 .method writeSecretStateToFileLocked(Ljava/io/FileOutputStream;)Z
     .locals 13
-    .param p1    # Ljava/io/FileOutputStream;
 
     const/4 v8, 0x1
 
@@ -16968,7 +16834,6 @@
 
 .method writeStateToFileLocked(Ljava/io/FileOutputStream;)Z
     .locals 14
-    .param p1    # Ljava/io/FileOutputStream;
 
     const/4 v10, 0x1
 

@@ -162,7 +162,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
 
     const/4 v4, 0x0
 
@@ -346,7 +345,6 @@
 
 .method static synthetic access$000(I)Ljava/io/File;
     .locals 1
-    .param p0    # I
 
     invoke-static {p0}, Lcom/android/server/WallpaperManagerService;->getWallpaperDir(I)Ljava/io/File;
 
@@ -357,8 +355,6 @@
 
 .method static synthetic access$100(Lcom/android/server/WallpaperManagerService;Lcom/android/server/WallpaperManagerService$WallpaperData;)V
     .locals 0
-    .param p0    # Lcom/android/server/WallpaperManagerService;
-    .param p1    # Lcom/android/server/WallpaperManagerService$WallpaperData;
 
     invoke-direct {p0, p1}, Lcom/android/server/WallpaperManagerService;->notifyCallbacksLocked(Lcom/android/server/WallpaperManagerService$WallpaperData;)V
 
@@ -367,8 +363,6 @@
 
 .method static synthetic access$200(Lcom/android/server/WallpaperManagerService;Lcom/android/server/WallpaperManagerService$WallpaperData;)V
     .locals 0
-    .param p0    # Lcom/android/server/WallpaperManagerService;
-    .param p1    # Lcom/android/server/WallpaperManagerService$WallpaperData;
 
     invoke-direct {p0, p1}, Lcom/android/server/WallpaperManagerService;->saveSettingsLocked(Lcom/android/server/WallpaperManagerService$WallpaperData;)V
 
@@ -377,9 +371,6 @@
 
 .method static synthetic access$300(Lcom/android/server/WallpaperManagerService;Lcom/android/server/WallpaperManagerService$WallpaperData;Z)V
     .locals 0
-    .param p0    # Lcom/android/server/WallpaperManagerService;
-    .param p1    # Lcom/android/server/WallpaperManagerService$WallpaperData;
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/WallpaperManagerService;->saveSettingsLocked(Lcom/android/server/WallpaperManagerService$WallpaperData;Z)V
 
@@ -388,7 +379,6 @@
 
 .method static synthetic access$400(Lcom/android/server/WallpaperManagerService;)Landroid/os/PersonaManager;
     .locals 1
-    .param p0    # Lcom/android/server/WallpaperManagerService;
 
     iget-object v0, p0, Lcom/android/server/WallpaperManagerService;->mPersonaManager:Landroid/os/PersonaManager;
 
@@ -397,7 +387,6 @@
 
 .method static synthetic access$500(Lcom/android/server/WallpaperManagerService;)Ljava/util/List;
     .locals 1
-    .param p0    # Lcom/android/server/WallpaperManagerService;
 
     invoke-direct {p0}, Lcom/android/server/WallpaperManagerService;->getContainerList()Ljava/util/List;
 
@@ -408,7 +397,6 @@
 
 .method static synthetic access$600(Lcom/android/server/WallpaperManagerService;)I
     .locals 1
-    .param p0    # Lcom/android/server/WallpaperManagerService;
 
     iget v0, p0, Lcom/android/server/WallpaperManagerService;->mTempOldUserId:I
 
@@ -417,8 +405,6 @@
 
 .method static synthetic access$602(Lcom/android/server/WallpaperManagerService;I)I
     .locals 0
-    .param p0    # Lcom/android/server/WallpaperManagerService;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/WallpaperManagerService;->mTempOldUserId:I
 
@@ -427,7 +413,6 @@
 
 .method static synthetic access$900(Lcom/android/server/WallpaperManagerService;)I
     .locals 1
-    .param p0    # Lcom/android/server/WallpaperManagerService;
 
     invoke-direct {p0}, Lcom/android/server/WallpaperManagerService;->SimStatusVerify()I
 
@@ -438,7 +423,6 @@
 
 .method private checkPermission(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/server/WallpaperManagerService;->mContext:Landroid/content/Context;
 
@@ -492,8 +476,6 @@
 
 .method private deleteMultiSIMProfileJournaledFile(II)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
 
     const-string v2, "WallpaperService"
 
@@ -580,8 +562,6 @@
 
 .method private deleteMultiSIMProfileWallpaper(II)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
 
     const-string v2, "WallpaperService"
 
@@ -668,8 +648,6 @@
 
 .method private deleteWallpaperFile(II)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
 
     const-string v2, "WallpaperService"
 
@@ -913,7 +891,6 @@
 
 .method private static getWallpaperDir(I)Ljava/io/File;
     .locals 1
-    .param p0    # I
 
     invoke-static {p0}, Landroid/os/Environment;->getUserSystemDirectory(I)Ljava/io/File;
 
@@ -924,7 +901,6 @@
 
 .method private loadSettingsLocked(I)V
     .locals 16
-    .param p1    # I
 
     const-string v13, "WallpaperService"
 
@@ -1535,7 +1511,6 @@
 
 .method private static makeJournaledFile(I)Lcom/android/internal/util/JournaledFile;
     .locals 6
-    .param p0    # I
 
     new-instance v1, Ljava/io/File;
 
@@ -1644,7 +1619,6 @@
 
 .method private notifyCallbacksLocked(Lcom/android/server/WallpaperManagerService$WallpaperData;)V
     .locals 6
-    .param p1    # Lcom/android/server/WallpaperManagerService$WallpaperData;
 
     # getter for: Lcom/android/server/WallpaperManagerService$WallpaperData;->callbacks:Landroid/os/RemoteCallbackList;
     invoke-static {p1}, Lcom/android/server/WallpaperManagerService$WallpaperData;->access$800(Lcom/android/server/WallpaperManagerService$WallpaperData;)Landroid/os/RemoteCallbackList;
@@ -1747,7 +1721,6 @@
 
 .method private saveSettingsLocked(Lcom/android/server/WallpaperManagerService$WallpaperData;)V
     .locals 1
-    .param p1    # Lcom/android/server/WallpaperManagerService$WallpaperData;
 
     const/4 v0, 0x0
 
@@ -1758,8 +1731,6 @@
 
 .method private saveSettingsLocked(Lcom/android/server/WallpaperManagerService$WallpaperData;Z)V
     .locals 8
-    .param p1    # Lcom/android/server/WallpaperManagerService$WallpaperData;
-    .param p2    # Z
 
     const-string v5, "WallpaperService"
 
@@ -1945,7 +1916,6 @@
 
 .method private simInserted(I)Z
     .locals 4
-    .param p1    # I
 
     const-string/jumbo v1, "ril.ICC_TYPE"
 
@@ -2014,8 +1984,6 @@
 # virtual methods
 .method attachServiceLocked(Lcom/android/server/WallpaperManagerService$WallpaperConnection;Lcom/android/server/WallpaperManagerService$WallpaperData;)V
     .locals 10
-    .param p1    # Lcom/android/server/WallpaperManagerService$WallpaperConnection;
-    .param p2    # Lcom/android/server/WallpaperManagerService$WallpaperData;
 
     const/4 v9, 0x0
 
@@ -2076,11 +2044,6 @@
 
 .method bindWallpaperComponentLocked(Landroid/content/ComponentName;ZZLcom/android/server/WallpaperManagerService$WallpaperData;Landroid/os/IRemoteCallback;)Z
     .locals 21
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Z
-    .param p3    # Z
-    .param p4    # Lcom/android/server/WallpaperManagerService$WallpaperData;
-    .param p5    # Landroid/os/IRemoteCallback;
 
     const-string v3, "WallpaperService"
 
@@ -2945,7 +2908,6 @@
 
 .method clearWallpaperComponentLocked(Lcom/android/server/WallpaperManagerService$WallpaperData;)V
     .locals 1
-    .param p1    # Lcom/android/server/WallpaperManagerService$WallpaperData;
 
     const/4 v0, 0x0
 
@@ -2958,9 +2920,6 @@
 
 .method clearWallpaperLocked(ZILandroid/os/IRemoteCallback;)V
     .locals 10
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # Landroid/os/IRemoteCallback;
 
     const/4 v1, 0x0
 
@@ -3077,8 +3036,6 @@
 
 .method public copyFile(Ljava/lang/String;Landroid/os/ParcelFileDescriptor;)V
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/ParcelFileDescriptor;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -3306,7 +3263,6 @@
 
 .method detachWallpaperLocked(Lcom/android/server/WallpaperManagerService$WallpaperData;)V
     .locals 4
-    .param p1    # Lcom/android/server/WallpaperManagerService$WallpaperData;
 
     const/4 v3, 0x0
 
@@ -3435,9 +3391,6 @@
 
 .method protected dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 9
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     iget-object v3, p0, Lcom/android/server/WallpaperManagerService;->mContext:Landroid/content/Context;
 
@@ -4029,8 +3982,6 @@
 
 .method getMultiSIMProfileWallpaper(II)Landroid/os/ParcelFileDescriptor;
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     const/4 v2, 0x0
 
@@ -4122,8 +4073,6 @@
 
 .method getMultiSIMProfileWallpaperInfo(II)Landroid/os/ParcelFileDescriptor;
     .locals 7
-    .param p1    # I
-    .param p2    # I
 
     const/4 v2, 0x0
 
@@ -4266,8 +4215,6 @@
 
 .method public getWallpaper(Landroid/app/IWallpaperManagerCallback;Landroid/os/Bundle;)Landroid/os/ParcelFileDescriptor;
     .locals 13
-    .param p1    # Landroid/app/IWallpaperManagerCallback;
-    .param p2    # Landroid/os/Bundle;
 
     const/4 v8, 0x0
 
@@ -4493,9 +4440,6 @@
 
 .method public getWallpaperForMultiSim(Landroid/app/IWallpaperManagerCallback;Landroid/os/Bundle;I)Landroid/os/ParcelFileDescriptor;
     .locals 12
-    .param p1    # Landroid/app/IWallpaperManagerCallback;
-    .param p2    # Landroid/os/Bundle;
-    .param p3    # I
 
     const/4 v7, 0x0
 
@@ -4800,7 +4744,6 @@
 
 .method public hasNamedWallpaper(Ljava/lang/String;)Z
     .locals 9
-    .param p1    # Ljava/lang/String;
 
     iget-object v7, p0, Lcom/android/server/WallpaperManagerService;->mLock:Ljava/lang/Object;
 
@@ -4923,7 +4866,6 @@
 
 .method multiSIMProfileWallpaperRestored(I)V
     .locals 9
-    .param p1    # I
 
     const-string v1, "WallpaperService"
 
@@ -5053,7 +4995,6 @@
 
 .method onRemoveUser(I)V
     .locals 6
-    .param p1    # I
 
     const/4 v3, 0x1
 
@@ -5122,7 +5063,6 @@
 
 .method onStoppingUser(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -5181,9 +5121,6 @@
 
 .method public restoreMultiSIMProfileWallpaper(III)V
     .locals 8
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const-string v5, "WallpaperService"
 
@@ -5396,8 +5333,6 @@
 
 .method public restoreMultiSIMProfileWallpaperInfo(II)V
     .locals 9
-    .param p1    # I
-    .param p2    # I
 
     const-string v6, "WallpaperService"
 
@@ -5634,7 +5569,6 @@
 
 .method restoreNamedResourceLocked(Lcom/android/server/WallpaperManagerService$WallpaperData;)Z
     .locals 21
-    .param p1    # Lcom/android/server/WallpaperManagerService$WallpaperData;
 
     move-object/from16 v0, p1
 
@@ -6256,8 +6190,6 @@
 
 .method public setDimensionHints(II)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -6434,7 +6366,6 @@
 
 .method public setSettingsSystemUiTransparency(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "WallpaperService"
 
@@ -6475,7 +6406,6 @@
 
 .method public setWallpaper(Ljava/lang/String;)Landroid/os/ParcelFileDescriptor;
     .locals 10
-    .param p1    # Ljava/lang/String;
 
     const-string v6, "android.permission.SET_WALLPAPER"
 
@@ -6612,7 +6542,6 @@
 
 .method public setWallpaperComponent(Landroid/content/ComponentName;)V
     .locals 11
-    .param p1    # Landroid/content/ComponentName;
 
     const-string v0, "android.permission.SET_WALLPAPER_COMPONENT"
 
@@ -6768,8 +6697,6 @@
 
 .method public setWallpaperForMultiSim(Ljava/lang/String;I)Landroid/os/ParcelFileDescriptor;
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const-string v0, "WallpaperService"
 
@@ -6804,7 +6731,6 @@
 
 .method public setWallpaperForSet(Ljava/lang/String;)Landroid/os/ParcelFileDescriptor;
     .locals 9
-    .param p1    # Ljava/lang/String;
 
     const/4 v8, 0x1
 
@@ -7179,9 +7105,6 @@
 
 .method public storeMultiSIMProfileWallpaper(III)V
     .locals 10
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -7445,8 +7368,6 @@
 
 .method public storeMultiSIMProfileWallpaperInfo(II)V
     .locals 10
-    .param p1    # I
-    .param p2    # I
 
     const-string v7, "WallpaperService"
 
@@ -7676,8 +7597,6 @@
 
 .method switchUser(ILandroid/os/IRemoteCallback;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/os/IRemoteCallback;
 
     iget-object v2, p0, Lcom/android/server/WallpaperManagerService;->mLock:Ljava/lang/Object;
 
@@ -7740,8 +7659,6 @@
 
 .method switchWallpaper(Lcom/android/server/WallpaperManagerService$WallpaperData;Landroid/os/IRemoteCallback;)V
     .locals 9
-    .param p1    # Lcom/android/server/WallpaperManagerService$WallpaperData;
-    .param p2    # Landroid/os/IRemoteCallback;
 
     iget-object v8, p0, Lcom/android/server/WallpaperManagerService;->mLock:Ljava/lang/Object;
 
@@ -7981,8 +7898,6 @@
 
 .method updateWallpaperBitmapLocked(Ljava/lang/String;Lcom/android/server/WallpaperManagerService$WallpaperData;)Landroid/os/ParcelFileDescriptor;
     .locals 12
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/server/WallpaperManagerService$WallpaperData;
 
     const/4 v7, 0x0
 
@@ -8100,8 +8015,6 @@
 
 .method updateWallpaperBitmapLockedForSet(Ljava/lang/String;Lcom/android/server/WallpaperManagerService$WallpaperData;)Landroid/os/ParcelFileDescriptor;
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/server/WallpaperManagerService$WallpaperData;
 
     if-nez p1, :cond_0
 

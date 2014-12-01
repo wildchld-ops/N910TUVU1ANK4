@@ -71,7 +71,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -88,7 +87,6 @@
 
 .method private constructor <init>(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -120,7 +118,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/transaction/CscParser;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/mms/transaction/CscParser;
 
     iget-object v0, p0, Lcom/android/mms/transaction/CscParser;->mContext:Landroid/content/Context;
 
@@ -137,7 +134,6 @@
 
 .method static synthetic access$300(Lcom/android/mms/transaction/CscParser;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/mms/transaction/CscParser;
 
     iget-object v0, p0, Lcom/android/mms/transaction/CscParser;->mHandler:Landroid/os/Handler;
 
@@ -146,7 +142,6 @@
 
 .method static synthetic access$402(Landroid/net/Uri;)Landroid/net/Uri;
     .locals 0
-    .param p0    # Landroid/net/Uri;
 
     sput-object p0, Lcom/android/mms/transaction/CscParser;->value_uri:Landroid/net/Uri;
 
@@ -824,7 +819,6 @@
 
 .method public static getInstance(Ljava/lang/String;)Lcom/android/mms/transaction/CscParser;
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     :try_start_0
     sget-object v1, Lcom/android/mms/transaction/CscParser;->sInstance:Lcom/android/mms/transaction/CscParser;
@@ -1433,7 +1427,6 @@
 
 .method private update(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljavax/xml/parsers/ParserConfigurationException;,
@@ -1517,8 +1510,6 @@
 # virtual methods
 .method public GetMediaStore(Ljava/lang/String;I)Landroid/net/Uri;
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v1, 0x0
 
@@ -1618,7 +1609,6 @@
 
 .method public get(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lcom/android/mms/transaction/CscParser;->search(Ljava/lang/String;)Lorg/w3c/dom/Node;
 
@@ -1645,9 +1635,6 @@
 
 .method public getAttrbute(Ljava/lang/String;II)Ljava/lang/String;
     .locals 20
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v5, 0x0
 
@@ -1868,7 +1855,6 @@
 
 .method public getValue(Lorg/w3c/dom/Node;)Ljava/lang/String;
     .locals 4
-    .param p1    # Lorg/w3c/dom/Node;
 
     if-nez p1, :cond_1
 
@@ -1954,7 +1940,6 @@
 
 .method public search(Ljava/lang/String;)Lorg/w3c/dom/Node;
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -2002,8 +1987,6 @@
 
 .method public search(Lorg/w3c/dom/Node;Ljava/lang/String;)Lorg/w3c/dom/Node;
     .locals 5
-    .param p1    # Lorg/w3c/dom/Node;
-    .param p2    # Ljava/lang/String;
 
     invoke-interface {p1}, Lorg/w3c/dom/Node;->getChildNodes()Lorg/w3c/dom/NodeList;
 
@@ -2050,8 +2033,6 @@
 
 .method public searchList(Lorg/w3c/dom/Node;Ljava/lang/String;)Lorg/w3c/dom/NodeList;
     .locals 7
-    .param p1    # Lorg/w3c/dom/Node;
-    .param p2    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 

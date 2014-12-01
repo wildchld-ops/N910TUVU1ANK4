@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Lcom/android/settings/print/PrintServiceSettingsFragment;Lcom/android/settings/print/PrintServiceSettingsFragment$1;)V
     .locals 0
-    .param p1    # Lcom/android/settings/print/PrintServiceSettingsFragment;
-    .param p2    # Lcom/android/settings/print/PrintServiceSettingsFragment$1;
 
     invoke-direct {p0, p1}, Lcom/android/settings/print/PrintServiceSettingsFragment$AnnounceFilterResult;-><init>(Lcom/android/settings/print/PrintServiceSettingsFragment;)V
 

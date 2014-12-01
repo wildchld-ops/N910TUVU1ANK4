@@ -36,8 +36,6 @@
 # virtual methods
 .method public onContextChanged(ILandroid/os/Bundle;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     return-void
 .end method

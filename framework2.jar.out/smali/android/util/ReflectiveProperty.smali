@@ -36,7 +36,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/String;)V
     .locals 15
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -382,7 +381,6 @@
 
 .method private typesMatch(Ljava/lang/Class;Ljava/lang/Class;)Z
     .locals 3
-    .param p2    # Ljava/lang/Class;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

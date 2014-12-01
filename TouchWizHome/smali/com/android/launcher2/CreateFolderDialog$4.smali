@@ -36,9 +36,6 @@
 # virtual methods
 .method public onKey(Landroid/view/View;ILandroid/view/KeyEvent;)Z
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # Landroid/view/KeyEvent;
 
     invoke-virtual {p3}, Landroid/view/KeyEvent;->getKeyCode()I
 

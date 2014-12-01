@@ -46,11 +46,6 @@
 
 .method private constructor <init>(Landroid/content/Context;ILcom/android/launcher2/SurfaceWidgetConnection$ServiceConn;Lcom/android/launcher2/SurfaceWidgetConnection$SurfaceInfo;Lcom/android/launcher2/SurfaceWidgetView;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Lcom/android/launcher2/SurfaceWidgetConnection$ServiceConn;
-    .param p4    # Lcom/android/launcher2/SurfaceWidgetConnection$SurfaceInfo;
-    .param p5    # Lcom/android/launcher2/SurfaceWidgetView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -75,9 +70,6 @@
 
 .method public static bindToService(Lcom/android/launcher2/SurfaceWidgetView;Lcom/samsung/surfacewidget/SurfaceWidgetProviderInfo;I)Lcom/android/launcher2/SurfaceWidgetConnection;
     .locals 8
-    .param p0    # Lcom/android/launcher2/SurfaceWidgetView;
-    .param p1    # Lcom/samsung/surfacewidget/SurfaceWidgetProviderInfo;
-    .param p2    # I
 
     invoke-virtual {p0}, Lcom/android/launcher2/SurfaceWidgetView;->getContext()Landroid/content/Context;
 
@@ -168,7 +160,6 @@
 # virtual methods
 .method public onDestroy(Z)Z
     .locals 3
-    .param p1    # Z
 
     iget-object v1, p0, Lcom/android/launcher2/SurfaceWidgetConnection;->mServiceConn:Lcom/android/launcher2/SurfaceWidgetConnection$ServiceConn;
 
@@ -220,9 +211,6 @@
 
 .method public onLauncherTiltChanged(FFF)V
     .locals 2
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
 
     :try_start_0
     iget-object v1, p0, Lcom/android/launcher2/SurfaceWidgetConnection;->mServiceConn:Lcom/android/launcher2/SurfaceWidgetConnection$ServiceConn;
@@ -275,9 +263,6 @@
 
 .method public onPositionOffsetChanged(FFF)V
     .locals 2
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
 
     iget-object v1, p0, Lcom/android/launcher2/SurfaceWidgetConnection;->mServiceConn:Lcom/android/launcher2/SurfaceWidgetConnection$ServiceConn;
 
@@ -341,7 +326,6 @@
 
 .method public onVerticalTouch(Landroid/view/MotionEvent;)V
     .locals 2
-    .param p1    # Landroid/view/MotionEvent;
 
     :try_start_0
     iget-object v1, p0, Lcom/android/launcher2/SurfaceWidgetConnection;->mServiceConn:Lcom/android/launcher2/SurfaceWidgetConnection$ServiceConn;
@@ -365,7 +349,6 @@
 
 .method public onVisibilityChanged(Z)V
     .locals 3
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -415,7 +398,6 @@
 
 .method public resumeLater(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/launcher2/SurfaceWidgetConnection;->mServiceConn:Lcom/android/launcher2/SurfaceWidgetConnection$ServiceConn;
 
@@ -426,7 +408,6 @@
 
 .method public setFocus(Z)V
     .locals 2
-    .param p1    # Z
 
     :try_start_0
     iget-object v1, p0, Lcom/android/launcher2/SurfaceWidgetConnection;->mServiceConn:Lcom/android/launcher2/SurfaceWidgetConnection$ServiceConn;
@@ -450,7 +431,6 @@
 
 .method public setUpdateTime(I)V
     .locals 2
-    .param p1    # I
 
     :try_start_0
     iget-object v1, p0, Lcom/android/launcher2/SurfaceWidgetConnection;->mServiceConn:Lcom/android/launcher2/SurfaceWidgetConnection$ServiceConn;

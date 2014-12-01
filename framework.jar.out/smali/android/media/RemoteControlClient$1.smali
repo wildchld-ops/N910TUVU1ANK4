@@ -33,8 +33,6 @@
 # virtual methods
 .method public enableRemoteControlDisplay(Landroid/media/IRemoteControlDisplay;Z)V
     .locals 5
-    .param p1    # Landroid/media/IRemoteControlDisplay;
-    .param p2    # Z
 
     const/4 v1, 0x0
 
@@ -87,9 +85,6 @@
 
 .method public informationRequestForDisplay(Landroid/media/IRemoteControlDisplay;II)V
     .locals 3
-    .param p1    # Landroid/media/IRemoteControlDisplay;
-    .param p2    # I
-    .param p3    # I
 
     iget-object v0, p0, Landroid/media/RemoteControlClient$1;->this$0:Landroid/media/RemoteControlClient;
 
@@ -202,8 +197,6 @@
 
 .method public onInformationRequested(II)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
 
     const/4 v6, 0x5
 
@@ -372,9 +365,6 @@
 
 .method public plugRemoteControlDisplay(Landroid/media/IRemoteControlDisplay;II)V
     .locals 3
-    .param p1    # Landroid/media/IRemoteControlDisplay;
-    .param p2    # I
-    .param p3    # I
 
     iget-object v0, p0, Landroid/media/RemoteControlClient$1;->this$0:Landroid/media/RemoteControlClient;
 
@@ -415,8 +405,6 @@
 
 .method public seekTo(IJ)V
     .locals 5
-    .param p1    # I
-    .param p2    # J
 
     const/16 v4, 0xa
 
@@ -470,9 +458,6 @@
 
 .method public setBitmapSizeForDisplay(Landroid/media/IRemoteControlDisplay;II)V
     .locals 3
-    .param p1    # Landroid/media/IRemoteControlDisplay;
-    .param p2    # I
-    .param p3    # I
 
     iget-object v0, p0, Landroid/media/RemoteControlClient$1;->this$0:Landroid/media/RemoteControlClient;
 
@@ -513,9 +498,6 @@
 
 .method public setCommand(III)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     iget-object v0, p0, Landroid/media/RemoteControlClient$1;->this$0:Landroid/media/RemoteControlClient;
 
@@ -558,7 +540,6 @@
 
 .method public setCurrentClientGenerationId(I)V
     .locals 4
-    .param p1    # I
 
     const/4 v3, 0x6
 
@@ -608,8 +589,6 @@
 
 .method public setWantsSyncForDisplay(Landroid/media/IRemoteControlDisplay;Z)V
     .locals 5
-    .param p1    # Landroid/media/IRemoteControlDisplay;
-    .param p2    # Z
 
     const/4 v1, 0x0
 
@@ -662,7 +641,6 @@
 
 .method public unplugRemoteControlDisplay(Landroid/media/IRemoteControlDisplay;)V
     .locals 3
-    .param p1    # Landroid/media/IRemoteControlDisplay;
 
     iget-object v0, p0, Landroid/media/RemoteControlClient$1;->this$0:Landroid/media/RemoteControlClient;
 
@@ -703,9 +681,6 @@
 
 .method public updateMetadata(IILandroid/media/Rating;)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/media/Rating;
 
     iget-object v0, p0, Landroid/media/RemoteControlClient$1;->this$0:Landroid/media/RemoteControlClient;
 

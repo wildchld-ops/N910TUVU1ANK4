@@ -23,8 +23,6 @@
 # direct methods
 .method private constructor <init>(Landroid/graphics/Canvas;Landroid/graphics/pdf/PdfDocument$PageInfo;)V
     .locals 0
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # Landroid/graphics/pdf/PdfDocument$PageInfo;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,9 +35,6 @@
 
 .method synthetic constructor <init>(Landroid/graphics/Canvas;Landroid/graphics/pdf/PdfDocument$PageInfo;Landroid/graphics/pdf/PdfDocument$1;)V
     .locals 0
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # Landroid/graphics/pdf/PdfDocument$PageInfo;
-    .param p3    # Landroid/graphics/pdf/PdfDocument$1;
 
     invoke-direct {p0, p1, p2}, Landroid/graphics/pdf/PdfDocument$Page;-><init>(Landroid/graphics/Canvas;Landroid/graphics/pdf/PdfDocument$PageInfo;)V
 
@@ -48,7 +43,6 @@
 
 .method static synthetic access$400(Landroid/graphics/pdf/PdfDocument$Page;)V
     .locals 0
-    .param p0    # Landroid/graphics/pdf/PdfDocument$Page;
 
     invoke-direct {p0}, Landroid/graphics/pdf/PdfDocument$Page;->finish()V
 

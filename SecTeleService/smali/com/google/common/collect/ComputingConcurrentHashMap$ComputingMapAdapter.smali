@@ -65,7 +65,7 @@
     .end annotation
 
     :try_start_0
-    invoke-virtual {p0, p1}, Lcom/google/common/collect/ComputingConcurrentHashMap;->getOrCompute(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, p1}, Lcom/google/common/collect/ComputingConcurrentHashMap$ComputingMapAdapter;->getOrCompute(Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_0
     .catch Ljava/util/concurrent/ExecutionException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -79,7 +79,7 @@
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object v2, p0, Lcom/google/common/collect/ComputingConcurrentHashMap;->computingFunction:Lcom/google/common/base/Function;
+    iget-object v2, p0, Lcom/google/common/collect/ComputingConcurrentHashMap$ComputingMapAdapter;->computingFunction:Lcom/google/common/base/Function;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -112,7 +112,7 @@
     :catch_0
     move-exception v0
 
-    invoke-virtual {v0}, Ljava/lang/Throwable;->getCause()Ljava/lang/Throwable;
+    invoke-virtual {v0}, Ljava/util/concurrent/ExecutionException;->getCause()Ljava/lang/Throwable;
 
     move-result-object v0
 

@@ -47,10 +47,6 @@
 # direct methods
 .method public constructor <init>(Landroid/app/AppOpsManager$PackageOps;Landroid/app/AppOpsManager$OpEntry;Lcom/android/settings/applications/AppOpsState$AppEntry;I)V
     .locals 1
-    .param p1    # Landroid/app/AppOpsManager$PackageOps;
-    .param p2    # Landroid/app/AppOpsManager$OpEntry;
-    .param p3    # Lcom/android/settings/applications/AppOpsState$AppEntry;
-    .param p4    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -89,7 +85,6 @@
 
 .method private static addOp(Ljava/util/ArrayList;Landroid/app/AppOpsManager$OpEntry;)V
     .locals 6
-    .param p1    # Landroid/app/AppOpsManager$OpEntry;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -168,7 +163,6 @@
 
 .method private getCombinedText(Ljava/util/ArrayList;[Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
     .locals 4
-    .param p2    # [Ljava/lang/CharSequence;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -258,7 +252,6 @@
 # virtual methods
 .method public addOp(Landroid/app/AppOpsManager$OpEntry;)V
     .locals 2
-    .param p1    # Landroid/app/AppOpsManager$OpEntry;
 
     iget-object v0, p0, Lcom/android/settings/applications/AppOpsState$AppOpEntry;->mApp:Lcom/android/settings/applications/AppOpsState$AppEntry;
 
@@ -302,7 +295,6 @@
 
 .method public getOpEntry(I)Landroid/app/AppOpsManager$OpEntry;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/settings/applications/AppOpsState$AppOpEntry;->mOps:Ljava/util/ArrayList;
 
@@ -325,7 +317,6 @@
 
 .method public getSummaryText(Lcom/android/settings/applications/AppOpsState;)Ljava/lang/CharSequence;
     .locals 2
-    .param p1    # Lcom/android/settings/applications/AppOpsState;
 
     iget-object v0, p0, Lcom/android/settings/applications/AppOpsState$AppOpEntry;->mOps:Ljava/util/ArrayList;
 
@@ -348,7 +339,6 @@
 
 .method public getSwitchText(Lcom/android/settings/applications/AppOpsState;)Ljava/lang/CharSequence;
     .locals 2
-    .param p1    # Lcom/android/settings/applications/AppOpsState;
 
     iget-object v0, p0, Lcom/android/settings/applications/AppOpsState$AppOpEntry;->mSwitchOps:Ljava/util/ArrayList;
 
@@ -403,8 +393,6 @@
 
 .method public getTimeText(Landroid/content/res/Resources;Z)Ljava/lang/CharSequence;
     .locals 7
-    .param p1    # Landroid/content/res/Resources;
-    .param p2    # Z
 
     invoke-virtual {p0}, Lcom/android/settings/applications/AppOpsState$AppOpEntry;->isRunning()Z
 

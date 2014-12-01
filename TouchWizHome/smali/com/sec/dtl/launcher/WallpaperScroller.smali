@@ -30,8 +30,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/os/IBinder;)V
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/IBinder;
 
     const/high16 v3, 0x3f800000
 
@@ -117,7 +115,6 @@
 
 .method static synthetic access$000(Lcom/sec/dtl/launcher/WallpaperScroller;)Lcom/sec/dtl/launcher/WallpaperScroller$WallpaperThread;
     .locals 1
-    .param p0    # Lcom/sec/dtl/launcher/WallpaperScroller;
 
     iget-object v0, p0, Lcom/sec/dtl/launcher/WallpaperScroller;->mThread:Lcom/sec/dtl/launcher/WallpaperScroller$WallpaperThread;
 
@@ -126,7 +123,6 @@
 
 .method static synthetic access$100(Lcom/sec/dtl/launcher/WallpaperScroller;)F
     .locals 1
-    .param p0    # Lcom/sec/dtl/launcher/WallpaperScroller;
 
     iget v0, p0, Lcom/sec/dtl/launcher/WallpaperScroller;->mScreenWidth:F
 
@@ -135,7 +131,6 @@
 
 .method static synthetic access$200(Lcom/sec/dtl/launcher/WallpaperScroller;)F
     .locals 1
-    .param p0    # Lcom/sec/dtl/launcher/WallpaperScroller;
 
     iget v0, p0, Lcom/sec/dtl/launcher/WallpaperScroller;->mScreenHeight:F
 

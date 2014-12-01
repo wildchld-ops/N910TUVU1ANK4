@@ -29,10 +29,6 @@
 # direct methods
 .method constructor <init>(Landroid/media/AudioService;IIII)V
     .locals 0
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     iput-object p1, p0, Landroid/media/AudioService$StreamVolumeCommand;->this$0:Landroid/media/AudioService;
 

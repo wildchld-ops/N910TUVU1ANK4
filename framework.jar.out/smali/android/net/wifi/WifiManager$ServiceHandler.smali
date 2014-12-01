@@ -17,7 +17,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/Looper;)V
     .locals 0
-    .param p1    # Landroid/os/Looper;
 
     invoke-direct {p0, p1}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
@@ -28,7 +27,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 6
-    .param p1    # Landroid/os/Message;
 
     const/4 v5, 0x0
 

@@ -170,7 +170,6 @@
 
 .method private constructor <init>(Ljava/lang/String;)V
     .locals 10
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/security/KeyStoreException;,
@@ -459,8 +458,6 @@
 
 .method static areEqual(Ljava/security/cert/X509Certificate;Ljava/security/cert/X509Certificate;)Z
     .locals 4
-    .param p0    # Ljava/security/cert/X509Certificate;
-    .param p1    # Ljava/security/cert/X509Certificate;
 
     const/4 v1, 0x0
 
@@ -497,7 +494,6 @@
 
 .method private findCertificateOrIssuer(Ljava/security/cert/X509Certificate;)Ljava/security/cert/X509Certificate;
     .locals 9
-    .param p1    # Ljava/security/cert/X509Certificate;
 
     const/4 v4, 0x0
 
@@ -648,7 +644,6 @@
 
 .method private generateAlias(Ljavax/security/auth/x500/X500Principal;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljavax/security/auth/x500/X500Principal;
 
     invoke-static {p1}, Lcom/android/org/conscrypt/NativeCrypto;->X509_NAME_hash(Ljavax/security/auth/x500/X500Principal;)I
 
@@ -667,7 +662,6 @@
 
 .method private static getAuthorityKeyIdentifier(Ljava/security/cert/X509Certificate;)Lorg/apache/harmony/security/x509/AuthorityKeyIdentifier;
     .locals 4
-    .param p0    # Ljava/security/cert/X509Certificate;
 
     const/4 v2, 0x0
 
@@ -700,7 +694,6 @@
 
 .method static declared-synchronized getInstance(I)Lcom/android/server/enterprise/certificate/EdmKeyStore;
     .locals 4
-    .param p0    # I
 
     const/4 v1, 0x0
 
@@ -908,7 +901,6 @@
 
 .method private static getSubjectKeyIdentifier(Ljava/security/cert/X509Certificate;)Lorg/apache/harmony/security/x509/SubjectKeyIdentifier;
     .locals 4
-    .param p0    # Ljava/security/cert/X509Certificate;
 
     const/4 v2, 0x0
 
@@ -941,7 +933,6 @@
 
 .method static isCa(Ljava/security/cert/X509Certificate;)Z
     .locals 5
-    .param p0    # Ljava/security/cert/X509Certificate;
 
     const/4 v3, 0x0
 
@@ -1002,7 +993,6 @@
 
 .method static isSelfSigned(Ljava/security/cert/X509Certificate;)Z
     .locals 13
-    .param p0    # Ljava/security/cert/X509Certificate;
 
     const/4 v11, 0x0
 
@@ -1178,8 +1168,6 @@
 
 .method private matchPublicKey(Ljava/security/cert/X509Certificate;Ljava/security/cert/X509Certificate;)Z
     .locals 3
-    .param p1    # Ljava/security/cert/X509Certificate;
-    .param p2    # Ljava/security/cert/X509Certificate;
 
     const/4 v1, 0x0
 
@@ -1391,7 +1379,6 @@
 # virtual methods
 .method containsCertificateOrChain(Ljava/security/cert/X509Certificate;)Z
     .locals 3
-    .param p1    # Ljava/security/cert/X509Certificate;
 
     if-eqz p1, :cond_2
 
@@ -1466,7 +1453,6 @@
 
 .method generateAlias(Ljava/security/cert/X509Certificate;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/security/cert/X509Certificate;
 
     invoke-virtual {p1}, Ljava/security/cert/X509Certificate;->getSubjectX500Principal()Ljavax/security/auth/x500/X500Principal;
 

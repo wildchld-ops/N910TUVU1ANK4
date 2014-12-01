@@ -29,8 +29,6 @@
 
 .method public static newInstance(JZ)Lcom/android/mms/ui/MessageDetailsFragment;
     .locals 3
-    .param p0    # J
-    .param p2    # Z
 
     new-instance v0, Landroid/os/Bundle;
 
@@ -57,7 +55,6 @@
 # virtual methods
 .method public onAttach(Landroid/app/Activity;)V
     .locals 1
-    .param p1    # Landroid/app/Activity;
 
     invoke-super {p0, p1}, Landroid/app/DialogFragment;->onAttach(Landroid/app/Activity;)V
 
@@ -82,7 +79,6 @@
 
 .method public onCancel(Landroid/content/DialogInterface;)V
     .locals 1
-    .param p1    # Landroid/content/DialogInterface;
 
     iget-object v0, p0, Lcom/android/mms/ui/MessageDetailsFragment;->mCallbacks:Lcom/android/mms/ui/MessageDetailsFragment$Callbacks;
 
@@ -98,8 +94,6 @@
 
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 1
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/mms/ui/MessageDetailsFragment;->mCallbacks:Lcom/android/mms/ui/MessageDetailsFragment$Callbacks;
 
@@ -115,7 +109,6 @@
 
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
     .locals 9
-    .param p1    # Landroid/os/Bundle;
 
     invoke-virtual {p0}, Landroid/app/Fragment;->getArguments()Landroid/os/Bundle;
 

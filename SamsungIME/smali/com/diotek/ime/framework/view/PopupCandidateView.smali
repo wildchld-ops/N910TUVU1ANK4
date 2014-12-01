@@ -6,7 +6,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Landroid/view/View;-><init>(Landroid/content/Context;)V
 
@@ -17,7 +16,6 @@
 # virtual methods
 .method public init(Lcom/diotek/ime/framework/view/candidate/AbstractCandidateView;)V
     .locals 2
-    .param p1    # Lcom/diotek/ime/framework/view/candidate/AbstractCandidateView;
 
     const/16 v1, 0xff
 
@@ -34,8 +32,6 @@
 
 .method protected onMeasure(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     invoke-static {p1}, Landroid/view/View$MeasureSpec;->getSize(I)I
 

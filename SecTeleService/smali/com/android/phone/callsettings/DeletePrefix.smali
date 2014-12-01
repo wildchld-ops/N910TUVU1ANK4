@@ -410,7 +410,7 @@
 
     invoke-virtual {v3, v4, v5}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/DeletePrefix;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v4
 
@@ -550,7 +550,7 @@
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/DeletePrefix;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -610,7 +610,7 @@
     if-eqz v0, :cond_0
 
     :try_start_0
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/DeletePrefix;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
@@ -658,7 +658,7 @@
     .locals 3
     .param p1    # Ljava/lang/String;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/DeletePrefix;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -676,7 +676,7 @@
 .method private getDefaultIpNumber()Ljava/lang/String;
     .locals 2
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/DeletePrefix;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -778,7 +778,7 @@
 
     iget-object v1, p0, Lcom/android/phone/callsettings/DeletePrefix;->selectAll:Landroid/widget/LinearLayout;
 
-    invoke-virtual {v1, v3}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v1, v3}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
     const v1, 0x7f0a011a
 
@@ -809,12 +809,12 @@
 
     iget-object v1, p0, Lcom/android/phone/callsettings/DeletePrefix;->emptyText:Landroid/widget/FrameLayout;
 
-    invoke-virtual {v1, v3}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v1, v3}, Landroid/widget/FrameLayout;->setVisibility(I)V
 
     :cond_1
     new-instance v1, Lcom/android/phone/callsettings/DeletePrefix$DeletePrefixAdapter;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/DeletePrefix;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -828,7 +828,7 @@
 
     new-instance v1, Landroid/widget/ArrayAdapter;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/DeletePrefix;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -852,7 +852,7 @@
 
     invoke-direct {v2, p0}, Lcom/android/phone/callsettings/DeletePrefix$5;-><init>(Lcom/android/phone/callsettings/DeletePrefix;)V
 
-    invoke-virtual {v1, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v1, v2}, Landroid/widget/LinearLayout;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     const-string v1, "add_panel"
 
@@ -878,13 +878,13 @@
 
     invoke-direct {v2, p0}, Lcom/android/phone/callsettings/DeletePrefix$6;-><init>(Lcom/android/phone/callsettings/DeletePrefix;)V
 
-    invoke-virtual {v1, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v1, v2}, Landroid/widget/LinearLayout;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     iget-object v1, p0, Lcom/android/phone/callsettings/DeletePrefix;->createLayout:Landroid/widget/LinearLayout;
 
     const/4 v2, 0x0
 
-    invoke-virtual {v1, v2}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v1, v2}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
     const/4 v1, 0x1
 
@@ -897,7 +897,7 @@
 
     invoke-direct {v2, p0}, Lcom/android/phone/callsettings/DeletePrefix$7;-><init>(Lcom/android/phone/callsettings/DeletePrefix;)V
 
-    invoke-virtual {v1, v2}, Landroid/widget/AdapterView;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
+    invoke-virtual {v1, v2}, Landroid/widget/ListView;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
 
     return-void
 .end method
@@ -916,7 +916,7 @@
 
     const/4 v2, 0x0
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/DeletePrefix;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v3
 
@@ -1254,7 +1254,7 @@
 
     const v6, 0x7f09038d
 
-    invoke-virtual {p0, v6}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v6}, Lcom/android/phone/callsettings/DeletePrefix;->getString(I)Ljava/lang/String;
 
     move-result-object v6
 
@@ -1283,7 +1283,7 @@
 
     if-nez v5, :cond_2
 
-    invoke-virtual {p0, v11}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v11}, Lcom/android/phone/callsettings/DeletePrefix;->getString(I)Ljava/lang/String;
 
     move-result-object v5
 
@@ -1316,7 +1316,7 @@
 
     if-eqz v5, :cond_3
 
-    invoke-virtual {p0, v11}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v11}, Lcom/android/phone/callsettings/DeletePrefix;->getString(I)Ljava/lang/String;
 
     move-result-object v5
 
@@ -1369,7 +1369,7 @@
     :goto_2
     iget-object v5, p0, Lcom/android/phone/callsettings/DeletePrefix;->mListAdapter:Lcom/android/phone/callsettings/DeletePrefix$DeletePrefixAdapter;
 
-    invoke-virtual {v5}, Landroid/widget/BaseAdapter;->notifyDataSetInvalidated()V
+    invoke-virtual {v5}, Lcom/android/phone/callsettings/DeletePrefix$DeletePrefixAdapter;->notifyDataSetInvalidated()V
 
     iget-object v5, p0, Lcom/android/phone/callsettings/DeletePrefix;->deletePrefixList:Ljava/util/ArrayList;
 
@@ -1381,7 +1381,7 @@
 
     iget-object v5, p0, Lcom/android/phone/callsettings/DeletePrefix;->emptyText:Landroid/widget/FrameLayout;
 
-    invoke-virtual {v5}, Landroid/view/View;->getVisibility()I
+    invoke-virtual {v5}, Landroid/widget/FrameLayout;->getVisibility()I
 
     move-result v5
 
@@ -1389,7 +1389,7 @@
 
     iget-object v5, p0, Lcom/android/phone/callsettings/DeletePrefix;->emptyText:Landroid/widget/FrameLayout;
 
-    invoke-virtual {v5, v10}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v5, v10}, Landroid/widget/FrameLayout;->setVisibility(I)V
 
     :cond_5
     iput v6, p0, Lcom/android/phone/callsettings/DeletePrefix;->mState:I
@@ -1484,7 +1484,7 @@
     .locals 2
     .param p1    # Ljava/lang/String;
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/DeletePrefix;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -1742,7 +1742,7 @@
 
     invoke-direct {p0}, Lcom/android/phone/callsettings/DeletePrefix;->updateTitleBar()V
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/DeletePrefix;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v0
 
@@ -1763,7 +1763,7 @@
     :goto_0
     iget-object v1, p0, Lcom/android/phone/callsettings/DeletePrefix;->listView:Landroid/widget/ListView;
 
-    invoke-virtual {v1}, Landroid/widget/AdapterView;->getCount()I
+    invoke-virtual {v1}, Landroid/widget/ListView;->getCount()I
 
     move-result v1
 
@@ -1771,7 +1771,7 @@
 
     iget-object v1, p0, Lcom/android/phone/callsettings/DeletePrefix;->listView:Landroid/widget/ListView;
 
-    invoke-virtual {v1, v0}, Landroid/widget/AbsListView;->isItemChecked(I)Z
+    invoke-virtual {v1, v0}, Landroid/widget/ListView;->isItemChecked(I)Z
 
     move-result v1
 
@@ -1797,7 +1797,7 @@
 
     iget-object v4, p0, Lcom/android/phone/callsettings/DeletePrefix;->listView:Landroid/widget/ListView;
 
-    invoke-virtual {v4}, Landroid/widget/AdapterView;->getCount()I
+    invoke-virtual {v4}, Landroid/widget/ListView;->getCount()I
 
     move-result v4
 
@@ -1806,7 +1806,7 @@
     :goto_1
     invoke-interface {v1, v2}, Landroid/widget/Checkable;->setChecked(Z)V
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/DeletePrefix;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v1
 
@@ -1919,7 +1919,7 @@
 
     move-result-object v0
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/DeletePrefix;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 
@@ -1950,7 +1950,7 @@
 
     const v2, 0x7f090a6d
 
-    invoke-virtual {p0, v2}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v2}, Lcom/android/phone/callsettings/DeletePrefix;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2008,7 +2008,7 @@
 
     if-ne v1, v2, :cond_1
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/DeletePrefix;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -2020,7 +2020,7 @@
     return-void
 
     :cond_1
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/DeletePrefix;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -2042,7 +2042,7 @@
 
     new-instance v1, Landroid/widget/EditText;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/DeletePrefix;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -2050,11 +2050,11 @@
 
     const-string v2, ""
 
-    invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {v1, v2}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
     const/4 v2, 0x2
 
-    invoke-virtual {v1, v2}, Landroid/widget/TextView;->setInputType(I)V
+    invoke-virtual {v1, v2}, Landroid/widget/EditText;->setInputType(I)V
 
     const/4 v2, 0x1
 
@@ -2070,18 +2070,18 @@
 
     aput-object v4, v2, v3
 
-    invoke-virtual {v1, v2}, Landroid/widget/TextView;->setFilters([Landroid/text/InputFilter;)V
+    invoke-virtual {v1, v2}, Landroid/widget/EditText;->setFilters([Landroid/text/InputFilter;)V
 
     if-eqz v1, :cond_0
 
-    invoke-virtual {v1}, Landroid/view/View;->requestFocus()Z
+    invoke-virtual {v1}, Landroid/widget/EditText;->requestFocus()Z
 
     :cond_0
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/DeletePrefix;->getActivity()Landroid/app/Activity;
 
     const-string v2, "input_method"
 
-    invoke-virtual {p0, v2}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v2}, Lcom/android/phone/callsettings/DeletePrefix;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v2
 
@@ -2101,7 +2101,7 @@
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/DeletePrefix;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -2145,7 +2145,7 @@
 
     invoke-direct {v3, p0}, Lcom/android/phone/callsettings/DeletePrefix$2;-><init>(Lcom/android/phone/callsettings/DeletePrefix;)V
 
-    invoke-virtual {v2, v3}, Landroid/app/Dialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
+    invoke-virtual {v2, v3}, Landroid/app/AlertDialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
     return-void
 .end method
@@ -2155,13 +2155,13 @@
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/DeletePrefix;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
     invoke-direct {v0, v1}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/DeletePrefix;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -2209,7 +2209,7 @@
 
     invoke-direct {v1, p0}, Lcom/android/phone/callsettings/DeletePrefix$17;-><init>(Lcom/android/phone/callsettings/DeletePrefix;)V
 
-    invoke-virtual {v0, v1}, Landroid/app/Dialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
+    invoke-virtual {v0, v1}, Landroid/app/AlertDialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
     return-void
 .end method
@@ -2225,7 +2225,7 @@
 
     new-instance v1, Landroid/widget/EditText;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/DeletePrefix;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -2233,11 +2233,11 @@
 
     iget-object v0, p0, Lcom/android/phone/callsettings/DeletePrefix;->mTempEditString:Ljava/lang/String;
 
-    invoke-virtual {v1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {v1, v0}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
     const/4 v0, 0x2
 
-    invoke-virtual {v1, v0}, Landroid/widget/TextView;->setInputType(I)V
+    invoke-virtual {v1, v0}, Landroid/widget/EditText;->setInputType(I)V
 
     const/4 v0, 0x1
 
@@ -2253,18 +2253,18 @@
 
     aput-object v3, v0, v2
 
-    invoke-virtual {v1, v0}, Landroid/widget/TextView;->setFilters([Landroid/text/InputFilter;)V
+    invoke-virtual {v1, v0}, Landroid/widget/EditText;->setFilters([Landroid/text/InputFilter;)V
 
     if-eqz v1, :cond_0
 
-    invoke-virtual {v1}, Landroid/view/View;->requestFocus()Z
+    invoke-virtual {v1}, Landroid/widget/EditText;->requestFocus()Z
 
     :cond_0
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/DeletePrefix;->getActivity()Landroid/app/Activity;
 
     const-string v0, "input_method"
 
-    invoke-virtual {p0, v0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Lcom/android/phone/callsettings/DeletePrefix;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -2284,7 +2284,7 @@
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/DeletePrefix;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -2328,7 +2328,7 @@
 
     invoke-direct {v1, p0}, Lcom/android/phone/callsettings/DeletePrefix$12;-><init>(Lcom/android/phone/callsettings/DeletePrefix;)V
 
-    invoke-virtual {v0, v1}, Landroid/app/Dialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
+    invoke-virtual {v0, v1}, Landroid/app/AlertDialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
     return-void
 .end method
@@ -2344,7 +2344,7 @@
 
     if-eqz p1, :cond_0
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/DeletePrefix;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -2360,7 +2360,7 @@
     return-object v0
 
     :cond_0
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/DeletePrefix;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -2391,7 +2391,7 @@
 
     const/4 v4, 0x0
 
-    invoke-super {p0, p1, p2, p3}, Landroid/preference/PreferenceFragment;->onActivityResult(IILandroid/content/Intent;)V
+    invoke-super {p0, p1, p2, p3}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onActivityResult(IILandroid/content/Intent;)V
 
     packed-switch p1, :pswitch_data_0
 
@@ -2463,7 +2463,7 @@
 
     new-instance v0, Lcom/android/phone/callsettings/DeletePrefix$DeletePrefixAdapter;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/DeletePrefix;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -2501,13 +2501,13 @@
 
     invoke-static {v0, v1}, Lcom/android/phone/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/DeletePrefix;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v0
 
     invoke-virtual {v0}, Landroid/app/FragmentManager;->invalidateOptionsMenu()V
 
-    invoke-super {p0, p1}, Landroid/app/Fragment;->onConfigurationChanged(Landroid/content/res/Configuration;)V
+    invoke-super {p0, p1}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
     return-void
 .end method
@@ -2526,11 +2526,11 @@
 
     invoke-super {p0, p1}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getArguments()Landroid/os/Bundle;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/DeletePrefix;->getArguments()Landroid/os/Bundle;
 
     move-result-object v1
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getActionBar()Landroid/app/ActionBar;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/DeletePrefix;->getActionBar()Landroid/app/ActionBar;
 
     move-result-object v0
 
@@ -2539,7 +2539,7 @@
     invoke-virtual {v0, v4}, Landroid/app/ActionBar;->setDisplayHomeAsUpEnabled(Z)V
 
     :cond_0
-    invoke-virtual {p0, v4}, Landroid/app/Fragment;->setHasOptionsMenu(Z)V
+    invoke-virtual {p0, v4}, Lcom/android/phone/callsettings/DeletePrefix;->setHasOptionsMenu(Z)V
 
     iput v4, p0, Lcom/android/phone/callsettings/DeletePrefix;->mState:I
 
@@ -2561,7 +2561,7 @@
     :pswitch_0
     new-instance v2, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/DeletePrefix;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -2575,7 +2575,7 @@
 
     const v4, 0x7f0902d2
 
-    invoke-virtual {p0, v4}, Landroid/app/Fragment;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v4}, Lcom/android/phone/callsettings/DeletePrefix;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v4
 
@@ -2585,7 +2585,7 @@
 
     const v4, 0x7f0902d4
 
-    invoke-virtual {p0, v4}, Landroid/app/Fragment;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v4}, Lcom/android/phone/callsettings/DeletePrefix;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v4
 
@@ -2620,7 +2620,7 @@
 
     invoke-direct {v1, p0}, Lcom/android/phone/callsettings/DeletePrefix$16;-><init>(Lcom/android/phone/callsettings/DeletePrefix;)V
 
-    invoke-virtual {p0, v1}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
+    invoke-virtual {p0, v1}, Lcom/android/phone/callsettings/DeletePrefix;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
     goto :goto_0
 
@@ -2790,7 +2790,7 @@
 
     invoke-interface {v0, v2}, Landroid/view/MenuItem;->setVisible(Z)Landroid/view/MenuItem;
 
-    invoke-super {p0, p1, p2}, Landroid/app/Fragment;->onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
+    invoke-super {p0, p1, p2}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
 
     return-void
 .end method
@@ -2906,13 +2906,13 @@
 
     iget-object v2, p0, Lcom/android/phone/callsettings/DeletePrefix;->selectAll:Landroid/widget/LinearLayout;
 
-    invoke-virtual {v2, v5}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v2, v5}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
     iget-object v2, p0, Lcom/android/phone/callsettings/DeletePrefix;->listView:Landroid/widget/ListView;
 
     const/4 v3, 0x2
 
-    invoke-virtual {v2, v3}, Landroid/widget/AbsListView;->setChoiceMode(I)V
+    invoke-virtual {v2, v3}, Landroid/widget/ListView;->setChoiceMode(I)V
 
     iget-object v2, p0, Lcom/android/phone/callsettings/DeletePrefix;->listView:Landroid/widget/ListView;
 
@@ -2925,7 +2925,7 @@
     :goto_0
     iget-object v2, p0, Lcom/android/phone/callsettings/DeletePrefix;->listView:Landroid/widget/ListView;
 
-    invoke-virtual {v2}, Landroid/widget/AdapterView;->getCount()I
+    invoke-virtual {v2}, Landroid/widget/ListView;->getCount()I
 
     move-result v2
 
@@ -2953,7 +2953,7 @@
 
     move-result v2
 
-    invoke-virtual {v3, v0, v2}, Landroid/widget/AbsListView;->setItemChecked(IZ)V
+    invoke-virtual {v3, v0, v2}, Landroid/widget/ListView;->setItemChecked(IZ)V
 
     :cond_1
     add-int/lit8 v0, v0, 0x1
@@ -2967,7 +2967,7 @@
 .method public onDestroyView()V
     .locals 3
 
-    invoke-super {p0}, Landroid/preference/PreferenceFragment;->onDestroyView()V
+    invoke-super {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onDestroyView()V
 
     const-string v1, "Deleteprefix"
 
@@ -2987,7 +2987,7 @@
 
     iget-object v1, p0, Lcom/android/phone/callsettings/DeletePrefix;->listView:Landroid/widget/ListView;
 
-    invoke-virtual {v1}, Landroid/widget/AdapterView;->getCount()I
+    invoke-virtual {v1}, Landroid/widget/ListView;->getCount()I
 
     move-result v1
 
@@ -3002,7 +3002,7 @@
     :goto_0
     iget-object v1, p0, Lcom/android/phone/callsettings/DeletePrefix;->listView:Landroid/widget/ListView;
 
-    invoke-virtual {v1}, Landroid/widget/AdapterView;->getCount()I
+    invoke-virtual {v1}, Landroid/widget/ListView;->getCount()I
 
     move-result v1
 
@@ -3012,7 +3012,7 @@
 
     iget-object v2, p0, Lcom/android/phone/callsettings/DeletePrefix;->listView:Landroid/widget/ListView;
 
-    invoke-virtual {v2, v0}, Landroid/widget/AbsListView;->isItemChecked(I)Z
+    invoke-virtual {v2, v0}, Landroid/widget/ListView;->isItemChecked(I)Z
 
     move-result v2
 
@@ -3074,14 +3074,14 @@
 
     const/16 v6, 0x8
 
-    invoke-virtual {v5, v6}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v5, v6}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
     const/4 v5, 0x1
 
     goto :goto_1
 
     :sswitch_1
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/DeletePrefix;->getActivity()Landroid/app/Activity;
 
     move-result-object v5
 
@@ -3093,7 +3093,7 @@
 
     if-eqz v2, :cond_0
 
-    invoke-virtual {v2}, Landroid/widget/AbsListView;->getSelectedView()Landroid/view/View;
+    invoke-virtual {v2}, Landroid/widget/ListView;->getSelectedView()Landroid/view/View;
 
     move-result-object v5
 
@@ -3101,7 +3101,7 @@
 
     if-eqz v5, :cond_0
 
-    invoke-virtual {v2}, Landroid/widget/AbsListView;->getSelectedView()Landroid/view/View;
+    invoke-virtual {v2}, Landroid/widget/ListView;->getSelectedView()Landroid/view/View;
 
     move-result-object v1
 
@@ -3109,7 +3109,7 @@
 
     if-eqz v1, :cond_0
 
-    invoke-virtual {v1}, Landroid/view/ViewGroup;->getChildCount()I
+    invoke-virtual {v1}, Landroid/widget/LinearLayout;->getChildCount()I
 
     move-result v0
 
@@ -3118,7 +3118,7 @@
     :goto_2
     if-ge v3, v0, :cond_0
 
-    invoke-virtual {v1, v3}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
+    invoke-virtual {v1, v3}, Landroid/widget/LinearLayout;->getChildAt(I)Landroid/view/View;
 
     move-result-object v4
 
@@ -3224,7 +3224,7 @@
 
     iget-object v0, p0, Lcom/android/phone/callsettings/DeletePrefix;->selectAll:Landroid/widget/LinearLayout;
 
-    invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v2}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
     iget-object v0, p0, Lcom/android/phone/callsettings/DeletePrefix;->selectAllCheck:Landroid/view/View;
 
@@ -3234,7 +3234,7 @@
 
     iget-object v0, p0, Lcom/android/phone/callsettings/DeletePrefix;->listView:Landroid/widget/ListView;
 
-    invoke-virtual {v0, v5}, Landroid/widget/AbsListView;->setChoiceMode(I)V
+    invoke-virtual {v0, v5}, Landroid/widget/ListView;->setChoiceMode(I)V
 
     iget-object v0, p0, Lcom/android/phone/callsettings/DeletePrefix;->listView:Landroid/widget/ListView;
 
@@ -3307,7 +3307,7 @@
 
     const/4 v2, 0x1
 
-    invoke-super {p0, p1}, Landroid/app/Fragment;->onPrepareOptionsMenu(Landroid/view/Menu;)V
+    invoke-super {p0, p1}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onPrepareOptionsMenu(Landroid/view/Menu;)V
 
     const-string v1, "Deleteprefix"
 
@@ -3423,7 +3423,7 @@
     move v1, v2
 
     :goto_6
-    invoke-virtual {v4, v1}, Landroid/view/View;->setEnabled(Z)V
+    invoke-virtual {v4, v1}, Landroid/widget/LinearLayout;->setEnabled(Z)V
 
     iget v1, p0, Lcom/android/phone/callsettings/DeletePrefix;->mState:I
 
@@ -3431,7 +3431,7 @@
 
     iget-object v1, p0, Lcom/android/phone/callsettings/DeletePrefix;->createLayout:Landroid/widget/LinearLayout;
 
-    invoke-virtual {v1, v3}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v1, v3}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
     :goto_7
     invoke-interface {p1, v2}, Landroid/view/Menu;->findItem(I)Landroid/view/MenuItem;
@@ -3487,7 +3487,7 @@
 
     const/16 v4, 0x8
 
-    invoke-virtual {v1, v4}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v1, v4}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
     goto :goto_7
 .end method
@@ -3558,7 +3558,7 @@
 
     const/16 v2, 0x8
 
-    invoke-virtual {v1, v2}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v1, v2}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
     iput v0, p0, Lcom/android/phone/callsettings/DeletePrefix;->mState:I
 

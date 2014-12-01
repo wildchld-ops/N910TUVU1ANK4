@@ -6,7 +6,6 @@
 # direct methods
 .method private constructor <init>(I)V
     .locals 0
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/opengl/EGLObjectHandle;-><init>(I)V
 
@@ -17,7 +16,6 @@
 # virtual methods
 .method public equals(Ljava/lang/Object;)Z
     .locals 5
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x1
 

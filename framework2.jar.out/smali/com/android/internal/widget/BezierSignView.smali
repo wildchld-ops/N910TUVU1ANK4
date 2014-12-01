@@ -22,7 +22,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Lcom/android/internal/widget/SignView;-><init>(Landroid/content/Context;)V
 
@@ -31,7 +30,6 @@
 
 .method private addToPathForDrawing(I)V
     .locals 14
-    .param p1    # I
 
     const/high16 v13, 0x41200000
 
@@ -178,13 +176,6 @@
 # virtual methods
 .method doBezier(IFFFFJF)V
     .locals 25
-    .param p1    # I
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # J
-    .param p8    # F
 
     move-object/from16 v0, p0
 
@@ -519,9 +510,6 @@
 
 .method protected handleActionDown(Landroid/view/MotionEvent;FF)V
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # F
-    .param p3    # F
 
     const/4 v0, 0x0
 
@@ -544,9 +532,6 @@
 
 .method protected handleActionMove(Landroid/view/MotionEvent;FF)V
     .locals 10
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # F
-    .param p3    # F
 
     iget-object v0, p0, Lcom/android/internal/widget/SignView;->mSignatureInputData:[Ljava/util/ArrayList;
 
@@ -635,10 +620,6 @@
 
 .method protected handleMoveEventWithBezier(IIJF)V
     .locals 15
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
-    .param p5    # F
 
     sget-boolean v1, Lcom/android/internal/widget/BezierSignView;->DBG_TOUCH:Z
 
@@ -928,7 +909,6 @@
 
 .method protected init(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-super {p0, p1}, Lcom/android/internal/widget/SignView;->init(Landroid/content/Context;)V
 

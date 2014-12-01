@@ -18,11 +18,6 @@
 
 .method public static execApplication(Ljava/lang/String;Ljava/lang/String;ILjava/io/FileDescriptor;[Ljava/lang/String;)V
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Ljava/io/FileDescriptor;
-    .param p4    # [Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -86,10 +81,6 @@
 
 .method public static execStandalone(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # [Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -124,7 +115,6 @@
 
 .method public static main([Ljava/lang/String;)V
     .locals 10
-    .param p0    # [Ljava/lang/String;
 
     const/4 v7, 0x0
 

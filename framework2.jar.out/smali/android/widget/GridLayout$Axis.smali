@@ -125,7 +125,6 @@
 
 .method private constructor <init>(Landroid/widget/GridLayout;Z)V
     .locals 2
-    .param p2    # Z
 
     const/high16 v0, -0x80000000
 
@@ -178,9 +177,6 @@
 
 .method synthetic constructor <init>(Landroid/widget/GridLayout;ZLandroid/widget/GridLayout$1;)V
     .locals 0
-    .param p1    # Landroid/widget/GridLayout;
-    .param p2    # Z
-    .param p3    # Landroid/widget/GridLayout$1;
 
     invoke-direct {p0, p1, p2}, Landroid/widget/GridLayout$Axis;-><init>(Landroid/widget/GridLayout;Z)V
 
@@ -582,7 +578,6 @@
 
 .method private computeLinks(Landroid/widget/GridLayout$PackedMap;Z)V
     .locals 6
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -667,7 +662,6 @@
 
 .method private computeLocations([I)V
     .locals 4
-    .param p1    # [I
 
     invoke-virtual {p0}, Landroid/widget/GridLayout$Axis;->getArcs()[Landroid/widget/GridLayout$Arc;
 
@@ -706,7 +700,6 @@
 
 .method private computeMargins(Z)V
     .locals 11
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -979,7 +972,6 @@
 
 .method private createLinks(Z)Landroid/widget/GridLayout$PackedMap;
     .locals 7
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(Z)",
@@ -1165,8 +1157,6 @@
 
 .method private getMeasure(II)I
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Landroid/widget/GridLayout$Axis;->setParentConstraints(II)V
 
@@ -1183,8 +1173,6 @@
 
 .method private include(Ljava/util/List;Landroid/widget/GridLayout$Interval;Landroid/widget/GridLayout$MutableInt;)V
     .locals 1
-    .param p2    # Landroid/widget/GridLayout$Interval;
-    .param p3    # Landroid/widget/GridLayout$MutableInt;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1207,9 +1195,6 @@
 
 .method private include(Ljava/util/List;Landroid/widget/GridLayout$Interval;Landroid/widget/GridLayout$MutableInt;Z)V
     .locals 4
-    .param p2    # Landroid/widget/GridLayout$Interval;
-    .param p3    # Landroid/widget/GridLayout$MutableInt;
-    .param p4    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1274,7 +1259,6 @@
 
 .method private init([I)V
     .locals 1
-    .param p1    # [I
 
     const/4 v0, 0x0
 
@@ -1285,9 +1269,6 @@
 
 .method private logError(Ljava/lang/String;[Landroid/widget/GridLayout$Arc;[Z)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Landroid/widget/GridLayout$Arc;
-    .param p3    # [Z
 
     new-instance v2, Ljava/util/ArrayList;
 
@@ -1382,8 +1363,6 @@
 
 .method private relax([ILandroid/widget/GridLayout$Arc;)Z
     .locals 7
-    .param p1    # [I
-    .param p2    # Landroid/widget/GridLayout$Arc;
 
     const/4 v5, 0x0
 
@@ -1423,8 +1402,6 @@
 
 .method private setParentConstraints(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Landroid/widget/GridLayout$Axis;->parentMin:Landroid/widget/GridLayout$MutableInt;
 
@@ -1445,7 +1422,6 @@
 
 .method private size([I)I
     .locals 1
-    .param p1    # [I
 
     invoke-virtual {p0}, Landroid/widget/GridLayout$Axis;->getCount()I
 
@@ -1458,8 +1434,6 @@
 
 .method private solve([Landroid/widget/GridLayout$Arc;[I)V
     .locals 12
-    .param p1    # [Landroid/widget/GridLayout$Arc;
-    .param p2    # [I
 
     iget-boolean v10, p0, Landroid/widget/GridLayout$Axis;->horizontal:Z
 
@@ -1648,7 +1622,6 @@
 
 .method private topologicalSort([Landroid/widget/GridLayout$Arc;)[Landroid/widget/GridLayout$Arc;
     .locals 1
-    .param p1    # [Landroid/widget/GridLayout$Arc;
 
     new-instance v0, Landroid/widget/GridLayout$Axis$1;
 
@@ -1821,7 +1794,6 @@
 
 .method public getMeasure(I)I
     .locals 4
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -1916,7 +1888,6 @@
 
 .method groupArcsByFirstVertex([Landroid/widget/GridLayout$Arc;)[[Landroid/widget/GridLayout$Arc;
     .locals 11
-    .param p1    # [Landroid/widget/GridLayout$Arc;
 
     invoke-virtual {p0}, Landroid/widget/GridLayout$Axis;->getCount()I
 
@@ -2069,7 +2040,6 @@
 
 .method public layout(I)V
     .locals 0
-    .param p1    # I
 
     invoke-direct {p0, p1, p1}, Landroid/widget/GridLayout$Axis;->setParentConstraints(II)V
 
@@ -2080,7 +2050,6 @@
 
 .method public setCount(I)V
     .locals 2
-    .param p1    # I
 
     const/high16 v0, -0x80000000
 
@@ -2139,7 +2108,6 @@
 
 .method public setOrderPreserved(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/widget/GridLayout$Axis;->orderPreserved:Z
 

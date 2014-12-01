@@ -14,7 +14,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Lcom/sec/analytics/data/collection/serviceif/IDataCollectionManager$Stub;-><init>()V
 
@@ -39,9 +38,6 @@
 # virtual methods
 .method public disableLogCollection(Lcom/sec/analytics/data/collection/serviceif/IDataCollectionManagerCb;ILandroid/os/ParcelFileDescriptor;)V
     .locals 3
-    .param p1    # Lcom/sec/analytics/data/collection/serviceif/IDataCollectionManagerCb;
-    .param p2    # I
-    .param p3    # Landroid/os/ParcelFileDescriptor;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -65,9 +61,6 @@
 
 .method public enableLogCollection(Lcom/sec/analytics/data/collection/serviceif/IDataCollectionManagerCb;ILandroid/os/ParcelFileDescriptor;)V
     .locals 3
-    .param p1    # Lcom/sec/analytics/data/collection/serviceif/IDataCollectionManagerCb;
-    .param p2    # I
-    .param p3    # Landroid/os/ParcelFileDescriptor;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

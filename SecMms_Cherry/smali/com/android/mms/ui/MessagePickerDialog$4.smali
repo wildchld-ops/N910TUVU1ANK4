@@ -36,9 +36,6 @@
 # virtual methods
 .method public onValueChange(Landroid/widget/NumberPicker;II)V
     .locals 2
-    .param p1    # Landroid/widget/NumberPicker;
-    .param p2    # I
-    .param p3    # I
 
     # getter for: Lcom/android/mms/ui/MessagePickerDialog;->mRangeMin:I
     invoke-static {}, Lcom/android/mms/ui/MessagePickerDialog;->access$100()I

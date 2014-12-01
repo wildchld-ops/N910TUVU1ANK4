@@ -10,10 +10,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/net/Uri;Landroid/database/Cursor;Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/net/Uri;
-    .param p3    # Landroid/database/Cursor;
-    .param p4    # Ljava/lang/Object;
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/incallui/callerinfocard/item/CallerInfoCardItem;-><init>(Landroid/content/Context;Landroid/net/Uri;Landroid/database/Cursor;Ljava/lang/Object;)V
 
@@ -22,8 +18,6 @@
 
 .method private convertLunarToSolar(Ljava/util/Calendar;Ljava/lang/String;)[I
     .locals 8
-    .param p1    # Ljava/util/Calendar;
-    .param p2    # Ljava/lang/String;
 
     const/4 v7, 0x2
 
@@ -134,7 +128,6 @@
 
 .method private setTitle(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/incallui/callerinfocard/item/CallerInfoCardItem;->mTitle:Ljava/lang/String;
 
@@ -304,10 +297,6 @@
 
 .method protected setItem(Landroid/content/Context;Landroid/net/Uri;Landroid/database/Cursor;Ljava/lang/Object;)V
     .locals 30
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/net/Uri;
-    .param p3    # Landroid/database/Cursor;
-    .param p4    # Ljava/lang/Object;
 
     const/16 v18, 0x0
 

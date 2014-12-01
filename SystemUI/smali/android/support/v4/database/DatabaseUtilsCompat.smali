@@ -14,8 +14,6 @@
 
 .method public static appendSelectionArgs([Ljava/lang/String;[Ljava/lang/String;)[Ljava/lang/String;
     .locals 4
-    .param p0    # [Ljava/lang/String;
-    .param p1    # [Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -55,8 +53,6 @@
 
 .method public static concatenateWhere(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 

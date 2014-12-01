@@ -62,11 +62,6 @@
 
 .method public constructor <init>(Lcom/android/server/display/DisplayManagerService$SyncRoot;Landroid/content/Context;Landroid/os/Handler;Lcom/android/server/display/DisplayAdapter$Listener;Landroid/os/Handler;)V
     .locals 6
-    .param p1    # Lcom/android/server/display/DisplayManagerService$SyncRoot;
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/os/Handler;
-    .param p4    # Lcom/android/server/display/DisplayAdapter$Listener;
-    .param p5    # Landroid/os/Handler;
 
     const-string v5, "OverlayDisplayAdapter"
 
@@ -99,7 +94,6 @@
 
 .method static synthetic access$000(Lcom/android/server/display/OverlayDisplayAdapter;)V
     .locals 0
-    .param p0    # Lcom/android/server/display/OverlayDisplayAdapter;
 
     invoke-direct {p0}, Lcom/android/server/display/OverlayDisplayAdapter;->updateOverlayDisplayDevices()V
 
@@ -108,7 +102,6 @@
 
 .method static synthetic access$100(Lcom/android/server/display/OverlayDisplayAdapter;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/server/display/OverlayDisplayAdapter;
 
     iget-object v0, p0, Lcom/android/server/display/OverlayDisplayAdapter;->mUiHandler:Landroid/os/Handler;
 
@@ -117,7 +110,6 @@
 
 .method private static chooseOverlayGravity(I)I
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -619,7 +611,6 @@
 # virtual methods
 .method public dumpLocked(Ljava/io/PrintWriter;)V
     .locals 4
-    .param p1    # Ljava/io/PrintWriter;
 
     invoke-super {p0, p1}, Lcom/android/server/display/DisplayAdapter;->dumpLocked(Ljava/io/PrintWriter;)V
 

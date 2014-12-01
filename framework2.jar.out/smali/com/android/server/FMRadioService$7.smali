@@ -36,7 +36,6 @@
 # virtual methods
 .method public onAudioFocusChange(I)V
     .locals 4
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/server/FMRadioService$7;->this$0:Lcom/android/server/FMRadioService;
 

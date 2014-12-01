@@ -168,7 +168,7 @@
     new-array v0, v8, [B
 
     :goto_0
-    invoke-virtual {v4, v0}, Ljava/io/InputStream;->read([B)I
+    invoke-virtual {v4, v0}, Ljava/io/FileInputStream;->read([B)I
 
     move-result v1
 
@@ -214,7 +214,7 @@
 
     :cond_4
     :try_start_5
-    invoke-virtual {v7}, Ljava/io/OutputStream;->flush()V
+    invoke-virtual {v7}, Ljava/io/FileOutputStream;->flush()V
     :try_end_5
     .catchall {:try_start_5 .. :try_end_5} :catchall_0
 
@@ -839,7 +839,7 @@
     :catch_0
     move-exception v2
 
-    invoke-virtual {v2}, Ljava/lang/Throwable;->printStackTrace()V
+    invoke-virtual {v2}, Ljava/lang/Exception;->printStackTrace()V
 
     const-string v6, ""
 
@@ -859,7 +859,7 @@
 
     iget-object v2, p0, Lcom/android/phone/callsettings/PhoneNumberLocatorDownloader;->dateFormat:Ljava/text/SimpleDateFormat;
 
-    invoke-virtual {v2, v1}, Ljava/text/DateFormat;->format(Ljava/util/Date;)Ljava/lang/String;
+    invoke-virtual {v2, v1}, Ljava/text/SimpleDateFormat;->format(Ljava/util/Date;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -1094,7 +1094,7 @@
     if-eqz v2, :cond_4
 
     :try_start_2
-    throw v2
+    invoke-virtual {v2}, Ljava/io/RandomAccessFile;->close()V
     :try_end_2
     .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_0
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
@@ -1106,7 +1106,7 @@
     if-eqz v2, :cond_5
 
     :try_start_3
-    throw v2
+    invoke-virtual {v2}, Ljava/io/RandomAccessFile;->close()V
     :try_end_3
     .catch Ljava/io/IOException; {:try_start_3 .. :try_end_3} :catch_1
 
@@ -1768,7 +1768,7 @@
     :catch_0
     move-exception v0
 
-    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
+    invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
 
     iget-boolean v1, p0, Lcom/android/phone/callsettings/PhoneNumberLocatorDownloader;->isAutoUpdateType:Z
 

@@ -127,7 +127,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -138,8 +137,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -150,9 +147,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/high16 v5, 0x3f000000
 
@@ -243,7 +237,6 @@
 
 .method static synthetic access$100(Landroid/support/v4/widget/SlidingPaneLayout;)Z
     .locals 1
-    .param p0    # Landroid/support/v4/widget/SlidingPaneLayout;
 
     iget-boolean v0, p0, Landroid/support/v4/widget/SlidingPaneLayout;->mIsUnableToDrag:Z
 
@@ -252,7 +245,6 @@
 
 .method static synthetic access$1000(Landroid/support/v4/widget/SlidingPaneLayout;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Landroid/support/v4/widget/SlidingPaneLayout;
 
     iget-object v0, p0, Landroid/support/v4/widget/SlidingPaneLayout;->mPostedRunnables:Ljava/util/ArrayList;
 
@@ -261,7 +253,6 @@
 
 .method static synthetic access$200(Landroid/support/v4/widget/SlidingPaneLayout;)Landroid/support/v4/widget/ViewDragHelper;
     .locals 1
-    .param p0    # Landroid/support/v4/widget/SlidingPaneLayout;
 
     iget-object v0, p0, Landroid/support/v4/widget/SlidingPaneLayout;->mDragHelper:Landroid/support/v4/widget/ViewDragHelper;
 
@@ -270,7 +261,6 @@
 
 .method static synthetic access$300(Landroid/support/v4/widget/SlidingPaneLayout;)F
     .locals 1
-    .param p0    # Landroid/support/v4/widget/SlidingPaneLayout;
 
     iget v0, p0, Landroid/support/v4/widget/SlidingPaneLayout;->mSlideOffset:F
 
@@ -279,7 +269,6 @@
 
 .method static synthetic access$400(Landroid/support/v4/widget/SlidingPaneLayout;)Landroid/view/View;
     .locals 1
-    .param p0    # Landroid/support/v4/widget/SlidingPaneLayout;
 
     iget-object v0, p0, Landroid/support/v4/widget/SlidingPaneLayout;->mSlideableView:Landroid/view/View;
 
@@ -288,8 +277,6 @@
 
 .method static synthetic access$502(Landroid/support/v4/widget/SlidingPaneLayout;Z)Z
     .locals 0
-    .param p0    # Landroid/support/v4/widget/SlidingPaneLayout;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/support/v4/widget/SlidingPaneLayout;->mPreservedOpenState:Z
 
@@ -298,8 +285,6 @@
 
 .method static synthetic access$600(Landroid/support/v4/widget/SlidingPaneLayout;I)V
     .locals 0
-    .param p0    # Landroid/support/v4/widget/SlidingPaneLayout;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/support/v4/widget/SlidingPaneLayout;->onPanelDragged(I)V
 
@@ -308,7 +293,6 @@
 
 .method static synthetic access$700(Landroid/support/v4/widget/SlidingPaneLayout;)I
     .locals 1
-    .param p0    # Landroid/support/v4/widget/SlidingPaneLayout;
 
     iget v0, p0, Landroid/support/v4/widget/SlidingPaneLayout;->mSlideRange:I
 
@@ -317,8 +301,6 @@
 
 .method static synthetic access$900(Landroid/support/v4/widget/SlidingPaneLayout;Landroid/view/View;)V
     .locals 0
-    .param p0    # Landroid/support/v4/widget/SlidingPaneLayout;
-    .param p1    # Landroid/view/View;
 
     invoke-direct {p0, p1}, Landroid/support/v4/widget/SlidingPaneLayout;->invalidateChildRegion(Landroid/view/View;)V
 
@@ -327,8 +309,6 @@
 
 .method private closePane(Landroid/view/View;I)Z
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -355,9 +335,6 @@
 
 .method private dimChildView(Landroid/view/View;FI)V
     .locals 9
-    .param p1    # Landroid/view/View;
-    .param p2    # F
-    .param p3    # I
 
     const/4 v8, 0x2
 
@@ -466,7 +443,6 @@
 
 .method private invalidateChildRegion(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     sget-object v0, Landroid/support/v4/widget/SlidingPaneLayout;->IMPL:Landroid/support/v4/widget/SlidingPaneLayout$SlidingPanelLayoutImpl;
 
@@ -477,7 +453,6 @@
 
 .method private onPanelDragged(I)V
     .locals 5
-    .param p1    # I
 
     iget-object v2, p0, Landroid/support/v4/widget/SlidingPaneLayout;->mSlideableView:Landroid/view/View;
 
@@ -538,8 +513,6 @@
 
 .method private openPane(Landroid/view/View;I)Z
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     const/4 v0, 0x1
 
@@ -569,7 +542,6 @@
 
 .method private parallaxOtherViews(F)V
     .locals 11
-    .param p1    # F
 
     const/high16 v10, 0x3f800000
 
@@ -667,7 +639,6 @@
 
 .method private static viewIsOpaque(Landroid/view/View;)Z
     .locals 5
-    .param p0    # Landroid/view/View;
 
     const/4 v1, 0x1
 
@@ -723,11 +694,6 @@
 # virtual methods
 .method protected canScroll(Landroid/view/View;ZIII)Z
     .locals 11
-    .param p1    # Landroid/view/View;
-    .param p2    # Z
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     instance-of v0, p1, Landroid/view/ViewGroup;
 
@@ -861,7 +827,6 @@
 
 .method protected checkLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Z
     .locals 1
-    .param p1    # Landroid/view/ViewGroup$LayoutParams;
 
     instance-of v0, p1, Landroid/support/v4/widget/SlidingPaneLayout$LayoutParams;
 
@@ -931,7 +896,6 @@
 
 .method dispatchOnPanelClosed(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Landroid/support/v4/widget/SlidingPaneLayout;->mPanelSlideListener:Landroid/support/v4/widget/SlidingPaneLayout$PanelSlideListener;
 
@@ -951,7 +915,6 @@
 
 .method dispatchOnPanelOpened(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Landroid/support/v4/widget/SlidingPaneLayout;->mPanelSlideListener:Landroid/support/v4/widget/SlidingPaneLayout$PanelSlideListener;
 
@@ -971,7 +934,6 @@
 
 .method dispatchOnPanelSlide(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Landroid/support/v4/widget/SlidingPaneLayout;->mPanelSlideListener:Landroid/support/v4/widget/SlidingPaneLayout$PanelSlideListener;
 
@@ -989,7 +951,6 @@
 
 .method public draw(Landroid/graphics/Canvas;)V
     .locals 8
-    .param p1    # Landroid/graphics/Canvas;
 
     const/4 v7, 0x1
 
@@ -1055,9 +1016,6 @@
 
 .method protected drawChild(Landroid/graphics/Canvas;Landroid/view/View;J)Z
     .locals 7
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # Landroid/view/View;
-    .param p3    # J
 
     invoke-virtual {p2}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
@@ -1241,7 +1199,6 @@
 
 .method public generateLayoutParams(Landroid/util/AttributeSet;)Landroid/view/ViewGroup$LayoutParams;
     .locals 2
-    .param p1    # Landroid/util/AttributeSet;
 
     new-instance v0, Landroid/support/v4/widget/SlidingPaneLayout$LayoutParams;
 
@@ -1256,7 +1213,6 @@
 
 .method protected generateLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Landroid/view/ViewGroup$LayoutParams;
     .locals 1
-    .param p1    # Landroid/view/ViewGroup$LayoutParams;
 
     instance-of v0, p1, Landroid/view/ViewGroup$MarginLayoutParams;
 
@@ -1305,7 +1261,6 @@
 
 .method isDimmed(Landroid/view/View;)Z
     .locals 4
-    .param p1    # Landroid/view/View;
 
     const/4 v1, 0x0
 
@@ -1434,7 +1389,6 @@
 
 .method public onInterceptTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 13
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-static {p1}, Landroid/support/v4/view/MotionEventCompat;->getActionMasked(Landroid/view/MotionEvent;)I
 
@@ -1667,11 +1621,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 25
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     sub-int v20, p4, p2
 
@@ -2103,8 +2052,6 @@
 
 .method protected onMeasure(II)V
     .locals 28
-    .param p1    # I
-    .param p2    # I
 
     invoke-static/range {p1 .. p1}, Landroid/view/View$MeasureSpec;->getMode(I)I
 
@@ -3014,7 +2961,6 @@
 
 .method protected onRestoreInstanceState(Landroid/os/Parcelable;)V
     .locals 2
-    .param p1    # Landroid/os/Parcelable;
 
     move-object v0, p1
 
@@ -3079,10 +3025,6 @@
 
 .method protected onSizeChanged(IIII)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-super {p0, p1, p2, p3, p4}, Landroid/view/View;->onSizeChanged(IIII)V
 
@@ -3098,7 +3040,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 11
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-boolean v7, p0, Landroid/support/v4/widget/SlidingPaneLayout;->mCanSlide:Z
 
@@ -3236,8 +3177,6 @@
 
 .method public requestChildFocus(Landroid/view/View;Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/View;
 
     invoke-super {p0, p1, p2}, Landroid/view/ViewGroup;->requestChildFocus(Landroid/view/View;Landroid/view/View;)V
 
@@ -3308,7 +3247,6 @@
 
 .method public setCoveredFadeColor(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/support/v4/widget/SlidingPaneLayout;->mCoveredFadeColor:I
 
@@ -3317,7 +3255,6 @@
 
 .method public setPanelSlideListener(Landroid/support/v4/widget/SlidingPaneLayout$PanelSlideListener;)V
     .locals 0
-    .param p1    # Landroid/support/v4/widget/SlidingPaneLayout$PanelSlideListener;
 
     iput-object p1, p0, Landroid/support/v4/widget/SlidingPaneLayout;->mPanelSlideListener:Landroid/support/v4/widget/SlidingPaneLayout$PanelSlideListener;
 
@@ -3326,7 +3263,6 @@
 
 .method public setParallaxDistance(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/support/v4/widget/SlidingPaneLayout;->mParallaxBy:I
 
@@ -3337,7 +3273,6 @@
 
 .method public setShadowDrawable(Landroid/graphics/drawable/Drawable;)V
     .locals 0
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     iput-object p1, p0, Landroid/support/v4/widget/SlidingPaneLayout;->mShadowDrawable:Landroid/graphics/drawable/Drawable;
 
@@ -3346,7 +3281,6 @@
 
 .method public setShadowResource(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
 
@@ -3363,7 +3297,6 @@
 
 .method public setSliderFadeColor(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/support/v4/widget/SlidingPaneLayout;->mSliderFadeColor:I
 
@@ -3392,8 +3325,6 @@
 
 .method smoothSlideTo(FI)Z
     .locals 7
-    .param p1    # F
-    .param p2    # I
 
     const/4 v3, 0x0
 
@@ -3461,7 +3392,6 @@
 
 .method updateObscuredViewsVisibility(Landroid/view/View;)V
     .locals 19
-    .param p1    # Landroid/view/View;
 
     invoke-virtual/range {p0 .. p0}, Landroid/view/View;->getPaddingLeft()I
 

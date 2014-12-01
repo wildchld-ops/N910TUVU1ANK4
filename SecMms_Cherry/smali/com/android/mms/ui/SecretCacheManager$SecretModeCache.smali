@@ -51,7 +51,6 @@
 
 .method constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -76,7 +75,6 @@
 
 .method static synthetic access$500(Lcom/android/mms/ui/SecretCacheManager$SecretModeCache;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SecretCacheManager$SecretModeCache;
 
     iget-object v0, p0, Lcom/android/mms/ui/SecretCacheManager$SecretModeCache;->mContext:Landroid/content/Context;
 
@@ -85,7 +83,6 @@
 
 .method static synthetic access$600(Lcom/android/mms/ui/SecretCacheManager$SecretModeCache;)Ljava/util/HashMap;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SecretCacheManager$SecretModeCache;
 
     iget-object v0, p0, Lcom/android/mms/ui/SecretCacheManager$SecretModeCache;->mCache:Ljava/util/HashMap;
 
@@ -94,7 +91,6 @@
 
 .method public static delete(J)V
     .locals 2
-    .param p0    # J
 
     sget-object v0, Lcom/android/mms/ui/SecretCacheManager$SecretModeCache;->sInstance:Lcom/android/mms/ui/SecretCacheManager$SecretModeCache;
 
@@ -304,7 +300,6 @@
 
 .method public static getSecretAvatar(J)Landroid/graphics/drawable/Drawable;
     .locals 5
-    .param p0    # J
 
     const/4 v1, 0x0
 
@@ -404,7 +399,6 @@
 
 .method public static getSecretMode(J)I
     .locals 5
-    .param p0    # J
 
     const/4 v1, 0x0
 
@@ -521,7 +515,6 @@
 
 .method public static init(Landroid/content/Context;)V
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     new-instance v0, Lcom/android/mms/ui/SecretCacheManager$SecretModeCache;
 
@@ -544,8 +537,6 @@
 
 .method public static insert(JLcom/android/mms/ui/SecretCacheManager$SecretModeCacheData;)V
     .locals 2
-    .param p0    # J
-    .param p2    # Lcom/android/mms/ui/SecretCacheManager$SecretModeCacheData;
 
     sget-object v0, Lcom/android/mms/ui/SecretCacheManager$SecretModeCache;->sInstance:Lcom/android/mms/ui/SecretCacheManager$SecretModeCache;
 
@@ -663,7 +654,6 @@
 
 .method public static isSecretMode(J)Z
     .locals 7
-    .param p0    # J
 
     const/4 v2, 0x1
 
@@ -815,8 +805,6 @@
 
 .method public static update(JLcom/android/mms/ui/SecretCacheManager$SecretModeCacheData;)V
     .locals 2
-    .param p0    # J
-    .param p2    # Lcom/android/mms/ui/SecretCacheManager$SecretModeCacheData;
 
     sget-object v0, Lcom/android/mms/ui/SecretCacheManager$SecretModeCache;->sInstance:Lcom/android/mms/ui/SecretCacheManager$SecretModeCache;
 
@@ -860,8 +848,6 @@
 
 .method public static updateDBandCache(JLjava/lang/String;)Z
     .locals 12
-    .param p0    # J
-    .param p2    # Ljava/lang/String;
 
     sget-object v1, Lcom/android/mms/ui/SecretCacheManager$SecretModeCache;->sInstance:Lcom/android/mms/ui/SecretCacheManager$SecretModeCache;
 
@@ -1078,8 +1064,6 @@
 
 .method public static updateDbPrivateContact(JZ)V
     .locals 5
-    .param p0    # J
-    .param p2    # Z
 
     move-wide v1, p0
 
@@ -1106,8 +1090,6 @@
 
 .method public static updateDbSecretThread(JZ)V
     .locals 5
-    .param p0    # J
-    .param p2    # Z
 
     move-wide v1, p0
 
@@ -1134,8 +1116,6 @@
 
 .method public static updateInvalidatedCache(JLcom/android/mms/ui/SecretCacheManager$SecretModeCacheData;)V
     .locals 6
-    .param p0    # J
-    .param p2    # Lcom/android/mms/ui/SecretCacheManager$SecretModeCacheData;
 
     const/16 v5, 0x3b
 

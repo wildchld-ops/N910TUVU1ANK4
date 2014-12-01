@@ -264,7 +264,7 @@
 
     const/4 v3, 0x0
 
-    invoke-virtual {p0, v3}, Landroid/os/Handler;->obtainMessage(I)Landroid/os/Message;
+    invoke-virtual {p0, v3}, Lcom/android/phone/Roaming$MyHandler;->obtainMessage(I)Landroid/os/Message;
 
     move-result-object v3
 
@@ -323,7 +323,7 @@
 
     const/4 v2, 0x1
 
-    invoke-virtual {p0, v2}, Landroid/os/Handler;->obtainMessage(I)Landroid/os/Message;
+    invoke-virtual {p0, v2}, Lcom/android/phone/Roaming$MyHandler;->obtainMessage(I)Landroid/os/Message;
 
     move-result-object v2
 

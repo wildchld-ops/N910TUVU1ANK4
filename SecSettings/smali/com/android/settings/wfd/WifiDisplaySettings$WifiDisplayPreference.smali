@@ -30,8 +30,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/settings/wfd/WifiDisplaySettings;Landroid/content/Context;Landroid/hardware/display/WifiDisplay;)V
     .locals 5
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/hardware/display/WifiDisplay;
 
     const/16 v4, 0x9
 
@@ -201,7 +199,6 @@
 
 .method protected onBindView(Landroid/view/View;)V
     .locals 6
-    .param p1    # Landroid/view/View;
 
     invoke-super {p0, p1}, Landroid/preference/Preference;->onBindView(Landroid/view/View;)V
 
@@ -310,7 +307,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Lcom/android/settings/wfd/WifiDisplaySettings$WifiDisplayPreference;->this$0:Lcom/android/settings/wfd/WifiDisplaySettings;
 

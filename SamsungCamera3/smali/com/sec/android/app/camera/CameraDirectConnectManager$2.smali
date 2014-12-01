@@ -36,7 +36,6 @@
 # virtual methods
 .method public onNdefPushComplete(Landroid/nfc/NfcEvent;)V
     .locals 4
-    .param p1    # Landroid/nfc/NfcEvent;
 
     const-string v1, ""
 

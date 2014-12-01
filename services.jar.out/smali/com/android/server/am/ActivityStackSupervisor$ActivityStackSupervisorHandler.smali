@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/am/ActivityStackSupervisor;Landroid/os/Looper;)V
     .locals 0
-    .param p2    # Landroid/os/Looper;
 
     iput-object p1, p0, Lcom/android/server/am/ActivityStackSupervisor$ActivityStackSupervisorHandler;->this$0:Lcom/android/server/am/ActivityStackSupervisor;
 
@@ -34,7 +33,6 @@
 # virtual methods
 .method activityIdleInternal(Lcom/android/server/am/ActivityRecord;)V
     .locals 5
-    .param p1    # Lcom/android/server/am/ActivityRecord;
 
     const/4 v0, 0x0
 
@@ -74,7 +72,6 @@
 
 .method public handleMessage(Landroid/os/Message;)V
     .locals 11
-    .param p1    # Landroid/os/Message;
 
     const-wide/16 v9, 0x2710
 

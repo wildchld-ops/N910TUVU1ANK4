@@ -51,7 +51,6 @@
 
 .method private getOrAllocate(I)Ljava/util/HashMap;
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -101,8 +100,6 @@
 
 .method public get(ILjava/lang/String;)Ljava/util/ArrayList;
     .locals 2
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -130,7 +127,6 @@
 
 .method public packagesForUserId(I)Ljava/util/HashMap;
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -157,8 +153,6 @@
 
 .method public put(ILjava/lang/String;Ljava/util/ArrayList;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -181,7 +175,6 @@
 
 .method public remove(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/pm/PackageManagerService$PendingPackageBroadcasts;->mUidMap:Landroid/util/SparseArray;
 
@@ -192,8 +185,6 @@
 
 .method public remove(ILjava/lang/String;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/server/pm/PackageManagerService$PendingPackageBroadcasts;->mUidMap:Landroid/util/SparseArray;
 
@@ -251,7 +242,6 @@
 
 .method public userIdAt(I)I
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/pm/PackageManagerService$PendingPackageBroadcasts;->mUidMap:Landroid/util/SparseArray;
 

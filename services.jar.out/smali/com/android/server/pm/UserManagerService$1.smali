@@ -33,14 +33,12 @@
 # virtual methods
 .method public userStopAborted(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public userStopped(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/pm/UserManagerService$1;->this$0:Lcom/android/server/pm/UserManagerService;
 

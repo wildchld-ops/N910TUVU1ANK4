@@ -46,9 +46,6 @@
 
 .method private constructor <init>(DDF)V
     .locals 1
-    .param p1    # D
-    .param p3    # D
-    .param p5    # F
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -71,7 +68,6 @@
 
 .method static synthetic access$000(I)V
     .locals 0
-    .param p0    # I
 
     invoke-static {p0}, Landroid/location/Geofence;->checkType(I)V
 
@@ -80,8 +76,6 @@
 
 .method private static checkLatLong(DD)V
     .locals 3
-    .param p0    # D
-    .param p2    # D
 
     const-wide v0, 0x4056800000000000L
 
@@ -164,7 +158,6 @@
 
 .method private static checkRadius(F)V
     .locals 3
-    .param p0    # F
 
     const/4 v0, 0x0
 
@@ -202,7 +195,6 @@
 
 .method private static checkType(I)V
     .locals 3
-    .param p0    # I
 
     const/4 v0, 0x1
 
@@ -238,9 +230,6 @@
 
 .method public static createCircle(DDF)Landroid/location/Geofence;
     .locals 6
-    .param p0    # D
-    .param p2    # D
-    .param p4    # F
 
     new-instance v0, Landroid/location/Geofence;
 
@@ -257,7 +246,6 @@
 
 .method private static typeToString(I)Ljava/lang/String;
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -293,7 +281,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 7
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x1
 
@@ -524,8 +511,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget v0, p0, Landroid/location/Geofence;->mType:I
 

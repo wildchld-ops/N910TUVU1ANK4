@@ -21,8 +21,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/print/UserState;Landroid/print/IPrintJobStateChangeListener;I)V
     .locals 0
-    .param p2    # Landroid/print/IPrintJobStateChangeListener;
-    .param p3    # I
 
     iput-object p1, p0, Lcom/android/server/print/UserState$3;->this$0:Lcom/android/server/print/UserState;
 

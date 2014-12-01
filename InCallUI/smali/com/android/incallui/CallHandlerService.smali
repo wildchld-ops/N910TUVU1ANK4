@@ -80,7 +80,6 @@
 
 .method static synthetic access$100(Lcom/android/incallui/CallHandlerService;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/incallui/CallHandlerService;
 
     iget-object v0, p0, Lcom/android/incallui/CallHandlerService;->mMainHandler:Landroid/os/Handler;
 
@@ -89,8 +88,6 @@
 
 .method static synthetic access$200(Lcom/android/incallui/CallHandlerService;Landroid/os/Message;)V
     .locals 0
-    .param p0    # Lcom/android/incallui/CallHandlerService;
-    .param p1    # Landroid/os/Message;
 
     invoke-direct {p0, p1}, Lcom/android/incallui/CallHandlerService;->executeMessage(Landroid/os/Message;)V
 
@@ -99,7 +96,6 @@
 
 .method private doChangeInContent(I)V
     .locals 3
-    .param p1    # I
 
     sget-object v0, Lcom/android/incallui/CallHandlerService;->TAG:Ljava/lang/String;
 
@@ -217,7 +213,6 @@
 
 .method private doStart(Lcom/android/services/telephony/common/ICallCommandService;)V
     .locals 4
-    .param p1    # Lcom/android/services/telephony/common/ICallCommandService;
 
     sget-object v0, Lcom/android/incallui/CallHandlerService;->TAG:Ljava/lang/String;
 
@@ -283,7 +278,6 @@
 
 .method private executeMessage(Landroid/os/Message;)V
     .locals 9
-    .param p1    # Landroid/os/Message;
 
     const/4 v5, 0x0
 
@@ -1300,7 +1294,6 @@
 
 .method private onHoldCallStateChange(Z)V
     .locals 3
-    .param p1    # Z
 
     sget-object v0, Lcom/android/incallui/CallHandlerService;->TAG:Ljava/lang/String;
 
@@ -1340,9 +1333,6 @@
 
 .method private onModifyCall(ZILjava/lang/String;)V
     .locals 3
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     sget-object v0, Lcom/android/incallui/CallHandlerService;->TAG:Ljava/lang/String;
 
@@ -1450,7 +1440,6 @@
 
 .method public onBind(Landroid/content/Intent;)Landroid/os/IBinder;
     .locals 3
-    .param p1    # Landroid/content/Intent;
 
     sget-object v0, Lcom/android/incallui/CallHandlerService;->TAG:Ljava/lang/String;
 
@@ -1536,7 +1525,6 @@
 
 .method public onUnbind(Landroid/content/Intent;)Z
     .locals 3
-    .param p1    # Landroid/content/Intent;
 
     sget-object v0, Lcom/android/incallui/CallHandlerService;->TAG:Ljava/lang/String;
 

@@ -40,7 +40,6 @@
 # direct methods
 .method public constructor <init>(Landroid/bluetooth/IBluetoothManager;)V
     .locals 2
-    .param p1    # Landroid/bluetooth/IBluetoothManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -73,7 +72,6 @@
 
 .method private isSettingsConfigAllowedForScan(Landroid/bluetooth/le/ScanSettings;)Z
     .locals 6
-    .param p1    # Landroid/bluetooth/le/ScanSettings;
 
     const/4 v1, 0x1
 
@@ -112,8 +110,6 @@
 
 .method private postCallbackError(Landroid/bluetooth/le/ScanCallback;I)V
     .locals 2
-    .param p1    # Landroid/bluetooth/le/ScanCallback;
-    .param p2    # I
 
     iget-object v0, p0, Landroid/bluetooth/le/BluetoothLeScanner;->mHandler:Landroid/os/Handler;
 
@@ -142,8 +138,6 @@
 
 .method public getBatchScanResults(Landroid/bluetooth/le/ScanCallback;Z)Ljava/util/List;
     .locals 2
-    .param p1    # Landroid/bluetooth/le/ScanCallback;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -167,7 +161,6 @@
 
 .method public startScan(Landroid/bluetooth/le/ScanCallback;)V
     .locals 2
-    .param p1    # Landroid/bluetooth/le/ScanCallback;
 
     if-nez p1, :cond_0
 
@@ -197,8 +190,6 @@
 
 .method public startScan(Ljava/util/List;Landroid/bluetooth/le/ScanSettings;Landroid/bluetooth/le/ScanCallback;)V
     .locals 8
-    .param p2    # Landroid/bluetooth/le/ScanSettings;
-    .param p3    # Landroid/bluetooth/le/ScanCallback;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -444,7 +435,6 @@
 
 .method public stopScan(Landroid/bluetooth/le/ScanCallback;)V
     .locals 4
-    .param p1    # Landroid/bluetooth/le/ScanCallback;
 
     iget-object v2, p0, Landroid/bluetooth/le/BluetoothLeScanner;->mLeScanClients:Ljava/util/Map;
 

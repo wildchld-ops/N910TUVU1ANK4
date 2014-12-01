@@ -120,7 +120,7 @@
 
     sget-object v0, Lcom/android/phone/NetworkSetting$userSelectionType;->$VALUES:[Lcom/android/phone/NetworkSetting$userSelectionType;
 
-    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
+    invoke-virtual {v0}, [Lcom/android/phone/NetworkSetting$userSelectionType;->clone()Ljava/lang/Object;
 
     move-result-object v0
 

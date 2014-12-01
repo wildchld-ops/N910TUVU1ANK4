@@ -62,7 +62,6 @@
 
 .method public static asString(I)Ljava/lang/String;
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -210,7 +209,6 @@
 
 .method public static isError(I)Z
     .locals 1
-    .param p0    # I
 
     if-gez p0, :cond_0
 

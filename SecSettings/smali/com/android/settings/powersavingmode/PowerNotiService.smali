@@ -27,9 +27,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/powersavingmode/PowerNotiService;[Ljava/lang/String;Z)V
     .locals 0
-    .param p0    # Lcom/android/settings/powersavingmode/PowerNotiService;
-    .param p1    # [Ljava/lang/String;
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/settings/powersavingmode/PowerNotiService;->setUidAllowedForData([Ljava/lang/String;Z)V
 
@@ -38,8 +35,6 @@
 
 .method private setUidAllowedForData([Ljava/lang/String;Z)V
     .locals 6
-    .param p1    # [Ljava/lang/String;
-    .param p2    # Z
 
     invoke-virtual {p0}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
 
@@ -152,7 +147,6 @@
 # virtual methods
 .method public getUid(Ljava/lang/String;)I
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Landroid/app/Service;->getApplication()Landroid/app/Application;
 
@@ -188,7 +182,6 @@
 
 .method public onBind(Landroid/content/Intent;)Landroid/os/IBinder;
     .locals 1
-    .param p1    # Landroid/content/Intent;
 
     const/4 v0, 0x0
 
@@ -197,9 +190,6 @@
 
 .method public onStartCommand(Landroid/content/Intent;II)I
     .locals 5
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v4, 0x0
 

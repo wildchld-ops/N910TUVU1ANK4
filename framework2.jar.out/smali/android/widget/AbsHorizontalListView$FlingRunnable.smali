@@ -83,7 +83,6 @@
 
 .method static synthetic access$1800(Landroid/widget/AbsHorizontalListView$FlingRunnable;)Landroid/widget/OverScroller;
     .locals 1
-    .param p0    # Landroid/widget/AbsHorizontalListView$FlingRunnable;
 
     iget-object v0, p0, Landroid/widget/AbsHorizontalListView$FlingRunnable;->mScroller:Landroid/widget/OverScroller;
 
@@ -94,7 +93,6 @@
 # virtual methods
 .method edgeReached(I)V
     .locals 6
-    .param p1    # I
 
     iget-object v2, p0, Landroid/widget/AbsHorizontalListView$FlingRunnable;->mScroller:Landroid/widget/OverScroller;
 
@@ -834,7 +832,6 @@
 
 .method start(I)V
     .locals 9
-    .param p1    # I
 
     const v6, 0x7fffffff
 
@@ -908,7 +905,6 @@
 
 .method startOverfling(I)V
     .locals 11
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -968,9 +964,6 @@
 
 .method startScroll(IIZ)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     const/4 v2, 0x0
 

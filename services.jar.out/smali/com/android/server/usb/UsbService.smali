@@ -41,7 +41,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 7
-    .param p1    # Landroid/content/Context;
 
     const/4 v6, 0x0
 
@@ -164,8 +163,6 @@
 
 .method static synthetic access$000(Lcom/android/server/usb/UsbService;I)V
     .locals 0
-    .param p0    # Lcom/android/server/usb/UsbService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/usb/UsbService;->setCurrentUser(I)V
 
@@ -174,7 +171,6 @@
 
 .method static synthetic access$100(Lcom/android/server/usb/UsbService;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Lcom/android/server/usb/UsbService;
 
     iget-object v0, p0, Lcom/android/server/usb/UsbService;->mLock:Ljava/lang/Object;
 
@@ -183,7 +179,6 @@
 
 .method static synthetic access$200(Lcom/android/server/usb/UsbService;)Landroid/util/SparseArray;
     .locals 1
-    .param p0    # Lcom/android/server/usb/UsbService;
 
     iget-object v0, p0, Lcom/android/server/usb/UsbService;->mSettingsByUser:Landroid/util/SparseArray;
 
@@ -192,7 +187,6 @@
 
 .method private getSettingsForUser(I)Lcom/android/server/usb/UsbSettingsManager;
     .locals 4
-    .param p1    # I
 
     iget-object v2, p0, Lcom/android/server/usb/UsbService;->mLock:Ljava/lang/Object;
 
@@ -240,7 +234,6 @@
 
 .method private setCurrentUser(I)V
     .locals 2
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/usb/UsbService;->getSettingsForUser(I)Lcom/android/server/usb/UsbSettingsManager;
 
@@ -271,8 +264,6 @@
 # virtual methods
 .method public allowUsbDebugging(ZLjava/lang/String;)V
     .locals 3
-    .param p1    # Z
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/server/usb/UsbService;->mContext:Landroid/content/Context;
 
@@ -291,8 +282,6 @@
 
 .method public clearDefaults(Ljava/lang/String;I)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/server/usb/UsbService;->mContext:Landroid/content/Context;
 
@@ -349,9 +338,6 @@
 
 .method public dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 7
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     iget-object v4, p0, Lcom/android/server/usb/UsbService;->mContext:Landroid/content/Context;
 
@@ -552,7 +538,6 @@
 
 .method public getDeviceList(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     iget-object v0, p0, Lcom/android/server/usb/UsbService;->mHostManager:Lcom/android/server/usb/UsbHostManager;
 
@@ -568,8 +553,6 @@
 
 .method public grantAccessoryPermission(Landroid/hardware/usb/UsbAccessory;I)V
     .locals 4
-    .param p1    # Landroid/hardware/usb/UsbAccessory;
-    .param p2    # I
 
     iget-object v1, p0, Lcom/android/server/usb/UsbService;->mContext:Landroid/content/Context;
 
@@ -594,8 +577,6 @@
 
 .method public grantDevicePermission(Landroid/hardware/usb/UsbDevice;I)V
     .locals 4
-    .param p1    # Landroid/hardware/usb/UsbDevice;
-    .param p2    # I
 
     iget-object v1, p0, Lcom/android/server/usb/UsbService;->mContext:Landroid/content/Context;
 
@@ -620,7 +601,6 @@
 
 .method public hasAccessoryPermission(Landroid/hardware/usb/UsbAccessory;)Z
     .locals 2
-    .param p1    # Landroid/hardware/usb/UsbAccessory;
 
     invoke-static {}, Landroid/os/UserHandle;->getCallingUserId()I
 
@@ -639,8 +619,6 @@
 
 .method public hasDefaults(Ljava/lang/String;I)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/server/usb/UsbService;->mContext:Landroid/content/Context;
 
@@ -663,7 +641,6 @@
 
 .method public hasDevicePermission(Landroid/hardware/usb/UsbDevice;)Z
     .locals 2
-    .param p1    # Landroid/hardware/usb/UsbDevice;
 
     invoke-static {}, Landroid/os/UserHandle;->getCallingUserId()I
 
@@ -722,7 +699,6 @@
 
 .method public openAccessory(Landroid/hardware/usb/UsbAccessory;)Landroid/os/ParcelFileDescriptor;
     .locals 1
-    .param p1    # Landroid/hardware/usb/UsbAccessory;
 
     iget-object v0, p0, Lcom/android/server/usb/UsbService;->mDeviceManager:Lcom/android/server/usb/UsbDeviceManager;
 
@@ -745,7 +721,6 @@
 
 .method public openDevice(Ljava/lang/String;)Landroid/os/ParcelFileDescriptor;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/server/usb/UsbService;->mHostManager:Lcom/android/server/usb/UsbHostManager;
 
@@ -768,9 +743,6 @@
 
 .method public requestAccessoryPermission(Landroid/hardware/usb/UsbAccessory;Ljava/lang/String;Landroid/app/PendingIntent;)V
     .locals 2
-    .param p1    # Landroid/hardware/usb/UsbAccessory;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/app/PendingIntent;
 
     invoke-static {}, Landroid/os/UserHandle;->getCallingUserId()I
 
@@ -787,9 +759,6 @@
 
 .method public requestDevicePermission(Landroid/hardware/usb/UsbDevice;Ljava/lang/String;Landroid/app/PendingIntent;)V
     .locals 2
-    .param p1    # Landroid/hardware/usb/UsbDevice;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/app/PendingIntent;
 
     invoke-static {}, Landroid/os/UserHandle;->getCallingUserId()I
 
@@ -806,7 +775,6 @@
 
 .method public restoreCurrentFunctions(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/server/usb/UsbService;->mContext:Landroid/content/Context;
 
@@ -838,7 +806,6 @@
 
 .method public saveCurrentFunctions(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/server/usb/UsbService;->mContext:Landroid/content/Context;
 
@@ -870,9 +837,6 @@
 
 .method public setAccessoryPackage(Landroid/hardware/usb/UsbAccessory;Ljava/lang/String;I)V
     .locals 3
-    .param p1    # Landroid/hardware/usb/UsbAccessory;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     iget-object v0, p0, Lcom/android/server/usb/UsbService;->mContext:Landroid/content/Context;
 
@@ -893,8 +857,6 @@
 
 .method public setCurrentFunction(Ljava/lang/String;Z)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     iget-object v0, p0, Lcom/android/server/usb/UsbService;->mContext:Landroid/content/Context;
 
@@ -926,9 +888,6 @@
 
 .method public setDevicePackage(Landroid/hardware/usb/UsbDevice;Ljava/lang/String;I)V
     .locals 3
-    .param p1    # Landroid/hardware/usb/UsbDevice;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     iget-object v0, p0, Lcom/android/server/usb/UsbService;->mContext:Landroid/content/Context;
 
@@ -949,7 +908,6 @@
 
 .method public setMassStorageBackingFile(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/server/usb/UsbService;->mContext:Landroid/content/Context;
 
@@ -981,7 +939,6 @@
 
 .method public setUsb30Mode(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/server/usb/UsbService;->mContext:Landroid/content/Context;
 

@@ -212,8 +212,6 @@
 
 .method public constructor <init>(Landroid/app/Activity;Lcom/android/mms/ui/ComposeMessageFragment;)V
     .locals 3
-    .param p1    # Landroid/app/Activity;
-    .param p2    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     const/4 v2, 0x0
 
@@ -292,8 +290,6 @@
 
 .method static synthetic access$002(Lcom/android/mms/util/HandleComposerAttachment;Landroid/app/AlertDialog;)Landroid/app/AlertDialog;
     .locals 0
-    .param p0    # Lcom/android/mms/util/HandleComposerAttachment;
-    .param p1    # Landroid/app/AlertDialog;
 
     iput-object p1, p0, Lcom/android/mms/util/HandleComposerAttachment;->mHasSoundShotDialog:Landroid/app/AlertDialog;
 
@@ -302,7 +298,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/util/HandleComposerAttachment;)Landroid/app/ProgressDialog;
     .locals 1
-    .param p0    # Lcom/android/mms/util/HandleComposerAttachment;
 
     iget-object v0, p0, Lcom/android/mms/util/HandleComposerAttachment;->mDialog:Landroid/app/ProgressDialog;
 
@@ -311,7 +306,6 @@
 
 .method static synthetic access$1000(Lcom/android/mms/util/HandleComposerAttachment;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/util/HandleComposerAttachment;
 
     iget-boolean v0, p0, Lcom/android/mms/util/HandleComposerAttachment;->mVideoResizeCanceled:Z
 
@@ -320,8 +314,6 @@
 
 .method static synthetic access$1002(Lcom/android/mms/util/HandleComposerAttachment;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/util/HandleComposerAttachment;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/util/HandleComposerAttachment;->mVideoResizeCanceled:Z
 
@@ -330,7 +322,6 @@
 
 .method static synthetic access$1100(Lcom/android/mms/util/HandleComposerAttachment;)Landroid/app/ProgressDialog;
     .locals 1
-    .param p0    # Lcom/android/mms/util/HandleComposerAttachment;
 
     iget-object v0, p0, Lcom/android/mms/util/HandleComposerAttachment;->mVideoResizeProgressDialog:Landroid/app/ProgressDialog;
 
@@ -339,8 +330,6 @@
 
 .method static synthetic access$1102(Lcom/android/mms/util/HandleComposerAttachment;Landroid/app/ProgressDialog;)Landroid/app/ProgressDialog;
     .locals 0
-    .param p0    # Lcom/android/mms/util/HandleComposerAttachment;
-    .param p1    # Landroid/app/ProgressDialog;
 
     iput-object p1, p0, Lcom/android/mms/util/HandleComposerAttachment;->mVideoResizeProgressDialog:Landroid/app/ProgressDialog;
 
@@ -349,8 +338,6 @@
 
 .method static synthetic access$1200(Lcom/android/mms/util/HandleComposerAttachment;Lcom/samsung/app/share/via/external/ShareviaObj;)V
     .locals 0
-    .param p0    # Lcom/android/mms/util/HandleComposerAttachment;
-    .param p1    # Lcom/samsung/app/share/via/external/ShareviaObj;
 
     invoke-direct {p0, p1}, Lcom/android/mms/util/HandleComposerAttachment;->nativeAccessForShareviaObj(Lcom/samsung/app/share/via/external/ShareviaObj;)V
 
@@ -359,7 +346,6 @@
 
 .method static synthetic access$1300(Lcom/android/mms/util/HandleComposerAttachment;)V
     .locals 0
-    .param p0    # Lcom/android/mms/util/HandleComposerAttachment;
 
     invoke-direct {p0}, Lcom/android/mms/util/HandleComposerAttachment;->showVideoResizingProgressDialog()V
 
@@ -368,9 +354,6 @@
 
 .method static synthetic access$1400(Lcom/android/mms/util/HandleComposerAttachment;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/mms/util/HandleComposerAttachment;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Lcom/android/mms/util/HandleComposerAttachment;->videoResizingProgress(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -379,8 +362,6 @@
 
 .method static synthetic access$1502(Lcom/android/mms/util/HandleComposerAttachment;I)I
     .locals 0
-    .param p0    # Lcom/android/mms/util/HandleComposerAttachment;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/mms/util/HandleComposerAttachment;->mOutFileSizeEstimated:I
 
@@ -389,8 +370,6 @@
 
 .method static synthetic access$1602(Lcom/android/mms/util/HandleComposerAttachment;Landroid/app/AlertDialog;)Landroid/app/AlertDialog;
     .locals 0
-    .param p0    # Lcom/android/mms/util/HandleComposerAttachment;
-    .param p1    # Landroid/app/AlertDialog;
 
     iput-object p1, p0, Lcom/android/mms/util/HandleComposerAttachment;->mVideoResizeDialog:Landroid/app/AlertDialog;
 
@@ -399,9 +378,6 @@
 
 .method static synthetic access$1700(Lcom/android/mms/util/HandleComposerAttachment;Landroid/net/Uri;[Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/mms/util/HandleComposerAttachment;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # [Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Lcom/android/mms/util/HandleComposerAttachment;->getMediaFilePathFromUri(Landroid/net/Uri;[Ljava/lang/String;)Ljava/lang/String;
 
@@ -412,8 +388,6 @@
 
 .method static synthetic access$1802(Lcom/android/mms/util/HandleComposerAttachment;Landroid/app/AlertDialog;)Landroid/app/AlertDialog;
     .locals 0
-    .param p0    # Lcom/android/mms/util/HandleComposerAttachment;
-    .param p1    # Landroid/app/AlertDialog;
 
     iput-object p1, p0, Lcom/android/mms/util/HandleComposerAttachment;->mVideoResizeEditDialog:Landroid/app/AlertDialog;
 
@@ -422,7 +396,6 @@
 
 .method static synthetic access$1900(Lcom/android/mms/util/HandleComposerAttachment;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/mms/util/HandleComposerAttachment;
 
     iget-object v0, p0, Lcom/android/mms/util/HandleComposerAttachment;->mMyAddress:Ljava/lang/String;
 
@@ -431,8 +404,6 @@
 
 .method static synthetic access$1902(Lcom/android/mms/util/HandleComposerAttachment;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/android/mms/util/HandleComposerAttachment;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/mms/util/HandleComposerAttachment;->mMyAddress:Ljava/lang/String;
 
@@ -441,11 +412,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/util/HandleComposerAttachment;Ljava/util/ArrayList;ILandroid/net/Uri;Z)V
     .locals 0
-    .param p0    # Lcom/android/mms/util/HandleComposerAttachment;
-    .param p1    # Ljava/util/ArrayList;
-    .param p2    # I
-    .param p3    # Landroid/net/Uri;
-    .param p4    # Z
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/mms/util/HandleComposerAttachment;->addPickImage(Ljava/util/ArrayList;ILandroid/net/Uri;Z)V
 
@@ -454,8 +420,6 @@
 
 .method static synthetic access$2000(Lcom/android/mms/util/HandleComposerAttachment;Z)V
     .locals 0
-    .param p0    # Lcom/android/mms/util/HandleComposerAttachment;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/mms/util/HandleComposerAttachment;->finishGetMyLocation(Z)V
 
@@ -464,7 +428,6 @@
 
 .method static synthetic access$2100(Lcom/android/mms/util/HandleComposerAttachment;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/mms/util/HandleComposerAttachment;
 
     iget-object v0, p0, Lcom/android/mms/util/HandleComposerAttachment;->mMyLocationHandler:Landroid/os/Handler;
 
@@ -473,7 +436,6 @@
 
 .method static synthetic access$2200(Lcom/android/mms/util/HandleComposerAttachment;)Landroid/widget/CheckBox;
     .locals 1
-    .param p0    # Lcom/android/mms/util/HandleComposerAttachment;
 
     iget-object v0, p0, Lcom/android/mms/util/HandleComposerAttachment;->mDoNotShowAgain:Landroid/widget/CheckBox;
 
@@ -482,7 +444,6 @@
 
 .method static synthetic access$2300(Lcom/android/mms/util/HandleComposerAttachment;)Landroid/widget/CheckBox;
     .locals 1
-    .param p0    # Lcom/android/mms/util/HandleComposerAttachment;
 
     iget-object v0, p0, Lcom/android/mms/util/HandleComposerAttachment;->mDoNotShowAgain2:Landroid/widget/CheckBox;
 
@@ -491,7 +452,6 @@
 
 .method static synthetic access$2400(Lcom/android/mms/util/HandleComposerAttachment;)Ljava/lang/Runnable;
     .locals 1
-    .param p0    # Lcom/android/mms/util/HandleComposerAttachment;
 
     iget-object v0, p0, Lcom/android/mms/util/HandleComposerAttachment;->runnableAfterDialog:Ljava/lang/Runnable;
 
@@ -500,7 +460,6 @@
 
 .method static synthetic access$300(Lcom/android/mms/util/HandleComposerAttachment;)Lcom/android/mms/ui/ComposeMessageFragment;
     .locals 1
-    .param p0    # Lcom/android/mms/util/HandleComposerAttachment;
 
     iget-object v0, p0, Lcom/android/mms/util/HandleComposerAttachment;->mComposer:Lcom/android/mms/ui/ComposeMessageFragment;
 
@@ -509,7 +468,6 @@
 
 .method static synthetic access$400(Lcom/android/mms/util/HandleComposerAttachment;)Landroid/app/Activity;
     .locals 1
-    .param p0    # Lcom/android/mms/util/HandleComposerAttachment;
 
     iget-object v0, p0, Lcom/android/mms/util/HandleComposerAttachment;->mActivity:Landroid/app/Activity;
 
@@ -518,14 +476,6 @@
 
 .method static synthetic access$500(Lcom/android/mms/util/HandleComposerAttachment;Landroid/net/Uri;IZZZLjava/lang/String;Lcom/samsung/app/share/via/external/ShareviaObj;)V
     .locals 0
-    .param p0    # Lcom/android/mms/util/HandleComposerAttachment;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # Z
-    .param p5    # Z
-    .param p6    # Ljava/lang/String;
-    .param p7    # Lcom/samsung/app/share/via/external/ShareviaObj;
 
     invoke-direct/range {p0 .. p7}, Lcom/android/mms/util/HandleComposerAttachment;->showVideoResizingDialog(Landroid/net/Uri;IZZZLjava/lang/String;Lcom/samsung/app/share/via/external/ShareviaObj;)V
 
@@ -534,10 +484,6 @@
 
 .method static synthetic access$600(Lcom/android/mms/util/HandleComposerAttachment;Landroid/net/Uri;JZ)V
     .locals 0
-    .param p0    # Lcom/android/mms/util/HandleComposerAttachment;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # J
-    .param p4    # Z
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/mms/util/HandleComposerAttachment;->showVideoResizingEditDialog(Landroid/net/Uri;JZ)V
 
@@ -546,10 +492,6 @@
 
 .method static synthetic access$700(Lcom/android/mms/util/HandleComposerAttachment;Landroid/os/Handler;Landroid/content/Intent;Landroid/os/Bundle;)V
     .locals 0
-    .param p0    # Lcom/android/mms/util/HandleComposerAttachment;
-    .param p1    # Landroid/os/Handler;
-    .param p2    # Landroid/content/Intent;
-    .param p3    # Landroid/os/Bundle;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/mms/util/HandleComposerAttachment;->singleAttachMent(Landroid/os/Handler;Landroid/content/Intent;Landroid/os/Bundle;)V
 
@@ -558,11 +500,6 @@
 
 .method static synthetic access$800(Lcom/android/mms/util/HandleComposerAttachment;Landroid/os/Handler;Landroid/content/Intent;Landroid/os/Bundle;I)V
     .locals 0
-    .param p0    # Lcom/android/mms/util/HandleComposerAttachment;
-    .param p1    # Landroid/os/Handler;
-    .param p2    # Landroid/content/Intent;
-    .param p3    # Landroid/os/Bundle;
-    .param p4    # I
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/mms/util/HandleComposerAttachment;->multiAttachMent(Landroid/os/Handler;Landroid/content/Intent;Landroid/os/Bundle;I)V
 
@@ -571,7 +508,6 @@
 
 .method static synthetic access$900(Lcom/android/mms/util/HandleComposerAttachment;)Lcom/samsung/app/share/via/external/NativeAccess;
     .locals 1
-    .param p0    # Lcom/android/mms/util/HandleComposerAttachment;
 
     iget-object v0, p0, Lcom/android/mms/util/HandleComposerAttachment;->mNativeAccess:Lcom/samsung/app/share/via/external/NativeAccess;
 
@@ -580,9 +516,6 @@
 
 .method private addPickImage(Ljava/util/ArrayList;ILandroid/net/Uri;Z)V
     .locals 7
-    .param p2    # I
-    .param p3    # Landroid/net/Uri;
-    .param p4    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -622,10 +555,6 @@
 
 .method private createShareviaObj(Ljava/lang/String;Ljava/lang/String;II)Lcom/samsung/app/share/via/external/ShareviaObj;
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
 
     const/4 v0, 0x1
 
@@ -674,7 +603,6 @@
 
 .method private finishGetMyLocation(Z)V
     .locals 3
-    .param p1    # Z
 
     const-string v0, "Mms/HandleComposerAttachment"
 
@@ -755,7 +683,6 @@
 
 .method private getAvailableSlideCount(I)I
     .locals 5
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -859,7 +786,6 @@
 
 .method private getFileNameFromContentUri(Landroid/net/Uri;)Ljava/lang/String;
     .locals 9
-    .param p1    # Landroid/net/Uri;
 
     const/4 v3, 0x0
 
@@ -1094,8 +1020,6 @@
 
 .method private getMediaFilePathFromUri(Landroid/net/Uri;[Ljava/lang/String;)Ljava/lang/String;
     .locals 9
-    .param p1    # Landroid/net/Uri;
-    .param p2    # [Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -1162,7 +1086,6 @@
 
 .method private getMediaFileSize(Ljava/lang/String;)I
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -1257,7 +1180,6 @@
 
 .method public static getNextAvailableName(Ljava/lang/String;)Ljava/lang/String;
     .locals 12
-    .param p0    # Ljava/lang/String;
 
     const/4 v11, 0x1
 
@@ -1470,7 +1392,6 @@
 
 .method private getOutputFileDurationPossible(Ljava/lang/String;)I
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/mms/util/HandleComposerAttachment;->mNativeAccess:Lcom/samsung/app/share/via/external/NativeAccess;
 
@@ -1522,7 +1443,6 @@
 
 .method private getVideoFileDurationTime(Ljava/lang/String;)I
     .locals 9
-    .param p1    # Ljava/lang/String;
 
     const/16 v8, 0x9
 
@@ -1743,7 +1663,6 @@
 
 .method private static isMediaUri(Landroid/net/Uri;)Z
     .locals 3
-    .param p0    # Landroid/net/Uri;
 
     invoke-virtual {p0}, Landroid/net/Uri;->getAuthority()Ljava/lang/String;
 
@@ -1784,10 +1703,6 @@
 
 .method private multiAttachMent(Landroid/os/Handler;Landroid/content/Intent;Landroid/os/Bundle;I)V
     .locals 8
-    .param p1    # Landroid/os/Handler;
-    .param p2    # Landroid/content/Intent;
-    .param p3    # Landroid/os/Bundle;
-    .param p4    # I
 
     const-string v0, "Mms/HandleComposerAttachment"
 
@@ -1878,7 +1793,6 @@
 
 .method private nativeAccessForShareviaObj(Lcom/samsung/app/share/via/external/ShareviaObj;)V
     .locals 1
-    .param p1    # Lcom/samsung/app/share/via/external/ShareviaObj;
 
     new-instance v0, Lcom/android/mms/util/HandleComposerAttachment$33;
 
@@ -1891,10 +1805,6 @@
 
 .method private resizeImage(Lcom/google/android/mms/pdu/PduPart;ZZZ)I
     .locals 20
-    .param p1    # Lcom/google/android/mms/pdu/PduPart;
-    .param p2    # Z
-    .param p3    # Z
-    .param p4    # Z
 
     const-string v2, "Mms/HandleComposerAttachment"
 
@@ -2317,13 +2227,6 @@
 
 .method private showVideoResizingDialog(Landroid/net/Uri;IZZZLjava/lang/String;Lcom/samsung/app/share/via/external/ShareviaObj;)V
     .locals 15
-    .param p1    # Landroid/net/Uri;
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # Z
-    .param p5    # Z
-    .param p6    # Ljava/lang/String;
-    .param p7    # Lcom/samsung/app/share/via/external/ShareviaObj;
 
     const/4 v1, 0x1
 
@@ -2468,9 +2371,6 @@
 
 .method private showVideoResizingEditDialog(Landroid/net/Uri;JZ)V
     .locals 9
-    .param p1    # Landroid/net/Uri;
-    .param p2    # J
-    .param p4    # Z
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -2657,9 +2557,6 @@
 
 .method private singleAttachMent(Landroid/os/Handler;Landroid/content/Intent;Landroid/os/Bundle;)V
     .locals 7
-    .param p1    # Landroid/os/Handler;
-    .param p2    # Landroid/content/Intent;
-    .param p3    # Landroid/os/Bundle;
 
     const-string v0, "Mms/HandleComposerAttachment"
 
@@ -2857,8 +2754,6 @@
 
 .method private videoResizingProgress(Ljava/lang/String;Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -2967,9 +2862,6 @@
 # virtual methods
 .method public HandleMultiAttachmentFromIntent(Landroid/os/Handler;Landroid/content/Intent;Landroid/os/Bundle;)Z
     .locals 25
-    .param p1    # Landroid/os/Handler;
-    .param p2    # Landroid/content/Intent;
-    .param p3    # Landroid/os/Bundle;
 
     move-object/from16 v0, p0
 
@@ -3412,9 +3304,6 @@
 
 .method public HandleSingleAttachMentFromIntent(Landroid/os/Handler;Landroid/content/Intent;Landroid/os/Bundle;)Z
     .locals 18
-    .param p1    # Landroid/os/Handler;
-    .param p2    # Landroid/content/Intent;
-    .param p3    # Landroid/os/Bundle;
 
     const-string v13, "Mms/HandleComposerAttachment"
 
@@ -3794,11 +3683,6 @@
 
 .method public addAudio(Landroid/net/Uri;IZZZ)I
     .locals 8
-    .param p1    # Landroid/net/Uri;
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # Z
-    .param p5    # Z
 
     iget-object v0, p0, Lcom/android/mms/util/HandleComposerAttachment;->mComposer:Lcom/android/mms/ui/ComposeMessageFragment;
 
@@ -3847,11 +3731,6 @@
 
 .method public addImage(Landroid/net/Uri;IZZZ)I
     .locals 28
-    .param p1    # Landroid/net/Uri;
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # Z
-    .param p5    # Z
 
     const-string v5, "Mms:app"
 
@@ -4397,11 +4276,6 @@
 
 .method public addMedia(ILandroid/net/Uri;ZZZ)I
     .locals 12
-    .param p1    # I
-    .param p2    # Landroid/net/Uri;
-    .param p3    # Z
-    .param p4    # Z
-    .param p5    # Z
 
     iget-object v0, p0, Lcom/android/mms/util/HandleComposerAttachment;->mComposer:Lcom/android/mms/ui/ComposeMessageFragment;
 
@@ -4674,10 +4548,6 @@
 
 .method public addMedia(Ljava/lang/String;Landroid/net/Uri;ZZ)I
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/net/Uri;
-    .param p3    # Z
-    .param p4    # Z
 
     const/4 v6, -0x1
 
@@ -4854,11 +4724,6 @@
 
 .method public addRawMedia(Landroid/net/Uri;ZZZI)I
     .locals 13
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Z
-    .param p3    # Z
-    .param p4    # Z
-    .param p5    # I
 
     const-string v1, "Mms:app"
 
@@ -5047,7 +4912,6 @@
 
 .method public addText(Ljava/lang/String;)Z
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     const/4 v5, 0x0
 
@@ -5174,11 +5038,6 @@
 
 .method public addVideo(Landroid/net/Uri;IZZZ)I
     .locals 22
-    .param p1    # Landroid/net/Uri;
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # Z
-    .param p5    # Z
 
     const/16 v17, -0x1
 
@@ -5639,7 +5498,6 @@
 
 .method public checkEmailBeforeMakeToButton(Lcom/android/mms/data/ContactList;)V
     .locals 8
-    .param p1    # Lcom/android/mms/data/ContactList;
 
     new-instance v4, Lcom/android/mms/data/ContactList;
 
@@ -5799,8 +5657,6 @@
 
 .method public createDataPopup(Landroid/content/Context;Ljava/lang/Runnable;)V
     .locals 10
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/Runnable;
 
     const/4 v9, 0x0
 
@@ -5956,7 +5812,6 @@
 
 .method public createPermissionPopup(Landroid/content/Context;)V
     .locals 8
-    .param p1    # Landroid/content/Context;
 
     const/4 v7, 0x0
 
@@ -6163,7 +6018,6 @@
 
 .method public getAddContactUri(Landroid/net/Uri;)Landroid/net/Uri;
     .locals 15
-    .param p1    # Landroid/net/Uri;
 
     move-object/from16 v0, p1
 
@@ -6289,12 +6143,6 @@
 
 .method public handleAddAttachmentError(IILandroid/net/Uri;IZZ)V
     .locals 11
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/net/Uri;
-    .param p4    # I
-    .param p5    # Z
-    .param p6    # Z
 
     new-instance v9, Ljava/lang/StringBuffer;
 
@@ -6395,7 +6243,6 @@
 
 .method public hasParticipantsInChat(Ljava/util/ArrayList;[Ljava/lang/String;)Z
     .locals 5
-    .param p2    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -6443,9 +6290,6 @@
 
 .method public insertText(Landroid/widget/EditText;Ljava/lang/String;Z)V
     .locals 5
-    .param p1    # Landroid/widget/EditText;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     invoke-virtual {p1}, Landroid/widget/EditText;->getSelectionStart()I
 
@@ -6558,8 +6402,6 @@
 
 .method public launchAppInfo(ILandroid/app/AlertDialog;)V
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/app/AlertDialog;
 
     iget-object v2, p0, Lcom/android/mms/util/HandleComposerAttachment;->mComposer:Lcom/android/mms/ui/ComposeMessageFragment;
 
@@ -6666,9 +6508,6 @@
 
 .method public processingActivityResult(IILandroid/content/Intent;)V
     .locals 97
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const-string v4, "Mms/HandleComposerAttachment"
 
@@ -10959,7 +10798,6 @@
 
 .method public removeActualParticipants(Ljava/util/ArrayList;[Ljava/lang/String;)Ljava/util/ArrayList;
     .locals 6
-    .param p2    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -11013,8 +10851,6 @@
 
 .method public setIntentForVideo(Landroid/content/Intent;Z)V
     .locals 12
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Z
 
     const-wide/16 v10, 0x0
 
@@ -11237,9 +11073,6 @@
 
 .method public showCheckSpamNumberDialog(IILandroid/content/Intent;)Z
     .locals 15
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const/4 v9, 0x0
 
@@ -11419,8 +11252,6 @@
 
 .method public startActivityForAddMedia(IZ)V
     .locals 35
-    .param p1    # I
-    .param p2    # Z
 
     const-string v3, "Mms/HandleComposerAttachment"
 
@@ -13191,7 +13022,6 @@
 
 .method public startActivityForAddText(I)V
     .locals 7
-    .param p1    # I
 
     const/4 v6, 0x1
 

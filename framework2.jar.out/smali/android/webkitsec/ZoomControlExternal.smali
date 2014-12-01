@@ -46,7 +46,6 @@
 
 .method public constructor <init>(Landroid/webkitsec/WebViewClassic;)V
     .locals 1
-    .param p1    # Landroid/webkitsec/WebViewClassic;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -63,7 +62,6 @@
 
 .method static synthetic access$000(Landroid/webkitsec/ZoomControlExternal;)Landroid/webkitsec/ZoomControlExternal$ExtendedZoomControls;
     .locals 1
-    .param p0    # Landroid/webkitsec/ZoomControlExternal;
 
     iget-object v0, p0, Landroid/webkitsec/ZoomControlExternal;->mZoomControls:Landroid/webkitsec/ZoomControlExternal$ExtendedZoomControls;
 
@@ -72,7 +70,6 @@
 
 .method static synthetic access$100(Landroid/webkitsec/ZoomControlExternal;)Ljava/lang/Runnable;
     .locals 1
-    .param p0    # Landroid/webkitsec/ZoomControlExternal;
 
     iget-object v0, p0, Landroid/webkitsec/ZoomControlExternal;->mZoomControlRunnable:Ljava/lang/Runnable;
 
@@ -81,7 +78,6 @@
 
 .method static synthetic access$200(Landroid/webkitsec/ZoomControlExternal;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Landroid/webkitsec/ZoomControlExternal;
 
     iget-object v0, p0, Landroid/webkitsec/ZoomControlExternal;->mPrivateHandler:Landroid/os/Handler;
 
@@ -98,7 +94,6 @@
 
 .method static synthetic access$400(Landroid/webkitsec/ZoomControlExternal;)Landroid/webkitsec/WebViewClassic;
     .locals 1
-    .param p0    # Landroid/webkitsec/ZoomControlExternal;
 
     iget-object v0, p0, Landroid/webkitsec/ZoomControlExternal;->mWebView:Landroid/webkitsec/WebViewClassic;
 

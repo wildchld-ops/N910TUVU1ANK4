@@ -62,12 +62,6 @@
 
 .method public constructor <init>(IIIIII)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     invoke-direct {p0}, Landroid/telephony/CellSignalStrength;-><init>()V
 
@@ -78,7 +72,6 @@
 
 .method private constructor <init>(Landroid/os/Parcel;)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Landroid/telephony/CellSignalStrength;-><init>()V
 
@@ -127,8 +120,6 @@
 
 .method synthetic constructor <init>(Landroid/os/Parcel;Landroid/telephony/CellSignalStrengthLte$1;)V
     .locals 0
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # Landroid/telephony/CellSignalStrengthLte$1;
 
     invoke-direct {p0, p1}, Landroid/telephony/CellSignalStrengthLte;-><init>(Landroid/os/Parcel;)V
 
@@ -137,7 +128,6 @@
 
 .method public constructor <init>(Landroid/telephony/CellSignalStrengthLte;)V
     .locals 0
-    .param p1    # Landroid/telephony/CellSignalStrengthLte;
 
     invoke-direct {p0}, Landroid/telephony/CellSignalStrength;-><init>()V
 
@@ -148,7 +138,6 @@
 
 .method private static log(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "CellSignalStrengthLte"
 
@@ -181,7 +170,6 @@
 
 .method protected copyFrom(Landroid/telephony/CellSignalStrengthLte;)V
     .locals 1
-    .param p1    # Landroid/telephony/CellSignalStrengthLte;
 
     iget v0, p1, Landroid/telephony/CellSignalStrengthLte;->mSignalStrength:I
 
@@ -220,7 +208,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 6
-    .param p1    # Ljava/lang/Object;
 
     const/4 v3, 0x0
 
@@ -510,12 +497,6 @@
 
 .method public initialize(IIIIII)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     iput p1, p0, Landroid/telephony/CellSignalStrengthLte;->mSignalStrength:I
 
@@ -534,8 +515,6 @@
 
 .method public initialize(Landroid/telephony/SignalStrength;I)V
     .locals 1
-    .param p1    # Landroid/telephony/SignalStrength;
-    .param p2    # I
 
     invoke-virtual {p1}, Landroid/telephony/SignalStrength;->getLteSignalStrength()I
 
@@ -680,8 +659,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget v0, p0, Landroid/telephony/CellSignalStrengthLte;->mSignalStrength:I
 

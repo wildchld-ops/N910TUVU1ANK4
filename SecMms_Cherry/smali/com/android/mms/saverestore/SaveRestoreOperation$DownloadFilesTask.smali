@@ -48,8 +48,6 @@
 
 .method synthetic constructor <init>(Lcom/android/mms/saverestore/SaveRestoreOperation;Lcom/android/mms/saverestore/SaveRestoreOperation$1;)V
     .locals 0
-    .param p1    # Lcom/android/mms/saverestore/SaveRestoreOperation;
-    .param p2    # Lcom/android/mms/saverestore/SaveRestoreOperation$1;
 
     invoke-direct {p0, p1}, Lcom/android/mms/saverestore/SaveRestoreOperation$DownloadFilesTask;-><init>(Lcom/android/mms/saverestore/SaveRestoreOperation;)V
 
@@ -60,7 +58,6 @@
 # virtual methods
 .method protected varargs doInBackground([Ljava/lang/Void;)Ljava/lang/Integer;
     .locals 12
-    .param p1    # [Ljava/lang/Void;
 
     const/4 v7, 0x0
 
@@ -471,7 +468,6 @@
 
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [Ljava/lang/Void;
 
@@ -554,7 +550,6 @@
 
 .method protected onPostExecute(Ljava/lang/Integer;)V
     .locals 3
-    .param p1    # Ljava/lang/Integer;
 
     const-string v0, "Mms/SaveRestoreOperation"
 
@@ -617,7 +612,6 @@
 
 .method protected bridge synthetic onPostExecute(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Ljava/lang/Integer;
 
@@ -724,7 +718,6 @@
 
 .method protected varargs onProgressUpdate([Ljava/lang/Integer;)V
     .locals 2
-    .param p1    # [Ljava/lang/Integer;
 
     iget-object v0, p0, Lcom/android/mms/saverestore/SaveRestoreOperation$DownloadFilesTask;->mProgressDialog:Landroid/app/ProgressDialog;
 
@@ -756,7 +749,6 @@
 
 .method protected bridge synthetic onProgressUpdate([Ljava/lang/Object;)V
     .locals 0
-    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [Ljava/lang/Integer;
 

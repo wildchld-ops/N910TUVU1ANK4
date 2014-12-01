@@ -26,7 +26,6 @@
 
 .method public static isRotationLockToggleSupported(Landroid/content/Context;)Z
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Lcom/android/internal/view/RotationPolicy;->isRotationSupported(Landroid/content/Context;)Z
 
@@ -61,7 +60,6 @@
 
 .method public static isRotationLockToggleVisible(Landroid/content/Context;)Z
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -93,7 +91,6 @@
 
 .method public static isRotationLocked(Landroid/content/Context;)Z
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -119,7 +116,6 @@
 
 .method public static isRotationSupported(Landroid/content/Context;)Z
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -162,8 +158,6 @@
 
 .method public static registerRotationPolicyListener(Landroid/content/Context;Lcom/android/internal/view/RotationPolicy$RotationPolicyListener;)V
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/internal/view/RotationPolicy$RotationPolicyListener;
 
     invoke-static {}, Landroid/os/UserHandle;->getCallingUserId()I
 
@@ -176,9 +170,6 @@
 
 .method public static registerRotationPolicyListener(Landroid/content/Context;Lcom/android/internal/view/RotationPolicy$RotationPolicyListener;I)V
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/internal/view/RotationPolicy$RotationPolicyListener;
-    .param p2    # I
 
     const/4 v3, 0x0
 
@@ -215,8 +206,6 @@
 
 .method public static setRotationLock(Landroid/content/Context;Z)V
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
 
     invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -241,8 +230,6 @@
 
 .method public static setRotationLockForAccessibility(Landroid/content/Context;Z)V
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
 
     invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -275,8 +262,6 @@
 
 .method public static unregisterRotationPolicyListener(Landroid/content/Context;Lcom/android/internal/view/RotationPolicy$RotationPolicyListener;)V
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/internal/view/RotationPolicy$RotationPolicyListener;
 
     invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 

@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,9 +36,6 @@
 # virtual methods
 .method public addPrintJobStateChangeListener(Landroid/print/IPrintJobStateChangeListener;II)V
     .locals 5
-    .param p1    # Landroid/print/IPrintJobStateChangeListener;
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -115,9 +111,6 @@
 
 .method public cancelPrintJob(Landroid/print/PrintJobId;II)V
     .locals 5
-    .param p1    # Landroid/print/PrintJobId;
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -192,8 +185,6 @@
 
 .method public createPrinterDiscoverySession(Landroid/print/IPrinterDiscoveryObserver;I)V
     .locals 5
-    .param p1    # Landroid/print/IPrinterDiscoveryObserver;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -259,8 +250,6 @@
 
 .method public destroyPrinterDiscoverySession(Landroid/print/IPrinterDiscoveryObserver;I)V
     .locals 5
-    .param p1    # Landroid/print/IPrinterDiscoveryObserver;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -326,7 +315,6 @@
 
 .method public getEnabledPrintServices(I)Ljava/util/List;
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -394,7 +382,6 @@
 
 .method public getInstalledPrintServices(I)Ljava/util/List;
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -470,9 +457,6 @@
 
 .method public getPrintJobInfo(Landroid/print/PrintJobId;II)Landroid/print/PrintJobInfo;
     .locals 6
-    .param p1    # Landroid/print/PrintJobId;
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -567,8 +551,6 @@
 
 .method public getPrintJobInfos(II)Ljava/util/List;
     .locals 6
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II)",
@@ -638,12 +620,6 @@
 
 .method public print(Ljava/lang/String;Landroid/print/IPrintDocumentAdapter;Landroid/print/PrintAttributes;Ljava/lang/String;II)Landroid/os/Bundle;
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/print/IPrintDocumentAdapter;
-    .param p3    # Landroid/print/PrintAttributes;
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
-    .param p6    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -756,8 +732,6 @@
 
 .method public removePrintJobStateChangeListener(Landroid/print/IPrintJobStateChangeListener;I)V
     .locals 5
-    .param p1    # Landroid/print/IPrintJobStateChangeListener;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -823,9 +797,6 @@
 
 .method public restartPrintJob(Landroid/print/PrintJobId;II)V
     .locals 5
-    .param p1    # Landroid/print/PrintJobId;
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -900,8 +871,6 @@
 
 .method public startPrinterDiscovery(Landroid/print/IPrinterDiscoveryObserver;Ljava/util/List;I)V
     .locals 5
-    .param p1    # Landroid/print/IPrinterDiscoveryObserver;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -980,8 +949,6 @@
 
 .method public startPrinterStateTracking(Landroid/print/PrinterId;I)V
     .locals 5
-    .param p1    # Landroid/print/PrinterId;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1054,8 +1021,6 @@
 
 .method public stopPrinterDiscovery(Landroid/print/IPrinterDiscoveryObserver;I)V
     .locals 5
-    .param p1    # Landroid/print/IPrinterDiscoveryObserver;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1121,8 +1086,6 @@
 
 .method public stopPrinterStateTracking(Landroid/print/PrinterId;I)V
     .locals 5
-    .param p1    # Landroid/print/PrinterId;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1195,7 +1158,6 @@
 
 .method public validatePrinters(Ljava/util/List;I)V
     .locals 5
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

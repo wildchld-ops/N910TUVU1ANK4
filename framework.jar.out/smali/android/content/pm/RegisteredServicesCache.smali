@@ -89,10 +89,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/content/pm/XmlSerializerAndParser;)V
     .locals 10
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -244,8 +240,6 @@
 
 .method static synthetic access$100(Landroid/content/pm/RegisteredServicesCache;I)V
     .locals 0
-    .param p0    # Landroid/content/pm/RegisteredServicesCache;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/content/pm/RegisteredServicesCache;->generateServicesMap(I)V
 
@@ -305,7 +299,6 @@
 
 .method private containsTypeAndUid(Ljava/util/ArrayList;Ljava/lang/Object;I)Z
     .locals 4
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -361,7 +354,6 @@
 
 .method private findOrCreateUserLocked(I)Landroid/content/pm/RegisteredServicesCache$UserServices;
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -396,7 +388,6 @@
 
 .method private generateServicesMap(I)V
     .locals 22
-    .param p1    # I
 
     move-object/from16 v0, p0
 
@@ -990,7 +981,6 @@
 
 .method private inSystemImage(I)Z
     .locals 10
-    .param p1    # I
 
     const/4 v7, 0x0
 
@@ -1057,8 +1047,6 @@
 
 .method private notifyListener(Ljava/lang/Object;IZ)V
     .locals 8
-    .param p2    # I
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TV;IZ)V"
@@ -1110,7 +1098,6 @@
 
 .method private parseServiceInfo(Landroid/content/pm/ResolveInfo;)Landroid/content/pm/RegisteredServicesCache$ServiceInfo;
     .locals 16
-    .param p1    # Landroid/content/pm/ResolveInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1794,10 +1781,6 @@
 # virtual methods
 .method public dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;I)V
     .locals 6
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
-    .param p4    # I
 
     iget-object v4, p0, Landroid/content/pm/RegisteredServicesCache;->mServicesLock:Ljava/lang/Object;
 
@@ -1914,7 +1897,6 @@
 
 .method public getAllServices(I)Ljava/util/Collection;
     .locals 4
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -2000,7 +1982,6 @@
 
 .method public getServiceInfo(Ljava/lang/Object;I)Landroid/content/pm/RegisteredServicesCache$ServiceInfo;
     .locals 3
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TV;I)",
@@ -2049,7 +2030,6 @@
 
 .method public invalidateCache(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v2, p0, Landroid/content/pm/RegisteredServicesCache;->mServicesLock:Ljava/lang/Object;
 
@@ -2092,7 +2072,6 @@
 
 .method public setListener(Landroid/content/pm/RegisteredServicesCacheListener;Landroid/os/Handler;)V
     .locals 1
-    .param p2    # Landroid/os/Handler;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

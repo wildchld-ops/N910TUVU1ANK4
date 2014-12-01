@@ -43,7 +43,6 @@
 # direct methods
 .method public constructor <init>(Landroid/renderscript/RenderScript;)V
     .locals 1
-    .param p1    # Landroid/renderscript/RenderScript;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -753,7 +752,6 @@
 
 .method public setPointSpriteTexCoordinateReplacement(Z)Landroid/renderscript/ProgramFragmentFixedFunction$Builder;
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/renderscript/ProgramFragmentFixedFunction$Builder;->mPointSpriteEnable:Z
 
@@ -762,9 +760,6 @@
 
 .method public setTexture(Landroid/renderscript/ProgramFragmentFixedFunction$Builder$EnvMode;Landroid/renderscript/ProgramFragmentFixedFunction$Builder$Format;I)Landroid/renderscript/ProgramFragmentFixedFunction$Builder;
     .locals 2
-    .param p1    # Landroid/renderscript/ProgramFragmentFixedFunction$Builder$EnvMode;
-    .param p2    # Landroid/renderscript/ProgramFragmentFixedFunction$Builder$Format;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;
@@ -800,7 +795,6 @@
 
 .method public setVaryingColor(Z)Landroid/renderscript/ProgramFragmentFixedFunction$Builder;
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/renderscript/ProgramFragmentFixedFunction$Builder;->mVaryingColorEnable:Z
 

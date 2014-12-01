@@ -25,8 +25,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/pm/PersonaManagerService;Ljava/lang/String;Z)V
     .locals 1
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     iput-object p1, p0, Lcom/android/server/pm/PersonaManagerService$AppUpgradeInfo;->this$0:Lcom/android/server/pm/PersonaManagerService;
 

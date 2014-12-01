@@ -28,7 +28,6 @@
 # direct methods
 .method constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x2
 
@@ -45,8 +44,6 @@
 
 .method private loadBitmap(Landroid/net/Uri;Landroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;
     .locals 5
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Landroid/graphics/BitmapFactory$Options;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/FileNotFoundException;
@@ -140,8 +137,6 @@
 
 .method private loadConstrainedBitmap(Landroid/net/Uri;I)Landroid/graphics/Bitmap;
     .locals 9
-    .param p1    # Landroid/net/Uri;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/FileNotFoundException;
@@ -252,8 +247,6 @@
 
 .method public printBitmap(Ljava/lang/String;Landroid/graphics/Bitmap;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/graphics/Bitmap;
 
     if-nez p2, :cond_0
 
@@ -317,8 +310,6 @@
 
 .method public printBitmap(Ljava/lang/String;Landroid/net/Uri;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/net/Uri;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/FileNotFoundException;
@@ -338,7 +329,6 @@
 
 .method public setColorMode(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/support/v4/print/PrintHelperKitkat;->mColorMode:I
 
@@ -347,7 +337,6 @@
 
 .method public setScaleMode(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/support/v4/print/PrintHelperKitkat;->mScaleMode:I
 

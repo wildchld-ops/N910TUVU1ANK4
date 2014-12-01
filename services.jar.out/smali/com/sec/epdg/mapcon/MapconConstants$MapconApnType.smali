@@ -216,7 +216,6 @@
 
 .method private constructor <init>(Ljava/lang/String;ILjava/lang/String;)V
     .locals 0
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -234,7 +233,6 @@
 
 .method public static getMapconApnType(Ljava/lang/String;)Lcom/sec/epdg/mapcon/MapconConstants$MapconApnType;
     .locals 7
-    .param p0    # Ljava/lang/String;
 
     invoke-static {}, Lcom/sec/epdg/mapcon/MapconConstants$MapconApnType;->values()[Lcom/sec/epdg/mapcon/MapconConstants$MapconApnType;
 
@@ -294,7 +292,6 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/sec/epdg/mapcon/MapconConstants$MapconApnType;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-class v0, Lcom/sec/epdg/mapcon/MapconConstants$MapconApnType;
 

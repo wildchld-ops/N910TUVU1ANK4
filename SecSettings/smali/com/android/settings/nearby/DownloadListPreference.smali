@@ -34,8 +34,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const v2, 0x7f091237
 
@@ -82,7 +80,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/nearby/DownloadListPreference;)Lcom/android/settings/nearby/DownloadListPreference$DownloadListAdapter;
     .locals 1
-    .param p0    # Lcom/android/settings/nearby/DownloadListPreference;
 
     iget-object v0, p0, Lcom/android/settings/nearby/DownloadListPreference;->mAdapter:Lcom/android/settings/nearby/DownloadListPreference$DownloadListAdapter;
 
@@ -91,7 +88,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/nearby/DownloadListPreference;)Landroid/app/AlertDialog;
     .locals 1
-    .param p0    # Lcom/android/settings/nearby/DownloadListPreference;
 
     iget-object v0, p0, Lcom/android/settings/nearby/DownloadListPreference;->mDialog:Landroid/app/AlertDialog;
 
@@ -102,7 +98,6 @@
 # virtual methods
 .method protected onPrepareDialogBuilder(Landroid/app/AlertDialog$Builder;)V
     .locals 3
-    .param p1    # Landroid/app/AlertDialog$Builder;
 
     const-string v0, "DownloadListPreference"
 
@@ -130,7 +125,6 @@
 
 .method public setIsExternalMounted(Z)V
     .locals 4
-    .param p1    # Z
 
     const-string v0, "DownloadListPreference"
 
@@ -237,7 +231,6 @@
 
 .method protected showDialog(Landroid/os/Bundle;)V
     .locals 7
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v6, 0x0
 

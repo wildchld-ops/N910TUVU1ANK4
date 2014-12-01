@@ -42,8 +42,6 @@
 
 .method synthetic constructor <init>(Landroid/widget/MultiSelectPopupWindow;Landroid/widget/MultiSelectPopupWindow$1;)V
     .locals 0
-    .param p1    # Landroid/widget/MultiSelectPopupWindow;
-    .param p2    # Landroid/widget/MultiSelectPopupWindow$1;
 
     invoke-direct {p0, p1}, Landroid/widget/MultiSelectPopupWindow$MultiSelectController;-><init>(Landroid/widget/MultiSelectPopupWindow;)V
 
@@ -375,7 +373,6 @@
 
 .method public onTouchModeChanged(Z)V
     .locals 0
-    .param p1    # Z
 
     if-nez p1, :cond_0
 

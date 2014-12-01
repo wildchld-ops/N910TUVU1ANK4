@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Landroid/net/http/AndroidHttpClient;Landroid/net/http/AndroidHttpClient$1;)V
     .locals 0
-    .param p1    # Landroid/net/http/AndroidHttpClient;
-    .param p2    # Landroid/net/http/AndroidHttpClient$1;
 
     invoke-direct {p0, p1}, Landroid/net/http/AndroidHttpClient$CurlLogger;-><init>(Landroid/net/http/AndroidHttpClient;)V
 
@@ -46,8 +44,6 @@
 # virtual methods
 .method public process(Lorg/apache/http/HttpRequest;Lorg/apache/http/protocol/HttpContext;)V
     .locals 2
-    .param p1    # Lorg/apache/http/HttpRequest;
-    .param p2    # Lorg/apache/http/protocol/HttpContext;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/http/HttpException;,

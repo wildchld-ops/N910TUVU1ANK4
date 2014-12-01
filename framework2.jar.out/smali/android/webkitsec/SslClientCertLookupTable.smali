@@ -126,9 +126,6 @@
 # virtual methods
 .method public Allow(Ljava/lang/String;Ljava/security/PrivateKey;[[B)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/security/PrivateKey;
-    .param p3    # [[B
 
     iget-object v0, p0, Landroid/webkitsec/SslClientCertLookupTable;->privateKeys:Ljava/util/Map;
 
@@ -147,7 +144,6 @@
 
 .method public Cac(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/webkitsec/SslClientCertLookupTable;->cac:Ljava/util/Set;
 
@@ -162,7 +158,6 @@
 
 .method public CertificateChain(Ljava/lang/String;)[[B
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/webkitsec/SslClientCertLookupTable;->certificateChains:Ljava/util/Map;
 
@@ -177,7 +172,6 @@
 
 .method public Deny(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/webkitsec/SslClientCertLookupTable;->privateKeys:Ljava/util/Map;
 
@@ -196,7 +190,6 @@
 
 .method public IsAllowed(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/webkitsec/SslClientCertLookupTable;->privateKeys:Ljava/util/Map;
 
@@ -209,7 +202,6 @@
 
 .method public IsCac(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/webkitsec/SslClientCertLookupTable;->cac:Ljava/util/Set;
 
@@ -222,7 +214,6 @@
 
 .method public IsDenied(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/webkitsec/SslClientCertLookupTable;->denied:Ljava/util/Set;
 
@@ -235,7 +226,6 @@
 
 .method public PrivateKey(Ljava/lang/String;)Ljava/security/PrivateKey;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/webkitsec/SslClientCertLookupTable;->privateKeys:Ljava/util/Map;
 

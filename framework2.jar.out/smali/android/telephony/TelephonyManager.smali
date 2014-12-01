@@ -403,7 +403,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -449,7 +448,6 @@
 
 .method private ByteToInt([B)I
     .locals 2
-    .param p1    # [B
 
     const/4 v0, 0x0
 
@@ -498,7 +496,6 @@
 
 .method public static from(Landroid/content/Context;)Landroid/telephony/TelephonyManager;
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     const-string/jumbo v0, "phone"
 
@@ -621,7 +618,6 @@
 
 .method public static getNetworkClass(I)I
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -685,7 +681,6 @@
 
 .method public static getNetworkTypeName(I)Ljava/lang/String;
     .locals 2
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -842,7 +837,6 @@
 
 .method public static getPhoneType(I)I
     .locals 3
-    .param p0    # I
 
     const/4 v0, 0x2
 
@@ -1066,8 +1060,6 @@
 
 .method private static getRoamingUserAgent(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 7
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const/4 v6, 0x2
 
@@ -1349,9 +1341,6 @@
 
 .method public static getTelephonyProperty(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -2198,7 +2187,6 @@
 
 .method private intToByteArray(I)[B
     .locals 5
-    .param p1    # I
 
     const/4 v4, 0x4
 
@@ -2277,7 +2265,6 @@
 
 .method private static stringToByte(Ljava/lang/String;)[B
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
@@ -2328,8 +2315,6 @@
 
 .method private validateAppSignatureForPackage(Landroid/content/Context;Ljava/lang/String;)Z
     .locals 11
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
 
     const/4 v6, 0x1
 
@@ -2541,7 +2526,6 @@
 # virtual methods
 .method public addCallStateListener(Landroid/telephony/CallStateListener;)V
     .locals 4
-    .param p1    # Landroid/telephony/CallStateListener;
 
     if-nez p1, :cond_1
 
@@ -2627,8 +2611,6 @@
 
 .method public calculateAkaResponse([B[B)Ljava/lang/String;
     .locals 3
-    .param p1    # [B
-    .param p2    # [B
 
     const/4 v1, 0x0
 
@@ -2660,8 +2642,6 @@
 
 .method public calculateGbaBootstrappingResponse([B[B)Landroid/telephony/TelephonyManager$GbaBootstrappingResponse;
     .locals 4
-    .param p1    # [B
-    .param p2    # [B
 
     const/4 v2, 0x0
 
@@ -2704,7 +2684,6 @@
 
 .method public calculateNafExternalKey([B)[B
     .locals 3
-    .param p1    # [B
 
     const/4 v1, 0x0
 
@@ -2736,8 +2715,6 @@
 
 .method public call(Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     :try_start_0
     invoke-virtual {p0}, Landroid/telephony/TelephonyManager;->getITelephony()Lcom/android/internal/telephony/ITelephony;
@@ -2792,7 +2769,6 @@
 
 .method public closeLockChannel(I)Z
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -2818,7 +2794,6 @@
 
 .method public dial(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     invoke-virtual {p0}, Landroid/telephony/TelephonyManager;->getITelephony()Lcom/android/internal/telephony/ITelephony;
@@ -2846,7 +2821,6 @@
 
 .method public disableApnType(Ljava/lang/String;)I
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     invoke-virtual {p0}, Landroid/telephony/TelephonyManager;->getITelephony()Lcom/android/internal/telephony/ITelephony;
@@ -2936,7 +2910,6 @@
 
 .method public enableApnType(Ljava/lang/String;)I
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     invoke-virtual {p0}, Landroid/telephony/TelephonyManager;->getITelephony()Lcom/android/internal/telephony/ITelephony;
@@ -3057,9 +3030,6 @@
 
 .method public feliCaUimLock(I[ILjava/lang/String;)Ljava/lang/String;
     .locals 22
-    .param p1    # I
-    .param p2    # [I
-    .param p3    # Ljava/lang/String;
 
     const/16 v18, 0x0
 
@@ -4004,7 +3974,6 @@
 
 .method public getDataStateDs(I)I
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/telephony/TelephonyManager;->getDataState()I
 
@@ -4096,7 +4065,6 @@
 
 .method public getFeliCaUimLockStatus(I)I
     .locals 5
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -4849,7 +4817,6 @@
 
 .method public getLine1NumberType(I)Ljava/lang/String;
     .locals 3
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -5792,7 +5759,6 @@
 
 .method public getSimStateDs(I)I
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/telephony/TelephonyManager;->getSimState()I
 
@@ -5865,7 +5831,6 @@
 
 .method public getSubscriberIdType(I)Ljava/lang/String;
     .locals 3
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -6108,7 +6073,6 @@
 
 .method public handlePinMmi(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     invoke-virtual {p0}, Landroid/telephony/TelephonyManager;->getITelephony()Lcom/android/internal/telephony/ITelephony;
@@ -6140,7 +6104,6 @@
 
 .method public hasCall(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -6265,7 +6228,6 @@
 
 .method public isExtraCapable(I)Z
     .locals 5
-    .param p1    # I
 
     const/4 v2, 0x1
 
@@ -6423,7 +6385,6 @@
 
 .method public isNetworkRoamingDs(I)Z
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/telephony/TelephonyManager;->isNetworkRoaming()Z
 
@@ -6653,8 +6614,6 @@
 
 .method public listen(Landroid/telephony/PhoneStateListener;I)V
     .locals 5
-    .param p1    # Landroid/telephony/PhoneStateListener;
-    .param p2    # I
 
     iget-object v2, p0, Landroid/telephony/TelephonyManager;->mContext:Landroid/content/Context;
 
@@ -6708,9 +6667,6 @@
 
 .method public listenDs(ILandroid/telephony/PhoneStateListener;I)V
     .locals 0
-    .param p1    # I
-    .param p2    # Landroid/telephony/PhoneStateListener;
-    .param p3    # I
 
     invoke-virtual {p0, p2, p3}, Landroid/telephony/TelephonyManager;->listen(Landroid/telephony/PhoneStateListener;I)V
 
@@ -6746,7 +6702,6 @@
 
 .method public mute(Z)V
     .locals 3
-    .param p1    # Z
 
     :try_start_0
     invoke-virtual {p0}, Landroid/telephony/TelephonyManager;->getITelephony()Lcom/android/internal/telephony/ITelephony;
@@ -6805,7 +6760,6 @@
 
 .method public oem_ssa_alarm_event([B)[B
     .locals 1
-    .param p1    # [B
 
     const/4 v0, 0x0
 
@@ -6834,7 +6788,6 @@
 
 .method public oem_ssa_set_event([B)[B
     .locals 2
-    .param p1    # [B
 
     sget-boolean v0, Landroid/telephony/TelephonyManager;->DBG:Z
 
@@ -6856,8 +6809,6 @@
 
 .method public oem_ssa_set_log([B[B)[B
     .locals 4
-    .param p1    # [B
-    .param p2    # [B
 
     const/4 v3, 0x0
 
@@ -6895,7 +6846,6 @@
 
 .method public oem_ssa_set_mem(I)Z
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/telephony/TelephonyManager;->uknight_mem_set(I)Z
 
@@ -6906,7 +6856,6 @@
 
 .method public openLockChannel(Ljava/lang/String;)I
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -6934,8 +6883,6 @@
 
 .method public playDtmfTone(CZ)V
     .locals 3
-    .param p1    # C
-    .param p2    # Z
 
     :try_start_0
     invoke-virtual {p0}, Landroid/telephony/TelephonyManager;->getITelephony()Lcom/android/internal/telephony/ITelephony;
@@ -6963,7 +6910,6 @@
 
 .method public removeCallStateListener(Landroid/telephony/CallStateListener;)V
     .locals 4
-    .param p1    # Landroid/telephony/CallStateListener;
 
     :try_start_0
     iget-object v2, p0, Landroid/telephony/TelephonyManager;->mListeners:Ljava/util/HashMap;
@@ -7004,7 +6950,6 @@
 
 .method public requestAuthForMediaShare(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     sget-boolean v1, Landroid/telephony/TelephonyManager;->SHIP_BUILD:Z
 
@@ -7064,7 +7009,6 @@
 
 .method public requestIsimAuthentication(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     sget-boolean v1, Landroid/telephony/TelephonyManager;->SHIP_BUILD:Z
 
@@ -7124,7 +7068,6 @@
 
 .method public requestUsimAuthentication(Ljava/lang/String;)V
     .locals 10
-    .param p1    # Ljava/lang/String;
 
     sget-boolean v7, Landroid/telephony/TelephonyManager;->SHIP_BUILD:Z
 
@@ -7327,7 +7270,6 @@
 
 .method public setCellInfoListRate(I)V
     .locals 1
-    .param p1    # I
 
     :try_start_0
     invoke-virtual {p0}, Landroid/telephony/TelephonyManager;->getITelephony()Lcom/android/internal/telephony/ITelephony;
@@ -7355,7 +7297,6 @@
 
 .method public setDataRoamingEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     :try_start_0
     invoke-virtual {p0}, Landroid/telephony/TelephonyManager;->getITelephony()Lcom/android/internal/telephony/ITelephony;
@@ -7383,9 +7324,6 @@
 
 .method public setGbaBootstrappingParams([BLjava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # [B
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     :try_start_0
     invoke-virtual {p0}, Landroid/telephony/TelephonyManager;->getITelephony()Lcom/android/internal/telephony/ITelephony;
@@ -7413,7 +7351,6 @@
 
 .method public setPcoValue(I)V
     .locals 1
-    .param p1    # I
 
     :try_start_0
     invoke-virtual {p0}, Landroid/telephony/TelephonyManager;->getSubscriberInfo()Lcom/android/internal/telephony/IPhoneSubInfo;
@@ -7441,7 +7378,6 @@
 
 .method public setRadio(Z)Z
     .locals 3
-    .param p1    # Z
 
     :try_start_0
     invoke-virtual {p0}, Landroid/telephony/TelephonyManager;->getITelephony()Lcom/android/internal/telephony/ITelephony;
@@ -7473,7 +7409,6 @@
 
 .method public setRadioPower(Z)Z
     .locals 3
-    .param p1    # Z
 
     :try_start_0
     invoke-virtual {p0}, Landroid/telephony/TelephonyManager;->getITelephony()Lcom/android/internal/telephony/ITelephony;
@@ -7505,7 +7440,6 @@
 
 .method public setUimRemoteLockStatus(I)I
     .locals 5
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -7631,7 +7565,6 @@
 
 .method public showCallScreenWithDialpad(Z)Z
     .locals 3
-    .param p1    # Z
 
     :try_start_0
     invoke-virtual {p0}, Landroid/telephony/TelephonyManager;->getITelephony()Lcom/android/internal/telephony/ITelephony;
@@ -7759,7 +7692,6 @@
 
 .method public supplyPin(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     invoke-virtual {p0}, Landroid/telephony/TelephonyManager;->getITelephony()Lcom/android/internal/telephony/ITelephony;
@@ -7791,7 +7723,6 @@
 
 .method public supplyPinReportResult(Ljava/lang/String;)[I
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     invoke-virtual {p0}, Landroid/telephony/TelephonyManager;->getITelephony()Lcom/android/internal/telephony/ITelephony;
@@ -7825,8 +7756,6 @@
 
 .method public supplyPuk(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     :try_start_0
     invoke-virtual {p0}, Landroid/telephony/TelephonyManager;->getITelephony()Lcom/android/internal/telephony/ITelephony;
@@ -7858,8 +7787,6 @@
 
 .method public supplyPukReportResult(Ljava/lang/String;Ljava/lang/String;)[I
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     :try_start_0
     invoke-virtual {p0}, Landroid/telephony/TelephonyManager;->getITelephony()Lcom/android/internal/telephony/ITelephony;
@@ -7974,13 +7901,6 @@
 
 .method public transmitLockChannel(IIIIIILjava/lang/String;)Ljava/lang/String;
     .locals 9
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # Ljava/lang/String;
 
     const/4 v8, 0x0
 
@@ -8020,7 +7940,6 @@
 
 .method public uknight_event_set([B)[B
     .locals 1
-    .param p1    # [B
 
     const/4 v0, 0x0
 
@@ -8037,7 +7956,6 @@
 
 .method public uknight_log_set([B)[B
     .locals 1
-    .param p1    # [B
 
     const/4 v0, 0x0
 
@@ -8054,7 +7972,6 @@
 
 .method public uknight_mem_set(I)Z
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -8063,7 +7980,6 @@
 
 .method public uknight_state_change_set(I)Z
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 

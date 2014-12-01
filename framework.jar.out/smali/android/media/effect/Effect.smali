@@ -28,7 +28,6 @@
 
 .method public setUpdateListener(Landroid/media/effect/EffectUpdateListener;)V
     .locals 0
-    .param p1    # Landroid/media/effect/EffectUpdateListener;
 
     return-void
 .end method

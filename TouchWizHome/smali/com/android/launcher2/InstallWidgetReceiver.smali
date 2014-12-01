@@ -38,8 +38,6 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 10
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     const/4 v5, 0x3
 
@@ -115,14 +113,6 @@
 
 .method public replaceDummyWidget(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;IIIII)V
     .locals 16
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
 
     new-instance v15, Lcom/android/launcher2/LauncherAppWidgetHost;
 

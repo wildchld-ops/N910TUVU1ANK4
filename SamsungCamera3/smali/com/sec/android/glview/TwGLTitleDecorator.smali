@@ -10,7 +10,6 @@
 # direct methods
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;)V
     .locals 1
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
 
     invoke-direct {p0, p1}, Lcom/sec/android/glview/TwGLViewGroup;-><init>(Lcom/sec/android/glview/TwGLContext;)V
 
@@ -23,11 +22,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;FFFF)V
     .locals 1
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
 
     invoke-direct/range {p0 .. p5}, Lcom/sec/android/glview/TwGLViewGroup;-><init>(Lcom/sec/android/glview/TwGLContext;FFFF)V
 
@@ -42,7 +36,6 @@
 # virtual methods
 .method public addView(Lcom/sec/android/glview/TwGLView;)V
     .locals 6
-    .param p1    # Lcom/sec/android/glview/TwGLView;
 
     const/4 v3, 0x0
 
@@ -290,7 +283,6 @@
 
 .method public setOnDragListener(Lcom/sec/android/glview/TwGLView$OnDragListener;)V
     .locals 1
-    .param p1    # Lcom/sec/android/glview/TwGLView$OnDragListener;
 
     iget-object v0, p0, Lcom/sec/android/glview/TwGLTitleDecorator;->mTitleView:Lcom/sec/android/glview/TwGLView;
 
@@ -301,7 +293,6 @@
 
 .method public setTitle(Lcom/sec/android/glview/TwGLView;)V
     .locals 1
-    .param p1    # Lcom/sec/android/glview/TwGLView;
 
     if-nez p1, :cond_0
 

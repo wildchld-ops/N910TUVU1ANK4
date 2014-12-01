@@ -21,9 +21,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/widget/Button;Lcom/android/mms/menu/PopupList$OnPopupItemClickListener;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/widget/Button;
-    .param p3    # Lcom/android/mms/menu/PopupList$OnPopupItemClickListener;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -88,7 +85,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Lcom/android/mms/menu/SelectionMenu;->mPopupList:Lcom/android/mms/menu/PopupList;
 
@@ -108,7 +104,6 @@
 
 .method public setTitle(Ljava/lang/CharSequence;)V
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
 
     iget-object v0, p0, Lcom/android/mms/menu/SelectionMenu;->mButton:Landroid/widget/Button;
 
@@ -119,8 +114,6 @@
 
 .method public setTitleTextSize(IF)V
     .locals 1
-    .param p1    # I
-    .param p2    # F
 
     iget-object v0, p0, Lcom/android/mms/menu/SelectionMenu;->mButton:Landroid/widget/Button;
 
@@ -131,8 +124,6 @@
 
 .method public updateSelectAllMode(II)V
     .locals 9
-    .param p1    # I
-    .param p2    # I
 
     const/4 v5, 0x1
 

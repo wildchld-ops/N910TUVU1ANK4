@@ -127,7 +127,7 @@
 
     move-result-object v5
 
-    invoke-virtual {v5, v3}, Landroid/content/ContextWrapper;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {v5, v3}, Lcom/android/phone/PhoneGlobals;->startActivity(Landroid/content/Intent;)V
 
     goto :goto_0
 

@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/mms/ui/MessageListItem;)V
     .locals 0
-    .param p1    # Lcom/android/mms/ui/MessageListItem;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

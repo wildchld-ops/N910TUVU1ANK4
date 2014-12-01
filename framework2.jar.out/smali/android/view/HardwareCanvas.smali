@@ -23,7 +23,6 @@
 
 .method public callDrawGLFunction(I)I
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -44,7 +43,6 @@
 
 .method public drawDisplayList(Landroid/view/DisplayList;)V
     .locals 2
-    .param p1    # Landroid/view/DisplayList;
 
     const/4 v0, 0x0
 
@@ -71,7 +69,6 @@
 
 .method public invokeFunctors(Landroid/graphics/Rect;)I
     .locals 1
-    .param p1    # Landroid/graphics/Rect;
 
     const/4 v0, 0x0
 
@@ -100,7 +97,6 @@
 
 .method public setBitmap(Landroid/graphics/Bitmap;)V
     .locals 1
-    .param p1    # Landroid/graphics/Bitmap;
 
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
@@ -111,7 +107,6 @@
 
 .method public setName(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/view/HardwareCanvas;->mName:Ljava/lang/String;
 

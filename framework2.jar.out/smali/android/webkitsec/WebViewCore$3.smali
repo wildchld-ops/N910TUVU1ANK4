@@ -46,7 +46,6 @@
 # virtual methods
 .method public bridge synthetic onReceiveValue(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, [Ljava/lang/String;
 
@@ -57,7 +56,6 @@
 
 .method public onReceiveValue([Ljava/lang/String;)V
     .locals 2
-    .param p1    # [Ljava/lang/String;
 
     iget-object v0, p0, Landroid/webkitsec/WebViewCore$3;->this$0:Landroid/webkitsec/WebViewCore;
 

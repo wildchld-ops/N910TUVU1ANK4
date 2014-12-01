@@ -12,8 +12,6 @@
 # direct methods
 .method public constructor <init>(Landroid/filterfw/core/Filter;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Landroid/filterfw/core/Filter;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Landroid/filterfw/core/FilterPort;-><init>(Landroid/filterfw/core/Filter;Ljava/lang/String;)V
 
@@ -64,7 +62,6 @@
 
 .method public connectTo(Landroid/filterfw/core/InputPort;)V
     .locals 3
-    .param p1    # Landroid/filterfw/core/InputPort;
 
     iget-object v0, p0, Landroid/filterfw/core/OutputPort;->mTargetPort:Landroid/filterfw/core/InputPort;
 
@@ -317,7 +314,6 @@
 
 .method public pushFrame(Landroid/filterfw/core/Frame;)V
     .locals 3
-    .param p1    # Landroid/filterfw/core/Frame;
 
     iget-object v0, p0, Landroid/filterfw/core/OutputPort;->mTargetPort:Landroid/filterfw/core/InputPort;
 
@@ -363,7 +359,6 @@
 
 .method public setBasePort(Landroid/filterfw/core/InputPort;)V
     .locals 0
-    .param p1    # Landroid/filterfw/core/InputPort;
 
     iput-object p1, p0, Landroid/filterfw/core/OutputPort;->mBasePort:Landroid/filterfw/core/InputPort;
 
@@ -372,7 +367,6 @@
 
 .method public setFrame(Landroid/filterfw/core/Frame;)V
     .locals 3
-    .param p1    # Landroid/filterfw/core/Frame;
 
     invoke-virtual {p0}, Landroid/filterfw/core/FilterPort;->assertPortIsOpen()V
 

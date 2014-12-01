@@ -61,8 +61,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/hardware/scontext/provider/EventListener;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/hardware/scontext/provider/EventListener;
 
     const/4 v2, 0x1
 
@@ -136,7 +134,6 @@
 
 .method static synthetic access$100(Landroid/hardware/scontext/provider/caeprovider/PedometerImpl;)Landroid/hardware/scontext/provider/caeprovider/PedometerImpl$ExceptionMode;
     .locals 1
-    .param p0    # Landroid/hardware/scontext/provider/caeprovider/PedometerImpl;
 
     iget-object v0, p0, Landroid/hardware/scontext/provider/caeprovider/PedometerImpl;->mExceptionMode:Landroid/hardware/scontext/provider/caeprovider/PedometerImpl$ExceptionMode;
 
@@ -145,8 +142,6 @@
 
 .method static synthetic access$102(Landroid/hardware/scontext/provider/caeprovider/PedometerImpl;Landroid/hardware/scontext/provider/caeprovider/PedometerImpl$ExceptionMode;)Landroid/hardware/scontext/provider/caeprovider/PedometerImpl$ExceptionMode;
     .locals 0
-    .param p0    # Landroid/hardware/scontext/provider/caeprovider/PedometerImpl;
-    .param p1    # Landroid/hardware/scontext/provider/caeprovider/PedometerImpl$ExceptionMode;
 
     iput-object p1, p0, Landroid/hardware/scontext/provider/caeprovider/PedometerImpl;->mExceptionMode:Landroid/hardware/scontext/provider/caeprovider/PedometerImpl$ExceptionMode;
 
@@ -155,7 +150,6 @@
 
 .method private display(Landroid/os/Bundle;)V
     .locals 12
-    .param p1    # Landroid/os/Bundle;
 
     new-instance v5, Ljava/lang/StringBuffer;
 
@@ -463,7 +457,6 @@
 
 .method private getStringNames(Landroid/hardware/scontext/provider/caeprovider/PedometerImpl$InfoMode;)[Ljava/lang/String;
     .locals 11
-    .param p1    # Landroid/hardware/scontext/provider/caeprovider/PedometerImpl$InfoMode;
 
     const/4 v10, 0x4
 
@@ -670,10 +663,6 @@
 
 .method private getSumOfContexts(Landroid/os/Bundle;Landroid/os/Bundle;Landroid/hardware/scontext/provider/caeprovider/PedometerImpl$InfoMode;Landroid/hardware/scontext/provider/caeprovider/PedometerImpl$InfoMode;)Landroid/os/Bundle;
     .locals 10
-    .param p1    # Landroid/os/Bundle;
-    .param p2    # Landroid/os/Bundle;
-    .param p3    # Landroid/hardware/scontext/provider/caeprovider/PedometerImpl$InfoMode;
-    .param p4    # Landroid/hardware/scontext/provider/caeprovider/PedometerImpl$InfoMode;
 
     const/4 v5, 0x0
 
@@ -787,9 +776,6 @@
 
 .method private getUpdatedContext(Landroid/os/Bundle;Landroid/os/Bundle;Landroid/hardware/scontext/provider/caeprovider/PedometerImpl$InfoMode;)Landroid/os/Bundle;
     .locals 7
-    .param p1    # Landroid/os/Bundle;
-    .param p2    # Landroid/os/Bundle;
-    .param p3    # Landroid/hardware/scontext/provider/caeprovider/PedometerImpl$InfoMode;
 
     const/4 v0, 0x0
 
@@ -1084,7 +1070,6 @@
 
 .method public parse(Landroid/os/Bundle;)Landroid/os/Bundle;
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v3, 0x1
 
@@ -1265,8 +1250,6 @@
 
 .method public setProperty(ILandroid/os/Bundle;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     const-string v0, "pedometer_gender"
 

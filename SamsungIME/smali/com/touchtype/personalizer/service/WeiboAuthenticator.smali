@@ -34,8 +34,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Lcom/touchtype/personalizer/PersonalizerActivity;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/touchtype/personalizer/PersonalizerActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -54,7 +52,6 @@
 
 .method static synthetic access$000(Lcom/touchtype/personalizer/service/WeiboAuthenticator;)Loauth/signpost/OAuthConsumer;
     .locals 1
-    .param p0    # Lcom/touchtype/personalizer/service/WeiboAuthenticator;
 
     iget-object v0, p0, Lcom/touchtype/personalizer/service/WeiboAuthenticator;->mConsumer:Loauth/signpost/OAuthConsumer;
 
@@ -63,8 +60,6 @@
 
 .method static synthetic access$002(Lcom/touchtype/personalizer/service/WeiboAuthenticator;Loauth/signpost/OAuthConsumer;)Loauth/signpost/OAuthConsumer;
     .locals 0
-    .param p0    # Lcom/touchtype/personalizer/service/WeiboAuthenticator;
-    .param p1    # Loauth/signpost/OAuthConsumer;
 
     iput-object p1, p0, Lcom/touchtype/personalizer/service/WeiboAuthenticator;->mConsumer:Loauth/signpost/OAuthConsumer;
 
@@ -73,7 +68,6 @@
 
 .method static synthetic access$100(Lcom/touchtype/personalizer/service/WeiboAuthenticator;)Loauth/signpost/OAuthProvider;
     .locals 1
-    .param p0    # Lcom/touchtype/personalizer/service/WeiboAuthenticator;
 
     iget-object v0, p0, Lcom/touchtype/personalizer/service/WeiboAuthenticator;->mProvider:Loauth/signpost/OAuthProvider;
 
@@ -82,8 +76,6 @@
 
 .method static synthetic access$102(Lcom/touchtype/personalizer/service/WeiboAuthenticator;Loauth/signpost/OAuthProvider;)Loauth/signpost/OAuthProvider;
     .locals 0
-    .param p0    # Lcom/touchtype/personalizer/service/WeiboAuthenticator;
-    .param p1    # Loauth/signpost/OAuthProvider;
 
     iput-object p1, p0, Lcom/touchtype/personalizer/service/WeiboAuthenticator;->mProvider:Loauth/signpost/OAuthProvider;
 
@@ -92,7 +84,6 @@
 
 .method static synthetic access$200(Lcom/touchtype/personalizer/service/WeiboAuthenticator;)Landroid/content/res/Resources;
     .locals 1
-    .param p0    # Lcom/touchtype/personalizer/service/WeiboAuthenticator;
 
     iget-object v0, p0, Lcom/touchtype/personalizer/service/WeiboAuthenticator;->mResources:Landroid/content/res/Resources;
 
@@ -101,7 +92,6 @@
 
 .method static synthetic access$300(Lcom/touchtype/personalizer/service/WeiboAuthenticator;)Lcom/touchtype/personalizer/PersonalizerActivity;
     .locals 1
-    .param p0    # Lcom/touchtype/personalizer/service/WeiboAuthenticator;
 
     iget-object v0, p0, Lcom/touchtype/personalizer/service/WeiboAuthenticator;->mParent:Lcom/touchtype/personalizer/PersonalizerActivity;
 
@@ -128,7 +118,6 @@
 # virtual methods
 .method public getAccessToken(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Loauth/signpost/exception/OAuthException;

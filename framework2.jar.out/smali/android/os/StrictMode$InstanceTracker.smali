@@ -55,7 +55,6 @@
 
 .method public constructor <init>(Ljava/lang/Object;)V
     .locals 6
-    .param p1    # Ljava/lang/Object;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

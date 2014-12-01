@@ -15,9 +15,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Lcom/android/internal/view/menu/MenuBuilder;Lcom/android/internal/view/menu/MenuItemImpl;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/internal/view/menu/MenuBuilder;
-    .param p3    # Lcom/android/internal/view/menu/MenuItemImpl;
 
     invoke-direct {p0, p1}, Lcom/android/internal/view/menu/MenuBuilder;-><init>(Landroid/content/Context;)V
 
@@ -32,7 +29,6 @@
 # virtual methods
 .method public collapseItemActionView(Lcom/android/internal/view/menu/MenuItemImpl;)Z
     .locals 1
-    .param p1    # Lcom/android/internal/view/menu/MenuItemImpl;
 
     iget-object v0, p0, Lcom/android/internal/view/menu/SubMenuBuilder;->mParentMenu:Lcom/android/internal/view/menu/MenuBuilder;
 
@@ -45,8 +41,6 @@
 
 .method dispatchMenuItemSelected(Lcom/android/internal/view/menu/MenuBuilder;Landroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # Lcom/android/internal/view/menu/MenuBuilder;
-    .param p2    # Landroid/view/MenuItem;
 
     invoke-super {p0, p1, p2}, Lcom/android/internal/view/menu/MenuBuilder;->dispatchMenuItemSelected(Lcom/android/internal/view/menu/MenuBuilder;Landroid/view/MenuItem;)Z
 
@@ -76,7 +70,6 @@
 
 .method public expandItemActionView(Lcom/android/internal/view/menu/MenuItemImpl;)Z
     .locals 1
-    .param p1    # Lcom/android/internal/view/menu/MenuItemImpl;
 
     iget-object v0, p0, Lcom/android/internal/view/menu/SubMenuBuilder;->mParentMenu:Lcom/android/internal/view/menu/MenuBuilder;
 
@@ -193,7 +186,6 @@
 
 .method public setCallback(Lcom/android/internal/view/menu/MenuBuilder$Callback;)V
     .locals 1
-    .param p1    # Lcom/android/internal/view/menu/MenuBuilder$Callback;
 
     iget-object v0, p0, Lcom/android/internal/view/menu/SubMenuBuilder;->mParentMenu:Lcom/android/internal/view/menu/MenuBuilder;
 
@@ -204,7 +196,6 @@
 
 .method public setHeaderIcon(I)Landroid/view/SubMenu;
     .locals 1
-    .param p1    # I
 
     invoke-super {p0, p1}, Lcom/android/internal/view/menu/MenuBuilder;->setHeaderIconInt(I)Lcom/android/internal/view/menu/MenuBuilder;
 
@@ -217,7 +208,6 @@
 
 .method public setHeaderIcon(Landroid/graphics/drawable/Drawable;)Landroid/view/SubMenu;
     .locals 1
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     invoke-super {p0, p1}, Lcom/android/internal/view/menu/MenuBuilder;->setHeaderIconInt(Landroid/graphics/drawable/Drawable;)Lcom/android/internal/view/menu/MenuBuilder;
 
@@ -230,7 +220,6 @@
 
 .method public setHeaderTitle(I)Landroid/view/SubMenu;
     .locals 1
-    .param p1    # I
 
     invoke-super {p0, p1}, Lcom/android/internal/view/menu/MenuBuilder;->setHeaderTitleInt(I)Lcom/android/internal/view/menu/MenuBuilder;
 
@@ -243,7 +232,6 @@
 
 .method public setHeaderTitle(Ljava/lang/CharSequence;)Landroid/view/SubMenu;
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
 
     invoke-super {p0, p1}, Lcom/android/internal/view/menu/MenuBuilder;->setHeaderTitleInt(Ljava/lang/CharSequence;)Lcom/android/internal/view/menu/MenuBuilder;
 
@@ -256,7 +244,6 @@
 
 .method public setHeaderView(Landroid/view/View;)Landroid/view/SubMenu;
     .locals 1
-    .param p1    # Landroid/view/View;
 
     invoke-super {p0, p1}, Lcom/android/internal/view/menu/MenuBuilder;->setHeaderViewInt(Landroid/view/View;)Lcom/android/internal/view/menu/MenuBuilder;
 
@@ -269,7 +256,6 @@
 
 .method public setIcon(I)Landroid/view/SubMenu;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/internal/view/menu/SubMenuBuilder;->mItem:Lcom/android/internal/view/menu/MenuItemImpl;
 
@@ -280,7 +266,6 @@
 
 .method public setIcon(Landroid/graphics/drawable/Drawable;)Landroid/view/SubMenu;
     .locals 1
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     iget-object v0, p0, Lcom/android/internal/view/menu/SubMenuBuilder;->mItem:Lcom/android/internal/view/menu/MenuItemImpl;
 
@@ -291,7 +276,6 @@
 
 .method public setQwertyMode(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/internal/view/menu/SubMenuBuilder;->mParentMenu:Lcom/android/internal/view/menu/MenuBuilder;
 
@@ -302,7 +286,6 @@
 
 .method public setShortcutsVisible(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/internal/view/menu/SubMenuBuilder;->mParentMenu:Lcom/android/internal/view/menu/MenuBuilder;
 

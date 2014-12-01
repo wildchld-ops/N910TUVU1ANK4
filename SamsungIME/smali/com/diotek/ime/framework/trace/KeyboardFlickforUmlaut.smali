@@ -202,8 +202,6 @@
 # virtual methods
 .method public checkNeedMove(Landroid/view/MotionEvent;I)I
     .locals 10
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # I
 
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getRawX()F
 
@@ -465,9 +463,6 @@
 
 .method public setDownPosition(Landroid/view/MotionEvent;ILcom/diotek/ime/framework/view/Keyboard$Key;)V
     .locals 4
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # I
-    .param p3    # Lcom/diotek/ime/framework/view/Keyboard$Key;
 
     const/16 v3, 0xa
 

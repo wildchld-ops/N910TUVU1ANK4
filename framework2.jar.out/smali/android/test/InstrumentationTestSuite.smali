@@ -10,7 +10,6 @@
 # direct methods
 .method public constructor <init>(Landroid/app/Instrumentation;)V
     .locals 0
-    .param p1    # Landroid/app/Instrumentation;
 
     invoke-direct {p0}, Ljunit/framework/TestSuite;-><init>()V
 
@@ -21,8 +20,6 @@
 
 .method public constructor <init>(Ljava/lang/Class;Landroid/app/Instrumentation;)V
     .locals 0
-    .param p1    # Ljava/lang/Class;
-    .param p2    # Landroid/app/Instrumentation;
 
     invoke-direct {p0, p1}, Ljunit/framework/TestSuite;-><init>(Ljava/lang/Class;)V
 
@@ -33,8 +30,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Landroid/app/Instrumentation;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/app/Instrumentation;
 
     invoke-direct {p0, p1}, Ljunit/framework/TestSuite;-><init>(Ljava/lang/String;)V
 
@@ -47,7 +42,6 @@
 # virtual methods
 .method public addTestSuite(Ljava/lang/Class;)V
     .locals 2
-    .param p1    # Ljava/lang/Class;
 
     new-instance v0, Landroid/test/InstrumentationTestSuite;
 
@@ -62,8 +56,6 @@
 
 .method public runTest(Ljunit/framework/Test;Ljunit/framework/TestResult;)V
     .locals 2
-    .param p1    # Ljunit/framework/Test;
-    .param p2    # Ljunit/framework/TestResult;
 
     instance-of v0, p1, Landroid/test/InstrumentationTestCase;
 

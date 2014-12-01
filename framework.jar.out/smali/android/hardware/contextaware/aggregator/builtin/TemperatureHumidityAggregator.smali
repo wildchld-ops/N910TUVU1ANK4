@@ -14,8 +14,6 @@
 # direct methods
 .method public constructor <init>(ILjava/util/concurrent/CopyOnWriteArrayList;Landroid/hardware/contextaware/dataprovider/sensorhubprovider/ISensorHubResetObservable;)V
     .locals 8
-    .param p1    # I
-    .param p3    # Landroid/hardware/contextaware/dataprovider/sensorhubprovider/ISensorHubResetObservable;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -57,7 +55,6 @@
 # virtual methods
 .method protected final checkCompensationData([D)Z
     .locals 2
-    .param p1    # [D
 
     const/4 v0, 0x0
 
@@ -96,7 +93,6 @@
 
 .method protected final compensateForRawData([[D)[D
     .locals 23
-    .param p1    # [[D
 
     if-eqz p1, :cond_0
 
@@ -625,7 +621,6 @@
 
 .method protected final notifyCompensationData([D)V
     .locals 7
-    .param p1    # [D
 
     invoke-virtual {p0}, Landroid/hardware/contextaware/aggregator/builtin/TemperatureHumidityAggregator;->getContextValueNames()[Ljava/lang/String;
 

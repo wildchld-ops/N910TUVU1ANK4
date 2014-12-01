@@ -27,8 +27,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/internal/app/ProcessStats;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Lcom/android/internal/app/ProcessStats;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -43,8 +41,6 @@
 # virtual methods
 .method addDuration(IJ)V
     .locals 7
-    .param p1    # I
-    .param p2    # J
 
     iget-object v4, p0, Lcom/android/internal/app/ProcessStats$DurationsTable;->mDurationsTable:[I
 
@@ -152,7 +148,6 @@
 
 .method addDurations(Lcom/android/internal/app/ProcessStats$DurationsTable;)V
     .locals 5
-    .param p1    # Lcom/android/internal/app/ProcessStats$DurationsTable;
 
     const/4 v1, 0x0
 
@@ -193,7 +188,6 @@
 
 .method copyDurationsTo(Lcom/android/internal/app/ProcessStats$DurationsTable;)V
     .locals 8
-    .param p1    # Lcom/android/internal/app/ProcessStats$DurationsTable;
 
     const/4 v7, 0x0
 
@@ -292,8 +286,6 @@
 
 .method getDuration(IJ)J
     .locals 4
-    .param p1    # I
-    .param p2    # J
 
     iget-object v1, p0, Lcom/android/internal/app/ProcessStats$DurationsTable;->mDurationsTable:[I
 
@@ -328,7 +320,6 @@
 
 .method readDurationsFromParcel(Landroid/os/Parcel;)Z
     .locals 4
-    .param p1    # Landroid/os/Parcel;
 
     const/4 v0, 0x0
 
@@ -387,7 +378,6 @@
 
 .method writeDurationsToParcel(Landroid/os/Parcel;)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
 
     iget v1, p0, Lcom/android/internal/app/ProcessStats$DurationsTable;->mDurationsTableSize:I
 

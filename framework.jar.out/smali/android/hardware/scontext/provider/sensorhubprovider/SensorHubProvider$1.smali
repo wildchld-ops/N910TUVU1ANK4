@@ -36,7 +36,6 @@
 # virtual methods
 .method public onGetSensorHubData(Landroid/hardware/sensorhub/SensorHubEvent;)V
     .locals 4
-    .param p1    # Landroid/hardware/sensorhub/SensorHubEvent;
 
     iget-object v2, p1, Landroid/hardware/sensorhub/SensorHubEvent;->sensorhub:Landroid/hardware/sensorhub/SensorHub;
 

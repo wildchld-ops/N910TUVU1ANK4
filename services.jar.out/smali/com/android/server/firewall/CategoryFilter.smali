@@ -33,7 +33,6 @@
 
 .method private constructor <init>(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -44,8 +43,6 @@
 
 .method synthetic constructor <init>(Ljava/lang/String;Lcom/android/server/firewall/CategoryFilter$1;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/server/firewall/CategoryFilter$1;
 
     invoke-direct {p0, p1}, Lcom/android/server/firewall/CategoryFilter;-><init>(Ljava/lang/String;)V
 
@@ -56,13 +53,6 @@
 # virtual methods
 .method public matches(Lcom/android/server/firewall/IntentFirewall;Landroid/content/ComponentName;Landroid/content/Intent;IILjava/lang/String;I)Z
     .locals 2
-    .param p1    # Lcom/android/server/firewall/IntentFirewall;
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # Landroid/content/Intent;
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Ljava/lang/String;
-    .param p7    # I
 
     invoke-virtual {p3}, Landroid/content/Intent;->getCategories()Ljava/util/Set;
 

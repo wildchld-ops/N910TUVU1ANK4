@@ -47,7 +47,7 @@
 
     iget-object v4, p0, Lcom/android/phone/FdnSetting$1;->this$0:Lcom/android/phone/FdnSetting;
 
-    invoke-virtual {v4}, Landroid/app/Fragment;->isAdded()Z
+    invoke-virtual {v4}, Lcom/android/phone/FdnSetting;->isAdded()Z
 
     move-result v4
 
@@ -193,7 +193,7 @@
 
     iget-object v4, p0, Lcom/android/phone/FdnSetting$1;->this$0:Lcom/android/phone/FdnSetting;
 
-    invoke-virtual {v4}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v4}, Lcom/android/phone/FdnSetting;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
 
@@ -205,7 +205,7 @@
 
     const v5, 0x7f090183
 
-    invoke-virtual {v4, v5}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {v4, v5}, Lcom/android/phone/FdnSetting;->getString(I)Ljava/lang/String;
 
     move-result-object v4
 
@@ -215,7 +215,7 @@
 
     const v5, 0x7f09017f
 
-    invoke-virtual {v4, v5}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {v4, v5}, Lcom/android/phone/FdnSetting;->getString(I)Ljava/lang/String;
 
     move-result-object v4
 
@@ -246,7 +246,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v4, v8}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v4, v8}, Lcom/android/phone/EditPinPreference;->setEnabled(Z)V
 
     iget-object v4, p0, Lcom/android/phone/FdnSetting$1;->this$0:Lcom/android/phone/FdnSetting;
 
@@ -255,7 +255,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v4, v8}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v4, v8}, Landroid/preference/PreferenceScreen;->setEnabled(Z)V
 
     iget-object v4, p0, Lcom/android/phone/FdnSetting$1;->this$0:Lcom/android/phone/FdnSetting;
 
@@ -271,7 +271,7 @@
 
     const v5, 0x7f090185
 
-    invoke-virtual {v4, v5}, Landroid/preference/Preference;->setTitle(I)V
+    invoke-virtual {v4, v5}, Lcom/android/phone/EditPinPreference;->setTitle(I)V
 
     const-string v4, "feature_chn_duos"
 
@@ -294,7 +294,7 @@
 
     const v5, 0x7f090187
 
-    invoke-virtual {v4, v5}, Landroid/preference/Preference;->setSummary(I)V
+    invoke-virtual {v4, v5}, Lcom/android/phone/EditPinPreference;->setSummary(I)V
 
     :goto_1
     iget-object v4, p0, Lcom/android/phone/FdnSetting$1;->this$0:Lcom/android/phone/FdnSetting;
@@ -336,7 +336,7 @@
     :goto_3
     iget-object v4, p0, Lcom/android/phone/FdnSetting$1;->this$0:Lcom/android/phone/FdnSetting;
 
-    # invokes: Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getApplicationContext()Landroid/content/Context;
+    # invokes: Lcom/android/phone/FdnSetting;->getApplicationContext()Landroid/content/Context;
     invoke-static {v4}, Lcom/android/phone/FdnSetting;->access$1000(Lcom/android/phone/FdnSetting;)Landroid/content/Context;
 
     move-result-object v4
@@ -360,7 +360,7 @@
 
     const v5, 0x7f090186
 
-    invoke-virtual {v4, v5}, Landroid/preference/Preference;->setSummary(I)V
+    invoke-virtual {v4, v5}, Lcom/android/phone/EditPinPreference;->setSummary(I)V
 
     goto :goto_1
 
@@ -456,7 +456,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v4, v7}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v4, v7}, Lcom/android/phone/EditPinPreference;->setEnabled(Z)V
 
     iget-object v4, p0, Lcom/android/phone/FdnSetting$1;->this$0:Lcom/android/phone/FdnSetting;
 
@@ -465,7 +465,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v4, v7}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v4, v7}, Landroid/preference/PreferenceScreen;->setEnabled(Z)V
 
     iget-object v4, p0, Lcom/android/phone/FdnSetting$1;->this$0:Lcom/android/phone/FdnSetting;
 
@@ -479,7 +479,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v4, v9}, Landroid/preference/Preference;->setTitle(I)V
+    invoke-virtual {v4, v9}, Lcom/android/phone/EditPinPreference;->setTitle(I)V
 
     iget-object v4, p0, Lcom/android/phone/FdnSetting$1;->this$0:Lcom/android/phone/FdnSetting;
 
@@ -488,11 +488,11 @@
 
     move-result-object v4
 
-    invoke-virtual {v4, v10}, Landroid/preference/Preference;->setSummary(I)V
+    invoke-virtual {v4, v10}, Lcom/android/phone/EditPinPreference;->setSummary(I)V
 
     iget-object v4, p0, Lcom/android/phone/FdnSetting$1;->this$0:Lcom/android/phone/FdnSetting;
 
-    # invokes: Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    # invokes: Lcom/android/phone/FdnSetting;->getContentResolver()Landroid/content/ContentResolver;
     invoke-static {v4}, Lcom/android/phone/FdnSetting;->access$900(Lcom/android/phone/FdnSetting;)Landroid/content/ContentResolver;
 
     move-result-object v4
@@ -622,7 +622,7 @@
 
     iget-object v4, p0, Lcom/android/phone/FdnSetting$1;->this$0:Lcom/android/phone/FdnSetting;
 
-    invoke-virtual {v4}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v4}, Lcom/android/phone/FdnSetting;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
 
@@ -634,7 +634,7 @@
 
     const v5, 0x7f090183
 
-    invoke-virtual {v4, v5}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {v4, v5}, Lcom/android/phone/FdnSetting;->getString(I)Ljava/lang/String;
 
     move-result-object v4
 
@@ -644,7 +644,7 @@
 
     const v5, 0x7f09017f
 
-    invoke-virtual {v4, v5}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {v4, v5}, Lcom/android/phone/FdnSetting;->getString(I)Ljava/lang/String;
 
     move-result-object v4
 
@@ -680,7 +680,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v4, v8}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v4, v8}, Lcom/android/phone/EditPinPreference;->setEnabled(Z)V
 
     iget-object v4, p0, Lcom/android/phone/FdnSetting$1;->this$0:Lcom/android/phone/FdnSetting;
 
@@ -689,7 +689,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v4, v8}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v4, v8}, Landroid/preference/PreferenceScreen;->setEnabled(Z)V
 
     iget-object v4, p0, Lcom/android/phone/FdnSetting$1;->this$0:Lcom/android/phone/FdnSetting;
 
@@ -705,7 +705,7 @@
 
     const v5, 0x7f090185
 
-    invoke-virtual {v4, v5}, Landroid/preference/Preference;->setTitle(I)V
+    invoke-virtual {v4, v5}, Lcom/android/phone/EditPinPreference;->setTitle(I)V
 
     const-string v4, "feature_chn_duos"
 
@@ -728,7 +728,7 @@
 
     const v5, 0x7f090187
 
-    invoke-virtual {v4, v5}, Landroid/preference/Preference;->setSummary(I)V
+    invoke-virtual {v4, v5}, Lcom/android/phone/EditPinPreference;->setSummary(I)V
 
     :goto_4
     iget-object v4, p0, Lcom/android/phone/FdnSetting$1;->this$0:Lcom/android/phone/FdnSetting;
@@ -743,7 +743,7 @@
 
     iget-object v4, p0, Lcom/android/phone/FdnSetting$1;->this$0:Lcom/android/phone/FdnSetting;
 
-    # invokes: Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    # invokes: Lcom/android/phone/FdnSetting;->getContentResolver()Landroid/content/ContentResolver;
     invoke-static {v4}, Lcom/android/phone/FdnSetting;->access$1200(Lcom/android/phone/FdnSetting;)Landroid/content/ContentResolver;
 
     move-result-object v4
@@ -764,7 +764,7 @@
 
     const v5, 0x7f090186
 
-    invoke-virtual {v4, v5}, Landroid/preference/Preference;->setSummary(I)V
+    invoke-virtual {v4, v5}, Lcom/android/phone/EditPinPreference;->setSummary(I)V
 
     goto :goto_4
 
@@ -835,7 +835,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v4, v7}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v4, v7}, Lcom/android/phone/EditPinPreference;->setEnabled(Z)V
 
     iget-object v4, p0, Lcom/android/phone/FdnSetting$1;->this$0:Lcom/android/phone/FdnSetting;
 
@@ -844,7 +844,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v4, v7}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v4, v7}, Landroid/preference/PreferenceScreen;->setEnabled(Z)V
 
     iget-object v4, p0, Lcom/android/phone/FdnSetting$1;->this$0:Lcom/android/phone/FdnSetting;
 
@@ -853,7 +853,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v4, v9}, Landroid/preference/Preference;->setTitle(I)V
+    invoke-virtual {v4, v9}, Lcom/android/phone/EditPinPreference;->setTitle(I)V
 
     iget-object v4, p0, Lcom/android/phone/FdnSetting$1;->this$0:Lcom/android/phone/FdnSetting;
 
@@ -862,11 +862,11 @@
 
     move-result-object v4
 
-    invoke-virtual {v4, v10}, Landroid/preference/Preference;->setSummary(I)V
+    invoke-virtual {v4, v10}, Lcom/android/phone/EditPinPreference;->setSummary(I)V
 
     iget-object v4, p0, Lcom/android/phone/FdnSetting$1;->this$0:Lcom/android/phone/FdnSetting;
 
-    # invokes: Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    # invokes: Lcom/android/phone/FdnSetting;->getContentResolver()Landroid/content/ContentResolver;
     invoke-static {v4}, Lcom/android/phone/FdnSetting;->access$1400(Lcom/android/phone/FdnSetting;)Landroid/content/ContentResolver;
 
     move-result-object v4
@@ -936,7 +936,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v4, v7}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v4, v7}, Lcom/android/phone/EditPinPreference;->setEnabled(Z)V
 
     iget-object v4, p0, Lcom/android/phone/FdnSetting$1;->this$0:Lcom/android/phone/FdnSetting;
 
@@ -945,7 +945,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v4, v7}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v4, v7}, Landroid/preference/PreferenceScreen;->setEnabled(Z)V
 
     iget-object v4, p0, Lcom/android/phone/FdnSetting$1;->this$0:Lcom/android/phone/FdnSetting;
 
@@ -959,7 +959,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v4, v9}, Landroid/preference/Preference;->setTitle(I)V
+    invoke-virtual {v4, v9}, Lcom/android/phone/EditPinPreference;->setTitle(I)V
 
     iget-object v4, p0, Lcom/android/phone/FdnSetting$1;->this$0:Lcom/android/phone/FdnSetting;
 
@@ -968,11 +968,11 @@
 
     move-result-object v4
 
-    invoke-virtual {v4, v10}, Landroid/preference/Preference;->setSummary(I)V
+    invoke-virtual {v4, v10}, Lcom/android/phone/EditPinPreference;->setSummary(I)V
 
     iget-object v4, p0, Lcom/android/phone/FdnSetting$1;->this$0:Lcom/android/phone/FdnSetting;
 
-    # invokes: Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    # invokes: Lcom/android/phone/FdnSetting;->getContentResolver()Landroid/content/ContentResolver;
     invoke-static {v4}, Lcom/android/phone/FdnSetting;->access$1600(Lcom/android/phone/FdnSetting;)Landroid/content/ContentResolver;
 
     move-result-object v4
@@ -1029,7 +1029,7 @@
 
     iget-object v4, p0, Lcom/android/phone/FdnSetting$1;->this$0:Lcom/android/phone/FdnSetting;
 
-    invoke-virtual {v4}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v4}, Lcom/android/phone/FdnSetting;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
 
@@ -1045,7 +1045,7 @@
 
     const v5, 0x7f09007c
 
-    invoke-virtual {v4, v5}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {v4, v5}, Lcom/android/phone/FdnSetting;->getString(I)Ljava/lang/String;
 
     move-result-object v4
 
@@ -1055,7 +1055,7 @@
 
     const v5, 0x7f09018b
 
-    invoke-virtual {v4, v5}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {v4, v5}, Lcom/android/phone/FdnSetting;->getString(I)Ljava/lang/String;
 
     move-result-object v4
 
@@ -1078,7 +1078,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v4, v8}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v4, v8}, Lcom/android/phone/EditPinPreference;->setEnabled(Z)V
 
     :cond_13
     iget-object v4, p0, Lcom/android/phone/FdnSetting$1;->this$0:Lcom/android/phone/FdnSetting;
@@ -1129,7 +1129,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v4, v7}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v4, v7}, Lcom/android/phone/EditPinPreference;->setEnabled(Z)V
 
     iget-object v4, p0, Lcom/android/phone/FdnSetting$1;->this$0:Lcom/android/phone/FdnSetting;
 
@@ -1138,7 +1138,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v4, v7}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v4, v7}, Landroid/preference/PreferenceScreen;->setEnabled(Z)V
 
     iget-object v4, p0, Lcom/android/phone/FdnSetting$1;->this$0:Lcom/android/phone/FdnSetting;
 
@@ -1152,7 +1152,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v4, v9}, Landroid/preference/Preference;->setTitle(I)V
+    invoke-virtual {v4, v9}, Lcom/android/phone/EditPinPreference;->setTitle(I)V
 
     iget-object v4, p0, Lcom/android/phone/FdnSetting$1;->this$0:Lcom/android/phone/FdnSetting;
 
@@ -1161,11 +1161,11 @@
 
     move-result-object v4
 
-    invoke-virtual {v4, v10}, Landroid/preference/Preference;->setSummary(I)V
+    invoke-virtual {v4, v10}, Lcom/android/phone/EditPinPreference;->setSummary(I)V
 
     iget-object v4, p0, Lcom/android/phone/FdnSetting$1;->this$0:Lcom/android/phone/FdnSetting;
 
-    # invokes: Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    # invokes: Lcom/android/phone/FdnSetting;->getContentResolver()Landroid/content/ContentResolver;
     invoke-static {v4}, Lcom/android/phone/FdnSetting;->access$1800(Lcom/android/phone/FdnSetting;)Landroid/content/ContentResolver;
 
     move-result-object v4

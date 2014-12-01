@@ -32,9 +32,6 @@
 # direct methods
 .method constructor <init>(Lcom/touchtype/personalizer/PersonalizerService;Ljava/lang/String;Ljava/lang/String;I)V
     .locals 1
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
 
     iput-object p1, p0, Lcom/touchtype/personalizer/PersonalizerService$DeleteRemoteRunner;->this$0:Lcom/touchtype/personalizer/PersonalizerService;
 
@@ -57,7 +54,6 @@
 
 .method static synthetic access$1000(Lcom/touchtype/personalizer/PersonalizerService$DeleteRemoteRunner;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/touchtype/personalizer/PersonalizerService$DeleteRemoteRunner;
 
     iget-object v0, p0, Lcom/touchtype/personalizer/PersonalizerService$DeleteRemoteRunner;->mService:Ljava/lang/String;
 
@@ -66,7 +62,6 @@
 
 .method static synthetic access$1100(Lcom/touchtype/personalizer/PersonalizerService$DeleteRemoteRunner;)I
     .locals 1
-    .param p0    # Lcom/touchtype/personalizer/PersonalizerService$DeleteRemoteRunner;
 
     iget v0, p0, Lcom/touchtype/personalizer/PersonalizerService$DeleteRemoteRunner;->mServiceId:I
 

@@ -110,7 +110,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     const/4 v2, 0x0
 
@@ -173,8 +172,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v2, 0x0
 
@@ -237,9 +234,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v2, 0x0
 
@@ -302,7 +296,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/ui/MmsSlideView;)J
     .locals 2
-    .param p0    # Lcom/android/mms/ui/MmsSlideView;
 
     iget-wide v0, p0, Lcom/android/mms/ui/MmsSlideView;->mHoverEnterTime:J
 
@@ -311,8 +304,6 @@
 
 .method static synthetic access$002(Lcom/android/mms/ui/MmsSlideView;J)J
     .locals 0
-    .param p0    # Lcom/android/mms/ui/MmsSlideView;
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/android/mms/ui/MmsSlideView;->mHoverEnterTime:J
 
@@ -321,7 +312,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/ui/MmsSlideView;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/MmsSlideView;
 
     iget-object v0, p0, Lcom/android/mms/ui/MmsSlideView;->mImgContent:Landroid/view/View;
 
@@ -330,7 +320,6 @@
 
 .method static synthetic access$1000(Lcom/android/mms/ui/MmsSlideView;)Lcom/android/mms/ui/MessageListItem;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/MmsSlideView;
 
     iget-object v0, p0, Lcom/android/mms/ui/MmsSlideView;->mMsgListItem:Lcom/android/mms/ui/MessageListItem;
 
@@ -339,8 +328,6 @@
 
 .method static synthetic access$102(Lcom/android/mms/ui/MmsSlideView;Landroid/view/View;)Landroid/view/View;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/MmsSlideView;
-    .param p1    # Landroid/view/View;
 
     iput-object p1, p0, Lcom/android/mms/ui/MmsSlideView;->mImgContent:Landroid/view/View;
 
@@ -349,7 +336,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/ui/MmsSlideView;)Landroid/widget/ImageView;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/MmsSlideView;
 
     iget-object v0, p0, Lcom/android/mms/ui/MmsSlideView;->mPreviewImage:Landroid/widget/ImageView;
 
@@ -358,8 +344,6 @@
 
 .method static synthetic access$202(Lcom/android/mms/ui/MmsSlideView;Landroid/widget/ImageView;)Landroid/widget/ImageView;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/MmsSlideView;
-    .param p1    # Landroid/widget/ImageView;
 
     iput-object p1, p0, Lcom/android/mms/ui/MmsSlideView;->mPreviewImage:Landroid/widget/ImageView;
 
@@ -368,7 +352,6 @@
 
 .method static synthetic access$300(Lcom/android/mms/ui/MmsSlideView;)Landroid/widget/ImageView;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/MmsSlideView;
 
     iget-object v0, p0, Lcom/android/mms/ui/MmsSlideView;->mPlayImage:Landroid/widget/ImageView;
 
@@ -377,8 +360,6 @@
 
 .method static synthetic access$302(Lcom/android/mms/ui/MmsSlideView;Landroid/widget/ImageView;)Landroid/widget/ImageView;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/MmsSlideView;
-    .param p1    # Landroid/widget/ImageView;
 
     iput-object p1, p0, Lcom/android/mms/ui/MmsSlideView;->mPlayImage:Landroid/widget/ImageView;
 
@@ -387,7 +368,6 @@
 
 .method static synthetic access$400(Lcom/android/mms/ui/MmsSlideView;)Landroid/widget/ImageButton;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/MmsSlideView;
 
     iget-object v0, p0, Lcom/android/mms/ui/MmsSlideView;->mSavebtn:Landroid/widget/ImageButton;
 
@@ -396,8 +376,6 @@
 
 .method static synthetic access$402(Lcom/android/mms/ui/MmsSlideView;Landroid/widget/ImageButton;)Landroid/widget/ImageButton;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/MmsSlideView;
-    .param p1    # Landroid/widget/ImageButton;
 
     iput-object p1, p0, Lcom/android/mms/ui/MmsSlideView;->mSavebtn:Landroid/widget/ImageButton;
 
@@ -406,7 +384,6 @@
 
 .method static synthetic access$500(Lcom/android/mms/ui/MmsSlideView;)Landroid/graphics/Bitmap;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/MmsSlideView;
 
     iget-object v0, p0, Lcom/android/mms/ui/MmsSlideView;->mImageBitmap:Landroid/graphics/Bitmap;
 
@@ -415,11 +392,6 @@
 
 .method static synthetic access$600(Lcom/android/mms/ui/MmsSlideView;Landroid/widget/ImageView;IIZ)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/MmsSlideView;
-    .param p1    # Landroid/widget/ImageView;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Z
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/mms/ui/MmsSlideView;->preCalculateImageBounds(Landroid/widget/ImageView;IIZ)V
 
@@ -428,7 +400,6 @@
 
 .method static synthetic access$700(Lcom/android/mms/ui/MmsSlideView;)Landroid/graphics/Bitmap;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/MmsSlideView;
 
     iget-object v0, p0, Lcom/android/mms/ui/MmsSlideView;->mVideoBitmap:Landroid/graphics/Bitmap;
 
@@ -437,7 +408,6 @@
 
 .method static synthetic access$800(Lcom/android/mms/ui/MmsSlideView;)Landroid/widget/HoverPopupWindow;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/MmsSlideView;
 
     iget-object v0, p0, Lcom/android/mms/ui/MmsSlideView;->mHoverPopupWindowimg:Landroid/widget/HoverPopupWindow;
 
@@ -446,8 +416,6 @@
 
 .method static synthetic access$802(Lcom/android/mms/ui/MmsSlideView;Landroid/widget/HoverPopupWindow;)Landroid/widget/HoverPopupWindow;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/MmsSlideView;
-    .param p1    # Landroid/widget/HoverPopupWindow;
 
     iput-object p1, p0, Lcom/android/mms/ui/MmsSlideView;->mHoverPopupWindowimg:Landroid/widget/HoverPopupWindow;
 
@@ -456,7 +424,6 @@
 
 .method static synthetic access$900(Lcom/android/mms/ui/MmsSlideView;)Landroid/app/Activity;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/MmsSlideView;
 
     iget-object v0, p0, Lcom/android/mms/ui/MmsSlideView;->mActivity:Landroid/app/Activity;
 
@@ -465,7 +432,6 @@
 
 .method private calculateDrmImageBounds(Landroid/widget/ImageView;)V
     .locals 2
-    .param p1    # Landroid/widget/ImageView;
 
     const/4 v1, -0x2
 
@@ -482,7 +448,6 @@
 
 .method private static getEmptyImageBitmap(Landroid/content/res/Resources;)Landroid/graphics/Bitmap;
     .locals 3
-    .param p0    # Landroid/content/res/Resources;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/OutOfMemoryError;
@@ -525,7 +490,6 @@
 
 .method private static getEmptyImageBitmapForVideo(Landroid/content/res/Resources;)Landroid/graphics/Bitmap;
     .locals 3
-    .param p0    # Landroid/content/res/Resources;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/OutOfMemoryError;
@@ -710,10 +674,6 @@
 
 .method private preCalculateImageBounds(Landroid/widget/ImageView;IIZ)V
     .locals 3
-    .param p1    # Landroid/widget/ImageView;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Z
 
     iget-object v1, p0, Lcom/android/mms/ui/MmsSlideView;->mTempPoint:Landroid/graphics/Point;
 
@@ -772,11 +732,6 @@
 
 .method private setHover(Landroid/view/View;Landroid/net/Uri;Landroid/net/Uri;Lcom/android/mms/model/ImageModel;Lcom/android/mms/model/VideoModel;)V
     .locals 7
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/net/Uri;
-    .param p3    # Landroid/net/Uri;
-    .param p4    # Lcom/android/mms/model/ImageModel;
-    .param p5    # Lcom/android/mms/model/VideoModel;
 
     move-object v4, p1
 
@@ -805,9 +760,6 @@
 
 .method private setImage(Lcom/android/mms/model/ImageModel;Lcom/android/mms/ui/MessageItem;Z)V
     .locals 10
-    .param p1    # Lcom/android/mms/model/ImageModel;
-    .param p2    # Lcom/android/mms/ui/MessageItem;
-    .param p3    # Z
 
     const/4 v9, 0x0
 
@@ -994,7 +946,6 @@
 
 .method private setIsTopLayout(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-boolean v0, p0, Lcom/android/mms/ui/MmsSlideView;->mIsTopLayout:Z
 
@@ -1054,7 +1005,6 @@
 # virtual methods
 .method public applyTextProperty(Lcom/android/mms/ui/MessageListItem$BodyTextViewProperty;)V
     .locals 3
-    .param p1    # Lcom/android/mms/ui/MessageListItem$BodyTextViewProperty;
 
     iput-object p1, p0, Lcom/android/mms/ui/MmsSlideView;->mTextProperty:Lcom/android/mms/ui/MessageListItem$BodyTextViewProperty;
 
@@ -1128,7 +1078,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     invoke-static {}, Lcom/android/mms/MmsConfig;->getEnableCombineAndForwardMenu()Z
 
@@ -1640,9 +1589,6 @@
 
 .method public present(ILcom/android/mms/model/SlideModel;Lcom/android/mms/ui/MessageListItem;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Lcom/android/mms/model/SlideModel;
-    .param p3    # Lcom/android/mms/ui/MessageListItem;
 
     const/4 v0, 0x0
 
@@ -1655,10 +1601,6 @@
 
 .method public present(ILcom/android/mms/model/SlideModel;Lcom/android/mms/ui/MessageListItem;Z)Z
     .locals 6
-    .param p1    # I
-    .param p2    # Lcom/android/mms/model/SlideModel;
-    .param p3    # Lcom/android/mms/ui/MessageListItem;
-    .param p4    # Z
 
     const/4 v2, 0x1
 
@@ -1894,7 +1836,6 @@
 
 .method public setAudio(Lcom/android/mms/model/AudioModel;)V
     .locals 6
-    .param p1    # Lcom/android/mms/model/AudioModel;
 
     const v5, 0x7f0c00b4
 
@@ -2023,7 +1964,6 @@
 
 .method public setHighlight(Ljava/util/regex/Pattern;)V
     .locals 0
-    .param p1    # Ljava/util/regex/Pattern;
 
     iput-object p1, p0, Lcom/android/mms/ui/MmsSlideView;->mHighlight:Ljava/util/regex/Pattern;
 
@@ -2032,7 +1972,6 @@
 
 .method public setIsDelayedMessage(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/MmsSlideView;->mIsDelayedMessage:Z
 
@@ -2041,7 +1980,6 @@
 
 .method public setIsFailedMessage(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/MmsSlideView;->mIsFailedMessage:Z
 
@@ -2050,7 +1988,6 @@
 
 .method public setIsScheduledMessage(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/MmsSlideView;->mIsScheduledMessage:Z
 
@@ -2059,7 +1996,6 @@
 
 .method public setText(Lcom/android/mms/model/TextModel;)V
     .locals 1
-    .param p1    # Lcom/android/mms/model/TextModel;
 
     const/4 v0, 0x0
 
@@ -2070,8 +2006,6 @@
 
 .method public setText(Lcom/android/mms/model/TextModel;Z)V
     .locals 12
-    .param p1    # Lcom/android/mms/model/TextModel;
-    .param p2    # Z
 
     const/4 v11, 0x1
 
@@ -2258,7 +2192,6 @@
 
 .method public setTextVisibility(Z)V
     .locals 1
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -2283,8 +2216,6 @@
 
 .method public setVideo(Lcom/android/mms/model/VideoModel;Lcom/android/mms/ui/MessageItem;)V
     .locals 9
-    .param p1    # Lcom/android/mms/model/VideoModel;
-    .param p2    # Lcom/android/mms/ui/MessageItem;
 
     const/4 v8, 0x0
 
@@ -2599,7 +2530,6 @@
 
 .method public setVisibility(Z)V
     .locals 0
-    .param p1    # Z
 
     invoke-static {p0, p1}, Lcom/android/mms/util/UIUtils;->setVisible(Landroid/view/View;Z)V
 

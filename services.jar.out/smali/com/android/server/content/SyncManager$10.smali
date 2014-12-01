@@ -33,7 +33,6 @@
 # virtual methods
 .method public onStatusChanged(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/content/SyncManager$10;->this$0:Lcom/android/server/content/SyncManager;
 

@@ -63,9 +63,6 @@
 # direct methods
 .method public constructor <init>(Landroid/renderscript/RenderScript;II)V
     .locals 5
-    .param p1    # Landroid/renderscript/RenderScript;
-    .param p2    # I
-    .param p3    # I
 
     const/16 v4, 0x80
 
@@ -303,7 +300,6 @@
 
 .method private makeSpace(I)V
     .locals 4
-    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -343,9 +339,6 @@
 # virtual methods
 .method public addTriangle(III)Landroid/renderscript/Mesh$TriangleMeshBuilder;
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v3, 0x0
 
@@ -447,8 +440,6 @@
 
 .method public addVertex(FF)Landroid/renderscript/Mesh$TriangleMeshBuilder;
     .locals 3
-    .param p1    # F
-    .param p2    # F
 
     const/4 v1, 0x2
 
@@ -494,9 +485,6 @@
 
 .method public addVertex(FFF)Landroid/renderscript/Mesh$TriangleMeshBuilder;
     .locals 3
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
 
     iget v0, p0, Landroid/renderscript/Mesh$TriangleMeshBuilder;->mVtxSize:I
 
@@ -566,7 +554,6 @@
 
 .method public create(Z)Landroid/renderscript/Mesh;
     .locals 9
-    .param p1    # Z
 
     const/4 v8, 0x1
 
@@ -729,10 +716,6 @@
 
 .method public setColor(FFFF)Landroid/renderscript/Mesh$TriangleMeshBuilder;
     .locals 2
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
 
     iget v0, p0, Landroid/renderscript/Mesh$TriangleMeshBuilder;->mFlags:I
 
@@ -762,9 +745,6 @@
 
 .method public setNormal(FFF)Landroid/renderscript/Mesh$TriangleMeshBuilder;
     .locals 2
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
 
     iget v0, p0, Landroid/renderscript/Mesh$TriangleMeshBuilder;->mFlags:I
 
@@ -792,8 +772,6 @@
 
 .method public setTexture(FF)Landroid/renderscript/Mesh$TriangleMeshBuilder;
     .locals 2
-    .param p1    # F
-    .param p2    # F
 
     iget v0, p0, Landroid/renderscript/Mesh$TriangleMeshBuilder;->mFlags:I
 

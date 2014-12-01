@@ -15,5 +15,5 @@ versionInfo:
   versionName: 4.4.4-N910TUVU1ANK4
 compressionType: false
 unknownFiles:
-  com/samsung/rcs/urigenerator/IUriGeneratorService.aidl: '8'
-  com/sec/ims/client/csh/IVshRemoteClient.aidl: '8'
+  com/sec/ims/client/csh/IVshRemoteClient.aidl: '0'
+  com/samsung/rcs/urigenerator/IUriGeneratorService.aidl: '0'

@@ -34,8 +34,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Ljava/util/ArrayList;I)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -184,7 +182,6 @@
 
 .method public getItem(I)Ljava/lang/Object;
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -193,7 +190,6 @@
 
 .method public getItemId(I)J
     .locals 2
-    .param p1    # I
 
     int-to-long v0, p1
 
@@ -202,7 +198,6 @@
 
 .method public getItemViewType(I)I
     .locals 3
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/widget/RemoteViewsListAdapter;->getCount()I
 
@@ -243,9 +238,6 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     invoke-virtual {p0}, Landroid/widget/RemoteViewsListAdapter;->getCount()I
 

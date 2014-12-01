@@ -143,7 +143,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/saverestore/ConversationListRestore;)Lcom/sec/android/touchwiz/widget/TwCheckBox;
     .locals 1
-    .param p0    # Lcom/android/mms/saverestore/ConversationListRestore;
 
     iget-object v0, p0, Lcom/android/mms/saverestore/ConversationListRestore;->mSelectAllCheckBox:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
@@ -152,7 +151,6 @@
 
 .method static synthetic access$1000(Lcom/android/mms/saverestore/ConversationListRestore;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/mms/saverestore/ConversationListRestore;
 
     iget-object v0, p0, Lcom/android/mms/saverestore/ConversationListRestore;->array:Ljava/util/ArrayList;
 
@@ -161,8 +159,6 @@
 
 .method static synthetic access$1002(Lcom/android/mms/saverestore/ConversationListRestore;Ljava/util/ArrayList;)Ljava/util/ArrayList;
     .locals 0
-    .param p0    # Lcom/android/mms/saverestore/ConversationListRestore;
-    .param p1    # Ljava/util/ArrayList;
 
     iput-object p1, p0, Lcom/android/mms/saverestore/ConversationListRestore;->array:Ljava/util/ArrayList;
 
@@ -171,7 +167,6 @@
 
 .method static synthetic access$1100(Lcom/android/mms/saverestore/ConversationListRestore;)Lcom/android/mms/saverestore/ConversationListRestore$ConversationAdapter;
     .locals 1
-    .param p0    # Lcom/android/mms/saverestore/ConversationListRestore;
 
     iget-object v0, p0, Lcom/android/mms/saverestore/ConversationListRestore;->mConvAdapter:Lcom/android/mms/saverestore/ConversationListRestore$ConversationAdapter;
 
@@ -180,7 +175,6 @@
 
 .method static synthetic access$1200(Lcom/android/mms/saverestore/ConversationListRestore;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/saverestore/ConversationListRestore;
 
     iget-boolean v0, p0, Lcom/android/mms/saverestore/ConversationListRestore;->mIsSelectAllmode:Z
 
@@ -189,8 +183,6 @@
 
 .method static synthetic access$1202(Lcom/android/mms/saverestore/ConversationListRestore;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/saverestore/ConversationListRestore;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/saverestore/ConversationListRestore;->mIsSelectAllmode:Z
 
@@ -199,7 +191,6 @@
 
 .method static synthetic access$1300(Lcom/android/mms/saverestore/ConversationListRestore;)Landroid/view/ActionMode;
     .locals 1
-    .param p0    # Lcom/android/mms/saverestore/ConversationListRestore;
 
     iget-object v0, p0, Lcom/android/mms/saverestore/ConversationListRestore;->mMsgsRestoreActionMode:Landroid/view/ActionMode;
 
@@ -208,8 +199,6 @@
 
 .method static synthetic access$1302(Lcom/android/mms/saverestore/ConversationListRestore;Landroid/view/ActionMode;)Landroid/view/ActionMode;
     .locals 0
-    .param p0    # Lcom/android/mms/saverestore/ConversationListRestore;
-    .param p1    # Landroid/view/ActionMode;
 
     iput-object p1, p0, Lcom/android/mms/saverestore/ConversationListRestore;->mMsgsRestoreActionMode:Landroid/view/ActionMode;
 
@@ -218,7 +207,6 @@
 
 .method static synthetic access$1400(Lcom/android/mms/saverestore/ConversationListRestore;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/android/mms/saverestore/ConversationListRestore;
 
     iget-object v0, p0, Lcom/android/mms/saverestore/ConversationListRestore;->mActionbarTitle:Landroid/widget/TextView;
 
@@ -227,8 +215,6 @@
 
 .method static synthetic access$1402(Lcom/android/mms/saverestore/ConversationListRestore;Landroid/widget/TextView;)Landroid/widget/TextView;
     .locals 0
-    .param p0    # Lcom/android/mms/saverestore/ConversationListRestore;
-    .param p1    # Landroid/widget/TextView;
 
     iput-object p1, p0, Lcom/android/mms/saverestore/ConversationListRestore;->mActionbarTitle:Landroid/widget/TextView;
 
@@ -237,7 +223,6 @@
 
 .method static synthetic access$1500(Lcom/android/mms/saverestore/ConversationListRestore;)Landroid/widget/Button;
     .locals 1
-    .param p0    # Lcom/android/mms/saverestore/ConversationListRestore;
 
     iget-object v0, p0, Lcom/android/mms/saverestore/ConversationListRestore;->mSelectedButton:Landroid/widget/Button;
 
@@ -246,8 +231,6 @@
 
 .method static synthetic access$1502(Lcom/android/mms/saverestore/ConversationListRestore;Landroid/widget/Button;)Landroid/widget/Button;
     .locals 0
-    .param p0    # Lcom/android/mms/saverestore/ConversationListRestore;
-    .param p1    # Landroid/widget/Button;
 
     iput-object p1, p0, Lcom/android/mms/saverestore/ConversationListRestore;->mSelectedButton:Landroid/widget/Button;
 
@@ -256,7 +239,6 @@
 
 .method static synthetic access$1600(Lcom/android/mms/saverestore/ConversationListRestore;)Landroid/widget/LinearLayout;
     .locals 1
-    .param p0    # Lcom/android/mms/saverestore/ConversationListRestore;
 
     iget-object v0, p0, Lcom/android/mms/saverestore/ConversationListRestore;->mSelectAll:Landroid/widget/LinearLayout;
 
@@ -265,7 +247,6 @@
 
 .method static synthetic access$1700(Lcom/android/mms/saverestore/ConversationListRestore;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/mms/saverestore/ConversationListRestore;
 
     iget-object v0, p0, Lcom/android/mms/saverestore/ConversationListRestore;->mConvList:Ljava/util/ArrayList;
 
@@ -274,7 +255,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/saverestore/ConversationListRestore;)[J
     .locals 1
-    .param p0    # Lcom/android/mms/saverestore/ConversationListRestore;
 
     invoke-direct {p0}, Lcom/android/mms/saverestore/ConversationListRestore;->getIds()[J
 
@@ -285,7 +265,6 @@
 
 .method static synthetic access$300(Lcom/android/mms/saverestore/ConversationListRestore;)Lcom/android/mms/saverestore/SaveRestoreOperation;
     .locals 1
-    .param p0    # Lcom/android/mms/saverestore/ConversationListRestore;
 
     iget-object v0, p0, Lcom/android/mms/saverestore/ConversationListRestore;->mSaveRestoreOperation:Lcom/android/mms/saverestore/SaveRestoreOperation;
 
@@ -294,7 +273,6 @@
 
 .method static synthetic access$400(Lcom/android/mms/saverestore/ConversationListRestore;)Landroid/view/LayoutInflater;
     .locals 1
-    .param p0    # Lcom/android/mms/saverestore/ConversationListRestore;
 
     iget-object v0, p0, Lcom/android/mms/saverestore/ConversationListRestore;->mInflater:Landroid/view/LayoutInflater;
 
@@ -303,7 +281,6 @@
 
 .method static synthetic access$500(Lcom/android/mms/saverestore/ConversationListRestore;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/saverestore/ConversationListRestore;
 
     iget-boolean v0, p0, Lcom/android/mms/saverestore/ConversationListRestore;->mMultiMode:Z
 
@@ -312,8 +289,6 @@
 
 .method static synthetic access$502(Lcom/android/mms/saverestore/ConversationListRestore;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/saverestore/ConversationListRestore;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/saverestore/ConversationListRestore;->mMultiMode:Z
 
@@ -322,7 +297,6 @@
 
 .method static synthetic access$600(Lcom/android/mms/saverestore/ConversationListRestore;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/mms/saverestore/ConversationListRestore;
 
     iget-object v0, p0, Lcom/android/mms/saverestore/ConversationListRestore;->mAddressesSelected:Ljava/util/ArrayList;
 
@@ -331,8 +305,6 @@
 
 .method static synthetic access$602(Lcom/android/mms/saverestore/ConversationListRestore;Ljava/util/ArrayList;)Ljava/util/ArrayList;
     .locals 0
-    .param p0    # Lcom/android/mms/saverestore/ConversationListRestore;
-    .param p1    # Ljava/util/ArrayList;
 
     iput-object p1, p0, Lcom/android/mms/saverestore/ConversationListRestore;->mAddressesSelected:Ljava/util/ArrayList;
 
@@ -341,7 +313,6 @@
 
 .method static synthetic access$700(Lcom/android/mms/saverestore/ConversationListRestore;)Landroid/widget/ListView;
     .locals 1
-    .param p0    # Lcom/android/mms/saverestore/ConversationListRestore;
 
     iget-object v0, p0, Lcom/android/mms/saverestore/ConversationListRestore;->mListView:Landroid/widget/ListView;
 
@@ -350,7 +321,6 @@
 
 .method static synthetic access$800(Lcom/android/mms/saverestore/ConversationListRestore;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/mms/saverestore/ConversationListRestore;
 
     iget-object v0, p0, Lcom/android/mms/saverestore/ConversationListRestore;->mContext:Landroid/content/Context;
 
@@ -732,7 +702,6 @@
 
 .method private setAllChecked(Z)V
     .locals 4
-    .param p1    # Z
 
     if-eqz p1, :cond_1
 
@@ -972,7 +941,6 @@
 
 .method public newArrayFromSelection(Z)Ljava/util/ArrayList;
     .locals 5
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(Z)",
@@ -1135,7 +1103,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 3
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/app/ListActivity;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -1177,7 +1144,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/ListActivity;->onCreate(Landroid/os/Bundle;)V
 
@@ -1472,9 +1438,6 @@
 
 .method public onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
     .locals 4
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1528,7 +1491,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 5
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v1, 0x1
 
@@ -1593,7 +1555,6 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)Z
     .locals 5
-    .param p1    # Landroid/view/Menu;
 
     const/4 v4, 0x6
 
@@ -1657,7 +1618,6 @@
 
 .method public softkeyRightRun(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p0}, Lcom/android/mms/saverestore/ConversationListRestore;->finish()V
 

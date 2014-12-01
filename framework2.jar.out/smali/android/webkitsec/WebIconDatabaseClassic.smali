@@ -41,7 +41,6 @@
 
 .method static synthetic access$100(Ljava/lang/String;)V
     .locals 0
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Landroid/webkitsec/WebIconDatabaseClassic;->nativeOpen(Ljava/lang/String;)V
 
@@ -66,7 +65,6 @@
 
 .method static synthetic access$600(Ljava/lang/String;)V
     .locals 0
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Landroid/webkitsec/WebIconDatabaseClassic;->nativeRetainIconForPageUrl(Ljava/lang/String;)V
 
@@ -75,7 +73,6 @@
 
 .method static synthetic access$700(Ljava/lang/String;)V
     .locals 0
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Landroid/webkitsec/WebIconDatabaseClassic;->nativeReleaseIconForPageUrl(Ljava/lang/String;)V
 
@@ -84,7 +81,6 @@
 
 .method static synthetic access$800(Ljava/lang/String;)Landroid/graphics/Bitmap;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Landroid/webkitsec/WebIconDatabaseClassic;->nativeIconForPageUrl(Ljava/lang/String;)Landroid/graphics/Bitmap;
 
@@ -134,9 +130,6 @@
 # virtual methods
 .method public bulkRequestIconForPageUrl(Landroid/content/ContentResolver;Ljava/lang/String;Landroid/webkitsec/WebIconDatabase$IconListener;)V
     .locals 4
-    .param p1    # Landroid/content/ContentResolver;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/webkitsec/WebIconDatabase$IconListener;
 
     if-nez p3, :cond_1
 
@@ -218,7 +211,6 @@
 
 .method public open(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_1
 
@@ -258,7 +250,6 @@
 
 .method public releaseIconForPageUrl(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -300,8 +291,6 @@
 
 .method public requestIconForPageUrl(Ljava/lang/String;Landroid/webkitsec/WebIconDatabase$IconListener;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/webkitsec/WebIconDatabase$IconListener;
 
     if-eqz p2, :cond_0
 
@@ -338,7 +327,6 @@
 
 .method public retainIconForPageUrl(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 

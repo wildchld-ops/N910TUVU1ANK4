@@ -134,8 +134,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Lcom/android/server/accessibility/AccessibilityManagerService;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/server/accessibility/AccessibilityManagerService;
 
     const/4 v4, 0x0
 
@@ -338,7 +336,6 @@
 
 .method static synthetic access$1000(Lcom/android/server/accessibility/TouchExplorer;)Lcom/android/server/accessibility/TouchExplorer$SendHoverEnterAndMoveDelayed;
     .locals 1
-    .param p0    # Lcom/android/server/accessibility/TouchExplorer;
 
     iget-object v0, p0, Lcom/android/server/accessibility/TouchExplorer;->mSendHoverEnterAndMoveDelayed:Lcom/android/server/accessibility/TouchExplorer$SendHoverEnterAndMoveDelayed;
 
@@ -347,7 +344,6 @@
 
 .method static synthetic access$1100(Lcom/android/server/accessibility/TouchExplorer;)Lcom/android/server/accessibility/TouchExplorer$SendHoverExitDelayed;
     .locals 1
-    .param p0    # Lcom/android/server/accessibility/TouchExplorer;
 
     iget-object v0, p0, Lcom/android/server/accessibility/TouchExplorer;->mSendHoverExitDelayed:Lcom/android/server/accessibility/TouchExplorer$SendHoverExitDelayed;
 
@@ -356,7 +352,6 @@
 
 .method static synthetic access$1200(Lcom/android/server/accessibility/TouchExplorer;)Lcom/android/server/accessibility/TouchExplorer$PerformLongPressDelayed;
     .locals 1
-    .param p0    # Lcom/android/server/accessibility/TouchExplorer;
 
     iget-object v0, p0, Lcom/android/server/accessibility/TouchExplorer;->mPerformLongPressDelayed:Lcom/android/server/accessibility/TouchExplorer$PerformLongPressDelayed;
 
@@ -365,7 +360,6 @@
 
 .method static synthetic access$1300(Lcom/android/server/accessibility/TouchExplorer;)Lcom/android/server/accessibility/TouchExplorer$SendAccessibilityEventDelayed;
     .locals 1
-    .param p0    # Lcom/android/server/accessibility/TouchExplorer;
 
     iget-object v0, p0, Lcom/android/server/accessibility/TouchExplorer;->mSendTouchExplorationEndDelayed:Lcom/android/server/accessibility/TouchExplorer$SendAccessibilityEventDelayed;
 
@@ -374,7 +368,6 @@
 
 .method static synthetic access$1400(Lcom/android/server/accessibility/TouchExplorer;)Lcom/android/server/accessibility/TouchExplorer$SendAccessibilityEventDelayed;
     .locals 1
-    .param p0    # Lcom/android/server/accessibility/TouchExplorer;
 
     iget-object v0, p0, Lcom/android/server/accessibility/TouchExplorer;->mSendTouchInteractionEndDelayed:Lcom/android/server/accessibility/TouchExplorer$SendAccessibilityEventDelayed;
 
@@ -383,7 +376,6 @@
 
 .method static synthetic access$1500(Lcom/android/server/accessibility/TouchExplorer;)Lcom/android/server/accessibility/TouchExplorer$InjectedPointerTracker;
     .locals 1
-    .param p0    # Lcom/android/server/accessibility/TouchExplorer;
 
     iget-object v0, p0, Lcom/android/server/accessibility/TouchExplorer;->mInjectedPointerTracker:Lcom/android/server/accessibility/TouchExplorer$InjectedPointerTracker;
 
@@ -392,7 +384,6 @@
 
 .method static synthetic access$1600(Lcom/android/server/accessibility/TouchExplorer;)Landroid/graphics/Rect;
     .locals 1
-    .param p0    # Lcom/android/server/accessibility/TouchExplorer;
 
     iget-object v0, p0, Lcom/android/server/accessibility/TouchExplorer;->mTempRect:Landroid/graphics/Rect;
 
@@ -401,7 +392,6 @@
 
 .method static synthetic access$1700(Lcom/android/server/accessibility/TouchExplorer;)Lcom/android/server/accessibility/AccessibilityManagerService;
     .locals 1
-    .param p0    # Lcom/android/server/accessibility/TouchExplorer;
 
     iget-object v0, p0, Lcom/android/server/accessibility/TouchExplorer;->mAms:Lcom/android/server/accessibility/AccessibilityManagerService;
 
@@ -410,7 +400,6 @@
 
 .method static synthetic access$1800(Lcom/android/server/accessibility/TouchExplorer;)I
     .locals 1
-    .param p0    # Lcom/android/server/accessibility/TouchExplorer;
 
     iget v0, p0, Lcom/android/server/accessibility/TouchExplorer;->mLastTouchedWindowId:I
 
@@ -419,9 +408,6 @@
 
 .method static synthetic access$1900(Lcom/android/server/accessibility/TouchExplorer;Landroid/view/MotionEvent;I)V
     .locals 0
-    .param p0    # Lcom/android/server/accessibility/TouchExplorer;
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/accessibility/TouchExplorer;->sendActionDownAndUp(Landroid/view/MotionEvent;I)V
 
@@ -430,7 +416,6 @@
 
 .method static synthetic access$2000(Lcom/android/server/accessibility/TouchExplorer;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/server/accessibility/TouchExplorer;
 
     iget-object v0, p0, Lcom/android/server/accessibility/TouchExplorer;->mHandler:Landroid/os/Handler;
 
@@ -439,8 +424,6 @@
 
 .method static synthetic access$2100(Lcom/android/server/accessibility/TouchExplorer;I)V
     .locals 0
-    .param p0    # Lcom/android/server/accessibility/TouchExplorer;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/accessibility/TouchExplorer;->sendAccessibilityEvent(I)V
 
@@ -449,7 +432,6 @@
 
 .method static synthetic access$2200(Lcom/android/server/accessibility/TouchExplorer;)Lcom/android/server/accessibility/TouchExplorer$ReceivedPointerTracker;
     .locals 1
-    .param p0    # Lcom/android/server/accessibility/TouchExplorer;
 
     iget-object v0, p0, Lcom/android/server/accessibility/TouchExplorer;->mReceivedPointerTracker:Lcom/android/server/accessibility/TouchExplorer$ReceivedPointerTracker;
 
@@ -458,8 +440,6 @@
 
 .method static synthetic access$2302(Lcom/android/server/accessibility/TouchExplorer;I)I
     .locals 0
-    .param p0    # Lcom/android/server/accessibility/TouchExplorer;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/accessibility/TouchExplorer;->mLongPressingPointerId:I
 
@@ -468,8 +448,6 @@
 
 .method static synthetic access$2402(Lcom/android/server/accessibility/TouchExplorer;I)I
     .locals 0
-    .param p0    # Lcom/android/server/accessibility/TouchExplorer;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/accessibility/TouchExplorer;->mLongPressingPointerDeltaX:I
 
@@ -478,8 +456,6 @@
 
 .method static synthetic access$2502(Lcom/android/server/accessibility/TouchExplorer;I)I
     .locals 0
-    .param p0    # Lcom/android/server/accessibility/TouchExplorer;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/accessibility/TouchExplorer;->mLongPressingPointerDeltaY:I
 
@@ -488,8 +464,6 @@
 
 .method static synthetic access$2600(Lcom/android/server/accessibility/TouchExplorer;I)V
     .locals 0
-    .param p0    # Lcom/android/server/accessibility/TouchExplorer;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/accessibility/TouchExplorer;->sendHoverExitAndTouchExplorationGestureEndIfNeeded(I)V
 
@@ -498,8 +472,6 @@
 
 .method static synthetic access$2702(Lcom/android/server/accessibility/TouchExplorer;I)I
     .locals 0
-    .param p0    # Lcom/android/server/accessibility/TouchExplorer;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/accessibility/TouchExplorer;->mCurrentState:I
 
@@ -508,9 +480,6 @@
 
 .method static synthetic access$2800(Lcom/android/server/accessibility/TouchExplorer;Landroid/view/MotionEvent;I)V
     .locals 0
-    .param p0    # Lcom/android/server/accessibility/TouchExplorer;
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/accessibility/TouchExplorer;->sendDownForAllNotInjectedPointers(Landroid/view/MotionEvent;I)V
 
@@ -519,7 +488,6 @@
 
 .method static synthetic access$2900(Lcom/android/server/accessibility/TouchExplorer;)I
     .locals 1
-    .param p0    # Lcom/android/server/accessibility/TouchExplorer;
 
     iget v0, p0, Lcom/android/server/accessibility/TouchExplorer;->mDetermineUserIntentTimeout:I
 
@@ -528,11 +496,6 @@
 
 .method static synthetic access$3000(Lcom/android/server/accessibility/TouchExplorer;Landroid/view/MotionEvent;III)V
     .locals 0
-    .param p0    # Lcom/android/server/accessibility/TouchExplorer;
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/server/accessibility/TouchExplorer;->sendMotionEvent(Landroid/view/MotionEvent;III)V
 
@@ -541,7 +504,6 @@
 
 .method static synthetic access$600(Lcom/android/server/accessibility/TouchExplorer;)I
     .locals 1
-    .param p0    # Lcom/android/server/accessibility/TouchExplorer;
 
     iget v0, p0, Lcom/android/server/accessibility/TouchExplorer;->mTapTimeout:I
 
@@ -550,7 +512,6 @@
 
 .method static synthetic access$700(Lcom/android/server/accessibility/TouchExplorer;)I
     .locals 1
-    .param p0    # Lcom/android/server/accessibility/TouchExplorer;
 
     iget v0, p0, Lcom/android/server/accessibility/TouchExplorer;->mTouchSlop:I
 
@@ -559,7 +520,6 @@
 
 .method static synthetic access$800(Lcom/android/server/accessibility/TouchExplorer;)I
     .locals 1
-    .param p0    # Lcom/android/server/accessibility/TouchExplorer;
 
     iget v0, p0, Lcom/android/server/accessibility/TouchExplorer;->mDoubleTapTimeout:I
 
@@ -568,7 +528,6 @@
 
 .method static synthetic access$900(Lcom/android/server/accessibility/TouchExplorer;)I
     .locals 1
-    .param p0    # Lcom/android/server/accessibility/TouchExplorer;
 
     iget v0, p0, Lcom/android/server/accessibility/TouchExplorer;->mDoubleTapSlop:I
 
@@ -577,8 +536,6 @@
 
 .method private clear(Landroid/view/MotionEvent;I)V
     .locals 3
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # I
 
     const/4 v2, -0x1
 
@@ -689,8 +646,6 @@
 
 .method private computeInjectionAction(II)I
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     const/4 v1, 0x1
 
@@ -751,7 +706,6 @@
 
 .method private static getStateSymbolicName(I)Ljava/lang/String;
     .locals 3
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -813,8 +767,6 @@
 
 .method private handleMotionEventGestureDetecting(Landroid/view/MotionEvent;I)V
     .locals 13
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # I
 
     const/high16 v10, 0x40400000
 
@@ -1054,8 +1006,6 @@
 
 .method private handleMotionEventStateDelegating(Landroid/view/MotionEvent;I)V
     .locals 5
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # I
 
     const/4 v4, 0x0
 
@@ -1211,8 +1161,6 @@
 
 .method private handleMotionEventStateDragging(Landroid/view/MotionEvent;I)V
     .locals 19
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # I
 
     const/4 v15, 0x1
 
@@ -1754,9 +1702,6 @@
 
 .method private handleMotionEventStateTouchExploring(Landroid/view/MotionEvent;Landroid/view/MotionEvent;I)V
     .locals 17
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # Landroid/view/MotionEvent;
-    .param p3    # I
 
     move-object/from16 v0, p0
 
@@ -2693,7 +2638,6 @@
 
 .method private isDraggingGesture(Landroid/view/MotionEvent;)Z
     .locals 11
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v10, 0x1
 
@@ -2744,9 +2688,6 @@
 
 .method private offsetEvent(Landroid/view/MotionEvent;II)Landroid/view/MotionEvent;
     .locals 21
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # I
-    .param p3    # I
 
     if-nez p2, :cond_0
 
@@ -2892,7 +2833,6 @@
 
 .method private sendAccessibilityEvent(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v2, p0, Lcom/android/server/accessibility/TouchExplorer;->mContext:Landroid/content/Context;
 
@@ -2949,8 +2889,6 @@
 
 .method private sendActionDownAndUp(Landroid/view/MotionEvent;I)V
     .locals 6
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # I
 
     const/4 v4, 0x1
 
@@ -3008,8 +2946,6 @@
 
 .method private sendDownForAllNotInjectedPointers(Landroid/view/MotionEvent;I)V
     .locals 10
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # I
 
     iget-object v3, p0, Lcom/android/server/accessibility/TouchExplorer;->mInjectedPointerTracker:Lcom/android/server/accessibility/TouchExplorer$InjectedPointerTracker;
 
@@ -3090,7 +3026,6 @@
 
 .method private sendHoverExitAndTouchExplorationGestureEndIfNeeded(I)V
     .locals 6
-    .param p1    # I
 
     const/16 v4, 0xa
 
@@ -3166,10 +3101,6 @@
 
 .method private sendMotionEvent(Landroid/view/MotionEvent;III)V
     .locals 3
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-virtual {p1, p2}, Landroid/view/MotionEvent;->setAction(I)V
 
@@ -3255,7 +3186,6 @@
 
 .method private sendTouchExplorationGestureStartAndHoverEnterIfNeeded(I)V
     .locals 6
-    .param p1    # I
 
     iget-object v3, p0, Lcom/android/server/accessibility/TouchExplorer;->mInjectedPointerTracker:Lcom/android/server/accessibility/TouchExplorer$InjectedPointerTracker;
 
@@ -3322,8 +3252,6 @@
 
 .method private sendUpForInjectedDownPointers(Landroid/view/MotionEvent;I)V
     .locals 11
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # I
 
     const/4 v10, 0x1
 
@@ -3431,7 +3359,6 @@
 
 .method public onAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
     .locals 3
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
 
     const/16 v2, 0x100
 
@@ -3552,9 +3479,6 @@
 
 .method public onMotionEvent(Landroid/view/MotionEvent;Landroid/view/MotionEvent;I)V
     .locals 3
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # Landroid/view/MotionEvent;
-    .param p3    # I
 
     iget-object v0, p0, Lcom/android/server/accessibility/TouchExplorer;->mReceivedPointerTracker:Lcom/android/server/accessibility/TouchExplorer$ReceivedPointerTracker;
 
@@ -3626,7 +3550,6 @@
 
 .method public setNext(Lcom/android/server/accessibility/EventStreamTransformation;)V
     .locals 0
-    .param p1    # Lcom/android/server/accessibility/EventStreamTransformation;
 
     iput-object p1, p0, Lcom/android/server/accessibility/TouchExplorer;->mNext:Lcom/android/server/accessibility/EventStreamTransformation;
 

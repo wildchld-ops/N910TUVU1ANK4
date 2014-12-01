@@ -29,8 +29,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Lcom/android/mms/rcs/SetRcsHomeNetworkPreferenceTask$ISetRcsNetworkPreferenceCallback;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/mms/rcs/SetRcsHomeNetworkPreferenceTask$ISetRcsNetworkPreferenceCallback;
 
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
 
@@ -45,7 +43,6 @@
 # virtual methods
 .method protected varargs doInBackground([Ljava/lang/Integer;)Ljava/lang/Boolean;
     .locals 7
-    .param p1    # [Ljava/lang/Integer;
 
     const/4 v6, 0x0
 
@@ -92,7 +89,6 @@
 
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [Ljava/lang/Integer;
 
@@ -105,7 +101,6 @@
 
 .method protected onPostExecute(Ljava/lang/Boolean;)V
     .locals 2
-    .param p1    # Ljava/lang/Boolean;
 
     iget-object v0, p0, Lcom/android/mms/rcs/SetRcsRoamingNetworkPreferenceTask;->mCallback:Lcom/android/mms/rcs/SetRcsHomeNetworkPreferenceTask$ISetRcsNetworkPreferenceCallback;
 
@@ -125,7 +120,6 @@
 
 .method protected bridge synthetic onPostExecute(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Ljava/lang/Boolean;
 

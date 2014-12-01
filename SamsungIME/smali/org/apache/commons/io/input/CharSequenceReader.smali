@@ -17,7 +17,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/CharSequence;)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
 
     invoke-direct {p0}, Ljava/io/Reader;-><init>()V
 
@@ -50,7 +49,6 @@
 
 .method public mark(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Lorg/apache/commons/io/input/CharSequenceReader;->idx:I
 
@@ -103,9 +101,6 @@
 
 .method public read([CII)I
     .locals 6
-    .param p1    # [C
-    .param p2    # I
-    .param p3    # I
 
     const/4 v3, -0x1
 
@@ -230,7 +225,6 @@
 
 .method public skip(J)J
     .locals 6
-    .param p1    # J
 
     const-wide/16 v2, 0x0
 

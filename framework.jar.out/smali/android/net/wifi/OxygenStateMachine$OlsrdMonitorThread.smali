@@ -37,8 +37,6 @@
 # direct methods
 .method public constructor <init>(Landroid/net/wifi/OxygenStateMachine;Landroid/net/wifi/OxygenStateMachine$OlsrdMonitor;Lcom/android/internal/util/StateMachine;)V
     .locals 0
-    .param p2    # Landroid/net/wifi/OxygenStateMachine$OlsrdMonitor;
-    .param p3    # Lcom/android/internal/util/StateMachine;
 
     iput-object p1, p0, Landroid/net/wifi/OxygenStateMachine$OlsrdMonitorThread;->this$0:Landroid/net/wifi/OxygenStateMachine;
 
@@ -53,7 +51,6 @@
 
 .method private dispatchMessage(Ljava/lang/String;)Z
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x0
 

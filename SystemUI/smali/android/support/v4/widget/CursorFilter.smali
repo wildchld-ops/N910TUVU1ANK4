@@ -18,7 +18,6 @@
 # direct methods
 .method constructor <init>(Landroid/support/v4/widget/CursorFilter$CursorFilterClient;)V
     .locals 0
-    .param p1    # Landroid/support/v4/widget/CursorFilter$CursorFilterClient;
 
     invoke-direct {p0}, Landroid/widget/Filter;-><init>()V
 
@@ -31,7 +30,6 @@
 # virtual methods
 .method public convertResultToString(Ljava/lang/Object;)Ljava/lang/CharSequence;
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     iget-object v0, p0, Landroid/support/v4/widget/CursorFilter;->mClient:Landroid/support/v4/widget/CursorFilter$CursorFilterClient;
 
@@ -46,7 +44,6 @@
 
 .method protected performFiltering(Ljava/lang/CharSequence;)Landroid/widget/Filter$FilterResults;
     .locals 3
-    .param p1    # Ljava/lang/CharSequence;
 
     iget-object v2, p0, Landroid/support/v4/widget/CursorFilter;->mClient:Landroid/support/v4/widget/CursorFilter$CursorFilterClient;
 
@@ -85,8 +82,6 @@
 
 .method protected publishResults(Ljava/lang/CharSequence;Landroid/widget/Filter$FilterResults;)V
     .locals 3
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Landroid/widget/Filter$FilterResults;
 
     iget-object v1, p0, Landroid/support/v4/widget/CursorFilter;->mClient:Landroid/support/v4/widget/CursorFilter$CursorFilterClient;
 

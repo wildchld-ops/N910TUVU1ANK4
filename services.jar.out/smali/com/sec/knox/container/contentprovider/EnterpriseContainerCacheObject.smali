@@ -317,7 +317,6 @@
 
 .method public setAdmin(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/knox/container/contentprovider/EnterpriseContainerCacheObject;->admin:I
 
@@ -326,7 +325,6 @@
 
 .method public setContainerId(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/knox/container/contentprovider/EnterpriseContainerCacheObject;->containerId:I
 
@@ -335,7 +333,6 @@
 
 .method public setContainerLockOnScreenLock(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/knox/container/contentprovider/EnterpriseContainerCacheObject;->containerLockOnScreenLock:Z
 
@@ -362,7 +359,6 @@
 
 .method public setContainerStatus(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/knox/container/contentprovider/EnterpriseContainerCacheObject;->containerStatus:I
 
@@ -371,7 +367,6 @@
 
 .method public setContainerType(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/knox/container/contentprovider/EnterpriseContainerCacheObject;->containerType:I
 
@@ -380,7 +375,6 @@
 
 .method public setEmail(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/sec/knox/container/contentprovider/EnterpriseContainerCacheObject;->mEmail:Ljava/lang/String;
 
@@ -389,7 +383,6 @@
 
 .method public setFailedPasswordAttempts(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/knox/container/contentprovider/EnterpriseContainerCacheObject;->failedPasswordAttempts:I
 
@@ -398,7 +391,6 @@
 
 .method public setFirmwareVersion(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/sec/knox/container/contentprovider/EnterpriseContainerCacheObject;->mFirmwareVersion:Ljava/lang/String;
 
@@ -407,7 +399,6 @@
 
 .method public setLockType(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/knox/container/contentprovider/EnterpriseContainerCacheObject;->lockType:I
 
@@ -416,7 +407,6 @@
 
 .method public setMaximumTimeToLock(J)V
     .locals 0
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/sec/knox/container/contentprovider/EnterpriseContainerCacheObject;->maximumTimeToLock:J
 
@@ -425,7 +415,6 @@
 
 .method public setName(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/sec/knox/container/contentprovider/EnterpriseContainerCacheObject;->mName:Ljava/lang/String;
 
@@ -434,7 +423,6 @@
 
 .method public setPassword(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/sec/knox/container/contentprovider/EnterpriseContainerCacheObject;->mPassword:Ljava/lang/String;
 
@@ -443,7 +431,6 @@
 
 .method public setPasswordEnabledContainerLockTimeout(J)V
     .locals 0
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/sec/knox/container/contentprovider/EnterpriseContainerCacheObject;->maximumTimeToUnmount:J
 
@@ -452,7 +439,6 @@
 
 .method public setPasswordExpirationDate(J)V
     .locals 0
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/sec/knox/container/contentprovider/EnterpriseContainerCacheObject;->passwordExpirationDate:J
 
@@ -461,7 +447,6 @@
 
 .method public setPasswordExpirationTimeout(J)V
     .locals 0
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/sec/knox/container/contentprovider/EnterpriseContainerCacheObject;->passwordExpirationTimeout:J
 
@@ -470,7 +455,6 @@
 
 .method public setPasswordHasExpired(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/knox/container/contentprovider/EnterpriseContainerCacheObject;->passwordHasExpired:Z
 
@@ -479,7 +463,6 @@
 
 .method public setPasswordStateInfo(Lcom/sec/knox/container/contentprovider/ContainerPasswordStateInfo;)V
     .locals 0
-    .param p1    # Lcom/sec/knox/container/contentprovider/ContainerPasswordStateInfo;
 
     iput-object p1, p0, Lcom/sec/knox/container/contentprovider/EnterpriseContainerCacheObject;->passwordStateInfo:Lcom/sec/knox/container/contentprovider/ContainerPasswordStateInfo;
 
@@ -488,7 +471,6 @@
 
 .method public setPasswordStatus(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/knox/container/contentprovider/EnterpriseContainerCacheObject;->passwordStatus:I
 
@@ -497,7 +479,6 @@
 
 .method public setSecurityIcon(Landroid/graphics/Bitmap;)V
     .locals 0
-    .param p1    # Landroid/graphics/Bitmap;
 
     iput-object p1, p0, Lcom/sec/knox/container/contentprovider/EnterpriseContainerCacheObject;->mSecurityIcon:Landroid/graphics/Bitmap;
 
@@ -506,7 +487,6 @@
 
 .method public setSecurityText(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/sec/knox/container/contentprovider/EnterpriseContainerCacheObject;->mSecurityText:Ljava/lang/String;
 
@@ -515,7 +495,6 @@
 
 .method public setVerifyPwdOnlyOnChangeMode(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/knox/container/contentprovider/EnterpriseContainerCacheObject;->verifyPwdOnlyOnModeChange:Z
 

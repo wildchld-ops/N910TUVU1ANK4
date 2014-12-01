@@ -14,7 +14,6 @@
 
 .method public static append([Ljava/lang/Object;Ljava/lang/Object;)[Ljava/lang/Object;
     .locals 2
-    .param p0    # [Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -38,8 +37,6 @@
 
 .method public static remove([FI)[F
     .locals 4
-    .param p0    # [F
-    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -64,8 +61,6 @@
 
 .method public static remove([Ljava/lang/Object;I)[Ljava/lang/Object;
     .locals 5
-    .param p0    # [Ljava/lang/Object;
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",

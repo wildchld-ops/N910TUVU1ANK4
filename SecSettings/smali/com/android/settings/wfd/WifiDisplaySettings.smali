@@ -273,7 +273,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/wfd/WifiDisplaySettings;)Lcom/android/settings/helpdialog/TwHelpAnimatedDialog;
     .locals 1
-    .param p0    # Lcom/android/settings/wfd/WifiDisplaySettings;
 
     iget-object v0, p0, Lcom/android/settings/wfd/WifiDisplaySettings;->mHelpDialog:Lcom/android/settings/helpdialog/TwHelpAnimatedDialog;
 
@@ -282,8 +281,6 @@
 
 .method static synthetic access$002(Lcom/android/settings/wfd/WifiDisplaySettings;Lcom/android/settings/helpdialog/TwHelpAnimatedDialog;)Lcom/android/settings/helpdialog/TwHelpAnimatedDialog;
     .locals 0
-    .param p0    # Lcom/android/settings/wfd/WifiDisplaySettings;
-    .param p1    # Lcom/android/settings/helpdialog/TwHelpAnimatedDialog;
 
     iput-object p1, p0, Lcom/android/settings/wfd/WifiDisplaySettings;->mHelpDialog:Lcom/android/settings/helpdialog/TwHelpAnimatedDialog;
 
@@ -292,7 +289,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/wfd/WifiDisplaySettings;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/settings/wfd/WifiDisplaySettings;
 
     iget-object v0, p0, Lcom/android/settings/wfd/WifiDisplaySettings;->mMotionHandler:Landroid/os/Handler;
 
@@ -301,7 +297,6 @@
 
 .method static synthetic access$1000(Lcom/android/settings/wfd/WifiDisplaySettings;)I
     .locals 1
-    .param p0    # Lcom/android/settings/wfd/WifiDisplaySettings;
 
     iget v0, p0, Lcom/android/settings/wfd/WifiDisplaySettings;->mWpsConfig:I
 
@@ -310,8 +305,6 @@
 
 .method static synthetic access$1002(Lcom/android/settings/wfd/WifiDisplaySettings;I)I
     .locals 0
-    .param p0    # Lcom/android/settings/wfd/WifiDisplaySettings;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/settings/wfd/WifiDisplaySettings;->mWpsConfig:I
 
@@ -320,7 +313,6 @@
 
 .method static synthetic access$1100(Lcom/android/settings/wfd/WifiDisplaySettings;)I
     .locals 1
-    .param p0    # Lcom/android/settings/wfd/WifiDisplaySettings;
 
     iget v0, p0, Lcom/android/settings/wfd/WifiDisplaySettings;->mListenChannel:I
 
@@ -329,8 +321,6 @@
 
 .method static synthetic access$1102(Lcom/android/settings/wfd/WifiDisplaySettings;I)I
     .locals 0
-    .param p0    # Lcom/android/settings/wfd/WifiDisplaySettings;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/settings/wfd/WifiDisplaySettings;->mListenChannel:I
 
@@ -339,7 +329,6 @@
 
 .method static synthetic access$1200(Lcom/android/settings/wfd/WifiDisplaySettings;)I
     .locals 1
-    .param p0    # Lcom/android/settings/wfd/WifiDisplaySettings;
 
     iget v0, p0, Lcom/android/settings/wfd/WifiDisplaySettings;->mOperatingChannel:I
 
@@ -348,8 +337,6 @@
 
 .method static synthetic access$1202(Lcom/android/settings/wfd/WifiDisplaySettings;I)I
     .locals 0
-    .param p0    # Lcom/android/settings/wfd/WifiDisplaySettings;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/settings/wfd/WifiDisplaySettings;->mOperatingChannel:I
 
@@ -358,9 +345,6 @@
 
 .method static synthetic access$1300(Lcom/android/settings/wfd/WifiDisplaySettings;II)V
     .locals 0
-    .param p0    # Lcom/android/settings/wfd/WifiDisplaySettings;
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/settings/wfd/WifiDisplaySettings;->setWifiP2pChannels(II)V
 
@@ -369,7 +353,6 @@
 
 .method static synthetic access$1400(Lcom/android/settings/wfd/WifiDisplaySettings;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/wfd/WifiDisplaySettings;
 
     invoke-direct {p0}, Lcom/android/settings/wfd/WifiDisplaySettings;->isWfdConnected()Z
 
@@ -380,7 +363,6 @@
 
 .method static synthetic access$1500(Lcom/android/settings/wfd/WifiDisplaySettings;)Landroid/widget/Switch;
     .locals 1
-    .param p0    # Lcom/android/settings/wfd/WifiDisplaySettings;
 
     iget-object v0, p0, Lcom/android/settings/wfd/WifiDisplaySettings;->mActionBarSwitch:Landroid/widget/Switch;
 
@@ -389,8 +371,6 @@
 
 .method static synthetic access$1602(Lcom/android/settings/wfd/WifiDisplaySettings;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/wfd/WifiDisplaySettings;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/wfd/WifiDisplaySettings;->mEnableSwitch:Z
 
@@ -399,8 +379,6 @@
 
 .method static synthetic access$1702(Lcom/android/settings/wfd/WifiDisplaySettings;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/wfd/WifiDisplaySettings;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/wfd/WifiDisplaySettings;->mConnectingDialogCalled:Z
 
@@ -409,7 +387,6 @@
 
 .method static synthetic access$1800(Lcom/android/settings/wfd/WifiDisplaySettings;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/android/settings/wfd/WifiDisplaySettings;
 
     iget-object v0, p0, Lcom/android/settings/wfd/WifiDisplaySettings;->mEmptyMessage:Landroid/widget/TextView;
 
@@ -418,7 +395,6 @@
 
 .method static synthetic access$1900(Lcom/android/settings/wfd/WifiDisplaySettings;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/wfd/WifiDisplaySettings;
 
     iget-boolean v0, p0, Lcom/android/settings/wfd/WifiDisplaySettings;->mInPickerDialog:Z
 
@@ -427,7 +403,6 @@
 
 .method static synthetic access$2000(Lcom/android/settings/wfd/WifiDisplaySettings;)Landroid/preference/SwitchPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/wfd/WifiDisplaySettings;
 
     iget-object v0, p0, Lcom/android/settings/wfd/WifiDisplaySettings;->mMultiPaneSwitch:Landroid/preference/SwitchPreference;
 
@@ -436,8 +411,6 @@
 
 .method static synthetic access$202(Lcom/android/settings/wfd/WifiDisplaySettings;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/wfd/WifiDisplaySettings;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/wfd/WifiDisplaySettings;->mCanShake:Z
 
@@ -446,7 +419,6 @@
 
 .method static synthetic access$2100(Lcom/android/settings/wfd/WifiDisplaySettings;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/wfd/WifiDisplaySettings;
 
     invoke-virtual {p0}, Lcom/android/settings/SettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -457,7 +429,6 @@
 
 .method static synthetic access$2200(Lcom/android/settings/wfd/WifiDisplaySettings;)V
     .locals 0
-    .param p0    # Lcom/android/settings/wfd/WifiDisplaySettings;
 
     invoke-direct {p0}, Lcom/android/settings/wfd/WifiDisplaySettings;->applyState()V
 
@@ -466,8 +437,6 @@
 
 .method static synthetic access$2302(Lcom/android/settings/wfd/WifiDisplaySettings;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/wfd/WifiDisplaySettings;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/wfd/WifiDisplaySettings;->mSetPrevSettingsDetach:Z
 
@@ -476,7 +445,6 @@
 
 .method static synthetic access$2400(Lcom/android/settings/wfd/WifiDisplaySettings;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/wfd/WifiDisplaySettings;
 
     invoke-virtual {p0}, Lcom/android/settings/SettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -487,8 +455,6 @@
 
 .method static synthetic access$2500(Lcom/android/settings/wfd/WifiDisplaySettings;Landroid/hardware/display/WifiDisplay;)V
     .locals 0
-    .param p0    # Lcom/android/settings/wfd/WifiDisplaySettings;
-    .param p1    # Landroid/hardware/display/WifiDisplay;
 
     invoke-direct {p0, p1}, Lcom/android/settings/wfd/WifiDisplaySettings;->showOptionsDialog(Landroid/hardware/display/WifiDisplay;)V
 
@@ -497,7 +463,6 @@
 
 .method static synthetic access$2600(Lcom/android/settings/wfd/WifiDisplaySettings;)Landroid/app/AlertDialog;
     .locals 1
-    .param p0    # Lcom/android/settings/wfd/WifiDisplaySettings;
 
     iget-object v0, p0, Lcom/android/settings/wfd/WifiDisplaySettings;->mAlertDialog:Landroid/app/AlertDialog;
 
@@ -506,8 +471,6 @@
 
 .method static synthetic access$2602(Lcom/android/settings/wfd/WifiDisplaySettings;Landroid/app/AlertDialog;)Landroid/app/AlertDialog;
     .locals 0
-    .param p0    # Lcom/android/settings/wfd/WifiDisplaySettings;
-    .param p1    # Landroid/app/AlertDialog;
 
     iput-object p1, p0, Lcom/android/settings/wfd/WifiDisplaySettings;->mAlertDialog:Landroid/app/AlertDialog;
 
@@ -516,7 +479,6 @@
 
 .method static synthetic access$2700(Lcom/android/settings/wfd/WifiDisplaySettings;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/settings/wfd/WifiDisplaySettings;
 
     iget-object v0, p0, Lcom/android/settings/wfd/WifiDisplaySettings;->changeString:Ljava/lang/String;
 
@@ -525,8 +487,6 @@
 
 .method static synthetic access$2702(Lcom/android/settings/wfd/WifiDisplaySettings;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/android/settings/wfd/WifiDisplaySettings;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/settings/wfd/WifiDisplaySettings;->changeString:Ljava/lang/String;
 
@@ -535,8 +495,6 @@
 
 .method static synthetic access$2802(Lcom/android/settings/wfd/WifiDisplaySettings;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/wfd/WifiDisplaySettings;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/wfd/WifiDisplaySettings;->isChanged:Z
 
@@ -545,7 +503,6 @@
 
 .method static synthetic access$2900(Lcom/android/settings/wfd/WifiDisplaySettings;)Landroid/widget/EditText;
     .locals 1
-    .param p0    # Lcom/android/settings/wfd/WifiDisplaySettings;
 
     iget-object v0, p0, Lcom/android/settings/wfd/WifiDisplaySettings;->mGlobalEditDeviceName:Landroid/widget/EditText;
 
@@ -554,8 +511,6 @@
 
 .method static synthetic access$2902(Lcom/android/settings/wfd/WifiDisplaySettings;Landroid/widget/EditText;)Landroid/widget/EditText;
     .locals 0
-    .param p0    # Lcom/android/settings/wfd/WifiDisplaySettings;
-    .param p1    # Landroid/widget/EditText;
 
     iput-object p1, p0, Lcom/android/settings/wfd/WifiDisplaySettings;->mGlobalEditDeviceName:Landroid/widget/EditText;
 
@@ -564,7 +519,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/wfd/WifiDisplaySettings;)Landroid/hardware/motion/MotionRecognitionManager;
     .locals 1
-    .param p0    # Lcom/android/settings/wfd/WifiDisplaySettings;
 
     iget-object v0, p0, Lcom/android/settings/wfd/WifiDisplaySettings;->mMotionSensorManager:Landroid/hardware/motion/MotionRecognitionManager;
 
@@ -573,7 +527,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/wfd/WifiDisplaySettings;)Landroid/hardware/motion/MRListener;
     .locals 1
-    .param p0    # Lcom/android/settings/wfd/WifiDisplaySettings;
 
     iget-object v0, p0, Lcom/android/settings/wfd/WifiDisplaySettings;->mMotionListener:Landroid/hardware/motion/MRListener;
 
@@ -582,7 +535,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/wfd/WifiDisplaySettings;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/wfd/WifiDisplaySettings;
 
     iget-boolean v0, p0, Lcom/android/settings/wfd/WifiDisplaySettings;->mListen:Z
 
@@ -591,8 +543,6 @@
 
 .method static synthetic access$502(Lcom/android/settings/wfd/WifiDisplaySettings;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/wfd/WifiDisplaySettings;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/wfd/WifiDisplaySettings;->mListen:Z
 
@@ -601,8 +551,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/wfd/WifiDisplaySettings;Z)V
     .locals 0
-    .param p0    # Lcom/android/settings/wfd/WifiDisplaySettings;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/settings/wfd/WifiDisplaySettings;->setListenMode(Z)V
 
@@ -611,7 +559,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/wfd/WifiDisplaySettings;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/wfd/WifiDisplaySettings;
 
     iget-boolean v0, p0, Lcom/android/settings/wfd/WifiDisplaySettings;->mAutoGO:Z
 
@@ -620,8 +567,6 @@
 
 .method static synthetic access$702(Lcom/android/settings/wfd/WifiDisplaySettings;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/wfd/WifiDisplaySettings;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/wfd/WifiDisplaySettings;->mAutoGO:Z
 
@@ -630,7 +575,6 @@
 
 .method static synthetic access$800(Lcom/android/settings/wfd/WifiDisplaySettings;)V
     .locals 0
-    .param p0    # Lcom/android/settings/wfd/WifiDisplaySettings;
 
     invoke-direct {p0}, Lcom/android/settings/wfd/WifiDisplaySettings;->startAutoGO()V
 
@@ -639,7 +583,6 @@
 
 .method static synthetic access$900(Lcom/android/settings/wfd/WifiDisplaySettings;)V
     .locals 0
-    .param p0    # Lcom/android/settings/wfd/WifiDisplaySettings;
 
     invoke-direct {p0}, Lcom/android/settings/wfd/WifiDisplaySettings;->stopAutoGO()V
 
@@ -3706,7 +3649,6 @@
 
 .method public getHelpPackageVersionCode(Ljava/lang/String;)I
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, -0x1
 
@@ -3741,7 +3683,6 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 10
-    .param p1    # Landroid/os/Bundle;
 
     const/16 v5, 0x10
 
@@ -4043,7 +3984,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 3
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p1}, Landroid/view/View;->getId()I
 
@@ -4148,7 +4088,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 0
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-direct {p0}, Lcom/android/settings/wfd/WifiDisplaySettings;->setMenuIcon()V
 
@@ -4229,7 +4168,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 6
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v5, 0x1
 
@@ -4717,9 +4655,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 6
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const/4 v5, 0x0
 
@@ -5305,8 +5240,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 3
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     instance-of v2, p2, Lcom/android/settings/wfd/WifiDisplaySettings$WifiDisplayPreference;
 

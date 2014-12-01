@@ -25,8 +25,6 @@
 # direct methods
 .method constructor <init>(Ljava/lang/String;J)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -45,7 +43,6 @@
 # virtual methods
 .method public addParsingTime(J)V
     .locals 4
-    .param p1    # J
 
     iget-wide v0, p0, Landroid/media/MediaScanner$FileParsingTime;->mNumber:J
 

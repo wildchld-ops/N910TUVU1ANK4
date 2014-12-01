@@ -122,17 +122,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IILcom/android/server/enterprise/firewall/FirewallRuleAction;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Ljava/lang/String;
-    .param p7    # Ljava/lang/String;
-    .param p8    # Ljava/lang/String;
-    .param p9    # I
-    .param p10    # I
-    .param p11    # Lcom/android/server/enterprise/firewall/FirewallRuleAction;
 
     const/4 v0, -0x1
 
@@ -259,7 +248,6 @@
 
 .method public setChain(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/server/enterprise/firewall/FirewallRule;->mChain:Ljava/lang/String;
 
@@ -270,7 +258,6 @@
 
 .method public setDirection(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "both"
 
@@ -312,7 +299,6 @@
 
 .method public setHostnameOrIp(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/server/enterprise/firewall/FirewallRule;->mIprange:Ljava/lang/String;
 
@@ -323,7 +309,6 @@
 
 .method public setNetworkInterface(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "both"
 
@@ -365,7 +350,6 @@
 
 .method public setPort(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/server/enterprise/firewall/FirewallRule;->mPort:Ljava/lang/String;
 
@@ -376,7 +360,6 @@
 
 .method public setPortLocation(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "both"
 
@@ -418,7 +401,6 @@
 
 .method public setProtocol(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "both"
 
@@ -472,7 +454,6 @@
 
 .method public setRuleAction(Lcom/android/server/enterprise/firewall/FirewallRuleAction;)Z
     .locals 1
-    .param p1    # Lcom/android/server/enterprise/firewall/FirewallRuleAction;
 
     iput-object p1, p0, Lcom/android/server/enterprise/firewall/FirewallRule;->mRuleAction:Lcom/android/server/enterprise/firewall/FirewallRuleAction;
 
@@ -483,7 +464,6 @@
 
 .method public setRuleType(I)Z
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -511,7 +491,6 @@
 
 .method public setTable(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "filter"
 
@@ -561,7 +540,6 @@
 
 .method public setUid(I)Z
     .locals 1
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/enterprise/firewall/FirewallRule;->mUid:I
 

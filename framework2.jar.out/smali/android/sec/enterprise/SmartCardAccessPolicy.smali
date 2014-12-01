@@ -30,7 +30,6 @@
 # virtual methods
 .method public isPackageWhitelistedFromBTSecureAccess(Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     invoke-static {}, Landroid/sec/enterprise/EnterpriseDeviceManager$EDMProxyServiceHelper;->getService()Landroid/sec/enterprise/IEDMProxy;
@@ -65,7 +64,6 @@
 
 .method public isPackageWhitelistedFromBTSecureAccessUid(I)Z
     .locals 4
-    .param p1    # I
 
     :try_start_0
     invoke-static {}, Landroid/sec/enterprise/EnterpriseDeviceManager$EDMProxyServiceHelper;->getService()Landroid/sec/enterprise/IEDMProxy;

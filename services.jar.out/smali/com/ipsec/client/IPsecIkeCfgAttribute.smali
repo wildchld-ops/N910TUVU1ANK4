@@ -12,7 +12,6 @@
 # direct methods
 .method public constructor <init>(I)V
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -23,8 +22,6 @@
 
 .method public constructor <init>(I[B)V
     .locals 3
-    .param p1    # I
-    .param p2    # [B
 
     const/4 v2, 0x0
 

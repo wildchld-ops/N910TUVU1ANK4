@@ -36,7 +36,6 @@
 # virtual methods
 .method public onMotionListener(Landroid/hardware/motion/MREvent;)V
     .locals 3
-    .param p1    # Landroid/hardware/motion/MREvent;
 
     iget-object v1, p0, Landroid/widget/AbsListView$5;->this$0:Landroid/widget/AbsListView;
 

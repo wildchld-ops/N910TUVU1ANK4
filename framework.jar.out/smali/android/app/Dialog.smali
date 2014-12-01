@@ -76,7 +76,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -89,8 +88,6 @@
 
 .method public constructor <init>(Landroid/content/Context;I)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     const/4 v0, 0x1
 
@@ -101,9 +98,6 @@
 
 .method constructor <init>(Landroid/content/Context;IZ)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Z
 
     const/4 v5, 0x0
 
@@ -205,9 +199,6 @@
 
 .method protected constructor <init>(Landroid/content/Context;ZLandroid/content/DialogInterface$OnCancelListener;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Z
-    .param p3    # Landroid/content/DialogInterface$OnCancelListener;
 
     invoke-direct {p0, p1}, Landroid/app/Dialog;-><init>(Landroid/content/Context;)V
 
@@ -220,9 +211,6 @@
 
 .method protected constructor <init>(Landroid/content/Context;ZLandroid/os/Message;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Z
-    .param p3    # Landroid/os/Message;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -689,8 +677,6 @@
 # virtual methods
 .method public addContentView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/ViewGroup$LayoutParams;
 
     iget-object v0, p0, Landroid/app/Dialog;->mWindow:Landroid/view/Window;
 
@@ -868,7 +854,6 @@
 
 .method public dispatchGenericMotionEvent(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-object v0, p0, Landroid/app/Dialog;->mWindow:Landroid/view/Window;
 
@@ -893,7 +878,6 @@
 
 .method public dispatchKeyEvent(Landroid/view/KeyEvent;)Z
     .locals 3
-    .param p1    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x1
 
@@ -951,7 +935,6 @@
 
 .method public dispatchKeyShortcutEvent(Landroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/KeyEvent;
 
     iget-object v0, p0, Landroid/app/Dialog;->mWindow:Landroid/view/Window;
 
@@ -980,7 +963,6 @@
 
 .method dispatchOnCreate(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     iget-boolean v0, p0, Landroid/app/Dialog;->mCreated:Z
 
@@ -998,7 +980,6 @@
 
 .method public dispatchPopulateAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)Z
     .locals 5
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
 
     const/4 v2, 0x0
 
@@ -1053,7 +1034,6 @@
 
 .method public dispatchTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-object v0, p0, Landroid/app/Dialog;->mWindow:Landroid/view/Window;
 
@@ -1078,7 +1058,6 @@
 
 .method public dispatchTrackballEvent(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-object v0, p0, Landroid/app/Dialog;->mWindow:Landroid/view/Window;
 
@@ -1103,7 +1082,6 @@
 
 .method public findViewById(I)Landroid/view/View;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/app/Dialog;->mWindow:Landroid/view/Window;
 
@@ -1243,7 +1221,6 @@
 
 .method public onActionModeFinished(Landroid/view/ActionMode;)V
     .locals 1
-    .param p1    # Landroid/view/ActionMode;
 
     iget-object v0, p0, Landroid/app/Dialog;->mActionMode:Landroid/view/ActionMode;
 
@@ -1259,7 +1236,6 @@
 
 .method public onActionModeStarted(Landroid/view/ActionMode;)V
     .locals 0
-    .param p1    # Landroid/view/ActionMode;
 
     iput-object p1, p0, Landroid/app/Dialog;->mActionMode:Landroid/view/ActionMode;
 
@@ -1293,7 +1269,6 @@
 
 .method public onContextItemSelected(Landroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v0, 0x0
 
@@ -1302,30 +1277,24 @@
 
 .method public onContextMenuClosed(Landroid/view/Menu;)V
     .locals 0
-    .param p1    # Landroid/view/Menu;
 
     return-void
 .end method
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     return-void
 .end method
 
 .method public onCreateContextMenu(Landroid/view/ContextMenu;Landroid/view/View;Landroid/view/ContextMenu$ContextMenuInfo;)V
     .locals 0
-    .param p1    # Landroid/view/ContextMenu;
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ContextMenu$ContextMenuInfo;
 
     return-void
 .end method
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 1
-    .param p1    # Landroid/view/Menu;
 
     const/4 v0, 0x1
 
@@ -1334,8 +1303,6 @@
 
 .method public onCreatePanelMenu(ILandroid/view/Menu;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/Menu;
 
     if-nez p1, :cond_0
 
@@ -1354,7 +1321,6 @@
 
 .method public onCreatePanelView(I)Landroid/view/View;
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -1369,7 +1335,6 @@
 
 .method public onGenericMotionEvent(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v0, 0x0
 
@@ -1378,8 +1343,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x4
 
@@ -1400,8 +1363,6 @@
 
 .method public onKeyLongPress(ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x0
 
@@ -1410,9 +1371,6 @@
 
 .method public onKeyMultiple(IILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x0
 
@@ -1421,8 +1379,6 @@
 
 .method public onKeyShortcut(ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x0
 
@@ -1431,8 +1387,6 @@
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x4
 
@@ -1465,8 +1419,6 @@
 
 .method public onMenuItemSelected(ILandroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/MenuItem;
 
     const/4 v0, 0x0
 
@@ -1475,8 +1427,6 @@
 
 .method public onMenuOpened(ILandroid/view/Menu;)Z
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/view/Menu;
 
     const/4 v1, 0x1
 
@@ -1494,7 +1444,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v0, 0x0
 
@@ -1503,15 +1452,12 @@
 
 .method public onOptionsMenuClosed(Landroid/view/Menu;)V
     .locals 0
-    .param p1    # Landroid/view/Menu;
 
     return-void
 .end method
 
 .method public onPanelClosed(ILandroid/view/Menu;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/view/Menu;
 
     const/16 v0, 0x8
 
@@ -1529,7 +1475,6 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)Z
     .locals 1
-    .param p1    # Landroid/view/Menu;
 
     const/4 v0, 0x1
 
@@ -1538,9 +1483,6 @@
 
 .method public onPreparePanel(ILandroid/view/View;Landroid/view/Menu;)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/Menu;
 
     const/4 v1, 0x1
 
@@ -1572,7 +1514,6 @@
 
 .method public onRestoreInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     const-string v1, "android:dialogHierarchy"
 
@@ -1730,7 +1671,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 2
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-boolean v0, p0, Landroid/app/Dialog;->mCancelable:Z
 
@@ -1765,7 +1705,6 @@
 
 .method public onTrackballEvent(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v0, 0x0
 
@@ -1774,7 +1713,6 @@
 
 .method public onWindowAttributesChanged(Landroid/view/WindowManager$LayoutParams;)V
     .locals 2
-    .param p1    # Landroid/view/WindowManager$LayoutParams;
 
     iget-object v0, p0, Landroid/app/Dialog;->mDecor:Landroid/view/View;
 
@@ -1792,7 +1730,6 @@
 
 .method public onWindowFocusChanged(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/app/Dialog;->mHasFocus:Z
 
@@ -1801,7 +1738,6 @@
 
 .method public onWindowStartingActionMode(Landroid/view/ActionMode$Callback;)Landroid/view/ActionMode;
     .locals 1
-    .param p1    # Landroid/view/ActionMode$Callback;
 
     iget-object v0, p0, Landroid/app/Dialog;->mActionBar:Lcom/android/internal/app/ActionBarImpl;
 
@@ -1824,7 +1760,6 @@
 
 .method public openContextMenu(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p1}, Landroid/view/View;->showContextMenu()Z
 
@@ -1847,7 +1782,6 @@
 
 .method public registerForContextMenu(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p1, p0}, Landroid/view/View;->setOnCreateContextMenuListener(Landroid/view/View$OnCreateContextMenuListener;)V
 
@@ -1856,7 +1790,6 @@
 
 .method public final requestWindowFeature(I)Z
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
 
@@ -1871,7 +1804,6 @@
 
 .method public setCancelMessage(Landroid/os/Message;)V
     .locals 0
-    .param p1    # Landroid/os/Message;
 
     iput-object p1, p0, Landroid/app/Dialog;->mCancelMessage:Landroid/os/Message;
 
@@ -1880,7 +1812,6 @@
 
 .method public setCancelable(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/app/Dialog;->mCancelable:Z
 
@@ -1889,7 +1820,6 @@
 
 .method public setCanceledOnTouchOutside(Z)V
     .locals 1
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -1911,7 +1841,6 @@
 
 .method public setContentView(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/app/Dialog;->mWindow:Landroid/view/Window;
 
@@ -1922,7 +1851,6 @@
 
 .method public setContentView(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Landroid/app/Dialog;->mWindow:Landroid/view/Window;
 
@@ -1933,8 +1861,6 @@
 
 .method public setContentView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/ViewGroup$LayoutParams;
 
     iget-object v0, p0, Landroid/app/Dialog;->mWindow:Landroid/view/Window;
 
@@ -1945,7 +1871,6 @@
 
 .method public setDismissMessage(Landroid/os/Message;)V
     .locals 0
-    .param p1    # Landroid/os/Message;
 
     iput-object p1, p0, Landroid/app/Dialog;->mDismissMessage:Landroid/os/Message;
 
@@ -1954,8 +1879,6 @@
 
 .method public final setFeatureDrawable(ILandroid/graphics/drawable/Drawable;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {p0}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
 
@@ -1968,8 +1891,6 @@
 
 .method public final setFeatureDrawableAlpha(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
 
@@ -1982,8 +1903,6 @@
 
 .method public final setFeatureDrawableResource(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
 
@@ -1996,8 +1915,6 @@
 
 .method public final setFeatureDrawableUri(ILandroid/net/Uri;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/net/Uri;
 
     invoke-virtual {p0}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
 
@@ -2010,7 +1927,6 @@
 
 .method public setOnCancelListener(Landroid/content/DialogInterface$OnCancelListener;)V
     .locals 3
-    .param p1    # Landroid/content/DialogInterface$OnCancelListener;
 
     iget-object v0, p0, Landroid/app/Dialog;->mCancelAndDismissTaken:Ljava/lang/String;
 
@@ -2074,7 +1990,6 @@
 
 .method public setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
     .locals 3
-    .param p1    # Landroid/content/DialogInterface$OnDismissListener;
 
     iget-object v0, p0, Landroid/app/Dialog;->mCancelAndDismissTaken:Ljava/lang/String;
 
@@ -2138,7 +2053,6 @@
 
 .method public setOnKeyListener(Landroid/content/DialogInterface$OnKeyListener;)V
     .locals 0
-    .param p1    # Landroid/content/DialogInterface$OnKeyListener;
 
     iput-object p1, p0, Landroid/app/Dialog;->mOnKeyListener:Landroid/content/DialogInterface$OnKeyListener;
 
@@ -2147,7 +2061,6 @@
 
 .method public setOnShowListener(Landroid/content/DialogInterface$OnShowListener;)V
     .locals 2
-    .param p1    # Landroid/content/DialogInterface$OnShowListener;
 
     if-eqz p1, :cond_0
 
@@ -2174,7 +2087,6 @@
 
 .method public final setOwnerActivity(Landroid/app/Activity;)V
     .locals 2
-    .param p1    # Landroid/app/Activity;
 
     iput-object p1, p0, Landroid/app/Dialog;->mOwnerActivity:Landroid/app/Activity;
 
@@ -2195,7 +2107,6 @@
 
 .method public setTitle(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/app/Dialog;->mContext:Landroid/content/Context;
 
@@ -2210,7 +2121,6 @@
 
 .method public setTitle(Ljava/lang/CharSequence;)V
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
 
     iget-object v0, p0, Landroid/app/Dialog;->mWindow:Landroid/view/Window;
 
@@ -2229,7 +2139,6 @@
 
 .method public final setVolumeControlStream(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
 
@@ -2408,9 +2317,6 @@
 
 .method public takeCancelAndDismissListeners(Ljava/lang/String;Landroid/content/DialogInterface$OnCancelListener;Landroid/content/DialogInterface$OnDismissListener;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/DialogInterface$OnCancelListener;
-    .param p3    # Landroid/content/DialogInterface$OnDismissListener;
 
     iget-object v0, p0, Landroid/app/Dialog;->mCancelAndDismissTaken:Ljava/lang/String;
 
@@ -2449,7 +2355,6 @@
 
 .method public takeKeyEvents(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Landroid/app/Dialog;->mWindow:Landroid/view/Window;
 
@@ -2460,7 +2365,6 @@
 
 .method public unregisterForContextMenu(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     const/4 v0, 0x0
 

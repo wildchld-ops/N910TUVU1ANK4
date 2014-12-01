@@ -21,7 +21,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/recent/cardholder/RecentsPanelView;Landroid/os/Handler;)V
     .locals 0
-    .param p2    # Landroid/os/Handler;
 
     iput-object p1, p0, Lcom/android/systemui/recent/cardholder/RecentsPanelView$2;->this$0:Lcom/android/systemui/recent/cardholder/RecentsPanelView;
 
@@ -34,7 +33,6 @@
 # virtual methods
 .method public onChange(Z)V
     .locals 8
-    .param p1    # Z
 
     iget-object v6, p0, Lcom/android/systemui/recent/cardholder/RecentsPanelView$2;->this$0:Lcom/android/systemui/recent/cardholder/RecentsPanelView;
 

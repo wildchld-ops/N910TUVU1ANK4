@@ -33,7 +33,6 @@
 
 .method private static getBytes(Ljava/lang/String;)[B
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     :try_start_0
     const-string v1, "iso-8859-1"
@@ -65,7 +64,6 @@
 
 .method private setAsRingtone(Ljava/lang/String;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const/4 v6, 0x1
 
@@ -189,8 +187,6 @@
 
 .method private showToast(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0, p1}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -203,8 +199,6 @@
 
 .method private showToast(Ljava/lang/CharSequence;I)V
     .locals 2
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/mms/export/MmsPartExportService;->mToastHandler:Landroid/os/Handler;
 
@@ -235,7 +229,6 @@
 
 .method protected onHandleIntent(Landroid/content/Intent;)V
     .locals 24
-    .param p1    # Landroid/content/Intent;
 
     const-string v2, "msg_uri"
 

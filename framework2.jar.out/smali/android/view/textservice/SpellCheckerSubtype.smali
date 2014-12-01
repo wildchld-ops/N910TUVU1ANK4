@@ -70,9 +70,6 @@
 
 .method public constructor <init>(ILjava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -113,7 +110,6 @@
 
 .method constructor <init>(Landroid/os/Parcel;)V
     .locals 3
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -166,7 +162,6 @@
 
 .method public static constructLocaleFromString(Ljava/lang/String;)Ljava/util/Locale;
     .locals 7
-    .param p0    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -344,8 +339,6 @@
 
 .method private static hashCodeInternal(Ljava/lang/String;Ljava/lang/String;)I
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x2
 
@@ -368,9 +361,6 @@
 
 .method public static sort(Landroid/content/Context;ILandroid/view/textservice/SpellCheckerInfo;Ljava/util/List;)Ljava/util/List;
     .locals 7
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # Landroid/view/textservice/SpellCheckerInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -462,7 +452,6 @@
 # virtual methods
 .method public containsExtraValueKey(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Landroid/view/textservice/SpellCheckerSubtype;->getExtraValueHashMap()Ljava/util/HashMap;
 
@@ -485,7 +474,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 4
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x0
 
@@ -553,9 +541,6 @@
 
 .method public getDisplayName(Landroid/content/Context;Ljava/lang/String;Landroid/content/pm/ApplicationInfo;)Ljava/lang/CharSequence;
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/content/pm/ApplicationInfo;
 
     iget-object v3, p0, Landroid/view/textservice/SpellCheckerSubtype;->mSubtypeLocale:Ljava/lang/String;
 
@@ -629,7 +614,6 @@
 
 .method public getExtraValueOf(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Landroid/view/textservice/SpellCheckerSubtype;->getExtraValueHashMap()Ljava/util/HashMap;
 
@@ -670,8 +654,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget v0, p0, Landroid/view/textservice/SpellCheckerSubtype;->mSubtypeNameResId:I
 

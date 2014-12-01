@@ -157,8 +157,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v2, 0x0
 
@@ -225,9 +223,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v2, 0x0
 
@@ -292,7 +287,6 @@
 
 .method static synthetic access$000(Lcom/diotek/ime/framework/connect/personalizer/PersonalizerPreference;)I
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/connect/personalizer/PersonalizerPreference;
 
     iget v0, p0, Lcom/diotek/ime/framework/connect/personalizer/PersonalizerPreference;->ID:I
 
@@ -301,7 +295,6 @@
 
 .method static synthetic access$100(Lcom/diotek/ime/framework/connect/personalizer/PersonalizerPreference;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/connect/personalizer/PersonalizerPreference;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/connect/personalizer/PersonalizerPreference;->mCurrentLocaleString:Ljava/lang/String;
 
@@ -310,7 +303,6 @@
 
 .method static synthetic access$200(Lcom/diotek/ime/framework/connect/personalizer/PersonalizerPreference;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/connect/personalizer/PersonalizerPreference;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/connect/personalizer/PersonalizerPreference;->mCurrentTime:Ljava/lang/String;
 
@@ -319,7 +311,6 @@
 
 .method static synthetic access$300(Lcom/diotek/ime/framework/connect/personalizer/PersonalizerPreference;)V
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/connect/personalizer/PersonalizerPreference;
 
     invoke-direct {p0}, Lcom/diotek/ime/framework/connect/personalizer/PersonalizerPreference;->setUpdatedTime()V
 
@@ -452,9 +443,6 @@
 
 .method private init(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     iput-object p1, p0, Lcom/diotek/ime/framework/connect/personalizer/PersonalizerPreference;->mContext:Landroid/content/Context;
 
@@ -1284,7 +1272,6 @@
 
 .method isValidEmail(Ljava/lang/CharSequence;)Z
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
 
     if-nez p1, :cond_0
 
@@ -1463,7 +1450,6 @@
 
 .method public update(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
 

@@ -279,7 +279,6 @@
 
 .method public static valueOf(I)Landroid/net/wifi/p2p/WifiP2pService$P2pStatus;
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -367,7 +366,6 @@
 
 .method public static valueOf(Ljava/lang/String;)Landroid/net/wifi/p2p/WifiP2pService$P2pStatus;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-class v0, Landroid/net/wifi/p2p/WifiP2pService$P2pStatus;
 

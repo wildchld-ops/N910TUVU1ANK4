@@ -32,7 +32,6 @@
 # direct methods
 .method constructor <init>(Ljava/io/OutputStream;Landroid/webkitsec/ValueCallback;)V
     .locals 0
-    .param p1    # Ljava/io/OutputStream;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

@@ -25,7 +25,6 @@
 # direct methods
 .method protected constructor <init>(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const-wide/16 v1, 0x0
 
@@ -46,8 +45,6 @@
 
 .method protected constructor <init>(Ljava/lang/String;J)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
 
     const-wide/16 v1, 0x0
 
@@ -70,9 +67,6 @@
 
 .method protected constructor <init>(Ljava/lang/String;JJ)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
-    .param p4    # J
 
     const-wide/16 v1, 0x0
 

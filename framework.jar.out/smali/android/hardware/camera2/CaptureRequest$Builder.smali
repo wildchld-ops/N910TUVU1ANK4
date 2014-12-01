@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Landroid/hardware/camera2/impl/CameraMetadataNative;)V
     .locals 2
-    .param p1    # Landroid/hardware/camera2/impl/CameraMetadataNative;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -40,7 +39,6 @@
 # virtual methods
 .method public addTarget(Landroid/view/Surface;)V
     .locals 1
-    .param p1    # Landroid/view/Surface;
 
     iget-object v0, p0, Landroid/hardware/camera2/CaptureRequest$Builder;->mRequest:Landroid/hardware/camera2/CaptureRequest;
 
@@ -113,7 +111,6 @@
 
 .method public removeTarget(Landroid/view/Surface;)V
     .locals 1
-    .param p1    # Landroid/view/Surface;
 
     iget-object v0, p0, Landroid/hardware/camera2/CaptureRequest$Builder;->mRequest:Landroid/hardware/camera2/CaptureRequest;
 
@@ -153,7 +150,6 @@
 
 .method public setTag(Ljava/lang/Object;)V
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     iget-object v0, p0, Landroid/hardware/camera2/CaptureRequest$Builder;->mRequest:Landroid/hardware/camera2/CaptureRequest;
 

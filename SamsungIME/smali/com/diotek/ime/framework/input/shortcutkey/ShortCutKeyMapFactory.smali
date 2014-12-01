@@ -54,7 +54,6 @@
 
 .method private getAlternativeShortCutKeyMap(I)Landroid/util/SparseArray;
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -92,7 +91,6 @@
 
 .method private getShortCutKeyMap(I)Landroid/util/SparseArray;
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",

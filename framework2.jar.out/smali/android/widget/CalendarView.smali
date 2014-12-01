@@ -197,7 +197,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -208,8 +207,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -220,9 +217,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 10
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v6, 0x0
 
@@ -785,8 +779,6 @@
 
 .method static synthetic access$1002(Landroid/widget/CalendarView;I)I
     .locals 0
-    .param p0    # Landroid/widget/CalendarView;
-    .param p1    # I
 
     iput p1, p0, Landroid/widget/CalendarView;->mCurrentScrollState:I
 
@@ -795,7 +787,6 @@
 
 .method static synthetic access$1100(Landroid/widget/CalendarView;)I
     .locals 1
-    .param p0    # Landroid/widget/CalendarView;
 
     iget v0, p0, Landroid/widget/CalendarView;->mPreviousScrollState:I
 
@@ -804,8 +795,6 @@
 
 .method static synthetic access$1102(Landroid/widget/CalendarView;I)I
     .locals 0
-    .param p0    # Landroid/widget/CalendarView;
-    .param p1    # I
 
     iput p1, p0, Landroid/widget/CalendarView;->mPreviousScrollState:I
 
@@ -814,7 +803,6 @@
 
 .method static synthetic access$1200(Landroid/widget/CalendarView;)I
     .locals 1
-    .param p0    # Landroid/widget/CalendarView;
 
     iget v0, p0, Landroid/widget/CalendarView;->mListScrollTopOffset:I
 
@@ -823,7 +811,6 @@
 
 .method static synthetic access$1300(Landroid/widget/CalendarView;)Z
     .locals 1
-    .param p0    # Landroid/widget/CalendarView;
 
     iget-boolean v0, p0, Landroid/widget/CalendarView;->mIsScrollingUp:Z
 
@@ -832,7 +819,6 @@
 
 .method static synthetic access$1400(Landroid/widget/CalendarView;)Landroid/content/Context;
     .locals 1
-    .param p0    # Landroid/widget/CalendarView;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -841,8 +827,6 @@
 
 .method static synthetic access$1500(Landroid/widget/CalendarView;Ljava/util/Calendar;)I
     .locals 1
-    .param p0    # Landroid/widget/CalendarView;
-    .param p1    # Ljava/util/Calendar;
 
     invoke-direct {p0, p1}, Landroid/widget/CalendarView;->getWeeksSinceMinDate(Ljava/util/Calendar;)I
 
@@ -853,7 +837,6 @@
 
 .method static synthetic access$1600(Landroid/widget/CalendarView;)Ljava/util/Calendar;
     .locals 1
-    .param p0    # Landroid/widget/CalendarView;
 
     iget-object v0, p0, Landroid/widget/CalendarView;->mMaxDate:Ljava/util/Calendar;
 
@@ -862,7 +845,6 @@
 
 .method static synthetic access$1700(Landroid/widget/CalendarView;)Ljava/util/Calendar;
     .locals 1
-    .param p0    # Landroid/widget/CalendarView;
 
     iget-object v0, p0, Landroid/widget/CalendarView;->mMinDate:Ljava/util/Calendar;
 
@@ -871,7 +853,6 @@
 
 .method static synthetic access$1800(Landroid/widget/CalendarView;)I
     .locals 1
-    .param p0    # Landroid/widget/CalendarView;
 
     iget v0, p0, Landroid/widget/CalendarView;->mFirstDayOfWeek:I
 
@@ -880,7 +861,6 @@
 
 .method static synthetic access$1900(Landroid/widget/CalendarView;)Landroid/content/Context;
     .locals 1
-    .param p0    # Landroid/widget/CalendarView;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -889,7 +869,6 @@
 
 .method static synthetic access$2000(Landroid/widget/CalendarView;)Landroid/widget/ListView;
     .locals 1
-    .param p0    # Landroid/widget/CalendarView;
 
     iget-object v0, p0, Landroid/widget/CalendarView;->mListView:Landroid/widget/ListView;
 
@@ -898,7 +877,6 @@
 
 .method static synthetic access$2100(Landroid/widget/CalendarView;)Ljava/util/Calendar;
     .locals 1
-    .param p0    # Landroid/widget/CalendarView;
 
     iget-object v0, p0, Landroid/widget/CalendarView;->mTempDate:Ljava/util/Calendar;
 
@@ -907,8 +885,6 @@
 
 .method static synthetic access$2200(Landroid/widget/CalendarView;Ljava/util/Calendar;)V
     .locals 0
-    .param p0    # Landroid/widget/CalendarView;
-    .param p1    # Ljava/util/Calendar;
 
     invoke-direct {p0, p1}, Landroid/widget/CalendarView;->setMonthDisplayed(Ljava/util/Calendar;)V
 
@@ -917,7 +893,6 @@
 
 .method static synthetic access$2300(Landroid/widget/CalendarView;)Z
     .locals 1
-    .param p0    # Landroid/widget/CalendarView;
 
     iget-boolean v0, p0, Landroid/widget/CalendarView;->mShowWeekNumber:Z
 
@@ -926,7 +901,6 @@
 
 .method static synthetic access$2400(Landroid/widget/CalendarView;)I
     .locals 1
-    .param p0    # Landroid/widget/CalendarView;
 
     iget v0, p0, Landroid/widget/CalendarView;->mDaysPerWeek:I
 
@@ -935,7 +909,6 @@
 
 .method static synthetic access$2500(Landroid/widget/CalendarView;)I
     .locals 1
-    .param p0    # Landroid/widget/CalendarView;
 
     iget v0, p0, Landroid/widget/CalendarView;->mDateTextSize:I
 
@@ -944,7 +917,6 @@
 
 .method static synthetic access$2600(Landroid/widget/CalendarView;)Z
     .locals 1
-    .param p0    # Landroid/widget/CalendarView;
 
     iget-boolean v0, p0, Landroid/widget/CalendarView;->mIsDeviceDefault:Z
 
@@ -953,7 +925,6 @@
 
 .method static synthetic access$2700(Landroid/widget/CalendarView;)Z
     .locals 1
-    .param p0    # Landroid/widget/CalendarView;
 
     invoke-direct {p0}, Landroid/widget/CalendarView;->applyNewConcept()Z
 
@@ -964,7 +935,6 @@
 
 .method static synthetic access$2800(Landroid/widget/CalendarView;)I
     .locals 1
-    .param p0    # Landroid/widget/CalendarView;
 
     iget v0, p0, Landroid/widget/CalendarView;->mFocusedMonthDateColor:I
 
@@ -973,7 +943,6 @@
 
 .method static synthetic access$2900(Landroid/widget/CalendarView;)I
     .locals 1
-    .param p0    # Landroid/widget/CalendarView;
 
     iget v0, p0, Landroid/widget/CalendarView;->mSelectedWeekBackgroundColor:I
 
@@ -982,7 +951,6 @@
 
 .method static synthetic access$3000(Landroid/widget/CalendarView;)I
     .locals 1
-    .param p0    # Landroid/widget/CalendarView;
 
     iget v0, p0, Landroid/widget/CalendarView;->mWeekSeperatorLineWidth:I
 
@@ -991,7 +959,6 @@
 
 .method static synthetic access$3100(Landroid/widget/CalendarView;)I
     .locals 1
-    .param p0    # Landroid/widget/CalendarView;
 
     iget v0, p0, Landroid/widget/CalendarView;->mUnfocusedMonthDateColor:I
 
@@ -1008,7 +975,6 @@
 
 .method static synthetic access$3300(Landroid/widget/CalendarView;)I
     .locals 1
-    .param p0    # Landroid/widget/CalendarView;
 
     iget v0, p0, Landroid/widget/CalendarView;->mFocusedSingleDateColor:I
 
@@ -1017,7 +983,6 @@
 
 .method static synthetic access$3400(Landroid/widget/CalendarView;)I
     .locals 1
-    .param p0    # Landroid/widget/CalendarView;
 
     iget v0, p0, Landroid/widget/CalendarView;->mWeekNumberColor:I
 
@@ -1026,7 +991,6 @@
 
 .method static synthetic access$3500(Landroid/widget/CalendarView;)I
     .locals 1
-    .param p0    # Landroid/widget/CalendarView;
 
     iget v0, p0, Landroid/widget/CalendarView;->mWeekSeparatorLineColor:I
 
@@ -1035,7 +999,6 @@
 
 .method static synthetic access$3600(Landroid/widget/CalendarView;)I
     .locals 1
-    .param p0    # Landroid/widget/CalendarView;
 
     iget v0, p0, Landroid/widget/CalendarView;->mSelectedDateVerticalBarWidth:I
 
@@ -1044,7 +1007,6 @@
 
 .method static synthetic access$3700(Landroid/widget/CalendarView;)Landroid/graphics/drawable/Drawable;
     .locals 1
-    .param p0    # Landroid/widget/CalendarView;
 
     iget-object v0, p0, Landroid/widget/CalendarView;->mSelectedDateVerticalBar:Landroid/graphics/drawable/Drawable;
 
@@ -1053,7 +1015,6 @@
 
 .method static synthetic access$3800(Landroid/widget/CalendarView;)I
     .locals 1
-    .param p0    # Landroid/widget/CalendarView;
 
     iget v0, p0, Landroid/widget/CalendarView;->mShownWeekCount:I
 
@@ -1062,7 +1023,6 @@
 
 .method static synthetic access$600(Landroid/widget/CalendarView;)Landroid/widget/CalendarView$OnDateChangeListener;
     .locals 1
-    .param p0    # Landroid/widget/CalendarView;
 
     iget-object v0, p0, Landroid/widget/CalendarView;->mOnDateChangeListener:Landroid/widget/CalendarView$OnDateChangeListener;
 
@@ -1071,7 +1031,6 @@
 
 .method static synthetic access$700(Landroid/widget/CalendarView;)Landroid/widget/CalendarView$WeeksAdapter;
     .locals 1
-    .param p0    # Landroid/widget/CalendarView;
 
     iget-object v0, p0, Landroid/widget/CalendarView;->mAdapter:Landroid/widget/CalendarView$WeeksAdapter;
 
@@ -1080,9 +1039,6 @@
 
 .method static synthetic access$800(Landroid/widget/CalendarView;Landroid/widget/AbsListView;I)V
     .locals 0
-    .param p0    # Landroid/widget/CalendarView;
-    .param p1    # Landroid/widget/AbsListView;
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Landroid/widget/CalendarView;->onScrollStateChanged(Landroid/widget/AbsListView;I)V
 
@@ -1091,11 +1047,6 @@
 
 .method static synthetic access$900(Landroid/widget/CalendarView;Landroid/widget/AbsListView;III)V
     .locals 0
-    .param p0    # Landroid/widget/CalendarView;
-    .param p1    # Landroid/widget/AbsListView;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-direct {p0, p1, p2, p3, p4}, Landroid/widget/CalendarView;->onScroll(Landroid/widget/AbsListView;III)V
 
@@ -1124,8 +1075,6 @@
 
 .method private getCalendarForLocale(Ljava/util/Calendar;Ljava/util/Locale;)Ljava/util/Calendar;
     .locals 3
-    .param p1    # Ljava/util/Calendar;
-    .param p2    # Ljava/util/Locale;
 
     if-nez p1, :cond_0
 
@@ -1152,7 +1101,6 @@
 
 .method private getWeeksSinceMinDate(Ljava/util/Calendar;)I
     .locals 11
-    .param p1    # Ljava/util/Calendar;
 
     iget-object v6, p0, Landroid/widget/CalendarView;->mMinDate:Ljava/util/Calendar;
 
@@ -1286,10 +1234,6 @@
 
 .method private goTo(Ljava/util/Calendar;ZZZ)V
     .locals 8
-    .param p1    # Ljava/util/Calendar;
-    .param p2    # Z
-    .param p3    # Z
-    .param p4    # Z
 
     const/4 v7, 0x0
 
@@ -1530,8 +1474,6 @@
 
 .method private isSameDate(Ljava/util/Calendar;Ljava/util/Calendar;)Z
     .locals 3
-    .param p1    # Ljava/util/Calendar;
-    .param p2    # Ljava/util/Calendar;
 
     const/4 v2, 0x6
 
@@ -1568,10 +1510,6 @@
 
 .method private onScroll(Landroid/widget/AbsListView;III)V
     .locals 10
-    .param p1    # Landroid/widget/AbsListView;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/4 v8, 0x0
 
@@ -1793,8 +1731,6 @@
 
 .method private onScrollStateChanged(Landroid/widget/AbsListView;I)V
     .locals 1
-    .param p1    # Landroid/widget/AbsListView;
-    .param p2    # I
 
     iget-object v0, p0, Landroid/widget/CalendarView;->mScrollStateChangedRunnable:Landroid/widget/CalendarView$ScrollStateRunnable;
 
@@ -1805,8 +1741,6 @@
 
 .method private parseDate(Ljava/lang/String;Ljava/util/Calendar;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/util/Calendar;
 
     :try_start_0
     iget-object v1, p0, Landroid/widget/CalendarView;->mDateFormat:Ljava/text/DateFormat;
@@ -1868,7 +1802,6 @@
 
 .method private setCurrentLocale(Ljava/util/Locale;)V
     .locals 1
-    .param p1    # Ljava/util/Locale;
 
     iget-object v0, p0, Landroid/widget/CalendarView;->mCurrentLocale:Ljava/util/Locale;
 
@@ -1921,7 +1854,6 @@
 
 .method private setMonthDisplayed(Ljava/util/Calendar;)V
     .locals 14
-    .param p1    # Ljava/util/Calendar;
 
     const/4 v13, 0x0
 
@@ -2460,7 +2392,6 @@
 
 .method protected onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 1
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/view/View;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -2473,7 +2404,6 @@
 
 .method public onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
     .locals 1
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
 
     invoke-super {p0, p1}, Landroid/widget/FrameLayout;->onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
 
@@ -2490,7 +2420,6 @@
 
 .method public onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
     .locals 1
-    .param p1    # Landroid/view/accessibility/AccessibilityNodeInfo;
 
     invoke-super {p0, p1}, Landroid/widget/FrameLayout;->onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
 
@@ -2507,7 +2436,6 @@
 
 .method public setDate(J)V
     .locals 1
-    .param p1    # J
 
     const/4 v0, 0x0
 
@@ -2518,9 +2446,6 @@
 
 .method public setDate(JZZ)V
     .locals 2
-    .param p1    # J
-    .param p3    # Z
-    .param p4    # Z
 
     iget-object v0, p0, Landroid/widget/CalendarView;->mTempDate:Ljava/util/Calendar;
 
@@ -2556,7 +2481,6 @@
 
 .method public setDateTextAppearance(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/widget/CalendarView;->mDateTextAppearanceResId:I
 
@@ -2574,7 +2498,6 @@
 
 .method public setEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Landroid/widget/CalendarView;->mListView:Landroid/widget/ListView;
 
@@ -2585,7 +2508,6 @@
 
 .method public setFirstDayOfWeek(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/widget/CalendarView;->mFirstDayOfWeek:I
 
@@ -2609,7 +2531,6 @@
 
 .method public setFocusedMonthDateColor(I)V
     .locals 4
-    .param p1    # I
 
     iget v3, p0, Landroid/widget/CalendarView;->mFocusedMonthDateColor:I
 
@@ -2656,7 +2577,6 @@
 
 .method public setMaxDate(J)V
     .locals 4
-    .param p1    # J
 
     const/4 v3, 0x1
 
@@ -2722,7 +2642,6 @@
 
 .method public setMinDate(J)V
     .locals 4
-    .param p1    # J
 
     const/4 v3, 0x1
 
@@ -2803,7 +2722,6 @@
 
 .method public setOnDateChangeListener(Landroid/widget/CalendarView$OnDateChangeListener;)V
     .locals 0
-    .param p1    # Landroid/widget/CalendarView$OnDateChangeListener;
 
     iput-object p1, p0, Landroid/widget/CalendarView;->mOnDateChangeListener:Landroid/widget/CalendarView$OnDateChangeListener;
 
@@ -2812,7 +2730,6 @@
 
 .method public setSelectedDateVerticalBar(I)V
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
 
@@ -2829,7 +2746,6 @@
 
 .method public setSelectedDateVerticalBar(Landroid/graphics/drawable/Drawable;)V
     .locals 4
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     iget-object v3, p0, Landroid/widget/CalendarView;->mSelectedDateVerticalBar:Landroid/graphics/drawable/Drawable;
 
@@ -2876,7 +2792,6 @@
 
 .method public setSelectedWeekBackgroundColor(I)V
     .locals 4
-    .param p1    # I
 
     iget v3, p0, Landroid/widget/CalendarView;->mSelectedWeekBackgroundColor:I
 
@@ -2923,7 +2838,6 @@
 
 .method public setShowWeekNumber(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-boolean v0, p0, Landroid/widget/CalendarView;->mShowWeekNumber:Z
 
@@ -2946,7 +2860,6 @@
 
 .method public setShownWeekCount(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/widget/CalendarView;->mShownWeekCount:I
 
@@ -2962,7 +2875,6 @@
 
 .method public setUnfocusedMonthDateColor(I)V
     .locals 4
-    .param p1    # I
 
     iget v3, p0, Landroid/widget/CalendarView;->mUnfocusedMonthDateColor:I
 
@@ -3009,7 +2921,6 @@
 
 .method public setWeekDayTextAppearance(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/widget/CalendarView;->mWeekDayTextAppearanceResId:I
 
@@ -3025,7 +2936,6 @@
 
 .method public setWeekNumberColor(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/widget/CalendarView;->mWeekNumberColor:I
 
@@ -3045,7 +2955,6 @@
 
 .method public setWeekSeparatorLineColor(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/widget/CalendarView;->mWeekSeparatorLineColor:I
 

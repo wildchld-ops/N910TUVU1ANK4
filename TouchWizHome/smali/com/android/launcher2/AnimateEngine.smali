@@ -44,10 +44,6 @@
 # virtual methods
 .method public getRect([Landroid/graphics/Rect;[Landroid/graphics/Rect;[Landroid/graphics/Rect;F)[Landroid/graphics/Rect;
     .locals 8
-    .param p1    # [Landroid/graphics/Rect;
-    .param p2    # [Landroid/graphics/Rect;
-    .param p3    # [Landroid/graphics/Rect;
-    .param p4    # F
 
     const/4 v3, 0x0
 
@@ -227,7 +223,6 @@
 
 .method public setInterpolator(Landroid/view/animation/Interpolator;)V
     .locals 0
-    .param p1    # Landroid/view/animation/Interpolator;
 
     if-nez p1, :cond_0
 

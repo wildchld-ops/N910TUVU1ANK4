@@ -28,7 +28,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     const/4 v3, 0x0
 
@@ -65,7 +64,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/ui/EmoticonCustomView;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/EmoticonCustomView;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -74,7 +72,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/ui/EmoticonCustomView;)I
     .locals 1
-    .param p0    # Lcom/android/mms/ui/EmoticonCustomView;
 
     iget v0, p0, Lcom/android/mms/ui/EmoticonCustomView;->mItemCountInRow:I
 
@@ -83,8 +80,6 @@
 
 .method static synthetic access$102(Lcom/android/mms/ui/EmoticonCustomView;I)I
     .locals 0
-    .param p0    # Lcom/android/mms/ui/EmoticonCustomView;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/mms/ui/EmoticonCustomView;->mItemCountInRow:I
 
@@ -93,7 +88,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/ui/EmoticonCustomView;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/EmoticonCustomView;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -102,7 +96,6 @@
 
 .method static synthetic access$300(Lcom/android/mms/ui/EmoticonCustomView;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/EmoticonCustomView;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -111,7 +104,6 @@
 
 .method static synthetic access$400(Lcom/android/mms/ui/EmoticonCustomView;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/EmoticonCustomView;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -120,7 +112,6 @@
 
 .method static synthetic access$500(Lcom/android/mms/ui/EmoticonCustomView;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/EmoticonCustomView;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -129,7 +120,6 @@
 
 .method static synthetic access$600(Lcom/android/mms/ui/EmoticonCustomView;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/EmoticonCustomView;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -138,7 +128,6 @@
 
 .method static synthetic access$700(Lcom/android/mms/ui/EmoticonCustomView;)Landroid/widget/AdapterView$OnItemClickListener;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/EmoticonCustomView;
 
     iget-object v0, p0, Lcom/android/mms/ui/EmoticonCustomView;->mEmoticonAdapterListener:Landroid/widget/AdapterView$OnItemClickListener;
 
@@ -147,7 +136,6 @@
 
 .method static synthetic access$900(Lcom/android/mms/ui/EmoticonCustomView;)I
     .locals 1
-    .param p0    # Lcom/android/mms/ui/EmoticonCustomView;
 
     iget v0, p0, Lcom/android/mms/ui/EmoticonCustomView;->mCategory:I
 
@@ -197,7 +185,6 @@
 
 .method public setCategory(I)V
     .locals 5
-    .param p1    # I
 
     const-string v2, "Mms/EmoticonCustomView"
 
@@ -294,7 +281,6 @@
 
 .method public setEmoticonsPager(Landroid/support/v4/view/ViewPager;)V
     .locals 0
-    .param p1    # Landroid/support/v4/view/ViewPager;
 
     iput-object p1, p0, Lcom/android/mms/ui/EmoticonCustomView;->mEmoticonsPager:Landroid/support/v4/view/ViewPager;
 
@@ -303,7 +289,6 @@
 
 .method public setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
     .locals 0
-    .param p1    # Landroid/widget/AdapterView$OnItemClickListener;
 
     iput-object p1, p0, Lcom/android/mms/ui/EmoticonCustomView;->mEmoticonAdapterListener:Landroid/widget/AdapterView$OnItemClickListener;
 

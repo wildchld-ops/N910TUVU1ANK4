@@ -62,8 +62,6 @@
 
 .method public constructor <init>(Lcom/android/server/am/ActivityManagerService;Ljava/io/File;)V
     .locals 2
-    .param p1    # Lcom/android/server/am/ActivityManagerService;
-    .param p2    # Ljava/io/File;
 
     invoke-direct {p0}, Lcom/android/internal/app/IProcessStats$Stub;-><init>()V
 
@@ -112,15 +110,6 @@
 
 .method private dumpAggregatedStats(Ljava/io/PrintWriter;JJLjava/lang/String;ZZZZZ)V
     .locals 11
-    .param p1    # Ljava/io/PrintWriter;
-    .param p2    # J
-    .param p4    # J
-    .param p6    # Ljava/lang/String;
-    .param p7    # Z
-    .param p8    # Z
-    .param p9    # Z
-    .param p10    # Z
-    .param p11    # Z
 
     const-wide/16 v2, 0x3c
 
@@ -237,7 +226,6 @@
 
 .method private static dumpHelp(Ljava/io/PrintWriter;)V
     .locals 1
-    .param p0    # Ljava/io/PrintWriter;
 
     const-string v0, "Process stats (procstats) dump options:"
 
@@ -340,9 +328,6 @@
 
 .method private dumpInner(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 53
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 
@@ -1977,9 +1962,6 @@
 
 .method private getCommittedFiles(IZZ)Ljava/util/ArrayList;
     .locals 7
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(IZZ)",
@@ -2076,11 +2058,6 @@
 
 .method static parseStateList([Ljava/lang/String;ILjava/lang/String;[Z[Ljava/lang/String;)[I
     .locals 11
-    .param p0    # [Ljava/lang/String;
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # [Z
-    .param p4    # [Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -2328,7 +2305,6 @@
 
 .method private writeStateLocked(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-boolean v1, p0, Lcom/android/server/am/ProcessStatsService;->mShuttingDown:Z
 
@@ -2353,9 +2329,6 @@
 # virtual methods
 .method protected dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     iget-object v2, p0, Lcom/android/server/am/ProcessStatsService;->mAm:Lcom/android/server/am/ActivityManagerService;
 
@@ -2444,16 +2417,6 @@
 
 .method dumpFilteredProcessesCsvLocked(Ljava/io/PrintWriter;Ljava/lang/String;Z[IZ[IZ[IJLjava/lang/String;)Z
     .locals 10
-    .param p1    # Ljava/io/PrintWriter;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
-    .param p4    # [I
-    .param p5    # Z
-    .param p6    # [I
-    .param p7    # Z
-    .param p8    # [I
-    .param p9    # J
-    .param p11    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/server/am/ProcessStatsService;->mProcessStats:Lcom/android/internal/app/ProcessStats;
 
@@ -2738,9 +2701,6 @@
 
 .method public getProcessStateLocked(Ljava/lang/String;ILjava/lang/String;)Lcom/android/internal/app/ProcessStats$ProcessState;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/server/am/ProcessStatsService;->mProcessStats:Lcom/android/internal/app/ProcessStats;
 
@@ -2753,10 +2713,6 @@
 
 .method public getServiceStateLocked(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)Lcom/android/internal/app/ProcessStats$ServiceState;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/server/am/ProcessStatsService;->mProcessStats:Lcom/android/internal/app/ProcessStats;
 
@@ -2769,7 +2725,6 @@
 
 .method public getStatsOverTime(J)Landroid/os/ParcelFileDescriptor;
     .locals 23
-    .param p1    # J
 
     move-object/from16 v0, p0
 
@@ -3225,10 +3180,6 @@
 
 .method public onTransact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/os/Parcel;
-    .param p3    # Landroid/os/Parcel;
-    .param p4    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -3381,8 +3332,6 @@
 
 .method readLocked(Lcom/android/internal/app/ProcessStats;Landroid/util/AtomicFile;)Z
     .locals 6
-    .param p1    # Lcom/android/internal/app/ProcessStats;
-    .param p2    # Landroid/util/AtomicFile;
 
     const/4 v2, 0x0
 
@@ -3467,9 +3416,6 @@
 
 .method public setMemFactorLocked(IZJ)Z
     .locals 17
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # J
 
     move-object/from16 v0, p0
 
@@ -3701,7 +3647,6 @@
 
 .method public shouldWriteNowLocked(J)Z
     .locals 7
-    .param p1    # J
 
     const/4 v0, 0x1
 
@@ -3844,8 +3789,6 @@
 
 .method public writeStateLocked(ZZ)V
     .locals 7
-    .param p1    # Z
-    .param p2    # Z
 
     iget-object v3, p0, Lcom/android/server/am/ProcessStatsService;->mPendingWriteLock:Ljava/lang/Object;
 

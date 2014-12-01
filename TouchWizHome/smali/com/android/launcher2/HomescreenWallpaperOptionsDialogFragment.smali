@@ -106,8 +106,6 @@
 
 .method static synthetic access$000(Lcom/android/launcher2/HomescreenWallpaperOptionsDialogFragment;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/launcher2/HomescreenWallpaperOptionsDialogFragment;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/launcher2/HomescreenWallpaperOptionsDialogFragment;->launchTargetApp(Ljava/lang/String;)V
 
@@ -116,8 +114,6 @@
 
 .method static createAndShow(Landroid/app/FragmentManager;I)V
     .locals 2
-    .param p0    # Landroid/app/FragmentManager;
-    .param p1    # I
 
     if-eqz p0, :cond_1
 
@@ -149,7 +145,6 @@
 
 .method static dismiss(Landroid/app/FragmentManager;)V
     .locals 2
-    .param p0    # Landroid/app/FragmentManager;
 
     const-string v1, "HomescreenWallpaperOptionsDialogFragment"
 
@@ -204,7 +199,6 @@
 
 .method private getAppIcon(Ljava/lang/String;)Landroid/graphics/drawable/Drawable;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -246,7 +240,6 @@
 
 .method public static getDisplayHeight(Landroid/content/Context;)I
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     new-instance v0, Landroid/util/DisplayMetrics;
 
@@ -273,7 +266,6 @@
 
 .method public static getDisplayWidth(Landroid/content/Context;)I
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     new-instance v0, Landroid/util/DisplayMetrics;
 
@@ -300,7 +292,6 @@
 
 .method static isActive(Landroid/app/FragmentManager;)Z
     .locals 1
-    .param p0    # Landroid/app/FragmentManager;
 
     const-string v0, "HomescreenWallpaperOptionsDialogFragment"
 
@@ -323,7 +314,6 @@
 
 .method private launchTargetApp(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -352,7 +342,6 @@
 
 .method private makeIntent(Landroid/net/Uri;)Landroid/content/Intent;
     .locals 13
-    .param p1    # Landroid/net/Uri;
 
     const/16 v8, 0x400
 
@@ -617,9 +606,6 @@
 # virtual methods
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 8
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const v7, 0x7f0f0011
 
@@ -734,7 +720,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/DialogFragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -743,7 +728,6 @@
 
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
     .locals 10
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v9, 0x4
 
@@ -1059,7 +1043,6 @@
 
 .method public onDismiss(Landroid/content/DialogInterface;)V
     .locals 2
-    .param p1    # Landroid/content/DialogInterface;
 
     const/4 v1, 0x0
 

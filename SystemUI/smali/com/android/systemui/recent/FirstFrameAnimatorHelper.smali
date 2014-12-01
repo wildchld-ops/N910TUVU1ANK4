@@ -33,8 +33,6 @@
 # direct methods
 .method public constructor <init>(Landroid/animation/ValueAnimator;Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/animation/ValueAnimator;
-    .param p2    # Landroid/view/View;
 
     invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
 
@@ -51,8 +49,6 @@
 
 .method public constructor <init>(Landroid/view/ViewPropertyAnimator;Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/ViewPropertyAnimator;
-    .param p2    # Landroid/view/View;
 
     invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
 
@@ -83,7 +79,6 @@
 
 .method public static initializeDrawListener(Landroid/view/View;)V
     .locals 2
-    .param p0    # Landroid/view/View;
 
     sget-object v0, Lcom/android/systemui/recent/FirstFrameAnimatorHelper;->sGlobalDrawListener:Landroid/view/ViewTreeObserver$OnDrawListener;
 
@@ -119,7 +114,6 @@
 # virtual methods
 .method public onAnimationStart(Landroid/animation/Animator;)V
     .locals 1
-    .param p1    # Landroid/animation/Animator;
 
     move-object v0, p1
 
@@ -134,7 +128,6 @@
 
 .method public onAnimationUpdate(Landroid/animation/ValueAnimator;)V
     .locals 8
-    .param p1    # Landroid/animation/ValueAnimator;
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
@@ -279,7 +272,6 @@
 
 .method public print(Landroid/animation/ValueAnimator;)V
     .locals 7
-    .param p1    # Landroid/animation/ValueAnimator;
 
     invoke-virtual {p1}, Landroid/animation/ValueAnimator;->getCurrentPlayTime()J
 

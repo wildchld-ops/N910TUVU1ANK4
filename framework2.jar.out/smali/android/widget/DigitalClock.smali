@@ -31,7 +31,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
 
@@ -46,8 +45,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/widget/TextView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -62,7 +59,6 @@
 
 .method static synthetic access$000(Landroid/widget/DigitalClock;)Z
     .locals 1
-    .param p0    # Landroid/widget/DigitalClock;
 
     iget-boolean v0, p0, Landroid/widget/DigitalClock;->mTickerStopped:Z
 
@@ -71,7 +67,6 @@
 
 .method static synthetic access$100(Landroid/widget/DigitalClock;)Ljava/lang/Runnable;
     .locals 1
-    .param p0    # Landroid/widget/DigitalClock;
 
     iget-object v0, p0, Landroid/widget/DigitalClock;->mTicker:Ljava/lang/Runnable;
 
@@ -80,7 +75,6 @@
 
 .method static synthetic access$200(Landroid/widget/DigitalClock;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Landroid/widget/DigitalClock;
 
     iget-object v0, p0, Landroid/widget/DigitalClock;->mHandler:Landroid/os/Handler;
 
@@ -89,7 +83,6 @@
 
 .method static synthetic access$300(Landroid/widget/DigitalClock;)V
     .locals 0
-    .param p0    # Landroid/widget/DigitalClock;
 
     invoke-direct {p0}, Landroid/widget/DigitalClock;->setFormat()V
 
@@ -197,7 +190,6 @@
 
 .method public onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
     .locals 1
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
 
     invoke-super {p0, p1}, Landroid/widget/TextView;->onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
 
@@ -214,7 +206,6 @@
 
 .method public onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
     .locals 1
-    .param p1    # Landroid/view/accessibility/AccessibilityNodeInfo;
 
     invoke-super {p0, p1}, Landroid/widget/TextView;->onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
 

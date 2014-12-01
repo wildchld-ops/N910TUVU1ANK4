@@ -163,9 +163,6 @@
 
 .method private static checkPrefixIsIgnorable(Ljava/lang/String;II)Z
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
-    .param p2    # I
 
     const/4 v1, 0x0
 
@@ -218,8 +215,6 @@
 
 .method public static compareStrictly(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -232,9 +227,6 @@
 
 .method public static compareStrictly(Ljava/lang/String;Ljava/lang/String;Z)Z
     .locals 20
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     if-eqz p0, :cond_0
 
@@ -636,7 +628,6 @@
 
 .method private static isCountryCallingCode(I)Z
     .locals 1
-    .param p0    # I
 
     if-lez p0, :cond_0
 
@@ -663,7 +654,6 @@
 
 .method private static isSeparator(C)Z
     .locals 1
-    .param p0    # C
 
     invoke-static {p0}, Lcom/android/mms/spam/SpamFilter$MyPhoneNumberUtils;->isDialable(C)Z
 
@@ -702,8 +692,6 @@
 
 .method private static tryGetCountryCallingCodeAndNewIndex(Ljava/lang/String;Z)Lcom/android/mms/spam/SpamFilter$MyPhoneNumberUtils$CountryCallingCodeAndNewIndex;
     .locals 11
-    .param p0    # Ljava/lang/String;
-    .param p1    # Z
 
     const/16 v10, 0x36
 
@@ -940,7 +928,6 @@
 
 .method private static tryGetISODigit(C)I
     .locals 1
-    .param p0    # C
 
     const/16 v0, 0x30
 
@@ -963,8 +950,6 @@
 
 .method private static tryGetTrunkPrefixOmittedIndex(Ljava/lang/String;I)I
     .locals 5
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
 
     const/4 v3, -0x1
 

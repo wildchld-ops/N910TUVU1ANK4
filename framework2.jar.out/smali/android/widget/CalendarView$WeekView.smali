@@ -57,7 +57,6 @@
 # direct methods
 .method public constructor <init>(Landroid/widget/CalendarView;Landroid/content/Context;)V
     .locals 2
-    .param p2    # Landroid/content/Context;
 
     const/4 v1, -0x1
 
@@ -106,7 +105,6 @@
 
 .method static synthetic access$100(Landroid/widget/CalendarView$WeekView;)Z
     .locals 1
-    .param p0    # Landroid/widget/CalendarView$WeekView;
 
     iget-boolean v0, p0, Landroid/widget/CalendarView$WeekView;->mHasSelectedDay:Z
 
@@ -115,7 +113,6 @@
 
 .method static synthetic access$200(Landroid/widget/CalendarView$WeekView;)Z
     .locals 1
-    .param p0    # Landroid/widget/CalendarView$WeekView;
 
     iget-boolean v0, p0, Landroid/widget/CalendarView$WeekView;->mHasFocusedDay:Z
 
@@ -124,7 +121,6 @@
 
 .method static synthetic access$300(Landroid/widget/CalendarView$WeekView;)Z
     .locals 1
-    .param p0    # Landroid/widget/CalendarView$WeekView;
 
     iget-boolean v0, p0, Landroid/widget/CalendarView$WeekView;->mHasUnfocusedDay:Z
 
@@ -133,7 +129,6 @@
 
 .method private drawBackground(Landroid/graphics/Canvas;)V
     .locals 5
-    .param p1    # Landroid/graphics/Canvas;
 
     const/4 v1, 0x0
 
@@ -297,7 +292,6 @@
 
 .method private drawBackgroundForSelected(Landroid/graphics/Canvas;)V
     .locals 2
-    .param p1    # Landroid/graphics/Canvas;
 
     iget-boolean v0, p0, Landroid/widget/CalendarView$WeekView;->mHasSelectedDay:Z
 
@@ -362,7 +356,6 @@
 
 .method private drawSelectedDateVerticalBars(Landroid/graphics/Canvas;)V
     .locals 5
-    .param p1    # Landroid/graphics/Canvas;
 
     iget-boolean v0, p0, Landroid/widget/CalendarView$WeekView;->mHasSelectedDay:Z
 
@@ -483,7 +476,6 @@
 
 .method private drawWeekNumbersAndDates(Landroid/graphics/Canvas;)V
     .locals 13
-    .param p1    # Landroid/graphics/Canvas;
 
     const/4 v12, 0x1
 
@@ -998,7 +990,6 @@
 
 .method private drawWeekSeparators(Landroid/graphics/Canvas;)V
     .locals 7
-    .param p1    # Landroid/graphics/Canvas;
 
     const/4 v2, 0x0
 
@@ -1386,8 +1377,6 @@
 # virtual methods
 .method public getDayFromLocation(FLjava/util/Calendar;)Z
     .locals 8
-    .param p1    # F
-    .param p2    # Ljava/util/Calendar;
 
     const/4 v4, 0x0
 
@@ -1549,9 +1538,6 @@
 
 .method public init(III)V
     .locals 11
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     iput p2, p0, Landroid/widget/CalendarView$WeekView;->mSelectedDay:I
 
@@ -2199,7 +2185,6 @@
 
 .method protected onDraw(Landroid/graphics/Canvas;)V
     .locals 1
-    .param p1    # Landroid/graphics/Canvas;
 
     iget-object v0, p0, Landroid/widget/CalendarView$WeekView;->this$0:Landroid/widget/CalendarView;
 
@@ -2242,8 +2227,6 @@
 
 .method protected onMeasure(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Landroid/widget/CalendarView$WeekView;->this$0:Landroid/widget/CalendarView;
 
@@ -2306,10 +2289,6 @@
 
 .method protected onSizeChanged(IIII)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iput p1, p0, Landroid/widget/CalendarView$WeekView;->mWidth:I
 

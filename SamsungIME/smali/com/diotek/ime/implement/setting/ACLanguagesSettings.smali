@@ -185,7 +185,6 @@
 
 .method static synthetic access$000(Lcom/diotek/ime/implement/setting/ACLanguagesSettings;)Z
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/setting/ACLanguagesSettings;
 
     iget-boolean v0, p0, Lcom/diotek/ime/implement/setting/ACLanguagesSettings;->mIsCheckboxDontShowDownloadList:Z
 
@@ -194,8 +193,6 @@
 
 .method static synthetic access$002(Lcom/diotek/ime/implement/setting/ACLanguagesSettings;Z)Z
     .locals 0
-    .param p0    # Lcom/diotek/ime/implement/setting/ACLanguagesSettings;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/implement/setting/ACLanguagesSettings;->mIsCheckboxDontShowDownloadList:Z
 
@@ -596,7 +593,6 @@
 # virtual methods
 .method public addCurrentDownloadingListener(I)Ljava/util/List;
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -673,7 +669,6 @@
 
 .method addNewDownloadableLanguageIntoDownloadableLanguageList(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/diotek/ime/implement/setting/ACLanguagesSettings;->mDownloadableLanguageList:Ljava/util/List;
 
@@ -704,7 +699,6 @@
 
 .method addNewDownloadedLanguageIntoDownloadedLanguageList(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/diotek/ime/implement/setting/ACLanguagesSettings;->mDownloadedLanguageList:Ljava/util/List;
 
@@ -735,7 +729,6 @@
 
 .method addNewDownloadingLanguageIntoDownloadedLanguageList(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/diotek/ime/implement/setting/ACLanguagesSettings;->mDownloadingLanguageList:Ljava/util/List;
 
@@ -766,7 +759,6 @@
 
 .method addNewUpdateableLanguageIntoUpdateableLanguageList(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/diotek/ime/implement/setting/ACLanguagesSettings;->mUpdateableLanguageList:Ljava/util/List;
 
@@ -797,7 +789,6 @@
 
 .method public cancelDownloadForFrench(I)V
     .locals 5
-    .param p1    # I
 
     iget-object v3, p0, Lcom/diotek/ime/implement/setting/ACLanguagesSettings;->mPreferenceListMap:Ljava/util/HashMap;
 
@@ -883,9 +874,6 @@
 
 .method public downloadFrenchLanguage(ILjava/lang/String;Z)V
     .locals 9
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     const/4 v8, -0x1
 
@@ -1087,7 +1075,6 @@
 
 .method public getKeyByLanguageId(I)Ljava/lang/String;
     .locals 10
-    .param p1    # I
 
     const-string v2, ""
 
@@ -1149,7 +1136,6 @@
 
 .method public getXt9LanguageId(I)I
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/diotek/ime/implement/setting/ACLanguagesSettings;->mEngineManager:Lcom/diotek/ime/framework/engine/InputEngineManager;
 
@@ -1162,7 +1148,6 @@
 
 .method public isAlreadyDownloading(I)Z
     .locals 5
-    .param p1    # I
 
     iget-object v3, p0, Lcom/diotek/ime/implement/setting/ACLanguagesSettings;->mPreferenceListMap:Ljava/util/HashMap;
 
@@ -1224,9 +1209,6 @@
 
 .method protected onActivityResult(IILandroid/content/Intent;)V
     .locals 16
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     invoke-super/range {p0 .. p3}, Landroid/preference/PreferenceActivity;->onActivityResult(IILandroid/content/Intent;)V
 
@@ -1721,7 +1703,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 8
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v7, 0x1
 
@@ -2019,7 +2000,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 7
-    .param p1    # Landroid/view/Menu;
 
     const v6, 0x7f0e009f
 
@@ -2100,7 +2080,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 4
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v1, 0x1
 
@@ -2172,7 +2151,6 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)Z
     .locals 7
-    .param p1    # Landroid/view/Menu;
 
     const v6, 0x7f0e009f
 
@@ -2861,7 +2839,6 @@
 
 .method removeDownloadableLanguageFromDownloadableLanguageList(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/diotek/ime/implement/setting/ACLanguagesSettings;->mDownloadableLanguageList:Ljava/util/List;
 
@@ -2889,7 +2866,6 @@
 
 .method removeDownloadedLanguageFromDownloadedLanguageList(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/diotek/ime/implement/setting/ACLanguagesSettings;->mDownloadedLanguageList:Ljava/util/List;
 
@@ -2917,7 +2893,6 @@
 
 .method removeDownloadingLanguageFromDownloadedLanguageList(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/diotek/ime/implement/setting/ACLanguagesSettings;->mDownloadingLanguageList:Ljava/util/List;
 
@@ -2945,7 +2920,6 @@
 
 .method removeUpdateableLanguageFromUpdateableLanguageList(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/diotek/ime/implement/setting/ACLanguagesSettings;->mUpdateableLanguageList:Ljava/util/List;
 
@@ -2973,7 +2947,6 @@
 
 .method public setCheckedItemNumber(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/diotek/ime/implement/setting/ACLanguagesSettings;->mCheckedItemNumber:I
 
@@ -3147,8 +3120,6 @@
 
 .method public updateOrder(Ljava/lang/String;Z)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const/4 v6, 0x1
 

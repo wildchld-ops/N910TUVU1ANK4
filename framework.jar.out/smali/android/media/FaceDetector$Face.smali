@@ -55,8 +55,6 @@
 
 .method synthetic constructor <init>(Landroid/media/FaceDetector;Landroid/media/FaceDetector$1;)V
     .locals 0
-    .param p1    # Landroid/media/FaceDetector;
-    .param p2    # Landroid/media/FaceDetector$1;
 
     invoke-direct {p0, p1}, Landroid/media/FaceDetector$Face;-><init>(Landroid/media/FaceDetector;)V
 
@@ -83,7 +81,6 @@
 
 .method public getMidPoint(Landroid/graphics/PointF;)V
     .locals 2
-    .param p1    # Landroid/graphics/PointF;
 
     iget v0, p0, Landroid/media/FaceDetector$Face;->mMidPointX:F
 
@@ -96,7 +93,6 @@
 
 .method public pose(I)F
     .locals 1
-    .param p1    # I
 
     if-nez p1, :cond_0
 

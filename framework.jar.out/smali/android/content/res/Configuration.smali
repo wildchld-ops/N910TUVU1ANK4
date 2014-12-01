@@ -306,7 +306,6 @@
 
 .method public constructor <init>(Landroid/content/res/Configuration;)V
     .locals 0
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -317,7 +316,6 @@
 
 .method private constructor <init>(Landroid/os/Parcel;)V
     .locals 0
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -328,8 +326,6 @@
 
 .method synthetic constructor <init>(Landroid/os/Parcel;Landroid/content/res/Configuration$1;)V
     .locals 0
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # Landroid/content/res/Configuration$1;
 
     invoke-direct {p0, p1}, Landroid/content/res/Configuration;-><init>(Landroid/os/Parcel;)V
 
@@ -338,7 +334,6 @@
 
 .method private static getScreenLayoutNoDirection(I)I
     .locals 1
-    .param p0    # I
 
     and-int/lit16 v0, p0, -0xc1
 
@@ -347,8 +342,6 @@
 
 .method public static needNewResources(II)Z
     .locals 2
-    .param p0    # I
-    .param p1    # I
 
     const/high16 v0, 0x40000000
 
@@ -375,9 +368,6 @@
 
 .method public static reduceScreenLayout(III)I
     .locals 6
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
 
     const/16 v4, 0x1d6
 
@@ -482,7 +472,6 @@
 
 .method public static resetScreenLayout(I)I
     .locals 1
-    .param p0    # I
 
     const v0, -0x10000040
 
@@ -497,7 +486,6 @@
 # virtual methods
 .method public compareTo(Landroid/content/res/Configuration;)I
     .locals 7
-    .param p1    # Landroid/content/res/Configuration;
 
     const/4 v4, 0x1
 
@@ -750,7 +738,6 @@
 
 .method public bridge synthetic compareTo(Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Landroid/content/res/Configuration;
 
@@ -771,7 +758,6 @@
 
 .method public diff(Landroid/content/res/Configuration;)I
     .locals 4
-    .param p1    # Landroid/content/res/Configuration;
 
     const/4 v0, 0x0
 
@@ -1062,7 +1048,6 @@
 
 .method public equals(Landroid/content/res/Configuration;)Z
     .locals 3
-    .param p1    # Landroid/content/res/Configuration;
 
     const/4 v0, 0x1
 
@@ -1092,7 +1077,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     :try_start_0
     check-cast p1, Landroid/content/res/Configuration;
@@ -1270,7 +1254,6 @@
 
 .method public isLayoutSizeAtLeast(I)Z
     .locals 3
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -1294,7 +1277,6 @@
 
 .method public isOtherSeqNewer(Landroid/content/res/Configuration;)Z
     .locals 5
-    .param p1    # Landroid/content/res/Configuration;
 
     const/4 v1, 0x1
 
@@ -1351,7 +1333,6 @@
 
 .method public readFromParcel(Landroid/os/Parcel;)V
     .locals 5
-    .param p1    # Landroid/os/Parcel;
 
     const/4 v0, 0x1
 
@@ -1525,7 +1506,6 @@
 
 .method public setLayoutDirection(Ljava/util/Locale;)V
     .locals 3
-    .param p1    # Ljava/util/Locale;
 
     invoke-static {p1}, Landroid/text/TextUtils;->getLayoutDirectionFromLocale(Ljava/util/Locale;)I
 
@@ -1548,7 +1528,6 @@
 
 .method public setLocale(Ljava/util/Locale;)V
     .locals 1
-    .param p1    # Ljava/util/Locale;
 
     iput-object p1, p0, Landroid/content/res/Configuration;->locale:Ljava/util/Locale;
 
@@ -1565,7 +1544,6 @@
 
 .method public setTo(Landroid/content/res/Configuration;)V
     .locals 1
-    .param p1    # Landroid/content/res/Configuration;
 
     iget v0, p1, Landroid/content/res/Configuration;->fontScale:F
 
@@ -2516,7 +2494,6 @@
 
 .method public updateFrom(Landroid/content/res/Configuration;)I
     .locals 4
-    .param p1    # Landroid/content/res/Configuration;
 
     const/4 v0, 0x0
 
@@ -3016,8 +2993,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 3
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     const/4 v2, 0x1
 

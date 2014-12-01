@@ -40,9 +40,6 @@
 
 .method constructor <init>(Ljava/lang/CharSequence;II)V
     .locals 10
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -157,9 +154,6 @@
 
 .method private checkRange(Ljava/lang/String;II)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     if-ge p3, p2, :cond_0
 
@@ -303,8 +297,6 @@
 
 .method private static region(II)Ljava/lang/String;
     .locals 2
-    .param p0    # I
-    .param p1    # I
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -345,9 +337,6 @@
 
 .method private sendSpanAdded(Ljava/lang/Object;II)V
     .locals 5
-    .param p1    # Ljava/lang/Object;
-    .param p2    # I
-    .param p3    # I
 
     const-class v3, Landroid/text/SpanWatcher;
 
@@ -382,11 +371,6 @@
 
 .method private sendSpanChanged(Ljava/lang/Object;IIII)V
     .locals 10
-    .param p1    # Ljava/lang/Object;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-static {p2, p4}, Ljava/lang/Math;->min(II)I
 
@@ -439,9 +423,6 @@
 
 .method private sendSpanRemoved(Ljava/lang/Object;II)V
     .locals 5
-    .param p1    # Ljava/lang/Object;
-    .param p2    # I
-    .param p3    # I
 
     const-class v3, Landroid/text/SpanWatcher;
 
@@ -478,7 +459,6 @@
 # virtual methods
 .method public final charAt(I)C
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/text/SpannableStringInternal;->mText:Ljava/lang/String;
 
@@ -491,7 +471,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 8
-    .param p1    # Ljava/lang/Object;
 
     const/4 v5, 0x0
 
@@ -634,10 +613,6 @@
 
 .method public final getChars(II[CI)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [C
-    .param p4    # I
 
     iget-object v0, p0, Landroid/text/SpannableStringInternal;->mText:Ljava/lang/String;
 
@@ -648,7 +623,6 @@
 
 .method public getSpanEnd(Ljava/lang/Object;)I
     .locals 5
-    .param p1    # Ljava/lang/Object;
 
     iget v0, p0, Landroid/text/SpannableStringInternal;->mSpanCount:I
 
@@ -687,7 +661,6 @@
 
 .method public getSpanFlags(Ljava/lang/Object;)I
     .locals 5
-    .param p1    # Ljava/lang/Object;
 
     iget v0, p0, Landroid/text/SpannableStringInternal;->mSpanCount:I
 
@@ -726,7 +699,6 @@
 
 .method public getSpanStart(Ljava/lang/Object;)I
     .locals 5
-    .param p1    # Ljava/lang/Object;
 
     iget v0, p0, Landroid/text/SpannableStringInternal;->mSpanCount:I
 
@@ -765,8 +737,6 @@
 
 .method public getSpans(IILjava/lang/Class;)[Ljava/lang/Object;
     .locals 18
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -1161,9 +1131,6 @@
 
 .method public nextSpanTransition(IILjava/lang/Class;)I
     .locals 7
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/Class;
 
     iget v0, p0, Landroid/text/SpannableStringInternal;->mSpanCount:I
 
@@ -1233,7 +1200,6 @@
 
 .method removeSpan(Ljava/lang/Object;)V
     .locals 10
-    .param p1    # Ljava/lang/Object;
 
     iget v1, p0, Landroid/text/SpannableStringInternal;->mSpanCount:I
 
@@ -1299,10 +1265,6 @@
 
 .method setSpan(Ljava/lang/Object;III)V
     .locals 19
-    .param p1    # Ljava/lang/Object;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     move/from16 v7, p2
 

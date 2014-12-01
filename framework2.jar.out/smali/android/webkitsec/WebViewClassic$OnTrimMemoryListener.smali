@@ -34,7 +34,6 @@
 
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -45,7 +44,6 @@
 
 .method static init(Landroid/content/Context;)V
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     sget-object v0, Landroid/webkitsec/WebViewClassic$OnTrimMemoryListener;->sInstance:Landroid/webkitsec/WebViewClassic$OnTrimMemoryListener;
 
@@ -69,7 +67,6 @@
 # virtual methods
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 0
-    .param p1    # Landroid/content/res/Configuration;
 
     return-void
 .end method
@@ -82,7 +79,6 @@
 
 .method public onTrimMemory(I)V
     .locals 1
-    .param p1    # I
 
     const/16 v0, 0x14
 

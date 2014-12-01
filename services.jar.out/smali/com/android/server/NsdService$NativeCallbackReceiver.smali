@@ -51,9 +51,6 @@
 
 .method public onEvent(ILjava/lang/String;[Ljava/lang/String;)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # [Ljava/lang/String;
 
     new-instance v0, Lcom/android/server/NsdService$NativeEvent;
 

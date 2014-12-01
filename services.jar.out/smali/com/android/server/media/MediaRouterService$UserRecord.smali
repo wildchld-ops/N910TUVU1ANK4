@@ -40,7 +40,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/media/MediaRouterService;I)V
     .locals 1
-    .param p2    # I
 
     iput-object p1, p0, Lcom/android/server/media/MediaRouterService$UserRecord;->this$0:Lcom/android/server/media/MediaRouterService;
 
@@ -67,8 +66,6 @@
 # virtual methods
 .method public dump(Ljava/io/PrintWriter;Ljava/lang/String;)V
     .locals 7
-    .param p1    # Ljava/io/PrintWriter;
-    .param p2    # Ljava/lang/String;
 
     new-instance v3, Ljava/lang/StringBuilder;
 

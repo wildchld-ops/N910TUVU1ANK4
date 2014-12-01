@@ -36,7 +36,6 @@
 # virtual methods
 .method public onShow(Landroid/content/DialogInterface;)V
     .locals 4
-    .param p1    # Landroid/content/DialogInterface;
 
     const-wide/16 v2, 0x12c
 

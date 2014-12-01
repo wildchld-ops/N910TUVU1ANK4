@@ -51,8 +51,6 @@
 
 .method public constructor <init>(Landroid/filterfw/core/FrameManager;Landroid/filterfw/io/GraphReader;)V
     .locals 1
-    .param p1    # Landroid/filterfw/core/FrameManager;
-    .param p2    # Landroid/filterfw/io/GraphReader;
 
     invoke-direct {p0, p1}, Landroid/filterfw/MffEnvironment;-><init>(Landroid/filterfw/core/FrameManager;)V
 
@@ -71,7 +69,6 @@
 # virtual methods
 .method public addGraph(Landroid/filterfw/core/FilterGraph;)I
     .locals 2
-    .param p1    # Landroid/filterfw/core/FilterGraph;
 
     new-instance v0, Landroid/filterfw/GraphEnvironment$GraphHandle;
 
@@ -94,7 +91,6 @@
 
 .method public varargs addReferences([Ljava/lang/Object;)V
     .locals 1
-    .param p1    # [Ljava/lang/Object;
 
     invoke-virtual {p0}, Landroid/filterfw/GraphEnvironment;->getGraphReader()Landroid/filterfw/io/GraphReader;
 
@@ -107,7 +103,6 @@
 
 .method public getGraph(I)Landroid/filterfw/core/FilterGraph;
     .locals 3
-    .param p1    # I
 
     if-ltz p1, :cond_0
 
@@ -187,8 +182,6 @@
 
 .method public getRunner(II)Landroid/filterfw/core/GraphRunner;
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     packed-switch p2, :pswitch_data_0
 
@@ -270,8 +263,6 @@
 
 .method public loadGraph(Landroid/content/Context;I)I
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     const/4 v1, 0x0
 

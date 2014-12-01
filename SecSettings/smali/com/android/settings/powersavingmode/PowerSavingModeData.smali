@@ -113,7 +113,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/powersavingmode/PowerSavingModeData;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/powersavingmode/PowerSavingModeData;
 
     invoke-virtual {p0}, Lcom/android/settings/SettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -124,7 +123,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/powersavingmode/PowerSavingModeData;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/powersavingmode/PowerSavingModeData;
 
     invoke-virtual {p0}, Lcom/android/settings/SettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -135,7 +133,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/powersavingmode/PowerSavingModeData;)Landroid/widget/Switch;
     .locals 1
-    .param p0    # Lcom/android/settings/powersavingmode/PowerSavingModeData;
 
     iget-object v0, p0, Lcom/android/settings/powersavingmode/PowerSavingModeData;->mActionBarSwitch:Landroid/widget/Switch;
 
@@ -144,7 +141,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/powersavingmode/PowerSavingModeData;)Landroid/preference/PreferenceScreen;
     .locals 1
-    .param p0    # Lcom/android/settings/powersavingmode/PowerSavingModeData;
 
     iget-object v0, p0, Lcom/android/settings/powersavingmode/PowerSavingModeData;->mDataPowerSaving:Landroid/preference/PreferenceScreen;
 
@@ -153,7 +149,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/powersavingmode/PowerSavingModeData;)Landroid/preference/PreferenceCategory;
     .locals 1
-    .param p0    # Lcom/android/settings/powersavingmode/PowerSavingModeData;
 
     iget-object v0, p0, Lcom/android/settings/powersavingmode/PowerSavingModeData;->data_app:Landroid/preference/PreferenceCategory;
 
@@ -162,7 +157,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/powersavingmode/PowerSavingModeData;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/settings/powersavingmode/PowerSavingModeData;
 
     iget-object v0, p0, Lcom/android/settings/powersavingmode/PowerSavingModeData;->mContext:Landroid/content/Context;
 
@@ -173,7 +167,6 @@
 # virtual methods
 .method public getUid(Ljava/lang/String;)I
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     iget-object v3, p0, Lcom/android/settings/powersavingmode/PowerSavingModeData;->mContext:Landroid/content/Context;
 
@@ -504,7 +497,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 7
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -947,8 +939,6 @@
 
 .method public setUidAllowedForData([Ljava/lang/String;Z)V
     .locals 6
-    .param p1    # [Ljava/lang/String;
-    .param p2    # Z
 
     iget-object v3, p0, Lcom/android/settings/powersavingmode/PowerSavingModeData;->mContext:Landroid/content/Context;
 

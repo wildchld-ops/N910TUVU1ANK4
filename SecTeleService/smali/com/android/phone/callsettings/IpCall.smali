@@ -465,7 +465,7 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/IpCall;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
@@ -605,7 +605,7 @@
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/IpCall;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -665,7 +665,7 @@
     if-eqz v0, :cond_0
 
     :try_start_0
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/IpCall;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
@@ -713,7 +713,7 @@
     .locals 3
     .param p1    # Ljava/lang/String;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/IpCall;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -737,7 +737,7 @@
 
     sget-object v1, Lcom/android/phone/callsettings/IpCall$SIMCardOperator;->CMCC:Lcom/android/phone/callsettings/IpCall$SIMCardOperator;
 
-    invoke-virtual {v0, v1}, Ljava/lang/Enum;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v1}, Lcom/android/phone/callsettings/IpCall$SIMCardOperator;->equals(Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -751,7 +751,7 @@
     :cond_0
     sget-object v1, Lcom/android/phone/callsettings/IpCall$SIMCardOperator;->CU:Lcom/android/phone/callsettings/IpCall$SIMCardOperator;
 
-    invoke-virtual {v0, v1}, Ljava/lang/Enum;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v1}, Lcom/android/phone/callsettings/IpCall$SIMCardOperator;->equals(Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -764,7 +764,7 @@
     :cond_1
     sget-object v1, Lcom/android/phone/callsettings/IpCall$SIMCardOperator;->CTC:Lcom/android/phone/callsettings/IpCall$SIMCardOperator;
 
-    invoke-virtual {v0, v1}, Ljava/lang/Enum;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v1}, Lcom/android/phone/callsettings/IpCall$SIMCardOperator;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -785,7 +785,7 @@
 
     const/4 v2, 0x1
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/IpCall;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -1047,7 +1047,7 @@
 
     iget-object v1, p0, Lcom/android/phone/callsettings/IpCall;->selectAll:Landroid/widget/LinearLayout;
 
-    invoke-virtual {v1, v3}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v1, v3}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
     const v1, 0x7f0a011a
 
@@ -1108,12 +1108,12 @@
 
     iget-object v1, p0, Lcom/android/phone/callsettings/IpCall;->emptyText:Landroid/widget/FrameLayout;
 
-    invoke-virtual {v1, v3}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v1, v3}, Landroid/widget/FrameLayout;->setVisibility(I)V
 
     :cond_3
     new-instance v1, Lcom/android/phone/callsettings/IpCall$IPCallAdapter;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/IpCall;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -1127,7 +1127,7 @@
 
     new-instance v1, Landroid/widget/ArrayAdapter;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/IpCall;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -1151,7 +1151,7 @@
 
     invoke-direct {v2, p0}, Lcom/android/phone/callsettings/IpCall$5;-><init>(Lcom/android/phone/callsettings/IpCall;)V
 
-    invoke-virtual {v1, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v1, v2}, Landroid/widget/LinearLayout;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     const-string v1, "add_panel"
 
@@ -1177,11 +1177,11 @@
 
     invoke-direct {v2, p0}, Lcom/android/phone/callsettings/IpCall$6;-><init>(Lcom/android/phone/callsettings/IpCall;)V
 
-    invoke-virtual {v1, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v1, v2}, Landroid/widget/LinearLayout;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     iget-object v1, p0, Lcom/android/phone/callsettings/IpCall;->createLayout:Landroid/widget/LinearLayout;
 
-    invoke-virtual {v1, v5}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v1, v5}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
     const/4 v1, 0x1
 
@@ -1194,7 +1194,7 @@
 
     invoke-direct {v2, p0}, Lcom/android/phone/callsettings/IpCall$7;-><init>(Lcom/android/phone/callsettings/IpCall;)V
 
-    invoke-virtual {v1, v2}, Landroid/widget/AdapterView;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
+    invoke-virtual {v1, v2}, Landroid/widget/ListView;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
 
     const-string v1, "support_folder_hardkey"
 
@@ -1210,7 +1210,7 @@
 
     invoke-direct {v2, p0}, Lcom/android/phone/callsettings/IpCall$8;-><init>(Lcom/android/phone/callsettings/IpCall;)V
 
-    invoke-virtual {v1, v2}, Landroid/widget/AdapterView;->setOnItemLongClickListener(Landroid/widget/AdapterView$OnItemLongClickListener;)V
+    invoke-virtual {v1, v2}, Landroid/widget/ListView;->setOnItemLongClickListener(Landroid/widget/AdapterView$OnItemLongClickListener;)V
 
     :cond_5
     return-void
@@ -1241,7 +1241,7 @@
 
     const/4 v2, 0x0
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/IpCall;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v3
 
@@ -1501,7 +1501,7 @@
 
     const v1, 0x7f09038d
 
-    invoke-virtual {p0, v1}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v1}, Lcom/android/phone/callsettings/IpCall;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -1530,7 +1530,7 @@
 
     if-nez v0, :cond_2
 
-    invoke-virtual {p0, v4}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v4}, Lcom/android/phone/callsettings/IpCall;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -1563,7 +1563,7 @@
 
     if-eqz v0, :cond_3
 
-    invoke-virtual {p0, v4}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v4}, Lcom/android/phone/callsettings/IpCall;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -1618,7 +1618,7 @@
     :goto_2
     iget-object v0, p0, Lcom/android/phone/callsettings/IpCall;->mListAdapter:Lcom/android/phone/callsettings/IpCall$IPCallAdapter;
 
-    invoke-virtual {v0}, Landroid/widget/BaseAdapter;->notifyDataSetInvalidated()V
+    invoke-virtual {v0}, Lcom/android/phone/callsettings/IpCall$IPCallAdapter;->notifyDataSetInvalidated()V
 
     iget-object v0, p0, Lcom/android/phone/callsettings/IpCall;->ipCallList:Ljava/util/ArrayList;
 
@@ -1630,7 +1630,7 @@
 
     iget-object v0, p0, Lcom/android/phone/callsettings/IpCall;->emptyText:Landroid/widget/FrameLayout;
 
-    invoke-virtual {v0}, Landroid/view/View;->getVisibility()I
+    invoke-virtual {v0}, Landroid/widget/FrameLayout;->getVisibility()I
 
     move-result v0
 
@@ -1638,7 +1638,7 @@
 
     iget-object v0, p0, Lcom/android/phone/callsettings/IpCall;->emptyText:Landroid/widget/FrameLayout;
 
-    invoke-virtual {v0, v7}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v7}, Landroid/widget/FrameLayout;->setVisibility(I)V
 
     :cond_5
     iput v1, p0, Lcom/android/phone/callsettings/IpCall;->mState:I
@@ -1734,7 +1734,7 @@
 
     const v0, 0x7f09047a
 
-    invoke-virtual {p0, v0}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lcom/android/phone/callsettings/IpCall;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -1744,7 +1744,7 @@
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/IpCall;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -1758,7 +1758,7 @@
     return-void
 
     :cond_0
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/IpCall;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -1928,7 +1928,7 @@
 
     const v2, 0x7f09047a
 
-    invoke-virtual {p0, v2}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v2}, Lcom/android/phone/callsettings/IpCall;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2199,7 +2199,7 @@
 
     invoke-direct {p0}, Lcom/android/phone/callsettings/IpCall;->updateTitleBar()V
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/IpCall;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v0
 
@@ -2220,7 +2220,7 @@
     :goto_0
     iget-object v1, p0, Lcom/android/phone/callsettings/IpCall;->listView:Landroid/widget/ListView;
 
-    invoke-virtual {v1}, Landroid/widget/AdapterView;->getCount()I
+    invoke-virtual {v1}, Landroid/widget/ListView;->getCount()I
 
     move-result v1
 
@@ -2228,7 +2228,7 @@
 
     iget-object v1, p0, Lcom/android/phone/callsettings/IpCall;->listView:Landroid/widget/ListView;
 
-    invoke-virtual {v1, v0}, Landroid/widget/AbsListView;->isItemChecked(I)Z
+    invoke-virtual {v1, v0}, Landroid/widget/ListView;->isItemChecked(I)Z
 
     move-result v1
 
@@ -2254,7 +2254,7 @@
 
     iget-object v4, p0, Lcom/android/phone/callsettings/IpCall;->listView:Landroid/widget/ListView;
 
-    invoke-virtual {v4}, Landroid/widget/AdapterView;->getCount()I
+    invoke-virtual {v4}, Landroid/widget/ListView;->getCount()I
 
     move-result v4
 
@@ -2263,7 +2263,7 @@
     :goto_1
     invoke-interface {v1, v2}, Landroid/widget/Checkable;->setChecked(Z)V
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/IpCall;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v1
 
@@ -2351,7 +2351,7 @@
 
     move-result-object v1
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/IpCall;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 
@@ -2397,7 +2397,7 @@
     :cond_1
     new-instance v1, Lcom/android/phone/callsettings/IpCall$IPCallAdapter;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/IpCall;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -2411,7 +2411,7 @@
 
     new-instance v1, Landroid/widget/ArrayAdapter;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/IpCall;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -2507,7 +2507,7 @@
 
     const v2, 0x7f09049e
 
-    invoke-virtual {p0, v2}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v2}, Lcom/android/phone/callsettings/IpCall;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2565,7 +2565,7 @@
 
     if-ne v1, v2, :cond_1
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/IpCall;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -2577,7 +2577,7 @@
     return-void
 
     :cond_1
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/IpCall;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -2597,7 +2597,7 @@
 
     invoke-static {v5, v6}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/IpCall;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v4
 
@@ -2639,11 +2639,11 @@
     :cond_0
     const-string v5, ""
 
-    invoke-virtual {v1, v5}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {v1, v5}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
     const/4 v5, 0x2
 
-    invoke-virtual {v1, v5}, Landroid/widget/TextView;->setInputType(I)V
+    invoke-virtual {v1, v5}, Landroid/widget/EditText;->setInputType(I)V
 
     const/4 v5, 0x1
 
@@ -2659,15 +2659,15 @@
 
     aput-object v7, v5, v6
 
-    invoke-virtual {v1, v5}, Landroid/widget/TextView;->setFilters([Landroid/text/InputFilter;)V
+    invoke-virtual {v1, v5}, Landroid/widget/EditText;->setFilters([Landroid/text/InputFilter;)V
 
-    invoke-virtual {v1}, Landroid/view/View;->requestFocus()Z
+    invoke-virtual {v1}, Landroid/widget/EditText;->requestFocus()Z
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/IpCall;->getActivity()Landroid/app/Activity;
 
     const-string v5, "input_method"
 
-    invoke-virtual {p0, v5}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v5}, Lcom/android/phone/callsettings/IpCall;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v5
 
@@ -2677,7 +2677,7 @@
 
     const/4 v5, 0x6
 
-    invoke-virtual {v1, v5}, Landroid/widget/TextView;->setImeOptions(I)V
+    invoke-virtual {v1, v5}, Landroid/widget/EditText;->setImeOptions(I)V
 
     iget-object v5, p0, Lcom/android/phone/callsettings/IpCall;->handler:Landroid/os/Handler;
 
@@ -2691,7 +2691,7 @@
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/IpCall;->getActivity()Landroid/app/Activity;
 
     move-result-object v5
 
@@ -2741,7 +2741,7 @@
 
     iget-object v5, p0, Lcom/android/phone/callsettings/IpCall;->mAnyPopupDialog:Landroid/app/AlertDialog;
 
-    invoke-virtual {v5}, Landroid/app/Dialog;->show()V
+    invoke-virtual {v5}, Landroid/app/AlertDialog;->show()V
 
     goto :goto_0
 .end method
@@ -2751,13 +2751,13 @@
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/IpCall;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
     invoke-direct {v0, v1}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/IpCall;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -2811,7 +2811,7 @@
 
     iget-object v0, p0, Lcom/android/phone/callsettings/IpCall;->mAnyPopupDialog:Landroid/app/AlertDialog;
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->show()V
+    invoke-virtual {v0}, Landroid/app/AlertDialog;->show()V
 
     return-void
 .end method
@@ -2825,7 +2825,7 @@
 
     invoke-static {v0, v1}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/IpCall;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -2867,11 +2867,11 @@
     :cond_0
     iget-object v1, p0, Lcom/android/phone/callsettings/IpCall;->mTempEditString:Ljava/lang/String;
 
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {v0, v1}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
     const/4 v1, 0x2
 
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setInputType(I)V
+    invoke-virtual {v0, v1}, Landroid/widget/EditText;->setInputType(I)V
 
     const/4 v1, 0x1
 
@@ -2887,15 +2887,15 @@
 
     aput-object v4, v1, v3
 
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setFilters([Landroid/text/InputFilter;)V
+    invoke-virtual {v0, v1}, Landroid/widget/EditText;->setFilters([Landroid/text/InputFilter;)V
 
-    invoke-virtual {v0}, Landroid/view/View;->requestFocus()Z
+    invoke-virtual {v0}, Landroid/widget/EditText;->requestFocus()Z
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/IpCall;->getActivity()Landroid/app/Activity;
 
     const-string v1, "input_method"
 
-    invoke-virtual {p0, v1}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v1}, Lcom/android/phone/callsettings/IpCall;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -2915,7 +2915,7 @@
 
     new-instance v1, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/IpCall;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
 
@@ -2965,7 +2965,7 @@
 
     iget-object v0, p0, Lcom/android/phone/callsettings/IpCall;->mAnyPopupDialog:Landroid/app/AlertDialog;
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->show()V
+    invoke-virtual {v0}, Landroid/app/AlertDialog;->show()V
 
     goto :goto_0
 .end method
@@ -2981,7 +2981,7 @@
 
     if-eqz p1, :cond_0
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/IpCall;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -2997,7 +2997,7 @@
     return-object v0
 
     :cond_0
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/IpCall;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -3028,7 +3028,7 @@
 
     const/4 v3, 0x0
 
-    invoke-super {p0, p1, p2, p3}, Landroid/preference/PreferenceFragment;->onActivityResult(IILandroid/content/Intent;)V
+    invoke-super {p0, p1, p2, p3}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onActivityResult(IILandroid/content/Intent;)V
 
     packed-switch p1, :pswitch_data_0
 
@@ -3096,7 +3096,7 @@
 
     new-instance v0, Lcom/android/phone/callsettings/IpCall$IPCallAdapter;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/IpCall;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -3134,13 +3134,13 @@
 
     invoke-static {v0, v1}, Lcom/android/phone/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/IpCall;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v0
 
     invoke-virtual {v0}, Landroid/app/FragmentManager;->invalidateOptionsMenu()V
 
-    invoke-super {p0, p1}, Landroid/app/Fragment;->onConfigurationChanged(Landroid/content/res/Configuration;)V
+    invoke-super {p0, p1}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
     return-void
 .end method
@@ -3155,7 +3155,7 @@
 
     invoke-super {p0, p1}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getArguments()Landroid/os/Bundle;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/IpCall;->getArguments()Landroid/os/Bundle;
 
     move-result-object v1
 
@@ -3175,7 +3175,7 @@
 
     if-le v3, v5, :cond_0
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/IpCall;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v3
 
@@ -3185,7 +3185,7 @@
 
     if-eqz v3, :cond_0
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/IpCall;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v3
 
@@ -3262,7 +3262,7 @@
 
     invoke-direct {p0, v3}, Lcom/android/phone/callsettings/IpCall;->log(Ljava/lang/String;)V
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getActionBar()Landroid/app/ActionBar;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/IpCall;->getActionBar()Landroid/app/ActionBar;
 
     move-result-object v0
 
@@ -3271,7 +3271,7 @@
     invoke-virtual {v0, v5}, Landroid/app/ActionBar;->setDisplayHomeAsUpEnabled(Z)V
 
     :cond_2
-    invoke-virtual {p0, v5}, Landroid/app/Fragment;->setHasOptionsMenu(Z)V
+    invoke-virtual {p0, v5}, Lcom/android/phone/callsettings/IpCall;->setHasOptionsMenu(Z)V
 
     iput v5, p0, Lcom/android/phone/callsettings/IpCall;->mState:I
 
@@ -3311,7 +3311,7 @@
     :pswitch_0
     new-instance v2, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/IpCall;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -3325,7 +3325,7 @@
 
     const v4, 0x7f0902d2
 
-    invoke-virtual {p0, v4}, Landroid/app/Fragment;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v4}, Lcom/android/phone/callsettings/IpCall;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v4
 
@@ -3335,7 +3335,7 @@
 
     const v4, 0x7f0902d4
 
-    invoke-virtual {p0, v4}, Landroid/app/Fragment;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v4}, Lcom/android/phone/callsettings/IpCall;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v4
 
@@ -3372,7 +3372,7 @@
 
     invoke-direct {v0, p0}, Lcom/android/phone/callsettings/IpCall$13;-><init>(Lcom/android/phone/callsettings/IpCall;)V
 
-    invoke-virtual {p0, v0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/callsettings/IpCall;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
     iget-object v0, p0, Lcom/android/phone/callsettings/IpCall;->mAnyPopupDialog:Landroid/app/AlertDialog;
 
@@ -3542,7 +3542,7 @@
 
     invoke-interface {v0, v2}, Landroid/view/MenuItem;->setVisible(Z)Landroid/view/MenuItem;
 
-    invoke-super {p0, p1, p2}, Landroid/app/Fragment;->onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
+    invoke-super {p0, p1, p2}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
 
     return-void
 .end method
@@ -3598,7 +3598,7 @@
     const/4 v0, 0x1
 
     :cond_0
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getActionBar()Landroid/app/ActionBar;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/IpCall;->getActionBar()Landroid/app/ActionBar;
 
     move-result-object v3
 
@@ -3608,7 +3608,7 @@
 
     if-lez v3, :cond_1
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getActionBar()Landroid/app/ActionBar;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/IpCall;->getActionBar()Landroid/app/ActionBar;
 
     move-result-object v3
 
@@ -3804,13 +3804,13 @@
 
     iget-object v3, p0, Lcom/android/phone/callsettings/IpCall;->selectAll:Landroid/widget/LinearLayout;
 
-    invoke-virtual {v3, v5}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v3, v5}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
     iget-object v3, p0, Lcom/android/phone/callsettings/IpCall;->listView:Landroid/widget/ListView;
 
     const/4 v4, 0x2
 
-    invoke-virtual {v3, v4}, Landroid/widget/AbsListView;->setChoiceMode(I)V
+    invoke-virtual {v3, v4}, Landroid/widget/ListView;->setChoiceMode(I)V
 
     iget-object v3, p0, Lcom/android/phone/callsettings/IpCall;->listView:Landroid/widget/ListView;
 
@@ -3823,7 +3823,7 @@
     :goto_2
     iget-object v3, p0, Lcom/android/phone/callsettings/IpCall;->listView:Landroid/widget/ListView;
 
-    invoke-virtual {v3}, Landroid/widget/AdapterView;->getCount()I
+    invoke-virtual {v3}, Landroid/widget/ListView;->getCount()I
 
     move-result v3
 
@@ -3851,7 +3851,7 @@
 
     move-result v3
 
-    invoke-virtual {v4, v1, v3}, Landroid/widget/AbsListView;->setItemChecked(IZ)V
+    invoke-virtual {v4, v1, v3}, Landroid/widget/ListView;->setItemChecked(IZ)V
 
     :cond_5
     add-int/lit8 v1, v1, 0x1
@@ -3948,7 +3948,7 @@
     :cond_b
     iget-object v3, p0, Lcom/android/phone/callsettings/IpCall;->IPCALL_URI:Landroid/net/Uri;
 
-    invoke-virtual {p0, v3}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->registerContentUri(Landroid/net/Uri;)V
+    invoke-virtual {p0, v3}, Lcom/android/phone/callsettings/IpCall;->registerContentUri(Landroid/net/Uri;)V
 
     return-object v2
 .end method
@@ -3956,7 +3956,7 @@
 .method public onDestroyView()V
     .locals 3
 
-    invoke-super {p0}, Landroid/preference/PreferenceFragment;->onDestroyView()V
+    invoke-super {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onDestroyView()V
 
     sget-object v1, Lcom/android/phone/callsettings/IpCall;->LOG_TAG:Ljava/lang/String;
 
@@ -3976,7 +3976,7 @@
 
     iget-object v1, p0, Lcom/android/phone/callsettings/IpCall;->listView:Landroid/widget/ListView;
 
-    invoke-virtual {v1}, Landroid/widget/AdapterView;->getCount()I
+    invoke-virtual {v1}, Landroid/widget/ListView;->getCount()I
 
     move-result v1
 
@@ -3991,7 +3991,7 @@
     :goto_0
     iget-object v1, p0, Lcom/android/phone/callsettings/IpCall;->listView:Landroid/widget/ListView;
 
-    invoke-virtual {v1}, Landroid/widget/AdapterView;->getCount()I
+    invoke-virtual {v1}, Landroid/widget/ListView;->getCount()I
 
     move-result v1
 
@@ -4001,7 +4001,7 @@
 
     iget-object v2, p0, Lcom/android/phone/callsettings/IpCall;->listView:Landroid/widget/ListView;
 
-    invoke-virtual {v2, v0}, Landroid/widget/AbsListView;->isItemChecked(I)Z
+    invoke-virtual {v2, v0}, Landroid/widget/ListView;->isItemChecked(I)Z
 
     move-result v2
 
@@ -4025,7 +4025,7 @@
 
     iput-boolean v1, p0, Lcom/android/phone/callsettings/IpCall;->mInitCreateLayout:Z
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->unregisterContentUri()V
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/IpCall;->unregisterContentUri()V
 
     return-void
 .end method
@@ -4066,7 +4066,7 @@
     :cond_1
     new-instance v0, Lcom/android/phone/callsettings/IpCall$IPCallAdapter;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/IpCall;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -4090,7 +4090,7 @@
 
     const/16 v1, 0x8
 
-    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v1}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
     const/4 v0, 0x1
 
@@ -4099,7 +4099,7 @@
     :sswitch_1
     const/4 v2, 0x0
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/IpCall;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -4116,7 +4116,7 @@
     :goto_2
     if-eqz v0, :cond_0
 
-    invoke-virtual {v0}, Landroid/widget/AbsListView;->getSelectedView()Landroid/view/View;
+    invoke-virtual {v0}, Landroid/widget/ListView;->getSelectedView()Landroid/view/View;
 
     move-result-object v2
 
@@ -4124,7 +4124,7 @@
 
     if-eqz v2, :cond_0
 
-    invoke-virtual {v0}, Landroid/widget/AbsListView;->getSelectedView()Landroid/view/View;
+    invoke-virtual {v0}, Landroid/widget/ListView;->getSelectedView()Landroid/view/View;
 
     move-result-object v0
 
@@ -4132,14 +4132,14 @@
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {v0}, Landroid/view/ViewGroup;->getChildCount()I
+    invoke-virtual {v0}, Landroid/widget/LinearLayout;->getChildCount()I
 
     move-result v2
 
     :goto_3
     if-ge v1, v2, :cond_0
 
-    invoke-virtual {v0, v1}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
+    invoke-virtual {v0, v1}, Landroid/widget/LinearLayout;->getChildAt(I)Landroid/view/View;
 
     move-result-object v3
 
@@ -4274,7 +4274,7 @@
     :cond_2
     new-instance v1, Lcom/android/phone/callsettings/IpCall$IPCallAdapter;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/IpCall;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
 
@@ -4288,7 +4288,7 @@
 
     new-instance v1, Landroid/widget/ArrayAdapter;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/IpCall;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
 
@@ -4303,7 +4303,7 @@
     :cond_3
     iget-object v1, p0, Lcom/android/phone/callsettings/IpCall;->selectAll:Landroid/widget/LinearLayout;
 
-    invoke-virtual {v1, v3}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v1, v3}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
     iget-object v1, p0, Lcom/android/phone/callsettings/IpCall;->selectAllCheck:Landroid/view/View;
 
@@ -4313,7 +4313,7 @@
 
     iget-object v1, p0, Lcom/android/phone/callsettings/IpCall;->listView:Landroid/widget/ListView;
 
-    invoke-virtual {v1, v7}, Landroid/widget/AbsListView;->setChoiceMode(I)V
+    invoke-virtual {v1, v7}, Landroid/widget/ListView;->setChoiceMode(I)V
 
     iget-object v1, p0, Lcom/android/phone/callsettings/IpCall;->listView:Landroid/widget/ListView;
 
@@ -4386,7 +4386,7 @@
 
     const/4 v4, 0x0
 
-    invoke-super {p0, p1}, Landroid/app/Fragment;->onPrepareOptionsMenu(Landroid/view/Menu;)V
+    invoke-super {p0, p1}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onPrepareOptionsMenu(Landroid/view/Menu;)V
 
     sget-object v2, Lcom/android/phone/callsettings/IpCall;->LOG_TAG:Ljava/lang/String;
 
@@ -4502,7 +4502,7 @@
     move v2, v3
 
     :goto_6
-    invoke-virtual {v5, v2}, Landroid/view/View;->setEnabled(Z)V
+    invoke-virtual {v5, v2}, Landroid/widget/LinearLayout;->setEnabled(Z)V
 
     iget v2, p0, Lcom/android/phone/callsettings/IpCall;->mState:I
 
@@ -4510,7 +4510,7 @@
 
     iget-object v2, p0, Lcom/android/phone/callsettings/IpCall;->createLayout:Landroid/widget/LinearLayout;
 
-    invoke-virtual {v2, v4}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v2, v4}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
     :goto_7
     invoke-interface {p1, v3}, Landroid/view/Menu;->findItem(I)Landroid/view/MenuItem;
@@ -4613,7 +4613,7 @@
 
     const/16 v5, 0x8
 
-    invoke-virtual {v2, v5}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v2, v5}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
     goto :goto_7
 .end method
@@ -4627,7 +4627,7 @@
 
     invoke-super {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onResume()V
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->isContentChanged()Z
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/IpCall;->isContentChanged()Z
 
     move-result v1
 
@@ -4645,7 +4645,7 @@
 
     iget-object v1, p0, Lcom/android/phone/callsettings/IpCall;->selectAll:Landroid/widget/LinearLayout;
 
-    invoke-virtual {v1, v3}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v1, v3}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
     :cond_0
     iget-object v1, p0, Lcom/android/phone/callsettings/IpCall;->mAnyPopupDialog:Landroid/app/AlertDialog;
@@ -4654,12 +4654,12 @@
 
     iget-object v1, p0, Lcom/android/phone/callsettings/IpCall;->mAnyPopupDialog:Landroid/app/AlertDialog;
 
-    invoke-virtual {v1}, Landroid/app/Dialog;->dismiss()V
+    invoke-virtual {v1}, Landroid/app/AlertDialog;->dismiss()V
 
     :cond_1
     iget-object v1, p0, Lcom/android/phone/callsettings/IpCall;->mListAdapter:Lcom/android/phone/callsettings/IpCall$IPCallAdapter;
 
-    invoke-virtual {v1}, Landroid/widget/BaseAdapter;->notifyDataSetInvalidated()V
+    invoke-virtual {v1}, Lcom/android/phone/callsettings/IpCall$IPCallAdapter;->notifyDataSetInvalidated()V
 
     iget-object v1, p0, Lcom/android/phone/callsettings/IpCall;->listView:Landroid/widget/ListView;
 
@@ -4677,10 +4677,10 @@
 
     const/4 v2, 0x0
 
-    invoke-virtual {v1, v2}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v1, v2}, Landroid/widget/FrameLayout;->setVisibility(I)V
 
     :cond_2
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->resetContentChanged()V
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/IpCall;->resetContentChanged()V
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -4737,7 +4737,7 @@
 
     iget-object v1, p0, Lcom/android/phone/callsettings/IpCall;->selectAll:Landroid/widget/LinearLayout;
 
-    invoke-virtual {v1, v3}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v1, v3}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
     iput v0, p0, Lcom/android/phone/callsettings/IpCall;->mState:I
 

@@ -28,8 +28,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/BackupManagerService$ActiveRestoreSession;Lcom/android/server/BackupManagerService;Lcom/android/server/BackupManagerService$ActiveRestoreSession;)V
     .locals 0
-    .param p2    # Lcom/android/server/BackupManagerService;
-    .param p3    # Lcom/android/server/BackupManagerService$ActiveRestoreSession;
 
     iput-object p1, p0, Lcom/android/server/BackupManagerService$ActiveRestoreSession$EndRestoreRunnable;->this$1:Lcom/android/server/BackupManagerService$ActiveRestoreSession;
 

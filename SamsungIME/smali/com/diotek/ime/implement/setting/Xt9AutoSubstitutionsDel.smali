@@ -105,7 +105,6 @@
 
 .method static synthetic access$000(Lcom/diotek/ime/implement/setting/Xt9AutoSubstitutionsDel;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/setting/Xt9AutoSubstitutionsDel;
 
     iget-object v0, p0, Lcom/diotek/ime/implement/setting/Xt9AutoSubstitutionsDel;->mWordlist:Ljava/util/ArrayList;
 
@@ -114,7 +113,6 @@
 
 .method static synthetic access$100(Lcom/diotek/ime/implement/setting/Xt9AutoSubstitutionsDel;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/setting/Xt9AutoSubstitutionsDel;
 
     iget-object v0, p0, Lcom/diotek/ime/implement/setting/Xt9AutoSubstitutionsDel;->mDeletingWordsList:Ljava/util/ArrayList;
 
@@ -123,8 +121,6 @@
 
 .method static synthetic access$200(Lcom/diotek/ime/implement/setting/Xt9AutoSubstitutionsDel;Z)V
     .locals 0
-    .param p0    # Lcom/diotek/ime/implement/setting/Xt9AutoSubstitutionsDel;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/diotek/ime/implement/setting/Xt9AutoSubstitutionsDel;->setDoneMenuEnabled(Z)V
 
@@ -133,7 +129,6 @@
 
 .method static synthetic access$300(Lcom/diotek/ime/implement/setting/Xt9AutoSubstitutionsDel;)Z
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/setting/Xt9AutoSubstitutionsDel;
 
     iget-boolean v0, p0, Lcom/diotek/ime/implement/setting/Xt9AutoSubstitutionsDel;->mAllSelected:Z
 
@@ -142,8 +137,6 @@
 
 .method static synthetic access$302(Lcom/diotek/ime/implement/setting/Xt9AutoSubstitutionsDel;Z)Z
     .locals 0
-    .param p0    # Lcom/diotek/ime/implement/setting/Xt9AutoSubstitutionsDel;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/implement/setting/Xt9AutoSubstitutionsDel;->mAllSelected:Z
 
@@ -152,7 +145,6 @@
 
 .method static synthetic access$400(Lcom/diotek/ime/implement/setting/Xt9AutoSubstitutionsDel;)Lcom/diotek/ime/implement/setting/adapter/CheckboxArrayAdapter;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/setting/Xt9AutoSubstitutionsDel;
 
     iget-object v0, p0, Lcom/diotek/ime/implement/setting/Xt9AutoSubstitutionsDel;->mSelectallAdpter:Lcom/diotek/ime/implement/setting/adapter/CheckboxArrayAdapter;
 
@@ -161,7 +153,6 @@
 
 .method static synthetic access$500(Lcom/diotek/ime/implement/setting/Xt9AutoSubstitutionsDel;)Landroid/widget/ListView;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/setting/Xt9AutoSubstitutionsDel;
 
     iget-object v0, p0, Lcom/diotek/ime/implement/setting/Xt9AutoSubstitutionsDel;->mDisplayView:Landroid/widget/ListView;
 
@@ -170,7 +161,6 @@
 
 .method static synthetic access$600(Lcom/diotek/ime/implement/setting/Xt9AutoSubstitutionsDel;)Landroid/widget/ListView;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/setting/Xt9AutoSubstitutionsDel;
 
     iget-object v0, p0, Lcom/diotek/ime/implement/setting/Xt9AutoSubstitutionsDel;->mSelectallview:Landroid/widget/ListView;
 
@@ -179,7 +169,6 @@
 
 .method static synthetic access$700(Lcom/diotek/ime/implement/setting/Xt9AutoSubstitutionsDel;)Lcom/diotek/ime/framework/engine/xt9/Xt9DBController;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/setting/Xt9AutoSubstitutionsDel;
 
     iget-object v0, p0, Lcom/diotek/ime/implement/setting/Xt9AutoSubstitutionsDel;->mXt9DBController:Lcom/diotek/ime/framework/engine/xt9/Xt9DBController;
 
@@ -467,7 +456,6 @@
 
 .method private setDoneMenuEnabled(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/diotek/ime/implement/setting/Xt9AutoSubstitutionsDel;->mMenu:Landroid/view/Menu;
 
@@ -491,7 +479,6 @@
 # virtual methods
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 3
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -532,7 +519,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 9
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v8, 0x1
 
@@ -775,7 +761,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 3
-    .param p1    # Landroid/view/Menu;
 
     const/4 v2, 0x1
 
@@ -822,7 +807,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 2
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v0, 0x1
 

@@ -48,7 +48,6 @@
 
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/net/ParseException;
@@ -342,7 +341,6 @@
 
 .method public setAuthInfo(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/net/WebAddress;->mAuthInfo:Ljava/lang/String;
 
@@ -351,7 +349,6 @@
 
 .method public setHost(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/net/WebAddress;->mHost:Ljava/lang/String;
 
@@ -360,7 +357,6 @@
 
 .method public setPath(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/net/WebAddress;->mPath:Ljava/lang/String;
 
@@ -369,7 +365,6 @@
 
 .method public setPort(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/net/WebAddress;->mPort:I
 
@@ -378,7 +373,6 @@
 
 .method public setScheme(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/net/WebAddress;->mScheme:Ljava/lang/String;
 

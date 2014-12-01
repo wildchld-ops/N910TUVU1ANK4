@@ -103,7 +103,6 @@
 
 .method private obtainChunk(I)Landroid/webkitsec/ByteArrayBuilder$Chunk;
     .locals 3
-    .param p1    # I
 
     const/16 v1, 0x2000
 
@@ -195,9 +194,6 @@
 # virtual methods
 .method public declared-synchronized append([BII)V
     .locals 5
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
 
     monitor-enter p0
 
@@ -460,7 +456,6 @@
 
 .method public declared-synchronized releaseChunk(Landroid/webkitsec/ByteArrayBuilder$Chunk;)V
     .locals 1
-    .param p1    # Landroid/webkitsec/ByteArrayBuilder$Chunk;
 
     monitor-enter p0
 

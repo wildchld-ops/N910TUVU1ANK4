@@ -33,8 +33,6 @@
 # virtual methods
 .method public onCallStateChanged(ILjava/lang/String;)V
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/16 v3, 0x47
 
@@ -253,7 +251,6 @@
 
 .method public onDataActivity(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "STATUSBAR-NetworkController"
 
@@ -295,8 +292,6 @@
 
 .method public onDataConnectionStateChanged(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     const-string v0, "STATUSBAR-NetworkController"
 
@@ -357,7 +352,6 @@
 
 .method public onServiceStateChanged(Landroid/telephony/ServiceState;)V
     .locals 4
-    .param p1    # Landroid/telephony/ServiceState;
 
     const-string v1, "STATUSBAR-NetworkController"
 
@@ -549,7 +543,6 @@
 
 .method public onSignalStrengthsChanged(Landroid/telephony/SignalStrength;)V
     .locals 4
-    .param p1    # Landroid/telephony/SignalStrength;
 
     const-string v1, "STATUSBAR-NetworkController"
 

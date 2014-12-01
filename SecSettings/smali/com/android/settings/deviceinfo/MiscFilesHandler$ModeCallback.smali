@@ -28,7 +28,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/settings/deviceinfo/MiscFilesHandler;Landroid/content/Context;)V
     .locals 1
-    .param p2    # Landroid/content/Context;
 
     iput-object p1, p0, Lcom/android/settings/deviceinfo/MiscFilesHandler$ModeCallback;->this$0:Lcom/android/settings/deviceinfo/MiscFilesHandler;
 
@@ -52,7 +51,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/deviceinfo/MiscFilesHandler$ModeCallback;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/settings/deviceinfo/MiscFilesHandler$ModeCallback;
 
     iget-object v0, p0, Lcom/android/settings/deviceinfo/MiscFilesHandler$ModeCallback;->mContext:Landroid/content/Context;
 
@@ -61,7 +59,6 @@
 
 .method private deleteDir(Ljava/io/File;)Z
     .locals 5
-    .param p1    # Ljava/io/File;
 
     invoke-virtual {p1}, Ljava/io/File;->list()[Ljava/lang/String;
 
@@ -110,8 +107,6 @@
 # virtual methods
 .method public onActionItemClicked(Landroid/view/ActionMode;Landroid/view/MenuItem;)Z
     .locals 12
-    .param p1    # Landroid/view/ActionMode;
-    .param p2    # Landroid/view/MenuItem;
 
     const/4 v9, 0x0
 
@@ -531,8 +526,6 @@
 
 .method public onCreateActionMode(Landroid/view/ActionMode;Landroid/view/Menu;)Z
     .locals 5
-    .param p1    # Landroid/view/ActionMode;
-    .param p2    # Landroid/view/Menu;
 
     invoke-virtual {p1}, Landroid/view/ActionMode;->getMenuInflater()Landroid/view/MenuInflater;
 
@@ -620,17 +613,12 @@
 
 .method public onDestroyActionMode(Landroid/view/ActionMode;)V
     .locals 0
-    .param p1    # Landroid/view/ActionMode;
 
     return-void
 .end method
 
 .method public onItemCheckedStateChanged(Landroid/view/ActionMode;IJZ)V
     .locals 13
-    .param p1    # Landroid/view/ActionMode;
-    .param p2    # I
-    .param p3    # J
-    .param p5    # Z
 
     iget-object v6, p0, Lcom/android/settings/deviceinfo/MiscFilesHandler$ModeCallback;->this$0:Lcom/android/settings/deviceinfo/MiscFilesHandler;
 
@@ -978,8 +966,6 @@
 
 .method public onPrepareActionMode(Landroid/view/ActionMode;Landroid/view/Menu;)Z
     .locals 6
-    .param p1    # Landroid/view/ActionMode;
-    .param p2    # Landroid/view/Menu;
 
     const/4 v2, 0x1
 

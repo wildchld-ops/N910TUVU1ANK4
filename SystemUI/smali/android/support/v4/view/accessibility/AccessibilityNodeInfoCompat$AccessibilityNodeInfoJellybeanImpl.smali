@@ -27,9 +27,6 @@
 # virtual methods
 .method public addChild(Ljava/lang/Object;Landroid/view/View;I)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Landroid/view/View;
-    .param p3    # I
 
     invoke-static {p1, p2, p3}, Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompatJellyBean;->addChild(Ljava/lang/Object;Landroid/view/View;I)V
 
@@ -38,8 +35,6 @@
 
 .method public findFocus(Ljava/lang/Object;I)Ljava/lang/Object;
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # I
 
     invoke-static {p1, p2}, Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompatJellyBean;->findFocus(Ljava/lang/Object;I)Ljava/lang/Object;
 
@@ -50,8 +45,6 @@
 
 .method public focusSearch(Ljava/lang/Object;I)Ljava/lang/Object;
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # I
 
     invoke-static {p1, p2}, Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompatJellyBean;->focusSearch(Ljava/lang/Object;I)Ljava/lang/Object;
 
@@ -62,7 +55,6 @@
 
 .method public getMovementGranularities(Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     invoke-static {p1}, Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompatJellyBean;->getMovementGranularities(Ljava/lang/Object;)I
 
@@ -73,7 +65,6 @@
 
 .method public isAccessibilityFocused(Ljava/lang/Object;)Z
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     invoke-static {p1}, Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompatJellyBean;->isAccessibilityFocused(Ljava/lang/Object;)Z
 
@@ -84,7 +75,6 @@
 
 .method public isVisibleToUser(Ljava/lang/Object;)Z
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     invoke-static {p1}, Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompatJellyBean;->isVisibleToUser(Ljava/lang/Object;)Z
 
@@ -95,8 +85,6 @@
 
 .method public obtain(Landroid/view/View;I)Ljava/lang/Object;
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     invoke-static {p1, p2}, Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompatJellyBean;->obtain(Landroid/view/View;I)Ljava/lang/Object;
 
@@ -107,9 +95,6 @@
 
 .method public performAction(Ljava/lang/Object;ILandroid/os/Bundle;)Z
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # I
-    .param p3    # Landroid/os/Bundle;
 
     invoke-static {p1, p2, p3}, Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompatJellyBean;->performAction(Ljava/lang/Object;ILandroid/os/Bundle;)Z
 
@@ -120,8 +105,6 @@
 
 .method public setAccessibilityFocused(Ljava/lang/Object;Z)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Z
 
     invoke-static {p1, p2}, Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompatJellyBean;->setAccesibilityFocused(Ljava/lang/Object;Z)V
 
@@ -130,8 +113,6 @@
 
 .method public setMovementGranularities(Ljava/lang/Object;I)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
-    .param p2    # I
 
     invoke-static {p1, p2}, Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompatJellyBean;->setMovementGranularities(Ljava/lang/Object;I)V
 
@@ -140,9 +121,6 @@
 
 .method public setParent(Ljava/lang/Object;Landroid/view/View;I)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Landroid/view/View;
-    .param p3    # I
 
     invoke-static {p1, p2, p3}, Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompatJellyBean;->setParent(Ljava/lang/Object;Landroid/view/View;I)V
 
@@ -151,9 +129,6 @@
 
 .method public setSource(Ljava/lang/Object;Landroid/view/View;I)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Landroid/view/View;
-    .param p3    # I
 
     invoke-static {p1, p2, p3}, Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompatJellyBean;->setSource(Ljava/lang/Object;Landroid/view/View;I)V
 
@@ -162,8 +137,6 @@
 
 .method public setVisibleToUser(Ljava/lang/Object;Z)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Z
 
     invoke-static {p1, p2}, Landroid/support/v4/view/accessibility/AccessibilityNodeInfoCompatJellyBean;->setVisibleToUser(Ljava/lang/Object;Z)V
 

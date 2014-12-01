@@ -46,7 +46,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/personalpage/PersonalPageTutorialAddActivity;)V
     .locals 0
-    .param p0    # Lcom/android/settings/personalpage/PersonalPageTutorialAddActivity;
 
     invoke-direct {p0}, Lcom/android/settings/personalpage/PersonalPageTutorialAddActivity;->UpdateTutorialPage()V
 
@@ -81,7 +80,6 @@
 # virtual methods
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     const/16 v1, 0x400
 

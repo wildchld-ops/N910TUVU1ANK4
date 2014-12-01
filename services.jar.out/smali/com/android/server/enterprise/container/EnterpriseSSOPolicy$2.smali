@@ -36,8 +36,6 @@
 # virtual methods
 .method public declared-synchronized onServiceConnected(Landroid/content/ComponentName;Landroid/os/IBinder;)V
     .locals 5
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Landroid/os/IBinder;
 
     monitor-enter p0
 
@@ -146,7 +144,6 @@
 
 .method public onServiceDisconnected(Landroid/content/ComponentName;)V
     .locals 6
-    .param p1    # Landroid/content/ComponentName;
 
     const/4 v5, 0x1
 

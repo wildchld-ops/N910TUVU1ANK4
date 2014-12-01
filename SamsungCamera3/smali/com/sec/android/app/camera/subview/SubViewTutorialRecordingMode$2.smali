@@ -21,7 +21,6 @@
 # direct methods
 .method constructor <init>(Lcom/sec/android/app/camera/subview/SubViewTutorialRecordingMode;Landroid/content/Context;)V
     .locals 0
-    .param p2    # Landroid/content/Context;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/subview/SubViewTutorialRecordingMode$2;->this$0:Lcom/sec/android/app/camera/subview/SubViewTutorialRecordingMode;
 
@@ -34,7 +33,6 @@
 # virtual methods
 .method public onOrientationChanged(I)V
     .locals 4
-    .param p1    # I
 
     iget-object v1, p0, Lcom/sec/android/app/camera/subview/SubViewTutorialRecordingMode$2;->this$0:Lcom/sec/android/app/camera/subview/SubViewTutorialRecordingMode;
 

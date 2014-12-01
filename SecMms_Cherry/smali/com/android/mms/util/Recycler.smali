@@ -67,7 +67,6 @@
 
 .method public static checkForThreadsOverLimit(Landroid/content/Context;)Z
     .locals 6
-    .param p0    # Landroid/content/Context;
 
     invoke-static {}, Lcom/android/mms/util/Recycler;->getSmsRecycler()Lcom/android/mms/util/Recycler$SmsRecycler;
 
@@ -201,7 +200,6 @@
 
 .method public static isAutoDeleteEnabled(Landroid/content/Context;)Z
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Landroid/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -228,7 +226,6 @@
 
 .method public deleteOldMessages(Landroid/content/Context;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
 
     invoke-static {p1}, Lcom/android/mms/util/Recycler;->isAutoDeleteEnabled(Landroid/content/Context;)Z
 
@@ -292,8 +289,6 @@
 
 .method public deleteOldMessagesByThreadId(Landroid/content/Context;J)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # J
 
     const-string v0, "Mms/Recycler"
 

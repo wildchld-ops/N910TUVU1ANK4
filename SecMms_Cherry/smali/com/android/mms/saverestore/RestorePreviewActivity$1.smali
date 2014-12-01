@@ -21,9 +21,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/mms/saverestore/RestorePreviewActivity;Landroid/content/Context;ILjava/util/List;)V
     .locals 0
-    .param p2    # Landroid/content/Context;
-    .param p3    # I
-    .param p4    # Ljava/util/List;
 
     iput-object p1, p0, Lcom/android/mms/saverestore/RestorePreviewActivity$1;->this$0:Lcom/android/mms/saverestore/RestorePreviewActivity;
 
@@ -36,9 +33,6 @@
 # virtual methods
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 8
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     const/4 v1, 0x0
 

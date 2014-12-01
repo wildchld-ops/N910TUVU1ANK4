@@ -102,7 +102,7 @@
 
     const/16 v5, 0x8
 
-    invoke-virtual {v2, v5}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v2, v5}, Landroid/widget/TextView;->setVisibility(I)V
 
     :goto_1
     iget-object v5, p0, Lcom/android/phone/RecommendRingtoneDialog$RecommendAdapter;->this$0:Lcom/android/phone/RecommendRingtoneDialog;
@@ -117,7 +117,7 @@
     const/4 v4, 0x1
 
     :cond_0
-    invoke-virtual {v0, v4}, Landroid/widget/CompoundButton;->setChecked(Z)V
+    invoke-virtual {v0, v4}, Landroid/widget/RadioButton;->setChecked(Z)V
 
     return-object v3
 
@@ -142,7 +142,7 @@
 
     invoke-virtual {v1, v5}, Landroid/widget/TextView;->setText(I)V
 
-    invoke-virtual {v2, v4}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v2, v4}, Landroid/widget/TextView;->setVisibility(I)V
 
     const v5, 0x7f090935
 

@@ -59,12 +59,6 @@
 # direct methods
 .method constructor <init>(Landroid/widget/GridLayout;ILjava/util/List;IILcom/android/launcher2/WidgetFolder$AsyncTaskPageData$AsyncTaskCallback;Lcom/android/launcher2/WidgetFolder$AsyncTaskPageData$AsyncTaskCallback;)V
     .locals 1
-    .param p1    # Landroid/widget/GridLayout;
-    .param p2    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Lcom/android/launcher2/WidgetFolder$AsyncTaskPageData$AsyncTaskCallback;
-    .param p7    # Lcom/android/launcher2/WidgetFolder$AsyncTaskPageData$AsyncTaskCallback;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -109,8 +103,6 @@
 # virtual methods
 .method cleanup(Ljava/lang/String;Z)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     # getter for: Lcom/android/launcher2/WidgetFolder;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/android/launcher2/WidgetFolder;->access$000()Ljava/lang/String;

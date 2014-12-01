@@ -47,8 +47,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Lcom/android/mms/rcs/SetRcsEnabledStateTask$ISetRcsEnabledStateCallback;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/mms/rcs/SetRcsEnabledStateTask$ISetRcsEnabledStateCallback;
 
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
 
@@ -63,7 +61,6 @@
 # virtual methods
 .method protected varargs doInBackground([Ljava/lang/Boolean;)Ljava/lang/Boolean;
     .locals 7
-    .param p1    # [Ljava/lang/Boolean;
 
     const/4 v6, 0x0
 
@@ -110,7 +107,6 @@
 
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [Ljava/lang/Boolean;
 
@@ -123,7 +119,6 @@
 
 .method protected onPostExecute(Ljava/lang/Boolean;)V
     .locals 4
-    .param p1    # Ljava/lang/Boolean;
 
     new-instance v0, Landroid/os/Handler;
 
@@ -151,7 +146,6 @@
 
 .method protected bridge synthetic onPostExecute(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Ljava/lang/Boolean;
 

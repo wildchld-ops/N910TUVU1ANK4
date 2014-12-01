@@ -19,7 +19,6 @@
 # virtual methods
 .method public accept(Ljava/io/File;)Z
     .locals 2
-    .param p1    # Ljava/io/File;
 
     invoke-virtual {p1}, Ljava/io/File;->getParentFile()Ljava/io/File;
 
@@ -38,8 +37,6 @@
 
 .method public accept(Ljava/io/File;Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/io/File;
-    .param p2    # Ljava/lang/String;
 
     new-instance v0, Ljava/io/File;
 

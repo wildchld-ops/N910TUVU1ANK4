@@ -100,7 +100,6 @@
 
 .method public compose(Landroid/view/animation/Transformation;)V
     .locals 6
-    .param p1    # Landroid/view/animation/Transformation;
 
     iget v4, p0, Landroid/view/animation/Transformation;->mAlpha:F
 
@@ -231,7 +230,6 @@
 
 .method public postCompose(Landroid/view/animation/Transformation;)V
     .locals 6
-    .param p1    # Landroid/view/animation/Transformation;
 
     iget v4, p0, Landroid/view/animation/Transformation;->mAlpha:F
 
@@ -313,7 +311,6 @@
 
 .method public printShortString(Ljava/io/PrintWriter;)V
     .locals 1
-    .param p1    # Ljava/io/PrintWriter;
 
     const-string/jumbo v0, "{alpha="
 
@@ -340,7 +337,6 @@
 
 .method public set(Landroid/view/animation/Transformation;)V
     .locals 2
-    .param p1    # Landroid/view/animation/Transformation;
 
     invoke-virtual {p1}, Landroid/view/animation/Transformation;->getAlpha()F
 
@@ -367,7 +363,6 @@
 
 .method public setAlpha(F)V
     .locals 0
-    .param p1    # F
 
     iput p1, p0, Landroid/view/animation/Transformation;->mAlpha:F
 
@@ -376,7 +371,6 @@
 
 .method public setTransformationType(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/view/animation/Transformation;->mTransformationType:I
 
@@ -403,7 +397,6 @@
 
 .method public toShortString(Ljava/lang/StringBuilder;)V
     .locals 1
-    .param p1    # Ljava/lang/StringBuilder;
 
     const-string/jumbo v0, "{alpha="
 

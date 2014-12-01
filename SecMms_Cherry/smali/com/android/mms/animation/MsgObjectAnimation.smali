@@ -14,10 +14,6 @@
 
 .method public static concatenatedAnimation(Landroid/view/View;Landroid/view/animation/Animation;Landroid/view/View;Landroid/view/animation/Animation;)V
     .locals 1
-    .param p0    # Landroid/view/View;
-    .param p1    # Landroid/view/animation/Animation;
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/animation/Animation;
 
     new-instance v0, Lcom/android/mms/animation/MsgObjectAnimation$2;
 
@@ -38,9 +34,6 @@
 
 .method public static concatenatedAnimation(Landroid/view/View;Landroid/view/animation/Animation;Landroid/view/animation/Animation;)V
     .locals 1
-    .param p0    # Landroid/view/View;
-    .param p1    # Landroid/view/animation/Animation;
-    .param p2    # Landroid/view/animation/Animation;
 
     new-instance v0, Lcom/android/mms/animation/MsgObjectAnimation$1;
 
@@ -55,8 +48,6 @@
 
 .method public static createAddEffect(JLandroid/view/animation/Interpolator;)Landroid/view/animation/AnimationSet;
     .locals 10
-    .param p0    # J
-    .param p2    # Landroid/view/animation/Interpolator;
 
     const/high16 v5, 0x3f800000
 
@@ -83,11 +74,6 @@
 
 .method public static createBouncerX(JLandroid/view/animation/Interpolator;Ljava/lang/Object;FF)Landroid/animation/ObjectAnimator;
     .locals 7
-    .param p0    # J
-    .param p2    # Landroid/view/animation/Interpolator;
-    .param p3    # Ljava/lang/Object;
-    .param p4    # F
-    .param p5    # F
 
     const-string v4, "x"
 
@@ -110,11 +96,6 @@
 
 .method public static createBouncerY(JLandroid/view/animation/Interpolator;Ljava/lang/Object;FF)Landroid/animation/ObjectAnimator;
     .locals 7
-    .param p0    # J
-    .param p2    # Landroid/view/animation/Interpolator;
-    .param p3    # Ljava/lang/Object;
-    .param p4    # F
-    .param p5    # F
 
     const-string v4, "y"
 
@@ -137,8 +118,6 @@
 
 .method public static createDeleteEffect(JLandroid/view/animation/Interpolator;)Landroid/view/animation/AnimationSet;
     .locals 10
-    .param p0    # J
-    .param p2    # Landroid/view/animation/Interpolator;
 
     const/high16 v5, 0x3f800000
 
@@ -165,9 +144,6 @@
 
 .method public static createFadeIn(JLandroid/view/animation/Interpolator;Ljava/lang/Object;)Landroid/animation/ObjectAnimator;
     .locals 7
-    .param p0    # J
-    .param p2    # Landroid/view/animation/Interpolator;
-    .param p3    # Ljava/lang/Object;
 
     const-string v4, "alpha"
 
@@ -190,8 +166,6 @@
 
 .method public static createFadeIn(JLandroid/view/animation/Interpolator;)Landroid/view/animation/AlphaAnimation;
     .locals 2
-    .param p0    # J
-    .param p2    # Landroid/view/animation/Interpolator;
 
     const/4 v0, 0x0
 
@@ -206,9 +180,6 @@
 
 .method public static createFadeOut(JLandroid/view/animation/Interpolator;Ljava/lang/Object;)Landroid/animation/ObjectAnimator;
     .locals 7
-    .param p0    # J
-    .param p2    # Landroid/view/animation/Interpolator;
-    .param p3    # Ljava/lang/Object;
 
     const-string v4, "alpha"
 
@@ -231,8 +202,6 @@
 
 .method public static createFadeOut(JLandroid/view/animation/Interpolator;)Landroid/view/animation/AlphaAnimation;
     .locals 2
-    .param p0    # J
-    .param p2    # Landroid/view/animation/Interpolator;
 
     const/high16 v0, 0x3f800000
 
@@ -247,14 +216,6 @@
 
 .method public static createMoveHideEffect(JLandroid/view/animation/Interpolator;FFFFFF)Landroid/view/animation/AnimationSet;
     .locals 13
-    .param p0    # J
-    .param p2    # Landroid/view/animation/Interpolator;
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # F
-    .param p7    # F
-    .param p8    # F
 
     const/4 v4, 0x0
 
@@ -321,10 +282,6 @@
 
 .method public static createMoveXY(JLandroid/view/animation/Interpolator;FF)Landroid/view/animation/TranslateAnimation;
     .locals 11
-    .param p0    # J
-    .param p2    # Landroid/view/animation/Interpolator;
-    .param p3    # F
-    .param p4    # F
 
     const/4 v4, 0x0
 
@@ -355,12 +312,6 @@
 
 .method public static createScaleAtCenter(JLandroid/view/animation/Interpolator;FFFF)Landroid/view/animation/ScaleAnimation;
     .locals 11
-    .param p0    # J
-    .param p2    # Landroid/view/animation/Interpolator;
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # F
 
     const/4 v7, 0x1
 
@@ -391,16 +342,6 @@
 
 .method public static createScaleAtCustomType(JLandroid/view/animation/Interpolator;FFFFIFIF)Landroid/view/animation/ScaleAnimation;
     .locals 1
-    .param p0    # J
-    .param p2    # Landroid/view/animation/Interpolator;
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # F
-    .param p7    # I
-    .param p8    # F
-    .param p9    # I
-    .param p10    # F
 
     invoke-static/range {p0 .. p10}, Lcom/android/mms/animation/MsgAnimation;->createScale(JLandroid/view/animation/Interpolator;FFFFIFIF)Landroid/view/animation/ScaleAnimation;
 
@@ -411,12 +352,6 @@
 
 .method public static createScaleAtLeft(JLandroid/view/animation/Interpolator;FFFF)Landroid/view/animation/ScaleAnimation;
     .locals 11
-    .param p0    # J
-    .param p2    # Landroid/view/animation/Interpolator;
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # F
 
     const/4 v7, 0x0
 
@@ -447,12 +382,6 @@
 
 .method public static createScaleAtRight(JLandroid/view/animation/Interpolator;FFFF)Landroid/view/animation/ScaleAnimation;
     .locals 11
-    .param p0    # J
-    .param p2    # Landroid/view/animation/Interpolator;
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # F
 
     const/4 v7, 0x1
 
@@ -483,12 +412,6 @@
 
 .method public static createScaleAtRightBottom(JLandroid/view/animation/Interpolator;FFFF)Landroid/view/animation/ScaleAnimation;
     .locals 11
-    .param p0    # J
-    .param p2    # Landroid/view/animation/Interpolator;
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # F
 
     const/4 v7, 0x1
 
@@ -519,12 +442,6 @@
 
 .method public static createScaleAtRightTop(JLandroid/view/animation/Interpolator;FFFF)Landroid/view/animation/ScaleAnimation;
     .locals 11
-    .param p0    # J
-    .param p2    # Landroid/view/animation/Interpolator;
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # F
 
     const/4 v7, 0x1
 
@@ -555,13 +472,6 @@
 
 .method public static createScaleFadeInSet(JJLandroid/view/animation/Interpolator;FFFF)Landroid/view/animation/AnimationSet;
     .locals 10
-    .param p0    # J
-    .param p2    # J
-    .param p4    # Landroid/view/animation/Interpolator;
-    .param p5    # F
-    .param p6    # F
-    .param p7    # F
-    .param p8    # F
 
     new-instance v8, Landroid/view/animation/AnimationSet;
 
@@ -602,13 +512,6 @@
 
 .method public static createScaleFadeOutSet(JJLandroid/view/animation/Interpolator;FFFF)Landroid/view/animation/AnimationSet;
     .locals 10
-    .param p0    # J
-    .param p2    # J
-    .param p4    # Landroid/view/animation/Interpolator;
-    .param p5    # F
-    .param p6    # F
-    .param p7    # F
-    .param p8    # F
 
     new-instance v8, Landroid/view/animation/AnimationSet;
 
@@ -657,10 +560,6 @@
 
 .method public static createSlideX(JLandroid/view/animation/Interpolator;FF)Landroid/view/animation/TranslateAnimation;
     .locals 11
-    .param p0    # J
-    .param p2    # Landroid/view/animation/Interpolator;
-    .param p3    # F
-    .param p4    # F
 
     const/4 v8, 0x0
 
@@ -691,10 +590,6 @@
 
 .method public static createSlideXByPercent(JLandroid/view/animation/Interpolator;FF)Landroid/view/animation/TranslateAnimation;
     .locals 11
-    .param p0    # J
-    .param p2    # Landroid/view/animation/Interpolator;
-    .param p3    # F
-    .param p4    # F
 
     const/4 v3, 0x1
 
@@ -725,10 +620,6 @@
 
 .method public static createSlideY(JLandroid/view/animation/Interpolator;FF)Landroid/view/animation/TranslateAnimation;
     .locals 11
-    .param p0    # J
-    .param p2    # Landroid/view/animation/Interpolator;
-    .param p3    # F
-    .param p4    # F
 
     const/4 v4, 0x0
 
@@ -759,9 +650,6 @@
 
 .method public static slideAndShakeObject(Landroid/view/View;JF)V
     .locals 11
-    .param p0    # Landroid/view/View;
-    .param p1    # J
-    .param p3    # F
 
     const/4 v5, 0x0
 

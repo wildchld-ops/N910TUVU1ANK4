@@ -69,7 +69,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/wifi/WifiPoorConnection;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiPoorConnection;
 
     iget-object v0, p0, Lcom/android/settings/wifi/WifiPoorConnection;->mContext:Landroid/content/Context;
 
@@ -78,7 +77,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/wifi/WifiPoorConnection;)Ljava/lang/Runnable;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiPoorConnection;
 
     iget-object v0, p0, Lcom/android/settings/wifi/WifiPoorConnection;->mWatchdogPoorConnectionAlertDialogRunnable:Ljava/lang/Runnable;
 
@@ -87,8 +85,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/wifi/WifiPoorConnection;Ljava/lang/Runnable;)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/WifiPoorConnection;
-    .param p1    # Ljava/lang/Runnable;
 
     invoke-direct {p0, p1}, Lcom/android/settings/wifi/WifiPoorConnection;->removeDialogTimer(Ljava/lang/Runnable;)V
 
@@ -97,7 +93,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/wifi/WifiPoorConnection;)Landroid/app/AlertDialog;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiPoorConnection;
 
     iget-object v0, p0, Lcom/android/settings/wifi/WifiPoorConnection;->mWatchdogPoorConnectionAlertDialog:Landroid/app/AlertDialog;
 
@@ -106,7 +101,6 @@
 
 .method private removeDialogTimer(Ljava/lang/Runnable;)V
     .locals 1
-    .param p1    # Ljava/lang/Runnable;
 
     iget-object v0, p0, Lcom/android/settings/wifi/WifiPoorConnection;->mDurationDialogHandler:Landroid/os/Handler;
 
@@ -265,7 +259,6 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "WifiPoorConnection"
 

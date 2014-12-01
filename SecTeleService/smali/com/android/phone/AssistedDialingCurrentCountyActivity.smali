@@ -56,7 +56,7 @@
 
     const-string v6, "network_error"
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/AssistedDialingCurrentCountyActivity;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -116,13 +116,13 @@
 
     const v2, 0x7f0906c7
 
-    invoke-virtual {v1, v2}, Landroid/preference/Preference;->setSummary(I)V
+    invoke-virtual {v1, v2}, Landroid/preference/PreferenceScreen;->setSummary(I)V
 
     iget-object v1, p0, Lcom/android/phone/AssistedDialingCurrentCountyActivity;->mCurrentCountryList:Landroid/preference/PreferenceScreen;
 
     const/4 v2, 0x1
 
-    invoke-virtual {v1, v2}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v1, v2}, Landroid/preference/PreferenceScreen;->setEnabled(Z)V
 
     :goto_0
     return-void
@@ -130,13 +130,13 @@
     :cond_0
     iget-object v1, p0, Lcom/android/phone/AssistedDialingCurrentCountyActivity;->mCurrentText:Landroid/preference/PreferenceScreen;
 
-    invoke-virtual {v1, v0}, Landroid/preference/Preference;->setSummary(Ljava/lang/CharSequence;)V
+    invoke-virtual {v1, v0}, Landroid/preference/PreferenceScreen;->setSummary(Ljava/lang/CharSequence;)V
 
     iget-object v1, p0, Lcom/android/phone/AssistedDialingCurrentCountyActivity;->mCurrentCountryList:Landroid/preference/PreferenceScreen;
 
     const/4 v2, 0x0
 
-    invoke-virtual {v1, v2}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v1, v2}, Landroid/preference/PreferenceScreen;->setEnabled(Z)V
 
     goto :goto_0
 .end method
@@ -169,7 +169,7 @@
 
     iget-object v0, p0, Lcom/android/phone/AssistedDialingCurrentCountyActivity;->mCurrentText:Landroid/preference/PreferenceScreen;
 
-    invoke-virtual {v0, p1}, Landroid/preference/Preference;->setSummary(Ljava/lang/CharSequence;)V
+    invoke-virtual {v0, p1}, Landroid/preference/PreferenceScreen;->setSummary(Ljava/lang/CharSequence;)V
 
     return-void
 .end method
@@ -184,7 +184,7 @@
 
     const v2, 0x7f04000a
 
-    invoke-virtual {p0, v2}, Landroid/preference/PreferenceActivity;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v2}, Lcom/android/phone/AssistedDialingCurrentCountyActivity;->addPreferencesFromResource(I)V
 
     const-string v2, "CurrentCounty"
 
@@ -192,7 +192,7 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/AssistedDialingCurrentCountyActivity;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v2
 
@@ -204,13 +204,13 @@
 
     iput-object v2, p0, Lcom/android/phone/AssistedDialingCurrentCountyActivity;->telephonyManager:Landroid/telephony/TelephonyManager;
 
-    invoke-virtual {p0}, Landroid/preference/PreferenceActivity;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/phone/AssistedDialingCurrentCountyActivity;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v1
 
     const-string v2, "button_current_country_key"
 
-    invoke-virtual {v1, v2}, Landroid/preference/PreferenceGroup;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {v1, v2}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v2
 
@@ -220,7 +220,7 @@
 
     const-string v2, "button_select_current_country_key"
 
-    invoke-virtual {v1, v2}, Landroid/preference/PreferenceGroup;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {v1, v2}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v2
 
@@ -228,7 +228,7 @@
 
     iput-object v2, p0, Lcom/android/phone/AssistedDialingCurrentCountyActivity;->mCurrentCountryList:Landroid/preference/PreferenceScreen;
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getActionBar()Landroid/app/ActionBar;
+    invoke-virtual {p0}, Lcom/android/phone/AssistedDialingCurrentCountyActivity;->getActionBar()Landroid/app/ActionBar;
 
     move-result-object v0
 
@@ -266,7 +266,7 @@
 
     packed-switch v0, :pswitch_data_0
 
-    invoke-super {p0, p1}, Landroid/app/Activity;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
+    invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
 
     move-result v0
 
@@ -274,7 +274,7 @@
     return v0
 
     :pswitch_0
-    invoke-virtual {p0}, Landroid/app/Activity;->onBackPressed()V
+    invoke-virtual {p0}, Lcom/android/phone/AssistedDialingCurrentCountyActivity;->onBackPressed()V
 
     const/4 v0, 0x1
 
@@ -291,7 +291,7 @@
 .method protected onPause()V
     .locals 2
 
-    invoke-super {p0}, Landroid/app/Activity;->onPause()V
+    invoke-super {p0}, Landroid/preference/PreferenceActivity;->onPause()V
 
     const-string v0, "CurrentCounty"
 
@@ -373,7 +373,7 @@
 
     const/4 v3, 0x0
 
-    invoke-super {p0}, Landroid/app/Activity;->onResume()V
+    invoke-super {p0}, Landroid/preference/PreferenceActivity;->onResume()V
 
     const-string v4, "CurrentCounty"
 
@@ -391,11 +391,11 @@
 
     iget-object v2, p0, Lcom/android/phone/AssistedDialingCurrentCountyActivity;->mCurrentText:Landroid/preference/PreferenceScreen;
 
-    invoke-virtual {v2, v3}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v2, v3}, Landroid/preference/PreferenceScreen;->setEnabled(Z)V
 
     iget-object v2, p0, Lcom/android/phone/AssistedDialingCurrentCountyActivity;->mCurrentCountryList:Landroid/preference/PreferenceScreen;
 
-    invoke-virtual {v2, v3}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v2, v3}, Landroid/preference/PreferenceScreen;->setEnabled(Z)V
 
     iget-object v2, p0, Lcom/android/phone/AssistedDialingCurrentCountyActivity;->mContext:Landroid/content/Context;
 
@@ -411,7 +411,7 @@
     return-void
 
     :cond_0
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/AssistedDialingCurrentCountyActivity;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v4
 

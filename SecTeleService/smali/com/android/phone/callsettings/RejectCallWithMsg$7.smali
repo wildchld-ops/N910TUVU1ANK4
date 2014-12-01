@@ -49,7 +49,7 @@
 
     iget-object v5, v5, Lcom/android/phone/callsettings/RejectCallWithMsg;->mListView:Landroid/widget/ListView;
 
-    invoke-virtual {v5}, Landroid/widget/AdapterView;->getCount()I
+    invoke-virtual {v5}, Landroid/widget/ListView;->getCount()I
 
     move-result v2
 
@@ -72,7 +72,7 @@
 
     iget-object v7, v7, Lcom/android/phone/callsettings/RejectCallWithMsg;->mListView:Landroid/widget/ListView;
 
-    invoke-virtual {v7, v2}, Landroid/widget/AbsListView;->isItemChecked(I)Z
+    invoke-virtual {v7, v2}, Landroid/widget/ListView;->isItemChecked(I)Z
 
     move-result v7
 
@@ -91,7 +91,7 @@
 
     iget-object v5, v5, Lcom/android/phone/callsettings/RejectCallWithMsg;->mListView:Landroid/widget/ListView;
 
-    invoke-virtual {v5, v2}, Landroid/widget/AbsListView;->isItemChecked(I)Z
+    invoke-virtual {v5, v2}, Landroid/widget/ListView;->isItemChecked(I)Z
 
     move-result v5
 
@@ -99,7 +99,7 @@
 
     iget-object v5, p0, Lcom/android/phone/callsettings/RejectCallWithMsg$7;->this$0:Lcom/android/phone/callsettings/RejectCallWithMsg;
 
-    invoke-virtual {v5}, Landroid/app/Fragment;->isAdded()Z
+    invoke-virtual {v5}, Lcom/android/phone/callsettings/RejectCallWithMsg;->isAdded()Z
 
     move-result v5
 
@@ -224,7 +224,7 @@
 
     iget-object v5, p0, Lcom/android/phone/callsettings/RejectCallWithMsg$7;->this$0:Lcom/android/phone/callsettings/RejectCallWithMsg;
 
-    invoke-virtual {v5}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v5}, Lcom/android/phone/callsettings/RejectCallWithMsg;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v5
 
@@ -254,7 +254,7 @@
 
     move-result-object v5
 
-    invoke-virtual {v5}, Landroid/widget/BaseAdapter;->notifyDataSetInvalidated()V
+    invoke-virtual {v5}, Lcom/android/phone/callsettings/RejectCallWithMsg$RejectMessageAdapter;->notifyDataSetInvalidated()V
 
     iget-object v5, p0, Lcom/android/phone/callsettings/RejectCallWithMsg$7;->this$0:Lcom/android/phone/callsettings/RejectCallWithMsg;
 
@@ -287,7 +287,7 @@
 
     iget-object v5, v5, Lcom/android/phone/callsettings/RejectCallWithMsg;->emptyText:Landroid/widget/FrameLayout;
 
-    invoke-virtual {v5, v10}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v5, v10}, Landroid/widget/FrameLayout;->setVisibility(I)V
 
     iget-object v5, p0, Lcom/android/phone/callsettings/RejectCallWithMsg$7;->this$0:Lcom/android/phone/callsettings/RejectCallWithMsg;
 
@@ -295,7 +295,7 @@
 
     const/16 v6, 0x8
 
-    invoke-virtual {v5, v6}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v5, v6}, Landroid/widget/ListView;->setVisibility(I)V
 
     :cond_4
     iget-object v5, p0, Lcom/android/phone/callsettings/RejectCallWithMsg$7;->this$0:Lcom/android/phone/callsettings/RejectCallWithMsg;

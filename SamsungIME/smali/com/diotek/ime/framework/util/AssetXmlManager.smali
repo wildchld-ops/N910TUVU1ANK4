@@ -14,7 +14,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -43,8 +42,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Landroid/content/Context;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -65,7 +62,6 @@
 
 .method private getXmlFileFromAsset(Ljava/lang/String;)Ljava/lang/String;
     .locals 8
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -178,7 +174,6 @@
 # virtual methods
 .method public contains(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Lcom/diotek/ime/framework/util/AssetXmlManager;->getXmlFiles()[Ljava/lang/String;
 
@@ -221,7 +216,6 @@
 
 .method public createXmlParser(Ljava/lang/String;)Lorg/xmlpull/v1/XmlPullParser;
     .locals 4
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,

@@ -47,8 +47,6 @@
 # virtual methods
 .method public get(Ljava/lang/String;I)Ljava/lang/Object;
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -100,8 +98,6 @@
 
 .method public put(Ljava/lang/String;ILjava/lang/Object;)Ljava/lang/Object;
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -138,8 +134,6 @@
 
 .method public remove(Ljava/lang/String;I)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     iget-object v1, p0, Lcom/android/internal/app/ProcessMap;->mMap:Landroid/util/ArrayMap;
 

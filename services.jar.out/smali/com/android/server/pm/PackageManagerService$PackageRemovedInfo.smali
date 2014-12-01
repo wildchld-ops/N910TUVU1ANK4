@@ -57,9 +57,6 @@
 # virtual methods
 .method sendBroadcast(ZZZ)V
     .locals 6
-    .param p1    # Z
-    .param p2    # Z
-    .param p3    # Z
 
     const/4 v4, 0x1
 

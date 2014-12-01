@@ -88,7 +88,6 @@
 
 .method public static createFromPath(Ljava/lang/String;)Landroid/graphics/drawable/Drawable;
     .locals 9
-    .param p0    # Ljava/lang/String;
 
     const-wide/16 v7, 0x2000
 
@@ -149,10 +148,6 @@
 
 .method public static createFromResourceStream(Landroid/content/res/Resources;Landroid/util/TypedValue;Ljava/io/InputStream;Ljava/lang/String;)Landroid/graphics/drawable/Drawable;
     .locals 3
-    .param p0    # Landroid/content/res/Resources;
-    .param p1    # Landroid/util/TypedValue;
-    .param p2    # Ljava/io/InputStream;
-    .param p3    # Ljava/lang/String;
 
     const-wide/16 v1, 0x2000
 
@@ -191,11 +186,6 @@
 
 .method public static createFromResourceStream(Landroid/content/res/Resources;Landroid/util/TypedValue;Ljava/io/InputStream;Ljava/lang/String;Landroid/graphics/BitmapFactory$Options;)Landroid/graphics/drawable/Drawable;
     .locals 10
-    .param p0    # Landroid/content/res/Resources;
-    .param p1    # Landroid/util/TypedValue;
-    .param p2    # Ljava/io/InputStream;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Landroid/graphics/BitmapFactory$Options;
 
     const/4 v7, 0x0
 
@@ -303,8 +293,6 @@
 
 .method public static createFromStream(Ljava/io/InputStream;Ljava/lang/String;)Landroid/graphics/drawable/Drawable;
     .locals 5
-    .param p0    # Ljava/io/InputStream;
-    .param p1    # Ljava/lang/String;
 
     const-wide/16 v3, 0x2000
 
@@ -347,8 +335,6 @@
 
 .method public static createFromXml(Landroid/content/res/Resources;Lorg/xmlpull/v1/XmlPullParser;)Landroid/graphics/drawable/Drawable;
     .locals 6
-    .param p0    # Landroid/content/res/Resources;
-    .param p1    # Lorg/xmlpull/v1/XmlPullParser;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -425,9 +411,6 @@
 
 .method public static createFromXmlInner(Landroid/content/res/Resources;Lorg/xmlpull/v1/XmlPullParser;Landroid/util/AttributeSet;)Landroid/graphics/drawable/Drawable;
     .locals 5
-    .param p0    # Landroid/content/res/Resources;
-    .param p1    # Lorg/xmlpull/v1/XmlPullParser;
-    .param p2    # Landroid/util/AttributeSet;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -712,12 +695,6 @@
 
 .method private static drawableFromBitmap(Landroid/content/res/Resources;Landroid/graphics/Bitmap;[BLandroid/graphics/Rect;Landroid/graphics/Rect;Ljava/lang/String;)Landroid/graphics/drawable/Drawable;
     .locals 7
-    .param p0    # Landroid/content/res/Resources;
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # [B
-    .param p3    # Landroid/graphics/Rect;
-    .param p4    # Landroid/graphics/Rect;
-    .param p5    # Ljava/lang/String;
 
     if-eqz p2, :cond_0
 
@@ -750,8 +727,6 @@
 
 .method public static resolveOpacity(II)I
     .locals 2
-    .param p0    # I
-    .param p1    # I
 
     const/4 v0, -0x2
 
@@ -824,7 +799,6 @@
 
 .method public final copyBounds(Landroid/graphics/Rect;)V
     .locals 1
-    .param p1    # Landroid/graphics/Rect;
 
     iget-object v0, p0, Landroid/graphics/drawable/Drawable;->mBounds:Landroid/graphics/Rect;
 
@@ -1000,7 +974,6 @@
 
 .method public getPadding(Landroid/graphics/Rect;)Z
     .locals 1
-    .param p1    # Landroid/graphics/Rect;
 
     const/4 v0, 0x0
 
@@ -1027,9 +1000,6 @@
 
 .method public inflate(Landroid/content/res/Resources;Lorg/xmlpull/v1/XmlPullParser;Landroid/util/AttributeSet;)V
     .locals 2
-    .param p1    # Landroid/content/res/Resources;
-    .param p2    # Lorg/xmlpull/v1/XmlPullParser;
-    .param p3    # Landroid/util/AttributeSet;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -1054,10 +1024,6 @@
 
 .method inflateWithAttributes(Landroid/content/res/Resources;Lorg/xmlpull/v1/XmlPullParser;Landroid/content/res/TypedArray;I)V
     .locals 1
-    .param p1    # Landroid/content/res/Resources;
-    .param p2    # Lorg/xmlpull/v1/XmlPullParser;
-    .param p3    # Landroid/content/res/TypedArray;
-    .param p4    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -1155,14 +1121,12 @@
 
 .method protected onBoundsChange(Landroid/graphics/Rect;)V
     .locals 0
-    .param p1    # Landroid/graphics/Rect;
 
     return-void
 .end method
 
 .method protected onLevelChange(I)Z
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -1171,7 +1135,6 @@
 
 .method protected onStateChange([I)Z
     .locals 1
-    .param p1    # [I
 
     const/4 v0, 0x0
 
@@ -1180,8 +1143,6 @@
 
 .method public scheduleSelf(Ljava/lang/Runnable;J)V
     .locals 1
-    .param p1    # Ljava/lang/Runnable;
-    .param p2    # J
 
     invoke-virtual {p0}, Landroid/graphics/drawable/Drawable;->getCallback()Landroid/graphics/drawable/Drawable$Callback;
 
@@ -1200,17 +1161,12 @@
 
 .method public setAutoMirrored(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method public setBounds(IIII)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iget-object v0, p0, Landroid/graphics/drawable/Drawable;->mBounds:Landroid/graphics/Rect;
 
@@ -1265,7 +1221,6 @@
 
 .method public setBounds(Landroid/graphics/Rect;)V
     .locals 4
-    .param p1    # Landroid/graphics/Rect;
 
     iget v0, p1, Landroid/graphics/Rect;->left:I
 
@@ -1282,7 +1237,6 @@
 
 .method public final setCallback(Landroid/graphics/drawable/Drawable$Callback;)V
     .locals 1
-    .param p1    # Landroid/graphics/drawable/Drawable$Callback;
 
     new-instance v0, Ljava/lang/ref/WeakReference;
 
@@ -1295,7 +1249,6 @@
 
 .method public setChangingConfigurations(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/graphics/drawable/Drawable;->mChangingConfigurations:I
 
@@ -1304,8 +1257,6 @@
 
 .method public setColorFilter(ILandroid/graphics/PorterDuff$Mode;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/graphics/PorterDuff$Mode;
 
     new-instance v0, Landroid/graphics/PorterDuffColorFilter;
 
@@ -1321,21 +1272,18 @@
 
 .method public setDither(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method public setFilterBitmap(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method public setImagePath(Landroid/util/TypedValue;)V
     .locals 2
-    .param p1    # Landroid/util/TypedValue;
 
     sget-boolean v1, Landroid/os/Build;->IS_ENG_SECURED:Z
 
@@ -1361,7 +1309,6 @@
 
 .method public setImagePath(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     sget-boolean v0, Landroid/os/Build;->IS_ENG_SECURED:Z
 
@@ -1375,7 +1322,6 @@
 
 .method public setLayoutDirection(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/graphics/drawable/Drawable;->getLayoutDirection()I
 
@@ -1391,7 +1337,6 @@
 
 .method public final setLevel(I)Z
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/graphics/drawable/Drawable;->mLevel:I
 
@@ -1414,7 +1359,6 @@
 
 .method public setState([I)Z
     .locals 1
-    .param p1    # [I
 
     iget-object v0, p0, Landroid/graphics/drawable/Drawable;->mStateSet:[I
 
@@ -1441,8 +1385,6 @@
 
 .method public setVisible(ZZ)Z
     .locals 2
-    .param p1    # Z
-    .param p2    # Z
 
     iget-boolean v1, p0, Landroid/graphics/drawable/Drawable;->mVisible:Z
 
@@ -1468,14 +1410,12 @@
 
 .method public setXfermode(Landroid/graphics/Xfermode;)V
     .locals 0
-    .param p1    # Landroid/graphics/Xfermode;
 
     return-void
 .end method
 
 .method public unscheduleSelf(Ljava/lang/Runnable;)V
     .locals 1
-    .param p1    # Ljava/lang/Runnable;
 
     invoke-virtual {p0}, Landroid/graphics/drawable/Drawable;->getCallback()Landroid/graphics/drawable/Drawable$Callback;
 

@@ -36,7 +36,6 @@
 # virtual methods
 .method public onAudioFocusChange(I)V
     .locals 4
-    .param p1    # I
 
     const/4 v3, 0x1
 

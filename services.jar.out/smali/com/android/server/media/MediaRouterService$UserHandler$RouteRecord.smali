@@ -29,9 +29,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/media/MediaRouterService$UserHandler$ProviderRecord;Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Lcom/android/server/media/MediaRouterService$UserHandler$ProviderRecord;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -50,7 +47,6 @@
 
 .method private static computeDescription(Landroid/media/RemoteDisplayState$RemoteDisplayInfo;)Ljava/lang/String;
     .locals 2
-    .param p0    # Landroid/media/RemoteDisplayState$RemoteDisplayInfo;
 
     iget-object v0, p0, Landroid/media/RemoteDisplayState$RemoteDisplayInfo;->description:Ljava/lang/String;
 
@@ -68,7 +64,6 @@
 
 .method private static computeEnabled(Landroid/media/RemoteDisplayState$RemoteDisplayInfo;)Z
     .locals 1
-    .param p0    # Landroid/media/RemoteDisplayState$RemoteDisplayInfo;
 
     iget v0, p0, Landroid/media/RemoteDisplayState$RemoteDisplayInfo;->status:I
 
@@ -96,7 +91,6 @@
 
 .method private static computeName(Landroid/media/RemoteDisplayState$RemoteDisplayInfo;)Ljava/lang/String;
     .locals 1
-    .param p0    # Landroid/media/RemoteDisplayState$RemoteDisplayInfo;
 
     iget-object v0, p0, Landroid/media/RemoteDisplayState$RemoteDisplayInfo;->name:Ljava/lang/String;
 
@@ -105,7 +99,6 @@
 
 .method private static computePlaybackStream(Landroid/media/RemoteDisplayState$RemoteDisplayInfo;)I
     .locals 1
-    .param p0    # Landroid/media/RemoteDisplayState$RemoteDisplayInfo;
 
     const/4 v0, 0x3
 
@@ -114,7 +107,6 @@
 
 .method private static computePlaybackType(Landroid/media/RemoteDisplayState$RemoteDisplayInfo;)I
     .locals 1
-    .param p0    # Landroid/media/RemoteDisplayState$RemoteDisplayInfo;
 
     const/4 v0, 0x1
 
@@ -123,7 +115,6 @@
 
 .method private static computePresentationDisplayId(Landroid/media/RemoteDisplayState$RemoteDisplayInfo;)I
     .locals 1
-    .param p0    # Landroid/media/RemoteDisplayState$RemoteDisplayInfo;
 
     iget v0, p0, Landroid/media/RemoteDisplayState$RemoteDisplayInfo;->presentationDisplayId:I
 
@@ -137,7 +128,6 @@
 
 .method private static computeStatusCode(Landroid/media/RemoteDisplayState$RemoteDisplayInfo;)I
     .locals 1
-    .param p0    # Landroid/media/RemoteDisplayState$RemoteDisplayInfo;
 
     iget v0, p0, Landroid/media/RemoteDisplayState$RemoteDisplayInfo;->status:I
 
@@ -187,7 +177,6 @@
 
 .method private static computeSupportedTypes(Landroid/media/RemoteDisplayState$RemoteDisplayInfo;)I
     .locals 1
-    .param p0    # Landroid/media/RemoteDisplayState$RemoteDisplayInfo;
 
     const/4 v0, 0x7
 
@@ -196,7 +185,6 @@
 
 .method private static computeVolume(Landroid/media/RemoteDisplayState$RemoteDisplayInfo;)I
     .locals 2
-    .param p0    # Landroid/media/RemoteDisplayState$RemoteDisplayInfo;
 
     iget v0, p0, Landroid/media/RemoteDisplayState$RemoteDisplayInfo;->volume:I
 
@@ -220,7 +208,6 @@
 
 .method private static computeVolumeHandling(Landroid/media/RemoteDisplayState$RemoteDisplayInfo;)I
     .locals 2
-    .param p0    # Landroid/media/RemoteDisplayState$RemoteDisplayInfo;
 
     iget v0, p0, Landroid/media/RemoteDisplayState$RemoteDisplayInfo;->volumeHandling:I
 
@@ -246,7 +233,6 @@
 
 .method private static computeVolumeMax(Landroid/media/RemoteDisplayState$RemoteDisplayInfo;)I
     .locals 1
-    .param p0    # Landroid/media/RemoteDisplayState$RemoteDisplayInfo;
 
     iget v0, p0, Landroid/media/RemoteDisplayState$RemoteDisplayInfo;->volumeMax:I
 
@@ -265,8 +251,6 @@
 # virtual methods
 .method public dump(Ljava/io/PrintWriter;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/io/PrintWriter;
-    .param p2    # Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -532,7 +516,6 @@
 
 .method public updateDescriptor(Landroid/media/RemoteDisplayState$RemoteDisplayInfo;)Z
     .locals 13
-    .param p1    # Landroid/media/RemoteDisplayState$RemoteDisplayInfo;
 
     const/4 v0, 0x0
 

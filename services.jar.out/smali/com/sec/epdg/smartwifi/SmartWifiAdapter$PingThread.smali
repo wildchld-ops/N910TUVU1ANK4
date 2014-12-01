@@ -76,7 +76,6 @@
 
 .method constructor <init>(Lcom/sec/epdg/smartwifi/SmartWifiAdapter;Ljava/net/InetAddress;)V
     .locals 1
-    .param p2    # Ljava/net/InetAddress;
 
     iput-object p1, p0, Lcom/sec/epdg/smartwifi/SmartWifiAdapter$PingThread;->this$0:Lcom/sec/epdg/smartwifi/SmartWifiAdapter;
 

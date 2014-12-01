@@ -32,8 +32,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/mms/ui/MmsRichContainer;II)V
     .locals 1
-    .param p2    # I
-    .param p3    # I
 
     iput-object p1, p0, Lcom/android/mms/ui/MmsRichContainer$MessageOnKey;->this$0:Lcom/android/mms/ui/MmsRichContainer;
 
@@ -56,7 +54,6 @@
 
 .method private isCursorOnTextlines(I)Z
     .locals 10
-    .param p1    # I
 
     const/4 v9, 0x1
 
@@ -273,8 +270,6 @@
 
 .method private obviousFocusMoveOn(Landroid/view/View;Z)Z
     .locals 4
-    .param p1    # Landroid/view/View;
-    .param p2    # Z
 
     const/4 v0, 0x0
 
@@ -334,9 +329,6 @@
 # virtual methods
 .method public onKey(Landroid/view/View;ILandroid/view/KeyEvent;)Z
     .locals 23
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # Landroid/view/KeyEvent;
 
     move-object/from16 v0, p0
 

@@ -33,7 +33,6 @@
 
 .method synthetic constructor <init>(Landroid/media/MediaScanner$1;)V
     .locals 0
-    .param p1    # Landroid/media/MediaScanner$1;
 
     invoke-direct {p0}, Landroid/media/MediaScanner$PlaylistEntry;-><init>()V
 

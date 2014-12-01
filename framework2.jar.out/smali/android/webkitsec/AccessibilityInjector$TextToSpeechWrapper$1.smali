@@ -36,7 +36,6 @@
 # virtual methods
 .method public onInit(I)V
     .locals 5
-    .param p1    # I
 
     :try_start_0
     iget-object v1, p0, Landroid/webkitsec/AccessibilityInjector$TextToSpeechWrapper$1;->this$0:Landroid/webkitsec/AccessibilityInjector$TextToSpeechWrapper;

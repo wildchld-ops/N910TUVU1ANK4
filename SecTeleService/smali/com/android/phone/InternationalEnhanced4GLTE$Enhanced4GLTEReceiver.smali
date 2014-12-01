@@ -73,7 +73,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1, v3}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v1, v3}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     sput-boolean v3, Lcom/android/phone/PhoneGlobals;->mUCEToggleEnabled:Z
 

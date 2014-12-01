@@ -227,7 +227,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/wifi/FreeWifiScanSettings;)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/FreeWifiScanSettings;
 
     invoke-direct {p0}, Lcom/android/settings/wifi/FreeWifiScanSettings;->updateConnectableApList()V
 
@@ -236,7 +235,6 @@
 
 .method static synthetic access$1000(Lcom/android/settings/wifi/FreeWifiScanSettings;)Landroid/net/wifi/WifiManager;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/FreeWifiScanSettings;
 
     iget-object v0, p0, Lcom/android/settings/wifi/FreeWifiScanSettings;->mWifiManager:Landroid/net/wifi/WifiManager;
 
@@ -245,8 +243,6 @@
 
 .method static synthetic access$1100(Lcom/android/settings/wifi/FreeWifiScanSettings;Ljava/lang/Boolean;)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/FreeWifiScanSettings;
-    .param p1    # Ljava/lang/Boolean;
 
     invoke-direct {p0, p1}, Lcom/android/settings/wifi/FreeWifiScanSettings;->setRefreshAction(Ljava/lang/Boolean;)V
 
@@ -255,8 +251,6 @@
 
 .method static synthetic access$1202(Lcom/android/settings/wifi/FreeWifiScanSettings;Ljava/util/List;)Ljava/util/List;
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/FreeWifiScanSettings;
-    .param p1    # Ljava/util/List;
 
     iput-object p1, p0, Lcom/android/settings/wifi/FreeWifiScanSettings;->mLastScanResult:Ljava/util/List;
 
@@ -265,7 +259,6 @@
 
 .method static synthetic access$1300(Lcom/android/settings/wifi/FreeWifiScanSettings;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/FreeWifiScanSettings;
 
     iget-boolean v0, p0, Lcom/android/settings/wifi/FreeWifiScanSettings;->mBlockScan:Z
 
@@ -274,8 +267,6 @@
 
 .method static synthetic access$1402(Lcom/android/settings/wifi/FreeWifiScanSettings;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/FreeWifiScanSettings;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/wifi/FreeWifiScanSettings;->mConnectOnlyOnce:Z
 
@@ -284,7 +275,6 @@
 
 .method static synthetic access$1500(Lcom/android/settings/wifi/FreeWifiScanSettings;)Ljava/util/List;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/FreeWifiScanSettings;
 
     iget-object v0, p0, Lcom/android/settings/wifi/FreeWifiScanSettings;->previousSavedAp:Ljava/util/List;
 
@@ -293,7 +283,6 @@
 
 .method static synthetic access$1600(Lcom/android/settings/wifi/FreeWifiScanSettings;)Landroid/net/wifi/WifiManager$ActionListener;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/FreeWifiScanSettings;
 
     iget-object v0, p0, Lcom/android/settings/wifi/FreeWifiScanSettings;->mForgetListener:Landroid/net/wifi/WifiManager$ActionListener;
 
@@ -302,8 +291,6 @@
 
 .method static synthetic access$1700(Lcom/android/settings/wifi/FreeWifiScanSettings;Landroid/net/wifi/WifiConfiguration;)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/FreeWifiScanSettings;
-    .param p1    # Landroid/net/wifi/WifiConfiguration;
 
     invoke-direct {p0, p1}, Lcom/android/settings/wifi/FreeWifiScanSettings;->saveAP(Landroid/net/wifi/WifiConfiguration;)V
 
@@ -312,8 +299,6 @@
 
 .method static synthetic access$1800(Lcom/android/settings/wifi/FreeWifiScanSettings;Z)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/FreeWifiScanSettings;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/settings/wifi/FreeWifiScanSettings;->setFreeWifiScanOpenApCheck(Z)V
 
@@ -322,7 +307,6 @@
 
 .method static synthetic access$1900(Lcom/android/settings/wifi/FreeWifiScanSettings;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/FreeWifiScanSettings;
 
     iget-boolean v0, p0, Lcom/android/settings/wifi/FreeWifiScanSettings;->mScanPressed:Z
 
@@ -331,9 +315,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/wifi/FreeWifiScanSettings;Ljava/lang/String;I)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/FreeWifiScanSettings;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/settings/wifi/FreeWifiScanSettings;->findAndUpdateOpenAp(Ljava/lang/String;I)V
 
@@ -342,7 +323,6 @@
 
 .method static synthetic access$2000(Lcom/android/settings/wifi/FreeWifiScanSettings;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/FreeWifiScanSettings;
 
     iget-boolean v0, p0, Lcom/android/settings/wifi/FreeWifiScanSettings;->isInDialog:Z
 
@@ -351,7 +331,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/wifi/FreeWifiScanSettings;)Lcom/android/settings/wifi/FreeWifiScanSettings$OnScanStateListener;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/FreeWifiScanSettings;
 
     iget-object v0, p0, Lcom/android/settings/wifi/FreeWifiScanSettings;->mScanStateListener:Lcom/android/settings/wifi/FreeWifiScanSettings$OnScanStateListener;
 
@@ -360,7 +339,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/wifi/FreeWifiScanSettings;)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/FreeWifiScanSettings;
 
     invoke-direct {p0}, Lcom/android/settings/wifi/FreeWifiScanSettings;->updateUiConnecting()V
 
@@ -369,7 +347,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/wifi/FreeWifiScanSettings;)Landroid/preference/CheckBoxPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/FreeWifiScanSettings;
 
     iget-object v0, p0, Lcom/android/settings/wifi/FreeWifiScanSettings;->mKeepConnectedSwitch:Landroid/preference/CheckBoxPreference;
 
@@ -378,7 +355,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/wifi/FreeWifiScanSettings;)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/FreeWifiScanSettings;
 
     invoke-direct {p0}, Lcom/android/settings/wifi/FreeWifiScanSettings;->updateTitleAndProgressToDone()V
 
@@ -387,7 +363,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/wifi/FreeWifiScanSettings;)Landroid/net/wifi/WifiConfiguration;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/FreeWifiScanSettings;
 
     iget-object v0, p0, Lcom/android/settings/wifi/FreeWifiScanSettings;->mcurrunt_config:Landroid/net/wifi/WifiConfiguration;
 
@@ -396,7 +371,6 @@
 
 .method static synthetic access$800(Lcom/android/settings/wifi/FreeWifiScanSettings;)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/FreeWifiScanSettings;
 
     invoke-direct {p0}, Lcom/android/settings/wifi/FreeWifiScanSettings;->updateTitleAndProgressToScan()V
 
@@ -405,7 +379,6 @@
 
 .method static synthetic access$900(Lcom/android/settings/wifi/FreeWifiScanSettings;)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/FreeWifiScanSettings;
 
     invoke-direct {p0}, Lcom/android/settings/wifi/FreeWifiScanSettings;->connectToOpenAp()V
 
@@ -957,8 +930,6 @@
 
 .method private findAndUpdateOpenAp(Ljava/lang/String;I)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const v6, 0x7f091c23
 
@@ -1410,7 +1381,6 @@
 
 .method static getSecurity(Landroid/net/wifi/WifiConfiguration;)I
     .locals 5
-    .param p0    # Landroid/net/wifi/WifiConfiguration;
 
     const/4 v3, 0x3
 
@@ -1672,7 +1642,6 @@
 
 .method private setRefreshAction(Ljava/lang/Boolean;)V
     .locals 4
-    .param p1    # Ljava/lang/Boolean;
 
     const/4 v0, 0x1
 
@@ -2329,7 +2298,6 @@
 
 .method private updateUserInputForConnect(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "FreeWifiScanSettings"
 
@@ -2354,8 +2322,6 @@
 # virtual methods
 .method protected handleReceivedEvent(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 11
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     const/4 v10, 0x1
 
@@ -2732,7 +2698,6 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 6
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v5, 0x1
 
@@ -2936,7 +2901,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v1, 0x1
 
@@ -3331,8 +3295,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 13
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     const v12, 0x7f091c27
 

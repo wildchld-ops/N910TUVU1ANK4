@@ -40,7 +40,6 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 14
-    .param p1    # Landroid/view/View;
 
     invoke-static {}, Lcom/android/mms/MmsConfig;->getAllowWriteMessage()Z
 

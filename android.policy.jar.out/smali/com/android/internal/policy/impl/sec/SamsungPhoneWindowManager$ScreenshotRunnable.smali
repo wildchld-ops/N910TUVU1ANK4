@@ -26,7 +26,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;Landroid/content/ServiceConnection;)V
     .locals 1
-    .param p2    # Landroid/content/ServiceConnection;
 
     iput-object p1, p0, Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager$ScreenshotRunnable;->this$0:Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;
 

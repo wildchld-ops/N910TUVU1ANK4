@@ -33,7 +33,6 @@
 
 .method synthetic constructor <init>(Landroid/app/BluetoothSecureManagerService$1;)V
     .locals 0
-    .param p1    # Landroid/app/BluetoothSecureManagerService$1;
 
     invoke-direct {p0}, Landroid/app/BluetoothSecureManagerService$WhiteListValue;-><init>()V
 

@@ -52,10 +52,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Lcom/android/server/am/AppErrorResult;Lcom/android/server/am/ProcessRecord;Ljava/lang/String;)V
     .locals 14
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/server/am/AppErrorResult;
-    .param p3    # Lcom/android/server/am/ProcessRecord;
-    .param p4    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/am/BaseErrorDialog;-><init>(Landroid/content/Context;)V
 
@@ -474,10 +470,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Ljava/lang/String;Landroid/content/Intent;[Ljava/lang/String;)V
     .locals 11
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/content/Intent;
-    .param p4    # [Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/am/BaseErrorDialog;-><init>(Landroid/content/Context;)V
 
@@ -820,7 +812,6 @@
 
 .method static synthetic access$000(Lcom/android/server/am/AppPermissionManagedDialog;)Landroid/app/ICMDialogMessageManager;
     .locals 1
-    .param p0    # Lcom/android/server/am/AppPermissionManagedDialog;
 
     iget-object v0, p0, Lcom/android/server/am/AppPermissionManagedDialog;->mService:Landroid/app/ICMDialogMessageManager;
 
@@ -829,8 +820,6 @@
 
 .method static synthetic access$002(Lcom/android/server/am/AppPermissionManagedDialog;Landroid/app/ICMDialogMessageManager;)Landroid/app/ICMDialogMessageManager;
     .locals 0
-    .param p0    # Lcom/android/server/am/AppPermissionManagedDialog;
-    .param p1    # Landroid/app/ICMDialogMessageManager;
 
     iput-object p1, p0, Lcom/android/server/am/AppPermissionManagedDialog;->mService:Landroid/app/ICMDialogMessageManager;
 
@@ -839,7 +828,6 @@
 
 .method static synthetic access$100(Lcom/android/server/am/AppPermissionManagedDialog;)I
     .locals 1
-    .param p0    # Lcom/android/server/am/AppPermissionManagedDialog;
 
     iget v0, p0, Lcom/android/server/am/AppPermissionManagedDialog;->mDialogType:I
 
@@ -848,7 +836,6 @@
 
 .method static synthetic access$1000(Lcom/android/server/am/AppPermissionManagedDialog;)Landroid/content/ServiceConnection;
     .locals 1
-    .param p0    # Lcom/android/server/am/AppPermissionManagedDialog;
 
     iget-object v0, p0, Lcom/android/server/am/AppPermissionManagedDialog;->serviceConn:Landroid/content/ServiceConnection;
 
@@ -857,7 +844,6 @@
 
 .method static synthetic access$1100(Lcom/android/server/am/AppPermissionManagedDialog;)Lcom/android/server/am/ProcessRecord;
     .locals 1
-    .param p0    # Lcom/android/server/am/AppPermissionManagedDialog;
 
     iget-object v0, p0, Lcom/android/server/am/AppPermissionManagedDialog;->mProc:Lcom/android/server/am/ProcessRecord;
 
@@ -866,7 +852,6 @@
 
 .method static synthetic access$1200(Lcom/android/server/am/AppPermissionManagedDialog;)Lcom/android/server/am/AppErrorResult;
     .locals 1
-    .param p0    # Lcom/android/server/am/AppPermissionManagedDialog;
 
     iget-object v0, p0, Lcom/android/server/am/AppPermissionManagedDialog;->mResult:Lcom/android/server/am/AppErrorResult;
 
@@ -875,7 +860,6 @@
 
 .method static synthetic access$1300(Lcom/android/server/am/AppPermissionManagedDialog;)V
     .locals 0
-    .param p0    # Lcom/android/server/am/AppPermissionManagedDialog;
 
     invoke-direct {p0}, Lcom/android/server/am/AppPermissionManagedDialog;->setTitleAndMessageByApp()V
 
@@ -884,8 +868,6 @@
 
 .method static synthetic access$202(Lcom/android/server/am/AppPermissionManagedDialog;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/android/server/am/AppPermissionManagedDialog;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/server/am/AppPermissionManagedDialog;->mTitleByApp:Ljava/lang/String;
 
@@ -894,8 +876,6 @@
 
 .method static synthetic access$302(Lcom/android/server/am/AppPermissionManagedDialog;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/android/server/am/AppPermissionManagedDialog;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/server/am/AppPermissionManagedDialog;->mMessageByApp:Ljava/lang/String;
 
@@ -904,7 +884,6 @@
 
 .method static synthetic access$400(Lcom/android/server/am/AppPermissionManagedDialog;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/server/am/AppPermissionManagedDialog;
 
     iget-object v0, p0, Lcom/android/server/am/AppPermissionManagedDialog;->mAppName:Ljava/lang/String;
 
@@ -913,7 +892,6 @@
 
 .method static synthetic access$500(Lcom/android/server/am/AppPermissionManagedDialog;)[Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/server/am/AppPermissionManagedDialog;
 
     iget-object v0, p0, Lcom/android/server/am/AppPermissionManagedDialog;->mPermissions:[Ljava/lang/String;
 
@@ -922,7 +900,6 @@
 
 .method static synthetic access$600(Lcom/android/server/am/AppPermissionManagedDialog;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/server/am/AppPermissionManagedDialog;
 
     iget-object v0, p0, Lcom/android/server/am/AppPermissionManagedDialog;->mHandler:Landroid/os/Handler;
 
@@ -931,7 +908,6 @@
 
 .method static synthetic access$700(Lcom/android/server/am/AppPermissionManagedDialog;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/server/am/AppPermissionManagedDialog;
 
     iget-object v0, p0, Lcom/android/server/am/AppPermissionManagedDialog;->mPermission:Ljava/lang/String;
 
@@ -940,7 +916,6 @@
 
 .method static synthetic access$800(Lcom/android/server/am/AppPermissionManagedDialog;)Landroid/content/Intent;
     .locals 1
-    .param p0    # Lcom/android/server/am/AppPermissionManagedDialog;
 
     iget-object v0, p0, Lcom/android/server/am/AppPermissionManagedDialog;->newIntent:Landroid/content/Intent;
 
@@ -949,7 +924,6 @@
 
 .method static synthetic access$900(Lcom/android/server/am/AppPermissionManagedDialog;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/server/am/AppPermissionManagedDialog;
 
     iget-object v0, p0, Lcom/android/server/am/AppPermissionManagedDialog;->mContext:Landroid/content/Context;
 

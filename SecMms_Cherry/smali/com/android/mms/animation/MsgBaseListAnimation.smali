@@ -91,7 +91,6 @@
 
 .method public setDeleteModeLayout(Landroid/view/animation/Animation;)V
     .locals 2
-    .param p1    # Landroid/view/animation/Animation;
 
     iget-object v0, p0, Lcom/android/mms/animation/MsgBaseListAnimation;->mDeleteCheckBox:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
@@ -128,7 +127,6 @@
 
 .method protected setHideDeleteModeAnim(Landroid/view/animation/Animation;)V
     .locals 2
-    .param p1    # Landroid/view/animation/Animation;
 
     iput-object p1, p0, Lcom/android/mms/animation/MsgBaseListAnimation;->mHideSelectAllAnim:Landroid/view/animation/Animation;
 
@@ -149,9 +147,6 @@
 
 .method public setLayout(Landroid/widget/LinearLayout;Lcom/sec/android/touchwiz/widget/TwCheckBox;Landroid/widget/ListView;)V
     .locals 0
-    .param p1    # Landroid/widget/LinearLayout;
-    .param p2    # Lcom/sec/android/touchwiz/widget/TwCheckBox;
-    .param p3    # Landroid/widget/ListView;
 
     iput-object p1, p0, Lcom/android/mms/animation/MsgBaseListAnimation;->mSelectAllLayout:Landroid/widget/LinearLayout;
 
@@ -179,7 +174,6 @@
 
 .method public setNormalModeLayout(Landroid/view/animation/Animation;)V
     .locals 1
-    .param p1    # Landroid/view/animation/Animation;
 
     iget-object v0, p0, Lcom/android/mms/animation/MsgBaseListAnimation;->mHideSelectAllAnim:Landroid/view/animation/Animation;
 
@@ -212,7 +206,6 @@
 
 .method public setOnDeleteAnimation(Lcom/android/mms/animation/MsgBaseListAnimation$OnDeleteAnimationListener;)V
     .locals 0
-    .param p1    # Lcom/android/mms/animation/MsgBaseListAnimation$OnDeleteAnimationListener;
 
     iput-object p1, p0, Lcom/android/mms/animation/MsgBaseListAnimation;->mOnDelAnimListener:Lcom/android/mms/animation/MsgBaseListAnimation$OnDeleteAnimationListener;
 
@@ -221,7 +214,6 @@
 
 .method protected setShowDeleteModeAnim(Landroid/view/animation/Animation;)V
     .locals 2
-    .param p1    # Landroid/view/animation/Animation;
 
     iput-object p1, p0, Lcom/android/mms/animation/MsgBaseListAnimation;->mShowSelectAllAnim:Landroid/view/animation/Animation;
 
@@ -242,7 +234,6 @@
 
 .method public setTitleHeight(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/mms/animation/MsgBaseListAnimation;->mHeightOfTitle:I
 
@@ -251,8 +242,6 @@
 
 .method public showCheckBoxAnimation(Landroid/view/View;Landroid/view/animation/Animation;)V
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/animation/Animation;
 
     sget-boolean v0, Lcom/android/mms/animation/MsgBaseListAnimation;->mAleadyShowAnimation:Z
 

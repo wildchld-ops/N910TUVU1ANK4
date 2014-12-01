@@ -14,9 +14,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -31,7 +28,6 @@
 
 .method public static quoteComment(Ljava/lang/String;)Ljava/lang/String;
     .locals 6
-    .param p0    # Ljava/lang/String;
 
     const/16 v5, 0x5c
 
@@ -82,7 +78,6 @@
 
 .method public static quoteName(Ljava/lang/String;)Ljava/lang/String;
     .locals 6
-    .param p0    # Ljava/lang/String;
 
     const/16 v5, 0x5c
 
@@ -129,7 +124,6 @@
 
 .method public static quoteNameIfNecessary(Ljava/lang/String;)Ljava/lang/String;
     .locals 6
-    .param p0    # Ljava/lang/String;
 
     const/16 v5, 0x22
 
@@ -212,8 +206,6 @@
 
 .method private static stringEquals(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     if-nez p0, :cond_1
 
@@ -241,7 +233,6 @@
 # virtual methods
 .method public equals(Ljava/lang/Object;)Z
     .locals 4
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x0
 
@@ -370,7 +361,6 @@
 
 .method public setAddress(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/text/util/Rfc822Token;->mAddress:Ljava/lang/String;
 
@@ -379,7 +369,6 @@
 
 .method public setComment(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/text/util/Rfc822Token;->mComment:Ljava/lang/String;
 
@@ -388,7 +377,6 @@
 
 .method public setName(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/text/util/Rfc822Token;->mName:Ljava/lang/String;
 

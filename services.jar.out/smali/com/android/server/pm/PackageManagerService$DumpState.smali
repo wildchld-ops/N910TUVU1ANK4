@@ -81,7 +81,6 @@
 
 .method public isDumping(I)Z
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -111,7 +110,6 @@
 
 .method public isOptionEnabled(I)Z
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Lcom/android/server/pm/PackageManagerService$DumpState;->mOptions:I
 
@@ -144,7 +142,6 @@
 
 .method public setDump(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Lcom/android/server/pm/PackageManagerService$DumpState;->mTypes:I
 
@@ -157,7 +154,6 @@
 
 .method public setOptionEnabled(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Lcom/android/server/pm/PackageManagerService$DumpState;->mOptions:I
 
@@ -170,7 +166,6 @@
 
 .method public setSharedUser(Lcom/android/server/pm/SharedUserSetting;)V
     .locals 0
-    .param p1    # Lcom/android/server/pm/SharedUserSetting;
 
     iput-object p1, p0, Lcom/android/server/pm/PackageManagerService$DumpState;->mSharedUser:Lcom/android/server/pm/SharedUserSetting;
 
@@ -179,7 +174,6 @@
 
 .method public setTitlePrinted(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/pm/PackageManagerService$DumpState;->mTitlePrinted:Z
 

@@ -108,10 +108,6 @@
 
 .method public static addDotXY(IIILjava/lang/String;)V
     .locals 2
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     sget-boolean v0, Lcom/diotek/ime/framework/util/HiddenDrawingNumber;->mPrintDotXYOnOff:Z
 
@@ -275,7 +271,6 @@
 
 .method public static controlDebugLog(Z)V
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/diotek/ime/framework/util/Debug;->DEBUG:Z
 
@@ -288,7 +283,6 @@
 
 .method public static controlDotXY(Z)V
     .locals 1
-    .param p0    # Z
 
     const/4 v0, 0x0
 
@@ -321,8 +315,6 @@
 
 .method public static doHiddenNumber(Landroid/content/Context;I)Z
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     const/4 v3, 0x1
 
@@ -435,7 +427,6 @@
 
 .method public static onDownKey(I)V
     .locals 1
-    .param p0    # I
 
     const/4 v0, 0x0
 
@@ -448,7 +439,6 @@
 
 .method public static onUpKey(I)V
     .locals 0
-    .param p0    # I
 
     sput p0, Lcom/diotek/ime/framework/util/HiddenDrawingNumber;->mUpKeyIndex:I
 
@@ -457,7 +447,6 @@
 
 .method public static printDotXY(Landroid/graphics/Canvas;)V
     .locals 6
-    .param p0    # Landroid/graphics/Canvas;
 
     const/4 v5, 0x1
 
@@ -585,7 +574,6 @@
 
 .method public static setDisplayDotXY(Z)V
     .locals 1
-    .param p0    # Z
 
     sget-boolean v0, Lcom/diotek/ime/framework/util/HiddenDrawingNumber;->mPrintDotXYOnOff:Z
 
@@ -605,8 +593,6 @@
 
 .method public static showToast(Landroid/content/Context;Ljava/lang/String;)V
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 

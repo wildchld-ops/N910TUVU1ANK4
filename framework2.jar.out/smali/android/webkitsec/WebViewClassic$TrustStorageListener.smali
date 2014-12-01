@@ -25,7 +25,6 @@
 
 .method synthetic constructor <init>(Landroid/webkitsec/WebViewClassic$1;)V
     .locals 0
-    .param p1    # Landroid/webkitsec/WebViewClassic$1;
 
     invoke-direct {p0}, Landroid/webkitsec/WebViewClassic$TrustStorageListener;-><init>()V
 
@@ -36,8 +35,6 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 

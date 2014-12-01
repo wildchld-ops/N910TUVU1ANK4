@@ -75,7 +75,7 @@
     if-nez v2, :cond_0
 
     :goto_0
-    invoke-virtual {v0, v1}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+    invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     return-void
 

@@ -236,8 +236,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Lcom/android/server/LightsService;)V
     .locals 10
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/server/LightsService;
 
     const/4 v9, -0x2
 
@@ -768,7 +766,6 @@
 
 .method static synthetic access$100(Lcom/android/server/BatteryService;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/server/BatteryService;
 
     iget-object v0, p0, Lcom/android/server/BatteryService;->mContext:Landroid/content/Context;
 
@@ -777,7 +774,6 @@
 
 .method static synthetic access$1000(Lcom/android/server/BatteryService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/BatteryService;
 
     iget-boolean v0, p0, Lcom/android/server/BatteryService;->mScreenOn:Z
 
@@ -786,8 +782,6 @@
 
 .method static synthetic access$1002(Lcom/android/server/BatteryService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/BatteryService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/BatteryService;->mScreenOn:Z
 
@@ -796,7 +790,6 @@
 
 .method static synthetic access$1100(Lcom/android/server/BatteryService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/BatteryService;
 
     iget-boolean v0, p0, Lcom/android/server/BatteryService;->mLedChargingSettingsEnable:Z
 
@@ -805,8 +798,6 @@
 
 .method static synthetic access$1102(Lcom/android/server/BatteryService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/BatteryService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/BatteryService;->mLedChargingSettingsEnable:Z
 
@@ -815,7 +806,6 @@
 
 .method static synthetic access$1200(Lcom/android/server/BatteryService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/BatteryService;
 
     iget-boolean v0, p0, Lcom/android/server/BatteryService;->mLedLowBatterySettingsEnable:Z
 
@@ -824,8 +814,6 @@
 
 .method static synthetic access$1202(Lcom/android/server/BatteryService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/BatteryService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/BatteryService;->mLedLowBatterySettingsEnable:Z
 
@@ -834,7 +822,6 @@
 
 .method static synthetic access$1300(Lcom/android/server/BatteryService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/BatteryService;
 
     iget-boolean v0, p0, Lcom/android/server/BatteryService;->mSetDormantAlarm:Z
 
@@ -843,8 +830,6 @@
 
 .method static synthetic access$1302(Lcom/android/server/BatteryService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/BatteryService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/BatteryService;->mSetDormantAlarm:Z
 
@@ -853,7 +838,6 @@
 
 .method static synthetic access$1400(Lcom/android/server/BatteryService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/BatteryService;
 
     iget-boolean v0, p0, Lcom/android/server/BatteryService;->mAdaptiveFastChargingSettingsEnable:Z
 
@@ -862,8 +846,6 @@
 
 .method static synthetic access$1402(Lcom/android/server/BatteryService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/BatteryService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/BatteryService;->mAdaptiveFastChargingSettingsEnable:Z
 
@@ -872,7 +854,6 @@
 
 .method static synthetic access$1600(Lcom/android/server/BatteryService;)I
     .locals 1
-    .param p0    # Lcom/android/server/BatteryService;
 
     iget v0, p0, Lcom/android/server/BatteryService;->mInvalidCharger:I
 
@@ -881,8 +862,6 @@
 
 .method static synthetic access$1602(Lcom/android/server/BatteryService;I)I
     .locals 0
-    .param p0    # Lcom/android/server/BatteryService;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/BatteryService;->mInvalidCharger:I
 
@@ -891,7 +870,6 @@
 
 .method static synthetic access$1700(Lcom/android/server/BatteryService;)Landroid/os/BatteryProperties;
     .locals 1
-    .param p0    # Lcom/android/server/BatteryService;
 
     iget-object v0, p0, Lcom/android/server/BatteryService;->mBatteryProps:Landroid/os/BatteryProperties;
 
@@ -900,7 +878,6 @@
 
 .method static synthetic access$1800(Lcom/android/server/BatteryService;)I
     .locals 1
-    .param p0    # Lcom/android/server/BatteryService;
 
     iget v0, p0, Lcom/android/server/BatteryService;->mDormantStartMinutes:I
 
@@ -909,7 +886,6 @@
 
 .method static synthetic access$1900(Lcom/android/server/BatteryService;)I
     .locals 1
-    .param p0    # Lcom/android/server/BatteryService;
 
     iget v0, p0, Lcom/android/server/BatteryService;->mDormantEndMinutes:I
 
@@ -918,7 +894,6 @@
 
 .method static synthetic access$200(Lcom/android/server/BatteryService;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Lcom/android/server/BatteryService;
 
     iget-object v0, p0, Lcom/android/server/BatteryService;->mLock:Ljava/lang/Object;
 
@@ -927,7 +902,6 @@
 
 .method static synthetic access$2000(Lcom/android/server/BatteryService;)I
     .locals 1
-    .param p0    # Lcom/android/server/BatteryService;
 
     iget v0, p0, Lcom/android/server/BatteryService;->mLowBatteryWarningLevel:I
 
@@ -936,8 +910,6 @@
 
 .method static synthetic access$2100(Lcom/android/server/BatteryService;Landroid/os/BatteryProperties;)V
     .locals 0
-    .param p0    # Lcom/android/server/BatteryService;
-    .param p1    # Landroid/os/BatteryProperties;
 
     invoke-direct {p0, p1}, Lcom/android/server/BatteryService;->update(Landroid/os/BatteryProperties;)V
 
@@ -946,7 +918,6 @@
 
 .method static synthetic access$300(Lcom/android/server/BatteryService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/BatteryService;
 
     iget-boolean v0, p0, Lcom/android/server/BatteryService;->mBootCompleted:Z
 
@@ -955,8 +926,6 @@
 
 .method static synthetic access$302(Lcom/android/server/BatteryService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/BatteryService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/BatteryService;->mBootCompleted:Z
 
@@ -965,7 +934,6 @@
 
 .method static synthetic access$400(Lcom/android/server/BatteryService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/BatteryService;
 
     iget-boolean v0, p0, Lcom/android/server/BatteryService;->mDormantOnOff:Z
 
@@ -974,8 +942,6 @@
 
 .method static synthetic access$402(Lcom/android/server/BatteryService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/BatteryService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/BatteryService;->mDormantOnOff:Z
 
@@ -984,7 +950,6 @@
 
 .method static synthetic access$500(Lcom/android/server/BatteryService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/BatteryService;
 
     iget-boolean v0, p0, Lcom/android/server/BatteryService;->mDormantDisableLED:Z
 
@@ -993,8 +958,6 @@
 
 .method static synthetic access$502(Lcom/android/server/BatteryService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/BatteryService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/BatteryService;->mDormantDisableLED:Z
 
@@ -1003,7 +966,6 @@
 
 .method static synthetic access$600(Lcom/android/server/BatteryService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/BatteryService;
 
     iget-boolean v0, p0, Lcom/android/server/BatteryService;->mDormantAlways:Z
 
@@ -1012,8 +974,6 @@
 
 .method static synthetic access$602(Lcom/android/server/BatteryService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/BatteryService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/BatteryService;->mDormantAlways:Z
 
@@ -1022,9 +982,6 @@
 
 .method static synthetic access$700(Lcom/android/server/BatteryService;II)V
     .locals 0
-    .param p0    # Lcom/android/server/BatteryService;
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/BatteryService;->setDormantAlarm(II)V
 
@@ -1033,7 +990,6 @@
 
 .method static synthetic access$800(Lcom/android/server/BatteryService;)Lcom/android/server/BatteryService$Led;
     .locals 1
-    .param p0    # Lcom/android/server/BatteryService;
 
     iget-object v0, p0, Lcom/android/server/BatteryService;->mLed:Lcom/android/server/BatteryService$Led;
 
@@ -1042,7 +998,6 @@
 
 .method static synthetic access$900(Lcom/android/server/BatteryService;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/server/BatteryService;
 
     iget-object v0, p0, Lcom/android/server/BatteryService;->mHandler:Landroid/os/Handler;
 
@@ -1051,7 +1006,6 @@
 
 .method private getIconLocked(I)I
     .locals 4
-    .param p1    # I
 
     const v0, 0x10808e9
 
@@ -1129,7 +1083,6 @@
 
 .method private isPoweredLocked(I)Z
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -1573,7 +1526,6 @@
 
 .method private logOutlierLocked(J)V
     .locals 10
-    .param p1    # J
 
     iget-object v7, p0, Lcom/android/server/BatteryService;->mContext:Landroid/content/Context;
 
@@ -2891,8 +2843,6 @@
 
 .method private final setDormantAlarm(II)V
     .locals 21
-    .param p1    # I
-    .param p2    # I
 
     new-instance v19, Landroid/content/Intent;
 
@@ -3344,7 +3294,6 @@
 
 .method private update(Landroid/os/BatteryProperties;)V
     .locals 2
-    .param p1    # Landroid/os/BatteryProperties;
 
     iget-object v1, p0, Lcom/android/server/BatteryService;->mLock:Ljava/lang/Object;
 
@@ -3378,9 +3327,6 @@
 # virtual methods
 .method protected dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 12
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     const/high16 v11, -0x80000000
 
@@ -4368,7 +4314,6 @@
 
 .method public isPowered(I)Z
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/server/BatteryService;->mLock:Ljava/lang/Object;
 
@@ -4395,7 +4340,6 @@
 
 .method setAdaptiveFastCharging(Z)Z
     .locals 7
-    .param p1    # Z
 
     const/4 v2, 0x1
 
@@ -4525,7 +4469,6 @@
 
 .method setPowerSharing(Z)Z
     .locals 3
-    .param p1    # Z
 
     const-string v0, "/sys/class/power_supply/ps/status"
 
@@ -4568,9 +4511,6 @@
 
 .method writeToFile(Ljava/lang/String;JZ)Z
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
-    .param p4    # Z
 
     const/4 v5, 0x0
 

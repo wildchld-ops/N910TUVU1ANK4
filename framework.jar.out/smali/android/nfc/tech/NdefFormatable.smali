@@ -10,7 +10,6 @@
 # direct methods
 .method public constructor <init>(Landroid/nfc/Tag;)V
     .locals 1
-    .param p1    # Landroid/nfc/Tag;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -26,7 +25,6 @@
 
 .method public static get(Landroid/nfc/Tag;)Landroid/nfc/tech/NdefFormatable;
     .locals 3
-    .param p0    # Landroid/nfc/Tag;
 
     const/4 v1, 0x0
 
@@ -89,7 +87,6 @@
 
 .method public format(Landroid/nfc/NdefMessage;)V
     .locals 1
-    .param p1    # Landroid/nfc/NdefMessage;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -106,8 +103,6 @@
 
 .method format(Landroid/nfc/NdefMessage;Z)V
     .locals 6
-    .param p1    # Landroid/nfc/NdefMessage;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -279,7 +274,6 @@
 
 .method public formatReadOnly(Landroid/nfc/NdefMessage;)V
     .locals 1
-    .param p1    # Landroid/nfc/NdefMessage;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,

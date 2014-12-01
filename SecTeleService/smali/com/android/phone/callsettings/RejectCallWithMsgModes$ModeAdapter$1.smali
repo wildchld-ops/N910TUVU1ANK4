@@ -94,7 +94,7 @@
 
     iget-object v3, v3, Lcom/android/phone/callsettings/RejectCallWithMsgModes$ModeAdapter;->this$0:Lcom/android/phone/callsettings/RejectCallWithMsgModes;
 
-    invoke-virtual {v3}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v3}, Lcom/android/phone/callsettings/RejectCallWithMsgModes;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
 

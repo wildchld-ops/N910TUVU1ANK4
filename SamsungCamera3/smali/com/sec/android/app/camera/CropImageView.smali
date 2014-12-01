@@ -27,8 +27,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Lcom/sec/android/app/camera/ImageViewTouchBase;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -47,7 +45,6 @@
 
 .method private centerBasedOnHighlightView(Lcom/sec/android/app/camera/HighlightView;)V
     .locals 13
-    .param p1    # Lcom/sec/android/app/camera/HighlightView;
 
     iget-object v1, p1, Lcom/sec/android/app/camera/HighlightView;->mDrawRect:Landroid/graphics/Rect;
 
@@ -173,7 +170,6 @@
 
 .method private ensureVisible(Lcom/sec/android/app/camera/HighlightView;)V
     .locals 10
-    .param p1    # Lcom/sec/android/app/camera/HighlightView;
 
     const/4 v9, 0x0
 
@@ -282,7 +278,6 @@
 
 .method private recomputeFocus(Landroid/view/MotionEvent;)V
     .locals 6
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v5, 0x1
 
@@ -374,7 +369,6 @@
 # virtual methods
 .method public add(Lcom/sec/android/app/camera/HighlightView;)V
     .locals 2
-    .param p1    # Lcom/sec/android/app/camera/HighlightView;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -405,7 +399,6 @@
 
 .method protected onDraw(Landroid/graphics/Canvas;)V
     .locals 2
-    .param p1    # Landroid/graphics/Canvas;
 
     invoke-super {p0, p1}, Landroid/widget/ImageView;->onDraw(Landroid/graphics/Canvas;)V
 
@@ -440,11 +433,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 4
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-super/range {p0 .. p5}, Lcom/sec/android/app/camera/ImageViewTouchBase;->onLayout(ZIIII)V
 
@@ -500,7 +488,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 10
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v5, 0x0
 
@@ -826,8 +813,6 @@
 
 .method protected postTranslate(FF)V
     .locals 3
-    .param p1    # F
-    .param p2    # F
 
     invoke-super {p0, p1, p2}, Lcom/sec/android/app/camera/ImageViewTouchBase;->postTranslate(FF)V
 
@@ -946,9 +931,6 @@
 
 .method protected zoomTo(FFF)V
     .locals 4
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
 
     invoke-super {p0, p1, p2, p3}, Lcom/sec/android/app/camera/ImageViewTouchBase;->zoomTo(FFF)V
 

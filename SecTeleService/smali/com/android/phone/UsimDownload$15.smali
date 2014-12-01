@@ -37,7 +37,7 @@
 
     sget-object v1, Lcom/android/phone/UsimDownload$ScreenMode;->SKTNumRegistering:Lcom/android/phone/UsimDownload$ScreenMode;
 
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    invoke-virtual {v1}, Lcom/android/phone/UsimDownload$ScreenMode;->ordinal()I
 
     move-result v1
 
@@ -53,7 +53,7 @@
 
     sget-object v1, Lcom/android/phone/UsimDownload$ScreenMode;->SKTNumRegFail:Lcom/android/phone/UsimDownload$ScreenMode;
 
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    invoke-virtual {v1}, Lcom/android/phone/UsimDownload$ScreenMode;->ordinal()I
 
     move-result v1
 
@@ -69,7 +69,7 @@
 
     sget-object v1, Lcom/android/phone/UsimDownload$ScreenMode;->SKTNumRegSuccess:Lcom/android/phone/UsimDownload$ScreenMode;
 
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    invoke-virtual {v1}, Lcom/android/phone/UsimDownload$ScreenMode;->ordinal()I
 
     move-result v1
 
@@ -85,7 +85,7 @@
 
     sget-object v1, Lcom/android/phone/UsimDownload$ScreenMode;->SKTNumRegSuccessByBIP:Lcom/android/phone/UsimDownload$ScreenMode;
 
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    invoke-virtual {v1}, Lcom/android/phone/UsimDownload$ScreenMode;->ordinal()I
 
     move-result v1
 
@@ -101,7 +101,7 @@
 
     sget-object v1, Lcom/android/phone/UsimDownload$ScreenMode;->RefreshReset:Lcom/android/phone/UsimDownload$ScreenMode;
 
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    invoke-virtual {v1}, Lcom/android/phone/UsimDownload$ScreenMode;->ordinal()I
 
     move-result v1
 
@@ -117,7 +117,7 @@
 
     sget-object v1, Lcom/android/phone/UsimDownload$ScreenMode;->UsimRemovedReset:Lcom/android/phone/UsimDownload$ScreenMode;
 
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    invoke-virtual {v1}, Lcom/android/phone/UsimDownload$ScreenMode;->ordinal()I
 
     move-result v1
 
@@ -133,7 +133,7 @@
 
     sget-object v1, Lcom/android/phone/UsimDownload$ScreenMode;->KtUsimRemoved:Lcom/android/phone/UsimDownload$ScreenMode;
 
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    invoke-virtual {v1}, Lcom/android/phone/UsimDownload$ScreenMode;->ordinal()I
 
     move-result v1
 
@@ -149,7 +149,7 @@
 
     sget-object v1, Lcom/android/phone/UsimDownload$ScreenMode;->KtRegister:Lcom/android/phone/UsimDownload$ScreenMode;
 
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    invoke-virtual {v1}, Lcom/android/phone/UsimDownload$ScreenMode;->ordinal()I
 
     move-result v1
 
@@ -165,7 +165,7 @@
 
     sget-object v1, Lcom/android/phone/UsimDownload$ScreenMode;->KtNetRegistering:Lcom/android/phone/UsimDownload$ScreenMode;
 
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    invoke-virtual {v1}, Lcom/android/phone/UsimDownload$ScreenMode;->ordinal()I
 
     move-result v1
 
@@ -181,7 +181,7 @@
 
     sget-object v1, Lcom/android/phone/UsimDownload$ScreenMode;->KtNumRegistering:Lcom/android/phone/UsimDownload$ScreenMode;
 
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    invoke-virtual {v1}, Lcom/android/phone/UsimDownload$ScreenMode;->ordinal()I
 
     move-result v1
 
@@ -197,7 +197,7 @@
 
     sget-object v1, Lcom/android/phone/UsimDownload$ScreenMode;->KtNumRegOutOfService:Lcom/android/phone/UsimDownload$ScreenMode;
 
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    invoke-virtual {v1}, Lcom/android/phone/UsimDownload$ScreenMode;->ordinal()I
 
     move-result v1
 
@@ -213,7 +213,7 @@
 
     sget-object v1, Lcom/android/phone/UsimDownload$ScreenMode;->KtNumRegSuccess:Lcom/android/phone/UsimDownload$ScreenMode;
 
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    invoke-virtual {v1}, Lcom/android/phone/UsimDownload$ScreenMode;->ordinal()I
 
     move-result v1
 
@@ -229,7 +229,7 @@
 
     sget-object v1, Lcom/android/phone/UsimDownload$ScreenMode;->KtNumRegFail:Lcom/android/phone/UsimDownload$ScreenMode;
 
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    invoke-virtual {v1}, Lcom/android/phone/UsimDownload$ScreenMode;->ordinal()I
 
     move-result v1
 
@@ -245,7 +245,7 @@
 
     sget-object v1, Lcom/android/phone/UsimDownload$ScreenMode;->KtNumRegFailRetryNo:Lcom/android/phone/UsimDownload$ScreenMode;
 
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    invoke-virtual {v1}, Lcom/android/phone/UsimDownload$ScreenMode;->ordinal()I
 
     move-result v1
 
@@ -261,7 +261,7 @@
 
     sget-object v1, Lcom/android/phone/UsimDownload$ScreenMode;->LGTRegisterMain:Lcom/android/phone/UsimDownload$ScreenMode;
 
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    invoke-virtual {v1}, Lcom/android/phone/UsimDownload$ScreenMode;->ordinal()I
 
     move-result v1
 
@@ -277,7 +277,7 @@
 
     sget-object v1, Lcom/android/phone/UsimDownload$ScreenMode;->LGTNumRegistering:Lcom/android/phone/UsimDownload$ScreenMode;
 
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    invoke-virtual {v1}, Lcom/android/phone/UsimDownload$ScreenMode;->ordinal()I
 
     move-result v1
 
@@ -293,7 +293,7 @@
 
     sget-object v1, Lcom/android/phone/UsimDownload$ScreenMode;->LGTNumRegSuccess:Lcom/android/phone/UsimDownload$ScreenMode;
 
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    invoke-virtual {v1}, Lcom/android/phone/UsimDownload$ScreenMode;->ordinal()I
 
     move-result v1
 
@@ -309,7 +309,7 @@
 
     sget-object v1, Lcom/android/phone/UsimDownload$ScreenMode;->LGTNumRegFail:Lcom/android/phone/UsimDownload$ScreenMode;
 
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    invoke-virtual {v1}, Lcom/android/phone/UsimDownload$ScreenMode;->ordinal()I
 
     move-result v1
 
@@ -325,7 +325,7 @@
 
     sget-object v1, Lcom/android/phone/UsimDownload$ScreenMode;->LGTOverseaMode:Lcom/android/phone/UsimDownload$ScreenMode;
 
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    invoke-virtual {v1}, Lcom/android/phone/UsimDownload$ScreenMode;->ordinal()I
 
     move-result v1
 

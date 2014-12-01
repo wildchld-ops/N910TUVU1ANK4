@@ -25,7 +25,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/ex/editstyledtext/EditStyledText;)V
     .locals 1
-    .param p1    # Lcom/android/ex/editstyledtext/EditStyledText;
 
     invoke-virtual {p1}, Landroid/view/View;->getHandler()Landroid/os/Handler;
 
@@ -42,8 +41,6 @@
 # virtual methods
 .method protected onReceiveResult(ILandroid/os/Bundle;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     const/4 v0, 0x2
 

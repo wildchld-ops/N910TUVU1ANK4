@@ -28,8 +28,6 @@
 # direct methods
 .method constructor <init>(IZ)V
     .locals 8
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v7, 0x2
 
@@ -1378,8 +1376,6 @@
 
 .method private initialize(IZ)V
     .locals 6
-    .param p1    # I
-    .param p2    # Z
     .annotation build Landroid/annotation/SuppressLint;
         value = {
             "UseSparseArrays"

@@ -25,9 +25,6 @@
 # direct methods
 .method public constructor <init>(IILjava/nio/ByteBuffer;)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/nio/ByteBuffer;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

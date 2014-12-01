@@ -73,8 +73,6 @@
 # virtual methods
 .method public add(ILandroid/widget/RemoteViewsAdapter$RemoteViewsFrameLayout;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/widget/RemoteViewsAdapter$RemoteViewsFrameLayout;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -133,8 +131,6 @@
 
 .method public notifyOnRemoteViewsLoaded(ILandroid/widget/RemoteViews;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/widget/RemoteViews;
 
     if-nez p2, :cond_1
 
@@ -216,7 +212,6 @@
 
 .method public removeView(Landroid/widget/RemoteViewsAdapter$RemoteViewsFrameLayout;)V
     .locals 1
-    .param p1    # Landroid/widget/RemoteViewsAdapter$RemoteViewsFrameLayout;
 
     iget-object v0, p0, Landroid/widget/RemoteViewsAdapter$RemoteViewsFrameLayoutRefSet;->mViewToLinkedList:Ljava/util/HashMap;
 

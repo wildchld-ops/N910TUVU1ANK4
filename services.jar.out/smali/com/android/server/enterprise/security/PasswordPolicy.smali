@@ -33,7 +33,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
 
     const/4 v4, 0x0
 
@@ -136,7 +135,6 @@
 
 .method private ChooseNewPasswordOwner(Landroid/app/enterprise/ContextInfo;)I
     .locals 22
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/16 v18, -0x1
 
@@ -462,8 +460,6 @@
 
 .method static synthetic access$000(Lcom/android/server/enterprise/security/PasswordPolicy;I)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/security/PasswordPolicy;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/security/PasswordPolicy;->enforcePwdChangeIfNeededOnTimeout(I)V
 
@@ -472,8 +468,6 @@
 
 .method static synthetic access$100(Lcom/android/server/enterprise/security/PasswordPolicy;I)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/security/PasswordPolicy;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/security/PasswordPolicy;->enforcePwdChangeIfNeededOnStart(I)V
 
@@ -482,8 +476,6 @@
 
 .method static synthetic access$200(Lcom/android/server/enterprise/security/PasswordPolicy;I)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/security/PasswordPolicy;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/security/PasswordPolicy;->enforcePwdChangeIfNeededOnSwitch(I)V
 
@@ -492,7 +484,6 @@
 
 .method static synthetic access$300(Lcom/android/server/enterprise/security/PasswordPolicy;)Landroid/telephony/TelephonyManager;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/security/PasswordPolicy;
 
     iget-object v0, p0, Lcom/android/server/enterprise/security/PasswordPolicy;->mTelManager:Landroid/telephony/TelephonyManager;
 
@@ -501,8 +492,6 @@
 
 .method static synthetic access$400(Lcom/android/server/enterprise/security/PasswordPolicy;I)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/security/PasswordPolicy;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/security/PasswordPolicy;->enforcePwdChangeIfNeededAfterCall(I)V
 
@@ -511,9 +500,6 @@
 
 .method static synthetic access$500(Lcom/android/server/enterprise/security/PasswordPolicy;Landroid/content/Intent;I)Z
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/security/PasswordPolicy;
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/enterprise/security/PasswordPolicy;->isMDMAdmin(Landroid/content/Intent;I)Z
 
@@ -524,7 +510,6 @@
 
 .method static synthetic access$600(Lcom/android/server/enterprise/security/PasswordPolicy;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/security/PasswordPolicy;
 
     iget-object v0, p0, Lcom/android/server/enterprise/security/PasswordPolicy;->mContext:Landroid/content/Context;
 
@@ -533,9 +518,6 @@
 
 .method static synthetic access$700(Lcom/android/server/enterprise/security/PasswordPolicy;II)Z
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/security/PasswordPolicy;
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/enterprise/security/PasswordPolicy;->enforcePwdChangeForUser(II)Z
 
@@ -546,7 +528,6 @@
 
 .method private addOwnerToStack(Landroid/app/enterprise/ContextInfo;)V
     .locals 6
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     iget v0, p1, Landroid/app/enterprise/ContextInfo;->mContainerId:I
 
@@ -625,7 +606,6 @@
 
 .method private changePasswordAsUser(I)V
     .locals 4
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/security/PasswordPolicy;->isPersona(I)Z
 
@@ -700,8 +680,6 @@
 
 .method private checkPackageCallerOrEnforcePermission(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Landroid/app/enterprise/ContextInfo;
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/server/enterprise/security/PasswordPolicy;->mContext:Landroid/content/Context;
 
@@ -736,7 +714,6 @@
 
 .method private checkPackageCallerOrEnforceSystemUser(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/server/enterprise/security/PasswordPolicy;->mContext:Landroid/content/Context;
 
@@ -771,7 +748,6 @@
 
 .method private checkRegex(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     invoke-static {p1}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;)Ljava/util/regex/Pattern;
@@ -793,8 +769,6 @@
 
 .method private computeLevenshteinDistance(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)I
     .locals 9
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Ljava/lang/CharSequence;
 
     const/4 v4, 0x0
 
@@ -963,8 +937,6 @@
 
 .method private containsForbiddenCharacterSequence(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 12
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lcom/android/server/enterprise/security/PasswordPolicy;->getMaximumCharacterSequenceLength(Landroid/app/enterprise/ContextInfo;)I
 
@@ -1156,8 +1128,6 @@
 
 .method private containsForbiddenData(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const/4 v3, 0x1
 
@@ -1221,8 +1191,6 @@
 
 .method private containsForbiddenNumericSequence(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 11
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lcom/android/server/enterprise/security/PasswordPolicy;->getMaximumNumericSequenceLength(Landroid/app/enterprise/ContextInfo;)I
 
@@ -1378,9 +1346,6 @@
 
 .method private containsForbiddenStringDistance(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -1410,8 +1375,6 @@
 
 .method private containsMaxRepeatedCharacters(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 12
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const/4 v10, 0x1
 
@@ -1543,7 +1506,6 @@
 
 .method private enforceOwnerOnlyAndSecurityPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/security/PasswordPolicy;->getEDM()Landroid/app/enterprise/EnterpriseDeviceManager;
 
@@ -1560,8 +1522,6 @@
 
 .method private enforcePwdChangeForUser(II)Z
     .locals 10
-    .param p1    # I
-    .param p2    # I
 
     const/4 v4, 0x1
 
@@ -1707,7 +1667,6 @@
 
 .method private enforcePwdChangeIfNeededAfterCall(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -1754,7 +1713,6 @@
 
 .method private enforcePwdChangeIfNeededOnStart(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -1802,7 +1760,6 @@
 
 .method private enforcePwdChangeIfNeededOnSwitch(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -1826,7 +1783,6 @@
 
 .method private enforcePwdChangeIfNeededOnTimeout(I)V
     .locals 4
-    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -1873,7 +1829,6 @@
 
 .method private enforceSecurityPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/security/PasswordPolicy;->getEDM()Landroid/app/enterprise/EnterpriseDeviceManager;
 
@@ -1919,7 +1874,6 @@
 
 .method private getCurrentPasswordOwner(Landroid/app/enterprise/ContextInfo;)I
     .locals 10
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-static {p1}, Lcom/android/server/enterprise/EnterpriseDeviceManagerService;->getCallingOrCurrentUserId(Landroid/app/enterprise/ContextInfo;)I
 
@@ -2025,7 +1979,6 @@
 
 .method private getUserIdByPackageNameOrUid(Landroid/app/enterprise/ContextInfo;)I
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     if-nez p1, :cond_0
 
@@ -2100,7 +2053,6 @@
 
 .method private hasPassword(I)Z
     .locals 4
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -2138,8 +2090,6 @@
 
 .method private isMDMAdmin(Landroid/content/Intent;I)Z
     .locals 19
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
 
     const-string/jumbo v15, "pkgName"
 
@@ -2427,8 +2377,6 @@
 
 .method private isPasswordVisibilityEnabledEx(II)Z
     .locals 7
-    .param p1    # I
-    .param p2    # I
 
     const/4 v1, 0x1
 
@@ -2473,7 +2421,6 @@
 
 .method private isPersona(I)Z
     .locals 4
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -2503,8 +2450,6 @@
 
 .method private postPersonaEvent(ILandroid/content/pm/PersonaEvent;)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/content/pm/PersonaEvent;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2542,7 +2487,6 @@
 
 .method private postPwdResetEventToPersona(I)Z
     .locals 9
-    .param p1    # I
 
     const/4 v5, 0x0
 
@@ -2656,7 +2600,6 @@
 
 .method private removeOwnerFromStack(Landroid/app/enterprise/ContextInfo;)V
     .locals 13
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     iget v3, p1, Landroid/app/enterprise/ContextInfo;->mContainerId:I
 
@@ -2779,8 +2722,6 @@
 # virtual methods
 .method public addRequiredPasswordPattern(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/security/PasswordPolicy;->enforceSecurityPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -2864,7 +2805,6 @@
 
 .method public deleteAllRestrictions(Landroid/app/enterprise/ContextInfo;)Z
     .locals 9
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/security/PasswordPolicy;->enforceSecurityPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -2928,8 +2868,6 @@
 
 .method enforceComponentCheck(Landroid/app/enterprise/ContextInfo;Landroid/content/ComponentName;)V
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Landroid/content/ComponentName;
 
     if-eqz p2, :cond_0
 
@@ -2999,7 +2937,6 @@
 
 .method public enforcePwdChange(Landroid/app/enterprise/ContextInfo;)Z
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/security/PasswordPolicy;->enforceSecurityPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -3020,8 +2957,6 @@
 
 .method public excludeExternalStorageForFailedPasswordsWipe(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     const/4 v6, 0x0
 
@@ -3050,7 +2985,6 @@
 
 .method public getCurrentFailedPasswordAttempts(Landroid/app/enterprise/ContextInfo;)I
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/security/PasswordPolicy;->enforceSecurityPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -3114,8 +3048,6 @@
 
 .method public getForbiddenStrings(Landroid/app/enterprise/ContextInfo;Z)Ljava/util/List;
     .locals 11
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3238,7 +3170,6 @@
 
 .method public getMaximumCharacterOccurences(Landroid/app/enterprise/ContextInfo;)I
     .locals 9
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-static {p1}, Lcom/android/server/enterprise/EnterpriseDeviceManagerService;->getCallingOrCurrentUserId(Landroid/app/enterprise/ContextInfo;)I
 
@@ -3301,7 +3232,6 @@
 
 .method public getMaximumCharacterSequenceLength(Landroid/app/enterprise/ContextInfo;)I
     .locals 9
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-static {p1}, Lcom/android/server/enterprise/EnterpriseDeviceManagerService;->getCallingOrCurrentUserId(Landroid/app/enterprise/ContextInfo;)I
 
@@ -3364,7 +3294,6 @@
 
 .method public getMaximumFailedPasswordsForDisable(Landroid/app/enterprise/ContextInfo;)I
     .locals 9
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-static {p1}, Lcom/android/server/enterprise/EnterpriseDeviceManagerService;->getCallingOrCurrentUserId(Landroid/app/enterprise/ContextInfo;)I
 
@@ -3427,8 +3356,6 @@
 
 .method public getMaximumFailedPasswordsForWipe(Landroid/app/enterprise/ContextInfo;Landroid/content/ComponentName;)I
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Landroid/content/ComponentName;
 
     invoke-virtual {p0, p1, p2}, Lcom/android/server/enterprise/security/PasswordPolicy;->enforceComponentCheck(Landroid/app/enterprise/ContextInfo;Landroid/content/ComponentName;)V
 
@@ -3494,7 +3421,6 @@
 
 .method public getMaximumNumericSequenceLength(Landroid/app/enterprise/ContextInfo;)I
     .locals 9
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-static {p1}, Lcom/android/server/enterprise/EnterpriseDeviceManagerService;->getCallingOrCurrentUserId(Landroid/app/enterprise/ContextInfo;)I
 
@@ -3557,8 +3483,6 @@
 
 .method public getMaximumTimeToLock(Landroid/app/enterprise/ContextInfo;Landroid/content/ComponentName;)J
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Landroid/content/ComponentName;
 
     invoke-virtual {p0, p1, p2}, Lcom/android/server/enterprise/security/PasswordPolicy;->enforceComponentCheck(Landroid/app/enterprise/ContextInfo;Landroid/content/ComponentName;)V
 
@@ -3624,7 +3548,6 @@
 
 .method public getMinimumCharacterChangeLength(Landroid/app/enterprise/ContextInfo;)I
     .locals 9
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-static {p1}, Lcom/android/server/enterprise/EnterpriseDeviceManagerService;->getCallingOrCurrentUserId(Landroid/app/enterprise/ContextInfo;)I
 
@@ -3687,7 +3610,6 @@
 
 .method public getPasswordChangeTimeout(Landroid/app/enterprise/ContextInfo;)I
     .locals 9
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-static {p1}, Lcom/android/server/enterprise/EnterpriseDeviceManagerService;->getCallingOrCurrentUserId(Landroid/app/enterprise/ContextInfo;)I
 
@@ -3761,8 +3683,6 @@
 
 .method public getPasswordExpiration(Landroid/app/enterprise/ContextInfo;Landroid/content/ComponentName;)J
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Landroid/content/ComponentName;
 
     invoke-virtual {p0, p1, p2}, Lcom/android/server/enterprise/security/PasswordPolicy;->enforceComponentCheck(Landroid/app/enterprise/ContextInfo;Landroid/content/ComponentName;)V
 
@@ -3828,8 +3748,6 @@
 
 .method public getPasswordExpirationTimeout(Landroid/app/enterprise/ContextInfo;Landroid/content/ComponentName;)J
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Landroid/content/ComponentName;
 
     invoke-virtual {p0, p1, p2}, Lcom/android/server/enterprise/security/PasswordPolicy;->enforceComponentCheck(Landroid/app/enterprise/ContextInfo;Landroid/content/ComponentName;)V
 
@@ -3895,8 +3813,6 @@
 
 .method public getPasswordHistoryLength(Landroid/app/enterprise/ContextInfo;Landroid/content/ComponentName;)I
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Landroid/content/ComponentName;
 
     invoke-virtual {p0, p1, p2}, Lcom/android/server/enterprise/security/PasswordPolicy;->enforceComponentCheck(Landroid/app/enterprise/ContextInfo;Landroid/content/ComponentName;)V
 
@@ -3962,7 +3878,6 @@
 
 .method public getPasswordLockDelay(Landroid/app/enterprise/ContextInfo;)I
     .locals 9
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v4, -0x1
 
@@ -4030,8 +3945,6 @@
 
 .method public getPasswordMinimumLength(Landroid/app/enterprise/ContextInfo;Landroid/content/ComponentName;)I
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Landroid/content/ComponentName;
 
     invoke-virtual {p0, p1, p2}, Lcom/android/server/enterprise/security/PasswordPolicy;->enforceComponentCheck(Landroid/app/enterprise/ContextInfo;Landroid/content/ComponentName;)V
 
@@ -4097,8 +4010,6 @@
 
 .method public getPasswordMinimumLetters(Landroid/app/enterprise/ContextInfo;Landroid/content/ComponentName;)I
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Landroid/content/ComponentName;
 
     invoke-virtual {p0, p1, p2}, Lcom/android/server/enterprise/security/PasswordPolicy;->enforceComponentCheck(Landroid/app/enterprise/ContextInfo;Landroid/content/ComponentName;)V
 
@@ -4164,8 +4075,6 @@
 
 .method public getPasswordMinimumLowerCase(Landroid/app/enterprise/ContextInfo;Landroid/content/ComponentName;)I
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Landroid/content/ComponentName;
 
     invoke-virtual {p0, p1, p2}, Lcom/android/server/enterprise/security/PasswordPolicy;->enforceComponentCheck(Landroid/app/enterprise/ContextInfo;Landroid/content/ComponentName;)V
 
@@ -4231,8 +4140,6 @@
 
 .method public getPasswordMinimumNonLetter(Landroid/app/enterprise/ContextInfo;Landroid/content/ComponentName;)I
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Landroid/content/ComponentName;
 
     invoke-virtual {p0, p1, p2}, Lcom/android/server/enterprise/security/PasswordPolicy;->enforceComponentCheck(Landroid/app/enterprise/ContextInfo;Landroid/content/ComponentName;)V
 
@@ -4298,8 +4205,6 @@
 
 .method public getPasswordMinimumNumeric(Landroid/app/enterprise/ContextInfo;Landroid/content/ComponentName;)I
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Landroid/content/ComponentName;
 
     invoke-virtual {p0, p1, p2}, Lcom/android/server/enterprise/security/PasswordPolicy;->enforceComponentCheck(Landroid/app/enterprise/ContextInfo;Landroid/content/ComponentName;)V
 
@@ -4365,8 +4270,6 @@
 
 .method public getPasswordMinimumSymbols(Landroid/app/enterprise/ContextInfo;Landroid/content/ComponentName;)I
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Landroid/content/ComponentName;
 
     invoke-virtual {p0, p1, p2}, Lcom/android/server/enterprise/security/PasswordPolicy;->enforceComponentCheck(Landroid/app/enterprise/ContextInfo;Landroid/content/ComponentName;)V
 
@@ -4432,8 +4335,6 @@
 
 .method public getPasswordMinimumUpperCase(Landroid/app/enterprise/ContextInfo;Landroid/content/ComponentName;)I
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Landroid/content/ComponentName;
 
     invoke-virtual {p0, p1, p2}, Lcom/android/server/enterprise/security/PasswordPolicy;->enforceComponentCheck(Landroid/app/enterprise/ContextInfo;Landroid/content/ComponentName;)V
 
@@ -4499,8 +4400,6 @@
 
 .method public getPasswordQuality(Landroid/app/enterprise/ContextInfo;Landroid/content/ComponentName;)I
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Landroid/content/ComponentName;
 
     invoke-virtual {p0, p1, p2}, Lcom/android/server/enterprise/security/PasswordPolicy;->enforceComponentCheck(Landroid/app/enterprise/ContextInfo;Landroid/content/ComponentName;)V
 
@@ -4566,8 +4465,6 @@
 
 .method public getRequiredPwdPatternRestrictions(Landroid/app/enterprise/ContextInfo;Z)Ljava/lang/String;
     .locals 6
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     const-string v1, "android.uid.system:1000"
 
@@ -4625,7 +4522,6 @@
 
 .method public getSupportedBiometricAuthentications(Landroid/app/enterprise/ContextInfo;)Ljava/util/Map;
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -4681,8 +4577,6 @@
 
 .method public hasForbiddenCharacterSequence(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const-string v0, "android.uid.system:1000"
 
@@ -4707,8 +4601,6 @@
 
 .method public hasForbiddenData(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const-string v0, "android.uid.system:1000"
 
@@ -4733,8 +4625,6 @@
 
 .method public hasForbiddenNumericSequence(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const-string v0, "android.uid.system:1000"
 
@@ -4759,9 +4649,6 @@
 
 .method public hasForbiddenStringDistance(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const-string v0, "android.uid.system:1000"
 
@@ -4786,8 +4673,6 @@
 
 .method public hasMaxRepeatedCharacters(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const-string v0, "android.uid.system:1000"
 
@@ -4812,7 +4697,6 @@
 
 .method public isActivePasswordSufficient(Landroid/app/enterprise/ContextInfo;)Z
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/security/PasswordPolicy;->enforceSecurityPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -4876,8 +4760,6 @@
 
 .method public isBiometricAuthenticationEnabled(Landroid/app/enterprise/ContextInfo;I)Z
     .locals 11
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # I
 
     const/4 v7, 0x1
 
@@ -4991,7 +4873,6 @@
 
 .method public isChangeRequested(Landroid/app/enterprise/ContextInfo;)I
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/security/PasswordPolicy;->getUserIdByPackageNameOrUid(Landroid/app/enterprise/ContextInfo;)I
 
@@ -5017,7 +4898,6 @@
 
 .method public isChangeRequestedEx(Landroid/app/enterprise/ContextInfo;)I
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/security/PasswordPolicy;->getUserIdByPackageNameOrUid(Landroid/app/enterprise/ContextInfo;)I
 
@@ -5034,8 +4914,6 @@
 
 .method public isChangeRequestedForUser(II)I
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -5059,7 +4937,6 @@
 
 .method public isExternalStorageForFailedPasswordsWipeExcluded(Landroid/app/enterprise/ContextInfo;)Z
     .locals 9
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-static {p1}, Lcom/android/server/enterprise/EnterpriseDeviceManagerService;->getCallingOrCurrentUserId(Landroid/app/enterprise/ContextInfo;)I
 
@@ -5110,8 +4987,6 @@
 
 .method public isPasswordPatternMatched(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const-string v4, "android.uid.system:1000"
 
@@ -5145,7 +5020,6 @@
 
 .method public isPasswordTableExist(Landroid/app/enterprise/ContextInfo;)Z
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-static {p1}, Lcom/android/server/enterprise/EnterpriseDeviceManagerService;->getCallingOrCurrentUserId(Landroid/app/enterprise/ContextInfo;)I
 
@@ -5180,7 +5054,6 @@
 
 .method public isPasswordVisibilityEnabled(Landroid/app/enterprise/ContextInfo;)Z
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-static {p1}, Lcom/android/server/enterprise/EnterpriseDeviceManagerService;->getCallingOrCurrentUserId(Landroid/app/enterprise/ContextInfo;)I
 
@@ -5197,7 +5070,6 @@
 
 .method public isPasswordVisibilityEnabledAsUser(I)Z
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -5210,7 +5082,6 @@
 
 .method public isScreenLockPatternVisibilityEnabled(Landroid/app/enterprise/ContextInfo;)Z
     .locals 8
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v1, 0x1
 
@@ -5259,30 +5130,24 @@
 
 .method public onAdminAdded(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onAdminRemoved(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onPreAdminRemoval(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public resetPassword(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;I)Z
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/security/PasswordPolicy;->enforceSecurityPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -5346,9 +5211,6 @@
 
 .method public setBiometricAuthenticationEnabled(Landroid/app/enterprise/ContextInfo;IZ)Z
     .locals 6
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # I
-    .param p3    # Z
 
     if-gez p2, :cond_0
 
@@ -5416,7 +5278,6 @@
 
 .method public setForbiddenStrings(Landroid/app/enterprise/ContextInfo;Ljava/util/List;)Z
     .locals 12
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -5527,8 +5388,6 @@
 
 .method public setMaximumCharacterOccurrences(Landroid/app/enterprise/ContextInfo;I)Z
     .locals 6
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # I
 
     if-gez p2, :cond_0
 
@@ -5563,8 +5422,6 @@
 
 .method public setMaximumCharacterSequenceLength(Landroid/app/enterprise/ContextInfo;I)Z
     .locals 6
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/security/PasswordPolicy;->enforceSecurityPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -5599,8 +5456,6 @@
 
 .method public setMaximumFailedPasswordsForDisable(Landroid/app/enterprise/ContextInfo;I)Z
     .locals 6
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/security/PasswordPolicy;->enforceSecurityPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -5635,9 +5490,6 @@
 
 .method public setMaximumFailedPasswordsForWipe(Landroid/app/enterprise/ContextInfo;Landroid/content/ComponentName;I)V
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # I
 
     invoke-virtual {p0, p1, p2}, Lcom/android/server/enterprise/security/PasswordPolicy;->enforceComponentCheck(Landroid/app/enterprise/ContextInfo;Landroid/content/ComponentName;)V
 
@@ -5697,8 +5549,6 @@
 
 .method public setMaximumNumericSequenceLength(Landroid/app/enterprise/ContextInfo;I)Z
     .locals 6
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # I
 
     if-gez p2, :cond_0
 
@@ -5733,9 +5583,6 @@
 
 .method public setMaximumTimeToLock(Landroid/app/enterprise/ContextInfo;Landroid/content/ComponentName;J)V
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # J
 
     invoke-virtual {p0, p1, p2}, Lcom/android/server/enterprise/security/PasswordPolicy;->enforceComponentCheck(Landroid/app/enterprise/ContextInfo;Landroid/content/ComponentName;)V
 
@@ -5795,8 +5642,6 @@
 
 .method public setMinimumCharacterChangeLength(Landroid/app/enterprise/ContextInfo;I)Z
     .locals 6
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/security/PasswordPolicy;->enforceSecurityPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -5831,8 +5676,6 @@
 
 .method public setPasswordChangeTimeout(Landroid/app/enterprise/ContextInfo;I)Z
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/security/PasswordPolicy;->enforceSecurityPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -5875,9 +5718,6 @@
 
 .method public setPasswordExpirationTimeout(Landroid/app/enterprise/ContextInfo;Landroid/content/ComponentName;J)V
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # J
 
     invoke-virtual {p0, p1, p2}, Lcom/android/server/enterprise/security/PasswordPolicy;->enforceComponentCheck(Landroid/app/enterprise/ContextInfo;Landroid/content/ComponentName;)V
 
@@ -5937,9 +5777,6 @@
 
 .method public setPasswordHistoryLength(Landroid/app/enterprise/ContextInfo;Landroid/content/ComponentName;I)V
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # I
 
     invoke-virtual {p0, p1, p2}, Lcom/android/server/enterprise/security/PasswordPolicy;->enforceComponentCheck(Landroid/app/enterprise/ContextInfo;Landroid/content/ComponentName;)V
 
@@ -5999,8 +5836,6 @@
 
 .method public setPasswordLockDelay(Landroid/app/enterprise/ContextInfo;I)Z
     .locals 6
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/security/PasswordPolicy;->enforceOwnerOnlyAndSecurityPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -6045,9 +5880,6 @@
 
 .method public setPasswordMinimumLength(Landroid/app/enterprise/ContextInfo;Landroid/content/ComponentName;I)V
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # I
 
     invoke-virtual {p0, p1, p2}, Lcom/android/server/enterprise/security/PasswordPolicy;->enforceComponentCheck(Landroid/app/enterprise/ContextInfo;Landroid/content/ComponentName;)V
 
@@ -6107,9 +5939,6 @@
 
 .method public setPasswordMinimumLetters(Landroid/app/enterprise/ContextInfo;Landroid/content/ComponentName;I)V
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # I
 
     invoke-virtual {p0, p1, p2}, Lcom/android/server/enterprise/security/PasswordPolicy;->enforceComponentCheck(Landroid/app/enterprise/ContextInfo;Landroid/content/ComponentName;)V
 
@@ -6169,9 +5998,6 @@
 
 .method public setPasswordMinimumLowerCase(Landroid/app/enterprise/ContextInfo;Landroid/content/ComponentName;I)V
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # I
 
     invoke-virtual {p0, p1, p2}, Lcom/android/server/enterprise/security/PasswordPolicy;->enforceComponentCheck(Landroid/app/enterprise/ContextInfo;Landroid/content/ComponentName;)V
 
@@ -6231,9 +6057,6 @@
 
 .method public setPasswordMinimumNonLetter(Landroid/app/enterprise/ContextInfo;Landroid/content/ComponentName;I)V
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # I
 
     invoke-virtual {p0, p1, p2}, Lcom/android/server/enterprise/security/PasswordPolicy;->enforceComponentCheck(Landroid/app/enterprise/ContextInfo;Landroid/content/ComponentName;)V
 
@@ -6293,9 +6116,6 @@
 
 .method public setPasswordMinimumNumeric(Landroid/app/enterprise/ContextInfo;Landroid/content/ComponentName;I)V
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # I
 
     invoke-virtual {p0, p1, p2}, Lcom/android/server/enterprise/security/PasswordPolicy;->enforceComponentCheck(Landroid/app/enterprise/ContextInfo;Landroid/content/ComponentName;)V
 
@@ -6355,9 +6175,6 @@
 
 .method public setPasswordMinimumSymbols(Landroid/app/enterprise/ContextInfo;Landroid/content/ComponentName;I)V
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # I
 
     invoke-virtual {p0, p1, p2}, Lcom/android/server/enterprise/security/PasswordPolicy;->enforceComponentCheck(Landroid/app/enterprise/ContextInfo;Landroid/content/ComponentName;)V
 
@@ -6417,9 +6234,6 @@
 
 .method public setPasswordMinimumUpperCase(Landroid/app/enterprise/ContextInfo;Landroid/content/ComponentName;I)V
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # I
 
     invoke-virtual {p0, p1, p2}, Lcom/android/server/enterprise/security/PasswordPolicy;->enforceComponentCheck(Landroid/app/enterprise/ContextInfo;Landroid/content/ComponentName;)V
 
@@ -6479,9 +6293,6 @@
 
 .method public setPasswordQuality(Landroid/app/enterprise/ContextInfo;Landroid/content/ComponentName;I)V
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # I
 
     invoke-virtual {p0, p1, p2}, Lcom/android/server/enterprise/security/PasswordPolicy;->enforceComponentCheck(Landroid/app/enterprise/ContextInfo;Landroid/content/ComponentName;)V
 
@@ -6541,8 +6352,6 @@
 
 .method public setPasswordVisibilityEnabled(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 10
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     const/4 v6, 0x1
 
@@ -6608,8 +6417,6 @@
 
 .method public setPwdChangeRequested(Landroid/app/enterprise/ContextInfo;I)Z
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # I
 
     invoke-static {p1}, Lcom/android/server/enterprise/EnterpriseDeviceManagerService;->getCallingOrCurrentUserId(Landroid/app/enterprise/ContextInfo;)I
 
@@ -6626,9 +6433,6 @@
 
 .method public declared-synchronized setPwdChangeRequestedForUser(III)Z
     .locals 20
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     monitor-enter p0
 
@@ -6852,8 +6656,6 @@
 
 .method public setRequiredPasswordPattern(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 8
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/security/PasswordPolicy;->enforceSecurityPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -6916,8 +6718,6 @@
 
 .method public setScreenLockPatternVisibilityEnabled(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 8
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     const/4 v7, 0x0
 

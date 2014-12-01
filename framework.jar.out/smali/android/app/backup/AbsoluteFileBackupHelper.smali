@@ -21,8 +21,6 @@
 # direct methods
 .method public varargs constructor <init>(Landroid/content/Context;[Ljava/lang/String;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # [Ljava/lang/String;
 
     invoke-direct {p0, p1}, Landroid/app/backup/FileBackupHelperBase;-><init>(Landroid/content/Context;)V
 
@@ -37,9 +35,6 @@
 # virtual methods
 .method public performBackup(Landroid/os/ParcelFileDescriptor;Landroid/app/backup/BackupDataOutput;Landroid/os/ParcelFileDescriptor;)V
     .locals 2
-    .param p1    # Landroid/os/ParcelFileDescriptor;
-    .param p2    # Landroid/app/backup/BackupDataOutput;
-    .param p3    # Landroid/os/ParcelFileDescriptor;
 
     iget-object v0, p0, Landroid/app/backup/AbsoluteFileBackupHelper;->mFiles:[Ljava/lang/String;
 
@@ -52,7 +47,6 @@
 
 .method public restoreEntity(Landroid/app/backup/BackupDataInputStream;)V
     .locals 3
-    .param p1    # Landroid/app/backup/BackupDataInputStream;
 
     invoke-virtual {p1}, Landroid/app/backup/BackupDataInputStream;->getKey()Ljava/lang/String;
 
@@ -78,7 +72,6 @@
 
 .method public bridge synthetic writeNewStateDescription(Landroid/os/ParcelFileDescriptor;)V
     .locals 0
-    .param p1    # Landroid/os/ParcelFileDescriptor;
 
     invoke-super {p0, p1}, Landroid/app/backup/FileBackupHelperBase;->writeNewStateDescription(Landroid/os/ParcelFileDescriptor;)V
 

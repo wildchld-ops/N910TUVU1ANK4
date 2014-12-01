@@ -26,7 +26,6 @@
 
 .method public static getCurrentActiveApns(Landroid/content/Context;)Ljava/util/List;
     .locals 17
-    .param p0    # Landroid/content/Context;
     .annotation build Landroid/annotation/SuppressLint;
         value = {
             "InlinedApi"
@@ -334,8 +333,6 @@
 
 .method public static getDefaultType(Landroid/content/Context;Lcom/sec/enterprise/knox/billing/EnterpriseApn;)Ljava/lang/String;
     .locals 11
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/sec/enterprise/knox/billing/EnterpriseApn;
     .annotation build Landroid/annotation/TargetApi;
         value = 0x13
     .end annotation
@@ -436,9 +433,6 @@
 
 .method public static updateApnType(Landroid/content/Context;Lcom/sec/enterprise/knox/billing/EnterpriseApn;Ljava/lang/String;)I
     .locals 10
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/sec/enterprise/knox/billing/EnterpriseApn;
-    .param p2    # Ljava/lang/String;
     .annotation build Landroid/annotation/SuppressLint;
         value = {
             "NewApi"

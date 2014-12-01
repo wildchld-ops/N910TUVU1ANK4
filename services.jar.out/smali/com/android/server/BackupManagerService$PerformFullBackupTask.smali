@@ -58,17 +58,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/BackupManagerService;Landroid/os/ParcelFileDescriptor;Landroid/app/backup/IFullBackupRestoreObserver;ZZZLjava/lang/String;Ljava/lang/String;ZZ[Ljava/lang/String;Ljava/util/concurrent/atomic/AtomicBoolean;)V
     .locals 3
-    .param p2    # Landroid/os/ParcelFileDescriptor;
-    .param p3    # Landroid/app/backup/IFullBackupRestoreObserver;
-    .param p4    # Z
-    .param p5    # Z
-    .param p6    # Z
-    .param p7    # Ljava/lang/String;
-    .param p8    # Ljava/lang/String;
-    .param p9    # Z
-    .param p10    # Z
-    .param p11    # [Ljava/lang/String;
-    .param p12    # Ljava/util/concurrent/atomic/AtomicBoolean;
 
     iput-object p1, p0, Lcom/android/server/BackupManagerService$PerformFullBackupTask;->this$0:Lcom/android/server/BackupManagerService;
 
@@ -136,10 +125,6 @@
 
 .method static synthetic access$1300(Lcom/android/server/BackupManagerService$PerformFullBackupTask;Landroid/content/pm/PackageInfo;Ljava/io/File;Z)V
     .locals 0
-    .param p0    # Lcom/android/server/BackupManagerService$PerformFullBackupTask;
-    .param p1    # Landroid/content/pm/PackageInfo;
-    .param p2    # Ljava/io/File;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -153,9 +138,6 @@
 
 .method static synthetic access$1400(Lcom/android/server/BackupManagerService$PerformFullBackupTask;Landroid/content/pm/PackageInfo;Landroid/app/backup/BackupDataOutput;)V
     .locals 0
-    .param p0    # Lcom/android/server/BackupManagerService$PerformFullBackupTask;
-    .param p1    # Landroid/content/pm/PackageInfo;
-    .param p2    # Landroid/app/backup/BackupDataOutput;
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/BackupManagerService$PerformFullBackupTask;->writeApkToBackup(Landroid/content/pm/PackageInfo;Landroid/app/backup/BackupDataOutput;)V
 
@@ -164,8 +146,6 @@
 
 .method private backupOnePackage(Landroid/content/pm/PackageInfo;Ljava/io/OutputStream;)V
     .locals 15
-    .param p1    # Landroid/content/pm/PackageInfo;
-    .param p2    # Ljava/io/OutputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -711,8 +691,6 @@
 
 .method private emitAesBackupHeader(Ljava/lang/StringBuilder;Ljava/io/OutputStream;)Ljava/io/OutputStream;
     .locals 23
-    .param p1    # Ljava/lang/StringBuilder;
-    .param p2    # Ljava/io/OutputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;
@@ -1107,7 +1085,6 @@
 
 .method private finalizeBackup(Ljava/io/OutputStream;)V
     .locals 4
-    .param p1    # Ljava/io/OutputStream;
 
     const/16 v2, 0x400
 
@@ -1135,7 +1112,6 @@
 
 .method private tearDown(Landroid/content/pm/PackageInfo;)V
     .locals 5
-    .param p1    # Landroid/content/pm/PackageInfo;
 
     if-eqz p1, :cond_0
 
@@ -1198,8 +1174,6 @@
 
 .method private writeApkToBackup(Landroid/content/pm/PackageInfo;Landroid/app/backup/BackupDataOutput;)V
     .locals 19
-    .param p1    # Landroid/content/pm/PackageInfo;
-    .param p2    # Landroid/app/backup/BackupDataOutput;
 
     move-object/from16 v0, p1
 
@@ -1298,9 +1272,6 @@
 
 .method private writeAppManifest(Landroid/content/pm/PackageInfo;Ljava/io/File;Z)V
     .locals 10
-    .param p1    # Landroid/content/pm/PackageInfo;
-    .param p2    # Ljava/io/File;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -3231,7 +3202,6 @@
 
 .method sendOnBackupPackage(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/server/BackupManagerService$PerformFullBackupTask;->this$0:Lcom/android/server/BackupManagerService;
 

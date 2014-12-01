@@ -24,8 +24,6 @@
 # direct methods
 .method public constructor <init>(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -52,10 +50,6 @@
 # virtual methods
 .method public append(IIIJ)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # J
 
     iget v0, p0, Landroid/mtp/MtpPropertyList;->mCount:I
 
@@ -95,9 +89,6 @@
 
 .method public append(IILjava/lang/String;)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     iget v0, p0, Landroid/mtp/MtpPropertyList;->mCount:I
 
@@ -139,7 +130,6 @@
 
 .method public setResult(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/mtp/MtpPropertyList;->mResult:I
 

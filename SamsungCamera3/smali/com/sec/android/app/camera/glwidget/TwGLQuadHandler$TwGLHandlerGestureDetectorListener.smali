@@ -33,7 +33,6 @@
 # virtual methods
 .method public onLongPress(Landroid/view/MotionEvent;)V
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLQuadHandler$TwGLHandlerGestureDetectorListener;->this$0:Lcom/sec/android/app/camera/glwidget/TwGLQuadHandler;
 

@@ -47,9 +47,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/settings/applications/InstalledAppDetails;Landroid/content/pm/ApplicationInfo;I)V
     .locals 1
-    .param p1    # Lcom/android/settings/applications/InstalledAppDetails;
-    .param p2    # Landroid/content/pm/ApplicationInfo;
-    .param p3    # I
 
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
 
@@ -77,7 +74,6 @@
 # virtual methods
 .method protected varargs doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 4
-    .param p1    # [Ljava/lang/Object;
 
     iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails$DisableChanger;->mPm:Landroid/content/pm/PackageManager;
 

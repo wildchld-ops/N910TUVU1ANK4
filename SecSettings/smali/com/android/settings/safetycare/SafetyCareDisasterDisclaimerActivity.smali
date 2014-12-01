@@ -22,7 +22,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/safetycare/SafetyCareDisasterDisclaimerActivity;)V
     .locals 0
-    .param p0    # Lcom/android/settings/safetycare/SafetyCareDisasterDisclaimerActivity;
 
     invoke-direct {p0}, Lcom/android/settings/safetycare/SafetyCareDisasterDisclaimerActivity;->prepareFinishActivity()V
 
@@ -62,7 +61,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v3, 0x1
 
@@ -197,8 +195,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     invoke-virtual {p2}, Landroid/view/KeyEvent;->getKeyCode()I
 
@@ -226,7 +222,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 

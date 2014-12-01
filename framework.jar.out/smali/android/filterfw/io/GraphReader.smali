@@ -26,8 +26,6 @@
 # virtual methods
 .method public addReference(Ljava/lang/String;Ljava/lang/Object;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Object;
 
     iget-object v0, p0, Landroid/filterfw/io/GraphReader;->mReferences:Landroid/filterfw/core/KeyValueMap;
 
@@ -38,7 +36,6 @@
 
 .method public varargs addReferencesByKeysAndValues([Ljava/lang/Object;)V
     .locals 1
-    .param p1    # [Ljava/lang/Object;
 
     iget-object v0, p0, Landroid/filterfw/io/GraphReader;->mReferences:Landroid/filterfw/core/KeyValueMap;
 
@@ -49,7 +46,6 @@
 
 .method public addReferencesByMap(Landroid/filterfw/core/KeyValueMap;)V
     .locals 1
-    .param p1    # Landroid/filterfw/core/KeyValueMap;
 
     iget-object v0, p0, Landroid/filterfw/io/GraphReader;->mReferences:Landroid/filterfw/core/KeyValueMap;
 
@@ -60,8 +56,6 @@
 
 .method public readGraphResource(Landroid/content/Context;I)Landroid/filterfw/core/FilterGraph;
     .locals 8
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/filterfw/io/GraphIOException;

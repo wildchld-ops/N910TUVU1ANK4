@@ -41,7 +41,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -52,8 +51,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -64,9 +61,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Landroid/view/View;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
@@ -169,8 +163,6 @@
 
 .method static synthetic access$000(ILandroid/content/res/Resources;)Landroid/graphics/Paint;
     .locals 1
-    .param p0    # I
-    .param p1    # Landroid/content/res/Resources;
 
     invoke-static {p0, p1}, Lcom/android/settings/widget/PieChartView;->buildFillPaint(ILandroid/content/res/Resources;)Landroid/graphics/Paint;
 
@@ -181,8 +173,6 @@
 
 .method private static buildFillPaint(ILandroid/content/res/Resources;)Landroid/graphics/Paint;
     .locals 2
-    .param p0    # I
-    .param p1    # Landroid/content/res/Resources;
 
     new-instance v0, Landroid/graphics/Paint;
 
@@ -205,8 +195,6 @@
 # virtual methods
 .method public addSlice(JI)V
     .locals 2
-    .param p1    # J
-    .param p3    # I
 
     iget-object v0, p0, Lcom/android/settings/widget/PieChartView;->mSlices:Ljava/util/ArrayList;
 
@@ -833,7 +821,6 @@
 
 .method protected onDraw(Landroid/graphics/Canvas;)V
     .locals 4
-    .param p1    # Landroid/graphics/Canvas;
 
     iget-object v2, p0, Lcom/android/settings/widget/PieChartView;->mMatrix:Landroid/graphics/Matrix;
 
@@ -918,11 +905,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 5
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-virtual {p0}, Landroid/view/View;->getWidth()I
 
@@ -975,7 +957,6 @@
 
 .method public setOriginAngle(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/settings/widget/PieChartView;->mOriginAngle:I
 

@@ -62,7 +62,7 @@
 
     iget-object v10, p0, Lcom/android/phone/LGTCountryList$1;->this$0:Lcom/android/phone/LGTCountryList;
 
-    invoke-virtual {v10}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v10}, Lcom/android/phone/LGTCountryList;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v10
 
@@ -109,7 +109,7 @@
 
     iget-object v10, p0, Lcom/android/phone/LGTCountryList$1;->this$0:Lcom/android/phone/LGTCountryList;
 
-    invoke-virtual {v10}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {v10}, Lcom/android/phone/LGTCountryList;->getResources()Landroid/content/res/Resources;
 
     move-result-object v10
 

@@ -94,7 +94,6 @@
 
 .method constructor <init>(Landroid/media/effect/EffectContext;)V
     .locals 0
-    .param p1    # Landroid/media/effect/EffectContext;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -105,7 +104,6 @@
 
 .method private static getEffectClassByName(Ljava/lang/String;)Ljava/lang/Class;
     .locals 8
-    .param p0    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -167,8 +165,6 @@
 
 .method private instantiateEffect(Ljava/lang/Class;Ljava/lang/String;)Landroid/media/effect/Effect;
     .locals 7
-    .param p1    # Ljava/lang/Class;
-    .param p2    # Ljava/lang/String;
 
     :try_start_0
     const-class v4, Landroid/media/effect/Effect;
@@ -337,7 +333,6 @@
 
 .method public static isEffectSupported(Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Landroid/media/effect/EffectFactory;->getEffectClassByName(Ljava/lang/String;)Ljava/lang/Class;
 
@@ -360,7 +355,6 @@
 # virtual methods
 .method public createEffect(Ljava/lang/String;)Landroid/media/effect/Effect;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Landroid/media/effect/EffectFactory;->getEffectClassByName(Ljava/lang/String;)Ljava/lang/Class;
 

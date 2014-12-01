@@ -27,7 +27,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 8
-    .param p1    # Landroid/content/Context;
 
     const v2, 0x7f0b0118
 
@@ -92,7 +91,6 @@
 
 .method static synthetic access$000(Lcom/android/systemui/statusbar/policy/quicksetting/AllShareCastQuickSettingButton;)Landroid/hardware/display/WifiDisplayStatus;
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/policy/quicksetting/AllShareCastQuickSettingButton;
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/quicksetting/AllShareCastQuickSettingButton;->mWifiDisplayStatus:Landroid/hardware/display/WifiDisplayStatus;
 
@@ -101,8 +99,6 @@
 
 .method static synthetic access$002(Lcom/android/systemui/statusbar/policy/quicksetting/AllShareCastQuickSettingButton;Landroid/hardware/display/WifiDisplayStatus;)Landroid/hardware/display/WifiDisplayStatus;
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/policy/quicksetting/AllShareCastQuickSettingButton;
-    .param p1    # Landroid/hardware/display/WifiDisplayStatus;
 
     iput-object p1, p0, Lcom/android/systemui/statusbar/policy/quicksetting/AllShareCastQuickSettingButton;->mWifiDisplayStatus:Landroid/hardware/display/WifiDisplayStatus;
 
@@ -111,7 +107,6 @@
 
 .method static synthetic access$100(Lcom/android/systemui/statusbar/policy/quicksetting/AllShareCastQuickSettingButton;)Landroid/hardware/display/DisplayManager;
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/policy/quicksetting/AllShareCastQuickSettingButton;
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/quicksetting/AllShareCastQuickSettingButton;->mDisplayManager:Landroid/hardware/display/DisplayManager;
 
@@ -120,8 +115,6 @@
 
 .method static synthetic access$200(Lcom/android/systemui/statusbar/policy/quicksetting/AllShareCastQuickSettingButton;I)I
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/policy/quicksetting/AllShareCastQuickSettingButton;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/systemui/statusbar/policy/quicksetting/AllShareCastQuickSettingButton;->handleStateChanged(I)I
 
@@ -132,7 +125,6 @@
 
 .method static synthetic access$300(Lcom/android/systemui/statusbar/policy/quicksetting/AllShareCastQuickSettingButton;)V
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/policy/quicksetting/AllShareCastQuickSettingButton;
 
     invoke-direct {p0}, Lcom/android/systemui/statusbar/policy/quicksetting/AllShareCastQuickSettingButton;->update()V
 
@@ -141,7 +133,6 @@
 
 .method private addActionsTo(Landroid/content/IntentFilter;)V
     .locals 1
-    .param p1    # Landroid/content/IntentFilter;
 
     const-string v0, "android.hardware.display.action.WIFI_DISPLAY_STATUS_CHANGED"
 
@@ -152,7 +143,6 @@
 
 .method private handleStateChanged(I)I
     .locals 3
-    .param p1    # I
 
     const-string v0, "STATUSBAR-AllShareCastQuickSettingButton"
 
@@ -193,7 +183,6 @@
 
 .method private isActivityRunning(Ljava/lang/String;)Z
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     iget-object v5, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -406,7 +395,6 @@
 
 .method public onClick(Z)V
     .locals 6
-    .param p1    # Z
 
     const/4 v5, 0x1
 

@@ -499,7 +499,6 @@
 
 .method public constructor <init>(Landroid/net/wifi/WifiConfiguration;)V
     .locals 3
-    .param p1    # Landroid/net/wifi/WifiConfiguration;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -771,7 +770,6 @@
 
 .method static synthetic access$000(Landroid/os/Parcel;)Ljava/util/BitSet;
     .locals 1
-    .param p0    # Landroid/os/Parcel;
 
     invoke-static {p0}, Landroid/net/wifi/WifiConfiguration;->readBitSet(Landroid/os/Parcel;)Ljava/util/BitSet;
 
@@ -782,7 +780,6 @@
 
 .method private static readBitSet(Landroid/os/Parcel;)Ljava/util/BitSet;
     .locals 4
-    .param p0    # Landroid/os/Parcel;
 
     invoke-virtual {p0}, Landroid/os/Parcel;->readInt()I
 
@@ -813,7 +810,6 @@
 
 .method private trimStringForKeyId(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "\""
 
@@ -836,8 +832,6 @@
 
 .method private static writeBitSet(Landroid/os/Parcel;Ljava/util/BitSet;)V
     .locals 2
-    .param p0    # Landroid/os/Parcel;
-    .param p1    # Ljava/util/BitSet;
 
     const/4 v0, -0x1
 
@@ -960,7 +954,6 @@
 
 .method getKeyIdForCredentials(Landroid/net/wifi/WifiConfiguration;)Ljava/lang/String;
     .locals 5
-    .param p1    # Landroid/net/wifi/WifiConfiguration;
 
     const/4 v1, 0x0
 
@@ -2386,8 +2379,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 9
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     const/4 v5, 0x1
 

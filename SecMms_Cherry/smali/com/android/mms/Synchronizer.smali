@@ -26,7 +26,6 @@
 
 .method static synthetic access$000(Landroid/content/Context;)V
     .locals 0
-    .param p0    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;
@@ -40,7 +39,6 @@
 
 .method private static dbSync(Landroid/content/Context;)V
     .locals 6
-    .param p0    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;
@@ -88,7 +86,6 @@
 
 .method public static doProcessing(Landroid/content/Context;)V
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     new-instance v0, Ljava/lang/Thread;
 

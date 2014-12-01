@@ -29,7 +29,6 @@
 # direct methods
 .method public varargs constructor <init>([Landroid/animation/Keyframe;)V
     .locals 2
-    .param p1    # [Landroid/animation/Keyframe;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -90,7 +89,6 @@
 
 .method public static varargs ofFloat([F)Landroid/animation/KeyframeSet;
     .locals 8
-    .param p0    # [F
 
     const/4 v7, 0x1
 
@@ -210,7 +208,6 @@
 
 .method public static varargs ofInt([I)Landroid/animation/KeyframeSet;
     .locals 7
-    .param p0    # [I
 
     const/4 v6, 0x1
 
@@ -298,7 +295,6 @@
 
 .method public static varargs ofKeyframe([Landroid/animation/Keyframe;)Landroid/animation/KeyframeSet;
     .locals 8
-    .param p0    # [Landroid/animation/Keyframe;
 
     array-length v6, p0
 
@@ -415,7 +411,6 @@
 
 .method public static varargs ofObject([Ljava/lang/Object;)Landroid/animation/KeyframeSet;
     .locals 7
-    .param p0    # [Ljava/lang/Object;
 
     const/4 v6, 0x1
 
@@ -562,7 +557,6 @@
 
 .method public getValue(F)Ljava/lang/Object;
     .locals 9
-    .param p1    # F
 
     iget v6, p0, Landroid/animation/KeyframeSet;->mNumKeyframes:I
 
@@ -816,7 +810,6 @@
 
 .method public setEvaluator(Landroid/animation/TypeEvaluator;)V
     .locals 0
-    .param p1    # Landroid/animation/TypeEvaluator;
 
     iput-object p1, p0, Landroid/animation/KeyframeSet;->mEvaluator:Landroid/animation/TypeEvaluator;
 

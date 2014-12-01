@@ -270,7 +270,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -281,8 +280,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Lcom/voovio/sweep/ImageProvider;)V
     .locals 13
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/voovio/sweep/ImageProvider;
     .annotation build Landroid/annotation/TargetApi;
         value = 0xb
     .end annotation
@@ -1514,11 +1511,6 @@
 
 .method private appendZeroEdge(Lcom/voovio/sweep/Voovio;Lcom/voovio/voo3d/data/Vector3;Lcom/voovio/voo3d/data/Vector3;FI)Lcom/voovio/sweep/Edge;
     .locals 3
-    .param p1    # Lcom/voovio/sweep/Voovio;
-    .param p2    # Lcom/voovio/voo3d/data/Vector3;
-    .param p3    # Lcom/voovio/voo3d/data/Vector3;
-    .param p4    # F
-    .param p5    # I
 
     new-instance v1, Lcom/voovio/sweep/Node;
 
@@ -2993,7 +2985,6 @@
 
 .method private drawScene(Ljavax/microedition/khronos/opengles/GL10;)V
     .locals 20
-    .param p1    # Ljavax/microedition/khronos/opengles/GL10;
 
     move-object/from16 v0, p0
 
@@ -3572,7 +3563,6 @@
 
 .method private getAvailableDirectionsForEdge(Lcom/voovio/sweep/Edge;)B
     .locals 7
-    .param p1    # Lcom/voovio/sweep/Edge;
 
     const/4 v6, 0x1
 
@@ -3735,7 +3725,6 @@
 
 .method private getCurrentCameraDirection(Lcom/voovio/voo3d/data/Vector3;)V
     .locals 3
-    .param p1    # Lcom/voovio/voo3d/data/Vector3;
 
     const/4 v2, 0x0
 
@@ -3794,7 +3783,6 @@
 
 .method private getNextKeyEdge(Lcom/voovio/sweep/Edge;)Lcom/voovio/sweep/Edge;
     .locals 5
-    .param p1    # Lcom/voovio/sweep/Edge;
 
     const/4 v1, 0x0
 
@@ -3837,7 +3825,6 @@
 
 .method private getPrevKeyEdge(Lcom/voovio/sweep/Edge;)Lcom/voovio/sweep/Edge;
     .locals 3
-    .param p1    # Lcom/voovio/sweep/Edge;
 
     const/4 v1, 0x0
 
@@ -3870,7 +3857,6 @@
 
 .method private setAutodrive(Z)V
     .locals 6
-    .param p1    # Z
 
     const/4 v1, 0x1
 
@@ -4036,7 +4022,6 @@
 
 .method private setCurrentEdge(I)V
     .locals 2
-    .param p1    # I
 
     if-nez p1, :cond_1
 
@@ -4086,7 +4071,6 @@
 
 .method private setCurrentVoovio(Lcom/voovio/sweep/Voovio;)V
     .locals 4
-    .param p1    # Lcom/voovio/sweep/Voovio;
 
     iput-object p1, p0, Lcom/voovio/sweep/SweepView;->m_oCurVoovio:Lcom/voovio/sweep/Voovio;
 
@@ -4122,7 +4106,6 @@
 
 .method private setGLViewport(Lcom/voovio/voo3d/view/Viewport;)V
     .locals 4
-    .param p1    # Lcom/voovio/voo3d/view/Viewport;
 
     invoke-virtual {p1}, Lcom/voovio/voo3d/view/Viewport;->getOffsetX()F
 
@@ -4425,7 +4408,6 @@
 
 .method private updateGLViewport(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/voovio/sweep/SweepView;->m_oCamera:Lcom/voovio/voo3d/scenegraph/Camera3D;
 
@@ -4934,7 +4916,6 @@
 
 .method private updateViewportForCamera(Lcom/voovio/voo3d/scenegraph/Camera3D;)V
     .locals 23
-    .param p1    # Lcom/voovio/voo3d/scenegraph/Camera3D;
 
     invoke-virtual/range {p1 .. p1}, Lcom/voovio/voo3d/scenegraph/Camera3D;->getViewport()Lcom/voovio/voo3d/view/Viewport;
 
@@ -5322,7 +5303,6 @@
 # virtual methods
 .method public autodriveDirectional(I)Z
     .locals 11
-    .param p1    # I
 
     const/high16 v10, -0x40800000
 
@@ -5888,7 +5868,6 @@
 
 .method public autodriveTo(I)Z
     .locals 9
-    .param p1    # I
 
     const/4 v6, 0x1
 
@@ -6178,11 +6157,6 @@
 
 .method public drawAlphaGradientStrip(Lcom/voovio/sweep/Voovio;[FIII)V
     .locals 7
-    .param p1    # Lcom/voovio/sweep/Voovio;
-    .param p2    # [F
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     iget v0, p0, Lcom/voovio/sweep/SweepView;->m_iProg2Id:I
 
@@ -6359,9 +6333,6 @@
 
 .method public drawTransitionOverlappingArea(Lcom/voovio/sweep/Voovio;FLcom/voovio/sweep/Transition;)V
     .locals 19
-    .param p1    # Lcom/voovio/sweep/Voovio;
-    .param p2    # F
-    .param p3    # Lcom/voovio/sweep/Transition;
 
     move-object/from16 v0, p0
 
@@ -6738,9 +6709,6 @@
 
 .method public drawVoovioWithAlpha(Lcom/voovio/sweep/Voovio;F[F)V
     .locals 10
-    .param p1    # Lcom/voovio/sweep/Voovio;
-    .param p2    # F
-    .param p3    # [F
 
     iget v0, p0, Lcom/voovio/sweep/SweepView;->m_iProg1Id:I
 
@@ -6927,7 +6895,6 @@
 
 .method public enabledMipMaps(Z)V
     .locals 0
-    .param p1    # Z
 
     sput-boolean p1, Lcom/voovio/sweep/Voovio;->MIPMAPS:Z
 
@@ -6936,7 +6903,6 @@
 
 .method public enabledPOTTextures(Z)V
     .locals 0
-    .param p1    # Z
 
     sput-boolean p1, Lcom/voovio/sweep/Sweep;->POT_TEXTURES:Z
 
@@ -7172,7 +7138,6 @@
 
 .method public getNextFrameAsByteBuffer(Ljava/nio/ByteBuffer;)Z
     .locals 1
-    .param p1    # Ljava/nio/ByteBuffer;
 
     iget-object v0, p0, Lcom/voovio/sweep/SweepView;->m_oSweepOffScreen:Lcom/voovio/sweep/SweepOffScreen;
 
@@ -7237,7 +7202,6 @@
 
 .method public moveToImage(I)V
     .locals 2
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -7319,7 +7283,6 @@
 
 .method public moveToPosition(I)V
     .locals 8
-    .param p1    # I
 
     const/4 v4, 0x0
 
@@ -7502,7 +7465,6 @@
 
 .method public onDrawFrame(Ljavax/microedition/khronos/opengles/GL10;)V
     .locals 7
-    .param p1    # Ljavax/microedition/khronos/opengles/GL10;
 
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 
@@ -7643,10 +7605,6 @@
 
 .method protected onSizeChanged(IIII)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-super {p0, p1, p2, p3, p4}, Landroid/view/View;->onSizeChanged(IIII)V
 
@@ -7699,17 +7657,12 @@
 
 .method public onSurfaceChanged(Ljavax/microedition/khronos/opengles/GL10;II)V
     .locals 0
-    .param p1    # Ljavax/microedition/khronos/opengles/GL10;
-    .param p2    # I
-    .param p3    # I
 
     return-void
 .end method
 
 .method public onSurfaceCreated(Ljavax/microedition/khronos/opengles/GL10;Ljavax/microedition/khronos/egl/EGLConfig;)V
     .locals 6
-    .param p1    # Ljavax/microedition/khronos/opengles/GL10;
-    .param p2    # Ljavax/microedition/khronos/egl/EGLConfig;
 
     const/4 v2, 0x0
 
@@ -8104,7 +8057,6 @@
 
 .method public preloadSweepImages(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/voovio/sweep/SweepView;->m_bPreloadImages:Z
 
@@ -8113,7 +8065,6 @@
 
 .method public preloadSweepImagesOnGPU(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/voovio/sweep/SweepView;->m_bPreloadImagesOnGPU:Z
 
@@ -8148,7 +8099,6 @@
 
 .method public setAutodriveOnStart(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/voovio/sweep/SweepView;->m_nAutodriveOnStart:I
 
@@ -8157,8 +8107,6 @@
 
 .method public setAutodriveVelocity(FF)V
     .locals 0
-    .param p1    # F
-    .param p2    # F
 
     iput p1, p0, Lcom/voovio/sweep/SweepView;->m_fAutodriveVelocityForward:F
 
@@ -8169,7 +8117,6 @@
 
 .method public setBitmapPreferredConfig(Landroid/graphics/Bitmap$Config;)V
     .locals 1
-    .param p1    # Landroid/graphics/Bitmap$Config;
 
     iput-object p1, p0, Lcom/voovio/sweep/SweepView;->m_oBitmapPreferredConfig:Landroid/graphics/Bitmap$Config;
 
@@ -8182,8 +8129,6 @@
 
 .method public setCameraDisplacements(FF)V
     .locals 11
-    .param p1    # F
-    .param p2    # F
 
     iget-object v0, p0, Lcom/voovio/sweep/SweepView;->m_oSweep:Lcom/voovio/sweep/Sweep;
 
@@ -8295,9 +8240,6 @@
 
 .method public setCameraZoomIncrement(FFF)V
     .locals 12
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
 
     const v11, 0x42652ee0
 
@@ -8582,7 +8524,6 @@
 
 .method public setImageProvider(Lcom/voovio/sweep/ImageProvider;)V
     .locals 1
-    .param p1    # Lcom/voovio/sweep/ImageProvider;
 
     iget-object v0, p0, Lcom/voovio/sweep/SweepView;->m_oResourceManager:Lcom/voovio/sweep/ResourceManager;
 
@@ -8593,7 +8534,6 @@
 
 .method public setImageSampleSize(I)V
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -8615,7 +8555,6 @@
 
 .method public setLowResSampleSize(I)V
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -8633,7 +8572,6 @@
 
 .method public setOnSweepViewListener(Lcom/voovio/sweep/SweepView$OnSweepViewListener;)V
     .locals 0
-    .param p1    # Lcom/voovio/sweep/SweepView$OnSweepViewListener;
 
     iput-object p1, p0, Lcom/voovio/sweep/SweepView;->m_oSweepViewListener:Lcom/voovio/sweep/SweepView$OnSweepViewListener;
 
@@ -8642,7 +8580,6 @@
 
 .method public setSweep(Lcom/voovio/sweep/Sweep;)V
     .locals 9
-    .param p1    # Lcom/voovio/sweep/Sweep;
 
     iget-object v4, p0, Lcom/voovio/sweep/SweepView;->m_oSweep:Lcom/voovio/sweep/Sweep;
 
@@ -8845,7 +8782,6 @@
 
 .method public setZoomInFov(F)V
     .locals 0
-    .param p1    # F
 
     iput p1, p0, Lcom/voovio/sweep/SweepView;->m_fMinFOV:F
 
@@ -8854,10 +8790,6 @@
 
 .method public startRequestingFrames(IIII)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iget-object v0, p0, Lcom/voovio/sweep/SweepView;->m_oSweepOffScreen:Lcom/voovio/sweep/SweepOffScreen;
 
@@ -8954,8 +8886,6 @@
 
 .method public toogleZoomLevel(FF)V
     .locals 14
-    .param p1    # F
-    .param p2    # F
 
     iget-object v6, p0, Lcom/voovio/sweep/SweepView;->m_oCurVoovio:Lcom/voovio/sweep/Voovio;
 

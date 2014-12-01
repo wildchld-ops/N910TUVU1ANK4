@@ -308,7 +308,7 @@
     :catch_0
     move-exception v4
 
-    invoke-virtual {v4}, Ljava/lang/Throwable;->printStackTrace()V
+    invoke-virtual {v4}, Ljava/io/IOException;->printStackTrace()V
 
     goto :goto_2
 
@@ -317,7 +317,7 @@
 
     :goto_3
     :try_start_3
-    invoke-virtual {v4}, Ljava/lang/Throwable;->printStackTrace()V
+    invoke-virtual {v4}, Ljava/io/IOException;->printStackTrace()V
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
@@ -333,7 +333,7 @@
     :catch_2
     move-exception v4
 
-    invoke-virtual {v4}, Ljava/lang/Throwable;->printStackTrace()V
+    invoke-virtual {v4}, Ljava/io/IOException;->printStackTrace()V
 
     goto :goto_0
 
@@ -355,7 +355,7 @@
     :catch_3
     move-exception v4
 
-    invoke-virtual {v4}, Ljava/lang/Throwable;->printStackTrace()V
+    invoke-virtual {v4}, Ljava/io/IOException;->printStackTrace()V
 
     goto :goto_5
 
@@ -396,7 +396,7 @@
 
     :goto_0
     :try_start_0
-    invoke-virtual {v3, v2}, Ljava/io/Reader;->read([C)I
+    invoke-virtual {v3, v2}, Ljava/io/InputStreamReader;->read([C)I
 
     move-result v0
 
@@ -428,7 +428,7 @@
     :catch_0
     move-exception v1
 
-    invoke-virtual {v1}, Ljava/lang/Throwable;->printStackTrace()V
+    invoke-virtual {v1}, Ljava/io/IOException;->printStackTrace()V
 
     move-object v7, v6
 
@@ -932,21 +932,21 @@
     :catch_0
     move-exception v0
 
-    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
+    invoke-virtual {v0}, Ljava/io/IOException;->printStackTrace()V
 
     goto :goto_0
 
     :catch_1
     move-exception v2
 
-    invoke-virtual {v2}, Ljava/lang/Throwable;->printStackTrace()V
+    invoke-virtual {v2}, Lorg/apache/http/ParseException;->printStackTrace()V
 
     goto :goto_0
 
     :catch_2
     move-exception v1
 
-    invoke-virtual {v1}, Ljava/lang/Throwable;->printStackTrace()V
+    invoke-virtual {v1}, Ljava/lang/IllegalArgumentException;->printStackTrace()V
 
     goto :goto_0
 .end method

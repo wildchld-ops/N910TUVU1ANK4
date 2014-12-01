@@ -37,7 +37,6 @@
 
 .method protected getObj(Lcom/android/launcher2/MenuAppsGrid;)Lcom/android/launcher2/MenuAppsGrid$StateObj;
     .locals 1
-    .param p1    # Lcom/android/launcher2/MenuAppsGrid;
 
     # getter for: Lcom/android/launcher2/MenuAppsGrid;->mStateSelAppsToUnHide:Lcom/android/launcher2/MenuAppsGrid$StateSelAppsToUnHide;
     invoke-static {p1}, Lcom/android/launcher2/MenuAppsGrid;->access$1500(Lcom/android/launcher2/MenuAppsGrid;)Lcom/android/launcher2/MenuAppsGrid$StateSelAppsToUnHide;

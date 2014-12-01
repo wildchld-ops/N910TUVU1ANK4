@@ -123,7 +123,6 @@
 # direct methods
 .method public constructor <init>(Lorg/xmlpull/v1/XmlPullParser;)V
     .locals 1
-    .param p1    # Lorg/xmlpull/v1/XmlPullParser;
 
     const/4 v0, 0x0
 
@@ -150,8 +149,6 @@
 
 .method private containsProductName(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v5, 0x0
 

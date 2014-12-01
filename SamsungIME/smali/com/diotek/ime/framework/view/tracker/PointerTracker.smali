@@ -129,12 +129,6 @@
 
 .method public constructor <init>(ILcom/diotek/ime/framework/view/AbstractKeyboardView$UIHandler;Lcom/diotek/ime/framework/view/tracker/KeyDetector;Lcom/diotek/ime/framework/view/tracker/PointerTracker$UIProxy;Landroid/content/res/Resources;Z)V
     .locals 5
-    .param p1    # I
-    .param p2    # Lcom/diotek/ime/framework/view/AbstractKeyboardView$UIHandler;
-    .param p3    # Lcom/diotek/ime/framework/view/tracker/KeyDetector;
-    .param p4    # Lcom/diotek/ime/framework/view/tracker/PointerTracker$UIProxy;
-    .param p5    # Landroid/content/res/Resources;
-    .param p6    # Z
 
     const/4 v4, 0x1
 
@@ -356,8 +350,6 @@
 
 .method private diffrentSizeKeys(II)Z
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x1
 
@@ -581,7 +573,6 @@
 
 .method private getLongpressTimoutDelay(I)J
     .locals 4
-    .param p1    # I
 
     const-wide/16 v0, 0xc8
 
@@ -645,9 +636,6 @@
 
 .method private static getSquareDistanceToKeyEdge(IILcom/diotek/ime/framework/view/Keyboard$Key;)I
     .locals 10
-    .param p0    # I
-    .param p1    # I
-    .param p2    # Lcom/diotek/ime/framework/view/Keyboard$Key;
 
     iget v5, p2, Lcom/diotek/ime/framework/view/Keyboard$Key;->x:I
 
@@ -714,9 +702,6 @@
 
 .method private isFilteringEvent(IIJ)Z
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/tracker/PointerTracker;->mKeyState:Lcom/diotek/ime/framework/view/tracker/PointerTracker$KeyState;
 
@@ -779,7 +764,6 @@
 
 .method private isFunctionKey(I)Z
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -790,7 +774,6 @@
 
 .method private isGreekKeyInvisible(I)Z
     .locals 4
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -826,9 +809,6 @@
 
 .method private isMinorMoveBounce(III)Z
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v1, 0x1
 
@@ -895,7 +875,6 @@
 
 .method private isModifierInternal(I)Z
     .locals 4
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -922,7 +901,6 @@
 
 .method private isValidKeyIndex(I)Z
     .locals 1
-    .param p1    # I
 
     if-ltz p1, :cond_0
 
@@ -945,8 +923,6 @@
 
 .method private setShiftkeyStateUp(IJ)V
     .locals 13
-    .param p1    # I
-    .param p2    # J
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/tracker/PointerTracker;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -996,8 +972,6 @@
 
 .method private showKeyPreviewAndUpdateKey(IZ)V
     .locals 1
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v0, 0x0
 
@@ -1008,9 +982,6 @@
 
 .method private showKeyPreviewAndUpdateKey(IZI)V
     .locals 6
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # I
 
     const/4 v1, 0x1
 
@@ -1195,7 +1166,6 @@
 
 .method public getKey(I)Lcom/diotek/ime/framework/view/Keyboard$Key;
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/diotek/ime/framework/view/tracker/PointerTracker;->isValidKeyIndex(I)Z
 
@@ -1298,7 +1268,6 @@
 
 .method public isAccentKey(I)Z
     .locals 4
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -1332,7 +1301,6 @@
 
 .method public isBackspaceKey(I)Z
     .locals 4
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -1358,7 +1326,6 @@
 
 .method public isCtrlKey(I)Z
     .locals 4
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -1408,8 +1375,6 @@
 
 .method public isOnModifierKey(II)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/tracker/PointerTracker;->mKeyState:Lcom/diotek/ime/framework/view/tracker/PointerTracker$KeyState;
 
@@ -1452,7 +1417,6 @@
 
 .method public isShiftKey(I)Z
     .locals 4
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -1487,7 +1451,6 @@
 
 .method public isSpaceKey(I)Z
     .locals 4
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -1513,8 +1476,6 @@
 
 .method public isSpaceKey(II)Z
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/tracker/PointerTracker;->mKeyDetector:Lcom/diotek/ime/framework/view/tracker/KeyDetector;
 
@@ -1553,9 +1514,6 @@
 
 .method public onCancelEvent(IIJ)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
 
     iget-object v1, p0, Lcom/diotek/ime/framework/view/tracker/PointerTracker;->mHandler:Lcom/diotek/ime/framework/view/AbstractKeyboardView$UIHandler;
 
@@ -1601,10 +1559,6 @@
 
 .method public onDownEvent(IIJI)V
     .locals 25
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
-    .param p5    # I
 
     move-object/from16 v0, p0
 
@@ -2848,8 +2802,6 @@
 
 .method public onHoverEvent(II)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     const/4 v3, 0x0
 
@@ -2895,9 +2847,6 @@
 
 .method public onMoveEvent(IIJ)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
 
     const/4 v5, 0x1
 
@@ -2918,11 +2867,6 @@
 
 .method public onMoveEvent(IIJZLandroid/view/MotionEvent;)V
     .locals 30
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
-    .param p5    # Z
-    .param p6    # Landroid/view/MotionEvent;
 
     move-object/from16 v0, p0
 
@@ -4048,9 +3992,6 @@
 
 .method public onNextKeyDownEvent(IIJ)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
 
     iget v0, p0, Lcom/diotek/ime/framework/view/tracker/PointerTracker;->mAlreadyComposedKeyIndex:I
 
@@ -4088,9 +4029,6 @@
 
 .method public onUpEvent(IIJ)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
 
     const/4 v5, 0x0
 
@@ -4109,10 +4047,6 @@
 
 .method public onUpEvent(IIJZ)V
     .locals 37
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
-    .param p5    # Z
 
     move-object/from16 v0, p0
 
@@ -6185,7 +6119,6 @@
 
 .method public repeatKey(I)V
     .locals 7
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/diotek/ime/framework/view/tracker/PointerTracker;->getKey(I)Lcom/diotek/ime/framework/view/Keyboard$Key;
 
@@ -6235,7 +6168,6 @@
 
 .method public setAlreadyProcessed(Z)V
     .locals 2
-    .param p1    # Z
 
     const/4 v0, -0x1
 
@@ -6250,7 +6182,6 @@
 
 .method public setHwrTracker(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/view/tracker/PointerTracker;->mIsHwrTracker:Z
 
@@ -6259,7 +6190,6 @@
 
 .method public setIsHoverTracker(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/view/tracker/PointerTracker;->mIsHoverTracker:Z
 
@@ -6268,8 +6198,6 @@
 
 .method public setKeyIndexAndNearbyCodes(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/tracker/PointerTracker;->mKeyState:Lcom/diotek/ime/framework/view/tracker/PointerTracker$KeyState;
 
@@ -6288,8 +6216,6 @@
 
 .method public setKeyboard([Lcom/diotek/ime/framework/view/Keyboard$Key;F)V
     .locals 1
-    .param p1    # [Lcom/diotek/ime/framework/view/Keyboard$Key;
-    .param p2    # F
 
     if-eqz p1, :cond_0
 
@@ -6324,7 +6250,6 @@
 
 .method public setOnKeyboardActionListener(Lcom/diotek/ime/framework/view/AbstractKeyboardView$OnKeyboardActionListener;)V
     .locals 0
-    .param p1    # Lcom/diotek/ime/framework/view/AbstractKeyboardView$OnKeyboardActionListener;
 
     iput-object p1, p0, Lcom/diotek/ime/framework/view/tracker/PointerTracker;->mListener:Lcom/diotek/ime/framework/view/AbstractKeyboardView$OnKeyboardActionListener;
 
@@ -6333,7 +6258,6 @@
 
 .method public setPointerCount(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/diotek/ime/framework/view/tracker/PointerTracker;->mPointerCount:I
 
@@ -6342,7 +6266,6 @@
 
 .method public setPopupKeyboardTracker(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/view/tracker/PointerTracker;->mIsPopupKeyboardTracker:Z
 
@@ -6351,7 +6274,6 @@
 
 .method public setPreviewMode(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/view/tracker/PointerTracker;->mPreviewMode:Z
 
@@ -6360,7 +6282,6 @@
 
 .method public setSymbolPopupKeyboardTracker(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/view/tracker/PointerTracker;->mIsSymbolPopupKeyboardTracker:Z
 
@@ -6369,7 +6290,6 @@
 
 .method public updateHoverKey(I)V
     .locals 4
-    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -6432,8 +6352,6 @@
 
 .method public updateKey(IZ)V
     .locals 5
-    .param p1    # I
-    .param p2    # Z
 
     const/16 v4, 0x80
 

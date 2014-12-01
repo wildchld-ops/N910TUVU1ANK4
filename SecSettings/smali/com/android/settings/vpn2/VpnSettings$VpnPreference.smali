@@ -23,8 +23,6 @@
 # direct methods
 .method constructor <init>(Landroid/content/Context;Lcom/android/internal/net/VpnProfile;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/internal/net/VpnProfile;
 
     const/4 v1, 0x0
 
@@ -47,7 +45,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/vpn2/VpnSettings$VpnPreference;)Lcom/android/internal/net/VpnProfile;
     .locals 1
-    .param p0    # Lcom/android/settings/vpn2/VpnSettings$VpnPreference;
 
     iget-object v0, p0, Lcom/android/settings/vpn2/VpnSettings$VpnPreference;->mProfile:Lcom/android/internal/net/VpnProfile;
 
@@ -58,7 +55,6 @@
 # virtual methods
 .method public compareTo(Landroid/preference/Preference;)I
     .locals 4
-    .param p1    # Landroid/preference/Preference;
 
     const/4 v1, -0x1
 
@@ -122,7 +118,6 @@
 
 .method public bridge synthetic compareTo(Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Landroid/preference/Preference;
 
@@ -207,7 +202,6 @@
 
 .method update(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/settings/vpn2/VpnSettings$VpnPreference;->mState:I
 
@@ -218,7 +212,6 @@
 
 .method update(Lcom/android/internal/net/VpnProfile;)V
     .locals 1
-    .param p1    # Lcom/android/internal/net/VpnProfile;
 
     iget-object v0, p0, Lcom/android/settings/vpn2/VpnSettings$VpnPreference;->mProfile:Lcom/android/internal/net/VpnProfile;
 

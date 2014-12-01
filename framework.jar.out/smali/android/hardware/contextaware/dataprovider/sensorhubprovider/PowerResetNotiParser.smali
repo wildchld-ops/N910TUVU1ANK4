@@ -39,7 +39,6 @@
 # virtual methods
 .method public final notifySensorHubResetObserver(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v2, p0, Landroid/hardware/contextaware/dataprovider/sensorhubprovider/PowerResetNotiParser;->mListeners:Ljava/util/concurrent/CopyOnWriteArrayList;
 
@@ -73,8 +72,6 @@
 
 .method public final parse([BI)I
     .locals 6
-    .param p1    # [B
-    .param p2    # I
 
     move v2, p2
 
@@ -138,7 +135,6 @@
 
 .method public final registerSensorHubResetObserver(Landroid/hardware/contextaware/manager/ISensorHubResetObserver;)V
     .locals 1
-    .param p1    # Landroid/hardware/contextaware/manager/ISensorHubResetObserver;
 
     iget-object v0, p0, Landroid/hardware/contextaware/dataprovider/sensorhubprovider/PowerResetNotiParser;->mListeners:Ljava/util/concurrent/CopyOnWriteArrayList;
 
@@ -158,7 +154,6 @@
 
 .method public final unregisterSensorHubResetObserver(Landroid/hardware/contextaware/manager/ISensorHubResetObserver;)V
     .locals 1
-    .param p1    # Landroid/hardware/contextaware/manager/ISensorHubResetObserver;
 
     iget-object v0, p0, Landroid/hardware/contextaware/dataprovider/sensorhubprovider/PowerResetNotiParser;->mListeners:Ljava/util/concurrent/CopyOnWriteArrayList;
 

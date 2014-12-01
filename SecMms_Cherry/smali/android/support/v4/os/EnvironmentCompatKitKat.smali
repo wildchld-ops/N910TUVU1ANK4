@@ -14,7 +14,6 @@
 
 .method public static getStorageState(Ljava/io/File;)Ljava/lang/String;
     .locals 1
-    .param p0    # Ljava/io/File;
 
     invoke-static {p0}, Landroid/os/Environment;->getStorageState(Ljava/io/File;)Ljava/lang/String;
 

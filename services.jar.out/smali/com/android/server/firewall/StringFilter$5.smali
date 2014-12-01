@@ -17,7 +17,6 @@
 # direct methods
 .method constructor <init>(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/firewall/StringFilter$ValueProvider;-><init>(Ljava/lang/String;)V
 
@@ -28,9 +27,6 @@
 # virtual methods
 .method public getValue(Landroid/content/ComponentName;Landroid/content/Intent;Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Landroid/content/Intent;
-    .param p3    # Ljava/lang/String;
 
     invoke-virtual {p2}, Landroid/content/Intent;->getData()Landroid/net/Uri;
 

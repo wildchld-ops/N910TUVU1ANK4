@@ -108,9 +108,6 @@
 
 .method public static MsgSendMMSToAirMsg(Landroid/content/Context;JZ)V
     .locals 8
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
-    .param p3    # Z
 
     const/4 v7, 0x3
 
@@ -180,7 +177,6 @@
 
 .method public static MsgSendSMSToAirMsg(Landroid/content/Context;)V
     .locals 6
-    .param p0    # Landroid/content/Context;
 
     const/4 v5, 0x1
 
@@ -226,9 +222,6 @@
 
 .method public static UpdateMsgStatus(Landroid/content/Context;Landroid/net/Uri;I)V
     .locals 8
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # I
 
     const/4 v7, 0x3
 
@@ -294,9 +287,6 @@
 
 .method public static UpdateSentMsgId(Landroid/content/Context;Landroid/net/Uri;Ljava/lang/String;)V
     .locals 8
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Ljava/lang/String;
 
     const/4 v7, 0x3
 
@@ -386,7 +376,6 @@
 
 .method public static getInstance(Landroid/content/Context;)Ljava/lang/Object;
     .locals 6
-    .param p0    # Landroid/content/Context;
 
     const/4 v5, 0x1
 
@@ -441,7 +430,6 @@
 
 .method public static init(Landroid/content/Context;)V
     .locals 6
-    .param p0    # Landroid/content/Context;
 
     const/4 v5, 0x1
 

@@ -64,7 +64,7 @@
     :cond_0
     iget-object v1, p0, Lcom/android/phone/GlobalDataRoamingAccess$GlobalDataRoamingAccessObserver;->this$0:Lcom/android/phone/GlobalDataRoamingAccess;
 
-    invoke-virtual {v1}, Landroid/preference/DialogPreference;->getDialog()Landroid/app/Dialog;
+    invoke-virtual {v1}, Lcom/android/phone/GlobalDataRoamingAccess;->getDialog()Landroid/app/Dialog;
 
     move-result-object v1
 
@@ -72,7 +72,7 @@
 
     iget-object v1, p0, Lcom/android/phone/GlobalDataRoamingAccess$GlobalDataRoamingAccessObserver;->this$0:Lcom/android/phone/GlobalDataRoamingAccess;
 
-    invoke-virtual {v1}, Landroid/preference/DialogPreference;->getDialog()Landroid/app/Dialog;
+    invoke-virtual {v1}, Lcom/android/phone/GlobalDataRoamingAccess;->getDialog()Landroid/app/Dialog;
 
     move-result-object v1
 

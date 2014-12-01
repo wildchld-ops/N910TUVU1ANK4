@@ -18,7 +18,6 @@
 
 .method constructor <init>(Lcom/android/server/pm/PackageSignatures;)V
     .locals 1
-    .param p1    # Lcom/android/server/pm/PackageSignatures;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -44,7 +43,6 @@
 
 .method constructor <init>([Landroid/content/pm/Signature;)V
     .locals 0
-    .param p1    # [Landroid/content/pm/Signature;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -57,7 +55,6 @@
 # virtual methods
 .method assignSignatures([Landroid/content/pm/Signature;)V
     .locals 3
-    .param p1    # [Landroid/content/pm/Signature;
 
     if-nez p1, :cond_1
 
@@ -95,7 +92,6 @@
 
 .method readXml(Lorg/xmlpull/v1/XmlPullParser;Ljava/util/ArrayList;)V
     .locals 16
-    .param p1    # Lorg/xmlpull/v1/XmlPullParser;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -721,8 +717,6 @@
 
 .method writeXml(Lorg/xmlpull/v1/XmlSerializer;Ljava/lang/String;Ljava/util/ArrayList;)V
     .locals 9
-    .param p1    # Lorg/xmlpull/v1/XmlSerializer;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

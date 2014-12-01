@@ -40,7 +40,6 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 6
-    .param p1    # Landroid/view/View;
 
     iget-object v2, p0, Lcom/android/mms/spam/SetupSpamNumberList$SpamAdapter$2;->this$1:Lcom/android/mms/spam/SetupSpamNumberList$SpamAdapter;
 

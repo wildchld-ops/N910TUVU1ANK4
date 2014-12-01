@@ -73,7 +73,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -84,8 +83,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -96,9 +93,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v3, 0x0
 
@@ -163,9 +157,6 @@
 
 .method private appInfo(Lcom/android/launcher2/BaseItem;Lcom/android/launcher2/DragState;Landroid/view/DragEvent;)Z
     .locals 12
-    .param p1    # Lcom/android/launcher2/BaseItem;
-    .param p2    # Lcom/android/launcher2/DragState;
-    .param p3    # Landroid/view/DragEvent;
 
     invoke-virtual {p1}, Lcom/android/launcher2/BaseItem;->getPackageName()Ljava/lang/String;
 
@@ -372,9 +363,6 @@
 
 .method private delete(Lcom/android/launcher2/AppItem;Lcom/android/launcher2/DragState;Landroid/view/DragEvent;)Z
     .locals 12
-    .param p1    # Lcom/android/launcher2/AppItem;
-    .param p2    # Lcom/android/launcher2/DragState;
-    .param p3    # Landroid/view/DragEvent;
 
     const/4 v4, 0x0
 
@@ -599,9 +587,6 @@
 
 .method private disableApp(Lcom/android/launcher2/AppItem;Lcom/android/launcher2/DragState;Landroid/view/DragEvent;)Z
     .locals 12
-    .param p1    # Lcom/android/launcher2/AppItem;
-    .param p2    # Lcom/android/launcher2/DragState;
-    .param p3    # Landroid/view/DragEvent;
 
     const/4 v4, 0x0
 
@@ -836,9 +821,6 @@
 
 .method private newFolder(Lcom/android/launcher2/AppItem;Lcom/android/launcher2/DragState;Landroid/view/DragEvent;)Z
     .locals 19
-    .param p1    # Lcom/android/launcher2/AppItem;
-    .param p2    # Lcom/android/launcher2/DragState;
-    .param p3    # Landroid/view/DragEvent;
 
     move-object/from16 v0, p1
 
@@ -1188,9 +1170,6 @@
 
 .method private newPage(Lcom/android/launcher2/AppItem;Lcom/android/launcher2/DragState;Landroid/view/DragEvent;)Z
     .locals 9
-    .param p1    # Lcom/android/launcher2/AppItem;
-    .param p2    # Lcom/android/launcher2/DragState;
-    .param p3    # Landroid/view/DragEvent;
 
     const/4 v8, 0x0
 
@@ -1479,10 +1458,6 @@
 
 .method private setDrawableForOrientation(Landroid/widget/TextView;Landroid/graphics/drawable/Drawable;[Landroid/graphics/drawable/Drawable;I)V
     .locals 4
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # Landroid/graphics/drawable/Drawable;
-    .param p3    # [Landroid/graphics/drawable/Drawable;
-    .param p4    # I
 
     if-eqz p1, :cond_0
 
@@ -1560,11 +1535,6 @@
 
 .method private setStates(Landroid/widget/FrameLayout;Landroid/widget/TextView;ZZZ)V
     .locals 0
-    .param p1    # Landroid/widget/FrameLayout;
-    .param p2    # Landroid/widget/TextView;
-    .param p3    # Z
-    .param p4    # Z
-    .param p5    # Z
 
     invoke-virtual {p1, p3}, Landroid/view/View;->setEnabled(Z)V
 
@@ -1579,7 +1549,6 @@
 
 .method private showDeleteConfirmationDialog(Lcom/android/launcher2/AppItem;)V
     .locals 3
-    .param p1    # Lcom/android/launcher2/AppItem;
 
     sget-object v0, Lcom/android/launcher2/MenuEditBar$6;->$SwitchMap$com$android$launcher2$BaseItem$Type:[I
 
@@ -1645,7 +1614,6 @@
 
 .method private showDisableConfirmationDialog(Lcom/android/launcher2/AppItem;)V
     .locals 2
-    .param p1    # Lcom/android/launcher2/AppItem;
 
     sget-object v0, Lcom/android/launcher2/MenuEditBar$6;->$SwitchMap$com$android$launcher2$BaseItem$Type:[I
 
@@ -1693,7 +1661,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 7
-    .param p1    # Landroid/content/res/Configuration;
 
     const v6, 0x7f10000c
 
@@ -1835,8 +1802,6 @@
 
 .method public onDrag(Landroid/view/View;Landroid/view/DragEvent;)Z
     .locals 8
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/DragEvent;
 
     const/4 v6, 0x0
 
@@ -2308,12 +2273,6 @@
 
 .method public show(Lcom/android/launcher2/MenuAppsGrid;Ljava/util/List;ZZZZZ)V
     .locals 8
-    .param p1    # Lcom/android/launcher2/MenuAppsGrid;
-    .param p3    # Z
-    .param p4    # Z
-    .param p5    # Z
-    .param p6    # Z
-    .param p7    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

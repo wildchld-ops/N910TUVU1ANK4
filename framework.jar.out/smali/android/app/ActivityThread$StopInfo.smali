@@ -38,7 +38,6 @@
 
 .method synthetic constructor <init>(Landroid/app/ActivityThread$1;)V
     .locals 0
-    .param p1    # Landroid/app/ActivityThread$1;
 
     invoke-direct {p0}, Landroid/app/ActivityThread$StopInfo;-><init>()V
 

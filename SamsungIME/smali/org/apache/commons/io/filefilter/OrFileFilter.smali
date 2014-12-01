@@ -28,7 +28,6 @@
 
 .method public constructor <init>(Ljava/util/List;)V
     .locals 1
-    .param p1    # Ljava/util/List;
 
     invoke-direct {p0}, Lorg/apache/commons/io/filefilter/AbstractFileFilter;-><init>()V
 
@@ -55,8 +54,6 @@
 
 .method public constructor <init>(Lorg/apache/commons/io/filefilter/IOFileFilter;Lorg/apache/commons/io/filefilter/IOFileFilter;)V
     .locals 2
-    .param p1    # Lorg/apache/commons/io/filefilter/IOFileFilter;
-    .param p2    # Lorg/apache/commons/io/filefilter/IOFileFilter;
 
     invoke-direct {p0}, Lorg/apache/commons/io/filefilter/AbstractFileFilter;-><init>()V
 
@@ -91,7 +88,6 @@
 # virtual methods
 .method public accept(Ljava/io/File;)Z
     .locals 3
-    .param p1    # Ljava/io/File;
 
     iget-object v2, p0, Lorg/apache/commons/io/filefilter/OrFileFilter;->fileFilters:Ljava/util/List;
 
@@ -131,8 +127,6 @@
 
 .method public accept(Ljava/io/File;Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/io/File;
-    .param p2    # Ljava/lang/String;
 
     iget-object v2, p0, Lorg/apache/commons/io/filefilter/OrFileFilter;->fileFilters:Ljava/util/List;
 
@@ -172,7 +166,6 @@
 
 .method public addFileFilter(Lorg/apache/commons/io/filefilter/IOFileFilter;)V
     .locals 1
-    .param p1    # Lorg/apache/commons/io/filefilter/IOFileFilter;
 
     iget-object v0, p0, Lorg/apache/commons/io/filefilter/OrFileFilter;->fileFilters:Ljava/util/List;
 
@@ -195,7 +188,6 @@
 
 .method public removeFileFilter(Lorg/apache/commons/io/filefilter/IOFileFilter;)Z
     .locals 1
-    .param p1    # Lorg/apache/commons/io/filefilter/IOFileFilter;
 
     iget-object v0, p0, Lorg/apache/commons/io/filefilter/OrFileFilter;->fileFilters:Ljava/util/List;
 
@@ -208,7 +200,6 @@
 
 .method public setFileFilters(Ljava/util/List;)V
     .locals 0
-    .param p1    # Ljava/util/List;
 
     iput-object p1, p0, Lorg/apache/commons/io/filefilter/OrFileFilter;->fileFilters:Ljava/util/List;
 

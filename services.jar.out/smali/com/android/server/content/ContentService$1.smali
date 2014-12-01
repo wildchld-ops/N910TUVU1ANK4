@@ -50,8 +50,6 @@
 # virtual methods
 .method public compare(Ljava/lang/Integer;Ljava/lang/Integer;)I
     .locals 4
-    .param p1    # Ljava/lang/Integer;
-    .param p2    # Ljava/lang/Integer;
 
     iget-object v2, p0, Lcom/android/server/content/ContentService$1;->val$pidCounts:Landroid/util/SparseIntArray;
 
@@ -95,8 +93,6 @@
 
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p1, Ljava/lang/Integer;
 

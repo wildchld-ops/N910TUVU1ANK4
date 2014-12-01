@@ -92,8 +92,6 @@
 
 .method synthetic constructor <init>(Lcom/android/settings/print/PrintServiceSettingsFragment;Lcom/android/settings/print/PrintServiceSettingsFragment$1;)V
     .locals 0
-    .param p1    # Lcom/android/settings/print/PrintServiceSettingsFragment;
-    .param p2    # Lcom/android/settings/print/PrintServiceSettingsFragment$1;
 
     invoke-direct {p0, p1}, Lcom/android/settings/print/PrintServiceSettingsFragment$PrintersAdapter;-><init>(Lcom/android/settings/print/PrintServiceSettingsFragment;)V
 
@@ -102,7 +100,6 @@
 
 .method static synthetic access$1100(Lcom/android/settings/print/PrintServiceSettingsFragment$PrintersAdapter;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Lcom/android/settings/print/PrintServiceSettingsFragment$PrintersAdapter;
 
     iget-object v0, p0, Lcom/android/settings/print/PrintServiceSettingsFragment$PrintersAdapter;->mLock:Ljava/lang/Object;
 
@@ -111,7 +108,6 @@
 
 .method static synthetic access$1200(Lcom/android/settings/print/PrintServiceSettingsFragment$PrintersAdapter;)Ljava/util/List;
     .locals 1
-    .param p0    # Lcom/android/settings/print/PrintServiceSettingsFragment$PrintersAdapter;
 
     iget-object v0, p0, Lcom/android/settings/print/PrintServiceSettingsFragment$PrintersAdapter;->mPrinters:Ljava/util/List;
 
@@ -120,7 +116,6 @@
 
 .method static synthetic access$1300(Lcom/android/settings/print/PrintServiceSettingsFragment$PrintersAdapter;)Ljava/util/List;
     .locals 1
-    .param p0    # Lcom/android/settings/print/PrintServiceSettingsFragment$PrintersAdapter;
 
     iget-object v0, p0, Lcom/android/settings/print/PrintServiceSettingsFragment$PrintersAdapter;->mFilteredPrinters:Ljava/util/List;
 
@@ -129,8 +124,6 @@
 
 .method static synthetic access$1402(Lcom/android/settings/print/PrintServiceSettingsFragment$PrintersAdapter;Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
     .locals 0
-    .param p0    # Lcom/android/settings/print/PrintServiceSettingsFragment$PrintersAdapter;
-    .param p1    # Ljava/lang/CharSequence;
 
     iput-object p1, p0, Lcom/android/settings/print/PrintServiceSettingsFragment$PrintersAdapter;->mLastSearchString:Ljava/lang/CharSequence;
 
@@ -217,7 +210,6 @@
 
 .method public getItem(I)Ljava/lang/Object;
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/settings/print/PrintServiceSettingsFragment$PrintersAdapter;->mLock:Ljava/lang/Object;
 
@@ -246,7 +238,6 @@
 
 .method public getItemId(I)J
     .locals 2
-    .param p1    # I
 
     int-to-long v0, p1
 
@@ -267,9 +258,6 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 11
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     if-nez p2, :cond_0
 
@@ -437,7 +425,6 @@
 
 .method public isEnabled(I)Z
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -446,8 +433,6 @@
 
 .method public onCreateLoader(ILandroid/os/Bundle;)Landroid/content/Loader;
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -487,8 +472,6 @@
 
 .method public bridge synthetic onLoadFinished(Landroid/content/Loader;Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Landroid/content/Loader;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p2, Ljava/util/List;
 

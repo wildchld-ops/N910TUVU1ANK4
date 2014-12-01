@@ -253,7 +253,6 @@
 
 .method public static printCallStack(Ljava/lang/Exception;)V
     .locals 4
-    .param p0    # Ljava/lang/Exception;
 
     sget-boolean v2, Lcom/diotek/ime/framework/util/Debug;->DEBUG:Z
 
@@ -287,8 +286,6 @@
 
 .method public static printExceptionLog(Ljava/lang/Exception;Ljava/lang/String;)V
     .locals 3
-    .param p0    # Ljava/lang/Exception;
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "SamsungIME"
 

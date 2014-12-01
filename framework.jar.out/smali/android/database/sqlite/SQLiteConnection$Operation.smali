@@ -72,7 +72,6 @@
 
 .method synthetic constructor <init>(Landroid/database/sqlite/SQLiteConnection$1;)V
     .locals 0
-    .param p1    # Landroid/database/sqlite/SQLiteConnection$1;
 
     invoke-direct {p0}, Landroid/database/sqlite/SQLiteConnection$Operation;-><init>()V
 
@@ -81,7 +80,6 @@
 
 .method static synthetic access$600(Landroid/database/sqlite/SQLiteConnection$Operation;)Ljava/lang/String;
     .locals 1
-    .param p0    # Landroid/database/sqlite/SQLiteConnection$Operation;
 
     invoke-direct {p0}, Landroid/database/sqlite/SQLiteConnection$Operation;->getFormattedStartTime()Ljava/lang/String;
 
@@ -139,8 +137,6 @@
 # virtual methods
 .method public describe(Ljava/lang/StringBuilder;Z)V
     .locals 8
-    .param p1    # Ljava/lang/StringBuilder;
-    .param p2    # Z
 
     iget-object v3, p0, Landroid/database/sqlite/SQLiteConnection$Operation;->mKind:Ljava/lang/String;
 

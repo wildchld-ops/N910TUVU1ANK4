@@ -36,8 +36,6 @@
 # virtual methods
 .method public onTabSelectionChanged(IZ)V
     .locals 2
-    .param p1    # I
-    .param p2    # Z
 
     iget-object v0, p0, Landroid/widget/TabHost$2;->this$0:Landroid/widget/TabHost;
 

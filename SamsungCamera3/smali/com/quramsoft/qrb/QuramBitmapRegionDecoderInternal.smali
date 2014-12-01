@@ -20,7 +20,6 @@
 # direct methods
 .method private constructor <init>(I)V
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,7 +36,6 @@
 
 .method private checkRecycled(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-boolean v0, p0, Lcom/quramsoft/qrb/QuramBitmapRegionDecoderInternal;->mRecycled:Z
 
@@ -55,8 +53,6 @@
 
 .method public static newInstance(Ljava/io/FileDescriptor;Z)Lcom/quramsoft/qrb/QuramBitmapRegionDecoderInternal;
     .locals 1
-    .param p0    # Ljava/io/FileDescriptor;
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -70,8 +66,6 @@
 
 .method public static newInstance(Ljava/io/InputStream;Z)Lcom/quramsoft/qrb/QuramBitmapRegionDecoderInternal;
     .locals 3
-    .param p0    # Ljava/io/InputStream;
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -105,9 +99,6 @@
 
 .method public static newInstance(Ljava/lang/String;ZLcom/quramsoft/qrb/QuramBitmapFactory$Options;)Lcom/quramsoft/qrb/QuramBitmapRegionDecoderInternal;
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # Z
-    .param p2    # Lcom/quramsoft/qrb/QuramBitmapFactory$Options;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -148,10 +139,6 @@
 
 .method public static newInstance([BIIZ)Lcom/quramsoft/qrb/QuramBitmapRegionDecoderInternal;
     .locals 2
-    .param p0    # [B
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -183,11 +170,6 @@
 
 .method public static newInstanceWithDec(Ljava/lang/String;Landroid/graphics/Bitmap;IZLcom/quramsoft/qrb/QuramBitmapFactory$Options;)Lcom/quramsoft/qrb/QuramBitmapRegionDecoderInternal;
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # Lcom/quramsoft/qrb/QuramBitmapFactory$Options;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -245,8 +227,6 @@
 
 .method public declared-synchronized decodeRegion(Landroid/graphics/Rect;Landroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;
     .locals 6
-    .param p1    # Landroid/graphics/Rect;
-    .param p2    # Landroid/graphics/BitmapFactory$Options;
 
     monitor-enter p0
 

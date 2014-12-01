@@ -59,8 +59,6 @@
 
 .method public static d(Ljava/lang/String;Ljava/lang/String;)I
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -75,9 +73,6 @@
 
 .method public static d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Throwable;
 
     const/4 v0, 0x0
 
@@ -118,8 +113,6 @@
 
 .method public static e(Ljava/lang/String;Ljava/lang/String;)I
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -134,9 +127,6 @@
 
 .method public static e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Throwable;
 
     const/4 v0, 0x0
 
@@ -177,7 +167,6 @@
 
 .method public static getStackTraceString(Ljava/lang/Throwable;)Ljava/lang/String;
     .locals 5
-    .param p0    # Ljava/lang/Throwable;
 
     if-nez p0, :cond_0
 
@@ -233,8 +222,6 @@
 
 .method public static i(Ljava/lang/String;Ljava/lang/String;)I
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -249,9 +236,6 @@
 
 .method public static i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Throwable;
 
     const/4 v0, 0x0
 
@@ -295,9 +279,6 @@
 
 .method public static println(ILjava/lang/String;Ljava/lang/String;)I
     .locals 1
-    .param p0    # I
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -313,8 +294,6 @@
 
 .method public static secD(Ljava/lang/String;Ljava/lang/String;)I
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     sget-boolean v0, Landroid/util/secutil/LogSwitcher;->isShowingSecDLog:Z
 
@@ -335,9 +314,6 @@
 
 .method public static secD(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Throwable;
 
     sget-boolean v0, Landroid/util/secutil/LogSwitcher;->isShowingSecDLog:Z
 
@@ -358,8 +334,6 @@
 
 .method public static secE(Ljava/lang/String;Ljava/lang/String;)I
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     sget-boolean v0, Landroid/util/secutil/LogSwitcher;->isShowingSecELog:Z
 
@@ -380,9 +354,6 @@
 
 .method public static secE(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Throwable;
 
     sget-boolean v0, Landroid/util/secutil/LogSwitcher;->isShowingSecELog:Z
 
@@ -403,8 +374,6 @@
 
 .method public static secI(Ljava/lang/String;Ljava/lang/String;)I
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     sget-boolean v0, Landroid/util/secutil/LogSwitcher;->isShowingSecILog:Z
 
@@ -425,9 +394,6 @@
 
 .method public static secI(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Throwable;
 
     sget-boolean v0, Landroid/util/secutil/LogSwitcher;->isShowingSecILog:Z
 
@@ -448,8 +414,6 @@
 
 .method public static secV(Ljava/lang/String;Ljava/lang/String;)I
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     sget-boolean v0, Landroid/util/secutil/LogSwitcher;->isShowingSecVLog:Z
 
@@ -470,9 +434,6 @@
 
 .method public static secV(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Throwable;
 
     sget-boolean v0, Landroid/util/secutil/LogSwitcher;->isShowingSecVLog:Z
 
@@ -493,8 +454,6 @@
 
 .method public static secW(Ljava/lang/String;Ljava/lang/String;)I
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     sget-boolean v0, Landroid/util/secutil/LogSwitcher;->isShowingSecWLog:Z
 
@@ -515,9 +474,6 @@
 
 .method public static secW(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Throwable;
 
     sget-boolean v0, Landroid/util/secutil/LogSwitcher;->isShowingSecWLog:Z
 
@@ -538,8 +494,6 @@
 
 .method public static secW(Ljava/lang/String;Ljava/lang/Throwable;)I
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/Throwable;
 
     sget-boolean v0, Landroid/util/secutil/LogSwitcher;->isShowingSecWLog:Z
 
@@ -560,7 +514,6 @@
 
 .method public static setWtfHandler(Landroid/util/Log$TerribleFailureHandler;)Landroid/util/Log$TerribleFailureHandler;
     .locals 3
-    .param p0    # Landroid/util/Log$TerribleFailureHandler;
 
     if-nez p0, :cond_0
 
@@ -582,8 +535,6 @@
 
 .method public static v(Ljava/lang/String;Ljava/lang/String;)I
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -598,9 +549,6 @@
 
 .method public static v(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Throwable;
 
     const/4 v0, 0x0
 
@@ -641,8 +589,6 @@
 
 .method public static w(Ljava/lang/String;Ljava/lang/String;)I
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -657,9 +603,6 @@
 
 .method public static w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Throwable;
 
     const/4 v0, 0x0
 
@@ -700,8 +643,6 @@
 
 .method public static w(Ljava/lang/String;Ljava/lang/Throwable;)I
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/Throwable;
 
     const/4 v0, 0x0
 
@@ -720,11 +661,6 @@
 
 .method static wtf(ILjava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;Z)I
     .locals 5
-    .param p0    # I
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/Throwable;
-    .param p4    # Z
 
     new-instance v1, Landroid/util/Log$TerribleFailure;
 
@@ -776,8 +712,6 @@
 
 .method public static wtf(Ljava/lang/String;Ljava/lang/String;)I
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -792,9 +726,6 @@
 
 .method public static wtf(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Throwable;
 
     const/4 v0, 0x0
 
@@ -807,8 +738,6 @@
 
 .method public static wtf(Ljava/lang/String;Ljava/lang/Throwable;)I
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/Throwable;
 
     const/4 v1, 0x0
 
@@ -825,8 +754,6 @@
 
 .method public static wtfStack(Ljava/lang/String;Ljava/lang/String;)I
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 

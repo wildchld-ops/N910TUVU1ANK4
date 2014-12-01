@@ -130,8 +130,6 @@
 
 .method private GetFOV_H2(Lcom/voovio/voo3d/scenegraph/Camera3D;F)F
     .locals 12
-    .param p1    # Lcom/voovio/voo3d/scenegraph/Camera3D;
-    .param p2    # F
 
     invoke-virtual {p1}, Lcom/voovio/voo3d/scenegraph/Camera3D;->getViewport()Lcom/voovio/voo3d/view/Viewport;
 
@@ -270,7 +268,6 @@
 # virtual methods
 .method public Init(Lcom/voovio/sweep/Sweep;)V
     .locals 2
-    .param p1    # Lcom/voovio/sweep/Sweep;
 
     const/high16 v1, 0x3f000000
 
@@ -295,13 +292,6 @@
 
 .method public Test(Lcom/voovio/voo3d/scenegraph/Camera3D;Lcom/voovio/sweep/Voovio;FFFFF)Z
     .locals 8
-    .param p1    # Lcom/voovio/voo3d/scenegraph/Camera3D;
-    .param p2    # Lcom/voovio/sweep/Voovio;
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # F
-    .param p7    # F
 
     const/4 v4, 0x0
 
@@ -474,8 +464,6 @@
 
 .method public TestLimits(Lcom/voovio/voo3d/scenegraph/Camera3D;Lcom/voovio/sweep/Voovio;)Z
     .locals 9
-    .param p1    # Lcom/voovio/voo3d/scenegraph/Camera3D;
-    .param p2    # Lcom/voovio/sweep/Voovio;
 
     const v8, 0x42652ee0
 
@@ -612,7 +600,6 @@
 
 .method public UpdateFrustum(Lcom/voovio/voo3d/scenegraph/Camera3D;)V
     .locals 9
-    .param p1    # Lcom/voovio/voo3d/scenegraph/Camera3D;
 
     const v8, 0x42652ee0
 

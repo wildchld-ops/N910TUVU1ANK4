@@ -43,7 +43,6 @@
 
 .method private static closeSilently(Landroid/os/ParcelFileDescriptor;)V
     .locals 1
-    .param p0    # Landroid/os/ParcelFileDescriptor;
 
     if-nez p0, :cond_0
 
@@ -66,9 +65,6 @@
 
 .method private static computeInitialSampleSize(Landroid/graphics/BitmapFactory$Options;II)I
     .locals 12
-    .param p0    # Landroid/graphics/BitmapFactory$Options;
-    .param p1    # I
-    .param p2    # I
 
     const/4 v6, 0x1
 
@@ -161,9 +157,6 @@
 
 .method private static computeSampleSize(Landroid/graphics/BitmapFactory$Options;II)I
     .locals 3
-    .param p0    # Landroid/graphics/BitmapFactory$Options;
-    .param p1    # I
-    .param p2    # I
 
     invoke-static {p0, p1, p2}, Landroid/media/ThumbnailUtils;->computeInitialSampleSize(Landroid/graphics/BitmapFactory$Options;II)I
 
@@ -195,8 +188,6 @@
 
 .method public static createImageThumbnail(Ljava/lang/String;I)Landroid/graphics/Bitmap;
     .locals 16
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
 
     const/4 v13, 0x1
 
@@ -548,10 +539,6 @@
 
 .method private static createThumbnailFromEXIF(Ljava/lang/String;IILandroid/media/ThumbnailUtils$SizedThumbnailBitmap;)V
     .locals 12
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/media/ThumbnailUtils$SizedThumbnailBitmap;
 
     if-nez p0, :cond_1
 
@@ -706,8 +693,6 @@
 
 .method public static createVideoThumbnail(Ljava/lang/String;I)Landroid/graphics/Bitmap;
     .locals 13
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
 
     const/16 v12, 0x60
 
@@ -870,9 +855,6 @@
 
 .method public static extractThumbnail(Landroid/graphics/Bitmap;II)Landroid/graphics/Bitmap;
     .locals 1
-    .param p0    # Landroid/graphics/Bitmap;
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -885,10 +867,6 @@
 
 .method public static extractThumbnail(Landroid/graphics/Bitmap;III)Landroid/graphics/Bitmap;
     .locals 5
-    .param p0    # Landroid/graphics/Bitmap;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     if-nez p0, :cond_0
 
@@ -949,12 +927,6 @@
 
 .method private static makeBitmap(IILandroid/net/Uri;Landroid/content/ContentResolver;Landroid/os/ParcelFileDescriptor;Landroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;
     .locals 7
-    .param p0    # I
-    .param p1    # I
-    .param p2    # Landroid/net/Uri;
-    .param p3    # Landroid/content/ContentResolver;
-    .param p4    # Landroid/os/ParcelFileDescriptor;
-    .param p5    # Landroid/graphics/BitmapFactory$Options;
 
     const/4 v6, -0x1
 
@@ -1078,8 +1050,6 @@
 
 .method private static makeInputStream(Landroid/net/Uri;Landroid/content/ContentResolver;)Landroid/os/ParcelFileDescriptor;
     .locals 2
-    .param p0    # Landroid/net/Uri;
-    .param p1    # Landroid/content/ContentResolver;
 
     :try_start_0
     const-string v1, "r"
@@ -1103,11 +1073,6 @@
 
 .method private static transform(Landroid/graphics/Matrix;Landroid/graphics/Bitmap;III)Landroid/graphics/Bitmap;
     .locals 30
-    .param p0    # Landroid/graphics/Matrix;
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     and-int/lit8 v3, p4, 0x1
 

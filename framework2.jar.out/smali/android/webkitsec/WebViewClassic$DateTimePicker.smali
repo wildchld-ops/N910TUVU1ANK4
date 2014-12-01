@@ -41,7 +41,6 @@
 # direct methods
 .method constructor <init>(Landroid/webkitsec/WebViewClassic;Landroid/content/Context;)V
     .locals 1
-    .param p2    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -70,8 +69,6 @@
 
 .method static synthetic access$4002(Landroid/webkitsec/WebViewClassic$DateTimePicker;I)I
     .locals 0
-    .param p0    # Landroid/webkitsec/WebViewClassic$DateTimePicker;
-    .param p1    # I
 
     iput p1, p0, Landroid/webkitsec/WebViewClassic$DateTimePicker;->mYear:I
 
@@ -80,8 +77,6 @@
 
 .method static synthetic access$4102(Landroid/webkitsec/WebViewClassic$DateTimePicker;I)I
     .locals 0
-    .param p0    # Landroid/webkitsec/WebViewClassic$DateTimePicker;
-    .param p1    # I
 
     iput p1, p0, Landroid/webkitsec/WebViewClassic$DateTimePicker;->mMonth:I
 
@@ -90,8 +85,6 @@
 
 .method static synthetic access$4202(Landroid/webkitsec/WebViewClassic$DateTimePicker;I)I
     .locals 0
-    .param p0    # Landroid/webkitsec/WebViewClassic$DateTimePicker;
-    .param p1    # I
 
     iput p1, p0, Landroid/webkitsec/WebViewClassic$DateTimePicker;->mDay:I
 
@@ -100,7 +93,6 @@
 
 .method static synthetic access$4300(Landroid/webkitsec/WebViewClassic$DateTimePicker;)Z
     .locals 1
-    .param p0    # Landroid/webkitsec/WebViewClassic$DateTimePicker;
 
     iget-boolean v0, p0, Landroid/webkitsec/WebViewClassic$DateTimePicker;->isClear:Z
 
@@ -109,8 +101,6 @@
 
 .method static synthetic access$4302(Landroid/webkitsec/WebViewClassic$DateTimePicker;Z)Z
     .locals 0
-    .param p0    # Landroid/webkitsec/WebViewClassic$DateTimePicker;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/webkitsec/WebViewClassic$DateTimePicker;->isClear:Z
 
@@ -119,7 +109,6 @@
 
 .method static synthetic access$4400(Landroid/webkitsec/WebViewClassic$DateTimePicker;)V
     .locals 0
-    .param p0    # Landroid/webkitsec/WebViewClassic$DateTimePicker;
 
     invoke-direct {p0}, Landroid/webkitsec/WebViewClassic$DateTimePicker;->updateDate()V
 
@@ -128,8 +117,6 @@
 
 .method static synthetic access$4502(Landroid/webkitsec/WebViewClassic$DateTimePicker;I)I
     .locals 0
-    .param p0    # Landroid/webkitsec/WebViewClassic$DateTimePicker;
-    .param p1    # I
 
     iput p1, p0, Landroid/webkitsec/WebViewClassic$DateTimePicker;->mhour:I
 
@@ -138,8 +125,6 @@
 
 .method static synthetic access$4602(Landroid/webkitsec/WebViewClassic$DateTimePicker;I)I
     .locals 0
-    .param p0    # Landroid/webkitsec/WebViewClassic$DateTimePicker;
-    .param p1    # I
 
     iput p1, p0, Landroid/webkitsec/WebViewClassic$DateTimePicker;->mminute:I
 
@@ -148,7 +133,6 @@
 
 .method static synthetic access$4700(Landroid/webkitsec/WebViewClassic$DateTimePicker;)V
     .locals 0
-    .param p0    # Landroid/webkitsec/WebViewClassic$DateTimePicker;
 
     invoke-direct {p0}, Landroid/webkitsec/WebViewClassic$DateTimePicker;->updateTime()V
 
@@ -157,7 +141,6 @@
 
 .method static synthetic access$4800(Landroid/webkitsec/WebViewClassic$DateTimePicker;)V
     .locals 0
-    .param p0    # Landroid/webkitsec/WebViewClassic$DateTimePicker;
 
     invoke-direct {p0}, Landroid/webkitsec/WebViewClassic$DateTimePicker;->clear()V
 
@@ -182,7 +165,6 @@
 
 .method private onCreateDialog(I)Landroid/app/Dialog;
     .locals 8
-    .param p1    # I
 
     const/4 v7, -0x2
 
@@ -264,7 +246,6 @@
 
 .method private pad(I)Ljava/lang/String;
     .locals 2
-    .param p1    # I
 
     const/16 v0, 0xa
 
@@ -622,7 +603,6 @@
 # virtual methods
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Dialog;->onCreate(Landroid/os/Bundle;)V
 
@@ -631,8 +611,6 @@
 
 .method public show(ILjava/lang/String;)V
     .locals 11
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v10, 0x2
 

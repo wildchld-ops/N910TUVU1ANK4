@@ -41,12 +41,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;IIFZI)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # F
-    .param p5    # Z
-    .param p6    # I
 
     invoke-direct {p0, p1}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;)V
 
@@ -97,7 +91,6 @@
 
 .method static synthetic access$000(Lcom/sec/android/visualeffect/blind/blindmask/BlindMaskEffect;)[Lcom/sec/android/visualeffect/blind/blindmask/BlindMask;
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/blind/blindmask/BlindMaskEffect;
 
     iget-object v0, p0, Lcom/sec/android/visualeffect/blind/blindmask/BlindMaskEffect;->unlockBlind:[Lcom/sec/android/visualeffect/blind/blindmask/BlindMask;
 
@@ -106,7 +99,6 @@
 
 .method static synthetic access$100(Lcom/sec/android/visualeffect/blind/blindmask/BlindMaskEffect;)Z
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/blind/blindmask/BlindMaskEffect;
 
     iget-boolean v0, p0, Lcom/sec/android/visualeffect/blind/blindmask/BlindMaskEffect;->isRight:Z
 
@@ -115,7 +107,6 @@
 
 .method static synthetic access$200(Lcom/sec/android/visualeffect/blind/blindmask/BlindMaskEffect;)Lcom/sec/android/visualeffect/blind/blindmask/BlindMask;
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/blind/blindmask/BlindMaskEffect;
 
     iget-object v0, p0, Lcom/sec/android/visualeffect/blind/blindmask/BlindMaskEffect;->unlockLastBlind:Lcom/sec/android/visualeffect/blind/blindmask/BlindMask;
 
@@ -124,7 +115,6 @@
 
 .method static synthetic access$300(Lcom/sec/android/visualeffect/blind/blindmask/BlindMaskEffect;)V
     .locals 0
-    .param p0    # Lcom/sec/android/visualeffect/blind/blindmask/BlindMaskEffect;
 
     invoke-direct {p0}, Lcom/sec/android/visualeffect/blind/blindmask/BlindMaskEffect;->cancelAllMaskAnimator()V
 
@@ -177,7 +167,6 @@
 
 .method private cancelAnimator(Landroid/animation/Animator;)V
     .locals 1
-    .param p1    # Landroid/animation/Animator;
 
     if-eqz p1, :cond_0
 
@@ -195,7 +184,6 @@
 
 .method private fac(I)I
     .locals 2
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -722,8 +710,6 @@
 
 .method public handleTouchEvent(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     const/4 v0, 0x0
 

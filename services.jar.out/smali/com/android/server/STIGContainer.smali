@@ -6,7 +6,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Lcom/android/server/SEAMSContainer;-><init>()V
 
@@ -19,7 +18,6 @@
 # virtual methods
 .method public activateDomain(I)I
     .locals 1
-    .param p1    # I
 
     const/4 v0, -0x2
 
@@ -28,10 +26,6 @@
 
 .method public addAppToContainer(Ljava/lang/String;[Ljava/lang/String;II)I
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
 
     const/4 v0, -0x2
 
@@ -40,7 +34,6 @@
 
 .method public deActivateDomain(I)I
     .locals 1
-    .param p1    # I
 
     const/4 v0, -0x2
 
@@ -57,8 +50,6 @@
 
 .method public removeAppFromContainer(Ljava/lang/String;[Ljava/lang/String;)I
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/String;
 
     const/4 v0, -0x2
 

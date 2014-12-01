@@ -237,11 +237,6 @@
 
 .method private constructor <init>(Landroid/content/Context;Landroid/view/View;Lcom/samsung/android/sdk/look/airbutton/SlookAirButtonAdapter;IZ)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/view/View;
-    .param p3    # Lcom/samsung/android/sdk/look/airbutton/SlookAirButtonAdapter;
-    .param p4    # I
-    .param p5    # Z
 
     const/4 v4, 0x1
 
@@ -495,8 +490,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Z)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Z
 
     const/4 v2, 0x0
 
@@ -519,9 +512,6 @@
 
 .method public constructor <init>(Landroid/view/View;Lcom/samsung/android/sdk/look/airbutton/SlookAirButtonAdapter;I)V
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Lcom/samsung/android/sdk/look/airbutton/SlookAirButtonAdapter;
-    .param p3    # I
 
     const/4 v0, 0x1
 
@@ -532,10 +522,6 @@
 
 .method public constructor <init>(Landroid/view/View;Lcom/samsung/android/sdk/look/airbutton/SlookAirButtonAdapter;IZ)V
     .locals 6
-    .param p1    # Landroid/view/View;
-    .param p2    # Lcom/samsung/android/sdk/look/airbutton/SlookAirButtonAdapter;
-    .param p3    # I
-    .param p4    # Z
 
     const/4 v1, 0x0
 
@@ -556,7 +542,6 @@
 
 .method static synthetic access$000(Lcom/samsung/android/airbutton/AirButtonImpl;)Lcom/samsung/android/airbutton/AirButtonImpl$OnItemSelectedListener;
     .locals 1
-    .param p0    # Lcom/samsung/android/airbutton/AirButtonImpl;
 
     iget-object v0, p0, Lcom/samsung/android/airbutton/AirButtonImpl;->mItemSelectListener:Lcom/samsung/android/airbutton/AirButtonImpl$OnItemSelectedListener;
 
@@ -565,7 +550,6 @@
 
 .method static synthetic access$100(Lcom/samsung/android/airbutton/AirButtonImpl;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/samsung/android/airbutton/AirButtonImpl;
 
     iget-object v0, p0, Lcom/samsung/android/airbutton/AirButtonImpl;->mParentView:Landroid/view/View;
 
@@ -574,7 +558,6 @@
 
 .method static synthetic access$200(Lcom/samsung/android/airbutton/AirButtonImpl;)I
     .locals 1
-    .param p0    # Lcom/samsung/android/airbutton/AirButtonImpl;
 
     iget v0, p0, Lcom/samsung/android/airbutton/AirButtonImpl;->mUIType:I
 
@@ -583,7 +566,6 @@
 
 .method static synthetic access$300(Lcom/samsung/android/airbutton/AirButtonImpl;)Lcom/samsung/android/sdk/look/airbutton/SlookAirButtonAdapter;
     .locals 1
-    .param p0    # Lcom/samsung/android/airbutton/AirButtonImpl;
 
     iget-object v0, p0, Lcom/samsung/android/airbutton/AirButtonImpl;->mAdapter:Lcom/samsung/android/sdk/look/airbutton/SlookAirButtonAdapter;
 
@@ -600,7 +582,6 @@
 
 .method static synthetic access$500(Lcom/samsung/android/airbutton/AirButtonImpl;)Z
     .locals 1
-    .param p0    # Lcom/samsung/android/airbutton/AirButtonImpl;
 
     iget-boolean v0, p0, Lcom/samsung/android/airbutton/AirButtonImpl;->mIsWidgetDismissed:Z
 
@@ -609,7 +590,6 @@
 
 .method static synthetic access$600(Lcom/samsung/android/airbutton/AirButtonImpl;)Ljava/lang/Runnable;
     .locals 1
-    .param p0    # Lcom/samsung/android/airbutton/AirButtonImpl;
 
     iget-object v0, p0, Lcom/samsung/android/airbutton/AirButtonImpl;->mKeypadHideRunnable:Ljava/lang/Runnable;
 
@@ -618,7 +598,6 @@
 
 .method static synthetic access$700(Lcom/samsung/android/airbutton/AirButtonImpl;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/samsung/android/airbutton/AirButtonImpl;
 
     iget-object v0, p0, Lcom/samsung/android/airbutton/AirButtonImpl;->mHandler:Landroid/os/Handler;
 
@@ -627,7 +606,6 @@
 
 .method static synthetic access$800(Lcom/samsung/android/airbutton/AirButtonImpl;)Lcom/samsung/android/airbutton/view/AbsAirButtonView;
     .locals 1
-    .param p0    # Lcom/samsung/android/airbutton/AirButtonImpl;
 
     iget-object v0, p0, Lcom/samsung/android/airbutton/AirButtonImpl;->mAirButtonView:Lcom/samsung/android/airbutton/view/AbsAirButtonView;
 
@@ -636,7 +614,6 @@
 
 .method private broadcastAirButtonShowState(Z)V
     .locals 4
-    .param p1    # Z
 
     new-instance v0, Landroid/content/Intent;
 
@@ -681,7 +658,6 @@
 
 .method private callStateListener(I)V
     .locals 5
-    .param p1    # I
 
     const/4 v4, 0x3
 
@@ -873,7 +849,6 @@
 
 .method private createAndInitAirButtonView(Landroid/view/View;)Z
     .locals 6
-    .param p1    # Landroid/view/View;
 
     const/4 v4, 0x2
 
@@ -1301,7 +1276,6 @@
 
 .method private init(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/samsung/android/airbutton/AirButtonImpl;->mContext:Landroid/content/Context;
 
@@ -1835,7 +1809,6 @@
 
 .method private initWithAdapter(Z)V
     .locals 2
-    .param p1    # Z
 
     const/4 v0, 0x0
 
@@ -3014,7 +2987,6 @@
 
 .method protected initWidgetLocationBasedOnView(Landroid/view/View;)V
     .locals 8
-    .param p1    # Landroid/view/View;
 
     const/4 v3, 0x3
 
@@ -3530,8 +3502,6 @@
 
 .method public onHover(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 4
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     const/4 v3, 0x3
 
@@ -3632,7 +3602,6 @@
 
 .method public onHoverButtonSecondary(Landroid/view/MotionEvent;)V
     .locals 2
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-boolean v0, p0, Lcom/samsung/android/airbutton/AirButtonImpl;->mIsAirButtonAttached:Z
 
@@ -3655,7 +3624,6 @@
 
 .method public onHoverEnter(Landroid/view/MotionEvent;)V
     .locals 5
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v4, 0x2
 
@@ -3742,7 +3710,6 @@
 
 .method public onHoverExit(Landroid/view/MotionEvent;)V
     .locals 4
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v3, 0x2
 
@@ -3819,7 +3786,6 @@
 
 .method public onHoverMove(Landroid/view/MotionEvent;)V
     .locals 7
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v6, 0x0
 
@@ -3927,7 +3893,6 @@
 
 .method public onTouchDownForGA(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/samsung/android/airbutton/AirButtonImpl;->mSideBtnController:Lcom/samsung/android/airbutton/AirButtonSideButtonController;
 
@@ -3938,7 +3903,6 @@
 
 .method public onTouchUpForGA(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/samsung/android/airbutton/AirButtonImpl;->mSideBtnController:Lcom/samsung/android/airbutton/AirButtonSideButtonController;
 
@@ -3949,7 +3913,6 @@
 
 .method public setAdapter(Lcom/samsung/android/sdk/look/airbutton/SlookAirButtonAdapter;)V
     .locals 2
-    .param p1    # Lcom/samsung/android/sdk/look/airbutton/SlookAirButtonAdapter;
 
     iput-object p1, p0, Lcom/samsung/android/airbutton/AirButtonImpl;->mAdapter:Lcom/samsung/android/sdk/look/airbutton/SlookAirButtonAdapter;
 
@@ -3983,7 +3946,6 @@
 
 .method public setAttributes(Lcom/samsung/android/airbutton/Attributes;)V
     .locals 6
-    .param p1    # Lcom/samsung/android/airbutton/Attributes;
 
     const/4 v5, 0x2
 
@@ -4215,7 +4177,6 @@
 
 .method public setBounceEffectEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/samsung/android/airbutton/AirButtonImpl;->mAttrs:Lcom/samsung/android/airbutton/Attributes;
 
@@ -4226,7 +4187,6 @@
 
 .method public setDirection(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/samsung/android/airbutton/AirButtonImpl;->mAttrs:Lcom/samsung/android/airbutton/Attributes;
 
@@ -4237,7 +4197,6 @@
 
 .method public setEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/android/airbutton/AirButtonImpl;->mIsEnabled:Z
 
@@ -4258,7 +4217,6 @@
 
 .method public setGravity(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/samsung/android/airbutton/AirButtonImpl;->mAttrs:Lcom/samsung/android/airbutton/Attributes;
 
@@ -4269,7 +4227,6 @@
 
 .method public setHoverPointerEnabled(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/android/airbutton/AirButtonImpl;->mIsHoverPointerEnabled:Z
 
@@ -4278,7 +4235,6 @@
 
 .method public setMultiSelectionEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/samsung/android/airbutton/AirButtonImpl;->mAttrs:Lcom/samsung/android/airbutton/Attributes;
 
@@ -4289,7 +4245,6 @@
 
 .method public setOnItemSelectedListener(Lcom/samsung/android/airbutton/AirButtonImpl$OnItemSelectedListener;)V
     .locals 0
-    .param p1    # Lcom/samsung/android/airbutton/AirButtonImpl$OnItemSelectedListener;
 
     iput-object p1, p0, Lcom/samsung/android/airbutton/AirButtonImpl;->mItemSelectListener:Lcom/samsung/android/airbutton/AirButtonImpl$OnItemSelectedListener;
 
@@ -4298,7 +4253,6 @@
 
 .method public setOnStateChangedListener(Lcom/samsung/android/airbutton/AirButtonImpl$OnStateChangedListener;)V
     .locals 0
-    .param p1    # Lcom/samsung/android/airbutton/AirButtonImpl$OnStateChangedListener;
 
     iput-object p1, p0, Lcom/samsung/android/airbutton/AirButtonImpl;->mStateChangedListener:Lcom/samsung/android/airbutton/AirButtonImpl$OnStateChangedListener;
 
@@ -4307,7 +4261,6 @@
 
 .method public setParentView(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     if-nez p1, :cond_0
 
@@ -4362,8 +4315,6 @@
 
 .method public setPosition(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/samsung/android/airbutton/AirButtonImpl;->mAttrs:Lcom/samsung/android/airbutton/Attributes;
 
@@ -4378,7 +4329,6 @@
 
 .method public setScrollEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/samsung/android/airbutton/AirButtonImpl;->mAttrs:Lcom/samsung/android/airbutton/Attributes;
 
@@ -4724,8 +4674,6 @@
 
 .method public show(FF)V
     .locals 2
-    .param p1    # F
-    .param p2    # F
 
     const v1, 0x461c4000
 
@@ -4753,7 +4701,6 @@
 
 .method public show(Landroid/view/MotionEvent;)V
     .locals 2
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getX()F
 

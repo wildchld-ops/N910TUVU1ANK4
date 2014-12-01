@@ -29,8 +29,6 @@
 # direct methods
 .method public constructor <init>(Landroid/view/View;I)V
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -47,9 +45,6 @@
 
 .method public constructor <init>(Landroid/view/View;ILandroid/widget/ListView;)V
     .locals 0
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # Landroid/widget/ListView;
 
     invoke-direct {p0, p1, p2}, Lcom/android/mms/animation/LayoutParamAnimator;-><init>(Landroid/view/View;I)V
 
@@ -60,10 +55,6 @@
 
 .method public constructor <init>(Landroid/view/View;ILandroid/widget/ListView;Z)V
     .locals 0
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # Landroid/widget/ListView;
-    .param p4    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/mms/animation/LayoutParamAnimator;-><init>(Landroid/view/View;I)V
 
@@ -76,11 +67,6 @@
 
 .method public static ofHeight(Landroid/view/View;IILandroid/widget/ListView;Z)Landroid/animation/ValueAnimator;
     .locals 4
-    .param p0    # Landroid/view/View;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/widget/ListView;
-    .param p4    # Z
 
     const/4 v3, 0x2
 
@@ -109,9 +95,6 @@
 
 .method public static ofLeftMargin(Landroid/view/View;II)Landroid/animation/ValueAnimator;
     .locals 3
-    .param p0    # Landroid/view/View;
-    .param p1    # I
-    .param p2    # I
 
     const/4 v1, 0x2
 
@@ -142,9 +125,6 @@
 
 .method public static ofWidth(Landroid/view/View;II)Landroid/animation/ValueAnimator;
     .locals 4
-    .param p0    # Landroid/view/View;
-    .param p1    # I
-    .param p2    # I
 
     const/4 v3, 0x1
 
@@ -175,7 +155,6 @@
 # virtual methods
 .method public onAnimationUpdate(Landroid/animation/ValueAnimator;)V
     .locals 4
-    .param p1    # Landroid/animation/ValueAnimator;
 
     iget-object v2, p0, Lcom/android/mms/animation/LayoutParamAnimator;->mTargetView:Landroid/view/View;
 

@@ -135,7 +135,6 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/android/launcher2/Folder$FolderColor;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-class v0, Lcom/android/launcher2/Folder$FolderColor;
 

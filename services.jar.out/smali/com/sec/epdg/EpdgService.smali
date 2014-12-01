@@ -258,7 +258,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     const/4 v2, 0x0
 
@@ -393,7 +392,6 @@
 
 .method static synthetic access$000(Lcom/sec/epdg/EpdgService;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/sec/epdg/EpdgService;
 
     iget-object v0, p0, Lcom/sec/epdg/EpdgService;->mInternetIntfName:Ljava/lang/String;
 
@@ -402,8 +400,6 @@
 
 .method static synthetic access$002(Lcom/sec/epdg/EpdgService;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/sec/epdg/EpdgService;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/sec/epdg/EpdgService;->mInternetIntfName:Ljava/lang/String;
 
@@ -430,7 +426,6 @@
 
 .method static synthetic access$1100(Lcom/sec/epdg/EpdgService;)V
     .locals 0
-    .param p0    # Lcom/sec/epdg/EpdgService;
 
     invoke-direct {p0}, Lcom/sec/epdg/EpdgService;->onInternetKeepAliveTimerExpiry()V
 
@@ -439,8 +434,6 @@
 
 .method static synthetic access$1200(Lcom/sec/epdg/EpdgService;Z)V
     .locals 0
-    .param p0    # Lcom/sec/epdg/EpdgService;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/sec/epdg/EpdgService;->setIsScreenOn(Z)V
 
@@ -457,7 +450,6 @@
 
 .method static synthetic access$1400(Lcom/sec/epdg/EpdgService;)Z
     .locals 1
-    .param p0    # Lcom/sec/epdg/EpdgService;
 
     invoke-direct {p0}, Lcom/sec/epdg/EpdgService;->getIsScreenOn()Z
 
@@ -468,7 +460,6 @@
 
 .method static synthetic access$1500(Lcom/sec/epdg/EpdgService;)V
     .locals 0
-    .param p0    # Lcom/sec/epdg/EpdgService;
 
     invoke-direct {p0}, Lcom/sec/epdg/EpdgService;->startWifiProfiling()V
 
@@ -477,7 +468,6 @@
 
 .method static synthetic access$1600(Lcom/sec/epdg/EpdgService;)V
     .locals 0
-    .param p0    # Lcom/sec/epdg/EpdgService;
 
     invoke-direct {p0}, Lcom/sec/epdg/EpdgService;->stopTEpdgTimer()V
 
@@ -494,8 +484,6 @@
 
 .method static synthetic access$1900(Lcom/sec/epdg/EpdgService;Landroid/content/Context;)V
     .locals 0
-    .param p0    # Lcom/sec/epdg/EpdgService;
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Lcom/sec/epdg/EpdgService;->initEpdgService(Landroid/content/Context;)V
 
@@ -504,7 +492,6 @@
 
 .method static synthetic access$200(Z)V
     .locals 0
-    .param p0    # Z
 
     invoke-static {p0}, Lcom/sec/epdg/EpdgService;->setIsOnDemandApnConnectionFailed(Z)V
 
@@ -513,9 +500,6 @@
 
 .method static synthetic access$2100(Lcom/sec/epdg/EpdgService;Landroid/os/Message;Landroid/os/Message;)V
     .locals 0
-    .param p0    # Lcom/sec/epdg/EpdgService;
-    .param p1    # Landroid/os/Message;
-    .param p2    # Landroid/os/Message;
 
     invoke-direct {p0, p1, p2}, Lcom/sec/epdg/EpdgService;->sendIpsecConnResultToSM(Landroid/os/Message;Landroid/os/Message;)V
 
@@ -524,9 +508,6 @@
 
 .method static synthetic access$2200(Lcom/sec/epdg/EpdgService;II)V
     .locals 0
-    .param p0    # Lcom/sec/epdg/EpdgService;
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/sec/epdg/EpdgService;->sendIpsecConnResultToTestApp(II)V
 
@@ -543,7 +524,6 @@
 
 .method static synthetic access$2302(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/sec/epdg/EpdgService;->mW2LAfterEpdgStatusQuery:Z
 
@@ -552,7 +532,6 @@
 
 .method static synthetic access$2400(Lcom/sec/epdg/EpdgService;)V
     .locals 0
-    .param p0    # Lcom/sec/epdg/EpdgService;
 
     invoke-direct {p0}, Lcom/sec/epdg/EpdgService;->movePdnFromWifi()V
 
@@ -577,7 +556,6 @@
 
 .method static synthetic access$2602(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/sec/epdg/EpdgService;->mL2WAfterEpdgStatusQuery:Z
 
@@ -586,8 +564,6 @@
 
 .method static synthetic access$2700(Lcom/sec/epdg/EpdgService;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/sec/epdg/EpdgService;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/sec/epdg/EpdgService;->retryL2WHandoverIfRequired(Ljava/lang/String;)V
 
@@ -596,8 +572,6 @@
 
 .method static synthetic access$2800(Lcom/sec/epdg/EpdgService;I)I
     .locals 1
-    .param p0    # Lcom/sec/epdg/EpdgService;
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -613,9 +587,6 @@
 
 .method static synthetic access$2900(Lcom/sec/epdg/EpdgService;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/sec/epdg/EpdgService;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Lcom/sec/epdg/EpdgService;->handleRetryTimerExpired(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -624,7 +595,6 @@
 
 .method static synthetic access$300(Lcom/sec/epdg/EpdgService;)V
     .locals 0
-    .param p0    # Lcom/sec/epdg/EpdgService;
 
     invoke-direct {p0}, Lcom/sec/epdg/EpdgService;->onSystemSelectTimerFinish()V
 
@@ -633,7 +603,6 @@
 
 .method static synthetic access$3000(Lcom/sec/epdg/EpdgService;)Ljava/lang/Runnable;
     .locals 1
-    .param p0    # Lcom/sec/epdg/EpdgService;
 
     iget-object v0, p0, Lcom/sec/epdg/EpdgService;->mWifiOff:Ljava/lang/Runnable;
 
@@ -642,7 +611,6 @@
 
 .method static synthetic access$3100(Lcom/sec/epdg/EpdgService;)Lcom/sec/epdg/EpdgRilInterface;
     .locals 1
-    .param p0    # Lcom/sec/epdg/EpdgService;
 
     iget-object v0, p0, Lcom/sec/epdg/EpdgService;->mRilAdapter:Lcom/sec/epdg/EpdgRilInterface;
 
@@ -651,9 +619,6 @@
 
 .method static synthetic access$3200(Lcom/sec/epdg/EpdgService;ZLjava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/sec/epdg/EpdgService;
-    .param p1    # Z
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Lcom/sec/epdg/EpdgService;->notifyL2WHandoverResult(ZLjava/lang/String;)V
 
@@ -662,9 +627,6 @@
 
 .method static synthetic access$3300(Lcom/sec/epdg/EpdgService;ZLjava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/sec/epdg/EpdgService;
-    .param p1    # Z
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Lcom/sec/epdg/EpdgService;->notifyW2LHandoverResult(ZLjava/lang/String;)V
 
@@ -673,7 +635,6 @@
 
 .method static synthetic access$3400(Lcom/sec/epdg/EpdgService;)V
     .locals 0
-    .param p0    # Lcom/sec/epdg/EpdgService;
 
     invoke-direct {p0}, Lcom/sec/epdg/EpdgService;->handleEpdgSettingsReadEvent()V
 
@@ -682,7 +643,6 @@
 
 .method static synthetic access$3500(Lcom/sec/epdg/EpdgService;)V
     .locals 0
-    .param p0    # Lcom/sec/epdg/EpdgService;
 
     invoke-direct {p0}, Lcom/sec/epdg/EpdgService;->handleMapconChange()V
 
@@ -691,8 +651,6 @@
 
 .method static synthetic access$3602(Lcom/sec/epdg/EpdgService;Lcom/sec/epdg/EpdgService$EpdgWifiToggleTimer;)Lcom/sec/epdg/EpdgService$EpdgWifiToggleTimer;
     .locals 0
-    .param p0    # Lcom/sec/epdg/EpdgService;
-    .param p1    # Lcom/sec/epdg/EpdgService$EpdgWifiToggleTimer;
 
     iput-object p1, p0, Lcom/sec/epdg/EpdgService;->mWifiToggleTimer:Lcom/sec/epdg/EpdgService$EpdgWifiToggleTimer;
 
@@ -701,7 +659,6 @@
 
 .method static synthetic access$3700(Lcom/sec/epdg/EpdgService;)V
     .locals 0
-    .param p0    # Lcom/sec/epdg/EpdgService;
 
     invoke-direct {p0}, Lcom/sec/epdg/EpdgService;->onWifiToggleTimerFinish()V
 
@@ -710,8 +667,6 @@
 
 .method static synthetic access$3802(Lcom/sec/epdg/EpdgService;Lcom/sec/epdg/EpdgService$TEpdgTimer;)Lcom/sec/epdg/EpdgService$TEpdgTimer;
     .locals 0
-    .param p0    # Lcom/sec/epdg/EpdgService;
-    .param p1    # Lcom/sec/epdg/EpdgService$TEpdgTimer;
 
     iput-object p1, p0, Lcom/sec/epdg/EpdgService;->mTEpdgTimer:Lcom/sec/epdg/EpdgService$TEpdgTimer;
 
@@ -728,7 +683,6 @@
 
 .method static synthetic access$400(Lcom/sec/epdg/EpdgService;)V
     .locals 0
-    .param p0    # Lcom/sec/epdg/EpdgService;
 
     invoke-direct {p0}, Lcom/sec/epdg/EpdgService;->moveToLteBasedOnMapcon()V
 
@@ -737,7 +691,6 @@
 
 .method static synthetic access$4000(Lcom/sec/epdg/EpdgService;)Lcom/sec/epdg/smartwifi/SmartWifiAdapter;
     .locals 1
-    .param p0    # Lcom/sec/epdg/EpdgService;
 
     iget-object v0, p0, Lcom/sec/epdg/EpdgService;->mSmartWifiAdapter:Lcom/sec/epdg/smartwifi/SmartWifiAdapter;
 
@@ -746,7 +699,6 @@
 
 .method static synthetic access$4100(Lcom/sec/epdg/EpdgService;)I
     .locals 1
-    .param p0    # Lcom/sec/epdg/EpdgService;
 
     iget v0, p0, Lcom/sec/epdg/EpdgService;->mWifiMgrState:I
 
@@ -755,8 +707,6 @@
 
 .method static synthetic access$4102(Lcom/sec/epdg/EpdgService;I)I
     .locals 0
-    .param p0    # Lcom/sec/epdg/EpdgService;
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/epdg/EpdgService;->mWifiMgrState:I
 
@@ -781,7 +731,6 @@
 
 .method static synthetic access$4400(Lcom/sec/epdg/EpdgService;)V
     .locals 0
-    .param p0    # Lcom/sec/epdg/EpdgService;
 
     invoke-direct {p0}, Lcom/sec/epdg/EpdgService;->onWifiConnected()V
 
@@ -790,7 +739,6 @@
 
 .method static synthetic access$4500(Lcom/sec/epdg/EpdgService;)Z
     .locals 1
-    .param p0    # Lcom/sec/epdg/EpdgService;
 
     invoke-direct {p0}, Lcom/sec/epdg/EpdgService;->isWifiToggleTimerRunning()Z
 
@@ -801,7 +749,6 @@
 
 .method static synthetic access$4600(Lcom/sec/epdg/EpdgService;)Z
     .locals 1
-    .param p0    # Lcom/sec/epdg/EpdgService;
 
     invoke-direct {p0}, Lcom/sec/epdg/EpdgService;->isTEpdgTimerRunning()Z
 
@@ -812,7 +759,6 @@
 
 .method static synthetic access$4700(Lcom/sec/epdg/EpdgService;)V
     .locals 0
-    .param p0    # Lcom/sec/epdg/EpdgService;
 
     invoke-direct {p0}, Lcom/sec/epdg/EpdgService;->onWifiGoodEnough()V
 
@@ -821,7 +767,6 @@
 
 .method static synthetic access$4800(Lcom/sec/epdg/EpdgService;)V
     .locals 0
-    .param p0    # Lcom/sec/epdg/EpdgService;
 
     invoke-direct {p0}, Lcom/sec/epdg/EpdgService;->startTimersIfNeeded()V
 
@@ -830,8 +775,6 @@
 
 .method static synthetic access$4900(Lcom/sec/epdg/EpdgService;Z)V
     .locals 0
-    .param p0    # Lcom/sec/epdg/EpdgService;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/sec/epdg/EpdgService;->sendWifiStatusChangedNotification(Z)V
 
@@ -840,7 +783,6 @@
 
 .method static synthetic access$500(Lcom/sec/epdg/EpdgService;)Z
     .locals 1
-    .param p0    # Lcom/sec/epdg/EpdgService;
 
     invoke-direct {p0}, Lcom/sec/epdg/EpdgService;->isKeepAliveRunning()Z
 
@@ -851,7 +793,6 @@
 
 .method static synthetic access$5000(Lcom/sec/epdg/EpdgService;)V
     .locals 0
-    .param p0    # Lcom/sec/epdg/EpdgService;
 
     invoke-direct {p0}, Lcom/sec/epdg/EpdgService;->onDbAccessCompleted()V
 
@@ -876,7 +817,6 @@
 
 .method static synthetic access$702(Lcom/sec/epdg/EpdgContentReader;)Lcom/sec/epdg/EpdgContentReader;
     .locals 0
-    .param p0    # Lcom/sec/epdg/EpdgContentReader;
 
     sput-object p0, Lcom/sec/epdg/EpdgService;->mEpdgRead:Lcom/sec/epdg/EpdgContentReader;
 
@@ -885,8 +825,6 @@
 
 .method static synthetic access$800(Lcom/sec/epdg/EpdgService;J)V
     .locals 0
-    .param p0    # Lcom/sec/epdg/EpdgService;
-    .param p1    # J
 
     invoke-direct {p0, p1, p2}, Lcom/sec/epdg/EpdgService;->startAlarmForInternetKeepAlive(J)V
 
@@ -895,8 +833,6 @@
 
 .method static synthetic access$900(Lcom/sec/epdg/EpdgService;Landroid/content/Intent;)V
     .locals 0
-    .param p0    # Lcom/sec/epdg/EpdgService;
-    .param p1    # Landroid/content/Intent;
 
     invoke-direct {p0, p1}, Lcom/sec/epdg/EpdgService;->handleSimStateChange(Landroid/content/Intent;)V
 
@@ -905,7 +841,6 @@
 
 .method private criticalInit(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     const-string v0, "[EPDGService]"
 
@@ -960,7 +895,6 @@
 
 .method private static getAPMac(Landroid/content/Context;)Ljava/lang/String;
     .locals 6
-    .param p0    # Landroid/content/Context;
 
     const-string/jumbo v3, "wifi"
 
@@ -1019,7 +953,6 @@
 
 .method public static getApnNameByApnType(Ljava/lang/String;)Ljava/lang/String;
     .locals 10
-    .param p0    # Ljava/lang/String;
 
     const/4 v6, 0x0
 
@@ -1148,7 +1081,6 @@
 
 .method public static getCurrentSSID(Landroid/content/Context;)Ljava/lang/String;
     .locals 7
-    .param p0    # Landroid/content/Context;
 
     const-string/jumbo v3, "wifi"
 
@@ -1427,7 +1359,6 @@
 
 .method public static getIwlanContextState(Ljava/lang/String;)Lcom/sec/epdg/IWlanState;
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     const-string v1, "[EPDGService]"
 
@@ -1506,7 +1437,6 @@
 
 .method private getSMForApnName(Ljava/lang/String;)Lcom/sec/epdg/IPSecDataConnSM;
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     sget-object v0, Lcom/sec/epdg/EpdgService;->mHOStateMachines:[Lcom/sec/epdg/IPSecDataConnSM;
 
@@ -2285,8 +2215,6 @@
 
 .method private handleRetryTimerExpired(Ljava/lang/String;Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     sget-object v2, Lcom/sec/epdg/EpdgService;->mEpdgRead:Lcom/sec/epdg/EpdgContentReader;
 
@@ -2413,7 +2341,6 @@
 
 .method private handleSimStateChange(Landroid/content/Intent;)V
     .locals 6
-    .param p1    # Landroid/content/Intent;
 
     const-string v3, "[EPDGService]"
 
@@ -2582,8 +2509,6 @@
 
 .method public static includeIdi(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
     .locals 8
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const/4 v5, 0x0
 
@@ -2721,7 +2646,6 @@
 
 .method private initEpdgService(Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     const-string v0, "[EPDGService]"
 
@@ -2780,7 +2704,6 @@
 
 .method private is3gNetwork(I)Z
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x3
 
@@ -2945,7 +2868,6 @@
 
 .method private static isL2WRecommended(Ljava/lang/String;)Z
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -3029,7 +2951,6 @@
 
 .method public static isW2LRecommended(I)Z
     .locals 6
-    .param p0    # I
 
     const/4 v2, 0x0
 
@@ -3323,8 +3244,6 @@
 
 .method private notifyL2WHandoverResult(ZLjava/lang/String;)V
     .locals 6
-    .param p1    # Z
-    .param p2    # Ljava/lang/String;
 
     if-eqz p2, :cond_0
 
@@ -3367,8 +3286,6 @@
 
 .method private notifyW2LHandoverResult(ZLjava/lang/String;)V
     .locals 6
-    .param p1    # Z
-    .param p2    # Ljava/lang/String;
 
     if-eqz p2, :cond_0
 
@@ -3894,7 +3811,6 @@
 
 .method private retryL2WHandoverIfRequired(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -4015,7 +3931,6 @@
 
 .method private retryW2LHandoverIfRequired(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -4140,7 +4055,6 @@
 
 .method public static sendEpdgNotAvailableForOnDemandFailure(Ljava/lang/String;)V
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     sget-object v0, Lcom/sec/epdg/EpdgService;->mEpdgHandler:Landroid/os/Handler;
 
@@ -4159,7 +4073,6 @@
 
 .method public static sendIpsecConnFailIntent(Lcom/sec/epdg/IWlanError;)V
     .locals 3
-    .param p0    # Lcom/sec/epdg/IWlanError;
 
     invoke-static {}, Lcom/sec/epdg/EpdgUtils;->isOperatorTmo()Ljava/lang/Boolean;
 
@@ -4197,8 +4110,6 @@
 
 .method private sendIpsecConnResultToSM(Landroid/os/Message;Landroid/os/Message;)V
     .locals 4
-    .param p1    # Landroid/os/Message;
-    .param p2    # Landroid/os/Message;
 
     iget v0, p1, Landroid/os/Message;->arg1:I
 
@@ -4251,8 +4162,6 @@
 
 .method private sendIpsecConnResultToTestApp(II)V
     .locals 11
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -4538,7 +4447,6 @@
 
 .method private sendWifiStatusChangedNotification(Z)V
     .locals 12
-    .param p1    # Z
 
     const/4 v8, 0x1
 
@@ -4749,8 +4657,6 @@
 
 .method private static setDataDependency(ZZ)V
     .locals 3
-    .param p0    # Z
-    .param p1    # Z
 
     const-string v0, "[EPDGService]"
 
@@ -4872,7 +4778,6 @@
 
 .method private static setDataDependencyIfRequired(I)V
     .locals 5
-    .param p0    # I
 
     sget-object v2, Lcom/sec/epdg/EpdgService;->mConnMgr:Landroid/net/ConnectivityManager;
 
@@ -4962,7 +4867,6 @@
 
 .method public static setEpdgManagerTestFlag(I)V
     .locals 0
-    .param p0    # I
 
     sput p0, Lcom/sec/epdg/EpdgService;->USE_EPDG_MANAGER_TEST:I
 
@@ -4971,7 +4875,6 @@
 
 .method public static declared-synchronized setIsAirplaneMode(Z)V
     .locals 2
-    .param p0    # Z
 
     const-class v0, Lcom/sec/epdg/EpdgService;
 
@@ -4996,7 +4899,6 @@
 
 .method private static setIsOnDemandApnConnectionFailed(Z)V
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/sec/epdg/EpdgService;->isOnDemandApnConnectionFailed:Z
 
@@ -5005,7 +4907,6 @@
 
 .method private declared-synchronized setIsScreenOn(Z)V
     .locals 1
-    .param p1    # Z
 
     monitor-enter p0
 
@@ -5028,7 +4929,6 @@
 
 .method private declared-synchronized setKeepAliveExpired(Z)V
     .locals 1
-    .param p1    # Z
 
     monitor-enter p0
 
@@ -5051,7 +4951,6 @@
 
 .method private declared-synchronized setKeepAliveRunning(Z)V
     .locals 1
-    .param p1    # Z
 
     monitor-enter p0
 
@@ -5074,7 +4973,6 @@
 
 .method private startAlarmForInternetKeepAlive(J)V
     .locals 5
-    .param p1    # J
 
     const-string v1, "[EPDGService]"
 
@@ -5151,8 +5049,6 @@
 
 .method private startAlarmForPdnXfer(JI)V
     .locals 5
-    .param p1    # J
-    .param p3    # I
 
     const-string v1, "[EPDGService]"
 
@@ -5241,7 +5137,6 @@
 
 .method private startHandOverWifiToLte(I)I
     .locals 3
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5267,7 +5162,6 @@
 
 .method private startHandoverLteToWifi(I)I
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5769,8 +5663,6 @@
 
 .method static updateOnwUriImsi(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
     .locals 15
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     sget-boolean v11, Lcom/sec/epdg/EpdgService;->bIsSimReady:Z
 
@@ -6183,8 +6075,6 @@
 
 .method public connect(Ljava/lang/String;Landroid/os/IBinder;)I
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/IBinder;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -6286,8 +6176,6 @@
 
 .method public disconnect(Ljava/lang/String;Landroid/os/IBinder;)I
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/IBinder;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -6393,9 +6281,6 @@
 
 .method protected dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 8
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     sget-object v6, Lcom/sec/epdg/EpdgService;->mContext:Landroid/content/Context;
 
@@ -6595,7 +6480,6 @@
 
 .method public enableTestRilAdapter(Z)I
     .locals 2
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -6965,9 +6849,6 @@
 
 .method public sendEventToStateMachine(IILandroid/os/IBinder;)I
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/os/IBinder;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -6989,10 +6870,6 @@
 
 .method public startHandOverLteToWifi(ILjava/lang/String;Landroid/os/IBinder;Landroid/app/PendingIntent;)I
     .locals 4
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/os/IBinder;
-    .param p4    # Landroid/app/PendingIntent;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -7062,10 +6939,6 @@
 
 .method public startHandOverWifiToLte(ILjava/lang/String;Landroid/os/IBinder;Landroid/app/PendingIntent;)I
     .locals 4
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/os/IBinder;
-    .param p4    # Landroid/app/PendingIntent;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

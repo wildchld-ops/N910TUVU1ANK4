@@ -25,8 +25,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/pm/PackagePrefetcher;Landroid/content/pm/PackageParser$Package;Z)V
     .locals 1
-    .param p2    # Landroid/content/pm/PackageParser$Package;
-    .param p3    # Z
 
     iput-object p1, p0, Lcom/android/server/pm/PackagePrefetcher$PrefetchedPackage;->this$0:Lcom/android/server/pm/PackagePrefetcher;
 

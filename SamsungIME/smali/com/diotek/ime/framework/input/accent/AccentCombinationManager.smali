@@ -117,8 +117,6 @@
 # virtual methods
 .method public getCombinedCharacter(II)I
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -236,7 +234,6 @@
 
 .method public isAccentCharacter(I)Z
     .locals 2
-    .param p1    # I
 
     const/16 v0, 0x61
 
@@ -267,7 +264,6 @@
 
 .method public setInputLanguage(Lcom/diotek/ime/framework/common/Language;)V
     .locals 8
-    .param p1    # Lcom/diotek/ime/framework/common/Language;
 
     const/4 v6, 0x2
 

@@ -69,7 +69,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Landroid/view/View;->getId()I
+    invoke-virtual {v1}, Landroid/widget/RadioButton;->getId()I
 
     move-result v1
 
@@ -89,7 +89,7 @@
     :goto_1
     iget-object v1, p0, Lcom/android/phone/FlatRateAlertActivity$1;->this$0:Lcom/android/phone/FlatRateAlertActivity;
 
-    invoke-virtual {v1}, Landroid/app/Activity;->finish()V
+    invoke-virtual {v1}, Lcom/android/phone/FlatRateAlertActivity;->finish()V
 
     return-void
 

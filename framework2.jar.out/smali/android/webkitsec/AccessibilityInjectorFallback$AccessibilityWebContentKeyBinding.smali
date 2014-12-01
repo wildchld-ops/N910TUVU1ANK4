@@ -49,8 +49,6 @@
 # direct methods
 .method public constructor <init>(J[I)V
     .locals 0
-    .param p1    # J
-    .param p3    # [I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -65,7 +63,6 @@
 # virtual methods
 .method public getAction(I)I
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/webkitsec/AccessibilityInjectorFallback$AccessibilityWebContentKeyBinding;->mActionSequence:[I
 
@@ -76,7 +73,6 @@
 
 .method public getActionCode(I)I
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Landroid/webkitsec/AccessibilityInjectorFallback$AccessibilityWebContentKeyBinding;->mActionSequence:[I
 
@@ -103,7 +99,6 @@
 
 .method public getFirstArgument(I)I
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Landroid/webkitsec/AccessibilityInjectorFallback$AccessibilityWebContentKeyBinding;->mActionSequence:[I
 
@@ -156,7 +151,6 @@
 
 .method public getSecondArgument(I)I
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Landroid/webkitsec/AccessibilityInjectorFallback$AccessibilityWebContentKeyBinding;->mActionSequence:[I
 
@@ -173,7 +167,6 @@
 
 .method public getThirdArgument(I)I
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/webkitsec/AccessibilityInjectorFallback$AccessibilityWebContentKeyBinding;->mActionSequence:[I
 

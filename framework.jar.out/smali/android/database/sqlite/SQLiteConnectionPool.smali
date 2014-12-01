@@ -101,7 +101,6 @@
 
 .method private constructor <init>(Landroid/database/sqlite/SQLiteDatabaseConfiguration;)V
     .locals 1
-    .param p1    # Landroid/database/sqlite/SQLiteDatabaseConfiguration;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -148,7 +147,6 @@
 
 .method static synthetic access$000(Landroid/database/sqlite/SQLiteConnectionPool;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Landroid/database/sqlite/SQLiteConnectionPool;
 
     iget-object v0, p0, Landroid/database/sqlite/SQLiteConnectionPool;->mLock:Ljava/lang/Object;
 
@@ -157,8 +155,6 @@
 
 .method static synthetic access$100(Landroid/database/sqlite/SQLiteConnectionPool;Landroid/database/sqlite/SQLiteConnectionPool$ConnectionWaiter;)V
     .locals 0
-    .param p0    # Landroid/database/sqlite/SQLiteConnectionPool;
-    .param p1    # Landroid/database/sqlite/SQLiteConnectionPool$ConnectionWaiter;
 
     invoke-direct {p0, p1}, Landroid/database/sqlite/SQLiteConnectionPool;->cancelConnectionWaiterLocked(Landroid/database/sqlite/SQLiteConnectionPool$ConnectionWaiter;)V
 
@@ -167,7 +163,6 @@
 
 .method private cancelConnectionWaiterLocked(Landroid/database/sqlite/SQLiteConnectionPool$ConnectionWaiter;)V
     .locals 3
-    .param p1    # Landroid/database/sqlite/SQLiteConnectionPool$ConnectionWaiter;
 
     iget-object v2, p1, Landroid/database/sqlite/SQLiteConnectionPool$ConnectionWaiter;->mAssignedConnection:Landroid/database/sqlite/SQLiteConnection;
 
@@ -240,7 +235,6 @@
 
 .method private changeLabel(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -328,7 +322,6 @@
 
 .method private closeConnectionAndLogExceptionsLocked(Landroid/database/sqlite/SQLiteConnection;)V
     .locals 4
-    .param p1    # Landroid/database/sqlite/SQLiteConnection;
 
     :try_start_0
     invoke-virtual {p1}, Landroid/database/sqlite/SQLiteConnection;->close()V
@@ -414,7 +407,6 @@
 
 .method private dispose(Z)V
     .locals 5
-    .param p1    # Z
 
     iget-object v1, p0, Landroid/database/sqlite/SQLiteConnectionPool;->mCloseGuard:Ldalvik/system/CloseGuard;
 
@@ -527,8 +519,6 @@
 
 .method private finishAcquireConnectionLocked(Landroid/database/sqlite/SQLiteConnection;I)V
     .locals 5
-    .param p1    # Landroid/database/sqlite/SQLiteConnection;
-    .param p2    # I
 
     and-int/lit8 v2, p2, 0x1
 
@@ -597,7 +587,6 @@
 
 .method private static getPriority(I)I
     .locals 1
-    .param p0    # I
 
     and-int/lit8 v0, p0, 0x4
 
@@ -616,8 +605,6 @@
 
 .method private isSessionBlockingImportantConnectionWaitersLocked(ZI)Z
     .locals 3
-    .param p1    # Z
-    .param p2    # I
 
     iget-object v1, p0, Landroid/database/sqlite/SQLiteConnectionPool;->mConnectionWaiterQueue:Landroid/database/sqlite/SQLiteConnectionPool$ConnectionWaiter;
 
@@ -661,8 +648,6 @@
 
 .method private logConnectionPoolBusyLocked(JI)V
     .locals 13
-    .param p1    # J
-    .param p3    # I
 
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
 
@@ -907,7 +892,6 @@
 
 .method private markAcquiredConnectionsLocked(Landroid/database/sqlite/SQLiteConnectionPool$AcquiredConnectionStatus;)V
     .locals 8
-    .param p1    # Landroid/database/sqlite/SQLiteConnectionPool$AcquiredConnectionStatus;
 
     iget-object v6, p0, Landroid/database/sqlite/SQLiteConnectionPool;->mAcquiredConnections:Ljava/util/WeakHashMap;
 
@@ -999,12 +983,6 @@
 
 .method private obtainConnectionWaiterLocked(Ljava/lang/Thread;JIZLjava/lang/String;I)Landroid/database/sqlite/SQLiteConnectionPool$ConnectionWaiter;
     .locals 3
-    .param p1    # Ljava/lang/Thread;
-    .param p2    # J
-    .param p4    # I
-    .param p5    # Z
-    .param p6    # Ljava/lang/String;
-    .param p7    # I
 
     const/4 v2, 0x0
 
@@ -1043,7 +1021,6 @@
 
 .method public static open(Landroid/database/sqlite/SQLiteDatabaseConfiguration;)Landroid/database/sqlite/SQLiteConnectionPool;
     .locals 3
-    .param p0    # Landroid/database/sqlite/SQLiteDatabaseConfiguration;
 
     if-nez p0, :cond_0
 
@@ -1091,8 +1068,6 @@
 
 .method private openConnectionLocked(Landroid/database/sqlite/SQLiteDatabaseConfiguration;Z)Landroid/database/sqlite/SQLiteConnection;
     .locals 2
-    .param p1    # Landroid/database/sqlite/SQLiteDatabaseConfiguration;
-    .param p2    # Z
 
     iget v0, p0, Landroid/database/sqlite/SQLiteConnectionPool;->mNextConnectionId:I
 
@@ -1109,8 +1084,6 @@
 
 .method public static openSecure(Landroid/database/sqlite/SQLiteDatabaseConfiguration;[B)Landroid/database/sqlite/SQLiteConnectionPool;
     .locals 3
-    .param p0    # Landroid/database/sqlite/SQLiteDatabaseConfiguration;
-    .param p1    # [B
 
     if-nez p0, :cond_0
 
@@ -1134,7 +1107,6 @@
 
 .method private openSecure([B)V
     .locals 2
-    .param p1    # [B
 
     const/4 v1, 0x1
 
@@ -1159,9 +1131,6 @@
 
 .method private openSecureConnectionLocked(Landroid/database/sqlite/SQLiteDatabaseConfiguration;Z[B)Landroid/database/sqlite/SQLiteConnection;
     .locals 2
-    .param p1    # Landroid/database/sqlite/SQLiteDatabaseConfiguration;
-    .param p2    # Z
-    .param p3    # [B
 
     iget v0, p0, Landroid/database/sqlite/SQLiteConnectionPool;->mNextConnectionId:I
 
@@ -1315,8 +1284,6 @@
 
 .method private recycleConnectionLocked(Landroid/database/sqlite/SQLiteConnection;Landroid/database/sqlite/SQLiteConnectionPool$AcquiredConnectionStatus;)Z
     .locals 4
-    .param p1    # Landroid/database/sqlite/SQLiteConnection;
-    .param p2    # Landroid/database/sqlite/SQLiteConnectionPool$AcquiredConnectionStatus;
 
     sget-object v1, Landroid/database/sqlite/SQLiteConnectionPool$AcquiredConnectionStatus;->RECONFIGURE:Landroid/database/sqlite/SQLiteConnectionPool$AcquiredConnectionStatus;
 
@@ -1379,7 +1346,6 @@
 
 .method private recycleConnectionWaiterLocked(Landroid/database/sqlite/SQLiteConnectionPool$ConnectionWaiter;)V
     .locals 2
-    .param p1    # Landroid/database/sqlite/SQLiteConnectionPool$ConnectionWaiter;
 
     const/4 v1, 0x0
 
@@ -1457,8 +1423,6 @@
 
 .method private tryAcquireNonPrimaryConnectionLocked(Ljava/lang/String;I)Landroid/database/sqlite/SQLiteConnection;
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     iget-object v4, p0, Landroid/database/sqlite/SQLiteConnectionPool;->mAvailableNonPrimaryConnections:Ljava/util/ArrayList;
 
@@ -1560,7 +1524,6 @@
 
 .method private tryAcquirePrimaryConnectionLocked(I)Landroid/database/sqlite/SQLiteConnection;
     .locals 5
-    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -1627,9 +1590,6 @@
 
 .method private waitForConnection(Ljava/lang/String;ILandroid/os/CancellationSignal;)Landroid/database/sqlite/SQLiteConnection;
     .locals 24
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Landroid/os/CancellationSignal;
 
     and-int/lit8 v3, p2, 0x2
 
@@ -2105,9 +2065,6 @@
 # virtual methods
 .method public acquireConnection(Ljava/lang/String;ILandroid/os/CancellationSignal;)Landroid/database/sqlite/SQLiteConnection;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Landroid/os/CancellationSignal;
 
     invoke-direct {p0, p1, p2, p3}, Landroid/database/sqlite/SQLiteConnectionPool;->waitForConnection(Ljava/lang/String;ILandroid/os/CancellationSignal;)Landroid/database/sqlite/SQLiteConnection;
 
@@ -2223,8 +2180,6 @@
 
 .method public dump(Landroid/util/Printer;Z)V
     .locals 13
-    .param p1    # Landroid/util/Printer;
-    .param p2    # Z
 
     const-string v9, "    "
 
@@ -2575,7 +2530,6 @@
 
 .method public exportDB(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "SQLiteConnectionPool"
 
@@ -2744,7 +2698,6 @@
 
 .method public reconfigure(Landroid/database/sqlite/SQLiteDatabaseConfiguration;)V
     .locals 7
-    .param p1    # Landroid/database/sqlite/SQLiteDatabaseConfiguration;
 
     const/4 v3, 0x0
 
@@ -2929,7 +2882,6 @@
 
 .method public releaseConnection(Landroid/database/sqlite/SQLiteConnection;)V
     .locals 4
-    .param p1    # Landroid/database/sqlite/SQLiteConnection;
 
     iget-object v2, p0, Landroid/database/sqlite/SQLiteConnectionPool;->mLock:Ljava/lang/Object;
 
@@ -3049,8 +3001,6 @@
 
 .method public shouldYieldConnection(Landroid/database/sqlite/SQLiteConnection;I)Z
     .locals 3
-    .param p1    # Landroid/database/sqlite/SQLiteConnection;
-    .param p2    # I
 
     iget-object v1, p0, Landroid/database/sqlite/SQLiteConnectionPool;->mLock:Ljava/lang/Object;
 

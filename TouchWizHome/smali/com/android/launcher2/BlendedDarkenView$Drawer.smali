@@ -37,7 +37,6 @@
 
 .method static synthetic access$000(Lcom/android/launcher2/BlendedDarkenView$Drawer;)F
     .locals 1
-    .param p0    # Lcom/android/launcher2/BlendedDarkenView$Drawer;
 
     iget v0, p0, Lcom/android/launcher2/BlendedDarkenView$Drawer;->mAlpha:F
 
@@ -46,8 +45,6 @@
 
 .method static synthetic access$002(Lcom/android/launcher2/BlendedDarkenView$Drawer;F)F
     .locals 0
-    .param p0    # Lcom/android/launcher2/BlendedDarkenView$Drawer;
-    .param p1    # F
 
     iput p1, p0, Lcom/android/launcher2/BlendedDarkenView$Drawer;->mAlpha:F
 
@@ -58,7 +55,6 @@
 # virtual methods
 .method public drawGL([F)V
     .locals 8
-    .param p1    # [F
 
     const v7, 0x8893
 

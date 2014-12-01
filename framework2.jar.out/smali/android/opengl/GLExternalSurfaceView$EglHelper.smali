@@ -41,7 +41,6 @@
 
 .method private throwEglException(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/opengl/GLExternalSurfaceView$EglHelper;->mEgl:Ljavax/microedition/khronos/egl/EGL10;
 
@@ -56,8 +55,6 @@
 
 .method private throwEglException(Ljava/lang/String;I)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -136,7 +133,6 @@
 # virtual methods
 .method public createSurface(Landroid/view/SurfaceHolder;)Ljavax/microedition/khronos/opengles/GL;
     .locals 10
-    .param p1    # Landroid/view/SurfaceHolder;
 
     const/4 v3, 0x0
 

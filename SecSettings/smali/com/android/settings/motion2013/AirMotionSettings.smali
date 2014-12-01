@@ -109,7 +109,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/motion2013/AirMotionSettings;)V
     .locals 0
-    .param p0    # Lcom/android/settings/motion2013/AirMotionSettings;
 
     invoke-direct {p0}, Lcom/android/settings/motion2013/AirMotionSettings;->updateAnimation()V
 
@@ -118,7 +117,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/motion2013/AirMotionSettings;)Landroid/preference/SwitchPreferenceScreen;
     .locals 1
-    .param p0    # Lcom/android/settings/motion2013/AirMotionSettings;
 
     iget-object v0, p0, Lcom/android/settings/motion2013/AirMotionSettings;->mAirScroll:Landroid/preference/SwitchPreferenceScreen;
 
@@ -127,7 +125,6 @@
 
 .method static synthetic access$1000(Lcom/android/settings/motion2013/AirMotionSettings;)Landroid/preference/SwitchPreferenceScreen;
     .locals 1
-    .param p0    # Lcom/android/settings/motion2013/AirMotionSettings;
 
     iget-object v0, p0, Lcom/android/settings/motion2013/AirMotionSettings;->mAirCallAccept:Landroid/preference/SwitchPreferenceScreen;
 
@@ -136,8 +133,6 @@
 
 .method static synthetic access$1100(Lcom/android/settings/motion2013/AirMotionSettings;Z)V
     .locals 0
-    .param p0    # Lcom/android/settings/motion2013/AirMotionSettings;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/settings/motion2013/AirMotionSettings;->showGuideDialog(Z)V
 
@@ -146,7 +141,6 @@
 
 .method static synthetic access$1200(Lcom/android/settings/motion2013/AirMotionSettings;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/motion2013/AirMotionSettings;
 
     invoke-virtual {p0}, Lcom/android/settings/motion2013/AirMotionSettings;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -157,7 +151,6 @@
 
 .method static synthetic access$1300(Lcom/android/settings/motion2013/AirMotionSettings;)V
     .locals 0
-    .param p0    # Lcom/android/settings/motion2013/AirMotionSettings;
 
     invoke-direct {p0}, Lcom/android/settings/motion2013/AirMotionSettings;->stopAnimation()V
 
@@ -166,7 +159,6 @@
 
 .method static synthetic access$1400(Lcom/android/settings/motion2013/AirMotionSettings;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/motion2013/AirMotionSettings;
 
     invoke-virtual {p0}, Lcom/android/settings/motion2013/AirMotionSettings;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -177,8 +169,6 @@
 
 .method static synthetic access$1500(Lcom/android/settings/motion2013/AirMotionSettings;Z)V
     .locals 0
-    .param p0    # Lcom/android/settings/motion2013/AirMotionSettings;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/settings/motion2013/AirMotionSettings;->broadcastAirScrollChanged(Z)V
 
@@ -187,7 +177,6 @@
 
 .method static synthetic access$1600(Lcom/android/settings/motion2013/AirMotionSettings;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/motion2013/AirMotionSettings;
 
     invoke-virtual {p0}, Lcom/android/settings/motion2013/AirMotionSettings;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -198,8 +187,6 @@
 
 .method static synthetic access$1700(Lcom/android/settings/motion2013/AirMotionSettings;Z)V
     .locals 0
-    .param p0    # Lcom/android/settings/motion2013/AirMotionSettings;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/settings/motion2013/AirMotionSettings;->broadcastAirBrowseChanged(Z)V
 
@@ -208,7 +195,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/motion2013/AirMotionSettings;)Landroid/preference/SwitchPreferenceScreen;
     .locals 1
-    .param p0    # Lcom/android/settings/motion2013/AirMotionSettings;
 
     iget-object v0, p0, Lcom/android/settings/motion2013/AirMotionSettings;->mAirTurn:Landroid/preference/SwitchPreferenceScreen;
 
@@ -217,7 +203,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/motion2013/AirMotionSettings;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/motion2013/AirMotionSettings;
 
     invoke-virtual {p0}, Lcom/android/settings/motion2013/AirMotionSettings;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -228,7 +213,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/motion2013/AirMotionSettings;)Landroid/widget/Switch;
     .locals 1
-    .param p0    # Lcom/android/settings/motion2013/AirMotionSettings;
 
     iget-object v0, p0, Lcom/android/settings/motion2013/AirMotionSettings;->mActionBarSwitch:Landroid/widget/Switch;
 
@@ -237,7 +221,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/motion2013/AirMotionSettings;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/motion2013/AirMotionSettings;
 
     invoke-virtual {p0}, Lcom/android/settings/motion2013/AirMotionSettings;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -248,8 +231,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/motion2013/AirMotionSettings;Z)V
     .locals 0
-    .param p0    # Lcom/android/settings/motion2013/AirMotionSettings;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/settings/motion2013/AirMotionSettings;->broadcastAirMotionChanged(Z)V
 
@@ -258,7 +239,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/motion2013/AirMotionSettings;)Landroid/preference/SwitchPreferenceScreen;
     .locals 1
-    .param p0    # Lcom/android/settings/motion2013/AirMotionSettings;
 
     iget-object v0, p0, Lcom/android/settings/motion2013/AirMotionSettings;->mQuickGlance:Landroid/preference/SwitchPreferenceScreen;
 
@@ -267,7 +247,6 @@
 
 .method static synthetic access$800(Lcom/android/settings/motion2013/AirMotionSettings;)Landroid/preference/SwitchPreferenceScreen;
     .locals 1
-    .param p0    # Lcom/android/settings/motion2013/AirMotionSettings;
 
     iget-object v0, p0, Lcom/android/settings/motion2013/AirMotionSettings;->mAirMove:Landroid/preference/SwitchPreferenceScreen;
 
@@ -276,7 +255,6 @@
 
 .method static synthetic access$900(Lcom/android/settings/motion2013/AirMotionSettings;)Landroid/preference/SwitchPreferenceScreen;
     .locals 1
-    .param p0    # Lcom/android/settings/motion2013/AirMotionSettings;
 
     iget-object v0, p0, Lcom/android/settings/motion2013/AirMotionSettings;->mAirPin:Landroid/preference/SwitchPreferenceScreen;
 
@@ -614,7 +592,6 @@
 
 .method public static isAllOptionDisabled(Landroid/content/ContentResolver;)Z
     .locals 9
-    .param p0    # Landroid/content/ContentResolver;
 
     const/4 v5, 0x1
 
@@ -719,9 +696,6 @@
 
 .method private showAllOptionDisabledDialog(IILjava/lang/String;)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/settings/motion2013/AirMotionSettings;->dismissAllDialog()V
 
@@ -774,7 +748,6 @@
 
 .method private showGuideDialog(Z)V
     .locals 21
-    .param p1    # Z
 
     invoke-direct/range {p0 .. p0}, Lcom/android/settings/motion2013/AirMotionSettings;->dismissAllDialog()V
 
@@ -1915,7 +1888,6 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onActivityCreated(Landroid/os/Bundle;)V
 
@@ -1945,8 +1917,6 @@
 
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 7
-    .param p1    # Landroid/widget/CompoundButton;
-    .param p2    # Z
 
     const/4 v3, 0x1
 
@@ -2040,7 +2010,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 14
-    .param p1    # Landroid/os/Bundle;
 
     const/16 v11, 0x10
 
@@ -2629,8 +2598,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
     .locals 3
-    .param p1    # Landroid/view/Menu;
-    .param p2    # Landroid/view/MenuInflater;
 
     const/4 v2, 0x0
 
@@ -2668,7 +2635,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 3
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -2766,8 +2732,6 @@
 
 .method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
     .locals 7
-    .param p1    # Landroid/preference/Preference;
-    .param p2    # Ljava/lang/Object;
 
     const v6, 0x7f090ff0
 
@@ -3069,8 +3033,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 3
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     const/4 v1, 0x1
 

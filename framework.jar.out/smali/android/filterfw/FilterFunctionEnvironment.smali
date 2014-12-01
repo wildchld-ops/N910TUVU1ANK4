@@ -16,7 +16,6 @@
 
 .method public constructor <init>(Landroid/filterfw/core/FrameManager;)V
     .locals 0
-    .param p1    # Landroid/filterfw/core/FrameManager;
 
     invoke-direct {p0, p1}, Landroid/filterfw/MffEnvironment;-><init>(Landroid/filterfw/core/FrameManager;)V
 
@@ -27,8 +26,6 @@
 # virtual methods
 .method public varargs createFunction(Ljava/lang/Class;[Ljava/lang/Object;)Landroid/filterfw/core/FilterFunction;
     .locals 4
-    .param p1    # Ljava/lang/Class;
-    .param p2    # [Ljava/lang/Object;
 
     new-instance v2, Ljava/lang/StringBuilder;
 

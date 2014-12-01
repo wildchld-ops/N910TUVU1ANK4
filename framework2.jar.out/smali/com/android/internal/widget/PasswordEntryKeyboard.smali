@@ -44,8 +44,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;I)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -56,9 +54,6 @@
 
 .method public constructor <init>(Landroid/content/Context;II)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v4, 0x2
 
@@ -95,10 +90,6 @@
 
 .method public constructor <init>(Landroid/content/Context;III)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/4 v3, 0x0
 
@@ -119,11 +110,6 @@
 
 .method public constructor <init>(Landroid/content/Context;IIII)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     const/4 v4, 0x2
 
@@ -160,11 +146,6 @@
 
 .method public constructor <init>(Landroid/content/Context;ILjava/lang/CharSequence;II)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Ljava/lang/CharSequence;
-    .param p4    # I
-    .param p5    # I
 
     const/4 v4, 0x2
 
@@ -199,7 +180,6 @@
 
 .method private init(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -236,11 +216,6 @@
 # virtual methods
 .method protected createKeyFromXml(Landroid/content/res/Resources;Landroid/inputmethodservice/Keyboard$Row;IILandroid/content/res/XmlResourceParser;)Landroid/inputmethodservice/Keyboard$Key;
     .locals 8
-    .param p1    # Landroid/content/res/Resources;
-    .param p2    # Landroid/inputmethodservice/Keyboard$Row;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Landroid/content/res/XmlResourceParser;
 
     const/4 v7, 0x0
 
@@ -427,10 +402,6 @@
 
 .method setEnterKeyResources(Landroid/content/res/Resources;III)V
     .locals 4
-    .param p1    # Landroid/content/res/Resources;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/4 v1, 0x0
 
@@ -510,7 +481,6 @@
 
 .method setShiftLocked(Z)V
     .locals 5
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/internal/widget/PasswordEntryKeyboard;->mShiftKeys:[Landroid/inputmethodservice/Keyboard$Key;
 
@@ -554,7 +524,6 @@
 
 .method public setShifted(Z)Z
     .locals 5
-    .param p1    # Z
 
     const/4 v2, 0x1
 

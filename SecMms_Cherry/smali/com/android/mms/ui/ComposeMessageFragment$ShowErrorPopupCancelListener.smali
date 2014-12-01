@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Lcom/android/mms/ui/ComposeMessageFragment;Lcom/android/mms/ui/ComposeMessageFragment$1;)V
     .locals 0
-    .param p1    # Lcom/android/mms/ui/ComposeMessageFragment;
-    .param p2    # Lcom/android/mms/ui/ComposeMessageFragment$1;
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/ComposeMessageFragment$ShowErrorPopupCancelListener;-><init>(Lcom/android/mms/ui/ComposeMessageFragment;)V
 
@@ -46,7 +44,6 @@
 # virtual methods
 .method public onCancel(Landroid/content/DialogInterface;)V
     .locals 2
-    .param p1    # Landroid/content/DialogInterface;
 
     iget-object v0, p0, Lcom/android/mms/ui/ComposeMessageFragment$ShowErrorPopupCancelListener;->this$0:Lcom/android/mms/ui/ComposeMessageFragment;
 

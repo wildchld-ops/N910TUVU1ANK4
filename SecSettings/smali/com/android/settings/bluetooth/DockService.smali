@@ -105,8 +105,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/bluetooth/DockService;Landroid/os/Message;)V
     .locals 0
-    .param p0    # Lcom/android/settings/bluetooth/DockService;
-    .param p1    # Landroid/os/Message;
 
     invoke-direct {p0, p1}, Lcom/android/settings/bluetooth/DockService;->processMessage(Landroid/os/Message;)V
 
@@ -115,10 +113,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/bluetooth/DockService;Landroid/bluetooth/BluetoothDevice;II)V
     .locals 0
-    .param p0    # Lcom/android/settings/bluetooth/DockService;
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/settings/bluetooth/DockService;->handleDocked(Landroid/bluetooth/BluetoothDevice;II)V
 
@@ -127,7 +121,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/bluetooth/DockService;)[Z
     .locals 1
-    .param p0    # Lcom/android/settings/bluetooth/DockService;
 
     iget-object v0, p0, Lcom/android/settings/bluetooth/DockService;->mCheckedItems:[Z
 
@@ -136,7 +129,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/bluetooth/DockService;)Landroid/bluetooth/BluetoothDevice;
     .locals 1
-    .param p0    # Lcom/android/settings/bluetooth/DockService;
 
     iget-object v0, p0, Lcom/android/settings/bluetooth/DockService;->mDevice:Landroid/bluetooth/BluetoothDevice;
 
@@ -145,7 +137,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/bluetooth/DockService;)Landroid/bluetooth/BluetoothDevice;
     .locals 1
-    .param p0    # Lcom/android/settings/bluetooth/DockService;
 
     iget-object v0, p0, Lcom/android/settings/bluetooth/DockService;->mPendingDevice:Landroid/bluetooth/BluetoothDevice;
 
@@ -154,7 +145,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/bluetooth/DockService;)I
     .locals 1
-    .param p0    # Lcom/android/settings/bluetooth/DockService;
 
     iget v0, p0, Lcom/android/settings/bluetooth/DockService;->mStartIdAssociatedWithDialog:I
 
@@ -163,9 +153,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/bluetooth/DockService;Landroid/bluetooth/BluetoothDevice;I)V
     .locals 0
-    .param p0    # Lcom/android/settings/bluetooth/DockService;
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/settings/bluetooth/DockService;->applyBtSettings(Landroid/bluetooth/BluetoothDevice;I)V
 
@@ -174,8 +161,6 @@
 
 .method private declared-synchronized applyBtSettings(Landroid/bluetooth/BluetoothDevice;I)V
     .locals 13
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
-    .param p2    # I
 
     monitor-enter p0
 
@@ -374,7 +359,6 @@
 
 .method private declared-synchronized connectIfEnabled(Landroid/bluetooth/BluetoothDevice;)V
     .locals 6
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
 
     monitor-enter p0
 
@@ -433,9 +417,6 @@
 
 .method private createDialog(Landroid/bluetooth/BluetoothDevice;II)V
     .locals 18
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
-    .param p2    # I
-    .param p3    # I
 
     move-object/from16 v0, p0
 
@@ -739,7 +720,6 @@
 
 .method private getCachedBluetoothDevice(Landroid/bluetooth/BluetoothDevice;)Lcom/android/settings/bluetooth/CachedBluetoothDevice;
     .locals 4
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
 
     iget-object v1, p0, Lcom/android/settings/bluetooth/DockService;->mDeviceManager:Lcom/android/settings/bluetooth/CachedBluetoothDeviceManager;
 
@@ -779,7 +759,6 @@
 
 .method private handleBluetoothStateOn(I)V
     .locals 9
-    .param p1    # I
 
     const/4 v8, 0x0
 
@@ -907,8 +886,6 @@
 
 .method private handleBtStateChange(Landroid/content/Intent;I)V
     .locals 4
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
 
     const/16 v3, -0x64
 
@@ -1026,9 +1003,6 @@
 
 .method private declared-synchronized handleDocked(Landroid/bluetooth/BluetoothDevice;II)V
     .locals 1
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
-    .param p2    # I
-    .param p3    # I
 
     monitor-enter p0
 
@@ -1078,7 +1052,6 @@
 
 .method private declared-synchronized handleUndocked(Landroid/bluetooth/BluetoothDevice;)V
     .locals 2
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
 
     monitor-enter p0
 
@@ -1137,9 +1110,6 @@
 
 .method private declared-synchronized handleUnexpectedDisconnect(Landroid/bluetooth/BluetoothDevice;Lcom/android/settings/bluetooth/LocalBluetoothProfile;I)V
     .locals 7
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
-    .param p2    # Lcom/android/settings/bluetooth/LocalBluetoothProfile;
-    .param p3    # I
 
     monitor-enter p0
 
@@ -1211,9 +1181,6 @@
 
 .method private initBtSettings(Landroid/bluetooth/BluetoothDevice;IZ)[Ljava/lang/CharSequence;
     .locals 6
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
-    .param p2    # I
-    .param p3    # Z
 
     const v3, 0x7f0902e6
 
@@ -1384,7 +1351,6 @@
 
 .method private msgTypeDisableBluetooth(I)Z
     .locals 4
-    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -1437,9 +1403,6 @@
 
 .method private msgTypeDocked(Landroid/bluetooth/BluetoothDevice;II)Z
     .locals 6
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v2, 0x1
 
@@ -1555,8 +1518,6 @@
 
 .method private msgTypeUndockedPermanent(Landroid/bluetooth/BluetoothDevice;I)Z
     .locals 6
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
-    .param p2    # I
 
     const/4 v2, 0x0
 
@@ -1622,9 +1583,6 @@
 
 .method private msgTypeUndockedTemporary(Landroid/bluetooth/BluetoothDevice;II)V
     .locals 4
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
-    .param p2    # I
-    .param p3    # I
 
     iget-object v1, p0, Lcom/android/settings/bluetooth/DockService;->mServiceHandler:Lcom/android/settings/bluetooth/DockService$ServiceHandler;
 
@@ -1645,7 +1603,6 @@
 
 .method private parseIntent(Landroid/content/Intent;)Landroid/os/Message;
     .locals 6
-    .param p1    # Landroid/content/Intent;
 
     const/4 v3, 0x0
 
@@ -1754,7 +1711,6 @@
 
 .method private declared-synchronized processMessage(Landroid/os/Message;)V
     .locals 7
-    .param p1    # Landroid/os/Message;
 
     monitor-enter p0
 
@@ -1876,7 +1832,6 @@
 # virtual methods
 .method declared-synchronized hasOtherConnectedDevices(Landroid/bluetooth/BluetoothDevice;)Z
     .locals 7
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
 
     const/4 v5, 0x0
 
@@ -1970,7 +1925,6 @@
 
 .method public onBind(Landroid/content/Intent;)Landroid/os/IBinder;
     .locals 1
-    .param p1    # Landroid/content/Intent;
 
     const/4 v0, 0x0
 
@@ -2194,9 +2148,6 @@
 
 .method public onStartCommand(Landroid/content/Intent;II)I
     .locals 9
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v8, 0x6
 

@@ -58,7 +58,6 @@
 # virtual methods
 .method uidMatches(I)Z
     .locals 2
-    .param p1    # I
 
     invoke-static {p1}, Landroid/os/UserHandle;->getAppId(I)I
 

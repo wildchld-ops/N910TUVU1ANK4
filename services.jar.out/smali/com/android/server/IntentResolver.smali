@@ -174,7 +174,6 @@
 
 .method private final addFilter(Landroid/util/ArrayMap;Ljava/lang/String;Landroid/content/IntentFilter;)V
     .locals 6
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -255,12 +254,6 @@
 
 .method private buildResolveList(Landroid/content/Intent;Landroid/util/FastImmutableArraySet;ZZLjava/lang/String;Ljava/lang/String;[Landroid/content/IntentFilter;Ljava/util/List;I)V
     .locals 19
-    .param p1    # Landroid/content/Intent;
-    .param p3    # Z
-    .param p4    # Z
-    .param p5    # Ljava/lang/String;
-    .param p6    # Ljava/lang/String;
-    .param p9    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -668,7 +661,6 @@
 
 .method private static getFastIntentCategories(Landroid/content/Intent;)Landroid/util/FastImmutableArraySet;
     .locals 3
-    .param p0    # Landroid/content/Intent;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -712,7 +704,6 @@
 
 .method private final register_intent_filter(Landroid/content/IntentFilter;Ljava/util/Iterator;Landroid/util/ArrayMap;Ljava/lang/String;)I
     .locals 3
-    .param p4    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TF;",
@@ -761,7 +752,6 @@
 
 .method private final register_mime_types(Landroid/content/IntentFilter;Ljava/lang/String;)I
     .locals 8
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TF;",
@@ -863,8 +853,6 @@
 
 .method private final remove_all_objects(Landroid/util/ArrayMap;Ljava/lang/String;Ljava/lang/Object;)V
     .locals 7
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -966,7 +954,6 @@
 
 .method private final unregister_intent_filter(Landroid/content/IntentFilter;Ljava/util/Iterator;Landroid/util/ArrayMap;Ljava/lang/String;)I
     .locals 3
-    .param p4    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TF;",
@@ -1015,7 +1002,6 @@
 
 .method private final unregister_mime_types(Landroid/content/IntentFilter;Ljava/lang/String;)I
     .locals 8
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TF;",
@@ -1195,11 +1181,6 @@
 
 .method public dump(Ljava/io/PrintWriter;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)Z
     .locals 9
-    .param p1    # Ljava/io/PrintWriter;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Z
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -1400,8 +1381,6 @@
 
 .method protected dumpFilter(Ljava/io/PrintWriter;Ljava/lang/String;Landroid/content/IntentFilter;)V
     .locals 0
-    .param p1    # Ljava/io/PrintWriter;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1420,12 +1399,6 @@
 
 .method dumpMap(Ljava/io/PrintWriter;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/lang/String;Z)Z
     .locals 14
-    .param p1    # Ljava/io/PrintWriter;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p6    # Ljava/lang/String;
-    .param p7    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1656,7 +1629,6 @@
 
 .method protected isFilterStopped(Landroid/content/IntentFilter;I)Z
     .locals 1
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TF;I)Z"
@@ -1688,8 +1660,6 @@
 
 .method protected newResult(Landroid/content/IntentFilter;II)Ljava/lang/Object;
     .locals 0
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TF;II)TR;"
@@ -1701,10 +1671,6 @@
 
 .method public queryIntent(Landroid/content/Intent;Ljava/lang/String;ZI)Ljava/util/List;
     .locals 40
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
-    .param p4    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2377,10 +2343,6 @@
 
 .method public queryIntentFromList(Landroid/content/Intent;Ljava/lang/String;ZLjava/util/ArrayList;I)Ljava/util/List;
     .locals 13
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
-    .param p5    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

@@ -61,7 +61,6 @@
 
 .method private Steps_setEnabled(Z)V
     .locals 2
-    .param p1    # Z
 
     invoke-virtual {p0}, Lcom/android/settings/LockShowInfoSettings;->getActivity()Landroid/app/Activity;
 
@@ -94,7 +93,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/LockShowInfoSettings;)Landroid/preference/CheckBoxPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/LockShowInfoSettings;
 
     iget-object v0, p0, Lcom/android/settings/LockShowInfoSettings;->mSteps:Landroid/preference/CheckBoxPreference;
 
@@ -103,7 +101,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/LockShowInfoSettings;)V
     .locals 0
-    .param p0    # Lcom/android/settings/LockShowInfoSettings;
 
     invoke-direct {p0}, Lcom/android/settings/LockShowInfoSettings;->sendWeatherData()V
 
@@ -112,7 +109,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/LockShowInfoSettings;)V
     .locals 0
-    .param p0    # Lcom/android/settings/LockShowInfoSettings;
 
     invoke-direct {p0}, Lcom/android/settings/LockShowInfoSettings;->showPermissionDialog()V
 
@@ -121,7 +117,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/LockShowInfoSettings;)I
     .locals 1
-    .param p0    # Lcom/android/settings/LockShowInfoSettings;
 
     iget v0, p0, Lcom/android/settings/LockShowInfoSettings;->mViewType:I
 
@@ -130,7 +125,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/LockShowInfoSettings;)Landroid/widget/Switch;
     .locals 1
-    .param p0    # Lcom/android/settings/LockShowInfoSettings;
 
     iget-object v0, p0, Lcom/android/settings/LockShowInfoSettings;->mActionBarSwitch:Landroid/widget/Switch;
 
@@ -139,7 +133,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/LockShowInfoSettings;)Landroid/preference/CheckBoxPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/LockShowInfoSettings;
 
     iget-object v0, p0, Lcom/android/settings/LockShowInfoSettings;->mWeather:Landroid/preference/CheckBoxPreference;
 
@@ -148,8 +141,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/LockShowInfoSettings;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/settings/LockShowInfoSettings;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/settings/LockShowInfoSettings;->saveSharedPreferences(Ljava/lang/String;)V
 
@@ -158,8 +149,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/LockShowInfoSettings;Landroid/preference/Preference;)V
     .locals 0
-    .param p0    # Lcom/android/settings/LockShowInfoSettings;
-    .param p1    # Landroid/preference/Preference;
 
     invoke-direct {p0, p1}, Lcom/android/settings/LockShowInfoSettings;->clickItemWeather(Landroid/preference/Preference;)V
 
@@ -222,7 +211,6 @@
 
 .method private clickItemWeather(Landroid/preference/Preference;)V
     .locals 9
-    .param p1    # Landroid/preference/Preference;
 
     const/4 v5, 0x0
 
@@ -1213,8 +1201,6 @@
 # virtual methods
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 10
-    .param p1    # Landroid/widget/CompoundButton;
-    .param p2    # Z
 
     const/4 v6, 0x0
 
@@ -1561,7 +1547,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 10
-    .param p1    # Landroid/os/Bundle;
 
     const/16 v5, 0x10
 
@@ -2008,8 +1993,6 @@
 
 .method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
     .locals 3
-    .param p1    # Landroid/preference/Preference;
-    .param p2    # Ljava/lang/Object;
 
     iget-object v0, p0, Lcom/android/settings/LockShowInfoSettings;->mClockSize:Landroid/preference/ListPreference;
 
@@ -2039,8 +2022,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 10
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     const v9, 0x104000a
 

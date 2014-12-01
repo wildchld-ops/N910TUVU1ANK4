@@ -10,7 +10,6 @@
 # direct methods
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;)V
     .locals 0
-    .param p1    # Lcom/sec/android/app/camera/Camera;
 
     invoke-direct {p0}, Lcom/sec/android/app/camera/command/MenuCommand;-><init>()V
 

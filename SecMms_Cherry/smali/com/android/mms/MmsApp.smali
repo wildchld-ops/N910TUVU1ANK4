@@ -104,7 +104,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/MmsApp;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/mms/MmsApp;
 
     iget-object v0, p0, Lcom/android/mms/MmsApp;->mCountryIso:Ljava/lang/String;
 
@@ -113,8 +112,6 @@
 
 .method static synthetic access$102(Lcom/android/mms/MmsApp;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/android/mms/MmsApp;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/mms/MmsApp;->mCountryIso:Ljava/lang/String;
 
@@ -502,7 +499,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 3
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/app/Application;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 

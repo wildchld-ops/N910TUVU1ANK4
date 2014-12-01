@@ -99,7 +99,6 @@
 # virtual methods
 .method public deinitializeCAC(Landroid/os/UserHandle;)V
     .locals 5
-    .param p1    # Landroid/os/UserHandle;
 
     const/4 v1, 0x0
 
@@ -202,8 +201,6 @@
 
 .method public getSmartcardPinMgr(Landroid/content/Context;Landroid/os/UserHandle;)Lcom/sec/smartcard/pinservice/SmartCardPinManager;
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/UserHandle;
 
     const/4 v1, 0x0
 
@@ -399,8 +396,6 @@
 
 .method public getSmartcardPinMgr_Sync(Landroid/content/Context;Landroid/os/UserHandle;)Lcom/sec/smartcard/pinservice/SmartCardPinManager;
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/UserHandle;
 
     const/4 v1, 0x0
 

@@ -45,8 +45,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/settings/homesync/RestoreFragment;Landroid/content/Context;ILjava/util/ArrayList;)V
     .locals 2
-    .param p2    # Landroid/content/Context;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -74,7 +72,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/homesync/RestoreFragment$ListItemAdapter;)J
     .locals 2
-    .param p0    # Lcom/android/settings/homesync/RestoreFragment$ListItemAdapter;
 
     iget-wide v0, p0, Lcom/android/settings/homesync/RestoreFragment$ListItemAdapter;->isSelected:J
 
@@ -83,8 +80,6 @@
 
 .method static synthetic access$502(Lcom/android/settings/homesync/RestoreFragment$ListItemAdapter;J)J
     .locals 0
-    .param p0    # Lcom/android/settings/homesync/RestoreFragment$ListItemAdapter;
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/android/settings/homesync/RestoreFragment$ListItemAdapter;->isSelected:J
 
@@ -93,7 +88,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/homesync/RestoreFragment$ListItemAdapter;)Landroid/widget/RadioButton;
     .locals 1
-    .param p0    # Lcom/android/settings/homesync/RestoreFragment$ListItemAdapter;
 
     iget-object v0, p0, Lcom/android/settings/homesync/RestoreFragment$ListItemAdapter;->tmpRadioBtn:Landroid/widget/RadioButton;
 
@@ -102,8 +96,6 @@
 
 .method static synthetic access$602(Lcom/android/settings/homesync/RestoreFragment$ListItemAdapter;Landroid/widget/RadioButton;)Landroid/widget/RadioButton;
     .locals 0
-    .param p0    # Lcom/android/settings/homesync/RestoreFragment$ListItemAdapter;
-    .param p1    # Landroid/widget/RadioButton;
 
     iput-object p1, p0, Lcom/android/settings/homesync/RestoreFragment$ListItemAdapter;->tmpRadioBtn:Landroid/widget/RadioButton;
 
@@ -114,9 +106,6 @@
 # virtual methods
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 10
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     move-object v4, p2
 

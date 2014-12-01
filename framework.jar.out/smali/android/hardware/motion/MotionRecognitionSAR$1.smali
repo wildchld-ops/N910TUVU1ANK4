@@ -21,7 +21,6 @@
 # direct methods
 .method constructor <init>(Landroid/hardware/motion/MotionRecognitionSAR;Landroid/content/Context;)V
     .locals 0
-    .param p2    # Landroid/content/Context;
 
     iput-object p1, p0, Landroid/hardware/motion/MotionRecognitionSAR$1;->this$0:Landroid/hardware/motion/MotionRecognitionSAR;
 
@@ -34,7 +33,6 @@
 # virtual methods
 .method public onChangeSARCondition(I)V
     .locals 5
-    .param p1    # I
 
     const-string v2, "ril.backoffstate"
 

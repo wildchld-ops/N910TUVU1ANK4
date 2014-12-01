@@ -33,7 +33,6 @@
 # virtual methods
 .method public onCoverStateChanged(Lcom/samsung/android/cover/CoverState;)V
     .locals 3
-    .param p1    # Lcom/samsung/android/cover/CoverState;
 
     const/4 v2, 0x1
 

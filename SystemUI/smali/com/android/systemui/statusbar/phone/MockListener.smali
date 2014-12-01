@@ -118,7 +118,6 @@
 
 .method static synthetic access$000(Lcom/android/systemui/statusbar/phone/MockListener;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/phone/MockListener;
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/MockListener;->mPosted:Ljava/util/ArrayList;
 
@@ -127,7 +126,6 @@
 
 .method static synthetic access$100(Lcom/android/systemui/statusbar/phone/MockListener;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/phone/MockListener;
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/MockListener;->mPayloads:Ljava/util/ArrayList;
 
@@ -136,7 +134,6 @@
 
 .method static synthetic access$200(Lcom/android/systemui/statusbar/phone/MockListener;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/phone/MockListener;
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/MockListener;->mRemoved:Ljava/util/ArrayList;
 
@@ -145,7 +142,6 @@
 
 .method public static clearAll(Landroid/content/Context;)V
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     const-string v0, "android.service.notification.cts.SERVICE_CLEAR_ALL"
 
@@ -160,9 +156,6 @@
 
 .method public static clearOne(Landroid/content/Context;Ljava/lang/String;I)V
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const-string v0, "android.service.notification.cts.SERVICE_CLEAR_ONE"
 
@@ -173,8 +166,6 @@
 
 .method public static probeListenerPayloads(Landroid/content/Context;Lcom/android/systemui/statusbar/phone/MockListener$StringListResultCatcher;)V
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/systemui/statusbar/phone/MockListener$StringListResultCatcher;
 
     const-string v0, "android.service.notification.cts.SERVICE_PAYLOADS"
 
@@ -185,8 +176,6 @@
 
 .method public static probeListenerPosted(Landroid/content/Context;Lcom/android/systemui/statusbar/phone/MockListener$StringListResultCatcher;)V
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/systemui/statusbar/phone/MockListener$StringListResultCatcher;
 
     const-string v0, "android.service.notification.cts.SERVICE_POSTED"
 
@@ -197,8 +186,6 @@
 
 .method public static probeListenerRemoved(Landroid/content/Context;Lcom/android/systemui/statusbar/phone/MockListener$StringListResultCatcher;)V
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/systemui/statusbar/phone/MockListener$StringListResultCatcher;
 
     const-string v0, "android.service.notification.cts.SERVICE_REMOVED"
 
@@ -209,8 +196,6 @@
 
 .method public static probeListenerStatus(Landroid/content/Context;Lcom/android/systemui/statusbar/phone/MockListener$IntegerResultCatcher;)V
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/systemui/statusbar/phone/MockListener$IntegerResultCatcher;
 
     const-string v0, "android.service.notification.cts.SERVICE_CHECK"
 
@@ -221,9 +206,6 @@
 
 .method private static requestIntegerResult(Landroid/content/Context;Ljava/lang/String;Lcom/android/systemui/statusbar/phone/MockListener$IntegerResultCatcher;)V
     .locals 8
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/systemui/statusbar/phone/MockListener$IntegerResultCatcher;
 
     const/4 v2, 0x0
 
@@ -250,9 +232,6 @@
 
 .method private static requestStringListResult(Landroid/content/Context;Ljava/lang/String;Lcom/android/systemui/statusbar/phone/MockListener$StringListResultCatcher;)V
     .locals 8
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/systemui/statusbar/phone/MockListener$StringListResultCatcher;
 
     const/4 v2, 0x0
 
@@ -279,7 +258,6 @@
 
 .method public static resetListenerData(Landroid/content/Context;)V
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     const-string v0, "android.service.notification.cts.SERVICE_RESET"
 
@@ -294,10 +272,6 @@
 
 .method private static sendCommand(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;I)V
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     new-instance v0, Landroid/content/Intent;
 
@@ -413,14 +387,12 @@
 
 .method public onNotificationPosted(Landroid/service/notification/StatusBarNotification;)V
     .locals 0
-    .param p1    # Landroid/service/notification/StatusBarNotification;
 
     return-void
 .end method
 
 .method public onNotificationRemoved(Landroid/service/notification/StatusBarNotification;)V
     .locals 3
-    .param p1    # Landroid/service/notification/StatusBarNotification;
 
     const-string v0, "MockListener"
 

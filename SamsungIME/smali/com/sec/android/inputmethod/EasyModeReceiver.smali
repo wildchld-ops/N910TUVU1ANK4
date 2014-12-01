@@ -98,7 +98,6 @@
 
 .method private setMultiModalMode(I)V
     .locals 4
-    .param p1    # I
 
     iget-object v1, p0, Lcom/sec/android/inputmethod/EasyModeReceiver;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -156,8 +155,6 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 11
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     const/4 v10, 0x5
 

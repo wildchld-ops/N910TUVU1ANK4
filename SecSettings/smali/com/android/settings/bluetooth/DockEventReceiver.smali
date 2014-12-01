@@ -32,8 +32,6 @@
 
 .method private static beginStartingService(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/content/Intent;
 
     sget-object v2, Lcom/android/settings/bluetooth/DockEventReceiver;->sStartingServiceSync:Ljava/lang/Object;
 
@@ -96,8 +94,6 @@
 
 .method public static finishStartingService(Landroid/app/Service;I)V
     .locals 3
-    .param p0    # Landroid/app/Service;
-    .param p1    # I
 
     sget-object v1, Lcom/android/settings/bluetooth/DockEventReceiver;->sStartingServiceSync:Ljava/lang/Object;
 

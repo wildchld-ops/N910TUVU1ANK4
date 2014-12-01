@@ -76,7 +76,6 @@
 # virtual methods
 .method public disableCarMode(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Landroid/app/UiModeManager;->mService:Landroid/app/IUiModeManager;
 
@@ -107,7 +106,6 @@
 
 .method public enableCarMode(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Landroid/app/UiModeManager;->mService:Landroid/app/IUiModeManager;
 
@@ -206,7 +204,6 @@
 
 .method public setNightMode(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Landroid/app/UiModeManager;->mService:Landroid/app/IUiModeManager;
 

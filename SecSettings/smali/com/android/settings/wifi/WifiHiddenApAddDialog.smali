@@ -20,8 +20,6 @@
 # direct methods
 .method protected constructor <init>(Landroid/content/Context;Landroid/content/DialogInterface$OnClickListener;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/DialogInterface$OnClickListener;
 
     const v0, 0x7f100046
 
@@ -44,7 +42,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/wifi/WifiHiddenApAddDialog;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiHiddenApAddDialog;
 
     iget-object v0, p0, Lcom/android/settings/wifi/WifiHiddenApAddDialog;->mTempSsid:Ljava/lang/String;
 
@@ -53,8 +50,6 @@
 
 .method static synthetic access$002(Lcom/android/settings/wifi/WifiHiddenApAddDialog;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/WifiHiddenApAddDialog;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/settings/wifi/WifiHiddenApAddDialog;->mTempSsid:Ljava/lang/String;
 
@@ -63,7 +58,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/wifi/WifiHiddenApAddDialog;)Landroid/widget/EditText;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiHiddenApAddDialog;
 
     iget-object v0, p0, Lcom/android/settings/wifi/WifiHiddenApAddDialog;->mSsid:Landroid/widget/EditText;
 
@@ -72,7 +66,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/wifi/WifiHiddenApAddDialog;)Landroid/widget/Toast;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiHiddenApAddDialog;
 
     iget-object v0, p0, Lcom/android/settings/wifi/WifiHiddenApAddDialog;->mToast:Landroid/widget/Toast;
 
@@ -81,8 +74,6 @@
 
 .method static synthetic access$202(Lcom/android/settings/wifi/WifiHiddenApAddDialog;Landroid/widget/Toast;)Landroid/widget/Toast;
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/WifiHiddenApAddDialog;
-    .param p1    # Landroid/widget/Toast;
 
     iput-object p1, p0, Lcom/android/settings/wifi/WifiHiddenApAddDialog;->mToast:Landroid/widget/Toast;
 
@@ -91,7 +82,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/wifi/WifiHiddenApAddDialog;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiHiddenApAddDialog;
 
     iget-object v0, p0, Lcom/android/settings/wifi/WifiHiddenApAddDialog;->mContext:Landroid/content/Context;
 
@@ -100,7 +90,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/wifi/WifiHiddenApAddDialog;)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/WifiHiddenApAddDialog;
 
     invoke-direct {p0}, Lcom/android/settings/wifi/WifiHiddenApAddDialog;->validate()V
 
@@ -173,7 +162,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 6
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v5, 0x1
 

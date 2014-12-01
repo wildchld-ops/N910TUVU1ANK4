@@ -36,7 +36,6 @@
 # virtual methods
 .method public onInit(I)V
     .locals 3
-    .param p1    # I
 
     if-nez p1, :cond_1
 

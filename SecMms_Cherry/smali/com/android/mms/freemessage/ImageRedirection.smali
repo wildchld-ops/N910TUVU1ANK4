@@ -47,8 +47,6 @@
 
 .method public constructor <init>(Landroid/content/Context;JLjava/util/ArrayList;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -74,7 +72,6 @@
 
 .method static synthetic access$000(Ljava/io/File;)V
     .locals 0
-    .param p0    # Ljava/io/File;
 
     invoke-static {p0}, Lcom/android/mms/freemessage/ImageRedirection;->deleteDirectory(Ljava/io/File;)V
 
@@ -83,7 +80,6 @@
 
 .method private static deleteDirectory(Ljava/io/File;)V
     .locals 3
-    .param p0    # Ljava/io/File;
 
     invoke-virtual {p0}, Ljava/io/File;->exists()Z
 
@@ -143,7 +139,6 @@
 
 .method public static encodeHex([B)Ljava/lang/String;
     .locals 4
-    .param p0    # [B
 
     const/16 v3, 0x10
 
@@ -197,7 +192,6 @@
 
 .method public static encryptString(Ljava/lang/String;)Ljava/lang/String;
     .locals 10
-    .param p0    # Ljava/lang/String;
 
     new-instance v4, Ljava/lang/String;
 
@@ -279,7 +273,6 @@
 
 .method public static getEncryptedImsi(Landroid/content/Context;)Ljava/lang/String;
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Lcom/android/mms/freemessage/ImageRedirection;->getImsi(Landroid/content/Context;)Ljava/lang/String;
 
@@ -302,7 +295,6 @@
 
 .method public static getExtension(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     const-string v1, "."
 
@@ -335,7 +327,6 @@
 
 .method public static getImsi(Landroid/content/Context;)Ljava/lang/String;
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     const-string v2, "phone"
 
@@ -362,7 +353,6 @@
 
 .method private getUniqueFile(Ljava/lang/String;)Ljava/io/File;
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     new-instance v2, Ljava/io/File;
 
@@ -455,8 +445,6 @@
 
 .method public static removeRedirectDirectory(Landroid/content/Context;[Ljava/lang/String;)V
     .locals 7
-    .param p0    # Landroid/content/Context;
-    .param p1    # [Ljava/lang/String;
 
     if-eqz p1, :cond_0
 

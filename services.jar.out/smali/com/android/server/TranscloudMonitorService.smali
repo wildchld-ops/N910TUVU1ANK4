@@ -46,8 +46,6 @@
 
 .method constructor <init>(Landroid/content/Context;Landroid/os/Handler;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/Handler;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -82,7 +80,6 @@
 
 .method static synthetic access$000(Lcom/android/server/TranscloudMonitorService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/TranscloudMonitorService;
 
     invoke-direct {p0}, Lcom/android/server/TranscloudMonitorService;->addTranscloudManagerService()Z
 
@@ -93,7 +90,6 @@
 
 .method static synthetic access$100(Lcom/android/server/TranscloudMonitorService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/TranscloudMonitorService;
 
     invoke-direct {p0}, Lcom/android/server/TranscloudMonitorService;->systemReadyTranscloudManagerService()Z
 
@@ -104,7 +100,6 @@
 
 .method static synthetic access$200(Lcom/android/server/TranscloudMonitorService;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/server/TranscloudMonitorService;
 
     iget-object v0, p0, Lcom/android/server/TranscloudMonitorService;->mContext:Landroid/content/Context;
 

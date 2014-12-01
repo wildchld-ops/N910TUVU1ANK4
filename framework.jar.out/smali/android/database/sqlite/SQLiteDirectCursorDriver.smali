@@ -21,10 +21,6 @@
 # direct methods
 .method public constructor <init>(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Ljava/lang/String;Landroid/os/CancellationSignal;)V
     .locals 0
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Landroid/os/CancellationSignal;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -55,15 +51,12 @@
 
 .method public cursorRequeried(Landroid/database/Cursor;)V
     .locals 0
-    .param p1    # Landroid/database/Cursor;
 
     return-void
 .end method
 
 .method public query(Landroid/database/sqlite/SQLiteDatabase$CursorFactory;[Ljava/lang/String;)Landroid/database/Cursor;
     .locals 6
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase$CursorFactory;
-    .param p2    # [Ljava/lang/String;
 
     new-instance v2, Landroid/database/sqlite/SQLiteQuery;
 
@@ -117,7 +110,6 @@
 
 .method public setBindArguments([Ljava/lang/String;)V
     .locals 1
-    .param p1    # [Ljava/lang/String;
 
     iget-object v0, p0, Landroid/database/sqlite/SQLiteDirectCursorDriver;->mQuery:Landroid/database/sqlite/SQLiteQuery;
 

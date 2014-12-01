@@ -33,7 +33,6 @@
 # virtual methods
 .method public onComplete(Z)V
     .locals 4
-    .param p1    # Z
 
     const/16 v3, 0x14
 
@@ -108,8 +107,6 @@
 
 .method public onLoaded(Lcom/touchtype_fluency/util/LanguagePack;Z)V
     .locals 4
-    .param p1    # Lcom/touchtype_fluency/util/LanguagePack;
-    .param p2    # Z
 
     const/16 v3, 0x14
 

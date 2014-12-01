@@ -134,7 +134,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -223,7 +222,6 @@
 
 .method private getResourceString(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     sget-object v0, Lcom/android/settings/search/SettingSearchManager;->mContext:Landroid/content/Context;
 
@@ -240,8 +238,6 @@
 
 .method private getResourceString(Ljava/lang/String;I)Ljava/lang/String;
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
 
@@ -307,8 +303,6 @@
 # virtual methods
 .method public Delete(ILjava/lang/String;)V
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v5, 0x1
 
@@ -663,7 +657,6 @@
 
 .method public getPath(Ljava/lang/String;)Ljava/lang/String;
     .locals 19
-    .param p1    # Ljava/lang/String;
 
     const/4 v10, 0x0
 
@@ -1050,7 +1043,6 @@
 
 .method public getPathAndRegisterMode(Ljava/lang/String;)Lcom/android/settings/search/SearchItem$PathAndRegisterMode;
     .locals 22
-    .param p1    # Ljava/lang/String;
 
     new-instance v16, Lcom/android/settings/search/SearchItem$PathAndRegisterMode;
 
@@ -1483,7 +1475,6 @@
 
 .method public getPreInfo(I)Lcom/android/settings/search/SearchItem;
     .locals 18
-    .param p1    # I
 
     new-instance v7, Lcom/android/settings/search/SearchItem;
 
@@ -1661,7 +1652,6 @@
 
 .method public getPreInfo(Ljava/lang/String;)Lcom/android/settings/search/SearchItem;
     .locals 19
-    .param p1    # Ljava/lang/String;
 
     new-instance v7, Lcom/android/settings/search/SearchItem;
 
@@ -1837,7 +1827,6 @@
 
 .method public getTitleInfoDB(Ljava/lang/String;)Ljava/util/ArrayList;
     .locals 19
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2086,7 +2075,6 @@
 
 .method public refer_settinginfo_db_for_titleinfo(Z)Ljava/util/ArrayList;
     .locals 23
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(Z)",

@@ -14,8 +14,6 @@
 
 .method public static serialize(Lorg/w3c/dom/smil/SMILDocument;Ljava/io/OutputStream;)V
     .locals 5
-    .param p0    # Lorg/w3c/dom/smil/SMILDocument;
-    .param p1    # Ljava/io/OutputStream;
 
     const/4 v1, 0x0
 
@@ -172,8 +170,6 @@
 
 .method private static writeElement(Ljava/io/Writer;Lorg/w3c/dom/Element;)V
     .locals 10
-    .param p0    # Ljava/io/Writer;
-    .param p1    # Lorg/w3c/dom/Element;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

@@ -10,7 +10,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/launcher2/SamsungWidgetProviderInfo;)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/SamsungWidgetProviderInfo;
 
     sget-object v0, Lcom/android/launcher2/BaseItem$Type;->HOME_SAMSUNG_WIDGET:Lcom/android/launcher2/BaseItem$Type;
 

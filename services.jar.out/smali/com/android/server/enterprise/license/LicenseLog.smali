@@ -14,7 +14,6 @@
 
 .method public static deleteLog(Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/android/server/enterprise/license/LicenseLogService;->deleteLog(Ljava/lang/String;)Z
 
@@ -25,7 +24,6 @@
 
 .method public static getLog(Ljava/lang/String;)Landroid/os/Bundle;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/android/server/enterprise/license/LicenseLogService;->getLog(Ljava/lang/String;)Landroid/os/Bundle;
 
@@ -36,8 +34,6 @@
 
 .method public static log(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Landroid/app/enterprise/ContextInfo;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p0, p1}, Lcom/android/server/enterprise/license/LicenseLogService;->log(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)V
 

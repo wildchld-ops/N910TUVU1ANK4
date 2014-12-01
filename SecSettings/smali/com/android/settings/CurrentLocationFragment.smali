@@ -31,7 +31,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/CurrentLocationFragment;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/CurrentLocationFragment;
 
     iget-boolean v0, p0, Lcom/android/settings/CurrentLocationFragment;->mWeatherAgreed:Z
 
@@ -40,8 +39,6 @@
 
 .method static synthetic access$002(Lcom/android/settings/CurrentLocationFragment;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/CurrentLocationFragment;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/CurrentLocationFragment;->mWeatherAgreed:Z
 
@@ -50,7 +47,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/CurrentLocationFragment;)Landroid/widget/Switch;
     .locals 1
-    .param p0    # Lcom/android/settings/CurrentLocationFragment;
 
     iget-object v0, p0, Lcom/android/settings/CurrentLocationFragment;->mSwitchView:Landroid/widget/Switch;
 
@@ -59,7 +55,6 @@
 
 .method public static getUseLocationAgreed(Landroid/content/Context;)I
     .locals 10
-    .param p0    # Landroid/content/Context;
 
     const/4 v5, 0x0
 
@@ -495,8 +490,6 @@
 
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 4
-    .param p1    # Landroid/widget/CompoundButton;
-    .param p2    # Z
 
     iget-object v1, p0, Lcom/android/settings/CurrentLocationFragment;->TAG:Ljava/lang/String;
 
@@ -578,7 +571,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 7
-    .param p1    # Landroid/os/Bundle;
 
     const/16 v5, 0x10
 
@@ -676,9 +668,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 3
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const v1, 0x7f04027b
 
@@ -693,7 +682,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 

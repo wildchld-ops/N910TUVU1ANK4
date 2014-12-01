@@ -26,7 +26,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/settings/wifi/WifiConfigUiForSetupWizardXL;Landroid/view/View;)V
     .locals 0
-    .param p2    # Landroid/view/View;
 
     iput-object p1, p0, Lcom/android/settings/wifi/WifiConfigUiForSetupWizardXL$FocusRunnable;->this$0:Lcom/android/settings/wifi/WifiConfigUiForSetupWizardXL;
 

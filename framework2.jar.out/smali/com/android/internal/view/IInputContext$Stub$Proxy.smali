@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -86,7 +85,6 @@
 
 .method public clearMetaKeyStates(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -130,7 +128,6 @@
 
 .method public commitCompletion(Landroid/view/inputmethod/CompletionInfo;)V
     .locals 5
-    .param p1    # Landroid/view/inputmethod/CompletionInfo;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -193,7 +190,6 @@
 
 .method public commitCorrection(Landroid/view/inputmethod/CorrectionInfo;)V
     .locals 5
-    .param p1    # Landroid/view/inputmethod/CorrectionInfo;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -256,8 +252,6 @@
 
 .method public commitText(Ljava/lang/CharSequence;I)V
     .locals 5
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -322,8 +316,6 @@
 
 .method public deleteSurroundingText(II)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -451,9 +443,6 @@
 
 .method public getCursorCapsMode(IILcom/android/internal/view/IInputContextCallback;)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Lcom/android/internal/view/IInputContextCallback;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -510,10 +499,6 @@
 
 .method public getExtractedText(Landroid/view/inputmethod/ExtractedTextRequest;IILcom/android/internal/view/IInputContextCallback;)V
     .locals 5
-    .param p1    # Landroid/view/inputmethod/ExtractedTextRequest;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Lcom/android/internal/view/IInputContextCallback;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -599,9 +584,6 @@
 
 .method public getSelectedText(IILcom/android/internal/view/IInputContextCallback;)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Lcom/android/internal/view/IInputContextCallback;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -658,10 +640,6 @@
 
 .method public getTextAfterCursor(IIILcom/android/internal/view/IInputContextCallback;)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Lcom/android/internal/view/IInputContextCallback;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -720,10 +698,6 @@
 
 .method public getTextBeforeCursor(IIILcom/android/internal/view/IInputContextCallback;)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Lcom/android/internal/view/IInputContextCallback;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -782,7 +756,6 @@
 
 .method public performContextMenuAction(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -826,7 +799,6 @@
 
 .method public performEditorAction(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -870,8 +842,6 @@
 
 .method public performPrivateCommand(Ljava/lang/String;Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -936,7 +906,6 @@
 
 .method public reportFullscreenMode(Z)V
     .locals 5
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -990,7 +959,6 @@
 
 .method public sendKeyEvent(Landroid/view/KeyEvent;)V
     .locals 5
-    .param p1    # Landroid/view/KeyEvent;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1053,8 +1021,6 @@
 
 .method public setComposingRegion(II)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1100,8 +1066,6 @@
 
 .method public setComposingText(Ljava/lang/CharSequence;I)V
     .locals 5
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1166,8 +1130,6 @@
 
 .method public setSelection(II)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

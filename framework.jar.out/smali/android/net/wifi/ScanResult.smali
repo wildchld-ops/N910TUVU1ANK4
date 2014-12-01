@@ -73,7 +73,6 @@
 
 .method public constructor <init>(Landroid/net/wifi/ScanResult;)V
     .locals 2
-    .param p1    # Landroid/net/wifi/ScanResult;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -125,12 +124,6 @@
 
 .method public constructor <init>(Landroid/net/wifi/WifiSsid;Ljava/lang/String;Ljava/lang/String;IIJ)V
     .locals 2
-    .param p1    # Landroid/net/wifi/WifiSsid;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
-    .param p5    # I
-    .param p6    # J
 
     const/4 v1, -0x1
 
@@ -175,15 +168,6 @@
 
 .method public constructor <init>(Landroid/net/wifi/WifiSsid;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IIJII)V
     .locals 1
-    .param p1    # Landroid/net/wifi/WifiSsid;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
-    .param p6    # I
-    .param p7    # J
-    .param p9    # I
-    .param p10    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -435,8 +419,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v0, p0, Landroid/net/wifi/ScanResult;->wifiSsid:Landroid/net/wifi/WifiSsid;
 

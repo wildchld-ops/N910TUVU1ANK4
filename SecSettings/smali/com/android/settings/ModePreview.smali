@@ -99,7 +99,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/ModePreview;)Landroid/widget/CheckedTextView;
     .locals 1
-    .param p0    # Lcom/android/settings/ModePreview;
 
     iget-object v0, p0, Lcom/android/settings/ModePreview;->mAutomatic:Landroid/widget/CheckedTextView;
 
@@ -108,7 +107,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/ModePreview;)Landroid/widget/ListView;
     .locals 1
-    .param p0    # Lcom/android/settings/ModePreview;
 
     iget-object v0, p0, Lcom/android/settings/ModePreview;->mListView:Landroid/widget/ListView;
 
@@ -117,8 +115,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/ModePreview;Z)V
     .locals 0
-    .param p0    # Lcom/android/settings/ModePreview;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/settings/ModePreview;->setEnabledItems(Z)V
 
@@ -127,7 +123,6 @@
 
 .method private setEnabledItems(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v2, p0, Lcom/android/settings/ModePreview;->mListView:Landroid/widget/ListView;
 
@@ -176,7 +171,6 @@
 # virtual methods
 .method public createGuideDialog(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p0}, Landroid/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -318,7 +312,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 11
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v10, 0x2
 
@@ -553,7 +546,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 2
-    .param p1    # Landroid/view/Menu;
 
     invoke-virtual {p0}, Lcom/android/settings/ModePreview;->getMenuInflater()Landroid/view/MenuInflater;
 
@@ -609,9 +601,6 @@
 
 .method public onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
     .locals 0
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -629,8 +618,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v2, 0x1
 
@@ -684,7 +671,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 4
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v1, 0x1
 
@@ -796,7 +782,6 @@
 
 .method protected onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onSaveInstanceState(Landroid/os/Bundle;)V
 

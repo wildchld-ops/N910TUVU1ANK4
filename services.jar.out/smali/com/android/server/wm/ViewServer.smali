@@ -51,8 +51,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/wm/WindowManagerService;I)V
     .locals 0
-    .param p1    # Lcom/android/server/wm/WindowManagerService;
-    .param p2    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -65,8 +63,6 @@
 
 .method static synthetic access$000(Ljava/net/Socket;Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Ljava/net/Socket;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p0, p1}, Lcom/android/server/wm/ViewServer;->writeValue(Ljava/net/Socket;Ljava/lang/String;)Z
 
@@ -77,7 +73,6 @@
 
 .method static synthetic access$100(Lcom/android/server/wm/ViewServer;)Lcom/android/server/wm/WindowManagerService;
     .locals 1
-    .param p0    # Lcom/android/server/wm/ViewServer;
 
     iget-object v0, p0, Lcom/android/server/wm/ViewServer;->mWindowManager:Lcom/android/server/wm/WindowManagerService;
 
@@ -86,8 +81,6 @@
 
 .method private static writeValue(Ljava/net/Socket;Ljava/lang/String;)Z
     .locals 8
-    .param p0    # Ljava/net/Socket;
-    .param p1    # Ljava/lang/String;
 
     const/4 v5, 0x0
 

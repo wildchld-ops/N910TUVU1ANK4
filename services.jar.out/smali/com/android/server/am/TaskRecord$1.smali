@@ -37,7 +37,6 @@
 # virtual methods
 .method public getThumbnail(I)Landroid/graphics/Bitmap;
     .locals 4
-    .param p1    # I
 
     if-ltz p1, :cond_0
 

@@ -333,7 +333,7 @@
 
     sget-object v1, Lcom/android/phone/BluetoothVoIPService$4;->$SwitchMap$com$android$internal$telephony$Call$State:[I
 
-    invoke-virtual {p0}, Ljava/lang/Enum;->ordinal()I
+    invoke-virtual {p0}, Lcom/android/internal/telephony/Call$State;->ordinal()I
 
     move-result v2
 
@@ -1918,7 +1918,7 @@
     :cond_1
     const-string v1, "power"
 
-    invoke-virtual {p0, v1}, Landroid/content/ContextWrapper;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v1}, Lcom/android/phone/BluetoothVoIPService;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -2057,7 +2057,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-virtual {p0}, Landroid/app/Service;->stopSelf()V
+    invoke-virtual {p0}, Lcom/android/phone/BluetoothVoIPService;->stopSelf()V
 
     :cond_0
     sget-boolean v0, Lcom/android/phone/BluetoothVoIPService;->VDBG:Z

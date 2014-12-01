@@ -36,7 +36,6 @@
 # virtual methods
 .method public onDoubleTap(Landroid/view/MotionEvent;)Z
     .locals 2
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-object v0, p0, Lcom/android/incallui/service/LockScreenDuringCall$2;->this$0:Lcom/android/incallui/service/LockScreenDuringCall;
 
@@ -52,7 +51,6 @@
 
 .method public onDoubleTapEvent(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v0, 0x0
 
@@ -61,7 +59,6 @@
 
 .method public onSingleTapConfirmed(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v0, 0x0
 

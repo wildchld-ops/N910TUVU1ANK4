@@ -67,7 +67,6 @@
 
 .method public constructor <init>(I)V
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -84,7 +83,6 @@
 
 .method public constructor <init>(Landroid/os/Parcel;)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -119,7 +117,6 @@
 # virtual methods
 .method public addUid(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/settings/DataUsageSummary$AppItem;->uids:Landroid/util/SparseBooleanArray;
 
@@ -132,7 +129,6 @@
 
 .method public compareTo(Lcom/android/settings/DataUsageSummary$AppItem;)I
     .locals 4
-    .param p1    # Lcom/android/settings/DataUsageSummary$AppItem;
 
     iget-wide v0, p1, Lcom/android/settings/DataUsageSummary$AppItem;->total:J
 
@@ -147,7 +143,6 @@
 
 .method public bridge synthetic compareTo(Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/android/settings/DataUsageSummary$AppItem;
 
@@ -168,8 +163,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget v0, p0, Lcom/android/settings/DataUsageSummary$AppItem;->key:I
 

@@ -18,7 +18,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -56,8 +55,6 @@
 
 .method private addAdminLUID(II)Z
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     const/4 v1, 0x1
 
@@ -121,7 +118,6 @@
 
 .method private convertAdminIdToLUID(Landroid/content/ContentValues;)V
     .locals 7
-    .param p1    # Landroid/content/ContentValues;
 
     const-string v4, "containerID"
 
@@ -189,8 +185,6 @@
 
 .method private formatContentValues(Landroid/content/ContentValues;Ljava/lang/StringBuilder;)[Ljava/lang/String;
     .locals 15
-    .param p1    # Landroid/content/ContentValues;
-    .param p2    # Ljava/lang/StringBuilder;
 
     const/4 v7, 0x0
 
@@ -348,8 +342,6 @@
 
 .method public static getAdminLUIDWhereIn(II)Ljava/lang/String;
     .locals 2
-    .param p0    # I
-    .param p1    # I
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -378,8 +370,6 @@
 
 .method private static getAdminLUIDWhereInArgs(II)Ljava/lang/String;
     .locals 3
-    .param p0    # I
-    .param p1    # I
 
     const/4 v1, -0x1
 
@@ -454,7 +444,6 @@
 
 .method public static getAdminUidFromLUID(J)I
     .locals 1
-    .param p0    # J
 
     long-to-int v0, p0
 
@@ -463,7 +452,6 @@
 
 .method public static getContainerIdFromLUID(J)I
     .locals 2
-    .param p0    # J
 
     const/16 v0, 0x20
 
@@ -476,7 +464,6 @@
 
 .method private parseContentValues(Landroid/content/ContentValues;)V
     .locals 4
-    .param p1    # Landroid/content/ContentValues;
 
     if-nez p1, :cond_1
 
@@ -547,8 +534,6 @@
 
 .method public static translateToAdminLUID(II)J
     .locals 4
-    .param p0    # I
-    .param p1    # I
 
     if-eqz p0, :cond_0
 
@@ -582,10 +567,6 @@
 # virtual methods
 .method public addAdmin(ILjava/lang/String;ZI)Z
     .locals 5
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
-    .param p4    # I
 
     new-instance v0, Landroid/content/ContentValues;
 
@@ -638,8 +619,6 @@
 
 .method public addContainer(II)Z
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -693,8 +672,6 @@
 
 .method public addMUMContainer(II)Z
     .locals 5
-    .param p1    # I
-    .param p2    # I
 
     new-instance v0, Landroid/content/ContentValues;
 
@@ -741,10 +718,6 @@
 
 .method public addorUpdateAdmin(ILjava/lang/String;ZI)Z
     .locals 7
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
-    .param p4    # I
 
     const/4 v2, 0x1
 
@@ -814,7 +787,6 @@
 
 .method public canRemoveAdmin(I)Z
     .locals 5
-    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -848,8 +820,6 @@
 
 .method public delete(Ljava/lang/String;Landroid/content/ContentValues;)I
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/ContentValues;
 
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -890,9 +860,6 @@
 
 .method public deleteDataByFields(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # [Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -949,9 +916,6 @@
 
 .method public getAdminByField(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     new-instance v0, Landroid/content/ContentValues;
 
@@ -1011,7 +975,6 @@
 
 .method public getAdminLUidListAsUser(I)Ljava/util/ArrayList;
     .locals 4
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -1102,7 +1065,6 @@
 
 .method public getAdminUidListAsUser(I)Ljava/util/ArrayList;
     .locals 4
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -1152,9 +1114,6 @@
 
 .method public getBlob(Ljava/lang/String;Ljava/lang/String;Landroid/content/ContentValues;)[B
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/content/ContentValues;
 
     const/4 v1, 0x0
 
@@ -1182,10 +1141,6 @@
 
 .method public getBlob(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)[B
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     new-instance v0, Landroid/content/ContentValues;
 
@@ -1202,9 +1157,6 @@
 
 .method public getBlobList(Ljava/lang/String;Ljava/lang/String;Landroid/content/ContentValues;)Ljava/util/List;
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/content/ContentValues;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1282,10 +1234,6 @@
 
 .method public getBoolean(IILjava/lang/String;Ljava/lang/String;)Z
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/android/server/enterprise/storage/SettingNotFoundException;
@@ -1346,9 +1294,6 @@
 
 .method public getBoolean(Ljava/lang/String;Ljava/lang/String;Landroid/content/ContentValues;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/content/ContentValues;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/android/server/enterprise/storage/SettingNotFoundException;
@@ -1393,9 +1338,6 @@
 
 .method public getBooleanList(ILjava/lang/String;Ljava/lang/String;)Ljava/util/ArrayList;
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -1420,9 +1362,6 @@
 
 .method public getBooleanList(Ljava/lang/String;Ljava/lang/String;Landroid/content/ContentValues;)Ljava/util/List;
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/content/ContentValues;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1516,10 +1455,6 @@
 
 .method public getBooleanListAsUser(ILjava/lang/String;Ljava/lang/String;I)Ljava/util/ArrayList;
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -1558,7 +1493,6 @@
 
 .method public getComponentNameForUid(I)Landroid/content/ComponentName;
     .locals 4
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -1628,7 +1562,6 @@
 
 .method public getContainerIdList(I)Ljava/util/ArrayList;
     .locals 4
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -1668,7 +1601,6 @@
 
 .method public getContainerOwnerUid(I)I
     .locals 3
-    .param p1    # I
 
     new-instance v0, Landroid/content/ContentValues;
 
@@ -1695,8 +1627,6 @@
 
 .method public getCount(Ljava/lang/String;Landroid/content/ContentValues;)I
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/ContentValues;
 
     const/4 v0, -0x1
 
@@ -1811,10 +1741,6 @@
 
 .method public getCursor(Ljava/lang/String;[Ljava/lang/String;Landroid/content/ContentValues;Ljava/lang/String;)Landroid/database/Cursor;
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # Landroid/content/ContentValues;
-    .param p4    # Ljava/lang/String;
 
     const/4 v5, 0x0
 
@@ -1865,10 +1791,6 @@
 
 .method public getCursorByAdmin(Ljava/lang/String;II[Ljava/lang/String;)Landroid/database/Cursor;
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # [Ljava/lang/String;
 
     new-instance v0, Landroid/content/ContentValues;
 
@@ -1897,12 +1819,6 @@
 
 .method public getCursorByAdminAndField(Ljava/lang/String;IILjava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Landroid/database/Cursor;
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # [Ljava/lang/String;
 
     new-instance v0, Landroid/content/ContentValues;
 
@@ -1936,10 +1852,6 @@
 
 .method public getDataByFields(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;)Ljava/util/ArrayList;
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # [Ljava/lang/String;
-    .param p4    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2007,7 +1919,6 @@
 
 .method public getDatabaseUpgradeValue(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Landroid/content/ContentValues;
 
@@ -2030,8 +1941,6 @@
 
 .method public getGenericValue(ILjava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -2044,9 +1953,6 @@
 
 .method public getGenericValueAsUser(ILjava/lang/String;I)Ljava/lang/String;
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     new-instance v0, Landroid/content/ContentValues;
 
@@ -2085,10 +1991,6 @@
 
 .method public getInt(IILjava/lang/String;Ljava/lang/String;)I
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/android/server/enterprise/storage/SettingNotFoundException;
@@ -2149,9 +2051,6 @@
 
 .method public getInt(Ljava/lang/String;Ljava/lang/String;Landroid/content/ContentValues;)I
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/content/ContentValues;
 
     const/4 v1, -0x1
 
@@ -2183,12 +2082,6 @@
 
 .method public getIntByAdminAndField(Ljava/lang/String;IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Ljava/lang/String;
 
     new-instance v0, Landroid/content/ContentValues;
 
@@ -2217,9 +2110,6 @@
 
 .method public getIntList(ILjava/lang/String;Ljava/lang/String;)Ljava/util/ArrayList;
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -2244,9 +2134,6 @@
 
 .method public getIntList(Ljava/lang/String;Ljava/lang/String;Landroid/content/ContentValues;)Ljava/util/List;
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/content/ContentValues;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2330,10 +2217,6 @@
 
 .method public getIntListAsUser(ILjava/lang/String;Ljava/lang/String;I)Ljava/util/ArrayList;
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -2372,9 +2255,6 @@
 
 .method public getLong(Ljava/lang/String;Ljava/lang/String;Landroid/content/ContentValues;)J
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/content/ContentValues;
 
     const-wide/16 v1, -0x1
 
@@ -2406,9 +2286,6 @@
 
 .method public getLongList(Ljava/lang/String;Ljava/lang/String;Landroid/content/ContentValues;)Ljava/util/List;
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/content/ContentValues;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2492,10 +2369,6 @@
 
 .method public getLongListAsUser(ILjava/lang/String;Ljava/lang/String;I)Ljava/util/ArrayList;
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -2534,7 +2407,6 @@
 
 .method public getMUMContainerOwnerUid(I)I
     .locals 3
-    .param p1    # I
 
     new-instance v0, Landroid/content/ContentValues;
 
@@ -2561,7 +2433,6 @@
 
 .method public getPackageNameForUid(I)Ljava/lang/String;
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/server/enterprise/storage/EdmStorageProviderBase;->getComponentNameForUid(I)Landroid/content/ComponentName;
 
@@ -2584,10 +2455,6 @@
 
 .method public getString(IILjava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     new-instance v0, Landroid/content/ContentValues;
 
@@ -2614,11 +2481,6 @@
 
 .method public getString(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
 
     new-instance v0, Landroid/content/ContentValues;
 
@@ -2645,9 +2507,6 @@
 
 .method public getString(Ljava/lang/String;Ljava/lang/String;Landroid/content/ContentValues;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/content/ContentValues;
 
     const/4 v0, 0x0
 
@@ -2675,12 +2534,6 @@
 
 .method public getStringByAdminAndField(Ljava/lang/String;IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Ljava/lang/String;
 
     new-instance v0, Landroid/content/ContentValues;
 
@@ -2709,10 +2562,6 @@
 
 .method public getStringList(Ljava/lang/String;I[Ljava/lang/String;Ljava/util/HashMap;Ljava/lang/String;)Landroid/database/Cursor;
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # [Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2753,9 +2602,6 @@
 
 .method public getStringList(ILjava/lang/String;Ljava/lang/String;)Ljava/util/List;
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -2780,9 +2626,6 @@
 
 .method public getStringList(Ljava/lang/String;Ljava/lang/String;Landroid/content/ContentValues;)Ljava/util/List;
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/content/ContentValues;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2862,11 +2705,6 @@
 
 .method public getStringListAsUser(Ljava/lang/String;I[Ljava/lang/String;Ljava/util/HashMap;Ljava/lang/String;I)Landroid/database/Cursor;
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # [Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2951,10 +2789,6 @@
 
 .method public getStringListAsUser(ILjava/lang/String;Ljava/lang/String;I)Ljava/util/List;
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -2989,9 +2823,6 @@
 
 .method public getValue(Ljava/lang/String;Ljava/lang/String;Landroid/content/ContentValues;)Landroid/content/ContentValues;
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/content/ContentValues;
 
     const/4 v3, 0x0
 
@@ -3028,10 +2859,6 @@
 
 .method public getValues(IILjava/lang/String;[Ljava/lang/String;)Landroid/content/ContentValues;
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # [Ljava/lang/String;
 
     new-instance v0, Landroid/content/ContentValues;
 
@@ -3080,9 +2907,6 @@
 
 .method public getValues(Ljava/lang/String;[Ljava/lang/String;Landroid/content/ContentValues;)Ljava/util/List;
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # Landroid/content/ContentValues;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3265,9 +3089,6 @@
 
 .method public getValuesList(ILjava/lang/String;[Ljava/lang/String;)Ljava/util/List;
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -3293,9 +3114,6 @@
 
 .method public getValuesList(Ljava/lang/String;[Ljava/lang/String;Landroid/content/ContentValues;)Ljava/util/List;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # Landroid/content/ContentValues;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3322,10 +3140,6 @@
 
 .method public getValuesListAsUser(ILjava/lang/String;[Ljava/lang/String;I)Ljava/util/List;
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # [Ljava/lang/String;
-    .param p4    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -3392,8 +3206,6 @@
 
 .method public insert(Ljava/lang/String;Landroid/content/ContentValues;)J
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/ContentValues;
 
     iget-object v1, p0, Lcom/android/server/enterprise/storage/EdmStorageProviderBase;->mEdmDbHelper:Lcom/android/server/enterprise/storage/EdmStorageHelper;
 
@@ -3412,8 +3224,6 @@
 
 .method public insertConfiguration(Ljava/lang/String;Landroid/content/ContentValues;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/ContentValues;
 
     invoke-direct {p0, p2}, Lcom/android/server/enterprise/storage/EdmStorageProviderBase;->convertAdminIdToLUID(Landroid/content/ContentValues;)V
 
@@ -3424,8 +3234,6 @@
 
 .method public insertValuesNoUpdate(Ljava/lang/String;Landroid/content/ContentValues;)I
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/ContentValues;
 
     invoke-direct {p0, p2}, Lcom/android/server/enterprise/storage/EdmStorageProviderBase;->convertAdminIdToLUID(Landroid/content/ContentValues;)V
 
@@ -3440,9 +3248,6 @@
 
 .method public put(Ljava/lang/String;Landroid/content/ContentValues;Landroid/content/ContentValues;)Z
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/ContentValues;
-    .param p3    # Landroid/content/ContentValues;
 
     const/4 v4, 0x0
 
@@ -3515,11 +3320,6 @@
 
 .method public putBoolean(IILjava/lang/String;Ljava/lang/String;Z)Z
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Z
 
     new-instance v3, Landroid/content/ContentValues;
 
@@ -3575,10 +3375,6 @@
 
 .method public putDataByFields(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;Landroid/content/ContentValues;)Z
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # [Ljava/lang/String;
-    .param p4    # Landroid/content/ContentValues;
 
     const/4 v1, 0x0
 
@@ -3650,9 +3446,6 @@
 
 .method public putGenericValue(ILjava/lang/String;Ljava/lang/String;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -3665,10 +3458,6 @@
 
 .method public putGenericValueAsUser(ILjava/lang/String;Ljava/lang/String;I)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
 
     new-instance v0, Landroid/content/ContentValues;
 
@@ -3713,11 +3502,6 @@
 
 .method public putInt(IILjava/lang/String;Ljava/lang/String;I)Z
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
 
     new-instance v3, Landroid/content/ContentValues;
 
@@ -3763,11 +3547,6 @@
 
 .method public putLong(IILjava/lang/String;Ljava/lang/String;J)Z
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # J
 
     new-instance v3, Landroid/content/ContentValues;
 
@@ -3813,11 +3592,6 @@
 
 .method public putString(IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
 
     new-instance v3, Landroid/content/ContentValues;
 
@@ -3859,10 +3633,6 @@
 
 .method public putValues(IILjava/lang/String;Landroid/content/ContentValues;)Z
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Landroid/content/ContentValues;
 
     new-instance v0, Landroid/content/ContentValues;
 
@@ -3891,8 +3661,6 @@
 
 .method public putValues(Ljava/lang/String;Landroid/content/ContentValues;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/ContentValues;
 
     const/4 v1, 0x1
 
@@ -3926,9 +3694,6 @@
 
 .method public putValues(Ljava/lang/String;Landroid/content/ContentValues;Landroid/content/ContentValues;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/ContentValues;
-    .param p3    # Landroid/content/ContentValues;
 
     const/4 v0, 0x1
 
@@ -3982,12 +3747,6 @@
 
 .method public putValuesForAdminAndField(Ljava/lang/String;IILjava/lang/String;Ljava/lang/String;Landroid/content/ContentValues;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Landroid/content/ContentValues;
 
     new-instance v0, Landroid/content/ContentValues;
 
@@ -4018,8 +3777,6 @@
 
 .method public putValuesNoUpdate(Ljava/lang/String;Landroid/content/ContentValues;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/ContentValues;
 
     invoke-direct {p0, p2}, Lcom/android/server/enterprise/storage/EdmStorageProviderBase;->convertAdminIdToLUID(Landroid/content/ContentValues;)V
 
@@ -4046,7 +3803,6 @@
 
 .method public remove(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -4069,7 +3825,6 @@
 
 .method public removeAdminFromDatabase(I)Z
     .locals 4
-    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -4112,9 +3867,6 @@
 
 .method public removeByAdmin(Ljava/lang/String;II)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     new-instance v0, Landroid/content/ContentValues;
 
@@ -4151,11 +3903,6 @@
 
 .method public removeByAdminAndField(Ljava/lang/String;IILjava/lang/String;Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
 
     new-instance v0, Landroid/content/ContentValues;
 
@@ -4194,8 +3941,6 @@
 
 .method public removeByFields(Ljava/lang/String;ILjava/util/HashMap;)I
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -4220,9 +3965,6 @@
 
 .method public removeByFieldsAsUser(Ljava/lang/String;ILjava/util/HashMap;I)I
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p4    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -4303,8 +4045,6 @@
 
 .method public removeByFilterSmallerThan(Ljava/lang/String;Landroid/content/ContentValues;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/ContentValues;
 
     const/4 v1, 0x1
 
@@ -4351,7 +4091,6 @@
 
 .method public removeContainer(I)Z
     .locals 3
-    .param p1    # I
 
     new-instance v0, Landroid/content/ContentValues;
 
@@ -4386,9 +4125,6 @@
 
 .method public removeGenericValueAsUser(ILjava/lang/String;I)I
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     new-instance v0, Landroid/content/ContentValues;
 
@@ -4425,7 +4161,6 @@
 
 .method public removeMUMContainer(I)Z
     .locals 3
-    .param p1    # I
 
     new-instance v0, Landroid/content/ContentValues;
 
@@ -4460,8 +4195,6 @@
 
 .method public setDatabaseUpgradeValue(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     new-instance v0, Landroid/content/ContentValues;
 
@@ -4490,9 +4223,6 @@
 
 .method public update(Ljava/lang/String;Landroid/content/ContentValues;Landroid/content/ContentValues;)I
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/ContentValues;
-    .param p3    # Landroid/content/ContentValues;
 
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -4533,8 +4263,6 @@
 
 .method public update(Ljava/lang/String;Landroid/content/ContentValues;Ljava/util/HashMap;)I
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/ContentValues;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -4609,8 +4337,6 @@
 
 .method public updateApplicationTable(Landroid/content/ContentValues;Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Landroid/content/ContentValues;
-    .param p2    # Ljava/lang/String;
 
     const-string v2, "EdmStorageProvider"
 
@@ -4666,11 +4392,6 @@
 
 .method public updateBlob(IILjava/lang/String;Ljava/lang/String;[B)Z
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # [B
 
     new-instance v0, Landroid/content/ContentValues;
 
@@ -4703,8 +4424,6 @@
 
 .method public updateMUMContainer(II)Z
     .locals 7
-    .param p1    # I
-    .param p2    # I
 
     new-instance v2, Landroid/content/ContentValues;
 

@@ -111,7 +111,6 @@
 
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const/16 v1, 0x10
 
@@ -166,7 +165,6 @@
 
 .method static synthetic access$000(Landroid/filterpacks/videosrc/CameraSource;)Z
     .locals 1
-    .param p0    # Landroid/filterpacks/videosrc/CameraSource;
 
     iget-boolean v0, p0, Landroid/filterpacks/videosrc/CameraSource;->mLogVerbose:Z
 
@@ -175,8 +173,6 @@
 
 .method static synthetic access$102(Landroid/filterpacks/videosrc/CameraSource;Z)Z
     .locals 0
-    .param p0    # Landroid/filterpacks/videosrc/CameraSource;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/filterpacks/videosrc/CameraSource;->mNewFrameAvailable:Z
 
@@ -203,8 +199,6 @@
 
 .method private findClosestFpsRange(ILandroid/hardware/Camera$Parameters;)[I
     .locals 11
-    .param p1    # I
-    .param p2    # Landroid/hardware/Camera$Parameters;
 
     const-wide v9, 0x408f400000000000L
 
@@ -339,9 +333,6 @@
 
 .method private findClosestSize(IILandroid/hardware/Camera$Parameters;)[I
     .locals 12
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/hardware/Camera$Parameters;
 
     const/4 v11, 0x0
 
@@ -512,7 +503,6 @@
 # virtual methods
 .method public close(Landroid/filterfw/core/FilterContext;)V
     .locals 3
-    .param p1    # Landroid/filterfw/core/FilterContext;
 
     const/4 v2, 0x0
 
@@ -544,8 +534,6 @@
 
 .method public fieldPortValueUpdated(Ljava/lang/String;Landroid/filterfw/core/FilterContext;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/filterfw/core/FilterContext;
 
     const-string v1, "framerate"
 
@@ -701,7 +689,6 @@
 
 .method public open(Landroid/filterfw/core/FilterContext;)V
     .locals 6
-    .param p1    # Landroid/filterfw/core/FilterContext;
 
     iget-boolean v1, p0, Landroid/filterpacks/videosrc/CameraSource;->mLogVerbose:Z
 
@@ -827,7 +814,6 @@
 
 .method public prepare(Landroid/filterfw/core/FilterContext;)V
     .locals 2
-    .param p1    # Landroid/filterfw/core/FilterContext;
 
     iget-boolean v0, p0, Landroid/filterpacks/videosrc/CameraSource;->mLogVerbose:Z
 
@@ -853,7 +839,6 @@
 
 .method public process(Landroid/filterfw/core/FilterContext;)V
     .locals 15
-    .param p1    # Landroid/filterfw/core/FilterContext;
 
     iget-boolean v0, p0, Landroid/filterpacks/videosrc/CameraSource;->mLogVerbose:Z
 
@@ -1123,7 +1108,6 @@
 
 .method public declared-synchronized setCameraParameters(Landroid/hardware/Camera$Parameters;)V
     .locals 2
-    .param p1    # Landroid/hardware/Camera$Parameters;
 
     monitor-enter p0
 
@@ -1181,7 +1165,6 @@
 
 .method public tearDown(Landroid/filterfw/core/FilterContext;)V
     .locals 1
-    .param p1    # Landroid/filterfw/core/FilterContext;
 
     iget-object v0, p0, Landroid/filterpacks/videosrc/CameraSource;->mCameraFrame:Landroid/filterfw/core/GLFrame;
 

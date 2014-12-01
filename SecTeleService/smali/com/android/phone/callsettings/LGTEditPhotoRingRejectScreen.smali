@@ -212,7 +212,7 @@
     const/4 v3, 0x0
 
     :try_start_0
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/LGTEditPhotoRingRejectScreen;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v5
 
@@ -249,7 +249,7 @@
     :catch_0
     move-exception v0
 
-    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
+    invoke-virtual {v0}, Landroid/database/sqlite/SQLiteDiskIOException;->printStackTrace()V
 
     goto :goto_0
 .end method
@@ -259,7 +259,7 @@
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/LGTEditPhotoRingRejectScreen;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -291,13 +291,13 @@
 
     invoke-direct {v2, p0}, Lcom/android/phone/callsettings/LGTEditPhotoRingRejectScreen$9;-><init>(Lcom/android/phone/callsettings/LGTEditPhotoRingRejectScreen;)V
 
-    invoke-virtual {v1, v2}, Landroid/app/Dialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
+    invoke-virtual {v1, v2}, Landroid/app/AlertDialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
     const/4 v2, 0x1
 
-    invoke-virtual {v1, v2}, Landroid/app/Dialog;->setCanceledOnTouchOutside(Z)V
+    invoke-virtual {v1, v2}, Landroid/app/AlertDialog;->setCanceledOnTouchOutside(Z)V
 
-    invoke-virtual {v1}, Landroid/app/Dialog;->show()V
+    invoke-virtual {v1}, Landroid/app/AlertDialog;->show()V
 
     return-void
 .end method
@@ -397,7 +397,7 @@
 
     const/4 v3, 0x0
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/LGTEditPhotoRingRejectScreen;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -486,7 +486,7 @@
 
     move-result-object v0
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/LGTEditPhotoRingRejectScreen;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 
@@ -501,7 +501,7 @@
     .locals 3
     .param p1    # Landroid/view/View;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/LGTEditPhotoRingRejectScreen;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -566,7 +566,7 @@
 
     const v3, 0x7f09038d
 
-    invoke-virtual {p0, v3}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v3}, Lcom/android/phone/callsettings/LGTEditPhotoRingRejectScreen;->getString(I)Ljava/lang/String;
 
     move-result-object v3
 
@@ -584,7 +584,7 @@
 
     iget-object v3, p0, Lcom/android/phone/callsettings/LGTEditPhotoRingRejectScreen;->editBox:Landroid/widget/EditText;
 
-    invoke-virtual {v3}, Landroid/view/View;->getWindowToken()Landroid/os/IBinder;
+    invoke-virtual {v3}, Landroid/widget/EditText;->getWindowToken()Landroid/os/IBinder;
 
     move-result-object v3
 
@@ -608,7 +608,7 @@
 
     const v2, 0x7f0907ee
 
-    invoke-virtual {p0, v2}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v2}, Lcom/android/phone/callsettings/LGTEditPhotoRingRejectScreen;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
@@ -618,7 +618,7 @@
 
     iget-object v3, p0, Lcom/android/phone/callsettings/LGTEditPhotoRingRejectScreen;->editBox:Landroid/widget/EditText;
 
-    invoke-virtual {v3}, Landroid/view/View;->getWindowToken()Landroid/os/IBinder;
+    invoke-virtual {v3}, Landroid/widget/EditText;->getWindowToken()Landroid/os/IBinder;
 
     move-result-object v3
 
@@ -645,7 +645,7 @@
 
     const v2, 0x7f0907ef
 
-    invoke-virtual {p0, v2}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v2}, Lcom/android/phone/callsettings/LGTEditPhotoRingRejectScreen;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
@@ -655,7 +655,7 @@
 
     iget-object v3, p0, Lcom/android/phone/callsettings/LGTEditPhotoRingRejectScreen;->editBox:Landroid/widget/EditText;
 
-    invoke-virtual {v3}, Landroid/view/View;->getWindowToken()Landroid/os/IBinder;
+    invoke-virtual {v3}, Landroid/widget/EditText;->getWindowToken()Landroid/os/IBinder;
 
     move-result-object v3
 
@@ -687,11 +687,11 @@
     invoke-direct {p0, v2, v3, v4}, Lcom/android/phone/callsettings/LGTEditPhotoRingRejectScreen;->updatePhotoRingRejectNumber(Ljava/lang/String;Ljava/lang/Integer;I)V
 
     :goto_1
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/LGTEditPhotoRingRejectScreen;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/LGTEditPhotoRingRejectScreen;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -770,7 +770,7 @@
 
     const/16 v8, 0x64
 
-    invoke-super {p0, p1, p2, p3}, Landroid/preference/PreferenceFragment;->onActivityResult(IILandroid/content/Intent;)V
+    invoke-super {p0, p1, p2, p3}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onActivityResult(IILandroid/content/Intent;)V
 
     const-string v7, ""
 
@@ -875,14 +875,14 @@
     :cond_3
     iget-object v0, p0, Lcom/android/phone/callsettings/LGTEditPhotoRingRejectScreen;->editBox:Landroid/widget/EditText;
 
-    invoke-virtual {v0, v7}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {v0, v7}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
     goto :goto_0
 
     :pswitch_1
     if-ne p2, v0, :cond_8
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/LGTEditPhotoRingRejectScreen;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -949,7 +949,7 @@
     :cond_7
     iget-object v0, p0, Lcom/android/phone/callsettings/LGTEditPhotoRingRejectScreen;->editBox:Landroid/widget/EditText;
 
-    invoke-virtual {v0, v7}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {v0, v7}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
     goto :goto_2
 
@@ -981,13 +981,13 @@
 
     invoke-static {v0, v1}, Lcom/android/phone/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/LGTEditPhotoRingRejectScreen;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v0
 
     invoke-virtual {v0}, Landroid/app/FragmentManager;->invalidateOptionsMenu()V
 
-    invoke-super {p0, p1}, Landroid/app/Fragment;->onConfigurationChanged(Landroid/content/res/Configuration;)V
+    invoke-super {p0, p1}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
     const-string v0, "hardkeyboardhidden_no"
 
@@ -1015,11 +1015,11 @@
 
     invoke-super {p0, p1}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
-    invoke-virtual {p0}, Landroid/preference/PreferenceFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/LGTEditPhotoRingRejectScreen;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v3
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getActionBar()Landroid/app/ActionBar;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/LGTEditPhotoRingRejectScreen;->getActionBar()Landroid/app/ActionBar;
 
     move-result-object v0
 
@@ -1030,7 +1030,7 @@
     invoke-virtual {v0, v5}, Landroid/app/ActionBar;->setDisplayHomeAsUpEnabled(Z)V
 
     :cond_0
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/LGTEditPhotoRingRejectScreen;->getActivity()Landroid/app/Activity;
 
     move-result-object v5
 
@@ -1074,7 +1074,7 @@
 
     invoke-direct {v5, p0}, Lcom/android/phone/callsettings/LGTEditPhotoRingRejectScreen$1;-><init>(Lcom/android/phone/callsettings/LGTEditPhotoRingRejectScreen;)V
 
-    invoke-virtual {v1, v5}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v1, v5}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     const v5, 0x7f0a008d
 
@@ -1086,13 +1086,13 @@
 
     const v5, 0x7f090151
 
-    invoke-virtual {v4, v5}, Landroid/widget/TextView;->setText(I)V
+    invoke-virtual {v4, v5}, Landroid/widget/Button;->setText(I)V
 
     new-instance v5, Lcom/android/phone/callsettings/LGTEditPhotoRingRejectScreen$2;
 
     invoke-direct {v5, p0}, Lcom/android/phone/callsettings/LGTEditPhotoRingRejectScreen$2;-><init>(Lcom/android/phone/callsettings/LGTEditPhotoRingRejectScreen;)V
 
-    invoke-virtual {v4, v5}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v4, v5}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     :cond_1
     return-void
@@ -1217,7 +1217,7 @@
 
     invoke-interface {v3, v1}, Landroid/view/MenuItem;->setVisible(Z)Landroid/view/MenuItem;
 
-    invoke-super {p0, p1, p2}, Landroid/app/Fragment;->onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
+    invoke-super {p0, p1, p2}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
 
     return-void
 
@@ -1256,11 +1256,11 @@
 
     move-result-object v2
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/LGTEditPhotoRingRejectScreen;->getActivity()Landroid/app/Activity;
 
     const-string v3, "input_method"
 
-    invoke-virtual {p0, v3}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v3}, Lcom/android/phone/callsettings/LGTEditPhotoRingRejectScreen;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v3
 
@@ -1294,7 +1294,7 @@
     :cond_0
     iget-object v3, p0, Lcom/android/phone/callsettings/LGTEditPhotoRingRejectScreen;->editBox:Landroid/widget/EditText;
 
-    invoke-virtual {v3}, Landroid/view/View;->requestFocus()Z
+    invoke-virtual {v3}, Landroid/widget/EditText;->requestFocus()Z
 
     iget-object v3, p0, Lcom/android/phone/callsettings/LGTEditPhotoRingRejectScreen;->editBox:Landroid/widget/EditText;
 
@@ -1302,7 +1302,7 @@
 
     invoke-direct {v4, p0}, Lcom/android/phone/callsettings/LGTEditPhotoRingRejectScreen$3;-><init>(Lcom/android/phone/callsettings/LGTEditPhotoRingRejectScreen;)V
 
-    invoke-virtual {v3, v4}, Landroid/view/View;->setOnFocusChangeListener(Landroid/view/View$OnFocusChangeListener;)V
+    invoke-virtual {v3, v4}, Landroid/widget/EditText;->setOnFocusChangeListener(Landroid/view/View$OnFocusChangeListener;)V
 
     iget-object v3, p0, Lcom/android/phone/callsettings/LGTEditPhotoRingRejectScreen;->handler:Landroid/os/Handler;
 
@@ -1330,9 +1330,9 @@
 
     invoke-direct {v4, p0}, Lcom/android/phone/callsettings/LGTEditPhotoRingRejectScreen$5;-><init>(Lcom/android/phone/callsettings/LGTEditPhotoRingRejectScreen;)V
 
-    invoke-virtual {v3, v4}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v3, v4}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getArguments()Landroid/os/Bundle;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/LGTEditPhotoRingRejectScreen;->getArguments()Landroid/os/Bundle;
 
     move-result-object v0
 
@@ -1392,11 +1392,11 @@
 
     iget-object v4, p0, Lcom/android/phone/callsettings/LGTEditPhotoRingRejectScreen;->select_NUM:Ljava/lang/String;
 
-    invoke-virtual {v3, v4}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {v3, v4}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
     iget-object v3, p0, Lcom/android/phone/callsettings/LGTEditPhotoRingRejectScreen;->editBox:Landroid/widget/EditText;
 
-    invoke-virtual {v3}, Landroid/widget/TextView;->length()I
+    invoke-virtual {v3}, Landroid/widget/EditText;->length()I
 
     move-result v1
 
@@ -1417,7 +1417,7 @@
 .method public onDestroy()V
     .locals 2
 
-    invoke-super {p0}, Landroid/preference/PreferenceFragment;->onDestroy()V
+    invoke-super {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onDestroy()V
 
     const-string v0, "EditAutoRejectScreen"
 
@@ -1435,7 +1435,7 @@
 
     iget-object v1, p0, Lcom/android/phone/callsettings/LGTEditPhotoRingRejectScreen;->editBox:Landroid/widget/EditText;
 
-    invoke-virtual {v1}, Landroid/view/View;->getWindowToken()Landroid/os/IBinder;
+    invoke-virtual {v1}, Landroid/widget/EditText;->getWindowToken()Landroid/os/IBinder;
 
     move-result-object v1
 
@@ -1443,7 +1443,7 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/view/inputmethod/InputMethodManager;->hideSoftInputFromWindow(Landroid/os/IBinder;I)Z
 
-    invoke-super {p0}, Landroid/preference/PreferenceFragment;->onDestroyView()V
+    invoke-super {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onDestroyView()V
 
     const-string v0, "EditAutoRejectScreen"
 
@@ -1503,7 +1503,7 @@
 
     iget-object v1, p0, Lcom/android/phone/callsettings/LGTEditPhotoRingRejectScreen;->editBox:Landroid/widget/EditText;
 
-    invoke-virtual {v1}, Landroid/view/View;->getWindowToken()Landroid/os/IBinder;
+    invoke-virtual {v1}, Landroid/widget/EditText;->getWindowToken()Landroid/os/IBinder;
 
     move-result-object v1
 
@@ -1534,7 +1534,7 @@
 
     move-result v1
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/LGTEditPhotoRingRejectScreen;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v2
 
@@ -1580,7 +1580,7 @@
     invoke-interface {v2, v3}, Landroid/view/MenuItem;->setVisible(Z)Landroid/view/MenuItem;
 
     :goto_1
-    invoke-super {p0, p1}, Landroid/app/Fragment;->onPrepareOptionsMenu(Landroid/view/Menu;)V
+    invoke-super {p0, p1}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onPrepareOptionsMenu(Landroid/view/Menu;)V
 
     return-void
 
@@ -1643,7 +1643,7 @@
 
     invoke-static {v1, v2}, Lcom/android/phone/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/LGTEditPhotoRingRejectScreen;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v1
 
@@ -1659,7 +1659,7 @@
 
     iget-object v1, p0, Lcom/android/phone/callsettings/LGTEditPhotoRingRejectScreen;->editBox:Landroid/widget/EditText;
 
-    invoke-virtual {v1}, Landroid/view/View;->isFocused()Z
+    invoke-virtual {v1}, Landroid/widget/EditText;->isFocused()Z
 
     move-result v1
 
@@ -1692,13 +1692,13 @@
 
     if-eqz v1, :cond_2
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/LGTEditPhotoRingRejectScreen;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
     const v2, 0x7f0902dd
 
-    invoke-virtual {p0, v2}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v2}, Lcom/android/phone/callsettings/LGTEditPhotoRingRejectScreen;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1711,11 +1711,11 @@
     :cond_2
     const v1, 0x7f090789
 
-    invoke-virtual {p0, v1}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v1}, Lcom/android/phone/callsettings/LGTEditPhotoRingRejectScreen;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/LGTEditPhotoRingRejectScreen;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 

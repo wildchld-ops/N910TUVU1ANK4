@@ -706,7 +706,6 @@
 
 .method private TorchModeFlashSet(I)V
     .locals 8
-    .param p1    # I
 
     const/4 v7, 0x0
 
@@ -885,9 +884,6 @@
 
 .method static synthetic access$1000(Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;->sysfsWrite(Ljava/lang/String;Ljava/lang/String;)Z
 
@@ -898,7 +894,6 @@
 
 .method static synthetic access$1500(Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;)Z
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;
 
     iget-boolean v0, p0, Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;->mIsVisibleSPenGestureView:Z
 
@@ -907,8 +902,6 @@
 
 .method static synthetic access$1502(Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;Z)Z
     .locals 0
-    .param p0    # Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;->mIsVisibleSPenGestureView:Z
 
@@ -917,7 +910,6 @@
 
 .method static synthetic access$1600(Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;->EnableLinuxCOMMONAPI4:Ljava/lang/String;
 
@@ -926,7 +918,6 @@
 
 .method static synthetic access$1700(Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;)I
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;
 
     iget v0, p0, Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;->mUvsOrientation:I
 
@@ -935,8 +926,6 @@
 
 .method static synthetic access$1800(Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;I)V
     .locals 0
-    .param p0    # Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;->setUvsOrieatation(I)V
 
@@ -945,8 +934,6 @@
 
 .method static synthetic access$2200(Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;I)V
     .locals 0
-    .param p0    # Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;->TorchModeFlashSet(I)V
 
@@ -955,7 +942,6 @@
 
 .method static synthetic access$300(Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;)V
     .locals 0
-    .param p0    # Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;
 
     invoke-direct {p0}, Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;->updateAvailableVoiceCommand()V
 
@@ -964,8 +950,6 @@
 
 .method static synthetic access$402(Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;Z)Z
     .locals 0
-    .param p0    # Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;->mIsRingingOrOffhook:Z
 
@@ -974,7 +958,6 @@
 
 .method static synthetic access$600(Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;)Z
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;
 
     invoke-direct {p0}, Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;->isScreenCaptureEnabled()Z
 
@@ -985,8 +968,6 @@
 
 .method static synthetic access$700(Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;I)V
     .locals 0
-    .param p0    # Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;->takeScreenshot(I)V
 
@@ -995,7 +976,6 @@
 
 .method static synthetic access$800(Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;)Z
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;
 
     invoke-direct {p0}, Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;->isOneTouchReportEnabled()Z
 
@@ -1006,8 +986,6 @@
 
 .method static synthetic access$900(Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;I)V
     .locals 0
-    .param p0    # Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;->updateWacomOffset(I)V
 
@@ -1016,7 +994,6 @@
 
 .method private addPowerKeyClickAction(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;->mPowerKeyTripleClickConcept:Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager$PowerKeyTripleClickConcept;
 
@@ -1569,7 +1546,6 @@
 
 .method private isComponentAvailable(Landroid/content/ComponentName;)Z
     .locals 4
-    .param p1    # Landroid/content/ComponentName;
 
     const/4 v2, 0x0
 
@@ -1794,7 +1770,6 @@
 
 .method private isPackageAvailable(Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -1916,7 +1891,6 @@
 
 .method private playSound(Ljava/lang/String;)V
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     const/4 v7, 0x1
 
@@ -2073,7 +2047,6 @@
 
 .method private playSoundEffectForFolder(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -2135,7 +2108,6 @@
 
 .method private setUvsOrieatation(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;->mUvsOrientation:I
 
@@ -2172,7 +2144,6 @@
 
 .method private startSGA(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     iget-object v3, p0, Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;->mContext:Landroid/content/Context;
 
@@ -2232,8 +2203,6 @@
 
 .method private sysfsWrite(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -2309,7 +2278,6 @@
 
 .method private takeScreenshot(I)V
     .locals 8
-    .param p1    # I
 
     iget-object v5, p0, Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;->mScreenshotLock:Ljava/lang/Object;
 
@@ -2500,7 +2468,6 @@
 
 .method private updateWacomOffset(I)V
     .locals 5
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -2742,7 +2709,6 @@
 
 .method public downloadForSGA(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     sget-boolean v2, Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;->SAFE_DEBUG:Z
 
@@ -2860,9 +2826,6 @@
 
 .method public dump(Ljava/lang/String;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     invoke-virtual {p2, p1}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
@@ -3599,8 +3562,6 @@
 
 .method public getTimeoutTimeOfKeyCombination(Landroid/view/KeyEvent;J)J
     .locals 7
-    .param p1    # Landroid/view/KeyEvent;
-    .param p2    # J
 
     const-wide/16 v5, 0x96
 
@@ -3930,9 +3891,6 @@
 
 .method public handleQuickAccess(IFF)V
     .locals 7
-    .param p1    # I
-    .param p2    # F
-    .param p3    # F
 
     const/4 v6, 0x1
 
@@ -4033,7 +3991,6 @@
 
 .method public handleQuickshotEvent(I)Z
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;->mQuickshotConcept:Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager$QuickshotConcept;
 
@@ -4047,9 +4004,6 @@
 
 .method public handleSamsungVolumeControl(IZZ)V
     .locals 2
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # Z
 
     const/4 v1, 0x0
 
@@ -4093,10 +4047,6 @@
 
 .method public init(Landroid/content/Context;Lcom/android/internal/policy/impl/PhoneWindowManager;Landroid/view/IWindowManager;Landroid/view/WindowManagerPolicy$WindowManagerFuncs;)V
     .locals 10
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/internal/policy/impl/PhoneWindowManager;
-    .param p3    # Landroid/view/IWindowManager;
-    .param p4    # Landroid/view/WindowManagerPolicy$WindowManagerFuncs;
 
     const/4 v4, 0x0
 
@@ -4607,7 +4557,6 @@
 
 .method public interceptKeyBeforeDispatching(Landroid/view/KeyEvent;)Z
     .locals 27
-    .param p1    # Landroid/view/KeyEvent;
 
     move-object/from16 v0, p0
 
@@ -5983,9 +5932,6 @@
 
 .method public interceptKeyCombinationBeforeQueueing(Landroid/view/KeyEvent;IZ)V
     .locals 7
-    .param p1    # Landroid/view/KeyEvent;
-    .param p2    # I
-    .param p3    # Z
 
     const/4 v3, 0x1
 
@@ -7130,7 +7076,6 @@
 
 .method public isBlockedKeyBySideSync(Landroid/view/KeyEvent;)Z
     .locals 6
-    .param p1    # Landroid/view/KeyEvent;
 
     const/4 v3, 0x1
 
@@ -7387,7 +7332,6 @@
 
 .method public isConsumedKeyCombination(Landroid/view/KeyEvent;)Z
     .locals 9
-    .param p1    # Landroid/view/KeyEvent;
 
     const/4 v8, 0x3
 
@@ -7766,7 +7710,6 @@
 
 .method public isEndCallKeyRequested(Landroid/content/Context;)Z
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -7821,7 +7764,6 @@
 
 .method public isGoHomeOnEndCallKey(Landroid/content/Context;)Z
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -7906,7 +7848,6 @@
 
 .method public isMetaKeyEventRequested(Landroid/content/ComponentName;)Z
     .locals 1
-    .param p1    # Landroid/content/ComponentName;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;->mHoldKeyConcept:Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager$HoldKeyConcept;
 
@@ -7935,7 +7876,6 @@
 
 .method public isSystemKeyEventRequested(I)Z
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;->mHoldKeyConcept:Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager$HoldKeyConcept;
 
@@ -7948,8 +7888,6 @@
 
 .method public isSystemKeyEventRequested(ILandroid/content/ComponentName;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;->mHoldKeyConcept:Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager$HoldKeyConcept;
 
@@ -8400,7 +8338,6 @@
 
 .method public launchingGamekey(Z)Z
     .locals 9
-    .param p1    # Z
 
     const/4 v5, 0x0
 
@@ -8582,8 +8519,6 @@
 
 .method public notifyCoverSwitchChanged(JZ)V
     .locals 3
-    .param p1    # J
-    .param p3    # Z
 
     iget-boolean v1, p0, Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;->mCoverNoteEnabled:Z
 
@@ -8637,8 +8572,6 @@
 
 .method public notifyGloveSwitchChanged(JZ)V
     .locals 4
-    .param p1    # J
-    .param p3    # Z
 
     if-eqz p3, :cond_0
 
@@ -8712,8 +8645,6 @@
 
 .method public notifyLidSwitchChanged(JZ)V
     .locals 5
-    .param p1    # J
-    .param p3    # Z
 
     iget-object v2, p0, Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;->mFlipFolderOpenedIntent:Landroid/content/Intent;
 
@@ -8831,8 +8762,6 @@
 
 .method public notifyPenSwitchChanged(JZ)V
     .locals 12
-    .param p1    # J
-    .param p3    # Z
 
     if-eqz p3, :cond_1
 
@@ -9279,7 +9208,6 @@
 
 .method public onScreenTurnedOff(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;->mContext:Landroid/content/Context;
 
@@ -9303,7 +9231,6 @@
 
 .method public onScreenTurningOn(Landroid/view/WindowManagerPolicy$ScreenOnListener;)V
     .locals 2
-    .param p1    # Landroid/view/WindowManagerPolicy$ScreenOnListener;
 
     const/4 v1, 0x0
 
@@ -9336,7 +9263,6 @@
 
 .method public onSystemReady(Lcom/android/internal/policy/impl/keyguard/KeyguardServiceDelegate;)V
     .locals 0
-    .param p1    # Lcom/android/internal/policy/impl/keyguard/KeyguardServiceDelegate;
 
     iput-object p1, p0, Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;->mKeyguardDelegate:Lcom/android/internal/policy/impl/keyguard/KeyguardServiceDelegate;
 
@@ -9491,9 +9417,6 @@
 
 .method public performHapticFeedbackLw(Landroid/view/WindowManagerPolicy$WindowState;IZ)Z
     .locals 12
-    .param p1    # Landroid/view/WindowManagerPolicy$WindowState;
-    .param p2    # I
-    .param p3    # Z
 
     iget-object v8, p0, Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;->mVibrator:Landroid/os/SystemVibrator;
 
@@ -10004,7 +9927,6 @@
 
 .method public performSystemKeyFeedback(Landroid/view/KeyEvent;)V
     .locals 5
-    .param p1    # Landroid/view/KeyEvent;
 
     const/4 v4, 0x0
 
@@ -10153,9 +10075,6 @@
 
 .method public processTorchlight(IZZ)V
     .locals 4
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # Z
 
     iget-boolean v0, p0, Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;->mTorchlightEnabled:Z
 
@@ -10222,8 +10141,6 @@
 
 .method public requestMetaKeyEvent(Landroid/content/ComponentName;Z)V
     .locals 1
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Z
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;->mHoldKeyConcept:Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager$HoldKeyConcept;
 
@@ -10234,9 +10151,6 @@
 
 .method public requestSystemKeyEvent(ILandroid/content/ComponentName;Z)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # Z
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;->mHoldKeyConcept:Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager$HoldKeyConcept;
 
@@ -10275,7 +10189,6 @@
 
 .method public sendSystemKeyToSideSync(Landroid/view/KeyEvent;)Z
     .locals 4
-    .param p1    # Landroid/view/KeyEvent;
 
     invoke-virtual {p1}, Landroid/view/KeyEvent;->getDisplayId()I
 
@@ -10418,7 +10331,6 @@
 
 .method public setFocusedWindow(Landroid/view/WindowManagerPolicy$WindowState;)V
     .locals 3
-    .param p1    # Landroid/view/WindowManagerPolicy$WindowState;
 
     if-eqz p1, :cond_0
 
@@ -10482,8 +10394,6 @@
 
 .method public setOpenByNotification(ZZ)V
     .locals 1
-    .param p1    # Z
-    .param p2    # Z
 
     if-eqz p1, :cond_0
 
@@ -10504,7 +10414,6 @@
 
 .method public setRotationLw(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "SamsungWindowManager"
 
@@ -10785,8 +10694,6 @@
 
 .method public updateEasyOneHandState(ZZ)V
     .locals 7
-    .param p1    # Z
-    .param p2    # Z
 
     iget-object v4, p0, Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;->mPWM:Lcom/android/internal/policy/impl/PhoneWindowManager;
 
@@ -11862,7 +11769,6 @@
 
 .method public updateSideKeyPanelState(Z)V
     .locals 6
-    .param p1    # Z
 
     iget-object v4, p0, Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;->mPWM:Lcom/android/internal/policy/impl/PhoneWindowManager;
 
@@ -11938,7 +11844,6 @@
 
 .method public updateTopActivity(Landroid/content/ComponentName;)V
     .locals 1
-    .param p1    # Landroid/content/ComponentName;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;->mHoldKeyConcept:Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager$HoldKeyConcept;
 

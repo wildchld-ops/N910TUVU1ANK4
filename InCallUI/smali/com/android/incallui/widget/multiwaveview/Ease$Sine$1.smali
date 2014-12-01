@@ -30,7 +30,6 @@
 # virtual methods
 .method public getInterpolation(F)F
     .locals 6
-    .param p1    # F
 
     const/high16 v5, 0x3f800000
 

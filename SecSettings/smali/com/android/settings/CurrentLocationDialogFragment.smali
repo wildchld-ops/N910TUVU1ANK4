@@ -37,8 +37,6 @@
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 1
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     packed-switch p2, :pswitch_data_0
 
@@ -69,7 +67,6 @@
 
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
@@ -110,7 +107,6 @@
 
 .method public setDialogFragmentListener(Lcom/android/settings/CurrentLocationDialogFragment$DialogFragmentListener;)V
     .locals 0
-    .param p1    # Lcom/android/settings/CurrentLocationDialogFragment$DialogFragmentListener;
 
     iput-object p1, p0, Lcom/android/settings/CurrentLocationDialogFragment;->listener:Lcom/android/settings/CurrentLocationDialogFragment$DialogFragmentListener;
 

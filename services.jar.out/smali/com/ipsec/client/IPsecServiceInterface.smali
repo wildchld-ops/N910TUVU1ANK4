@@ -22,8 +22,6 @@
 
 .method static connectService(Landroid/content/Context;Landroid/content/ServiceConnection;)Z
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/content/ServiceConnection;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -74,7 +72,6 @@
 
 .method static getInterface(Landroid/os/IBinder;)Lcom/ipsec/client/IIPsecService;
     .locals 1
-    .param p0    # Landroid/os/IBinder;
 
     invoke-static {p0}, Lcom/ipsec/client/IIPsecService$Stub;->asInterface(Landroid/os/IBinder;)Lcom/ipsec/client/IIPsecService;
 

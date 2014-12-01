@@ -31,8 +31,6 @@
 
 .method private persistComponentNamesToSettingLocked(Ljava/lang/String;Ljava/util/Set;I)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -109,10 +107,6 @@
 # virtual methods
 .method public onHandleForceStop(Landroid/content/Intent;[Ljava/lang/String;IZ)Z
     .locals 12
-    .param p1    # Landroid/content/Intent;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Z
 
     iget-object v9, p0, Lcom/android/server/print/PrintManagerService$3;->this$0:Lcom/android/server/print/PrintManagerService;
 
@@ -223,8 +217,6 @@
 
 .method public onPackageAdded(Ljava/lang/String;I)V
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     new-instance v4, Landroid/content/Intent;
 
@@ -321,9 +313,6 @@
 
 .method public onPackageChanged(Ljava/lang/String;I[Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # [Ljava/lang/String;
 
     iget-object v3, p0, Lcom/android/server/print/PrintManagerService$3;->this$0:Lcom/android/server/print/PrintManagerService;
 
@@ -405,8 +394,6 @@
 
 .method public onPackageRemoved(Ljava/lang/String;I)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     iget-object v3, p0, Lcom/android/server/print/PrintManagerService$3;->this$0:Lcom/android/server/print/PrintManagerService;
 

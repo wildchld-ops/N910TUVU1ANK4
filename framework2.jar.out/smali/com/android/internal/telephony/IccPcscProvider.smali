@@ -110,7 +110,6 @@
 
 .method private static bytesToHexString([B)Ljava/lang/String;
     .locals 4
-    .param p0    # [B
 
     if-nez p0, :cond_0
 
@@ -312,7 +311,6 @@
 
 .method private disconnectFromRIL(I)I
     .locals 10
-    .param p1    # I
 
     const/4 v6, -0x1
 
@@ -650,9 +648,6 @@
 
 .method private transmitToRIL(I[B[B)I
     .locals 10
-    .param p1    # I
-    .param p2    # [B
-    .param p3    # [B
 
     const/4 v6, -0x1
 
@@ -812,7 +807,6 @@
 
 .method public disconnect(I)I
     .locals 2
-    .param p1    # I
 
     const-string v0, "RIL_IccPcscProvider"
 
@@ -837,7 +831,6 @@
 
 .method public getATR([B)I
     .locals 3
-    .param p1    # [B
 
     const/4 v2, 0x0
 
@@ -873,9 +866,6 @@
 
 .method public transmit(I[B[B)I
     .locals 1
-    .param p1    # I
-    .param p2    # [B
-    .param p3    # [B
 
     if-nez p2, :cond_0
 

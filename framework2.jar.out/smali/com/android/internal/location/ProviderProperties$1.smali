@@ -40,7 +40,6 @@
 # virtual methods
 .method public createFromParcel(Landroid/os/Parcel;)Lcom/android/internal/location/ProviderProperties;
     .locals 12
-    .param p1    # Landroid/os/Parcel;
 
     const/4 v10, 0x0
 
@@ -161,7 +160,6 @@
 
 .method public bridge synthetic createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     invoke-virtual {p0, p1}, Lcom/android/internal/location/ProviderProperties$1;->createFromParcel(Landroid/os/Parcel;)Lcom/android/internal/location/ProviderProperties;
 
@@ -172,7 +170,6 @@
 
 .method public newArray(I)[Lcom/android/internal/location/ProviderProperties;
     .locals 1
-    .param p1    # I
 
     new-array v0, p1, [Lcom/android/internal/location/ProviderProperties;
 
@@ -181,7 +178,6 @@
 
 .method public bridge synthetic newArray(I)[Ljava/lang/Object;
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/internal/location/ProviderProperties$1;->newArray(I)[Lcom/android/internal/location/ProviderProperties;
 

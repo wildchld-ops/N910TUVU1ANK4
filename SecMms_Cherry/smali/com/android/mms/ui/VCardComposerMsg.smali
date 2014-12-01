@@ -286,10 +286,6 @@
 
 .method public constructor <init>(Landroid/content/Context;IZZ)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # Z
 
     invoke-direct {p0, p1}, Lcom/android/vcard/VCardComposer;-><init>(Landroid/content/Context;)V
 
@@ -398,11 +394,6 @@
 
 .method public constructor <init>(Landroid/content/Context;IZZZ)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # Z
-    .param p5    # Z
 
     const/4 v1, 0x1
 
@@ -511,9 +502,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Ljava/lang/String;Z)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     invoke-static {p2}, Lcom/android/vcard/VCardConfig;->getVCardTypeFromString(Ljava/lang/String;)I
 
@@ -528,7 +516,6 @@
 
 .method private appendBirthday(Ljava/lang/StringBuilder;Ljava/util/Map;)V
     .locals 6
-    .param p1    # Ljava/lang/StringBuilder;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -626,7 +613,6 @@
 
 .method private appendEmails(Ljava/lang/StringBuilder;Ljava/util/Map;)V
     .locals 12
-    .param p1    # Ljava/lang/StringBuilder;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -761,7 +747,6 @@
 
 .method private appendIms(Ljava/lang/StringBuilder;Ljava/util/Map;)V
     .locals 7
-    .param p1    # Ljava/lang/StringBuilder;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -859,7 +844,6 @@
 
 .method private appendNickNames(Ljava/lang/StringBuilder;Ljava/util/Map;)V
     .locals 10
-    .param p1    # Ljava/lang/StringBuilder;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1016,7 +1000,6 @@
 
 .method private appendNotes(Ljava/lang/StringBuilder;Ljava/util/Map;)V
     .locals 12
-    .param p1    # Ljava/lang/StringBuilder;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1258,7 +1241,6 @@
 
 .method private appendOrganizations(Ljava/lang/StringBuilder;Ljava/util/Map;)V
     .locals 13
-    .param p1    # Ljava/lang/StringBuilder;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1460,7 +1442,6 @@
 
 .method private appendPhones(Ljava/lang/StringBuilder;Ljava/util/Map;)V
     .locals 12
-    .param p1    # Ljava/lang/StringBuilder;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1595,7 +1576,6 @@
 
 .method private appendPhotos(Ljava/lang/StringBuilder;Ljava/util/Map;)V
     .locals 13
-    .param p1    # Ljava/lang/StringBuilder;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1762,7 +1742,6 @@
 
 .method private appendPostals(Ljava/lang/StringBuilder;Ljava/util/Map;)V
     .locals 2
-    .param p1    # Ljava/lang/StringBuilder;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1832,7 +1811,6 @@
 
 .method private appendPostalsForDoCoMo(Ljava/lang/StringBuilder;Ljava/util/List;)V
     .locals 2
-    .param p1    # Ljava/lang/StringBuilder;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1908,8 +1886,6 @@
 
 .method private appendPostalsForDoCoMoInternal(Ljava/lang/StringBuilder;Ljava/util/List;Ljava/lang/Integer;)Z
     .locals 5
-    .param p1    # Ljava/lang/StringBuilder;
-    .param p3    # Ljava/lang/Integer;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1969,7 +1945,6 @@
 
 .method private appendPostalsForGeneric(Ljava/lang/StringBuilder;Ljava/util/List;)V
     .locals 5
-    .param p1    # Ljava/lang/StringBuilder;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2023,7 +1998,6 @@
 
 .method private appendStructuredNames(Ljava/lang/StringBuilder;Ljava/util/Map;)V
     .locals 3
-    .param p1    # Ljava/lang/StringBuilder;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2095,7 +2069,6 @@
 
 .method private appendStructuredNamesInternal(Ljava/lang/StringBuilder;Ljava/util/List;)V
     .locals 37
-    .param p1    # Ljava/lang/StringBuilder;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3681,8 +3654,6 @@
 
 .method private appendTypeAttribute(Ljava/lang/StringBuilder;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/StringBuilder;
-    .param p2    # Ljava/lang/String;
 
     iget-boolean v0, p0, Lcom/android/mms/ui/VCardComposerMsg;->mIsV30:Z
 
@@ -3706,7 +3677,6 @@
 
 .method private appendTypeAttributes(Ljava/lang/StringBuilder;Ljava/util/List;)V
     .locals 4
-    .param p1    # Ljava/lang/StringBuilder;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3759,8 +3729,6 @@
 
 .method private appendUncommonPhoneType(Ljava/lang/StringBuilder;Ljava/lang/Integer;)V
     .locals 4
-    .param p1    # Ljava/lang/StringBuilder;
-    .param p2    # Ljava/lang/Integer;
 
     iget-boolean v1, p0, Lcom/android/mms/ui/VCardComposerMsg;->mIsDoCoMo:Z
 
@@ -3812,10 +3780,6 @@
 
 .method private appendVCardEmailLine(Ljava/lang/StringBuilder;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/StringBuilder;
-    .param p2    # Ljava/lang/Integer;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     const-string v2, "EMAIL"
 
@@ -3973,9 +3937,6 @@
 
 .method private appendVCardLine(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/StringBuilder;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -3996,11 +3957,6 @@
 
 .method private appendVCardLine(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;ZZ)V
     .locals 2
-    .param p1    # Ljava/lang/StringBuilder;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Z
-    .param p5    # Z
 
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -4052,9 +4008,6 @@
 
 .method private appendVCardPhotoLine(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/StringBuilder;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -4162,10 +4115,6 @@
 
 .method private appendVCardPostalLine(Ljava/lang/StringBuilder;Ljava/lang/Integer;Ljava/lang/String;Landroid/content/ContentValues;)V
     .locals 18
-    .param p1    # Ljava/lang/StringBuilder;
-    .param p2    # Ljava/lang/Integer;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Landroid/content/ContentValues;
 
     const-string v15, "ADR"
 
@@ -4573,10 +4522,6 @@
 
 .method private appendVCardTelephoneLine(Ljava/lang/StringBuilder;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/StringBuilder;
-    .param p2    # Ljava/lang/Integer;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     const/4 v2, 0x2
 
@@ -4800,7 +4745,6 @@
 
 .method private appendWebsites(Ljava/lang/StringBuilder;Ljava/util/Map;)V
     .locals 5
-    .param p1    # Ljava/lang/StringBuilder;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -4874,7 +4818,6 @@
 
 .method private containsNonEmptyName(Landroid/content/ContentValues;)Z
     .locals 7
-    .param p1    # Landroid/content/ContentValues;
 
     const-string v6, "data3"
 
@@ -4962,7 +4905,6 @@
 
 .method public static encodeBase64([B)Ljava/lang/String;
     .locals 7
-    .param p0    # [B
 
     if-nez p0, :cond_0
 
@@ -5204,7 +5146,6 @@
 
 .method private encodeQuotedPrintable(Ljava/lang/String;)Ljava/lang/String;
     .locals 12
-    .param p1    # Ljava/lang/String;
 
     const/16 v9, 0xa
 
@@ -5402,7 +5343,6 @@
 
 .method private escapeCharacters(Ljava/lang/String;)Ljava/lang/String;
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const/16 v6, 0x5c
 
@@ -5542,7 +5482,6 @@
 
 .method public static getVCardPostalElements(Landroid/content/ContentValues;)[Ljava/lang/String;
     .locals 8
-    .param p0    # Landroid/content/ContentValues;
 
     const/4 v7, 0x6
 
@@ -5680,7 +5619,6 @@
 
 .method private shouldAppendCharsetAttribute(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -5774,7 +5712,6 @@
 
 .method private splitIfSeveralPhoneNumbersExist(Ljava/lang/String;)Ljava/util/List;
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -5871,10 +5808,6 @@
 # virtual methods
 .method public composeVCardForEmail(ILjava/lang/String;Ljava/lang/String;Z)Ljava/lang/String;
     .locals 7
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Z
 
     const/4 v5, 0x0
 
@@ -5971,10 +5904,6 @@
 
 .method public composeVCardForPhoneNumber(ILjava/lang/String;Ljava/lang/String;Z)Ljava/lang/String;
     .locals 7
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Z
 
     const/4 v5, 0x0
 

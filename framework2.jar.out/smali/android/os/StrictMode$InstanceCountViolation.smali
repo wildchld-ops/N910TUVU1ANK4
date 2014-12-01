@@ -55,9 +55,6 @@
 
 .method public constructor <init>(Ljava/lang/Class;JI)V
     .locals 2
-    .param p1    # Ljava/lang/Class;
-    .param p2    # J
-    .param p4    # I
 
     new-instance v0, Ljava/lang/StringBuilder;
 

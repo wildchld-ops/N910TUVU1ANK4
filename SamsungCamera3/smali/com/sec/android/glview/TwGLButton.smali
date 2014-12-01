@@ -99,14 +99,6 @@
 # direct methods
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;FFFFIII)V
     .locals 7
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
 
     const/4 v4, 0x0
 
@@ -409,15 +401,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;FFFFIIII)V
     .locals 8
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
-    .param p9    # I
 
     invoke-direct/range {p0 .. p5}, Lcom/sec/android/glview/TwGLView;-><init>(Lcom/sec/android/glview/TwGLContext;FFFF)V
 
@@ -790,16 +773,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;FFFFIIIILandroid/graphics/Bitmap$Config;)V
     .locals 10
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
-    .param p9    # I
-    .param p10    # Landroid/graphics/Bitmap$Config;
 
     invoke-direct/range {p0 .. p5}, Lcom/sec/android/glview/TwGLView;-><init>(Lcom/sec/android/glview/TwGLContext;FFFF)V
 
@@ -1184,12 +1157,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;FFFFLjava/lang/String;)V
     .locals 7
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -1314,12 +1281,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;FFFF[B)V
     .locals 8
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # [B
 
     const/4 v4, 0x0
 
@@ -1446,13 +1407,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;FFIIII)V
     .locals 8
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
 
     const/4 v4, 0x0
 
@@ -1687,14 +1641,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;FFIIIILandroid/graphics/Bitmap$Config;)V
     .locals 10
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # Landroid/graphics/Bitmap$Config;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/sec/android/glview/TwGLView;-><init>(Lcom/sec/android/glview/TwGLContext;FF)V
 
@@ -1999,10 +1945,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;FFLjava/lang/String;)V
     .locals 5
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -2129,10 +2071,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;FF[B)V
     .locals 5
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # [B
 
     const/4 v4, 0x0
 
@@ -2259,11 +2197,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;IIII)V
     .locals 8
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     const/4 v4, 0x0
 
@@ -2498,8 +2431,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;Ljava/lang/String;)V
     .locals 5
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -2624,8 +2555,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;[B)V
     .locals 5
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # [B
 
     const/4 v4, 0x0
 
@@ -2752,8 +2681,6 @@
 
 .method static synthetic access$000(Lcom/sec/android/glview/TwGLButton;Z)V
     .locals 0
-    .param p0    # Lcom/sec/android/glview/TwGLButton;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/sec/android/glview/TwGLButton;->setDrawHighlight(Z)V
 
@@ -2762,8 +2689,6 @@
 
 .method static synthetic access$100(Lcom/sec/android/glview/TwGLButton;Z)V
     .locals 0
-    .param p0    # Lcom/sec/android/glview/TwGLButton;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/sec/android/glview/TwGLButton;->setButtonPressed(Z)V
 
@@ -2784,7 +2709,6 @@
 
 .method private setButtonPressed(Z)V
     .locals 2
-    .param p1    # Z
 
     invoke-virtual {p0}, Lcom/sec/android/glview/TwGLView;->getContext()Lcom/sec/android/glview/TwGLContext;
 
@@ -2812,7 +2736,6 @@
 
 .method private setDrawHighlight(Z)V
     .locals 2
-    .param p1    # Z
 
     invoke-virtual {p0}, Lcom/sec/android/glview/TwGLView;->getContext()Lcom/sec/android/glview/TwGLContext;
 
@@ -3228,8 +3151,6 @@
 
 .method public keyDownEvent(ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     invoke-virtual {p0, p1, p2}, Lcom/sec/android/glview/TwGLButton;->onKeyDownEvent(ILandroid/view/KeyEvent;)Z
 
@@ -3240,8 +3161,6 @@
 
 .method public keyUpEvent(ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     invoke-virtual {p0, p1, p2}, Lcom/sec/android/glview/TwGLButton;->onKeyUpEvent(ILandroid/view/KeyEvent;)Z
 
@@ -3597,8 +3516,6 @@
 
 .method public onKeyDownEvent(ILandroid/view/KeyEvent;)Z
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x1
 
@@ -3663,8 +3580,6 @@
 
 .method public onKeyUpEvent(ILandroid/view/KeyEvent;)Z
     .locals 11
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const-wide/16 v9, 0xc8
 
@@ -3969,7 +3884,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 12
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v4, 0x2
 
@@ -4435,10 +4349,6 @@
 
 .method public declared-synchronized setButtonResources(IIII)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     monitor-enter p0
 
@@ -4737,11 +4647,6 @@
 
 .method public declared-synchronized setButtonResources(IIIILandroid/graphics/Bitmap$Config;)V
     .locals 9
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Landroid/graphics/Bitmap$Config;
 
     monitor-enter p0
 
@@ -5044,7 +4949,6 @@
 
 .method public setDim(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-super {p0, p1}, Lcom/sec/android/glview/TwGLView;->setDim(Z)V
 
@@ -5057,7 +4961,6 @@
 
 .method public declared-synchronized setHeight(F)V
     .locals 2
-    .param p1    # F
 
     monitor-enter p0
 
@@ -5141,7 +5044,6 @@
 
 .method public setHighlightVisibility(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/glview/TwGLButton;->mShowHighlight:Z
 
@@ -5150,7 +5052,6 @@
 
 .method public setMute(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/glview/TwGLButton;->mMute:Z
 
@@ -5159,7 +5060,6 @@
 
 .method public setOnButtonHighlightChangedListener(Lcom/sec/android/glview/TwGLButton$OnButtonHighlightChangedListener;)V
     .locals 0
-    .param p1    # Lcom/sec/android/glview/TwGLButton$OnButtonHighlightChangedListener;
 
     iput-object p1, p0, Lcom/sec/android/glview/TwGLButton;->mOnHighlightChangedListener:Lcom/sec/android/glview/TwGLButton$OnButtonHighlightChangedListener;
 
@@ -5168,7 +5068,6 @@
 
 .method public setOnButtonPressedListener(Lcom/sec/android/glview/TwGLButton$OnButtonPressedListener;)V
     .locals 0
-    .param p1    # Lcom/sec/android/glview/TwGLButton$OnButtonPressedListener;
 
     iput-object p1, p0, Lcom/sec/android/glview/TwGLButton;->mOnButtonPressedListener:Lcom/sec/android/glview/TwGLButton$OnButtonPressedListener;
 
@@ -5177,7 +5076,6 @@
 
 .method public setPaddings(Landroid/graphics/Rect;)V
     .locals 4
-    .param p1    # Landroid/graphics/Rect;
 
     invoke-super {p0, p1}, Lcom/sec/android/glview/TwGLView;->setPaddings(Landroid/graphics/Rect;)V
 
@@ -5247,7 +5145,6 @@
 
 .method public setPressed(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/glview/TwGLButton;->mPressed:Z
 
@@ -5260,8 +5157,6 @@
 
 .method public setResourceOffset(FF)Z
     .locals 5
-    .param p1    # F
-    .param p2    # F
 
     iput p1, p0, Lcom/sec/android/glview/TwGLButton;->mResourceOffsetX:F
 
@@ -5360,7 +5255,6 @@
 
 .method public setSelected(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/glview/TwGLButton;->mSelected:Z
 
@@ -5371,8 +5265,6 @@
 
 .method public setSize(FF)V
     .locals 4
-    .param p1    # F
-    .param p2    # F
 
     const/high16 v2, 0x40000000
 
@@ -5605,7 +5497,6 @@
 
 .method public setText(Lcom/sec/android/glview/TwGLText;)V
     .locals 1
-    .param p1    # Lcom/sec/android/glview/TwGLText;
 
     if-eqz p1, :cond_0
 
@@ -5625,7 +5516,6 @@
 
 .method public setText(Ljava/lang/String;)V
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     const/4 v7, 0x2
 
@@ -5666,13 +5556,6 @@
 
 .method public setText(Ljava/lang/String;FIIZIZ)V
     .locals 11
-    .param p1    # Ljava/lang/String;
-    .param p2    # F
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Z
-    .param p6    # I
-    .param p7    # Z
 
     new-instance v1, Lcom/sec/android/glview/TwGLText;
 
@@ -5737,12 +5620,6 @@
 
 .method public setText(Ljava/lang/String;FIIZZ)V
     .locals 11
-    .param p1    # Ljava/lang/String;
-    .param p2    # F
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Z
-    .param p6    # Z
 
     new-instance v1, Lcom/sec/android/glview/TwGLText;
 
@@ -5801,10 +5678,6 @@
 
 .method public setText(Ljava/lang/String;FIZ)V
     .locals 11
-    .param p1    # Ljava/lang/String;
-    .param p2    # F
-    .param p3    # I
-    .param p4    # Z
 
     const/4 v10, 0x2
 
@@ -5855,8 +5728,6 @@
 
 .method public setTextAlign(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/sec/android/glview/TwGLButton;->mText:Lcom/sec/android/glview/TwGLText;
 
@@ -5872,8 +5743,6 @@
 
 .method public setTextPosition(FF)V
     .locals 4
-    .param p1    # F
-    .param p2    # F
 
     iget-object v2, p0, Lcom/sec/android/glview/TwGLButton;->mText:Lcom/sec/android/glview/TwGLText;
 
@@ -5931,7 +5800,6 @@
 
 .method public setTextVisibility(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/glview/TwGLButton;->mShowText:Z
 
@@ -5940,7 +5808,6 @@
 
 .method public declared-synchronized setWidth(F)V
     .locals 2
-    .param p1    # F
 
     monitor-enter p0
 

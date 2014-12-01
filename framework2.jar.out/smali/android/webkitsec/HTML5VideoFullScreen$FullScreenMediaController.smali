@@ -21,9 +21,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/view/View;Z)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/view/View;
-    .param p3    # Z
 
     invoke-direct {p0, p1, p3}, Landroid/widget/MediaController;-><init>(Landroid/content/Context;Z)V
 

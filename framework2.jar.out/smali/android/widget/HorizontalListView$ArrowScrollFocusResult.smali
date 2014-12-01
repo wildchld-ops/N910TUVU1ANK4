@@ -31,7 +31,6 @@
 
 .method synthetic constructor <init>(Landroid/widget/HorizontalListView$1;)V
     .locals 0
-    .param p1    # Landroid/widget/HorizontalListView$1;
 
     invoke-direct {p0}, Landroid/widget/HorizontalListView$ArrowScrollFocusResult;-><init>()V
 
@@ -58,8 +57,6 @@
 
 .method populate(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     iput p1, p0, Landroid/widget/HorizontalListView$ArrowScrollFocusResult;->mSelectedPosition:I
 

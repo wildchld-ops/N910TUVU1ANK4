@@ -20,12 +20,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;IIIII)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     const/4 v1, 0x0
 

@@ -114,7 +114,7 @@
 
     iget-object v4, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions$2;->this$0:Lcom/android/phone/GsmUmtsAdditionalCallOptions;
 
-    # invokes: Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    # invokes: Lcom/android/phone/GsmUmtsAdditionalCallOptions;->getContentResolver()Landroid/content/ContentResolver;
     invoke-static {v4}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->access$300(Lcom/android/phone/GsmUmtsAdditionalCallOptions;)Landroid/content/ContentResolver;
 
     move-result-object v4
@@ -144,7 +144,7 @@
     :cond_3
     iget-object v4, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions$2;->this$0:Lcom/android/phone/GsmUmtsAdditionalCallOptions;
 
-    # invokes: Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    # invokes: Lcom/android/phone/GsmUmtsAdditionalCallOptions;->getContentResolver()Landroid/content/ContentResolver;
     invoke-static {v4}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->access$400(Lcom/android/phone/GsmUmtsAdditionalCallOptions;)Landroid/content/ContentResolver;
 
     move-result-object v4
@@ -158,7 +158,7 @@
     :cond_4
     iget-object v4, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions$2;->this$0:Lcom/android/phone/GsmUmtsAdditionalCallOptions;
 
-    # invokes: Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    # invokes: Lcom/android/phone/GsmUmtsAdditionalCallOptions;->getContentResolver()Landroid/content/ContentResolver;
     invoke-static {v4}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->access$500(Lcom/android/phone/GsmUmtsAdditionalCallOptions;)Landroid/content/ContentResolver;
 
     move-result-object v4
@@ -177,13 +177,13 @@
 
     iget-object v4, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions$2;->this$0:Lcom/android/phone/GsmUmtsAdditionalCallOptions;
 
-    invoke-virtual {v4}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v4}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
 
     const-string v5, "network_service_settings"
 
-    invoke-virtual {v4, v5, v7}, Landroid/content/ContextWrapper;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+    invoke-virtual {v4, v5, v7}, Landroid/app/Activity;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
 
     move-result-object v2
 

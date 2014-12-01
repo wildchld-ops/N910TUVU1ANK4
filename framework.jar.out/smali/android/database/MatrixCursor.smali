@@ -24,7 +24,6 @@
 # direct methods
 .method public constructor <init>([Ljava/lang/String;)V
     .locals 1
-    .param p1    # [Ljava/lang/String;
 
     const/16 v0, 0x10
 
@@ -35,8 +34,6 @@
 
 .method public constructor <init>([Ljava/lang/String;I)V
     .locals 1
-    .param p1    # [Ljava/lang/String;
-    .param p2    # I
 
     invoke-direct {p0}, Landroid/database/AbstractCursor;-><init>()V
 
@@ -70,7 +67,6 @@
 
 .method static synthetic access$000(Landroid/database/MatrixCursor;)I
     .locals 1
-    .param p0    # Landroid/database/MatrixCursor;
 
     iget v0, p0, Landroid/database/MatrixCursor;->columnCount:I
 
@@ -79,7 +75,6 @@
 
 .method static synthetic access$100(Landroid/database/MatrixCursor;)[Ljava/lang/Object;
     .locals 1
-    .param p0    # Landroid/database/MatrixCursor;
 
     iget-object v0, p0, Landroid/database/MatrixCursor;->data:[Ljava/lang/Object;
 
@@ -88,7 +83,6 @@
 
 .method static synthetic access$200(Landroid/database/MatrixCursor;)[Ljava/lang/String;
     .locals 1
-    .param p0    # Landroid/database/MatrixCursor;
 
     iget-object v0, p0, Landroid/database/MatrixCursor;->columnNames:[Ljava/lang/String;
 
@@ -97,7 +91,6 @@
 
 .method private addRow(Ljava/util/ArrayList;I)V
     .locals 6
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -182,7 +175,6 @@
 
 .method private ensureCapacity(I)V
     .locals 5
-    .param p1    # I
 
     const/4 v4, 0x0
 
@@ -221,7 +213,6 @@
 
 .method private get(I)Ljava/lang/Object;
     .locals 3
-    .param p1    # I
 
     if-ltz p1, :cond_0
 
@@ -407,7 +398,6 @@
 
 .method public addRow([Ljava/lang/Object;)V
     .locals 4
-    .param p1    # [Ljava/lang/Object;
 
     array-length v1, p1
 
@@ -483,7 +473,6 @@
 
 .method public getBlob(I)[B
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/database/MatrixCursor;->get(I)Ljava/lang/Object;
 
@@ -514,7 +503,6 @@
 
 .method public getDouble(I)D
     .locals 3
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/database/MatrixCursor;->get(I)Ljava/lang/Object;
 
@@ -554,7 +542,6 @@
 
 .method public getFloat(I)F
     .locals 2
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/database/MatrixCursor;->get(I)Ljava/lang/Object;
 
@@ -594,7 +581,6 @@
 
 .method public getInt(I)I
     .locals 2
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/database/MatrixCursor;->get(I)Ljava/lang/Object;
 
@@ -634,7 +620,6 @@
 
 .method public getLong(I)J
     .locals 3
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/database/MatrixCursor;->get(I)Ljava/lang/Object;
 
@@ -674,7 +659,6 @@
 
 .method public getShort(I)S
     .locals 2
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/database/MatrixCursor;->get(I)Ljava/lang/Object;
 
@@ -714,7 +698,6 @@
 
 .method public getString(I)Ljava/lang/String;
     .locals 2
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/database/MatrixCursor;->get(I)Ljava/lang/Object;
 
@@ -737,7 +720,6 @@
 
 .method public getType(I)I
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/database/MatrixCursor;->get(I)Ljava/lang/Object;
 
@@ -752,7 +734,6 @@
 
 .method public isNull(I)Z
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/database/MatrixCursor;->get(I)Ljava/lang/Object;
 

@@ -30,10 +30,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/os/INetworkManagementService;Landroid/net/IConnectivityManager;Landroid/os/Handler;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/INetworkManagementService;
-    .param p3    # Landroid/net/IConnectivityManager;
-    .param p4    # Landroid/os/Handler;
 
     const/4 v0, 0x0
 
@@ -62,7 +58,6 @@
 
 .method public static isRunningClat(Landroid/net/LinkProperties;)Z
     .locals 2
-    .param p0    # Landroid/net/LinkProperties;
 
     if-eqz p0, :cond_0
 
@@ -93,7 +88,6 @@
 # virtual methods
 .method public interfaceAdded(Ljava/lang/String;)V
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     const-string v5, "clat4"
 
@@ -288,7 +282,6 @@
 
 .method public interfaceRemoved(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "clat4"
 
@@ -395,8 +388,6 @@
 
 .method public requiresClat(ILandroid/net/NetworkStateTracker;)Z
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/net/NetworkStateTracker;
 
     invoke-interface {p2}, Landroid/net/NetworkStateTracker;->getLinkProperties()Landroid/net/LinkProperties;
 
@@ -423,7 +414,6 @@
 
 .method public startClat(Landroid/net/NetworkStateTracker;)V
     .locals 6
-    .param p1    # Landroid/net/NetworkStateTracker;
 
     iget-boolean v3, p0, Lcom/android/server/connectivity/Nat464Xlat;->mIsStarted:Z
 

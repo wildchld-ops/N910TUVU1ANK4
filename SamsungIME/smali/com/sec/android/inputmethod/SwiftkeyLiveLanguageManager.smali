@@ -96,7 +96,6 @@
 
 .method static synthetic access$002(Landroid/content/Context;)Landroid/content/Context;
     .locals 0
-    .param p0    # Landroid/content/Context;
 
     sput-object p0, Lcom/sec/android/inputmethod/SwiftkeyLiveLanguageManager;->sContext:Landroid/content/Context;
 
@@ -113,7 +112,6 @@
 
 .method static synthetic access$200(Landroid/content/Context;)Z
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Lcom/sec/android/inputmethod/SwiftkeyLiveLanguageManager;->updateLiveLanguagePack(Landroid/content/Context;)Z
 
@@ -124,7 +122,6 @@
 
 .method static synthetic access$300(Landroid/content/Context;)V
     .locals 0
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Lcom/sec/android/inputmethod/SwiftkeyLiveLanguageManager;->downloadLiveLanguagePack(Landroid/content/Context;)V
 
@@ -133,7 +130,6 @@
 
 .method static synthetic access$402(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/sec/android/inputmethod/SwiftkeyLiveLanguageManager;->mNeedToUpdateLanguageList:Z
 
@@ -150,7 +146,6 @@
 
 .method public static downloadLiveLanguageByWifi(Landroid/content/Context;)V
     .locals 5
-    .param p0    # Landroid/content/Context;
 
     const/4 v4, 0x1
 
@@ -188,7 +183,6 @@
 
 .method private static declared-synchronized downloadLiveLanguagePack(Landroid/content/Context;)V
     .locals 7
-    .param p0    # Landroid/content/Context;
 
     const-class v6, Lcom/sec/android/inputmethod/SwiftkeyLiveLanguageManager;
 
@@ -329,8 +323,6 @@
 
 .method public static onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/content/Intent;
 
     invoke-virtual {p1}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
@@ -386,7 +378,6 @@
 
 .method public static registerLiveLanguageAlarm(Landroid/content/Context;)V
     .locals 15
-    .param p0    # Landroid/content/Context;
 
     sget-boolean v4, Lcom/sec/android/inputmethod/SwiftkeyLiveLanguageManager;->mIsEnableLiveLanguage:Z
 
@@ -513,8 +504,6 @@
 
 .method public static setLiveLanguage(Landroid/content/Context;Z)V
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
 
     invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
 
@@ -586,7 +575,6 @@
 
 .method public static unregisterLiveLanguageAlarm(Landroid/content/Context;)V
     .locals 5
-    .param p0    # Landroid/content/Context;
 
     const/4 v4, 0x0
 
@@ -622,7 +610,6 @@
 
 .method private static declared-synchronized updateLanguagePackList(Landroid/content/Context;)Z
     .locals 5
-    .param p0    # Landroid/content/Context;
 
     const/4 v4, 0x1
 
@@ -683,7 +670,6 @@
 
 .method private static declared-synchronized updateLiveLanguagePack(Landroid/content/Context;)Z
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     const/4 v0, 0x0
 

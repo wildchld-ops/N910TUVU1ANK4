@@ -75,8 +75,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Lcom/android/server/enterprise/application/ApplicationPolicy;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/server/enterprise/application/ApplicationPolicy;
 
     const/4 v1, 0x0
 
@@ -135,7 +133,6 @@
 
 .method static synthetic access$000(Lcom/sec/server/enterprise/knoxcustom/KnoxCustomManagerService;)V
     .locals 0
-    .param p0    # Lcom/sec/server/enterprise/knoxcustom/KnoxCustomManagerService;
 
     invoke-direct {p0}, Lcom/sec/server/enterprise/knoxcustom/KnoxCustomManagerService;->startSealedMode()V
 
@@ -152,7 +149,6 @@
 
 .method static synthetic access$102(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/sec/server/enterprise/knoxcustom/KnoxCustomManagerService;->mWifiConfigure:Z
 
@@ -177,10 +173,6 @@
 
 .method static synthetic access$400(Lcom/sec/server/enterprise/knoxcustom/KnoxCustomManagerService;Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/sec/server/enterprise/knoxcustom/KnoxCustomManagerService;
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/sec/server/enterprise/knoxcustom/KnoxCustomManagerService;->configureWifi(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
 
@@ -189,8 +181,6 @@
 
 .method static synthetic access$500(Lcom/sec/server/enterprise/knoxcustom/KnoxCustomManagerService;Landroid/content/Context;)V
     .locals 0
-    .param p0    # Lcom/sec/server/enterprise/knoxcustom/KnoxCustomManagerService;
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Lcom/sec/server/enterprise/knoxcustom/KnoxCustomManagerService;->startStopUsbNet(Landroid/content/Context;)V
 
@@ -199,7 +189,6 @@
 
 .method static synthetic access$600(Lcom/sec/server/enterprise/knoxcustom/KnoxCustomManagerService;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/sec/server/enterprise/knoxcustom/KnoxCustomManagerService;
 
     iget-object v0, p0, Lcom/sec/server/enterprise/knoxcustom/KnoxCustomManagerService;->mTempContext:Landroid/content/Context;
 
@@ -208,7 +197,6 @@
 
 .method private checkDotString(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -234,7 +222,6 @@
 
 .method private checkIpAddressString(Ljava/lang/String;)Z
     .locals 10
-    .param p1    # Ljava/lang/String;
 
     const/4 v7, 0x0
 
@@ -306,9 +293,6 @@
 
 .method private configureWifi(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
     .locals 8
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const-string/jumbo v5, "wifi"
 
@@ -452,7 +436,6 @@
 
 .method private deserializeObject([B)Ljava/util/ArrayList;
     .locals 8
-    .param p1    # [B
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([B)",
@@ -902,7 +885,6 @@
 
 .method private startStopUsbNet(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     iput-object p1, p0, Lcom/sec/server/enterprise/knoxcustom/KnoxCustomManagerService;->mTempContext:Landroid/content/Context;
 
@@ -1086,7 +1068,6 @@
 # virtual methods
 .method public checkEnterprisePermission(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     invoke-direct {p0}, Lcom/sec/server/enterprise/knoxcustom/KnoxCustomManagerService;->getEDM()Landroid/app/enterprise/EnterpriseDeviceManager;
@@ -1112,7 +1093,6 @@
 
 .method public dialEmergencyNumber(Ljava/lang/String;)I
     .locals 9
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/sec/server/enterprise/knoxcustom/KnoxCustomManagerService;->enforceSystemPermission()I
 
@@ -1494,7 +1474,6 @@
 
 .method public getSealedExitUI(I)Ljava/lang/String;
     .locals 6
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -1761,7 +1740,6 @@
 
 .method public getSealedModeString(I)Ljava/lang/String;
     .locals 6
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -1929,7 +1907,6 @@
 
 .method public getSealedMultiWindowFixedState(I)I
     .locals 6
-    .param p1    # I
 
     const/4 v1, -0x1
 
@@ -2579,7 +2556,6 @@
 
 .method public getSealedUsbNetAddress(I)Ljava/lang/String;
     .locals 6
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -2859,21 +2835,18 @@
 
 .method public onAdminAdded(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onAdminRemoved(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onPreAdminRemoval(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
@@ -2971,7 +2944,6 @@
 
 .method public setAdbState(Z)I
     .locals 9
-    .param p1    # Z
 
     const/4 v5, 0x1
 
@@ -3067,8 +3039,6 @@
 
 .method public setAudioVolume(II)I
     .locals 9
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0}, Lcom/sec/server/enterprise/knoxcustom/KnoxCustomManagerService;->enforceSystemPermission()I
 
@@ -3140,8 +3110,6 @@
 
 .method public setAutoRotationState(ZI)I
     .locals 9
-    .param p1    # Z
-    .param p2    # I
 
     invoke-direct {p0}, Lcom/sec/server/enterprise/knoxcustom/KnoxCustomManagerService;->enforceSystemPermission()I
 
@@ -3241,8 +3209,6 @@
 
 .method public setBackupRestoreState(IZ)I
     .locals 13
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v8, 0x1
 
@@ -3416,7 +3382,6 @@
 
 .method public setBluetoothState(Z)I
     .locals 9
-    .param p1    # Z
 
     const/4 v2, 0x0
 
@@ -3504,7 +3469,6 @@
 
 .method public setBluetoothVisibilityTimeout(I)I
     .locals 9
-    .param p1    # I
 
     invoke-direct {p0}, Lcom/sec/server/enterprise/knoxcustom/KnoxCustomManagerService;->enforceSettingPermission()I
 
@@ -3590,7 +3554,6 @@
 
 .method public setCheckCoverPopupState(Z)I
     .locals 6
-    .param p1    # Z
 
     invoke-direct {p0}, Lcom/sec/server/enterprise/knoxcustom/KnoxCustomManagerService;->enforceSystemPermission()I
 
@@ -3646,7 +3609,6 @@
 
 .method public setCpuPowerSavingState(Z)I
     .locals 9
-    .param p1    # Z
 
     const/4 v5, 0x1
 
@@ -3817,7 +3779,6 @@
 
 .method public setExtStorageWriteAccessState(Z)I
     .locals 6
-    .param p1    # Z
 
     invoke-direct {p0}, Lcom/sec/server/enterprise/knoxcustom/KnoxCustomManagerService;->enforceSystemPermission()I
 
@@ -3873,7 +3834,6 @@
 
 .method public setExtendedCallInfoState(Z)I
     .locals 6
-    .param p1    # Z
 
     iget-object v3, p0, Lcom/sec/server/enterprise/knoxcustom/KnoxCustomManagerService;->mContext:Landroid/content/Context;
 
@@ -3948,7 +3908,6 @@
 
 .method public setGpsState(Z)I
     .locals 8
-    .param p1    # Z
 
     const/4 v5, 0x0
 
@@ -4019,8 +3978,6 @@
 
 .method public setInputMethod(Ljava/lang/String;Z)I
     .locals 11
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     invoke-direct {p0}, Lcom/sec/server/enterprise/knoxcustom/KnoxCustomManagerService;->enforceSettingPermission()I
 
@@ -4204,7 +4161,6 @@
 
 .method public setMobileDataRoamingState(Z)I
     .locals 9
-    .param p1    # Z
 
     const/4 v6, 0x1
 
@@ -4325,7 +4281,6 @@
 
 .method public setMobileDataState(Z)I
     .locals 6
-    .param p1    # Z
 
     iget-object v4, p0, Lcom/sec/server/enterprise/knoxcustom/KnoxCustomManagerService;->mContext:Landroid/content/Context;
 
@@ -4376,8 +4331,6 @@
 
 .method public setMotionControlState(IZ)I
     .locals 10
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v6, 0x0
 
@@ -4534,7 +4487,6 @@
 
 .method public setMultiWindowState(Z)I
     .locals 9
-    .param p1    # Z
 
     const/4 v6, 0x1
 
@@ -4625,7 +4577,6 @@
 
 .method public setPackageVerifierState(Z)I
     .locals 8
-    .param p1    # Z
 
     invoke-direct {p0}, Lcom/sec/server/enterprise/knoxcustom/KnoxCustomManagerService;->enforceSettingPermission()I
 
@@ -4697,7 +4648,6 @@
 
 .method public setRecentLongPressActivity(Ljava/lang/String;)I
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, -0x6
 
@@ -4769,7 +4719,6 @@
 
 .method public setRecentLongPressMode(I)I
     .locals 6
-    .param p1    # I
 
     const/4 v2, -0x6
 
@@ -4825,7 +4774,6 @@
 
 .method public setScreenPowerSavingState(Z)I
     .locals 9
-    .param p1    # Z
 
     const/4 v5, 0x1
 
@@ -4907,7 +4855,6 @@
 
 .method public setScreenTimeout(I)I
     .locals 10
-    .param p1    # I
 
     invoke-direct {p0}, Lcom/sec/server/enterprise/knoxcustom/KnoxCustomManagerService;->enforceSystemPermission()I
 
@@ -4996,8 +4943,6 @@
 
 .method public setSealedExitUI(Ljava/lang/String;Ljava/lang/String;)I
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v2, -0x6
 
@@ -5087,7 +5032,6 @@
 
 .method public setSealedHideNotificationMessages(I)I
     .locals 7
-    .param p1    # I
 
     invoke-direct {p0}, Lcom/sec/server/enterprise/knoxcustom/KnoxCustomManagerService;->enforceSealedModePermission()I
 
@@ -5184,7 +5128,6 @@
 
 .method public setSealedHomeActivity(Ljava/lang/String;)I
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/sec/server/enterprise/knoxcustom/KnoxCustomManagerService;->enforceSealedModePermission()I
 
@@ -5256,7 +5199,6 @@
 
 .method public setSealedInputMethodRestrictionState(Z)I
     .locals 6
-    .param p1    # Z
 
     invoke-direct {p0}, Lcom/sec/server/enterprise/knoxcustom/KnoxCustomManagerService;->enforceSealedModePermission()I
 
@@ -5310,8 +5252,6 @@
 
 .method public setSealedModeString(ILjava/lang/String;)I
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/sec/server/enterprise/knoxcustom/KnoxCustomManagerService;->enforceSealedModePermission()I
 
@@ -5479,8 +5419,6 @@
 
 .method public setSealedMultiWindowFixedState(II)I
     .locals 11
-    .param p1    # I
-    .param p2    # I
 
     const/4 v7, 0x1
 
@@ -5645,7 +5583,6 @@
 
 .method public setSealedNotificationMessagesState(Z)I
     .locals 6
-    .param p1    # Z
 
     invoke-direct {p0}, Lcom/sec/server/enterprise/knoxcustom/KnoxCustomManagerService;->enforceSealedModePermission()I
 
@@ -5708,8 +5645,6 @@
 
 .method public setSealedPassCode(Ljava/lang/String;Ljava/lang/String;)I
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v3, -0x6
 
@@ -5926,7 +5861,6 @@
 
 .method public setSealedPowerDialogCustomItemsState(Z)I
     .locals 9
-    .param p1    # Z
 
     const/4 v3, 0x0
 
@@ -6001,7 +5935,6 @@
 
 .method public setSealedPowerDialogItems(I)I
     .locals 7
-    .param p1    # I
 
     invoke-direct {p0}, Lcom/sec/server/enterprise/knoxcustom/KnoxCustomManagerService;->enforceSealedModePermission()I
 
@@ -6080,7 +6013,6 @@
 
 .method public setSealedPowerDialogOptionMode(I)I
     .locals 6
-    .param p1    # I
 
     invoke-direct {p0}, Lcom/sec/server/enterprise/knoxcustom/KnoxCustomManagerService;->enforceSealedModePermission()I
 
@@ -6152,8 +6084,6 @@
 
 .method public setSealedState(ZLjava/lang/String;)I
     .locals 12
-    .param p1    # Z
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/sec/server/enterprise/knoxcustom/KnoxCustomManagerService;->enforceSealedModePermission()I
 
@@ -6349,7 +6279,6 @@
 
 .method public setSealedStatusBarClockState(Z)I
     .locals 10
-    .param p1    # Z
 
     invoke-direct {p0}, Lcom/sec/server/enterprise/knoxcustom/KnoxCustomManagerService;->enforceSealedModePermission()I
 
@@ -6454,7 +6383,6 @@
 
 .method public setSealedStatusBarIconsState(Z)I
     .locals 10
-    .param p1    # Z
 
     invoke-direct {p0}, Lcom/sec/server/enterprise/knoxcustom/KnoxCustomManagerService;->enforceSealedModePermission()I
 
@@ -6559,7 +6487,6 @@
 
 .method public setSealedStatusBarMode(I)I
     .locals 12
-    .param p1    # I
 
     const/4 v11, 0x3
 
@@ -6695,7 +6622,6 @@
 
 .method public setSealedUsbMassStorageState(Z)I
     .locals 10
-    .param p1    # Z
 
     const/4 v2, 0x0
 
@@ -6789,8 +6715,6 @@
 
 .method public setSealedUsbNetAddresses(Ljava/lang/String;Ljava/lang/String;)I
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/sec/server/enterprise/knoxcustom/KnoxCustomManagerService;->enforceSealedModePermission()I
 
@@ -6875,7 +6799,6 @@
 
 .method public setSealedUsbNetState(Z)I
     .locals 8
-    .param p1    # Z
 
     invoke-direct {p0}, Lcom/sec/server/enterprise/knoxcustom/KnoxCustomManagerService;->enforceSealedModePermission()I
 
@@ -6981,8 +6904,6 @@
 
 .method public setSettingsHiddenState(ZI)I
     .locals 12
-    .param p1    # Z
-    .param p2    # I
 
     invoke-direct {p0}, Lcom/sec/server/enterprise/knoxcustom/KnoxCustomManagerService;->enforceSettingPermission()I
 
@@ -7134,7 +7055,6 @@
 
 .method public setStayAwakeState(Z)I
     .locals 8
-    .param p1    # Z
 
     invoke-direct {p0}, Lcom/sec/server/enterprise/knoxcustom/KnoxCustomManagerService;->enforceSettingPermission()I
 
@@ -7206,8 +7126,6 @@
 
 .method public setSystemLocale(Ljava/lang/String;Ljava/lang/String;)I
     .locals 13
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/16 v7, -0x2c
 
@@ -7305,8 +7223,6 @@
 
 .method public setSystemRingtone(ILjava/lang/String;)I
     .locals 12
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/sec/server/enterprise/knoxcustom/KnoxCustomManagerService;->enforceSystemPermission()I
 
@@ -7541,7 +7457,6 @@
 
 .method public setUnknownSourcesState(Z)I
     .locals 9
-    .param p1    # Z
 
     const/4 v5, 0x1
 
@@ -7622,9 +7537,6 @@
 
 .method public setUsbDeviceDefaultPackage(Landroid/hardware/usb/UsbDevice;Ljava/lang/String;I)I
     .locals 10
-    .param p1    # Landroid/hardware/usb/UsbDevice;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     invoke-direct {p0}, Lcom/sec/server/enterprise/knoxcustom/KnoxCustomManagerService;->enforceSettingPermission()I
 
@@ -7741,7 +7653,6 @@
 
 .method public setUserInactivityTimeout(I)I
     .locals 10
-    .param p1    # I
 
     invoke-direct {p0}, Lcom/sec/server/enterprise/knoxcustom/KnoxCustomManagerService;->enforceSystemPermission()I
 
@@ -7829,7 +7740,6 @@
 
 .method public setWifiConnectionMonitorState(Z)I
     .locals 8
-    .param p1    # Z
 
     invoke-direct {p0}, Lcom/sec/server/enterprise/knoxcustom/KnoxCustomManagerService;->enforceSettingPermission()I
 
@@ -7901,7 +7811,6 @@
 
 .method public setWifiNetworkNotificationState(Z)I
     .locals 8
-    .param p1    # Z
 
     invoke-direct {p0}, Lcom/sec/server/enterprise/knoxcustom/KnoxCustomManagerService;->enforceSettingPermission()I
 
@@ -7973,9 +7882,6 @@
 
 .method public setWifiState(ZLjava/lang/String;Ljava/lang/String;)I
     .locals 11
-    .param p1    # Z
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const/4 v2, 0x1
 

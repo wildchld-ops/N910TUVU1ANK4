@@ -120,7 +120,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -131,8 +130,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const v0, 0x101041d
 
@@ -143,9 +140,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v3, 0x0
 
@@ -210,7 +204,6 @@
 
 .method static synthetic access$000(Landroid/widget/StackView;)Landroid/widget/ImageView;
     .locals 1
-    .param p0    # Landroid/widget/StackView;
 
     iget-object v0, p0, Landroid/widget/StackView;->mHighlight:Landroid/widget/ImageView;
 
@@ -219,7 +212,6 @@
 
 .method static synthetic access$100(Landroid/widget/StackView;)I
     .locals 1
-    .param p0    # Landroid/widget/StackView;
 
     iget v0, p0, Landroid/widget/StackView;->mStackMode:I
 
@@ -228,7 +220,6 @@
 
 .method static synthetic access$200(Landroid/widget/StackView;)I
     .locals 1
-    .param p0    # Landroid/widget/StackView;
 
     iget v0, p0, Landroid/widget/StackView;->mSlideAmount:I
 
@@ -237,7 +228,6 @@
 
 .method private beginGestureIfNeeded(F)V
     .locals 12
-    .param p1    # F
 
     const/4 v8, 0x2
 
@@ -450,7 +440,6 @@
 
 .method private handlePointerUp(Landroid/view/MotionEvent;)V
     .locals 13
-    .param p1    # Landroid/view/MotionEvent;
 
     iget v9, p0, Landroid/widget/StackView;->mActivePointerId:I
 
@@ -1241,7 +1230,6 @@
 
 .method private onSecondaryPointerUp(Landroid/view/MotionEvent;)V
     .locals 14
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getActionIndex()I
 
@@ -1388,7 +1376,6 @@
 
 .method private pacedScroll(Z)V
     .locals 6
-    .param p1    # Z
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
@@ -1426,8 +1413,6 @@
 
 .method private setupStackSlider(Landroid/view/View;I)V
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     iget-object v0, p0, Landroid/widget/StackView;->mStackSlider:Landroid/widget/StackView$StackSlider;
 
@@ -1491,9 +1476,6 @@
 
 .method private transformViewAtIndex(ILandroid/view/View;Z)V
     .locals 20
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Z
 
     move-object/from16 v0, p0
 
@@ -1902,15 +1884,12 @@
 
 .method applyTransformForChildAtIndex(Landroid/view/View;I)V
     .locals 0
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     return-void
 .end method
 
 .method bridge synthetic createOrReuseLayoutParams(Landroid/view/View;)Landroid/view/ViewGroup$LayoutParams;
     .locals 1
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p0, p1}, Landroid/widget/StackView;->createOrReuseLayoutParams(Landroid/view/View;)Landroid/widget/StackView$LayoutParams;
 
@@ -1921,7 +1900,6 @@
 
 .method createOrReuseLayoutParams(Landroid/view/View;)Landroid/widget/StackView$LayoutParams;
     .locals 4
-    .param p1    # Landroid/view/View;
 
     const/4 v3, 0x0
 
@@ -1958,7 +1936,6 @@
 
 .method protected dispatchDraw(Landroid/graphics/Canvas;)V
     .locals 8
-    .param p1    # Landroid/graphics/Canvas;
 
     const/4 v3, 0x0
 
@@ -2085,7 +2062,6 @@
 
 .method hideTapFeedback(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Landroid/widget/StackView;->mClickFeedback:Landroid/widget/ImageView;
 
@@ -2100,7 +2076,6 @@
 
 .method public onGenericMotionEvent(Landroid/view/MotionEvent;)Z
     .locals 4
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v3, 0x0
 
@@ -2164,7 +2139,6 @@
 
 .method public onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
     .locals 1
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
 
     invoke-super {p0, p1}, Landroid/widget/AdapterViewAnimator;->onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
 
@@ -2181,7 +2155,6 @@
 
 .method public onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
     .locals 2
-    .param p1    # Landroid/view/accessibility/AccessibilityNodeInfo;
 
     const/4 v0, 0x1
 
@@ -2248,7 +2221,6 @@
 
 .method public onInterceptTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 7
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v6, -0x1
 
@@ -2358,11 +2330,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 10
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-virtual {p0}, Landroid/widget/AdapterViewAnimator;->checkForAndHandleDataChanged()V
 
@@ -2435,8 +2402,6 @@
 
 .method protected onMeasure(II)V
     .locals 11
-    .param p1    # I
-    .param p2    # I
 
     invoke-static {p1}, Landroid/view/View$MeasureSpec;->getSize(I)I
 
@@ -2635,7 +2600,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 13
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v8, 0x0
 
@@ -2839,8 +2803,6 @@
 
 .method public performAccessibilityAction(ILandroid/os/Bundle;)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     const/4 v0, 0x1
 
@@ -2965,8 +2927,6 @@
 
 .method showOnly(IZ)V
     .locals 7
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v6, 0x0
 
@@ -3088,7 +3048,6 @@
 
 .method showTapFeedback(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p0}, Landroid/widget/StackView;->updateClickFeedback()V
 
@@ -3109,10 +3068,6 @@
 
 .method transformViewForTransition(IILandroid/view/View;Z)V
     .locals 17
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/view/View;
-    .param p4    # Z
 
     if-nez p4, :cond_0
 

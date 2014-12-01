@@ -74,8 +74,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/wm/WindowManagerService;Landroid/view/IApplicationToken;)V
     .locals 5
-    .param p1    # Lcom/android/server/wm/WindowManagerService;
-    .param p2    # Landroid/view/IApplicationToken;
 
     const/4 v4, 0x0
 
@@ -142,8 +140,6 @@
 # virtual methods
 .method dump(Ljava/io/PrintWriter;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/io/PrintWriter;
-    .param p2    # Ljava/lang/String;
 
     invoke-super {p0, p1, p2}, Lcom/android/server/wm/WindowToken;->dump(Ljava/io/PrintWriter;Ljava/lang/String;)V
 
@@ -503,7 +499,6 @@
 
 .method findWindow(I)Ljava/util/ArrayList;
     .locals 4
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",

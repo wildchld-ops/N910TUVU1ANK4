@@ -214,9 +214,6 @@
 
 .method private BroadcastingLockscreenHoverInformation(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/Long;
 
     const-wide/16 v2, -0x1
 
@@ -270,10 +267,6 @@
 
 .method private BroadcastingLockscreenHoverInformationFreeMessage(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;Ljava/lang/String;)V
     .locals 14
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/Long;
-    .param p4    # Ljava/lang/String;
 
     new-instance v11, Ljava/util/HashSet;
 
@@ -368,8 +361,6 @@
 
 .method private BroadcastingLockscreenHoverInformationMMS(Lcom/google/android/mms/pdu/GenericPdu;Landroid/net/Uri;)V
     .locals 24
-    .param p1    # Lcom/google/android/mms/pdu/GenericPdu;
-    .param p2    # Landroid/net/Uri;
 
     const/4 v1, 0x4
 
@@ -748,7 +739,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/ui/SpamMessageManager;)Lcom/sec/android/touchwiz/widget/TwCheckBox;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SpamMessageManager;
 
     iget-object v0, p0, Lcom/android/mms/ui/SpamMessageManager;->mSelectAllCheckBox:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
@@ -757,8 +747,6 @@
 
 .method static synthetic access$1000(Lcom/android/mms/ui/SpamMessageManager;I)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/SpamMessageManager;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/SpamMessageManager;->setTotalQuantityTextView(I)V
 
@@ -767,7 +755,6 @@
 
 .method static synthetic access$1100(Lcom/android/mms/ui/SpamMessageManager;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SpamMessageManager;
 
     invoke-direct {p0}, Lcom/android/mms/ui/SpamMessageManager;->isFirstItemChanged()Z
 
@@ -778,7 +765,6 @@
 
 .method static synthetic access$1200(Lcom/android/mms/ui/SpamMessageManager;)I
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SpamMessageManager;
 
     iget v0, p0, Lcom/android/mms/ui/SpamMessageManager;->mVisibleOffset:I
 
@@ -787,7 +773,6 @@
 
 .method static synthetic access$1300(Lcom/android/mms/ui/SpamMessageManager;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/SpamMessageManager;
 
     invoke-direct {p0}, Lcom/android/mms/ui/SpamMessageManager;->restoreListOffset()V
 
@@ -796,7 +781,6 @@
 
 .method static synthetic access$1400(Lcom/android/mms/ui/SpamMessageManager;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SpamMessageManager;
 
     iget-object v0, p0, Lcom/android/mms/ui/SpamMessageManager;->mContext:Landroid/content/Context;
 
@@ -805,7 +789,6 @@
 
 .method static synthetic access$1500(Lcom/android/mms/ui/SpamMessageManager;)Landroid/view/ActionMode;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SpamMessageManager;
 
     iget-object v0, p0, Lcom/android/mms/ui/SpamMessageManager;->mDeleteActionMode:Landroid/view/ActionMode;
 
@@ -814,8 +797,6 @@
 
 .method static synthetic access$1502(Lcom/android/mms/ui/SpamMessageManager;Landroid/view/ActionMode;)Landroid/view/ActionMode;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/SpamMessageManager;
-    .param p1    # Landroid/view/ActionMode;
 
     iput-object p1, p0, Lcom/android/mms/ui/SpamMessageManager;->mDeleteActionMode:Landroid/view/ActionMode;
 
@@ -824,8 +805,6 @@
 
 .method static synthetic access$1600(Lcom/android/mms/ui/SpamMessageManager;I)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/SpamMessageManager;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/SpamMessageManager;->startViewer(I)V
 
@@ -834,8 +813,6 @@
 
 .method static synthetic access$1700(Lcom/android/mms/ui/SpamMessageManager;Landroid/net/Uri;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/SpamMessageManager;
-    .param p1    # Landroid/net/Uri;
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/SpamMessageManager;->deleteMessage(Landroid/net/Uri;)V
 
@@ -844,7 +821,6 @@
 
 .method static synthetic access$1800(Lcom/android/mms/ui/SpamMessageManager;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SpamMessageManager;
 
     iget-object v0, p0, Lcom/android/mms/ui/SpamMessageManager;->mDeleteEventHandler:Landroid/os/Handler;
 
@@ -853,7 +829,6 @@
 
 .method static synthetic access$1900(Lcom/android/mms/ui/SpamMessageManager;)Lcom/android/mms/ui/SpamMessageManager$MessageListQueryHandler;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SpamMessageManager;
 
     iget-object v0, p0, Lcom/android/mms/ui/SpamMessageManager;->mQueryHandler:Lcom/android/mms/ui/SpamMessageManager$MessageListQueryHandler;
 
@@ -862,9 +837,6 @@
 
 .method static synthetic access$2200(Lcom/android/mms/ui/SpamMessageManager;Lcom/google/android/mms/pdu/GenericPdu;Landroid/net/Uri;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/SpamMessageManager;
-    .param p1    # Lcom/google/android/mms/pdu/GenericPdu;
-    .param p2    # Landroid/net/Uri;
 
     invoke-direct {p0, p1, p2}, Lcom/android/mms/ui/SpamMessageManager;->BroadcastingLockscreenHoverInformationMMS(Lcom/google/android/mms/pdu/GenericPdu;Landroid/net/Uri;)V
 
@@ -873,11 +845,6 @@
 
 .method static synthetic access$2300(Lcom/android/mms/ui/SpamMessageManager;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/SpamMessageManager;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/Long;
-    .param p4    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/mms/ui/SpamMessageManager;->BroadcastingLockscreenHoverInformationFreeMessage(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;Ljava/lang/String;)V
 
@@ -886,17 +853,6 @@
 
 .method static synthetic access$2400(Landroid/content/Context;Landroid/net/Uri;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Long;IZJLandroid/content/ContentValues;)Landroid/net/Uri;
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
-    .param p6    # Ljava/lang/Long;
-    .param p7    # I
-    .param p8    # Z
-    .param p9    # J
-    .param p11    # Landroid/content/ContentValues;
 
     invoke-static/range {p0 .. p11}, Lcom/android/mms/ui/SpamMessageManager;->addMessageToUri(Landroid/content/Context;Landroid/net/Uri;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Long;IZJLandroid/content/ContentValues;)Landroid/net/Uri;
 
@@ -907,10 +863,6 @@
 
 .method static synthetic access$2500(Lcom/android/mms/ui/SpamMessageManager;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/SpamMessageManager;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/Long;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/mms/ui/SpamMessageManager;->BroadcastingLockscreenHoverInformation(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;)V
 
@@ -919,7 +871,6 @@
 
 .method static synthetic access$2600(Lcom/android/mms/ui/SpamMessageManager;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SpamMessageManager;
 
     iget-object v0, p0, Lcom/android/mms/ui/SpamMessageManager;->mCheckedMsgIds:Ljava/util/ArrayList;
 
@@ -928,8 +879,6 @@
 
 .method static synthetic access$2602(Lcom/android/mms/ui/SpamMessageManager;Ljava/util/ArrayList;)Ljava/util/ArrayList;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/SpamMessageManager;
-    .param p1    # Ljava/util/ArrayList;
 
     iput-object p1, p0, Lcom/android/mms/ui/SpamMessageManager;->mCheckedMsgIds:Ljava/util/ArrayList;
 
@@ -938,7 +887,6 @@
 
 .method static synthetic access$2700(Lcom/android/mms/ui/SpamMessageManager;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SpamMessageManager;
 
     iget-object v0, p0, Lcom/android/mms/ui/SpamMessageManager;->mActionbarTitle:Landroid/widget/TextView;
 
@@ -947,8 +895,6 @@
 
 .method static synthetic access$2702(Lcom/android/mms/ui/SpamMessageManager;Landroid/widget/TextView;)Landroid/widget/TextView;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/SpamMessageManager;
-    .param p1    # Landroid/widget/TextView;
 
     iput-object p1, p0, Lcom/android/mms/ui/SpamMessageManager;->mActionbarTitle:Landroid/widget/TextView;
 
@@ -957,7 +903,6 @@
 
 .method static synthetic access$2800(Lcom/android/mms/ui/SpamMessageManager;)Landroid/widget/Button;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SpamMessageManager;
 
     iget-object v0, p0, Lcom/android/mms/ui/SpamMessageManager;->mSelectedButton:Landroid/widget/Button;
 
@@ -966,8 +911,6 @@
 
 .method static synthetic access$2802(Lcom/android/mms/ui/SpamMessageManager;Landroid/widget/Button;)Landroid/widget/Button;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/SpamMessageManager;
-    .param p1    # Landroid/widget/Button;
 
     iput-object p1, p0, Lcom/android/mms/ui/SpamMessageManager;->mSelectedButton:Landroid/widget/Button;
 
@@ -976,7 +919,6 @@
 
 .method static synthetic access$2900(Lcom/android/mms/ui/SpamMessageManager;)Lcom/android/mms/ui/MessageItem;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SpamMessageManager;
 
     iget-object v0, p0, Lcom/android/mms/ui/SpamMessageManager;->mMsgItem:Lcom/android/mms/ui/MessageItem;
 
@@ -985,8 +927,6 @@
 
 .method static synthetic access$2902(Lcom/android/mms/ui/SpamMessageManager;Lcom/android/mms/ui/MessageItem;)Lcom/android/mms/ui/MessageItem;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/SpamMessageManager;
-    .param p1    # Lcom/android/mms/ui/MessageItem;
 
     iput-object p1, p0, Lcom/android/mms/ui/SpamMessageManager;->mMsgItem:Lcom/android/mms/ui/MessageItem;
 
@@ -995,7 +935,6 @@
 
 .method static synthetic access$300(Lcom/android/mms/ui/SpamMessageManager;)I
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SpamMessageManager;
 
     iget v0, p0, Lcom/android/mms/ui/SpamMessageManager;->mListMultiMode:I
 
@@ -1004,7 +943,6 @@
 
 .method static synthetic access$3000(Lcom/android/mms/ui/SpamMessageManager;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/SpamMessageManager;
 
     invoke-direct {p0}, Lcom/android/mms/ui/SpamMessageManager;->restoreSelectedMessages()V
 
@@ -1013,8 +951,6 @@
 
 .method static synthetic access$302(Lcom/android/mms/ui/SpamMessageManager;I)I
     .locals 0
-    .param p0    # Lcom/android/mms/ui/SpamMessageManager;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/mms/ui/SpamMessageManager;->mListMultiMode:I
 
@@ -1023,7 +959,6 @@
 
 .method static synthetic access$3100(Lcom/android/mms/ui/SpamMessageManager;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/SpamMessageManager;
 
     invoke-direct {p0}, Lcom/android/mms/ui/SpamMessageManager;->deleteSelectedMessages()V
 
@@ -1032,7 +967,6 @@
 
 .method static synthetic access$3200(Lcom/android/mms/ui/SpamMessageManager;)Landroid/widget/LinearLayout;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SpamMessageManager;
 
     iget-object v0, p0, Lcom/android/mms/ui/SpamMessageManager;->mSelectAll:Landroid/widget/LinearLayout;
 
@@ -1041,7 +975,6 @@
 
 .method static synthetic access$3300(Lcom/android/mms/ui/SpamMessageManager;)Lcom/android/mms/animation/MsgListSelectionAnimation;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SpamMessageManager;
 
     iget-object v0, p0, Lcom/android/mms/ui/SpamMessageManager;->mSelectAnimation:Lcom/android/mms/animation/MsgListSelectionAnimation;
 
@@ -1050,8 +983,6 @@
 
 .method static synthetic access$3400(Lcom/android/mms/ui/SpamMessageManager;Lcom/android/mms/ui/MsgSweepActionListView;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/SpamMessageManager;
-    .param p1    # Lcom/android/mms/ui/MsgSweepActionListView;
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/SpamMessageManager;->disableSweepHanlder(Lcom/android/mms/ui/MsgSweepActionListView;)V
 
@@ -1060,8 +991,6 @@
 
 .method static synthetic access$3500(Lcom/android/mms/ui/SpamMessageManager;Lcom/android/mms/ui/MsgSweepActionListView;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/SpamMessageManager;
-    .param p1    # Lcom/android/mms/ui/MsgSweepActionListView;
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/SpamMessageManager;->setSweepHandler(Lcom/android/mms/ui/MsgSweepActionListView;)V
 
@@ -1070,8 +999,6 @@
 
 .method static synthetic access$3600(Lcom/android/mms/ui/SpamMessageManager;Landroid/view/Menu;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/SpamMessageManager;
-    .param p1    # Landroid/view/Menu;
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/SpamMessageManager;->disableAllMenu(Landroid/view/Menu;)V
 
@@ -1080,8 +1007,6 @@
 
 .method static synthetic access$3700(Lcom/android/mms/ui/SpamMessageManager;Landroid/view/Menu;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/SpamMessageManager;
-    .param p1    # Landroid/view/Menu;
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/SpamMessageManager;->updateMultiActionMenu(Landroid/view/Menu;)V
 
@@ -1090,7 +1015,6 @@
 
 .method static synthetic access$3800(Lcom/android/mms/ui/SpamMessageManager;)Lcom/android/mms/ui/MessageItem;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SpamMessageManager;
 
     invoke-direct {p0}, Lcom/android/mms/ui/SpamMessageManager;->getMessagItem()Lcom/android/mms/ui/MessageItem;
 
@@ -1101,8 +1025,6 @@
 
 .method static synthetic access$3900(Lcom/android/mms/ui/SpamMessageManager;Landroid/view/Menu;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/SpamMessageManager;
-    .param p1    # Landroid/view/Menu;
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/SpamMessageManager;->enableSelecteMenu(Landroid/view/Menu;)V
 
@@ -1111,8 +1033,6 @@
 
 .method static synthetic access$400(Lcom/android/mms/ui/SpamMessageManager;Z)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/SpamMessageManager;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/SpamMessageManager;->startAsyncQueryInternal(Z)V
 
@@ -1121,7 +1041,6 @@
 
 .method static synthetic access$4000(Lcom/android/mms/ui/SpamMessageManager;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SpamMessageManager;
 
     iget-boolean v0, p0, Lcom/android/mms/ui/SpamMessageManager;->mIsSelectAllmode:Z
 
@@ -1130,8 +1049,6 @@
 
 .method static synthetic access$4002(Lcom/android/mms/ui/SpamMessageManager;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/ui/SpamMessageManager;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/SpamMessageManager;->mIsSelectAllmode:Z
 
@@ -1140,7 +1057,6 @@
 
 .method static synthetic access$4100(Lcom/android/mms/ui/SpamMessageManager;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SpamMessageManager;
 
     iget-boolean v0, p0, Lcom/android/mms/ui/SpamMessageManager;->mIsLastItemOfSelectAll:Z
 
@@ -1149,8 +1065,6 @@
 
 .method static synthetic access$4102(Lcom/android/mms/ui/SpamMessageManager;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/ui/SpamMessageManager;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/SpamMessageManager;->mIsLastItemOfSelectAll:Z
 
@@ -1159,8 +1073,6 @@
 
 .method static synthetic access$500(Lcom/android/mms/ui/SpamMessageManager;J)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/SpamMessageManager;
-    .param p1    # J
 
     invoke-direct {p0, p1, p2}, Lcom/android/mms/ui/SpamMessageManager;->startAsyncQueryDelayed(J)V
 
@@ -1169,7 +1081,6 @@
 
 .method static synthetic access$600(Lcom/android/mms/ui/SpamMessageManager;)Lcom/android/mms/ui/MsgSweepActionListView;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SpamMessageManager;
 
     iget-object v0, p0, Lcom/android/mms/ui/SpamMessageManager;->mListView:Lcom/android/mms/ui/MsgSweepActionListView;
 
@@ -1178,7 +1089,6 @@
 
 .method static synthetic access$700(Lcom/android/mms/ui/SpamMessageManager;)Lcom/android/mms/ui/SpamMessageListAdapter;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SpamMessageManager;
 
     iget-object v0, p0, Lcom/android/mms/ui/SpamMessageManager;->mMsgListAdapter:Lcom/android/mms/ui/SpamMessageListAdapter;
 
@@ -1187,9 +1097,6 @@
 
 .method static synthetic access$800(Lcom/android/mms/ui/SpamMessageManager;IZ)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/SpamMessageManager;
-    .param p1    # I
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/mms/ui/SpamMessageManager;->updateEmptyScreen(IZ)V
 
@@ -1198,7 +1105,6 @@
 
 .method static synthetic access$900(Lcom/android/mms/ui/SpamMessageManager;)Lcom/android/mms/animation/MsgDeleteActionAnimation;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SpamMessageManager;
 
     iget-object v0, p0, Lcom/android/mms/ui/SpamMessageManager;->mMsgDeleteActionAnimation:Lcom/android/mms/animation/MsgDeleteActionAnimation;
 
@@ -1207,17 +1113,6 @@
 
 .method private static addMessageToUri(Landroid/content/Context;Landroid/net/Uri;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Long;IZJLandroid/content/ContentValues;)Landroid/net/Uri;
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
-    .param p6    # Ljava/lang/Long;
-    .param p7    # I
-    .param p8    # Z
-    .param p9    # J
-    .param p11    # Landroid/content/ContentValues;
 
     new-instance v1, Landroid/content/ContentValues;
 
@@ -1341,16 +1236,6 @@
 
 .method private static addMessageToUri(Landroid/content/Context;Landroid/net/Uri;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;IZJLandroid/content/ContentValues;)Landroid/net/Uri;
     .locals 12
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/Long;
-    .param p6    # I
-    .param p7    # Z
-    .param p8    # J
-    .param p10    # Landroid/content/ContentValues;
 
     const/4 v5, 0x0
 
@@ -1437,10 +1322,6 @@
 
 .method public static confirmDeleteMessageDialog(Lcom/android/mms/ui/SpamMessageManager$DeleteMessageListener;ZLandroid/content/Context;Ljava/lang/String;)Landroid/app/AlertDialog;
     .locals 7
-    .param p0    # Lcom/android/mms/ui/SpamMessageManager$DeleteMessageListener;
-    .param p1    # Z
-    .param p2    # Landroid/content/Context;
-    .param p3    # Ljava/lang/String;
 
     const/4 v6, 0x0
 
@@ -1517,8 +1398,6 @@
 
 .method private confirmRestoreDialog(Landroid/content/DialogInterface$OnClickListener;I)V
     .locals 3
-    .param p1    # Landroid/content/DialogInterface$OnClickListener;
-    .param p2    # I
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
@@ -1551,7 +1430,6 @@
 
 .method private deleteMessage(Landroid/net/Uri;)V
     .locals 7
-    .param p1    # Landroid/net/Uri;
 
     const/4 v4, 0x0
 
@@ -1696,7 +1574,6 @@
 
 .method private disableAllMenu(Landroid/view/Menu;)V
     .locals 2
-    .param p1    # Landroid/view/Menu;
 
     const/4 v1, 0x0
 
@@ -1737,7 +1614,6 @@
 
 .method private disableSweepHanlder(Lcom/android/mms/ui/MsgSweepActionListView;)V
     .locals 1
-    .param p1    # Lcom/android/mms/ui/MsgSweepActionListView;
 
     const/4 v0, 0x0
 
@@ -1750,7 +1626,6 @@
 
 .method private enableSelecteMenu(Landroid/view/Menu;)V
     .locals 3
-    .param p1    # Landroid/view/Menu;
 
     const v2, 0x7f0b03f9
 
@@ -2001,7 +1876,6 @@
 
 .method private getOrCreateThreadId(Ljava/lang/String;)J
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/util/HashSet;
 
@@ -2020,7 +1894,6 @@
 
 .method private getProgressDialog(Ljava/lang/String;)Landroid/app/ProgressDialog;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/mms/ui/SpamMessageManager;->mProgressDialog:Landroid/app/ProgressDialog;
 
@@ -2051,9 +1924,6 @@
 
 .method private getQuantityText(III)Ljava/lang/String;
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v3, 0x1
 
@@ -2406,7 +2276,6 @@
 
 .method private isCursorValid(Landroid/database/Cursor;)Z
     .locals 1
-    .param p1    # Landroid/database/Cursor;
 
     invoke-interface {p1}, Landroid/database/Cursor;->isClosed()Z
 
@@ -2576,7 +2445,6 @@
 
 .method private openThread(I)V
     .locals 6
-    .param p1    # I
 
     const-string v3, "Mms/SpamMessageManager"
 
@@ -2757,7 +2625,6 @@
 
 .method private setSweepHandler(Lcom/android/mms/ui/MsgSweepActionListView;)V
     .locals 2
-    .param p1    # Lcom/android/mms/ui/MsgSweepActionListView;
 
     new-instance v0, Lcom/android/mms/ui/SweepHandler;
 
@@ -2774,7 +2641,6 @@
 
 .method private setTotalQuantityTextView(I)V
     .locals 4
-    .param p1    # I
 
     const v1, 0x7f0c00f3
 
@@ -2825,7 +2691,6 @@
 
 .method private startAsyncQueryDelayed(J)V
     .locals 2
-    .param p1    # J
 
     new-instance v0, Landroid/os/Handler;
 
@@ -2842,7 +2707,6 @@
 
 .method private startAsyncQueryInternal(Z)V
     .locals 11
-    .param p1    # Z
 
     :try_start_0
     const-string v7, "normalized_date DESC"
@@ -2994,7 +2858,6 @@
 
 .method private startViewer(I)V
     .locals 13
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/mms/ui/SpamMessageManager;->mListView:Lcom/android/mms/ui/MsgSweepActionListView;
 
@@ -3327,8 +3190,6 @@
 
 .method private updateEmptyScreen(IZ)V
     .locals 5
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v2, 0x0
 
@@ -3422,7 +3283,6 @@
 
 .method private updateEmptyViewBackground(Z)V
     .locals 3
-    .param p1    # Z
 
     invoke-direct {p0}, Lcom/android/mms/ui/SpamMessageManager;->isEmptyViewVisible()Z
 
@@ -3512,7 +3372,6 @@
 
 .method private updateMultiActionMenu(Landroid/view/Menu;)V
     .locals 6
-    .param p1    # Landroid/view/Menu;
 
     const v5, 0x7f0b03f9
 
@@ -3613,8 +3472,6 @@
 # virtual methods
 .method getMessageItem(Landroid/content/Context;Landroid/database/Cursor;)Lcom/android/mms/ui/MessageItem;
     .locals 11
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/database/Cursor;
 
     const/4 v0, 0x0
 
@@ -3684,7 +3541,6 @@
 
 .method public getNumber(I)Ljava/lang/String;
     .locals 9
-    .param p1    # I
 
     const/4 v5, 0x0
 
@@ -3772,7 +3628,6 @@
 
 .method public isCallable(I)Z
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/mms/ui/SpamMessageManager;->getNumber(I)Ljava/lang/String;
 
@@ -3793,7 +3648,6 @@
 
 .method public isListIndex(I)Z
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/mms/ui/SpamMessageManager;->isMessageIndex(I)Z
 
@@ -3804,7 +3658,6 @@
 
 .method public isMessageIndex(I)Z
     .locals 5
-    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -3848,7 +3701,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 3
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -3920,7 +3772,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     const v4, 0x7f0c028f
 
@@ -4026,7 +3877,6 @@
 
 .method protected onNewIntent(Landroid/content/Intent;)V
     .locals 0
-    .param p1    # Landroid/content/Intent;
 
     invoke-direct {p0}, Lcom/android/mms/ui/SpamMessageManager;->startAsyncQuery()V
 
@@ -4037,7 +3887,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 2
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v0, 0x1
 
@@ -4111,7 +3960,6 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)Z
     .locals 4
-    .param p1    # Landroid/view/Menu;
 
     const-string v0, "Mms/SpamMessageManager"
 
@@ -4153,7 +4001,6 @@
 
 .method public onProgressDlgCompleted(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Lcom/android/mms/ui/SpamMessageManager;->isFinishing()Z
 
@@ -4183,7 +4030,6 @@
 
 .method public onProgressDlgStart(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/SpamMessageManager;->getProgressDialog(Ljava/lang/String;)Landroid/app/ProgressDialog;
 
@@ -4227,7 +4073,6 @@
 
 .method protected onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     const-string v2, "Mms/SpamMessageManager"
 
@@ -4345,7 +4190,6 @@
 
 .method public onSweepActionCanceled(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "Mms/SpamMessageManager"
 
@@ -4374,8 +4218,6 @@
 
 .method public onSweepActionFired(II)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     const/4 v5, 0x1
 
@@ -4482,7 +4324,6 @@
 
 .method public onSweepActionStarted(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "Mms/SpamMessageManager"
 
@@ -4562,7 +4403,6 @@
 
 .method public setAnimationEnable(Z)V
     .locals 2
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/SpamMessageManager;->mIsAnimationEnable:Z
 
@@ -4593,7 +4433,6 @@
 
 .method public setMessageSelectAll(Z)V
     .locals 3
-    .param p1    # Z
 
     const-string v0, "Mms/SpamMessageManager"
 

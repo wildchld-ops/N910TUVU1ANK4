@@ -160,8 +160,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/internal/view/IInputMethodManager;Landroid/os/Looper;)V
     .locals 3
-    .param p1    # Lcom/android/internal/view/IInputMethodManager;
-    .param p2    # Landroid/os/Looper;
 
     const/16 v2, 0x14
 
@@ -238,9 +236,6 @@
 
 .method static synthetic access$000(Landroid/view/inputmethod/InputMethodManager;ZZ)Z
     .locals 1
-    .param p0    # Landroid/view/inputmethod/InputMethodManager;
-    .param p1    # Z
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Landroid/view/inputmethod/InputMethodManager;->checkFocusNoStartInput(ZZ)Z
 
@@ -251,8 +246,6 @@
 
 .method static synthetic access$200(Landroid/view/inputmethod/InputMethodManager;Landroid/view/inputmethod/InputMethodManager$PendingEvent;)V
     .locals 0
-    .param p0    # Landroid/view/inputmethod/InputMethodManager;
-    .param p1    # Landroid/view/inputmethod/InputMethodManager$PendingEvent;
 
     invoke-direct {p0, p1}, Landroid/view/inputmethod/InputMethodManager;->recyclePendingEventLocked(Landroid/view/inputmethod/InputMethodManager$PendingEvent;)V
 
@@ -261,8 +254,6 @@
 
 .method private checkFocusNoStartInput(ZZ)Z
     .locals 6
-    .param p1    # Z
-    .param p2    # Z
 
     const/4 v2, 0x1
 
@@ -526,11 +517,6 @@
 
 .method private obtainPendingEventLocked(Landroid/view/InputEvent;Ljava/lang/Object;Ljava/lang/String;Landroid/view/inputmethod/InputMethodManager$FinishedInputEventCallback;Landroid/os/Handler;)Landroid/view/inputmethod/InputMethodManager$PendingEvent;
     .locals 2
-    .param p1    # Landroid/view/InputEvent;
-    .param p2    # Ljava/lang/Object;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Landroid/view/inputmethod/InputMethodManager$FinishedInputEventCallback;
-    .param p5    # Landroid/os/Handler;
 
     iget-object v1, p0, Landroid/view/inputmethod/InputMethodManager;->mPendingEventPool:Landroid/util/Pools$Pool;
 
@@ -572,7 +558,6 @@
 
 .method private recyclePendingEventLocked(Landroid/view/inputmethod/InputMethodManager$PendingEvent;)V
     .locals 1
-    .param p1    # Landroid/view/inputmethod/InputMethodManager$PendingEvent;
 
     invoke-virtual {p1}, Landroid/view/inputmethod/InputMethodManager$PendingEvent;->recycle()V
 
@@ -585,7 +570,6 @@
 
 .method static scheduleCheckFocusLocked(Landroid/view/View;)V
     .locals 1
-    .param p0    # Landroid/view/View;
 
     invoke-virtual {p0}, Landroid/view/View;->getViewRootImpl()Landroid/view/ViewRootImpl;
 
@@ -761,10 +745,6 @@
 
 .method public dispatchInputEvent(Landroid/view/InputEvent;Ljava/lang/Object;Landroid/view/inputmethod/InputMethodManager$FinishedInputEventCallback;Landroid/os/Handler;)I
     .locals 13
-    .param p1    # Landroid/view/InputEvent;
-    .param p2    # Ljava/lang/Object;
-    .param p3    # Landroid/view/inputmethod/InputMethodManager$FinishedInputEventCallback;
-    .param p4    # Landroid/os/Handler;
 
     iget-object v12, p0, Landroid/view/inputmethod/InputMethodManager;->mH:Landroid/view/inputmethod/InputMethodManager$H;
 
@@ -1012,8 +992,6 @@
 
 .method public displayCompletions(Landroid/view/View;[Landroid/view/inputmethod/CompletionInfo;)V
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # [Landroid/view/inputmethod/CompletionInfo;
 
     invoke-virtual {p0}, Landroid/view/inputmethod/InputMethodManager;->checkFocus()V
 
@@ -1087,9 +1065,6 @@
 
 .method doDump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     new-instance v0, Landroid/util/PrintWriterPrinter;
 
@@ -1555,9 +1530,6 @@
 
 .method finishedInputEvent(IZZ)V
     .locals 7
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # Z
 
     iget-object v3, p0, Landroid/view/inputmethod/InputMethodManager;->mH:Landroid/view/inputmethod/InputMethodManager$H;
 
@@ -1659,7 +1631,6 @@
 
 .method public focusIn(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     iget-object v1, p0, Landroid/view/inputmethod/InputMethodManager;->mH:Landroid/view/inputmethod/InputMethodManager$H;
 
@@ -1684,7 +1655,6 @@
 
 .method focusInLocked(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Landroid/view/inputmethod/InputMethodManager;->mCurRootView:Landroid/view/View;
 
@@ -1707,7 +1677,6 @@
 
 .method public focusOut(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     iget-object v1, p0, Landroid/view/inputmethod/InputMethodManager;->mH:Landroid/view/inputmethod/InputMethodManager$H;
 
@@ -1747,7 +1716,6 @@
 
 .method public forceHideSoftInput(Landroid/os/ResultReceiver;)Z
     .locals 4
-    .param p1    # Landroid/os/ResultReceiver;
 
     iget-object v2, p0, Landroid/view/inputmethod/InputMethodManager;->mH:Landroid/view/inputmethod/InputMethodManager$H;
 
@@ -1901,8 +1869,6 @@
 
 .method public getEnabledInputMethodSubtypeList(Landroid/view/inputmethod/InputMethodInfo;Z)Ljava/util/List;
     .locals 3
-    .param p1    # Landroid/view/inputmethod/InputMethodInfo;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2243,8 +2209,6 @@
 
 .method public hideSoftInputFromInputMethod(Landroid/os/IBinder;I)V
     .locals 2
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # I
 
     :try_start_0
     iget-object v1, p0, Landroid/view/inputmethod/InputMethodManager;->mService:Lcom/android/internal/view/IInputMethodManager;
@@ -2267,8 +2231,6 @@
 
 .method public hideSoftInputFromWindow(Landroid/os/IBinder;I)Z
     .locals 1
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -2281,9 +2243,6 @@
 
 .method public hideSoftInputFromWindow(Landroid/os/IBinder;ILandroid/os/ResultReceiver;)Z
     .locals 4
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # I
-    .param p3    # Landroid/os/ResultReceiver;
 
     const/4 v0, 0x0
 
@@ -2354,7 +2313,6 @@
 
 .method public hideStatusIcon(Landroid/os/IBinder;)V
     .locals 4
-    .param p1    # Landroid/os/IBinder;
 
     :try_start_0
     iget-object v1, p0, Landroid/view/inputmethod/InputMethodManager;->mService:Lcom/android/internal/view/IInputMethodManager;
@@ -2381,8 +2339,6 @@
 
 .method invokeFinishedInputEventCallback(Landroid/view/inputmethod/InputMethodManager$PendingEvent;Z)V
     .locals 2
-    .param p1    # Landroid/view/inputmethod/InputMethodManager$PendingEvent;
-    .param p2    # Z
 
     iput-boolean p2, p1, Landroid/view/inputmethod/InputMethodManager$PendingEvent;->mHandled:Z
 
@@ -2504,7 +2460,6 @@
 
 .method public isActive(Landroid/view/View;)Z
     .locals 2
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p0}, Landroid/view/inputmethod/InputMethodManager;->checkFocus()V
 
@@ -2631,7 +2586,6 @@
 
 .method public isWatchingCursor(Landroid/view/View;)Z
     .locals 1
-    .param p1    # Landroid/view/View;
 
     const/4 v0, 0x0
 
@@ -2640,9 +2594,6 @@
 
 .method public notifySuggestionPicked(Landroid/text/style/SuggestionSpan;Ljava/lang/String;I)V
     .locals 2
-    .param p1    # Landroid/text/style/SuggestionSpan;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     :try_start_0
     iget-object v1, p0, Landroid/view/inputmethod/InputMethodManager;->mService:Lcom/android/internal/view/IInputMethodManager;
@@ -2665,11 +2616,6 @@
 
 .method public onWindowFocus(Landroid/view/View;Landroid/view/View;IZI)V
     .locals 10
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # Z
-    .param p5    # I
 
     const/4 v2, 0x0
 
@@ -2829,7 +2775,6 @@
 
 .method public registerSuggestionSpansForNotification([Landroid/text/style/SuggestionSpan;)V
     .locals 2
-    .param p1    # [Landroid/text/style/SuggestionSpan;
 
     :try_start_0
     iget-object v1, p0, Landroid/view/inputmethod/InputMethodManager;->mService:Lcom/android/internal/view/IInputMethodManager;
@@ -2852,7 +2797,6 @@
 
 .method public reportFinishInputConnection(Landroid/view/inputmethod/InputConnection;)V
     .locals 1
-    .param p1    # Landroid/view/inputmethod/InputConnection;
 
     iget-object v0, p0, Landroid/view/inputmethod/InputMethodManager;->mServedInputConnection:Landroid/view/inputmethod/InputConnection;
 
@@ -2874,7 +2818,6 @@
 
 .method public restartInput(Landroid/view/View;)V
     .locals 3
-    .param p1    # Landroid/view/View;
 
     const/4 v2, 0x0
 
@@ -2935,9 +2878,6 @@
 
 .method public sendAppPrivateCommand(Landroid/view/View;Ljava/lang/String;Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/view/View;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/os/Bundle;
 
     invoke-virtual {p0}, Landroid/view/inputmethod/InputMethodManager;->checkFocus()V
 
@@ -3038,8 +2978,6 @@
 
 .method public sendAppPrivateCommand(Ljava/lang/String;Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Bundle;
 
     invoke-virtual {p0}, Landroid/view/inputmethod/InputMethodManager;->checkFocus()V
 
@@ -3118,7 +3056,6 @@
 
 .method sendInputEventAndReportResultOnMainLooper(Landroid/view/inputmethod/InputMethodManager$PendingEvent;)V
     .locals 4
-    .param p1    # Landroid/view/inputmethod/InputMethodManager$PendingEvent;
 
     const/4 v0, 0x1
 
@@ -3170,7 +3107,6 @@
 
 .method sendInputEventOnMainLooperLocked(Landroid/view/inputmethod/InputMethodManager$PendingEvent;)I
     .locals 7
-    .param p1    # Landroid/view/inputmethod/InputMethodManager$PendingEvent;
 
     iget-object v3, p0, Landroid/view/inputmethod/InputMethodManager;->mCurChannel:Landroid/view/InputChannel;
 
@@ -3256,8 +3192,6 @@
 
 .method public setAdditionalInputMethodSubtypes(Ljava/lang/String;[Landroid/view/inputmethod/InputMethodSubtype;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Landroid/view/inputmethod/InputMethodSubtype;
 
     iget-object v2, p0, Landroid/view/inputmethod/InputMethodManager;->mH:Landroid/view/inputmethod/InputMethodManager$H;
 
@@ -3318,7 +3252,6 @@
 
 .method public setBrightnessWithKeyboard(I)V
     .locals 1
-    .param p1    # I
 
     :try_start_0
     iget-object v0, p0, Landroid/view/inputmethod/InputMethodManager;->mService:Lcom/android/internal/view/IInputMethodManager;
@@ -3338,7 +3271,6 @@
 
 .method public setCurrentInputMethodSubtype(Landroid/view/inputmethod/InputMethodSubtype;)Z
     .locals 5
-    .param p1    # Landroid/view/inputmethod/InputMethodSubtype;
 
     iget-object v2, p0, Landroid/view/inputmethod/InputMethodManager;->mH:Landroid/view/inputmethod/InputMethodManager$H;
 
@@ -3405,7 +3337,6 @@
 
 .method public setFullscreenMode(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/view/inputmethod/InputMethodManager;->mFullscreenMode:Z
 
@@ -3414,9 +3345,6 @@
 
 .method public setImeWindowStatus(Landroid/os/IBinder;II)V
     .locals 2
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # I
-    .param p3    # I
 
     :try_start_0
     iget-object v1, p0, Landroid/view/inputmethod/InputMethodManager;->mService:Lcom/android/internal/view/IInputMethodManager;
@@ -3439,7 +3367,6 @@
 
 .method setInputChannelLocked(Landroid/view/InputChannel;)V
     .locals 1
-    .param p1    # Landroid/view/InputChannel;
 
     iget-object v0, p0, Landroid/view/inputmethod/InputMethodManager;->mCurChannel:Landroid/view/InputChannel;
 
@@ -3477,8 +3404,6 @@
 
 .method public setInputMethod(Landroid/os/IBinder;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Ljava/lang/String;
 
     :try_start_0
     iget-object v1, p0, Landroid/view/inputmethod/InputMethodManager;->mService:Lcom/android/internal/view/IInputMethodManager;
@@ -3501,9 +3426,6 @@
 
 .method public setInputMethodAndSubtype(Landroid/os/IBinder;Ljava/lang/String;Landroid/view/inputmethod/InputMethodSubtype;)V
     .locals 2
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/view/inputmethod/InputMethodSubtype;
 
     :try_start_0
     iget-object v1, p0, Landroid/view/inputmethod/InputMethodManager;->mService:Lcom/android/internal/view/IInputMethodManager;
@@ -3526,7 +3448,6 @@
 
 .method public setWACOMPen(Z)V
     .locals 2
-    .param p1    # Z
 
     :try_start_0
     iget-object v1, p0, Landroid/view/inputmethod/InputMethodManager;->mService:Lcom/android/internal/view/IInputMethodManager;
@@ -3554,7 +3475,6 @@
 
 .method public shouldOfferSwitchingToNextInputMethod(Landroid/os/IBinder;)Z
     .locals 5
-    .param p1    # Landroid/os/IBinder;
 
     iget-object v2, p0, Landroid/view/inputmethod/InputMethodManager;->mH:Landroid/view/inputmethod/InputMethodManager$H;
 
@@ -3621,7 +3541,6 @@
 
 .method public showInputMethodAndSubtypeEnabler(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     iget-object v2, p0, Landroid/view/inputmethod/InputMethodManager;->mH:Landroid/view/inputmethod/InputMethodManager$H;
 
@@ -3708,7 +3627,6 @@
 
 .method public showSideSyncSoftInput(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/view/inputmethod/InputMethodManager;->mCurMethod:Lcom/android/internal/view/IInputMethodSession;
 
@@ -3733,8 +3651,6 @@
 
 .method public showSoftInput(Landroid/view/View;I)Z
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -3747,9 +3663,6 @@
 
 .method public showSoftInput(Landroid/view/View;ILandroid/os/ResultReceiver;)Z
     .locals 4
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # Landroid/os/ResultReceiver;
 
     const/4 v0, 0x0
 
@@ -3860,8 +3773,6 @@
 
 .method public showSoftInputFromInputMethod(Landroid/os/IBinder;I)V
     .locals 2
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # I
 
     :try_start_0
     iget-object v1, p0, Landroid/view/inputmethod/InputMethodManager;->mService:Lcom/android/internal/view/IInputMethodManager;
@@ -3884,8 +3795,6 @@
 
 .method public showSoftInputUnchecked(ILandroid/os/ResultReceiver;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/os/ResultReceiver;
 
     invoke-virtual {p0}, Landroid/view/inputmethod/InputMethodManager;->checkFocus()V
 
@@ -3946,9 +3855,6 @@
 
 .method public showStatusIcon(Landroid/os/IBinder;Ljava/lang/String;I)V
     .locals 2
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     :try_start_0
     iget-object v1, p0, Landroid/view/inputmethod/InputMethodManager;->mService:Lcom/android/internal/view/IInputMethodManager;
@@ -3971,7 +3877,6 @@
 
 .method public startGettingWindowFocus(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     iget-object v1, p0, Landroid/view/inputmethod/InputMethodManager;->mH:Landroid/view/inputmethod/InputMethodManager$H;
 
@@ -3996,10 +3901,6 @@
 
 .method startInputInner(Landroid/os/IBinder;III)Z
     .locals 15
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iget-object v2, p0, Landroid/view/inputmethod/InputMethodManager;->mH:Landroid/view/inputmethod/InputMethodManager$H;
 
@@ -4349,7 +4250,6 @@
 
 .method public switchToLastInputMethod(Landroid/os/IBinder;)Z
     .locals 5
-    .param p1    # Landroid/os/IBinder;
 
     iget-object v2, p0, Landroid/view/inputmethod/InputMethodManager;->mH:Landroid/view/inputmethod/InputMethodManager$H;
 
@@ -4416,8 +4316,6 @@
 
 .method public switchToNextInputMethod(Landroid/os/IBinder;Z)Z
     .locals 5
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Z
 
     iget-object v2, p0, Landroid/view/inputmethod/InputMethodManager;->mH:Landroid/view/inputmethod/InputMethodManager$H;
 
@@ -4484,8 +4382,6 @@
 
 .method public toggleSoftInput(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Landroid/view/inputmethod/InputMethodManager;->mServedView:Landroid/view/View;
 
@@ -4541,9 +4437,6 @@
 
 .method public toggleSoftInputFromWindow(Landroid/os/IBinder;II)V
     .locals 2
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # I
-    .param p3    # I
 
     iget-object v1, p0, Landroid/view/inputmethod/InputMethodManager;->mH:Landroid/view/inputmethod/InputMethodManager$H;
 
@@ -4607,11 +4500,6 @@
 
 .method public updateCursor(Landroid/view/View;IIII)V
     .locals 5
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-virtual {p0}, Landroid/view/inputmethod/InputMethodManager;->checkFocus()V
 
@@ -4735,9 +4623,6 @@
 
 .method public updateExtractedText(Landroid/view/View;ILandroid/view/inputmethod/ExtractedText;)V
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # Landroid/view/inputmethod/ExtractedText;
 
     invoke-virtual {p0}, Landroid/view/inputmethod/InputMethodManager;->checkFocus()V
 
@@ -4807,11 +4692,6 @@
 
 .method public updateSelection(Landroid/view/View;IIII)V
     .locals 9
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-virtual {p0}, Landroid/view/inputmethod/InputMethodManager;->checkFocus()V
 
@@ -4950,7 +4830,6 @@
 
 .method public viewClicked(Landroid/view/View;)V
     .locals 6
-    .param p1    # Landroid/view/View;
 
     iget-object v2, p0, Landroid/view/inputmethod/InputMethodManager;->mServedView:Landroid/view/View;
 
@@ -5065,7 +4944,6 @@
 
 .method public windowDismissed(Landroid/os/IBinder;)V
     .locals 2
-    .param p1    # Landroid/os/IBinder;
 
     invoke-virtual {p0}, Landroid/view/inputmethod/InputMethodManager;->checkFocus()V
 

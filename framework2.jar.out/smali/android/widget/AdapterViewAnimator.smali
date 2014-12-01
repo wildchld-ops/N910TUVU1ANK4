@@ -117,7 +117,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -128,8 +127,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -140,9 +137,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v6, -0x1
 
@@ -253,7 +247,6 @@
 
 .method static synthetic access$000(Landroid/widget/AdapterViewAnimator;)I
     .locals 1
-    .param p0    # Landroid/widget/AdapterViewAnimator;
 
     iget v0, p0, Landroid/widget/AdapterViewAnimator;->mTouchMode:I
 
@@ -262,7 +255,6 @@
 
 .method private addChild(Landroid/view/View;)V
     .locals 4
-    .param p1    # Landroid/view/View;
 
     const/4 v3, 0x0
 
@@ -307,7 +299,6 @@
 
 .method private getMetaDataForChild(Landroid/view/View;)Landroid/widget/AdapterViewAnimator$ViewAndMetaData;
     .locals 3
-    .param p1    # Landroid/view/View;
 
     iget-object v2, p0, Landroid/widget/AdapterViewAnimator;->mViewsMap:Ljava/util/HashMap;
 
@@ -419,8 +410,6 @@
 
 .method private setDisplayedChild(IZ)V
     .locals 3
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v2, 0x0
 
@@ -519,8 +508,6 @@
 
 .method applyTransformForChildAtIndex(Landroid/view/View;I)V
     .locals 0
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     return-void
 .end method
@@ -567,8 +554,6 @@
 
 .method configureViewAnimator(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     add-int/lit8 v0, p1, -0x1
 
@@ -602,7 +587,6 @@
 
 .method createOrReuseLayoutParams(Landroid/view/View;)Landroid/view/ViewGroup$LayoutParams;
     .locals 4
-    .param p1    # Landroid/view/View;
 
     const/4 v3, 0x0
 
@@ -833,7 +817,6 @@
 
 .method getViewAtRelativeIndex(I)Landroid/view/View;
     .locals 3
-    .param p1    # I
 
     if-ltz p1, :cond_0
 
@@ -933,7 +916,6 @@
 
 .method hideTapFeedback(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     const/4 v0, 0x0
 
@@ -944,8 +926,6 @@
 
 .method modulo(II)I
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     if-lez p2, :cond_0
 
@@ -966,7 +946,6 @@
 
 .method public onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
     .locals 1
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
 
     invoke-super {p0, p1}, Landroid/widget/AdapterView;->onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
 
@@ -983,7 +962,6 @@
 
 .method public onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
     .locals 1
-    .param p1    # Landroid/view/accessibility/AccessibilityNodeInfo;
 
     invoke-super {p0, p1}, Landroid/widget/AdapterView;->onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
 
@@ -1000,11 +978,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 7
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-virtual {p0}, Landroid/widget/AdapterViewAnimator;->checkForAndHandleDataChanged()V
 
@@ -1053,8 +1026,6 @@
 
 .method protected onMeasure(II)V
     .locals 12
-    .param p1    # I
-    .param p2    # I
 
     const/high16 v11, 0x1000000
 
@@ -1261,7 +1232,6 @@
 
 .method public onRestoreInstanceState(Landroid/os/Parcelable;)V
     .locals 3
-    .param p1    # Landroid/os/Parcelable;
 
     move-object v0, p1
 
@@ -1329,7 +1299,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 10
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v9, 0x0
 
@@ -1580,7 +1549,6 @@
 
 .method public setAdapter(Landroid/widget/Adapter;)V
     .locals 3
-    .param p1    # Landroid/widget/Adapter;
 
     const/4 v2, 0x0
 
@@ -1643,7 +1611,6 @@
 
 .method public setAnimateFirstView(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/widget/AdapterViewAnimator;->mAnimateFirstTime:Z
 
@@ -1652,7 +1619,6 @@
 
 .method public setDisplayedChild(I)V
     .locals 1
-    .param p1    # I
     .annotation runtime Landroid/view/RemotableViewMethod;
     .end annotation
 
@@ -1665,7 +1631,6 @@
 
 .method public setInAnimation(Landroid/animation/ObjectAnimator;)V
     .locals 0
-    .param p1    # Landroid/animation/ObjectAnimator;
 
     iput-object p1, p0, Landroid/widget/AdapterViewAnimator;->mInAnimation:Landroid/animation/ObjectAnimator;
 
@@ -1674,8 +1639,6 @@
 
 .method public setInAnimation(Landroid/content/Context;I)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     invoke-static {p1, p2}, Landroid/animation/AnimatorInflater;->loadAnimator(Landroid/content/Context;I)Landroid/animation/Animator;
 
@@ -1690,7 +1653,6 @@
 
 .method public setOutAnimation(Landroid/animation/ObjectAnimator;)V
     .locals 0
-    .param p1    # Landroid/animation/ObjectAnimator;
 
     iput-object p1, p0, Landroid/widget/AdapterViewAnimator;->mOutAnimation:Landroid/animation/ObjectAnimator;
 
@@ -1699,8 +1661,6 @@
 
 .method public setOutAnimation(Landroid/content/Context;I)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     invoke-static {p1, p2}, Landroid/animation/AnimatorInflater;->loadAnimator(Landroid/content/Context;I)Landroid/animation/Animator;
 
@@ -1715,7 +1675,6 @@
 
 .method public setRemoteViewsAdapter(Landroid/content/Intent;)V
     .locals 4
-    .param p1    # Landroid/content/Intent;
     .annotation runtime Landroid/view/RemotableViewMethod;
     .end annotation
 
@@ -1779,7 +1738,6 @@
 
 .method public setRemoteViewsOnClickHandler(Landroid/widget/RemoteViews$OnClickHandler;)V
     .locals 1
-    .param p1    # Landroid/widget/RemoteViews$OnClickHandler;
 
     iget-object v0, p0, Landroid/widget/AdapterViewAnimator;->mRemoteViewsAdapter:Landroid/widget/RemoteViewsAdapter;
 
@@ -1795,7 +1753,6 @@
 
 .method public setSelection(I)V
     .locals 0
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/widget/AdapterViewAnimator;->setDisplayedChild(I)V
 
@@ -1816,8 +1773,6 @@
 
 .method showOnly(IZ)V
     .locals 34
-    .param p1    # I
-    .param p2    # Z
 
     move-object/from16 v0, p0
 
@@ -2476,7 +2431,6 @@
 
 .method showTapFeedback(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     const/4 v0, 0x1
 
@@ -2487,10 +2441,6 @@
 
 .method transformViewForTransition(IILandroid/view/View;Z)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/view/View;
-    .param p4    # Z
 
     const/4 v0, -0x1
 

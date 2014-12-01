@@ -161,7 +161,6 @@
 
 .method public static returnMatrix(Lcom/voovio/geometry/Matrix;)V
     .locals 3
-    .param p0    # Lcom/voovio/geometry/Matrix;
 
     sget-object v1, Lcom/voovio/geometry/MatrixPool;->m_oPoolLock:Ljava/lang/Object;
 

@@ -38,9 +38,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/launcher2/SurfaceWidgetConnection$Name;Lcom/android/launcher2/SurfaceWidgetView;Lcom/android/launcher2/SurfaceWidgetConnection$ServiceConn;)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/SurfaceWidgetConnection$Name;
-    .param p2    # Lcom/android/launcher2/SurfaceWidgetView;
-    .param p3    # Lcom/android/launcher2/SurfaceWidgetConnection$ServiceConn;
 
     invoke-direct {p0}, Lcom/samsung/surfacewidget/IRemoteServiceCallback$Stub;-><init>()V
 
@@ -67,7 +64,6 @@
 
 .method static synthetic access$300(Lcom/android/launcher2/SurfaceWidgetConnection$ServiceConn$WidgetViewCommunicator;)Lcom/android/launcher2/SurfaceWidgetConnection$ServiceConn;
     .locals 1
-    .param p0    # Lcom/android/launcher2/SurfaceWidgetConnection$ServiceConn$WidgetViewCommunicator;
 
     iget-object v0, p0, Lcom/android/launcher2/SurfaceWidgetConnection$ServiceConn$WidgetViewCommunicator;->mServiceConn:Lcom/android/launcher2/SurfaceWidgetConnection$ServiceConn;
 
@@ -76,7 +72,6 @@
 
 .method static synthetic access$400(Lcom/android/launcher2/SurfaceWidgetConnection$ServiceConn$WidgetViewCommunicator;)Lcom/sec/dtl/launcher/GyroForShadow$VectorListener;
     .locals 1
-    .param p0    # Lcom/android/launcher2/SurfaceWidgetConnection$ServiceConn$WidgetViewCommunicator;
 
     iget-object v0, p0, Lcom/android/launcher2/SurfaceWidgetConnection$ServiceConn$WidgetViewCommunicator;->mGyroListener:Lcom/sec/dtl/launcher/GyroForShadow$VectorListener;
 
@@ -85,8 +80,6 @@
 
 .method static synthetic access$402(Lcom/android/launcher2/SurfaceWidgetConnection$ServiceConn$WidgetViewCommunicator;Lcom/sec/dtl/launcher/GyroForShadow$VectorListener;)Lcom/sec/dtl/launcher/GyroForShadow$VectorListener;
     .locals 0
-    .param p0    # Lcom/android/launcher2/SurfaceWidgetConnection$ServiceConn$WidgetViewCommunicator;
-    .param p1    # Lcom/sec/dtl/launcher/GyroForShadow$VectorListener;
 
     iput-object p1, p0, Lcom/android/launcher2/SurfaceWidgetConnection$ServiceConn$WidgetViewCommunicator;->mGyroListener:Lcom/sec/dtl/launcher/GyroForShadow$VectorListener;
 
@@ -95,7 +88,6 @@
 
 .method private static logWidgetViewUnavailable(Ljava/lang/String;)V
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     # getter for: Lcom/android/launcher2/SurfaceWidgetConnection;->DEBUG:Z
     invoke-static {}, Lcom/android/launcher2/SurfaceWidgetConnection;->access$100()Z
@@ -134,7 +126,6 @@
 # virtual methods
 .method public acceptedFocus(Z)V
     .locals 3
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -198,8 +189,6 @@
 
 .method public acceptedSurfaceSize(II)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -342,7 +331,6 @@
 
 .method public checkVersion(I)V
     .locals 2
-    .param p1    # I
 
     const v0, 0x39f50
 
@@ -390,7 +378,6 @@
 
 .method public onSurfaceWidgetError(Ljava/lang/Exception;)V
     .locals 4
-    .param p1    # Ljava/lang/Exception;
 
     const-string v1, "SurfaceWidgetConnection"
 
@@ -527,7 +514,6 @@
 
 .method public requestDestroy(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -599,8 +585,6 @@
 
 .method public requestKeyboard(ILjava/lang/String;)V
     .locals 4
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -672,7 +656,6 @@
 
 .method public requestPositionUpdates(Z)V
     .locals 3
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -749,8 +732,6 @@
 
 .method public requestSizeChange(II)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -832,7 +813,6 @@
 
 .method public requestTalkbackSay(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -900,7 +880,6 @@
 
 .method public requestTilt(Z)V
     .locals 4
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -982,7 +961,6 @@
 
 .method public setOpaqueness(Z)V
     .locals 4
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1054,7 +1032,6 @@
 
 .method public startActivity(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -1120,7 +1097,6 @@
 
 .method public updateContentDescription(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

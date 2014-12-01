@@ -30,7 +30,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/internal/policy/impl/WindowOrientationListener;)V
     .locals 1
-    .param p1    # Lcom/android/internal/policy/impl/WindowOrientationListener;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -45,7 +44,6 @@
 
 .method static synthetic access$200(Lcom/android/internal/policy/impl/WindowOrientationListener$SContextListenerImpl;)V
     .locals 0
-    .param p0    # Lcom/android/internal/policy/impl/WindowOrientationListener$SContextListenerImpl;
 
     invoke-direct {p0}, Lcom/android/internal/policy/impl/WindowOrientationListener$SContextListenerImpl;->resetRotation()V
 
@@ -245,7 +243,6 @@
 
 .method public onSContextChanged(Landroid/hardware/scontext/SContextEvent;)V
     .locals 9
-    .param p1    # Landroid/hardware/scontext/SContextEvent;
 
     const/4 v4, 0x1
 
@@ -497,7 +494,6 @@
 
 .method public setSmartRotation(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/internal/policy/impl/WindowOrientationListener$SContextListenerImpl;->bsmartRotation:Z
 

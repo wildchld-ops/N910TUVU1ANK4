@@ -21,7 +21,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/recent/RecentsPanelView$25;Landroid/view/View;)V
     .locals 0
-    .param p2    # Landroid/view/View;
 
     iput-object p1, p0, Lcom/android/systemui/recent/RecentsPanelView$25$1;->this$1:Lcom/android/systemui/recent/RecentsPanelView$25;
 
@@ -34,7 +33,6 @@
 # virtual methods
 .method public onDrawShadow(Landroid/graphics/Canvas;)V
     .locals 3
-    .param p1    # Landroid/graphics/Canvas;
 
     const/4 v0, 0x0
 
@@ -76,8 +74,6 @@
 
 .method public onProvideShadowMetrics(Landroid/graphics/Point;Landroid/graphics/Point;)V
     .locals 2
-    .param p1    # Landroid/graphics/Point;
-    .param p2    # Landroid/graphics/Point;
 
     iget-object v0, p0, Lcom/android/systemui/recent/RecentsPanelView$25$1;->this$1:Lcom/android/systemui/recent/RecentsPanelView$25;
 

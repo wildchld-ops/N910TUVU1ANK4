@@ -38,13 +38,6 @@
 # direct methods
 .method constructor <init>(IFFLandroid/speech/tts/AudioPlaybackHandler;Landroid/speech/tts/TextToSpeechService$UtteranceProgressDispatcher;Ljava/lang/Object;Landroid/speech/tts/EventLogger;)V
     .locals 2
-    .param p1    # I
-    .param p2    # F
-    .param p3    # F
-    .param p4    # Landroid/speech/tts/AudioPlaybackHandler;
-    .param p5    # Landroid/speech/tts/TextToSpeechService$UtteranceProgressDispatcher;
-    .param p6    # Ljava/lang/Object;
-    .param p7    # Landroid/speech/tts/EventLogger;
 
     const/4 v1, 0x0
 
@@ -85,9 +78,6 @@
 # virtual methods
 .method public audioAvailable([BII)I
     .locals 7
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
 
     const/4 v3, 0x0
 
@@ -296,9 +286,6 @@
 
 .method public start(III)I
     .locals 12
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v1, -0x1
 
@@ -407,7 +394,6 @@
 
 .method stopImpl(Z)V
     .locals 4
-    .param p1    # Z
 
     iget-object v1, p0, Landroid/speech/tts/PlaybackSynthesisCallback;->mLogger:Landroid/speech/tts/EventLogger;
 

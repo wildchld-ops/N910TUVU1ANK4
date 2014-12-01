@@ -45,8 +45,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -73,7 +71,6 @@
 
 .method static synthetic access$000(Lcom/android/incallui/RejectCallWithMessageContentIconMode;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/incallui/RejectCallWithMessageContentIconMode;
 
     iget-object v0, p0, Lcom/android/incallui/RejectCallWithMessageContentIconMode;->mIconModeItems:Ljava/util/ArrayList;
 
@@ -82,8 +79,6 @@
 
 .method static synthetic access$100(Lcom/android/incallui/RejectCallWithMessageContentIconMode;I)Ljava/util/HashMap;
     .locals 1
-    .param p0    # Lcom/android/incallui/RejectCallWithMessageContentIconMode;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/incallui/RejectCallWithMessageContentIconMode;->findItem(I)Ljava/util/HashMap;
 
@@ -94,7 +89,6 @@
 
 .method static synthetic access$200(Lcom/android/incallui/RejectCallWithMessageContentIconMode;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/incallui/RejectCallWithMessageContentIconMode;
 
     iget-object v0, p0, Lcom/android/incallui/RejectCallWithMessageContentIconMode;->mContext:Landroid/content/Context;
 
@@ -103,7 +97,6 @@
 
 .method private findItem(I)Ljava/util/HashMap;
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -290,9 +283,6 @@
 
 .method public onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
     .locals 4
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -361,7 +351,6 @@
 
 .method protected onWindowVisibilityChanged(I)V
     .locals 0
-    .param p1    # I
 
     invoke-super {p0, p1}, Landroid/view/View;->onWindowVisibilityChanged(I)V
 
@@ -370,7 +359,6 @@
 
 .method public setOnItemClickListener(Lcom/android/incallui/RejectCallWithMessageContentIconMode$OnItemClickListener;)V
     .locals 0
-    .param p1    # Lcom/android/incallui/RejectCallWithMessageContentIconMode$OnItemClickListener;
 
     iput-object p1, p0, Lcom/android/incallui/RejectCallWithMessageContentIconMode;->mOnItemClickListener:Lcom/android/incallui/RejectCallWithMessageContentIconMode$OnItemClickListener;
 

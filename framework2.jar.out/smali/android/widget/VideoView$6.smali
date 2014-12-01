@@ -36,8 +36,6 @@
 # virtual methods
 .method public onBufferingUpdate(Landroid/media/MediaPlayer;I)V
     .locals 1
-    .param p1    # Landroid/media/MediaPlayer;
-    .param p2    # I
 
     iget-object v0, p0, Landroid/widget/VideoView$6;->this$0:Landroid/widget/VideoView;
 

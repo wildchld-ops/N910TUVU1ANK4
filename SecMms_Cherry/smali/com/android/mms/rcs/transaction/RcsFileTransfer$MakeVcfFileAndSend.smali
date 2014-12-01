@@ -43,8 +43,6 @@
 
 .method synthetic constructor <init>(Lcom/android/mms/rcs/transaction/RcsFileTransfer;Lcom/android/mms/rcs/transaction/RcsFileTransfer$1;)V
     .locals 0
-    .param p1    # Lcom/android/mms/rcs/transaction/RcsFileTransfer;
-    .param p2    # Lcom/android/mms/rcs/transaction/RcsFileTransfer$1;
 
     invoke-direct {p0, p1}, Lcom/android/mms/rcs/transaction/RcsFileTransfer$MakeVcfFileAndSend;-><init>(Lcom/android/mms/rcs/transaction/RcsFileTransfer;)V
 
@@ -55,7 +53,6 @@
 # virtual methods
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [Landroid/net/Uri;
 
@@ -68,7 +65,6 @@
 
 .method protected varargs doInBackground([Landroid/net/Uri;)[B
     .locals 4
-    .param p1    # [Landroid/net/Uri;
 
     iget-object v1, p0, Lcom/android/mms/rcs/transaction/RcsFileTransfer$MakeVcfFileAndSend;->this$0:Lcom/android/mms/rcs/transaction/RcsFileTransfer;
 
@@ -203,7 +199,6 @@
 
 .method protected bridge synthetic onPostExecute(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, [B
 
@@ -214,7 +209,6 @@
 
 .method protected onPostExecute([B)V
     .locals 2
-    .param p1    # [B
 
     iget-object v1, p0, Lcom/android/mms/rcs/transaction/RcsFileTransfer$MakeVcfFileAndSend;->mDialog:Landroid/app/ProgressDialog;
 

@@ -108,7 +108,6 @@
 
 .method private static byteArray2Hex([B)Ljava/lang/String;
     .locals 9
-    .param p0    # [B
 
     new-instance v2, Ljava/util/Formatter;
 
@@ -155,8 +154,6 @@
 
 .method private static calculateHash(Ljava/security/MessageDigest;Ljava/lang/String;)Ljava/lang/String;
     .locals 8
-    .param p0    # Ljava/security/MessageDigest;
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;
@@ -350,8 +347,6 @@
 
 .method private static fileGetHash(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 5
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const-string v2, ""
 
@@ -397,7 +392,6 @@
 
 .method private static fileRead(Ljava/lang/String;)[B
     .locals 10
-    .param p0    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -938,9 +932,6 @@
 
 .method private static verifySignature([B[B[B)Z
     .locals 5
-    .param p0    # [B
-    .param p1    # [B
-    .param p2    # [B
 
     const/4 v0, 0x0
 

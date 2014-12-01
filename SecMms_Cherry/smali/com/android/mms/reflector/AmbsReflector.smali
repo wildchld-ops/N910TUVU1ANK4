@@ -75,7 +75,6 @@
 
 .method public getUidFromDB(J)Ljava/lang/String;
     .locals 6
-    .param p1    # J
 
     const/4 v5, 0x1
 
@@ -112,10 +111,6 @@
 
 .method public getUidWillBeDeleted(Landroid/net/Uri;Ljava/lang/String;Lorg/json/JSONArray;Lorg/json/JSONArray;)V
     .locals 9
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lorg/json/JSONArray;
-    .param p4    # Lorg/json/JSONArray;
 
     const/4 v8, 0x4
 
@@ -168,9 +163,6 @@
 
 .method public getUidWillBeDeleted(Lcom/android/mms/ui/MessageItem;Lorg/json/JSONArray;Lorg/json/JSONArray;)V
     .locals 8
-    .param p1    # Lcom/android/mms/ui/MessageItem;
-    .param p2    # Lorg/json/JSONArray;
-    .param p3    # Lorg/json/JSONArray;
 
     const/4 v7, 0x3
 
@@ -215,10 +207,6 @@
 
 .method public getUidWillBeDeleted([Ljava/lang/Long;Ljava/lang/String;Lorg/json/JSONArray;Lorg/json/JSONArray;)V
     .locals 9
-    .param p1    # [Ljava/lang/Long;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lorg/json/JSONArray;
-    .param p4    # Lorg/json/JSONArray;
 
     const/4 v8, 0x4
 
@@ -271,12 +259,6 @@
 
 .method public getUidWillBeMarkRead(Landroid/content/Context;Landroid/net/Uri;Ljava/lang/String;Lorg/json/JSONArray;Lorg/json/JSONArray;I)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/net/Uri;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Lorg/json/JSONArray;
-    .param p5    # Lorg/json/JSONArray;
-    .param p6    # I
 
     const-string v1, "getUidWillBeMarkRead"
 
@@ -363,9 +345,6 @@
 
 .method public insertAcmsOptMenuItem(Landroid/preference/PreferenceActivity;Ljava/lang/String;Ljava/lang/String;)V
     .locals 8
-    .param p1    # Landroid/preference/PreferenceActivity;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const/4 v7, 0x3
 
@@ -410,9 +389,6 @@
 
 .method public insertedUri(Landroid/net/Uri;Ljava/lang/String;Ljava/lang/String;)V
     .locals 8
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const/4 v7, 0x3
 
@@ -491,8 +467,6 @@
 
 .method public isSmsZcode(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v7, 0x2
 
@@ -547,7 +521,6 @@
 
 .method public listenInitSyncBusyChange(Landroid/app/Activity;)V
     .locals 6
-    .param p1    # Landroid/app/Activity;
 
     const/4 v5, 0x1
 
@@ -576,7 +549,6 @@
 
 .method public listenOOBEChange(Landroid/app/Activity;)V
     .locals 6
-    .param p1    # Landroid/app/Activity;
 
     const/4 v5, 0x1
 
@@ -605,7 +577,6 @@
 
 .method public listenOptInSettingChange(Landroid/preference/PreferenceActivity;)V
     .locals 6
-    .param p1    # Landroid/preference/PreferenceActivity;
 
     const/4 v5, 0x1
 
@@ -644,8 +615,6 @@
 
 .method public onDeleteMessage(Lorg/json/JSONArray;Lorg/json/JSONArray;)V
     .locals 7
-    .param p1    # Lorg/json/JSONArray;
-    .param p2    # Lorg/json/JSONArray;
 
     const/4 v6, 0x2
 
@@ -682,9 +651,6 @@
 
 .method public onInsertNewMessage(Landroid/net/Uri;Ljava/lang/String;Ljava/lang/String;)V
     .locals 8
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const/4 v7, 0x3
 
@@ -729,8 +695,6 @@
 
 .method public onMarkReadMessage(Lorg/json/JSONArray;Lorg/json/JSONArray;)V
     .locals 7
-    .param p1    # Lorg/json/JSONArray;
-    .param p2    # Lorg/json/JSONArray;
 
     const/4 v6, 0x2
 
@@ -767,7 +731,6 @@
 
 .method public onSendMessageFail(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const-string v1, "onSendMessageFail"
 
@@ -792,9 +755,6 @@
 
 .method public onSendingMessage(Ljava/lang/String;Ljava/lang/String;Landroid/net/Uri;)V
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/net/Uri;
 
     const/4 v7, 0x3
 
@@ -839,8 +799,6 @@
 
 .method public onSentMessage(Landroid/net/Uri;Ljava/lang/String;)V
     .locals 7
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Ljava/lang/String;
 
     const/4 v6, 0x2
 

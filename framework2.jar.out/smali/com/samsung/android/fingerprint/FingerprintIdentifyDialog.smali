@@ -41,9 +41,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Lcom/samsung/android/fingerprint/FingerprintIdentifyDialog$FingerprintListener;I)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/samsung/android/fingerprint/FingerprintIdentifyDialog$FingerprintListener;
-    .param p3    # I
 
     const/4 v1, 0x0
 
@@ -64,10 +61,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Lcom/samsung/android/fingerprint/FingerprintIdentifyDialog$FingerprintListener;ILjava/lang/String;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/samsung/android/fingerprint/FingerprintIdentifyDialog$FingerprintListener;
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Landroid/app/Dialog;-><init>(Landroid/content/Context;)V
 
@@ -88,7 +81,6 @@
 
 .method static synthetic access$000(Lcom/samsung/android/fingerprint/FingerprintIdentifyDialog;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/samsung/android/fingerprint/FingerprintIdentifyDialog;
 
     iget-object v0, p0, Lcom/samsung/android/fingerprint/FingerprintIdentifyDialog;->mHandler:Landroid/os/Handler;
 
@@ -97,10 +89,6 @@
 
 .method private constructFingerprintIdentifyDialog(Landroid/content/Context;Lcom/samsung/android/fingerprint/FingerprintIdentifyDialog$FingerprintListener;ILjava/lang/String;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/samsung/android/fingerprint/FingerprintIdentifyDialog$FingerprintListener;
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/samsung/android/fingerprint/FingerprintIdentifyDialog;->mContext:Landroid/content/Context;
 
@@ -255,7 +243,6 @@
 
 .method public handleMessage(Landroid/os/Message;)Z
     .locals 3
-    .param p1    # Landroid/os/Message;
 
     iget-object v0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
@@ -293,7 +280,6 @@
 
 .method public setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
     .locals 0
-    .param p1    # Landroid/content/DialogInterface$OnDismissListener;
 
     iput-object p1, p0, Lcom/samsung/android/fingerprint/FingerprintIdentifyDialog;->mDismissListener:Landroid/content/DialogInterface$OnDismissListener;
 

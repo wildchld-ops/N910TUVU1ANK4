@@ -36,7 +36,6 @@
 # virtual methods
 .method public onConfigListAvailable(Landroid/net/wifi/p2p/WifiP2pConfigList;)V
     .locals 1
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pConfigList;
 
     # getter for: Lcom/android/settings/wifi/p2p/WifiP2pSettings;->mSelectedConfig:Landroid/net/wifi/p2p/WifiP2pConfigList;
     invoke-static {}, Lcom/android/settings/wifi/p2p/WifiP2pSettings;->access$5000()Landroid/net/wifi/p2p/WifiP2pConfigList;

@@ -39,7 +39,6 @@
 # direct methods
 .method private constructor <init>(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -76,8 +75,6 @@
 
 .method synthetic constructor <init>(Ljava/lang/String;Landroid/webkitsec/AccessibilityInjector$1;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/webkitsec/AccessibilityInjector$1;
 
     invoke-direct {p0, p1}, Landroid/webkitsec/AccessibilityInjector$CallbackHandler;-><init>(Ljava/lang/String;)V
 
@@ -86,9 +83,6 @@
 
 .method static synthetic access$500(Landroid/webkitsec/AccessibilityInjector$CallbackHandler;Landroid/webkitsec/WebView;Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Landroid/webkitsec/AccessibilityInjector$CallbackHandler;
-    .param p1    # Landroid/webkitsec/WebView;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Landroid/webkitsec/AccessibilityInjector$CallbackHandler;->performAction(Landroid/webkitsec/WebView;Ljava/lang/String;)Z
 
@@ -113,7 +107,6 @@
 
 .method private getResultAndClear(I)Z
     .locals 4
-    .param p1    # I
 
     iget-object v3, p0, Landroid/webkitsec/AccessibilityInjector$CallbackHandler;->mResultLock:Ljava/lang/Object;
 
@@ -152,8 +145,6 @@
 
 .method private performAction(Landroid/webkitsec/WebView;Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Landroid/webkitsec/WebView;
-    .param p2    # Ljava/lang/String;
 
     iget-object v2, p0, Landroid/webkitsec/AccessibilityInjector$CallbackHandler;->mResultIdCounter:Ljava/util/concurrent/atomic/AtomicInteger;
 
@@ -200,7 +191,6 @@
 
 .method private waitForResultTimedLocked(I)Z
     .locals 11
-    .param p1    # I
 
     const/4 v7, 0x0
 
@@ -476,8 +466,6 @@
 
 .method public onResult(Ljava/lang/String;Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation runtime Landroid/webkitsec/JavascriptInterface;
     .end annotation
 
@@ -623,8 +611,6 @@
 
 .method public requestCallback(Landroid/webkitsec/WebView;Ljava/lang/Runnable;)V
     .locals 2
-    .param p1    # Landroid/webkitsec/WebView;
-    .param p2    # Ljava/lang/Runnable;
 
     iput-object p2, p0, Landroid/webkitsec/AccessibilityInjector$CallbackHandler;->mCallbackRunnable:Ljava/lang/Runnable;
 

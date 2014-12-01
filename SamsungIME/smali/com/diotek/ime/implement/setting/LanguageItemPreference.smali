@@ -14,8 +14,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Lcom/diotek/ime/framework/common/Language;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/diotek/ime/framework/common/Language;
 
     const/4 v0, 0x0
 
@@ -88,7 +86,6 @@
 # virtual methods
 .method protected onBindView(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     invoke-super {p0, p1}, Landroid/preference/Preference;->onBindView(Landroid/view/View;)V
 
@@ -115,7 +112,6 @@
 
 .method public setChecked(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/diotek/ime/implement/setting/LanguageItemPreference;->mRadioButton:Landroid/widget/RadioButton;
 

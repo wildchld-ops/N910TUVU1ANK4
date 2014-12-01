@@ -147,7 +147,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/CryptKeeper;)Landroid/os/storage/IMountService;
     .locals 1
-    .param p0    # Lcom/android/settings/CryptKeeper;
 
     invoke-direct {p0}, Lcom/android/settings/CryptKeeper;->getMountService()Landroid/os/storage/IMountService;
 
@@ -166,8 +165,6 @@
 
 .method static synthetic access$1002(Lcom/android/settings/CryptKeeper;I)I
     .locals 0
-    .param p0    # Lcom/android/settings/CryptKeeper;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/settings/CryptKeeper;->mEncryptionGoneBad:I
 
@@ -176,7 +173,6 @@
 
 .method static synthetic access$102(Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Ljava/lang/String;
 
     sput-object p0, Lcom/android/settings/CryptKeeper;->mSavedPassword:Ljava/lang/String;
 
@@ -185,8 +181,6 @@
 
 .method static synthetic access$1102(Lcom/android/settings/CryptKeeper;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/CryptKeeper;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/CryptKeeper;->mValidationComplete:Z
 
@@ -195,7 +189,6 @@
 
 .method static synthetic access$1200(Lcom/android/settings/CryptKeeper;)V
     .locals 0
-    .param p0    # Lcom/android/settings/CryptKeeper;
 
     invoke-direct {p0}, Lcom/android/settings/CryptKeeper;->setupUi()V
 
@@ -204,7 +197,6 @@
 
 .method static synthetic access$1300(Lcom/android/settings/CryptKeeper;)V
     .locals 0
-    .param p0    # Lcom/android/settings/CryptKeeper;
 
     invoke-direct {p0}, Lcom/android/settings/CryptKeeper;->updateProgress()V
 
@@ -213,7 +205,6 @@
 
 .method static synthetic access$1400(Lcom/android/settings/CryptKeeper;)V
     .locals 0
-    .param p0    # Lcom/android/settings/CryptKeeper;
 
     invoke-direct {p0}, Lcom/android/settings/CryptKeeper;->notifyUser()V
 
@@ -222,8 +213,6 @@
 
 .method static synthetic access$1502(Lcom/android/settings/CryptKeeper;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/CryptKeeper;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/CryptKeeper;->mBootCompleted:Z
 
@@ -232,7 +221,6 @@
 
 .method static synthetic access$1600(Lcom/android/settings/CryptKeeper;)Landroid/widget/Button;
     .locals 1
-    .param p0    # Lcom/android/settings/CryptKeeper;
 
     iget-object v0, p0, Lcom/android/settings/CryptKeeper;->mResetButton:Landroid/widget/Button;
 
@@ -241,7 +229,6 @@
 
 .method static synthetic access$1700(Lcom/android/settings/CryptKeeper;)V
     .locals 0
-    .param p0    # Lcom/android/settings/CryptKeeper;
 
     invoke-direct {p0}, Lcom/android/settings/CryptKeeper;->updateEmergencyCallButtonState()V
 
@@ -258,7 +245,6 @@
 
 .method static synthetic access$1902(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/settings/CryptKeeper;->emergencyCallStatus:Z
 
@@ -275,7 +261,6 @@
 
 .method static synthetic access$202(I)I
     .locals 0
-    .param p0    # I
 
     sput p0, Lcom/android/settings/CryptKeeper;->failedAttemptsCount:I
 
@@ -284,7 +269,6 @@
 
 .method static synthetic access$2100(Lcom/android/settings/CryptKeeper;)V
     .locals 0
-    .param p0    # Lcom/android/settings/CryptKeeper;
 
     invoke-direct {p0}, Lcom/android/settings/CryptKeeper;->takeEmergencyCallAction()V
 
@@ -309,7 +293,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/CryptKeeper;)V
     .locals 0
-    .param p0    # Lcom/android/settings/CryptKeeper;
 
     invoke-direct {p0}, Lcom/android/settings/CryptKeeper;->wipeStorage()V
 
@@ -326,7 +309,6 @@
 
 .method static synthetic access$502(I)I
     .locals 0
-    .param p0    # I
 
     sput p0, Lcom/android/settings/CryptKeeper;->mCooldown:I
 
@@ -335,8 +317,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/CryptKeeper;Z)V
     .locals 0
-    .param p0    # Lcom/android/settings/CryptKeeper;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/settings/CryptKeeper;->setBackFunctionality(Z)V
 
@@ -345,8 +325,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/CryptKeeper;J)V
     .locals 0
-    .param p0    # Lcom/android/settings/CryptKeeper;
-    .param p1    # J
 
     invoke-direct {p0, p1, p2}, Lcom/android/settings/CryptKeeper;->handleAttemptLockout(J)V
 
@@ -355,7 +333,6 @@
 
 .method static synthetic access$800(Lcom/android/settings/CryptKeeper;)Landroid/widget/EditText;
     .locals 1
-    .param p0    # Lcom/android/settings/CryptKeeper;
 
     iget-object v0, p0, Lcom/android/settings/CryptKeeper;->mPasswordEntry:Landroid/widget/EditText;
 
@@ -364,7 +341,6 @@
 
 .method static synthetic access$900(Lcom/android/settings/CryptKeeper;)V
     .locals 0
-    .param p0    # Lcom/android/settings/CryptKeeper;
 
     invoke-direct {p0}, Lcom/android/settings/CryptKeeper;->popUpIME()V
 
@@ -470,7 +446,6 @@
 
 .method private handleAttemptLockout(J)V
     .locals 8
-    .param p1    # J
 
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
@@ -497,8 +472,6 @@
 
 .method private hasMultipleEnabledIMEsOrSubtypes(Landroid/view/inputmethod/InputMethodManager;Z)Z
     .locals 12
-    .param p1    # Landroid/view/inputmethod/InputMethodManager;
-    .param p2    # Z
 
     const/4 v9, 0x0
 
@@ -639,7 +612,6 @@
 
 .method private isDebugView(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
 
@@ -1240,7 +1212,6 @@
 
 .method private final setBackFunctionality(Z)V
     .locals 2
-    .param p1    # Z
 
     if-nez p1, :cond_0
 
@@ -1971,17 +1942,12 @@
 # virtual methods
 .method public afterTextChanged(Landroid/text/Editable;)V
     .locals 0
-    .param p1    # Landroid/text/Editable;
 
     return-void
 .end method
 
 .method public beforeTextChanged(Ljava/lang/CharSequence;III)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     return-void
 .end method
@@ -2209,9 +2175,6 @@
 
 .method public onEditorAction(Landroid/widget/TextView;ILandroid/view/KeyEvent;)Z
     .locals 6
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # I
-    .param p3    # Landroid/view/KeyEvent;
 
     const/4 v5, 0x0
 
@@ -2282,9 +2245,6 @@
 
 .method public onKey(Landroid/view/View;ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # Landroid/view/KeyEvent;
 
     invoke-direct {p0}, Lcom/android/settings/CryptKeeper;->delayAudioNotification()V
 
@@ -2309,7 +2269,6 @@
 
 .method public onRestoreInstanceState(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onRestoreInstanceState(Landroid/os/Bundle;)V
 
@@ -2395,7 +2354,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "mBootCompleted"
 
@@ -2440,10 +2398,6 @@
 
 .method public onTextChanged(Ljava/lang/CharSequence;III)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-direct {p0}, Lcom/android/settings/CryptKeeper;->delayAudioNotification()V
 
@@ -2452,8 +2406,6 @@
 
 .method public onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     invoke-direct {p0}, Lcom/android/settings/CryptKeeper;->delayAudioNotification()V
 
@@ -2464,7 +2416,6 @@
 
 .method public setLockoutAttemptDeadline(I)J
     .locals 6
-    .param p1    # I
 
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 

@@ -43,7 +43,6 @@
 
 .method public static addChangeCallback(Ljava/lang/Runnable;)V
     .locals 2
-    .param p0    # Ljava/lang/Runnable;
 
     sget-object v1, Landroid/os/SystemProperties;->sChangeCallbacks:Ljava/util/ArrayList;
 
@@ -145,7 +144,6 @@
 
 .method public static get(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
@@ -173,8 +171,6 @@
 
 .method public static get(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
@@ -202,8 +198,6 @@
 
 .method public static getBoolean(Ljava/lang/String;Z)Z
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Z
 
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
@@ -231,8 +225,6 @@
 
 .method public static getInt(Ljava/lang/String;I)I
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
 
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
@@ -260,8 +252,6 @@
 
 .method public static getLong(Ljava/lang/String;J)J
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # J
 
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
@@ -310,8 +300,6 @@
 
 .method public static set(Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 

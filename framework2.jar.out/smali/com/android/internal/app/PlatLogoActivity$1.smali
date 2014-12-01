@@ -42,7 +42,6 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 7
-    .param p1    # Landroid/view/View;
 
     iget v1, p0, Lcom/android/internal/app/PlatLogoActivity$1;->clicks:I
 

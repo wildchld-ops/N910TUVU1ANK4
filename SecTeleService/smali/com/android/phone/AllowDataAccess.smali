@@ -47,7 +47,7 @@
 .method private fillArrays()V
     .locals 6
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/AllowDataAccess;->getResources()Landroid/content/res/Resources;
 
     move-result-object v4
 
@@ -109,7 +109,7 @@
 
     const/4 v5, 0x0
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/AllowDataAccess;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v3
 
@@ -119,7 +119,7 @@
 
     move-result v1
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/AllowDataAccess;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v3
 
@@ -157,7 +157,7 @@
 
     const/4 v6, 0x0
 
-    invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Landroid/app/ListActivity;->onCreate(Landroid/os/Bundle;)V
 
     const-string v4, "AllowDataAccess"
 
@@ -175,14 +175,14 @@
 
     const/4 v4, 0x4
 
-    invoke-virtual {p0, v4}, Landroid/app/Activity;->setRequestedOrientation(I)V
+    invoke-virtual {p0, v4}, Lcom/android/phone/AllowDataAccess;->setRequestedOrientation(I)V
 
     :cond_0
     const v4, 0x7f040006
 
-    invoke-virtual {p0, v4}, Landroid/app/Activity;->setContentView(I)V
+    invoke-virtual {p0, v4}, Lcom/android/phone/AllowDataAccess;->setContentView(I)V
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/AllowDataAccess;->getResources()Landroid/content/res/Resources;
 
     move-result-object v4
 
@@ -192,7 +192,7 @@
 
     move-result-object v4
 
-    invoke-virtual {p0, v4}, Landroid/app/Activity;->setTitle(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, v4}, Lcom/android/phone/AllowDataAccess;->setTitle(Ljava/lang/CharSequence;)V
 
     invoke-direct {p0}, Lcom/android/phone/AllowDataAccess;->fillArrays()V
 
@@ -202,11 +202,11 @@
 
     iput v4, p0, Lcom/android/phone/AllowDataAccess;->mCurrentMode:I
 
-    invoke-virtual {p0}, Landroid/app/ListActivity;->getListView()Landroid/widget/ListView;
+    invoke-virtual {p0}, Lcom/android/phone/AllowDataAccess;->getListView()Landroid/widget/ListView;
 
     move-result-object v3
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getBaseContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/AllowDataAccess;->getBaseContext()Landroid/content/Context;
 
     move-result-object v4
 
@@ -247,7 +247,7 @@
     :cond_1
     const v4, 0x7f0a001b
 
-    invoke-virtual {p0, v4}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v4}, Lcom/android/phone/AllowDataAccess;->findViewById(I)Landroid/view/View;
 
     move-result-object v1
 
@@ -257,7 +257,7 @@
 
     invoke-direct {v4, p0}, Lcom/android/phone/AllowDataAccess$1;-><init>(Lcom/android/phone/AllowDataAccess;)V
 
-    invoke-virtual {v1, v4}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v1, v4}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     new-instance v4, Lcom/android/phone/AllowDataAccess$RoamSettingsObserver;
 
@@ -265,7 +265,7 @@
 
     iput-object v4, p0, Lcom/android/phone/AllowDataAccess;->mRoamSettingsObserver:Lcom/android/phone/AllowDataAccess$RoamSettingsObserver;
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/AllowDataAccess;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -313,7 +313,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/AllowDataAccess;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -399,7 +399,7 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/AllowDataAccess;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -431,7 +431,7 @@
 
     invoke-virtual {v2}, Lcom/android/phone/NotificationMgr;->hideAllowDataAccess()V
 
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/AllowDataAccess;->finish()V
 
     :cond_1
     return-void

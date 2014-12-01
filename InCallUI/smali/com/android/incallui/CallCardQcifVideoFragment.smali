@@ -161,7 +161,6 @@
 
 .method static synthetic access$000(Lcom/android/incallui/CallCardQcifVideoFragment;)Lcom/android/incallui/CallCardQcifVideoFragment$DefaultImageTimer;
     .locals 1
-    .param p0    # Lcom/android/incallui/CallCardQcifVideoFragment;
 
     iget-object v0, p0, Lcom/android/incallui/CallCardQcifVideoFragment;->showImgTimer:Lcom/android/incallui/CallCardQcifVideoFragment$DefaultImageTimer;
 
@@ -170,7 +169,6 @@
 
 .method static synthetic access$100(Lcom/android/incallui/CallCardQcifVideoFragment;)Landroid/widget/ImageView;
     .locals 1
-    .param p0    # Lcom/android/incallui/CallCardQcifVideoFragment;
 
     iget-object v0, p0, Lcom/android/incallui/CallCardQcifVideoFragment;->mFarEndDocomoImage:Landroid/widget/ImageView;
 
@@ -179,8 +177,6 @@
 
 .method private copyParams(Landroid/view/ViewGroup;Landroid/view/ViewGroup;)V
     .locals 1
-    .param p1    # Landroid/view/ViewGroup;
-    .param p2    # Landroid/view/ViewGroup;
 
     if-eqz p2, :cond_0
 
@@ -861,7 +857,6 @@
 
 .method public getSurfaceViewHeight(I)I
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -899,7 +894,6 @@
 
 .method public getSurfaceViewWidth(I)I
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -937,7 +931,6 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/incallui/CallCardFragment;->onActivityCreated(Landroid/os/Bundle;)V
 
@@ -1009,9 +1002,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 3
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const-string v1, "onCreateView..."
 
@@ -1439,7 +1429,6 @@
 
 .method public onSurfaceTextureUpdated(Landroid/graphics/SurfaceTexture;)V
     .locals 3
-    .param p1    # Landroid/graphics/SurfaceTexture;
 
     const/16 v2, 0x8
 
@@ -1559,8 +1548,6 @@
 
 .method public onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
     .locals 6
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/os/Bundle;
 
     const/16 v5, 0x8
 
@@ -2207,8 +2194,6 @@
 
 .method public setActionMemoFilePath(ILjava/lang/String;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -2428,7 +2413,6 @@
 
 .method public setIncomingHideButton(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/incallui/CallCardQcifVideoFragment;->mIncomingHideButton:Landroid/widget/ToggleButton;
 
@@ -2509,7 +2493,6 @@
 
 .method public setIndicatorVisible(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/incallui/CallCardQcifVideoFragment;->mIndicatorArea:Landroid/view/ViewGroup;
 
@@ -2551,9 +2534,6 @@
 
 .method public setPrimaryCallElapsedTime(ZLjava/lang/String;J)V
     .locals 9
-    .param p1    # Z
-    .param p2    # Ljava/lang/String;
-    .param p3    # J
 
     const-wide/16 v7, 0x3e8
 
@@ -2857,7 +2837,6 @@
 
 .method public setPrimaryLabel(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     return-void
 .end method
@@ -2937,7 +2916,6 @@
 
 .method public showAnimationCapture(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/incallui/CallCardQcifVideoFragment;->mCaptureAnimationView:Landroid/view/View;
 
@@ -2965,7 +2943,6 @@
 
 .method public showAnimationRecord(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/incallui/CallCardQcifVideoFragment;->mRecordAnimationView:Landroid/view/View;
 
@@ -3010,7 +2987,6 @@
 
 .method public showFarEndRecordingInfo(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/incallui/CallCardQcifVideoFragment;->mRecInfoFarEnd:Landroid/view/ViewGroup;
 
@@ -3182,7 +3158,6 @@
 
 .method public showIncomingHideButton(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/incallui/CallCardQcifVideoFragment;->mIncomingHideButtonLayout:Landroid/view/ViewGroup;
 
@@ -3276,7 +3251,6 @@
 
 .method public showNearEndRecordingInfo(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/incallui/CallCardQcifVideoFragment;->mRecInfoNearEnd:Landroid/view/ViewGroup;
 
@@ -3390,7 +3364,6 @@
 
 .method public updateBgColorForCallState(I)V
     .locals 10
-    .param p1    # I
 
     const v9, 0x7f0a0088
 
@@ -3678,7 +3651,6 @@
 
 .method public updateConfUI(Z)V
     .locals 3
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -3714,7 +3686,6 @@
 
 .method public updateFarEndPreparingAnimationImage(Z)V
     .locals 3
-    .param p1    # Z
 
     const/16 v2, 0x8
 
@@ -3784,7 +3755,6 @@
 
 .method public updateNoVideoImage(I)V
     .locals 4
-    .param p1    # I
 
     const/16 v3, 0x8
 
@@ -3853,7 +3823,6 @@
 
 .method public updatePrimaryName(I)V
     .locals 13
-    .param p1    # I
 
     const v11, 0x7f0d00d7
 
@@ -4091,7 +4060,6 @@
 
 .method public updateSurfaceViewVisibility(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v2, 0x3
 
@@ -4119,7 +4087,6 @@
 
 .method public updateVideoCallStateLabel(I)V
     .locals 4
-    .param p1    # I
 
     const/4 v3, 0x0
 

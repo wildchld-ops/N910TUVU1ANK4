@@ -25,7 +25,6 @@
 # direct methods
 .method public constructor <init>(Landroid/renderscript/RenderScript;)V
     .locals 1
-    .param p1    # Landroid/renderscript/RenderScript;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -82,7 +81,6 @@
 
 .method public setCullMode(Landroid/renderscript/ProgramRaster$CullMode;)Landroid/renderscript/ProgramRaster$Builder;
     .locals 0
-    .param p1    # Landroid/renderscript/ProgramRaster$CullMode;
 
     iput-object p1, p0, Landroid/renderscript/ProgramRaster$Builder;->mCullMode:Landroid/renderscript/ProgramRaster$CullMode;
 
@@ -91,7 +89,6 @@
 
 .method public setPointSpriteEnabled(Z)Landroid/renderscript/ProgramRaster$Builder;
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/renderscript/ProgramRaster$Builder;->mPointSprite:Z
 

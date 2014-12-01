@@ -28,7 +28,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/mms/ui/BoxListFrame;J)V
     .locals 1
-    .param p2    # J
 
     iput-object p1, p0, Lcom/android/mms/ui/BoxListFrame$RecvMmsMessageListener;->this$0:Lcom/android/mms/ui/BoxListFrame;
 
@@ -49,7 +48,6 @@
 
 .method public constructor <init>(Lcom/android/mms/ui/BoxListFrame;Landroid/net/Uri;)V
     .locals 0
-    .param p2    # Landroid/net/Uri;
 
     iput-object p1, p0, Lcom/android/mms/ui/BoxListFrame$RecvMmsMessageListener;->this$0:Lcom/android/mms/ui/BoxListFrame;
 
@@ -64,8 +62,6 @@
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 7
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     const/4 v6, 0x1
 

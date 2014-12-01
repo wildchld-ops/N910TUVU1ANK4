@@ -136,7 +136,7 @@
 
     sget-object v0, Lcom/android/services/telephony/common/PhotoringCommon$PhotoringMTState;->$VALUES:[Lcom/android/services/telephony/common/PhotoringCommon$PhotoringMTState;
 
-    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
+    invoke-virtual {v0}, [Lcom/android/services/telephony/common/PhotoringCommon$PhotoringMTState;->clone()Ljava/lang/Object;
 
     move-result-object v0
 

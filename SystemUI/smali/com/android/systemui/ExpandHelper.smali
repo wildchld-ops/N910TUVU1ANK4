@@ -125,10 +125,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Lcom/android/systemui/ExpandHelper$Callback;II)V
     .locals 9
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/systemui/ExpandHelper$Callback;
-    .param p3    # I
-    .param p4    # I
 
     const/4 v8, 0x0
 
@@ -335,9 +331,6 @@
 
 .method static synthetic access$000(Lcom/android/systemui/ExpandHelper;FF)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/systemui/ExpandHelper;
-    .param p1    # F
-    .param p2    # F
 
     invoke-direct {p0, p1, p2}, Lcom/android/systemui/ExpandHelper;->findView(FF)Landroid/view/View;
 
@@ -348,9 +341,6 @@
 
 .method static synthetic access$100(Lcom/android/systemui/ExpandHelper;Landroid/view/View;I)V
     .locals 0
-    .param p0    # Lcom/android/systemui/ExpandHelper;
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/systemui/ExpandHelper;->startExpanding(Landroid/view/View;I)V
 
@@ -359,7 +349,6 @@
 
 .method static synthetic access$200(Lcom/android/systemui/ExpandHelper;)Z
     .locals 1
-    .param p0    # Lcom/android/systemui/ExpandHelper;
 
     iget-boolean v0, p0, Lcom/android/systemui/ExpandHelper;->mExpanding:Z
 
@@ -368,8 +357,6 @@
 
 .method private calculateGlow(FF)F
     .locals 9
-    .param p1    # F
-    .param p2    # F
 
     const/high16 v8, 0x3f800000
 
@@ -420,7 +407,6 @@
 
 .method private clamp(F)F
     .locals 2
-    .param p1    # F
 
     move v0, p1
 
@@ -481,8 +467,6 @@
 
 .method private findView(FF)Landroid/view/View;
     .locals 3
-    .param p1    # F
-    .param p2    # F
 
     const/4 v1, 0x0
 
@@ -535,7 +519,6 @@
 
 .method private finishExpanding(Z)V
     .locals 9
-    .param p1    # Z
 
     const/4 v5, 0x1
 
@@ -786,9 +769,6 @@
 
 .method private isInside(Landroid/view/View;FF)Z
     .locals 7
-    .param p1    # Landroid/view/View;
-    .param p2    # F
-    .param p3    # F
 
     const/4 v6, 0x2
 
@@ -981,7 +961,6 @@
 
 .method private setView(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     iput-object p1, p0, Lcom/android/systemui/ExpandHelper;->mCurrView:Landroid/view/View;
 
@@ -1015,8 +994,6 @@
 
 .method private startExpanding(Landroid/view/View;I)V
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     const/4 v2, 0x1
 
@@ -1273,7 +1250,6 @@
 
 .method private declared-synchronized vibrate(J)V
     .locals 2
-    .param p1    # J
 
     monitor-enter p0
 
@@ -1339,7 +1315,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     const/4 v0, 0x4
 
@@ -1356,7 +1331,6 @@
 
 .method public onInterceptTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 12
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v11, 0x2
 
@@ -1654,7 +1628,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 13
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v10, 0x0
 
@@ -1989,7 +1962,6 @@
 
 .method public setEventSource(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     iput-object p1, p0, Lcom/android/systemui/ExpandHelper;->mEventSource:Landroid/view/View;
 
@@ -1998,7 +1970,6 @@
 
 .method public setGlow(F)V
     .locals 4
-    .param p1    # F
 
     const/4 v3, 0x1
 
@@ -2111,7 +2082,6 @@
 
 .method public setGravity(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/systemui/ExpandHelper;->mGravity:I
 
@@ -2120,7 +2090,6 @@
 
 .method public setScrollView(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     iput-object p1, p0, Lcom/android/systemui/ExpandHelper;->mScrollView:Landroid/view/View;
 

@@ -6,9 +6,6 @@
 # direct methods
 .method public constructor <init>(ILandroid/content/Context;Landroid/hardware/contextaware/dataprovider/sensorhubprovider/ISensorHubResetObservable;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/hardware/contextaware/dataprovider/sensorhubprovider/ISensorHubResetObservable;
 
     const/4 v0, 0x0
 
@@ -145,8 +142,6 @@
 
 .method public final updateApPowerStatus(IJ)V
     .locals 4
-    .param p1    # I
-    .param p2    # J
 
     invoke-virtual {p0}, Landroid/hardware/contextaware/dataprovider/sensorhubprovider/builtin/PowerNotiRunner;->getContextValueNames()[Ljava/lang/String;
 

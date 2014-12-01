@@ -34,7 +34,6 @@
 
 .method public static getFileExtensionFromUrl(Ljava/lang/String;)Ljava/lang/String;
     .locals 7
-    .param p0    # Ljava/lang/String;
 
     const/4 v6, 0x0
 
@@ -137,7 +136,6 @@
 
 .method private static mimeTypeFromExtension(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "hwp"
 
@@ -164,7 +162,6 @@
 # virtual methods
 .method public getExtensionFromMimeType(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "application/x-hwp"
 
@@ -189,7 +186,6 @@
 
 .method public getMimeTypeFromExtension(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "hwp"
 
@@ -214,7 +210,6 @@
 
 .method public hasExtension(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "hwp"
 
@@ -239,7 +234,6 @@
 
 .method public hasMimeType(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "application/x-hwp"
 
@@ -264,9 +258,6 @@
 
 .method remapGenericMimeType(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const-string/jumbo v3, "text/plain"
 

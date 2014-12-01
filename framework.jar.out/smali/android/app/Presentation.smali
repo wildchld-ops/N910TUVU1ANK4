@@ -22,8 +22,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/view/Display;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/view/Display;
 
     const/4 v0, 0x0
 
@@ -34,9 +32,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/view/Display;I)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/view/Display;
-    .param p3    # I
 
     const/4 v2, 0x0
 
@@ -89,7 +84,6 @@
 
 .method static synthetic access$000(Landroid/app/Presentation;)Landroid/view/Display;
     .locals 1
-    .param p0    # Landroid/app/Presentation;
 
     iget-object v0, p0, Landroid/app/Presentation;->mDisplay:Landroid/view/Display;
 
@@ -98,7 +92,6 @@
 
 .method static synthetic access$100(Landroid/app/Presentation;)V
     .locals 0
-    .param p0    # Landroid/app/Presentation;
 
     invoke-direct {p0}, Landroid/app/Presentation;->handleDisplayRemoved()V
 
@@ -107,7 +100,6 @@
 
 .method static synthetic access$200(Landroid/app/Presentation;)V
     .locals 0
-    .param p0    # Landroid/app/Presentation;
 
     invoke-direct {p0}, Landroid/app/Presentation;->handleDisplayChanged()V
 
@@ -116,9 +108,6 @@
 
 .method private static createPresentationContext(Landroid/content/Context;Landroid/view/Display;I)Landroid/content/Context;
     .locals 7
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/view/Display;
-    .param p2    # I
 
     if-nez p0, :cond_0
 

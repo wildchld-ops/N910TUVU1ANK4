@@ -125,7 +125,6 @@
 
 .method synthetic constructor <init>(Landroid/view/PointerIcon$1;)V
     .locals 0
-    .param p1    # Landroid/view/PointerIcon$1;
 
     invoke-direct {p0}, Landroid/view/PointerIcon$HoverEffect;-><init>()V
 
@@ -136,7 +135,6 @@
 # virtual methods
 .method playSound(I)V
     .locals 9
-    .param p1    # I
 
     const/4 v5, 0x0
 
@@ -209,7 +207,6 @@
 
 .method playVibrator(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Landroid/view/PointerIcon$HoverEffect;->mVibrator:Landroid/os/SystemVibrator;
 

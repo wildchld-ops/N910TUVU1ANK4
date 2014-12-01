@@ -49,7 +49,6 @@
 
 .method static createAndShow(Landroid/app/FragmentManager;)V
     .locals 2
-    .param p0    # Landroid/app/FragmentManager;
 
     invoke-static {p0}, Lcom/android/launcher2/AddAppsWidgetToastPopUp;->isActive(Landroid/app/FragmentManager;)Z
 
@@ -74,7 +73,6 @@
 
 .method static dismiss(Landroid/app/FragmentManager;)V
     .locals 2
-    .param p0    # Landroid/app/FragmentManager;
 
     const-string v1, "AddAppsWidgetToastPopUp"
 
@@ -94,7 +92,6 @@
 
 .method static isActive(Landroid/app/FragmentManager;)Z
     .locals 2
-    .param p0    # Landroid/app/FragmentManager;
 
     const/4 v0, 0x0
 
@@ -118,8 +115,6 @@
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 3
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     const/4 v1, -0x1
 
@@ -166,7 +161,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/DialogFragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -175,7 +169,6 @@
 
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
     .locals 7
-    .param p1    # Landroid/os/Bundle;
 
     invoke-virtual {p0}, Lcom/android/launcher2/AddAppsWidgetToastPopUp;->getActivity()Landroid/app/Activity;
 

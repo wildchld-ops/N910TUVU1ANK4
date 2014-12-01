@@ -88,7 +88,6 @@
 
 .method public constructor <init>(Ljava/util/Locale;)V
     .locals 2
-    .param p1    # Ljava/util/Locale;
 
     const/4 v1, 0x0
 
@@ -113,7 +112,6 @@
 
 .method static synthetic access$000(Landroid/location/Address;)Ljava/util/HashMap;
     .locals 1
-    .param p0    # Landroid/location/Address;
 
     iget-object v0, p0, Landroid/location/Address;->mAddressLines:Ljava/util/HashMap;
 
@@ -122,8 +120,6 @@
 
 .method static synthetic access$002(Landroid/location/Address;Ljava/util/HashMap;)Ljava/util/HashMap;
     .locals 0
-    .param p0    # Landroid/location/Address;
-    .param p1    # Ljava/util/HashMap;
 
     iput-object p1, p0, Landroid/location/Address;->mAddressLines:Ljava/util/HashMap;
 
@@ -132,7 +128,6 @@
 
 .method static synthetic access$100(Landroid/location/Address;)I
     .locals 1
-    .param p0    # Landroid/location/Address;
 
     iget v0, p0, Landroid/location/Address;->mMaxAddressLineIndex:I
 
@@ -141,8 +136,6 @@
 
 .method static synthetic access$1002(Landroid/location/Address;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Landroid/location/Address;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/location/Address;->mPostalCode:Ljava/lang/String;
 
@@ -151,8 +144,6 @@
 
 .method static synthetic access$102(Landroid/location/Address;I)I
     .locals 0
-    .param p0    # Landroid/location/Address;
-    .param p1    # I
 
     iput p1, p0, Landroid/location/Address;->mMaxAddressLineIndex:I
 
@@ -161,8 +152,6 @@
 
 .method static synthetic access$1102(Landroid/location/Address;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Landroid/location/Address;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/location/Address;->mCountryCode:Ljava/lang/String;
 
@@ -171,8 +160,6 @@
 
 .method static synthetic access$1202(Landroid/location/Address;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Landroid/location/Address;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/location/Address;->mCountryName:Ljava/lang/String;
 
@@ -181,7 +168,6 @@
 
 .method static synthetic access$1300(Landroid/location/Address;)Z
     .locals 1
-    .param p0    # Landroid/location/Address;
 
     iget-boolean v0, p0, Landroid/location/Address;->mHasLatitude:Z
 
@@ -190,8 +176,6 @@
 
 .method static synthetic access$1302(Landroid/location/Address;Z)Z
     .locals 0
-    .param p0    # Landroid/location/Address;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/location/Address;->mHasLatitude:Z
 
@@ -200,8 +184,6 @@
 
 .method static synthetic access$1402(Landroid/location/Address;D)D
     .locals 0
-    .param p0    # Landroid/location/Address;
-    .param p1    # D
 
     iput-wide p1, p0, Landroid/location/Address;->mLatitude:D
 
@@ -210,7 +192,6 @@
 
 .method static synthetic access$1500(Landroid/location/Address;)Z
     .locals 1
-    .param p0    # Landroid/location/Address;
 
     iget-boolean v0, p0, Landroid/location/Address;->mHasLongitude:Z
 
@@ -219,8 +200,6 @@
 
 .method static synthetic access$1502(Landroid/location/Address;Z)Z
     .locals 0
-    .param p0    # Landroid/location/Address;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/location/Address;->mHasLongitude:Z
 
@@ -229,8 +208,6 @@
 
 .method static synthetic access$1602(Landroid/location/Address;D)D
     .locals 0
-    .param p0    # Landroid/location/Address;
-    .param p1    # D
 
     iput-wide p1, p0, Landroid/location/Address;->mLongitude:D
 
@@ -239,8 +216,6 @@
 
 .method static synthetic access$1702(Landroid/location/Address;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Landroid/location/Address;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/location/Address;->mPhone:Ljava/lang/String;
 
@@ -249,8 +224,6 @@
 
 .method static synthetic access$1802(Landroid/location/Address;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Landroid/location/Address;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/location/Address;->mUrl:Ljava/lang/String;
 
@@ -259,8 +232,6 @@
 
 .method static synthetic access$1902(Landroid/location/Address;Landroid/os/Bundle;)Landroid/os/Bundle;
     .locals 0
-    .param p0    # Landroid/location/Address;
-    .param p1    # Landroid/os/Bundle;
 
     iput-object p1, p0, Landroid/location/Address;->mExtras:Landroid/os/Bundle;
 
@@ -269,8 +240,6 @@
 
 .method static synthetic access$202(Landroid/location/Address;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Landroid/location/Address;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/location/Address;->mFeatureName:Ljava/lang/String;
 
@@ -279,8 +248,6 @@
 
 .method static synthetic access$302(Landroid/location/Address;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Landroid/location/Address;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/location/Address;->mAdminArea:Ljava/lang/String;
 
@@ -289,8 +256,6 @@
 
 .method static synthetic access$402(Landroid/location/Address;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Landroid/location/Address;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/location/Address;->mSubAdminArea:Ljava/lang/String;
 
@@ -299,8 +264,6 @@
 
 .method static synthetic access$502(Landroid/location/Address;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Landroid/location/Address;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/location/Address;->mLocality:Ljava/lang/String;
 
@@ -309,8 +272,6 @@
 
 .method static synthetic access$602(Landroid/location/Address;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Landroid/location/Address;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/location/Address;->mSubLocality:Ljava/lang/String;
 
@@ -319,8 +280,6 @@
 
 .method static synthetic access$702(Landroid/location/Address;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Landroid/location/Address;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/location/Address;->mThoroughfare:Ljava/lang/String;
 
@@ -329,8 +288,6 @@
 
 .method static synthetic access$802(Landroid/location/Address;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Landroid/location/Address;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/location/Address;->mSubThoroughfare:Ljava/lang/String;
 
@@ -339,8 +296,6 @@
 
 .method static synthetic access$902(Landroid/location/Address;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Landroid/location/Address;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/location/Address;->mPremises:Ljava/lang/String;
 
@@ -393,7 +348,6 @@
 
 .method public getAddressLine(I)Ljava/lang/String;
     .locals 3
-    .param p1    # I
 
     if-gez p1, :cond_0
 
@@ -637,8 +591,6 @@
 
 .method public setAddressLine(ILjava/lang/String;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     if-gez p1, :cond_0
 
@@ -750,7 +702,6 @@
 
 .method public setAdminArea(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/location/Address;->mAdminArea:Ljava/lang/String;
 
@@ -759,7 +710,6 @@
 
 .method public setCountryCode(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/location/Address;->mCountryCode:Ljava/lang/String;
 
@@ -768,7 +718,6 @@
 
 .method public setCountryName(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/location/Address;->mCountryName:Ljava/lang/String;
 
@@ -777,7 +726,6 @@
 
 .method public setExtras(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     if-nez p1, :cond_0
 
@@ -798,7 +746,6 @@
 
 .method public setFeatureName(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/location/Address;->mFeatureName:Ljava/lang/String;
 
@@ -807,7 +754,6 @@
 
 .method public setLatitude(D)V
     .locals 1
-    .param p1    # D
 
     iput-wide p1, p0, Landroid/location/Address;->mLatitude:D
 
@@ -820,7 +766,6 @@
 
 .method public setLocality(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/location/Address;->mLocality:Ljava/lang/String;
 
@@ -829,7 +774,6 @@
 
 .method public setLongitude(D)V
     .locals 1
-    .param p1    # D
 
     iput-wide p1, p0, Landroid/location/Address;->mLongitude:D
 
@@ -842,7 +786,6 @@
 
 .method public setPhone(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/location/Address;->mPhone:Ljava/lang/String;
 
@@ -851,7 +794,6 @@
 
 .method public setPostalCode(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/location/Address;->mPostalCode:Ljava/lang/String;
 
@@ -860,7 +802,6 @@
 
 .method public setPremises(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/location/Address;->mPremises:Ljava/lang/String;
 
@@ -869,7 +810,6 @@
 
 .method public setSubAdminArea(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/location/Address;->mSubAdminArea:Ljava/lang/String;
 
@@ -878,7 +818,6 @@
 
 .method public setSubLocality(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/location/Address;->mSubLocality:Ljava/lang/String;
 
@@ -887,7 +826,6 @@
 
 .method public setSubThoroughfare(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/location/Address;->mSubThoroughfare:Ljava/lang/String;
 
@@ -896,7 +834,6 @@
 
 .method public setThoroughfare(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/location/Address;->mThoroughfare:Ljava/lang/String;
 
@@ -905,7 +842,6 @@
 
 .method public setUrl(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/location/Address;->mUrl:Ljava/lang/String;
 
@@ -1113,8 +1049,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 8
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     const/4 v4, 0x1
 

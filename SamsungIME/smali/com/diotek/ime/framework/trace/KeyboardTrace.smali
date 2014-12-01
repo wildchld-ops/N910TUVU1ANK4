@@ -283,10 +283,6 @@
 
 .method private addTracePoint(JJIJ)Z
     .locals 5
-    .param p1    # J
-    .param p3    # J
-    .param p5    # I
-    .param p6    # J
 
     const/4 v0, 0x0
 
@@ -370,9 +366,6 @@
 
 .method private checkFilteringMoveEvent(JJI)Z
     .locals 10
-    .param p1    # J
-    .param p3    # J
-    .param p5    # I
 
     iget-object v2, p0, Lcom/diotek/ime/framework/trace/KeyboardTrace;->mMovePoint:Landroid/graphics/PointF;
 
@@ -494,9 +487,6 @@
 
 .method private drawBrushTraceLine(Landroid/graphics/Canvas;Landroid/graphics/Path;Landroid/graphics/Paint;)V
     .locals 12
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # Landroid/graphics/Path;
-    .param p3    # Landroid/graphics/Paint;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -685,9 +675,6 @@
 
 .method private drawLinearTraceLine(Landroid/graphics/Canvas;Landroid/graphics/Path;Landroid/graphics/Paint;)V
     .locals 11
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # Landroid/graphics/Path;
-    .param p3    # Landroid/graphics/Paint;
 
     const/high16 v10, 0x40000000
 
@@ -815,7 +802,6 @@
 
 .method private drawPathWithGradient(Landroid/graphics/Canvas;)V
     .locals 13
-    .param p1    # Landroid/graphics/Canvas;
 
     const/4 v12, 0x2
 
@@ -1024,9 +1010,6 @@
 
 .method private drawQuadraticBeizureCurve([F[FLandroid/graphics/Canvas;)V
     .locals 15
-    .param p1    # [F
-    .param p2    # [F
-    .param p3    # Landroid/graphics/Canvas;
 
     sget v8, Lcom/diotek/ime/framework/trace/KeyboardTrace;->stepsize:F
 
@@ -1131,9 +1114,6 @@
 
 .method private drawSimpleLine([F[FLandroid/graphics/Canvas;)V
     .locals 6
-    .param p1    # [F
-    .param p2    # [F
-    .param p3    # Landroid/graphics/Canvas;
 
     const/4 v4, 0x1
 
@@ -1198,10 +1178,6 @@
 
 .method private getTraceDistance(JJJJ)J
     .locals 6
-    .param p1    # J
-    .param p3    # J
-    .param p5    # J
-    .param p7    # J
 
     sub-long v0, p1, p5
 
@@ -1234,7 +1210,6 @@
 
 .method private setTraceLineStyle(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/diotek/ime/framework/trace/KeyboardTrace;->mCurrentLineStyle:I
 
@@ -1484,7 +1459,6 @@
 
 .method public getTouchPoint(I)Landroid/graphics/PointF;
     .locals 3
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -1654,8 +1628,6 @@
 
 .method public moveDrawTraceLine(JJ)V
     .locals 35
-    .param p1    # J
-    .param p3    # J
 
     move-object/from16 v0, p0
 
@@ -2570,10 +2542,6 @@
 
 .method public moveTrace(JJIJ)Z
     .locals 8
-    .param p1    # J
-    .param p3    # J
-    .param p5    # I
-    .param p6    # J
 
     const/4 v0, 0x0
 
@@ -2615,7 +2583,6 @@
 
 .method public onDrawTraceLine(Landroid/graphics/Canvas;)V
     .locals 2
-    .param p1    # Landroid/graphics/Canvas;
 
     iget v0, p0, Lcom/diotek/ime/framework/trace/KeyboardTrace;->mCurrentLineStyle:I
 
@@ -2645,8 +2612,6 @@
 
 .method public pressTouch(JJ)Z
     .locals 5
-    .param p1    # J
-    .param p3    # J
 
     iget v0, p0, Lcom/diotek/ime/framework/trace/KeyboardTrace;->mTouchPointCnt:I
 
@@ -2719,11 +2684,6 @@
 
 .method public pressTrace(JJIIJ)Z
     .locals 8
-    .param p1    # J
-    .param p3    # J
-    .param p5    # I
-    .param p6    # I
-    .param p7    # J
 
     iput p5, p0, Lcom/diotek/ime/framework/trace/KeyboardTrace;->mKeyIndex:I
 
@@ -2764,12 +2724,6 @@
 
 .method public releaseTrace(JJIIZJ)Z
     .locals 16
-    .param p1    # J
-    .param p3    # J
-    .param p5    # I
-    .param p6    # I
-    .param p7    # Z
-    .param p8    # J
 
     move-object/from16 v0, p0
 
@@ -3006,7 +2960,6 @@
 
 .method public removeTouchPoint(I)Z
     .locals 6
-    .param p1    # I
 
     const/16 v5, 0xa
 
@@ -3089,7 +3042,6 @@
 
 .method public setInTraceAnimation(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/trace/KeyboardTrace;->mInTraceAnimation:Z
 
@@ -3098,7 +3050,6 @@
 
 .method public setIsKeyDown(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/trace/KeyboardTrace;->misKeyDown:Z
 
@@ -3107,7 +3058,6 @@
 
 .method public setIsTracing(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/trace/KeyboardTrace;->mIsTracing:Z
 
@@ -3116,7 +3066,6 @@
 
 .method public setKeyboardViewHeight(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/diotek/ime/framework/trace/KeyboardTrace;->mKeyboardViewHeight:I
 
@@ -3125,7 +3074,6 @@
 
 .method public setKeyboardViewWidth(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/diotek/ime/framework/trace/KeyboardTrace;->mKeyboardViewWidth:I
 
@@ -3134,8 +3082,6 @@
 
 .method public startDrawTraceLine(JJ)V
     .locals 4
-    .param p1    # J
-    .param p3    # J
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/AbstractKeyboardTraceLine;->mPath:Landroid/graphics/Path;
 
@@ -3204,8 +3150,6 @@
 
 .method public updateKeyboardViewSize(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     iput p1, p0, Lcom/diotek/ime/framework/trace/KeyboardTrace;->mKeyboardViewWidth:I
 

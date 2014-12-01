@@ -19,8 +19,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/ContentResolver;Landroid/net/Uri;)V
     .locals 1
-    .param p1    # Landroid/content/ContentResolver;
-    .param p2    # Landroid/net/Uri;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -79,7 +77,6 @@
 
 .method public getImageAt(I)Lcom/sec/android/app/camera/gallery/IImage;
     .locals 1
-    .param p1    # I
 
     if-nez p1, :cond_0
 
@@ -96,7 +93,6 @@
 
 .method public getImageForUri(Landroid/net/Uri;)Lcom/sec/android/app/camera/gallery/IImage;
     .locals 1
-    .param p1    # Landroid/net/Uri;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/gallery/SingleImageList;->mUri:Landroid/net/Uri;
 
@@ -119,7 +115,6 @@
 
 .method public getImageIndex(Lcom/sec/android/app/camera/gallery/IImage;)I
     .locals 1
-    .param p1    # Lcom/sec/android/app/camera/gallery/IImage;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/gallery/SingleImageList;->mSingleImage:Lcom/sec/android/app/camera/gallery/IImage;
 
@@ -146,7 +141,6 @@
 
 .method public removeImage(Lcom/sec/android/app/camera/gallery/IImage;)Z
     .locals 1
-    .param p1    # Lcom/sec/android/app/camera/gallery/IImage;
 
     const/4 v0, 0x0
 
@@ -155,7 +149,6 @@
 
 .method public removeImageAt(I)Z
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 

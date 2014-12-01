@@ -21,10 +21,6 @@
 # direct methods
 .method protected constructor <init>(IILandroid/net/wifi/p2p/WifiP2pDevice;[B)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/net/wifi/p2p/WifiP2pDevice;
-    .param p4    # [B
 
     const/4 v1, 0x2
 
@@ -60,10 +56,6 @@
 
 .method static newInstance(IILandroid/net/wifi/p2p/WifiP2pDevice;[B)Landroid/net/wifi/p2p/nsd/WifiP2pUpnpServiceResponse;
     .locals 3
-    .param p0    # I
-    .param p1    # I
-    .param p2    # Landroid/net/wifi/p2p/WifiP2pDevice;
-    .param p3    # [B
 
     const/4 v2, 0x0
 

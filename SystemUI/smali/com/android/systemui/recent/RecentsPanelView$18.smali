@@ -40,7 +40,6 @@
 # virtual methods
 .method public onDismiss(Landroid/widget/PopupMenu;)V
     .locals 2
-    .param p1    # Landroid/widget/PopupMenu;
 
     iget-object v0, p0, Lcom/android/systemui/recent/RecentsPanelView$18;->val$thumbnailView:Landroid/view/View;
 

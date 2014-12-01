@@ -214,8 +214,6 @@
 
 .method public initialize(Landroid/hardware/usb/UsbDeviceConnection;Landroid/hardware/usb/UsbEndpoint;)Z
     .locals 6
-    .param p1    # Landroid/hardware/usb/UsbDeviceConnection;
-    .param p2    # Landroid/hardware/usb/UsbEndpoint;
 
     iput-object p2, p0, Landroid/hardware/usb/UsbRequest;->mEndpoint:Landroid/hardware/usb/UsbEndpoint;
 
@@ -248,8 +246,6 @@
 
 .method public queue(Ljava/nio/ByteBuffer;I)Z
     .locals 4
-    .param p1    # Ljava/nio/ByteBuffer;
-    .param p2    # I
 
     iget-object v2, p0, Landroid/hardware/usb/UsbRequest;->mEndpoint:Landroid/hardware/usb/UsbEndpoint;
 
@@ -316,7 +312,6 @@
 
 .method public setClientData(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     iput-object p1, p0, Landroid/hardware/usb/UsbRequest;->mClientData:Ljava/lang/Object;
 

@@ -243,7 +243,7 @@
 
     const v2, 0x7f09000c
 
-    invoke-virtual {p0, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v2}, Lcom/android/phone/DriveLinkDialogActivity;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
@@ -257,7 +257,7 @@
 
     move-result-object v1
 
-    invoke-virtual {p0, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v6}, Lcom/android/phone/DriveLinkDialogActivity;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
@@ -292,7 +292,7 @@
 
     aput-object v4, v2, v3
 
-    invoke-virtual {p0, v1, v2}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {p0, v1, v2}, Lcom/android/phone/DriveLinkDialogActivity;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -330,7 +330,7 @@
 
     move-result-object v1
 
-    invoke-virtual {p0, v6}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v6}, Lcom/android/phone/DriveLinkDialogActivity;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
@@ -393,7 +393,7 @@
 
     invoke-static {v2, v3}, Lcom/android/phone/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/DriveLinkDialogActivity;->getResources()Landroid/content/res/Resources;
 
     move-result-object v2
 
@@ -415,11 +415,11 @@
 
     const v2, 0x7f04002a
 
-    invoke-virtual {p0, v2}, Landroid/app/Activity;->setContentView(I)V
+    invoke-virtual {p0, v2}, Lcom/android/phone/DriveLinkDialogActivity;->setContentView(I)V
 
     const v2, 0x7f0a00bb
 
-    invoke-virtual {p0, v2}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v2}, Lcom/android/phone/DriveLinkDialogActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v2
 
@@ -433,12 +433,12 @@
 
     invoke-direct {v3, p0}, Lcom/android/phone/DriveLinkDialogActivity$1;-><init>(Lcom/android/phone/DriveLinkDialogActivity;)V
 
-    invoke-virtual {v2, v3}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v2, v3}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     :goto_0
     const v2, 0x7f0a00ba
 
-    invoke-virtual {p0, v2}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v2}, Lcom/android/phone/DriveLinkDialogActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v2
 
@@ -446,7 +446,7 @@
 
     iput-object v2, p0, Lcom/android/phone/DriveLinkDialogActivity;->mRejectMsgView:Landroid/widget/TextView;
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
+    invoke-virtual {p0}, Lcom/android/phone/DriveLinkDialogActivity;->getWindow()Landroid/view/Window;
 
     move-result-object v0
 
@@ -464,7 +464,7 @@
 
     invoke-virtual {v0, v2}, Landroid/view/Window;->setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/phone/DriveLinkDialogActivity;->getIntent()Landroid/content/Intent;
 
     move-result-object v2
 
@@ -482,14 +482,14 @@
 
     const v2, 0x7f09000c
 
-    invoke-virtual {p0, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v2}, Lcom/android/phone/DriveLinkDialogActivity;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
     iput-object v2, p0, Lcom/android/phone/DriveLinkDialogActivity;->mName:Ljava/lang/String;
 
     :goto_1
-    invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/phone/DriveLinkDialogActivity;->getIntent()Landroid/content/Intent;
 
     move-result-object v2
 
@@ -508,14 +508,14 @@
     :cond_0
     const v2, 0x7f040029
 
-    invoke-virtual {p0, v2}, Landroid/app/Activity;->setContentView(I)V
+    invoke-virtual {p0, v2}, Lcom/android/phone/DriveLinkDialogActivity;->setContentView(I)V
 
     goto :goto_0
 
     :cond_1
     iput-boolean v4, p0, Lcom/android/phone/DriveLinkDialogActivity;->mIsPrivate:Z
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/phone/DriveLinkDialogActivity;->getIntent()Landroid/content/Intent;
 
     move-result-object v2
 
@@ -556,14 +556,14 @@
 
     const v0, 0x7f09000c
 
-    invoke-virtual {p0, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lcom/android/phone/DriveLinkDialogActivity;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/android/phone/DriveLinkDialogActivity;->mName:Ljava/lang/String;
 
     :goto_0
-    invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/phone/DriveLinkDialogActivity;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
 

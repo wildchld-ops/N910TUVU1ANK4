@@ -45,7 +45,6 @@
 
 .method public static ofFloat(F)Landroid/animation/Keyframe;
     .locals 1
-    .param p0    # F
 
     new-instance v0, Landroid/animation/Keyframe$FloatKeyframe;
 
@@ -56,8 +55,6 @@
 
 .method public static ofFloat(FF)Landroid/animation/Keyframe;
     .locals 1
-    .param p0    # F
-    .param p1    # F
 
     new-instance v0, Landroid/animation/Keyframe$FloatKeyframe;
 
@@ -68,7 +65,6 @@
 
 .method public static ofInt(F)Landroid/animation/Keyframe;
     .locals 1
-    .param p0    # F
 
     new-instance v0, Landroid/animation/Keyframe$IntKeyframe;
 
@@ -79,8 +75,6 @@
 
 .method public static ofInt(FI)Landroid/animation/Keyframe;
     .locals 1
-    .param p0    # F
-    .param p1    # I
 
     new-instance v0, Landroid/animation/Keyframe$IntKeyframe;
 
@@ -91,7 +85,6 @@
 
 .method public static ofObject(F)Landroid/animation/Keyframe;
     .locals 2
-    .param p0    # F
 
     new-instance v0, Landroid/animation/Keyframe$ObjectKeyframe;
 
@@ -104,8 +97,6 @@
 
 .method public static ofObject(FLjava/lang/Object;)Landroid/animation/Keyframe;
     .locals 1
-    .param p0    # F
-    .param p1    # Ljava/lang/Object;
 
     new-instance v0, Landroid/animation/Keyframe$ObjectKeyframe;
 
@@ -171,7 +162,6 @@
 
 .method public setFraction(F)V
     .locals 0
-    .param p1    # F
 
     iput p1, p0, Landroid/animation/Keyframe;->mFraction:F
 
@@ -180,7 +170,6 @@
 
 .method public setInterpolator(Landroid/animation/TimeInterpolator;)V
     .locals 0
-    .param p1    # Landroid/animation/TimeInterpolator;
 
     iput-object p1, p0, Landroid/animation/Keyframe;->mInterpolator:Landroid/animation/TimeInterpolator;
 

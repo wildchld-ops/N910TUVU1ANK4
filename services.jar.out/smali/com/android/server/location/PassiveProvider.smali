@@ -51,7 +51,6 @@
 
 .method public constructor <init>(Landroid/location/ILocationManager;)V
     .locals 0
-    .param p1    # Landroid/location/ILocationManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -70,9 +69,6 @@
 
 .method public dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -123,7 +119,6 @@
 
 .method public getStatus(Landroid/os/Bundle;)I
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     iget-boolean v0, p0, Lcom/android/server/location/PassiveProvider;->mReportLocation:Z
 
@@ -158,8 +153,6 @@
 
 .method public sendExtraCommand(Ljava/lang/String;Landroid/os/Bundle;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Bundle;
 
     const/4 v0, 0x0
 
@@ -168,8 +161,6 @@
 
 .method public setRequest(Lcom/android/internal/location/ProviderRequest;Landroid/os/WorkSource;)V
     .locals 1
-    .param p1    # Lcom/android/internal/location/ProviderRequest;
-    .param p2    # Landroid/os/WorkSource;
 
     iget-boolean v0, p1, Lcom/android/internal/location/ProviderRequest;->reportLocation:Z
 
@@ -180,7 +171,6 @@
 
 .method public updateLocation(Landroid/location/Location;)V
     .locals 3
-    .param p1    # Landroid/location/Location;
 
     iget-boolean v1, p0, Lcom/android/server/location/PassiveProvider;->mReportLocation:Z
 

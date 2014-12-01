@@ -883,8 +883,6 @@
 
 .method static createFolderIconNoPlate(Landroid/graphics/Bitmap;Lcom/android/launcher2/FolderItem;)Landroid/graphics/Bitmap;
     .locals 1
-    .param p0    # Landroid/graphics/Bitmap;
-    .param p1    # Lcom/android/launcher2/FolderItem;
 
     const/4 v0, 0x0
 
@@ -897,9 +895,6 @@
 
 .method static createFolderIconNoPlate(Landroid/graphics/Bitmap;Lcom/android/launcher2/FolderItem;Lcom/android/launcher2/BaseItem;)Landroid/graphics/Bitmap;
     .locals 7
-    .param p0    # Landroid/graphics/Bitmap;
-    .param p1    # Lcom/android/launcher2/FolderItem;
-    .param p2    # Lcom/android/launcher2/BaseItem;
 
     invoke-interface {p1}, Lcom/android/launcher2/FolderItem;->sort()V
 
@@ -960,8 +955,6 @@
 
 .method static createFolderIconWithPlate(Landroid/graphics/Bitmap;Lcom/android/launcher2/FolderItem;)Landroid/graphics/Bitmap;
     .locals 7
-    .param p0    # Landroid/graphics/Bitmap;
-    .param p1    # Lcom/android/launcher2/FolderItem;
 
     const/4 v6, 0x0
 
@@ -1050,8 +1043,6 @@
 
 .method private static drawIcons(Lcom/android/launcher2/FolderItem;I)V
     .locals 13
-    .param p0    # Lcom/android/launcher2/FolderItem;
-    .param p1    # I
 
     if-nez p1, :cond_1
 
@@ -1274,7 +1265,6 @@
 
 .method public static getAppIconXYCord(I)[F
     .locals 1
-    .param p0    # I
 
     sget-object v0, Lcom/android/launcher2/FolderIconHelper;->sCurrentAppIconData:Lcom/android/launcher2/FolderIconHelper$AppIconData;
 
@@ -1352,7 +1342,6 @@
 
 .method private static getHotseatScaleFactor(Lcom/android/launcher2/FolderItem;)F
     .locals 6
-    .param p0    # Lcom/android/launcher2/FolderItem;
 
     const/high16 v1, 0x3f800000
 
@@ -1400,10 +1389,6 @@
 
 .method public static getHoverOffset(Landroid/content/res/Resources;IILcom/android/launcher2/FolderIconHelper$LocFolder;)[I
     .locals 7
-    .param p0    # Landroid/content/res/Resources;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Lcom/android/launcher2/FolderIconHelper$LocFolder;
 
     const/4 v6, 0x2
 
@@ -1558,7 +1543,6 @@
 
 .method public static getIconScaleFactor(Lcom/android/launcher2/FolderItem;)F
     .locals 5
-    .param p0    # Lcom/android/launcher2/FolderItem;
 
     instance-of v1, p0, Lcom/android/launcher2/HomeItem;
 
@@ -1609,7 +1593,6 @@
 
 .method public static getOpenFolderBitmap(I)Landroid/graphics/Bitmap;
     .locals 1
-    .param p0    # I
 
     sget-object v0, Lcom/android/launcher2/FolderIconHelper;->sCurrentAppIconData:Lcom/android/launcher2/FolderIconHelper$AppIconData;
 
@@ -1623,7 +1606,6 @@
 
 .method public static getOpenFolderGradationDrawable(I)Landroid/graphics/drawable/Drawable;
     .locals 1
-    .param p0    # I
 
     sget-object v0, Lcom/android/launcher2/FolderIconHelper;->sCurrentAppIconData:Lcom/android/launcher2/FolderIconHelper$AppIconData;
 
@@ -1637,7 +1619,6 @@
 
 .method public static getOpenFolderHighlightBitmap(I)Landroid/graphics/Bitmap;
     .locals 1
-    .param p0    # I
 
     sget-object v0, Lcom/android/launcher2/FolderIconHelper;->sCurrentAppIconData:Lcom/android/launcher2/FolderIconHelper$AppIconData;
 
@@ -1651,7 +1632,6 @@
 
 .method public static initFolderResources(Landroid/content/res/Resources;)V
     .locals 2
-    .param p0    # Landroid/content/res/Resources;
 
     invoke-virtual {p0}, Landroid/content/res/Resources;->getConfiguration()Landroid/content/res/Configuration;
 

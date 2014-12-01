@@ -162,7 +162,6 @@
 
 .method declared-synchronized setContentUri(Landroid/net/Uri;)V
     .locals 1
-    .param p1    # Landroid/net/Uri;
 
     monitor-enter p0
 
@@ -185,7 +184,6 @@
 
 .method declared-synchronized setIsPermanetError(Z)V
     .locals 1
-    .param p1    # Z
 
     monitor-enter p0
 
@@ -208,7 +206,6 @@
 
 .method declared-synchronized setIsSpam(Z)V
     .locals 1
-    .param p1    # Z
 
     monitor-enter p0
 
@@ -231,7 +228,6 @@
 
 .method declared-synchronized setState(I)V
     .locals 3
-    .param p1    # I
 
     monitor-enter p0
 
@@ -288,7 +284,6 @@
 
 .method declared-synchronized setTypeTransState(I)V
     .locals 1
-    .param p1    # I
 
     monitor-enter p0
 

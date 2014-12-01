@@ -62,7 +62,6 @@
 
 .method public processMessage(Landroid/os/Message;)Z
     .locals 14
-    .param p1    # Landroid/os/Message;
 
     const/4 v13, 0x2
 

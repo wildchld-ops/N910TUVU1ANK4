@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Lcom/android/systemui/statusbar/CommandQueue;Lcom/android/systemui/statusbar/CommandQueue$1;)V
     .locals 0
-    .param p1    # Lcom/android/systemui/statusbar/CommandQueue;
-    .param p2    # Lcom/android/systemui/statusbar/CommandQueue$1;
 
     invoke-direct {p0, p1}, Lcom/android/systemui/statusbar/CommandQueue$H;-><init>(Lcom/android/systemui/statusbar/CommandQueue;)V
 
@@ -43,7 +41,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 11
-    .param p1    # Landroid/os/Message;
 
     const/4 v1, 0x0
 

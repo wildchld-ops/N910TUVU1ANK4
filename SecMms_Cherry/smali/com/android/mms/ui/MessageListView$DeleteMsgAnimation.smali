@@ -143,7 +143,6 @@
 
 .method public readyDeleteMsgAnimation([I)V
     .locals 4
-    .param p1    # [I
 
     const/4 v3, 0x1
 
@@ -290,7 +289,6 @@
 
 .method protected sortVisibleDelItemsInAscending([I)[I
     .locals 13
-    .param p1    # [I
 
     array-length v11, p1
 
@@ -471,7 +469,6 @@
 
 .method protected startAlphaDelAnim([I)V
     .locals 12
-    .param p1    # [I
 
     const v2, 0x3e4ccccd
 

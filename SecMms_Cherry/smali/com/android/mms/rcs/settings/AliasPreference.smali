@@ -32,8 +32,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 8
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v3, 0x0
 
@@ -141,7 +139,6 @@
 
 .method public static disableOkButton(I)V
     .locals 3
-    .param p0    # I
 
     sget-object v1, Lcom/android/mms/rcs/settings/AliasPreference;->prefDialog:Landroid/app/AlertDialog;
 
@@ -177,7 +174,6 @@
 
 .method private savePreferences(I)V
     .locals 10
-    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -340,8 +336,6 @@
 
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 1
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     const/4 v0, -0x1
 
@@ -370,7 +364,6 @@
 
 .method protected onDialogClosed(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/mms/rcs/settings/AliasPreference;->mTextRcs:Ljava/lang/String;
 
@@ -383,7 +376,6 @@
 
 .method protected showDialog(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/preference/DialogPreference;->showDialog(Landroid/os/Bundle;)V
 

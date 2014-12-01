@@ -101,14 +101,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/BackupManagerService;Lcom/android/internal/backup/IBackupTransport;Ljava/lang/String;Landroid/app/backup/IRestoreObserver;JLandroid/content/pm/PackageInfo;IZ[Ljava/lang/String;)V
     .locals 6
-    .param p2    # Lcom/android/internal/backup/IBackupTransport;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Landroid/app/backup/IRestoreObserver;
-    .param p5    # J
-    .param p7    # Landroid/content/pm/PackageInfo;
-    .param p8    # I
-    .param p9    # Z
-    .param p10    # [Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/server/BackupManagerService$PerformRestoreTask;->this$0:Lcom/android/server/BackupManagerService;
 
@@ -795,7 +787,6 @@
 
 .method executeNextState(Lcom/android/server/BackupManagerService$RestoreState;)V
     .locals 3
-    .param p1    # Lcom/android/server/BackupManagerService$RestoreState;
 
     iput-object p1, p0, Lcom/android/server/BackupManagerService$PerformRestoreTask;->mCurrentState:Lcom/android/server/BackupManagerService$RestoreState;
 
@@ -1050,10 +1041,6 @@
 
 .method initiateOneRestore(Landroid/content/pm/PackageInfo;ILandroid/app/IBackupAgent;Z)V
     .locals 9
-    .param p1    # Landroid/content/pm/PackageInfo;
-    .param p2    # I
-    .param p3    # Landroid/app/IBackupAgent;
-    .param p4    # Z
 
     const/4 v8, 0x0
 

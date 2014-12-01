@@ -98,8 +98,6 @@
 
 .method private process(FF)V
     .locals 2
-    .param p1    # F
-    .param p2    # F
 
     iget-object v1, p0, Lcom/android/server/wm/WindowManagerService$DragInterpolator;->mLock:Ljava/lang/Object;
 
@@ -158,7 +156,6 @@
 # virtual methods
 .method public doFrame(J)V
     .locals 5
-    .param p1    # J
 
     iget-object v0, p0, Lcom/android/server/wm/WindowManagerService$DragInterpolator;->this$0:Lcom/android/server/wm/WindowManagerService;
 
@@ -272,8 +269,6 @@
 
 .method public handleEvent(FF)V
     .locals 2
-    .param p1    # F
-    .param p2    # F
 
     iget-object v1, p0, Lcom/android/server/wm/WindowManagerService$DragInterpolator;->mLock:Ljava/lang/Object;
 

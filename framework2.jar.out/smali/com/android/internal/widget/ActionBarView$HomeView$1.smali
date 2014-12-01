@@ -33,7 +33,6 @@
 # virtual methods
 .method public onAnimationEnd(Landroid/animation/Animator;)V
     .locals 2
-    .param p1    # Landroid/animation/Animator;
 
     iget-object v0, p0, Lcom/android/internal/widget/ActionBarView$HomeView$1;->this$0:Lcom/android/internal/widget/ActionBarView$HomeView;
 

@@ -158,7 +158,6 @@
     <uses-permission android:name="com.sec.android.util.HiddenMenuContent.WRITE_PERMISSION"/>
     <uses-permission android:name="com.sec.android.phone.permission.CLEAR_MWI"/>
     <permission android:label="CLEAR_MWI" android:name="com.sec.android.phone.permission.CLEAR_MWI" android:protectionLevel="system|signature"/>
-    <permission android:name="com.sec.android.phone.permission.WFC_PHONE_STATE" android:protectionLevel="system|signature"/>
     <application android:icon="@mipmap/ic_launcher_phone" android:label="@string/phoneAppLabel" android:largeHeap="@bool/config_large_heap_enabled" android:name="PhoneApp" android:persistent="true" android:supportsRtl="true" android:theme="@style/Theme.PhoneApp">
         <meta-data android:name="com.sec.android.support.multiwindow" android:value="@bool/config_multiwindow_phone_enabled"/>
         <meta-data android:name="com.sec.android.multiwindow.DEFAULT_SIZE_W" android:resource="@dimen/mw_app_defaultsize_w"/>
@@ -1173,11 +1172,6 @@
                 <action android:name="android.intent.action.MAIN"/>
             </intent-filter>
         </activity>
-        <service android:name=".WfcCallNotifier" android:permission="com.sec.android.phone.permission.WFC_PHONE_STATE">
-            <intent-filter>
-                <action android:name="WFC_CALL_NOTIFIER"/>
-            </intent-filter>
-        </service>
         <uses-library android:name="com.sec.android.app.multiwindow" android:required="false"/>
         <uses-library android:name="libvtmanagerjar" android:required="false"/>
         <uses-library android:name="secmediarecorder" android:required="false"/>

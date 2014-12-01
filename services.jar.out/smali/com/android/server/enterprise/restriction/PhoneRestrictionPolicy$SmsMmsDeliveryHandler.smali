@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Lcom/android/server/enterprise/restriction/PhoneRestrictionPolicy;Lcom/android/server/enterprise/restriction/PhoneRestrictionPolicy$1;)V
     .locals 0
-    .param p1    # Lcom/android/server/enterprise/restriction/PhoneRestrictionPolicy;
-    .param p2    # Lcom/android/server/enterprise/restriction/PhoneRestrictionPolicy$1;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/restriction/PhoneRestrictionPolicy$SmsMmsDeliveryHandler;-><init>(Lcom/android/server/enterprise/restriction/PhoneRestrictionPolicy;)V
 
@@ -43,7 +41,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 5
-    .param p1    # Landroid/os/Message;
 
     const-string v2, "PhoneRestrictionPolicy"
 

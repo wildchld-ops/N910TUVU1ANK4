@@ -33,7 +33,6 @@
 # virtual methods
 .method public onEnabledChanged(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Landroid/media/SubtitleController$2;->this$0:Landroid/media/SubtitleController;
 
@@ -44,7 +43,6 @@
 
 .method public onLocaleChanged(Ljava/util/Locale;)V
     .locals 1
-    .param p1    # Ljava/util/Locale;
 
     iget-object v0, p0, Landroid/media/SubtitleController$2;->this$0:Landroid/media/SubtitleController;
 

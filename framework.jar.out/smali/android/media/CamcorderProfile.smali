@@ -110,18 +110,6 @@
 
 .method private constructor <init>(IIIIIIIIIIII)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
-    .param p9    # I
-    .param p10    # I
-    .param p11    # I
-    .param p12    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -154,7 +142,6 @@
 
 .method public static get(I)Landroid/media/CamcorderProfile;
     .locals 4
-    .param p0    # I
 
     invoke-static {}, Landroid/hardware/Camera;->getNumberOfCameras()I
 
@@ -195,8 +182,6 @@
 
 .method public static get(II)Landroid/media/CamcorderProfile;
     .locals 3
-    .param p0    # I
-    .param p1    # I
 
     if-ltz p1, :cond_0
 
@@ -248,7 +233,6 @@
 
 .method public static hasProfile(I)Z
     .locals 4
-    .param p0    # I
 
     invoke-static {}, Landroid/hardware/Camera;->getNumberOfCameras()I
 
@@ -289,8 +273,6 @@
 
 .method public static hasProfile(II)Z
     .locals 1
-    .param p0    # I
-    .param p1    # I
 
     invoke-static {p0, p1}, Landroid/media/CamcorderProfile;->native_has_camcorder_profile(II)Z
 

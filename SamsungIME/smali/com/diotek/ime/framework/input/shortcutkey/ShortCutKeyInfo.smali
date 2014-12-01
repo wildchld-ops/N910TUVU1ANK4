@@ -16,9 +16,6 @@
 # direct methods
 .method constructor <init>(III)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v0, 0x0
 
@@ -45,10 +42,6 @@
 
 .method constructor <init>(IIIZ)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Z
 
     const/4 v0, 0x0
 

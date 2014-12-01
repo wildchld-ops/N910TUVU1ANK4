@@ -79,7 +79,6 @@
 
 .method public constructor <init>(Landroid/renderscript/RenderScriptGL$SurfaceConfig;)V
     .locals 3
-    .param p1    # Landroid/renderscript/RenderScriptGL$SurfaceConfig;
 
     const/16 v2, 0x8
 
@@ -162,10 +161,6 @@
 
 .method private validateRange(IIII)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     if-lt p1, p3, :cond_0
 
@@ -199,8 +194,6 @@
 # virtual methods
 .method public setAlpha(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -217,8 +210,6 @@
 
 .method public setColor(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x5
 
@@ -235,8 +226,6 @@
 
 .method public setDepth(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -253,9 +242,6 @@
 
 .method public setSamples(IIF)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # F
 
     const/4 v0, 0x1
 

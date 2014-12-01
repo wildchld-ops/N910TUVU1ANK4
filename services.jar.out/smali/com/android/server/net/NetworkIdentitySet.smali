@@ -33,7 +33,6 @@
 
 .method public constructor <init>(Ljava/io/DataInputStream;)V
     .locals 10
-    .param p1    # Ljava/io/DataInputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -120,7 +119,6 @@
 
 .method private static readOptionalString(Ljava/io/DataInputStream;)Ljava/lang/String;
     .locals 1
-    .param p0    # Ljava/io/DataInputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -148,8 +146,6 @@
 
 .method private static writeOptionalString(Ljava/io/DataOutputStream;Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/io/DataOutputStream;
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -179,7 +175,6 @@
 # virtual methods
 .method public writeToStream(Ljava/io/DataOutputStream;)V
     .locals 3
-    .param p1    # Ljava/io/DataOutputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

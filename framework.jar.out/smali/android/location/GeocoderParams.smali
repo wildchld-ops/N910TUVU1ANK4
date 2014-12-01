@@ -48,8 +48,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Ljava/util/Locale;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/util/Locale;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -66,7 +64,6 @@
 
 .method synthetic constructor <init>(Landroid/location/GeocoderParams$1;)V
     .locals 0
-    .param p1    # Landroid/location/GeocoderParams$1;
 
     invoke-direct {p0}, Landroid/location/GeocoderParams;-><init>()V
 
@@ -75,8 +72,6 @@
 
 .method static synthetic access$102(Landroid/location/GeocoderParams;Ljava/util/Locale;)Ljava/util/Locale;
     .locals 0
-    .param p0    # Landroid/location/GeocoderParams;
-    .param p1    # Ljava/util/Locale;
 
     iput-object p1, p0, Landroid/location/GeocoderParams;->mLocale:Ljava/util/Locale;
 
@@ -85,8 +80,6 @@
 
 .method static synthetic access$202(Landroid/location/GeocoderParams;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Landroid/location/GeocoderParams;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/location/GeocoderParams;->mPackageName:Ljava/lang/String;
 
@@ -121,8 +114,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v0, p0, Landroid/location/GeocoderParams;->mLocale:Ljava/util/Locale;
 

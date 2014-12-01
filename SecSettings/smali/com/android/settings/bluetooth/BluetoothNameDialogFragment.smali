@@ -78,8 +78,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/bluetooth/BluetoothNameDialogFragment;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/settings/bluetooth/BluetoothNameDialogFragment;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/settings/bluetooth/BluetoothNameDialogFragment;->setDeviceName(Ljava/lang/String;)V
 
@@ -88,7 +86,6 @@
 
 .method private createDialogView(Ljava/lang/String;)Landroid/view/View;
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 
@@ -147,7 +144,6 @@
 
 .method private setDeviceName(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     sget-boolean v0, Lcom/android/settings/bluetooth/BluetoothNameDialogFragment;->DBG:Z
 
@@ -187,7 +183,6 @@
 # virtual methods
 .method public afterTextChanged(Landroid/text/Editable;)V
     .locals 8
-    .param p1    # Landroid/text/Editable;
 
     const/16 v7, 0x20
 
@@ -270,10 +265,6 @@
 
 .method public beforeTextChanged(Ljava/lang/CharSequence;III)V
     .locals 2
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     if-eqz p1, :cond_0
 
@@ -303,7 +294,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/DialogFragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -338,7 +328,6 @@
 
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     iget-object v1, p0, Lcom/android/settings/bluetooth/BluetoothNameDialogFragment;->mLocalAdapter:Lcom/android/settings/bluetooth/LocalBluetoothAdapter;
 
@@ -629,7 +618,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "device_name"
 
@@ -656,10 +644,6 @@
 
 .method public onTextChanged(Ljava/lang/CharSequence;III)V
     .locals 5
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/16 v3, 0x20
 

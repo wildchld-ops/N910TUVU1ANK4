@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Lcom/android/settings/bluetooth/HeadsetProfile;Lcom/android/settings/bluetooth/HeadsetProfile$1;)V
     .locals 0
-    .param p1    # Lcom/android/settings/bluetooth/HeadsetProfile;
-    .param p2    # Lcom/android/settings/bluetooth/HeadsetProfile$1;
 
     invoke-direct {p0, p1}, Lcom/android/settings/bluetooth/HeadsetProfile$HeadsetServiceListener;-><init>(Lcom/android/settings/bluetooth/HeadsetProfile;)V
 
@@ -46,8 +44,6 @@
 # virtual methods
 .method public onServiceConnected(ILandroid/bluetooth/BluetoothProfile;)V
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/bluetooth/BluetoothProfile;
 
     # getter for: Lcom/android/settings/bluetooth/HeadsetProfile;->V:Z
     invoke-static {}, Lcom/android/settings/bluetooth/HeadsetProfile;->access$000()Z
@@ -200,7 +196,6 @@
 
 .method public onServiceDisconnected(I)V
     .locals 2
-    .param p1    # I
 
     # getter for: Lcom/android/settings/bluetooth/HeadsetProfile;->V:Z
     invoke-static {}, Lcom/android/settings/bluetooth/HeadsetProfile;->access$000()Z

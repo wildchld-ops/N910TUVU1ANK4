@@ -30,8 +30,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/widget/Switch;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/widget/Switch;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -94,7 +92,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/AirplaneModeSwitchEnabler;)V
     .locals 0
-    .param p0    # Lcom/android/settings/AirplaneModeSwitchEnabler;
 
     invoke-direct {p0}, Lcom/android/settings/AirplaneModeSwitchEnabler;->onAirplaneModeChanged()V
 
@@ -103,7 +100,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/AirplaneModeSwitchEnabler;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/settings/AirplaneModeSwitchEnabler;
 
     iget-object v0, p0, Lcom/android/settings/AirplaneModeSwitchEnabler;->mContext:Landroid/content/Context;
 
@@ -112,8 +108,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/AirplaneModeSwitchEnabler;Z)V
     .locals 0
-    .param p0    # Lcom/android/settings/AirplaneModeSwitchEnabler;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/settings/AirplaneModeSwitchEnabler;->setAirplaneModeOn(Z)V
 
@@ -122,7 +116,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/AirplaneModeSwitchEnabler;)Landroid/widget/Switch;
     .locals 1
-    .param p0    # Lcom/android/settings/AirplaneModeSwitchEnabler;
 
     iget-object v0, p0, Lcom/android/settings/AirplaneModeSwitchEnabler;->mSwitch:Landroid/widget/Switch;
 
@@ -131,7 +124,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/AirplaneModeSwitchEnabler;)Lcom/sec/android/touchwiz/widget/TwCheckBox;
     .locals 1
-    .param p0    # Lcom/android/settings/AirplaneModeSwitchEnabler;
 
     iget-object v0, p0, Lcom/android/settings/AirplaneModeSwitchEnabler;->mCheck:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
@@ -140,7 +132,6 @@
 
 .method public static isAirplaneModeOn(Landroid/content/Context;)Z
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -423,7 +414,6 @@
 
 .method private setAirplaneModeOn(Z)V
     .locals 5
-    .param p1    # Z
 
     const/4 v1, 0x0
 
@@ -565,7 +555,6 @@
 # virtual methods
 .method public changeAirplaneMode(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/settings/AirplaneModeSwitchEnabler;->mContext:Landroid/content/Context;
 
@@ -583,8 +572,6 @@
 
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 8
-    .param p1    # Landroid/widget/CompoundButton;
-    .param p2    # Z
 
     iget-object v6, p0, Lcom/android/settings/AirplaneModeSwitchEnabler;->mContext:Landroid/content/Context;
 
@@ -790,8 +777,6 @@
 
 .method public onCheckedChanged(Lcom/sec/android/touchwiz/widget/TwCompoundButton;Z)V
     .locals 7
-    .param p1    # Lcom/sec/android/touchwiz/widget/TwCompoundButton;
-    .param p2    # Z
 
     iget-object v5, p0, Lcom/android/settings/AirplaneModeSwitchEnabler;->mContext:Landroid/content/Context;
 
@@ -1164,7 +1149,6 @@
 
 .method public setCheckBox(Lcom/sec/android/touchwiz/widget/TwCheckBox;)V
     .locals 2
-    .param p1    # Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
     iget-object v0, p0, Lcom/android/settings/AirplaneModeSwitchEnabler;->mCheck:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
@@ -1207,7 +1191,6 @@
 
 .method public setSwitch(Landroid/widget/Switch;)V
     .locals 4
-    .param p1    # Landroid/widget/Switch;
 
     const/4 v3, 0x0
 

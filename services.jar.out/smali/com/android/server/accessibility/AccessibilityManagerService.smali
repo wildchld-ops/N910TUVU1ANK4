@@ -220,7 +220,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
 
     const/4 v5, 0x0
 
@@ -458,7 +457,6 @@
 
 .method static synthetic access$000(Lcom/android/server/accessibility/AccessibilityManagerService;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/server/accessibility/AccessibilityManagerService;
 
     iget-object v0, p0, Lcom/android/server/accessibility/AccessibilityManagerService;->mContext:Landroid/content/Context;
 
@@ -467,9 +465,6 @@
 
 .method static synthetic access$100(Lcom/android/server/accessibility/AccessibilityManagerService;Landroid/content/Context;I)V
     .locals 0
-    .param p0    # Lcom/android/server/accessibility/AccessibilityManagerService;
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/accessibility/AccessibilityManagerService;->turnOffTalkBackExclusiveOptions(Landroid/content/Context;I)V
 
@@ -478,8 +473,6 @@
 
 .method static synthetic access$1000(Lcom/android/server/accessibility/AccessibilityManagerService;Lcom/android/server/accessibility/AccessibilityManagerService$UserState;)V
     .locals 0
-    .param p0    # Lcom/android/server/accessibility/AccessibilityManagerService;
-    .param p1    # Lcom/android/server/accessibility/AccessibilityManagerService$UserState;
 
     invoke-direct {p0, p1}, Lcom/android/server/accessibility/AccessibilityManagerService;->onUserStateChangedLocked(Lcom/android/server/accessibility/AccessibilityManagerService$UserState;)V
 
@@ -488,8 +481,6 @@
 
 .method static synthetic access$1100(Lcom/android/server/accessibility/AccessibilityManagerService;I)Lcom/android/server/accessibility/AccessibilityManagerService$UserState;
     .locals 1
-    .param p0    # Lcom/android/server/accessibility/AccessibilityManagerService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/accessibility/AccessibilityManagerService;->getUserStateLocked(I)Lcom/android/server/accessibility/AccessibilityManagerService$UserState;
 
@@ -500,10 +491,6 @@
 
 .method static synthetic access$1200(Lcom/android/server/accessibility/AccessibilityManagerService;Ljava/lang/String;Ljava/util/Set;I)V
     .locals 0
-    .param p0    # Lcom/android/server/accessibility/AccessibilityManagerService;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/util/Set;
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/server/accessibility/AccessibilityManagerService;->persistComponentNamesToSettingLocked(Ljava/lang/String;Ljava/util/Set;I)V
 
@@ -512,7 +499,6 @@
 
 .method static synthetic access$1300(Lcom/android/server/accessibility/AccessibilityManagerService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/accessibility/AccessibilityManagerService;
 
     iget-boolean v0, p0, Lcom/android/server/accessibility/AccessibilityManagerService;->mCurtainModeIsRunning:Z
 
@@ -521,8 +507,6 @@
 
 .method static synthetic access$1302(Lcom/android/server/accessibility/AccessibilityManagerService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/accessibility/AccessibilityManagerService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/accessibility/AccessibilityManagerService;->mCurtainModeIsRunning:Z
 
@@ -531,8 +515,6 @@
 
 .method static synthetic access$1400(Lcom/android/server/accessibility/AccessibilityManagerService;I)V
     .locals 0
-    .param p0    # Lcom/android/server/accessibility/AccessibilityManagerService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/accessibility/AccessibilityManagerService;->removeUser(I)V
 
@@ -541,9 +523,6 @@
 
 .method static synthetic access$2100(Lcom/android/server/accessibility/AccessibilityManagerService;II)V
     .locals 0
-    .param p0    # Lcom/android/server/accessibility/AccessibilityManagerService;
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/accessibility/AccessibilityManagerService;->removeAccessibilityInteractionConnectionLocked(II)V
 
@@ -552,7 +531,6 @@
 
 .method static synthetic access$2200(Lcom/android/server/accessibility/AccessibilityManagerService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/accessibility/AccessibilityManagerService;
 
     iget-boolean v0, p0, Lcom/android/server/accessibility/AccessibilityManagerService;->mHasInputFilter:Z
 
@@ -561,7 +539,6 @@
 
 .method static synthetic access$2300(Lcom/android/server/accessibility/AccessibilityManagerService;)Lcom/android/server/accessibility/AccessibilityInputFilter;
     .locals 1
-    .param p0    # Lcom/android/server/accessibility/AccessibilityManagerService;
 
     iget-object v0, p0, Lcom/android/server/accessibility/AccessibilityManagerService;->mInputFilter:Lcom/android/server/accessibility/AccessibilityInputFilter;
 
@@ -570,7 +547,6 @@
 
 .method static synthetic access$2400(Lcom/android/server/accessibility/AccessibilityManagerService;)Landroid/os/RemoteCallbackList;
     .locals 1
-    .param p0    # Lcom/android/server/accessibility/AccessibilityManagerService;
 
     iget-object v0, p0, Lcom/android/server/accessibility/AccessibilityManagerService;->mGlobalClients:Landroid/os/RemoteCallbackList;
 
@@ -579,7 +555,6 @@
 
 .method static synthetic access$2500(Lcom/android/server/accessibility/AccessibilityManagerService;)Lcom/android/server/accessibility/AccessibilityManagerService$SecurityPolicy;
     .locals 1
-    .param p0    # Lcom/android/server/accessibility/AccessibilityManagerService;
 
     iget-object v0, p0, Lcom/android/server/accessibility/AccessibilityManagerService;->mSecurityPolicy:Lcom/android/server/accessibility/AccessibilityManagerService$SecurityPolicy;
 
@@ -588,8 +563,6 @@
 
 .method static synthetic access$2600(Lcom/android/server/accessibility/AccessibilityManagerService;Lcom/android/server/accessibility/AccessibilityManagerService$UserState;)V
     .locals 0
-    .param p0    # Lcom/android/server/accessibility/AccessibilityManagerService;
-    .param p1    # Lcom/android/server/accessibility/AccessibilityManagerService$UserState;
 
     invoke-direct {p0, p1}, Lcom/android/server/accessibility/AccessibilityManagerService;->updateInputFilter(Lcom/android/server/accessibility/AccessibilityManagerService$UserState;)V
 
@@ -598,8 +571,6 @@
 
 .method static synthetic access$2700(Lcom/android/server/accessibility/AccessibilityManagerService;Lcom/android/server/accessibility/AccessibilityManagerService$Service;)V
     .locals 0
-    .param p0    # Lcom/android/server/accessibility/AccessibilityManagerService;
-    .param p1    # Lcom/android/server/accessibility/AccessibilityManagerService$Service;
 
     invoke-direct {p0, p1}, Lcom/android/server/accessibility/AccessibilityManagerService;->showEnableTouchExplorationDialog(Lcom/android/server/accessibility/AccessibilityManagerService$Service;)V
 
@@ -608,7 +579,6 @@
 
 .method static synthetic access$300(Lcom/android/server/accessibility/AccessibilityManagerService;)Landroid/widget/Toast;
     .locals 1
-    .param p0    # Lcom/android/server/accessibility/AccessibilityManagerService;
 
     iget-object v0, p0, Lcom/android/server/accessibility/AccessibilityManagerService;->mWarningToast:Landroid/widget/Toast;
 
@@ -617,7 +587,6 @@
 
 .method static synthetic access$3000(Lcom/android/server/accessibility/AccessibilityManagerService;)Lcom/android/server/accessibility/AccessibilityManagerService$MainHandler;
     .locals 1
-    .param p0    # Lcom/android/server/accessibility/AccessibilityManagerService;
 
     iget-object v0, p0, Lcom/android/server/accessibility/AccessibilityManagerService;->mMainHandler:Lcom/android/server/accessibility/AccessibilityManagerService$MainHandler;
 
@@ -626,8 +595,6 @@
 
 .method static synthetic access$302(Lcom/android/server/accessibility/AccessibilityManagerService;Landroid/widget/Toast;)Landroid/widget/Toast;
     .locals 0
-    .param p0    # Lcom/android/server/accessibility/AccessibilityManagerService;
-    .param p1    # Landroid/widget/Toast;
 
     iput-object p1, p0, Lcom/android/server/accessibility/AccessibilityManagerService;->mWarningToast:Landroid/widget/Toast;
 
@@ -656,9 +623,6 @@
 
 .method static synthetic access$3400(Lcom/android/server/accessibility/AccessibilityManagerService;Lcom/android/server/accessibility/AccessibilityManagerService$Service;Lcom/android/server/accessibility/AccessibilityManagerService$UserState;)V
     .locals 0
-    .param p0    # Lcom/android/server/accessibility/AccessibilityManagerService;
-    .param p1    # Lcom/android/server/accessibility/AccessibilityManagerService$Service;
-    .param p2    # Lcom/android/server/accessibility/AccessibilityManagerService$UserState;
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/accessibility/AccessibilityManagerService;->removeServiceLocked(Lcom/android/server/accessibility/AccessibilityManagerService$Service;Lcom/android/server/accessibility/AccessibilityManagerService$UserState;)V
 
@@ -667,9 +631,6 @@
 
 .method static synthetic access$3500(Lcom/android/server/accessibility/AccessibilityManagerService;Lcom/android/server/accessibility/AccessibilityManagerService$Service;Lcom/android/server/accessibility/AccessibilityManagerService$UserState;)V
     .locals 0
-    .param p0    # Lcom/android/server/accessibility/AccessibilityManagerService;
-    .param p1    # Lcom/android/server/accessibility/AccessibilityManagerService$Service;
-    .param p2    # Lcom/android/server/accessibility/AccessibilityManagerService$UserState;
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/accessibility/AccessibilityManagerService;->addServiceLocked(Lcom/android/server/accessibility/AccessibilityManagerService$Service;Lcom/android/server/accessibility/AccessibilityManagerService$UserState;)V
 
@@ -678,7 +639,6 @@
 
 .method static synthetic access$3600(Lcom/android/server/accessibility/AccessibilityManagerService;)Landroid/util/SparseArray;
     .locals 1
-    .param p0    # Lcom/android/server/accessibility/AccessibilityManagerService;
 
     iget-object v0, p0, Lcom/android/server/accessibility/AccessibilityManagerService;->mGlobalInteractionConnections:Landroid/util/SparseArray;
 
@@ -687,7 +647,6 @@
 
 .method static synthetic access$3800(Lcom/android/server/accessibility/AccessibilityManagerService;)Landroid/util/SparseArray;
     .locals 1
-    .param p0    # Lcom/android/server/accessibility/AccessibilityManagerService;
 
     iget-object v0, p0, Lcom/android/server/accessibility/AccessibilityManagerService;->mGlobalWindowTokens:Landroid/util/SparseArray;
 
@@ -696,7 +655,6 @@
 
 .method static synthetic access$3900(Lcom/android/server/accessibility/AccessibilityManagerService;)Landroid/view/IWindowManager;
     .locals 1
-    .param p0    # Lcom/android/server/accessibility/AccessibilityManagerService;
 
     iget-object v0, p0, Lcom/android/server/accessibility/AccessibilityManagerService;->mWindowManagerService:Landroid/view/IWindowManager;
 
@@ -705,7 +663,6 @@
 
 .method static synthetic access$400(Lcom/android/server/accessibility/AccessibilityManagerService;)V
     .locals 0
-    .param p0    # Lcom/android/server/accessibility/AccessibilityManagerService;
 
     invoke-direct {p0}, Lcom/android/server/accessibility/AccessibilityManagerService;->talkbackOffWarning()V
 
@@ -714,10 +671,6 @@
 
 .method static synthetic access$4300(Lcom/android/server/accessibility/AccessibilityManagerService;Landroid/view/KeyEvent;II)Lcom/android/server/accessibility/AccessibilityManagerService$PendingEvent;
     .locals 1
-    .param p0    # Lcom/android/server/accessibility/AccessibilityManagerService;
-    .param p1    # Landroid/view/KeyEvent;
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/server/accessibility/AccessibilityManagerService;->obtainPendingEventLocked(Landroid/view/KeyEvent;II)Lcom/android/server/accessibility/AccessibilityManagerService$PendingEvent;
 
@@ -728,8 +681,6 @@
 
 .method static synthetic access$4400(Lcom/android/server/accessibility/AccessibilityManagerService;Lcom/android/server/accessibility/AccessibilityManagerService$PendingEvent;)V
     .locals 0
-    .param p0    # Lcom/android/server/accessibility/AccessibilityManagerService;
-    .param p1    # Lcom/android/server/accessibility/AccessibilityManagerService$PendingEvent;
 
     invoke-direct {p0, p1}, Lcom/android/server/accessibility/AccessibilityManagerService;->recyclePendingEventLocked(Lcom/android/server/accessibility/AccessibilityManagerService$PendingEvent;)V
 
@@ -746,8 +697,6 @@
 
 .method static synthetic access$4700(Lcom/android/server/accessibility/AccessibilityManagerService;Lcom/android/server/accessibility/AccessibilityManagerService$UserState;)V
     .locals 0
-    .param p0    # Lcom/android/server/accessibility/AccessibilityManagerService;
-    .param p1    # Lcom/android/server/accessibility/AccessibilityManagerService$UserState;
 
     invoke-direct {p0, p1}, Lcom/android/server/accessibility/AccessibilityManagerService;->unbindAllServicesLocked(Lcom/android/server/accessibility/AccessibilityManagerService$UserState;)V
 
@@ -756,8 +705,6 @@
 
 .method static synthetic access$4800(Lcom/android/server/accessibility/AccessibilityManagerService;Lcom/android/server/accessibility/AccessibilityManagerService$UserState;)Z
     .locals 1
-    .param p0    # Lcom/android/server/accessibility/AccessibilityManagerService;
-    .param p1    # Lcom/android/server/accessibility/AccessibilityManagerService$UserState;
 
     invoke-direct {p0, p1}, Lcom/android/server/accessibility/AccessibilityManagerService;->readAccessibilityEnabledSettingLocked(Lcom/android/server/accessibility/AccessibilityManagerService$UserState;)Z
 
@@ -768,8 +715,6 @@
 
 .method static synthetic access$4900(Lcom/android/server/accessibility/AccessibilityManagerService;Lcom/android/server/accessibility/AccessibilityManagerService$UserState;)Z
     .locals 1
-    .param p0    # Lcom/android/server/accessibility/AccessibilityManagerService;
-    .param p1    # Lcom/android/server/accessibility/AccessibilityManagerService$UserState;
 
     invoke-direct {p0, p1}, Lcom/android/server/accessibility/AccessibilityManagerService;->readTouchExplorationEnabledSettingLocked(Lcom/android/server/accessibility/AccessibilityManagerService$UserState;)Z
 
@@ -780,7 +725,6 @@
 
 .method static synthetic access$500(Lcom/android/server/accessibility/AccessibilityManagerService;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Lcom/android/server/accessibility/AccessibilityManagerService;
 
     iget-object v0, p0, Lcom/android/server/accessibility/AccessibilityManagerService;->mLock:Ljava/lang/Object;
 
@@ -789,8 +733,6 @@
 
 .method static synthetic access$5000(Lcom/android/server/accessibility/AccessibilityManagerService;Lcom/android/server/accessibility/AccessibilityManagerService$UserState;)Z
     .locals 1
-    .param p0    # Lcom/android/server/accessibility/AccessibilityManagerService;
-    .param p1    # Lcom/android/server/accessibility/AccessibilityManagerService$UserState;
 
     invoke-direct {p0, p1}, Lcom/android/server/accessibility/AccessibilityManagerService;->readOverlayMagnificationEnabledSettingLocked(Lcom/android/server/accessibility/AccessibilityManagerService$UserState;)Z
 
@@ -801,8 +743,6 @@
 
 .method static synthetic access$5100(Lcom/android/server/accessibility/AccessibilityManagerService;Lcom/android/server/accessibility/AccessibilityManagerService$UserState;)Z
     .locals 1
-    .param p0    # Lcom/android/server/accessibility/AccessibilityManagerService;
-    .param p1    # Lcom/android/server/accessibility/AccessibilityManagerService$UserState;
 
     invoke-direct {p0, p1}, Lcom/android/server/accessibility/AccessibilityManagerService;->readDisplayMagnificationEnabledSettingLocked(Lcom/android/server/accessibility/AccessibilityManagerService$UserState;)Z
 
@@ -813,8 +753,6 @@
 
 .method static synthetic access$5200(Lcom/android/server/accessibility/AccessibilityManagerService;Lcom/android/server/accessibility/AccessibilityManagerService$UserState;)Z
     .locals 1
-    .param p0    # Lcom/android/server/accessibility/AccessibilityManagerService;
-    .param p1    # Lcom/android/server/accessibility/AccessibilityManagerService$UserState;
 
     invoke-direct {p0, p1}, Lcom/android/server/accessibility/AccessibilityManagerService;->readEnabledAccessibilityServicesLocked(Lcom/android/server/accessibility/AccessibilityManagerService$UserState;)Z
 
@@ -825,8 +763,6 @@
 
 .method static synthetic access$5300(Lcom/android/server/accessibility/AccessibilityManagerService;Lcom/android/server/accessibility/AccessibilityManagerService$UserState;)Z
     .locals 1
-    .param p0    # Lcom/android/server/accessibility/AccessibilityManagerService;
-    .param p1    # Lcom/android/server/accessibility/AccessibilityManagerService$UserState;
 
     invoke-direct {p0, p1}, Lcom/android/server/accessibility/AccessibilityManagerService;->readTouchExplorationGrantedAccessibilityServicesLocked(Lcom/android/server/accessibility/AccessibilityManagerService$UserState;)Z
 
@@ -837,8 +773,6 @@
 
 .method static synthetic access$5400(Lcom/android/server/accessibility/AccessibilityManagerService;Lcom/android/server/accessibility/AccessibilityManagerService$UserState;)Z
     .locals 1
-    .param p0    # Lcom/android/server/accessibility/AccessibilityManagerService;
-    .param p1    # Lcom/android/server/accessibility/AccessibilityManagerService$UserState;
 
     invoke-direct {p0, p1}, Lcom/android/server/accessibility/AccessibilityManagerService;->readEnhancedWebAccessibilityEnabledChangedLocked(Lcom/android/server/accessibility/AccessibilityManagerService$UserState;)Z
 
@@ -849,7 +783,6 @@
 
 .method static synthetic access$5500(Lcom/android/server/accessibility/AccessibilityManagerService;)Landroid/speech/tts/TextToSpeech;
     .locals 1
-    .param p0    # Lcom/android/server/accessibility/AccessibilityManagerService;
 
     iget-object v0, p0, Lcom/android/server/accessibility/AccessibilityManagerService;->mTts:Landroid/speech/tts/TextToSpeech;
 
@@ -858,7 +791,6 @@
 
 .method static synthetic access$600(Lcom/android/server/accessibility/AccessibilityManagerService;)I
     .locals 1
-    .param p0    # Lcom/android/server/accessibility/AccessibilityManagerService;
 
     iget v0, p0, Lcom/android/server/accessibility/AccessibilityManagerService;->mCurrentUserId:I
 
@@ -867,7 +799,6 @@
 
 .method static synthetic access$700(Lcom/android/server/accessibility/AccessibilityManagerService;)Lcom/android/server/accessibility/AccessibilityManagerService$UserState;
     .locals 1
-    .param p0    # Lcom/android/server/accessibility/AccessibilityManagerService;
 
     invoke-direct {p0}, Lcom/android/server/accessibility/AccessibilityManagerService;->getCurrentUserStateLocked()Lcom/android/server/accessibility/AccessibilityManagerService$UserState;
 
@@ -878,8 +809,6 @@
 
 .method static synthetic access$900(Lcom/android/server/accessibility/AccessibilityManagerService;Lcom/android/server/accessibility/AccessibilityManagerService$UserState;)Z
     .locals 1
-    .param p0    # Lcom/android/server/accessibility/AccessibilityManagerService;
-    .param p1    # Lcom/android/server/accessibility/AccessibilityManagerService$UserState;
 
     invoke-direct {p0, p1}, Lcom/android/server/accessibility/AccessibilityManagerService;->readConfigurationForUserStateLocked(Lcom/android/server/accessibility/AccessibilityManagerService$UserState;)Z
 
@@ -890,8 +819,6 @@
 
 .method private addServiceLocked(Lcom/android/server/accessibility/AccessibilityManagerService$Service;Lcom/android/server/accessibility/AccessibilityManagerService$UserState;)V
     .locals 2
-    .param p1    # Lcom/android/server/accessibility/AccessibilityManagerService$Service;
-    .param p2    # Lcom/android/server/accessibility/AccessibilityManagerService$UserState;
 
     :try_start_0
     invoke-virtual {p1}, Lcom/android/server/accessibility/AccessibilityManagerService$Service;->linkToOwnDeathLocked()V
@@ -919,9 +846,6 @@
 
 .method private canDispathEventLocked(Lcom/android/server/accessibility/AccessibilityManagerService$Service;Landroid/view/accessibility/AccessibilityEvent;I)Z
     .locals 6
-    .param p1    # Lcom/android/server/accessibility/AccessibilityManagerService$Service;
-    .param p2    # Landroid/view/accessibility/AccessibilityEvent;
-    .param p3    # I
 
     const/4 v4, 0x0
 
@@ -996,7 +920,6 @@
 
 .method private canRequestAndRequestsEnhancedWebAccessibilityLocked(Lcom/android/server/accessibility/AccessibilityManagerService$Service;)Z
     .locals 2
-    .param p1    # Lcom/android/server/accessibility/AccessibilityManagerService$Service;
 
     const/4 v0, 0x0
 
@@ -1037,7 +960,6 @@
 
 .method private canRequestAndRequestsTouchExplorationLocked(Lcom/android/server/accessibility/AccessibilityManagerService$Service;)Z
     .locals 5
-    .param p1    # Lcom/android/server/accessibility/AccessibilityManagerService$Service;
 
     const/4 v2, 0x0
 
@@ -1211,7 +1133,6 @@
 
 .method private getUserStateLocked(I)Lcom/android/server/accessibility/AccessibilityManagerService$UserState;
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/server/accessibility/AccessibilityManagerService;->mUserStates:Landroid/util/SparseArray;
 
@@ -1237,8 +1158,6 @@
 
 .method private hasPackage(Landroid/content/Context;Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p1}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -1266,7 +1185,6 @@
 
 .method private manageServicesLocked(Lcom/android/server/accessibility/AccessibilityManagerService$UserState;)V
     .locals 11
-    .param p1    # Lcom/android/server/accessibility/AccessibilityManagerService$UserState;
 
     const/4 v10, 0x0
 
@@ -1408,8 +1326,6 @@
 
 .method private notifyAccessibilityServicesDelayedLocked(Landroid/view/accessibility/AccessibilityEvent;Z)V
     .locals 7
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
-    .param p2    # Z
 
     :try_start_0
     invoke-direct {p0}, Lcom/android/server/accessibility/AccessibilityManagerService;->getCurrentUserStateLocked()Lcom/android/server/accessibility/AccessibilityManagerService$UserState;
@@ -1509,8 +1425,6 @@
 
 .method private notifyGestureLocked(IZ)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Z
 
     invoke-direct {p0}, Lcom/android/server/accessibility/AccessibilityManagerService;->getCurrentUserStateLocked()Lcom/android/server/accessibility/AccessibilityManagerService$UserState;
 
@@ -1563,9 +1477,6 @@
 
 .method private notifyKeyEventLocked(Landroid/view/KeyEvent;IZ)Z
     .locals 4
-    .param p1    # Landroid/view/KeyEvent;
-    .param p2    # I
-    .param p3    # Z
 
     invoke-direct {p0}, Lcom/android/server/accessibility/AccessibilityManagerService;->getCurrentUserStateLocked()Lcom/android/server/accessibility/AccessibilityManagerService$UserState;
 
@@ -1629,9 +1540,6 @@
 
 .method private obtainPendingEventLocked(Landroid/view/KeyEvent;II)Lcom/android/server/accessibility/AccessibilityManagerService$PendingEvent;
     .locals 2
-    .param p1    # Landroid/view/KeyEvent;
-    .param p2    # I
-    .param p3    # I
 
     iget-object v1, p0, Lcom/android/server/accessibility/AccessibilityManagerService;->mPendingEventPool:Landroid/util/Pools$Pool;
 
@@ -1661,7 +1569,6 @@
 
 .method private onUserStateChangedLocked(Lcom/android/server/accessibility/AccessibilityManagerService$UserState;)V
     .locals 1
-    .param p1    # Lcom/android/server/accessibility/AccessibilityManagerService$UserState;
 
     const/4 v0, 0x1
 
@@ -1686,8 +1593,6 @@
 
 .method private persistComponentNamesToSettingLocked(Ljava/lang/String;Ljava/util/Set;I)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1757,7 +1662,6 @@
 
 .method private readAccessibilityEnabledSettingLocked(Lcom/android/server/accessibility/AccessibilityManagerService$UserState;)Z
     .locals 6
-    .param p1    # Lcom/android/server/accessibility/AccessibilityManagerService$UserState;
 
     const/4 v1, 0x1
 
@@ -1804,8 +1708,6 @@
 
 .method private readComponentNamesFromSettingLocked(Ljava/lang/String;ILjava/util/Set;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1872,7 +1774,6 @@
 
 .method private readConfigurationForUserStateLocked(Lcom/android/server/accessibility/AccessibilityManagerService$UserState;)Z
     .locals 2
-    .param p1    # Lcom/android/server/accessibility/AccessibilityManagerService$UserState;
 
     const/4 v0, 0x0
 
@@ -1929,7 +1830,6 @@
 
 .method private readDisplayMagnificationEnabledSettingLocked(Lcom/android/server/accessibility/AccessibilityManagerService$UserState;)Z
     .locals 6
-    .param p1    # Lcom/android/server/accessibility/AccessibilityManagerService$UserState;
 
     const/4 v1, 0x1
 
@@ -1976,7 +1876,6 @@
 
 .method private readEnabledAccessibilityServicesLocked(Lcom/android/server/accessibility/AccessibilityManagerService$UserState;)Z
     .locals 3
-    .param p1    # Lcom/android/server/accessibility/AccessibilityManagerService$UserState;
 
     iget-object v0, p0, Lcom/android/server/accessibility/AccessibilityManagerService;->mTempComponentNameSet:Ljava/util/Set;
 
@@ -2031,7 +1930,6 @@
 
 .method private readEnhancedWebAccessibilityEnabledChangedLocked(Lcom/android/server/accessibility/AccessibilityManagerService$UserState;)Z
     .locals 6
-    .param p1    # Lcom/android/server/accessibility/AccessibilityManagerService$UserState;
 
     const/4 v1, 0x1
 
@@ -2078,7 +1976,6 @@
 
 .method private readInstalledAccessibilityServiceLocked(Lcom/android/server/accessibility/AccessibilityManagerService$UserState;)Z
     .locals 13
-    .param p1    # Lcom/android/server/accessibility/AccessibilityManagerService$UserState;
 
     iget-object v8, p0, Lcom/android/server/accessibility/AccessibilityManagerService;->mTempAccessibilityServiceInfoList:Ljava/util/List;
 
@@ -2259,7 +2156,6 @@
 
 .method private readOverlayMagnificationEnabledSettingLocked(Lcom/android/server/accessibility/AccessibilityManagerService$UserState;)Z
     .locals 7
-    .param p1    # Lcom/android/server/accessibility/AccessibilityManagerService$UserState;
 
     const/4 v2, 0x1
 
@@ -2330,7 +2226,6 @@
 
 .method private readTouchExplorationEnabledSettingLocked(Lcom/android/server/accessibility/AccessibilityManagerService$UserState;)Z
     .locals 6
-    .param p1    # Lcom/android/server/accessibility/AccessibilityManagerService$UserState;
 
     const/4 v1, 0x1
 
@@ -2377,7 +2272,6 @@
 
 .method private readTouchExplorationGrantedAccessibilityServicesLocked(Lcom/android/server/accessibility/AccessibilityManagerService$UserState;)Z
     .locals 3
-    .param p1    # Lcom/android/server/accessibility/AccessibilityManagerService$UserState;
 
     iget-object v0, p0, Lcom/android/server/accessibility/AccessibilityManagerService;->mTempComponentNameSet:Ljava/util/Set;
 
@@ -2432,7 +2326,6 @@
 
 .method private recyclePendingEventLocked(Lcom/android/server/accessibility/AccessibilityManagerService$PendingEvent;)V
     .locals 1
-    .param p1    # Lcom/android/server/accessibility/AccessibilityManagerService$PendingEvent;
 
     invoke-virtual {p1}, Lcom/android/server/accessibility/AccessibilityManagerService$PendingEvent;->clear()V
 
@@ -2497,7 +2390,6 @@
 
 .method private removeAccessibilityInteractionConnectionInternalLocked(Landroid/os/IBinder;Landroid/util/SparseArray;Landroid/util/SparseArray;)I
     .locals 5
-    .param p1    # Landroid/os/IBinder;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2560,8 +2452,6 @@
 
 .method private removeAccessibilityInteractionConnectionLocked(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     const/4 v1, -0x1
 
@@ -2596,8 +2486,6 @@
 
 .method private removeServiceLocked(Lcom/android/server/accessibility/AccessibilityManagerService$Service;Lcom/android/server/accessibility/AccessibilityManagerService$UserState;)V
     .locals 2
-    .param p1    # Lcom/android/server/accessibility/AccessibilityManagerService$Service;
-    .param p2    # Lcom/android/server/accessibility/AccessibilityManagerService$UserState;
 
     iget-object v0, p2, Lcom/android/server/accessibility/AccessibilityManagerService$UserState;->mBoundServices:Ljava/util/concurrent/CopyOnWriteArrayList;
 
@@ -2616,7 +2504,6 @@
 
 .method private removeUser(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/server/accessibility/AccessibilityManagerService;->mLock:Ljava/lang/Object;
 
@@ -2643,7 +2530,6 @@
 
 .method private scheduleUpdateClientsIfNeededLocked(Lcom/android/server/accessibility/AccessibilityManagerService$UserState;)V
     .locals 4
-    .param p1    # Lcom/android/server/accessibility/AccessibilityManagerService$UserState;
 
     invoke-virtual {p1}, Lcom/android/server/accessibility/AccessibilityManagerService$UserState;->getClientState()I
 
@@ -2690,7 +2576,6 @@
 
 .method private scheduleUpdateInputFilter(Lcom/android/server/accessibility/AccessibilityManagerService$UserState;)V
     .locals 2
-    .param p1    # Lcom/android/server/accessibility/AccessibilityManagerService$UserState;
 
     iget-object v0, p0, Lcom/android/server/accessibility/AccessibilityManagerService;->mMainHandler:Lcom/android/server/accessibility/AccessibilityManagerService$MainHandler;
 
@@ -2707,7 +2592,6 @@
 
 .method private showEnableTouchExplorationDialog(Lcom/android/server/accessibility/AccessibilityManagerService$Service;)V
     .locals 8
-    .param p1    # Lcom/android/server/accessibility/AccessibilityManagerService$Service;
 
     iget-object v3, p0, Lcom/android/server/accessibility/AccessibilityManagerService;->mLock:Ljava/lang/Object;
 
@@ -2880,8 +2764,6 @@
 
 .method private static sysfsWrite(Ljava/lang/String;I)Z
     .locals 6
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
 
     const/4 v4, 0x0
 
@@ -2961,9 +2843,6 @@
 
 .method private static sysfsWrite_CB(Ljava/lang/String;I[I)Z
     .locals 9
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
-    .param p2    # [I
 
     const/4 v5, 0x1
 
@@ -3308,7 +3187,6 @@
 
 .method private turnOffTalkBack(Landroid/content/Context;)Z
     .locals 12
-    .param p1    # Landroid/content/Context;
 
     const/16 v11, 0x3a
 
@@ -3416,8 +3294,6 @@
 
 .method private turnOffTalkBackExclusiveOptions(Landroid/content/Context;I)V
     .locals 18
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     invoke-virtual/range {p1 .. p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -4026,7 +3902,6 @@
 
 .method private unbindAllServicesLocked(Lcom/android/server/accessibility/AccessibilityManagerService$UserState;)V
     .locals 5
-    .param p1    # Lcom/android/server/accessibility/AccessibilityManagerService$UserState;
 
     iget-object v3, p1, Lcom/android/server/accessibility/AccessibilityManagerService$UserState;->mBoundServices:Ljava/util/concurrent/CopyOnWriteArrayList;
 
@@ -4066,7 +3941,6 @@
 
 .method private updateEnhancedWebAccessibilityLocked(Lcom/android/server/accessibility/AccessibilityManagerService$UserState;)V
     .locals 8
-    .param p1    # Lcom/android/server/accessibility/AccessibilityManagerService$UserState;
 
     const/4 v0, 0x0
 
@@ -4137,7 +4011,6 @@
 
 .method private updateFilterKeyEventsLocked(Lcom/android/server/accessibility/AccessibilityManagerService$UserState;)V
     .locals 4
-    .param p1    # Lcom/android/server/accessibility/AccessibilityManagerService$UserState;
 
     iget-object v3, p1, Lcom/android/server/accessibility/AccessibilityManagerService$UserState;->mBoundServices:Ljava/util/concurrent/CopyOnWriteArrayList;
 
@@ -4194,7 +4067,6 @@
 
 .method private updateInputFilter(Lcom/android/server/accessibility/AccessibilityManagerService$UserState;)V
     .locals 6
-    .param p1    # Lcom/android/server/accessibility/AccessibilityManagerService$UserState;
 
     const/4 v2, 0x0
 
@@ -4327,7 +4199,6 @@
 
 .method private updateLegacyCapabilities(Lcom/android/server/accessibility/AccessibilityManagerService$UserState;)V
     .locals 7
-    .param p1    # Lcom/android/server/accessibility/AccessibilityManagerService$UserState;
 
     iget-object v5, p1, Lcom/android/server/accessibility/AccessibilityManagerService$UserState;->mInstalledServices:Ljava/util/List;
 
@@ -4409,7 +4280,6 @@
 
 .method private updateServicesLocked(Lcom/android/server/accessibility/AccessibilityManagerService$UserState;)V
     .locals 1
-    .param p1    # Lcom/android/server/accessibility/AccessibilityManagerService$UserState;
 
     iget-boolean v0, p1, Lcom/android/server/accessibility/AccessibilityManagerService$UserState;->mIsAccessibilityEnabled:Z
 
@@ -4428,7 +4298,6 @@
 
 .method private updateTouchExplorationLocked(Lcom/android/server/accessibility/AccessibilityManagerService$UserState;)V
     .locals 9
-    .param p1    # Lcom/android/server/accessibility/AccessibilityManagerService$UserState;
 
     const/4 v1, 0x0
 
@@ -4516,9 +4385,6 @@
 # virtual methods
 .method public addAccessibilityInteractionConnection(Landroid/view/IWindow;Landroid/view/accessibility/IAccessibilityInteractionConnection;I)I
     .locals 7
-    .param p1    # Landroid/view/IWindow;
-    .param p2    # Landroid/view/accessibility/IAccessibilityInteractionConnection;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -4612,8 +4478,6 @@
 
 .method public addClient(Landroid/view/accessibility/IAccessibilityManagerClient;I)I
     .locals 4
-    .param p1    # Landroid/view/accessibility/IAccessibilityManagerClient;
-    .param p2    # I
 
     iget-object v3, p0, Lcom/android/server/accessibility/AccessibilityManagerService;->mLock:Ljava/lang/Object;
 
@@ -4686,7 +4550,6 @@
 
 .method public assistantMenuRegister(Landroid/os/IBinder;)V
     .locals 2
-    .param p1    # Landroid/os/IBinder;
 
     const-string v0, "AccessibilityManagerService"
 
@@ -4715,7 +4578,6 @@
 
 .method public assistantMenuUpdate(Landroid/os/Bundle;)V
     .locals 8
-    .param p1    # Landroid/os/Bundle;
 
     iget-object v5, p0, Lcom/android/server/accessibility/AccessibilityManagerService;->mAssistantMenuMsgnr:Landroid/os/Messenger;
 
@@ -4863,9 +4725,6 @@
 
 .method public dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 10
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     iget-object v6, p0, Lcom/android/server/accessibility/AccessibilityManagerService;->mSecurityPolicy:Lcom/android/server/accessibility/AccessibilityManagerService$SecurityPolicy;
 
@@ -5125,9 +4984,6 @@
 
 .method public enableMagnifier(IIF)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # F
 
     :try_start_0
     iget-object v1, p0, Lcom/android/server/accessibility/AccessibilityManagerService;->mDisplayManager:Landroid/hardware/display/IDisplayManager;
@@ -5155,7 +5011,6 @@
 
 .method getAccessibilityFocusBoundsInActiveWindow(Landroid/graphics/Rect;)Z
     .locals 11
-    .param p1    # Landroid/graphics/Rect;
 
     const/4 v7, 0x0
 
@@ -5293,7 +5148,6 @@
 
 .method getActiveWindowBounds(Landroid/graphics/Rect;)Z
     .locals 4
-    .param p1    # Landroid/graphics/Rect;
 
     iget-object v3, p0, Lcom/android/server/accessibility/AccessibilityManagerService;->mLock:Ljava/lang/Object;
 
@@ -5386,8 +5240,6 @@
 
 .method public getEnabledAccessibilityServiceList(II)Ljava/util/List;
     .locals 11
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II)",
@@ -5502,7 +5354,6 @@
 
 .method public getInstalledAccessibilityServiceList(I)Ljava/util/List;
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -5612,7 +5463,6 @@
 
 .method public interrupt(I)V
     .locals 9
-    .param p1    # I
 
     iget-object v7, p0, Lcom/android/server/accessibility/AccessibilityManagerService;->mLock:Ljava/lang/Object;
 
@@ -5746,8 +5596,6 @@
 
 .method notifyKeyEvent(Landroid/view/KeyEvent;I)Z
     .locals 4
-    .param p1    # Landroid/view/KeyEvent;
-    .param p2    # I
 
     iget-object v3, p0, Lcom/android/server/accessibility/AccessibilityManagerService;->mLock:Ljava/lang/Object;
 
@@ -5789,7 +5637,6 @@
 
 .method onGesture(I)Z
     .locals 3
-    .param p1    # I
 
     iget-object v2, p0, Lcom/android/server/accessibility/AccessibilityManagerService;->mLock:Ljava/lang/Object;
 
@@ -5855,9 +5702,6 @@
 
 .method public registerUiTestAutomationService(Landroid/os/IBinder;Landroid/accessibilityservice/IAccessibilityServiceClient;Landroid/accessibilityservice/AccessibilityServiceInfo;)V
     .locals 6
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Landroid/accessibilityservice/IAccessibilityServiceClient;
-    .param p3    # Landroid/accessibilityservice/AccessibilityServiceInfo;
 
     iget-object v2, p0, Lcom/android/server/accessibility/AccessibilityManagerService;->mSecurityPolicy:Lcom/android/server/accessibility/AccessibilityManagerService$SecurityPolicy;
 
@@ -6013,7 +5857,6 @@
 
 .method public removeAccessibilityInteractionConnection(Landroid/view/IWindow;)V
     .locals 9
-    .param p1    # Landroid/view/IWindow;
 
     iget-object v7, p0, Lcom/android/server/accessibility/AccessibilityManagerService;->mLock:Ljava/lang/Object;
 
@@ -6106,8 +5949,6 @@
 
 .method public sendAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;I)Z
     .locals 8
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
-    .param p2    # I
 
     const/4 v2, 0x0
 
@@ -6237,7 +6078,6 @@
 
 .method public setMagnificationSpec(Landroid/view/MagnificationSpec;)V
     .locals 2
-    .param p1    # Landroid/view/MagnificationSpec;
 
     :try_start_0
     iget-object v1, p0, Lcom/android/server/accessibility/AccessibilityManagerService;->mDisplayManager:Landroid/hardware/display/IDisplayManager;
@@ -6764,8 +6604,6 @@
 
 .method public setmDNIeColorBlind(Z[I)Z
     .locals 6
-    .param p1    # Z
-    .param p2    # [I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -6863,7 +6701,6 @@
 
 .method public setmDNIeNegative(Z)Z
     .locals 5
-    .param p1    # Z
 
     const/4 v1, 0x0
 
@@ -6953,7 +6790,6 @@
 
 .method protected switchUser(I)V
     .locals 10
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -7087,8 +6923,6 @@
 
 .method public temporaryEnableAccessibilityStateUntilKeyguardRemoved(Landroid/content/ComponentName;Z)V
     .locals 5
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Z
 
     iget-object v2, p0, Lcom/android/server/accessibility/AccessibilityManagerService;->mSecurityPolicy:Lcom/android/server/accessibility/AccessibilityManagerService$SecurityPolicy;
 
@@ -7199,7 +7033,6 @@
 
 .method public unregisterUiTestAutomationService(Landroid/accessibilityservice/IAccessibilityServiceClient;)V
     .locals 5
-    .param p1    # Landroid/accessibilityservice/IAccessibilityServiceClient;
 
     iget-object v2, p0, Lcom/android/server/accessibility/AccessibilityManagerService;->mLock:Ljava/lang/Object;
 

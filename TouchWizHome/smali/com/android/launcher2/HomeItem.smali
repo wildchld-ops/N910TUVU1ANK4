@@ -67,7 +67,6 @@
 
 .method protected constructor <init>(Lcom/android/launcher2/BaseItem$Type;)V
     .locals 4
-    .param p1    # Lcom/android/launcher2/BaseItem$Type;
 
     const/4 v3, 0x1
 
@@ -100,7 +99,6 @@
 
 .method static flattenBitmap(Landroid/graphics/Bitmap;)[B
     .locals 5
-    .param p0    # Landroid/graphics/Bitmap;
 
     invoke-virtual {p0}, Landroid/graphics/Bitmap;->getWidth()I
 
@@ -217,8 +215,6 @@
 
 .method static writeBitmap(Landroid/content/ContentValues;Landroid/graphics/Bitmap;)V
     .locals 2
-    .param p0    # Landroid/content/ContentValues;
-    .param p1    # Landroid/graphics/Bitmap;
 
     if-eqz p1, :cond_0
 
@@ -293,7 +289,6 @@
 
 .method public mapDbValueToType(I)Lcom/android/launcher2/BaseItem$Type;
     .locals 1
-    .param p1    # I
 
     sparse-switch p1, :sswitch_data_0
 
@@ -347,7 +342,6 @@
 
 .method onAddToDatabase(Landroid/content/ContentValues;)V
     .locals 3
-    .param p1    # Landroid/content/ContentValues;
 
     const-string v0, "itemType"
 
@@ -572,9 +566,6 @@
 
 .method updateValuesWithCoordinates(Landroid/content/ContentValues;II)V
     .locals 2
-    .param p1    # Landroid/content/ContentValues;
-    .param p2    # I
-    .param p3    # I
 
     const-string v0, "cellX"
 

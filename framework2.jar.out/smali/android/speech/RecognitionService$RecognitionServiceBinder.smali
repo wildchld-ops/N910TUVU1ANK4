@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Landroid/speech/RecognitionService;)V
     .locals 0
-    .param p1    # Landroid/speech/RecognitionService;
 
     invoke-direct {p0}, Landroid/speech/IRecognitionService$Stub;-><init>()V
 
@@ -34,7 +33,6 @@
 # virtual methods
 .method public cancel(Landroid/speech/IRecognitionListener;)V
     .locals 3
-    .param p1    # Landroid/speech/IRecognitionListener;
 
     iget-object v0, p0, Landroid/speech/RecognitionService$RecognitionServiceBinder;->mInternalService:Landroid/speech/RecognitionService;
 
@@ -87,8 +85,6 @@
 
 .method public startListening(Landroid/content/Intent;Landroid/speech/IRecognitionListener;)V
     .locals 5
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Landroid/speech/IRecognitionListener;
 
     iget-object v0, p0, Landroid/speech/RecognitionService$RecognitionServiceBinder;->mInternalService:Landroid/speech/RecognitionService;
 
@@ -139,7 +135,6 @@
 
 .method public stopListening(Landroid/speech/IRecognitionListener;)V
     .locals 3
-    .param p1    # Landroid/speech/IRecognitionListener;
 
     iget-object v0, p0, Landroid/speech/RecognitionService$RecognitionServiceBinder;->mInternalService:Landroid/speech/RecognitionService;
 

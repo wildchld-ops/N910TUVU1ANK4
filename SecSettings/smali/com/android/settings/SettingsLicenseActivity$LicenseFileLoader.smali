@@ -28,8 +28,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/settings/SettingsLicenseActivity;Ljava/lang/String;Landroid/os/Handler;)V
     .locals 0
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/os/Handler;
 
     iput-object p1, p0, Lcom/android/settings/SettingsLicenseActivity$LicenseFileLoader;->this$0:Lcom/android/settings/SettingsLicenseActivity;
 

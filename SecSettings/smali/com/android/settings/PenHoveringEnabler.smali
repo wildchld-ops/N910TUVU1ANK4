@@ -35,7 +35,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/PenHoveringEnabler;)Landroid/widget/Switch;
     .locals 1
-    .param p0    # Lcom/android/settings/PenHoveringEnabler;
 
     iget-object v0, p0, Lcom/android/settings/PenHoveringEnabler;->mSwitch:Landroid/widget/Switch;
 
@@ -44,7 +43,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/PenHoveringEnabler;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/settings/PenHoveringEnabler;
 
     iget-object v0, p0, Lcom/android/settings/PenHoveringEnabler;->mContext:Landroid/content/Context;
 
@@ -53,7 +51,6 @@
 
 .method public static isEnabledScreenReaderService(Landroid/content/Context;)Z
     .locals 6
-    .param p0    # Landroid/content/Context;
 
     invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -356,7 +353,6 @@
 
 .method public static removeEnabledScreenReaderValue(Landroid/content/Context;)V
     .locals 8
-    .param p0    # Landroid/content/Context;
 
     invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -451,8 +447,6 @@
 # virtual methods
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 5
-    .param p1    # Landroid/widget/CompoundButton;
-    .param p2    # Z
 
     const/4 v4, 0x1
 

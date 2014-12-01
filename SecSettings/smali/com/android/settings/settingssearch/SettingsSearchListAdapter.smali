@@ -55,10 +55,6 @@
 
 .method public constructor <init>(Landroid/content/Context;I[Lcom/android/settings/settingssearch/SettingsSearchItem;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # [Lcom/android/settings/settingssearch/SettingsSearchItem;
-    .param p4    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -117,7 +113,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/settingssearch/SettingsSearchListAdapter;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/settings/settingssearch/SettingsSearchListAdapter;
 
     iget-object v0, p0, Lcom/android/settings/settingssearch/SettingsSearchListAdapter;->mContext:Landroid/content/Context;
 
@@ -134,8 +129,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/settingssearch/SettingsSearchListAdapter;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/settings/settingssearch/SettingsSearchListAdapter;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/settings/settingssearch/SettingsSearchListAdapter;->setHistoryMenu(Ljava/lang/String;)V
 
@@ -144,9 +137,6 @@
 
 .method private getPrefixCharForIndianString(Landroid/widget/TextView;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -186,8 +176,6 @@
 
 .method private getSpannableTextIndex(Ljava/lang/String;Ljava/lang/String;)I
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v1, -0x1
 
@@ -301,7 +289,6 @@
 
 .method private setHistoryMenu(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Ljava/util/Calendar;->getInstance()Ljava/util/Calendar;
 
@@ -348,7 +335,6 @@
 
 .method public getItem(I)Lcom/android/settings/settingssearch/SettingsSearchItem;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/settings/settingssearch/SettingsSearchListAdapter;->mSearchList:[Lcom/android/settings/settingssearch/SettingsSearchItem;
 
@@ -359,7 +345,6 @@
 
 .method public bridge synthetic getItem(I)Ljava/lang/Object;
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/settings/settingssearch/SettingsSearchListAdapter;->getItem(I)Lcom/android/settings/settingssearch/SettingsSearchItem;
 
@@ -370,9 +355,6 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 32
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     move-object/from16 v0, p0
 

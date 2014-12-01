@@ -37,7 +37,6 @@
 
 .method private reserve(I)I
     .locals 8
-    .param p1    # I
 
     const/4 v7, 0x0
 
@@ -69,8 +68,6 @@
 # virtual methods
 .method public append(FI)Lcom/android/internal/widget/PointerLocationView$FasterStringBuilder;
     .locals 6
-    .param p1    # F
-    .param p2    # I
 
     const/4 v1, 0x1
 
@@ -142,7 +139,6 @@
 
 .method public append(I)Lcom/android/internal/widget/PointerLocationView$FasterStringBuilder;
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -155,8 +151,6 @@
 
 .method public append(II)Lcom/android/internal/widget/PointerLocationView$FasterStringBuilder;
     .locals 9
-    .param p1    # I
-    .param p2    # I
 
     const/16 v8, 0x30
 
@@ -270,7 +264,6 @@
 
 .method public append(Ljava/lang/String;)Lcom/android/internal/widget/PointerLocationView$FasterStringBuilder;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p1}, Ljava/lang/String;->length()I
 

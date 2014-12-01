@@ -94,11 +94,6 @@
 
 .method public onChildClick(Landroid/widget/ExpandableListView;Landroid/view/View;IIJ)Z
     .locals 1
-    .param p1    # Landroid/widget/ExpandableListView;
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # J
 
     const/4 v0, 0x0
 
@@ -176,30 +171,24 @@
 
 .method public onCreateContextMenu(Landroid/view/ContextMenu;Landroid/view/View;Landroid/view/ContextMenu$ContextMenuInfo;)V
     .locals 0
-    .param p1    # Landroid/view/ContextMenu;
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ContextMenu$ContextMenuInfo;
 
     return-void
 .end method
 
 .method public onGroupCollapse(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onGroupExpand(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method protected onRestoreInstanceState(Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     invoke-direct {p0}, Landroid/app/ExpandableListActivity;->ensureList()V
 
@@ -210,7 +199,6 @@
 
 .method public setListAdapter(Landroid/widget/ExpandableListAdapter;)V
     .locals 1
-    .param p1    # Landroid/widget/ExpandableListAdapter;
 
     monitor-enter p0
 
@@ -239,9 +227,6 @@
 
 .method public setSelectedChild(IIZ)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     iget-object v0, p0, Landroid/app/ExpandableListActivity;->mList:Landroid/widget/ExpandableListView;
 
@@ -254,7 +239,6 @@
 
 .method public setSelectedGroup(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/app/ExpandableListActivity;->mList:Landroid/widget/ExpandableListView;
 

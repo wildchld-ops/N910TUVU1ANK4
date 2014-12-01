@@ -2497,7 +2497,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v1}, Lcom/android/phone/PhoneGlobals;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
@@ -3388,7 +3388,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v2}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v2}, Lcom/android/phone/PhoneGlobals;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v2
 
@@ -3450,7 +3450,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v2}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v2}, Lcom/android/phone/PhoneGlobals;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v2
 
@@ -3920,7 +3920,7 @@
     :catch_0
     move-exception v0
 
-    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
+    invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
 
     :cond_2
     move v3, v2
@@ -4360,7 +4360,7 @@
 
     const v5, 0x7f09083b
 
-    invoke-virtual {v4, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {v4, v5}, Lcom/android/phone/PhoneGlobals;->getString(I)Ljava/lang/String;
 
     move-result-object v4
 
@@ -4618,7 +4618,7 @@
 
     sget-object v0, Lcom/android/phone/CallModeler$1;->$SwitchMap$com$android$internal$telephony$Connection$PostDialState:[I
 
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    invoke-virtual {v1}, Lcom/android/internal/telephony/Connection$PostDialState;->ordinal()I
 
     move-result v2
 
@@ -5584,7 +5584,7 @@
     :cond_2
     sget-object v5, Lcom/android/phone/CallModeler$1;->$SwitchMap$com$android$internal$telephony$Call$State:[I
 
-    invoke-virtual {v0}, Ljava/lang/Enum;->ordinal()I
+    invoke-virtual {v0}, Lcom/android/internal/telephony/Call$State;->ordinal()I
 
     move-result v0
 
@@ -6481,7 +6481,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v0}, Lcom/android/phone/PhoneGlobals;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -7589,7 +7589,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v4, v0}, Lcom/google/common/collect/ImmutableSet;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v4, v0}, Lcom/google/common/collect/ImmutableSortedSet;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 

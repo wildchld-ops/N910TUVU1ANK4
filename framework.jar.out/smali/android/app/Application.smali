@@ -165,7 +165,6 @@
 # virtual methods
 .method final attach(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-virtual {p0, p1}, Landroid/app/Application;->attachBaseContext(Landroid/content/Context;)V
 
@@ -182,8 +181,6 @@
 
 .method dispatchActivityCreated(Landroid/app/Activity;Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/app/Activity;
-    .param p2    # Landroid/os/Bundle;
 
     invoke-direct {p0}, Landroid/app/Application;->collectActivityLifecycleCallbacks()[Ljava/lang/Object;
 
@@ -214,7 +211,6 @@
 
 .method dispatchActivityDestroyed(Landroid/app/Activity;)V
     .locals 3
-    .param p1    # Landroid/app/Activity;
 
     invoke-direct {p0}, Landroid/app/Application;->collectActivityLifecycleCallbacks()[Ljava/lang/Object;
 
@@ -245,7 +241,6 @@
 
 .method dispatchActivityPaused(Landroid/app/Activity;)V
     .locals 3
-    .param p1    # Landroid/app/Activity;
 
     invoke-direct {p0}, Landroid/app/Application;->collectActivityLifecycleCallbacks()[Ljava/lang/Object;
 
@@ -276,7 +271,6 @@
 
 .method dispatchActivityResumed(Landroid/app/Activity;)V
     .locals 3
-    .param p1    # Landroid/app/Activity;
 
     invoke-direct {p0}, Landroid/app/Application;->collectActivityLifecycleCallbacks()[Ljava/lang/Object;
 
@@ -307,8 +301,6 @@
 
 .method dispatchActivitySaveInstanceState(Landroid/app/Activity;Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/app/Activity;
-    .param p2    # Landroid/os/Bundle;
 
     invoke-direct {p0}, Landroid/app/Application;->collectActivityLifecycleCallbacks()[Ljava/lang/Object;
 
@@ -339,7 +331,6 @@
 
 .method dispatchActivityStarted(Landroid/app/Activity;)V
     .locals 3
-    .param p1    # Landroid/app/Activity;
 
     invoke-direct {p0}, Landroid/app/Application;->collectActivityLifecycleCallbacks()[Ljava/lang/Object;
 
@@ -370,7 +361,6 @@
 
 .method dispatchActivityStopped(Landroid/app/Activity;)V
     .locals 3
-    .param p1    # Landroid/app/Activity;
 
     invoke-direct {p0}, Landroid/app/Application;->collectActivityLifecycleCallbacks()[Ljava/lang/Object;
 
@@ -401,8 +391,6 @@
 
 .method dispatchOnProvideAssistData(Landroid/app/Activity;Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/app/Activity;
-    .param p2    # Landroid/os/Bundle;
 
     monitor-enter p0
 
@@ -459,7 +447,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 4
-    .param p1    # Landroid/content/res/Configuration;
 
     if-eqz p1, :cond_0
 
@@ -580,7 +567,6 @@
 
 .method public onTrimMemory(I)V
     .locals 4
-    .param p1    # I
 
     invoke-direct {p0}, Landroid/app/Application;->collectComponentCallbacks()[Ljava/lang/Object;
 
@@ -616,7 +602,6 @@
 
 .method public registerActivityLifecycleCallbacks(Landroid/app/Application$ActivityLifecycleCallbacks;)V
     .locals 2
-    .param p1    # Landroid/app/Application$ActivityLifecycleCallbacks;
 
     iget-object v1, p0, Landroid/app/Application;->mActivityLifecycleCallbacks:Ljava/util/ArrayList;
 
@@ -643,7 +628,6 @@
 
 .method public registerComponentCallbacks(Landroid/content/ComponentCallbacks;)V
     .locals 2
-    .param p1    # Landroid/content/ComponentCallbacks;
 
     iget-object v1, p0, Landroid/app/Application;->mComponentCallbacks:Ljava/util/ArrayList;
 
@@ -670,7 +654,6 @@
 
 .method public registerOnProvideAssistDataListener(Landroid/app/Application$OnProvideAssistDataListener;)V
     .locals 1
-    .param p1    # Landroid/app/Application$OnProvideAssistDataListener;
 
     monitor-enter p0
 
@@ -706,7 +689,6 @@
 
 .method public unregisterActivityLifecycleCallbacks(Landroid/app/Application$ActivityLifecycleCallbacks;)V
     .locals 2
-    .param p1    # Landroid/app/Application$ActivityLifecycleCallbacks;
 
     iget-object v1, p0, Landroid/app/Application;->mActivityLifecycleCallbacks:Ljava/util/ArrayList;
 
@@ -733,7 +715,6 @@
 
 .method public unregisterComponentCallbacks(Landroid/content/ComponentCallbacks;)V
     .locals 2
-    .param p1    # Landroid/content/ComponentCallbacks;
 
     iget-object v1, p0, Landroid/app/Application;->mComponentCallbacks:Ljava/util/ArrayList;
 
@@ -760,7 +741,6 @@
 
 .method public unregisterOnProvideAssistDataListener(Landroid/app/Application$OnProvideAssistDataListener;)V
     .locals 1
-    .param p1    # Landroid/app/Application$OnProvideAssistDataListener;
 
     monitor-enter p0
 

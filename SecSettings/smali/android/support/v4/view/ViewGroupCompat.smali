@@ -84,8 +84,6 @@
 
 .method public static setMotionEventSplittingEnabled(Landroid/view/ViewGroup;Z)V
     .locals 1
-    .param p0    # Landroid/view/ViewGroup;
-    .param p1    # Z
 
     sget-object v0, Landroid/support/v4/view/ViewGroupCompat;->IMPL:Landroid/support/v4/view/ViewGroupCompat$ViewGroupCompatImpl;
 

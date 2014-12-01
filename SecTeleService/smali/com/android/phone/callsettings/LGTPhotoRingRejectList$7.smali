@@ -111,7 +111,7 @@
 
     iget-object v4, p0, Lcom/android/phone/callsettings/LGTPhotoRingRejectList$7;->this$0:Lcom/android/phone/callsettings/LGTPhotoRingRejectList;
 
-    invoke-virtual {v4}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v4}, Lcom/android/phone/callsettings/LGTPhotoRingRejectList;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v4
 
@@ -126,7 +126,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v4}, Landroid/widget/BaseAdapter;->notifyDataSetInvalidated()V
+    invoke-virtual {v4}, Lcom/android/phone/callsettings/LGTPhotoRingRejectList$AutoRejectAdapter;->notifyDataSetInvalidated()V
 
     goto :goto_0
 

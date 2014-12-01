@@ -14,9 +14,6 @@
 
 .method public static ReadBooleanArray(Ljava/nio/ByteBuffer;[ZI)V
     .locals 2
-    .param p0    # Ljava/nio/ByteBuffer;
-    .param p1    # [Z
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/nio/BufferUnderflowException;
@@ -54,9 +51,6 @@
 
 .method public static ReadFloatArray(Ljava/nio/ByteBuffer;[FI)V
     .locals 2
-    .param p0    # Ljava/nio/ByteBuffer;
-    .param p1    # [F
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/nio/BufferUnderflowException;
@@ -84,8 +78,6 @@
 
 .method public static ReadImageFromAssets(Landroid/content/res/Resources;Ljava/lang/String;)[B
     .locals 7
-    .param p0    # Landroid/content/res/Resources;
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -139,7 +131,6 @@
 
 .method public static ReadImageFromFile(Ljava/io/File;)[B
     .locals 6
-    .param p0    # Ljava/io/File;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -191,8 +182,6 @@
 
 .method public static ReadImageFromResources(Landroid/content/res/Resources;I)[B
     .locals 7
-    .param p0    # Landroid/content/res/Resources;
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -246,9 +235,6 @@
 
 .method public static ReadIntArray(Ljava/nio/ByteBuffer;[II)V
     .locals 2
-    .param p0    # Ljava/nio/ByteBuffer;
-    .param p1    # [I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/nio/BufferUnderflowException;
@@ -276,8 +262,6 @@
 
 .method public static ReadPoint(Ljava/nio/ByteBuffer;Lcom/voovio/geometry/Point;)V
     .locals 1
-    .param p0    # Ljava/nio/ByteBuffer;
-    .param p1    # Lcom/voovio/geometry/Point;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/nio/BufferUnderflowException;
@@ -301,7 +285,6 @@
 
 .method public static ReadString(Ljava/nio/ByteBuffer;)Ljava/lang/String;
     .locals 4
-    .param p0    # Ljava/nio/ByteBuffer;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/nio/BufferUnderflowException;,
@@ -334,8 +317,6 @@
 
 .method public static ReadVector3(Ljava/nio/ByteBuffer;Lcom/voovio/voo3d/data/Vector3;)V
     .locals 1
-    .param p0    # Ljava/nio/ByteBuffer;
-    .param p1    # Lcom/voovio/voo3d/data/Vector3;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/nio/BufferUnderflowException;
@@ -365,9 +346,6 @@
 
 .method public static ReadVector3Array(Ljava/nio/ByteBuffer;[Lcom/voovio/voo3d/data/Vector3;I)V
     .locals 3
-    .param p0    # Ljava/nio/ByteBuffer;
-    .param p1    # [Lcom/voovio/voo3d/data/Vector3;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/nio/BufferUnderflowException;

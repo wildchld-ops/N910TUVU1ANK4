@@ -40,7 +40,6 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Lcom/android/mms/ui/ComposeMessageFragment$148;->val$toButton:Lcom/android/mms/ui/ToButton;
 

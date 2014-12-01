@@ -257,7 +257,6 @@
 
 .method public constructor <init>(Landroid/net/wifi/WifiInfo;)V
     .locals 1
-    .param p1    # Landroid/net/wifi/WifiInfo;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -333,8 +332,6 @@
 
 .method static synthetic access$002(Landroid/net/wifi/WifiInfo;Landroid/net/wifi/WifiSsid;)Landroid/net/wifi/WifiSsid;
     .locals 0
-    .param p0    # Landroid/net/wifi/WifiInfo;
-    .param p1    # Landroid/net/wifi/WifiSsid;
 
     iput-object p1, p0, Landroid/net/wifi/WifiInfo;->mWifiSsid:Landroid/net/wifi/WifiSsid;
 
@@ -343,8 +340,6 @@
 
 .method static synthetic access$102(Landroid/net/wifi/WifiInfo;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Landroid/net/wifi/WifiInfo;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/net/wifi/WifiInfo;->mBSSID:Ljava/lang/String;
 
@@ -353,8 +348,6 @@
 
 .method static synthetic access$202(Landroid/net/wifi/WifiInfo;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Landroid/net/wifi/WifiInfo;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/net/wifi/WifiInfo;->mMacAddress:Ljava/lang/String;
 
@@ -363,8 +356,6 @@
 
 .method static synthetic access$302(Landroid/net/wifi/WifiInfo;Z)Z
     .locals 0
-    .param p0    # Landroid/net/wifi/WifiInfo;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/net/wifi/WifiInfo;->mMeteredHint:Z
 
@@ -373,8 +364,6 @@
 
 .method static synthetic access$402(Landroid/net/wifi/WifiInfo;Landroid/net/wifi/SupplicantState;)Landroid/net/wifi/SupplicantState;
     .locals 0
-    .param p0    # Landroid/net/wifi/WifiInfo;
-    .param p1    # Landroid/net/wifi/SupplicantState;
 
     iput-object p1, p0, Landroid/net/wifi/WifiInfo;->mSupplicantState:Landroid/net/wifi/SupplicantState;
 
@@ -383,8 +372,6 @@
 
 .method static synthetic access$502(Landroid/net/wifi/WifiInfo;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Landroid/net/wifi/WifiInfo;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/net/wifi/WifiInfo;->mExpiration:Ljava/lang/String;
 
@@ -393,7 +380,6 @@
 
 .method public static getDetailedStateOf(Landroid/net/wifi/SupplicantState;)Landroid/net/NetworkInfo$DetailedState;
     .locals 1
-    .param p0    # Landroid/net/wifi/SupplicantState;
 
     sget-object v0, Landroid/net/wifi/WifiInfo;->stateMap:Ljava/util/EnumMap;
 
@@ -584,7 +570,6 @@
 
 .method public static removeDoubleQuotes(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     const/16 v3, 0x22
 
@@ -632,7 +617,6 @@
 
 .method static valueOf(Ljava/lang/String;)Landroid/net/wifi/SupplicantState;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     const-string v1, "4WAY_HANDSHAKE"
 
@@ -901,7 +885,6 @@
 
 .method setBSSID(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/net/wifi/WifiInfo;->mBSSID:Ljava/lang/String;
 
@@ -910,7 +893,6 @@
 
 .method public setCaptivePortal(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/net/wifi/WifiInfo;->mCaptivePortal:Z
 
@@ -919,7 +901,6 @@
 
 .method public setDefaultAp(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/net/wifi/WifiInfo;->mDefaultAp:Z
 
@@ -928,7 +909,6 @@
 
 .method public setExpiration(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/net/wifi/WifiInfo;->mExpiration:Ljava/lang/String;
 
@@ -937,7 +917,6 @@
 
 .method setFrequency(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/net/wifi/WifiInfo;->mFrequency:I
 
@@ -946,7 +925,6 @@
 
 .method public setHiddenSSID(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/net/wifi/WifiInfo;->mHiddenSSID:Z
 
@@ -955,7 +933,6 @@
 
 .method setInetAddress(Ljava/net/InetAddress;)V
     .locals 0
-    .param p1    # Ljava/net/InetAddress;
 
     iput-object p1, p0, Landroid/net/wifi/WifiInfo;->mIpAddress:Ljava/net/InetAddress;
 
@@ -964,7 +941,6 @@
 
 .method setLinkSpeed(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/net/wifi/WifiInfo;->mLinkSpeed:I
 
@@ -973,7 +949,6 @@
 
 .method setMacAddress(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/net/wifi/WifiInfo;->mMacAddress:Ljava/lang/String;
 
@@ -982,7 +957,6 @@
 
 .method public setMeteredHint(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/net/wifi/WifiInfo;->mMeteredHint:Z
 
@@ -991,7 +965,6 @@
 
 .method setNetworkId(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/net/wifi/WifiInfo;->mNetworkId:I
 
@@ -1000,7 +973,6 @@
 
 .method setRssi(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/net/wifi/WifiInfo;->mRssi:I
 
@@ -1009,7 +981,6 @@
 
 .method setSSID(Landroid/net/wifi/WifiSsid;)V
     .locals 1
-    .param p1    # Landroid/net/wifi/WifiSsid;
 
     iput-object p1, p0, Landroid/net/wifi/WifiInfo;->mWifiSsid:Landroid/net/wifi/WifiSsid;
 
@@ -1022,7 +993,6 @@
 
 .method public setSharedAp(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/net/wifi/WifiInfo;->mSharedAp:Z
 
@@ -1031,7 +1001,6 @@
 
 .method public setSkipInternetCheck(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/net/wifi/WifiInfo;->mSkipInternetCheck:Z
 
@@ -1040,7 +1009,6 @@
 
 .method setSupplicantState(Landroid/net/wifi/SupplicantState;)V
     .locals 0
-    .param p1    # Landroid/net/wifi/SupplicantState;
 
     iput-object p1, p0, Landroid/net/wifi/WifiInfo;->mSupplicantState:Landroid/net/wifi/SupplicantState;
 
@@ -1049,7 +1017,6 @@
 
 .method setSupplicantState(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Landroid/net/wifi/WifiInfo;->valueOf(Ljava/lang/String;)Landroid/net/wifi/SupplicantState;
 
@@ -1225,8 +1192,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 3
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     const/4 v1, 0x1
 

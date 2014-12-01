@@ -26,7 +26,6 @@
 # direct methods
 .method public constructor <init>(Landroid/widget/TimePicker;I)V
     .locals 0
-    .param p2    # I
 
     iput-object p1, p0, Landroid/widget/TimePicker$TwKeyListener;->this$0:Landroid/widget/TimePicker;
 
@@ -41,9 +40,6 @@
 # virtual methods
 .method public onKey(Landroid/view/View;ILandroid/view/KeyEvent;)Z
     .locals 5
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # Landroid/view/KeyEvent;
 
     const/4 v2, 0x1
 

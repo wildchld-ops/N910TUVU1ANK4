@@ -60,9 +60,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;ILcom/android/server/print/RemotePrintSpooler$PrintSpoolerCallbacks;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Lcom/android/server/print/RemotePrintSpooler$PrintSpoolerCallbacks;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -143,7 +140,6 @@
 
 .method static synthetic access$100(Lcom/android/server/print/RemotePrintSpooler;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Lcom/android/server/print/RemotePrintSpooler;
 
     iget-object v0, p0, Lcom/android/server/print/RemotePrintSpooler;->mLock:Ljava/lang/Object;
 
@@ -152,8 +148,6 @@
 
 .method static synthetic access$202(Lcom/android/server/print/RemotePrintSpooler;Landroid/print/IPrintSpooler;)Landroid/print/IPrintSpooler;
     .locals 0
-    .param p0    # Lcom/android/server/print/RemotePrintSpooler;
-    .param p1    # Landroid/print/IPrintSpooler;
 
     iput-object p1, p0, Lcom/android/server/print/RemotePrintSpooler;->mRemoteInstance:Landroid/print/IPrintSpooler;
 
@@ -162,7 +156,6 @@
 
 .method static synthetic access$300(Lcom/android/server/print/RemotePrintSpooler;)V
     .locals 0
-    .param p0    # Lcom/android/server/print/RemotePrintSpooler;
 
     invoke-direct {p0}, Lcom/android/server/print/RemotePrintSpooler;->setClientLocked()V
 
@@ -171,7 +164,6 @@
 
 .method static synthetic access$400(Lcom/android/server/print/RemotePrintSpooler;)V
     .locals 0
-    .param p0    # Lcom/android/server/print/RemotePrintSpooler;
 
     invoke-direct {p0}, Lcom/android/server/print/RemotePrintSpooler;->clearClientLocked()V
 
@@ -180,7 +172,6 @@
 
 .method static synthetic access$600(Lcom/android/server/print/RemotePrintSpooler;)Lcom/android/server/print/RemotePrintSpooler$PrintSpoolerCallbacks;
     .locals 1
-    .param p0    # Lcom/android/server/print/RemotePrintSpooler;
 
     iget-object v0, p0, Lcom/android/server/print/RemotePrintSpooler;->mCallbacks:Lcom/android/server/print/RemotePrintSpooler$PrintSpoolerCallbacks;
 
@@ -189,7 +180,6 @@
 
 .method static synthetic access$700(Lcom/android/server/print/RemotePrintSpooler;)V
     .locals 0
-    .param p0    # Lcom/android/server/print/RemotePrintSpooler;
 
     invoke-direct {p0}, Lcom/android/server/print/RemotePrintSpooler;->onAllPrintJobsHandled()V
 
@@ -198,8 +188,6 @@
 
 .method static synthetic access$800(Lcom/android/server/print/RemotePrintSpooler;Landroid/print/PrintJobInfo;)V
     .locals 0
-    .param p0    # Lcom/android/server/print/RemotePrintSpooler;
-    .param p1    # Landroid/print/PrintJobInfo;
 
     invoke-direct {p0, p1}, Lcom/android/server/print/RemotePrintSpooler;->onPrintJobStateChanged(Landroid/print/PrintJobInfo;)V
 
@@ -390,7 +378,6 @@
 
 .method private onPrintJobStateChanged(Landroid/print/PrintJobInfo;)V
     .locals 1
-    .param p1    # Landroid/print/PrintJobInfo;
 
     iget-object v0, p0, Lcom/android/server/print/RemotePrintSpooler;->mCallbacks:Lcom/android/server/print/RemotePrintSpooler$PrintSpoolerCallbacks;
 
@@ -524,7 +511,6 @@
 # virtual methods
 .method public final createPrintJob(Landroid/print/PrintJobInfo;)V
     .locals 5
-    .param p1    # Landroid/print/PrintJobInfo;
 
     invoke-direct {p0}, Lcom/android/server/print/RemotePrintSpooler;->throwIfCalledOnMainThread()V
 
@@ -741,9 +727,6 @@
 
 .method public dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/server/print/RemotePrintSpooler;->mLock:Ljava/lang/Object;
 
@@ -855,8 +838,6 @@
 
 .method public final getPrintJobInfo(Landroid/print/PrintJobId;I)Landroid/print/PrintJobInfo;
     .locals 5
-    .param p1    # Landroid/print/PrintJobId;
-    .param p2    # I
 
     invoke-direct {p0}, Lcom/android/server/print/RemotePrintSpooler;->throwIfCalledOnMainThread()V
 
@@ -1047,9 +1028,6 @@
 
 .method public final getPrintJobInfos(Landroid/content/ComponentName;II)Ljava/util/List;
     .locals 5
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1431,8 +1409,6 @@
 
 .method public final setPrintJobCancelling(Landroid/print/PrintJobId;Z)V
     .locals 5
-    .param p1    # Landroid/print/PrintJobId;
-    .param p2    # Z
 
     invoke-direct {p0}, Lcom/android/server/print/RemotePrintSpooler;->throwIfCalledOnMainThread()V
 
@@ -1613,9 +1589,6 @@
 
 .method public final setPrintJobState(Landroid/print/PrintJobId;ILjava/lang/String;)Z
     .locals 5
-    .param p1    # Landroid/print/PrintJobId;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -1802,8 +1775,6 @@
 
 .method public final setPrintJobTag(Landroid/print/PrintJobId;Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Landroid/print/PrintJobId;
-    .param p2    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -1990,8 +1961,6 @@
 
 .method public final writePrintJobData(Landroid/os/ParcelFileDescriptor;Landroid/print/PrintJobId;)V
     .locals 5
-    .param p1    # Landroid/os/ParcelFileDescriptor;
-    .param p2    # Landroid/print/PrintJobId;
 
     invoke-direct {p0}, Lcom/android/server/print/RemotePrintSpooler;->throwIfCalledOnMainThread()V
 

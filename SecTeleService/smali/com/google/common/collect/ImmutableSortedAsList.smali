@@ -167,7 +167,7 @@
 
     iget-object v0, p0, Lcom/google/common/collect/ImmutableSortedAsList;->backingList:Lcom/google/common/collect/ImmutableList;
 
-    invoke-virtual {v0}, Lcom/google/common/collect/ImmutableCollection;->isPartialView()Z
+    invoke-virtual {v0}, Lcom/google/common/collect/ImmutableList;->isPartialView()Z
 
     move-result v0
 
@@ -281,7 +281,7 @@
 
     iget-object v0, p0, Lcom/google/common/collect/ImmutableSortedAsList;->backingList:Lcom/google/common/collect/ImmutableList;
 
-    invoke-virtual {v0}, Lcom/google/common/collect/ImmutableCollection;->size()I
+    invoke-virtual {v0}, Lcom/google/common/collect/ImmutableList;->size()I
 
     move-result v0
 
@@ -332,7 +332,7 @@
 
     invoke-direct {v0, v1, v2}, Lcom/google/common/collect/RegularImmutableSortedSet;-><init>(Lcom/google/common/collect/ImmutableList;Ljava/util/Comparator;)V
 
-    invoke-virtual {v0}, Lcom/google/common/collect/ImmutableCollection;->asList()Lcom/google/common/collect/ImmutableList;
+    invoke-virtual {v0}, Lcom/google/common/collect/RegularImmutableSortedSet;->asList()Lcom/google/common/collect/ImmutableList;
 
     move-result-object v0
 

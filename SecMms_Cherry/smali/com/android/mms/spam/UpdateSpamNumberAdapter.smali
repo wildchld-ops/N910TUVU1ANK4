@@ -41,9 +41,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;ILcom/android/mms/data/ContactList;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Lcom/android/mms/data/ContactList;
 
     const/4 v0, 0x0
 
@@ -86,7 +83,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/spam/UpdateSpamNumberAdapter;)Landroid/util/SparseBooleanArray;
     .locals 1
-    .param p0    # Lcom/android/mms/spam/UpdateSpamNumberAdapter;
 
     iget-object v0, p0, Lcom/android/mms/spam/UpdateSpamNumberAdapter;->mCheckStates:Landroid/util/SparseBooleanArray;
 
@@ -95,7 +91,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/spam/UpdateSpamNumberAdapter;)Lcom/sec/android/touchwiz/widget/TwCheckBox;
     .locals 1
-    .param p0    # Lcom/android/mms/spam/UpdateSpamNumberAdapter;
 
     iget-object v0, p0, Lcom/android/mms/spam/UpdateSpamNumberAdapter;->mSelectAllCheckbox:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
@@ -104,7 +99,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/spam/UpdateSpamNumberAdapter;)Landroid/widget/Button;
     .locals 1
-    .param p0    # Lcom/android/mms/spam/UpdateSpamNumberAdapter;
 
     iget-object v0, p0, Lcom/android/mms/spam/UpdateSpamNumberAdapter;->mSaveButton:Landroid/widget/Button;
 
@@ -113,7 +107,6 @@
 
 .method static synthetic access$300(Lcom/android/mms/spam/UpdateSpamNumberAdapter;)I
     .locals 1
-    .param p0    # Lcom/android/mms/spam/UpdateSpamNumberAdapter;
 
     iget v0, p0, Lcom/android/mms/spam/UpdateSpamNumberAdapter;->mSize:I
 
@@ -155,9 +148,6 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     const/4 v5, 0x0
 
@@ -285,7 +275,6 @@
 
 .method public isChecked(I)Z
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/mms/spam/UpdateSpamNumberAdapter;->mCheckStates:Landroid/util/SparseBooleanArray;
 
@@ -300,7 +289,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p1}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
@@ -319,8 +307,6 @@
 
 .method public setChecked(IZ)V
     .locals 1
-    .param p1    # I
-    .param p2    # Z
 
     iget-object v0, p0, Lcom/android/mms/spam/UpdateSpamNumberAdapter;->mCheckStates:Landroid/util/SparseBooleanArray;
 
@@ -338,8 +324,6 @@
 
 .method public setSaveButton(Landroid/widget/Button;Ljava/lang/Boolean;)V
     .locals 2
-    .param p1    # Landroid/widget/Button;
-    .param p2    # Ljava/lang/Boolean;
 
     iput-object p1, p0, Lcom/android/mms/spam/UpdateSpamNumberAdapter;->mSaveButton:Landroid/widget/Button;
 
@@ -356,7 +340,6 @@
 
 .method public setSelectAllCheckbox(Lcom/sec/android/touchwiz/widget/TwCheckBox;)V
     .locals 0
-    .param p1    # Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
     iput-object p1, p0, Lcom/android/mms/spam/UpdateSpamNumberAdapter;->mSelectAllCheckbox:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
@@ -365,7 +348,6 @@
 
 .method public toggle(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/mms/spam/UpdateSpamNumberAdapter;->isChecked(I)Z
 

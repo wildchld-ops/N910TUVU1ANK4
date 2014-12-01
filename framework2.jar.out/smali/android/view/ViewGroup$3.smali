@@ -36,10 +36,6 @@
 # virtual methods
 .method public endTransition(Landroid/animation/LayoutTransition;Landroid/view/ViewGroup;Landroid/view/View;I)V
     .locals 2
-    .param p1    # Landroid/animation/LayoutTransition;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/view/View;
-    .param p4    # I
 
     iget-object v0, p0, Landroid/view/ViewGroup$3;->this$0:Landroid/view/ViewGroup;
 
@@ -91,10 +87,6 @@
 
 .method public startTransition(Landroid/animation/LayoutTransition;Landroid/view/ViewGroup;Landroid/view/View;I)V
     .locals 1
-    .param p1    # Landroid/animation/LayoutTransition;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/view/View;
-    .param p4    # I
 
     const/4 v0, 0x3
 

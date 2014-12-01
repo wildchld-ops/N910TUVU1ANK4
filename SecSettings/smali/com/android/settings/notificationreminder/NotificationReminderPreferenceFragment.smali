@@ -162,7 +162,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/notificationreminder/NotificationReminderPreferenceFragment;)Landroid/app/Activity;
     .locals 1
-    .param p0    # Lcom/android/settings/notificationreminder/NotificationReminderPreferenceFragment;
 
     iget-object v0, p0, Lcom/android/settings/notificationreminder/NotificationReminderPreferenceFragment;->mPreferenceFragmentActivity:Landroid/app/Activity;
 
@@ -171,7 +170,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/notificationreminder/NotificationReminderPreferenceFragment;)V
     .locals 0
-    .param p0    # Lcom/android/settings/notificationreminder/NotificationReminderPreferenceFragment;
 
     invoke-direct {p0}, Lcom/android/settings/notificationreminder/NotificationReminderPreferenceFragment;->updateNotificationReminderSaving()V
 
@@ -180,7 +178,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/notificationreminder/NotificationReminderPreferenceFragment;)Landroid/preference/CheckBoxPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/notificationreminder/NotificationReminderPreferenceFragment;
 
     iget-object v0, p0, Lcom/android/settings/notificationreminder/NotificationReminderPreferenceFragment;->indicatorPreference:Landroid/preference/CheckBoxPreference;
 
@@ -189,7 +186,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/notificationreminder/NotificationReminderPreferenceFragment;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/notificationreminder/NotificationReminderPreferenceFragment;
 
     invoke-virtual {p0}, Lcom/android/settings/notificationreminder/NotificationReminderPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -200,7 +196,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/notificationreminder/NotificationReminderPreferenceFragment;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/notificationreminder/NotificationReminderPreferenceFragment;
 
     invoke-virtual {p0}, Lcom/android/settings/notificationreminder/NotificationReminderPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -211,7 +206,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/notificationreminder/NotificationReminderPreferenceFragment;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/notificationreminder/NotificationReminderPreferenceFragment;
 
     invoke-virtual {p0}, Lcom/android/settings/notificationreminder/NotificationReminderPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -222,7 +216,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/notificationreminder/NotificationReminderPreferenceFragment;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/notificationreminder/NotificationReminderPreferenceFragment;
 
     invoke-virtual {p0}, Lcom/android/settings/notificationreminder/NotificationReminderPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -233,7 +226,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/notificationreminder/NotificationReminderPreferenceFragment;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/notificationreminder/NotificationReminderPreferenceFragment;
 
     invoke-virtual {p0}, Lcom/android/settings/notificationreminder/NotificationReminderPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -968,7 +960,6 @@
 
 .method private reSizeIcon(Landroid/graphics/drawable/Drawable;)Landroid/graphics/drawable/Drawable;
     .locals 3
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     new-instance v1, Lcom/android/settings/lockscreenshortcut/IconResizer;
 
@@ -1057,7 +1048,6 @@
 # virtual methods
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 7
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v6, 0x0
 
@@ -1321,7 +1311,6 @@
 
 .method public onCreateDialog(I)Landroid/app/Dialog;
     .locals 9
-    .param p1    # I
 
     const/4 v6, 0x0
 
@@ -1511,8 +1500,6 @@
 
 .method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
     .locals 5
-    .param p1    # Landroid/preference/Preference;
-    .param p2    # Ljava/lang/Object;
 
     invoke-virtual {p1}, Landroid/preference/Preference;->getKey()Ljava/lang/String;
 
@@ -1599,8 +1586,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 3
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     iget-object v0, p0, Lcom/android/settings/notificationreminder/NotificationReminderPreferenceFragment;->vibratePreference:Landroid/preference/CheckBoxPreference;
 

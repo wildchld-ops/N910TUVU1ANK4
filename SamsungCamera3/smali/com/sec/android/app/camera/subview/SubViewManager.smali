@@ -44,7 +44,6 @@
 # direct methods
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;)V
     .locals 1
-    .param p1    # Lcom/sec/android/app/camera/Camera;
 
     const/4 v0, 0x0
 
@@ -91,7 +90,6 @@
 
 .method static synthetic access$000(Lcom/sec/android/app/camera/subview/SubViewManager;)Lcom/sec/android/app/camera/subview/SubViewBaseMenu;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/subview/SubViewManager;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/subview/SubViewManager;->mBaseMenu:Lcom/sec/android/app/camera/subview/SubViewBaseMenu;
 
@@ -100,7 +98,6 @@
 
 .method static synthetic access$100(Lcom/sec/android/app/camera/subview/SubViewManager;)Z
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/subview/SubViewManager;
 
     iget-boolean v0, p0, Lcom/sec/android/app/camera/subview/SubViewManager;->mLandscapeMode:Z
 
@@ -109,7 +106,6 @@
 
 .method static synthetic access$200(Lcom/sec/android/app/camera/subview/SubViewManager;)I
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/subview/SubViewManager;
 
     iget v0, p0, Lcom/sec/android/app/camera/subview/SubViewManager;->mLastOrientation:I
 
@@ -118,8 +114,6 @@
 
 .method static synthetic access$202(Lcom/sec/android/app/camera/subview/SubViewManager;I)I
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/subview/SubViewManager;
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/app/camera/subview/SubViewManager;->mLastOrientation:I
 
@@ -259,7 +253,6 @@
 
 .method public getCameraEditableSideBar(I)Lcom/sec/android/app/camera/subview/SubViewEditableSideBar;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/subview/SubViewManager;->mBaseMenu:Lcom/sec/android/app/camera/subview/SubViewBaseMenu;
 
@@ -597,8 +590,6 @@
 
 .method public onCameraSettingsChanged(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/subview/SubViewManager;->mBaseMenu:Lcom/sec/android/app/camera/subview/SubViewBaseMenu;
 
@@ -614,7 +605,6 @@
 
 .method public onOrientationChanged(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "SubViewManager"
 
@@ -1173,8 +1163,6 @@
 
 .method public setBatteryLevel(IZ)V
     .locals 1
-    .param p1    # I
-    .param p2    # Z
 
     iget-object v0, p0, Lcom/sec/android/app/camera/subview/SubViewManager;->mBaseMenu:Lcom/sec/android/app/camera/subview/SubViewBaseMenu;
 
@@ -1202,7 +1190,6 @@
 
 .method public setButtonsDimControlForOverlayDialog(Z)V
     .locals 2
-    .param p1    # Z
 
     const-string v0, "SubViewManager"
 
@@ -1224,7 +1211,6 @@
 
 .method public setFlashIndicator(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/subview/SubViewManager;->mBaseMenu:Lcom/sec/android/app/camera/subview/SubViewBaseMenu;
 
@@ -1252,7 +1238,6 @@
 
 .method public setGPSIndicator(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/subview/SubViewManager;->mBaseMenu:Lcom/sec/android/app/camera/subview/SubViewBaseMenu;
 
@@ -1280,7 +1265,6 @@
 
 .method public setLandscapeMode(Z)V
     .locals 3
-    .param p1    # Z
 
     const-string v0, "SubViewManager"
 
@@ -1352,7 +1336,6 @@
 
 .method public setLowlightIndicator(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/subview/SubViewManager;->mBaseMenu:Lcom/sec/android/app/camera/subview/SubViewBaseMenu;
 
@@ -1423,7 +1406,6 @@
 
 .method public setRecordingModeIndicator(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/subview/SubViewManager;->mBaseMenu:Lcom/sec/android/app/camera/subview/SubViewBaseMenu;
 
@@ -1451,7 +1433,6 @@
 
 .method public setRemainCountIndicator(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/subview/SubViewManager;->mBaseMenu:Lcom/sec/android/app/camera/subview/SubViewBaseMenu;
 
@@ -1479,7 +1460,6 @@
 
 .method public setShutterBtnPressed(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/sec/android/app/camera/subview/SubViewManager;->mBaseMenu:Lcom/sec/android/app/camera/subview/SubViewBaseMenu;
 
@@ -1495,7 +1475,6 @@
 
 .method public setStorageIndicator(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/subview/SubViewManager;->mBaseMenu:Lcom/sec/android/app/camera/subview/SubViewBaseMenu;
 
@@ -1523,7 +1502,6 @@
 
 .method public setTimerIndicator(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/subview/SubViewManager;->mBaseMenu:Lcom/sec/android/app/camera/subview/SubViewBaseMenu;
 
@@ -1551,7 +1529,6 @@
 
 .method public setVoiceStatus(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/subview/SubViewManager;->mBaseMenu:Lcom/sec/android/app/camera/subview/SubViewBaseMenu;
 
@@ -1677,7 +1654,6 @@
 
 .method public showVoiceInputIndicator(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/subview/SubViewManager;->mBaseMenu:Lcom/sec/android/app/camera/subview/SubViewBaseMenu;
 

@@ -640,9 +640,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/net/IConnectivityManager;Landroid/os/INetworkManagementService;)V
     .locals 12
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/net/IConnectivityManager;
-    .param p3    # Landroid/os/INetworkManagementService;
 
     const/4 v11, 0x6
 
@@ -1135,7 +1132,6 @@
 
 .method static synthetic access$100(Ljava/lang/String;)V
     .locals 0
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/samsung/smartbonding/SmartBondingService;->log(Ljava/lang/String;)V
 
@@ -1144,7 +1140,6 @@
 
 .method static synthetic access$1000(Lcom/samsung/smartbonding/SmartBondingService;)V
     .locals 0
-    .param p0    # Lcom/samsung/smartbonding/SmartBondingService;
 
     invoke-direct {p0}, Lcom/samsung/smartbonding/SmartBondingService;->initSpeedBarRes()V
 
@@ -1153,7 +1148,6 @@
 
 .method static synthetic access$1100(Lcom/samsung/smartbonding/SmartBondingService;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/samsung/smartbonding/SmartBondingService;
 
     iget-object v0, p0, Lcom/samsung/smartbonding/SmartBondingService;->mSBUrlStatus:Ljava/util/ArrayList;
 
@@ -1162,7 +1156,6 @@
 
 .method static synthetic access$1200(Lcom/samsung/smartbonding/SmartBondingService;)Ljava/util/HashMap;
     .locals 1
-    .param p0    # Lcom/samsung/smartbonding/SmartBondingService;
 
     iget-object v0, p0, Lcom/samsung/smartbonding/SmartBondingService;->mSBDataStatistics:Ljava/util/HashMap;
 
@@ -1171,7 +1164,6 @@
 
 .method static synthetic access$1300(Lcom/samsung/smartbonding/SmartBondingService;)V
     .locals 0
-    .param p0    # Lcom/samsung/smartbonding/SmartBondingService;
 
     invoke-direct {p0}, Lcom/samsung/smartbonding/SmartBondingService;->clearSpeedBarRes()V
 
@@ -1180,7 +1172,6 @@
 
 .method static synthetic access$1400(Lcom/samsung/smartbonding/SmartBondingService;)Landroid/net/wifi/WifiManager;
     .locals 1
-    .param p0    # Lcom/samsung/smartbonding/SmartBondingService;
 
     iget-object v0, p0, Lcom/samsung/smartbonding/SmartBondingService;->mWifiManager:Landroid/net/wifi/WifiManager;
 
@@ -1189,7 +1180,6 @@
 
 .method static synthetic access$1500(Lcom/samsung/smartbonding/SmartBondingService;)Z
     .locals 1
-    .param p0    # Lcom/samsung/smartbonding/SmartBondingService;
 
     iget-boolean v0, p0, Lcom/samsung/smartbonding/SmartBondingService;->mIsNoneSettingMode:Z
 
@@ -1198,8 +1188,6 @@
 
 .method static synthetic access$1502(Lcom/samsung/smartbonding/SmartBondingService;Z)Z
     .locals 0
-    .param p0    # Lcom/samsung/smartbonding/SmartBondingService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/smartbonding/SmartBondingService;->mIsNoneSettingMode:Z
 
@@ -1208,7 +1196,6 @@
 
 .method static synthetic access$1600(Lcom/samsung/smartbonding/SmartBondingService;)Z
     .locals 1
-    .param p0    # Lcom/samsung/smartbonding/SmartBondingService;
 
     invoke-direct {p0}, Lcom/samsung/smartbonding/SmartBondingService;->getMobileDataEnabled()Z
 
@@ -1219,8 +1206,6 @@
 
 .method static synthetic access$1700(Lcom/samsung/smartbonding/SmartBondingService;Z)V
     .locals 0
-    .param p0    # Lcom/samsung/smartbonding/SmartBondingService;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/samsung/smartbonding/SmartBondingService;->setMobileDataEnabled(Z)V
 
@@ -1229,10 +1214,6 @@
 
 .method static synthetic access$1800(Lcom/samsung/smartbonding/SmartBondingService;IJJ)V
     .locals 0
-    .param p0    # Lcom/samsung/smartbonding/SmartBondingService;
-    .param p1    # I
-    .param p2    # J
-    .param p4    # J
 
     invoke-direct/range {p0 .. p5}, Lcom/samsung/smartbonding/SmartBondingService;->sendSBVzwStateChangedIntent(IJJ)V
 
@@ -1241,7 +1222,6 @@
 
 .method static synthetic access$1900(Lcom/samsung/smartbonding/SmartBondingService;)Z
     .locals 1
-    .param p0    # Lcom/samsung/smartbonding/SmartBondingService;
 
     invoke-direct {p0}, Lcom/samsung/smartbonding/SmartBondingService;->turnOffMobileConnection()Z
 
@@ -1252,7 +1232,6 @@
 
 .method static synthetic access$200(Lcom/samsung/smartbonding/SmartBondingService;)Z
     .locals 1
-    .param p0    # Lcom/samsung/smartbonding/SmartBondingService;
 
     invoke-direct {p0}, Lcom/samsung/smartbonding/SmartBondingService;->checkSiopToastCondition()Z
 
@@ -1263,7 +1242,6 @@
 
 .method static synthetic access$2000(Lcom/samsung/smartbonding/SmartBondingService;)Z
     .locals 1
-    .param p0    # Lcom/samsung/smartbonding/SmartBondingService;
 
     invoke-direct {p0}, Lcom/samsung/smartbonding/SmartBondingService;->checkRemovedProcess()Z
 
@@ -1274,7 +1252,6 @@
 
 .method static synthetic access$2100(Lcom/samsung/smartbonding/SmartBondingService;)Z
     .locals 1
-    .param p0    # Lcom/samsung/smartbonding/SmartBondingService;
 
     invoke-direct {p0}, Lcom/samsung/smartbonding/SmartBondingService;->turnOnMobileConnection()Z
 
@@ -1285,7 +1262,6 @@
 
 .method static synthetic access$2200(Lcom/samsung/smartbonding/SmartBondingService;)Z
     .locals 1
-    .param p0    # Lcom/samsung/smartbonding/SmartBondingService;
 
     invoke-direct {p0}, Lcom/samsung/smartbonding/SmartBondingService;->checkSBWorkingCondition()Z
 
@@ -1296,7 +1272,6 @@
 
 .method static synthetic access$2300(Lcom/samsung/smartbonding/SmartBondingService;)I
     .locals 1
-    .param p0    # Lcom/samsung/smartbonding/SmartBondingService;
 
     iget v0, p0, Lcom/samsung/smartbonding/SmartBondingService;->mSBState:I
 
@@ -1305,8 +1280,6 @@
 
 .method static synthetic access$2302(Lcom/samsung/smartbonding/SmartBondingService;I)I
     .locals 0
-    .param p0    # Lcom/samsung/smartbonding/SmartBondingService;
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/smartbonding/SmartBondingService;->mSBState:I
 
@@ -1315,7 +1288,6 @@
 
 .method static synthetic access$2400(Lcom/samsung/smartbonding/SmartBondingService;)Z
     .locals 1
-    .param p0    # Lcom/samsung/smartbonding/SmartBondingService;
 
     invoke-direct {p0}, Lcom/samsung/smartbonding/SmartBondingService;->checkTrafficMonitorCondition()Z
 
@@ -1326,7 +1298,6 @@
 
 .method static synthetic access$2500(Lcom/samsung/smartbonding/SmartBondingService;)V
     .locals 0
-    .param p0    # Lcom/samsung/smartbonding/SmartBondingService;
 
     invoke-direct {p0}, Lcom/samsung/smartbonding/SmartBondingService;->startTrafficMonitor()V
 
@@ -1335,7 +1306,6 @@
 
 .method static synthetic access$2600(Lcom/samsung/smartbonding/SmartBondingService;)V
     .locals 0
-    .param p0    # Lcom/samsung/smartbonding/SmartBondingService;
 
     invoke-direct {p0}, Lcom/samsung/smartbonding/SmartBondingService;->sendSBStartIntent()V
 
@@ -1344,7 +1314,6 @@
 
 .method static synthetic access$2700(Lcom/samsung/smartbonding/SmartBondingService;)Z
     .locals 1
-    .param p0    # Lcom/samsung/smartbonding/SmartBondingService;
 
     invoke-direct {p0}, Lcom/samsung/smartbonding/SmartBondingService;->checkEnableToastCondition()Z
 
@@ -1355,7 +1324,6 @@
 
 .method static synthetic access$2800(Lcom/samsung/smartbonding/SmartBondingService;)V
     .locals 0
-    .param p0    # Lcom/samsung/smartbonding/SmartBondingService;
 
     invoke-direct {p0}, Lcom/samsung/smartbonding/SmartBondingService;->stopTrafficMonitor()V
 
@@ -1364,7 +1332,6 @@
 
 .method static synthetic access$2900(Lcom/samsung/smartbonding/SmartBondingService;)V
     .locals 0
-    .param p0    # Lcom/samsung/smartbonding/SmartBondingService;
 
     invoke-direct {p0}, Lcom/samsung/smartbonding/SmartBondingService;->sendSBStopIntent()V
 
@@ -1373,7 +1340,6 @@
 
 .method static synthetic access$300(Lcom/samsung/smartbonding/SmartBondingService;)Lcom/samsung/smartbonding/SmartBondingService$SmartBondingHandler;
     .locals 1
-    .param p0    # Lcom/samsung/smartbonding/SmartBondingService;
 
     iget-object v0, p0, Lcom/samsung/smartbonding/SmartBondingService;->mHandler:Lcom/samsung/smartbonding/SmartBondingService$SmartBondingHandler;
 
@@ -1382,8 +1348,6 @@
 
 .method static synthetic access$3000(Lcom/samsung/smartbonding/SmartBondingService;I)V
     .locals 0
-    .param p0    # Lcom/samsung/smartbonding/SmartBondingService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/samsung/smartbonding/SmartBondingService;->showWarningToast(I)V
 
@@ -1392,7 +1356,6 @@
 
 .method static synthetic access$3100(Lcom/samsung/smartbonding/SmartBondingService;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/samsung/smartbonding/SmartBondingService;
 
     iget-object v0, p0, Lcom/samsung/smartbonding/SmartBondingService;->mContext:Landroid/content/Context;
 
@@ -1401,7 +1364,6 @@
 
 .method static synthetic access$3200(Lcom/samsung/smartbonding/SmartBondingService;)V
     .locals 0
-    .param p0    # Lcom/samsung/smartbonding/SmartBondingService;
 
     invoke-direct {p0}, Lcom/samsung/smartbonding/SmartBondingService;->showSpeedBarToast()V
 
@@ -1410,7 +1372,6 @@
 
 .method static synthetic access$3300(Lcom/samsung/smartbonding/SmartBondingService;)V
     .locals 0
-    .param p0    # Lcom/samsung/smartbonding/SmartBondingService;
 
     invoke-direct {p0}, Lcom/samsung/smartbonding/SmartBondingService;->hideTrafficMonitorToast()V
 
@@ -1419,7 +1380,6 @@
 
 .method static synthetic access$3400(Lcom/samsung/smartbonding/SmartBondingService;)Z
     .locals 1
-    .param p0    # Lcom/samsung/smartbonding/SmartBondingService;
 
     iget-boolean v0, p0, Lcom/samsung/smartbonding/SmartBondingService;->mStartTrafficMonitor:Z
 
@@ -1428,7 +1388,6 @@
 
 .method static synthetic access$3500(Lcom/samsung/smartbonding/SmartBondingService;)V
     .locals 0
-    .param p0    # Lcom/samsung/smartbonding/SmartBondingService;
 
     invoke-direct {p0}, Lcom/samsung/smartbonding/SmartBondingService;->updateTrafficMonitor()V
 
@@ -1437,8 +1396,6 @@
 
 .method static synthetic access$3602(Lcom/samsung/smartbonding/SmartBondingService;Z)Z
     .locals 0
-    .param p0    # Lcom/samsung/smartbonding/SmartBondingService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/smartbonding/SmartBondingService;->mNetworkEnabled:Z
 
@@ -1447,7 +1404,6 @@
 
 .method static synthetic access$3700(Lcom/samsung/smartbonding/SmartBondingService;)Z
     .locals 1
-    .param p0    # Lcom/samsung/smartbonding/SmartBondingService;
 
     invoke-direct {p0}, Lcom/samsung/smartbonding/SmartBondingService;->getNetworkEnabled()Z
 
@@ -1458,8 +1414,6 @@
 
 .method static synthetic access$3800(Lcom/samsung/smartbonding/SmartBondingService;Ljava/lang/String;)[Ljava/net/InetAddress;
     .locals 1
-    .param p0    # Lcom/samsung/smartbonding/SmartBondingService;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/samsung/smartbonding/SmartBondingService;->getAllByName(Ljava/lang/String;)[Ljava/net/InetAddress;
 
@@ -1470,7 +1424,6 @@
 
 .method static synthetic access$3900(Lcom/samsung/smartbonding/SmartBondingService;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/samsung/smartbonding/SmartBondingService;
 
     iget-object v0, p0, Lcom/samsung/smartbonding/SmartBondingService;->mCurrentActivity:Ljava/lang/String;
 
@@ -1479,8 +1432,6 @@
 
 .method static synthetic access$3902(Lcom/samsung/smartbonding/SmartBondingService;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/samsung/smartbonding/SmartBondingService;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/samsung/smartbonding/SmartBondingService;->mCurrentActivity:Ljava/lang/String;
 
@@ -1489,7 +1440,6 @@
 
 .method static synthetic access$400(Lcom/samsung/smartbonding/SmartBondingService;)Z
     .locals 1
-    .param p0    # Lcom/samsung/smartbonding/SmartBondingService;
 
     iget-boolean v0, p0, Lcom/samsung/smartbonding/SmartBondingService;->mWifiConnected:Z
 
@@ -1498,7 +1448,6 @@
 
 .method static synthetic access$4000(Lcom/samsung/smartbonding/SmartBondingService;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/samsung/smartbonding/SmartBondingService;
 
     invoke-direct {p0}, Lcom/samsung/smartbonding/SmartBondingService;->getCurrentActivity()Ljava/lang/String;
 
@@ -1509,8 +1458,6 @@
 
 .method static synthetic access$402(Lcom/samsung/smartbonding/SmartBondingService;Z)Z
     .locals 0
-    .param p0    # Lcom/samsung/smartbonding/SmartBondingService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/smartbonding/SmartBondingService;->mWifiConnected:Z
 
@@ -1519,7 +1466,6 @@
 
 .method static synthetic access$4100(Lcom/samsung/smartbonding/SmartBondingService;)Z
     .locals 1
-    .param p0    # Lcom/samsung/smartbonding/SmartBondingService;
 
     invoke-direct {p0}, Lcom/samsung/smartbonding/SmartBondingService;->isAirPlaneMode()Z
 
@@ -1530,7 +1476,6 @@
 
 .method static synthetic access$4200(Lcom/samsung/smartbonding/SmartBondingService;)I
     .locals 1
-    .param p0    # Lcom/samsung/smartbonding/SmartBondingService;
 
     iget v0, p0, Lcom/samsung/smartbonding/SmartBondingService;->mCurrentUserId:I
 
@@ -1539,8 +1484,6 @@
 
 .method static synthetic access$4202(Lcom/samsung/smartbonding/SmartBondingService;I)I
     .locals 0
-    .param p0    # Lcom/samsung/smartbonding/SmartBondingService;
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/smartbonding/SmartBondingService;->mCurrentUserId:I
 
@@ -1549,7 +1492,6 @@
 
 .method static synthetic access$4300(Lcom/samsung/smartbonding/SmartBondingService;)Z
     .locals 1
-    .param p0    # Lcom/samsung/smartbonding/SmartBondingService;
 
     iget-boolean v0, p0, Lcom/samsung/smartbonding/SmartBondingService;->isKioskContainer:Z
 
@@ -1558,8 +1500,6 @@
 
 .method static synthetic access$4302(Lcom/samsung/smartbonding/SmartBondingService;Z)Z
     .locals 0
-    .param p0    # Lcom/samsung/smartbonding/SmartBondingService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/smartbonding/SmartBondingService;->isKioskContainer:Z
 
@@ -1576,8 +1516,6 @@
 
 .method static synthetic access$4502(Lcom/samsung/smartbonding/SmartBondingService;Landroid/net/LinkProperties;)Landroid/net/LinkProperties;
     .locals 0
-    .param p0    # Lcom/samsung/smartbonding/SmartBondingService;
-    .param p1    # Landroid/net/LinkProperties;
 
     iput-object p1, p0, Lcom/samsung/smartbonding/SmartBondingService;->mWifiLp:Landroid/net/LinkProperties;
 
@@ -1586,8 +1524,6 @@
 
 .method static synthetic access$4600(Lcom/samsung/smartbonding/SmartBondingService;I)Landroid/net/LinkProperties;
     .locals 1
-    .param p0    # Lcom/samsung/smartbonding/SmartBondingService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/samsung/smartbonding/SmartBondingService;->getLinkProperties(I)Landroid/net/LinkProperties;
 
@@ -1598,9 +1534,6 @@
 
 .method static synthetic access$4700(Lcom/samsung/smartbonding/SmartBondingService;II)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/samsung/smartbonding/SmartBondingService;
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/samsung/smartbonding/SmartBondingService;->getSBInterfaceDirect(II)Ljava/lang/String;
 
@@ -1611,7 +1544,6 @@
 
 .method static synthetic access$4800(Lcom/samsung/smartbonding/SmartBondingService;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/samsung/smartbonding/SmartBondingService;
 
     iget-object v0, p0, Lcom/samsung/smartbonding/SmartBondingService;->mCurrentWifiBSSID:Ljava/lang/String;
 
@@ -1620,8 +1552,6 @@
 
 .method static synthetic access$4802(Lcom/samsung/smartbonding/SmartBondingService;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/samsung/smartbonding/SmartBondingService;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/samsung/smartbonding/SmartBondingService;->mCurrentWifiBSSID:Ljava/lang/String;
 
@@ -1630,7 +1560,6 @@
 
 .method static synthetic access$4900(Lcom/samsung/smartbonding/SmartBondingService;)V
     .locals 0
-    .param p0    # Lcom/samsung/smartbonding/SmartBondingService;
 
     invoke-direct {p0}, Lcom/samsung/smartbonding/SmartBondingService;->initSpeedRatio()V
 
@@ -1639,7 +1568,6 @@
 
 .method static synthetic access$500(Lcom/samsung/smartbonding/SmartBondingService;)Z
     .locals 1
-    .param p0    # Lcom/samsung/smartbonding/SmartBondingService;
 
     invoke-direct {p0}, Lcom/samsung/smartbonding/SmartBondingService;->getSBUsageEnabled()Z
 
@@ -1650,7 +1578,6 @@
 
 .method static synthetic access$5000(Lcom/samsung/smartbonding/SmartBondingService;)Z
     .locals 1
-    .param p0    # Lcom/samsung/smartbonding/SmartBondingService;
 
     iget-boolean v0, p0, Lcom/samsung/smartbonding/SmartBondingService;->mMobileConnected:Z
 
@@ -1659,8 +1586,6 @@
 
 .method static synthetic access$5002(Lcom/samsung/smartbonding/SmartBondingService;Z)Z
     .locals 0
-    .param p0    # Lcom/samsung/smartbonding/SmartBondingService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/smartbonding/SmartBondingService;->mMobileConnected:Z
 
@@ -1669,8 +1594,6 @@
 
 .method static synthetic access$5102(Lcom/samsung/smartbonding/SmartBondingService;Landroid/net/LinkProperties;)Landroid/net/LinkProperties;
     .locals 0
-    .param p0    # Lcom/samsung/smartbonding/SmartBondingService;
-    .param p1    # Landroid/net/LinkProperties;
 
     iput-object p1, p0, Lcom/samsung/smartbonding/SmartBondingService;->mMobileLp:Landroid/net/LinkProperties;
 
@@ -1679,7 +1602,6 @@
 
 .method static synthetic access$5200(Lcom/samsung/smartbonding/SmartBondingService;)Z
     .locals 1
-    .param p0    # Lcom/samsung/smartbonding/SmartBondingService;
 
     iget-boolean v0, p0, Lcom/samsung/smartbonding/SmartBondingService;->mPreSBSetting:Z
 
@@ -1688,8 +1610,6 @@
 
 .method static synthetic access$5202(Lcom/samsung/smartbonding/SmartBondingService;Z)Z
     .locals 0
-    .param p0    # Lcom/samsung/smartbonding/SmartBondingService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/smartbonding/SmartBondingService;->mPreSBSetting:Z
 
@@ -1698,7 +1618,6 @@
 
 .method static synthetic access$600(Lcom/samsung/smartbonding/SmartBondingService;)Z
     .locals 1
-    .param p0    # Lcom/samsung/smartbonding/SmartBondingService;
 
     iget-boolean v0, p0, Lcom/samsung/smartbonding/SmartBondingService;->mDisableBySIOP:Z
 
@@ -1707,8 +1626,6 @@
 
 .method static synthetic access$602(Lcom/samsung/smartbonding/SmartBondingService;Z)Z
     .locals 0
-    .param p0    # Lcom/samsung/smartbonding/SmartBondingService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/smartbonding/SmartBondingService;->mDisableBySIOP:Z
 
@@ -1717,7 +1634,6 @@
 
 .method static synthetic access$700(Lcom/samsung/smartbonding/SmartBondingService;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/samsung/smartbonding/SmartBondingService;
 
     iget-object v0, p0, Lcom/samsung/smartbonding/SmartBondingService;->mSBUsageStatus:Ljava/util/ArrayList;
 
@@ -1726,7 +1642,6 @@
 
 .method static synthetic access$800(Lcom/samsung/smartbonding/SmartBondingService;)Z
     .locals 1
-    .param p0    # Lcom/samsung/smartbonding/SmartBondingService;
 
     invoke-direct {p0}, Lcom/samsung/smartbonding/SmartBondingService;->checkSBEnableCondition()Z
 
@@ -1737,8 +1652,6 @@
 
 .method static synthetic access$900(Lcom/samsung/smartbonding/SmartBondingService;Z)I
     .locals 1
-    .param p0    # Lcom/samsung/smartbonding/SmartBondingService;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/samsung/smartbonding/SmartBondingService;->setSBInterfacesEnabled(Z)I
 
@@ -1749,9 +1662,6 @@
 
 .method private buildCheckSBUsageIntent(JLjava/lang/String;J)Landroid/content/Intent;
     .locals 2
-    .param p1    # J
-    .param p3    # Ljava/lang/String;
-    .param p4    # J
 
     new-instance v0, Landroid/content/Intent;
 
@@ -1776,7 +1686,6 @@
 
 .method private buildStopSBUsageIntent(J)Landroid/content/Intent;
     .locals 2
-    .param p1    # J
 
     new-instance v0, Landroid/content/Intent;
 
@@ -2323,7 +2232,6 @@
 
 .method private convertCombinedUrl(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/samsung/smartbonding/SmartBondingService;->isGooglePlayContent(Ljava/lang/String;)Z
 
@@ -2341,7 +2249,6 @@
 
 .method private convertDetailUrl(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/samsung/smartbonding/SmartBondingService;->isGooglePlayContent(Ljava/lang/String;)Z
 
@@ -2359,8 +2266,6 @@
 
 .method private convertSBInterfaceState(ZZ)I
     .locals 1
-    .param p1    # Z
-    .param p2    # Z
 
     if-eqz p1, :cond_0
 
@@ -2476,7 +2381,6 @@
 
 .method private getAllByName(Ljava/lang/String;)[Ljava/net/InetAddress;
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -2666,8 +2570,6 @@
 
 .method private getApplicationName(ILjava/lang/String;)Ljava/lang/String;
     .locals 12
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v11, 0x0
 
@@ -2964,8 +2866,6 @@
 
 .method private getBarBitmap(II)Landroid/graphics/Bitmap;
     .locals 13
-    .param p1    # I
-    .param p2    # I
 
     const/4 v1, 0x0
 
@@ -3265,7 +3165,6 @@
 
 .method private getGooglePlayContentUrl(Ljava/lang/String;)Ljava/lang/String;
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     const/4 v5, 0x0
 
@@ -3387,7 +3286,6 @@
 
 .method private getGooglePlayContentUrlWithParam(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -3434,7 +3332,6 @@
 
 .method private getLinkProperties(I)Landroid/net/LinkProperties;
     .locals 9
-    .param p1    # I
 
     const/4 v8, 0x1
 
@@ -3583,7 +3480,6 @@
 
 .method private getLocalAddress(Landroid/net/LinkProperties;)Ljava/lang/String;
     .locals 2
-    .param p1    # Landroid/net/LinkProperties;
 
     invoke-direct {p0, p1}, Lcom/samsung/smartbonding/SmartBondingService;->getLocalInetAddress(Landroid/net/LinkProperties;)Ljava/net/InetAddress;
 
@@ -3606,8 +3502,6 @@
 
 .method private getLocalAddress(Landroid/net/LinkProperties;I)Ljava/lang/String;
     .locals 2
-    .param p1    # Landroid/net/LinkProperties;
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/samsung/smartbonding/SmartBondingService;->getLocalInetAddress(Landroid/net/LinkProperties;I)Ljava/net/InetAddress;
 
@@ -3630,7 +3524,6 @@
 
 .method private getLocalInetAddress(Landroid/net/LinkProperties;)Ljava/net/InetAddress;
     .locals 4
-    .param p1    # Landroid/net/LinkProperties;
 
     const/4 v2, 0x0
 
@@ -3706,8 +3599,6 @@
 
 .method private getLocalInetAddress(Landroid/net/LinkProperties;I)Ljava/net/InetAddress;
     .locals 4
-    .param p1    # Landroid/net/LinkProperties;
-    .param p2    # I
 
     const/4 v2, 0x0
 
@@ -4075,7 +3966,6 @@
 
 .method private getPackageName(I)Ljava/lang/String;
     .locals 8
-    .param p1    # I
 
     const-string v2, ""
 
@@ -4177,7 +4067,6 @@
 
 .method private getProcessName(I)Ljava/lang/String;
     .locals 8
-    .param p1    # I
 
     const-string v3, ""
 
@@ -4289,7 +4178,6 @@
 
 .method private getProcessNameByProc(I)Ljava/lang/String;
     .locals 8
-    .param p1    # I
 
     const-string v3, ""
 
@@ -4574,8 +4462,6 @@
 
 .method private getSBInterfaceDirect(II)Ljava/lang/String;
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     const/4 v1, 0x0
 
@@ -4653,7 +4539,6 @@
 
 .method private static getStackTraceString(Ljava/lang/Throwable;)Ljava/lang/String;
     .locals 4
-    .param p0    # Ljava/lang/Throwable;
 
     if-nez p0, :cond_0
 
@@ -5427,7 +5312,6 @@
 
 .method private isBlockedProcess(I)Z
     .locals 6
-    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -5660,7 +5544,6 @@
 
 .method private isFirstCombinedRequest(Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x1
 
@@ -5731,7 +5614,6 @@
 
 .method private isGooglePlayContent(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -5762,7 +5644,6 @@
 
 .method private isGooglePlayFirstContent(Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -5976,8 +5857,6 @@
 
 .method private isPermissionAllowed(II)Z
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1}, Lcom/samsung/smartbonding/SmartBondingService;->getProcessName(I)Ljava/lang/String;
 
@@ -6134,7 +6013,6 @@
 
 .method private isRunningProcess(I)Z
     .locals 7
-    .param p1    # I
 
     const/4 v4, 0x0
 
@@ -6194,7 +6072,6 @@
 
 .method private isRunningProcess(Ljava/lang/String;)Z
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -6260,7 +6137,6 @@
 
 .method private isYouTubeContent(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -6334,7 +6210,6 @@
 
 .method private static log(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "SmartBondingService"
 
@@ -6345,7 +6220,6 @@
 
 .method private static log(Ljava/lang/Throwable;)V
     .locals 2
-    .param p0    # Ljava/lang/Throwable;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -6388,7 +6262,6 @@
 
 .method private static loge(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "SmartBondingService"
 
@@ -6399,7 +6272,6 @@
 
 .method private readOneLine(Ljava/lang/String;)Ljava/lang/String;
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const-string v3, ""
 
@@ -6551,7 +6423,6 @@
 
 .method private registerPhoneStateListener(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     iget-object v0, p0, Lcom/samsung/smartbonding/SmartBondingService;->mTm:Landroid/telephony/TelephonyManager;
 
@@ -6581,7 +6452,6 @@
 
 .method private removeSBUsage(J)V
     .locals 8
-    .param p1    # J
 
     const/4 v2, 0x0
 
@@ -6811,9 +6681,6 @@
 
 .method private sendSBVzwStateChangedIntent(IJJ)V
     .locals 4
-    .param p1    # I
-    .param p2    # J
-    .param p4    # J
 
     const-string v1, "VZW"
 
@@ -6883,13 +6750,6 @@
 
 .method private sendStateChangedIntent(JLjava/lang/String;Ljava/lang/String;IIJJ)V
     .locals 3
-    .param p1    # J
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
-    .param p6    # I
-    .param p7    # J
-    .param p9    # J
 
     iput p6, p0, Lcom/samsung/smartbonding/SmartBondingService;->mLastErrorCause:I
 
@@ -6983,7 +6843,6 @@
 
 .method private setCurMaxSpeed(I)V
     .locals 2
-    .param p1    # I
 
     iget v1, p0, Lcom/samsung/smartbonding/SmartBondingService;->mPrevMaxSpeed:I
 
@@ -7029,7 +6888,6 @@
 
 .method private setMobileDataEnabled(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v1, p0, Lcom/samsung/smartbonding/SmartBondingService;->mCm:Landroid/net/IConnectivityManager;
 
@@ -7062,7 +6920,6 @@
 
 .method private setSBInterfacesEnabled(Z)I
     .locals 4
-    .param p1    # Z
 
     iget-boolean v1, p0, Lcom/samsung/smartbonding/SmartBondingService;->mSBInterfacesEnabled:Z
 
@@ -7453,7 +7310,6 @@
 
 .method private showSpeedBarNotification(Z)V
     .locals 10
-    .param p1    # Z
 
     const/4 v5, 0x1
 
@@ -7954,7 +7810,6 @@
 
 .method private showWarningToast(I)V
     .locals 6
-    .param p1    # I
 
     const/16 v5, 0x258
 
@@ -8751,9 +8606,6 @@
 
 .method private updateStatisticsData(Ljava/lang/Integer;[J[J)V
     .locals 12
-    .param p1    # Ljava/lang/Integer;
-    .param p2    # [J
-    .param p3    # [J
 
     :try_start_0
     iget-object v7, p0, Lcom/samsung/smartbonding/SmartBondingService;->mSBDataStatistics:Ljava/util/HashMap;
@@ -9427,7 +9279,6 @@
 
 .method public getProxyInfo(I)[Ljava/lang/String;
     .locals 8
-    .param p1    # I
 
     const/4 v7, 0x3
 
@@ -9657,7 +9508,6 @@
 
 .method public getSBInterface(I)Ljava/lang/String;
     .locals 3
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -9703,8 +9553,6 @@
 
 .method public getSBInterfaceEx(II)Ljava/lang/String;
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -10206,7 +10054,6 @@
 
 .method public getSBUsageStatus(J)I
     .locals 5
-    .param p1    # J
 
     const/4 v2, 0x0
 
@@ -10246,7 +10093,6 @@
 
 .method public getSmartBondingData(I)[J
     .locals 7
-    .param p1    # I
 
     iget-object v1, p0, Lcom/samsung/smartbonding/SmartBondingService;->mSBDataStatistics:Ljava/util/HashMap;
 
@@ -10409,8 +10255,6 @@
 
 .method public reportSBUsage(J[J)V
     .locals 19
-    .param p1    # J
-    .param p3    # [J
 
     sget-boolean v2, Lcom/samsung/smartbonding/SmartBondingService;->DBG:Z
 
@@ -10613,8 +10457,6 @@
 
 .method public requestGetAllByName(JLjava/lang/String;)V
     .locals 6
-    .param p1    # J
-    .param p3    # Ljava/lang/String;
 
     const/16 v5, 0x9
 
@@ -10674,7 +10516,6 @@
 
 .method public responseGetAllByName(J)[Ljava/lang/String;
     .locals 12
-    .param p1    # J
 
     const/4 v11, 0x2
 
@@ -10775,7 +10616,6 @@
 
 .method public setHttpLogEnabled(Z)V
     .locals 2
-    .param p1    # Z
 
     sget-boolean v0, Lcom/samsung/smartbonding/SmartBondingService;->DBG:Z
 
@@ -10817,7 +10657,6 @@
 
 .method public setSBEnabled(Z)V
     .locals 4
-    .param p1    # Z
 
     :try_start_0
     invoke-virtual {p0}, Lcom/samsung/smartbonding/SmartBondingService;->getSBEnabled()Z
@@ -10903,8 +10742,6 @@
 
 .method public setSBInternalUsageStatus(IJ)V
     .locals 6
-    .param p1    # I
-    .param p2    # J
 
     sget-boolean v2, Lcom/samsung/smartbonding/SmartBondingService;->VDBG:Z
 
@@ -11004,7 +10841,6 @@
 
 .method public setSBNotificationEnabled(Z)V
     .locals 4
-    .param p1    # Z
 
     :try_start_0
     invoke-virtual {p0}, Lcom/samsung/smartbonding/SmartBondingService;->getSBNotificationEnabled()Z
@@ -11090,8 +10926,6 @@
 
 .method public setSBUsageStatus(IJ)V
     .locals 17
-    .param p1    # I
-    .param p2    # J
 
     sget-boolean v2, Lcom/samsung/smartbonding/SmartBondingService;->VDBG:Z
 
@@ -11313,7 +11147,6 @@
 
 .method public setWarningToast(Z)V
     .locals 2
-    .param p1    # Z
 
     sget-boolean v0, Lcom/samsung/smartbonding/SmartBondingService;->DBG:Z
 
@@ -11353,10 +11186,6 @@
 
 .method public startSBUsage(JJJLjava/lang/String;)Z
     .locals 28
-    .param p1    # J
-    .param p3    # J
-    .param p5    # J
-    .param p7    # Ljava/lang/String;
 
     invoke-direct/range {p0 .. p0}, Lcom/samsung/smartbonding/SmartBondingService;->isAirPlaneMode()Z
 
@@ -12538,7 +12367,6 @@
 
 .method public stopSBUsage(J)I
     .locals 10
-    .param p1    # J
 
     const/4 v9, 0x0
 
@@ -12833,8 +12661,6 @@
 
 .method public stopSBUsageWithReason(JI)I
     .locals 20
-    .param p1    # J
-    .param p3    # I
 
     monitor-enter p0
 
@@ -13559,8 +13385,6 @@
 
 .method public submitMultiSocketData([J[J)V
     .locals 4
-    .param p1    # [J
-    .param p2    # [J
 
     const/4 v2, 0x1
 

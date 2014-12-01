@@ -44,7 +44,6 @@
 
 .method public constructor <init>(I)V
     .locals 0
-    .param p1    # I
 
     invoke-direct {p0}, Landroid/transition/Visibility;-><init>()V
 
@@ -55,7 +54,6 @@
 
 .method private captureValues(Landroid/transition/TransitionValues;)V
     .locals 4
-    .param p1    # Landroid/transition/TransitionValues;
 
     const/4 v1, 0x2
 
@@ -98,10 +96,6 @@
 
 .method private createAnimation(Landroid/view/View;FFLandroid/animation/AnimatorListenerAdapter;)Landroid/animation/Animator;
     .locals 4
-    .param p1    # Landroid/view/View;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # Landroid/animation/AnimatorListenerAdapter;
 
     const/4 v0, 0x0
 
@@ -176,7 +170,6 @@
 # virtual methods
 .method public captureStartValues(Landroid/transition/TransitionValues;)V
     .locals 0
-    .param p1    # Landroid/transition/TransitionValues;
 
     invoke-super {p0, p1}, Landroid/transition/Visibility;->captureStartValues(Landroid/transition/TransitionValues;)V
 
@@ -187,11 +180,6 @@
 
 .method public onAppear(Landroid/view/ViewGroup;Landroid/transition/TransitionValues;ILandroid/transition/TransitionValues;I)Landroid/animation/Animator;
     .locals 8
-    .param p1    # Landroid/view/ViewGroup;
-    .param p2    # Landroid/transition/TransitionValues;
-    .param p3    # I
-    .param p4    # Landroid/transition/TransitionValues;
-    .param p5    # I
 
     const/4 v7, 0x0
 
@@ -300,11 +288,6 @@
 
 .method public onDisappear(Landroid/view/ViewGroup;Landroid/transition/TransitionValues;ILandroid/transition/TransitionValues;I)Landroid/animation/Animator;
     .locals 29
-    .param p1    # Landroid/view/ViewGroup;
-    .param p2    # Landroid/transition/TransitionValues;
-    .param p3    # I
-    .param p4    # Landroid/transition/TransitionValues;
-    .param p5    # I
 
     move-object/from16 v0, p0
 

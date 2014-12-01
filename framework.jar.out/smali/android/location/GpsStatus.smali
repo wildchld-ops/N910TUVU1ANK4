@@ -89,7 +89,6 @@
 
 .method static synthetic access$000(Landroid/location/GpsStatus;)[Landroid/location/GpsSatellite;
     .locals 1
-    .param p0    # Landroid/location/GpsStatus;
 
     iget-object v0, p0, Landroid/location/GpsStatus;->mSatellites:[Landroid/location/GpsSatellite;
 
@@ -133,15 +132,6 @@
 
 .method declared-synchronized setStatus(I[I[F[F[FIII[I)V
     .locals 6
-    .param p1    # I
-    .param p2    # [I
-    .param p3    # [F
-    .param p4    # [F
-    .param p5    # [F
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
-    .param p9    # [I
 
     monitor-enter p0
 
@@ -301,7 +291,6 @@
 
 .method setStatus(Landroid/location/GpsStatus;)V
     .locals 3
-    .param p1    # Landroid/location/GpsStatus;
 
     invoke-virtual {p1}, Landroid/location/GpsStatus;->getTimeToFirstFix()I
 
@@ -338,7 +327,6 @@
 
 .method setTimeToFirstFix(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/location/GpsStatus;->mTimeToFirstFix:I
 

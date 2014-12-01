@@ -36,7 +36,6 @@
 
 .method public onDismiss(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     return-void
 .end method
@@ -49,7 +48,6 @@
 
 .method public onHide(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     return-void
 .end method
@@ -62,7 +60,6 @@
 
 .method public onShow(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     return-void
 .end method

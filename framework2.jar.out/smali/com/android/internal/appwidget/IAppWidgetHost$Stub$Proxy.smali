@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -53,9 +52,6 @@
 
 .method public providerChanged(ILandroid/appwidget/AppWidgetProviderInfo;I)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/appwidget/AppWidgetProviderInfo;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -122,7 +118,6 @@
 
 .method public providersChanged(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -166,9 +161,6 @@
 
 .method public updateAppWidget(ILandroid/widget/RemoteViews;I)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/widget/RemoteViews;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -235,9 +227,6 @@
 
 .method public viewDataChanged(III)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

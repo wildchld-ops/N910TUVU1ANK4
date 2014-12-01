@@ -337,7 +337,6 @@
 # virtual methods
 .method public declared-synchronized isVrPackage(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 

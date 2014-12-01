@@ -282,8 +282,6 @@
 # virtual methods
 .method public getData(Ljava/lang/String;B)B
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # B
 
     iget-object v2, p0, Lcom/diotek/ime/framework/repository/RepositoryImpl;->mByteStateSet:Ljava/util/HashMap;
 
@@ -328,8 +326,6 @@
 
 .method public getData(Ljava/lang/String;C)C
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # C
 
     iget-object v2, p0, Lcom/diotek/ime/framework/repository/RepositoryImpl;->mIntegerStateSet:Ljava/util/HashMap;
 
@@ -376,8 +372,6 @@
 
 .method public getData(Ljava/lang/String;D)D
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # D
 
     iget-object v3, p0, Lcom/diotek/ime/framework/repository/RepositoryImpl;->mDoubleStateSet:Ljava/util/HashMap;
 
@@ -422,8 +416,6 @@
 
 .method public getData(Ljava/lang/String;F)F
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # F
 
     iget-object v2, p0, Lcom/diotek/ime/framework/repository/RepositoryImpl;->mFloatStateSet:Ljava/util/HashMap;
 
@@ -468,8 +460,6 @@
 
 .method public getData(Ljava/lang/String;I)I
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     iget-object v2, p0, Lcom/diotek/ime/framework/repository/RepositoryImpl;->mIntegerStateSet:Ljava/util/HashMap;
 
@@ -514,8 +504,6 @@
 
 .method public getData(Ljava/lang/String;J)J
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
 
     iget-object v3, p0, Lcom/diotek/ime/framework/repository/RepositoryImpl;->mLongStateSet:Ljava/util/HashMap;
 
@@ -560,8 +548,6 @@
 
 .method public getData(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Object;
 
     iget-object v2, p0, Lcom/diotek/ime/framework/repository/RepositoryImpl;->mObjectStateSet:Ljava/util/HashMap;
 
@@ -602,8 +588,6 @@
 
 .method public getData(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v2, p0, Lcom/diotek/ime/framework/repository/RepositoryImpl;->mStringStateSet:Ljava/util/HashMap;
 
@@ -646,8 +630,6 @@
 
 .method public getData(Ljava/lang/String;S)S
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # S
 
     iget-object v2, p0, Lcom/diotek/ime/framework/repository/RepositoryImpl;->mShortStateSet:Ljava/util/HashMap;
 
@@ -692,8 +674,6 @@
 
 .method public getData(Ljava/lang/String;Z)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     iget-object v2, p0, Lcom/diotek/ime/framework/repository/RepositoryImpl;->mBooleanStateSet:Ljava/util/HashMap;
 
@@ -746,8 +726,6 @@
 
 .method public setData(Ljava/lang/String;B)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # B
 
     iget-object v0, p0, Lcom/diotek/ime/framework/repository/RepositoryImpl;->mByteStateSet:Ljava/util/HashMap;
 
@@ -767,8 +745,6 @@
 
 .method public setData(Ljava/lang/String;C)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # C
 
     iget-object v0, p0, Lcom/diotek/ime/framework/repository/RepositoryImpl;->mIntegerStateSet:Ljava/util/HashMap;
 
@@ -788,8 +764,6 @@
 
 .method public setData(Ljava/lang/String;D)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # D
 
     iget-object v0, p0, Lcom/diotek/ime/framework/repository/RepositoryImpl;->mDoubleStateSet:Ljava/util/HashMap;
 
@@ -809,8 +783,6 @@
 
 .method public setData(Ljava/lang/String;F)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # F
 
     iget-object v0, p0, Lcom/diotek/ime/framework/repository/RepositoryImpl;->mFloatStateSet:Ljava/util/HashMap;
 
@@ -830,8 +802,6 @@
 
 .method public setData(Ljava/lang/String;I)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/diotek/ime/framework/repository/RepositoryImpl;->mIntegerStateSet:Ljava/util/HashMap;
 
@@ -851,8 +821,6 @@
 
 .method public setData(Ljava/lang/String;J)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
 
     iget-object v0, p0, Lcom/diotek/ime/framework/repository/RepositoryImpl;->mLongStateSet:Ljava/util/HashMap;
 
@@ -872,8 +840,6 @@
 
 .method public setData(Ljava/lang/String;Ljava/lang/Object;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Object;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/repository/RepositoryImpl;->mObjectStateSet:Ljava/util/HashMap;
 
@@ -889,8 +855,6 @@
 
 .method public setData(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/repository/RepositoryImpl;->mStringStateSet:Ljava/util/HashMap;
 
@@ -906,8 +870,6 @@
 
 .method public setData(Ljava/lang/String;S)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # S
 
     iget-object v0, p0, Lcom/diotek/ime/framework/repository/RepositoryImpl;->mShortStateSet:Ljava/util/HashMap;
 
@@ -927,8 +889,6 @@
 
 .method public setData(Ljava/lang/String;Z)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     iget-object v0, p0, Lcom/diotek/ime/framework/repository/RepositoryImpl;->mBooleanStateSet:Ljava/util/HashMap;
 
@@ -948,7 +908,6 @@
 
 .method public setdefaultPreferenceContext(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     iput-object p1, p0, Lcom/diotek/ime/framework/repository/RepositoryImpl;->mPrefContext:Landroid/content/Context;
 

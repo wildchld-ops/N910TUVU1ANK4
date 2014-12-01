@@ -116,7 +116,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 11
-    .param p1    # Landroid/content/Context;
 
     const/4 v10, 0x1
 
@@ -339,9 +338,6 @@
 
 .method static synthetic access$1000(Landroid/hardware/scontext/SContextService;ILandroid/os/Bundle;)V
     .locals 0
-    .param p0    # Landroid/hardware/scontext/SContextService;
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     invoke-direct {p0, p1, p2}, Landroid/hardware/scontext/SContextService;->updateSContext(ILandroid/os/Bundle;)V
 
@@ -350,7 +346,6 @@
 
 .method static synthetic access$300(Landroid/hardware/scontext/SContextService;)Ljava/util/concurrent/locks/ReentrantLock;
     .locals 1
-    .param p0    # Landroid/hardware/scontext/SContextService;
 
     iget-object v0, p0, Landroid/hardware/scontext/SContextService;->mMutex:Ljava/util/concurrent/locks/ReentrantLock;
 
@@ -359,7 +354,6 @@
 
 .method static synthetic access$400(Landroid/hardware/scontext/SContextService;)Ljava/util/concurrent/ConcurrentHashMap;
     .locals 1
-    .param p0    # Landroid/hardware/scontext/SContextService;
 
     iget-object v0, p0, Landroid/hardware/scontext/SContextService;->mUsedServiceMap:Ljava/util/concurrent/ConcurrentHashMap;
 
@@ -376,8 +370,6 @@
 
 .method static synthetic access$600(Landroid/hardware/scontext/SContextService;I)V
     .locals 0
-    .param p0    # Landroid/hardware/scontext/SContextService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/hardware/scontext/SContextService;->removeSContextService(I)V
 
@@ -386,7 +378,6 @@
 
 .method static synthetic access$700(Landroid/hardware/scontext/SContextService;)Ljava/util/concurrent/CopyOnWriteArrayList;
     .locals 1
-    .param p0    # Landroid/hardware/scontext/SContextService;
 
     iget-object v0, p0, Landroid/hardware/scontext/SContextService;->mListeners:Ljava/util/concurrent/CopyOnWriteArrayList;
 
@@ -395,7 +386,6 @@
 
 .method static synthetic access$800(Landroid/hardware/scontext/SContextService;)V
     .locals 0
-    .param p0    # Landroid/hardware/scontext/SContextService;
 
     invoke-direct {p0}, Landroid/hardware/scontext/SContextService;->showListenerList()V
 
@@ -404,7 +394,6 @@
 
 .method static synthetic access$900(Landroid/hardware/scontext/SContextService;)Ljava/util/concurrent/ConcurrentHashMap;
     .locals 1
-    .param p0    # Landroid/hardware/scontext/SContextService;
 
     iget-object v0, p0, Landroid/hardware/scontext/SContextService;->mLatestRegisteredListenerMap:Ljava/util/concurrent/ConcurrentHashMap;
 
@@ -413,8 +402,6 @@
 
 .method private addSContextService(ILandroid/os/Bundle;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     sget-object v0, Landroid/hardware/scontext/SContextService;->mProviderMap:Ljava/util/concurrent/ConcurrentHashMap;
 
@@ -476,7 +463,6 @@
 
 .method private encodeLog(Ljava/lang/String;)Ljava/lang/String;
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const-string v5, "ro.debug_level"
 
@@ -540,8 +526,6 @@
 
 .method private notifyListeners(Landroid/os/IBinder;Ljava/lang/String;)V
     .locals 6
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Ljava/lang/String;
 
     const-string v1, ""
 
@@ -624,7 +608,6 @@
 
 .method private removeSContextService(I)V
     .locals 3
-    .param p1    # I
 
     sget-object v0, Landroid/hardware/scontext/SContextService;->mProviderMap:Ljava/util/concurrent/ConcurrentHashMap;
 
@@ -684,8 +667,6 @@
 
 .method private sendProperty(ILandroid/os/Bundle;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     sget-object v0, Landroid/hardware/scontext/SContextService;->mProviderMap:Ljava/util/concurrent/ConcurrentHashMap;
 
@@ -845,8 +826,6 @@
 
 .method private declared-synchronized updateSContext(ILandroid/os/Bundle;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     monitor-enter p0
 
@@ -972,8 +951,6 @@
 # virtual methods
 .method public changeParameters(Landroid/os/IBinder;Landroid/hardware/scontext/SContextProperty;)Z
     .locals 11
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Landroid/hardware/scontext/SContextProperty;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1210,9 +1187,6 @@
 
 .method protected dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 8
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     iget-object v6, p0, Landroid/hardware/scontext/SContextService;->mContext:Landroid/content/Context;
 
@@ -1480,8 +1454,6 @@
 
 .method public initializeSContextService(Landroid/os/IBinder;I)V
     .locals 6
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1674,8 +1646,6 @@
 
 .method public registerCallback(Landroid/os/IBinder;Landroid/hardware/scontext/SContextProperty;)V
     .locals 10
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Landroid/hardware/scontext/SContextProperty;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2011,8 +1981,6 @@
 
 .method public requestToUpdate(Landroid/os/IBinder;I)V
     .locals 6
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2174,8 +2142,6 @@
 
 .method public setReferenceData(I[B)Z
     .locals 4
-    .param p1    # I
-    .param p2    # [B
 
     const/4 v0, 0x0
 
@@ -2255,8 +2221,6 @@
 
 .method public unregisterCallback(Landroid/os/IBinder;I)Z
     .locals 10
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

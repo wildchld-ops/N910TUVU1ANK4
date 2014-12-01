@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Landroid/webkitsec/HTML5VideoFullScreen;Landroid/content/Context;)V
     .locals 0
-    .param p2    # Landroid/content/Context;
 
     iput-object p1, p0, Landroid/webkitsec/HTML5VideoFullScreen$VideoSurfaceView;->this$0:Landroid/webkitsec/HTML5VideoFullScreen;
 
@@ -34,8 +33,6 @@
 # virtual methods
 .method protected onMeasure(II)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     iget-object v2, p0, Landroid/webkitsec/HTML5VideoFullScreen$VideoSurfaceView;->this$0:Landroid/webkitsec/HTML5VideoFullScreen;
 

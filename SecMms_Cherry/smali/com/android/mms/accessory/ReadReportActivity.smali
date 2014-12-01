@@ -83,8 +83,6 @@
 
 .method static synthetic access$300(Lcom/android/mms/accessory/ReadReportActivity;Z)V
     .locals 0
-    .param p0    # Lcom/android/mms/accessory/ReadReportActivity;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/mms/accessory/ReadReportActivity;->updateReadReport(Z)V
 
@@ -117,7 +115,6 @@
 
 .method private queueFromIntent(Landroid/content/Intent;)Z
     .locals 8
-    .param p1    # Landroid/content/Intent;
 
     const-wide/16 v6, 0x0
 
@@ -221,7 +218,6 @@
 
 .method private updateReadReport(Z)V
     .locals 12
-    .param p1    # Z
 
     const/16 v11, 0x80
 
@@ -445,7 +441,6 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v3, 0x1
 
@@ -572,7 +567,6 @@
 
 .method protected onNewIntent(Landroid/content/Intent;)V
     .locals 2
-    .param p1    # Landroid/content/Intent;
 
     const-string v0, "Mms/ReadReportActivity"
 

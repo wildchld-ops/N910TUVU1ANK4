@@ -97,8 +97,6 @@
 
 .method constructor <init>(Landroid/content/Context;Landroid/os/Handler;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/Handler;
 
     const-string v0, "WifiApConfigStore"
 
@@ -163,7 +161,6 @@
 
 .method static synthetic access$000(Landroid/net/wifi/WifiApConfigStore;)Landroid/net/wifi/WifiConfiguration;
     .locals 1
-    .param p0    # Landroid/net/wifi/WifiApConfigStore;
 
     iget-object v0, p0, Landroid/net/wifi/WifiApConfigStore;->mWifiApConfig:Landroid/net/wifi/WifiConfiguration;
 
@@ -172,8 +169,6 @@
 
 .method static synthetic access$002(Landroid/net/wifi/WifiApConfigStore;Landroid/net/wifi/WifiConfiguration;)Landroid/net/wifi/WifiConfiguration;
     .locals 0
-    .param p0    # Landroid/net/wifi/WifiApConfigStore;
-    .param p1    # Landroid/net/wifi/WifiConfiguration;
 
     iput-object p1, p0, Landroid/net/wifi/WifiApConfigStore;->mWifiApConfig:Landroid/net/wifi/WifiConfiguration;
 
@@ -182,7 +177,6 @@
 
 .method static synthetic access$100(Landroid/net/wifi/WifiApConfigStore;)V
     .locals 0
-    .param p0    # Landroid/net/wifi/WifiApConfigStore;
 
     invoke-direct {p0}, Landroid/net/wifi/WifiApConfigStore;->reGenerateAndWriteConfiguration()V
 
@@ -191,8 +185,6 @@
 
 .method static synthetic access$1000(Landroid/net/wifi/WifiApConfigStore;Lcom/android/internal/util/IState;)V
     .locals 0
-    .param p0    # Landroid/net/wifi/WifiApConfigStore;
-    .param p1    # Lcom/android/internal/util/IState;
 
     invoke-virtual {p0, p1}, Landroid/net/wifi/WifiApConfigStore;->transitionTo(Lcom/android/internal/util/IState;)V
 
@@ -201,8 +193,6 @@
 
 .method static synthetic access$1100(Landroid/net/wifi/WifiApConfigStore;Landroid/os/Message;)V
     .locals 0
-    .param p0    # Landroid/net/wifi/WifiApConfigStore;
-    .param p1    # Landroid/os/Message;
 
     invoke-virtual {p0, p1}, Landroid/net/wifi/WifiApConfigStore;->deferMessage(Landroid/os/Message;)V
 
@@ -211,8 +201,6 @@
 
 .method static synthetic access$1200(Landroid/net/wifi/WifiApConfigStore;Landroid/os/Message;)V
     .locals 0
-    .param p0    # Landroid/net/wifi/WifiApConfigStore;
-    .param p1    # Landroid/os/Message;
 
     invoke-virtual {p0, p1}, Landroid/net/wifi/WifiApConfigStore;->deferMessage(Landroid/os/Message;)V
 
@@ -221,7 +209,6 @@
 
 .method static synthetic access$200(Landroid/net/wifi/WifiApConfigStore;)Lcom/android/internal/util/AsyncChannel;
     .locals 1
-    .param p0    # Landroid/net/wifi/WifiApConfigStore;
 
     iget-object v0, p0, Landroid/net/wifi/WifiApConfigStore;->mReplyChannel:Lcom/android/internal/util/AsyncChannel;
 
@@ -230,8 +217,6 @@
 
 .method static synthetic access$300(Landroid/net/wifi/WifiApConfigStore;Landroid/os/Message;)V
     .locals 0
-    .param p0    # Landroid/net/wifi/WifiApConfigStore;
-    .param p1    # Landroid/os/Message;
 
     invoke-virtual {p0, p1}, Landroid/net/wifi/WifiApConfigStore;->deferMessage(Landroid/os/Message;)V
 
@@ -240,7 +225,6 @@
 
 .method static synthetic access$400(Landroid/net/wifi/WifiApConfigStore;)Lcom/android/internal/util/State;
     .locals 1
-    .param p0    # Landroid/net/wifi/WifiApConfigStore;
 
     iget-object v0, p0, Landroid/net/wifi/WifiApConfigStore;->mActiveState:Lcom/android/internal/util/State;
 
@@ -249,8 +233,6 @@
 
 .method static synthetic access$500(Landroid/net/wifi/WifiApConfigStore;Lcom/android/internal/util/IState;)V
     .locals 0
-    .param p0    # Landroid/net/wifi/WifiApConfigStore;
-    .param p1    # Lcom/android/internal/util/IState;
 
     invoke-virtual {p0, p1}, Landroid/net/wifi/WifiApConfigStore;->transitionTo(Lcom/android/internal/util/IState;)V
 
@@ -259,7 +241,6 @@
 
 .method static synthetic access$600(Landroid/net/wifi/WifiApConfigStore;)V
     .locals 0
-    .param p0    # Landroid/net/wifi/WifiApConfigStore;
 
     invoke-direct {p0}, Landroid/net/wifi/WifiApConfigStore;->setDefaultApConfiguration()V
 
@@ -268,8 +249,6 @@
 
 .method static synthetic access$700(Landroid/net/wifi/WifiApConfigStore;Landroid/net/wifi/WifiConfiguration;)V
     .locals 0
-    .param p0    # Landroid/net/wifi/WifiApConfigStore;
-    .param p1    # Landroid/net/wifi/WifiConfiguration;
 
     invoke-direct {p0, p1}, Landroid/net/wifi/WifiApConfigStore;->writeApConfiguration(Landroid/net/wifi/WifiConfiguration;)V
 
@@ -278,8 +257,6 @@
 
 .method static synthetic access$800(Landroid/net/wifi/WifiApConfigStore;Landroid/os/Message;)V
     .locals 0
-    .param p0    # Landroid/net/wifi/WifiApConfigStore;
-    .param p1    # Landroid/os/Message;
 
     invoke-virtual {p0, p1}, Landroid/net/wifi/WifiApConfigStore;->deferMessage(Landroid/os/Message;)V
 
@@ -288,7 +265,6 @@
 
 .method static synthetic access$900(Landroid/net/wifi/WifiApConfigStore;)Lcom/android/internal/util/State;
     .locals 1
-    .param p0    # Landroid/net/wifi/WifiApConfigStore;
 
     iget-object v0, p0, Landroid/net/wifi/WifiApConfigStore;->mInactiveState:Lcom/android/internal/util/State;
 
@@ -297,7 +273,6 @@
 
 .method private getIMEI(I)Ljava/lang/String;
     .locals 5
-    .param p1    # I
 
     iget-object v3, p0, Landroid/net/wifi/WifiApConfigStore;->mContext:Landroid/content/Context;
 
@@ -356,7 +331,6 @@
 
 .method private getLastIMEI(I)Ljava/lang/String;
     .locals 5
-    .param p1    # I
 
     iget-object v3, p0, Landroid/net/wifi/WifiApConfigStore;->mContext:Landroid/content/Context;
 
@@ -678,8 +652,6 @@
 
 .method private getRandomAlphabet(IJ)Ljava/lang/String;
     .locals 7
-    .param p1    # I
-    .param p2    # J
 
     new-instance v0, Ljava/lang/String;
 
@@ -747,8 +719,6 @@
 
 .method private getRandomDigits(IJ)Ljava/lang/String;
     .locals 10
-    .param p1    # I
-    .param p2    # J
 
     const-wide/16 v6, 0x1
 
@@ -843,8 +813,6 @@
 
 .method private getRandomSymbol(IJ)Ljava/lang/String;
     .locals 7
-    .param p1    # I
-    .param p2    # J
 
     new-instance v4, Ljava/lang/String;
 
@@ -912,8 +880,6 @@
 
 .method private getTelephonyNumber(IZ)Ljava/lang/String;
     .locals 6
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v3, 0x0
 
@@ -987,8 +953,6 @@
 
 .method public static makeWifiApConfigStore(Landroid/content/Context;Landroid/os/Handler;)Landroid/net/wifi/WifiApConfigStore;
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/os/Handler;
 
     new-instance v0, Landroid/net/wifi/WifiApConfigStore;
 
@@ -1001,7 +965,6 @@
 
 .method private parseSecProductFeaturePassword(Z)Ljava/lang/String;
     .locals 14
-    .param p1    # Z
 
     const-wide/16 v12, 0x0
 
@@ -1389,8 +1352,6 @@
 
 .method private parseSecProductFeatureSsid(Ljava/lang/String;Z)Ljava/lang/String;
     .locals 12
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     new-instance v8, Ljava/lang/StringBuilder;
 
@@ -2056,7 +2017,6 @@
 
 .method private writeApConfiguration(Landroid/net/wifi/WifiConfiguration;)V
     .locals 7
-    .param p1    # Landroid/net/wifi/WifiConfiguration;
 
     const/4 v2, 0x0
 

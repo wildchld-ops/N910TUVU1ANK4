@@ -53,15 +53,6 @@
 # direct methods
 .method constructor <init>(IIIIFFLandroid/speech/tts/TextToSpeechService$UtteranceProgressDispatcher;Ljava/lang/Object;Landroid/speech/tts/EventLogger;)V
     .locals 8
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # F
-    .param p6    # F
-    .param p7    # Landroid/speech/tts/TextToSpeechService$UtteranceProgressDispatcher;
-    .param p8    # Ljava/lang/Object;
-    .param p9    # Landroid/speech/tts/EventLogger;
 
     move-object/from16 v0, p8
 
@@ -285,7 +276,6 @@
 
 .method put([B)V
     .locals 4
-    .param p1    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/InterruptedException;
@@ -453,7 +443,6 @@
 
 .method stop(Z)V
     .locals 2
-    .param p1    # Z
 
     :try_start_0
     iget-object v0, p0, Landroid/speech/tts/SynthesisPlaybackQueueItem;->mListLock:Ljava/util/concurrent/locks/Lock;

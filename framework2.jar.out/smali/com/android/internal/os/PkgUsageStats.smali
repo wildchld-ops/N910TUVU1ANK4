@@ -54,7 +54,6 @@
 
 .method public constructor <init>(Landroid/os/Parcel;)V
     .locals 7
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -117,7 +116,6 @@
 
 .method public constructor <init>(Lcom/android/internal/os/PkgUsageStats;)V
     .locals 2
-    .param p1    # Lcom/android/internal/os/PkgUsageStats;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -146,9 +144,6 @@
 
 .method public constructor <init>(Ljava/lang/String;IJLjava/util/Map;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -241,8 +236,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 4
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v2, p0, Lcom/android/internal/os/PkgUsageStats;->packageName:Ljava/lang/String;
 

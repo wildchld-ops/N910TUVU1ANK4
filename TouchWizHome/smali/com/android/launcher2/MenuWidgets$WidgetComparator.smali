@@ -52,7 +52,6 @@
 
 .method synthetic constructor <init>(Lcom/android/launcher2/MenuWidgets$1;)V
     .locals 0
-    .param p1    # Lcom/android/launcher2/MenuWidgets$1;
 
     invoke-direct {p0}, Lcom/android/launcher2/MenuWidgets$WidgetComparator;-><init>()V
 
@@ -63,8 +62,6 @@
 # virtual methods
 .method public compare(Lcom/android/launcher2/AvailableWidget;Lcom/android/launcher2/AvailableWidget;)I
     .locals 3
-    .param p1    # Lcom/android/launcher2/AvailableWidget;
-    .param p2    # Lcom/android/launcher2/AvailableWidget;
 
     iget-object v0, p0, Lcom/android/launcher2/MenuWidgets$WidgetComparator;->mCollator:Ljava/text/Collator;
 
@@ -85,8 +82,6 @@
 
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p1, Lcom/android/launcher2/AvailableWidget;
 

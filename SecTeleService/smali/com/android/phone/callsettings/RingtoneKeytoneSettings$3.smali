@@ -103,7 +103,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v3, v5}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v3, v5}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     goto :goto_1
 
@@ -124,7 +124,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v3, v5}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v3, v5}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     goto :goto_1
 
@@ -147,7 +147,7 @@
 
     const/4 v4, 0x1
 
-    invoke-virtual {v3, v4}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v3, v4}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     goto :goto_1
 

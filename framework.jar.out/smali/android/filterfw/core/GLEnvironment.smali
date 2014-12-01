@@ -36,7 +36,6 @@
 
 .method private constructor <init>(Landroid/filterfw/core/NativeAllocatorTag;)V
     .locals 1
-    .param p1    # Landroid/filterfw/core/NativeAllocatorTag;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -164,7 +163,6 @@
 
 .method public activateSurfaceWithId(I)V
     .locals 3
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/filterfw/core/GLEnvironment;->nativeActivateSurfaceId(I)Z
 
@@ -316,7 +314,6 @@
 
 .method public registerSurface(Landroid/view/Surface;)I
     .locals 4
-    .param p1    # Landroid/view/Surface;
 
     invoke-direct {p0, p1}, Landroid/filterfw/core/GLEnvironment;->nativeAddSurface(Landroid/view/Surface;)I
 
@@ -360,7 +357,6 @@
 
 .method public registerSurfaceFromMediaRecorder(Landroid/media/MediaRecorder;)I
     .locals 4
-    .param p1    # Landroid/media/MediaRecorder;
 
     invoke-direct {p0, p1}, Landroid/filterfw/core/GLEnvironment;->nativeAddSurfaceFromMediaRecorder(Landroid/media/MediaRecorder;)I
 
@@ -404,9 +400,6 @@
 
 .method public registerSurfaceTexture(Landroid/graphics/SurfaceTexture;II)I
     .locals 5
-    .param p1    # Landroid/graphics/SurfaceTexture;
-    .param p2    # I
-    .param p3    # I
 
     new-instance v1, Landroid/view/Surface;
 
@@ -456,7 +449,6 @@
 
 .method public setSurfaceTimestamp(J)V
     .locals 2
-    .param p1    # J
 
     invoke-direct {p0, p1, p2}, Landroid/filterfw/core/GLEnvironment;->nativeSetSurfaceTimestamp(J)Z
 
@@ -532,7 +524,6 @@
 
 .method public unregisterSurfaceId(I)V
     .locals 3
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/filterfw/core/GLEnvironment;->nativeRemoveSurfaceId(I)Z
 

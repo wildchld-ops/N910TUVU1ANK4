@@ -53,7 +53,7 @@
 
     invoke-direct {v0, v1}, Landroid/os/HandlerThread;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v0}, Ljava/lang/Thread;->start()V
+    invoke-virtual {v0}, Landroid/os/HandlerThread;->start()V
 
     new-instance v1, Lcom/android/phone/ContactsAsyncHelper$WorkerHandler;
 

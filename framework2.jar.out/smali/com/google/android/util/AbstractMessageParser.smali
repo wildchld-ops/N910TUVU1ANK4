@@ -86,7 +86,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x1
 
@@ -111,13 +110,6 @@
 
 .method public constructor <init>(Ljava/lang/String;ZZZZZZ)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # Z
-    .param p4    # Z
-    .param p5    # Z
-    .param p6    # Z
-    .param p7    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -166,7 +158,6 @@
 
 .method private addToken(Lcom/google/android/util/AbstractMessageParser$Token;)V
     .locals 1
-    .param p1    # Lcom/google/android/util/AbstractMessageParser$Token;
 
     iget-object v0, p0, Lcom/google/android/util/AbstractMessageParser;->tokens:Ljava/util/ArrayList;
 
@@ -177,8 +168,6 @@
 
 .method private addURLToken(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-static {p1, p2}, Lcom/google/android/util/AbstractMessageParser;->tokenForUrl(Ljava/lang/String;Ljava/lang/String;)Lcom/google/android/util/AbstractMessageParser$Token;
 
@@ -191,7 +180,6 @@
 
 .method private buildParts(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -283,7 +271,6 @@
 
 .method private getCharClass(I)I
     .locals 2
-    .param p1    # I
 
     if-ltz p1, :cond_0
 
@@ -363,7 +350,6 @@
 
 .method private isDomainChar(C)Z
     .locals 1
-    .param p1    # C
 
     const/16 v0, 0x2d
 
@@ -395,7 +381,6 @@
 
 .method private static isFormatChar(C)Z
     .locals 1
-    .param p0    # C
 
     sparse-switch p0, :sswitch_data_0
 
@@ -421,7 +406,6 @@
 
 .method private static isPunctuation(C)Z
     .locals 1
-    .param p0    # C
 
     sparse-switch p0, :sswitch_data_0
 
@@ -453,8 +437,6 @@
 
 .method private static isSmileyBreak(CC)Z
     .locals 1
-    .param p0    # C
-    .param p1    # C
 
     sparse-switch p0, :sswitch_data_0
 
@@ -517,7 +499,6 @@
 
 .method private isSmileyBreak(I)Z
     .locals 2
-    .param p1    # I
 
     if-lez p1, :cond_0
 
@@ -562,7 +543,6 @@
 
 .method private isURLBreak(I)Z
     .locals 1
-    .param p1    # I
 
     add-int/lit8 v0, p1, -0x1
 
@@ -594,7 +574,6 @@
 
 .method private isValidDomain(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Lcom/google/android/util/AbstractMessageParser;->getResources()Lcom/google/android/util/AbstractMessageParser$Resources;
 
@@ -627,7 +606,6 @@
 
 .method private isWordBreak(I)Z
     .locals 2
-    .param p1    # I
 
     add-int/lit8 v0, p1, -0x1
 
@@ -676,9 +654,6 @@
 
 .method private static longestMatch(Lcom/google/android/util/AbstractMessageParser$TrieNode;Lcom/google/android/util/AbstractMessageParser;I)Lcom/google/android/util/AbstractMessageParser$TrieNode;
     .locals 1
-    .param p0    # Lcom/google/android/util/AbstractMessageParser$TrieNode;
-    .param p1    # Lcom/google/android/util/AbstractMessageParser;
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -691,10 +666,6 @@
 
 .method private static longestMatch(Lcom/google/android/util/AbstractMessageParser$TrieNode;Lcom/google/android/util/AbstractMessageParser;IZ)Lcom/google/android/util/AbstractMessageParser$TrieNode;
     .locals 4
-    .param p0    # Lcom/google/android/util/AbstractMessageParser$TrieNode;
-    .param p1    # Lcom/google/android/util/AbstractMessageParser;
-    .param p2    # I
-    .param p3    # Z
 
     move v1, p2
 
@@ -774,8 +745,6 @@
 
 .method private static matches(Lcom/google/android/util/AbstractMessageParser$TrieNode;Ljava/lang/String;)Z
     .locals 3
-    .param p0    # Lcom/google/android/util/AbstractMessageParser$TrieNode;
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -1704,7 +1673,6 @@
 
 .method protected static reverse(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -1739,8 +1707,6 @@
 
 .method public static tokenForUrl(Ljava/lang/String;Ljava/lang/String;)Lcom/google/android/util/AbstractMessageParser$Token;
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     if-nez p0, :cond_1
 
@@ -1801,7 +1767,6 @@
 # virtual methods
 .method public final getPart(I)Lcom/google/android/util/AbstractMessageParser$Part;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/google/android/util/AbstractMessageParser;->parts:Ljava/util/ArrayList;
 

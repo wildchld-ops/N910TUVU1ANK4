@@ -195,17 +195,12 @@
 
 .method protected onListItemClick(Landroid/widget/ListView;Landroid/view/View;IJ)V
     .locals 0
-    .param p1    # Landroid/widget/ListView;
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
 
     return-void
 .end method
 
 .method protected onRestoreInstanceState(Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     invoke-direct {p0}, Landroid/app/ListActivity;->ensureList()V
 
@@ -216,7 +211,6 @@
 
 .method public setListAdapter(Landroid/widget/ListAdapter;)V
     .locals 1
-    .param p1    # Landroid/widget/ListAdapter;
 
     monitor-enter p0
 
@@ -245,7 +239,6 @@
 
 .method public setSelection(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/app/ListActivity;->mList:Landroid/widget/ListView;
 

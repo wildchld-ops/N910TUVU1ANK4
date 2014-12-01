@@ -41,8 +41,6 @@
 
 .method synthetic constructor <init>(Landroid/widget/Spinner;Landroid/widget/Spinner$1;)V
     .locals 0
-    .param p1    # Landroid/widget/Spinner;
-    .param p2    # Landroid/widget/Spinner$1;
 
     invoke-direct {p0, p1}, Landroid/widget/Spinner$DialogPopup;-><init>(Landroid/widget/Spinner;)V
 
@@ -129,8 +127,6 @@
 
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 4
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     iget-object v0, p0, Landroid/widget/Spinner$DialogPopup;->this$0:Landroid/widget/Spinner;
 
@@ -162,7 +158,6 @@
 
 .method public setAdapter(Landroid/widget/ListAdapter;)V
     .locals 0
-    .param p1    # Landroid/widget/ListAdapter;
 
     iput-object p1, p0, Landroid/widget/Spinner$DialogPopup;->mListAdapter:Landroid/widget/ListAdapter;
 
@@ -171,7 +166,6 @@
 
 .method public setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
     .locals 2
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     const-string v0, "Spinner"
 
@@ -184,7 +178,6 @@
 
 .method public setHorizontalOffset(I)V
     .locals 2
-    .param p1    # I
 
     const-string v0, "Spinner"
 
@@ -197,7 +190,6 @@
 
 .method public setPromptText(Ljava/lang/CharSequence;)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
 
     iput-object p1, p0, Landroid/widget/Spinner$DialogPopup;->mPrompt:Ljava/lang/CharSequence;
 
@@ -206,7 +198,6 @@
 
 .method public setVerticalOffset(I)V
     .locals 2
-    .param p1    # I
 
     const-string v0, "Spinner"
 
@@ -219,8 +210,6 @@
 
 .method public show(II)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     iget-object v2, p0, Landroid/widget/Spinner$DialogPopup;->mListAdapter:Landroid/widget/ListAdapter;
 

@@ -351,10 +351,6 @@
 
 .method private constructor <init>(Landroid/database/sqlite/SQLiteConnectionPool;Landroid/database/sqlite/SQLiteDatabaseConfiguration;IZ)V
     .locals 2
-    .param p1    # Landroid/database/sqlite/SQLiteConnectionPool;
-    .param p2    # Landroid/database/sqlite/SQLiteDatabaseConfiguration;
-    .param p3    # I
-    .param p4    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -421,8 +417,6 @@
 
 .method static synthetic access$200(Landroid/database/sqlite/SQLiteConnection;Landroid/database/sqlite/SQLiteConnection$PreparedStatement;)V
     .locals 0
-    .param p0    # Landroid/database/sqlite/SQLiteConnection;
-    .param p1    # Landroid/database/sqlite/SQLiteConnection$PreparedStatement;
 
     invoke-direct {p0, p1}, Landroid/database/sqlite/SQLiteConnection;->finalizePreparedStatement(Landroid/database/sqlite/SQLiteConnection$PreparedStatement;)V
 
@@ -431,7 +425,6 @@
 
 .method static synthetic access$300(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Landroid/database/sqlite/SQLiteConnection;->trimSqlForDisplay(Ljava/lang/String;)Ljava/lang/String;
 
@@ -450,7 +443,6 @@
 
 .method private acquirePreparedStatement(Ljava/lang/String;)Landroid/database/sqlite/SQLiteConnection$PreparedStatement;
     .locals 11
-    .param p1    # Ljava/lang/String;
 
     const/4 v10, 0x1
 
@@ -555,7 +547,6 @@
 
 .method private applyBlockGuardPolicy(Landroid/database/sqlite/SQLiteConnection$PreparedStatement;)V
     .locals 1
-    .param p1    # Landroid/database/sqlite/SQLiteConnection$PreparedStatement;
 
     iget-object v0, p0, Landroid/database/sqlite/SQLiteConnection;->mConfiguration:Landroid/database/sqlite/SQLiteDatabaseConfiguration;
 
@@ -591,7 +582,6 @@
 
 .method private attachCancellationSignal(Landroid/os/CancellationSignal;)V
     .locals 2
-    .param p1    # Landroid/os/CancellationSignal;
 
     const/4 v1, 0x1
 
@@ -621,8 +611,6 @@
 
 .method private bindArguments(Landroid/database/sqlite/SQLiteConnection$PreparedStatement;[Ljava/lang/Object;)V
     .locals 8
-    .param p1    # Landroid/database/sqlite/SQLiteConnection$PreparedStatement;
-    .param p2    # [Ljava/lang/Object;
 
     if-eqz p2, :cond_0
 
@@ -811,7 +799,6 @@
 
 .method private static canonicalizeSyncMode(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "0"
 
@@ -856,7 +843,6 @@
 
 .method private checkBranchDB(Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     sget-object v0, Landroid/database/sqlite/SQLiteConnection;->branch_dbs:[Ljava/lang/String;
 
@@ -897,7 +883,6 @@
 
 .method private checkBypassDB(Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     sget-object v0, Landroid/database/sqlite/SQLiteConnection;->bypass_dbs:[Ljava/lang/String;
 
@@ -934,7 +919,6 @@
 
 .method private checkPreloadDB(Ljava/lang/String;)Z
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x1
 
@@ -1004,7 +988,6 @@
 
 .method private checkWalDB(Ljava/lang/String;)Z
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x1
 
@@ -1074,7 +1057,6 @@
 
 .method private decode(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -1099,7 +1081,6 @@
 
 .method private detachCancellationSignal(Landroid/os/CancellationSignal;)V
     .locals 2
-    .param p1    # Landroid/os/CancellationSignal;
 
     if-eqz p1, :cond_1
 
@@ -1144,7 +1125,6 @@
 
 .method private dispose(Z)V
     .locals 4
-    .param p1    # Z
 
     const/4 v3, 0x0
 
@@ -1210,7 +1190,6 @@
 
 .method private finalizePreparedStatement(Landroid/database/sqlite/SQLiteConnection$PreparedStatement;)V
     .locals 2
-    .param p1    # Landroid/database/sqlite/SQLiteConnection$PreparedStatement;
 
     iget v0, p0, Landroid/database/sqlite/SQLiteConnection;->mConnectionPtr:I
 
@@ -1225,9 +1204,6 @@
 
 .method private getMainDbStatsUnsafe(IJJ)Landroid/database/sqlite/SQLiteDebug$DbStats;
     .locals 10
-    .param p1    # I
-    .param p2    # J
-    .param p4    # J
 
     iget-object v0, p0, Landroid/database/sqlite/SQLiteConnection;->mConfiguration:Landroid/database/sqlite/SQLiteDatabaseConfiguration;
 
@@ -1301,7 +1277,6 @@
 
 .method private static isCacheable(I)Z
     .locals 2
-    .param p0    # I
 
     const/4 v0, 0x1
 
@@ -1413,11 +1388,6 @@
 
 .method private obtainPreparedStatement(Ljava/lang/String;IIIZ)Landroid/database/sqlite/SQLiteConnection$PreparedStatement;
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Z
 
     const/4 v2, 0x0
 
@@ -1458,10 +1428,6 @@
 
 .method static open(Landroid/database/sqlite/SQLiteConnectionPool;Landroid/database/sqlite/SQLiteDatabaseConfiguration;IZ)Landroid/database/sqlite/SQLiteConnection;
     .locals 3
-    .param p0    # Landroid/database/sqlite/SQLiteConnectionPool;
-    .param p1    # Landroid/database/sqlite/SQLiteDatabaseConfiguration;
-    .param p2    # I
-    .param p3    # Z
 
     new-instance v0, Landroid/database/sqlite/SQLiteConnection;
 
@@ -1685,7 +1651,6 @@
 
 .method private open([B)V
     .locals 5
-    .param p1    # [B
 
     iget-object v0, p0, Landroid/database/sqlite/SQLiteConnection;->mConfiguration:Landroid/database/sqlite/SQLiteDatabaseConfiguration;
 
@@ -1714,11 +1679,6 @@
 
 .method static openSecure(Landroid/database/sqlite/SQLiteConnectionPool;Landroid/database/sqlite/SQLiteDatabaseConfiguration;IZ[B)Landroid/database/sqlite/SQLiteConnection;
     .locals 3
-    .param p0    # Landroid/database/sqlite/SQLiteConnectionPool;
-    .param p1    # Landroid/database/sqlite/SQLiteDatabaseConfiguration;
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # [B
 
     new-instance v0, Landroid/database/sqlite/SQLiteConnection;
 
@@ -1745,7 +1705,6 @@
 
 .method private recyclePreparedStatement(Landroid/database/sqlite/SQLiteConnection$PreparedStatement;)V
     .locals 1
-    .param p1    # Landroid/database/sqlite/SQLiteConnection$PreparedStatement;
 
     const/4 v0, 0x0
 
@@ -1762,7 +1721,6 @@
 
 .method private releasePreparedStatement(Landroid/database/sqlite/SQLiteConnection$PreparedStatement;)V
     .locals 3
-    .param p1    # Landroid/database/sqlite/SQLiteConnection$PreparedStatement;
 
     const/4 v1, 0x0
 
@@ -1860,7 +1818,6 @@
 
 .method private setAutoCheckpointInterval(J)V
     .locals 7
-    .param p1    # J
 
     const/4 v6, 0x0
 
@@ -1971,7 +1928,6 @@
 
 .method private setJournalMode(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -2162,7 +2118,6 @@
 
 .method private setJournalSizeLimit(J)V
     .locals 7
-    .param p1    # J
 
     const/4 v6, 0x0
 
@@ -2477,7 +2432,6 @@
 
 .method private setSyncMode(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -2582,7 +2536,6 @@
 
 .method private throwIfStatementForbidden(Landroid/database/sqlite/SQLiteConnection$PreparedStatement;)V
     .locals 2
-    .param p1    # Landroid/database/sqlite/SQLiteConnection$PreparedStatement;
 
     iget-boolean v0, p0, Landroid/database/sqlite/SQLiteConnection;->mOnlyAllowReadOnlyOperations:Z
 
@@ -2606,7 +2559,6 @@
 
 .method private static trimSqlForDisplay(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     sget-object v0, Landroid/database/sqlite/SQLiteConnection;->TRIM_SQL_PATTERN:Ljava/util/regex/Pattern;
 
@@ -2627,7 +2579,6 @@
 # virtual methods
 .method public changePassword([B)V
     .locals 1
-    .param p1    # [B
 
     iget v0, p0, Landroid/database/sqlite/SQLiteConnection;->mConnectionPtr:I
 
@@ -2990,8 +2941,6 @@
 
 .method public dump(Landroid/util/Printer;Z)V
     .locals 0
-    .param p1    # Landroid/util/Printer;
-    .param p2    # Z
 
     invoke-virtual {p0, p1, p2}, Landroid/database/sqlite/SQLiteConnection;->dumpUnsafe(Landroid/util/Printer;Z)V
 
@@ -3000,8 +2949,6 @@
 
 .method dumpUnsafe(Landroid/util/Printer;Z)V
     .locals 2
-    .param p1    # Landroid/util/Printer;
-    .param p2    # Z
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -3120,9 +3067,6 @@
 
 .method public execute(Ljava/lang/String;[Ljava/lang/Object;Landroid/os/CancellationSignal;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/Object;
-    .param p3    # Landroid/os/CancellationSignal;
 
     if-nez p1, :cond_0
 
@@ -3233,9 +3177,6 @@
 
 .method public executeForBlobFileDescriptor(Ljava/lang/String;[Ljava/lang/Object;Landroid/os/CancellationSignal;)Landroid/os/ParcelFileDescriptor;
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/Object;
-    .param p3    # Landroid/os/CancellationSignal;
 
     if-nez p1, :cond_0
 
@@ -3360,9 +3301,6 @@
 
 .method public executeForChangedRowCount(Ljava/lang/String;[Ljava/lang/Object;Landroid/os/CancellationSignal;)I
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/Object;
-    .param p3    # Landroid/os/CancellationSignal;
 
     if-nez p1, :cond_0
 
@@ -3531,13 +3469,6 @@
 
 .method public executeForCursorWindow(Ljava/lang/String;[Ljava/lang/Object;Landroid/database/CursorWindow;IIZLandroid/os/CancellationSignal;)I
     .locals 16
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/Object;
-    .param p3    # Landroid/database/CursorWindow;
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Z
-    .param p7    # Landroid/os/CancellationSignal;
 
     if-nez p1, :cond_0
 
@@ -3897,9 +3828,6 @@
 
 .method public executeForLastInsertedRowId(Ljava/lang/String;[Ljava/lang/Object;Landroid/os/CancellationSignal;)J
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/Object;
-    .param p3    # Landroid/os/CancellationSignal;
 
     if-nez p1, :cond_0
 
@@ -4012,9 +3940,6 @@
 
 .method public executeForLong(Ljava/lang/String;[Ljava/lang/Object;Landroid/os/CancellationSignal;)J
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/Object;
-    .param p3    # Landroid/os/CancellationSignal;
 
     if-nez p1, :cond_0
 
@@ -4127,9 +4052,6 @@
 
 .method public executeForString(Ljava/lang/String;[Ljava/lang/Object;Landroid/os/CancellationSignal;)Ljava/lang/String;
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/Object;
-    .param p3    # Landroid/os/CancellationSignal;
 
     if-nez p1, :cond_0
 
@@ -4242,7 +4164,6 @@
 
 .method public exportDB(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget v0, p0, Landroid/database/sqlite/SQLiteConnection;->mConnectionPtr:I
 
@@ -4301,7 +4222,6 @@
 
 .method isPreparedStatementInCache(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/database/sqlite/SQLiteConnection;->mPreparedStatementCache:Landroid/database/sqlite/SQLiteConnection$PreparedStatementCache;
 
@@ -4342,8 +4262,6 @@
 
 .method public prepare(Ljava/lang/String;Landroid/database/sqlite/SQLiteStatementInfo;)V
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/database/sqlite/SQLiteStatementInfo;
 
     if-nez p1, :cond_0
 
@@ -4478,7 +4396,6 @@
 
 .method reconfigure(Landroid/database/sqlite/SQLiteDatabaseConfiguration;)V
     .locals 10
-    .param p1    # Landroid/database/sqlite/SQLiteDatabaseConfiguration;
 
     const/4 v6, 0x1
 
@@ -4613,7 +4530,6 @@
 
 .method setOnlyAllowReadOnlyOperations(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/database/sqlite/SQLiteConnection;->mOnlyAllowReadOnlyOperations:Z
 
@@ -4622,7 +4538,6 @@
 
 .method public setPassword([B)V
     .locals 1
-    .param p1    # [B
 
     iget v0, p0, Landroid/database/sqlite/SQLiteConnection;->mConnectionPtr:I
 

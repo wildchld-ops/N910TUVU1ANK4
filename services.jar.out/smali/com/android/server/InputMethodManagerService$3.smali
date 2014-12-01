@@ -33,7 +33,6 @@
 # virtual methods
 .method public onUserSwitchComplete(I)V
     .locals 0
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -45,8 +44,6 @@
 
 .method public onUserSwitching(ILandroid/os/IRemoteCallback;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/os/IRemoteCallback;
 
     iget-object v0, p0, Lcom/android/server/InputMethodManagerService$3;->this$0:Lcom/android/server/InputMethodManagerService;
 

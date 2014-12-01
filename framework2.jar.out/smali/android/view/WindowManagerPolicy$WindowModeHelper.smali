@@ -25,7 +25,6 @@
 
 .method public static mode(I)I
     .locals 1
-    .param p0    # I
 
     const/high16 v0, -0x1000000
 
@@ -36,7 +35,6 @@
 
 .method public static option(I)I
     .locals 1
-    .param p0    # I
 
     const v0, 0xffffff
 
@@ -47,8 +45,6 @@
 
 .method public static setWindowMode(II)I
     .locals 1
-    .param p0    # I
-    .param p1    # I
 
     const/high16 v0, 0x4c0000
 
@@ -65,7 +61,6 @@
 
 .method public static zone(I)I
     .locals 1
-    .param p0    # I
 
     and-int/lit8 v0, p0, 0xf
 
@@ -74,7 +69,6 @@
 
 .method public static zonePolicy(I)I
     .locals 1
-    .param p0    # I
 
     const/high16 v0, 0x30000
 

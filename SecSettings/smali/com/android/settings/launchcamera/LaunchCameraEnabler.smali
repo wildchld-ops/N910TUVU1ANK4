@@ -15,8 +15,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/widget/Switch;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/widget/Switch;
 
     invoke-direct {p0}, Landroid/preference/PreferenceActivity;-><init>()V
 
@@ -31,8 +29,6 @@
 # virtual methods
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 3
-    .param p1    # Landroid/widget/CompoundButton;
-    .param p2    # Z
 
     const-string v0, "LaunchCameraEnabler"
 
@@ -134,7 +130,6 @@
 
 .method public setSwitch(Landroid/widget/Switch;)V
     .locals 4
-    .param p1    # Landroid/widget/Switch;
 
     const/4 v0, 0x0
 

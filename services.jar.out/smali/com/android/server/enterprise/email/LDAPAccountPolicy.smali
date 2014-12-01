@@ -46,7 +46,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Landroid/app/enterprise/ILDAPAccountPolicy$Stub;-><init>()V
 
@@ -73,8 +72,6 @@
 
 .method static synthetic access$000(Lcom/android/server/enterprise/email/LDAPAccountPolicy;I)Landroid/os/UserHandle;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/email/LDAPAccountPolicy;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/email/LDAPAccountPolicy;->getUserHandle(I)Landroid/os/UserHandle;
 
@@ -85,8 +82,6 @@
 
 .method static synthetic access$100(Lcom/android/server/enterprise/email/LDAPAccountPolicy;I)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/email/LDAPAccountPolicy;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/email/LDAPAccountPolicy;->getUserContext(I)Landroid/content/Context;
 
@@ -97,8 +92,6 @@
 
 .method static synthetic access$200(Lcom/android/server/enterprise/email/LDAPAccountPolicy;I)Z
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/email/LDAPAccountPolicy;
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;
@@ -114,8 +107,6 @@
 
 .method private bindLDAPInterfaceService(II)V
     .locals 12
-    .param p1    # I
-    .param p2    # I
 
     const-string v9, "LDAPAccountPolicyService"
 
@@ -249,7 +240,6 @@
 
 .method private enforceLDAPPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/email/LDAPAccountPolicy;->getEDM()Landroid/app/enterprise/EnterpriseDeviceManager;
 
@@ -266,7 +256,6 @@
 
 .method private getConnection(I)Landroid/content/ServiceConnection;
     .locals 1
-    .param p1    # I
 
     new-instance v0, Lcom/android/server/enterprise/email/LDAPAccountPolicy$LDAPConnection;
 
@@ -312,7 +301,6 @@
 
 .method private getUserContext(I)Landroid/content/Context;
     .locals 6
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/email/LDAPAccountPolicy;->getUserHandle(I)Landroid/os/UserHandle;
 
@@ -443,7 +431,6 @@
 
 .method private getUserHandle(I)Landroid/os/UserHandle;
     .locals 4
-    .param p1    # I
 
     new-instance v0, Landroid/os/UserHandle;
 
@@ -476,8 +463,6 @@
 
 .method private registerLDAPInterfaceReceiver(Landroid/content/Context;I)Landroid/content/BroadcastReceiver;
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;
@@ -533,7 +518,6 @@
 
 .method private unregisterReceiver(I)Z
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;
@@ -593,8 +577,6 @@
 # virtual methods
 .method public declared-synchronized createLDAPAccount(Landroid/app/enterprise/ContextInfo;Landroid/app/enterprise/LDAPAccount;)V
     .locals 12
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Landroid/app/enterprise/LDAPAccount;
 
     monitor-enter p0
 
@@ -791,8 +773,6 @@
 
 .method public declared-synchronized deleteLDAPAccount(Landroid/app/enterprise/ContextInfo;J)Z
     .locals 10
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # J
 
     const/4 v7, 0x0
 
@@ -939,7 +919,6 @@
 
 .method public getAllLDAPAccounts(Landroid/app/enterprise/ContextInfo;)Ljava/util/List;
     .locals 9
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1055,8 +1034,6 @@
 
 .method public getLDAPAccount(Landroid/app/enterprise/ContextInfo;J)Landroid/app/enterprise/LDAPAccount;
     .locals 10
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # J
 
     const/4 v7, 0x0
 
@@ -1175,21 +1152,18 @@
 
 .method public onAdminAdded(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onAdminRemoved(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onPreAdminRemoval(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method

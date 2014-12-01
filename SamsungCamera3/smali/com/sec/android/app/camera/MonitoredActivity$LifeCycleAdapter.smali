@@ -30,28 +30,24 @@
 # virtual methods
 .method public onActivityCreated(Lcom/sec/android/app/camera/MonitoredActivity;)V
     .locals 0
-    .param p1    # Lcom/sec/android/app/camera/MonitoredActivity;
 
     return-void
 .end method
 
 .method public onActivityDestroyed(Lcom/sec/android/app/camera/MonitoredActivity;)V
     .locals 0
-    .param p1    # Lcom/sec/android/app/camera/MonitoredActivity;
 
     return-void
 .end method
 
 .method public onActivityStarted(Lcom/sec/android/app/camera/MonitoredActivity;)V
     .locals 0
-    .param p1    # Lcom/sec/android/app/camera/MonitoredActivity;
 
     return-void
 .end method
 
 .method public onActivityStopped(Lcom/sec/android/app/camera/MonitoredActivity;)V
     .locals 0
-    .param p1    # Lcom/sec/android/app/camera/MonitoredActivity;
 
     return-void
 .end method

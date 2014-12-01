@@ -14,8 +14,6 @@
 
 .method public static attachFile(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -28,9 +26,6 @@
 
 .method public static attachFile(Ljava/lang/String;Ljava/lang/String;J)Landroid/content/Intent;
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
 
     const/4 v0, 0x0
 
@@ -43,10 +38,6 @@
 
 .method public static attachFile(Ljava/lang/String;Ljava/lang/String;JLjava/lang/String;)Landroid/content/Intent;
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
-    .param p4    # Ljava/lang/String;
 
     const-string v1, "com.samsung.rcs.framework.filetransfer.action.ATTACH_FILE"
 
@@ -79,9 +70,6 @@
 
 .method public static attachFile(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const-string v1, "com.samsung.rcs.framework.filetransfer.action.ATTACH_FILE"
 
@@ -110,7 +98,6 @@
 
 .method public static buildAcceptIntent(J)Landroid/content/Intent;
     .locals 1
-    .param p0    # J
 
     const-string v0, "com.samsung.rcs.framework.filetransfer.action.TRANSFER_ACCEPT"
 
@@ -123,8 +110,6 @@
 
 .method public static buildAcceptIntent(JLjava/lang/String;)Landroid/content/Intent;
     .locals 2
-    .param p0    # J
-    .param p2    # Ljava/lang/String;
 
     const-string v1, "com.samsung.rcs.framework.filetransfer.action.TRANSFER_ACCEPT"
 
@@ -141,7 +126,6 @@
 
 .method public static buildCancelIntent(J)Landroid/content/Intent;
     .locals 1
-    .param p0    # J
 
     const-string v0, "com.samsung.rcs.framework.filetransfer.action.TRANSFER_CANCEL"
 
@@ -154,7 +138,6 @@
 
 .method public static buildRejectIntent(J)Landroid/content/Intent;
     .locals 1
-    .param p0    # J
 
     const-string v0, "com.samsung.rcs.framework.filetransfer.action.TRANSFER_DECLINE"
 
@@ -167,7 +150,6 @@
 
 .method public static buildUploadIntent(Ljava/lang/String;)Landroid/content/Intent;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     const-string v1, "com.samsung.rcs.framework.filetransfer.action.TRANSFER_UPLOAD"
 
@@ -184,8 +166,6 @@
 
 .method public static createSendFileRequest(Landroid/net/Uri;Ljava/lang/String;)Landroid/content/Intent;
     .locals 2
-    .param p0    # Landroid/net/Uri;
-    .param p1    # Ljava/lang/String;
 
     const-string v1, "com.samsung.rcs.framework.filetransfer.action.SEND_FILE"
 
@@ -206,9 +186,6 @@
 
 .method public static createSendFileRequest(Landroid/net/Uri;Ljava/lang/String;J)Landroid/content/Intent;
     .locals 2
-    .param p0    # Landroid/net/Uri;
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
 
     const-string v1, "com.samsung.rcs.framework.filetransfer.action.SEND_FILE"
 
@@ -229,10 +206,6 @@
 
 .method public static createSendFileRequestForGroupChat(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;J)Landroid/content/Intent;
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # J
 
     const-string v1, "com.samsung.rcs.framework.filetransfer.action.SEND_FILE_TO_GROUP_CHAT"
 
@@ -257,7 +230,6 @@
 
 .method public static createSendMultipleRequest(Landroid/net/Uri;Ljava/util/ArrayList;)Landroid/content/Intent;
     .locals 2
-    .param p0    # Landroid/net/Uri;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -289,7 +261,6 @@
 
 .method public static deleteSession([J)Landroid/content/Intent;
     .locals 2
-    .param p0    # [J
 
     const-string v1, "com.samsung.rcs.framework.instantmessaging.action.DELETE_MESSAGES"
 
@@ -306,8 +277,6 @@
 
 .method public static groupChatattachFile(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const-string v1, "com.samsung.rcs.framework.filetransfer.action.ATTACH_FILE_TO_GROUP_CHAT"
 
@@ -328,9 +297,6 @@
 
 .method public static groupChatattachFile(Ljava/lang/String;Ljava/lang/String;J)Landroid/content/Intent;
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
 
     const-string v1, "com.samsung.rcs.framework.filetransfer.action.ATTACH_FILE_TO_GROUP_CHAT"
 
@@ -355,7 +321,6 @@
 
 .method private static newFtAction(Ljava/lang/String;)Landroid/content/Intent;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -370,8 +335,6 @@
 
 .method public static newFtAction(Ljava/lang/String;J)Landroid/content/Intent;
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # J
 
     new-instance v0, Landroid/content/Intent;
 
@@ -390,7 +353,6 @@
 
 .method public static resumeIncomingFile(J)Landroid/content/Intent;
     .locals 2
-    .param p0    # J
 
     const-string v1, "com.samsung.rcs.framework.filetransfer.action.RESUME_INCOMING_FILE"
 
@@ -407,7 +369,6 @@
 
 .method public static resumeSendingFile(J)Landroid/content/Intent;
     .locals 2
-    .param p0    # J
 
     const-string v1, "com.samsung.rcs.framework.filetransfer.action.RESUME_SENDING_FILE"
 
@@ -424,7 +385,6 @@
 
 .method public static setFtAutoAcceptInRoaming(Z)Landroid/content/Intent;
     .locals 2
-    .param p0    # Z
 
     const-string v1, "com.samsung.rcs.framework.filetransfer.action.SET_AUTO_ACCEPT_FT_WHILE_IN_ROAMING"
 

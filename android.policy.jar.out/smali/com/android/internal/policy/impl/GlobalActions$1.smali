@@ -33,7 +33,6 @@
 # virtual methods
 .method public onCoverStateChanged(Lcom/samsung/android/cover/CoverState;)V
     .locals 4
-    .param p1    # Lcom/samsung/android/cover/CoverState;
 
     const/4 v3, 0x0
 
@@ -68,7 +67,7 @@
 
     move-result v0
 
-    if-nez v0, :cond_2
+    if-nez v0, :cond_0
 
     # getter for: Lcom/android/internal/policy/impl/GlobalActions;->sIsConfirmingGuard:Ljava/lang/Object;
     invoke-static {}, Lcom/android/internal/policy/impl/GlobalActions;->access$100()Ljava/lang/Object;
@@ -97,72 +96,6 @@
 
     invoke-virtual {v0, v3}, Landroid/os/Handler;->sendEmptyMessage(I)Z
 
-    if-eqz p1, :cond_1
-
-    invoke-virtual {p1}, Lcom/samsung/android/cover/CoverState;->getType()I
-
-    move-result v0
-
-    const/4 v1, 0x6
-
-    if-ne v0, v1, :cond_1
-
-    invoke-virtual {p1}, Lcom/samsung/android/cover/CoverState;->getSwitchState()Z
-
-    move-result v0
-
-    const/4 v1, 0x1
-
-    if-ne v0, v1, :cond_1
-
-    # getter for: Lcom/android/internal/policy/impl/GlobalActions;->mlsShowingMiniDialog:Z
-    invoke-static {}, Lcom/android/internal/policy/impl/GlobalActions;->access$400()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    # setter for: Lcom/android/internal/policy/impl/GlobalActions;->mlsShowingMiniDialog:Z
-    invoke-static {v3}, Lcom/android/internal/policy/impl/GlobalActions;->access$402(Z)Z
-
-    iget-object v0, p0, Lcom/android/internal/policy/impl/GlobalActions$1;->this$0:Lcom/android/internal/policy/impl/GlobalActions;
-
-    # getter for: Lcom/android/internal/policy/impl/GlobalActions;->mDialog:Lcom/android/internal/policy/impl/GlobalActions$GlobalActionsDialog;
-    invoke-static {v0}, Lcom/android/internal/policy/impl/GlobalActions;->access$500(Lcom/android/internal/policy/impl/GlobalActions;)Lcom/android/internal/policy/impl/GlobalActions$GlobalActionsDialog;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lcom/android/internal/policy/impl/GlobalActions$1;->this$0:Lcom/android/internal/policy/impl/GlobalActions;
-
-    # getter for: Lcom/android/internal/policy/impl/GlobalActions;->mDialog:Lcom/android/internal/policy/impl/GlobalActions$GlobalActionsDialog;
-    invoke-static {v0}, Lcom/android/internal/policy/impl/GlobalActions;->access$500(Lcom/android/internal/policy/impl/GlobalActions;)Lcom/android/internal/policy/impl/GlobalActions$GlobalActionsDialog;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Landroid/app/Dialog;->dismiss()V
-
-    iget-object v0, p0, Lcom/android/internal/policy/impl/GlobalActions$1;->this$0:Lcom/android/internal/policy/impl/GlobalActions;
-
-    const/4 v1, 0x0
-
-    # setter for: Lcom/android/internal/policy/impl/GlobalActions;->mDialog:Lcom/android/internal/policy/impl/GlobalActions$GlobalActionsDialog;
-    invoke-static {v0, v1}, Lcom/android/internal/policy/impl/GlobalActions;->access$502(Lcom/android/internal/policy/impl/GlobalActions;Lcom/android/internal/policy/impl/GlobalActions$GlobalActionsDialog;)Lcom/android/internal/policy/impl/GlobalActions$GlobalActionsDialog;
-
-    :cond_0
-    iget-object v0, p0, Lcom/android/internal/policy/impl/GlobalActions$1;->this$0:Lcom/android/internal/policy/impl/GlobalActions;
-
-    # getter for: Lcom/android/internal/policy/impl/GlobalActions;->mHandler:Landroid/os/Handler;
-    invoke-static {v0}, Lcom/android/internal/policy/impl/GlobalActions;->access$300(Lcom/android/internal/policy/impl/GlobalActions;)Landroid/os/Handler;
-
-    move-result-object v0
-
-    const/4 v1, 0x2
-
-    invoke-virtual {v0, v1}, Landroid/os/Handler;->sendEmptyMessage(I)Z
-
-    :cond_1
     return-void
 
     :catchall_0
@@ -175,7 +108,7 @@
 
     throw v0
 
-    :cond_2
+    :cond_0
     # setter for: Lcom/android/internal/policy/impl/GlobalActions;->sIsSecondConfirming:Z
     invoke-static {v3}, Lcom/android/internal/policy/impl/GlobalActions;->access$002(Z)Z
 

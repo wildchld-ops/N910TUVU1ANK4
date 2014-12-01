@@ -116,7 +116,6 @@
 
 .method private constructor <init>(Landroid/os/Parcel;)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -153,8 +152,6 @@
 
 .method synthetic constructor <init>(Landroid/os/Parcel;Landroid/print/PrinterCapabilitiesInfo$1;)V
     .locals 0
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # Landroid/print/PrinterCapabilitiesInfo$1;
 
     invoke-direct {p0, p1}, Landroid/print/PrinterCapabilitiesInfo;-><init>(Landroid/os/Parcel;)V
 
@@ -163,7 +160,6 @@
 
 .method public constructor <init>(Landroid/print/PrinterCapabilitiesInfo;)V
     .locals 1
-    .param p1    # Landroid/print/PrinterCapabilitiesInfo;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -184,7 +180,6 @@
 
 .method static synthetic access$000(Landroid/print/PrinterCapabilitiesInfo;)Ljava/util/List;
     .locals 1
-    .param p0    # Landroid/print/PrinterCapabilitiesInfo;
 
     iget-object v0, p0, Landroid/print/PrinterCapabilitiesInfo;->mMediaSizes:Ljava/util/List;
 
@@ -193,8 +188,6 @@
 
 .method static synthetic access$002(Landroid/print/PrinterCapabilitiesInfo;Ljava/util/List;)Ljava/util/List;
     .locals 0
-    .param p0    # Landroid/print/PrinterCapabilitiesInfo;
-    .param p1    # Ljava/util/List;
 
     iput-object p1, p0, Landroid/print/PrinterCapabilitiesInfo;->mMediaSizes:Ljava/util/List;
 
@@ -203,7 +196,6 @@
 
 .method static synthetic access$100(Landroid/print/PrinterCapabilitiesInfo;)[I
     .locals 1
-    .param p0    # Landroid/print/PrinterCapabilitiesInfo;
 
     iget-object v0, p0, Landroid/print/PrinterCapabilitiesInfo;->mDefaults:[I
 
@@ -212,7 +204,6 @@
 
 .method static synthetic access$200(Landroid/print/PrinterCapabilitiesInfo;)Ljava/util/List;
     .locals 1
-    .param p0    # Landroid/print/PrinterCapabilitiesInfo;
 
     iget-object v0, p0, Landroid/print/PrinterCapabilitiesInfo;->mResolutions:Ljava/util/List;
 
@@ -221,8 +212,6 @@
 
 .method static synthetic access$202(Landroid/print/PrinterCapabilitiesInfo;Ljava/util/List;)Ljava/util/List;
     .locals 0
-    .param p0    # Landroid/print/PrinterCapabilitiesInfo;
-    .param p1    # Ljava/util/List;
 
     iput-object p1, p0, Landroid/print/PrinterCapabilitiesInfo;->mResolutions:Ljava/util/List;
 
@@ -231,7 +220,6 @@
 
 .method static synthetic access$300(Landroid/print/PrinterCapabilitiesInfo;)Landroid/print/PrintAttributes$Margins;
     .locals 1
-    .param p0    # Landroid/print/PrinterCapabilitiesInfo;
 
     iget-object v0, p0, Landroid/print/PrinterCapabilitiesInfo;->mMinMargins:Landroid/print/PrintAttributes$Margins;
 
@@ -240,8 +228,6 @@
 
 .method static synthetic access$302(Landroid/print/PrinterCapabilitiesInfo;Landroid/print/PrintAttributes$Margins;)Landroid/print/PrintAttributes$Margins;
     .locals 0
-    .param p0    # Landroid/print/PrinterCapabilitiesInfo;
-    .param p1    # Landroid/print/PrintAttributes$Margins;
 
     iput-object p1, p0, Landroid/print/PrinterCapabilitiesInfo;->mMinMargins:Landroid/print/PrintAttributes$Margins;
 
@@ -250,7 +236,6 @@
 
 .method static synthetic access$400(Landroid/print/PrinterCapabilitiesInfo;)I
     .locals 1
-    .param p0    # Landroid/print/PrinterCapabilitiesInfo;
 
     iget v0, p0, Landroid/print/PrinterCapabilitiesInfo;->mColorModes:I
 
@@ -259,8 +244,6 @@
 
 .method static synthetic access$402(Landroid/print/PrinterCapabilitiesInfo;I)I
     .locals 0
-    .param p0    # Landroid/print/PrinterCapabilitiesInfo;
-    .param p1    # I
 
     iput p1, p0, Landroid/print/PrinterCapabilitiesInfo;->mColorModes:I
 
@@ -328,7 +311,6 @@
 
 .method private readDefaults(Landroid/os/Parcel;)V
     .locals 4
-    .param p1    # Landroid/os/Parcel;
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
@@ -357,7 +339,6 @@
 
 .method private readMargins(Landroid/os/Parcel;)Landroid/print/PrintAttributes$Margins;
     .locals 2
-    .param p1    # Landroid/os/Parcel;
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
@@ -382,7 +363,6 @@
 
 .method private readMediaSizes(Landroid/os/Parcel;)V
     .locals 4
-    .param p1    # Landroid/os/Parcel;
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
@@ -424,7 +404,6 @@
 
 .method private readResolutions(Landroid/os/Parcel;)V
     .locals 4
-    .param p1    # Landroid/os/Parcel;
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
@@ -466,7 +445,6 @@
 
 .method private writeDefaults(Landroid/os/Parcel;)V
     .locals 3
-    .param p1    # Landroid/os/Parcel;
 
     iget-object v2, p0, Landroid/print/PrinterCapabilitiesInfo;->mDefaults:[I
 
@@ -495,8 +473,6 @@
 
 .method private writeMargins(Landroid/print/PrintAttributes$Margins;Landroid/os/Parcel;)V
     .locals 1
-    .param p1    # Landroid/print/PrintAttributes$Margins;
-    .param p2    # Landroid/os/Parcel;
 
     if-nez p1, :cond_0
 
@@ -519,7 +495,6 @@
 
 .method private writeMediaSizes(Landroid/os/Parcel;)V
     .locals 3
-    .param p1    # Landroid/os/Parcel;
 
     iget-object v2, p0, Landroid/print/PrinterCapabilitiesInfo;->mMediaSizes:Ljava/util/List;
 
@@ -563,7 +538,6 @@
 
 .method private writeResolutions(Landroid/os/Parcel;)V
     .locals 3
-    .param p1    # Landroid/os/Parcel;
 
     iget-object v2, p0, Landroid/print/PrinterCapabilitiesInfo;->mResolutions:Ljava/util/List;
 
@@ -609,7 +583,6 @@
 # virtual methods
 .method public copyFrom(Landroid/print/PrinterCapabilitiesInfo;)V
     .locals 5
-    .param p1    # Landroid/print/PrinterCapabilitiesInfo;
 
     const/4 v4, 0x0
 
@@ -729,7 +702,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 5
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x1
 
@@ -1153,8 +1125,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v0, p0, Landroid/print/PrinterCapabilitiesInfo;->mMinMargins:Landroid/print/PrintAttributes$Margins;
 

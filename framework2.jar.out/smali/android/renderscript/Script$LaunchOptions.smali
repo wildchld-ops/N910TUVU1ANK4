@@ -55,7 +55,6 @@
 
 .method static synthetic access$000(Landroid/renderscript/Script$LaunchOptions;)I
     .locals 1
-    .param p0    # Landroid/renderscript/Script$LaunchOptions;
 
     iget v0, p0, Landroid/renderscript/Script$LaunchOptions;->xstart:I
 
@@ -64,7 +63,6 @@
 
 .method static synthetic access$100(Landroid/renderscript/Script$LaunchOptions;)I
     .locals 1
-    .param p0    # Landroid/renderscript/Script$LaunchOptions;
 
     iget v0, p0, Landroid/renderscript/Script$LaunchOptions;->xend:I
 
@@ -73,7 +71,6 @@
 
 .method static synthetic access$200(Landroid/renderscript/Script$LaunchOptions;)I
     .locals 1
-    .param p0    # Landroid/renderscript/Script$LaunchOptions;
 
     iget v0, p0, Landroid/renderscript/Script$LaunchOptions;->ystart:I
 
@@ -82,7 +79,6 @@
 
 .method static synthetic access$300(Landroid/renderscript/Script$LaunchOptions;)I
     .locals 1
-    .param p0    # Landroid/renderscript/Script$LaunchOptions;
 
     iget v0, p0, Landroid/renderscript/Script$LaunchOptions;->yend:I
 
@@ -91,7 +87,6 @@
 
 .method static synthetic access$400(Landroid/renderscript/Script$LaunchOptions;)I
     .locals 1
-    .param p0    # Landroid/renderscript/Script$LaunchOptions;
 
     iget v0, p0, Landroid/renderscript/Script$LaunchOptions;->zstart:I
 
@@ -100,7 +95,6 @@
 
 .method static synthetic access$500(Landroid/renderscript/Script$LaunchOptions;)I
     .locals 1
-    .param p0    # Landroid/renderscript/Script$LaunchOptions;
 
     iget v0, p0, Landroid/renderscript/Script$LaunchOptions;->zend:I
 
@@ -159,8 +153,6 @@
 
 .method public setX(II)Landroid/renderscript/Script$LaunchOptions;
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     if-ltz p1, :cond_0
 
@@ -185,8 +177,6 @@
 
 .method public setY(II)Landroid/renderscript/Script$LaunchOptions;
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     if-ltz p1, :cond_0
 
@@ -211,8 +201,6 @@
 
 .method public setZ(II)Landroid/renderscript/Script$LaunchOptions;
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     if-ltz p1, :cond_0
 

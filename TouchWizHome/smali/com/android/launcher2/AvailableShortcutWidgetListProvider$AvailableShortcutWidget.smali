@@ -32,8 +32,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/launcher2/AvailableShortcutWidgetListProvider;Landroid/content/pm/PackageManager;Landroid/content/pm/ResolveInfo;)V
     .locals 4
-    .param p2    # Landroid/content/pm/PackageManager;
-    .param p3    # Landroid/content/pm/ResolveInfo;
 
     iput-object p1, p0, Lcom/android/launcher2/AvailableShortcutWidgetListProvider$AvailableShortcutWidget;->this$0:Lcom/android/launcher2/AvailableShortcutWidgetListProvider;
 
@@ -214,7 +212,6 @@
 
 .method public dump(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     sget-boolean v0, Lcom/android/launcher2/AvailableWidgetListProvider;->DEBUGGABLE:Z
 
@@ -266,7 +263,6 @@
 
 .method public getCellSpan([I)V
     .locals 2
-    .param p1    # [I
 
     const/4 v1, 0x1
 
@@ -299,8 +295,6 @@
 
 .method public getPreview(II)Landroid/graphics/Bitmap;
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/launcher2/AvailableShortcutWidgetListProvider$AvailableShortcutWidget;->mTitleAndIcon:Lcom/android/launcher2/PkgResCache$TitleIconInfo;
 
@@ -331,7 +325,6 @@
 
 .method public setSecret(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/launcher2/AvailableShortcutWidgetListProvider$AvailableShortcutWidget;->mIsSecret:Z
 

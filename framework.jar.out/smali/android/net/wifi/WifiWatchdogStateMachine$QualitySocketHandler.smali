@@ -29,7 +29,6 @@
 # direct methods
 .method public constructor <init>(Landroid/net/wifi/WifiWatchdogStateMachine;Landroid/os/Looper;)V
     .locals 3
-    .param p2    # Landroid/os/Looper;
 
     const-wide/16 v1, 0x0
 
@@ -52,10 +51,6 @@
 
 .method private sendGetMethod(Ljava/net/Socket;ILjava/lang/String;I)V
     .locals 17
-    .param p1    # Ljava/net/Socket;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -817,9 +812,6 @@
 
 .method private sendGetMethod(Ljava/net/Socket;Ljava/lang/String;I)V
     .locals 21
-    .param p1    # Ljava/net/Socket;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -1569,7 +1561,6 @@
 
 .method public handleMessage(Landroid/os/Message;)V
     .locals 40
-    .param p1    # Landroid/os/Message;
 
     move-object/from16 v0, p1
 

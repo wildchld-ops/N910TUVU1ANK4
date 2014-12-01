@@ -69,7 +69,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/accounts/AccountPreferenceBase;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/settings/accounts/AccountPreferenceBase;
 
     iget-object v0, p0, Lcom/android/settings/accounts/AccountPreferenceBase;->mHandler:Landroid/os/Handler;
 
@@ -78,7 +77,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/accounts/AccountPreferenceBase;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/accounts/AccountPreferenceBase;
 
     iget-boolean v0, p0, Lcom/android/settings/accounts/AccountPreferenceBase;->mIsBackupVersionOld:Z
 
@@ -87,9 +85,6 @@
 
 .method private addSSORetryPreference(Landroid/preference/PreferenceScreen;Landroid/content/Context;Lcom/android/settings/accounts/SnsAccountManager$SnsAccountEntry;)V
     .locals 6
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/content/Context;
-    .param p3    # Lcom/android/settings/accounts/SnsAccountManager$SnsAccountEntry;
 
     invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 
@@ -181,8 +176,6 @@
 
 .method private addSamsungBackupRestorePreference(Landroid/preference/PreferenceScreen;Landroid/content/Context;)V
     .locals 10
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/content/Context;
 
     const/4 v9, 0x1
 
@@ -325,8 +318,6 @@
 
 .method private addSamsungStorageUsagePreference(Landroid/preference/PreferenceScreen;Landroid/content/Context;)V
     .locals 6
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/content/Context;
 
     const-string v3, "com.samsung.android.scloud.quota"
 
@@ -411,8 +402,6 @@
 # virtual methods
 .method public addPreferencesForType(Ljava/lang/String;Landroid/preference/PreferenceScreen;)Landroid/preference/PreferenceScreen;
     .locals 21
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/preference/PreferenceScreen;
 
     const/4 v13, 0x0
 
@@ -894,7 +883,6 @@
 
 .method protected formatSyncDate(Ljava/util/Date;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/util/Date;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -935,7 +923,6 @@
 
 .method public getAuthoritiesForAccountType(Ljava/lang/String;)Ljava/util/ArrayList;
     .locals 8
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1063,7 +1050,6 @@
 
 .method protected getDrawableForType(Ljava/lang/String;)Landroid/graphics/drawable/Drawable;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/settings/accounts/AccountPreferenceBase;->mAuthenticatorHelper:Lcom/android/settings/accounts/AuthenticatorHelper;
 
@@ -1080,7 +1066,6 @@
 
 .method protected getLabelForType(Ljava/lang/String;)Ljava/lang/CharSequence;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/settings/accounts/AccountPreferenceBase;->mAuthenticatorHelper:Lcom/android/settings/accounts/AuthenticatorHelper;
 
@@ -1097,14 +1082,12 @@
 
 .method public onAccountsUpdated([Landroid/accounts/Account;)V
     .locals 0
-    .param p1    # [Landroid/accounts/Account;
 
     return-void
 .end method
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onActivityCreated(Landroid/os/Bundle;)V
 

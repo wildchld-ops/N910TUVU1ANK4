@@ -30,7 +30,6 @@
 # direct methods
 .method constructor <init>(Landroid/media/AudioService;Landroid/os/IBinder;)V
     .locals 1
-    .param p2    # Landroid/os/IBinder;
 
     iput-object p1, p0, Landroid/media/AudioService$ScoClient;->this$0:Landroid/media/AudioService;
 
@@ -53,8 +52,6 @@
 
 .method private requestScoState(II)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
 
     const/4 v6, 0x5
 
@@ -581,7 +578,6 @@
 
 .method public clearCount(Z)V
     .locals 5
-    .param p1    # Z
 
     iget-object v1, p0, Landroid/media/AudioService$ScoClient;->this$0:Landroid/media/AudioService;
 
@@ -786,7 +782,6 @@
 
 .method public incCount(I)V
     .locals 5
-    .param p1    # I
 
     iget-object v1, p0, Landroid/media/AudioService$ScoClient;->this$0:Landroid/media/AudioService;
 

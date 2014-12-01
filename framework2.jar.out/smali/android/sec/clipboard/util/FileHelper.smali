@@ -48,9 +48,6 @@
 
 .method private getBitmap(Ljava/lang/String;II)Landroid/graphics/Bitmap;
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v4, 0x1
 
@@ -244,7 +241,6 @@
 # virtual methods
 .method public checkDir(Ljava/io/File;)Z
     .locals 1
-    .param p1    # Ljava/io/File;
 
     invoke-virtual {p1}, Ljava/io/File;->isDirectory()Z
 
@@ -255,7 +251,6 @@
 
 .method public checkFile(Ljava/io/File;)Z
     .locals 1
-    .param p1    # Ljava/io/File;
 
     invoke-virtual {p1}, Ljava/io/File;->isFile()Z
 
@@ -266,7 +261,6 @@
 
 .method public createTemporaryThumnailImage(Ljava/lang/String;)Z
     .locals 11
-    .param p1    # Ljava/lang/String;
 
     new-instance v7, Ljava/lang/StringBuilder;
 
@@ -556,8 +550,6 @@
 
 .method public createThumnailFromData(Landroid/content/ContentResolver;Landroid/sec/clipboard/data/ClipboardData;)Ljava/lang/String;
     .locals 16
-    .param p1    # Landroid/content/ContentResolver;
-    .param p2    # Landroid/sec/clipboard/data/ClipboardData;
 
     const/4 v6, 0x0
 
@@ -1261,7 +1253,6 @@
 
 .method public createThumnailImage(Ljava/lang/String;)Z
     .locals 11
-    .param p1    # Ljava/lang/String;
 
     new-instance v7, Ljava/lang/StringBuilder;
 
@@ -1551,9 +1542,6 @@
 
 .method public createThumnailImage(Ljava/lang/String;II)Z
     .locals 11
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     new-instance v7, Ljava/lang/StringBuilder;
 
@@ -1837,7 +1825,6 @@
 
 .method public delete(Ljava/io/File;)V
     .locals 6
-    .param p1    # Ljava/io/File;
 
     invoke-virtual {p1}, Ljava/io/File;->isFile()Z
 
@@ -1889,8 +1876,6 @@
 
 .method public fileCopy(Ljava/io/File;Ljava/io/File;)Z
     .locals 16
-    .param p1    # Ljava/io/File;
-    .param p2    # Ljava/io/File;
 
     const/4 v7, 0x0
 
@@ -2518,7 +2503,6 @@
 
 .method public getList(Ljava/io/File;)[Ljava/io/File;
     .locals 1
-    .param p1    # Ljava/io/File;
 
     invoke-virtual {p1}, Ljava/io/File;->listFiles()[Ljava/io/File;
 
@@ -2571,7 +2555,6 @@
 
 .method public loadObjectFile(Ljava/io/File;)Ljava/lang/Object;
     .locals 9
-    .param p1    # Ljava/io/File;
 
     const/4 v5, 0x0
 
@@ -3052,7 +3035,6 @@
 
 .method public makeDir(Ljava/io/File;)V
     .locals 3
-    .param p1    # Ljava/io/File;
 
     const/4 v2, -0x1
 
@@ -3078,8 +3060,6 @@
 
 .method public saveObjectFile(Ljava/lang/String;Ljava/lang/Object;)Z
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Object;
 
     if-nez p2, :cond_2
 

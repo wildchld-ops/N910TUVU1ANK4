@@ -90,8 +90,6 @@
 
 .method public varargs perfLockAcquire(I[I)I
     .locals 2
-    .param p1    # I
-    .param p2    # [I
 
     const/4 v0, 0x0
 

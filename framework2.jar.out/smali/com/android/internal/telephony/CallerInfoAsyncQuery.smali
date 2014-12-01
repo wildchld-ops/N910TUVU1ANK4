@@ -48,7 +48,6 @@
 
 .method static synthetic access$000(Lcom/android/internal/telephony/CallerInfoAsyncQuery;)V
     .locals 0
-    .param p0    # Lcom/android/internal/telephony/CallerInfoAsyncQuery;
 
     invoke-direct {p0}, Lcom/android/internal/telephony/CallerInfoAsyncQuery;->release()V
 
@@ -57,8 +56,6 @@
 
 .method private allocate(Landroid/content/Context;Landroid/net/Uri;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/net/Uri;
 
     if-eqz p1, :cond_0
 
@@ -122,7 +119,6 @@
 
 .method private static sanitizeUriToString(Landroid/net/Uri;)Ljava/lang/String;
     .locals 4
-    .param p0    # Landroid/net/Uri;
 
     if-eqz p0, :cond_1
 
@@ -174,11 +170,6 @@
 
 .method public static startQuery(ILandroid/content/Context;Landroid/net/Uri;Lcom/android/internal/telephony/CallerInfoAsyncQuery$OnQueryCompleteListener;Ljava/lang/Object;)Lcom/android/internal/telephony/CallerInfoAsyncQuery;
     .locals 9
-    .param p0    # I
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/net/Uri;
-    .param p3    # Lcom/android/internal/telephony/CallerInfoAsyncQuery$OnQueryCompleteListener;
-    .param p4    # Ljava/lang/Object;
 
     const/4 v4, 0x0
 
@@ -219,11 +210,6 @@
 
 .method public static startQuery(ILandroid/content/Context;Ljava/lang/String;Lcom/android/internal/telephony/CallerInfoAsyncQuery$OnQueryCompleteListener;Ljava/lang/Object;)Lcom/android/internal/telephony/CallerInfoAsyncQuery;
     .locals 6
-    .param p0    # I
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/android/internal/telephony/CallerInfoAsyncQuery$OnQueryCompleteListener;
-    .param p4    # Ljava/lang/Object;
 
     const/4 v5, 0x0
 
@@ -246,12 +232,6 @@
 
 .method public static startQuery(ILandroid/content/Context;Ljava/lang/String;Lcom/android/internal/telephony/CallerInfoAsyncQuery$OnQueryCompleteListener;Ljava/lang/Object;I)Lcom/android/internal/telephony/CallerInfoAsyncQuery;
     .locals 17
-    .param p0    # I
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/android/internal/telephony/CallerInfoAsyncQuery$OnQueryCompleteListener;
-    .param p4    # Ljava/lang/Object;
-    .param p5    # I
 
     invoke-static/range {p2 .. p2}, Landroid/telephony/PhoneNumberUtils;->isUriNumber(Ljava/lang/String;)Z
 
@@ -488,9 +468,6 @@
 # virtual methods
 .method public addQueryListener(ILcom/android/internal/telephony/CallerInfoAsyncQuery$OnQueryCompleteListener;Ljava/lang/Object;)V
     .locals 8
-    .param p1    # I
-    .param p2    # Lcom/android/internal/telephony/CallerInfoAsyncQuery$OnQueryCompleteListener;
-    .param p3    # Ljava/lang/Object;
 
     const/4 v3, 0x0
 

@@ -26,7 +26,6 @@
 
 .method public constructor <init>([F)V
     .locals 3
-    .param p1    # [F
 
     const/4 v2, 0x0
 
@@ -53,8 +52,6 @@
 # virtual methods
 .method public get(II)F
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Landroid/renderscript/Matrix2f;->mMat:[F
 
@@ -77,7 +74,6 @@
 
 .method public load(Landroid/renderscript/Matrix2f;)V
     .locals 4
-    .param p1    # Landroid/renderscript/Matrix2f;
 
     const/4 v3, 0x0
 
@@ -132,8 +128,6 @@
 
 .method public loadMultiply(Landroid/renderscript/Matrix2f;Landroid/renderscript/Matrix2f;)V
     .locals 9
-    .param p1    # Landroid/renderscript/Matrix2f;
-    .param p2    # Landroid/renderscript/Matrix2f;
 
     const/4 v8, 0x2
 
@@ -194,7 +188,6 @@
 
 .method public loadRotate(F)V
     .locals 5
-    .param p1    # F
 
     const v2, 0x3c8efa35
 
@@ -247,8 +240,6 @@
 
 .method public loadScale(FF)V
     .locals 2
-    .param p1    # F
-    .param p2    # F
 
     invoke-virtual {p0}, Landroid/renderscript/Matrix2f;->loadIdentity()V
 
@@ -269,7 +260,6 @@
 
 .method public multiply(Landroid/renderscript/Matrix2f;)V
     .locals 1
-    .param p1    # Landroid/renderscript/Matrix2f;
 
     new-instance v0, Landroid/renderscript/Matrix2f;
 
@@ -284,7 +274,6 @@
 
 .method public rotate(F)V
     .locals 1
-    .param p1    # F
 
     new-instance v0, Landroid/renderscript/Matrix2f;
 
@@ -299,8 +288,6 @@
 
 .method public scale(FF)V
     .locals 1
-    .param p1    # F
-    .param p2    # F
 
     new-instance v0, Landroid/renderscript/Matrix2f;
 
@@ -315,9 +302,6 @@
 
 .method public set(IIF)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # F
 
     iget-object v0, p0, Landroid/renderscript/Matrix2f;->mMat:[F
 

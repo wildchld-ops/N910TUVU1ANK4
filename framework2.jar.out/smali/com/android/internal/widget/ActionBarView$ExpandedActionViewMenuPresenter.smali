@@ -48,8 +48,6 @@
 
 .method synthetic constructor <init>(Lcom/android/internal/widget/ActionBarView;Lcom/android/internal/widget/ActionBarView$1;)V
     .locals 0
-    .param p1    # Lcom/android/internal/widget/ActionBarView;
-    .param p2    # Lcom/android/internal/widget/ActionBarView$1;
 
     invoke-direct {p0, p1}, Lcom/android/internal/widget/ActionBarView$ExpandedActionViewMenuPresenter;-><init>(Lcom/android/internal/widget/ActionBarView;)V
 
@@ -60,8 +58,6 @@
 # virtual methods
 .method public collapseItemActionView(Lcom/android/internal/view/menu/MenuBuilder;Lcom/android/internal/view/menu/MenuItemImpl;)Z
     .locals 4
-    .param p1    # Lcom/android/internal/view/menu/MenuBuilder;
-    .param p2    # Lcom/android/internal/view/menu/MenuItemImpl;
 
     const/4 v3, 0x0
 
@@ -268,8 +264,6 @@
 
 .method public expandItemActionView(Lcom/android/internal/view/menu/MenuBuilder;Lcom/android/internal/view/menu/MenuItemImpl;)Z
     .locals 6
-    .param p1    # Lcom/android/internal/view/menu/MenuBuilder;
-    .param p2    # Lcom/android/internal/view/menu/MenuItemImpl;
 
     const/4 v5, 0x1
 
@@ -563,7 +557,6 @@
 
 .method public getMenuView(Landroid/view/ViewGroup;)Lcom/android/internal/view/menu/MenuView;
     .locals 1
-    .param p1    # Landroid/view/ViewGroup;
 
     const/4 v0, 0x0
 
@@ -572,8 +565,6 @@
 
 .method public initForMenu(Landroid/content/Context;Lcom/android/internal/view/menu/MenuBuilder;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/internal/view/menu/MenuBuilder;
 
     iget-object v0, p0, Lcom/android/internal/widget/ActionBarView$ExpandedActionViewMenuPresenter;->mMenu:Lcom/android/internal/view/menu/MenuBuilder;
 
@@ -597,15 +588,12 @@
 
 .method public onCloseMenu(Lcom/android/internal/view/menu/MenuBuilder;Z)V
     .locals 0
-    .param p1    # Lcom/android/internal/view/menu/MenuBuilder;
-    .param p2    # Z
 
     return-void
 .end method
 
 .method public onRestoreInstanceState(Landroid/os/Parcelable;)V
     .locals 0
-    .param p1    # Landroid/os/Parcelable;
 
     return-void
 .end method
@@ -620,7 +608,6 @@
 
 .method public onSubMenuSelected(Lcom/android/internal/view/menu/SubMenuBuilder;)Z
     .locals 1
-    .param p1    # Lcom/android/internal/view/menu/SubMenuBuilder;
 
     const/4 v0, 0x0
 
@@ -629,14 +616,12 @@
 
 .method public setCallback(Lcom/android/internal/view/menu/MenuPresenter$Callback;)V
     .locals 0
-    .param p1    # Lcom/android/internal/view/menu/MenuPresenter$Callback;
 
     return-void
 .end method
 
 .method public updateMenuView(Z)V
     .locals 6
-    .param p1    # Z
 
     iget-object v4, p0, Lcom/android/internal/widget/ActionBarView$ExpandedActionViewMenuPresenter;->mCurrentExpandedItem:Lcom/android/internal/view/menu/MenuItemImpl;
 

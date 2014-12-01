@@ -113,8 +113,6 @@
 # virtual methods
 .method public applyCompatConfiguration(ILandroid/content/res/Configuration;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/content/res/Configuration;
 
     iget-object v0, p0, Landroid/app/ResourcesManager;->mResCompatibilityInfo:Landroid/content/res/CompatibilityInfo;
 
@@ -145,8 +143,6 @@
 
 .method public final applyConfigurationToResourcesLocked(Landroid/content/res/Configuration;Landroid/content/res/CompatibilityInfo;)Z
     .locals 1
-    .param p1    # Landroid/content/res/Configuration;
-    .param p2    # Landroid/content/res/CompatibilityInfo;
 
     const/4 v0, 0x0
 
@@ -159,9 +155,6 @@
 
 .method public final applyConfigurationToResourcesLocked(Landroid/content/res/Configuration;Landroid/content/res/CompatibilityInfo;Z)Z
     .locals 19
-    .param p1    # Landroid/content/res/Configuration;
-    .param p2    # Landroid/content/res/CompatibilityInfo;
-    .param p3    # Z
 
     move-object/from16 v0, p0
 
@@ -520,7 +513,6 @@
 
 .method public final applyDisplayMetricsToResourcesLocked(Landroid/view/DisplayInfo;)V
     .locals 8
-    .param p1    # Landroid/view/DisplayInfo;
 
     const/4 v7, 0x0
 
@@ -602,8 +594,6 @@
 
 .method final applyNonDefaultDisplayMetricsToConfigurationLocked(Landroid/util/DisplayMetrics;Landroid/content/res/Configuration;)V
     .locals 4
-    .param p1    # Landroid/util/DisplayMetrics;
-    .param p2    # Landroid/content/res/Configuration;
 
     const/4 v3, 0x1
 
@@ -718,7 +708,6 @@
 
 .method public getDisplayMetricsLocked(I)Landroid/util/DisplayMetrics;
     .locals 1
-    .param p1    # I
 
     sget-object v0, Landroid/view/DisplayAdjustments;->DEFAULT_DISPLAY_ADJUSTMENTS:Landroid/view/DisplayAdjustments;
 
@@ -731,8 +720,6 @@
 
 .method public getDisplayMetricsLocked(ILandroid/view/DisplayAdjustments;)Landroid/util/DisplayMetrics;
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/view/DisplayAdjustments;
 
     const/4 v2, 0x0
 
@@ -820,11 +807,6 @@
 
 .method public getTopLevelResources(Ljava/lang/String;ILandroid/content/res/Configuration;Landroid/content/res/CompatibilityInfo;Landroid/os/IBinder;)Landroid/content/res/Resources;
     .locals 17
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Landroid/content/res/Configuration;
-    .param p4    # Landroid/content/res/CompatibilityInfo;
-    .param p5    # Landroid/os/IBinder;
 
     move-object/from16 v0, p4
 

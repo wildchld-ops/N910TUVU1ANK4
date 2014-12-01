@@ -18,7 +18,6 @@
 
 .method protected constructor <init>(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x2
 
@@ -39,7 +38,6 @@
 
 .method public static newInstance(Ljava/lang/String;)Landroid/net/wifi/p2p/nsd/WifiP2pUpnpServiceRequest;
     .locals 6
-    .param p0    # Ljava/lang/String;
 
     if-nez p0, :cond_0
 

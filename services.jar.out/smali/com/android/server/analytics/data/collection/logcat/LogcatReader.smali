@@ -73,11 +73,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;ZLcom/android/server/analytics/data/collection/logcat/LogcatReader$LogcatRecordProcessor;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # [Ljava/lang/String;
-    .param p4    # Z
-    .param p5    # Lcom/android/server/analytics/data/collection/logcat/LogcatReader$LogcatRecordProcessor;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -108,7 +103,6 @@
 
 .method static synthetic access$000(Lcom/android/server/analytics/data/collection/logcat/LogcatReader;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/server/analytics/data/collection/logcat/LogcatReader;
 
     iget-object v0, p0, Lcom/android/server/analytics/data/collection/logcat/LogcatReader;->mFormat:Ljava/lang/String;
 
@@ -117,7 +111,6 @@
 
 .method static synthetic access$100(Lcom/android/server/analytics/data/collection/logcat/LogcatReader;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/server/analytics/data/collection/logcat/LogcatReader;
 
     iget-object v0, p0, Lcom/android/server/analytics/data/collection/logcat/LogcatReader;->mBuffer:Ljava/lang/String;
 
@@ -126,7 +119,6 @@
 
 .method static synthetic access$200(Lcom/android/server/analytics/data/collection/logcat/LogcatReader;)[Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/server/analytics/data/collection/logcat/LogcatReader;
 
     iget-object v0, p0, Lcom/android/server/analytics/data/collection/logcat/LogcatReader;->mFilterSpecs:[Ljava/lang/String;
 
@@ -135,7 +127,6 @@
 
 .method static synthetic access$300(Lcom/android/server/analytics/data/collection/logcat/LogcatReader;)Ljava/lang/Process;
     .locals 1
-    .param p0    # Lcom/android/server/analytics/data/collection/logcat/LogcatReader;
 
     iget-object v0, p0, Lcom/android/server/analytics/data/collection/logcat/LogcatReader;->mProcess:Ljava/lang/Process;
 
@@ -144,8 +135,6 @@
 
 .method static synthetic access$302(Lcom/android/server/analytics/data/collection/logcat/LogcatReader;Ljava/lang/Process;)Ljava/lang/Process;
     .locals 0
-    .param p0    # Lcom/android/server/analytics/data/collection/logcat/LogcatReader;
-    .param p1    # Ljava/lang/Process;
 
     iput-object p1, p0, Lcom/android/server/analytics/data/collection/logcat/LogcatReader;->mProcess:Ljava/lang/Process;
 
@@ -154,7 +143,6 @@
 
 .method static synthetic access$400(Lcom/android/server/analytics/data/collection/logcat/LogcatReader;)Lcom/android/server/analytics/data/collection/logcat/LogcatReader$LogcatRecordProcessor;
     .locals 1
-    .param p0    # Lcom/android/server/analytics/data/collection/logcat/LogcatReader;
 
     iget-object v0, p0, Lcom/android/server/analytics/data/collection/logcat/LogcatReader;->mProcessor:Lcom/android/server/analytics/data/collection/logcat/LogcatReader$LogcatRecordProcessor;
 

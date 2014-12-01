@@ -25,7 +25,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/LEDManager;I)V
     .locals 1
-    .param p2    # I
 
     iput-object p1, p0, Landroid/os/LEDManager$LED;->this$0:Landroid/os/LEDManager;
 
@@ -93,10 +92,6 @@
 
 .method public setFlashing(IIII)V
     .locals 8
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iget-object v7, p0, Landroid/os/LEDManager$LED;->mToken:Landroid/os/IBinder;
 

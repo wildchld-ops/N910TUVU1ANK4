@@ -34,14 +34,12 @@
 # virtual methods
 .method animateValue(F)V
     .locals 0
-    .param p1    # F
 
     return-void
 .end method
 
 .method animationFrame(J)Z
     .locals 6
-    .param p1    # J
 
     const-wide/16 v4, 0x0
 
@@ -89,7 +87,6 @@
 
 .method public setTimeListener(Landroid/animation/TimeAnimator$TimeListener;)V
     .locals 0
-    .param p1    # Landroid/animation/TimeAnimator$TimeListener;
 
     iput-object p1, p0, Landroid/animation/TimeAnimator;->mListener:Landroid/animation/TimeAnimator$TimeListener;
 

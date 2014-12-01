@@ -73,11 +73,11 @@
 
     iget-object v1, p0, Lcom/android/phone/CancelRejectModeAlertDialog$2;->this$0:Lcom/android/phone/CancelRejectModeAlertDialog;
 
-    invoke-virtual {v1, v0}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {v1, v0}, Lcom/android/phone/CancelRejectModeAlertDialog;->startActivity(Landroid/content/Intent;)V
 
     iget-object v1, p0, Lcom/android/phone/CancelRejectModeAlertDialog$2;->this$0:Lcom/android/phone/CancelRejectModeAlertDialog;
 
-    invoke-virtual {v1}, Landroid/app/Activity;->finish()V
+    invoke-virtual {v1}, Lcom/android/phone/CancelRejectModeAlertDialog;->finish()V
 
     return-void
 .end method

@@ -42,8 +42,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/internal/os/BatteryStatsImpl$Uid;ILjava/util/ArrayList;Ljava/util/ArrayList;)V
     .locals 0
-    .param p1    # Lcom/android/internal/os/BatteryStatsImpl$Uid;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -71,9 +69,6 @@
 
 .method constructor <init>(Lcom/android/internal/os/BatteryStatsImpl$Uid;ILjava/util/ArrayList;Ljava/util/ArrayList;Landroid/os/Parcel;)V
     .locals 2
-    .param p1    # Lcom/android/internal/os/BatteryStatsImpl$Uid;
-    .param p2    # I
-    .param p5    # Landroid/os/Parcel;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -109,7 +104,6 @@
 
 .method private static refreshTimersLocked(Lcom/android/internal/os/BatteryStatsImpl;Ljava/util/ArrayList;)V
     .locals 13
-    .param p0    # Lcom/android/internal/os/BatteryStatsImpl;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -191,7 +185,6 @@
 
 .method protected computeRunTimeLocked(J)J
     .locals 6
-    .param p1    # J
 
     const-wide/16 v0, 0x0
 
@@ -299,8 +292,6 @@
 
 .method public logState(Landroid/util/Printer;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Landroid/util/Printer;
-    .param p2    # Ljava/lang/String;
 
     invoke-super {p0, p1, p2}, Lcom/android/internal/os/BatteryStatsImpl$Timer;->logState(Landroid/util/Printer;Ljava/lang/String;)V
 
@@ -359,9 +350,6 @@
 
 .method public plug(JJJ)V
     .locals 1
-    .param p1    # J
-    .param p3    # J
-    .param p5    # J
 
     iget v0, p0, Lcom/android/internal/os/BatteryStatsImpl$StopwatchTimer;->mNesting:I
 
@@ -377,7 +365,6 @@
 
 .method readSummaryFromParcelLocked(Landroid/os/Parcel;)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     invoke-super {p0, p1}, Lcom/android/internal/os/BatteryStatsImpl$Timer;->readSummaryFromParcelLocked(Landroid/os/Parcel;)V
 
@@ -390,8 +377,6 @@
 
 .method reset(Lcom/android/internal/os/BatteryStatsImpl;Z)Z
     .locals 5
-    .param p1    # Lcom/android/internal/os/BatteryStatsImpl;
-    .param p2    # Z
 
     const/4 v1, 0x1
 
@@ -449,7 +434,6 @@
 
 .method setTimeout(J)V
     .locals 0
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/android/internal/os/BatteryStatsImpl$StopwatchTimer;->mTimeout:J
 
@@ -458,7 +442,6 @@
 
 .method startRunningLocked(Lcom/android/internal/os/BatteryStatsImpl;)V
     .locals 4
-    .param p1    # Lcom/android/internal/os/BatteryStatsImpl;
 
     iget v0, p0, Lcom/android/internal/os/BatteryStatsImpl$StopwatchTimer;->mNesting:I
 
@@ -511,7 +494,6 @@
 
 .method stopRunningLocked(Lcom/android/internal/os/BatteryStatsImpl;)V
     .locals 8
-    .param p1    # Lcom/android/internal/os/BatteryStatsImpl;
 
     iget v4, p0, Lcom/android/internal/os/BatteryStatsImpl$StopwatchTimer;->mNesting:I
 
@@ -591,8 +573,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;J)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # J
 
     invoke-super {p0, p1, p2, p3}, Lcom/android/internal/os/BatteryStatsImpl$Timer;->writeToParcel(Landroid/os/Parcel;J)V
 

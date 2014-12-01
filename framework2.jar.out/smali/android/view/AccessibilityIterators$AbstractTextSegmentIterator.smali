@@ -42,8 +42,6 @@
 # virtual methods
 .method protected getRange(II)[I
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     if-ltz p1, :cond_0
 
@@ -77,7 +75,6 @@
 
 .method public initialize(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/view/AccessibilityIterators$AbstractTextSegmentIterator;->mText:Ljava/lang/String;
 

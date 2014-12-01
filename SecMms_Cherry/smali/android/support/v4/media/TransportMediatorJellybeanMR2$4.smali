@@ -36,7 +36,6 @@
 # virtual methods
 .method public onAudioFocusChange(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/support/v4/media/TransportMediatorJellybeanMR2$4;->this$0:Landroid/support/v4/media/TransportMediatorJellybeanMR2;
 

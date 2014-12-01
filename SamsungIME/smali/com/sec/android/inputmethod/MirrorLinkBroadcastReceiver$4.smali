@@ -33,7 +33,6 @@
 # virtual methods
 .method public onDriveModeChange(Z)V
     .locals 2
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -71,7 +70,6 @@
 
 .method public onMicrophoneStatusChanged(Z)V
     .locals 0
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -83,7 +81,6 @@
 
 .method public onNightModeChanged(Z)V
     .locals 0
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

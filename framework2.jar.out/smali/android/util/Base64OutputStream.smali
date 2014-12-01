@@ -32,8 +32,6 @@
 
 .method public constructor <init>(Ljava/io/OutputStream;I)V
     .locals 1
-    .param p1    # Ljava/io/OutputStream;
-    .param p2    # I
 
     const/4 v0, 0x1
 
@@ -44,9 +42,6 @@
 
 .method public constructor <init>(Ljava/io/OutputStream;IZ)V
     .locals 2
-    .param p1    # Ljava/io/OutputStream;
-    .param p2    # I
-    .param p3    # Z
 
     const/4 v1, 0x0
 
@@ -83,8 +78,6 @@
 
 .method private embiggen([BI)[B
     .locals 1
-    .param p1    # [B
-    .param p2    # I
 
     if-eqz p1, :cond_0
 
@@ -127,10 +120,6 @@
 
 .method private internalWrite([BIIZ)V
     .locals 4
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -268,7 +257,6 @@
 
 .method public write(I)V
     .locals 3
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -322,9 +310,6 @@
 
 .method public write([BII)V
     .locals 1
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

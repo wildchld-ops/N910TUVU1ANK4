@@ -72,7 +72,6 @@
 
 .method public static setAndCheckClickBlocked(J)Z
     .locals 3
-    .param p0    # J
 
     const/4 v0, 0x1
 

@@ -28,7 +28,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -49,7 +48,6 @@
 # virtual methods
 .method protected getNativeProgram(Landroid/filterfw/core/FilterContext;)Landroid/filterfw/core/Program;
     .locals 2
-    .param p1    # Landroid/filterfw/core/FilterContext;
 
     new-instance v0, Ljava/lang/RuntimeException;
 
@@ -62,7 +60,6 @@
 
 .method protected getShaderProgram(Landroid/filterfw/core/FilterContext;)Landroid/filterfw/core/Program;
     .locals 5
-    .param p1    # Landroid/filterfw/core/FilterContext;
 
     const/high16 v4, 0x3f800000
 

@@ -26,8 +26,6 @@
 
 .method public constructor <init>(FF)V
     .locals 0
-    .param p1    # F
-    .param p2    # F
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -40,8 +38,6 @@
 
 .method public static add(Lcom/voovio/geometry/Point;Lcom/voovio/geometry/Point;)Lcom/voovio/geometry/Point;
     .locals 4
-    .param p0    # Lcom/voovio/geometry/Point;
-    .param p1    # Lcom/voovio/geometry/Point;
 
     new-instance v0, Lcom/voovio/geometry/Point;
 
@@ -64,9 +60,6 @@
 
 .method public static interpolate(Lcom/voovio/geometry/Point;Lcom/voovio/geometry/Point;F)Lcom/voovio/geometry/Point;
     .locals 5
-    .param p0    # Lcom/voovio/geometry/Point;
-    .param p1    # Lcom/voovio/geometry/Point;
-    .param p2    # F
 
     invoke-virtual {p1}, Lcom/voovio/geometry/Point;->clone()Lcom/voovio/geometry/Point;
 
@@ -99,8 +92,6 @@
 
 .method public static pointInPolygon(Lcom/voovio/geometry/Point;[Lcom/voovio/geometry/Point;)Z
     .locals 10
-    .param p0    # Lcom/voovio/geometry/Point;
-    .param p1    # [Lcom/voovio/geometry/Point;
 
     const/4 v5, 0x1
 
@@ -226,8 +217,6 @@
 
 .method public static scale(Lcom/voovio/geometry/Point;F)Lcom/voovio/geometry/Point;
     .locals 3
-    .param p0    # Lcom/voovio/geometry/Point;
-    .param p1    # F
 
     new-instance v0, Lcom/voovio/geometry/Point;
 
@@ -246,8 +235,6 @@
 
 .method public static sub(Lcom/voovio/geometry/Point;Lcom/voovio/geometry/Point;)Lcom/voovio/geometry/Point;
     .locals 4
-    .param p0    # Lcom/voovio/geometry/Point;
-    .param p1    # Lcom/voovio/geometry/Point;
 
     new-instance v0, Lcom/voovio/geometry/Point;
 
@@ -272,7 +259,6 @@
 # virtual methods
 .method public add(Lcom/voovio/geometry/Point;)V
     .locals 2
-    .param p1    # Lcom/voovio/geometry/Point;
 
     iget v0, p0, Lcom/voovio/geometry/Point;->x:F
 
@@ -324,7 +310,6 @@
 
 .method public copy(Lcom/voovio/geometry/Point;)V
     .locals 1
-    .param p1    # Lcom/voovio/geometry/Point;
 
     iget v0, p1, Lcom/voovio/geometry/Point;->x:F
 
@@ -339,7 +324,6 @@
 
 .method public dot(Lcom/voovio/geometry/Point;)F
     .locals 3
-    .param p1    # Lcom/voovio/geometry/Point;
 
     iget v0, p0, Lcom/voovio/geometry/Point;->x:F
 
@@ -360,7 +344,6 @@
 
 .method public dotPerp(Lcom/voovio/geometry/Point;)F
     .locals 3
-    .param p1    # Lcom/voovio/geometry/Point;
 
     iget v0, p0, Lcom/voovio/geometry/Point;->x:F
 
@@ -381,7 +364,6 @@
 
 .method public equals(Lcom/voovio/geometry/Point;)Z
     .locals 2
-    .param p1    # Lcom/voovio/geometry/Point;
 
     iget v0, p0, Lcom/voovio/geometry/Point;->x:F
 
@@ -412,7 +394,6 @@
 
 .method public getAngle(Lcom/voovio/geometry/Point;)F
     .locals 5
-    .param p1    # Lcom/voovio/geometry/Point;
 
     iget v1, p0, Lcom/voovio/geometry/Point;->x:F
 
@@ -466,7 +447,6 @@
 
 .method public getDistance(Lcom/voovio/geometry/Point;)F
     .locals 1
-    .param p1    # Lcom/voovio/geometry/Point;
 
     invoke-static {p0, p1}, Lcom/voovio/geometry/Point;->sub(Lcom/voovio/geometry/Point;Lcom/voovio/geometry/Point;)Lcom/voovio/geometry/Point;
 
@@ -521,7 +501,6 @@
 
 .method public normalize(F)F
     .locals 3
-    .param p1    # F
 
     invoke-virtual {p0}, Lcom/voovio/geometry/Point;->length()F
 
@@ -553,8 +532,6 @@
 
 .method public offset(FF)V
     .locals 1
-    .param p1    # F
-    .param p2    # F
 
     iget v0, p0, Lcom/voovio/geometry/Point;->x:F
 
@@ -573,7 +550,6 @@
 
 .method public rotate(F)V
     .locals 7
-    .param p1    # F
 
     invoke-virtual {p0}, Lcom/voovio/geometry/Point;->clone()Lcom/voovio/geometry/Point;
 
@@ -646,7 +622,6 @@
 
 .method public sub(Lcom/voovio/geometry/Point;)V
     .locals 2
-    .param p1    # Lcom/voovio/geometry/Point;
 
     iget v0, p0, Lcom/voovio/geometry/Point;->x:F
 
@@ -681,7 +656,6 @@
 
 .method public toString(I)Ljava/lang/String;
     .locals 4
-    .param p1    # I
 
     new-instance v0, Ljava/text/DecimalFormat;
 

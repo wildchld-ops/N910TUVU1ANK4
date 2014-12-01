@@ -47,7 +47,6 @@
 
 .method static synthetic access$102(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Landroid/webkitsec/HTML5VideoViewProxy$VideoPlayer;->isVideoSelfEnded:Z
 
@@ -56,7 +55,6 @@
 
 .method static synthetic access$200(Z)V
     .locals 0
-    .param p0    # Z
 
     invoke-static {p0}, Landroid/webkitsec/HTML5VideoViewProxy$VideoPlayer;->setPlayerBuffering(Z)V
 
@@ -117,10 +115,6 @@
 
 .method public static enterFullScreenVideo(ILjava/lang/String;Landroid/webkitsec/HTML5VideoViewProxy;Landroid/webkitsec/WebViewClassic;)V
     .locals 9
-    .param p0    # I
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/webkitsec/HTML5VideoViewProxy;
-    .param p3    # Landroid/webkitsec/WebViewClassic;
 
     const/4 v8, 0x3
 
@@ -275,8 +269,6 @@
 
 .method public static exitFullScreenVideo(Landroid/webkitsec/HTML5VideoViewProxy;Landroid/webkitsec/WebViewClassic;)V
     .locals 2
-    .param p0    # Landroid/webkitsec/HTML5VideoViewProxy;
-    .param p1    # Landroid/webkitsec/WebViewClassic;
 
     sget-object v1, Landroid/webkitsec/HTML5VideoViewProxy$VideoPlayer;->mHTML5VideoView:Landroid/webkitsec/HTML5VideoView;
 
@@ -339,7 +331,6 @@
 
 .method public static isPlaying(Landroid/webkitsec/HTML5VideoViewProxy;)Z
     .locals 1
-    .param p0    # Landroid/webkitsec/HTML5VideoViewProxy;
 
     sget-object v0, Landroid/webkitsec/HTML5VideoViewProxy$VideoPlayer;->mCurrentProxy:Landroid/webkitsec/HTML5VideoViewProxy;
 
@@ -398,7 +389,6 @@
 
 .method public static onStopFullScreen(Z)V
     .locals 1
-    .param p0    # Z
 
     sget-object v0, Landroid/webkitsec/HTML5VideoViewProxy$VideoPlayer;->mCurrentProxy:Landroid/webkitsec/HTML5VideoViewProxy;
 
@@ -409,7 +399,6 @@
 
 .method public static pause(Landroid/webkitsec/HTML5VideoViewProxy;)V
     .locals 1
-    .param p0    # Landroid/webkitsec/HTML5VideoViewProxy;
 
     sget-object v0, Landroid/webkitsec/HTML5VideoViewProxy$VideoPlayer;->mCurrentProxy:Landroid/webkitsec/HTML5VideoViewProxy;
 
@@ -484,11 +473,6 @@
 
 .method public static play(Ljava/lang/String;ILandroid/webkitsec/HTML5VideoViewProxy;Landroid/webkitsec/WebChromeClient;I)V
     .locals 7
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
-    .param p2    # Landroid/webkitsec/HTML5VideoViewProxy;
-    .param p3    # Landroid/webkitsec/WebChromeClient;
-    .param p4    # I
 
     const/4 v2, -0x1
 
@@ -691,8 +675,6 @@
 
 .method public static seek(ILandroid/webkitsec/HTML5VideoViewProxy;)V
     .locals 1
-    .param p0    # I
-    .param p1    # Landroid/webkitsec/HTML5VideoViewProxy;
 
     sget-object v0, Landroid/webkitsec/HTML5VideoViewProxy$VideoPlayer;->mCurrentProxy:Landroid/webkitsec/HTML5VideoViewProxy;
 
@@ -714,7 +696,6 @@
 
 .method public static setBaseLayer(I)V
     .locals 7
-    .param p0    # I
 
     sput p0, Landroid/webkitsec/HTML5VideoViewProxy$VideoPlayer;->mBaseLayer:I
 
@@ -802,7 +783,6 @@
 
 .method private static setPlayerBuffering(Z)V
     .locals 1
-    .param p0    # Z
 
     sget-object v0, Landroid/webkitsec/HTML5VideoViewProxy$VideoPlayer;->mHTML5VideoView:Landroid/webkitsec/HTML5VideoView;
 
@@ -813,7 +793,6 @@
 
 .method public static setVolume(F)V
     .locals 1
-    .param p0    # F
 
     sget-object v0, Landroid/webkitsec/HTML5VideoViewProxy$VideoPlayer;->mHTML5VideoView:Landroid/webkitsec/HTML5VideoView;
 

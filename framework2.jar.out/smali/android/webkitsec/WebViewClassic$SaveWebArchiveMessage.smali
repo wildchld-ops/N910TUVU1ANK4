@@ -36,8 +36,6 @@
 # direct methods
 .method constructor <init>(Ljava/lang/String;ZLandroid/webkitsec/ValueCallback;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

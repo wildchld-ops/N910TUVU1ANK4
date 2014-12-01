@@ -29,7 +29,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/MountService;Lcom/android/server/MountService$ObbState;)V
     .locals 0
-    .param p2    # Lcom/android/server/MountService$ObbState;
 
     iput-object p1, p0, Lcom/android/server/MountService$ObbAction;->this$0:Lcom/android/server/MountService;
 
@@ -44,7 +43,6 @@
 # virtual methods
 .method public execute(Lcom/android/server/MountService$ObbActionHandler;)V
     .locals 4
-    .param p1    # Lcom/android/server/MountService$ObbActionHandler;
 
     const/4 v3, 0x3
 
@@ -241,7 +239,6 @@
 
 .method protected sendNewStatusOrIgnore(I)V
     .locals 4
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/server/MountService$ObbAction;->mObbState:Lcom/android/server/MountService$ObbState;
 

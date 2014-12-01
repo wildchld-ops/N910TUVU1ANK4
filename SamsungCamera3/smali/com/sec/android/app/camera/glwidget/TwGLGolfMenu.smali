@@ -317,10 +317,6 @@
 
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;ILcom/sec/android/glview/TwGLViewGroup;Lcom/sec/android/app/camera/MenuResourceDepot;)V
     .locals 8
-    .param p1    # Lcom/sec/android/app/camera/Camera;
-    .param p2    # I
-    .param p3    # Lcom/sec/android/glview/TwGLViewGroup;
-    .param p4    # Lcom/sec/android/app/camera/MenuResourceDepot;
 
     const/4 v5, 0x6
 
@@ -769,7 +765,6 @@
 
 .method static synthetic access$000(Lcom/sec/android/app/camera/glwidget/TwGLGolfMenu;)Lcom/sec/android/app/camera/Camera;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLGolfMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLGolfMenu;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -778,8 +773,6 @@
 
 .method static synthetic access$102(Lcom/sec/android/app/camera/glwidget/TwGLGolfMenu;I)I
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLGolfMenu;
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLGolfMenu;->mCount:I
 
@@ -788,7 +781,6 @@
 
 .method static synthetic access$110(Lcom/sec/android/app/camera/glwidget/TwGLGolfMenu;)I
     .locals 2
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLGolfMenu;
 
     iget v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLGolfMenu;->mCount:I
 
@@ -809,7 +801,6 @@
 
 .method static synthetic access$300(Lcom/sec/android/app/camera/glwidget/TwGLGolfMenu;)Lcom/sec/android/app/camera/Camera;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLGolfMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLGolfMenu;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -818,7 +809,6 @@
 
 .method static synthetic access$400(Lcom/sec/android/app/camera/glwidget/TwGLGolfMenu;)Lcom/sec/android/glview/TwGLImage;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLGolfMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLGolfMenu;->mGolfImage:Lcom/sec/android/glview/TwGLImage;
 
@@ -827,7 +817,6 @@
 
 .method static synthetic access$500(Lcom/sec/android/app/camera/glwidget/TwGLGolfMenu;)Lcom/sec/android/app/camera/Camera;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLGolfMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLGolfMenu;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -836,7 +825,6 @@
 
 .method static synthetic access$600(Lcom/sec/android/app/camera/glwidget/TwGLGolfMenu;)I
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLGolfMenu;
 
     iget v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLGolfMenu;->mOrientation:I
 
@@ -845,8 +833,6 @@
 
 .method static synthetic access$602(Lcom/sec/android/app/camera/glwidget/TwGLGolfMenu;I)I
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLGolfMenu;
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLGolfMenu;->mOrientation:I
 
@@ -855,7 +841,6 @@
 
 .method static synthetic access$700(Lcom/sec/android/app/camera/glwidget/TwGLGolfMenu;)Lcom/sec/android/app/camera/Camera;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLGolfMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLGolfMenu;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -1117,7 +1102,6 @@
 
 .method public onGolfshotError(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLGolfMenu;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -1172,8 +1156,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x1
 
@@ -1247,8 +1229,6 @@
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/16 v5, 0x1b
 
@@ -1399,7 +1379,6 @@
 
 .method public onOrientationChanged(I)V
     .locals 5
-    .param p1    # I
 
     const/4 v4, 0x4
 
@@ -1629,7 +1608,6 @@
 
 .method public setGolfImageLeftRight(I)V
     .locals 5
-    .param p1    # I
 
     const/4 v4, 0x4
 
@@ -1721,28 +1699,24 @@
 
 .method public setPostCaptureProgress(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public setPostCaptureProgressMax(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public setRederingProgress(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public setShutterButtonDim(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLGolfMenu;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -2075,7 +2049,6 @@
 
 .method public storeGolfimage([B)V
     .locals 12
-    .param p1    # [B
 
     const/4 v11, 0x0
 

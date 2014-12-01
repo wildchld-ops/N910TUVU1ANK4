@@ -72,7 +72,7 @@
 
     iget-object v6, p0, Lcom/android/phone/PhoneGlobals$11;->this$0:Lcom/android/phone/PhoneGlobals;
 
-    invoke-virtual {v6}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v6}, Lcom/android/phone/PhoneGlobals;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v6
 

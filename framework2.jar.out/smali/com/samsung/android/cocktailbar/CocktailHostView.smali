@@ -18,8 +18,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Lcom/samsung/android/cocktailbar/Cocktail;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/samsung/android/cocktailbar/Cocktail;
 
     invoke-direct {p0, p1}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;)V
 
@@ -58,7 +56,6 @@
 
 .method public setCocktail(Lcom/samsung/android/cocktailbar/Cocktail;)V
     .locals 1
-    .param p1    # Lcom/samsung/android/cocktailbar/Cocktail;
 
     const/4 v0, -0x1
 
@@ -80,7 +77,6 @@
 
 .method public setUserId(I)V
     .locals 1
-    .param p1    # I
 
     new-instance v0, Landroid/os/UserHandle;
 
@@ -93,7 +89,6 @@
 
 .method public viewDataChanged(I)V
     .locals 5
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

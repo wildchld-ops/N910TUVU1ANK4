@@ -78,7 +78,6 @@
 
 .method private constructor <init>(Landroid/graphics/drawable/GradientDrawable$GradientState;)V
     .locals 2
-    .param p1    # Landroid/graphics/drawable/GradientDrawable$GradientState;
 
     const/4 v1, 0x1
 
@@ -123,8 +122,6 @@
 
 .method synthetic constructor <init>(Landroid/graphics/drawable/GradientDrawable$GradientState;Landroid/graphics/drawable/GradientDrawable$1;)V
     .locals 0
-    .param p1    # Landroid/graphics/drawable/GradientDrawable$GradientState;
-    .param p2    # Landroid/graphics/drawable/GradientDrawable$1;
 
     invoke-direct {p0, p1}, Landroid/graphics/drawable/GradientDrawable;-><init>(Landroid/graphics/drawable/GradientDrawable$GradientState;)V
 
@@ -133,8 +130,6 @@
 
 .method public constructor <init>(Landroid/graphics/drawable/GradientDrawable$Orientation;[I)V
     .locals 1
-    .param p1    # Landroid/graphics/drawable/GradientDrawable$Orientation;
-    .param p2    # [I
 
     new-instance v0, Landroid/graphics/drawable/GradientDrawable$GradientState;
 
@@ -147,7 +142,6 @@
 
 .method private buildRing(Landroid/graphics/drawable/GradientDrawable$GradientState;)Landroid/graphics/Path;
     .locals 14
-    .param p1    # Landroid/graphics/drawable/GradientDrawable$GradientState;
 
     const/4 v13, -0x1
 
@@ -1032,9 +1026,6 @@
 
 .method private static getFloatOrFraction(Landroid/content/res/TypedArray;IF)F
     .locals 6
-    .param p0    # Landroid/content/res/TypedArray;
-    .param p1    # I
-    .param p2    # F
 
     const/high16 v5, 0x3f800000
 
@@ -1080,7 +1071,6 @@
 
 .method private initializeWithState(Landroid/graphics/drawable/GradientDrawable$GradientState;)V
     .locals 6
-    .param p1    # Landroid/graphics/drawable/GradientDrawable$GradientState;
 
     const/4 v5, 0x1
 
@@ -1185,7 +1175,6 @@
 
 .method private modulateAlpha(I)I
     .locals 3
-    .param p1    # I
 
     iget v1, p0, Landroid/graphics/drawable/GradientDrawable;->mAlpha:I
 
@@ -1206,7 +1195,6 @@
 # virtual methods
 .method public draw(Landroid/graphics/Canvas;)V
     .locals 21
-    .param p1    # Landroid/graphics/Canvas;
 
     invoke-direct/range {p0 .. p0}, Landroid/graphics/drawable/GradientDrawable;->ensureValidRect()Z
 
@@ -1995,7 +1983,6 @@
 
 .method public getPadding(Landroid/graphics/Rect;)Z
     .locals 1
-    .param p1    # Landroid/graphics/Rect;
 
     iget-object v0, p0, Landroid/graphics/drawable/GradientDrawable;->mPadding:Landroid/graphics/Rect;
 
@@ -2020,9 +2007,6 @@
 
 .method public inflate(Landroid/content/res/Resources;Lorg/xmlpull/v1/XmlPullParser;Landroid/util/AttributeSet;)V
     .locals 37
-    .param p1    # Landroid/content/res/Resources;
-    .param p2    # Lorg/xmlpull/v1/XmlPullParser;
-    .param p3    # Landroid/util/AttributeSet;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -3442,7 +3426,6 @@
 
 .method protected onBoundsChange(Landroid/graphics/Rect;)V
     .locals 2
-    .param p1    # Landroid/graphics/Rect;
 
     const/4 v1, 0x1
 
@@ -3461,7 +3444,6 @@
 
 .method protected onLevelChange(I)Z
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -3478,7 +3460,6 @@
 
 .method public setAlpha(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/graphics/drawable/GradientDrawable;->mAlpha:I
 
@@ -3494,7 +3475,6 @@
 
 .method public setColor(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/graphics/drawable/GradientDrawable;->mGradientState:Landroid/graphics/drawable/GradientDrawable$GradientState;
 
@@ -3511,7 +3491,6 @@
 
 .method public setColorFilter(Landroid/graphics/ColorFilter;)V
     .locals 1
-    .param p1    # Landroid/graphics/ColorFilter;
 
     iget-object v0, p0, Landroid/graphics/drawable/GradientDrawable;->mColorFilter:Landroid/graphics/ColorFilter;
 
@@ -3527,7 +3506,6 @@
 
 .method public setColors([I)V
     .locals 1
-    .param p1    # [I
 
     iget-object v0, p0, Landroid/graphics/drawable/GradientDrawable;->mGradientState:Landroid/graphics/drawable/GradientDrawable$GradientState;
 
@@ -3544,7 +3522,6 @@
 
 .method public setCornerRadii([F)V
     .locals 1
-    .param p1    # [F
 
     iget-object v0, p0, Landroid/graphics/drawable/GradientDrawable;->mGradientState:Landroid/graphics/drawable/GradientDrawable$GradientState;
 
@@ -3561,7 +3538,6 @@
 
 .method public setCornerRadius(F)V
     .locals 1
-    .param p1    # F
 
     iget-object v0, p0, Landroid/graphics/drawable/GradientDrawable;->mGradientState:Landroid/graphics/drawable/GradientDrawable$GradientState;
 
@@ -3578,7 +3554,6 @@
 
 .method public setDither(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-boolean v0, p0, Landroid/graphics/drawable/GradientDrawable;->mDither:Z
 
@@ -3594,8 +3569,6 @@
 
 .method public setGradientCenter(FF)V
     .locals 1
-    .param p1    # F
-    .param p2    # F
 
     iget-object v0, p0, Landroid/graphics/drawable/GradientDrawable;->mGradientState:Landroid/graphics/drawable/GradientDrawable$GradientState;
 
@@ -3612,7 +3585,6 @@
 
 .method public setGradientRadius(F)V
     .locals 1
-    .param p1    # F
 
     iget-object v0, p0, Landroid/graphics/drawable/GradientDrawable;->mGradientState:Landroid/graphics/drawable/GradientDrawable$GradientState;
 
@@ -3629,7 +3601,6 @@
 
 .method public setGradientType(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/graphics/drawable/GradientDrawable;->mGradientState:Landroid/graphics/drawable/GradientDrawable$GradientState;
 
@@ -3646,7 +3617,6 @@
 
 .method public setOrientation(Landroid/graphics/drawable/GradientDrawable$Orientation;)V
     .locals 1
-    .param p1    # Landroid/graphics/drawable/GradientDrawable$Orientation;
 
     iget-object v0, p0, Landroid/graphics/drawable/GradientDrawable;->mGradientState:Landroid/graphics/drawable/GradientDrawable$GradientState;
 
@@ -3663,7 +3633,6 @@
 
 .method public setShape(I)V
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -3684,8 +3653,6 @@
 
 .method public setSize(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Landroid/graphics/drawable/GradientDrawable;->mGradientState:Landroid/graphics/drawable/GradientDrawable$GradientState;
 
@@ -3702,8 +3669,6 @@
 
 .method public setStroke(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -3714,10 +3679,6 @@
 
 .method public setStroke(IIFF)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # F
-    .param p4    # F
 
     const/4 v4, 0x1
 
@@ -3786,7 +3747,6 @@
 
 .method public setUseLevel(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Landroid/graphics/drawable/GradientDrawable;->mGradientState:Landroid/graphics/drawable/GradientDrawable$GradientState;
 

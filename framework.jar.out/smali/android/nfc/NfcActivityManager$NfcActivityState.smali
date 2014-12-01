@@ -47,7 +47,6 @@
 # direct methods
 .method public constructor <init>(Landroid/nfc/NfcActivityManager;Landroid/app/Activity;)V
     .locals 2
-    .param p2    # Landroid/app/Activity;
 
     const/4 v1, 0x0
 

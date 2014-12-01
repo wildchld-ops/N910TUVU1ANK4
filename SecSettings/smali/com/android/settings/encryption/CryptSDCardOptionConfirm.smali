@@ -88,7 +88,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/encryption/CryptSDCardOptionConfirm;)V
     .locals 0
-    .param p0    # Lcom/android/settings/encryption/CryptSDCardOptionConfirm;
 
     invoke-direct {p0}, Lcom/android/settings/encryption/CryptSDCardOptionConfirm;->applyEncryptionUpdates()V
 
@@ -107,7 +106,6 @@
 
 .method private dipToFixel(I)I
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/settings/encryption/CryptSDCardOptionConfirm;->mParent:Landroid/app/Activity;
 
@@ -532,7 +530,6 @@
 
 .method private runKeyguardConfirmation(I)Z
     .locals 6
-    .param p1    # I
 
     iget-object v3, p0, Lcom/android/settings/encryption/CryptSDCardOptionConfirm;->mDem:Landroid/dirEncryption/DirEncryptionManager;
 
@@ -670,9 +667,6 @@
 # virtual methods
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     invoke-super {p0, p1, p2, p3}, Landroid/preference/PreferenceFragment;->onActivityResult(IILandroid/content/Intent;)V
 
@@ -714,7 +708,6 @@
 
 .method public onAttach(Landroid/app/Activity;)V
     .locals 2
-    .param p1    # Landroid/app/Activity;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onAttach(Landroid/app/Activity;)V
 
@@ -731,9 +724,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 5
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const/4 v4, 0x0
 

@@ -28,7 +28,6 @@
 
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     const-string v0, "/data/system/analytics/CollectedDataStore.db"
 
@@ -45,8 +44,6 @@
 
 .method static synthetic access$000(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p0, p1}, Lcom/android/server/analytics/data/collection/storage/DatabaseStorage;->isTableExists(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;)Z
 
@@ -57,8 +54,6 @@
 
 .method static synthetic access$100(Landroid/database/sqlite/SQLiteDatabase;Lcom/android/server/analytics/data/collection/storage/Table;)V
     .locals 0
-    .param p0    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p1    # Lcom/android/server/analytics/data/collection/storage/Table;
 
     invoke-static {p0, p1}, Lcom/android/server/analytics/data/collection/storage/DatabaseStorage;->preTableCreate(Landroid/database/sqlite/SQLiteDatabase;Lcom/android/server/analytics/data/collection/storage/Table;)V
 
@@ -67,8 +62,6 @@
 
 .method static synthetic access$200(Landroid/database/sqlite/SQLiteDatabase;Lcom/android/server/analytics/data/collection/storage/Table;)V
     .locals 0
-    .param p0    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p1    # Lcom/android/server/analytics/data/collection/storage/Table;
 
     invoke-static {p0, p1}, Lcom/android/server/analytics/data/collection/storage/DatabaseStorage;->createTable(Landroid/database/sqlite/SQLiteDatabase;Lcom/android/server/analytics/data/collection/storage/Table;)V
 
@@ -77,8 +70,6 @@
 
 .method static synthetic access$300(Landroid/database/sqlite/SQLiteDatabase;Lcom/android/server/analytics/data/collection/storage/Table;)V
     .locals 0
-    .param p0    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p1    # Lcom/android/server/analytics/data/collection/storage/Table;
 
     invoke-static {p0, p1}, Lcom/android/server/analytics/data/collection/storage/DatabaseStorage;->postTableCreate(Landroid/database/sqlite/SQLiteDatabase;Lcom/android/server/analytics/data/collection/storage/Table;)V
 
@@ -87,8 +78,6 @@
 
 .method static synthetic access$400(Landroid/database/sqlite/SQLiteDatabase;Lcom/android/server/analytics/data/collection/storage/Table;)V
     .locals 0
-    .param p0    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p1    # Lcom/android/server/analytics/data/collection/storage/Table;
 
     invoke-static {p0, p1}, Lcom/android/server/analytics/data/collection/storage/DatabaseStorage;->preTableUpdate(Landroid/database/sqlite/SQLiteDatabase;Lcom/android/server/analytics/data/collection/storage/Table;)V
 
@@ -97,9 +86,6 @@
 
 .method static synthetic access$500(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Lcom/android/server/analytics/data/collection/storage/Table;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/server/analytics/data/collection/storage/Table;
 
     invoke-static {p0, p1, p2}, Lcom/android/server/analytics/data/collection/storage/DatabaseStorage;->getMissingColumns(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Lcom/android/server/analytics/data/collection/storage/Table;)Ljava/util/ArrayList;
 
@@ -110,8 +96,6 @@
 
 .method private static createTable(Landroid/database/sqlite/SQLiteDatabase;Lcom/android/server/analytics/data/collection/storage/Table;)V
     .locals 9
-    .param p0    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p1    # Lcom/android/server/analytics/data/collection/storage/Table;
 
     const/4 v8, 0x2
 
@@ -248,7 +232,6 @@
 
 .method public static declared-synchronized getInstance(Landroid/content/Context;)Lcom/android/server/analytics/data/collection/storage/DatabaseStorage;
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     const-class v1, Lcom/android/server/analytics/data/collection/storage/DatabaseStorage;
 
@@ -284,9 +267,6 @@
 
 .method private static getMissingColumns(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Lcom/android/server/analytics/data/collection/storage/Table;)Ljava/util/ArrayList;
     .locals 4
-    .param p0    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/server/analytics/data/collection/storage/Table;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -350,8 +330,6 @@
 
 .method private static getTableColumns(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;)Landroid/content/ContentValues;
     .locals 10
-    .param p0    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p1    # Ljava/lang/String;
 
     const/4 v6, 0x0
 
@@ -541,8 +519,6 @@
 
 .method private static isTableExists(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;)Z
     .locals 4
-    .param p0    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -605,33 +581,24 @@
 
 .method private static postTableCreate(Landroid/database/sqlite/SQLiteDatabase;Lcom/android/server/analytics/data/collection/storage/Table;)V
     .locals 0
-    .param p0    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p1    # Lcom/android/server/analytics/data/collection/storage/Table;
 
     return-void
 .end method
 
 .method private static preTableCreate(Landroid/database/sqlite/SQLiteDatabase;Lcom/android/server/analytics/data/collection/storage/Table;)V
     .locals 0
-    .param p0    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p1    # Lcom/android/server/analytics/data/collection/storage/Table;
 
     return-void
 .end method
 
 .method private static preTableUpdate(Landroid/database/sqlite/SQLiteDatabase;Lcom/android/server/analytics/data/collection/storage/Table;)V
     .locals 0
-    .param p0    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p1    # Lcom/android/server/analytics/data/collection/storage/Table;
 
     return-void
 .end method
 
 .method private select(Ljava/lang/String;[Ljava/lang/String;Landroid/content/ContentValues;)Landroid/database/Cursor;
     .locals 16
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # Landroid/content/ContentValues;
 
     invoke-virtual/range {p0 .. p0}, Landroid/database/sqlite/SQLiteOpenHelper;->getReadableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
@@ -818,14 +785,12 @@
 # virtual methods
 .method doCreationOrUpdatePostCommands(Landroid/database/sqlite/SQLiteDatabase;)V
     .locals 0
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
 
     return-void
 .end method
 
 .method public doTablesCreationOrUpdate(Landroid/database/sqlite/SQLiteDatabase;)V
     .locals 8
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
 
     const-string v4, "DatabaseStorage"
 
@@ -925,9 +890,6 @@
 
 .method public getValues(Ljava/lang/String;[Ljava/lang/String;Landroid/content/ContentValues;)Ljava/util/List;
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # Landroid/content/ContentValues;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1014,7 +976,6 @@
 
 .method public onConfigure(Landroid/database/sqlite/SQLiteDatabase;)V
     .locals 3
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-super {p0, p1}, Landroid/database/sqlite/SQLiteOpenHelper;->onConfigure(Landroid/database/sqlite/SQLiteDatabase;)V
 
@@ -1042,7 +1003,6 @@
 
 .method public onCreate(Landroid/database/sqlite/SQLiteDatabase;)V
     .locals 0
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {p0, p1}, Lcom/android/server/analytics/data/collection/storage/DatabaseStorage;->doTablesCreationOrUpdate(Landroid/database/sqlite/SQLiteDatabase;)V
 
@@ -1051,9 +1011,6 @@
 
 .method public onDowngrade(Landroid/database/sqlite/SQLiteDatabase;II)V
     .locals 2
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p2    # I
-    .param p3    # I
 
     const-string v0, "DatabaseStorage"
 
@@ -1066,9 +1023,6 @@
 
 .method public onUpgrade(Landroid/database/sqlite/SQLiteDatabase;II)V
     .locals 0
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p2    # I
-    .param p3    # I
 
     invoke-virtual {p0, p1}, Lcom/android/server/analytics/data/collection/storage/DatabaseStorage;->doTablesCreationOrUpdate(Landroid/database/sqlite/SQLiteDatabase;)V
 
@@ -1077,9 +1031,6 @@
 
 .method public putValues(Ljava/lang/String;Landroid/content/ContentValues;Landroid/content/ContentValues;)Z
     .locals 12
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/ContentValues;
-    .param p3    # Landroid/content/ContentValues;
 
     :try_start_0
     invoke-virtual {p0}, Landroid/database/sqlite/SQLiteOpenHelper;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
@@ -1277,8 +1228,6 @@
 
 .method public removeValues(Ljava/lang/String;Landroid/content/ContentValues;)Z
     .locals 12
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/ContentValues;
 
     const/4 v10, 0x1
 

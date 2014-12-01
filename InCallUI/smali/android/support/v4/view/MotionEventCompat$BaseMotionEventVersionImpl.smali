@@ -30,8 +30,6 @@
 # virtual methods
 .method public findPointerIndex(Landroid/view/MotionEvent;I)I
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # I
 
     if-nez p2, :cond_0
 
@@ -48,8 +46,6 @@
 
 .method public getPointerId(Landroid/view/MotionEvent;I)I
     .locals 2
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # I
 
     if-nez p2, :cond_0
 
@@ -69,8 +65,6 @@
 
 .method public getX(Landroid/view/MotionEvent;I)F
     .locals 2
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # I
 
     if-nez p2, :cond_0
 
@@ -92,8 +86,6 @@
 
 .method public getY(Landroid/view/MotionEvent;I)F
     .locals 2
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # I
 
     if-nez p2, :cond_0
 

@@ -14,8 +14,6 @@
 
 .method private static rand(II)I
     .locals 4
-    .param p0    # I
-    .param p1    # I
 
     new-instance v2, Ljava/util/Random;
 
@@ -55,8 +53,6 @@
 
 .method public static randomstring(II)Ljava/lang/String;
     .locals 5
-    .param p0    # I
-    .param p1    # I
 
     invoke-static {p0, p1}, Lcom/android/internal/widget/RandomString;->rand(II)I
 

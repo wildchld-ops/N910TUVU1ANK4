@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Landroid/webkitsec/WebSyncManager;Landroid/webkitsec/WebSyncManager$1;)V
     .locals 0
-    .param p1    # Landroid/webkitsec/WebSyncManager;
-    .param p2    # Landroid/webkitsec/WebSyncManager$1;
 
     invoke-direct {p0, p1}, Landroid/webkitsec/WebSyncManager$SyncHandler;-><init>(Landroid/webkitsec/WebSyncManager;)V
 
@@ -43,7 +41,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 3
-    .param p1    # Landroid/os/Message;
 
     const/16 v2, 0x65
 

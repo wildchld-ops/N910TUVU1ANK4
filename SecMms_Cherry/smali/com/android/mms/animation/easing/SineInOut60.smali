@@ -78,8 +78,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -90,7 +88,6 @@
 # virtual methods
 .method public getInterpolation(F)F
     .locals 13
-    .param p1    # F
 
     const/4 v12, 0x0
 

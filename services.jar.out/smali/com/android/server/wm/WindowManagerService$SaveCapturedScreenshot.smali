@@ -51,8 +51,6 @@
 
 .method public constructor <init>(Lcom/android/server/wm/WindowManagerService;Landroid/os/IBinder;Ljava/lang/String;)V
     .locals 1
-    .param p2    # Landroid/os/IBinder;
-    .param p3    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/server/wm/WindowManagerService$SaveCapturedScreenshot;->this$0:Lcom/android/server/wm/WindowManagerService;
 
@@ -77,7 +75,6 @@
 
 .method static synthetic access$3200(Lcom/android/server/wm/WindowManagerService$SaveCapturedScreenshot;)V
     .locals 0
-    .param p0    # Lcom/android/server/wm/WindowManagerService$SaveCapturedScreenshot;
 
     invoke-direct {p0}, Lcom/android/server/wm/WindowManagerService$SaveCapturedScreenshot;->checkCaptureFolder()V
 
@@ -684,7 +681,6 @@
 
 .method private removeFolder(Ljava/io/File;)V
     .locals 7
-    .param p1    # Ljava/io/File;
 
     invoke-virtual {p1}, Ljava/io/File;->exists()Z
 
@@ -1891,7 +1887,6 @@
 
 .method public removeCaptureFiles(Ljava/lang/String;)V
     .locals 14
-    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 

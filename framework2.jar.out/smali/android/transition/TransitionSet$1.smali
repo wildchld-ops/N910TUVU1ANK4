@@ -37,7 +37,6 @@
 # virtual methods
 .method public onTransitionEnd(Landroid/transition/Transition;)V
     .locals 1
-    .param p1    # Landroid/transition/Transition;
 
     iget-object v0, p0, Landroid/transition/TransitionSet$1;->val$nextTransition:Landroid/transition/Transition;
 

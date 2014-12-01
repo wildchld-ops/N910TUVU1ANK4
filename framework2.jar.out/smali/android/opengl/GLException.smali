@@ -10,7 +10,6 @@
 # direct methods
 .method public constructor <init>(I)V
     .locals 1
-    .param p1    # I
 
     invoke-static {p1}, Landroid/opengl/GLException;->getErrorString(I)Ljava/lang/String;
 
@@ -25,8 +24,6 @@
 
 .method public constructor <init>(ILjava/lang/String;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p2}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
 
@@ -37,7 +34,6 @@
 
 .method private static getErrorString(I)Ljava/lang/String;
     .locals 3
-    .param p0    # I
 
     invoke-static {p0}, Landroid/opengl/GLU;->gluErrorString(I)Ljava/lang/String;
 

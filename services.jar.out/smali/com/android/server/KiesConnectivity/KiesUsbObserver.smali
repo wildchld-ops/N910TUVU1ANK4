@@ -62,7 +62,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
 
     const/4 v5, 0x0
 
@@ -261,9 +260,6 @@
 
 .method static synthetic access$100(Lcom/android/server/KiesConnectivity/KiesUsbObserver;II)V
     .locals 0
-    .param p0    # Lcom/android/server/KiesConnectivity/KiesUsbObserver;
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/KiesConnectivity/KiesUsbObserver;->sendMsg(II)V
 
@@ -272,7 +268,6 @@
 
 .method static synthetic access$200(Lcom/android/server/KiesConnectivity/KiesUsbObserver;)Lcom/android/server/KiesConnectivity/KiesUsbManager;
     .locals 1
-    .param p0    # Lcom/android/server/KiesConnectivity/KiesUsbObserver;
 
     iget-object v0, p0, Lcom/android/server/KiesConnectivity/KiesUsbObserver;->mKiesUsbManager:Lcom/android/server/KiesConnectivity/KiesUsbManager;
 
@@ -281,7 +276,6 @@
 
 .method static synthetic access$300(Lcom/android/server/KiesConnectivity/KiesUsbObserver;)I
     .locals 1
-    .param p0    # Lcom/android/server/KiesConnectivity/KiesUsbObserver;
 
     invoke-direct {p0}, Lcom/android/server/KiesConnectivity/KiesUsbObserver;->getUsbMode()I
 
@@ -401,8 +395,6 @@
 
 .method private sendMsg(II)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     const/4 v1, -0x1
 

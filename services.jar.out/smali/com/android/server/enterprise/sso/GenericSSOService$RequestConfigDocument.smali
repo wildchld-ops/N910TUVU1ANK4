@@ -23,7 +23,6 @@
 # direct methods
 .method constructor <init>(Lorg/w3c/dom/Document;)V
     .locals 1
-    .param p1    # Lorg/w3c/dom/Document;
 
     const/4 v0, 0x0
 
@@ -42,7 +41,6 @@
 
 .method static synthetic access$1000(Lcom/android/server/enterprise/sso/GenericSSOService$RequestConfigDocument;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/sso/GenericSSOService$RequestConfigDocument;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/sso/GenericSSOService$RequestConfigDocument;->getEnrolledSSOPackageName()Ljava/lang/String;
 
@@ -53,7 +51,6 @@
 
 .method static synthetic access$400(Lcom/android/server/enterprise/sso/GenericSSOService$RequestConfigDocument;)Lorg/w3c/dom/Node;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/sso/GenericSSOService$RequestConfigDocument;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/sso/GenericSSOService$RequestConfigDocument;->getEnrolledSSOVendor()Lorg/w3c/dom/Node;
 
@@ -64,7 +61,6 @@
 
 .method static synthetic access$500(Lcom/android/server/enterprise/sso/GenericSSOService$RequestConfigDocument;)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/sso/GenericSSOService$RequestConfigDocument;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/sso/GenericSSOService$RequestConfigDocument;->update()V
 

@@ -30,7 +30,6 @@
 # virtual methods
 .method public isActiveNetworkMetered(Landroid/net/ConnectivityManager;)Z
     .locals 1
-    .param p1    # Landroid/net/ConnectivityManager;
 
     invoke-static {p1}, Landroid/support/v4/net/ConnectivityManagerCompatHoneycombMR2;->isActiveNetworkMetered(Landroid/net/ConnectivityManager;)Z
 

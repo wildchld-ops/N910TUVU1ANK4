@@ -14,8 +14,6 @@
 
 .method public static applyStyle(ILandroid/view/View;)V
     .locals 3
-    .param p0    # I
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
 
@@ -36,8 +34,6 @@
 
 .method public static applyStyle(ILandroid/widget/LinearLayout;)V
     .locals 3
-    .param p0    # I
-    .param p1    # Landroid/widget/LinearLayout;
 
     invoke-static {p0, p1}, Lcom/android/launcher2/RotateHelper;->applyStyle(ILandroid/view/View;)V
 
@@ -60,8 +56,6 @@
 
 .method public static applyStyle(ILandroid/widget/TextView;)V
     .locals 3
-    .param p0    # I
-    .param p1    # Landroid/widget/TextView;
 
     invoke-static {p0, p1}, Lcom/android/launcher2/RotateHelper;->applyStyle(ILandroid/view/View;)V
 
@@ -84,8 +78,6 @@
 
 .method public static applyStyleLayout(ILandroid/view/View;)V
     .locals 8
-    .param p0    # I
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
@@ -385,8 +377,6 @@
 
 .method public static setLinearLayoutAttributes(Landroid/content/res/TypedArray;Landroid/widget/LinearLayout;)V
     .locals 5
-    .param p0    # Landroid/content/res/TypedArray;
-    .param p1    # Landroid/widget/LinearLayout;
 
     const/4 v4, 0x0
 
@@ -522,8 +512,6 @@
 
 .method public static setTextViewAttributes(Landroid/content/res/TypedArray;Landroid/widget/TextView;)V
     .locals 11
-    .param p0    # Landroid/content/res/TypedArray;
-    .param p1    # Landroid/widget/TextView;
 
     const/high16 v10, -0x40800000
 
@@ -699,8 +687,6 @@
 
 .method public static setViewAttributes(Landroid/content/res/TypedArray;Landroid/view/View;)V
     .locals 12
-    .param p0    # Landroid/content/res/TypedArray;
-    .param p1    # Landroid/view/View;
 
     const/high16 v10, 0x3f800000
 

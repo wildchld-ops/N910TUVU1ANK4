@@ -101,8 +101,6 @@
 
 .method private enableShowApEvent(Landroid/net/wifi/WifiManager;Z)V
     .locals 5
-    .param p1    # Landroid/net/wifi/WifiManager;
-    .param p2    # Z
 
     iget-boolean v2, p0, Lcom/android/systemui/wifi/WifiStatusReceiver;->mEnableShowApEventFlag:Z
 
@@ -169,7 +167,6 @@
 
 .method public static enableToShowWifiPickerDialog(Z)V
     .locals 3
-    .param p0    # Z
 
     sget-boolean v0, Lcom/android/systemui/wifi/WifiStatusReceiver;->DEBUG:Z
 
@@ -271,7 +268,6 @@
 
 .method private isTablet(Landroid/content/Context;)Z
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -288,7 +284,6 @@
 
 .method private launchHS20Browser(Landroid/content/Context;)V
     .locals 7
-    .param p1    # Landroid/content/Context;
 
     const-string v4, "WifiStatusReceiver"
 
@@ -390,8 +385,6 @@
 
 .method private readSdcard(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
     .locals 9
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -554,7 +547,6 @@
 
 .method public static removeDoubleQuotes(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     const/16 v3, 0x22
 
@@ -594,7 +586,6 @@
 
 .method private startWifiPickerActivity(Landroid/content/Context;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
 
     new-instance v1, Landroid/content/Intent;
 
@@ -648,8 +639,6 @@
 
 .method private startWifiPickerDialog(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     sget-boolean v2, Lcom/android/systemui/wifi/WifiStatusReceiver;->DEBUG:Z
 
@@ -706,8 +695,6 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 30
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     invoke-virtual/range {p2 .. p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 

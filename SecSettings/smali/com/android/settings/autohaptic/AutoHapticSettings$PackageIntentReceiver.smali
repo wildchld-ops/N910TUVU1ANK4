@@ -23,7 +23,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/settings/autohaptic/AutoHapticSettings;Landroid/content/Context;)V
     .locals 0
-    .param p2    # Landroid/content/Context;
 
     iput-object p1, p0, Lcom/android/settings/autohaptic/AutoHapticSettings$PackageIntentReceiver;->this$0:Lcom/android/settings/autohaptic/AutoHapticSettings;
 
@@ -38,8 +37,6 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 8
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 

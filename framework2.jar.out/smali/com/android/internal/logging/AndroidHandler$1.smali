@@ -27,7 +27,6 @@
 # virtual methods
 .method public format(Ljava/util/logging/LogRecord;)Ljava/lang/String;
     .locals 5
-    .param p1    # Ljava/util/logging/LogRecord;
 
     invoke-virtual {p1}, Ljava/util/logging/LogRecord;->getThrown()Ljava/lang/Throwable;
 

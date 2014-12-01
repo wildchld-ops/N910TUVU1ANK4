@@ -33,8 +33,6 @@
 # virtual methods
 .method public onDataConnectionStateChanged(II)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     const-wide/16 v2, 0x0
 

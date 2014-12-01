@@ -88,8 +88,6 @@
 
 .method public static getNetworkInfoFromBroadcast(Landroid/net/ConnectivityManager;Landroid/content/Intent;)Landroid/net/NetworkInfo;
     .locals 2
-    .param p0    # Landroid/net/ConnectivityManager;
-    .param p1    # Landroid/content/Intent;
 
     const-string v1, "networkInfo"
 
@@ -112,7 +110,6 @@
 
 .method public static isActiveNetworkMetered(Landroid/net/ConnectivityManager;)Z
     .locals 1
-    .param p0    # Landroid/net/ConnectivityManager;
 
     sget-object v0, Landroid/support/v4/net/ConnectivityManagerCompat;->IMPL:Landroid/support/v4/net/ConnectivityManagerCompat$ConnectivityManagerCompatImpl;
 

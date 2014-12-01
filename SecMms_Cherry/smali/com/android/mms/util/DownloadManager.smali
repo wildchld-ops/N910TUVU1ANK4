@@ -62,7 +62,6 @@
 
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
 
     const/4 v5, 0x1
 
@@ -257,7 +256,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/util/DownloadManager;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/util/DownloadManager;
 
     iget-boolean v0, p0, Lcom/android/mms/util/DownloadManager;->mAutoDownload:Z
 
@@ -266,8 +264,6 @@
 
 .method static synthetic access$102(Lcom/android/mms/util/DownloadManager;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/util/DownloadManager;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/util/DownloadManager;->mAutoDownload:Z
 
@@ -276,7 +272,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/util/DownloadManager;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/util/DownloadManager;
 
     iget-boolean v0, p0, Lcom/android/mms/util/DownloadManager;->mAutoDownloadSecondary:Z
 
@@ -285,8 +280,6 @@
 
 .method static synthetic access$202(Lcom/android/mms/util/DownloadManager;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/util/DownloadManager;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/util/DownloadManager;->mAutoDownloadSecondary:Z
 
@@ -295,7 +288,6 @@
 
 .method static synthetic access$300(Lcom/android/mms/util/DownloadManager;)Landroid/content/SharedPreferences;
     .locals 1
-    .param p0    # Lcom/android/mms/util/DownloadManager;
 
     iget-object v0, p0, Lcom/android/mms/util/DownloadManager;->mPreferences:Landroid/content/SharedPreferences;
 
@@ -304,7 +296,6 @@
 
 .method static synthetic access$400(Lcom/android/mms/util/DownloadManager;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/mms/util/DownloadManager;
 
     iget-object v0, p0, Lcom/android/mms/util/DownloadManager;->mContext:Landroid/content/Context;
 
@@ -313,8 +304,6 @@
 
 .method static synthetic access$500(Lcom/android/mms/util/DownloadManager;Landroid/net/Uri;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/mms/util/DownloadManager;
-    .param p1    # Landroid/net/Uri;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/google/android/mms/MmsException;
@@ -330,7 +319,6 @@
 
 .method public static getActiveUsingNetworkFeature(I)Z
     .locals 4
-    .param p0    # I
 
     const/4 v0, 0x0
 
@@ -408,7 +396,6 @@
 
 .method static getAutoDownloadState(Landroid/content/SharedPreferences;)Z
     .locals 2
-    .param p0    # Landroid/content/SharedPreferences;
 
     const/4 v1, 0x0
 
@@ -425,9 +412,6 @@
 
 .method static getAutoDownloadState(Landroid/content/SharedPreferences;ZI)Z
     .locals 9
-    .param p0    # Landroid/content/SharedPreferences;
-    .param p1    # Z
-    .param p2    # I
 
     const/4 v5, 0x0
 
@@ -827,7 +811,6 @@
 
 .method private getMessage(Landroid/net/Uri;)Ljava/lang/String;
     .locals 8
-    .param p1    # Landroid/net/Uri;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/google/android/mms/MmsException;
@@ -923,7 +906,6 @@
 
 .method public static init(Landroid/content/Context;)V
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     const-string v0, "Mms/DownloadManager"
 
@@ -995,7 +977,6 @@
 
 .method static isRoaming(I)Z
     .locals 4
-    .param p0    # I
 
     const/4 v2, 0x0
 
@@ -1076,8 +1057,6 @@
 
 .method public static setActiveUsingNetworkFeature(ZI)V
     .locals 3
-    .param p0    # Z
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -1149,7 +1128,6 @@
 # virtual methods
 .method public Isexpired(Landroid/net/Uri;)Z
     .locals 9
-    .param p1    # Landroid/net/Uri;
 
     const/4 v2, 0x0
 
@@ -1218,7 +1196,6 @@
 
 .method public getState(Landroid/net/Uri;)I
     .locals 9
-    .param p1    # Landroid/net/Uri;
 
     const/4 v5, 0x0
 
@@ -1332,7 +1309,6 @@
 
 .method public isAuto(I)Z
     .locals 3
-    .param p1    # I
 
     invoke-static {}, Lcom/android/mms/MmsConfig;->getEnableDualStandBy()Z
 
@@ -1428,7 +1404,6 @@
 
 .method public markExpriedState(Landroid/net/Uri;)V
     .locals 3
-    .param p1    # Landroid/net/Uri;
 
     const/4 v2, 0x0
 
@@ -1461,8 +1436,6 @@
 
 .method public markState(Landroid/net/Uri;I)V
     .locals 12
-    .param p1    # Landroid/net/Uri;
-    .param p2    # I
 
     const/4 v4, 0x0
 
@@ -1608,7 +1581,6 @@
 
 .method public showErrorCodeToast(I)V
     .locals 3
-    .param p1    # I
 
     move v0, p1
 
@@ -1625,7 +1597,6 @@
 
 .method public showErrorCodeToast(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     move-object v0, p1
 

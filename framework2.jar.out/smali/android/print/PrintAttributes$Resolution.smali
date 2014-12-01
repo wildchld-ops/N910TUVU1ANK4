@@ -27,10 +27,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;II)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -99,7 +95,6 @@
 
 .method static createFromParcel(Landroid/os/Parcel;)Landroid/print/PrintAttributes$Resolution;
     .locals 5
-    .param p0    # Landroid/os/Parcel;
 
     new-instance v0, Landroid/print/PrintAttributes$Resolution;
 
@@ -128,7 +123,6 @@
 # virtual methods
 .method public equals(Ljava/lang/Object;)Z
     .locals 5
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x1
 
@@ -305,7 +299,6 @@
 
 .method writeToParcel(Landroid/os/Parcel;)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     iget-object v0, p0, Landroid/print/PrintAttributes$Resolution;->mId:Ljava/lang/String;
 

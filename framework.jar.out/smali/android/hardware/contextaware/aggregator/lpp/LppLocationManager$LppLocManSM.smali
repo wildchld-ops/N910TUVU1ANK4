@@ -52,7 +52,6 @@
 # direct methods
 .method protected constructor <init>(Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager;Ljava/lang/String;)V
     .locals 2
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -185,8 +184,6 @@
 
 .method static synthetic access$1000(Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;Lcom/android/internal/util/IState;)V
     .locals 0
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;
-    .param p1    # Lcom/android/internal/util/IState;
 
     invoke-virtual {p0, p1}, Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;->transitionTo(Lcom/android/internal/util/IState;)V
 
@@ -195,8 +192,6 @@
 
 .method static synthetic access$1400(Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;I)V
     .locals 0
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;->removeMessages(I)V
 
@@ -205,7 +200,6 @@
 
 .method static synthetic access$2000(Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;)Z
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;
 
     iget-boolean v0, p0, Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;->firstTimeGps:Z
 
@@ -214,8 +208,6 @@
 
 .method static synthetic access$2002(Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;Z)Z
     .locals 0
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;->firstTimeGps:Z
 
@@ -224,7 +216,6 @@
 
 .method static synthetic access$2400(Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;)V
     .locals 0
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;
 
     invoke-direct {p0}, Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;->exit()V
 
@@ -233,8 +224,6 @@
 
 .method static synthetic access$2600(Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;I)V
     .locals 0
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;->removeMessages(I)V
 
@@ -243,7 +232,6 @@
 
 .method static synthetic access$2700(Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;)Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM$Outdoor;
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;
 
     iget-object v0, p0, Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;->mOutdoor:Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM$Outdoor;
 
@@ -252,8 +240,6 @@
 
 .method static synthetic access$2800(Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;Lcom/android/internal/util/IState;)V
     .locals 0
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;
-    .param p1    # Lcom/android/internal/util/IState;
 
     invoke-virtual {p0, p1}, Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;->transitionTo(Lcom/android/internal/util/IState;)V
 
@@ -262,8 +248,6 @@
 
 .method static synthetic access$2900(Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;Lcom/android/internal/util/IState;)V
     .locals 0
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;
-    .param p1    # Lcom/android/internal/util/IState;
 
     invoke-virtual {p0, p1}, Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;->transitionTo(Lcom/android/internal/util/IState;)V
 
@@ -272,7 +256,6 @@
 
 .method static synthetic access$3000(Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;)Z
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;
 
     invoke-direct {p0}, Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;->isWifiAvailable()Z
 
@@ -283,7 +266,6 @@
 
 .method static synthetic access$3100(Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;)Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM$Indoor;
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;
 
     iget-object v0, p0, Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;->mIndoor:Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM$Indoor;
 
@@ -292,8 +274,6 @@
 
 .method static synthetic access$3200(Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;Lcom/android/internal/util/IState;)V
     .locals 0
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;
-    .param p1    # Lcom/android/internal/util/IState;
 
     invoke-virtual {p0, p1}, Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;->transitionTo(Lcom/android/internal/util/IState;)V
 
@@ -302,7 +282,6 @@
 
 .method static synthetic access$3300(Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;)Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM$Restricted;
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;
 
     iget-object v0, p0, Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;->mRestricted:Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM$Restricted;
 
@@ -311,8 +290,6 @@
 
 .method static synthetic access$3400(Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;Lcom/android/internal/util/IState;)V
     .locals 0
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;
-    .param p1    # Lcom/android/internal/util/IState;
 
     invoke-virtual {p0, p1}, Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;->transitionTo(Lcom/android/internal/util/IState;)V
 
@@ -321,8 +298,6 @@
 
 .method static synthetic access$3500(Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;I)V
     .locals 0
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;->removeMessages(I)V
 
@@ -331,8 +306,6 @@
 
 .method static synthetic access$3600(Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;Lcom/android/internal/util/IState;)V
     .locals 0
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;
-    .param p1    # Lcom/android/internal/util/IState;
 
     invoke-virtual {p0, p1}, Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;->transitionTo(Lcom/android/internal/util/IState;)V
 
@@ -341,8 +314,6 @@
 
 .method static synthetic access$3700(Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;I)V
     .locals 0
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;->removeMessages(I)V
 
@@ -351,8 +322,6 @@
 
 .method static synthetic access$3800(Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;I)V
     .locals 0
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;->removeMessages(I)V
 
@@ -361,8 +330,6 @@
 
 .method static synthetic access$3900(Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;I)V
     .locals 0
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;->removeMessages(I)V
 
@@ -371,8 +338,6 @@
 
 .method static synthetic access$4000(Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;Lcom/android/internal/util/IState;)V
     .locals 0
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;
-    .param p1    # Lcom/android/internal/util/IState;
 
     invoke-virtual {p0, p1}, Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;->transitionTo(Lcom/android/internal/util/IState;)V
 
@@ -381,8 +346,6 @@
 
 .method static synthetic access$4100(Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;Lcom/android/internal/util/IState;)V
     .locals 0
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;
-    .param p1    # Lcom/android/internal/util/IState;
 
     invoke-virtual {p0, p1}, Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;->transitionTo(Lcom/android/internal/util/IState;)V
 
@@ -391,8 +354,6 @@
 
 .method static synthetic access$4200(Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;Lcom/android/internal/util/IState;)V
     .locals 0
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;
-    .param p1    # Lcom/android/internal/util/IState;
 
     invoke-virtual {p0, p1}, Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;->transitionTo(Lcom/android/internal/util/IState;)V
 
@@ -401,8 +362,6 @@
 
 .method static synthetic access$4300(Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;I)V
     .locals 0
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;->removeMessages(I)V
 
@@ -411,8 +370,6 @@
 
 .method static synthetic access$4400(Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;I)V
     .locals 0
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;->removeMessages(I)V
 
@@ -421,8 +378,6 @@
 
 .method static synthetic access$4500(Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;I)V
     .locals 0
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;->removeMessages(I)V
 
@@ -431,8 +386,6 @@
 
 .method static synthetic access$4600(Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;I)V
     .locals 0
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;->removeMessages(I)V
 
@@ -441,8 +394,6 @@
 
 .method static synthetic access$4700(Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;Lcom/android/internal/util/IState;)V
     .locals 0
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;
-    .param p1    # Lcom/android/internal/util/IState;
 
     invoke-virtual {p0, p1}, Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;->transitionTo(Lcom/android/internal/util/IState;)V
 
@@ -451,8 +402,6 @@
 
 .method static synthetic access$4800(Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;I)V
     .locals 0
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;->removeMessages(I)V
 
@@ -461,7 +410,6 @@
 
 .method static synthetic access$500(Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;)Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM$WalkNM;
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;
 
     iget-object v0, p0, Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;->mWalkNM:Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM$WalkNM;
 
@@ -470,7 +418,6 @@
 
 .method static synthetic access$5000(Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;)Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM$GpsBatch;
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;
 
     iget-object v0, p0, Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;->mGpsBatch:Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM$GpsBatch;
 
@@ -479,8 +426,6 @@
 
 .method static synthetic access$5100(Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;Lcom/android/internal/util/IState;)V
     .locals 0
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;
-    .param p1    # Lcom/android/internal/util/IState;
 
     invoke-virtual {p0, p1}, Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;->transitionTo(Lcom/android/internal/util/IState;)V
 
@@ -489,8 +434,6 @@
 
 .method static synthetic access$5200(Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;Lcom/android/internal/util/IState;)V
     .locals 0
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;
-    .param p1    # Lcom/android/internal/util/IState;
 
     invoke-virtual {p0, p1}, Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;->transitionTo(Lcom/android/internal/util/IState;)V
 
@@ -499,8 +442,6 @@
 
 .method static synthetic access$5300(Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;I)V
     .locals 0
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;->removeMessages(I)V
 
@@ -509,8 +450,6 @@
 
 .method static synthetic access$5500(Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;Lcom/android/internal/util/IState;)V
     .locals 0
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;
-    .param p1    # Lcom/android/internal/util/IState;
 
     invoke-virtual {p0, p1}, Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;->transitionTo(Lcom/android/internal/util/IState;)V
 
@@ -519,8 +458,6 @@
 
 .method static synthetic access$5600(Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;Lcom/android/internal/util/IState;)V
     .locals 0
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;
-    .param p1    # Lcom/android/internal/util/IState;
 
     invoke-virtual {p0, p1}, Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;->transitionTo(Lcom/android/internal/util/IState;)V
 
@@ -529,8 +466,6 @@
 
 .method static synthetic access$5700(Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;I)V
     .locals 0
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;->removeMessages(I)V
 
@@ -539,8 +474,6 @@
 
 .method static synthetic access$5900(Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;Lcom/android/internal/util/IState;)V
     .locals 0
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;
-    .param p1    # Lcom/android/internal/util/IState;
 
     invoke-virtual {p0, p1}, Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;->transitionTo(Lcom/android/internal/util/IState;)V
 
@@ -549,8 +482,6 @@
 
 .method static synthetic access$600(Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;Lcom/android/internal/util/IState;)V
     .locals 0
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;
-    .param p1    # Lcom/android/internal/util/IState;
 
     invoke-virtual {p0, p1}, Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;->transitionTo(Lcom/android/internal/util/IState;)V
 
@@ -559,8 +490,6 @@
 
 .method static synthetic access$6000(Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;Lcom/android/internal/util/IState;)V
     .locals 0
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;
-    .param p1    # Lcom/android/internal/util/IState;
 
     invoke-virtual {p0, p1}, Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;->transitionTo(Lcom/android/internal/util/IState;)V
 
@@ -569,8 +498,6 @@
 
 .method static synthetic access$6100(Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;Lcom/android/internal/util/IState;)V
     .locals 0
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;
-    .param p1    # Lcom/android/internal/util/IState;
 
     invoke-virtual {p0, p1}, Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;->transitionTo(Lcom/android/internal/util/IState;)V
 
@@ -579,8 +506,6 @@
 
 .method static synthetic access$6200(Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;I)V
     .locals 0
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;->removeMessages(I)V
 
@@ -589,8 +514,6 @@
 
 .method static synthetic access$6300(Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;Lcom/android/internal/util/IState;)V
     .locals 0
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;
-    .param p1    # Lcom/android/internal/util/IState;
 
     invoke-virtual {p0, p1}, Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;->transitionTo(Lcom/android/internal/util/IState;)V
 
@@ -599,8 +522,6 @@
 
 .method static synthetic access$6400(Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;Lcom/android/internal/util/IState;)V
     .locals 0
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;
-    .param p1    # Lcom/android/internal/util/IState;
 
     invoke-virtual {p0, p1}, Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;->transitionTo(Lcom/android/internal/util/IState;)V
 
@@ -609,8 +530,6 @@
 
 .method static synthetic access$6500(Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;Lcom/android/internal/util/IState;)V
     .locals 0
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;
-    .param p1    # Lcom/android/internal/util/IState;
 
     invoke-virtual {p0, p1}, Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;->transitionTo(Lcom/android/internal/util/IState;)V
 
@@ -619,8 +538,6 @@
 
 .method static synthetic access$6600(Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;I)V
     .locals 0
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;->removeMessages(I)V
 
@@ -629,7 +546,6 @@
 
 .method static synthetic access$700(Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;)Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM$VehNM;
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;
 
     iget-object v0, p0, Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;->mVehNM:Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM$VehNM;
 
@@ -638,8 +554,6 @@
 
 .method static synthetic access$800(Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;Lcom/android/internal/util/IState;)V
     .locals 0
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;
-    .param p1    # Lcom/android/internal/util/IState;
 
     invoke-virtual {p0, p1}, Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;->transitionTo(Lcom/android/internal/util/IState;)V
 
@@ -648,7 +562,6 @@
 
 .method static synthetic access$8200(Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;)Lcom/android/internal/util/IState;
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;
 
     invoke-direct {p0}, Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;->getState()Lcom/android/internal/util/IState;
 
@@ -659,7 +572,6 @@
 
 .method static synthetic access$900(Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;)Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM$StatNM;
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;
 
     iget-object v0, p0, Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM;->mStatNM:Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM$StatNM;
 

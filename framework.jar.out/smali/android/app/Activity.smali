@@ -391,9 +391,6 @@
 
 .method private createDialog(Ljava/lang/Integer;Landroid/os/Bundle;Landroid/os/Bundle;)Landroid/app/Dialog;
     .locals 2
-    .param p1    # Ljava/lang/Integer;
-    .param p2    # Landroid/os/Bundle;
-    .param p3    # Landroid/os/Bundle;
 
     invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
 
@@ -507,7 +504,6 @@
 
 .method private missingDialog(I)Ljava/lang/IllegalArgumentException;
     .locals 3
-    .param p1    # I
 
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -548,7 +544,6 @@
 
 .method private restoreManagedDialogs(Landroid/os/Bundle;)V
     .locals 10
-    .param p1    # Landroid/os/Bundle;
 
     const-string v7, "android:savedDialogs"
 
@@ -663,7 +658,6 @@
 
 .method private saveManagedDialogs(Landroid/os/Bundle;)V
     .locals 8
-    .param p1    # Landroid/os/Bundle;
 
     iget-object v6, p0, Landroid/app/Activity;->mManagedDialogs:Landroid/util/SparseArray;
 
@@ -758,7 +752,6 @@
 
 .method private static savedDialogArgsKeyFor(I)Ljava/lang/String;
     .locals 2
-    .param p0    # I
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -783,7 +776,6 @@
 
 .method private static savedDialogKeyFor(I)Ljava/lang/String;
     .locals 2
-    .param p0    # I
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -808,13 +800,6 @@
 
 .method private startIntentSenderForResultInner(Landroid/content/IntentSender;ILandroid/content/Intent;IILandroid/app/Activity;Landroid/os/Bundle;)V
     .locals 13
-    .param p1    # Landroid/content/IntentSender;
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Landroid/app/Activity;
-    .param p7    # Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/IntentSender$SendIntentException;
@@ -913,8 +898,6 @@
 # virtual methods
 .method public addContentView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/ViewGroup$LayoutParams;
 
     invoke-virtual {p0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
 
@@ -929,19 +912,6 @@
 
 .method final attach(Landroid/content/Context;Landroid/app/ActivityThread;Landroid/app/Instrumentation;Landroid/os/IBinder;ILandroid/app/Application;Landroid/content/Intent;Landroid/content/pm/ActivityInfo;Ljava/lang/CharSequence;Landroid/app/Activity;Ljava/lang/String;Landroid/app/Activity$NonConfigurationInstances;Landroid/content/res/Configuration;)V
     .locals 8
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/app/ActivityThread;
-    .param p3    # Landroid/app/Instrumentation;
-    .param p4    # Landroid/os/IBinder;
-    .param p5    # I
-    .param p6    # Landroid/app/Application;
-    .param p7    # Landroid/content/Intent;
-    .param p8    # Landroid/content/pm/ActivityInfo;
-    .param p9    # Ljava/lang/CharSequence;
-    .param p10    # Landroid/app/Activity;
-    .param p11    # Ljava/lang/String;
-    .param p12    # Landroid/app/Activity$NonConfigurationInstances;
-    .param p13    # Landroid/content/res/Configuration;
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->attachBaseContext(Landroid/content/Context;)V
 
@@ -1171,18 +1141,6 @@
 
 .method final attach(Landroid/content/Context;Landroid/app/ActivityThread;Landroid/app/Instrumentation;Landroid/os/IBinder;Landroid/app/Application;Landroid/content/Intent;Landroid/content/pm/ActivityInfo;Ljava/lang/CharSequence;Landroid/app/Activity;Ljava/lang/String;Landroid/app/Activity$NonConfigurationInstances;Landroid/content/res/Configuration;)V
     .locals 14
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/app/ActivityThread;
-    .param p3    # Landroid/app/Instrumentation;
-    .param p4    # Landroid/os/IBinder;
-    .param p5    # Landroid/app/Application;
-    .param p6    # Landroid/content/Intent;
-    .param p7    # Landroid/content/pm/ActivityInfo;
-    .param p8    # Ljava/lang/CharSequence;
-    .param p9    # Landroid/app/Activity;
-    .param p10    # Ljava/lang/String;
-    .param p11    # Landroid/app/Activity$NonConfigurationInstances;
-    .param p12    # Landroid/content/res/Configuration;
 
     const/4 v5, 0x0
 
@@ -1295,7 +1253,6 @@
 
 .method public convertToTranslucent(Landroid/app/Activity$TranslucentConversionListener;)V
     .locals 2
-    .param p1    # Landroid/app/Activity$TranslucentConversionListener;
 
     :try_start_0
     iput-object p1, p0, Landroid/app/Activity;->mTranslucentCallback:Landroid/app/Activity$TranslucentConversionListener;
@@ -1325,9 +1282,6 @@
 
 .method public createPendingResult(ILandroid/content/Intent;I)Landroid/app/PendingIntent;
     .locals 12
-    .param p1    # I
-    .param p2    # Landroid/content/Intent;
-    .param p3    # I
 
     invoke-virtual {p0}, Landroid/app/Activity;->getPackageName()Ljava/lang/String;
 
@@ -1408,7 +1362,6 @@
 
 .method public final dismissDialog(I)V
     .locals 2
-    .param p1    # I
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -1449,10 +1402,6 @@
 
 .method dispatchActivityResult(Ljava/lang/String;IILandroid/content/Intent;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/content/Intent;
 
     iget-object v1, p0, Landroid/app/Activity;->mFragments:Landroid/app/FragmentManagerImpl;
 
@@ -1482,7 +1431,6 @@
 
 .method public dispatchGenericMotionEvent(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual {p0}, Landroid/app/Activity;->onUserInteraction()V
 
@@ -1511,7 +1459,6 @@
 
 .method public dispatchKeyEvent(Landroid/view/KeyEvent;)Z
     .locals 3
-    .param p1    # Landroid/view/KeyEvent;
 
     invoke-virtual {p0}, Landroid/app/Activity;->onUserInteraction()V
 
@@ -1561,7 +1508,6 @@
 
 .method public dispatchKeyShortcutEvent(Landroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/KeyEvent;
 
     invoke-virtual {p0}, Landroid/app/Activity;->onUserInteraction()V
 
@@ -1594,7 +1540,6 @@
 
 .method public dispatchPopulateAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)Z
     .locals 6
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
 
     const/4 v3, 0x1
 
@@ -1664,7 +1609,6 @@
 
 .method public dispatchTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getAction()I
 
@@ -1700,7 +1644,6 @@
 
 .method public dispatchTrackballEvent(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual {p0}, Landroid/app/Activity;->onUserInteraction()V
 
@@ -1729,10 +1672,6 @@
 
 .method public dump(Ljava/lang/String;Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/io/FileDescriptor;
-    .param p3    # Ljava/io/PrintWriter;
-    .param p4    # [Ljava/lang/String;
 
     invoke-virtual {p0, p1, p2, p3, p4}, Landroid/app/Activity;->dumpInner(Ljava/lang/String;Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
 
@@ -1741,10 +1680,6 @@
 
 .method dumpInner(Ljava/lang/String;Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/io/FileDescriptor;
-    .param p3    # Ljava/io/PrintWriter;
-    .param p4    # [Ljava/lang/String;
 
     invoke-virtual {p3, p1}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
@@ -1955,7 +1890,6 @@
 
 .method public findViewById(I)Landroid/view/View;
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
 
@@ -2056,7 +1990,6 @@
 
 .method public finishActivity(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v0, p0, Landroid/app/Activity;->mParent:Landroid/app/Activity;
 
@@ -2093,8 +2026,6 @@
 
 .method public finishActivityFromChild(Landroid/app/Activity;I)V
     .locals 3
-    .param p1    # Landroid/app/Activity;
-    .param p2    # I
 
     :try_start_0
     invoke-static {}, Landroid/app/ActivityManagerNative;->getDefault()Landroid/app/IActivityManager;
@@ -2183,7 +2114,6 @@
 
 .method public finishFromChild(Landroid/app/Activity;)V
     .locals 0
-    .param p1    # Landroid/app/Activity;
 
     invoke-virtual {p0}, Landroid/app/Activity;->finish()V
 
@@ -2438,9 +2368,6 @@
 
 .method getLoaderManager(Ljava/lang/String;ZZ)Landroid/app/LoaderManagerImpl;
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # Z
 
     iget-object v1, p0, Landroid/app/Activity;->mAllLoaderManagers:Landroid/util/ArrayMap;
 
@@ -2718,7 +2645,6 @@
 
 .method public getPreferences(I)Landroid/content/SharedPreferences;
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/app/Activity;->getLocalClassName()Ljava/lang/String;
 
@@ -2781,7 +2707,6 @@
 
 .method public getSystemService(Ljava/lang/String;)Ljava/lang/Object;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Landroid/app/Activity;->getBaseContext()Landroid/content/Context;
 
@@ -3026,7 +2951,6 @@
 
 .method invalidateFragment(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Landroid/app/Activity;->mAllLoaderManagers:Landroid/util/ArrayMap;
 
@@ -3281,10 +3205,6 @@
 
 .method public final managedQuery(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
     .locals 7
-    .param p1    # Landroid/net/Uri;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -3316,11 +3236,6 @@
 
 .method public final managedQuery(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
     .locals 7
-    .param p1    # Landroid/net/Uri;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # [Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -3352,7 +3267,6 @@
 
 .method public moveTaskToBack(Z)Z
     .locals 2
-    .param p1    # Z
 
     :try_start_0
     invoke-static {}, Landroid/app/ActivityManagerNative;->getDefault()Landroid/app/IActivityManager;
@@ -3380,7 +3294,6 @@
 
 .method public navigateUpTo(Landroid/content/Intent;)Z
     .locals 8
-    .param p1    # Landroid/content/Intent;
 
     const/4 v5, 0x0
 
@@ -3477,8 +3390,6 @@
 
 .method public navigateUpToFromChild(Landroid/app/Activity;Landroid/content/Intent;)Z
     .locals 1
-    .param p1    # Landroid/app/Activity;
-    .param p2    # Landroid/content/Intent;
 
     invoke-virtual {p0, p2}, Landroid/app/Activity;->navigateUpTo(Landroid/content/Intent;)Z
 
@@ -3489,32 +3400,24 @@
 
 .method public onActionModeFinished(Landroid/view/ActionMode;)V
     .locals 0
-    .param p1    # Landroid/view/ActionMode;
 
     return-void
 .end method
 
 .method public onActionModeStarted(Landroid/view/ActionMode;)V
     .locals 0
-    .param p1    # Landroid/view/ActionMode;
 
     return-void
 .end method
 
 .method protected onActivityResult(IILandroid/content/Intent;)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     return-void
 .end method
 
 .method protected onApplyThemeResource(Landroid/content/res/Resources$Theme;IZ)V
     .locals 1
-    .param p1    # Landroid/content/res/Resources$Theme;
-    .param p2    # I
-    .param p3    # Z
 
     iget-object v0, p0, Landroid/app/Activity;->mParent:Landroid/app/Activity;
 
@@ -3552,7 +3455,6 @@
 
 .method public onAttachFragment(Landroid/app/Fragment;)V
     .locals 0
-    .param p1    # Landroid/app/Fragment;
 
     return-void
 .end method
@@ -3593,15 +3495,12 @@
 
 .method protected onChildTitleChanged(Landroid/app/Activity;Ljava/lang/CharSequence;)V
     .locals 0
-    .param p1    # Landroid/app/Activity;
-    .param p2    # Ljava/lang/CharSequence;
 
     return-void
 .end method
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 3
-    .param p1    # Landroid/content/res/Configuration;
 
     const/4 v1, 0x1
 
@@ -3686,7 +3585,6 @@
 
 .method public onContextItemSelected(Landroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # Landroid/view/MenuItem;
 
     iget-object v0, p0, Landroid/app/Activity;->mParent:Landroid/app/Activity;
 
@@ -3709,7 +3607,6 @@
 
 .method public onContextMenuClosed(Landroid/view/Menu;)V
     .locals 1
-    .param p1    # Landroid/view/Menu;
 
     iget-object v0, p0, Landroid/app/Activity;->mParent:Landroid/app/Activity;
 
@@ -3725,7 +3622,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v4, 0x1
 
@@ -3840,9 +3736,6 @@
 
 .method public onCreateContextMenu(Landroid/view/ContextMenu;Landroid/view/View;Landroid/view/ContextMenu$ContextMenuInfo;)V
     .locals 0
-    .param p1    # Landroid/view/ContextMenu;
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ContextMenu$ContextMenuInfo;
 
     return-void
 .end method
@@ -3857,7 +3750,6 @@
 
 .method protected onCreateDialog(I)Landroid/app/Dialog;
     .locals 1
-    .param p1    # I
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -3868,8 +3760,6 @@
 
 .method protected onCreateDialog(ILandroid/os/Bundle;)Landroid/app/Dialog;
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -3882,7 +3772,6 @@
 
 .method public onCreateNavigateUpTaskStack(Landroid/app/TaskStackBuilder;)V
     .locals 0
-    .param p1    # Landroid/app/TaskStackBuilder;
 
     invoke-virtual {p1, p0}, Landroid/app/TaskStackBuilder;->addParentStack(Landroid/app/Activity;)Landroid/app/TaskStackBuilder;
 
@@ -3891,7 +3780,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 1
-    .param p1    # Landroid/view/Menu;
 
     iget-object v0, p0, Landroid/app/Activity;->mParent:Landroid/app/Activity;
 
@@ -3914,8 +3802,6 @@
 
 .method public onCreatePanelMenu(ILandroid/view/Menu;)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/view/Menu;
 
     if-nez p1, :cond_0
 
@@ -3946,7 +3832,6 @@
 
 .method public onCreatePanelView(I)Landroid/view/View;
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -3955,8 +3840,6 @@
 
 .method public onCreateThumbnail(Landroid/graphics/Bitmap;Landroid/graphics/Canvas;)Z
     .locals 1
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # Landroid/graphics/Canvas;
 
     const/4 v0, 0x0
 
@@ -3965,10 +3848,6 @@
 
 .method public onCreateView(Landroid/view/View;Ljava/lang/String;Landroid/content/Context;Landroid/util/AttributeSet;)Landroid/view/View;
     .locals 10
-    .param p1    # Landroid/view/View;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/content/Context;
-    .param p4    # Landroid/util/AttributeSet;
 
     const/4 v3, 0x0
 
@@ -4347,9 +4226,6 @@
 
 .method public onCreateView(Ljava/lang/String;Landroid/content/Context;Landroid/util/AttributeSet;)Landroid/view/View;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -4492,7 +4368,6 @@
 
 .method public onGenericMotionEvent(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v0, 0x0
 
@@ -4501,8 +4376,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 9
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v7, 0x2
 
@@ -4705,8 +4578,6 @@
 
 .method public onKeyLongPress(ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x0
 
@@ -4715,9 +4586,6 @@
 
 .method public onKeyMultiple(IILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x0
 
@@ -4726,8 +4594,6 @@
 
 .method public onKeyShortcut(ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x0
 
@@ -4736,8 +4602,6 @@
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     invoke-virtual {p0}, Landroid/app/Activity;->getApplicationInfo()Landroid/content/pm/ApplicationInfo;
 
@@ -4794,8 +4658,6 @@
 
 .method public onMenuItemSelected(ILandroid/view/MenuItem;)Z
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/view/MenuItem;
 
     const v5, 0xc350
 
@@ -4942,8 +4804,6 @@
 
 .method public onMenuOpened(ILandroid/view/Menu;)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/view/Menu;
 
     const/4 v2, 0x1
 
@@ -4977,7 +4837,6 @@
 
 .method public onMultiWindowConfigurationChanged(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
 
@@ -4990,8 +4849,6 @@
 
 .method public onMultiWindowStyleChanged(Lcom/samsung/android/multiwindow/MultiWindowStyle;I)V
     .locals 1
-    .param p1    # Lcom/samsung/android/multiwindow/MultiWindowStyle;
-    .param p2    # I
 
     invoke-virtual {p0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
 
@@ -5079,7 +4936,6 @@
 
 .method public onNavigateUpFromChild(Landroid/app/Activity;)Z
     .locals 1
-    .param p1    # Landroid/app/Activity;
 
     invoke-virtual {p0}, Landroid/app/Activity;->onNavigateUp()Z
 
@@ -5090,14 +4946,12 @@
 
 .method protected onNewIntent(Landroid/content/Intent;)V
     .locals 0
-    .param p1    # Landroid/content/Intent;
 
     return-void
 .end method
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # Landroid/view/MenuItem;
 
     iget-object v0, p0, Landroid/app/Activity;->mParent:Landroid/app/Activity;
 
@@ -5120,7 +4974,6 @@
 
 .method public onOptionsMenuClosed(Landroid/view/Menu;)V
     .locals 1
-    .param p1    # Landroid/view/Menu;
 
     iget-object v0, p0, Landroid/app/Activity;->mParent:Landroid/app/Activity;
 
@@ -5136,8 +4989,6 @@
 
 .method public onPanelClosed(ILandroid/view/Menu;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/view/Menu;
 
     sparse-switch p1, :sswitch_data_0
 
@@ -5197,7 +5048,6 @@
 
 .method protected onPostCreate(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v2, 0x1
 
@@ -5255,8 +5105,6 @@
 
 .method protected onPrepareDialog(ILandroid/app/Dialog;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Landroid/app/Dialog;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -5267,9 +5115,6 @@
 
 .method protected onPrepareDialog(ILandroid/app/Dialog;Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Landroid/app/Dialog;
-    .param p3    # Landroid/os/Bundle;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -5280,14 +5125,12 @@
 
 .method public onPrepareNavigateUpTaskStack(Landroid/app/TaskStackBuilder;)V
     .locals 0
-    .param p1    # Landroid/app/TaskStackBuilder;
 
     return-void
 .end method
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)Z
     .locals 1
-    .param p1    # Landroid/view/Menu;
 
     iget-object v0, p0, Landroid/app/Activity;->mParent:Landroid/app/Activity;
 
@@ -5310,9 +5153,6 @@
 
 .method public onPreparePanel(ILandroid/view/View;Landroid/view/Menu;)Z
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/Menu;
 
     if-nez p1, :cond_0
 
@@ -5341,7 +5181,6 @@
 
 .method public onProvideAssistData(Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     return-void
 .end method
@@ -5358,7 +5197,6 @@
 
 .method protected onRestoreInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     iget-object v1, p0, Landroid/app/Activity;->mWindow:Landroid/view/Window;
 
@@ -5648,7 +5486,6 @@
 
 .method protected onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     const-string v1, "android:viewHierarchyState"
 
@@ -5783,8 +5620,6 @@
 
 .method protected onTitleChanged(Ljava/lang/CharSequence;I)V
     .locals 2
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
 
     iget-boolean v1, p0, Landroid/app/Activity;->mTitleReady:Z
 
@@ -5808,7 +5643,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-object v0, p0, Landroid/app/Activity;->mWindow:Landroid/view/Window;
 
@@ -5833,7 +5667,6 @@
 
 .method public onTrackballEvent(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v0, 0x0
 
@@ -5842,7 +5675,6 @@
 
 .method onTranslucentConversionComplete(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v0, p0, Landroid/app/Activity;->mTranslucentCallback:Landroid/app/Activity$TranslucentConversionListener;
 
@@ -5877,7 +5709,6 @@
 
 .method public onTrimMemory(I)V
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -5904,7 +5735,6 @@
 
 .method public onWindowAttributesChanged(Landroid/view/WindowManager$LayoutParams;)V
     .locals 2
-    .param p1    # Landroid/view/WindowManager$LayoutParams;
 
     iget-object v1, p0, Landroid/app/Activity;->mParent:Landroid/app/Activity;
 
@@ -5932,14 +5762,12 @@
 
 .method public onWindowFocusChanged(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method public onWindowStartingActionMode(Landroid/view/ActionMode$Callback;)Landroid/view/ActionMode;
     .locals 1
-    .param p1    # Landroid/view/ActionMode$Callback;
 
     invoke-direct {p0}, Landroid/app/Activity;->initActionBar()V
 
@@ -5964,15 +5792,12 @@
 
 .method public onWindowStatusChanged(Lcom/samsung/android/multiwindow/MultiWindowStyle;I)V
     .locals 0
-    .param p1    # Lcom/samsung/android/multiwindow/MultiWindowStyle;
-    .param p2    # I
 
     return-void
 .end method
 
 .method public openContextMenu(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p1}, Landroid/view/View;->showContextMenu()Z
 
@@ -5995,8 +5820,6 @@
 
 .method public overridePendingTransition(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     :try_start_0
     invoke-static {}, Landroid/app/ActivityManagerNative;->getDefault()Landroid/app/IActivityManager;
@@ -6024,7 +5847,6 @@
 
 .method final performCreate(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v0, 0x0
 
@@ -6365,7 +6187,6 @@
 
 .method final performRestoreInstanceState(Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->onRestoreInstanceState(Landroid/os/Bundle;)V
 
@@ -6494,7 +6315,6 @@
 
 .method final performSaveInstanceState(Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->onSaveInstanceState(Landroid/os/Bundle;)V
 
@@ -6876,7 +6696,6 @@
 
 .method public registerForContextMenu(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p1, p0}, Landroid/view/View;->setOnCreateContextMenuListener(Landroid/view/View$OnCreateContextMenuListener;)V
 
@@ -6885,7 +6704,6 @@
 
 .method public final removeDialog(I)V
     .locals 2
-    .param p1    # I
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -6949,7 +6767,6 @@
 
 .method public final requestWindowFeature(I)Z
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
 
@@ -7076,7 +6893,6 @@
 
 .method public final runOnUiThread(Ljava/lang/Runnable;)V
     .locals 2
-    .param p1    # Ljava/lang/Runnable;
 
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
 
@@ -7101,7 +6917,6 @@
 
 .method public setContentView(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
 
@@ -7116,7 +6931,6 @@
 
 .method public setContentView(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
 
@@ -7131,8 +6945,6 @@
 
 .method public setContentView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/ViewGroup$LayoutParams;
 
     invoke-virtual {p0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
 
@@ -7147,7 +6959,6 @@
 
 .method public final setDefaultKeyMode(I)V
     .locals 2
-    .param p1    # I
 
     iput p1, p0, Landroid/app/Activity;->mDefaultKeyMode:I
 
@@ -7196,8 +7007,6 @@
 
 .method public final setFeatureDrawable(ILandroid/graphics/drawable/Drawable;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {p0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
 
@@ -7210,8 +7019,6 @@
 
 .method public final setFeatureDrawableAlpha(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
 
@@ -7224,8 +7031,6 @@
 
 .method public final setFeatureDrawableResource(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
 
@@ -7238,8 +7043,6 @@
 
 .method public final setFeatureDrawableUri(ILandroid/net/Uri;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/net/Uri;
 
     invoke-virtual {p0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
 
@@ -7252,7 +7055,6 @@
 
 .method public setFinishOnTouchOutside(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Landroid/app/Activity;->mWindow:Landroid/view/Window;
 
@@ -7263,14 +7065,12 @@
 
 .method public setGlanceViewEnable(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method public setImmersive(Z)V
     .locals 2
-    .param p1    # Z
 
     :try_start_0
     invoke-static {}, Landroid/app/ActivityManagerNative;->getDefault()Landroid/app/IActivityManager;
@@ -7294,7 +7094,6 @@
 
 .method public setIntent(Landroid/content/Intent;)V
     .locals 0
-    .param p1    # Landroid/content/Intent;
 
     iput-object p1, p0, Landroid/app/Activity;->mIntent:Landroid/content/Intent;
 
@@ -7303,7 +7102,6 @@
 
 .method public setMultiWindowStyle(Lcom/samsung/android/multiwindow/MultiWindowStyle;)V
     .locals 2
-    .param p1    # Lcom/samsung/android/multiwindow/MultiWindowStyle;
 
     iget-object v1, p0, Landroid/app/Activity;->mParent:Landroid/app/Activity;
 
@@ -7337,7 +7135,6 @@
 
 .method final setParent(Landroid/app/Activity;)V
     .locals 0
-    .param p1    # Landroid/app/Activity;
 
     iput-object p1, p0, Landroid/app/Activity;->mParent:Landroid/app/Activity;
 
@@ -7346,7 +7143,6 @@
 
 .method public setPersistent(Z)V
     .locals 0
-    .param p1    # Z
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -7355,7 +7151,6 @@
 
 .method public final setProgress(I)V
     .locals 3
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
 
@@ -7372,7 +7167,6 @@
 
 .method public final setProgressBarIndeterminate(Z)V
     .locals 3
-    .param p1    # Z
 
     invoke-virtual {p0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
 
@@ -7397,7 +7191,6 @@
 
 .method public final setProgressBarIndeterminateVisibility(Z)V
     .locals 3
-    .param p1    # Z
 
     invoke-virtual {p0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
 
@@ -7422,7 +7215,6 @@
 
 .method public final setProgressBarVisibility(Z)V
     .locals 3
-    .param p1    # Z
 
     invoke-virtual {p0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
 
@@ -7447,7 +7239,6 @@
 
 .method public setRequestedOrientation(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Landroid/app/Activity;->mParent:Landroid/app/Activity;
 
@@ -7494,7 +7285,6 @@
 
 .method public final setResult(I)V
     .locals 1
-    .param p1    # I
 
     monitor-enter p0
 
@@ -7521,8 +7311,6 @@
 
 .method public final setResult(ILandroid/content/Intent;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/content/Intent;
 
     monitor-enter p0
 
@@ -7547,7 +7335,6 @@
 
 .method public final setSecondaryProgress(I)V
     .locals 3
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
 
@@ -7564,7 +7351,6 @@
 
 .method public setSubContentView(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Landroid/app/Activity;->mSubWindow:Landroid/view/Window;
 
@@ -7644,7 +7430,6 @@
 
 .method public setSubContentView(Landroid/view/View;)V
     .locals 3
-    .param p1    # Landroid/view/View;
 
     iget-object v1, p0, Landroid/app/Activity;->mSubWindow:Landroid/view/Window;
 
@@ -7722,7 +7507,6 @@
 
 .method public setTitle(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/app/Activity;->getText(I)Ljava/lang/CharSequence;
 
@@ -7735,7 +7519,6 @@
 
 .method public setTitle(Ljava/lang/CharSequence;)V
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
 
     iput-object p1, p0, Landroid/app/Activity;->mTitle:Ljava/lang/CharSequence;
 
@@ -7757,7 +7540,6 @@
 
 .method public setTitleColor(I)V
     .locals 1
-    .param p1    # I
 
     iput p1, p0, Landroid/app/Activity;->mTitleColor:I
 
@@ -7770,7 +7552,6 @@
 
 .method public setVisible(Z)V
     .locals 2
-    .param p1    # Z
 
     const/4 v1, 0x4
 
@@ -7810,7 +7591,6 @@
 
 .method public final setVolumeControlStream(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
 
@@ -7823,8 +7603,6 @@
 
 .method public setWindowMode(IZ)V
     .locals 7
-    .param p1    # I
-    .param p2    # Z
 
     new-instance v3, Lcom/samsung/android/multiwindow/MultiWindowStyle;
 
@@ -7916,7 +7694,6 @@
 
 .method public shouldUpRecreateTask(Landroid/content/Intent;)Z
     .locals 8
-    .param p1    # Landroid/content/Intent;
 
     const/4 v4, 0x0
 
@@ -7985,7 +7762,6 @@
 
 .method public final showDialog(I)V
     .locals 1
-    .param p1    # I
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -7998,8 +7774,6 @@
 
 .method public final showDialog(ILandroid/os/Bundle;)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -8072,7 +7846,6 @@
 
 .method public startActionMode(Landroid/view/ActionMode$Callback;)Landroid/view/ActionMode;
     .locals 1
-    .param p1    # Landroid/view/ActionMode$Callback;
 
     iget-object v0, p0, Landroid/app/Activity;->mWindow:Landroid/view/Window;
 
@@ -8089,7 +7862,6 @@
 
 .method public startActivities([Landroid/content/Intent;)V
     .locals 1
-    .param p1    # [Landroid/content/Intent;
 
     const/4 v0, 0x0
 
@@ -8100,8 +7872,6 @@
 
 .method public startActivities([Landroid/content/Intent;Landroid/os/Bundle;)V
     .locals 7
-    .param p1    # [Landroid/content/Intent;
-    .param p2    # Landroid/os/Bundle;
 
     iget-object v0, p0, Landroid/app/Activity;->mInstrumentation:Landroid/app/Instrumentation;
 
@@ -8128,7 +7898,6 @@
 
 .method public startActivity(Landroid/content/Intent;)V
     .locals 1
-    .param p1    # Landroid/content/Intent;
 
     const/4 v0, 0x0
 
@@ -8139,8 +7908,6 @@
 
 .method public startActivity(Landroid/content/Intent;Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Landroid/os/Bundle;
 
     const/4 v0, -0x1
 
@@ -8159,9 +7926,6 @@
 
 .method public startActivityAsUser(Landroid/content/Intent;Landroid/os/Bundle;Landroid/os/UserHandle;)V
     .locals 10
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Landroid/os/Bundle;
-    .param p3    # Landroid/os/UserHandle;
 
     const/4 v6, -0x1
 
@@ -8226,8 +7990,6 @@
 
 .method public startActivityAsUser(Landroid/content/Intent;Landroid/os/UserHandle;)V
     .locals 1
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Landroid/os/UserHandle;
 
     const/4 v0, 0x0
 
@@ -8238,8 +8000,6 @@
 
 .method public startActivityForResult(Landroid/content/Intent;I)V
     .locals 1
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -8250,9 +8010,6 @@
 
 .method public startActivityForResult(Landroid/content/Intent;ILandroid/os/Bundle;)V
     .locals 10
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
-    .param p3    # Landroid/os/Bundle;
 
     iget-object v0, p0, Landroid/app/Activity;->mParent:Landroid/app/Activity;
 
@@ -8353,9 +8110,6 @@
 
 .method public startActivityFromChild(Landroid/app/Activity;Landroid/content/Intent;I)V
     .locals 1
-    .param p1    # Landroid/app/Activity;
-    .param p2    # Landroid/content/Intent;
-    .param p3    # I
 
     const/4 v0, 0x0
 
@@ -8366,10 +8120,6 @@
 
 .method public startActivityFromChild(Landroid/app/Activity;Landroid/content/Intent;ILandroid/os/Bundle;)V
     .locals 9
-    .param p1    # Landroid/app/Activity;
-    .param p2    # Landroid/content/Intent;
-    .param p3    # I
-    .param p4    # Landroid/os/Bundle;
 
     iget-object v0, p0, Landroid/app/Activity;->mInstrumentation:Landroid/app/Instrumentation;
 
@@ -8421,9 +8171,6 @@
 
 .method public startActivityFromFragment(Landroid/app/Fragment;Landroid/content/Intent;I)V
     .locals 1
-    .param p1    # Landroid/app/Fragment;
-    .param p2    # Landroid/content/Intent;
-    .param p3    # I
 
     const/4 v0, 0x0
 
@@ -8434,10 +8181,6 @@
 
 .method public startActivityFromFragment(Landroid/app/Fragment;Landroid/content/Intent;ILandroid/os/Bundle;)V
     .locals 9
-    .param p1    # Landroid/app/Fragment;
-    .param p2    # Landroid/content/Intent;
-    .param p3    # I
-    .param p4    # Landroid/os/Bundle;
 
     iget-object v0, p0, Landroid/app/Activity;->mInstrumentation:Landroid/app/Instrumentation;
 
@@ -8489,8 +8232,6 @@
 
 .method public startActivityIfNeeded(Landroid/content/Intent;I)Z
     .locals 1
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -8503,9 +8244,6 @@
 
 .method public startActivityIfNeeded(Landroid/content/Intent;ILandroid/os/Bundle;)Z
     .locals 13
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
-    .param p3    # Landroid/os/Bundle;
 
     iget-object v0, p0, Landroid/app/Activity;->mParent:Landroid/app/Activity;
 
@@ -8603,11 +8341,6 @@
 
 .method public startIntentSender(Landroid/content/IntentSender;Landroid/content/Intent;III)V
     .locals 7
-    .param p1    # Landroid/content/IntentSender;
-    .param p2    # Landroid/content/Intent;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/IntentSender$SendIntentException;
@@ -8635,12 +8368,6 @@
 
 .method public startIntentSender(Landroid/content/IntentSender;Landroid/content/Intent;IIILandroid/os/Bundle;)V
     .locals 8
-    .param p1    # Landroid/content/IntentSender;
-    .param p2    # Landroid/content/Intent;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/IntentSender$SendIntentException;
@@ -8690,12 +8417,6 @@
 
 .method public startIntentSenderForResult(Landroid/content/IntentSender;ILandroid/content/Intent;III)V
     .locals 8
-    .param p1    # Landroid/content/IntentSender;
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/IntentSender$SendIntentException;
@@ -8725,13 +8446,6 @@
 
 .method public startIntentSenderForResult(Landroid/content/IntentSender;ILandroid/content/Intent;IIILandroid/os/Bundle;)V
     .locals 9
-    .param p1    # Landroid/content/IntentSender;
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/IntentSender$SendIntentException;
@@ -8812,13 +8526,6 @@
 
 .method public startIntentSenderFromChild(Landroid/app/Activity;Landroid/content/IntentSender;ILandroid/content/Intent;III)V
     .locals 9
-    .param p1    # Landroid/app/Activity;
-    .param p2    # Landroid/content/IntentSender;
-    .param p3    # I
-    .param p4    # Landroid/content/Intent;
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/IntentSender$SendIntentException;
@@ -8850,14 +8557,6 @@
 
 .method public startIntentSenderFromChild(Landroid/app/Activity;Landroid/content/IntentSender;ILandroid/content/Intent;IIILandroid/os/Bundle;)V
     .locals 8
-    .param p1    # Landroid/app/Activity;
-    .param p2    # Landroid/content/IntentSender;
-    .param p3    # I
-    .param p4    # Landroid/content/Intent;
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/IntentSender$SendIntentException;
@@ -8887,7 +8586,6 @@
 
 .method public startManagingCursor(Landroid/database/Cursor;)V
     .locals 3
-    .param p1    # Landroid/database/Cursor;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -8920,7 +8618,6 @@
 
 .method public startNextMatchingActivity(Landroid/content/Intent;)Z
     .locals 1
-    .param p1    # Landroid/content/Intent;
 
     const/4 v0, 0x0
 
@@ -8933,8 +8630,6 @@
 
 .method public startNextMatchingActivity(Landroid/content/Intent;Landroid/os/Bundle;)Z
     .locals 2
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Landroid/os/Bundle;
 
     iget-object v0, p0, Landroid/app/Activity;->mParent:Landroid/app/Activity;
 
@@ -8979,10 +8674,6 @@
 
 .method public startSearch(Ljava/lang/String;ZLandroid/os/Bundle;Z)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # Landroid/os/Bundle;
-    .param p4    # Z
 
     invoke-direct {p0}, Landroid/app/Activity;->ensureSearchManager()V
 
@@ -9007,7 +8698,6 @@
 
 .method public stopManagingCursor(Landroid/database/Cursor;)V
     .locals 5
-    .param p1    # Landroid/database/Cursor;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -9068,7 +8758,6 @@
 
 .method public takeKeyEvents(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-virtual {p0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
 
@@ -9081,8 +8770,6 @@
 
 .method public triggerSearch(Ljava/lang/String;Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Bundle;
 
     invoke-direct {p0}, Landroid/app/Activity;->ensureSearchManager()V
 
@@ -9099,7 +8786,6 @@
 
 .method public unregisterForContextMenu(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     const/4 v0, 0x0
 

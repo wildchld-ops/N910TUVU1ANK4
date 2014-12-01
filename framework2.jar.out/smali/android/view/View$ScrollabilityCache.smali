@@ -90,8 +90,6 @@
 
 .method public constructor <init>(Landroid/view/ViewConfiguration;Landroid/view/View;)V
     .locals 8
-    .param p1    # Landroid/view/ViewConfiguration;
-    .param p2    # Landroid/view/View;
 
     const/4 v6, 0x0
 
@@ -235,7 +233,6 @@
 
 .method public setFadeColor(I)V
     .locals 8
-    .param p1    # I
 
     const/high16 v5, -0x1000000
 

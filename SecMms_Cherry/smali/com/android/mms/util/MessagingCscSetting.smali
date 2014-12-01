@@ -706,7 +706,6 @@
 
 .method public static findBooleanPreferenceKey(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     invoke-static {}, Lcom/android/mms/util/MessagingCscSetting;->ensureCscKeyBooleanMap()V
 
@@ -723,7 +722,6 @@
 
 .method public static findIntegerPreferenceKey(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     invoke-static {}, Lcom/android/mms/util/MessagingCscSetting;->ensureCscKeyIntergerMap()V
 
@@ -740,7 +738,6 @@
 
 .method public static findStringPreferenceKey(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     invoke-static {}, Lcom/android/mms/util/MessagingCscSetting;->ensureCscKeyStringMap()V
 
@@ -759,7 +756,6 @@
 # virtual methods
 .method public backupCscPreferences(Landroid/content/SharedPreferences;)V
     .locals 6
-    .param p1    # Landroid/content/SharedPreferences;
 
     const/4 v5, 0x0
 
@@ -953,7 +949,6 @@
 
 .method public restoreCscPreferences(Landroid/content/SharedPreferences;)V
     .locals 7
-    .param p1    # Landroid/content/SharedPreferences;
 
     invoke-interface {p1}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
 

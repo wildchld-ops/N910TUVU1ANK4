@@ -33,7 +33,6 @@
 
 .method public constructor <init>(Landroid/inputmethodservice/InputMethodService;)V
     .locals 0
-    .param p1    # Landroid/inputmethodservice/InputMethodService;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -44,7 +43,6 @@
 
 .method private static getInputMethodManager(Landroid/content/Context;)Landroid/view/inputmethod/InputMethodManager;
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     const-string v0, "input_method"
 
@@ -59,7 +57,6 @@
 
 .method private static getVoiceImeInputMethodInfo(Landroid/view/inputmethod/InputMethodManager;)Landroid/view/inputmethod/InputMethodInfo;
     .locals 4
-    .param p0    # Landroid/view/inputmethod/InputMethodManager;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;,
@@ -121,8 +118,6 @@
 
 .method private getVoiceImeSubtype(Landroid/view/inputmethod/InputMethodManager;Landroid/view/inputmethod/InputMethodInfo;)Landroid/view/inputmethod/InputMethodSubtype;
     .locals 3
-    .param p1    # Landroid/view/inputmethod/InputMethodManager;
-    .param p2    # Landroid/view/inputmethod/InputMethodInfo;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/SecurityException;,
@@ -177,7 +172,6 @@
 
 .method private static isAuxiliaryIme(Landroid/view/inputmethod/InputMethodInfo;)Z
     .locals 5
-    .param p0    # Landroid/view/inputmethod/InputMethodInfo;
 
     const/4 v3, 0x0
 
@@ -219,7 +213,6 @@
 
 .method public static isInstalled(Landroid/content/Context;)Z
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -280,7 +273,6 @@
 
 .method public startVoiceRecognition(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     iget-object v2, p0, Lcom/google/android/voiceime/ImeTrigger;->mInputMethodService:Landroid/inputmethodservice/InputMethodService;
 

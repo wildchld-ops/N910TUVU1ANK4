@@ -26,7 +26,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/launcher2/Workspace;Lcom/android/launcher2/Workspace$State;)V
     .locals 1
-    .param p2    # Lcom/android/launcher2/Workspace$State;
 
     iput-object p1, p0, Lcom/android/launcher2/Workspace$StateChangeRunnable;->this$0:Lcom/android/launcher2/Workspace;
 

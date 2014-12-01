@@ -60,7 +60,6 @@
 
 .method static synthetic access$000(Lcom/android/server/SecSCTimeReceiver;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/server/SecSCTimeReceiver;
 
     iget-object v0, p0, Lcom/android/server/SecSCTimeReceiver;->mcontext:Landroid/content/Context;
 
@@ -69,7 +68,6 @@
 
 .method static synthetic access$100(Lcom/android/server/SecSCTimeReceiver;)V
     .locals 0
-    .param p0    # Lcom/android/server/SecSCTimeReceiver;
 
     invoke-direct {p0}, Lcom/android/server/SecSCTimeReceiver;->sec_sctime_handleAutoTimeUpdation()V
 
@@ -78,7 +76,6 @@
 
 .method static synthetic access$200(J)V
     .locals 0
-    .param p0    # J
 
     invoke-static {p0, p1}, Lcom/android/server/SecSCTimeReceiver;->sec_sctime_nitzReceived(J)V
 
@@ -733,8 +730,6 @@
 # virtual methods
 .method public SCTimeOnReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     iput-object p1, p0, Lcom/android/server/SecSCTimeReceiver;->mcontext:Landroid/content/Context;
 
@@ -974,8 +969,6 @@
 
 .method public onNetworkStateChanged(JJ)V
     .locals 4
-    .param p1    # J
-    .param p3    # J
 
     const-wide/16 v1, 0x0
 
@@ -1091,8 +1084,6 @@
 
 .method public onNetworkTimeReceived(JJ)V
     .locals 6
-    .param p1    # J
-    .param p3    # J
 
     const-wide/16 v3, 0x0
 
@@ -1275,8 +1266,6 @@
 
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     const-string v0, "SecSCTimeReceiver"
 

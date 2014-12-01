@@ -114,7 +114,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/16 v0, 0x41
 
@@ -161,8 +160,6 @@
 
 .method private isOutOfBounds(Landroid/content/Context;Landroid/view/MotionEvent;)Z
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/view/MotionEvent;
 
     invoke-virtual {p2}, Landroid/view/MotionEvent;->getX()F
 
@@ -226,8 +223,6 @@
 
 .method private setPrivateFlags(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0}, Landroid/view/Window;->getAttributes()Landroid/view/WindowManager$LayoutParams;
 
@@ -264,7 +259,6 @@
 
 .method public addFlags(I)V
     .locals 0
-    .param p1    # I
 
     invoke-virtual {p0, p1, p1}, Landroid/view/Window;->setFlags(II)V
 
@@ -273,7 +267,6 @@
 
 .method public addPrivateFlags(I)V
     .locals 0
-    .param p1    # I
 
     invoke-direct {p0, p1, p1}, Landroid/view/Window;->setPrivateFlags(II)V
 
@@ -282,7 +275,6 @@
 
 .method adjustLayoutParamsForSubWindow(Landroid/view/WindowManager$LayoutParams;)V
     .locals 6
-    .param p1    # Landroid/view/WindowManager$LayoutParams;
 
     const/16 v5, 0x3e8
 
@@ -500,7 +492,6 @@
 
 .method public clearFlags(I)V
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -527,7 +518,6 @@
 
 .method public findViewById(I)Landroid/view/View;
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/view/Window;->getDecorView()Landroid/view/View;
 
@@ -671,7 +661,6 @@
 
 .method public hasFeature(I)Z
     .locals 3
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -712,7 +701,6 @@
 
 .method public injectInputEvent(Landroid/view/InputEvent;)V
     .locals 0
-    .param p1    # Landroid/view/InputEvent;
 
     return-void
 .end method
@@ -802,15 +790,12 @@
 
 .method public onMultiWindowConfigurationChanged(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onMultiWindowStyleChanged(Lcom/samsung/android/multiwindow/MultiWindowStyle;I)V
     .locals 0
-    .param p1    # Lcom/samsung/android/multiwindow/MultiWindowStyle;
-    .param p2    # I
 
     return-void
 .end method
@@ -832,7 +817,6 @@
 
 .method protected removeFeature(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -872,7 +856,6 @@
 
 .method public requestFeature(I)Z
     .locals 4
-    .param p1    # I
 
     const/4 v2, 0x1
 
@@ -933,7 +916,6 @@
 
 .method public setAttributes(Landroid/view/WindowManager$LayoutParams;)V
     .locals 2
-    .param p1    # Landroid/view/WindowManager$LayoutParams;
 
     iget-object v0, p0, Landroid/view/Window;->mWindowAttributes:Landroid/view/WindowManager$LayoutParams;
 
@@ -958,7 +940,6 @@
 
 .method public setBackgroundDrawableResource(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/view/Window;->mContext:Landroid/content/Context;
 
@@ -977,7 +958,6 @@
 
 .method public setCallback(Landroid/view/Window$Callback;)V
     .locals 0
-    .param p1    # Landroid/view/Window$Callback;
 
     iput-object p1, p0, Landroid/view/Window;->mCallback:Landroid/view/Window$Callback;
 
@@ -992,7 +972,6 @@
 
 .method public setCloseOnTouchOutside(Z)V
     .locals 1
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/view/Window;->mCloseOnTouchOutside:Z
 
@@ -1005,7 +984,6 @@
 
 .method public setCloseOnTouchOutsideIfNotSet(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-boolean v0, p0, Landroid/view/Window;->mSetCloseOnTouchOutside:Z
 
@@ -1023,7 +1001,6 @@
 
 .method public setContainer(Landroid/view/Window;)V
     .locals 1
-    .param p1    # Landroid/view/Window;
 
     iput-object p1, p0, Landroid/view/Window;->mContainer:Landroid/view/Window;
 
@@ -1060,21 +1037,18 @@
 
 .method public setDefaultIcon(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public setDefaultLogo(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method protected setDefaultWindowFormat(I)V
     .locals 2
-    .param p1    # I
 
     iput p1, p0, Landroid/view/Window;->mDefaultWindowFormat:I
 
@@ -1102,7 +1076,6 @@
 
 .method public setDimAmount(F)V
     .locals 2
-    .param p1    # F
 
     invoke-virtual {p0}, Landroid/view/Window;->getAttributes()Landroid/view/WindowManager$LayoutParams;
 
@@ -1143,8 +1116,6 @@
 
 .method public setFlags(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0}, Landroid/view/Window;->getAttributes()Landroid/view/WindowManager$LayoutParams;
 
@@ -1195,7 +1166,6 @@
 
 .method public setFormat(I)V
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/view/Window;->getAttributes()Landroid/view/WindowManager$LayoutParams;
 
@@ -1235,7 +1205,6 @@
 
 .method public setGravity(I)V
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/view/Window;->getAttributes()Landroid/view/WindowManager$LayoutParams;
 
@@ -1257,15 +1226,12 @@
 
 .method public setIcon(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public setLayout(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0}, Landroid/view/Window;->getAttributes()Landroid/view/WindowManager$LayoutParams;
 
@@ -1289,22 +1255,18 @@
 
 .method public setLocalFocus(ZZ)V
     .locals 0
-    .param p1    # Z
-    .param p2    # Z
 
     return-void
 .end method
 
 .method public setLogo(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public setNoWindowDecor(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/view/Window;->mNoWindowDecor:Z
 
@@ -1313,7 +1275,6 @@
 
 .method public setSoftInputMode(I)V
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/view/Window;->getAttributes()Landroid/view/WindowManager$LayoutParams;
 
@@ -1355,7 +1316,6 @@
 
 .method public setType(I)V
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/view/Window;->getAttributes()Landroid/view/WindowManager$LayoutParams;
 
@@ -1377,15 +1337,12 @@
 
 .method public setUiOptions(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public setUiOptions(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     return-void
 .end method
@@ -1395,7 +1352,6 @@
 
 .method public setWindowAnimations(I)V
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/view/Window;->getAttributes()Landroid/view/WindowManager$LayoutParams;
 
@@ -1417,9 +1373,6 @@
 
 .method public setWindowManager(Landroid/view/WindowManager;Landroid/os/IBinder;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Landroid/view/WindowManager;
-    .param p2    # Landroid/os/IBinder;
-    .param p3    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -1430,10 +1383,6 @@
 
 .method public setWindowManager(Landroid/view/WindowManager;Landroid/os/IBinder;Ljava/lang/String;Z)V
     .locals 3
-    .param p1    # Landroid/view/WindowManager;
-    .param p2    # Landroid/os/IBinder;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Z
 
     const/4 v1, 0x1
 
@@ -1494,8 +1443,6 @@
 
 .method public shouldCloseOnTouch(Landroid/content/Context;Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/view/MotionEvent;
 
     iget-boolean v0, p0, Landroid/view/Window;->mCloseOnTouchOutside:Z
 

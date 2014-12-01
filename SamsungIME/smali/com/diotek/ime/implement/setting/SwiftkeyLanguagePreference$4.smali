@@ -33,9 +33,6 @@
 # virtual methods
 .method public onComplete(ZZZ)V
     .locals 2
-    .param p1    # Z
-    .param p2    # Z
-    .param p3    # Z
 
     iget-object v0, p0, Lcom/diotek/ime/implement/setting/SwiftkeyLanguagePreference$4;->this$0:Lcom/diotek/ime/implement/setting/SwiftkeyLanguagePreference;
 
@@ -55,8 +52,6 @@
 
 .method public onProgress(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/diotek/ime/implement/setting/SwiftkeyLanguagePreference$4;->this$0:Lcom/diotek/ime/implement/setting/SwiftkeyLanguagePreference;
 

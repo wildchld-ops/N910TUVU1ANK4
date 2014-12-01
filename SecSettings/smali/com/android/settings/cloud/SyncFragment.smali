@@ -86,7 +86,6 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/preference/PreferenceFragment;->onActivityCreated(Landroid/os/Bundle;)V
 
@@ -149,8 +148,6 @@
 
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 3
-    .param p1    # Landroid/widget/CompoundButton;
-    .param p2    # Z
 
     const/4 v1, 0x1
 
@@ -283,7 +280,6 @@
 
 .method public onPreferenceClick(Landroid/preference/Preference;)Z
     .locals 5
-    .param p1    # Landroid/preference/Preference;
 
     const/4 v3, 0x0
 
@@ -490,7 +486,6 @@
 
 .method protected updateScreen(I)V
     .locals 2
-    .param p1    # I
 
     invoke-static {}, Lcom/android/settings/cloud/CloudSettings;->getInstance()Lcom/android/settings/cloud/CloudSettings;
 

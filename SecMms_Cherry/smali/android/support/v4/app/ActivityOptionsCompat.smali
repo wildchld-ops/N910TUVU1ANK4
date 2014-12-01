@@ -22,9 +22,6 @@
 
 .method public static makeCustomAnimation(Landroid/content/Context;II)Landroid/support/v4/app/ActivityOptionsCompat;
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # I
 
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
@@ -53,11 +50,6 @@
 
 .method public static makeScaleUpAnimation(Landroid/view/View;IIII)Landroid/support/v4/app/ActivityOptionsCompat;
     .locals 2
-    .param p0    # Landroid/view/View;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
@@ -86,10 +78,6 @@
 
 .method public static makeThumbnailScaleUpAnimation(Landroid/view/View;Landroid/graphics/Bitmap;II)Landroid/support/v4/app/ActivityOptionsCompat;
     .locals 2
-    .param p0    # Landroid/view/View;
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # I
-    .param p3    # I
 
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
@@ -128,7 +116,6 @@
 
 .method public update(Landroid/support/v4/app/ActivityOptionsCompat;)V
     .locals 0
-    .param p1    # Landroid/support/v4/app/ActivityOptionsCompat;
 
     return-void
 .end method

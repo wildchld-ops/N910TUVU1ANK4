@@ -191,7 +191,6 @@
 # virtual methods
 .method public onBind(Landroid/content/Intent;)Landroid/os/IBinder;
     .locals 5
-    .param p1    # Landroid/content/Intent;
 
     sget-object v4, Landroid/widget/RemoteViewsService;->sLock:Ljava/lang/Object;
 

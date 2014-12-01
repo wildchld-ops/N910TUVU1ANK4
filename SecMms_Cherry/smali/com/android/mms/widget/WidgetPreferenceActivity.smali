@@ -124,7 +124,6 @@
 
 .method public static findIndexOfWidgetFontSize(Landroid/content/Context;)I
     .locals 5
-    .param p0    # Landroid/content/Context;
 
     sget-object v3, Lcom/android/mms/widget/WidgetPreferenceActivity;->sEntryValuesWidgetFontSize:[Ljava/lang/String;
 
@@ -190,7 +189,6 @@
 
 .method public static getCurrentWidget(Landroid/content/Context;)Ljava/lang/String;
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Landroid/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -209,7 +207,6 @@
 
 .method public static getWidgetFontSize(I)I
     .locals 2
-    .param p0    # I
 
     if-ltz p0, :cond_0
 
@@ -239,8 +236,6 @@
 
 .method public static setCurrentWidget(Landroid/content/Context;Ljava/lang/String;)V
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -308,7 +303,6 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onCreate(Landroid/os/Bundle;)V
 
@@ -332,7 +326,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 

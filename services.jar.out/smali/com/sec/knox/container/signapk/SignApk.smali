@@ -63,7 +63,6 @@
 
 .method private convertSignaturesToString([Lcom/sec/knox/container/signapk/CertSignature;)[Ljava/lang/String;
     .locals 3
-    .param p1    # [Lcom/sec/knox/container/signapk/CertSignature;
 
     if-nez p1, :cond_1
 
@@ -99,7 +98,6 @@
 
 .method private getSignaturesInternal(Ljava/lang/String;)[Lcom/sec/knox/container/signapk/CertSignature;
     .locals 20
-    .param p1    # Ljava/lang/String;
 
     move-object/from16 v13, p1
 
@@ -588,9 +586,6 @@
 
 .method private static loadCertificates(Ljava/util/jar/JarFile;Ljava/util/jar/JarEntry;[B)[Ljava/security/cert/Certificate;
     .locals 6
-    .param p0    # Ljava/util/jar/JarFile;
-    .param p1    # Ljava/util/jar/JarEntry;
-    .param p2    # [B
 
     const/4 v3, 0x0
 
@@ -763,7 +758,6 @@
 
 .method private static readBytes(Ljava/io/InputStream;)[B
     .locals 5
-    .param p0    # Ljava/io/InputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -807,7 +801,6 @@
 # virtual methods
 .method public getSignatures(Ljava/lang/String;)[Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/sec/knox/container/signapk/SignApk;->getSignaturesInternal(Ljava/lang/String;)[Lcom/sec/knox/container/signapk/CertSignature;
 

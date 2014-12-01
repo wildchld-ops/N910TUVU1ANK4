@@ -241,7 +241,6 @@
 
 .method public static setUseExperimentalWebView(Z)V
     .locals 0
-    .param p0    # Z
 
     return-void
 .end method

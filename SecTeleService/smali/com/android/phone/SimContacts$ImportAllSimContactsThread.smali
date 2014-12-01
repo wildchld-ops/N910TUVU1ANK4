@@ -74,7 +74,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->dismiss()V
+    invoke-virtual {v0}, Landroid/app/ProgressDialog;->dismiss()V
 
     :goto_0
     return-void
@@ -118,13 +118,13 @@
 
     iget-object v2, p0, Lcom/android/phone/SimContacts$ImportAllSimContactsThread;->this$0:Lcom/android/phone/SimContacts;
 
-    invoke-virtual {v2}, Lcom/android/phone/ADNList;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v2}, Lcom/android/phone/SimContacts;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
     iget-object v2, p0, Lcom/android/phone/SimContacts$ImportAllSimContactsThread;->this$0:Lcom/android/phone/SimContacts;
 
-    iget-object v2, v2, Lcom/android/phone/ADNList;->mCursor:Landroid/database/Cursor;
+    iget-object v2, v2, Lcom/android/phone/SimContacts;->mCursor:Landroid/database/Cursor;
 
     const/4 v3, -0x1
 
@@ -137,7 +137,7 @@
 
     iget-object v2, p0, Lcom/android/phone/SimContacts$ImportAllSimContactsThread;->this$0:Lcom/android/phone/SimContacts;
 
-    iget-object v2, v2, Lcom/android/phone/ADNList;->mCursor:Landroid/database/Cursor;
+    iget-object v2, v2, Lcom/android/phone/SimContacts;->mCursor:Landroid/database/Cursor;
 
     invoke-interface {v2}, Landroid/database/Cursor;->moveToNext()Z
 
@@ -147,7 +147,7 @@
 
     iget-object v2, p0, Lcom/android/phone/SimContacts$ImportAllSimContactsThread;->this$0:Lcom/android/phone/SimContacts;
 
-    iget-object v2, v2, Lcom/android/phone/ADNList;->mCursor:Landroid/database/Cursor;
+    iget-object v2, v2, Lcom/android/phone/SimContacts;->mCursor:Landroid/database/Cursor;
 
     iget-object v3, p0, Lcom/android/phone/SimContacts$ImportAllSimContactsThread;->this$0:Lcom/android/phone/SimContacts;
 
@@ -180,11 +180,11 @@
 
     move-result-object v2
 
-    invoke-virtual {v2}, Landroid/app/Dialog;->dismiss()V
+    invoke-virtual {v2}, Landroid/app/ProgressDialog;->dismiss()V
 
     iget-object v2, p0, Lcom/android/phone/SimContacts$ImportAllSimContactsThread;->this$0:Lcom/android/phone/SimContacts;
 
-    invoke-virtual {v2}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v2}, Lcom/android/phone/SimContacts;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 

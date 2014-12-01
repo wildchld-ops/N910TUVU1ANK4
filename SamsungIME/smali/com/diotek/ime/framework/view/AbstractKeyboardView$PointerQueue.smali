@@ -52,7 +52,6 @@
 
 .method static synthetic access$1000(Lcom/diotek/ime/framework/view/AbstractKeyboardView$PointerQueue;)Ljava/util/LinkedList;
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/view/AbstractKeyboardView$PointerQueue;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/AbstractKeyboardView$PointerQueue;->mQueue:Ljava/util/LinkedList;
 
@@ -63,7 +62,6 @@
 # virtual methods
 .method public add(Lcom/diotek/ime/framework/view/tracker/PointerTracker;)V
     .locals 1
-    .param p1    # Lcom/diotek/ime/framework/view/tracker/PointerTracker;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/AbstractKeyboardView$PointerQueue;->mQueue:Ljava/util/LinkedList;
 
@@ -74,7 +72,6 @@
 
 .method public cancelAllPointers(Z)V
     .locals 4
-    .param p1    # Z
 
     iget-object v3, p0, Lcom/diotek/ime/framework/view/AbstractKeyboardView$PointerQueue;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -149,7 +146,6 @@
 
 .method public cancelAllPointersExcept(Lcom/diotek/ime/framework/view/tracker/PointerTracker;)V
     .locals 3
-    .param p1    # Lcom/diotek/ime/framework/view/tracker/PointerTracker;
 
     iget-object v2, p0, Lcom/diotek/ime/framework/view/AbstractKeyboardView$PointerQueue;->mQueue:Ljava/util/LinkedList;
 
@@ -194,8 +190,6 @@
 
 .method public composeAllPointersOlderThan(Lcom/diotek/ime/framework/view/tracker/PointerTracker;J)V
     .locals 5
-    .param p1    # Lcom/diotek/ime/framework/view/tracker/PointerTracker;
-    .param p2    # J
 
     iget-object v1, p0, Lcom/diotek/ime/framework/view/AbstractKeyboardView$PointerQueue;->mQueue:Ljava/util/LinkedList;
 
@@ -276,7 +270,6 @@
 
 .method public lastIndexOf(Lcom/diotek/ime/framework/view/tracker/PointerTracker;)I
     .locals 4
-    .param p1    # Lcom/diotek/ime/framework/view/tracker/PointerTracker;
 
     iget-object v1, p0, Lcom/diotek/ime/framework/view/AbstractKeyboardView$PointerQueue;->mQueue:Ljava/util/LinkedList;
 
@@ -313,8 +306,6 @@
 
 .method public releaseAllPointersExcept(Lcom/diotek/ime/framework/view/tracker/PointerTracker;J)V
     .locals 4
-    .param p1    # Lcom/diotek/ime/framework/view/tracker/PointerTracker;
-    .param p2    # J
 
     iget-object v2, p0, Lcom/diotek/ime/framework/view/AbstractKeyboardView$PointerQueue;->mQueue:Ljava/util/LinkedList;
 
@@ -369,8 +360,6 @@
 
 .method public releaseAllPointersOlderThan(Lcom/diotek/ime/framework/view/tracker/PointerTracker;J)V
     .locals 5
-    .param p1    # Lcom/diotek/ime/framework/view/tracker/PointerTracker;
-    .param p2    # J
 
     iget-object v1, p0, Lcom/diotek/ime/framework/view/AbstractKeyboardView$PointerQueue;->mQueue:Ljava/util/LinkedList;
 
@@ -461,7 +450,6 @@
 
 .method public remove(Lcom/diotek/ime/framework/view/tracker/PointerTracker;)V
     .locals 1
-    .param p1    # Lcom/diotek/ime/framework/view/tracker/PointerTracker;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/AbstractKeyboardView$PointerQueue;->mQueue:Ljava/util/LinkedList;
 

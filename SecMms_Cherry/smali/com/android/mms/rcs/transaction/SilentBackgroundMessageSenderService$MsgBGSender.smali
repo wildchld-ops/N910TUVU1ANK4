@@ -55,9 +55,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/mms/rcs/transaction/SilentBackgroundMessageSenderService;Landroid/content/Context;Landroid/content/Intent;Ljava/lang/Runnable;)V
     .locals 5
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/content/Intent;
-    .param p4    # Ljava/lang/Runnable;
 
     const-wide/16 v2, 0x0
 
@@ -263,7 +260,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/rcs/transaction/SilentBackgroundMessageSenderService$MsgBGSender;)V
     .locals 0
-    .param p0    # Lcom/android/mms/rcs/transaction/SilentBackgroundMessageSenderService$MsgBGSender;
 
     invoke-direct {p0}, Lcom/android/mms/rcs/transaction/SilentBackgroundMessageSenderService$MsgBGSender;->sendBGMessage()V
 
@@ -786,7 +782,6 @@
 
 .method private encodeStrings([Ljava/lang/String;)[Lcom/google/android/mms/pdu/EncodedStringValue;
     .locals 5
-    .param p1    # [Ljava/lang/String;
 
     array-length v0, p1
 
@@ -820,7 +815,6 @@
 
 .method private fillMessageHeaders(Lcom/google/android/mms/pdu/SendReq;)V
     .locals 2
-    .param p1    # Lcom/google/android/mms/pdu/SendReq;
 
     iget-object v0, p0, Lcom/android/mms/rcs/transaction/SilentBackgroundMessageSenderService$MsgBGSender;->mRecipients:[Ljava/lang/String;
 
@@ -894,7 +888,6 @@
 
 .method private isRequreMMS(Landroid/net/Uri;)Z
     .locals 6
-    .param p1    # Landroid/net/Uri;
 
     const/4 v3, 0x1
 
@@ -1092,9 +1085,6 @@
 
 .method private resizeMedia(Lcom/android/mms/model/ImageModel;ILandroid/net/Uri;)V
     .locals 5
-    .param p1    # Lcom/android/mms/model/ImageModel;
-    .param p2    # I
-    .param p3    # Landroid/net/Uri;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/google/android/mms/MmsException;
@@ -1273,7 +1263,6 @@
 
 .method private sendDeleteRCSRequest(Lcom/android/mms/rcs/transaction/FallbackBundle;)V
     .locals 2
-    .param p1    # Lcom/android/mms/rcs/transaction/FallbackBundle;
 
     sget-object v1, Lcom/android/mms/rcs/transaction/SilentBackgroundMessageSenderService;->mHandler:Landroid/os/Handler;
 
@@ -1321,8 +1310,6 @@
 
 .method private sendMmsWorker(Landroid/net/Uri;Lcom/android/mms/model/SlideshowModel;)V
     .locals 11
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Lcom/android/mms/model/SlideshowModel;
 
     if-nez p1, :cond_0
 
@@ -1541,9 +1528,6 @@
 
 .method private sendSmsWorker(Ljava/lang/String;[Ljava/lang/String;J)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # J
 
     new-instance v0, Lcom/android/mms/transaction/SmsMessageSender;
 
@@ -1610,12 +1594,6 @@
 # virtual methods
 .method public getOrCreateThreadId(Landroid/content/Context;Ljava/util/Set;Ljava/lang/String;Ljava/lang/String;ZZLjava/lang/String;)J
     .locals 12
-    .param p1    # Landroid/content/Context;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Z
-    .param p6    # Z
-    .param p7    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

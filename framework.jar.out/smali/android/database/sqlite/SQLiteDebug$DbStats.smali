@@ -29,13 +29,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;JJIIII)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
-    .param p4    # J
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
-    .param p9    # I
 
     const-wide/16 v2, 0x400
 

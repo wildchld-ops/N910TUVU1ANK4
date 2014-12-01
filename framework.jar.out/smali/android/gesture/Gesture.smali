@@ -109,8 +109,6 @@
 
 .method static synthetic access$002(Landroid/gesture/Gesture;J)J
     .locals 0
-    .param p0    # Landroid/gesture/Gesture;
-    .param p1    # J
 
     iput-wide p1, p0, Landroid/gesture/Gesture;->mGestureID:J
 
@@ -119,7 +117,6 @@
 
 .method static deserialize(Ljava/io/DataInputStream;)Landroid/gesture/Gesture;
     .locals 5
-    .param p0    # Ljava/io/DataInputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -163,7 +160,6 @@
 # virtual methods
 .method public addStroke(Landroid/gesture/GestureStroke;)V
     .locals 2
-    .param p1    # Landroid/gesture/GestureStroke;
 
     iget-object v0, p0, Landroid/gesture/Gesture;->mStrokes:Ljava/util/ArrayList;
 
@@ -337,7 +333,6 @@
 
 .method serialize(Ljava/io/DataOutputStream;)V
     .locals 5
-    .param p1    # Ljava/io/DataOutputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -379,7 +374,6 @@
 
 .method setID(J)V
     .locals 0
-    .param p1    # J
 
     iput-wide p1, p0, Landroid/gesture/Gesture;->mGestureID:J
 
@@ -388,10 +382,6 @@
 
 .method public toBitmap(IIII)Landroid/graphics/Bitmap;
     .locals 13
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     sget-object v9, Landroid/graphics/Bitmap$Config;->ARGB_8888:Landroid/graphics/Bitmap$Config;
 
@@ -550,11 +540,6 @@
 
 .method public toBitmap(IIIII)Landroid/graphics/Bitmap;
     .locals 10
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     const/4 v9, 0x1
 
@@ -657,10 +642,6 @@
 
 .method public toPath(IIII)Landroid/graphics/Path;
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/4 v1, 0x0
 
@@ -683,7 +664,6 @@
 
 .method public toPath(Landroid/graphics/Path;)Landroid/graphics/Path;
     .locals 4
-    .param p1    # Landroid/graphics/Path;
 
     if-nez p1, :cond_0
 
@@ -725,11 +705,6 @@
 
 .method public toPath(Landroid/graphics/Path;IIII)Landroid/graphics/Path;
     .locals 6
-    .param p1    # Landroid/graphics/Path;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     if-nez p1, :cond_0
 
@@ -783,8 +758,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 6
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-wide v4, p0, Landroid/gesture/Gesture;->mGestureID:J
 

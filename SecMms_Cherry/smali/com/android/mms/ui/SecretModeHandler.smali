@@ -40,7 +40,6 @@
 
 .method public constructor <init>(Landroid/app/Activity;)V
     .locals 3
-    .param p1    # Landroid/app/Activity;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -135,7 +134,6 @@
 # virtual methods
 .method public isPrivateContact(Ljava/lang/String;)Z
     .locals 12
-    .param p1    # Ljava/lang/String;
 
     const/4 v11, 0x1
 
@@ -237,7 +235,6 @@
 
 .method public isSecret(J)Z
     .locals 1
-    .param p1    # J
 
     invoke-static {}, Lcom/android/mms/MmsConfig;->getEnableFingerprintService()Z
 
@@ -260,8 +257,6 @@
 
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     const-string v0, "com.samsung.android.intent.action.PRIVATE_MODE_ON"
 
@@ -327,8 +322,6 @@
 
 .method public requestIdentifyFingerPrint(JLandroid/content/Intent;)V
     .locals 6
-    .param p1    # J
-    .param p3    # Landroid/content/Intent;
 
     const/4 v5, 0x0
 
@@ -390,7 +383,6 @@
 
 .method public scheduleSecretModeChanged(Z)V
     .locals 5
-    .param p1    # Z
 
     const/4 v2, 0x0
 
@@ -429,8 +421,6 @@
 
 .method public updateSecretMode(ZZ)V
     .locals 5
-    .param p1    # Z
-    .param p2    # Z
 
     const/4 v4, 0x1
 

@@ -13,7 +13,6 @@
 # direct methods
 .method public constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,22 +33,6 @@
 
 .method public final bindApplication(Ljava/lang/String;Landroid/content/pm/ApplicationInfo;Ljava/util/List;Landroid/content/ComponentName;Ljava/lang/String;Landroid/os/ParcelFileDescriptor;ZLandroid/os/Bundle;Landroid/app/IInstrumentationWatcher;Landroid/app/IUiAutomationConnection;IZZZLandroid/content/res/Configuration;Landroid/content/res/CompatibilityInfo;Ljava/util/Map;Landroid/os/Bundle;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/pm/ApplicationInfo;
-    .param p4    # Landroid/content/ComponentName;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Landroid/os/ParcelFileDescriptor;
-    .param p7    # Z
-    .param p8    # Landroid/os/Bundle;
-    .param p9    # Landroid/app/IInstrumentationWatcher;
-    .param p10    # Landroid/app/IUiAutomationConnection;
-    .param p11    # I
-    .param p12    # Z
-    .param p13    # Z
-    .param p14    # Z
-    .param p15    # Landroid/content/res/Configuration;
-    .param p16    # Landroid/content/res/CompatibilityInfo;
-    .param p18    # Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -267,8 +250,6 @@
 
 .method public dispatchPackageBroadcast(I[Ljava/lang/String;)V
     .locals 5
-    .param p1    # I
-    .param p2    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -315,10 +296,6 @@
 
 .method public dumpActivity(Ljava/io/FileDescriptor;Landroid/os/IBinder;Ljava/lang/String;[Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Landroid/os/IBinder;
-    .param p3    # Ljava/lang/String;
-    .param p4    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -358,8 +335,6 @@
 
 .method public dumpDbInfo(Ljava/io/FileDescriptor;[Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -395,8 +370,6 @@
 
 .method public dumpGfxInfo(Ljava/io/FileDescriptor;[Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -432,9 +405,6 @@
 
 .method public dumpHeap(ZLjava/lang/String;Landroid/os/ParcelFileDescriptor;)V
     .locals 5
-    .param p1    # Z
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/os/ParcelFileDescriptor;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -494,7 +464,6 @@
 
 .method public dumpLooper(Ljava/io/FileDescriptor;)V
     .locals 5
-    .param p1    # Ljava/io/FileDescriptor;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -528,12 +497,6 @@
 
 .method public dumpMemInfo(Ljava/io/FileDescriptor;Landroid/os/Debug$MemoryInfo;ZZZ[Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Landroid/os/Debug$MemoryInfo;
-    .param p3    # Z
-    .param p4    # Z
-    .param p5    # Z
-    .param p6    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -613,9 +576,6 @@
 
 .method public dumpProvider(Ljava/io/FileDescriptor;Landroid/os/IBinder;[Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Landroid/os/IBinder;
-    .param p3    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -653,9 +613,6 @@
 
 .method public dumpService(Ljava/io/FileDescriptor;Landroid/os/IBinder;[Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Landroid/os/IBinder;
-    .param p3    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -724,10 +681,6 @@
 
 .method public profilerControl(ZLjava/lang/String;Landroid/os/ParcelFileDescriptor;I)V
     .locals 5
-    .param p1    # Z
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/os/ParcelFileDescriptor;
-    .param p4    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -789,9 +742,6 @@
 
 .method public requestAssistContextExtras(Landroid/os/IBinder;Landroid/os/IBinder;I)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Landroid/os/IBinder;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -829,7 +779,6 @@
 
 .method public final requestThumbnail(Landroid/os/IBinder;)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -863,7 +812,6 @@
 
 .method public final scheduleActivityConfigurationChanged(Landroid/os/IBinder;)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -897,10 +845,6 @@
 
 .method public final scheduleBindService(Landroid/os/IBinder;Landroid/content/Intent;ZI)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Landroid/content/Intent;
-    .param p3    # Z
-    .param p4    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -947,7 +891,6 @@
 
 .method public final scheduleConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 5
-    .param p1    # Landroid/content/res/Configuration;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -983,7 +926,6 @@
 
 .method public scheduleCrash(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1017,9 +959,6 @@
 
 .method public final scheduleCreateBackupAgent(Landroid/content/pm/ApplicationInfo;Landroid/content/res/CompatibilityInfo;I)V
     .locals 5
-    .param p1    # Landroid/content/pm/ApplicationInfo;
-    .param p2    # Landroid/content/res/CompatibilityInfo;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1059,10 +998,6 @@
 
 .method public final scheduleCreateService(Landroid/os/IBinder;Landroid/content/pm/ServiceInfo;Landroid/content/res/CompatibilityInfo;I)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Landroid/content/pm/ServiceInfo;
-    .param p3    # Landroid/content/res/CompatibilityInfo;
-    .param p4    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1104,9 +1039,6 @@
 
 .method public final scheduleDestroyActivity(Landroid/os/IBinder;ZI)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Z
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1154,8 +1086,6 @@
 
 .method public final scheduleDestroyBackupAgent(Landroid/content/pm/ApplicationInfo;Landroid/content/res/CompatibilityInfo;)V
     .locals 5
-    .param p1    # Landroid/content/pm/ApplicationInfo;
-    .param p2    # Landroid/content/res/CompatibilityInfo;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1193,7 +1123,6 @@
 
 .method public final scheduleDisplayMetricsChanged(Landroid/view/DisplayInfo;)V
     .locals 5
-    .param p1    # Landroid/view/DisplayInfo;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1260,7 +1189,6 @@
 
 .method public scheduleInstallProvider(Landroid/content/pm/ProviderInfo;)V
     .locals 5
-    .param p1    # Landroid/content/pm/ProviderInfo;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1296,19 +1224,6 @@
 
 .method public final scheduleLaunchActivity(Landroid/content/Intent;Landroid/os/IBinder;ILandroid/content/pm/ActivityInfo;Landroid/content/res/Configuration;Landroid/content/res/CompatibilityInfo;ILandroid/os/Bundle;Ljava/util/List;Ljava/util/List;ZZLjava/lang/String;Landroid/os/ParcelFileDescriptor;Z)V
     .locals 6
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Landroid/os/IBinder;
-    .param p3    # I
-    .param p4    # Landroid/content/pm/ActivityInfo;
-    .param p5    # Landroid/content/res/Configuration;
-    .param p6    # Landroid/content/res/CompatibilityInfo;
-    .param p7    # I
-    .param p8    # Landroid/os/Bundle;
-    .param p11    # Z
-    .param p12    # Z
-    .param p13    # Ljava/lang/String;
-    .param p14    # Landroid/os/ParcelFileDescriptor;
-    .param p15    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1486,9 +1401,6 @@
 
 .method public scheduleMultiWindowStyleChanged(Landroid/os/IBinder;Lcom/samsung/android/multiwindow/MultiWindowStyle;I)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Lcom/samsung/android/multiwindow/MultiWindowStyle;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1528,7 +1440,6 @@
 
 .method public scheduleNewIntent(Ljava/util/List;Landroid/os/IBinder;)V
     .locals 5
-    .param p2    # Landroid/os/IBinder;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1576,10 +1487,6 @@
 
 .method public final schedulePauseActivity(Landroid/os/IBinder;ZZI)V
     .locals 4
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Z
-    .param p3    # Z
-    .param p4    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1634,15 +1541,6 @@
 
 .method public final scheduleReceiver(Landroid/content/Intent;Landroid/content/pm/ActivityInfo;Landroid/content/res/CompatibilityInfo;ILjava/lang/String;Landroid/os/Bundle;ZII)V
     .locals 5
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Landroid/content/pm/ActivityInfo;
-    .param p3    # Landroid/content/res/CompatibilityInfo;
-    .param p4    # I
-    .param p5    # Ljava/lang/String;
-    .param p6    # Landroid/os/Bundle;
-    .param p7    # Z
-    .param p8    # I
-    .param p9    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1699,15 +1597,6 @@
 
 .method public scheduleRegisteredReceiver(Landroid/content/IIntentReceiver;Landroid/content/Intent;ILjava/lang/String;Landroid/os/Bundle;ZZII)V
     .locals 5
-    .param p1    # Landroid/content/IIntentReceiver;
-    .param p2    # Landroid/content/Intent;
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
-    .param p5    # Landroid/os/Bundle;
-    .param p6    # Z
-    .param p7    # Z
-    .param p8    # I
-    .param p9    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1778,10 +1667,6 @@
 
 .method public final scheduleRelaunchActivity(Landroid/os/IBinder;Ljava/util/List;Ljava/util/List;IZLandroid/content/res/Configuration;)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
-    .param p4    # I
-    .param p5    # Z
-    .param p6    # Landroid/content/res/Configuration;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1864,8 +1749,6 @@
 
 .method public scheduleResetTargetHeapUtilization(Landroid/os/IBinder;Ljava/lang/String;)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1901,9 +1784,6 @@
 
 .method public final scheduleResumeActivity(Landroid/os/IBinder;IZ)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # I
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1951,7 +1831,6 @@
 
 .method public final scheduleSendResult(Landroid/os/IBinder;Ljava/util/List;)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1998,11 +1877,6 @@
 
 .method public final scheduleServiceArgs(Landroid/os/IBinder;ZIILandroid/content/Intent;)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Z
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Landroid/content/Intent;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2066,8 +1940,6 @@
 
 .method public final scheduleSleeping(Landroid/os/IBinder;Z)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2113,9 +1985,6 @@
 
 .method public final scheduleStopActivity(Landroid/os/IBinder;ZI)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Z
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2163,7 +2032,6 @@
 
 .method public final scheduleStopService(Landroid/os/IBinder;)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2228,8 +2096,6 @@
 
 .method public scheduleTranslucentConversionComplete(Landroid/os/IBinder;Z)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2275,7 +2141,6 @@
 
 .method public scheduleTrimMemory(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2309,8 +2174,6 @@
 
 .method public final scheduleUnbindService(Landroid/os/IBinder;Landroid/content/Intent;)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Landroid/content/Intent;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2348,8 +2211,6 @@
 
 .method public final scheduleWindowVisibility(Landroid/os/IBinder;Z)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2395,7 +2256,6 @@
 
 .method public setCoreSettings(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2427,10 +2287,6 @@
 
 .method public setHttpProxy(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2470,12 +2326,6 @@
 
 .method public setHttpProxy(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2519,7 +2369,6 @@
 
 .method public setProcessState(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2553,7 +2402,6 @@
 
 .method public setSchedulingGroup(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2587,7 +2435,6 @@
 
 .method public unstableProviderDied(Landroid/os/IBinder;)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2621,8 +2468,6 @@
 
 .method public updatePackageCompatibilityInfo(Ljava/lang/String;Landroid/content/res/CompatibilityInfo;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/res/CompatibilityInfo;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

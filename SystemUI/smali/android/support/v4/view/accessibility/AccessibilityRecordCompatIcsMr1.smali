@@ -14,7 +14,6 @@
 
 .method public static getMaxScrollX(Ljava/lang/Object;)I
     .locals 1
-    .param p0    # Ljava/lang/Object;
 
     check-cast p0, Landroid/view/accessibility/AccessibilityRecord;
 
@@ -27,7 +26,6 @@
 
 .method public static getMaxScrollY(Ljava/lang/Object;)I
     .locals 1
-    .param p0    # Ljava/lang/Object;
 
     check-cast p0, Landroid/view/accessibility/AccessibilityRecord;
 
@@ -40,8 +38,6 @@
 
 .method public static setMaxScrollX(Ljava/lang/Object;I)V
     .locals 0
-    .param p0    # Ljava/lang/Object;
-    .param p1    # I
 
     check-cast p0, Landroid/view/accessibility/AccessibilityRecord;
 
@@ -52,8 +48,6 @@
 
 .method public static setMaxScrollY(Ljava/lang/Object;I)V
     .locals 0
-    .param p0    # Ljava/lang/Object;
-    .param p1    # I
 
     check-cast p0, Landroid/view/accessibility/AccessibilityRecord;
 

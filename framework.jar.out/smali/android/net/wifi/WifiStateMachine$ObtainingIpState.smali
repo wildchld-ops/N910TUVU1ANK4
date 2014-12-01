@@ -437,7 +437,6 @@
 
 .method public processMessage(Landroid/os/Message;)Z
     .locals 11
-    .param p1    # Landroid/os/Message;
 
     # getter for: Landroid/net/wifi/WifiStateMachine;->DBG:Z
     invoke-static {}, Landroid/net/wifi/WifiStateMachine;->access$100()Z

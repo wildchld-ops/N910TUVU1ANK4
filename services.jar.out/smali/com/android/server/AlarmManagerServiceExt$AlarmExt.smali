@@ -77,7 +77,6 @@
 
 .method public constructor <init>(Lcom/android/server/AlarmManagerService$Alarm;)V
     .locals 16
-    .param p1    # Lcom/android/server/AlarmManagerService$Alarm;
 
     move-object/from16 v0, p1
 

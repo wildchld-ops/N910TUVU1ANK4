@@ -64,8 +64,6 @@
 # direct methods
 .method public constructor <init>(Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;IZ)V
     .locals 2
-    .param p2    # I
-    .param p3    # Z
 
     iput-object p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback$FinishShootingAsync;->this$1:Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback;
 
@@ -119,7 +117,6 @@
 
 .method static synthetic access$3300(Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback$FinishShootingAsync;)I
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback$FinishShootingAsync;
 
     iget v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback$FinishShootingAsync;->mProgress:I
 
@@ -128,8 +125,6 @@
 
 .method static synthetic access$7200(Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback$FinishShootingAsync;[Ljava/lang/Object;)V
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback$FinishShootingAsync;
-    .param p1    # [Ljava/lang/Object;
 
     invoke-virtual {p0, p1}, Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback$FinishShootingAsync;->publishProgress([Ljava/lang/Object;)V
 
@@ -138,8 +133,6 @@
 
 .method static synthetic access$7300(Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback$FinishShootingAsync;[Ljava/lang/Object;)V
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback$FinishShootingAsync;
-    .param p1    # [Ljava/lang/Object;
 
     invoke-virtual {p0, p1}, Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360Callback$FinishShootingAsync;->publishProgress([Ljava/lang/Object;)V
 
@@ -148,12 +141,6 @@
 
 .method private saveOutputImage(Ljava/lang/String;Ljava/lang/String;[JLandroid/graphics/Rect;Landroid/location/Location;I)I
     .locals 29
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # [J
-    .param p4    # Landroid/graphics/Rect;
-    .param p5    # Landroid/location/Location;
-    .param p6    # I
 
     const/4 v1, 0x1
 
@@ -698,7 +685,6 @@
 
 .method private declared-synchronized updateGetImageProgress(I)V
     .locals 8
-    .param p1    # I
 
     monitor-enter p0
 
@@ -794,7 +780,6 @@
 # virtual methods
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [Ljava/lang/Void;
 
@@ -807,7 +792,6 @@
 
 .method protected varargs doInBackground([Ljava/lang/Void;)Ljava/lang/Void;
     .locals 24
-    .param p1    # [Ljava/lang/Void;
 
     const-string v3, "TwGLPanorama360Menu"
 
@@ -2061,7 +2045,6 @@
 
 .method protected bridge synthetic onPostExecute(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Ljava/lang/Void;
 
@@ -2072,7 +2055,6 @@
 
 .method protected onPostExecute(Ljava/lang/Void;)V
     .locals 2
-    .param p1    # Ljava/lang/Void;
 
     invoke-super {p0, p1}, Landroid/os/AsyncTask;->onPostExecute(Ljava/lang/Object;)V
 
@@ -2689,7 +2671,6 @@
 
 .method protected varargs onProgressUpdate([Ljava/lang/Integer;)V
     .locals 2
-    .param p1    # [Ljava/lang/Integer;
 
     invoke-super {p0, p1}, Landroid/os/AsyncTask;->onProgressUpdate([Ljava/lang/Object;)V
 
@@ -2734,7 +2715,6 @@
 
 .method protected bridge synthetic onProgressUpdate([Ljava/lang/Object;)V
     .locals 0
-    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [Ljava/lang/Integer;
 

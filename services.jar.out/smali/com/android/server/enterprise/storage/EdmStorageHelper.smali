@@ -32,7 +32,6 @@
 
 .method constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     const-string v0, "enterprise.db"
 
@@ -49,8 +48,6 @@
 
 .method static synthetic access$000(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p0, p1}, Lcom/android/server/enterprise/storage/EdmStorageHelper;->isTableExists(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;)Z
 
@@ -61,8 +58,6 @@
 
 .method static synthetic access$100(Landroid/database/sqlite/SQLiteDatabase;Lcom/android/server/enterprise/storage/Table;)V
     .locals 0
-    .param p0    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p1    # Lcom/android/server/enterprise/storage/Table;
 
     invoke-static {p0, p1}, Lcom/android/server/enterprise/storage/EdmStorageHelper;->preTableCreate(Landroid/database/sqlite/SQLiteDatabase;Lcom/android/server/enterprise/storage/Table;)V
 
@@ -71,8 +66,6 @@
 
 .method static synthetic access$200(Landroid/database/sqlite/SQLiteDatabase;Lcom/android/server/enterprise/storage/Table;)V
     .locals 0
-    .param p0    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p1    # Lcom/android/server/enterprise/storage/Table;
 
     invoke-static {p0, p1}, Lcom/android/server/enterprise/storage/EdmStorageHelper;->createTable(Landroid/database/sqlite/SQLiteDatabase;Lcom/android/server/enterprise/storage/Table;)V
 
@@ -81,8 +74,6 @@
 
 .method static synthetic access$300(Landroid/database/sqlite/SQLiteDatabase;Lcom/android/server/enterprise/storage/Table;)V
     .locals 0
-    .param p0    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p1    # Lcom/android/server/enterprise/storage/Table;
 
     invoke-static {p0, p1}, Lcom/android/server/enterprise/storage/EdmStorageHelper;->postTableCreate(Landroid/database/sqlite/SQLiteDatabase;Lcom/android/server/enterprise/storage/Table;)V
 
@@ -91,8 +82,6 @@
 
 .method static synthetic access$400(Landroid/database/sqlite/SQLiteDatabase;Lcom/android/server/enterprise/storage/Table;)Z
     .locals 1
-    .param p0    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p1    # Lcom/android/server/enterprise/storage/Table;
 
     invoke-static {p0, p1}, Lcom/android/server/enterprise/storage/EdmStorageHelper;->preTableUpdate(Landroid/database/sqlite/SQLiteDatabase;Lcom/android/server/enterprise/storage/Table;)Z
 
@@ -103,9 +92,6 @@
 
 .method static synthetic access$500(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Lcom/android/server/enterprise/storage/Table;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/server/enterprise/storage/Table;
 
     invoke-static {p0, p1, p2}, Lcom/android/server/enterprise/storage/EdmStorageHelper;->getMissingColumns(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Lcom/android/server/enterprise/storage/Table;)Ljava/util/ArrayList;
 
@@ -116,8 +102,6 @@
 
 .method private static addContainerIdColumn(Landroid/database/sqlite/SQLiteDatabase;Lcom/android/server/enterprise/storage/Table;)Z
     .locals 6
-    .param p0    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p1    # Lcom/android/server/enterprise/storage/Table;
 
     const/4 v3, 0x0
 
@@ -408,8 +392,6 @@
 
 .method private static addISAPackageNameColumn(Landroid/database/sqlite/SQLiteDatabase;Lcom/android/server/enterprise/storage/Table;)Z
     .locals 6
-    .param p0    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p1    # Lcom/android/server/enterprise/storage/Table;
 
     invoke-virtual {p0}, Landroid/database/sqlite/SQLiteDatabase;->beginTransaction()V
 
@@ -820,8 +802,6 @@
 
 .method private static createTable(Landroid/database/sqlite/SQLiteDatabase;Lcom/android/server/enterprise/storage/Table;)V
     .locals 9
-    .param p0    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p1    # Lcom/android/server/enterprise/storage/Table;
 
     const/4 v8, 0x2
 
@@ -958,9 +938,6 @@
 
 .method private static getCount(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Ljava/lang/String;)I
     .locals 7
-    .param p0    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -1106,7 +1083,6 @@
 
 .method static declared-synchronized getInstance(Landroid/content/Context;)Lcom/android/server/enterprise/storage/EdmStorageHelper;
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     const-class v1, Lcom/android/server/enterprise/storage/EdmStorageHelper;
 
@@ -1142,9 +1118,6 @@
 
 .method private static getMissingColumns(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Lcom/android/server/enterprise/storage/Table;)Ljava/util/ArrayList;
     .locals 4
-    .param p0    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/server/enterprise/storage/Table;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1208,8 +1181,6 @@
 
 .method private static getTableColumns(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;)Landroid/content/ContentValues;
     .locals 10
-    .param p0    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p1    # Ljava/lang/String;
 
     const/4 v6, 0x0
 
@@ -1411,8 +1382,6 @@
 
 .method private static isTableExists(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;)Z
     .locals 4
-    .param p0    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -1475,7 +1444,6 @@
 
 .method private static postAdminInfoTableCreate(Landroid/database/sqlite/SQLiteDatabase;)V
     .locals 5
-    .param p0    # Landroid/database/sqlite/SQLiteDatabase;
 
     :try_start_0
     const-string v2, "INSERT INTO ADMIN_INFO VALUES (0, \'SYSTEM-LEVEL-ADMIN\', 0);"
@@ -1574,7 +1542,6 @@
 
 .method private static postAdminTableCreate(Landroid/database/sqlite/SQLiteDatabase;)V
     .locals 5
-    .param p0    # Landroid/database/sqlite/SQLiteDatabase;
 
     :try_start_0
     const-string v2, "CREATE TRIGGER ADMIN_INFO_ONINSERT  AFTER INSERT  ON ADMIN_INFO BEGIN INSERT INTO ADMIN VALUES (NEW.adminUid,NEW.adminUid,0, NEW.adminUid/100000); END;"
@@ -1686,7 +1653,6 @@
 
 .method private static postContainerTableCreate(Landroid/database/sqlite/SQLiteDatabase;)V
     .locals 4
-    .param p0    # Landroid/database/sqlite/SQLiteDatabase;
 
     :try_start_0
     const-string v1, "INSERT INTO CONTAINER(containerID,adminUid) VALUES (0,0);"
@@ -1728,7 +1694,6 @@
 
 .method private static postKnoxCustomTableCreate(Landroid/database/sqlite/SQLiteDatabase;)V
     .locals 4
-    .param p0    # Landroid/database/sqlite/SQLiteDatabase;
 
     const-string v1, "EdmStorageHelper"
 
@@ -1788,8 +1753,6 @@
 
 .method private static postTableCreate(Landroid/database/sqlite/SQLiteDatabase;Lcom/android/server/enterprise/storage/Table;)V
     .locals 3
-    .param p0    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p1    # Lcom/android/server/enterprise/storage/Table;
 
     iget-object v0, p1, Lcom/android/server/enterprise/storage/Table;->mTableName:Ljava/lang/String;
 
@@ -1855,16 +1818,12 @@
 
 .method private static preTableCreate(Landroid/database/sqlite/SQLiteDatabase;Lcom/android/server/enterprise/storage/Table;)V
     .locals 0
-    .param p0    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p1    # Lcom/android/server/enterprise/storage/Table;
 
     return-void
 .end method
 
 .method private static preTableUpdate(Landroid/database/sqlite/SQLiteDatabase;Lcom/android/server/enterprise/storage/Table;)Z
     .locals 3
-    .param p0    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p1    # Lcom/android/server/enterprise/storage/Table;
 
     iget-object v0, p1, Lcom/android/server/enterprise/storage/Table;->mTableName:Ljava/lang/String;
 
@@ -1944,7 +1903,6 @@
 
 .method private static updateAdminInfoTrigger(Landroid/database/sqlite/SQLiteDatabase;)V
     .locals 4
-    .param p0    # Landroid/database/sqlite/SQLiteDatabase;
 
     :try_start_0
     const-string v1, "DROP TRIGGER ADMIN_INFO_ONINSERT"
@@ -1990,8 +1948,6 @@
 
 .method private static upgradeAdminTable(Landroid/database/sqlite/SQLiteDatabase;Lcom/android/server/enterprise/storage/Table;)Z
     .locals 6
-    .param p0    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p1    # Lcom/android/server/enterprise/storage/Table;
 
     const/4 v2, 0x0
 
@@ -2094,7 +2050,6 @@
 # virtual methods
 .method doCreationOrUpdatePostCommands(Landroid/database/sqlite/SQLiteDatabase;)V
     .locals 14
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
 
     const/4 v0, 0x0
 
@@ -2376,7 +2331,6 @@
 
 .method public doTablesCreationOrUpdate(Landroid/database/sqlite/SQLiteDatabase;)V
     .locals 8
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
 
     const-string v4, "EdmStorageHelper"
 
@@ -2497,7 +2451,6 @@
 
 .method public onConfigure(Landroid/database/sqlite/SQLiteDatabase;)V
     .locals 3
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-super {p0, p1}, Landroid/database/sqlite/SQLiteOpenHelper;->onConfigure(Landroid/database/sqlite/SQLiteDatabase;)V
 
@@ -2525,7 +2478,6 @@
 
 .method public onCreate(Landroid/database/sqlite/SQLiteDatabase;)V
     .locals 0
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {p0, p1}, Lcom/android/server/enterprise/storage/EdmStorageHelper;->doTablesCreationOrUpdate(Landroid/database/sqlite/SQLiteDatabase;)V
 
@@ -2534,9 +2486,6 @@
 
 .method public onDowngrade(Landroid/database/sqlite/SQLiteDatabase;II)V
     .locals 2
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p2    # I
-    .param p3    # I
 
     const-string v0, "EdmStorageHelper"
 
@@ -2549,9 +2498,6 @@
 
 .method public onUpgrade(Landroid/database/sqlite/SQLiteDatabase;II)V
     .locals 0
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p2    # I
-    .param p3    # I
 
     return-void
 .end method

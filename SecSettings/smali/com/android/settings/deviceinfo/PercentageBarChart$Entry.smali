@@ -38,9 +38,6 @@
 # direct methods
 .method protected constructor <init>(IFLandroid/graphics/Paint;)V
     .locals 0
-    .param p1    # I
-    .param p2    # F
-    .param p3    # Landroid/graphics/Paint;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -57,7 +54,6 @@
 # virtual methods
 .method public compareTo(Lcom/android/settings/deviceinfo/PercentageBarChart$Entry;)I
     .locals 2
-    .param p1    # Lcom/android/settings/deviceinfo/PercentageBarChart$Entry;
 
     iget v0, p0, Lcom/android/settings/deviceinfo/PercentageBarChart$Entry;->order:I
 
@@ -70,7 +66,6 @@
 
 .method public bridge synthetic compareTo(Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/android/settings/deviceinfo/PercentageBarChart$Entry;
 

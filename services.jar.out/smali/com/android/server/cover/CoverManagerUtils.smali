@@ -81,8 +81,6 @@
 
 .method static getValueFromSysFS(Ljava/lang/String;I)I
     .locals 9
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
 
     move v5, p1
 
@@ -245,8 +243,6 @@
 
 .method static getValueFromSysFS(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 9
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     move-object v5, p1
 
@@ -405,7 +401,6 @@
 
 .method static isFileExists(Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     new-instance v0, Ljava/io/File;
 
@@ -430,7 +425,6 @@
 
 .method static performCPUBoostCover(Landroid/content/Context;)V
     .locals 10
-    .param p0    # Landroid/content/Context;
 
     const-wide/16 v4, 0x0
 
@@ -594,8 +588,6 @@
 
 .method static sendCoverInformationToAgent(Landroid/content/Context;Z)V
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
 
     const-string v2, "/sys/devices/w1_bus_master1/w1_master_check_sn"
 
@@ -676,8 +668,6 @@
 
 .method static declared-synchronized setPartialScreen(ZI)V
     .locals 8
-    .param p0    # Z
-    .param p1    # I
 
     const-class v5, Lcom/android/server/cover/CoverManagerUtils;
 
@@ -856,9 +846,6 @@
 
 .method static showRuggedizedPopup(Landroid/content/Context;ZZ)V
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
-    .param p2    # Z
 
     new-instance v0, Landroid/content/Intent;
 

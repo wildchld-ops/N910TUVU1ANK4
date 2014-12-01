@@ -33,7 +33,6 @@
 # virtual methods
 .method public onUEvent(Landroid/os/UEventObserver$UEvent;)V
     .locals 20
-    .param p1    # Landroid/os/UEventObserver$UEvent;
 
     move-object/from16 v0, p0
 

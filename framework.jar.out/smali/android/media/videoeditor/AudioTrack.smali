@@ -72,9 +72,6 @@
 
 .method public constructor <init>(Landroid/media/videoeditor/VideoEditor;Ljava/lang/String;Ljava/lang/String;)V
     .locals 17
-    .param p1    # Landroid/media/videoeditor/VideoEditor;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -116,19 +113,6 @@
 
 .method constructor <init>(Landroid/media/videoeditor/VideoEditor;Ljava/lang/String;Ljava/lang/String;JJJZIZZIILjava/lang/String;)V
     .locals 10
-    .param p1    # Landroid/media/videoeditor/VideoEditor;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # J
-    .param p6    # J
-    .param p8    # J
-    .param p10    # Z
-    .param p11    # I
-    .param p12    # Z
-    .param p13    # Z
-    .param p14    # I
-    .param p15    # I
-    .param p16    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -487,8 +471,6 @@
 
 .method public enableDucking(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     const/4 v1, 0x1
 
@@ -590,7 +572,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 2
-    .param p1    # Ljava/lang/Object;
 
     instance-of v0, p1, Landroid/media/videoeditor/AudioTrack;
 
@@ -617,7 +598,6 @@
 
 .method public extractAudioWaveform(Landroid/media/videoeditor/ExtractAudioWaveformProgressListener;)V
     .locals 11
-    .param p1    # Landroid/media/videoeditor/ExtractAudioWaveformProgressListener;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1024,8 +1004,6 @@
 
 .method public setExtractBoundaries(JJ)V
     .locals 4
-    .param p1    # J
-    .param p3    # J
 
     const-wide/16 v2, 0x0
 
@@ -1108,7 +1086,6 @@
 
 .method public setMute(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Landroid/media/videoeditor/AudioTrack;->mMANativeHelper:Landroid/media/videoeditor/MediaArtistNativeHelper;
 
@@ -1123,7 +1100,6 @@
 
 .method public setVolume(I)V
     .locals 2
-    .param p1    # I
 
     const/16 v0, 0x64
 

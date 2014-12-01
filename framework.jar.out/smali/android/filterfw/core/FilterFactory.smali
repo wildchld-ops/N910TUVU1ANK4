@@ -94,7 +94,6 @@
 
 .method public static addFilterLibrary(Ljava/lang/String;)V
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     sget-boolean v0, Landroid/filterfw/core/FilterFactory;->mLogVerbose:Z
 
@@ -202,7 +201,6 @@
 # virtual methods
 .method public addPackage(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     sget-boolean v0, Landroid/filterfw/core/FilterFactory;->mLogVerbose:Z
 
@@ -240,8 +238,6 @@
 
 .method public createFilterByClass(Ljava/lang/Class;Ljava/lang/String;)Landroid/filterfw/core/Filter;
     .locals 7
-    .param p1    # Ljava/lang/Class;
-    .param p2    # Ljava/lang/String;
 
     :try_start_0
     const-class v4, Landroid/filterfw/core/Filter;
@@ -402,8 +398,6 @@
 
 .method public createFilterByClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/filterfw/core/Filter;
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     sget-boolean v4, Landroid/filterfw/core/FilterFactory;->mLogVerbose:Z
 

@@ -36,7 +36,6 @@
 # virtual methods
 .method public declared-synchronized onGetSensorHubData(Landroid/hardware/sensorhub/SensorHubEvent;)V
     .locals 4
-    .param p1    # Landroid/hardware/sensorhub/SensorHubEvent;
 
     monitor-enter p0
 

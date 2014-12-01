@@ -28,8 +28,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/print/UserState;Landroid/print/IPrintJobStateChangeListener;I)V
     .locals 2
-    .param p2    # Landroid/print/IPrintJobStateChangeListener;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

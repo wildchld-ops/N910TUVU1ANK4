@@ -70,7 +70,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -123,8 +122,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v1, 0x0
 
@@ -177,8 +174,6 @@
 
 .method static synthetic access$002(Lcom/diotek/ime/framework/view/candidate/AbstractCandidateLayout;Z)Z
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/view/candidate/AbstractCandidateLayout;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/view/candidate/AbstractCandidateLayout;->mIgnorePick:Z
 
@@ -187,7 +182,6 @@
 
 .method static synthetic access$100(Lcom/diotek/ime/framework/view/candidate/AbstractCandidateLayout;)Landroid/view/GestureDetector;
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/view/candidate/AbstractCandidateLayout;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/candidate/AbstractCandidateLayout;->mGestureDetector:Landroid/view/GestureDetector;
 
@@ -196,7 +190,6 @@
 
 .method static synthetic access$200(Lcom/diotek/ime/framework/view/candidate/AbstractCandidateLayout;)Z
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/view/candidate/AbstractCandidateLayout;
 
     iget-boolean v0, p0, Lcom/diotek/ime/framework/view/candidate/AbstractCandidateLayout;->misLeftScrolled:Z
 
@@ -205,8 +198,6 @@
 
 .method static synthetic access$202(Lcom/diotek/ime/framework/view/candidate/AbstractCandidateLayout;Z)Z
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/view/candidate/AbstractCandidateLayout;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/view/candidate/AbstractCandidateLayout;->misLeftScrolled:Z
 
@@ -215,7 +206,6 @@
 
 .method static synthetic access$300(Lcom/diotek/ime/framework/view/candidate/AbstractCandidateLayout;)Z
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/view/candidate/AbstractCandidateLayout;
 
     iget-boolean v0, p0, Lcom/diotek/ime/framework/view/candidate/AbstractCandidateLayout;->misRightScrolled:Z
 
@@ -224,8 +214,6 @@
 
 .method static synthetic access$302(Lcom/diotek/ime/framework/view/candidate/AbstractCandidateLayout;Z)Z
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/view/candidate/AbstractCandidateLayout;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/view/candidate/AbstractCandidateLayout;->misRightScrolled:Z
 
@@ -521,7 +509,6 @@
 
 .method private isShownExpandView(I)Z
     .locals 11
-    .param p1    # I
 
     const/4 v9, 0x1
 
@@ -718,7 +705,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 8
-    .param p1    # Landroid/view/View;
 
     const/4 v5, 0x1
 
@@ -929,7 +915,6 @@
 
 .method protected onDraw(Landroid/graphics/Canvas;)V
     .locals 0
-    .param p1    # Landroid/graphics/Canvas;
 
     invoke-super {p0, p1}, Landroid/view/View;->onDraw(Landroid/graphics/Canvas;)V
 
@@ -938,7 +923,6 @@
 
 .method public setCandidates(Ljava/util/ArrayList;Z)I
     .locals 55
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

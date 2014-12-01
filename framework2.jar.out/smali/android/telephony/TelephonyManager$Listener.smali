@@ -27,7 +27,6 @@
 # direct methods
 .method constructor <init>(Landroid/telephony/CallStateListener;)V
     .locals 1
-    .param p1    # Landroid/telephony/CallStateListener;
 
     invoke-direct {p0}, Lcom/android/internal/telephony/ITelephonyListener$Stub;-><init>()V
 
@@ -62,9 +61,6 @@
 
 .method public onUpdate(IILjava/lang/String;)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/telephony/TelephonyManager$Listener;->mHandler:Landroid/os/Handler;
 

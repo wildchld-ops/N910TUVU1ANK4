@@ -644,7 +644,6 @@
 
 .method private static caculateToneMarkPosition(Ljava/lang/StringBuilder;)I
     .locals 9
-    .param p0    # Ljava/lang/StringBuilder;
 
     const/4 v8, 0x3
 
@@ -877,8 +876,6 @@
 
 .method private static completeUO(Ljava/lang/StringBuilder;Ljava/lang/String;)Ljava/lang/StringBuilder;
     .locals 4
-    .param p0    # Ljava/lang/StringBuilder;
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x7
 
@@ -935,8 +932,6 @@
 
 .method private static compose(CC)C
     .locals 3
-    .param p0    # C
-    .param p1    # C
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -967,7 +962,6 @@
 
 .method private static deCompose(C)C
     .locals 3
-    .param p0    # C
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -996,8 +990,6 @@
 
 .method private static getAccent(Ljava/lang/StringBuilder;C)I
     .locals 7
-    .param p0    # Ljava/lang/StringBuilder;
-    .param p1    # C
 
     const/4 v6, 0x6
 
@@ -1456,8 +1448,6 @@
 
 .method private static getKey(CI)I
     .locals 1
-    .param p0    # C
-    .param p1    # I
 
     shl-int/lit8 v0, p1, 0x10
 
@@ -1468,8 +1458,6 @@
 
 .method private static getVietChar(CI)Ljava/lang/StringBuilder;
     .locals 8
-    .param p0    # C
-    .param p1    # I
 
     const/4 v7, 0x0
 
@@ -1666,11 +1654,6 @@
 
 .method private static getVietWord(Ljava/lang/StringBuilder;IICZ)Ljava/lang/StringBuilder;
     .locals 7
-    .param p0    # Ljava/lang/StringBuilder;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # C
-    .param p4    # Z
 
     const/4 v5, 0x1
 
@@ -1785,7 +1768,6 @@
 
 .method private static initWordProperties(Ljava/lang/StringBuilder;)V
     .locals 7
-    .param p0    # Ljava/lang/StringBuilder;
 
     const/4 v6, 0x1
 
@@ -2034,7 +2016,6 @@
 
 .method public static isCircumflexOrHornChar(C)Z
     .locals 4
-    .param p0    # C
 
     const/4 v1, 0x1
 
@@ -2104,7 +2085,6 @@
 
 .method private static isConsonant(C)Z
     .locals 2
-    .param p0    # C
 
     const-string v0, "bcd\u0111fghjklmnpqrstvwxz"
 
@@ -2129,7 +2109,6 @@
 
 .method private static isPostConsonant(C)Z
     .locals 2
-    .param p0    # C
 
     const-string v0, "chptmng"
 
@@ -2154,8 +2133,6 @@
 
 .method public static isRecapture(Ljava/lang/StringBuilder;C)Z
     .locals 2
-    .param p0    # Ljava/lang/StringBuilder;
-    .param p1    # C
 
     invoke-static {p0}, Lcom/diotek/ime/framework/input/Telex/Telex;->initWordProperties(Ljava/lang/StringBuilder;)V
 
@@ -2192,7 +2169,6 @@
 
 .method private static isToneMark(C)Z
     .locals 1
-    .param p0    # C
 
     const/16 v0, 0x300
 
@@ -2228,7 +2204,6 @@
 
 .method private static isValidVietWord(Ljava/lang/String;)Z
     .locals 8
-    .param p0    # Ljava/lang/String;
 
     const/4 v5, 0x3
 
@@ -2932,7 +2907,6 @@
 
 .method private static isVowel(C)Z
     .locals 3
-    .param p0    # C
 
     invoke-static {p0}, Ljava/lang/Character;->toLowerCase(C)C
 
@@ -2961,8 +2935,6 @@
 
 .method public static join(Ljava/lang/StringBuilder;C)Ljava/lang/StringBuilder;
     .locals 10
-    .param p0    # Ljava/lang/StringBuilder;
-    .param p1    # C
 
     const/4 v9, 0x6
 
@@ -3908,8 +3880,6 @@
 
 .method private static needCompleteUO(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "[u\u00fa\u00f9\u1ee7\u0169\u1ee5][\u01a1\u1edb\u1edd\u1edf\u1ee1\u1ee3]|[\u01b0\u1ee9\u1eeb\u1eed\u1eef\u1ef1][o\u00f3\u00f2\u1ecf\u00f5\u1ecd]$"
 
@@ -3940,8 +3910,6 @@
 
 .method private static removeToneMark(Ljava/lang/StringBuilder;I)Ljava/lang/StringBuilder;
     .locals 2
-    .param p0    # Ljava/lang/StringBuilder;
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -3964,7 +3932,6 @@
 
 .method public static setInputMode(Ljava/lang/String;)V
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     if-eqz p0, :cond_0
 
@@ -4017,7 +3984,6 @@
 
 .method private static updateWordProperties(Ljava/lang/StringBuilder;)V
     .locals 4
-    .param p0    # Ljava/lang/StringBuilder;
 
     const/4 v2, 0x1
 

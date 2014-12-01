@@ -51,9 +51,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/mms/ui/EmoticonContainer;Landroid/view/View;Landroid/view/View$OnClickListener;Landroid/view/View$OnTouchListener;)V
     .locals 10
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/View$OnClickListener;
-    .param p4    # Landroid/view/View$OnTouchListener;
 
     const/4 v9, 0x1
 
@@ -394,7 +391,6 @@
 
 .method static synthetic access$1000(Lcom/android/mms/ui/EmoticonContainer$EmoticonTabManager;)Ljava/util/HashMap;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/EmoticonContainer$EmoticonTabManager;
 
     iget-object v0, p0, Lcom/android/mms/ui/EmoticonContainer$EmoticonTabManager;->mCategoryTabs:Ljava/util/HashMap;
 
@@ -426,7 +422,6 @@
 
 .method protected onTabSelected(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     iput-object p1, p0, Lcom/android/mms/ui/EmoticonContainer$EmoticonTabManager;->mSelectedTab:Landroid/view/View;
 
@@ -462,7 +457,6 @@
 
 .method protected refreshTabSelector(I)V
     .locals 4
-    .param p1    # I
 
     # getter for: Lcom/android/mms/ui/EmoticonContainer;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/android/mms/ui/EmoticonContainer;->access$000()Ljava/lang/String;

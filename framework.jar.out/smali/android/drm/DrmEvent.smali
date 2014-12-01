@@ -36,9 +36,6 @@
 # direct methods
 .method protected constructor <init>(IILjava/lang/String;)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -66,9 +63,6 @@
 
 .method protected constructor <init>(IILjava/lang/String;Ljava/util/HashMap;)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II",
@@ -114,7 +108,6 @@
 # virtual methods
 .method public getAttribute(Ljava/lang/String;)Ljava/lang/Object;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/drm/DrmEvent;->mAttributes:Ljava/util/HashMap;
 

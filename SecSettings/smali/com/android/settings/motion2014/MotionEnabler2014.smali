@@ -25,8 +25,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/widget/Switch;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/widget/Switch;
 
     const/4 v1, 0x0
 
@@ -61,7 +59,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/motion2014/MotionEnabler2014;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/settings/motion2014/MotionEnabler2014;
 
     iget-object v0, p0, Lcom/android/settings/motion2014/MotionEnabler2014;->mContext:Landroid/content/Context;
 
@@ -70,7 +67,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/motion2014/MotionEnabler2014;)Landroid/widget/Switch;
     .locals 1
-    .param p0    # Lcom/android/settings/motion2014/MotionEnabler2014;
 
     iget-object v0, p0, Lcom/android/settings/motion2014/MotionEnabler2014;->mSwitch:Landroid/widget/Switch;
 
@@ -79,7 +75,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/motion2014/MotionEnabler2014;)Landroid/preference/PreferenceActivity$Header;
     .locals 1
-    .param p0    # Lcom/android/settings/motion2014/MotionEnabler2014;
 
     iget-object v0, p0, Lcom/android/settings/motion2014/MotionEnabler2014;->mHeader:Landroid/preference/PreferenceActivity$Header;
 
@@ -88,7 +83,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/motion2014/MotionEnabler2014;)I
     .locals 1
-    .param p0    # Lcom/android/settings/motion2014/MotionEnabler2014;
 
     iget v0, p0, Lcom/android/settings/motion2014/MotionEnabler2014;->mPosition:I
 
@@ -243,8 +237,6 @@
 # virtual methods
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 2
-    .param p1    # Landroid/widget/CompoundButton;
-    .param p2    # Z
 
     if-eqz p2, :cond_2
 

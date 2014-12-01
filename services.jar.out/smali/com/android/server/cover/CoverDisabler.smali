@@ -70,8 +70,6 @@
 
 .method constructor <init>(Landroid/os/Looper;Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/os/Looper;
-    .param p2    # Landroid/content/Context;
 
     const/4 v3, 0x0
 
@@ -130,8 +128,6 @@
 
 .method static synthetic access$000(Lcom/android/server/cover/CoverDisabler;Z)V
     .locals 0
-    .param p0    # Lcom/android/server/cover/CoverDisabler;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/cover/CoverDisabler;->handleDisableCoverManagerLocked(Z)V
 
@@ -140,10 +136,6 @@
 
 .method static synthetic access$100(Lcom/android/server/cover/CoverDisabler;ZLandroid/os/IBinder;Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Lcom/android/server/cover/CoverDisabler;
-    .param p1    # Z
-    .param p2    # Landroid/os/IBinder;
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/server/cover/CoverDisabler;->disableCoverManagerLocked(ZLandroid/os/IBinder;Ljava/lang/String;)Z
 
@@ -154,9 +146,6 @@
 
 .method private disableCoverManagerLocked(ZLandroid/os/IBinder;Ljava/lang/String;)Z
     .locals 9
-    .param p1    # Z
-    .param p2    # Landroid/os/IBinder;
-    .param p3    # Ljava/lang/String;
 
     const/4 v4, 0x1
 
@@ -316,7 +305,6 @@
 
 .method private handleDisableCoverManagerLocked(Z)V
     .locals 3
-    .param p1    # Z
 
     sget-boolean v0, Lcom/android/server/cover/CoverDisabler;->SAFE_DEBUG:Z
 
@@ -363,9 +351,6 @@
 
 .method private manageDisableListLocked(ZLandroid/os/IBinder;Ljava/lang/String;)V
     .locals 9
-    .param p1    # Z
-    .param p2    # Landroid/os/IBinder;
-    .param p3    # Ljava/lang/String;
 
     const/4 v8, 0x0
 
@@ -501,9 +486,6 @@
 # virtual methods
 .method disableCoverManager(ZLandroid/os/IBinder;Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Z
-    .param p2    # Landroid/os/IBinder;
-    .param p3    # Ljava/lang/String;
 
     sget-boolean v1, Lcom/android/server/cover/CoverDisabler;->SAFE_DEBUG:Z
 
@@ -569,9 +551,6 @@
 
 .method dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     const-string v3, " Current CoverDisabler state:"
 

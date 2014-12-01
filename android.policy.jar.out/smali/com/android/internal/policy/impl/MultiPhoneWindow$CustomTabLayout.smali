@@ -37,7 +37,6 @@
 # direct methods
 .method private constructor <init>(Lcom/android/internal/policy/impl/MultiPhoneWindow;Landroid/content/Context;)V
     .locals 1
-    .param p2    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -62,9 +61,6 @@
 
 .method synthetic constructor <init>(Lcom/android/internal/policy/impl/MultiPhoneWindow;Landroid/content/Context;Lcom/android/internal/policy/impl/MultiPhoneWindow$1;)V
     .locals 0
-    .param p1    # Lcom/android/internal/policy/impl/MultiPhoneWindow;
-    .param p2    # Landroid/content/Context;
-    .param p3    # Lcom/android/internal/policy/impl/MultiPhoneWindow$1;
 
     invoke-direct {p0, p1, p2}, Lcom/android/internal/policy/impl/MultiPhoneWindow$CustomTabLayout;-><init>(Lcom/android/internal/policy/impl/MultiPhoneWindow;Landroid/content/Context;)V
 
@@ -75,7 +71,6 @@
 # virtual methods
 .method public dispatchTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 6
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v1, 0x0
 
@@ -419,8 +414,6 @@
 
 .method public tab_action_down(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iput p1, p0, Lcom/android/internal/policy/impl/MultiPhoneWindow$CustomTabLayout;->lastMoveX:I
 
@@ -470,8 +463,6 @@
 
 .method public tab_action_move(II)V
     .locals 8
-    .param p1    # I
-    .param p2    # I
 
     iget v5, p0, Lcom/android/internal/policy/impl/MultiPhoneWindow$CustomTabLayout;->lastMoveX:I
 
@@ -587,8 +578,6 @@
 
 .method public tab_action_up(II)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     iget v2, p0, Lcom/android/internal/policy/impl/MultiPhoneWindow$CustomTabLayout;->lastMoveX:I
 

@@ -52,8 +52,6 @@
 
 .method synthetic constructor <init>(Lcom/android/server/power/PowerManagerService;Lcom/android/server/power/PowerManagerService$1;)V
     .locals 0
-    .param p1    # Lcom/android/server/power/PowerManagerService;
-    .param p2    # Lcom/android/server/power/PowerManagerService$1;
 
     invoke-direct {p0, p1}, Lcom/android/server/power/PowerManagerService$DisplayBlankerImpl;-><init>(Lcom/android/server/power/PowerManagerService;)V
 
@@ -62,7 +60,6 @@
 
 .method static synthetic access$5600(Lcom/android/server/power/PowerManagerService$DisplayBlankerImpl;)Lcom/android/server/power/PowerManagerService$TimeMeasurement;
     .locals 1
-    .param p0    # Lcom/android/server/power/PowerManagerService$DisplayBlankerImpl;
 
     iget-object v0, p0, Lcom/android/server/power/PowerManagerService$DisplayBlankerImpl;->blankUnblankRunnableExcuteTimeMeasurement:Lcom/android/server/power/PowerManagerService$TimeMeasurement;
 
@@ -71,7 +68,6 @@
 
 .method static synthetic access$5700(Lcom/android/server/power/PowerManagerService$DisplayBlankerImpl;)Z
     .locals 1
-    .param p0    # Lcom/android/server/power/PowerManagerService$DisplayBlankerImpl;
 
     iget-boolean v0, p0, Lcom/android/server/power/PowerManagerService$DisplayBlankerImpl;->mBlanked:Z
 

@@ -167,7 +167,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings;
 
     invoke-direct {p0}, Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings;->getSelectLanguage()Ljava/lang/String;
 
@@ -178,7 +177,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings;)Landroid/preference/Preference;
     .locals 1
-    .param p0    # Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings;
 
     iget-object v0, p0, Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings;->mHandwritingLanguage:Landroid/preference/Preference;
 
@@ -187,7 +185,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings;)V
     .locals 0
-    .param p0    # Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings;
 
     invoke-direct {p0}, Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings;->updateInputMethodPreferenceViews()V
 
@@ -196,8 +193,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings;->showKeyboardLayoutDialog(Ljava/lang/String;)V
 
@@ -206,7 +201,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings;)V
     .locals 0
-    .param p0    # Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings;
 
     invoke-direct {p0}, Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings;->updateCurrentImeName()V
 
@@ -215,7 +209,6 @@
 
 .method private checkVOLanguage(Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -263,9 +256,6 @@
 
 .method private getDisplayLanguage(Ljava/util/Locale;[Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;
     .locals 5
-    .param p1    # Ljava/util/Locale;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # [Ljava/lang/String;
 
     const/4 v2, 0x1
 
@@ -332,7 +322,6 @@
 
 .method private getInputMethodPreference(Landroid/view/inputmethod/InputMethodInfo;)Lcom/android/settings/inputmethod/InputMethodPreference;
     .locals 6
-    .param p1    # Landroid/view/inputmethod/InputMethodInfo;
 
     invoke-virtual {p0}, Lcom/android/settings/SettingsPreferenceFragment;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -522,8 +511,6 @@
 
 .method private hasOnlyOneLanguageInstance(Ljava/lang/String;[Ljava/lang/String;)Z
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/String;
 
     const/4 v6, 0x0
 
@@ -1836,7 +1823,6 @@
 
 .method public onInputDeviceAdded(I)V
     .locals 0
-    .param p1    # I
 
     invoke-direct {p0}, Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings;->updateInputDevices()V
 
@@ -1845,7 +1831,6 @@
 
 .method public onInputDeviceChanged(I)V
     .locals 0
-    .param p1    # I
 
     invoke-direct {p0}, Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings;->updateInputDevices()V
 
@@ -1854,7 +1839,6 @@
 
 .method public onInputDeviceRemoved(I)V
     .locals 0
-    .param p1    # I
 
     invoke-direct {p0}, Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings;->updateInputDevices()V
 
@@ -1922,8 +1906,6 @@
 
 .method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
     .locals 6
-    .param p1    # Landroid/preference/Preference;
-    .param p2    # Ljava/lang/Object;
 
     const/4 v1, 0x1
 
@@ -1979,8 +1961,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 9
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     const/4 v4, 0x0
 

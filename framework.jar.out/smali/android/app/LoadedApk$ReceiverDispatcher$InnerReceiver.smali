@@ -32,8 +32,6 @@
 # direct methods
 .method constructor <init>(Landroid/app/LoadedApk$ReceiverDispatcher;Z)V
     .locals 1
-    .param p1    # Landroid/app/LoadedApk$ReceiverDispatcher;
-    .param p2    # Z
 
     invoke-direct {p0}, Landroid/content/IIntentReceiver$Stub;-><init>()V
 
@@ -60,13 +58,6 @@
 # virtual methods
 .method public performReceive(Landroid/content/Intent;ILjava/lang/String;Landroid/os/Bundle;ZZI)V
     .locals 9
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Landroid/os/Bundle;
-    .param p5    # Z
-    .param p6    # Z
-    .param p7    # I
 
     iget-object v2, p0, Landroid/app/LoadedApk$ReceiverDispatcher$InnerReceiver;->mDispatcher:Ljava/lang/ref/WeakReference;
 

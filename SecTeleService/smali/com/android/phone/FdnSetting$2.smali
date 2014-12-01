@@ -41,7 +41,7 @@
 
     iget-object v0, p0, Lcom/android/phone/FdnSetting$2;->this$0:Lcom/android/phone/FdnSetting;
 
-    invoke-virtual {v0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->finish()V
+    invoke-virtual {v0}, Lcom/android/phone/FdnSetting;->finish()V
 
     return-void
 .end method

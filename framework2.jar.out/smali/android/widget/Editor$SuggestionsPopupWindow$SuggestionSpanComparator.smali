@@ -44,8 +44,6 @@
 
 .method synthetic constructor <init>(Landroid/widget/Editor$SuggestionsPopupWindow;Landroid/widget/Editor$1;)V
     .locals 0
-    .param p1    # Landroid/widget/Editor$SuggestionsPopupWindow;
-    .param p2    # Landroid/widget/Editor$1;
 
     invoke-direct {p0, p1}, Landroid/widget/Editor$SuggestionsPopupWindow$SuggestionSpanComparator;-><init>(Landroid/widget/Editor$SuggestionsPopupWindow;)V
 
@@ -56,8 +54,6 @@
 # virtual methods
 .method public compare(Landroid/text/style/SuggestionSpan;Landroid/text/style/SuggestionSpan;)I
     .locals 9
-    .param p1    # Landroid/text/style/SuggestionSpan;
-    .param p2    # Landroid/text/style/SuggestionSpan;
 
     const/4 v6, -0x1
 
@@ -186,8 +182,6 @@
 
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p1, Landroid/text/style/SuggestionSpan;
 

@@ -380,7 +380,7 @@
 
     new-instance v0, Lcom/android/phone/callsettings/CallSettingsTabFragmentListener;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsTabFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -499,7 +499,7 @@
 
     new-instance v0, Lcom/android/phone/callsettings/CallSettingsTabFragmentListener;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsTabFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -558,7 +558,7 @@
 
     new-instance v0, Lcom/android/phone/callsettings/CallSettingsTabFragmentListener;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsTabFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -591,11 +591,11 @@
     :goto_5
     const v1, 0x7f090055
 
-    invoke-virtual {p0, v1}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v1}, Lcom/android/phone/callsettings/CallSettingsTabFragment;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsTabFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -631,7 +631,7 @@
     :cond_6
     new-instance v0, Lcom/android/phone/callsettings/CallSettingsTabFragmentListener;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsTabFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -666,7 +666,7 @@
     :cond_7
     new-instance v0, Lcom/android/phone/callsettings/CallSettingsTabFragmentListener;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsTabFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -701,7 +701,7 @@
     :cond_8
     new-instance v0, Lcom/android/phone/callsettings/CallSettingsTabFragmentListener;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsTabFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -746,7 +746,7 @@
 
     new-instance v0, Lcom/android/phone/callsettings/CallSettingsTabFragmentListener;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsTabFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -778,11 +778,11 @@
 
     const v1, 0x7f090051
 
-    invoke-virtual {p0, v1}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v1}, Lcom/android/phone/callsettings/CallSettingsTabFragment;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsTabFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -799,7 +799,7 @@
 
     new-instance v0, Lcom/android/phone/callsettings/CallSettingsTabFragmentListener;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsTabFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -831,11 +831,11 @@
 
     const v1, 0x7f09049e
 
-    invoke-virtual {p0, v1}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v1}, Lcom/android/phone/callsettings/CallSettingsTabFragment;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsTabFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -856,7 +856,7 @@
 
     new-instance v0, Lcom/android/phone/callsettings/CallSettingsTabFragmentListener;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsTabFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -888,11 +888,11 @@
 
     const v1, 0x7f090295
 
-    invoke-virtual {p0, v1}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v1}, Lcom/android/phone/callsettings/CallSettingsTabFragment;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsTabFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -966,13 +966,13 @@
 
     invoke-static {v2, v3}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsTabFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
     sput-object v2, Lcom/android/phone/callsettings/CallSettingsTabFragment;->mContext:Landroid/content/Context;
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getActionBar()Landroid/app/ActionBar;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsTabFragment;->getActionBar()Landroid/app/ActionBar;
 
     move-result-object v2
 
@@ -993,7 +993,7 @@
     invoke-virtual {v2, v5}, Landroid/app/ActionBar;->setDisplayHomeAsUpEnabled(Z)V
 
     :cond_0
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsTabFragment;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
 
@@ -1003,7 +1003,7 @@
 
     move-result-object v1
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsTabFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -1082,7 +1082,7 @@
 
     if-ne v1, v2, :cond_0
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsTabFragment;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v2
 
@@ -1110,9 +1110,9 @@
 
     invoke-virtual {v0, v2}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
-    invoke-virtual {p0, v0}, Landroid/app/Fragment;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/callsettings/CallSettingsTabFragment;->startActivity(Landroid/content/Intent;)V
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsTabFragment;->finish()V
 
     const/4 v2, 0x1
 
@@ -1131,7 +1131,7 @@
     .locals 2
     .param p1    # Landroid/os/Bundle;
 
-    invoke-super {p0, p1}, Landroid/preference/PreferenceFragment;->onSaveInstanceState(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onSaveInstanceState(Landroid/os/Bundle;)V
 
     iget-object v0, p0, Lcom/android/phone/callsettings/CallSettingsTabFragment;->mActionBar:Landroid/app/ActionBar;
 

@@ -103,7 +103,6 @@
 
 .method public constructor <init>(Landroid/content/ClipData;)V
     .locals 2
-    .param p1    # Landroid/content/ClipData;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -128,8 +127,6 @@
 
 .method public constructor <init>(Landroid/content/ClipDescription;Landroid/content/ClipData$Item;)V
     .locals 2
-    .param p1    # Landroid/content/ClipDescription;
-    .param p2    # Landroid/content/ClipData$Item;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -165,7 +162,6 @@
 
 .method constructor <init>(Landroid/os/Parcel;)V
     .locals 9
-    .param p1    # Landroid/os/Parcel;
 
     const/4 v7, 0x0
 
@@ -288,9 +284,6 @@
 
 .method public constructor <init>(Ljava/lang/CharSequence;[Ljava/lang/String;Landroid/content/ClipData$Item;)V
     .locals 2
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # Landroid/content/ClipData$Item;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -330,9 +323,6 @@
 
 .method public static newHtmlText(Ljava/lang/CharSequence;Ljava/lang/CharSequence;Ljava/lang/String;)Landroid/content/ClipData;
     .locals 3
-    .param p0    # Ljava/lang/CharSequence;
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Ljava/lang/String;
 
     new-instance v0, Landroid/content/ClipData$Item;
 
@@ -349,8 +339,6 @@
 
 .method public static newIntent(Ljava/lang/CharSequence;Landroid/content/Intent;)Landroid/content/ClipData;
     .locals 3
-    .param p0    # Ljava/lang/CharSequence;
-    .param p1    # Landroid/content/Intent;
 
     new-instance v0, Landroid/content/ClipData$Item;
 
@@ -367,8 +355,6 @@
 
 .method public static newPlainText(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Landroid/content/ClipData;
     .locals 3
-    .param p0    # Ljava/lang/CharSequence;
-    .param p1    # Ljava/lang/CharSequence;
 
     new-instance v0, Landroid/content/ClipData$Item;
 
@@ -385,8 +371,6 @@
 
 .method public static newRawUri(Ljava/lang/CharSequence;Landroid/net/Uri;)Landroid/content/ClipData;
     .locals 3
-    .param p0    # Ljava/lang/CharSequence;
-    .param p1    # Landroid/net/Uri;
 
     new-instance v0, Landroid/content/ClipData$Item;
 
@@ -403,9 +387,6 @@
 
 .method public static newUri(Landroid/content/ContentResolver;Ljava/lang/CharSequence;Landroid/net/Uri;)Landroid/content/ClipData;
     .locals 10
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Landroid/net/Uri;
 
     const/4 v5, 0x2
 
@@ -511,7 +492,6 @@
 # virtual methods
 .method public addItem(Landroid/content/ClipData$Item;)V
     .locals 2
-    .param p1    # Landroid/content/ClipData$Item;
 
     if-nez p1, :cond_0
 
@@ -533,7 +513,6 @@
 
 .method public checkEquals(Landroid/content/ClipData;)Z
     .locals 6
-    .param p1    # Landroid/content/ClipData;
 
     const/4 v2, 0x1
 
@@ -792,7 +771,6 @@
 
 .method public getItemAt(I)Landroid/content/ClipData$Item;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/content/ClipData;->mItems:Ljava/util/ArrayList;
 
@@ -875,7 +853,6 @@
 
 .method public toShortString(Ljava/lang/StringBuilder;)V
     .locals 4
-    .param p1    # Ljava/lang/StringBuilder;
 
     const/16 v3, 0x20
 
@@ -1012,8 +989,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 6
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     const/4 v5, 0x1
 

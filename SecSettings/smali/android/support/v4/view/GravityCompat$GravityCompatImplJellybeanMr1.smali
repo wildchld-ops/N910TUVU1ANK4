@@ -30,8 +30,6 @@
 # virtual methods
 .method public getAbsoluteGravity(II)I
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     invoke-static {p1, p2}, Landroid/support/v4/view/GravityCompatJellybeanMr1;->getAbsoluteGravity(II)I
 

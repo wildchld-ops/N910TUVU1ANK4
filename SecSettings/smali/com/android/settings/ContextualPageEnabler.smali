@@ -21,8 +21,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/widget/Switch;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/widget/Switch;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -49,7 +47,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/ContextualPageEnabler;)Landroid/widget/Switch;
     .locals 1
-    .param p0    # Lcom/android/settings/ContextualPageEnabler;
 
     iget-object v0, p0, Lcom/android/settings/ContextualPageEnabler;->mSwitch:Landroid/widget/Switch;
 
@@ -282,8 +279,6 @@
 
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 5
-    .param p1    # Landroid/widget/CompoundButton;
-    .param p2    # Z
 
     const/4 v4, 0x1
 

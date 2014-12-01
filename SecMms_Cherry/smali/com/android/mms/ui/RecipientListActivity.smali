@@ -144,7 +144,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/ui/RecipientListActivity;)Lcom/android/mms/ui/RecipientListAdapter;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/RecipientListActivity;
 
     iget-object v0, p0, Lcom/android/mms/ui/RecipientListActivity;->mListAdapter:Lcom/android/mms/ui/RecipientListAdapter;
 
@@ -153,7 +152,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/ui/RecipientListActivity;)Landroid/widget/EditText;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/RecipientListActivity;
 
     iget-object v0, p0, Lcom/android/mms/ui/RecipientListActivity;->mGroupInforEdit:Landroid/widget/EditText;
 
@@ -162,8 +160,6 @@
 
 .method static synthetic access$202(Lcom/android/mms/ui/RecipientListActivity;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/ui/RecipientListActivity;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/RecipientListActivity;->isGroupInforEditClicked:Z
 
@@ -172,7 +168,6 @@
 
 .method static synthetic access$300(Lcom/android/mms/ui/RecipientListActivity;)Landroid/widget/ListView;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/RecipientListActivity;
 
     iget-object v0, p0, Lcom/android/mms/ui/RecipientListActivity;->mListView:Landroid/widget/ListView;
 
@@ -181,7 +176,6 @@
 
 .method private getRCSInfor(J)V
     .locals 17
-    .param p1    # J
 
     const/4 v15, 0x0
 
@@ -675,7 +669,6 @@
 # virtual methods
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
@@ -764,8 +757,6 @@
 
 .method public onMenuItemSelected(ILandroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/MenuItem;
 
     invoke-interface {p2}, Landroid/view/MenuItem;->getItemId()I
 
@@ -797,7 +788,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 4
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v0, 0x1
 
@@ -927,7 +917,6 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)Z
     .locals 6
-    .param p1    # Landroid/view/Menu;
 
     const/4 v5, 0x6
 
@@ -1545,7 +1534,6 @@
 
 .method public onUpdate(Lcom/android/mms/data/Contact;)V
     .locals 2
-    .param p1    # Lcom/android/mms/data/Contact;
 
     const-string v0, "ContactResult"
 
@@ -1564,7 +1552,6 @@
 
 .method public updateThreadAlarm(Z)V
     .locals 4
-    .param p1    # Z
 
     iget-object v1, p0, Lcom/android/mms/ui/RecipientListActivity;->mChatId:Ljava/lang/String;
 
@@ -1589,7 +1576,6 @@
 
 .method public updateThreadAlias(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     new-instance v3, Landroid/content/ContentValues;
 

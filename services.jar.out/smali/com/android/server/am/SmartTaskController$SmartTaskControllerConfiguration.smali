@@ -67,7 +67,6 @@
 
 .method public constructor <init>(Lcom/android/server/am/SmartTaskController;J)V
     .locals 3
-    .param p2    # J
 
     const/16 v2, 0x14
 
@@ -194,7 +193,6 @@
 # virtual methods
 .method public getMemoryLevels(J)I
     .locals 2
-    .param p1    # J
 
     iget-wide v0, p0, Lcom/android/server/am/SmartTaskController$SmartTaskControllerConfiguration;->BLUE_MEMORY:J
 
@@ -226,7 +224,6 @@
 
 .method public getRemainTaskCount(I)I
     .locals 1
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -270,7 +267,6 @@
 
 .method public setMemoryValues(J)V
     .locals 2
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/android/server/am/SmartTaskController$SmartTaskControllerConfiguration;->MIN_FREE_MEMORY:J
 

@@ -20,7 +20,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-class v0, Ljava/lang/Float;
 
@@ -33,7 +32,6 @@
 # virtual methods
 .method public final set(Ljava/lang/Object;Ljava/lang/Float;)V
     .locals 1
-    .param p2    # Ljava/lang/Float;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TT;",
@@ -53,8 +51,6 @@
 
 .method public bridge synthetic set(Ljava/lang/Object;Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p2, Ljava/lang/Float;
 

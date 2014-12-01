@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Landroid/widget/ListPopupWindow;Landroid/widget/ListPopupWindow$1;)V
     .locals 0
-    .param p1    # Landroid/widget/ListPopupWindow;
-    .param p2    # Landroid/widget/ListPopupWindow$1;
 
     invoke-direct {p0, p1}, Landroid/widget/ListPopupWindow$ResizePopupRunnable;-><init>(Landroid/widget/ListPopupWindow;)V
 

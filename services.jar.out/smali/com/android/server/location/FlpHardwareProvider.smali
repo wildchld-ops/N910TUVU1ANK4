@@ -64,7 +64,6 @@
 
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 12
-    .param p1    # Landroid/content/Context;
 
     const/4 v11, 0x0
 
@@ -141,7 +140,6 @@
 
 .method static synthetic access$100(Lcom/android/server/location/FlpHardwareProvider;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Lcom/android/server/location/FlpHardwareProvider;
 
     iget-object v0, p0, Lcom/android/server/location/FlpHardwareProvider;->mLocationSinkLock:Ljava/lang/Object;
 
@@ -150,7 +148,6 @@
 
 .method static synthetic access$1000(Lcom/android/server/location/FlpHardwareProvider;)Z
     .locals 1
-    .param p0    # Lcom/android/server/location/FlpHardwareProvider;
 
     invoke-direct {p0}, Lcom/android/server/location/FlpHardwareProvider;->nativeIsDeviceContextSupported()Z
 
@@ -161,8 +158,6 @@
 
 .method static synthetic access$1100(Lcom/android/server/location/FlpHardwareProvider;I)V
     .locals 0
-    .param p0    # Lcom/android/server/location/FlpHardwareProvider;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/location/FlpHardwareProvider;->nativeInjectDeviceContext(I)V
 
@@ -171,7 +166,6 @@
 
 .method static synthetic access$1200(Lcom/android/server/location/FlpHardwareProvider;)Z
     .locals 1
-    .param p0    # Lcom/android/server/location/FlpHardwareProvider;
 
     invoke-direct {p0}, Lcom/android/server/location/FlpHardwareProvider;->nativeIsGeofencingSupported()Z
 
@@ -182,8 +176,6 @@
 
 .method static synthetic access$1300(Lcom/android/server/location/FlpHardwareProvider;[Landroid/hardware/location/GeofenceHardwareRequestParcelable;)V
     .locals 0
-    .param p0    # Lcom/android/server/location/FlpHardwareProvider;
-    .param p1    # [Landroid/hardware/location/GeofenceHardwareRequestParcelable;
 
     invoke-direct {p0, p1}, Lcom/android/server/location/FlpHardwareProvider;->nativeAddGeofences([Landroid/hardware/location/GeofenceHardwareRequestParcelable;)V
 
@@ -192,8 +184,6 @@
 
 .method static synthetic access$1400(Lcom/android/server/location/FlpHardwareProvider;[I)V
     .locals 0
-    .param p0    # Lcom/android/server/location/FlpHardwareProvider;
-    .param p1    # [I
 
     invoke-direct {p0, p1}, Lcom/android/server/location/FlpHardwareProvider;->nativeRemoveGeofences([I)V
 
@@ -202,8 +192,6 @@
 
 .method static synthetic access$1500(Lcom/android/server/location/FlpHardwareProvider;I)V
     .locals 0
-    .param p0    # Lcom/android/server/location/FlpHardwareProvider;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/location/FlpHardwareProvider;->nativePauseGeofence(I)V
 
@@ -212,9 +200,6 @@
 
 .method static synthetic access$1600(Lcom/android/server/location/FlpHardwareProvider;II)V
     .locals 0
-    .param p0    # Lcom/android/server/location/FlpHardwareProvider;
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/location/FlpHardwareProvider;->nativeResumeGeofence(II)V
 
@@ -223,13 +208,6 @@
 
 .method static synthetic access$1700(Lcom/android/server/location/FlpHardwareProvider;IIIIII)V
     .locals 0
-    .param p0    # Lcom/android/server/location/FlpHardwareProvider;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     invoke-direct/range {p0 .. p6}, Lcom/android/server/location/FlpHardwareProvider;->nativeModifyGeofenceOption(IIIIII)V
 
@@ -238,7 +216,6 @@
 
 .method static synthetic access$200(Lcom/android/server/location/FlpHardwareProvider;)Landroid/hardware/location/IFusedLocationHardwareSink;
     .locals 1
-    .param p0    # Lcom/android/server/location/FlpHardwareProvider;
 
     iget-object v0, p0, Lcom/android/server/location/FlpHardwareProvider;->mLocationSink:Landroid/hardware/location/IFusedLocationHardwareSink;
 
@@ -247,8 +224,6 @@
 
 .method static synthetic access$202(Lcom/android/server/location/FlpHardwareProvider;Landroid/hardware/location/IFusedLocationHardwareSink;)Landroid/hardware/location/IFusedLocationHardwareSink;
     .locals 0
-    .param p0    # Lcom/android/server/location/FlpHardwareProvider;
-    .param p1    # Landroid/hardware/location/IFusedLocationHardwareSink;
 
     iput-object p1, p0, Lcom/android/server/location/FlpHardwareProvider;->mLocationSink:Landroid/hardware/location/IFusedLocationHardwareSink;
 
@@ -257,7 +232,6 @@
 
 .method static synthetic access$300(Lcom/android/server/location/FlpHardwareProvider;)I
     .locals 1
-    .param p0    # Lcom/android/server/location/FlpHardwareProvider;
 
     invoke-direct {p0}, Lcom/android/server/location/FlpHardwareProvider;->nativeGetBatchSize()I
 
@@ -268,9 +242,6 @@
 
 .method static synthetic access$400(Lcom/android/server/location/FlpHardwareProvider;ILandroid/location/FusedBatchOptions;)V
     .locals 0
-    .param p0    # Lcom/android/server/location/FlpHardwareProvider;
-    .param p1    # I
-    .param p2    # Landroid/location/FusedBatchOptions;
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/location/FlpHardwareProvider;->nativeStartBatching(ILandroid/location/FusedBatchOptions;)V
 
@@ -279,8 +250,6 @@
 
 .method static synthetic access$500(Lcom/android/server/location/FlpHardwareProvider;I)V
     .locals 0
-    .param p0    # Lcom/android/server/location/FlpHardwareProvider;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/location/FlpHardwareProvider;->nativeStopBatching(I)V
 
@@ -289,9 +258,6 @@
 
 .method static synthetic access$600(Lcom/android/server/location/FlpHardwareProvider;ILandroid/location/FusedBatchOptions;)V
     .locals 0
-    .param p0    # Lcom/android/server/location/FlpHardwareProvider;
-    .param p1    # I
-    .param p2    # Landroid/location/FusedBatchOptions;
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/location/FlpHardwareProvider;->nativeUpdateBatchingOptions(ILandroid/location/FusedBatchOptions;)V
 
@@ -300,8 +266,6 @@
 
 .method static synthetic access$700(Lcom/android/server/location/FlpHardwareProvider;I)V
     .locals 0
-    .param p0    # Lcom/android/server/location/FlpHardwareProvider;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/location/FlpHardwareProvider;->nativeRequestBatchedLocation(I)V
 
@@ -310,7 +274,6 @@
 
 .method static synthetic access$800(Lcom/android/server/location/FlpHardwareProvider;)Z
     .locals 1
-    .param p0    # Lcom/android/server/location/FlpHardwareProvider;
 
     invoke-direct {p0}, Lcom/android/server/location/FlpHardwareProvider;->nativeIsDiagnosticSupported()Z
 
@@ -321,8 +284,6 @@
 
 .method static synthetic access$900(Lcom/android/server/location/FlpHardwareProvider;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/server/location/FlpHardwareProvider;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/location/FlpHardwareProvider;->nativeInjectDiagnosticData(Ljava/lang/String;)V
 
@@ -352,7 +313,6 @@
 
 .method public static getInstance(Landroid/content/Context;)Lcom/android/server/location/FlpHardwareProvider;
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     sget-object v0, Lcom/android/server/location/FlpHardwareProvider;->sSingletonInstance:Lcom/android/server/location/FlpHardwareProvider;
 
@@ -450,7 +410,6 @@
 
 .method private onDataReport(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     iget-object v3, p0, Lcom/android/server/location/FlpHardwareProvider;->mLocationSinkLock:Ljava/lang/Object;
 
@@ -500,8 +459,6 @@
 
 .method private onGeofenceAdd(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0}, Lcom/android/server/location/FlpHardwareProvider;->getGeofenceHardwareSink()Landroid/hardware/location/GeofenceHardwareImpl;
 
@@ -518,9 +475,6 @@
 
 .method private onGeofenceMonitorStatus(IILandroid/location/Location;)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/location/Location;
 
     const/4 v0, 0x0
 
@@ -544,8 +498,6 @@
 
 .method private onGeofencePause(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0}, Lcom/android/server/location/FlpHardwareProvider;->getGeofenceHardwareSink()Landroid/hardware/location/GeofenceHardwareImpl;
 
@@ -562,8 +514,6 @@
 
 .method private onGeofenceRemove(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0}, Lcom/android/server/location/FlpHardwareProvider;->getGeofenceHardwareSink()Landroid/hardware/location/GeofenceHardwareImpl;
 
@@ -580,8 +530,6 @@
 
 .method private onGeofenceResume(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0}, Lcom/android/server/location/FlpHardwareProvider;->getGeofenceHardwareSink()Landroid/hardware/location/GeofenceHardwareImpl;
 
@@ -598,11 +546,6 @@
 
 .method private onGeofenceTransition(ILandroid/location/Location;IJI)V
     .locals 8
-    .param p1    # I
-    .param p2    # Landroid/location/Location;
-    .param p3    # I
-    .param p4    # J
-    .param p6    # I
 
     invoke-direct {p0}, Lcom/android/server/location/FlpHardwareProvider;->getGeofenceHardwareSink()Landroid/hardware/location/GeofenceHardwareImpl;
 
@@ -629,7 +572,6 @@
 
 .method private onLocationReport([Landroid/location/Location;)V
     .locals 9
-    .param p1    # [Landroid/location/Location;
 
     move-object v0, p1
 
@@ -743,7 +685,6 @@
 
 .method private static translateToGeofenceHardwareStatus(I)I
     .locals 6
-    .param p0    # I
 
     const/4 v1, 0x5
 
@@ -819,7 +760,6 @@
 
 .method private updateLocationInformation(Landroid/location/Location;)Landroid/location/Location;
     .locals 2
-    .param p1    # Landroid/location/Location;
 
     const-string v0, "fused"
 

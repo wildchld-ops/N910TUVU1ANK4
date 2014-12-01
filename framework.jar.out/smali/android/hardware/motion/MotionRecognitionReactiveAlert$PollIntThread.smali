@@ -25,7 +25,6 @@
 # direct methods
 .method public constructor <init>(Landroid/hardware/motion/MotionRecognitionReactiveAlert;Landroid/os/Handler;)V
     .locals 0
-    .param p2    # Landroid/os/Handler;
 
     iput-object p1, p0, Landroid/hardware/motion/MotionRecognitionReactiveAlert$PollIntThread;->this$0:Landroid/hardware/motion/MotionRecognitionReactiveAlert;
 

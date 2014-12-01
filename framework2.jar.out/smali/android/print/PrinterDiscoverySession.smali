@@ -50,9 +50,6 @@
 # direct methods
 .method constructor <init>(Landroid/print/IPrintManager;Landroid/content/Context;I)V
     .locals 4
-    .param p1    # Landroid/print/IPrintManager;
-    .param p2    # Landroid/content/Context;
-    .param p3    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -110,8 +107,6 @@
 
 .method static synthetic access$000(Landroid/print/PrinterDiscoverySession;Ljava/util/List;)V
     .locals 0
-    .param p0    # Landroid/print/PrinterDiscoverySession;
-    .param p1    # Ljava/util/List;
 
     invoke-direct {p0, p1}, Landroid/print/PrinterDiscoverySession;->handlePrintersAdded(Ljava/util/List;)V
 
@@ -120,8 +115,6 @@
 
 .method static synthetic access$100(Landroid/print/PrinterDiscoverySession;Ljava/util/List;)V
     .locals 0
-    .param p0    # Landroid/print/PrinterDiscoverySession;
-    .param p1    # Ljava/util/List;
 
     invoke-direct {p0, p1}, Landroid/print/PrinterDiscoverySession;->handlePrintersRemoved(Ljava/util/List;)V
 
@@ -130,7 +123,6 @@
 
 .method static synthetic access$200(Landroid/print/PrinterDiscoverySession;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Landroid/print/PrinterDiscoverySession;
 
     iget-object v0, p0, Landroid/print/PrinterDiscoverySession;->mHandler:Landroid/os/Handler;
 
@@ -577,7 +569,6 @@
 
 .method public final setOnPrintersChangeListener(Landroid/print/PrinterDiscoverySession$OnPrintersChangeListener;)V
     .locals 0
-    .param p1    # Landroid/print/PrinterDiscoverySession$OnPrintersChangeListener;
 
     invoke-static {}, Landroid/print/PrinterDiscoverySession;->throwIfNotCalledOnMainThread()V
 
@@ -650,7 +641,6 @@
 
 .method public final startPrinterStateTracking(Landroid/print/PrinterId;)V
     .locals 3
-    .param p1    # Landroid/print/PrinterId;
 
     invoke-virtual {p0}, Landroid/print/PrinterDiscoverySession;->isDestroyed()Z
 
@@ -746,7 +736,6 @@
 
 .method public final stopPrinterStateTracking(Landroid/print/PrinterId;)V
     .locals 3
-    .param p1    # Landroid/print/PrinterId;
 
     invoke-virtual {p0}, Landroid/print/PrinterDiscoverySession;->isDestroyed()Z
 

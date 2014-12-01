@@ -91,7 +91,6 @@
 
 .method public constructor <init>(Landroid/widget/TextView;)V
     .locals 3
-    .param p1    # Landroid/widget/TextView;
 
     const/4 v2, 0x0
 
@@ -146,7 +145,6 @@
 
 .method static synthetic access$100(Landroid/widget/SpellChecker;)[Landroid/widget/SpellChecker$SpellParser;
     .locals 1
-    .param p0    # Landroid/widget/SpellChecker;
 
     iget-object v0, p0, Landroid/widget/SpellChecker;->mSpellParsers:[Landroid/widget/SpellChecker$SpellParser;
 
@@ -155,7 +153,6 @@
 
 .method static synthetic access$1000(Landroid/widget/SpellChecker;)V
     .locals 0
-    .param p0    # Landroid/widget/SpellChecker;
 
     invoke-direct {p0}, Landroid/widget/SpellChecker;->spellCheck()V
 
@@ -164,7 +161,6 @@
 
 .method static synthetic access$200(Landroid/widget/SpellChecker;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Landroid/widget/SpellChecker;
 
     iget-object v0, p0, Landroid/widget/SpellChecker;->mTextView:Landroid/widget/TextView;
 
@@ -181,7 +177,6 @@
 
 .method static synthetic access$400(Landroid/widget/SpellChecker;)Z
     .locals 1
-    .param p0    # Landroid/widget/SpellChecker;
 
     iget-boolean v0, p0, Landroid/widget/SpellChecker;->mIsSentenceSpellCheckSupported:Z
 
@@ -190,7 +185,6 @@
 
 .method static synthetic access$500(Landroid/widget/SpellChecker;)Landroid/text/method/WordIterator;
     .locals 1
-    .param p0    # Landroid/widget/SpellChecker;
 
     iget-object v0, p0, Landroid/widget/SpellChecker;->mWordIterator:Landroid/text/method/WordIterator;
 
@@ -199,7 +193,6 @@
 
 .method static synthetic access$600(Landroid/widget/SpellChecker;)I
     .locals 1
-    .param p0    # Landroid/widget/SpellChecker;
 
     iget v0, p0, Landroid/widget/SpellChecker;->mLength:I
 
@@ -208,7 +201,6 @@
 
 .method static synthetic access$700(Landroid/widget/SpellChecker;)[Landroid/text/style/SpellCheckSpan;
     .locals 1
-    .param p0    # Landroid/widget/SpellChecker;
 
     iget-object v0, p0, Landroid/widget/SpellChecker;->mSpellCheckSpans:[Landroid/text/style/SpellCheckSpan;
 
@@ -217,7 +209,6 @@
 
 .method static synthetic access$800(Landroid/widget/SpellChecker;)[I
     .locals 1
-    .param p0    # Landroid/widget/SpellChecker;
 
     iget-object v0, p0, Landroid/widget/SpellChecker;->mIds:[I
 
@@ -226,10 +217,6 @@
 
 .method static synthetic access$900(Landroid/widget/SpellChecker;Landroid/text/Editable;II)V
     .locals 0
-    .param p0    # Landroid/widget/SpellChecker;
-    .param p1    # Landroid/text/Editable;
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/SpellChecker;->addSpellCheckSpan(Landroid/text/Editable;II)V
 
@@ -238,9 +225,6 @@
 
 .method private addSpellCheckSpan(Landroid/text/Editable;II)V
     .locals 5
-    .param p1    # Landroid/text/Editable;
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0}, Landroid/widget/SpellChecker;->nextSpellCheckSpanIndex()I
 
@@ -273,11 +257,6 @@
 
 .method private createMisspelledSuggestionSpan(Landroid/text/Editable;Landroid/view/textservice/SuggestionsInfo;Landroid/text/style/SpellCheckSpan;II)V
     .locals 13
-    .param p1    # Landroid/text/Editable;
-    .param p2    # Landroid/view/textservice/SuggestionsInfo;
-    .param p3    # Landroid/text/style/SpellCheckSpan;
-    .param p4    # I
-    .param p5    # I
 
     move-object/from16 v0, p3
 
@@ -414,11 +393,6 @@
 
 .method public static haveWordBoundariesChanged(Landroid/text/Editable;IIII)Z
     .locals 3
-    .param p0    # Landroid/text/Editable;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     if-eq p4, p1, :cond_0
 
@@ -572,9 +546,6 @@
 
 .method private onGetSuggestionsInternal(Landroid/view/textservice/SuggestionsInfo;II)Landroid/text/style/SpellCheckSpan;
     .locals 18
-    .param p1    # Landroid/view/textservice/SuggestionsInfo;
-    .param p2    # I
-    .param p3    # I
 
     if-eqz p1, :cond_0
 
@@ -910,7 +881,6 @@
 
 .method private setLocale(Ljava/util/Locale;)V
     .locals 1
-    .param p1    # Ljava/util/Locale;
 
     iput-object p1, p0, Landroid/widget/SpellChecker;->mCurrentLocale:Ljava/util/Locale;
 
@@ -1211,7 +1181,6 @@
 
 .method public onGetSentenceSuggestions([Landroid/view/textservice/SentenceSuggestionsInfo;)V
     .locals 10
-    .param p1    # [Landroid/view/textservice/SentenceSuggestionsInfo;
 
     iget-object v9, p0, Landroid/widget/SpellChecker;->mTextView:Landroid/widget/TextView;
 
@@ -1298,7 +1267,6 @@
 
 .method public onGetSuggestions([Landroid/view/textservice/SuggestionsInfo;)V
     .locals 5
-    .param p1    # [Landroid/view/textservice/SuggestionsInfo;
 
     const/4 v4, -0x1
 
@@ -1348,7 +1316,6 @@
 
 .method public onSpellCheckSpanRemoved(Landroid/text/style/SpellCheckSpan;)V
     .locals 3
-    .param p1    # Landroid/text/style/SpellCheckSpan;
 
     const/4 v0, 0x0
 
@@ -1380,8 +1347,6 @@
 
 .method public spellCheck(II)V
     .locals 9
-    .param p1    # I
-    .param p2    # I
 
     const/4 v8, 0x0
 

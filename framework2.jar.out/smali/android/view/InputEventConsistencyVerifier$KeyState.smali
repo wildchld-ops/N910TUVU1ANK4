@@ -55,9 +55,6 @@
 
 .method public static obtain(III)Landroid/view/InputEventConsistencyVerifier$KeyState;
     .locals 3
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
 
     sget-object v2, Landroid/view/InputEventConsistencyVerifier$KeyState;->mRecycledListLock:Ljava/lang/Object;
 

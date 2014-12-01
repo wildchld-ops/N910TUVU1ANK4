@@ -14,7 +14,6 @@
 
 .method public static getActionView(Landroid/view/MenuItem;)Landroid/view/View;
     .locals 1
-    .param p0    # Landroid/view/MenuItem;
 
     invoke-interface {p0}, Landroid/view/MenuItem;->getActionView()Landroid/view/View;
 
@@ -25,8 +24,6 @@
 
 .method public static setActionView(Landroid/view/MenuItem;I)Landroid/view/MenuItem;
     .locals 1
-    .param p0    # Landroid/view/MenuItem;
-    .param p1    # I
 
     invoke-interface {p0, p1}, Landroid/view/MenuItem;->setActionView(I)Landroid/view/MenuItem;
 
@@ -37,8 +34,6 @@
 
 .method public static setActionView(Landroid/view/MenuItem;Landroid/view/View;)Landroid/view/MenuItem;
     .locals 1
-    .param p0    # Landroid/view/MenuItem;
-    .param p1    # Landroid/view/View;
 
     invoke-interface {p0, p1}, Landroid/view/MenuItem;->setActionView(Landroid/view/View;)Landroid/view/MenuItem;
 
@@ -49,8 +44,6 @@
 
 .method public static setShowAsAction(Landroid/view/MenuItem;I)V
     .locals 0
-    .param p0    # Landroid/view/MenuItem;
-    .param p1    # I
 
     invoke-interface {p0, p1}, Landroid/view/MenuItem;->setShowAsAction(I)V
 

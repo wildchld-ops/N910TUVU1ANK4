@@ -36,7 +36,6 @@
 # virtual methods
 .method public onDismiss(Lcom/android/launcher2/popup/PopupMenu;)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/popup/PopupMenu;
 
     const/4 v0, 0x0
 

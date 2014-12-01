@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/SEAMService;Landroid/os/Looper;)V
     .locals 0
-    .param p2    # Landroid/os/Looper;
 
     iput-object p1, p0, Lcom/android/server/SEAMService$BrHandler;->this$0:Lcom/android/server/SEAMService;
 
@@ -34,7 +33,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 0
-    .param p1    # Landroid/os/Message;
 
     return-void
 .end method

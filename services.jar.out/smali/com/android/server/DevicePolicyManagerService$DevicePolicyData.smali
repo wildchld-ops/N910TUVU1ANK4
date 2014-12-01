@@ -106,7 +106,6 @@
 # direct methods
 .method public constructor <init>(I)V
     .locals 2
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -189,7 +188,6 @@
 
 .method static synthetic access$700(Lcom/android/server/DevicePolicyManagerService$DevicePolicyData;)Ljava/util/HashSet;
     .locals 1
-    .param p0    # Lcom/android/server/DevicePolicyManagerService$DevicePolicyData;
 
     iget-object v0, p0, Lcom/android/server/DevicePolicyManagerService$DevicePolicyData;->mAllowListRecord:Ljava/util/HashSet;
 
@@ -198,7 +196,6 @@
 
 .method static synthetic access$800(Lcom/android/server/DevicePolicyManagerService$DevicePolicyData;)Ljava/util/HashSet;
     .locals 1
-    .param p0    # Lcom/android/server/DevicePolicyManagerService$DevicePolicyData;
 
     iget-object v0, p0, Lcom/android/server/DevicePolicyManagerService$DevicePolicyData;->mBlockListRecordInRom:Ljava/util/HashSet;
 

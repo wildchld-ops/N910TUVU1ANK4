@@ -78,8 +78,6 @@
 # direct methods
 .method public constructor <init>(Landroid/os/Looper;Landroid/view/inputmethod/InputConnection;)V
     .locals 2
-    .param p1    # Landroid/os/Looper;
-    .param p2    # Landroid/view/inputmethod/InputConnection;
 
     invoke-direct {p0}, Lcom/android/internal/view/IInputContext$Stub;-><init>()V
 
@@ -120,7 +118,6 @@
 
 .method public clearMetaKeyStates(I)V
     .locals 2
-    .param p1    # I
 
     const/16 v0, 0x82
 
@@ -137,7 +134,6 @@
 
 .method public commitCompletion(Landroid/view/inputmethod/CompletionInfo;)V
     .locals 1
-    .param p1    # Landroid/view/inputmethod/CompletionInfo;
 
     const/16 v0, 0x37
 
@@ -152,7 +148,6 @@
 
 .method public commitCorrection(Landroid/view/inputmethod/CorrectionInfo;)V
     .locals 1
-    .param p1    # Landroid/view/inputmethod/CorrectionInfo;
 
     const/16 v0, 0x38
 
@@ -167,8 +162,6 @@
 
 .method public commitText(Ljava/lang/CharSequence;I)V
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
 
     const/16 v0, 0x32
 
@@ -183,8 +176,6 @@
 
 .method public deleteSurroundingText(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     const/16 v0, 0x50
 
@@ -199,7 +190,6 @@
 
 .method dispatchMessage(Landroid/os/Message;)V
     .locals 2
-    .param p1    # Landroid/os/Message;
 
     invoke-static {}, Landroid/os/Looper;->myLooper()Landroid/os/Looper;
 
@@ -240,7 +230,6 @@
 
 .method executeMessage(Landroid/os/Message;)V
     .locals 6
-    .param p1    # Landroid/os/Message;
 
     const/4 v3, 0x1
 
@@ -1230,9 +1219,6 @@
 
 .method public getCursorCapsMode(IILcom/android/internal/view/IInputContextCallback;)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Lcom/android/internal/view/IInputContextCallback;
 
     const/16 v0, 0x1e
 
@@ -1247,10 +1233,6 @@
 
 .method public getExtractedText(Landroid/view/inputmethod/ExtractedTextRequest;IILcom/android/internal/view/IInputContextCallback;)V
     .locals 6
-    .param p1    # Landroid/view/inputmethod/ExtractedTextRequest;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Lcom/android/internal/view/IInputContextCallback;
 
     const/16 v1, 0x28
 
@@ -1275,9 +1257,6 @@
 
 .method public getSelectedText(IILcom/android/internal/view/IInputContextCallback;)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Lcom/android/internal/view/IInputContextCallback;
 
     const/16 v0, 0x19
 
@@ -1292,10 +1271,6 @@
 
 .method public getTextAfterCursor(IIILcom/android/internal/view/IInputContextCallback;)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Lcom/android/internal/view/IInputContextCallback;
 
     const/16 v1, 0xa
 
@@ -1320,10 +1295,6 @@
 
 .method public getTextBeforeCursor(IIILcom/android/internal/view/IInputContextCallback;)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Lcom/android/internal/view/IInputContextCallback;
 
     const/16 v1, 0x14
 
@@ -1356,7 +1327,6 @@
 
 .method obtainMessage(I)Landroid/os/Message;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/internal/view/IInputConnectionWrapper;->mH:Landroid/os/Handler;
 
@@ -1369,9 +1339,6 @@
 
 .method obtainMessageII(III)Landroid/os/Message;
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     iget-object v0, p0, Lcom/android/internal/view/IInputConnectionWrapper;->mH:Landroid/os/Handler;
 
@@ -1384,11 +1351,6 @@
 
 .method obtainMessageIISC(IIIILcom/android/internal/view/IInputContextCallback;)Landroid/os/Message;
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Lcom/android/internal/view/IInputContextCallback;
 
     new-instance v0, Lcom/android/internal/view/IInputConnectionWrapper$SomeArgs;
 
@@ -1409,9 +1371,6 @@
 
 .method obtainMessageIO(IILjava/lang/Object;)Landroid/os/Message;
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/Object;
 
     iget-object v0, p0, Lcom/android/internal/view/IInputConnectionWrapper;->mH:Landroid/os/Handler;
 
@@ -1426,11 +1385,6 @@
 
 .method obtainMessageIOSC(IILjava/lang/Object;ILcom/android/internal/view/IInputContextCallback;)Landroid/os/Message;
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/Object;
-    .param p4    # I
-    .param p5    # Lcom/android/internal/view/IInputContextCallback;
 
     new-instance v0, Lcom/android/internal/view/IInputConnectionWrapper$SomeArgs;
 
@@ -1455,10 +1409,6 @@
 
 .method obtainMessageISC(IIILcom/android/internal/view/IInputContextCallback;)Landroid/os/Message;
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Lcom/android/internal/view/IInputContextCallback;
 
     new-instance v0, Lcom/android/internal/view/IInputConnectionWrapper$SomeArgs;
 
@@ -1481,8 +1431,6 @@
 
 .method obtainMessageO(ILjava/lang/Object;)Landroid/os/Message;
     .locals 2
-    .param p1    # I
-    .param p2    # Ljava/lang/Object;
 
     const/4 v1, 0x0
 
@@ -1497,9 +1445,6 @@
 
 .method obtainMessageOO(ILjava/lang/Object;Ljava/lang/Object;)Landroid/os/Message;
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/Object;
-    .param p3    # Ljava/lang/Object;
 
     const/4 v2, 0x0
 
@@ -1522,7 +1467,6 @@
 
 .method public performContextMenuAction(I)V
     .locals 2
-    .param p1    # I
 
     const/16 v0, 0x3b
 
@@ -1539,7 +1483,6 @@
 
 .method public performEditorAction(I)V
     .locals 2
-    .param p1    # I
 
     const/16 v0, 0x3a
 
@@ -1556,8 +1499,6 @@
 
 .method public performPrivateCommand(Ljava/lang/String;Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Bundle;
 
     const/16 v0, 0x78
 
@@ -1572,7 +1513,6 @@
 
 .method public reportFullscreenMode(Z)V
     .locals 3
-    .param p1    # Z
 
     const/4 v1, 0x0
 
@@ -1599,7 +1539,6 @@
 
 .method public sendKeyEvent(Landroid/view/KeyEvent;)V
     .locals 1
-    .param p1    # Landroid/view/KeyEvent;
 
     const/16 v0, 0x46
 
@@ -1614,8 +1553,6 @@
 
 .method public setComposingRegion(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     const/16 v0, 0x3f
 
@@ -1630,8 +1567,6 @@
 
 .method public setComposingText(Ljava/lang/CharSequence;I)V
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
 
     const/16 v0, 0x3c
 
@@ -1646,8 +1581,6 @@
 
 .method public setSelection(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     const/16 v0, 0x39
 

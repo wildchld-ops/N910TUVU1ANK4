@@ -40,14 +40,12 @@
 
 .method protected static emulateTouchOnFocusedView(Landroid/app/Activity;)V
     .locals 0
-    .param p0    # Landroid/app/Activity;
 
     return-void
 .end method
 
 .method static getGuideModeFromBundle(Landroid/os/Bundle;)Ljava/lang/String;
     .locals 2
-    .param p0    # Landroid/os/Bundle;
 
     const/4 v0, 0x0
 
@@ -85,8 +83,6 @@
 
 .method static getGuideModeFromIntent(Landroid/os/Bundle;Landroid/os/Bundle;)Ljava/lang/String;
     .locals 2
-    .param p0    # Landroid/os/Bundle;
-    .param p1    # Landroid/os/Bundle;
 
     if-eqz p0, :cond_1
 
@@ -114,14 +110,12 @@
 
 .method static init(Landroid/content/Context;)V
     .locals 0
-    .param p0    # Landroid/content/Context;
 
     return-void
 .end method
 
 .method static isGuideCompleted(Landroid/os/Bundle;)Z
     .locals 2
-    .param p0    # Landroid/os/Bundle;
 
     const/4 v0, 0x0
 
@@ -151,7 +145,6 @@
 
 .method static isGuideModeNavigation(Ljava/lang/String;)Z
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -173,7 +166,6 @@
 
 .method static isGuideModeViewApps(Ljava/lang/String;)Z
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -195,8 +187,6 @@
 
 .method static isInGuideMode(Landroid/os/Bundle;Landroid/os/Bundle;)Z
     .locals 2
-    .param p0    # Landroid/os/Bundle;
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v0, 0x0
 
@@ -254,8 +244,6 @@
 
 .method static setHomeViewDisabled(ZLandroid/app/Activity;)V
     .locals 2
-    .param p0    # Z
-    .param p1    # Landroid/app/Activity;
 
     instance-of v1, p1, Lcom/android/launcher2/Launcher;
 
@@ -277,7 +265,6 @@
 
 .method static switchMode(Landroid/app/Activity;)Z
     .locals 2
-    .param p0    # Landroid/app/Activity;
 
     invoke-static {}, Lcom/android/launcher2/guide/GuideModeHelper;->isTablet()Z
 

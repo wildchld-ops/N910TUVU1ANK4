@@ -30,7 +30,6 @@
 # virtual methods
 .method public filterApp(Landroid/content/pm/ApplicationInfo;)Z
     .locals 1
-    .param p1    # Landroid/content/pm/ApplicationInfo;
 
     iget-boolean v0, p1, Landroid/content/pm/ApplicationInfo;->enabled:Z
 

@@ -30,7 +30,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -75,8 +74,6 @@
 
 .method public delete(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v5, 0x0
 
@@ -285,7 +282,6 @@
 
 .method public get_keys_by_flag(J)[B
     .locals 8
-    .param p1    # J
 
     const/4 v2, 0x0
 
@@ -438,8 +434,6 @@
 
 .method public get_keys_by_flag_and_uuid(JLjava/lang/String;)[B
     .locals 8
-    .param p1    # J
-    .param p3    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -620,7 +614,6 @@
 
 .method public open(I)V
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/database/SQLException;
@@ -680,9 +673,6 @@
 
 .method public read(Ljava/lang/String;Ljava/lang/String;J)[B
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # J
 
     const/4 v9, 0x0
 
@@ -890,7 +880,6 @@
 
 .method public update_keys([B)V
     .locals 9
-    .param p1    # [B
 
     iget-object v6, p0, Landroid/os/storage/sensitive/SensitiveDataProvider;->database:Landroid/database/sqlite/SQLiteDatabase;
 
@@ -1099,10 +1088,6 @@
 
 .method public write(Ljava/lang/String;Ljava/lang/String;J[B)Z
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # J
-    .param p5    # [B
 
     iget-object v6, p0, Landroid/os/storage/sensitive/SensitiveDataProvider;->database:Landroid/database/sqlite/SQLiteDatabase;
 

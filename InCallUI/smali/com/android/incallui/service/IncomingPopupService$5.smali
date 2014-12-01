@@ -36,8 +36,6 @@
 # virtual methods
 .method public onContactInfoComplete(ILcom/android/incallui/ContactInfoCache$ContactCacheEntry;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Lcom/android/incallui/ContactInfoCache$ContactCacheEntry;
 
     iget-object v0, p0, Lcom/android/incallui/service/IncomingPopupService$5;->this$0:Lcom/android/incallui/service/IncomingPopupService;
 
@@ -109,8 +107,6 @@
 
 .method public onImageLoadComplete(ILcom/android/incallui/ContactInfoCache$ContactCacheEntry;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Lcom/android/incallui/ContactInfoCache$ContactCacheEntry;
 
     iget-object v0, p0, Lcom/android/incallui/service/IncomingPopupService$5;->this$0:Lcom/android/incallui/service/IncomingPopupService;
 

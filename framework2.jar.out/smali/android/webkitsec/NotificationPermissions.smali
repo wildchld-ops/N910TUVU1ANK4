@@ -75,7 +75,6 @@
 
 .method private declared-synchronized postMessage(Landroid/os/Message;)V
     .locals 1
-    .param p1    # Landroid/os/Message;
 
     monitor-enter p0
 

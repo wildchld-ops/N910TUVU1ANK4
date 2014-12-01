@@ -35,7 +35,6 @@
 # direct methods
 .method constructor <init>(Lorg/w3c/dom/smil/SMILElement;)V
     .locals 0
-    .param p1    # Lorg/w3c/dom/smil/SMILElement;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -712,7 +711,6 @@
 
 .method public setBegin(Lorg/w3c/dom/smil/TimeList;)V
     .locals 3
-    .param p1    # Lorg/w3c/dom/smil/TimeList;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;
@@ -732,7 +730,6 @@
 
 .method public setDur(F)V
     .locals 4
-    .param p1    # F
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;
@@ -778,7 +775,6 @@
 
 .method public setEnd(Lorg/w3c/dom/smil/TimeList;)V
     .locals 3
-    .param p1    # Lorg/w3c/dom/smil/TimeList;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;
@@ -798,7 +794,6 @@
 
 .method public setFill(S)V
     .locals 3
-    .param p1    # S
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;
@@ -834,7 +829,6 @@
 
 .method public setFillDefault(S)V
     .locals 3
-    .param p1    # S
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;
@@ -870,7 +864,6 @@
 
 .method public setRepeatCount(F)V
     .locals 3
-    .param p1    # F
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;
@@ -901,7 +894,6 @@
 
 .method public setRepeatDur(F)V
     .locals 3
-    .param p1    # F
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;
@@ -950,7 +942,6 @@
 
 .method public setRestart(S)V
     .locals 3
-    .param p1    # S
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;

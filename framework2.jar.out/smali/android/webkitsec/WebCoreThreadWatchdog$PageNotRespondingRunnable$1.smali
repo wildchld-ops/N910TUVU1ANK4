@@ -36,7 +36,6 @@
 # virtual methods
 .method public onCancel(Landroid/content/DialogInterface;)V
     .locals 4
-    .param p1    # Landroid/content/DialogInterface;
 
     iget-object v0, p0, Landroid/webkitsec/WebCoreThreadWatchdog$PageNotRespondingRunnable$1;->this$1:Landroid/webkitsec/WebCoreThreadWatchdog$PageNotRespondingRunnable;
 

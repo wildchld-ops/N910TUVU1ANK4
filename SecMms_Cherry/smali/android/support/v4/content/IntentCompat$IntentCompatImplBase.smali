@@ -30,7 +30,6 @@
 # virtual methods
 .method public makeMainActivity(Landroid/content/ComponentName;)Landroid/content/Intent;
     .locals 2
-    .param p1    # Landroid/content/ComponentName;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -49,8 +48,6 @@
 
 .method public makeMainSelectorActivity(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -63,7 +60,6 @@
 
 .method public makeRestartActivityTask(Landroid/content/ComponentName;)Landroid/content/Intent;
     .locals 2
-    .param p1    # Landroid/content/ComponentName;
 
     invoke-virtual {p0, p1}, Landroid/support/v4/content/IntentCompat$IntentCompatImplBase;->makeMainActivity(Landroid/content/ComponentName;)Landroid/content/Intent;
 

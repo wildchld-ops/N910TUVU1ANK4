@@ -40,7 +40,7 @@
 
     new-instance v4, Lcom/android/phone/LGTRoamingData;
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/LGTSetAutoDialing;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v5
 
@@ -48,15 +48,15 @@
 
     const-string v2, ""
 
-    invoke-virtual {p0}, Landroid/preference/PreferenceActivity;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/phone/LGTSetAutoDialing;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v5
 
     iget-object v6, p0, Lcom/android/phone/LGTSetAutoDialing;->mCategory:Landroid/preference/PreferenceCategory;
 
-    invoke-virtual {v5, v6}, Landroid/preference/PreferenceGroup;->addPreference(Landroid/preference/Preference;)Z
+    invoke-virtual {v5, v6}, Landroid/preference/PreferenceScreen;->addPreference(Landroid/preference/Preference;)Z
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/LGTSetAutoDialing;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v5
 
@@ -80,7 +80,7 @@
 
     if-nez v1, :cond_1
 
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/LGTSetAutoDialing;->finish()V
 
     invoke-virtual {v4}, Lcom/android/phone/LGTRoamingData;->close()V
 
@@ -89,7 +89,7 @@
     return-void
 
     :cond_1
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/LGTSetAutoDialing;->getResources()Landroid/content/res/Resources;
 
     move-result-object v5
 
@@ -156,13 +156,13 @@
 
     if-eqz v5, :cond_2
 
-    invoke-virtual {p0}, Landroid/preference/PreferenceActivity;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/phone/LGTSetAutoDialing;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v5
 
     iget-object v6, p0, Lcom/android/phone/LGTSetAutoDialing;->mInfoCategory:Landroid/preference/PreferenceCategory;
 
-    invoke-virtual {v5, v6}, Landroid/preference/PreferenceGroup;->removePreference(Landroid/preference/Preference;)Z
+    invoke-virtual {v5, v6}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
     :cond_2
     invoke-virtual {v4}, Lcom/android/phone/LGTRoamingData;->close()V
@@ -182,7 +182,7 @@
 
     const-wide/16 v4, 0x6c
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/LGTSetAutoDialing;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 
@@ -192,7 +192,7 @@
 
     new-instance v1, Lcom/android/phone/LGTRoamingData;
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/LGTSetAutoDialing;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v2
 
@@ -208,7 +208,7 @@
 
     if-nez v0, :cond_0
 
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/LGTSetAutoDialing;->finish()V
 
     invoke-virtual {v1}, Lcom/android/phone/LGTRoamingData;->close()V
 
@@ -216,7 +216,7 @@
     return-void
 
     :cond_0
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/LGTSetAutoDialing;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 
@@ -228,7 +228,7 @@
 
     invoke-static {v2, v3, v4}, Landroid/provider/Settings$System;->putString(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Z
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/LGTSetAutoDialing;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 
@@ -240,7 +240,7 @@
 
     invoke-static {v2, v3, v4}, Landroid/provider/Settings$System;->putString(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Z
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/LGTSetAutoDialing;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 
@@ -265,7 +265,7 @@
 
     invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onCreate(Landroid/os/Bundle;)V
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/phone/LGTSetAutoDialing;->getIntent()Landroid/content/Intent;
 
     move-result-object v5
 
@@ -275,7 +275,7 @@
 
     if-eqz v5, :cond_0
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/phone/LGTSetAutoDialing;->getIntent()Landroid/content/Intent;
 
     move-result-object v5
 
@@ -297,16 +297,16 @@
 
     invoke-static {v5, v6}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/LGTSetAutoDialing;->finish()V
 
     :cond_0
     const v5, 0x7f060047
 
-    invoke-virtual {p0, v5}, Landroid/preference/PreferenceActivity;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v5}, Lcom/android/phone/LGTSetAutoDialing;->addPreferencesFromResource(I)V
 
     const-string v5, "pc_auto_dialing_enable"
 
-    invoke-virtual {p0, v5}, Landroid/preference/PreferenceActivity;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v5}, Lcom/android/phone/LGTSetAutoDialing;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v5
 
@@ -316,7 +316,7 @@
 
     const-string v5, "toggle_auto_dialing"
 
-    invoke-virtual {p0, v5}, Landroid/preference/PreferenceActivity;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v5}, Lcom/android/phone/LGTSetAutoDialing;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v5
 
@@ -326,7 +326,7 @@
 
     const-string v5, "country_code"
 
-    invoke-virtual {p0, v5}, Landroid/preference/PreferenceActivity;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v5}, Lcom/android/phone/LGTSetAutoDialing;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v5
 
@@ -334,7 +334,7 @@
 
     const-string v5, "info_category"
 
-    invoke-virtual {p0, v5}, Landroid/preference/PreferenceActivity;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v5}, Lcom/android/phone/LGTSetAutoDialing;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v5
 
@@ -344,7 +344,7 @@
 
     const-string v5, "auto_dialing_guide"
 
-    invoke-virtual {p0, v5}, Landroid/preference/PreferenceActivity;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v5}, Lcom/android/phone/LGTSetAutoDialing;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v5
 
@@ -356,13 +356,13 @@
 
     iget-object v5, p0, Lcom/android/phone/LGTSetAutoDialing;->mAutoDial:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v5, p0}, Landroid/preference/Preference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
+    invoke-virtual {v5, p0}, Landroid/preference/CheckBoxPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     iget-object v5, p0, Lcom/android/phone/LGTSetAutoDialing;->mAutodialGuide:Landroid/preference/Preference;
 
     invoke-virtual {v5, p0}, Landroid/preference/Preference;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/LGTSetAutoDialing;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v5
 
@@ -392,7 +392,7 @@
     invoke-direct {p0}, Lcom/android/phone/LGTSetAutoDialing;->setDefaultRoamingValue()V
 
     :cond_2
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/LGTSetAutoDialing;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v5
 
@@ -402,7 +402,7 @@
 
     move-result-object v4
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/LGTSetAutoDialing;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v5
 
@@ -412,7 +412,7 @@
 
     move-result-object v2
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/LGTSetAutoDialing;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v5
 
@@ -422,7 +422,7 @@
 
     move-result-object v3
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/LGTSetAutoDialing;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v5
 
@@ -445,7 +445,7 @@
 
     move-result-object v0
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/LGTSetAutoDialing;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v5
 
@@ -564,7 +564,7 @@
 
     invoke-virtual {v1}, Landroid/widget/Toast;->show()V
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/LGTSetAutoDialing;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
@@ -599,7 +599,7 @@
 
     invoke-virtual {v1}, Landroid/widget/Toast;->show()V
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/LGTSetAutoDialing;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
@@ -629,7 +629,7 @@
 
     new-instance v0, Landroid/content/Intent;
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/LGTSetAutoDialing;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -637,7 +637,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/LGTSetAutoDialing;->startActivity(Landroid/content/Intent;)V
 
     :cond_0
     :goto_0
@@ -660,7 +660,7 @@
 
     new-instance v0, Landroid/content/Intent;
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/LGTSetAutoDialing;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -668,7 +668,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/LGTSetAutoDialing;->startActivity(Landroid/content/Intent;)V
 
     goto :goto_0
 .end method
@@ -678,7 +678,7 @@
 
     const/4 v1, 0x1
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/LGTSetAutoDialing;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 
@@ -699,7 +699,7 @@
     :goto_0
     iget-object v2, p0, Lcom/android/phone/LGTSetAutoDialing;->mAutoDial:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v2, v0}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+    invoke-virtual {v2, v0}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -707,7 +707,7 @@
 
     invoke-direct {p0, v1}, Lcom/android/phone/LGTSetAutoDialing;->setCurrentView(Ljava/lang/Boolean;)V
 
-    invoke-super {p0}, Landroid/app/Activity;->onResume()V
+    invoke-super {p0}, Landroid/preference/PreferenceActivity;->onResume()V
 
     return-void
 

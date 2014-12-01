@@ -39,8 +39,6 @@
 # direct methods
 .method constructor <init>(ILandroid/renderscript/RenderScript;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Landroid/renderscript/RenderScript;
 
     invoke-direct {p0, p1, p2}, Landroid/renderscript/BaseObj;-><init>(ILandroid/renderscript/RenderScript;)V
 
@@ -49,12 +47,6 @@
 
 .method constructor <init>(ILandroid/renderscript/RenderScript;Landroid/renderscript/Element$DataType;Landroid/renderscript/Element$DataKind;ZI)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/renderscript/RenderScript;
-    .param p3    # Landroid/renderscript/Element$DataType;
-    .param p4    # Landroid/renderscript/Element$DataKind;
-    .param p5    # Z
-    .param p6    # I
 
     invoke-direct {p0, p1, p2}, Landroid/renderscript/BaseObj;-><init>(ILandroid/renderscript/RenderScript;)V
 
@@ -110,11 +102,6 @@
 
 .method constructor <init>(ILandroid/renderscript/RenderScript;[Landroid/renderscript/Element;[Ljava/lang/String;[I)V
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/renderscript/RenderScript;
-    .param p3    # [Landroid/renderscript/Element;
-    .param p4    # [Ljava/lang/String;
-    .param p5    # [I
 
     invoke-direct {p0, p1, p2}, Landroid/renderscript/BaseObj;-><init>(ILandroid/renderscript/RenderScript;)V
 
@@ -193,7 +180,6 @@
 
 .method public static ALLOCATION(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
     .locals 1
-    .param p0    # Landroid/renderscript/RenderScript;
 
     iget-object v0, p0, Landroid/renderscript/RenderScript;->mElement_ALLOCATION:Landroid/renderscript/Element;
 
@@ -215,7 +201,6 @@
 
 .method public static A_8(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
     .locals 2
-    .param p0    # Landroid/renderscript/RenderScript;
 
     iget-object v0, p0, Landroid/renderscript/RenderScript;->mElement_A_8:Landroid/renderscript/Element;
 
@@ -239,7 +224,6 @@
 
 .method public static BOOLEAN(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
     .locals 1
-    .param p0    # Landroid/renderscript/RenderScript;
 
     iget-object v0, p0, Landroid/renderscript/RenderScript;->mElement_BOOLEAN:Landroid/renderscript/Element;
 
@@ -261,7 +245,6 @@
 
 .method public static ELEMENT(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
     .locals 1
-    .param p0    # Landroid/renderscript/RenderScript;
 
     iget-object v0, p0, Landroid/renderscript/RenderScript;->mElement_ELEMENT:Landroid/renderscript/Element;
 
@@ -283,7 +266,6 @@
 
 .method public static F32(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
     .locals 1
-    .param p0    # Landroid/renderscript/RenderScript;
 
     iget-object v0, p0, Landroid/renderscript/RenderScript;->mElement_F32:Landroid/renderscript/Element;
 
@@ -305,7 +287,6 @@
 
 .method public static F32_2(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
     .locals 2
-    .param p0    # Landroid/renderscript/RenderScript;
 
     iget-object v0, p0, Landroid/renderscript/RenderScript;->mElement_FLOAT_2:Landroid/renderscript/Element;
 
@@ -329,7 +310,6 @@
 
 .method public static F32_3(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
     .locals 2
-    .param p0    # Landroid/renderscript/RenderScript;
 
     iget-object v0, p0, Landroid/renderscript/RenderScript;->mElement_FLOAT_3:Landroid/renderscript/Element;
 
@@ -353,7 +333,6 @@
 
 .method public static F32_4(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
     .locals 2
-    .param p0    # Landroid/renderscript/RenderScript;
 
     iget-object v0, p0, Landroid/renderscript/RenderScript;->mElement_FLOAT_4:Landroid/renderscript/Element;
 
@@ -377,7 +356,6 @@
 
 .method public static F64(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
     .locals 1
-    .param p0    # Landroid/renderscript/RenderScript;
 
     iget-object v0, p0, Landroid/renderscript/RenderScript;->mElement_F64:Landroid/renderscript/Element;
 
@@ -399,7 +377,6 @@
 
 .method public static F64_2(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
     .locals 2
-    .param p0    # Landroid/renderscript/RenderScript;
 
     iget-object v0, p0, Landroid/renderscript/RenderScript;->mElement_DOUBLE_2:Landroid/renderscript/Element;
 
@@ -423,7 +400,6 @@
 
 .method public static F64_3(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
     .locals 2
-    .param p0    # Landroid/renderscript/RenderScript;
 
     iget-object v0, p0, Landroid/renderscript/RenderScript;->mElement_DOUBLE_3:Landroid/renderscript/Element;
 
@@ -447,7 +423,6 @@
 
 .method public static F64_4(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
     .locals 2
-    .param p0    # Landroid/renderscript/RenderScript;
 
     iget-object v0, p0, Landroid/renderscript/RenderScript;->mElement_DOUBLE_4:Landroid/renderscript/Element;
 
@@ -471,7 +446,6 @@
 
 .method public static FONT(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
     .locals 1
-    .param p0    # Landroid/renderscript/RenderScript;
 
     iget-object v0, p0, Landroid/renderscript/RenderScript;->mElement_FONT:Landroid/renderscript/Element;
 
@@ -493,7 +467,6 @@
 
 .method public static I16(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
     .locals 1
-    .param p0    # Landroid/renderscript/RenderScript;
 
     iget-object v0, p0, Landroid/renderscript/RenderScript;->mElement_I16:Landroid/renderscript/Element;
 
@@ -515,7 +488,6 @@
 
 .method public static I16_2(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
     .locals 2
-    .param p0    # Landroid/renderscript/RenderScript;
 
     iget-object v0, p0, Landroid/renderscript/RenderScript;->mElement_SHORT_2:Landroid/renderscript/Element;
 
@@ -539,7 +511,6 @@
 
 .method public static I16_3(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
     .locals 2
-    .param p0    # Landroid/renderscript/RenderScript;
 
     iget-object v0, p0, Landroid/renderscript/RenderScript;->mElement_SHORT_3:Landroid/renderscript/Element;
 
@@ -563,7 +534,6 @@
 
 .method public static I16_4(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
     .locals 2
-    .param p0    # Landroid/renderscript/RenderScript;
 
     iget-object v0, p0, Landroid/renderscript/RenderScript;->mElement_SHORT_4:Landroid/renderscript/Element;
 
@@ -587,7 +557,6 @@
 
 .method public static I32(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
     .locals 1
-    .param p0    # Landroid/renderscript/RenderScript;
 
     iget-object v0, p0, Landroid/renderscript/RenderScript;->mElement_I32:Landroid/renderscript/Element;
 
@@ -609,7 +578,6 @@
 
 .method public static I32_2(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
     .locals 2
-    .param p0    # Landroid/renderscript/RenderScript;
 
     iget-object v0, p0, Landroid/renderscript/RenderScript;->mElement_INT_2:Landroid/renderscript/Element;
 
@@ -633,7 +601,6 @@
 
 .method public static I32_3(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
     .locals 2
-    .param p0    # Landroid/renderscript/RenderScript;
 
     iget-object v0, p0, Landroid/renderscript/RenderScript;->mElement_INT_3:Landroid/renderscript/Element;
 
@@ -657,7 +624,6 @@
 
 .method public static I32_4(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
     .locals 2
-    .param p0    # Landroid/renderscript/RenderScript;
 
     iget-object v0, p0, Landroid/renderscript/RenderScript;->mElement_INT_4:Landroid/renderscript/Element;
 
@@ -681,7 +647,6 @@
 
 .method public static I64(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
     .locals 1
-    .param p0    # Landroid/renderscript/RenderScript;
 
     iget-object v0, p0, Landroid/renderscript/RenderScript;->mElement_I64:Landroid/renderscript/Element;
 
@@ -703,7 +668,6 @@
 
 .method public static I64_2(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
     .locals 2
-    .param p0    # Landroid/renderscript/RenderScript;
 
     iget-object v0, p0, Landroid/renderscript/RenderScript;->mElement_LONG_2:Landroid/renderscript/Element;
 
@@ -727,7 +691,6 @@
 
 .method public static I64_3(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
     .locals 2
-    .param p0    # Landroid/renderscript/RenderScript;
 
     iget-object v0, p0, Landroid/renderscript/RenderScript;->mElement_LONG_3:Landroid/renderscript/Element;
 
@@ -751,7 +714,6 @@
 
 .method public static I64_4(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
     .locals 2
-    .param p0    # Landroid/renderscript/RenderScript;
 
     iget-object v0, p0, Landroid/renderscript/RenderScript;->mElement_LONG_4:Landroid/renderscript/Element;
 
@@ -775,7 +737,6 @@
 
 .method public static I8(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
     .locals 1
-    .param p0    # Landroid/renderscript/RenderScript;
 
     iget-object v0, p0, Landroid/renderscript/RenderScript;->mElement_I8:Landroid/renderscript/Element;
 
@@ -797,7 +758,6 @@
 
 .method public static I8_2(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
     .locals 2
-    .param p0    # Landroid/renderscript/RenderScript;
 
     iget-object v0, p0, Landroid/renderscript/RenderScript;->mElement_CHAR_2:Landroid/renderscript/Element;
 
@@ -821,7 +781,6 @@
 
 .method public static I8_3(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
     .locals 2
-    .param p0    # Landroid/renderscript/RenderScript;
 
     iget-object v0, p0, Landroid/renderscript/RenderScript;->mElement_CHAR_3:Landroid/renderscript/Element;
 
@@ -845,7 +804,6 @@
 
 .method public static I8_4(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
     .locals 2
-    .param p0    # Landroid/renderscript/RenderScript;
 
     iget-object v0, p0, Landroid/renderscript/RenderScript;->mElement_CHAR_4:Landroid/renderscript/Element;
 
@@ -869,7 +827,6 @@
 
 .method public static MATRIX4X4(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
     .locals 1
-    .param p0    # Landroid/renderscript/RenderScript;
 
     invoke-static {p0}, Landroid/renderscript/Element;->MATRIX_4X4(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
 
@@ -880,7 +837,6 @@
 
 .method public static MATRIX_2X2(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
     .locals 1
-    .param p0    # Landroid/renderscript/RenderScript;
 
     iget-object v0, p0, Landroid/renderscript/RenderScript;->mElement_MATRIX_2X2:Landroid/renderscript/Element;
 
@@ -902,7 +858,6 @@
 
 .method public static MATRIX_3X3(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
     .locals 1
-    .param p0    # Landroid/renderscript/RenderScript;
 
     iget-object v0, p0, Landroid/renderscript/RenderScript;->mElement_MATRIX_3X3:Landroid/renderscript/Element;
 
@@ -924,7 +879,6 @@
 
 .method public static MATRIX_4X4(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
     .locals 1
-    .param p0    # Landroid/renderscript/RenderScript;
 
     iget-object v0, p0, Landroid/renderscript/RenderScript;->mElement_MATRIX_4X4:Landroid/renderscript/Element;
 
@@ -946,7 +900,6 @@
 
 .method public static MESH(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
     .locals 1
-    .param p0    # Landroid/renderscript/RenderScript;
 
     iget-object v0, p0, Landroid/renderscript/RenderScript;->mElement_MESH:Landroid/renderscript/Element;
 
@@ -968,7 +921,6 @@
 
 .method public static PROGRAM_FRAGMENT(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
     .locals 1
-    .param p0    # Landroid/renderscript/RenderScript;
 
     iget-object v0, p0, Landroid/renderscript/RenderScript;->mElement_PROGRAM_FRAGMENT:Landroid/renderscript/Element;
 
@@ -990,7 +942,6 @@
 
 .method public static PROGRAM_RASTER(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
     .locals 1
-    .param p0    # Landroid/renderscript/RenderScript;
 
     iget-object v0, p0, Landroid/renderscript/RenderScript;->mElement_PROGRAM_RASTER:Landroid/renderscript/Element;
 
@@ -1012,7 +963,6 @@
 
 .method public static PROGRAM_STORE(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
     .locals 1
-    .param p0    # Landroid/renderscript/RenderScript;
 
     iget-object v0, p0, Landroid/renderscript/RenderScript;->mElement_PROGRAM_STORE:Landroid/renderscript/Element;
 
@@ -1034,7 +984,6 @@
 
 .method public static PROGRAM_VERTEX(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
     .locals 1
-    .param p0    # Landroid/renderscript/RenderScript;
 
     iget-object v0, p0, Landroid/renderscript/RenderScript;->mElement_PROGRAM_VERTEX:Landroid/renderscript/Element;
 
@@ -1056,7 +1005,6 @@
 
 .method public static RGBA_4444(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
     .locals 2
-    .param p0    # Landroid/renderscript/RenderScript;
 
     iget-object v0, p0, Landroid/renderscript/RenderScript;->mElement_RGBA_4444:Landroid/renderscript/Element;
 
@@ -1080,7 +1028,6 @@
 
 .method public static RGBA_5551(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
     .locals 2
-    .param p0    # Landroid/renderscript/RenderScript;
 
     iget-object v0, p0, Landroid/renderscript/RenderScript;->mElement_RGBA_5551:Landroid/renderscript/Element;
 
@@ -1104,7 +1051,6 @@
 
 .method public static RGBA_8888(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
     .locals 2
-    .param p0    # Landroid/renderscript/RenderScript;
 
     iget-object v0, p0, Landroid/renderscript/RenderScript;->mElement_RGBA_8888:Landroid/renderscript/Element;
 
@@ -1128,7 +1074,6 @@
 
 .method public static RGB_565(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
     .locals 2
-    .param p0    # Landroid/renderscript/RenderScript;
 
     iget-object v0, p0, Landroid/renderscript/RenderScript;->mElement_RGB_565:Landroid/renderscript/Element;
 
@@ -1152,7 +1097,6 @@
 
 .method public static RGB_888(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
     .locals 2
-    .param p0    # Landroid/renderscript/RenderScript;
 
     iget-object v0, p0, Landroid/renderscript/RenderScript;->mElement_RGB_888:Landroid/renderscript/Element;
 
@@ -1176,7 +1120,6 @@
 
 .method public static SAMPLER(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
     .locals 1
-    .param p0    # Landroid/renderscript/RenderScript;
 
     iget-object v0, p0, Landroid/renderscript/RenderScript;->mElement_SAMPLER:Landroid/renderscript/Element;
 
@@ -1198,7 +1141,6 @@
 
 .method public static SCRIPT(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
     .locals 1
-    .param p0    # Landroid/renderscript/RenderScript;
 
     iget-object v0, p0, Landroid/renderscript/RenderScript;->mElement_SCRIPT:Landroid/renderscript/Element;
 
@@ -1220,7 +1162,6 @@
 
 .method public static TYPE(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
     .locals 1
-    .param p0    # Landroid/renderscript/RenderScript;
 
     iget-object v0, p0, Landroid/renderscript/RenderScript;->mElement_TYPE:Landroid/renderscript/Element;
 
@@ -1242,7 +1183,6 @@
 
 .method public static U16(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
     .locals 1
-    .param p0    # Landroid/renderscript/RenderScript;
 
     iget-object v0, p0, Landroid/renderscript/RenderScript;->mElement_U16:Landroid/renderscript/Element;
 
@@ -1264,7 +1204,6 @@
 
 .method public static U16_2(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
     .locals 2
-    .param p0    # Landroid/renderscript/RenderScript;
 
     iget-object v0, p0, Landroid/renderscript/RenderScript;->mElement_USHORT_2:Landroid/renderscript/Element;
 
@@ -1288,7 +1227,6 @@
 
 .method public static U16_3(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
     .locals 2
-    .param p0    # Landroid/renderscript/RenderScript;
 
     iget-object v0, p0, Landroid/renderscript/RenderScript;->mElement_USHORT_3:Landroid/renderscript/Element;
 
@@ -1312,7 +1250,6 @@
 
 .method public static U16_4(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
     .locals 2
-    .param p0    # Landroid/renderscript/RenderScript;
 
     iget-object v0, p0, Landroid/renderscript/RenderScript;->mElement_USHORT_4:Landroid/renderscript/Element;
 
@@ -1336,7 +1273,6 @@
 
 .method public static U32(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
     .locals 1
-    .param p0    # Landroid/renderscript/RenderScript;
 
     iget-object v0, p0, Landroid/renderscript/RenderScript;->mElement_U32:Landroid/renderscript/Element;
 
@@ -1358,7 +1294,6 @@
 
 .method public static U32_2(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
     .locals 2
-    .param p0    # Landroid/renderscript/RenderScript;
 
     iget-object v0, p0, Landroid/renderscript/RenderScript;->mElement_UINT_2:Landroid/renderscript/Element;
 
@@ -1382,7 +1317,6 @@
 
 .method public static U32_3(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
     .locals 2
-    .param p0    # Landroid/renderscript/RenderScript;
 
     iget-object v0, p0, Landroid/renderscript/RenderScript;->mElement_UINT_3:Landroid/renderscript/Element;
 
@@ -1406,7 +1340,6 @@
 
 .method public static U32_4(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
     .locals 2
-    .param p0    # Landroid/renderscript/RenderScript;
 
     iget-object v0, p0, Landroid/renderscript/RenderScript;->mElement_UINT_4:Landroid/renderscript/Element;
 
@@ -1430,7 +1363,6 @@
 
 .method public static U64(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
     .locals 1
-    .param p0    # Landroid/renderscript/RenderScript;
 
     iget-object v0, p0, Landroid/renderscript/RenderScript;->mElement_U64:Landroid/renderscript/Element;
 
@@ -1452,7 +1384,6 @@
 
 .method public static U64_2(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
     .locals 2
-    .param p0    # Landroid/renderscript/RenderScript;
 
     iget-object v0, p0, Landroid/renderscript/RenderScript;->mElement_ULONG_2:Landroid/renderscript/Element;
 
@@ -1476,7 +1407,6 @@
 
 .method public static U64_3(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
     .locals 2
-    .param p0    # Landroid/renderscript/RenderScript;
 
     iget-object v0, p0, Landroid/renderscript/RenderScript;->mElement_ULONG_3:Landroid/renderscript/Element;
 
@@ -1500,7 +1430,6 @@
 
 .method public static U64_4(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
     .locals 2
-    .param p0    # Landroid/renderscript/RenderScript;
 
     iget-object v0, p0, Landroid/renderscript/RenderScript;->mElement_ULONG_4:Landroid/renderscript/Element;
 
@@ -1524,7 +1453,6 @@
 
 .method public static U8(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
     .locals 1
-    .param p0    # Landroid/renderscript/RenderScript;
 
     iget-object v0, p0, Landroid/renderscript/RenderScript;->mElement_U8:Landroid/renderscript/Element;
 
@@ -1546,7 +1474,6 @@
 
 .method public static U8_2(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
     .locals 2
-    .param p0    # Landroid/renderscript/RenderScript;
 
     iget-object v0, p0, Landroid/renderscript/RenderScript;->mElement_UCHAR_2:Landroid/renderscript/Element;
 
@@ -1570,7 +1497,6 @@
 
 .method public static U8_3(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
     .locals 2
-    .param p0    # Landroid/renderscript/RenderScript;
 
     iget-object v0, p0, Landroid/renderscript/RenderScript;->mElement_UCHAR_3:Landroid/renderscript/Element;
 
@@ -1594,7 +1520,6 @@
 
 .method public static U8_4(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
     .locals 2
-    .param p0    # Landroid/renderscript/RenderScript;
 
     iget-object v0, p0, Landroid/renderscript/RenderScript;->mElement_UCHAR_4:Landroid/renderscript/Element;
 
@@ -1618,7 +1543,6 @@
 
 .method public static YUV(Landroid/renderscript/RenderScript;)Landroid/renderscript/Element;
     .locals 2
-    .param p0    # Landroid/renderscript/RenderScript;
 
     iget-object v0, p0, Landroid/renderscript/RenderScript;->mElement_YUV:Landroid/renderscript/Element;
 
@@ -1642,9 +1566,6 @@
 
 .method public static createPixel(Landroid/renderscript/RenderScript;Landroid/renderscript/Element$DataType;Landroid/renderscript/Element$DataKind;)Landroid/renderscript/Element;
     .locals 7
-    .param p0    # Landroid/renderscript/RenderScript;
-    .param p1    # Landroid/renderscript/Element$DataType;
-    .param p2    # Landroid/renderscript/Element$DataKind;
 
     sget-object v0, Landroid/renderscript/Element$DataKind;->PIXEL_L:Landroid/renderscript/Element$DataKind;
 
@@ -1846,8 +1767,6 @@
 
 .method static createUser(Landroid/renderscript/RenderScript;Landroid/renderscript/Element$DataType;)Landroid/renderscript/Element;
     .locals 7
-    .param p0    # Landroid/renderscript/RenderScript;
-    .param p1    # Landroid/renderscript/Element$DataType;
 
     sget-object v4, Landroid/renderscript/Element$DataKind;->USER:Landroid/renderscript/Element$DataKind;
 
@@ -1876,9 +1795,6 @@
 
 .method public static createVector(Landroid/renderscript/RenderScript;Landroid/renderscript/Element$DataType;I)Landroid/renderscript/Element;
     .locals 7
-    .param p0    # Landroid/renderscript/RenderScript;
-    .param p1    # Landroid/renderscript/Element$DataType;
-    .param p2    # I
 
     const/4 v0, 0x2
 
@@ -2073,7 +1989,6 @@
 
 .method public getSubElement(I)Landroid/renderscript/Element;
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Landroid/renderscript/Element;->mVisibleElementMap:[I
 
@@ -2119,7 +2034,6 @@
 
 .method public getSubElementArraySize(I)I
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Landroid/renderscript/Element;->mVisibleElementMap:[I
 
@@ -2185,7 +2099,6 @@
 
 .method public getSubElementName(I)Ljava/lang/String;
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Landroid/renderscript/Element;->mVisibleElementMap:[I
 
@@ -2231,7 +2144,6 @@
 
 .method public getSubElementOffsetBytes(I)I
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Landroid/renderscript/Element;->mVisibleElementMap:[I
 
@@ -2285,7 +2197,6 @@
 
 .method public isCompatible(Landroid/renderscript/Element;)Z
     .locals 3
-    .param p1    # Landroid/renderscript/Element;
 
     const/4 v0, 0x1
 

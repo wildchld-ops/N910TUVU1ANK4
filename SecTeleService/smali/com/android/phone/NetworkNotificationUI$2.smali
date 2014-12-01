@@ -825,7 +825,7 @@
 
     move-result-object v8
 
-    invoke-virtual {v8}, Landroid/app/Dialog;->dismiss()V
+    invoke-virtual {v8}, Landroid/app/AlertDialog;->dismiss()V
 
     iget-object v8, p0, Lcom/android/phone/NetworkNotificationUI$2;->this$0:Lcom/android/phone/NetworkNotificationUI;
 
@@ -907,7 +907,7 @@
 
     move-result-object v8
 
-    invoke-virtual {v8}, Landroid/app/Dialog;->dismiss()V
+    invoke-virtual {v8}, Landroid/app/AlertDialog;->dismiss()V
 
     iget-object v8, p0, Lcom/android/phone/NetworkNotificationUI$2;->this$0:Lcom/android/phone/NetworkNotificationUI;
 

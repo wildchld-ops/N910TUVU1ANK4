@@ -13,7 +13,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Lorg/apache/commons/io/filefilter/AbstractFileFilter;-><init>()V
 
@@ -43,7 +42,6 @@
 
 .method public constructor <init>(Ljava/util/List;)V
     .locals 2
-    .param p1    # Ljava/util/List;
 
     invoke-direct {p0}, Lorg/apache/commons/io/filefilter/AbstractFileFilter;-><init>()V
 
@@ -79,7 +77,6 @@
 
 .method public constructor <init>([Ljava/lang/String;)V
     .locals 2
-    .param p1    # [Ljava/lang/String;
 
     invoke-direct {p0}, Lorg/apache/commons/io/filefilter/AbstractFileFilter;-><init>()V
 
@@ -103,7 +100,6 @@
 # virtual methods
 .method public accept(Ljava/io/File;)Z
     .locals 4
-    .param p1    # Ljava/io/File;
 
     const/4 v1, 0x0
 
@@ -153,8 +149,6 @@
 
 .method public accept(Ljava/io/File;Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/io/File;
-    .param p2    # Ljava/lang/String;
 
     const/4 v1, 0x0
 

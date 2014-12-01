@@ -26,7 +26,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/location/GpsLocationProvider;Landroid/location/IGpsStatusListener;)V
     .locals 0
-    .param p2    # Landroid/location/IGpsStatusListener;
 
     iput-object p1, p0, Lcom/android/server/location/GpsLocationProvider$Listener;->this$0:Lcom/android/server/location/GpsLocationProvider;
 

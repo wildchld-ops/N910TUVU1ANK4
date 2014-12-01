@@ -6,8 +6,6 @@
 # direct methods
 .method constructor <init>(Landroid/content/Context;Landroid/hardware/scontext/provider/EventListener;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/hardware/scontext/provider/EventListener;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -32,16 +30,12 @@
 
 .method setLoggingMode(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method setProperty(IDD)V
     .locals 0
-    .param p1    # I
-    .param p2    # D
-    .param p4    # D
 
     return-void
 .end method

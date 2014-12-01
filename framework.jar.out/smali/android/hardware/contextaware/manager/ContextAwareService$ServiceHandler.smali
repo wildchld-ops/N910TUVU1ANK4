@@ -27,7 +27,6 @@
 # direct methods
 .method public constructor <init>(Landroid/hardware/contextaware/manager/ContextAwareService;Landroid/os/Looper;)V
     .locals 0
-    .param p2    # Landroid/os/Looper;
 
     iput-object p1, p0, Landroid/hardware/contextaware/manager/ContextAwareService$ServiceHandler;->this$0:Landroid/hardware/contextaware/manager/ContextAwareService;
 
@@ -38,8 +37,6 @@
 
 .method private callback(ILandroid/os/Bundle;)V
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     invoke-static {}, Landroid/hardware/contextaware/manager/ListenerListManager;->getInstance()Landroid/hardware/contextaware/manager/ListenerListManager;
 
@@ -95,8 +92,6 @@
 
 .method private notifyOperationCheckResult(ILandroid/os/Bundle;)Z
     .locals 7
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     const/4 v4, 0x0
 
@@ -250,7 +245,6 @@
 # virtual methods
 .method public declared-synchronized handleMessage(Landroid/os/Message;)V
     .locals 5
-    .param p1    # Landroid/os/Message;
 
     monitor-enter p0
 

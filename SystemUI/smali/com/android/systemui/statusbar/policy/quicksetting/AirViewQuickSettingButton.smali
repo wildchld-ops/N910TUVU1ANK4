@@ -69,7 +69,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 12
-    .param p1    # Landroid/content/Context;
 
     const/4 v9, 0x2
 
@@ -279,8 +278,6 @@
 
 .method static synthetic access$002(Lcom/android/systemui/statusbar/policy/quicksetting/AirViewQuickSettingButton;Z)Z
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/policy/quicksetting/AirViewQuickSettingButton;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/systemui/statusbar/policy/quicksetting/AirViewQuickSettingButton;->mPenDettachedState:Z
 
@@ -289,7 +286,6 @@
 
 .method static synthetic access$100(Lcom/android/systemui/statusbar/policy/quicksetting/AirViewQuickSettingButton;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/policy/quicksetting/AirViewQuickSettingButton;
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/quicksetting/AirViewQuickSettingButton;->mContentResolver:Landroid/content/ContentResolver;
 
@@ -298,7 +294,6 @@
 
 .method static synthetic access$1000(Lcom/android/systemui/statusbar/policy/quicksetting/AirViewQuickSettingButton;)V
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/policy/quicksetting/AirViewQuickSettingButton;
 
     invoke-direct {p0}, Lcom/android/systemui/statusbar/policy/quicksetting/AirViewQuickSettingButton;->showConfirmPopup()V
 
@@ -315,8 +310,6 @@
 
 .method static synthetic access$302(Lcom/android/systemui/statusbar/policy/quicksetting/AirViewQuickSettingButton;Z)Z
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/policy/quicksetting/AirViewQuickSettingButton;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/systemui/statusbar/policy/quicksetting/AirViewQuickSettingButton;->mState:Z
 
@@ -325,7 +318,6 @@
 
 .method static synthetic access$400(Lcom/android/systemui/statusbar/policy/quicksetting/AirViewQuickSettingButton;)I
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/policy/quicksetting/AirViewQuickSettingButton;
 
     invoke-direct {p0}, Lcom/android/systemui/statusbar/policy/quicksetting/AirViewQuickSettingButton;->getMode()I
 
@@ -336,8 +328,6 @@
 
 .method static synthetic access$502(Lcom/android/systemui/statusbar/policy/quicksetting/AirViewQuickSettingButton;Z)Z
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/policy/quicksetting/AirViewQuickSettingButton;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/systemui/statusbar/policy/quicksetting/AirViewQuickSettingButton;->isMagnificationEnabled:Z
 
@@ -346,7 +336,6 @@
 
 .method static synthetic access$600(Lcom/android/systemui/statusbar/policy/quicksetting/AirViewQuickSettingButton;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/policy/quicksetting/AirViewQuickSettingButton;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -355,8 +344,6 @@
 
 .method static synthetic access$702(Lcom/android/systemui/statusbar/policy/quicksetting/AirViewQuickSettingButton;I)I
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/policy/quicksetting/AirViewQuickSettingButton;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/systemui/statusbar/policy/quicksetting/AirViewQuickSettingButton;->mAirViewMode:I
 
@@ -373,8 +360,6 @@
 
 .method static synthetic access$900(Lcom/android/systemui/statusbar/policy/quicksetting/AirViewQuickSettingButton;I)V
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/policy/quicksetting/AirViewQuickSettingButton;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/systemui/statusbar/policy/quicksetting/AirViewQuickSettingButton;->setDBvalues(I)V
 
@@ -383,7 +368,6 @@
 
 .method private enableAirViewAndInforPreview(Z)V
     .locals 7
-    .param p1    # Z
 
     const/4 v2, 0x1
 
@@ -546,7 +530,6 @@
 
 .method private setDBvalues(I)V
     .locals 6
-    .param p1    # I
 
     const/4 v5, 0x0
 
@@ -646,7 +629,6 @@
 
 .method private setMode(I)V
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -1418,7 +1400,6 @@
 
 .method public onClick(Z)V
     .locals 6
-    .param p1    # Z
 
     const/4 v5, 0x3
 
@@ -1669,8 +1650,6 @@
 
 .method protected showTalkBackDisablePopup(II)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
 
     const v6, 0x7f0b020a
 
@@ -1964,7 +1943,6 @@
 
 .method public userSwitched(Landroid/content/pm/UserInfo;)V
     .locals 3
-    .param p1    # Landroid/content/pm/UserInfo;
 
     const/4 v2, 0x0
 

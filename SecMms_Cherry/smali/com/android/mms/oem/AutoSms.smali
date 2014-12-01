@@ -78,8 +78,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Z)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -549,8 +547,6 @@
 
 .method public static init(Landroid/content/Context;Z)V
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
 
     new-instance v0, Lcom/android/mms/oem/AutoSms;
 
@@ -601,7 +597,6 @@
 
 .method private static log(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "AutoSms"
 
@@ -612,8 +607,6 @@
 
 .method private sendAutoSms(Ljava/lang/String;Ljava/lang/String;)V
     .locals 12
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -718,7 +711,6 @@
 
 .method private setAutoSmsTimerDelay(I)V
     .locals 11
-    .param p1    # I
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 

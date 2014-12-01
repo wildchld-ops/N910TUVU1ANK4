@@ -105,7 +105,6 @@
 # direct methods
 .method constructor <init>(Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     const/4 v3, 0x0
 
@@ -196,8 +195,6 @@
 
 .method static synthetic access$502(Lcom/android/launcher2/LauncherProvider$DatabaseHelper;Lorg/xmlpull/v1/XmlPullParser;)Lorg/xmlpull/v1/XmlPullParser;
     .locals 0
-    .param p0    # Lcom/android/launcher2/LauncherProvider$DatabaseHelper;
-    .param p1    # Lorg/xmlpull/v1/XmlPullParser;
 
     iput-object p1, p0, Lcom/android/launcher2/LauncherProvider$DatabaseHelper;->mParserRestore:Lorg/xmlpull/v1/XmlPullParser;
 
@@ -206,10 +203,6 @@
 
 .method static synthetic access$600(Lcom/android/launcher2/LauncherProvider$DatabaseHelper;Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Z)I
     .locals 1
-    .param p0    # Lcom/android/launcher2/LauncherProvider$DatabaseHelper;
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/launcher2/LauncherProvider$DatabaseHelper;->loadFavorites(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Z)I
 
@@ -220,8 +213,6 @@
 
 .method private addAppFolder(Landroid/database/sqlite/SQLiteDatabase;Landroid/content/ContentValues;)J
     .locals 6
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p2    # Landroid/content/ContentValues;
 
     invoke-virtual {p0}, Lcom/android/launcher2/LauncherProvider$DatabaseHelper;->generateNewAppOrderId()J
 
@@ -257,11 +248,6 @@
 
 .method private addAppShortcut(Landroid/database/sqlite/SQLiteDatabase;Landroid/content/ContentValues;Landroid/content/pm/PackageManager;Ljava/lang/String;Ljava/lang/String;)J
     .locals 14
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p2    # Landroid/content/ContentValues;
-    .param p3    # Landroid/content/pm/PackageManager;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
 
     const-wide/16 v5, -0x1
 
@@ -496,12 +482,6 @@
 
 .method private addAppWidget(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Landroid/content/ContentValues;Landroid/content/ComponentName;II)Z
     .locals 11
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/content/ContentValues;
-    .param p4    # Landroid/content/ComponentName;
-    .param p5    # I
-    .param p6    # I
 
     const/4 v0, 0x0
 
@@ -724,14 +704,6 @@
 
 .method private addAppWidget(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Landroid/content/ContentValues;Landroid/content/pm/PackageManager;Ljava/lang/String;Ljava/lang/String;II)Z
     .locals 17
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/content/ContentValues;
-    .param p4    # Landroid/content/pm/PackageManager;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Ljava/lang/String;
-    .param p7    # I
-    .param p8    # I
 
     if-eqz p5, :cond_0
 
@@ -944,9 +916,6 @@
 
 .method private addClockWidget(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Landroid/content/ContentValues;)Z
     .locals 7
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/content/ContentValues;
 
     const/4 v5, 0x2
 
@@ -977,9 +946,6 @@
 
 .method private addFolder(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Landroid/content/ContentValues;)J
     .locals 6
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/content/ContentValues;
 
     const/4 v4, 0x1
 
@@ -1041,14 +1007,6 @@
 
 .method private addHomeShortcut(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Landroid/content/ContentValues;Landroid/content/pm/PackageManager;Landroid/content/Intent;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)J
     .locals 13
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/content/ContentValues;
-    .param p4    # Landroid/content/pm/PackageManager;
-    .param p5    # Landroid/content/Intent;
-    .param p6    # Ljava/lang/String;
-    .param p7    # Ljava/lang/String;
-    .param p8    # Ljava/lang/String;
 
     const-wide/16 v5, -0x1
 
@@ -1396,15 +1354,6 @@
 
 .method private addSamsungActivityWidget(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Landroid/content/ContentValues;Landroid/content/pm/PackageManager;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;II)Z
     .locals 7
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/content/ContentValues;
-    .param p4    # Landroid/content/pm/PackageManager;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Ljava/lang/String;
-    .param p7    # Ljava/lang/String;
-    .param p8    # I
-    .param p9    # I
 
     const/4 v2, 0x0
 
@@ -1525,11 +1474,6 @@
 
 .method private addSearchWidget(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Landroid/content/ContentValues;II)Z
     .locals 7
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/content/ContentValues;
-    .param p4    # I
-    .param p5    # I
 
     invoke-direct {p0}, Lcom/android/launcher2/LauncherProvider$DatabaseHelper;->getSearchWidgetProvider()Landroid/content/ComponentName;
 
@@ -1564,16 +1508,6 @@
 
 .method private addSurfaceWidget(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Landroid/content/ContentValues;Landroid/content/pm/PackageManager;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;II)Z
     .locals 6
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/content/ContentValues;
-    .param p4    # Landroid/content/pm/PackageManager;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Ljava/lang/String;
-    .param p7    # Ljava/lang/String;
-    .param p8    # Ljava/lang/String;
-    .param p9    # I
-    .param p10    # I
 
     const/4 v2, 0x0
 
@@ -1706,13 +1640,6 @@
 
 .method private addUriShortcut(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Landroid/content/ContentValues;Landroid/content/res/TypedArray;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)J
     .locals 23
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/content/ContentValues;
-    .param p4    # Landroid/content/res/TypedArray;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Ljava/lang/String;
-    .param p7    # Ljava/lang/String;
 
     move-object/from16 v0, p0
 
@@ -2245,7 +2172,6 @@
 
 .method private convertDatabase(Landroid/database/sqlite/SQLiteDatabase;)Z
     .locals 9
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
 
     const/4 v8, 0x0
 
@@ -2364,7 +2290,6 @@
 
 .method private convertWidgets(Landroid/database/sqlite/SQLiteDatabase;)V
     .locals 21
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
 
     move-object/from16 v0, p0
 
@@ -2822,8 +2747,6 @@
 
 .method private copyFromCursor(Landroid/database/sqlite/SQLiteDatabase;Landroid/database/Cursor;)I
     .locals 27
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p2    # Landroid/database/Cursor;
 
     const-string v23, "_id"
 
@@ -3225,7 +3148,6 @@
 
 .method private createAppOrderTable(Landroid/database/sqlite/SQLiteDatabase;)V
     .locals 3
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
 
     const-string v0, "CREATE table appOrder (_id integer primary key,folderId integer not null default -1,screen integer not null default -1,cell integer not null default -1,hidden integer not null default 0,title text,componentName text,color integer not null default -1, secret integer not null default 0);"
 
@@ -3244,8 +3166,6 @@
 
 .method private createFavorites(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p2    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -3398,7 +3318,6 @@
 
 .method private createPublicPreferences(Landroid/database/sqlite/SQLiteDatabase;)V
     .locals 12
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
 
     const/4 v11, 0x2
 
@@ -3553,8 +3472,6 @@
 
 .method private delAppFolder(Landroid/database/sqlite/SQLiteDatabase;J)Z
     .locals 3
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p2    # J
 
     const-string v0, "appOrder"
 
@@ -3597,8 +3514,6 @@
 
 .method private delFolder(Landroid/database/sqlite/SQLiteDatabase;J)Z
     .locals 3
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p2    # J
 
     const-string v0, "favorites"
 
@@ -3641,8 +3556,6 @@
 
 .method private doesTableExist(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;)Z
     .locals 8
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p2    # Ljava/lang/String;
 
     const/4 v2, 0x1
 
@@ -3695,7 +3608,6 @@
 
 .method private getMaxFavoriteID(Landroid/database/sqlite/SQLiteDatabase;)Ljava/util/concurrent/atomic/AtomicLong;
     .locals 4
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
 
     new-instance v0, Ljava/util/concurrent/atomic/AtomicLong;
 
@@ -3738,7 +3650,6 @@
 
 .method private getProviderInPackage(Ljava/lang/String;)Landroid/content/ComponentName;
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const/4 v6, 0x0
 
@@ -3839,7 +3750,6 @@
 
 .method private getTablesList(Landroid/database/sqlite/SQLiteDatabase;)Ljava/util/ArrayList;
     .locals 6
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3931,8 +3841,6 @@
 
 .method private initializeMaxId(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;)J
     .locals 6
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p2    # Ljava/lang/String;
 
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -4014,10 +3922,6 @@
 
 .method private loadAppOrderContainer(Landroid/database/sqlite/SQLiteDatabase;Lorg/xmlpull/v1/XmlPullParser;JZ)I
     .locals 27
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p2    # Lorg/xmlpull/v1/XmlPullParser;
-    .param p3    # J
-    .param p5    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -4631,7 +4535,6 @@
 
 .method private loadAppOrderDefaults(Landroid/database/sqlite/SQLiteDatabase;)I
     .locals 15
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
 
     const/4 v13, 0x0
 
@@ -4979,9 +4882,6 @@
 
 .method private loadDynamicCscFavorites(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Z)I
     .locals 21
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     const/4 v15, 0x0
 
@@ -5384,9 +5284,6 @@
 
 .method private loadFavorites(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Z)I
     .locals 29
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     const/16 v18, 0x0
 
@@ -6155,12 +6052,6 @@
 
 .method private loadFavoritesContainer(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Lorg/xmlpull/v1/XmlPullParser;JIZ)I
     .locals 58
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lorg/xmlpull/v1/XmlPullParser;
-    .param p4    # J
-    .param p6    # I
-    .param p7    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -7559,7 +7450,6 @@
 
 .method private normalizeIcons(Landroid/database/sqlite/SQLiteDatabase;)V
     .locals 14
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
 
     const-string v11, "LauncherProvider"
 
@@ -7890,7 +7780,6 @@
 
 .method private updateContactsShortcuts(Landroid/database/sqlite/SQLiteDatabase;)Z
     .locals 24
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
 
     const/4 v11, 0x0
 
@@ -8379,7 +8268,6 @@
 
 .method public onCreate(Landroid/database/sqlite/SQLiteDatabase;)V
     .locals 5
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
 
     const-wide/16 v3, 0x0
 
@@ -8478,9 +8366,6 @@
 
 .method public onDowngrade(Landroid/database/sqlite/SQLiteDatabase;II)V
     .locals 10
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p2    # I
-    .param p3    # I
 
     move v6, p2
 
@@ -8717,7 +8602,6 @@
 
 .method public onOpen(Landroid/database/sqlite/SQLiteDatabase;)V
     .locals 2
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-static {}, Lcom/sec/android/app/CscFeature;->getInstance()Lcom/sec/android/app/CscFeature;
 
@@ -8758,9 +8642,6 @@
 
 .method public onUpgrade(Landroid/database/sqlite/SQLiteDatabase;II)V
     .locals 10
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p2    # I
-    .param p3    # I
 
     const/16 v9, 0xe
 
@@ -9195,7 +9076,6 @@
 
 .method switchToDynamicIfNecessary(I)Z
     .locals 6
-    .param p1    # I
 
     const/4 v5, 0x0
 

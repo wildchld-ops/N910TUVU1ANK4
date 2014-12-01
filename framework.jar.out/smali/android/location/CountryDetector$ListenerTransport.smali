@@ -23,8 +23,6 @@
 # direct methods
 .method public constructor <init>(Landroid/location/CountryListener;Landroid/os/Looper;)V
     .locals 1
-    .param p1    # Landroid/location/CountryListener;
-    .param p2    # Landroid/os/Looper;
 
     invoke-direct {p0}, Landroid/location/ICountryListener$Stub;-><init>()V
 
@@ -53,7 +51,6 @@
 
 .method static synthetic access$000(Landroid/location/CountryDetector$ListenerTransport;)Landroid/location/CountryListener;
     .locals 1
-    .param p0    # Landroid/location/CountryDetector$ListenerTransport;
 
     iget-object v0, p0, Landroid/location/CountryDetector$ListenerTransport;->mListener:Landroid/location/CountryListener;
 
@@ -64,7 +61,6 @@
 # virtual methods
 .method public onCountryDetected(Landroid/location/Country;)V
     .locals 2
-    .param p1    # Landroid/location/Country;
 
     iget-object v0, p0, Landroid/location/CountryDetector$ListenerTransport;->mHandler:Landroid/os/Handler;
 

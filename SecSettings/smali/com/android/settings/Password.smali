@@ -31,7 +31,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/Password;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/android/settings/Password;
 
     iget-object v0, p0, Lcom/android/settings/Password;->mDigits:Landroid/widget/TextView;
 
@@ -40,7 +39,6 @@
 
 .method private keyPressed(I)V
     .locals 3
-    .param p1    # I
 
     const/16 v1, 0x43
 
@@ -83,7 +81,6 @@
 
 .method private match(Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const v3, 0x7f09008f
 
@@ -219,7 +216,6 @@
 
 .method private reasonable(Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const v3, 0x7f09008f
 
@@ -452,7 +448,6 @@
 
 .method private showAlert(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/settings/Password;->mDigits:Landroid/widget/TextView;
 
@@ -491,24 +486,18 @@
 # virtual methods
 .method public afterTextChanged(Landroid/text/Editable;)V
     .locals 0
-    .param p1    # Landroid/text/Editable;
 
     return-void
 .end method
 
 .method public beforeTextChanged(Ljava/lang/CharSequence;III)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     return-void
 .end method
 
 .method public onClick(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p1}, Landroid/view/View;->getId()I
 
@@ -628,7 +617,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v4, 0x0
 
@@ -743,7 +731,6 @@
 
 .method public onLongClick(Landroid/view/View;)Z
     .locals 3
-    .param p1    # Landroid/view/View;
 
     const/4 v2, 0x0
 
@@ -775,10 +762,6 @@
 
 .method public onTextChanged(Ljava/lang/CharSequence;III)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     return-void
 .end method

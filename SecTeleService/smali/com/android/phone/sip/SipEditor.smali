@@ -548,7 +548,7 @@
 
     const v1, 0x7f090252
 
-    invoke-virtual {p0, v1}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v1}, Lcom/android/phone/sip/SipEditor;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -581,13 +581,13 @@
 
     if-nez v1, :cond_0
 
-    invoke-virtual {v0}, Landroid/preference/Preference;->getSummary()Ljava/lang/CharSequence;
+    invoke-virtual {v0}, Landroid/preference/EditTextPreference;->getSummary()Ljava/lang/CharSequence;
 
     move-result-object v1
 
     iget v2, p1, Lcom/android/phone/sip/SipEditor$PreferenceKey;->defaultSummary:I
 
-    invoke-virtual {p0, v2}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v2}, Lcom/android/phone/sip/SipEditor;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
@@ -668,7 +668,7 @@
 
     iget v6, v5, Lcom/android/phone/sip/SipEditor$PreferenceKey;->text:I
 
-    invoke-virtual {p0, v6}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v6}, Lcom/android/phone/sip/SipEditor;->getString(I)Ljava/lang/String;
 
     move-result-object v6
 
@@ -711,7 +711,7 @@
     const v0, 0x7f090252
 
     :goto_1
-    invoke-virtual {p0, v0}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lcom/android/phone/sip/SipEditor;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -804,7 +804,7 @@
 
     iget v5, v4, Lcom/android/phone/sip/SipEditor$PreferenceKey;->initValue:I
 
-    invoke-virtual {p0, v5}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v5}, Lcom/android/phone/sip/SipEditor;->getString(I)Ljava/lang/String;
 
     move-result-object v5
 
@@ -953,7 +953,7 @@
 
     new-instance v1, Landroid/content/Intent;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/sip/SipEditor;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -961,7 +961,7 @@
 
     invoke-direct {v1, v0, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/sip/SipEditor;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -981,7 +981,7 @@
 
     invoke-direct {p0, v0, v2}, Lcom/android/phone/sip/SipEditor;->replaceProfile(Landroid/net/sip/SipProfile;Landroid/net/sip/SipProfile;)V
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/sip/SipEditor;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -1015,7 +1015,7 @@
 
     iget v5, v2, Lcom/android/phone/sip/SipEditor$PreferenceKey;->text:I
 
-    invoke-virtual {p0, v5}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v5}, Lcom/android/phone/sip/SipEditor;->getString(I)Ljava/lang/String;
 
     move-result-object v4
 
@@ -1074,7 +1074,7 @@
     return-void
 
     :cond_0
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/sip/SipEditor;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -1269,7 +1269,7 @@
 
     sget-object v9, Lcom/android/phone/sip/SipEditor$5;->$SwitchMap$com$android$phone$sip$SipEditor$PreferenceKey:[I
 
-    invoke-virtual {v8}, Ljava/lang/Enum;->ordinal()I
+    invoke-virtual {v8}, Lcom/android/phone/sip/SipEditor$PreferenceKey;->ordinal()I
 
     move-result v8
 
@@ -1279,7 +1279,7 @@
 
     if-nez v1, :cond_7
 
-    invoke-virtual {v0}, Landroid/preference/Preference;->getTitle()Ljava/lang/CharSequence;
+    invoke-virtual {v0}, Landroid/preference/EditTextPreference;->getTitle()Ljava/lang/CharSequence;
 
     move-result-object v0
 
@@ -1319,7 +1319,7 @@
     :pswitch_2
     const v8, 0x7f090245
 
-    invoke-virtual {p0, v8}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v8}, Lcom/android/phone/sip/SipEditor;->getString(I)Ljava/lang/String;
 
     move-result-object v8
 
@@ -1361,7 +1361,7 @@
     :cond_2
     const v0, 0x7f09024a
 
-    invoke-virtual {p0, v0}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lcom/android/phone/sip/SipEditor;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -1385,7 +1385,7 @@
     if-nez v0, :cond_5
 
     :cond_4
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/sip/SipEditor;->finish()V
 
     goto :goto_3
 
@@ -1398,7 +1398,7 @@
 
     aput-object v1, v2, v3
 
-    invoke-virtual {p0, v0, v2}, Landroid/app/Fragment;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {p0, v0, v2}, Lcom/android/phone/sip/SipEditor;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -1414,7 +1414,7 @@
 
     new-instance v1, Landroid/content/Intent;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/sip/SipEditor;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -1426,7 +1426,7 @@
 
     invoke-virtual {v1, v2, v0}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/sip/SipEditor;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -1444,7 +1444,7 @@
 
     invoke-direct {p0, v2, v0}, Lcom/android/phone/sip/SipEditor;->replaceProfile(Landroid/net/sip/SipProfile;Landroid/net/sip/SipProfile;)V
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/sip/SipEditor;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -1503,7 +1503,7 @@
 
     invoke-super {p0, p1}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/sip/SipEditor;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -1515,7 +1515,7 @@
 
     new-instance v1, Lcom/android/phone/sip/SipSharedPreferences;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/sip/SipEditor;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -1525,7 +1525,7 @@
 
     new-instance v1, Lcom/android/phone/sip/SipProfileDb;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/sip/SipEditor;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -1539,7 +1539,7 @@
 
     iput-object v1, p0, Lcom/android/phone/sip/SipEditor;->mCallManager:Lcom/android/internal/telephony/CallManager;
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getActionBar()Landroid/app/ActionBar;
+    invoke-virtual {p0}, Lcom/android/phone/sip/SipEditor;->getActionBar()Landroid/app/ActionBar;
 
     move-result-object v0
 
@@ -1548,7 +1548,7 @@
     invoke-virtual {v0, v3}, Landroid/app/ActionBar;->setDisplayHomeAsUpEnabled(Z)V
 
     :cond_0
-    invoke-virtual {p0, v3}, Landroid/app/Fragment;->setHasOptionsMenu(Z)V
+    invoke-virtual {p0, v3}, Lcom/android/phone/sip/SipEditor;->setHasOptionsMenu(Z)V
 
     return-void
 .end method
@@ -1562,7 +1562,7 @@
 
     const/4 v2, 0x0
 
-    invoke-super {p0, p1, p2}, Landroid/app/Fragment;->onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
+    invoke-super {p0, p1, p2}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
 
     const/4 v0, 0x2
 
@@ -1634,11 +1634,11 @@
 
     const v6, 0x7f060049
 
-    invoke-virtual {p0, v6}, Landroid/preference/PreferenceFragment;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v6}, Lcom/android/phone/sip/SipEditor;->addPreferencesFromResource(I)V
 
     const/4 v3, 0x0
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getArguments()Landroid/os/Bundle;
+    invoke-virtual {p0}, Lcom/android/phone/sip/SipEditor;->getArguments()Landroid/os/Bundle;
 
     move-result-object v0
 
@@ -1658,7 +1658,7 @@
 
     :cond_0
     :goto_0
-    invoke-virtual {p0}, Landroid/preference/PreferenceFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/phone/sip/SipEditor;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v4
 
@@ -1713,7 +1713,7 @@
 
     const v6, 0x7f090233
 
-    invoke-virtual {v4, v6}, Landroid/preference/Preference;->setTitle(I)V
+    invoke-virtual {v4, v6}, Landroid/preference/PreferenceGroup;->setTitle(I)V
 
     :cond_3
     :goto_2
@@ -1748,11 +1748,11 @@
 
     const v7, 0x7f09021c
 
-    invoke-virtual {p0, v7}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v7}, Lcom/android/phone/sip/SipEditor;->getString(I)Ljava/lang/String;
 
     move-result-object v7
 
-    invoke-virtual {v6, v7}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {v6, v7}, Landroid/widget/Button;->setText(Ljava/lang/CharSequence;)V
 
     iget-object v6, p0, Lcom/android/phone/sip/SipEditor;->mRemoveButton:Landroid/widget/Button;
 
@@ -1760,7 +1760,7 @@
 
     invoke-direct {v7, p0}, Lcom/android/phone/sip/SipEditor$2;-><init>(Lcom/android/phone/sip/SipEditor;)V
 
-    invoke-virtual {v6, v7}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v6, v7}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     const-string v6, "tablet_device"
 
@@ -1772,7 +1772,7 @@
 
     iget-object v6, p0, Lcom/android/phone/sip/SipEditor;->mRemoveButton:Landroid/widget/Button;
 
-    invoke-virtual {v6, v8}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v6, v8}, Landroid/widget/Button;->setVisibility(I)V
 
     goto :goto_2
 .end method
@@ -1838,7 +1838,7 @@
     :sswitch_2
     iput-boolean v0, p0, Lcom/android/phone/sip/SipEditor;->mDiscardClickecd:Z
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/sip/SipEditor;->finish()V
 
     goto :goto_0
 
@@ -1875,7 +1875,7 @@
 
     move-result-object v1
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->isRemoving()Z
+    invoke-virtual {p0}, Lcom/android/phone/sip/SipEditor;->isRemoving()Z
 
     move-result v2
 
@@ -1889,7 +1889,7 @@
 
     invoke-static {v0, v1}, Lcom/android/phone/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->isRemoving()Z
+    invoke-virtual {p0}, Lcom/android/phone/sip/SipEditor;->isRemoving()Z
 
     move-result v0
 
@@ -1943,7 +1943,7 @@
 
     if-eqz v1, :cond_1
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual {p0}, Lcom/android/phone/sip/SipEditor;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v1
 
@@ -1986,7 +1986,7 @@
     invoke-direct {p0}, Lcom/android/phone/sip/SipEditor;->checkIfDisplayNameSet()V
 
     :cond_2
-    invoke-virtual {p0}, Landroid/app/Fragment;->getFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual {p0}, Lcom/android/phone/sip/SipEditor;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v1
 
@@ -2043,7 +2043,7 @@
 
     check-cast v2, Landroid/preference/EditTextPreference;
 
-    invoke-virtual {v2}, Landroid/preference/DialogPreference;->getDialog()Landroid/app/Dialog;
+    invoke-virtual {v2}, Landroid/preference/EditTextPreference;->getDialog()Landroid/app/Dialog;
 
     move-result-object v2
 
@@ -2053,7 +2053,7 @@
 
     if-eqz v0, :cond_1
 
-    invoke-virtual {v0}, Landroid/widget/TextView;->length()I
+    invoke-virtual {v0}, Landroid/widget/EditText;->length()I
 
     move-result v1
 
@@ -2075,16 +2075,16 @@
     const/4 v2, 0x1
 
     :goto_0
-    invoke-virtual {v3, v2}, Landroid/widget/TextView;->setEnabled(Z)V
+    invoke-virtual {v3, v2}, Landroid/widget/Button;->setEnabled(Z)V
 
     new-instance v2, Lcom/android/phone/sip/SipEditor$1;
 
     invoke-direct {v2, p0}, Lcom/android/phone/sip/SipEditor$1;-><init>(Lcom/android/phone/sip/SipEditor;)V
 
-    invoke-virtual {v0, v2}, Landroid/widget/TextView;->addTextChangedListener(Landroid/text/TextWatcher;)V
+    invoke-virtual {v0, v2}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
     :cond_1
-    invoke-super {p0, p1, p2}, Landroid/preference/PreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
+    invoke-super {p0, p1, p2}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
 
     move-result v2
 
@@ -2190,11 +2190,11 @@
 
     invoke-virtual {v0}, Lcom/android/phone/sip/SipEditor$AdvancedSettings;->show()V
 
-    invoke-virtual {p0}, Landroid/preference/PreferenceFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/phone/sip/SipEditor;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
-    invoke-virtual {v0, v2}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v0, v2}, Landroid/preference/PreferenceScreen;->setEnabled(Z)V
 
     iget-object v0, p0, Lcom/android/phone/sip/SipEditor;->mRemoveButton:Landroid/widget/Button;
 
@@ -2202,7 +2202,7 @@
 
     iget-object v0, p0, Lcom/android/phone/sip/SipEditor;->mRemoveButton:Landroid/widget/Button;
 
-    invoke-virtual {v0, v2}, Landroid/widget/TextView;->setEnabled(Z)V
+    invoke-virtual {v0, v2}, Landroid/widget/Button;->setEnabled(Z)V
 
     :cond_0
     :goto_0
@@ -2214,7 +2214,7 @@
 
     if-eqz v0, :cond_1
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getView()Landroid/view/View;
+    invoke-virtual {p0}, Lcom/android/phone/sip/SipEditor;->getView()Landroid/view/View;
 
     move-result-object v0
 
@@ -2232,11 +2232,11 @@
     return-void
 
     :cond_2
-    invoke-virtual {p0}, Landroid/preference/PreferenceFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/phone/sip/SipEditor;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
-    invoke-virtual {v0, v3}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v0, v3}, Landroid/preference/PreferenceScreen;->setEnabled(Z)V
 
     iget-object v0, p0, Lcom/android/phone/sip/SipEditor;->mRemoveButton:Landroid/widget/Button;
 
@@ -2244,7 +2244,7 @@
 
     iget-object v0, p0, Lcom/android/phone/sip/SipEditor;->mRemoveButton:Landroid/widget/Button;
 
-    invoke-virtual {v0, v3}, Landroid/widget/TextView;->setEnabled(Z)V
+    invoke-virtual {v0, v3}, Landroid/widget/Button;->setEnabled(Z)V
 
     goto :goto_0
 .end method

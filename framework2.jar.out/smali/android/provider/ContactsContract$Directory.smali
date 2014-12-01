@@ -94,7 +94,6 @@
 
 .method public static notifyDirectoryChange(Landroid/content/ContentResolver;)V
     .locals 3
-    .param p0    # Landroid/content/ContentResolver;
 
     const/4 v2, 0x0
 

@@ -29,11 +29,6 @@
 # direct methods
 .method constructor <init>(ZJJJJ)V
     .locals 0
-    .param p1    # Z
-    .param p2    # J
-    .param p4    # J
-    .param p6    # J
-    .param p8    # J
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -54,7 +49,6 @@
 # virtual methods
 .method public equals(Lcom/android/server/TwilightService$TwilightState;)Z
     .locals 4
-    .param p1    # Lcom/android/server/TwilightService$TwilightState;
 
     if-eqz p1, :cond_0
 
@@ -109,7 +103,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     instance-of v0, p1, Lcom/android/server/TwilightService$TwilightState;
 

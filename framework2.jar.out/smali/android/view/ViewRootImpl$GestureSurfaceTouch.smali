@@ -27,7 +27,6 @@
 # direct methods
 .method public constructor <init>(Landroid/view/ViewRootImpl;Landroid/content/Context;)V
     .locals 1
-    .param p2    # Landroid/content/Context;
 
     iput-object p1, p0, Landroid/view/ViewRootImpl$GestureSurfaceTouch;->this$0:Landroid/view/ViewRootImpl;
 
@@ -50,7 +49,6 @@
 # virtual methods
 .method public onInitSweep(I)Z
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -59,7 +57,6 @@
 
 .method public onPalm(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v0, 0x0
 
@@ -68,7 +65,6 @@
 
 .method public onSweepDown(I)Z
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -77,9 +73,6 @@
 
 .method public onTwist(Landroid/view/MotionEvent;Landroid/view/MotionEvent;F)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # Landroid/view/MotionEvent;
-    .param p3    # F
 
     const/4 v0, 0x0
 

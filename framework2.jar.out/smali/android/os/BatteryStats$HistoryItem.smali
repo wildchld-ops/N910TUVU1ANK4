@@ -134,8 +134,6 @@
 
 .method public constructor <init>(JLandroid/os/Parcel;)V
     .locals 1
-    .param p1    # J
-    .param p3    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -224,7 +222,6 @@
 
 .method private readFromParcel(Landroid/os/Parcel;)V
     .locals 3
-    .param p1    # Landroid/os/Parcel;
 
     const v2, 0xffff
 
@@ -337,7 +334,6 @@
 
 .method public readDelta(Landroid/os/Parcel;)V
     .locals 12
-    .param p1    # Landroid/os/Parcel;
 
     const v11, 0x3fffff
 
@@ -511,7 +507,6 @@
 
 .method public same(Landroid/os/BatteryStats$HistoryItem;)Z
     .locals 2
-    .param p1    # Landroid/os/BatteryStats$HistoryItem;
 
     iget-byte v0, p0, Landroid/os/BatteryStats$HistoryItem;->batteryLevel:B
 
@@ -568,9 +563,6 @@
 
 .method public setTo(JBLandroid/os/BatteryStats$HistoryItem;)V
     .locals 1
-    .param p1    # J
-    .param p3    # B
-    .param p4    # Landroid/os/BatteryStats$HistoryItem;
 
     iput-wide p1, p0, Landroid/os/BatteryStats$HistoryItem;->time:J
 
@@ -609,7 +601,6 @@
 
 .method public setTo(Landroid/os/BatteryStats$HistoryItem;)V
     .locals 2
-    .param p1    # Landroid/os/BatteryStats$HistoryItem;
 
     iget-wide v0, p1, Landroid/os/BatteryStats$HistoryItem;->time:J
 
@@ -652,8 +643,6 @@
 
 .method public writeDelta(Landroid/os/Parcel;Landroid/os/BatteryStats$HistoryItem;)V
     .locals 15
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # Landroid/os/BatteryStats$HistoryItem;
 
     if-eqz p2, :cond_0
 
@@ -832,8 +821,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 4
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-wide v1, p0, Landroid/os/BatteryStats$HistoryItem;->time:J
 

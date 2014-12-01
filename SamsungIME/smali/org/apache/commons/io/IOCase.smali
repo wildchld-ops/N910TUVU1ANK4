@@ -71,8 +71,6 @@
 
 .method private constructor <init>(Ljava/lang/String;Z)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -85,7 +83,6 @@
 
 .method public static forName(Ljava/lang/String;)Lorg/apache/commons/io/IOCase;
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     sget-object v0, Lorg/apache/commons/io/IOCase;->SENSITIVE:Lorg/apache/commons/io/IOCase;
 
@@ -174,8 +171,6 @@
 # virtual methods
 .method public checkCompareTo(Ljava/lang/String;Ljava/lang/String;)I
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -212,8 +207,6 @@
 
 .method public checkEndsWith(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -252,8 +245,6 @@
 
 .method public checkEquals(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -290,9 +281,6 @@
 
 .method public checkRegionMatches(Ljava/lang/String;ILjava/lang/String;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -327,8 +315,6 @@
 
 .method public checkStartsWith(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -363,7 +349,6 @@
 
 .method convertCase(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_1
 

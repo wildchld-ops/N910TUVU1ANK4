@@ -33,10 +33,6 @@
 # virtual methods
 .method public addFingerPrint(ILjava/lang/String;Ljava/lang/String;[B)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # [B
 
     # getter for: Lcom/android/server/enterprise/isl/EnterpriseISLPolicy;->DBG:Z
     invoke-static {}, Lcom/android/server/enterprise/isl/EnterpriseISLPolicy;->access$000()Z
@@ -137,12 +133,6 @@
 
 .method public checkResult(IILjava/lang/String;[B[BI)V
     .locals 9
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # [B
-    .param p5    # [B
-    .param p6    # I
 
     # getter for: Lcom/android/server/enterprise/isl/EnterpriseISLPolicy;->DBG:Z
     invoke-static {}, Lcom/android/server/enterprise/isl/EnterpriseISLPolicy;->access$000()Z
@@ -251,8 +241,6 @@
 
 .method public clearFingerPrintFlag(ILjava/lang/String;)Z
     .locals 2
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     # getter for: Lcom/android/server/enterprise/isl/EnterpriseISLPolicy;->DBG:Z
     invoke-static {}, Lcom/android/server/enterprise/isl/EnterpriseISLPolicy;->access$000()Z
@@ -336,8 +324,6 @@
 
 .method public commitFingerPrint(ILjava/lang/String;)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -381,8 +367,6 @@
 
 .method public computeFileHash(Ljava/io/File;Lcom/android/server/enterprise/isl/EnterpriseISLPolicy$ScanResult;)V
     .locals 24
-    .param p1    # Ljava/io/File;
-    .param p2    # Lcom/android/server/enterprise/isl/EnterpriseISLPolicy$ScanResult;
 
     if-nez p1, :cond_1
 
@@ -1222,7 +1206,6 @@
 
 .method public countFiles(Ljava/io/File;)V
     .locals 8
-    .param p1    # Ljava/io/File;
 
     if-nez p1, :cond_1
 
@@ -1321,7 +1304,6 @@
 
 .method public delete3rdPartyBaseLine(Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     # getter for: Lcom/android/server/enterprise/isl/EnterpriseISLPolicy;->DBG:Z
     invoke-static {}, Lcom/android/server/enterprise/isl/EnterpriseISLPolicy;->access$000()Z
@@ -1662,9 +1644,6 @@
 
 .method public deleteFingerPrint(ILjava/lang/String;Ljava/lang/String;)Z
     .locals 10
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const/4 v9, 0x2
 
@@ -2433,8 +2412,6 @@
 
 .method public print_fingerprint([BLjava/lang/String;)V
     .locals 6
-    .param p1    # [B
-    .param p2    # Ljava/lang/String;
 
     if-nez p1, :cond_1
 
@@ -2543,8 +2520,6 @@
 
 .method public progress(II)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     # getter for: Lcom/android/server/enterprise/isl/EnterpriseISLPolicy;->DBG:Z
     invoke-static {}, Lcom/android/server/enterprise/isl/EnterpriseISLPolicy;->access$000()Z
@@ -2651,7 +2626,6 @@
 
 .method public read3rdPartyBaseLine(Ljava/lang/String;)[B
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     # getter for: Lcom/android/server/enterprise/isl/EnterpriseISLPolicy;->DBG:Z
     invoke-static {}, Lcom/android/server/enterprise/isl/EnterpriseISLPolicy;->access$000()Z
@@ -2701,9 +2675,6 @@
 
 .method public readFingerPrint(ILjava/lang/String;Ljava/lang/String;)[B
     .locals 10
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const/4 v9, 0x3
 
@@ -2888,10 +2859,6 @@
 
 .method public reportError(IILjava/lang/String;I)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
 
     # getter for: Lcom/android/server/enterprise/isl/EnterpriseISLPolicy;->DBG:Z
     invoke-static {}, Lcom/android/server/enterprise/isl/EnterpriseISLPolicy;->access$000()Z
@@ -2988,7 +2955,6 @@
 
 .method public reportSuccess(I)V
     .locals 6
-    .param p1    # I
 
     # getter for: Lcom/android/server/enterprise/isl/EnterpriseISLPolicy;->DBG:Z
     invoke-static {}, Lcom/android/server/enterprise/isl/EnterpriseISLPolicy;->access$000()Z
@@ -3134,8 +3100,6 @@
 
 .method public rollbackFingerPrint(ILjava/lang/String;)Z
     .locals 2
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     # getter for: Lcom/android/server/enterprise/isl/EnterpriseISLPolicy;->DBG:Z
     invoke-static {}, Lcom/android/server/enterprise/isl/EnterpriseISLPolicy;->access$000()Z
@@ -3170,8 +3134,6 @@
 
 .method public store3rdPartyBaseLine(Ljava/lang/String;[B)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # [B
 
     # getter for: Lcom/android/server/enterprise/isl/EnterpriseISLPolicy;->DBG:Z
     invoke-static {}, Lcom/android/server/enterprise/isl/EnterpriseISLPolicy;->access$000()Z
@@ -3244,7 +3206,6 @@
 
 .method public storePlatformBaseLine([B)Z
     .locals 4
-    .param p1    # [B
 
     # getter for: Lcom/android/server/enterprise/isl/EnterpriseISLPolicy;->DBG:Z
     invoke-static {}, Lcom/android/server/enterprise/isl/EnterpriseISLPolicy;->access$000()Z
@@ -3296,7 +3257,6 @@
 
 .method public storePreBaseLine([B)Z
     .locals 4
-    .param p1    # [B
 
     # getter for: Lcom/android/server/enterprise/isl/EnterpriseISLPolicy;->DBG:Z
     invoke-static {}, Lcom/android/server/enterprise/isl/EnterpriseISLPolicy;->access$000()Z
@@ -3348,8 +3308,6 @@
 
 .method public update3rdPartyBaseLine(Ljava/lang/String;[B)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # [B
 
     # getter for: Lcom/android/server/enterprise/isl/EnterpriseISLPolicy;->DBG:Z
     invoke-static {}, Lcom/android/server/enterprise/isl/EnterpriseISLPolicy;->access$000()Z
@@ -3399,10 +3357,6 @@
 
 .method public updateFingerPrint(ILjava/lang/String;Ljava/lang/String;[B)Z
     .locals 9
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # [B
 
     const/4 v8, 0x3
 
@@ -3493,7 +3447,6 @@
 
 .method public updatePlatformBaseLine([B)Z
     .locals 4
-    .param p1    # [B
 
     # getter for: Lcom/android/server/enterprise/isl/EnterpriseISLPolicy;->DBG:Z
     invoke-static {}, Lcom/android/server/enterprise/isl/EnterpriseISLPolicy;->access$000()Z
@@ -3545,7 +3498,6 @@
 
 .method public updatePreBaseLine([B)Z
     .locals 4
-    .param p1    # [B
 
     # getter for: Lcom/android/server/enterprise/isl/EnterpriseISLPolicy;->DBG:Z
     invoke-static {}, Lcom/android/server/enterprise/isl/EnterpriseISLPolicy;->access$000()Z

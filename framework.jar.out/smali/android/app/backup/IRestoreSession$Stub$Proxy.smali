@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -94,7 +93,6 @@
 
 .method public getAvailableRestoreSets(Landroid/app/backup/IRestoreObserver;)I
     .locals 6
-    .param p1    # Landroid/app/backup/IRestoreObserver;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -170,8 +168,6 @@
 
 .method public restoreAll(JLandroid/app/backup/IRestoreObserver;)I
     .locals 6
-    .param p1    # J
-    .param p3    # Landroid/app/backup/IRestoreObserver;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -241,8 +237,6 @@
 
 .method public restorePackage(Ljava/lang/String;Landroid/app/backup/IRestoreObserver;)I
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/app/backup/IRestoreObserver;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -312,9 +306,6 @@
 
 .method public restoreSome(JLandroid/app/backup/IRestoreObserver;[Ljava/lang/String;)I
     .locals 6
-    .param p1    # J
-    .param p3    # Landroid/app/backup/IRestoreObserver;
-    .param p4    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

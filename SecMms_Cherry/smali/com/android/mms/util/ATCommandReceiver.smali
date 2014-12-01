@@ -106,7 +106,6 @@
 
 .method private checkMessageFormat(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     sget-object v0, Lcom/android/mms/util/ATCommandReceiver;->sDefaultTestMode:Ljava/lang/String;
 
@@ -159,10 +158,6 @@
 
 .method private checkSendMessage(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     sget-object v0, Lcom/android/mms/util/ATCommandReceiver;->CONFIRM_SEND_TO_MORE:Ljava/lang/String;
 
@@ -314,10 +309,6 @@
 
 .method private checkWriteMessage(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -496,7 +487,6 @@
 
 .method private deleteDraftSmsMessage(J)V
     .locals 5
-    .param p1    # J
 
     const-string v0, "Mms/ATCommandReceiver"
 
@@ -541,7 +531,6 @@
 
 .method private deleteSmsMessage(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -622,8 +611,6 @@
 
 .method private listMessages(Ljava/lang/String;I)V
     .locals 21
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const-string v1, "Mms/ATCommandReceiver"
 
@@ -1282,8 +1269,6 @@
 
 .method private saveDraftMessage(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v6, 0x0
 
@@ -1401,7 +1386,6 @@
 
 .method private sendDraftMessage(Ljava/lang/String;)V
     .locals 10
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -1545,8 +1529,6 @@
 
 .method private sendMessage(Ljava/lang/String;Ljava/lang/String;)V
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v3, 0x1
 
@@ -1648,8 +1630,6 @@
 
 .method public static sendResponse(Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -1680,8 +1660,6 @@
 
 .method private sendWriteMessage(Ljava/lang/String;Ljava/lang/String;)V
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v3, 0x1
 
@@ -1787,8 +1765,6 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 15
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     sput-object p1, Lcom/android/mms/util/ATCommandReceiver;->mContext:Landroid/content/Context;
 

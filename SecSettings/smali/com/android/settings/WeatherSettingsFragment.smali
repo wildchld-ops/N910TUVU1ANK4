@@ -159,7 +159,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/WeatherSettingsFragment;)V
     .locals 0
-    .param p0    # Lcom/android/settings/WeatherSettingsFragment;
 
     invoke-direct {p0}, Lcom/android/settings/WeatherSettingsFragment;->refreshSummaryAndSwitch()V
 
@@ -168,7 +167,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/WeatherSettingsFragment;)V
     .locals 0
-    .param p0    # Lcom/android/settings/WeatherSettingsFragment;
 
     invoke-direct {p0}, Lcom/android/settings/WeatherSettingsFragment;->saveWeatherSharedPreferences()V
 
@@ -177,8 +175,6 @@
 
 .method static synthetic access$202(Lcom/android/settings/WeatherSettingsFragment;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/WeatherSettingsFragment;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/WeatherSettingsFragment;->mGuidePopupIgnore:Z
 
@@ -187,7 +183,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/WeatherSettingsFragment;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/WeatherSettingsFragment;
 
     iget-boolean v0, p0, Lcom/android/settings/WeatherSettingsFragment;->mWeatherEnabled:Z
 
@@ -196,7 +191,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/WeatherSettingsFragment;)Landroid/widget/Switch;
     .locals 1
-    .param p0    # Lcom/android/settings/WeatherSettingsFragment;
 
     iget-object v0, p0, Lcom/android/settings/WeatherSettingsFragment;->mSwitchView:Landroid/widget/Switch;
 
@@ -244,7 +238,6 @@
 
 .method private getAutoRefreshTime(Landroid/content/Context;)I
     .locals 10
-    .param p1    # Landroid/content/Context;
 
     const/4 v9, 0x0
 
@@ -311,7 +304,6 @@
 
 .method private getTempScale(Landroid/content/Context;)I
     .locals 10
-    .param p1    # Landroid/content/Context;
 
     const/4 v9, 0x0
 
@@ -378,7 +370,6 @@
 
 .method public static getUseLocationAgreed(Landroid/content/Context;)I
     .locals 10
-    .param p0    # Landroid/content/Context;
 
     const/4 v5, 0x0
 
@@ -913,7 +904,6 @@
 
 .method private showWeatherGuidePopup(Z)V
     .locals 7
-    .param p1    # Z
 
     const/4 v6, 0x0
 
@@ -1471,9 +1461,6 @@
 
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const/4 v4, 0x1
 
@@ -1549,8 +1536,6 @@
 
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 9
-    .param p1    # Landroid/widget/CompoundButton;
-    .param p2    # Z
 
     const/4 v6, 0x0
 
@@ -2174,7 +2159,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 9
-    .param p1    # Landroid/os/Bundle;
 
     const/16 v8, 0x10
 
@@ -2349,7 +2333,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -2407,8 +2390,6 @@
 
 .method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
     .locals 5
-    .param p1    # Landroid/preference/Preference;
-    .param p2    # Ljava/lang/Object;
 
     const/4 v3, 0x0
 

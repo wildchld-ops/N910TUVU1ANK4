@@ -42,7 +42,6 @@
 
 .method protected constructor <init>(Ljava/io/InputStream;)V
     .locals 1
-    .param p1    # Ljava/io/InputStream;
 
     invoke-direct {p0, p1}, Ljava/io/FilterInputStream;-><init>(Ljava/io/InputStream;)V
 
@@ -124,7 +123,6 @@
 
 .method public read([B)I
     .locals 3
-    .param p1    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -158,9 +156,6 @@
 
 .method public read([BII)I
     .locals 3
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -252,7 +247,6 @@
 
 .method public readOrThrow([B)V
     .locals 2
-    .param p1    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -270,9 +264,6 @@
 
 .method public readOrThrow([BII)V
     .locals 2
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -326,7 +317,6 @@
 
 .method public readString(I)Ljava/lang/String;
     .locals 3
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -348,8 +338,6 @@
 
 .method public readString(ILjava/nio/charset/Charset;)Ljava/lang/String;
     .locals 2
-    .param p1    # I
-    .param p2    # Ljava/nio/charset/Charset;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -409,7 +397,6 @@
 
 .method public setByteOrder(Ljava/nio/ByteOrder;)V
     .locals 1
-    .param p1    # Ljava/nio/ByteOrder;
 
     iget-object v0, p0, Lcom/android/mms/exif/CountedDataInputStream;->mByteBuffer:Ljava/nio/ByteBuffer;
 
@@ -420,7 +407,6 @@
 
 .method public skip(J)J
     .locals 4
-    .param p1    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -448,7 +434,6 @@
 
 .method public skipOrThrow(J)V
     .locals 2
-    .param p1    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -475,7 +460,6 @@
 
 .method public skipTo(J)V
     .locals 6
-    .param p1    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

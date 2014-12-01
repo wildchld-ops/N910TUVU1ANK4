@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Lcom/android/mms/ui/ComposeMessageFragment;Lcom/android/mms/ui/ComposeMessageFragment$1;)V
     .locals 0
-    .param p1    # Lcom/android/mms/ui/ComposeMessageFragment;
-    .param p2    # Lcom/android/mms/ui/ComposeMessageFragment$1;
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/ComposeMessageFragment$SideSyncReceiver;-><init>(Lcom/android/mms/ui/ComposeMessageFragment;)V
 
@@ -43,8 +41,6 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 

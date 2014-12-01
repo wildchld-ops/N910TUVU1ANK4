@@ -33,7 +33,6 @@
 # virtual methods
 .method public onScale(Landroid/view/ScaleGestureDetector;)Z
     .locals 1
-    .param p1    # Landroid/view/ScaleGestureDetector;
 
     const/4 v0, 0x1
 
@@ -42,7 +41,6 @@
 
 .method public onScaleBegin(Landroid/view/ScaleGestureDetector;)Z
     .locals 5
-    .param p1    # Landroid/view/ScaleGestureDetector;
 
     invoke-virtual {p1}, Landroid/view/ScaleGestureDetector;->getFocusX()F
 
@@ -81,7 +79,6 @@
 
 .method public onScaleEnd(Landroid/view/ScaleGestureDetector;)V
     .locals 0
-    .param p1    # Landroid/view/ScaleGestureDetector;
 
     return-void
 .end method

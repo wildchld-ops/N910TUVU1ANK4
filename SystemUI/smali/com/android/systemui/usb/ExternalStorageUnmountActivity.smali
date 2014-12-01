@@ -42,7 +42,6 @@
 
 .method private unmountExternalStorages(Ljava/lang/String;)V
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     invoke-virtual {p0}, Lcom/android/systemui/usb/ExternalStorageUnmountActivity;->getMountService()Landroid/os/storage/IMountService;
@@ -178,7 +177,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 6
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 

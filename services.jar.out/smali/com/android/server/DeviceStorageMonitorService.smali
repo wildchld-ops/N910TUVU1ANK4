@@ -133,7 +133,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 7
-    .param p1    # Landroid/content/Context;
 
     const/high16 v5, 0x4000000
 
@@ -378,8 +377,6 @@
 
 .method static synthetic access$000(Lcom/android/server/DeviceStorageMonitorService;Z)V
     .locals 0
-    .param p0    # Lcom/android/server/DeviceStorageMonitorService;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/DeviceStorageMonitorService;->checkMemory(Z)V
 
@@ -388,8 +385,6 @@
 
 .method static synthetic access$102(Lcom/android/server/DeviceStorageMonitorService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/DeviceStorageMonitorService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/DeviceStorageMonitorService;->mClearSucceeded:Z
 
@@ -398,8 +393,6 @@
 
 .method static synthetic access$202(Lcom/android/server/DeviceStorageMonitorService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/DeviceStorageMonitorService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/DeviceStorageMonitorService;->mClearingCache:Z
 
@@ -408,9 +401,6 @@
 
 .method static synthetic access$300(Lcom/android/server/DeviceStorageMonitorService;ZJ)V
     .locals 0
-    .param p0    # Lcom/android/server/DeviceStorageMonitorService;
-    .param p1    # Z
-    .param p2    # J
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/server/DeviceStorageMonitorService;->postCheckMemoryMsg(ZJ)V
 
@@ -419,8 +409,6 @@
 
 .method static synthetic access$402(Lcom/android/server/DeviceStorageMonitorService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/DeviceStorageMonitorService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/DeviceStorageMonitorService;->mBootCompleted:Z
 
@@ -429,7 +417,6 @@
 
 .method static synthetic access$500(Lcom/android/server/DeviceStorageMonitorService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/DeviceStorageMonitorService;
 
     iget-boolean v0, p0, Lcom/android/server/DeviceStorageMonitorService;->mLowMemFlag:Z
 
@@ -438,8 +425,6 @@
 
 .method static synthetic access$502(Lcom/android/server/DeviceStorageMonitorService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/DeviceStorageMonitorService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/DeviceStorageMonitorService;->mLowMemFlag:Z
 
@@ -448,7 +433,6 @@
 
 .method static synthetic access$600(Lcom/android/server/DeviceStorageMonitorService;)V
     .locals 0
-    .param p0    # Lcom/android/server/DeviceStorageMonitorService;
 
     invoke-direct {p0}, Lcom/android/server/DeviceStorageMonitorService;->fakecancelNotification()V
 
@@ -457,8 +441,6 @@
 
 .method static synthetic access$702(Lcom/android/server/DeviceStorageMonitorService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/DeviceStorageMonitorService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/DeviceStorageMonitorService;->mLocaleFlag:Z
 
@@ -529,7 +511,6 @@
 
 .method private final checkMemory(Z)V
     .locals 10
-    .param p1    # Z
 
     const/4 v9, 0x1
 
@@ -845,8 +826,6 @@
 
 .method private postCheckMemoryMsg(ZJ)V
     .locals 5
-    .param p1    # Z
-    .param p2    # J
 
     const/4 v2, 0x0
 
@@ -1470,9 +1449,6 @@
 # virtual methods
 .method protected dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/server/DeviceStorageMonitorService;->mContext:Landroid/content/Context;
 

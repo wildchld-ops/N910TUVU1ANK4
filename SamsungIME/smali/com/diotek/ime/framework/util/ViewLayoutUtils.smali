@@ -14,9 +14,6 @@
 
 .method public static newLayoutParam(Landroid/view/ViewGroup;II)Landroid/view/ViewGroup$MarginLayoutParams;
     .locals 3
-    .param p0    # Landroid/view/ViewGroup;
-    .param p1    # I
-    .param p2    # I
 
     instance-of v0, p0, Landroid/widget/FrameLayout;
 
@@ -87,11 +84,6 @@
 
 .method public static placeViewAt(Landroid/view/View;IIII)V
     .locals 7
-    .param p0    # Landroid/view/View;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/4 v6, 0x0
 

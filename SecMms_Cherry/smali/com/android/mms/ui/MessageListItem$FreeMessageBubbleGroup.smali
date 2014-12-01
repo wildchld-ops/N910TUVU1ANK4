@@ -40,7 +40,6 @@
 # direct methods
 .method public constructor <init>(Landroid/widget/LinearLayout;)V
     .locals 1
-    .param p1    # Landroid/widget/LinearLayout;
 
     invoke-direct {p0}, Ljava/util/ArrayList;-><init>()V
 
@@ -63,7 +62,6 @@
 # virtual methods
 .method public add(Lcom/android/mms/freemessage/FreeMessageBubbleView;)Z
     .locals 1
-    .param p1    # Lcom/android/mms/freemessage/FreeMessageBubbleView;
 
     iget-object v0, p0, Lcom/android/mms/ui/MessageListItem$FreeMessageBubbleGroup;->mThumbnailContainer:Landroid/widget/LinearLayout;
 
@@ -78,7 +76,6 @@
 
 .method public bridge synthetic add(Ljava/lang/Object;)Z
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/android/mms/freemessage/FreeMessageBubbleView;
 
@@ -91,7 +88,6 @@
 
 .method public addLinks(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v2, p0, Lcom/android/mms/ui/MessageListItem$FreeMessageBubbleGroup;->mTextProperty:Lcom/android/mms/ui/MessageListItem$BodyTextViewProperty;
 
@@ -136,8 +132,6 @@
 
 .method public initFreeMessageThumbnail(ILcom/android/mms/ui/MessageItem;)V
     .locals 13
-    .param p1    # I
-    .param p2    # Lcom/android/mms/ui/MessageItem;
 
     const/4 v9, 0x0
 
@@ -289,9 +283,6 @@
 
 .method public present(Landroid/net/Uri;Ljava/lang/String;Lcom/android/mms/ui/MessageListItem;)V
     .locals 1
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/android/mms/ui/MessageListItem;
 
     const/4 v0, 0x0
 
@@ -302,10 +293,6 @@
 
 .method public present(Landroid/net/Uri;Ljava/lang/String;Lcom/android/mms/ui/MessageListItem;Z)V
     .locals 7
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/android/mms/ui/MessageListItem;
-    .param p4    # Z
 
     const/4 v0, 0x0
 
@@ -348,8 +335,6 @@
 
 .method public presentFreeMessage(Lcom/android/mms/ui/MessageListItem;Z)V
     .locals 5
-    .param p1    # Lcom/android/mms/ui/MessageListItem;
-    .param p2    # Z
 
     const/4 v0, 0x0
 
@@ -378,8 +363,6 @@
 
 .method public setBodyTextSize(IF)V
     .locals 3
-    .param p1    # I
-    .param p2    # F
 
     iget-object v2, p0, Lcom/android/mms/ui/MessageListItem$FreeMessageBubbleGroup;->mTextProperty:Lcom/android/mms/ui/MessageListItem$BodyTextViewProperty;
 
@@ -420,7 +403,6 @@
 
 .method public setTextMaxWidth(I)V
     .locals 3
-    .param p1    # I
 
     invoke-virtual {p0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
@@ -453,7 +435,6 @@
 
 .method public setTextOnTouchListener(Landroid/view/View$OnTouchListener;)V
     .locals 3
-    .param p1    # Landroid/view/View$OnTouchListener;
 
     iget-object v2, p0, Lcom/android/mms/ui/MessageListItem$FreeMessageBubbleGroup;->mTextProperty:Lcom/android/mms/ui/MessageListItem$BodyTextViewProperty;
 

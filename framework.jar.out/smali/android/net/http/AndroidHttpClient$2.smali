@@ -21,8 +21,6 @@
 # direct methods
 .method constructor <init>(Landroid/net/http/AndroidHttpClient;Lorg/apache/http/conn/ClientConnectionManager;Lorg/apache/http/params/HttpParams;)V
     .locals 0
-    .param p2    # Lorg/apache/http/conn/ClientConnectionManager;
-    .param p3    # Lorg/apache/http/params/HttpParams;
 
     iput-object p1, p0, Landroid/net/http/AndroidHttpClient$2;->this$0:Landroid/net/http/AndroidHttpClient;
 

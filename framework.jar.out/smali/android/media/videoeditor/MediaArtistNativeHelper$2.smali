@@ -80,7 +80,6 @@
 # virtual methods
 .method public onThumbnail(I)V
     .locals 11
-    .param p1    # I
 
     const/high16 v10, 0x3f800000
 

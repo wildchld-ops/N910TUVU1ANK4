@@ -20,8 +20,6 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 16
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     const-string v2, "com.android.launcher.action.UNINSTALL_SHORTCUT"
 

@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Lcom/android/server/enterprise/keystore/TimaKeystoreService;Lcom/android/server/enterprise/keystore/TimaKeystoreService$1;)V
     .locals 0
-    .param p1    # Lcom/android/server/enterprise/keystore/TimaKeystoreService;
-    .param p2    # Lcom/android/server/enterprise/keystore/TimaKeystoreService$1;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/keystore/TimaKeystoreService$SystemPersonaObserver;-><init>(Lcom/android/server/enterprise/keystore/TimaKeystoreService;)V
 
@@ -43,14 +41,12 @@
 # virtual methods
 .method public onPersonaActive(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onRemovePersona(I)V
     .locals 3
-    .param p1    # I
 
     # getter for: Lcom/android/server/enterprise/keystore/TimaKeystoreService;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/android/server/enterprise/keystore/TimaKeystoreService;->access$200()Ljava/lang/String;
@@ -103,7 +99,6 @@
 
 .method public onResetPersona(I)V
     .locals 3
-    .param p1    # I
 
     # getter for: Lcom/android/server/enterprise/keystore/TimaKeystoreService;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/android/server/enterprise/keystore/TimaKeystoreService;->access$200()Ljava/lang/String;
@@ -156,9 +151,6 @@
 
 .method public onSwitchPersona(IIZ)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     return-void
 .end method

@@ -25,8 +25,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/am/MultiWindowManagerService;Landroid/os/IBinder;Landroid/os/IBinder;)V
     .locals 0
-    .param p2    # Landroid/os/IBinder;
-    .param p3    # Landroid/os/IBinder;
 
     iput-object p1, p0, Lcom/android/server/am/MultiWindowManagerService$MinimizeCallback;->this$0:Lcom/android/server/am/MultiWindowManagerService;
 

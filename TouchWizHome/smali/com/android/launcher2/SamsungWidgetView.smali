@@ -43,7 +43,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -54,8 +53,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -72,7 +69,6 @@
 
 .method static synthetic access$000(Lcom/android/launcher2/SamsungWidgetView;)I
     .locals 1
-    .param p0    # Lcom/android/launcher2/SamsungWidgetView;
 
     invoke-virtual {p0}, Landroid/view/View;->getWindowAttachCount()I
 
@@ -83,7 +79,6 @@
 
 .method static synthetic access$100(Lcom/android/launcher2/SamsungWidgetView;)Z
     .locals 1
-    .param p0    # Lcom/android/launcher2/SamsungWidgetView;
 
     iget-boolean v0, p0, Lcom/android/launcher2/SamsungWidgetView;->mHasPerformedLongPress:Z
 
@@ -92,8 +87,6 @@
 
 .method static synthetic access$102(Lcom/android/launcher2/SamsungWidgetView;Z)Z
     .locals 0
-    .param p0    # Lcom/android/launcher2/SamsungWidgetView;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/launcher2/SamsungWidgetView;->mHasPerformedLongPress:Z
 
@@ -102,7 +95,6 @@
 
 .method static synthetic access$200(Lcom/android/launcher2/SamsungWidgetView;)I
     .locals 1
-    .param p0    # Lcom/android/launcher2/SamsungWidgetView;
 
     invoke-virtual {p0}, Landroid/view/View;->getWindowAttachCount()I
 
@@ -202,7 +194,6 @@
 
 .method protected dispatchDraw(Landroid/graphics/Canvas;)V
     .locals 0
-    .param p1    # Landroid/graphics/Canvas;
 
     invoke-super {p0, p1}, Landroid/view/ViewGroup;->dispatchDraw(Landroid/graphics/Canvas;)V
 
@@ -241,9 +232,6 @@
 
 .method protected drawChild(Landroid/graphics/Canvas;Landroid/view/View;J)Z
     .locals 1
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # Landroid/view/View;
-    .param p3    # J
 
     invoke-super {p0, p1, p2, p3, p4}, Landroid/view/ViewGroup;->drawChild(Landroid/graphics/Canvas;Landroid/view/View;J)Z
 
@@ -329,8 +317,6 @@
 
 .method public invalidateChildInParent([ILandroid/graphics/Rect;)Landroid/view/ViewParent;
     .locals 2
-    .param p1    # [I
-    .param p2    # Landroid/graphics/Rect;
 
     invoke-super {p0, p1, p2}, Landroid/view/ViewGroup;->invalidateChildInParent([ILandroid/graphics/Rect;)Landroid/view/ViewParent;
 
@@ -350,7 +336,6 @@
 
 .method public onInterceptHoverEvent(Landroid/view/MotionEvent;)Z
     .locals 5
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v3, 0x0
 
@@ -398,7 +383,6 @@
 
 .method public onInterceptTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 4
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v0, 0x1
 
@@ -502,7 +486,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 5
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v4, 0x1
 
@@ -573,8 +556,6 @@
 
 .method public setLastTouchPoint(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/launcher2/SamsungWidgetView;->mLastTouch:[I
 

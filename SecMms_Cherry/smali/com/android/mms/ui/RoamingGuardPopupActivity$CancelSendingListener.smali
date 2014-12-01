@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Lcom/android/mms/ui/RoamingGuardPopupActivity;Lcom/android/mms/ui/RoamingGuardPopupActivity$1;)V
     .locals 0
-    .param p1    # Lcom/android/mms/ui/RoamingGuardPopupActivity;
-    .param p2    # Lcom/android/mms/ui/RoamingGuardPopupActivity$1;
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/RoamingGuardPopupActivity$CancelSendingListener;-><init>(Lcom/android/mms/ui/RoamingGuardPopupActivity;)V
 
@@ -46,8 +44,6 @@
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 1
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     invoke-interface {p1}, Landroid/content/DialogInterface;->dismiss()V
 

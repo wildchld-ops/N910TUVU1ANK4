@@ -46,8 +46,6 @@
 
 .method synthetic constructor <init>(Landroid/view/inputmethod/InputMethodManager;Landroid/view/inputmethod/InputMethodManager$1;)V
     .locals 0
-    .param p1    # Landroid/view/inputmethod/InputMethodManager;
-    .param p2    # Landroid/view/inputmethod/InputMethodManager$1;
 
     invoke-direct {p0, p1}, Landroid/view/inputmethod/InputMethodManager$PendingEvent;-><init>(Landroid/view/inputmethod/InputMethodManager;)V
 

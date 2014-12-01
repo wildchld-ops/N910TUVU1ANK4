@@ -173,7 +173,6 @@
 
 .method private static existsCscChameleonFile(Ljava/lang/String;)Z
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     new-instance v0, Ljava/io/File;
 
@@ -188,7 +187,6 @@
 
 .method public static getAbbreviatedDialingCodes(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     if-eqz p0, :cond_0
 
@@ -221,7 +219,6 @@
 
 .method public static isAbbreviatedDialingCodes(Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     if-eqz p0, :cond_0
 
@@ -252,8 +249,6 @@
 
 .method private static log(Ljava/lang/String;Z)V
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Z
 
     const-string v0, "InCallUIExtension"
 
@@ -370,8 +365,6 @@
 
 .method private static putAbbreviatedDialingCodesTable([Ljava/lang/String;[Ljava/lang/String;)V
     .locals 4
-    .param p0    # [Ljava/lang/String;
-    .param p1    # [Ljava/lang/String;
 
     if-eqz p0, :cond_0
 

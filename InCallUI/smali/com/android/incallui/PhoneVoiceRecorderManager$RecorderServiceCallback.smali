@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Lcom/android/incallui/PhoneVoiceRecorderManager;Lcom/android/incallui/PhoneVoiceRecorderManager$1;)V
     .locals 0
-    .param p1    # Lcom/android/incallui/PhoneVoiceRecorderManager;
-    .param p2    # Lcom/android/incallui/PhoneVoiceRecorderManager$1;
 
     invoke-direct {p0, p1}, Lcom/android/incallui/PhoneVoiceRecorderManager$RecorderServiceCallback;-><init>(Lcom/android/incallui/PhoneVoiceRecorderManager;)V
 
@@ -43,7 +41,6 @@
 # virtual methods
 .method public messageCallback(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

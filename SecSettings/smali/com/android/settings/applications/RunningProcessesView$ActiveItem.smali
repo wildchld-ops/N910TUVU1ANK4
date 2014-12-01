@@ -39,8 +39,6 @@
 # virtual methods
 .method updateTime(Landroid/content/Context;Ljava/lang/StringBuilder;)V
     .locals 10
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/StringBuilder;
 
     const/4 v4, 0x1
 

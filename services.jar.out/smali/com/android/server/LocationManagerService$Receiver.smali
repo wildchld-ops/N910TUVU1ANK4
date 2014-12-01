@@ -63,13 +63,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/LocationManagerService;Landroid/location/ILocationListener;Landroid/app/PendingIntent;IILjava/lang/String;Landroid/os/WorkSource;Z)V
     .locals 3
-    .param p2    # Landroid/location/ILocationListener;
-    .param p3    # Landroid/app/PendingIntent;
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Ljava/lang/String;
-    .param p7    # Landroid/os/WorkSource;
-    .param p8    # Z
 
     const/4 v2, 0x1
 
@@ -164,7 +157,6 @@
 
 .method static synthetic access$1500(Lcom/android/server/LocationManagerService$Receiver;)V
     .locals 0
-    .param p0    # Lcom/android/server/LocationManagerService$Receiver;
 
     invoke-direct {p0}, Lcom/android/server/LocationManagerService$Receiver;->decrementPendingBroadcastsLocked()V
 
@@ -219,7 +211,6 @@
 
 .method private lbsCheck(Landroid/content/pm/PackageManager;Ljava/util/List;)Ljava/util/HashSet;
     .locals 10
-    .param p1    # Landroid/content/pm/PackageManager;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -691,9 +682,6 @@
 
 .method private updateMonitoring(ZZI)Z
     .locals 4
-    .param p1    # Z
-    .param p2    # Z
-    .param p3    # I
 
     const/4 v0, 0x0
 
@@ -830,7 +818,6 @@
 
 .method public callLocationChangedLocked(Landroid/location/Location;)Z
     .locals 9
-    .param p1    # Landroid/location/Location;
 
     const/4 v8, 0x0
 
@@ -959,8 +946,6 @@
 
 .method public callProviderEnabledLocked(Ljava/lang/String;Z)Z
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const/4 v9, 0x1
 
@@ -1095,9 +1080,6 @@
 
 .method public callStatusChangedLocked(Ljava/lang/String;ILandroid/os/Bundle;)Z
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Landroid/os/Bundle;
 
     const/4 v8, 0x0
 
@@ -1251,7 +1233,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 2
-    .param p1    # Ljava/lang/Object;
 
     instance-of v0, p1, Lcom/android/server/LocationManagerService$Receiver;
 
@@ -1347,11 +1328,6 @@
 
 .method public onSendFinished(Landroid/app/PendingIntent;Landroid/content/Intent;ILjava/lang/String;Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/app/PendingIntent;
-    .param p2    # Landroid/content/Intent;
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
-    .param p5    # Landroid/os/Bundle;
 
     monitor-enter p0
 
@@ -1468,7 +1444,6 @@
 
 .method public updateMonitoring(Z)V
     .locals 12
-    .param p1    # Z
 
     iget-boolean v8, p0, Lcom/android/server/LocationManagerService$Receiver;->mHideFromAppOps:Z
 

@@ -55,11 +55,6 @@
 
 .method private constructor <init>(BBBBI)V
     .locals 3
-    .param p1    # B
-    .param p2    # B
-    .param p3    # B
-    .param p4    # B
-    .param p5    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;
@@ -128,10 +123,6 @@
 
 .method private constructor <init>(BB[BI)V
     .locals 6
-    .param p1    # B
-    .param p2    # B
-    .param p3    # [B
-    .param p4    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;
@@ -161,8 +152,6 @@
 
 .method public static fromLinkAddress(ILandroid/net/LinkAddress;)Lcom/android/server/connectivity/VpnNamespace$VpnNetIfAddr;
     .locals 8
-    .param p0    # I
-    .param p1    # Landroid/net/LinkAddress;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;
@@ -600,7 +589,6 @@
 
 .method writeObject(Ljava/io/DataOutputStream;)V
     .locals 3
-    .param p1    # Ljava/io/DataOutputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

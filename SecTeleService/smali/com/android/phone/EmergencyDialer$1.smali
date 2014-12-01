@@ -70,7 +70,7 @@
     :cond_0
     iget-object v1, p0, Lcom/android/phone/EmergencyDialer$1;->this$0:Lcom/android/phone/EmergencyDialer;
 
-    invoke-virtual {v1}, Landroid/app/Activity;->finish()V
+    invoke-virtual {v1}, Lcom/android/phone/EmergencyDialer;->finish()V
 
     :cond_1
     const-string v1, "android.intent.action.AIRPLANE_MODE"
@@ -133,7 +133,7 @@
 
     const/16 v2, 0x8
 
-    invoke-virtual {v1, v2}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v1, v2}, Lcom/android/phone/EmergencyContactItemContainer;->setVisibility(I)V
 
     :cond_2
     :goto_0
@@ -189,7 +189,7 @@
     :cond_3
     iget-object v1, p0, Lcom/android/phone/EmergencyDialer$1;->this$0:Lcom/android/phone/EmergencyDialer;
 
-    invoke-virtual {v1}, Landroid/app/Activity;->finish()V
+    invoke-virtual {v1}, Lcom/android/phone/EmergencyDialer;->finish()V
 
     :cond_4
     return-void
@@ -211,7 +211,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1, v3}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v1, v3}, Lcom/android/phone/EmergencyContactItemContainer;->setVisibility(I)V
 
     goto :goto_0
 .end method

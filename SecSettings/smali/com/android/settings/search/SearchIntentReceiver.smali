@@ -55,7 +55,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/search/SearchIntentReceiver;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/settings/search/SearchIntentReceiver;
 
     iget-object v0, p0, Lcom/android/settings/search/SearchIntentReceiver;->mContext:Landroid/content/Context;
 
@@ -72,7 +71,6 @@
 
 .method static synthetic access$102(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/settings/search/SearchIntentReceiver;->mDoingInitTitleDB:Z
 
@@ -81,7 +79,6 @@
 
 .method static synthetic access$202(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/settings/search/SearchIntentReceiver;->TitleinfoThread:Z
 
@@ -90,7 +87,6 @@
 
 .method static synthetic access$302(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/settings/search/SearchIntentReceiver;->SearchinfoThread:Z
 
@@ -156,8 +152,6 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 12
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     const/4 v8, 0x0
 
@@ -430,7 +424,6 @@
 
 .method public restoredb(Z)V
     .locals 3
-    .param p1    # Z
 
     new-instance v0, Landroid/content/Intent;
 

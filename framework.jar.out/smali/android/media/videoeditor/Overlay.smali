@@ -46,10 +46,6 @@
 
 .method public constructor <init>(Landroid/media/videoeditor/MediaItem;Ljava/lang/String;JJ)V
     .locals 4
-    .param p1    # Landroid/media/videoeditor/MediaItem;
-    .param p2    # Ljava/lang/String;
-    .param p3    # J
-    .param p5    # J
 
     const-wide/16 v1, 0x0
 
@@ -124,7 +120,6 @@
 # virtual methods
 .method public equals(Ljava/lang/Object;)Z
     .locals 2
-    .param p1    # Ljava/lang/Object;
 
     instance-of v0, p1, Landroid/media/videoeditor/Overlay;
 
@@ -213,7 +208,6 @@
 
 .method public setDuration(J)V
     .locals 9
-    .param p1    # J
 
     const-wide/16 v0, 0x0
 
@@ -284,7 +278,6 @@
 
 .method public setStartTime(J)V
     .locals 9
-    .param p1    # J
 
     iget-wide v3, p0, Landroid/media/videoeditor/Overlay;->mDurationMs:J
 
@@ -340,8 +333,6 @@
 
 .method public setStartTimeAndDuration(JJ)V
     .locals 9
-    .param p1    # J
-    .param p3    # J
 
     add-long v5, p1, p3
 
@@ -397,8 +388,6 @@
 
 .method public setUserAttribute(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/media/videoeditor/Overlay;->mUserAttributes:Ljava/util/Map;
 

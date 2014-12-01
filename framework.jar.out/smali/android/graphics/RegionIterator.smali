@@ -10,7 +10,6 @@
 # direct methods
 .method public constructor <init>(Landroid/graphics/Region;)V
     .locals 1
-    .param p1    # Landroid/graphics/Region;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -55,7 +54,6 @@
 
 .method public final next(Landroid/graphics/Rect;)Z
     .locals 2
-    .param p1    # Landroid/graphics/Rect;
 
     if-nez p1, :cond_0
 

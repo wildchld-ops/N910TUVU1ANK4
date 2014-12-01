@@ -10,7 +10,6 @@
 # direct methods
 .method public constructor <init>(Ljava/io/OutputStream;)V
     .locals 0
-    .param p1    # Ljava/io/OutputStream;
 
     invoke-direct {p0, p1}, Ljava/io/FilterOutputStream;-><init>(Ljava/io/OutputStream;)V
 
@@ -29,7 +28,6 @@
 
 .method public declared-synchronized write(I)V
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -65,7 +63,6 @@
 
 .method public declared-synchronized write([B)V
     .locals 3
-    .param p1    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -107,9 +104,6 @@
 
 .method public declared-synchronized write([BII)V
     .locals 1
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -145,7 +139,6 @@
 
 .method public writeBoolean(Z)V
     .locals 1
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -171,7 +164,6 @@
 
 .method public writeByte(I)V
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -193,7 +185,6 @@
 
 .method public writeBytes(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -235,7 +226,6 @@
 
 .method public writeChar(I)V
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -267,7 +257,6 @@
 
 .method public writeChars(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -319,7 +308,6 @@
 
 .method public final writeDouble(D)V
     .locals 2
-    .param p1    # D
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -337,7 +325,6 @@
 
 .method public final writeFloat(F)V
     .locals 1
-    .param p1    # F
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -355,7 +342,6 @@
 
 .method public writeInt(I)V
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -403,7 +389,6 @@
 
 .method public writeLong(J)V
     .locals 3
-    .param p1    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -513,7 +498,6 @@
 
 .method public writeShort(I)V
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -545,7 +529,6 @@
 
 .method public writeUTF(Ljava/lang/String;)V
     .locals 9
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

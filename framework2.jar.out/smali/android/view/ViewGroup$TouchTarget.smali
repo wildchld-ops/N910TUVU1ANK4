@@ -57,8 +57,6 @@
 
 .method public static obtain(Landroid/view/View;I)Landroid/view/ViewGroup$TouchTarget;
     .locals 3
-    .param p0    # Landroid/view/View;
-    .param p1    # I
 
     sget-object v2, Landroid/view/ViewGroup$TouchTarget;->sRecycleLock:Ljava/lang/Object;
 

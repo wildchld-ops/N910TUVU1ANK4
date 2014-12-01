@@ -13,7 +13,6 @@
 # direct methods
 .method public constructor <init>(Lorg/xmlpull/v1/XmlPullParser;)V
     .locals 0
-    .param p1    # Lorg/xmlpull/v1/XmlPullParser;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -26,8 +25,6 @@
 # virtual methods
 .method public getAttributeBooleanValue(IZ)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Z
 
     invoke-virtual {p0, p1}, Landroid/util/XmlPullAttributes;->getAttributeValue(I)Ljava/lang/String;
 
@@ -42,9 +39,6 @@
 
 .method public getAttributeBooleanValue(Ljava/lang/String;Ljava/lang/String;Z)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     invoke-virtual {p0, p1, p2}, Landroid/util/XmlPullAttributes;->getAttributeValue(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
@@ -71,8 +65,6 @@
 
 .method public getAttributeFloatValue(IF)F
     .locals 1
-    .param p1    # I
-    .param p2    # F
 
     invoke-virtual {p0, p1}, Landroid/util/XmlPullAttributes;->getAttributeValue(I)Ljava/lang/String;
 
@@ -90,9 +82,6 @@
 
 .method public getAttributeFloatValue(Ljava/lang/String;Ljava/lang/String;F)F
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # F
 
     invoke-virtual {p0, p1, p2}, Landroid/util/XmlPullAttributes;->getAttributeValue(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
@@ -110,8 +99,6 @@
 
 .method public getAttributeIntValue(II)I
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0, p1}, Landroid/util/XmlPullAttributes;->getAttributeValue(I)Ljava/lang/String;
 
@@ -126,9 +113,6 @@
 
 .method public getAttributeIntValue(Ljava/lang/String;Ljava/lang/String;I)I
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     invoke-virtual {p0, p1, p2}, Landroid/util/XmlPullAttributes;->getAttributeValue(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
@@ -143,9 +127,6 @@
 
 .method public getAttributeListValue(I[Ljava/lang/String;I)I
     .locals 1
-    .param p1    # I
-    .param p2    # [Ljava/lang/String;
-    .param p3    # I
 
     invoke-virtual {p0, p1}, Landroid/util/XmlPullAttributes;->getAttributeValue(I)Ljava/lang/String;
 
@@ -160,10 +141,6 @@
 
 .method public getAttributeListValue(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;I)I
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # [Ljava/lang/String;
-    .param p4    # I
 
     invoke-virtual {p0, p1, p2}, Landroid/util/XmlPullAttributes;->getAttributeValue(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
@@ -178,7 +155,6 @@
 
 .method public getAttributeName(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/util/XmlPullAttributes;->mParser:Lorg/xmlpull/v1/XmlPullParser;
 
@@ -191,7 +167,6 @@
 
 .method public getAttributeNameResource(I)I
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -200,8 +175,6 @@
 
 .method public getAttributeResourceValue(II)I
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0, p1}, Landroid/util/XmlPullAttributes;->getAttributeValue(I)Ljava/lang/String;
 
@@ -216,9 +189,6 @@
 
 .method public getAttributeResourceValue(Ljava/lang/String;Ljava/lang/String;I)I
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     invoke-virtual {p0, p1, p2}, Landroid/util/XmlPullAttributes;->getAttributeValue(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
@@ -233,8 +203,6 @@
 
 .method public getAttributeUnsignedIntValue(II)I
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0, p1}, Landroid/util/XmlPullAttributes;->getAttributeValue(I)Ljava/lang/String;
 
@@ -249,9 +217,6 @@
 
 .method public getAttributeUnsignedIntValue(Ljava/lang/String;Ljava/lang/String;I)I
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     invoke-virtual {p0, p1, p2}, Landroid/util/XmlPullAttributes;->getAttributeValue(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
@@ -266,7 +231,6 @@
 
 .method public getAttributeValue(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/util/XmlPullAttributes;->mParser:Lorg/xmlpull/v1/XmlPullParser;
 
@@ -279,8 +243,6 @@
 
 .method public getAttributeValue(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/util/XmlPullAttributes;->mParser:Lorg/xmlpull/v1/XmlPullParser;
 
@@ -321,7 +283,6 @@
 
 .method public getIdAttributeResourceValue(I)I
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x0
 

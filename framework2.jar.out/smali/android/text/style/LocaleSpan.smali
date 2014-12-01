@@ -13,7 +13,6 @@
 # direct methods
 .method public constructor <init>(Landroid/os/Parcel;)V
     .locals 4
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Landroid/text/style/MetricAffectingSpan;-><init>()V
 
@@ -40,7 +39,6 @@
 
 .method public constructor <init>(Ljava/util/Locale;)V
     .locals 0
-    .param p1    # Ljava/util/Locale;
 
     invoke-direct {p0}, Landroid/text/style/MetricAffectingSpan;-><init>()V
 
@@ -51,8 +49,6 @@
 
 .method private static apply(Landroid/graphics/Paint;Ljava/util/Locale;)V
     .locals 0
-    .param p0    # Landroid/graphics/Paint;
-    .param p1    # Ljava/util/Locale;
 
     invoke-virtual {p0, p1}, Landroid/graphics/Paint;->setTextLocale(Ljava/util/Locale;)V
 
@@ -87,7 +83,6 @@
 
 .method public updateDrawState(Landroid/text/TextPaint;)V
     .locals 1
-    .param p1    # Landroid/text/TextPaint;
 
     iget-object v0, p0, Landroid/text/style/LocaleSpan;->mLocale:Ljava/util/Locale;
 
@@ -98,7 +93,6 @@
 
 .method public updateMeasureState(Landroid/text/TextPaint;)V
     .locals 1
-    .param p1    # Landroid/text/TextPaint;
 
     iget-object v0, p0, Landroid/text/style/LocaleSpan;->mLocale:Ljava/util/Locale;
 
@@ -109,8 +103,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v0, p0, Landroid/text/style/LocaleSpan;->mLocale:Ljava/util/Locale;
 

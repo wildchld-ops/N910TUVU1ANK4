@@ -33,8 +33,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Lcom/android/systemui/statusbar/AnimatedImageView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -69,9 +67,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Ljava/lang/String;Landroid/app/Notification;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/app/Notification;
 
     invoke-direct {p0, p1}, Lcom/android/systemui/statusbar/AnimatedImageView;-><init>(Landroid/content/Context;)V
 
@@ -147,8 +142,6 @@
 
 .method public static getIcon(Landroid/content/Context;Lcom/android/internal/statusbar/StatusBarIcon;)Landroid/graphics/drawable/Drawable;
     .locals 17
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/internal/statusbar/StatusBarIcon;
 
     const/4 v10, 0x0
 
@@ -903,7 +896,6 @@
 
 .method private getIcon(Lcom/android/internal/statusbar/StatusBarIcon;)Landroid/graphics/drawable/Drawable;
     .locals 1
-    .param p1    # Lcom/android/internal/statusbar/StatusBarIcon;
 
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
@@ -918,7 +910,6 @@
 
 .method private setContentDescription(Landroid/app/Notification;)V
     .locals 2
-    .param p1    # Landroid/app/Notification;
 
     if-eqz p1, :cond_0
 
@@ -938,8 +929,6 @@
 
 .method private static streq(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -971,7 +960,6 @@
 
 .method private updateDrawable(Z)Z
     .locals 4
-    .param p1    # Z
 
     iget-object v1, p0, Lcom/android/systemui/statusbar/StatusBarIconView;->mIcon:Lcom/android/internal/statusbar/StatusBarIcon;
 
@@ -1029,7 +1017,6 @@
 # virtual methods
 .method protected debug(I)V
     .locals 3
-    .param p1    # I
 
     invoke-super {p0, p1}, Landroid/view/View;->debug(I)V
 
@@ -1102,8 +1089,6 @@
 
 .method public getIconLocal(Landroid/content/Context;Lcom/android/internal/statusbar/StatusBarIcon;)Landroid/graphics/drawable/Drawable;
     .locals 17
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/internal/statusbar/StatusBarIcon;
 
     const/4 v10, 0x0
 
@@ -2031,7 +2016,6 @@
 
 .method protected onDraw(Landroid/graphics/Canvas;)V
     .locals 4
-    .param p1    # Landroid/graphics/Canvas;
 
     invoke-super {p0, p1}, Landroid/widget/ImageView;->onDraw(Landroid/graphics/Canvas;)V
 
@@ -2063,7 +2047,6 @@
 
 .method public onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
     .locals 1
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
 
     invoke-super {p0, p1}, Landroid/widget/ImageView;->onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
 
@@ -2081,10 +2064,6 @@
 
 .method protected onSizeChanged(IIII)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-super {p0, p1, p2, p3, p4}, Landroid/view/View;->onSizeChanged(IIII)V
 
@@ -2286,7 +2265,6 @@
 
 .method public set(Lcom/android/internal/statusbar/StatusBarIcon;)Z
     .locals 11
-    .param p1    # Lcom/android/internal/statusbar/StatusBarIcon;
 
     const/4 v10, 0x0
 

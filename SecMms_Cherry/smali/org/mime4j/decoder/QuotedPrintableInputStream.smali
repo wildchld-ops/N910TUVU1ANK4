@@ -34,7 +34,6 @@
 
 .method public constructor <init>(Ljava/io/InputStream;)V
     .locals 1
-    .param p1    # Ljava/io/InputStream;
 
     invoke-direct {p0}, Ljava/io/InputStream;-><init>()V
 
@@ -61,7 +60,6 @@
 
 .method private asciiCharToNumericValue(B)B
     .locals 3
-    .param p1    # B
 
     const/16 v0, 0x30
 

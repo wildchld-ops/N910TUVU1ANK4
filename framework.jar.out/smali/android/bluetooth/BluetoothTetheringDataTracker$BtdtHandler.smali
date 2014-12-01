@@ -23,8 +23,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/Looper;Landroid/bluetooth/BluetoothTetheringDataTracker;)V
     .locals 0
-    .param p1    # Landroid/os/Looper;
-    .param p2    # Landroid/bluetooth/BluetoothTetheringDataTracker;
 
     invoke-direct {p0, p1}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
@@ -37,7 +35,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 5
-    .param p1    # Landroid/os/Message;
 
     const/4 v4, 0x0
 

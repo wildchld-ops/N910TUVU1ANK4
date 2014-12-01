@@ -36,8 +36,6 @@
 # virtual methods
 .method public onServiceConnected(ILandroid/bluetooth/BluetoothProfile;)V
     .locals 17
-    .param p1    # I
-    .param p2    # Landroid/bluetooth/BluetoothProfile;
 
     packed-switch p1, :pswitch_data_0
 
@@ -560,7 +558,6 @@
 
 .method public onServiceDisconnected(I)V
     .locals 10
-    .param p1    # I
 
     const-string v0, "AudioService"
 

@@ -36,7 +36,6 @@
 # virtual methods
 .method public onStepChanged(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLSliderMenu$7;->this$0:Lcom/sec/android/app/camera/glwidget/TwGLSliderMenu;
 

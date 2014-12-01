@@ -34,7 +34,6 @@
 # direct methods
 .method public constructor <init>(Landroid/view/textservice/TextInfo;Ljava/util/ArrayList;)V
     .locals 1
-    .param p1    # Landroid/view/textservice/TextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

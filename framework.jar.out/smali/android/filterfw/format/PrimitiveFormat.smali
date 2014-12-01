@@ -14,7 +14,6 @@
 
 .method public static createByteFormat(I)Landroid/filterfw/core/MutableFrameFormat;
     .locals 1
-    .param p0    # I
 
     const/4 v0, 0x2
 
@@ -27,8 +26,6 @@
 
 .method public static createByteFormat(II)Landroid/filterfw/core/MutableFrameFormat;
     .locals 1
-    .param p0    # I
-    .param p1    # I
 
     const/4 v0, 0x2
 
@@ -41,7 +38,6 @@
 
 .method public static createDoubleFormat(I)Landroid/filterfw/core/MutableFrameFormat;
     .locals 1
-    .param p0    # I
 
     const/4 v0, 0x6
 
@@ -54,8 +50,6 @@
 
 .method public static createDoubleFormat(II)Landroid/filterfw/core/MutableFrameFormat;
     .locals 1
-    .param p0    # I
-    .param p1    # I
 
     const/4 v0, 0x6
 
@@ -68,7 +62,6 @@
 
 .method public static createFloatFormat(I)Landroid/filterfw/core/MutableFrameFormat;
     .locals 1
-    .param p0    # I
 
     const/4 v0, 0x5
 
@@ -81,8 +74,6 @@
 
 .method public static createFloatFormat(II)Landroid/filterfw/core/MutableFrameFormat;
     .locals 1
-    .param p0    # I
-    .param p1    # I
 
     const/4 v0, 0x5
 
@@ -95,8 +86,6 @@
 
 .method private static createFormat(II)Landroid/filterfw/core/MutableFrameFormat;
     .locals 2
-    .param p0    # I
-    .param p1    # I
 
     new-instance v0, Landroid/filterfw/core/MutableFrameFormat;
 
@@ -111,9 +100,6 @@
 
 .method private static createFormat(III)Landroid/filterfw/core/MutableFrameFormat;
     .locals 1
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
 
     new-instance v0, Landroid/filterfw/core/MutableFrameFormat;
 
@@ -126,7 +112,6 @@
 
 .method public static createInt16Format(I)Landroid/filterfw/core/MutableFrameFormat;
     .locals 1
-    .param p0    # I
 
     const/4 v0, 0x3
 
@@ -139,8 +124,6 @@
 
 .method public static createInt16Format(II)Landroid/filterfw/core/MutableFrameFormat;
     .locals 1
-    .param p0    # I
-    .param p1    # I
 
     const/4 v0, 0x3
 
@@ -153,7 +136,6 @@
 
 .method public static createInt32Format(I)Landroid/filterfw/core/MutableFrameFormat;
     .locals 1
-    .param p0    # I
 
     const/4 v0, 0x4
 
@@ -166,8 +148,6 @@
 
 .method public static createInt32Format(II)Landroid/filterfw/core/MutableFrameFormat;
     .locals 1
-    .param p0    # I
-    .param p1    # I
 
     const/4 v0, 0x4
 

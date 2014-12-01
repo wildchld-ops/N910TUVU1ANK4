@@ -52,7 +52,7 @@
 
     const/4 v1, 0x3
 
-    invoke-virtual {v0, v1}, Landroid/app/Activity;->showDialog(I)V
+    invoke-virtual {v0, v1}, Lcom/android/phone/EmergencyCallbackModeExitDialog;->showDialog(I)V
 
     iget-object v0, p0, Lcom/android/phone/EmergencyCallbackModeExitDialog$4;->this$0:Lcom/android/phone/EmergencyCallbackModeExitDialog;
 

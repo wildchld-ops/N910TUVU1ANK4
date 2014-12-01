@@ -47,7 +47,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
 
     const-string v2, "android.content.SyncAdapter"
 
@@ -70,9 +69,6 @@
 # virtual methods
 .method public parseServiceAttributes(Landroid/content/res/Resources;Ljava/lang/String;Landroid/util/AttributeSet;)Landroid/content/SyncAdapterType;
     .locals 10
-    .param p1    # Landroid/content/res/Resources;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/util/AttributeSet;
 
     sget-object v0, Lcom/android/internal/R$styleable;->SyncAdapter:[I
 
@@ -167,9 +163,6 @@
 
 .method public bridge synthetic parseServiceAttributes(Landroid/content/res/Resources;Ljava/lang/String;Landroid/util/AttributeSet;)Ljava/lang/Object;
     .locals 1
-    .param p1    # Landroid/content/res/Resources;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/util/AttributeSet;
 
     invoke-virtual {p0, p1, p2, p3}, Landroid/content/SyncAdaptersCache;->parseServiceAttributes(Landroid/content/res/Resources;Ljava/lang/String;Landroid/util/AttributeSet;)Landroid/content/SyncAdapterType;
 

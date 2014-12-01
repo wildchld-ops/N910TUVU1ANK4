@@ -34,16 +34,6 @@
 # direct methods
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;FFFFFIIIF)V
     .locals 11
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # F
-    .param p7    # I
-    .param p8    # I
-    .param p9    # I
-    .param p10    # F
 
     invoke-direct/range {p0 .. p5}, Lcom/sec/android/glview/TwGLView;-><init>(Lcom/sec/android/glview/TwGLContext;FFFF)V
 
@@ -278,17 +268,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;FFFFFIIIIF)V
     .locals 11
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # F
-    .param p7    # I
-    .param p8    # I
-    .param p9    # I
-    .param p10    # I
-    .param p11    # F
 
     invoke-direct/range {p0 .. p5}, Lcom/sec/android/glview/TwGLView;-><init>(Lcom/sec/android/glview/TwGLContext;FFFF)V
 
@@ -533,13 +512,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;FFFFII)V
     .locals 7
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # I
-    .param p7    # I
 
     const/4 v1, 0x0
 
@@ -634,14 +606,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;FFFFIII)V
     .locals 9
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
 
     invoke-direct/range {p0 .. p5}, Lcom/sec/android/glview/TwGLView;-><init>(Lcom/sec/android/glview/TwGLContext;FFFF)V
 
@@ -1152,7 +1116,6 @@
 
 .method public declared-synchronized setHeight(F)V
     .locals 0
-    .param p1    # F
 
     monitor-enter p0
 
@@ -1163,7 +1126,6 @@
 
 .method public setMax(I)V
     .locals 3
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/glview/TwGLProgressBar;->mMax:I
 
@@ -1296,7 +1258,6 @@
 
 .method public setProgress(I)V
     .locals 3
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/glview/TwGLProgressBar;->mProgress:I
 
@@ -1443,8 +1404,6 @@
 
 .method public setSize(FF)V
     .locals 10
-    .param p1    # F
-    .param p2    # F
 
     const/4 v9, 0x1
 
@@ -1642,7 +1601,6 @@
 
 .method public declared-synchronized setWidth(F)V
     .locals 0
-    .param p1    # F
 
     monitor-enter p0
 

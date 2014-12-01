@@ -24,8 +24,6 @@
 
 .method public sign(Loauth/signpost/http/HttpRequest;Loauth/signpost/http/HttpParameters;)Ljava/lang/String;
     .locals 2
-    .param p1    # Loauth/signpost/http/HttpRequest;
-    .param p2    # Loauth/signpost/http/HttpParameters;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Loauth/signpost/exception/OAuthMessageSignerException;

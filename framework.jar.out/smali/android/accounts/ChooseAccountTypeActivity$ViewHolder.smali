@@ -31,7 +31,6 @@
 
 .method synthetic constructor <init>(Landroid/accounts/ChooseAccountTypeActivity$1;)V
     .locals 0
-    .param p1    # Landroid/accounts/ChooseAccountTypeActivity$1;
 
     invoke-direct {p0}, Landroid/accounts/ChooseAccountTypeActivity$ViewHolder;-><init>()V
 

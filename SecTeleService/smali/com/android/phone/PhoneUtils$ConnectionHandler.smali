@@ -125,7 +125,7 @@
 
     const/16 v23, 0x64
 
-    invoke-virtual/range {v22 .. v23}, Landroid/os/Handler;->obtainMessage(I)Landroid/os/Message;
+    invoke-virtual/range {v22 .. v23}, Lcom/android/phone/PhoneUtils$ConnectionHandler;->obtainMessage(I)Landroid/os/Message;
 
     move-result-object v20
 
@@ -168,7 +168,7 @@
 
     move-wide/from16 v2, v23
 
-    invoke-virtual {v0, v1, v2, v3}, Landroid/os/Handler;->sendMessageDelayed(Landroid/os/Message;J)Z
+    invoke-virtual {v0, v1, v2, v3}, Lcom/android/phone/PhoneUtils$ConnectionHandler;->sendMessageDelayed(Landroid/os/Message;J)Z
 
     goto :goto_0
 
@@ -334,7 +334,7 @@
 
     const v23, 0x7f090843
 
-    invoke-virtual/range {v22 .. v23}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual/range {v22 .. v23}, Lcom/android/phone/PhoneGlobals;->getString(I)Ljava/lang/String;
 
     move-result-object v22
 
@@ -456,7 +456,7 @@
 
     move-object/from16 v1, v17
 
-    invoke-virtual {v0, v1}, Landroid/content/ContextWrapper;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {v0, v1}, Lcom/android/phone/PhoneGlobals;->startActivity(Landroid/content/Intent;)V
 
     const/16 v22, 0x0
 
@@ -539,7 +539,7 @@
 
     move-object/from16 v1, v17
 
-    invoke-virtual {v0, v1}, Landroid/content/ContextWrapper;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {v0, v1}, Lcom/android/phone/PhoneGlobals;->startActivity(Landroid/content/Intent;)V
 
     const/16 v22, 0x0
 

@@ -36,7 +36,6 @@
 # virtual methods
 .method public onUpdate(Lcom/android/services/telephony/common/Call;)V
     .locals 1
-    .param p1    # Lcom/android/services/telephony/common/Call;
 
     iget-object v0, p0, Lcom/android/incallui/service/IncomingPopupService$3;->this$0:Lcom/android/incallui/service/IncomingPopupService;
 

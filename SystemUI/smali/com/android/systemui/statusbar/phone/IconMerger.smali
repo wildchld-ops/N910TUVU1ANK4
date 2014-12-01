@@ -26,8 +26,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -68,7 +66,6 @@
 
 .method static synthetic access$000(Lcom/android/systemui/statusbar/phone/IconMerger;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/phone/IconMerger;
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/IconMerger;->mOperatorLogoView:Landroid/view/View;
 
@@ -77,7 +74,6 @@
 
 .method static synthetic access$100(Lcom/android/systemui/statusbar/phone/IconMerger;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/phone/IconMerger;
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/IconMerger;->mCarrierNameView:Landroid/view/View;
 
@@ -86,7 +82,6 @@
 
 .method static synthetic access$200(Lcom/android/systemui/statusbar/phone/IconMerger;)I
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/phone/IconMerger;
 
     iget v0, p0, Lcom/android/systemui/statusbar/phone/IconMerger;->mIconSize:I
 
@@ -95,7 +90,6 @@
 
 .method static synthetic access$300(Lcom/android/systemui/statusbar/phone/IconMerger;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/phone/IconMerger;
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/IconMerger;->mMoreView:Landroid/view/View;
 
@@ -104,7 +98,6 @@
 
 .method private checkOverflow(I)V
     .locals 9
-    .param p1    # I
 
     const/4 v2, 0x1
 
@@ -304,11 +297,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 1
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-super/range {p0 .. p5}, Landroid/widget/LinearLayout;->onLayout(ZIIII)V
 
@@ -321,8 +309,6 @@
 
 .method protected onMeasure(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     invoke-super {p0, p1, p2}, Landroid/widget/LinearLayout;->onMeasure(II)V
 
@@ -347,7 +333,6 @@
 
 .method public setAttCarrierLabel(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     iput-object p1, p0, Lcom/android/systemui/statusbar/phone/IconMerger;->mCarrierNameView:Landroid/view/View;
 
@@ -356,7 +341,6 @@
 
 .method public setOperatorLogoIndicator(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     iput-object p1, p0, Lcom/android/systemui/statusbar/phone/IconMerger;->mOperatorLogoView:Landroid/view/View;
 
@@ -365,7 +349,6 @@
 
 .method public setOverflowIndicator(Landroid/view/View;)V
     .locals 4
-    .param p1    # Landroid/view/View;
 
     iput-object p1, p0, Lcom/android/systemui/statusbar/phone/IconMerger;->mMoreView:Landroid/view/View;
 

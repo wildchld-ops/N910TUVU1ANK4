@@ -54,9 +54,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Landroid/net/nsd/DnsSdTxtRecord;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/net/nsd/DnsSdTxtRecord;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -71,8 +68,6 @@
 
 .method static synthetic access$002(Landroid/net/nsd/NsdServiceInfo;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Landroid/net/nsd/NsdServiceInfo;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/net/nsd/NsdServiceInfo;->mServiceName:Ljava/lang/String;
 
@@ -81,8 +76,6 @@
 
 .method static synthetic access$102(Landroid/net/nsd/NsdServiceInfo;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Landroid/net/nsd/NsdServiceInfo;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/net/nsd/NsdServiceInfo;->mServiceType:Ljava/lang/String;
 
@@ -91,8 +84,6 @@
 
 .method static synthetic access$202(Landroid/net/nsd/NsdServiceInfo;Landroid/net/nsd/DnsSdTxtRecord;)Landroid/net/nsd/DnsSdTxtRecord;
     .locals 0
-    .param p0    # Landroid/net/nsd/NsdServiceInfo;
-    .param p1    # Landroid/net/nsd/DnsSdTxtRecord;
 
     iput-object p1, p0, Landroid/net/nsd/NsdServiceInfo;->mTxtRecord:Landroid/net/nsd/DnsSdTxtRecord;
 
@@ -101,8 +92,6 @@
 
 .method static synthetic access$302(Landroid/net/nsd/NsdServiceInfo;Ljava/net/InetAddress;)Ljava/net/InetAddress;
     .locals 0
-    .param p0    # Landroid/net/nsd/NsdServiceInfo;
-    .param p1    # Ljava/net/InetAddress;
 
     iput-object p1, p0, Landroid/net/nsd/NsdServiceInfo;->mHost:Ljava/net/InetAddress;
 
@@ -111,8 +100,6 @@
 
 .method static synthetic access$402(Landroid/net/nsd/NsdServiceInfo;I)I
     .locals 0
-    .param p0    # Landroid/net/nsd/NsdServiceInfo;
-    .param p1    # I
 
     iput p1, p0, Landroid/net/nsd/NsdServiceInfo;->mPort:I
 
@@ -171,7 +158,6 @@
 
 .method public setHost(Ljava/net/InetAddress;)V
     .locals 0
-    .param p1    # Ljava/net/InetAddress;
 
     iput-object p1, p0, Landroid/net/nsd/NsdServiceInfo;->mHost:Ljava/net/InetAddress;
 
@@ -180,7 +166,6 @@
 
 .method public setPort(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/net/nsd/NsdServiceInfo;->mPort:I
 
@@ -189,7 +174,6 @@
 
 .method public setServiceName(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/net/nsd/NsdServiceInfo;->mServiceName:Ljava/lang/String;
 
@@ -198,7 +182,6 @@
 
 .method public setServiceType(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/net/nsd/NsdServiceInfo;->mServiceType:Ljava/lang/String;
 
@@ -207,7 +190,6 @@
 
 .method public setTxtRecord(Landroid/net/nsd/DnsSdTxtRecord;)V
     .locals 1
-    .param p1    # Landroid/net/nsd/DnsSdTxtRecord;
 
     new-instance v0, Landroid/net/nsd/DnsSdTxtRecord;
 
@@ -292,8 +274,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v0, p0, Landroid/net/nsd/NsdServiceInfo;->mServiceName:Ljava/lang/String;
 

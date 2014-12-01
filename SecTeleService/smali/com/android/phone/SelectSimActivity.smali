@@ -85,9 +85,9 @@
 
     const/4 v6, 0x1
 
-    invoke-virtual {p0, v6}, Landroid/app/Activity;->requestWindowFeature(I)Z
+    invoke-virtual {p0, v6}, Lcom/android/phone/SelectSimActivity;->requestWindowFeature(I)Z
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
+    invoke-virtual {p0}, Lcom/android/phone/SelectSimActivity;->getWindow()Landroid/view/Window;
 
     move-result-object v6
 
@@ -103,7 +103,7 @@
 
     iput v6, v4, Landroid/view/WindowManager$LayoutParams;->flags:I
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
+    invoke-virtual {p0}, Lcom/android/phone/SelectSimActivity;->getWindow()Landroid/view/Window;
 
     move-result-object v6
 
@@ -119,9 +119,9 @@
 
     iget-object v6, p0, Lcom/android/phone/SelectSimActivity;->mBroadcastReceiver:Landroid/content/BroadcastReceiver;
 
-    invoke-virtual {p0, v6, v2}, Landroid/content/ContextWrapper;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
+    invoke-virtual {p0, v6, v2}, Lcom/android/phone/SelectSimActivity;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/phone/SelectSimActivity;->getIntent()Landroid/content/Intent;
 
     move-result-object v1
 
@@ -248,7 +248,7 @@
 
     iget-object v0, p0, Lcom/android/phone/SelectSimActivity;->mBroadcastReceiver:Landroid/content/BroadcastReceiver;
 
-    invoke-virtual {p0, v0}, Landroid/content/ContextWrapper;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/SelectSimActivity;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
     sget-object v0, Lcom/android/phone/SelectSimActivity;->TAG:Ljava/lang/String;
 

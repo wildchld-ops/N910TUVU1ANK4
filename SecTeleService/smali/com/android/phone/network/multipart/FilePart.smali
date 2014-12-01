@@ -203,7 +203,7 @@
 
     invoke-interface {v1, v2}, Lorg/apache/commons/logging/Log;->trace(Ljava/lang/Object;)V
 
-    invoke-super {p0, p1}, Lcom/android/phone/network/multipart/Part;->sendDispositionHeader(Ljava/io/OutputStream;)V
+    invoke-super {p0, p1}, Lcom/android/phone/network/multipart/PartBase;->sendDispositionHeader(Ljava/io/OutputStream;)V
 
     iget-object v1, p0, Lcom/android/phone/network/multipart/FilePart;->source:Lcom/android/phone/network/multipart/PartSource;
 

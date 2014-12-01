@@ -14,8 +14,6 @@
 
 .method public static createDragToOpenListener(Ljava/lang/Object;Landroid/view/View;)Landroid/view/View$OnTouchListener;
     .locals 1
-    .param p0    # Ljava/lang/Object;
-    .param p1    # Landroid/view/View;
 
     check-cast p0, Landroid/widget/ListPopupWindow;
 

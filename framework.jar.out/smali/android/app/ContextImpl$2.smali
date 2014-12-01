@@ -27,7 +27,6 @@
 # virtual methods
 .method public getService(Landroid/app/ContextImpl;)Ljava/lang/Object;
     .locals 1
-    .param p1    # Landroid/app/ContextImpl;
 
     invoke-static {p1}, Landroid/view/accessibility/AccessibilityManager;->getInstance(Landroid/content/Context;)Landroid/view/accessibility/AccessibilityManager;
 

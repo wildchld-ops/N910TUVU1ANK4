@@ -43,7 +43,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     const/4 v2, 0x0
 
@@ -84,8 +83,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v2, 0x0
 
@@ -126,9 +123,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v2, 0x0
 
@@ -169,7 +163,6 @@
 
 .method private handleEvent(Landroid/view/MotionEvent;)Z
     .locals 7
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v6, 0x1
 
@@ -323,7 +316,6 @@
 
 .method private processCallCommand(I)V
     .locals 4
-    .param p1    # I
 
     const/4 v3, 0x2
 
@@ -413,7 +405,6 @@
 
 .method private sendNoticeIntent(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -486,8 +477,6 @@
 
 .method private updateMovingCircle(FF)V
     .locals 5
-    .param p1    # F
-    .param p2    # F
 
     const-string v2, "SecondScreenIncomingHandle"
 
@@ -558,8 +547,6 @@
 # virtual methods
 .method public getTargetProximityRatio(FF)D
     .locals 14
-    .param p1    # F
-    .param p2    # F
 
     iget-object v10, p0, Lcom/android/incallui/cocktail/SecondScreenIncomingHandle;->mContext:Landroid/content/Context;
 
@@ -638,7 +625,6 @@
 
 .method public inflateHandle(I)V
     .locals 5
-    .param p1    # I
 
     const v4, 0x7f020067
 
@@ -762,7 +748,6 @@
 
 .method public isInTabCircle(Landroid/view/MotionEvent;)Z
     .locals 13
-    .param p1    # Landroid/view/MotionEvent;
 
     const v11, 0x7f0d020d
 
@@ -893,8 +878,6 @@
 
 .method public isThresholdReached(FF)Z
     .locals 7
-    .param p1    # F
-    .param p2    # F
 
     const-wide v0, 0x3fefae147ae147aeL
 
@@ -943,7 +926,6 @@
 
 .method public onHoverEvent(Landroid/view/MotionEvent;)Z
     .locals 5
-    .param p1    # Landroid/view/MotionEvent;
 
     const-string v2, "SecondScreenIncomingHandle"
 
@@ -1029,7 +1011,6 @@
 
 .method public onInterceptHoverEvent(Landroid/view/MotionEvent;)Z
     .locals 4
-    .param p1    # Landroid/view/MotionEvent;
 
     const-string v2, "SecondScreenIncomingHandle"
 
@@ -1082,7 +1063,6 @@
 
 .method public onInterceptTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 6
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v5, 0x1
 
@@ -1132,7 +1112,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-direct {p0, p1}, Lcom/android/incallui/cocktail/SecondScreenIncomingHandle;->handleEvent(Landroid/view/MotionEvent;)Z
 
@@ -1143,7 +1122,6 @@
 
 .method public processMoveEvent(Landroid/view/MotionEvent;)V
     .locals 3
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getX()F
 
@@ -1180,7 +1158,6 @@
 
 .method public setParentView(Lcom/android/incallui/cocktail/SecondScreenPanelView;)V
     .locals 0
-    .param p1    # Lcom/android/incallui/cocktail/SecondScreenPanelView;
 
     iput-object p1, p0, Lcom/android/incallui/cocktail/SecondScreenIncomingHandle;->mParentView:Lcom/android/incallui/cocktail/SecondScreenPanelView;
 
@@ -1450,7 +1427,6 @@
 
 .method public declared-synchronized vibrate(J)V
     .locals 2
-    .param p1    # J
 
     monitor-enter p0
 

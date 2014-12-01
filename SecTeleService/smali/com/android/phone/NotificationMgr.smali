@@ -778,7 +778,7 @@
 
     if-lt v7, v12, :cond_3
 
-    const v3, 0x7f02022b
+    const v3, 0x7f02022a
 
     invoke-virtual {v1, v9, v3}, Landroid/widget/RemoteViews;->setImageViewResource(II)V
 
@@ -806,7 +806,7 @@
 
     if-lt v3, v12, :cond_5
 
-    const v3, 0x7f02022b
+    const v3, 0x7f02022a
 
     invoke-virtual {v1, v9, v3}, Landroid/widget/RemoteViews;->setImageViewResource(II)V
 
@@ -2062,7 +2062,7 @@
     :cond_3
     const v6, 0x7f0a0086
 
-    const v7, 0x7f02022b
+    const v7, 0x7f02022a
 
     invoke-virtual {v5, v6, v7}, Landroid/widget/RemoteViews;->setImageViewResource(II)V
 
@@ -3403,7 +3403,7 @@
 
     move-result-object v0
 
-    const v5, 0x7f02024f
+    const v5, 0x7f02024e
 
     invoke-virtual {v0, v5}, Landroid/app/Notification$Builder;->setSmallIcon(I)Landroid/app/Notification$Builder;
 
@@ -3441,7 +3441,7 @@
 
     invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
 
-    const v0, 0x7f02024f
+    const v0, 0x7f02024e
 
     invoke-virtual {v4, v0}, Landroid/app/Notification$Builder;->setSmallIcon(I)Landroid/app/Notification$Builder;
 
@@ -4642,7 +4642,7 @@
 
     new-instance v3, Landroid/app/Notification;
 
-    const v4, 0x7f020249
+    const v4, 0x7f020248
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
@@ -5743,7 +5743,7 @@
 
     move-result-object v1
 
-    const v4, 0x7f02024e
+    const v4, 0x7f02024d
 
     invoke-virtual {v3, v4}, Landroid/app/Notification$Builder;->setSmallIcon(I)Landroid/app/Notification$Builder;
 
@@ -5862,7 +5862,7 @@
 
     invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
-    iget v2, p0, Lcom/android/phone/NotificationMgr;->mNumberMissedCalls:I
+    sget v2, Lcom/android/phone/NotificationMgr;->covermissedCallCount:I
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -6131,7 +6131,7 @@
 
     if-lt v2, v12, :cond_5
 
-    const v3, 0x7f02022b
+    const v3, 0x7f02022a
 
     invoke-virtual {v1, v11, v3}, Landroid/widget/RemoteViews;->setImageViewResource(II)V
 
@@ -6156,7 +6156,7 @@
     :cond_6
     if-lt v2, v12, :cond_7
 
-    const v3, 0x7f02022b
+    const v3, 0x7f02022a
 
     invoke-virtual {v1, v11, v3}, Landroid/widget/RemoteViews;->setImageViewResource(II)V
 
@@ -7046,7 +7046,7 @@
     :goto_2
     new-instance v1, Landroid/app/Notification;
 
-    const v2, 0x7f02028b
+    const v2, 0x7f02028a
 
     const/4 v3, 0x0
 
@@ -7270,7 +7270,7 @@
     :goto_3
     new-instance v2, Landroid/app/Notification;
 
-    const v4, 0x7f02028b
+    const v4, 0x7f02028a
 
     const/4 v5, 0x0
 
@@ -7440,7 +7440,7 @@
 
     const/4 v6, 0x0
 
-    const v5, 0x7f02028b
+    const v5, 0x7f02028a
 
     invoke-static {}, Lcom/android/phone/PhoneUtils;->hasVTSupport()Z
 
@@ -8421,7 +8421,7 @@
 
     if-ne v0, v1, :cond_5
 
-    const v0, 0x7f020287
+    const v0, 0x7f020286
 
     :goto_0
     iget-object v1, p0, Lcom/android/phone/NotificationMgr;->mContext:Landroid/content/Context;
@@ -9923,7 +9923,7 @@
 
     invoke-direct {v4, v5}, Landroid/app/Notification$Builder;-><init>(Landroid/content/Context;)V
 
-    const v5, 0x7f020286
+    const v5, 0x7f020285
 
     invoke-virtual {v4, v5}, Landroid/app/Notification$Builder;->setSmallIcon(I)Landroid/app/Notification$Builder;
 
@@ -10112,7 +10112,7 @@
 
     const-string v2, "setBackgroundColor"
 
-    const v4, 0x7f02022c
+    const v4, 0x7f02022b
 
     invoke-virtual {v0, v1, v2, v4}, Landroid/widget/RemoteViews;->setInt(ILjava/lang/String;I)V
 

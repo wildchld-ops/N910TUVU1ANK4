@@ -41,8 +41,6 @@
 
 .method synthetic constructor <init>(Lcom/android/server/enterprise/general/MiscPolicy;Lcom/android/server/enterprise/general/MiscPolicy$1;)V
     .locals 0
-    .param p1    # Lcom/android/server/enterprise/general/MiscPolicy;
-    .param p2    # Lcom/android/server/enterprise/general/MiscPolicy$1;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/general/MiscPolicy$SystemFontChanger;-><init>(Lcom/android/server/enterprise/general/MiscPolicy;)V
 
@@ -51,8 +49,6 @@
 
 .method private changeFont(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 23
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v14, 0x0
 
@@ -917,8 +913,6 @@
 
 .method protected savePreferences(Ljava/lang/String;I)V
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v3, 0x0
 
@@ -1023,8 +1017,6 @@
 
 .method public setSystemActiveFont(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 20
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const-string v18, "MiscPolicy"
 

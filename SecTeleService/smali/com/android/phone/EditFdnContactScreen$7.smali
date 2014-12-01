@@ -47,7 +47,7 @@
 
     iget-object v1, p0, Lcom/android/phone/EditFdnContactScreen$7;->this$0:Lcom/android/phone/EditFdnContactScreen;
 
-    invoke-virtual {v1}, Landroid/app/Fragment;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {v1}, Lcom/android/phone/EditFdnContactScreen;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 

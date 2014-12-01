@@ -349,7 +349,6 @@
 
 .method private DoShellCmd(Ljava/lang/String;)I
     .locals 9
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x1
 
@@ -471,8 +470,6 @@
 
 .method public static MTP_LOG_PRINT(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     sget-boolean v0, Landroid/mtp/MTPJNIInterface;->isMtpLogOn:Z
 
@@ -494,7 +491,6 @@
 
 .method static synthetic access$100(Landroid/mtp/MTPJNIInterface;)Ljava/lang/String;
     .locals 1
-    .param p0    # Landroid/mtp/MTPJNIInterface;
 
     invoke-direct {p0}, Landroid/mtp/MTPJNIInterface;->getTimeToString()Ljava/lang/String;
 
@@ -505,8 +501,6 @@
 
 .method static synthetic access$200(Landroid/mtp/MTPJNIInterface;Ljava/lang/String;)I
     .locals 1
-    .param p0    # Landroid/mtp/MTPJNIInterface;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Landroid/mtp/MTPJNIInterface;->DoShellCmd(Ljava/lang/String;)I
 
@@ -520,8 +514,6 @@
 
 .method private computeSampleSize(Landroid/graphics/BitmapFactory$Options;I)I
     .locals 7
-    .param p1    # Landroid/graphics/BitmapFactory$Options;
-    .param p2    # I
 
     const/4 v5, 0x1
 
@@ -575,7 +567,6 @@
 
 .method private getExifOrientation(Ljava/lang/String;)I
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     const/4 v5, -0x1
 
@@ -643,7 +634,6 @@
 
 .method private getImageThumbBitmap(Ljava/lang/String;)Landroid/graphics/Bitmap;
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     new-instance v1, Landroid/graphics/Matrix;
 
@@ -721,8 +711,6 @@
 
 .method private getSampleSizeBitmap(ILjava/lang/String;)Landroid/graphics/Bitmap;
     .locals 4
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     new-instance v2, Landroid/graphics/BitmapFactory$Options;
 
@@ -903,7 +891,6 @@
 
 .method private getVideoThumbBitmap(Ljava/lang/String;)Landroid/graphics/Bitmap;
     .locals 10
-    .param p1    # Ljava/lang/String;
 
     const/high16 v9, 0x43800000
 
@@ -1090,8 +1077,6 @@
 
 .method private rotate(Landroid/graphics/Bitmap;I)Landroid/graphics/Bitmap;
     .locals 9
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # I
 
     const/high16 v3, 0x40000000
 
@@ -1176,11 +1161,6 @@
 
 .method private transform(Landroid/graphics/Matrix;Landroid/graphics/Bitmap;IIZ)Landroid/graphics/Bitmap;
     .locals 14
-    .param p1    # Landroid/graphics/Matrix;
-    .param p2    # Landroid/graphics/Bitmap;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Z
 
     if-nez p2, :cond_1
 
@@ -1328,7 +1308,6 @@
 
 .method public GetMediaObject(Ljava/lang/String;)[Ljava/lang/Object;
     .locals 14
-    .param p1    # Ljava/lang/String;
 
     sget-object v8, Landroid/provider/MediaStore$Audio$Media;->EXTERNAL_CONTENT_URI:Landroid/net/Uri;
 
@@ -1548,7 +1527,6 @@
 
 .method public SetCryptionKey(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "MTPJNIInterface"
 
@@ -1563,7 +1541,6 @@
 
 .method public UpdateMediaDB(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     const-string v2, "MTPJNIInterface"
 
@@ -1634,8 +1611,6 @@
 
 .method public addPlaylist(Ljava/lang/String;Ljava/lang/String;)I
     .locals 20
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const-string v11, "4"
 
@@ -2070,9 +2045,6 @@
 
 .method public addtoPlaylist(Ljava/lang/String;Ljava/lang/String;I)I
     .locals 26
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     const-string v2, "MTPJNIInterface"
 
@@ -3013,7 +2985,6 @@
 
 .method public deleteAllItemofPlaylist(Ljava/lang/String;)V
     .locals 11
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -3251,7 +3222,6 @@
 
 .method public deletePlaylist(Ljava/lang/String;)I
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const-string v2, "MTPJNIInterface"
 
@@ -3398,7 +3368,6 @@
 
 .method public deletefromMediaPlayer(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     const/4 v5, 0x0
 
@@ -3697,8 +3666,6 @@
 
 .method public getColumnData(Landroid/database/Cursor;[Landroid/mtp/MediaObject;)V
     .locals 54
-    .param p1    # Landroid/database/Cursor;
-    .param p2    # [Landroid/mtp/MediaObject;
 
     const/16 v44, 0x0
 
@@ -4527,7 +4494,6 @@
 
 .method public getExternalStorageStatus(Ljava/lang/String;)I
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -4622,7 +4588,6 @@
 
 .method public getGadgetResetStatus(I)I
     .locals 3
-    .param p1    # I
 
     const-string v0, "MTPJNIInterface"
 
@@ -4655,7 +4620,6 @@
 
 .method public getMediaScannerStatus(I)I
     .locals 3
-    .param p1    # I
 
     const-string v0, "MTPJNIInterface"
 
@@ -4704,8 +4668,6 @@
 
 .method public getObjectHandle(Ljava/lang/String;I)I
     .locals 15
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const-string v7, "media"
 
@@ -5087,7 +5049,6 @@
 
 .method public getPathFromObjecthandle(I)Ljava/lang/String;
     .locals 13
-    .param p1    # I
 
     const/4 v12, 0x0
 
@@ -5295,7 +5256,6 @@
 
 .method public getPlaylistId(Ljava/lang/String;)I
     .locals 9
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -5430,8 +5390,6 @@
 
 .method public getThumbnail(Ljava/lang/String;I)I
     .locals 16
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v15, 0x0
 
@@ -5836,7 +5794,6 @@
 
 .method public getdeviceName(I)Ljava/lang/String;
     .locals 3
-    .param p1    # I
 
     sget-object v0, Landroid/mtp/MTPJNIInterface;->mcontext:Landroid/content/Context;
 
@@ -5898,8 +5855,6 @@
 
 .method public mtpCommands(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     const-string v0, "MTPJNIInterface"
 
@@ -5942,7 +5897,6 @@
 
 .method public noOfSongsInPlaylist(Ljava/lang/String;)Ljava/lang/String;
     .locals 14
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -6185,7 +6139,6 @@
 
 .method public notifyMTPStack(I)V
     .locals 5
-    .param p1    # I
 
     const/4 v4, 0x1
 
@@ -6254,9 +6207,6 @@
 
 .method public renamePlaylist(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 12
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const/4 v5, 0x0
 
@@ -6529,7 +6479,6 @@
 
 .method public sendObjectAdded(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, ".pla"
 
@@ -6547,7 +6496,6 @@
 
 .method public sendObjectPropChanged(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, ".pla"
 
@@ -6565,7 +6513,6 @@
 
 .method public sendObjectRemoved(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, ".pla"
 
@@ -6583,7 +6530,6 @@
 
 .method public sendPlaAdded(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "MTPJNIInterface"
 
@@ -6620,7 +6566,6 @@
 
 .method public sendPlaRemoved(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const-string v1, ".pla"
 
@@ -6698,9 +6643,6 @@
 
 .method public sendkiesmessage(IILjava/lang/String;)I
     .locals 12
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     const/4 v11, 0x1
 
@@ -6894,7 +6836,6 @@
 
 .method public setContext(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     sput-object p1, Landroid/mtp/MTPJNIInterface;->mcontext:Landroid/content/Context;
 
@@ -6925,7 +6866,6 @@
 
 .method public setHandler(Landroid/os/Handler;)V
     .locals 0
-    .param p1    # Landroid/os/Handler;
 
     sput-object p1, Landroid/mtp/MTPJNIInterface;->mHandler:Landroid/os/Handler;
 
@@ -6934,7 +6874,6 @@
 
 .method public setMediaScannerStatus(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "MTPJNIInterface"
 
@@ -6987,7 +6926,6 @@
 
 .method public songPresentCheck(Ljava/lang/String;)I
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -7065,7 +7003,6 @@
 
 .method public songsPathOfPlaylist(Ljava/lang/String;)Ljava/lang/String;
     .locals 15
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual/range {p0 .. p1}, Landroid/mtp/MTPJNIInterface;->getPlaylistId(Ljava/lang/String;)I
 
@@ -7327,7 +7264,6 @@
 
 .method public updateUiState(I)V
     .locals 2
-    .param p1    # I
 
     sget-object v1, Landroid/mtp/MTPJNIInterface;->mHandler:Landroid/os/Handler;
 

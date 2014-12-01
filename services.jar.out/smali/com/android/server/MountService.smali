@@ -282,7 +282,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 11
-    .param p1    # Landroid/content/Context;
 
     const/4 v2, 0x1
 
@@ -619,7 +618,6 @@
 
 .method private ApplyCurrentSdCardPolicy(Z)V
     .locals 11
-    .param p1    # Z
 
     invoke-direct {p0}, Lcom/android/server/MountService;->GetCurrentPolicy()Z
 
@@ -823,7 +821,6 @@
 
 .method static synthetic access$000(Lcom/android/server/MountService;)Lcom/android/server/MountService$ObbActionHandler;
     .locals 1
-    .param p0    # Lcom/android/server/MountService;
 
     iget-object v0, p0, Lcom/android/server/MountService;->mObbActionHandler:Lcom/android/server/MountService$ObbActionHandler;
 
@@ -832,10 +829,6 @@
 
 .method static synthetic access$100(Lcom/android/server/MountService;Ljava/lang/String;ZZ)I
     .locals 1
-    .param p0    # Lcom/android/server/MountService;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # Z
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/server/MountService;->doUnmountVolume(Ljava/lang/String;ZZ)I
 
@@ -846,8 +839,6 @@
 
 .method static synthetic access$1000(Lcom/android/server/MountService;Landroid/os/storage/StorageVolume;)V
     .locals 0
-    .param p0    # Lcom/android/server/MountService;
-    .param p1    # Landroid/os/storage/StorageVolume;
 
     invoke-direct {p0, p1}, Lcom/android/server/MountService;->removeVolumeLocked(Landroid/os/storage/StorageVolume;)V
 
@@ -856,8 +847,6 @@
 
 .method static synthetic access$1100(Lcom/android/server/MountService;Z)V
     .locals 0
-    .param p0    # Lcom/android/server/MountService;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/MountService;->notifyShareAvailabilityChange(Z)V
 
@@ -866,7 +855,6 @@
 
 .method static synthetic access$1200(Lcom/android/server/MountService;)V
     .locals 0
-    .param p0    # Lcom/android/server/MountService;
 
     invoke-direct {p0}, Lcom/android/server/MountService;->waitForReady()V
 
@@ -875,7 +863,6 @@
 
 .method static synthetic access$1300(Lcom/android/server/MountService;)Lcom/android/server/NativeDaemonConnector;
     .locals 1
-    .param p0    # Lcom/android/server/MountService;
 
     iget-object v0, p0, Lcom/android/server/MountService;->mConnector:Lcom/android/server/NativeDaemonConnector;
 
@@ -884,7 +871,6 @@
 
 .method static synthetic access$1400(Lcom/android/server/MountService;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/server/MountService;
 
     iget-object v0, p0, Lcom/android/server/MountService;->mListeners:Ljava/util/ArrayList;
 
@@ -893,9 +879,6 @@
 
 .method static synthetic access$1500(Lcom/android/server/MountService;Landroid/os/storage/StorageVolume;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/server/MountService;
-    .param p1    # Landroid/os/storage/StorageVolume;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/MountService;->updatePublicVolumeState(Landroid/os/storage/StorageVolume;Ljava/lang/String;)V
 
@@ -904,7 +887,6 @@
 
 .method static synthetic access$1600(Lcom/android/server/MountService;)Landroid/os/storage/StorageVolume;
     .locals 1
-    .param p0    # Lcom/android/server/MountService;
 
     invoke-direct {p0}, Lcom/android/server/MountService;->getPrimaryPhysicalVolume()Landroid/os/storage/StorageVolume;
 
@@ -915,7 +897,6 @@
 
 .method static synthetic access$1700(Lcom/android/server/MountService;)Ljava/util/concurrent/CountDownLatch;
     .locals 1
-    .param p0    # Lcom/android/server/MountService;
 
     iget-object v0, p0, Lcom/android/server/MountService;->mConnectedSignal:Ljava/util/concurrent/CountDownLatch;
 
@@ -924,7 +905,6 @@
 
 .method static synthetic access$1800(Lcom/android/server/MountService;)Ljava/util/concurrent/CountDownLatch;
     .locals 1
-    .param p0    # Lcom/android/server/MountService;
 
     iget-object v0, p0, Lcom/android/server/MountService;->mAsecsScanned:Ljava/util/concurrent/CountDownLatch;
 
@@ -933,7 +913,6 @@
 
 .method static synthetic access$1900(Lcom/android/server/MountService;)Ljava/util/LinkedHashMap;
     .locals 1
-    .param p0    # Lcom/android/server/MountService;
 
     iget-object v0, p0, Lcom/android/server/MountService;->mVolumePendingStates:Ljava/util/LinkedHashMap;
 
@@ -942,10 +921,6 @@
 
 .method static synthetic access$200(Lcom/android/server/MountService;Ljava/lang/String;Ljava/lang/String;Z)V
     .locals 0
-    .param p0    # Lcom/android/server/MountService;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/server/MountService;->doShareUnshareVolume(Ljava/lang/String;Ljava/lang/String;Z)V
 
@@ -954,8 +929,6 @@
 
 .method static synthetic access$2000(Lcom/android/server/MountService;Ljava/lang/String;)I
     .locals 1
-    .param p0    # Lcom/android/server/MountService;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/MountService;->doMountVolume(Ljava/lang/String;)I
 
@@ -966,7 +939,6 @@
 
 .method static synthetic access$2100(Lcom/android/server/MountService;)Lcom/android/internal/app/IMediaContainerService;
     .locals 1
-    .param p0    # Lcom/android/server/MountService;
 
     iget-object v0, p0, Lcom/android/server/MountService;->mContainerService:Lcom/android/internal/app/IMediaContainerService;
 
@@ -975,8 +947,6 @@
 
 .method static synthetic access$2102(Lcom/android/server/MountService;Lcom/android/internal/app/IMediaContainerService;)Lcom/android/internal/app/IMediaContainerService;
     .locals 0
-    .param p0    # Lcom/android/server/MountService;
-    .param p1    # Lcom/android/internal/app/IMediaContainerService;
 
     iput-object p1, p0, Lcom/android/server/MountService;->mContainerService:Lcom/android/internal/app/IMediaContainerService;
 
@@ -985,7 +955,6 @@
 
 .method static synthetic access$2200(Lcom/android/server/MountService;)Ljava/util/Map;
     .locals 1
-    .param p0    # Lcom/android/server/MountService;
 
     iget-object v0, p0, Lcom/android/server/MountService;->mObbMounts:Ljava/util/Map;
 
@@ -994,7 +963,6 @@
 
 .method static synthetic access$2300(Lcom/android/server/MountService;)Ljava/util/Map;
     .locals 1
-    .param p0    # Lcom/android/server/MountService;
 
     iget-object v0, p0, Lcom/android/server/MountService;->mObbPathToStateMap:Ljava/util/Map;
 
@@ -1003,8 +971,6 @@
 
 .method static synthetic access$2400(Lcom/android/server/MountService;Lcom/android/server/MountService$ObbState;)V
     .locals 0
-    .param p0    # Lcom/android/server/MountService;
-    .param p1    # Lcom/android/server/MountService$ObbState;
 
     invoke-direct {p0, p1}, Lcom/android/server/MountService;->removeObbStateLocked(Lcom/android/server/MountService$ObbState;)V
 
@@ -1013,7 +979,6 @@
 
 .method static synthetic access$2500(Lcom/android/server/MountService;)Lcom/android/server/MountService$DefaultContainerConnection;
     .locals 1
-    .param p0    # Lcom/android/server/MountService;
 
     iget-object v0, p0, Lcom/android/server/MountService;->mDefContainerConn:Lcom/android/server/MountService$DefaultContainerConnection;
 
@@ -1022,7 +987,6 @@
 
 .method static synthetic access$2600(Lcom/android/server/MountService;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/server/MountService;
 
     iget-object v0, p0, Lcom/android/server/MountService;->mContext:Landroid/content/Context;
 
@@ -1031,7 +995,6 @@
 
 .method static synthetic access$2700(Lcom/android/server/MountService;)V
     .locals 0
-    .param p0    # Lcom/android/server/MountService;
 
     invoke-direct {p0}, Lcom/android/server/MountService;->warnOnNotMounted()V
 
@@ -1040,9 +1003,6 @@
 
 .method static synthetic access$2800(Lcom/android/server/MountService;Ljava/lang/String;I)Z
     .locals 1
-    .param p0    # Lcom/android/server/MountService;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/MountService;->isUidOwnerOfPackageOrSystem(Ljava/lang/String;I)Z
 
@@ -1053,8 +1013,6 @@
 
 .method static synthetic access$2900(Lcom/android/server/MountService;Lcom/android/server/MountService$ObbState;)V
     .locals 0
-    .param p0    # Lcom/android/server/MountService;
-    .param p1    # Lcom/android/server/MountService$ObbState;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1068,7 +1026,6 @@
 
 .method static synthetic access$300(Lcom/android/server/MountService;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Lcom/android/server/MountService;
 
     iget-object v0, p0, Lcom/android/server/MountService;->mVolumesLock:Ljava/lang/Object;
 
@@ -1077,7 +1034,6 @@
 
 .method static synthetic access$3000(Lcom/android/server/MountService;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Lcom/android/server/MountService;
 
     iget-object v0, p0, Lcom/android/server/MountService;->mPendingIntentLock:Ljava/lang/Object;
 
@@ -1086,8 +1042,6 @@
 
 .method static synthetic access$3102(Lcom/android/server/MountService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/MountService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/MountService;->mBooted:Z
 
@@ -1096,7 +1050,6 @@
 
 .method static synthetic access$3200(Lcom/android/server/MountService;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/server/MountService;
 
     iget-object v0, p0, Lcom/android/server/MountService;->mPendingIntent:Ljava/util/ArrayList;
 
@@ -1105,7 +1058,6 @@
 
 .method static synthetic access$3300(Lcom/android/server/MountService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/MountService;
 
     invoke-direct {p0}, Lcom/android/server/MountService;->GetCurrentPolicy()Z
 
@@ -1116,8 +1068,6 @@
 
 .method static synthetic access$3400(Lcom/android/server/MountService;Z)V
     .locals 0
-    .param p0    # Lcom/android/server/MountService;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/MountService;->ApplyCurrentSdCardPolicy(Z)V
 
@@ -1126,7 +1076,6 @@
 
 .method static synthetic access$400(Lcom/android/server/MountService;)Ljava/util/HashMap;
     .locals 1
-    .param p0    # Lcom/android/server/MountService;
 
     iget-object v0, p0, Lcom/android/server/MountService;->mVolumesByPath:Ljava/util/HashMap;
 
@@ -1135,7 +1084,6 @@
 
 .method static synthetic access$500(Lcom/android/server/MountService;)Lcom/android/server/pm/PackageManagerService;
     .locals 1
-    .param p0    # Lcom/android/server/MountService;
 
     iget-object v0, p0, Lcom/android/server/MountService;->mPms:Lcom/android/server/pm/PackageManagerService;
 
@@ -1144,7 +1092,6 @@
 
 .method static synthetic access$600(Lcom/android/server/MountService;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/server/MountService;
 
     iget-object v0, p0, Lcom/android/server/MountService;->mHandler:Landroid/os/Handler;
 
@@ -1153,7 +1100,6 @@
 
 .method static synthetic access$700(Lcom/android/server/MountService;)V
     .locals 0
-    .param p0    # Lcom/android/server/MountService;
 
     invoke-direct {p0}, Lcom/android/server/MountService;->handleSystemReady()V
 
@@ -1162,9 +1108,6 @@
 
 .method static synthetic access$800(Lcom/android/server/MountService;Landroid/os/UserHandle;Z)V
     .locals 0
-    .param p0    # Lcom/android/server/MountService;
-    .param p1    # Landroid/os/UserHandle;
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/MountService;->createEmulatedVolumeForUserLocked(Landroid/os/UserHandle;Z)V
 
@@ -1173,7 +1116,6 @@
 
 .method static synthetic access$900(Lcom/android/server/MountService;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/server/MountService;
 
     iget-object v0, p0, Lcom/android/server/MountService;->mVolumes:Ljava/util/ArrayList;
 
@@ -1182,7 +1124,6 @@
 
 .method public static addEscapeChar(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     const/4 v1, -0x1
 
@@ -1230,7 +1171,6 @@
 
 .method private addObbStateLocked(Lcom/android/server/MountService$ObbState;)V
     .locals 7
-    .param p1    # Lcom/android/server/MountService$ObbState;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1332,7 +1272,6 @@
 
 .method private addVolumeLocked(Landroid/os/storage/StorageVolume;)V
     .locals 4
-    .param p1    # Landroid/os/storage/StorageVolume;
 
     const-string v1, "MountService"
 
@@ -1416,9 +1355,6 @@
 
 .method public static buildObbPath(Ljava/lang/String;IZ)Ljava/lang/String;
     .locals 9
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v8, 0x0
 
@@ -1623,7 +1559,6 @@
 
 .method private cleanupSercureContainerList(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     iget-object v3, p0, Lcom/android/server/MountService;->mAsecMountSet:Ljava/util/HashSet;
 
@@ -1716,8 +1651,6 @@
 
 .method private createEmulatedVolumeForUserLocked(Landroid/os/UserHandle;Z)V
     .locals 6
-    .param p1    # Landroid/os/UserHandle;
-    .param p2    # Z
 
     iget-object v3, p0, Lcom/android/server/MountService;->mEmulatedTemplate:Landroid/os/storage/StorageVolume;
 
@@ -1813,7 +1746,6 @@
 
 .method private doFormatVolume(Ljava/lang/String;)I
     .locals 10
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -1907,8 +1839,6 @@
 
 .method private doGetVolumeShared(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -2003,7 +1933,6 @@
 
 .method private doMountVolume(Ljava/lang/String;)I
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "mounting"
 
@@ -2016,8 +1945,6 @@
 
 .method private doMountVolume(Ljava/lang/String;Ljava/lang/String;)I
     .locals 23
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const-string v18, "MountService"
 
@@ -2769,9 +2696,6 @@
 
 .method private doShareUnshareVolume(Ljava/lang/String;Ljava/lang/String;Z)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     const/4 v5, 0x1
 
@@ -2896,9 +2820,6 @@
 
 .method private doUnmountVolume(Ljava/lang/String;ZZ)I
     .locals 11
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # Z
 
     const/16 v4, 0x194
 
@@ -3138,8 +3059,6 @@
 
 .method private getCodeFromException(Lcom/android/server/NativeDaemonConnectorException;I)I
     .locals 4
-    .param p1    # Lcom/android/server/NativeDaemonConnectorException;
-    .param p2    # I
 
     move v0, p2
 
@@ -3228,8 +3147,6 @@
 
 .method private getSecureContainerFilesystemPath(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 12
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -3554,7 +3471,6 @@
 
 .method private isExternalSecureContainer(Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -3609,8 +3525,6 @@
 
 .method private isUidOwnerOfPackageOrSystem(Ljava/lang/String;I)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v1, 0x1
 
@@ -3651,7 +3565,6 @@
 
 .method private isUsbMassStorageEnabled(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/server/MountService;->waitForReady()V
 
@@ -3682,9 +3595,6 @@
 
 .method public static maybeTranslatePathForVold(Ljava/lang/String;[Ljava/io/File;[Ljava/io/File;)Ljava/lang/String;
     .locals 5
-    .param p0    # Ljava/lang/String;
-    .param p1    # [Ljava/io/File;
-    .param p2    # [Ljava/io/File;
 
     array-length v2, p1
 
@@ -3799,7 +3709,6 @@
 
 .method private notifyShareAvailabilityChange(Z)V
     .locals 9
-    .param p1    # Z
 
     const-string v6, "MountService"
 
@@ -4011,10 +3920,6 @@
 
 .method private notifyVolumeStateChange(Ljava/lang/String;Ljava/lang/String;II)V
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
 
     const/4 v8, 0x7
 
@@ -4418,7 +4323,6 @@
 
 .method private orderedAddVolumeLocked(Landroid/os/storage/StorageVolume;)V
     .locals 4
-    .param p1    # Landroid/os/storage/StorageVolume;
 
     iget-object v3, p0, Lcom/android/server/MountService;->mVolumes:Ljava/util/ArrayList;
 
@@ -5081,7 +4985,6 @@
 
 .method private removeObbStateLocked(Lcom/android/server/MountService$ObbState;)V
     .locals 4
-    .param p1    # Lcom/android/server/MountService$ObbState;
 
     invoke-virtual {p1}, Lcom/android/server/MountService$ObbState;->getBinder()Landroid/os/IBinder;
 
@@ -5128,7 +5031,6 @@
 
 .method private removeVolumeLocked(Landroid/os/storage/StorageVolume;)V
     .locals 3
-    .param p1    # Landroid/os/storage/StorageVolume;
 
     const-string v0, "MountService"
 
@@ -5177,9 +5079,6 @@
 
 .method private sendStorageIntent(Ljava/lang/String;Landroid/os/storage/StorageVolume;Landroid/os/UserHandle;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/storage/StorageVolume;
-    .param p3    # Landroid/os/UserHandle;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -5314,7 +5213,6 @@
 
 .method private sendUmsIntent(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-boolean v0, p0, Lcom/android/server/MountService;->mBooted:Z
 
@@ -5379,7 +5277,6 @@
 
 .method private setUmsEnabling(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v1, p0, Lcom/android/server/MountService;->mListeners:Ljava/util/ArrayList;
 
@@ -5404,7 +5301,6 @@
 
 .method public static sortByValue(Ljava/util/Map;)Ljava/util/List;
     .locals 2
-    .param p0    # Ljava/util/Map;
 
     new-instance v0, Ljava/util/ArrayList;
 
@@ -5427,8 +5323,6 @@
 
 .method private updatePublicVolumeState(Landroid/os/storage/StorageVolume;Ljava/lang/String;)V
     .locals 11
-    .param p1    # Landroid/os/storage/StorageVolume;
-    .param p2    # Ljava/lang/String;
 
     const/4 v10, 0x1
 
@@ -5719,7 +5613,6 @@
 
 .method private validatePermission(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/server/MountService;->mContext:Landroid/content/Context;
 
@@ -5755,7 +5648,6 @@
 
 .method private waitForLatch(Ljava/util/concurrent/CountDownLatch;)V
     .locals 4
-    .param p1    # Ljava/util/concurrent/CountDownLatch;
 
     :goto_0
     const-wide/16 v1, 0x1388
@@ -5884,7 +5776,6 @@
 # virtual methods
 .method public changeEncryptionPassword(Ljava/lang/String;)I
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -5969,8 +5860,6 @@
 
 .method public changeEncryptionPassword2(Ljava/lang/String;Ljava/lang/String;)I
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -6107,12 +5996,6 @@
 
 .method public createSecureContainer(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;IZ)I
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
-    .param p6    # Z
 
     const-string v2, "MountService"
 
@@ -6315,8 +6198,6 @@
 
 .method public cryptoMount(Ljava/lang/String;Ljava/lang/String;)I
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -6445,7 +6326,6 @@
 
 .method public decryptStorage(Ljava/lang/String;)I
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -6543,8 +6423,6 @@
 
 .method public destroySecureContainer(Ljava/lang/String;Z)I
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const-string v5, "MountService"
 
@@ -6712,7 +6590,6 @@
 
 .method public dirCryptoMntFinished(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     iget-object v1, p0, Lcom/android/server/MountService;->mConnector:Lcom/android/server/NativeDaemonConnector;
@@ -6780,7 +6657,6 @@
 
 .method public disableStorageEncryption(Ljava/lang/String;)I
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -6863,9 +6739,6 @@
 
 .method protected dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 26
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     move-object/from16 v0, p0
 
@@ -7627,7 +7500,6 @@
 
 .method public encryptStorage(Ljava/lang/String;)I
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -7710,7 +7582,6 @@
 
 .method public finalizeSecureContainer(Ljava/lang/String;)I
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const-string v2, "MountService"
 
@@ -7790,9 +7661,6 @@
 
 .method public fixPermissionsSecureContainer(Ljava/lang/String;ILjava/lang/String;)I
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     const-string v2, "MountService"
 
@@ -7892,7 +7760,6 @@
 
 .method public formatVolume(Ljava/lang/String;)I
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "MountService"
 
@@ -8016,7 +7883,6 @@
 
 .method public getMountedObbPath(Ljava/lang/String;)Ljava/lang/String;
     .locals 13
-    .param p1    # Ljava/lang/String;
 
     const/4 v12, 0x1
 
@@ -8169,7 +8035,6 @@
 
 .method public getPropertyFromFooter(Ljava/lang/String;)Ljava/lang/String;
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     iget-object v2, p0, Lcom/android/server/MountService;->mConnector:Lcom/android/server/NativeDaemonConnector;
@@ -8233,7 +8098,6 @@
 
 .method public getSecureContainerFilesystemPath(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const-string v1, "noting"
 
@@ -8448,7 +8312,6 @@
 
 .method public getSecureContainerPath(Ljava/lang/String;)Ljava/lang/String;
     .locals 12
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -8668,7 +8531,6 @@
 
 .method public getStorageUsers(Ljava/lang/String;)[I
     .locals 13
-    .param p1    # Ljava/lang/String;
 
     const/4 v12, 0x0
 
@@ -8948,7 +8810,6 @@
 
 .method public getVolumeState(Ljava/lang/String;)Ljava/lang/String;
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     iget-object v2, p0, Lcom/android/server/MountService;->mVolumesLock:Ljava/lang/Object;
 
@@ -9049,7 +8910,6 @@
 
 .method public isObbMounted(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const-string/jumbo v0, "rawPath cannot be null"
 
@@ -9082,7 +8942,6 @@
 
 .method public isSecureContainerMounted(Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const-string v1, "android.permission.ASEC_ACCESS"
 
@@ -9346,8 +9205,6 @@
 
 .method public mkdirs(Ljava/lang/String;Ljava/lang/String;)I
     .locals 12
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-static {}, Landroid/os/Binder;->getCallingUid()I
 
@@ -9672,10 +9529,6 @@
 
 .method public modifyVolumeLocked(Ljava/lang/String;IZLjava/lang/String;)I
     .locals 17
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # Ljava/lang/String;
 
     const-string v2, "MountService"
 
@@ -9877,11 +9730,6 @@
 
 .method public mountObb(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/os/storage/IObbActionListener;I)V
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Landroid/os/storage/IObbActionListener;
-    .param p5    # I
 
     const-string/jumbo v1, "rawPath cannot be null"
 
@@ -9934,9 +9782,6 @@
 
 .method public mountSecureContainer(Ljava/lang/String;Ljava/lang/String;I)I
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     const-string v5, "MountService"
 
@@ -10152,7 +9997,6 @@
 
 .method public mountVolume(Ljava/lang/String;)I
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "MountService"
 
@@ -10352,9 +10196,6 @@
 
 .method public onEvent(ILjava/lang/String;[Ljava/lang/String;)Z
     .locals 28
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # [Ljava/lang/String;
 
     new-instance v7, Ljava/lang/StringBuilder;
 
@@ -11017,7 +10858,6 @@
 
 .method public prepareDecryptOnRecovery(Ljava/lang/String;)I
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -11102,7 +10942,6 @@
 
 .method public registerListener(Landroid/os/storage/IMountServiceListener;)V
     .locals 5
-    .param p1    # Landroid/os/storage/IMountServiceListener;
 
     iget-object v3, p0, Lcom/android/server/MountService;->mListeners:Ljava/util/ArrayList;
 
@@ -11166,8 +11005,6 @@
 
 .method public renameSecureContainer(Ljava/lang/String;Ljava/lang/String;)I
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const-string v2, "MountService"
 
@@ -11302,7 +11139,6 @@
 
 .method requiredEncPolicyCheck(Ljava/lang/String;)Z
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -11389,7 +11225,6 @@
 
 .method public setNullSDCardPassword(Ljava/lang/String;)I
     .locals 8
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -11500,8 +11335,6 @@
 
 .method public setPropertyIntoFooter(Ljava/lang/String;Ljava/lang/String;)I
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     :try_start_0
     iget-object v2, p0, Lcom/android/server/MountService;->mConnector:Lcom/android/server/NativeDaemonConnector;
@@ -11559,7 +11392,6 @@
 
 .method public setUsbMassStorageEnabled(Z)V
     .locals 11
-    .param p1    # Z
 
     const/4 v10, 0x1
 
@@ -11717,8 +11549,6 @@
 
 .method public setVolumeState(Ljava/lang/String;Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const-string v2, "MountService"
 
@@ -11848,7 +11678,6 @@
 
 .method public shutdown(Landroid/os/storage/IMountShutdownObserver;)V
     .locals 23
-    .param p1    # Landroid/os/storage/IMountShutdownObserver;
 
     const-string v19, "android.permission.SHUTDOWN"
 
@@ -12358,10 +12187,6 @@
 
 .method public unmountObb(Ljava/lang/String;ZLandroid/os/storage/IObbActionListener;I)V
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # Landroid/os/storage/IObbActionListener;
-    .param p4    # I
 
     const-string/jumbo v1, "rawPath cannot be null"
 
@@ -12461,8 +12286,6 @@
 
 .method public unmountSecureContainer(Ljava/lang/String;Z)I
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const/4 v4, 0x0
 
@@ -12683,9 +12506,6 @@
 
 .method public unmountVolume(Ljava/lang/String;ZZ)V
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # Z
 
     const/4 v9, 0x2
 
@@ -12963,7 +12783,6 @@
 
 .method public unregisterListener(Landroid/os/storage/IMountServiceListener;)V
     .locals 5
-    .param p1    # Landroid/os/storage/IMountServiceListener;
 
     iget-object v3, p0, Lcom/android/server/MountService;->mListeners:Ljava/util/ArrayList;
 
@@ -13033,7 +12852,6 @@
 
 .method public verifyEncryptionPassword(Ljava/lang/String;)I
     .locals 7
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

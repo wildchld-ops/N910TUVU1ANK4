@@ -55,7 +55,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/nfc/TagsConnectingDevices;)V
     .locals 0
-    .param p0    # Lcom/android/settings/nfc/TagsConnectingDevices;
 
     invoke-direct {p0}, Lcom/android/settings/nfc/TagsConnectingDevices;->createHelpStep2Dialog()V
 
@@ -64,7 +63,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/nfc/TagsConnectingDevices;)V
     .locals 0
-    .param p0    # Lcom/android/settings/nfc/TagsConnectingDevices;
 
     invoke-direct {p0}, Lcom/android/settings/nfc/TagsConnectingDevices;->createHelpDialog()V
 
@@ -73,7 +71,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/nfc/TagsConnectingDevices;)Landroid/nfc/NfcAdapter;
     .locals 1
-    .param p0    # Lcom/android/settings/nfc/TagsConnectingDevices;
 
     iget-object v0, p0, Lcom/android/settings/nfc/TagsConnectingDevices;->mNfcAdapter:Landroid/nfc/NfcAdapter;
 
@@ -82,7 +79,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/nfc/TagsConnectingDevices;)Landroid/widget/Switch;
     .locals 1
-    .param p0    # Lcom/android/settings/nfc/TagsConnectingDevices;
 
     iget-object v0, p0, Lcom/android/settings/nfc/TagsConnectingDevices;->mActionBarSwitch:Landroid/widget/Switch;
 
@@ -91,7 +87,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/nfc/TagsConnectingDevices;)Lcom/android/settings/nfc/TagsConnectingDevices$IRwP2pHelpController;
     .locals 1
-    .param p0    # Lcom/android/settings/nfc/TagsConnectingDevices;
 
     iget-object v0, p0, Lcom/android/settings/nfc/TagsConnectingDevices;->mHelpCtrl:Lcom/android/settings/nfc/TagsConnectingDevices$IRwP2pHelpController;
 
@@ -258,8 +253,6 @@
 # virtual methods
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 5
-    .param p1    # Landroid/widget/CompoundButton;
-    .param p2    # Z
 
     const/4 v4, 0x1
 
@@ -409,7 +402,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 9
-    .param p1    # Landroid/os/Bundle;
 
     const/16 v5, 0x10
 
@@ -548,9 +540,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 2
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const v0, 0x7f040247
 

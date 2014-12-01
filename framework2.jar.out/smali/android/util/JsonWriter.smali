@@ -38,7 +38,6 @@
 # direct methods
 .method public constructor <init>(Ljava/io/Writer;)V
     .locals 2
-    .param p1    # Ljava/io/Writer;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -139,7 +138,6 @@
 
 .method private beforeValue(Z)V
     .locals 3
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -265,9 +263,6 @@
 
 .method private close(Landroid/util/JsonScope;Landroid/util/JsonScope;Ljava/lang/String;)Landroid/util/JsonWriter;
     .locals 4
-    .param p1    # Landroid/util/JsonScope;
-    .param p2    # Landroid/util/JsonScope;
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -379,8 +374,6 @@
 
 .method private open(Landroid/util/JsonScope;Ljava/lang/String;)Landroid/util/JsonWriter;
     .locals 1
-    .param p1    # Landroid/util/JsonScope;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -426,7 +419,6 @@
 
 .method private replaceTop(Landroid/util/JsonScope;)V
     .locals 2
-    .param p1    # Landroid/util/JsonScope;
 
     iget-object v0, p0, Landroid/util/JsonWriter;->stack:Ljava/util/List;
 
@@ -445,7 +437,6 @@
 
 .method private string(Ljava/lang/String;)V
     .locals 9
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -752,7 +743,6 @@
 
 .method public name(Ljava/lang/String;)Landroid/util/JsonWriter;
     .locals 2
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -800,7 +790,6 @@
 
 .method public setIndent(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p1}, Ljava/lang/String;->isEmpty()Z
 
@@ -831,7 +820,6 @@
 
 .method public setLenient(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/util/JsonWriter;->lenient:Z
 
@@ -840,7 +828,6 @@
 
 .method public value(D)Landroid/util/JsonWriter;
     .locals 3
-    .param p1    # D
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -906,7 +893,6 @@
 
 .method public value(J)Landroid/util/JsonWriter;
     .locals 2
-    .param p1    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -930,7 +916,6 @@
 
 .method public value(Ljava/lang/Number;)Landroid/util/JsonWriter;
     .locals 4
-    .param p1    # Ljava/lang/Number;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1018,7 +1003,6 @@
 
 .method public value(Ljava/lang/String;)Landroid/util/JsonWriter;
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1046,7 +1030,6 @@
 
 .method public value(Z)Landroid/util/JsonWriter;
     .locals 2
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

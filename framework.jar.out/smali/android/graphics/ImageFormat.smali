@@ -40,7 +40,6 @@
 
 .method public static getBitsPerPixel(I)I
     .locals 2
-    .param p0    # I
 
     const/16 v1, 0xc
 

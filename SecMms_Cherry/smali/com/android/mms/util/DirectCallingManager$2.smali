@@ -48,7 +48,6 @@
 
 .method public onBufferReceived([B)V
     .locals 0
-    .param p1    # [B
 
     return-void
 .end method
@@ -67,7 +66,6 @@
 
 .method public onError(I)V
     .locals 4
-    .param p1    # I
 
     new-instance v0, Landroid/os/Bundle;
 
@@ -106,8 +104,6 @@
 
 .method public onEvent(ILandroid/os/Bundle;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     const-string v0, "Mms/DirectCallingManager"
 
@@ -120,7 +116,6 @@
 
 .method public onPartialResults(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     iget-object v1, p0, Lcom/android/mms/util/DirectCallingManager$2;->this$0:Lcom/android/mms/util/DirectCallingManager;
 
@@ -151,7 +146,6 @@
 
 .method public onReadyForSpeech(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "Mms/DirectCallingManager"
 
@@ -171,7 +165,6 @@
 
 .method public onResults(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     iget-object v1, p0, Lcom/android/mms/util/DirectCallingManager$2;->this$0:Lcom/android/mms/util/DirectCallingManager;
 
@@ -202,7 +195,6 @@
 
 .method public onRmsChanged(F)V
     .locals 0
-    .param p1    # F
 
     return-void
 .end method

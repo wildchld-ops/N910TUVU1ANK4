@@ -23,7 +23,6 @@
 # direct methods
 .method public constructor <init>(Lcom/sec/android/inputmethod/accessibility/AccessibilityMagnificationCompat;Landroid/os/Handler;)V
     .locals 1
-    .param p2    # Landroid/os/Handler;
 
     iput-object p1, p0, Lcom/sec/android/inputmethod/accessibility/AccessibilityMagnificationCompat$MagnificaitonObserver;->this$0:Lcom/sec/android/inputmethod/accessibility/AccessibilityMagnificationCompat;
 
@@ -42,8 +41,6 @@
 # virtual methods
 .method public onChange(ZLandroid/net/Uri;)V
     .locals 6
-    .param p1    # Z
-    .param p2    # Landroid/net/Uri;
 
     const/4 v0, 0x1
 

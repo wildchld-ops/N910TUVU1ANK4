@@ -321,7 +321,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
 
     const/4 v5, 0x0
 
@@ -691,8 +690,6 @@
 
 .method static synthetic access$100(Lcom/android/server/AlarmManagerService;Landroid/app/PendingIntent;)Lcom/android/server/AlarmManagerService$BroadcastStats;
     .locals 1
-    .param p0    # Lcom/android/server/AlarmManagerService;
-    .param p1    # Landroid/app/PendingIntent;
 
     invoke-direct {p0, p1}, Lcom/android/server/AlarmManagerService;->getStatsLocked(Landroid/app/PendingIntent;)Lcom/android/server/AlarmManagerService$BroadcastStats;
 
@@ -703,7 +700,6 @@
 
 .method static synthetic access$1000(Lcom/android/server/AlarmManagerService;)V
     .locals 0
-    .param p0    # Lcom/android/server/AlarmManagerService;
 
     invoke-direct {p0}, Lcom/android/server/AlarmManagerService;->rescheduleKernelAlarmsLocked()V
 
@@ -728,7 +724,6 @@
 
 .method static synthetic access$1300(Lcom/android/server/AlarmManagerService;)Lcom/android/server/AlarmManagerServiceExt$SyncScheduler;
     .locals 1
-    .param p0    # Lcom/android/server/AlarmManagerService;
 
     iget-object v0, p0, Lcom/android/server/AlarmManagerService;->mSyncScheduler:Lcom/android/server/AlarmManagerServiceExt$SyncScheduler;
 
@@ -737,7 +732,6 @@
 
 .method static synthetic access$1400(Lcom/android/server/AlarmManagerService;)Landroid/os/PersonaManager;
     .locals 1
-    .param p0    # Lcom/android/server/AlarmManagerService;
 
     iget-object v0, p0, Lcom/android/server/AlarmManagerService;->mPersona:Landroid/os/PersonaManager;
 
@@ -746,8 +740,6 @@
 
 .method static synthetic access$1402(Lcom/android/server/AlarmManagerService;Landroid/os/PersonaManager;)Landroid/os/PersonaManager;
     .locals 0
-    .param p0    # Lcom/android/server/AlarmManagerService;
-    .param p1    # Landroid/os/PersonaManager;
 
     iput-object p1, p0, Lcom/android/server/AlarmManagerService;->mPersona:Landroid/os/PersonaManager;
 
@@ -756,7 +748,6 @@
 
 .method static synthetic access$1500(Lcom/android/server/AlarmManagerService;)Lcom/android/server/AlarmManagerService$ResultReceiver;
     .locals 1
-    .param p0    # Lcom/android/server/AlarmManagerService;
 
     iget-object v0, p0, Lcom/android/server/AlarmManagerService;->mResultReceiver:Lcom/android/server/AlarmManagerService$ResultReceiver;
 
@@ -765,7 +756,6 @@
 
 .method static synthetic access$1600(Lcom/android/server/AlarmManagerService;)Lcom/android/server/AlarmManagerService$AlarmHandler;
     .locals 1
-    .param p0    # Lcom/android/server/AlarmManagerService;
 
     iget-object v0, p0, Lcom/android/server/AlarmManagerService;->mHandler:Lcom/android/server/AlarmManagerService$AlarmHandler;
 
@@ -774,7 +764,6 @@
 
 .method static synthetic access$1700(Lcom/android/server/AlarmManagerService;)I
     .locals 1
-    .param p0    # Lcom/android/server/AlarmManagerService;
 
     iget v0, p0, Lcom/android/server/AlarmManagerService;->mBroadcastRefCount:I
 
@@ -783,7 +772,6 @@
 
 .method static synthetic access$1708(Lcom/android/server/AlarmManagerService;)I
     .locals 2
-    .param p0    # Lcom/android/server/AlarmManagerService;
 
     iget v0, p0, Lcom/android/server/AlarmManagerService;->mBroadcastRefCount:I
 
@@ -796,7 +784,6 @@
 
 .method static synthetic access$1710(Lcom/android/server/AlarmManagerService;)I
     .locals 2
-    .param p0    # Lcom/android/server/AlarmManagerService;
 
     iget v0, p0, Lcom/android/server/AlarmManagerService;->mBroadcastRefCount:I
 
@@ -809,7 +796,6 @@
 
 .method static synthetic access$1800(Lcom/android/server/AlarmManagerService;)Landroid/os/PowerManager$WakeLock;
     .locals 1
-    .param p0    # Lcom/android/server/AlarmManagerService;
 
     iget-object v0, p0, Lcom/android/server/AlarmManagerService;->mWakeLock:Landroid/os/PowerManager$WakeLock;
 
@@ -818,7 +804,6 @@
 
 .method static synthetic access$1900(Lcom/android/server/AlarmManagerService;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/server/AlarmManagerService;
 
     iget-object v0, p0, Lcom/android/server/AlarmManagerService;->mInFlight:Ljava/util/ArrayList;
 
@@ -835,7 +820,6 @@
 
 .method static synthetic access$2000(Lcom/android/server/AlarmManagerService;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/server/AlarmManagerService;
 
     iget-object v0, p0, Lcom/android/server/AlarmManagerService;->mTriggeredUids:Ljava/util/ArrayList;
 
@@ -852,9 +836,6 @@
 
 .method static synthetic access$2200(Lcom/android/server/AlarmManagerService;II)I
     .locals 1
-    .param p0    # Lcom/android/server/AlarmManagerService;
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/AlarmManagerService;->setKernelTimezone(II)I
 
@@ -865,7 +846,6 @@
 
 .method static synthetic access$2300(Lcom/android/server/AlarmManagerService;)Landroid/app/PendingIntent;
     .locals 1
-    .param p0    # Lcom/android/server/AlarmManagerService;
 
     iget-object v0, p0, Lcom/android/server/AlarmManagerService;->mDateChangeSender:Landroid/app/PendingIntent;
 
@@ -874,7 +854,6 @@
 
 .method static synthetic access$2400(Lcom/android/server/AlarmManagerService;)Ljava/util/HashMap;
     .locals 1
-    .param p0    # Lcom/android/server/AlarmManagerService;
 
     iget-object v0, p0, Lcom/android/server/AlarmManagerService;->mBroadcastStats:Ljava/util/HashMap;
 
@@ -891,7 +870,6 @@
 
 .method static synthetic access$2502(I)I
     .locals 0
-    .param p0    # I
 
     sput p0, Lcom/android/server/AlarmManagerService;->FACTORY_ON:I
 
@@ -900,7 +878,6 @@
 
 .method static synthetic access$2600(Lcom/android/server/AlarmManagerService;)Lcom/android/internal/util/LocalLog;
     .locals 1
-    .param p0    # Lcom/android/server/AlarmManagerService;
 
     iget-object v0, p0, Lcom/android/server/AlarmManagerService;->mLog:Lcom/android/internal/util/LocalLog;
 
@@ -909,7 +886,6 @@
 
 .method static synthetic access$2700(Lcom/android/server/AlarmManagerService;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/server/AlarmManagerService;
 
     iget-object v0, p0, Lcom/android/server/AlarmManagerService;->mBlockedUids:Ljava/util/ArrayList;
 
@@ -918,7 +894,6 @@
 
 .method static synthetic access$2800(Lcom/android/server/AlarmManagerService;)V
     .locals 0
-    .param p0    # Lcom/android/server/AlarmManagerService;
 
     invoke-direct {p0}, Lcom/android/server/AlarmManagerService;->removeDisallowedAlarmList()V
 
@@ -927,7 +902,6 @@
 
 .method static synthetic access$2900(Lcom/android/server/AlarmManagerService;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/server/AlarmManagerService;
 
     iget-object v0, p0, Lcom/android/server/AlarmManagerService;->mPendingAlarmList:Ljava/util/ArrayList;
 
@@ -936,7 +910,6 @@
 
 .method static synthetic access$300(Lcom/android/server/AlarmManagerService;)I
     .locals 1
-    .param p0    # Lcom/android/server/AlarmManagerService;
 
     iget v0, p0, Lcom/android/server/AlarmManagerService;->mDescriptor:I
 
@@ -945,7 +918,6 @@
 
 .method static synthetic access$3000(Lcom/android/server/AlarmManagerService;)Lcom/sec/android/emergencymode/EmergencyManager;
     .locals 1
-    .param p0    # Lcom/android/server/AlarmManagerService;
 
     iget-object v0, p0, Lcom/android/server/AlarmManagerService;->mEmergencyMgr:Lcom/sec/android/emergencymode/EmergencyManager;
 
@@ -954,7 +926,6 @@
 
 .method static synthetic access$3100(Lcom/android/server/AlarmManagerService;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/server/AlarmManagerService;
 
     iget-object v0, p0, Lcom/android/server/AlarmManagerService;->emergencyAlarmHandler:Landroid/os/Handler;
 
@@ -963,8 +934,6 @@
 
 .method static synthetic access$400(Lcom/android/server/AlarmManagerService;I)I
     .locals 1
-    .param p0    # Lcom/android/server/AlarmManagerService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/AlarmManagerService;->waitForAlarm(I)I
 
@@ -975,7 +944,6 @@
 
 .method static synthetic access$500(Lcom/android/server/AlarmManagerService;)Landroid/app/PendingIntent;
     .locals 1
-    .param p0    # Lcom/android/server/AlarmManagerService;
 
     iget-object v0, p0, Lcom/android/server/AlarmManagerService;->mTimeTickSender:Landroid/app/PendingIntent;
 
@@ -984,7 +952,6 @@
 
 .method static synthetic access$600(Lcom/android/server/AlarmManagerService;)Lcom/android/server/AlarmManagerService$ClockReceiver;
     .locals 1
-    .param p0    # Lcom/android/server/AlarmManagerService;
 
     iget-object v0, p0, Lcom/android/server/AlarmManagerService;->mClockReceiver:Lcom/android/server/AlarmManagerService$ClockReceiver;
 
@@ -993,7 +960,6 @@
 
 .method static synthetic access$700(Lcom/android/server/AlarmManagerService;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/server/AlarmManagerService;
 
     iget-object v0, p0, Lcom/android/server/AlarmManagerService;->mContext:Landroid/content/Context;
 
@@ -1002,7 +968,6 @@
 
 .method static synthetic access$800(Lcom/android/server/AlarmManagerService;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Lcom/android/server/AlarmManagerService;
 
     iget-object v0, p0, Lcom/android/server/AlarmManagerService;->mLock:Ljava/lang/Object;
 
@@ -1011,10 +976,6 @@
 
 .method static synthetic access$900(Lcom/android/server/AlarmManagerService;Ljava/util/ArrayList;JJ)V
     .locals 0
-    .param p0    # Lcom/android/server/AlarmManagerService;
-    .param p1    # Ljava/util/ArrayList;
-    .param p2    # J
-    .param p4    # J
 
     invoke-direct/range {p0 .. p5}, Lcom/android/server/AlarmManagerService;->triggerAlarmsLocked(Ljava/util/ArrayList;JJ)V
 
@@ -1023,7 +984,6 @@
 
 .method static addBatchLocked(Ljava/util/ArrayList;Lcom/android/server/AlarmManagerService$Batch;)Z
     .locals 2
-    .param p1    # Lcom/android/server/AlarmManagerService$Batch;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1066,7 +1026,6 @@
 
 .method private addPendingAlarmList(Lcom/android/server/AlarmManagerService$PrevAlarm;)V
     .locals 10
-    .param p1    # Lcom/android/server/AlarmManagerService$PrevAlarm;
 
     iget-object v1, p1, Lcom/android/server/AlarmManagerService$PrevAlarm;->mOperation:Landroid/app/PendingIntent;
 
@@ -1250,8 +1209,6 @@
 
 .method static convertToElapsed(JI)J
     .locals 5
-    .param p0    # J
-    .param p2    # I
 
     const/4 v0, 0x1
 
@@ -1289,10 +1246,6 @@
 
 .method private static final dumpAlarmList(Ljava/io/PrintWriter;Ljava/util/ArrayList;Ljava/lang/String;JJ)V
     .locals 7
-    .param p0    # Ljava/io/PrintWriter;
-    .param p2    # Ljava/lang/String;
-    .param p3    # J
-    .param p5    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1387,10 +1340,6 @@
 
 .method private static final dumpAlarmList(Ljava/io/PrintWriter;Ljava/util/ArrayList;Ljava/lang/String;Ljava/lang/String;J)V
     .locals 4
-    .param p0    # Ljava/io/PrintWriter;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1508,7 +1457,6 @@
 
 .method private final getStatsLocked(Landroid/app/PendingIntent;)Lcom/android/server/AlarmManagerService$BroadcastStats;
     .locals 3
-    .param p1    # Landroid/app/PendingIntent;
 
     invoke-virtual {p1}, Landroid/app/PendingIntent;->getTargetPackage()Ljava/lang/String;
 
@@ -1541,7 +1489,6 @@
 
 .method private static final labelForType(I)Ljava/lang/String;
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -1659,9 +1606,6 @@
 
 .method static maxTriggerTime(JJJ)J
     .locals 6
-    .param p0    # J
-    .param p2    # J
-    .param p4    # J
 
     const-wide/16 v2, 0x0
 
@@ -2168,16 +2112,6 @@
 
 .method private setImplLocked(IJJJJJLandroid/app/PendingIntent;ZZLandroid/os/WorkSource;)V
     .locals 25
-    .param p1    # I
-    .param p2    # J
-    .param p4    # J
-    .param p6    # J
-    .param p8    # J
-    .param p10    # J
-    .param p12    # Landroid/app/PendingIntent;
-    .param p13    # Z
-    .param p14    # Z
-    .param p15    # Landroid/os/WorkSource;
 
     new-instance v2, Lcom/android/server/AlarmManagerService$Alarm;
 
@@ -2623,8 +2557,6 @@
 
 .method private setLocked(IJ)V
     .locals 12
-    .param p1    # I
-    .param p2    # J
 
     const-wide/16 v10, 0x0
 
@@ -2769,8 +2701,6 @@
 
 .method private triggerAlarmsLocked(Ljava/util/ArrayList;JJ)V
     .locals 28
-    .param p2    # J
-    .param p4    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3060,7 +2990,6 @@
 
 .method addSetAlarmToHistoryLocked(J)V
     .locals 5
-    .param p1    # J
 
     const/4 v4, 0x0
 
@@ -3085,8 +3014,6 @@
 
 .method attemptCoalesceLocked(JJ)I
     .locals 4
-    .param p1    # J
-    .param p3    # J
 
     iget-object v3, p0, Lcom/android/server/AlarmManagerService;->mAlarmBatches:Ljava/util/ArrayList;
 
@@ -3133,9 +3060,6 @@
 
 .method protected dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 43
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     move-object/from16 v0, p0
 
@@ -4517,7 +4441,6 @@
 
 .method public findAlarmLocked(I)Z
     .locals 6
-    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -4585,7 +4508,6 @@
 
 .method public lookForPackageLocked(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -4656,7 +4578,6 @@
 
 .method rebatchAllAlarmsLocked(Z)V
     .locals 29
-    .param p1    # Z
 
     move-object/from16 v0, p0
 
@@ -4839,8 +4760,6 @@
 
 .method recordWakeupAlarms(Ljava/util/ArrayList;JJ)V
     .locals 12
-    .param p2    # J
-    .param p4    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -4935,7 +4854,6 @@
 
 .method public remove(Landroid/app/PendingIntent;)V
     .locals 3
-    .param p1    # Landroid/app/PendingIntent;
 
     sget-boolean v0, Lcom/android/server/AlarmManagerService;->APP_SYNC_LOG:Z
 
@@ -4995,7 +4913,6 @@
 
 .method public removeLocked(Landroid/app/PendingIntent;)V
     .locals 1
-    .param p1    # Landroid/app/PendingIntent;
 
     const/4 v0, 0x0
 
@@ -5006,8 +4923,6 @@
 
 .method removeLocked(Landroid/app/PendingIntent;Z)V
     .locals 8
-    .param p1    # Landroid/app/PendingIntent;
-    .param p2    # Z
 
     const/4 v3, 0x0
 
@@ -5130,7 +5045,6 @@
 
 .method public removeLocked(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -5202,7 +5116,6 @@
 
 .method removeSetAlarmFromHistoryLocked(J)V
     .locals 6
-    .param p1    # J
 
     const/4 v0, 0x0
 
@@ -5258,7 +5171,6 @@
 
 .method public removeUserLocked(I)V
     .locals 4
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -5330,14 +5242,6 @@
 
 .method public rollbackAlarmLocked(IJJJLandroid/app/PendingIntent;ZZLandroid/os/WorkSource;)V
     .locals 23
-    .param p1    # I
-    .param p2    # J
-    .param p4    # J
-    .param p6    # J
-    .param p8    # Landroid/app/PendingIntent;
-    .param p9    # Z
-    .param p10    # Z
-    .param p11    # Landroid/os/WorkSource;
 
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
@@ -5396,12 +5300,6 @@
 
 .method public set(IJJJLandroid/app/PendingIntent;Landroid/os/WorkSource;)V
     .locals 11
-    .param p1    # I
-    .param p2    # J
-    .param p4    # J
-    .param p6    # J
-    .param p8    # Landroid/app/PendingIntent;
-    .param p9    # Landroid/os/WorkSource;
 
     if-eqz p9, :cond_0
 
@@ -5437,13 +5335,6 @@
 
 .method public set(IJJJLandroid/app/PendingIntent;ZLandroid/os/WorkSource;)V
     .locals 28
-    .param p1    # I
-    .param p2    # J
-    .param p4    # J
-    .param p6    # J
-    .param p8    # Landroid/app/PendingIntent;
-    .param p9    # Z
-    .param p10    # Landroid/os/WorkSource;
 
     if-nez p8, :cond_0
 
@@ -6029,7 +5920,6 @@
 
 .method public setAutoPowerUp(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget v0, p0, Lcom/android/server/AlarmManagerService;->mDescriptor:I
 
@@ -6040,7 +5930,6 @@
 
 .method public setTime(J)V
     .locals 4
-    .param p1    # J
 
     iget-object v1, p0, Lcom/android/server/AlarmManagerService;->mContext:Landroid/content/Context;
 
@@ -6103,7 +5992,6 @@
 
 .method public setTimeZone(Ljava/lang/String;)V
     .locals 11
-    .param p1    # Ljava/lang/String;
 
     iget-object v8, p0, Lcom/android/server/AlarmManagerService;->mContext:Landroid/content/Context;
 
@@ -6332,8 +6220,6 @@
 
 .method setWakelockWorkSource(Landroid/app/PendingIntent;Landroid/os/WorkSource;)V
     .locals 3
-    .param p1    # Landroid/app/PendingIntent;
-    .param p2    # Landroid/os/WorkSource;
 
     if-eqz p2, :cond_0
 
@@ -6389,8 +6275,6 @@
 
 .method public shutdownTimeAfterFakeOff(ZI)I
     .locals 8
-    .param p1    # Z
-    .param p2    # I
 
     const/16 v7, 0xa
 
@@ -6543,8 +6427,6 @@
 
 .method updateBlockedUids(IZ)V
     .locals 4
-    .param p1    # I
-    .param p2    # Z
 
     iget-object v2, p0, Lcom/android/server/AlarmManagerService;->mLock:Ljava/lang/Object;
 

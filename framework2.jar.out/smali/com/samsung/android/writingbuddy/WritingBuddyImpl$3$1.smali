@@ -21,7 +21,6 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/writingbuddy/WritingBuddyImpl$3;Landroid/os/Handler;)V
     .locals 0
-    .param p2    # Landroid/os/Handler;
 
     iput-object p1, p0, Lcom/samsung/android/writingbuddy/WritingBuddyImpl$3$1;->this$1:Lcom/samsung/android/writingbuddy/WritingBuddyImpl$3;
 
@@ -34,8 +33,6 @@
 # virtual methods
 .method protected onReceiveResult(ILandroid/os/Bundle;)V
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     new-instance v0, Landroid/os/Handler;
 

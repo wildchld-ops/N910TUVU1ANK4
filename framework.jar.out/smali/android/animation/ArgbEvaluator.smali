@@ -19,9 +19,6 @@
 # virtual methods
 .method public evaluate(FLjava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 12
-    .param p1    # F
-    .param p2    # Ljava/lang/Object;
-    .param p3    # Ljava/lang/Object;
 
     check-cast p2, Ljava/lang/Integer;
 

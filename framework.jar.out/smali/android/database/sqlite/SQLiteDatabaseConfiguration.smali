@@ -51,7 +51,6 @@
 
 .method public constructor <init>(Landroid/database/sqlite/SQLiteDatabaseConfiguration;)V
     .locals 2
-    .param p1    # Landroid/database/sqlite/SQLiteDatabaseConfiguration;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -87,8 +86,6 @@
 
 .method public constructor <init>(Ljava/lang/String;I)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -134,7 +131,6 @@
 
 .method private static stripPathForLogs(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     const/16 v0, 0x40
 
@@ -183,7 +179,6 @@
 
 .method public updateParametersFrom(Landroid/database/sqlite/SQLiteDatabaseConfiguration;)V
     .locals 2
-    .param p1    # Landroid/database/sqlite/SQLiteDatabaseConfiguration;
 
     if-nez p1, :cond_0
 

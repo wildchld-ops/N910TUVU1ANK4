@@ -60,7 +60,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Landroid/app/Dialog;->isShowing()Z
+    invoke-virtual {v1}, Landroid/app/AlertDialog;->isShowing()Z
 
     move-result v1
 
@@ -88,7 +88,7 @@
 
     const/4 v3, 0x0
 
-    invoke-virtual {v2, v3}, Landroid/os/Handler;->obtainMessage(I)Landroid/os/Message;
+    invoke-virtual {v2, v3}, Lcom/android/phone/NetworkModePreference$MyHandler;->obtainMessage(I)Landroid/os/Message;
 
     move-result-object v2
 
@@ -102,7 +102,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Landroid/app/Dialog;->dismiss()V
+    invoke-virtual {v1}, Landroid/app/AlertDialog;->dismiss()V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -162,7 +162,7 @@
 
     const/16 v2, 0x64
 
-    invoke-virtual {v1, v2}, Landroid/app/Activity;->removeDialog(I)V
+    invoke-virtual {v1, v2}, Lcom/android/phone/MobileNetworkSettings;->removeDialog(I)V
 
     const-string v1, "feature_multisim"
 

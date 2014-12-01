@@ -72,7 +72,6 @@
 
 .method private static addToErrorList(Ljava/lang/String;)V
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     sget-object v3, Lcom/sec/epdg/Log;->mErrMessages:Ljava/util/ArrayList;
 
@@ -214,7 +213,6 @@
 
 .method private static addToWtfList(Ljava/lang/String;)V
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     sget-object v2, Lcom/sec/epdg/Log;->mWtfMessages:Ljava/util/ArrayList;
 
@@ -258,8 +256,6 @@
 
 .method public static d(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -270,9 +266,6 @@
 
 .method public static d(ZLjava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p0    # Z
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     sget-boolean v0, Lcom/sec/epdg/Log;->isUserBinary:Z
 
@@ -472,8 +465,6 @@
 
 .method public static final e(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -484,9 +475,6 @@
 
 .method public static final e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Throwable;
 
     const/4 v0, 0x1
 
@@ -497,9 +485,6 @@
 
 .method public static final e(ZLjava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p0    # Z
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     sget-boolean v0, Lcom/sec/epdg/Log;->isUserBinary:Z
 
@@ -536,10 +521,6 @@
 
 .method public static final e(ZLjava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
     .locals 2
-    .param p0    # Z
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/Throwable;
 
     sget-boolean v0, Lcom/sec/epdg/Log;->isUserBinary:Z
 
@@ -596,8 +577,6 @@
 
 .method public static i(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -608,9 +587,6 @@
 
 .method public static i(ZLjava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p0    # Z
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     sget-boolean v0, Lcom/sec/epdg/Log;->isUserBinary:Z
 
@@ -645,8 +621,6 @@
 
 .method public static v(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -657,9 +631,6 @@
 
 .method public static v(ZLjava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p0    # Z
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     sget-boolean v0, Lcom/sec/epdg/Log;->isUserBinary:Z
 
@@ -694,8 +665,6 @@
 
 .method public static w(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -706,9 +675,6 @@
 
 .method public static w(ZLjava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p0    # Z
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     sget-boolean v0, Lcom/sec/epdg/Log;->isUserBinary:Z
 
@@ -743,8 +709,6 @@
 
 .method public static final wtf(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -755,9 +719,6 @@
 
 .method public static final wtf(ZLjava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p0    # Z
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     sget-boolean v0, Lcom/sec/epdg/Log;->isUserBinary:Z
 

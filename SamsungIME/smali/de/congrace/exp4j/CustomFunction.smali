@@ -12,7 +12,6 @@
 # direct methods
 .method protected constructor <init>(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lde/congrace/exp4j/InvalidCustomFunctionException;
@@ -65,8 +64,6 @@
 
 .method protected constructor <init>(Ljava/lang/String;I)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lde/congrace/exp4j/InvalidCustomFunctionException;

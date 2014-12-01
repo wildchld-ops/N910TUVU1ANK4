@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Landroid/app/enterprise/IEmailPolicy$Stub;-><init>()V
 
@@ -44,7 +43,6 @@
 
 .method private enforceEmailPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/email/EmailPolicy;->getEDM()Landroid/app/enterprise/EnterpriseDeviceManager;
 
@@ -61,7 +59,6 @@
 
 .method private getDefaultValueState(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -146,10 +143,6 @@
 
 .method private getPolicyState(ILjava/lang/String;Ljava/lang/String;I)Z
     .locals 12
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
 
     if-eqz p2, :cond_0
 
@@ -363,11 +356,6 @@
 
 .method private putPolicyState(IILjava/lang/String;ZLjava/lang/String;)Z
     .locals 7
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Z
-    .param p5    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -504,8 +492,6 @@
 # virtual methods
 .method public allowAccountAddition(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 8
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -612,9 +598,6 @@
 
 .method public allowEmailSettingsChange(Landroid/app/enterprise/ContextInfo;ZJ)Z
     .locals 9
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
-    .param p3    # J
 
     const/4 v0, 0x0
 
@@ -696,8 +679,6 @@
 
 .method public allowPopImapEmail(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 8
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -778,8 +759,6 @@
 
 .method public getAllowEmailForwarding(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     iget v0, p1, Landroid/app/enterprise/ContextInfo;->mContainerId:I
 
@@ -798,8 +777,6 @@
 
 .method public getAllowHTMLEmail(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     iget v0, p1, Landroid/app/enterprise/ContextInfo;->mContainerId:I
 
@@ -818,7 +795,6 @@
 
 .method public isAccountAdditionAllowed(Landroid/app/enterprise/ContextInfo;)Z
     .locals 11
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v5, 0x1
 
@@ -968,8 +944,6 @@
 
 .method public isEmailNotificationsEnabled(Landroid/app/enterprise/ContextInfo;J)Z
     .locals 9
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # J
 
     const/4 v4, 0x1
 
@@ -1076,8 +1050,6 @@
 
 .method public isEmailSettingsChangeAllowed(Landroid/app/enterprise/ContextInfo;J)Z
     .locals 9
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # J
 
     const/4 v4, 0x1
 
@@ -1184,7 +1156,6 @@
 
 .method public isPopImapEmailAllowed(Landroid/app/enterprise/ContextInfo;)Z
     .locals 11
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1328,30 +1299,24 @@
 
 .method public onAdminAdded(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onAdminRemoved(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onPreAdminRemoval(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public setAllowEmailForwarding(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Z)Z
     .locals 6
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/email/EmailPolicy;->enforceEmailPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -1378,9 +1343,6 @@
 
 .method public setAllowHTMLEmail(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Z)Z
     .locals 6
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/email/EmailPolicy;->enforceEmailPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -1407,9 +1369,6 @@
 
 .method public setEmailNotificationsState(Landroid/app/enterprise/ContextInfo;ZJ)Z
     .locals 9
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
-    .param p3    # J
 
     const/4 v0, 0x0
 

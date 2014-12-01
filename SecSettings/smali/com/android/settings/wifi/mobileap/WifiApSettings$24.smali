@@ -36,7 +36,6 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 4
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Lcom/android/settings/wifi/mobileap/WifiApSettings$24;->this$0:Lcom/android/settings/wifi/mobileap/WifiApSettings;
 

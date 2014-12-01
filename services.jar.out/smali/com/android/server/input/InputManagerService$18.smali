@@ -40,11 +40,6 @@
 # virtual methods
 .method public visitKeyboardLayout(Landroid/content/res/Resources;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V
     .locals 4
-    .param p1    # Landroid/content/res/Resources;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
 
     :try_start_0
     iget-object v0, p0, Lcom/android/server/input/InputManagerService$18;->val$result:[Ljava/lang/String;

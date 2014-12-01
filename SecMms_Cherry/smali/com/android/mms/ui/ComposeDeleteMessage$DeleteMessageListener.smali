@@ -24,10 +24,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/mms/ui/ComposeDeleteMessage;JLjava/lang/String;ZJ)V
     .locals 1
-    .param p2    # J
-    .param p4    # Ljava/lang/String;
-    .param p5    # Z
-    .param p6    # J
 
     iput-object p1, p0, Lcom/android/mms/ui/ComposeDeleteMessage$DeleteMessageListener;->this$0:Lcom/android/mms/ui/ComposeDeleteMessage;
 
@@ -150,8 +146,6 @@
 
 .method public constructor <init>(Lcom/android/mms/ui/ComposeDeleteMessage;Landroid/net/Uri;Z)V
     .locals 0
-    .param p2    # Landroid/net/Uri;
-    .param p3    # Z
 
     iput-object p1, p0, Lcom/android/mms/ui/ComposeDeleteMessage$DeleteMessageListener;->this$0:Lcom/android/mms/ui/ComposeDeleteMessage;
 
@@ -173,8 +167,6 @@
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 14
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     iget-object v12, p0, Lcom/android/mms/ui/ComposeDeleteMessage$DeleteMessageListener;->this$0:Lcom/android/mms/ui/ComposeDeleteMessage;
 
@@ -571,7 +563,6 @@
 
 .method public setDeleteLockedMessage(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/mms/ui/ComposeDeleteMessage$DeleteMessageListener;->this$0:Lcom/android/mms/ui/ComposeDeleteMessage;
 

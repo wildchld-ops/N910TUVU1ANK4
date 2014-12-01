@@ -64,7 +64,6 @@
 
 .method public constructor <init>(Landroid/os/Parcel;)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -222,7 +221,6 @@
 
 .method public setIconPath(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/samsung/dmc/ux/db/PersonalSettingInfo;->strIconPath:Ljava/lang/String;
 
@@ -231,7 +229,6 @@
 
 .method public setIconResID(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/dmc/ux/db/PersonalSettingInfo;->nIconResID:I
 
@@ -240,7 +237,6 @@
 
 .method public setIconType(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/dmc/ux/db/PersonalSettingInfo;->nIconType:I
 
@@ -249,7 +245,6 @@
 
 .method public setSettingID(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/dmc/ux/db/PersonalSettingInfo;->nSettingID:I
 
@@ -258,7 +253,6 @@
 
 .method public setUserName(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/samsung/dmc/ux/db/PersonalSettingInfo;->strUserName:Ljava/lang/String;
 
@@ -267,8 +261,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget v0, p0, Lcom/samsung/dmc/ux/db/PersonalSettingInfo;->nSettingID:I
 

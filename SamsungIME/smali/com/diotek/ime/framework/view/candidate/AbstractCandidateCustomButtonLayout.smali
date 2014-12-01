@@ -18,7 +18,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -35,8 +34,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -53,9 +50,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v0, 0x0
 
@@ -359,7 +353,6 @@
 
 .method protected getTextFontSize(Landroid/widget/Button;)I
     .locals 9
-    .param p1    # Landroid/widget/Button;
 
     const/4 v8, 0x0
 
@@ -440,9 +433,6 @@
 
 .method protected getTextFontSize(Ljava/lang/String;Landroid/graphics/RectF;I)I
     .locals 11
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/graphics/RectF;
-    .param p3    # I
 
     invoke-virtual {p2}, Landroid/graphics/RectF;->width()F
 
@@ -548,7 +538,6 @@
 
 .method public onHoverEvent(Landroid/view/MotionEvent;)Z
     .locals 10
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v9, 0x2
 
@@ -719,7 +708,6 @@
 
 .method public setButtonEnableOnEmailUrlMode(Z)V
     .locals 3
-    .param p1    # Z
 
     const/4 v2, 0x1
 
@@ -784,7 +772,6 @@
 
 .method public setPrevNextButtonEnable(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v2, 0x1
 

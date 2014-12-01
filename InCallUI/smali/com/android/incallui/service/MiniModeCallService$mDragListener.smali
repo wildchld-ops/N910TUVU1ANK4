@@ -36,8 +36,6 @@
 # virtual methods
 .method public onDrag(Landroid/view/View;Landroid/view/DragEvent;)Z
     .locals 21
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/DragEvent;
 
     invoke-virtual/range {p2 .. p2}, Landroid/view/DragEvent;->getAction()I
 

@@ -108,8 +108,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 8
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v3, 0x0
 
@@ -317,7 +315,6 @@
 
 .method static synthetic access$000(Lcom/android/systemui/statusbar/phone/PhoneStatusBarView;)Z
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/phone/PhoneStatusBarView;
 
     invoke-direct {p0}, Lcom/android/systemui/statusbar/phone/PhoneStatusBarView;->checkKnoxHome()Z
 
@@ -336,7 +333,6 @@
 
 .method static synthetic access$100(Lcom/android/systemui/statusbar/phone/PhoneStatusBarView;)Lcom/android/systemui/statusbar/phone/PhoneStatusBarTransitions;
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/phone/PhoneStatusBarView;
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBarView;->mBarTransitions:Lcom/android/systemui/statusbar/phone/PhoneStatusBarTransitions;
 
@@ -345,7 +341,6 @@
 
 .method static synthetic access$200(Lcom/android/systemui/statusbar/phone/PhoneStatusBarView;)I
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/phone/PhoneStatusBarView;
 
     iget v0, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBarView;->mClearCoverMargin:I
 
@@ -354,8 +349,6 @@
 
 .method static synthetic access$202(Lcom/android/systemui/statusbar/phone/PhoneStatusBarView;I)I
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/phone/PhoneStatusBarView;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBarView;->mClearCoverMargin:I
 
@@ -364,7 +357,6 @@
 
 .method static synthetic access$300(Lcom/android/systemui/statusbar/phone/PhoneStatusBarView;)I
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/phone/PhoneStatusBarView;
 
     iget v0, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBarView;->mTickerPaddingLeft:I
 
@@ -373,7 +365,6 @@
 
 .method static synthetic access$400(Lcom/android/systemui/statusbar/phone/PhoneStatusBarView;)I
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/phone/PhoneStatusBarView;
 
     iget v0, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBarView;->mTickerPaddingTop:I
 
@@ -382,7 +373,6 @@
 
 .method static synthetic access$500(Lcom/android/systemui/statusbar/phone/PhoneStatusBarView;)I
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/phone/PhoneStatusBarView;
 
     iget v0, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBarView;->mTickerPaddingRight:I
 
@@ -391,7 +381,6 @@
 
 .method static synthetic access$600(Lcom/android/systemui/statusbar/phone/PhoneStatusBarView;)I
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/phone/PhoneStatusBarView;
 
     iget v0, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBarView;->mTickerPaddingBottom:I
 
@@ -400,7 +389,6 @@
 
 .method static synthetic access$700(Lcom/android/systemui/statusbar/phone/PhoneStatusBarView;)I
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/phone/PhoneStatusBarView;
 
     iget v0, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBarView;->mScoverMargin:I
 
@@ -409,8 +397,6 @@
 
 .method static synthetic access$702(Lcom/android/systemui/statusbar/phone/PhoneStatusBarView;I)I
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/phone/PhoneStatusBarView;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBarView;->mScoverMargin:I
 
@@ -492,7 +478,6 @@
 # virtual methods
 .method public addPanel(Lcom/android/systemui/statusbar/phone/PanelView;)V
     .locals 2
-    .param p1    # Lcom/android/systemui/statusbar/phone/PanelView;
 
     invoke-super {p0, p1}, Lcom/android/systemui/statusbar/phone/PanelBar;->addPanel(Lcom/android/systemui/statusbar/phone/PanelView;)V
 
@@ -540,7 +525,6 @@
 
 .method protected dispatchHoverEvent(Landroid/view/MotionEvent;)Z
     .locals 4
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getAction()I
 
@@ -1008,7 +992,6 @@
 
 .method public onInterceptTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 2
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v0, 0x0
 
@@ -1053,8 +1036,6 @@
 
 .method protected onMeasure(II)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
 
     const/4 v4, -0x1
 
@@ -1131,7 +1112,6 @@
 
 .method public onPanelFullyOpened(Lcom/android/systemui/statusbar/phone/PanelView;)V
     .locals 3
-    .param p1    # Lcom/android/systemui/statusbar/phone/PanelView;
 
     invoke-super {p0, p1}, Lcom/android/systemui/statusbar/phone/PanelBar;->onPanelFullyOpened(Lcom/android/systemui/statusbar/phone/PanelView;)V
 
@@ -1217,8 +1197,6 @@
 
 .method public onRequestSendAccessibilityEvent(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)Z
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/accessibility/AccessibilityEvent;
 
     invoke-super {p0, p1, p2}, Landroid/view/ViewGroup;->onRequestSendAccessibilityEvent(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)Z
 
@@ -1249,7 +1227,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 7
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v6, 0x2
 
@@ -1384,8 +1361,6 @@
 
 .method public panelExpansionChanged(Lcom/android/systemui/statusbar/phone/PanelView;F)V
     .locals 18
-    .param p1    # Lcom/android/systemui/statusbar/phone/PanelView;
-    .param p2    # F
 
     invoke-super/range {p0 .. p2}, Lcom/android/systemui/statusbar/phone/PanelBar;->panelExpansionChanged(Lcom/android/systemui/statusbar/phone/PanelView;F)V
 
@@ -1654,7 +1629,6 @@
 
 .method public selectPanelForTouch(Landroid/view/MotionEvent;)Lcom/android/systemui/statusbar/phone/PanelView;
     .locals 8
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v2, 0x1
 
@@ -1770,7 +1744,6 @@
 
 .method public setBar(Lcom/android/systemui/statusbar/phone/PhoneStatusBar;)V
     .locals 0
-    .param p1    # Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
 
     iput-object p1, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBarView;->mBar:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
 
@@ -1779,7 +1752,6 @@
 
 .method public setCallBackground(I)V
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -1829,7 +1801,6 @@
 
 .method public showCallOnGoingView(Z)V
     .locals 4
-    .param p1    # Z
 
     const/4 v3, -0x1
 
@@ -1890,7 +1861,6 @@
 
 .method public startOpeningPanel(Lcom/android/systemui/statusbar/phone/PanelView;)V
     .locals 1
-    .param p1    # Lcom/android/systemui/statusbar/phone/PanelView;
 
     invoke-super {p0, p1}, Lcom/android/systemui/statusbar/phone/PanelBar;->startOpeningPanel(Lcom/android/systemui/statusbar/phone/PanelView;)V
 

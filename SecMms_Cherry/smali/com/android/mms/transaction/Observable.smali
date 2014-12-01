@@ -46,7 +46,6 @@
 # virtual methods
 .method public attach(Lcom/android/mms/transaction/Observer;)V
     .locals 2
-    .param p1    # Lcom/android/mms/transaction/Observer;
 
     invoke-static {}, Lcom/android/mms/MmsConfig;->getEnableMmsTransactionCustomize4Korea()Z
 
@@ -87,7 +86,6 @@
 
 .method public detach(Lcom/android/mms/transaction/Observer;)V
     .locals 2
-    .param p1    # Lcom/android/mms/transaction/Observer;
 
     iget-object v1, p0, Lcom/android/mms/transaction/Observable;->mObservers:Ljava/util/ArrayList;
 

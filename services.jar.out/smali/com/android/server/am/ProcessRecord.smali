@@ -316,10 +316,6 @@
 
 .method constructor <init>(Lcom/android/internal/os/BatteryStatsImpl;Landroid/content/pm/ApplicationInfo;Ljava/lang/String;I)V
     .locals 5
-    .param p1    # Lcom/android/internal/os/BatteryStatsImpl;
-    .param p2    # Landroid/content/pm/ApplicationInfo;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
 
     const/16 v4, -0x64
 
@@ -460,7 +456,6 @@
 
 .method public static setSmartDHADebugMode(Z)V
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/server/am/ProcessRecord;->SMART_DHA_DEBUG:Z
 
@@ -471,8 +466,6 @@
 # virtual methods
 .method public addPackage(Ljava/lang/String;Lcom/android/server/am/ProcessStatsService;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/server/am/ProcessStatsService;
 
     iget-object v1, p0, Lcom/android/server/am/ProcessRecord;->pkgList:Landroid/util/ArrayMap;
 
@@ -530,8 +523,6 @@
 
 .method dump(Ljava/io/PrintWriter;Ljava/lang/String;)V
     .locals 13
-    .param p1    # Ljava/io/PrintWriter;
-    .param p2    # Ljava/lang/String;
 
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 
@@ -1811,7 +1802,6 @@
 
 .method public forceProcessStateUpTo(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Lcom/android/server/am/ProcessRecord;->repProcState:I
 
@@ -1827,8 +1817,6 @@
 
 .method public getHistoricallyAvgUSS(Lcom/android/server/am/ProcessStatsService;I)J
     .locals 14
-    .param p1    # Lcom/android/server/am/ProcessStatsService;
-    .param p2    # I
 
     const-wide/16 v0, 0x0
 
@@ -2255,8 +2243,6 @@
 
 .method public makeActive(Landroid/app/IApplicationThread;Lcom/android/server/am/ProcessStatsService;)V
     .locals 8
-    .param p1    # Landroid/app/IApplicationThread;
-    .param p2    # Lcom/android/server/am/ProcessStatsService;
 
     iget-object v1, p0, Lcom/android/server/am/ProcessRecord;->thread:Landroid/app/IApplicationThread;
 
@@ -2495,7 +2481,6 @@
 
 .method public makeInactive(Lcom/android/server/am/ProcessStatsService;)V
     .locals 9
-    .param p1    # Lcom/android/server/am/ProcessStatsService;
 
     const/4 v8, 0x0
 
@@ -2566,7 +2551,6 @@
 
 .method modifyRawOomAdj(I)I
     .locals 1
-    .param p1    # I
 
     iget-boolean v0, p0, Lcom/android/server/am/ProcessRecord;->hasAboveClient:Z
 
@@ -2617,7 +2601,6 @@
 
 .method public resetPackageList(Lcom/android/server/am/ProcessStatsService;)V
     .locals 10
-    .param p1    # Lcom/android/server/am/ProcessStatsService;
 
     const/4 v9, 0x1
 
@@ -2734,7 +2717,6 @@
 
 .method public setPid(I)V
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -2811,7 +2793,6 @@
 
 .method toShortString(Ljava/lang/StringBuilder;)V
     .locals 3
-    .param p1    # Ljava/lang/StringBuilder;
 
     const/16 v2, 0x2710
 

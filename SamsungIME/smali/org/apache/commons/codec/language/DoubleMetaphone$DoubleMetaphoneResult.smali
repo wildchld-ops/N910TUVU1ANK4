@@ -27,8 +27,6 @@
 # direct methods
 .method public constructor <init>(Lorg/apache/commons/codec/language/DoubleMetaphone;I)V
     .locals 2
-    .param p1    # Lorg/apache/commons/codec/language/DoubleMetaphone;
-    .param p2    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -67,7 +65,6 @@
 # virtual methods
 .method public append(C)V
     .locals 0
-    .param p1    # C
 
     invoke-virtual {p0, p1}, Lorg/apache/commons/codec/language/DoubleMetaphone$DoubleMetaphoneResult;->appendPrimary(C)V
 
@@ -78,8 +75,6 @@
 
 .method public append(CC)V
     .locals 0
-    .param p1    # C
-    .param p2    # C
 
     invoke-virtual {p0, p1}, Lorg/apache/commons/codec/language/DoubleMetaphone$DoubleMetaphoneResult;->appendPrimary(C)V
 
@@ -90,7 +85,6 @@
 
 .method public append(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lorg/apache/commons/codec/language/DoubleMetaphone$DoubleMetaphoneResult;->appendPrimary(Ljava/lang/String;)V
 
@@ -101,8 +95,6 @@
 
 .method public append(Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lorg/apache/commons/codec/language/DoubleMetaphone$DoubleMetaphoneResult;->appendPrimary(Ljava/lang/String;)V
 
@@ -113,7 +105,6 @@
 
 .method public appendAlternate(C)V
     .locals 2
-    .param p1    # C
 
     iget-object v0, p0, Lorg/apache/commons/codec/language/DoubleMetaphone$DoubleMetaphoneResult;->alternate:Ljava/lang/StringBuffer;
 
@@ -135,7 +126,6 @@
 
 .method public appendAlternate(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget v1, p0, Lorg/apache/commons/codec/language/DoubleMetaphone$DoubleMetaphoneResult;->maxLength:I
 
@@ -176,7 +166,6 @@
 
 .method public appendPrimary(C)V
     .locals 2
-    .param p1    # C
 
     iget-object v0, p0, Lorg/apache/commons/codec/language/DoubleMetaphone$DoubleMetaphoneResult;->primary:Ljava/lang/StringBuffer;
 
@@ -198,7 +187,6 @@
 
 .method public appendPrimary(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget v1, p0, Lorg/apache/commons/codec/language/DoubleMetaphone$DoubleMetaphoneResult;->maxLength:I
 

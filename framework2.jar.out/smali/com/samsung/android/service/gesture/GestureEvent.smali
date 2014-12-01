@@ -86,7 +86,6 @@
 
 .method public constructor <init>(Landroid/os/Parcel;)V
     .locals 0
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -152,7 +151,6 @@
 
 .method public static obtain(Lcom/samsung/android/service/gesture/GestureEvent;)Lcom/samsung/android/service/gesture/GestureEvent;
     .locals 2
-    .param p0    # Lcom/samsung/android/service/gesture/GestureEvent;
 
     invoke-static {}, Lcom/samsung/android/service/gesture/GestureEvent;->obtain()Lcom/samsung/android/service/gesture/GestureEvent;
 
@@ -175,7 +173,6 @@
 
 .method private readFromParcel(Landroid/os/Parcel;)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
@@ -281,7 +278,6 @@
 
 .method public setEvent(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/android/service/gesture/GestureEvent;->mEvent:I
 
@@ -290,7 +286,6 @@
 
 .method public setProvider(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/samsung/android/service/gesture/GestureEvent;->mProvider:Ljava/lang/String;
 
@@ -299,8 +294,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 

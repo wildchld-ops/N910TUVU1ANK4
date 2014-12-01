@@ -12,7 +12,6 @@
 # direct methods
 .method constructor <init>(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Landroid/hardware/contextaware/aggregator/lpp/log/DataLogging;-><init>()V
 
@@ -33,7 +32,6 @@
 # virtual methods
 .method public LogInit(Ljava/lang/String;)V
     .locals 23
-    .param p1    # Ljava/lang/String;
 
     invoke-super/range {p0 .. p0}, Landroid/hardware/contextaware/aggregator/lpp/log/DataLogging;->LogInit()V
 
@@ -366,7 +364,6 @@
 
 .method public addLogStream(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/hardware/contextaware/aggregator/lpp/log/LPPDataLogging;->m_LoggingData:Ljava/util/List;
 
@@ -490,7 +487,6 @@
 
 .method public setFileType(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/hardware/contextaware/aggregator/lpp/log/LPPDataLogging;->FileType:Ljava/lang/String;
 

@@ -32,8 +32,6 @@
 
 .method protected constructor <init>(Ljava/io/FileFilter;I)V
     .locals 0
-    .param p1    # Ljava/io/FileFilter;
-    .param p2    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -46,9 +44,6 @@
 
 .method protected constructor <init>(Lorg/apache/commons/io/filefilter/IOFileFilter;Lorg/apache/commons/io/filefilter/IOFileFilter;I)V
     .locals 1
-    .param p1    # Lorg/apache/commons/io/filefilter/IOFileFilter;
-    .param p2    # Lorg/apache/commons/io/filefilter/IOFileFilter;
-    .param p3    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -101,9 +96,6 @@
 
 .method private walk(Ljava/io/File;ILjava/util/Collection;)V
     .locals 5
-    .param p1    # Ljava/io/File;
-    .param p2    # I
-    .param p3    # Ljava/util/Collection;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -200,9 +192,6 @@
 # virtual methods
 .method protected final checkIfCancelled(Ljava/io/File;ILjava/util/Collection;)V
     .locals 1
-    .param p1    # Ljava/io/File;
-    .param p2    # I
-    .param p3    # Ljava/util/Collection;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -227,9 +216,6 @@
 
 .method protected handleCancelled(Ljava/io/File;Ljava/util/Collection;Lorg/apache/commons/io/DirectoryWalker$CancelException;)V
     .locals 0
-    .param p1    # Ljava/io/File;
-    .param p2    # Ljava/util/Collection;
-    .param p3    # Lorg/apache/commons/io/DirectoryWalker$CancelException;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -241,9 +227,6 @@
 
 .method protected handleDirectory(Ljava/io/File;ILjava/util/Collection;)Z
     .locals 1
-    .param p1    # Ljava/io/File;
-    .param p2    # I
-    .param p3    # Ljava/util/Collection;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -257,9 +240,6 @@
 
 .method protected handleDirectoryEnd(Ljava/io/File;ILjava/util/Collection;)V
     .locals 0
-    .param p1    # Ljava/io/File;
-    .param p2    # I
-    .param p3    # Ljava/util/Collection;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -271,9 +251,6 @@
 
 .method protected handleDirectoryStart(Ljava/io/File;ILjava/util/Collection;)V
     .locals 0
-    .param p1    # Ljava/io/File;
-    .param p2    # I
-    .param p3    # Ljava/util/Collection;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -285,7 +262,6 @@
 
 .method protected handleEnd(Ljava/util/Collection;)V
     .locals 0
-    .param p1    # Ljava/util/Collection;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -297,9 +273,6 @@
 
 .method protected handleFile(Ljava/io/File;ILjava/util/Collection;)V
     .locals 0
-    .param p1    # Ljava/io/File;
-    .param p2    # I
-    .param p3    # Ljava/util/Collection;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -311,9 +284,6 @@
 
 .method protected handleIsCancelled(Ljava/io/File;ILjava/util/Collection;)Z
     .locals 1
-    .param p1    # Ljava/io/File;
-    .param p2    # I
-    .param p3    # Ljava/util/Collection;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -327,9 +297,6 @@
 
 .method protected handleRestricted(Ljava/io/File;ILjava/util/Collection;)V
     .locals 0
-    .param p1    # Ljava/io/File;
-    .param p2    # I
-    .param p3    # Ljava/util/Collection;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -341,8 +308,6 @@
 
 .method protected handleStart(Ljava/io/File;Ljava/util/Collection;)V
     .locals 0
-    .param p1    # Ljava/io/File;
-    .param p2    # Ljava/util/Collection;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -354,8 +319,6 @@
 
 .method protected final walk(Ljava/io/File;Ljava/util/Collection;)V
     .locals 3
-    .param p1    # Ljava/io/File;
-    .param p2    # Ljava/util/Collection;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

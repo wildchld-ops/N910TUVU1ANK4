@@ -40,7 +40,6 @@
 
 .method public constructor <init>(Landroid/accounts/IAccountAuthenticatorResponse;)V
     .locals 0
-    .param p1    # Landroid/accounts/IAccountAuthenticatorResponse;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -51,7 +50,6 @@
 
 .method public constructor <init>(Landroid/os/Parcel;)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -80,8 +78,6 @@
 
 .method public onError(ILjava/lang/String;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const-string v0, "AccountAuthenticator"
 
@@ -180,7 +176,6 @@
 
 .method public onResult(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "AccountAuthenticator"
 
@@ -239,8 +234,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v0, p0, Landroid/accounts/AccountAuthenticatorResponse;->mAccountAuthenticatorResponse:Landroid/accounts/IAccountAuthenticatorResponse;
 

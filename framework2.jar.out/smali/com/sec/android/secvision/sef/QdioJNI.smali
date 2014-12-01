@@ -37,7 +37,6 @@
 
 .method public static checkAudioInJPEG(Ljava/lang/String;)Lcom/sec/android/secvision/sef/SEF$QdioJPEGData;
     .locals 7
-    .param p0    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -176,7 +175,6 @@
 
 .method public static checkFileString(Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     if-eqz p0, :cond_0
 
@@ -202,8 +200,6 @@
 
 .method public static copyAdioInJPEGtoPNG(Ljava/lang/String;Ljava/lang/String;)I
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/sec/android/secvision/sef/QdioJNI;->checkFileString(Ljava/lang/String;)Z
 
@@ -233,8 +229,6 @@
 
 .method public static getAudioStreamBuffer(Lcom/sec/android/secvision/sef/SEF$QdioJPEGData;I)[B
     .locals 9
-    .param p0    # Lcom/sec/android/secvision/sef/SEF$QdioJPEGData;
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -509,7 +503,6 @@
 
 .method public static isJPEG(Ljava/lang/String;)I
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     const/4 v0, -0x1
 

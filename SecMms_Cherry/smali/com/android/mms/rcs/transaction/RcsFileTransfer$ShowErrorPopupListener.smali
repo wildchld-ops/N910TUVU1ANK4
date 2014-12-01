@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Lcom/android/mms/rcs/transaction/RcsFileTransfer;Lcom/android/mms/rcs/transaction/RcsFileTransfer$1;)V
     .locals 0
-    .param p1    # Lcom/android/mms/rcs/transaction/RcsFileTransfer;
-    .param p2    # Lcom/android/mms/rcs/transaction/RcsFileTransfer$1;
 
     invoke-direct {p0, p1}, Lcom/android/mms/rcs/transaction/RcsFileTransfer$ShowErrorPopupListener;-><init>(Lcom/android/mms/rcs/transaction/RcsFileTransfer;)V
 
@@ -46,8 +44,6 @@
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 0
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     invoke-interface {p1}, Landroid/content/DialogInterface;->dismiss()V
 

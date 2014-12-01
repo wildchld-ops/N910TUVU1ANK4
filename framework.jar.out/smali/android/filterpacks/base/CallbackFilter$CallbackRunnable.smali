@@ -32,10 +32,6 @@
 # direct methods
 .method public constructor <init>(Landroid/filterpacks/base/CallbackFilter;Landroid/filterfw/core/FilterContext$OnFrameReceivedListener;Landroid/filterfw/core/Filter;Landroid/filterfw/core/Frame;Ljava/lang/Object;)V
     .locals 0
-    .param p2    # Landroid/filterfw/core/FilterContext$OnFrameReceivedListener;
-    .param p3    # Landroid/filterfw/core/Filter;
-    .param p4    # Landroid/filterfw/core/Frame;
-    .param p5    # Ljava/lang/Object;
 
     iput-object p1, p0, Landroid/filterpacks/base/CallbackFilter$CallbackRunnable;->this$0:Landroid/filterpacks/base/CallbackFilter;
 

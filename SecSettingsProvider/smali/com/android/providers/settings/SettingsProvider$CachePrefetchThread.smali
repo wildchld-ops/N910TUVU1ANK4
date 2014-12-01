@@ -23,7 +23,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/providers/settings/SettingsProvider;I)V
     .locals 1
-    .param p2    # I
 
     iput-object p1, p0, Lcom/android/providers/settings/SettingsProvider$CachePrefetchThread;->this$0:Lcom/android/providers/settings/SettingsProvider;
 

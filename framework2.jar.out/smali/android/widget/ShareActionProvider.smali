@@ -39,7 +39,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Landroid/view/ActionProvider;-><init>(Landroid/content/Context;)V
 
@@ -70,7 +69,6 @@
 
 .method static synthetic access$100(Landroid/widget/ShareActionProvider;)Landroid/content/Context;
     .locals 1
-    .param p0    # Landroid/widget/ShareActionProvider;
 
     iget-object v0, p0, Landroid/widget/ShareActionProvider;->mContext:Landroid/content/Context;
 
@@ -79,7 +77,6 @@
 
 .method static synthetic access$200(Landroid/widget/ShareActionProvider;)Ljava/lang/String;
     .locals 1
-    .param p0    # Landroid/widget/ShareActionProvider;
 
     iget-object v0, p0, Landroid/widget/ShareActionProvider;->mShareHistoryFileName:Ljava/lang/String;
 
@@ -88,7 +85,6 @@
 
 .method static synthetic access$400(Landroid/widget/ShareActionProvider;)Landroid/widget/ShareActionProvider$OnShareTargetSelectedListener;
     .locals 1
-    .param p0    # Landroid/widget/ShareActionProvider;
 
     iget-object v0, p0, Landroid/widget/ShareActionProvider;->mOnShareTargetSelectedListener:Landroid/widget/ShareActionProvider$OnShareTargetSelectedListener;
 
@@ -237,7 +233,6 @@
 
 .method public onPrepareSubMenu(Landroid/view/SubMenu;)V
     .locals 10
-    .param p1    # Landroid/view/SubMenu;
 
     const/4 v9, 0x0
 
@@ -354,7 +349,6 @@
 
 .method public setOnShareTargetSelectedListener(Landroid/widget/ShareActionProvider$OnShareTargetSelectedListener;)V
     .locals 0
-    .param p1    # Landroid/widget/ShareActionProvider$OnShareTargetSelectedListener;
 
     iput-object p1, p0, Landroid/widget/ShareActionProvider;->mOnShareTargetSelectedListener:Landroid/widget/ShareActionProvider$OnShareTargetSelectedListener;
 
@@ -365,7 +359,6 @@
 
 .method public setShareHistoryFileName(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/widget/ShareActionProvider;->mShareHistoryFileName:Ljava/lang/String;
 
@@ -376,7 +369,6 @@
 
 .method public setShareIntent(Landroid/content/Intent;)V
     .locals 3
-    .param p1    # Landroid/content/Intent;
 
     iget-object v1, p0, Landroid/widget/ShareActionProvider;->mContext:Landroid/content/Context;
 

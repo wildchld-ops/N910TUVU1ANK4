@@ -14,10 +14,6 @@
 
 .method public static gluPerspective(FFFF)V
     .locals 10
-    .param p0    # F
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
 
     float-to-double v4, p2
 

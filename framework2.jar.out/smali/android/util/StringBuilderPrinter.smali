@@ -13,7 +13,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/StringBuilder;)V
     .locals 0
-    .param p1    # Ljava/lang/StringBuilder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -26,7 +25,6 @@
 # virtual methods
 .method public println(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/16 v2, 0xa
 

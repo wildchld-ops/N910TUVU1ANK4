@@ -35,7 +35,6 @@
 
 .method constructor <init>(Z)V
     .locals 0
-    .param p1    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -48,12 +47,6 @@
 # virtual methods
 .method public filter(Ljava/lang/CharSequence;IILandroid/text/Spanned;II)Ljava/lang/CharSequence;
     .locals 5
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/text/Spanned;
-    .param p5    # I
-    .param p6    # I
 
     invoke-virtual {p0}, Landroid/text/LoginFilter;->onStart()V
 
@@ -172,7 +165,6 @@
 
 .method public onInvalidCharacter(C)V
     .locals 0
-    .param p1    # C
 
     return-void
 .end method

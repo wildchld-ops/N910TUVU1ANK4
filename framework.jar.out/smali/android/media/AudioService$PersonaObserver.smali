@@ -45,7 +45,6 @@
 
 .method public onKeyGuardStateChanged(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
@@ -112,8 +111,6 @@
 
 .method public onStateChange(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     return-void
 .end method

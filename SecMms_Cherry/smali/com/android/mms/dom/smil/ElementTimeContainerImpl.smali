@@ -9,7 +9,6 @@
 # direct methods
 .method constructor <init>(Lorg/w3c/dom/smil/SMILElement;)V
     .locals 0
-    .param p1    # Lorg/w3c/dom/smil/SMILElement;
 
     invoke-direct {p0, p1}, Lcom/android/mms/dom/smil/ElementTimeImpl;-><init>(Lorg/w3c/dom/smil/SMILElement;)V
 

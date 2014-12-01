@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Lcom/sec/epdg/smartwifi/SmartWifiAdapter;Landroid/os/Handler;)V
     .locals 0
-    .param p2    # Landroid/os/Handler;
 
     iput-object p1, p0, Lcom/sec/epdg/smartwifi/SmartWifiAdapter$SmartWifiRSSIListener;->this$0:Lcom/sec/epdg/smartwifi/SmartWifiAdapter;
 
@@ -34,8 +33,6 @@
 # virtual methods
 .method public processFastPath(Landroid/content/Context;Landroid/content/Intent;)Ljava/lang/Object;
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     const-string v1, "newRssi"
 
@@ -86,7 +83,6 @@
 
 .method public processSlowPath(Ljava/lang/Object;)V
     .locals 5
-    .param p1    # Ljava/lang/Object;
 
     move-object v0, p1
 

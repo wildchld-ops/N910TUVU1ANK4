@@ -46,7 +46,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
 
     const/4 v4, 0x1
 
@@ -139,7 +138,6 @@
 
 .method static synthetic access$300(Landroid/hardware/contextaware/manager/ContextAwareService;)Ljava/util/concurrent/locks/ReentrantLock;
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/manager/ContextAwareService;
 
     iget-object v0, p0, Landroid/hardware/contextaware/manager/ContextAwareService;->mMutex:Ljava/util/concurrent/locks/ReentrantLock;
 
@@ -148,7 +146,6 @@
 
 .method static synthetic access$400(Landroid/hardware/contextaware/manager/ContextAwareService;)Landroid/hardware/contextaware/manager/ContextManager;
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/manager/ContextAwareService;
 
     iget-object v0, p0, Landroid/hardware/contextaware/manager/ContextAwareService;->mContextManager:Landroid/hardware/contextaware/manager/ContextManager;
 
@@ -157,8 +154,6 @@
 
 .method static synthetic access$502(Landroid/hardware/contextaware/manager/ContextAwareService;Z)Z
     .locals 0
-    .param p0    # Landroid/hardware/contextaware/manager/ContextAwareService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/hardware/contextaware/manager/ContextAwareService;->mContextCollectionResultNotifyCompletion:Z
 
@@ -167,8 +162,6 @@
 
 .method static synthetic access$602(Landroid/hardware/contextaware/manager/ContextAwareService;Z)Z
     .locals 0
-    .param p0    # Landroid/hardware/contextaware/manager/ContextAwareService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/hardware/contextaware/manager/ContextAwareService;->mCmdProcessResultNotifyCompletion:Z
 
@@ -177,7 +170,6 @@
 
 .method private displayUsedCountForService(I)V
     .locals 3
-    .param p1    # I
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -284,9 +276,6 @@
 
 .method private doCommendProcess(Ljava/lang/String;Landroid/hardware/contextaware/manager/ContextAwareService$Listener;I)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/hardware/contextaware/manager/ContextAwareService$Listener;
-    .param p3    # I
 
     const/4 v5, 0x1
 
@@ -550,8 +539,6 @@
 
 .method private isUsableService(Landroid/hardware/contextaware/manager/ContextAwareService$Listener;I)Z
     .locals 2
-    .param p1    # Landroid/hardware/contextaware/manager/ContextAwareService$Listener;
-    .param p2    # I
 
     # getter for: Landroid/hardware/contextaware/manager/ContextAwareService$Listener;->mServices:Ljava/util/concurrent/ConcurrentHashMap;
     invoke-static {p1}, Landroid/hardware/contextaware/manager/ContextAwareService$Listener;->access$200(Landroid/hardware/contextaware/manager/ContextAwareService$Listener;)Ljava/util/concurrent/ConcurrentHashMap;
@@ -776,8 +763,6 @@
 # virtual methods
 .method public final getContextInfo(Landroid/os/IBinder;I)V
     .locals 8
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # I
 
     const/4 v7, 0x1
 
@@ -1117,8 +1102,6 @@
 
 .method public final registerCallback(Landroid/os/IBinder;I)V
     .locals 7
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1310,7 +1293,6 @@
 
 .method public final resetCAService(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Landroid/hardware/contextaware/manager/ContextAwareService;->mMutex:Ljava/util/concurrent/locks/ReentrantLock;
 
@@ -1433,10 +1415,6 @@
 
 .method public final setCALogger(ZZIZ)V
     .locals 0
-    .param p1    # Z
-    .param p2    # Z
-    .param p3    # I
-    .param p4    # Z
 
     invoke-static {p1}, Landroid/hardware/contextaware/utilbundle/logger/CaLogger;->setConsoleLoggingEnable(Z)V
 
@@ -1449,9 +1427,6 @@
 
 .method public final setCAProperty(IILandroid/hardware/contextaware/manager/ContextAwarePropertyBundle;)Z
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/hardware/contextaware/manager/ContextAwarePropertyBundle;
 
     const/4 v0, 0x0
 
@@ -1574,7 +1549,6 @@
 
 .method public final setCmdProcessResultNotifyCompletion(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/hardware/contextaware/manager/ContextAwareService;->mCmdProcessResultNotifyCompletion:Z
 
@@ -1583,9 +1557,6 @@
 
 .method public final setScenarioForDebugging(II[B)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [B
 
     iget-object v0, p0, Landroid/hardware/contextaware/manager/ContextAwareService;->mAutoTest:Landroid/hardware/contextaware/utilbundle/autotest/CaAutoTestScenarioManager;
 
@@ -1598,8 +1569,6 @@
 
 .method public final setScenarioForTest(II)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Landroid/hardware/contextaware/manager/ContextAwareService;->mAutoTest:Landroid/hardware/contextaware/utilbundle/autotest/CaAutoTestScenarioManager;
 
@@ -1612,7 +1581,6 @@
 
 .method public final setVersion(I)V
     .locals 2
-    .param p1    # I
 
     iget-boolean v0, p0, Landroid/hardware/contextaware/manager/ContextAwareService;->isVersionSetting:Z
 
@@ -1689,8 +1657,6 @@
 
 .method public final unregisterCallback(Landroid/os/IBinder;I)Z
     .locals 6
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1879,8 +1845,6 @@
 
 .method public final updateContext(Ljava/lang/String;Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Bundle;
 
     invoke-static {}, Landroid/os/Message;->obtain()Landroid/os/Message;
 

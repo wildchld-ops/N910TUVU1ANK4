@@ -33,7 +33,6 @@
 # virtual methods
 .method public declared-synchronized handleMessage(Landroid/os/Message;)V
     .locals 3
-    .param p1    # Landroid/os/Message;
 
     monitor-enter p0
 

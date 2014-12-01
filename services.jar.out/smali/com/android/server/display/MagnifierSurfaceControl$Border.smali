@@ -39,10 +39,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;III)V
     .locals 9
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/4 v8, 0x0
 
@@ -376,7 +372,6 @@
 
 .method public setPosition(Landroid/graphics/Point;)V
     .locals 4
-    .param p1    # Landroid/graphics/Point;
 
     iget-object v1, p0, Lcom/android/server/display/MagnifierSurfaceControl$Border;->mBorderLock:Ljava/lang/Object;
 
@@ -411,8 +406,6 @@
 
 .method public setSize(II)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     const-string v0, "Magnifier.Border"
 

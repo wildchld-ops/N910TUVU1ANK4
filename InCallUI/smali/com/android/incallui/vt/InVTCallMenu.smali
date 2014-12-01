@@ -28,7 +28,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -85,7 +84,6 @@
 
 .method static synthetic access$000(Lcom/android/incallui/vt/InVTCallMenu;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/incallui/vt/InVTCallMenu;
 
     iget-object v0, p0, Lcom/android/incallui/InCallMenu;->mContext:Landroid/content/Context;
 
@@ -94,7 +92,6 @@
 
 .method static synthetic access$100(Lcom/android/incallui/vt/InVTCallMenu;)[Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/incallui/vt/InVTCallMenu;
 
     iget-object v0, p0, Lcom/android/incallui/vt/InVTCallMenu;->mOutgoingImageList:[Ljava/lang/String;
 
@@ -103,7 +100,6 @@
 
 .method static synthetic access$1000(Lcom/android/incallui/vt/InVTCallMenu;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/incallui/vt/InVTCallMenu;
 
     iget-object v0, p0, Lcom/android/incallui/InCallMenu;->mContext:Landroid/content/Context;
 
@@ -112,7 +108,6 @@
 
 .method static synthetic access$1100(Lcom/android/incallui/vt/InVTCallMenu;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/incallui/vt/InVTCallMenu;
 
     iget-object v0, p0, Lcom/android/incallui/InCallMenu;->mContext:Landroid/content/Context;
 
@@ -121,7 +116,6 @@
 
 .method static synthetic access$1200(Lcom/android/incallui/vt/InVTCallMenu;)Landroid/app/AlertDialog;
     .locals 1
-    .param p0    # Lcom/android/incallui/vt/InVTCallMenu;
 
     iget-object v0, p0, Lcom/android/incallui/vt/InVTCallMenu;->mVideoRecordFailDialog:Landroid/app/AlertDialog;
 
@@ -130,8 +124,6 @@
 
 .method static synthetic access$1202(Lcom/android/incallui/vt/InVTCallMenu;Landroid/app/AlertDialog;)Landroid/app/AlertDialog;
     .locals 0
-    .param p0    # Lcom/android/incallui/vt/InVTCallMenu;
-    .param p1    # Landroid/app/AlertDialog;
 
     iput-object p1, p0, Lcom/android/incallui/vt/InVTCallMenu;->mVideoRecordFailDialog:Landroid/app/AlertDialog;
 
@@ -140,7 +132,6 @@
 
 .method static synthetic access$200(Lcom/android/incallui/vt/InVTCallMenu;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/incallui/vt/InVTCallMenu;
 
     iget-object v0, p0, Lcom/android/incallui/InCallMenu;->mContext:Landroid/content/Context;
 
@@ -149,7 +140,6 @@
 
 .method static synthetic access$300(Lcom/android/incallui/vt/InVTCallMenu;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/incallui/vt/InVTCallMenu;
 
     iget-object v0, p0, Lcom/android/incallui/InCallMenu;->mContext:Landroid/content/Context;
 
@@ -158,7 +148,6 @@
 
 .method static synthetic access$400(Lcom/android/incallui/vt/InVTCallMenu;)Z
     .locals 1
-    .param p0    # Lcom/android/incallui/vt/InVTCallMenu;
 
     iget-boolean v0, p0, Lcom/android/incallui/vt/InVTCallMenu;->mIsSelectedImage:Z
 
@@ -167,8 +156,6 @@
 
 .method static synthetic access$402(Lcom/android/incallui/vt/InVTCallMenu;Z)Z
     .locals 0
-    .param p0    # Lcom/android/incallui/vt/InVTCallMenu;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/incallui/vt/InVTCallMenu;->mIsSelectedImage:Z
 
@@ -177,7 +164,6 @@
 
 .method static synthetic access$500(Lcom/android/incallui/vt/InVTCallMenu;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/incallui/vt/InVTCallMenu;
 
     iget-object v0, p0, Lcom/android/incallui/InCallMenu;->mContext:Landroid/content/Context;
 
@@ -186,8 +172,6 @@
 
 .method static synthetic access$600(Lcom/android/incallui/vt/InVTCallMenu;I)V
     .locals 0
-    .param p0    # Lcom/android/incallui/vt/InVTCallMenu;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/incallui/vt/InVTCallMenu;->showDialog(I)V
 
@@ -196,7 +180,6 @@
 
 .method static synthetic access$700(Lcom/android/incallui/vt/InVTCallMenu;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/incallui/vt/InVTCallMenu;
 
     iget-object v0, p0, Lcom/android/incallui/InCallMenu;->mContext:Landroid/content/Context;
 
@@ -205,7 +188,6 @@
 
 .method static synthetic access$800(Lcom/android/incallui/vt/InVTCallMenu;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/incallui/vt/InVTCallMenu;
 
     iget-object v0, p0, Lcom/android/incallui/InCallMenu;->mContext:Landroid/content/Context;
 
@@ -214,7 +196,6 @@
 
 .method static synthetic access$900(Lcom/android/incallui/vt/InVTCallMenu;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/incallui/vt/InVTCallMenu;
 
     iget-object v0, p0, Lcom/android/incallui/InCallMenu;->mContext:Landroid/content/Context;
 
@@ -223,7 +204,6 @@
 
 .method private prepareOptionMenuForEasyMode(Landroid/view/Menu;)Z
     .locals 7
-    .param p1    # Landroid/view/Menu;
 
     const v6, 0x7f0e0358
 
@@ -320,7 +300,6 @@
 
 .method private showDialog(I)V
     .locals 12
-    .param p1    # I
 
     iget-object v8, p0, Lcom/android/incallui/InCallMenu;->mContext:Landroid/content/Context;
 
@@ -1096,7 +1075,6 @@
 
 .method protected log(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "InVTCallMenu"
 
@@ -1107,8 +1085,6 @@
 
 .method protected log(Ljava/lang/String;Z)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const-string v0, "InVTCallMenu"
 
@@ -1125,7 +1101,6 @@
 
 .method protected optionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 3
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v0, 0x1
 
@@ -1324,7 +1299,6 @@
 
 .method protected prepareOptionsMenu(Landroid/view/Menu;)Z
     .locals 14
-    .param p1    # Landroid/view/Menu;
 
     const v13, 0x7f0e0358
 

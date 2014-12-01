@@ -50,11 +50,6 @@
 
 .method private doOneBackup(Landroid/os/ParcelFileDescriptor;Landroid/app/backup/BackupDataOutput;Landroid/os/ParcelFileDescriptor;Landroid/app/backup/BackupHelperDispatcher$Header;Landroid/app/backup/BackupHelper;)V
     .locals 6
-    .param p1    # Landroid/os/ParcelFileDescriptor;
-    .param p2    # Landroid/app/backup/BackupDataOutput;
-    .param p3    # Landroid/os/ParcelFileDescriptor;
-    .param p4    # Landroid/app/backup/BackupHelperDispatcher$Header;
-    .param p5    # Landroid/app/backup/BackupHelper;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -161,8 +156,6 @@
 # virtual methods
 .method public addHelper(Ljava/lang/String;Landroid/app/backup/BackupHelper;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/app/backup/BackupHelper;
 
     iget-object v0, p0, Landroid/app/backup/BackupHelperDispatcher;->mHelpers:Ljava/util/TreeMap;
 
@@ -173,9 +166,6 @@
 
 .method public performBackup(Landroid/os/ParcelFileDescriptor;Landroid/app/backup/BackupDataOutput;Landroid/os/ParcelFileDescriptor;)V
     .locals 12
-    .param p1    # Landroid/os/ParcelFileDescriptor;
-    .param p2    # Landroid/app/backup/BackupDataOutput;
-    .param p3    # Landroid/os/ParcelFileDescriptor;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -369,9 +359,6 @@
 
 .method public performRestore(Landroid/app/backup/BackupDataInput;ILandroid/os/ParcelFileDescriptor;)V
     .locals 10
-    .param p1    # Landroid/app/backup/BackupDataInput;
-    .param p2    # I
-    .param p3    # Landroid/os/ParcelFileDescriptor;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

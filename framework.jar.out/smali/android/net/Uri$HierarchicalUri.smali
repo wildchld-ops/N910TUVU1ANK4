@@ -37,11 +37,6 @@
 # direct methods
 .method private constructor <init>(Ljava/lang/String;Landroid/net/Uri$Part;Landroid/net/Uri$PathPart;Landroid/net/Uri$Part;Landroid/net/Uri$Part;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/net/Uri$Part;
-    .param p3    # Landroid/net/Uri$PathPart;
-    .param p4    # Landroid/net/Uri$Part;
-    .param p5    # Landroid/net/Uri$Part;
 
     const/4 v0, 0x0
 
@@ -86,12 +81,6 @@
 
 .method synthetic constructor <init>(Ljava/lang/String;Landroid/net/Uri$Part;Landroid/net/Uri$PathPart;Landroid/net/Uri$Part;Landroid/net/Uri$Part;Landroid/net/Uri$1;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/net/Uri$Part;
-    .param p3    # Landroid/net/Uri$PathPart;
-    .param p4    # Landroid/net/Uri$Part;
-    .param p5    # Landroid/net/Uri$Part;
-    .param p6    # Landroid/net/Uri$1;
 
     invoke-direct/range {p0 .. p5}, Landroid/net/Uri$HierarchicalUri;-><init>(Ljava/lang/String;Landroid/net/Uri$Part;Landroid/net/Uri$PathPart;Landroid/net/Uri$Part;Landroid/net/Uri$Part;)V
 
@@ -100,7 +89,6 @@
 
 .method private appendSspTo(Ljava/lang/StringBuilder;)V
     .locals 4
-    .param p1    # Ljava/lang/StringBuilder;
 
     iget-object v2, p0, Landroid/net/Uri$HierarchicalUri;->authority:Landroid/net/Uri$Part;
 
@@ -254,7 +242,6 @@
 
 .method static readFrom(Landroid/os/Parcel;)Landroid/net/Uri;
     .locals 6
-    .param p0    # Landroid/os/Parcel;
 
     new-instance v0, Landroid/net/Uri$HierarchicalUri;
 
@@ -551,8 +538,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     const/4 v0, 0x3
 

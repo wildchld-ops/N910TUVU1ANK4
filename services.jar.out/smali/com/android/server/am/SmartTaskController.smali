@@ -74,9 +74,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Lcom/android/server/am/ActivityManagerService;J)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/server/am/ActivityManagerService;
-    .param p3    # J
 
     const/16 v0, 0xa
 
@@ -152,7 +149,6 @@
 
 .method static synthetic access$100(Lcom/android/server/am/SmartTaskController;)J
     .locals 2
-    .param p0    # Lcom/android/server/am/SmartTaskController;
 
     invoke-direct {p0}, Lcom/android/server/am/SmartTaskController;->getAvailableMemory()J
 
@@ -187,7 +183,6 @@
 
 .method private getBackgroundTasks(I)Ljava/util/List;
     .locals 9
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -314,7 +309,6 @@
 
 .method private isHeavyApp(Landroid/content/Intent;)Z
     .locals 3
-    .param p1    # Landroid/content/Intent;
 
     const/4 v0, 0x0
 
@@ -424,7 +418,6 @@
 
 .method private final killProcessTask(Lcom/android/server/am/TaskRecord;)V
     .locals 10
-    .param p1    # Lcom/android/server/am/TaskRecord;
 
     move-object v5, p1
 
@@ -555,8 +548,6 @@
 
 .method private killUnneededProcessLocked(Lcom/android/server/am/ProcessRecord;Ljava/lang/String;)V
     .locals 5
-    .param p1    # Lcom/android/server/am/ProcessRecord;
-    .param p2    # Ljava/lang/String;
 
     const/4 v4, 0x1
 
@@ -672,7 +663,6 @@
 # virtual methods
 .method public final cleanUpTask(I)V
     .locals 7
-    .param p1    # I
 
     sget-boolean v4, Lcom/android/server/am/SmartTaskController;->DEBUG:Z
 
@@ -1027,8 +1017,6 @@
 
 .method public putRecentPssMap([Ljava/lang/String;J)V
     .locals 5
-    .param p1    # [Ljava/lang/String;
-    .param p2    # J
 
     iget-object v2, p0, Lcom/android/server/am/SmartTaskController;->mSTCConf:Lcom/android/server/am/SmartTaskController$SmartTaskControllerConfiguration;
 
@@ -1102,7 +1090,6 @@
 
 .method public setHomeProcessDead(Lcom/android/server/am/ProcessRecord;)V
     .locals 10
-    .param p1    # Lcom/android/server/am/ProcessRecord;
 
     const/4 v9, 0x1
 
@@ -1251,7 +1238,6 @@
 
 .method public final startTaskCleanUp(Landroid/content/Intent;)V
     .locals 5
-    .param p1    # Landroid/content/Intent;
 
     sget-boolean v3, Lcom/android/server/am/SmartTaskController;->DEBUG:Z
 

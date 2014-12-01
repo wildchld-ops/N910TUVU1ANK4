@@ -34,8 +34,6 @@
 
 .field private mEmergencyNumber:Ljava/lang/String;
 
-.field private mFallbackWakeLock:Landroid/os/PowerManager$WakeLock;
-
 .field private mHandler:Landroid/os/Handler;
 
 .field private final mIsECSupported:Z
@@ -43,8 +41,6 @@
 .field private mIsInService:Z
 
 .field private final mIsVOPSSupported:Z
-
-.field private final mPM:Landroid/os/PowerManager;
 
 .field private mPhone:Lcom/android/internal/telephony/Phone;
 
@@ -125,7 +121,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v0}, Lcom/android/phone/PhoneGlobals;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -233,21 +229,13 @@
 
     iput-object v0, p0, Lcom/android/phone/WfcEmergencyCallController;->mAlarmManager:Landroid/app/AlarmManager;
 
-    iget-object v0, p0, Lcom/android/phone/WfcEmergencyCallController;->mContext:Landroid/content/Context;
-
-    const-string v3, "power"
-
-    invoke-virtual {v0, v3}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/os/PowerManager;
-
-    iput-object v0, p0, Lcom/android/phone/WfcEmergencyCallController;->mPM:Landroid/os/PowerManager;
-
     new-instance v0, Landroid/content/IntentFilter;
 
     invoke-direct {v0}, Landroid/content/IntentFilter;-><init>()V
+
+    const-string v3, "IntentCsTimeoutForEmergency"
+
+    invoke-virtual {v0, v3}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
     const-string v3, "IntentDelayedImsRegistration"
 
@@ -391,12 +379,21 @@
     .locals 0
     .param p0    # Lcom/android/phone/WfcEmergencyCallController;
 
+    invoke-direct {p0}, Lcom/android/phone/WfcEmergencyCallController;->handleCSTimeoutForEmergency()V
+
+    return-void
+.end method
+
+.method static synthetic access$600(Lcom/android/phone/WfcEmergencyCallController;)V
+    .locals 0
+    .param p0    # Lcom/android/phone/WfcEmergencyCallController;
+
     invoke-direct {p0}, Lcom/android/phone/WfcEmergencyCallController;->handleDelayedRegistration()V
 
     return-void
 .end method
 
-.method static synthetic access$600(Lcom/android/phone/WfcEmergencyCallController;Landroid/os/Message;)V
+.method static synthetic access$700(Lcom/android/phone/WfcEmergencyCallController;Landroid/os/Message;)V
     .locals 0
     .param p0    # Lcom/android/phone/WfcEmergencyCallController;
     .param p1    # Landroid/os/Message;
@@ -406,20 +403,11 @@
     return-void
 .end method
 
-.method static synthetic access$700(Lcom/android/phone/WfcEmergencyCallController;)V
-    .locals 0
-    .param p0    # Lcom/android/phone/WfcEmergencyCallController;
-
-    invoke-direct {p0}, Lcom/android/phone/WfcEmergencyCallController;->handlePhoneStateChanged()V
-
-    return-void
-.end method
-
 .method static synthetic access$800(Lcom/android/phone/WfcEmergencyCallController;)V
     .locals 0
     .param p0    # Lcom/android/phone/WfcEmergencyCallController;
 
-    invoke-direct {p0}, Lcom/android/phone/WfcEmergencyCallController;->handleCSTimeoutForEmergency()V
+    invoke-direct {p0}, Lcom/android/phone/WfcEmergencyCallController;->handlePhoneStateChanged()V
 
     return-void
 .end method
@@ -471,7 +459,7 @@
     if-eqz v1, :cond_0
 
     :try_start_1
-    invoke-virtual {v1}, Ljava/io/FilterOutputStream;->close()V
+    invoke-virtual {v1}, Ljava/io/DataOutputStream;->close()V
 
     :cond_0
     if-eqz v0, :cond_1
@@ -792,8 +780,6 @@
 
     :cond_0
     :goto_0
-    invoke-direct {p0}, Lcom/android/phone/WfcEmergencyCallController;->stopFallbackTimer()V
-
     return-void
 
     :catch_0
@@ -936,7 +922,7 @@
 
     sget-object v3, Lcom/samsung/tmowfc/wfcutils/WfcDbHelper$RegistrationStateContract$State;->REGISTERING:Lcom/samsung/tmowfc/wfcutils/WfcDbHelper$RegistrationStateContract$State;
 
-    invoke-virtual {v2, v3}, Ljava/lang/Enum;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v2, v3}, Lcom/samsung/tmowfc/wfcutils/WfcDbHelper$RegistrationStateContract$State;->equals(Ljava/lang/Object;)Z
 
     move-result v3
 
@@ -1270,7 +1256,7 @@
 
     const-string v5, "sendWfcSwitchStateAndCurrentProfileToRil failed:"
 
-    invoke-virtual {v0}, Ljava/lang/Throwable;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Landroid/os/RemoteException;->toString()Ljava/lang/String;
 
     move-result-object v6
 
@@ -1399,66 +1385,6 @@
     goto :goto_0
 .end method
 
-.method private startFallbackTimer()V
-    .locals 4
-
-    iget-object v0, p0, Lcom/android/phone/WfcEmergencyCallController;->TAG:Ljava/lang/String;
-
-    const-string v1, "Emergency will timeout after 5000"
-
-    invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
-
-    const/4 v0, 0x0
-
-    iput-boolean v0, p0, Lcom/android/phone/WfcEmergencyCallController;->mCSCallFailedBecauseOfTimeout:Z
-
-    iget-object v0, p0, Lcom/android/phone/WfcEmergencyCallController;->mPM:Landroid/os/PowerManager;
-
-    const/4 v1, 0x1
-
-    iget-object v2, p0, Lcom/android/phone/WfcEmergencyCallController;->TAG:Ljava/lang/String;
-
-    invoke-virtual {v0, v1, v2}, Landroid/os/PowerManager;->newWakeLock(ILjava/lang/String;)Landroid/os/PowerManager$WakeLock;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lcom/android/phone/WfcEmergencyCallController;->mFallbackWakeLock:Landroid/os/PowerManager$WakeLock;
-
-    iget-object v0, p0, Lcom/android/phone/WfcEmergencyCallController;->mFallbackWakeLock:Landroid/os/PowerManager$WakeLock;
-
-    invoke-virtual {v0}, Landroid/os/PowerManager$WakeLock;->acquire()V
-
-    iget-object v0, p0, Lcom/android/phone/WfcEmergencyCallController;->mHandler:Landroid/os/Handler;
-
-    const/4 v1, 0x2
-
-    const-wide/16 v2, 0x1388
-
-    invoke-virtual {v0, v1, v2, v3}, Landroid/os/Handler;->sendEmptyMessageDelayed(IJ)Z
-
-    return-void
-.end method
-
-.method private stopFallbackTimer()V
-    .locals 2
-
-    iget-object v0, p0, Lcom/android/phone/WfcEmergencyCallController;->mHandler:Landroid/os/Handler;
-
-    const/4 v1, 0x2
-
-    invoke-virtual {v0, v1}, Landroid/os/Handler;->removeMessages(I)V
-
-    iget-object v0, p0, Lcom/android/phone/WfcEmergencyCallController;->mFallbackWakeLock:Landroid/os/PowerManager$WakeLock;
-
-    invoke-virtual {v0}, Landroid/os/PowerManager$WakeLock;->release()V
-
-    const/4 v0, 0x0
-
-    iput-object v0, p0, Lcom/android/phone/WfcEmergencyCallController;->mFallbackWakeLock:Landroid/os/PowerManager$WakeLock;
-
-    return-void
-.end method
-
 .method private unregisterForDisconnectAndCallStateChange()V
     .locals 2
 
@@ -1492,135 +1418,173 @@
 
     invoke-direct {v0, p0}, Lcom/android/phone/WfcEmergencyCallController$5;-><init>(Lcom/android/phone/WfcEmergencyCallController;)V
 
-    invoke-virtual {v0}, Ljava/lang/Thread;->start()V
+    invoke-virtual {v0}, Lcom/android/phone/WfcEmergencyCallController$5;->start()V
 
     return-void
 .end method
 
 .method protected startTimerForCS(Ljava/lang/String;)V
-    .locals 7
+    .locals 11
     .param p1    # Ljava/lang/String;
 
-    const/4 v6, 0x0
+    const/4 v10, 0x0
 
-    iget-object v3, p0, Lcom/android/phone/WfcEmergencyCallController;->mContentResolver:Landroid/content/ContentResolver;
+    iget-object v5, p0, Lcom/android/phone/WfcEmergencyCallController;->mContentResolver:Landroid/content/ContentResolver;
 
-    invoke-static {v3}, Lcom/samsung/tmowfc/wfcutils/WfcDbHelper;->isImsRegisteredOverWifi(Landroid/content/ContentResolver;)Z
+    invoke-static {v5}, Lcom/samsung/tmowfc/wfcutils/WfcDbHelper;->isImsRegisteredOverWifi(Landroid/content/ContentResolver;)Z
 
-    move-result v1
+    move-result v2
 
-    iget-object v3, p0, Lcom/android/phone/WfcEmergencyCallController;->mContentResolver:Landroid/content/ContentResolver;
+    iget-object v5, p0, Lcom/android/phone/WfcEmergencyCallController;->mContentResolver:Landroid/content/ContentResolver;
 
-    invoke-static {v3}, Lcom/samsung/tmowfc/wfcutils/WfcDbHelper;->getProfile(Landroid/content/ContentResolver;)Lcom/samsung/tmowfc/wfcutils/WfcDbHelper$ProfileContract$Profile;
+    invoke-static {v5}, Lcom/samsung/tmowfc/wfcutils/WfcDbHelper;->getProfile(Landroid/content/ContentResolver;)Lcom/samsung/tmowfc/wfcutils/WfcDbHelper$ProfileContract$Profile;
 
-    move-result-object v2
+    move-result-object v3
 
     invoke-direct {p0}, Lcom/android/phone/WfcEmergencyCallController;->isInService()Z
 
-    move-result v0
+    move-result v1
 
-    iput-boolean v6, p0, Lcom/android/phone/WfcEmergencyCallController;->isRILNotificationOnly:Z
+    iput-boolean v10, p0, Lcom/android/phone/WfcEmergencyCallController;->isRILNotificationOnly:Z
 
-    iget-object v3, p0, Lcom/android/phone/WfcEmergencyCallController;->TAG:Ljava/lang/String;
+    iget-object v5, p0, Lcom/android/phone/WfcEmergencyCallController;->TAG:Ljava/lang/String;
 
-    new-instance v4, Ljava/lang/StringBuilder;
+    new-instance v6, Ljava/lang/StringBuilder;
 
-    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v5, "startTimerForCS(): ECMP="
+    const-string v7, "startTimerForCS(): ECMP="
 
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v4
+    move-result-object v6
 
-    iget v5, p0, Lcom/android/phone/WfcEmergencyCallController;->mEmergencyCallPreference:I
+    iget v7, p0, Lcom/android/phone/WfcEmergencyCallController;->mEmergencyCallPreference:I
 
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    move-result-object v4
+    move-result-object v6
 
-    const-string v5, ", in service="
+    const-string v7, ", in service="
 
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v4
+    move-result-object v6
 
-    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+    invoke-virtual {v6, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
-    move-result-object v4
+    move-result-object v6
 
-    const-string v5, ", isRegistered="
+    const-string v7, ", isRegistered="
 
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v4
+    move-result-object v6
 
-    invoke-virtual {v4, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+    invoke-virtual {v6, v2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
-    move-result-object v4
+    move-result-object v6
 
-    const-string v5, ", profile="
+    const-string v7, ", profile="
 
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v4
+    move-result-object v6
 
-    invoke-virtual {v4, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v6, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    move-result-object v4
+    move-result-object v6
 
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v4
+    move-result-object v6
 
-    invoke-static {v3, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v5, v6}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     invoke-direct {p0}, Lcom/android/phone/WfcEmergencyCallController;->unregisterForDisconnectAndCallStateChange()V
 
-    if-nez v1, :cond_0
+    if-nez v2, :cond_0
 
-    iget-object v3, p0, Lcom/android/phone/WfcEmergencyCallController;->TAG:Ljava/lang/String;
+    iget-object v5, p0, Lcom/android/phone/WfcEmergencyCallController;->TAG:Ljava/lang/String;
 
-    const-string v4, "not registered"
+    const-string v6, "not registered"
 
-    invoke-static {v3, v4}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v5, v6}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
     :goto_0
     return-void
 
     :cond_0
-    iget v3, p0, Lcom/android/phone/WfcEmergencyCallController;->mEmergencyCallPreference:I
+    iget v5, p0, Lcom/android/phone/WfcEmergencyCallController;->mEmergencyCallPreference:I
 
-    if-nez v3, :cond_1
+    if-nez v5, :cond_1
 
-    if-eqz v0, :cond_2
+    if-eqz v1, :cond_2
 
     :cond_1
-    const/4 v3, 0x1
+    const/4 v5, 0x1
 
-    iput-boolean v3, p0, Lcom/android/phone/WfcEmergencyCallController;->isRILNotificationOnly:Z
+    iput-boolean v5, p0, Lcom/android/phone/WfcEmergencyCallController;->isRILNotificationOnly:Z
 
     :cond_2
     invoke-direct {p0}, Lcom/android/phone/WfcEmergencyCallController;->registerForDisconnectAndCallStateChange()V
 
-    iget-boolean v3, p0, Lcom/android/phone/WfcEmergencyCallController;->isRILNotificationOnly:Z
+    iget-boolean v5, p0, Lcom/android/phone/WfcEmergencyCallController;->isRILNotificationOnly:Z
 
-    if-eqz v3, :cond_3
+    if-eqz v5, :cond_3
 
-    iget-object v3, p0, Lcom/android/phone/WfcEmergencyCallController;->TAG:Ljava/lang/String;
+    iget-object v5, p0, Lcom/android/phone/WfcEmergencyCallController;->TAG:Ljava/lang/String;
 
-    const-string v4, "Do not start the timer"
+    const-string v6, "Do not start the timer"
 
-    invoke-static {v3, v4}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v5, v6}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
     goto :goto_0
 
     :cond_3
+    iget-object v5, p0, Lcom/android/phone/WfcEmergencyCallController;->TAG:Ljava/lang/String;
+
+    const-string v6, "startTimerForCS(): start fallback timer"
+
+    invoke-static {v5, v6}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
     iput-object p1, p0, Lcom/android/phone/WfcEmergencyCallController;->mEmergencyNumber:Ljava/lang/String;
 
-    iput-boolean v6, p0, Lcom/android/phone/WfcEmergencyCallController;->mCSCallSucceeded:Z
+    iput-boolean v10, p0, Lcom/android/phone/WfcEmergencyCallController;->mCSCallFailedBecauseOfTimeout:Z
 
-    invoke-direct {p0}, Lcom/android/phone/WfcEmergencyCallController;->startFallbackTimer()V
+    iput-boolean v10, p0, Lcom/android/phone/WfcEmergencyCallController;->mCSCallSucceeded:Z
+
+    iget-object v5, p0, Lcom/android/phone/WfcEmergencyCallController;->TAG:Ljava/lang/String;
+
+    const-string v6, "Emergency will timeout after 5000 msecs"
+
+    invoke-static {v5, v6}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    new-instance v0, Landroid/content/Intent;
+
+    const-string v5, "IntentCsTimeoutForEmergency"
+
+    invoke-direct {v0, v5}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+
+    iget-object v5, p0, Lcom/android/phone/WfcEmergencyCallController;->mContext:Landroid/content/Context;
+
+    const/high16 v6, 0x40000000
+
+    invoke-static {v5, v10, v0, v6}, Landroid/app/PendingIntent;->getBroadcast(Landroid/content/Context;ILandroid/content/Intent;I)Landroid/app/PendingIntent;
+
+    move-result-object v4
+
+    iget-object v5, p0, Lcom/android/phone/WfcEmergencyCallController;->mAlarmManager:Landroid/app/AlarmManager;
+
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    move-result-wide v6
+
+    const-wide/16 v8, 0x1388
+
+    add-long/2addr v6, v8
+
+    invoke-virtual {v5, v10, v6, v7, v4}, Landroid/app/AlarmManager;->setExact(IJLandroid/app/PendingIntent;)V
 
     goto :goto_0
 .end method

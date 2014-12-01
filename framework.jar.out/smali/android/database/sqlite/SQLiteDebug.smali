@@ -69,8 +69,6 @@
 
 .method public static dump(Landroid/util/Printer;[Ljava/lang/String;)V
     .locals 6
-    .param p0    # Landroid/util/Printer;
-    .param p1    # [Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -129,7 +127,6 @@
 
 .method public static final shouldLogSlowQuery(J)Z
     .locals 3
-    .param p0    # J
 
     const-string v1, "db.log.slow_query_threshold"
 

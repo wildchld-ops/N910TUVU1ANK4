@@ -73,8 +73,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/am/ActiveServices;Landroid/os/Looper;I)V
     .locals 1
-    .param p2    # Landroid/os/Looper;
-    .param p3    # I
 
     iput-object p1, p0, Lcom/android/server/am/ActiveServices$ServiceMap;->this$0:Lcom/android/server/am/ActiveServices;
 
@@ -113,7 +111,6 @@
 # virtual methods
 .method ensureNotStartingBackground(Lcom/android/server/am/ServiceRecord;)V
     .locals 1
-    .param p1    # Lcom/android/server/am/ServiceRecord;
 
     iget-object v0, p0, Lcom/android/server/am/ActiveServices$ServiceMap;->mStartingBackground:Ljava/util/ArrayList;
 
@@ -140,7 +137,6 @@
 
 .method public handleMessage(Landroid/os/Message;)V
     .locals 2
-    .param p1    # Landroid/os/Message;
 
     iget v0, p1, Landroid/os/Message;->what:I
 

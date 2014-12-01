@@ -25,9 +25,6 @@
 # direct methods
 .method public constructor <init>(Landroid/webkitsec/CallbackProxy$UploadFile;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Landroid/webkitsec/CallbackProxy$UploadFile;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

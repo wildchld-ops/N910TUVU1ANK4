@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Landroid/print/PrinterId;)V
     .locals 2
-    .param p1    # Landroid/print/PrinterId;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -47,7 +46,6 @@
 
 .method private throwIfDefaultAlreadySpecified(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Landroid/print/PrinterCapabilitiesInfo$Builder;->mPrototype:Landroid/print/PrinterCapabilitiesInfo;
 
@@ -78,8 +76,6 @@
 # virtual methods
 .method public addMediaSize(Landroid/print/PrintAttributes$MediaSize;Z)Landroid/print/PrinterCapabilitiesInfo$Builder;
     .locals 4
-    .param p1    # Landroid/print/PrintAttributes$MediaSize;
-    .param p2    # Z
 
     const/4 v3, 0x0
 
@@ -141,8 +137,6 @@
 
 .method public addResolution(Landroid/print/PrintAttributes$Resolution;Z)Landroid/print/PrinterCapabilitiesInfo$Builder;
     .locals 4
-    .param p1    # Landroid/print/PrintAttributes$Resolution;
-    .param p2    # Z
 
     const/4 v3, 0x1
 
@@ -380,8 +374,6 @@
 
 .method public setColorModes(II)Landroid/print/PrinterCapabilitiesInfo$Builder;
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     move v1, p1
 
@@ -441,7 +433,6 @@
 
 .method public setMinMargins(Landroid/print/PrintAttributes$Margins;)Landroid/print/PrinterCapabilitiesInfo$Builder;
     .locals 2
-    .param p1    # Landroid/print/PrintAttributes$Margins;
 
     if-nez p1, :cond_0
 

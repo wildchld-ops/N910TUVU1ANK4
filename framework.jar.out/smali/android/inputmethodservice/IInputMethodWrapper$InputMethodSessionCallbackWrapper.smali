@@ -28,9 +28,6 @@
 # direct methods
 .method constructor <init>(Landroid/content/Context;Landroid/view/InputChannel;Lcom/android/internal/view/IInputSessionCallback;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/view/InputChannel;
-    .param p3    # Lcom/android/internal/view/IInputSessionCallback;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -47,7 +44,6 @@
 # virtual methods
 .method public sessionCreated(Landroid/view/inputmethod/InputMethodSession;)V
     .locals 3
-    .param p1    # Landroid/view/inputmethod/InputMethodSession;
 
     if-eqz p1, :cond_0
 

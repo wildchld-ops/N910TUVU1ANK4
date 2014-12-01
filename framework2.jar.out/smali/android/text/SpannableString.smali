@@ -11,7 +11,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/CharSequence;)V
     .locals 2
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v0, 0x0
 
@@ -26,9 +25,6 @@
 
 .method private constructor <init>(Ljava/lang/CharSequence;II)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Landroid/text/SpannableStringInternal;-><init>(Ljava/lang/CharSequence;II)V
 
@@ -37,7 +33,6 @@
 
 .method public static valueOf(Ljava/lang/CharSequence;)Landroid/text/SpannableString;
     .locals 1
-    .param p0    # Ljava/lang/CharSequence;
 
     instance-of v0, p0, Landroid/text/SpannableString;
 
@@ -62,7 +57,6 @@
 # virtual methods
 .method public bridge synthetic equals(Ljava/lang/Object;)Z
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     invoke-super {p0, p1}, Landroid/text/SpannableStringInternal;->equals(Ljava/lang/Object;)Z
 
@@ -73,7 +67,6 @@
 
 .method public bridge synthetic getSpanEnd(Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     invoke-super {p0, p1}, Landroid/text/SpannableStringInternal;->getSpanEnd(Ljava/lang/Object;)I
 
@@ -84,7 +77,6 @@
 
 .method public bridge synthetic getSpanFlags(Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     invoke-super {p0, p1}, Landroid/text/SpannableStringInternal;->getSpanFlags(Ljava/lang/Object;)I
 
@@ -95,7 +87,6 @@
 
 .method public bridge synthetic getSpanStart(Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     invoke-super {p0, p1}, Landroid/text/SpannableStringInternal;->getSpanStart(Ljava/lang/Object;)I
 
@@ -106,9 +97,6 @@
 
 .method public bridge synthetic getSpans(IILjava/lang/Class;)[Ljava/lang/Object;
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/Class;
 
     invoke-super {p0, p1, p2, p3}, Landroid/text/SpannableStringInternal;->getSpans(IILjava/lang/Class;)[Ljava/lang/Object;
 
@@ -129,9 +117,6 @@
 
 .method public bridge synthetic nextSpanTransition(IILjava/lang/Class;)I
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/Class;
 
     invoke-super {p0, p1, p2, p3}, Landroid/text/SpannableStringInternal;->nextSpanTransition(IILjava/lang/Class;)I
 
@@ -142,7 +127,6 @@
 
 .method public removeSpan(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     invoke-super {p0, p1}, Landroid/text/SpannableStringInternal;->removeSpan(Ljava/lang/Object;)V
 
@@ -151,10 +135,6 @@
 
 .method public setSpan(Ljava/lang/Object;III)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-super {p0, p1, p2, p3, p4}, Landroid/text/SpannableStringInternal;->setSpan(Ljava/lang/Object;III)V
 
@@ -163,8 +143,6 @@
 
 .method public final subSequence(II)Ljava/lang/CharSequence;
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     new-instance v0, Landroid/text/SpannableString;
 

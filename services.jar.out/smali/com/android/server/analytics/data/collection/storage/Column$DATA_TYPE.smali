@@ -135,7 +135,6 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/android/server/analytics/data/collection/storage/Column$DATA_TYPE;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-class v0, Lcom/android/server/analytics/data/collection/storage/Column$DATA_TYPE;
 

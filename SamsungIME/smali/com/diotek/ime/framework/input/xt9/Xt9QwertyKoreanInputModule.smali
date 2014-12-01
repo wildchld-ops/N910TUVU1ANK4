@@ -454,8 +454,6 @@
 
 .method private processMultiTap(I[I)V
     .locals 5
-    .param p1    # I
-    .param p2    # [I
 
     const/4 v2, 0x1
 
@@ -564,8 +562,6 @@
 
 .method private processSingleTap(I[I)V
     .locals 13
-    .param p1    # I
-    .param p2    # [I
 
     iget-object v0, p0, Lcom/diotek/ime/framework/input/xt9/AbstractXt9InputModule;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -1189,8 +1185,6 @@
 
 .method private processWordSeparator(I[I)V
     .locals 7
-    .param p1    # I
-    .param p2    # [I
 
     const/4 v6, 0x0
 
@@ -1361,7 +1355,6 @@
 
 .method protected commitText(Ljava/lang/CharSequence;)V
     .locals 2
-    .param p1    # Ljava/lang/CharSequence;
 
     iget-object v1, p0, Lcom/diotek/ime/framework/input/xt9/AbstractXt9InputModule;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -1381,8 +1374,6 @@
 
 .method public onCharacterKey(I[I)V
     .locals 7
-    .param p1    # I
-    .param p2    # [I
 
     const/4 v4, 0x0
 
@@ -1588,17 +1579,12 @@
 
 .method public onHwrPanelLongPressed(ILjava/lang/String;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method public onHwrTouchDown(IIJ)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
 
     const/4 v0, 0x0
 
@@ -1607,9 +1593,6 @@
 
 .method public onHwrTouchMove(IIJ)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
 
     const/4 v0, 0x0
 
@@ -1618,9 +1601,6 @@
 
 .method public onHwrTouchUp(IIJ)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
 
     const/4 v0, 0x0
 
@@ -1629,8 +1609,6 @@
 
 .method public pickSuggestionManually(ILjava/lang/CharSequence;)V
     .locals 24
-    .param p1    # I
-    .param p2    # Ljava/lang/CharSequence;
 
     move-object/from16 v0, p0
 
@@ -2315,8 +2293,6 @@
 
 .method protected processSymbolicKey(I[I)V
     .locals 3
-    .param p1    # I
-    .param p2    # [I
 
     invoke-virtual {p0}, Lcom/diotek/ime/framework/input/xt9/AbstractXt9InputModule;->clearCandidateList()V
 

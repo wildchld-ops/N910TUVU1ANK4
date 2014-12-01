@@ -33,7 +33,6 @@
 # virtual methods
 .method public onCoverStateChanged(Lcom/samsung/android/sdk/cover/ScoverState;)V
     .locals 10
-    .param p1    # Lcom/samsung/android/sdk/cover/ScoverState;
 
     const/4 v9, 0x0
 

@@ -80,7 +80,6 @@
 
 .method private constructor <init>(Ljava/lang/String;II)V
     .locals 1
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)V"
@@ -100,7 +99,6 @@
 
 .method public static valueOf(Ljava/lang/String;)Landroid/app/wallpaperbackup/Controller$REQ_SIZE;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-class v0, Landroid/app/wallpaperbackup/Controller$REQ_SIZE;
 

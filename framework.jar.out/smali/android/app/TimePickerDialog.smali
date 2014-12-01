@@ -66,12 +66,6 @@
 
 .method public constructor <init>(Landroid/content/Context;ILandroid/app/TimePickerDialog$OnTimeSetListener;IIZ)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Landroid/app/TimePickerDialog$OnTimeSetListener;
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Z
 
     invoke-direct {p0, p1, p2}, Landroid/app/AlertDialog;-><init>(Landroid/content/Context;I)V
 
@@ -214,11 +208,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/app/TimePickerDialog$OnTimeSetListener;IIZ)V
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/app/TimePickerDialog$OnTimeSetListener;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Z
 
     const/4 v2, 0x0
 
@@ -241,7 +230,6 @@
 
 .method static synthetic access$000(Landroid/app/TimePickerDialog;)Landroid/widget/TimePicker;
     .locals 1
-    .param p0    # Landroid/app/TimePickerDialog;
 
     iget-object v0, p0, Landroid/app/TimePickerDialog;->mTimePicker:Landroid/widget/TimePicker;
 
@@ -329,8 +317,6 @@
 
 .method private updateTitle(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0}, Landroid/app/TimePickerDialog;->needToUpdateTitle()Z
 
@@ -379,8 +365,6 @@
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 0
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     invoke-direct {p0}, Landroid/app/TimePickerDialog;->tryNotifyTimeSet()V
 
@@ -389,7 +373,6 @@
 
 .method public onRestoreInstanceState(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/AlertDialog;->onRestoreInstanceState(Landroid/os/Bundle;)V
 
@@ -498,9 +481,6 @@
 
 .method public onTimeChanged(Landroid/widget/TimePicker;II)V
     .locals 0
-    .param p1    # Landroid/widget/TimePicker;
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0, p2, p3}, Landroid/app/TimePickerDialog;->updateTitle(II)V
 
@@ -509,7 +489,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 3
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-boolean v1, p0, Landroid/app/TimePickerDialog;->mCancelable:Z
 
@@ -570,8 +549,6 @@
 
 .method public updateTime(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Landroid/app/TimePickerDialog;->mTimePicker:Landroid/widget/TimePicker;
 

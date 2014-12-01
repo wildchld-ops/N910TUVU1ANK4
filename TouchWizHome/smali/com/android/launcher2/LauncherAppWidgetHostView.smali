@@ -47,7 +47,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v1, 0x2
 
@@ -87,7 +86,6 @@
 
 .method static synthetic access$000(Lcom/android/launcher2/LauncherAppWidgetHostView;)I
     .locals 1
-    .param p0    # Lcom/android/launcher2/LauncherAppWidgetHostView;
 
     invoke-virtual {p0}, Landroid/view/View;->getWindowAttachCount()I
 
@@ -98,7 +96,6 @@
 
 .method static synthetic access$100(Lcom/android/launcher2/LauncherAppWidgetHostView;)Z
     .locals 1
-    .param p0    # Lcom/android/launcher2/LauncherAppWidgetHostView;
 
     iget-boolean v0, p0, Lcom/android/launcher2/LauncherAppWidgetHostView;->mHasPerformedLongPress:Z
 
@@ -107,8 +104,6 @@
 
 .method static synthetic access$102(Lcom/android/launcher2/LauncherAppWidgetHostView;Z)Z
     .locals 0
-    .param p0    # Lcom/android/launcher2/LauncherAppWidgetHostView;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/launcher2/LauncherAppWidgetHostView;->mHasPerformedLongPress:Z
 
@@ -117,7 +112,6 @@
 
 .method static synthetic access$200(Lcom/android/launcher2/LauncherAppWidgetHostView;)I
     .locals 1
-    .param p0    # Lcom/android/launcher2/LauncherAppWidgetHostView;
 
     invoke-virtual {p0}, Landroid/view/View;->getWindowAttachCount()I
 
@@ -228,8 +222,6 @@
 # virtual methods
 .method public bitmapNeedsUpdated(II)Z
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     const/4 v1, 0x1
 
@@ -327,8 +319,6 @@
 
 .method public invalidateChildInParent([ILandroid/graphics/Rect;)Landroid/view/ViewParent;
     .locals 3
-    .param p1    # [I
-    .param p2    # Landroid/graphics/Rect;
 
     invoke-super {p0, p1, p2}, Landroid/view/ViewGroup;->invalidateChildInParent([ILandroid/graphics/Rect;)Landroid/view/ViewParent;
 
@@ -371,7 +361,6 @@
 
 .method public onInterceptHoverEvent(Landroid/view/MotionEvent;)Z
     .locals 5
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v3, 0x0
 
@@ -419,7 +408,6 @@
 
 .method public onInterceptTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 4
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v0, 0x1
 
@@ -523,8 +511,6 @@
 
 .method public onMeasure(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     const/high16 v2, 0x40000000
 
@@ -567,7 +553,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 5
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v4, 0x1
 
@@ -638,8 +623,6 @@
 
 .method public setLastTouchPoint(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/launcher2/LauncherAppWidgetHostView;->mLastTouch:[I
 
@@ -658,10 +641,6 @@
 
 .method public updateBitmapForSpan(Lcom/android/launcher2/CellLayout;IILcom/android/launcher2/ShadowBuilder;)Landroid/graphics/Bitmap;
     .locals 7
-    .param p1    # Lcom/android/launcher2/CellLayout;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Lcom/android/launcher2/ShadowBuilder;
 
     invoke-virtual {p0, p2, p3}, Lcom/android/launcher2/LauncherAppWidgetHostView;->bitmapNeedsUpdated(II)Z
 

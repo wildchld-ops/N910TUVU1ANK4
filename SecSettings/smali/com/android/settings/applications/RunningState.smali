@@ -254,7 +254,6 @@
 
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     const/4 v2, 0x0
 
@@ -451,7 +450,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/applications/RunningState;)V
     .locals 0
-    .param p0    # Lcom/android/settings/applications/RunningState;
 
     invoke-direct {p0}, Lcom/android/settings/applications/RunningState;->reset()V
 
@@ -460,9 +458,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/applications/RunningState;Landroid/content/Context;Landroid/app/ActivityManager;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/applications/RunningState;
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/app/ActivityManager;
 
     invoke-direct {p0, p1, p2}, Lcom/android/settings/applications/RunningState;->update(Landroid/content/Context;Landroid/app/ActivityManager;)Z
 
@@ -473,8 +468,6 @@
 
 .method private addOtherUserItem(Landroid/content/Context;Ljava/util/ArrayList;Landroid/util/SparseArray;Lcom/android/settings/applications/RunningState$MergedItem;)V
     .locals 9
-    .param p1    # Landroid/content/Context;
-    .param p4    # Lcom/android/settings/applications/RunningState$MergedItem;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -642,7 +635,6 @@
 
 .method static getInstance(Landroid/content/Context;)Lcom/android/settings/applications/RunningState;
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     sget-object v1, Lcom/android/settings/applications/RunningState;->sGlobalLock:Ljava/lang/Object;
 
@@ -678,7 +670,6 @@
 
 .method private isInterestingProcess(Landroid/app/ActivityManager$RunningAppProcessInfo;)Z
     .locals 3
-    .param p1    # Landroid/app/ActivityManager$RunningAppProcessInfo;
 
     const/4 v0, 0x1
 
@@ -723,9 +714,6 @@
 
 .method static makeLabel(Landroid/content/pm/PackageManager;Ljava/lang/String;Landroid/content/pm/PackageItemInfo;)Ljava/lang/CharSequence;
     .locals 4
-    .param p0    # Landroid/content/pm/PackageManager;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/pm/PackageItemInfo;
 
     if-eqz p2, :cond_2
 
@@ -808,8 +796,6 @@
 
 .method private update(Landroid/content/Context;Landroid/app/ActivityManager;)Z
     .locals 64
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/app/ActivityManager;
 
     invoke-virtual/range {p1 .. p1}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -4636,7 +4622,6 @@
 
 .method resume(Lcom/android/settings/applications/RunningState$OnRefreshUiListener;)V
     .locals 3
-    .param p1    # Lcom/android/settings/applications/RunningState$OnRefreshUiListener;
 
     iget-object v1, p0, Lcom/android/settings/applications/RunningState;->mLock:Ljava/lang/Object;
 
@@ -4725,7 +4710,6 @@
 
 .method setWatchingBackgroundItems(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v1, p0, Lcom/android/settings/applications/RunningState;->mLock:Ljava/lang/Object;
 

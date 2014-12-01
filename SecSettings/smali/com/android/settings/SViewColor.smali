@@ -250,7 +250,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/SViewColor;)V
     .locals 0
-    .param p0    # Lcom/android/settings/SViewColor;
 
     invoke-direct {p0}, Lcom/android/settings/SViewColor;->onTimeChanged()V
 
@@ -259,7 +258,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/SViewColor;)I
     .locals 1
-    .param p0    # Lcom/android/settings/SViewColor;
 
     iget v0, p0, Lcom/android/settings/SViewColor;->mInitUseAll:I
 
@@ -268,7 +266,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/SViewColor;)I
     .locals 1
-    .param p0    # Lcom/android/settings/SViewColor;
 
     iget v0, p0, Lcom/android/settings/SViewColor;->mInitRandom:I
 
@@ -277,7 +274,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/SViewColor;)I
     .locals 1
-    .param p0    # Lcom/android/settings/SViewColor;
 
     iget v0, p0, Lcom/android/settings/SViewColor;->mCurrentCoverBackgroundColor:I
 
@@ -286,8 +282,6 @@
 
 .method static synthetic access$302(Lcom/android/settings/SViewColor;I)I
     .locals 0
-    .param p0    # Lcom/android/settings/SViewColor;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/settings/SViewColor;->mCurrentCoverBackgroundColor:I
 
@@ -296,7 +290,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/SViewColor;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/SViewColor;
 
     iget-boolean v0, p0, Lcom/android/settings/SViewColor;->mIsWallpaper:Z
 
@@ -305,8 +298,6 @@
 
 .method static synthetic access$402(Lcom/android/settings/SViewColor;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/SViewColor;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/SViewColor;->mIsWallpaper:Z
 
@@ -315,7 +306,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/SViewColor;)I
     .locals 1
-    .param p0    # Lcom/android/settings/SViewColor;
 
     iget v0, p0, Lcom/android/settings/SViewColor;->mCurrentRealCoverColor:I
 
@@ -324,7 +314,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/SViewColor;)V
     .locals 0
-    .param p0    # Lcom/android/settings/SViewColor;
 
     invoke-direct {p0}, Lcom/android/settings/SViewColor;->setfocusButton()V
 
@@ -333,7 +322,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/SViewColor;)Landroid/widget/ImageView;
     .locals 1
-    .param p0    # Lcom/android/settings/SViewColor;
 
     iget-object v0, p0, Lcom/android/settings/SViewColor;->mPatternBG:Landroid/widget/ImageView;
 
@@ -342,7 +330,6 @@
 
 .method static synthetic access$800(Lcom/android/settings/SViewColor;)Landroid/graphics/drawable/Drawable;
     .locals 1
-    .param p0    # Lcom/android/settings/SViewColor;
 
     invoke-direct {p0}, Lcom/android/settings/SViewColor;->getWallpaperDrawable()Landroid/graphics/drawable/Drawable;
 
@@ -353,7 +340,6 @@
 
 .method static synthetic access$900(Lcom/android/settings/SViewColor;)Landroid/widget/FrameLayout;
     .locals 1
-    .param p0    # Lcom/android/settings/SViewColor;
 
     iget-object v0, p0, Lcom/android/settings/SViewColor;->mBackground:Landroid/widget/FrameLayout;
 
@@ -832,7 +818,6 @@
 
 .method public getMatchColor(I)I
     .locals 1
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -884,9 +869,6 @@
 
 .method protected onActivityResult(IILandroid/content/Intent;)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const/4 v4, -0x1
 
@@ -972,7 +954,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 10
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v9, 0x4
 

@@ -42,8 +42,6 @@
 
 .method synthetic constructor <init>(Lcom/android/mms/ui/MessageListItem;Lcom/android/mms/ui/MessageListItem$1;)V
     .locals 0
-    .param p1    # Lcom/android/mms/ui/MessageListItem;
-    .param p2    # Lcom/android/mms/ui/MessageListItem$1;
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/MessageListItem$ContentDiscriptionTask;-><init>(Lcom/android/mms/ui/MessageListItem;)V
 
@@ -54,7 +52,6 @@
 # virtual methods
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [Lcom/android/mms/ui/MessageItem;
 
@@ -67,7 +64,6 @@
 
 .method protected varargs doInBackground([Lcom/android/mms/ui/MessageItem;)Ljava/lang/String;
     .locals 14
-    .param p1    # [Lcom/android/mms/ui/MessageItem;
 
     const v13, 0x7f0c04f4
 
@@ -675,7 +671,6 @@
 
 .method protected bridge synthetic onPostExecute(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Ljava/lang/String;
 
@@ -686,7 +681,6 @@
 
 .method protected onPostExecute(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-super {p0, p1}, Landroid/os/AsyncTask;->onPostExecute(Ljava/lang/Object;)V
 

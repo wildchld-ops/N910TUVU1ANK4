@@ -12,8 +12,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Lcom/android/settings/accessibility/ListDialogPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -44,8 +42,6 @@
 # virtual methods
 .method protected onBindListItem(Landroid/view/View;I)V
     .locals 6
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     const v4, 0x7f0b01ba
 

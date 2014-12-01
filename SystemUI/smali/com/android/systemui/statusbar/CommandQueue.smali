@@ -109,8 +109,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/systemui/statusbar/CommandQueue$Callbacks;Lcom/android/internal/statusbar/StatusBarIconList;)V
     .locals 2
-    .param p1    # Lcom/android/systemui/statusbar/CommandQueue$Callbacks;
-    .param p2    # Lcom/android/internal/statusbar/StatusBarIconList;
 
     invoke-direct {p0}, Lcom/android/internal/statusbar/IStatusBar$Stub;-><init>()V
 
@@ -131,7 +129,6 @@
 
 .method static synthetic access$200(Lcom/android/systemui/statusbar/CommandQueue;)Lcom/android/internal/statusbar/StatusBarIconList;
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/CommandQueue;
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/CommandQueue;->mList:Lcom/android/internal/statusbar/StatusBarIconList;
 
@@ -140,7 +137,6 @@
 
 .method static synthetic access$300(Lcom/android/systemui/statusbar/CommandQueue;)Lcom/android/systemui/statusbar/CommandQueue$Callbacks;
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/CommandQueue;
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/CommandQueue;->mCallbacks:Lcom/android/systemui/statusbar/CommandQueue$Callbacks;
 
@@ -151,8 +147,6 @@
 # virtual methods
 .method public addNotification(Landroid/os/IBinder;Landroid/service/notification/StatusBarNotification;)V
     .locals 6
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Landroid/service/notification/StatusBarNotification;
 
     iget-object v2, p0, Lcom/android/systemui/statusbar/CommandQueue;->mList:Lcom/android/internal/statusbar/StatusBarIconList;
 
@@ -339,7 +333,6 @@
 
 .method public blockRecentWindow(Z)V
     .locals 5
-    .param p1    # Z
 
     const/4 v0, 0x0
 
@@ -431,7 +424,6 @@
 
 .method public disable(I)V
     .locals 5
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/systemui/statusbar/CommandQueue;->mList:Lcom/android/internal/statusbar/StatusBarIconList;
 
@@ -556,7 +548,6 @@
 
 .method public removeIcon(I)V
     .locals 6
-    .param p1    # I
 
     iget-object v2, p0, Lcom/android/systemui/statusbar/CommandQueue;->mList:Lcom/android/internal/statusbar/StatusBarIconList;
 
@@ -601,7 +592,6 @@
 
 .method public removeNotification(Landroid/os/IBinder;)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
 
     iget-object v1, p0, Lcom/android/systemui/statusbar/CommandQueue;->mList:Lcom/android/internal/statusbar/StatusBarIconList;
 
@@ -638,7 +628,6 @@
 
 .method public setCallBackground(I)V
     .locals 5
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/systemui/statusbar/CommandQueue;->mList:Lcom/android/internal/statusbar/StatusBarIconList;
 
@@ -681,8 +670,6 @@
 
 .method public setHardKeyboardStatus(ZZ)V
     .locals 6
-    .param p1    # Z
-    .param p2    # Z
 
     const/4 v0, 0x1
 
@@ -743,8 +730,6 @@
 
 .method public setIcon(ILcom/android/internal/statusbar/StatusBarIcon;)V
     .locals 6
-    .param p1    # I
-    .param p2    # Lcom/android/internal/statusbar/StatusBarIcon;
 
     iget-object v2, p0, Lcom/android/systemui/statusbar/CommandQueue;->mList:Lcom/android/internal/statusbar/StatusBarIconList;
 
@@ -791,9 +776,6 @@
 
 .method public setImeWindowStatus(Landroid/os/IBinder;II)V
     .locals 3
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # I
-    .param p3    # I
 
     iget-object v1, p0, Lcom/android/systemui/statusbar/CommandQueue;->mList:Lcom/android/internal/statusbar/StatusBarIconList;
 
@@ -832,7 +814,6 @@
 
 .method public setMaxBrightness(I)V
     .locals 5
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/systemui/statusbar/CommandQueue;->mList:Lcom/android/internal/statusbar/StatusBarIconList;
 
@@ -875,7 +856,6 @@
 
 .method public setMultiWindowBg(Z)V
     .locals 6
-    .param p1    # Z
 
     const/4 v0, 0x0
 
@@ -925,7 +905,6 @@
 
 .method public setSemiTransparentMode(Z)V
     .locals 6
-    .param p1    # Z
 
     const/4 v0, 0x0
 
@@ -975,8 +954,6 @@
 
 .method public setSystemUiVisibility(II)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     iget-object v1, p0, Lcom/android/systemui/statusbar/CommandQueue;->mList:Lcom/android/internal/statusbar/StatusBarIconList;
 
@@ -1017,7 +994,6 @@
 
 .method public setTransGradationMode(Z)V
     .locals 6
-    .param p1    # Z
 
     const/4 v0, 0x0
 
@@ -1067,7 +1043,6 @@
 
 .method public setUseWindowTrans(Z)V
     .locals 6
-    .param p1    # Z
 
     const/4 v0, 0x0
 
@@ -1117,7 +1092,6 @@
 
 .method public setWindowSemiTransparentMode(Z)V
     .locals 6
-    .param p1    # Z
 
     const/4 v0, 0x0
 
@@ -1167,8 +1141,6 @@
 
 .method public setWindowState(II)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     iget-object v1, p0, Lcom/android/systemui/statusbar/CommandQueue;->mList:Lcom/android/internal/statusbar/StatusBarIconList;
 
@@ -1203,7 +1175,6 @@
 
 .method public setWindowTransGradationMode(Z)V
     .locals 6
-    .param p1    # Z
 
     const/4 v0, 0x0
 
@@ -1379,7 +1350,6 @@
 
 .method public topAppWindowChanged(Z)V
     .locals 6
-    .param p1    # Z
 
     const/4 v0, 0x0
 
@@ -1429,8 +1399,6 @@
 
 .method public updateNotification(Landroid/os/IBinder;Landroid/service/notification/StatusBarNotification;)V
     .locals 6
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Landroid/service/notification/StatusBarNotification;
 
     iget-object v2, p0, Lcom/android/systemui/statusbar/CommandQueue;->mList:Lcom/android/internal/statusbar/StatusBarIconList;
 

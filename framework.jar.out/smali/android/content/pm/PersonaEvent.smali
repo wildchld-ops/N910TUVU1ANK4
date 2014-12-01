@@ -178,7 +178,6 @@
 
 .method public constructor <init>(I)V
     .locals 0
-    .param p1    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -189,7 +188,6 @@
 
 .method public constructor <init>(Landroid/os/Parcel;)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -210,7 +208,6 @@
 
 .method public static toReadableString(I)Ljava/lang/String;
     .locals 1
-    .param p0    # I
 
     if-ltz p0, :cond_0
 
@@ -268,8 +265,6 @@
 
 .method public getIntExtra(Ljava/lang/String;I)I
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     iget-object v0, p0, Landroid/content/pm/PersonaEvent;->extras:Landroid/os/Bundle;
 
@@ -290,7 +285,6 @@
 
 .method public getStringExtra(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/content/pm/PersonaEvent;->extras:Landroid/os/Bundle;
 
@@ -313,8 +307,6 @@
 
 .method public putExtra(Ljava/lang/String;I)Landroid/content/pm/PersonaEvent;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     iget-object v0, p0, Landroid/content/pm/PersonaEvent;->extras:Landroid/os/Bundle;
 
@@ -336,8 +328,6 @@
 
 .method public putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/pm/PersonaEvent;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/content/pm/PersonaEvent;->extras:Landroid/os/Bundle;
 
@@ -359,7 +349,6 @@
 
 .method public setEvent(I)Landroid/content/pm/PersonaEvent;
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/content/pm/PersonaEvent;->event:I
 
@@ -368,8 +357,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget v0, p0, Landroid/content/pm/PersonaEvent;->event:I
 

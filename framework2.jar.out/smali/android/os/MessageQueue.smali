@@ -41,7 +41,6 @@
 # direct methods
 .method constructor <init>(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -203,7 +202,6 @@
 # virtual methods
 .method public addIdleHandler(Landroid/os/MessageQueue$IdleHandler;)V
     .locals 2
-    .param p1    # Landroid/os/MessageQueue$IdleHandler;
 
     if-nez p1, :cond_0
 
@@ -239,8 +237,6 @@
 
 .method dump(Landroid/util/Printer;Ljava/lang/String;)V
     .locals 6
-    .param p1    # Landroid/util/Printer;
-    .param p2    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -446,8 +442,6 @@
 
 .method enqueueMessage(Landroid/os/Message;J)Z
     .locals 7
-    .param p1    # Landroid/os/Message;
-    .param p2    # J
 
     const/4 v4, 0x1
 
@@ -647,7 +641,6 @@
 
 .method enqueueSyncBarrier(J)I
     .locals 6
-    .param p1    # J
 
     monitor-enter p0
 
@@ -747,9 +740,6 @@
 
 .method hasMessages(Landroid/os/Handler;ILjava/lang/Object;)Z
     .locals 3
-    .param p1    # Landroid/os/Handler;
-    .param p2    # I
-    .param p3    # Ljava/lang/Object;
 
     const/4 v1, 0x0
 
@@ -813,9 +803,6 @@
 
 .method hasMessages(Landroid/os/Handler;Ljava/lang/Runnable;Ljava/lang/Object;)Z
     .locals 3
-    .param p1    # Landroid/os/Handler;
-    .param p2    # Ljava/lang/Runnable;
-    .param p3    # Ljava/lang/Object;
 
     const/4 v1, 0x0
 
@@ -1166,7 +1153,6 @@
 
 .method quit(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-boolean v0, p0, Landroid/os/MessageQueue;->mQuitAllowed:Z
 
@@ -1231,8 +1217,6 @@
 
 .method removeCallbacksAndMessages(Landroid/os/Handler;Ljava/lang/Object;)V
     .locals 4
-    .param p1    # Landroid/os/Handler;
-    .param p2    # Ljava/lang/Object;
 
     if-nez p1, :cond_0
 
@@ -1321,7 +1305,6 @@
 
 .method public removeIdleHandler(Landroid/os/MessageQueue$IdleHandler;)V
     .locals 1
-    .param p1    # Landroid/os/MessageQueue$IdleHandler;
 
     monitor-enter p0
 
@@ -1346,9 +1329,6 @@
 
 .method removeMessages(Landroid/os/Handler;ILjava/lang/Object;)V
     .locals 4
-    .param p1    # Landroid/os/Handler;
-    .param p2    # I
-    .param p3    # Ljava/lang/Object;
 
     if-nez p1, :cond_0
 
@@ -1445,9 +1425,6 @@
 
 .method removeMessages(Landroid/os/Handler;Ljava/lang/Runnable;Ljava/lang/Object;)V
     .locals 4
-    .param p1    # Landroid/os/Handler;
-    .param p2    # Ljava/lang/Runnable;
-    .param p3    # Ljava/lang/Object;
 
     if-eqz p1, :cond_0
 
@@ -1547,7 +1524,6 @@
 
 .method removeSyncBarrier(I)V
     .locals 5
-    .param p1    # I
 
     monitor-enter p0
 

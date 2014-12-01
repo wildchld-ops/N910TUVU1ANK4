@@ -88,7 +88,6 @@
 
 .method public static clone(Lcom/diotek/ime/framework/view/Keyboard$Key;)Lcom/diotek/ime/framework/view/KeboardKeyInfo;
     .locals 2
-    .param p0    # Lcom/diotek/ime/framework/view/Keyboard$Key;
 
     new-instance v0, Lcom/diotek/ime/framework/view/KeboardKeyInfo;
 

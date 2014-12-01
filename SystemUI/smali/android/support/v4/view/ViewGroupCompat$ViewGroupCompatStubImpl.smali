@@ -30,7 +30,6 @@
 # virtual methods
 .method public getLayoutMode(Landroid/view/ViewGroup;)I
     .locals 1
-    .param p1    # Landroid/view/ViewGroup;
 
     const/4 v0, 0x0
 
@@ -39,9 +38,6 @@
 
 .method public onRequestSendAccessibilityEvent(Landroid/view/ViewGroup;Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/ViewGroup;
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/accessibility/AccessibilityEvent;
 
     const/4 v0, 0x1
 
@@ -50,16 +46,12 @@
 
 .method public setLayoutMode(Landroid/view/ViewGroup;I)V
     .locals 0
-    .param p1    # Landroid/view/ViewGroup;
-    .param p2    # I
 
     return-void
 .end method
 
 .method public setMotionEventSplittingEnabled(Landroid/view/ViewGroup;Z)V
     .locals 0
-    .param p1    # Landroid/view/ViewGroup;
-    .param p2    # Z
 
     return-void
 .end method

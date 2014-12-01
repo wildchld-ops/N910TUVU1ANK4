@@ -25,8 +25,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/BackupManagerService;ILcom/android/server/BackupManagerService$BackupRestoreTask;)V
     .locals 0
-    .param p2    # I
-    .param p3    # Lcom/android/server/BackupManagerService$BackupRestoreTask;
 
     iput-object p1, p0, Lcom/android/server/BackupManagerService$Operation;->this$0:Lcom/android/server/BackupManagerService;
 

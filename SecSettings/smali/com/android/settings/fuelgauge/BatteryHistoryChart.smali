@@ -126,8 +126,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 24
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct/range {p0 .. p2}, Landroid/view/View;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -968,19 +966,6 @@
 
 .method finishPaths(IIIIILandroid/graphics/Path;IZZZZZLandroid/graphics/Path;)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Landroid/graphics/Path;
-    .param p7    # I
-    .param p8    # Z
-    .param p9    # Z
-    .param p10    # Z
-    .param p11    # Z
-    .param p12    # Z
-    .param p13    # Landroid/graphics/Path;
 
     if-eqz p6, :cond_2
 
@@ -1118,7 +1103,6 @@
 
 .method protected onDraw(Landroid/graphics/Canvas;)V
     .locals 17
-    .param p1    # Landroid/graphics/Canvas;
 
     invoke-super/range {p0 .. p1}, Landroid/view/View;->onDraw(Landroid/graphics/Canvas;)V
 
@@ -1957,8 +1941,6 @@
 
 .method protected onMeasure(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     invoke-super {p0, p1, p2}, Landroid/view/View;->onMeasure(II)V
 
@@ -2011,10 +1993,6 @@
 
 .method protected onSizeChanged(IIII)V
     .locals 39
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-super/range {p0 .. p4}, Landroid/view/View;->onSizeChanged(IIII)V
 
@@ -3407,7 +3385,6 @@
 
 .method setStats(Landroid/os/BatteryStats;)V
     .locals 14
-    .param p1    # Landroid/os/BatteryStats;
 
     iput-object p1, p0, Lcom/android/settings/fuelgauge/BatteryHistoryChart;->mStats:Landroid/os/BatteryStats;
 
@@ -3708,8 +3685,6 @@
 
 .method public setTypeface(Landroid/graphics/Typeface;I)V
     .locals 6
-    .param p1    # Landroid/graphics/Typeface;
-    .param p2    # I
 
     const/4 v3, 0x0
 

@@ -152,8 +152,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/enterprise/billing/EnterpriseConnectivity;Ljava/lang/String;Landroid/os/Looper;)V
     .locals 4
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/os/Looper;
 
     const/4 v3, 0x0
 
@@ -303,8 +301,6 @@
 
 .method static synthetic access$000(Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;I)Z
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;->contains(I)Z
 
@@ -315,7 +311,6 @@
 
 .method static synthetic access$100(Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;->showNotification()V
 
@@ -324,8 +319,6 @@
 
 .method static synthetic access$1800(Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;->slogSM(Ljava/lang/String;)V
 
@@ -334,7 +327,6 @@
 
 .method static synthetic access$1900(Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;)Z
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;
 
     iget-boolean v0, p0, Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;->mEnabled:Z
 
@@ -343,8 +335,6 @@
 
 .method static synthetic access$1902(Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;->mEnabled:Z
 
@@ -353,7 +343,6 @@
 
 .method static synthetic access$200(Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;)Z
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;->isAllowed()Z
 
@@ -364,7 +353,6 @@
 
 .method static synthetic access$2000(Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;)Z
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;->getEnabled()Z
 
@@ -375,8 +363,6 @@
 
 .method static synthetic access$2100(Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;I)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;->eventToString(I)Ljava/lang/String;
 
@@ -387,7 +373,6 @@
 
 .method static synthetic access$2200(Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;)Z
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;->turnOffConnection()Z
 
@@ -398,7 +383,6 @@
 
 .method static synthetic access$2300(Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;)Landroid/net/NetworkInfo$State;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;
 
     iget-object v0, p0, Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;->mState:Landroid/net/NetworkInfo$State;
 
@@ -407,7 +391,6 @@
 
 .method static synthetic access$2400(Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;)Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection$DisconnectingState;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;
 
     iget-object v0, p0, Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;->mDisconnectingState:Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection$DisconnectingState;
 
@@ -416,8 +399,6 @@
 
 .method static synthetic access$2500(Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;Lcom/android/internal/util/IState;)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;
-    .param p1    # Lcom/android/internal/util/IState;
 
     invoke-virtual {p0, p1}, Lcom/android/internal/util/StateMachine;->transitionTo(Lcom/android/internal/util/IState;)V
 
@@ -426,7 +407,6 @@
 
 .method static synthetic access$2600(Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;)Z
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;
 
     iget-boolean v0, p0, Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;->mNotifying:Z
 
@@ -435,8 +415,6 @@
 
 .method static synthetic access$2602(Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;->mNotifying:Z
 
@@ -445,8 +423,6 @@
 
 .method static synthetic access$2800(Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;Z)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;->enableUidBlockRules(Z)V
 
@@ -455,7 +431,6 @@
 
 .method static synthetic access$2900(Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;)I
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;
 
     iget v0, p0, Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;->mNetworkType:I
 
@@ -464,8 +439,6 @@
 
 .method static synthetic access$3000(Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;I)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;->sendNetworkTypeChangeBroadcast(I)V
 
@@ -474,7 +447,6 @@
 
 .method static synthetic access$3100(Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;)Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection$ConnectingState;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;
 
     iget-object v0, p0, Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;->mConnectingState:Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection$ConnectingState;
 
@@ -483,8 +455,6 @@
 
 .method static synthetic access$3200(Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;Lcom/android/internal/util/IState;)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;
-    .param p1    # Lcom/android/internal/util/IState;
 
     invoke-virtual {p0, p1}, Lcom/android/internal/util/StateMachine;->transitionTo(Lcom/android/internal/util/IState;)V
 
@@ -493,7 +463,6 @@
 
 .method static synthetic access$3300(Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;)Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection$ConnectedState;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;
 
     iget-object v0, p0, Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;->mConnectedState:Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection$ConnectedState;
 
@@ -502,8 +471,6 @@
 
 .method static synthetic access$3400(Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;Lcom/android/internal/util/IState;)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;
-    .param p1    # Lcom/android/internal/util/IState;
 
     invoke-virtual {p0, p1}, Lcom/android/internal/util/StateMachine;->transitionTo(Lcom/android/internal/util/IState;)V
 
@@ -512,7 +479,6 @@
 
 .method static synthetic access$3500(Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;->onConnect()V
 
@@ -521,7 +487,6 @@
 
 .method static synthetic access$3600(Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;)Z
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;
 
     iget-boolean v0, p0, Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;->mEntDataEnabled:Z
 
@@ -530,8 +495,6 @@
 
 .method static synthetic access$3602(Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;->mEntDataEnabled:Z
 
@@ -540,7 +503,6 @@
 
 .method static synthetic access$3700(Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;)Z
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;->isApnAvailable()Z
 
@@ -551,7 +513,6 @@
 
 .method static synthetic access$3800(Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;)I
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;->turnOnConnection()I
 
@@ -562,8 +523,6 @@
 
 .method static synthetic access$3900(Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;I)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/internal/util/StateMachine;->removeMessages(I)V
 
@@ -572,7 +531,6 @@
 
 .method static synthetic access$4000(Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;->setContainersForConnection()V
 
@@ -581,7 +539,6 @@
 
 .method static synthetic access$4100(Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;)Z
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;
 
     iget-boolean v0, p0, Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;->mOffloadToWifi:Z
 
@@ -590,8 +547,6 @@
 
 .method static synthetic access$4102(Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;->mOffloadToWifi:Z
 
@@ -600,9 +555,6 @@
 
 .method static synthetic access$4200(Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;Ljava/util/Collection;Z)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;
-    .param p1    # Ljava/util/Collection;
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;->changeUidAllowRules(Ljava/util/Collection;Z)V
 
@@ -611,7 +563,6 @@
 
 .method static synthetic access$4300(Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;)Ljava/util/Set;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;
 
     iget-object v0, p0, Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;->mUids:Ljava/util/Set;
 
@@ -620,8 +571,6 @@
 
 .method static synthetic access$4402(Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;->mFirewallRulesEnabled:Z
 
@@ -630,7 +579,6 @@
 
 .method static synthetic access$4500(Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;)Z
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;
 
     iget-boolean v0, p0, Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;->mRoamingDataAllowed:Z
 
@@ -639,8 +587,6 @@
 
 .method static synthetic access$4502(Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;->mRoamingDataAllowed:Z
 
@@ -649,8 +595,6 @@
 
 .method static synthetic access$4700(Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;Lcom/android/internal/util/IState;)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;
-    .param p1    # Lcom/android/internal/util/IState;
 
     invoke-virtual {p0, p1}, Lcom/android/internal/util/StateMachine;->transitionTo(Lcom/android/internal/util/IState;)V
 
@@ -659,7 +603,6 @@
 
 .method static synthetic access$4800(Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;)Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection$IdleState;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;
 
     iget-object v0, p0, Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;->mIdleState:Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection$IdleState;
 
@@ -668,8 +611,6 @@
 
 .method static synthetic access$4900(Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;Lcom/android/internal/util/IState;)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;
-    .param p1    # Lcom/android/internal/util/IState;
 
     invoke-virtual {p0, p1}, Lcom/android/internal/util/StateMachine;->transitionTo(Lcom/android/internal/util/IState;)V
 
@@ -678,7 +619,6 @@
 
 .method static synthetic access$500(Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;
 
     iget-object v0, p0, Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;->mApn:Ljava/lang/String;
 
@@ -687,8 +627,6 @@
 
 .method static synthetic access$5000(Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;Landroid/os/Message;)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;
-    .param p1    # Landroid/os/Message;
 
     invoke-virtual {p0, p1}, Lcom/android/internal/util/StateMachine;->deferMessage(Landroid/os/Message;)V
 
@@ -697,8 +635,6 @@
 
 .method static synthetic access$5100(Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;Landroid/os/Message;)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;
-    .param p1    # Landroid/os/Message;
 
     invoke-virtual {p0, p1}, Lcom/android/internal/util/StateMachine;->deferMessage(Landroid/os/Message;)V
 
@@ -707,8 +643,6 @@
 
 .method static synthetic access$5200(Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;Landroid/os/Message;)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;
-    .param p1    # Landroid/os/Message;
 
     invoke-virtual {p0, p1}, Lcom/android/internal/util/StateMachine;->deferMessage(Landroid/os/Message;)V
 
@@ -717,8 +651,6 @@
 
 .method static synthetic access$5300(Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;Landroid/os/Message;)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;
-    .param p1    # Landroid/os/Message;
 
     invoke-virtual {p0, p1}, Lcom/android/internal/util/StateMachine;->deferMessage(Landroid/os/Message;)V
 
@@ -727,8 +659,6 @@
 
 .method static synthetic access$5500(Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;Lcom/android/internal/util/IState;)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;
-    .param p1    # Lcom/android/internal/util/IState;
 
     invoke-virtual {p0, p1}, Lcom/android/internal/util/StateMachine;->transitionTo(Lcom/android/internal/util/IState;)V
 
@@ -737,8 +667,6 @@
 
 .method static synthetic access$5600(Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;Lcom/android/internal/util/IState;)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;
-    .param p1    # Lcom/android/internal/util/IState;
 
     invoke-virtual {p0, p1}, Lcom/android/internal/util/StateMachine;->transitionTo(Lcom/android/internal/util/IState;)V
 
@@ -747,8 +675,6 @@
 
 .method static synthetic access$5700(Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;Z)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -762,8 +688,6 @@
 
 .method static synthetic access$5800(Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;Z)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -777,8 +701,6 @@
 
 .method static synthetic access$5900(Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;Z)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -792,8 +714,6 @@
 
 .method static synthetic access$6000(Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;I)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/internal/util/StateMachine;->removeMessages(I)V
 
@@ -802,8 +722,6 @@
 
 .method static synthetic access$6100(Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;Ljava/util/Collection;)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;
-    .param p1    # Ljava/util/Collection;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;->changeUidMarkRules(Ljava/util/Collection;)V
 
@@ -812,8 +730,6 @@
 
 .method static synthetic access$6202(Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;->mUidRulesEnabled:Z
 
@@ -822,7 +738,6 @@
 
 .method static synthetic access$6300(Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;)[I
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;->getSingleHandleUids()[I
 
@@ -833,7 +748,6 @@
 
 .method static synthetic access$6400(Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;->addMediaUidRule()V
 
@@ -842,7 +756,6 @@
 
 .method static synthetic access$6500(Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;
 
     iget-object v0, p0, Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;->mIface:Ljava/lang/String;
 
@@ -851,7 +764,6 @@
 
 .method static synthetic access$6600(Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;->removeMediaUidRule()V
 
@@ -860,7 +772,6 @@
 
 .method static synthetic access$6700(Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;)Z
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;->getOffloadToWifi()Z
 
@@ -871,8 +782,6 @@
 
 .method static synthetic access$6800(Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;Lcom/android/internal/util/IState;)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;
-    .param p1    # Lcom/android/internal/util/IState;
 
     invoke-virtual {p0, p1}, Lcom/android/internal/util/StateMachine;->transitionTo(Lcom/android/internal/util/IState;)V
 
@@ -881,7 +790,6 @@
 
 .method static synthetic access$6900(Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;)Z
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;->getEntDataEnabled()Z
 
@@ -892,8 +800,6 @@
 
 .method static synthetic access$7000(Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;Lcom/android/internal/util/IState;)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;
-    .param p1    # Lcom/android/internal/util/IState;
 
     invoke-virtual {p0, p1}, Lcom/android/internal/util/StateMachine;->transitionTo(Lcom/android/internal/util/IState;)V
 
@@ -902,7 +808,6 @@
 
 .method static synthetic access$7100(Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;)Z
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;->getRoamingDataAllowed()Z
 
@@ -913,8 +818,6 @@
 
 .method static synthetic access$7200(Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;Lcom/android/internal/util/IState;)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;
-    .param p1    # Lcom/android/internal/util/IState;
 
     invoke-virtual {p0, p1}, Lcom/android/internal/util/StateMachine;->transitionTo(Lcom/android/internal/util/IState;)V
 
@@ -923,8 +826,6 @@
 
 .method static synthetic access$7400(Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;Lcom/android/internal/util/IState;)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;
-    .param p1    # Lcom/android/internal/util/IState;
 
     invoke-virtual {p0, p1}, Lcom/android/internal/util/StateMachine;->transitionTo(Lcom/android/internal/util/IState;)V
 
@@ -933,7 +834,6 @@
 
 .method static synthetic access$7500(Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;->onDisconnect()V
 
@@ -942,8 +842,6 @@
 
 .method static synthetic access$7600(Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;Landroid/os/Message;)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;
-    .param p1    # Landroid/os/Message;
 
     invoke-virtual {p0, p1}, Lcom/android/internal/util/StateMachine;->deferMessage(Landroid/os/Message;)V
 
@@ -952,8 +850,6 @@
 
 .method static synthetic access$7700(Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;Landroid/os/Message;)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;
-    .param p1    # Landroid/os/Message;
 
     invoke-virtual {p0, p1}, Lcom/android/internal/util/StateMachine;->deferMessage(Landroid/os/Message;)V
 
@@ -962,8 +858,6 @@
 
 .method static synthetic access$7800(Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;Landroid/os/Message;)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;
-    .param p1    # Landroid/os/Message;
 
     invoke-virtual {p0, p1}, Lcom/android/internal/util/StateMachine;->deferMessage(Landroid/os/Message;)V
 
@@ -1042,8 +936,6 @@
 
 .method private addUidEntry(Ljava/lang/Integer;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/Integer;
-    .param p2    # Ljava/lang/String;
 
     :try_start_0
     iget-object v1, p0, Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;->this$0:Lcom/android/server/enterprise/billing/EnterpriseConnectivity;
@@ -1149,7 +1041,6 @@
 
 .method private addUidRules(Ljava/lang/Integer;)V
     .locals 5
-    .param p1    # Ljava/lang/Integer;
 
     :try_start_0
     new-instance v1, Ljava/lang/StringBuilder;
@@ -1257,7 +1148,6 @@
 
 .method private declared-synchronized changeUidAllowRules(Ljava/util/Collection;Z)V
     .locals 6
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1486,7 +1376,6 @@
 
 .method private contains(I)Z
     .locals 3
-    .param p1    # I
 
     iget-object v2, p0, Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;->mUids:Ljava/util/Set;
 
@@ -1526,7 +1415,6 @@
 
 .method private enableEnterpriseDefaultRoute(Z)V
     .locals 10
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1787,7 +1675,6 @@
 
 .method private enableEnterpriseLookup(Z)V
     .locals 3
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1952,7 +1839,6 @@
 
 .method private enableEnterpriseMasq(Z)V
     .locals 2
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2111,7 +1997,6 @@
 
 .method private enableRejectDefault(Z)V
     .locals 2
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2220,7 +2105,6 @@
 
 .method private enableUidBlockRules(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-boolean v2, p0, Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;->mFallbackToDefault:Z
 
@@ -2270,7 +2154,6 @@
 
 .method private enableUidMarkRules(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-boolean v2, p0, Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;->mUidRulesEnabled:Z
 
@@ -2327,7 +2210,6 @@
 
 .method private eventToString(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     sparse-switch p1, :sswitch_data_0
 
@@ -2669,8 +2551,6 @@
 
 .method private getUidsForApn(Ljava/lang/String;Z)Ljava/util/Collection;
     .locals 12
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3504,7 +3384,6 @@
 
 .method private mark(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p1}, Ljava/lang/String;->hashCode()I
 
@@ -3703,7 +3582,6 @@
 
 .method private declared-synchronized onFallbackToDefaultChanged(Z)V
     .locals 2
-    .param p1    # Z
 
     monitor-enter p0
 
@@ -3811,7 +3689,6 @@
 
 .method private removeUidRules(Ljava/lang/Integer;)V
     .locals 5
-    .param p1    # Ljava/lang/Integer;
 
     :try_start_0
     new-instance v1, Ljava/lang/StringBuilder;
@@ -3919,7 +3796,6 @@
 
 .method private sendNetworkTypeChangeBroadcast(I)V
     .locals 3
-    .param p1    # I
 
     new-instance v0, Landroid/content/Intent;
 
@@ -4022,8 +3898,6 @@
 
 .method private setUidAllowRule(IZ)V
     .locals 4
-    .param p1    # I
-    .param p2    # Z
 
     if-nez p2, :cond_0
 
@@ -4382,7 +4256,6 @@
 
 .method private slogSM(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     # getter for: Lcom/android/server/enterprise/billing/EnterpriseConnectivity;->VDBG:Z
     invoke-static {}, Lcom/android/server/enterprise/billing/EnterpriseConnectivity;->access$1700()Z
@@ -4851,7 +4724,6 @@
 
 .method public getUidsFromDb(Z)Ljava/util/Collection;
     .locals 1
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(Z)",
@@ -4988,7 +4860,6 @@
 
 .method public onApnAvailableChanged(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-boolean v0, p0, Lcom/android/server/enterprise/billing/EnterpriseConnectivity$Connection;->mApnAvailable:Z
 
@@ -5016,7 +4887,6 @@
 
 .method public setUserHandle(Ljava/util/List;)V
     .locals 2
-    .param p1    # Ljava/util/List;
 
     new-instance v0, Ljava/lang/StringBuilder;
 

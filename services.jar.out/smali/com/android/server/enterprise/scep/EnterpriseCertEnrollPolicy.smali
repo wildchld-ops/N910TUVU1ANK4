@@ -109,7 +109,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     const/4 v2, 0x1
 
@@ -185,13 +184,6 @@
 
 .method static synthetic access$200(Lcom/android/server/enterprise/scep/EnterpriseCertEnrollPolicy;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;I)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/scep/EnterpriseCertEnrollPolicy;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # I
 
     invoke-direct/range {p0 .. p6}, Lcom/android/server/enterprise/scep/EnterpriseCertEnrollPolicy;->sendBroadcastToAgentStatus(Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;I)V
 
@@ -200,7 +192,6 @@
 
 .method static synthetic access$500(Lcom/android/server/enterprise/scep/EnterpriseCertEnrollPolicy;)Lcom/android/server/enterprise/storage/EdmStorageProvider;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/scep/EnterpriseCertEnrollPolicy;
 
     iget-object v0, p0, Lcom/android/server/enterprise/scep/EnterpriseCertEnrollPolicy;->mEdmStorageProvider:Lcom/android/server/enterprise/storage/EdmStorageProvider;
 
@@ -209,11 +200,6 @@
 
 .method static synthetic access$600(Lcom/android/server/enterprise/scep/EnterpriseCertEnrollPolicy;Ljava/lang/String;IILjava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/scep/EnterpriseCertEnrollPolicy;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/server/enterprise/scep/EnterpriseCertEnrollPolicy;->sendBroadcastToCEPAgent(Ljava/lang/String;IILjava/lang/String;)V
 
@@ -230,12 +216,6 @@
 
 .method static synthetic access$800(Lcom/android/server/enterprise/scep/EnterpriseCertEnrollPolicy;Ljava/util/HashMap;ILjava/lang/String;IZ)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/scep/EnterpriseCertEnrollPolicy;
-    .param p1    # Ljava/util/HashMap;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
-    .param p5    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -249,8 +229,6 @@
 
 .method private bindSCEPService(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)I
     .locals 23
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const/16 v17, -0x259
 
@@ -633,10 +611,6 @@
 
 .method private bindServiceAndCallPending(Ljava/util/HashMap;ILjava/lang/String;IZ)V
     .locals 13
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
-    .param p5    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -978,13 +952,6 @@
 
 .method private bindToService(Landroid/content/Intent;Landroid/content/ServiceConnection;Ljava/lang/String;JIIZ)I
     .locals 5
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Landroid/content/ServiceConnection;
-    .param p3    # Ljava/lang/String;
-    .param p4    # J
-    .param p6    # I
-    .param p7    # I
-    .param p8    # Z
 
     const/4 v3, 0x1
 
@@ -1094,7 +1061,6 @@
 
 .method private enforcePermission(Landroid/app/enterprise/ContextInfo;)V
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-static {}, Landroid/os/Binder;->getCallingUid()I
 
@@ -1126,7 +1092,6 @@
 
 .method private static ensureNotOnMainThread(Landroid/content/Context;)V
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     invoke-static {}, Landroid/os/Looper;->myLooper()Landroid/os/Looper;
 
@@ -1154,8 +1119,6 @@
 
 .method private getCEPService(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Lcom/sec/enterprise/knox/certenroll/ICertEnrollmentService;
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     invoke-static {p1}, Lcom/android/server/enterprise/EnterpriseDeviceManagerService;->getCallingOrCurrentUserId(Landroid/app/enterprise/ContextInfo;)I
 
@@ -1294,7 +1257,6 @@
 
 .method private getPackageInfoOfAdmin(I)Ljava/lang/String;
     .locals 4
-    .param p1    # I
 
     iget-object v2, p0, Lcom/android/server/enterprise/scep/EnterpriseCertEnrollPolicy;->mContext:Landroid/content/Context;
 
@@ -1324,8 +1286,6 @@
 
 .method private getServiceComponent(ILjava/lang/String;)Landroid/content/ComponentName;
     .locals 10
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -1474,9 +1434,6 @@
 
 .method private insertOrUpdateDB(IILjava/lang/String;)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     const/4 v6, -0x1
 
@@ -1660,12 +1617,6 @@
 
 .method private sendBroadcastToAgentStatus(Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;I)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # I
 
     new-instance v2, Landroid/content/Intent;
 
@@ -1752,10 +1703,6 @@
 
 .method private sendBroadcastToCEPAgent(Ljava/lang/String;IILjava/lang/String;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
 
     new-instance v2, Landroid/content/Intent;
 
@@ -1849,9 +1796,6 @@
 
 .method private takeInterfaceOnBlockingQueue(ILjava/lang/String;Z)V
     .locals 9
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     sget-boolean v5, Lcom/android/server/enterprise/scep/EnterpriseCertEnrollPolicy;->DBG:Z
 
@@ -2125,8 +2069,6 @@
 # virtual methods
 .method public activateEnrollCertService(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)I
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     sget-boolean v0, Lcom/android/server/enterprise/scep/EnterpriseCertEnrollPolicy;->DBG:Z
 
@@ -2158,9 +2100,6 @@
 
 .method public deleteUserCertificate(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Ljava/lang/String;)I
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/scep/EnterpriseCertEnrollPolicy;->enforcePermission(Landroid/app/enterprise/ContextInfo;)V
 
@@ -2195,10 +2134,6 @@
 
 .method public enrollUserCertificate(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Lcom/sec/enterprise/knox/certenroll/EnrollmentProfile;Ljava/util/List;Ljava/lang/String;)Ljava/lang/String;
     .locals 15
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/sec/enterprise/knox/certenroll/EnrollmentProfile;
-    .param p5    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2335,9 +2270,6 @@
 
 .method public getCertEnrollmentStatus(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Ljava/lang/String;)I
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/scep/EnterpriseCertEnrollPolicy;->enforcePermission(Landroid/app/enterprise/ContextInfo;)V
 
@@ -2372,8 +2304,6 @@
 
 .method public isEnrollCertServiceActivated(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/scep/EnterpriseCertEnrollPolicy;->enforcePermission(Landroid/app/enterprise/ContextInfo;)V
 
@@ -2407,7 +2337,6 @@
 
 .method public notifyUserKeystoreUnlocked(I)V
     .locals 5
-    .param p1    # I
 
     const/4 v2, 0x1
 
@@ -2450,14 +2379,12 @@
 
 .method public onAdminAdded(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onAdminRemoved(I)V
     .locals 1
-    .param p1    # I
 
     sget-object v0, Lcom/android/server/enterprise/scep/EnterpriseCertEnrollPolicy;->mScepServiceMap:Ljava/util/Map;
 
@@ -2468,7 +2395,6 @@
 
 .method public onPreAdminRemoval(I)V
     .locals 5
-    .param p1    # I
 
     const/4 v3, 0x1
 
@@ -2543,9 +2469,6 @@
 
 .method public renewUserCertificate(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;)Ljava/lang/String;
     .locals 14
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

@@ -63,7 +63,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/fmm/TabletRemoteControls;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/fmm/TabletRemoteControls;
 
     invoke-virtual {p0}, Lcom/android/settings/SettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -74,7 +73,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/fmm/TabletRemoteControls;)Landroid/widget/Switch;
     .locals 1
-    .param p0    # Lcom/android/settings/fmm/TabletRemoteControls;
 
     iget-object v0, p0, Lcom/android/settings/fmm/TabletRemoteControls;->mActionBarSwitch:Landroid/widget/Switch;
 
@@ -273,8 +271,6 @@
 # virtual methods
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 6
-    .param p1    # Landroid/widget/CompoundButton;
-    .param p2    # Z
 
     const/4 v5, 0x1
 
@@ -483,7 +479,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 11
-    .param p1    # Landroid/os/Bundle;
 
     const/16 v9, 0x10
 
@@ -829,8 +824,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 9
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     const/4 v2, 0x0
 

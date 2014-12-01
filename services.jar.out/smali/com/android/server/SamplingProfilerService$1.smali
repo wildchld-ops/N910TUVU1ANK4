@@ -23,8 +23,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/SamplingProfilerService;Ljava/lang/String;ILandroid/os/DropBoxManager;)V
     .locals 0
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     iput-object p1, p0, Lcom/android/server/SamplingProfilerService$1;->this$0:Lcom/android/server/SamplingProfilerService;
 
@@ -39,8 +37,6 @@
 # virtual methods
 .method public onEvent(ILjava/lang/String;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/server/SamplingProfilerService$1;->this$0:Lcom/android/server/SamplingProfilerService;
 

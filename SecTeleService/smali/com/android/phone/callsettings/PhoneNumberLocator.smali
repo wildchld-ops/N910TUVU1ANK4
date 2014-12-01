@@ -188,7 +188,7 @@
 .method private InitAutoUpdate()V
     .locals 4
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/PhoneNumberLocator;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -196,7 +196,7 @@
 
     const/4 v3, 0x3
 
-    invoke-virtual {v1, v2, v3}, Landroid/content/ContextWrapper;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+    invoke-virtual {v1, v2, v3}, Landroid/app/Activity;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
 
     move-result-object v1
 
@@ -349,7 +349,7 @@
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/PhoneNumberLocator;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -377,7 +377,7 @@
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/PhoneNumberLocator;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -405,7 +405,7 @@
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/PhoneNumberLocator;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -433,7 +433,7 @@
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/PhoneNumberLocator;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -461,7 +461,7 @@
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/PhoneNumberLocator;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -499,13 +499,13 @@
 
     if-nez v0, :cond_0
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/PhoneNumberLocator;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
     new-instance v1, Landroid/content/Intent;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/PhoneNumberLocator;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -513,7 +513,7 @@
 
     invoke-direct {v1, v2, v3}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    invoke-virtual {v0, v1}, Landroid/content/ContextWrapper;->startService(Landroid/content/Intent;)Landroid/content/ComponentName;
+    invoke-virtual {v0, v1}, Landroid/app/Activity;->startService(Landroid/content/Intent;)Landroid/content/ComponentName;
 
     :cond_0
     :goto_0
@@ -524,13 +524,13 @@
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/PhoneNumberLocator;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
     new-instance v1, Landroid/content/Intent;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/PhoneNumberLocator;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -538,7 +538,7 @@
 
     invoke-direct {v1, v2, v3}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    invoke-virtual {v0, v1}, Landroid/content/ContextWrapper;->stopService(Landroid/content/Intent;)Z
+    invoke-virtual {v0, v1}, Landroid/app/Activity;->stopService(Landroid/content/Intent;)Z
 
     goto :goto_0
 .end method
@@ -548,7 +548,7 @@
 
     const/4 v5, 0x0
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/PhoneNumberLocator;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -556,7 +556,7 @@
 
     const/4 v4, 0x3
 
-    invoke-virtual {v2, v3, v4}, Landroid/content/ContextWrapper;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+    invoke-virtual {v2, v3, v4}, Landroid/app/Activity;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
 
     move-result-object v1
 
@@ -618,7 +618,7 @@
     :cond_0
     iget-object v0, p0, Lcom/android/phone/callsettings/PhoneNumberLocator;->mPhoneNumberLocatorDownloader:Lcom/android/phone/callsettings/PhoneNumberLocatorDownloader;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/PhoneNumberLocator;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -676,7 +676,7 @@
 
     iget-object v1, p0, Lcom/android/phone/callsettings/PhoneNumberLocator;->displayVersion:Ljava/lang/String;
 
-    invoke-virtual {v0, v1}, Landroid/preference/Preference;->setSummary(Ljava/lang/CharSequence;)V
+    invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->setSummary(Ljava/lang/CharSequence;)V
 
     :cond_0
     return-void
@@ -689,13 +689,13 @@
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/PhoneNumberLocator;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
     new-instance v1, Landroid/content/Intent;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/PhoneNumberLocator;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -703,7 +703,7 @@
 
     invoke-direct {v1, v2, v3}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    invoke-virtual {v0, v1}, Landroid/content/ContextWrapper;->startService(Landroid/content/Intent;)Landroid/content/ComponentName;
+    invoke-virtual {v0, v1}, Landroid/app/Activity;->startService(Landroid/content/Intent;)Landroid/content/ComponentName;
 
     :cond_0
     const/4 v0, 0x0
@@ -717,7 +717,7 @@
     .locals 4
     .param p1    # Z
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/PhoneNumberLocator;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -725,7 +725,7 @@
 
     const/4 v3, 0x3
 
-    invoke-virtual {v1, v2, v3}, Landroid/content/ContextWrapper;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+    invoke-virtual {v1, v2, v3}, Landroid/app/Activity;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
 
     move-result-object v1
 
@@ -746,7 +746,7 @@
     .locals 4
     .param p1    # I
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/PhoneNumberLocator;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -754,7 +754,7 @@
 
     const/4 v3, 0x3
 
-    invoke-virtual {v1, v2, v3}, Landroid/content/ContextWrapper;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+    invoke-virtual {v1, v2, v3}, Landroid/app/Activity;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
 
     move-result-object v1
 
@@ -775,7 +775,7 @@
     .locals 4
     .param p1    # Z
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/PhoneNumberLocator;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -783,7 +783,7 @@
 
     const/4 v3, 0x3
 
-    invoke-virtual {v1, v2, v3}, Landroid/content/ContextWrapper;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+    invoke-virtual {v1, v2, v3}, Landroid/app/Activity;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
 
     move-result-object v1
 
@@ -809,7 +809,7 @@
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_1
 
     :try_start_1
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/PhoneNumberLocator;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -817,7 +817,7 @@
 
     const v3, 0x7f0904c7
 
-    invoke-virtual {p0, v3}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v3}, Lcom/android/phone/callsettings/PhoneNumberLocator;->getString(I)Ljava/lang/String;
 
     move-result-object v3
 
@@ -837,7 +837,7 @@
 
     invoke-direct {v2, p0}, Lcom/android/phone/callsettings/PhoneNumberLocator$12;-><init>(Lcom/android/phone/callsettings/PhoneNumberLocator;)V
 
-    invoke-virtual {v1, v2}, Landroid/app/Dialog;->setOnCancelListener(Landroid/content/DialogInterface$OnCancelListener;)V
+    invoke-virtual {v1, v2}, Landroid/app/ProgressDialog;->setOnCancelListener(Landroid/content/DialogInterface$OnCancelListener;)V
 
     const-string v1, "Long running dialog(show)"
 
@@ -874,7 +874,7 @@
     :catch_1
     move-exception v0
 
-    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
+    invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
 
     goto :goto_0
 .end method
@@ -897,7 +897,7 @@
 
     iget-object v0, p0, Lcom/android/phone/callsettings/PhoneNumberLocator;->mProgressDialog:Landroid/app/ProgressDialog;
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->dismiss()V
+    invoke-virtual {v0}, Landroid/app/ProgressDialog;->dismiss()V
 
     const/4 v0, 0x0
 
@@ -1060,7 +1060,7 @@
     :catch_0
     move-exception v0
 
-    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
+    invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
 
     goto :goto_0
 
@@ -1076,7 +1076,7 @@
 
     invoke-super {p0, p1}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/PhoneNumberLocator;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -1094,13 +1094,13 @@
 
     const v1, 0x7f060039
 
-    invoke-virtual {p0, v1}, Landroid/preference/PreferenceFragment;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v1}, Lcom/android/phone/callsettings/PhoneNumberLocator;->addPreferencesFromResource(I)V
 
-    invoke-virtual {p0}, Landroid/preference/PreferenceFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/PhoneNumberLocator;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Landroid/preference/Preference;->getSharedPreferences()Landroid/content/SharedPreferences;
+    invoke-virtual {v1}, Landroid/preference/PreferenceScreen;->getSharedPreferences()Landroid/content/SharedPreferences;
 
     move-result-object v1
 
@@ -1108,7 +1108,7 @@
 
     const-string v1, "number_region_activation_preference"
 
-    invoke-virtual {p0, v1}, Landroid/preference/PreferenceFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v1}, Lcom/android/phone/callsettings/PhoneNumberLocator;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v1
 
@@ -1132,19 +1132,19 @@
 
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/PhoneNumberLocator;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
     iget-object v2, p0, Lcom/android/phone/callsettings/PhoneNumberLocator;->mReceiver:Lcom/android/phone/callsettings/PhoneNumberLocator$UpdateVersionReceiver;
 
-    invoke-virtual {v1, v2, v0}, Landroid/content/ContextWrapper;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
+    invoke-virtual {v1, v2, v0}, Landroid/app/Activity;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
     invoke-direct {p0}, Lcom/android/phone/callsettings/PhoneNumberLocator;->getDataFromDB()V
 
     const-string v1, "manual_update_preference"
 
-    invoke-virtual {p0, v1}, Landroid/preference/PreferenceFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v1}, Lcom/android/phone/callsettings/PhoneNumberLocator;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v1
 
@@ -1158,11 +1158,11 @@
 
     invoke-direct {v2, p0}, Lcom/android/phone/callsettings/PhoneNumberLocator$2;-><init>(Lcom/android/phone/callsettings/PhoneNumberLocator;)V
 
-    invoke-virtual {v1, v2}, Landroid/preference/Preference;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
+    invoke-virtual {v1, v2}, Landroid/preference/PreferenceScreen;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
 
     const-string v1, "version_preference"
 
-    invoke-virtual {p0, v1}, Landroid/preference/PreferenceFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v1}, Lcom/android/phone/callsettings/PhoneNumberLocator;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v1
 
@@ -1172,7 +1172,7 @@
 
     const-string v1, "auto_update_preference"
 
-    invoke-virtual {p0, v1}, Landroid/preference/PreferenceFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v1}, Lcom/android/phone/callsettings/PhoneNumberLocator;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v1
 
@@ -1188,18 +1188,18 @@
 
     const-string v2, "1"
 
-    invoke-virtual {v1, v2}, Landroid/preference/ListPreference;->setValue(Ljava/lang/String;)V
+    invoke-virtual {v1, v2}, Lcom/android/phone/callsettings/PNLAutoUpdateListPreference;->setValue(Ljava/lang/String;)V
 
     iget-object v1, p0, Lcom/android/phone/callsettings/PhoneNumberLocator;->autoUpdatePreference:Lcom/android/phone/callsettings/PNLAutoUpdateListPreference;
 
     const v2, 0x7f0904c1
 
-    invoke-virtual {v1, v2}, Landroid/preference/Preference;->setSummary(I)V
+    invoke-virtual {v1, v2}, Lcom/android/phone/callsettings/PNLAutoUpdateListPreference;->setSummary(I)V
 
     :goto_0
     const-string v1, "wlan_update_only_preference"
 
-    invoke-virtual {p0, v1}, Landroid/preference/PreferenceFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v1}, Lcom/android/phone/callsettings/PhoneNumberLocator;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v1
 
@@ -1218,7 +1218,7 @@
     :cond_0
     const/4 v1, 0x1
 
-    invoke-virtual {p0, v1}, Landroid/app/Fragment;->setHasOptionsMenu(Z)V
+    invoke-virtual {p0, v1}, Lcom/android/phone/callsettings/PhoneNumberLocator;->setHasOptionsMenu(Z)V
 
     return-void
 
@@ -1234,13 +1234,13 @@
 
     const-string v2, "2"
 
-    invoke-virtual {v1, v2}, Landroid/preference/ListPreference;->setValue(Ljava/lang/String;)V
+    invoke-virtual {v1, v2}, Lcom/android/phone/callsettings/PNLAutoUpdateListPreference;->setValue(Ljava/lang/String;)V
 
     iget-object v1, p0, Lcom/android/phone/callsettings/PhoneNumberLocator;->autoUpdatePreference:Lcom/android/phone/callsettings/PNLAutoUpdateListPreference;
 
     const v2, 0x7f0904c2
 
-    invoke-virtual {v1, v2}, Landroid/preference/Preference;->setSummary(I)V
+    invoke-virtual {v1, v2}, Lcom/android/phone/callsettings/PNLAutoUpdateListPreference;->setSummary(I)V
 
     goto :goto_0
 
@@ -1249,13 +1249,13 @@
 
     const-string v2, "3"
 
-    invoke-virtual {v1, v2}, Landroid/preference/ListPreference;->setValue(Ljava/lang/String;)V
+    invoke-virtual {v1, v2}, Lcom/android/phone/callsettings/PNLAutoUpdateListPreference;->setValue(Ljava/lang/String;)V
 
     iget-object v1, p0, Lcom/android/phone/callsettings/PhoneNumberLocator;->autoUpdatePreference:Lcom/android/phone/callsettings/PNLAutoUpdateListPreference;
 
     const v2, 0x7f0904d2
 
-    invoke-virtual {v1, v2}, Landroid/preference/Preference;->setSummary(I)V
+    invoke-virtual {v1, v2}, Lcom/android/phone/callsettings/PNLAutoUpdateListPreference;->setSummary(I)V
 
     goto :goto_0
 
@@ -1264,13 +1264,13 @@
 
     const-string v2, "4"
 
-    invoke-virtual {v1, v2}, Landroid/preference/ListPreference;->setValue(Ljava/lang/String;)V
+    invoke-virtual {v1, v2}, Lcom/android/phone/callsettings/PNLAutoUpdateListPreference;->setValue(Ljava/lang/String;)V
 
     iget-object v1, p0, Lcom/android/phone/callsettings/PhoneNumberLocator;->autoUpdatePreference:Lcom/android/phone/callsettings/PNLAutoUpdateListPreference;
 
     const v2, 0x7f0904d3
 
-    invoke-virtual {v1, v2}, Landroid/preference/Preference;->setSummary(I)V
+    invoke-virtual {v1, v2}, Lcom/android/phone/callsettings/PNLAutoUpdateListPreference;->setSummary(I)V
 
     goto :goto_0
 
@@ -1297,7 +1297,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f02029b
+    const v1, 0x7f02029a
 
     invoke-interface {v0, v1}, Landroid/view/MenuItem;->setIcon(I)Landroid/view/MenuItem;
 
@@ -1309,7 +1309,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f02029a
+    const v1, 0x7f020299
 
     invoke-interface {v0, v1}, Landroid/view/MenuItem;->setIcon(I)Landroid/view/MenuItem;
 
@@ -1331,7 +1331,7 @@
 
     iget-object v0, p0, Lcom/android/phone/callsettings/PhoneNumberLocator;->mProgressDialog:Landroid/app/ProgressDialog;
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->dismiss()V
+    invoke-virtual {v0}, Landroid/app/ProgressDialog;->dismiss()V
 
     iput-object v2, p0, Lcom/android/phone/callsettings/PhoneNumberLocator;->mProgressDialog:Landroid/app/ProgressDialog;
 
@@ -1347,19 +1347,19 @@
     iput-object v2, p0, Lcom/android/phone/callsettings/PhoneNumberLocator;->mPhoneNumberLocatorDownloader:Lcom/android/phone/callsettings/PhoneNumberLocatorDownloader;
 
     :cond_1
-    invoke-super {p0}, Landroid/preference/PreferenceFragment;->onDestroy()V
+    invoke-super {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onDestroy()V
 
     iget-object v0, p0, Lcom/android/phone/callsettings/PhoneNumberLocator;->mReceiver:Lcom/android/phone/callsettings/PhoneNumberLocator$UpdateVersionReceiver;
 
     if-eqz v0, :cond_2
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/PhoneNumberLocator;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/android/phone/callsettings/PhoneNumberLocator;->mReceiver:Lcom/android/phone/callsettings/PhoneNumberLocator$UpdateVersionReceiver;
 
-    invoke-virtual {v0, v1}, Landroid/content/ContextWrapper;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
+    invoke-virtual {v0, v1}, Landroid/app/Activity;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
     iput-object v2, p0, Lcom/android/phone/callsettings/PhoneNumberLocator;->mReceiver:Lcom/android/phone/callsettings/PhoneNumberLocator$UpdateVersionReceiver;
 
@@ -1396,7 +1396,7 @@
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/PhoneNumberLocator;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -1438,7 +1438,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->show()V
+    invoke-virtual {v0}, Landroid/app/AlertDialog;->show()V
 
     move v0, v6
 
@@ -1467,7 +1467,7 @@
 
     move-object v1, p0
 
-    invoke-virtual/range {v0 .. v5}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->startFragment(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;I)Z
+    invoke-virtual/range {v0 .. v5}, Lcom/android/phone/callsettings/PhoneNumberLocator;->startFragment(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;I)Z
 
     move v0, v6
 
@@ -1503,7 +1503,7 @@
     .param p1    # Landroid/preference/PreferenceScreen;
     .param p2    # Landroid/preference/Preference;
 
-    invoke-super {p0, p1, p2}, Landroid/preference/PreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
+    invoke-super {p0, p1, p2}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
 
     move-result v0
 
@@ -1514,7 +1514,7 @@
     .locals 0
     .param p1    # Landroid/view/Menu;
 
-    invoke-super {p0, p1}, Landroid/app/Fragment;->onPrepareOptionsMenu(Landroid/view/Menu;)V
+    invoke-super {p0, p1}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onPrepareOptionsMenu(Landroid/view/Menu;)V
 
     return-void
 .end method
@@ -1606,7 +1606,7 @@
 
     const v7, 0x7f0904c1
 
-    invoke-virtual {v6, v7}, Landroid/preference/Preference;->setSummary(I)V
+    invoke-virtual {v6, v7}, Lcom/android/phone/callsettings/PNLAutoUpdateListPreference;->setSummary(I)V
 
     :cond_0
     :goto_0
@@ -1627,11 +1627,11 @@
     move v1, v4
 
     :goto_1
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/PhoneNumberLocator;->getActivity()Landroid/app/Activity;
 
     move-result-object v6
 
-    invoke-virtual {v6}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v6}, Landroid/app/Activity;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v6
 
@@ -1659,11 +1659,11 @@
 
     invoke-direct {p0, v6}, Lcom/android/phone/callsettings/PhoneNumberLocator;->log(Ljava/lang/String;)V
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/PhoneNumberLocator;->getActivity()Landroid/app/Activity;
 
     move-result-object v6
 
-    invoke-virtual {v6}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v6}, Landroid/app/Activity;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v6
 
@@ -1699,7 +1699,7 @@
 
     aget v6, v6, v1
 
-    invoke-virtual {v5, v6}, Landroid/preference/Preference;->setSummary(I)V
+    invoke-virtual {v5, v6}, Landroid/preference/CheckBoxPreference;->setSummary(I)V
 
     :cond_1
     const-string v5, "wlan_update_only_preference"
@@ -1750,7 +1750,7 @@
 
     const v7, 0x7f0904c2
 
-    invoke-virtual {v6, v7}, Landroid/preference/Preference;->setSummary(I)V
+    invoke-virtual {v6, v7}, Lcom/android/phone/callsettings/PNLAutoUpdateListPreference;->setSummary(I)V
 
     goto/16 :goto_0
 
@@ -1775,7 +1775,7 @@
 
     const v7, 0x7f0904d2
 
-    invoke-virtual {v6, v7}, Landroid/preference/Preference;->setSummary(I)V
+    invoke-virtual {v6, v7}, Lcom/android/phone/callsettings/PNLAutoUpdateListPreference;->setSummary(I)V
 
     goto/16 :goto_0
 
@@ -1800,7 +1800,7 @@
 
     const v7, 0x7f0904d3
 
-    invoke-virtual {v6, v7}, Landroid/preference/Preference;->setSummary(I)V
+    invoke-virtual {v6, v7}, Lcom/android/phone/callsettings/PNLAutoUpdateListPreference;->setSummary(I)V
 
     goto/16 :goto_0
 
@@ -1860,7 +1860,7 @@
     :catch_0
     move-exception v0
 
-    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
+    invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
 
     goto :goto_0
 .end method
@@ -1870,7 +1870,7 @@
 
     const/4 v3, 0x1
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/PhoneNumberLocator;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 

@@ -36,9 +36,6 @@
 # virtual methods
 .method public updateApproximate(Lcom/android/settings/deviceinfo/StorageMeasurement;JJ)V
     .locals 4
-    .param p1    # Lcom/android/settings/deviceinfo/StorageMeasurement;
-    .param p2    # J
-    .param p4    # J
 
     const/4 v3, 0x1
 
@@ -70,8 +67,6 @@
 
 .method public updateDetails(Lcom/android/settings/deviceinfo/StorageMeasurement;Lcom/android/settings/deviceinfo/StorageMeasurement$MeasurementDetails;)V
     .locals 2
-    .param p1    # Lcom/android/settings/deviceinfo/StorageMeasurement;
-    .param p2    # Lcom/android/settings/deviceinfo/StorageMeasurement$MeasurementDetails;
 
     iget-object v0, p0, Lcom/android/settings/deviceinfo/StorageVolumePreferenceCategory$2;->this$0:Lcom/android/settings/deviceinfo/StorageVolumePreferenceCategory;
 

@@ -64,8 +64,6 @@
 
 .method public static obtain(Landroid/view/MotionEvent;I)Lcom/android/server/accessibility/AccessibilityInputFilter$MotionEventHolder;
     .locals 2
-    .param p0    # Landroid/view/MotionEvent;
-    .param p1    # I
 
     sget-object v1, Lcom/android/server/accessibility/AccessibilityInputFilter$MotionEventHolder;->sPool:Landroid/util/Pools$SimplePool;
 

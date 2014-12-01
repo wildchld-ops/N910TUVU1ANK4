@@ -118,7 +118,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/saverestore/RestorePreviewActivity;)Landroid/view/LayoutInflater;
     .locals 1
-    .param p0    # Lcom/android/mms/saverestore/RestorePreviewActivity;
 
     iget-object v0, p0, Lcom/android/mms/saverestore/RestorePreviewActivity;->mInflater:Landroid/view/LayoutInflater;
 
@@ -127,7 +126,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/saverestore/RestorePreviewActivity;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/mms/saverestore/RestorePreviewActivity;
 
     iget-object v0, p0, Lcom/android/mms/saverestore/RestorePreviewActivity;->mDateSeperatorList:Ljava/util/ArrayList;
 
@@ -136,7 +134,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/saverestore/RestorePreviewActivity;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/mms/saverestore/RestorePreviewActivity;
 
     iget-object v0, p0, Lcom/android/mms/saverestore/RestorePreviewActivity;->mContext:Landroid/content/Context;
 
@@ -145,7 +142,6 @@
 
 .method static synthetic access$300(Lcom/android/mms/saverestore/RestorePreviewActivity;)[J
     .locals 1
-    .param p0    # Lcom/android/mms/saverestore/RestorePreviewActivity;
 
     invoke-direct {p0}, Lcom/android/mms/saverestore/RestorePreviewActivity;->getId()[J
 
@@ -156,7 +152,6 @@
 
 .method static synthetic access$400(Lcom/android/mms/saverestore/RestorePreviewActivity;)Lcom/android/mms/saverestore/SaveRestoreOperation;
     .locals 1
-    .param p0    # Lcom/android/mms/saverestore/RestorePreviewActivity;
 
     iget-object v0, p0, Lcom/android/mms/saverestore/RestorePreviewActivity;->mSaveRestoreOperation:Lcom/android/mms/saverestore/SaveRestoreOperation;
 
@@ -165,8 +160,6 @@
 
 .method private enableDateView(Landroid/view/View;Lcom/android/mms/saverestore/SavedSmsMessage;)V
     .locals 11
-    .param p1    # Landroid/view/View;
-    .param p2    # Lcom/android/mms/saverestore/SavedSmsMessage;
 
     const/4 v1, 0x0
 
@@ -410,7 +403,6 @@
 
 .method public static formatDate(J)J
     .locals 6
-    .param p0    # J
 
     invoke-static {}, Ljava/util/Calendar;->getInstance()Ljava/util/Calendar;
 
@@ -453,8 +445,6 @@
 
 .method private formatDate(Landroid/content/Context;J)Ljava/lang/String;
     .locals 8
-    .param p1    # Landroid/content/Context;
-    .param p2    # J
 
     invoke-static {p1}, Landroid/text/format/DateFormat;->getDateFormat(Landroid/content/Context;)Ljava/text/DateFormat;
 
@@ -589,7 +579,6 @@
 
 .method private getSpecificConvArray(Ljava/lang/String;)Ljava/util/ArrayList;
     .locals 4
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -765,7 +754,6 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 3
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p1}, Landroid/view/View;->getId()I
 
@@ -815,7 +803,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 3
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -870,7 +857,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 18
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super/range {p0 .. p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
@@ -1299,7 +1285,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 6
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v2, 0x1
 
@@ -1382,7 +1367,6 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)Z
     .locals 5
-    .param p1    # Landroid/view/Menu;
 
     const/4 v4, 0x6
 

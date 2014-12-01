@@ -68,7 +68,6 @@
 
 .method public constructor <init>(Ljava/util/UUID;)V
     .locals 3
-    .param p1    # Ljava/util/UUID;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/media/UnsupportedSchemeException;
@@ -127,7 +126,6 @@
 
 .method static synthetic access$000(Landroid/media/MediaDrm;)I
     .locals 1
-    .param p0    # Landroid/media/MediaDrm;
 
     iget v0, p0, Landroid/media/MediaDrm;->mNativeContext:I
 
@@ -136,7 +134,6 @@
 
 .method static synthetic access$100(Landroid/media/MediaDrm;)Landroid/media/MediaDrm$OnEventListener;
     .locals 1
-    .param p0    # Landroid/media/MediaDrm;
 
     iget-object v0, p0, Landroid/media/MediaDrm;->mOnEventListener:Landroid/media/MediaDrm$OnEventListener;
 
@@ -145,9 +142,6 @@
 
 .method static synthetic access$200(Landroid/media/MediaDrm;[BLjava/lang/String;)V
     .locals 0
-    .param p0    # Landroid/media/MediaDrm;
-    .param p1    # [B
-    .param p2    # Ljava/lang/String;
 
     invoke-static {p0, p1, p2}, Landroid/media/MediaDrm;->setCipherAlgorithmNative(Landroid/media/MediaDrm;[BLjava/lang/String;)V
 
@@ -156,9 +150,6 @@
 
 .method static synthetic access$300(Landroid/media/MediaDrm;[BLjava/lang/String;)V
     .locals 0
-    .param p0    # Landroid/media/MediaDrm;
-    .param p1    # [B
-    .param p2    # Ljava/lang/String;
 
     invoke-static {p0, p1, p2}, Landroid/media/MediaDrm;->setMacAlgorithmNative(Landroid/media/MediaDrm;[BLjava/lang/String;)V
 
@@ -167,11 +158,6 @@
 
 .method static synthetic access$400(Landroid/media/MediaDrm;[B[B[B[B)[B
     .locals 1
-    .param p0    # Landroid/media/MediaDrm;
-    .param p1    # [B
-    .param p2    # [B
-    .param p3    # [B
-    .param p4    # [B
 
     invoke-static {p0, p1, p2, p3, p4}, Landroid/media/MediaDrm;->encryptNative(Landroid/media/MediaDrm;[B[B[B[B)[B
 
@@ -182,11 +168,6 @@
 
 .method static synthetic access$500(Landroid/media/MediaDrm;[B[B[B[B)[B
     .locals 1
-    .param p0    # Landroid/media/MediaDrm;
-    .param p1    # [B
-    .param p2    # [B
-    .param p3    # [B
-    .param p4    # [B
 
     invoke-static {p0, p1, p2, p3, p4}, Landroid/media/MediaDrm;->decryptNative(Landroid/media/MediaDrm;[B[B[B[B)[B
 
@@ -197,10 +178,6 @@
 
 .method static synthetic access$600(Landroid/media/MediaDrm;[B[B[B)[B
     .locals 1
-    .param p0    # Landroid/media/MediaDrm;
-    .param p1    # [B
-    .param p2    # [B
-    .param p3    # [B
 
     invoke-static {p0, p1, p2, p3}, Landroid/media/MediaDrm;->signNative(Landroid/media/MediaDrm;[B[B[B)[B
 
@@ -211,11 +188,6 @@
 
 .method static synthetic access$700(Landroid/media/MediaDrm;[B[B[B[B)Z
     .locals 1
-    .param p0    # Landroid/media/MediaDrm;
-    .param p1    # [B
-    .param p2    # [B
-    .param p3    # [B
-    .param p4    # [B
 
     invoke-static {p0, p1, p2, p3, p4}, Landroid/media/MediaDrm;->verifyNative(Landroid/media/MediaDrm;[B[B[B[B)Z
 
@@ -232,7 +204,6 @@
 
 .method private static final getByteArrayFromUUID(Ljava/util/UUID;)[B
     .locals 9
-    .param p0    # Ljava/util/UUID;
 
     invoke-virtual {p0}, Ljava/util/UUID;->getMostSignificantBits()J
 
@@ -289,7 +260,6 @@
 
 .method public static final isCryptoSchemeSupported(Ljava/util/UUID;)Z
     .locals 2
-    .param p0    # Ljava/util/UUID;
 
     invoke-static {p0}, Landroid/media/MediaDrm;->getByteArrayFromUUID(Ljava/util/UUID;)[B
 
@@ -306,8 +276,6 @@
 
 .method public static final isCryptoSchemeSupported(Ljava/util/UUID;Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Ljava/util/UUID;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p0}, Landroid/media/MediaDrm;->getByteArrayFromUUID(Ljava/util/UUID;)[B
 
@@ -334,10 +302,6 @@
 
 .method private static postEventFromNative(Ljava/lang/Object;IILjava/lang/Object;)V
     .locals 4
-    .param p0    # Ljava/lang/Object;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/Object;
 
     check-cast p0, Ljava/lang/ref/WeakReference;
 
@@ -400,9 +364,6 @@
 
 .method public getCryptoSession([BLjava/lang/String;Ljava/lang/String;)Landroid/media/MediaDrm$CryptoSession;
     .locals 6
-    .param p1    # [B
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     new-instance v0, Landroid/media/MediaDrm$CryptoSession;
 
@@ -514,7 +475,6 @@
 
 .method public setOnEventListener(Landroid/media/MediaDrm$OnEventListener;)V
     .locals 0
-    .param p1    # Landroid/media/MediaDrm$OnEventListener;
 
     iput-object p1, p0, Landroid/media/MediaDrm;->mOnEventListener:Landroid/media/MediaDrm$OnEventListener;
 

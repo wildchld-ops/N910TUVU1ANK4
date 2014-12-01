@@ -79,7 +79,6 @@
 # direct methods
 .method public constructor <init>(Landroid/media/MediaPlayer;)V
     .locals 8
-    .param p1    # Landroid/media/MediaPlayer;
 
     const-wide/16 v6, 0x0
 
@@ -178,8 +177,6 @@
 
 .method static synthetic access$2900(Landroid/media/MediaPlayer$TimeProvider;Z)V
     .locals 0
-    .param p0    # Landroid/media/MediaPlayer$TimeProvider;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Landroid/media/MediaPlayer$TimeProvider;->notifyTimedEvent(Z)V
 
@@ -188,7 +185,6 @@
 
 .method static synthetic access$3000(Landroid/media/MediaPlayer$TimeProvider;)V
     .locals 0
-    .param p0    # Landroid/media/MediaPlayer$TimeProvider;
 
     invoke-direct {p0}, Landroid/media/MediaPlayer$TimeProvider;->notifyStop()V
 
@@ -197,7 +193,6 @@
 
 .method static synthetic access$3100(Landroid/media/MediaPlayer$TimeProvider;)V
     .locals 0
-    .param p0    # Landroid/media/MediaPlayer$TimeProvider;
 
     invoke-direct {p0}, Landroid/media/MediaPlayer$TimeProvider;->notifySeek()V
 
@@ -206,8 +201,6 @@
 
 .method private getEstimatedTime(JZ)J
     .locals 10
-    .param p1    # J
-    .param p3    # Z
 
     const-wide/16 v8, 0x0
 
@@ -438,7 +431,6 @@
 
 .method private declared-synchronized notifyTimedEvent(Z)V
     .locals 23
-    .param p1    # Z
 
     monitor-enter p0
 
@@ -880,7 +872,6 @@
 
 .method private registerListener(Landroid/media/MediaTimeProvider$OnMediaTimeListener;)I
     .locals 6
-    .param p1    # Landroid/media/MediaTimeProvider$OnMediaTimeListener;
 
     const/4 v5, 0x0
 
@@ -968,8 +959,6 @@
 
 .method private scheduleNotification(IJ)V
     .locals 5
-    .param p1    # I
-    .param p2    # J
 
     const/4 v4, 0x1
 
@@ -1054,7 +1043,6 @@
 # virtual methods
 .method public cancelNotifications(Landroid/media/MediaTimeProvider$OnMediaTimeListener;)V
     .locals 5
-    .param p1    # Landroid/media/MediaTimeProvider$OnMediaTimeListener;
 
     monitor-enter p0
 
@@ -1204,8 +1192,6 @@
 
 .method public getCurrentTimeUs(ZZ)J
     .locals 9
-    .param p1    # Z
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;
@@ -1465,8 +1451,6 @@
 
 .method public notifyAt(JLandroid/media/MediaTimeProvider$OnMediaTimeListener;)V
     .locals 3
-    .param p1    # J
-    .param p3    # Landroid/media/MediaTimeProvider$OnMediaTimeListener;
 
     monitor-enter p0
 
@@ -1567,7 +1551,6 @@
 
 .method public onPaused(Z)V
     .locals 3
-    .param p1    # Z
 
     monitor-enter p0
 
@@ -1649,7 +1632,6 @@
 
 .method public onSeekComplete(Landroid/media/MediaPlayer;)V
     .locals 3
-    .param p1    # Landroid/media/MediaPlayer;
 
     monitor-enter p0
 
@@ -1733,7 +1715,6 @@
 
 .method public scheduleUpdate(Landroid/media/MediaTimeProvider$OnMediaTimeListener;)V
     .locals 4
-    .param p1    # Landroid/media/MediaTimeProvider$OnMediaTimeListener;
 
     monitor-enter p0
 

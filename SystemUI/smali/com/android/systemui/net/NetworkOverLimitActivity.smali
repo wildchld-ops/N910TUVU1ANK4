@@ -18,8 +18,6 @@
 
 .method static synthetic access$000(Lcom/android/systemui/net/NetworkOverLimitActivity;Landroid/net/NetworkTemplate;)V
     .locals 0
-    .param p0    # Lcom/android/systemui/net/NetworkOverLimitActivity;
-    .param p1    # Landroid/net/NetworkTemplate;
 
     invoke-direct {p0, p1}, Lcom/android/systemui/net/NetworkOverLimitActivity;->snoozePolicy(Landroid/net/NetworkTemplate;)V
 
@@ -28,7 +26,6 @@
 
 .method private static getLimitedDialogTitleForTemplate(Landroid/net/NetworkTemplate;)I
     .locals 1
-    .param p0    # Landroid/net/NetworkTemplate;
 
     invoke-virtual {p0}, Landroid/net/NetworkTemplate;->getMatchRule()I
 
@@ -116,7 +113,6 @@
 
 .method private snoozePolicy(Landroid/net/NetworkTemplate;)V
     .locals 4
-    .param p1    # Landroid/net/NetworkTemplate;
 
     const-string v2, "netpolicy"
 
@@ -152,7 +148,6 @@
 # virtual methods
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 7
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 

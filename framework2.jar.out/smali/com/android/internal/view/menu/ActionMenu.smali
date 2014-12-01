@@ -26,7 +26,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -43,7 +42,6 @@
 
 .method private findItemIndex(I)I
     .locals 4
-    .param p1    # I
 
     iget-object v2, p0, Lcom/android/internal/view/menu/ActionMenu;->mItems:Ljava/util/ArrayList;
 
@@ -84,8 +82,6 @@
 
 .method private findItemWithShortcut(ILandroid/view/KeyEvent;)Lcom/android/internal/view/menu/ActionMenuItem;
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     iget-boolean v4, p0, Lcom/android/internal/view/menu/ActionMenu;->mIsQwerty:Z
 
@@ -140,7 +136,6 @@
 # virtual methods
 .method public add(I)Landroid/view/MenuItem;
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -153,10 +148,6 @@
 
 .method public add(IIII)Landroid/view/MenuItem;
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iget-object v0, p0, Lcom/android/internal/view/menu/ActionMenu;->mContext:Landroid/content/Context;
 
@@ -177,10 +168,6 @@
 
 .method public add(IIILjava/lang/CharSequence;)Landroid/view/MenuItem;
     .locals 7
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/CharSequence;
 
     new-instance v0, Lcom/android/internal/view/menu/ActionMenuItem;
 
@@ -209,7 +196,6 @@
 
 .method public add(Ljava/lang/CharSequence;)Landroid/view/MenuItem;
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v0, 0x0
 
@@ -222,14 +208,6 @@
 
 .method public addIntentOptions(IIILandroid/content/ComponentName;[Landroid/content/Intent;Landroid/content/Intent;I[Landroid/view/MenuItem;)I
     .locals 13
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/content/ComponentName;
-    .param p5    # [Landroid/content/Intent;
-    .param p6    # Landroid/content/Intent;
-    .param p7    # I
-    .param p8    # [Landroid/view/MenuItem;
 
     iget-object v10, p0, Lcom/android/internal/view/menu/ActionMenu;->mContext:Landroid/content/Context;
 
@@ -356,7 +334,6 @@
 
 .method public addSubMenu(I)Landroid/view/SubMenu;
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -365,10 +342,6 @@
 
 .method public addSubMenu(IIII)Landroid/view/SubMenu;
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/4 v0, 0x0
 
@@ -377,10 +350,6 @@
 
 .method public addSubMenu(IIILjava/lang/CharSequence;)Landroid/view/SubMenu;
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/CharSequence;
 
     const/4 v0, 0x0
 
@@ -389,7 +358,6 @@
 
 .method public addSubMenu(Ljava/lang/CharSequence;)Landroid/view/SubMenu;
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v0, 0x0
 
@@ -414,7 +382,6 @@
 
 .method public findItem(I)Landroid/view/MenuItem;
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/internal/view/menu/ActionMenu;->mItems:Ljava/util/ArrayList;
 
@@ -441,7 +408,6 @@
 
 .method public getItem(I)Landroid/view/MenuItem;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/internal/view/menu/ActionMenu;->mItems:Ljava/util/ArrayList;
 
@@ -498,8 +464,6 @@
 
 .method public isShortcutKey(ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     invoke-direct {p0, p1, p2}, Lcom/android/internal/view/menu/ActionMenu;->findItemWithShortcut(ILandroid/view/KeyEvent;)Lcom/android/internal/view/menu/ActionMenuItem;
 
@@ -520,8 +484,6 @@
 
 .method public performIdentifierAction(II)Z
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1}, Lcom/android/internal/view/menu/ActionMenu;->findItemIndex(I)I
 
@@ -552,9 +514,6 @@
 
 .method public performShortcut(ILandroid/view/KeyEvent;I)Z
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
-    .param p3    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/internal/view/menu/ActionMenu;->findItemWithShortcut(ILandroid/view/KeyEvent;)Lcom/android/internal/view/menu/ActionMenuItem;
 
@@ -577,7 +536,6 @@
 
 .method public removeGroup(I)V
     .locals 4
-    .param p1    # I
 
     iget-object v2, p0, Lcom/android/internal/view/menu/ActionMenu;->mItems:Ljava/util/ArrayList;
 
@@ -619,7 +577,6 @@
 
 .method public removeItem(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/internal/view/menu/ActionMenu;->mItems:Ljava/util/ArrayList;
 
@@ -634,9 +591,6 @@
 
 .method public setGroupCheckable(IZZ)V
     .locals 5
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # Z
 
     iget-object v3, p0, Lcom/android/internal/view/menu/ActionMenu;->mItems:Ljava/util/ArrayList;
 
@@ -676,8 +630,6 @@
 
 .method public setGroupEnabled(IZ)V
     .locals 5
-    .param p1    # I
-    .param p2    # Z
 
     iget-object v3, p0, Lcom/android/internal/view/menu/ActionMenu;->mItems:Ljava/util/ArrayList;
 
@@ -715,8 +667,6 @@
 
 .method public setGroupVisible(IZ)V
     .locals 5
-    .param p1    # I
-    .param p2    # Z
 
     iget-object v3, p0, Lcom/android/internal/view/menu/ActionMenu;->mItems:Ljava/util/ArrayList;
 
@@ -754,7 +704,6 @@
 
 .method public setQwertyMode(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/internal/view/menu/ActionMenu;->mIsQwerty:Z
 

@@ -42,8 +42,6 @@
 
 .method synthetic constructor <init>(Lcom/android/settings/wifi/WifiCallingEnabler;Lcom/android/settings/wifi/WifiCallingEnabler$1;)V
     .locals 0
-    .param p1    # Lcom/android/settings/wifi/WifiCallingEnabler;
-    .param p2    # Lcom/android/settings/wifi/WifiCallingEnabler$1;
 
     invoke-direct {p0, p1}, Lcom/android/settings/wifi/WifiCallingEnabler$WfcProvisionedTask;-><init>(Lcom/android/settings/wifi/WifiCallingEnabler;)V
 
@@ -54,7 +52,6 @@
 # virtual methods
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [Ljava/lang/Boolean;
 
@@ -67,7 +64,6 @@
 
 .method protected varargs doInBackground([Ljava/lang/Boolean;)Ljava/lang/Void;
     .locals 4
-    .param p1    # [Ljava/lang/Boolean;
 
     const/4 v3, 0x0
 

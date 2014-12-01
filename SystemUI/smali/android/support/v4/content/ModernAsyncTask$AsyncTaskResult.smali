@@ -38,7 +38,6 @@
 # direct methods
 .method varargs constructor <init>(Landroid/support/v4/content/ModernAsyncTask;[Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Landroid/support/v4/content/ModernAsyncTask;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

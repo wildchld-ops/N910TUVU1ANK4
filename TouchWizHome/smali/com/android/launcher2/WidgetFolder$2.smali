@@ -36,8 +36,6 @@
 # virtual methods
 .method public run(Lcom/android/launcher2/WidgetFolder$AppsCustomizeAsyncTask;Lcom/android/launcher2/WidgetFolder$AsyncTaskPageData;)V
     .locals 5
-    .param p1    # Lcom/android/launcher2/WidgetFolder$AppsCustomizeAsyncTask;
-    .param p2    # Lcom/android/launcher2/WidgetFolder$AsyncTaskPageData;
 
     const/4 v4, 0x1
 

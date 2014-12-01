@@ -9534,12 +9534,6 @@
 
     iput-boolean v0, p0, Lcom/android/phone/CallNotifier;->mVoicePrivacyState:Z
 
-    iget-object v0, p0, Lcom/android/phone/CallNotifier;->mApplication:Lcom/android/phone/PhoneGlobals;
-
-    iget-boolean v2, p0, Lcom/android/phone/CallNotifier;->mVoicePrivacyState:Z
-
-    invoke-virtual {v0, v2}, Lcom/android/phone/PhoneGlobals;->onVoicePrivacyStateChange(Z)V
-
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/android/phone/CallNotifier;->mSignalInfoToneRequest:Z
@@ -14711,49 +14705,43 @@
 
     if-eqz v0, :cond_14
 
-    new-instance v8, Ljava/lang/StringBuilder;
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v9, "onPhoneStateChanged currentCallType:"
+    const-string v8, "onPhoneStateChanged currentCallType:"
 
-    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v8
+    move-result-object v0
 
-    invoke-virtual {v8, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    move-result-object v8
+    move-result-object v0
 
-    invoke-virtual {v8}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v8
+    move-result-object v0
 
-    invoke-direct {p0, v8, v3}, Lcom/android/phone/CallNotifier;->log(Ljava/lang/String;Z)V
+    invoke-direct {p0, v0, v3}, Lcom/android/phone/CallNotifier;->log(Ljava/lang/String;Z)V
 
-    sget-object v8, Lcom/android/internal/telephony/Call$CallType;->IMS_CALL_VOICE:Lcom/android/internal/telephony/Call$CallType;
+    sget-object v0, Lcom/android/internal/telephony/Call$CallType;->IMS_CALL_VOICE:Lcom/android/internal/telephony/Call$CallType;
 
-    if-ne v7, v8, :cond_67
+    if-ne v7, v0, :cond_67
 
-    iget-object v8, p0, Lcom/android/phone/CallNotifier;->previousCallType:Lcom/android/internal/telephony/Call$CallType;
+    iget-object v0, p0, Lcom/android/phone/CallNotifier;->previousCallType:Lcom/android/internal/telephony/Call$CallType;
 
-    sget-object v9, Lcom/android/internal/telephony/Call$CallType;->IMS_CALL_HDVIDEO:Lcom/android/internal/telephony/Call$CallType;
+    sget-object v8, Lcom/android/internal/telephony/Call$CallType;->IMS_CALL_HDVIDEO:Lcom/android/internal/telephony/Call$CallType;
 
-    if-ne v8, v9, :cond_67
+    if-ne v0, v8, :cond_67
 
-    const v8, 0x7f09083c
+    const v0, 0x7f09083c
 
-    invoke-direct {p0, v8, v3}, Lcom/android/phone/CallNotifier;->toastText_CallNoti(II)V
+    invoke-direct {p0, v0, v3}, Lcom/android/phone/CallNotifier;->toastText_CallNoti(II)V
 
     :cond_14
     :goto_a
     iput-object v7, p0, Lcom/android/phone/CallNotifier;->previousCallType:Lcom/android/internal/telephony/Call$CallType;
-
-    const-string v7, "notify WFC about phone state change"
-
-    invoke-direct {p0, v7}, Lcom/android/phone/CallNotifier;->log(Ljava/lang/String;)V
-
-    invoke-static {v0}, Lcom/android/phone/WfcCallNotifier;->onPhoneStateChanged(Lcom/android/internal/telephony/Call;)V
 
     :cond_15
     invoke-interface {v5}, Lcom/android/internal/telephony/Phone;->getPhoneType()I
@@ -16965,15 +16953,15 @@
     goto/16 :goto_9
 
     :cond_67
-    sget-object v8, Lcom/android/internal/telephony/Call$CallType;->IMS_CALL_HDVIDEO:Lcom/android/internal/telephony/Call$CallType;
+    sget-object v0, Lcom/android/internal/telephony/Call$CallType;->IMS_CALL_HDVIDEO:Lcom/android/internal/telephony/Call$CallType;
 
-    if-ne v7, v8, :cond_14
+    if-ne v7, v0, :cond_14
 
-    iget-object v8, p0, Lcom/android/phone/CallNotifier;->previousCallType:Lcom/android/internal/telephony/Call$CallType;
+    iget-object v0, p0, Lcom/android/phone/CallNotifier;->previousCallType:Lcom/android/internal/telephony/Call$CallType;
 
-    sget-object v9, Lcom/android/internal/telephony/Call$CallType;->IMS_CALL_VOICE:Lcom/android/internal/telephony/Call$CallType;
+    sget-object v8, Lcom/android/internal/telephony/Call$CallType;->IMS_CALL_VOICE:Lcom/android/internal/telephony/Call$CallType;
 
-    if-ne v8, v9, :cond_14
+    if-ne v0, v8, :cond_14
 
     goto/16 :goto_a
 

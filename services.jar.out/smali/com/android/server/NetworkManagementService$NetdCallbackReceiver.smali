@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Lcom/android/server/NetworkManagementService;Lcom/android/server/NetworkManagementService$1;)V
     .locals 0
-    .param p1    # Lcom/android/server/NetworkManagementService;
-    .param p2    # Lcom/android/server/NetworkManagementService$1;
 
     invoke-direct {p0, p1}, Lcom/android/server/NetworkManagementService$NetdCallbackReceiver;-><init>(Lcom/android/server/NetworkManagementService;)V
 
@@ -94,9 +92,6 @@
 
 .method public onEvent(ILjava/lang/String;[Ljava/lang/String;)Z
     .locals 12
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # [Ljava/lang/String;
 
     sparse-switch p1, :sswitch_data_0
 

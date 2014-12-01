@@ -52,7 +52,6 @@
 
 .method static synthetic access$000(Lcom/android/incallui/AnswerGrowpadFragment;)Lcom/android/incallui/GlowPadWrapper;
     .locals 1
-    .param p0    # Lcom/android/incallui/AnswerGrowpadFragment;
 
     iget-object v0, p0, Lcom/android/incallui/AnswerGrowpadFragment;->mGlowpad:Lcom/android/incallui/GlowPadWrapper;
 
@@ -61,7 +60,6 @@
 
 .method static synthetic access$100(Lcom/android/incallui/AnswerGrowpadFragment;)V
     .locals 0
-    .param p0    # Lcom/android/incallui/AnswerGrowpadFragment;
 
     invoke-direct {p0}, Lcom/android/incallui/AnswerGrowpadFragment;->dismissCustomMessagePopup()V
 
@@ -70,7 +68,6 @@
 
 .method static synthetic access$200(Lcom/android/incallui/AnswerGrowpadFragment;)Landroid/app/AlertDialog;
     .locals 1
-    .param p0    # Lcom/android/incallui/AnswerGrowpadFragment;
 
     iget-object v0, p0, Lcom/android/incallui/AnswerGrowpadFragment;->mCustomMessagePopup:Landroid/app/AlertDialog;
 
@@ -79,7 +76,6 @@
 
 .method static synthetic access$300(Lcom/android/incallui/AnswerGrowpadFragment;)V
     .locals 0
-    .param p0    # Lcom/android/incallui/AnswerGrowpadFragment;
 
     invoke-direct {p0}, Lcom/android/incallui/AnswerGrowpadFragment;->dismissCannedResponsePopup()V
 
@@ -278,9 +274,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 2
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const v0, 0x7f040005
 
@@ -370,7 +363,6 @@
 
 .method public showAnswerUi(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-super {p0, p1}, Lcom/android/incallui/AnswerFragment;->showAnswerUi(Z)V
 
@@ -551,7 +543,6 @@
 
 .method public showTextButton(Z)V
     .locals 3
-    .param p1    # Z
 
     if-eqz p1, :cond_1
 

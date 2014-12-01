@@ -36,7 +36,6 @@
 # virtual methods
 .method public onAudioFocusChange(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "VolumePreference"
 

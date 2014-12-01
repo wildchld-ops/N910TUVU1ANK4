@@ -30,7 +30,6 @@
 
 .method public constructor <init>(Ljava/io/BufferedReader;)V
     .locals 0
-    .param p1    # Ljava/io/BufferedReader;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -46,7 +45,6 @@
 # virtual methods
 .method public get(I)Landroid/util/EventLogTags$Description;
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -55,7 +53,6 @@
 
 .method public get(Ljava/lang/String;)Landroid/util/EventLogTags$Description;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 

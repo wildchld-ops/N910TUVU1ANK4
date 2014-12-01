@@ -58,8 +58,6 @@
 
 .method static synthetic access$600(Landroid/app/SharedPreferencesImpl$EditorImpl;Landroid/app/SharedPreferencesImpl$MemoryCommitResult;)V
     .locals 0
-    .param p0    # Landroid/app/SharedPreferencesImpl$EditorImpl;
-    .param p1    # Landroid/app/SharedPreferencesImpl$MemoryCommitResult;
 
     invoke-direct {p0, p1}, Landroid/app/SharedPreferencesImpl$EditorImpl;->notifyListeners(Landroid/app/SharedPreferencesImpl$MemoryCommitResult;)V
 
@@ -367,7 +365,6 @@
 
 .method private notifyListeners(Landroid/app/SharedPreferencesImpl$MemoryCommitResult;)V
     .locals 6
-    .param p1    # Landroid/app/SharedPreferencesImpl$MemoryCommitResult;
 
     iget-object v4, p1, Landroid/app/SharedPreferencesImpl$MemoryCommitResult;->listeners:Ljava/util/Set;
 
@@ -555,8 +552,6 @@
 
 .method public putBoolean(Ljava/lang/String;Z)Landroid/content/SharedPreferences$Editor;
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     monitor-enter p0
 
@@ -585,8 +580,6 @@
 
 .method public putFloat(Ljava/lang/String;F)Landroid/content/SharedPreferences$Editor;
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # F
 
     monitor-enter p0
 
@@ -615,8 +608,6 @@
 
 .method public putInt(Ljava/lang/String;I)Landroid/content/SharedPreferences$Editor;
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     monitor-enter p0
 
@@ -645,8 +636,6 @@
 
 .method public putLong(Ljava/lang/String;J)Landroid/content/SharedPreferences$Editor;
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
 
     monitor-enter p0
 
@@ -675,8 +664,6 @@
 
 .method public putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -701,7 +688,6 @@
 
 .method public putStringSet(Ljava/lang/String;Ljava/util/Set;)Landroid/content/SharedPreferences$Editor;
     .locals 2
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -749,7 +735,6 @@
 
 .method public remove(Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 

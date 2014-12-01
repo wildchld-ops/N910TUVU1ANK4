@@ -14,7 +14,6 @@
 
 .method public static throwAnyException(Ljava/lang/Exception;)V
     .locals 0
-    .param p0    # Ljava/lang/Exception;
 
     invoke-static {p0}, Landroid/hardware/camera2/utils/UncheckedThrow;->throwAnyImpl(Ljava/lang/Exception;)V
 
@@ -23,7 +22,6 @@
 
 .method private static throwAnyImpl(Ljava/lang/Exception;)V
     .locals 0
-    .param p0    # Ljava/lang/Exception;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",

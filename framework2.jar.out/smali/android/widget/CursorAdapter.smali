@@ -49,8 +49,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/database/Cursor;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/database/Cursor;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -65,9 +63,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/database/Cursor;I)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/database/Cursor;
-    .param p3    # I
 
     invoke-direct {p0}, Landroid/widget/BaseAdapter;-><init>()V
 
@@ -78,9 +73,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/database/Cursor;Z)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/database/Cursor;
-    .param p3    # Z
 
     invoke-direct {p0}, Landroid/widget/BaseAdapter;-><init>()V
 
@@ -106,7 +98,6 @@
 
 .method public changeCursor(Landroid/database/Cursor;)V
     .locals 1
-    .param p1    # Landroid/database/Cursor;
 
     invoke-virtual {p0, p1}, Landroid/widget/CursorAdapter;->swapCursor(Landroid/database/Cursor;)Landroid/database/Cursor;
 
@@ -122,7 +113,6 @@
 
 .method public convertToString(Landroid/database/Cursor;)Ljava/lang/CharSequence;
     .locals 1
-    .param p1    # Landroid/database/Cursor;
 
     if-nez p1, :cond_0
 
@@ -175,9 +165,6 @@
 
 .method public getDropDownView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     iget-boolean v1, p0, Landroid/widget/CursorAdapter;->mDataValid:Z
 
@@ -247,7 +234,6 @@
 
 .method public getItem(I)Ljava/lang/Object;
     .locals 1
-    .param p1    # I
 
     iget-boolean v0, p0, Landroid/widget/CursorAdapter;->mDataValid:Z
 
@@ -274,7 +260,6 @@
 
 .method public getItemId(I)J
     .locals 3
-    .param p1    # I
 
     const-wide/16 v0, 0x0
 
@@ -308,9 +293,6 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     iget-boolean v1, p0, Landroid/widget/CursorAdapter;->mDataValid:Z
 
@@ -393,9 +375,6 @@
 
 .method init(Landroid/content/Context;Landroid/database/Cursor;I)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/database/Cursor;
-    .param p3    # I
 
     const/4 v1, 0x0
 
@@ -498,9 +477,6 @@
 
 .method protected init(Landroid/content/Context;Landroid/database/Cursor;Z)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/database/Cursor;
-    .param p3    # Z
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -521,9 +497,6 @@
 
 .method public newDropDownView(Landroid/content/Context;Landroid/database/Cursor;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/database/Cursor;
-    .param p3    # Landroid/view/ViewGroup;
 
     invoke-virtual {p0, p1, p2, p3}, Landroid/widget/CursorAdapter;->newView(Landroid/content/Context;Landroid/database/Cursor;Landroid/view/ViewGroup;)Landroid/view/View;
 
@@ -568,7 +541,6 @@
 
 .method public runQueryOnBackgroundThread(Ljava/lang/CharSequence;)Landroid/database/Cursor;
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
 
     iget-object v0, p0, Landroid/widget/CursorAdapter;->mFilterQueryProvider:Landroid/widget/FilterQueryProvider;
 
@@ -591,7 +563,6 @@
 
 .method public setFilterQueryProvider(Landroid/widget/FilterQueryProvider;)V
     .locals 0
-    .param p1    # Landroid/widget/FilterQueryProvider;
 
     iput-object p1, p0, Landroid/widget/CursorAdapter;->mFilterQueryProvider:Landroid/widget/FilterQueryProvider;
 
@@ -600,7 +571,6 @@
 
 .method public swapCursor(Landroid/database/Cursor;)Landroid/database/Cursor;
     .locals 2
-    .param p1    # Landroid/database/Cursor;
 
     iget-object v1, p0, Landroid/widget/CursorAdapter;->mCursor:Landroid/database/Cursor;
 

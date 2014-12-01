@@ -30,14 +30,12 @@
 # virtual methods
 .method public addLikelySubtags(Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     return-object p1
 .end method
 
 .method public getScript(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 

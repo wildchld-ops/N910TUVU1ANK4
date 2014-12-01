@@ -90,9 +90,6 @@
 # direct methods
 .method constructor <init>(Landroid/graphics/drawable/DrawableContainer$DrawableContainerState;Landroid/graphics/drawable/DrawableContainer;Landroid/content/res/Resources;)V
     .locals 8
-    .param p1    # Landroid/graphics/drawable/DrawableContainer$DrawableContainerState;
-    .param p2    # Landroid/graphics/drawable/DrawableContainer;
-    .param p3    # Landroid/content/res/Resources;
 
     const/4 v5, 0x1
 
@@ -334,7 +331,6 @@
 # virtual methods
 .method public final addChild(Landroid/graphics/drawable/Drawable;)I
     .locals 4
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     const/4 v3, 0x0
 
@@ -583,7 +579,6 @@
 
 .method public final getChild(I)Landroid/graphics/drawable/Drawable;
     .locals 4
-    .param p1    # I
 
     iget-object v3, p0, Landroid/graphics/drawable/DrawableContainer$DrawableContainerState;->mDrawables:[Landroid/graphics/drawable/Drawable;
 
@@ -916,8 +911,6 @@
 
 .method public growArray(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     const/4 v2, 0x0
 
@@ -1030,7 +1023,6 @@
 
 .method public final setConstantSize(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/graphics/drawable/DrawableContainer$DrawableContainerState;->mConstantSize:Z
 
@@ -1039,7 +1031,6 @@
 
 .method public final setEnterFadeDuration(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/graphics/drawable/DrawableContainer$DrawableContainerState;->mEnterFadeDuration:I
 
@@ -1048,7 +1039,6 @@
 
 .method public final setExitFadeDuration(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/graphics/drawable/DrawableContainer$DrawableContainerState;->mExitFadeDuration:I
 
@@ -1057,7 +1047,6 @@
 
 .method final setLayoutDirection(I)V
     .locals 4
-    .param p1    # I
 
     iget v0, p0, Landroid/graphics/drawable/DrawableContainer$DrawableContainerState;->mNumChildren:I
 
@@ -1089,7 +1078,6 @@
 
 .method public final setVariablePadding(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/graphics/drawable/DrawableContainer$DrawableContainerState;->mVariablePadding:Z
 

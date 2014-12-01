@@ -65,8 +65,6 @@
 
 .method public constructor <init>(ILandroid/net/http/SslCertificate;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/net/http/SslCertificate;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -79,9 +77,6 @@
 
 .method public constructor <init>(ILandroid/net/http/SslCertificate;Ljava/lang/String;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/net/http/SslCertificate;
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -122,8 +117,6 @@
 
 .method public constructor <init>(ILjava/security/cert/X509Certificate;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/security/cert/X509Certificate;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -136,9 +129,6 @@
 
 .method public constructor <init>(ILjava/security/cert/X509Certificate;Ljava/lang/String;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/security/cert/X509Certificate;
-    .param p3    # Ljava/lang/String;
 
     new-instance v0, Landroid/net/http/SslCertificate;
 
@@ -151,9 +141,6 @@
 
 .method public static SslErrorFromChromiumErrorCode(ILandroid/net/http/SslCertificate;Ljava/lang/String;)Landroid/net/http/SslError;
     .locals 2
-    .param p0    # I
-    .param p1    # Landroid/net/http/SslCertificate;
-    .param p2    # Ljava/lang/String;
 
     const/16 v1, -0xc8
 
@@ -257,7 +244,6 @@
 # virtual methods
 .method public addError(I)Z
     .locals 3
-    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -354,7 +340,6 @@
 
 .method public hasError(I)Z
     .locals 5
-    .param p1    # I
 
     const/4 v2, 0x0
 

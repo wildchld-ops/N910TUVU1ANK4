@@ -215,7 +215,6 @@
 
 .method private onClickedRequestDeliveryReadReportInfo(Landroid/widget/LinearLayout;)V
     .locals 3
-    .param p1    # Landroid/widget/LinearLayout;
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
@@ -248,7 +247,6 @@
 
 .method private onClickedRequestReadreportConfirm(Landroid/widget/CheckBox;)V
     .locals 2
-    .param p1    # Landroid/widget/CheckBox;
 
     const/4 v1, 0x1
 
@@ -289,7 +287,6 @@
 
 .method private onClickedRequestReceivedConfirm(Landroid/widget/CheckBox;)V
     .locals 2
-    .param p1    # Landroid/widget/CheckBox;
 
     const/4 v1, 0x1
 
@@ -330,7 +327,6 @@
 
 .method private onClickedReservation(Landroid/widget/CheckBox;)V
     .locals 5
-    .param p1    # Landroid/widget/CheckBox;
 
     const/16 v4, 0x64
 
@@ -485,7 +481,6 @@
 
 .method private setViewStatusFromItent(Landroid/content/Intent;)V
     .locals 6
-    .param p1    # Landroid/content/Intent;
 
     const-wide/16 v4, 0x0
 
@@ -556,9 +551,6 @@
 # virtual methods
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const-wide/16 v3, 0x0
 
@@ -614,7 +606,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     instance-of v1, p1, Landroid/widget/CheckBox;
 
@@ -711,7 +702,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 2
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -746,7 +736,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v1, 0x1
 
@@ -794,7 +783,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 4
-    .param p1    # Landroid/view/Menu;
 
     const/4 v3, 0x2
 
@@ -863,8 +851,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x4
 
@@ -889,7 +875,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 2
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v0, 0x1
 
@@ -941,7 +926,6 @@
 
 .method releaseCheck(Landroid/widget/CheckBox;)V
     .locals 1
-    .param p1    # Landroid/widget/CheckBox;
 
     const/4 v0, 0x0
 

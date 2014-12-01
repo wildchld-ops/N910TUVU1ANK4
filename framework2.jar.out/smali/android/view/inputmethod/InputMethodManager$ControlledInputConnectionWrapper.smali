@@ -23,9 +23,6 @@
 # direct methods
 .method public constructor <init>(Landroid/os/Looper;Landroid/view/inputmethod/InputConnection;Landroid/view/inputmethod/InputMethodManager;)V
     .locals 1
-    .param p1    # Landroid/os/Looper;
-    .param p2    # Landroid/view/inputmethod/InputConnection;
-    .param p3    # Landroid/view/inputmethod/InputMethodManager;
 
     invoke-direct {p0, p1, p2}, Lcom/android/internal/view/IInputConnectionWrapper;-><init>(Landroid/os/Looper;Landroid/view/inputmethod/InputConnection;)V
 

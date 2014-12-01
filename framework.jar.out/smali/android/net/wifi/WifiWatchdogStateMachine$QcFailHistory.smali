@@ -124,20 +124,6 @@
 
 .method constructor <init>(Landroid/net/wifi/WifiWatchdogStateMachine;Ljava/lang/String;IIIIIIZZILjava/lang/String;Ljava/lang/String;II)V
     .locals 0
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
-    .param p9    # Z
-    .param p10    # Z
-    .param p11    # I
-    .param p12    # Ljava/lang/String;
-    .param p13    # Ljava/lang/String;
-    .param p14    # I
-    .param p15    # I
 
     iput-object p1, p0, Landroid/net/wifi/WifiWatchdogStateMachine$QcFailHistory;->this$0:Landroid/net/wifi/WifiWatchdogStateMachine;
 

@@ -92,7 +92,6 @@
 
 .method private captureLayers(Landroid/view/View;)Lorg/apache/harmony/dalvik/ddmc/Chunk;
     .locals 8
-    .param p1    # Landroid/view/View;
 
     new-instance v0, Ljava/io/ByteArrayOutputStream;
 
@@ -203,8 +202,6 @@
 
 .method private captureView(Landroid/view/View;Landroid/view/View;)Lorg/apache/harmony/dalvik/ddmc/Chunk;
     .locals 7
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/View;
 
     new-instance v0, Ljava/io/ByteArrayOutputStream;
 
@@ -270,8 +267,6 @@
 
 .method private dumpDisplayLists(Landroid/view/View;Landroid/view/View;)Lorg/apache/harmony/dalvik/ddmc/Chunk;
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/View;
 
     new-instance v0, Landroid/ddm/DdmHandleViewDebug$1;
 
@@ -286,8 +281,6 @@
 
 .method private dumpHierarchy(Landroid/view/View;Ljava/nio/ByteBuffer;)Lorg/apache/harmony/dalvik/ddmc/Chunk;
     .locals 9
-    .param p1    # Landroid/view/View;
-    .param p2    # Ljava/nio/ByteBuffer;
 
     const/4 v5, 0x1
 
@@ -381,7 +374,6 @@
 
 .method private getRootView(Ljava/nio/ByteBuffer;)Landroid/view/View;
     .locals 4
-    .param p1    # Ljava/nio/ByteBuffer;
 
     :try_start_0
     invoke-virtual {p1}, Ljava/nio/ByteBuffer;->getInt()I
@@ -415,8 +407,6 @@
 
 .method private getTargetView(Landroid/view/View;Ljava/nio/ByteBuffer;)Landroid/view/View;
     .locals 4
-    .param p1    # Landroid/view/View;
-    .param p2    # Ljava/nio/ByteBuffer;
 
     :try_start_0
     invoke-virtual {p2}, Ljava/nio/ByteBuffer;->getInt()I
@@ -446,7 +436,6 @@
 
 .method private handleOpenGlTrace(Lorg/apache/harmony/dalvik/ddmc/Chunk;)Lorg/apache/harmony/dalvik/ddmc/Chunk;
     .locals 2
-    .param p1    # Lorg/apache/harmony/dalvik/ddmc/Chunk;
 
     invoke-static {p1}, Landroid/ddm/DdmHandleViewDebug;->wrapChunk(Lorg/apache/harmony/dalvik/ddmc/Chunk;)Ljava/nio/ByteBuffer;
 
@@ -465,9 +454,6 @@
 
 .method private invokeViewMethod(Landroid/view/View;Landroid/view/View;Ljava/nio/ByteBuffer;)Lorg/apache/harmony/dalvik/ddmc/Chunk;
     .locals 14
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/View;
-    .param p3    # Ljava/nio/ByteBuffer;
 
     invoke-virtual/range {p3 .. p3}, Ljava/nio/ByteBuffer;->getInt()I
 
@@ -972,8 +958,6 @@
 
 .method private profileView(Landroid/view/View;Landroid/view/View;)Lorg/apache/harmony/dalvik/ddmc/Chunk;
     .locals 8
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/View;
 
     const v5, 0x8000
 
@@ -1118,9 +1102,6 @@
 
 .method private setLayoutParameter(Landroid/view/View;Landroid/view/View;Ljava/nio/ByteBuffer;)Lorg/apache/harmony/dalvik/ddmc/Chunk;
     .locals 7
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/View;
-    .param p3    # Ljava/nio/ByteBuffer;
 
     invoke-virtual {p3}, Ljava/nio/ByteBuffer;->getInt()I
 
@@ -1226,7 +1207,6 @@
 
 .method public handleChunk(Lorg/apache/harmony/dalvik/ddmc/Chunk;)Lorg/apache/harmony/dalvik/ddmc/Chunk;
     .locals 8
-    .param p1    # Lorg/apache/harmony/dalvik/ddmc/Chunk;
 
     const/4 v7, -0x1
 

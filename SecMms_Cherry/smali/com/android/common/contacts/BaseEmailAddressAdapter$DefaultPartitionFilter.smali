@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Lcom/android/common/contacts/BaseEmailAddressAdapter;Lcom/android/common/contacts/BaseEmailAddressAdapter$1;)V
     .locals 0
-    .param p1    # Lcom/android/common/contacts/BaseEmailAddressAdapter;
-    .param p2    # Lcom/android/common/contacts/BaseEmailAddressAdapter$1;
 
     invoke-direct {p0, p1}, Lcom/android/common/contacts/BaseEmailAddressAdapter$DefaultPartitionFilter;-><init>(Lcom/android/common/contacts/BaseEmailAddressAdapter;)V
 
@@ -43,7 +41,6 @@
 # virtual methods
 .method public convertResultToString(Ljava/lang/Object;)Ljava/lang/CharSequence;
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     iget-object v0, p0, Lcom/android/common/contacts/BaseEmailAddressAdapter$DefaultPartitionFilter;->this$0:Lcom/android/common/contacts/BaseEmailAddressAdapter;
 
@@ -59,7 +56,6 @@
 
 .method protected performFiltering(Ljava/lang/CharSequence;)Landroid/widget/Filter$FilterResults;
     .locals 11
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v10, 0x1
 
@@ -219,8 +215,6 @@
 
 .method protected publishResults(Ljava/lang/CharSequence;Landroid/widget/Filter$FilterResults;)V
     .locals 4
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Landroid/widget/Filter$FilterResults;
 
     iget-object v1, p2, Landroid/widget/Filter$FilterResults;->values:Ljava/lang/Object;
 

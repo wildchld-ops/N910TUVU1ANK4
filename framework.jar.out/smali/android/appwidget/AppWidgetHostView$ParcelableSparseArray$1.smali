@@ -40,7 +40,6 @@
 # virtual methods
 .method public createFromParcel(Landroid/os/Parcel;)Landroid/appwidget/AppWidgetHostView$ParcelableSparseArray;
     .locals 6
-    .param p1    # Landroid/os/Parcel;
 
     new-instance v0, Landroid/appwidget/AppWidgetHostView$ParcelableSparseArray;
 
@@ -85,7 +84,6 @@
 
 .method public bridge synthetic createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     invoke-virtual {p0, p1}, Landroid/appwidget/AppWidgetHostView$ParcelableSparseArray$1;->createFromParcel(Landroid/os/Parcel;)Landroid/appwidget/AppWidgetHostView$ParcelableSparseArray;
 
@@ -96,7 +94,6 @@
 
 .method public newArray(I)[Landroid/appwidget/AppWidgetHostView$ParcelableSparseArray;
     .locals 1
-    .param p1    # I
 
     new-array v0, p1, [Landroid/appwidget/AppWidgetHostView$ParcelableSparseArray;
 
@@ -105,7 +102,6 @@
 
 .method public bridge synthetic newArray(I)[Ljava/lang/Object;
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/appwidget/AppWidgetHostView$ParcelableSparseArray$1;->newArray(I)[Landroid/appwidget/AppWidgetHostView$ParcelableSparseArray;
 

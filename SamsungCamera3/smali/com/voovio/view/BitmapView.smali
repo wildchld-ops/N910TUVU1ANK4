@@ -22,8 +22,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;I)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     const/4 v1, 0x0
 
@@ -56,8 +54,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/graphics/Bitmap;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/graphics/Bitmap;
 
     const/4 v0, 0x0
 
@@ -76,7 +72,6 @@
 
 .method private setBitmap(Landroid/graphics/Bitmap;)V
     .locals 4
-    .param p1    # Landroid/graphics/Bitmap;
 
     const/4 v3, 0x0
 
@@ -129,7 +124,6 @@
 # virtual methods
 .method public onDraw(Landroid/graphics/Canvas;)V
     .locals 4
-    .param p1    # Landroid/graphics/Canvas;
 
     iget-object v0, p0, Lcom/voovio/view/BitmapView;->mBitmap:Landroid/graphics/Bitmap;
 

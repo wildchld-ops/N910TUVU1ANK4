@@ -51,16 +51,6 @@
 # direct methods
 .method constructor <init>(IILcom/sec/epdg/IWlanEnum$IPSecIpType;Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Lcom/sec/epdg/IWlanEnum$IPSecIpType;
-    .param p4    # Ljava/lang/String;
-    .param p5    # [Ljava/lang/String;
-    .param p6    # [Ljava/lang/String;
-    .param p7    # [Ljava/lang/String;
-    .param p8    # [Ljava/lang/String;
-    .param p9    # Ljava/lang/String;
-    .param p10    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

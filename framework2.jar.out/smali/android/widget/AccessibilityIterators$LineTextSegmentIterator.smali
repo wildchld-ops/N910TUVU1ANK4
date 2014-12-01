@@ -58,7 +58,6 @@
 # virtual methods
 .method public following(I)[I
     .locals 9
-    .param p1    # I
 
     const/4 v8, -0x1
 
@@ -147,8 +146,6 @@
 
 .method protected getLineEdgeIndex(II)I
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget-object v1, p0, Landroid/widget/AccessibilityIterators$LineTextSegmentIterator;->mLayout:Landroid/text/Layout;
 
@@ -183,8 +180,6 @@
 
 .method public initialize(Landroid/text/Spannable;Landroid/text/Layout;)V
     .locals 1
-    .param p1    # Landroid/text/Spannable;
-    .param p2    # Landroid/text/Layout;
 
     invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
@@ -199,7 +194,6 @@
 
 .method public preceding(I)[I
     .locals 9
-    .param p1    # I
 
     const/4 v8, 0x1
 

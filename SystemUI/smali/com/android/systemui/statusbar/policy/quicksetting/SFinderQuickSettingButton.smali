@@ -13,7 +13,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 8
-    .param p1    # Landroid/content/Context;
 
     const/4 v6, 0x0
 
@@ -105,7 +104,6 @@
 
 .method public onClick(Z)V
     .locals 5
-    .param p1    # Z
 
     :try_start_0
     iget-object v2, p0, Landroid/view/View;->mContext:Landroid/content/Context;

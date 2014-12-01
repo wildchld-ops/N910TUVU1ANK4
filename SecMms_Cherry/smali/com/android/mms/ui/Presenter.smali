@@ -17,9 +17,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Lcom/android/mms/ui/ViewInterface;Lcom/android/mms/model/Model;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/mms/ui/ViewInterface;
-    .param p3    # Lcom/android/mms/model/Model;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -62,7 +59,6 @@
 
 .method public setView(Lcom/android/mms/ui/ViewInterface;)V
     .locals 0
-    .param p1    # Lcom/android/mms/ui/ViewInterface;
 
     iput-object p1, p0, Lcom/android/mms/ui/Presenter;->mView:Lcom/android/mms/ui/ViewInterface;
 

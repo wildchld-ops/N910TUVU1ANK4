@@ -136,7 +136,6 @@
 
 .method private constructor <init>(Ljava/lang/String;ILcom/android/launcher2/LauncherApplication;)V
     .locals 1
-    .param p3    # Lcom/android/launcher2/LauncherApplication;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -160,8 +159,6 @@
 
 .method private loadWidgetLk(Landroid/content/pm/ResolveInfo;Ljava/lang/String;)Lcom/android/launcher2/SamsungWidgetProviderInfo;
     .locals 24
-    .param p1    # Landroid/content/pm/ResolveInfo;
-    .param p2    # Ljava/lang/String;
 
     const/16 v18, 0x0
 
@@ -711,7 +708,6 @@
 
 .method private loadWidgetsLk(Ljava/util/List;Landroid/content/pm/ResolveInfo;)V
     .locals 8
-    .param p2    # Landroid/content/pm/ResolveInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -824,7 +820,6 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/android/launcher2/SamsungWidgetPackageManager;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-class v0, Lcom/android/launcher2/SamsungWidgetPackageManager;
 
@@ -909,8 +904,6 @@
 
 .method public createWidget(Landroid/content/Context;Lcom/android/launcher2/SamsungWidgetProviderInfo;)Lcom/android/launcher2/SamsungWidgetItem;
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/launcher2/SamsungWidgetProviderInfo;
 
     invoke-virtual {p0}, Lcom/android/launcher2/SamsungWidgetPackageManager;->allocWidgetId()I
 
@@ -927,9 +920,6 @@
 
 .method public createWidget(Landroid/content/Context;Lcom/android/launcher2/SamsungWidgetProviderInfo;Lcom/android/launcher2/SamsungWidgetItem;)Lcom/android/launcher2/SamsungWidgetItem;
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/launcher2/SamsungWidgetProviderInfo;
-    .param p3    # Lcom/android/launcher2/SamsungWidgetItem;
 
     iget-wide v0, p3, Lcom/android/launcher2/SamsungWidgetItem;->widgetId:J
 
@@ -960,8 +950,6 @@
 
 .method public destroyWidget(Landroid/app/ActivityGroup;Lcom/android/launcher2/SamsungWidgetItem;)V
     .locals 5
-    .param p1    # Landroid/app/ActivityGroup;
-    .param p2    # Lcom/android/launcher2/SamsungWidgetItem;
 
     iget-wide v0, p2, Lcom/android/launcher2/SamsungWidgetItem;->widgetId:J
 
@@ -982,8 +970,6 @@
 
 .method public findWidget(Landroid/content/ComponentName;Ljava/lang/String;)Lcom/android/launcher2/SamsungWidgetProviderInfo;
     .locals 4
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p0}, Lcom/android/launcher2/SamsungWidgetPackageManager;->getWidgetItems()Ljava/util/List;
 

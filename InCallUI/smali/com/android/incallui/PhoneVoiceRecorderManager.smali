@@ -32,7 +32,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/incallui/InCallActivity;)V
     .locals 3
-    .param p1    # Lcom/android/incallui/InCallActivity;
 
     const/4 v2, 0x0
 
@@ -73,7 +72,6 @@
 
 .method static synthetic access$100(Lcom/android/incallui/PhoneVoiceRecorderManager;)Lcom/android/phone/IPhoneVoiceRecorderServiceCallback;
     .locals 1
-    .param p0    # Lcom/android/incallui/PhoneVoiceRecorderManager;
 
     iget-object v0, p0, Lcom/android/incallui/PhoneVoiceRecorderManager;->mRecorderCallback:Lcom/android/phone/IPhoneVoiceRecorderServiceCallback;
 
@@ -82,8 +80,6 @@
 
 .method static synthetic access$102(Lcom/android/incallui/PhoneVoiceRecorderManager;Lcom/android/phone/IPhoneVoiceRecorderServiceCallback;)Lcom/android/phone/IPhoneVoiceRecorderServiceCallback;
     .locals 0
-    .param p0    # Lcom/android/incallui/PhoneVoiceRecorderManager;
-    .param p1    # Lcom/android/phone/IPhoneVoiceRecorderServiceCallback;
 
     iput-object p1, p0, Lcom/android/incallui/PhoneVoiceRecorderManager;->mRecorderCallback:Lcom/android/phone/IPhoneVoiceRecorderServiceCallback;
 
@@ -92,7 +88,6 @@
 
 .method static synthetic access$300(Lcom/android/incallui/PhoneVoiceRecorderManager;)Lcom/android/phone/IPhoneVoiceRecorderService;
     .locals 1
-    .param p0    # Lcom/android/incallui/PhoneVoiceRecorderManager;
 
     iget-object v0, p0, Lcom/android/incallui/PhoneVoiceRecorderManager;->mRecorderSrv:Lcom/android/phone/IPhoneVoiceRecorderService;
 
@@ -101,8 +96,6 @@
 
 .method static synthetic access$302(Lcom/android/incallui/PhoneVoiceRecorderManager;Lcom/android/phone/IPhoneVoiceRecorderService;)Lcom/android/phone/IPhoneVoiceRecorderService;
     .locals 0
-    .param p0    # Lcom/android/incallui/PhoneVoiceRecorderManager;
-    .param p1    # Lcom/android/phone/IPhoneVoiceRecorderService;
 
     iput-object p1, p0, Lcom/android/incallui/PhoneVoiceRecorderManager;->mRecorderSrv:Lcom/android/phone/IPhoneVoiceRecorderService;
 
@@ -111,7 +104,6 @@
 
 .method static synthetic access$400(Lcom/android/incallui/PhoneVoiceRecorderManager;)Z
     .locals 1
-    .param p0    # Lcom/android/incallui/PhoneVoiceRecorderManager;
 
     iget-boolean v0, p0, Lcom/android/incallui/PhoneVoiceRecorderManager;->mIsRecording:Z
 
@@ -120,8 +112,6 @@
 
 .method static synthetic access$402(Lcom/android/incallui/PhoneVoiceRecorderManager;Z)Z
     .locals 0
-    .param p0    # Lcom/android/incallui/PhoneVoiceRecorderManager;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/incallui/PhoneVoiceRecorderManager;->mIsRecording:Z
 
@@ -130,7 +120,6 @@
 
 .method static synthetic access$500(Lcom/android/incallui/PhoneVoiceRecorderManager;)Z
     .locals 1
-    .param p0    # Lcom/android/incallui/PhoneVoiceRecorderManager;
 
     iget-boolean v0, p0, Lcom/android/incallui/PhoneVoiceRecorderManager;->mIsPaused:Z
 
@@ -139,8 +128,6 @@
 
 .method static synthetic access$502(Lcom/android/incallui/PhoneVoiceRecorderManager;Z)Z
     .locals 0
-    .param p0    # Lcom/android/incallui/PhoneVoiceRecorderManager;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/incallui/PhoneVoiceRecorderManager;->mIsPaused:Z
 
@@ -149,7 +136,6 @@
 
 .method static synthetic access$600(Lcom/android/incallui/PhoneVoiceRecorderManager;)Lcom/android/incallui/InCallActivity;
     .locals 1
-    .param p0    # Lcom/android/incallui/PhoneVoiceRecorderManager;
 
     iget-object v0, p0, Lcom/android/incallui/PhoneVoiceRecorderManager;->mInCallActivity:Lcom/android/incallui/InCallActivity;
 

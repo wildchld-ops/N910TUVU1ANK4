@@ -31,7 +31,6 @@
 
 .method synthetic constructor <init>(Lcom/android/launcher2/ShadowGen$1;)V
     .locals 0
-    .param p1    # Lcom/android/launcher2/ShadowGen$1;
 
     invoke-direct {p0}, Lcom/android/launcher2/ShadowGen$CallbackEntry;-><init>()V
 
@@ -42,7 +41,6 @@
 # virtual methods
 .method public post(Landroid/graphics/Bitmap;)V
     .locals 2
-    .param p1    # Landroid/graphics/Bitmap;
 
     iget-object v0, p0, Lcom/android/launcher2/ShadowGen$CallbackEntry;->handler:Landroid/os/Handler;
 

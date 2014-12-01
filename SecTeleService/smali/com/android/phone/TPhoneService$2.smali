@@ -74,7 +74,7 @@
     move-result-object v1
 
     # invokes: Lcom/android/phone/TPhoneService;->log(Ljava/lang/String;)V
-    invoke-static {v0, v1}, Lcom/android/phone/TPhoneService;->access$500(Lcom/android/phone/TPhoneService;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/android/phone/TPhoneService;->access$100(Lcom/android/phone/TPhoneService;Ljava/lang/String;)V
 
     return-void
 .end method

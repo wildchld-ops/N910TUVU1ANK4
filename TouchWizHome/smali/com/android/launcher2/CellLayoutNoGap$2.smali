@@ -36,7 +36,6 @@
 # virtual methods
 .method public onAlarm(Lcom/android/launcher2/Alarm;)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/Alarm;
 
     iget-object v0, p0, Lcom/android/launcher2/CellLayoutNoGap$2;->this$0:Lcom/android/launcher2/CellLayoutNoGap;
 

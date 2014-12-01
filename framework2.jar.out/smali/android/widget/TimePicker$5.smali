@@ -36,9 +36,6 @@
 # virtual methods
 .method public onValueChange(Landroid/widget/NumberPicker;II)V
     .locals 2
-    .param p1    # Landroid/widget/NumberPicker;
-    .param p2    # I
-    .param p3    # I
 
     iget-object v1, p0, Landroid/widget/TimePicker$5;->this$0:Landroid/widget/TimePicker;
 

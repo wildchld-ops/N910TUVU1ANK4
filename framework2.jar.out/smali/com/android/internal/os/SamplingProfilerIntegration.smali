@@ -155,8 +155,6 @@
 
 .method static synthetic access$000(Ljava/lang/String;Landroid/content/pm/PackageInfo;)V
     .locals 0
-    .param p0    # Ljava/lang/String;
-    .param p1    # Landroid/content/pm/PackageInfo;
 
     invoke-static {p0, p1}, Lcom/android/internal/os/SamplingProfilerIntegration;->writeSnapshotFile(Ljava/lang/String;Landroid/content/pm/PackageInfo;)V
 
@@ -173,9 +171,6 @@
 
 .method private static generateSnapshotHeader(Ljava/lang/String;Landroid/content/pm/PackageInfo;Ljava/io/PrintStream;)V
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Landroid/content/pm/PackageInfo;
-    .param p2    # Ljava/io/PrintStream;
 
     const-string v0, "Version: 3"
 
@@ -366,8 +361,6 @@
 
 .method public static writeSnapshot(Ljava/lang/String;Landroid/content/pm/PackageInfo;)V
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Landroid/content/pm/PackageInfo;
 
     sget-boolean v0, Lcom/android/internal/os/SamplingProfilerIntegration;->enabled:Z
 
@@ -416,8 +409,6 @@
 
 .method private static writeSnapshotFile(Ljava/lang/String;Landroid/content/pm/PackageInfo;)V
     .locals 13
-    .param p0    # Ljava/lang/String;
-    .param p1    # Landroid/content/pm/PackageInfo;
 
     sget-boolean v10, Lcom/android/internal/os/SamplingProfilerIntegration;->enabled:Z
 

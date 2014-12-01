@@ -14,7 +14,6 @@
 
 .method public static checkPrivacy(Landroid/content/Context;)Z
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     new-instance v1, Ljava/lang/StringBuilder;
 

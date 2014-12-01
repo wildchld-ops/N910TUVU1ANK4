@@ -70,10 +70,6 @@
 # direct methods
 .method protected constructor <init>(Landroid/media/videoeditor/VideoEditor;Ljava/lang/String;Ljava/lang/String;I)V
     .locals 7
-    .param p1    # Landroid/media/videoeditor/VideoEditor;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -204,7 +200,6 @@
 # virtual methods
 .method public addEffect(Landroid/media/videoeditor/Effect;)V
     .locals 5
-    .param p1    # Landroid/media/videoeditor/Effect;
 
     const/4 v4, 0x1
 
@@ -328,7 +323,6 @@
 
 .method public addOverlay(Landroid/media/videoeditor/Overlay;)V
     .locals 8
-    .param p1    # Landroid/media/videoeditor/Overlay;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/FileNotFoundException;,
@@ -601,7 +595,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 2
-    .param p1    # Ljava/lang/Object;
 
     instance-of v0, p1, Landroid/media/videoeditor/MediaItem;
 
@@ -628,7 +621,6 @@
 
 .method generateBlankFrame(Landroid/media/videoeditor/MediaArtistNativeHelper$ClipSettings;)V
     .locals 14
-    .param p1    # Landroid/media/videoeditor/MediaArtistNativeHelper$ClipSettings;
 
     const/16 v13, 0x40
 
@@ -914,7 +906,6 @@
 
 .method public getEffect(Ljava/lang/String;)Landroid/media/videoeditor/Effect;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v2, p0, Landroid/media/videoeditor/MediaItem;->mEffects:Ljava/util/List;
 
@@ -1002,7 +993,6 @@
 
 .method public getOverlay(Ljava/lang/String;)Landroid/media/videoeditor/Overlay;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v2, p0, Landroid/media/videoeditor/MediaItem;->mOverlays:Ljava/util/List;
 
@@ -1076,11 +1066,6 @@
 
 .method public getThumbnailList(IIJJI)[Landroid/graphics/Bitmap;
     .locals 13
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
-    .param p5    # J
-    .param p7    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1150,7 +1135,6 @@
 
 .method initClipSettings(Landroid/media/videoeditor/MediaArtistNativeHelper$ClipSettings;)V
     .locals 2
-    .param p1    # Landroid/media/videoeditor/MediaArtistNativeHelper$ClipSettings;
 
     const/4 v1, 0x0
 
@@ -1238,10 +1222,6 @@
 
 .method protected isOverlapping(JJJJ)Z
     .locals 3
-    .param p1    # J
-    .param p3    # J
-    .param p5    # J
-    .param p7    # J
 
     const/4 v0, 0x0
 
@@ -1269,7 +1249,6 @@
 
 .method public removeEffect(Ljava/lang/String;)Landroid/media/videoeditor/Effect;
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -1357,7 +1336,6 @@
 
 .method public removeOverlay(Ljava/lang/String;)Landroid/media/videoeditor/Overlay;
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     iget-object v2, p0, Landroid/media/videoeditor/MediaItem;->mOverlays:Ljava/util/List;
 
@@ -1430,7 +1408,6 @@
 
 .method setBeginTransition(Landroid/media/videoeditor/Transition;)V
     .locals 0
-    .param p1    # Landroid/media/videoeditor/Transition;
 
     iput-object p1, p0, Landroid/media/videoeditor/MediaItem;->mBeginTransition:Landroid/media/videoeditor/Transition;
 
@@ -1439,7 +1416,6 @@
 
 .method setEndTransition(Landroid/media/videoeditor/Transition;)V
     .locals 0
-    .param p1    # Landroid/media/videoeditor/Transition;
 
     iput-object p1, p0, Landroid/media/videoeditor/MediaItem;->mEndTransition:Landroid/media/videoeditor/Transition;
 
@@ -1448,7 +1424,6 @@
 
 .method setGeneratedImageClip(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/media/videoeditor/MediaItem;->mGeneratedImageClip:Ljava/lang/String;
 
@@ -1457,7 +1432,6 @@
 
 .method setRegenerateClip(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/media/videoeditor/MediaItem;->mRegenerateClip:Z
 
@@ -1466,7 +1440,6 @@
 
 .method public setRenderingMode(I)V
     .locals 4
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 

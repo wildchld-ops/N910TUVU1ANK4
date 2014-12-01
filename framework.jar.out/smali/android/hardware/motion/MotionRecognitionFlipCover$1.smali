@@ -36,7 +36,6 @@
 # virtual methods
 .method public onSContextChanged(Landroid/hardware/scontext/SContextEvent;)V
     .locals 5
-    .param p1    # Landroid/hardware/scontext/SContextEvent;
 
     iget-object v2, p1, Landroid/hardware/scontext/SContextEvent;->scontext:Landroid/hardware/scontext/SContext;
 
@@ -107,7 +106,6 @@
 
 .method public setInputKeys(Z)V
     .locals 5
-    .param p1    # Z
 
     const-string v2, "input"
 

@@ -14,7 +14,6 @@
 # direct methods
 .method public constructor <init>(Landroid/nfc/INfcSecureElement;)V
     .locals 0
-    .param p1    # Landroid/nfc/INfcSecureElement;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -27,7 +26,6 @@
 # virtual methods
 .method public closeSecureElementConnection(I)V
     .locals 4
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -80,8 +78,6 @@
 
 .method public exchangeAPDU(I[B)[B
     .locals 4
-    .param p1    # I
-    .param p2    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -130,7 +126,6 @@
 
 .method public getSecureElementTechList(I)[I
     .locals 3
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -168,7 +163,6 @@
 
 .method public getSecureElementUid(I)[B
     .locals 4
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -219,7 +213,6 @@
 
 .method public openSecureElementConnection(Ljava/lang/String;)I
     .locals 4
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

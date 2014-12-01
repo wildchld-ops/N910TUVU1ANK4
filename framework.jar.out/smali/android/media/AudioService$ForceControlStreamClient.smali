@@ -26,7 +26,6 @@
 # direct methods
 .method constructor <init>(Landroid/media/AudioService;Landroid/os/IBinder;)V
     .locals 4
-    .param p2    # Landroid/os/IBinder;
 
     iput-object p1, p0, Landroid/media/AudioService$ForceControlStreamClient;->this$0:Landroid/media/AudioService;
 

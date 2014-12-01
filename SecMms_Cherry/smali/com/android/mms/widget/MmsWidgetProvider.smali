@@ -114,7 +114,6 @@
 
 .method public static notifyDatasetChanged(Landroid/content/Context;)V
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     const-string v1, "Mms/MmsWidgetProvider"
 
@@ -135,7 +134,6 @@
 
 .method public static notifyDefaultAppChanged(Landroid/content/Context;)V
     .locals 7
-    .param p0    # Landroid/content/Context;
 
     const-string v4, "Mms/MmsWidgetProvider"
 
@@ -227,7 +225,6 @@
 
 .method private queryAllConversations(Landroid/content/Context;)Landroid/database/Cursor;
     .locals 6
-    .param p1    # Landroid/content/Context;
 
     const/4 v3, 0x0
 
@@ -361,7 +358,6 @@
 
 .method public static refreshWidgetCount(Landroid/content/Context;)V
     .locals 6
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Landroid/appwidget/AppWidgetManager;->getInstance(Landroid/content/Context;)Landroid/appwidget/AppWidgetManager;
 
@@ -418,8 +414,6 @@
 
 .method private static updateWidget(Landroid/content/Context;I)V
     .locals 14
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     const v13, 0x7f0b03c5
 
@@ -736,8 +730,6 @@
 # virtual methods
 .method public onDeleted(Landroid/content/Context;[I)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # [I
 
     invoke-super {p0, p1, p2}, Landroid/appwidget/AppWidgetProvider;->onDeleted(Landroid/content/Context;[I)V
 
@@ -748,7 +740,6 @@
 
 .method public onDisabled(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const-string v0, "Mms/MmsWidgetProvider"
 
@@ -767,7 +758,6 @@
 
 .method public onEnabled(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const-string v0, "Mms/MmsWidgetProvider"
 
@@ -792,8 +782,6 @@
 
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
@@ -927,9 +915,6 @@
 
 .method public onUpdate(Landroid/content/Context;Landroid/appwidget/AppWidgetManager;[I)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/appwidget/AppWidgetManager;
-    .param p3    # [I
 
     invoke-super {p0, p1, p2, p3}, Landroid/appwidget/AppWidgetProvider;->onUpdate(Landroid/content/Context;Landroid/appwidget/AppWidgetManager;[I)V
 

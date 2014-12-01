@@ -28,7 +28,6 @@
 # virtual methods
 .method public addLayer(Landroid/graphics/Paint;)V
     .locals 3
-    .param p1    # Landroid/graphics/Paint;
 
     const/4 v2, 0x0
 
@@ -43,9 +42,6 @@
 
 .method public addLayer(Landroid/graphics/Paint;FF)V
     .locals 2
-    .param p1    # Landroid/graphics/Paint;
-    .param p2    # F
-    .param p3    # F
 
     iget v0, p0, Landroid/graphics/Rasterizer;->native_instance:I
 

@@ -36,7 +36,6 @@
 # direct methods
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;)V
     .locals 1
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
 
     const/4 v0, 0x0
 
@@ -59,9 +58,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;FF)V
     .locals 1
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # F
-    .param p3    # F
 
     invoke-direct {p0, p1, p2, p3}, Lcom/sec/android/glview/TwGLView;-><init>(Lcom/sec/android/glview/TwGLContext;FF)V
 
@@ -82,11 +78,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;FFFF)V
     .locals 1
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
 
     invoke-direct/range {p0 .. p5}, Lcom/sec/android/glview/TwGLView;-><init>(Lcom/sec/android/glview/TwGLContext;FFFF)V
 
@@ -119,8 +110,6 @@
 # virtual methods
 .method public declared-synchronized addView(ILcom/sec/android/glview/TwGLView;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Lcom/sec/android/glview/TwGLView;
 
     monitor-enter p0
 
@@ -187,7 +176,6 @@
 
 .method public declared-synchronized addView(Lcom/sec/android/glview/TwGLView;)V
     .locals 1
-    .param p1    # Lcom/sec/android/glview/TwGLView;
 
     monitor-enter p0
 
@@ -270,8 +258,6 @@
 
 .method public contains(FF)Z
     .locals 4
-    .param p1    # F
-    .param p2    # F
 
     const/4 v2, 0x0
 
@@ -322,7 +308,6 @@
 
 .method public contains(Lcom/sec/android/glview/TwGLView;)Z
     .locals 3
-    .param p1    # Lcom/sec/android/glview/TwGLView;
 
     const/4 v1, 0x0
 
@@ -359,7 +344,6 @@
 
 .method public dumpViewHierarchy(I)V
     .locals 6
-    .param p1    # I
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -710,8 +694,6 @@
 
 .method public findNextFocusFromView(Lcom/sec/android/glview/TwGLView;I)Lcom/sec/android/glview/TwGLView;
     .locals 17
-    .param p1    # Lcom/sec/android/glview/TwGLView;
-    .param p2    # I
 
     if-nez p1, :cond_1
 
@@ -1018,8 +1000,6 @@
 
 .method public findViewByCoordinate(FF)Lcom/sec/android/glview/TwGLView;
     .locals 5
-    .param p1    # F
-    .param p2    # F
 
     const/4 v4, 0x0
 
@@ -1109,7 +1089,6 @@
 
 .method public declared-synchronized findViewById(I)Lcom/sec/android/glview/TwGLView;
     .locals 3
-    .param p1    # I
 
     monitor-enter p0
 
@@ -1175,7 +1154,6 @@
 
 .method public declared-synchronized findViewByTag(I)Lcom/sec/android/glview/TwGLView;
     .locals 3
-    .param p1    # I
 
     monitor-enter p0
 
@@ -1270,7 +1248,6 @@
 
 .method public getIndex(Lcom/sec/android/glview/TwGLView;)I
     .locals 3
-    .param p1    # Lcom/sec/android/glview/TwGLView;
 
     iget-object v2, p0, Lcom/sec/android/glview/TwGLViewGroup;->mGLViews:Ljava/util/concurrent/CopyOnWriteArrayList;
 
@@ -1329,7 +1306,6 @@
 
 .method public getView(I)Lcom/sec/android/glview/TwGLView;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/glview/TwGLViewGroup;->mGLViews:Ljava/util/concurrent/CopyOnWriteArrayList;
 
@@ -1647,7 +1623,6 @@
 
 .method protected onOrientationChanged(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Lcom/sec/android/glview/TwGLViewGroup;->mGLViews:Ljava/util/concurrent/CopyOnWriteArrayList;
 
@@ -1712,8 +1687,6 @@
 
 .method public onRequestFocusInDescendants(ILcom/sec/android/glview/TwGLView;)Z
     .locals 8
-    .param p1    # I
-    .param p2    # Lcom/sec/android/glview/TwGLView;
 
     invoke-virtual {p0}, Lcom/sec/android/glview/TwGLViewGroup;->getSize()I
 
@@ -1836,7 +1809,6 @@
 
 .method public declared-synchronized removeView(Lcom/sec/android/glview/TwGLView;)V
     .locals 2
-    .param p1    # Lcom/sec/android/glview/TwGLView;
 
     monitor-enter p0
 
@@ -1902,8 +1874,6 @@
 
 .method public requestFocus(ILcom/sec/android/glview/TwGLView;)Z
     .locals 5
-    .param p1    # I
-    .param p2    # Lcom/sec/android/glview/TwGLView;
 
     invoke-virtual {p0}, Lcom/sec/android/glview/TwGLViewGroup;->getDescendantFocusability()I
 
@@ -2084,7 +2054,6 @@
 
 .method public setDescendantFocusability(I)V
     .locals 2
-    .param p1    # I
 
     sparse-switch p1, :sswitch_data_0
 
@@ -2127,7 +2096,6 @@
 
 .method public setOnDragListener(Lcom/sec/android/glview/TwGLView$OnDragListener;)V
     .locals 2
-    .param p1    # Lcom/sec/android/glview/TwGLView$OnDragListener;
 
     iget-object v1, p0, Lcom/sec/android/glview/TwGLViewGroup;->mGLViews:Ljava/util/concurrent/CopyOnWriteArrayList;
 
@@ -2160,7 +2128,6 @@
 
 .method public setPaddings(Landroid/graphics/Rect;)V
     .locals 7
-    .param p1    # Landroid/graphics/Rect;
 
     const/4 v6, 0x0
 
@@ -2527,7 +2494,6 @@
 
 .method public updateLayout(Z)V
     .locals 2
-    .param p1    # Z
 
     invoke-super {p0, p1}, Lcom/sec/android/glview/TwGLView;->updateLayout(Z)V
 

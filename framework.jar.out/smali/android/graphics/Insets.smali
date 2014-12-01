@@ -34,10 +34,6 @@
 
 .method private constructor <init>(IIII)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -54,10 +50,6 @@
 
 .method public static of(IIII)Landroid/graphics/Insets;
     .locals 1
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     if-nez p0, :cond_0
 
@@ -82,7 +74,6 @@
 
 .method public static of(Landroid/graphics/Rect;)Landroid/graphics/Insets;
     .locals 4
-    .param p0    # Landroid/graphics/Rect;
 
     if-nez p0, :cond_0
 
@@ -111,7 +102,6 @@
 # virtual methods
 .method public equals(Ljava/lang/Object;)Z
     .locals 5
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x1
 

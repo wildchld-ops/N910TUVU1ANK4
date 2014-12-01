@@ -67,7 +67,6 @@
 
 .method public constructor <init>(Landroid/view/MotionEvent$PointerCoords;)V
     .locals 0
-    .param p1    # Landroid/view/MotionEvent$PointerCoords;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -78,7 +77,6 @@
 
 .method public static createArray(I)[Landroid/view/MotionEvent$PointerCoords;
     .locals 3
-    .param p0    # I
 
     new-array v0, p0, [Landroid/view/MotionEvent$PointerCoords;
 
@@ -141,7 +139,6 @@
 
 .method public copyFrom(Landroid/view/MotionEvent$PointerCoords;)V
     .locals 8
-    .param p1    # Landroid/view/MotionEvent$PointerCoords;
 
     const/4 v7, 0x0
 
@@ -245,7 +242,6 @@
 
 .method public getAxisValue(I)F
     .locals 11
-    .param p1    # I
 
     const-wide/16 v9, 0x1
 
@@ -404,8 +400,6 @@
 
 .method public setAxisValue(IF)V
     .locals 13
-    .param p1    # I
-    .param p2    # F
 
     const-wide/16 v9, 0x1
 

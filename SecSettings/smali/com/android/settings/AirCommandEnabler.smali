@@ -25,8 +25,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/widget/Switch;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/widget/Switch;
 
     const/4 v1, 0x0
 
@@ -69,7 +67,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/AirCommandEnabler;)Landroid/widget/Switch;
     .locals 1
-    .param p0    # Lcom/android/settings/AirCommandEnabler;
 
     iget-object v0, p0, Lcom/android/settings/AirCommandEnabler;->mSwitch:Landroid/widget/Switch;
 
@@ -78,7 +75,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/AirCommandEnabler;)V
     .locals 0
-    .param p0    # Lcom/android/settings/AirCommandEnabler;
 
     invoke-direct {p0}, Lcom/android/settings/AirCommandEnabler;->turnOnPenInfoPreview()V
 
@@ -87,7 +83,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/AirCommandEnabler;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/settings/AirCommandEnabler;
 
     iget-object v0, p0, Lcom/android/settings/AirCommandEnabler;->mContext:Landroid/content/Context;
 
@@ -343,8 +338,6 @@
 # virtual methods
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 7
-    .param p1    # Landroid/widget/CompoundButton;
-    .param p2    # Z
 
     const/4 v3, 0x1
 
@@ -538,8 +531,6 @@
 
 .method public setHeaderPosition(Landroid/preference/PreferenceActivity$Header;I)V
     .locals 0
-    .param p1    # Landroid/preference/PreferenceActivity$Header;
-    .param p2    # I
 
     iput-object p1, p0, Lcom/android/settings/AirCommandEnabler;->mHeader:Landroid/preference/PreferenceActivity$Header;
 
@@ -550,7 +541,6 @@
 
 .method public setSwitch(Landroid/widget/Switch;)V
     .locals 2
-    .param p1    # Landroid/widget/Switch;
 
     iget-object v0, p0, Lcom/android/settings/AirCommandEnabler;->mSwitch:Landroid/widget/Switch;
 

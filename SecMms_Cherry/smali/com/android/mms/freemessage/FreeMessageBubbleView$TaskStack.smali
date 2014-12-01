@@ -70,7 +70,6 @@
 
 .method static synthetic access$1100(Lcom/android/mms/freemessage/FreeMessageBubbleView$TaskStack;)Ljava/util/LinkedList;
     .locals 1
-    .param p0    # Lcom/android/mms/freemessage/FreeMessageBubbleView$TaskStack;
 
     iget-object v0, p0, Lcom/android/mms/freemessage/FreeMessageBubbleView$TaskStack;->mTaskTodo:Ljava/util/LinkedList;
 
@@ -116,7 +115,6 @@
 # virtual methods
 .method public addTask(Ljava/lang/Runnable;)V
     .locals 3
-    .param p1    # Ljava/lang/Runnable;
 
     sget-object v1, Lcom/android/mms/freemessage/FreeMessageBubbleView$TaskStack;->sInstance:Lcom/android/mms/freemessage/FreeMessageBubbleView$TaskStack;
 
@@ -172,7 +170,6 @@
 
 .method public removeTask(Ljava/lang/Runnable;)V
     .locals 2
-    .param p1    # Ljava/lang/Runnable;
 
     sget-object v1, Lcom/android/mms/freemessage/FreeMessageBubbleView$TaskStack;->sInstance:Lcom/android/mms/freemessage/FreeMessageBubbleView$TaskStack;
 

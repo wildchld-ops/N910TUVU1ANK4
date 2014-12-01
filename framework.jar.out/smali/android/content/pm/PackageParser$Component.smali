@@ -82,7 +82,6 @@
 
 .method public constructor <init>(Landroid/content/pm/PackageParser$Package;)V
     .locals 1
-    .param p1    # Landroid/content/pm/PackageParser$Package;
 
     const/4 v0, 0x0
 
@@ -99,8 +98,6 @@
 
 .method public constructor <init>(Landroid/content/pm/PackageParser$ParseComponentArgs;Landroid/content/pm/ComponentInfo;)V
     .locals 7
-    .param p1    # Landroid/content/pm/PackageParser$ParseComponentArgs;
-    .param p2    # Landroid/content/pm/ComponentInfo;
 
     const/4 v6, 0x0
 
@@ -210,8 +207,6 @@
 
 .method public constructor <init>(Landroid/content/pm/PackageParser$ParsePackageItemArgs;Landroid/content/pm/PackageItemInfo;)V
     .locals 8
-    .param p1    # Landroid/content/pm/PackageParser$ParsePackageItemArgs;
-    .param p2    # Landroid/content/pm/PackageItemInfo;
 
     const/4 v6, 0x0
 
@@ -385,7 +380,6 @@
 # virtual methods
 .method public appendComponentShortName(Ljava/lang/StringBuilder;)V
     .locals 2
-    .param p1    # Ljava/lang/StringBuilder;
 
     iget-object v0, p0, Landroid/content/pm/PackageParser$Component;->owner:Landroid/content/pm/PackageParser$Package;
 
@@ -439,7 +433,6 @@
 
 .method public printComponentShortName(Ljava/io/PrintWriter;)V
     .locals 2
-    .param p1    # Ljava/io/PrintWriter;
 
     iget-object v0, p0, Landroid/content/pm/PackageParser$Component;->owner:Landroid/content/pm/PackageParser$Package;
 
@@ -456,7 +449,6 @@
 
 .method public setPackageName(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 

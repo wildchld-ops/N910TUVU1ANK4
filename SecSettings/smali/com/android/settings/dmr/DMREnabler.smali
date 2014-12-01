@@ -51,8 +51,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/widget/Switch;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/widget/Switch;
 
     const/4 v1, 0x0
 
@@ -135,8 +133,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/dmr/DMREnabler;I)V
     .locals 0
-    .param p0    # Lcom/android/settings/dmr/DMREnabler;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/settings/dmr/DMREnabler;->handleServerStateChanged(I)V
 
@@ -145,7 +141,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/dmr/DMREnabler;)Landroid/widget/Switch;
     .locals 1
-    .param p0    # Lcom/android/settings/dmr/DMREnabler;
 
     iget-object v0, p0, Lcom/android/settings/dmr/DMREnabler;->mSwitch:Landroid/widget/Switch;
 
@@ -154,9 +149,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/dmr/DMREnabler;II)V
     .locals 0
-    .param p0    # Lcom/android/settings/dmr/DMREnabler;
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/settings/dmr/DMREnabler;->handleServerStateChangedDelayed(II)V
 
@@ -165,7 +157,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/dmr/DMREnabler;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/settings/dmr/DMREnabler;
 
     iget-object v0, p0, Lcom/android/settings/dmr/DMREnabler;->mContext:Landroid/content/Context;
 
@@ -174,8 +165,6 @@
 
 .method static synthetic access$402(Lcom/android/settings/dmr/DMREnabler;I)I
     .locals 0
-    .param p0    # Lcom/android/settings/dmr/DMREnabler;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/settings/dmr/DMREnabler;->mLastBroadCastMessageAction:I
 
@@ -184,7 +173,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/dmr/DMREnabler;)Lcom/sec/android/allshare/dmrservice/IMediaRenderer;
     .locals 1
-    .param p0    # Lcom/android/settings/dmr/DMREnabler;
 
     iget-object v0, p0, Lcom/android/settings/dmr/DMREnabler;->mService:Lcom/sec/android/allshare/dmrservice/IMediaRenderer;
 
@@ -193,8 +181,6 @@
 
 .method static synthetic access$502(Lcom/android/settings/dmr/DMREnabler;Lcom/sec/android/allshare/dmrservice/IMediaRenderer;)Lcom/sec/android/allshare/dmrservice/IMediaRenderer;
     .locals 0
-    .param p0    # Lcom/android/settings/dmr/DMREnabler;
-    .param p1    # Lcom/sec/android/allshare/dmrservice/IMediaRenderer;
 
     iput-object p1, p0, Lcom/android/settings/dmr/DMREnabler;->mService:Lcom/sec/android/allshare/dmrservice/IMediaRenderer;
 
@@ -203,7 +189,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/dmr/DMREnabler;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/dmr/DMREnabler;
 
     iget-boolean v0, p0, Lcom/android/settings/dmr/DMREnabler;->mIsBound:Z
 
@@ -212,7 +197,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/dmr/DMREnabler;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/dmr/DMREnabler;
 
     invoke-direct {p0}, Lcom/android/settings/dmr/DMREnabler;->isEthernetConnected()Z
 
@@ -223,7 +207,6 @@
 
 .method static synthetic access$800(Lcom/android/settings/dmr/DMREnabler;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/dmr/DMREnabler;
 
     invoke-direct {p0}, Lcom/android/settings/dmr/DMREnabler;->isWifiConnectedExtented()Z
 
@@ -234,7 +217,6 @@
 
 .method static synthetic access$900(Lcom/android/settings/dmr/DMREnabler;)V
     .locals 0
-    .param p0    # Lcom/android/settings/dmr/DMREnabler;
 
     invoke-direct {p0}, Lcom/android/settings/dmr/DMREnabler;->updateSwitchState()V
 
@@ -298,7 +280,6 @@
 
 .method private handleServerStateChanged(I)V
     .locals 6
-    .param p1    # I
 
     const/16 v5, 0x3e9
 
@@ -448,8 +429,6 @@
 
 .method private handleServerStateChangedDelayed(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     const-string v0, "DMREnabler"
 
@@ -977,7 +956,6 @@
 
 .method private showDialog(I)V
     .locals 4
-    .param p1    # I
 
     const-string v1, "DMREnabler"
 
@@ -1324,8 +1302,6 @@
 # virtual methods
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 8
-    .param p1    # Landroid/widget/CompoundButton;
-    .param p2    # Z
 
     const/16 v7, 0x3ed
 
@@ -1758,7 +1734,6 @@
 
 .method public setSwitch(Landroid/widget/Switch;)V
     .locals 2
-    .param p1    # Landroid/widget/Switch;
 
     const-string v0, "DMREnabler"
 

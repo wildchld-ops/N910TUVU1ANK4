@@ -33,7 +33,6 @@
 # virtual methods
 .method public onComplete(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/internal/widget/LockPatternUtils$verifyCardCallback$1;->this$0:Lcom/android/internal/widget/LockPatternUtils$verifyCardCallback;
 

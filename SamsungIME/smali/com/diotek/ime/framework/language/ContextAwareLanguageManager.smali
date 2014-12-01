@@ -261,7 +261,6 @@
 
 .method static synthetic access$000(Lcom/diotek/ime/framework/language/ContextAwareLanguageManager;)Ljava/io/File;
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/language/ContextAwareLanguageManager;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/language/ContextAwareLanguageManager;->mDir:Ljava/io/File;
 
@@ -270,10 +269,6 @@
 
 .method static synthetic access$100(Lcom/diotek/ime/framework/language/ContextAwareLanguageManager;Ljava/io/File;Ljava/lang/String;I)V
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/language/ContextAwareLanguageManager;
-    .param p1    # Ljava/io/File;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Lcom/diotek/ime/framework/language/ContextAwareLanguageManager;->loadDb(Ljava/io/File;Ljava/lang/String;I)V
 
@@ -282,7 +277,6 @@
 
 .method static synthetic access$200(Lcom/diotek/ime/framework/language/ContextAwareLanguageManager;)V
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/language/ContextAwareLanguageManager;
 
     invoke-direct {p0}, Lcom/diotek/ime/framework/language/ContextAwareLanguageManager;->saveCSL()V
 
@@ -291,9 +285,6 @@
 
 .method static synthetic access$300(Lcom/diotek/ime/framework/language/ContextAwareLanguageManager;IZ)I
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/language/ContextAwareLanguageManager;
-    .param p1    # I
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/diotek/ime/framework/language/ContextAwareLanguageManager;->getTotalLanguageDataLength(IZ)I
 
@@ -304,8 +295,6 @@
 
 .method static synthetic access$402(Lcom/diotek/ime/framework/language/ContextAwareLanguageManager;I)I
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/language/ContextAwareLanguageManager;
-    .param p1    # I
 
     iput p1, p0, Lcom/diotek/ime/framework/language/ContextAwareLanguageManager;->mDirtyIndex:I
 
@@ -314,7 +303,6 @@
 
 .method static synthetic access$500(Lcom/diotek/ime/framework/language/ContextAwareLanguageManager;)Ljava/util/Comparator;
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/language/ContextAwareLanguageManager;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/language/ContextAwareLanguageManager;->mComparator:Ljava/util/Comparator;
 
@@ -323,11 +311,6 @@
 
 .method private addCSLData([BIZIJ)V
     .locals 3
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # I
-    .param p5    # J
 
     if-eqz p1, :cond_0
 
@@ -365,7 +348,6 @@
 
 .method private addLanguageDataInCache(Ljava/util/LinkedList;Lcom/diotek/ime/framework/language/ContextAwareLanguageManager$ContextAwareLanguageDataStructure;)V
     .locals 2
-    .param p2    # Lcom/diotek/ime/framework/language/ContextAwareLanguageManager$ContextAwareLanguageDataStructure;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -423,8 +405,6 @@
 
 .method private byteArrayToInteger([BI)I
     .locals 7
-    .param p1    # [B
-    .param p2    # I
 
     const/4 v6, 0x4
 
@@ -488,8 +468,6 @@
 
 .method private byteArrayToLong([BI)Ljava/lang/Long;
     .locals 7
-    .param p1    # [B
-    .param p2    # I
 
     const/16 v6, 0x8
 
@@ -561,7 +539,6 @@
 
 .method private checkSumData([B)Z
     .locals 2
-    .param p1    # [B
 
     if-eqz p1, :cond_0
 
@@ -588,11 +565,6 @@
 
 .method private decodeData([BIZIJ)Lcom/diotek/ime/framework/language/ContextAwareLanguageManager$ContextAwareLanguageDataStructure;
     .locals 22
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # I
-    .param p5    # J
 
     if-nez p1, :cond_0
 
@@ -823,7 +795,6 @@
 
 .method private findCSLLanguageData(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x1
 
@@ -873,9 +844,6 @@
 
 .method private findLanguageData(Ljava/lang/String;II)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v0, 0x0
 
@@ -902,7 +870,6 @@
 
 .method private findLanguageDataInCSLCache(Ljava/lang/String;)Lcom/diotek/ime/framework/language/ContextAwareLanguageManager$ContextAwareLanguageDataStructure;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget v0, p0, Lcom/diotek/ime/framework/language/ContextAwareLanguageManager;->mCurrentMode:I
 
@@ -943,7 +910,6 @@
 
 .method private findLanguageDataInCache(Ljava/util/LinkedList;Ljava/lang/String;)Lcom/diotek/ime/framework/language/ContextAwareLanguageManager$ContextAwareLanguageDataStructure;
     .locals 5
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1017,9 +983,6 @@
 
 .method private getDefaultCSLData(ILjava/lang/String;I)Lcom/diotek/ime/framework/language/ContextAwareLanguageManager$ContextAwareLanguageDataStructure;
     .locals 7
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     const/4 v4, 0x0
 
@@ -1042,7 +1005,6 @@
 
 .method private getIndexOrLastData(ILjava/util/HashMap;)Lcom/diotek/ime/framework/language/ContextAwareLanguageManager$ContextAwareLanguageDataStructure;
     .locals 7
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -1136,7 +1098,6 @@
 
 .method private getLanguageDataInMap(Ljava/util/HashMap;Ljava/lang/String;)Lcom/diotek/ime/framework/language/ContextAwareLanguageManager$ContextAwareLanguageDataStructure;
     .locals 1
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1173,8 +1134,6 @@
 
 .method private getTotalLanguageDataLength(IZ)I
     .locals 1
-    .param p1    # I
-    .param p2    # Z
 
     if-eqz p2, :cond_0
 
@@ -1233,7 +1192,6 @@
 
 .method private integerToByteArray(I)[B
     .locals 3
-    .param p1    # I
 
     const/4 v1, 0x4
 
@@ -1258,8 +1216,6 @@
 
 .method private isAvailablePreferredLanguage(II)Z
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x1
 
@@ -1300,9 +1256,6 @@
 
 .method private loadDb(Ljava/io/File;Ljava/lang/String;I)V
     .locals 18
-    .param p1    # Ljava/io/File;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     new-instance v10, Ljava/io/File;
 
@@ -1701,7 +1654,6 @@
 
 .method private longToByteArray(J)[B
     .locals 3
-    .param p1    # J
 
     const/16 v1, 0x8
 
@@ -1726,9 +1678,6 @@
 
 .method private makeNewLanguageData(Ljava/lang/String;II)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     if-eqz p1, :cond_0
 
@@ -1794,7 +1743,6 @@
 
 .method private writeDB(Ljava/lang/String;Ljava/util/HashMap;)V
     .locals 22
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2881,8 +2829,6 @@
 
 .method private writeData(Ljava/io/RandomAccessFile;Lcom/diotek/ime/framework/language/ContextAwareLanguageManager$ContextAwareLanguageDataStructure;)I
     .locals 11
-    .param p1    # Ljava/io/RandomAccessFile;
-    .param p2    # Lcom/diotek/ime/framework/language/ContextAwareLanguageManager$ContextAwareLanguageDataStructure;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
@@ -3118,13 +3064,6 @@
 # virtual methods
 .method public findLanguage([Lcom/diotek/ime/framework/common/Language;Lcom/diotek/ime/framework/common/Language;Ljava/lang/String;Ljava/lang/String;II[Z)Lcom/diotek/ime/framework/common/Language;
     .locals 8
-    .param p1    # [Lcom/diotek/ime/framework/common/Language;
-    .param p2    # Lcom/diotek/ime/framework/common/Language;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
-    .param p6    # I
-    .param p7    # [Z
 
     const/4 v7, -0x1
 
@@ -3308,7 +3247,6 @@
 
 .method public updateCurrentLanguage(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/diotek/ime/framework/language/ContextAwareLanguageManager;->mCurrentLanguageData:Lcom/diotek/ime/framework/language/ContextAwareLanguageManager$ContextAwareLanguageDataStructure;
 

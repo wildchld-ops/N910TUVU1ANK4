@@ -104,9 +104,6 @@
 
 .method constructor <init>(Landroid/content/Context;Landroid/content/pm/ActivityInfo;Ljava/lang/String;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/pm/ActivityInfo;
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0}, Landroid/app/ExtraAttr$Owner;-><init>()V
 
@@ -223,10 +220,6 @@
 
 .method constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;Ljava/lang/String;I)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
 
     const/4 v3, 0x0
 
@@ -344,7 +337,6 @@
 
 .method constructor <init>(Landroid/os/Parcel;)V
     .locals 3
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Landroid/app/ExtraAttr$Owner;-><init>()V
 
@@ -469,7 +461,6 @@
 
 .method static synthetic access$000(Landroid/app/SpellScroll$Spell;)Ljava/lang/String;
     .locals 1
-    .param p0    # Landroid/app/SpellScroll$Spell;
 
     iget-object v0, p0, Landroid/app/SpellScroll$Spell;->mName:Ljava/lang/String;
 
@@ -478,7 +469,6 @@
 
 .method static synthetic access$100(Landroid/app/SpellScroll$Spell;)I
     .locals 1
-    .param p0    # Landroid/app/SpellScroll$Spell;
 
     iget v0, p0, Landroid/app/SpellScroll$Spell;->mLabelId:I
 
@@ -487,7 +477,6 @@
 
 .method static synthetic access$200(Landroid/app/SpellScroll$Spell;)I
     .locals 1
-    .param p0    # Landroid/app/SpellScroll$Spell;
 
     iget v0, p0, Landroid/app/SpellScroll$Spell;->mHintId:I
 
@@ -496,8 +485,6 @@
 
 .method private calculateId(Ljava/lang/String;Ljava/lang/String;)J
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p1}, Ljava/lang/String;->hashCode()I
 
@@ -605,7 +592,6 @@
 
 .method private static declared-synchronized convertCastAction(Ljava/lang/String;)I
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     const-class v2, Landroid/app/SpellScroll$Spell;
 
@@ -707,7 +693,6 @@
 # virtual methods
 .method public addEffect(Landroid/app/SpellScroll$SpellEffect;)V
     .locals 1
-    .param p1    # Landroid/app/SpellScroll$SpellEffect;
 
     iget-object v0, p0, Landroid/app/SpellScroll$Spell;->mEffects:Ljava/util/List;
 
@@ -718,7 +703,6 @@
 
 .method public addIngredient(Landroid/app/SpellScroll$Ingredient;)V
     .locals 1
-    .param p1    # Landroid/app/SpellScroll$Ingredient;
 
     iget-object v0, p0, Landroid/app/SpellScroll$Spell;->mIngredients:Ljava/util/List;
 
@@ -729,8 +713,6 @@
 
 .method public cast(Landroid/content/Context;Landroid/os/Bundle;)Z
     .locals 17
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/Bundle;
 
     :try_start_0
     move-object/from16 v0, p0
@@ -1087,7 +1069,6 @@
 
 .method public compile(Landroid/os/Bundle;)Ljava/util/List;
     .locals 6
-    .param p1    # Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1193,7 +1174,6 @@
 
 .method dump(Ljava/io/PrintWriter;)V
     .locals 7
-    .param p1    # Ljava/io/PrintWriter;
 
     new-instance v4, Ljava/lang/StringBuilder;
 
@@ -1475,7 +1455,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 8
-    .param p1    # Ljava/lang/Object;
 
     const/4 v3, 0x0
 
@@ -1864,7 +1843,6 @@
 
 .method public hasIngredientName(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v2, p0, Landroid/app/SpellScroll$Spell;->mIngredients:Ljava/util/List;
 
@@ -2012,7 +1990,6 @@
 
 .method public match(Ljava/lang/String;)Z
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -2106,8 +2083,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 6
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     const/4 v3, 0x0
 

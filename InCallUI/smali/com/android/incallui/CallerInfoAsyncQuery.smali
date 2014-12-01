@@ -58,7 +58,6 @@
 
 .method static synthetic access$000(Landroid/net/Uri;)Ljava/lang/String;
     .locals 1
-    .param p0    # Landroid/net/Uri;
 
     invoke-static {p0}, Lcom/android/incallui/CallerInfoAsyncQuery;->sanitizeUriToString(Landroid/net/Uri;)Ljava/lang/String;
 
@@ -69,7 +68,6 @@
 
 .method static synthetic access$100(Lcom/android/incallui/CallerInfoAsyncQuery;)V
     .locals 0
-    .param p0    # Lcom/android/incallui/CallerInfoAsyncQuery;
 
     invoke-direct {p0}, Lcom/android/incallui/CallerInfoAsyncQuery;->release()V
 
@@ -86,8 +84,6 @@
 
 .method private allocate(Landroid/content/Context;Landroid/net/Uri;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/net/Uri;
 
     if-eqz p1, :cond_0
 
@@ -151,7 +147,6 @@
 
 .method private static sanitizeUriToString(Landroid/net/Uri;)Ljava/lang/String;
     .locals 4
-    .param p0    # Landroid/net/Uri;
 
     if-eqz p0, :cond_1
 
@@ -203,12 +198,6 @@
 
 .method public static startQuery(ILandroid/content/Context;Ljava/lang/String;Lcom/android/incallui/CallerInfoAsyncQuery$OnQueryCompleteListener;Ljava/lang/Object;I)Lcom/android/incallui/CallerInfoAsyncQuery;
     .locals 17
-    .param p0    # I
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/android/incallui/CallerInfoAsyncQuery$OnQueryCompleteListener;
-    .param p4    # Ljava/lang/Object;
-    .param p5    # I
 
     const-string v3, "CallerInfoAsyncQuery"
 

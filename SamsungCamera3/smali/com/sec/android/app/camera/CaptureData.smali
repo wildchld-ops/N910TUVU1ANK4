@@ -280,7 +280,6 @@
 
 .method public getReviewBitmap(I)Landroid/graphics/Bitmap;
     .locals 6
-    .param p1    # I
 
     iget-object v3, p0, Lcom/sec/android/app/camera/CaptureData;->mCaptureOnlyData:[B
 
@@ -402,8 +401,6 @@
 
 .method public setCaptureData([BI)V
     .locals 1
-    .param p1    # [B
-    .param p2    # I
 
     iput-object p1, p0, Lcom/sec/android/app/camera/CaptureData;->mCaptureOnlyData:[B
 
@@ -418,7 +415,6 @@
 
 .method public setOrientation(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/app/camera/CaptureData;->mOrientation:I
 

@@ -21,9 +21,6 @@
 # direct methods
 .method constructor <init>(Lcom/sec/android/app/camera/gallery/IImageList;Landroid/content/ContentResolver;Landroid/net/Uri;)V
     .locals 0
-    .param p1    # Lcom/sec/android/app/camera/gallery/IImageList;
-    .param p2    # Landroid/content/ContentResolver;
-    .param p3    # Landroid/net/Uri;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -200,8 +197,6 @@
 # virtual methods
 .method public fullSizeBitmap(II)Landroid/graphics/Bitmap;
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x1
 
@@ -216,9 +211,6 @@
 
 .method public fullSizeBitmap(IIZ)Landroid/graphics/Bitmap;
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     const/4 v0, 0x0
 
@@ -231,10 +223,6 @@
 
 .method public fullSizeBitmap(IIZZ)Landroid/graphics/Bitmap;
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # Z
 
     :try_start_0
     invoke-direct {p0}, Lcom/sec/android/app/camera/gallery/UriImage;->getPFD()Landroid/os/ParcelFileDescriptor;
@@ -442,7 +430,6 @@
 
 .method public rotateImageBy(I)Z
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -451,7 +438,6 @@
 
 .method public thumbBitmap(Z)Landroid/graphics/Bitmap;
     .locals 2
-    .param p1    # Z
 
     sget v0, Lcom/sec/android/app/camera/gallery/UriImage;->THUMBNAIL_TARGET_SIZE:I
 

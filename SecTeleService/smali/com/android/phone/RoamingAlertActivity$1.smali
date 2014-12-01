@@ -48,7 +48,7 @@
 
     iget-object v0, p0, Lcom/android/phone/RoamingAlertActivity$1;->this$0:Lcom/android/phone/RoamingAlertActivity;
 
-    invoke-virtual {v0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {v0}, Lcom/android/phone/RoamingAlertActivity;->finish()V
 
     return-void
 .end method

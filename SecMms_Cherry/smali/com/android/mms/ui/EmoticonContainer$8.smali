@@ -36,7 +36,6 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     invoke-static {}, Lcom/sec/orca/shop/client/library/MultiClickBlocker;->setAndCheckClickBlocked()Z
 

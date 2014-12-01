@@ -734,9 +734,6 @@
 
 .method static synthetic access$000(Lcom/android/incallui/service/IncomingPopupService;Ljava/lang/String;Z)V
     .locals 0
-    .param p0    # Lcom/android/incallui/service/IncomingPopupService;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/incallui/service/IncomingPopupService;->log(Ljava/lang/String;Z)V
 
@@ -745,7 +742,6 @@
 
 .method static synthetic access$100(Lcom/android/incallui/service/IncomingPopupService;)V
     .locals 0
-    .param p0    # Lcom/android/incallui/service/IncomingPopupService;
 
     invoke-direct {p0}, Lcom/android/incallui/service/IncomingPopupService;->answerThenGoCallScreen()V
 
@@ -754,7 +750,6 @@
 
 .method static synthetic access$1000(Lcom/android/incallui/service/IncomingPopupService;)Landroid/widget/ToggleButton;
     .locals 1
-    .param p0    # Lcom/android/incallui/service/IncomingPopupService;
 
     iget-object v0, p0, Lcom/android/incallui/service/IncomingPopupService;->mMuteButton:Landroid/widget/ToggleButton;
 
@@ -763,8 +758,6 @@
 
 .method static synthetic access$1100(Lcom/android/incallui/service/IncomingPopupService;Z)V
     .locals 0
-    .param p0    # Lcom/android/incallui/service/IncomingPopupService;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/incallui/service/IncomingPopupService;->toggleMute(Z)V
 
@@ -773,7 +766,6 @@
 
 .method static synthetic access$1200(Lcom/android/incallui/service/IncomingPopupService;)V
     .locals 0
-    .param p0    # Lcom/android/incallui/service/IncomingPopupService;
 
     invoke-direct {p0}, Lcom/android/incallui/service/IncomingPopupService;->endCall()V
 
@@ -782,7 +774,6 @@
 
 .method static synthetic access$1300(Lcom/android/incallui/service/IncomingPopupService;)V
     .locals 0
-    .param p0    # Lcom/android/incallui/service/IncomingPopupService;
 
     invoke-direct {p0}, Lcom/android/incallui/service/IncomingPopupService;->videoCallClicked()V
 
@@ -791,7 +782,6 @@
 
 .method static synthetic access$1400(Lcom/android/incallui/service/IncomingPopupService;)V
     .locals 0
-    .param p0    # Lcom/android/incallui/service/IncomingPopupService;
 
     invoke-direct {p0}, Lcom/android/incallui/service/IncomingPopupService;->voiceCallClicked()V
 
@@ -800,7 +790,6 @@
 
 .method static synthetic access$1500(Lcom/android/incallui/service/IncomingPopupService;)V
     .locals 0
-    .param p0    # Lcom/android/incallui/service/IncomingPopupService;
 
     invoke-direct {p0}, Lcom/android/incallui/service/IncomingPopupService;->sendMessageClicked()V
 
@@ -809,8 +798,6 @@
 
 .method static synthetic access$1600(Lcom/android/incallui/service/IncomingPopupService;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/incallui/service/IncomingPopupService;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/incallui/service/IncomingPopupService;->log(Ljava/lang/String;)V
 
@@ -819,7 +806,6 @@
 
 .method static synthetic access$1700(Lcom/android/incallui/service/IncomingPopupService;)V
     .locals 0
-    .param p0    # Lcom/android/incallui/service/IncomingPopupService;
 
     invoke-direct {p0}, Lcom/android/incallui/service/IncomingPopupService;->checkAudioMode()V
 
@@ -828,7 +814,6 @@
 
 .method static synthetic access$1800(Lcom/android/incallui/service/IncomingPopupService;)Landroid/widget/ImageButton;
     .locals 1
-    .param p0    # Lcom/android/incallui/service/IncomingPopupService;
 
     iget-object v0, p0, Lcom/android/incallui/service/IncomingPopupService;->mDrageModeBtn:Landroid/widget/ImageButton;
 
@@ -837,8 +822,6 @@
 
 .method static synthetic access$1900(Lcom/android/incallui/service/IncomingPopupService;Lcom/android/services/telephony/common/Call;)V
     .locals 0
-    .param p0    # Lcom/android/incallui/service/IncomingPopupService;
-    .param p1    # Lcom/android/services/telephony/common/Call;
 
     invoke-direct {p0, p1}, Lcom/android/incallui/service/IncomingPopupService;->onEcidUpdate(Lcom/android/services/telephony/common/Call;)V
 
@@ -847,7 +830,6 @@
 
 .method static synthetic access$200(Lcom/android/incallui/service/IncomingPopupService;)V
     .locals 0
-    .param p0    # Lcom/android/incallui/service/IncomingPopupService;
 
     invoke-direct {p0}, Lcom/android/incallui/service/IncomingPopupService;->answerCallThenStayAsPopUp()V
 
@@ -856,8 +838,6 @@
 
 .method static synthetic access$2002(Lcom/android/incallui/service/IncomingPopupService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/incallui/service/IncomingPopupService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/incallui/service/IncomingPopupService;->showingRejectMessage:Z
 
@@ -866,8 +846,6 @@
 
 .method static synthetic access$2102(Lcom/android/incallui/service/IncomingPopupService;Lcom/android/services/telephony/common/Call;)Lcom/android/services/telephony/common/Call;
     .locals 0
-    .param p0    # Lcom/android/incallui/service/IncomingPopupService;
-    .param p1    # Lcom/android/services/telephony/common/Call;
 
     iput-object p1, p0, Lcom/android/incallui/service/IncomingPopupService;->mRejectcall:Lcom/android/services/telephony/common/Call;
 
@@ -876,7 +854,6 @@
 
 .method static synthetic access$2200(Lcom/android/incallui/service/IncomingPopupService;)Landroid/app/StatusBarManager;
     .locals 1
-    .param p0    # Lcom/android/incallui/service/IncomingPopupService;
 
     iget-object v0, p0, Lcom/android/incallui/service/IncomingPopupService;->mStatusBarManager:Landroid/app/StatusBarManager;
 
@@ -885,8 +862,6 @@
 
 .method static synthetic access$2300(Lcom/android/incallui/service/IncomingPopupService;Z)V
     .locals 0
-    .param p0    # Lcom/android/incallui/service/IncomingPopupService;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/incallui/service/IncomingPopupService;->showInCallUIForAnswerMemo(Z)V
 
@@ -895,7 +870,6 @@
 
 .method static synthetic access$2400(Lcom/android/incallui/service/IncomingPopupService;)Lcom/android/incallui/ContactInfoCache$ContactCacheEntry;
     .locals 1
-    .param p0    # Lcom/android/incallui/service/IncomingPopupService;
 
     iget-object v0, p0, Lcom/android/incallui/service/IncomingPopupService;->mContactInfo:Lcom/android/incallui/ContactInfoCache$ContactCacheEntry;
 
@@ -904,8 +878,6 @@
 
 .method static synthetic access$2402(Lcom/android/incallui/service/IncomingPopupService;Lcom/android/incallui/ContactInfoCache$ContactCacheEntry;)Lcom/android/incallui/ContactInfoCache$ContactCacheEntry;
     .locals 0
-    .param p0    # Lcom/android/incallui/service/IncomingPopupService;
-    .param p1    # Lcom/android/incallui/ContactInfoCache$ContactCacheEntry;
 
     iput-object p1, p0, Lcom/android/incallui/service/IncomingPopupService;->mContactInfo:Lcom/android/incallui/ContactInfoCache$ContactCacheEntry;
 
@@ -914,7 +886,6 @@
 
 .method static synthetic access$2500(Lcom/android/incallui/service/IncomingPopupService;)V
     .locals 0
-    .param p0    # Lcom/android/incallui/service/IncomingPopupService;
 
     invoke-direct {p0}, Lcom/android/incallui/service/IncomingPopupService;->setCallerInfo()V
 
@@ -923,7 +894,6 @@
 
 .method static synthetic access$2600(Lcom/android/incallui/service/IncomingPopupService;)V
     .locals 0
-    .param p0    # Lcom/android/incallui/service/IncomingPopupService;
 
     invoke-direct {p0}, Lcom/android/incallui/service/IncomingPopupService;->updateCnapName()V
 
@@ -932,7 +902,6 @@
 
 .method static synthetic access$2700(Lcom/android/incallui/service/IncomingPopupService;)V
     .locals 0
-    .param p0    # Lcom/android/incallui/service/IncomingPopupService;
 
     invoke-direct {p0}, Lcom/android/incallui/service/IncomingPopupService;->updateCdnipNumber()V
 
@@ -941,7 +910,6 @@
 
 .method static synthetic access$2800(Lcom/android/incallui/service/IncomingPopupService;)V
     .locals 0
-    .param p0    # Lcom/android/incallui/service/IncomingPopupService;
 
     invoke-direct {p0}, Lcom/android/incallui/service/IncomingPopupService;->setCallerImage()V
 
@@ -950,7 +918,6 @@
 
 .method static synthetic access$2900(Lcom/android/incallui/service/IncomingPopupService;)V
     .locals 0
-    .param p0    # Lcom/android/incallui/service/IncomingPopupService;
 
     invoke-direct {p0}, Lcom/android/incallui/service/IncomingPopupService;->answerViaSpeaker()V
 
@@ -959,7 +926,6 @@
 
 .method static synthetic access$300(Lcom/android/incallui/service/IncomingPopupService;)V
     .locals 0
-    .param p0    # Lcom/android/incallui/service/IncomingPopupService;
 
     invoke-direct {p0}, Lcom/android/incallui/service/IncomingPopupService;->answerCallThenStay()V
 
@@ -968,7 +934,6 @@
 
 .method static synthetic access$3000(Lcom/android/incallui/service/IncomingPopupService;)V
     .locals 0
-    .param p0    # Lcom/android/incallui/service/IncomingPopupService;
 
     invoke-direct {p0}, Lcom/android/incallui/service/IncomingPopupService;->internalAnswer()V
 
@@ -977,7 +942,6 @@
 
 .method static synthetic access$3100(Lcom/android/incallui/service/IncomingPopupService;)V
     .locals 0
-    .param p0    # Lcom/android/incallui/service/IncomingPopupService;
 
     invoke-direct {p0}, Lcom/android/incallui/service/IncomingPopupService;->dismissCallRoamingGuardDialog()V
 
@@ -986,7 +950,6 @@
 
 .method static synthetic access$400(Lcom/android/incallui/service/IncomingPopupService;)V
     .locals 0
-    .param p0    # Lcom/android/incallui/service/IncomingPopupService;
 
     invoke-direct {p0}, Lcom/android/incallui/service/IncomingPopupService;->rejectCall()V
 
@@ -995,7 +958,6 @@
 
 .method static synthetic access$500(Lcom/android/incallui/service/IncomingPopupService;)V
     .locals 0
-    .param p0    # Lcom/android/incallui/service/IncomingPopupService;
 
     invoke-direct {p0}, Lcom/android/incallui/service/IncomingPopupService;->sendMessage()V
 
@@ -1004,7 +966,6 @@
 
 .method static synthetic access$600(Lcom/android/incallui/service/IncomingPopupService;)V
     .locals 0
-    .param p0    # Lcom/android/incallui/service/IncomingPopupService;
 
     invoke-direct {p0}, Lcom/android/incallui/service/IncomingPopupService;->showInCallUI()V
 
@@ -1013,8 +974,6 @@
 
 .method static synthetic access$702(Lcom/android/incallui/service/IncomingPopupService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/incallui/service/IncomingPopupService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/incallui/service/IncomingPopupService;->mIsContensShareMode:Z
 
@@ -1023,7 +982,6 @@
 
 .method static synthetic access$800(Lcom/android/incallui/service/IncomingPopupService;)Landroid/widget/ToggleButton;
     .locals 1
-    .param p0    # Lcom/android/incallui/service/IncomingPopupService;
 
     iget-object v0, p0, Lcom/android/incallui/service/IncomingPopupService;->mSpeakerButton:Landroid/widget/ToggleButton;
 
@@ -1032,8 +990,6 @@
 
 .method static synthetic access$900(Lcom/android/incallui/service/IncomingPopupService;Z)V
     .locals 0
-    .param p0    # Lcom/android/incallui/service/IncomingPopupService;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/incallui/service/IncomingPopupService;->toggleSpeaker(Z)V
 
@@ -1176,8 +1132,6 @@
 
 .method private areCallsSame(Lcom/android/services/telephony/common/Call;Lcom/android/services/telephony/common/Call;)Z
     .locals 4
-    .param p1    # Lcom/android/services/telephony/common/Call;
-    .param p2    # Lcom/android/services/telephony/common/Call;
 
     const/4 v0, 0x1
 
@@ -2527,7 +2481,6 @@
 
 .method private log(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "IncomingPopupService"
 
@@ -2538,8 +2491,6 @@
 
 .method private log(Ljava/lang/String;Z)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const-string v0, "IncomingPopupService"
 
@@ -2757,7 +2708,6 @@
 
 .method private onAnswerWithWaitingCheck(Z)V
     .locals 6
-    .param p1    # Z
 
     invoke-static {}, Lcom/android/incallui/CallList;->getInstance()Lcom/android/incallui/CallList;
 
@@ -3347,7 +3297,6 @@
 
 .method private setCallType(Landroid/widget/ImageView;)V
     .locals 1
-    .param p1    # Landroid/widget/ImageView;
 
     if-eqz p1, :cond_0
 
@@ -3603,7 +3552,6 @@
 
 .method private setCityInfo(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "ecid_enable"
 
@@ -3734,7 +3682,6 @@
 
 .method private setSimType(Landroid/widget/ImageView;)V
     .locals 8
-    .param p1    # Landroid/widget/ImageView;
 
     const/4 v7, 0x0
 
@@ -4194,7 +4141,6 @@
 
 .method private showInCallUIForAnswerMemo(Z)V
     .locals 4
-    .param p1    # Z
 
     invoke-static {}, Lcom/android/incallui/InCallPresenter;->getInstance()Lcom/android/incallui/InCallPresenter;
 
@@ -4218,7 +4164,6 @@
 
 .method private startAutoAnsTimer(I)V
     .locals 6
-    .param p1    # I
 
     const-string v0, "startAutoAnsTimer "
 
@@ -4249,7 +4194,6 @@
 
 .method private startContactInfoSearch(Lcom/android/services/telephony/common/CallIdentification;)V
     .locals 3
-    .param p1    # Lcom/android/services/telephony/common/CallIdentification;
 
     iget-object v1, p0, Lcom/android/incallui/service/MiniModeCallService;->mContext:Landroid/content/Context;
 
@@ -4351,7 +4295,6 @@
 
 .method private toggleMute(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-static {}, Lcom/android/incallui/InCallPresenter;->getInstance()Lcom/android/incallui/InCallPresenter;
 
@@ -4364,7 +4307,6 @@
 
 .method private toggleSpeaker(Z)V
     .locals 2
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -4393,7 +4335,6 @@
 
 .method private updateAlertWithInformationMessage(Lcom/android/incallui/CallList;)V
     .locals 1
-    .param p1    # Lcom/android/incallui/CallList;
 
     const/4 v0, 0x0
 
@@ -6806,7 +6747,6 @@
 
 .method public isAudio(I)Z
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/incallui/service/IncomingPopupService;->getAudioMode()I
 
@@ -6829,7 +6769,6 @@
 
 .method public isSupported(I)Z
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/incallui/service/IncomingPopupService;->getSupportedAudio()I
 
@@ -6862,7 +6801,6 @@
 
 .method public onChronometerTick(Landroid/widget/Chronometer;)V
     .locals 6
-    .param p1    # Landroid/widget/Chronometer;
 
     invoke-virtual {p1}, Landroid/widget/Chronometer;->getBase()J
 
@@ -6881,7 +6819,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 3
-    .param p1    # Landroid/content/res/Configuration;
 
     const/4 v2, 0x1
 
@@ -6942,7 +6879,6 @@
 
 .method public onCoverStatusChanged(Z)V
     .locals 0
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -7340,7 +7276,6 @@
 
 .method public onHangUpThenAnswer(Lcom/android/services/telephony/common/Call;)V
     .locals 3
-    .param p1    # Lcom/android/services/telephony/common/Call;
 
     if-eqz p1, :cond_0
 
@@ -7374,8 +7309,6 @@
 
 .method public onIncomingCall(Lcom/android/incallui/InCallPresenter$InCallState;Lcom/android/services/telephony/common/Call;)V
     .locals 1
-    .param p1    # Lcom/android/incallui/InCallPresenter$InCallState;
-    .param p2    # Lcom/android/services/telephony/common/Call;
 
     invoke-static {}, Lcom/android/incallui/CallList;->getInstance()Lcom/android/incallui/CallList;
 
@@ -7416,16 +7349,12 @@
 
 .method public onSideSyncCallForwardStateChanged(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method public onStartCommand(Landroid/content/Intent;II)I
     .locals 9
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v8, 0x2
 
@@ -8067,7 +7996,6 @@
 
 .method public setCallerImage(Landroid/graphics/drawable/Drawable;)V
     .locals 1
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     iget-object v0, p0, Lcom/android/incallui/service/IncomingPopupService;->mCallerImage:Landroid/widget/ImageView;
 
@@ -8507,7 +8435,6 @@
 
 .method public showHighQualitySoundText(Z)V
     .locals 5
-    .param p1    # Z
 
     const v4, 0x7f090082
 
@@ -8585,7 +8512,6 @@
 
 .method public showWaitingCallDialog(Landroid/app/AlertDialog$Builder;)V
     .locals 2
-    .param p1    # Landroid/app/AlertDialog$Builder;
 
     iget-object v0, p0, Lcom/android/incallui/service/IncomingPopupService;->mWaitingCallDialog:Landroid/app/AlertDialog;
 

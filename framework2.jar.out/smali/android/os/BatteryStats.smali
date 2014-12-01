@@ -623,9 +623,6 @@
 
 .method private static computeWakeLock(Landroid/os/BatteryStats$Timer;JI)J
     .locals 8
-    .param p0    # Landroid/os/BatteryStats$Timer;
-    .param p1    # J
-    .param p3    # I
 
     if-eqz p0, :cond_0
 
@@ -652,11 +649,6 @@
 
 .method private static final varargs dumpLine(Ljava/io/PrintWriter;ILjava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
     .locals 6
-    .param p0    # Ljava/io/PrintWriter;
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # [Ljava/lang/Object;
 
     const/16 v5, 0x2c
 
@@ -703,7 +695,6 @@
 
 .method private final formatBytesLocked(J)Ljava/lang/String;
     .locals 8
-    .param p1    # J
 
     const/4 v2, 0x1
 
@@ -842,8 +833,6 @@
 
 .method private final formatRatioLocked(JJ)Ljava/lang/String;
     .locals 6
-    .param p1    # J
-    .param p3    # J
 
     const/4 v5, 0x0
 
@@ -900,8 +889,6 @@
 
 .method private static final formatTime(Ljava/lang/StringBuilder;J)V
     .locals 6
-    .param p0    # Ljava/lang/StringBuilder;
-    .param p1    # J
 
     const-wide/16 v2, 0x64
 
@@ -928,8 +915,6 @@
 
 .method private static final formatTimeMs(Ljava/lang/StringBuilder;J)V
     .locals 4
-    .param p0    # Ljava/lang/StringBuilder;
-    .param p1    # J
 
     const-wide/16 v2, 0x3e8
 
@@ -952,8 +937,6 @@
 
 .method private static final formatTimeRaw(Ljava/lang/StringBuilder;J)V
     .locals 12
-    .param p0    # Ljava/lang/StringBuilder;
-    .param p1    # J
 
     const-wide/32 v8, 0x15180
 
@@ -1079,10 +1062,6 @@
 
 .method static printBitDescriptions(Ljava/io/PrintWriter;II[Landroid/os/BatteryStats$BitDescription;)V
     .locals 6
-    .param p0    # Ljava/io/PrintWriter;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [Landroid/os/BatteryStats$BitDescription;
 
     xor-int v1, p1, p2
 
@@ -1186,12 +1165,6 @@
 
 .method private static final printWakeLock(Ljava/lang/StringBuilder;Landroid/os/BatteryStats$Timer;JLjava/lang/String;ILjava/lang/String;)Ljava/lang/String;
     .locals 5
-    .param p0    # Ljava/lang/StringBuilder;
-    .param p1    # Landroid/os/BatteryStats$Timer;
-    .param p2    # J
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
-    .param p6    # Ljava/lang/String;
 
     if-eqz p1, :cond_1
 
@@ -1240,12 +1213,6 @@
 
 .method private static final printWakeLockCheckin(Ljava/lang/StringBuilder;Landroid/os/BatteryStats$Timer;JLjava/lang/String;ILjava/lang/String;)Ljava/lang/String;
     .locals 7
-    .param p0    # Ljava/lang/StringBuilder;
-    .param p1    # Landroid/os/BatteryStats$Timer;
-    .param p2    # J
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
-    .param p6    # Ljava/lang/String;
 
     const-wide/16 v1, 0x0
 
@@ -1329,9 +1296,6 @@
 
 .method public final dumpCheckinLocked(Ljava/io/PrintWriter;II)V
     .locals 116
-    .param p1    # Ljava/io/PrintWriter;
-    .param p2    # I
-    .param p3    # I
 
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 
@@ -3444,9 +3408,6 @@
 
 .method public dumpCheckinLocked(Ljava/io/PrintWriter;Ljava/util/List;ZZ)V
     .locals 22
-    .param p1    # Ljava/io/PrintWriter;
-    .param p3    # Z
-    .param p4    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3769,10 +3730,6 @@
 
 .method public final dumpLocked(Ljava/io/PrintWriter;Ljava/lang/String;II)V
     .locals 143
-    .param p1    # Ljava/io/PrintWriter;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
 
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 
@@ -7126,9 +7083,6 @@
 
 .method public dumpLocked(Ljava/io/PrintWriter;ZI)V
     .locals 27
-    .param p1    # Ljava/io/PrintWriter;
-    .param p2    # Z
-    .param p3    # I
 
     invoke-virtual/range {p0 .. p0}, Landroid/os/BatteryStats;->prepareForDumpLocked()V
 

@@ -67,7 +67,6 @@
 
 .method private EnablingAirCallAccept(Z)V
     .locals 11
-    .param p1    # Z
 
     const/4 v10, 0x1
 
@@ -328,8 +327,6 @@
 
 .method static synthetic access$002(Lcom/android/settings/DrivingModeSettings;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/DrivingModeSettings;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/DrivingModeSettings;->mTouchEvent:Z
 
@@ -338,7 +335,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/DrivingModeSettings;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/settings/DrivingModeSettings;
 
     iget-object v0, p0, Lcom/android/settings/DrivingModeSettings;->mContext:Landroid/content/Context;
 
@@ -347,7 +343,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/DrivingModeSettings;)V
     .locals 0
-    .param p0    # Lcom/android/settings/DrivingModeSettings;
 
     invoke-direct {p0}, Lcom/android/settings/DrivingModeSettings;->updateState()V
 
@@ -356,7 +351,6 @@
 
 .method public static areAllDrivingModeOptionsDisabled(Landroid/content/ContentResolver;)Z
     .locals 3
-    .param p0    # Landroid/content/ContentResolver;
 
     const/4 v0, 0x0
 
@@ -458,7 +452,6 @@
 
 .method private isVoiceControlEnabled(Landroid/content/Context;)Z
     .locals 5
-    .param p1    # Landroid/content/Context;
 
     const/4 v1, 0x1
 
@@ -550,7 +543,6 @@
 # virtual methods
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 8
-    .param p1    # Landroid/os/Bundle;
 
     const/16 v6, 0x10
 
@@ -659,8 +651,6 @@
 
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 5
-    .param p1    # Landroid/widget/CompoundButton;
-    .param p2    # Z
 
     const/4 v0, 0x1
 
@@ -771,7 +761,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 9
-    .param p1    # Landroid/os/Bundle;
 
     const/16 v8, 0x64
 
@@ -1508,8 +1497,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 7
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     const/4 v3, 0x1
 

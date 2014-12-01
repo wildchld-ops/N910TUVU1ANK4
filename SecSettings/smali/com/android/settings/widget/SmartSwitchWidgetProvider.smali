@@ -113,7 +113,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/widget/SmartSwitchWidgetProvider;)V
     .locals 0
-    .param p0    # Lcom/android/settings/widget/SmartSwitchWidgetProvider;
 
     invoke-direct {p0}, Lcom/android/settings/widget/SmartSwitchWidgetProvider;->stopAnimation()V
 
@@ -122,7 +121,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/widget/SmartSwitchWidgetProvider;)V
     .locals 0
-    .param p0    # Lcom/android/settings/widget/SmartSwitchWidgetProvider;
 
     invoke-direct {p0}, Lcom/android/settings/widget/SmartSwitchWidgetProvider;->updateAnimation()V
 
@@ -131,7 +129,6 @@
 
 .method static buildUpdate(Landroid/content/Context;)Landroid/widget/RemoteViews;
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     new-instance v0, Landroid/widget/RemoteViews;
 
@@ -232,7 +229,6 @@
 
 .method private static checkController(Landroid/content/Context;)V
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     sget-object v0, Lcom/android/settings/widget/SmartSwitchWidgetProvider;->sSBeamController:Lcom/android/settings/widget/SmartSwitchWidgetProvider$SBeamController;
 
@@ -258,7 +254,6 @@
 
 .method private static checkObserver(Landroid/content/Context;)V
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     sget-object v0, Lcom/android/settings/widget/SmartSwitchWidgetProvider;->sSettingsObserver:Lcom/android/settings/widget/SmartSwitchWidgetProvider$SettingsObserver;
 
@@ -336,8 +331,6 @@
 
 .method private static isEnabled(Landroid/content/Context;I)Z
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     const/4 v2, 0x1
 
@@ -542,7 +535,6 @@
 
 .method private showPowerSavingGuideDialog(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     iget-object v0, p0, Lcom/android/settings/widget/SmartSwitchWidgetProvider;->mGuideDialog:Landroid/app/AlertDialog;
 
@@ -582,7 +574,6 @@
 
 .method private showSmartAlertGuideDialog(Landroid/content/Context;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
 
     const/4 v5, 0x0
 
@@ -707,7 +698,6 @@
 
 .method private showSmartStayGuideDialog(Landroid/content/Context;)V
     .locals 8
-    .param p1    # Landroid/content/Context;
 
     const/4 v7, 0x0
 
@@ -918,7 +908,6 @@
 
 .method private showVoiceCmdGuideDialog(Landroid/content/Context;)V
     .locals 7
-    .param p1    # Landroid/content/Context;
 
     const/4 v6, 0x0
 
@@ -1137,8 +1126,6 @@
 
 .method private static updateButtons(Landroid/widget/RemoteViews;Landroid/content/Context;)V
     .locals 6
-    .param p0    # Landroid/widget/RemoteViews;
-    .param p1    # Landroid/content/Context;
 
     const v5, 0x7f0b05d7
 
@@ -1345,7 +1332,6 @@
 
 .method public static updateWidget(Landroid/content/Context;)V
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Lcom/android/settings/widget/SmartSwitchWidgetProvider;->checkObserver(Landroid/content/Context;)V
 
@@ -1370,7 +1356,6 @@
 # virtual methods
 .method public onDisabled(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -1401,7 +1386,6 @@
 
 .method public onEnabled(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     invoke-static {p1}, Lcom/android/settings/widget/SmartSwitchWidgetProvider;->checkObserver(Landroid/content/Context;)V
 
@@ -1410,8 +1394,6 @@
 
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 10
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     const/4 v5, 0x1
 
@@ -1678,9 +1660,6 @@
 
 .method public onUpdate(Landroid/content/Context;Landroid/appwidget/AppWidgetManager;[I)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/appwidget/AppWidgetManager;
-    .param p3    # [I
 
     invoke-static {p1}, Lcom/android/settings/widget/SmartSwitchWidgetProvider;->buildUpdate(Landroid/content/Context;)Landroid/widget/RemoteViews;
 

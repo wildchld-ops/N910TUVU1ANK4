@@ -174,7 +174,6 @@
 
 .method private constructor <init>(Ljava/lang/String;ILjava/lang/String;)V
     .locals 0
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -192,7 +191,6 @@
 
 .method static fromAction(Ljava/lang/String;)Lcom/android/settings/guide/BtSettingsGuider$BluetoothBroadcastActions;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     sget-object v0, Lcom/android/settings/guide/BtSettingsGuider$BluetoothBroadcastActions;->sMap:Ljava/util/HashMap;
 

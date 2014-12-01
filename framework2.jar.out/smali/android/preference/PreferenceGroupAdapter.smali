@@ -57,7 +57,6 @@
 # direct methods
 .method public constructor <init>(Landroid/preference/PreferenceGroup;)V
     .locals 3
-    .param p1    # Landroid/preference/PreferenceGroup;
 
     const/4 v2, 0x0
 
@@ -112,7 +111,6 @@
 
 .method static synthetic access$100(Landroid/preference/PreferenceGroupAdapter;)V
     .locals 0
-    .param p0    # Landroid/preference/PreferenceGroupAdapter;
 
     invoke-direct {p0}, Landroid/preference/PreferenceGroupAdapter;->syncMyPreferences()V
 
@@ -121,7 +119,6 @@
 
 .method private addPreferenceClassName(Landroid/preference/Preference;)V
     .locals 3
-    .param p1    # Landroid/preference/Preference;
 
     const/4 v2, 0x0
 
@@ -151,8 +148,6 @@
 
 .method private createPreferenceLayout(Landroid/preference/Preference;Landroid/preference/PreferenceGroupAdapter$PreferenceLayout;)Landroid/preference/PreferenceGroupAdapter$PreferenceLayout;
     .locals 2
-    .param p1    # Landroid/preference/Preference;
-    .param p2    # Landroid/preference/PreferenceGroupAdapter$PreferenceLayout;
 
     if-eqz p2, :cond_0
 
@@ -198,7 +193,6 @@
 
 .method private flattenPreferenceGroup(Ljava/util/List;Landroid/preference/PreferenceGroup;)V
     .locals 5
-    .param p2    # Landroid/preference/PreferenceGroup;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -367,7 +361,6 @@
 
 .method public getItem(I)Landroid/preference/Preference;
     .locals 1
-    .param p1    # I
 
     if-ltz p1, :cond_0
 
@@ -397,7 +390,6 @@
 
 .method public bridge synthetic getItem(I)Ljava/lang/Object;
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/preference/PreferenceGroupAdapter;->getItem(I)Landroid/preference/Preference;
 
@@ -408,7 +400,6 @@
 
 .method public getItemId(I)J
     .locals 2
-    .param p1    # I
 
     if-ltz p1, :cond_0
 
@@ -438,7 +429,6 @@
 
 .method public getItemViewType(I)I
     .locals 5
-    .param p1    # I
 
     const/4 v2, -0x1
 
@@ -496,9 +486,6 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     invoke-virtual {p0, p1}, Landroid/preference/PreferenceGroupAdapter;->getItem(I)Landroid/preference/Preference;
 
@@ -575,7 +562,6 @@
 
 .method public isEnabled(I)Z
     .locals 1
-    .param p1    # I
 
     if-ltz p1, :cond_0
 
@@ -605,7 +591,6 @@
 
 .method public onPreferenceChange(Landroid/preference/Preference;)V
     .locals 0
-    .param p1    # Landroid/preference/Preference;
 
     invoke-virtual {p0}, Landroid/widget/BaseAdapter;->notifyDataSetChanged()V
 
@@ -614,7 +599,6 @@
 
 .method public onPreferenceHierarchyChange(Landroid/preference/Preference;)V
     .locals 2
-    .param p1    # Landroid/preference/Preference;
 
     iget-object v0, p0, Landroid/preference/PreferenceGroupAdapter;->mHandler:Landroid/os/Handler;
 

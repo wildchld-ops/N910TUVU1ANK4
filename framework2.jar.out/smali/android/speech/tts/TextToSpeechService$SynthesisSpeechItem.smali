@@ -33,11 +33,6 @@
 # direct methods
 .method public constructor <init>(Landroid/speech/tts/TextToSpeechService;Ljava/lang/Object;IILandroid/os/Bundle;Ljava/lang/String;)V
     .locals 3
-    .param p2    # Ljava/lang/Object;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Landroid/os/Bundle;
-    .param p6    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/speech/tts/TextToSpeechService$SynthesisSpeechItem;->this$0:Landroid/speech/tts/TextToSpeechService;
 
@@ -207,7 +202,6 @@
 
 .method private setRequestParams(Landroid/speech/tts/SynthesisRequest;)V
     .locals 3
-    .param p1    # Landroid/speech/tts/SynthesisRequest;
 
     invoke-virtual {p0}, Landroid/speech/tts/TextToSpeechService$SynthesisSpeechItem;->getLanguage()Ljava/lang/String;
 

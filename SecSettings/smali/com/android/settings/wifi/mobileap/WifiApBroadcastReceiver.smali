@@ -113,7 +113,6 @@
 
 .method private getRvfMode(Landroid/content/Context;)I
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -145,7 +144,6 @@
 
 .method private getTimeoutValueFromSheredPreference(Landroid/content/Context;)I
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     const-string v1, "SAMSUNG_HOTSPOT"
 
@@ -172,7 +170,6 @@
 
 .method private isProvisioningNeeded(Landroid/content/Context;)Z
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -222,8 +219,6 @@
 
 .method private sendWifiPowerModeAlarmIntent(Landroid/content/Context;I)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     new-instance v0, Landroid/content/Intent;
 
@@ -446,7 +441,6 @@
 
 .method private startWifiApSettings(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     sget-boolean v1, Lcom/android/settings/wifi/mobileap/WifiApBroadcastReceiver;->mIsForegroundWifiSettings:Z
 
@@ -474,7 +468,6 @@
 # virtual methods
 .method clearTimeoutNotification(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     iget-object v0, p0, Lcom/android/settings/wifi/mobileap/WifiApBroadcastReceiver;->mNotificationManager:Landroid/app/NotificationManager;
 
@@ -502,8 +495,6 @@
 
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 31
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     invoke-virtual/range {p2 .. p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 

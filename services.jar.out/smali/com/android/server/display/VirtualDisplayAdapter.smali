@@ -34,10 +34,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/display/DisplayManagerService$SyncRoot;Landroid/content/Context;Landroid/os/Handler;Lcom/android/server/display/DisplayAdapter$Listener;)V
     .locals 6
-    .param p1    # Lcom/android/server/display/DisplayManagerService$SyncRoot;
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/os/Handler;
-    .param p4    # Lcom/android/server/display/DisplayAdapter$Listener;
 
     const-string v5, "VirtualDisplayAdapter"
 
@@ -64,8 +60,6 @@
 
 .method static synthetic access$000(Lcom/android/server/display/VirtualDisplayAdapter;Landroid/os/IBinder;)V
     .locals 0
-    .param p0    # Lcom/android/server/display/VirtualDisplayAdapter;
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0, p1}, Lcom/android/server/display/VirtualDisplayAdapter;->handleBinderDiedLocked(Landroid/os/IBinder;)V
 
@@ -74,7 +68,6 @@
 
 .method private handleBinderDiedLocked(Landroid/os/IBinder;)V
     .locals 4
-    .param p1    # Landroid/os/IBinder;
 
     iget-object v1, p0, Lcom/android/server/display/VirtualDisplayAdapter;->mVirtualDisplayDevices:Landroid/util/ArrayMap;
 
@@ -124,15 +117,6 @@
 # virtual methods
 .method public createVirtualDisplayLocked(Landroid/os/IBinder;ILjava/lang/String;Ljava/lang/String;IIILandroid/view/Surface;I)Lcom/android/server/display/DisplayDevice;
     .locals 15
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # Landroid/view/Surface;
-    .param p9    # I
 
     and-int/lit8 v2, p9, 0x4
 
@@ -206,7 +190,6 @@
 
 .method public releaseVirtualDisplayLocked(Landroid/os/IBinder;)Lcom/android/server/display/DisplayDevice;
     .locals 2
-    .param p1    # Landroid/os/IBinder;
 
     iget-object v1, p0, Lcom/android/server/display/VirtualDisplayAdapter;->mVirtualDisplayDevices:Landroid/util/ArrayMap;
 

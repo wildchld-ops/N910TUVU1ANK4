@@ -25,7 +25,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/settings/PenDetachmentOption;Landroid/view/View;)V
     .locals 1
-    .param p2    # Landroid/view/View;
 
     iput-object p1, p0, Lcom/android/settings/PenDetachmentOption$PanelDragShadowBuilder;->this$0:Lcom/android/settings/PenDetachmentOption;
 
@@ -48,7 +47,6 @@
 # virtual methods
 .method public onDrawShadow(Landroid/graphics/Canvas;)V
     .locals 3
-    .param p1    # Landroid/graphics/Canvas;
 
     iput-object p1, p0, Lcom/android/settings/PenDetachmentOption$PanelDragShadowBuilder;->mCanvas:Landroid/graphics/Canvas;
 

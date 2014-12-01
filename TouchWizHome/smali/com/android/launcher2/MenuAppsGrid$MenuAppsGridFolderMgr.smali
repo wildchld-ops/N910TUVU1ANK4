@@ -30,8 +30,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/launcher2/MenuAppsGrid;Lcom/android/launcher2/FolderIconView;Z)V
     .locals 1
-    .param p2    # Lcom/android/launcher2/FolderIconView;
-    .param p3    # Z
 
     iput-object p1, p0, Lcom/android/launcher2/MenuAppsGrid$MenuAppsGridFolderMgr;->this$0:Lcom/android/launcher2/MenuAppsGrid;
 
@@ -419,7 +417,6 @@
 
 .method public setIconView(Lcom/android/launcher2/FolderIconView;)V
     .locals 2
-    .param p1    # Lcom/android/launcher2/FolderIconView;
 
     iget-object v0, p0, Lcom/android/launcher2/MenuAppsGrid$MenuAppsGridFolderMgr;->mIcon:Lcom/android/launcher2/FolderIconView;
 

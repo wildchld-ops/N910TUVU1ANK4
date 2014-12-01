@@ -29,8 +29,6 @@
 # direct methods
 .method constructor <init>(ILandroid/renderscript/RenderScript;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Landroid/renderscript/RenderScript;
 
     invoke-direct {p0, p1, p2}, Landroid/renderscript/BaseObj;-><init>(ILandroid/renderscript/RenderScript;)V
 
@@ -39,7 +37,6 @@
 
 .method public static CLAMP_LINEAR(Landroid/renderscript/RenderScript;)Landroid/renderscript/Sampler;
     .locals 2
-    .param p0    # Landroid/renderscript/RenderScript;
 
     iget-object v1, p0, Landroid/renderscript/RenderScript;->mSampler_CLAMP_LINEAR:Landroid/renderscript/Sampler;
 
@@ -79,7 +76,6 @@
 
 .method public static CLAMP_LINEAR_MIP_LINEAR(Landroid/renderscript/RenderScript;)Landroid/renderscript/Sampler;
     .locals 2
-    .param p0    # Landroid/renderscript/RenderScript;
 
     iget-object v1, p0, Landroid/renderscript/RenderScript;->mSampler_CLAMP_LINEAR_MIP_LINEAR:Landroid/renderscript/Sampler;
 
@@ -119,7 +115,6 @@
 
 .method public static CLAMP_NEAREST(Landroid/renderscript/RenderScript;)Landroid/renderscript/Sampler;
     .locals 2
-    .param p0    # Landroid/renderscript/RenderScript;
 
     iget-object v1, p0, Landroid/renderscript/RenderScript;->mSampler_CLAMP_NEAREST:Landroid/renderscript/Sampler;
 
@@ -159,7 +154,6 @@
 
 .method public static MIRRORED_REPEAT_LINEAR(Landroid/renderscript/RenderScript;)Landroid/renderscript/Sampler;
     .locals 2
-    .param p0    # Landroid/renderscript/RenderScript;
 
     iget-object v1, p0, Landroid/renderscript/RenderScript;->mSampler_MIRRORED_REPEAT_LINEAR:Landroid/renderscript/Sampler;
 
@@ -199,7 +193,6 @@
 
 .method public static MIRRORED_REPEAT_LINEAR_MIP_LINEAR(Landroid/renderscript/RenderScript;)Landroid/renderscript/Sampler;
     .locals 2
-    .param p0    # Landroid/renderscript/RenderScript;
 
     iget-object v1, p0, Landroid/renderscript/RenderScript;->mSampler_MIRRORED_REPEAT_LINEAR_MIP_LINEAR:Landroid/renderscript/Sampler;
 
@@ -239,7 +232,6 @@
 
 .method public static MIRRORED_REPEAT_NEAREST(Landroid/renderscript/RenderScript;)Landroid/renderscript/Sampler;
     .locals 2
-    .param p0    # Landroid/renderscript/RenderScript;
 
     iget-object v1, p0, Landroid/renderscript/RenderScript;->mSampler_MIRRORED_REPEAT_NEAREST:Landroid/renderscript/Sampler;
 
@@ -279,7 +271,6 @@
 
 .method public static WRAP_LINEAR(Landroid/renderscript/RenderScript;)Landroid/renderscript/Sampler;
     .locals 2
-    .param p0    # Landroid/renderscript/RenderScript;
 
     iget-object v1, p0, Landroid/renderscript/RenderScript;->mSampler_WRAP_LINEAR:Landroid/renderscript/Sampler;
 
@@ -319,7 +310,6 @@
 
 .method public static WRAP_LINEAR_MIP_LINEAR(Landroid/renderscript/RenderScript;)Landroid/renderscript/Sampler;
     .locals 2
-    .param p0    # Landroid/renderscript/RenderScript;
 
     iget-object v1, p0, Landroid/renderscript/RenderScript;->mSampler_WRAP_LINEAR_MIP_LINEAR:Landroid/renderscript/Sampler;
 
@@ -359,7 +349,6 @@
 
 .method public static WRAP_NEAREST(Landroid/renderscript/RenderScript;)Landroid/renderscript/Sampler;
     .locals 2
-    .param p0    # Landroid/renderscript/RenderScript;
 
     iget-object v1, p0, Landroid/renderscript/RenderScript;->mSampler_WRAP_NEAREST:Landroid/renderscript/Sampler;
 

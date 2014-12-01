@@ -25,7 +25,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 14
-    .param p1    # Landroid/content/Context;
 
     const v3, 0x7f02029c
 
@@ -121,7 +120,6 @@
 
 .method static synthetic access$002(I)I
     .locals 0
-    .param p0    # I
 
     sput p0, Lcom/android/systemui/statusbar/policy/quicksetting/SilentModeQuickSettingButton;->mDeviceSoundProfile:I
 
@@ -206,7 +204,6 @@
 
 .method public onClick(Z)V
     .locals 4
-    .param p1    # Z
 
     const/4 v3, 0x1
 

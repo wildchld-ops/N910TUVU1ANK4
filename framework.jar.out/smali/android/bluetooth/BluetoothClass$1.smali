@@ -40,7 +40,6 @@
 # virtual methods
 .method public createFromParcel(Landroid/os/Parcel;)Landroid/bluetooth/BluetoothClass;
     .locals 2
-    .param p1    # Landroid/os/Parcel;
 
     new-instance v0, Landroid/bluetooth/BluetoothClass;
 
@@ -55,7 +54,6 @@
 
 .method public bridge synthetic createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     invoke-virtual {p0, p1}, Landroid/bluetooth/BluetoothClass$1;->createFromParcel(Landroid/os/Parcel;)Landroid/bluetooth/BluetoothClass;
 
@@ -66,7 +64,6 @@
 
 .method public newArray(I)[Landroid/bluetooth/BluetoothClass;
     .locals 1
-    .param p1    # I
 
     new-array v0, p1, [Landroid/bluetooth/BluetoothClass;
 
@@ -75,7 +72,6 @@
 
 .method public bridge synthetic newArray(I)[Ljava/lang/Object;
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/bluetooth/BluetoothClass$1;->newArray(I)[Landroid/bluetooth/BluetoothClass;
 

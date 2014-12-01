@@ -131,7 +131,6 @@
 
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -142,7 +141,6 @@
 
 .method public static getInstance(Landroid/content/Context;)Lcom/samsung/android/cocktailbar/CocktailBarManager;
     .locals 6
-    .param p0    # Landroid/content/Context;
 
     sget-object v4, Lcom/samsung/android/cocktailbar/CocktailBarManager;->sManagerCache:Ljava/util/WeakHashMap;
 
@@ -218,10 +216,6 @@
 # virtual methods
 .method public bindRemoteViewsService(ILandroid/content/Intent;Landroid/os/IBinder;Landroid/os/UserHandle;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/content/Intent;
-    .param p3    # Landroid/os/IBinder;
-    .param p4    # Landroid/os/UserHandle;
 
     sget-object v1, Lcom/samsung/android/cocktailbar/CocktailBarManager;->sService:Lcom/samsung/android/cocktailbar/ICocktailBarService;
 
@@ -258,8 +252,6 @@
 
 .method public closeCocktail(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     sget-object v1, Lcom/samsung/android/cocktailbar/CocktailBarManager;->sService:Lcom/samsung/android/cocktailbar/ICocktailBarService;
 
@@ -428,7 +420,6 @@
 
 .method public getCocktail(I)Lcom/samsung/android/cocktailbar/Cocktail;
     .locals 3
-    .param p1    # I
 
     sget-object v1, Lcom/samsung/android/cocktailbar/CocktailBarManager;->sService:Lcom/samsung/android/cocktailbar/ICocktailBarService;
 
@@ -501,7 +492,6 @@
 
 .method public getCocktailId(Landroid/content/ComponentName;)I
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -543,7 +533,6 @@
 
 .method public getCocktailIds(Landroid/content/ComponentName;)[I
     .locals 4
-    .param p1    # Landroid/content/ComponentName;
 
     sget-object v2, Lcom/samsung/android/cocktailbar/CocktailBarManager;->sService:Lcom/samsung/android/cocktailbar/ICocktailBarService;
 
@@ -675,8 +664,6 @@
 
 .method public notifyCocktailViewDataChanged(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     sget-object v1, Lcom/samsung/android/cocktailbar/CocktailBarManager;->sService:Lcom/samsung/android/cocktailbar/ICocktailBarService;
 
@@ -709,8 +696,6 @@
 
 .method public notifyCocktailVisibiltyChanged(II)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
 
     sget-object v3, Lcom/samsung/android/cocktailbar/CocktailBarManager;->sService:Lcom/samsung/android/cocktailbar/ICocktailBarService;
 
@@ -760,7 +745,6 @@
 
 .method public notifyKeyguardState(Z)V
     .locals 3
-    .param p1    # Z
 
     sget-object v1, Lcom/samsung/android/cocktailbar/CocktailBarManager;->sService:Lcom/samsung/android/cocktailbar/ICocktailBarService;
 
@@ -793,7 +777,6 @@
 
 .method public onScreenTurnedOn(Lcom/samsung/android/cocktailbar/CocktailBarManager$ShowListener;)V
     .locals 3
-    .param p1    # Lcom/samsung/android/cocktailbar/CocktailBarManager$ShowListener;
 
     sget-object v1, Lcom/samsung/android/cocktailbar/CocktailBarManager;->sService:Lcom/samsung/android/cocktailbar/ICocktailBarService;
 
@@ -837,8 +820,6 @@
 
 .method public partiallyUpdateCocktail(ILandroid/widget/RemoteViews;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/widget/RemoteViews;
 
     sget-object v1, Lcom/samsung/android/cocktailbar/CocktailBarManager;->sService:Lcom/samsung/android/cocktailbar/ICocktailBarService;
 
@@ -903,7 +884,6 @@
 
 .method public requestToDisableCocktail(I)Z
     .locals 3
-    .param p1    # I
 
     sget-object v1, Lcom/samsung/android/cocktailbar/CocktailBarManager;->sService:Lcom/samsung/android/cocktailbar/ICocktailBarService;
 
@@ -940,7 +920,6 @@
 
 .method public requestToDisableCocktailByCategory(I)Z
     .locals 3
-    .param p1    # I
 
     sget-object v1, Lcom/samsung/android/cocktailbar/CocktailBarManager;->sService:Lcom/samsung/android/cocktailbar/ICocktailBarService;
 
@@ -977,7 +956,6 @@
 
 .method public requestToDisableCocktailByPrivateMode(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     sget-object v1, Lcom/samsung/android/cocktailbar/CocktailBarManager;->sService:Lcom/samsung/android/cocktailbar/ICocktailBarService;
 
@@ -1014,7 +992,6 @@
 
 .method public requestToUpdateCocktail(I)Z
     .locals 3
-    .param p1    # I
 
     sget-object v1, Lcom/samsung/android/cocktailbar/CocktailBarManager;->sService:Lcom/samsung/android/cocktailbar/ICocktailBarService;
 
@@ -1051,7 +1028,6 @@
 
 .method public requestToUpdateCocktailByCategory(I)Z
     .locals 3
-    .param p1    # I
 
     sget-object v1, Lcom/samsung/android/cocktailbar/CocktailBarManager;->sService:Lcom/samsung/android/cocktailbar/ICocktailBarService;
 
@@ -1088,7 +1064,6 @@
 
 .method public requestToUpdateCocktailByPrivateMode(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     sget-object v1, Lcom/samsung/android/cocktailbar/CocktailBarManager;->sService:Lcom/samsung/android/cocktailbar/ICocktailBarService;
 
@@ -1125,8 +1100,6 @@
 
 .method public sendDragEvent(ILandroid/view/DragEvent;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/view/DragEvent;
 
     sget-object v3, Lcom/samsung/android/cocktailbar/CocktailBarManager;->sService:Lcom/samsung/android/cocktailbar/ICocktailBarService;
 
@@ -1176,7 +1149,6 @@
 
 .method public sendExtraDataToCocktailBar(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     sget-object v1, Lcom/samsung/android/cocktailbar/CocktailBarManager;->sService:Lcom/samsung/android/cocktailbar/ICocktailBarService;
 
@@ -1209,8 +1181,6 @@
 
 .method public setCocktailBarVisibility(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     sget-object v1, Lcom/samsung/android/cocktailbar/CocktailBarManager;->sService:Lcom/samsung/android/cocktailbar/ICocktailBarService;
 
@@ -1243,7 +1213,6 @@
 
 .method public setDisableTickerView(I)V
     .locals 3
-    .param p1    # I
 
     sget-object v1, Lcom/samsung/android/cocktailbar/CocktailBarManager;->sService:Lcom/samsung/android/cocktailbar/ICocktailBarService;
 
@@ -1276,7 +1245,6 @@
 
 .method public setTransparentCocktail(Z)V
     .locals 3
-    .param p1    # Z
 
     sget-object v1, Lcom/samsung/android/cocktailbar/CocktailBarManager;->sService:Lcom/samsung/android/cocktailbar/ICocktailBarService;
 
@@ -1309,7 +1277,6 @@
 
 .method public showCocktail(I)V
     .locals 3
-    .param p1    # I
 
     sget-object v1, Lcom/samsung/android/cocktailbar/CocktailBarManager;->sService:Lcom/samsung/android/cocktailbar/ICocktailBarService;
 
@@ -1374,9 +1341,6 @@
 
 .method public unbindRemoteViewsService(ILandroid/content/Intent;Landroid/os/UserHandle;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/content/Intent;
-    .param p3    # Landroid/os/UserHandle;
 
     sget-object v1, Lcom/samsung/android/cocktailbar/CocktailBarManager;->sService:Lcom/samsung/android/cocktailbar/ICocktailBarService;
 
@@ -1413,12 +1377,6 @@
 
 .method public updateCocktail(IIIILandroid/widget/RemoteViews;Landroid/widget/RemoteViews;)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Landroid/widget/RemoteViews;
-    .param p6    # Landroid/widget/RemoteViews;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -1491,13 +1449,6 @@
 
 .method public updateCocktail(IIIILandroid/widget/RemoteViews;Landroid/widget/RemoteViews;Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Landroid/widget/RemoteViews;
-    .param p6    # Landroid/widget/RemoteViews;
-    .param p7    # Landroid/os/Bundle;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -1574,11 +1525,6 @@
 
 .method public updateCocktail(IIILandroid/widget/RemoteViews;Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/widget/RemoteViews;
-    .param p5    # Landroid/os/Bundle;
 
     sget-object v3, Lcom/samsung/android/cocktailbar/CocktailBarManager;->sService:Lcom/samsung/android/cocktailbar/ICocktailBarService;
 
@@ -1653,7 +1599,6 @@
 
 .method public updateLongpressGesture(Z)V
     .locals 3
-    .param p1    # Z
 
     sget-object v1, Lcom/samsung/android/cocktailbar/CocktailBarManager;->sService:Lcom/samsung/android/cocktailbar/ICocktailBarService;
 
@@ -1686,8 +1631,6 @@
 
 .method public updateWakeupGesture(IZ)V
     .locals 3
-    .param p1    # I
-    .param p2    # Z
 
     sget-object v1, Lcom/samsung/android/cocktailbar/CocktailBarManager;->sService:Lcom/samsung/android/cocktailbar/ICocktailBarService;
 
@@ -1720,7 +1663,6 @@
 
 .method public wakeupCocktailBar(Z)V
     .locals 3
-    .param p1    # Z
 
     sget-object v1, Lcom/samsung/android/cocktailbar/CocktailBarManager;->sService:Lcom/samsung/android/cocktailbar/ICocktailBarService;
 

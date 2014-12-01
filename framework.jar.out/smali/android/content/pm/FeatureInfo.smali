@@ -56,7 +56,6 @@
 
 .method public constructor <init>(Landroid/content/pm/FeatureInfo;)V
     .locals 1
-    .param p1    # Landroid/content/pm/FeatureInfo;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -77,7 +76,6 @@
 
 .method private constructor <init>(Landroid/os/Parcel;)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -104,8 +102,6 @@
 
 .method synthetic constructor <init>(Landroid/os/Parcel;Landroid/content/pm/FeatureInfo$1;)V
     .locals 0
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # Landroid/content/pm/FeatureInfo$1;
 
     invoke-direct {p0, p1}, Landroid/content/pm/FeatureInfo;-><init>(Landroid/os/Parcel;)V
 
@@ -310,8 +306,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v0, p0, Landroid/content/pm/FeatureInfo;->name:Ljava/lang/String;
 

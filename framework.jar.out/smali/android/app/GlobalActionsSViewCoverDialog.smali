@@ -48,7 +48,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Landroid/app/Dialog;-><init>(Landroid/content/Context;)V
 
@@ -61,8 +60,6 @@
 
 .method public constructor <init>(Landroid/content/Context;I)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Landroid/app/Dialog;-><init>(Landroid/content/Context;I)V
 
@@ -83,7 +80,6 @@
 
 .method static synthetic access$002(Landroid/widget/ImageView;)Landroid/widget/ImageView;
     .locals 0
-    .param p0    # Landroid/widget/ImageView;
 
     sput-object p0, Landroid/app/GlobalActionsSViewCoverDialog;->mBackgroundView:Landroid/widget/ImageView;
 
@@ -100,7 +96,6 @@
 
 .method static synthetic access$302(Landroid/widget/TextView;)Landroid/widget/TextView;
     .locals 0
-    .param p0    # Landroid/widget/TextView;
 
     sput-object p0, Landroid/app/GlobalActionsSViewCoverDialog;->messageView:Landroid/widget/TextView;
 
@@ -109,7 +104,6 @@
 
 .method static synthetic access$402(Landroid/widget/ScrollView;)Landroid/widget/ScrollView;
     .locals 0
-    .param p0    # Landroid/widget/ScrollView;
 
     sput-object p0, Landroid/app/GlobalActionsSViewCoverDialog;->messageViewContainer:Landroid/widget/ScrollView;
 
@@ -134,7 +128,6 @@
 
 .method static synthetic access$602(I)I
     .locals 0
-    .param p0    # I
 
     sput p0, Landroid/app/GlobalActionsSViewCoverDialog;->mCoverColor:I
 
@@ -145,7 +138,6 @@
 # virtual methods
 .method public onWindowFocusChanged(Z)V
     .locals 2
-    .param p1    # Z
 
     invoke-super {p0}, Landroid/app/Dialog;->onAttachedToWindow()V
 

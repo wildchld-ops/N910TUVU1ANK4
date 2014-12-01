@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Lcom/android/settings/ASensorSettings;Lcom/android/settings/ASensorSettings$1;)V
     .locals 0
-    .param p1    # Lcom/android/settings/ASensorSettings;
-    .param p2    # Lcom/android/settings/ASensorSettings$1;
 
     invoke-direct {p0, p1}, Lcom/android/settings/ASensorSettings$handlersensor;-><init>(Lcom/android/settings/ASensorSettings;)V
 
@@ -44,8 +42,6 @@
 
 .method private changeAcceleroMeter(Landroid/hardware/Sensor;[F)V
     .locals 8
-    .param p1    # Landroid/hardware/Sensor;
-    .param p2    # [F
 
     const/high16 v7, 0x40000000
 
@@ -211,8 +207,6 @@
 # virtual methods
 .method public onAccuracyChanged(Landroid/hardware/Sensor;I)V
     .locals 2
-    .param p1    # Landroid/hardware/Sensor;
-    .param p2    # I
 
     invoke-virtual {p1}, Landroid/hardware/Sensor;->getType()I
 
@@ -228,7 +222,6 @@
 
 .method public onSensorChanged(Landroid/hardware/SensorEvent;)V
     .locals 2
-    .param p1    # Landroid/hardware/SensorEvent;
 
     iget-object v0, p1, Landroid/hardware/SensorEvent;->sensor:Landroid/hardware/Sensor;
 

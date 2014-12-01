@@ -31,11 +31,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/settings/autohaptic/AutoHapticSettings;Ljava/lang/String;Ljava/lang/String;Landroid/graphics/drawable/Drawable;ZLandroid/content/pm/PackageInfo;)V
     .locals 0
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Landroid/graphics/drawable/Drawable;
-    .param p5    # Z
-    .param p6    # Landroid/content/pm/PackageInfo;
 
     iput-object p1, p0, Lcom/android/settings/autohaptic/AutoHapticSettings$IncludedApps;->this$0:Lcom/android/settings/autohaptic/AutoHapticSettings;
 

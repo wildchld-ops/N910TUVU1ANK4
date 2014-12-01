@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Ljavax/microedition/khronos/egl/EGLContext;)V
     .locals 1
-    .param p1    # Ljavax/microedition/khronos/egl/EGLContext;
 
     invoke-direct {p0, p1}, Landroid/opengl/ManagedEGLContext;-><init>(Ljavax/microedition/khronos/egl/EGLContext;)V
 
@@ -38,7 +37,6 @@
 # virtual methods
 .method public onTerminate(Ljavax/microedition/khronos/egl/EGLContext;)V
     .locals 6
-    .param p1    # Ljavax/microedition/khronos/egl/EGLContext;
 
     iget-object v0, p0, Landroid/view/HardwareRenderer$Gl20Renderer$Gl20RendererEglContext;->mHandler:Landroid/os/Handler;
 

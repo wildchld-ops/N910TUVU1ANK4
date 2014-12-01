@@ -1173,9 +1173,6 @@
 
 .method scrollToVisible(III)V
     .locals 17
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     move-object/from16 v0, p0
 
@@ -1399,7 +1396,6 @@
 
 .method start(I)V
     .locals 9
-    .param p1    # I
 
     const/16 v8, 0xc8
 
@@ -1516,8 +1512,6 @@
 
 .method start(II)V
     .locals 11
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0}, Landroid/widget/AbsHorizontalListView$PositionScroller;->stop()V
 
@@ -1689,8 +1683,6 @@
 
 .method startWithOffset(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     const/16 v0, 0xc8
 
@@ -1701,9 +1693,6 @@
 
 .method startWithOffset(III)V
     .locals 10
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v9, -0x1
 

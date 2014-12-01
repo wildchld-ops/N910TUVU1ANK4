@@ -42,7 +42,6 @@
 
 .method static synthetic access$000(Lcom/android/internal/app/ResolverGuideActivity;)Landroid/content/Intent;
     .locals 1
-    .param p0    # Lcom/android/internal/app/ResolverGuideActivity;
 
     invoke-direct {p0}, Lcom/android/internal/app/ResolverGuideActivity;->makeMyIntent()Landroid/content/Intent;
 
@@ -145,7 +144,6 @@
 # virtual methods
 .method public onButtonClick(Landroid/view/View;)V
     .locals 5
-    .param p1    # Landroid/view/View;
 
     sget-boolean v2, Lcom/android/internal/app/ResolverGuideActivity;->DEBUG:Z
 
@@ -194,7 +192,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     const v1, 0x1030349
 

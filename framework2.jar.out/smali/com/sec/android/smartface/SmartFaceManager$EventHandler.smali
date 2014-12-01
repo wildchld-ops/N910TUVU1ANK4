@@ -23,8 +23,6 @@
 # direct methods
 .method public constructor <init>(Lcom/sec/android/smartface/SmartFaceManager;Lcom/sec/android/smartface/SmartFaceManager;Landroid/os/Looper;)V
     .locals 1
-    .param p2    # Lcom/sec/android/smartface/SmartFaceManager;
-    .param p3    # Landroid/os/Looper;
 
     iput-object p1, p0, Lcom/sec/android/smartface/SmartFaceManager$EventHandler;->this$0:Lcom/sec/android/smartface/SmartFaceManager;
 
@@ -43,7 +41,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 3
-    .param p1    # Landroid/os/Message;
 
     iget-object v0, p0, Lcom/sec/android/smartface/SmartFaceManager$EventHandler;->this$0:Lcom/sec/android/smartface/SmartFaceManager;
 

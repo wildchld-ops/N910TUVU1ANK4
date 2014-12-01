@@ -83,7 +83,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x1
 
@@ -144,7 +143,6 @@
 
 .method private checkIncludingChineseChar(Ljava/lang/String;)Z
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Lcom/android/mms/encoding/HanziToPinyin;->getInstance()Lcom/android/mms/encoding/HanziToPinyin;
 
@@ -472,9 +470,6 @@
 
 .method private findSearchKeywordPosition(Ljava/util/regex/Pattern;Ljava/lang/String;[I)Z
     .locals 5
-    .param p1    # Ljava/util/regex/Pattern;
-    .param p2    # Ljava/lang/String;
-    .param p3    # [I
 
     const/4 v2, 0x1
 
@@ -521,8 +516,6 @@
 
 .method private findSearchKeywordPositionPinyinFullString(Ljava/lang/String;[I)Z
     .locals 11
-    .param p1    # Ljava/lang/String;
-    .param p2    # [I
 
     const-string v9, "ChineseHighlightHelper"
 
@@ -663,9 +656,6 @@
 
 .method private findSearchKeywordPositionPinyinFullStringMulti(Ljava/lang/String;[I[Ljava/lang/String;)Z
     .locals 11
-    .param p1    # Ljava/lang/String;
-    .param p2    # [I
-    .param p3    # [Ljava/lang/String;
 
     const-string v9, "ChineseHighlightHelper"
 
@@ -794,11 +784,6 @@
 
 .method private replaceChnStringWithIndex(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)Ljava/lang/String;
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
-    .param p5    # Ljava/lang/String;
 
     const-string v3, ""
 
@@ -905,9 +890,6 @@
 
 .method private searchAndHighlight(Ljava/util/regex/Pattern;Ljava/lang/String;[I)Z
     .locals 6
-    .param p1    # Ljava/util/regex/Pattern;
-    .param p2    # Ljava/lang/String;
-    .param p3    # [I
 
     const/4 v0, 0x0
 
@@ -955,10 +937,6 @@
 # virtual methods
 .method public findHighlight(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/widget/TextView;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Landroid/widget/TextView;
 
     iput-object p1, p0, Lcom/android/mms/encoding/ChineseHighlightHelper;->mPatternString:Ljava/lang/String;
 
@@ -1016,7 +994,6 @@
 
 .method public getMultiPinyinStringFromChineseString(Ljava/lang/String;)V
     .locals 35
-    .param p1    # Ljava/lang/String;
 
     const-string v2, "ChineseHighlightHelper"
 
@@ -1633,7 +1610,6 @@
 
 .method public getPinyinStringFromChineseString(Ljava/lang/String;)V
     .locals 14
-    .param p1    # Ljava/lang/String;
 
     const-string v11, "ChineseHighlightHelper"
 

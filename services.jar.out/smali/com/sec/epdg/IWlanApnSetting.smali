@@ -109,35 +109,6 @@
 
 .method public static declared-synchronized getIWlanApnSettingInstance(Ljava/lang/String;Lcom/sec/epdg/IWlanEnum$IPSecUserAuthState;Lcom/sec/epdg/IWlanEnum$PfsState;Lcom/sec/epdg/IWlanEnum$IPSecIpType;Lcom/sec/epdg/IWlanEnum$IdentityType;Ljava/lang/String;Lcom/sec/epdg/IWlanEnum$IdentityType;Ljava/lang/String;Ljava/lang/String;Lcom/sec/epdg/IWlanEnum$IPSecAuthType;Lcom/sec/epdg/IWlanEnum$AdapterConf;Lcom/sec/epdg/IWlanEnum$TunnelModeType;Lcom/sec/epdg/IWlanEnum$IpSecEncryptionType;Lcom/sec/epdg/IWlanEnum$IpSecIntegrityType;Lcom/sec/epdg/IWlanEnum$IpSecDHGroup;Lcom/sec/epdg/IWlanEnum$IpSecLifeTimeType;ILcom/sec/epdg/IWlanEnum$Ikeversion;Lcom/sec/epdg/IWlanEnum$IkeEncryption;Lcom/sec/epdg/IWlanEnum$IkeIntegrity;Lcom/sec/epdg/IWlanEnum$IkeDhGroup;IIIILcom/sec/epdg/IWlanEnum$IkeEapType;ILcom/sec/epdg/IWlanEnum$PcscfConf;I)Lcom/sec/epdg/IWlanApnSetting;
     .locals 32
-    .param p0    # Ljava/lang/String;
-    .param p1    # Lcom/sec/epdg/IWlanEnum$IPSecUserAuthState;
-    .param p2    # Lcom/sec/epdg/IWlanEnum$PfsState;
-    .param p3    # Lcom/sec/epdg/IWlanEnum$IPSecIpType;
-    .param p4    # Lcom/sec/epdg/IWlanEnum$IdentityType;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Lcom/sec/epdg/IWlanEnum$IdentityType;
-    .param p7    # Ljava/lang/String;
-    .param p8    # Ljava/lang/String;
-    .param p9    # Lcom/sec/epdg/IWlanEnum$IPSecAuthType;
-    .param p10    # Lcom/sec/epdg/IWlanEnum$AdapterConf;
-    .param p11    # Lcom/sec/epdg/IWlanEnum$TunnelModeType;
-    .param p12    # Lcom/sec/epdg/IWlanEnum$IpSecEncryptionType;
-    .param p13    # Lcom/sec/epdg/IWlanEnum$IpSecIntegrityType;
-    .param p14    # Lcom/sec/epdg/IWlanEnum$IpSecDHGroup;
-    .param p15    # Lcom/sec/epdg/IWlanEnum$IpSecLifeTimeType;
-    .param p16    # I
-    .param p17    # Lcom/sec/epdg/IWlanEnum$Ikeversion;
-    .param p18    # Lcom/sec/epdg/IWlanEnum$IkeEncryption;
-    .param p19    # Lcom/sec/epdg/IWlanEnum$IkeIntegrity;
-    .param p20    # Lcom/sec/epdg/IWlanEnum$IkeDhGroup;
-    .param p21    # I
-    .param p22    # I
-    .param p23    # I
-    .param p24    # I
-    .param p25    # Lcom/sec/epdg/IWlanEnum$IkeEapType;
-    .param p26    # I
-    .param p27    # Lcom/sec/epdg/IWlanEnum$PcscfConf;
-    .param p28    # I
 
     const-class v31, Lcom/sec/epdg/IWlanApnSetting;
 
@@ -243,35 +214,6 @@
 
 .method private updateVariableValues(Ljava/lang/String;Lcom/sec/epdg/IWlanEnum$IPSecUserAuthState;Lcom/sec/epdg/IWlanEnum$PfsState;Lcom/sec/epdg/IWlanEnum$IPSecIpType;Lcom/sec/epdg/IWlanEnum$IdentityType;Ljava/lang/String;Lcom/sec/epdg/IWlanEnum$IdentityType;Ljava/lang/String;Ljava/lang/String;Lcom/sec/epdg/IWlanEnum$IPSecAuthType;Lcom/sec/epdg/IWlanEnum$AdapterConf;Lcom/sec/epdg/IWlanEnum$TunnelModeType;Lcom/sec/epdg/IWlanEnum$IpSecEncryptionType;Lcom/sec/epdg/IWlanEnum$IpSecIntegrityType;Lcom/sec/epdg/IWlanEnum$IpSecDHGroup;Lcom/sec/epdg/IWlanEnum$IpSecLifeTimeType;ILcom/sec/epdg/IWlanEnum$Ikeversion;Lcom/sec/epdg/IWlanEnum$IkeEncryption;Lcom/sec/epdg/IWlanEnum$IkeIntegrity;Lcom/sec/epdg/IWlanEnum$IkeDhGroup;IIIILcom/sec/epdg/IWlanEnum$IkeEapType;ILcom/sec/epdg/IWlanEnum$PcscfConf;I)V
     .locals 12
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/sec/epdg/IWlanEnum$IPSecUserAuthState;
-    .param p3    # Lcom/sec/epdg/IWlanEnum$PfsState;
-    .param p4    # Lcom/sec/epdg/IWlanEnum$IPSecIpType;
-    .param p5    # Lcom/sec/epdg/IWlanEnum$IdentityType;
-    .param p6    # Ljava/lang/String;
-    .param p7    # Lcom/sec/epdg/IWlanEnum$IdentityType;
-    .param p8    # Ljava/lang/String;
-    .param p9    # Ljava/lang/String;
-    .param p10    # Lcom/sec/epdg/IWlanEnum$IPSecAuthType;
-    .param p11    # Lcom/sec/epdg/IWlanEnum$AdapterConf;
-    .param p12    # Lcom/sec/epdg/IWlanEnum$TunnelModeType;
-    .param p13    # Lcom/sec/epdg/IWlanEnum$IpSecEncryptionType;
-    .param p14    # Lcom/sec/epdg/IWlanEnum$IpSecIntegrityType;
-    .param p15    # Lcom/sec/epdg/IWlanEnum$IpSecDHGroup;
-    .param p16    # Lcom/sec/epdg/IWlanEnum$IpSecLifeTimeType;
-    .param p17    # I
-    .param p18    # Lcom/sec/epdg/IWlanEnum$Ikeversion;
-    .param p19    # Lcom/sec/epdg/IWlanEnum$IkeEncryption;
-    .param p20    # Lcom/sec/epdg/IWlanEnum$IkeIntegrity;
-    .param p21    # Lcom/sec/epdg/IWlanEnum$IkeDhGroup;
-    .param p22    # I
-    .param p23    # I
-    .param p24    # I
-    .param p25    # I
-    .param p26    # Lcom/sec/epdg/IWlanEnum$IkeEapType;
-    .param p27    # I
-    .param p28    # Lcom/sec/epdg/IWlanEnum$PcscfConf;
-    .param p29    # I
 
     iput-object p1, p0, Lcom/sec/epdg/IWlanApnSetting;->IWlanSettingName:Ljava/lang/String;
 
@@ -509,7 +451,6 @@
 
 .method public getmIpsecOwnUri(Landroid/content/Context;)Ljava/lang/String;
     .locals 6
-    .param p1    # Landroid/content/Context;
 
     iget-object v2, p0, Lcom/sec/epdg/IWlanApnSetting;->mIpsecOwnUri:Ljava/lang/String;
 
@@ -582,7 +523,6 @@
 
 .method public setmIpSecIpType(Lcom/sec/epdg/IWlanEnum$IPSecIpType;)V
     .locals 0
-    .param p1    # Lcom/sec/epdg/IWlanEnum$IPSecIpType;
 
     iput-object p1, p0, Lcom/sec/epdg/IWlanApnSetting;->mIpSecIpType:Lcom/sec/epdg/IWlanEnum$IPSecIpType;
 

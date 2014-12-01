@@ -110,7 +110,6 @@
 
 .method static synthetic access$100(Landroid/app/Instrumentation;)Z
     .locals 1
-    .param p0    # Landroid/app/Instrumentation;
 
     iget-boolean v0, p0, Landroid/app/Instrumentation;->mAutomaticPerformanceSnapshots:Z
 
@@ -119,7 +118,6 @@
 
 .method static synthetic access$200(Landroid/app/Instrumentation;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Landroid/app/Instrumentation;
 
     iget-object v0, p0, Landroid/app/Instrumentation;->mSync:Ljava/lang/Object;
 
@@ -128,7 +126,6 @@
 
 .method static synthetic access$300(Landroid/app/Instrumentation;)Ljava/util/List;
     .locals 1
-    .param p0    # Landroid/app/Instrumentation;
 
     iget-object v0, p0, Landroid/app/Instrumentation;->mWaitingActivities:Ljava/util/List;
 
@@ -137,9 +134,6 @@
 
 .method private addValue(Ljava/lang/String;ILandroid/os/Bundle;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Landroid/os/Bundle;
 
     invoke-virtual {p3, p1}, Landroid/os/Bundle;->containsKey(Ljava/lang/String;)Z
 
@@ -181,8 +175,6 @@
 
 .method static checkStartActivityResult(ILjava/lang/Object;)V
     .locals 6
-    .param p0    # I
-    .param p1    # Ljava/lang/Object;
 
     if-ltz p0, :cond_1
 
@@ -431,7 +423,6 @@
 
 .method public static newApplication(Ljava/lang/Class;Landroid/content/Context;)Landroid/app/Application;
     .locals 1
-    .param p1    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -491,9 +482,6 @@
 # virtual methods
 .method public addMonitor(Landroid/content/IntentFilter;Landroid/app/Instrumentation$ActivityResult;Z)Landroid/app/Instrumentation$ActivityMonitor;
     .locals 1
-    .param p1    # Landroid/content/IntentFilter;
-    .param p2    # Landroid/app/Instrumentation$ActivityResult;
-    .param p3    # Z
 
     new-instance v0, Landroid/app/Instrumentation$ActivityMonitor;
 
@@ -506,9 +494,6 @@
 
 .method public addMonitor(Ljava/lang/String;Landroid/app/Instrumentation$ActivityResult;Z)Landroid/app/Instrumentation$ActivityMonitor;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/app/Instrumentation$ActivityResult;
-    .param p3    # Z
 
     new-instance v0, Landroid/app/Instrumentation$ActivityMonitor;
 
@@ -521,7 +506,6 @@
 
 .method public addMonitor(Landroid/app/Instrumentation$ActivityMonitor;)V
     .locals 2
-    .param p1    # Landroid/app/Instrumentation$ActivityMonitor;
 
     iget-object v1, p0, Landroid/app/Instrumentation;->mSync:Ljava/lang/Object;
 
@@ -559,8 +543,6 @@
 
 .method public callActivityOnCreate(Landroid/app/Activity;Landroid/os/Bundle;)V
     .locals 8
-    .param p1    # Landroid/app/Activity;
-    .param p2    # Landroid/os/Bundle;
 
     iget-object v5, p0, Landroid/app/Instrumentation;->mWaitingActivities:Ljava/util/List;
 
@@ -694,7 +676,6 @@
 
 .method public callActivityOnDestroy(Landroid/app/Activity;)V
     .locals 5
-    .param p1    # Landroid/app/Activity;
 
     invoke-virtual {p1}, Landroid/app/Activity;->performDestroy()V
 
@@ -754,8 +735,6 @@
 
 .method public callActivityOnNewIntent(Landroid/app/Activity;Landroid/content/Intent;)V
     .locals 0
-    .param p1    # Landroid/app/Activity;
-    .param p2    # Landroid/content/Intent;
 
     invoke-virtual {p1, p2}, Landroid/app/Activity;->onNewIntent(Landroid/content/Intent;)V
 
@@ -764,7 +743,6 @@
 
 .method public callActivityOnPause(Landroid/app/Activity;)V
     .locals 0
-    .param p1    # Landroid/app/Activity;
 
     invoke-virtual {p1}, Landroid/app/Activity;->performPause()V
 
@@ -773,8 +751,6 @@
 
 .method public callActivityOnPostCreate(Landroid/app/Activity;Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/app/Activity;
-    .param p2    # Landroid/os/Bundle;
 
     invoke-virtual {p1, p2}, Landroid/app/Activity;->onPostCreate(Landroid/os/Bundle;)V
 
@@ -783,7 +759,6 @@
 
 .method public callActivityOnRestart(Landroid/app/Activity;)V
     .locals 0
-    .param p1    # Landroid/app/Activity;
 
     invoke-virtual {p1}, Landroid/app/Activity;->onRestart()V
 
@@ -792,8 +767,6 @@
 
 .method public callActivityOnRestoreInstanceState(Landroid/app/Activity;Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/app/Activity;
-    .param p2    # Landroid/os/Bundle;
 
     invoke-virtual {p1, p2}, Landroid/app/Activity;->performRestoreInstanceState(Landroid/os/Bundle;)V
 
@@ -802,7 +775,6 @@
 
 .method public callActivityOnResume(Landroid/app/Activity;)V
     .locals 5
-    .param p1    # Landroid/app/Activity;
 
     const/4 v3, 0x1
 
@@ -866,8 +838,6 @@
 
 .method public callActivityOnSaveInstanceState(Landroid/app/Activity;Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/app/Activity;
-    .param p2    # Landroid/os/Bundle;
 
     invoke-virtual {p1, p2}, Landroid/app/Activity;->performSaveInstanceState(Landroid/os/Bundle;)V
 
@@ -876,7 +846,6 @@
 
 .method public callActivityOnStart(Landroid/app/Activity;)V
     .locals 0
-    .param p1    # Landroid/app/Activity;
 
     invoke-virtual {p1}, Landroid/app/Activity;->onStart()V
 
@@ -885,7 +854,6 @@
 
 .method public callActivityOnStop(Landroid/app/Activity;)V
     .locals 0
-    .param p1    # Landroid/app/Activity;
 
     invoke-virtual {p1}, Landroid/app/Activity;->onStop()V
 
@@ -894,7 +862,6 @@
 
 .method public callActivityOnUserLeaving(Landroid/app/Activity;)V
     .locals 0
-    .param p1    # Landroid/app/Activity;
 
     invoke-virtual {p1}, Landroid/app/Activity;->performUserLeaving()V
 
@@ -903,7 +870,6 @@
 
 .method public callApplicationOnCreate(Landroid/app/Application;)V
     .locals 0
-    .param p1    # Landroid/app/Application;
 
     invoke-virtual {p1}, Landroid/app/Application;->onCreate()V
 
@@ -912,8 +878,6 @@
 
 .method public checkMonitorHit(Landroid/app/Instrumentation$ActivityMonitor;I)Z
     .locals 2
-    .param p1    # Landroid/app/Instrumentation$ActivityMonitor;
-    .param p2    # I
 
     invoke-virtual {p0}, Landroid/app/Instrumentation;->waitForIdleSync()V
 
@@ -979,12 +943,6 @@
 
 .method public execStartActivities(Landroid/content/Context;Landroid/os/IBinder;Landroid/os/IBinder;Landroid/app/Activity;[Landroid/content/Intent;Landroid/os/Bundle;)V
     .locals 8
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/IBinder;
-    .param p3    # Landroid/os/IBinder;
-    .param p4    # Landroid/app/Activity;
-    .param p5    # [Landroid/content/Intent;
-    .param p6    # Landroid/os/Bundle;
 
     invoke-static {}, Landroid/os/UserHandle;->myUserId()I
 
@@ -1011,13 +969,6 @@
 
 .method public execStartActivitiesAsUser(Landroid/content/Context;Landroid/os/IBinder;Landroid/os/IBinder;Landroid/app/Activity;[Landroid/content/Intent;Landroid/os/Bundle;I)V
     .locals 13
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/IBinder;
-    .param p3    # Landroid/os/IBinder;
-    .param p4    # Landroid/app/Activity;
-    .param p5    # [Landroid/content/Intent;
-    .param p6    # Landroid/os/Bundle;
-    .param p7    # I
 
     move-object v2, p2
 
@@ -1183,13 +1134,6 @@
 
 .method public execStartActivity(Landroid/content/Context;Landroid/os/IBinder;Landroid/os/IBinder;Landroid/app/Activity;Landroid/content/Intent;ILandroid/os/Bundle;)Landroid/app/Instrumentation$ActivityResult;
     .locals 18
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/IBinder;
-    .param p3    # Landroid/os/IBinder;
-    .param p4    # Landroid/app/Activity;
-    .param p5    # Landroid/content/Intent;
-    .param p6    # I
-    .param p7    # Landroid/os/Bundle;
 
     move-object/from16 v3, p2
 
@@ -1371,14 +1315,6 @@
 
 .method public execStartActivity(Landroid/content/Context;Landroid/os/IBinder;Landroid/os/IBinder;Landroid/app/Activity;Landroid/content/Intent;ILandroid/os/Bundle;Landroid/os/UserHandle;)Landroid/app/Instrumentation$ActivityResult;
     .locals 20
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/IBinder;
-    .param p3    # Landroid/os/IBinder;
-    .param p4    # Landroid/app/Activity;
-    .param p5    # Landroid/content/Intent;
-    .param p6    # I
-    .param p7    # Landroid/os/Bundle;
-    .param p8    # Landroid/os/UserHandle;
 
     move-object/from16 v4, p2
 
@@ -1572,13 +1508,6 @@
 
 .method public execStartActivity(Landroid/content/Context;Landroid/os/IBinder;Landroid/os/IBinder;Landroid/app/Fragment;Landroid/content/Intent;ILandroid/os/Bundle;)Landroid/app/Instrumentation$ActivityResult;
     .locals 18
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/IBinder;
-    .param p3    # Landroid/os/IBinder;
-    .param p4    # Landroid/app/Fragment;
-    .param p5    # Landroid/content/Intent;
-    .param p6    # I
-    .param p7    # Landroid/os/Bundle;
 
     move-object/from16 v3, p2
 
@@ -1760,8 +1689,6 @@
 
 .method public finish(ILandroid/os/Bundle;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     iget-boolean v0, p0, Landroid/app/Instrumentation;->mAutomaticPerformanceSnapshots:Z
 
@@ -1958,12 +1885,6 @@
 
 .method final init(Landroid/app/ActivityThread;Landroid/content/Context;Landroid/content/Context;Landroid/content/ComponentName;Landroid/app/IInstrumentationWatcher;Landroid/app/IUiAutomationConnection;)V
     .locals 1
-    .param p1    # Landroid/app/ActivityThread;
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/content/Context;
-    .param p4    # Landroid/content/ComponentName;
-    .param p5    # Landroid/app/IInstrumentationWatcher;
-    .param p6    # Landroid/app/IUiAutomationConnection;
 
     iput-object p1, p0, Landroid/app/Instrumentation;->mThread:Landroid/app/ActivityThread;
 
@@ -1992,9 +1913,6 @@
 
 .method public invokeContextMenuAction(Landroid/app/Activity;II)Z
     .locals 8
-    .param p1    # Landroid/app/Activity;
-    .param p2    # I
-    .param p3    # I
 
     const/16 v7, 0x17
 
@@ -2056,9 +1974,6 @@
 
 .method public invokeMenuActionSync(Landroid/app/Activity;II)Z
     .locals 2
-    .param p1    # Landroid/app/Activity;
-    .param p2    # I
-    .param p3    # I
 
     new-instance v0, Landroid/app/Instrumentation$1MenuRunnable;
 
@@ -2085,15 +2000,6 @@
 
 .method public newActivity(Ljava/lang/Class;Landroid/content/Context;Landroid/os/IBinder;Landroid/app/Application;Landroid/content/Intent;Landroid/content/pm/ActivityInfo;Ljava/lang/CharSequence;Landroid/app/Activity;Ljava/lang/String;Ljava/lang/Object;)Landroid/app/Activity;
     .locals 13
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/os/IBinder;
-    .param p4    # Landroid/app/Application;
-    .param p5    # Landroid/content/Intent;
-    .param p6    # Landroid/content/pm/ActivityInfo;
-    .param p7    # Ljava/lang/CharSequence;
-    .param p8    # Landroid/app/Activity;
-    .param p9    # Ljava/lang/String;
-    .param p10    # Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2161,9 +2067,6 @@
 
 .method public newActivity(Ljava/lang/ClassLoader;Ljava/lang/String;Landroid/content/Intent;)Landroid/app/Activity;
     .locals 1
-    .param p1    # Ljava/lang/ClassLoader;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/content/Intent;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/InstantiationException;,
@@ -2187,9 +2090,6 @@
 
 .method public newApplication(Ljava/lang/ClassLoader;Ljava/lang/String;Landroid/content/Context;)Landroid/app/Application;
     .locals 1
-    .param p1    # Ljava/lang/ClassLoader;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/InstantiationException;,
@@ -2211,7 +2111,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     return-void
 .end method
@@ -2224,8 +2123,6 @@
 
 .method public onException(Ljava/lang/Object;Ljava/lang/Throwable;)Z
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Throwable;
 
     const/4 v0, 0x0
 
@@ -2240,7 +2137,6 @@
 
 .method public removeMonitor(Landroid/app/Instrumentation$ActivityMonitor;)V
     .locals 2
-    .param p1    # Landroid/app/Instrumentation$ActivityMonitor;
 
     iget-object v1, p0, Landroid/app/Instrumentation;->mSync:Ljava/lang/Object;
 
@@ -2267,7 +2163,6 @@
 
 .method public runOnMainSync(Ljava/lang/Runnable;)V
     .locals 2
-    .param p1    # Ljava/lang/Runnable;
 
     invoke-direct {p0}, Landroid/app/Instrumentation;->validateNotAppThread()V
 
@@ -2290,7 +2185,6 @@
 
 .method public sendCharacterSync(I)V
     .locals 2
-    .param p1    # I
 
     new-instance v0, Landroid/view/KeyEvent;
 
@@ -2313,7 +2207,6 @@
 
 .method public sendKeyDownUpSync(I)V
     .locals 2
-    .param p1    # I
 
     new-instance v0, Landroid/view/KeyEvent;
 
@@ -2336,7 +2229,6 @@
 
 .method public sendKeySync(Landroid/view/KeyEvent;)V
     .locals 17
-    .param p1    # Landroid/view/KeyEvent;
 
     invoke-direct/range {p0 .. p0}, Landroid/app/Instrumentation;->validateNotAppThread()V
 
@@ -2428,7 +2320,6 @@
 
 .method public sendPointerSync(Landroid/view/MotionEvent;)V
     .locals 2
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-direct {p0}, Landroid/app/Instrumentation;->validateNotAppThread()V
 
@@ -2458,8 +2349,6 @@
 
 .method public sendStatus(ILandroid/os/Bundle;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     iget-object v1, p0, Landroid/app/Instrumentation;->mWatcher:Landroid/app/IInstrumentationWatcher;
 
@@ -2490,7 +2379,6 @@
 
 .method public sendStringSync(Ljava/lang/String;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_1
 
@@ -2542,7 +2430,6 @@
 
 .method public sendTrackballEventSync(Landroid/view/MotionEvent;)V
     .locals 2
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-direct {p0}, Landroid/app/Instrumentation;->validateNotAppThread()V
 
@@ -2588,7 +2475,6 @@
 
 .method public setInTouchMode(Z)V
     .locals 1
-    .param p1    # Z
 
     :try_start_0
     const-string/jumbo v0, "window"
@@ -2671,7 +2557,6 @@
 
 .method public startActivitySync(Landroid/content/Intent;)Landroid/app/Activity;
     .locals 8
-    .param p1    # Landroid/content/Intent;
 
     invoke-direct {p0}, Landroid/app/Instrumentation;->validateNotAppThread()V
 
@@ -3013,7 +2898,6 @@
 
 .method public waitForIdle(Ljava/lang/Runnable;)V
     .locals 3
-    .param p1    # Ljava/lang/Runnable;
 
     iget-object v0, p0, Landroid/app/Instrumentation;->mMessageQueue:Landroid/os/MessageQueue;
 
@@ -3074,7 +2958,6 @@
 
 .method public waitForMonitor(Landroid/app/Instrumentation$ActivityMonitor;)Landroid/app/Activity;
     .locals 3
-    .param p1    # Landroid/app/Instrumentation$ActivityMonitor;
 
     invoke-virtual {p1}, Landroid/app/Instrumentation$ActivityMonitor;->waitForActivity()Landroid/app/Activity;
 
@@ -3105,8 +2988,6 @@
 
 .method public waitForMonitorWithTimeout(Landroid/app/Instrumentation$ActivityMonitor;J)Landroid/app/Activity;
     .locals 3
-    .param p1    # Landroid/app/Instrumentation$ActivityMonitor;
-    .param p2    # J
 
     invoke-virtual {p1, p2, p3}, Landroid/app/Instrumentation$ActivityMonitor;->waitForActivityWithTimeout(J)Landroid/app/Activity;
 

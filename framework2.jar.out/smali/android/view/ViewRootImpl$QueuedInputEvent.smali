@@ -47,7 +47,6 @@
 
 .method synthetic constructor <init>(Landroid/view/ViewRootImpl$1;)V
     .locals 0
-    .param p1    # Landroid/view/ViewRootImpl$1;
 
     invoke-direct {p0}, Landroid/view/ViewRootImpl$QueuedInputEvent;-><init>()V
 

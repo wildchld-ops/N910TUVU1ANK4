@@ -20,7 +20,6 @@
 
 .method static deserializeViewState(Ljava/io/InputStream;)Landroid/webkitsec/WebViewCore$DrawData;
     .locals 9
-    .param p0    # Ljava/io/InputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -105,9 +104,6 @@
 
 .method public static dumpLayerHierarchy(ILjava/io/OutputStream;I)V
     .locals 1
-    .param p0    # I
-    .param p1    # Ljava/io/OutputStream;
-    .param p2    # I
 
     const/16 v0, 0x4000
 
@@ -129,8 +125,6 @@
 
 .method static serializeViewState(Ljava/io/OutputStream;Landroid/webkitsec/WebViewCore$DrawData;)Z
     .locals 3
-    .param p0    # Ljava/io/OutputStream;
-    .param p1    # Landroid/webkitsec/WebViewCore$DrawData;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

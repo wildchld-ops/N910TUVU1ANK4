@@ -36,7 +36,6 @@
 # virtual methods
 .method public onCancel(Landroid/content/DialogInterface;)V
     .locals 1
-    .param p1    # Landroid/content/DialogInterface;
 
     iget-object v0, p0, Lcom/android/settings/wifi/mobileap/WifiApWarning$14;->this$0:Lcom/android/settings/wifi/mobileap/WifiApWarning;
 

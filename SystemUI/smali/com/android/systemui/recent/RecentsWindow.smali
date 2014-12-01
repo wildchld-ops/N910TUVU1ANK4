@@ -69,7 +69,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 14
-    .param p1    # Landroid/content/Context;
 
     const/16 v3, 0x82f
 
@@ -392,7 +391,6 @@
 
 .method static synthetic access$000(Lcom/android/systemui/recent/RecentsWindow;)Lcom/android/systemui/recent/RecentsPanelView;
     .locals 1
-    .param p0    # Lcom/android/systemui/recent/RecentsWindow;
 
     iget-object v0, p0, Lcom/android/systemui/recent/RecentsWindow;->mRecentsPanel:Lcom/android/systemui/recent/RecentsPanelView;
 
@@ -401,7 +399,6 @@
 
 .method static synthetic access$100(Lcom/android/systemui/recent/RecentsWindow;)Z
     .locals 1
-    .param p0    # Lcom/android/systemui/recent/RecentsWindow;
 
     iget-boolean v0, p0, Lcom/android/systemui/recent/RecentsWindow;->mShowing:Z
 
@@ -410,7 +407,6 @@
 
 .method static synthetic access$200(Lcom/android/systemui/recent/RecentsWindow;)V
     .locals 0
-    .param p0    # Lcom/android/systemui/recent/RecentsWindow;
 
     invoke-direct {p0}, Lcom/android/systemui/recent/RecentsWindow;->initRecentPanel()V
 
@@ -419,7 +415,6 @@
 
 .method static synthetic access$300(Lcom/android/systemui/recent/RecentsWindow;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/systemui/recent/RecentsWindow;
 
     iget-object v0, p0, Lcom/android/systemui/recent/RecentsWindow;->mContext:Landroid/content/Context;
 
@@ -428,7 +423,6 @@
 
 .method static synthetic access$400(Lcom/android/systemui/recent/RecentsWindow;)I
     .locals 1
-    .param p0    # Lcom/android/systemui/recent/RecentsWindow;
 
     iget v0, p0, Lcom/android/systemui/recent/RecentsWindow;->mFlipFont:I
 
@@ -445,7 +439,6 @@
 
 .method static synthetic access$600(Lcom/android/systemui/recent/RecentsWindow;)Z
     .locals 1
-    .param p0    # Lcom/android/systemui/recent/RecentsWindow;
 
     iget-boolean v0, p0, Lcom/android/systemui/recent/RecentsWindow;->mFeatureMultiwindowRecentUI:Z
 
@@ -454,7 +447,6 @@
 
 .method static synthetic access$700(Lcom/android/systemui/recent/RecentsWindow;)V
     .locals 0
-    .param p0    # Lcom/android/systemui/recent/RecentsWindow;
 
     invoke-direct {p0}, Lcom/android/systemui/recent/RecentsWindow;->initMultiWindowTray()V
 
@@ -463,7 +455,6 @@
 
 .method static synthetic access$800(Lcom/android/systemui/recent/RecentsWindow;)Lcom/android/systemui/recent/multiwindow/MultiWindowTrayInfo;
     .locals 1
-    .param p0    # Lcom/android/systemui/recent/RecentsWindow;
 
     iget-object v0, p0, Lcom/android/systemui/recent/RecentsWindow;->mMultiWindowTrayInfo:Lcom/android/systemui/recent/multiwindow/MultiWindowTrayInfo;
 
@@ -667,7 +658,6 @@
 
 .method private isShowing(Z)V
     .locals 2
-    .param p1    # Z
 
     new-instance v0, Landroid/content/Intent;
 
@@ -868,7 +858,6 @@
 
 .method protected onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 3
-    .param p1    # Landroid/content/res/Configuration;
 
     iget-boolean v2, p0, Lcom/android/systemui/recent/RecentsWindow;->mFeatureMultiwindowRecentUI:Z
 

@@ -233,7 +233,6 @@
 
 .method public constructor <init>(Landroid/app/PendingIntent;)V
     .locals 6
-    .param p1    # Landroid/app/PendingIntent;
 
     const/16 v1, 0xf
 
@@ -357,8 +356,6 @@
 
 .method public constructor <init>(Landroid/app/PendingIntent;Landroid/os/Looper;)V
     .locals 5
-    .param p1    # Landroid/app/PendingIntent;
-    .param p2    # Landroid/os/Looper;
 
     const/16 v0, 0xf
 
@@ -447,7 +444,6 @@
 
 .method static synthetic access$000(Landroid/media/RemoteControlClient;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Landroid/media/RemoteControlClient;
 
     iget-object v0, p0, Landroid/media/RemoteControlClient;->mCacheLock:Ljava/lang/Object;
 
@@ -456,7 +452,6 @@
 
 .method static synthetic access$100(Landroid/media/RemoteControlClient;)Landroid/os/Bundle;
     .locals 1
-    .param p0    # Landroid/media/RemoteControlClient;
 
     iget-object v0, p0, Landroid/media/RemoteControlClient;->mMetadata:Landroid/os/Bundle;
 
@@ -465,8 +460,6 @@
 
 .method static synthetic access$1000(Landroid/media/RemoteControlClient;Landroid/media/IRemoteControlDisplay;)V
     .locals 0
-    .param p0    # Landroid/media/RemoteControlClient;
-    .param p1    # Landroid/media/IRemoteControlDisplay;
 
     invoke-direct {p0, p1}, Landroid/media/RemoteControlClient;->sendPlaybackState_syncCacheLock(Landroid/media/IRemoteControlDisplay;)V
 
@@ -475,8 +468,6 @@
 
 .method static synthetic access$102(Landroid/media/RemoteControlClient;Landroid/os/Bundle;)Landroid/os/Bundle;
     .locals 0
-    .param p0    # Landroid/media/RemoteControlClient;
-    .param p1    # Landroid/os/Bundle;
 
     iput-object p1, p0, Landroid/media/RemoteControlClient;->mMetadata:Landroid/os/Bundle;
 
@@ -485,8 +476,6 @@
 
 .method static synthetic access$1100(Landroid/media/RemoteControlClient;Landroid/media/IRemoteControlDisplay;)V
     .locals 0
-    .param p0    # Landroid/media/RemoteControlClient;
-    .param p1    # Landroid/media/IRemoteControlDisplay;
 
     invoke-direct {p0, p1}, Landroid/media/RemoteControlClient;->sendTransportControlInfo_syncCacheLock(Landroid/media/IRemoteControlDisplay;)V
 
@@ -495,8 +484,6 @@
 
 .method static synthetic access$1200(Landroid/media/RemoteControlClient;I)V
     .locals 0
-    .param p0    # Landroid/media/RemoteControlClient;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/media/RemoteControlClient;->onNewInternalClientGen(I)V
 
@@ -505,8 +492,6 @@
 
 .method static synthetic access$1300(Landroid/media/RemoteControlClient;I)V
     .locals 0
-    .param p0    # Landroid/media/RemoteControlClient;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/media/RemoteControlClient;->onNewCurrentClientGen(I)V
 
@@ -515,10 +500,6 @@
 
 .method static synthetic access$1400(Landroid/media/RemoteControlClient;Landroid/media/IRemoteControlDisplay;II)V
     .locals 0
-    .param p0    # Landroid/media/RemoteControlClient;
-    .param p1    # Landroid/media/IRemoteControlDisplay;
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Landroid/media/RemoteControlClient;->onPlugDisplay(Landroid/media/IRemoteControlDisplay;II)V
 
@@ -527,8 +508,6 @@
 
 .method static synthetic access$1500(Landroid/media/RemoteControlClient;Landroid/media/IRemoteControlDisplay;)V
     .locals 0
-    .param p0    # Landroid/media/RemoteControlClient;
-    .param p1    # Landroid/media/IRemoteControlDisplay;
 
     invoke-direct {p0, p1}, Landroid/media/RemoteControlClient;->onUnplugDisplay(Landroid/media/IRemoteControlDisplay;)V
 
@@ -537,10 +516,6 @@
 
 .method static synthetic access$1600(Landroid/media/RemoteControlClient;Landroid/media/IRemoteControlDisplay;II)V
     .locals 0
-    .param p0    # Landroid/media/RemoteControlClient;
-    .param p1    # Landroid/media/IRemoteControlDisplay;
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Landroid/media/RemoteControlClient;->onUpdateDisplayArtworkSize(Landroid/media/IRemoteControlDisplay;II)V
 
@@ -549,9 +524,6 @@
 
 .method static synthetic access$1700(Landroid/media/RemoteControlClient;IJ)V
     .locals 0
-    .param p0    # Landroid/media/RemoteControlClient;
-    .param p1    # I
-    .param p2    # J
 
     invoke-direct {p0, p1, p2, p3}, Landroid/media/RemoteControlClient;->onSeekTo(IJ)V
 
@@ -560,7 +532,6 @@
 
 .method static synthetic access$1800(Landroid/media/RemoteControlClient;)V
     .locals 0
-    .param p0    # Landroid/media/RemoteControlClient;
 
     invoke-direct {p0}, Landroid/media/RemoteControlClient;->onPositionDriftCheck()V
 
@@ -569,9 +540,6 @@
 
 .method static synthetic access$1900(Landroid/media/RemoteControlClient;Landroid/media/IRemoteControlDisplay;Z)V
     .locals 0
-    .param p0    # Landroid/media/RemoteControlClient;
-    .param p1    # Landroid/media/IRemoteControlDisplay;
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Landroid/media/RemoteControlClient;->onDisplayWantsSync(Landroid/media/IRemoteControlDisplay;Z)V
 
@@ -580,7 +548,6 @@
 
 .method static synthetic access$200(Landroid/media/RemoteControlClient;)Landroid/graphics/Bitmap;
     .locals 1
-    .param p0    # Landroid/media/RemoteControlClient;
 
     iget-object v0, p0, Landroid/media/RemoteControlClient;->mOriginalArtwork:Landroid/graphics/Bitmap;
 
@@ -589,10 +556,6 @@
 
 .method static synthetic access$2000(Landroid/media/RemoteControlClient;IILjava/lang/Object;)V
     .locals 0
-    .param p0    # Landroid/media/RemoteControlClient;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/Object;
 
     invoke-direct {p0, p1, p2, p3}, Landroid/media/RemoteControlClient;->onUpdateMetadata(IILjava/lang/Object;)V
 
@@ -601,8 +564,6 @@
 
 .method static synthetic access$202(Landroid/media/RemoteControlClient;Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
     .locals 0
-    .param p0    # Landroid/media/RemoteControlClient;
-    .param p1    # Landroid/graphics/Bitmap;
 
     iput-object p1, p0, Landroid/media/RemoteControlClient;->mOriginalArtwork:Landroid/graphics/Bitmap;
 
@@ -611,9 +572,6 @@
 
 .method static synthetic access$2100(Landroid/media/RemoteControlClient;Landroid/media/IRemoteControlDisplay;Z)V
     .locals 0
-    .param p0    # Landroid/media/RemoteControlClient;
-    .param p1    # Landroid/media/IRemoteControlDisplay;
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Landroid/media/RemoteControlClient;->onDisplayEnable(Landroid/media/IRemoteControlDisplay;Z)V
 
@@ -622,10 +580,6 @@
 
 .method static synthetic access$2200(Landroid/media/RemoteControlClient;III)V
     .locals 0
-    .param p0    # Landroid/media/RemoteControlClient;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Landroid/media/RemoteControlClient;->onSetCommand(III)V
 
@@ -634,10 +588,6 @@
 
 .method static synthetic access$300(Landroid/media/RemoteControlClient;Landroid/media/IRemoteControlDisplay;II)V
     .locals 0
-    .param p0    # Landroid/media/RemoteControlClient;
-    .param p1    # Landroid/media/IRemoteControlDisplay;
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Landroid/media/RemoteControlClient;->sendMetadataWithArtwork_syncCacheLock(Landroid/media/IRemoteControlDisplay;II)V
 
@@ -646,8 +596,6 @@
 
 .method static synthetic access$400(Landroid/media/RemoteControlClient;Landroid/media/IRemoteControlDisplay;)V
     .locals 0
-    .param p0    # Landroid/media/RemoteControlClient;
-    .param p1    # Landroid/media/IRemoteControlDisplay;
 
     invoke-direct {p0, p1}, Landroid/media/RemoteControlClient;->sendMetadata_syncCacheLock(Landroid/media/IRemoteControlDisplay;)V
 
@@ -656,10 +604,6 @@
 
 .method static synthetic access$500(Landroid/media/RemoteControlClient;Landroid/media/IRemoteControlDisplay;II)V
     .locals 0
-    .param p0    # Landroid/media/RemoteControlClient;
-    .param p1    # Landroid/media/IRemoteControlDisplay;
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Landroid/media/RemoteControlClient;->sendArtwork_syncCacheLock(Landroid/media/IRemoteControlDisplay;II)V
 
@@ -668,7 +612,6 @@
 
 .method static synthetic access$900(Landroid/media/RemoteControlClient;)Landroid/media/RemoteControlClient$EventHandler;
     .locals 1
-    .param p0    # Landroid/media/RemoteControlClient;
 
     iget-object v0, p0, Landroid/media/RemoteControlClient;->mEventHandler:Landroid/media/RemoteControlClient$EventHandler;
 
@@ -677,7 +620,6 @@
 
 .method private static getCheckPeriodFromSpeed(F)J
     .locals 4
-    .param p0    # F
 
     invoke-static {p0}, Ljava/lang/Math;->abs(F)F
 
@@ -803,8 +745,6 @@
 
 .method private onDisplayEnable(Landroid/media/IRemoteControlDisplay;Z)V
     .locals 5
-    .param p1    # Landroid/media/IRemoteControlDisplay;
-    .param p2    # Z
 
     iget-object v3, p0, Landroid/media/RemoteControlClient;->mCacheLock:Ljava/lang/Object;
 
@@ -875,8 +815,6 @@
 
 .method private onDisplayWantsSync(Landroid/media/IRemoteControlDisplay;Z)V
     .locals 7
-    .param p1    # Landroid/media/IRemoteControlDisplay;
-    .param p2    # Z
 
     iget-object v5, p0, Landroid/media/RemoteControlClient;->mCacheLock:Ljava/lang/Object;
 
@@ -974,7 +912,6 @@
 
 .method private onNewCurrentClientGen(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Landroid/media/RemoteControlClient;->mCacheLock:Ljava/lang/Object;
 
@@ -999,7 +936,6 @@
 
 .method private onNewInternalClientGen(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Landroid/media/RemoteControlClient;->mCacheLock:Ljava/lang/Object;
 
@@ -1024,9 +960,6 @@
 
 .method private onPlugDisplay(Landroid/media/IRemoteControlDisplay;II)V
     .locals 6
-    .param p1    # Landroid/media/IRemoteControlDisplay;
-    .param p2    # I
-    .param p3    # I
 
     iget-object v4, p0, Landroid/media/RemoteControlClient;->mCacheLock:Ljava/lang/Object;
 
@@ -1283,8 +1216,6 @@
 
 .method private onSeekTo(IJ)V
     .locals 2
-    .param p1    # I
-    .param p2    # J
 
     iget-object v1, p0, Landroid/media/RemoteControlClient;->mCacheLock:Ljava/lang/Object;
 
@@ -1320,9 +1251,6 @@
 
 .method private onSetCommand(III)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     iget-object v1, p0, Landroid/media/RemoteControlClient;->mCacheLock:Ljava/lang/Object;
 
@@ -1358,7 +1286,6 @@
 
 .method private onUnplugDisplay(Landroid/media/IRemoteControlDisplay;)V
     .locals 7
-    .param p1    # Landroid/media/IRemoteControlDisplay;
 
     iget-object v5, p0, Landroid/media/RemoteControlClient;->mCacheLock:Ljava/lang/Object;
 
@@ -1464,9 +1391,6 @@
 
 .method private onUpdateDisplayArtworkSize(Landroid/media/IRemoteControlDisplay;II)V
     .locals 5
-    .param p1    # Landroid/media/IRemoteControlDisplay;
-    .param p2    # I
-    .param p3    # I
 
     iget-object v3, p0, Landroid/media/RemoteControlClient;->mCacheLock:Ljava/lang/Object;
 
@@ -1564,9 +1488,6 @@
 
 .method private onUpdateMetadata(IILjava/lang/Object;)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/Object;
 
     iget-object v1, p0, Landroid/media/RemoteControlClient;->mCacheLock:Ljava/lang/Object;
 
@@ -1602,7 +1523,6 @@
 
 .method static playbackPositionShouldMove(I)Z
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -1635,9 +1555,6 @@
 
 .method private scaleBitmapIfTooBig(Landroid/graphics/Bitmap;II)Landroid/graphics/Bitmap;
     .locals 16
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # I
-    .param p3    # I
 
     if-eqz p1, :cond_2
 
@@ -1757,7 +1674,6 @@
 
 .method private sendArtworkToDisplay(Landroid/media/RemoteControlClient$DisplayInfoForClient;)Z
     .locals 5
-    .param p1    # Landroid/media/RemoteControlClient$DisplayInfoForClient;
 
     # getter for: Landroid/media/RemoteControlClient$DisplayInfoForClient;->mArtworkExpectedWidth:I
     invoke-static {p1}, Landroid/media/RemoteControlClient$DisplayInfoForClient;->access$2300(Landroid/media/RemoteControlClient$DisplayInfoForClient;)I
@@ -1844,9 +1760,6 @@
 
 .method private sendArtwork_syncCacheLock(Landroid/media/IRemoteControlDisplay;II)V
     .locals 4
-    .param p1    # Landroid/media/IRemoteControlDisplay;
-    .param p2    # I
-    .param p3    # I
 
     iget v2, p0, Landroid/media/RemoteControlClient;->mCurrentClientGenId:I
 
@@ -1899,8 +1812,6 @@
 
 .method private sendAudioServiceNewPlaybackInfo_syncCacheLock(II)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     iget v2, p0, Landroid/media/RemoteControlClient;->mRcseId:I
 
@@ -1983,9 +1894,6 @@
 
 .method private sendMetadataWithArtwork_syncCacheLock(Landroid/media/IRemoteControlDisplay;II)V
     .locals 7
-    .param p1    # Landroid/media/IRemoteControlDisplay;
-    .param p2    # I
-    .param p3    # I
 
     iget v4, p0, Landroid/media/RemoteControlClient;->mCurrentClientGenId:I
 
@@ -2182,7 +2090,6 @@
 
 .method private sendMetadata_syncCacheLock(Landroid/media/IRemoteControlDisplay;)V
     .locals 6
-    .param p1    # Landroid/media/IRemoteControlDisplay;
 
     iget v3, p0, Landroid/media/RemoteControlClient;->mCurrentClientGenId:I
 
@@ -2313,7 +2220,6 @@
 
 .method private sendPlaybackState_syncCacheLock(Landroid/media/IRemoteControlDisplay;)V
     .locals 11
-    .param p1    # Landroid/media/IRemoteControlDisplay;
 
     iget v0, p0, Landroid/media/RemoteControlClient;->mCurrentClientGenId:I
 
@@ -2458,7 +2364,6 @@
 
 .method private sendTransportControlInfo_syncCacheLock(Landroid/media/IRemoteControlDisplay;)V
     .locals 7
-    .param p1    # Landroid/media/IRemoteControlDisplay;
 
     iget v3, p0, Landroid/media/RemoteControlClient;->mCurrentClientGenId:I
 
@@ -2593,10 +2498,6 @@
 
 .method private setPlaybackStateInt(IJFZ)V
     .locals 6
-    .param p1    # I
-    .param p2    # J
-    .param p4    # F
-    .param p5    # Z
 
     const-wide/16 v4, 0x0
 
@@ -2695,7 +2596,6 @@
 # virtual methods
 .method public editMetadata(Z)Landroid/media/RemoteControlClient$MetadataEditor;
     .locals 5
-    .param p1    # Z
 
     const/4 v4, 0x0
 
@@ -2758,7 +2658,6 @@
 
 .method public getIntPlaybackInformation(I)I
     .locals 4
-    .param p1    # I
 
     iget-object v1, p0, Landroid/media/RemoteControlClient;->mCacheLock:Ljava/lang/Object;
 
@@ -2873,7 +2772,6 @@
 
 .method public setCommandSetListener(Landroid/media/RemoteControlClient$OnCommandSetListener;)V
     .locals 2
-    .param p1    # Landroid/media/RemoteControlClient$OnCommandSetListener;
 
     iget-object v1, p0, Landroid/media/RemoteControlClient;->mCacheLock:Ljava/lang/Object;
 
@@ -2898,8 +2796,6 @@
 
 .method public setCommandToDisplay(II)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
 
     iget-object v4, p0, Landroid/media/RemoteControlClient;->mCacheLock:Ljava/lang/Object;
 
@@ -3011,7 +2907,6 @@
 
 .method public setMetadataUpdateListener(Landroid/media/RemoteControlClient$OnMetadataUpdateListener;)V
     .locals 2
-    .param p1    # Landroid/media/RemoteControlClient$OnMetadataUpdateListener;
 
     iget-object v1, p0, Landroid/media/RemoteControlClient;->mCacheLock:Ljava/lang/Object;
 
@@ -3036,7 +2931,6 @@
 
 .method public setOnGetPlaybackPositionListener(Landroid/media/RemoteControlClient$OnGetPlaybackPositionListener;)V
     .locals 6
-    .param p1    # Landroid/media/RemoteControlClient$OnGetPlaybackPositionListener;
 
     iget-object v2, p0, Landroid/media/RemoteControlClient;->mCacheLock:Ljava/lang/Object;
 
@@ -3127,8 +3021,6 @@
 
 .method public setPlaybackInformation(II)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x1
 
@@ -3313,7 +3205,6 @@
 
 .method public setPlaybackPositionUpdateListener(Landroid/media/RemoteControlClient$OnPlaybackPositionUpdateListener;)V
     .locals 4
-    .param p1    # Landroid/media/RemoteControlClient$OnPlaybackPositionUpdateListener;
 
     iget-object v2, p0, Landroid/media/RemoteControlClient;->mCacheLock:Ljava/lang/Object;
 
@@ -3373,7 +3264,6 @@
 
 .method public setPlaybackState(I)V
     .locals 6
-    .param p1    # I
 
     const-wide v2, -0x7fe688e67fe67d00L
 
@@ -3392,9 +3282,6 @@
 
 .method public setPlaybackState(IJF)V
     .locals 6
-    .param p1    # I
-    .param p2    # J
-    .param p4    # F
 
     const/4 v5, 0x1
 
@@ -3413,7 +3300,6 @@
 
 .method public setRcseId(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/media/RemoteControlClient;->mRcseId:I
 
@@ -3422,7 +3308,6 @@
 
 .method public setTransportControlFlags(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Landroid/media/RemoteControlClient;->mCacheLock:Ljava/lang/Object;
 

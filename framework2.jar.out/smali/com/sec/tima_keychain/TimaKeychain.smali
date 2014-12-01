@@ -20,7 +20,6 @@
 
 .method public static getAliasListFromTimaKeystore(Ljava/lang/String;)Ljava/util/List;
     .locals 14
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -223,7 +222,6 @@
 
 .method public static getCertificateChainFromTimaKeystore(Ljava/lang/String;)[Ljava/security/cert/X509Certificate;
     .locals 11
-    .param p0    # Ljava/lang/String;
 
     const/4 v8, 0x0
 
@@ -373,7 +371,6 @@
 
 .method public static getPrivateKeyFromOpenSSL(Ljava/lang/String;)Ljava/security/PrivateKey;
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -547,7 +544,6 @@
 
 .method public static isTimaKeystoreAndCCMEnabledForPackage(Ljava/lang/String;)Z
     .locals 11
-    .param p0    # Ljava/lang/String;
 
     const/4 v6, 0x1
 

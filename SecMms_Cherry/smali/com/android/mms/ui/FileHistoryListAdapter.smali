@@ -139,9 +139,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/database/Cursor;I)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/database/Cursor;
-    .param p3    # I
 
     const/4 v1, 0x0
 
@@ -196,7 +193,6 @@
 
 .method private changeFontSize(I)V
     .locals 6
-    .param p1    # I
 
     const/4 v2, 0x4
 
@@ -288,8 +284,6 @@
 
 .method public static createVideoThumbnail(Landroid/content/Context;Landroid/net/Uri;)Landroid/graphics/Bitmap;
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
 
     const/4 v0, 0x0
 
@@ -351,8 +345,6 @@
 
 .method private decodeBitmap(Landroid/net/Uri;I)Landroid/graphics/Bitmap;
     .locals 18
-    .param p1    # Landroid/net/Uri;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/OutOfMemoryError;
@@ -595,7 +587,6 @@
 
 .method protected static recycleBitmap(Landroid/graphics/Bitmap;)V
     .locals 0
-    .param p0    # Landroid/graphics/Bitmap;
 
     if-nez p0, :cond_0
 
@@ -612,9 +603,6 @@
 # virtual methods
 .method public bindView(Landroid/view/View;Landroid/content/Context;Landroid/database/Cursor;)V
     .locals 11
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/database/Cursor;
 
     const/4 v10, 0x0
 
@@ -1207,9 +1195,6 @@
 
 .method public newView(Landroid/content/Context;Landroid/database/Cursor;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/database/Cursor;
-    .param p3    # Landroid/view/ViewGroup;
 
     iget-object v0, p0, Lcom/android/mms/ui/FileHistoryListAdapter;->mFactory:Landroid/view/LayoutInflater;
 
@@ -1271,7 +1256,6 @@
 
 .method public setFontSize(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/mms/ui/FileHistoryListAdapter;->mFontSize:I
 
@@ -1280,7 +1264,6 @@
 
 .method public setMessageListMode(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Lcom/android/mms/ui/FileHistoryListAdapter;->mMsgListMode:I
 
@@ -1297,7 +1280,6 @@
 
 .method public setOnContentChangedListener(Lcom/android/mms/ui/FileHistoryListAdapter$OnContentChangedListener;)V
     .locals 0
-    .param p1    # Lcom/android/mms/ui/FileHistoryListAdapter$OnContentChangedListener;
 
     iput-object p1, p0, Lcom/android/mms/ui/FileHistoryListAdapter;->mOnContentChangedListener:Lcom/android/mms/ui/FileHistoryListAdapter$OnContentChangedListener;
 

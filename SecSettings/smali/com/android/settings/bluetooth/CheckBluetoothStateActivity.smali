@@ -54,7 +54,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/bluetooth/CheckBluetoothStateActivity;)V
     .locals 0
-    .param p0    # Lcom/android/settings/bluetooth/CheckBluetoothStateActivity;
 
     invoke-direct {p0}, Lcom/android/settings/bluetooth/CheckBluetoothStateActivity;->launchDevicePicker()V
 
@@ -63,7 +62,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/bluetooth/CheckBluetoothStateActivity;)Landroid/content/BroadcastReceiver;
     .locals 1
-    .param p0    # Lcom/android/settings/bluetooth/CheckBluetoothStateActivity;
 
     iget-object v0, p0, Lcom/android/settings/bluetooth/CheckBluetoothStateActivity;->mBluetoothReceiver:Landroid/content/BroadcastReceiver;
 
@@ -72,7 +70,6 @@
 
 .method static synthetic access$202(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/settings/bluetooth/CheckBluetoothStateActivity;->mDialogExist:Z
 
@@ -81,7 +78,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/bluetooth/CheckBluetoothStateActivity;)V
     .locals 0
-    .param p0    # Lcom/android/settings/bluetooth/CheckBluetoothStateActivity;
 
     invoke-direct {p0}, Lcom/android/settings/bluetooth/CheckBluetoothStateActivity;->processEnableResult()V
 
@@ -390,7 +386,6 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 11
-    .param p1    # Landroid/os/Bundle;
 
     const/16 v10, 0xa
 
@@ -716,7 +711,6 @@
 
 .method protected onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onSaveInstanceState(Landroid/os/Bundle;)V
 

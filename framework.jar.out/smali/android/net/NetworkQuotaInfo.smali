@@ -44,9 +44,6 @@
 
 .method public constructor <init>(JJJ)V
     .locals 0
-    .param p1    # J
-    .param p3    # J
-    .param p5    # J
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -61,7 +58,6 @@
 
 .method public constructor <init>(Landroid/os/Parcel;)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -122,8 +118,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-wide v0, p0, Landroid/net/NetworkQuotaInfo;->mEstimatedBytes:J
 

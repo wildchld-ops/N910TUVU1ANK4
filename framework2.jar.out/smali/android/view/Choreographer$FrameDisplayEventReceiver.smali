@@ -30,7 +30,6 @@
 # direct methods
 .method public constructor <init>(Landroid/view/Choreographer;Landroid/os/Looper;)V
     .locals 0
-    .param p2    # Landroid/os/Looper;
 
     iput-object p1, p0, Landroid/view/Choreographer$FrameDisplayEventReceiver;->this$0:Landroid/view/Choreographer;
 
@@ -43,9 +42,6 @@
 # virtual methods
 .method public onVsync(JII)V
     .locals 8
-    .param p1    # J
-    .param p3    # I
-    .param p4    # I
 
     const/4 v7, 0x1
 

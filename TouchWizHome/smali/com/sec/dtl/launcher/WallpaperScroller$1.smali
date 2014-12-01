@@ -33,10 +33,6 @@
 # virtual methods
 .method public onVectorChanged(FFFF)V
     .locals 5
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
 
     iget-object v0, p0, Lcom/sec/dtl/launcher/WallpaperScroller$1;->this$0:Lcom/sec/dtl/launcher/WallpaperScroller;
 

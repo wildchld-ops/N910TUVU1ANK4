@@ -35,7 +35,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -46,8 +45,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -58,9 +55,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v2, 0x0
 
@@ -91,7 +85,6 @@
 
 .method private final getSmallTime(Ljava/util/Calendar;)Ljava/lang/CharSequence;
     .locals 21
-    .param p1    # Ljava/util/Calendar;
 
     const-string v18, "STATUSBAR-Clock"
 
@@ -401,7 +394,6 @@
 
 .method private static is24HourFormat(Landroid/content/Context;)Z
     .locals 8
-    .param p0    # Landroid/content/Context;
 
     invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -489,8 +481,6 @@
 # virtual methods
 .method public dispatchDemoCommand(Ljava/lang/String;Landroid/os/Bundle;)V
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Bundle;
 
     const/4 v8, 0x2
 

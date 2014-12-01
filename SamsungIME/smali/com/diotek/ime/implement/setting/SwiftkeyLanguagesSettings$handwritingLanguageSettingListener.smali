@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Lcom/diotek/ime/implement/setting/SwiftkeyLanguagesSettings;Lcom/diotek/ime/implement/setting/SwiftkeyLanguagesSettings$1;)V
     .locals 0
-    .param p1    # Lcom/diotek/ime/implement/setting/SwiftkeyLanguagesSettings;
-    .param p2    # Lcom/diotek/ime/implement/setting/SwiftkeyLanguagesSettings$1;
 
     invoke-direct {p0, p1}, Lcom/diotek/ime/implement/setting/SwiftkeyLanguagesSettings$handwritingLanguageSettingListener;-><init>(Lcom/diotek/ime/implement/setting/SwiftkeyLanguagesSettings;)V
 
@@ -46,8 +44,6 @@
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 6
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     const/high16 v5, 0x34000000
 

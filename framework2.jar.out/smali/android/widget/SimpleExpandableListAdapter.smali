@@ -54,15 +54,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Ljava/util/List;II[Ljava/lang/String;[ILjava/util/List;II[Ljava/lang/String;[I)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # [Ljava/lang/String;
-    .param p6    # [I
-    .param p8    # I
-    .param p9    # I
-    .param p10    # [Ljava/lang/String;
-    .param p11    # [I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -125,14 +116,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Ljava/util/List;II[Ljava/lang/String;[ILjava/util/List;I[Ljava/lang/String;[I)V
     .locals 12
-    .param p1    # Landroid/content/Context;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # [Ljava/lang/String;
-    .param p6    # [I
-    .param p8    # I
-    .param p9    # [Ljava/lang/String;
-    .param p10    # [I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -189,13 +172,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Ljava/util/List;I[Ljava/lang/String;[ILjava/util/List;I[Ljava/lang/String;[I)V
     .locals 12
-    .param p1    # Landroid/content/Context;
-    .param p3    # I
-    .param p4    # [Ljava/lang/String;
-    .param p5    # [I
-    .param p7    # I
-    .param p8    # [Ljava/lang/String;
-    .param p9    # [I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -252,9 +228,6 @@
 
 .method private bindView(Landroid/view/View;Ljava/util/Map;[Ljava/lang/String;[I)V
     .locals 4
-    .param p1    # Landroid/view/View;
-    .param p3    # [Ljava/lang/String;
-    .param p4    # [I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -308,8 +281,6 @@
 # virtual methods
 .method public getChild(II)Ljava/lang/Object;
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Landroid/widget/SimpleExpandableListAdapter;->mChildData:Ljava/util/List;
 
@@ -328,8 +299,6 @@
 
 .method public getChildId(II)J
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     int-to-long v0, p2
 
@@ -338,11 +307,6 @@
 
 .method public getChildView(IIZLandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # Landroid/view/View;
-    .param p5    # Landroid/view/ViewGroup;
 
     if-nez p4, :cond_0
 
@@ -381,7 +345,6 @@
 
 .method public getChildrenCount(I)I
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/widget/SimpleExpandableListAdapter;->mChildData:Ljava/util/List;
 
@@ -400,7 +363,6 @@
 
 .method public getGroup(I)Ljava/lang/Object;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/widget/SimpleExpandableListAdapter;->mGroupData:Ljava/util/List;
 
@@ -425,7 +387,6 @@
 
 .method public getGroupId(I)J
     .locals 2
-    .param p1    # I
 
     int-to-long v0, p1
 
@@ -434,10 +395,6 @@
 
 .method public getGroupView(IZLandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 4
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # Landroid/view/View;
-    .param p4    # Landroid/view/ViewGroup;
 
     if-nez p3, :cond_0
 
@@ -478,8 +435,6 @@
 
 .method public isChildSelectable(II)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x1
 
@@ -488,8 +443,6 @@
 
 .method public newChildView(ZLandroid/view/ViewGroup;)Landroid/view/View;
     .locals 3
-    .param p1    # Z
-    .param p2    # Landroid/view/ViewGroup;
 
     iget-object v1, p0, Landroid/widget/SimpleExpandableListAdapter;->mInflater:Landroid/view/LayoutInflater;
 
@@ -514,8 +467,6 @@
 
 .method public newGroupView(ZLandroid/view/ViewGroup;)Landroid/view/View;
     .locals 3
-    .param p1    # Z
-    .param p2    # Landroid/view/ViewGroup;
 
     iget-object v1, p0, Landroid/widget/SimpleExpandableListAdapter;->mInflater:Landroid/view/LayoutInflater;
 

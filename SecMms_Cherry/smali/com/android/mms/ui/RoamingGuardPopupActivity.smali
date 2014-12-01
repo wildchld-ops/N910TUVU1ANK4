@@ -49,7 +49,6 @@
 
 .method private sendMessage(Z)V
     .locals 8
-    .param p1    # Z
 
     const/4 v0, 0x0
 
@@ -137,7 +136,6 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 8
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v7, 0x0
 
@@ -273,7 +271,6 @@
 
 .method protected onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onSaveInstanceState(Landroid/os/Bundle;)V
 
@@ -309,7 +306,6 @@
 
 .method protected sendSmsInInternationalRoaming(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "Mms/RoamingGuardPopupActivity"
 

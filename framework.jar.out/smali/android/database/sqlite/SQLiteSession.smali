@@ -63,7 +63,6 @@
 
 .method public constructor <init>(Landroid/database/sqlite/SQLiteConnectionPool;)V
     .locals 2
-    .param p1    # Landroid/database/sqlite/SQLiteConnectionPool;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -85,9 +84,6 @@
 
 .method private acquireConnection(Ljava/lang/String;ILandroid/os/CancellationSignal;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Landroid/os/CancellationSignal;
 
     iget-object v0, p0, Landroid/database/sqlite/SQLiteSession;->mConnection:Landroid/database/sqlite/SQLiteConnection;
 
@@ -130,10 +126,6 @@
 
 .method private beginTransactionUnchecked(ILandroid/database/sqlite/SQLiteTransactionListener;ILandroid/os/CancellationSignal;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/database/sqlite/SQLiteTransactionListener;
-    .param p3    # I
-    .param p4    # Landroid/os/CancellationSignal;
 
     const/4 v3, 0x0
 
@@ -266,8 +258,6 @@
 
 .method private endTransactionUnchecked(Landroid/os/CancellationSignal;Z)V
     .locals 8
-    .param p1    # Landroid/os/CancellationSignal;
-    .param p2    # Z
 
     const/4 v5, 0x1
 
@@ -397,10 +387,6 @@
 
 .method private executeSpecial(Ljava/lang/String;[Ljava/lang/Object;ILandroid/os/CancellationSignal;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/Object;
-    .param p3    # I
-    .param p4    # Landroid/os/CancellationSignal;
 
     const/4 v1, 0x1
 
@@ -451,8 +437,6 @@
 
 .method private obtainTransaction(ILandroid/database/sqlite/SQLiteTransactionListener;)Landroid/database/sqlite/SQLiteSession$Transaction;
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/database/sqlite/SQLiteTransactionListener;
 
     const/4 v3, 0x0
 
@@ -489,7 +473,6 @@
 
 .method private recycleTransaction(Landroid/database/sqlite/SQLiteSession$Transaction;)V
     .locals 1
-    .param p1    # Landroid/database/sqlite/SQLiteSession$Transaction;
 
     iget-object v0, p0, Landroid/database/sqlite/SQLiteSession;->mTransactionPool:Landroid/database/sqlite/SQLiteSession$Transaction;
 
@@ -636,8 +619,6 @@
 
 .method private yieldTransactionUnchecked(JLandroid/os/CancellationSignal;)Z
     .locals 7
-    .param p1    # J
-    .param p3    # Landroid/os/CancellationSignal;
 
     const/4 v3, 0x1
 
@@ -703,10 +684,6 @@
 # virtual methods
 .method public beginTransaction(ILandroid/database/sqlite/SQLiteTransactionListener;ILandroid/os/CancellationSignal;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Landroid/database/sqlite/SQLiteTransactionListener;
-    .param p3    # I
-    .param p4    # Landroid/os/CancellationSignal;
 
     invoke-direct {p0}, Landroid/database/sqlite/SQLiteSession;->throwIfTransactionMarkedSuccessful()V
 
@@ -717,7 +694,6 @@
 
 .method public changePassword([B)V
     .locals 2
-    .param p1    # [B
 
     const/4 v1, 0x0
 
@@ -741,7 +717,6 @@
 
 .method public endTransaction(Landroid/os/CancellationSignal;)V
     .locals 1
-    .param p1    # Landroid/os/CancellationSignal;
 
     invoke-direct {p0}, Landroid/database/sqlite/SQLiteSession;->throwIfNoTransaction()V
 
@@ -769,10 +744,6 @@
 
 .method public execute(Ljava/lang/String;[Ljava/lang/Object;ILandroid/os/CancellationSignal;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/Object;
-    .param p3    # I
-    .param p4    # Landroid/os/CancellationSignal;
 
     if-nez p1, :cond_0
 
@@ -818,10 +789,6 @@
 
 .method public executeForBlobFileDescriptor(Ljava/lang/String;[Ljava/lang/Object;ILandroid/os/CancellationSignal;)Landroid/os/ParcelFileDescriptor;
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/Object;
-    .param p3    # I
-    .param p4    # Landroid/os/CancellationSignal;
 
     if-nez p1, :cond_0
 
@@ -871,10 +838,6 @@
 
 .method public executeForChangedRowCount(Ljava/lang/String;[Ljava/lang/Object;ILandroid/os/CancellationSignal;)I
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/Object;
-    .param p3    # I
-    .param p4    # Landroid/os/CancellationSignal;
 
     if-nez p1, :cond_0
 
@@ -924,14 +887,6 @@
 
 .method public executeForCursorWindow(Ljava/lang/String;[Ljava/lang/Object;Landroid/database/CursorWindow;IIZILandroid/os/CancellationSignal;)I
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/Object;
-    .param p3    # Landroid/database/CursorWindow;
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Z
-    .param p7    # I
-    .param p8    # Landroid/os/CancellationSignal;
 
     if-nez p1, :cond_0
 
@@ -1016,10 +971,6 @@
 
 .method public executeForLastInsertedRowId(Ljava/lang/String;[Ljava/lang/Object;ILandroid/os/CancellationSignal;)J
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/Object;
-    .param p3    # I
-    .param p4    # Landroid/os/CancellationSignal;
 
     if-nez p1, :cond_0
 
@@ -1069,10 +1020,6 @@
 
 .method public executeForLong(Ljava/lang/String;[Ljava/lang/Object;ILandroid/os/CancellationSignal;)J
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/Object;
-    .param p3    # I
-    .param p4    # Landroid/os/CancellationSignal;
 
     if-nez p1, :cond_0
 
@@ -1122,10 +1069,6 @@
 
 .method public executeForString(Ljava/lang/String;[Ljava/lang/Object;ILandroid/os/CancellationSignal;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/Object;
-    .param p3    # I
-    .param p4    # Landroid/os/CancellationSignal;
 
     if-nez p1, :cond_0
 
@@ -1235,10 +1178,6 @@
 
 .method public prepare(Ljava/lang/String;ILandroid/os/CancellationSignal;Landroid/database/sqlite/SQLiteStatementInfo;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Landroid/os/CancellationSignal;
-    .param p4    # Landroid/database/sqlite/SQLiteStatementInfo;
 
     if-nez p1, :cond_0
 
@@ -1295,9 +1234,6 @@
 
 .method public yieldTransaction(JZLandroid/os/CancellationSignal;)Z
     .locals 2
-    .param p1    # J
-    .param p3    # Z
-    .param p4    # Landroid/os/CancellationSignal;
 
     const/4 v0, 0x0
 

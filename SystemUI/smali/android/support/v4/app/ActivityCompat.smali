@@ -14,7 +14,6 @@
 
 .method public static finishAffinity(Landroid/app/Activity;)V
     .locals 2
-    .param p0    # Landroid/app/Activity;
 
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
@@ -35,7 +34,6 @@
 
 .method public static invalidateOptionsMenu(Landroid/app/Activity;)Z
     .locals 2
-    .param p0    # Landroid/app/Activity;
 
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
@@ -58,9 +56,6 @@
 
 .method public static startActivity(Landroid/app/Activity;Landroid/content/Intent;Landroid/os/Bundle;)V
     .locals 2
-    .param p0    # Landroid/app/Activity;
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Landroid/os/Bundle;
 
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
@@ -81,10 +76,6 @@
 
 .method public static startActivityForResult(Landroid/app/Activity;Landroid/content/Intent;ILandroid/os/Bundle;)V
     .locals 2
-    .param p0    # Landroid/app/Activity;
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
-    .param p3    # Landroid/os/Bundle;
 
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 

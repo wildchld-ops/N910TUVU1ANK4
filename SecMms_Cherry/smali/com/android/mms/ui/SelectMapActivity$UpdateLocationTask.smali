@@ -42,8 +42,6 @@
 
 .method synthetic constructor <init>(Lcom/android/mms/ui/SelectMapActivity;Lcom/android/mms/ui/SelectMapActivity$1;)V
     .locals 0
-    .param p1    # Lcom/android/mms/ui/SelectMapActivity;
-    .param p2    # Lcom/android/mms/ui/SelectMapActivity$1;
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/SelectMapActivity$UpdateLocationTask;-><init>(Lcom/android/mms/ui/SelectMapActivity;)V
 
@@ -54,7 +52,6 @@
 # virtual methods
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [Lcom/google/android/maps/GeoPoint;
 
@@ -67,7 +64,6 @@
 
 .method protected varargs doInBackground([Lcom/google/android/maps/GeoPoint;)Ljava/lang/String;
     .locals 2
-    .param p1    # [Lcom/google/android/maps/GeoPoint;
 
     iget-object v0, p0, Lcom/android/mms/ui/SelectMapActivity$UpdateLocationTask;->this$0:Lcom/android/mms/ui/SelectMapActivity;
 
@@ -85,7 +81,6 @@
 
 .method protected bridge synthetic onPostExecute(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Ljava/lang/String;
 
@@ -96,7 +91,6 @@
 
 .method protected onPostExecute(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 

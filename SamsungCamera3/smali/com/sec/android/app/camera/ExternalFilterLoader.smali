@@ -250,7 +250,6 @@
 
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;)V
     .locals 2
-    .param p1    # Lcom/sec/android/app/camera/Camera;
 
     const/4 v0, 0x0
 
@@ -299,8 +298,6 @@
 
 .method static synthetic access$202(Lcom/sec/android/app/camera/ExternalFilterLoader;Z)Z
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/ExternalFilterLoader;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/ExternalFilterLoader;->mFilterExist:Z
 
@@ -309,8 +306,6 @@
 
 .method static synthetic access$302(Lcom/sec/android/app/camera/ExternalFilterLoader;Z)Z
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/ExternalFilterLoader;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/ExternalFilterLoader;->mIsDBChanged:Z
 
@@ -321,7 +316,6 @@
 # virtual methods
 .method public clear(Z)V
     .locals 2
-    .param p1    # Z
 
     sget-object v0, Lcom/sec/android/app/camera/ExternalFilterLoader;->TAG:Ljava/lang/String;
 
@@ -364,7 +358,6 @@
 
 .method public getExternalEffectResourcePath(I)Ljava/lang/String;
     .locals 2
-    .param p1    # I
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -416,7 +409,6 @@
 
 .method public getExternalEffectsId(I)I
     .locals 2
-    .param p1    # I
 
     sget-object v0, Lcom/sec/android/app/camera/ExternalFilterLoader;->mExternalEffects:Ljava/util/ArrayList;
 
@@ -471,7 +463,6 @@
 
 .method public getExternalEffectsName(I)Ljava/lang/String;
     .locals 3
-    .param p1    # I
 
     sget-object v1, Lcom/sec/android/app/camera/ExternalFilterLoader;->mExternalEffects:Ljava/util/ArrayList;
 
@@ -551,7 +542,6 @@
 
 .method public getExternalFilterForSet(I)Ljava/lang/String;
     .locals 5
-    .param p1    # I
 
     new-instance v2, Ljava/lang/StringBuffer;
 
@@ -601,7 +591,6 @@
 
 .method public getExternalFilterFullName(I)Ljava/lang/String;
     .locals 2
-    .param p1    # I
 
     sget-object v0, Lcom/sec/android/app/camera/ExternalFilterLoader;->mExternalEffects:Ljava/util/ArrayList;
 
@@ -656,7 +645,6 @@
 
 .method public getExternalFilterHandler(I)Ljava/lang/String;
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/ExternalFilterLoader;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -697,7 +685,6 @@
 
 .method public getExternalFilterHeight(I)I
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/ExternalFilterLoader;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -738,7 +725,6 @@
 
 .method public getExternalFilterName(I)Ljava/lang/String;
     .locals 3
-    .param p1    # I
 
     sget-object v1, Lcom/sec/android/app/camera/ExternalFilterLoader;->mExternalEffects:Ljava/util/ArrayList;
 
@@ -805,7 +791,6 @@
 
 .method public getExternalFilterPackageName(I)Ljava/lang/String;
     .locals 2
-    .param p1    # I
 
     sget-object v0, Lcom/sec/android/app/camera/ExternalFilterLoader;->mExternalEffects:Ljava/util/ArrayList;
 
@@ -860,7 +845,6 @@
 
 .method public getExternalFilterPosx(I)I
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/ExternalFilterLoader;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -901,7 +885,6 @@
 
 .method public getExternalFilterPosy(I)I
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/ExternalFilterLoader;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -942,7 +925,6 @@
 
 .method public getExternalFilterType(I)Ljava/lang/String;
     .locals 2
-    .param p1    # I
 
     sget-object v0, Lcom/sec/android/app/camera/ExternalFilterLoader;->mExternalEffects:Ljava/util/ArrayList;
 
@@ -963,7 +945,6 @@
 
 .method public getExternalFilterWidth(I)I
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/ExternalFilterLoader;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -1004,7 +985,6 @@
 
 .method public isExternalEffect(I)Z
     .locals 1
-    .param p1    # I
 
     const/16 v0, 0x1f40
 
@@ -1112,7 +1092,6 @@
 
 .method public isValidExternalId(I)Z
     .locals 2
-    .param p1    # I
 
     add-int/lit16 v0, p1, -0x1f40
 
@@ -1670,7 +1649,6 @@
 
 .method public registerObserver(Lcom/sec/android/app/camera/Camera;)V
     .locals 4
-    .param p1    # Lcom/sec/android/app/camera/Camera;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/ExternalFilterLoader;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -1691,7 +1669,6 @@
 
 .method public unRegisterObserver(Lcom/sec/android/app/camera/Camera;)V
     .locals 2
-    .param p1    # Lcom/sec/android/app/camera/Camera;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/ExternalFilterLoader;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 

@@ -30,7 +30,6 @@
 # direct methods
 .method public constructor <init>(Landroid/service/textservice/SpellCheckerService;)V
     .locals 1
-    .param p1    # Landroid/service/textservice/SpellCheckerService;
 
     invoke-direct {p0}, Lcom/android/internal/textservice/ISpellCheckerService$Stub;-><init>()V
 
@@ -47,9 +46,6 @@
 # virtual methods
 .method public getISpellCheckerSession(Ljava/lang/String;Lcom/android/internal/textservice/ISpellCheckerSessionListener;Landroid/os/Bundle;)Lcom/android/internal/textservice/ISpellCheckerSession;
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/internal/textservice/ISpellCheckerSessionListener;
-    .param p3    # Landroid/os/Bundle;
 
     iget-object v3, p0, Landroid/service/textservice/SpellCheckerService$SpellCheckerServiceBinder;->mInternalServiceRef:Ljava/lang/ref/WeakReference;
 

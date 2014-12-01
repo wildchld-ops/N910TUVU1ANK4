@@ -43,8 +43,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
 
     const v0, 0x7fffffff
 
@@ -55,9 +53,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Ljava/lang/String;I)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     invoke-direct {p0}, Landroid/database/DataSetObservable;-><init>()V
 
@@ -317,8 +312,6 @@
 
 .method public removeData(Ljava/lang/String;Z)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     iget-object v0, p0, Lcom/sec/orca/shop/client/library/MruDataManager;->mDataList:Ljava/util/List;
 
@@ -338,8 +331,6 @@
 
 .method public updateData(Ljava/lang/String;Z)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     iget-object v1, p0, Lcom/sec/orca/shop/client/library/MruDataManager;->mDataList:Ljava/util/List;
 
@@ -397,7 +388,6 @@
 
 .method public updateData(Ljava/util/List;Z)V
     .locals 5
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

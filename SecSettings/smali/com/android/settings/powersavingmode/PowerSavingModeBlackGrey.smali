@@ -51,7 +51,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/powersavingmode/PowerSavingModeBlackGrey;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/powersavingmode/PowerSavingModeBlackGrey;
 
     invoke-virtual {p0}, Lcom/android/settings/SettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -62,7 +61,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/powersavingmode/PowerSavingModeBlackGrey;)Landroid/widget/Switch;
     .locals 1
-    .param p0    # Lcom/android/settings/powersavingmode/PowerSavingModeBlackGrey;
 
     iget-object v0, p0, Lcom/android/settings/powersavingmode/PowerSavingModeBlackGrey;->mActionBarSwitch:Landroid/widget/Switch;
 
@@ -71,7 +69,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/powersavingmode/PowerSavingModeBlackGrey;)Lcom/android/settings/helpdialog/TwHelpDialog;
     .locals 1
-    .param p0    # Lcom/android/settings/powersavingmode/PowerSavingModeBlackGrey;
 
     iget-object v0, p0, Lcom/android/settings/powersavingmode/PowerSavingModeBlackGrey;->mPowerSavingHelpComplateDialog:Lcom/android/settings/helpdialog/TwHelpDialog;
 
@@ -590,8 +587,6 @@
 
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 7
-    .param p1    # Landroid/widget/CompoundButton;
-    .param p2    # Z
 
     const/4 v6, 0x1
 
@@ -716,7 +711,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 1
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -745,7 +739,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v2, 0x0
 
@@ -809,9 +802,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 5
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const/16 v4, 0x8
 

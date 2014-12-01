@@ -39,7 +39,6 @@
 # direct methods
 .method public constructor <init>(Lcom/sec/knox/container/EnterpriseContainerService;I)V
     .locals 2
-    .param p2    # I
 
     const/4 v1, 0x0
 
@@ -90,8 +89,6 @@
 
 .method public packageInstalled(Ljava/lang/String;I)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v6, 0x1
 

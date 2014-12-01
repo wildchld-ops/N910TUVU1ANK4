@@ -36,7 +36,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/media/RemoteDisplayProviderProxy;)V
     .locals 2
-    .param p1    # Lcom/android/server/media/RemoteDisplayProviderProxy;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -77,7 +76,6 @@
 
 .method private assignRouteUniqueId(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -102,7 +100,6 @@
 
 .method private findRouteByDescriptorId(Ljava/lang/String;)I
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     iget-object v3, p0, Lcom/android/server/media/MediaRouterService$UserHandler$ProviderRecord;->mRoutes:Ljava/util/ArrayList;
 
@@ -151,7 +148,6 @@
 # virtual methods
 .method public appendClientState(Landroid/media/MediaRouterClientState;)V
     .locals 4
-    .param p1    # Landroid/media/MediaRouterClientState;
 
     iget-object v2, p0, Lcom/android/server/media/MediaRouterService$UserHandler$ProviderRecord;->mRoutes:Ljava/util/ArrayList;
 
@@ -190,8 +186,6 @@
 
 .method public dump(Ljava/io/PrintWriter;Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/io/PrintWriter;
-    .param p2    # Ljava/lang/String;
 
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -287,7 +281,6 @@
 
 .method public findRouteByUniqueId(Ljava/lang/String;)Lcom/android/server/media/MediaRouterService$UserHandler$RouteRecord;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     iget-object v3, p0, Lcom/android/server/media/MediaRouterService$UserHandler$ProviderRecord;->mRoutes:Ljava/util/ArrayList;
 
@@ -380,7 +373,6 @@
 
 .method public updateDescriptor(Landroid/media/RemoteDisplayState;)Z
     .locals 14
-    .param p1    # Landroid/media/RemoteDisplayState;
 
     const/4 v0, 0x0
 

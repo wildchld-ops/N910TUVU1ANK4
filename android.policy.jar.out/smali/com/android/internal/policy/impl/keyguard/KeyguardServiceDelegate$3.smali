@@ -36,7 +36,6 @@
 # virtual methods
 .method public onShown(Landroid/os/IBinder;)V
     .locals 2
-    .param p1    # Landroid/os/IBinder;
 
     const-string v0, "KeyguardServiceDelegate"
 

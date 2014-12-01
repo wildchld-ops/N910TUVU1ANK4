@@ -62,8 +62,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/SparseArray;I)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -211,7 +209,6 @@
 
 .method private putEnabledCocktailsStr(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/server/cocktailbar/utils/CocktailBarUtils$CocktailBarSettings;->mResolver:Landroid/content/ContentResolver;
 
@@ -596,7 +593,6 @@
 
 .method public isEnabledCocktail(I)Z
     .locals 4
-    .param p1    # I
 
     iget-object v3, p0, Lcom/android/server/cocktailbar/utils/CocktailBarUtils$CocktailBarSettings;->mEnabledCocktailListCache:Ljava/util/ArrayList;
 
@@ -642,7 +638,6 @@
 
 .method public isEnabledCocktail(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v2, p0, Lcom/android/server/cocktailbar/utils/CocktailBarUtils$CocktailBarSettings;->mEnabledCocktailListCache:Ljava/util/ArrayList;
 
@@ -682,7 +677,6 @@
 
 .method public setCurrentUserId(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/cocktailbar/utils/CocktailBarUtils$CocktailBarSettings;->mCurrentUserId:I
 

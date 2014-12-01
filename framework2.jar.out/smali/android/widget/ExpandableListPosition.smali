@@ -112,10 +112,6 @@
 
 .method static obtain(IIII)Landroid/widget/ExpandableListPosition;
     .locals 1
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     invoke-static {}, Landroid/widget/ExpandableListPosition;->getRecycledOrCreate()Landroid/widget/ExpandableListPosition;
 
@@ -134,8 +130,6 @@
 
 .method static obtainChildPosition(II)Landroid/widget/ExpandableListPosition;
     .locals 2
-    .param p0    # I
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -150,7 +144,6 @@
 
 .method static obtainGroupPosition(I)Landroid/widget/ExpandableListPosition;
     .locals 2
-    .param p0    # I
 
     const/4 v1, 0x0
 
@@ -165,7 +158,6 @@
 
 .method static obtainPosition(J)Landroid/widget/ExpandableListPosition;
     .locals 4
-    .param p0    # J
 
     const/4 v3, 0x1
 

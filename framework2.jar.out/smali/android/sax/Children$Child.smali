@@ -23,11 +23,6 @@
 # direct methods
 .method constructor <init>(Landroid/sax/Element;Ljava/lang/String;Ljava/lang/String;II)V
     .locals 0
-    .param p1    # Landroid/sax/Element;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
-    .param p5    # I
 
     invoke-direct {p0, p1, p2, p3, p4}, Landroid/sax/Element;-><init>(Landroid/sax/Element;Ljava/lang/String;Ljava/lang/String;I)V
 

@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Landroid/media/audiofx/Equalizer;Landroid/media/audiofx/Equalizer$1;)V
     .locals 0
-    .param p1    # Landroid/media/audiofx/Equalizer;
-    .param p2    # Landroid/media/audiofx/Equalizer$1;
 
     invoke-direct {p0, p1}, Landroid/media/audiofx/Equalizer$BaseParameterListener;-><init>(Landroid/media/audiofx/Equalizer;)V
 
@@ -46,10 +44,6 @@
 # virtual methods
 .method public onParameterChange(Landroid/media/audiofx/AudioEffect;I[B[B)V
     .locals 9
-    .param p1    # Landroid/media/audiofx/AudioEffect;
-    .param p2    # I
-    .param p3    # [B
-    .param p4    # [B
 
     const/4 v8, -0x1
 

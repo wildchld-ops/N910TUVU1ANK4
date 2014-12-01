@@ -50,7 +50,6 @@
 
 .method private constructor <init>(Landroid/os/Parcel;)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0, p1}, Landroid/view/View$BaseSavedState;-><init>(Landroid/os/Parcel;)V
 
@@ -77,8 +76,6 @@
 
 .method synthetic constructor <init>(Landroid/os/Parcel;Landroid/widget/DatePicker$1;)V
     .locals 0
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # Landroid/widget/DatePicker$1;
 
     invoke-direct {p0, p1}, Landroid/widget/DatePicker$SavedState;-><init>(Landroid/os/Parcel;)V
 
@@ -87,10 +84,6 @@
 
 .method private constructor <init>(Landroid/os/Parcelable;III)V
     .locals 0
-    .param p1    # Landroid/os/Parcelable;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-direct {p0, p1}, Landroid/view/View$BaseSavedState;-><init>(Landroid/os/Parcelable;)V
 
@@ -105,11 +98,6 @@
 
 .method synthetic constructor <init>(Landroid/os/Parcelable;IIILandroid/widget/DatePicker$1;)V
     .locals 0
-    .param p1    # Landroid/os/Parcelable;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Landroid/widget/DatePicker$1;
 
     invoke-direct {p0, p1, p2, p3, p4}, Landroid/widget/DatePicker$SavedState;-><init>(Landroid/os/Parcelable;III)V
 
@@ -118,7 +106,6 @@
 
 .method static synthetic access$1600(Landroid/widget/DatePicker$SavedState;)I
     .locals 1
-    .param p0    # Landroid/widget/DatePicker$SavedState;
 
     iget v0, p0, Landroid/widget/DatePicker$SavedState;->mYear:I
 
@@ -127,7 +114,6 @@
 
 .method static synthetic access$1700(Landroid/widget/DatePicker$SavedState;)I
     .locals 1
-    .param p0    # Landroid/widget/DatePicker$SavedState;
 
     iget v0, p0, Landroid/widget/DatePicker$SavedState;->mMonth:I
 
@@ -136,7 +122,6 @@
 
 .method static synthetic access$1800(Landroid/widget/DatePicker$SavedState;)I
     .locals 1
-    .param p0    # Landroid/widget/DatePicker$SavedState;
 
     iget v0, p0, Landroid/widget/DatePicker$SavedState;->mDay:I
 
@@ -147,8 +132,6 @@
 # virtual methods
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     invoke-super {p0, p1, p2}, Landroid/view/AbsSavedState;->writeToParcel(Landroid/os/Parcel;I)V
 

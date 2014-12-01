@@ -170,11 +170,11 @@
 
     invoke-virtual {v0, v1, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/AnsweringCall;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    invoke-virtual {v1, v0}, Landroid/content/ContextWrapper;->sendBroadcast(Landroid/content/Intent;)V
+    invoke-virtual {v1, v0}, Landroid/app/Activity;->sendBroadcast(Landroid/content/Intent;)V
 
     return-void
 .end method
@@ -191,7 +191,7 @@
 
     invoke-direct {p0}, Lcom/android/phone/callsettings/AnsweringCall;->turnOnAirMotionEngine()V
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/AnsweringCall;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -205,7 +205,7 @@
     return-void
 
     :cond_0
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/AnsweringCall;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -225,7 +225,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v3}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v3}, Lcom/android/phone/PhoneGlobals;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -284,7 +284,7 @@
 
     const/4 v6, 0x0
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/AnsweringCall;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v4
 
@@ -361,7 +361,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v3}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v3}, Lcom/android/phone/PhoneGlobals;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v3
 
@@ -401,7 +401,7 @@
 
     const/4 v4, 0x1
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/AnsweringCall;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
@@ -435,11 +435,11 @@
 
     invoke-virtual {v0, v2, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/AnsweringCall;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
-    invoke-virtual {v2, v0}, Landroid/content/ContextWrapper;->sendBroadcast(Landroid/content/Intent;)V
+    invoke-virtual {v2, v0}, Landroid/app/Activity;->sendBroadcast(Landroid/content/Intent;)V
 
     :cond_0
     return-void
@@ -450,11 +450,11 @@
 .method public getVoiceCmdSummaryString()Ljava/lang/String;
     .locals 5
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/AnsweringCall;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
 
-    invoke-virtual {v3}, Landroid/content/ContextWrapper;->getBaseContext()Landroid/content/Context;
+    invoke-virtual {v3}, Landroid/app/Activity;->getBaseContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -502,7 +502,7 @@
 
     const/4 v9, 0x0
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/AnsweringCall;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v11
 
@@ -517,7 +517,7 @@
     move v8, v9
 
     :goto_0
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/AnsweringCall;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v11
 
@@ -531,11 +531,11 @@
 
     if-nez v7, :cond_1
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/AnsweringCall;->getActivity()Landroid/app/Activity;
 
     move-result-object v11
 
-    invoke-virtual {v11}, Landroid/content/ContextWrapper;->getBaseContext()Landroid/content/Context;
+    invoke-virtual {v11}, Landroid/app/Activity;->getBaseContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -586,15 +586,15 @@
 
     invoke-direct {v11, p0}, Lcom/android/phone/callsettings/AnsweringCall$1;-><init>(Lcom/android/phone/callsettings/AnsweringCall;)V
 
-    invoke-virtual {v0, v11}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v0, v11}, Landroid/widget/CheckBox;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     iget-object v11, p0, Lcom/android/phone/callsettings/AnsweringCall;->mVoiceCmdChecked:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v11, v9}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v11, v9}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     new-instance v9, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/AnsweringCall;->getActivity()Landroid/app/Activity;
 
     move-result-object v11
 
@@ -634,22 +634,22 @@
 
     move-result-object v2
 
-    invoke-virtual {v2}, Landroid/app/Dialog;->show()V
+    invoke-virtual {v2}, Landroid/app/AlertDialog;->show()V
 
     new-instance v9, Lcom/android/phone/callsettings/AnsweringCall$4;
 
     invoke-direct {v9, p0}, Lcom/android/phone/callsettings/AnsweringCall$4;-><init>(Lcom/android/phone/callsettings/AnsweringCall;)V
 
-    invoke-virtual {v2, v9}, Landroid/app/Dialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
+    invoke-virtual {v2, v9}, Landroid/app/AlertDialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
     new-instance v9, Lcom/android/phone/callsettings/AnsweringCall$5;
 
     invoke-direct {v9, p0}, Lcom/android/phone/callsettings/AnsweringCall$5;-><init>(Lcom/android/phone/callsettings/AnsweringCall;)V
 
-    invoke-virtual {v2, v9}, Landroid/app/Dialog;->setOnKeyListener(Landroid/content/DialogInterface$OnKeyListener;)V
+    invoke-virtual {v2, v9}, Landroid/app/AlertDialog;->setOnKeyListener(Landroid/content/DialogInterface$OnKeyListener;)V
 
     :cond_1
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/AnsweringCall;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v9
 
@@ -657,7 +657,7 @@
 
     invoke-static {v9, v11, v8}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/AnsweringCall;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v11
 
@@ -695,13 +695,13 @@
 
     const v3, 0x7f060001
 
-    invoke-virtual {p0, v3}, Landroid/preference/PreferenceFragment;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v3}, Lcom/android/phone/callsettings/AnsweringCall;->addPreferencesFromResource(I)V
 
-    invoke-virtual {p0}, Landroid/preference/PreferenceFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/AnsweringCall;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v3
 
-    invoke-virtual {v3}, Landroid/preference/Preference;->getSharedPreferences()Landroid/content/SharedPreferences;
+    invoke-virtual {v3}, Landroid/preference/PreferenceScreen;->getSharedPreferences()Landroid/content/SharedPreferences;
 
     move-result-object v3
 
@@ -709,7 +709,7 @@
 
     const-string v3, "anykey_mode_preference"
 
-    invoke-virtual {p0, v3}, Landroid/preference/PreferenceFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v3}, Lcom/android/phone/callsettings/AnsweringCall;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v3
 
@@ -719,7 +719,7 @@
 
     const-string v3, "voice_cmd_preference"
 
-    invoke-virtual {p0, v3}, Landroid/preference/PreferenceFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v3}, Lcom/android/phone/callsettings/AnsweringCall;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v3
 
@@ -729,7 +729,7 @@
 
     const-string v3, "powerkey_end_preference"
 
-    invoke-virtual {p0, v3}, Landroid/preference/PreferenceFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v3}, Lcom/android/phone/callsettings/AnsweringCall;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v3
 
@@ -739,7 +739,7 @@
 
     const-string v3, "callsettings_answering_in_external_screen_preference"
 
-    invoke-virtual {p0, v3}, Landroid/preference/PreferenceFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v3}, Lcom/android/phone/callsettings/AnsweringCall;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v3
 
@@ -749,7 +749,7 @@
 
     const-string v3, "folder_mode_preference"
 
-    invoke-virtual {p0, v3}, Landroid/preference/PreferenceFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v3}, Lcom/android/phone/callsettings/AnsweringCall;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v3
 
@@ -759,7 +759,7 @@
 
     const-string v3, "callsettings_answering_accessibility_tapping"
 
-    invoke-virtual {p0, v3}, Landroid/preference/PreferenceFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v3}, Lcom/android/phone/callsettings/AnsweringCall;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v3
 
@@ -769,7 +769,7 @@
 
     const-string v3, "callsettings_answering_accessibility_headtracking"
 
-    invoke-virtual {p0, v3}, Landroid/preference/PreferenceFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v3}, Lcom/android/phone/callsettings/AnsweringCall;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v3
 
@@ -779,7 +779,7 @@
 
     const-string v3, "gesture_callaccept_setting_key"
 
-    invoke-virtual {p0, v3}, Landroid/preference/PreferenceFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v3}, Lcom/android/phone/callsettings/AnsweringCall;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v3
 
@@ -787,17 +787,17 @@
 
     iput-object v3, p0, Lcom/android/phone/callsettings/AnsweringCall;->mGestureCallAcceptPreference:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {p0}, Landroid/preference/PreferenceFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/AnsweringCall;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v2
 
     const-string v3, "gesture_callaccept_setting_key"
 
-    invoke-virtual {v2, v3}, Landroid/preference/PreferenceGroup;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {v2, v3}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v3
 
-    invoke-virtual {v2, v3}, Landroid/preference/PreferenceGroup;->removePreference(Landroid/preference/Preference;)Z
+    invoke-virtual {v2, v3}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
     const-string v3, "hw_home_key"
 
@@ -809,11 +809,11 @@
 
     const-string v3, "anykey_mode_preference"
 
-    invoke-virtual {v2, v3}, Landroid/preference/PreferenceGroup;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {v2, v3}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v3
 
-    invoke-virtual {v2, v3}, Landroid/preference/PreferenceGroup;->removePreference(Landroid/preference/Preference;)Z
+    invoke-virtual {v2, v3}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
     :cond_0
     const-string v3, "answering_call_in_external_screen"
@@ -826,11 +826,11 @@
 
     const-string v3, "callsettings_answering_in_external_screen_preference"
 
-    invoke-virtual {v2, v3}, Landroid/preference/PreferenceGroup;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {v2, v3}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v3
 
-    invoke-virtual {v2, v3}, Landroid/preference/PreferenceGroup;->removePreference(Landroid/preference/Preference;)Z
+    invoke-virtual {v2, v3}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
     :cond_1
     const-string v3, "barge_in"
@@ -843,11 +843,11 @@
 
     const-string v3, "voice_cmd_preference"
 
-    invoke-virtual {v2, v3}, Landroid/preference/PreferenceGroup;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {v2, v3}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v3
 
-    invoke-virtual {v2, v3}, Landroid/preference/PreferenceGroup;->removePreference(Landroid/preference/Preference;)Z
+    invoke-virtual {v2, v3}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
     :cond_2
     const-string v3, "support_folder_hardkey"
@@ -860,14 +860,14 @@
 
     const-string v3, "folder_mode_preference"
 
-    invoke-virtual {v2, v3}, Landroid/preference/PreferenceGroup;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {v2, v3}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v3
 
-    invoke-virtual {v2, v3}, Landroid/preference/PreferenceGroup;->removePreference(Landroid/preference/Preference;)Z
+    invoke-virtual {v2, v3}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
     :cond_3
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/AnsweringCall;->getIntent()Landroid/content/Intent;
 
     move-result-object v3
 
@@ -883,22 +883,22 @@
 
     const-string v3, "callsettings_answering_accessibility_tapping"
 
-    invoke-virtual {v2, v3}, Landroid/preference/PreferenceGroup;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {v2, v3}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v3
 
-    invoke-virtual {v2, v3}, Landroid/preference/PreferenceGroup;->removePreference(Landroid/preference/Preference;)Z
+    invoke-virtual {v2, v3}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
     :cond_4
     const-string v3, "callsettings_answering_accessibility_headtracking"
 
-    invoke-virtual {v2, v3}, Landroid/preference/PreferenceGroup;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {v2, v3}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v3
 
-    invoke-virtual {v2, v3}, Landroid/preference/PreferenceGroup;->removePreference(Landroid/preference/Preference;)Z
+    invoke-virtual {v2, v3}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getActionBar()Landroid/app/ActionBar;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/AnsweringCall;->getActionBar()Landroid/app/ActionBar;
 
     move-result-object v0
 
@@ -924,7 +924,7 @@
 
     if-ne v1, v2, :cond_1
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/AnsweringCall;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v2
 
@@ -934,7 +934,7 @@
 
     if-gtz v2, :cond_1
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/AnsweringCall;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -990,10 +990,10 @@
 
     invoke-virtual {v0, v2}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
-    invoke-virtual {p0, v0}, Landroid/app/Fragment;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/callsettings/AnsweringCall;->startActivity(Landroid/content/Intent;)V
 
     :cond_0
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/AnsweringCall;->finish()V
 
     const/4 v2, 0x1
 
@@ -1035,7 +1035,7 @@
 
     iget-object v3, p0, Lcom/android/phone/callsettings/AnsweringCall;->mVoiceCmdChecked:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v3, v1}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+    invoke-virtual {v3, v1}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     invoke-virtual {p0}, Lcom/android/phone/callsettings/AnsweringCall;->handleVoiceCmd()V
 
@@ -1050,7 +1050,7 @@
 
     iget-object v3, p0, Lcom/android/phone/callsettings/AnsweringCall;->mAccessibilityTapping:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v3}, Landroid/preference/TwoStatePreference;->isChecked()Z
+    invoke-virtual {v3}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
     move-result v3
 
@@ -1059,7 +1059,7 @@
     move v1, v2
 
     :cond_2
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/AnsweringCall;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v3
 
@@ -1074,7 +1074,7 @@
 
     if-ne p2, v3, :cond_5
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/AnsweringCall;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v3
 
@@ -1093,7 +1093,7 @@
 
     new-instance v3, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/AnsweringCall;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
 
@@ -1103,7 +1103,7 @@
 
     iget-object v3, p0, Lcom/android/phone/callsettings/AnsweringCall;->mAlertDialog:Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/AnsweringCall;->getResources()Landroid/content/res/Resources;
 
     move-result-object v4
 
@@ -1153,7 +1153,7 @@
     goto :goto_1
 
     :cond_5
-    invoke-super {p0, p1, p2}, Landroid/preference/PreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
+    invoke-super {p0, p1, p2}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
 
     move-result v2
 
@@ -1177,7 +1177,7 @@
 
     invoke-interface {v6, p0}, Landroid/content/SharedPreferences;->registerOnSharedPreferenceChangeListener(Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;)V
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/AnsweringCall;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v6
 
@@ -1187,7 +1187,7 @@
 
     move-result v4
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/AnsweringCall;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v6
 
@@ -1227,7 +1227,7 @@
 
     sget-boolean v9, Lcom/android/phone/callsettings/AnsweringCall;->mCheckValue:Z
 
-    invoke-virtual {v6, v9}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+    invoke-virtual {v6, v9}, Lcom/android/phone/callsettings/PowerKeyEndPreference;->setChecked(Z)V
 
     iput-boolean v7, p0, Lcom/android/phone/callsettings/AnsweringCall;->fromSettingSearch:Z
 
@@ -1249,16 +1249,16 @@
 
     const v9, 0x7f090863
 
-    invoke-virtual {v6, v9}, Landroid/preference/Preference;->setTitle(I)V
+    invoke-virtual {v6, v9}, Lcom/android/phone/callsettings/PowerKeyEndPreference;->setTitle(I)V
 
     iget-object v6, p0, Lcom/android/phone/callsettings/AnsweringCall;->mPowerkeyPreference:Lcom/android/phone/callsettings/PowerKeyEndPreference;
 
     const v9, 0x7f090864
 
-    invoke-virtual {v6, v9}, Landroid/preference/Preference;->setSummary(I)V
+    invoke-virtual {v6, v9}, Lcom/android/phone/callsettings/PowerKeyEndPreference;->setSummary(I)V
 
     :cond_1
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/AnsweringCall;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v6
 
@@ -1279,7 +1279,7 @@
     move v6, v7
 
     :goto_1
-    invoke-virtual {v9, v6}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+    invoke-virtual {v9, v6}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     :cond_2
     sget-boolean v6, Lcom/android/phone/callsettings/AnsweringCall;->mOpenDetailMenu:Z
@@ -1308,7 +1308,7 @@
 
     sget-boolean v9, Lcom/android/phone/callsettings/AnsweringCall;->mCheckValue:Z
 
-    invoke-virtual {v6, v9}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+    invoke-virtual {v6, v9}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     iput-boolean v7, p0, Lcom/android/phone/callsettings/AnsweringCall;->fromSettingSearch:Z
 
@@ -1321,7 +1321,7 @@
 
     if-eqz v6, :cond_3
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/AnsweringCall;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v6
 
@@ -1338,17 +1338,17 @@
     :goto_3
     iget-object v6, p0, Lcom/android/phone/callsettings/AnsweringCall;->mAnsweringExternalScreen:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v6, v2}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+    invoke-virtual {v6, v2}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     if-nez v2, :cond_d
 
     iget-object v6, p0, Lcom/android/phone/callsettings/AnsweringCall;->mAnykeyModeChecked:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v6, v8}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+    invoke-virtual {v6, v8}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     iget-object v6, p0, Lcom/android/phone/callsettings/AnsweringCall;->mAnykeyModeChecked:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v6, v8}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v6, v8}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     :cond_3
     :goto_4
@@ -1378,14 +1378,14 @@
 
     sget-boolean v9, Lcom/android/phone/callsettings/AnsweringCall;->mCheckValue:Z
 
-    invoke-virtual {v6, v9}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+    invoke-virtual {v6, v9}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     iput-boolean v7, p0, Lcom/android/phone/callsettings/AnsweringCall;->fromSettingSearch:Z
 
     :goto_5
     iget-object v6, p0, Lcom/android/phone/callsettings/AnsweringCall;->mVoiceCmdChecked:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v6, v7}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v6, v7}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     iget-object v6, p0, Lcom/android/phone/callsettings/AnsweringCall;->mVoiceCmdChecked:Landroid/preference/CheckBoxPreference;
 
@@ -1393,7 +1393,7 @@
 
     move-result-object v9
 
-    invoke-virtual {v6, v9}, Landroid/preference/Preference;->setSummary(Ljava/lang/CharSequence;)V
+    invoke-virtual {v6, v9}, Landroid/preference/CheckBoxPreference;->setSummary(Ljava/lang/CharSequence;)V
 
     iget-boolean v6, p0, Lcom/android/phone/callsettings/AnsweringCall;->fromSettingSearch:Z
 
@@ -1439,7 +1439,7 @@
 
     if-eqz v6, :cond_f
 
-    invoke-virtual {p0}, Landroid/preference/PreferenceFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/AnsweringCall;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v6
 
@@ -1457,7 +1457,7 @@
 
     if-eqz v6, :cond_5
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/AnsweringCall;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v6
 
@@ -1478,7 +1478,7 @@
 
     iget-object v6, p0, Lcom/android/phone/callsettings/AnsweringCall;->mFolderKey:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v6, v1}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+    invoke-virtual {v6, v1}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     :cond_5
     const-string v6, "gesture_callaccept"
@@ -1489,7 +1489,7 @@
 
     if-eqz v6, :cond_6
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/AnsweringCall;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v6
 
@@ -1510,11 +1510,11 @@
 
     iget-object v6, p0, Lcom/android/phone/callsettings/AnsweringCall;->mGestureCallAcceptPreference:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v6, v7}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v6, v7}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     iget-object v6, p0, Lcom/android/phone/callsettings/AnsweringCall;->mGestureCallAcceptPreference:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v6, v3}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+    invoke-virtual {v6, v3}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     const-string v6, "support_safetycare"
 
@@ -1536,11 +1536,11 @@
 
     iget-object v6, p0, Lcom/android/phone/callsettings/AnsweringCall;->mGestureCallAcceptPreference:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v6, v8}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+    invoke-virtual {v6, v8}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     iget-object v6, p0, Lcom/android/phone/callsettings/AnsweringCall;->mGestureCallAcceptPreference:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v6, v8}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v6, v8}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     :cond_6
     return-void
@@ -1560,7 +1560,7 @@
 
     iget-boolean v9, p0, Lcom/android/phone/callsettings/AnsweringCall;->endPowerKeyEndChecked:Z
 
-    invoke-virtual {v6, v9}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+    invoke-virtual {v6, v9}, Lcom/android/phone/callsettings/PowerKeyEndPreference;->setChecked(Z)V
 
     goto/16 :goto_0
 
@@ -1571,7 +1571,7 @@
 
     iget-boolean v9, p0, Lcom/android/phone/callsettings/AnsweringCall;->endPowerKeyEndChecked:Z
 
-    invoke-virtual {v6, v9}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+    invoke-virtual {v6, v9}, Lcom/android/phone/callsettings/PowerKeyEndPreference;->setChecked(Z)V
 
     goto/16 :goto_0
 
@@ -1583,7 +1583,7 @@
     :cond_a
     iget-object v9, p0, Lcom/android/phone/callsettings/AnsweringCall;->mAnykeyModeChecked:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/AnsweringCall;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v6
 
@@ -1598,7 +1598,7 @@
     move v6, v7
 
     :goto_9
-    invoke-virtual {v9, v6}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+    invoke-virtual {v9, v6}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     goto/16 :goto_2
 
@@ -1615,7 +1615,7 @@
     :cond_d
     iget-object v6, p0, Lcom/android/phone/callsettings/AnsweringCall;->mAnykeyModeChecked:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v6, v7}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v6, v7}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     goto/16 :goto_4
 
@@ -1713,7 +1713,7 @@
     move v1, v5
 
     :goto_0
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/AnsweringCall;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v7
 
@@ -1721,7 +1721,7 @@
 
     invoke-static {v7, v8, v1}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/AnsweringCall;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v8
 
@@ -1762,7 +1762,7 @@
     move v0, v5
 
     :goto_2
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/AnsweringCall;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v7
 
@@ -1779,11 +1779,11 @@
 
     iget-object v7, p0, Lcom/android/phone/callsettings/AnsweringCall;->mAnykeyModeChecked:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v7, v6}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+    invoke-virtual {v7, v6}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     iget-object v7, p0, Lcom/android/phone/callsettings/AnsweringCall;->mAnykeyModeChecked:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v7, v6}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v7, v6}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     :cond_1
     :goto_4
@@ -1804,7 +1804,7 @@
     move v2, v5
 
     :goto_5
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/AnsweringCall;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v5
 
@@ -1823,7 +1823,7 @@
 
     iget-object v5, p0, Lcom/android/phone/callsettings/AnsweringCall;->mPowerkeyPreference:Lcom/android/phone/callsettings/PowerKeyEndPreference;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/AnsweringCall;->getActivity()Landroid/app/Activity;
 
     move-result-object v7
 
@@ -1844,7 +1844,7 @@
 
     invoke-direct {p0, v3}, Lcom/android/phone/callsettings/AnsweringCall;->changeAirCallAccept(Z)V
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/AnsweringCall;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v6
 
@@ -1885,7 +1885,7 @@
     :cond_9
     iget-object v7, p0, Lcom/android/phone/callsettings/AnsweringCall;->mAnykeyModeChecked:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v7, v5}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v7, v5}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     goto :goto_4
 
@@ -1905,7 +1905,7 @@
 
     const/4 v1, 0x0
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/AnsweringCall;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 
@@ -1923,7 +1923,7 @@
 
     const/4 v1, 0x1
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/AnsweringCall;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v2
 
@@ -1948,7 +1948,7 @@
 
     iget-object v2, p0, Lcom/android/phone/callsettings/AnsweringCall;->mVoiceCmdChecked:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v2, v1}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+    invoke-virtual {v2, v1}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     :cond_1
     return-void

@@ -282,8 +282,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/os/IPersonaManager;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/IPersonaManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -296,8 +294,6 @@
 
 .method private static containerExists(Ljava/lang/String;I)Z
     .locals 6
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -353,8 +349,6 @@
 
 .method public static exchangeData(Landroid/content/Context;Landroid/os/Bundle;)Landroid/os/Bundle;
     .locals 7
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/os/Bundle;
 
     if-nez p1, :cond_1
 
@@ -611,7 +605,6 @@
 
 .method public static getKnoxInfoForApp(Landroid/content/Context;)Landroid/os/Bundle;
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     sget-object v1, Landroid/os/PersonaManager;->mKnoxInfo:Landroid/os/Bundle;
 
@@ -659,8 +652,6 @@
 
 .method public static getKnoxInfoForApp(Landroid/content/Context;Ljava/lang/String;)Landroid/os/Bundle;
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const/16 v5, 0x64
 
@@ -875,7 +866,6 @@
 
 .method public static isCACEnabled(I)Z
     .locals 3
-    .param p0    # I
 
     sget-object v1, Landroid/os/PersonaManager;->mBTSecureManager:Landroid/bluetooth/BluetoothSecureManager;
 
@@ -916,7 +906,6 @@
 
 .method public static isKioskModeEnabled(Landroid/content/Context;)Z
     .locals 6
-    .param p0    # Landroid/content/Context;
 
     const/4 v3, 0x0
 
@@ -988,7 +977,6 @@
 
 .method public static isPossibleAddToPersonal(Ljava/lang/String;)Z
     .locals 6
-    .param p0    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -1044,10 +1032,6 @@
 
 .method public static isSupported(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;I)Z
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     const/4 v2, 0x0
 
@@ -1389,9 +1373,6 @@
 
 .method private static setMoveToKnoxInfo(Landroid/content/Context;Landroid/os/Bundle;I)V
     .locals 11
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/os/Bundle;
-    .param p2    # I
 
     const-string v9, "isSupportMoveTo"
 
@@ -1606,9 +1587,6 @@
 # virtual methods
 .method public addAppForPersona(Landroid/os/PersonaManager$AppType;Ljava/lang/String;I)V
     .locals 3
-    .param p1    # Landroid/os/PersonaManager$AppType;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     iget-object v1, p0, Landroid/os/PersonaManager;->mService:Landroid/os/IPersonaManager;
 
@@ -1643,7 +1621,6 @@
 
 .method public addLockOnImage(Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
     .locals 3
-    .param p1    # Landroid/graphics/Bitmap;
 
     iget-object v1, p0, Landroid/os/PersonaManager;->mService:Landroid/os/IPersonaManager;
 
@@ -1678,8 +1655,6 @@
 
 .method public addPackageToInstallWhiteList(Ljava/lang/String;I)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     iget-object v1, p0, Landroid/os/PersonaManager;->mService:Landroid/os/IPersonaManager;
 
@@ -1710,8 +1685,6 @@
 
 .method public adminLockPersona(ILjava/lang/String;)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -1746,7 +1719,6 @@
 
 .method public adminUnLockPersona(I)Z
     .locals 4
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -1781,8 +1753,6 @@
 
 .method public canAccess(Ljava/lang/String;I)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     iget-object v1, p0, Landroid/os/PersonaManager;->mService:Landroid/os/IPersonaManager;
 
@@ -1849,8 +1819,6 @@
 
 .method public clearAppListForPersona(Landroid/os/PersonaManager$AppType;I)V
     .locals 3
-    .param p1    # Landroid/os/PersonaManager$AppType;
-    .param p2    # I
 
     iget-object v1, p0, Landroid/os/PersonaManager;->mService:Landroid/os/IPersonaManager;
 
@@ -1885,8 +1853,6 @@
 
 .method public convertContainerType(II)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     iget-object v1, p0, Landroid/os/PersonaManager;->mService:Landroid/os/IPersonaManager;
 
@@ -1949,10 +1915,6 @@
 
 .method public copyFileBNR(ILjava/lang/String;ILjava/lang/String;)I
     .locals 5
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
 
     :try_start_0
     sget-object v2, Landroid/os/PersonaManager;->TAG:Ljava/lang/String;
@@ -2042,14 +2004,6 @@
 
 .method public createPersona(Ljava/lang/String;Ljava/lang/String;JLjava/lang/String;Ljava/lang/String;Landroid/net/Uri;Landroid/net/Uri;Ljava/lang/String;)I
     .locals 11
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # J
-    .param p5    # Ljava/lang/String;
-    .param p6    # Ljava/lang/String;
-    .param p7    # Landroid/net/Uri;
-    .param p8    # Landroid/net/Uri;
-    .param p9    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/os/PersonaManager;->mService:Landroid/os/IPersonaManager;
 
@@ -2100,8 +2054,6 @@
 
 .method public deleteFile(Ljava/lang/String;I)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     :try_start_0
     sget-object v2, Landroid/os/PersonaManager;->TAG:Ljava/lang/String;
@@ -2171,7 +2123,6 @@
 
 .method public disablePersonaKeyGuard(I)Z
     .locals 4
-    .param p1    # I
 
     iget-object v1, p0, Landroid/os/PersonaManager;->mService:Landroid/os/IPersonaManager;
 
@@ -2228,7 +2179,6 @@
 
 .method public enablePersonaKeyGuard(I)Z
     .locals 4
-    .param p1    # I
 
     iget-object v1, p0, Landroid/os/PersonaManager;->mService:Landroid/os/IPersonaManager;
 
@@ -2285,7 +2235,6 @@
 
 .method public exists(I)Z
     .locals 4
-    .param p1    # I
 
     iget-object v2, p0, Landroid/os/PersonaManager;->mService:Landroid/os/IPersonaManager;
 
@@ -2343,7 +2292,6 @@
 
 .method public forceRollup(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     sget-object v0, Landroid/os/PersonaManager;->TAG:Ljava/lang/String;
 
@@ -2362,7 +2310,6 @@
 
 .method public getAdminUidForPersona(I)I
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Landroid/os/PersonaManager;->mService:Landroid/os/IPersonaManager;
 
@@ -2403,8 +2350,6 @@
 
 .method public getAppListForPersona(Landroid/os/PersonaManager$AppType;I)Ljava/util/List;
     .locals 3
-    .param p1    # Landroid/os/PersonaManager$AppType;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2454,7 +2399,6 @@
 
 .method public getCallerInfo(Ljava/lang/String;)Landroid/content/CustomCursor;
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -2552,7 +2496,6 @@
 
 .method public getCurrentPersonaForUser(I)I
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Landroid/os/PersonaManager;->mService:Landroid/os/IPersonaManager;
 
@@ -2585,8 +2528,6 @@
 
 .method public getDisabledHomeLaunchers(IZ)Ljava/util/List;
     .locals 3
-    .param p1    # I
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(IZ)",
@@ -2762,7 +2703,6 @@
 
 .method public getKeyguardShowState(I)Z
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Landroid/os/PersonaManager;->mService:Landroid/os/IPersonaManager;
 
@@ -2797,7 +2737,6 @@
 
 .method public getLastShortcutState(I)Z
     .locals 4
-    .param p1    # I
 
     iget-object v1, p0, Landroid/os/PersonaManager;->mService:Landroid/os/IPersonaManager;
 
@@ -2888,7 +2827,6 @@
 
 .method public getNormalizedState(I)I
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Landroid/os/PersonaManager;->mService:Landroid/os/IPersonaManager;
 
@@ -2923,7 +2861,6 @@
 
 .method public getPackagesFromInstallWhiteList(I)Ljava/util/List;
     .locals 3
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -2967,7 +2904,6 @@
 
 .method public getParentId(I)I
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Landroid/os/PersonaManager;->mService:Landroid/os/IPersonaManager;
 
@@ -3076,7 +3012,6 @@
 
 .method public getPersonaBackgroundTime(I)J
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Landroid/os/PersonaManager;->mService:Landroid/os/IPersonaManager;
 
@@ -3111,7 +3046,6 @@
 
 .method public getPersonaIcon(I)Landroid/graphics/Bitmap;
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Landroid/os/PersonaManager;->mService:Landroid/os/IPersonaManager;
 
@@ -3146,7 +3080,6 @@
 
 .method public getPersonaIdentification(I)Ljava/lang/String;
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Landroid/os/PersonaManager;->mService:Landroid/os/IPersonaManager;
 
@@ -3221,7 +3154,6 @@
 
 .method public getPersonaInfo(I)Landroid/content/pm/PersonaInfo;
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Landroid/os/PersonaManager;->mService:Landroid/os/IPersonaManager;
 
@@ -3256,7 +3188,6 @@
 
 .method public getPersonaSamsungAccount(I)Ljava/lang/String;
     .locals 3
-    .param p1    # I
 
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaManager;->mService:Landroid/os/IPersonaManager;
@@ -3286,7 +3217,6 @@
 
 .method public getPersonaService(Ljava/lang/String;)Ljava/lang/Object;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     sget-object v0, Landroid/os/PersonaManager;->TAG:Ljava/lang/String;
 
@@ -3430,7 +3360,6 @@
 
 .method public getPersonaState(I)I
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Landroid/os/PersonaManager;->mService:Landroid/os/IPersonaManager;
 
@@ -3465,7 +3394,6 @@
 
 .method public getPersonaType(I)Ljava/lang/String;
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Landroid/os/PersonaManager;->mService:Landroid/os/IPersonaManager;
 
@@ -3545,7 +3473,6 @@
 
 .method public getPersonas(Z)Ljava/util/List;
     .locals 3
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(Z)",
@@ -3589,8 +3516,6 @@
 
 .method public getPersonasForCreator(IZ)Ljava/util/List;
     .locals 3
-    .param p1    # I
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(IZ)",
@@ -3634,7 +3559,6 @@
 
 .method public getPersonasForUser(I)Ljava/util/List;
     .locals 3
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -3780,7 +3704,6 @@
 
 .method public getScreenOffTime(I)J
     .locals 6
-    .param p1    # I
 
     const-wide/16 v1, 0x1388
 
@@ -3833,7 +3756,6 @@
 
 .method public getShortcutMode(I)Z
     .locals 4
-    .param p1    # I
 
     iget-object v1, p0, Landroid/os/PersonaManager;->mService:Landroid/os/IPersonaManager;
 
@@ -3906,7 +3828,6 @@
 
 .method public getUserManagedPersonas(Z)Ljava/util/List;
     .locals 4
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(Z)",
@@ -4007,7 +3928,6 @@
 
 .method public installApplications(ILjava/util/List;)Z
     .locals 3
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -4188,7 +4108,6 @@
 
 .method public isKioskModeEnabled(I)Z
     .locals 6
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -4271,8 +4190,6 @@
 
 .method public isPackageInInstallWhiteList(Ljava/lang/String;I)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     iget-object v1, p0, Landroid/os/PersonaManager;->mService:Landroid/os/IPersonaManager;
 
@@ -4363,7 +4280,6 @@
 
 .method public isResetPersonaOnRebootEnabled(I)Z
     .locals 4
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -4404,7 +4320,6 @@
 
 .method public isSessionExpired(I)Z
     .locals 4
-    .param p1    # I
 
     iget-object v1, p0, Landroid/os/PersonaManager;->mService:Landroid/os/IPersonaManager;
 
@@ -4461,7 +4376,6 @@
 
 .method public lockPersona(I)V
     .locals 4
-    .param p1    # I
 
     iget-object v1, p0, Landroid/os/PersonaManager;->mService:Landroid/os/IPersonaManager;
 
@@ -4514,8 +4428,6 @@
 
 .method public markForRemoval(ILandroid/content/ComponentName;)V
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
 
     iget-object v1, p0, Landroid/os/PersonaManager;->mService:Landroid/os/IPersonaManager;
 
@@ -4568,8 +4480,6 @@
 
 .method public notifyKeyguardShow(IZ)V
     .locals 4
-    .param p1    # I
-    .param p2    # Z
 
     iget-object v1, p0, Landroid/os/PersonaManager;->mService:Landroid/os/IPersonaManager;
 
@@ -4666,11 +4576,6 @@
 
 .method public onWakeLockChange(ZIIILjava/lang/String;)V
     .locals 7
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/os/PersonaManager;->mService:Landroid/os/IPersonaManager;
 
@@ -4731,7 +4636,6 @@
 
 .method public refreshTimer(I)V
     .locals 4
-    .param p1    # I
 
     iget-object v1, p0, Landroid/os/PersonaManager;->mService:Landroid/os/IPersonaManager;
 
@@ -4782,9 +4686,6 @@
 
 .method public registerHandler(Ljava/lang/String;Landroid/os/IBinder;Landroid/content/pm/IPersonaObserver;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/IBinder;
-    .param p3    # Landroid/content/pm/IPersonaObserver;
 
     iget-object v1, p0, Landroid/os/PersonaManager;->mService:Landroid/os/IPersonaManager;
 
@@ -4821,8 +4722,6 @@
 
 .method public registerObserver(ILandroid/content/pm/IPersonaObserver;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/content/pm/IPersonaObserver;
 
     iget-object v1, p0, Landroid/os/PersonaManager;->mService:Landroid/os/IPersonaManager;
 
@@ -4859,7 +4758,6 @@
 
 .method public registerObserver(Landroid/content/pm/IPersonaObserver;)V
     .locals 3
-    .param p1    # Landroid/content/pm/IPersonaObserver;
 
     iget-object v1, p0, Landroid/os/PersonaManager;->mService:Landroid/os/IPersonaManager;
 
@@ -4896,7 +4794,6 @@
 
 .method public registerSystemPersonaObserver(Landroid/content/pm/ISystemPersonaObserver;)Z
     .locals 3
-    .param p1    # Landroid/content/pm/ISystemPersonaObserver;
 
     iget-object v1, p0, Landroid/os/PersonaManager;->mService:Landroid/os/IPersonaManager;
 
@@ -4931,7 +4828,6 @@
 
 .method public registerUser(Landroid/content/pm/IPersonaCallback;)Z
     .locals 3
-    .param p1    # Landroid/content/pm/IPersonaCallback;
 
     iget-object v1, p0, Landroid/os/PersonaManager;->mService:Landroid/os/IPersonaManager;
 
@@ -4972,9 +4868,6 @@
 
 .method public removeAppForPersona(Landroid/os/PersonaManager$AppType;Ljava/lang/String;I)V
     .locals 3
-    .param p1    # Landroid/os/PersonaManager$AppType;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     iget-object v1, p0, Landroid/os/PersonaManager;->mService:Landroid/os/IPersonaManager;
 
@@ -5009,8 +4902,6 @@
 
 .method public removePackageFromInstallWhiteList(Ljava/lang/String;I)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     iget-object v1, p0, Landroid/os/PersonaManager;->mService:Landroid/os/IPersonaManager;
 
@@ -5041,7 +4932,6 @@
 
 .method public removePersona(I)I
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Landroid/os/PersonaManager;->mService:Landroid/os/IPersonaManager;
 
@@ -5076,7 +4966,6 @@
 
 .method public resetPassword(Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -5111,7 +5000,6 @@
 
 .method public resetPersona(I)I
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Landroid/os/PersonaManager;->mService:Landroid/os/IPersonaManager;
 
@@ -5146,8 +5034,6 @@
 
 .method public resetPersonaOnReboot(IZ)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v1, 0x0
 
@@ -5188,7 +5074,6 @@
 
 .method public rollBackToPersona(I)V
     .locals 4
-    .param p1    # I
 
     iget-object v1, p0, Landroid/os/PersonaManager;->mService:Landroid/os/IPersonaManager;
 
@@ -5241,7 +5126,6 @@
 
 .method public rollUpToParent(I)V
     .locals 4
-    .param p1    # I
 
     iget-object v1, p0, Landroid/os/PersonaManager;->mService:Landroid/os/IPersonaManager;
 
@@ -5294,8 +5178,6 @@
 
 .method public savePasswordInTima(ILjava/lang/String;)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -5330,9 +5212,6 @@
 
 .method public setAccessPermission(Ljava/lang/String;IZ)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Z
 
     iget-object v1, p0, Landroid/os/PersonaManager;->mService:Landroid/os/IPersonaManager;
 
@@ -5405,8 +5284,6 @@
 
 .method public setBackPressed(IZ)V
     .locals 3
-    .param p1    # I
-    .param p2    # Z
 
     iget-object v1, p0, Landroid/os/PersonaManager;->mService:Landroid/os/IPersonaManager;
 
@@ -5437,8 +5314,6 @@
 
 .method public setCurrentPersonaForUser(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     iget-object v1, p0, Landroid/os/PersonaManager;->mService:Landroid/os/IPersonaManager;
 
@@ -5469,7 +5344,6 @@
 
 .method public setFingerCount(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Landroid/os/PersonaManager;->mService:Landroid/os/IPersonaManager;
 
@@ -5510,8 +5384,6 @@
 
 .method public setFsMountState(IZ)V
     .locals 3
-    .param p1    # I
-    .param p2    # Z
 
     iget-object v1, p0, Landroid/os/PersonaManager;->mService:Landroid/os/IPersonaManager;
 
@@ -5542,8 +5414,6 @@
 
 .method public setIsFingerAsSupplement(IZ)V
     .locals 3
-    .param p1    # I
-    .param p2    # Z
 
     iget-object v1, p0, Landroid/os/PersonaManager;->mService:Landroid/os/IPersonaManager;
 
@@ -5580,7 +5450,6 @@
 
 .method public setIsFingerIdentifyFailed(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v1, p0, Landroid/os/PersonaManager;->mService:Landroid/os/IPersonaManager;
 
@@ -5621,8 +5490,6 @@
 
 .method public setMaximumScreenOffTimeoutFromDeviceAdmin(JI)V
     .locals 4
-    .param p1    # J
-    .param p3    # I
 
     iget-object v1, p0, Landroid/os/PersonaManager;->mService:Landroid/os/IPersonaManager;
 
@@ -5673,7 +5540,6 @@
 
 .method public setMoveToKnoxStatus(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v1, p0, Landroid/os/PersonaManager;->mService:Landroid/os/IPersonaManager;
 
@@ -5704,8 +5570,6 @@
 
 .method public setPersonaIcon(ILandroid/graphics/Bitmap;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/graphics/Bitmap;
 
     iget-object v1, p0, Landroid/os/PersonaManager;->mService:Landroid/os/IPersonaManager;
 
@@ -5736,8 +5600,6 @@
 
 .method public setPersonaName(ILjava/lang/String;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     iget-object v1, p0, Landroid/os/PersonaManager;->mService:Landroid/os/IPersonaManager;
 
@@ -5768,8 +5630,6 @@
 
 .method public setPersonaSamsungAccount(ILjava/lang/String;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     :try_start_0
     iget-object v1, p0, Landroid/os/PersonaManager;->mService:Landroid/os/IPersonaManager;
@@ -5795,8 +5655,6 @@
 
 .method public setPersonaState(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     iget-object v1, p0, Landroid/os/PersonaManager;->mService:Landroid/os/IPersonaManager;
 
@@ -5827,8 +5685,6 @@
 
 .method public setPersonaType(ILjava/lang/String;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     iget-object v1, p0, Landroid/os/PersonaManager;->mService:Landroid/os/IPersonaManager;
 
@@ -5859,7 +5715,6 @@
 
 .method public setPhoneCaller(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Landroid/os/PersonaManager;->mService:Landroid/os/IPersonaManager;
 
@@ -5890,8 +5745,6 @@
 
 .method public setShortcutGuideDisplay(IZ)V
     .locals 4
-    .param p1    # I
-    .param p2    # Z
 
     iget-object v1, p0, Landroid/os/PersonaManager;->mService:Landroid/os/IPersonaManager;
 
@@ -5954,8 +5807,6 @@
 
 .method public setShortcutMode(IZ)V
     .locals 4
-    .param p1    # I
-    .param p2    # Z
 
     iget-object v1, p0, Landroid/os/PersonaManager;->mService:Landroid/os/IPersonaManager;
 
@@ -6018,8 +5869,6 @@
 
 .method public setSuperLock(IZ)V
     .locals 3
-    .param p1    # I
-    .param p2    # Z
 
     iget-object v1, p0, Landroid/os/PersonaManager;->mService:Landroid/os/IPersonaManager;
 
@@ -6050,7 +5899,6 @@
 
 .method public settingSyncAllowed(I)Z
     .locals 4
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -6085,7 +5933,6 @@
 
 .method public switchPersona(I)Z
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Landroid/os/PersonaManager;->mService:Landroid/os/IPersonaManager;
 
@@ -6120,8 +5967,6 @@
 
 .method public switchPersonaAndLaunch(ILandroid/content/Intent;)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/content/Intent;
 
     iget-object v1, p0, Landroid/os/PersonaManager;->mService:Landroid/os/IPersonaManager;
 
@@ -6156,7 +6001,6 @@
 
 .method public unInstallSystemApplications(ILjava/util/List;)I
     .locals 4
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -6206,7 +6050,6 @@
 
 .method public unmarkForRemoval(I)V
     .locals 4
-    .param p1    # I
 
     iget-object v1, p0, Landroid/os/PersonaManager;->mService:Landroid/os/IPersonaManager;
 
@@ -6259,7 +6102,6 @@
 
 .method public unregisterObserver(Landroid/content/pm/IPersonaObserver;)V
     .locals 3
-    .param p1    # Landroid/content/pm/IPersonaObserver;
 
     iget-object v1, p0, Landroid/os/PersonaManager;->mService:Landroid/os/IPersonaManager;
 
@@ -6296,10 +6138,6 @@
 
 .method public updatePersonaInfo(ILjava/lang/String;II)Z
     .locals 5
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
 
     const/4 v1, 0x0
 
@@ -6356,7 +6194,6 @@
 
 .method public userActivity(I)V
     .locals 4
-    .param p1    # I
 
     iget-object v1, p0, Landroid/os/PersonaManager;->mService:Landroid/os/IPersonaManager;
 

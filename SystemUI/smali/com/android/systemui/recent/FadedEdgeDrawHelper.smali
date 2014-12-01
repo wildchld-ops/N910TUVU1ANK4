@@ -30,10 +30,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;Landroid/view/View;Z)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # Landroid/view/View;
-    .param p4    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -72,10 +68,6 @@
 
 .method public static create(Landroid/content/Context;Landroid/util/AttributeSet;Landroid/view/View;Z)Lcom/android/systemui/recent/FadedEdgeDrawHelper;
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/util/AttributeSet;
-    .param p2    # Landroid/view/View;
-    .param p3    # Z
 
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -106,7 +98,6 @@
 # virtual methods
 .method public addViewCallback(Landroid/view/View;)V
     .locals 3
-    .param p1    # Landroid/view/View;
 
     iget-boolean v1, p0, Lcom/android/systemui/recent/FadedEdgeDrawHelper;->mSoftwareRendered:Z
 
@@ -134,18 +125,6 @@
 
 .method public drawCallback(Landroid/graphics/Canvas;IIIIIIFFFFI)V
     .locals 19
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # F
-    .param p9    # F
-    .param p10    # F
-    .param p11    # F
-    .param p12    # I
 
     move-object/from16 v0, p0
 
@@ -739,8 +718,6 @@
 
 .method public onAttachedToWindowCallback(Landroid/widget/LinearLayout;Z)V
     .locals 2
-    .param p1    # Landroid/widget/LinearLayout;
-    .param p2    # Z
 
     const/4 v1, 0x0
 

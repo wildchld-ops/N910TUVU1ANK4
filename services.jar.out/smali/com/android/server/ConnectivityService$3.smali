@@ -33,7 +33,6 @@
 # virtual methods
 .method public onMeteredIfacesChanged([Ljava/lang/String;)V
     .locals 9
-    .param p1    # [Ljava/lang/String;
 
     iget-object v6, p0, Lcom/android/server/ConnectivityService$3;->this$0:Lcom/android/server/ConnectivityService;
 
@@ -169,7 +168,6 @@
 
 .method public onRestrictBackgroundChanged(Z)V
     .locals 4
-    .param p1    # Z
 
     iget-object v3, p0, Lcom/android/server/ConnectivityService$3;->this$0:Lcom/android/server/ConnectivityService;
 
@@ -217,8 +215,6 @@
 
 .method public onUidRulesChanged(II)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     iget-object v1, p0, Lcom/android/server/ConnectivityService$3;->this$0:Lcom/android/server/ConnectivityService;
 

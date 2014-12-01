@@ -25,7 +25,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/mms/settings/BubbleStyle;Landroid/content/Context;)V
     .locals 1
-    .param p2    # Landroid/content/Context;
 
     iput-object p1, p0, Lcom/android/mms/settings/BubbleStyle$ImageAdapter;->this$0:Lcom/android/mms/settings/BubbleStyle;
 
@@ -64,7 +63,6 @@
 
 .method public getItem(I)Ljava/lang/Object;
     .locals 1
-    .param p1    # I
 
     sget-object v0, Lcom/android/mms/settings/DisplayStyleActivity;->BUBBLE_RECEIVE_STYLE_ID:[I
 
@@ -79,7 +77,6 @@
 
 .method public getItemId(I)J
     .locals 2
-    .param p1    # I
 
     int-to-long v0, p1
 
@@ -88,9 +85,6 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 11
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     const/high16 v7, 0x42c80000
 

@@ -30,8 +30,6 @@
 # virtual methods
 .method public final transformUrl(Ljava/util/regex/Matcher;Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/util/regex/Matcher;
-    .param p2    # Ljava/lang/String;
 
     invoke-static {p1}, Landroid/util/Patterns;->digitsAndPlusOnly(Ljava/util/regex/Matcher;)Ljava/lang/String;
 

@@ -161,7 +161,7 @@
 
     iget-object v3, p0, Lcom/android/phone/NetworkModePreference$MyHandler;->this$0:Lcom/android/phone/NetworkModePreference;
 
-    invoke-virtual {v3, v7}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v3, v7}, Lcom/android/phone/NetworkModePreference;->setEnabled(Z)V
 
     const-string v3, "feature_multisim"
 
@@ -263,7 +263,7 @@
 
     aget-object v2, v2, v5
 
-    invoke-virtual {p0, v4}, Landroid/os/Handler;->obtainMessage(I)Landroid/os/Message;
+    invoke-virtual {p0, v4}, Lcom/android/phone/NetworkModePreference$MyHandler;->obtainMessage(I)Landroid/os/Message;
 
     move-result-object v5
 
@@ -298,7 +298,7 @@
 
     iget-object v2, p0, Lcom/android/phone/NetworkModePreference$MyHandler;->this$0:Lcom/android/phone/NetworkModePreference;
 
-    invoke-virtual {v2}, Landroid/preference/Preference;->getPreferenceManager()Landroid/preference/PreferenceManager;
+    invoke-virtual {v2}, Lcom/android/phone/NetworkModePreference;->getPreferenceManager()Landroid/preference/PreferenceManager;
 
     move-result-object v2
 
@@ -380,7 +380,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v2, v4}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v2, v4}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     :cond_2
     iget-object v2, p0, Lcom/android/phone/NetworkModePreference$MyHandler;->this$0:Lcom/android/phone/NetworkModePreference;
@@ -516,7 +516,7 @@
 
     move-result-object v6
 
-    invoke-virtual {v6, v3}, Landroid/os/Handler;->obtainMessage(I)Landroid/os/Message;
+    invoke-virtual {v6, v3}, Lcom/android/phone/NetworkModePreference$MyHandler;->obtainMessage(I)Landroid/os/Message;
 
     move-result-object v6
 
@@ -562,7 +562,7 @@
 
     move-result-object v5
 
-    invoke-virtual {v5, v3}, Landroid/os/Handler;->obtainMessage(I)Landroid/os/Message;
+    invoke-virtual {v5, v3}, Lcom/android/phone/NetworkModePreference$MyHandler;->obtainMessage(I)Landroid/os/Message;
 
     move-result-object v5
 
@@ -603,7 +603,7 @@
     :cond_8
     iget-object v2, p0, Lcom/android/phone/NetworkModePreference$MyHandler;->this$0:Lcom/android/phone/NetworkModePreference;
 
-    invoke-virtual {v2, v3}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v2, v3}, Lcom/android/phone/NetworkModePreference;->setEnabled(Z)V
 
     iget-object v2, v0, Landroid/os/AsyncResult;->exception:Ljava/lang/Throwable;
 
@@ -640,7 +640,7 @@
 
     move-result-object v2
 
-    invoke-virtual {p0, v4}, Landroid/os/Handler;->obtainMessage(I)Landroid/os/Message;
+    invoke-virtual {p0, v4}, Lcom/android/phone/NetworkModePreference$MyHandler;->obtainMessage(I)Landroid/os/Message;
 
     move-result-object v5
 
@@ -670,7 +670,7 @@
 
     move-result-object v5
 
-    invoke-virtual {v2, v5}, Landroid/preference/ListPreference;->findIndexOfValue(Ljava/lang/String;)I
+    invoke-virtual {v2, v5}, Lcom/android/phone/NetworkModePreference;->findIndexOfValue(Ljava/lang/String;)I
 
     move-result v2
 
@@ -727,7 +727,7 @@
 
     move-result-object v2
 
-    invoke-virtual {p0, v4}, Landroid/os/Handler;->obtainMessage(I)Landroid/os/Message;
+    invoke-virtual {p0, v4}, Lcom/android/phone/NetworkModePreference$MyHandler;->obtainMessage(I)Landroid/os/Message;
 
     move-result-object v5
 
@@ -817,7 +817,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v2, v3}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v2, v3}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     :cond_d
     iget-object v2, p0, Lcom/android/phone/NetworkModePreference$MyHandler;->this$0:Lcom/android/phone/NetworkModePreference;
@@ -994,7 +994,7 @@
 
     move-result-object v5
 
-    invoke-virtual {v4, v5}, Landroid/preference/ListPreference;->findIndexOfValue(Ljava/lang/String;)I
+    invoke-virtual {v4, v5}, Lcom/android/phone/NetworkModePreference;->findIndexOfValue(Ljava/lang/String;)I
 
     move-result v2
 
@@ -1053,7 +1053,7 @@
 
     move-result-object v5
 
-    invoke-virtual {v4, v5}, Landroid/preference/ListPreference;->setSummary(Ljava/lang/CharSequence;)V
+    invoke-virtual {v4, v5}, Lcom/android/phone/NetworkModePreference;->setSummary(Ljava/lang/CharSequence;)V
 
     :goto_2
     return-void
@@ -1188,7 +1188,7 @@
 
     move-result-object v5
 
-    invoke-virtual {v4, v5}, Landroid/preference/ListPreference;->findIndexOfValue(Ljava/lang/String;)I
+    invoke-virtual {v4, v5}, Lcom/android/phone/NetworkModePreference;->findIndexOfValue(Ljava/lang/String;)I
 
     move-result v0
 
@@ -1301,11 +1301,11 @@
 
     aget-object v5, v3, v0
 
-    invoke-virtual {v4, v5}, Landroid/preference/ListPreference;->setSummary(Ljava/lang/CharSequence;)V
+    invoke-virtual {v4, v5}, Lcom/android/phone/NetworkModePreference;->setSummary(Ljava/lang/CharSequence;)V
 
     iget-object v4, p0, Lcom/android/phone/NetworkModePreference$MyHandler;->this$0:Lcom/android/phone/NetworkModePreference;
 
-    invoke-virtual {v4, v0}, Landroid/preference/ListPreference;->setValueIndex(I)V
+    invoke-virtual {v4, v0}, Lcom/android/phone/NetworkModePreference;->setValueIndex(I)V
 
     goto/16 :goto_2
 
@@ -1406,13 +1406,13 @@
 
     move-result-object v6
 
-    invoke-virtual {v5, v6}, Landroid/preference/ListPreference;->findIndexOfValue(Ljava/lang/String;)I
+    invoke-virtual {v5, v6}, Lcom/android/phone/NetworkModePreference;->findIndexOfValue(Ljava/lang/String;)I
 
     move-result v5
 
     aget-object v5, v3, v5
 
-    invoke-virtual {v4, v5}, Landroid/preference/ListPreference;->setSummary(Ljava/lang/CharSequence;)V
+    invoke-virtual {v4, v5}, Lcom/android/phone/NetworkModePreference;->setSummary(Ljava/lang/CharSequence;)V
 
     goto/16 :goto_2
 
@@ -1451,13 +1451,13 @@
 
     move-result-object v6
 
-    invoke-virtual {v5, v6}, Landroid/preference/ListPreference;->findIndexOfValue(Ljava/lang/String;)I
+    invoke-virtual {v5, v6}, Lcom/android/phone/NetworkModePreference;->findIndexOfValue(Ljava/lang/String;)I
 
     move-result v5
 
     aget-object v5, v3, v5
 
-    invoke-virtual {v4, v5}, Landroid/preference/ListPreference;->setSummary(Ljava/lang/CharSequence;)V
+    invoke-virtual {v4, v5}, Lcom/android/phone/NetworkModePreference;->setSummary(Ljava/lang/CharSequence;)V
 
     goto/16 :goto_2
 
@@ -1475,26 +1475,26 @@
 
     move-result-object v6
 
-    invoke-virtual {v5, v6}, Landroid/preference/ListPreference;->findIndexOfValue(Ljava/lang/String;)I
+    invoke-virtual {v5, v6}, Lcom/android/phone/NetworkModePreference;->findIndexOfValue(Ljava/lang/String;)I
 
     move-result v5
 
     aget-object v5, v3, v5
 
-    invoke-virtual {v4, v5}, Landroid/preference/ListPreference;->setSummary(Ljava/lang/CharSequence;)V
+    invoke-virtual {v4, v5}, Lcom/android/phone/NetworkModePreference;->setSummary(Ljava/lang/CharSequence;)V
 
     goto/16 :goto_2
 
     :cond_11
     iget-object v4, p0, Lcom/android/phone/NetworkModePreference$MyHandler;->this$0:Lcom/android/phone/NetworkModePreference;
 
-    invoke-virtual {v4, v2}, Landroid/preference/ListPreference;->setValueIndex(I)V
+    invoke-virtual {v4, v2}, Lcom/android/phone/NetworkModePreference;->setValueIndex(I)V
 
     iget-object v4, p0, Lcom/android/phone/NetworkModePreference$MyHandler;->this$0:Lcom/android/phone/NetworkModePreference;
 
     aget-object v5, v3, v2
 
-    invoke-virtual {v4, v5}, Landroid/preference/ListPreference;->setSummary(Ljava/lang/CharSequence;)V
+    invoke-virtual {v4, v5}, Lcom/android/phone/NetworkModePreference;->setSummary(Ljava/lang/CharSequence;)V
 
     goto/16 :goto_2
 
@@ -1503,11 +1503,11 @@
 
     aget-object v5, v3, v2
 
-    invoke-virtual {v4, v5}, Landroid/preference/ListPreference;->setSummary(Ljava/lang/CharSequence;)V
+    invoke-virtual {v4, v5}, Lcom/android/phone/NetworkModePreference;->setSummary(Ljava/lang/CharSequence;)V
 
     iget-object v4, p0, Lcom/android/phone/NetworkModePreference$MyHandler;->this$0:Lcom/android/phone/NetworkModePreference;
 
-    invoke-virtual {v4, v2}, Landroid/preference/ListPreference;->setValueIndex(I)V
+    invoke-virtual {v4, v2}, Lcom/android/phone/NetworkModePreference;->setValueIndex(I)V
 
     goto/16 :goto_2
 .end method

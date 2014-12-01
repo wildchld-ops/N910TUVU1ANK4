@@ -46,8 +46,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Lcom/android/internal/http/multipart/PartSource;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/internal/http/multipart/PartSource;
 
     const/4 v0, 0x0
 
@@ -58,10 +56,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Lcom/android/internal/http/multipart/PartSource;Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/internal/http/multipart/PartSource;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     if-nez p3, :cond_0
 
@@ -95,8 +89,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Ljava/io/File;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/io/File;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/FileNotFoundException;
@@ -116,10 +108,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Ljava/io/File;Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/io/File;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/FileNotFoundException;
@@ -137,9 +125,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/io/File;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/io/File;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/FileNotFoundException;
@@ -159,11 +144,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/io/File;Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/io/File;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/FileNotFoundException;
@@ -215,7 +195,6 @@
 
 .method protected sendData(Ljava/io/OutputStream;)V
     .locals 7
-    .param p1    # Ljava/io/OutputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -289,7 +268,6 @@
 
 .method protected sendDispositionHeader(Ljava/io/OutputStream;)V
     .locals 3
-    .param p1    # Ljava/io/OutputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

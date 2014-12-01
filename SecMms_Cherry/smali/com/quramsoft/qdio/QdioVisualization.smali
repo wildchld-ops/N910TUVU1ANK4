@@ -583,7 +583,6 @@
 
 .method private clipVisualizatoin(I)I
     .locals 1
-    .param p1    # I
 
     const/16 v0, 0x14
 
@@ -607,10 +606,6 @@
 # virtual methods
 .method public getAudioAnalysisData([BI[I[I)V
     .locals 10
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # [I
-    .param p4    # [I
 
     const/high16 v9, 0x42480000
 
@@ -731,7 +726,6 @@
 
 .method public getVisualizationBands(I)[I
     .locals 7
-    .param p1    # I
 
     const/16 v5, 0xb
 

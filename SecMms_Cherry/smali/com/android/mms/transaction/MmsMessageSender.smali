@@ -51,9 +51,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/net/Uri;J)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/net/Uri;
-    .param p3    # J
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -85,10 +82,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/net/Uri;JI)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/net/Uri;
-    .param p3    # J
-    .param p5    # I
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/mms/transaction/MmsMessageSender;-><init>(Landroid/content/Context;Landroid/net/Uri;J)V
 
@@ -99,13 +92,6 @@
 
 .method public static sendReadRec(Landroid/content/Context;Ljava/lang/String;ILjava/lang/String;ZLjava/lang/String;I)V
     .locals 21
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Z
-    .param p5    # Ljava/lang/String;
-    .param p6    # I
 
     const-string v3, "Mms:transaction"
 
@@ -457,10 +443,6 @@
 
 .method public static sendReadRec(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;I)V
     .locals 7
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     const/4 v2, 0x0
 
@@ -483,8 +465,6 @@
 
 .method public static sendReadRec(Landroid/content/Context;Ljava/util/Map;I)V
     .locals 30
-    .param p0    # Landroid/content/Context;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1240,7 +1220,6 @@
 
 .method private updatePreferencesHeaders(Lcom/google/android/mms/pdu/SendReq;)V
     .locals 11
-    .param p1    # Lcom/google/android/mms/pdu/SendReq;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/google/android/mms/MmsException;
@@ -1433,7 +1412,6 @@
 # virtual methods
 .method public queueMessageForPending(J)Z
     .locals 1
-    .param p1    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/google/android/mms/MmsException;
@@ -1447,7 +1425,6 @@
 
 .method public sendMessage(J)Z
     .locals 12
-    .param p1    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/google/android/mms/MmsException;
@@ -1708,8 +1685,6 @@
 
 .method public sendSpamRec(JLandroid/net/Uri;)Z
     .locals 10
-    .param p1    # J
-    .param p3    # Landroid/net/Uri;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/google/android/mms/MmsException;
@@ -1930,7 +1905,6 @@
 
 .method public setPriorityLevel(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/mms/transaction/MmsMessageSender;->mPriorityLevel:I
 
@@ -1939,7 +1913,6 @@
 
 .method public setSimSlot(I)V
     .locals 8
-    .param p1    # I
 
     const/4 v7, 0x2
 

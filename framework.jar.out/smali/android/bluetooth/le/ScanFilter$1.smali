@@ -40,7 +40,6 @@
 # virtual methods
 .method public createFromParcel(Landroid/os/Parcel;)Landroid/bluetooth/le/ScanFilter;
     .locals 17
-    .param p1    # Landroid/os/Parcel;
 
     new-instance v1, Landroid/bluetooth/le/ScanFilter$Builder;
 
@@ -214,7 +213,6 @@
 
 .method public bridge synthetic createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     invoke-virtual {p0, p1}, Landroid/bluetooth/le/ScanFilter$1;->createFromParcel(Landroid/os/Parcel;)Landroid/bluetooth/le/ScanFilter;
 
@@ -225,7 +223,6 @@
 
 .method public newArray(I)[Landroid/bluetooth/le/ScanFilter;
     .locals 1
-    .param p1    # I
 
     new-array v0, p1, [Landroid/bluetooth/le/ScanFilter;
 
@@ -234,7 +231,6 @@
 
 .method public bridge synthetic newArray(I)[Ljava/lang/Object;
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/bluetooth/le/ScanFilter$1;->newArray(I)[Landroid/bluetooth/le/ScanFilter;
 

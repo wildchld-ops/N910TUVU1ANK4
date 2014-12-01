@@ -25,7 +25,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -55,7 +54,6 @@
 
 .method public onCreateActionView(Landroid/view/MenuItem;)Landroid/view/View;
     .locals 1
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-virtual {p0}, Landroid/view/ActionProvider;->onCreateActionView()Landroid/view/View;
 
@@ -74,7 +72,6 @@
 
 .method public onPrepareSubMenu(Landroid/view/SubMenu;)V
     .locals 0
-    .param p1    # Landroid/view/SubMenu;
 
     return-void
 .end method
@@ -114,7 +111,6 @@
 
 .method public setSubUiVisibilityListener(Landroid/view/ActionProvider$SubUiVisibilityListener;)V
     .locals 0
-    .param p1    # Landroid/view/ActionProvider$SubUiVisibilityListener;
 
     iput-object p1, p0, Landroid/view/ActionProvider;->mSubUiVisibilityListener:Landroid/view/ActionProvider$SubUiVisibilityListener;
 
@@ -123,7 +119,6 @@
 
 .method public setVisibilityListener(Landroid/view/ActionProvider$VisibilityListener;)V
     .locals 3
-    .param p1    # Landroid/view/ActionProvider$VisibilityListener;
 
     iget-object v0, p0, Landroid/view/ActionProvider;->mVisibilityListener:Landroid/view/ActionProvider$VisibilityListener;
 
@@ -173,7 +168,6 @@
 
 .method public subUiVisibilityChanged(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Landroid/view/ActionProvider;->mSubUiVisibilityListener:Landroid/view/ActionProvider$SubUiVisibilityListener;
 

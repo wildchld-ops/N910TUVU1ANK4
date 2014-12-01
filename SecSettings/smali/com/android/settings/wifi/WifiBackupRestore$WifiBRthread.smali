@@ -34,8 +34,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/settings/wifi/WifiBackupRestore;Landroid/content/Context;Landroid/content/Intent;)V
     .locals 0
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/content/Intent;
 
     iput-object p1, p0, Lcom/android/settings/wifi/WifiBackupRestore$WifiBRthread;->this$0:Lcom/android/settings/wifi/WifiBackupRestore;
 
@@ -215,7 +213,6 @@
 
 .method public StreamCrypt(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;
@@ -273,7 +270,6 @@
 
 .method public decryptStream(Ljava/io/InputStream;)Ljava/io/InputStream;
     .locals 5
-    .param p1    # Ljava/io/InputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;
@@ -325,8 +321,6 @@
 
 .method encrypt(Ljava/lang/String;Ljava/lang/String;)I
     .locals 18
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v8, 0x0
 
@@ -715,7 +709,6 @@
 
 .method public encryptStream(Ljava/io/OutputStream;)Ljava/io/OutputStream;
     .locals 5
-    .param p1    # Ljava/io/OutputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;
@@ -773,7 +766,6 @@
 
 .method getFileSize(Ljava/lang/String;)J
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/io/File;
 
@@ -788,7 +780,6 @@
 
 .method makeXML(Ljava/lang/String;)I
     .locals 9
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -1012,7 +1003,6 @@
 
 .method readXML(Ljava/lang/String;)I
     .locals 17
-    .param p1    # Ljava/lang/String;
 
     const/4 v11, 0x0
 
@@ -2873,9 +2863,6 @@
 
 .method sendResponse(III)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const-string v1, "WifiBackupRestore"
 

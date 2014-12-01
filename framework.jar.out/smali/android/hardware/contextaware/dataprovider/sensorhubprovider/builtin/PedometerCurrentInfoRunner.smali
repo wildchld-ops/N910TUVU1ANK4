@@ -14,9 +14,6 @@
 # direct methods
 .method public constructor <init>(ILandroid/content/Context;Landroid/hardware/contextaware/dataprovider/sensorhubprovider/ISensorHubResetObservable;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/hardware/contextaware/dataprovider/sensorhubprovider/ISensorHubResetObservable;
 
     invoke-direct {p0, p1, p2, p3}, Landroid/hardware/contextaware/dataprovider/sensorhubprovider/PedometerProviderForExtLib;-><init>(ILandroid/content/Context;Landroid/hardware/contextaware/dataprovider/sensorhubprovider/ISensorHubResetObservable;)V
 
@@ -41,8 +38,6 @@
 
 .method protected doTimeOutChecking(Landroid/hardware/contextaware/manager/ContextAwareService$Listener;Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/hardware/contextaware/manager/ContextAwareService$Listener;
-    .param p2    # Landroid/os/Bundle;
 
     const/4 v0, 0x1
 
@@ -167,8 +162,6 @@
 
 .method protected final parse(I[B)I
     .locals 4
-    .param p1    # I
-    .param p2    # [B
 
     const/4 v2, -0x1
 
@@ -234,7 +227,6 @@
 
 .method public final setPropertyValue(ILjava/lang/Object;)Z
     .locals 3
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",

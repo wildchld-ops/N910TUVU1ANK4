@@ -33,7 +33,6 @@
 # direct methods
 .method public constructor <init>(Landroid/view/ViewGroup;)V
     .locals 0
-    .param p1    # Landroid/view/ViewGroup;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -44,7 +43,6 @@
 
 .method static synthetic access$100(Lcom/android/launcher2/ChildIterable;)Landroid/view/ViewGroup;
     .locals 1
-    .param p0    # Lcom/android/launcher2/ChildIterable;
 
     iget-object v0, p0, Lcom/android/launcher2/ChildIterable;->mView:Landroid/view/ViewGroup;
 

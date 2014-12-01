@@ -95,7 +95,7 @@
     :cond_0
     iget-object v0, p0, Lcom/android/phone/EmergencyDialer$ActionModeCallback;->this$0:Lcom/android/phone/EmergencyDialer;
 
-    invoke-virtual {v0}, Landroid/app/Activity;->invalidateOptionsMenu()V
+    invoke-virtual {v0}, Lcom/android/phone/EmergencyDialer;->invalidateOptionsMenu()V
 
     invoke-virtual {p1}, Landroid/view/ActionMode;->finish()V
 
@@ -136,7 +136,7 @@
     :cond_1
     iget-object v0, p0, Lcom/android/phone/EmergencyDialer$ActionModeCallback;->this$0:Lcom/android/phone/EmergencyDialer;
 
-    invoke-virtual {v0}, Landroid/app/Activity;->invalidateOptionsMenu()V
+    invoke-virtual {v0}, Lcom/android/phone/EmergencyDialer;->invalidateOptionsMenu()V
 
     invoke-virtual {p1}, Landroid/view/ActionMode;->finish()V
 
@@ -157,7 +157,7 @@
 
     iget-object v2, p0, Lcom/android/phone/EmergencyDialer$ActionModeCallback;->this$0:Lcom/android/phone/EmergencyDialer;
 
-    invoke-virtual {v2}, Landroid/app/Activity;->getActionBar()Landroid/app/ActionBar;
+    invoke-virtual {v2}, Lcom/android/phone/EmergencyDialer;->getActionBar()Landroid/app/ActionBar;
 
     move-result-object v0
 
@@ -197,7 +197,7 @@
     :cond_1
     iget-object v2, p0, Lcom/android/phone/EmergencyDialer$ActionModeCallback;->this$0:Lcom/android/phone/EmergencyDialer;
 
-    invoke-virtual {v2}, Landroid/app/Activity;->getMenuInflater()Landroid/view/MenuInflater;
+    invoke-virtual {v2}, Lcom/android/phone/EmergencyDialer;->getMenuInflater()Landroid/view/MenuInflater;
 
     move-result-object v1
 
@@ -211,7 +211,7 @@
 
     iget-object v2, p0, Lcom/android/phone/EmergencyDialer$ActionModeCallback;->this$0:Lcom/android/phone/EmergencyDialer;
 
-    invoke-virtual {v2}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v2}, Lcom/android/phone/EmergencyDialer;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v2
 
@@ -267,7 +267,7 @@
 
     invoke-direct {v3, p0}, Lcom/android/phone/EmergencyDialer$ActionModeCallback$1;-><init>(Lcom/android/phone/EmergencyDialer$ActionModeCallback;)V
 
-    invoke-virtual {v2, v3}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v2, v3}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     :cond_3
     iget-object v2, p0, Lcom/android/phone/EmergencyDialer$ActionModeCallback;->this$0:Lcom/android/phone/EmergencyDialer;
@@ -351,7 +351,7 @@
 
     iget-object v0, p0, Lcom/android/phone/EmergencyDialer$ActionModeCallback;->this$0:Lcom/android/phone/EmergencyDialer;
 
-    invoke-virtual {v0}, Landroid/app/Activity;->invalidateOptionsMenu()V
+    invoke-virtual {v0}, Lcom/android/phone/EmergencyDialer;->invalidateOptionsMenu()V
 
     return-void
 .end method
@@ -497,7 +497,7 @@
 
     iget-object v2, p0, Lcom/android/phone/EmergencyDialer$ActionModeCallback;->this$0:Lcom/android/phone/EmergencyDialer;
 
-    invoke-virtual {v2}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v2}, Lcom/android/phone/EmergencyDialer;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v2
 

@@ -106,7 +106,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/autohaptic/AutoHapticSettings;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/settings/autohaptic/AutoHapticSettings;
 
     iget-object v0, p0, Lcom/android/settings/autohaptic/AutoHapticSettings;->mApps:Ljava/util/ArrayList;
 
@@ -115,7 +114,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/autohaptic/AutoHapticSettings;)Landroid/content/pm/PackageManager;
     .locals 1
-    .param p0    # Lcom/android/settings/autohaptic/AutoHapticSettings;
 
     invoke-virtual {p0}, Lcom/android/settings/SettingsPreferenceFragment;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -126,8 +124,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/autohaptic/AutoHapticSettings;Landroid/content/pm/PackageInfo;)V
     .locals 0
-    .param p0    # Lcom/android/settings/autohaptic/AutoHapticSettings;
-    .param p1    # Landroid/content/pm/PackageInfo;
 
     invoke-direct {p0, p1}, Lcom/android/settings/autohaptic/AutoHapticSettings;->filterAdd(Landroid/content/pm/PackageInfo;)V
 
@@ -136,7 +132,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/autohaptic/AutoHapticSettings;)V
     .locals 0
-    .param p0    # Lcom/android/settings/autohaptic/AutoHapticSettings;
 
     invoke-direct {p0}, Lcom/android/settings/autohaptic/AutoHapticSettings;->initAppList()V
 
@@ -145,7 +140,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/autohaptic/AutoHapticSettings;)V
     .locals 0
-    .param p0    # Lcom/android/settings/autohaptic/AutoHapticSettings;
 
     invoke-direct {p0}, Lcom/android/settings/autohaptic/AutoHapticSettings;->refreshAppListUI()V
 
@@ -154,7 +148,6 @@
 
 .method private filterAdd(Landroid/content/pm/PackageInfo;)V
     .locals 10
-    .param p1    # Landroid/content/pm/PackageInfo;
 
     if-eqz p1, :cond_0
 
@@ -344,7 +337,6 @@
 
 .method private getServicesWithProcessName(Ljava/lang/String;)[Ljava/lang/String;
     .locals 10
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -499,8 +491,6 @@
 
 .method public static isHapticThemePackage(Landroid/content/pm/PackageManager;Ljava/lang/String;)Z
     .locals 7
-    .param p0    # Landroid/content/pm/PackageManager;
-    .param p1    # Ljava/lang/String;
 
     const/16 v4, 0x8
 
@@ -703,10 +693,6 @@
 
 .method public static storeReverbSettings(Landroid/content/ContentResolver;III)V
     .locals 9
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v5, 0x0
 
@@ -887,7 +873,6 @@
 # virtual methods
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 8
-    .param p1    # Landroid/os/Bundle;
 
     const/16 v6, 0x10
 
@@ -980,8 +965,6 @@
 
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 16
-    .param p1    # Landroid/widget/CompoundButton;
-    .param p2    # Z
 
     const-string v12, "AutoHapticSettings"
 
@@ -1276,7 +1259,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 7
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v6, 0x0
 
@@ -1362,9 +1344,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 5
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const/16 v4, 0x11
 
@@ -1461,8 +1440,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 10
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     instance-of v7, p2, Landroid/preference/CheckBoxPreference;
 

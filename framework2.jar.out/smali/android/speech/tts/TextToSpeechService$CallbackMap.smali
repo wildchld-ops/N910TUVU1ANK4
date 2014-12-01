@@ -58,8 +58,6 @@
 
 .method synthetic constructor <init>(Landroid/speech/tts/TextToSpeechService;Landroid/speech/tts/TextToSpeechService$1;)V
     .locals 0
-    .param p1    # Landroid/speech/tts/TextToSpeechService;
-    .param p2    # Landroid/speech/tts/TextToSpeechService$1;
 
     invoke-direct {p0, p1}, Landroid/speech/tts/TextToSpeechService$CallbackMap;-><init>(Landroid/speech/tts/TextToSpeechService;)V
 
@@ -68,7 +66,6 @@
 
 .method private getCallbackFor(Ljava/lang/Object;)Landroid/speech/tts/ITextToSpeechCallback;
     .locals 4
-    .param p1    # Ljava/lang/Object;
 
     move-object v0, p1
 
@@ -105,8 +102,6 @@
 # virtual methods
 .method public dispatchOnDone(Ljava/lang/Object;Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Landroid/speech/tts/TextToSpeechService$CallbackMap;->getCallbackFor(Ljava/lang/Object;)Landroid/speech/tts/ITextToSpeechCallback;
 
@@ -155,8 +150,6 @@
 
 .method public dispatchOnError(Ljava/lang/Object;Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Landroid/speech/tts/TextToSpeechService$CallbackMap;->getCallbackFor(Ljava/lang/Object;)Landroid/speech/tts/ITextToSpeechCallback;
 
@@ -205,8 +198,6 @@
 
 .method public dispatchOnStart(Ljava/lang/Object;Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Landroid/speech/tts/TextToSpeechService$CallbackMap;->getCallbackFor(Ljava/lang/Object;)Landroid/speech/tts/ITextToSpeechCallback;
 
@@ -283,8 +274,6 @@
 
 .method public bridge synthetic onCallbackDied(Landroid/os/IInterface;Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Landroid/os/IInterface;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p1, Landroid/speech/tts/ITextToSpeechCallback;
 
@@ -295,8 +284,6 @@
 
 .method public onCallbackDied(Landroid/speech/tts/ITextToSpeechCallback;Ljava/lang/Object;)V
     .locals 3
-    .param p1    # Landroid/speech/tts/ITextToSpeechCallback;
-    .param p2    # Ljava/lang/Object;
 
     move-object v0, p2
 
@@ -339,8 +326,6 @@
 
 .method public setCallback(Landroid/os/IBinder;Landroid/speech/tts/ITextToSpeechCallback;)V
     .locals 3
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Landroid/speech/tts/ITextToSpeechCallback;
 
     iget-object v2, p0, Landroid/speech/tts/TextToSpeechService$CallbackMap;->mCallerToCallback:Ljava/util/HashMap;
 

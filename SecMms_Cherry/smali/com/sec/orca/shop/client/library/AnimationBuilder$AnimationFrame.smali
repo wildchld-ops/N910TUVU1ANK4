@@ -49,7 +49,6 @@
 
 .method public setDrawable(Landroid/graphics/drawable/BitmapDrawable;)V
     .locals 0
-    .param p1    # Landroid/graphics/drawable/BitmapDrawable;
 
     iput-object p1, p0, Lcom/sec/orca/shop/client/library/AnimationBuilder$AnimationFrame;->drawable:Landroid/graphics/drawable/BitmapDrawable;
 
@@ -58,7 +57,6 @@
 
 .method public setDuration(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/orca/shop/client/library/AnimationBuilder$AnimationFrame;->duration:I
 

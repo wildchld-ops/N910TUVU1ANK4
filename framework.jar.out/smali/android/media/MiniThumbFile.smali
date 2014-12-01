@@ -50,7 +50,6 @@
 
 .method public constructor <init>(Landroid/net/Uri;)V
     .locals 1
-    .param p1    # Landroid/net/Uri;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -69,7 +68,6 @@
 
 .method public static declared-synchronized instance(Landroid/net/Uri;)Landroid/media/MiniThumbFile;
     .locals 5
-    .param p0    # Landroid/net/Uri;
 
     const-class v3, Landroid/media/MiniThumbFile;
 
@@ -268,7 +266,6 @@
 
 .method private randomAccessFilePath(I)Ljava/lang/String;
     .locals 3
-    .param p1    # I
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -475,7 +472,6 @@
 
 .method public declared-synchronized getMagic(J)J
     .locals 11
-    .param p1    # J
 
     const/16 v10, 0x9
 
@@ -699,8 +695,6 @@
 
 .method public declared-synchronized getMiniThumbFromFile(J[B)[B
     .locals 16
-    .param p1    # J
-    .param p3    # [B
 
     monitor-enter p0
 
@@ -991,9 +985,6 @@
 
 .method public declared-synchronized saveMiniThumbToFile([BJJ)V
     .locals 9
-    .param p1    # [B
-    .param p2    # J
-    .param p4    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

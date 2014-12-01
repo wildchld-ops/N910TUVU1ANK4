@@ -33,8 +33,6 @@
 # virtual methods
 .method public scanCompleted(Ljava/lang/String;Landroid/net/Uri;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/net/Uri;
 
     iget-object v1, p0, Landroid/media/MediaScannerConnection$1;->this$0:Landroid/media/MediaScannerConnection;
 

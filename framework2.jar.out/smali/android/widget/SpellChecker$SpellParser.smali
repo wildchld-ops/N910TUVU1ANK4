@@ -39,8 +39,6 @@
 
 .method synthetic constructor <init>(Landroid/widget/SpellChecker;Landroid/widget/SpellChecker$1;)V
     .locals 0
-    .param p1    # Landroid/widget/SpellChecker;
-    .param p2    # Landroid/widget/SpellChecker$1;
 
     invoke-direct {p0, p1}, Landroid/widget/SpellChecker$SpellParser;-><init>(Landroid/widget/SpellChecker;)V
 
@@ -49,7 +47,6 @@
 
 .method private removeRangeSpan(Landroid/text/Editable;)V
     .locals 1
-    .param p1    # Landroid/text/Editable;
 
     iget-object v0, p0, Landroid/widget/SpellChecker$SpellParser;->mRange:Ljava/lang/Object;
 
@@ -60,8 +57,6 @@
 
 .method private removeSpansAt(Landroid/text/Editable;I[Ljava/lang/Object;)V
     .locals 5
-    .param p1    # Landroid/text/Editable;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -110,9 +105,6 @@
 
 .method private setRangeSpan(Landroid/text/Editable;II)V
     .locals 2
-    .param p1    # Landroid/text/Editable;
-    .param p2    # I
-    .param p3    # I
 
     iget-object v0, p0, Landroid/widget/SpellChecker$SpellParser;->mRange:Ljava/lang/Object;
 
@@ -1015,8 +1007,6 @@
 
 .method public parse(II)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
 
     iget-object v2, p0, Landroid/widget/SpellChecker$SpellParser;->this$0:Landroid/widget/SpellChecker;
 

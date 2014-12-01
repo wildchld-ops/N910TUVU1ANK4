@@ -87,7 +87,6 @@
 # direct methods
 .method public constructor <init>(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v2, -0x1
 
@@ -160,7 +159,6 @@
 
 .method static synthetic access$1300(Landroid/widget/RemoteViewsAdapter$FixedSizeRemoteViewsCache;)Landroid/widget/RemoteViewsAdapter$RemoteViewsMetaData;
     .locals 1
-    .param p0    # Landroid/widget/RemoteViewsAdapter$FixedSizeRemoteViewsCache;
 
     iget-object v0, p0, Landroid/widget/RemoteViewsAdapter$FixedSizeRemoteViewsCache;->mMetaData:Landroid/widget/RemoteViewsAdapter$RemoteViewsMetaData;
 
@@ -169,7 +167,6 @@
 
 .method static synthetic access$1400(Landroid/widget/RemoteViewsAdapter$FixedSizeRemoteViewsCache;)Ljava/util/HashMap;
     .locals 1
-    .param p0    # Landroid/widget/RemoteViewsAdapter$FixedSizeRemoteViewsCache;
 
     iget-object v0, p0, Landroid/widget/RemoteViewsAdapter$FixedSizeRemoteViewsCache;->mIndexRemoteViews:Ljava/util/HashMap;
 
@@ -178,7 +175,6 @@
 
 .method private getFarthestPositionFrom(ILjava/util/ArrayList;)I
     .locals 8
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -378,7 +374,6 @@
 
 .method public containsMetaDataAt(I)Z
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Landroid/widget/RemoteViewsAdapter$FixedSizeRemoteViewsCache;->mIndexMetaData:Ljava/util/HashMap;
 
@@ -395,7 +390,6 @@
 
 .method public containsRemoteViewAt(I)Z
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Landroid/widget/RemoteViewsAdapter$FixedSizeRemoteViewsCache;->mIndexRemoteViews:Ljava/util/HashMap;
 
@@ -420,7 +414,6 @@
 
 .method public getMetaDataAt(I)Landroid/widget/RemoteViewsAdapter$RemoteViewsIndexMetaData;
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Landroid/widget/RemoteViewsAdapter$FixedSizeRemoteViewsCache;->mIndexMetaData:Ljava/util/HashMap;
 
@@ -595,7 +588,6 @@
 
 .method public getRemoteViewsAt(I)Landroid/widget/RemoteViews;
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Landroid/widget/RemoteViewsAdapter$FixedSizeRemoteViewsCache;->mIndexRemoteViews:Ljava/util/HashMap;
 
@@ -640,9 +632,6 @@
 
 .method public insert(ILandroid/widget/RemoteViews;JLjava/util/ArrayList;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/widget/RemoteViews;
-    .param p3    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -770,7 +759,6 @@
 
 .method public queuePositionsToBePreloadedFromRequestedPosition(I)Z
     .locals 9
-    .param p1    # I
 
     const/4 v6, 0x0
 
@@ -921,7 +909,6 @@
 
 .method public queueRequestedPositionToLoad(I)V
     .locals 3
-    .param p1    # I
 
     iput p1, p0, Landroid/widget/RemoteViewsAdapter$FixedSizeRemoteViewsCache;->mLastRequestedIndex:I
 

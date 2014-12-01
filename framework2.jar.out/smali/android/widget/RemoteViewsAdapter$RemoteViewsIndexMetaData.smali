@@ -23,8 +23,6 @@
 # direct methods
 .method public constructor <init>(Landroid/widget/RemoteViews;J)V
     .locals 0
-    .param p1    # Landroid/widget/RemoteViews;
-    .param p2    # J
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,8 +35,6 @@
 # virtual methods
 .method public set(Landroid/widget/RemoteViews;J)V
     .locals 1
-    .param p1    # Landroid/widget/RemoteViews;
-    .param p2    # J
 
     iput-wide p2, p0, Landroid/widget/RemoteViewsAdapter$RemoteViewsIndexMetaData;->itemId:J
 

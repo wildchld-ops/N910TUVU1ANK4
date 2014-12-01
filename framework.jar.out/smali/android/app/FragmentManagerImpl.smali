@@ -242,7 +242,6 @@
 
 .method public static reverseTransit(I)I
     .locals 1
-    .param p0    # I
 
     const/4 v0, 0x0
 
@@ -276,7 +275,6 @@
 
 .method private throwException(Ljava/lang/RuntimeException;)V
     .locals 7
-    .param p1    # Ljava/lang/RuntimeException;
 
     const/4 v5, 0x0
 
@@ -383,8 +381,6 @@
 
 .method public static transitToStyleIndex(IZ)I
     .locals 1
-    .param p0    # I
-    .param p1    # Z
 
     const/4 v0, -0x1
 
@@ -446,7 +442,6 @@
 # virtual methods
 .method addBackStackState(Landroid/app/BackStackRecord;)V
     .locals 1
-    .param p1    # Landroid/app/BackStackRecord;
 
     iget-object v0, p0, Landroid/app/FragmentManagerImpl;->mBackStack:Ljava/util/ArrayList;
 
@@ -470,8 +465,6 @@
 
 .method public addFragment(Landroid/app/Fragment;Z)V
     .locals 4
-    .param p1    # Landroid/app/Fragment;
-    .param p2    # Z
 
     const/4 v3, 0x1
 
@@ -583,7 +576,6 @@
 
 .method public addOnBackStackChangedListener(Landroid/app/FragmentManager$OnBackStackChangedListener;)V
     .locals 1
-    .param p1    # Landroid/app/FragmentManager$OnBackStackChangedListener;
 
     iget-object v0, p0, Landroid/app/FragmentManagerImpl;->mBackStackChangeListeners:Ljava/util/ArrayList;
 
@@ -605,7 +597,6 @@
 
 .method public allocBackStackIndex(Landroid/app/BackStackRecord;)I
     .locals 5
-    .param p1    # Landroid/app/BackStackRecord;
 
     monitor-enter p0
 
@@ -768,9 +759,6 @@
 
 .method public attachActivity(Landroid/app/Activity;Landroid/app/FragmentContainer;Landroid/app/Fragment;)V
     .locals 2
-    .param p1    # Landroid/app/Activity;
-    .param p2    # Landroid/app/FragmentContainer;
-    .param p3    # Landroid/app/Fragment;
 
     iget-object v0, p0, Landroid/app/FragmentManagerImpl;->mActivity:Landroid/app/Activity;
 
@@ -796,9 +784,6 @@
 
 .method public attachFragment(Landroid/app/Fragment;II)V
     .locals 6
-    .param p1    # Landroid/app/Fragment;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v3, 0x1
 
@@ -957,9 +942,6 @@
 
 .method public detachFragment(Landroid/app/Fragment;II)V
     .locals 6
-    .param p1    # Landroid/app/Fragment;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v5, 0x0
 
@@ -1081,7 +1063,6 @@
 
 .method public dispatchConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 3
-    .param p1    # Landroid/content/res/Configuration;
 
     iget-object v2, p0, Landroid/app/FragmentManagerImpl;->mAdded:Ljava/util/ArrayList;
 
@@ -1121,7 +1102,6 @@
 
 .method public dispatchContextItemSelected(Landroid/view/MenuItem;)Z
     .locals 3
-    .param p1    # Landroid/view/MenuItem;
 
     iget-object v2, p0, Landroid/app/FragmentManagerImpl;->mAdded:Ljava/util/ArrayList;
 
@@ -1186,8 +1166,6 @@
 
 .method public dispatchCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)Z
     .locals 5
-    .param p1    # Landroid/view/Menu;
-    .param p2    # Landroid/view/MenuInflater;
 
     const/4 v3, 0x0
 
@@ -1363,7 +1341,6 @@
 
 .method public dispatchOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 3
-    .param p1    # Landroid/view/MenuItem;
 
     iget-object v2, p0, Landroid/app/FragmentManagerImpl;->mAdded:Ljava/util/ArrayList;
 
@@ -1414,7 +1391,6 @@
 
 .method public dispatchOptionsMenuClosed(Landroid/view/Menu;)V
     .locals 3
-    .param p1    # Landroid/view/Menu;
 
     iget-object v2, p0, Landroid/app/FragmentManagerImpl;->mAdded:Ljava/util/ArrayList;
 
@@ -1466,7 +1442,6 @@
 
 .method public dispatchPrepareOptionsMenu(Landroid/view/Menu;)Z
     .locals 4
-    .param p1    # Landroid/view/Menu;
 
     const/4 v2, 0x0
 
@@ -1554,7 +1529,6 @@
 
 .method public dispatchTrimMemory(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v2, p0, Landroid/app/FragmentManagerImpl;->mAdded:Ljava/util/ArrayList;
 
@@ -1594,10 +1568,6 @@
 
 .method public dump(Ljava/lang/String;Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/io/FileDescriptor;
-    .param p3    # Ljava/io/PrintWriter;
-    .param p4    # [Ljava/lang/String;
 
     new-instance v6, Ljava/lang/StringBuilder;
 
@@ -2131,8 +2101,6 @@
 
 .method public enqueueAction(Ljava/lang/Runnable;Z)V
     .locals 2
-    .param p1    # Ljava/lang/Runnable;
-    .param p2    # Z
 
     if-nez p2, :cond_0
 
@@ -2448,7 +2416,6 @@
 
 .method public findFragmentById(I)Landroid/app/Fragment;
     .locals 3
-    .param p1    # I
 
     iget-object v2, p0, Landroid/app/FragmentManagerImpl;->mAdded:Ljava/util/ArrayList;
 
@@ -2531,7 +2498,6 @@
 
 .method public findFragmentByTag(Ljava/lang/String;)Landroid/app/Fragment;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v2, p0, Landroid/app/FragmentManagerImpl;->mAdded:Ljava/util/ArrayList;
 
@@ -2626,7 +2592,6 @@
 
 .method public findFragmentByWho(Ljava/lang/String;)Landroid/app/Fragment;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v2, p0, Landroid/app/FragmentManagerImpl;->mActive:Ljava/util/ArrayList;
 
@@ -2677,7 +2642,6 @@
 
 .method public freeBackStackIndex(I)V
     .locals 3
-    .param p1    # I
 
     monitor-enter p0
 
@@ -2750,7 +2714,6 @@
 
 .method public getBackStackEntryAt(I)Landroid/app/FragmentManager$BackStackEntry;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/app/FragmentManagerImpl;->mBackStack:Ljava/util/ArrayList;
 
@@ -2787,8 +2750,6 @@
 
 .method public getFragment(Landroid/os/Bundle;Ljava/lang/String;)Landroid/app/Fragment;
     .locals 5
-    .param p1    # Landroid/os/Bundle;
-    .param p2    # Ljava/lang/String;
 
     const/4 v2, -0x1
 
@@ -2897,9 +2858,6 @@
 
 .method public hideFragment(Landroid/app/Fragment;II)V
     .locals 6
-    .param p1    # Landroid/app/Fragment;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v5, 0x1
 
@@ -3032,10 +2990,6 @@
 
 .method loadAnimator(Landroid/app/Fragment;IZI)Landroid/animation/Animator;
     .locals 7
-    .param p1    # Landroid/app/Fragment;
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # I
 
     const/4 v4, 0x0
 
@@ -3152,7 +3106,6 @@
 
 .method makeActive(Landroid/app/Fragment;)V
     .locals 3
-    .param p1    # Landroid/app/Fragment;
 
     iget v0, p1, Landroid/app/Fragment;->mIndex:I
 
@@ -3266,7 +3219,6 @@
 
 .method makeInactive(Landroid/app/Fragment;)V
     .locals 3
-    .param p1    # Landroid/app/Fragment;
 
     iget v0, p1, Landroid/app/Fragment;->mIndex:I
 
@@ -3345,10 +3297,6 @@
 
 .method moveToState(IIIZ)V
     .locals 8
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Z
 
     const/4 v5, 0x0
 
@@ -3465,8 +3413,6 @@
 
 .method moveToState(IZ)V
     .locals 1
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v0, 0x0
 
@@ -3477,7 +3423,6 @@
 
 .method moveToState(Landroid/app/Fragment;)V
     .locals 6
-    .param p1    # Landroid/app/Fragment;
 
     const/4 v3, 0x0
 
@@ -3498,11 +3443,6 @@
 
 .method moveToState(Landroid/app/Fragment;IIIZ)V
     .locals 10
-    .param p1    # Landroid/app/Fragment;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Z
 
     sget-boolean v0, Landroid/app/FragmentManagerImpl;->DEBUG:Z
 
@@ -4498,7 +4438,6 @@
 
 .method public performPendingDeferredStart(Landroid/app/Fragment;)V
     .locals 6
-    .param p1    # Landroid/app/Fragment;
 
     const/4 v3, 0x0
 
@@ -4552,8 +4491,6 @@
 
 .method public popBackStack(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     if-gez p1, :cond_0
 
@@ -4595,8 +4532,6 @@
 
 .method public popBackStack(Ljava/lang/String;I)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     new-instance v0, Landroid/app/FragmentManagerImpl$3;
 
@@ -4635,8 +4570,6 @@
 
 .method public popBackStackImmediate(II)Z
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0}, Landroid/app/FragmentManagerImpl;->checkStateLoss()V
 
@@ -4684,8 +4617,6 @@
 
 .method public popBackStackImmediate(Ljava/lang/String;I)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-direct {p0}, Landroid/app/FragmentManagerImpl;->checkStateLoss()V
 
@@ -4706,10 +4637,6 @@
 
 .method popBackStackState(Landroid/os/Handler;Ljava/lang/String;II)Z
     .locals 11
-    .param p1    # Landroid/os/Handler;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
 
     const/4 v8, 0x1
 
@@ -4965,9 +4892,6 @@
 
 .method public putFragment(Landroid/os/Bundle;Ljava/lang/String;Landroid/app/Fragment;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/app/Fragment;
 
     iget v0, p3, Landroid/app/Fragment;->mIndex:I
 
@@ -5013,9 +4937,6 @@
 
 .method public removeFragment(Landroid/app/Fragment;II)V
     .locals 7
-    .param p1    # Landroid/app/Fragment;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v0, 0x1
 
@@ -5131,7 +5052,6 @@
 
 .method public removeOnBackStackChangedListener(Landroid/app/FragmentManager$OnBackStackChangedListener;)V
     .locals 1
-    .param p1    # Landroid/app/FragmentManager$OnBackStackChangedListener;
 
     iget-object v0, p0, Landroid/app/FragmentManagerImpl;->mBackStackChangeListeners:Ljava/util/ArrayList;
 
@@ -5183,7 +5103,6 @@
 
 .method restoreAllState(Landroid/os/Parcelable;Ljava/util/ArrayList;)V
     .locals 12
-    .param p1    # Landroid/os/Parcelable;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -6393,7 +6312,6 @@
 
 .method saveFragmentBasicState(Landroid/app/Fragment;)Landroid/os/Bundle;
     .locals 3
-    .param p1    # Landroid/app/Fragment;
 
     const/4 v0, 0x0
 
@@ -6475,7 +6393,6 @@
 
 .method public saveFragmentInstanceState(Landroid/app/Fragment;)Landroid/app/Fragment$SavedState;
     .locals 5
-    .param p1    # Landroid/app/Fragment;
 
     const/4 v1, 0x0
 
@@ -6534,7 +6451,6 @@
 
 .method saveFragmentViewState(Landroid/app/Fragment;)V
     .locals 2
-    .param p1    # Landroid/app/Fragment;
 
     iget-object v0, p1, Landroid/app/Fragment;->mView:Landroid/view/View;
 
@@ -6590,8 +6506,6 @@
 
 .method public setBackStackIndex(ILandroid/app/BackStackRecord;)V
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/app/BackStackRecord;
 
     monitor-enter p0
 
@@ -6777,9 +6691,6 @@
 
 .method public showFragment(Landroid/app/Fragment;II)V
     .locals 6
-    .param p1    # Landroid/app/Fragment;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v5, 0x1
 

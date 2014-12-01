@@ -25,8 +25,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/PackageManagerBackupAgent;I[Landroid/content/pm/Signature;)V
     .locals 0
-    .param p2    # I
-    .param p3    # [Landroid/content/pm/Signature;
 
     iput-object p1, p0, Lcom/android/server/PackageManagerBackupAgent$Metadata;->this$0:Lcom/android/server/PackageManagerBackupAgent;
 

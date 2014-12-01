@@ -40,7 +40,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/accessibility/ScreenMagnifier;Landroid/content/Context;)V
     .locals 2
-    .param p2    # Landroid/content/Context;
 
     iput-object p1, p0, Lcom/android/server/accessibility/ScreenMagnifier$MagnifiedContentInteractonStateHandler;->this$0:Lcom/android/server/accessibility/ScreenMagnifier;
 
@@ -73,7 +72,6 @@
 
 .method static synthetic access$700(Lcom/android/server/accessibility/ScreenMagnifier$MagnifiedContentInteractonStateHandler;)V
     .locals 0
-    .param p0    # Lcom/android/server/accessibility/ScreenMagnifier$MagnifiedContentInteractonStateHandler;
 
     invoke-direct {p0}, Lcom/android/server/accessibility/ScreenMagnifier$MagnifiedContentInteractonStateHandler;->clear()V
 
@@ -98,7 +96,6 @@
 # virtual methods
 .method public onMotionEvent(Landroid/view/MotionEvent;)V
     .locals 4
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v3, 0x3
 
@@ -205,7 +202,6 @@
 
 .method public onScale(Landroid/view/ScaleGestureDetector;)Z
     .locals 8
-    .param p1    # Landroid/view/ScaleGestureDetector;
 
     const/4 v4, 0x0
 
@@ -310,7 +306,6 @@
 
 .method public onScaleBegin(Landroid/view/ScaleGestureDetector;)Z
     .locals 2
-    .param p1    # Landroid/view/ScaleGestureDetector;
 
     iget-object v0, p0, Lcom/android/server/accessibility/ScreenMagnifier$MagnifiedContentInteractonStateHandler;->this$0:Lcom/android/server/accessibility/ScreenMagnifier;
 
@@ -336,7 +331,6 @@
 
 .method public onScaleEnd(Landroid/view/ScaleGestureDetector;)V
     .locals 0
-    .param p1    # Landroid/view/ScaleGestureDetector;
 
     invoke-direct {p0}, Lcom/android/server/accessibility/ScreenMagnifier$MagnifiedContentInteractonStateHandler;->clear()V
 
@@ -345,10 +339,6 @@
 
 .method public onScroll(Landroid/view/MotionEvent;Landroid/view/MotionEvent;FF)Z
     .locals 3
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # Landroid/view/MotionEvent;
-    .param p3    # F
-    .param p4    # F
 
     const/4 v2, 0x1
 

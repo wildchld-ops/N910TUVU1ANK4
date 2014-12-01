@@ -14,8 +14,6 @@
 
 .method private pickSuggestionManually(ILjava/lang/CharSequence;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/CharSequence;
 
     invoke-static {}, Lcom/diotek/ime/framework/common/InputManagerImpl;->getInstance()Lcom/diotek/ime/framework/common/InputManager;
 
@@ -51,8 +49,6 @@
 
 .method public onCandidateSelected(ILjava/lang/CharSequence;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/CharSequence;
 
     invoke-direct {p0, p1, p2}, Lcom/diotek/ime/framework/view/event/CandidateActionListener;->pickSuggestionManually(ILjava/lang/CharSequence;)V
 
@@ -69,8 +65,6 @@
 
 .method public onFlipDown(ILjava/lang/CharSequence;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/CharSequence;
 
     invoke-direct {p0, p1, p2}, Lcom/diotek/ime/framework/view/event/CandidateActionListener;->pickSuggestionManually(ILjava/lang/CharSequence;)V
 
@@ -81,8 +75,6 @@
 
 .method public onFlipLeft(ILjava/lang/CharSequence;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/CharSequence;
 
     const/4 v0, 0x0
 
@@ -91,8 +83,6 @@
 
 .method public onFlipRight(ILjava/lang/CharSequence;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/CharSequence;
 
     const/4 v0, 0x0
 
@@ -101,8 +91,6 @@
 
 .method public onFlipUp(ILjava/lang/CharSequence;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/CharSequence;
 
     invoke-direct {p0, p1, p2}, Lcom/diotek/ime/framework/view/event/CandidateActionListener;->pickSuggestionManually(ILjava/lang/CharSequence;)V
 

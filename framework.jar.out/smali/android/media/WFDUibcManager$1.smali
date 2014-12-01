@@ -21,7 +21,6 @@
 # direct methods
 .method constructor <init>(Landroid/media/WFDUibcManager;Landroid/content/Context;)V
     .locals 0
-    .param p2    # Landroid/content/Context;
 
     iput-object p1, p0, Landroid/media/WFDUibcManager$1;->this$0:Landroid/media/WFDUibcManager;
 
@@ -34,7 +33,6 @@
 # virtual methods
 .method public onOrientationChanged(I)V
     .locals 1
-    .param p1    # I
 
     const/4 v0, -0x1
 

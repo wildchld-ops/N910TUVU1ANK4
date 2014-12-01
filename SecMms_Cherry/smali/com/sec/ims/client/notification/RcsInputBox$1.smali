@@ -40,7 +40,6 @@
 # virtual methods
 .method public createFromParcel(Landroid/os/Parcel;)Lcom/sec/ims/client/notification/RcsInputBox;
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     new-instance v0, Lcom/sec/ims/client/notification/RcsInputBox;
 
@@ -61,7 +60,6 @@
 
 .method public newArray(I)[Lcom/sec/ims/client/notification/RcsInputBox;
     .locals 1
-    .param p1    # I
 
     new-array v0, p1, [Lcom/sec/ims/client/notification/RcsInputBox;
 

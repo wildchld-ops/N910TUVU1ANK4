@@ -167,8 +167,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v3, 0x1
 
@@ -255,9 +253,6 @@
 
 .method static synthetic access$000(Lcom/android/incallui/vt/PreviewEffectUI;Ljava/lang/String;Z)V
     .locals 0
-    .param p0    # Lcom/android/incallui/vt/PreviewEffectUI;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/incallui/vt/PreviewEffectUI;->log(Ljava/lang/String;Z)V
 
@@ -266,7 +261,6 @@
 
 .method private convertEffectTypeForCSVT(I)I
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -328,7 +322,6 @@
 
 .method private convertEffectTypeForPSVT(I)I
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -414,7 +407,6 @@
 
 .method private startCameraEffect(I)V
     .locals 2
-    .param p1    # I
 
     const-string v0, "ims_video_camera_effect"
 
@@ -473,7 +465,6 @@
 
 .method private startEmotionalAnimation(I)V
     .locals 1
-    .param p1    # I
 
     invoke-static {}, Lcom/android/incallui/vt/VideoCallManager;->getInstance()Lcom/android/incallui/vt/VideoCallManager;
 
@@ -1683,7 +1674,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 8
-    .param p1    # Landroid/view/View;
 
     const/16 v7, 0x12d
 

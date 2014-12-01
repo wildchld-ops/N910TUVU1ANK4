@@ -10,11 +10,6 @@
 # direct methods
 .method constructor <init>(IZLjava/net/InetAddress;Ljava/net/InetAddress;[B)V
     .locals 8
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # Ljava/net/InetAddress;
-    .param p4    # Ljava/net/InetAddress;
-    .param p5    # [B
 
     sget-object v2, Ljava/net/Inet4Address;->ANY:Ljava/net/InetAddress;
 
@@ -43,7 +38,6 @@
 
 .method private static final getInt(Ljava/lang/Integer;)I
     .locals 1
-    .param p0    # Ljava/lang/Integer;
 
     if-nez p0, :cond_0
 
@@ -64,9 +58,6 @@
 # virtual methods
 .method public buildPacket(ISS)Ljava/nio/ByteBuffer;
     .locals 9
-    .param p1    # I
-    .param p2    # S
-    .param p3    # S
 
     const/16 v0, 0x5dc
 
@@ -119,7 +110,6 @@
 
 .method public doNextOp(Landroid/net/dhcp/DhcpStateMachine;)V
     .locals 7
-    .param p1    # Landroid/net/dhcp/DhcpStateMachine;
 
     iget-object v1, p0, Landroid/net/dhcp/DhcpPacket;->mYourIp:Ljava/net/InetAddress;
 
@@ -146,7 +136,6 @@
 
 .method finishPacket(Ljava/nio/ByteBuffer;)V
     .locals 2
-    .param p1    # Ljava/nio/ByteBuffer;
 
     const/16 v0, 0x35
 

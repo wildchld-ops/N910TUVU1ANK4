@@ -91,7 +91,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/wifi/WifiHiddenApDeleteFragment;)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/WifiHiddenApDeleteFragment;
 
     invoke-direct {p0}, Lcom/android/settings/wifi/WifiHiddenApDeleteFragment;->removeListItems()V
 
@@ -100,7 +99,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/wifi/WifiHiddenApDeleteFragment;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiHiddenApDeleteFragment;
 
     iget-object v0, p0, Lcom/android/settings/wifi/WifiHiddenApDeleteFragment;->mSelectAllCheckbox:Landroid/view/View;
 
@@ -109,7 +107,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/wifi/WifiHiddenApDeleteFragment;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiHiddenApDeleteFragment;
 
     iget-object v0, p0, Lcom/android/settings/wifi/WifiHiddenApDeleteFragment;->mList:Ljava/util/ArrayList;
 
@@ -118,7 +115,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/wifi/WifiHiddenApDeleteFragment;)Landroid/widget/ListView;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiHiddenApDeleteFragment;
 
     iget-object v0, p0, Lcom/android/settings/wifi/WifiHiddenApDeleteFragment;->mListView:Landroid/widget/ListView;
 
@@ -127,7 +123,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/wifi/WifiHiddenApDeleteFragment;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiHiddenApDeleteFragment;
 
     iget-object v0, p0, Lcom/android/settings/wifi/WifiHiddenApDeleteFragment;->mContext:Landroid/content/Context;
 
@@ -136,7 +131,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/wifi/WifiHiddenApDeleteFragment;)F
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiHiddenApDeleteFragment;
 
     iget v0, p0, Lcom/android/settings/wifi/WifiHiddenApDeleteFragment;->enableOpacity:F
 
@@ -145,7 +139,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/wifi/WifiHiddenApDeleteFragment;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiHiddenApDeleteFragment;
 
     iget-object v0, p0, Lcom/android/settings/wifi/WifiHiddenApDeleteFragment;->mRemoveTextView:Landroid/widget/TextView;
 
@@ -154,7 +147,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/wifi/WifiHiddenApDeleteFragment;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiHiddenApDeleteFragment;
 
     iget-object v0, p0, Lcom/android/settings/wifi/WifiHiddenApDeleteFragment;->mRemoveButton:Landroid/view/View;
 
@@ -163,7 +155,6 @@
 
 .method static synthetic access$800(Lcom/android/settings/wifi/WifiHiddenApDeleteFragment;)F
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiHiddenApDeleteFragment;
 
     iget v0, p0, Lcom/android/settings/wifi/WifiHiddenApDeleteFragment;->disableOpacity:F
 
@@ -172,7 +163,6 @@
 
 .method static synthetic access$900(Lcom/android/settings/wifi/WifiHiddenApDeleteFragment;)Landroid/view/MenuItem;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiHiddenApDeleteFragment;
 
     iget-object v0, p0, Lcom/android/settings/wifi/WifiHiddenApDeleteFragment;->mRemoveMenu:Landroid/view/MenuItem;
 
@@ -446,7 +436,6 @@
 # virtual methods
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -461,8 +450,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
     .locals 5
-    .param p1    # Landroid/view/Menu;
-    .param p2    # Landroid/view/MenuInflater;
 
     const/4 v4, 0x5
 
@@ -519,9 +506,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 10
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const/4 v7, 0x0
 
@@ -706,7 +690,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 2
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v0, 0x1
 

@@ -79,8 +79,6 @@
 
 .method static synthetic access$002(Landroid/accessibilityservice/AccessibilityService;I)I
     .locals 0
-    .param p0    # Landroid/accessibilityservice/AccessibilityService;
-    .param p1    # I
 
     iput p1, p0, Landroid/accessibilityservice/AccessibilityService;->mConnectionId:I
 
@@ -202,7 +200,6 @@
 
 .method public final onBind(Landroid/content/Intent;)Landroid/os/IBinder;
     .locals 3
-    .param p1    # Landroid/content/Intent;
 
     new-instance v0, Landroid/accessibilityservice/AccessibilityService$IAccessibilityServiceClientWrapper;
 
@@ -221,7 +218,6 @@
 
 .method protected onGesture(I)Z
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -233,7 +229,6 @@
 
 .method protected onKeyEvent(Landroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x0
 
@@ -248,7 +243,6 @@
 
 .method public final performGlobalAction(I)Z
     .locals 4
-    .param p1    # I
 
     invoke-static {}, Landroid/view/accessibility/AccessibilityInteractionClient;->getInstance()Landroid/view/accessibility/AccessibilityInteractionClient;
 
@@ -289,7 +283,6 @@
 
 .method public final setServiceInfo(Landroid/accessibilityservice/AccessibilityServiceInfo;)V
     .locals 0
-    .param p1    # Landroid/accessibilityservice/AccessibilityServiceInfo;
 
     iput-object p1, p0, Landroid/accessibilityservice/AccessibilityService;->mInfo:Landroid/accessibilityservice/AccessibilityServiceInfo;
 

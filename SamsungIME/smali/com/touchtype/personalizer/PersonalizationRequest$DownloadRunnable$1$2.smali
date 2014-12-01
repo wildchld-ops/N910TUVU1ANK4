@@ -37,9 +37,6 @@
 # virtual methods
 .method public onComplete(ZZZ)V
     .locals 3
-    .param p1    # Z
-    .param p2    # Z
-    .param p3    # Z
 
     if-eqz p1, :cond_0
 
@@ -121,8 +118,6 @@
 
 .method public onProgress(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/touchtype/personalizer/PersonalizationRequest$DownloadRunnable$1$2;->this$2:Lcom/touchtype/personalizer/PersonalizationRequest$DownloadRunnable$1;
 

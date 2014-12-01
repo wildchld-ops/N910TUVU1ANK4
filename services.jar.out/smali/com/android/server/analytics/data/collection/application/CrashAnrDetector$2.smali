@@ -33,8 +33,6 @@
 # virtual methods
 .method public onPackageAdded(Ljava/lang/String;I)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const-string v0, "CrashAnrDetector"
 
@@ -68,8 +66,6 @@
 
 .method public onPackageRemoved(Ljava/lang/String;I)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const-string v0, "CrashAnrDetector"
 
@@ -103,8 +99,6 @@
 
 .method public onPackageUpdateFinished(Ljava/lang/String;I)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const-string v0, "CrashAnrDetector"
 

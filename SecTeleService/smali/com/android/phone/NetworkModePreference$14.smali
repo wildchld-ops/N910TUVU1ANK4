@@ -60,7 +60,7 @@
 
     const/16 v1, 0x64
 
-    invoke-virtual {v0, v1}, Landroid/app/Activity;->showDialog(I)V
+    invoke-virtual {v0, v1}, Lcom/android/phone/MobileNetworkSettings;->showDialog(I)V
 
     iget-object v0, p0, Lcom/android/phone/NetworkModePreference$14;->this$0:Lcom/android/phone/NetworkModePreference;
 
@@ -212,7 +212,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1, v2}, Landroid/os/Handler;->obtainMessage(I)Landroid/os/Message;
+    invoke-virtual {v1, v2}, Lcom/android/phone/NetworkModePreference$MyHandler;->obtainMessage(I)Landroid/os/Message;
 
     move-result-object v1
 
@@ -226,7 +226,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->dismiss()V
+    invoke-virtual {v0}, Landroid/app/AlertDialog;->dismiss()V
 
     goto/16 :goto_0
 
@@ -245,7 +245,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1, v2}, Landroid/os/Handler;->obtainMessage(I)Landroid/os/Message;
+    invoke-virtual {v1, v2}, Lcom/android/phone/NetworkModePreference$MyHandler;->obtainMessage(I)Landroid/os/Message;
 
     move-result-object v1
 

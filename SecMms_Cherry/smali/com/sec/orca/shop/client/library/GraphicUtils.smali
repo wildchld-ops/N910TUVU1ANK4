@@ -14,7 +14,6 @@
 
 .method public static recycleDrawable(Landroid/graphics/drawable/Drawable;)V
     .locals 5
-    .param p0    # Landroid/graphics/drawable/Drawable;
 
     instance-of v4, p0, Landroid/graphics/drawable/LayerDrawable;
 
@@ -104,10 +103,6 @@
 
 .method public static resizeImage(Landroid/content/Context;Ljava/io/File;II)Landroid/graphics/Bitmap;
     .locals 7
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/io/File;
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

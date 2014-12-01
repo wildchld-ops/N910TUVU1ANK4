@@ -293,7 +293,7 @@
 
     move-object/from16 v1, v25
 
-    invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v0, v1}, Landroid/widget/LinearLayout;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     iget-object v0, v10, Lcom/android/phone/callsettings/AutoRejectList$AutoRejectItem;->reject_num:Ljava/lang/String;
 
@@ -476,7 +476,7 @@
 
     move/from16 v1, v25
 
-    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v1}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
     const v25, 0x7f0a0038
 
@@ -518,7 +518,7 @@
 
     move/from16 v1, v25
 
-    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v1}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
     const v25, 0x7f0a003b
 
@@ -560,7 +560,7 @@
 
     move/from16 v1, v25
 
-    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v1}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
     move-object/from16 v17, v13
 
@@ -605,7 +605,7 @@
 
     move-object/from16 v1, v25
 
-    invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v0, v1}, Landroid/widget/LinearLayout;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     iget-object v0, v10, Lcom/android/phone/callsettings/AutoRejectList$AutoRejectItem;->reject_num:Ljava/lang/String;
 
@@ -705,7 +705,7 @@
 
     move/from16 v1, v25
 
-    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v1}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
     move-object/from16 v17, v13
 
@@ -722,7 +722,7 @@
 
     move/from16 v1, v25
 
-    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v1}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
     move-object/from16 v17, v14
 
@@ -739,7 +739,7 @@
 
     move/from16 v1, v25
 
-    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v1}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
     move-object/from16 v17, v15
 
@@ -972,7 +972,7 @@
 
     move-object/from16 v0, v25
 
-    invoke-virtual {v3, v0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v3, v0}, Landroid/widget/LinearLayout;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     move-object/from16 v0, v24
 
@@ -1020,7 +1020,7 @@
 
     invoke-direct {v0, v1, v2, v10}, Lcom/android/phone/callsettings/AutoRejectList$AutoRejectAdapter$5;-><init>(Lcom/android/phone/callsettings/AutoRejectList$AutoRejectAdapter;ILcom/android/phone/callsettings/AutoRejectList$AutoRejectItem;)V
 
-    invoke-virtual/range {v25 .. v26}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual/range {v25 .. v26}, Landroid/widget/LinearLayout;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     move-object/from16 v0, v24
 
@@ -1036,7 +1036,7 @@
 
     invoke-direct {v0, v1, v10}, Lcom/android/phone/callsettings/AutoRejectList$AutoRejectAdapter$6;-><init>(Lcom/android/phone/callsettings/AutoRejectList$AutoRejectAdapter;Lcom/android/phone/callsettings/AutoRejectList$AutoRejectItem;)V
 
-    invoke-virtual/range {v25 .. v26}, Landroid/view/View;->setOnLongClickListener(Landroid/view/View$OnLongClickListener;)V
+    invoke-virtual/range {v25 .. v26}, Landroid/widget/LinearLayout;->setOnLongClickListener(Landroid/view/View$OnLongClickListener;)V
 
     move-object/from16 v0, v24
 
@@ -1307,7 +1307,7 @@
 
     invoke-direct {v0, v1, v10}, Lcom/android/phone/callsettings/AutoRejectList$AutoRejectAdapter$7;-><init>(Lcom/android/phone/callsettings/AutoRejectList$AutoRejectAdapter;Lcom/android/phone/callsettings/AutoRejectList$AutoRejectItem;)V
 
-    invoke-virtual/range {v25 .. v26}, Landroid/view/View;->setOnLongClickListener(Landroid/view/View$OnLongClickListener;)V
+    invoke-virtual/range {v25 .. v26}, Landroid/widget/LinearLayout;->setOnLongClickListener(Landroid/view/View$OnLongClickListener;)V
 
     move-object/from16 v0, v24
 
@@ -1325,7 +1325,7 @@
 
     invoke-direct {v0, v1, v2, v10}, Lcom/android/phone/callsettings/AutoRejectList$AutoRejectAdapter$8;-><init>(Lcom/android/phone/callsettings/AutoRejectList$AutoRejectAdapter;ILcom/android/phone/callsettings/AutoRejectList$AutoRejectItem;)V
 
-    invoke-virtual/range {v25 .. v26}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual/range {v25 .. v26}, Landroid/widget/LinearLayout;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     goto/16 :goto_5
 
@@ -1514,7 +1514,7 @@
 
     iget-object v2, p0, Lcom/android/phone/callsettings/AutoRejectList$AutoRejectAdapter;->this$0:Lcom/android/phone/callsettings/AutoRejectList;
 
-    invoke-virtual {v0, p1}, Landroid/widget/AbsListView;->isItemChecked(I)Z
+    invoke-virtual {v0, p1}, Landroid/widget/ListView;->isItemChecked(I)Z
 
     move-result v3
 

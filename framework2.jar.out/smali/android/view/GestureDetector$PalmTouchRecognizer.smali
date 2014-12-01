@@ -49,7 +49,6 @@
 
 .method static synthetic access$900(Landroid/view/GestureDetector$PalmTouchRecognizer;)Z
     .locals 1
-    .param p0    # Landroid/view/GestureDetector$PalmTouchRecognizer;
 
     iget-boolean v0, p0, Landroid/view/GestureDetector$PalmTouchRecognizer;->mPalmDown:Z
 
@@ -58,8 +57,6 @@
 
 .method static synthetic access$902(Landroid/view/GestureDetector$PalmTouchRecognizer;Z)Z
     .locals 0
-    .param p0    # Landroid/view/GestureDetector$PalmTouchRecognizer;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/view/GestureDetector$PalmTouchRecognizer;->mPalmDown:Z
 
@@ -97,7 +94,6 @@
 
 .method public Process(Landroid/view/GestureDetector$SurfaceTouchSharingData;)V
     .locals 5
-    .param p1    # Landroid/view/GestureDetector$SurfaceTouchSharingData;
 
     const/4 v4, 0x0
 

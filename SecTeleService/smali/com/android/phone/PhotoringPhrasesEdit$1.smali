@@ -75,7 +75,7 @@
     :try_start_0
     iget-object v2, p0, Lcom/android/phone/PhotoringPhrasesEdit$1;->this$0:Lcom/android/phone/PhotoringPhrasesEdit;
 
-    invoke-virtual {v2, v1}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {v2, v1}, Lcom/android/phone/PhotoringPhrasesEdit;->startActivity(Landroid/content/Intent;)V
     :try_end_0
     .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 

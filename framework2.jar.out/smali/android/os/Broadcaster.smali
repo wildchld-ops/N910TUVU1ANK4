@@ -29,7 +29,6 @@
 # virtual methods
 .method public broadcast(Landroid/os/Message;)V
     .locals 10
-    .param p1    # Landroid/os/Message;
 
     monitor-enter p0
 
@@ -113,9 +112,6 @@
 
 .method public cancelRequest(ILandroid/os/Handler;I)V
     .locals 10
-    .param p1    # I
-    .param p2    # Landroid/os/Handler;
-    .param p3    # I
 
     monitor-enter p0
 
@@ -385,9 +381,6 @@
 
 .method public request(ILandroid/os/Handler;I)V
     .locals 11
-    .param p1    # I
-    .param p2    # Landroid/os/Handler;
-    .param p3    # I
 
     monitor-enter p0
 

@@ -36,8 +36,6 @@
 # virtual methods
 .method public onBeforeCheckedChanged(Lcom/android/settings/accessibility/ToggleSwitch;Z)Z
     .locals 4
-    .param p1    # Lcom/android/settings/accessibility/ToggleSwitch;
-    .param p2    # Z
 
     const/4 v3, 0x0
 

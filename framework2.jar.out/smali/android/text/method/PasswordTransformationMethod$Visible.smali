@@ -27,8 +27,6 @@
 # direct methods
 .method public constructor <init>(Landroid/text/Spannable;Landroid/text/method/PasswordTransformationMethod;)V
     .locals 4
-    .param p1    # Landroid/text/Spannable;
-    .param p2    # Landroid/text/method/PasswordTransformationMethod;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
@@ -51,7 +49,6 @@
 
 .method static synthetic access$000(Landroid/text/method/PasswordTransformationMethod$Visible;)Landroid/text/method/PasswordTransformationMethod;
     .locals 1
-    .param p0    # Landroid/text/method/PasswordTransformationMethod$Visible;
 
     iget-object v0, p0, Landroid/text/method/PasswordTransformationMethod$Visible;->mTransformer:Landroid/text/method/PasswordTransformationMethod;
 

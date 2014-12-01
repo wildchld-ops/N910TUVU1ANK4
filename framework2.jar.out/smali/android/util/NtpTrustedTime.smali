@@ -37,8 +37,6 @@
 # direct methods
 .method private constructor <init>(Ljava/lang/String;J)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -85,9 +83,6 @@
 
 .method private constructor <init>(Ljava/lang/String;Ljava/lang/String;J)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # J
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -146,10 +141,6 @@
 
 .method private constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;J)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # J
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -220,11 +211,6 @@
 
 .method private constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;J)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # J
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -307,7 +293,6 @@
 
 .method public static declared-synchronized getInstance(Landroid/content/Context;)Landroid/util/NtpTrustedTime;
     .locals 23
-    .param p0    # Landroid/content/Context;
 
     const-class v22, Landroid/util/NtpTrustedTime;
 

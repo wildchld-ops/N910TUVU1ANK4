@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Lcom/android/server/DirEncryptServiceHelper;Lcom/android/server/DirEncryptServiceHelper$1;)V
     .locals 0
-    .param p1    # Lcom/android/server/DirEncryptServiceHelper;
-    .param p2    # Lcom/android/server/DirEncryptServiceHelper$1;
 
     invoke-direct {p0, p1}, Lcom/android/server/DirEncryptServiceHelper$SDStorageEventListener;-><init>(Lcom/android/server/DirEncryptServiceHelper;)V
 
@@ -43,9 +41,6 @@
 # virtual methods
 .method public onStorageStateChanged(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/server/DirEncryptServiceHelper$SDStorageEventListener;->this$0:Lcom/android/server/DirEncryptServiceHelper;
 
@@ -231,7 +226,6 @@
 
 .method public onUsbMassStorageConnectionChanged(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method

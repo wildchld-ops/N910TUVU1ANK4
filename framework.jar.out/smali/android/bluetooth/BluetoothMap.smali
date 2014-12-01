@@ -41,8 +41,6 @@
 # direct methods
 .method constructor <init>(Landroid/content/Context;Landroid/bluetooth/BluetoothProfile$ServiceListener;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/bluetooth/BluetoothProfile$ServiceListener;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -109,7 +107,6 @@
 
 .method static synthetic access$000(Landroid/bluetooth/BluetoothMap;)Landroid/content/ServiceConnection;
     .locals 1
-    .param p0    # Landroid/bluetooth/BluetoothMap;
 
     iget-object v0, p0, Landroid/bluetooth/BluetoothMap;->mConnection:Landroid/content/ServiceConnection;
 
@@ -118,7 +115,6 @@
 
 .method static synthetic access$100(Landroid/bluetooth/BluetoothMap;)Landroid/bluetooth/IBluetoothMap;
     .locals 1
-    .param p0    # Landroid/bluetooth/BluetoothMap;
 
     iget-object v0, p0, Landroid/bluetooth/BluetoothMap;->mService:Landroid/bluetooth/IBluetoothMap;
 
@@ -127,8 +123,6 @@
 
 .method static synthetic access$102(Landroid/bluetooth/BluetoothMap;Landroid/bluetooth/IBluetoothMap;)Landroid/bluetooth/IBluetoothMap;
     .locals 0
-    .param p0    # Landroid/bluetooth/BluetoothMap;
-    .param p1    # Landroid/bluetooth/IBluetoothMap;
 
     iput-object p1, p0, Landroid/bluetooth/BluetoothMap;->mService:Landroid/bluetooth/IBluetoothMap;
 
@@ -137,7 +131,6 @@
 
 .method static synthetic access$200(Landroid/bluetooth/BluetoothMap;)Landroid/content/Context;
     .locals 1
-    .param p0    # Landroid/bluetooth/BluetoothMap;
 
     iget-object v0, p0, Landroid/bluetooth/BluetoothMap;->mContext:Landroid/content/Context;
 
@@ -146,7 +139,6 @@
 
 .method static synthetic access$300(Ljava/lang/String;)V
     .locals 0
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Landroid/bluetooth/BluetoothMap;->log(Ljava/lang/String;)V
 
@@ -155,7 +147,6 @@
 
 .method static synthetic access$400(Landroid/bluetooth/BluetoothMap;)Landroid/bluetooth/BluetoothProfile$ServiceListener;
     .locals 1
-    .param p0    # Landroid/bluetooth/BluetoothMap;
 
     iget-object v0, p0, Landroid/bluetooth/BluetoothMap;->mServiceListener:Landroid/bluetooth/BluetoothProfile$ServiceListener;
 
@@ -164,7 +155,6 @@
 
 .method public static doesClassMatchSink(Landroid/bluetooth/BluetoothClass;)Z
     .locals 1
-    .param p0    # Landroid/bluetooth/BluetoothClass;
 
     invoke-virtual {p0}, Landroid/bluetooth/BluetoothClass;->getDeviceClass()I
 
@@ -227,7 +217,6 @@
 
 .method private isValidDevice(Landroid/bluetooth/BluetoothDevice;)Z
     .locals 2
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
 
     const/4 v0, 0x0
 
@@ -255,7 +244,6 @@
 
 .method private static log(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "BluetoothMap"
 
@@ -386,7 +374,6 @@
 
 .method public connect(Landroid/bluetooth/BluetoothDevice;)Z
     .locals 2
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -427,7 +414,6 @@
 
 .method public disconnect(Landroid/bluetooth/BluetoothDevice;)Z
     .locals 4
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
 
     const/4 v1, 0x0
 
@@ -748,7 +734,6 @@
 
 .method public getConnectionState(Landroid/bluetooth/BluetoothDevice;)I
     .locals 4
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
 
     const/4 v1, 0x0
 
@@ -840,7 +825,6 @@
 
 .method public getDevicesMatchingConnectionStates([I)Ljava/util/List;
     .locals 3
-    .param p1    # [I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([I)",
@@ -919,7 +903,6 @@
 
 .method public getPriority(Landroid/bluetooth/BluetoothDevice;)I
     .locals 4
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
 
     const/4 v1, 0x0
 
@@ -1040,7 +1023,6 @@
 
 .method public isConnected(Landroid/bluetooth/BluetoothDevice;)Z
     .locals 3
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
 
     iget-object v1, p0, Landroid/bluetooth/BluetoothMap;->mService:Landroid/bluetooth/IBluetoothMap;
 
@@ -1096,8 +1078,6 @@
 
 .method public setPriority(Landroid/bluetooth/BluetoothDevice;I)Z
     .locals 4
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
-    .param p2    # I
 
     const/4 v1, 0x0
 

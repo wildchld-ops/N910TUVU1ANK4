@@ -54,7 +54,6 @@
 
 .method private static isMTCmd(Ljava/lang/String;)Z
     .locals 7
-    .param p0    # Ljava/lang/String;
 
     const/4 v3, 0x1
 
@@ -269,7 +268,6 @@
 
 .method private static isMTOn(Landroid/content/Context;)Z
     .locals 10
-    .param p0    # Landroid/content/Context;
 
     const/4 v9, 0x0
 
@@ -376,8 +374,6 @@
 
 .method public static messageParser(Ljava/lang/String;Landroid/content/Context;)Z
     .locals 5
-    .param p0    # Ljava/lang/String;
-    .param p1    # Landroid/content/Context;
 
     const/4 v2, 0x1
 
@@ -478,7 +474,6 @@
 
 .method public static msgFwdFlag(Landroid/content/Context;)Z
     .locals 11
-    .param p0    # Landroid/content/Context;
 
     const/4 v10, 0x0
 

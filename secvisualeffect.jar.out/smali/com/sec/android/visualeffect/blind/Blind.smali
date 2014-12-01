@@ -14,10 +14,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/graphics/Bitmap;II)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/graphics/Bitmap;
-    .param p3    # I
-    .param p4    # I
 
     invoke-direct {p0, p1}, Landroid/widget/ImageView;-><init>(Landroid/content/Context;)V
 
@@ -42,7 +38,6 @@
 # virtual methods
 .method public changeBitmap(Landroid/graphics/Bitmap;)V
     .locals 0
-    .param p1    # Landroid/graphics/Bitmap;
 
     invoke-virtual {p0, p1}, Landroid/widget/ImageView;->setImageBitmap(Landroid/graphics/Bitmap;)V
 

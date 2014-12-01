@@ -97,7 +97,6 @@
 
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -112,7 +111,6 @@
 
 .method static getInstance(Landroid/content/Context;)Lcom/android/server/cover/Feature;
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     sget-object v0, Lcom/android/server/cover/Feature;->sInstance:Lcom/android/server/cover/Feature;
 
@@ -239,7 +237,6 @@
 
 .method private updateSystemFeature(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     sget-boolean v1, Lcom/android/server/cover/Feature;->sIsSystemFeatureQueried:Z
 
@@ -293,9 +290,6 @@
 # virtual methods
 .method dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     const-string v0, " Current Feature state:"
 

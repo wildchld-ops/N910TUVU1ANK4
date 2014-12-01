@@ -48,8 +48,6 @@
 
 .method public constructor <init>(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -62,7 +60,6 @@
 
 .method public constructor <init>(Landroid/graphics/Point;)V
     .locals 1
-    .param p1    # Landroid/graphics/Point;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -89,8 +86,6 @@
 
 .method public final equals(II)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget v0, p0, Landroid/graphics/Point;->x:I
 
@@ -113,7 +108,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 5
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x1
 
@@ -204,8 +198,6 @@
 
 .method public final offset(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget v0, p0, Landroid/graphics/Point;->x:I
 
@@ -224,7 +216,6 @@
 
 .method public readFromParcel(Landroid/os/Parcel;)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
@@ -243,8 +234,6 @@
 
 .method public set(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     iput p1, p0, Landroid/graphics/Point;->x:I
 
@@ -299,8 +288,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget v0, p0, Landroid/graphics/Point;->x:I
 

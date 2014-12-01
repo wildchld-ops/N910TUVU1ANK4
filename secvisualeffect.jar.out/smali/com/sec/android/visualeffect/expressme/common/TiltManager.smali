@@ -70,7 +70,6 @@
 # virtual methods
 .method public handleSensorEvent(Landroid/hardware/SensorEvent;)V
     .locals 3
-    .param p1    # Landroid/hardware/SensorEvent;
 
     iget-object v1, p1, Landroid/hardware/SensorEvent;->sensor:Landroid/hardware/Sensor;
 
@@ -129,7 +128,6 @@
 
 .method public registerTiltChangedListener(Lcom/sec/android/visualeffect/expressme/common/TiltManager$TiltChangedListener;)V
     .locals 0
-    .param p1    # Lcom/sec/android/visualeffect/expressme/common/TiltManager$TiltChangedListener;
 
     iput-object p1, p0, Lcom/sec/android/visualeffect/expressme/common/TiltManager;->mTiltChangedListener:Lcom/sec/android/visualeffect/expressme/common/TiltManager$TiltChangedListener;
 

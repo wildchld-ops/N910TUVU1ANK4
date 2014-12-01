@@ -40,8 +40,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/view/WindowManagerPolicy;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/view/WindowManagerPolicy;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
@@ -58,7 +56,6 @@
 
 .method static synthetic access$000(Lcom/android/server/wm/KeyguardDisableHandler;)I
     .locals 1
-    .param p0    # Lcom/android/server/wm/KeyguardDisableHandler;
 
     iget v0, p0, Lcom/android/server/wm/KeyguardDisableHandler;->mAllowDisableKeyguard:I
 
@@ -67,8 +64,6 @@
 
 .method static synthetic access$002(Lcom/android/server/wm/KeyguardDisableHandler;I)I
     .locals 0
-    .param p0    # Lcom/android/server/wm/KeyguardDisableHandler;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/wm/KeyguardDisableHandler;->mAllowDisableKeyguard:I
 
@@ -79,7 +74,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 4
-    .param p1    # Landroid/os/Message;
 
     iget-object v1, p0, Lcom/android/server/wm/KeyguardDisableHandler;->mKeyguardTokenWatcher:Lcom/android/server/wm/KeyguardDisableHandler$KeyguardTokenWatcher;
 

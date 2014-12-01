@@ -37,7 +37,6 @@
 
 .method protected getObj(Lcom/android/launcher2/MenuAppsGrid;)Lcom/android/launcher2/MenuAppsGrid$StateObj;
     .locals 1
-    .param p1    # Lcom/android/launcher2/MenuAppsGrid;
 
     # getter for: Lcom/android/launcher2/MenuAppsGrid;->mStateUninstall:Lcom/android/launcher2/MenuAppsGrid$StateObj;
     invoke-static {p1}, Lcom/android/launcher2/MenuAppsGrid;->access$900(Lcom/android/launcher2/MenuAppsGrid;)Lcom/android/launcher2/MenuAppsGrid$StateObj;

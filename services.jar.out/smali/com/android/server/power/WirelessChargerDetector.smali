@@ -88,9 +88,6 @@
 
 .method public constructor <init>(Landroid/hardware/SensorManager;Lcom/android/server/power/SuspendBlocker;Landroid/os/Handler;)V
     .locals 1
-    .param p1    # Landroid/hardware/SensorManager;
-    .param p2    # Lcom/android/server/power/SuspendBlocker;
-    .param p3    # Landroid/os/Handler;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -131,7 +128,6 @@
 
 .method static synthetic access$000(Lcom/android/server/power/WirelessChargerDetector;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Lcom/android/server/power/WirelessChargerDetector;
 
     iget-object v0, p0, Lcom/android/server/power/WirelessChargerDetector;->mLock:Ljava/lang/Object;
 
@@ -140,10 +136,6 @@
 
 .method static synthetic access$100(Lcom/android/server/power/WirelessChargerDetector;FFF)V
     .locals 0
-    .param p0    # Lcom/android/server/power/WirelessChargerDetector;
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/server/power/WirelessChargerDetector;->processSampleLocked(FFF)V
 
@@ -152,7 +144,6 @@
 
 .method static synthetic access$200(Lcom/android/server/power/WirelessChargerDetector;)V
     .locals 0
-    .param p0    # Lcom/android/server/power/WirelessChargerDetector;
 
     invoke-direct {p0}, Lcom/android/server/power/WirelessChargerDetector;->finishDetectionLocked()V
 
@@ -314,12 +305,6 @@
 
 .method private static hasMoved(FFFFFF)Z
     .locals 11
-    .param p0    # F
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
 
     mul-float v7, p0, p3
 
@@ -419,9 +404,6 @@
 
 .method private processSampleLocked(FFF)V
     .locals 6
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
 
     iget-boolean v0, p0, Lcom/android/server/power/WirelessChargerDetector;->mDetectionInProgress:Z
 
@@ -577,7 +559,6 @@
 # virtual methods
 .method public dump(Ljava/io/PrintWriter;)V
     .locals 7
-    .param p1    # Ljava/io/PrintWriter;
 
     iget-object v1, p0, Lcom/android/server/power/WirelessChargerDetector;->mLock:Ljava/lang/Object;
 
@@ -938,9 +919,6 @@
 
 .method public update(ZII)Z
     .locals 6
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
 
     const/4 v5, 0x4
 

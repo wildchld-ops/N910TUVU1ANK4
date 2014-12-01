@@ -16,15 +16,12 @@
 # virtual methods
 .method public onIndexChanged(Landroid/webkit/WebHistoryItem;I)V
     .locals 0
-    .param p1    # Landroid/webkit/WebHistoryItem;
-    .param p2    # I
 
     return-void
 .end method
 
 .method public onNewHistoryItem(Landroid/webkit/WebHistoryItem;)V
     .locals 0
-    .param p1    # Landroid/webkit/WebHistoryItem;
 
     return-void
 .end method

@@ -43,8 +43,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/hardware/scontext/provider/EventListener;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/hardware/scontext/provider/EventListener;
 
     const/4 v1, 0x0
 
@@ -87,8 +85,6 @@
 
 .method public addAction(Landroid/hardware/scontext/SContextService$Listener;Landroid/os/Bundle;)V
     .locals 9
-    .param p1    # Landroid/hardware/scontext/SContextService$Listener;
-    .param p2    # Landroid/os/Bundle;
 
     const/4 v5, 0x0
 
@@ -226,7 +222,6 @@
 
 .method public getActionListener(I)Ljava/util/ArrayList;
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -264,8 +259,6 @@
 
 .method public removeAction(Landroid/hardware/scontext/SContextService$Listener;Landroid/os/Bundle;)V
     .locals 8
-    .param p1    # Landroid/hardware/scontext/SContextService$Listener;
-    .param p2    # Landroid/os/Bundle;
 
     const-string v4, "activity_notification_activity_filter"
 
@@ -352,7 +345,6 @@
 
 .method public saveEvent(Landroid/hardware/scontext/SContextEvent;)V
     .locals 5
-    .param p1    # Landroid/hardware/scontext/SContextEvent;
 
     const-string v2, "SContext.CaeProvider.ActivityNotificationImpl"
 
@@ -463,8 +455,6 @@
 
 .method public setProperty(ILandroid/os/Bundle;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     return-void
 .end method

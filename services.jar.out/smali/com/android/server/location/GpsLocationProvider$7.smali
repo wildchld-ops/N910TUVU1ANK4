@@ -33,8 +33,6 @@
 # virtual methods
 .method public sendNiResponse(II)Z
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     const-string v0, "GpsLocationProvider"
 

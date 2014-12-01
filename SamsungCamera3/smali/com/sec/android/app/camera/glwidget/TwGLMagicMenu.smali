@@ -645,10 +645,6 @@
 
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;ILcom/sec/android/glview/TwGLViewGroup;Lcom/sec/android/app/camera/MenuResourceDepot;)V
     .locals 8
-    .param p1    # Lcom/sec/android/app/camera/Camera;
-    .param p2    # I
-    .param p3    # Lcom/sec/android/glview/TwGLViewGroup;
-    .param p4    # Lcom/sec/android/app/camera/MenuResourceDepot;
 
     const/4 v5, 0x6
 
@@ -3729,7 +3725,6 @@
 
 .method public launchMagicStudio(I)V
     .locals 2
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLMagicMenu;->mSelectMode:I
 
@@ -3779,7 +3774,6 @@
 
 .method public onClick(Lcom/sec/android/glview/TwGLView;)Z
     .locals 3
-    .param p1    # Lcom/sec/android/glview/TwGLView;
 
     const/4 v2, 0x0
 
@@ -3891,8 +3885,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const-string v0, "TwGLMagicMenu"
 
@@ -3959,8 +3951,6 @@
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v1, 0x1
 
@@ -4078,7 +4068,6 @@
 
 .method public onOrientationChanged(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "TwGLMagicMenu"
 
@@ -4162,7 +4151,6 @@
 
 .method public pushInputString(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLMagicMenu;->mInputPath:Ljava/lang/String;
 
@@ -4279,7 +4267,6 @@
 
 .method public reset(Z)V
     .locals 3
-    .param p1    # Z
 
     const/4 v2, 0x0
 
@@ -4563,7 +4550,6 @@
 
 .method public setOnMagicCaptureCancelledListener(Lcom/sec/android/app/camera/glwidget/TwGLMagicMenu$OnMagicCaptureCancelListener;)V
     .locals 0
-    .param p1    # Lcom/sec/android/app/camera/glwidget/TwGLMagicMenu$OnMagicCaptureCancelListener;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLMagicMenu;->mListener:Lcom/sec/android/app/camera/glwidget/TwGLMagicMenu$OnMagicCaptureCancelListener;
 
@@ -4739,7 +4725,6 @@
 
 .method public showSelectLayout(I)V
     .locals 9
-    .param p1    # I
 
     const/4 v8, 0x4
 

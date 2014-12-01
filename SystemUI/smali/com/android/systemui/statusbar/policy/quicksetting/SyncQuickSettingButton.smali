@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 8
-    .param p1    # Landroid/content/Context;
 
     const v2, 0x7f0b0116
 
@@ -130,7 +129,6 @@
 
 .method public onClick(Z)V
     .locals 6
-    .param p1    # Z
 
     const/4 v5, 0x0
 

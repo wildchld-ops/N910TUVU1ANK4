@@ -81,7 +81,6 @@
 
 .method public static kernelToTag(Ljava/lang/String;)I
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -125,7 +124,6 @@
 
 .method public static resetKernelUidStats(I)V
     .locals 4
-    .param p0    # I
 
     const/4 v2, 0x0
 
@@ -181,8 +179,6 @@
 
 .method public static setKernelCounterSet(II)V
     .locals 4
-    .param p0    # I
-    .param p1    # I
 
     const-string/jumbo v1, "net.qtaguid_enabled"
 
@@ -248,7 +244,6 @@
 
 .method public static setThreadSocketStatsTag(I)V
     .locals 1
-    .param p0    # I
 
     sget-object v0, Lcom/android/server/NetworkManagementSocketTagger;->threadSocketTags:Ljava/lang/ThreadLocal;
 
@@ -265,7 +260,6 @@
 
 .method public static setThreadSocketStatsUid(I)V
     .locals 1
-    .param p0    # I
 
     sget-object v0, Lcom/android/server/NetworkManagementSocketTagger;->threadSocketTags:Ljava/lang/ThreadLocal;
 
@@ -282,9 +276,6 @@
 
 .method private tagSocketFd(Ljava/io/FileDescriptor;II)V
     .locals 4
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v1, -0x1
 
@@ -374,7 +365,6 @@
 
 .method private unTagSocketFd(Ljava/io/FileDescriptor;)V
     .locals 5
-    .param p1    # Ljava/io/FileDescriptor;
 
     const/4 v3, -0x1
 
@@ -458,7 +448,6 @@
 # virtual methods
 .method public tag(Ljava/io/FileDescriptor;)V
     .locals 3
-    .param p1    # Ljava/io/FileDescriptor;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/net/SocketException;
@@ -484,7 +473,6 @@
 
 .method public untag(Ljava/io/FileDescriptor;)V
     .locals 0
-    .param p1    # Ljava/io/FileDescriptor;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/net/SocketException;

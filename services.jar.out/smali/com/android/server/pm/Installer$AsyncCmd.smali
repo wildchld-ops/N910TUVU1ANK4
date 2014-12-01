@@ -35,7 +35,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/pm/Installer;I)V
     .locals 2
-    .param p2    # I
 
     iput-object p1, p0, Lcom/android/server/pm/Installer$AsyncCmd;->this$0:Lcom/android/server/pm/Installer;
 
@@ -58,7 +57,6 @@
 
 .method private convertCmdIntToStr(I)Ljava/lang/String;
     .locals 3
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -96,7 +94,6 @@
 
 .method public appendPackage(Ljava/lang/String;)Lcom/android/server/pm/Installer$AsyncCmd;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/server/pm/Installer$AsyncCmd;->targetPkgStr:Ljava/lang/String;
 
@@ -109,7 +106,6 @@
 
 .method public checkAck(Lcom/android/server/pm/Installer$AsyncReply;)Z
     .locals 3
-    .param p1    # Lcom/android/server/pm/Installer$AsyncReply;
 
     const/4 v0, 0x0
 
@@ -143,7 +139,6 @@
 
 .method public checkMatched(Lcom/android/server/pm/Installer$AsyncReply;)Z
     .locals 3
-    .param p1    # Lcom/android/server/pm/Installer$AsyncReply;
 
     const/4 v0, 0x0
 

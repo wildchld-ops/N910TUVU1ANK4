@@ -57,7 +57,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -80,7 +79,6 @@
 
 .method static synthetic access$000(Lcom/android/server/content/ContentService$ObserverNode;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/server/content/ContentService$ObserverNode;
 
     iget-object v0, p0, Lcom/android/server/content/ContentService$ObserverNode;->mObservers:Ljava/util/ArrayList;
 
@@ -89,14 +87,6 @@
 
 .method private addObserverLocked(Landroid/net/Uri;ILandroid/database/IContentObserver;ZLjava/lang/Object;III)V
     .locals 12
-    .param p1    # Landroid/net/Uri;
-    .param p2    # I
-    .param p3    # Landroid/database/IContentObserver;
-    .param p4    # Z
-    .param p5    # Ljava/lang/Object;
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/content/ContentService$ObserverNode;->countUriSegments(Landroid/net/Uri;)I
 
@@ -251,10 +241,6 @@
 
 .method private collectMyObserversLocked(ZLandroid/database/IContentObserver;ZILjava/util/ArrayList;)V
     .locals 8
-    .param p1    # Z
-    .param p2    # Landroid/database/IContentObserver;
-    .param p3    # Z
-    .param p4    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(Z",
@@ -369,7 +355,6 @@
 
 .method private countUriSegments(Landroid/net/Uri;)I
     .locals 1
-    .param p1    # Landroid/net/Uri;
 
     if-nez p1, :cond_0
 
@@ -394,8 +379,6 @@
 
 .method private getUriSegment(Landroid/net/Uri;I)Ljava/lang/String;
     .locals 2
-    .param p1    # Landroid/net/Uri;
-    .param p2    # I
 
     if-eqz p1, :cond_1
 
@@ -433,13 +416,6 @@
 # virtual methods
 .method public addObserverLocked(Landroid/net/Uri;Landroid/database/IContentObserver;ZLjava/lang/Object;III)V
     .locals 9
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Landroid/database/IContentObserver;
-    .param p3    # Z
-    .param p4    # Ljava/lang/Object;
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
 
     const/4 v2, 0x0
 
@@ -466,11 +442,6 @@
 
 .method public collectObserversLocked(Landroid/net/Uri;ILandroid/database/IContentObserver;ZILjava/util/ArrayList;)V
     .locals 11
-    .param p1    # Landroid/net/Uri;
-    .param p2    # I
-    .param p3    # Landroid/database/IContentObserver;
-    .param p4    # Z
-    .param p5    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -589,13 +560,6 @@
 
 .method public dumpLocked(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[ILandroid/util/SparseIntArray;)V
     .locals 9
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # [I
-    .param p7    # Landroid/util/SparseIntArray;
 
     const/4 v4, 0x0
 
@@ -789,7 +753,6 @@
 
 .method public removeObserverLocked(Landroid/database/IContentObserver;)Z
     .locals 7
-    .param p1    # Landroid/database/IContentObserver;
 
     const/4 v6, 0x0
 

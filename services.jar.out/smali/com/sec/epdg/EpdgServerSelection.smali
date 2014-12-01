@@ -66,7 +66,6 @@
 
 .method public static generateEpdgFqdn(Landroid/content/Context;)Ljava/lang/String;
     .locals 13
-    .param p0    # Landroid/content/Context;
 
     const/4 v12, 0x6
 
@@ -666,7 +665,6 @@
 
 .method private performDnsAndAddRoute(Ljava/lang/String;)[Ljava/net/InetAddress;
     .locals 12
-    .param p1    # Ljava/lang/String;
 
     const/4 v9, 0x0
 
@@ -941,7 +939,6 @@
 
 .method private declared-synchronized setEpdgServerIpPoolFromFqdn(Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -1615,7 +1612,6 @@
 
 .method public performDnsAndSetEpdgServerIpPool(Lcom/sec/epdg/EpdgService$DnsRetryReason;)Z
     .locals 9
-    .param p1    # Lcom/sec/epdg/EpdgService$DnsRetryReason;
 
     const/4 v0, 0x0
 
@@ -1859,7 +1855,6 @@
 
 .method public declared-synchronized resetEpdgServerIpAddressAndPool(Lcom/sec/epdg/EpdgService$EpdgServerIpResetReason;)V
     .locals 3
-    .param p1    # Lcom/sec/epdg/EpdgService$EpdgServerIpResetReason;
 
     monitor-enter p0
 

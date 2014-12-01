@@ -270,8 +270,6 @@
 
 .method constructor <init>(Lcom/android/launcher2/LauncherApplication;Lcom/android/launcher2/PkgResCache;)V
     .locals 2
-    .param p1    # Lcom/android/launcher2/LauncherApplication;
-    .param p2    # Lcom/android/launcher2/PkgResCache;
 
     const/4 v0, 0x0
 
@@ -333,9 +331,6 @@
 
 .method constructor <init>(Lcom/android/launcher2/LauncherApplication;Lcom/android/launcher2/PkgResCache;Lcom/android/launcher2/PkgResCache;)V
     .locals 2
-    .param p1    # Lcom/android/launcher2/LauncherApplication;
-    .param p2    # Lcom/android/launcher2/PkgResCache;
-    .param p3    # Lcom/android/launcher2/PkgResCache;
 
     const/4 v0, 0x0
 
@@ -397,7 +392,6 @@
 
 .method static synthetic access$100(Lcom/android/launcher2/LauncherModel;)Lcom/android/launcher2/LauncherModel$LoaderTask;
     .locals 1
-    .param p0    # Lcom/android/launcher2/LauncherModel;
 
     iget-object v0, p0, Lcom/android/launcher2/LauncherModel;->mLoaderTask:Lcom/android/launcher2/LauncherModel$LoaderTask;
 
@@ -406,8 +400,6 @@
 
 .method static synthetic access$102(Lcom/android/launcher2/LauncherModel;Lcom/android/launcher2/LauncherModel$LoaderTask;)Lcom/android/launcher2/LauncherModel$LoaderTask;
     .locals 0
-    .param p0    # Lcom/android/launcher2/LauncherModel;
-    .param p1    # Lcom/android/launcher2/LauncherModel$LoaderTask;
 
     iput-object p1, p0, Lcom/android/launcher2/LauncherModel;->mLoaderTask:Lcom/android/launcher2/LauncherModel$LoaderTask;
 
@@ -416,7 +408,6 @@
 
 .method static synthetic access$400(Lcom/android/launcher2/LauncherModel;)Z
     .locals 1
-    .param p0    # Lcom/android/launcher2/LauncherModel;
 
     iget-boolean v0, p0, Lcom/android/launcher2/LauncherModel;->isLauncherProviderLoaded:Z
 
@@ -425,8 +416,6 @@
 
 .method static synthetic access$402(Lcom/android/launcher2/LauncherModel;Z)Z
     .locals 0
-    .param p0    # Lcom/android/launcher2/LauncherModel;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/launcher2/LauncherModel;->isLauncherProviderLoaded:Z
 
@@ -435,7 +424,6 @@
 
 .method static synthetic access$500(Lcom/android/launcher2/LauncherModel;)Lcom/android/launcher2/HomeLoader;
     .locals 1
-    .param p0    # Lcom/android/launcher2/LauncherModel;
 
     iget-object v0, p0, Lcom/android/launcher2/LauncherModel;->mHomeLoader:Lcom/android/launcher2/HomeLoader;
 
@@ -444,7 +432,6 @@
 
 .method static synthetic access$600(Lcom/android/launcher2/LauncherModel;)Lcom/android/launcher2/BadgeCache;
     .locals 1
-    .param p0    # Lcom/android/launcher2/LauncherModel;
 
     iget-object v0, p0, Lcom/android/launcher2/LauncherModel;->mBadgeCache:Lcom/android/launcher2/BadgeCache;
 
@@ -453,8 +440,6 @@
 
 .method private addHomeItem(Lcom/android/launcher2/HomeView;Lcom/android/launcher2/HomeItem;)Z
     .locals 9
-    .param p1    # Lcom/android/launcher2/HomeView;
-    .param p2    # Lcom/android/launcher2/HomeItem;
 
     const/4 v8, 0x1
 
@@ -536,13 +521,6 @@
 
 .method static addItemToDatabase(Landroid/content/Context;Lcom/android/launcher2/HomeItem;JIIIZ)V
     .locals 12
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/launcher2/HomeItem;
-    .param p2    # J
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # Z
 
     iput-wide p2, p1, Lcom/android/launcher2/HomeItem;->container:J
 
@@ -774,8 +752,6 @@
 
 .method static addItemToItemList(Landroid/content/Context;Lcom/android/launcher2/HomeItem;)V
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/launcher2/HomeItem;
 
     sget-object v0, Lcom/android/launcher2/LauncherModel;->sHomeItemIdMap:Ljava/util/HashMap;
 
@@ -933,14 +909,6 @@
 
 .method static addOrMoveItemInDatabase(Landroid/content/Context;Lcom/android/launcher2/HomeItem;JIIIII)V
     .locals 10
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/launcher2/HomeItem;
-    .param p2    # J
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
 
     iget-wide v0, p1, Lcom/android/launcher2/HomeItem;->mId:J
 
@@ -995,7 +963,6 @@
 
 .method private changeHomeItem(Lcom/android/launcher2/HomeView;Ljava/util/ArrayList;Ljava/util/ArrayList;)V
     .locals 10
-    .param p1    # Lcom/android/launcher2/HomeView;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1088,8 +1055,6 @@
 
 .method static deleteItemFromDatabase(Landroid/content/Context;Lcom/android/launcher2/HomeItem;)V
     .locals 9
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/launcher2/HomeItem;
 
     const/4 v5, 0x0
 
@@ -1202,8 +1167,6 @@
 
 .method static deleteItemsFromDatabase(Landroid/content/Context;Ljava/util/List;Z)V
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1250,11 +1213,6 @@
 
 .method private dynamicCscToggleEasyMode(ZZILandroid/content/Context;Ljava/lang/String;)V
     .locals 8
-    .param p1    # Z
-    .param p2    # Z
-    .param p3    # I
-    .param p4    # Landroid/content/Context;
-    .param p5    # Ljava/lang/String;
 
     const-string v0, "Launcher.Model"
 
@@ -1313,7 +1271,6 @@
 
 .method private enqueuePackageUpdated(Lcom/android/launcher2/LauncherModel$PackageUpdatedTask;)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/LauncherModel$PackageUpdatedTask;
 
     sget-object v0, Lcom/android/launcher2/LauncherModel;->sWorker:Landroid/os/Handler;
 
@@ -1324,7 +1281,6 @@
 
 .method protected static findOrMakeFolder(Ljava/util/HashMap;J)Lcom/android/launcher2/HomeFolderItem;
     .locals 2
-    .param p1    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1381,12 +1337,6 @@
 
 .method static getCellLayoutChildId(JIIIII)I
     .locals 2
-    .param p0    # J
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     long-to-int v0, p0
 
@@ -1427,9 +1377,6 @@
 
 .method private getIconFromCursor(Landroid/database/Cursor;ILandroid/content/Context;)Landroid/graphics/Bitmap;
     .locals 4
-    .param p1    # Landroid/database/Cursor;
-    .param p2    # I
-    .param p3    # Landroid/content/Context;
 
     invoke-interface {p1, p2}, Landroid/database/Cursor;->getBlob(I)[B
 
@@ -1463,9 +1410,6 @@
 
 .method static getItemsInLocalCoordinates(Landroid/content/Context;JI)Ljava/util/ArrayList;
     .locals 18
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1690,7 +1634,6 @@
 
 .method private isKnoxShortcut(Landroid/content/Intent;)Z
     .locals 5
-    .param p1    # Landroid/content/Intent;
 
     invoke-virtual {p1}, Landroid/content/Intent;->getComponent()Landroid/content/ComponentName;
 
@@ -1776,8 +1719,6 @@
 
 .method private static loadShortcutMovie(Landroid/content/Context;Lcom/android/launcher2/HomeShortcutItem;)V
     .locals 10
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/launcher2/HomeShortcutItem;
 
     iget-object v5, p1, Lcom/android/launcher2/HomeShortcutItem;->mIconMovieUri:Landroid/net/Uri;
 
@@ -1936,15 +1877,6 @@
 
 .method static moveItemInDatabase(Landroid/content/Context;Lcom/android/launcher2/HomeItem;JIIIIILjava/lang/String;)V
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/launcher2/HomeItem;
-    .param p2    # J
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
-    .param p9    # Ljava/lang/String;
 
     const/4 v3, -0x1
 
@@ -2095,7 +2027,6 @@
 
 .method public static moveItemsInDatabase(Landroid/content/Context;Ljava/util/List;)V
     .locals 8
-    .param p0    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2216,8 +2147,6 @@
 
 .method private removeHomeItem(Lcom/android/launcher2/HomeView;Lcom/android/launcher2/HomeItem;)Z
     .locals 6
-    .param p1    # Lcom/android/launcher2/HomeView;
-    .param p2    # Lcom/android/launcher2/HomeItem;
 
     const/4 v1, 0x1
 
@@ -2259,9 +2188,6 @@
 
 .method static shortcutExists(Landroid/content/Context;Ljava/lang/String;Landroid/content/Intent;)Z
     .locals 9
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/Intent;
 
     const/4 v8, 0x1
 
@@ -2315,8 +2241,6 @@
 
 .method private startLoader(ZZ)V
     .locals 3
-    .param p1    # Z
-    .param p2    # Z
 
     const-string v0, "Launcher.Model"
 
@@ -2415,7 +2339,6 @@
 
 .method static updateAppItems(Landroid/content/Context;Ljava/util/List;)V
     .locals 4
-    .param p0    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2468,9 +2391,6 @@
 
 .method static updateItemInDatabase(Landroid/content/Context;JLandroid/content/ContentValues;)V
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
-    .param p3    # Landroid/content/ContentValues;
 
     const-string v4, "container"
 
@@ -2546,8 +2466,6 @@
 
 .method static updateItemInDatabase(Landroid/content/Context;Lcom/android/launcher2/HomeItem;)V
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/launcher2/HomeItem;
 
     new-instance v0, Landroid/content/ContentValues;
 
@@ -2570,10 +2488,6 @@
 
 .method private static updateItemInDatabaseHelper(Landroid/content/Context;Landroid/content/ContentValues;Lcom/android/launcher2/HomeItem;Ljava/lang/String;)V
     .locals 8
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/content/ContentValues;
-    .param p2    # Lcom/android/launcher2/HomeItem;
-    .param p3    # Ljava/lang/String;
 
     iget-wide v4, p2, Lcom/android/launcher2/HomeItem;->mId:J
 
@@ -2624,8 +2538,6 @@
 
 .method static updateWorkspaceLayoutCells(II)V
     .locals 0
-    .param p0    # I
-    .param p1    # I
 
     sput p0, Lcom/android/launcher2/LauncherModel;->sCellCountX:I
 
@@ -2638,11 +2550,6 @@
 # virtual methods
 .method public ChangeCallapp(Lcom/android/launcher2/HomeView;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 14
-    .param p1    # Lcom/android/launcher2/HomeView;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
 
     new-instance v2, Ljava/util/ArrayList;
 
@@ -2856,7 +2763,6 @@
 
 .method public ChangeTphoneMode(Lcom/android/launcher2/HomeView;)V
     .locals 12
-    .param p1    # Lcom/android/launcher2/HomeView;
 
     const-string v2, "com.android.contacts"
 
@@ -2991,13 +2897,6 @@
 
 .method addShortcut(Landroid/content/Context;Landroid/content/Intent;JIIIZ)Lcom/android/launcher2/HomeShortcutItem;
     .locals 8
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
-    .param p3    # J
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # Z
 
     const/4 v0, 0x0
 
@@ -3100,8 +2999,6 @@
 
 .method getFolderById(Landroid/content/Context;Ljava/util/HashMap;J)Lcom/android/launcher2/HomeFolderItem;
     .locals 16
-    .param p1    # Landroid/content/Context;
-    .param p3    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3254,9 +3151,6 @@
 
 .method public getShortcutInfo(Landroid/content/pm/PackageManager;Landroid/content/Intent;Landroid/content/Context;)Lcom/android/launcher2/HomeShortcutItem;
     .locals 8
-    .param p1    # Landroid/content/pm/PackageManager;
-    .param p2    # Landroid/content/Intent;
-    .param p3    # Landroid/content/Context;
 
     const/4 v5, -0x1
 
@@ -3283,13 +3177,6 @@
 
 .method getShortcutInfo(Landroid/content/pm/PackageManager;Landroid/content/Intent;Landroid/content/Context;Landroid/database/Cursor;III)Lcom/android/launcher2/HomeShortcutItem;
     .locals 16
-    .param p1    # Landroid/content/pm/PackageManager;
-    .param p2    # Landroid/content/Intent;
-    .param p3    # Landroid/content/Context;
-    .param p4    # Landroid/database/Cursor;
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
 
     invoke-virtual/range {p2 .. p2}, Landroid/content/Intent;->getComponent()Landroid/content/ComponentName;
 
@@ -3562,15 +3449,6 @@
 
 .method protected getShortcutInfo(Landroid/database/Cursor;Landroid/content/Context;IIIIILandroid/content/pm/PackageManager;Landroid/content/Intent;)Lcom/android/launcher2/HomeShortcutItem;
     .locals 30
-    .param p1    # Landroid/database/Cursor;
-    .param p2    # Landroid/content/Context;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # Landroid/content/pm/PackageManager;
-    .param p9    # Landroid/content/Intent;
 
     const/4 v12, 0x0
 
@@ -4184,12 +4062,6 @@
 
 .method protected getShortcutInfoExtra(Landroid/content/pm/PackageManager;Landroid/content/Intent;Landroid/content/Context;Landroid/database/Cursor;II)Lcom/android/launcher2/HomeShortcutItem;
     .locals 9
-    .param p1    # Landroid/content/pm/PackageManager;
-    .param p2    # Landroid/content/Intent;
-    .param p3    # Landroid/content/Context;
-    .param p4    # Landroid/database/Cursor;
-    .param p5    # I
-    .param p6    # I
 
     const-string v6, "Launcher.Model"
 
@@ -4568,15 +4440,6 @@
 
 .method protected getShortcutInfoExtra(Landroid/content/pm/PackageManager;Landroid/content/Intent;Landroid/content/Context;Landroid/database/Cursor;IIIII)Lcom/android/launcher2/HomeShortcutItem;
     .locals 18
-    .param p1    # Landroid/content/pm/PackageManager;
-    .param p2    # Landroid/content/Intent;
-    .param p3    # Landroid/content/Context;
-    .param p4    # Landroid/database/Cursor;
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
-    .param p9    # I
 
     const-string v15, "Launcher.Model"
 
@@ -5306,9 +5169,6 @@
 
 .method infoFromShortcutIntent(Landroid/content/Context;Landroid/content/Intent;Landroid/graphics/Bitmap;)Lcom/android/launcher2/HomeShortcutItem;
     .locals 18
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
-    .param p3    # Landroid/graphics/Bitmap;
 
     const-string v15, "android.intent.extra.shortcut.INTENT"
 
@@ -5639,7 +5499,6 @@
 
 .method public initialize(Lcom/android/launcher2/LauncherModel$Callbacks;)V
     .locals 3
-    .param p1    # Lcom/android/launcher2/LauncherModel$Callbacks;
 
     iget-object v1, p0, Lcom/android/launcher2/LauncherModel;->mLock:Ljava/lang/Object;
 
@@ -5685,8 +5544,6 @@
 
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 45
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     sget-boolean v3, Lcom/android/launcher2/LauncherModel;->DEBUGGABLE:Z
 
@@ -6898,9 +6755,6 @@
 
 .method protected queueIconToBeChecked(Ljava/util/HashMap;Lcom/android/launcher2/HomeShortcutItem;Landroid/database/Cursor;I)Z
     .locals 2
-    .param p2    # Lcom/android/launcher2/HomeShortcutItem;
-    .param p3    # Landroid/database/Cursor;
-    .param p4    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -6984,10 +6838,6 @@
 
 .method public setCallAppItem(Lcom/android/launcher2/HomeView;Lcom/android/launcher2/HomeItem;Ljava/lang/String;Ljava/lang/String;)Lcom/android/launcher2/HomeItem;
     .locals 6
-    .param p1    # Lcom/android/launcher2/HomeView;
-    .param p2    # Lcom/android/launcher2/HomeItem;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     new-instance v1, Lcom/android/launcher2/HomeShortcutItem;
 
@@ -7153,7 +7003,6 @@
 
 .method public setRefreshRequired(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/launcher2/LauncherModel;->mRefreshRequired:Z
 
@@ -7174,7 +7023,6 @@
 
 .method public startLoader(Z)V
     .locals 0
-    .param p1    # Z
 
     invoke-virtual {p0}, Lcom/android/launcher2/LauncherModel;->startLoader()V
 
@@ -7183,7 +7031,6 @@
 
 .method public startLoaderFromBackground(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v1, p0, Lcom/android/launcher2/LauncherModel;->mCallbacks:Ljava/lang/ref/WeakReference;
 
@@ -7404,9 +7251,6 @@
 
 .method protected updateSavedIcon(Landroid/content/Context;Lcom/android/launcher2/HomeShortcutItem;[B)V
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/launcher2/HomeShortcutItem;
-    .param p3    # [B
 
     const/4 v4, 0x0
 

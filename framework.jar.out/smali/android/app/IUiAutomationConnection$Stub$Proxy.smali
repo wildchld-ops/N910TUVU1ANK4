@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -45,7 +44,6 @@
 
 .method public connect(Landroid/accessibilityservice/IAccessibilityServiceClient;)V
     .locals 5
-    .param p1    # Landroid/accessibilityservice/IAccessibilityServiceClient;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -166,8 +164,6 @@
 
 .method public injectInputEvent(Landroid/view/InputEvent;Z)Z
     .locals 7
-    .param p1    # Landroid/view/InputEvent;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -266,7 +262,6 @@
 
 .method public setRotation(I)Z
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -378,8 +373,6 @@
 
 .method public takeScreenshot(II)Landroid/graphics/Bitmap;
     .locals 6
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

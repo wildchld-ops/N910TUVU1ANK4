@@ -487,7 +487,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/toolbox/ToolboxList;)I
     .locals 1
-    .param p0    # Lcom/android/settings/toolbox/ToolboxList;
 
     invoke-direct {p0}, Lcom/android/settings/toolbox/ToolboxList;->getCheckedToolboxAppNum()I
 
@@ -498,7 +497,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/toolbox/ToolboxList;)Lcom/android/settings/toolbox/ToolboxList$AppListAdapter;
     .locals 1
-    .param p0    # Lcom/android/settings/toolbox/ToolboxList;
 
     iget-object v0, p0, Lcom/android/settings/toolbox/ToolboxList;->mAppListAdapter:Lcom/android/settings/toolbox/ToolboxList$AppListAdapter;
 
@@ -507,7 +505,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/toolbox/ToolboxList;)Ljava/util/LinkedHashMap;
     .locals 1
-    .param p0    # Lcom/android/settings/toolbox/ToolboxList;
 
     iget-object v0, p0, Lcom/android/settings/toolbox/ToolboxList;->mTempCheckedApplist:Ljava/util/LinkedHashMap;
 
@@ -516,7 +513,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/toolbox/ToolboxList;)Ljava/util/LinkedHashMap;
     .locals 1
-    .param p0    # Lcom/android/settings/toolbox/ToolboxList;
 
     iget-object v0, p0, Lcom/android/settings/toolbox/ToolboxList;->mTempApplist:Ljava/util/LinkedHashMap;
 
@@ -525,7 +521,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/toolbox/ToolboxList;)Lcom/android/settings/toolbox/SelectModeCallback;
     .locals 1
-    .param p0    # Lcom/android/settings/toolbox/ToolboxList;
 
     iget-object v0, p0, Lcom/android/settings/toolbox/ToolboxList;->mToolboxlistActionModeCallBack:Lcom/android/settings/toolbox/SelectModeCallback;
 
@@ -534,7 +529,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/toolbox/ToolboxList;)V
     .locals 0
-    .param p0    # Lcom/android/settings/toolbox/ToolboxList;
 
     invoke-direct {p0}, Lcom/android/settings/toolbox/ToolboxList;->SavedToolboxList()V
 
@@ -543,7 +537,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/toolbox/ToolboxList;)Landroid/content/pm/PackageManager;
     .locals 1
-    .param p0    # Lcom/android/settings/toolbox/ToolboxList;
 
     iget-object v0, p0, Lcom/android/settings/toolbox/ToolboxList;->mPm:Landroid/content/pm/PackageManager;
 
@@ -552,9 +545,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/toolbox/ToolboxList;ILandroid/content/pm/ActivityInfo;)Landroid/graphics/drawable/Drawable;
     .locals 1
-    .param p0    # Lcom/android/settings/toolbox/ToolboxList;
-    .param p1    # I
-    .param p2    # Landroid/content/pm/ActivityInfo;
 
     invoke-direct {p0, p1, p2}, Lcom/android/settings/toolbox/ToolboxList;->loadAppIcon(ILandroid/content/pm/ActivityInfo;)Landroid/graphics/drawable/Drawable;
 
@@ -696,8 +686,6 @@
 
 .method private loadAppIcon(ILandroid/content/pm/ActivityInfo;)Landroid/graphics/drawable/Drawable;
     .locals 12
-    .param p1    # I
-    .param p2    # Landroid/content/pm/ActivityInfo;
 
     new-instance v7, Lcom/android/settings/lockscreenshortcut/IconResizer;
 
@@ -876,7 +864,6 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 29
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super/range {p0 .. p1}, Landroid/app/Fragment;->onActivityCreated(Landroid/os/Bundle;)V
 
@@ -2242,7 +2229,6 @@
 
 .method public onAttach(Landroid/app/Activity;)V
     .locals 1
-    .param p1    # Landroid/app/Activity;
 
     const/4 v0, 0x0
 
@@ -2278,7 +2264,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 8
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v7, 0x0
 
@@ -2435,8 +2420,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
     .locals 5
-    .param p1    # Landroid/view/Menu;
-    .param p2    # Landroid/view/MenuInflater;
 
     const/4 v4, 0x1
 
@@ -2544,9 +2527,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 3
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const v1, 0x7f0401f7
 
@@ -2594,7 +2574,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 3
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v0, 0x1
 

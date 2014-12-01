@@ -32,7 +32,6 @@
 # direct methods
 .method constructor <init>(Landroid/hardware/location/GeofenceHardware;Landroid/hardware/location/GeofenceHardwareCallback;)V
     .locals 1
-    .param p2    # Landroid/hardware/location/GeofenceHardwareCallback;
 
     iput-object p1, p0, Landroid/hardware/location/GeofenceHardware$GeofenceHardwareCallbackWrapper;->this$0:Landroid/hardware/location/GeofenceHardware;
 
@@ -51,8 +50,6 @@
 # virtual methods
 .method public onGeofenceAdd(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget-object v1, p0, Landroid/hardware/location/GeofenceHardware$GeofenceHardwareCallbackWrapper;->mCallback:Ljava/lang/ref/WeakReference;
 
@@ -72,8 +69,6 @@
 
 .method public onGeofencePause(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget-object v1, p0, Landroid/hardware/location/GeofenceHardware$GeofenceHardwareCallbackWrapper;->mCallback:Ljava/lang/ref/WeakReference;
 
@@ -93,8 +88,6 @@
 
 .method public onGeofenceRemove(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget-object v1, p0, Landroid/hardware/location/GeofenceHardware$GeofenceHardwareCallbackWrapper;->mCallback:Ljava/lang/ref/WeakReference;
 
@@ -119,8 +112,6 @@
 
 .method public onGeofenceResume(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget-object v1, p0, Landroid/hardware/location/GeofenceHardware$GeofenceHardwareCallbackWrapper;->mCallback:Ljava/lang/ref/WeakReference;
 
@@ -140,11 +131,6 @@
 
 .method public onGeofenceTransition(IILandroid/location/Location;JI)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/location/Location;
-    .param p4    # J
-    .param p6    # I
 
     iget-object v1, p0, Landroid/hardware/location/GeofenceHardware$GeofenceHardwareCallbackWrapper;->mCallback:Ljava/lang/ref/WeakReference;
 

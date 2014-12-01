@@ -314,7 +314,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/ui/ConversationComposer;)Lcom/android/mms/ui/ComposeMessageFragment;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ConversationComposer;
 
     iget-object v0, p0, Lcom/android/mms/ui/ConversationComposer;->mComposeMessage:Lcom/android/mms/ui/ComposeMessageFragment;
 
@@ -323,7 +322,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/ui/ConversationComposer;)Lcom/android/mms/ui/ConversationListFragment;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ConversationComposer;
 
     iget-object v0, p0, Lcom/android/mms/ui/ConversationComposer;->mConversationList:Lcom/android/mms/ui/ConversationListFragment;
 
@@ -332,7 +330,6 @@
 
 .method static synthetic access$1000(Lcom/android/mms/ui/ConversationComposer;)Landroid/view/accessibility/AccessibilityManager;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ConversationComposer;
 
     iget-object v0, p0, Lcom/android/mms/ui/ConversationComposer;->mAccessibilityManagerTemp:Landroid/view/accessibility/AccessibilityManager;
 
@@ -341,8 +338,6 @@
 
 .method static synthetic access$1002(Lcom/android/mms/ui/ConversationComposer;Landroid/view/accessibility/AccessibilityManager;)Landroid/view/accessibility/AccessibilityManager;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ConversationComposer;
-    .param p1    # Landroid/view/accessibility/AccessibilityManager;
 
     iput-object p1, p0, Lcom/android/mms/ui/ConversationComposer;->mAccessibilityManagerTemp:Landroid/view/accessibility/AccessibilityManager;
 
@@ -351,7 +346,6 @@
 
 .method static synthetic access$1100(Lcom/android/mms/ui/ConversationComposer;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ConversationComposer;
 
     iget-boolean v0, p0, Lcom/android/mms/ui/ConversationComposer;->mIsComposerOnly:Z
 
@@ -360,8 +354,6 @@
 
 .method static synthetic access$1102(Lcom/android/mms/ui/ConversationComposer;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ConversationComposer;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/ConversationComposer;->mIsComposerOnly:Z
 
@@ -370,7 +362,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/ui/ConversationComposer;)Lcom/android/mms/ui/SplitManager;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ConversationComposer;
 
     iget-object v0, p0, Lcom/android/mms/ui/ConversationComposer;->mSplitManager:Lcom/android/mms/ui/SplitManager;
 
@@ -379,7 +370,6 @@
 
 .method static synthetic access$300(Lcom/android/mms/ui/ConversationComposer;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ConversationComposer;
 
     iget-object v0, p0, Lcom/android/mms/ui/ConversationComposer;->mSplitBarLine:Landroid/view/View;
 
@@ -388,8 +378,6 @@
 
 .method static synthetic access$402(Lcom/android/mms/ui/ConversationComposer;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ConversationComposer;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/ConversationComposer;->mIsSplitBarTouch:Z
 
@@ -398,7 +386,6 @@
 
 .method static synthetic access$500(Lcom/android/mms/ui/ConversationComposer;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ConversationComposer;
 
     invoke-direct {p0}, Lcom/android/mms/ui/ConversationComposer;->composerRequestsClosing()V
 
@@ -407,7 +394,6 @@
 
 .method static synthetic access$600(Lcom/android/mms/ui/ConversationComposer;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ConversationComposer;
 
     iget-boolean v0, p0, Lcom/android/mms/ui/ConversationComposer;->mFinishAffinity:Z
 
@@ -416,8 +402,6 @@
 
 .method static synthetic access$602(Lcom/android/mms/ui/ConversationComposer;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/ui/ConversationComposer;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/ConversationComposer;->mFinishAffinity:Z
 
@@ -426,7 +410,6 @@
 
 .method static synthetic access$700(Lcom/android/mms/ui/ConversationComposer;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ConversationComposer;
 
     iget-boolean v0, p0, Lcom/android/mms/ui/ConversationComposer;->mUseSplitView:Z
 
@@ -435,7 +418,6 @@
 
 .method static synthetic access$800(Lcom/android/mms/ui/ConversationComposer;)I
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ConversationComposer;
 
     invoke-direct {p0}, Lcom/android/mms/ui/ConversationComposer;->getComposeMessageStatus()I
 
@@ -446,7 +428,6 @@
 
 .method static synthetic access$900(Lcom/android/mms/ui/ConversationComposer;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ConversationComposer;
 
     iget-boolean v0, p0, Lcom/android/mms/ui/ConversationComposer;->mIsLandscape:Z
 
@@ -455,10 +436,6 @@
 
 .method private addFragmentToActivity(IZZLandroid/content/Intent;)V
     .locals 6
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # Z
-    .param p4    # Landroid/content/Intent;
 
     const-string v4, "Mms/ConversationComposer"
 
@@ -813,7 +790,6 @@
 
 .method private checkDefaultSmsApps(Landroid/content/Intent;)Z
     .locals 8
-    .param p1    # Landroid/content/Intent;
 
     const/4 v6, 0x1
 
@@ -1005,7 +981,6 @@
 
 .method private checkNotiIntent(Landroid/content/Intent;)V
     .locals 5
-    .param p1    # Landroid/content/Intent;
 
     const-string v2, "noti"
 
@@ -1416,7 +1391,6 @@
 
 .method private static containsOwnBundle(Landroid/os/Bundle;)Z
     .locals 1
-    .param p0    # Landroid/os/Bundle;
 
     if-eqz p0, :cond_0
 
@@ -2066,7 +2040,6 @@
 
 .method private isFailedNotiIntent(Landroid/content/Intent;)Z
     .locals 3
-    .param p1    # Landroid/content/Intent;
 
     const-string v1, "isFailedNoti"
 
@@ -2081,7 +2054,6 @@
 
 .method private static isIntentForApplication(Landroid/content/Intent;)Z
     .locals 4
-    .param p0    # Landroid/content/Intent;
 
     const/4 v0, 0x0
 
@@ -2174,7 +2146,6 @@
 
 .method private isIntentForCmas(Landroid/content/Intent;)Z
     .locals 3
-    .param p1    # Landroid/content/Intent;
 
     const/4 v1, 0x0
 
@@ -2224,7 +2195,6 @@
 
 .method private isIntentForComposer(Landroid/content/Intent;)Z
     .locals 6
-    .param p1    # Landroid/content/Intent;
 
     const/4 v3, 0x0
 
@@ -2400,7 +2370,6 @@
 
 .method private isIntentForContact(Landroid/content/Intent;)Z
     .locals 8
-    .param p1    # Landroid/content/Intent;
 
     invoke-virtual {p1}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
@@ -2502,7 +2471,6 @@
 
 .method private static isIntentForConversations(Landroid/content/Intent;)Z
     .locals 6
-    .param p0    # Landroid/content/Intent;
 
     const/4 v5, 0x0
 
@@ -2540,7 +2508,6 @@
 
 .method private static isIntentForList(Landroid/content/Intent;)Z
     .locals 3
-    .param p0    # Landroid/content/Intent;
 
     const-string v1, "android.intent.action.MAIN"
 
@@ -2581,7 +2548,6 @@
 
 .method private static isIntentFromAnotherProcessWithConversationUri(Landroid/content/Intent;)Z
     .locals 6
-    .param p0    # Landroid/content/Intent;
 
     invoke-virtual {p0}, Landroid/content/Intent;->getData()Landroid/net/Uri;
 
@@ -2613,7 +2579,6 @@
 
 .method private static isIntentFromFolderView(Landroid/content/Intent;)Z
     .locals 2
-    .param p0    # Landroid/content/Intent;
 
     const/4 v0, 0x0
 
@@ -2633,7 +2598,6 @@
 
 .method private static isIntentFromLauncher(Landroid/content/Intent;)Z
     .locals 2
-    .param p0    # Landroid/content/Intent;
 
     const-string v0, "android.intent.category.LAUNCHER"
 
@@ -2668,7 +2632,6 @@
 
 .method private static isIntentFromRecvNotibar(Landroid/content/Intent;)Z
     .locals 5
-    .param p0    # Landroid/content/Intent;
 
     const/4 v1, 0x0
 
@@ -2746,7 +2709,6 @@
 
 .method private static isIntentFromSwitcher(Landroid/content/Intent;)Z
     .locals 2
-    .param p0    # Landroid/content/Intent;
 
     const/high16 v0, 0x100000
 
@@ -2771,7 +2733,6 @@
 
 .method private static isItentFromSearch(Landroid/content/Intent;)Z
     .locals 6
-    .param p0    # Landroid/content/Intent;
 
     const/4 v3, 0x0
 
@@ -2946,7 +2907,6 @@
 
 .method private static isSentFailIntentFromNotibar(Landroid/content/Intent;)Z
     .locals 7
-    .param p0    # Landroid/content/Intent;
 
     const-wide/16 v5, 0x0
 
@@ -3002,7 +2962,6 @@
 
 .method public static log(Ljava/lang/String;)V
     .locals 7
-    .param p0    # Ljava/lang/String;
 
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
 
@@ -3097,8 +3056,6 @@
 
 .method private removeFragmentFromActivity(Lcom/android/mms/ui/ConversationListFragment;Lcom/android/mms/ui/ComposeMessageFragment;)V
     .locals 5
-    .param p1    # Lcom/android/mms/ui/ConversationListFragment;
-    .param p2    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     const/4 v4, 0x0
 
@@ -3149,8 +3106,6 @@
 
 .method private setExtraDataForIntentBox(Landroid/content/Intent;Z)Landroid/content/Intent;
     .locals 4
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Z
 
     const/4 v3, 0x1
 
@@ -3185,7 +3140,6 @@
 
 .method public static setFromSplitDiscard(Z)V
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/mms/ui/ConversationComposer;->mIsFromSplitDiscard:Z
 
@@ -3194,7 +3148,6 @@
 
 .method public static setSipStatus(Z)V
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/mms/ui/ConversationComposer;->skeepSipshowing:Z
 
@@ -3336,10 +3289,6 @@
 
 .method public checkFolderViewInvoke(Landroid/content/Intent;Ljava/lang/String;Landroid/os/Bundle;I)Z
     .locals 21
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/os/Bundle;
-    .param p4    # I
 
     invoke-virtual/range {p1 .. p1}, Landroid/content/Intent;->getType()Ljava/lang/String;
 
@@ -4092,7 +4041,6 @@
 
 .method public finishCmasViewer(Z)V
     .locals 6
-    .param p1    # Z
 
     const/16 v5, 0x8
 
@@ -4205,7 +4153,6 @@
 
 .method public flickMessage(Z)Z
     .locals 24
-    .param p1    # Z
 
     const-string v11, "_id DESC"
 
@@ -4825,8 +4772,6 @@
 
 .method public getFromSearchView(Ljava/lang/String;Z)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const/4 v1, 0x0
 
@@ -5293,7 +5238,6 @@
 
 .method public onAttachFragment(Landroid/app/Fragment;)V
     .locals 3
-    .param p1    # Landroid/app/Fragment;
 
     const-string v0, "Mms/ConversationComposer"
 
@@ -5413,7 +5357,6 @@
 
 .method public onCMASViewerContextItemSelected(Landroid/view/MenuItem;)V
     .locals 1
-    .param p1    # Landroid/view/MenuItem;
 
     iget-object v0, p0, Lcom/android/mms/ui/ConversationComposer;->mCmasViewer:Lcom/android/mms/ui/CMASViewer;
 
@@ -5429,7 +5372,6 @@
 
 .method public onComposeMessageFlicking(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-object v0, p0, Lcom/android/mms/ui/ConversationComposer;->mComposeMessage:Lcom/android/mms/ui/ComposeMessageFragment;
 
@@ -5452,7 +5394,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 12
-    .param p1    # Landroid/content/res/Configuration;
 
     const/4 v11, 0x0
 
@@ -5754,7 +5695,6 @@
 
 .method public onContextMenuClosed(Landroid/view/Menu;)V
     .locals 1
-    .param p1    # Landroid/view/Menu;
 
     iget-object v0, p0, Lcom/android/mms/ui/ConversationComposer;->mComposeMessage:Lcom/android/mms/ui/ComposeMessageFragment;
 
@@ -5847,7 +5787,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 24
-    .param p1    # Landroid/os/Bundle;
 
     const/16 v20, 0x0
 
@@ -7378,8 +7317,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/16 v5, 0x19
 
@@ -7568,8 +7505,6 @@
 
 .method public onKeyShortcut(ILandroid/view/KeyEvent;)Z
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v1, 0x1
 
@@ -7656,8 +7591,6 @@
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 7
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v6, 0x4
 
@@ -7965,7 +7898,6 @@
 
 .method protected onNewIntent(Landroid/content/Intent;)V
     .locals 14
-    .param p1    # Landroid/content/Intent;
 
     const-string v10, "Mms/ConversationComposer"
 
@@ -8646,7 +8578,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 6
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v1, 0x1
 
@@ -8781,7 +8712,6 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)Z
     .locals 3
-    .param p1    # Landroid/view/Menu;
 
     const-string v1, "Mms/ConversationComposer"
 
@@ -8869,9 +8799,6 @@
 
 .method public onPreparePanel(ILandroid/view/View;Landroid/view/Menu;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/Menu;
 
     invoke-static {}, Lcom/android/mms/MmsConfig;->getEnableFolderView()Z
 
@@ -8923,7 +8850,6 @@
 
 .method protected onRestoreInstanceState(Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     return-void
 .end method
@@ -9084,7 +9010,6 @@
 
 .method protected onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     const-string v1, "Mms/ConversationComposer"
 
@@ -9318,7 +9243,6 @@
 
 .method public onTrimMemory(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "Mms/ConversationComposer"
 
@@ -9387,7 +9311,6 @@
 
 .method public onWindowFocusChanged(Z)V
     .locals 10
-    .param p1    # Z
 
     const/4 v8, 0x0
 
@@ -9573,7 +9496,6 @@
 
 .method public openThread(Landroid/content/Intent;)V
     .locals 6
-    .param p1    # Landroid/content/Intent;
 
     const/4 v5, 0x1
 
@@ -9705,7 +9627,6 @@
 
 .method public queryConversationListIfNeeded(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/mms/ui/ConversationComposer;->mConversationList:Lcom/android/mms/ui/ConversationListFragment;
 
@@ -9725,7 +9646,6 @@
 
 .method public refreshSplitManager(Z)V
     .locals 10
-    .param p1    # Z
 
     const/4 v5, 0x1
 
@@ -10070,7 +9990,6 @@
 
 .method public removeComposeFragmentWithoutPreProcess(J)V
     .locals 8
-    .param p1    # J
 
     const/4 v7, 0x0
 
@@ -10242,9 +10161,6 @@
 
 .method public removeFragmentFromActivity(Lcom/android/mms/ui/ConversationListFragment;Lcom/android/mms/ui/ComposeMessageFragment;Z)V
     .locals 0
-    .param p1    # Lcom/android/mms/ui/ConversationListFragment;
-    .param p2    # Lcom/android/mms/ui/ComposeMessageFragment;
-    .param p3    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/mms/ui/ConversationComposer;->removeFragmentFromActivity(Lcom/android/mms/ui/ConversationListFragment;Lcom/android/mms/ui/ComposeMessageFragment;)V
 
@@ -10320,7 +10236,6 @@
 
 .method public requestDrawPointerOnConverationList(J)Z
     .locals 1
-    .param p1    # J
 
     iget-object v0, p0, Lcom/android/mms/ui/ConversationComposer;->mConversationList:Lcom/android/mms/ui/ConversationListFragment;
 
@@ -10343,8 +10258,6 @@
 
 .method public requestEndChatRequest(Ljava/lang/String;Z)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     new-instance v0, Landroid/content/Intent;
 
@@ -10407,7 +10320,6 @@
 
 .method public requestSplitModeOnConverationList(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/mms/ui/ConversationComposer;->mConversationList:Lcom/android/mms/ui/ConversationListFragment;
 
@@ -10430,7 +10342,6 @@
 
 .method public requsetFocusOnConversationList(J)Z
     .locals 1
-    .param p1    # J
 
     iget-object v0, p0, Lcom/android/mms/ui/ConversationComposer;->mConversationList:Lcom/android/mms/ui/ConversationListFragment;
 
@@ -10453,7 +10364,6 @@
 
 .method public setActionBarHomeAsUp(Z)V
     .locals 4
-    .param p1    # Z
 
     invoke-virtual {p0}, Lcom/android/mms/ui/ConversationComposer;->getActionBar()Landroid/app/ActionBar;
 
@@ -10504,7 +10414,6 @@
 
 .method public setEasySignUpState(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/ConversationComposer;->mAuthEasySignUp:Z
 
@@ -10513,7 +10422,6 @@
 
 .method public setFinishAffinityValue(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/ConversationComposer;->mFinishAffinity:Z
 
@@ -10522,7 +10430,6 @@
 
 .method public setFreeMessageStatus(Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     const-string v2, "Mms/ConversationComposer"
 
@@ -10561,8 +10468,6 @@
 
 .method public setFromSearchView(Ljava/lang/String;Z)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const-string v0, "Mms/ConversationComposer"
 
@@ -10613,7 +10518,6 @@
 
 .method public setMessageSelectAll(Z)V
     .locals 3
-    .param p1    # Z
 
     const-string v0, "Mms/ConversationComposer"
 
@@ -10690,7 +10594,6 @@
 
 .method public setSplitMode(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/mms/ui/ConversationComposer;->mSplitManager:Lcom/android/mms/ui/SplitManager;
 
@@ -10760,7 +10663,6 @@
 
 .method public showEmptyScreen(Z)V
     .locals 8
-    .param p1    # Z
 
     const/4 v3, 0x1
 

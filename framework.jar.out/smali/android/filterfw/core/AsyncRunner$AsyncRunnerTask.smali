@@ -46,8 +46,6 @@
 
 .method synthetic constructor <init>(Landroid/filterfw/core/AsyncRunner;Landroid/filterfw/core/AsyncRunner$1;)V
     .locals 0
-    .param p1    # Landroid/filterfw/core/AsyncRunner;
-    .param p2    # Landroid/filterfw/core/AsyncRunner$1;
 
     invoke-direct {p0, p1}, Landroid/filterfw/core/AsyncRunner$AsyncRunnerTask;-><init>(Landroid/filterfw/core/AsyncRunner;)V
 
@@ -58,7 +56,6 @@
 # virtual methods
 .method protected varargs doInBackground([Landroid/filterfw/core/SyncRunner;)Landroid/filterfw/core/AsyncRunner$RunnerResult;
     .locals 6
-    .param p1    # [Landroid/filterfw/core/SyncRunner;
 
     const/4 v5, 0x6
 
@@ -269,7 +266,6 @@
 
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [Landroid/filterfw/core/SyncRunner;
 
@@ -282,7 +278,6 @@
 
 .method protected onCancelled(Landroid/filterfw/core/AsyncRunner$RunnerResult;)V
     .locals 0
-    .param p1    # Landroid/filterfw/core/AsyncRunner$RunnerResult;
 
     invoke-virtual {p0, p1}, Landroid/filterfw/core/AsyncRunner$AsyncRunnerTask;->onPostExecute(Landroid/filterfw/core/AsyncRunner$RunnerResult;)V
 
@@ -291,7 +286,6 @@
 
 .method protected bridge synthetic onCancelled(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Landroid/filterfw/core/AsyncRunner$RunnerResult;
 
@@ -302,7 +296,6 @@
 
 .method protected onPostExecute(Landroid/filterfw/core/AsyncRunner$RunnerResult;)V
     .locals 5
-    .param p1    # Landroid/filterfw/core/AsyncRunner$RunnerResult;
 
     const/4 v4, 0x6
 
@@ -460,7 +453,6 @@
 
 .method protected bridge synthetic onPostExecute(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Landroid/filterfw/core/AsyncRunner$RunnerResult;
 

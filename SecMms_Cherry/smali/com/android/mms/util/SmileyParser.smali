@@ -272,7 +272,6 @@
 
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -460,7 +459,6 @@
 
 .method public static init(Landroid/content/Context;)V
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     const-string v0, "Mms/SmileyParser"
 
@@ -481,7 +479,6 @@
 # virtual methods
 .method public addSmileySpans(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
     .locals 10
-    .param p1    # Ljava/lang/CharSequence;
 
     new-instance v0, Landroid/text/SpannableStringBuilder;
 

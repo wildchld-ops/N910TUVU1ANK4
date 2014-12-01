@@ -49,7 +49,6 @@
 # virtual methods
 .method public notifyAll(I)V
     .locals 3
-    .param p1    # I
 
     monitor-enter p0
 
@@ -103,7 +102,6 @@
 
 .method public register(Lcom/android/server/PermissionDialogResult$Result;)V
     .locals 1
-    .param p1    # Lcom/android/server/PermissionDialogResult$Result;
 
     monitor-enter p0
 

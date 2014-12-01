@@ -97,8 +97,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/personalpage/PersonalPageSettings;Ljava/lang/String;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Lcom/android/settings/personalpage/PersonalPageSettings;
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
@@ -109,7 +107,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/personalpage/PersonalPageSettings;)Landroid/content/pm/PackageManager;
     .locals 1
-    .param p0    # Lcom/android/settings/personalpage/PersonalPageSettings;
 
     iget-object v0, p0, Lcom/android/settings/personalpage/PersonalPageSettings;->mPackageManager:Landroid/content/pm/PackageManager;
 
@@ -118,8 +115,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/personalpage/PersonalPageSettings;I)V
     .locals 0
-    .param p0    # Lcom/android/settings/personalpage/PersonalPageSettings;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/settings/personalpage/PersonalPageSettings;->callLockType(I)V
 
@@ -379,7 +374,6 @@
 
 .method private requestSecretBoxVerify(Ljava/lang/Boolean;)V
     .locals 7
-    .param p1    # Ljava/lang/Boolean;
 
     const/4 v3, 0x0
 
@@ -688,7 +682,6 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v4, 0x0
 
@@ -735,9 +728,6 @@
 
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const/4 v3, 0x0
 
@@ -1067,7 +1057,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 9
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v8, 0x1
 
@@ -1233,8 +1222,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
     .locals 4
-    .param p1    # Landroid/view/Menu;
-    .param p2    # Landroid/view/MenuInflater;
 
     const/4 v3, 0x0
 
@@ -1292,7 +1279,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 3
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -1368,8 +1354,6 @@
 
 .method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
     .locals 2
-    .param p1    # Landroid/preference/Preference;
-    .param p2    # Ljava/lang/Object;
 
     invoke-virtual {p1}, Landroid/preference/Preference;->getKey()Ljava/lang/String;
 

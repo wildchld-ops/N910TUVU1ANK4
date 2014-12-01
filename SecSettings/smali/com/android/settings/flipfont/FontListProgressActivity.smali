@@ -39,7 +39,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/flipfont/FontListProgressActivity;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/settings/flipfont/FontListProgressActivity;
 
     iget-object v0, p0, Lcom/android/settings/flipfont/FontListProgressActivity;->context:Landroid/content/Context;
 
@@ -48,7 +47,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/flipfont/FontListProgressActivity;)Lcom/android/settings/flipfont/FontListAdapter;
     .locals 1
-    .param p0    # Lcom/android/settings/flipfont/FontListProgressActivity;
 
     iget-object v0, p0, Lcom/android/settings/flipfont/FontListProgressActivity;->mFontListAdapter:Lcom/android/settings/flipfont/FontListAdapter;
 
@@ -57,8 +55,6 @@
 
 .method static synthetic access$202(Lcom/android/settings/flipfont/FontListProgressActivity;Lcom/android/settings/flipfont/FontListAdapter;)Lcom/android/settings/flipfont/FontListAdapter;
     .locals 0
-    .param p0    # Lcom/android/settings/flipfont/FontListProgressActivity;
-    .param p1    # Lcom/android/settings/flipfont/FontListAdapter;
 
     iput-object p1, p0, Lcom/android/settings/flipfont/FontListProgressActivity;->mFontListAdapter:Lcom/android/settings/flipfont/FontListAdapter;
 
@@ -67,7 +63,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/flipfont/FontListProgressActivity;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/flipfont/FontListProgressActivity;
 
     iget-boolean v0, p0, Lcom/android/settings/flipfont/FontListProgressActivity;->enable:Z
 
@@ -76,8 +71,6 @@
 
 .method static synthetic access$302(Lcom/android/settings/flipfont/FontListProgressActivity;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/flipfont/FontListProgressActivity;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/flipfont/FontListProgressActivity;->enable:Z
 
@@ -88,7 +81,6 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/internal/app/AlertActivity;->onCreate(Landroid/os/Bundle;)V
 

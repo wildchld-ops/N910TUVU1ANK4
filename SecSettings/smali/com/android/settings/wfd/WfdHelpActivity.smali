@@ -68,8 +68,6 @@
 
 .method static synthetic access$002(Lcom/android/settings/wfd/WfdHelpActivity;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/wfd/WfdHelpActivity;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/wfd/WfdHelpActivity;->mIsReadOnlyChecked:Z
 
@@ -78,7 +76,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/wfd/WfdHelpActivity;)V
     .locals 0
-    .param p0    # Lcom/android/settings/wfd/WfdHelpActivity;
 
     invoke-direct {p0}, Lcom/android/settings/wfd/WfdHelpActivity;->startWfdPickerDialog()V
 
@@ -87,7 +84,6 @@
 
 .method private makeNdefMessage(Ljava/lang/String;)Landroid/nfc/NdefMessage;
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const-string v2, "WfdHelpActivity"
 
@@ -209,9 +205,6 @@
 # virtual methods
 .method public getdataPreference(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -242,7 +235,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 0
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -251,7 +243,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 12
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v11, 0x1
 
@@ -453,7 +444,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 1
-    .param p1    # Landroid/view/Menu;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreateOptionsMenu(Landroid/view/Menu;)Z
 
@@ -482,7 +472,6 @@
 
 .method public onNewIntent(Landroid/content/Intent;)V
     .locals 10
-    .param p1    # Landroid/content/Intent;
 
     const/4 v9, 0x0
 
@@ -625,7 +614,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 2
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -733,10 +721,6 @@
 
 .method public writePreference(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Z)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Z
 
     const/4 v2, 0x0
 
@@ -757,8 +741,6 @@
 
 .method writeTag(Landroid/nfc/NdefMessage;Landroid/nfc/Tag;)Z
     .locals 8
-    .param p1    # Landroid/nfc/NdefMessage;
-    .param p2    # Landroid/nfc/Tag;
 
     const/4 v5, 0x1
 

@@ -60,7 +60,7 @@
 
     iget-object v0, p0, Lcom/android/phone/EmergencyCallbackModeService$2;->this$0:Lcom/android/phone/EmergencyCallbackModeService;
 
-    invoke-virtual {v0}, Landroid/app/Service;->stopSelf()V
+    invoke-virtual {v0}, Lcom/android/phone/EmergencyCallbackModeService;->stopSelf()V
 
     :cond_0
     :goto_0

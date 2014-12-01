@@ -17,8 +17,6 @@
 # direct methods
 .method public constructor <init>(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Landroid/widget/LinearLayout$LayoutParams;-><init>(II)V
 
@@ -27,9 +25,6 @@
 
 .method public constructor <init>(IIF)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # F
 
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/LinearLayout$LayoutParams;-><init>(IIF)V
 
@@ -38,8 +33,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/widget/LinearLayout$LayoutParams;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -48,7 +41,6 @@
 
 .method public constructor <init>(Landroid/view/ViewGroup$LayoutParams;)V
     .locals 0
-    .param p1    # Landroid/view/ViewGroup$LayoutParams;
 
     invoke-direct {p0, p1}, Landroid/widget/LinearLayout$LayoutParams;-><init>(Landroid/view/ViewGroup$LayoutParams;)V
 
@@ -57,7 +49,6 @@
 
 .method public constructor <init>(Landroid/view/ViewGroup$MarginLayoutParams;)V
     .locals 0
-    .param p1    # Landroid/view/ViewGroup$MarginLayoutParams;
 
     invoke-direct {p0, p1}, Landroid/widget/LinearLayout$LayoutParams;-><init>(Landroid/view/ViewGroup$MarginLayoutParams;)V
 
@@ -68,9 +59,6 @@
 # virtual methods
 .method protected setBaseAttributes(Landroid/content/res/TypedArray;II)V
     .locals 2
-    .param p1    # Landroid/content/res/TypedArray;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v1, -0x2
 

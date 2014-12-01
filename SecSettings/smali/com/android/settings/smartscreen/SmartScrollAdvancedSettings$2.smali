@@ -21,7 +21,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/settings/smartscreen/SmartScrollAdvancedSettings;Landroid/os/Handler;)V
     .locals 0
-    .param p2    # Landroid/os/Handler;
 
     iput-object p1, p0, Lcom/android/settings/smartscreen/SmartScrollAdvancedSettings$2;->this$0:Lcom/android/settings/smartscreen/SmartScrollAdvancedSettings;
 
@@ -34,7 +33,6 @@
 # virtual methods
 .method public onChange(Z)V
     .locals 4
-    .param p1    # Z
 
     const/4 v0, 0x0
 

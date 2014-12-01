@@ -14,8 +14,6 @@
 
 .method public static compareToIgnoreCase(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)I
     .locals 10
-    .param p0    # Ljava/lang/CharSequence;
-    .param p1    # Ljava/lang/CharSequence;
 
     invoke-interface {p0}, Ljava/lang/CharSequence;->length()I
 
@@ -92,8 +90,6 @@
 
 .method public static equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
     .locals 5
-    .param p0    # Ljava/lang/CharSequence;
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v2, 0x0
 
@@ -143,7 +139,6 @@
 
 .method public static forAsciiBytes([B)Ljava/lang/CharSequence;
     .locals 1
-    .param p0    # [B
 
     new-instance v0, Lcom/android/internal/util/CharSequences$1;
 
@@ -154,9 +149,6 @@
 
 .method public static forAsciiBytes([BII)Ljava/lang/CharSequence;
     .locals 1
-    .param p0    # [B
-    .param p1    # I
-    .param p2    # I
 
     array-length v0, p0
 
@@ -171,9 +163,6 @@
 
 .method static validate(III)V
     .locals 1
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
 
     if-gez p0, :cond_0
 

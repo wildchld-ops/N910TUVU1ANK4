@@ -48,8 +48,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -60,9 +58,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
@@ -97,7 +92,6 @@
 
 .method static synthetic access$000(Lcom/android/systemui/SearchPanelView;)Lcom/android/systemui/statusbar/BaseStatusBar;
     .locals 1
-    .param p0    # Lcom/android/systemui/SearchPanelView;
 
     iget-object v0, p0, Lcom/android/systemui/SearchPanelView;->mBar:Lcom/android/systemui/statusbar/BaseStatusBar;
 
@@ -106,7 +100,6 @@
 
 .method static synthetic access$100(Lcom/android/systemui/SearchPanelView;)Lcom/android/internal/widget/multiwaveview/GlowPadView;
     .locals 1
-    .param p0    # Lcom/android/systemui/SearchPanelView;
 
     iget-object v0, p0, Lcom/android/systemui/SearchPanelView;->mGlowPadView:Lcom/android/internal/widget/multiwaveview/GlowPadView;
 
@@ -115,7 +108,6 @@
 
 .method static synthetic access$200(Lcom/android/systemui/SearchPanelView;)V
     .locals 0
-    .param p0    # Lcom/android/systemui/SearchPanelView;
 
     invoke-direct {p0}, Lcom/android/systemui/SearchPanelView;->startAssistActivity()V
 
@@ -124,7 +116,6 @@
 
 .method static synthetic access$300(Lcom/android/systemui/SearchPanelView;)V
     .locals 0
-    .param p0    # Lcom/android/systemui/SearchPanelView;
 
     invoke-direct {p0}, Lcom/android/systemui/SearchPanelView;->vibrate()V
 
@@ -206,9 +197,6 @@
 
 .method private pointInside(IILandroid/view/View;)Z
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/view/View;
 
     invoke-virtual {p3}, Landroid/view/View;->getLeft()I
 
@@ -460,7 +448,6 @@
 # virtual methods
 .method public dispatchHoverEvent(Landroid/view/MotionEvent;)Z
     .locals 3
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getX()F
 
@@ -505,7 +492,6 @@
 
 .method public hide(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/systemui/SearchPanelView;->mBar:Lcom/android/systemui/statusbar/BaseStatusBar;
 
@@ -566,8 +552,6 @@
 
 .method public isInContentArea(II)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/systemui/SearchPanelView;->mSearchTargetsContainer:Landroid/view/View;
 
@@ -640,11 +624,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 0
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-super/range {p0 .. p5}, Landroid/widget/FrameLayout;->onLayout(ZIIII)V
 
@@ -653,7 +632,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 5
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v4, 0x2
 
@@ -719,7 +697,6 @@
 
 .method public setBar(Lcom/android/systemui/statusbar/BaseStatusBar;)V
     .locals 0
-    .param p1    # Lcom/android/systemui/statusbar/BaseStatusBar;
 
     iput-object p1, p0, Lcom/android/systemui/SearchPanelView;->mBar:Lcom/android/systemui/statusbar/BaseStatusBar;
 
@@ -728,8 +705,6 @@
 
 .method public show(ZZ)V
     .locals 4
-    .param p1    # Z
-    .param p2    # Z
 
     const/4 v3, 0x1
 

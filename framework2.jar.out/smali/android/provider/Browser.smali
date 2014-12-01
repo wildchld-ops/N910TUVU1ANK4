@@ -193,7 +193,6 @@
 
 .method private static final addOrUrlEquals(Ljava/lang/StringBuilder;)V
     .locals 1
-    .param p0    # Ljava/lang/StringBuilder;
 
     const-string v0, " OR url = "
 
@@ -204,8 +203,6 @@
 
 .method public static final addSearchUrl(Landroid/content/ContentResolver;Ljava/lang/String;)V
     .locals 4
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Landroid/content/ContentValues;
 
@@ -236,7 +233,6 @@
 
 .method public static final canClearHistory(Landroid/content/ContentResolver;)Z
     .locals 11
-    .param p0    # Landroid/content/ContentResolver;
 
     const/4 v9, 0x1
 
@@ -331,7 +327,6 @@
 
 .method public static final clearHistory(Landroid/content/ContentResolver;)V
     .locals 1
-    .param p0    # Landroid/content/ContentResolver;
 
     const/4 v0, 0x0
 
@@ -342,7 +337,6 @@
 
 .method public static final clearSearches(Landroid/content/ContentResolver;)V
     .locals 4
-    .param p0    # Landroid/content/ContentResolver;
 
     :try_start_0
     sget-object v1, Landroid/provider/BrowserContract$Searches;->CONTENT_URI:Landroid/net/Uri;
@@ -372,8 +366,6 @@
 
 .method public static final deleteFromHistory(Landroid/content/ContentResolver;Ljava/lang/String;)V
     .locals 4
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # Ljava/lang/String;
 
     sget-object v0, Landroid/provider/BrowserContract$History;->CONTENT_URI:Landroid/net/Uri;
 
@@ -394,9 +386,6 @@
 
 .method public static final deleteHistoryTimeFrame(Landroid/content/ContentResolver;JJ)V
     .locals 5
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # J
-    .param p3    # J
 
     const-wide/16 v3, -0x1
 
@@ -536,8 +525,6 @@
 
 .method private static final deleteHistoryWhere(Landroid/content/ContentResolver;Ljava/lang/String;)V
     .locals 9
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # Ljava/lang/String;
 
     const/4 v6, 0x0
 
@@ -638,7 +625,6 @@
 
 .method public static final getAllBookmarks(Landroid/content/ContentResolver;)Landroid/database/Cursor;
     .locals 6
-    .param p0    # Landroid/content/ContentResolver;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;
@@ -674,7 +660,6 @@
 
 .method public static final getAllVisitedUrls(Landroid/content/ContentResolver;)Landroid/database/Cursor;
     .locals 6
-    .param p0    # Landroid/content/ContentResolver;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;
@@ -710,7 +695,6 @@
 
 .method public static final getVisitedHistory(Landroid/content/ContentResolver;)[Ljava/lang/String;
     .locals 10
-    .param p0    # Landroid/content/ContentResolver;
 
     const/4 v6, 0x0
 
@@ -834,8 +818,6 @@
 
 .method private static final getVisitedLike(Landroid/content/ContentResolver;Ljava/lang/String;)Landroid/database/Cursor;
     .locals 10
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -1058,9 +1040,6 @@
 
 .method public static final requestAllIcons(Landroid/content/ContentResolver;Ljava/lang/String;Landroid/webkit/WebIconDatabase$IconListener;)V
     .locals 1
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/webkit/WebIconDatabase$IconListener;
 
     invoke-static {}, Landroid/webkit/WebIconDatabase;->getInstance()Landroid/webkit/WebIconDatabase;
 
@@ -1073,9 +1052,6 @@
 
 .method public static final saveBookmark(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -1100,8 +1076,6 @@
 
 .method public static final sendString(Landroid/content/Context;Ljava/lang/String;)V
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const v0, 0x1040895
 
@@ -1116,9 +1090,6 @@
 
 .method public static final sendString(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     new-instance v1, Landroid/content/Intent;
 
@@ -1154,7 +1125,6 @@
 
 .method public static final truncateHistory(Landroid/content/ContentResolver;)V
     .locals 10
-    .param p0    # Landroid/content/ContentResolver;
 
     const/4 v6, 0x0
 
@@ -1298,9 +1268,6 @@
 
 .method public static final updateVisitedHistory(Landroid/content/ContentResolver;Ljava/lang/String;Z)V
     .locals 10
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 

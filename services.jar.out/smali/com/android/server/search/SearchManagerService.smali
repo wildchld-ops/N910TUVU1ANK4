@@ -37,7 +37,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
 
     const/4 v4, 0x0
 
@@ -94,7 +93,6 @@
 
 .method static synthetic access$200(Lcom/android/server/search/SearchManagerService;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/server/search/SearchManagerService;
 
     iget-object v0, p0, Lcom/android/server/search/SearchManagerService;->mContext:Landroid/content/Context;
 
@@ -103,8 +101,6 @@
 
 .method static synthetic access$300(Lcom/android/server/search/SearchManagerService;I)Lcom/android/server/search/Searchables;
     .locals 1
-    .param p0    # Lcom/android/server/search/SearchManagerService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/search/SearchManagerService;->getSearchables(I)Lcom/android/server/search/Searchables;
 
@@ -115,8 +111,6 @@
 
 .method static synthetic access$400(Lcom/android/server/search/SearchManagerService;I)V
     .locals 0
-    .param p0    # Lcom/android/server/search/SearchManagerService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/search/SearchManagerService;->onUserRemoved(I)V
 
@@ -125,7 +119,6 @@
 
 .method static synthetic access$500(Lcom/android/server/search/SearchManagerService;)Landroid/util/SparseArray;
     .locals 1
-    .param p0    # Lcom/android/server/search/SearchManagerService;
 
     iget-object v0, p0, Lcom/android/server/search/SearchManagerService;->mSearchables:Landroid/util/SparseArray;
 
@@ -134,7 +127,6 @@
 
 .method private getSearchables(I)Lcom/android/server/search/Searchables;
     .locals 6
-    .param p1    # I
 
     invoke-static {}, Landroid/os/Binder;->clearCallingIdentity()J
 
@@ -230,7 +222,6 @@
 
 .method private onUserRemoved(I)V
     .locals 2
-    .param p1    # I
 
     if-eqz p1, :cond_0
 
@@ -262,9 +253,6 @@
 # virtual methods
 .method public dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     iget-object v2, p0, Lcom/android/server/search/SearchManagerService;->mContext:Landroid/content/Context;
 
@@ -343,7 +331,6 @@
 
 .method public getAssistIntent(I)Landroid/content/ComponentName;
     .locals 13
-    .param p1    # I
 
     const/4 v12, 0x0
 
@@ -524,7 +511,6 @@
 
 .method public getSearchableInfo(Landroid/content/ComponentName;)Landroid/app/SearchableInfo;
     .locals 2
-    .param p1    # Landroid/content/ComponentName;
 
     if-nez p1, :cond_0
 
@@ -584,7 +570,6 @@
 
 .method public getSearchablesInInsightSearch(Z)Ljava/util/List;
     .locals 1
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(Z)",

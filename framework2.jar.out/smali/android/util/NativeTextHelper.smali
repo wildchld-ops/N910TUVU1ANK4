@@ -14,10 +14,6 @@
 
 .method public static final getInternalLocalString(Landroid/content/Context;Ljava/lang/String;II)Ljava/lang/String;
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     invoke-virtual {p0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
@@ -32,10 +28,6 @@
 
 .method public static final getLocalString(Landroid/content/Context;Ljava/lang/String;II)Ljava/lang/String;
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     const-string v0, "android"
 
@@ -48,11 +40,6 @@
 
 .method private static final getLocalString(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;II)Ljava/lang/String;
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
 
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 

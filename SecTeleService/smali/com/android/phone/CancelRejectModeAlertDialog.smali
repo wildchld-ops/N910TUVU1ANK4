@@ -83,11 +83,11 @@
 
     invoke-direct {v3, p0}, Lcom/android/phone/CancelRejectModeAlertDialog$4;-><init>(Lcom/android/phone/CancelRejectModeAlertDialog;)V
 
-    invoke-virtual {v2, v3}, Landroid/app/Dialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
+    invoke-virtual {v2, v3}, Landroid/app/AlertDialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
     iget-object v2, p0, Lcom/android/phone/CancelRejectModeAlertDialog;->createDialog:Landroid/app/AlertDialog;
 
-    invoke-virtual {v2}, Landroid/app/Dialog;->show()V
+    invoke-virtual {v2}, Landroid/app/AlertDialog;->show()V
 
     return-void
 .end method
@@ -159,11 +159,11 @@
 
     invoke-direct {v3, p0}, Lcom/android/phone/CancelRejectModeAlertDialog$8;-><init>(Lcom/android/phone/CancelRejectModeAlertDialog;)V
 
-    invoke-virtual {v2, v3}, Landroid/app/Dialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
+    invoke-virtual {v2, v3}, Landroid/app/AlertDialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
     iget-object v2, p0, Lcom/android/phone/CancelRejectModeAlertDialog;->createDialog:Landroid/app/AlertDialog;
 
-    invoke-virtual {v2}, Landroid/app/Dialog;->show()V
+    invoke-virtual {v2}, Landroid/app/AlertDialog;->show()V
 
     return-void
 .end method
@@ -176,7 +176,7 @@
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/phone/CancelRejectModeAlertDialog;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
 
@@ -196,7 +196,7 @@
 
     invoke-static {v1, v2, v3}, Lcom/android/phone/Log;->d(Ljava/lang/String;Ljava/lang/String;Z)I
 
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/CancelRejectModeAlertDialog;->finish()V
 
     :goto_0
     return-void
@@ -252,7 +252,7 @@
     goto :goto_0
 
     :cond_2
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/CancelRejectModeAlertDialog;->finish()V
 
     goto :goto_0
 .end method
@@ -262,7 +262,7 @@
 
     invoke-super {p0}, Landroid/app/Activity;->onPause()V
 
-    invoke-virtual {p0}, Landroid/app/Activity;->isFinishing()Z
+    invoke-virtual {p0}, Lcom/android/phone/CancelRejectModeAlertDialog;->isFinishing()Z
 
     move-result v0
 
@@ -274,9 +274,9 @@
     :cond_0
     iget-object v0, p0, Lcom/android/phone/CancelRejectModeAlertDialog;->createDialog:Landroid/app/AlertDialog;
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->dismiss()V
+    invoke-virtual {v0}, Landroid/app/AlertDialog;->dismiss()V
 
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/CancelRejectModeAlertDialog;->finish()V
 
     goto :goto_0
 .end method

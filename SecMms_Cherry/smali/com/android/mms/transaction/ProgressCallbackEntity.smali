@@ -26,9 +26,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;J[B)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # J
-    .param p4    # [B
 
     invoke-direct {p0, p4}, Lorg/apache/http/entity/ByteArrayEntity;-><init>([B)V
 
@@ -59,7 +56,6 @@
 
 .method private broadcastProgressIfNeeded(I)V
     .locals 5
-    .param p1    # I
 
     iget-wide v1, p0, Lcom/android/mms/transaction/ProgressCallbackEntity;->mToken:J
 
@@ -97,7 +93,6 @@
 # virtual methods
 .method public writeTo(Ljava/io/OutputStream;)V
     .locals 6
-    .param p1    # Ljava/io/OutputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

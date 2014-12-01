@@ -16,10 +16,6 @@
 # direct methods
 .method public constructor <init>(IILjava/lang/String;Lcom/sec/android/service/singlesignon/IEnterpriseSecurityManager2;)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Lcom/sec/android/service/singlesignon/IEnterpriseSecurityManager2;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -70,7 +66,6 @@
 
 .method public setClientId(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/enterprise/utils/SSOTypeMapData;->clientId:I
 
@@ -79,7 +74,6 @@
 
 .method public setContainerId(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/enterprise/utils/SSOTypeMapData;->containerId:I
 
@@ -88,7 +82,6 @@
 
 .method public setPackageName(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/server/enterprise/utils/SSOTypeMapData;->packageName:Ljava/lang/String;
 
@@ -97,7 +90,6 @@
 
 .method public setSSOInterface(Lcom/sec/android/service/singlesignon/IEnterpriseSecurityManager2;)V
     .locals 0
-    .param p1    # Lcom/sec/android/service/singlesignon/IEnterpriseSecurityManager2;
 
     iput-object p1, p0, Lcom/android/server/enterprise/utils/SSOTypeMapData;->ssoInterface:Lcom/sec/android/service/singlesignon/IEnterpriseSecurityManager2;
 

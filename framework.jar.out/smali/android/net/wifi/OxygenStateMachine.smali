@@ -122,9 +122,6 @@
 
 .method private constructor <init>(Landroid/content/Context;Landroid/net/wifi/WifiStateMachine;Ljava/lang/String;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/net/wifi/WifiStateMachine;
-    .param p3    # Ljava/lang/String;
 
     const/4 v5, 0x1
 
@@ -316,7 +313,6 @@
 
 .method static synthetic access$100(Landroid/net/wifi/OxygenStateMachine;)Landroid/net/wifi/OxygenStateMachine$OlsrdMonitor;
     .locals 1
-    .param p0    # Landroid/net/wifi/OxygenStateMachine;
 
     iget-object v0, p0, Landroid/net/wifi/OxygenStateMachine;->mOlsrdMonitor:Landroid/net/wifi/OxygenStateMachine$OlsrdMonitor;
 
@@ -325,7 +321,6 @@
 
 .method static synthetic access$1000(Landroid/net/wifi/OxygenStateMachine;)Lcom/android/internal/util/State;
     .locals 1
-    .param p0    # Landroid/net/wifi/OxygenStateMachine;
 
     iget-object v0, p0, Landroid/net/wifi/OxygenStateMachine;->mOlsrdStoppingState:Lcom/android/internal/util/State;
 
@@ -334,8 +329,6 @@
 
 .method static synthetic access$1100(Landroid/net/wifi/OxygenStateMachine;Lcom/android/internal/util/IState;)V
     .locals 0
-    .param p0    # Landroid/net/wifi/OxygenStateMachine;
-    .param p1    # Lcom/android/internal/util/IState;
 
     invoke-virtual {p0, p1}, Landroid/net/wifi/OxygenStateMachine;->transitionTo(Lcom/android/internal/util/IState;)V
 
@@ -344,8 +337,6 @@
 
 .method static synthetic access$1200(Landroid/net/wifi/OxygenStateMachine;I)V
     .locals 0
-    .param p0    # Landroid/net/wifi/OxygenStateMachine;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/net/wifi/OxygenStateMachine;->sendErrorBroadcast(I)V
 
@@ -354,8 +345,6 @@
 
 .method static synthetic access$1300(Landroid/net/wifi/OxygenStateMachine;Lcom/android/internal/util/IState;)V
     .locals 0
-    .param p0    # Landroid/net/wifi/OxygenStateMachine;
-    .param p1    # Lcom/android/internal/util/IState;
 
     invoke-virtual {p0, p1}, Landroid/net/wifi/OxygenStateMachine;->transitionTo(Lcom/android/internal/util/IState;)V
 
@@ -364,7 +353,6 @@
 
 .method static synthetic access$1400(Landroid/net/wifi/OxygenStateMachine;)Lcom/android/internal/util/State;
     .locals 1
-    .param p0    # Landroid/net/wifi/OxygenStateMachine;
 
     iget-object v0, p0, Landroid/net/wifi/OxygenStateMachine;->mOlsrdStartedState:Lcom/android/internal/util/State;
 
@@ -373,8 +361,6 @@
 
 .method static synthetic access$1500(Landroid/net/wifi/OxygenStateMachine;Lcom/android/internal/util/IState;)V
     .locals 0
-    .param p0    # Landroid/net/wifi/OxygenStateMachine;
-    .param p1    # Lcom/android/internal/util/IState;
 
     invoke-virtual {p0, p1}, Landroid/net/wifi/OxygenStateMachine;->transitionTo(Lcom/android/internal/util/IState;)V
 
@@ -383,7 +369,6 @@
 
 .method static synthetic access$1600(Landroid/net/wifi/OxygenStateMachine;)Landroid/app/PendingIntent;
     .locals 1
-    .param p0    # Landroid/net/wifi/OxygenStateMachine;
 
     iget-object v0, p0, Landroid/net/wifi/OxygenStateMachine;->mPendingIntentOneShot:Landroid/app/PendingIntent;
 
@@ -392,7 +377,6 @@
 
 .method static synthetic access$1700(Landroid/net/wifi/OxygenStateMachine;)Landroid/app/AlarmManager;
     .locals 1
-    .param p0    # Landroid/net/wifi/OxygenStateMachine;
 
     iget-object v0, p0, Landroid/net/wifi/OxygenStateMachine;->mAM:Landroid/app/AlarmManager;
 
@@ -401,7 +385,6 @@
 
 .method static synthetic access$1800(Landroid/net/wifi/OxygenStateMachine;)Landroid/app/PendingIntent;
     .locals 1
-    .param p0    # Landroid/net/wifi/OxygenStateMachine;
 
     iget-object v0, p0, Landroid/net/wifi/OxygenStateMachine;->mPendingIntentPeriodic:Landroid/app/PendingIntent;
 
@@ -410,7 +393,6 @@
 
 .method static synthetic access$1900(Landroid/net/wifi/OxygenStateMachine;)Landroid/os/PowerManager$WakeLock;
     .locals 1
-    .param p0    # Landroid/net/wifi/OxygenStateMachine;
 
     iget-object v0, p0, Landroid/net/wifi/OxygenStateMachine;->mWakeLock:Landroid/os/PowerManager$WakeLock;
 
@@ -419,7 +401,6 @@
 
 .method static synthetic access$200(Landroid/net/wifi/OxygenStateMachine;)Landroid/net/wifi/OxygenStateMachine$OlsrdCommander;
     .locals 1
-    .param p0    # Landroid/net/wifi/OxygenStateMachine;
 
     iget-object v0, p0, Landroid/net/wifi/OxygenStateMachine;->mCommander:Landroid/net/wifi/OxygenStateMachine$OlsrdCommander;
 
@@ -428,8 +409,6 @@
 
 .method static synthetic access$2000(Landroid/net/wifi/OxygenStateMachine;Lcom/android/internal/util/IState;)V
     .locals 0
-    .param p0    # Landroid/net/wifi/OxygenStateMachine;
-    .param p1    # Lcom/android/internal/util/IState;
 
     invoke-virtual {p0, p1}, Landroid/net/wifi/OxygenStateMachine;->transitionTo(Lcom/android/internal/util/IState;)V
 
@@ -438,8 +417,6 @@
 
 .method static synthetic access$2100(Landroid/net/wifi/OxygenStateMachine;Lcom/android/internal/util/IState;)V
     .locals 0
-    .param p0    # Landroid/net/wifi/OxygenStateMachine;
-    .param p1    # Lcom/android/internal/util/IState;
 
     invoke-virtual {p0, p1}, Landroid/net/wifi/OxygenStateMachine;->transitionTo(Lcom/android/internal/util/IState;)V
 
@@ -448,7 +425,6 @@
 
 .method static synthetic access$2200(Landroid/net/wifi/OxygenStateMachine;)I
     .locals 1
-    .param p0    # Landroid/net/wifi/OxygenStateMachine;
 
     iget v0, p0, Landroid/net/wifi/OxygenStateMachine;->mOldAlarmInterval:I
 
@@ -457,8 +433,6 @@
 
 .method static synthetic access$2202(Landroid/net/wifi/OxygenStateMachine;I)I
     .locals 0
-    .param p0    # Landroid/net/wifi/OxygenStateMachine;
-    .param p1    # I
 
     iput p1, p0, Landroid/net/wifi/OxygenStateMachine;->mOldAlarmInterval:I
 
@@ -467,8 +441,6 @@
 
 .method static synthetic access$2300(Landroid/net/wifi/OxygenStateMachine;I)V
     .locals 0
-    .param p0    # Landroid/net/wifi/OxygenStateMachine;
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/net/wifi/OxygenStateMachine;->removeMessages(I)V
 
@@ -477,7 +449,6 @@
 
 .method static synthetic access$300(Landroid/net/wifi/OxygenStateMachine;)Landroid/net/wifi/WifiNative;
     .locals 1
-    .param p0    # Landroid/net/wifi/OxygenStateMachine;
 
     iget-object v0, p0, Landroid/net/wifi/OxygenStateMachine;->mWifiNative:Landroid/net/wifi/WifiNative;
 
@@ -486,7 +457,6 @@
 
 .method static synthetic access$400(Landroid/net/wifi/OxygenStateMachine;)Landroid/net/wifi/WifiStateMachine;
     .locals 1
-    .param p0    # Landroid/net/wifi/OxygenStateMachine;
 
     iget-object v0, p0, Landroid/net/wifi/OxygenStateMachine;->mController:Landroid/net/wifi/WifiStateMachine;
 
@@ -495,7 +465,6 @@
 
 .method static synthetic access$500(Landroid/net/wifi/OxygenStateMachine;)Lcom/android/internal/util/State;
     .locals 1
-    .param p0    # Landroid/net/wifi/OxygenStateMachine;
 
     iget-object v0, p0, Landroid/net/wifi/OxygenStateMachine;->mOlsrdStoppedState:Lcom/android/internal/util/State;
 
@@ -504,8 +473,6 @@
 
 .method static synthetic access$600(Landroid/net/wifi/OxygenStateMachine;Lcom/android/internal/util/IState;)V
     .locals 0
-    .param p0    # Landroid/net/wifi/OxygenStateMachine;
-    .param p1    # Lcom/android/internal/util/IState;
 
     invoke-virtual {p0, p1}, Landroid/net/wifi/OxygenStateMachine;->transitionTo(Lcom/android/internal/util/IState;)V
 
@@ -514,8 +481,6 @@
 
 .method static synthetic access$700(Landroid/net/wifi/OxygenStateMachine;Landroid/os/Message;)V
     .locals 0
-    .param p0    # Landroid/net/wifi/OxygenStateMachine;
-    .param p1    # Landroid/os/Message;
 
     invoke-virtual {p0, p1}, Landroid/net/wifi/OxygenStateMachine;->deferMessage(Landroid/os/Message;)V
 
@@ -524,7 +489,6 @@
 
 .method static synthetic access$800(Landroid/net/wifi/OxygenStateMachine;)Lcom/android/internal/util/State;
     .locals 1
-    .param p0    # Landroid/net/wifi/OxygenStateMachine;
 
     iget-object v0, p0, Landroid/net/wifi/OxygenStateMachine;->mOlsrdStartingState:Lcom/android/internal/util/State;
 
@@ -533,8 +497,6 @@
 
 .method static synthetic access$900(Landroid/net/wifi/OxygenStateMachine;Lcom/android/internal/util/IState;)V
     .locals 0
-    .param p0    # Landroid/net/wifi/OxygenStateMachine;
-    .param p1    # Lcom/android/internal/util/IState;
 
     invoke-virtual {p0, p1}, Landroid/net/wifi/OxygenStateMachine;->transitionTo(Lcom/android/internal/util/IState;)V
 
@@ -543,7 +505,6 @@
 
 .method public static getChannelFromFrequency(I)I
     .locals 1
-    .param p0    # I
 
     const/16 v0, 0x1388
 
@@ -570,9 +531,6 @@
 
 .method public static makeOxygenStateMachine(Landroid/content/Context;Landroid/net/wifi/WifiStateMachine;Ljava/lang/String;)Landroid/net/wifi/OxygenStateMachine;
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/wifi/WifiStateMachine;
-    .param p2    # Ljava/lang/String;
 
     new-instance v0, Landroid/net/wifi/OxygenStateMachine;
 
@@ -585,7 +543,6 @@
 
 .method private sendErrorBroadcast(I)V
     .locals 5
-    .param p1    # I
 
     iget-object v2, p0, Landroid/net/wifi/OxygenStateMachine;->mContext:Landroid/content/Context;
 
@@ -686,9 +643,6 @@
 
 .method public dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     invoke-super {p0, p1, p2, p3}, Lcom/android/internal/util/StateMachine;->dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
 
@@ -735,7 +689,6 @@
 
 .method public startOlsrd(Z)V
     .locals 1
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 

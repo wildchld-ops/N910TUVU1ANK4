@@ -58,7 +58,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     const/4 v2, 0x0
 
@@ -134,8 +133,6 @@
 
 .method private getContainers(IZ)Ljava/util/List;
     .locals 8
-    .param p1    # I
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(IZ)",
@@ -362,7 +359,6 @@
 
 .method private initializeContainersOnBoot(Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     invoke-virtual {p0, p1}, Lcom/sec/knox/container/contentprovider/ContainerDatabase;->getPasswordContainerdataFromDB(Landroid/content/Context;)Ljava/util/HashMap;
 
@@ -417,7 +413,6 @@
 
 .method private updateContainerPackageCache(I)Z
     .locals 5
-    .param p1    # I
 
     iget-object v2, p0, Lcom/sec/knox/container/contentprovider/EnterpriseContainerCache;->mContainerCacheHashMap:Ljava/util/HashMap;
 
@@ -492,7 +487,6 @@
 # virtual methods
 .method public clearContainerRequestId(I)V
     .locals 5
-    .param p1    # I
 
     iget-object v3, p0, Lcom/sec/knox/container/contentprovider/EnterpriseContainerCache;->mContainerInProgressData:Ljava/util/HashMap;
 
@@ -554,7 +548,6 @@
 
 .method public declared-synchronized containerCanceled(I)Z
     .locals 6
-    .param p1    # I
 
     const/4 v3, 0x1
 
@@ -634,7 +627,6 @@
 
 .method public getContainerFirmwareVersion(I)Ljava/lang/String;
     .locals 4
-    .param p1    # I
 
     iget-object v1, p0, Lcom/sec/knox/container/contentprovider/EnterpriseContainerCache;->mContainerCacheHashMap:Ljava/util/HashMap;
 
@@ -713,7 +705,6 @@
 
 .method public getContainerId(Ljava/lang/String;)I
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/sec/knox/container/contentprovider/EnterpriseContainerCache;->mContext:Landroid/content/Context;
 
@@ -848,7 +839,6 @@
 
 .method public getContainerIdForRequestId(I)I
     .locals 5
-    .param p1    # I
 
     iget-object v3, p0, Lcom/sec/knox/container/contentprovider/EnterpriseContainerCache;->mContainerInProgressData:Ljava/util/HashMap;
 
@@ -910,7 +900,6 @@
 
 .method public getContainerLockOnScreenLock(I)Z
     .locals 4
-    .param p1    # I
 
     iget-object v1, p0, Lcom/sec/knox/container/contentprovider/EnterpriseContainerCache;->mContainerCacheHashMap:Ljava/util/HashMap;
 
@@ -989,7 +978,6 @@
 
 .method public getContainerObjectFromCache(I)Lcom/sec/enterprise/knox/EnterpriseContainerObject;
     .locals 4
-    .param p1    # I
 
     iget-object v2, p0, Lcom/sec/knox/container/contentprovider/EnterpriseContainerCache;->mContainerCacheHashMap:Ljava/util/HashMap;
 
@@ -1060,7 +1048,6 @@
 
 .method public getContainerPackages(I)Ljava/util/List;
     .locals 8
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -1215,7 +1202,6 @@
 
 .method public getContainerPackagesInfoFromCache(I)Ljava/util/HashMap;
     .locals 3
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -1260,8 +1246,6 @@
 
 .method protected getContainerStatus(IZ)I
     .locals 4
-    .param p1    # I
-    .param p2    # Z
 
     iget-object v1, p0, Lcom/sec/knox/container/contentprovider/EnterpriseContainerCache;->mContainerCacheHashMap:Ljava/util/HashMap;
 
@@ -1321,7 +1305,6 @@
 
 .method public getContainerVerifyOnlyOnChangeMode(I)Z
     .locals 4
-    .param p1    # I
 
     iget-object v1, p0, Lcom/sec/knox/container/contentprovider/EnterpriseContainerCache;->mContainerCacheHashMap:Ljava/util/HashMap;
 
@@ -1423,7 +1406,6 @@
 
 .method public getContainers(I)Ljava/util/List;
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -1445,7 +1427,6 @@
 
 .method public getContainers(Lcom/sec/knox/container/constants/CSState;)Ljava/util/List;
     .locals 1
-    .param p1    # Lcom/sec/knox/container/constants/CSState;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1471,7 +1452,6 @@
 
 .method public getFailedPasswordAttempts(I)I
     .locals 4
-    .param p1    # I
 
     iget-object v1, p0, Lcom/sec/knox/container/contentprovider/EnterpriseContainerCache;->mContainerCacheHashMap:Ljava/util/HashMap;
 
@@ -1550,7 +1530,6 @@
 
 .method public getFeatureFlagForContainer(I)I
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lcom/sec/knox/container/contentprovider/EnterpriseContainerCache;->mContainerInProgressData:Ljava/util/HashMap;
 
@@ -1583,7 +1562,6 @@
 
 .method public getMaximumTimeToLock(I)J
     .locals 5
-    .param p1    # I
 
     iget-object v1, p0, Lcom/sec/knox/container/contentprovider/EnterpriseContainerCache;->mContainerCacheHashMap:Ljava/util/HashMap;
 
@@ -1662,7 +1640,6 @@
 
 .method public getPasswordEnabledContainerLockTimeout(I)J
     .locals 5
-    .param p1    # I
 
     iget-object v1, p0, Lcom/sec/knox/container/contentprovider/EnterpriseContainerCache;->mContainerCacheHashMap:Ljava/util/HashMap;
 
@@ -1741,7 +1718,6 @@
 
 .method public getPasswordExpirationDate(I)J
     .locals 5
-    .param p1    # I
 
     iget-object v1, p0, Lcom/sec/knox/container/contentprovider/EnterpriseContainerCache;->mContainerCacheHashMap:Ljava/util/HashMap;
 
@@ -1820,7 +1796,6 @@
 
 .method public getPasswordExpirationTimeout(I)J
     .locals 5
-    .param p1    # I
 
     iget-object v1, p0, Lcom/sec/knox/container/contentprovider/EnterpriseContainerCache;->mContainerCacheHashMap:Ljava/util/HashMap;
 
@@ -1899,7 +1874,6 @@
 
 .method public getPasswordHasExpired(I)Z
     .locals 4
-    .param p1    # I
 
     iget-object v1, p0, Lcom/sec/knox/container/contentprovider/EnterpriseContainerCache;->mContainerCacheHashMap:Ljava/util/HashMap;
 
@@ -1978,7 +1952,6 @@
 
 .method public getPasswordStateInfoCache(I)Lcom/sec/knox/container/contentprovider/ContainerPasswordStateInfo;
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lcom/sec/knox/container/contentprovider/EnterpriseContainerCache;->mContainerCacheHashMap:Ljava/util/HashMap;
 
@@ -2013,7 +1986,6 @@
 
 .method public getRequestIdForContainer(I)I
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lcom/sec/knox/container/contentprovider/EnterpriseContainerCache;->mContainerInProgressData:Ljava/util/HashMap;
 
@@ -2046,7 +2018,6 @@
 
 .method public isContainerCanceled(I)Z
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lcom/sec/knox/container/contentprovider/EnterpriseContainerCache;->mContainerInProgressData:Ljava/util/HashMap;
 
@@ -2101,7 +2072,6 @@
 
 .method public removeContainer(I)Z
     .locals 4
-    .param p1    # I
 
     iget-object v1, p0, Lcom/sec/knox/container/contentprovider/EnterpriseContainerCache;->mContainerCacheHashMap:Ljava/util/HashMap;
 
@@ -2179,8 +2149,6 @@
 
 .method public setContainerLockOnScreenLock(IZ)Z
     .locals 7
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v2, 0x1
 
@@ -2283,8 +2251,6 @@
 
 .method protected setContainerStatus(II)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     iget-object v1, p0, Lcom/sec/knox/container/contentprovider/EnterpriseContainerCache;->mContainerCacheHashMap:Ljava/util/HashMap;
 
@@ -2338,8 +2304,6 @@
 
 .method public setContainerVerifyOnlyOnChangeMode(IZ)Z
     .locals 7
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v2, 0x1
 
@@ -2442,8 +2406,6 @@
 
 .method public setFailedPasswordAttempts(II)Z
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     iget-object v1, p0, Lcom/sec/knox/container/contentprovider/EnterpriseContainerCache;->mContainerCacheHashMap:Ljava/util/HashMap;
 
@@ -2518,8 +2480,6 @@
 
 .method public setFeatureFlagForContainer(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     iget-object v1, p0, Lcom/sec/knox/container/contentprovider/EnterpriseContainerCache;->mContainerInProgressData:Ljava/util/HashMap;
 
@@ -2555,8 +2515,6 @@
 
 .method public setFirmwareVersion(ILjava/lang/String;)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/sec/knox/container/contentprovider/EnterpriseContainerCache;->mContainerCacheHashMap:Ljava/util/HashMap;
 
@@ -2631,8 +2589,6 @@
 
 .method public setMaximumTimeToLock(IJ)Z
     .locals 4
-    .param p1    # I
-    .param p2    # J
 
     iget-object v1, p0, Lcom/sec/knox/container/contentprovider/EnterpriseContainerCache;->mContainerCacheHashMap:Ljava/util/HashMap;
 
@@ -2707,8 +2663,6 @@
 
 .method public setPasswordEnabledContainerLockTimeout(IJ)Z
     .locals 4
-    .param p1    # I
-    .param p2    # J
 
     iget-object v1, p0, Lcom/sec/knox/container/contentprovider/EnterpriseContainerCache;->mContainerCacheHashMap:Ljava/util/HashMap;
 
@@ -2783,8 +2737,6 @@
 
 .method public setPasswordExpirationDate(IJ)Z
     .locals 4
-    .param p1    # I
-    .param p2    # J
 
     iget-object v1, p0, Lcom/sec/knox/container/contentprovider/EnterpriseContainerCache;->mContainerCacheHashMap:Ljava/util/HashMap;
 
@@ -2859,8 +2811,6 @@
 
 .method public setPasswordExpirationTimeout(IJ)Z
     .locals 4
-    .param p1    # I
-    .param p2    # J
 
     iget-object v1, p0, Lcom/sec/knox/container/contentprovider/EnterpriseContainerCache;->mContainerCacheHashMap:Ljava/util/HashMap;
 
@@ -2935,8 +2885,6 @@
 
 .method public setPasswordHasExpired(IZ)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Z
 
     iget-object v1, p0, Lcom/sec/knox/container/contentprovider/EnterpriseContainerCache;->mContainerCacheHashMap:Ljava/util/HashMap;
 
@@ -3011,8 +2959,6 @@
 
 .method public setRequestIdForContainer(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     new-instance v0, Lcom/sec/knox/container/contentprovider/EnterpriseContainerCache$ContainerInprogressData;
 
@@ -3035,7 +2981,6 @@
 
 .method public updateCacheAddContainerObject(Lcom/sec/knox/container/contentprovider/EnterpriseContainerCacheObject;)V
     .locals 2
-    .param p1    # Lcom/sec/knox/container/contentprovider/EnterpriseContainerCacheObject;
 
     iget-object v0, p0, Lcom/sec/knox/container/contentprovider/EnterpriseContainerCache;->mContainerCacheHashMap:Ljava/util/HashMap;
 
@@ -3059,7 +3004,6 @@
 
 .method public updateContainerPackageCache(Lcom/sec/knox/container/contentprovider/ContainerPackageInfo;)Z
     .locals 5
-    .param p1    # Lcom/sec/knox/container/contentprovider/ContainerPackageInfo;
 
     iget-object v2, p0, Lcom/sec/knox/container/contentprovider/EnterpriseContainerCache;->mContainerCacheHashMap:Ljava/util/HashMap;
 
@@ -3183,8 +3127,6 @@
 
 .method public updateContainerType(II)Z
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     iget-object v1, p0, Lcom/sec/knox/container/contentprovider/EnterpriseContainerCache;->mContainerCacheHashMap:Ljava/util/HashMap;
 
@@ -3259,8 +3201,6 @@
 
 .method public updateEmailId(ILjava/lang/String;)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/sec/knox/container/contentprovider/EnterpriseContainerCache;->mContainerCacheHashMap:Ljava/util/HashMap;
 
@@ -3335,8 +3275,6 @@
 
 .method public updateLockType(II)Z
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     iget-object v1, p0, Lcom/sec/knox/container/contentprovider/EnterpriseContainerCache;->mContainerCacheHashMap:Ljava/util/HashMap;
 
@@ -3411,7 +3349,6 @@
 
 .method public updatePasswordStateInfoCache(Lcom/sec/knox/container/contentprovider/ContainerPasswordStateInfo;)Z
     .locals 4
-    .param p1    # Lcom/sec/knox/container/contentprovider/ContainerPasswordStateInfo;
 
     iget-object v1, p0, Lcom/sec/knox/container/contentprovider/EnterpriseContainerCache;->mContainerCacheHashMap:Ljava/util/HashMap;
 
@@ -3498,8 +3435,6 @@
 
 .method public updatePasswordStatus(ILjava/lang/Integer;)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Ljava/lang/Integer;
 
     iget-object v1, p0, Lcom/sec/knox/container/contentprovider/EnterpriseContainerCache;->mContainerCacheHashMap:Ljava/util/HashMap;
 

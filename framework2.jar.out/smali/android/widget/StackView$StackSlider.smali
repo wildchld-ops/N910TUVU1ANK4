@@ -51,7 +51,6 @@
 
 .method public constructor <init>(Landroid/widget/StackView;Landroid/widget/StackView$StackSlider;)V
     .locals 1
-    .param p2    # Landroid/widget/StackView$StackSlider;
 
     iput-object p1, p0, Landroid/widget/StackView$StackSlider;->this$0:Landroid/widget/StackView;
 
@@ -82,7 +81,6 @@
 
 .method private cubic(F)F
     .locals 5
-    .param p1    # F
 
     const/high16 v4, 0x40000000
 
@@ -113,8 +111,6 @@
 
 .method private getDuration(ZF)F
     .locals 12
-    .param p1    # Z
-    .param p2    # F
 
     const/high16 v11, 0x43c80000
 
@@ -268,7 +264,6 @@
 
 .method private highlightAlphaInterpolator(F)F
     .locals 5
-    .param p1    # F
 
     const/high16 v4, 0x3f800000
 
@@ -311,7 +306,6 @@
 
 .method private rotationInterpolator(F)F
     .locals 3
-    .param p1    # F
 
     const v0, 0x3e4ccccd
 
@@ -338,7 +332,6 @@
 
 .method private viewAlphaInterpolator(F)F
     .locals 3
-    .param p1    # F
 
     const v0, 0x3e99999a
 
@@ -381,7 +374,6 @@
 
 .method getDurationForNeutralPosition(F)F
     .locals 1
-    .param p1    # F
 
     const/4 v0, 0x0
 
@@ -408,7 +400,6 @@
 
 .method getDurationForOffscreenPosition(F)F
     .locals 1
-    .param p1    # F
 
     const/4 v0, 0x1
 
@@ -437,7 +428,6 @@
 
 .method setMode(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/widget/StackView$StackSlider;->mMode:I
 
@@ -446,7 +436,6 @@
 
 .method setView(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     iput-object p1, p0, Landroid/widget/StackView$StackSlider;->mView:Landroid/view/View;
 
@@ -455,7 +444,6 @@
 
 .method public setXProgress(F)V
     .locals 3
-    .param p1    # F
 
     const/high16 v2, 0x40000000
 
@@ -543,7 +531,6 @@
 
 .method public setYProgress(F)V
     .locals 12
-    .param p1    # F
 
     const/4 v11, 0x0
 

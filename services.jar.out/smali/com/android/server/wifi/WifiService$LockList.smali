@@ -48,8 +48,6 @@
 
 .method synthetic constructor <init>(Lcom/android/server/wifi/WifiService;Lcom/android/server/wifi/WifiService$1;)V
     .locals 0
-    .param p1    # Lcom/android/server/wifi/WifiService;
-    .param p2    # Lcom/android/server/wifi/WifiService$1;
 
     invoke-direct {p0, p1}, Lcom/android/server/wifi/WifiService$LockList;-><init>(Lcom/android/server/wifi/WifiService;)V
 
@@ -58,8 +56,6 @@
 
 .method static synthetic access$2800(Lcom/android/server/wifi/WifiService$LockList;Ljava/io/PrintWriter;)V
     .locals 0
-    .param p0    # Lcom/android/server/wifi/WifiService$LockList;
-    .param p1    # Ljava/io/PrintWriter;
 
     invoke-direct {p0, p1}, Lcom/android/server/wifi/WifiService$LockList;->dump(Ljava/io/PrintWriter;)V
 
@@ -68,8 +64,6 @@
 
 .method static synthetic access$3400(Lcom/android/server/wifi/WifiService$LockList;Lcom/android/server/wifi/WifiService$WifiLock;)V
     .locals 0
-    .param p0    # Lcom/android/server/wifi/WifiService$LockList;
-    .param p1    # Lcom/android/server/wifi/WifiService$WifiLock;
 
     invoke-direct {p0, p1}, Lcom/android/server/wifi/WifiService$LockList;->addLock(Lcom/android/server/wifi/WifiService$WifiLock;)V
 
@@ -78,8 +72,6 @@
 
 .method static synthetic access$3500(Lcom/android/server/wifi/WifiService$LockList;Landroid/os/IBinder;)I
     .locals 1
-    .param p0    # Lcom/android/server/wifi/WifiService$LockList;
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0, p1}, Lcom/android/server/wifi/WifiService$LockList;->findLockByBinder(Landroid/os/IBinder;)I
 
@@ -90,7 +82,6 @@
 
 .method static synthetic access$3600(Lcom/android/server/wifi/WifiService$LockList;)Ljava/util/List;
     .locals 1
-    .param p0    # Lcom/android/server/wifi/WifiService$LockList;
 
     iget-object v0, p0, Lcom/android/server/wifi/WifiService$LockList;->mList:Ljava/util/List;
 
@@ -99,8 +90,6 @@
 
 .method static synthetic access$3700(Lcom/android/server/wifi/WifiService$LockList;Landroid/os/IBinder;)Lcom/android/server/wifi/WifiService$WifiLock;
     .locals 1
-    .param p0    # Lcom/android/server/wifi/WifiService$LockList;
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0, p1}, Lcom/android/server/wifi/WifiService$LockList;->removeLock(Landroid/os/IBinder;)Lcom/android/server/wifi/WifiService$WifiLock;
 
@@ -111,7 +100,6 @@
 
 .method private addLock(Lcom/android/server/wifi/WifiService$WifiLock;)V
     .locals 1
-    .param p1    # Lcom/android/server/wifi/WifiService$WifiLock;
 
     iget-object v0, p1, Lcom/android/server/wifi/WifiService$DeathRecipient;->mBinder:Landroid/os/IBinder;
 
@@ -131,7 +119,6 @@
 
 .method private dump(Ljava/io/PrintWriter;)V
     .locals 3
-    .param p1    # Ljava/io/PrintWriter;
 
     iget-object v2, p0, Lcom/android/server/wifi/WifiService$LockList;->mList:Ljava/util/List;
 
@@ -166,7 +153,6 @@
 
 .method private findLockByBinder(Landroid/os/IBinder;)I
     .locals 3
-    .param p1    # Landroid/os/IBinder;
 
     iget-object v2, p0, Lcom/android/server/wifi/WifiService$LockList;->mList:Ljava/util/List;
 
@@ -207,7 +193,6 @@
 
 .method private removeLock(Landroid/os/IBinder;)Lcom/android/server/wifi/WifiService$WifiLock;
     .locals 3
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0, p1}, Lcom/android/server/wifi/WifiService$LockList;->findLockByBinder(Landroid/os/IBinder;)I
 
@@ -351,7 +336,6 @@
 
 .method declared-synchronized updateWorkSource(Landroid/os/WorkSource;)V
     .locals 2
-    .param p1    # Landroid/os/WorkSource;
 
     monitor-enter p0
 

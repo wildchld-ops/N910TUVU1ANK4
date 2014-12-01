@@ -60,7 +60,6 @@
 
 .method private declared-synchronized getOrCreateThreadStatus(Ljava/lang/Thread;)Lcom/sec/android/app/camera/BitmapManager$ThreadStatus;
     .locals 2
-    .param p1    # Ljava/lang/Thread;
 
     monitor-enter p0
 
@@ -137,8 +136,6 @@
 
 .method private declared-synchronized setDecodingOptions(Ljava/lang/Thread;Landroid/graphics/BitmapFactory$Options;)V
     .locals 1
-    .param p1    # Ljava/lang/Thread;
-    .param p2    # Landroid/graphics/BitmapFactory$Options;
 
     monitor-enter p0
 
@@ -167,7 +164,6 @@
 # virtual methods
 .method public declared-synchronized allowThreadDecoding(Ljava/lang/Thread;)V
     .locals 2
-    .param p1    # Ljava/lang/Thread;
 
     monitor-enter p0
 
@@ -196,7 +192,6 @@
 
 .method public declared-synchronized canThreadDecoding(Ljava/lang/Thread;)Z
     .locals 4
-    .param p1    # Ljava/lang/Thread;
 
     const/4 v0, 0x1
 
@@ -248,7 +243,6 @@
 
 .method public declared-synchronized cancelThreadDecoding(Ljava/lang/Thread;)V
     .locals 2
-    .param p1    # Ljava/lang/Thread;
 
     monitor-enter p0
 
@@ -288,8 +282,6 @@
 
 .method public decodeFileDescriptor(Ljava/io/FileDescriptor;Landroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;
     .locals 5
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Landroid/graphics/BitmapFactory$Options;
 
     const/4 v0, 0x0
 
@@ -355,7 +347,6 @@
 
 .method declared-synchronized removeDecodingOptions(Ljava/lang/Thread;)V
     .locals 2
-    .param p1    # Ljava/lang/Thread;
 
     monitor-enter p0
 

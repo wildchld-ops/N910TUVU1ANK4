@@ -59,8 +59,6 @@
 
 .method synthetic constructor <init>(Lcom/android/server/VRManagerService;Lcom/android/server/VRManagerService$1;)V
     .locals 0
-    .param p1    # Lcom/android/server/VRManagerService;
-    .param p2    # Lcom/android/server/VRManagerService$1;
 
     invoke-direct {p0, p1}, Lcom/android/server/VRManagerService$VRServiceConnection;-><init>(Lcom/android/server/VRManagerService;)V
 
@@ -71,8 +69,6 @@
 # virtual methods
 .method public onServiceConnected(Landroid/content/ComponentName;Landroid/os/IBinder;)V
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Landroid/os/IBinder;
 
     const-string v1, "VRManagerService"
 
@@ -108,7 +104,6 @@
 
 .method public onServiceDisconnected(Landroid/content/ComponentName;)V
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
 
     const/4 v2, 0x0
 

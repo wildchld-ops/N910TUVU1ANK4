@@ -76,7 +76,6 @@
 
 .method public setCid(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/epdg/ipc/EpdgPdpContextInfo;->mCid:I
 
@@ -85,7 +84,6 @@
 
 .method public setDataCallRsn(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/epdg/ipc/EpdgPdpContextInfo;->mDataCallReason:I
 
@@ -94,7 +92,6 @@
 
 .method public setDataCallType(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/epdg/ipc/EpdgPdpContextInfo;->mDataCallType:I
 
@@ -103,7 +100,6 @@
 
 .method public setState(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/epdg/ipc/EpdgPdpContextInfo;->mState:I
 

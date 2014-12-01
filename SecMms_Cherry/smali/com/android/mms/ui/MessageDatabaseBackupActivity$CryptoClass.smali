@@ -29,7 +29,6 @@
 # direct methods
 .method private constructor <init>(Lcom/android/mms/ui/MessageDatabaseBackupActivity;Ljava/security/Key;)V
     .locals 0
-    .param p2    # Ljava/security/Key;
 
     iput-object p1, p0, Lcom/android/mms/ui/MessageDatabaseBackupActivity$CryptoClass;->this$0:Lcom/android/mms/ui/MessageDatabaseBackupActivity;
 
@@ -42,9 +41,6 @@
 
 .method synthetic constructor <init>(Lcom/android/mms/ui/MessageDatabaseBackupActivity;Ljava/security/Key;Lcom/android/mms/ui/MessageDatabaseBackupActivity$1;)V
     .locals 0
-    .param p1    # Lcom/android/mms/ui/MessageDatabaseBackupActivity;
-    .param p2    # Ljava/security/Key;
-    .param p3    # Lcom/android/mms/ui/MessageDatabaseBackupActivity$1;
 
     invoke-direct {p0, p1, p2}, Lcom/android/mms/ui/MessageDatabaseBackupActivity$CryptoClass;-><init>(Lcom/android/mms/ui/MessageDatabaseBackupActivity;Ljava/security/Key;)V
 
@@ -53,9 +49,6 @@
 
 .method private Crypto(ILjava/io/File;Ljava/io/File;)Z
     .locals 10
-    .param p1    # I
-    .param p2    # Ljava/io/File;
-    .param p3    # Ljava/io/File;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;
@@ -293,8 +286,6 @@
 
 .method private Decription(Ljava/io/File;Ljava/io/File;)Z
     .locals 3
-    .param p1    # Ljava/io/File;
-    .param p2    # Ljava/io/File;
 
     const/4 v0, 0x1
 
@@ -322,8 +313,6 @@
 
 .method private Encryption(Ljava/io/File;Ljava/io/File;)Z
     .locals 3
-    .param p1    # Ljava/io/File;
-    .param p2    # Ljava/io/File;
 
     const/4 v0, 0x1
 
@@ -351,9 +340,6 @@
 
 .method static synthetic access$500(Lcom/android/mms/ui/MessageDatabaseBackupActivity$CryptoClass;Ljava/io/File;Ljava/io/File;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/MessageDatabaseBackupActivity$CryptoClass;
-    .param p1    # Ljava/io/File;
-    .param p2    # Ljava/io/File;
 
     invoke-direct {p0, p1, p2}, Lcom/android/mms/ui/MessageDatabaseBackupActivity$CryptoClass;->Encryption(Ljava/io/File;Ljava/io/File;)Z
 
@@ -364,9 +350,6 @@
 
 .method static synthetic access$600(Lcom/android/mms/ui/MessageDatabaseBackupActivity$CryptoClass;Ljava/io/File;Ljava/io/File;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/MessageDatabaseBackupActivity$CryptoClass;
-    .param p1    # Ljava/io/File;
-    .param p2    # Ljava/io/File;
 
     invoke-direct {p0, p1, p2}, Lcom/android/mms/ui/MessageDatabaseBackupActivity$CryptoClass;->Decription(Ljava/io/File;Ljava/io/File;)Z
 

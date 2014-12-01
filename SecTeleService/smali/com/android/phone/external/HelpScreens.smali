@@ -40,7 +40,7 @@
     return-void
 
     :cond_1
-    invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/phone/external/HelpScreens;->getIntent()Landroid/content/Intent;
 
     move-result-object v2
 
@@ -71,7 +71,7 @@
 
     invoke-virtual {v0, v2, v3}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/external/HelpScreens;->startActivity(Landroid/content/Intent;)V
 
     goto :goto_0
 .end method
@@ -80,11 +80,11 @@
     .locals 4
 
     :try_start_0
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {p0}, Lcom/android/phone/external/HelpScreens;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v1
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getComponentName()Landroid/content/ComponentName;
+    invoke-virtual {p0}, Lcom/android/phone/external/HelpScreens;->getComponentName()Landroid/content/ComponentName;
 
     move-result-object v2
 
@@ -96,7 +96,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v1, v0, Landroid/content/pm/PackageItemInfo;->metaData:Landroid/os/Bundle;
+    iget-object v1, v0, Landroid/content/pm/ActivityInfo;->metaData:Landroid/os/Bundle;
 
     if-nez v1, :cond_1
 
@@ -105,7 +105,7 @@
     return-void
 
     :cond_1
-    iget-object v1, v0, Landroid/content/pm/PackageItemInfo;->metaData:Landroid/os/Bundle;
+    iget-object v1, v0, Landroid/content/pm/ActivityInfo;->metaData:Landroid/os/Bundle;
 
     const-string v2, "package"
 
@@ -115,7 +115,7 @@
 
     iput-object v1, p0, Lcom/android/phone/external/HelpScreens;->mPackageName:Ljava/lang/String;
 
-    iget-object v1, v0, Landroid/content/pm/PackageItemInfo;->metaData:Landroid/os/Bundle;
+    iget-object v1, v0, Landroid/content/pm/ActivityInfo;->metaData:Landroid/os/Bundle;
 
     const-string v2, "class"
 
@@ -145,7 +145,7 @@
 
     invoke-direct {p0}, Lcom/android/phone/external/HelpScreens;->forwardIntent()V
 
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/external/HelpScreens;->finish()V
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 

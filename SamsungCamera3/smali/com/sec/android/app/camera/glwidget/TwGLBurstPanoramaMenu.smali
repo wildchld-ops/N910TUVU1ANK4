@@ -881,10 +881,6 @@
 
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;ILcom/sec/android/glview/TwGLViewGroup;Lcom/sec/android/app/camera/MenuResourceDepot;)V
     .locals 10
-    .param p1    # Lcom/sec/android/app/camera/Camera;
-    .param p2    # I
-    .param p3    # Lcom/sec/android/glview/TwGLViewGroup;
-    .param p4    # Lcom/sec/android/app/camera/MenuResourceDepot;
 
     const/4 v5, 0x6
 
@@ -2351,7 +2347,6 @@
 
 .method static synthetic access$000(Lcom/sec/android/app/camera/glwidget/TwGLBurstPanoramaMenu;)Lcom/sec/android/app/camera/glwidget/TwGLBurstPanoramaMenu$OnBurstPanoramaCaptureCancelListener;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLBurstPanoramaMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLBurstPanoramaMenu;->mListener:Lcom/sec/android/app/camera/glwidget/TwGLBurstPanoramaMenu$OnBurstPanoramaCaptureCancelListener;
 
@@ -2360,7 +2355,6 @@
 
 .method static synthetic access$100(Lcom/sec/android/app/camera/glwidget/TwGLBurstPanoramaMenu;)Lcom/sec/android/app/camera/Camera;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLBurstPanoramaMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLBurstPanoramaMenu;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -2369,7 +2363,6 @@
 
 .method static synthetic access$200(Lcom/sec/android/app/camera/glwidget/TwGLBurstPanoramaMenu;)Lcom/sec/android/app/camera/Camera;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLBurstPanoramaMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLBurstPanoramaMenu;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -2378,7 +2371,6 @@
 
 .method static synthetic access$300(Lcom/sec/android/app/camera/glwidget/TwGLBurstPanoramaMenu;)Z
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLBurstPanoramaMenu;
 
     iget-boolean v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLBurstPanoramaMenu;->mPanoramaWarning:Z
 
@@ -2387,7 +2379,6 @@
 
 .method static synthetic access$400(Lcom/sec/android/app/camera/glwidget/TwGLBurstPanoramaMenu;)Lcom/sec/android/app/camera/Camera;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLBurstPanoramaMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLBurstPanoramaMenu;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -2396,7 +2387,6 @@
 
 .method static synthetic access$500(Lcom/sec/android/app/camera/glwidget/TwGLBurstPanoramaMenu;)Lcom/sec/android/app/camera/Camera;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLBurstPanoramaMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLBurstPanoramaMenu;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -2405,7 +2395,6 @@
 
 .method static synthetic access$600(Lcom/sec/android/app/camera/glwidget/TwGLBurstPanoramaMenu;)Lcom/sec/android/app/camera/Camera;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLBurstPanoramaMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLBurstPanoramaMenu;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -2502,7 +2491,6 @@
 
 .method private declared-synchronized updateLivePreviewLayout(Z)V
     .locals 51
-    .param p1    # Z
 
     monitor-enter p0
 
@@ -4243,8 +4231,6 @@
 
 .method public getAnimation(II)Landroid/view/animation/AnimationSet;
     .locals 10
-    .param p1    # I
-    .param p2    # I
 
     const/4 v9, 0x3
 
@@ -4534,8 +4520,6 @@
 
 .method public getPreviewThumbnailSize(II)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     iget v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLBurstPanoramaMenu;->mCaptureCount:I
 
@@ -4783,7 +4767,6 @@
 
 .method public hideWarningArrow(Z)V
     .locals 3
-    .param p1    # Z
 
     const/4 v2, 0x4
 
@@ -4936,7 +4919,6 @@
 
 .method public onClick(Lcom/sec/android/glview/TwGLView;)Z
     .locals 1
-    .param p1    # Lcom/sec/android/glview/TwGLView;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLBurstPanoramaMenu;->mCaptureStopButton:Lcom/sec/android/glview/TwGLButton;
 
@@ -5018,8 +5000,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/16 v2, 0x1b
 
@@ -5096,8 +5076,6 @@
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/16 v2, 0x1b
 
@@ -5244,7 +5222,6 @@
 
 .method public declared-synchronized onLivePreviewData([B)V
     .locals 27
-    .param p1    # [B
 
     monitor-enter p0
 
@@ -7364,7 +7341,6 @@
 
 .method public onOrientationChanged(I)V
     .locals 13
-    .param p1    # I
 
     const/4 v12, 0x2
 
@@ -7865,7 +7841,6 @@
 
 .method public panoramaDirectionChanged(I)V
     .locals 8
-    .param p1    # I
 
     const/4 v7, 0x3
 
@@ -8139,8 +8114,6 @@
 
 .method public panoramaRectChanged(II)V
     .locals 27
-    .param p1    # I
-    .param p2    # I
 
     const/4 v12, 0x0
 
@@ -13768,7 +13741,6 @@
 
 .method public reset(Z)V
     .locals 4
-    .param p1    # Z
 
     const/4 v3, 0x1
 
@@ -13888,7 +13860,6 @@
 
 .method public setAcquisitionProgress(I)V
     .locals 1
-    .param p1    # I
 
     iget-boolean v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLBurstPanoramaMenu;->mSideMenuHidden:Z
 
@@ -13912,7 +13883,6 @@
 
 .method public setAlphaArrow(Lcom/sec/android/glview/TwGLView;)V
     .locals 3
-    .param p1    # Lcom/sec/android/glview/TwGLView;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLBurstPanoramaMenu;->mBlinkAnimation:Landroid/view/animation/AlphaAnimation;
 
@@ -14016,7 +13986,6 @@
 
 .method public setEnterOrientation(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLBurstPanoramaMenu;->mEnterOrientation:I
 
@@ -14025,7 +13994,6 @@
 
 .method public setLowResolutionBitmap(Landroid/graphics/Bitmap;)V
     .locals 2
-    .param p1    # Landroid/graphics/Bitmap;
 
     const-string v0, "TwGLBurstPanoramaMenu"
 
@@ -14038,7 +14006,6 @@
 
 .method public setOnPanoramaCaptureCancelledListener(Lcom/sec/android/app/camera/glwidget/TwGLBurstPanoramaMenu$OnBurstPanoramaCaptureCancelListener;)V
     .locals 0
-    .param p1    # Lcom/sec/android/app/camera/glwidget/TwGLBurstPanoramaMenu$OnBurstPanoramaCaptureCancelListener;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLBurstPanoramaMenu;->mListener:Lcom/sec/android/app/camera/glwidget/TwGLBurstPanoramaMenu$OnBurstPanoramaCaptureCancelListener;
 
@@ -14047,7 +14014,6 @@
 
 .method public declared-synchronized setPostCaptureProgress(I)V
     .locals 3
-    .param p1    # I
 
     monitor-enter p0
 

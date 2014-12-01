@@ -35,9 +35,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/mms/ui/SlideshowActivity;IFZ)V
     .locals 0
-    .param p2    # I
-    .param p3    # F
-    .param p4    # Z
 
     iput-object p1, p0, Lcom/android/mms/ui/SlideshowActivity$16;->this$0:Lcom/android/mms/ui/SlideshowActivity;
 

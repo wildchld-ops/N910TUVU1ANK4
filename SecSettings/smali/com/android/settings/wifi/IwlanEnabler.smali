@@ -55,7 +55,6 @@
 
 .method public constructor <init>(Lcom/android/settings/SettingsPreferenceFragment;)V
     .locals 3
-    .param p1    # Lcom/android/settings/SettingsPreferenceFragment;
 
     const/4 v2, 0x0
 
@@ -152,7 +151,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/wifi/IwlanEnabler;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/IwlanEnabler;
 
     invoke-direct {p0}, Lcom/android/settings/wifi/IwlanEnabler;->isWifiConnected()Z
 
@@ -163,7 +161,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/wifi/IwlanEnabler;)I
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/IwlanEnabler;
 
     iget v0, p0, Lcom/android/settings/wifi/IwlanEnabler;->mIwlandState:I
 
@@ -172,8 +169,6 @@
 
 .method static synthetic access$102(Lcom/android/settings/wifi/IwlanEnabler;I)I
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/IwlanEnabler;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/settings/wifi/IwlanEnabler;->mIwlandState:I
 
@@ -182,7 +177,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/wifi/IwlanEnabler;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/IwlanEnabler;
 
     invoke-direct {p0}, Lcom/android/settings/wifi/IwlanEnabler;->isAvailableDataStorage()Z
 
@@ -193,7 +187,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/wifi/IwlanEnabler;)Landroid/preference/CheckBoxPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/IwlanEnabler;
 
     iget-object v0, p0, Lcom/android/settings/wifi/IwlanEnabler;->mIwlanCheckBoxPref:Landroid/preference/CheckBoxPreference;
 
@@ -202,7 +195,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/wifi/IwlanEnabler;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/IwlanEnabler;
 
     iget-object v0, p0, Lcom/android/settings/wifi/IwlanEnabler;->mPdgDomainName:Ljava/lang/String;
 
@@ -211,7 +203,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/wifi/IwlanEnabler;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/IwlanEnabler;
 
     iget-object v0, p0, Lcom/android/settings/wifi/IwlanEnabler;->mDefaultPdgDomainName:Ljava/lang/String;
 
@@ -220,7 +211,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/wifi/IwlanEnabler;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/IwlanEnabler;
 
     iget-object v0, p0, Lcom/android/settings/wifi/IwlanEnabler;->mContext:Landroid/content/Context;
 
@@ -229,8 +219,6 @@
 
 .method static synthetic access$702(Lcom/android/settings/wifi/IwlanEnabler;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/IwlanEnabler;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/wifi/IwlanEnabler;->mIsVpnConnected:Z
 
@@ -289,7 +277,6 @@
 
 .method private isDeamonRunning(Ljava/lang/String;)Z
     .locals 11
-    .param p1    # Ljava/lang/String;
 
     const/4 v7, 0x0
 
@@ -528,7 +515,6 @@
 
 .method private setIwlanEnabled(Z)V
     .locals 5
-    .param p1    # Z
 
     const/4 v1, 0x0
 
@@ -679,7 +665,6 @@
 
 .method private showAlertDialog(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
@@ -716,7 +701,6 @@
 # virtual methods
 .method public getPdgName(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/settings/wifi/IwlanEnabler;->mDefaultPdgDomainName:Ljava/lang/String;
 
@@ -740,8 +724,6 @@
 
 .method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
     .locals 1
-    .param p1    # Landroid/preference/Preference;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p2, Ljava/lang/Boolean;
 
@@ -837,7 +819,6 @@
 
 .method public updataIwlanNetworks(Landroid/content/Intent;)V
     .locals 16
-    .param p1    # Landroid/content/Intent;
 
     const/4 v11, 0x0
 

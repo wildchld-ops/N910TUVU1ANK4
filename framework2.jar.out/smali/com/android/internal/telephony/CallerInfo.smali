@@ -144,9 +144,6 @@
 
 .method static doSecondaryLookupIfNecessary(Landroid/content/Context;Ljava/lang/String;Lcom/android/internal/telephony/CallerInfo;)Lcom/android/internal/telephony/CallerInfo;
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/internal/telephony/CallerInfo;
 
     iget-boolean v1, p2, Lcom/android/internal/telephony/CallerInfo;->contactExists:Z
 
@@ -188,8 +185,6 @@
 
 .method public static getCallerId(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p0, p1}, Lcom/android/internal/telephony/CallerInfo;->getCallerInfo(Landroid/content/Context;Ljava/lang/String;)Lcom/android/internal/telephony/CallerInfo;
 
@@ -221,8 +216,6 @@
 
 .method public static getCallerInfo(Landroid/content/Context;Landroid/net/Uri;)Lcom/android/internal/telephony/CallerInfo;
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
 
     const/4 v2, 0x0
 
@@ -251,9 +244,6 @@
 
 .method public static getCallerInfo(Landroid/content/Context;Landroid/net/Uri;Landroid/database/Cursor;)Lcom/android/internal/telephony/CallerInfo;
     .locals 12
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Landroid/database/Cursor;
 
     const/4 v5, 0x1
 
@@ -549,8 +539,6 @@
 
 .method public static getCallerInfo(Landroid/content/Context;Ljava/lang/String;)Lcom/android/internal/telephony/CallerInfo;
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -563,9 +551,6 @@
 
 .method public static getCallerInfo(Landroid/content/Context;Ljava/lang/String;I)Lcom/android/internal/telephony/CallerInfo;
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     sget-boolean v2, Lcom/android/internal/telephony/CallerInfo;->VDBG:Z
 
@@ -714,8 +699,6 @@
 
 .method private static getColumnIndexForPersonId(Landroid/net/Uri;Landroid/database/Cursor;)I
     .locals 6
-    .param p0    # Landroid/net/Uri;
-    .param p1    # Landroid/database/Cursor;
 
     sget-boolean v3, Lcom/android/internal/telephony/CallerInfo;->VDBG:Z
 
@@ -917,7 +900,6 @@
 
 .method protected static getCurrentCountryIso(Landroid/content/Context;)Ljava/lang/String;
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
 
@@ -932,8 +914,6 @@
 
 .method private static getCurrentCountryIso(Landroid/content/Context;Ljava/util/Locale;)Ljava/lang/String;
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/util/Locale;
 
     const/4 v1, 0x0
 
@@ -1002,8 +982,6 @@
 
 .method private static getGeoDescription(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
     .locals 10
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -1270,9 +1248,6 @@
 
 .method private static getRemoteCallerInfo(Landroid/content/Context;Landroid/net/Uri;Lcom/android/internal/telephony/CallerInfo;)V
     .locals 10
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Lcom/android/internal/telephony/CallerInfo;
 
     const/4 v6, 0x1
 
@@ -1567,7 +1542,6 @@
 
 .method private static normalize(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     if-eqz p0, :cond_0
 
@@ -1591,8 +1565,6 @@
 # virtual methods
 .method public addUserData(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Object;
 
     iget-object v0, p0, Lcom/android/internal/telephony/CallerInfo;->mMapUserData:Ljava/util/HashMap;
 
@@ -1616,7 +1588,6 @@
 
 .method public getUserData(Ljava/lang/String;)Ljava/lang/Object;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/internal/telephony/CallerInfo;->mMapUserData:Ljava/util/HashMap;
 
@@ -1655,7 +1626,6 @@
 
 .method markAsEmergency(Landroid/content/Context;)Lcom/android/internal/telephony/CallerInfo;
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     const v3, 0x104057c
 
@@ -1708,8 +1678,6 @@
 
 .method markAsEmergency(Landroid/content/Context;Ljava/lang/String;)Lcom/android/internal/telephony/CallerInfo;
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
 
     iput-object p2, p0, Lcom/android/internal/telephony/CallerInfo;->phoneNumber:Ljava/lang/String;
 
@@ -1769,7 +1737,6 @@
 
 .method markAsVoiceMail(Ljava/lang/String;)Lcom/android/internal/telephony/CallerInfo;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x1
 
@@ -1807,7 +1774,6 @@
 
 .method public removeUserData(Ljava/lang/String;)Ljava/lang/Object;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/internal/telephony/CallerInfo;->mMapUserData:Ljava/util/HashMap;
 
@@ -1948,8 +1914,6 @@
 
 .method public updateGeoDescription(Landroid/content/Context;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/internal/telephony/CallerInfo;->phoneNumber:Ljava/lang/String;
 

@@ -39,8 +39,6 @@
 
 .method synthetic constructor <init>(Landroid/media/WFDUibcManager;Landroid/media/WFDUibcManager$1;)V
     .locals 0
-    .param p1    # Landroid/media/WFDUibcManager;
-    .param p2    # Landroid/media/WFDUibcManager$1;
 
     invoke-direct {p0, p1}, Landroid/media/WFDUibcManager$Keyevnt_arrC;-><init>(Landroid/media/WFDUibcManager;)V
 
@@ -49,7 +47,6 @@
 
 .method static synthetic access$300(Landroid/media/WFDUibcManager$Keyevnt_arrC;)I
     .locals 1
-    .param p0    # Landroid/media/WFDUibcManager$Keyevnt_arrC;
 
     iget v0, p0, Landroid/media/WFDUibcManager$Keyevnt_arrC;->mKyCod:I
 
@@ -58,8 +55,6 @@
 
 .method static synthetic access$302(Landroid/media/WFDUibcManager$Keyevnt_arrC;I)I
     .locals 0
-    .param p0    # Landroid/media/WFDUibcManager$Keyevnt_arrC;
-    .param p1    # I
 
     iput p1, p0, Landroid/media/WFDUibcManager$Keyevnt_arrC;->mKyCod:I
 
@@ -68,7 +63,6 @@
 
 .method static synthetic access$400(Landroid/media/WFDUibcManager$Keyevnt_arrC;)J
     .locals 2
-    .param p0    # Landroid/media/WFDUibcManager$Keyevnt_arrC;
 
     iget-wide v0, p0, Landroid/media/WFDUibcManager$Keyevnt_arrC;->mKyDwnTime:J
 
@@ -77,8 +71,6 @@
 
 .method static synthetic access$402(Landroid/media/WFDUibcManager$Keyevnt_arrC;J)J
     .locals 0
-    .param p0    # Landroid/media/WFDUibcManager$Keyevnt_arrC;
-    .param p1    # J
 
     iput-wide p1, p0, Landroid/media/WFDUibcManager$Keyevnt_arrC;->mKyDwnTime:J
 
@@ -87,7 +79,6 @@
 
 .method static synthetic access$500(Landroid/media/WFDUibcManager$Keyevnt_arrC;)I
     .locals 1
-    .param p0    # Landroid/media/WFDUibcManager$Keyevnt_arrC;
 
     iget v0, p0, Landroid/media/WFDUibcManager$Keyevnt_arrC;->mRepCnt:I
 
@@ -96,8 +87,6 @@
 
 .method static synthetic access$502(Landroid/media/WFDUibcManager$Keyevnt_arrC;I)I
     .locals 0
-    .param p0    # Landroid/media/WFDUibcManager$Keyevnt_arrC;
-    .param p1    # I
 
     iput p1, p0, Landroid/media/WFDUibcManager$Keyevnt_arrC;->mRepCnt:I
 
@@ -106,7 +95,6 @@
 
 .method static synthetic access$508(Landroid/media/WFDUibcManager$Keyevnt_arrC;)I
     .locals 2
-    .param p0    # Landroid/media/WFDUibcManager$Keyevnt_arrC;
 
     iget v0, p0, Landroid/media/WFDUibcManager$Keyevnt_arrC;->mRepCnt:I
 
@@ -119,7 +107,6 @@
 
 .method static synthetic access$600(Landroid/media/WFDUibcManager$Keyevnt_arrC;)I
     .locals 1
-    .param p0    # Landroid/media/WFDUibcManager$Keyevnt_arrC;
 
     iget v0, p0, Landroid/media/WFDUibcManager$Keyevnt_arrC;->mKyFlag:I
 
@@ -128,8 +115,6 @@
 
 .method static synthetic access$602(Landroid/media/WFDUibcManager$Keyevnt_arrC;I)I
     .locals 0
-    .param p0    # Landroid/media/WFDUibcManager$Keyevnt_arrC;
-    .param p1    # I
 
     iput p1, p0, Landroid/media/WFDUibcManager$Keyevnt_arrC;->mKyFlag:I
 
@@ -138,8 +123,6 @@
 
 .method static synthetic access$676(Landroid/media/WFDUibcManager$Keyevnt_arrC;I)I
     .locals 1
-    .param p0    # Landroid/media/WFDUibcManager$Keyevnt_arrC;
-    .param p1    # I
 
     iget v0, p0, Landroid/media/WFDUibcManager$Keyevnt_arrC;->mKyFlag:I
 

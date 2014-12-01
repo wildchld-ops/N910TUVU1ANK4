@@ -26,7 +26,6 @@
 
 .method public static bytesPerSampleForColorspace(I)I
     .locals 3
-    .param p0    # I
 
     const/4 v0, 0x3
 
@@ -87,7 +86,6 @@
 
 .method public static create(I)Landroid/filterfw/core/MutableFrameFormat;
     .locals 2
-    .param p0    # I
 
     const/4 v1, 0x0
 
@@ -104,8 +102,6 @@
 
 .method public static create(II)Landroid/filterfw/core/MutableFrameFormat;
     .locals 2
-    .param p0    # I
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -122,10 +118,6 @@
 
 .method public static create(IIII)Landroid/filterfw/core/MutableFrameFormat;
     .locals 1
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     invoke-static {p2}, Landroid/filterfw/format/ImageFormat;->bytesPerSampleForColorspace(I)I
 
@@ -140,11 +132,6 @@
 
 .method public static create(IIIII)Landroid/filterfw/core/MutableFrameFormat;
     .locals 3
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     new-instance v0, Landroid/filterfw/core/MutableFrameFormat;
 

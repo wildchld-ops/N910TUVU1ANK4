@@ -868,8 +868,6 @@
 
 .method public SetResourceInfo(Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     sput-object p1, Lcom/sensoryinc/fluentsoftsdk/SensoryUDTSIDEngine;->m_strResourceDir:Ljava/lang/String;
 
@@ -880,7 +878,6 @@
 
 .method public SetSessionValueFPSV(J)V
     .locals 3
-    .param p1    # J
 
     const-string v0, "SensoryUDTSIDEngine"
 
@@ -911,7 +908,6 @@
 
 .method public SetSessionValueUDT(J)V
     .locals 3
-    .param p1    # J
 
     const-string v0, "SensoryUDTSIDEngine"
 
@@ -942,7 +938,6 @@
 
 .method public SetVersion(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const-string v1, "\\."
 
@@ -1069,8 +1064,6 @@
 
 .method public checkResultEnroll(SS)I
     .locals 9
-    .param p1    # S
-    .param p2    # S
 
     const v8, 0xffff
 
@@ -1337,9 +1330,6 @@
 
 .method public consistencyCheckEnroll(S[SI)I
     .locals 9
-    .param p1    # S
-    .param p2    # [S
-    .param p3    # I
 
     const/4 v6, 0x1
 
@@ -1487,8 +1477,6 @@
 
 .method public deleteModel(Ljava/lang/String;S)I
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # S
 
     const-string v1, "SensoryUDTSIDEngine"
 
@@ -1563,11 +1551,6 @@
 
 .method public doCombineModel(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
 
     const/4 v3, 0x1
 
@@ -1764,8 +1747,6 @@
 
 .method public doEnrollModel(Ljava/lang/String;S)I
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # S
 
     const/4 v4, 0x1
 
@@ -1919,8 +1900,6 @@
 
 .method public loadModels(Ljava/lang/String;S)I
     .locals 13
-    .param p1    # Ljava/lang/String;
-    .param p2    # S
 
     const-wide/16 v10, 0x0
 
@@ -2343,8 +2322,6 @@
 
 .method public processEnroll([SI)I
     .locals 7
-    .param p1    # [S
-    .param p2    # I
 
     const/4 v2, 0x2
 
@@ -2447,10 +2424,6 @@
 
 .method public processVerify([SILjava/lang/String;[S)I
     .locals 9
-    .param p1    # [S
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # [S
 
     const/4 v8, 0x0
 
@@ -2559,8 +2532,6 @@
 
 .method public setSessionValue(JJ)V
     .locals 3
-    .param p1    # J
-    .param p3    # J
 
     const-string v0, "SensoryUDTSIDEngine"
 

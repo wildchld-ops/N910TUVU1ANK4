@@ -216,7 +216,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -227,8 +226,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -239,9 +236,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v4, 0x0
 
@@ -380,7 +374,6 @@
 
 .method static synthetic access$100(Ljava/lang/String;)V
     .locals 0
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Landroid/widget/GridLayout;->handleInvalidParams(Ljava/lang/String;)V
 
@@ -389,8 +382,6 @@
 
 .method static adjust(II)I
     .locals 2
-    .param p0    # I
-    .param p1    # I
 
     add-int v0, p0, p1
 
@@ -460,7 +451,6 @@
 
 .method static canStretch(I)Z
     .locals 1
-    .param p0    # I
 
     and-int/lit8 v0, p0, 0x2
 
@@ -479,8 +469,6 @@
 
 .method private checkLayoutParams(Landroid/widget/GridLayout$LayoutParams;Z)V
     .locals 8
-    .param p1    # Landroid/widget/GridLayout$LayoutParams;
-    .param p2    # Z
 
     const/high16 v7, -0x80000000
 
@@ -626,9 +614,6 @@
 
 .method private static clip(Landroid/widget/GridLayout$Interval;ZI)I
     .locals 3
-    .param p0    # Landroid/widget/GridLayout$Interval;
-    .param p1    # Z
-    .param p2    # I
 
     invoke-virtual {p0}, Landroid/widget/GridLayout$Interval;->size()I
 
@@ -758,8 +743,6 @@
 
 .method private static createSwitchingAlignment(Landroid/widget/GridLayout$Alignment;Landroid/widget/GridLayout$Alignment;)Landroid/widget/GridLayout$Alignment;
     .locals 1
-    .param p0    # Landroid/widget/GridLayout$Alignment;
-    .param p1    # Landroid/widget/GridLayout$Alignment;
 
     new-instance v0, Landroid/widget/GridLayout$5;
 
@@ -770,12 +753,6 @@
 
 .method private drawLine(Landroid/graphics/Canvas;IIIILandroid/graphics/Paint;)V
     .locals 7
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Landroid/graphics/Paint;
 
     invoke-virtual {p0}, Landroid/view/View;->isLayoutRtl()Z
 
@@ -828,10 +805,6 @@
 
 .method private static fits([IIII)Z
     .locals 3
-    .param p0    # [I
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v1, 0x0
 
@@ -865,8 +838,6 @@
 
 .method static getAlignment(IZ)Landroid/widget/GridLayout$Alignment;
     .locals 4
-    .param p0    # I
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -958,10 +929,6 @@
 
 .method private getDefaultMargin(Landroid/view/View;Landroid/widget/GridLayout$LayoutParams;ZZ)I
     .locals 8
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/widget/GridLayout$LayoutParams;
-    .param p3    # Z
-    .param p4    # Z
 
     const/4 v1, 0x1
 
@@ -1055,9 +1022,6 @@
 
 .method private getDefaultMargin(Landroid/view/View;ZZ)I
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # Z
-    .param p3    # Z
 
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -1082,10 +1046,6 @@
 
 .method private getDefaultMargin(Landroid/view/View;ZZZ)I
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Z
-    .param p3    # Z
-    .param p4    # Z
 
     invoke-direct {p0, p1, p3, p4}, Landroid/widget/GridLayout;->getDefaultMargin(Landroid/view/View;ZZ)I
 
@@ -1096,9 +1056,6 @@
 
 .method private getMargin(Landroid/view/View;ZZ)I
     .locals 7
-    .param p1    # Landroid/view/View;
-    .param p2    # Z
-    .param p3    # Z
 
     iget v5, p0, Landroid/widget/GridLayout;->mAlignmentMode:I
 
@@ -1173,8 +1130,6 @@
 
 .method private getMeasurement(Landroid/view/View;Z)I
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Z
 
     if-eqz p2, :cond_0
 
@@ -1195,8 +1150,6 @@
 
 .method private getTotalMargin(Landroid/view/View;Z)I
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # Z
 
     const/4 v0, 0x1
 
@@ -1217,7 +1170,6 @@
 
 .method private static handleInvalidParams(Ljava/lang/String;)V
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -1289,8 +1241,6 @@
 
 .method static max2([II)I
     .locals 4
-    .param p0    # [I
-    .param p1    # I
 
     move v2, p1
 
@@ -1317,11 +1267,6 @@
 
 .method private measureChildWithMargins2(Landroid/view/View;IIII)V
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     const/4 v2, 0x1
 
@@ -1350,9 +1295,6 @@
 
 .method private measureChildrenWithMargins(IIZ)V
     .locals 22
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     const/16 v17, 0x0
 
@@ -1544,10 +1486,6 @@
 
 .method private static procrusteanFill([IIII)V
     .locals 3
-    .param p0    # [I
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     array-length v0, p0
 
@@ -1566,11 +1504,6 @@
 
 .method private static setCellGroup(Landroid/widget/GridLayout$LayoutParams;IIII)V
     .locals 2
-    .param p0    # Landroid/widget/GridLayout$LayoutParams;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     new-instance v0, Landroid/widget/GridLayout$Interval;
 
@@ -1593,7 +1526,6 @@
 
 .method public static spec(I)Landroid/widget/GridLayout$Spec;
     .locals 1
-    .param p0    # I
 
     const/4 v0, 0x1
 
@@ -1606,8 +1538,6 @@
 
 .method public static spec(II)Landroid/widget/GridLayout$Spec;
     .locals 1
-    .param p0    # I
-    .param p1    # I
 
     sget-object v0, Landroid/widget/GridLayout;->UNDEFINED_ALIGNMENT:Landroid/widget/GridLayout$Alignment;
 
@@ -1620,9 +1550,6 @@
 
 .method public static spec(IILandroid/widget/GridLayout$Alignment;)Landroid/widget/GridLayout$Spec;
     .locals 6
-    .param p0    # I
-    .param p1    # I
-    .param p2    # Landroid/widget/GridLayout$Alignment;
 
     new-instance v0, Landroid/widget/GridLayout$Spec;
 
@@ -1653,8 +1580,6 @@
 
 .method public static spec(ILandroid/widget/GridLayout$Alignment;)Landroid/widget/GridLayout$Spec;
     .locals 1
-    .param p0    # I
-    .param p1    # Landroid/widget/GridLayout$Alignment;
 
     const/4 v0, 0x1
 
@@ -1885,7 +1810,6 @@
 # virtual methods
 .method protected checkLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Z
     .locals 4
-    .param p1    # Landroid/view/ViewGroup$LayoutParams;
 
     const/4 v2, 0x1
 
@@ -1934,7 +1858,6 @@
 
 .method public bridge synthetic generateLayoutParams(Landroid/util/AttributeSet;)Landroid/view/ViewGroup$LayoutParams;
     .locals 1
-    .param p1    # Landroid/util/AttributeSet;
 
     invoke-virtual {p0, p1}, Landroid/widget/GridLayout;->generateLayoutParams(Landroid/util/AttributeSet;)Landroid/widget/GridLayout$LayoutParams;
 
@@ -1945,7 +1868,6 @@
 
 .method protected bridge synthetic generateLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Landroid/view/ViewGroup$LayoutParams;
     .locals 1
-    .param p1    # Landroid/view/ViewGroup$LayoutParams;
 
     invoke-virtual {p0, p1}, Landroid/widget/GridLayout;->generateLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Landroid/widget/GridLayout$LayoutParams;
 
@@ -1956,7 +1878,6 @@
 
 .method public generateLayoutParams(Landroid/util/AttributeSet;)Landroid/widget/GridLayout$LayoutParams;
     .locals 2
-    .param p1    # Landroid/util/AttributeSet;
 
     new-instance v0, Landroid/widget/GridLayout$LayoutParams;
 
@@ -1971,7 +1892,6 @@
 
 .method protected generateLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Landroid/widget/GridLayout$LayoutParams;
     .locals 1
-    .param p1    # Landroid/view/ViewGroup$LayoutParams;
 
     new-instance v0, Landroid/widget/GridLayout$LayoutParams;
 
@@ -1982,8 +1902,6 @@
 
 .method final getAlignment(Landroid/widget/GridLayout$Alignment;Z)Landroid/widget/GridLayout$Alignment;
     .locals 1
-    .param p1    # Landroid/widget/GridLayout$Alignment;
-    .param p2    # Z
 
     sget-object v0, Landroid/widget/GridLayout;->UNDEFINED_ALIGNMENT:Landroid/widget/GridLayout$Alignment;
 
@@ -2027,7 +1945,6 @@
 
 .method final getLayoutParams(Landroid/view/View;)Landroid/widget/GridLayout$LayoutParams;
     .locals 1
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
@@ -2040,9 +1957,6 @@
 
 .method getMargin1(Landroid/view/View;ZZ)I
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # Z
-    .param p3    # Z
 
     invoke-virtual {p0, p1}, Landroid/widget/GridLayout;->getLayoutParams(Landroid/view/View;)Landroid/widget/GridLayout$LayoutParams;
 
@@ -2086,8 +2000,6 @@
 
 .method final getMeasurementIncludingMargin(Landroid/view/View;Z)I
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # Z
 
     invoke-virtual {p1}, Landroid/view/View;->getVisibility()I
 
@@ -2178,9 +2090,6 @@
 
 .method protected onChildVisibilityChanged(Landroid/view/View;II)V
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # I
 
     const/16 v0, 0x8
 
@@ -2199,7 +2108,6 @@
 
 .method protected onDebugDraw(Landroid/graphics/Canvas;)V
     .locals 20
-    .param p1    # Landroid/graphics/Canvas;
 
     new-instance v7, Landroid/graphics/Paint;
 
@@ -2368,8 +2276,6 @@
 
 .method protected onDebugDrawMargins(Landroid/graphics/Canvas;Landroid/graphics/Paint;)V
     .locals 9
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # Landroid/graphics/Paint;
 
     const/4 v8, 0x1
 
@@ -2422,7 +2328,6 @@
 
 .method public onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
     .locals 1
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
 
     invoke-super {p0, p1}, Landroid/view/View;->onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
 
@@ -2439,7 +2344,6 @@
 
 .method public onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
     .locals 1
-    .param p1    # Landroid/view/accessibility/AccessibilityNodeInfo;
 
     invoke-super {p0, p1}, Landroid/view/View;->onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
 
@@ -2456,11 +2360,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 51
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-direct/range {p0 .. p0}, Landroid/widget/GridLayout;->consistencyCheck()V
 
@@ -2881,8 +2780,6 @@
 
 .method protected onMeasure(II)V
     .locals 11
-    .param p1    # I
-    .param p2    # I
 
     const/4 v10, 0x0
 
@@ -2997,8 +2894,6 @@
 
 .method protected onSetLayoutParams(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/ViewGroup$LayoutParams;
 
     invoke-super {p0, p1, p2}, Landroid/view/ViewGroup;->onSetLayoutParams(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
@@ -3020,7 +2915,6 @@
 
 .method protected onViewAdded(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     invoke-super {p0, p1}, Landroid/view/ViewGroup;->onViewAdded(Landroid/view/View;)V
 
@@ -3031,7 +2925,6 @@
 
 .method protected onViewRemoved(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     invoke-super {p0, p1}, Landroid/view/ViewGroup;->onViewRemoved(Landroid/view/View;)V
 
@@ -3052,7 +2945,6 @@
 
 .method public setAlignmentMode(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/widget/GridLayout;->mAlignmentMode:I
 
@@ -3063,7 +2955,6 @@
 
 .method public setColumnCount(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/widget/GridLayout;->mHorizontalAxis:Landroid/widget/GridLayout$Axis;
 
@@ -3078,7 +2969,6 @@
 
 .method public setColumnOrderPreserved(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Landroid/widget/GridLayout;->mHorizontalAxis:Landroid/widget/GridLayout$Axis;
 
@@ -3093,7 +2983,6 @@
 
 .method public setOrientation(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/widget/GridLayout;->mOrientation:I
 
@@ -3111,7 +3000,6 @@
 
 .method public setPrinter(Landroid/util/Printer;)V
     .locals 0
-    .param p1    # Landroid/util/Printer;
 
     if-nez p1, :cond_0
 
@@ -3125,7 +3013,6 @@
 
 .method public setRowCount(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/widget/GridLayout;->mVerticalAxis:Landroid/widget/GridLayout$Axis;
 
@@ -3140,7 +3027,6 @@
 
 .method public setRowOrderPreserved(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Landroid/widget/GridLayout;->mVerticalAxis:Landroid/widget/GridLayout$Axis;
 
@@ -3155,7 +3041,6 @@
 
 .method public setUseDefaultMargins(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/widget/GridLayout;->mUseDefaultMargins:Z
 

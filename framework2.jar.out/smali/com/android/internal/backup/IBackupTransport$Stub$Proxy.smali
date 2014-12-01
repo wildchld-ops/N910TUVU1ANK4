@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -45,7 +44,6 @@
 
 .method public clearBackupData(Landroid/content/pm/PackageInfo;)I
     .locals 6
-    .param p1    # Landroid/content/pm/PackageInfo;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -462,7 +460,6 @@
 
 .method public getRestoreData(Landroid/os/ParcelFileDescriptor;)I
     .locals 6
-    .param p1    # Landroid/os/ParcelFileDescriptor;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -696,8 +693,6 @@
 
 .method public performBackup(Landroid/content/pm/PackageInfo;Landroid/os/ParcelFileDescriptor;)I
     .locals 6
-    .param p1    # Landroid/content/pm/PackageInfo;
-    .param p2    # Landroid/os/ParcelFileDescriptor;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -846,8 +841,6 @@
 
 .method public startRestore(J[Landroid/content/pm/PackageInfo;)I
     .locals 6
-    .param p1    # J
-    .param p3    # [Landroid/content/pm/PackageInfo;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

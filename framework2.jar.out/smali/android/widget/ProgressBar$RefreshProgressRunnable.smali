@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Landroid/widget/ProgressBar;Landroid/widget/ProgressBar$1;)V
     .locals 0
-    .param p1    # Landroid/widget/ProgressBar;
-    .param p2    # Landroid/widget/ProgressBar$1;
 
     invoke-direct {p0, p1}, Landroid/widget/ProgressBar$RefreshProgressRunnable;-><init>(Landroid/widget/ProgressBar;)V
 

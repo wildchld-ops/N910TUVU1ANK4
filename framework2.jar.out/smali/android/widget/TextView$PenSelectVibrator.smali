@@ -221,7 +221,6 @@
 # virtual methods
 .method playVibrator(I)V
     .locals 4
-    .param p1    # I
 
     const/4 v2, 0x0
 

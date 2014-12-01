@@ -84,7 +84,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/high16 v0, 0x10a0000
 
@@ -97,9 +96,6 @@
 
 .method public constructor <init>(Landroid/content/Context;II)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v1, 0x1
 
@@ -161,8 +157,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/widget/RemoteViews$OnClickHandler;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/widget/RemoteViews$OnClickHandler;
 
     const/high16 v0, 0x10a0000
 
@@ -272,9 +266,6 @@
 
 .method public static getDefaultPaddingForWidget(Landroid/content/Context;Landroid/content/ComponentName;Landroid/graphics/Rect;)Landroid/graphics/Rect;
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Landroid/graphics/Rect;
 
     const/4 v4, 0x0
 
@@ -361,7 +352,6 @@
 
 .method private getRemoteContext(Landroid/widget/RemoteViews;)Landroid/content/Context;
     .locals 5
-    .param p1    # Landroid/widget/RemoteViews;
 
     invoke-virtual {p1}, Landroid/widget/RemoteViews;->getPackage()Ljava/lang/String;
 
@@ -565,9 +555,6 @@
 
 .method protected drawChild(Landroid/graphics/Canvas;Landroid/view/View;J)Z
     .locals 1
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # Landroid/view/View;
-    .param p3    # J
 
     invoke-super {p0, p1, p2, p3, p4}, Landroid/widget/FrameLayout;->drawChild(Landroid/graphics/Canvas;Landroid/view/View;J)Z
 
@@ -578,7 +565,6 @@
 
 .method public bridge synthetic generateLayoutParams(Landroid/util/AttributeSet;)Landroid/view/ViewGroup$LayoutParams;
     .locals 1
-    .param p1    # Landroid/util/AttributeSet;
 
     invoke-virtual {p0, p1}, Landroid/appwidget/AppWidgetHostView;->generateLayoutParams(Landroid/util/AttributeSet;)Landroid/widget/FrameLayout$LayoutParams;
 
@@ -589,7 +575,6 @@
 
 .method public generateLayoutParams(Landroid/util/AttributeSet;)Landroid/widget/FrameLayout$LayoutParams;
     .locals 2
-    .param p1    # Landroid/util/AttributeSet;
 
     iget-object v1, p0, Landroid/appwidget/AppWidgetHostView;->mRemoteContext:Landroid/content/Context;
 
@@ -837,7 +822,6 @@
 
 .method public onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
     .locals 1
-    .param p1    # Landroid/view/accessibility/AccessibilityNodeInfo;
 
     invoke-super {p0, p1}, Landroid/widget/FrameLayout;->onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
 
@@ -854,7 +838,6 @@
 
 .method protected prepareView(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     const/4 v1, -0x1
 
@@ -882,7 +865,6 @@
 
 .method resetAppWidget(Landroid/appwidget/AppWidgetProviderInfo;)V
     .locals 1
-    .param p1    # Landroid/appwidget/AppWidgetProviderInfo;
 
     iput-object p1, p0, Landroid/appwidget/AppWidgetHostView;->mInfo:Landroid/appwidget/AppWidgetProviderInfo;
 
@@ -899,8 +881,6 @@
 
 .method public setAppWidget(ILandroid/appwidget/AppWidgetProviderInfo;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/appwidget/AppWidgetProviderInfo;
 
     iput p1, p0, Landroid/appwidget/AppWidgetHostView;->mAppWidgetId:I
 
@@ -938,7 +918,6 @@
 
 .method public setOnClickHandler(Landroid/widget/RemoteViews$OnClickHandler;)V
     .locals 0
-    .param p1    # Landroid/widget/RemoteViews$OnClickHandler;
 
     iput-object p1, p0, Landroid/appwidget/AppWidgetHostView;->mOnClickHandler:Landroid/widget/RemoteViews$OnClickHandler;
 
@@ -947,7 +926,6 @@
 
 .method public setUserId(I)V
     .locals 1
-    .param p1    # I
 
     new-instance v0, Landroid/os/UserHandle;
 
@@ -960,7 +938,6 @@
 
 .method public updateAppWidget(Landroid/widget/RemoteViews;)V
     .locals 10
-    .param p1    # Landroid/widget/RemoteViews;
 
     const/4 v9, 0x3
 
@@ -1332,7 +1309,6 @@
 
 .method public updateAppWidgetOptions(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     iget-object v0, p0, Landroid/appwidget/AppWidgetHostView;->mContext:Landroid/content/Context;
 
@@ -1349,11 +1325,6 @@
 
 .method public updateAppWidgetSize(Landroid/os/Bundle;IIII)V
     .locals 7
-    .param p1    # Landroid/os/Bundle;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     const/4 v6, 0x0
 
@@ -1376,12 +1347,6 @@
 
 .method public updateAppWidgetSize(Landroid/os/Bundle;IIIIZ)V
     .locals 13
-    .param p1    # Landroid/os/Bundle;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Z
 
     if-nez p1, :cond_0
 
@@ -1557,7 +1522,6 @@
 
 .method viewDataChanged(I)V
     .locals 6
-    .param p1    # I
 
     iget-boolean v4, p0, Landroid/appwidget/AppWidgetHostView;->mNoProductShip:Z
 

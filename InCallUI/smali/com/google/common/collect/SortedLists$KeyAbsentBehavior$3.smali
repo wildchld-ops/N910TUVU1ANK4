@@ -29,7 +29,6 @@
 # virtual methods
 .method public resultIndex(I)I
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",

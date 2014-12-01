@@ -36,8 +36,6 @@
 # virtual methods
 .method public onMove(Landroid/graphics/Rect;I)V
     .locals 3
-    .param p1    # Landroid/graphics/Rect;
-    .param p2    # I
 
     if-nez p2, :cond_0
 

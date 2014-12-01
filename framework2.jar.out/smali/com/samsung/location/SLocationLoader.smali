@@ -22,8 +22,6 @@
 
 .method private static getClassFromLib(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/Class;
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Throwable;
@@ -51,7 +49,6 @@
 
 .method public static getSLocationManager(Landroid/os/IBinder;)Ljava/lang/Object;
     .locals 2
-    .param p0    # Landroid/os/IBinder;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Throwable;
@@ -71,7 +68,6 @@
 
 .method public static getSLocationService(Landroid/content/Context;)Landroid/os/IBinder;
     .locals 8
-    .param p0    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Throwable;
@@ -118,8 +114,6 @@
 
 .method public static systemReady(Landroid/content/Context;Landroid/os/IBinder;)V
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/os/IBinder;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Throwable;

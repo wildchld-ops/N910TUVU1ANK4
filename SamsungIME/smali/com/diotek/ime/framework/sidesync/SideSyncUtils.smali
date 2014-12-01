@@ -14,7 +14,6 @@
 
 .method public static isInputEngineNeed(I)Z
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -38,7 +37,6 @@
 
 .method public static isThisKeyEnable(I)Z
     .locals 1
-    .param p0    # I
 
     sparse-switch p0, :sswitch_data_0
 

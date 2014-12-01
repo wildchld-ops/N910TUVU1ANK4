@@ -40,8 +40,6 @@
 
 .method static synthetic access$002(Landroid/inputmethodservice/AbstractInputMethodService;Z)Z
     .locals 0
-    .param p0    # Landroid/inputmethodservice/AbstractInputMethodService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/inputmethodservice/AbstractInputMethodService;->mIsPressBtnSIPOnOff:Z
 
@@ -52,9 +50,6 @@
 # virtual methods
 .method protected dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     return-void
 .end method
@@ -77,7 +72,6 @@
 
 .method public final onBind(Landroid/content/Intent;)Landroid/os/IBinder;
     .locals 2
-    .param p1    # Landroid/content/Intent;
 
     iget-object v0, p0, Landroid/inputmethodservice/AbstractInputMethodService;->mInputMethod:Landroid/view/inputmethod/InputMethod;
 
@@ -107,7 +101,6 @@
 
 .method public onGenericMotionEvent(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v0, 0x0
 
@@ -116,7 +109,6 @@
 
 .method public onTrackballEvent(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v0, 0x0
 
@@ -125,7 +117,6 @@
 
 .method public setPressBtnSIPOnOff(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/inputmethodservice/AbstractInputMethodService;->mIsPressBtnSIPOnOff:Z
 

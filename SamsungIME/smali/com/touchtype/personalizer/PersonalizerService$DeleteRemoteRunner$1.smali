@@ -46,8 +46,6 @@
 
 .method public downloadProgress(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     return-void
 .end method
@@ -223,8 +221,6 @@
 
 .method public serverProgress(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     return-void
 .end method

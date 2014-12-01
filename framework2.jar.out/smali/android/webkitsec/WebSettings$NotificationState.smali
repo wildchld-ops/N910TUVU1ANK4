@@ -103,7 +103,6 @@
 
 .method public static valueOf(Ljava/lang/String;)Landroid/webkitsec/WebSettings$NotificationState;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-class v0, Landroid/webkitsec/WebSettings$NotificationState;
 

@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -57,7 +56,6 @@
 
 .method public setEncryptionRequired(Z)Landroid/security/KeyStoreParameter$Builder;
     .locals 1
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 

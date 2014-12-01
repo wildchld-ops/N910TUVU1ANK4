@@ -85,7 +85,6 @@
 
 .method public contains(Ljava/lang/Object;)Z
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     iget-object v0, p0, Lcom/google/common/collect/ImmutableSortedAsList;->backingSet:Lcom/google/common/collect/ImmutableSortedSet;
 
@@ -108,7 +107,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     iget-object v0, p0, Lcom/google/common/collect/ImmutableSortedAsList;->backingList:Lcom/google/common/collect/ImmutableList;
 
@@ -121,7 +119,6 @@
 
 .method public get(I)Ljava/lang/Object;
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)TE;"
@@ -151,7 +148,6 @@
 
 .method public indexOf(Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     iget-object v0, p0, Lcom/google/common/collect/ImmutableSortedAsList;->backingSet:Lcom/google/common/collect/ImmutableSortedSet;
 
@@ -205,7 +201,6 @@
 
 .method public lastIndexOf(Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     iget-object v0, p0, Lcom/google/common/collect/ImmutableSortedAsList;->backingSet:Lcom/google/common/collect/ImmutableSortedSet;
 
@@ -237,7 +232,6 @@
 
 .method public listIterator(I)Lcom/google/common/collect/UnmodifiableListIterator;
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -267,7 +261,6 @@
 
 .method public bridge synthetic listIterator(I)Ljava/util/ListIterator;
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/google/common/collect/ImmutableSortedAsList;->listIterator(I)Lcom/google/common/collect/UnmodifiableListIterator;
 
@@ -290,8 +283,6 @@
 
 .method public subList(II)Lcom/google/common/collect/ImmutableList;
     .locals 3
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II)",
@@ -341,8 +332,6 @@
 
 .method public bridge synthetic subList(II)Ljava/util/List;
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0, p1, p2}, Lcom/google/common/collect/ImmutableSortedAsList;->subList(II)Lcom/google/common/collect/ImmutableList;
 

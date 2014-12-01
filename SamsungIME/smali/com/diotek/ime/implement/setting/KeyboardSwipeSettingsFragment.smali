@@ -48,8 +48,6 @@
 
 .method static synthetic access$000(Lcom/diotek/ime/implement/setting/KeyboardSwipeSettingsFragment;Landroid/preference/Preference;)V
     .locals 0
-    .param p0    # Lcom/diotek/ime/implement/setting/KeyboardSwipeSettingsFragment;
-    .param p1    # Landroid/preference/Preference;
 
     invoke-direct {p0, p1}, Lcom/diotek/ime/implement/setting/KeyboardSwipeSettingsFragment;->changeSwipe(Landroid/preference/Preference;)V
 
@@ -58,7 +56,6 @@
 
 .method static synthetic access$100(Lcom/diotek/ime/implement/setting/KeyboardSwipeSettingsFragment;)Lcom/diotek/ime/framework/common/InputManager;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/setting/KeyboardSwipeSettingsFragment;
 
     iget-object v0, p0, Lcom/diotek/ime/implement/setting/KeyboardSwipeSettingsFragment;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -67,7 +64,6 @@
 
 .method private changeSwipe(Landroid/preference/Preference;)V
     .locals 3
-    .param p1    # Landroid/preference/Preference;
 
     const/4 v2, 0x1
 
@@ -164,7 +160,6 @@
 # virtual methods
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 9
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -276,7 +271,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 6
-    .param p1    # Landroid/os/Bundle;
 
     const/16 v5, 0x400
 
@@ -443,9 +437,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 3
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const v1, 0x7f030080
 
@@ -460,7 +451,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 

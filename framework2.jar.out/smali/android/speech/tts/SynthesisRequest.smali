@@ -24,8 +24,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Bundle;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -108,7 +106,6 @@
 
 .method setCallerUid(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/speech/tts/SynthesisRequest;->mCallerUid:I
 
@@ -117,9 +114,6 @@
 
 .method setLanguage(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/speech/tts/SynthesisRequest;->mLanguage:Ljava/lang/String;
 
@@ -132,7 +126,6 @@
 
 .method setPitch(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/speech/tts/SynthesisRequest;->mPitch:I
 
@@ -141,7 +134,6 @@
 
 .method setSpeechRate(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/speech/tts/SynthesisRequest;->mSpeechRate:I
 

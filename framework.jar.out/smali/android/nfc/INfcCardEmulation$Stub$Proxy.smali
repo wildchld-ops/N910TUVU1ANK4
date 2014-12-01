@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -53,8 +52,6 @@
 
 .method public getServices(ILjava/lang/String;)Ljava/util/List;
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -126,9 +123,6 @@
 
 .method public isDefaultServiceForAid(ILandroid/content/ComponentName;Ljava/lang/String;)Z
     .locals 7
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -219,9 +213,6 @@
 
 .method public isDefaultServiceForCategory(ILandroid/content/ComponentName;Ljava/lang/String;)Z
     .locals 7
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -312,8 +303,6 @@
 
 .method public setDefaultForNextTap(ILandroid/content/ComponentName;)Z
     .locals 7
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -402,9 +391,6 @@
 
 .method public setDefaultServiceForCategory(ILandroid/content/ComponentName;Ljava/lang/String;)Z
     .locals 7
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

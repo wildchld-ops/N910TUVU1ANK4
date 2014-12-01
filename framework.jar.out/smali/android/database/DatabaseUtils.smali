@@ -60,8 +60,6 @@
 
 .method public static appendEscapedSQLString(Ljava/lang/StringBuilder;Ljava/lang/String;)V
     .locals 6
-    .param p0    # Ljava/lang/StringBuilder;
-    .param p1    # Ljava/lang/String;
 
     const/16 v5, 0x27
 
@@ -110,8 +108,6 @@
 
 .method public static appendSelectionArgs([Ljava/lang/String;[Ljava/lang/String;)[Ljava/lang/String;
     .locals 4
-    .param p0    # [Ljava/lang/String;
-    .param p1    # [Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -151,8 +147,6 @@
 
 .method public static final appendValueToSql(Ljava/lang/StringBuilder;Ljava/lang/Object;)V
     .locals 2
-    .param p0    # Ljava/lang/StringBuilder;
-    .param p1    # Ljava/lang/Object;
 
     if-nez p1, :cond_0
 
@@ -203,9 +197,6 @@
 
 .method public static bindObjectToProgram(Landroid/database/sqlite/SQLiteProgram;ILjava/lang/Object;)V
     .locals 3
-    .param p0    # Landroid/database/sqlite/SQLiteProgram;
-    .param p1    # I
-    .param p2    # Ljava/lang/Object;
 
     if-nez p2, :cond_0
 
@@ -302,9 +293,6 @@
 
 .method public static blobFileDescriptorForQuery(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;[Ljava/lang/String;)Landroid/os/ParcelFileDescriptor;
     .locals 2
-    .param p0    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Landroid/database/sqlite/SQLiteDatabase;->compileStatement(Ljava/lang/String;)Landroid/database/sqlite/SQLiteStatement;
 
@@ -331,8 +319,6 @@
 
 .method public static blobFileDescriptorForQuery(Landroid/database/sqlite/SQLiteStatement;[Ljava/lang/String;)Landroid/os/ParcelFileDescriptor;
     .locals 1
-    .param p0    # Landroid/database/sqlite/SQLiteStatement;
-    .param p1    # [Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Landroid/database/sqlite/SQLiteStatement;->bindAllArgsAsStrings([Ljava/lang/String;)V
 
@@ -345,8 +331,6 @@
 
 .method public static concatenateWhere(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -408,10 +392,6 @@
 
 .method public static createDbFromSqlStatements(Landroid/content/Context;Ljava/lang/String;ILjava/lang/String;)V
     .locals 8
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     const/4 v6, 0x0
 
@@ -464,10 +444,6 @@
 
 .method public static cursorDoubleToContentValues(Landroid/database/Cursor;Ljava/lang/String;Landroid/content/ContentValues;Ljava/lang/String;)V
     .locals 3
-    .param p0    # Landroid/database/Cursor;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/ContentValues;
-    .param p3    # Ljava/lang/String;
 
     invoke-interface {p0, p1}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
 
@@ -504,9 +480,6 @@
 
 .method public static cursorDoubleToContentValuesIfPresent(Landroid/database/Cursor;Landroid/content/ContentValues;Ljava/lang/String;)V
     .locals 3
-    .param p0    # Landroid/database/Cursor;
-    .param p1    # Landroid/content/ContentValues;
-    .param p2    # Ljava/lang/String;
 
     invoke-interface {p0, p2}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
 
@@ -538,9 +511,6 @@
 
 .method public static cursorDoubleToCursorValues(Landroid/database/Cursor;Ljava/lang/String;Landroid/content/ContentValues;)V
     .locals 0
-    .param p0    # Landroid/database/Cursor;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/ContentValues;
 
     invoke-static {p0, p1, p2, p1}, Landroid/database/DatabaseUtils;->cursorDoubleToContentValues(Landroid/database/Cursor;Ljava/lang/String;Landroid/content/ContentValues;Ljava/lang/String;)V
 
@@ -549,9 +519,6 @@
 
 .method public static cursorFillWindow(Landroid/database/Cursor;ILandroid/database/CursorWindow;)V
     .locals 8
-    .param p0    # Landroid/database/Cursor;
-    .param p1    # I
-    .param p2    # Landroid/database/CursorWindow;
 
     if-ltz p1, :cond_0
 
@@ -714,9 +681,6 @@
 
 .method public static cursorFloatToContentValuesIfPresent(Landroid/database/Cursor;Landroid/content/ContentValues;Ljava/lang/String;)V
     .locals 2
-    .param p0    # Landroid/database/Cursor;
-    .param p1    # Landroid/content/ContentValues;
-    .param p2    # Ljava/lang/String;
 
     invoke-interface {p0, p2}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
 
@@ -748,9 +712,6 @@
 
 .method public static cursorIntToContentValues(Landroid/database/Cursor;Ljava/lang/String;Landroid/content/ContentValues;)V
     .locals 0
-    .param p0    # Landroid/database/Cursor;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/ContentValues;
 
     invoke-static {p0, p1, p2, p1}, Landroid/database/DatabaseUtils;->cursorIntToContentValues(Landroid/database/Cursor;Ljava/lang/String;Landroid/content/ContentValues;Ljava/lang/String;)V
 
@@ -759,10 +720,6 @@
 
 .method public static cursorIntToContentValues(Landroid/database/Cursor;Ljava/lang/String;Landroid/content/ContentValues;Ljava/lang/String;)V
     .locals 2
-    .param p0    # Landroid/database/Cursor;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/ContentValues;
-    .param p3    # Ljava/lang/String;
 
     invoke-interface {p0, p1}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
 
@@ -799,9 +756,6 @@
 
 .method public static cursorIntToContentValuesIfPresent(Landroid/database/Cursor;Landroid/content/ContentValues;Ljava/lang/String;)V
     .locals 2
-    .param p0    # Landroid/database/Cursor;
-    .param p1    # Landroid/content/ContentValues;
-    .param p2    # Ljava/lang/String;
 
     invoke-interface {p0, p2}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
 
@@ -833,9 +787,6 @@
 
 .method public static cursorLongToContentValues(Landroid/database/Cursor;Ljava/lang/String;Landroid/content/ContentValues;)V
     .locals 0
-    .param p0    # Landroid/database/Cursor;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/ContentValues;
 
     invoke-static {p0, p1, p2, p1}, Landroid/database/DatabaseUtils;->cursorLongToContentValues(Landroid/database/Cursor;Ljava/lang/String;Landroid/content/ContentValues;Ljava/lang/String;)V
 
@@ -844,10 +795,6 @@
 
 .method public static cursorLongToContentValues(Landroid/database/Cursor;Ljava/lang/String;Landroid/content/ContentValues;Ljava/lang/String;)V
     .locals 4
-    .param p0    # Landroid/database/Cursor;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/ContentValues;
-    .param p3    # Ljava/lang/String;
 
     invoke-interface {p0, p1}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
 
@@ -884,9 +831,6 @@
 
 .method public static cursorLongToContentValuesIfPresent(Landroid/database/Cursor;Landroid/content/ContentValues;Ljava/lang/String;)V
     .locals 3
-    .param p0    # Landroid/database/Cursor;
-    .param p1    # Landroid/content/ContentValues;
-    .param p2    # Ljava/lang/String;
 
     invoke-interface {p0, p2}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
 
@@ -918,8 +862,6 @@
 
 .method public static cursorPickFillWindowStartPosition(II)I
     .locals 2
-    .param p0    # I
-    .param p1    # I
 
     div-int/lit8 v0, p1, 0x3
 
@@ -936,8 +878,6 @@
 
 .method public static cursorRowToContentValues(Landroid/database/Cursor;Landroid/content/ContentValues;)V
     .locals 6
-    .param p0    # Landroid/database/Cursor;
-    .param p1    # Landroid/content/ContentValues;
 
     instance-of v4, p0, Landroid/database/AbstractWindowedCursor;
 
@@ -1004,9 +944,6 @@
 
 .method public static cursorShortToContentValuesIfPresent(Landroid/database/Cursor;Landroid/content/ContentValues;Ljava/lang/String;)V
     .locals 2
-    .param p0    # Landroid/database/Cursor;
-    .param p1    # Landroid/content/ContentValues;
-    .param p2    # Ljava/lang/String;
 
     invoke-interface {p0, p2}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
 
@@ -1038,9 +975,6 @@
 
 .method public static cursorStringToContentValues(Landroid/database/Cursor;Ljava/lang/String;Landroid/content/ContentValues;)V
     .locals 0
-    .param p0    # Landroid/database/Cursor;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/ContentValues;
 
     invoke-static {p0, p1, p2, p1}, Landroid/database/DatabaseUtils;->cursorStringToContentValues(Landroid/database/Cursor;Ljava/lang/String;Landroid/content/ContentValues;Ljava/lang/String;)V
 
@@ -1049,10 +983,6 @@
 
 .method public static cursorStringToContentValues(Landroid/database/Cursor;Ljava/lang/String;Landroid/content/ContentValues;Ljava/lang/String;)V
     .locals 1
-    .param p0    # Landroid/database/Cursor;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/ContentValues;
-    .param p3    # Ljava/lang/String;
 
     invoke-interface {p0, p1}, Landroid/database/Cursor;->getColumnIndexOrThrow(Ljava/lang/String;)I
 
@@ -1069,9 +999,6 @@
 
 .method public static cursorStringToContentValuesIfPresent(Landroid/database/Cursor;Landroid/content/ContentValues;Ljava/lang/String;)V
     .locals 2
-    .param p0    # Landroid/database/Cursor;
-    .param p1    # Landroid/content/ContentValues;
-    .param p2    # Ljava/lang/String;
 
     invoke-interface {p0, p2}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
 
@@ -1099,10 +1026,6 @@
 
 .method public static cursorStringToInsertHelper(Landroid/database/Cursor;Ljava/lang/String;Landroid/database/DatabaseUtils$InsertHelper;I)V
     .locals 1
-    .param p0    # Landroid/database/Cursor;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/database/DatabaseUtils$InsertHelper;
-    .param p3    # I
 
     invoke-interface {p0, p1}, Landroid/database/Cursor;->getColumnIndexOrThrow(Ljava/lang/String;)I
 
@@ -1119,7 +1042,6 @@
 
 .method public static dumpCurrentRow(Landroid/database/Cursor;)V
     .locals 1
-    .param p0    # Landroid/database/Cursor;
 
     sget-object v0, Ljava/lang/System;->out:Ljava/io/PrintStream;
 
@@ -1130,8 +1052,6 @@
 
 .method public static dumpCurrentRow(Landroid/database/Cursor;Ljava/io/PrintStream;)V
     .locals 7
-    .param p0    # Landroid/database/Cursor;
-    .param p1    # Ljava/io/PrintStream;
 
     invoke-interface {p0}, Landroid/database/Cursor;->getColumnNames()[Ljava/lang/String;
 
@@ -1235,8 +1155,6 @@
 
 .method public static dumpCurrentRow(Landroid/database/Cursor;Ljava/lang/StringBuilder;)V
     .locals 7
-    .param p0    # Landroid/database/Cursor;
-    .param p1    # Ljava/lang/StringBuilder;
 
     invoke-interface {p0}, Landroid/database/Cursor;->getColumnNames()[Ljava/lang/String;
 
@@ -1346,7 +1264,6 @@
 
 .method public static dumpCurrentRowToString(Landroid/database/Cursor;)Ljava/lang/String;
     .locals 2
-    .param p0    # Landroid/database/Cursor;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -1363,7 +1280,6 @@
 
 .method public static dumpCursor(Landroid/database/Cursor;)V
     .locals 1
-    .param p0    # Landroid/database/Cursor;
 
     sget-object v0, Ljava/lang/System;->out:Ljava/io/PrintStream;
 
@@ -1374,8 +1290,6 @@
 
 .method public static dumpCursor(Landroid/database/Cursor;Ljava/io/PrintStream;)V
     .locals 3
-    .param p0    # Landroid/database/Cursor;
-    .param p1    # Ljava/io/PrintStream;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -1431,8 +1345,6 @@
 
 .method public static dumpCursor(Landroid/database/Cursor;Ljava/lang/StringBuilder;)V
     .locals 3
-    .param p0    # Landroid/database/Cursor;
-    .param p1    # Ljava/lang/StringBuilder;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -1494,7 +1406,6 @@
 
 .method public static dumpCursorToString(Landroid/database/Cursor;)Ljava/lang/String;
     .locals 2
-    .param p0    # Landroid/database/Cursor;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -1511,7 +1422,6 @@
 
 .method public static findRowIdColumnIndex([Ljava/lang/String;)I
     .locals 4
-    .param p0    # [Ljava/lang/String;
 
     array-length v1, p0
 
@@ -1546,7 +1456,6 @@
 
 .method public static getCollationKey(Ljava/lang/String;)Ljava/lang/String;
     .locals 6
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Landroid/database/DatabaseUtils;->getCollationKeyInBytes(Ljava/lang/String;)[B
 
@@ -1580,7 +1489,6 @@
 
 .method private static getCollationKeyInBytes(Ljava/lang/String;)[B
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     sget-object v0, Landroid/database/DatabaseUtils;->mColl:Ljava/text/Collator;
 
@@ -1614,7 +1522,6 @@
 
 .method public static getHexCollationKey(Ljava/lang/String;)Ljava/lang/String;
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Landroid/database/DatabaseUtils;->getCollationKeyInBytes(Ljava/lang/String;)[B
 
@@ -1641,7 +1548,6 @@
 
 .method private static getKeyLen([B)I
     .locals 1
-    .param p0    # [B
 
     array-length v0, p0
 
@@ -1666,7 +1572,6 @@
 
 .method public static getSqlStatementType(Ljava/lang/String;)I
     .locals 6
-    .param p0    # Ljava/lang/String;
 
     const/16 v1, 0x63
 
@@ -1884,7 +1789,6 @@
 
 .method public static getTypeOfObject(Ljava/lang/Object;)I
     .locals 1
-    .param p0    # Ljava/lang/Object;
 
     if-nez p0, :cond_0
 
@@ -1946,9 +1850,6 @@
 
 .method public static longForQuery(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;[Ljava/lang/String;)J
     .locals 3
-    .param p0    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Landroid/database/sqlite/SQLiteDatabase;->compileStatement(Ljava/lang/String;)Landroid/database/sqlite/SQLiteStatement;
 
@@ -1975,8 +1876,6 @@
 
 .method public static longForQuery(Landroid/database/sqlite/SQLiteStatement;[Ljava/lang/String;)J
     .locals 2
-    .param p0    # Landroid/database/sqlite/SQLiteStatement;
-    .param p1    # [Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Landroid/database/sqlite/SQLiteStatement;->bindAllArgsAsStrings([Ljava/lang/String;)V
 
@@ -1989,8 +1888,6 @@
 
 .method public static queryIsEmpty(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;)Z
     .locals 4
-    .param p0    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p1    # Ljava/lang/String;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -2041,8 +1938,6 @@
 
 .method public static queryNumEntries(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;)J
     .locals 2
-    .param p0    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -2055,9 +1950,6 @@
 
 .method public static queryNumEntries(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Ljava/lang/String;)J
     .locals 2
-    .param p0    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -2070,10 +1962,6 @@
 
 .method public static queryNumEntries(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)J
     .locals 3
-    .param p0    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # [Ljava/lang/String;
 
     invoke-static {p2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -2136,7 +2024,6 @@
 
 .method public static final readExceptionFromParcel(Landroid/os/Parcel;)V
     .locals 2
-    .param p0    # Landroid/os/Parcel;
 
     invoke-virtual {p0}, Landroid/os/Parcel;->readExceptionCode()I
 
@@ -2159,9 +2046,6 @@
 
 .method private static final readExceptionFromParcel(Landroid/os/Parcel;Ljava/lang/String;I)V
     .locals 1
-    .param p0    # Landroid/os/Parcel;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     packed-switch p2, :pswitch_data_0
 
@@ -2252,7 +2136,6 @@
 
 .method public static readExceptionWithFileNotFoundExceptionFromParcel(Landroid/os/Parcel;)V
     .locals 3
-    .param p0    # Landroid/os/Parcel;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/FileNotFoundException;
@@ -2291,7 +2174,6 @@
 
 .method public static readExceptionWithOperationApplicationExceptionFromParcel(Landroid/os/Parcel;)V
     .locals 3
-    .param p0    # Landroid/os/Parcel;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/OperationApplicationException;
@@ -2330,7 +2212,6 @@
 
 .method public static sqlEscapeString(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -2347,9 +2228,6 @@
 
 .method public static stringForQuery(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p0    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Landroid/database/sqlite/SQLiteDatabase;->compileStatement(Ljava/lang/String;)Landroid/database/sqlite/SQLiteStatement;
 
@@ -2376,8 +2254,6 @@
 
 .method public static stringForQuery(Landroid/database/sqlite/SQLiteStatement;[Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p0    # Landroid/database/sqlite/SQLiteStatement;
-    .param p1    # [Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Landroid/database/sqlite/SQLiteStatement;->bindAllArgsAsStrings([Ljava/lang/String;)V
 
@@ -2390,8 +2266,6 @@
 
 .method public static final writeExceptionToParcel(Landroid/os/Parcel;Ljava/lang/Exception;)V
     .locals 4
-    .param p0    # Landroid/os/Parcel;
-    .param p1    # Ljava/lang/Exception;
 
     const/4 v0, 0x0
 

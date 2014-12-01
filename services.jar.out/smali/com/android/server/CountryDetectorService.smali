@@ -47,7 +47,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Landroid/location/ICountryDetector$Stub;-><init>()V
 
@@ -64,8 +63,6 @@
 
 .method static synthetic access$000(Lcom/android/server/CountryDetectorService;Landroid/os/IBinder;)V
     .locals 0
-    .param p0    # Lcom/android/server/CountryDetectorService;
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0, p1}, Lcom/android/server/CountryDetectorService;->removeListener(Landroid/os/IBinder;)V
 
@@ -74,7 +71,6 @@
 
 .method static synthetic access$100(Lcom/android/server/CountryDetectorService;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/server/CountryDetectorService;
 
     iget-object v0, p0, Lcom/android/server/CountryDetectorService;->mHandler:Landroid/os/Handler;
 
@@ -83,7 +79,6 @@
 
 .method static synthetic access$200(Lcom/android/server/CountryDetectorService;)Lcom/android/server/location/ComprehensiveCountryDetector;
     .locals 1
-    .param p0    # Lcom/android/server/CountryDetectorService;
 
     iget-object v0, p0, Lcom/android/server/CountryDetectorService;->mCountryDetector:Lcom/android/server/location/ComprehensiveCountryDetector;
 
@@ -92,7 +87,6 @@
 
 .method private addListener(Landroid/location/ICountryListener;)V
     .locals 5
-    .param p1    # Landroid/location/ICountryListener;
 
     iget-object v3, p0, Lcom/android/server/CountryDetectorService;->mReceivers:Ljava/util/HashMap;
 
@@ -195,7 +189,6 @@
 
 .method private removeListener(Landroid/os/IBinder;)V
     .locals 3
-    .param p1    # Landroid/os/IBinder;
 
     iget-object v1, p0, Lcom/android/server/CountryDetectorService;->mReceivers:Ljava/util/HashMap;
 
@@ -243,7 +236,6 @@
 # virtual methods
 .method public addCountryListener(Landroid/location/ICountryListener;)V
     .locals 1
-    .param p1    # Landroid/location/ICountryListener;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -290,9 +282,6 @@
 
 .method protected dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/server/CountryDetectorService;->mContext:Landroid/content/Context;
 
@@ -315,7 +304,6 @@
 
 .method protected notifyReceivers(Landroid/location/Country;)V
     .locals 6
-    .param p1    # Landroid/location/Country;
 
     iget-object v4, p0, Lcom/android/server/CountryDetectorService;->mReceivers:Ljava/util/HashMap;
 
@@ -391,7 +379,6 @@
 
 .method public removeCountryListener(Landroid/location/ICountryListener;)V
     .locals 1
-    .param p1    # Landroid/location/ICountryListener;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -438,7 +425,6 @@
 
 .method protected setCountryListener(Landroid/location/CountryListener;)V
     .locals 2
-    .param p1    # Landroid/location/CountryListener;
 
     iget-object v0, p0, Lcom/android/server/CountryDetectorService;->mHandler:Landroid/os/Handler;
 

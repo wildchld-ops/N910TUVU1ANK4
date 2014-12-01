@@ -50,8 +50,6 @@
 # virtual methods
 .method public final compare(Lcom/android/settings/AppPicker$MyApplicationInfo;Lcom/android/settings/AppPicker$MyApplicationInfo;)I
     .locals 3
-    .param p1    # Lcom/android/settings/AppPicker$MyApplicationInfo;
-    .param p2    # Lcom/android/settings/AppPicker$MyApplicationInfo;
 
     iget-object v0, p0, Lcom/android/settings/AppPicker$1;->collator:Ljava/text/Collator;
 
@@ -68,8 +66,6 @@
 
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p1, Lcom/android/settings/AppPicker$MyApplicationInfo;
 

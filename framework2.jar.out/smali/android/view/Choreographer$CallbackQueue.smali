@@ -33,8 +33,6 @@
 
 .method synthetic constructor <init>(Landroid/view/Choreographer;Landroid/view/Choreographer$1;)V
     .locals 0
-    .param p1    # Landroid/view/Choreographer;
-    .param p2    # Landroid/view/Choreographer$1;
 
     invoke-direct {p0, p1}, Landroid/view/Choreographer$CallbackQueue;-><init>(Landroid/view/Choreographer;)V
 
@@ -45,9 +43,6 @@
 # virtual methods
 .method public addCallbackLocked(JLjava/lang/Object;Ljava/lang/Object;)V
     .locals 4
-    .param p1    # J
-    .param p3    # Ljava/lang/Object;
-    .param p4    # Ljava/lang/Object;
 
     iget-object v2, p0, Landroid/view/Choreographer$CallbackQueue;->this$0:Landroid/view/Choreographer;
 
@@ -106,7 +101,6 @@
 
 .method public extractDueCallbacksLocked(J)Landroid/view/Choreographer$CallbackRecord;
     .locals 6
-    .param p1    # J
 
     const/4 v3, 0x0
 
@@ -157,7 +151,6 @@
 
 .method public hasDueCallbacksLocked(J)Z
     .locals 2
-    .param p1    # J
 
     iget-object v0, p0, Landroid/view/Choreographer$CallbackQueue;->mHead:Landroid/view/Choreographer$CallbackRecord;
 
@@ -184,8 +177,6 @@
 
 .method public removeCallbacksLocked(Ljava/lang/Object;Ljava/lang/Object;)V
     .locals 4
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Object;
 
     const/4 v2, 0x0
 

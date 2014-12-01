@@ -18,7 +18,6 @@
 # direct methods
 .method public constructor <init>(Landroid/nfc/Tag;)V
     .locals 3
-    .param p1    # Landroid/nfc/Tag;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -57,7 +56,6 @@
 
 .method public static get(Landroid/nfc/Tag;)Landroid/nfc/tech/NfcBarcode;
     .locals 3
-    .param p0    # Landroid/nfc/Tag;
 
     const/4 v1, 0x0
 

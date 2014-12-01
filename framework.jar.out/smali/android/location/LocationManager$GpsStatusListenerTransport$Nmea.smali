@@ -25,8 +25,6 @@
 # direct methods
 .method constructor <init>(Landroid/location/LocationManager$GpsStatusListenerTransport;JLjava/lang/String;)V
     .locals 0
-    .param p2    # J
-    .param p4    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/location/LocationManager$GpsStatusListenerTransport$Nmea;->this$1:Landroid/location/LocationManager$GpsStatusListenerTransport;
 

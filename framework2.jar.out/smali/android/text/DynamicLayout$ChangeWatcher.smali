@@ -34,7 +34,6 @@
 # direct methods
 .method public constructor <init>(Landroid/text/DynamicLayout;)V
     .locals 1
-    .param p1    # Landroid/text/DynamicLayout;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -49,10 +48,6 @@
 
 .method private reflow(Ljava/lang/CharSequence;III)V
     .locals 2
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iget-object v1, p0, Landroid/text/DynamicLayout$ChangeWatcher;->mLayout:Ljava/lang/ref/WeakReference;
 
@@ -87,27 +82,18 @@
 # virtual methods
 .method public afterTextChanged(Landroid/text/Editable;)V
     .locals 0
-    .param p1    # Landroid/text/Editable;
 
     return-void
 .end method
 
 .method public beforeTextChanged(Ljava/lang/CharSequence;III)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     return-void
 .end method
 
 .method public onSpanAdded(Landroid/text/Spannable;Ljava/lang/Object;II)V
     .locals 2
-    .param p1    # Landroid/text/Spannable;
-    .param p2    # Ljava/lang/Object;
-    .param p3    # I
-    .param p4    # I
 
     instance-of v0, p2, Landroid/text/style/UpdateLayout;
 
@@ -125,12 +111,6 @@
 
 .method public onSpanChanged(Landroid/text/Spannable;Ljava/lang/Object;IIII)V
     .locals 2
-    .param p1    # Landroid/text/Spannable;
-    .param p2    # Ljava/lang/Object;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     instance-of v0, p2, Landroid/text/style/UpdateLayout;
 
@@ -154,10 +134,6 @@
 
 .method public onSpanRemoved(Landroid/text/Spannable;Ljava/lang/Object;II)V
     .locals 2
-    .param p1    # Landroid/text/Spannable;
-    .param p2    # Ljava/lang/Object;
-    .param p3    # I
-    .param p4    # I
 
     instance-of v0, p2, Landroid/text/style/UpdateLayout;
 
@@ -175,10 +151,6 @@
 
 .method public onTextChanged(Ljava/lang/CharSequence;III)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-direct {p0, p1, p2, p3, p4}, Landroid/text/DynamicLayout$ChangeWatcher;->reflow(Ljava/lang/CharSequence;III)V
 

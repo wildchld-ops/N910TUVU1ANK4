@@ -134,8 +134,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/util/Hashtable;)V
     .locals 10
-    .param p1    # Landroid/content/ContentResolver;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -382,9 +380,6 @@
 # virtual methods
 .method public characters([CII)V
     .locals 0
-    .param p1    # [C
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xml/sax/SAXException;
@@ -407,9 +402,6 @@
 
 .method public endElement(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xml/sax/SAXException;
@@ -597,7 +589,6 @@
 
 .method public endPrefixMapping(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xml/sax/SAXException;
@@ -609,7 +600,6 @@
 
 .method public fillTheme(Lcom/immersion/android/haptics/HapticFeedbackThemeData;)Z
     .locals 39
-    .param p1    # Lcom/immersion/android/haptics/HapticFeedbackThemeData;
 
     new-instance v34, Ljava/util/HashSet;
 
@@ -2010,9 +2000,6 @@
 
 .method public ignorableWhitespace([CII)V
     .locals 0
-    .param p1    # [C
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xml/sax/SAXException;
@@ -2024,8 +2011,6 @@
 
 .method public processingInstruction(Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xml/sax/SAXException;
@@ -2037,14 +2022,12 @@
 
 .method public setDocumentLocator(Lorg/xml/sax/Locator;)V
     .locals 0
-    .param p1    # Lorg/xml/sax/Locator;
 
     return-void
 .end method
 
 .method public skippedEntity(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xml/sax/SAXException;
@@ -2067,10 +2050,6 @@
 
 .method public startElement(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lorg/xml/sax/Attributes;)V
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Lorg/xml/sax/Attributes;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xml/sax/SAXException;
@@ -2651,8 +2630,6 @@
 
 .method public startPrefixMapping(Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xml/sax/SAXException;

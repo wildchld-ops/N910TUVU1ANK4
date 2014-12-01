@@ -100,7 +100,6 @@
 
 .method private handleMPRE(Lorg/apache/harmony/dalvik/ddmc/Chunk;)Lorg/apache/harmony/dalvik/ddmc/Chunk;
     .locals 7
-    .param p1    # Lorg/apache/harmony/dalvik/ddmc/Chunk;
 
     const/4 v6, 0x0
 
@@ -164,7 +163,6 @@
 
 .method private handleMPRQ(Lorg/apache/harmony/dalvik/ddmc/Chunk;)Lorg/apache/harmony/dalvik/ddmc/Chunk;
     .locals 6
-    .param p1    # Lorg/apache/harmony/dalvik/ddmc/Chunk;
 
     const/4 v5, 0x0
 
@@ -193,7 +191,6 @@
 
 .method private handleMPRS(Lorg/apache/harmony/dalvik/ddmc/Chunk;)Lorg/apache/harmony/dalvik/ddmc/Chunk;
     .locals 8
-    .param p1    # Lorg/apache/harmony/dalvik/ddmc/Chunk;
 
     invoke-static {p1}, Landroid/ddm/DdmHandleProfiling;->wrapChunk(Lorg/apache/harmony/dalvik/ddmc/Chunk;)Ljava/nio/ByteBuffer;
 
@@ -243,7 +240,6 @@
 
 .method private handleMPSE(Lorg/apache/harmony/dalvik/ddmc/Chunk;)Lorg/apache/harmony/dalvik/ddmc/Chunk;
     .locals 5
-    .param p1    # Lorg/apache/harmony/dalvik/ddmc/Chunk;
 
     :try_start_0
     invoke-static {}, Landroid/os/Debug;->stopMethodTracing()V
@@ -301,7 +297,6 @@
 
 .method private handleMPSS(Lorg/apache/harmony/dalvik/ddmc/Chunk;)Lorg/apache/harmony/dalvik/ddmc/Chunk;
     .locals 6
-    .param p1    # Lorg/apache/harmony/dalvik/ddmc/Chunk;
 
     invoke-static {p1}, Landroid/ddm/DdmHandleProfiling;->wrapChunk(Lorg/apache/harmony/dalvik/ddmc/Chunk;)Ljava/nio/ByteBuffer;
 
@@ -347,7 +342,6 @@
 
 .method private handleSPSE(Lorg/apache/harmony/dalvik/ddmc/Chunk;)Lorg/apache/harmony/dalvik/ddmc/Chunk;
     .locals 4
-    .param p1    # Lorg/apache/harmony/dalvik/ddmc/Chunk;
 
     :try_start_0
     invoke-static {}, Landroid/os/Debug;->stopMethodTracing()V
@@ -403,7 +397,6 @@
 
 .method private handleSPSS(Lorg/apache/harmony/dalvik/ddmc/Chunk;)Lorg/apache/harmony/dalvik/ddmc/Chunk;
     .locals 7
-    .param p1    # Lorg/apache/harmony/dalvik/ddmc/Chunk;
 
     const/4 v6, 0x1
 
@@ -513,7 +506,6 @@
 
 .method public handleChunk(Lorg/apache/harmony/dalvik/ddmc/Chunk;)Lorg/apache/harmony/dalvik/ddmc/Chunk;
     .locals 4
-    .param p1    # Lorg/apache/harmony/dalvik/ddmc/Chunk;
 
     iget v0, p1, Lorg/apache/harmony/dalvik/ddmc/Chunk;->type:I
 

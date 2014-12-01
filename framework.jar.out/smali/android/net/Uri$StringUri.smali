@@ -41,7 +41,6 @@
 # direct methods
 .method private constructor <init>(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, -0x2
 
@@ -78,8 +77,6 @@
 
 .method synthetic constructor <init>(Ljava/lang/String;Landroid/net/Uri$1;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/net/Uri$1;
 
     invoke-direct {p0, p1}, Landroid/net/Uri$StringUri;-><init>(Ljava/lang/String;)V
 
@@ -284,8 +281,6 @@
 
 .method static parseAuthority(Ljava/lang/String;I)Ljava/lang/String;
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
 
     const/16 v3, 0x2f
 
@@ -440,8 +435,6 @@
 
 .method static parsePath(Ljava/lang/String;I)Ljava/lang/String;
     .locals 5
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
 
     const/16 v4, 0x2f
 
@@ -658,7 +651,6 @@
 
 .method static readFrom(Landroid/os/Parcel;)Landroid/net/Uri;
     .locals 2
-    .param p0    # Landroid/os/Parcel;
 
     new-instance v0, Landroid/net/Uri$StringUri;
 
@@ -1053,8 +1045,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     const/4 v0, 0x1
 

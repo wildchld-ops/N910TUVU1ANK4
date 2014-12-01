@@ -33,7 +33,6 @@
 # virtual methods
 .method public onCallForwardingIndicatorChanged(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/settings/RadioInfo$1;->this$0:Lcom/android/settings/RadioInfo;
 
@@ -93,7 +92,6 @@
 
 .method public onCellLocationChanged(Landroid/telephony/CellLocation;)V
     .locals 1
-    .param p1    # Landroid/telephony/CellLocation;
 
     iget-object v0, p0, Lcom/android/settings/RadioInfo$1;->this$0:Lcom/android/settings/RadioInfo;
 
@@ -105,7 +103,6 @@
 
 .method public onDataActivity(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/settings/RadioInfo$1;->this$0:Lcom/android/settings/RadioInfo;
 
@@ -117,7 +114,6 @@
 
 .method public onDataConnectionStateChanged(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/settings/RadioInfo$1;->this$0:Lcom/android/settings/RadioInfo;
 
@@ -144,7 +140,6 @@
 
 .method public onMessageWaitingIndicatorChanged(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/settings/RadioInfo$1;->this$0:Lcom/android/settings/RadioInfo;
 

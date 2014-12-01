@@ -32,7 +32,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -103,7 +102,6 @@
 
 .method private checkCocktailBar(I)I
     .locals 3
-    .param p1    # I
 
     const/4 v2, 0x1
 
@@ -149,8 +147,6 @@
 
 .method public static getEdgeFlag(ILandroid/view/MotionEvent;)I
     .locals 7
-    .param p0    # I
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getX()F
 
@@ -282,7 +278,6 @@
 
 .method private notMultiWindowEdgeSupport(Landroid/view/MotionEvent;)Z
     .locals 4
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v0, 0x0
 
@@ -369,8 +364,6 @@
 
 .method public onTouchEvent(ILandroid/view/MotionEvent;)Z
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/view/MotionEvent;
 
     const/4 v3, 0x0
 

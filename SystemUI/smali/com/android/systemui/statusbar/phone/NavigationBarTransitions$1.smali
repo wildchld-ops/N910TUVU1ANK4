@@ -37,7 +37,6 @@
 # virtual methods
 .method public onAnimationEnd(Landroid/animation/Animator;)V
     .locals 2
-    .param p1    # Landroid/animation/Animator;
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/NavigationBarTransitions$1;->val$lowLights:Landroid/view/View;
 

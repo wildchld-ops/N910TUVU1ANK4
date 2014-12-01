@@ -42,7 +42,6 @@
 
 .method public static getIccId(I)Ljava/lang/String;
     .locals 1
-    .param p0    # I
 
     const-string v0, ""
 
@@ -51,7 +50,6 @@
 
 .method public static getIccSlot(Ljava/lang/String;)I
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const/4 v0, -0x1
 
@@ -103,7 +101,6 @@
 
 .method public static getSimSerialNumber(I)Ljava/lang/String;
     .locals 1
-    .param p0    # I
 
     const-string v0, ""
 
@@ -112,7 +109,6 @@
 
 .method public static hasIccCard(I)Z
     .locals 1
-    .param p0    # I
 
     const/4 v0, 0x0
 
@@ -129,14 +125,12 @@
 
 .method public static setActiveSimForData(I)V
     .locals 0
-    .param p0    # I
 
     return-void
 .end method
 
 .method public static setDefaultSimForVoiceCalls(I)Z
     .locals 1
-    .param p0    # I
 
     const/4 v0, 0x0
 
@@ -145,7 +139,6 @@
 
 .method public static switchToSimDataNetwork(I)Z
     .locals 1
-    .param p0    # I
 
     const/4 v0, 0x0
 

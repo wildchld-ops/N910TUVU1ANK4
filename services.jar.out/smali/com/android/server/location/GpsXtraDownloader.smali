@@ -20,8 +20,6 @@
 # direct methods
 .method constructor <init>(Landroid/content/Context;Ljava/util/Properties;)V
     .locals 8
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/util/Properties;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -134,10 +132,6 @@
 
 .method protected static doDownload(Ljava/lang/String;ZLjava/lang/String;I)[B
     .locals 15
-    .param p0    # Ljava/lang/String;
-    .param p1    # Z
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     const/4 v3, 0x0
 

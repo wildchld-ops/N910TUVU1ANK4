@@ -40,7 +40,6 @@
 
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -138,8 +137,6 @@
 
 .method public constructor <init>(Ljava/net/InetAddress;I)V
     .locals 0
-    .param p1    # Ljava/net/InetAddress;
-    .param p2    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -150,7 +147,6 @@
 
 .method public constructor <init>(Ljava/net/InterfaceAddress;)V
     .locals 2
-    .param p1    # Ljava/net/InterfaceAddress;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -169,8 +165,6 @@
 
 .method private init(Ljava/net/InetAddress;I)V
     .locals 3
-    .param p1    # Ljava/net/InetAddress;
-    .param p2    # I
 
     if-eqz p1, :cond_1
 
@@ -244,7 +238,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 4
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x0
 
@@ -372,8 +365,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v0, p0, Landroid/net/LinkAddress;->address:Ljava/net/InetAddress;
 

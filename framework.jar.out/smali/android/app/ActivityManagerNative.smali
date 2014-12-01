@@ -52,7 +52,6 @@
 
 .method public static asInterface(Landroid/os/IBinder;)Landroid/app/IActivityManager;
     .locals 2
-    .param p0    # Landroid/os/IBinder;
 
     if-nez p0, :cond_1
 
@@ -82,9 +81,6 @@
 
 .method public static broadcastStickyIntent(Landroid/content/Intent;Ljava/lang/String;I)V
     .locals 13
-    .param p0    # Landroid/content/Intent;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     :try_start_0
     invoke-static {}, Landroid/app/ActivityManagerNative;->getDefault()Landroid/app/IActivityManager;
@@ -167,7 +163,6 @@
 
 .method public static noteWakeupAlarm(Landroid/app/PendingIntent;)V
     .locals 2
-    .param p0    # Landroid/app/PendingIntent;
 
     :try_start_0
     invoke-static {}, Landroid/app/ActivityManagerNative;->getDefault()Landroid/app/IActivityManager;
@@ -201,10 +196,6 @@
 
 .method public onTransact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
     .locals 219
-    .param p1    # I
-    .param p2    # Landroid/os/Parcel;
-    .param p3    # Landroid/os/Parcel;
-    .param p4    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

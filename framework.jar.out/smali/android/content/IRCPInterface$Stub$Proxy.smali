@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -45,7 +44,6 @@
 
 .method public cancel(J)V
     .locals 5
-    .param p1    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -97,7 +95,6 @@
 
 .method public cancelCopyChunks(J)V
     .locals 5
-    .param p1    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -149,14 +146,6 @@
 
 .method public copyChunks(ILjava/lang/String;ILjava/lang/String;JIJZ)I
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
-    .param p5    # J
-    .param p7    # I
-    .param p8    # J
-    .param p10    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -236,10 +225,6 @@
 
 .method public copyFile(ILjava/lang/String;ILjava/lang/String;)I
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -301,9 +286,6 @@
 
 .method public copyFiles(ILjava/util/List;ILjava/util/List;Landroid/content/IRCPInterfaceCallback;)J
     .locals 7
-    .param p1    # I
-    .param p3    # I
-    .param p5    # Landroid/content/IRCPInterfaceCallback;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -395,7 +377,6 @@
 
 .method public getErrorMessage(I)Ljava/lang/String;
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -451,8 +432,6 @@
 
 .method public getFileInfo(Ljava/lang/String;I)Landroid/os/Bundle;
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -526,8 +505,6 @@
 
 .method public getFiles(Ljava/lang/String;I)Ljava/util/List;
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -605,8 +582,6 @@
 
 .method public isFileExist(Ljava/lang/String;I)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -671,10 +646,6 @@
 
 .method public moveFile(ILjava/lang/String;ILjava/lang/String;)I
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -736,9 +707,6 @@
 
 .method public moveFiles(ILjava/util/List;ILjava/util/List;Landroid/content/IRCPInterfaceCallback;)J
     .locals 7
-    .param p1    # I
-    .param p3    # I
-    .param p5    # Landroid/content/IRCPInterfaceCallback;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -830,7 +798,6 @@
 
 .method public moveFilesForApp(ILjava/util/List;Ljava/util/List;)J
     .locals 7
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",

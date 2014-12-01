@@ -42,9 +42,6 @@
 # virtual methods
 .method public isFullInsideView(Landroid/view/View;Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 9
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/MotionEvent;
 
     const/4 v0, 0x1
 
@@ -239,8 +236,6 @@
 
 .method public isTouchedBigArea(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     const/4 v0, 0x0
 
@@ -294,8 +289,6 @@
 
 .method public isTouchedSmallArea(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     const/4 v0, 0x0
 
@@ -318,8 +311,6 @@
 
 .method public onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 9
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     const/4 v8, 0x2
 

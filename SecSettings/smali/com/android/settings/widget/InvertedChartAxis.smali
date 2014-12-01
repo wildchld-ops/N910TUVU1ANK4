@@ -15,7 +15,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/settings/widget/ChartAxis;)V
     .locals 0
-    .param p1    # Lcom/android/settings/widget/ChartAxis;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -28,9 +27,6 @@
 # virtual methods
 .method public buildLabel(Landroid/content/res/Resources;Landroid/text/SpannableStringBuilder;J)J
     .locals 2
-    .param p1    # Landroid/content/res/Resources;
-    .param p2    # Landroid/text/SpannableStringBuilder;
-    .param p3    # J
 
     iget-object v0, p0, Lcom/android/settings/widget/InvertedChartAxis;->mWrapped:Lcom/android/settings/widget/ChartAxis;
 
@@ -43,7 +39,6 @@
 
 .method public convertToPoint(J)F
     .locals 2
-    .param p1    # J
 
     iget v0, p0, Lcom/android/settings/widget/InvertedChartAxis;->mSize:F
 
@@ -60,7 +55,6 @@
 
 .method public convertToValue(F)J
     .locals 2
-    .param p1    # F
 
     iget-object v0, p0, Lcom/android/settings/widget/InvertedChartAxis;->mWrapped:Lcom/android/settings/widget/ChartAxis;
 
@@ -109,8 +103,6 @@
 
 .method public setBounds(JJ)Z
     .locals 1
-    .param p1    # J
-    .param p3    # J
 
     iget-object v0, p0, Lcom/android/settings/widget/InvertedChartAxis;->mWrapped:Lcom/android/settings/widget/ChartAxis;
 
@@ -123,7 +115,6 @@
 
 .method public setSize(F)Z
     .locals 1
-    .param p1    # F
 
     iput p1, p0, Lcom/android/settings/widget/InvertedChartAxis;->mSize:F
 
@@ -138,7 +129,6 @@
 
 .method public shouldAdjustAxis(J)I
     .locals 1
-    .param p1    # J
 
     iget-object v0, p0, Lcom/android/settings/widget/InvertedChartAxis;->mWrapped:Lcom/android/settings/widget/ChartAxis;
 

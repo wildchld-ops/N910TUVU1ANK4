@@ -67,8 +67,6 @@
 
 .method public static buildChildDocumentsUri(Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri;
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Landroid/net/Uri$Builder;
 
@@ -109,8 +107,6 @@
 
 .method public static buildDocumentUri(Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri;
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Landroid/net/Uri$Builder;
 
@@ -145,8 +141,6 @@
 
 .method public static buildRecentDocumentsUri(Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri;
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Landroid/net/Uri$Builder;
 
@@ -187,8 +181,6 @@
 
 .method public static buildRootUri(Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri;
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Landroid/net/Uri$Builder;
 
@@ -223,7 +215,6 @@
 
 .method public static buildRootsUri(Ljava/lang/String;)Landroid/net/Uri;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     new-instance v0, Landroid/net/Uri$Builder;
 
@@ -254,9 +245,6 @@
 
 .method public static buildSearchDocumentsUri(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri;
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     new-instance v0, Landroid/net/Uri$Builder;
 
@@ -303,10 +291,6 @@
 
 .method public static createDocument(Landroid/content/ContentProviderClient;Landroid/net/Uri;Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri;
     .locals 4
-    .param p0    # Landroid/content/ContentProviderClient;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -360,10 +344,6 @@
 
 .method public static createDocument(Landroid/content/ContentResolver;Landroid/net/Uri;Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri;
     .locals 4
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     invoke-virtual {p1}, Landroid/net/Uri;->getAuthority()Ljava/lang/String;
 
@@ -412,8 +392,6 @@
 
 .method public static deleteDocument(Landroid/content/ContentProviderClient;Landroid/net/Uri;)V
     .locals 3
-    .param p0    # Landroid/content/ContentProviderClient;
-    .param p1    # Landroid/net/Uri;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -443,8 +421,6 @@
 
 .method public static deleteDocument(Landroid/content/ContentResolver;Landroid/net/Uri;)Z
     .locals 4
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # Landroid/net/Uri;
 
     invoke-virtual {p1}, Landroid/net/Uri;->getAuthority()Ljava/lang/String;
 
@@ -493,7 +469,6 @@
 
 .method public static getDocumentId(Landroid/net/Uri;)Ljava/lang/String;
     .locals 4
-    .param p0    # Landroid/net/Uri;
 
     invoke-virtual {p0}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
 
@@ -584,10 +559,6 @@
 
 .method public static getDocumentThumbnail(Landroid/content/ContentProviderClient;Landroid/net/Uri;Landroid/graphics/Point;Landroid/os/CancellationSignal;)Landroid/graphics/Bitmap;
     .locals 23
-    .param p0    # Landroid/content/ContentProviderClient;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Landroid/graphics/Point;
-    .param p3    # Landroid/os/CancellationSignal;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;,
@@ -871,10 +842,6 @@
 
 .method public static getDocumentThumbnail(Landroid/content/ContentResolver;Landroid/net/Uri;Landroid/graphics/Point;Landroid/os/CancellationSignal;)Landroid/graphics/Bitmap;
     .locals 5
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Landroid/graphics/Point;
-    .param p3    # Landroid/os/CancellationSignal;
 
     invoke-virtual {p1}, Landroid/net/Uri;->getAuthority()Ljava/lang/String;
 
@@ -954,7 +921,6 @@
 
 .method public static getRootId(Landroid/net/Uri;)Ljava/lang/String;
     .locals 4
-    .param p0    # Landroid/net/Uri;
 
     invoke-virtual {p0}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
 
@@ -1045,7 +1011,6 @@
 
 .method public static getSearchDocumentsQuery(Landroid/net/Uri;)Ljava/lang/String;
     .locals 1
-    .param p0    # Landroid/net/Uri;
 
     const-string/jumbo v0, "query"
 
@@ -1058,8 +1023,6 @@
 
 .method public static isDocumentUri(Landroid/content/Context;Landroid/net/Uri;)Z
     .locals 8
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/net/Uri;
 
     const/4 v5, 0x0
 
@@ -1144,7 +1107,6 @@
 
 .method public static isManageMode(Landroid/net/Uri;)Z
     .locals 2
-    .param p0    # Landroid/net/Uri;
 
     const-string/jumbo v0, "manage"
 
@@ -1159,7 +1121,6 @@
 
 .method public static openImageThumbnail(Ljava/io/File;)Landroid/content/res/AssetFileDescriptor;
     .locals 10
-    .param p0    # Ljava/io/File;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/FileNotFoundException;
@@ -1321,7 +1282,6 @@
 
 .method public static setManageMode(Landroid/net/Uri;)Landroid/net/Uri;
     .locals 3
-    .param p0    # Landroid/net/Uri;
 
     invoke-virtual {p0}, Landroid/net/Uri;->buildUpon()Landroid/net/Uri$Builder;
 

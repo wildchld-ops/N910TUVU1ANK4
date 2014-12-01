@@ -69,7 +69,6 @@
 # direct methods
 .method private constructor <init>(Landroid/app/Activity;)V
     .locals 3
-    .param p1    # Landroid/app/Activity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -118,7 +117,6 @@
 
 .method private combineArrayExtra(Ljava/lang/String;Ljava/util/ArrayList;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -176,8 +174,6 @@
 
 .method private combineArrayExtra(Ljava/lang/String;[Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -221,7 +217,6 @@
 
 .method public static from(Landroid/app/Activity;)Landroid/support/v4/app/ShareCompat$IntentBuilder;
     .locals 1
-    .param p0    # Landroid/app/Activity;
 
     new-instance v0, Landroid/support/v4/app/ShareCompat$IntentBuilder;
 
@@ -234,7 +229,6 @@
 # virtual methods
 .method public addEmailBcc(Ljava/lang/String;)Landroid/support/v4/app/ShareCompat$IntentBuilder;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/support/v4/app/ShareCompat$IntentBuilder;->mBccAddresses:Ljava/util/ArrayList;
 
@@ -256,7 +250,6 @@
 
 .method public addEmailBcc([Ljava/lang/String;)Landroid/support/v4/app/ShareCompat$IntentBuilder;
     .locals 1
-    .param p1    # [Ljava/lang/String;
 
     const-string v0, "android.intent.extra.BCC"
 
@@ -267,7 +260,6 @@
 
 .method public addEmailCc(Ljava/lang/String;)Landroid/support/v4/app/ShareCompat$IntentBuilder;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/support/v4/app/ShareCompat$IntentBuilder;->mCcAddresses:Ljava/util/ArrayList;
 
@@ -289,7 +281,6 @@
 
 .method public addEmailCc([Ljava/lang/String;)Landroid/support/v4/app/ShareCompat$IntentBuilder;
     .locals 1
-    .param p1    # [Ljava/lang/String;
 
     const-string v0, "android.intent.extra.CC"
 
@@ -300,7 +291,6 @@
 
 .method public addEmailTo(Ljava/lang/String;)Landroid/support/v4/app/ShareCompat$IntentBuilder;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/support/v4/app/ShareCompat$IntentBuilder;->mToAddresses:Ljava/util/ArrayList;
 
@@ -322,7 +312,6 @@
 
 .method public addEmailTo([Ljava/lang/String;)Landroid/support/v4/app/ShareCompat$IntentBuilder;
     .locals 1
-    .param p1    # [Ljava/lang/String;
 
     const-string v0, "android.intent.extra.EMAIL"
 
@@ -333,7 +322,6 @@
 
 .method public addStream(Landroid/net/Uri;)Landroid/support/v4/app/ShareCompat$IntentBuilder;
     .locals 3
-    .param p1    # Landroid/net/Uri;
 
     iget-object v1, p0, Landroid/support/v4/app/ShareCompat$IntentBuilder;->mIntent:Landroid/content/Intent;
 
@@ -585,7 +573,6 @@
 
 .method public setChooserTitle(I)Landroid/support/v4/app/ShareCompat$IntentBuilder;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/support/v4/app/ShareCompat$IntentBuilder;->mActivity:Landroid/app/Activity;
 
@@ -602,7 +589,6 @@
 
 .method public setChooserTitle(Ljava/lang/CharSequence;)Landroid/support/v4/app/ShareCompat$IntentBuilder;
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
 
     iput-object p1, p0, Landroid/support/v4/app/ShareCompat$IntentBuilder;->mChooserTitle:Ljava/lang/CharSequence;
 
@@ -611,7 +597,6 @@
 
 .method public setEmailBcc([Ljava/lang/String;)Landroid/support/v4/app/ShareCompat$IntentBuilder;
     .locals 2
-    .param p1    # [Ljava/lang/String;
 
     iget-object v0, p0, Landroid/support/v4/app/ShareCompat$IntentBuilder;->mIntent:Landroid/content/Intent;
 
@@ -624,7 +609,6 @@
 
 .method public setEmailCc([Ljava/lang/String;)Landroid/support/v4/app/ShareCompat$IntentBuilder;
     .locals 2
-    .param p1    # [Ljava/lang/String;
 
     iget-object v0, p0, Landroid/support/v4/app/ShareCompat$IntentBuilder;->mIntent:Landroid/content/Intent;
 
@@ -637,7 +621,6 @@
 
 .method public setEmailTo([Ljava/lang/String;)Landroid/support/v4/app/ShareCompat$IntentBuilder;
     .locals 2
-    .param p1    # [Ljava/lang/String;
 
     iget-object v0, p0, Landroid/support/v4/app/ShareCompat$IntentBuilder;->mToAddresses:Ljava/util/ArrayList;
 
@@ -659,7 +642,6 @@
 
 .method public setHtmlText(Ljava/lang/String;)Landroid/support/v4/app/ShareCompat$IntentBuilder;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/support/v4/app/ShareCompat$IntentBuilder;->mIntent:Landroid/content/Intent;
 
@@ -689,7 +671,6 @@
 
 .method public setStream(Landroid/net/Uri;)Landroid/support/v4/app/ShareCompat$IntentBuilder;
     .locals 2
-    .param p1    # Landroid/net/Uri;
 
     iget-object v0, p0, Landroid/support/v4/app/ShareCompat$IntentBuilder;->mIntent:Landroid/content/Intent;
 
@@ -727,7 +708,6 @@
 
 .method public setSubject(Ljava/lang/String;)Landroid/support/v4/app/ShareCompat$IntentBuilder;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/support/v4/app/ShareCompat$IntentBuilder;->mIntent:Landroid/content/Intent;
 
@@ -740,7 +720,6 @@
 
 .method public setText(Ljava/lang/CharSequence;)Landroid/support/v4/app/ShareCompat$IntentBuilder;
     .locals 2
-    .param p1    # Ljava/lang/CharSequence;
 
     iget-object v0, p0, Landroid/support/v4/app/ShareCompat$IntentBuilder;->mIntent:Landroid/content/Intent;
 
@@ -753,7 +732,6 @@
 
 .method public setType(Ljava/lang/String;)Landroid/support/v4/app/ShareCompat$IntentBuilder;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/support/v4/app/ShareCompat$IntentBuilder;->mIntent:Landroid/content/Intent;
 

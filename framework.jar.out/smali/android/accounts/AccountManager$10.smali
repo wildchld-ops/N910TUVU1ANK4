@@ -25,8 +25,6 @@
 # direct methods
 .method constructor <init>(Landroid/accounts/AccountManager;Landroid/app/Activity;Landroid/os/Handler;Landroid/accounts/AccountManagerCallback;Ljava/lang/String;Landroid/app/Activity;)V
     .locals 0
-    .param p2    # Landroid/app/Activity;
-    .param p3    # Landroid/os/Handler;
 
     iput-object p1, p0, Landroid/accounts/AccountManager$10;->this$0:Landroid/accounts/AccountManager;
 

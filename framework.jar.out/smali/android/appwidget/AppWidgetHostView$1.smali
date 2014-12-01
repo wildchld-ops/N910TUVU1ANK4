@@ -30,7 +30,6 @@
 # virtual methods
 .method public onLoadClass(Ljava/lang/Class;)Z
     .locals 1
-    .param p1    # Ljava/lang/Class;
 
     const-class v0, Landroid/widget/RemoteViews$RemoteView;
 

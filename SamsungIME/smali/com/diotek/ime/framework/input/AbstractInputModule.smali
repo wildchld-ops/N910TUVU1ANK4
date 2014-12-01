@@ -361,7 +361,6 @@
 
 .method private setAddwordbyCheckLDB(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/input/AbstractInputModule;->mIsDisableAddwordbyCheckLDB:Z
 
@@ -372,7 +371,6 @@
 # virtual methods
 .method public VOHWRInitByCursorMove(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/diotek/ime/framework/input/AbstractInputModule;->mEngineManager:Lcom/diotek/ime/framework/engine/InputEngineManager;
 
@@ -383,8 +381,6 @@
 
 .method public VOHWRSetChangeMode(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/diotek/ime/framework/input/AbstractInputModule;->mEngineManager:Lcom/diotek/ime/framework/engine/InputEngineManager;
 
@@ -395,8 +391,6 @@
 
 .method public VOHWRSetInsertMode(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/diotek/ime/framework/input/AbstractInputModule;->mEngineManager:Lcom/diotek/ime/framework/engine/InputEngineManager;
 
@@ -407,7 +401,6 @@
 
 .method public addMyWord(Ljava/lang/CharSequence;)I
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/input/AbstractInputModule;->mEngineManager:Lcom/diotek/ime/framework/engine/InputEngineManager;
 
@@ -420,7 +413,6 @@
 
 .method protected autoPeriod(I)V
     .locals 14
-    .param p1    # I
 
     const/4 v13, 0x3
 
@@ -822,7 +814,6 @@
 
 .method public commitHwrTextAndInitComposing(Ljava/lang/CharSequence;)V
     .locals 4
-    .param p1    # Ljava/lang/CharSequence;
 
     iget-object v1, p0, Lcom/diotek/ime/framework/input/AbstractInputModule;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -909,7 +900,6 @@
 
 .method protected commitText(Ljava/lang/CharSequence;)V
     .locals 2
-    .param p1    # Ljava/lang/CharSequence;
 
     iget-object v1, p0, Lcom/diotek/ime/framework/input/AbstractInputModule;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -929,7 +919,6 @@
 
 .method public commitTextAndInitComposing(Ljava/lang/CharSequence;)V
     .locals 12
-    .param p1    # Ljava/lang/CharSequence;
 
     const v11, 0x7a314d4d
 
@@ -1232,7 +1221,6 @@
 
 .method public commitTextAndInitComposingForThai(Ljava/lang/CharSequence;)V
     .locals 4
-    .param p1    # Ljava/lang/CharSequence;
 
     iget-object v1, p0, Lcom/diotek/ime/framework/input/AbstractInputModule;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -1332,7 +1320,6 @@
 
 .method public commitTextWithSuggestion(Ljava/lang/String;)V
     .locals 9
-    .param p1    # Ljava/lang/String;
 
     const/4 v8, 0x0
 
@@ -1472,7 +1459,6 @@
 
 .method protected doAutoCorrection(Landroid/view/inputmethod/InputConnection;)V
     .locals 2
-    .param p1    # Landroid/view/inputmethod/InputConnection;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/input/AbstractInputModule;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -1506,8 +1492,6 @@
 
 .method protected doAutoCorrection(Landroid/view/inputmethod/InputConnection;[I)Z
     .locals 12
-    .param p1    # Landroid/view/inputmethod/InputConnection;
-    .param p2    # [I
 
     const/4 v11, 0x1
 
@@ -1826,7 +1810,6 @@
 
 .method protected doNextWordPrediction(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v1, p0, Lcom/diotek/ime/framework/input/AbstractInputModule;->mEngineManager:Lcom/diotek/ime/framework/engine/InputEngineManager;
 
@@ -1929,7 +1912,6 @@
 
 .method public findWordInUDB(Ljava/lang/CharSequence;)I
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/input/AbstractInputModule;->mEngineManager:Lcom/diotek/ime/framework/engine/InputEngineManager;
 
@@ -1997,7 +1979,6 @@
 
 .method public finishComposing(Z)V
     .locals 3
-    .param p1    # Z
 
     const/4 v2, 0x0
 
@@ -3005,7 +2986,6 @@
 
 .method public getSuggestionByStatus(I)V
     .locals 5
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -3522,10 +3502,6 @@
 
 .method public initInputEngineAndComposing(IIII)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     return-void
 .end method
@@ -3762,7 +3738,6 @@
 
 .method protected isEnableAutoCorrection(C)Z
     .locals 1
-    .param p1    # C
 
     iget-object v0, p0, Lcom/diotek/ime/framework/input/AbstractInputModule;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -3775,7 +3750,6 @@
 
 .method protected isKeycodeNotAcceptedFilename(I)Z
     .locals 5
-    .param p1    # I
 
     iget-object v2, p0, Lcom/diotek/ime/framework/input/AbstractInputModule;->mPrivateImeOptionsController:Lcom/diotek/ime/framework/common/PrivateImeOptionsController;
 
@@ -3905,7 +3879,6 @@
 
 .method public isLaoAcceptable(I)Z
     .locals 9
-    .param p1    # I
 
     const/4 v6, 0x1
 
@@ -4041,7 +4014,6 @@
 
 .method public isNeedToAddUDB(Ljava/lang/CharSequence;)V
     .locals 4
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v3, 0x0
 
@@ -4341,7 +4313,6 @@
 
 .method public isThaiAcceptable(Z)Z
     .locals 9
-    .param p1    # Z
 
     const/4 v8, 0x2
 
@@ -4438,7 +4409,6 @@
 
 .method protected isTimerRunning(Lcom/diotek/ime/framework/input/InputModule$Timer;)Z
     .locals 1
-    .param p1    # Lcom/diotek/ime/framework/input/InputModule$Timer;
 
     invoke-virtual {p1}, Lcom/diotek/ime/framework/input/InputModule$Timer;->isRunning()Z
 
@@ -4449,7 +4419,6 @@
 
 .method public isZawgyiAcceptable(I)Z
     .locals 10
-    .param p1    # I
 
     const/4 v7, 0x1
 
@@ -4595,8 +4564,6 @@
 
 .method public onCharacterKeyForHwKeyboard(I[I)V
     .locals 1
-    .param p1    # I
-    .param p2    # [I
 
     invoke-static {}, Lcom/diotek/ime/framework/input/ComposingTextManager;->isEmpty()Z
 
@@ -4632,9 +4599,6 @@
 
 .method public onHwrTouchCancel(IIJ)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
 
     const/4 v0, 0x0
 
@@ -4643,9 +4607,6 @@
 
 .method public onHwrTouchDown(IIJ)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
 
     const/4 v0, 0x0
 
@@ -4654,9 +4615,6 @@
 
 .method public onHwrTouchMove(IIJ)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
 
     const/4 v0, 0x0
 
@@ -4665,9 +4623,6 @@
 
 .method public onHwrTouchUp(IIJ)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
 
     const/4 v0, 0x0
 
@@ -4676,7 +4631,6 @@
 
 .method protected onKeyDownUpHandle(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/diotek/ime/framework/input/AbstractInputModule;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -4687,7 +4641,6 @@
 
 .method public onText(Ljava/lang/CharSequence;)V
     .locals 3
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v2, 0x1
 
@@ -4746,8 +4699,6 @@
 
 .method public pickSuggestionManually(ILjava/lang/CharSequence;)V
     .locals 22
-    .param p1    # I
-    .param p2    # Ljava/lang/CharSequence;
 
     move-object/from16 v0, p0
 
@@ -5786,7 +5737,6 @@
 
 .method public postUpdateSequenceAndSuggestionDelayForRecapture(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
@@ -6411,16 +6361,12 @@
 
 .method public previewTrace(IZ)V
     .locals 0
-    .param p1    # I
-    .param p2    # Z
 
     return-void
 .end method
 
 .method protected processKeyForHwKeyboard(I[I)V
     .locals 5
-    .param p1    # I
-    .param p2    # [I
 
     const/4 v4, 0x1
 
@@ -6531,8 +6477,6 @@
 
 .method protected processMultiTapSymbolicKey(I[I)V
     .locals 10
-    .param p1    # I
-    .param p2    # [I
 
     const/4 v7, 0x0
 
@@ -7343,7 +7287,6 @@
 
 .method protected processReCaptureForXT9(I)V
     .locals 14
-    .param p1    # I
 
     const/16 v13, 0x43
 
@@ -7595,8 +7538,6 @@
 
 .method public processVietnameseTone(IZ)V
     .locals 6
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v5, 0x1
 
@@ -7692,7 +7633,6 @@
 
 .method public removeTerm(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
@@ -7846,7 +7786,6 @@
 
 .method protected selectWordInList(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lcom/diotek/ime/framework/input/AbstractInputModule;->mInputModeManager:Lcom/diotek/ime/framework/inputmode/InputModeManager;
 
@@ -7966,7 +7905,6 @@
 
 .method public setAutoSpaceOn(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/diotek/ime/framework/input/AbstractInputModule;->mAutoSpaceController:Lcom/diotek/ime/framework/input/autospace/AutoSpaceController;
 
@@ -7982,7 +7920,6 @@
 
 .method public setBeforeTraceInput(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/input/AbstractInputModule;->mIsBeforeTraceInput:Z
 
@@ -8337,7 +8274,6 @@
 
 .method public setComposingTextWithoutBatch(Landroid/view/inputmethod/InputConnection;)V
     .locals 3
-    .param p1    # Landroid/view/inputmethod/InputConnection;
 
     if-eqz p1, :cond_1
 
@@ -8418,7 +8354,6 @@
 
 .method public setDeleteCount(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, ""
 
@@ -8441,15 +8376,12 @@
 
 .method public setEmojiPredictionEnabled(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method public setHwrCandidateStatus(IZ)V
     .locals 1
-    .param p1    # I
-    .param p2    # Z
 
     if-eqz p2, :cond_0
 
@@ -8485,7 +8417,6 @@
 
 .method public setIndexOfInputBuffer(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/diotek/ime/framework/input/AbstractInputModule;->mIndexOfInputBuffer:I
 
@@ -8494,14 +8425,12 @@
 
 .method public setParameterForCapsLockState(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method public setPredictionWord(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/input/AbstractInputModule;->mIgnorePredictionWord:Z
 
@@ -8510,7 +8439,6 @@
 
 .method public setTimeoutComposingLength(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/diotek/ime/framework/input/AbstractInputModule;->mTimeoutComposingLength:I
 
@@ -8744,8 +8672,6 @@
 
 .method protected startTimer(Lcom/diotek/ime/framework/input/InputModule$Timer;I)V
     .locals 3
-    .param p1    # Lcom/diotek/ime/framework/input/InputModule$Timer;
-    .param p2    # I
 
     const/4 v0, 0x1
 
@@ -8762,7 +8688,6 @@
 
 .method protected stopTimer(Lcom/diotek/ime/framework/input/InputModule$Timer;)V
     .locals 1
-    .param p1    # Lcom/diotek/ime/framework/input/InputModule$Timer;
 
     const/4 v0, 0x0
 
@@ -8874,7 +8799,6 @@
 
 .method public toUpperCaseOfTurkish(I)I
     .locals 1
-    .param p1    # I
 
     const/16 v0, 0x69
 
@@ -9006,7 +8930,6 @@
 
 .method protected updateSequence(Ljava/lang/StringBuilder;)V
     .locals 6
-    .param p1    # Ljava/lang/StringBuilder;
 
     const/4 v5, 0x1
 

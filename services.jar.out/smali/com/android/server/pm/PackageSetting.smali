@@ -18,7 +18,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/pm/PackageSetting;)V
     .locals 1
-    .param p1    # Lcom/android/server/pm/PackageSetting;
 
     invoke-direct {p0, p1}, Lcom/android/server/pm/PackageSettingBase;-><init>(Lcom/android/server/pm/PackageSettingBase;)V
 
@@ -47,13 +46,6 @@
 
 .method constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/io/File;Ljava/io/File;Ljava/lang/String;II)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/io/File;
-    .param p4    # Ljava/io/File;
-    .param p5    # Ljava/lang/String;
-    .param p6    # I
-    .param p7    # I
 
     invoke-direct/range {p0 .. p7}, Lcom/android/server/pm/PackageSettingBase;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/io/File;Ljava/io/File;Ljava/lang/String;II)V
 

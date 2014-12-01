@@ -28,7 +28,6 @@
 
 .method private static enforceCallingPermission(Ljava/lang/String;)V
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     :try_start_0
     invoke-static {}, Landroid/app/VRSurfaceManager;->getService()Lcom/android/internal/app/IVRManagerService;
@@ -64,7 +63,6 @@
 
 .method private static getClientBufferAddress(I)I
     .locals 3
-    .param p0    # I
 
     const/4 v0, -0x1
 
@@ -87,7 +85,6 @@
 
 .method private static getFrontBufferAddress(I)I
     .locals 3
-    .param p0    # I
 
     const/4 v0, -0x1
 
@@ -161,9 +158,6 @@
 
 .method private static getSurfaceBufferAddress(I[II)I
     .locals 3
-    .param p0    # I
-    .param p1    # [I
-    .param p2    # I
 
     const/4 v0, -0x1
 
@@ -195,8 +189,6 @@
 
 .method private static setFrontBuffer(IZ)V
     .locals 2
-    .param p0    # I
-    .param p1    # Z
 
     const-string v0, "VRSurfaceManager"
 

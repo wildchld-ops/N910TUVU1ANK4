@@ -254,10 +254,6 @@
 
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;ILcom/sec/android/glview/TwGLViewGroup;Lcom/sec/android/app/camera/MenuResourceDepot;)V
     .locals 8
-    .param p1    # Lcom/sec/android/app/camera/Camera;
-    .param p2    # I
-    .param p3    # Lcom/sec/android/glview/TwGLViewGroup;
-    .param p4    # Lcom/sec/android/app/camera/MenuResourceDepot;
 
     const/4 v5, 0x6
 
@@ -644,7 +640,6 @@
 
 .method public onClick(Lcom/sec/android/glview/TwGLView;)Z
     .locals 1
-    .param p1    # Lcom/sec/android/glview/TwGLView;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLDramaMenu;->mCaptureStopButton:Lcom/sec/android/glview/TwGLButton;
 
@@ -690,8 +685,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const-string v0, "TwGLDramaMenu"
 
@@ -762,8 +755,6 @@
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const-string v0, "TwGLDramaMenu"
 
@@ -838,7 +829,6 @@
 
 .method public onOrientationChanged(I)V
     .locals 0
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/glwidget/TwGLDramaMenu;->setSizeForOrientation()V
 
@@ -884,7 +874,6 @@
 
 .method public pushInputString([B)V
     .locals 4
-    .param p1    # [B
 
     new-instance v0, Ljava/lang/String;
 
@@ -930,7 +919,6 @@
 
 .method public pushResultString([B)V
     .locals 3
-    .param p1    # [B
 
     new-instance v0, Ljava/lang/String;
 
@@ -1104,7 +1092,6 @@
 
 .method public setOnDramaCaptureCancelledListener(Lcom/sec/android/app/camera/glwidget/TwGLDramaMenu$OnDramaCaptureCancelListener;)V
     .locals 0
-    .param p1    # Lcom/sec/android/app/camera/glwidget/TwGLDramaMenu$OnDramaCaptureCancelListener;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLDramaMenu;->mListener:Lcom/sec/android/app/camera/glwidget/TwGLDramaMenu$OnDramaCaptureCancelListener;
 

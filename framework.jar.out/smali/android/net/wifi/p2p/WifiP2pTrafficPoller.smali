@@ -94,8 +94,6 @@
 
 .method constructor <init>(Landroid/content/Context;Ljava/lang/String;)V
     .locals 11
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
 
     const-wide/16 v4, 0x0
 
@@ -333,7 +331,6 @@
 
 .method static synthetic access$100(Landroid/net/wifi/p2p/WifiP2pTrafficPoller;)Landroid/net/NetworkInfo;
     .locals 1
-    .param p0    # Landroid/net/wifi/p2p/WifiP2pTrafficPoller;
 
     iget-object v0, p0, Landroid/net/wifi/p2p/WifiP2pTrafficPoller;->mNetworkInfo:Landroid/net/NetworkInfo;
 
@@ -342,8 +339,6 @@
 
 .method static synthetic access$102(Landroid/net/wifi/p2p/WifiP2pTrafficPoller;Landroid/net/NetworkInfo;)Landroid/net/NetworkInfo;
     .locals 0
-    .param p0    # Landroid/net/wifi/p2p/WifiP2pTrafficPoller;
-    .param p1    # Landroid/net/NetworkInfo;
 
     iput-object p1, p0, Landroid/net/wifi/p2p/WifiP2pTrafficPoller;->mNetworkInfo:Landroid/net/NetworkInfo;
 
@@ -352,7 +347,6 @@
 
 .method static synthetic access$202(Landroid/net/wifi/p2p/WifiP2pTrafficPoller$BoosterMode;)Landroid/net/wifi/p2p/WifiP2pTrafficPoller$BoosterMode;
     .locals 0
-    .param p0    # Landroid/net/wifi/p2p/WifiP2pTrafficPoller$BoosterMode;
 
     sput-object p0, Landroid/net/wifi/p2p/WifiP2pTrafficPoller;->mCurrentMode:Landroid/net/wifi/p2p/WifiP2pTrafficPoller$BoosterMode;
 
@@ -361,7 +355,6 @@
 
 .method static synthetic access$300(Landroid/net/wifi/p2p/WifiP2pTrafficPoller;)Landroid/net/wifi/p2p/WifiP2pTrafficPoller$TrafficHandler;
     .locals 1
-    .param p0    # Landroid/net/wifi/p2p/WifiP2pTrafficPoller;
 
     iget-object v0, p0, Landroid/net/wifi/p2p/WifiP2pTrafficPoller;->mTrafficHandler:Landroid/net/wifi/p2p/WifiP2pTrafficPoller$TrafficHandler;
 
@@ -370,7 +363,6 @@
 
 .method static synthetic access$400(Landroid/net/wifi/p2p/WifiP2pTrafficPoller;)Z
     .locals 1
-    .param p0    # Landroid/net/wifi/p2p/WifiP2pTrafficPoller;
 
     iget-boolean v0, p0, Landroid/net/wifi/p2p/WifiP2pTrafficPoller;->mEnableTrafficStatsPoll:Z
 
@@ -379,8 +371,6 @@
 
 .method static synthetic access$402(Landroid/net/wifi/p2p/WifiP2pTrafficPoller;Z)Z
     .locals 0
-    .param p0    # Landroid/net/wifi/p2p/WifiP2pTrafficPoller;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/net/wifi/p2p/WifiP2pTrafficPoller;->mEnableTrafficStatsPoll:Z
 
@@ -389,7 +379,6 @@
 
 .method static synthetic access$500(Landroid/net/wifi/p2p/WifiP2pTrafficPoller;)I
     .locals 1
-    .param p0    # Landroid/net/wifi/p2p/WifiP2pTrafficPoller;
 
     iget v0, p0, Landroid/net/wifi/p2p/WifiP2pTrafficPoller;->mTrafficStatsPollToken:I
 
@@ -398,7 +387,6 @@
 
 .method static synthetic access$508(Landroid/net/wifi/p2p/WifiP2pTrafficPoller;)I
     .locals 2
-    .param p0    # Landroid/net/wifi/p2p/WifiP2pTrafficPoller;
 
     iget v0, p0, Landroid/net/wifi/p2p/WifiP2pTrafficPoller;->mTrafficStatsPollToken:I
 
@@ -413,9 +401,6 @@
 # virtual methods
 .method dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 

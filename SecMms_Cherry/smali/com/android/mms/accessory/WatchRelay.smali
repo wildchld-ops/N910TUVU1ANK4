@@ -150,7 +150,6 @@
 
 .method public static converStringIdsToIntArray(Ljava/lang/String;)[I
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     const-string v3, ","
 
@@ -385,9 +384,6 @@
 
 .method public static getUnreadMsgFromThread(Landroid/content/Context;J[I)[Landroid/net/Uri;
     .locals 21
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
-    .param p3    # [I
 
     const-string v3, "com.samsung.accessory.sanotiprovider"
 
@@ -697,9 +693,6 @@
 
 .method private static makeReadMsgIntent([ILjava/lang/String;I)Landroid/content/Intent;
     .locals 3
-    .param p0    # [I
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     new-instance v0, Landroid/content/Intent;
 
@@ -732,11 +725,6 @@
 
 .method private static makeReceivedMsgIntent(I[ILjava/lang/String;Ljava/lang/String;Z)Landroid/content/Intent;
     .locals 3
-    .param p0    # I
-    .param p1    # [I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Z
 
     new-instance v0, Landroid/content/Intent;
 
@@ -791,9 +779,6 @@
 
 .method private static makeReceivedMsgIntentForDDM([ILjava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
     .locals 4
-    .param p0    # [I
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -842,7 +827,6 @@
 
 .method private static makeUri(I)Ljava/lang/String;
     .locals 2
-    .param p0    # I
 
     sget-object v0, Lcom/android/mms/accessory/WatchRelay;->URI:[Ljava/lang/String;
 
@@ -871,8 +855,6 @@
 
 .method public static markAsRead(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 11
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/content/Intent;
 
     if-nez p1, :cond_1
 
@@ -1067,7 +1049,6 @@
 
 .method public static sendClearAllMsgIntent(Landroid/content/Context;)V
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -1118,9 +1099,6 @@
 
 .method public static sendReadMsgIntent(Landroid/content/Context;II)V
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # I
 
     const-string v3, "com.samsung.accessory.sanotiprovider"
 
@@ -1181,9 +1159,6 @@
 
 .method public static sendReadMsgIntent(Landroid/content/Context;ILandroid/net/Uri;)V
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # Landroid/net/Uri;
 
     const-string v3, "com.samsung.accessory.sanotiprovider"
 
@@ -1252,9 +1227,6 @@
 
 .method public static sendReadMsgIntent(Landroid/content/Context;ILjava/lang/String;)V
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const-string v2, "com.samsung.accessory.sanotiprovider"
 
@@ -1313,9 +1285,6 @@
 
 .method public static sendReadMsgIntent(Landroid/content/Context;I[I)V
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # [I
 
     const-string v2, "com.samsung.accessory.sanotiprovider"
 
@@ -1368,8 +1337,6 @@
 
 .method public static sendReadMsgIntent(Landroid/content/Context;J)V
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
 
     const-string v2, "com.samsung.accessory.sanotiprovider"
 
@@ -1398,9 +1365,6 @@
 
 .method public static sendReadNotificationProvider(Landroid/content/Context;[Landroid/net/Uri;[I)V
     .locals 12
-    .param p0    # Landroid/content/Context;
-    .param p1    # [Landroid/net/Uri;
-    .param p2    # [I
 
     const/4 v11, 0x0
 
@@ -1567,10 +1531,6 @@
 
 .method public static sendReceivedMsgIntent(Landroid/content/Context;IJLjava/lang/String;)V
     .locals 8
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # J
-    .param p4    # Ljava/lang/String;
 
     const v7, 0x7f0c013b
 
@@ -1736,11 +1696,6 @@
 
 .method public static sendReceivedMsgIntent(Landroid/content/Context;ILandroid/net/Uri;Ljava/lang/String;Ljava/lang/String;)V
     .locals 7
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # Landroid/net/Uri;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     const/4 v6, 0x1
 
@@ -1809,11 +1764,6 @@
 
 .method public static sendReceivedMsgIntent(Landroid/content/Context;I[ILjava/lang/String;Ljava/lang/String;)V
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # [I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     const-string v2, "com.samsung.accessory.sanotiprovider"
 
@@ -1868,8 +1818,6 @@
 
 .method public static sendReceivedMsgIntent(Landroid/content/Context;Ljava/util/SortedSet;Ljava/util/SortedSet;Lcom/android/mms/transaction/MessagingNotification$NotificationInfo;)V
     .locals 11
-    .param p0    # Landroid/content/Context;
-    .param p3    # Lcom/android/mms/transaction/MessagingNotification$NotificationInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2167,10 +2115,6 @@
 
 .method public static sendReceivedMsgIntentForDDM(Landroid/content/Context;JLjava/lang/String;Ljava/lang/String;)V
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # J
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     const-string v2, "com.samsung.accessory.sanotiprovider"
 
@@ -2229,8 +2173,6 @@
 
 .method private static setNotificationId(Landroid/content/Intent;I)Landroid/content/Intent;
     .locals 2
-    .param p0    # Landroid/content/Intent;
-    .param p1    # I
 
     const/16 v1, 0x7b
 
@@ -2290,8 +2232,6 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     const/4 v4, 0x1
 

@@ -28,7 +28,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/DeviceNameDialog;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/DeviceNameDialog;
 
     invoke-direct {p0}, Lcom/android/settings/DeviceNameDialog;->saveToDb()Z
 
@@ -39,7 +38,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/DeviceNameDialog;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/settings/DeviceNameDialog;
 
     iget-object v0, p0, Lcom/android/settings/DeviceNameDialog;->mTempName:Ljava/lang/String;
 
@@ -48,8 +46,6 @@
 
 .method static synthetic access$102(Lcom/android/settings/DeviceNameDialog;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/android/settings/DeviceNameDialog;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/settings/DeviceNameDialog;->mTempName:Ljava/lang/String;
 
@@ -58,7 +54,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/DeviceNameDialog;)Landroid/widget/EditText;
     .locals 1
-    .param p0    # Lcom/android/settings/DeviceNameDialog;
 
     iget-object v0, p0, Lcom/android/settings/DeviceNameDialog;->mEditText:Landroid/widget/EditText;
 
@@ -67,7 +62,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/DeviceNameDialog;)Landroid/widget/Toast;
     .locals 1
-    .param p0    # Lcom/android/settings/DeviceNameDialog;
 
     iget-object v0, p0, Lcom/android/settings/DeviceNameDialog;->mMaxToast:Landroid/widget/Toast;
 
@@ -76,8 +70,6 @@
 
 .method static synthetic access$302(Lcom/android/settings/DeviceNameDialog;Landroid/widget/Toast;)Landroid/widget/Toast;
     .locals 0
-    .param p0    # Lcom/android/settings/DeviceNameDialog;
-    .param p1    # Landroid/widget/Toast;
 
     iput-object p1, p0, Lcom/android/settings/DeviceNameDialog;->mMaxToast:Landroid/widget/Toast;
 
@@ -184,7 +176,6 @@
 
 .method private initView(Landroid/view/View;)V
     .locals 8
-    .param p1    # Landroid/view/View;
 
     const/4 v7, 0x1
 
@@ -433,7 +424,6 @@
 
 .method protected onPostCreate(Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onPostCreate(Landroid/os/Bundle;)V
 

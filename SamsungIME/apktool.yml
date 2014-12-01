@@ -14,9 +14,9 @@ versionInfo:
   versionName: '4.0'
 compressionType: false
 unknownFiles:
-  org/apache/commons/codec/overview.html: '8'
-  org/apache/commons/codec/package.html: '8'
-  org/apache/commons/codec/binary/package.html: '8'
-  org/apache/commons/codec/digest/package.html: '8'
-  org/apache/commons/codec/language/package.html: '8'
-  org/apache/commons/codec/net/package.html: '8'
+  org/apache/commons/codec/package.html: '0'
+  org/apache/commons/codec/overview.html: '0'
+  org/apache/commons/codec/net/package.html: '0'
+  org/apache/commons/codec/binary/package.html: '0'
+  org/apache/commons/codec/digest/package.html: '0'
+  org/apache/commons/codec/language/package.html: '0'

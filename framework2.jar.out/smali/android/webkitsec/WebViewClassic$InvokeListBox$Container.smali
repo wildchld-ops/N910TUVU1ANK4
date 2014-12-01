@@ -45,8 +45,6 @@
 
 .method synthetic constructor <init>(Landroid/webkitsec/WebViewClassic$InvokeListBox;Landroid/webkitsec/WebViewClassic$1;)V
     .locals 0
-    .param p1    # Landroid/webkitsec/WebViewClassic$InvokeListBox;
-    .param p2    # Landroid/webkitsec/WebViewClassic$1;
 
     invoke-direct {p0, p1}, Landroid/webkitsec/WebViewClassic$InvokeListBox$Container;-><init>(Landroid/webkitsec/WebViewClassic$InvokeListBox;)V
 

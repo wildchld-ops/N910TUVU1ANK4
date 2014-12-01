@@ -20,13 +20,6 @@
 
 .method public static writeTtsSpeakFailure(Ljava/lang/String;IIILjava/lang/String;II)V
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
-    .param p6    # I
 
     const v0, 0x128e2
 
@@ -89,16 +82,6 @@
 
 .method public static writeTtsSpeakSuccess(Ljava/lang/String;IIILjava/lang/String;IIJJJ)V
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
-    .param p6    # I
-    .param p7    # J
-    .param p9    # J
-    .param p11    # J
 
     const v0, 0x128e1
 

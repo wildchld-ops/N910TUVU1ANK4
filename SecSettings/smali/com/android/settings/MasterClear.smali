@@ -81,8 +81,6 @@
 
 .method static synthetic access$002(Lcom/android/settings/MasterClear;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/MasterClear;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/MasterClear;->mPinConfirmed:Z
 
@@ -91,7 +89,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/MasterClear;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/MasterClear;
 
     invoke-direct {p0}, Lcom/android/settings/MasterClear;->runRestrictionsChallenge()Z
 
@@ -102,8 +99,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/MasterClear;I)Z
     .locals 1
-    .param p0    # Lcom/android/settings/MasterClear;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/settings/MasterClear;->runKeyguardConfirmation(I)Z
 
@@ -114,7 +109,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/MasterClear;)V
     .locals 0
-    .param p0    # Lcom/android/settings/MasterClear;
 
     invoke-direct {p0}, Lcom/android/settings/MasterClear;->showFinalConfirmation()V
 
@@ -123,7 +117,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/MasterClear;)Lcom/sec/android/touchwiz/widget/TwCheckBox;
     .locals 1
-    .param p0    # Lcom/android/settings/MasterClear;
 
     iget-object v0, p0, Lcom/android/settings/MasterClear;->mExternalStorage:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
@@ -132,7 +125,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/MasterClear;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/MasterClear;
 
     iget-boolean v0, p0, Lcom/android/settings/MasterClear;->mNotTouched:Z
 
@@ -141,8 +133,6 @@
 
 .method static synthetic access$502(Lcom/android/settings/MasterClear;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/MasterClear;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/MasterClear;->mNotTouched:Z
 
@@ -151,7 +141,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/MasterClear;)Landroid/widget/ScrollView;
     .locals 1
-    .param p0    # Lcom/android/settings/MasterClear;
 
     iget-object v0, p0, Lcom/android/settings/MasterClear;->mScrollView:Landroid/widget/ScrollView;
 
@@ -1550,7 +1539,6 @@
 
 .method private runKeyguardConfirmation(I)Z
     .locals 4
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/settings/MasterClear;->getActivity()Landroid/app/Activity;
 
@@ -1689,9 +1677,6 @@
 # virtual methods
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const/16 v5, 0x3eb
 
@@ -1809,9 +1794,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 2
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const v0, 0x7f040146
 

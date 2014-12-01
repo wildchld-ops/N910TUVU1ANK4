@@ -571,9 +571,6 @@
 
 .method public constructor <init>(Landroid/content/res/AssetManager;Landroid/util/DisplayMetrics;Landroid/content/res/Configuration;)V
     .locals 6
-    .param p1    # Landroid/content/res/AssetManager;
-    .param p2    # Landroid/util/DisplayMetrics;
-    .param p3    # Landroid/content/res/Configuration;
 
     sget-object v4, Landroid/content/res/CompatibilityInfo;->DEFAULT_COMPATIBILITY_INFO:Landroid/content/res/CompatibilityInfo;
 
@@ -594,11 +591,6 @@
 
 .method public constructor <init>(Landroid/content/res/AssetManager;Landroid/util/DisplayMetrics;Landroid/content/res/Configuration;Landroid/content/res/CompatibilityInfo;Landroid/os/IBinder;)V
     .locals 4
-    .param p1    # Landroid/content/res/AssetManager;
-    .param p2    # Landroid/util/DisplayMetrics;
-    .param p3    # Landroid/content/res/Configuration;
-    .param p4    # Landroid/content/res/CompatibilityInfo;
-    .param p5    # Landroid/os/IBinder;
 
     const/4 v3, 0x4
 
@@ -785,7 +777,6 @@
 
 .method static synthetic access$000(Landroid/content/res/Resources;)Ljava/util/HashMap;
     .locals 1
-    .param p0    # Landroid/content/res/Resources;
 
     iget-object v0, p0, Landroid/content/res/Resources;->resListItems:Ljava/util/HashMap;
 
@@ -810,7 +801,6 @@
 
 .method static synthetic access$300(Landroid/content/res/Resources;)Landroid/content/res/Configuration;
     .locals 1
-    .param p0    # Landroid/content/res/Resources;
 
     iget-object v0, p0, Landroid/content/res/Resources;->mConfiguration:Landroid/content/res/Configuration;
 
@@ -819,8 +809,6 @@
 
 .method static synthetic access$400(Landroid/content/res/Resources;I)Landroid/content/res/TypedArray;
     .locals 1
-    .param p0    # Landroid/content/res/Resources;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/content/res/Resources;->getCachedStyledAttributes(I)Landroid/content/res/TypedArray;
 
@@ -831,9 +819,6 @@
 
 .method private varargs addFormattedString(ILjava/lang/String;[Ljava/lang/Object;)V
     .locals 10
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # [Ljava/lang/Object;
 
     const-string v8, "Formatted"
 
@@ -935,8 +920,6 @@
 
 .method private addToAppNamesMap(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)V
     .locals 5
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Ljava/lang/CharSequence;
 
     iget-object v4, p0, Landroid/content/res/Resources;->appAndWidgetStringNamesMap:Ljava/util/Map;
 
@@ -1011,9 +994,6 @@
 
 .method private addToMap(Ljava/lang/CharSequence;ILjava/lang/String;)V
     .locals 7
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     iget-object v5, p0, Landroid/content/res/Resources;->resourcesMap:Ljava/util/Map;
 
@@ -1114,8 +1094,6 @@
 
 .method private addToNotiMap(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)V
     .locals 5
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Ljava/lang/CharSequence;
 
     sget-object v4, Landroid/content/res/Resources;->notificationStringsOriginMap:Ljava/util/Map;
 
@@ -1188,7 +1166,6 @@
 
 .method private static attrForQuantityCode(I)I
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -1236,7 +1213,6 @@
 
 .method private clearALDCLocked(Landroid/util/LongSparseArray;I)V
     .locals 4
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1287,7 +1263,6 @@
 
 .method private clearDrawableCacheLocked(Landroid/util/LongSparseArray;I)V
     .locals 5
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1350,7 +1325,6 @@
 
 .method private getALCDrawable(Landroid/util/LongSparseArray;J)Landroid/graphics/drawable/Drawable;
     .locals 3
-    .param p2    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1405,7 +1379,6 @@
 
 .method private getCachedColorStateList(J)Landroid/content/res/ColorStateList;
     .locals 4
-    .param p1    # J
 
     iget-object v3, p0, Landroid/content/res/Resources;->mAccessLock:Ljava/lang/Object;
 
@@ -1459,7 +1432,6 @@
 
 .method private getCachedDrawable(Landroid/util/LongSparseArray;J)Landroid/graphics/drawable/Drawable;
     .locals 4
-    .param p2    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1525,7 +1497,6 @@
 
 .method private getCachedStyledAttributes(I)Landroid/content/res/TypedArray;
     .locals 5
-    .param p1    # I
 
     iget-object v3, p0, Landroid/content/res/Resources;->mAccessLock:Ljava/lang/Object;
 
@@ -1641,8 +1612,6 @@
 
 .method private getStringName(Landroid/content/pm/ResolveInfo;Landroid/content/pm/PackageManager;)Ljava/lang/CharSequence;
     .locals 5
-    .param p1    # Landroid/content/pm/ResolveInfo;
-    .param p2    # Landroid/content/pm/PackageManager;
 
     const/4 v2, 0x0
 
@@ -1845,9 +1814,6 @@
 
 .method private getStringName(Ljava/lang/String;ILandroid/content/pm/PackageManager;)Ljava/lang/CharSequence;
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Landroid/content/pm/PackageManager;
 
     const/4 v2, 0x0
 
@@ -1915,7 +1881,6 @@
 
 .method private loadAppNames(Landroid/content/pm/PackageManager;)V
     .locals 3
-    .param p1    # Landroid/content/pm/PackageManager;
 
     const/4 v2, 0x0
 
@@ -1944,9 +1909,6 @@
 
 .method private loadNamesFromMetaData(Ljava/lang/String;Landroid/content/pm/ResolveInfo;Landroid/content/Context;)V
     .locals 11
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/pm/ResolveInfo;
-    .param p3    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -2054,8 +2016,6 @@
 
 .method private matchFormattedStringToKey(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -2147,7 +2107,6 @@
 
 .method private resetStringNames(Landroid/content/res/Configuration;)V
     .locals 2
-    .param p1    # Landroid/content/res/Configuration;
 
     sget-boolean v0, Landroid/os/Build;->IS_SYSTEM_SECURE:Z
 
@@ -2199,7 +2158,6 @@
 
 .method public static resourceHasPackage(I)Z
     .locals 1
-    .param p0    # I
 
     ushr-int/lit8 v0, p0, 0x18
 
@@ -2218,8 +2176,6 @@
 
 .method private searchAppAndWidgetStringNames(Ljava/lang/StringBuilder;Ljava/lang/CharSequence;)V
     .locals 6
-    .param p1    # Ljava/lang/StringBuilder;
-    .param p2    # Ljava/lang/CharSequence;
 
     iget-object v5, p0, Landroid/content/res/Resources;->appAndWidgetStringNamesMap:Ljava/util/Map;
 
@@ -2306,7 +2262,6 @@
 
 .method private searchFor(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
     .locals 10
-    .param p1    # Ljava/lang/CharSequence;
 
     new-instance v5, Ljava/lang/StringBuilder;
 
@@ -2518,8 +2473,6 @@
 
 .method private searchNotificationStringName(Ljava/lang/StringBuilder;Ljava/lang/CharSequence;)V
     .locals 6
-    .param p1    # Ljava/lang/StringBuilder;
-    .param p2    # Ljava/lang/CharSequence;
 
     sget-object v5, Landroid/content/res/Resources;->notificationStringsOriginMap:Ljava/util/Map;
 
@@ -2598,8 +2551,6 @@
 
 .method public static selectDefaultTheme(II)I
     .locals 3
-    .param p0    # I
-    .param p1    # I
 
     const v0, 0x1030005
 
@@ -2616,11 +2567,6 @@
 
 .method public static selectSystemTheme(IIIII)I
     .locals 1
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     if-eqz p0, :cond_0
 
@@ -2653,7 +2599,6 @@
 
 .method private static stringForQuantityCode(I)Ljava/lang/String;
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -2701,9 +2646,6 @@
 
 .method public static updateSystemConfiguration(Landroid/content/res/Configuration;Landroid/util/DisplayMetrics;Landroid/content/res/CompatibilityInfo;)V
     .locals 1
-    .param p0    # Landroid/content/res/Configuration;
-    .param p1    # Landroid/util/DisplayMetrics;
-    .param p2    # Landroid/content/res/CompatibilityInfo;
 
     sget-object v0, Landroid/content/res/Resources;->mSystem:Landroid/content/res/Resources;
 
@@ -2719,7 +2661,6 @@
 
 .method public static updateSystemDisplayMetrics(Landroid/util/DisplayMetrics;)V
     .locals 1
-    .param p0    # Landroid/util/DisplayMetrics;
 
     sget-object v0, Landroid/content/res/Resources;->mSystem:Landroid/content/res/Resources;
 
@@ -2735,10 +2676,6 @@
 
 .method private verifyPreloadConfig(IIILjava/lang/String;)Z
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
 
     const v2, -0x40001001
 
@@ -2832,8 +2769,6 @@
 # virtual methods
 .method public addAccountsNames(Landroid/content/Context;[Landroid/accounts/AuthenticatorDescription;)V
     .locals 14
-    .param p1    # Landroid/content/Context;
-    .param p2    # [Landroid/accounts/AuthenticatorDescription;
 
     sget-boolean v12, Landroid/os/Build;->IS_SYSTEM_SECURE:Z
 
@@ -2942,8 +2877,6 @@
 
 .method public addAppsNames(Landroid/content/Context;Landroid/content/pm/PackageManager;Ljava/util/List;)V
     .locals 9
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/pm/PackageManager;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3066,7 +2999,6 @@
 
 .method public addAppsNames(Landroid/content/Context;Ljava/util/List;)V
     .locals 8
-    .param p1    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3165,7 +3097,6 @@
 
 .method public addMenuItemTitle(Landroid/content/res/TypedArray;)V
     .locals 4
-    .param p1    # Landroid/content/res/TypedArray;
 
     sget-boolean v1, Landroid/os/Build;->IS_SYSTEM_SECURE:Z
 
@@ -3207,8 +3138,6 @@
 
 .method public addNotificationString(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)V
     .locals 2
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Ljava/lang/CharSequence;
 
     sget-boolean v1, Landroid/os/Build;->IS_SYSTEM_SECURE:Z
 
@@ -3233,8 +3162,6 @@
 
 .method public addPreferenceString(Ljava/lang/CharSequence;I)V
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
 
     sget-boolean v0, Landroid/os/Build;->IS_SYSTEM_SECURE:Z
 
@@ -3328,7 +3255,6 @@
 
 .method public getAnimation(I)Landroid/content/res/XmlResourceParser;
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/res/Resources$NotFoundException;
@@ -3354,7 +3280,6 @@
 
 .method public getBoolean(I)Z
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/res/Resources$NotFoundException;
@@ -3472,7 +3397,6 @@
 
 .method public getColor(I)I
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/res/Resources$NotFoundException;
@@ -3633,7 +3557,6 @@
 
 .method public getColorStateList(I)Landroid/content/res/ColorStateList;
     .locals 4
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/res/Resources$NotFoundException;
@@ -3730,7 +3653,6 @@
 
 .method public getDimension(I)F
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/res/Resources$NotFoundException;
@@ -3838,7 +3760,6 @@
 
 .method public getDimensionPixelOffset(I)I
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/res/Resources$NotFoundException;
@@ -3946,7 +3867,6 @@
 
 .method public getDimensionPixelSize(I)I
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/res/Resources$NotFoundException;
@@ -4062,7 +3982,6 @@
 
 .method public getDrawable(I)Landroid/graphics/drawable/Drawable;
     .locals 4
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/res/Resources$NotFoundException;
@@ -4148,8 +4067,6 @@
 
 .method public getDrawableForDensity(II)Landroid/graphics/drawable/Drawable;
     .locals 5
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/res/Resources$NotFoundException;
@@ -4275,9 +4192,6 @@
 
 .method public getFraction(III)F
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     iget-object v2, p0, Landroid/content/res/Resources;->mAccessLock:Ljava/lang/Object;
 
@@ -4382,9 +4296,6 @@
 
 .method public getIdentifier(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -4421,7 +4332,6 @@
 
 .method public getIntArray(I)[I
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/res/Resources$NotFoundException;
@@ -4516,7 +4426,6 @@
 
 .method public getInteger(I)I
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/res/Resources$NotFoundException;
@@ -4624,7 +4533,6 @@
 
 .method public getLayout(I)Landroid/content/res/XmlResourceParser;
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/res/Resources$NotFoundException;
@@ -4642,7 +4550,6 @@
 
 .method public getMovie(I)Landroid/graphics/Movie;
     .locals 3
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/res/Resources$NotFoundException;
@@ -4694,8 +4601,6 @@
 
 .method public getQuantityString(II)Ljava/lang/String;
     .locals 1
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/res/Resources$NotFoundException;
@@ -4715,9 +4620,6 @@
 
 .method public varargs getQuantityString(II[Ljava/lang/Object;)Ljava/lang/String;
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/res/Resources$NotFoundException;
@@ -4752,8 +4654,6 @@
 
 .method public getQuantityText(II)Ljava/lang/CharSequence;
     .locals 7
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/res/Resources$NotFoundException;
@@ -4918,7 +4818,6 @@
 
 .method public getResourceEntryName(I)Ljava/lang/String;
     .locals 4
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/res/Resources$NotFoundException;
@@ -4967,7 +4866,6 @@
 
 .method public getResourceName(I)Ljava/lang/String;
     .locals 4
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/res/Resources$NotFoundException;
@@ -5016,7 +4914,6 @@
 
 .method public getResourcePackageName(I)Ljava/lang/String;
     .locals 4
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/res/Resources$NotFoundException;
@@ -5065,7 +4962,6 @@
 
 .method public getResourceTypeName(I)Ljava/lang/String;
     .locals 4
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/res/Resources$NotFoundException;
@@ -5114,7 +5010,6 @@
 
 .method public getString(I)Ljava/lang/String;
     .locals 4
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/res/Resources$NotFoundException;
@@ -5165,8 +5060,6 @@
 
 .method public varargs getString(I[Ljava/lang/Object;)Ljava/lang/String;
     .locals 3
-    .param p1    # I
-    .param p2    # [Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/res/Resources$NotFoundException;
@@ -5197,7 +5090,6 @@
 
 .method public getStringArray(I)[Ljava/lang/String;
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/res/Resources$NotFoundException;
@@ -5288,7 +5180,6 @@
 
 .method public getStringNames(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
 
     sget-boolean v0, Landroid/os/Build;->IS_SYSTEM_SECURE:Z
 
@@ -5311,7 +5202,6 @@
 
 .method public getText(I)Ljava/lang/CharSequence;
     .locals 4
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/res/Resources$NotFoundException;
@@ -5369,8 +5259,6 @@
 
 .method public getText(ILjava/lang/CharSequence;)Ljava/lang/CharSequence;
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/CharSequence;
 
     if-eqz p1, :cond_1
 
@@ -5428,7 +5316,6 @@
 
 .method public getTextArray(I)[Ljava/lang/CharSequence;
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/res/Resources$NotFoundException;
@@ -5519,9 +5406,6 @@
 
 .method public getValue(ILandroid/util/TypedValue;Z)V
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/util/TypedValue;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/res/Resources$NotFoundException;
@@ -5572,9 +5456,6 @@
 
 .method public getValue(Ljava/lang/String;Landroid/util/TypedValue;Z)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/util/TypedValue;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/res/Resources$NotFoundException;
@@ -5623,10 +5504,6 @@
 
 .method public getValueForDensity(IILandroid/util/TypedValue;Z)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/util/TypedValue;
-    .param p4    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/res/Resources$NotFoundException;
@@ -5675,7 +5552,6 @@
 
 .method public getXml(I)Landroid/content/res/XmlResourceParser;
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/res/Resources$NotFoundException;
@@ -5701,8 +5577,6 @@
 
 .method loadColorStateList(Landroid/util/TypedValue;I)Landroid/content/res/ColorStateList;
     .locals 12
-    .param p1    # Landroid/util/TypedValue;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/res/Resources$NotFoundException;
@@ -6031,8 +5905,6 @@
 
 .method loadDrawable(Landroid/util/TypedValue;I)Landroid/graphics/drawable/Drawable;
     .locals 27
-    .param p1    # Landroid/util/TypedValue;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/res/Resources$NotFoundException;
@@ -7563,7 +7435,6 @@
 
 .method public loadRs(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     iget-object v5, p0, Landroid/content/res/Resources;->mTypedValue:Ljava/util/List;
 
@@ -7618,8 +7489,6 @@
 
 .method loadXmlResourceParser(ILjava/lang/String;)Landroid/content/res/XmlResourceParser;
     .locals 5
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/res/Resources$NotFoundException;
@@ -7731,10 +7600,6 @@
 
 .method loadXmlResourceParser(Ljava/lang/String;IILjava/lang/String;)Landroid/content/res/XmlResourceParser;
     .locals 11
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/res/Resources$NotFoundException;
@@ -7972,8 +7837,6 @@
 
 .method public obtainAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
     .locals 7
-    .param p1    # Landroid/util/AttributeSet;
-    .param p2    # [I
 
     array-length v1, p2
 
@@ -8004,7 +7867,6 @@
 
 .method public obtainTypedArray(I)Landroid/content/res/TypedArray;
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/res/Resources$NotFoundException;
@@ -8073,7 +7935,6 @@
 
 .method public openRawResource(I)Ljava/io/InputStream;
     .locals 4
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/res/Resources$NotFoundException;
@@ -8150,8 +8011,6 @@
 
 .method public openRawResource(ILandroid/util/TypedValue;)Ljava/io/InputStream;
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/util/TypedValue;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/res/Resources$NotFoundException;
@@ -8235,7 +8094,6 @@
 
 .method public openRawResourceFd(I)Landroid/content/res/AssetFileDescriptor;
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/res/Resources$NotFoundException;
@@ -8413,9 +8271,6 @@
 
 .method public parseBundleExtra(Ljava/lang/String;Landroid/util/AttributeSet;Landroid/os/Bundle;)V
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;
@@ -8642,8 +8497,6 @@
 
 .method public parseBundleExtras(Landroid/content/res/XmlResourceParser;Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/content/res/XmlResourceParser;
-    .param p2    # Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -8713,7 +8566,6 @@
 
 .method public setCompatibilityInfo(Landroid/content/res/CompatibilityInfo;)V
     .locals 2
-    .param p1    # Landroid/content/res/CompatibilityInfo;
 
     if-eqz p1, :cond_0
 
@@ -8731,8 +8583,6 @@
 
 .method public setRCable(ILjava/io/File;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Ljava/io/File;
 
     sput p1, Landroid/content/res/Resources;->mStartStoringRL:I
 
@@ -8743,7 +8593,6 @@
 
 .method public setRLRable(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_1
 
@@ -8890,9 +8739,6 @@
 
 .method public startRC(Landroid/content/Context;Ljava/lang/String;Ljava/io/File;)V
     .locals 10
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/io/File;
 
     const/4 v1, 0x0
 
@@ -9249,8 +9095,6 @@
 
 .method public updateConfiguration(Landroid/content/res/Configuration;Landroid/util/DisplayMetrics;)V
     .locals 1
-    .param p1    # Landroid/content/res/Configuration;
-    .param p2    # Landroid/util/DisplayMetrics;
 
     const/4 v0, 0x0
 
@@ -9261,9 +9105,6 @@
 
 .method public updateConfiguration(Landroid/content/res/Configuration;Landroid/util/DisplayMetrics;Landroid/content/res/CompatibilityInfo;)V
     .locals 23
-    .param p1    # Landroid/content/res/Configuration;
-    .param p2    # Landroid/util/DisplayMetrics;
-    .param p3    # Landroid/content/res/CompatibilityInfo;
 
     move-object/from16 v0, p0
 
@@ -9826,7 +9667,6 @@
 
 .method public updateDisplayMetrics(Landroid/util/DisplayMetrics;)V
     .locals 3
-    .param p1    # Landroid/util/DisplayMetrics;
 
     iget-object v1, p0, Landroid/content/res/Resources;->mAccessLock:Ljava/lang/Object;
 

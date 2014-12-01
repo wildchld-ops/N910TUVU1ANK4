@@ -44,7 +44,6 @@
 # virtual methods
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [Ljava/lang/Void;
 
@@ -57,7 +56,6 @@
 
 .method protected varargs doInBackground([Ljava/lang/Void;)Ljava/lang/Void;
     .locals 20
-    .param p1    # [Ljava/lang/Void;
 
     :try_start_0
     sget-object v3, Landroid/provider/ContactsContract$CommonDataKinds$Phone;->CONTENT_URI:Landroid/net/Uri;
@@ -562,7 +560,6 @@
 
 .method protected bridge synthetic onPostExecute(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Ljava/lang/Void;
 
@@ -573,7 +570,6 @@
 
 .method protected onPostExecute(Ljava/lang/Void;)V
     .locals 1
-    .param p1    # Ljava/lang/Void;
 
     iget-object v0, p0, Lcom/touchtype/personalizer/ContactsParser$1;->this$0:Lcom/touchtype/personalizer/ContactsParser;
 
@@ -584,7 +580,6 @@
 
 .method protected varargs onProgressUpdate([Ljava/lang/Integer;)V
     .locals 3
-    .param p1    # [Ljava/lang/Integer;
 
     iget-object v0, p0, Lcom/touchtype/personalizer/ContactsParser$1;->this$0:Lcom/touchtype/personalizer/ContactsParser;
 
@@ -611,7 +606,6 @@
 
 .method protected bridge synthetic onProgressUpdate([Ljava/lang/Object;)V
     .locals 0
-    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [Ljava/lang/Integer;
 

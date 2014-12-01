@@ -54,8 +54,6 @@
 
 .method protected constructor <init>(Landroid/content/Context;I)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/mms/rcs/transaction/ImBaseTransaction;-><init>(Landroid/content/Context;I)V
 
@@ -82,12 +80,6 @@
 
 .method protected constructor <init>(Landroid/content/Context;ILandroid/net/Uri;Ljava/lang/String;JLjava/lang/String;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Landroid/net/Uri;
-    .param p4    # Ljava/lang/String;
-    .param p5    # J
-    .param p7    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Lcom/android/mms/rcs/transaction/RcsBaseTransaction;-><init>(Landroid/content/Context;I)V
 
@@ -104,7 +96,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/rcs/transaction/RcsBaseTransaction;)V
     .locals 0
-    .param p0    # Lcom/android/mms/rcs/transaction/RcsBaseTransaction;
 
     invoke-direct {p0}, Lcom/android/mms/rcs/transaction/RcsBaseTransaction;->onConnected()V
 
@@ -113,7 +104,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/rcs/transaction/RcsBaseTransaction;)Lcom/android/mms/rcs/transaction/RcsBaseTransaction$RcsInfo;
     .locals 1
-    .param p0    # Lcom/android/mms/rcs/transaction/RcsBaseTransaction;
 
     iget-object v0, p0, Lcom/android/mms/rcs/transaction/RcsBaseTransaction;->mFallbackMessages:Lcom/android/mms/rcs/transaction/RcsBaseTransaction$RcsInfo;
 
@@ -122,7 +112,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/rcs/transaction/RcsBaseTransaction;)V
     .locals 0
-    .param p0    # Lcom/android/mms/rcs/transaction/RcsBaseTransaction;
 
     invoke-direct {p0}, Lcom/android/mms/rcs/transaction/RcsBaseTransaction;->unbindFallbackService()V
 
@@ -131,9 +120,6 @@
 
 .method private isAvaiableForMMSConversion(Ljava/lang/String;Ljava/lang/Long;I)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Long;
-    .param p3    # I
 
     const-string v1, "Mms/RcsBaseTransaction"
 
@@ -212,7 +198,6 @@
 
 .method private isValidErrorCode(I)Z
     .locals 1
-    .param p1    # I
 
     const/16 v0, 0xc
 
@@ -240,9 +225,6 @@
 
 .method private makeRequestForConversion(Ljava/lang/String;Landroid/database/Cursor;Ljava/lang/Long;)V
     .locals 14
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/database/Cursor;
-    .param p3    # Ljava/lang/Long;
 
     const-string v1, "chat_id"
 
@@ -500,10 +482,6 @@
 
 .method private onFTCancelUpdate(Landroid/database/Cursor;Ljava/lang/Long;IJ)V
     .locals 17
-    .param p1    # Landroid/database/Cursor;
-    .param p2    # Ljava/lang/Long;
-    .param p3    # I
-    .param p4    # J
 
     const-string v3, "Mms/RcsBaseTransaction"
 
@@ -963,7 +941,6 @@
 
 .method private updateChatId(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     new-instance v1, Landroid/content/ContentValues;
 
@@ -1087,8 +1064,6 @@
 
 .method protected fillFromCursor(ZLandroid/database/Cursor;)Landroid/content/ContentValues;
     .locals 5
-    .param p1    # Z
-    .param p2    # Landroid/database/Cursor;
 
     const/4 v4, 0x0
 
@@ -1467,10 +1442,6 @@
 
 .method protected getThreadByChatId(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)Ljava/lang/Long;
     .locals 17
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Z
 
     const-string v1, "Mms/RcsBaseTransaction"
 
@@ -1788,7 +1759,6 @@
 
 .method protected hideRcsMessage(Lcom/android/mms/rcs/transaction/RcsBaseTransaction$RcsInfo;)V
     .locals 7
-    .param p1    # Lcom/android/mms/rcs/transaction/RcsBaseTransaction$RcsInfo;
 
     const/4 v4, 0x0
 
@@ -1856,10 +1826,6 @@
 
 .method public onFTCanceled(Ljava/lang/Long;IJI)V
     .locals 20
-    .param p1    # Ljava/lang/Long;
-    .param p2    # I
-    .param p3    # J
-    .param p5    # I
 
     const-string v3, "Mms/RcsBaseTransaction"
 
@@ -2456,8 +2422,6 @@
 
 .method public onFTCompleted(Ljava/lang/Long;I)V
     .locals 24
-    .param p1    # Ljava/lang/Long;
-    .param p2    # I
 
     const-string v2, "Mms/RcsBaseTransaction"
 
@@ -2905,8 +2869,6 @@
 
 .method public onFTInterrupted(Ljava/lang/Long;I)V
     .locals 8
-    .param p1    # Ljava/lang/Long;
-    .param p2    # I
 
     const/4 v7, 0x1
 
@@ -3021,9 +2983,6 @@
 
 .method public onFTProgress(Ljava/lang/Long;II)V
     .locals 6
-    .param p1    # Ljava/lang/Long;
-    .param p2    # I
-    .param p3    # I
 
     const-string v0, "Mms/RcsBaseTransaction"
 
@@ -3112,10 +3071,6 @@
 
 .method public onFTRequestFailed(Ljava/lang/Long;IJI)V
     .locals 5
-    .param p1    # Ljava/lang/Long;
-    .param p2    # I
-    .param p3    # J
-    .param p5    # I
 
     const-string v2, "Mms/RcsBaseTransaction"
 
@@ -3265,11 +3220,6 @@
 
 .method protected declared-synchronized prepareSilentBgSenderRequest(Ljava/util/ArrayList;Ljava/lang/String;Ljava/lang/String;Landroid/net/Uri;Ljava/lang/String;J)V
     .locals 4
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Landroid/net/Uri;
-    .param p5    # Ljava/lang/String;
-    .param p6    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3389,8 +3339,6 @@
 
 .method protected declared-synchronized sendLegacyMessage(Ljava/lang/Long;Landroid/net/Uri;)V
     .locals 16
-    .param p1    # Ljava/lang/Long;
-    .param p2    # Landroid/net/Uri;
 
     monitor-enter p0
 
@@ -3666,7 +3614,6 @@
 
 .method protected setChatId(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/mms/rcs/transaction/RcsBaseTransaction;->mChatId:Ljava/lang/String;
 
@@ -3675,14 +3622,6 @@
 
 .method protected updateHistoryForRcsChat(Landroid/content/Context;JJJLjava/lang/String;Ljava/lang/String;II)Z
     .locals 8
-    .param p1    # Landroid/content/Context;
-    .param p2    # J
-    .param p4    # J
-    .param p6    # J
-    .param p8    # Ljava/lang/String;
-    .param p9    # Ljava/lang/String;
-    .param p10    # I
-    .param p11    # I
 
     const-string v5, "Mms/RcsBaseTransaction"
 

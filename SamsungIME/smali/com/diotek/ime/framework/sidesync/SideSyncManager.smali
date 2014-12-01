@@ -126,7 +126,6 @@
 
 .method private getKeyFromKeycode(I)Lcom/diotek/ime/framework/view/Keyboard$Key;
     .locals 10
-    .param p1    # I
 
     const/4 v9, 0x0
 
@@ -309,7 +308,6 @@
 
 .method public static newInstance(Landroid/content/Context;)Lcom/diotek/ime/framework/sidesync/SideSyncManager;
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     if-nez p0, :cond_0
 
@@ -339,7 +337,6 @@
 
 .method private sendExistTextBeforeCursor(Z)V
     .locals 5
-    .param p1    # Z
 
     sget-boolean v1, Lcom/diotek/ime/framework/util/Debug;->DEBUG:Z
 
@@ -407,9 +404,6 @@
 
 .method private sendIntentToSink(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/diotek/ime/framework/sidesync/SideSyncManager;->mISideSyncSourceSIP:Lcom/sec/android/sidesync/source/model/ISideSyncSourceSIP;
 
@@ -479,9 +473,6 @@
 
 .method private sendIntentToSource(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/diotek/ime/framework/sidesync/SideSyncManager;->mISideSyncSinkSIP:Lcom/sec/android/sidesync/sink/model/ISideSyncSinkSIP;
 
@@ -551,7 +542,6 @@
 
 .method private sendKeyCode(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lcom/diotek/ime/framework/sidesync/SideSyncManager;->mISideSyncSinkSIP:Lcom/sec/android/sidesync/sink/model/ISideSyncSinkSIP;
 
@@ -595,7 +585,6 @@
 
 .method private sendLangID(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lcom/diotek/ime/framework/sidesync/SideSyncManager;->mISideSyncSinkSIP:Lcom/sec/android/sidesync/sink/model/ISideSyncSinkSIP;
 
@@ -639,7 +628,6 @@
 
 .method private sendShiftState(Z)V
     .locals 4
-    .param p1    # Z
 
     sget-boolean v1, Lcom/diotek/ime/framework/util/Debug;->DEBUG:Z
 
@@ -886,8 +874,6 @@
 
 .method public movePopupKeyboard(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget-object v1, p0, Lcom/diotek/ime/framework/sidesync/SideSyncManager;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -1035,7 +1021,6 @@
 
 .method public sendSideSyncCtrlPressedState(Z)V
     .locals 3
-    .param p1    # Z
 
     invoke-virtual {p0}, Lcom/diotek/ime/framework/sidesync/SideSyncManager;->isSideSyncWorkingOnSink()Z
 
@@ -1070,7 +1055,6 @@
 
 .method public sendSideSyncEdiorInfo(Landroid/view/inputmethod/EditorInfo;)V
     .locals 4
-    .param p1    # Landroid/view/inputmethod/EditorInfo;
 
     invoke-virtual {p0}, Lcom/diotek/ime/framework/sidesync/SideSyncManager;->isSideSyncWorkingOnSource()Z
 
@@ -1129,7 +1113,6 @@
 
 .method public sendSideSyncExistTextBeforeCursor(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-virtual {p0}, Lcom/diotek/ime/framework/sidesync/SideSyncManager;->isSideSyncWorkingOnSource()Z
 
@@ -1145,7 +1128,6 @@
 
 .method public sendSideSyncInputText(Ljava/lang/CharSequence;)V
     .locals 3
-    .param p1    # Ljava/lang/CharSequence;
 
     invoke-virtual {p0}, Lcom/diotek/ime/framework/sidesync/SideSyncManager;->isSideSyncWorkingOnSink()Z
 
@@ -1180,7 +1162,6 @@
 
 .method public sendSideSyncKeyCode(I)V
     .locals 14
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/diotek/ime/framework/sidesync/SideSyncManager;->isSideSyncWorkingOnSink()Z
 
@@ -1655,7 +1636,6 @@
 
 .method public sendSideSyncKeyLanguage(I)V
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/diotek/ime/framework/sidesync/SideSyncManager;->isSideSyncWorkingOnSink()Z
 
@@ -1682,7 +1662,6 @@
 
 .method public sendSideSyncPredictiveText(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Lcom/diotek/ime/framework/sidesync/SideSyncManager;->isSideSyncWorkingOnSink()Z
 
@@ -1713,7 +1692,6 @@
 
 .method public sendSideSyncShiftPressedState(Z)V
     .locals 3
-    .param p1    # Z
 
     invoke-virtual {p0}, Lcom/diotek/ime/framework/sidesync/SideSyncManager;->isSideSyncWorkingOnSink()Z
 
@@ -1748,7 +1726,6 @@
 
 .method public sendSideSyncShiftState(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-virtual {p0}, Lcom/diotek/ime/framework/sidesync/SideSyncManager;->isSideSyncWorkingOnSource()Z
 
@@ -1764,7 +1741,6 @@
 
 .method public sendSideSyncSinkFloatingKeyboardSize(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     sget-boolean v0, Lcom/diotek/ime/framework/util/Debug;->DEBUG:Z
 
@@ -1784,7 +1760,6 @@
 
 .method public setGuestInputMode(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/diotek/ime/framework/sidesync/SideSyncManager;->mGuestInputMode:I
 
@@ -1793,7 +1768,6 @@
 
 .method public setHostInputMode(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/diotek/ime/framework/sidesync/SideSyncManager;->mHostInputMode:I
 
@@ -1802,7 +1776,6 @@
 
 .method public setSideSyncCtrlPressedState(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     sget-boolean v0, Lcom/diotek/ime/framework/util/Debug;->DEBUG:Z
 
@@ -1832,7 +1805,6 @@
 
 .method public setSideSyncEdiorInfo(Landroid/view/inputmethod/EditorInfo;)V
     .locals 0
-    .param p1    # Landroid/view/inputmethod/EditorInfo;
 
     iput-object p1, p0, Lcom/diotek/ime/framework/sidesync/SideSyncManager;->mInputEditorInfo:Landroid/view/inputmethod/EditorInfo;
 
@@ -1841,7 +1813,6 @@
 
 .method public setSideSyncExistTextBeforeCursorState(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     sget-boolean v1, Lcom/diotek/ime/framework/util/Debug;->DEBUG:Z
 
@@ -1902,7 +1873,6 @@
 
 .method public setSideSyncInputText(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     sget-boolean v0, Lcom/diotek/ime/framework/util/Debug;->DEBUG:Z
 
@@ -1924,7 +1894,6 @@
 
 .method public setSideSyncKeyCode(I)V
     .locals 2
-    .param p1    # I
 
     sget-boolean v0, Lcom/diotek/ime/framework/util/Debug;->DEBUG:Z
 
@@ -1965,7 +1934,6 @@
 
 .method public setSideSyncLanguage(I)V
     .locals 2
-    .param p1    # I
 
     sget-boolean v0, Lcom/diotek/ime/framework/util/Debug;->DEBUG:Z
 
@@ -1987,7 +1955,6 @@
 
 .method public setSideSyncPreShiftPressed(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/sidesync/SideSyncManager;->mPreShiftPressed:Z
 
@@ -1996,7 +1963,6 @@
 
 .method public setSideSyncPredictiveText(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     sget-boolean v0, Lcom/diotek/ime/framework/util/Debug;->DEBUG:Z
 
@@ -2018,7 +1984,6 @@
 
 .method public setSideSyncShiftPressedState(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     sget-boolean v0, Lcom/diotek/ime/framework/util/Debug;->DEBUG:Z
 
@@ -2048,7 +2013,6 @@
 
 .method public setSideSyncShiftState(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/diotek/ime/framework/sidesync/SideSyncManager;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -2059,7 +2023,6 @@
 
 .method public setSideSyncSinkBinder(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     sget-boolean v1, Lcom/diotek/ime/framework/util/Debug;->DEBUG:Z
 
@@ -2108,7 +2071,6 @@
 
 .method public setSideSyncSinkEditorInfo(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     sget-boolean v2, Lcom/diotek/ime/framework/util/Debug;->DEBUG:Z
 
@@ -2151,7 +2113,6 @@
 
 .method public setSideSyncSinkFloatingKeyboardPostion(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     sget-boolean v3, Lcom/diotek/ime/framework/util/Debug;->DEBUG:Z
 
@@ -2202,7 +2163,6 @@
 
 .method public setSideSyncSinkShiftState(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v4, 0x0
 
@@ -2315,7 +2275,6 @@
 
 .method public setSideSyncSourceBinder(Landroid/os/IBinder;)V
     .locals 2
-    .param p1    # Landroid/os/IBinder;
 
     sget-boolean v0, Lcom/diotek/ime/framework/util/Debug;->DEBUG:Z
 

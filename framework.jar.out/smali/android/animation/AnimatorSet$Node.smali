@@ -70,7 +70,6 @@
 # direct methods
 .method public constructor <init>(Landroid/animation/Animator;)V
     .locals 1
-    .param p1    # Landroid/animation/Animator;
 
     const/4 v0, 0x0
 
@@ -97,7 +96,6 @@
 # virtual methods
 .method public addDependency(Landroid/animation/AnimatorSet$Dependency;)V
     .locals 3
-    .param p1    # Landroid/animation/AnimatorSet$Dependency;
 
     iget-object v1, p0, Landroid/animation/AnimatorSet$Node;->dependencies:Ljava/util/ArrayList;
 

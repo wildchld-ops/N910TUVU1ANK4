@@ -60,8 +60,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -72,9 +70,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v3, 0x1
 
@@ -229,7 +224,6 @@
 # virtual methods
 .method public canChildBeDismissed(Landroid/view/View;)Z
     .locals 3
-    .param p1    # Landroid/view/View;
 
     const v1, 0x7f080106
 
@@ -260,7 +254,6 @@
 
 .method public canChildBeExpanded(Landroid/view/View;)Z
     .locals 1
-    .param p1    # Landroid/view/View;
 
     instance-of v0, p1, Lcom/android/systemui/statusbar/ExpandableNotificationRow;
 
@@ -287,7 +280,6 @@
 
 .method public dismissRowAnimated(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     const/4 v0, 0x0
 
@@ -298,8 +290,6 @@
 
 .method public dismissRowAnimated(Landroid/view/View;I)V
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/NotificationRowLayout;->mSwipeHelper:Lcom/android/systemui/SwipeHelper;
 
@@ -312,8 +302,6 @@
 
 .method public getChildAtPosition(FF)Landroid/view/View;
     .locals 7
-    .param p1    # F
-    .param p2    # F
 
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getChildCount()I
 
@@ -386,7 +374,6 @@
 
 .method public getChildAtPosition(Landroid/view/MotionEvent;)Landroid/view/View;
     .locals 2
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getX()F
 
@@ -405,8 +392,6 @@
 
 .method public getChildAtRawPosition(FF)Landroid/view/View;
     .locals 3
-    .param p1    # F
-    .param p2    # F
 
     const/4 v1, 0x2
 
@@ -439,14 +424,12 @@
 
 .method public getChildContentView(Landroid/view/View;)Landroid/view/View;
     .locals 0
-    .param p1    # Landroid/view/View;
 
     return-object p1
 .end method
 
 .method public onBeginDrag(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     const/4 v0, 0x1
 
@@ -457,7 +440,6 @@
 
 .method public onChildDismissed(Landroid/view/View;)V
     .locals 3
-    .param p1    # Landroid/view/View;
 
     const v1, 0x7f080106
 
@@ -495,7 +477,6 @@
 
 .method protected onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 3
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/view/View;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -534,14 +515,12 @@
 
 .method public onDragCancelled(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     return-void
 .end method
 
 .method public onDraw(Landroid/graphics/Canvas;)V
     .locals 0
-    .param p1    # Landroid/graphics/Canvas;
 
     invoke-super {p0, p1}, Landroid/widget/LinearLayout;->onDraw(Landroid/graphics/Canvas;)V
 
@@ -558,7 +537,6 @@
 
 .method public onInterceptTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/NotificationRowLayout;->mSwipeHelper:Lcom/android/systemui/SwipeHelper;
 
@@ -588,10 +566,6 @@
 
 .method protected onSizeChanged(IIII)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/NotificationRowLayout;->mOnSizeChangedListener:Lcom/android/systemui/statusbar/policy/OnSizeChangedListener;
 
@@ -617,7 +591,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/NotificationRowLayout;->mSwipeHelper:Lcom/android/systemui/SwipeHelper;
 
@@ -647,7 +620,6 @@
 
 .method public onWindowFocusChanged(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-super {p0, p1}, Landroid/view/ViewGroup;->onWindowFocusChanged(Z)V
 
@@ -663,7 +635,6 @@
 
 .method public setAnimateBounds(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/systemui/statusbar/policy/NotificationRowLayout;->mAnimateBounds:Z
 
@@ -672,7 +643,6 @@
 
 .method public setLayoutTransitionsEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -706,7 +676,6 @@
 
 .method public setLongPressListener(Landroid/view/View$OnLongClickListener;)V
     .locals 1
-    .param p1    # Landroid/view/View$OnLongClickListener;
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/NotificationRowLayout;->mSwipeHelper:Lcom/android/systemui/SwipeHelper;
 
@@ -717,7 +686,6 @@
 
 .method public setOnSizeChangedListener(Lcom/android/systemui/statusbar/policy/OnSizeChangedListener;)V
     .locals 0
-    .param p1    # Lcom/android/systemui/statusbar/policy/OnSizeChangedListener;
 
     iput-object p1, p0, Lcom/android/systemui/statusbar/policy/NotificationRowLayout;->mOnSizeChangedListener:Lcom/android/systemui/statusbar/policy/OnSizeChangedListener;
 
@@ -726,8 +694,6 @@
 
 .method public setUserExpandedChild(Landroid/view/View;Z)V
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Z
 
     instance-of v0, p1, Lcom/android/systemui/statusbar/ExpandableNotificationRow;
 
@@ -743,8 +709,6 @@
 
 .method public setUserLockedChild(Landroid/view/View;Z)V
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Z
 
     instance-of v0, p1, Lcom/android/systemui/statusbar/ExpandableNotificationRow;
 
@@ -760,7 +724,6 @@
 
 .method public setViewRemoval(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/systemui/statusbar/policy/NotificationRowLayout;->mRemoveViews:Z
 

@@ -77,9 +77,6 @@
 
 .method public validateCallerForAPI(JLjava/lang/String;I)I
     .locals 3
-    .param p1    # J
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
 
     const-string v0, "Abstract-PersonaValidator"
 

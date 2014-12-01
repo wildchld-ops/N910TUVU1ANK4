@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,9 +36,6 @@
 # virtual methods
 .method public allocateAppWidgetId(Ljava/lang/String;II)I
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -107,10 +103,6 @@
 
 .method public bindAppWidgetId(ILandroid/content/ComponentName;Landroid/os/Bundle;I)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # Landroid/os/Bundle;
-    .param p4    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -206,11 +198,6 @@
 
 .method public bindAppWidgetIdIfAllowed(Ljava/lang/String;ILandroid/content/ComponentName;Landroid/os/Bundle;I)Z
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Landroid/content/ComponentName;
-    .param p4    # Landroid/os/Bundle;
-    .param p5    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -324,10 +311,6 @@
 
 .method public bindRemoteViewsService(ILandroid/content/Intent;Landroid/os/IBinder;I)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/content/Intent;
-    .param p3    # Landroid/os/IBinder;
-    .param p4    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -404,7 +387,6 @@
 
 .method public deleteAllHosts(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -456,8 +438,6 @@
 
 .method public deleteAppWidgetId(II)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -511,8 +491,6 @@
 
 .method public deleteHost(II)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -566,8 +544,6 @@
 
 .method public getAllWidgets(Ljava/lang/String;I)Ljava/util/Map;
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -633,8 +609,6 @@
 
 .method public getAppWidgetIds(Landroid/content/ComponentName;I)[I
     .locals 6
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -711,8 +685,6 @@
 
 .method public getAppWidgetIdsForHost(II)[I
     .locals 6
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -770,8 +742,6 @@
 
 .method public getAppWidgetInfo(II)Landroid/appwidget/AppWidgetProviderInfo;
     .locals 6
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -845,8 +815,6 @@
 
 .method public getAppWidgetOptions(II)Landroid/os/Bundle;
     .locals 6
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -920,8 +888,6 @@
 
 .method public getAppWidgetViews(II)Landroid/widget/RemoteViews;
     .locals 6
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -995,8 +961,6 @@
 
 .method public getInstalledProviders(II)Ljava/util/List;
     .locals 6
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II)",
@@ -1074,8 +1038,6 @@
 
 .method public getSecretAppWidgetInfo(II)Landroid/appwidget/AppWidgetProviderInfo;
     .locals 6
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1149,8 +1111,6 @@
 
 .method public hasBindAppWidgetPermission(Ljava/lang/String;I)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1215,9 +1175,6 @@
 
 .method public notifyAppWidgetViewDataChanged([III)V
     .locals 5
-    .param p1    # [I
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1273,9 +1230,6 @@
 
 .method public partiallyUpdateAppWidgetIds([ILandroid/widget/RemoteViews;I)V
     .locals 5
-    .param p1    # [I
-    .param p2    # Landroid/widget/RemoteViews;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1350,9 +1304,6 @@
 
 .method public setBindAppWidgetPermission(Ljava/lang/String;ZI)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1415,10 +1366,6 @@
 
 .method public startListening(Lcom/android/internal/appwidget/IAppWidgetHost;Ljava/lang/String;ILjava/util/List;I)[I
     .locals 6
-    .param p1    # Lcom/android/internal/appwidget/IAppWidgetHost;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p5    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1509,8 +1456,6 @@
 
 .method public stopListening(II)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1564,9 +1509,6 @@
 
 .method public unbindRemoteViewsService(ILandroid/content/Intent;I)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/content/Intent;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1641,9 +1583,6 @@
 
 .method public updateAppWidgetIds([ILandroid/widget/RemoteViews;I)V
     .locals 5
-    .param p1    # [I
-    .param p2    # Landroid/widget/RemoteViews;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1718,9 +1657,6 @@
 
 .method public updateAppWidgetOptions(ILandroid/os/Bundle;I)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1795,9 +1731,6 @@
 
 .method public updateAppWidgetProvider(Landroid/content/ComponentName;Landroid/widget/RemoteViews;I)V
     .locals 5
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Landroid/widget/RemoteViews;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

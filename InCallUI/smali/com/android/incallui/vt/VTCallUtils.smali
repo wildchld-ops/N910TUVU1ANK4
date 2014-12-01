@@ -22,7 +22,6 @@
 
 .method private static IsTelefonicaOperator(Landroid/content/Context;)Z
     .locals 5
-    .param p0    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -139,7 +138,6 @@
 
 .method public static IsTelkomSelIndonesiaOperator(Landroid/content/Context;)Z
     .locals 8
-    .param p0    # Landroid/content/Context;
 
     const/4 v5, 0x1
 
@@ -257,7 +255,6 @@
 
 .method private static IsVAUOperator(Landroid/content/Context;)Z
     .locals 5
-    .param p0    # Landroid/content/Context;
 
     const/4 v1, 0x1
 
@@ -305,8 +302,6 @@
 
 .method public static getCallFailMsg(Landroid/content/Context;Lcom/android/services/telephony/common/Call;)I
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/services/telephony/common/Call;
 
     const/4 v1, -0x1
 
@@ -445,7 +440,6 @@
 
 .method private static isCHNVTFallBackCondtion(Lcom/android/services/telephony/common/Call$DisconnectCause;)Z
     .locals 3
-    .param p0    # Lcom/android/services/telephony/common/Call$DisconnectCause;
 
     sget-object v1, Lcom/android/services/telephony/common/Call$DisconnectCause;->INCOMPATIBLE_DEST:Lcom/android/services/telephony/common/Call$DisconnectCause;
 
@@ -497,8 +491,6 @@
 
 .method public static isDisconnectedCauseForCallFailOption(Landroid/content/Context;Lcom/android/services/telephony/common/Call;)Z
     .locals 7
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/services/telephony/common/Call;
 
     const/4 v6, 0x1
 
@@ -707,7 +699,6 @@
 
 .method private static log(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "VTCallUtils"
 

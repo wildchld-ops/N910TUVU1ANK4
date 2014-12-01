@@ -42,8 +42,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/launcher2/LauncherModel;I[Ljava/lang/String;)V
     .locals 0
-    .param p2    # I
-    .param p3    # [Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/launcher2/LauncherModel$PackageUpdatedTask;->this$0:Lcom/android/launcher2/LauncherModel;
 

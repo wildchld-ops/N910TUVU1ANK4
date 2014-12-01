@@ -42,8 +42,6 @@
 
 .method synthetic constructor <init>(Lcom/android/server/sec/InternalClipboardExService;Lcom/android/server/sec/InternalClipboardExService$1;)V
     .locals 0
-    .param p1    # Lcom/android/server/sec/InternalClipboardExService;
-    .param p2    # Lcom/android/server/sec/InternalClipboardExService$1;
 
     invoke-direct {p0, p1}, Lcom/android/server/sec/InternalClipboardExService$ClipBoardDataUiEventImp;-><init>(Lcom/android/server/sec/InternalClipboardExService;)V
 
@@ -266,8 +264,6 @@
 
 .method public getClipboarddata(ILandroid/sec/clipboard/IClipboardDataPasteEvent;)Landroid/sec/clipboard/data/ClipboardData;
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/sec/clipboard/IClipboardDataPasteEvent;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -532,7 +528,6 @@
 
 .method public removeItem(I)V
     .locals 6
-    .param p1    # I
 
     monitor-enter p0
 
@@ -781,7 +776,6 @@
 
 .method public removeScrapItem(I)V
     .locals 4
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -856,8 +850,6 @@
 
 .method public selectItem(ILandroid/sec/clipboard/IClipboardDataPasteEvent;)V
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/sec/clipboard/IClipboardDataPasteEvent;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1205,8 +1197,6 @@
 
 .method public selectScrapItem(ILandroid/sec/clipboard/IClipboardDataPasteEvent;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/sec/clipboard/IClipboardDataPasteEvent;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1387,7 +1377,6 @@
 
 .method public setClipboarddata(Landroid/content/ClipData;)V
     .locals 3
-    .param p1    # Landroid/content/ClipData;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

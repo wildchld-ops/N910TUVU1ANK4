@@ -31,7 +31,6 @@
 # direct methods
 .method constructor <init>(Lcom/sec/android/app/shootingmodemanager/views/ItemsAdapter;I)V
     .locals 0
-    .param p2    # I
 
     iput-object p1, p0, Lcom/sec/android/app/shootingmodemanager/views/ItemsAdapter$1;->this$0:Lcom/sec/android/app/shootingmodemanager/views/ItemsAdapter;
 
@@ -44,8 +43,6 @@
 # virtual methods
 .method protected bridge synthetic sizeOf(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p1, Ljava/lang/String;
 
@@ -60,8 +57,6 @@
 
 .method protected sizeOf(Ljava/lang/String;Landroid/graphics/drawable/BitmapDrawable;)I
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/graphics/drawable/BitmapDrawable;
 
     invoke-virtual {p2}, Landroid/graphics/drawable/BitmapDrawable;->getBitmap()Landroid/graphics/Bitmap;
 

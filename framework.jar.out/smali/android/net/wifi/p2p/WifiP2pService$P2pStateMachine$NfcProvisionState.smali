@@ -79,7 +79,6 @@
 
 .method public processMessage(Landroid/os/Message;)Z
     .locals 10
-    .param p1    # Landroid/os/Message;
 
     const v9, 0x23032
 

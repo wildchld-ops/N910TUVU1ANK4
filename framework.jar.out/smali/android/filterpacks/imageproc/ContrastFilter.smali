@@ -10,7 +10,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "contrast"
 
@@ -23,7 +22,6 @@
 # virtual methods
 .method protected getNativeProgram(Landroid/filterfw/core/FilterContext;)Landroid/filterfw/core/Program;
     .locals 3
-    .param p1    # Landroid/filterfw/core/FilterContext;
 
     new-instance v0, Landroid/filterfw/core/NativeProgram;
 
@@ -38,7 +36,6 @@
 
 .method protected getShaderProgram(Landroid/filterfw/core/FilterContext;)Landroid/filterfw/core/Program;
     .locals 2
-    .param p1    # Landroid/filterfw/core/FilterContext;
 
     new-instance v0, Landroid/filterfw/core/ShaderProgram;
 

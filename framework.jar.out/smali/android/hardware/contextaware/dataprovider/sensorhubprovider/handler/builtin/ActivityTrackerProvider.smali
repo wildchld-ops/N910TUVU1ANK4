@@ -10,10 +10,6 @@
 # direct methods
 .method public constructor <init>(ILandroid/content/Context;Landroid/os/Looper;Landroid/hardware/contextaware/dataprovider/sensorhubprovider/ISensorHubResetObservable;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/os/Looper;
-    .param p4    # Landroid/hardware/contextaware/dataprovider/sensorhubprovider/ISensorHubResetObservable;
 
     invoke-direct {p0, p1, p2, p3, p4}, Landroid/hardware/contextaware/dataprovider/sensorhubprovider/LibTypeProvider;-><init>(ILandroid/content/Context;Landroid/os/Looper;Landroid/hardware/contextaware/dataprovider/sensorhubprovider/ISensorHubResetObservable;)V
 
@@ -30,7 +26,6 @@
 # virtual methods
 .method protected final byteArrayToLong([B)J
     .locals 5
-    .param p1    # [B
 
     const/16 v4, 0x8
 
@@ -378,8 +373,6 @@
 
 .method public parse([BI)I
     .locals 11
-    .param p1    # [B
-    .param p2    # I
 
     const/4 v10, 0x1
 
@@ -503,8 +496,6 @@
 
 .method protected parseData([BI)I
     .locals 7
-    .param p1    # [B
-    .param p2    # I
 
     move v3, p2
 

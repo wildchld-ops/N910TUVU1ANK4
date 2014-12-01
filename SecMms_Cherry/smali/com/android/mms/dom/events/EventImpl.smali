@@ -113,9 +113,6 @@
 
 .method public initEvent(Ljava/lang/String;ZZ)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # Z
 
     iput-object p1, p0, Lcom/android/mms/dom/events/EventImpl;->mEventType:Ljava/lang/String;
 
@@ -132,10 +129,6 @@
 
 .method public initEvent(Ljava/lang/String;ZZI)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # Z
-    .param p4    # I
 
     iput p4, p0, Lcom/android/mms/dom/events/EventImpl;->mSeekTo:I
 
@@ -180,7 +173,6 @@
 
 .method setCurrentTarget(Lorg/w3c/dom/events/EventTarget;)V
     .locals 0
-    .param p1    # Lorg/w3c/dom/events/EventTarget;
 
     iput-object p1, p0, Lcom/android/mms/dom/events/EventImpl;->mCurrentTarget:Lorg/w3c/dom/events/EventTarget;
 
@@ -189,7 +181,6 @@
 
 .method setEventPhase(S)V
     .locals 0
-    .param p1    # S
 
     iput-short p1, p0, Lcom/android/mms/dom/events/EventImpl;->mEventPhase:S
 
@@ -198,7 +189,6 @@
 
 .method setTarget(Lorg/w3c/dom/events/EventTarget;)V
     .locals 0
-    .param p1    # Lorg/w3c/dom/events/EventTarget;
 
     iput-object p1, p0, Lcom/android/mms/dom/events/EventImpl;->mTarget:Lorg/w3c/dom/events/EventTarget;
 

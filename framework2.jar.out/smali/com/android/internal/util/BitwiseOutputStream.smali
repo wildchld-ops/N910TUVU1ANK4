@@ -22,7 +22,6 @@
 # direct methods
 .method public constructor <init>(I)V
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -43,7 +42,6 @@
 
 .method private possExpand(I)V
     .locals 4
-    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -90,7 +88,6 @@
 # virtual methods
 .method public skip(I)V
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/internal/util/BitwiseOutputStream;->possExpand(I)V
 
@@ -139,8 +136,6 @@
 
 .method public write(II)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/android/internal/util/BitwiseOutputStream$AccessException;
@@ -249,8 +244,6 @@
 
 .method public writeByteArray(I[B)V
     .locals 4
-    .param p1    # I
-    .param p2    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/android/internal/util/BitwiseOutputStream$AccessException;

@@ -17,7 +17,6 @@
 # direct methods
 .method constructor <init>(Ljava/lang/String;IILjava/lang/Class;)V
     .locals 6
-    .param p3    # I
 
     const/4 v5, 0x0
 
@@ -40,7 +39,6 @@
 # virtual methods
 .method protected bridge synthetic getReply(Ljava/io/DataInputStream;)Ljava/lang/Object;
     .locals 1
-    .param p1    # Ljava/io/DataInputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -56,7 +54,6 @@
 
 .method protected getReply(Ljava/io/DataInputStream;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/io/DataInputStream;
 
     const-string v0, "not a command, you dummy!"
 

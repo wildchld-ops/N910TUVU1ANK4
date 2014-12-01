@@ -92,10 +92,6 @@
 
 .method constructor <init>(Landroid/bluetooth/BluetoothGattCharacteristic;Ljava/util/UUID;II)V
     .locals 0
-    .param p1    # Landroid/bluetooth/BluetoothGattCharacteristic;
-    .param p2    # Ljava/util/UUID;
-    .param p3    # I
-    .param p4    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -106,8 +102,6 @@
 
 .method public constructor <init>(Ljava/util/UUID;I)V
     .locals 2
-    .param p1    # Ljava/util/UUID;
-    .param p2    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -122,10 +116,6 @@
 
 .method private initDescriptor(Landroid/bluetooth/BluetoothGattCharacteristic;Ljava/util/UUID;II)V
     .locals 0
-    .param p1    # Landroid/bluetooth/BluetoothGattCharacteristic;
-    .param p2    # Ljava/util/UUID;
-    .param p3    # I
-    .param p4    # I
 
     iput-object p1, p0, Landroid/bluetooth/BluetoothGattDescriptor;->mCharacteristic:Landroid/bluetooth/BluetoothGattCharacteristic;
 
@@ -182,7 +172,6 @@
 
 .method setCharacteristic(Landroid/bluetooth/BluetoothGattCharacteristic;)V
     .locals 0
-    .param p1    # Landroid/bluetooth/BluetoothGattCharacteristic;
 
     iput-object p1, p0, Landroid/bluetooth/BluetoothGattDescriptor;->mCharacteristic:Landroid/bluetooth/BluetoothGattCharacteristic;
 
@@ -191,7 +180,6 @@
 
 .method public setValue([B)Z
     .locals 1
-    .param p1    # [B
 
     iput-object p1, p0, Landroid/bluetooth/BluetoothGattDescriptor;->mValue:[B
 

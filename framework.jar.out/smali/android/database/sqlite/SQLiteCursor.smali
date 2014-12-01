@@ -40,9 +40,6 @@
 # direct methods
 .method public constructor <init>(Landroid/database/sqlite/SQLiteCursorDriver;Ljava/lang/String;Landroid/database/sqlite/SQLiteQuery;)V
     .locals 2
-    .param p1    # Landroid/database/sqlite/SQLiteCursorDriver;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/database/sqlite/SQLiteQuery;
 
     const/4 v1, 0x0
 
@@ -112,10 +109,6 @@
 
 .method public constructor <init>(Landroid/database/sqlite/SQLiteDatabase;Landroid/database/sqlite/SQLiteCursorDriver;Ljava/lang/String;Landroid/database/sqlite/SQLiteQuery;)V
     .locals 0
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p2    # Landroid/database/sqlite/SQLiteCursorDriver;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Landroid/database/sqlite/SQLiteQuery;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -126,7 +119,6 @@
 
 .method private fillWindow(I)V
     .locals 5
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/database/sqlite/SQLiteCursor;->getDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
@@ -240,7 +232,6 @@
 # virtual methods
 .method protected clearOrCreateWindow(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Landroid/database/sqlite/SQLiteCursor;->mWindow:Landroid/database/CursorWindow;
 
@@ -469,7 +460,6 @@
 
 .method public getColumnIndex(Ljava/lang/String;)I
     .locals 10
-    .param p1    # Ljava/lang/String;
 
     const/4 v6, -0x1
 
@@ -608,8 +598,6 @@
 
 .method public onMove(II)Z
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Landroid/database/sqlite/SQLiteCursor;->mWindow:Landroid/database/CursorWindow;
 
@@ -761,7 +749,6 @@
 
 .method public setSelectionArguments([Ljava/lang/String;)V
     .locals 1
-    .param p1    # [Ljava/lang/String;
 
     iget-object v0, p0, Landroid/database/sqlite/SQLiteCursor;->mDriver:Landroid/database/sqlite/SQLiteCursorDriver;
 
@@ -772,7 +759,6 @@
 
 .method public setWindow(Landroid/database/CursorWindow;)V
     .locals 1
-    .param p1    # Landroid/database/CursorWindow;
 
     invoke-super {p0, p1}, Landroid/database/AbstractWindowedCursor;->setWindow(Landroid/database/CursorWindow;)V
 

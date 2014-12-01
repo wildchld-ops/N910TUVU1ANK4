@@ -113,7 +113,6 @@
 
 .method static synthetic access$000(Lcom/sec/android/app/camera/quramrecorder/QuramAudioRecorder;)Lcom/quramsoft/qdio/QdioRecorder;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/quramrecorder/QuramAudioRecorder;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/quramrecorder/QuramAudioRecorder;->qrecorder:Lcom/quramsoft/qdio/QdioRecorder;
 
@@ -122,7 +121,6 @@
 
 .method static synthetic access$100(Lcom/sec/android/app/camera/quramrecorder/QuramAudioRecorder;)J
     .locals 2
-    .param p0    # Lcom/sec/android/app/camera/quramrecorder/QuramAudioRecorder;
 
     iget-wide v0, p0, Lcom/sec/android/app/camera/quramrecorder/QuramAudioRecorder;->visualization_duration:J
 
@@ -131,7 +129,6 @@
 
 .method static synthetic access$200(Lcom/sec/android/app/camera/quramrecorder/QuramAudioRecorder;)[I
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/quramrecorder/QuramAudioRecorder;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/quramrecorder/QuramAudioRecorder;->visualization:[I
 
@@ -140,8 +137,6 @@
 
 .method static synthetic access$202(Lcom/sec/android/app/camera/quramrecorder/QuramAudioRecorder;[I)[I
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/quramrecorder/QuramAudioRecorder;
-    .param p1    # [I
 
     iput-object p1, p0, Lcom/sec/android/app/camera/quramrecorder/QuramAudioRecorder;->visualization:[I
 
@@ -150,7 +145,6 @@
 
 .method static synthetic access$300(Lcom/sec/android/app/camera/quramrecorder/QuramAudioRecorder;)Z
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/quramrecorder/QuramAudioRecorder;
 
     iget-boolean v0, p0, Lcom/sec/android/app/camera/quramrecorder/QuramAudioRecorder;->isRunning:Z
 
@@ -159,8 +153,6 @@
 
 .method static synthetic access$302(Lcom/sec/android/app/camera/quramrecorder/QuramAudioRecorder;Z)Z
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/quramrecorder/QuramAudioRecorder;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/quramrecorder/QuramAudioRecorder;->isRunning:Z
 
@@ -169,7 +161,6 @@
 
 .method static synthetic access$400(Lcom/sec/android/app/camera/quramrecorder/QuramAudioRecorder;)J
     .locals 2
-    .param p0    # Lcom/sec/android/app/camera/quramrecorder/QuramAudioRecorder;
 
     iget-wide v0, p0, Lcom/sec/android/app/camera/quramrecorder/QuramAudioRecorder;->time_t:J
 
@@ -178,8 +169,6 @@
 
 .method static synthetic access$402(Lcom/sec/android/app/camera/quramrecorder/QuramAudioRecorder;J)J
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/quramrecorder/QuramAudioRecorder;
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/sec/android/app/camera/quramrecorder/QuramAudioRecorder;->time_t:J
 
@@ -188,7 +177,6 @@
 
 .method static synthetic access$500(Lcom/sec/android/app/camera/quramrecorder/QuramAudioRecorder;)J
     .locals 2
-    .param p0    # Lcom/sec/android/app/camera/quramrecorder/QuramAudioRecorder;
 
     iget-wide v0, p0, Lcom/sec/android/app/camera/quramrecorder/QuramAudioRecorder;->time_s:J
 
@@ -197,8 +185,6 @@
 
 .method static synthetic access$502(Lcom/sec/android/app/camera/quramrecorder/QuramAudioRecorder;J)J
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/quramrecorder/QuramAudioRecorder;
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/sec/android/app/camera/quramrecorder/QuramAudioRecorder;->time_s:J
 
@@ -207,7 +193,6 @@
 
 .method static synthetic access$600(Lcom/sec/android/app/camera/quramrecorder/QuramAudioRecorder;)I
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/quramrecorder/QuramAudioRecorder;
 
     iget v0, p0, Lcom/sec/android/app/camera/quramrecorder/QuramAudioRecorder;->readAudioStreamBufferSize:I
 
@@ -216,7 +201,6 @@
 
 .method static synthetic access$700(Lcom/sec/android/app/camera/quramrecorder/QuramAudioRecorder;)[B
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/quramrecorder/QuramAudioRecorder;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/quramrecorder/QuramAudioRecorder;->readAudioStreamBuffer:[B
 
@@ -225,8 +209,6 @@
 
 .method static synthetic access$802(Lcom/sec/android/app/camera/quramrecorder/QuramAudioRecorder;I)I
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/quramrecorder/QuramAudioRecorder;
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/app/camera/quramrecorder/QuramAudioRecorder;->segIdx:I
 
@@ -235,7 +217,6 @@
 
 .method static synthetic access$900(Lcom/sec/android/app/camera/quramrecorder/QuramAudioRecorder;)V
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/quramrecorder/QuramAudioRecorder;
 
     invoke-direct {p0}, Lcom/sec/android/app/camera/quramrecorder/QuramAudioRecorder;->releaseRecorder()V
 
@@ -465,11 +446,6 @@
 
 .method private writeHeader([BIIII)[B
     .locals 8
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     const/16 v3, 0x46
 
@@ -808,8 +784,6 @@
 
 .method public addRecorde([BI)V
     .locals 2
-    .param p1    # [B
-    .param p2    # I
 
     new-instance v0, Lcom/sec/android/app/camera/quramrecorder/QuramAudioFrameData;
 
@@ -906,7 +880,6 @@
 
 .method public deleteRecorde(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/quramrecorder/QuramAudioRecorder;->audio_window_frame:Ljava/util/ArrayList;
 
@@ -1064,7 +1037,6 @@
 
 .method public getRecordedAudioStream(Landroid/content/res/AssetFileDescriptor;)[B
     .locals 6
-    .param p1    # Landroid/content/res/AssetFileDescriptor;
 
     new-instance v0, Ljava/io/ByteArrayOutputStream;
 
@@ -1203,7 +1175,6 @@
 
 .method public setVisualizationDuration(J)V
     .locals 0
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/sec/android/app/camera/quramrecorder/QuramAudioRecorder;->visualization_duration:J
 

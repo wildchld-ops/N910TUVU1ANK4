@@ -117,8 +117,6 @@
 
 .method public constructor <init>(Landroid/content/Context;I)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -151,7 +149,6 @@
 
 .method static synthetic access$000(Landroid/content/pm/ResolveInfo;)Z
     .locals 1
-    .param p0    # Landroid/content/pm/ResolveInfo;
 
     invoke-static {p0}, Lcom/android/server/search/Searchables;->isSystemApp(Landroid/content/pm/ResolveInfo;)Z
 
@@ -248,7 +245,6 @@
 
 .method private findWebSearchActivity(Landroid/content/ComponentName;)Landroid/content/ComponentName;
     .locals 6
-    .param p1    # Landroid/content/ComponentName;
 
     const/4 v3, 0x0
 
@@ -388,7 +384,6 @@
 
 .method private isInstalled(Landroid/content/ComponentName;)Z
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
 
     new-instance v1, Landroid/content/Intent;
 
@@ -425,7 +420,6 @@
 
 .method private static final isSystemApp(Landroid/content/pm/ResolveInfo;)Z
     .locals 1
-    .param p0    # Landroid/content/pm/ResolveInfo;
 
     iget-object v0, p0, Landroid/content/pm/ResolveInfo;->activityInfo:Landroid/content/pm/ActivityInfo;
 
@@ -450,8 +444,6 @@
 
 .method private queryIntentActivities(Landroid/content/Intent;I)Ljava/util/List;
     .locals 4
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -874,9 +866,6 @@
 
 .method dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     const-string v2, "Searchable authorities:"
 
@@ -997,7 +986,6 @@
 
 .method public getSearchableInfo(Landroid/content/ComponentName;)Landroid/app/SearchableInfo;
     .locals 12
-    .param p1    # Landroid/content/ComponentName;
 
     const/4 v9, 0x0
 
@@ -1250,7 +1238,6 @@
 
 .method public declared-synchronized getSearchablesInInsightSearchList(Z)Ljava/util/ArrayList;
     .locals 2
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(Z)",

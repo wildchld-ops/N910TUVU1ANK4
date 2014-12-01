@@ -32,7 +32,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/BlockSettings;)I
     .locals 1
-    .param p0    # Lcom/android/settings/BlockSettings;
 
     iget v0, p0, Lcom/android/settings/BlockSettings;->mListIndex:I
 
@@ -41,8 +40,6 @@
 
 .method static synthetic access$002(Lcom/android/settings/BlockSettings;I)I
     .locals 0
-    .param p0    # Lcom/android/settings/BlockSettings;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/settings/BlockSettings;->mListIndex:I
 
@@ -51,8 +48,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/BlockSettings;I)V
     .locals 0
-    .param p0    # Lcom/android/settings/BlockSettings;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/settings/BlockSettings;->setBlockMode(I)V
 
@@ -61,7 +56,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/BlockSettings;)V
     .locals 0
-    .param p0    # Lcom/android/settings/BlockSettings;
 
     invoke-direct {p0}, Lcom/android/settings/BlockSettings;->updateSummary()V
 
@@ -88,7 +82,6 @@
 
 .method private getIndexFromValue(I)I
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -184,7 +177,6 @@
 
 .method private makeCallBlockDialog(I)Landroid/app/Dialog;
     .locals 5
-    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -245,7 +237,6 @@
 
 .method private makeMessageBlockDialog(I)Landroid/app/Dialog;
     .locals 5
-    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -306,7 +297,6 @@
 
 .method private makeVideoCallBlockDialog(I)Landroid/app/Dialog;
     .locals 5
-    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -367,7 +357,6 @@
 
 .method private makeVoiceCallBlockDialog(I)Landroid/app/Dialog;
     .locals 5
-    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -428,7 +417,6 @@
 
 .method private setBlockMode(I)V
     .locals 3
-    .param p1    # I
 
     invoke-direct {p0}, Lcom/android/settings/BlockSettings;->getModeDialogId()I
 
@@ -498,7 +486,6 @@
 
 .method private setModeDialogId(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/settings/BlockSettings;->mRejectModeDlgId:I
 
@@ -639,7 +626,6 @@
 # virtual methods
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v2, 0x0
 
@@ -831,7 +817,6 @@
 
 .method public onCreateDialog(I)Landroid/app/Dialog;
     .locals 1
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -881,8 +866,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 2
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     const/4 v0, 0x1
 

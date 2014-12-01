@@ -21,7 +21,6 @@
 # direct methods
 .method constructor <init>(Landroid/app/SharedPreferencesImpl;Ljava/lang/String;)V
     .locals 0
-    .param p2    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/app/SharedPreferencesImpl$1;->this$0:Landroid/app/SharedPreferencesImpl;
 

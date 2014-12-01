@@ -77,8 +77,6 @@
 
 .method synthetic constructor <init>(Lcom/android/server/TwilightService;Lcom/android/server/TwilightService$1;)V
     .locals 0
-    .param p1    # Lcom/android/server/TwilightService;
-    .param p2    # Lcom/android/server/TwilightService$1;
 
     invoke-direct {p0, p1}, Lcom/android/server/TwilightService$LocationHandler;-><init>(Lcom/android/server/TwilightService;)V
 
@@ -230,7 +228,6 @@
 
 .method private setLocation(Landroid/location/Location;)V
     .locals 0
-    .param p1    # Landroid/location/Location;
 
     iput-object p1, p0, Lcom/android/server/TwilightService$LocationHandler;->mLocation:Landroid/location/Location;
 
@@ -527,7 +524,6 @@
 
 .method public handleMessage(Landroid/os/Message;)V
     .locals 12
-    .param p1    # Landroid/os/Message;
 
     iget v0, p1, Landroid/os/Message;->what:I
 
@@ -833,7 +829,6 @@
 
 .method public processNewLocation(Landroid/location/Location;)V
     .locals 2
-    .param p1    # Landroid/location/Location;
 
     const/4 v1, 0x3
 

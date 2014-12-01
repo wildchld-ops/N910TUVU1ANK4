@@ -33,7 +33,6 @@
 # virtual methods
 .method public onUserSwitchComplete(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "ClipboardServiceEx"
 
@@ -62,8 +61,6 @@
 
 .method public onUserSwitching(ILandroid/os/IRemoteCallback;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/os/IRemoteCallback;
 
     const-string v0, "ClipboardServiceEx"
 

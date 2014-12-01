@@ -10,7 +10,6 @@
 # direct methods
 .method constructor <init>(Landroid/nfc/NfcAdapter;)V
     .locals 0
-    .param p1    # Landroid/nfc/NfcAdapter;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

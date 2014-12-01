@@ -97,7 +97,6 @@
 
 .method public constructor <init>(Landroid/os/Parcel;)V
     .locals 3
-    .param p1    # Landroid/os/Parcel;
 
     const/4 v1, 0x1
 
@@ -298,7 +297,6 @@
 
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -375,9 +373,6 @@
 
 .method private copyStringToByteArray([BILjava/lang/String;)V
     .locals 4
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     const-string v2, "VpnProfile"
 
@@ -418,8 +413,6 @@
 
 .method public static decode(Ljava/lang/String;[B)Lcom/android/internal/net/VpnProfile;
     .locals 10
-    .param p0    # Ljava/lang/String;
-    .param p1    # [B
 
     const-string v7, "VpnProfile"
 
@@ -1573,8 +1566,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 3
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     const/4 v1, 0x1
 

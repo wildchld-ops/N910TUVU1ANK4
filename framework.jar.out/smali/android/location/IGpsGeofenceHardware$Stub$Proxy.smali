@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,14 +36,6 @@
 # virtual methods
 .method public addCircularHardwareGeofence(IDDDIIII)Z
     .locals 7
-    .param p1    # I
-    .param p2    # D
-    .param p4    # D
-    .param p6    # D
-    .param p8    # I
-    .param p9    # I
-    .param p10    # I
-    .param p11    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -211,7 +202,6 @@
 
 .method public pauseHardwareGeofence(I)Z
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -274,7 +264,6 @@
 
 .method public removeHardwareGeofence(I)Z
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -337,8 +326,6 @@
 
 .method public resumeHardwareGeofence(II)Z
     .locals 6
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

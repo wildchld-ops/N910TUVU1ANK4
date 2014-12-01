@@ -31,9 +31,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/LocationManagerService;Ljava/lang/String;Landroid/location/LocationRequest;Lcom/android/server/LocationManagerService$Receiver;)V
     .locals 2
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/location/LocationRequest;
-    .param p4    # Lcom/android/server/LocationManagerService$Receiver;
 
     iput-object p1, p0, Lcom/android/server/LocationManagerService$UpdateRecord;->this$0:Lcom/android/server/LocationManagerService;
 
@@ -86,7 +83,6 @@
 # virtual methods
 .method disposeLocked(Z)V
     .locals 4
-    .param p1    # Z
 
     iget-object v2, p0, Lcom/android/server/LocationManagerService$UpdateRecord;->this$0:Lcom/android/server/LocationManagerService;
 

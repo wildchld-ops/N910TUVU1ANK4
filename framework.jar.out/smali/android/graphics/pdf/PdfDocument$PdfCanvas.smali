@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Landroid/graphics/pdf/PdfDocument;I)V
     .locals 0
-    .param p2    # I
 
     iput-object p1, p0, Landroid/graphics/pdf/PdfDocument$PdfCanvas;->this$0:Landroid/graphics/pdf/PdfDocument;
 
@@ -34,7 +33,6 @@
 # virtual methods
 .method public setBitmap(Landroid/graphics/Bitmap;)V
     .locals 1
-    .param p1    # Landroid/graphics/Bitmap;
 
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 

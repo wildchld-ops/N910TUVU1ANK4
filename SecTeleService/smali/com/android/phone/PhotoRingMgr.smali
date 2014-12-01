@@ -55,7 +55,7 @@
 
     iget-object v0, p0, Lcom/android/phone/PhotoRingMgr;->mApp:Lcom/android/phone/PhoneGlobals;
 
-    invoke-virtual {v0}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v0}, Lcom/android/phone/PhoneGlobals;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
 

@@ -68,7 +68,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/location/LocationSettings;)Landroid/preference/CheckBoxPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/location/LocationSettings;
 
     iget-object v0, p0, Lcom/android/settings/location/LocationSettings;->mMsap:Landroid/preference/CheckBoxPreference;
 
@@ -77,7 +76,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/location/LocationSettings;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/location/LocationSettings;
 
     invoke-virtual {p0}, Lcom/android/settings/SettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -88,9 +86,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/location/LocationSettings;ILjava/lang/Boolean;)V
     .locals 0
-    .param p0    # Lcom/android/settings/location/LocationSettings;
-    .param p1    # I
-    .param p2    # Ljava/lang/Boolean;
 
     invoke-direct {p0, p1, p2}, Lcom/android/settings/location/LocationSettings;->setTagCurrentLocation(ILjava/lang/Boolean;)V
 
@@ -99,8 +94,6 @@
 
 .method private addCurrentTagLocation(Landroid/content/Context;Landroid/preference/PreferenceScreen;)V
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/preference/PreferenceScreen;
 
     const/4 v0, 0x0
 
@@ -247,8 +240,6 @@
 
 .method private addLocationServices(Landroid/content/Context;Landroid/preference/PreferenceScreen;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/preference/PreferenceScreen;
 
     const-string v4, "location_services"
 
@@ -314,7 +305,6 @@
 
 .method private addPreferencesSorted(Ljava/util/List;Landroid/preference/PreferenceGroup;)V
     .locals 3
-    .param p2    # Landroid/preference/PreferenceGroup;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -919,8 +909,6 @@
 
 .method private setTagCurrentLocation(ILjava/lang/Boolean;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/Boolean;
 
     const/4 v1, 0x1
 
@@ -1204,7 +1192,6 @@
 
 .method public isPackageExists(Ljava/lang/String;)Z
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -1277,8 +1264,6 @@
 
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 1
-    .param p1    # Landroid/widget/CompoundButton;
-    .param p2    # Z
 
     if-eqz p2, :cond_0
 
@@ -1299,7 +1284,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/settings/location/LocationSettingsBase;->onCreate(Landroid/os/Bundle;)V
 
@@ -1327,7 +1311,6 @@
 
 .method public onCreateDialog(I)Landroid/app/Dialog;
     .locals 5
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -1429,8 +1412,6 @@
 
 .method public onModeChanged(IZ)V
     .locals 7
-    .param p1    # I
-    .param p2    # Z
 
     const v6, 0x7f0907ac
 
@@ -1667,8 +1648,6 @@
 
 .method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
     .locals 1
-    .param p1    # Landroid/preference/Preference;
-    .param p2    # Ljava/lang/Object;
 
     iget-object v0, p0, Lcom/android/settings/location/LocationSettings;->mSp:Landroid/preference/SwitchPreferenceScreen;
 
@@ -1686,8 +1665,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 5
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     const/4 v4, 0x3
 

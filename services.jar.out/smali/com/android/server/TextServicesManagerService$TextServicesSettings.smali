@@ -23,8 +23,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/ContentResolver;I)V
     .locals 0
-    .param p1    # Landroid/content/ContentResolver;
-    .param p2    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -105,7 +103,6 @@
 
 .method public putSelectedSpellChecker(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/server/TextServicesManagerService$TextServicesSettings;->mResolver:Landroid/content/ContentResolver;
 
@@ -120,7 +117,6 @@
 
 .method public putSelectedSpellCheckerSubtype(I)V
     .locals 4
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/TextServicesManagerService$TextServicesSettings;->mResolver:Landroid/content/ContentResolver;
 
@@ -139,7 +135,6 @@
 
 .method public setCurrentUserId(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/TextServicesManagerService$TextServicesSettings;->mCurrentUserId:I
 
@@ -148,7 +143,6 @@
 
 .method public setSpellCheckerEnabled(Z)V
     .locals 4
-    .param p1    # Z
 
     iget-object v1, p0, Lcom/android/server/TextServicesManagerService$TextServicesSettings;->mResolver:Landroid/content/ContentResolver;
 

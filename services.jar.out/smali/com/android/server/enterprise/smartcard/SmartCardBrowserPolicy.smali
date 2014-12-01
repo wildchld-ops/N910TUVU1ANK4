@@ -55,7 +55,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -114,9 +113,6 @@
 
 .method private broadcastIntentAsUser(ZII)V
     .locals 5
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
 
     new-instance v0, Landroid/content/Intent;
 
@@ -151,7 +147,6 @@
 
 .method private enforcePermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/smartcard/SmartCardBrowserPolicy;->getEDM()Landroid/app/enterprise/EnterpriseDeviceManager;
 
@@ -172,10 +167,6 @@
 
 .method private getClientCertificateAliasAsUser(IILjava/lang/String;I)Ljava/lang/String;
     .locals 12
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
 
     :try_start_0
     iget-object v10, p0, Lcom/android/server/enterprise/smartcard/SmartCardBrowserPolicy;->mEdmStorageProvider:Lcom/android/server/enterprise/storage/EdmStorageProvider;
@@ -329,8 +320,6 @@
 
 .method private isAuthenticationEnabledAsUser(II)Z
     .locals 8
-    .param p1    # I
-    .param p2    # I
 
     const/4 v2, 0x0
 
@@ -392,7 +381,6 @@
 # virtual methods
 .method public disableAuthentication(Landroid/app/enterprise/ContextInfo;)Z
     .locals 12
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v11, 0x0
 
@@ -466,7 +454,6 @@
 
 .method public enableAuthentication(Landroid/app/enterprise/ContextInfo;)Z
     .locals 18
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct/range {p0 .. p1}, Lcom/android/server/enterprise/smartcard/SmartCardBrowserPolicy;->enforcePermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -698,9 +685,6 @@
 
 .method public getClientCertificateAlias(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;I)Ljava/lang/String;
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     iget v0, p1, Landroid/app/enterprise/ContextInfo;->mContainerId:I
 
@@ -733,7 +717,6 @@
 
 .method public isAuthenticationEnabled(Landroid/app/enterprise/ContextInfo;)Z
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-static {p1}, Lcom/android/server/enterprise/EnterpriseDeviceManagerService;->getCallingOrCurrentUserId(Landroid/app/enterprise/ContextInfo;)I
 
@@ -750,14 +733,12 @@
 
 .method public onAdminAdded(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onAdminRemoved(I)V
     .locals 7
-    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -851,7 +832,6 @@
 
 .method public onPreAdminRemoval(I)V
     .locals 5
-    .param p1    # I
 
     new-instance v1, Landroid/app/enterprise/ContextInfo;
 
@@ -913,9 +893,6 @@
 
 .method public removeClientCertificateAlias(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;I)Z
     .locals 6
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     const/4 v3, 0x0
 
@@ -1005,10 +982,6 @@
 
 .method public setClientCertificateAlias(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;ILjava/lang/String;)Z
     .locals 10
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
 
     const/4 v6, 0x0
 

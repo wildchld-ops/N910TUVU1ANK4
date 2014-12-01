@@ -82,8 +82,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Lcom/samsung/android/cocktailbar/CocktailHost$ICallbackListener;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/samsung/android/cocktailbar/CocktailHost$ICallbackListener;
 
     invoke-virtual {p1}, Landroid/content/Context;->getMainLooper()Landroid/os/Looper;
 
@@ -96,9 +94,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Lcom/samsung/android/cocktailbar/CocktailHost$ICallbackListener;Landroid/os/Looper;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/samsung/android/cocktailbar/CocktailHost$ICallbackListener;
-    .param p3    # Landroid/os/Looper;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -125,10 +120,6 @@
 
 .method static synthetic access$000(Lcom/samsung/android/cocktailbar/CocktailHost;ILcom/samsung/android/cocktailbar/Cocktail;I)V
     .locals 0
-    .param p0    # Lcom/samsung/android/cocktailbar/CocktailHost;
-    .param p1    # I
-    .param p2    # Lcom/samsung/android/cocktailbar/Cocktail;
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Lcom/samsung/android/cocktailbar/CocktailHost;->updateCocktail(ILcom/samsung/android/cocktailbar/Cocktail;I)V
 
@@ -137,10 +128,6 @@
 
 .method static synthetic access$100(Lcom/samsung/android/cocktailbar/CocktailHost;ILandroid/widget/RemoteViews;I)V
     .locals 0
-    .param p0    # Lcom/samsung/android/cocktailbar/CocktailHost;
-    .param p1    # I
-    .param p2    # Landroid/widget/RemoteViews;
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Lcom/samsung/android/cocktailbar/CocktailHost;->partiallyUpdateCocktail(ILandroid/widget/RemoteViews;I)V
 
@@ -149,8 +136,6 @@
 
 .method static synthetic access$1000(Lcom/samsung/android/cocktailbar/CocktailHost;I)V
     .locals 0
-    .param p0    # Lcom/samsung/android/cocktailbar/CocktailHost;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/samsung/android/cocktailbar/CocktailHost;->switchDefaultCocktail(I)V
 
@@ -159,9 +144,6 @@
 
 .method static synthetic access$1100(Lcom/samsung/android/cocktailbar/CocktailHost;ILandroid/os/Bundle;)V
     .locals 0
-    .param p0    # Lcom/samsung/android/cocktailbar/CocktailHost;
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     invoke-direct {p0, p1, p2}, Lcom/samsung/android/cocktailbar/CocktailHost;->sendExtraDataToCocktailBar(ILandroid/os/Bundle;)V
 
@@ -170,9 +152,6 @@
 
 .method static synthetic access$1200(Lcom/samsung/android/cocktailbar/CocktailHost;II)V
     .locals 0
-    .param p0    # Lcom/samsung/android/cocktailbar/CocktailHost;
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/samsung/android/cocktailbar/CocktailHost;->notifyWakeUpState(II)V
 
@@ -181,9 +160,6 @@
 
 .method static synthetic access$1300(Lcom/samsung/android/cocktailbar/CocktailHost;II)V
     .locals 0
-    .param p0    # Lcom/samsung/android/cocktailbar/CocktailHost;
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/samsung/android/cocktailbar/CocktailHost;->setMode(II)V
 
@@ -192,9 +168,6 @@
 
 .method static synthetic access$1400(Lcom/samsung/android/cocktailbar/CocktailHost;II)V
     .locals 0
-    .param p0    # Lcom/samsung/android/cocktailbar/CocktailHost;
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/samsung/android/cocktailbar/CocktailHost;->setDisableTickerView(II)V
 
@@ -203,9 +176,6 @@
 
 .method static synthetic access$1500(Lcom/samsung/android/cocktailbar/CocktailHost;ILcom/samsung/android/cocktailbar/ICocktailBarShowCallback;)V
     .locals 0
-    .param p0    # Lcom/samsung/android/cocktailbar/CocktailHost;
-    .param p1    # I
-    .param p2    # Lcom/samsung/android/cocktailbar/ICocktailBarShowCallback;
 
     invoke-direct {p0, p1, p2}, Lcom/samsung/android/cocktailbar/CocktailHost;->notifyScreenTurnedOn(ILcom/samsung/android/cocktailbar/ICocktailBarShowCallback;)V
 
@@ -214,9 +184,6 @@
 
 .method static synthetic access$1600(Lcom/samsung/android/cocktailbar/CocktailHost;II)V
     .locals 0
-    .param p0    # Lcom/samsung/android/cocktailbar/CocktailHost;
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/samsung/android/cocktailbar/CocktailHost;->setTransparentCocktail(II)V
 
@@ -225,9 +192,6 @@
 
 .method static synthetic access$200(Lcom/samsung/android/cocktailbar/CocktailHost;II)V
     .locals 0
-    .param p0    # Lcom/samsung/android/cocktailbar/CocktailHost;
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/samsung/android/cocktailbar/CocktailHost;->removeCocktail(II)V
 
@@ -236,9 +200,6 @@
 
 .method static synthetic access$300(Lcom/samsung/android/cocktailbar/CocktailHost;II)V
     .locals 0
-    .param p0    # Lcom/samsung/android/cocktailbar/CocktailHost;
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/samsung/android/cocktailbar/CocktailHost;->showCocktail(II)V
 
@@ -247,10 +208,6 @@
 
 .method static synthetic access$400(Lcom/samsung/android/cocktailbar/CocktailHost;III)V
     .locals 0
-    .param p0    # Lcom/samsung/android/cocktailbar/CocktailHost;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Lcom/samsung/android/cocktailbar/CocktailHost;->closeContextualCocktail(III)V
 
@@ -259,10 +216,6 @@
 
 .method static synthetic access$500(Lcom/samsung/android/cocktailbar/CocktailHost;III)V
     .locals 0
-    .param p0    # Lcom/samsung/android/cocktailbar/CocktailHost;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Lcom/samsung/android/cocktailbar/CocktailHost;->viewDataChanged(III)V
 
@@ -271,8 +224,6 @@
 
 .method static synthetic access$600(Lcom/samsung/android/cocktailbar/CocktailHost;I)V
     .locals 0
-    .param p0    # Lcom/samsung/android/cocktailbar/CocktailHost;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/samsung/android/cocktailbar/CocktailHost;->updateToolLauncher(I)V
 
@@ -281,9 +232,6 @@
 
 .method static synthetic access$700(Lcom/samsung/android/cocktailbar/CocktailHost;II)V
     .locals 0
-    .param p0    # Lcom/samsung/android/cocktailbar/CocktailHost;
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/samsung/android/cocktailbar/CocktailHost;->notifyCocktailBarDecorChanged(II)V
 
@@ -292,9 +240,6 @@
 
 .method static synthetic access$800(Lcom/samsung/android/cocktailbar/CocktailHost;II)V
     .locals 0
-    .param p0    # Lcom/samsung/android/cocktailbar/CocktailHost;
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/samsung/android/cocktailbar/CocktailHost;->notifyKeyguardState(II)V
 
@@ -303,10 +248,6 @@
 
 .method static synthetic access$900(Lcom/samsung/android/cocktailbar/CocktailHost;III)V
     .locals 0
-    .param p0    # Lcom/samsung/android/cocktailbar/CocktailHost;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Lcom/samsung/android/cocktailbar/CocktailHost;->notifyCocktailBarVisibility(III)V
 
@@ -375,9 +316,6 @@
 
 .method private closeContextualCocktail(III)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     iget-object v0, p0, Lcom/samsung/android/cocktailbar/CocktailHost;->mCallbackListener:Lcom/samsung/android/cocktailbar/CocktailHost$ICallbackListener;
 
@@ -388,8 +326,6 @@
 
 .method private notifyCocktailBarDecorChanged(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/samsung/android/cocktailbar/CocktailHost;->mCallbackListener:Lcom/samsung/android/cocktailbar/CocktailHost$ICallbackListener;
 
@@ -400,9 +336,6 @@
 
 .method private notifyCocktailBarVisibility(III)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     iget-object v0, p0, Lcom/samsung/android/cocktailbar/CocktailHost;->mCallbackListener:Lcom/samsung/android/cocktailbar/CocktailHost$ICallbackListener;
 
@@ -413,8 +346,6 @@
 
 .method private notifyKeyguardState(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x1
 
@@ -435,8 +366,6 @@
 
 .method private notifyScreenTurnedOn(ILcom/samsung/android/cocktailbar/ICocktailBarShowCallback;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Lcom/samsung/android/cocktailbar/ICocktailBarShowCallback;
 
     iget-object v0, p0, Lcom/samsung/android/cocktailbar/CocktailHost;->mCallbackListener:Lcom/samsung/android/cocktailbar/CocktailHost$ICallbackListener;
 
@@ -447,8 +376,6 @@
 
 .method private notifyWakeUpState(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x1
 
@@ -469,9 +396,6 @@
 
 .method private partiallyUpdateCocktail(ILandroid/widget/RemoteViews;I)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/widget/RemoteViews;
-    .param p3    # I
 
     iget-object v0, p0, Lcom/samsung/android/cocktailbar/CocktailHost;->mCallbackListener:Lcom/samsung/android/cocktailbar/CocktailHost$ICallbackListener;
 
@@ -482,8 +406,6 @@
 
 .method private removeCocktail(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/samsung/android/cocktailbar/CocktailHost;->mCallbackListener:Lcom/samsung/android/cocktailbar/CocktailHost$ICallbackListener;
 
@@ -494,8 +416,6 @@
 
 .method private sendExtraDataToCocktailBar(ILandroid/os/Bundle;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     iget-object v0, p0, Lcom/samsung/android/cocktailbar/CocktailHost;->mCallbackListener:Lcom/samsung/android/cocktailbar/CocktailHost$ICallbackListener;
 
@@ -506,8 +426,6 @@
 
 .method private setDisableTickerView(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/samsung/android/cocktailbar/CocktailHost;->mCallbackListener:Lcom/samsung/android/cocktailbar/CocktailHost$ICallbackListener;
 
@@ -518,8 +436,6 @@
 
 .method private setMode(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/samsung/android/cocktailbar/CocktailHost;->mCallbackListener:Lcom/samsung/android/cocktailbar/CocktailHost$ICallbackListener;
 
@@ -530,8 +446,6 @@
 
 .method private setTransparentCocktail(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x1
 
@@ -552,8 +466,6 @@
 
 .method private showCocktail(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/samsung/android/cocktailbar/CocktailHost;->mCallbackListener:Lcom/samsung/android/cocktailbar/CocktailHost$ICallbackListener;
 
@@ -564,7 +476,6 @@
 
 .method private switchDefaultCocktail(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/samsung/android/cocktailbar/CocktailHost;->mCallbackListener:Lcom/samsung/android/cocktailbar/CocktailHost$ICallbackListener;
 
@@ -575,9 +486,6 @@
 
 .method private updateCocktail(ILcom/samsung/android/cocktailbar/Cocktail;I)V
     .locals 1
-    .param p1    # I
-    .param p2    # Lcom/samsung/android/cocktailbar/Cocktail;
-    .param p3    # I
 
     iget-object v0, p0, Lcom/samsung/android/cocktailbar/CocktailHost;->mCallbackListener:Lcom/samsung/android/cocktailbar/CocktailHost$ICallbackListener;
 
@@ -588,7 +496,6 @@
 
 .method private updateToolLauncher(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/samsung/android/cocktailbar/CocktailHost;->mCallbackListener:Lcom/samsung/android/cocktailbar/CocktailHost$ICallbackListener;
 
@@ -599,9 +506,6 @@
 
 .method private viewDataChanged(III)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     iget-object v0, p0, Lcom/samsung/android/cocktailbar/CocktailHost;->mCallbackListener:Lcom/samsung/android/cocktailbar/CocktailHost$ICallbackListener;
 

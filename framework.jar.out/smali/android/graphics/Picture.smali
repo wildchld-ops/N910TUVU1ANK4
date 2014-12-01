@@ -40,8 +40,6 @@
 
 .method private constructor <init>(IZ)V
     .locals 1
-    .param p1    # I
-    .param p2    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -63,7 +61,6 @@
 
 .method public constructor <init>(Landroid/graphics/Picture;)V
     .locals 2
-    .param p1    # Landroid/graphics/Picture;
 
     const/4 v1, 0x0
 
@@ -88,7 +85,6 @@
 
 .method public static createFromStream(Ljava/io/InputStream;)Landroid/graphics/Picture;
     .locals 3
-    .param p0    # Ljava/io/InputStream;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -134,8 +130,6 @@
 # virtual methods
 .method public beginRecording(II)Landroid/graphics/Canvas;
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget v1, p0, Landroid/graphics/Picture;->mNativePicture:I
 
@@ -156,7 +150,6 @@
 
 .method public draw(Landroid/graphics/Canvas;)V
     .locals 2
-    .param p1    # Landroid/graphics/Canvas;
 
     iget-object v0, p0, Landroid/graphics/Picture;->mRecordingCanvas:Landroid/graphics/Canvas;
 
@@ -236,7 +229,6 @@
 
 .method public writeToStream(Ljava/io/OutputStream;)V
     .locals 2
-    .param p1    # Ljava/io/OutputStream;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 

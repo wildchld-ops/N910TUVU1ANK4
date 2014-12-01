@@ -44,7 +44,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/pm/PersonaManagerService;Lorg/xmlpull/v1/XmlPullParser;)V
     .locals 1
-    .param p2    # Lorg/xmlpull/v1/XmlPullParser;
 
     iput-object p1, p0, Lcom/android/server/pm/PersonaManagerService$FotaXmlDataParser;->this$0:Lcom/android/server/pm/PersonaManagerService;
 

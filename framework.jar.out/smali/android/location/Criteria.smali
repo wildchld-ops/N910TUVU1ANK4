@@ -100,7 +100,6 @@
 
 .method public constructor <init>(Landroid/location/Criteria;)V
     .locals 1
-    .param p1    # Landroid/location/Criteria;
 
     const/4 v0, 0x0
 
@@ -165,8 +164,6 @@
 
 .method static synthetic access$002(Landroid/location/Criteria;I)I
     .locals 0
-    .param p0    # Landroid/location/Criteria;
-    .param p1    # I
 
     iput p1, p0, Landroid/location/Criteria;->mHorizontalAccuracy:I
 
@@ -175,8 +172,6 @@
 
 .method static synthetic access$102(Landroid/location/Criteria;I)I
     .locals 0
-    .param p0    # Landroid/location/Criteria;
-    .param p1    # I
 
     iput p1, p0, Landroid/location/Criteria;->mVerticalAccuracy:I
 
@@ -185,8 +180,6 @@
 
 .method static synthetic access$202(Landroid/location/Criteria;I)I
     .locals 0
-    .param p0    # Landroid/location/Criteria;
-    .param p1    # I
 
     iput p1, p0, Landroid/location/Criteria;->mSpeedAccuracy:I
 
@@ -195,8 +188,6 @@
 
 .method static synthetic access$302(Landroid/location/Criteria;I)I
     .locals 0
-    .param p0    # Landroid/location/Criteria;
-    .param p1    # I
 
     iput p1, p0, Landroid/location/Criteria;->mBearingAccuracy:I
 
@@ -205,8 +196,6 @@
 
 .method static synthetic access$402(Landroid/location/Criteria;I)I
     .locals 0
-    .param p0    # Landroid/location/Criteria;
-    .param p1    # I
 
     iput p1, p0, Landroid/location/Criteria;->mPowerRequirement:I
 
@@ -215,8 +204,6 @@
 
 .method static synthetic access$502(Landroid/location/Criteria;Z)Z
     .locals 0
-    .param p0    # Landroid/location/Criteria;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/location/Criteria;->mAltitudeRequired:Z
 
@@ -225,8 +212,6 @@
 
 .method static synthetic access$602(Landroid/location/Criteria;Z)Z
     .locals 0
-    .param p0    # Landroid/location/Criteria;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/location/Criteria;->mBearingRequired:Z
 
@@ -235,8 +220,6 @@
 
 .method static synthetic access$702(Landroid/location/Criteria;Z)Z
     .locals 0
-    .param p0    # Landroid/location/Criteria;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/location/Criteria;->mSpeedRequired:Z
 
@@ -245,8 +228,6 @@
 
 .method static synthetic access$802(Landroid/location/Criteria;Z)Z
     .locals 0
-    .param p0    # Landroid/location/Criteria;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/location/Criteria;->mCostAllowed:Z
 
@@ -255,7 +236,6 @@
 
 .method private static accuracyToString(I)Ljava/lang/String;
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -295,7 +275,6 @@
 
 .method private static powerToString(I)Ljava/lang/String;
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -437,7 +416,6 @@
 
 .method public setAccuracy(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -490,7 +468,6 @@
 
 .method public setAltitudeRequired(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/location/Criteria;->mAltitudeRequired:Z
 
@@ -499,7 +476,6 @@
 
 .method public setBearingAccuracy(I)V
     .locals 3
-    .param p1    # I
 
     if-ltz p1, :cond_0
 
@@ -540,7 +516,6 @@
 
 .method public setBearingRequired(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/location/Criteria;->mBearingRequired:Z
 
@@ -549,7 +524,6 @@
 
 .method public setCostAllowed(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/location/Criteria;->mCostAllowed:Z
 
@@ -558,7 +532,6 @@
 
 .method public setHorizontalAccuracy(I)V
     .locals 3
-    .param p1    # I
 
     if-ltz p1, :cond_0
 
@@ -599,7 +572,6 @@
 
 .method public setPowerRequirement(I)V
     .locals 3
-    .param p1    # I
 
     if-ltz p1, :cond_0
 
@@ -640,7 +612,6 @@
 
 .method public setSpeedAccuracy(I)V
     .locals 3
-    .param p1    # I
 
     if-ltz p1, :cond_0
 
@@ -681,7 +652,6 @@
 
 .method public setSpeedRequired(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/location/Criteria;->mSpeedRequired:Z
 
@@ -690,7 +660,6 @@
 
 .method public setVerticalAccuracy(I)V
     .locals 3
-    .param p1    # I
 
     if-ltz p1, :cond_0
 
@@ -777,8 +746,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 3
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     const/4 v1, 0x1
 

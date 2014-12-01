@@ -30,15 +30,6 @@
 # direct methods
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;FFFFIIFI)V
     .locals 2
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # I
-    .param p7    # I
-    .param p8    # F
-    .param p9    # I
 
     const/4 v1, 0x1
 
@@ -93,14 +84,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;FFFFIII)V
     .locals 2
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
 
     const/4 v1, 0x1
 
@@ -424,7 +407,6 @@
 
 .method public setColor(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/glview/TwGLPolygonTexture;->mColor:I
 
@@ -435,7 +417,6 @@
 
 .method public declared-synchronized setHeight(F)V
     .locals 1
-    .param p1    # F
 
     monitor-enter p0
 
@@ -462,8 +443,6 @@
 
 .method public setSize(FF)V
     .locals 2
-    .param p1    # F
-    .param p2    # F
 
     iput p1, p0, Lcom/sec/android/glview/TwGLPolygonTexture;->mWidth:F
 
@@ -482,7 +461,6 @@
 
 .method public setThickness(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/glview/TwGLPolygonTexture;->mThickness:I
 
@@ -493,7 +471,6 @@
 
 .method public declared-synchronized setWidth(F)V
     .locals 1
-    .param p1    # F
 
     monitor-enter p0
 

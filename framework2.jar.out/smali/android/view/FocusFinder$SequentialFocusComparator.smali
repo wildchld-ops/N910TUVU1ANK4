@@ -60,7 +60,6 @@
 
 .method synthetic constructor <init>(Landroid/view/FocusFinder$1;)V
     .locals 0
-    .param p1    # Landroid/view/FocusFinder$1;
 
     invoke-direct {p0}, Landroid/view/FocusFinder$SequentialFocusComparator;-><init>()V
 
@@ -69,8 +68,6 @@
 
 .method private getRect(Landroid/view/View;Landroid/graphics/Rect;)V
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/graphics/Rect;
 
     invoke-virtual {p1, p2}, Landroid/view/View;->getDrawingRect(Landroid/graphics/Rect;)V
 
@@ -85,8 +82,6 @@
 # virtual methods
 .method public compare(Landroid/view/View;Landroid/view/View;)I
     .locals 5
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/View;
 
     const/4 v2, 0x0
 
@@ -256,8 +251,6 @@
 
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p1, Landroid/view/View;
 
@@ -282,7 +275,6 @@
 
 .method public setIsLayoutRtl(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/view/FocusFinder$SequentialFocusComparator;->mIsLayoutRtl:Z
 
@@ -291,7 +283,6 @@
 
 .method public setRoot(Landroid/view/ViewGroup;)V
     .locals 0
-    .param p1    # Landroid/view/ViewGroup;
 
     iput-object p1, p0, Landroid/view/FocusFinder$SequentialFocusComparator;->mRoot:Landroid/view/ViewGroup;
 

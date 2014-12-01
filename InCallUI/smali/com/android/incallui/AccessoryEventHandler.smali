@@ -39,7 +39,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/incallui/InCallPresenter;)V
     .locals 1
-    .param p1    # Lcom/android/incallui/InCallPresenter;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -60,8 +59,6 @@
 
 .method static synthetic access$000(Lcom/android/incallui/AccessoryEventHandler;Z)V
     .locals 0
-    .param p0    # Lcom/android/incallui/AccessoryEventHandler;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/incallui/AccessoryEventHandler;->notifyListenersOfChange(Z)V
 
@@ -70,8 +67,6 @@
 
 .method static synthetic access$100(Lcom/android/incallui/AccessoryEventHandler;Z)V
     .locals 0
-    .param p0    # Lcom/android/incallui/AccessoryEventHandler;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/incallui/AccessoryEventHandler;->notifyListenersOfCallForwardStateChange(Z)V
 
@@ -202,7 +197,6 @@
 
 .method private notifyListenersOfCallForwardStateChange(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v2, p0, Lcom/android/incallui/AccessoryEventHandler;->mListeners:Ljava/util/Set;
 
@@ -233,7 +227,6 @@
 
 .method private notifyListenersOfChange(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v2, p0, Lcom/android/incallui/AccessoryEventHandler;->mListeners:Ljava/util/Set;
 
@@ -266,7 +259,6 @@
 # virtual methods
 .method public addListener(Lcom/android/incallui/AccessoryEventHandler$Listener;)V
     .locals 1
-    .param p1    # Lcom/android/incallui/AccessoryEventHandler$Listener;
 
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -287,7 +279,6 @@
 
 .method public removeListener(Lcom/android/incallui/AccessoryEventHandler$Listener;)V
     .locals 1
-    .param p1    # Lcom/android/incallui/AccessoryEventHandler$Listener;
 
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 

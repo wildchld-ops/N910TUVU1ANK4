@@ -26,8 +26,6 @@
 # direct methods
 .method public constructor <init>(ILjava/lang/String;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -52,7 +50,6 @@
 
 .method private static log(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "DummyDataStateTracker"
 
@@ -63,7 +60,6 @@
 
 .method private static loge(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "DummyDataStateTracker"
 
@@ -74,9 +70,6 @@
 
 .method private setDetailedState(Landroid/net/NetworkInfo$DetailedState;Ljava/lang/String;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Landroid/net/NetworkInfo$DetailedState;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -137,7 +130,6 @@
 # virtual methods
 .method public addStackedLink(Landroid/net/LinkProperties;)V
     .locals 1
-    .param p1    # Landroid/net/LinkProperties;
 
     iget-object v0, p0, Landroid/net/DummyDataStateTracker;->mLinkProperties:Landroid/net/LinkProperties;
 
@@ -154,14 +146,12 @@
 
 .method public captivePortalCheckCompleted(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method public defaultRouteSet(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/net/DummyDataStateTracker;->mDefaultRouteSet:Z
 
@@ -242,7 +232,6 @@
 
 .method public privateDnsRouteSet(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/net/DummyDataStateTracker;->mPrivateDnsRouteSet:Z
 
@@ -283,7 +272,6 @@
 
 .method public removeStackedLink(Landroid/net/LinkProperties;)V
     .locals 1
-    .param p1    # Landroid/net/LinkProperties;
 
     iget-object v0, p0, Landroid/net/DummyDataStateTracker;->mLinkProperties:Landroid/net/LinkProperties;
 
@@ -294,21 +282,18 @@
 
 .method public setDependencyMet(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method public setPolicyDataEnable(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method public setRadio(Z)Z
     .locals 1
-    .param p1    # Z
 
     const/4 v0, 0x1
 
@@ -317,7 +302,6 @@
 
 .method public setTeardownRequested(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/net/DummyDataStateTracker;->mTeardownRequested:Z
 
@@ -326,23 +310,18 @@
 
 .method public setUserDataEnable(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method public setUserDataEnableEx(ZI)V
     .locals 0
-    .param p1    # Z
-    .param p2    # I
 
     return-void
 .end method
 
 .method public startMonitoring(Landroid/content/Context;Landroid/os/Handler;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/Handler;
 
     iput-object p2, p0, Landroid/net/DummyDataStateTracker;->mTarget:Landroid/os/Handler;
 
@@ -353,7 +332,6 @@
 
 .method public supplyMessenger(Landroid/os/Messenger;)V
     .locals 0
-    .param p1    # Landroid/os/Messenger;
 
     return-void
 .end method

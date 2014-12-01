@@ -58,7 +58,6 @@
 
 .method static synthetic access$000(Lcom/diotek/ime/implement/setting/HwrSettings;)Landroid/preference/ListPreference;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/setting/HwrSettings;
 
     iget-object v0, p0, Lcom/diotek/ime/implement/setting/HwrSettings;->mHwrRecogTime:Landroid/preference/ListPreference;
 
@@ -67,7 +66,6 @@
 
 .method static synthetic access$100(Lcom/diotek/ime/implement/setting/HwrSettings;)Landroid/preference/ListPreference;
     .locals 1
-    .param p0    # Lcom/diotek/ime/implement/setting/HwrSettings;
 
     iget-object v0, p0, Lcom/diotek/ime/implement/setting/HwrSettings;->mHwrRecogType:Landroid/preference/ListPreference;
 
@@ -76,8 +74,6 @@
 
 .method private getEntries(II)[Ljava/lang/String;
     .locals 7
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
 
@@ -134,9 +130,6 @@
 
 .method private setEntries(Ljava/lang/String;II)V
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     invoke-virtual {p0, p1}, Landroid/preference/PreferenceActivity;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
@@ -212,7 +205,6 @@
 # virtual methods
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 23
-    .param p1    # Landroid/os/Bundle;
 
     invoke-static {}, Lcom/diotek/ime/framework/common/InputManagerImpl;->getInstance()Lcom/diotek/ime/framework/common/InputManager;
 
@@ -939,7 +931,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 1
-    .param p1    # Landroid/view/Menu;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreateOptionsMenu(Landroid/view/Menu;)Z
 
@@ -950,7 +941,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 2
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v0, 0x1
 
@@ -992,7 +982,6 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)Z
     .locals 1
-    .param p1    # Landroid/view/Menu;
 
     invoke-interface {p1}, Landroid/view/Menu;->clear()V
 

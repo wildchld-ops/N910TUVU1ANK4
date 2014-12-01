@@ -36,8 +36,6 @@
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 3
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     :try_start_0
     iget-object v1, p0, Lcom/android/settings/safetycare/SafetyCareSettings$4$1;->this$1:Lcom/android/settings/safetycare/SafetyCareSettings$4;

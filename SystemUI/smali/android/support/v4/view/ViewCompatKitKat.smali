@@ -14,7 +14,6 @@
 
 .method public static getAccessibilityLiveRegion(Landroid/view/View;)I
     .locals 1
-    .param p0    # Landroid/view/View;
 
     invoke-virtual {p0}, Landroid/view/View;->getAccessibilityLiveRegion()I
 
@@ -25,8 +24,6 @@
 
 .method public static setAccessibilityLiveRegion(Landroid/view/View;I)V
     .locals 0
-    .param p0    # Landroid/view/View;
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/view/View;->setAccessibilityLiveRegion(I)V
 

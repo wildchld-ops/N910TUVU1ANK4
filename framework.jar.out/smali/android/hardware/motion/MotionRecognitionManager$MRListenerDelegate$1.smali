@@ -23,7 +23,6 @@
 # direct methods
 .method constructor <init>(Landroid/hardware/motion/MotionRecognitionManager$MRListenerDelegate;Landroid/os/Looper;Landroid/hardware/motion/MotionRecognitionManager;)V
     .locals 0
-    .param p2    # Landroid/os/Looper;
 
     iput-object p1, p0, Landroid/hardware/motion/MotionRecognitionManager$MRListenerDelegate$1;->this$1:Landroid/hardware/motion/MotionRecognitionManager$MRListenerDelegate;
 
@@ -38,7 +37,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 5
-    .param p1    # Landroid/os/Message;
 
     :try_start_0
     iget-object v2, p0, Landroid/hardware/motion/MotionRecognitionManager$MRListenerDelegate$1;->this$1:Landroid/hardware/motion/MotionRecognitionManager$MRListenerDelegate;

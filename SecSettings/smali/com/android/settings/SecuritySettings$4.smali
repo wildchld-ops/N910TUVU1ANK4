@@ -36,7 +36,6 @@
 # virtual methods
 .method public onPreferenceClick(Landroid/preference/Preference;)Z
     .locals 4
-    .param p1    # Landroid/preference/Preference;
 
     const/4 v3, 0x0
 

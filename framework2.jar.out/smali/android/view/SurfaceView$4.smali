@@ -38,7 +38,6 @@
 
 .method private final internalLockCanvas(Landroid/graphics/Rect;)Landroid/graphics/Canvas;
     .locals 10
-    .param p1    # Landroid/graphics/Rect;
 
     iget-object v6, p0, Landroid/view/SurfaceView$4;->this$0:Landroid/view/SurfaceView;
 
@@ -151,7 +150,6 @@
 # virtual methods
 .method public addCallback(Landroid/view/SurfaceHolder$Callback;)V
     .locals 2
-    .param p1    # Landroid/view/SurfaceHolder$Callback;
 
     iget-object v0, p0, Landroid/view/SurfaceView$4;->this$0:Landroid/view/SurfaceView;
 
@@ -235,7 +233,6 @@
 
 .method public lockCanvas(Landroid/graphics/Rect;)Landroid/graphics/Canvas;
     .locals 1
-    .param p1    # Landroid/graphics/Rect;
 
     invoke-direct {p0, p1}, Landroid/view/SurfaceView$4;->internalLockCanvas(Landroid/graphics/Rect;)Landroid/graphics/Canvas;
 
@@ -246,7 +243,6 @@
 
 .method public removeCallback(Landroid/view/SurfaceHolder$Callback;)V
     .locals 2
-    .param p1    # Landroid/view/SurfaceHolder$Callback;
 
     iget-object v0, p0, Landroid/view/SurfaceView$4;->this$0:Landroid/view/SurfaceView;
 
@@ -277,8 +273,6 @@
 
 .method public setFixedSize(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Landroid/view/SurfaceView$4;->this$0:Landroid/view/SurfaceView;
 
@@ -311,7 +305,6 @@
 
 .method public setFormat(I)V
     .locals 2
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -343,7 +336,6 @@
 
 .method public setKeepScreenOn(Z)V
     .locals 3
-    .param p1    # Z
 
     const/4 v1, 0x1
 
@@ -410,7 +402,6 @@
 
 .method public setType(I)V
     .locals 0
-    .param p1    # I
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -419,7 +410,6 @@
 
 .method public unlockCanvasAndPost(Landroid/graphics/Canvas;)V
     .locals 1
-    .param p1    # Landroid/graphics/Canvas;
 
     iget-object v0, p0, Landroid/view/SurfaceView$4;->this$0:Landroid/view/SurfaceView;
 

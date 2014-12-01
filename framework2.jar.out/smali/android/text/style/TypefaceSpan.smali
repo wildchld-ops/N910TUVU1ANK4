@@ -13,7 +13,6 @@
 # direct methods
 .method public constructor <init>(Landroid/os/Parcel;)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Landroid/text/style/MetricAffectingSpan;-><init>()V
 
@@ -28,7 +27,6 @@
 
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Landroid/text/style/MetricAffectingSpan;-><init>()V
 
@@ -39,8 +37,6 @@
 
 .method private static apply(Landroid/graphics/Paint;Ljava/lang/String;)V
     .locals 5
-    .param p0    # Landroid/graphics/Paint;
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Landroid/graphics/Paint;->getTypeface()Landroid/graphics/Typeface;
 
@@ -121,7 +117,6 @@
 
 .method public updateDrawState(Landroid/text/TextPaint;)V
     .locals 1
-    .param p1    # Landroid/text/TextPaint;
 
     iget-object v0, p0, Landroid/text/style/TypefaceSpan;->mFamily:Ljava/lang/String;
 
@@ -132,7 +127,6 @@
 
 .method public updateMeasureState(Landroid/text/TextPaint;)V
     .locals 1
-    .param p1    # Landroid/text/TextPaint;
 
     iget-object v0, p0, Landroid/text/style/TypefaceSpan;->mFamily:Ljava/lang/String;
 
@@ -143,8 +137,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v0, p0, Landroid/text/style/TypefaceSpan;->mFamily:Ljava/lang/String;
 

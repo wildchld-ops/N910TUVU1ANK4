@@ -193,7 +193,6 @@
 
 .method public finishPage(Landroid/graphics/pdf/PdfDocument$Page;)V
     .locals 2
-    .param p1    # Landroid/graphics/pdf/PdfDocument$Page;
 
     invoke-direct {p0}, Landroid/graphics/pdf/PdfDocument;->throwIfClosed()V
 
@@ -281,7 +280,6 @@
 
 .method public startPage(Landroid/graphics/pdf/PdfDocument$PageInfo;)Landroid/graphics/pdf/PdfDocument$Page;
     .locals 8
-    .param p1    # Landroid/graphics/pdf/PdfDocument$PageInfo;
 
     invoke-direct {p0}, Landroid/graphics/pdf/PdfDocument;->throwIfClosed()V
 
@@ -361,7 +359,6 @@
 
 .method public writeTo(Ljava/io/OutputStream;)V
     .locals 2
-    .param p1    # Ljava/io/OutputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

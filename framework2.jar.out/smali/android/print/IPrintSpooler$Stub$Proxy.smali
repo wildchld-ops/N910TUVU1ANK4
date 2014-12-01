@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -45,7 +44,6 @@
 
 .method public createPrintJob(Landroid/print/PrintJobInfo;)V
     .locals 5
-    .param p1    # Landroid/print/PrintJobInfo;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -116,10 +114,6 @@
 
 .method public getPrintJobInfo(Landroid/print/PrintJobId;Landroid/print/IPrintSpoolerCallbacks;II)V
     .locals 5
-    .param p1    # Landroid/print/PrintJobId;
-    .param p2    # Landroid/print/IPrintSpoolerCallbacks;
-    .param p3    # I
-    .param p4    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -197,11 +191,6 @@
 
 .method public getPrintJobInfos(Landroid/print/IPrintSpoolerCallbacks;Landroid/content/ComponentName;III)V
     .locals 5
-    .param p1    # Landroid/print/IPrintSpoolerCallbacks;
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -322,7 +311,6 @@
 
 .method public setClient(Landroid/print/IPrintSpoolerClient;)V
     .locals 5
-    .param p1    # Landroid/print/IPrintSpoolerClient;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -375,8 +363,6 @@
 
 .method public setPrintJobCancelling(Landroid/print/PrintJobId;Z)V
     .locals 5
-    .param p1    # Landroid/print/PrintJobId;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -453,11 +439,6 @@
 
 .method public setPrintJobState(Landroid/print/PrintJobId;ILjava/lang/String;Landroid/print/IPrintSpoolerCallbacks;I)V
     .locals 5
-    .param p1    # Landroid/print/PrintJobId;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Landroid/print/IPrintSpoolerCallbacks;
-    .param p5    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -537,10 +518,6 @@
 
 .method public setPrintJobTag(Landroid/print/PrintJobId;Ljava/lang/String;Landroid/print/IPrintSpoolerCallbacks;I)V
     .locals 5
-    .param p1    # Landroid/print/PrintJobId;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/print/IPrintSpoolerCallbacks;
-    .param p4    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -618,8 +595,6 @@
 
 .method public writePrintJobData(Landroid/os/ParcelFileDescriptor;Landroid/print/PrintJobId;)V
     .locals 5
-    .param p1    # Landroid/os/ParcelFileDescriptor;
-    .param p2    # Landroid/print/PrintJobId;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

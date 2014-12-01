@@ -23,7 +23,6 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/healthcover/HealthCoverManager$ListenerDelegate;Landroid/os/Looper;Lcom/samsung/android/healthcover/HealthCoverManager;)V
     .locals 0
-    .param p2    # Landroid/os/Looper;
 
     iput-object p1, p0, Lcom/samsung/android/healthcover/HealthCoverManager$ListenerDelegate$1;->this$1:Lcom/samsung/android/healthcover/HealthCoverManager$ListenerDelegate;
 
@@ -38,7 +37,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 4
-    .param p1    # Landroid/os/Message;
 
     :try_start_0
     iget-object v1, p0, Lcom/samsung/android/healthcover/HealthCoverManager$ListenerDelegate$1;->this$1:Lcom/samsung/android/healthcover/HealthCoverManager$ListenerDelegate;

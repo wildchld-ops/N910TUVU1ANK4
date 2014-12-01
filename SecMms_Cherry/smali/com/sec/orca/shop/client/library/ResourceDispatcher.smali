@@ -115,7 +115,6 @@
 
 .method public constructor <init>(Lcom/sec/orca/shop/client/library/ICacheLoader;Ljava/util/concurrent/ExecutorService;)V
     .locals 2
-    .param p2    # Ljava/util/concurrent/ExecutorService;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -166,7 +165,6 @@
 
 .method public constructor <init>(Ljava/util/concurrent/ExecutorService;)V
     .locals 1
-    .param p1    # Ljava/util/concurrent/ExecutorService;
 
     new-instance v0, Lcom/sec/orca/shop/client/library/SoftCacheLoader;
 
@@ -326,7 +324,6 @@
 # virtual methods
 .method public dispatch(Landroid/view/View;Lcom/sec/orca/shop/client/library/AbstractResourceDispatcherTask;)Lcom/sec/orca/shop/client/library/AbstractResourceDispatcherTask;
     .locals 5
-    .param p1    # Landroid/view/View;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -506,7 +503,6 @@
 
 .method public setOnImageDispatchStateChanged(Lcom/sec/orca/shop/client/library/ResourceDispatcher$OnResourceDispatchStateChanged;)V
     .locals 2
-    .param p1    # Lcom/sec/orca/shop/client/library/ResourceDispatcher$OnResourceDispatchStateChanged;
 
     iget-object v1, p0, Lcom/sec/orca/shop/client/library/ResourceDispatcher;->mLocker:Ljava/lang/Object;
 
@@ -734,7 +730,6 @@
 
 .method public tryDispatch(Landroid/view/View;Lcom/sec/orca/shop/client/library/AbstractResourceDispatcherTask;)Z
     .locals 6
-    .param p1    # Landroid/view/View;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -857,7 +852,6 @@
 
 .method public undispatch(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     const/4 v0, 0x0
 
@@ -868,8 +862,6 @@
 
 .method public undispatch(Landroid/view/View;Z)V
     .locals 5
-    .param p1    # Landroid/view/View;
-    .param p2    # Z
 
     iget-object v3, p0, Lcom/sec/orca/shop/client/library/ResourceDispatcher;->mLocker:Ljava/lang/Object;
 
@@ -940,7 +932,6 @@
 
 .method public undispatch(Ljava/lang/Object;)V
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     const/4 v0, 0x0
 
@@ -951,8 +942,6 @@
 
 .method public undispatch(Ljava/lang/Object;Z)V
     .locals 6
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Z
 
     iget-object v4, p0, Lcom/sec/orca/shop/client/library/ResourceDispatcher;->mLocker:Ljava/lang/Object;
 

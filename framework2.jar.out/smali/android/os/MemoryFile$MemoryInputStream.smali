@@ -43,8 +43,6 @@
 
 .method synthetic constructor <init>(Landroid/os/MemoryFile;Landroid/os/MemoryFile$1;)V
     .locals 0
-    .param p1    # Landroid/os/MemoryFile;
-    .param p2    # Landroid/os/MemoryFile$1;
 
     invoke-direct {p0, p1}, Landroid/os/MemoryFile$MemoryInputStream;-><init>(Landroid/os/MemoryFile;)V
 
@@ -94,7 +92,6 @@
 
 .method public mark(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/os/MemoryFile$MemoryInputStream;->mOffset:I
 
@@ -155,9 +152,6 @@
 
 .method public read([BII)I
     .locals 3
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -237,7 +231,6 @@
 
 .method public skip(J)J
     .locals 4
-    .param p1    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

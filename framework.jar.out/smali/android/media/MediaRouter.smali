@@ -87,7 +87,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -139,7 +138,6 @@
 
 .method static addRouteStatic(Landroid/media/MediaRouter$RouteInfo;)V
     .locals 3
-    .param p0    # Landroid/media/MediaRouter$RouteInfo;
 
     invoke-virtual {p0}, Landroid/media/MediaRouter$RouteInfo;->getCategory()Landroid/media/MediaRouter$RouteCategory;
 
@@ -213,7 +211,6 @@
 
 .method static dispatchRouteAdded(Landroid/media/MediaRouter$RouteInfo;)V
     .locals 4
-    .param p0    # Landroid/media/MediaRouter$RouteInfo;
 
     sget-object v2, Landroid/media/MediaRouter;->sStatic:Landroid/media/MediaRouter$Static;
 
@@ -257,7 +254,6 @@
 
 .method static dispatchRouteChanged(Landroid/media/MediaRouter$RouteInfo;)V
     .locals 1
-    .param p0    # Landroid/media/MediaRouter$RouteInfo;
 
     iget v0, p0, Landroid/media/MediaRouter$RouteInfo;->mSupportedTypes:I
 
@@ -268,8 +264,6 @@
 
 .method static dispatchRouteChanged(Landroid/media/MediaRouter$RouteInfo;I)V
     .locals 7
-    .param p0    # Landroid/media/MediaRouter$RouteInfo;
-    .param p1    # I
 
     iget v2, p0, Landroid/media/MediaRouter$RouteInfo;->mSupportedTypes:I
 
@@ -369,9 +363,6 @@
 
 .method static dispatchRouteGrouped(Landroid/media/MediaRouter$RouteInfo;Landroid/media/MediaRouter$RouteGroup;I)V
     .locals 4
-    .param p0    # Landroid/media/MediaRouter$RouteInfo;
-    .param p1    # Landroid/media/MediaRouter$RouteGroup;
-    .param p2    # I
 
     sget-object v2, Landroid/media/MediaRouter;->sStatic:Landroid/media/MediaRouter$Static;
 
@@ -415,7 +406,6 @@
 
 .method static dispatchRoutePresentationDisplayChanged(Landroid/media/MediaRouter$RouteInfo;)V
     .locals 4
-    .param p0    # Landroid/media/MediaRouter$RouteInfo;
 
     sget-object v2, Landroid/media/MediaRouter;->sStatic:Landroid/media/MediaRouter$Static;
 
@@ -459,7 +449,6 @@
 
 .method static dispatchRouteRemoved(Landroid/media/MediaRouter$RouteInfo;)V
     .locals 4
-    .param p0    # Landroid/media/MediaRouter$RouteInfo;
 
     sget-object v2, Landroid/media/MediaRouter;->sStatic:Landroid/media/MediaRouter$Static;
 
@@ -503,8 +492,6 @@
 
 .method static dispatchRouteSelected(ILandroid/media/MediaRouter$RouteInfo;)V
     .locals 4
-    .param p0    # I
-    .param p1    # Landroid/media/MediaRouter$RouteInfo;
 
     sget-object v2, Landroid/media/MediaRouter;->sStatic:Landroid/media/MediaRouter$Static;
 
@@ -548,8 +535,6 @@
 
 .method static dispatchRouteUngrouped(Landroid/media/MediaRouter$RouteInfo;Landroid/media/MediaRouter$RouteGroup;)V
     .locals 4
-    .param p0    # Landroid/media/MediaRouter$RouteInfo;
-    .param p1    # Landroid/media/MediaRouter$RouteGroup;
 
     sget-object v2, Landroid/media/MediaRouter;->sStatic:Landroid/media/MediaRouter$Static;
 
@@ -593,8 +578,6 @@
 
 .method static dispatchRouteUnselected(ILandroid/media/MediaRouter$RouteInfo;)V
     .locals 4
-    .param p0    # I
-    .param p1    # Landroid/media/MediaRouter$RouteInfo;
 
     sget-object v2, Landroid/media/MediaRouter;->sStatic:Landroid/media/MediaRouter$Static;
 
@@ -638,7 +621,6 @@
 
 .method static dispatchRouteVolumeChanged(Landroid/media/MediaRouter$RouteInfo;)V
     .locals 4
-    .param p0    # Landroid/media/MediaRouter$RouteInfo;
 
     sget-object v2, Landroid/media/MediaRouter;->sStatic:Landroid/media/MediaRouter$Static;
 
@@ -682,7 +664,6 @@
 
 .method private findCallbackInfo(Landroid/media/MediaRouter$Callback;)I
     .locals 4
-    .param p1    # Landroid/media/MediaRouter$Callback;
 
     sget-object v3, Landroid/media/MediaRouter;->sStatic:Landroid/media/MediaRouter$Static;
 
@@ -727,8 +708,6 @@
 
 .method private static findWifiDisplay([Landroid/hardware/display/WifiDisplay;Ljava/lang/String;)Landroid/hardware/display/WifiDisplay;
     .locals 3
-    .param p0    # [Landroid/hardware/display/WifiDisplay;
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -765,7 +744,6 @@
 
 .method private static findWifiDisplayRoute(Landroid/hardware/display/WifiDisplay;)Landroid/media/MediaRouter$RouteInfo;
     .locals 5
-    .param p0    # Landroid/hardware/display/WifiDisplay;
 
     sget-object v3, Landroid/media/MediaRouter;->sStatic:Landroid/media/MediaRouter$Static;
 
@@ -818,7 +796,6 @@
 
 .method static getRouteAtStatic(I)Landroid/media/MediaRouter$RouteInfo;
     .locals 1
-    .param p0    # I
 
     sget-object v0, Landroid/media/MediaRouter;->sStatic:Landroid/media/MediaRouter$Static;
 
@@ -849,8 +826,6 @@
 
 .method static getWifiDisplayStatusCode(Landroid/hardware/display/WifiDisplay;Landroid/hardware/display/WifiDisplayStatus;)I
     .locals 4
-    .param p0    # Landroid/hardware/display/WifiDisplay;
-    .param p1    # Landroid/hardware/display/WifiDisplayStatus;
 
     invoke-virtual {p1}, Landroid/hardware/display/WifiDisplayStatus;->getScanState()I
 
@@ -998,8 +973,6 @@
 
 .method static isWifiDisplayEnabled(Landroid/hardware/display/WifiDisplay;Landroid/hardware/display/WifiDisplayStatus;)Z
     .locals 1
-    .param p0    # Landroid/hardware/display/WifiDisplay;
-    .param p1    # Landroid/hardware/display/WifiDisplayStatus;
 
     invoke-virtual {p0}, Landroid/hardware/display/WifiDisplay;->isAvailable()Z
 
@@ -1037,8 +1010,6 @@
 
 .method static makeWifiDisplayRoute(Landroid/hardware/display/WifiDisplay;Landroid/hardware/display/WifiDisplayStatus;)Landroid/media/MediaRouter$RouteInfo;
     .locals 3
-    .param p0    # Landroid/hardware/display/WifiDisplay;
-    .param p1    # Landroid/hardware/display/WifiDisplayStatus;
 
     new-instance v0, Landroid/media/MediaRouter$RouteInfo;
 
@@ -1103,8 +1074,6 @@
 
 .method static matchesDeviceAddress(Landroid/hardware/display/WifiDisplay;Landroid/media/MediaRouter$RouteInfo;)Z
     .locals 4
-    .param p0    # Landroid/hardware/display/WifiDisplay;
-    .param p1    # Landroid/media/MediaRouter$RouteInfo;
 
     const/4 v1, 0x1
 
@@ -1156,7 +1125,6 @@
 
 .method static removeRouteStatic(Landroid/media/MediaRouter$RouteInfo;)V
     .locals 6
-    .param p0    # Landroid/media/MediaRouter$RouteInfo;
 
     sget-object v5, Landroid/media/MediaRouter;->sStatic:Landroid/media/MediaRouter$Static;
 
@@ -1294,9 +1262,6 @@
 
 .method static selectRouteStatic(ILandroid/media/MediaRouter$RouteInfo;Z)V
     .locals 10
-    .param p0    # I
-    .param p1    # Landroid/media/MediaRouter$RouteInfo;
-    .param p2    # Z
 
     const/4 v4, 0x1
 
@@ -1562,8 +1527,6 @@
 
 .method private static shouldShowWifiDisplay(Landroid/hardware/display/WifiDisplay;Landroid/hardware/display/WifiDisplay;)Z
     .locals 1
-    .param p0    # Landroid/hardware/display/WifiDisplay;
-    .param p1    # Landroid/hardware/display/WifiDisplay;
 
     invoke-virtual {p0}, Landroid/hardware/display/WifiDisplay;->isRemembered()Z
 
@@ -1591,7 +1554,6 @@
 
 .method static systemVolumeChanged(I)V
     .locals 4
-    .param p0    # I
 
     sget-object v2, Landroid/media/MediaRouter;->sStatic:Landroid/media/MediaRouter$Static;
 
@@ -1682,7 +1644,6 @@
 
 .method static typesToString(I)Ljava/lang/String;
     .locals 2
-    .param p0    # I
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -1735,7 +1696,6 @@
 
 .method static updateRoute(Landroid/media/MediaRouter$RouteInfo;)V
     .locals 0
-    .param p0    # Landroid/media/MediaRouter$RouteInfo;
 
     invoke-static {p0}, Landroid/media/MediaRouter;->dispatchRouteChanged(Landroid/media/MediaRouter$RouteInfo;)V
 
@@ -1744,10 +1704,6 @@
 
 .method private static updateWifiDisplayRoute(Landroid/media/MediaRouter$RouteInfo;Landroid/hardware/display/WifiDisplay;Landroid/hardware/display/WifiDisplayStatus;Z)V
     .locals 4
-    .param p0    # Landroid/media/MediaRouter$RouteInfo;
-    .param p1    # Landroid/hardware/display/WifiDisplay;
-    .param p2    # Landroid/hardware/display/WifiDisplayStatus;
-    .param p3    # Z
 
     const/4 v0, 0x0
 
@@ -1824,7 +1780,6 @@
 
 .method static updateWifiDisplayStatus(Landroid/hardware/display/WifiDisplayStatus;)V
     .locals 13
-    .param p0    # Landroid/hardware/display/WifiDisplayStatus;
 
     const/4 v9, 0x1
 
@@ -2026,8 +1981,6 @@
 # virtual methods
 .method public addCallback(ILandroid/media/MediaRouter$Callback;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/media/MediaRouter$Callback;
 
     const/4 v0, 0x0
 
@@ -2038,9 +1991,6 @@
 
 .method public addCallback(ILandroid/media/MediaRouter$Callback;I)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/media/MediaRouter$Callback;
-    .param p3    # I
 
     invoke-direct {p0, p2}, Landroid/media/MediaRouter;->findCallbackInfo(Landroid/media/MediaRouter$Callback;)I
 
@@ -2093,7 +2043,6 @@
 
 .method public addRouteInt(Landroid/media/MediaRouter$RouteInfo;)V
     .locals 0
-    .param p1    # Landroid/media/MediaRouter$RouteInfo;
 
     invoke-static {p1}, Landroid/media/MediaRouter;->addRouteStatic(Landroid/media/MediaRouter$RouteInfo;)V
 
@@ -2102,7 +2051,6 @@
 
 .method public addUserRoute(Landroid/media/MediaRouter$UserRouteInfo;)V
     .locals 0
-    .param p1    # Landroid/media/MediaRouter$UserRouteInfo;
 
     invoke-static {p1}, Landroid/media/MediaRouter;->addRouteStatic(Landroid/media/MediaRouter$RouteInfo;)V
 
@@ -2159,8 +2107,6 @@
 
 .method public createRouteCategory(IZ)Landroid/media/MediaRouter$RouteCategory;
     .locals 2
-    .param p1    # I
-    .param p2    # Z
 
     new-instance v0, Landroid/media/MediaRouter$RouteCategory;
 
@@ -2173,8 +2119,6 @@
 
 .method public createRouteCategory(Ljava/lang/CharSequence;Z)Landroid/media/MediaRouter$RouteCategory;
     .locals 2
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Z
 
     new-instance v0, Landroid/media/MediaRouter$RouteCategory;
 
@@ -2187,7 +2131,6 @@
 
 .method public createUserRoute(Landroid/media/MediaRouter$RouteCategory;)Landroid/media/MediaRouter$UserRouteInfo;
     .locals 1
-    .param p1    # Landroid/media/MediaRouter$RouteCategory;
 
     new-instance v0, Landroid/media/MediaRouter$UserRouteInfo;
 
@@ -2208,7 +2151,6 @@
 
 .method public getCategoryAt(I)Landroid/media/MediaRouter$RouteCategory;
     .locals 1
-    .param p1    # I
 
     sget-object v0, Landroid/media/MediaRouter;->sStatic:Landroid/media/MediaRouter$Static;
 
@@ -2249,7 +2191,6 @@
 
 .method public getRouteAt(I)Landroid/media/MediaRouter$RouteInfo;
     .locals 1
-    .param p1    # I
 
     sget-object v0, Landroid/media/MediaRouter;->sStatic:Landroid/media/MediaRouter$Static;
 
@@ -2292,7 +2233,6 @@
 
 .method public getSelectedRoute(I)Landroid/media/MediaRouter$RouteInfo;
     .locals 1
-    .param p1    # I
 
     sget-object v0, Landroid/media/MediaRouter;->sStatic:Landroid/media/MediaRouter$Static;
 
@@ -2346,8 +2286,6 @@
 
 .method public isRouteAvailable(II)Z
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     sget-object v3, Landroid/media/MediaRouter;->sStatic:Landroid/media/MediaRouter$Static;
 
@@ -2407,7 +2345,6 @@
 
 .method public rebindAsUser(I)V
     .locals 1
-    .param p1    # I
 
     sget-object v0, Landroid/media/MediaRouter;->sStatic:Landroid/media/MediaRouter$Static;
 
@@ -2418,7 +2355,6 @@
 
 .method public removeCallback(Landroid/media/MediaRouter$Callback;)V
     .locals 4
-    .param p1    # Landroid/media/MediaRouter$Callback;
 
     invoke-direct {p0, p1}, Landroid/media/MediaRouter;->findCallbackInfo(Landroid/media/MediaRouter$Callback;)I
 
@@ -2473,7 +2409,6 @@
 
 .method public removeRouteInt(Landroid/media/MediaRouter$RouteInfo;)V
     .locals 0
-    .param p1    # Landroid/media/MediaRouter$RouteInfo;
 
     invoke-static {p1}, Landroid/media/MediaRouter;->removeRouteStatic(Landroid/media/MediaRouter$RouteInfo;)V
 
@@ -2482,7 +2417,6 @@
 
 .method public removeUserRoute(Landroid/media/MediaRouter$UserRouteInfo;)V
     .locals 0
-    .param p1    # Landroid/media/MediaRouter$UserRouteInfo;
 
     invoke-static {p1}, Landroid/media/MediaRouter;->removeRouteStatic(Landroid/media/MediaRouter$RouteInfo;)V
 
@@ -2491,8 +2425,6 @@
 
 .method public selectRoute(ILandroid/media/MediaRouter$RouteInfo;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/media/MediaRouter$RouteInfo;
 
     const/4 v0, 0x1
 
@@ -2503,9 +2435,6 @@
 
 .method public selectRouteInt(ILandroid/media/MediaRouter$RouteInfo;Z)V
     .locals 0
-    .param p1    # I
-    .param p2    # Landroid/media/MediaRouter$RouteInfo;
-    .param p3    # Z
 
     invoke-static {p1, p2, p3}, Landroid/media/MediaRouter;->selectRouteStatic(ILandroid/media/MediaRouter$RouteInfo;Z)V
 

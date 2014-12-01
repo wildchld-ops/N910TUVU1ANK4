@@ -52,7 +52,6 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 19
-    .param p1    # Landroid/view/View;
 
     move-object/from16 v0, p0
 
@@ -714,7 +713,6 @@
 
 .method stopActiveService(Z)V
     .locals 4
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/settings/applications/RunningServiceDetails$ActiveDetail;->mServiceItem:Lcom/android/settings/applications/RunningState$ServiceItem;
 

@@ -37,7 +37,6 @@
 # direct methods
 .method public constructor <init>(Landroid/os/Looper;)V
     .locals 1
-    .param p1    # Landroid/os/Looper;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -66,7 +65,6 @@
 
 .method public constructor <init>(Lcom/samsung/android/healthcover/IHealthCoverService;)V
     .locals 2
-    .param p1    # Lcom/samsung/android/healthcover/IHealthCoverService;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -110,7 +108,6 @@
 
 .method static synthetic access$000(Lcom/samsung/android/healthcover/HealthCoverManager;)Landroid/os/Looper;
     .locals 1
-    .param p0    # Lcom/samsung/android/healthcover/HealthCoverManager;
 
     iget-object v0, p0, Lcom/samsung/android/healthcover/HealthCoverManager;->mMainLooper:Landroid/os/Looper;
 
@@ -196,7 +193,6 @@
 
 .method public registerListener(Lcom/samsung/android/healthcover/HealthCoverListener;)V
     .locals 1
-    .param p1    # Lcom/samsung/android/healthcover/HealthCoverListener;
 
     const/4 v0, 0x0
 
@@ -207,8 +203,6 @@
 
 .method public registerListener(Lcom/samsung/android/healthcover/HealthCoverListener;Landroid/os/Handler;)V
     .locals 11
-    .param p1    # Lcom/samsung/android/healthcover/HealthCoverListener;
-    .param p2    # Landroid/os/Handler;
 
     if-eqz p1, :cond_2
 
@@ -408,7 +402,6 @@
 
 .method public unregisterListener(Lcom/samsung/android/healthcover/HealthCoverListener;)V
     .locals 8
-    .param p1    # Lcom/samsung/android/healthcover/HealthCoverListener;
 
     iget-object v5, p0, Lcom/samsung/android/healthcover/HealthCoverManager;->sListenerDelegates:Ljava/util/ArrayList;
 
@@ -563,7 +556,6 @@
 
 .method public writeData([B)V
     .locals 4
-    .param p1    # [B
 
     iget-object v2, p0, Lcom/samsung/android/healthcover/HealthCoverManager;->sListenerDelegates:Ljava/util/ArrayList;
 

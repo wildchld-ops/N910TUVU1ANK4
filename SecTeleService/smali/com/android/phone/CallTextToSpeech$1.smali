@@ -147,7 +147,7 @@
 
     int-to-long v1, v1
 
-    invoke-virtual {p0, v0, v1, v2}, Landroid/os/Handler;->sendEmptyMessageDelayed(IJ)Z
+    invoke-virtual {p0, v0, v1, v2}, Lcom/android/phone/CallTextToSpeech$1;->sendEmptyMessageDelayed(IJ)Z
 
     goto :goto_0
 
@@ -269,7 +269,7 @@
 
     int-to-long v1, v1
 
-    invoke-virtual {p0, v0, v1, v2}, Landroid/os/Handler;->sendEmptyMessageDelayed(IJ)Z
+    invoke-virtual {p0, v0, v1, v2}, Lcom/android/phone/CallTextToSpeech$1;->sendEmptyMessageDelayed(IJ)Z
 
     goto/16 :goto_0
 
@@ -313,7 +313,7 @@
 
     const-wide/16 v1, 0x5dc
 
-    invoke-virtual {p0, v0, v1, v2}, Landroid/os/Handler;->sendEmptyMessageDelayed(IJ)Z
+    invoke-virtual {p0, v0, v1, v2}, Lcom/android/phone/CallTextToSpeech$1;->sendEmptyMessageDelayed(IJ)Z
 
     goto/16 :goto_0
 

@@ -20,7 +20,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 8
-    .param p1    # Landroid/content/Context;
 
     const v2, 0x7f0b0114
 
@@ -155,7 +154,6 @@
 
 .method public onClick(Z)V
     .locals 6
-    .param p1    # Z
 
     const/4 v2, 0x1
 
@@ -254,8 +252,6 @@
 
 .method public onSharedPreferenceChanged(Landroid/content/SharedPreferences;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Landroid/content/SharedPreferences;
-    .param p2    # Ljava/lang/String;
 
     const/4 v2, 0x0
 

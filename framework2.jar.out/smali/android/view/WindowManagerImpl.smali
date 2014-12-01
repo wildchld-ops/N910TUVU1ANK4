@@ -17,7 +17,6 @@
 # direct methods
 .method public constructor <init>(Landroid/view/Display;)V
     .locals 1
-    .param p1    # Landroid/view/Display;
 
     const/4 v0, 0x0
 
@@ -28,8 +27,6 @@
 
 .method private constructor <init>(Landroid/view/Display;Landroid/view/Window;)V
     .locals 1
-    .param p1    # Landroid/view/Display;
-    .param p2    # Landroid/view/Window;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -50,8 +47,6 @@
 # virtual methods
 .method public addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/ViewGroup$LayoutParams;
 
     iget-object v0, p0, Landroid/view/WindowManagerImpl;->mGlobal:Landroid/view/WindowManagerGlobal;
 
@@ -66,7 +61,6 @@
 
 .method public createLocalWindowManager(Landroid/view/Window;)Landroid/view/WindowManagerImpl;
     .locals 2
-    .param p1    # Landroid/view/Window;
 
     new-instance v0, Landroid/view/WindowManagerImpl;
 
@@ -79,7 +73,6 @@
 
 .method public createPresentationWindowManager(Landroid/view/Display;)Landroid/view/WindowManagerImpl;
     .locals 2
-    .param p1    # Landroid/view/Display;
 
     new-instance v0, Landroid/view/WindowManagerImpl;
 
@@ -100,7 +93,6 @@
 
 .method public removeView(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Landroid/view/WindowManagerImpl;->mGlobal:Landroid/view/WindowManagerGlobal;
 
@@ -113,7 +105,6 @@
 
 .method public removeViewImmediate(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Landroid/view/WindowManagerImpl;->mGlobal:Landroid/view/WindowManagerGlobal;
 
@@ -126,8 +117,6 @@
 
 .method public updateViewLayout(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/ViewGroup$LayoutParams;
 
     iget-object v0, p0, Landroid/view/WindowManagerImpl;->mGlobal:Landroid/view/WindowManagerGlobal;
 

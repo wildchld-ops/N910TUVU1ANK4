@@ -50,11 +50,6 @@
 
 .method public constructor <init>([B[I[Landroid/os/Bundle;ILandroid/nfc/INfcTag;)V
     .locals 2
-    .param p1    # [B
-    .param p2    # [I
-    .param p3    # [Landroid/os/Bundle;
-    .param p4    # I
-    .param p5    # Landroid/nfc/INfcTag;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -108,9 +103,6 @@
 
 .method public static createMockTag([B[I[Landroid/os/Bundle;)Landroid/nfc/Tag;
     .locals 6
-    .param p0    # [B
-    .param p1    # [I
-    .param p2    # [Landroid/os/Bundle;
 
     new-instance v0, Landroid/nfc/Tag;
 
@@ -131,7 +123,6 @@
 
 .method private generateTechStringList([I)[Ljava/lang/String;
     .locals 6
-    .param p1    # [I
 
     array-length v1, p1
 
@@ -307,7 +298,6 @@
 
 .method static readBytesWithNull(Landroid/os/Parcel;)[B
     .locals 2
-    .param p0    # Landroid/os/Parcel;
 
     invoke-virtual {p0}, Landroid/os/Parcel;->readInt()I
 
@@ -327,8 +317,6 @@
 
 .method static writeBytesWithNull(Landroid/os/Parcel;[B)V
     .locals 1
-    .param p0    # Landroid/os/Parcel;
-    .param p1    # [B
 
     if-nez p1, :cond_0
 
@@ -393,7 +381,6 @@
 
 .method public getTechExtras(I)Landroid/os/Bundle;
     .locals 3
-    .param p1    # I
 
     const/4 v1, -0x1
 
@@ -445,7 +432,6 @@
 
 .method public hasTech(I)Z
     .locals 5
-    .param p1    # I
 
     iget-object v0, p0, Landroid/nfc/Tag;->mTechList:[I
 
@@ -554,7 +540,6 @@
 
 .method public declared-synchronized setConnectedTechnology(I)V
     .locals 2
-    .param p1    # I
 
     monitor-enter p0
 
@@ -654,8 +639,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 3
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     const/4 v1, 0x0
 

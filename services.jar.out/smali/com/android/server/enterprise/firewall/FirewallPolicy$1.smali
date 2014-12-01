@@ -33,7 +33,6 @@
 # virtual methods
 .method declared-synchronized enableRulesWithContainerId(I)V
     .locals 3
-    .param p1    # I
 
     monitor-enter p0
 
@@ -80,8 +79,6 @@
 
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     const-string v3, "android.intent.action.BOOT_COMPLETED"
 

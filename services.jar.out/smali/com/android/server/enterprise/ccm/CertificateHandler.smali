@@ -47,7 +47,6 @@
 
 .method private declared-synchronized installFrom(Ljava/security/KeyStore$PrivateKeyEntry;)Z
     .locals 14
-    .param p1    # Ljava/security/KeyStore$PrivateKeyEntry;
 
     monitor-enter p0
 
@@ -199,7 +198,6 @@
 
 .method private isCa(Ljava/security/cert/X509Certificate;)Z
     .locals 7
-    .param p1    # Ljava/security/cert/X509Certificate;
 
     const/4 v5, 0x0
 
@@ -260,7 +258,6 @@
 
 .method private trimByteArray([B)[B
     .locals 4
-    .param p1    # [B
 
     const/4 v3, 0x0
 
@@ -302,8 +299,6 @@
 # virtual methods
 .method public extractPkcs12([BLjava/lang/String;)Z
     .locals 10
-    .param p1    # [B
-    .param p2    # Ljava/lang/String;
 
     const/4 v6, 0x0
 

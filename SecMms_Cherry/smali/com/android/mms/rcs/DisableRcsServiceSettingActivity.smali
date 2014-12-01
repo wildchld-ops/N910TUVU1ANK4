@@ -30,7 +30,6 @@
 # virtual methods
 .method public addPreferencesFromResource(I)V
     .locals 0
-    .param p1    # I
 
     invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->addPreferencesFromResource(I)V
 
@@ -39,7 +38,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "MMS/DisableRcsServiceSettingActivity"
 

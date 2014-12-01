@@ -84,11 +84,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;FFFF)V
     .locals 4
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
 
     const/high16 v2, 0x40000000
 
@@ -303,9 +298,6 @@
 
 .method public declared-synchronized setRect(FF[F)V
     .locals 4
-    .param p1    # F
-    .param p2    # F
-    .param p3    # [F
 
     monitor-enter p0
 
@@ -418,8 +410,6 @@
 
 .method public setSize(FF)V
     .locals 1
-    .param p1    # F
-    .param p2    # F
 
     invoke-super {p0, p1, p2}, Lcom/sec/android/glview/TwGLView;->setSize(FF)V
 

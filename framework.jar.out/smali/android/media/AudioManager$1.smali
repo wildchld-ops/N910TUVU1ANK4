@@ -33,8 +33,6 @@
 # virtual methods
 .method public dispatchAudioFocusChange(ILjava/lang/String;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     iget-object v1, p0, Landroid/media/AudioManager$1;->this$0:Landroid/media/AudioManager;
 

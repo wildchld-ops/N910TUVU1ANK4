@@ -78,7 +78,6 @@
 
 .method public static final getVoiceDetailsIntent(Landroid/content/Context;)Landroid/content/Intent;
     .locals 6
-    .param p0    # Landroid/content/Context;
 
     const/4 v1, 0x0
 

@@ -47,7 +47,6 @@
 
 .method public constructor <init>(Lcom/android/server/display/WfdBridgeBase;Landroid/net/wifi/p2p/WifiP2pDevice;)V
     .locals 1
-    .param p2    # Landroid/net/wifi/p2p/WifiP2pDevice;
 
     iput-object p1, p0, Lcom/android/server/display/WfdBridgeBase$BrigePeerDevice;->this$0:Lcom/android/server/display/WfdBridgeBase;
 
@@ -64,7 +63,6 @@
 # virtual methods
 .method public parseSupportedType(Ljava/util/StringTokenizer;)V
     .locals 0
-    .param p1    # Ljava/util/StringTokenizer;
 
     return-void
 .end method

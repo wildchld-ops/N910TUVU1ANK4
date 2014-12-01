@@ -299,7 +299,6 @@
 
 .method private constructor <init>(I)V
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -333,8 +332,6 @@
 
 .method public static SetAppTypeFace(Landroid/content/Context;Ljava/lang/String;)V
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Landroid/graphics/Typeface;->isAppInFlipList(Ljava/lang/String;)Z
 
@@ -350,7 +347,6 @@
 
 .method private static SetFlipFonts(Landroid/content/Context;)V
     .locals 10
-    .param p0    # Landroid/content/Context;
 
     const/4 v9, 0x0
 
@@ -721,8 +717,6 @@
 
 .method private static _create(Ljava/lang/String;I)Landroid/graphics/Typeface;
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
 
     new-instance v0, Landroid/graphics/Typeface;
 
@@ -737,8 +731,6 @@
 
 .method public static create(Landroid/graphics/Typeface;I)Landroid/graphics/Typeface;
     .locals 5
-    .param p0    # Landroid/graphics/Typeface;
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -849,8 +841,6 @@
 
 .method public static create(Ljava/lang/String;I)Landroid/graphics/Typeface;
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
 
     if-ltz p1, :cond_0
 
@@ -929,8 +919,6 @@
 
 .method public static createFromAsset(Landroid/content/res/AssetManager;Ljava/lang/String;)Landroid/graphics/Typeface;
     .locals 2
-    .param p0    # Landroid/content/res/AssetManager;
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Landroid/graphics/Typeface;
 
@@ -945,7 +933,6 @@
 
 .method public static createFromFile(Ljava/io/File;)Landroid/graphics/Typeface;
     .locals 2
-    .param p0    # Ljava/io/File;
 
     new-instance v0, Landroid/graphics/Typeface;
 
@@ -964,7 +951,6 @@
 
 .method public static createFromFile(Ljava/lang/String;)Landroid/graphics/Typeface;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     new-instance v0, Landroid/graphics/Typeface;
 
@@ -979,7 +965,6 @@
 
 .method public static defaultFromStyle(I)Landroid/graphics/Typeface;
     .locals 1
-    .param p0    # I
 
     if-ltz p0, :cond_0
 
@@ -1000,8 +985,6 @@
 
 .method public static getFontNameFlipFont(Landroid/content/Context;I)Ljava/lang/String;
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     invoke-static {p0, p1}, Landroid/graphics/Typeface;->getFullFlipFont(Landroid/content/Context;I)Ljava/lang/String;
 
@@ -1051,8 +1034,6 @@
 
 .method public static getFontPathFlipFont(Landroid/content/Context;I)Ljava/lang/String;
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     invoke-static {p0, p1}, Landroid/graphics/Typeface;->getFullFlipFont(Landroid/content/Context;I)Ljava/lang/String;
 
@@ -1073,8 +1054,6 @@
 
 .method private static getFullFlipFont(Landroid/content/Context;I)Ljava/lang/String;
     .locals 14
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     const-string v10, "default"
 
@@ -1865,7 +1844,6 @@
 
 .method private static isAppInFlipList(Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -1905,7 +1883,6 @@
 # virtual methods
 .method public equals(Ljava/lang/Object;)Z
     .locals 5
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x1
 

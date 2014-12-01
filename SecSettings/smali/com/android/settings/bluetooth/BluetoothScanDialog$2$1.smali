@@ -36,7 +36,6 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     # getter for: Lcom/android/settings/bluetooth/BluetoothScanDialog;->mLocalAdapter:Lcom/android/settings/bluetooth/LocalBluetoothAdapter;
     invoke-static {}, Lcom/android/settings/bluetooth/BluetoothScanDialog;->access$100()Lcom/android/settings/bluetooth/LocalBluetoothAdapter;

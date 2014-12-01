@@ -146,8 +146,6 @@
 
 .method synthetic constructor <init>(Landroid/media/MediaScanner;Landroid/media/MediaScanner$1;)V
     .locals 0
-    .param p1    # Landroid/media/MediaScanner;
-    .param p2    # Landroid/media/MediaScanner$1;
 
     invoke-direct {p0, p1}, Landroid/media/MediaScanner$MyMediaScannerClient;-><init>(Landroid/media/MediaScanner;)V
 
@@ -156,8 +154,6 @@
 
 .method private computeDisplayName(Ljava/lang/String;Landroid/content/ContentValues;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/ContentValues;
 
     if-nez p1, :cond_1
 
@@ -195,8 +191,6 @@
 
 .method private convertGenreCode(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Landroid/media/MediaScanner$MyMediaScannerClient;->getGenreName(Ljava/lang/String;)Ljava/lang/String;
 
@@ -269,8 +263,6 @@
 
 .method private doesPathHaveFilename(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -308,13 +300,6 @@
 
 .method private endFile(Landroid/media/MediaScanner$FileEntry;ZZZZZZ)Landroid/net/Uri;
     .locals 62
-    .param p1    # Landroid/media/MediaScanner$FileEntry;
-    .param p2    # Z
-    .param p3    # Z
-    .param p4    # Z
-    .param p5    # Z
-    .param p6    # Z
-    .param p7    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -2325,7 +2310,6 @@
 
 .method private getFileTypeFromDrm(Ljava/lang/String;)I
     .locals 14
-    .param p1    # Ljava/lang/String;
 
     iget-object v10, p0, Landroid/media/MediaScanner$MyMediaScannerClient;->this$0:Landroid/media/MediaScanner;
 
@@ -2645,9 +2629,6 @@
 
 .method private parseSubstring(Ljava/lang/String;II)I
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     const/16 v7, 0x39
 
@@ -2720,7 +2701,6 @@
 
 .method private processImageFile(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     iget-object v0, p0, Landroid/media/MediaScanner$MyMediaScannerClient;->this$0:Landroid/media/MediaScanner;
@@ -2823,9 +2803,6 @@
 
 .method private setSettingIfNotSet(Ljava/lang/String;Landroid/net/Uri;J)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/net/Uri;
-    .param p3    # J
 
     iget-object v1, p0, Landroid/media/MediaScanner$MyMediaScannerClient;->this$0:Landroid/media/MediaScanner;
 
@@ -3482,12 +3459,6 @@
 # virtual methods
 .method public beginFile(Ljava/lang/String;Ljava/lang/String;JJZZ)Landroid/media/MediaScanner$FileEntry;
     .locals 15
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # J
-    .param p5    # J
-    .param p7    # Z
-    .param p8    # Z
 
     move-object/from16 v0, p2
 
@@ -3928,13 +3899,6 @@
 
 .method public doScanFile(Ljava/lang/String;Ljava/lang/String;JJZZZ)Landroid/net/Uri;
     .locals 29
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # J
-    .param p5    # J
-    .param p7    # Z
-    .param p8    # Z
-    .param p9    # Z
 
     const/16 v26, 0x0
 
@@ -4492,7 +4456,6 @@
 
 .method public getGenreName(Ljava/lang/String;)Ljava/lang/String;
     .locals 11
-    .param p1    # Ljava/lang/String;
 
     const/4 v7, 0x0
 
@@ -4670,8 +4633,6 @@
 
 .method public handleStringTag(Ljava/lang/String;Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v2, 0x1
 
@@ -5260,11 +5221,6 @@
 
 .method public scanFile(Ljava/lang/String;JJZZ)V
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
-    .param p4    # J
-    .param p6    # Z
-    .param p7    # Z
 
     if-eqz p6, :cond_0
 
@@ -5305,7 +5261,6 @@
 
 .method public setMimeType(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "audio/mp4"
 

@@ -42,8 +42,6 @@
 # direct methods
 .method constructor <init>(ILandroid/renderscript/RenderScript;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Landroid/renderscript/RenderScript;
 
     invoke-direct {p0, p1, p2}, Landroid/renderscript/BaseObj;-><init>(ILandroid/renderscript/RenderScript;)V
 
@@ -54,8 +52,6 @@
 # virtual methods
 .method public bindConstants(Landroid/renderscript/Allocation;I)V
     .locals 4
-    .param p1    # Landroid/renderscript/Allocation;
-    .param p2    # I
 
     if-ltz p2, :cond_0
 
@@ -137,8 +133,6 @@
 
 .method public bindSampler(Landroid/renderscript/Sampler;I)V
     .locals 3
-    .param p1    # Landroid/renderscript/Sampler;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;
@@ -194,8 +188,6 @@
 
 .method public bindTexture(Landroid/renderscript/Allocation;I)V
     .locals 3
-    .param p1    # Landroid/renderscript/Allocation;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;
@@ -280,7 +272,6 @@
 
 .method public getConstant(I)Landroid/renderscript/Type;
     .locals 2
-    .param p1    # I
 
     if-ltz p1, :cond_0
 
@@ -337,7 +328,6 @@
 
 .method public getTextureName(I)Ljava/lang/String;
     .locals 2
-    .param p1    # I
 
     if-ltz p1, :cond_0
 
@@ -364,7 +354,6 @@
 
 .method public getTextureType(I)Landroid/renderscript/Program$TextureType;
     .locals 2
-    .param p1    # I
 
     if-ltz p1, :cond_0
 

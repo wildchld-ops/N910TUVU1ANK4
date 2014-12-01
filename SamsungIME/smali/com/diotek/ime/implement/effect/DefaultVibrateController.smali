@@ -83,7 +83,6 @@
 
 .method private isFunctionKey(I)Z
     .locals 5
-    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -453,7 +452,6 @@
 
 .method private setSystemSettingsVibrateOn(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/implement/effect/DefaultVibrateController;->mIsSystemSettingsVibrateOn:Z
 
@@ -532,14 +530,12 @@
 
 .method public setMagnitudeLevel(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public setVibrateOn(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/implement/effect/DefaultVibrateController;->mVibrateOn:Z
 
@@ -588,8 +584,6 @@
 
 .method public vibrate(IZ)V
     .locals 3
-    .param p1    # I
-    .param p2    # Z
 
     iget-boolean v0, p0, Lcom/diotek/ime/implement/effect/DefaultVibrateController;->mVibrateOn:Z
 
@@ -691,9 +685,6 @@
 
 .method public vibrate(IZZ)V
     .locals 3
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # Z
 
     iget-boolean v0, p0, Lcom/diotek/ime/implement/effect/DefaultVibrateController;->mVibrateOn:Z
 

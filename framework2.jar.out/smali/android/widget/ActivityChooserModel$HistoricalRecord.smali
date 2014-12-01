@@ -25,9 +25,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/ComponentName;JF)V
     .locals 0
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # J
-    .param p4    # F
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,9 +39,6 @@
 
 .method public constructor <init>(Ljava/lang/String;JF)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
-    .param p4    # F
 
     invoke-static {p1}, Landroid/content/ComponentName;->unflattenFromString(Ljava/lang/String;)Landroid/content/ComponentName;
 
@@ -59,7 +53,6 @@
 # virtual methods
 .method public equals(Ljava/lang/Object;)Z
     .locals 7
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x1
 

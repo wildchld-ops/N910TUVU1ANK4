@@ -47,8 +47,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Lcom/touchtype_fluency/util/SwiftKeySession;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/touchtype_fluency/util/SwiftKeySession;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -79,7 +77,6 @@
 
 .method static synthetic access$000(Lcom/touchtype/personalizer/SMSParser;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/touchtype/personalizer/SMSParser;
 
     iget-object v0, p0, Lcom/touchtype/personalizer/SMSParser;->mContext:Landroid/content/Context;
 
@@ -96,7 +93,6 @@
 
 .method static synthetic access$200(Lcom/touchtype/personalizer/SMSParser;)Lcom/touchtype_fluency/util/SwiftKeySession;
     .locals 1
-    .param p0    # Lcom/touchtype/personalizer/SMSParser;
 
     iget-object v0, p0, Lcom/touchtype/personalizer/SMSParser;->mSession:Lcom/touchtype_fluency/util/SwiftKeySession;
 
@@ -125,8 +121,6 @@
 
 .method protected onProgress(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     return-void
 .end method

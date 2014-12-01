@@ -14,9 +14,6 @@
 
 .method public static formatElapsedTime(Landroid/content/Context;DZ)Ljava/lang/String;
     .locals 12
-    .param p0    # Landroid/content/Context;
-    .param p1    # D
-    .param p3    # Z
 
     const v7, 0x15180
 

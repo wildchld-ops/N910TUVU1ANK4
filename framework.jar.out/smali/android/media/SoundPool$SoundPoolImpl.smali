@@ -56,10 +56,6 @@
 
 .method public constructor <init>(Landroid/media/SoundPool;III)V
     .locals 2
-    .param p1    # Landroid/media/SoundPool;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -101,7 +97,6 @@
 
 .method static synthetic access$000(Landroid/media/SoundPool$SoundPoolImpl;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Landroid/media/SoundPool$SoundPoolImpl;
 
     iget-object v0, p0, Landroid/media/SoundPool$SoundPoolImpl;->mLock:Ljava/lang/Object;
 
@@ -110,7 +105,6 @@
 
 .method static synthetic access$100(Landroid/media/SoundPool$SoundPoolImpl;)Landroid/media/SoundPool$OnLoadCompleteListener;
     .locals 1
-    .param p0    # Landroid/media/SoundPool$SoundPoolImpl;
 
     iget-object v0, p0, Landroid/media/SoundPool$SoundPoolImpl;->mOnLoadCompleteListener:Landroid/media/SoundPool$OnLoadCompleteListener;
 
@@ -122,11 +116,6 @@
 
 .method private static postEventFromNative(Ljava/lang/Object;IIILjava/lang/Object;)V
     .locals 3
-    .param p0    # Ljava/lang/Object;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/Object;
 
     check-cast p0, Ljava/lang/ref/WeakReference;
 
@@ -178,9 +167,6 @@
 
 .method public load(Landroid/content/Context;II)I
     .locals 9
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # I
 
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -231,8 +217,6 @@
 
 .method public load(Landroid/content/res/AssetFileDescriptor;I)I
     .locals 7
-    .param p1    # Landroid/content/res/AssetFileDescriptor;
-    .param p2    # I
 
     if-eqz p1, :cond_1
 
@@ -282,10 +266,6 @@
 
 .method public load(Ljava/io/FileDescriptor;JJI)I
     .locals 1
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # J
-    .param p4    # J
-    .param p6    # I
 
     if-eqz p1, :cond_0
 
@@ -304,8 +284,6 @@
 
 .method public load(Ljava/lang/String;I)I
     .locals 11
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const-string v0, "http:"
 
@@ -408,7 +386,6 @@
 
 .method public setOnLoadCompleteListener(Landroid/media/SoundPool$OnLoadCompleteListener;)V
     .locals 4
-    .param p1    # Landroid/media/SoundPool$OnLoadCompleteListener;
 
     iget-object v2, p0, Landroid/media/SoundPool$SoundPoolImpl;->mLock:Ljava/lang/Object;
 
@@ -493,8 +470,6 @@
 
 .method public setVolume(IF)V
     .locals 0
-    .param p1    # I
-    .param p2    # F
 
     invoke-virtual {p0, p1, p2, p2}, Landroid/media/SoundPool$SoundPoolImpl;->setVolume(IFF)V
 

@@ -35,7 +35,6 @@
 
 .method synthetic constructor <init>(Lcom/sec/android/app/shootingmodemanager/views/ItemsAdapter$1;)V
     .locals 0
-    .param p1    # Lcom/sec/android/app/shootingmodemanager/views/ItemsAdapter$1;
 
     invoke-direct {p0}, Lcom/sec/android/app/shootingmodemanager/views/ItemsAdapter$ViewHolder;-><init>()V
 

@@ -25,9 +25,6 @@
 # direct methods
 .method constructor <init>(Ljava/lang/String;JLcom/android/server/ConnectivityService$CheckMp$CallBack;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
-    .param p4    # Lcom/android/server/ConnectivityService$CheckMp$CallBack;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,7 +39,6 @@
 
 .method static synthetic access$6000(Lcom/android/server/ConnectivityService$CheckMp$Params;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/server/ConnectivityService$CheckMp$Params;
 
     iget-object v0, p0, Lcom/android/server/ConnectivityService$CheckMp$Params;->mUrl:Ljava/lang/String;
 
@@ -51,7 +47,6 @@
 
 .method static synthetic access$6100(Lcom/android/server/ConnectivityService$CheckMp$Params;)J
     .locals 2
-    .param p0    # Lcom/android/server/ConnectivityService$CheckMp$Params;
 
     iget-wide v0, p0, Lcom/android/server/ConnectivityService$CheckMp$Params;->mTimeOutMs:J
 
@@ -60,7 +55,6 @@
 
 .method static synthetic access$6400(Lcom/android/server/ConnectivityService$CheckMp$Params;)Lcom/android/server/ConnectivityService$CheckMp$CallBack;
     .locals 1
-    .param p0    # Lcom/android/server/ConnectivityService$CheckMp$Params;
 
     iget-object v0, p0, Lcom/android/server/ConnectivityService$CheckMp$Params;->mCb:Lcom/android/server/ConnectivityService$CheckMp$CallBack;
 

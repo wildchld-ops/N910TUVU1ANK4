@@ -126,8 +126,6 @@
 
 .method private constructor <init>(Ljava/lang/String;IILjava/lang/String;)V
     .locals 0
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -147,7 +145,6 @@
 
 .method public static getMapconRat(I)Lcom/sec/epdg/mapcon/MapconConstants$MapconRat;
     .locals 5
-    .param p0    # I
 
     invoke-static {}, Lcom/sec/epdg/mapcon/MapconConstants$MapconRat;->values()[Lcom/sec/epdg/mapcon/MapconConstants$MapconRat;
 
@@ -184,7 +181,6 @@
 
 .method public static getMapconRat(Ljava/lang/String;)Lcom/sec/epdg/mapcon/MapconConstants$MapconRat;
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     invoke-static {}, Lcom/sec/epdg/mapcon/MapconConstants$MapconRat;->values()[Lcom/sec/epdg/mapcon/MapconConstants$MapconRat;
 
@@ -225,7 +221,6 @@
 
 .method public static final isIwlanAllowedType([Lcom/sec/epdg/mapcon/MapconConstants$MapconRat;)Z
     .locals 6
-    .param p0    # [Lcom/sec/epdg/mapcon/MapconConstants$MapconRat;
 
     const-class v5, Lcom/sec/epdg/mapcon/MapconConstants$MapconRat;
 
@@ -262,7 +257,6 @@
 
 .method public static final isIwlanOnlyAllowed([Lcom/sec/epdg/mapcon/MapconConstants$MapconRat;)Z
     .locals 7
-    .param p0    # [Lcom/sec/epdg/mapcon/MapconConstants$MapconRat;
 
     const/4 v5, 0x0
 
@@ -326,7 +320,6 @@
 
 .method public static final isIwlanPreceedsLte([Lcom/sec/epdg/mapcon/MapconConstants$MapconRat;)Z
     .locals 9
-    .param p0    # [Lcom/sec/epdg/mapcon/MapconConstants$MapconRat;
 
     const/4 v5, 0x1
 
@@ -407,7 +400,6 @@
 
 .method public static final isLteOnlyAllowed([Lcom/sec/epdg/mapcon/MapconConstants$MapconRat;)Z
     .locals 7
-    .param p0    # [Lcom/sec/epdg/mapcon/MapconConstants$MapconRat;
 
     const/4 v5, 0x0
 
@@ -472,7 +464,6 @@
 
 .method public static final isLtePreceedsIwlan([Lcom/sec/epdg/mapcon/MapconConstants$MapconRat;)Z
     .locals 9
-    .param p0    # [Lcom/sec/epdg/mapcon/MapconConstants$MapconRat;
 
     const/4 v5, 0x1
 
@@ -553,7 +544,6 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/sec/epdg/mapcon/MapconConstants$MapconRat;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-class v0, Lcom/sec/epdg/mapcon/MapconConstants$MapconRat;
 

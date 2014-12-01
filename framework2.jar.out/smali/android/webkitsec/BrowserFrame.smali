@@ -156,10 +156,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/webkitsec/WebViewCore;Landroid/webkitsec/CallbackProxy;Landroid/webkitsec/WebSettingsClassic;Ljava/util/Map;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/webkitsec/WebViewCore;
-    .param p3    # Landroid/webkitsec/CallbackProxy;
-    .param p4    # Landroid/webkitsec/WebSettingsClassic;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -352,7 +348,6 @@
 
 .method private UpdateUrl(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/webkitsec/BrowserFrame;->mCallbackProxy:Landroid/webkitsec/CallbackProxy;
 
@@ -363,10 +358,6 @@
 
 .method static synthetic access$000(Landroid/webkitsec/BrowserFrame;ILjava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Landroid/webkitsec/BrowserFrame;
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2, p3}, Landroid/webkitsec/BrowserFrame;->nativeAuthenticationProceed(ILjava/lang/String;Ljava/lang/String;)V
 
@@ -375,8 +366,6 @@
 
 .method static synthetic access$100(Landroid/webkitsec/BrowserFrame;I)V
     .locals 0
-    .param p0    # Landroid/webkitsec/BrowserFrame;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/webkitsec/BrowserFrame;->nativeAuthenticationCancel(I)V
 
@@ -385,8 +374,6 @@
 
 .method static synthetic access$200(Landroid/webkitsec/BrowserFrame;I)V
     .locals 0
-    .param p0    # Landroid/webkitsec/BrowserFrame;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/webkitsec/BrowserFrame;->nativeSslCertErrorProceed(I)V
 
@@ -395,9 +382,6 @@
 
 .method static synthetic access$300(Landroid/webkitsec/BrowserFrame;II)V
     .locals 0
-    .param p0    # Landroid/webkitsec/BrowserFrame;
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Landroid/webkitsec/BrowserFrame;->nativeSslCertErrorCancel(II)V
 
@@ -466,9 +450,6 @@
 
 .method private autoLogin(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/webkitsec/BrowserFrame;->mCallbackProxy:Landroid/webkitsec/CallbackProxy;
 
@@ -482,7 +463,6 @@
 
 .method private closeWindow(Landroid/webkitsec/WebViewCore;)V
     .locals 2
-    .param p1    # Landroid/webkitsec/WebViewCore;
 
     iget-object v0, p0, Landroid/webkitsec/BrowserFrame;->mCallbackProxy:Landroid/webkitsec/CallbackProxy;
 
@@ -497,8 +477,6 @@
 
 .method private createWindow(ZZ)Landroid/webkitsec/BrowserFrame;
     .locals 3
-    .param p1    # Z
-    .param p2    # Z
 
     iget-object v0, p0, Landroid/webkitsec/BrowserFrame;->mSettings:Landroid/webkitsec/WebSettingsClassic;
 
@@ -541,7 +519,6 @@
 
 .method private decidePolicyForFormResubmission(I)V
     .locals 4
-    .param p1    # I
 
     const/16 v3, 0x3eb
 
@@ -639,11 +616,6 @@
 
 .method private didReceiveAuthenticationChallenge(ILjava/lang/String;Ljava/lang/String;ZZ)V
     .locals 2
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Z
-    .param p5    # Z
 
     new-instance v0, Landroid/webkitsec/BrowserFrame$1;
 
@@ -658,8 +630,6 @@
 
 .method private didReceiveData([BI)V
     .locals 1
-    .param p1    # [B
-    .param p2    # I
 
     iget-object v0, p0, Landroid/webkitsec/BrowserFrame;->mKeyStoreHandler:Landroid/webkitsec/KeyStoreHandler;
 
@@ -687,7 +657,6 @@
 
 .method private didReceiveIcon(Landroid/graphics/Bitmap;)V
     .locals 1
-    .param p1    # Landroid/graphics/Bitmap;
 
     iget-object v0, p0, Landroid/webkitsec/BrowserFrame;->mCallbackProxy:Landroid/webkitsec/CallbackProxy;
 
@@ -698,8 +667,6 @@
 
 .method private didReceiveTouchIconUrl(Ljava/lang/String;Z)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     iget-object v0, p0, Landroid/webkitsec/BrowserFrame;->mCallbackProxy:Landroid/webkitsec/CallbackProxy;
 
@@ -713,12 +680,6 @@
 
 .method private downloadStart(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;J)V
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # J
 
     invoke-virtual {p4}, Ljava/lang/String;->isEmpty()Z
 
@@ -837,10 +798,6 @@
 
 .method private getFile(Ljava/lang/String;[BII)I
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # [B
-    .param p3    # I
-    .param p4    # I
 
     const/4 v2, 0x0
 
@@ -950,7 +907,6 @@
 
 .method private getFileSize(Ljava/lang/String;)I
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -988,7 +944,6 @@
 
 .method private getRawResFilename(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/webkitsec/BrowserFrame;->mContext:Landroid/content/Context;
 
@@ -1001,8 +956,6 @@
 
 .method static getRawResFilename(ILandroid/content/Context;)Ljava/lang/String;
     .locals 9
-    .param p0    # I
-    .param p1    # Landroid/content/Context;
 
     packed-switch p0, :pswitch_data_0
 
@@ -1243,7 +1196,6 @@
 
 .method private inputStreamForAndroidResource(Ljava/lang/String;)Ljava/io/InputStream;
     .locals 24
-    .param p1    # Ljava/lang/String;
 
     const-string v3, "file:///android_asset/"
 
@@ -1940,9 +1892,6 @@
 
 .method private loadFinished(Ljava/lang/String;IZ)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Z
 
     if-nez p3, :cond_0
 
@@ -1982,10 +1931,6 @@
 
 .method private loadStarted(Ljava/lang/String;Landroid/graphics/Bitmap;IZ)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/graphics/Bitmap;
-    .param p3    # I
-    .param p4    # Z
 
     const/4 v1, 0x0
 
@@ -2024,9 +1969,6 @@
 
 .method private maybeSavePassword([BLjava/lang/String;Ljava/lang/String;)V
     .locals 6
-    .param p1    # [B
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -2242,9 +2184,6 @@
 
 .method private reportError(ILjava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -2321,10 +2260,6 @@
 
 .method private reportSslCertError(II[BLjava/lang/String;)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [B
-    .param p4    # Ljava/lang/String;
 
     :try_start_0
     new-instance v0, Lorg/apache/harmony/security/provider/cert/X509CertImpl;
@@ -2387,8 +2322,6 @@
 
 .method private requestClientCert(ILjava/lang/String;)V
     .locals 7
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const-wide/16 v5, 0x0
 
@@ -2669,7 +2602,6 @@
 
 .method private setCertificate([B)V
     .locals 4
-    .param p1    # [B
 
     :try_start_0
     new-instance v0, Lorg/apache/harmony/security/provider/cert/X509CertImpl;
@@ -2703,7 +2635,6 @@
 
 .method private setProgress(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v0, p0, Landroid/webkitsec/BrowserFrame;->mCallbackProxy:Landroid/webkitsec/CallbackProxy;
 
@@ -2752,7 +2683,6 @@
 
 .method private setTitle(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/webkitsec/BrowserFrame;->mCallbackProxy:Landroid/webkitsec/CallbackProxy;
 
@@ -2766,7 +2696,6 @@
 
 .method private shouldInterceptRequest(Ljava/lang/String;)Landroid/webkitsec/WebResourceResponse;
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     const/4 v7, 0x0
 
@@ -2902,7 +2831,6 @@
 
 .method private spellCheckFinished(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/webkitsec/BrowserFrame;->mCallbackProxy:Landroid/webkitsec/CallbackProxy;
 
@@ -2913,8 +2841,6 @@
 
 .method private transitionToCommitted(IZ)V
     .locals 1
-    .param p1    # I
-    .param p2    # Z
 
     if-eqz p2, :cond_0
 
@@ -2938,8 +2864,6 @@
 
 .method private updateVisitedHistory(Ljava/lang/String;Z)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     iget-object v0, p0, Landroid/webkitsec/BrowserFrame;->mCallbackProxy:Landroid/webkitsec/CallbackProxy;
 
@@ -2950,7 +2874,6 @@
 
 .method private urlBlocked(Ljava/lang/String;)Z
     .locals 13
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -3243,7 +3166,6 @@
 
 .method private windowObjectCleared(I)V
     .locals 5
-    .param p1    # I
 
     iget-object v3, p0, Landroid/webkitsec/BrowserFrame;->mJavaScriptObjects:Ljava/util/Map;
 
@@ -3303,7 +3225,6 @@
 # virtual methods
 .method public SetUAProfURL(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "BrowserFrame"
 
@@ -3318,9 +3239,6 @@
 
 .method public addJavascriptInterface(Ljava/lang/Object;Ljava/lang/String;Z)V
     .locals 2
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     sget-boolean v0, Landroid/webkitsec/BrowserFrame;->$assertionsDisabled:Z
 
@@ -3400,7 +3318,6 @@
 
 .method public documentAsText(Landroid/os/Message;)V
     .locals 2
-    .param p1    # Landroid/os/Message;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -3444,7 +3361,6 @@
 
 .method public externalRepresentation(Landroid/os/Message;)V
     .locals 1
-    .param p1    # Landroid/os/Message;
 
     invoke-direct {p0}, Landroid/webkitsec/BrowserFrame;->externalRepresentation()Ljava/lang/String;
 
@@ -3475,7 +3391,6 @@
 
 .method public getReaderData(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/webkitsec/BrowserFrame;->mCallbackProxy:Landroid/webkitsec/CallbackProxy;
 
@@ -3492,7 +3407,6 @@
 
 .method public getRecognizeData(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/webkitsec/BrowserFrame;->mCallbackProxy:Landroid/webkitsec/CallbackProxy;
 
@@ -3533,7 +3447,6 @@
 
 .method public goBackOrForward(I)V
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -3550,7 +3463,6 @@
 
 .method public handleMessage(Landroid/os/Message;)V
     .locals 8
-    .param p1    # Landroid/os/Message;
 
     const/4 v7, 0x0
 
@@ -3727,7 +3639,6 @@
 
 .method public handleUrl(Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -3797,11 +3708,6 @@
 
 .method public loadData(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -3867,7 +3773,6 @@
 
 .method public loadUrl(Ljava/lang/String;Ljava/util/Map;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3936,8 +3841,6 @@
 
 .method public postUrl(Ljava/lang/String;[B)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # [B
 
     invoke-direct {p0, p1}, Landroid/webkitsec/BrowserFrame;->urlBlocked(Ljava/lang/String;)Z
 
@@ -3967,7 +3870,6 @@
 
 .method public removeJavascriptInterface(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/webkitsec/BrowserFrame;->mJavaScriptObjects:Ljava/util/Map;
 
@@ -3993,8 +3895,6 @@
 
 .method saveWebArchive(Ljava/lang/String;Z)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Landroid/webkitsec/BrowserFrame;->nativeSaveWebArchive(Ljava/lang/String;Z)Ljava/lang/String;
 

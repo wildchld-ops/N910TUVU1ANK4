@@ -96,7 +96,6 @@
 
 .method public constructor <init>(Landroid/graphics/Path;)V
     .locals 3
-    .param p1    # Landroid/graphics/Path;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -148,11 +147,6 @@
 
 .method private detectSimplePath(FFFFLandroid/graphics/Path$Direction;)V
     .locals 6
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # Landroid/graphics/Path$Direction;
 
     iget-boolean v0, p0, Landroid/graphics/Path;->mDetectSimplePaths:Z
 
@@ -324,9 +318,6 @@
 # virtual methods
 .method public addArc(Landroid/graphics/RectF;FF)V
     .locals 2
-    .param p1    # Landroid/graphics/RectF;
-    .param p2    # F
-    .param p3    # F
 
     if-nez p1, :cond_0
 
@@ -352,10 +343,6 @@
 
 .method public addCircle(FFFLandroid/graphics/Path$Direction;)V
     .locals 2
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # Landroid/graphics/Path$Direction;
 
     const/4 v0, 0x0
 
@@ -372,8 +359,6 @@
 
 .method public addOval(Landroid/graphics/RectF;Landroid/graphics/Path$Direction;)V
     .locals 2
-    .param p1    # Landroid/graphics/RectF;
-    .param p2    # Landroid/graphics/Path$Direction;
 
     if-nez p1, :cond_0
 
@@ -401,7 +386,6 @@
 
 .method public addPath(Landroid/graphics/Path;)V
     .locals 2
-    .param p1    # Landroid/graphics/Path;
 
     const/4 v0, 0x0
 
@@ -418,9 +402,6 @@
 
 .method public addPath(Landroid/graphics/Path;FF)V
     .locals 2
-    .param p1    # Landroid/graphics/Path;
-    .param p2    # F
-    .param p3    # F
 
     const/4 v0, 0x0
 
@@ -437,8 +418,6 @@
 
 .method public addPath(Landroid/graphics/Path;Landroid/graphics/Matrix;)V
     .locals 3
-    .param p1    # Landroid/graphics/Path;
-    .param p2    # Landroid/graphics/Matrix;
 
     iget-boolean v0, p1, Landroid/graphics/Path;->isSimplePath:Z
 
@@ -462,11 +441,6 @@
 
 .method public addRect(FFFFLandroid/graphics/Path$Direction;)V
     .locals 6
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # Landroid/graphics/Path$Direction;
 
     invoke-direct/range {p0 .. p5}, Landroid/graphics/Path;->detectSimplePath(FFFFLandroid/graphics/Path$Direction;)V
 
@@ -489,8 +463,6 @@
 
 .method public addRect(Landroid/graphics/RectF;Landroid/graphics/Path$Direction;)V
     .locals 6
-    .param p1    # Landroid/graphics/RectF;
-    .param p2    # Landroid/graphics/Path$Direction;
 
     if-nez p1, :cond_0
 
@@ -528,10 +500,6 @@
 
 .method public addRoundRect(Landroid/graphics/RectF;FFLandroid/graphics/Path$Direction;)V
     .locals 2
-    .param p1    # Landroid/graphics/RectF;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # Landroid/graphics/Path$Direction;
 
     if-nez p1, :cond_0
 
@@ -559,9 +527,6 @@
 
 .method public addRoundRect(Landroid/graphics/RectF;[FLandroid/graphics/Path$Direction;)V
     .locals 2
-    .param p1    # Landroid/graphics/RectF;
-    .param p2    # [F
-    .param p3    # Landroid/graphics/Path$Direction;
 
     if-nez p1, :cond_0
 
@@ -604,9 +569,6 @@
 
 .method public arcTo(Landroid/graphics/RectF;FF)V
     .locals 2
-    .param p1    # Landroid/graphics/RectF;
-    .param p2    # F
-    .param p3    # F
 
     const/4 v1, 0x0
 
@@ -621,10 +583,6 @@
 
 .method public arcTo(Landroid/graphics/RectF;FFZ)V
     .locals 1
-    .param p1    # Landroid/graphics/RectF;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # Z
 
     const/4 v0, 0x0
 
@@ -653,8 +611,6 @@
 
 .method public computeBounds(Landroid/graphics/RectF;Z)V
     .locals 1
-    .param p1    # Landroid/graphics/RectF;
-    .param p2    # Z
 
     iget v0, p0, Landroid/graphics/Path;->mNativePath:I
 
@@ -665,12 +621,6 @@
 
 .method public cubicTo(FFFFFF)V
     .locals 7
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # F
 
     const/4 v0, 0x0
 
@@ -740,7 +690,6 @@
 
 .method public incReserve(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/graphics/Path;->mNativePath:I
 
@@ -787,7 +736,6 @@
 
 .method public isRect(Landroid/graphics/RectF;)Z
     .locals 1
-    .param p1    # Landroid/graphics/RectF;
 
     iget v0, p0, Landroid/graphics/Path;->mNativePath:I
 
@@ -800,8 +748,6 @@
 
 .method public lineTo(FF)V
     .locals 1
-    .param p1    # F
-    .param p2    # F
 
     const/4 v0, 0x0
 
@@ -816,8 +762,6 @@
 
 .method public moveTo(FF)V
     .locals 1
-    .param p1    # F
-    .param p2    # F
 
     iget v0, p0, Landroid/graphics/Path;->mNativePath:I
 
@@ -836,8 +780,6 @@
 
 .method public offset(FF)V
     .locals 1
-    .param p1    # F
-    .param p2    # F
 
     const/4 v0, 0x0
 
@@ -852,9 +794,6 @@
 
 .method public offset(FFLandroid/graphics/Path;)V
     .locals 2
-    .param p1    # F
-    .param p2    # F
-    .param p3    # Landroid/graphics/Path;
 
     const/4 v0, 0x0
 
@@ -876,8 +815,6 @@
 
 .method public op(Landroid/graphics/Path;Landroid/graphics/Path$Op;)Z
     .locals 1
-    .param p1    # Landroid/graphics/Path;
-    .param p2    # Landroid/graphics/Path$Op;
 
     invoke-virtual {p0, p0, p1, p2}, Landroid/graphics/Path;->op(Landroid/graphics/Path;Landroid/graphics/Path;Landroid/graphics/Path$Op;)Z
 
@@ -888,9 +825,6 @@
 
 .method public op(Landroid/graphics/Path;Landroid/graphics/Path;Landroid/graphics/Path$Op;)Z
     .locals 5
-    .param p1    # Landroid/graphics/Path;
-    .param p2    # Landroid/graphics/Path;
-    .param p3    # Landroid/graphics/Path$Op;
 
     const/4 v0, 0x0
 
@@ -924,10 +858,6 @@
 
 .method public quadTo(FFFF)V
     .locals 1
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
 
     const/4 v0, 0x0
 
@@ -942,12 +872,6 @@
 
 .method public rCubicTo(FFFFFF)V
     .locals 7
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # F
 
     const/4 v0, 0x0
 
@@ -974,8 +898,6 @@
 
 .method public rLineTo(FF)V
     .locals 1
-    .param p1    # F
-    .param p2    # F
 
     const/4 v0, 0x0
 
@@ -990,8 +912,6 @@
 
 .method public rMoveTo(FF)V
     .locals 1
-    .param p1    # F
-    .param p2    # F
 
     iget v0, p0, Landroid/graphics/Path;->mNativePath:I
 
@@ -1002,10 +922,6 @@
 
 .method public rQuadTo(FFFF)V
     .locals 1
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
 
     const/4 v0, 0x0
 
@@ -1088,7 +1004,6 @@
 
 .method public set(Landroid/graphics/Path;)V
     .locals 2
-    .param p1    # Landroid/graphics/Path;
 
     if-eq p0, p1, :cond_0
 
@@ -1108,7 +1023,6 @@
 
 .method public setFillType(Landroid/graphics/Path$FillType;)V
     .locals 2
-    .param p1    # Landroid/graphics/Path$FillType;
 
     iget v0, p0, Landroid/graphics/Path;->mNativePath:I
 
@@ -1121,8 +1035,6 @@
 
 .method public setLastPoint(FF)V
     .locals 1
-    .param p1    # F
-    .param p2    # F
 
     const/4 v0, 0x0
 
@@ -1155,7 +1067,6 @@
 
 .method public transform(Landroid/graphics/Matrix;)V
     .locals 2
-    .param p1    # Landroid/graphics/Matrix;
 
     const/4 v0, 0x0
 
@@ -1172,8 +1083,6 @@
 
 .method public transform(Landroid/graphics/Matrix;Landroid/graphics/Path;)V
     .locals 3
-    .param p1    # Landroid/graphics/Matrix;
-    .param p2    # Landroid/graphics/Path;
 
     const/4 v0, 0x0
 

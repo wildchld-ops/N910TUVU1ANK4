@@ -37,9 +37,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/mms/ui/EmoticonContainer;Ljava/lang/String;Landroid/view/View;Landroid/view/View;)V
     .locals 0
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/view/View;
-    .param p4    # Landroid/view/View;
 
     iput-object p1, p0, Lcom/android/mms/ui/EmoticonContainer$StickerPagerView;->this$0:Lcom/android/mms/ui/EmoticonContainer;
 
@@ -56,9 +53,6 @@
 
 .method public constructor <init>(Lcom/android/mms/ui/EmoticonContainer;Ljava/lang/String;Landroid/widget/GridView;Lcom/android/mms/freemessage/FreeMessageStickerAdapter;)V
     .locals 0
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/widget/GridView;
-    .param p4    # Lcom/android/mms/freemessage/FreeMessageStickerAdapter;
 
     iput-object p1, p0, Lcom/android/mms/ui/EmoticonContainer$StickerPagerView;->this$0:Lcom/android/mms/ui/EmoticonContainer;
 
@@ -75,7 +69,6 @@
 
 .method static synthetic access$2600(Lcom/android/mms/ui/EmoticonContainer$StickerPagerView;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/EmoticonContainer$StickerPagerView;
 
     iget-object v0, p0, Lcom/android/mms/ui/EmoticonContainer$StickerPagerView;->downloadLayout:Landroid/view/View;
 
@@ -84,7 +77,6 @@
 
 .method static synthetic access$2700(Lcom/android/mms/ui/EmoticonContainer$StickerPagerView;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/EmoticonContainer$StickerPagerView;
 
     iget-object v0, p0, Lcom/android/mms/ui/EmoticonContainer$StickerPagerView;->progressLayout:Landroid/view/View;
 
@@ -93,7 +85,6 @@
 
 .method static synthetic access$2800(Lcom/android/mms/ui/EmoticonContainer$StickerPagerView;)Landroid/widget/Button;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/EmoticonContainer$StickerPagerView;
 
     iget-object v0, p0, Lcom/android/mms/ui/EmoticonContainer$StickerPagerView;->cancelButton:Landroid/widget/Button;
 
@@ -102,7 +93,6 @@
 
 .method static synthetic access$2900(Lcom/android/mms/ui/EmoticonContainer$StickerPagerView;)Landroid/widget/ProgressBar;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/EmoticonContainer$StickerPagerView;
 
     iget-object v0, p0, Lcom/android/mms/ui/EmoticonContainer$StickerPagerView;->progressBar:Landroid/widget/ProgressBar;
 
@@ -111,7 +101,6 @@
 
 .method static synthetic access$3000(Lcom/android/mms/ui/EmoticonContainer$StickerPagerView;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/EmoticonContainer$StickerPagerView;
 
     iget-object v0, p0, Lcom/android/mms/ui/EmoticonContainer$StickerPagerView;->progressText:Landroid/widget/TextView;
 
@@ -120,7 +109,6 @@
 
 .method static synthetic access$400(Lcom/android/mms/ui/EmoticonContainer$StickerPagerView;)Landroid/widget/GridView;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/EmoticonContainer$StickerPagerView;
 
     iget-object v0, p0, Lcom/android/mms/ui/EmoticonContainer$StickerPagerView;->gridView:Landroid/widget/GridView;
 
@@ -129,7 +117,6 @@
 
 .method static synthetic access$500(Lcom/android/mms/ui/EmoticonContainer$StickerPagerView;)Lcom/android/mms/freemessage/FreeMessageStickerAdapter;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/EmoticonContainer$StickerPagerView;
 
     iget-object v0, p0, Lcom/android/mms/ui/EmoticonContainer$StickerPagerView;->stickerAdapter:Lcom/android/mms/freemessage/FreeMessageStickerAdapter;
 
@@ -140,7 +127,6 @@
 # virtual methods
 .method public setDownloadLayout(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     iput-object p1, p0, Lcom/android/mms/ui/EmoticonContainer$StickerPagerView;->downloadLayout:Landroid/view/View;
 
@@ -173,7 +159,6 @@
 
 .method public setProgressLayout(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     iput-object p1, p0, Lcom/android/mms/ui/EmoticonContainer$StickerPagerView;->progressLayout:Landroid/view/View;
 

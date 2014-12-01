@@ -25,7 +25,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/CharSequence;)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,7 +37,6 @@
 # virtual methods
 .method public charAt(I)C
     .locals 8
-    .param p1    # I
 
     iget-object v5, p0, Landroid/text/method/PasswordTransformationMethod$PasswordCharSequence;->mSource:Ljava/lang/CharSequence;
 
@@ -150,10 +148,6 @@
 
 .method public getChars(II[CI)V
     .locals 16
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [C
-    .param p4    # I
 
     move-object/from16 v0, p0
 
@@ -336,8 +330,6 @@
 
 .method public subSequence(II)Ljava/lang/CharSequence;
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     sub-int v1, p2, p1
 

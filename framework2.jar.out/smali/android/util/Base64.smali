@@ -64,8 +64,6 @@
 
 .method public static decode(Ljava/lang/String;I)[B
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
 
     invoke-virtual {p0}, Ljava/lang/String;->getBytes()[B
 
@@ -80,8 +78,6 @@
 
 .method public static decode([BI)[B
     .locals 2
-    .param p0    # [B
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -96,10 +92,6 @@
 
 .method public static decode([BIII)[B
     .locals 5
-    .param p0    # [B
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v4, 0x0
 
@@ -159,8 +151,6 @@
 
 .method public static encode([BI)[B
     .locals 2
-    .param p0    # [B
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -175,10 +165,6 @@
 
 .method public static encode([BIII)[B
     .locals 5
-    .param p0    # [B
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v3, 0x1
 
@@ -286,8 +272,6 @@
 
 .method public static encodeToString([BI)Ljava/lang/String;
     .locals 4
-    .param p0    # [B
-    .param p1    # I
 
     :try_start_0
     new-instance v1, Ljava/lang/String;
@@ -316,10 +300,6 @@
 
 .method public static encodeToString([BIII)Ljava/lang/String;
     .locals 4
-    .param p0    # [B
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     :try_start_0
     new-instance v1, Ljava/lang/String;

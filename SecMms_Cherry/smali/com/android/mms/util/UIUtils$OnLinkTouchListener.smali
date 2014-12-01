@@ -58,8 +58,6 @@
 
 .method public constructor <init>(Landroid/app/Activity;Landroid/os/Handler;)V
     .locals 1
-    .param p1    # Landroid/app/Activity;
-    .param p2    # Landroid/os/Handler;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -80,9 +78,6 @@
 
 .method public constructor <init>(Landroid/app/Activity;Landroid/os/Handler;Z)V
     .locals 0
-    .param p1    # Landroid/app/Activity;
-    .param p2    # Landroid/os/Handler;
-    .param p3    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/mms/util/UIUtils$OnLinkTouchListener;-><init>(Landroid/app/Activity;Landroid/os/Handler;)V
 
@@ -93,10 +88,6 @@
 
 .method public constructor <init>(Landroid/app/Activity;Landroid/os/Handler;ZZ)V
     .locals 0
-    .param p1    # Landroid/app/Activity;
-    .param p2    # Landroid/os/Handler;
-    .param p3    # Z
-    .param p4    # Z
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/mms/util/UIUtils$OnLinkTouchListener;-><init>(Landroid/app/Activity;Landroid/os/Handler;Z)V
 
@@ -107,8 +98,6 @@
 
 .method private onTouchDialog(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 13
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     invoke-virtual {p2}, Landroid/view/MotionEvent;->getAction()I
 
@@ -279,8 +268,6 @@
 
 .method private onTouchNormal(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 15
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     invoke-virtual/range {p2 .. p2}, Landroid/view/MotionEvent;->getAction()I
 
@@ -504,8 +491,6 @@
 # virtual methods
 .method public onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     iget-boolean v0, p0, Lcom/android/mms/util/UIUtils$OnLinkTouchListener;->mIsForDialog:Z
 

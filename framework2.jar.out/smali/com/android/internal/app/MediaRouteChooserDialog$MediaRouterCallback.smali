@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Lcom/android/internal/app/MediaRouteChooserDialog;Lcom/android/internal/app/MediaRouteChooserDialog$1;)V
     .locals 0
-    .param p1    # Lcom/android/internal/app/MediaRouteChooserDialog;
-    .param p2    # Lcom/android/internal/app/MediaRouteChooserDialog$1;
 
     invoke-direct {p0, p1}, Lcom/android/internal/app/MediaRouteChooserDialog$MediaRouterCallback;-><init>(Lcom/android/internal/app/MediaRouteChooserDialog;)V
 
@@ -43,8 +41,6 @@
 # virtual methods
 .method public onRouteAdded(Landroid/media/MediaRouter;Landroid/media/MediaRouter$RouteInfo;)V
     .locals 1
-    .param p1    # Landroid/media/MediaRouter;
-    .param p2    # Landroid/media/MediaRouter$RouteInfo;
 
     iget-object v0, p0, Lcom/android/internal/app/MediaRouteChooserDialog$MediaRouterCallback;->this$0:Lcom/android/internal/app/MediaRouteChooserDialog;
 
@@ -55,8 +51,6 @@
 
 .method public onRouteChanged(Landroid/media/MediaRouter;Landroid/media/MediaRouter$RouteInfo;)V
     .locals 1
-    .param p1    # Landroid/media/MediaRouter;
-    .param p2    # Landroid/media/MediaRouter$RouteInfo;
 
     iget-object v0, p0, Lcom/android/internal/app/MediaRouteChooserDialog$MediaRouterCallback;->this$0:Lcom/android/internal/app/MediaRouteChooserDialog;
 
@@ -67,8 +61,6 @@
 
 .method public onRouteRemoved(Landroid/media/MediaRouter;Landroid/media/MediaRouter$RouteInfo;)V
     .locals 1
-    .param p1    # Landroid/media/MediaRouter;
-    .param p2    # Landroid/media/MediaRouter$RouteInfo;
 
     iget-object v0, p0, Lcom/android/internal/app/MediaRouteChooserDialog$MediaRouterCallback;->this$0:Lcom/android/internal/app/MediaRouteChooserDialog;
 
@@ -79,9 +71,6 @@
 
 .method public onRouteSelected(Landroid/media/MediaRouter;ILandroid/media/MediaRouter$RouteInfo;)V
     .locals 1
-    .param p1    # Landroid/media/MediaRouter;
-    .param p2    # I
-    .param p3    # Landroid/media/MediaRouter$RouteInfo;
 
     iget-object v0, p0, Lcom/android/internal/app/MediaRouteChooserDialog$MediaRouterCallback;->this$0:Lcom/android/internal/app/MediaRouteChooserDialog;
 

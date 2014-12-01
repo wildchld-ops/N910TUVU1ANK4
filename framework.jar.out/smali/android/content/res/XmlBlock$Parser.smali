@@ -38,8 +38,6 @@
 # direct methods
 .method constructor <init>(Landroid/content/res/XmlBlock;ILandroid/content/res/XmlBlock;)V
     .locals 1
-    .param p2    # I
-    .param p3    # Landroid/content/res/XmlBlock;
 
     const/4 v0, 0x0
 
@@ -110,8 +108,6 @@
 
 .method public defineEntityReplacementText(Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;
@@ -142,8 +138,6 @@
 
 .method public getAttributeBooleanValue(IZ)Z
     .locals 2
-    .param p1    # I
-    .param p2    # Z
 
     iget v1, p0, Landroid/content/res/XmlBlock$Parser;->mParseState:I
 
@@ -187,9 +181,6 @@
 
 .method public getAttributeBooleanValue(Ljava/lang/String;Ljava/lang/String;Z)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     iget v1, p0, Landroid/content/res/XmlBlock$Parser;->mParseState:I
 
@@ -235,8 +226,6 @@
 
 .method public getAttributeFloatValue(IF)F
     .locals 3
-    .param p1    # I
-    .param p2    # F
 
     iget v1, p0, Landroid/content/res/XmlBlock$Parser;->mParseState:I
 
@@ -274,9 +263,6 @@
 
 .method public getAttributeFloatValue(Ljava/lang/String;Ljava/lang/String;F)F
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # F
 
     iget v1, p0, Landroid/content/res/XmlBlock$Parser;->mParseState:I
 
@@ -297,8 +283,6 @@
 
 .method public getAttributeIntValue(II)I
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget v1, p0, Landroid/content/res/XmlBlock$Parser;->mParseState:I
 
@@ -328,9 +312,6 @@
 
 .method public getAttributeIntValue(Ljava/lang/String;Ljava/lang/String;I)I
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     iget v1, p0, Landroid/content/res/XmlBlock$Parser;->mParseState:I
 
@@ -351,9 +332,6 @@
 
 .method public getAttributeListValue(I[Ljava/lang/String;I)I
     .locals 3
-    .param p1    # I
-    .param p2    # [Ljava/lang/String;
-    .param p3    # I
 
     iget v2, p0, Landroid/content/res/XmlBlock$Parser;->mParseState:I
 
@@ -391,10 +369,6 @@
 
 .method public getAttributeListValue(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;I)I
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # [Ljava/lang/String;
-    .param p4    # I
 
     iget v1, p0, Landroid/content/res/XmlBlock$Parser;->mParseState:I
 
@@ -415,7 +389,6 @@
 
 .method public getAttributeName(I)Ljava/lang/String;
     .locals 3
-    .param p1    # I
 
     iget v1, p0, Landroid/content/res/XmlBlock$Parser;->mParseState:I
 
@@ -454,7 +427,6 @@
 
 .method public getAttributeNameResource(I)I
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/content/res/XmlBlock$Parser;->mParseState:I
 
@@ -468,7 +440,6 @@
 
 .method public getAttributeNamespace(I)Ljava/lang/String;
     .locals 3
-    .param p1    # I
 
     iget v1, p0, Landroid/content/res/XmlBlock$Parser;->mParseState:I
 
@@ -517,7 +488,6 @@
 
 .method public getAttributePrefix(I)Ljava/lang/String;
     .locals 2
-    .param p1    # I
 
     new-instance v0, Ljava/lang/RuntimeException;
 
@@ -530,8 +500,6 @@
 
 .method public getAttributeResourceValue(II)I
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget v1, p0, Landroid/content/res/XmlBlock$Parser;->mParseState:I
 
@@ -557,9 +525,6 @@
 
 .method public getAttributeResourceValue(Ljava/lang/String;Ljava/lang/String;I)I
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     iget v1, p0, Landroid/content/res/XmlBlock$Parser;->mParseState:I
 
@@ -580,7 +545,6 @@
 
 .method public getAttributeType(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     const-string v0, "CDATA"
 
@@ -589,8 +553,6 @@
 
 .method public getAttributeUnsignedIntValue(II)I
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget v1, p0, Landroid/content/res/XmlBlock$Parser;->mParseState:I
 
@@ -620,9 +582,6 @@
 
 .method public getAttributeUnsignedIntValue(Ljava/lang/String;Ljava/lang/String;I)I
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     iget v1, p0, Landroid/content/res/XmlBlock$Parser;->mParseState:I
 
@@ -643,7 +602,6 @@
 
 .method public getAttributeValue(I)Ljava/lang/String;
     .locals 5
-    .param p1    # I
 
     iget v3, p0, Landroid/content/res/XmlBlock$Parser;->mParseState:I
 
@@ -706,8 +664,6 @@
 
 .method public getAttributeValue(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget v1, p0, Landroid/content/res/XmlBlock$Parser;->mParseState:I
 
@@ -795,7 +751,6 @@
 
 .method public getFeature(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -868,7 +823,6 @@
 
 .method public getIdAttributeResourceValue(I)I
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -969,7 +923,6 @@
 
 .method public getNamespace(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/RuntimeException;
 
@@ -982,7 +935,6 @@
 
 .method public getNamespaceCount(I)I
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;
@@ -1000,7 +952,6 @@
 
 .method public getNamespacePrefix(I)Ljava/lang/String;
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;
@@ -1018,7 +969,6 @@
 
 .method public getNamespaceUri(I)Ljava/lang/String;
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;
@@ -1036,7 +986,6 @@
 
 .method final getPooledString(I)Ljava/lang/CharSequence;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/content/res/XmlBlock$Parser;->this$0:Landroid/content/res/XmlBlock;
 
@@ -1091,7 +1040,6 @@
 
 .method public getProperty(Ljava/lang/String;)Ljava/lang/Object;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -1146,7 +1094,6 @@
 
 .method public getTextCharacters([I)[C
     .locals 5
-    .param p1    # [I
 
     const/4 v4, 0x0
 
@@ -1186,7 +1133,6 @@
 
 .method public isAttributeDefault(I)Z
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -1529,9 +1475,6 @@
 
 .method public require(ILjava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -1613,8 +1556,6 @@
 
 .method public setFeature(Ljava/lang/String;Z)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;
@@ -1673,7 +1614,6 @@
 
 .method public setFilePath(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     sget-boolean v0, Landroid/os/Build;->IS_ENG_SECURED:Z
 
@@ -1687,8 +1627,6 @@
 
 .method public setInput(Ljava/io/InputStream;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/io/InputStream;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;
@@ -1706,7 +1644,6 @@
 
 .method public setInput(Ljava/io/Reader;)V
     .locals 2
-    .param p1    # Ljava/io/Reader;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;
@@ -1724,8 +1661,6 @@
 
 .method public setProperty(Ljava/lang/String;Ljava/lang/Object;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;

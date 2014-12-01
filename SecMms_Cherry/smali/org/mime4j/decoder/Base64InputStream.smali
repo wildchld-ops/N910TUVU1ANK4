@@ -302,7 +302,6 @@
 
 .method public constructor <init>(Ljava/io/InputStream;)V
     .locals 2
-    .param p1    # Ljava/io/InputStream;
 
     invoke-direct {p0}, Ljava/io/InputStream;-><init>()V
 
@@ -325,8 +324,6 @@
 
 .method private decodeAndEnqueue([BI)V
     .locals 7
-    .param p1    # [B
-    .param p2    # I
 
     const/4 v6, 0x3
 

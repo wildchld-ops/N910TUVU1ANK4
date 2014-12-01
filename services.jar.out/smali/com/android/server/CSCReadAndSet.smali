@@ -52,7 +52,6 @@
 
 .method public static getInstance(Ljava/lang/String;)Lcom/android/server/CSCReadAndSet;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     if-nez p0, :cond_0
 
@@ -77,8 +76,6 @@
 
 .method private getTagNode(Lorg/w3c/dom/Node;Ljava/lang/String;)Lorg/w3c/dom/Node;
     .locals 6
-    .param p1    # Lorg/w3c/dom/Node;
-    .param p2    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -138,7 +135,6 @@
 
 .method private getTagValue(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -174,7 +170,6 @@
 
 .method private getTagValueReturnString(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -193,7 +188,6 @@
 
 .method private loadXMLFile(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     invoke-static {}, Ljavax/xml/parsers/DocumentBuilderFactory;->newInstance()Ljavax/xml/parsers/DocumentBuilderFactory;
@@ -293,7 +287,6 @@
 # virtual methods
 .method public setCustomerCSC(Landroid/content/Context;Ljava/util/List;)Z
     .locals 8
-    .param p1    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

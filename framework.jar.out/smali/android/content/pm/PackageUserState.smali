@@ -60,7 +60,6 @@
 
 .method public constructor <init>(Landroid/content/pm/PackageUserState;)V
     .locals 3
-    .param p1    # Landroid/content/pm/PackageUserState;
 
     const/4 v1, 0x0
 

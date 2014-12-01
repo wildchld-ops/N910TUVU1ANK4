@@ -68,13 +68,6 @@
 # direct methods
 .method constructor <init>(Landroid/accounts/AccountManager;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Landroid/app/Activity;Landroid/os/Bundle;Landroid/os/Bundle;Landroid/accounts/AccountManagerCallback;Landroid/os/Handler;)V
     .locals 2
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # [Ljava/lang/String;
-    .param p5    # Landroid/app/Activity;
-    .param p6    # Landroid/os/Bundle;
-    .param p7    # Landroid/os/Bundle;
-    .param p9    # Landroid/os/Handler;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -134,8 +127,6 @@
 
 .method static synthetic access$1000(Landroid/accounts/AccountManager$GetAuthTokenByTypeAndFeaturesTask;Ljava/lang/Throwable;)V
     .locals 0
-    .param p0    # Landroid/accounts/AccountManager$GetAuthTokenByTypeAndFeaturesTask;
-    .param p1    # Ljava/lang/Throwable;
 
     invoke-virtual {p0, p1}, Landroid/accounts/AccountManager$GetAuthTokenByTypeAndFeaturesTask;->setException(Ljava/lang/Throwable;)V
 
@@ -144,8 +135,6 @@
 
 .method static synthetic access$1100(Landroid/accounts/AccountManager$GetAuthTokenByTypeAndFeaturesTask;Ljava/lang/Throwable;)V
     .locals 0
-    .param p0    # Landroid/accounts/AccountManager$GetAuthTokenByTypeAndFeaturesTask;
-    .param p1    # Ljava/lang/Throwable;
 
     invoke-virtual {p0, p1}, Landroid/accounts/AccountManager$GetAuthTokenByTypeAndFeaturesTask;->setException(Ljava/lang/Throwable;)V
 
@@ -154,8 +143,6 @@
 
 .method static synthetic access$1202(Landroid/accounts/AccountManager$GetAuthTokenByTypeAndFeaturesTask;I)I
     .locals 0
-    .param p0    # Landroid/accounts/AccountManager$GetAuthTokenByTypeAndFeaturesTask;
-    .param p1    # I
 
     iput p1, p0, Landroid/accounts/AccountManager$GetAuthTokenByTypeAndFeaturesTask;->mNumAccounts:I
 
@@ -164,8 +151,6 @@
 
 .method static synthetic access$900(Landroid/accounts/AccountManager$GetAuthTokenByTypeAndFeaturesTask;Ljava/lang/Throwable;)V
     .locals 0
-    .param p0    # Landroid/accounts/AccountManager$GetAuthTokenByTypeAndFeaturesTask;
-    .param p1    # Ljava/lang/Throwable;
 
     invoke-virtual {p0, p1}, Landroid/accounts/AccountManager$GetAuthTokenByTypeAndFeaturesTask;->setException(Ljava/lang/Throwable;)V
 

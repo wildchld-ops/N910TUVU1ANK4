@@ -47,8 +47,6 @@
 # virtual methods
 .method printLapTime(Ljava/lang/String;J)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
@@ -112,8 +110,6 @@
 
 .method printTotalTime(Ljava/lang/String;J)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
 
     iget-boolean v2, p0, Lcom/android/server/power/PowerManagerService$TimeMeasurement;->mIsPrinted:Z
 

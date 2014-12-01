@@ -213,7 +213,6 @@
 
 .method protected setOnTransDelAnimListener(Lcom/android/mms/ui/MessageListView$OnTransDelAnimListener;)V
     .locals 0
-    .param p1    # Lcom/android/mms/ui/MessageListView$OnTransDelAnimListener;
 
     iput-object p1, p0, Lcom/android/mms/ui/MessageListView$TransDelAnim;->mOnTransAnimationListener:Lcom/android/mms/ui/MessageListView$OnTransDelAnimListener;
 
@@ -222,7 +221,6 @@
 
 .method public startTransAnimation(I)V
     .locals 3
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/mms/ui/MessageListView$TransDelAnim;->stopTransAnimation()V
 

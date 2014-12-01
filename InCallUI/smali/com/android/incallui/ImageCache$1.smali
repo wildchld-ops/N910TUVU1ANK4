@@ -31,7 +31,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/incallui/ImageCache;I)V
     .locals 0
-    .param p2    # I
 
     iput-object p1, p0, Lcom/android/incallui/ImageCache$1;->this$0:Lcom/android/incallui/ImageCache;
 
@@ -44,8 +43,6 @@
 # virtual methods
 .method protected bridge synthetic sizeOf(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p1, Ljava/lang/String;
 
@@ -60,8 +57,6 @@
 
 .method protected sizeOf(Ljava/lang/String;Landroid/graphics/Bitmap;)I
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/graphics/Bitmap;
 
     invoke-static {p2}, Lcom/android/incallui/ImageCache;->getBitmapSize(Landroid/graphics/Bitmap;)I
 

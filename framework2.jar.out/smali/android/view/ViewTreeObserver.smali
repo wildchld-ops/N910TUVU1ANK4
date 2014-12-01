@@ -182,7 +182,6 @@
 # virtual methods
 .method public addOnComputeInternalInsetsListener(Landroid/view/ViewTreeObserver$OnComputeInternalInsetsListener;)V
     .locals 1
-    .param p1    # Landroid/view/ViewTreeObserver$OnComputeInternalInsetsListener;
 
     invoke-direct {p0}, Landroid/view/ViewTreeObserver;->checkIsAlive()V
 
@@ -206,7 +205,6 @@
 
 .method public addOnDrawListener(Landroid/view/ViewTreeObserver$OnDrawListener;)V
     .locals 1
-    .param p1    # Landroid/view/ViewTreeObserver$OnDrawListener;
 
     invoke-direct {p0}, Landroid/view/ViewTreeObserver;->checkIsAlive()V
 
@@ -230,7 +228,6 @@
 
 .method public addOnGlobalFocusChangeListener(Landroid/view/ViewTreeObserver$OnGlobalFocusChangeListener;)V
     .locals 1
-    .param p1    # Landroid/view/ViewTreeObserver$OnGlobalFocusChangeListener;
 
     invoke-direct {p0}, Landroid/view/ViewTreeObserver;->checkIsAlive()V
 
@@ -254,7 +251,6 @@
 
 .method public addOnGlobalLayoutListener(Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;)V
     .locals 1
-    .param p1    # Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;
 
     invoke-direct {p0}, Landroid/view/ViewTreeObserver;->checkIsAlive()V
 
@@ -278,7 +274,6 @@
 
 .method public addOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V
     .locals 1
-    .param p1    # Landroid/view/ViewTreeObserver$OnPreDrawListener;
 
     invoke-direct {p0}, Landroid/view/ViewTreeObserver;->checkIsAlive()V
 
@@ -302,7 +297,6 @@
 
 .method public addOnScrollChangedListener(Landroid/view/ViewTreeObserver$OnScrollChangedListener;)V
     .locals 1
-    .param p1    # Landroid/view/ViewTreeObserver$OnScrollChangedListener;
 
     invoke-direct {p0}, Landroid/view/ViewTreeObserver;->checkIsAlive()V
 
@@ -326,8 +320,6 @@
 
 .method public addOnStylusButtonEventListener(Landroid/content/Context;Landroid/view/ViewTreeObserver$OnStylusButtonEventListener;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/view/ViewTreeObserver$OnStylusButtonEventListener;
 
     invoke-direct {p0}, Landroid/view/ViewTreeObserver;->checkIsAlive()V
 
@@ -351,7 +343,6 @@
 
 .method public addOnTouchModeChangeListener(Landroid/view/ViewTreeObserver$OnTouchModeChangeListener;)V
     .locals 1
-    .param p1    # Landroid/view/ViewTreeObserver$OnTouchModeChangeListener;
 
     invoke-direct {p0}, Landroid/view/ViewTreeObserver;->checkIsAlive()V
 
@@ -375,7 +366,6 @@
 
 .method public addOnWindowAttachListener(Landroid/view/ViewTreeObserver$OnWindowAttachListener;)V
     .locals 1
-    .param p1    # Landroid/view/ViewTreeObserver$OnWindowAttachListener;
 
     invoke-direct {p0}, Landroid/view/ViewTreeObserver;->checkIsAlive()V
 
@@ -399,7 +389,6 @@
 
 .method public addOnWindowFocusChangeListener(Landroid/view/ViewTreeObserver$OnWindowFocusChangeListener;)V
     .locals 1
-    .param p1    # Landroid/view/ViewTreeObserver$OnWindowFocusChangeListener;
 
     invoke-direct {p0}, Landroid/view/ViewTreeObserver;->checkIsAlive()V
 
@@ -423,7 +412,6 @@
 
 .method final dispatchOnComputeInternalInsets(Landroid/view/ViewTreeObserver$InternalInsetsInfo;)V
     .locals 5
-    .param p1    # Landroid/view/ViewTreeObserver$InternalInsetsInfo;
 
     iget-object v3, p0, Landroid/view/ViewTreeObserver;->mOnComputeInternalInsetsListeners:Landroid/view/ViewTreeObserver$CopyOnWriteArray;
 
@@ -513,8 +501,6 @@
 
 .method final dispatchOnGlobalFocusChange(Landroid/view/View;Landroid/view/View;)V
     .locals 4
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/View;
 
     iget-object v2, p0, Landroid/view/ViewTreeObserver;->mOnGlobalFocusListeners:Ljava/util/concurrent/CopyOnWriteArrayList;
 
@@ -608,8 +594,6 @@
 
 .method public final dispatchOnPenButtonEventListener(Landroid/view/MotionEvent;I)V
     .locals 4
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # I
 
     iget-object v3, p0, Landroid/view/ViewTreeObserver;->mOnStylusButtonEventListeners:Ljava/util/ArrayList;
 
@@ -784,7 +768,6 @@
 
 .method final dispatchOnTouchModeChanged(Z)V
     .locals 4
-    .param p1    # Z
 
     iget-object v2, p0, Landroid/view/ViewTreeObserver;->mOnTouchModeChangeListeners:Ljava/util/concurrent/CopyOnWriteArrayList;
 
@@ -823,7 +806,6 @@
 
 .method final dispatchOnWindowAttachedChange(Z)V
     .locals 4
-    .param p1    # Z
 
     iget-object v2, p0, Landroid/view/ViewTreeObserver;->mOnWindowAttachListeners:Ljava/util/concurrent/CopyOnWriteArrayList;
 
@@ -869,7 +851,6 @@
 
 .method final dispatchOnWindowFocusChange(Z)V
     .locals 4
-    .param p1    # Z
 
     iget-object v2, p0, Landroid/view/ViewTreeObserver;->mOnWindowFocusListeners:Ljava/util/concurrent/CopyOnWriteArrayList;
 
@@ -966,7 +947,6 @@
 
 .method merge(Landroid/view/ViewTreeObserver;)V
     .locals 2
-    .param p1    # Landroid/view/ViewTreeObserver;
 
     iget-object v0, p1, Landroid/view/ViewTreeObserver;->mOnWindowAttachListeners:Ljava/util/concurrent/CopyOnWriteArrayList;
 
@@ -1159,7 +1139,6 @@
 
 .method public removeGlobalOnLayoutListener(Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;)V
     .locals 0
-    .param p1    # Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -1170,7 +1149,6 @@
 
 .method public removeOnComputeInternalInsetsListener(Landroid/view/ViewTreeObserver$OnComputeInternalInsetsListener;)V
     .locals 1
-    .param p1    # Landroid/view/ViewTreeObserver$OnComputeInternalInsetsListener;
 
     invoke-direct {p0}, Landroid/view/ViewTreeObserver;->checkIsAlive()V
 
@@ -1191,7 +1169,6 @@
 
 .method public removeOnDrawListener(Landroid/view/ViewTreeObserver$OnDrawListener;)V
     .locals 1
-    .param p1    # Landroid/view/ViewTreeObserver$OnDrawListener;
 
     invoke-direct {p0}, Landroid/view/ViewTreeObserver;->checkIsAlive()V
 
@@ -1212,7 +1189,6 @@
 
 .method public removeOnGlobalFocusChangeListener(Landroid/view/ViewTreeObserver$OnGlobalFocusChangeListener;)V
     .locals 1
-    .param p1    # Landroid/view/ViewTreeObserver$OnGlobalFocusChangeListener;
 
     invoke-direct {p0}, Landroid/view/ViewTreeObserver;->checkIsAlive()V
 
@@ -1233,7 +1209,6 @@
 
 .method public removeOnGlobalLayoutListener(Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;)V
     .locals 1
-    .param p1    # Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;
 
     invoke-direct {p0}, Landroid/view/ViewTreeObserver;->checkIsAlive()V
 
@@ -1254,7 +1229,6 @@
 
 .method public removeOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V
     .locals 1
-    .param p1    # Landroid/view/ViewTreeObserver$OnPreDrawListener;
 
     invoke-direct {p0}, Landroid/view/ViewTreeObserver;->checkIsAlive()V
 
@@ -1275,7 +1249,6 @@
 
 .method public removeOnScrollChangedListener(Landroid/view/ViewTreeObserver$OnScrollChangedListener;)V
     .locals 1
-    .param p1    # Landroid/view/ViewTreeObserver$OnScrollChangedListener;
 
     invoke-direct {p0}, Landroid/view/ViewTreeObserver;->checkIsAlive()V
 
@@ -1296,7 +1269,6 @@
 
 .method public removeOnStylusButtonEventListener(Landroid/view/ViewTreeObserver$OnStylusButtonEventListener;)V
     .locals 1
-    .param p1    # Landroid/view/ViewTreeObserver$OnStylusButtonEventListener;
 
     invoke-direct {p0}, Landroid/view/ViewTreeObserver;->checkIsAlive()V
 
@@ -1317,7 +1289,6 @@
 
 .method public removeOnTouchModeChangeListener(Landroid/view/ViewTreeObserver$OnTouchModeChangeListener;)V
     .locals 1
-    .param p1    # Landroid/view/ViewTreeObserver$OnTouchModeChangeListener;
 
     invoke-direct {p0}, Landroid/view/ViewTreeObserver;->checkIsAlive()V
 
@@ -1338,7 +1309,6 @@
 
 .method public removeOnWindowAttachListener(Landroid/view/ViewTreeObserver$OnWindowAttachListener;)V
     .locals 1
-    .param p1    # Landroid/view/ViewTreeObserver$OnWindowAttachListener;
 
     invoke-direct {p0}, Landroid/view/ViewTreeObserver;->checkIsAlive()V
 
@@ -1359,7 +1329,6 @@
 
 .method public removeOnWindowFocusChangeListener(Landroid/view/ViewTreeObserver$OnWindowFocusChangeListener;)V
     .locals 1
-    .param p1    # Landroid/view/ViewTreeObserver$OnWindowFocusChangeListener;
 
     invoke-direct {p0}, Landroid/view/ViewTreeObserver;->checkIsAlive()V
 

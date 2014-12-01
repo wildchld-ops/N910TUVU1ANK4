@@ -205,9 +205,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/transaction/IMEITrackerService_DS;Landroid/telephony/TelephonyManager;Landroid/telephony/ServiceState;)V
     .locals 0
-    .param p0    # Lcom/android/mms/transaction/IMEITrackerService_DS;
-    .param p1    # Landroid/telephony/TelephonyManager;
-    .param p2    # Landroid/telephony/ServiceState;
 
     invoke-direct {p0, p1, p2}, Lcom/android/mms/transaction/IMEITrackerService_DS;->sendIMEITrackerMsgIfNeeded(Landroid/telephony/TelephonyManager;Landroid/telephony/ServiceState;)V
 
@@ -224,7 +221,6 @@
 
 .method static synthetic access$202(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/mms/transaction/IMEITrackerService_DS;->Sim0MsgSent:Z
 
@@ -241,7 +237,6 @@
 
 .method static synthetic access$302(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/mms/transaction/IMEITrackerService_DS;->Sim1MsgSent:Z
 
@@ -250,8 +245,6 @@
 
 .method static synthetic access$400(Lcom/android/mms/transaction/IMEITrackerService_DS;Ljava/util/ArrayList;)V
     .locals 0
-    .param p0    # Lcom/android/mms/transaction/IMEITrackerService_DS;
-    .param p1    # Ljava/util/ArrayList;
 
     invoke-direct {p0, p1}, Lcom/android/mms/transaction/IMEITrackerService_DS;->updateRecord(Ljava/util/ArrayList;)V
 
@@ -260,9 +253,6 @@
 
 .method static synthetic access$500(Lcom/android/mms/transaction/IMEITrackerService_DS;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/mms/transaction/IMEITrackerService_DS;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Lcom/android/mms/transaction/IMEITrackerService_DS;->sendSMS(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -271,8 +261,6 @@
 
 .method private static appendHex(Ljava/lang/StringBuffer;B)V
     .locals 3
-    .param p0    # Ljava/lang/StringBuffer;
-    .param p1    # B
 
     const-string v0, "0123456789ABCDEF"
 
@@ -303,8 +291,6 @@
 
 .method public static decrypt(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;
@@ -332,8 +318,6 @@
 
 .method private static decrypt([B[B)[B
     .locals 4
-    .param p0    # [B
-    .param p1    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;
@@ -365,8 +349,6 @@
 
 .method public static encrypt(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;
@@ -400,8 +382,6 @@
 
 .method private static encrypt([B[B)[B
     .locals 5
-    .param p0    # [B
-    .param p1    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;
@@ -439,7 +419,6 @@
 
 .method private getIMSI(I)Ljava/lang/String;
     .locals 4
-    .param p1    # I
 
     const-string v2, "IMEITrackerPrefs"
 
@@ -537,7 +516,6 @@
 
 .method public static final getMessagesFromIntent(Landroid/content/Intent;)[Landroid/telephony/SmsMessage;
     .locals 8
-    .param p0    # Landroid/content/Intent;
 
     const/4 v2, 0x0
 
@@ -635,7 +613,6 @@
 
 .method private static getRawKey([B)[B
     .locals 6
-    .param p0    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;
@@ -701,8 +678,6 @@
 
 .method private sendIMEITrackerMsgIfNeeded(Landroid/telephony/TelephonyManager;Landroid/telephony/ServiceState;)V
     .locals 10
-    .param p1    # Landroid/telephony/TelephonyManager;
-    .param p2    # Landroid/telephony/ServiceState;
 
     const/4 v9, 0x1
 
@@ -1002,8 +977,6 @@
 
 .method private sendSMS(Ljava/lang/String;Ljava/lang/String;)V
     .locals 13
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v12, 0x0
 
@@ -1169,7 +1142,6 @@
 
 .method public static toByte(Ljava/lang/String;)[B
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
@@ -1216,7 +1188,6 @@
 
 .method public static toHex(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     invoke-virtual {p0}, Ljava/lang/String;->getBytes()[B
 
@@ -1231,7 +1202,6 @@
 
 .method public static toHex([B)Ljava/lang/String;
     .locals 3
-    .param p0    # [B
 
     if-nez p0, :cond_0
 
@@ -1274,7 +1244,6 @@
 
 .method private updateRecord(Ljava/util/ArrayList;)V
     .locals 7
-    .param p1    # Ljava/util/ArrayList;
 
     const/4 v6, 0x0
 
@@ -1445,7 +1414,6 @@
 
 .method private updateServerNumbToLocalSharePref(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const-string v2, "IMEITrackerPrefs"
 
@@ -1796,7 +1764,6 @@
 
 .method public onBind(Landroid/content/Intent;)Landroid/os/IBinder;
     .locals 1
-    .param p1    # Landroid/content/Intent;
 
     const/4 v0, 0x0
 
@@ -1855,8 +1822,6 @@
 
 .method public onStart(Landroid/content/Intent;I)V
     .locals 28
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
 
     const-string v25, "ITS_DS"
 
@@ -2570,7 +2535,6 @@
 
 .method public updateSeverNumber(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 

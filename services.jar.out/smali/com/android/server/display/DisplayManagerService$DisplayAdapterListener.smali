@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Lcom/android/server/display/DisplayManagerService;Lcom/android/server/display/DisplayManagerService$1;)V
     .locals 0
-    .param p1    # Lcom/android/server/display/DisplayManagerService;
-    .param p2    # Lcom/android/server/display/DisplayManagerService$1;
 
     invoke-direct {p0, p1}, Lcom/android/server/display/DisplayManagerService$DisplayAdapterListener;-><init>(Lcom/android/server/display/DisplayManagerService;)V
 
@@ -46,8 +44,6 @@
 # virtual methods
 .method public onDisplayDeviceEvent(Lcom/android/server/display/DisplayDevice;I)V
     .locals 1
-    .param p1    # Lcom/android/server/display/DisplayDevice;
-    .param p2    # I
 
     packed-switch p2, :pswitch_data_0
 

@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,7 +36,6 @@
 # virtual methods
 .method public ackActivateUser(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -89,7 +87,6 @@
 
 .method public activateUser(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -361,7 +358,6 @@
 
 .method public cancelActivateUser(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -413,7 +409,6 @@
 
 .method public cancelRecv(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -518,7 +513,6 @@
 
 .method public deactivateUser(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1262,7 +1256,6 @@
 
 .method public rejectActivateUser(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1314,7 +1307,6 @@
 
 .method public sendAcceptActivateRequestMessage(Lcom/samsung/dmc/ux/db/UserInfo;)V
     .locals 5
-    .param p1    # Lcom/samsung/dmc/ux/db/UserInfo;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1385,7 +1377,6 @@
 
 .method public sendRejectActivateRequestMessage(Lcom/samsung/dmc/ux/db/UserInfo;)V
     .locals 5
-    .param p1    # Lcom/samsung/dmc/ux/db/UserInfo;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1456,7 +1447,6 @@
 
 .method public setAutoPreview(Z)V
     .locals 5
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1515,7 +1505,6 @@
 
 .method public setAutoStart(Z)V
     .locals 5
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1574,7 +1563,6 @@
 
 .method public setIsCameraOnForeground(Z)V
     .locals 5
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1633,7 +1621,6 @@
 
 .method public setLocalPersonInfo(Lcom/samsung/dmc/ux/db/PersonalSettingInfo;)V
     .locals 5
-    .param p1    # Lcom/samsung/dmc/ux/db/PersonalSettingInfo;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1704,7 +1691,6 @@
 
 .method public setNotificationConfirmed(Z)V
     .locals 5
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1763,7 +1749,6 @@
 
 .method public setRecvCount(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1815,7 +1800,6 @@
 
 .method public setRecvFailCount(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1867,7 +1851,6 @@
 
 .method public setSendCount(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1919,7 +1902,6 @@
 
 .method public setSendFailCount(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1971,7 +1953,6 @@
 
 .method public shareFile(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

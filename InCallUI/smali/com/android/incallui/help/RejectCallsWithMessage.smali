@@ -246,7 +246,6 @@
 
 .method static synthetic access$000(Lcom/android/incallui/help/RejectCallsWithMessage;)V
     .locals 0
-    .param p0    # Lcom/android/incallui/help/RejectCallsWithMessage;
 
     invoke-direct {p0}, Lcom/android/incallui/help/RejectCallsWithMessage;->showToast()V
 
@@ -255,7 +254,6 @@
 
 .method static synthetic access$1000(Lcom/android/incallui/help/RejectCallsWithMessage;)Landroid/widget/FrameLayout;
     .locals 1
-    .param p0    # Lcom/android/incallui/help/RejectCallsWithMessage;
 
     iget-object v0, p0, Lcom/android/incallui/help/RejectCallsWithMessage;->mrejectMsgTip:Landroid/widget/FrameLayout;
 
@@ -264,7 +262,6 @@
 
 .method static synthetic access$1100(Lcom/android/incallui/help/RejectCallsWithMessage;)[Landroid/graphics/drawable/AnimationDrawable;
     .locals 1
-    .param p0    # Lcom/android/incallui/help/RejectCallsWithMessage;
 
     iget-object v0, p0, Lcom/android/incallui/help/RejectCallsWithMessage;->mDragUpList:[Landroid/graphics/drawable/AnimationDrawable;
 
@@ -273,7 +270,6 @@
 
 .method static synthetic access$1200(Lcom/android/incallui/help/RejectCallsWithMessage;)[Landroid/widget/ImageView;
     .locals 1
-    .param p0    # Lcom/android/incallui/help/RejectCallsWithMessage;
 
     iget-object v0, p0, Lcom/android/incallui/help/RejectCallsWithMessage;->mDragUpImageView:[Landroid/widget/ImageView;
 
@@ -282,7 +278,6 @@
 
 .method static synthetic access$1300(Lcom/android/incallui/help/RejectCallsWithMessage;)I
     .locals 1
-    .param p0    # Lcom/android/incallui/help/RejectCallsWithMessage;
 
     iget v0, p0, Lcom/android/incallui/help/RejectCallsWithMessage;->mCurrentPeriodMarkIndex:I
 
@@ -291,8 +286,6 @@
 
 .method static synthetic access$1302(Lcom/android/incallui/help/RejectCallsWithMessage;I)I
     .locals 0
-    .param p0    # Lcom/android/incallui/help/RejectCallsWithMessage;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/incallui/help/RejectCallsWithMessage;->mCurrentPeriodMarkIndex:I
 
@@ -301,7 +294,6 @@
 
 .method static synthetic access$1308(Lcom/android/incallui/help/RejectCallsWithMessage;)I
     .locals 2
-    .param p0    # Lcom/android/incallui/help/RejectCallsWithMessage;
 
     iget v0, p0, Lcom/android/incallui/help/RejectCallsWithMessage;->mCurrentPeriodMarkIndex:I
 
@@ -314,7 +306,6 @@
 
 .method static synthetic access$1400(Lcom/android/incallui/help/RejectCallsWithMessage;)[I
     .locals 1
-    .param p0    # Lcom/android/incallui/help/RejectCallsWithMessage;
 
     iget-object v0, p0, Lcom/android/incallui/help/RejectCallsWithMessage;->mPeriodMarkList:[I
 
@@ -323,7 +314,6 @@
 
 .method static synthetic access$1500(Lcom/android/incallui/help/RejectCallsWithMessage;)Landroid/widget/ImageView;
     .locals 1
-    .param p0    # Lcom/android/incallui/help/RejectCallsWithMessage;
 
     iget-object v0, p0, Lcom/android/incallui/help/RejectCallsWithMessage;->mPeriodMark:Landroid/widget/ImageView;
 
@@ -332,7 +322,6 @@
 
 .method static synthetic access$1600(Lcom/android/incallui/help/RejectCallsWithMessage;)I
     .locals 1
-    .param p0    # Lcom/android/incallui/help/RejectCallsWithMessage;
 
     iget v0, p0, Lcom/android/incallui/help/RejectCallsWithMessage;->mBubbleCount:I
 
@@ -341,7 +330,6 @@
 
 .method static synthetic access$1608(Lcom/android/incallui/help/RejectCallsWithMessage;)I
     .locals 2
-    .param p0    # Lcom/android/incallui/help/RejectCallsWithMessage;
 
     iget v0, p0, Lcom/android/incallui/help/RejectCallsWithMessage;->mBubbleCount:I
 
@@ -354,7 +342,6 @@
 
 .method static synthetic access$1700(Lcom/android/incallui/help/RejectCallsWithMessage;)Landroid/view/animation/Animation;
     .locals 1
-    .param p0    # Lcom/android/incallui/help/RejectCallsWithMessage;
 
     iget-object v0, p0, Lcom/android/incallui/help/RejectCallsWithMessage;->mFlashingAnimation:Landroid/view/animation/Animation;
 
@@ -363,7 +350,6 @@
 
 .method static synthetic access$1800(Lcom/android/incallui/help/RejectCallsWithMessage;)Landroid/view/animation/Animation;
     .locals 1
-    .param p0    # Lcom/android/incallui/help/RejectCallsWithMessage;
 
     iget-object v0, p0, Lcom/android/incallui/help/RejectCallsWithMessage;->mFadingAnimation:Landroid/view/animation/Animation;
 
@@ -372,7 +358,6 @@
 
 .method static synthetic access$1900(Lcom/android/incallui/help/RejectCallsWithMessage;)V
     .locals 0
-    .param p0    # Lcom/android/incallui/help/RejectCallsWithMessage;
 
     invoke-direct {p0}, Lcom/android/incallui/help/RejectCallsWithMessage;->clickRejectCallsWithMessage()V
 
@@ -381,7 +366,6 @@
 
 .method static synthetic access$200(Lcom/android/incallui/help/RejectCallsWithMessage;)Landroid/widget/LinearLayout;
     .locals 1
-    .param p0    # Lcom/android/incallui/help/RejectCallsWithMessage;
 
     iget-object v0, p0, Lcom/android/incallui/help/RejectCallsWithMessage;->mRejectCallWithMsgHandle:Landroid/widget/LinearLayout;
 
@@ -390,7 +374,6 @@
 
 .method static synthetic access$300(Lcom/android/incallui/help/RejectCallsWithMessage;)Landroid/widget/ImageView;
     .locals 1
-    .param p0    # Lcom/android/incallui/help/RejectCallsWithMessage;
 
     iget-object v0, p0, Lcom/android/incallui/help/RejectCallsWithMessage;->mRejectCallWithMsgOpenIcon:Landroid/widget/ImageView;
 
@@ -399,7 +382,6 @@
 
 .method static synthetic access$400(Lcom/android/incallui/help/RejectCallsWithMessage;)Lcom/android/incallui/widget/incomingwidget/IncomingCallImageWidget;
     .locals 1
-    .param p0    # Lcom/android/incallui/help/RejectCallsWithMessage;
 
     iget-object v0, p0, Lcom/android/incallui/help/RejectCallsWithMessage;->mIncomingCallWidget:Lcom/android/incallui/widget/incomingwidget/IncomingCallImageWidget;
 
@@ -408,7 +390,6 @@
 
 .method static synthetic access$500(Lcom/android/incallui/help/RejectCallsWithMessage;)Landroid/widget/FrameLayout;
     .locals 1
-    .param p0    # Lcom/android/incallui/help/RejectCallsWithMessage;
 
     iget-object v0, p0, Lcom/android/incallui/help/RejectCallsWithMessage;->mSendMsgTip:Landroid/widget/FrameLayout;
 
@@ -417,7 +398,6 @@
 
 .method static synthetic access$600(Lcom/android/incallui/help/RejectCallsWithMessage;)Landroid/view/animation/Animation;
     .locals 1
-    .param p0    # Lcom/android/incallui/help/RejectCallsWithMessage;
 
     iget-object v0, p0, Lcom/android/incallui/help/RejectCallsWithMessage;->mBubbleAnimation2:Landroid/view/animation/Animation;
 
@@ -426,7 +406,6 @@
 
 .method static synthetic access$700(Lcom/android/incallui/help/RejectCallsWithMessage;)Landroid/widget/FrameLayout;
     .locals 1
-    .param p0    # Lcom/android/incallui/help/RejectCallsWithMessage;
 
     iget-object v0, p0, Lcom/android/incallui/help/RejectCallsWithMessage;->mSendMsgTipBubble:Landroid/widget/FrameLayout;
 
@@ -435,7 +414,6 @@
 
 .method static synthetic access$800(Lcom/android/incallui/help/RejectCallsWithMessage;)Landroid/view/animation/Animation;
     .locals 1
-    .param p0    # Lcom/android/incallui/help/RejectCallsWithMessage;
 
     iget-object v0, p0, Lcom/android/incallui/help/RejectCallsWithMessage;->mShowAnimation:Landroid/view/animation/Animation;
 
@@ -444,7 +422,6 @@
 
 .method static synthetic access$900(Lcom/android/incallui/help/RejectCallsWithMessage;)V
     .locals 0
-    .param p0    # Lcom/android/incallui/help/RejectCallsWithMessage;
 
     invoke-direct {p0}, Lcom/android/incallui/help/RejectCallsWithMessage;->hideDragUpAnimation()V
 
@@ -453,7 +430,6 @@
 
 .method private buttonAnimationInit(Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     const v3, 0x7f050003
 
@@ -922,7 +898,6 @@
 # virtual methods
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 7
-    .param p1    # Landroid/content/res/Configuration;
 
     const/4 v6, 0x0
 
@@ -1092,7 +1067,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 14
-    .param p1    # Landroid/os/Bundle;
 
     const/16 v13, 0x8
 
@@ -1743,8 +1717,6 @@
 
 .method public onGrabbedStateChange(Landroid/view/View;I)V
     .locals 0
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     return-void
 .end method
@@ -1833,8 +1805,6 @@
 
 .method public onTrigger(Landroid/view/View;I)V
     .locals 0
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     packed-switch p2, :pswitch_data_0
 

@@ -45,7 +45,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -56,8 +55,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const v0, 0x1030089
 
@@ -68,9 +65,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v4, 0x1
 
@@ -128,7 +122,6 @@
 
 .method static synthetic access$000(Landroid/app/FragmentBreadCrumbs;)Landroid/view/View$OnClickListener;
     .locals 1
-    .param p0    # Landroid/app/FragmentBreadCrumbs;
 
     iget-object v0, p0, Landroid/app/FragmentBreadCrumbs;->mParentClickListener:Landroid/view/View$OnClickListener;
 
@@ -137,7 +130,6 @@
 
 .method static synthetic access$100(Landroid/app/FragmentBreadCrumbs;)Landroid/app/FragmentBreadCrumbs$OnBreadCrumbClickListener;
     .locals 1
-    .param p0    # Landroid/app/FragmentBreadCrumbs;
 
     iget-object v0, p0, Landroid/app/FragmentBreadCrumbs;->mOnBreadCrumbClickListener:Landroid/app/FragmentBreadCrumbs$OnBreadCrumbClickListener;
 
@@ -146,8 +138,6 @@
 
 .method private createBackStackEntry(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Landroid/app/BackStackRecord;
     .locals 2
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Ljava/lang/CharSequence;
 
     if-nez p1, :cond_0
 
@@ -178,7 +168,6 @@
 
 .method private getPreEntry(I)Landroid/app/FragmentManager$BackStackEntry;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/app/FragmentBreadCrumbs;->mParentEntry:Landroid/app/BackStackRecord;
 
@@ -248,11 +237,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 11
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-virtual {p0}, Landroid/app/FragmentBreadCrumbs;->getChildCount()I
 
@@ -400,8 +384,6 @@
 
 .method protected onMeasure(II)V
     .locals 8
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0}, Landroid/app/FragmentBreadCrumbs;->getChildCount()I
 
@@ -511,7 +493,6 @@
 
 .method public setActivity(Landroid/app/Activity;)V
     .locals 3
-    .param p1    # Landroid/app/Activity;
 
     iput-object p1, p0, Landroid/app/FragmentBreadCrumbs;->mActivity:Landroid/app/Activity;
 
@@ -562,7 +543,6 @@
 
 .method public setMaxVisible(I)V
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -584,7 +564,6 @@
 
 .method public setOnBreadCrumbClickListener(Landroid/app/FragmentBreadCrumbs$OnBreadCrumbClickListener;)V
     .locals 0
-    .param p1    # Landroid/app/FragmentBreadCrumbs$OnBreadCrumbClickListener;
 
     iput-object p1, p0, Landroid/app/FragmentBreadCrumbs;->mOnBreadCrumbClickListener:Landroid/app/FragmentBreadCrumbs$OnBreadCrumbClickListener;
 
@@ -593,9 +572,6 @@
 
 .method public setParentTitle(Ljava/lang/CharSequence;Ljava/lang/CharSequence;Landroid/view/View$OnClickListener;)V
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Ljava/lang/CharSequence;
-    .param p3    # Landroid/view/View$OnClickListener;
 
     invoke-direct {p0, p1, p2}, Landroid/app/FragmentBreadCrumbs;->createBackStackEntry(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Landroid/app/BackStackRecord;
 
@@ -612,8 +588,6 @@
 
 .method public setTitle(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)V
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Ljava/lang/CharSequence;
 
     invoke-direct {p0, p1, p2}, Landroid/app/FragmentBreadCrumbs;->createBackStackEntry(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Landroid/app/BackStackRecord;
 

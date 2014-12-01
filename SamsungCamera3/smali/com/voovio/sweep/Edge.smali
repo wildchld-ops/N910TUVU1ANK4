@@ -36,9 +36,6 @@
 # direct methods
 .method public constructor <init>(Lcom/voovio/sweep/Node;Lcom/voovio/sweep/Node;I)V
     .locals 4
-    .param p1    # Lcom/voovio/sweep/Node;
-    .param p2    # Lcom/voovio/sweep/Node;
-    .param p3    # I
 
     const/4 v3, 0x0
 

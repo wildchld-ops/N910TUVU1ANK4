@@ -36,7 +36,6 @@
 # virtual methods
 .method public onResult(Ljava/lang/Integer;)V
     .locals 3
-    .param p1    # Ljava/lang/Integer;
 
     const-string v0, "Mms/MessagingPreferenceActivity"
 

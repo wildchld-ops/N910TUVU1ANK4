@@ -16,7 +16,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,7 +37,6 @@
 
 .method protected notifyListener(Landroid/location/Country;)V
     .locals 1
-    .param p1    # Landroid/location/Country;
 
     iget-object v0, p0, Lcom/android/server/location/CountryDetectorBase;->mListener:Landroid/location/CountryListener;
 
@@ -54,7 +52,6 @@
 
 .method public setCountryListener(Landroid/location/CountryListener;)V
     .locals 0
-    .param p1    # Landroid/location/CountryListener;
 
     iput-object p1, p0, Lcom/android/server/location/CountryDetectorBase;->mListener:Landroid/location/CountryListener;
 

@@ -20,7 +20,6 @@
 
 .method public static ageFileFilter(J)Lorg/apache/commons/io/filefilter/IOFileFilter;
     .locals 1
-    .param p0    # J
 
     new-instance v0, Lorg/apache/commons/io/filefilter/AgeFileFilter;
 
@@ -31,8 +30,6 @@
 
 .method public static ageFileFilter(JZ)Lorg/apache/commons/io/filefilter/IOFileFilter;
     .locals 1
-    .param p0    # J
-    .param p2    # Z
 
     new-instance v0, Lorg/apache/commons/io/filefilter/AgeFileFilter;
 
@@ -43,7 +40,6 @@
 
 .method public static ageFileFilter(Ljava/io/File;)Lorg/apache/commons/io/filefilter/IOFileFilter;
     .locals 1
-    .param p0    # Ljava/io/File;
 
     new-instance v0, Lorg/apache/commons/io/filefilter/AgeFileFilter;
 
@@ -54,8 +50,6 @@
 
 .method public static ageFileFilter(Ljava/io/File;Z)Lorg/apache/commons/io/filefilter/IOFileFilter;
     .locals 1
-    .param p0    # Ljava/io/File;
-    .param p1    # Z
 
     new-instance v0, Lorg/apache/commons/io/filefilter/AgeFileFilter;
 
@@ -66,7 +60,6 @@
 
 .method public static ageFileFilter(Ljava/util/Date;)Lorg/apache/commons/io/filefilter/IOFileFilter;
     .locals 1
-    .param p0    # Ljava/util/Date;
 
     new-instance v0, Lorg/apache/commons/io/filefilter/AgeFileFilter;
 
@@ -77,8 +70,6 @@
 
 .method public static ageFileFilter(Ljava/util/Date;Z)Lorg/apache/commons/io/filefilter/IOFileFilter;
     .locals 1
-    .param p0    # Ljava/util/Date;
-    .param p1    # Z
 
     new-instance v0, Lorg/apache/commons/io/filefilter/AgeFileFilter;
 
@@ -89,8 +80,6 @@
 
 .method public static andFileFilter(Lorg/apache/commons/io/filefilter/IOFileFilter;Lorg/apache/commons/io/filefilter/IOFileFilter;)Lorg/apache/commons/io/filefilter/IOFileFilter;
     .locals 1
-    .param p0    # Lorg/apache/commons/io/filefilter/IOFileFilter;
-    .param p1    # Lorg/apache/commons/io/filefilter/IOFileFilter;
 
     new-instance v0, Lorg/apache/commons/io/filefilter/AndFileFilter;
 
@@ -101,7 +90,6 @@
 
 .method public static asFileFilter(Ljava/io/FileFilter;)Lorg/apache/commons/io/filefilter/IOFileFilter;
     .locals 1
-    .param p0    # Ljava/io/FileFilter;
 
     new-instance v0, Lorg/apache/commons/io/filefilter/DelegateFileFilter;
 
@@ -112,7 +100,6 @@
 
 .method public static asFileFilter(Ljava/io/FilenameFilter;)Lorg/apache/commons/io/filefilter/IOFileFilter;
     .locals 1
-    .param p0    # Ljava/io/FilenameFilter;
 
     new-instance v0, Lorg/apache/commons/io/filefilter/DelegateFileFilter;
 
@@ -147,7 +134,6 @@
 
 .method public static makeCVSAware(Lorg/apache/commons/io/filefilter/IOFileFilter;)Lorg/apache/commons/io/filefilter/IOFileFilter;
     .locals 2
-    .param p0    # Lorg/apache/commons/io/filefilter/IOFileFilter;
 
     sget-object v0, Lorg/apache/commons/io/filefilter/FileFilterUtils;->cvsFilter:Lorg/apache/commons/io/filefilter/IOFileFilter;
 
@@ -193,7 +179,6 @@
 
 .method public static makeDirectoryOnly(Lorg/apache/commons/io/filefilter/IOFileFilter;)Lorg/apache/commons/io/filefilter/IOFileFilter;
     .locals 2
-    .param p0    # Lorg/apache/commons/io/filefilter/IOFileFilter;
 
     if-nez p0, :cond_0
 
@@ -214,7 +199,6 @@
 
 .method public static makeFileOnly(Lorg/apache/commons/io/filefilter/IOFileFilter;)Lorg/apache/commons/io/filefilter/IOFileFilter;
     .locals 2
-    .param p0    # Lorg/apache/commons/io/filefilter/IOFileFilter;
 
     if-nez p0, :cond_0
 
@@ -235,7 +219,6 @@
 
 .method public static makeSVNAware(Lorg/apache/commons/io/filefilter/IOFileFilter;)Lorg/apache/commons/io/filefilter/IOFileFilter;
     .locals 2
-    .param p0    # Lorg/apache/commons/io/filefilter/IOFileFilter;
 
     sget-object v0, Lorg/apache/commons/io/filefilter/FileFilterUtils;->svnFilter:Lorg/apache/commons/io/filefilter/IOFileFilter;
 
@@ -281,7 +264,6 @@
 
 .method public static nameFileFilter(Ljava/lang/String;)Lorg/apache/commons/io/filefilter/IOFileFilter;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     new-instance v0, Lorg/apache/commons/io/filefilter/NameFileFilter;
 
@@ -292,7 +274,6 @@
 
 .method public static notFileFilter(Lorg/apache/commons/io/filefilter/IOFileFilter;)Lorg/apache/commons/io/filefilter/IOFileFilter;
     .locals 1
-    .param p0    # Lorg/apache/commons/io/filefilter/IOFileFilter;
 
     new-instance v0, Lorg/apache/commons/io/filefilter/NotFileFilter;
 
@@ -303,8 +284,6 @@
 
 .method public static orFileFilter(Lorg/apache/commons/io/filefilter/IOFileFilter;Lorg/apache/commons/io/filefilter/IOFileFilter;)Lorg/apache/commons/io/filefilter/IOFileFilter;
     .locals 1
-    .param p0    # Lorg/apache/commons/io/filefilter/IOFileFilter;
-    .param p1    # Lorg/apache/commons/io/filefilter/IOFileFilter;
 
     new-instance v0, Lorg/apache/commons/io/filefilter/OrFileFilter;
 
@@ -315,7 +294,6 @@
 
 .method public static prefixFileFilter(Ljava/lang/String;)Lorg/apache/commons/io/filefilter/IOFileFilter;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     new-instance v0, Lorg/apache/commons/io/filefilter/PrefixFileFilter;
 
@@ -326,7 +304,6 @@
 
 .method public static sizeFileFilter(J)Lorg/apache/commons/io/filefilter/IOFileFilter;
     .locals 1
-    .param p0    # J
 
     new-instance v0, Lorg/apache/commons/io/filefilter/SizeFileFilter;
 
@@ -337,8 +314,6 @@
 
 .method public static sizeFileFilter(JZ)Lorg/apache/commons/io/filefilter/IOFileFilter;
     .locals 1
-    .param p0    # J
-    .param p2    # Z
 
     new-instance v0, Lorg/apache/commons/io/filefilter/SizeFileFilter;
 
@@ -349,8 +324,6 @@
 
 .method public static sizeRangeFileFilter(JJ)Lorg/apache/commons/io/filefilter/IOFileFilter;
     .locals 5
-    .param p0    # J
-    .param p2    # J
 
     new-instance v1, Lorg/apache/commons/io/filefilter/SizeFileFilter;
 
@@ -377,7 +350,6 @@
 
 .method public static suffixFileFilter(Ljava/lang/String;)Lorg/apache/commons/io/filefilter/IOFileFilter;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     new-instance v0, Lorg/apache/commons/io/filefilter/SuffixFileFilter;
 

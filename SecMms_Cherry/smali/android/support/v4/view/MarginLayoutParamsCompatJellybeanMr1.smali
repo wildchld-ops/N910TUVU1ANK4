@@ -14,7 +14,6 @@
 
 .method public static getLayoutDirection(Landroid/view/ViewGroup$MarginLayoutParams;)I
     .locals 1
-    .param p0    # Landroid/view/ViewGroup$MarginLayoutParams;
 
     invoke-virtual {p0}, Landroid/view/ViewGroup$MarginLayoutParams;->getLayoutDirection()I
 
@@ -25,7 +24,6 @@
 
 .method public static getMarginEnd(Landroid/view/ViewGroup$MarginLayoutParams;)I
     .locals 1
-    .param p0    # Landroid/view/ViewGroup$MarginLayoutParams;
 
     invoke-virtual {p0}, Landroid/view/ViewGroup$MarginLayoutParams;->getMarginEnd()I
 
@@ -36,7 +34,6 @@
 
 .method public static getMarginStart(Landroid/view/ViewGroup$MarginLayoutParams;)I
     .locals 1
-    .param p0    # Landroid/view/ViewGroup$MarginLayoutParams;
 
     invoke-virtual {p0}, Landroid/view/ViewGroup$MarginLayoutParams;->getMarginStart()I
 
@@ -47,7 +44,6 @@
 
 .method public static isMarginRelative(Landroid/view/ViewGroup$MarginLayoutParams;)Z
     .locals 1
-    .param p0    # Landroid/view/ViewGroup$MarginLayoutParams;
 
     invoke-virtual {p0}, Landroid/view/ViewGroup$MarginLayoutParams;->isMarginRelative()Z
 
@@ -58,8 +54,6 @@
 
 .method public static resolveLayoutDirection(Landroid/view/ViewGroup$MarginLayoutParams;I)V
     .locals 0
-    .param p0    # Landroid/view/ViewGroup$MarginLayoutParams;
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/view/ViewGroup$MarginLayoutParams;->resolveLayoutDirection(I)V
 
@@ -68,8 +62,6 @@
 
 .method public static setLayoutDirection(Landroid/view/ViewGroup$MarginLayoutParams;I)V
     .locals 0
-    .param p0    # Landroid/view/ViewGroup$MarginLayoutParams;
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/view/ViewGroup$MarginLayoutParams;->setLayoutDirection(I)V
 
@@ -78,8 +70,6 @@
 
 .method public static setMarginEnd(Landroid/view/ViewGroup$MarginLayoutParams;I)V
     .locals 0
-    .param p0    # Landroid/view/ViewGroup$MarginLayoutParams;
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/view/ViewGroup$MarginLayoutParams;->setMarginEnd(I)V
 
@@ -88,8 +78,6 @@
 
 .method public static setMarginStart(Landroid/view/ViewGroup$MarginLayoutParams;I)V
     .locals 0
-    .param p0    # Landroid/view/ViewGroup$MarginLayoutParams;
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/view/ViewGroup$MarginLayoutParams;->setMarginStart(I)V
 

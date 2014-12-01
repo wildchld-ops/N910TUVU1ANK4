@@ -38,11 +38,6 @@
 
 .method public constructor <init>(SSISI)V
     .locals 0
-    .param p1    # S
-    .param p2    # S
-    .param p3    # I
-    .param p4    # S
-    .param p5    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -61,8 +56,6 @@
 
 .method private static readId(Ljava/io/InputStream;Ljava/lang/String;)V
     .locals 4
-    .param p0    # Ljava/io/InputStream;
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -123,7 +116,6 @@
 
 .method private static readInt(Ljava/io/InputStream;)I
     .locals 2
-    .param p0    # Ljava/io/InputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -163,7 +155,6 @@
 
 .method private static readShort(Ljava/io/InputStream;)S
     .locals 2
-    .param p0    # Ljava/io/InputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -189,8 +180,6 @@
 
 .method private static writeId(Ljava/io/OutputStream;Ljava/lang/String;)V
     .locals 2
-    .param p0    # Ljava/io/OutputStream;
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -222,8 +211,6 @@
 
 .method private static writeInt(Ljava/io/OutputStream;I)V
     .locals 1
-    .param p0    # Ljava/io/OutputStream;
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -251,8 +238,6 @@
 
 .method private static writeShort(Ljava/io/OutputStream;S)V
     .locals 1
-    .param p0    # Ljava/io/OutputStream;
-    .param p1    # S
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -314,7 +299,6 @@
 
 .method public read(Ljava/io/InputStream;)I
     .locals 5
-    .param p1    # Ljava/io/InputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -447,7 +431,6 @@
 
 .method public setBitsPerSample(S)Landroid/speech/srec/WaveHeader;
     .locals 0
-    .param p1    # S
 
     iput-short p1, p0, Landroid/speech/srec/WaveHeader;->mBitsPerSample:S
 
@@ -456,7 +439,6 @@
 
 .method public setFormat(S)Landroid/speech/srec/WaveHeader;
     .locals 0
-    .param p1    # S
 
     iput-short p1, p0, Landroid/speech/srec/WaveHeader;->mFormat:S
 
@@ -465,7 +447,6 @@
 
 .method public setNumBytes(I)Landroid/speech/srec/WaveHeader;
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/speech/srec/WaveHeader;->mNumBytes:I
 
@@ -474,7 +455,6 @@
 
 .method public setNumChannels(S)Landroid/speech/srec/WaveHeader;
     .locals 0
-    .param p1    # S
 
     iput-short p1, p0, Landroid/speech/srec/WaveHeader;->mNumChannels:S
 
@@ -483,7 +463,6 @@
 
 .method public setSampleRate(I)Landroid/speech/srec/WaveHeader;
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/speech/srec/WaveHeader;->mSampleRate:I
 
@@ -558,7 +537,6 @@
 
 .method public write(Ljava/io/OutputStream;)I
     .locals 2
-    .param p1    # Ljava/io/OutputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

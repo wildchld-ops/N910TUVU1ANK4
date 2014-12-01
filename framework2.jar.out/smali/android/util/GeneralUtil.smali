@@ -101,7 +101,6 @@
 
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -128,8 +127,6 @@
 
 .method public static dump(Landroid/content/Context;Ljava/io/PrintWriter;)Z
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/io/PrintWriter;
 
     invoke-static {p0}, Landroid/util/GeneralUtil;->initialise(Landroid/content/Context;)Z
 
@@ -184,8 +181,6 @@
 
 .method public static getPixelFromDP(Landroid/content/Context;I)I
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -208,8 +203,6 @@
 
 .method public static hasSystemFeature(Landroid/content/Context;Ljava/lang/String;)Z
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -278,7 +271,6 @@
 
 .method private static initialise(Landroid/content/Context;)Z
     .locals 8
-    .param p0    # Landroid/content/Context;
 
     const/4 v3, 0x0
 
@@ -436,8 +428,6 @@
 
 .method public static isBiggerThanSW(Landroid/content/Context;I)Z
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -464,7 +454,6 @@
 
 .method public static isDeviceDefault(Landroid/content/Context;)Z
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -584,7 +573,6 @@
 
 .method public static isThemeDark(Landroid/content/Context;)Z
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -614,7 +602,6 @@
 
 .method public static isVoiceCapable(Landroid/content/Context;)Z
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 

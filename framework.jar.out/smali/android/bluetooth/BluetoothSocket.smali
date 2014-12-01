@@ -97,13 +97,6 @@
 
 .method constructor <init>(IIZZLandroid/bluetooth/BluetoothDevice;ILandroid/os/ParcelUuid;)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # Z
-    .param p5    # Landroid/bluetooth/BluetoothDevice;
-    .param p6    # I
-    .param p7    # Landroid/os/ParcelUuid;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -239,12 +232,6 @@
 
 .method private constructor <init>(IIZZLjava/lang/String;I)V
     .locals 8
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # Z
-    .param p5    # Ljava/lang/String;
-    .param p6    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -276,7 +263,6 @@
 
 .method private constructor <init>(Landroid/bluetooth/BluetoothSocket;)V
     .locals 1
-    .param p1    # Landroid/bluetooth/BluetoothSocket;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -321,7 +307,6 @@
 
 .method private acceptSocket(Ljava/lang/String;)Landroid/bluetooth/BluetoothSocket;
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -440,7 +425,6 @@
 
 .method private convertAddr([B)Ljava/lang/String;
     .locals 9
-    .param p1    # [B
 
     const/4 v8, 0x4
 
@@ -543,8 +527,6 @@
 
 .method private readAll(Ljava/io/InputStream;[B)I
     .locals 5
-    .param p1    # Ljava/io/InputStream;
-    .param p2    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -644,7 +626,6 @@
 
 .method private readInt(Ljava/io/InputStream;)I
     .locals 4
-    .param p1    # Ljava/io/InputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -678,7 +659,6 @@
 
 .method private waitSocketSignal(Ljava/io/InputStream;)Ljava/lang/String;
     .locals 11
-    .param p1    # Ljava/io/InputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -788,7 +768,6 @@
 # virtual methods
 .method accept(I)Landroid/bluetooth/BluetoothSocket;
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -2069,9 +2048,6 @@
 
 .method read([BII)I
     .locals 4
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -2122,7 +2098,6 @@
 
 .method setServiceName(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/bluetooth/BluetoothSocket;->mServiceName:Ljava/lang/String;
 
@@ -2131,9 +2106,6 @@
 
 .method write([BII)I
     .locals 1
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

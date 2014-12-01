@@ -27,10 +27,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;Lcom/android/internal/textservice/ISpellCheckerSessionListener;Landroid/os/Bundle;Landroid/service/textservice/SpellCheckerService$Session;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/internal/textservice/ISpellCheckerSessionListener;
-    .param p3    # Landroid/os/Bundle;
-    .param p4    # Landroid/service/textservice/SpellCheckerService$Session;
 
     invoke-direct {p0}, Lcom/android/internal/textservice/ISpellCheckerSession$Stub;-><init>()V
 
@@ -141,8 +137,6 @@
 
 .method public onGetSentenceSuggestionsMultiple([Landroid/view/textservice/TextInfo;I)V
     .locals 2
-    .param p1    # [Landroid/view/textservice/TextInfo;
-    .param p2    # I
 
     :try_start_0
     iget-object v0, p0, Landroid/service/textservice/SpellCheckerService$InternalISpellCheckerSession;->mListener:Lcom/android/internal/textservice/ISpellCheckerSessionListener;
@@ -168,9 +162,6 @@
 
 .method public onGetSuggestionsMultiple([Landroid/view/textservice/TextInfo;IZ)V
     .locals 3
-    .param p1    # [Landroid/view/textservice/TextInfo;
-    .param p2    # I
-    .param p3    # Z
 
     invoke-static {}, Landroid/os/Process;->myTid()I
 

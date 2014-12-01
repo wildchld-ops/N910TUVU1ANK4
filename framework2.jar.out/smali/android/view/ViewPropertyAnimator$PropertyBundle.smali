@@ -32,7 +32,6 @@
 # direct methods
 .method constructor <init>(ILjava/util/ArrayList;)V
     .locals 0
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -56,7 +55,6 @@
 # virtual methods
 .method cancel(I)Z
     .locals 5
-    .param p1    # I
 
     iget v3, p0, Landroid/view/ViewPropertyAnimator$PropertyBundle;->mPropertyMask:I
 

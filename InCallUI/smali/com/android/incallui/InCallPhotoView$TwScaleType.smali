@@ -196,7 +196,6 @@
 
 .method private constructor <init>(Ljava/lang/String;ILjava/lang/String;)V
     .locals 0
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -214,7 +213,6 @@
 
 .method public static parse(Ljava/lang/String;)Landroid/widget/ImageView$ScaleType;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     sget-object v0, Lcom/android/incallui/InCallPhotoView$TwScaleType;->center:Lcom/android/incallui/InCallPhotoView$TwScaleType;
 

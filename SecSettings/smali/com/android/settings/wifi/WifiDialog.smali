@@ -33,11 +33,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/content/DialogInterface$OnClickListener;Lcom/android/settings/wifi/AccessPoint;ZZ)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/DialogInterface$OnClickListener;
-    .param p3    # Lcom/android/settings/wifi/AccessPoint;
-    .param p4    # Z
-    .param p5    # Z
 
     invoke-direct {p0, p1}, Landroid/app/AlertDialog;-><init>(Landroid/content/Context;)V
 
@@ -418,7 +413,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 8
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v7, 0x1
 
@@ -596,7 +590,6 @@
 
 .method public setCancelButton(Ljava/lang/CharSequence;)V
     .locals 2
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v0, -0x2
 
@@ -609,7 +602,6 @@
 
 .method public setForgetButton(Ljava/lang/CharSequence;)V
     .locals 2
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v0, -0x3
 
@@ -622,7 +614,6 @@
 
 .method public setSoftKeyboardVisible(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/wifi/WifiDialog;->mSoftKeyboardVisible:Z
 
@@ -631,7 +622,6 @@
 
 .method public setSubmitButton(Ljava/lang/CharSequence;)V
     .locals 2
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v0, -0x1
 

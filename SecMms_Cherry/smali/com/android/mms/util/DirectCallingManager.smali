@@ -185,8 +185,6 @@
 
 .method public constructor <init>(ILcom/android/mms/ui/DirectCallActivityInterface;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Lcom/android/mms/ui/DirectCallActivityInterface;
 
     const/4 v0, 0x0
 
@@ -229,8 +227,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/util/DirectCallingManager;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/mms/util/DirectCallingManager;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/mms/util/DirectCallingManager;->tryToCall(Ljava/lang/String;)V
 
@@ -239,8 +235,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/util/DirectCallingManager;Z)V
     .locals 0
-    .param p0    # Lcom/android/mms/util/DirectCallingManager;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/mms/util/DirectCallingManager;->setIsSpeechRecorgnizing(Z)V
 
@@ -249,7 +243,6 @@
 
 .method static synthetic access$1000(Lcom/android/mms/util/DirectCallingManager;)Lcom/android/mms/util/DirectCallingManager$UnlockReceiver;
     .locals 1
-    .param p0    # Lcom/android/mms/util/DirectCallingManager;
 
     iget-object v0, p0, Lcom/android/mms/util/DirectCallingManager;->mUnlockReceiver:Lcom/android/mms/util/DirectCallingManager$UnlockReceiver;
 
@@ -258,8 +251,6 @@
 
 .method static synthetic access$1002(Lcom/android/mms/util/DirectCallingManager;Lcom/android/mms/util/DirectCallingManager$UnlockReceiver;)Lcom/android/mms/util/DirectCallingManager$UnlockReceiver;
     .locals 0
-    .param p0    # Lcom/android/mms/util/DirectCallingManager;
-    .param p1    # Lcom/android/mms/util/DirectCallingManager$UnlockReceiver;
 
     iput-object p1, p0, Lcom/android/mms/util/DirectCallingManager;->mUnlockReceiver:Lcom/android/mms/util/DirectCallingManager$UnlockReceiver;
 
@@ -268,8 +259,6 @@
 
 .method static synthetic access$1400(Lcom/android/mms/util/DirectCallingManager;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/mms/util/DirectCallingManager;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/mms/util/DirectCallingManager;->readyForCall(Ljava/lang/String;)V
 
@@ -278,7 +267,6 @@
 
 .method static synthetic access$1500(Lcom/android/mms/util/DirectCallingManager;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/util/DirectCallingManager;
 
     invoke-direct {p0}, Lcom/android/mms/util/DirectCallingManager;->isCall()Z
 
@@ -289,7 +277,6 @@
 
 .method static synthetic access$1600(Lcom/android/mms/util/DirectCallingManager;)Landroid/hardware/motion/MRListener;
     .locals 1
-    .param p0    # Lcom/android/mms/util/DirectCallingManager;
 
     iget-object v0, p0, Lcom/android/mms/util/DirectCallingManager;->mMotionListener:Landroid/hardware/motion/MRListener;
 
@@ -298,7 +285,6 @@
 
 .method static synthetic access$1700(Lcom/android/mms/util/DirectCallingManager;)Landroid/hardware/motion/MotionRecognitionManager;
     .locals 1
-    .param p0    # Lcom/android/mms/util/DirectCallingManager;
 
     iget-object v0, p0, Lcom/android/mms/util/DirectCallingManager;->mMotionRecognitionManager:Landroid/hardware/motion/MotionRecognitionManager;
 
@@ -307,7 +293,6 @@
 
 .method static synthetic access$1800(Lcom/android/mms/util/DirectCallingManager;)J
     .locals 2
-    .param p0    # Lcom/android/mms/util/DirectCallingManager;
 
     iget-wide v0, p0, Lcom/android/mms/util/DirectCallingManager;->mLastTime:J
 
@@ -316,8 +301,6 @@
 
 .method static synthetic access$1802(Lcom/android/mms/util/DirectCallingManager;J)J
     .locals 0
-    .param p0    # Lcom/android/mms/util/DirectCallingManager;
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/android/mms/util/DirectCallingManager;->mLastTime:J
 
@@ -326,7 +309,6 @@
 
 .method static synthetic access$1900(Lcom/android/mms/util/DirectCallingManager;)F
     .locals 1
-    .param p0    # Lcom/android/mms/util/DirectCallingManager;
 
     iget v0, p0, Lcom/android/mms/util/DirectCallingManager;->x:F
 
@@ -335,8 +317,6 @@
 
 .method static synthetic access$1902(Lcom/android/mms/util/DirectCallingManager;F)F
     .locals 0
-    .param p0    # Lcom/android/mms/util/DirectCallingManager;
-    .param p1    # F
 
     iput p1, p0, Lcom/android/mms/util/DirectCallingManager;->x:F
 
@@ -353,7 +333,6 @@
 
 .method static synthetic access$2000(Lcom/android/mms/util/DirectCallingManager;)F
     .locals 1
-    .param p0    # Lcom/android/mms/util/DirectCallingManager;
 
     iget v0, p0, Lcom/android/mms/util/DirectCallingManager;->y:F
 
@@ -362,8 +341,6 @@
 
 .method static synthetic access$2002(Lcom/android/mms/util/DirectCallingManager;F)F
     .locals 0
-    .param p0    # Lcom/android/mms/util/DirectCallingManager;
-    .param p1    # F
 
     iput p1, p0, Lcom/android/mms/util/DirectCallingManager;->y:F
 
@@ -372,7 +349,6 @@
 
 .method static synthetic access$202(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/mms/util/DirectCallingManager;->mIsStartedProximitySensor:Z
 
@@ -381,7 +357,6 @@
 
 .method static synthetic access$2100(Lcom/android/mms/util/DirectCallingManager;)F
     .locals 1
-    .param p0    # Lcom/android/mms/util/DirectCallingManager;
 
     iget v0, p0, Lcom/android/mms/util/DirectCallingManager;->z:F
 
@@ -390,8 +365,6 @@
 
 .method static synthetic access$2102(Lcom/android/mms/util/DirectCallingManager;F)F
     .locals 0
-    .param p0    # Lcom/android/mms/util/DirectCallingManager;
-    .param p1    # F
 
     iput p1, p0, Lcom/android/mms/util/DirectCallingManager;->z:F
 
@@ -400,7 +373,6 @@
 
 .method static synthetic access$2200(Lcom/android/mms/util/DirectCallingManager;)F
     .locals 1
-    .param p0    # Lcom/android/mms/util/DirectCallingManager;
 
     iget v0, p0, Lcom/android/mms/util/DirectCallingManager;->lastX:F
 
@@ -409,8 +381,6 @@
 
 .method static synthetic access$2202(Lcom/android/mms/util/DirectCallingManager;F)F
     .locals 0
-    .param p0    # Lcom/android/mms/util/DirectCallingManager;
-    .param p1    # F
 
     iput p1, p0, Lcom/android/mms/util/DirectCallingManager;->lastX:F
 
@@ -419,7 +389,6 @@
 
 .method static synthetic access$2300(Lcom/android/mms/util/DirectCallingManager;)F
     .locals 1
-    .param p0    # Lcom/android/mms/util/DirectCallingManager;
 
     iget v0, p0, Lcom/android/mms/util/DirectCallingManager;->lastY:F
 
@@ -428,8 +397,6 @@
 
 .method static synthetic access$2302(Lcom/android/mms/util/DirectCallingManager;F)F
     .locals 0
-    .param p0    # Lcom/android/mms/util/DirectCallingManager;
-    .param p1    # F
 
     iput p1, p0, Lcom/android/mms/util/DirectCallingManager;->lastY:F
 
@@ -438,7 +405,6 @@
 
 .method static synthetic access$2400(Lcom/android/mms/util/DirectCallingManager;)F
     .locals 1
-    .param p0    # Lcom/android/mms/util/DirectCallingManager;
 
     iget v0, p0, Lcom/android/mms/util/DirectCallingManager;->lastZ:F
 
@@ -447,8 +413,6 @@
 
 .method static synthetic access$2402(Lcom/android/mms/util/DirectCallingManager;F)F
     .locals 0
-    .param p0    # Lcom/android/mms/util/DirectCallingManager;
-    .param p1    # F
 
     iput p1, p0, Lcom/android/mms/util/DirectCallingManager;->lastZ:F
 
@@ -457,7 +421,6 @@
 
 .method static synthetic access$2500(Lcom/android/mms/util/DirectCallingManager;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/util/DirectCallingManager;
 
     iget-boolean v0, p0, Lcom/android/mms/util/DirectCallingManager;->mIsSpeechRecorgnizing:Z
 
@@ -466,7 +429,6 @@
 
 .method static synthetic access$2600(Lcom/android/mms/util/DirectCallingManager;)V
     .locals 0
-    .param p0    # Lcom/android/mms/util/DirectCallingManager;
 
     invoke-direct {p0}, Lcom/android/mms/util/DirectCallingManager;->registerAccelerometer()V
 
@@ -475,7 +437,6 @@
 
 .method static synthetic access$2700(Lcom/android/mms/util/DirectCallingManager;)V
     .locals 0
-    .param p0    # Lcom/android/mms/util/DirectCallingManager;
 
     invoke-direct {p0}, Lcom/android/mms/util/DirectCallingManager;->unregisterAccelerometer()V
 
@@ -484,7 +445,6 @@
 
 .method static synthetic access$2800(Lcom/android/mms/util/DirectCallingManager;)Landroid/speech/tts/TextToSpeech;
     .locals 1
-    .param p0    # Lcom/android/mms/util/DirectCallingManager;
 
     iget-object v0, p0, Lcom/android/mms/util/DirectCallingManager;->mTextToSpeech:Landroid/speech/tts/TextToSpeech;
 
@@ -493,8 +453,6 @@
 
 .method static synthetic access$2902(Lcom/android/mms/util/DirectCallingManager;Z)Z
     .locals 0
-    .param p0    # Lcom/android/mms/util/DirectCallingManager;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/util/DirectCallingManager;->IsTTSInitiated:Z
 
@@ -503,8 +461,6 @@
 
 .method static synthetic access$300(Lcom/android/mms/util/DirectCallingManager;I)V
     .locals 0
-    .param p0    # Lcom/android/mms/util/DirectCallingManager;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/mms/util/DirectCallingManager;->updateProximitySensorMode(I)V
 
@@ -521,7 +477,6 @@
 
 .method static synthetic access$3002(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/mms/util/DirectCallingManager;->bErrorSpeech:Z
 
@@ -530,7 +485,6 @@
 
 .method static synthetic access$400(Lcom/android/mms/util/DirectCallingManager;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/mms/util/DirectCallingManager;
 
     iget-object v0, p0, Lcom/android/mms/util/DirectCallingManager;->mHandler:Landroid/os/Handler;
 
@@ -539,7 +493,6 @@
 
 .method static synthetic access$500(Lcom/android/mms/util/DirectCallingManager;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/mms/util/DirectCallingManager;
 
     iget-object v0, p0, Lcom/android/mms/util/DirectCallingManager;->mContext:Landroid/content/Context;
 
@@ -548,7 +501,6 @@
 
 .method static synthetic access$600(Lcom/android/mms/util/DirectCallingManager;)V
     .locals 0
-    .param p0    # Lcom/android/mms/util/DirectCallingManager;
 
     invoke-direct {p0}, Lcom/android/mms/util/DirectCallingManager;->registerMotionRecognition()V
 
@@ -557,8 +509,6 @@
 
 .method static synthetic access$700(Lcom/android/mms/util/DirectCallingManager;Landroid/content/Context;)V
     .locals 0
-    .param p0    # Lcom/android/mms/util/DirectCallingManager;
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Lcom/android/mms/util/DirectCallingManager;->setTextToSpeech(Landroid/content/Context;)V
 
@@ -567,7 +517,6 @@
 
 .method static synthetic access$800(Lcom/android/mms/util/DirectCallingManager;)Lcom/android/mms/util/DirectCallingManager$AirMotionReceiver;
     .locals 1
-    .param p0    # Lcom/android/mms/util/DirectCallingManager;
 
     iget-object v0, p0, Lcom/android/mms/util/DirectCallingManager;->mAirMotionReceiver:Lcom/android/mms/util/DirectCallingManager$AirMotionReceiver;
 
@@ -576,8 +525,6 @@
 
 .method static synthetic access$802(Lcom/android/mms/util/DirectCallingManager;Lcom/android/mms/util/DirectCallingManager$AirMotionReceiver;)Lcom/android/mms/util/DirectCallingManager$AirMotionReceiver;
     .locals 0
-    .param p0    # Lcom/android/mms/util/DirectCallingManager;
-    .param p1    # Lcom/android/mms/util/DirectCallingManager$AirMotionReceiver;
 
     iput-object p1, p0, Lcom/android/mms/util/DirectCallingManager;->mAirMotionReceiver:Lcom/android/mms/util/DirectCallingManager$AirMotionReceiver;
 
@@ -586,7 +533,6 @@
 
 .method static synthetic access$900(Lcom/android/mms/util/DirectCallingManager;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/util/DirectCallingManager;
 
     iget-boolean v0, p0, Lcom/android/mms/util/DirectCallingManager;->mPaused:Z
 
@@ -595,7 +541,6 @@
 
 .method private getWakeLockProximity(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     const-string v1, "power"
 
@@ -662,7 +607,6 @@
 
 .method public static isSensorReadyForDirectCall(Landroid/content/Context;)Z
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     invoke-static {}, Lcom/android/mms/MmsConfig;->getSupportMotionPickUpToCallOut()Z
 
@@ -721,7 +665,6 @@
 
 .method private readyForCall(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/mms/util/DirectCallingManager;->tryToCall(Ljava/lang/String;)V
 
@@ -910,7 +853,6 @@
 
 .method private setContext(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     iget-object v0, p0, Lcom/android/mms/util/DirectCallingManager;->mContext:Landroid/content/Context;
 
@@ -929,7 +871,6 @@
 
 .method private setIsSpeechRecorgnizing(Z)V
     .locals 3
-    .param p1    # Z
 
     const-string v0, "Mms/DirectCallingManager"
 
@@ -960,7 +901,6 @@
 
 .method private setMotionSensor(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-static {}, Lcom/android/mms/MmsConfig;->getSupportMotionPickUpToCallOut()Z
 
@@ -995,14 +935,12 @@
 
 .method private setTextToSpeech(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     return-void
 .end method
 
 .method private setVoiceRecognizer(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     iget-object v0, p0, Lcom/android/mms/util/DirectCallingManager;->mRecognitionListener:Landroid/speech/RecognitionListener;
 
@@ -1070,7 +1008,6 @@
 
 .method private speakText(Ljava/lang/String;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const/4 v6, 0x1
 
@@ -1324,7 +1261,6 @@
 
 .method private tryToCall(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -1486,7 +1422,6 @@
 
 .method private updateProximitySensorMode(I)V
     .locals 4
-    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -1633,7 +1568,6 @@
 # virtual methods
 .method protected AnalizeRecorgnitionPartialResult(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     const-string v1, "results_recognition"
 
@@ -1698,7 +1632,6 @@
 
 .method protected AnalizeRecorgnitionResult(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     const-string v1, "results_recognition"
 
@@ -1763,7 +1696,6 @@
 
 .method public getPickupToCallOut(Landroid/content/Context;)Z
     .locals 6
-    .param p1    # Landroid/content/Context;
 
     const/4 v3, 0x0
 
@@ -1846,7 +1778,6 @@
 
 .method protected onResultErrorCode(I)V
     .locals 6
-    .param p1    # I
 
     const/4 v5, 0x0
 
@@ -2023,7 +1954,6 @@
 
 .method public pause(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     invoke-virtual {p0, p1}, Lcom/android/mms/util/DirectCallingManager;->getPickupToCallOut(Landroid/content/Context;)Z
 
@@ -2069,7 +1999,6 @@
 
 .method public resume(Landroid/content/Context;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
 
     const/4 v5, 0x0
 
@@ -2203,7 +2132,6 @@
 
 .method public setActiveMode(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/mms/util/DirectCallingManager;->mActiveMode:I
 
@@ -2212,7 +2140,6 @@
 
 .method public setFinishTutorialListener(Lcom/android/mms/util/DirectCallingManager$DirectCallingEvent;)V
     .locals 0
-    .param p1    # Lcom/android/mms/util/DirectCallingManager$DirectCallingEvent;
 
     iput-object p1, p0, Lcom/android/mms/util/DirectCallingManager;->mFinishTutorial:Lcom/android/mms/util/DirectCallingManager$DirectCallingEvent;
 
@@ -2221,8 +2148,6 @@
 
 .method public setPickupToCallOut(Landroid/content/Context;I)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     if-nez p1, :cond_0
 

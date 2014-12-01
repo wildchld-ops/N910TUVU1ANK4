@@ -78,7 +78,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/display/DisplayManagerService;)V
     .locals 2
-    .param p1    # Lcom/android/server/display/DisplayManagerService;
 
     const/16 v1, 0x8
 
@@ -383,7 +382,6 @@
 
 .method private static checkGlErrors(Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -396,8 +394,6 @@
 
 .method private static checkGlErrors(Ljava/lang/String;Z)Z
     .locals 5
-    .param p0    # Ljava/lang/String;
-    .param p1    # Z
 
     const/4 v1, 0x0
 
@@ -642,7 +638,6 @@
 
 .method private static createNativeFloatBuffer(I)Ljava/nio/FloatBuffer;
     .locals 2
-    .param p0    # I
 
     mul-int/lit8 v1, p0, 0x4
 
@@ -946,7 +941,6 @@
 
 .method private drawHStretch(F)V
     .locals 8
-    .param p1    # F
 
     const v7, 0x8074
 
@@ -1016,7 +1010,6 @@
 
 .method private drawVStretch(F)V
     .locals 11
-    .param p1    # F
 
     const/4 v10, 0x6
 
@@ -1212,7 +1205,6 @@
 
 .method private static logEglError(Ljava/lang/String;)V
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "ElectronBeam"
 
@@ -1253,8 +1245,6 @@
 
 .method private static scurve(FF)F
     .locals 5
-    .param p0    # F
-    .param p1    # F
 
     const/high16 v4, 0x3f000000
 
@@ -1283,10 +1273,6 @@
 
 .method private static setHStretchQuad(Ljava/nio/FloatBuffer;FFF)V
     .locals 8
-    .param p0    # Ljava/nio/FloatBuffer;
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
 
     const/high16 v7, 0x3f000000
 
@@ -1317,11 +1303,6 @@
 
 .method private static setQuad(Ljava/nio/FloatBuffer;FFFF)V
     .locals 2
-    .param p0    # Ljava/nio/FloatBuffer;
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
 
     const/4 v0, 0x0
 
@@ -1368,10 +1349,6 @@
 
 .method private static setVStretchQuad(Ljava/nio/FloatBuffer;FFF)V
     .locals 6
-    .param p0    # Ljava/nio/FloatBuffer;
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
 
     const/high16 v5, 0x3f000000
 
@@ -1398,7 +1375,6 @@
 
 .method private showSurface(F)Z
     .locals 3
-    .param p1    # F
 
     const/4 v2, 0x1
 
@@ -1451,8 +1427,6 @@
 
 .method private static sigmoid(FF)F
     .locals 2
-    .param p0    # F
-    .param p1    # F
 
     const/high16 v1, 0x3f800000
 
@@ -1544,7 +1518,6 @@
 
 .method public draw(F)Z
     .locals 7
-    .param p1    # F
 
     const/4 v0, 0x0
 
@@ -1664,7 +1637,6 @@
 
 .method public dump(Ljava/io/PrintWriter;)V
     .locals 2
-    .param p1    # Ljava/io/PrintWriter;
 
     invoke-virtual {p1}, Ljava/io/PrintWriter;->println()V
 
@@ -1831,7 +1803,6 @@
 
 .method public prepare(I)Z
     .locals 5
-    .param p1    # I
 
     const/4 v2, 0x0
 

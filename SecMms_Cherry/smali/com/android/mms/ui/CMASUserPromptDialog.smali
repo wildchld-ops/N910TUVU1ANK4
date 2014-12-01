@@ -24,7 +24,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/ui/CMASUserPromptDialog;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/CMASUserPromptDialog;
 
     invoke-direct {p0}, Lcom/android/mms/ui/CMASUserPromptDialog;->launchCmasSetting()V
 
@@ -33,8 +32,6 @@
 
 .method static synthetic access$102(Lcom/android/mms/ui/CMASUserPromptDialog;Landroid/app/AlertDialog;)Landroid/app/AlertDialog;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/CMASUserPromptDialog;
-    .param p1    # Landroid/app/AlertDialog;
 
     iput-object p1, p0, Lcom/android/mms/ui/CMASUserPromptDialog;->sDialog:Landroid/app/AlertDialog;
 
@@ -43,7 +40,6 @@
 
 .method private isLockscreenExist(Landroid/content/Context;)Z
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const-string v1, "keyguard"
 
@@ -158,7 +154,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     const-string v2, "CMASUserPromptDialog/Dialog"
 

@@ -128,14 +128,6 @@
 
 .method public constructor <init>(IIILandroid/hardware/display/WifiDisplay;[Landroid/hardware/display/WifiDisplay;Landroid/hardware/display/WifiDisplaySessionInfo;II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/hardware/display/WifiDisplay;
-    .param p5    # [Landroid/hardware/display/WifiDisplay;
-    .param p6    # Landroid/hardware/display/WifiDisplaySessionInfo;
-    .param p7    # I
-    .param p8    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -377,8 +369,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 5
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget v4, p0, Landroid/hardware/display/WifiDisplayStatus;->mFeatureState:I
 

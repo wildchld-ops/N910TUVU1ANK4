@@ -16,8 +16,6 @@
 # direct methods
 .method constructor <init>(ILandroid/renderscript/RenderScript;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Landroid/renderscript/RenderScript;
 
     invoke-direct {p0, p1, p2}, Landroid/renderscript/ProgramVertex;-><init>(ILandroid/renderscript/RenderScript;)V
 
@@ -28,7 +26,6 @@
 # virtual methods
 .method public bindConstants(Landroid/renderscript/ProgramVertexFixedFunction$Constants;)V
     .locals 2
-    .param p1    # Landroid/renderscript/ProgramVertexFixedFunction$Constants;
 
     iget-object v0, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
 

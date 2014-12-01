@@ -84,7 +84,6 @@
 
 .method private constructor <init>(Landroid/os/Parcel;)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
 
     const/4 v1, 0x0
 
@@ -113,8 +112,6 @@
 
 .method synthetic constructor <init>(Landroid/os/Parcel;Lcom/sec/android/allshare/dmrservice/ItemMetaData$1;)V
     .locals 0
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # Lcom/sec/android/allshare/dmrservice/ItemMetaData$1;
 
     invoke-direct {p0, p1}, Lcom/sec/android/allshare/dmrservice/ItemMetaData;-><init>(Landroid/os/Parcel;)V
 
@@ -123,7 +120,6 @@
 
 .method private readFromParcel(Landroid/os/Parcel;)V
     .locals 3
-    .param p1    # Landroid/os/Parcel;
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
@@ -199,8 +195,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/sec/android/allshare/dmrservice/ItemMetaData;->title:Ljava/lang/String;
 

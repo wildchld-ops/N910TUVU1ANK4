@@ -50,8 +50,6 @@
 
 .method synthetic constructor <init>(Lcom/android/settings/flipfont/FontListPreference;Lcom/android/settings/flipfont/FontListPreference$1;)V
     .locals 0
-    .param p1    # Lcom/android/settings/flipfont/FontListPreference;
-    .param p2    # Lcom/android/settings/flipfont/FontListPreference$1;
 
     invoke-direct {p0, p1}, Lcom/android/settings/flipfont/FontListPreference$LoadListTask;-><init>(Lcom/android/settings/flipfont/FontListPreference;)V
 
@@ -62,7 +60,6 @@
 # virtual methods
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [Ljava/lang/Void;
 
@@ -75,7 +72,6 @@
 
 .method protected varargs doInBackground([Ljava/lang/Void;)Ljava/lang/Void;
     .locals 3
-    .param p1    # [Ljava/lang/Void;
 
     iget-object v0, p0, Lcom/android/settings/flipfont/FontListPreference$LoadListTask;->this$0:Lcom/android/settings/flipfont/FontListPreference;
 
@@ -109,7 +105,6 @@
 
 .method protected bridge synthetic onPostExecute(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Ljava/lang/Void;
 
@@ -120,7 +115,6 @@
 
 .method protected onPostExecute(Ljava/lang/Void;)V
     .locals 3
-    .param p1    # Ljava/lang/Void;
 
     :try_start_0
     iget-object v1, p0, Lcom/android/settings/flipfont/FontListPreference$LoadListTask;->mProgressDialog:Landroid/app/ProgressDialog;

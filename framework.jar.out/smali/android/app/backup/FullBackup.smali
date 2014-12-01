@@ -49,12 +49,6 @@
 
 .method public static restoreFile(Landroid/os/ParcelFileDescriptor;JIJJLjava/io/File;)V
     .locals 17
-    .param p0    # Landroid/os/ParcelFileDescriptor;
-    .param p1    # J
-    .param p3    # I
-    .param p4    # J
-    .param p6    # J
-    .param p8    # Ljava/io/File;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

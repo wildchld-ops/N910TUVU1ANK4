@@ -21,8 +21,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/mms/ui/BoxListFrame;Landroid/net/Uri;Z)V
     .locals 0
-    .param p2    # Landroid/net/Uri;
-    .param p3    # Z
 
     iput-object p1, p0, Lcom/android/mms/ui/BoxListFrame$CancelMessageListener;->this$0:Lcom/android/mms/ui/BoxListFrame;
 
@@ -35,8 +33,6 @@
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 6
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     const/4 v2, 0x0
 

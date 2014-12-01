@@ -26,9 +26,6 @@
 
 .method public static createDialog(Landroid/content/Context;Landroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/Dialog;
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/content/DialogInterface$OnClickListener;
-    .param p2    # Landroid/content/DialogInterface$OnClickListener;
 
     const/4 v1, 0x0
 

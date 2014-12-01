@@ -14,7 +14,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/app/BarBeamException;
@@ -54,8 +53,6 @@
 
 .method public constructor <init>(Landroid/content/Context;[Landroid/app/Hop;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # [Landroid/app/Hop;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/app/BarBeamException;
@@ -122,7 +119,6 @@
 # virtual methods
 .method public StartBarBeamFactory([B)Z
     .locals 5
-    .param p1    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/app/BarBeamException;
@@ -281,7 +277,6 @@
 
 .method protected getBarBeamCommand(Landroid/content/Context;)Landroid/app/BarBeamCommand;
     .locals 4
-    .param p1    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/app/BarBeamException;
@@ -339,7 +334,6 @@
 
 .method public setHopSequence([Landroid/app/Hop;)V
     .locals 3
-    .param p1    # [Landroid/app/Hop;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/app/BarBeamException;

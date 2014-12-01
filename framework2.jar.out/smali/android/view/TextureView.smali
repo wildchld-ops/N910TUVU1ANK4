@@ -52,7 +52,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -85,8 +84,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v1, 0x0
 
@@ -119,9 +116,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v1, 0x0
 
@@ -154,8 +148,6 @@
 
 .method static synthetic access$002(Landroid/view/TextureView;Z)Z
     .locals 0
-    .param p0    # Landroid/view/TextureView;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/view/TextureView;->mPreventSurfaceLoss:Z
 
@@ -164,7 +156,6 @@
 
 .method static synthetic access$100(Landroid/view/TextureView;)V
     .locals 0
-    .param p0    # Landroid/view/TextureView;
 
     invoke-direct {p0}, Landroid/view/TextureView;->destroySurface()V
 
@@ -173,7 +164,6 @@
 
 .method static synthetic access$200(Landroid/view/TextureView;)V
     .locals 0
-    .param p0    # Landroid/view/TextureView;
 
     invoke-direct {p0}, Landroid/view/TextureView;->updateLayer()V
 
@@ -467,7 +457,6 @@
 
 .method destroyLayer(Z)Z
     .locals 1
-    .param p1    # Z
 
     const/4 v0, 0x0
 
@@ -476,7 +465,6 @@
 
 .method public final draw(Landroid/graphics/Canvas;)V
     .locals 2
-    .param p1    # Landroid/graphics/Canvas;
 
     iget v0, p0, Landroid/view/View;->mPrivateFlags:I
 
@@ -515,8 +503,6 @@
 
 .method public getBitmap(II)Landroid/graphics/Bitmap;
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0}, Landroid/view/TextureView;->isAvailable()Z
 
@@ -557,7 +543,6 @@
 
 .method public getBitmap(Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
     .locals 3
-    .param p1    # Landroid/graphics/Bitmap;
 
     if-eqz p1, :cond_2
 
@@ -826,7 +811,6 @@
 
 .method public getTransform(Landroid/graphics/Matrix;)Landroid/graphics/Matrix;
     .locals 1
-    .param p1    # Landroid/graphics/Matrix;
 
     if-nez p1, :cond_0
 
@@ -890,7 +874,6 @@
 
 .method public lockCanvas(Landroid/graphics/Rect;)Landroid/graphics/Canvas;
     .locals 4
-    .param p1    # Landroid/graphics/Rect;
 
     const/4 v0, 0x0
 
@@ -1043,17 +1026,12 @@
 
 .method protected final onDraw(Landroid/graphics/Canvas;)V
     .locals 0
-    .param p1    # Landroid/graphics/Canvas;
 
     return-void
 .end method
 
 .method protected onSizeChanged(IIII)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-super {p0, p1, p2, p3, p4}, Landroid/view/View;->onSizeChanged(IIII)V
 
@@ -1099,8 +1077,6 @@
 
 .method protected onVisibilityChanged(Landroid/view/View;I)V
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     invoke-super {p0, p1, p2}, Landroid/view/View;->onVisibilityChanged(Landroid/view/View;I)V
 
@@ -1134,8 +1110,6 @@
 
 .method public setLayerType(ILandroid/graphics/Paint;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/graphics/Paint;
 
     iget-object v0, p0, Landroid/view/View;->mLayerPaint:Landroid/graphics/Paint;
 
@@ -1158,7 +1132,6 @@
 
 .method public setOpaque(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-boolean v0, p0, Landroid/view/TextureView;->mOpaque:Z
 
@@ -1178,7 +1151,6 @@
 
 .method public setSurfaceTexture(Landroid/graphics/SurfaceTexture;)V
     .locals 2
-    .param p1    # Landroid/graphics/SurfaceTexture;
 
     if-nez p1, :cond_0
 
@@ -1226,7 +1198,6 @@
 
 .method public setSurfaceTextureListener(Landroid/view/TextureView$SurfaceTextureListener;)V
     .locals 0
-    .param p1    # Landroid/view/TextureView$SurfaceTextureListener;
 
     iput-object p1, p0, Landroid/view/TextureView;->mListener:Landroid/view/TextureView$SurfaceTextureListener;
 
@@ -1235,7 +1206,6 @@
 
 .method public setTransform(Landroid/graphics/Matrix;)V
     .locals 1
-    .param p1    # Landroid/graphics/Matrix;
 
     iget-object v0, p0, Landroid/view/TextureView;->mMatrix:Landroid/graphics/Matrix;
 
@@ -1252,7 +1222,6 @@
 
 .method public twSetPreventSurfaceLoss(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/view/TextureView;->mPreventSurfaceLoss:Z
 
@@ -1261,7 +1230,6 @@
 
 .method public unlockCanvasAndPost(Landroid/graphics/Canvas;)V
     .locals 3
-    .param p1    # Landroid/graphics/Canvas;
 
     iget-object v0, p0, Landroid/view/TextureView;->mCanvas:Landroid/graphics/Canvas;
 

@@ -26,7 +26,6 @@
 
 .method public constructor <init>([F)V
     .locals 3
-    .param p1    # [F
 
     const/4 v2, 0x0
 
@@ -51,8 +50,6 @@
 
 .method private computeCofactor(II)F
     .locals 14
-    .param p1    # I
-    .param p2    # I
 
     add-int/lit8 v8, p1, 0x1
 
@@ -247,8 +244,6 @@
 # virtual methods
 .method public get(II)F
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Landroid/renderscript/Matrix4f;->mMat:[F
 
@@ -557,7 +552,6 @@
 
 .method public load(Landroid/renderscript/Matrix3f;)V
     .locals 7
-    .param p1    # Landroid/renderscript/Matrix3f;
 
     const/4 v6, 0x3
 
@@ -710,7 +704,6 @@
 
 .method public load(Landroid/renderscript/Matrix4f;)V
     .locals 4
-    .param p1    # Landroid/renderscript/Matrix4f;
 
     const/4 v3, 0x0
 
@@ -731,12 +724,6 @@
 
 .method public loadFrustum(FFFFFF)V
     .locals 5
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # F
 
     const/high16 v4, 0x40000000
 
@@ -947,8 +934,6 @@
 
 .method public loadMultiply(Landroid/renderscript/Matrix4f;Landroid/renderscript/Matrix4f;)V
     .locals 13
-    .param p1    # Landroid/renderscript/Matrix4f;
-    .param p2    # Landroid/renderscript/Matrix4f;
 
     const/4 v12, 0x4
 
@@ -1037,12 +1022,6 @@
 
 .method public loadOrtho(FFFFFF)V
     .locals 4
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # F
 
     const/high16 v3, 0x40000000
 
@@ -1127,8 +1106,6 @@
 
 .method public loadOrthoWindow(II)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
 
     const/4 v1, 0x0
 
@@ -1151,10 +1128,6 @@
 
 .method public loadPerspective(FFFF)V
     .locals 9
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
 
     float-to-double v5, p1
 
@@ -1197,8 +1170,6 @@
 
 .method public loadProjectionNormalized(II)V
     .locals 11
-    .param p1    # I
-    .param p2    # I
 
     new-instance v0, Landroid/renderscript/Matrix4f;
 
@@ -1293,10 +1264,6 @@
 
 .method public loadRotate(FFFF)V
     .locals 14
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
 
     iget-object v11, p0, Landroid/renderscript/Matrix4f;->mMat:[F
 
@@ -1526,9 +1493,6 @@
 
 .method public loadScale(FFF)V
     .locals 2
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
 
     invoke-virtual {p0}, Landroid/renderscript/Matrix4f;->loadIdentity()V
 
@@ -1555,9 +1519,6 @@
 
 .method public loadTranslate(FFF)V
     .locals 2
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
 
     invoke-virtual {p0}, Landroid/renderscript/Matrix4f;->loadIdentity()V
 
@@ -1584,7 +1545,6 @@
 
 .method public multiply(Landroid/renderscript/Matrix4f;)V
     .locals 1
-    .param p1    # Landroid/renderscript/Matrix4f;
 
     new-instance v0, Landroid/renderscript/Matrix4f;
 
@@ -1599,10 +1559,6 @@
 
 .method public rotate(FFFF)V
     .locals 1
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
 
     new-instance v0, Landroid/renderscript/Matrix4f;
 
@@ -1617,9 +1573,6 @@
 
 .method public scale(FFF)V
     .locals 1
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
 
     new-instance v0, Landroid/renderscript/Matrix4f;
 
@@ -1634,9 +1587,6 @@
 
 .method public set(IIF)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # F
 
     iget-object v0, p0, Landroid/renderscript/Matrix4f;->mMat:[F
 
@@ -1651,9 +1601,6 @@
 
 .method public translate(FFF)V
     .locals 1
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
 
     new-instance v0, Landroid/renderscript/Matrix4f;
 

@@ -631,7 +631,6 @@
 
 .method public static declared-synchronized setFlagIsHwrMode(Z)V
     .locals 2
-    .param p0    # Z
 
     const-class v1, Lcom/diotek/ime/framework/repository/InputModeStatus;
 
@@ -673,7 +672,6 @@
 
 .method public static declared-synchronized setForceSetHWRMode(Z)V
     .locals 2
-    .param p0    # Z
 
     const-class v1, Lcom/diotek/ime/framework/repository/InputModeStatus;
 
@@ -715,7 +713,6 @@
 
 .method public static declared-synchronized setHwrPreviousInputMethod(I)V
     .locals 2
-    .param p0    # I
 
     const-class v1, Lcom/diotek/ime/framework/repository/InputModeStatus;
 
@@ -757,7 +754,6 @@
 
 .method public static declared-synchronized setInputMethodStatus(I)V
     .locals 2
-    .param p0    # I
 
     const-class v1, Lcom/diotek/ime/framework/repository/InputModeStatus;
 
@@ -799,7 +795,6 @@
 
 .method public static declared-synchronized setInputRange(I)V
     .locals 2
-    .param p0    # I
 
     const-class v1, Lcom/diotek/ime/framework/repository/InputModeStatus;
 
@@ -841,7 +836,6 @@
 
 .method public static declared-synchronized setLastUsedMmKeyCode(I)V
     .locals 2
-    .param p0    # I
 
     const-class v1, Lcom/diotek/ime/framework/repository/InputModeStatus;
 
@@ -883,7 +877,6 @@
 
 .method public static declared-synchronized setMultiModalKeyInputMethod(I)V
     .locals 2
-    .param p0    # I
 
     const-class v1, Lcom/diotek/ime/framework/repository/InputModeStatus;
 
@@ -925,7 +918,6 @@
 
 .method public static declared-synchronized setNumberAndSymbolsKeypadType(I)V
     .locals 2
-    .param p0    # I
 
     const-class v1, Lcom/diotek/ime/framework/repository/InputModeStatus;
 
@@ -967,7 +959,6 @@
 
 .method public static declared-synchronized setPreferenceInputMethod(I)V
     .locals 2
-    .param p0    # I
 
     const-class v1, Lcom/diotek/ime/framework/repository/InputModeStatus;
 
@@ -1009,7 +1000,6 @@
 
 .method public static declared-synchronized setPreferenceInputMethodOnKor(I)V
     .locals 2
-    .param p0    # I
 
     const-class v1, Lcom/diotek/ime/framework/repository/InputModeStatus;
 

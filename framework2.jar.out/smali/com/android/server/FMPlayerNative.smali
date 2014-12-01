@@ -58,7 +58,6 @@
 
 .method public constructor <init>(Lcom/android/server/FMRadioService;)V
     .locals 0
-    .param p1    # Lcom/android/server/FMRadioService;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -69,7 +68,6 @@
 
 .method public static notifyAFDataReceived(J)V
     .locals 3
-    .param p0    # J
 
     sget-object v0, Lcom/android/server/FMPlayerNative;->mService:Lcom/android/server/FMRadioService;
 
@@ -153,7 +151,6 @@
 
 .method public static notifyPIECCEvent(Lcom/android/server/FMPlayerNative$PIECCData;)V
     .locals 2
-    .param p0    # Lcom/android/server/FMPlayerNative$PIECCData;
 
     sget-object v0, Lcom/android/server/FMPlayerNative;->mService:Lcom/android/server/FMRadioService;
 
@@ -203,7 +200,6 @@
 
 .method public static notifyRDSEvent(Lcom/android/server/FMPlayerNative$RDSData;)V
     .locals 2
-    .param p0    # Lcom/android/server/FMPlayerNative$RDSData;
 
     sget-object v0, Lcom/android/server/FMPlayerNative;->mService:Lcom/android/server/FMRadioService;
 
@@ -253,7 +249,6 @@
 
 .method public static notifyRTPlusEvent(Lcom/android/server/FMPlayerNative$RTPlusData;)V
     .locals 2
-    .param p0    # Lcom/android/server/FMPlayerNative$RTPlusData;
 
     sget-object v0, Lcom/android/server/FMPlayerNative;->mService:Lcom/android/server/FMRadioService;
 

@@ -21,8 +21,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;I)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     const/4 v0, -0x1
 
@@ -33,9 +31,6 @@
 
 .method public constructor <init>(Landroid/content/Context;II)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v5, 0x0
 
@@ -157,7 +152,6 @@
 
 .method public constructor <init>(Landroid/os/Parcel;)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
 
     const/4 v1, 0x0
 
@@ -230,11 +224,6 @@
 
 .method public constructor <init>(Ljava/lang/String;IILandroid/content/res/ColorStateList;Landroid/content/res/ColorStateList;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/content/res/ColorStateList;
-    .param p5    # Landroid/content/res/ColorStateList;
 
     invoke-direct {p0}, Landroid/text/style/MetricAffectingSpan;-><init>()V
 
@@ -311,7 +300,6 @@
 
 .method public updateDrawState(Landroid/text/TextPaint;)V
     .locals 3
-    .param p1    # Landroid/text/TextPaint;
 
     const/4 v2, 0x0
 
@@ -352,7 +340,6 @@
 
 .method public updateMeasureState(Landroid/text/TextPaint;)V
     .locals 4
-    .param p1    # Landroid/text/TextPaint;
 
     iget-object v3, p0, Landroid/text/style/TextAppearanceSpan;->mTypeface:Ljava/lang/String;
 
@@ -452,8 +439,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 3
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     const/4 v2, 0x1
 

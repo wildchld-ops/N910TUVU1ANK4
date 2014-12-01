@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -53,7 +52,6 @@
 
 .method public onFirstFix(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -179,8 +177,6 @@
 
 .method public onNmeaReceived(JLjava/lang/String;)V
     .locals 5
-    .param p1    # J
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -226,15 +222,6 @@
 
 .method public onSvStatusChanged(I[I[F[F[FIII[I)V
     .locals 5
-    .param p1    # I
-    .param p2    # [I
-    .param p3    # [F
-    .param p4    # [F
-    .param p5    # [F
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
-    .param p9    # [I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

@@ -188,9 +188,6 @@
 
 .method static synthetic access$200(Landroid/media/RemoteDisplayCallback;Ljava/lang/String;Ljava/lang/Object;)V
     .locals 0
-    .param p0    # Landroid/media/RemoteDisplayCallback;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Object;
 
     invoke-direct {p0, p1, p2}, Landroid/media/RemoteDisplayCallback;->sendCmd(Ljava/lang/String;Ljava/lang/Object;)V
 
@@ -207,7 +204,6 @@
 
 .method static synthetic access$302(I)I
     .locals 0
-    .param p0    # I
 
     sput p0, Landroid/media/RemoteDisplayCallback;->mWfdMode:I
 
@@ -216,7 +212,6 @@
 
 .method static synthetic access$400(Landroid/media/RemoteDisplayCallback;)I
     .locals 1
-    .param p0    # Landroid/media/RemoteDisplayCallback;
 
     iget v0, p0, Landroid/media/RemoteDisplayCallback;->mStreamVol:I
 
@@ -225,8 +220,6 @@
 
 .method static synthetic access$402(Landroid/media/RemoteDisplayCallback;I)I
     .locals 0
-    .param p0    # Landroid/media/RemoteDisplayCallback;
-    .param p1    # I
 
     iput p1, p0, Landroid/media/RemoteDisplayCallback;->mStreamVol:I
 
@@ -251,7 +244,6 @@
 
 .method private broadcastDongleUpdateUrl(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const-string v1, "RemoteDisplayCallback"
 
@@ -298,7 +290,6 @@
 
 .method private broadcastDongleVerToFota(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const-string v1, "RemoteDisplayCallback"
 
@@ -348,7 +339,6 @@
 
 .method private broadcastWfdConnectionType(I)V
     .locals 4
-    .param p1    # I
 
     const-string v1, "RemoteDisplayCallback"
 
@@ -395,7 +385,6 @@
 
 .method private lockCPUFreq(I)V
     .locals 9
-    .param p1    # I
 
     sget-object v5, Landroid/media/RemoteDisplayCallback;->mContext:Landroid/content/Context;
 
@@ -549,8 +538,6 @@
 
 .method private sendCmd(Ljava/lang/String;Ljava/lang/Object;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Object;
 
     new-instance v1, Lorg/json/JSONObject;
 
@@ -592,8 +579,6 @@
 
 .method public static setContext(Landroid/content/Context;Landroid/media/RemoteDisplayCallback$Listener;)V
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/media/RemoteDisplayCallback$Listener;
 
     const/4 v3, 0x0
 
@@ -753,8 +738,6 @@
 
 .method public onNoti(ILjava/lang/String;)V
     .locals 9
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v8, 0x1
 
@@ -1293,7 +1276,6 @@
 
 .method public setDeviceName(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "RemoteDisplayCallback"
 

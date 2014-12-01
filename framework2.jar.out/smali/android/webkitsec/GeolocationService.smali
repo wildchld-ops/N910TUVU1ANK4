@@ -27,8 +27,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;J)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # J
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -60,7 +58,6 @@
 
 .method private maybeReportError(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-boolean v0, p0, Landroid/webkitsec/GeolocationService;->mIsRunning:Z
 
@@ -185,7 +182,6 @@
 # virtual methods
 .method public onLocationChanged(Landroid/location/Location;)V
     .locals 2
-    .param p1    # Landroid/location/Location;
 
     iget-boolean v0, p0, Landroid/webkitsec/GeolocationService;->mIsRunning:Z
 
@@ -201,7 +197,6 @@
 
 .method public onProviderDisabled(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -239,7 +234,6 @@
 
 .method public onProviderEnabled(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x1
 
@@ -273,9 +267,6 @@
 
 .method public onStatusChanged(Ljava/lang/String;ILandroid/os/Bundle;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Landroid/os/Bundle;
 
     const/4 v1, 0x2
 
@@ -323,7 +314,6 @@
 
 .method public setEnableGps(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-boolean v0, p0, Landroid/webkitsec/GeolocationService;->mIsGpsEnabled:Z
 

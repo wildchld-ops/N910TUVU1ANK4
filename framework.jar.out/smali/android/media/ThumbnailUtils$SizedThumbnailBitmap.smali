@@ -35,7 +35,6 @@
 
 .method synthetic constructor <init>(Landroid/media/ThumbnailUtils$1;)V
     .locals 0
-    .param p1    # Landroid/media/ThumbnailUtils$1;
 
     invoke-direct {p0}, Landroid/media/ThumbnailUtils$SizedThumbnailBitmap;-><init>()V
 

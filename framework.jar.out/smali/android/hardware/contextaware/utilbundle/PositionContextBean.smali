@@ -44,7 +44,6 @@
 
 .method constructor <init>(F)V
     .locals 0
-    .param p1    # F
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -57,10 +56,6 @@
 
 .method static final calculationDistance(DDDD)D
     .locals 8
-    .param p0    # D
-    .param p2    # D
-    .param p4    # D
-    .param p6    # D
 
     const-wide/high16 v6, 0x4000000000000000L
 
@@ -210,7 +205,6 @@
 
 .method final setAccuracy(F)V
     .locals 0
-    .param p1    # F
 
     iput p1, p0, Landroid/hardware/contextaware/utilbundle/PositionContextBean;->accuracy:F
 
@@ -219,7 +213,6 @@
 
 .method final setAltitude(D)V
     .locals 0
-    .param p1    # D
 
     iput-wide p1, p0, Landroid/hardware/contextaware/utilbundle/PositionContextBean;->altitude:D
 
@@ -228,7 +221,6 @@
 
 .method final setDistance(D)V
     .locals 0
-    .param p1    # D
 
     iput-wide p1, p0, Landroid/hardware/contextaware/utilbundle/PositionContextBean;->distance:D
 
@@ -237,7 +229,6 @@
 
 .method final setLatitude(D)V
     .locals 0
-    .param p1    # D
 
     iput-wide p1, p0, Landroid/hardware/contextaware/utilbundle/PositionContextBean;->latitude:D
 
@@ -246,7 +237,6 @@
 
 .method final setLongitude(D)V
     .locals 0
-    .param p1    # D
 
     iput-wide p1, p0, Landroid/hardware/contextaware/utilbundle/PositionContextBean;->longitude:D
 
@@ -255,15 +245,6 @@
 
 .method final setPosition(I[IDDDDFFI)V
     .locals 0
-    .param p1    # I
-    .param p2    # [I
-    .param p3    # D
-    .param p5    # D
-    .param p7    # D
-    .param p9    # D
-    .param p11    # F
-    .param p12    # F
-    .param p13    # I
 
     iput p1, p0, Landroid/hardware/contextaware/utilbundle/PositionContextBean;->type:I
 
@@ -288,7 +269,6 @@
 
 .method final setSatelliteCount(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/hardware/contextaware/utilbundle/PositionContextBean;->satelliteCount:I
 
@@ -297,7 +277,6 @@
 
 .method final setSpeed(F)V
     .locals 0
-    .param p1    # F
 
     iput p1, p0, Landroid/hardware/contextaware/utilbundle/PositionContextBean;->speed:F
 
@@ -306,7 +285,6 @@
 
 .method final setType(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/hardware/contextaware/utilbundle/PositionContextBean;->type:I
 
@@ -315,7 +293,6 @@
 
 .method final setUtcTime([I)V
     .locals 0
-    .param p1    # [I
 
     iput-object p1, p0, Landroid/hardware/contextaware/utilbundle/PositionContextBean;->utcTime:[I
 

@@ -47,7 +47,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     const-wide/16 v2, 0x0
 
@@ -132,7 +131,6 @@
 
 .method static synthetic access$000(Lcom/android/systemui/statusbar/policy/SmartBondingController;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/policy/SmartBondingController;
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/SmartBondingController;->mContext:Landroid/content/Context;
 
@@ -141,7 +139,6 @@
 
 .method static synthetic access$100(Lcom/android/systemui/statusbar/policy/SmartBondingController;)Landroid/widget/CheckBox;
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/policy/SmartBondingController;
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/SmartBondingController;->mDisableAlertCheckBox:Landroid/widget/CheckBox;
 
@@ -150,7 +147,6 @@
 
 .method static synthetic access$200(Lcom/android/systemui/statusbar/policy/SmartBondingController;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/policy/SmartBondingController;
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/SmartBondingController;->mHandler:Landroid/os/Handler;
 
@@ -159,7 +155,6 @@
 
 .method static synthetic access$300(Lcom/android/systemui/statusbar/policy/SmartBondingController;)J
     .locals 2
-    .param p0    # Lcom/android/systemui/statusbar/policy/SmartBondingController;
 
     iget-wide v0, p0, Lcom/android/systemui/statusbar/policy/SmartBondingController;->mThreadID:J
 
@@ -168,9 +163,6 @@
 
 .method static synthetic access$400(Lcom/android/systemui/statusbar/policy/SmartBondingController;IJ)V
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/policy/SmartBondingController;
-    .param p1    # I
-    .param p2    # J
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/systemui/statusbar/policy/SmartBondingController;->setSBUsageStatus(IJ)V
 
@@ -179,7 +171,6 @@
 
 .method static synthetic access$500(Lcom/android/systemui/statusbar/policy/SmartBondingController;)Z
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/policy/SmartBondingController;
 
     iget-boolean v0, p0, Lcom/android/systemui/statusbar/policy/SmartBondingController;->mIsSelected:Z
 
@@ -188,8 +179,6 @@
 
 .method static synthetic access$502(Lcom/android/systemui/statusbar/policy/SmartBondingController;Z)Z
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/policy/SmartBondingController;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/systemui/statusbar/policy/SmartBondingController;->mIsSelected:Z
 
@@ -198,7 +187,6 @@
 
 .method static synthetic access$600(Lcom/android/systemui/statusbar/policy/SmartBondingController;)Landroid/app/Dialog;
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/policy/SmartBondingController;
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/SmartBondingController;->mDialog:Landroid/app/Dialog;
 
@@ -207,8 +195,6 @@
 
 .method static synthetic access$602(Lcom/android/systemui/statusbar/policy/SmartBondingController;Landroid/app/Dialog;)Landroid/app/Dialog;
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/policy/SmartBondingController;
-    .param p1    # Landroid/app/Dialog;
 
     iput-object p1, p0, Lcom/android/systemui/statusbar/policy/SmartBondingController;->mDialog:Landroid/app/Dialog;
 
@@ -217,7 +203,6 @@
 
 .method static synthetic access$700(Lcom/android/systemui/statusbar/policy/SmartBondingController;)V
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/policy/SmartBondingController;
 
     invoke-direct {p0}, Lcom/android/systemui/statusbar/policy/SmartBondingController;->removeSmartBondingUsageAlert()V
 
@@ -226,7 +211,6 @@
 
 .method static synthetic access$800(Lcom/android/systemui/statusbar/policy/SmartBondingController;)V
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/policy/SmartBondingController;
 
     invoke-direct {p0}, Lcom/android/systemui/statusbar/policy/SmartBondingController;->createSmartBondingUsageAlert()V
 
@@ -520,8 +504,6 @@
 
 .method private setSBUsageStatus(IJ)V
     .locals 4
-    .param p1    # I
-    .param p2    # J
 
     const-string v1, "StatusBar.SmartBondingController"
 
@@ -608,8 +590,6 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 9
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     const/4 v8, 0x3
 

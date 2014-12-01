@@ -140,7 +140,6 @@
 
 .method public constructor <init>(Lcom/samsung/android/airbutton/Attributes;)V
     .locals 5
-    .param p1    # Lcom/samsung/android/airbutton/Attributes;
 
     const/16 v4, 0x780
 
@@ -297,7 +296,6 @@
 
 .method public clone(Lcom/samsung/android/airbutton/Attributes;)Lcom/samsung/android/airbutton/Attributes;
     .locals 1
-    .param p1    # Lcom/samsung/android/airbutton/Attributes;
 
     new-instance v0, Lcom/samsung/android/airbutton/Attributes;
 
@@ -323,7 +321,6 @@
 
 .method public copyFrom(Lcom/samsung/android/airbutton/Attributes;)V
     .locals 1
-    .param p1    # Lcom/samsung/android/airbutton/Attributes;
 
     if-nez p1, :cond_0
 

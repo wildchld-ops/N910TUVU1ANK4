@@ -119,7 +119,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/wifi/mobileap/WifiApLanSettings;)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApLanSettings;
 
     invoke-direct {p0}, Lcom/android/settings/wifi/mobileap/WifiApLanSettings;->saveAndFinishServerSettings()V
 
@@ -128,7 +127,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/wifi/mobileap/WifiApLanSettings;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApLanSettings;
 
     iget-object v0, p0, Lcom/android/settings/wifi/mobileap/WifiApLanSettings;->mDhcpStartIp:Ljava/lang/String;
 
@@ -137,7 +135,6 @@
 
 .method static synthetic access$1000(Lcom/android/settings/wifi/mobileap/WifiApLanSettings;)Landroid/preference/EditTextPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApLanSettings;
 
     iget-object v0, p0, Lcom/android/settings/wifi/mobileap/WifiApLanSettings;->mDhcpEndIpETPref:Landroid/preference/EditTextPreference;
 
@@ -146,8 +143,6 @@
 
 .method static synthetic access$102(Lcom/android/settings/wifi/mobileap/WifiApLanSettings;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApLanSettings;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/settings/wifi/mobileap/WifiApLanSettings;->mDhcpStartIp:Ljava/lang/String;
 
@@ -156,7 +151,6 @@
 
 .method static synthetic access$1100(Lcom/android/settings/wifi/mobileap/WifiApLanSettings;)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApLanSettings;
 
     invoke-direct {p0}, Lcom/android/settings/wifi/mobileap/WifiApLanSettings;->readServerSettings()V
 
@@ -165,7 +159,6 @@
 
 .method static synthetic access$1200(Lcom/android/settings/wifi/mobileap/WifiApLanSettings;)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApLanSettings;
 
     invoke-direct {p0}, Lcom/android/settings/wifi/mobileap/WifiApLanSettings;->fillLayout()V
 
@@ -174,7 +167,6 @@
 
 .method static synthetic access$1300(Lcom/android/settings/wifi/mobileap/WifiApLanSettings;)Landroid/net/DhcpServerConfiguration;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApLanSettings;
 
     invoke-direct {p0}, Lcom/android/settings/wifi/mobileap/WifiApLanSettings;->getLocalServerConfig()Landroid/net/DhcpServerConfiguration;
 
@@ -185,7 +177,6 @@
 
 .method static synthetic access$1400(Lcom/android/settings/wifi/mobileap/WifiApLanSettings;)Landroid/net/ConnectivityManager;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApLanSettings;
 
     iget-object v0, p0, Lcom/android/settings/wifi/mobileap/WifiApLanSettings;->mConnectivityManager:Landroid/net/ConnectivityManager;
 
@@ -194,7 +185,6 @@
 
 .method static synthetic access$1500(Lcom/android/settings/wifi/mobileap/WifiApLanSettings;)Landroid/content/SharedPreferences;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApLanSettings;
 
     iget-object v0, p0, Lcom/android/settings/wifi/mobileap/WifiApLanSettings;->prefs:Landroid/content/SharedPreferences;
 
@@ -203,8 +193,6 @@
 
 .method static synthetic access$1502(Lcom/android/settings/wifi/mobileap/WifiApLanSettings;Landroid/content/SharedPreferences;)Landroid/content/SharedPreferences;
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApLanSettings;
-    .param p1    # Landroid/content/SharedPreferences;
 
     iput-object p1, p0, Lcom/android/settings/wifi/mobileap/WifiApLanSettings;->prefs:Landroid/content/SharedPreferences;
 
@@ -213,7 +201,6 @@
 
 .method static synthetic access$1600(Lcom/android/settings/wifi/mobileap/WifiApLanSettings;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApLanSettings;
 
     iget-object v0, p0, Lcom/android/settings/wifi/mobileap/WifiApLanSettings;->mContext:Landroid/content/Context;
 
@@ -222,7 +209,6 @@
 
 .method static synthetic access$1700(Lcom/android/settings/wifi/mobileap/WifiApLanSettings;)Landroid/net/wifi/WifiConfiguration;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApLanSettings;
 
     iget-object v0, p0, Lcom/android/settings/wifi/mobileap/WifiApLanSettings;->mWifiConfig:Landroid/net/wifi/WifiConfiguration;
 
@@ -231,8 +217,6 @@
 
 .method static synthetic access$1800(Lcom/android/settings/wifi/mobileap/WifiApLanSettings;Landroid/net/wifi/WifiConfiguration;)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApLanSettings;
-    .param p1    # Landroid/net/wifi/WifiConfiguration;
 
     invoke-direct {p0, p1}, Lcom/android/settings/wifi/mobileap/WifiApLanSettings;->resetWifiAp(Landroid/net/wifi/WifiConfiguration;)V
 
@@ -241,7 +225,6 @@
 
 .method static synthetic access$1900(Lcom/android/settings/wifi/mobileap/WifiApLanSettings;)Landroid/net/wifi/WifiManager;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApLanSettings;
 
     iget-object v0, p0, Lcom/android/settings/wifi/mobileap/WifiApLanSettings;->mWifiManager:Landroid/net/wifi/WifiManager;
 
@@ -250,7 +233,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/wifi/mobileap/WifiApLanSettings;)Landroid/net/DhcpServerConfiguration;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApLanSettings;
 
     iget-object v0, p0, Lcom/android/settings/wifi/mobileap/WifiApLanSettings;->mServerConfig:Landroid/net/DhcpServerConfiguration;
 
@@ -259,7 +241,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/wifi/mobileap/WifiApLanSettings;)Landroid/preference/EditTextPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApLanSettings;
 
     iget-object v0, p0, Lcom/android/settings/wifi/mobileap/WifiApLanSettings;->mDhcpStartIpETPref:Landroid/preference/EditTextPreference;
 
@@ -268,7 +249,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/wifi/mobileap/WifiApLanSettings;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApLanSettings;
 
     iget-object v0, p0, Lcom/android/settings/wifi/mobileap/WifiApLanSettings;->mLocalIp:Ljava/lang/String;
 
@@ -277,8 +257,6 @@
 
 .method static synthetic access$402(Lcom/android/settings/wifi/mobileap/WifiApLanSettings;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApLanSettings;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/settings/wifi/mobileap/WifiApLanSettings;->mLocalIp:Ljava/lang/String;
 
@@ -287,7 +265,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/wifi/mobileap/WifiApLanSettings;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApLanSettings;
 
     iget-object v0, p0, Lcom/android/settings/wifi/mobileap/WifiApLanSettings;->mSubnetmask:Ljava/lang/String;
 
@@ -296,10 +273,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/wifi/mobileap/WifiApLanSettings;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApLanSettings;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/settings/wifi/mobileap/WifiApLanSettings;->isSameNetwork(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
 
@@ -310,10 +283,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/wifi/mobileap/WifiApLanSettings;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApLanSettings;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/settings/wifi/mobileap/WifiApLanSettings;->convertToSameNetwork(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
@@ -324,7 +293,6 @@
 
 .method static synthetic access$800(Lcom/android/settings/wifi/mobileap/WifiApLanSettings;)Landroid/preference/EditTextPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApLanSettings;
 
     iget-object v0, p0, Lcom/android/settings/wifi/mobileap/WifiApLanSettings;->mLocalIpETPref:Landroid/preference/EditTextPreference;
 
@@ -333,7 +301,6 @@
 
 .method static synthetic access$900(Lcom/android/settings/wifi/mobileap/WifiApLanSettings;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApLanSettings;
 
     iget-object v0, p0, Lcom/android/settings/wifi/mobileap/WifiApLanSettings;->mDhcpEndIp:Ljava/lang/String;
 
@@ -342,8 +309,6 @@
 
 .method static synthetic access$902(Lcom/android/settings/wifi/mobileap/WifiApLanSettings;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/mobileap/WifiApLanSettings;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/settings/wifi/mobileap/WifiApLanSettings;->mDhcpEndIp:Ljava/lang/String;
 
@@ -352,9 +317,6 @@
 
 .method private convertToSameNetwork(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/settings/wifi/mobileap/WifiApLanSettings;->ipToInt(Ljava/lang/String;)I
 
@@ -529,8 +491,6 @@
 
 .method private getLastNetworkAddress(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/settings/wifi/mobileap/WifiApLanSettings;->ipToInt(Ljava/lang/String;)I
 
@@ -631,7 +591,6 @@
 
 .method private intToIp(I)Ljava/lang/String;
     .locals 2
-    .param p1    # I
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -694,7 +653,6 @@
 
 .method private ipToInt(Ljava/lang/String;)I
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const/4 v6, 0x4
 
@@ -778,7 +736,6 @@
 
 .method private isIpAddress(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p1}, Ljava/lang/String;->length()I
 
@@ -811,9 +768,6 @@
 
 .method private isSameNetwork(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/settings/wifi/mobileap/WifiApLanSettings;->ipToInt(Ljava/lang/String;)I
 
@@ -846,7 +800,6 @@
 
 .method private isValidSubnetMask(Ljava/lang/String;)Z
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x1
 
@@ -1045,7 +998,6 @@
 
 .method private resetWifiAp(Landroid/net/wifi/WifiConfiguration;)V
     .locals 2
-    .param p1    # Landroid/net/wifi/WifiConfiguration;
 
     new-instance v0, Landroid/os/Message;
 
@@ -1495,7 +1447,6 @@
 # virtual methods
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     const-string v0, "wifi"
 
@@ -1566,7 +1517,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 4
-    .param p1    # Landroid/content/res/Configuration;
 
     const/4 v3, 0x0
 
@@ -1622,7 +1572,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -1635,7 +1584,6 @@
 
 .method public onCreateDialog(I)Landroid/app/Dialog;
     .locals 7
-    .param p1    # I
 
     const v6, 0x7f0904d7
 
@@ -1823,8 +1771,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
     .locals 5
-    .param p1    # Landroid/view/Menu;
-    .param p2    # Landroid/view/MenuInflater;
 
     const/4 v4, 0x5
 
@@ -1899,7 +1845,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 2
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v0, 0x1
 
@@ -1937,8 +1882,6 @@
 
 .method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
     .locals 8
-    .param p1    # Landroid/preference/Preference;
-    .param p2    # Ljava/lang/Object;
 
     const v5, 0x7f0904ce
 

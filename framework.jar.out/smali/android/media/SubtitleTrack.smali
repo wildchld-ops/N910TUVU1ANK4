@@ -79,7 +79,6 @@
 # direct methods
 .method public constructor <init>(Landroid/media/MediaFormat;)V
     .locals 3
-    .param p1    # Landroid/media/MediaFormat;
 
     const-wide/16 v1, -0x1
 
@@ -132,8 +131,6 @@
 
 .method static synthetic access$102(Landroid/media/SubtitleTrack;Ljava/lang/Runnable;)Ljava/lang/Runnable;
     .locals 0
-    .param p0    # Landroid/media/SubtitleTrack;
-    .param p1    # Ljava/lang/Runnable;
 
     iput-object p1, p0, Landroid/media/SubtitleTrack;->mRunnable:Ljava/lang/Runnable;
 
@@ -142,7 +139,6 @@
 
 .method private removeRunsByEndTimeIndex(I)V
     .locals 8
-    .param p1    # I
 
     const/4 v7, 0x0
 
@@ -201,7 +197,6 @@
 
 .method private declared-synchronized takeTime(J)V
     .locals 1
-    .param p1    # J
 
     monitor-enter p0
 
@@ -226,7 +221,6 @@
 # virtual methods
 .method protected declared-synchronized addCue(Landroid/media/SubtitleTrack$Cue;)Z
     .locals 14
-    .param p1    # Landroid/media/SubtitleTrack$Cue;
 
     const-wide/16 v12, 0x0
 
@@ -639,7 +633,6 @@
 
 .method protected finishedRun(J)V
     .locals 3
-    .param p1    # J
 
     const-wide/16 v1, 0x0
 
@@ -720,7 +713,6 @@
 
 .method public onSeek(J)V
     .locals 5
-    .param p1    # J
 
     iget-boolean v2, p0, Landroid/media/SubtitleTrack;->DEBUG:Z
 
@@ -839,7 +831,6 @@
 
 .method public onTimedEvent(J)V
     .locals 5
-    .param p1    # J
 
     iget-boolean v2, p0, Landroid/media/SubtitleTrack;->DEBUG:Z
 
@@ -992,8 +983,6 @@
 
 .method public setRunDiscardTimeMs(JJ)V
     .locals 3
-    .param p1    # J
-    .param p3    # J
 
     const-wide/16 v1, 0x0
 
@@ -1029,7 +1018,6 @@
 
 .method public declared-synchronized setTimeProvider(Landroid/media/MediaTimeProvider;)V
     .locals 1
-    .param p1    # Landroid/media/MediaTimeProvider;
 
     monitor-enter p0
 
@@ -1114,8 +1102,6 @@
 
 .method protected declared-synchronized updateActiveCues(ZJ)V
     .locals 8
-    .param p1    # Z
-    .param p2    # J
 
     monitor-enter p0
 

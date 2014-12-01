@@ -53,7 +53,6 @@
 
 .method public constructor <init>(Landroid/net/wifi/Hs20ScanResult;)V
     .locals 1
-    .param p1    # Landroid/net/wifi/Hs20ScanResult;
 
     invoke-direct {p0, p1}, Landroid/net/wifi/ScanResult;-><init>(Landroid/net/wifi/ScanResult;)V
 
@@ -73,14 +72,6 @@
 
 .method public constructor <init>(Landroid/net/wifi/WifiSsid;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IIJLjava/lang/String;)V
     .locals 12
-    .param p1    # Landroid/net/wifi/WifiSsid;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
-    .param p6    # I
-    .param p7    # J
-    .param p9    # Ljava/lang/String;
 
     const/4 v10, -0x1
 
@@ -113,8 +104,6 @@
 
 .method public static decode(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 7
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -343,8 +332,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v0, p0, Landroid/net/wifi/Hs20ScanResult;->wifiSsid:Landroid/net/wifi/WifiSsid;
 

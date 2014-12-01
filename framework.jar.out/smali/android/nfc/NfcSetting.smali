@@ -134,7 +134,6 @@
 
 .method public static get(Landroid/nfc/NfcAdapter;)Landroid/nfc/NfcSetting;
     .locals 3
-    .param p0    # Landroid/nfc/NfcAdapter;
 
     const-class v1, Landroid/nfc/NfcSetting;
 
@@ -207,8 +206,6 @@
 
 .method private setParameter(II)Z
     .locals 5
-    .param p1    # I
-    .param p2    # I
 
     const/4 v2, 0x0
 
@@ -253,7 +250,6 @@
 # virtual methods
 .method public changeParameter(I)Z
     .locals 5
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -296,7 +292,6 @@
 
 .method public setCardEmulationMode(I)Z
     .locals 1
-    .param p1    # I
 
     const/16 v0, 0xf
 
@@ -313,8 +308,6 @@
 
 .method public setListenParameter(II)Z
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     const/4 v1, 0x1
 
@@ -392,8 +385,6 @@
 
 .method public setPollParameter(II)Z
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -436,10 +427,6 @@
 
 .method public setReadWriteMode(ZZZZ)Z
     .locals 4
-    .param p1    # Z
-    .param p2    # Z
-    .param p3    # Z
-    .param p4    # Z
 
     const/4 v3, 0x3
 
@@ -498,8 +485,6 @@
 
 .method public setRfParameter(II)Z
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     const/16 v1, 0x3f
 

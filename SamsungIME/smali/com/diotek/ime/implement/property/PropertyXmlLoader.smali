@@ -16,7 +16,6 @@
 # virtual methods
 .method public getLanguageXmlParser(Landroid/content/res/Resources;)Landroid/content/res/XmlResourceParser;
     .locals 2
-    .param p1    # Landroid/content/res/Resources;
 
     const/4 v0, 0x0
 
@@ -59,7 +58,6 @@
 
 .method public getRepositoryXmlParser(Landroid/content/res/Resources;)Landroid/content/res/XmlResourceParser;
     .locals 2
-    .param p1    # Landroid/content/res/Resources;
 
     const/4 v0, 0x0
 

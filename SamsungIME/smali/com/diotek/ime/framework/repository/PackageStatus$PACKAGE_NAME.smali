@@ -765,7 +765,6 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/diotek/ime/framework/repository/PackageStatus$PACKAGE_NAME;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-class v0, Lcom/diotek/ime/framework/repository/PackageStatus$PACKAGE_NAME;
 

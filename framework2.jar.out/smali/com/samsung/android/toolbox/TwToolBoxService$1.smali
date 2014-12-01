@@ -21,7 +21,6 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/toolbox/TwToolBoxService;Landroid/os/Handler;)V
     .locals 0
-    .param p2    # Landroid/os/Handler;
 
     iput-object p1, p0, Lcom/samsung/android/toolbox/TwToolBoxService$1;->this$0:Lcom/samsung/android/toolbox/TwToolBoxService;
 
@@ -34,7 +33,6 @@
 # virtual methods
 .method public onChange(Z)V
     .locals 4
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/samsung/android/toolbox/TwToolBoxService$1;->this$0:Lcom/samsung/android/toolbox/TwToolBoxService;
 

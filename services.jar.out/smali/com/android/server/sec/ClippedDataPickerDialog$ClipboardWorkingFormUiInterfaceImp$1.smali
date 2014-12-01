@@ -33,7 +33,6 @@
 # virtual methods
 .method public setClipboardDataListChange(I)V
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -49,7 +48,6 @@
 
 .method public setClipboardDataMgr(Landroid/sec/clipboard/data/IClipboardDataList;)V
     .locals 1
-    .param p1    # Landroid/sec/clipboard/data/IClipboardDataList;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -65,7 +63,6 @@
 
 .method public setClipboardDataUiEvent(Landroid/sec/clipboard/IClipboardDataUiEvent;)V
     .locals 1
-    .param p1    # Landroid/sec/clipboard/IClipboardDataUiEvent;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

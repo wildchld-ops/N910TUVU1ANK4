@@ -17,8 +17,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -27,7 +25,6 @@
 
 .method private out(F)F
     .locals 2
-    .param p1    # F
 
     const/high16 v1, 0x3f800000
 
@@ -50,7 +47,6 @@
 # virtual methods
 .method public getInterpolation(F)F
     .locals 1
-    .param p1    # F
 
     invoke-direct {p0, p1}, Landroid/view/animation/interpolator/QuartEaseOut;->out(F)F
 

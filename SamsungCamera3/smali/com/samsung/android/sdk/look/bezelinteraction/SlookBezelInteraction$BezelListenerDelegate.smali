@@ -29,8 +29,6 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/sdk/look/bezelinteraction/SlookBezelInteraction$BezelListener;Landroid/os/Handler;)V
     .locals 3
-    .param p1    # Lcom/samsung/android/sdk/look/bezelinteraction/SlookBezelInteraction$BezelListener;
-    .param p2    # Landroid/os/Handler;
 
     invoke-direct {p0}, Lcom/samsung/android/bezelinteraction/IBezelCallback$Stub;-><init>()V
 
@@ -95,7 +93,6 @@
 
 .method public onBezelCallback(Lcom/samsung/android/bezelinteraction/BezelEvent;)V
     .locals 2
-    .param p1    # Lcom/samsung/android/bezelinteraction/BezelEvent;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

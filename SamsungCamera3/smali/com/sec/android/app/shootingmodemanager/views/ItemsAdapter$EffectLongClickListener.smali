@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Lcom/sec/android/app/shootingmodemanager/views/ItemsAdapter;Lcom/sec/android/app/shootingmodemanager/views/ItemsAdapter$1;)V
     .locals 0
-    .param p1    # Lcom/sec/android/app/shootingmodemanager/views/ItemsAdapter;
-    .param p2    # Lcom/sec/android/app/shootingmodemanager/views/ItemsAdapter$1;
 
     invoke-direct {p0, p1}, Lcom/sec/android/app/shootingmodemanager/views/ItemsAdapter$EffectLongClickListener;-><init>(Lcom/sec/android/app/shootingmodemanager/views/ItemsAdapter;)V
 
@@ -46,7 +44,6 @@
 # virtual methods
 .method public onLongClick(Landroid/view/View;)Z
     .locals 1
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Lcom/sec/android/app/shootingmodemanager/views/ItemsAdapter$EffectLongClickListener;->this$0:Lcom/sec/android/app/shootingmodemanager/views/ItemsAdapter;
 

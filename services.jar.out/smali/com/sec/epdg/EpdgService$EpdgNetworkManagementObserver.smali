@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Lcom/sec/epdg/EpdgService;Lcom/sec/epdg/EpdgService$1;)V
     .locals 0
-    .param p1    # Lcom/sec/epdg/EpdgService;
-    .param p2    # Lcom/sec/epdg/EpdgService$1;
 
     invoke-direct {p0, p1}, Lcom/sec/epdg/EpdgService$EpdgNetworkManagementObserver;-><init>(Lcom/sec/epdg/EpdgService;)V
 
@@ -43,15 +41,12 @@
 # virtual methods
 .method public EpdgInterfaceAdded(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method public EpdgInterfaceClassDataActivityChanged(Ljava/lang/String;Z)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const-string v0, "[EPDGService]"
 
@@ -90,8 +85,6 @@
 
 .method public EpdgInterfaceLinkStateChanged(Ljava/lang/String;Z)V
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const-string v7, "[EPDGService]"
 
@@ -376,15 +369,12 @@
 
 .method public EpdgInterfaceRemoved(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method public EpdgInterfaceStatusChanged(Ljava/lang/String;Z)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const-string v1, "[EPDGService]"
 
@@ -427,28 +417,18 @@
 
 .method public EpdgLimitReached(Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method public addressRemoved(Ljava/lang/String;Ljava/lang/String;II)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
 
     return-void
 .end method
 
 .method public addressUpdated(Ljava/lang/String;Ljava/lang/String;II)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
 
     return-void
 .end method

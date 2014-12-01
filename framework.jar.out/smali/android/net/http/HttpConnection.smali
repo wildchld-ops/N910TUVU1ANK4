@@ -6,9 +6,6 @@
 # direct methods
 .method constructor <init>(Landroid/content/Context;Lorg/apache/http/HttpHost;Landroid/net/http/RequestFeeder;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lorg/apache/http/HttpHost;
-    .param p3    # Landroid/net/http/RequestFeeder;
 
     invoke-direct {p0, p1, p2, p3}, Landroid/net/http/Connection;-><init>(Landroid/content/Context;Lorg/apache/http/HttpHost;Landroid/net/http/RequestFeeder;)V
 
@@ -61,7 +58,6 @@
 
 .method openConnection(Landroid/net/http/Request;)Landroid/net/http/AndroidHttpClientConnection;
     .locals 6
-    .param p1    # Landroid/net/http/Request;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -117,7 +113,6 @@
 
 .method restartConnection(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method

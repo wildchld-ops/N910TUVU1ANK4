@@ -43,8 +43,6 @@
 
 .method synthetic constructor <init>(Lcom/sec/epdg/IWlanApnSetting;Lcom/sec/epdg/IWlanApnSetting$1;)V
     .locals 0
-    .param p1    # Lcom/sec/epdg/IWlanApnSetting;
-    .param p2    # Lcom/sec/epdg/IWlanApnSetting$1;
 
     invoke-direct {p0, p1}, Lcom/sec/epdg/IWlanApnSetting$IPSecSetting;-><init>(Lcom/sec/epdg/IWlanApnSetting;)V
 
@@ -53,13 +51,6 @@
 
 .method static synthetic access$200(Lcom/sec/epdg/IWlanApnSetting$IPSecSetting;Lcom/sec/epdg/IWlanEnum$TunnelModeType;Lcom/sec/epdg/IWlanEnum$IpSecEncryptionType;Lcom/sec/epdg/IWlanEnum$IpSecIntegrityType;Lcom/sec/epdg/IWlanEnum$IpSecDHGroup;Lcom/sec/epdg/IWlanEnum$IpSecLifeTimeType;I)V
     .locals 0
-    .param p0    # Lcom/sec/epdg/IWlanApnSetting$IPSecSetting;
-    .param p1    # Lcom/sec/epdg/IWlanEnum$TunnelModeType;
-    .param p2    # Lcom/sec/epdg/IWlanEnum$IpSecEncryptionType;
-    .param p3    # Lcom/sec/epdg/IWlanEnum$IpSecIntegrityType;
-    .param p4    # Lcom/sec/epdg/IWlanEnum$IpSecDHGroup;
-    .param p5    # Lcom/sec/epdg/IWlanEnum$IpSecLifeTimeType;
-    .param p6    # I
 
     invoke-direct/range {p0 .. p6}, Lcom/sec/epdg/IWlanApnSetting$IPSecSetting;->updateIpsecValues(Lcom/sec/epdg/IWlanEnum$TunnelModeType;Lcom/sec/epdg/IWlanEnum$IpSecEncryptionType;Lcom/sec/epdg/IWlanEnum$IpSecIntegrityType;Lcom/sec/epdg/IWlanEnum$IpSecDHGroup;Lcom/sec/epdg/IWlanEnum$IpSecLifeTimeType;I)V
 
@@ -68,12 +59,6 @@
 
 .method private updateIpsecValues(Lcom/sec/epdg/IWlanEnum$TunnelModeType;Lcom/sec/epdg/IWlanEnum$IpSecEncryptionType;Lcom/sec/epdg/IWlanEnum$IpSecIntegrityType;Lcom/sec/epdg/IWlanEnum$IpSecDHGroup;Lcom/sec/epdg/IWlanEnum$IpSecLifeTimeType;I)V
     .locals 0
-    .param p1    # Lcom/sec/epdg/IWlanEnum$TunnelModeType;
-    .param p2    # Lcom/sec/epdg/IWlanEnum$IpSecEncryptionType;
-    .param p3    # Lcom/sec/epdg/IWlanEnum$IpSecIntegrityType;
-    .param p4    # Lcom/sec/epdg/IWlanEnum$IpSecDHGroup;
-    .param p5    # Lcom/sec/epdg/IWlanEnum$IpSecLifeTimeType;
-    .param p6    # I
 
     iput-object p1, p0, Lcom/sec/epdg/IWlanApnSetting$IPSecSetting;->mTunnelMode:Lcom/sec/epdg/IWlanEnum$TunnelModeType;
 

@@ -36,7 +36,6 @@
 
 .method public static byteCountToDisplaySize(J)Ljava/lang/String;
     .locals 11
-    .param p0    # J
 
     const-wide/32 v9, 0x40000000
 
@@ -173,8 +172,6 @@
 
 .method public static checksum(Ljava/io/File;Ljava/util/zip/Checksum;)Ljava/util/zip/Checksum;
     .locals 4
-    .param p0    # Ljava/io/File;
-    .param p1    # Ljava/util/zip/Checksum;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -240,7 +237,6 @@
 
 .method public static checksumCRC32(Ljava/io/File;)J
     .locals 3
-    .param p0    # Ljava/io/File;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -262,7 +258,6 @@
 
 .method public static cleanDirectory(Ljava/io/File;)V
     .locals 9
-    .param p0    # Ljava/io/File;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -401,7 +396,6 @@
 
 .method private static cleanDirectoryOnExit(Ljava/io/File;)V
     .locals 9
-    .param p0    # Ljava/io/File;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -540,8 +534,6 @@
 
 .method public static contentEquals(Ljava/io/File;Ljava/io/File;)Z
     .locals 11
-    .param p0    # Ljava/io/File;
-    .param p1    # Ljava/io/File;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -687,7 +679,6 @@
 
 .method public static convertFileCollectionToFileArray(Ljava/util/Collection;)[Ljava/io/File;
     .locals 1
-    .param p0    # Ljava/util/Collection;
 
     invoke-interface {p0}, Ljava/util/Collection;->size()I
 
@@ -708,8 +699,6 @@
 
 .method public static copyDirectory(Ljava/io/File;Ljava/io/File;)V
     .locals 1
-    .param p0    # Ljava/io/File;
-    .param p1    # Ljava/io/File;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -725,9 +714,6 @@
 
 .method public static copyDirectory(Ljava/io/File;Ljava/io/File;Ljava/io/FileFilter;)V
     .locals 1
-    .param p0    # Ljava/io/File;
-    .param p1    # Ljava/io/File;
-    .param p2    # Ljava/io/FileFilter;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -743,10 +729,6 @@
 
 .method public static copyDirectory(Ljava/io/File;Ljava/io/File;Ljava/io/FileFilter;Z)V
     .locals 7
-    .param p0    # Ljava/io/File;
-    .param p1    # Ljava/io/File;
-    .param p2    # Ljava/io/FileFilter;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -981,9 +963,6 @@
 
 .method public static copyDirectory(Ljava/io/File;Ljava/io/File;Z)V
     .locals 1
-    .param p0    # Ljava/io/File;
-    .param p1    # Ljava/io/File;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -999,8 +978,6 @@
 
 .method public static copyDirectoryToDirectory(Ljava/io/File;Ljava/io/File;)V
     .locals 3
-    .param p0    # Ljava/io/File;
-    .param p1    # Ljava/io/File;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1132,8 +1109,6 @@
 
 .method public static copyFile(Ljava/io/File;Ljava/io/File;)V
     .locals 1
-    .param p0    # Ljava/io/File;
-    .param p1    # Ljava/io/File;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1149,9 +1124,6 @@
 
 .method public static copyFile(Ljava/io/File;Ljava/io/File;Z)V
     .locals 3
-    .param p0    # Ljava/io/File;
-    .param p1    # Ljava/io/File;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1416,8 +1388,6 @@
 
 .method public static copyFileToDirectory(Ljava/io/File;Ljava/io/File;)V
     .locals 1
-    .param p0    # Ljava/io/File;
-    .param p1    # Ljava/io/File;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1433,9 +1403,6 @@
 
 .method public static copyFileToDirectory(Ljava/io/File;Ljava/io/File;Z)V
     .locals 3
-    .param p0    # Ljava/io/File;
-    .param p1    # Ljava/io/File;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1511,8 +1478,6 @@
 
 .method public static copyURLToFile(Ljava/net/URL;Ljava/io/File;)V
     .locals 3
-    .param p0    # Ljava/net/URL;
-    .param p1    # Ljava/io/File;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1564,7 +1529,6 @@
 
 .method public static deleteDirectory(Ljava/io/File;)V
     .locals 3
-    .param p0    # Ljava/io/File;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1622,7 +1586,6 @@
 
 .method private static deleteDirectoryOnExit(Ljava/io/File;)V
     .locals 1
-    .param p0    # Ljava/io/File;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1648,7 +1611,6 @@
 
 .method public static deleteQuietly(Ljava/io/File;)Z
     .locals 3
-    .param p0    # Ljava/io/File;
 
     const/4 v1, 0x0
 
@@ -1693,11 +1655,6 @@
 
 .method private static doCopyDirectory(Ljava/io/File;Ljava/io/File;Ljava/io/FileFilter;ZLjava/util/List;)V
     .locals 6
-    .param p0    # Ljava/io/File;
-    .param p1    # Ljava/io/File;
-    .param p2    # Ljava/io/FileFilter;
-    .param p3    # Z
-    .param p4    # Ljava/util/List;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1934,9 +1891,6 @@
 
 .method private static doCopyFile(Ljava/io/File;Ljava/io/File;Z)V
     .locals 6
-    .param p0    # Ljava/io/File;
-    .param p1    # Ljava/io/File;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -2093,7 +2047,6 @@
 
 .method public static forceDelete(Ljava/io/File;)V
     .locals 5
-    .param p0    # Ljava/io/File;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -2176,7 +2129,6 @@
 
 .method public static forceDeleteOnExit(Ljava/io/File;)V
     .locals 1
-    .param p0    # Ljava/io/File;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -2202,7 +2154,6 @@
 
 .method public static forceMkdir(Ljava/io/File;)V
     .locals 3
-    .param p0    # Ljava/io/File;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -2294,9 +2245,6 @@
 
 .method private static innerListFiles(Ljava/util/Collection;Ljava/io/File;Lorg/apache/commons/io/filefilter/IOFileFilter;)V
     .locals 3
-    .param p0    # Ljava/util/Collection;
-    .param p1    # Ljava/io/File;
-    .param p2    # Lorg/apache/commons/io/filefilter/IOFileFilter;
 
     invoke-virtual {p1, p2}, Ljava/io/File;->listFiles(Ljava/io/FileFilter;)[Ljava/io/File;
 
@@ -2341,8 +2289,6 @@
 
 .method public static isFileNewer(Ljava/io/File;J)Z
     .locals 3
-    .param p0    # Ljava/io/File;
-    .param p1    # J
 
     const/4 v0, 0x0
 
@@ -2383,8 +2329,6 @@
 
 .method public static isFileNewer(Ljava/io/File;Ljava/io/File;)Z
     .locals 3
-    .param p0    # Ljava/io/File;
-    .param p1    # Ljava/io/File;
 
     if-nez p1, :cond_0
 
@@ -2447,8 +2391,6 @@
 
 .method public static isFileNewer(Ljava/io/File;Ljava/util/Date;)Z
     .locals 2
-    .param p0    # Ljava/io/File;
-    .param p1    # Ljava/util/Date;
 
     if-nez p1, :cond_0
 
@@ -2474,8 +2416,6 @@
 
 .method public static isFileOlder(Ljava/io/File;J)Z
     .locals 3
-    .param p0    # Ljava/io/File;
-    .param p1    # J
 
     const/4 v0, 0x0
 
@@ -2516,8 +2456,6 @@
 
 .method public static isFileOlder(Ljava/io/File;Ljava/io/File;)Z
     .locals 3
-    .param p0    # Ljava/io/File;
-    .param p1    # Ljava/io/File;
 
     if-nez p1, :cond_0
 
@@ -2580,8 +2518,6 @@
 
 .method public static isFileOlder(Ljava/io/File;Ljava/util/Date;)Z
     .locals 2
-    .param p0    # Ljava/io/File;
-    .param p1    # Ljava/util/Date;
 
     if-nez p1, :cond_0
 
@@ -2607,9 +2543,6 @@
 
 .method public static iterateFiles(Ljava/io/File;Lorg/apache/commons/io/filefilter/IOFileFilter;Lorg/apache/commons/io/filefilter/IOFileFilter;)Ljava/util/Iterator;
     .locals 1
-    .param p0    # Ljava/io/File;
-    .param p1    # Lorg/apache/commons/io/filefilter/IOFileFilter;
-    .param p2    # Lorg/apache/commons/io/filefilter/IOFileFilter;
 
     invoke-static {p0, p1, p2}, Lorg/apache/commons/io/FileUtils;->listFiles(Ljava/io/File;Lorg/apache/commons/io/filefilter/IOFileFilter;Lorg/apache/commons/io/filefilter/IOFileFilter;)Ljava/util/Collection;
 
@@ -2624,9 +2557,6 @@
 
 .method public static iterateFiles(Ljava/io/File;[Ljava/lang/String;Z)Ljava/util/Iterator;
     .locals 1
-    .param p0    # Ljava/io/File;
-    .param p1    # [Ljava/lang/String;
-    .param p2    # Z
 
     invoke-static {p0, p1, p2}, Lorg/apache/commons/io/FileUtils;->listFiles(Ljava/io/File;[Ljava/lang/String;Z)Ljava/util/Collection;
 
@@ -2641,7 +2571,6 @@
 
 .method public static lineIterator(Ljava/io/File;)Lorg/apache/commons/io/LineIterator;
     .locals 1
-    .param p0    # Ljava/io/File;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -2659,8 +2588,6 @@
 
 .method public static lineIterator(Ljava/io/File;Ljava/lang/String;)Lorg/apache/commons/io/LineIterator;
     .locals 3
-    .param p0    # Ljava/io/File;
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -2700,9 +2627,6 @@
 
 .method public static listFiles(Ljava/io/File;Lorg/apache/commons/io/filefilter/IOFileFilter;Lorg/apache/commons/io/filefilter/IOFileFilter;)Ljava/util/Collection;
     .locals 5
-    .param p0    # Ljava/io/File;
-    .param p1    # Lorg/apache/commons/io/filefilter/IOFileFilter;
-    .param p2    # Lorg/apache/commons/io/filefilter/IOFileFilter;
 
     invoke-virtual {p0}, Ljava/io/File;->isDirectory()Z
 
@@ -2769,9 +2693,6 @@
 
 .method public static listFiles(Ljava/io/File;[Ljava/lang/String;Z)Ljava/util/Collection;
     .locals 3
-    .param p0    # Ljava/io/File;
-    .param p1    # [Ljava/lang/String;
-    .param p2    # Z
 
     if-nez p1, :cond_0
 
@@ -2808,8 +2729,6 @@
 
 .method public static moveDirectory(Ljava/io/File;Ljava/io/File;)V
     .locals 4
-    .param p0    # Ljava/io/File;
-    .param p1    # Ljava/io/File;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -3011,9 +2930,6 @@
 
 .method public static moveDirectoryToDirectory(Ljava/io/File;Ljava/io/File;Z)V
     .locals 3
-    .param p0    # Ljava/io/File;
-    .param p1    # Ljava/io/File;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -3152,8 +3068,6 @@
 
 .method public static moveFile(Ljava/io/File;Ljava/io/File;)V
     .locals 4
-    .param p0    # Ljava/io/File;
-    .param p1    # Ljava/io/File;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -3392,9 +3306,6 @@
 
 .method public static moveFileToDirectory(Ljava/io/File;Ljava/io/File;Z)V
     .locals 3
-    .param p0    # Ljava/io/File;
-    .param p1    # Ljava/io/File;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -3533,9 +3444,6 @@
 
 .method public static moveToDirectory(Ljava/io/File;Ljava/io/File;Z)V
     .locals 3
-    .param p0    # Ljava/io/File;
-    .param p1    # Ljava/io/File;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -3620,7 +3528,6 @@
 
 .method public static openInputStream(Ljava/io/File;)Ljava/io/FileInputStream;
     .locals 3
-    .param p0    # Ljava/io/File;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -3747,7 +3654,6 @@
 
 .method public static openOutputStream(Ljava/io/File;)Ljava/io/FileOutputStream;
     .locals 4
-    .param p0    # Ljava/io/File;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -3892,7 +3798,6 @@
 
 .method public static readFileToByteArray(Ljava/io/File;)[B
     .locals 2
-    .param p0    # Ljava/io/File;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -3926,7 +3831,6 @@
 
 .method public static readFileToString(Ljava/io/File;)Ljava/lang/String;
     .locals 1
-    .param p0    # Ljava/io/File;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -3944,8 +3848,6 @@
 
 .method public static readFileToString(Ljava/io/File;Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/io/File;
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -3979,7 +3881,6 @@
 
 .method public static readLines(Ljava/io/File;)Ljava/util/List;
     .locals 1
-    .param p0    # Ljava/io/File;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -3997,8 +3898,6 @@
 
 .method public static readLines(Ljava/io/File;Ljava/lang/String;)Ljava/util/List;
     .locals 2
-    .param p0    # Ljava/io/File;
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -4032,7 +3931,6 @@
 
 .method public static sizeOfDirectory(Ljava/io/File;)J
     .locals 8
-    .param p0    # Ljava/io/File;
 
     invoke-virtual {p0}, Ljava/io/File;->exists()Z
 
@@ -4153,7 +4051,6 @@
 
 .method public static toFile(Ljava/net/URL;)Ljava/io/File;
     .locals 7
-    .param p0    # Ljava/net/URL;
 
     if-eqz p0, :cond_0
 
@@ -4268,7 +4165,6 @@
 
 .method public static toFiles([Ljava/net/URL;)[Ljava/io/File;
     .locals 6
-    .param p0    # [Ljava/net/URL;
 
     if-eqz p0, :cond_0
 
@@ -4349,7 +4245,6 @@
 
 .method private static toSuffixes([Ljava/lang/String;)[Ljava/lang/String;
     .locals 4
-    .param p0    # [Ljava/lang/String;
 
     array-length v2, p0
 
@@ -4394,7 +4289,6 @@
 
 .method public static toURLs([Ljava/io/File;)[Ljava/net/URL;
     .locals 3
-    .param p0    # [Ljava/io/File;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -4430,7 +4324,6 @@
 
 .method public static touch(Ljava/io/File;)V
     .locals 5
-    .param p0    # Ljava/io/File;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -4490,8 +4383,6 @@
 
 .method public static waitFor(Ljava/io/File;I)Z
     .locals 7
-    .param p0    # Ljava/io/File;
-    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -4558,8 +4449,6 @@
 
 .method public static writeByteArrayToFile(Ljava/io/File;[B)V
     .locals 2
-    .param p0    # Ljava/io/File;
-    .param p1    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -4591,9 +4480,6 @@
 
 .method public static writeLines(Ljava/io/File;Ljava/lang/String;Ljava/util/Collection;)V
     .locals 1
-    .param p0    # Ljava/io/File;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/util/Collection;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -4609,10 +4495,6 @@
 
 .method public static writeLines(Ljava/io/File;Ljava/lang/String;Ljava/util/Collection;Ljava/lang/String;)V
     .locals 2
-    .param p0    # Ljava/io/File;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/util/Collection;
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -4644,8 +4526,6 @@
 
 .method public static writeLines(Ljava/io/File;Ljava/util/Collection;)V
     .locals 1
-    .param p0    # Ljava/io/File;
-    .param p1    # Ljava/util/Collection;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -4661,9 +4541,6 @@
 
 .method public static writeLines(Ljava/io/File;Ljava/util/Collection;Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/io/File;
-    .param p1    # Ljava/util/Collection;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -4679,8 +4556,6 @@
 
 .method public static writeStringToFile(Ljava/io/File;Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/io/File;
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -4696,9 +4571,6 @@
 
 .method public static writeStringToFile(Ljava/io/File;Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p0    # Ljava/io/File;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

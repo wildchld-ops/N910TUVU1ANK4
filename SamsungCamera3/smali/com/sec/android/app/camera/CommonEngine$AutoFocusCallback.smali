@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Lcom/sec/android/app/camera/CommonEngine;Lcom/sec/android/app/camera/CommonEngine$1;)V
     .locals 0
-    .param p1    # Lcom/sec/android/app/camera/CommonEngine;
-    .param p2    # Lcom/sec/android/app/camera/CommonEngine$1;
 
     invoke-direct {p0, p1}, Lcom/sec/android/app/camera/CommonEngine$AutoFocusCallback;-><init>(Lcom/sec/android/app/camera/CommonEngine;)V
 
@@ -46,8 +44,6 @@
 # virtual methods
 .method public onAutoFocus(ILcom/sec/android/seccamera/SecCamera;)V
     .locals 9
-    .param p1    # I
-    .param p2    # Lcom/sec/android/seccamera/SecCamera;
 
     const/4 v8, 0x3
 

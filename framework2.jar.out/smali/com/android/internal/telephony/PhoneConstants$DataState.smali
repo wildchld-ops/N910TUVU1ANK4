@@ -119,7 +119,6 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/android/internal/telephony/PhoneConstants$DataState;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-class v0, Lcom/android/internal/telephony/PhoneConstants$DataState;
 

@@ -63,8 +63,6 @@
 
 .method public constructor <init>(Landroid/webkitsec/DeviceMotionAndOrientationManager;Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/webkitsec/DeviceMotionAndOrientationManager;
-    .param p2    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -107,7 +105,6 @@
 
 .method static synthetic access$000(Landroid/webkitsec/DeviceOrientationService;)Z
     .locals 1
-    .param p0    # Landroid/webkitsec/DeviceOrientationService;
 
     iget-boolean v0, p0, Landroid/webkitsec/DeviceOrientationService;->mIsRunning:Z
 
@@ -116,7 +113,6 @@
 
 .method static synthetic access$100(Landroid/webkitsec/DeviceOrientationService;)Landroid/webkitsec/DeviceMotionAndOrientationManager;
     .locals 1
-    .param p0    # Landroid/webkitsec/DeviceOrientationService;
 
     iget-object v0, p0, Landroid/webkitsec/DeviceOrientationService;->mManager:Landroid/webkitsec/DeviceMotionAndOrientationManager;
 
@@ -294,9 +290,6 @@
 
 .method private maybeSendChange(DDD)V
     .locals 4
-    .param p1    # D
-    .param p3    # D
-    .param p5    # D
 
     const-wide/high16 v2, 0x3ff0000000000000L
 
@@ -620,8 +613,6 @@
 # virtual methods
 .method public onAccuracyChanged(Landroid/hardware/Sensor;I)V
     .locals 2
-    .param p1    # Landroid/hardware/Sensor;
-    .param p2    # I
 
     sget-boolean v0, Landroid/webkitsec/DeviceOrientationService;->$assertionsDisabled:Z
 
@@ -655,7 +646,6 @@
 
 .method public onSensorChanged(Landroid/hardware/SensorEvent;)V
     .locals 6
-    .param p1    # Landroid/hardware/SensorEvent;
 
     const/4 v5, 0x3
 

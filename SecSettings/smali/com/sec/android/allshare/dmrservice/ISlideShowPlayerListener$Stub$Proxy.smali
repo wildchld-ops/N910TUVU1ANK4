@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,7 +36,6 @@
 # virtual methods
 .method public addPlayList([Ljava/lang/String;)V
     .locals 5
-    .param p1    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -146,7 +144,6 @@
 
 .method public removeFromPlayList([Ljava/lang/String;)V
     .locals 5
-    .param p1    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -198,7 +195,6 @@
 
 .method public setBackgroundMusicList(Lcom/sec/android/allshare/dmrservice/BGMList;)V
     .locals 5
-    .param p1    # Lcom/sec/android/allshare/dmrservice/BGMList;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -269,7 +265,6 @@
 
 .method public setBackgroundMusicVolume(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -321,7 +316,6 @@
 
 .method public setPlayList([Ljava/lang/String;)V
     .locals 5
-    .param p1    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -373,7 +367,6 @@
 
 .method public startSlideShow(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

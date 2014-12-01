@@ -30,7 +30,6 @@
 # virtual methods
 .method public getCanRetrieveWindowContent(Landroid/accessibilityservice/AccessibilityServiceInfo;)Z
     .locals 1
-    .param p1    # Landroid/accessibilityservice/AccessibilityServiceInfo;
 
     const/4 v0, 0x0
 
@@ -39,7 +38,6 @@
 
 .method public getCapabilities(Landroid/accessibilityservice/AccessibilityServiceInfo;)I
     .locals 1
-    .param p1    # Landroid/accessibilityservice/AccessibilityServiceInfo;
 
     const/4 v0, 0x0
 
@@ -48,7 +46,6 @@
 
 .method public getDescription(Landroid/accessibilityservice/AccessibilityServiceInfo;)Ljava/lang/String;
     .locals 1
-    .param p1    # Landroid/accessibilityservice/AccessibilityServiceInfo;
 
     const/4 v0, 0x0
 
@@ -57,7 +54,6 @@
 
 .method public getId(Landroid/accessibilityservice/AccessibilityServiceInfo;)Ljava/lang/String;
     .locals 1
-    .param p1    # Landroid/accessibilityservice/AccessibilityServiceInfo;
 
     const/4 v0, 0x0
 
@@ -66,7 +62,6 @@
 
 .method public getResolveInfo(Landroid/accessibilityservice/AccessibilityServiceInfo;)Landroid/content/pm/ResolveInfo;
     .locals 1
-    .param p1    # Landroid/accessibilityservice/AccessibilityServiceInfo;
 
     const/4 v0, 0x0
 
@@ -75,7 +70,6 @@
 
 .method public getSettingsActivityName(Landroid/accessibilityservice/AccessibilityServiceInfo;)Ljava/lang/String;
     .locals 1
-    .param p1    # Landroid/accessibilityservice/AccessibilityServiceInfo;
 
     const/4 v0, 0x0
 

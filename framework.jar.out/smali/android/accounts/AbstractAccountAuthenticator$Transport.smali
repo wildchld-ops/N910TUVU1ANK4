@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Landroid/accounts/AbstractAccountAuthenticator;Landroid/accounts/AbstractAccountAuthenticator$1;)V
     .locals 0
-    .param p1    # Landroid/accounts/AbstractAccountAuthenticator;
-    .param p2    # Landroid/accounts/AbstractAccountAuthenticator$1;
 
     invoke-direct {p0, p1}, Landroid/accounts/AbstractAccountAuthenticator$Transport;-><init>(Landroid/accounts/AbstractAccountAuthenticator;)V
 
@@ -43,11 +41,6 @@
 # virtual methods
 .method public addAccount(Landroid/accounts/IAccountAuthenticatorResponse;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Landroid/os/Bundle;)V
     .locals 8
-    .param p1    # Landroid/accounts/IAccountAuthenticatorResponse;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # [Ljava/lang/String;
-    .param p5    # Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -207,9 +200,6 @@
 
 .method public addAccountFromCredentials(Landroid/accounts/IAccountAuthenticatorResponse;Landroid/accounts/Account;Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/accounts/IAccountAuthenticatorResponse;
-    .param p2    # Landroid/accounts/Account;
-    .param p3    # Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -261,9 +251,6 @@
 
 .method public confirmCredentials(Landroid/accounts/IAccountAuthenticatorResponse;Landroid/accounts/Account;Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/accounts/IAccountAuthenticatorResponse;
-    .param p2    # Landroid/accounts/Account;
-    .param p3    # Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -387,8 +374,6 @@
 
 .method public editProperties(Landroid/accounts/IAccountAuthenticatorResponse;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Landroid/accounts/IAccountAuthenticatorResponse;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -436,8 +421,6 @@
 
 .method public getAccountCredentialsForCloning(Landroid/accounts/IAccountAuthenticatorResponse;Landroid/accounts/Account;)V
     .locals 5
-    .param p1    # Landroid/accounts/IAccountAuthenticatorResponse;
-    .param p2    # Landroid/accounts/Account;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -489,8 +472,6 @@
 
 .method public getAccountRemovalAllowed(Landroid/accounts/IAccountAuthenticatorResponse;Landroid/accounts/Account;)V
     .locals 5
-    .param p1    # Landroid/accounts/IAccountAuthenticatorResponse;
-    .param p2    # Landroid/accounts/Account;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -542,10 +523,6 @@
 
 .method public getAuthToken(Landroid/accounts/IAccountAuthenticatorResponse;Landroid/accounts/Account;Ljava/lang/String;Landroid/os/Bundle;)V
     .locals 6
-    .param p1    # Landroid/accounts/IAccountAuthenticatorResponse;
-    .param p2    # Landroid/accounts/Account;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -701,8 +678,6 @@
 
 .method public getAuthTokenLabel(Landroid/accounts/IAccountAuthenticatorResponse;Ljava/lang/String;)V
     .locals 5
-    .param p1    # Landroid/accounts/IAccountAuthenticatorResponse;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -823,9 +798,6 @@
 
 .method public hasFeatures(Landroid/accounts/IAccountAuthenticatorResponse;Landroid/accounts/Account;[Ljava/lang/String;)V
     .locals 5
-    .param p1    # Landroid/accounts/IAccountAuthenticatorResponse;
-    .param p2    # Landroid/accounts/Account;
-    .param p3    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -877,10 +849,6 @@
 
 .method public updateCredentials(Landroid/accounts/IAccountAuthenticatorResponse;Landroid/accounts/Account;Ljava/lang/String;Landroid/os/Bundle;)V
     .locals 6
-    .param p1    # Landroid/accounts/IAccountAuthenticatorResponse;
-    .param p2    # Landroid/accounts/Account;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

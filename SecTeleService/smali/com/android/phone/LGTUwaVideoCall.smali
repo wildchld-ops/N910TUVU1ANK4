@@ -63,9 +63,9 @@
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
 
-    invoke-virtual {p0, v0}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/LGTUwaVideoCall;->startActivity(Landroid/content/Intent;)V
 
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/LGTUwaVideoCall;->finish()V
 
     return-void
 .end method
@@ -135,7 +135,7 @@
 
     const/4 v3, 0x0
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/phone/LGTUwaVideoCall;->getIntent()Landroid/content/Intent;
 
     move-result-object v1
 
@@ -153,7 +153,7 @@
 
     if-nez v2, :cond_0
 
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/LGTUwaVideoCall;->finish()V
 
     :goto_0
     return-void

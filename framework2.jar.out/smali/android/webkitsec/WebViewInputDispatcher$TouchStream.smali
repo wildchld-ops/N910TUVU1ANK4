@@ -29,7 +29,6 @@
 
 .method synthetic constructor <init>(Landroid/webkitsec/WebViewInputDispatcher$1;)V
     .locals 0
-    .param p1    # Landroid/webkitsec/WebViewInputDispatcher$1;
 
     invoke-direct {p0}, Landroid/webkitsec/WebViewInputDispatcher$TouchStream;-><init>()V
 
@@ -38,7 +37,6 @@
 
 .method private updateLastEvent(Landroid/view/MotionEvent;)V
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-object v0, p0, Landroid/webkitsec/WebViewInputDispatcher$TouchStream;->mLastEvent:Landroid/view/MotionEvent;
 
@@ -104,7 +102,6 @@
 
 .method public update(Landroid/view/MotionEvent;)Landroid/view/MotionEvent;
     .locals 3
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v0, 0x0
 

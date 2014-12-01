@@ -13,7 +13,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/launcher2/CellLayout;)V
     .locals 0
-    .param p1    # Lcom/android/launcher2/CellLayout;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -26,17 +25,12 @@
 # virtual methods
 .method public addDelta(Lcom/android/launcher2/PositionDelta;)V
     .locals 0
-    .param p1    # Lcom/android/launcher2/PositionDelta;
 
     return-void
 .end method
 
 .method public deltaAt(IIII)Lcom/android/launcher2/PositionDelta;
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/4 v0, 0x0
 
@@ -45,11 +39,6 @@
 
 .method public findNearestVacantArea(IIII[I)[I
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # [I
 
     if-eqz p5, :cond_0
 
@@ -91,14 +80,12 @@
 
 .method public removeDelta(Lcom/android/launcher2/PositionDelta;)V
     .locals 0
-    .param p1    # Lcom/android/launcher2/PositionDelta;
 
     return-void
 .end method
 
 .method public reset(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
@@ -111,13 +98,6 @@
 
 .method public updateDeltasForDrag(Lcom/android/launcher2/PositionDelta;Lcom/android/launcher2/WidgetSizes;IIZZZ)Z
     .locals 1
-    .param p1    # Lcom/android/launcher2/PositionDelta;
-    .param p2    # Lcom/android/launcher2/WidgetSizes;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Z
-    .param p6    # Z
-    .param p7    # Z
 
     const/4 v0, 0x1
 

@@ -120,18 +120,18 @@
 
     move-result-object v3
 
-    invoke-virtual {v3}, Landroid/widget/CompoundButton;->isChecked()Z
+    invoke-virtual {v3}, Landroid/widget/RadioButton;->isChecked()Z
 
     move-result v3
 
     if-nez v3, :cond_2
 
     :goto_0
-    invoke-virtual {v1, v2}, Landroid/widget/CompoundButton;->setChecked(Z)V
+    invoke-virtual {v1, v2}, Landroid/widget/RadioButton;->setChecked(Z)V
 
     const/4 v2, 0x1
 
-    invoke-virtual {v1, v2}, Landroid/widget/CompoundButton;->setChecked(Z)V
+    invoke-virtual {v1, v2}, Landroid/widget/RadioButton;->setChecked(Z)V
 
     iget-object v3, p0, Lcom/android/phone/callsettings/IpCall$7;->this$0:Lcom/android/phone/callsettings/IpCall;
 
@@ -159,7 +159,7 @@
 
     iget-object v5, p0, Lcom/android/phone/callsettings/IpCall$7;->this$0:Lcom/android/phone/callsettings/IpCall;
 
-    invoke-virtual {v5}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v5}, Lcom/android/phone/callsettings/IpCall;->getActivity()Landroid/app/Activity;
 
     move-result-object v5
 

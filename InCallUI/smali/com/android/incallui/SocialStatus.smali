@@ -54,7 +54,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;)V
 
@@ -65,8 +64,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -77,9 +74,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
@@ -90,7 +84,6 @@
 
 .method static synthetic access$000(Lcom/android/incallui/SocialStatus;)Landroid/widget/RelativeLayout;
     .locals 1
-    .param p0    # Lcom/android/incallui/SocialStatus;
 
     iget-object v0, p0, Lcom/android/incallui/SocialStatus;->mSnsCloseContainer:Landroid/widget/RelativeLayout;
 
@@ -99,7 +92,6 @@
 
 .method static synthetic access$100(Lcom/android/incallui/SocialStatus;)Landroid/view/animation/RotateAnimation;
     .locals 1
-    .param p0    # Lcom/android/incallui/SocialStatus;
 
     iget-object v0, p0, Lcom/android/incallui/SocialStatus;->rotate:Landroid/view/animation/RotateAnimation;
 
@@ -108,7 +100,6 @@
 
 .method static synthetic access$200(Lcom/android/incallui/SocialStatus;)Landroid/widget/ImageView;
     .locals 1
-    .param p0    # Lcom/android/incallui/SocialStatus;
 
     iget-object v0, p0, Lcom/android/incallui/SocialStatus;->mSnsOpenToggleBtn:Landroid/widget/ImageView;
 
@@ -117,7 +108,6 @@
 
 .method static synthetic access$300(Lcom/android/incallui/SocialStatus;)Landroid/widget/LinearLayout;
     .locals 1
-    .param p0    # Lcom/android/incallui/SocialStatus;
 
     iget-object v0, p0, Lcom/android/incallui/SocialStatus;->mSnsOpenContainer:Landroid/widget/LinearLayout;
 

@@ -46,10 +46,6 @@
 
 .method public constructor <init>(IDDI)V
     .locals 1
-    .param p1    # I
-    .param p2    # D
-    .param p4    # D
-    .param p6    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -70,8 +66,6 @@
 
 .method public constructor <init>(ILjava/lang/String;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const-wide/16 v0, 0x0
 
@@ -94,7 +88,6 @@
 
 .method private constructor <init>(Landroid/os/Parcel;)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -133,8 +126,6 @@
 
 .method synthetic constructor <init>(Landroid/os/Parcel;Lcom/samsung/location/SLocationParameter$1;)V
     .locals 0
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # Lcom/samsung/location/SLocationParameter$1;
 
     invoke-direct {p0, p1}, Lcom/samsung/location/SLocationParameter;-><init>(Landroid/os/Parcel;)V
 
@@ -153,8 +144,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget v0, p0, Lcom/samsung/location/SLocationParameter;->mType:I
 

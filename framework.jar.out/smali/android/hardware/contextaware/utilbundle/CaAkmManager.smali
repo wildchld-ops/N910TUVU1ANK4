@@ -63,7 +63,6 @@
 
 .method private loadIntValue(Ljava/lang/String;)I
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -72,8 +71,6 @@
 
 .method private saveIntValue(Ljava/lang/String;I)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     return-void
 .end method
@@ -198,7 +195,6 @@
 
 .method public final saveOrientationInfo(Landroid/os/Bundle;)V
     .locals 8
-    .param p1    # Landroid/os/Bundle;
 
     if-eqz p1, :cond_0
 

@@ -31,8 +31,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -59,8 +57,6 @@
 # virtual methods
 .method protected collectBodyParameters(Loauth/signpost/http/HttpRequest;Loauth/signpost/http/HttpParameters;)V
     .locals 4
-    .param p1    # Loauth/signpost/http/HttpRequest;
-    .param p2    # Loauth/signpost/http/HttpParameters;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -99,8 +95,6 @@
 
 .method protected collectHeaderParameters(Loauth/signpost/http/HttpRequest;Loauth/signpost/http/HttpParameters;)V
     .locals 2
-    .param p1    # Loauth/signpost/http/HttpRequest;
-    .param p2    # Loauth/signpost/http/HttpParameters;
 
     const-string v1, "Authorization"
 
@@ -121,8 +115,6 @@
 
 .method protected collectQueryParameters(Loauth/signpost/http/HttpRequest;Loauth/signpost/http/HttpParameters;)V
     .locals 4
-    .param p1    # Loauth/signpost/http/HttpRequest;
-    .param p2    # Loauth/signpost/http/HttpParameters;
 
     invoke-interface {p1}, Loauth/signpost/http/HttpRequest;->getRequestUrl()Ljava/lang/String;
 
@@ -156,7 +148,6 @@
 
 .method protected completeOAuthParameters(Loauth/signpost/http/HttpParameters;)V
     .locals 3
-    .param p1    # Loauth/signpost/http/HttpParameters;
 
     const/4 v2, 0x1
 
@@ -363,7 +354,6 @@
 
 .method public setAdditionalParameters(Loauth/signpost/http/HttpParameters;)V
     .locals 0
-    .param p1    # Loauth/signpost/http/HttpParameters;
 
     iput-object p1, p0, Loauth/signpost/AbstractOAuthConsumer;->additionalParameters:Loauth/signpost/http/HttpParameters;
 
@@ -372,7 +362,6 @@
 
 .method public setMessageSigner(Loauth/signpost/signature/OAuthMessageSigner;)V
     .locals 1
-    .param p1    # Loauth/signpost/signature/OAuthMessageSigner;
 
     iput-object p1, p0, Loauth/signpost/AbstractOAuthConsumer;->messageSigner:Loauth/signpost/signature/OAuthMessageSigner;
 
@@ -385,7 +374,6 @@
 
 .method public setSendEmptyTokens(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Loauth/signpost/AbstractOAuthConsumer;->sendEmptyTokens:Z
 
@@ -394,7 +382,6 @@
 
 .method public setSigningStrategy(Loauth/signpost/signature/SigningStrategy;)V
     .locals 0
-    .param p1    # Loauth/signpost/signature/SigningStrategy;
 
     iput-object p1, p0, Loauth/signpost/AbstractOAuthConsumer;->signingStrategy:Loauth/signpost/signature/SigningStrategy;
 
@@ -403,8 +390,6 @@
 
 .method public setTokenWithSecret(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iput-object p1, p0, Loauth/signpost/AbstractOAuthConsumer;->token:Ljava/lang/String;
 
@@ -417,7 +402,6 @@
 
 .method public sign(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Loauth/signpost/exception/OAuthMessageSignerException;,
@@ -451,7 +435,6 @@
 
 .method public sign(Ljava/lang/Object;)Loauth/signpost/http/HttpRequest;
     .locals 1
-    .param p1    # Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Loauth/signpost/exception/OAuthMessageSignerException;,
@@ -473,7 +456,6 @@
 
 .method public sign(Loauth/signpost/http/HttpRequest;)Loauth/signpost/http/HttpRequest;
     .locals 5
-    .param p1    # Loauth/signpost/http/HttpRequest;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Loauth/signpost/exception/OAuthMessageSignerException;,

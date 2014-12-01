@@ -90,7 +90,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 7
-    .param p1    # Landroid/content/Context;
 
     const/4 v6, 0x0
 
@@ -297,7 +296,6 @@
 # virtual methods
 .method public getBitmap(Ljava/lang/String;)Landroid/graphics/Bitmap;
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     iget-boolean v2, p0, Lcom/android/launcher2/ThemeLoader;->mIsUseDefaultTheme:Z
 
@@ -362,7 +360,6 @@
 
 .method public getColor(Ljava/lang/String;)I
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     iget-boolean v2, p0, Lcom/android/launcher2/ThemeLoader;->mIsUseDefaultTheme:Z
 
@@ -427,7 +424,6 @@
 
 .method public getDrawable(Ljava/lang/String;)Landroid/graphics/drawable/Drawable;
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     iget-boolean v2, p0, Lcom/android/launcher2/ThemeLoader;->mIsUseDefaultTheme:Z
 
@@ -492,7 +488,6 @@
 
 .method public getText(Ljava/lang/String;)Ljava/lang/String;
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     iget-boolean v3, p0, Lcom/android/launcher2/ThemeLoader;->mIsUseDefaultTheme:Z
 
@@ -571,7 +566,6 @@
 
 .method public load3rdAppIconBitmap(Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
     .locals 8
-    .param p1    # Landroid/graphics/Bitmap;
 
     const/high16 v7, 0x3f400000
 
@@ -661,7 +655,6 @@
 
 .method public load3rdAppMenuIconBitmap(Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
     .locals 8
-    .param p1    # Landroid/graphics/Bitmap;
 
     const/4 v0, 0x0
 
@@ -794,7 +787,6 @@
 
 .method public loadAppIconBitmap(Ljava/lang/String;)Landroid/graphics/Bitmap;
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -874,7 +866,6 @@
 
 .method public loadAppIconBitmapByPackageName(Ljava/lang/String;)Landroid/graphics/Bitmap;
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -944,7 +935,6 @@
 
 .method public loadAppMenuIconBitmap(Ljava/lang/String;)Landroid/graphics/Bitmap;
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -1096,7 +1086,6 @@
 
 .method public loadIconDrawable(Ljava/lang/String;)Landroid/graphics/drawable/Drawable;
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     iget-boolean v3, p0, Lcom/android/launcher2/ThemeLoader;->mIsUseDefaultTheme:Z
 
@@ -1183,8 +1172,6 @@
 
 .method public loadSamsungWidgetPreviewBitmap(Ljava/lang/String;Ljava/lang/String;)Landroid/graphics/Bitmap;
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -1287,8 +1274,6 @@
 
 .method public loadSamsungWidgetPreviewDrawable(Ljava/lang/String;Ljava/lang/String;)Landroid/graphics/drawable/Drawable;
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -1395,7 +1380,6 @@
 
 .method public loadWidgetPreviewBitmap(Ljava/lang/String;)Landroid/graphics/Bitmap;
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -1480,7 +1464,6 @@
 
 .method public loadWidgetPreviewDrawable(Ljava/lang/String;)Landroid/graphics/drawable/Drawable;
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -1569,7 +1552,6 @@
 
 .method public setMenuIconSize(I)V
     .locals 5
-    .param p1    # I
 
     sput p1, Lcom/android/launcher2/ThemeLoader;->sMenuIconWidth:I
 

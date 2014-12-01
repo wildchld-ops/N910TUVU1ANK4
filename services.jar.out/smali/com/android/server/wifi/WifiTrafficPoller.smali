@@ -124,9 +124,6 @@
 
 .method constructor <init>(Landroid/content/Context;Lcom/android/server/wifi/WifiService;Ljava/lang/String;)V
     .locals 11
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/server/wifi/WifiService;
-    .param p3    # Ljava/lang/String;
 
     const-wide/16 v4, 0x0
 
@@ -405,7 +402,6 @@
 
 .method static synthetic access$100(Lcom/android/server/wifi/WifiTrafficPoller;)Landroid/net/NetworkInfo;
     .locals 1
-    .param p0    # Lcom/android/server/wifi/WifiTrafficPoller;
 
     iget-object v0, p0, Lcom/android/server/wifi/WifiTrafficPoller;->mNetworkInfo:Landroid/net/NetworkInfo;
 
@@ -414,8 +410,6 @@
 
 .method static synthetic access$102(Lcom/android/server/wifi/WifiTrafficPoller;Landroid/net/NetworkInfo;)Landroid/net/NetworkInfo;
     .locals 0
-    .param p0    # Lcom/android/server/wifi/WifiTrafficPoller;
-    .param p1    # Landroid/net/NetworkInfo;
 
     iput-object p1, p0, Lcom/android/server/wifi/WifiTrafficPoller;->mNetworkInfo:Landroid/net/NetworkInfo;
 
@@ -424,7 +418,6 @@
 
 .method static synthetic access$200(Lcom/android/server/wifi/WifiTrafficPoller;)Ljava/util/concurrent/atomic/AtomicBoolean;
     .locals 1
-    .param p0    # Lcom/android/server/wifi/WifiTrafficPoller;
 
     iget-object v0, p0, Lcom/android/server/wifi/WifiTrafficPoller;->mScreenOn:Ljava/util/concurrent/atomic/AtomicBoolean;
 
@@ -433,7 +426,6 @@
 
 .method static synthetic access$300(Lcom/android/server/wifi/WifiTrafficPoller;)I
     .locals 1
-    .param p0    # Lcom/android/server/wifi/WifiTrafficPoller;
 
     iget v0, p0, Lcom/android/server/wifi/WifiTrafficPoller;->mHotspotClientNum:I
 
@@ -442,8 +434,6 @@
 
 .method static synthetic access$302(Lcom/android/server/wifi/WifiTrafficPoller;I)I
     .locals 0
-    .param p0    # Lcom/android/server/wifi/WifiTrafficPoller;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/wifi/WifiTrafficPoller;->mHotspotClientNum:I
 
@@ -452,7 +442,6 @@
 
 .method static synthetic access$400(Lcom/android/server/wifi/WifiTrafficPoller;)Z
     .locals 1
-    .param p0    # Lcom/android/server/wifi/WifiTrafficPoller;
 
     iget-boolean v0, p0, Lcom/android/server/wifi/WifiTrafficPoller;->mEnableTrafficStatsPoll:Z
 
@@ -461,8 +450,6 @@
 
 .method static synthetic access$402(Lcom/android/server/wifi/WifiTrafficPoller;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/wifi/WifiTrafficPoller;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/wifi/WifiTrafficPoller;->mEnableTrafficStatsPoll:Z
 
@@ -471,7 +458,6 @@
 
 .method static synthetic access$500(Lcom/android/server/wifi/WifiTrafficPoller;)I
     .locals 1
-    .param p0    # Lcom/android/server/wifi/WifiTrafficPoller;
 
     iget v0, p0, Lcom/android/server/wifi/WifiTrafficPoller;->mTrafficStatsPollToken:I
 
@@ -480,7 +466,6 @@
 
 .method static synthetic access$508(Lcom/android/server/wifi/WifiTrafficPoller;)I
     .locals 2
-    .param p0    # Lcom/android/server/wifi/WifiTrafficPoller;
 
     iget v0, p0, Lcom/android/server/wifi/WifiTrafficPoller;->mTrafficStatsPollToken:I
 
@@ -493,7 +478,6 @@
 
 .method static synthetic access$600(Lcom/android/server/wifi/WifiTrafficPoller;)Ljava/util/List;
     .locals 1
-    .param p0    # Lcom/android/server/wifi/WifiTrafficPoller;
 
     iget-object v0, p0, Lcom/android/server/wifi/WifiTrafficPoller;->mClients:Ljava/util/List;
 
@@ -504,7 +488,6 @@
 # virtual methods
 .method addClient(Landroid/os/Messenger;)V
     .locals 2
-    .param p1    # Landroid/os/Messenger;
 
     iget-object v0, p0, Lcom/android/server/wifi/WifiTrafficPoller;->mTrafficHandler:Lcom/android/server/wifi/WifiTrafficPoller$TrafficHandler;
 
@@ -620,9 +603,6 @@
 
 .method dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -1664,7 +1644,6 @@
 
 .method removeClient(Landroid/os/Messenger;)V
     .locals 2
-    .param p1    # Landroid/os/Messenger;
 
     iget-object v0, p0, Lcom/android/server/wifi/WifiTrafficPoller;->mTrafficHandler:Lcom/android/server/wifi/WifiTrafficPoller$TrafficHandler;
 

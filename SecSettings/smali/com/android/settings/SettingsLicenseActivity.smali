@@ -42,8 +42,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/SettingsLicenseActivity;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/settings/SettingsLicenseActivity;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/settings/SettingsLicenseActivity;->showPageOfText(Ljava/lang/String;)V
 
@@ -52,7 +50,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/SettingsLicenseActivity;)V
     .locals 0
-    .param p0    # Lcom/android/settings/SettingsLicenseActivity;
 
     invoke-direct {p0}, Lcom/android/settings/SettingsLicenseActivity;->showErrorAndFinish()V
 
@@ -61,7 +58,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/SettingsLicenseActivity;)Landroid/app/ProgressDialog;
     .locals 1
-    .param p0    # Lcom/android/settings/SettingsLicenseActivity;
 
     iget-object v0, p0, Lcom/android/settings/SettingsLicenseActivity;->mSpinnerDlg:Landroid/app/ProgressDialog;
 
@@ -70,7 +66,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/SettingsLicenseActivity;)Landroid/app/AlertDialog;
     .locals 1
-    .param p0    # Lcom/android/settings/SettingsLicenseActivity;
 
     iget-object v0, p0, Lcom/android/settings/SettingsLicenseActivity;->mTextDlg:Landroid/app/AlertDialog;
 
@@ -105,7 +100,6 @@
 
 .method private showPageOfText(Ljava/lang/String;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -175,7 +169,6 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 8
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v7, 0x0
 

@@ -106,7 +106,7 @@
 
     iget-object v0, p0, Lcom/android/phone/ADNList$QueryHandler;->this$0:Lcom/android/phone/ADNList;
 
-    invoke-virtual {v0}, Landroid/app/Fragment;->isAdded()Z
+    invoke-virtual {v0}, Lcom/android/phone/ADNList;->isAdded()Z
 
     move-result v0
 
@@ -142,7 +142,7 @@
 
     iget-object v0, p0, Lcom/android/phone/ADNList$QueryHandler;->this$0:Lcom/android/phone/ADNList;
 
-    invoke-virtual {v0}, Landroid/app/Fragment;->getFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual {v0}, Lcom/android/phone/ADNList;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v0
 

@@ -94,10 +94,6 @@
 # direct methods
 .method public constructor <init>(IILandroid/drm/ProcessedData;Ljava/lang/String;)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/drm/ProcessedData;
-    .param p4    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -192,7 +188,6 @@
 
 .method private isValidStatusCode(I)Z
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x1
 

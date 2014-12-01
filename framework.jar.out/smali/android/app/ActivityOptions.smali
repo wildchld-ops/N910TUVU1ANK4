@@ -82,7 +82,6 @@
 
 .method public constructor <init>(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v2, 0x0
 
@@ -295,7 +294,6 @@
 
 .method public static abort(Landroid/os/Bundle;)V
     .locals 1
-    .param p0    # Landroid/os/Bundle;
 
     if-eqz p0, :cond_0
 
@@ -311,9 +309,6 @@
 
 .method public static makeCustomAnimation(Landroid/content/Context;II)Landroid/app/ActivityOptions;
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -326,11 +321,6 @@
 
 .method public static makeCustomAnimation(Landroid/content/Context;IILandroid/os/Handler;Landroid/app/ActivityOptions$OnAnimationStartedListener;)Landroid/app/ActivityOptions;
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/os/Handler;
-    .param p4    # Landroid/app/ActivityOptions$OnAnimationStartedListener;
 
     new-instance v0, Landroid/app/ActivityOptions;
 
@@ -357,12 +347,6 @@
 
 .method public static makePrevScreenScaleDownAnimationForRecent(Landroid/view/View;IIIILandroid/app/ActivityOptions$OnAnimationStartedListener;)Landroid/app/ActivityOptions;
     .locals 3
-    .param p0    # Landroid/view/View;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Landroid/app/ActivityOptions$OnAnimationStartedListener;
 
     new-instance v0, Landroid/app/ActivityOptions;
 
@@ -419,11 +403,6 @@
 
 .method public static makeScaleUpAnimation(Landroid/view/View;IIII)Landroid/app/ActivityOptions;
     .locals 4
-    .param p0    # Landroid/view/View;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/4 v3, 0x2
 
@@ -472,12 +451,6 @@
 
 .method private static makeThumbnailAnimation(Landroid/view/View;Landroid/graphics/Bitmap;IILandroid/app/ActivityOptions$OnAnimationStartedListener;Z)Landroid/app/ActivityOptions;
     .locals 3
-    .param p0    # Landroid/view/View;
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/app/ActivityOptions$OnAnimationStartedListener;
-    .param p5    # Z
 
     new-instance v0, Landroid/app/ActivityOptions;
 
@@ -540,11 +513,6 @@
 
 .method public static makeThumbnailScaleDownAnimation(Landroid/view/View;Landroid/graphics/Bitmap;IILandroid/app/ActivityOptions$OnAnimationStartedListener;)Landroid/app/ActivityOptions;
     .locals 6
-    .param p0    # Landroid/view/View;
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/app/ActivityOptions$OnAnimationStartedListener;
 
     const/4 v5, 0x0
 
@@ -567,10 +535,6 @@
 
 .method public static makeThumbnailScaleUpAnimation(Landroid/view/View;Landroid/graphics/Bitmap;II)Landroid/app/ActivityOptions;
     .locals 1
-    .param p0    # Landroid/view/View;
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v0, 0x0
 
@@ -583,11 +547,6 @@
 
 .method public static makeThumbnailScaleUpAnimation(Landroid/view/View;Landroid/graphics/Bitmap;IILandroid/app/ActivityOptions$OnAnimationStartedListener;)Landroid/app/ActivityOptions;
     .locals 6
-    .param p0    # Landroid/view/View;
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/app/ActivityOptions$OnAnimationStartedListener;
 
     const/4 v5, 0x1
 
@@ -610,8 +569,6 @@
 
 .method private setListener(Landroid/os/Handler;Landroid/app/ActivityOptions$OnAnimationStartedListener;)V
     .locals 3
-    .param p1    # Landroid/os/Handler;
-    .param p2    # Landroid/app/ActivityOptions$OnAnimationStartedListener;
 
     if-eqz p2, :cond_0
 
@@ -943,7 +900,6 @@
 
 .method public update(Landroid/app/ActivityOptions;)V
     .locals 3
-    .param p1    # Landroid/app/ActivityOptions;
 
     const/4 v2, 0x0
 

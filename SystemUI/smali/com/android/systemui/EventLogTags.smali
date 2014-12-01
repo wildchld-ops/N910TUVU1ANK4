@@ -28,9 +28,6 @@
 
 .method public static writeSysuiNotificationpanelTouch(III)V
     .locals 4
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
 
     const v0, 0x8cb4
 
@@ -69,10 +66,6 @@
 
 .method public static writeSysuiPanelbarTouch(IIII)V
     .locals 4
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const v0, 0x8caa
 
@@ -119,9 +112,6 @@
 
 .method public static writeSysuiPanelholderTouch(III)V
     .locals 4
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
 
     const v0, 0x8cc8
 
@@ -160,9 +150,6 @@
 
 .method public static writeSysuiQuickpanelTouch(III)V
     .locals 4
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
 
     const v0, 0x8cbe
 
@@ -201,9 +188,6 @@
 
 .method public static writeSysuiSearchpanelTouch(III)V
     .locals 4
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
 
     const v0, 0x8cd2
 
@@ -242,10 +226,6 @@
 
 .method public static writeSysuiStatusbarTouch(IIII)V
     .locals 4
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const v0, 0x8ca0
 

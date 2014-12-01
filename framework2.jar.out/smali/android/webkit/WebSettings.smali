@@ -41,7 +41,6 @@
 
 .method public static getDefaultUserAgent(Landroid/content/Context;)Ljava/lang/String;
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     invoke-static {}, Landroid/webkit/WebViewFactory;->getProvider()Landroid/webkit/WebViewFactoryProvider;
 
@@ -916,7 +915,6 @@
 
 .method public setAllowContentAccess(Z)V
     .locals 1
-    .param p1    # Z
 
     new-instance v0, Landroid/webkit/MustOverrideException;
 
@@ -927,7 +925,6 @@
 
 .method public setAllowFileAccess(Z)V
     .locals 1
-    .param p1    # Z
 
     new-instance v0, Landroid/webkit/MustOverrideException;
 
@@ -944,7 +941,6 @@
 
 .method public declared-synchronized setAppCacheEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     monitor-enter p0
 
@@ -967,7 +963,6 @@
 
 .method public declared-synchronized setAppCacheMaxSize(J)V
     .locals 1
-    .param p1    # J
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -992,7 +987,6 @@
 
 .method public declared-synchronized setAppCachePath(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -1015,7 +1009,6 @@
 
 .method public declared-synchronized setBlockNetworkImage(Z)V
     .locals 1
-    .param p1    # Z
 
     monitor-enter p0
 
@@ -1038,7 +1031,6 @@
 
 .method public declared-synchronized setBlockNetworkLoads(Z)V
     .locals 1
-    .param p1    # Z
 
     monitor-enter p0
 
@@ -1061,7 +1053,6 @@
 
 .method public setBuiltInZoomControls(Z)V
     .locals 1
-    .param p1    # Z
 
     new-instance v0, Landroid/webkit/MustOverrideException;
 
@@ -1072,7 +1063,6 @@
 
 .method public setCacheMode(I)V
     .locals 1
-    .param p1    # I
 
     new-instance v0, Landroid/webkit/MustOverrideException;
 
@@ -1083,7 +1073,6 @@
 
 .method public declared-synchronized setCursiveFontFamily(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -1106,7 +1095,6 @@
 
 .method public declared-synchronized setDatabaseEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     monitor-enter p0
 
@@ -1129,7 +1117,6 @@
 
 .method public declared-synchronized setDatabasePath(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -1154,7 +1141,6 @@
 
 .method public declared-synchronized setDefaultFixedFontSize(I)V
     .locals 1
-    .param p1    # I
 
     monitor-enter p0
 
@@ -1177,7 +1163,6 @@
 
 .method public declared-synchronized setDefaultFontSize(I)V
     .locals 1
-    .param p1    # I
 
     monitor-enter p0
 
@@ -1200,7 +1185,6 @@
 
 .method public declared-synchronized setDefaultTextEncodingName(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -1223,7 +1207,6 @@
 
 .method public setDefaultZoom(Landroid/webkit/WebSettings$ZoomDensity;)V
     .locals 1
-    .param p1    # Landroid/webkit/WebSettings$ZoomDensity;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -1236,7 +1219,6 @@
 
 .method public setDisplayZoomControls(Z)V
     .locals 1
-    .param p1    # Z
 
     new-instance v0, Landroid/webkit/MustOverrideException;
 
@@ -1247,7 +1229,6 @@
 
 .method public declared-synchronized setDomStorageEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     monitor-enter p0
 
@@ -1270,7 +1251,6 @@
 
 .method public setEnableSmoothTransition(Z)V
     .locals 1
-    .param p1    # Z
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -1283,7 +1263,6 @@
 
 .method public declared-synchronized setFantasyFontFamily(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -1306,7 +1285,6 @@
 
 .method public declared-synchronized setFixedFontFamily(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -1329,7 +1307,6 @@
 
 .method public declared-synchronized setGeolocationDatabasePath(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -1352,7 +1329,6 @@
 
 .method public declared-synchronized setGeolocationEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     monitor-enter p0
 
@@ -1375,7 +1351,6 @@
 
 .method public declared-synchronized setJavaScriptCanOpenWindowsAutomatically(Z)V
     .locals 1
-    .param p1    # Z
 
     monitor-enter p0
 
@@ -1398,7 +1373,6 @@
 
 .method public declared-synchronized setJavaScriptEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     monitor-enter p0
 
@@ -1421,7 +1395,6 @@
 
 .method public declared-synchronized setLayoutAlgorithm(Landroid/webkit/WebSettings$LayoutAlgorithm;)V
     .locals 1
-    .param p1    # Landroid/webkit/WebSettings$LayoutAlgorithm;
 
     monitor-enter p0
 
@@ -1444,7 +1417,6 @@
 
 .method public setLightTouchEnabled(Z)V
     .locals 1
-    .param p1    # Z
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -1457,7 +1429,6 @@
 
 .method public setLoadWithOverviewMode(Z)V
     .locals 1
-    .param p1    # Z
 
     new-instance v0, Landroid/webkit/MustOverrideException;
 
@@ -1468,7 +1439,6 @@
 
 .method public declared-synchronized setLoadsImagesAutomatically(Z)V
     .locals 1
-    .param p1    # Z
 
     monitor-enter p0
 
@@ -1491,7 +1461,6 @@
 
 .method public setMediaPlaybackRequiresUserGesture(Z)V
     .locals 1
-    .param p1    # Z
 
     new-instance v0, Landroid/webkit/MustOverrideException;
 
@@ -1502,7 +1471,6 @@
 
 .method public declared-synchronized setMinimumFontSize(I)V
     .locals 1
-    .param p1    # I
 
     monitor-enter p0
 
@@ -1525,7 +1493,6 @@
 
 .method public declared-synchronized setMinimumLogicalFontSize(I)V
     .locals 1
-    .param p1    # I
 
     monitor-enter p0
 
@@ -1548,7 +1515,6 @@
 
 .method public setNavDump(Z)V
     .locals 1
-    .param p1    # Z
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -1561,7 +1527,6 @@
 
 .method public setNeedInitialFocus(Z)V
     .locals 1
-    .param p1    # Z
 
     new-instance v0, Landroid/webkit/MustOverrideException;
 
@@ -1572,7 +1537,6 @@
 
 .method public declared-synchronized setPluginState(Landroid/webkit/WebSettings$PluginState;)V
     .locals 1
-    .param p1    # Landroid/webkit/WebSettings$PluginState;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -1597,7 +1561,6 @@
 
 .method public declared-synchronized setPluginsEnabled(Z)V
     .locals 1
-    .param p1    # Z
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -1622,7 +1585,6 @@
 
 .method public declared-synchronized setPluginsPath(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -1635,7 +1597,6 @@
 
 .method public declared-synchronized setRenderPriority(Landroid/webkit/WebSettings$RenderPriority;)V
     .locals 1
-    .param p1    # Landroid/webkit/WebSettings$RenderPriority;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -1660,7 +1621,6 @@
 
 .method public declared-synchronized setSansSerifFontFamily(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -1683,7 +1643,6 @@
 
 .method public setSaveFormData(Z)V
     .locals 1
-    .param p1    # Z
 
     new-instance v0, Landroid/webkit/MustOverrideException;
 
@@ -1694,7 +1653,6 @@
 
 .method public setSavePassword(Z)V
     .locals 1
-    .param p1    # Z
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -1707,7 +1665,6 @@
 
 .method public declared-synchronized setSerifFontFamily(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -1730,7 +1687,6 @@
 
 .method public declared-synchronized setStandardFontFamily(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -1753,7 +1709,6 @@
 
 .method public declared-synchronized setSupportMultipleWindows(Z)V
     .locals 1
-    .param p1    # Z
 
     monitor-enter p0
 
@@ -1776,7 +1731,6 @@
 
 .method public setSupportZoom(Z)V
     .locals 1
-    .param p1    # Z
 
     new-instance v0, Landroid/webkit/MustOverrideException;
 
@@ -1787,7 +1741,6 @@
 
 .method public declared-synchronized setTextSize(Landroid/webkit/WebSettings$TextSize;)V
     .locals 1
-    .param p1    # Landroid/webkit/WebSettings$TextSize;
 
     monitor-enter p0
 
@@ -1812,7 +1765,6 @@
 
 .method public declared-synchronized setTextZoom(I)V
     .locals 1
-    .param p1    # I
 
     monitor-enter p0
 
@@ -1835,7 +1787,6 @@
 
 .method public declared-synchronized setUseDoubleTree(Z)V
     .locals 0
-    .param p1    # Z
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -1848,7 +1799,6 @@
 
 .method public setUseWebViewBackgroundForOverscrollBackground(Z)V
     .locals 1
-    .param p1    # Z
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -1861,7 +1811,6 @@
 
 .method public declared-synchronized setUseWideViewPort(Z)V
     .locals 1
-    .param p1    # Z
 
     monitor-enter p0
 
@@ -1884,7 +1833,6 @@
 
 .method public declared-synchronized setUserAgent(I)V
     .locals 1
-    .param p1    # I
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -1909,7 +1857,6 @@
 
 .method public declared-synchronized setUserAgentString(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 

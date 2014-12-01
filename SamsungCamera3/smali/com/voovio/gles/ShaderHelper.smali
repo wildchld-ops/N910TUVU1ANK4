@@ -14,8 +14,6 @@
 
 .method public static LoadProgram(Ljava/lang/String;Ljava/lang/String;)I
     .locals 7
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -100,8 +98,6 @@
 
 .method public static LoadShader(Ljava/lang/String;I)I
     .locals 6
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
 
     const/4 v2, 0x0
 

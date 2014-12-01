@@ -29,7 +29,6 @@
 # virtual methods
 .method protected doDelete(Ljava/io/File;)Z
     .locals 1
-    .param p1    # Ljava/io/File;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

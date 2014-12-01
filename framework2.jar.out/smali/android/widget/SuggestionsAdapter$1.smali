@@ -42,7 +42,6 @@
 # virtual methods
 .method public getPostingDelay(Ljava/lang/CharSequence;)J
     .locals 4
-    .param p1    # Ljava/lang/CharSequence;
 
     const-wide/16 v0, 0x0
 

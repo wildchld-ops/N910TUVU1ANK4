@@ -74,7 +74,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/content/SyncManager;Landroid/os/Looper;)V
     .locals 3
-    .param p2    # Landroid/os/Looper;
 
     const/4 v2, 0x0
 
@@ -115,9 +114,6 @@
 
 .method static synthetic access$1300(Lcom/android/server/content/SyncManager$SyncHandler;Landroid/accounts/Account;Ljava/lang/String;)Landroid/os/PowerManager$WakeLock;
     .locals 1
-    .param p0    # Lcom/android/server/content/SyncManager$SyncHandler;
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/content/SyncManager$SyncHandler;->getSyncWakeLock(Landroid/accounts/Account;Ljava/lang/String;)Landroid/os/PowerManager$WakeLock;
 
@@ -128,7 +124,6 @@
 
 .method static synthetic access$1600(Lcom/android/server/content/SyncManager$SyncHandler;)Ljava/lang/Long;
     .locals 1
-    .param p0    # Lcom/android/server/content/SyncManager$SyncHandler;
 
     iget-object v0, p0, Lcom/android/server/content/SyncManager$SyncHandler;->mAlarmScheduleTime:Ljava/lang/Long;
 
@@ -137,9 +132,6 @@
 
 .method private cancelActiveSyncLocked(Landroid/accounts/Account;ILjava/lang/String;)V
     .locals 4
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     new-instance v1, Ljava/util/ArrayList;
 
@@ -218,7 +210,6 @@
 
 .method private closeActiveSyncContext(Lcom/android/server/content/SyncManager$ActiveSyncContext;)V
     .locals 3
-    .param p1    # Lcom/android/server/content/SyncManager$ActiveSyncContext;
 
     invoke-virtual {p1}, Lcom/android/server/content/SyncManager$ActiveSyncContext;->close()V
 
@@ -248,7 +239,6 @@
 
 .method private dispatchSyncOperation(Lcom/android/server/content/SyncOperation;)Z
     .locals 12
-    .param p1    # Lcom/android/server/content/SyncOperation;
 
     const-string v1, "SyncManager"
 
@@ -669,8 +659,6 @@
 
 .method private getSyncWakeLock(Landroid/accounts/Account;Ljava/lang/String;)Landroid/os/PowerManager$WakeLock;
     .locals 5
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # Ljava/lang/String;
 
     invoke-static {p1, p2}, Landroid/util/Pair;->create(Ljava/lang/Object;Ljava/lang/Object;)Landroid/util/Pair;
 
@@ -755,10 +743,6 @@
 
 .method private installHandleTooManyDeletesNotification(Landroid/accounts/Account;Ljava/lang/String;JI)V
     .locals 13
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # Ljava/lang/String;
-    .param p3    # J
-    .param p5    # I
 
     iget-object v2, p0, Lcom/android/server/content/SyncManager$SyncHandler;->this$0:Lcom/android/server/content/SyncManager;
 
@@ -997,7 +981,6 @@
 
 .method private isActivityAvailable(Landroid/content/Intent;)Z
     .locals 7
-    .param p1    # Landroid/content/Intent;
 
     const/4 v5, 0x0
 
@@ -1054,8 +1037,6 @@
 
 .method private manageSyncAlarmLocked(JJ)V
     .locals 25
-    .param p1    # J
-    .param p3    # J
 
     move-object/from16 v0, p0
 
@@ -3655,8 +3636,6 @@
 
 .method private runBoundToSyncAdapter(Lcom/android/server/content/SyncManager$ActiveSyncContext;Landroid/content/ISyncAdapter;)V
     .locals 6
-    .param p1    # Lcom/android/server/content/SyncManager$ActiveSyncContext;
-    .param p2    # Landroid/content/ISyncAdapter;
 
     iput-object p2, p1, Lcom/android/server/content/SyncManager$ActiveSyncContext;->mSyncAdapter:Landroid/content/ISyncAdapter;
 
@@ -3747,8 +3726,6 @@
 
 .method private runSyncFinishedOrCanceledLocked(Landroid/content/SyncResult;Lcom/android/server/content/SyncManager$ActiveSyncContext;)V
     .locals 28
-    .param p1    # Landroid/content/SyncResult;
-    .param p2    # Lcom/android/server/content/SyncManager$ActiveSyncContext;
 
     const-string v2, "SyncManager"
 
@@ -4900,7 +4877,6 @@
 
 .method private syncResultToErrorNumber(Landroid/content/SyncResult;)I
     .locals 4
-    .param p1    # Landroid/content/SyncResult;
 
     const-wide/16 v2, 0x0
 
@@ -5020,7 +4996,6 @@
 
 .method private tryEnqueueMessageUntilReadyToRun(Landroid/os/Message;)Z
     .locals 2
-    .param p1    # Landroid/os/Message;
 
     monitor-enter p0
 
@@ -5070,7 +5045,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 16
-    .param p1    # Landroid/os/Message;
 
     invoke-direct/range {p0 .. p1}, Lcom/android/server/content/SyncManager$SyncHandler;->tryEnqueueMessageUntilReadyToRun(Landroid/os/Message;)Z
 
@@ -5589,7 +5563,6 @@
 
 .method public insertStartSyncEvent(Lcom/android/server/content/SyncOperation;)J
     .locals 10
-    .param p1    # Lcom/android/server/content/SyncOperation;
 
     const/4 v3, 0x0
 
@@ -5753,12 +5726,6 @@
 
 .method public stopSyncEvent(JLcom/android/server/content/SyncOperation;Ljava/lang/String;IIJ)V
     .locals 11
-    .param p1    # J
-    .param p3    # Lcom/android/server/content/SyncOperation;
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
-    .param p6    # I
-    .param p7    # J
 
     const/16 v1, 0xaa0
 

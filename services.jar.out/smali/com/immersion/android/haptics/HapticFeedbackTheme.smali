@@ -4359,9 +4359,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Landroid/content/ContentResolver;[Lcom/immersion/Device;)V
     .locals 15
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/ContentResolver;
-    .param p3    # [Lcom/immersion/Device;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -4893,8 +4890,6 @@
 
 .method public performHapticFeedback(ILcom/immersion/Device;)Z
     .locals 12
-    .param p1    # I
-    .param p2    # Lcom/immersion/Device;
 
     new-instance v7, Ljava/lang/StringBuffer;
 

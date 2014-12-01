@@ -210,7 +210,6 @@
 
 .method private LogAPDRLM(I)V
     .locals 4
-    .param p1    # I
 
     iget-object v0, p0, Landroid/hardware/contextaware/aggregator/lpp/log/LppLogManager;->mAPDRLM_Logging:Landroid/hardware/contextaware/aggregator/lpp/log/LPPDataLogging;
 
@@ -297,15 +296,12 @@
 
 .method public AddRTCoordinate(Landroid/location/Location;)V
     .locals 0
-    .param p1    # Landroid/location/Location;
 
     return-void
 .end method
 
 .method public LogData(ILjava/lang/String;)V
     .locals 4
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     packed-switch p1, :pswitch_data_0
 
@@ -375,14 +371,12 @@
 
 .method public init(Landroid/hardware/contextaware/aggregator/lpp/LppConfig;)V
     .locals 0
-    .param p1    # Landroid/hardware/contextaware/aggregator/lpp/LppConfig;
 
     return-void
 .end method
 
 .method public setILppDataProviderListener(Landroid/hardware/contextaware/aggregator/lpp/ILppDataProvider;)V
     .locals 0
-    .param p1    # Landroid/hardware/contextaware/aggregator/lpp/ILppDataProvider;
 
     iput-object p1, p0, Landroid/hardware/contextaware/aggregator/lpp/log/LppLogManager;->mLppDataProviderLnr:Landroid/hardware/contextaware/aggregator/lpp/ILppDataProvider;
 
@@ -391,7 +385,6 @@
 
 .method protected setLogName(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/hardware/contextaware/aggregator/lpp/log/LppLogManager;->LogFolderName:Ljava/lang/String;
 

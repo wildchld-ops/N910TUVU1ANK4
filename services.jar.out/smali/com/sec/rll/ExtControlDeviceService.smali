@@ -87,7 +87,6 @@
 
 .method public static init(Landroid/content/Context;)V
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     sput-object p0, Lcom/sec/rll/ExtControlDeviceService;->mContext:Landroid/content/Context;
 
@@ -224,7 +223,6 @@
 
 .method private static setLocationMode(I)Z
     .locals 2
-    .param p0    # I
 
     invoke-static {}, Landroid/os/Binder;->clearCallingIdentity()J
 
@@ -245,7 +243,6 @@
 
 .method private static setNfcState(I)V
     .locals 3
-    .param p0    # I
 
     const-string/jumbo v1, "persist.security.nfc.lockout"
 
@@ -276,7 +273,6 @@
 # virtual methods
 .method public getStatus(I)I
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -398,8 +394,6 @@
 
 .method public setStatus(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

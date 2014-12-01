@@ -34,7 +34,6 @@
 # direct methods
 .method constructor <init>(Lcom/sec/knox/container/manager/EnterpriseContainerCallbackList;Landroid/os/IInterface;[Ljava/lang/String;)V
     .locals 0
-    .param p3    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;[",

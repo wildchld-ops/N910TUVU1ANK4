@@ -30,9 +30,6 @@
 # direct methods
 .method public constructor <init>(ZILcom/android/launcher2/TweenCallback;)V
     .locals 1
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # Lcom/android/launcher2/TweenCallback;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -73,7 +70,6 @@
 # virtual methods
 .method public start(Z)V
     .locals 2
-    .param p1    # Z
 
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 
@@ -86,8 +82,6 @@
 
 .method public start(ZJ)V
     .locals 10
-    .param p1    # Z
-    .param p2    # J
 
     iget-boolean v6, p0, Lcom/android/launcher2/SymmetricalLinearTween;->mDirection:Z
 

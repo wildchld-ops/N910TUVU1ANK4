@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -106,7 +105,6 @@
 
 .method public onBezelCallback(Lcom/samsung/android/bezelinteraction/BezelEvent;)V
     .locals 5
-    .param p1    # Lcom/samsung/android/bezelinteraction/BezelEvent;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

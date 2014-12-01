@@ -56,7 +56,6 @@
 
 .method public static decodeHex([C)[B
     .locals 7
-    .param p0    # [C
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/commons/codec/DecoderException;
@@ -125,7 +124,6 @@
 
 .method public static encodeHex([B)[C
     .locals 7
-    .param p0    # [B
 
     array-length v3, p0
 
@@ -178,8 +176,6 @@
 
 .method protected static toDigit(CI)I
     .locals 4
-    .param p0    # C
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/commons/codec/DecoderException;
@@ -238,7 +234,6 @@
 # virtual methods
 .method public decode(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 4
-    .param p1    # Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/commons/codec/DecoderException;
@@ -288,7 +283,6 @@
 
 .method public decode([B)[B
     .locals 1
-    .param p1    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/commons/codec/DecoderException;
@@ -312,7 +306,6 @@
 
 .method public encode(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 4
-    .param p1    # Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/commons/codec/EncoderException;
@@ -362,7 +355,6 @@
 
 .method public encode([B)[B
     .locals 2
-    .param p1    # [B
 
     new-instance v0, Ljava/lang/String;
 

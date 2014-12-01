@@ -76,8 +76,6 @@
 
 .method public constructor <init>(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -92,9 +90,6 @@
 
 .method public constructor <init>(ILjava/lang/String;I)V
     .locals 7
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     const/16 v3, 0x8
 
@@ -266,7 +261,6 @@
 
 .method public constructor <init>(Landroid/os/Parcel;)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -355,7 +349,6 @@
 
 .method public setCid(I)V
     .locals 0
-    .param p1    # I
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -366,7 +359,6 @@
 
 .method public setRssi(I)V
     .locals 0
-    .param p1    # I
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -498,8 +490,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget v0, p0, Landroid/telephony/NeighboringCellInfo;->mRssi:I
 

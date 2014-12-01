@@ -76,7 +76,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Landroid/widget/RelativeLayout;-><init>(Landroid/content/Context;)V
 
@@ -87,8 +86,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/widget/RelativeLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -101,7 +98,6 @@
 # virtual methods
 .method public bind(Lcom/android/mms/ui/MessageSkinFakeItem;)V
     .locals 12
-    .param p1    # Lcom/android/mms/ui/MessageSkinFakeItem;
 
     const/4 v11, 0x1
 
@@ -374,7 +370,6 @@
 
 .method public setBubbleImage(I)V
     .locals 5
-    .param p1    # I
 
     const/4 v4, 0x1
 
@@ -485,7 +480,6 @@
 
 .method public setMessageItem(Lcom/android/mms/ui/MessageSkinFakeItem;)V
     .locals 0
-    .param p1    # Lcom/android/mms/ui/MessageSkinFakeItem;
 
     iput-object p1, p0, Lcom/android/mms/ui/MessageSkinBubbleItem;->mMessageItem:Lcom/android/mms/ui/MessageSkinFakeItem;
 

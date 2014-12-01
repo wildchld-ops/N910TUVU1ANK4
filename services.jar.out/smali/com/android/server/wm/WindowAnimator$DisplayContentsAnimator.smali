@@ -41,8 +41,6 @@
 
 .method synthetic constructor <init>(Lcom/android/server/wm/WindowAnimator;Lcom/android/server/wm/WindowAnimator$1;)V
     .locals 0
-    .param p1    # Lcom/android/server/wm/WindowAnimator;
-    .param p2    # Lcom/android/server/wm/WindowAnimator$1;
 
     invoke-direct {p0, p1}, Lcom/android/server/wm/WindowAnimator$DisplayContentsAnimator;-><init>(Lcom/android/server/wm/WindowAnimator;)V
 

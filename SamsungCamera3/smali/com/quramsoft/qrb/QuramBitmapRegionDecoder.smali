@@ -58,8 +58,6 @@
 
 .method public static newInstance(Ljava/io/FileDescriptor;Z)Lcom/quramsoft/qrb/QuramBitmapRegionDecoder;
     .locals 3
-    .param p0    # Ljava/io/FileDescriptor;
-    .param p1    # Z
 
     new-instance v0, Lcom/quramsoft/qrb/QuramBitmapRegionDecoder;
 
@@ -91,8 +89,6 @@
 
 .method public static newInstance(Ljava/io/InputStream;Z)Lcom/quramsoft/qrb/QuramBitmapRegionDecoder;
     .locals 3
-    .param p0    # Ljava/io/InputStream;
-    .param p1    # Z
 
     new-instance v0, Lcom/quramsoft/qrb/QuramBitmapRegionDecoder;
 
@@ -124,9 +120,6 @@
 
 .method public static newInstance(Ljava/lang/String;ZLcom/quramsoft/qrb/QuramBitmapFactory$Options;)Lcom/quramsoft/qrb/QuramBitmapRegionDecoder;
     .locals 5
-    .param p0    # Ljava/lang/String;
-    .param p1    # Z
-    .param p2    # Lcom/quramsoft/qrb/QuramBitmapFactory$Options;
 
     const/4 v4, 0x0
 
@@ -217,10 +210,6 @@
 
 .method public static newInstance([BIIZ)Lcom/quramsoft/qrb/QuramBitmapRegionDecoder;
     .locals 4
-    .param p0    # [B
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     or-int v2, p1, p2
 
@@ -270,11 +259,6 @@
 
 .method public static newInstanceWithDec(Ljava/lang/String;Landroid/graphics/Bitmap;IZLcom/quramsoft/qrb/QuramBitmapFactory$Options;)Lcom/quramsoft/qrb/QuramBitmapRegionDecoder;
     .locals 5
-    .param p0    # Ljava/lang/String;
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # Lcom/quramsoft/qrb/QuramBitmapFactory$Options;
 
     const/4 v2, 0x0
 
@@ -354,8 +338,6 @@
 
 .method public decodeRegion(Landroid/graphics/Rect;Landroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;
     .locals 1
-    .param p1    # Landroid/graphics/Rect;
-    .param p2    # Landroid/graphics/BitmapFactory$Options;
 
     iget-boolean v0, p0, Lcom/quramsoft/qrb/QuramBitmapRegionDecoder;->mIsUseQuramRegionDecoder:Z
 

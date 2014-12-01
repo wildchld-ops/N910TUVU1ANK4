@@ -28,7 +28,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/mms/ui/ComposeMenu;J)V
     .locals 0
-    .param p2    # J
 
     iput-object p1, p0, Lcom/android/mms/ui/ComposeMenu$DeleteSpamThreadListener;->this$0:Lcom/android/mms/ui/ComposeMenu;
 
@@ -43,8 +42,6 @@
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 3
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     iget-boolean v1, p0, Lcom/android/mms/ui/ComposeMenu$DeleteSpamThreadListener;->mDeleteSpamThread:Z
 
@@ -135,7 +132,6 @@
 
 .method public setDeleteSpamThread(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/ComposeMenu$DeleteSpamThreadListener;->mDeleteSpamThread:Z
 

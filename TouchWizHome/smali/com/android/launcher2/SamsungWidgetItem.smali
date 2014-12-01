@@ -68,9 +68,6 @@
 
 .method static makeSamsungWidget(Landroid/content/Context;Lcom/android/launcher2/SamsungWidgetProviderInfo;J)Lcom/android/launcher2/SamsungWidgetItem;
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/launcher2/SamsungWidgetProviderInfo;
-    .param p2    # J
 
     const/4 v0, 0x0
 
@@ -83,10 +80,6 @@
 
 .method static makeSamsungWidget(Landroid/content/Context;Lcom/android/launcher2/SamsungWidgetProviderInfo;JLcom/android/launcher2/SamsungWidgetItem;)Lcom/android/launcher2/SamsungWidgetItem;
     .locals 24
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lcom/android/launcher2/SamsungWidgetProviderInfo;
-    .param p2    # J
-    .param p4    # Lcom/android/launcher2/SamsungWidgetItem;
 
     sget-boolean v20, Lcom/android/launcher2/SamsungWidgetItem;->DEBUGGABLE:Z
 
@@ -950,7 +943,6 @@
 # virtual methods
 .method public fireOnPause(Landroid/content/Context;)V
     .locals 11
-    .param p1    # Landroid/content/Context;
 
     iget v7, p0, Lcom/android/launcher2/SamsungWidgetItem;->state:I
 
@@ -1111,7 +1103,6 @@
 
 .method public fireOnResume(Landroid/content/Context;)V
     .locals 11
-    .param p1    # Landroid/content/Context;
 
     const/4 v8, 0x1
 
@@ -1308,7 +1299,6 @@
 
 .method onAddToDatabase(Landroid/content/ContentValues;)V
     .locals 4
-    .param p1    # Landroid/content/ContentValues;
 
     invoke-super {p0, p1}, Lcom/android/launcher2/HomeItem;->onAddToDatabase(Landroid/content/ContentValues;)V
 
@@ -1349,9 +1339,6 @@
 
 .method final setIntent(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     new-instance v0, Landroid/content/Intent;
 

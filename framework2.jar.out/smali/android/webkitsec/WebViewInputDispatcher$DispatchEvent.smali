@@ -43,7 +43,6 @@
 
 .method synthetic constructor <init>(Landroid/webkitsec/WebViewInputDispatcher$1;)V
     .locals 0
-    .param p1    # Landroid/webkitsec/WebViewInputDispatcher$1;
 
     invoke-direct {p0}, Landroid/webkitsec/WebViewInputDispatcher$DispatchEvent;-><init>()V
 

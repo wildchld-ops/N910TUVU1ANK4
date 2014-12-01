@@ -22,9 +22,6 @@
 
 .method public constructor <init>(III)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Lcom/sec/epdg/ipc/EpdgIpcMessage;-><init>(III)V
 
@@ -33,8 +30,6 @@
 
 .method public constructor <init>([BI)V
     .locals 0
-    .param p1    # [B
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -298,10 +293,6 @@
 
 .method public encodeNetDataHandoverInfo(IIII)Z
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/4 v3, 0x1
 
@@ -344,8 +335,6 @@
 
 .method public encodeNetRegist(II)Z
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     const/4 v3, 0x1
 

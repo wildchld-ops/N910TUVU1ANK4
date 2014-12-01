@@ -64,7 +64,6 @@
 
 .method private binarySearch(Ljava/lang/Object;)I
     .locals 2
-    .param p1    # Ljava/lang/Object;
 
     iget-object v0, p0, Lcom/google/common/collect/ImmutableSortedSet;->comparator:Ljava/util/Comparator;
 
@@ -79,8 +78,6 @@
 
 .method private createSubset(II)Lcom/google/common/collect/ImmutableSortedSet;
     .locals 3
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II)",
@@ -133,7 +130,6 @@
 # virtual methods
 .method public contains(Ljava/lang/Object;)Z
     .locals 3
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x0
 
@@ -297,7 +293,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 10
-    .param p1    # Ljava/lang/Object;
 
     const/4 v6, 0x1
 
@@ -429,7 +424,6 @@
 
 .method headSetImpl(Ljava/lang/Object;Z)Lcom/google/common/collect/ImmutableSortedSet;
     .locals 6
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;Z)",
@@ -491,7 +485,6 @@
 
 .method indexOf(Ljava/lang/Object;)I
     .locals 7
-    .param p1    # Ljava/lang/Object;
 
     const/4 v2, -0x1
 
@@ -634,8 +627,6 @@
 
 .method subSetImpl(Ljava/lang/Object;ZLjava/lang/Object;Z)Lcom/google/common/collect/ImmutableSortedSet;
     .locals 1
-    .param p2    # Z
-    .param p4    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;ZTE;Z)",
@@ -657,7 +648,6 @@
 
 .method tailSetImpl(Ljava/lang/Object;Z)Lcom/google/common/collect/ImmutableSortedSet;
     .locals 6
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;Z)",

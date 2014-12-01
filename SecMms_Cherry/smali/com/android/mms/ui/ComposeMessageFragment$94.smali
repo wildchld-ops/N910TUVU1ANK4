@@ -36,7 +36,6 @@
 # virtual methods
 .method public onDismiss(Landroid/content/DialogInterface;)V
     .locals 1
-    .param p1    # Landroid/content/DialogInterface;
 
     iget-object v0, p0, Lcom/android/mms/ui/ComposeMessageFragment$94;->this$0:Lcom/android/mms/ui/ComposeMessageFragment;
 

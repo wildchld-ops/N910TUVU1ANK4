@@ -10,7 +10,6 @@
 # direct methods
 .method public constructor <init>(Landroid/graphics/PorterDuff$Mode;)V
     .locals 1
-    .param p1    # Landroid/graphics/PorterDuff$Mode;
 
     invoke-direct {p0}, Landroid/graphics/Xfermode;-><init>()V
 

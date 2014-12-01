@@ -66,7 +66,6 @@
 # virtual methods
 .method public addChildViewBelowWithInvisible([I)V
     .locals 26
-    .param p1    # [I
 
     const/4 v12, 0x0
 
@@ -329,8 +328,6 @@
 
 .method public calculateOffsetForTransDelAnim(IF)V
     .locals 1
-    .param p1    # I
-    .param p2    # F
 
     invoke-virtual {p0, p1}, Lcom/android/mms/ui/MessageListView$ChildItemViewMgr;->getChildAtWithAll(I)Lcom/android/mms/ui/MessageListView$ChildItemViewMgr$ChildrenView;
 
@@ -346,7 +343,6 @@
 
 .method public getChildAtWithAll(I)Lcom/android/mms/ui/MessageListView$ChildItemViewMgr$ChildrenView;
     .locals 3
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -410,7 +406,6 @@
 
 .method public getChildItemViewAt(I)Landroid/view/View;
     .locals 3
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -456,7 +451,6 @@
 
 .method public isAlignLeft(I)Z
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/mms/ui/MessageListView$ChildItemViewMgr;->mChildItemViews:Ljava/util/Vector;
 
@@ -473,10 +467,6 @@
 
 .method protected makeChildView(Landroid/view/View;II[I)Landroid/view/View;
     .locals 11
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # [I
 
     const/4 v2, 0x0
 
@@ -685,11 +675,6 @@
 
 .method public userSetTransfer(IFFFF)V
     .locals 1
-    .param p1    # I
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
 
     invoke-virtual {p0, p1}, Lcom/android/mms/ui/MessageListView$ChildItemViewMgr;->getChildAtWithAll(I)Lcom/android/mms/ui/MessageListView$ChildItemViewMgr$ChildrenView;
 

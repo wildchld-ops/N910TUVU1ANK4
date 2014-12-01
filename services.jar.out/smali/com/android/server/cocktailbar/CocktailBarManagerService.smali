@@ -49,7 +49,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     const/4 v2, 0x0
 
@@ -108,7 +107,6 @@
 
 .method static synthetic access$000(Lcom/android/server/cocktailbar/CocktailBarManagerService;)Z
     .locals 1
-    .param p0    # Lcom/android/server/cocktailbar/CocktailBarManagerService;
 
     invoke-direct {p0}, Lcom/android/server/cocktailbar/CocktailBarManagerService;->iskioskContainerExists()Z
 
@@ -119,7 +117,6 @@
 
 .method static synthetic access$100(Lcom/android/server/cocktailbar/CocktailBarManagerService;)I
     .locals 1
-    .param p0    # Lcom/android/server/cocktailbar/CocktailBarManagerService;
 
     iget v0, p0, Lcom/android/server/cocktailbar/CocktailBarManagerService;->mCurrentUserId:I
 
@@ -128,8 +125,6 @@
 
 .method static synthetic access$102(Lcom/android/server/cocktailbar/CocktailBarManagerService;I)I
     .locals 0
-    .param p0    # Lcom/android/server/cocktailbar/CocktailBarManagerService;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/server/cocktailbar/CocktailBarManagerService;->mCurrentUserId:I
 
@@ -138,8 +133,6 @@
 
 .method static synthetic access$200(Lcom/android/server/cocktailbar/CocktailBarManagerService;I)Lcom/android/server/cocktailbar/CocktailBarManagerServiceImpl;
     .locals 1
-    .param p0    # Lcom/android/server/cocktailbar/CocktailBarManagerService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/cocktailbar/CocktailBarManagerService;->getImplForUser(I)Lcom/android/server/cocktailbar/CocktailBarManagerServiceImpl;
 
@@ -150,9 +143,6 @@
 
 .method static synthetic access$300(Lcom/android/server/cocktailbar/CocktailBarManagerService;ILandroid/os/IRemoteCallback;)V
     .locals 0
-    .param p0    # Lcom/android/server/cocktailbar/CocktailBarManagerService;
-    .param p1    # I
-    .param p2    # Landroid/os/IRemoteCallback;
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/cocktailbar/CocktailBarManagerService;->switchUser(ILandroid/os/IRemoteCallback;)V
 
@@ -161,7 +151,6 @@
 
 .method static synthetic access$400(Lcom/android/server/cocktailbar/CocktailBarManagerService;)Landroid/util/SparseArray;
     .locals 1
-    .param p0    # Lcom/android/server/cocktailbar/CocktailBarManagerService;
 
     iget-object v0, p0, Lcom/android/server/cocktailbar/CocktailBarManagerService;->mCocktailBarServices:Landroid/util/SparseArray;
 
@@ -170,7 +159,6 @@
 
 .method private checkPermission(I)V
     .locals 8
-    .param p1    # I
 
     invoke-static {}, Landroid/os/Binder;->getCallingPid()I
 
@@ -215,7 +203,6 @@
 
 .method private checkPermission(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/server/cocktailbar/CocktailBarManagerService;->mContext:Landroid/content/Context;
 
@@ -269,7 +256,6 @@
 
 .method private getImplForUser(I)Lcom/android/server/cocktailbar/CocktailBarManagerServiceImpl;
     .locals 6
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/cocktailbar/CocktailBarManagerService;->checkPermission(I)V
 
@@ -374,7 +360,6 @@
 
 .method private init(Landroid/content/Context;)V
     .locals 32
-    .param p1    # Landroid/content/Context;
 
     move-object/from16 v0, p0
 
@@ -740,8 +725,6 @@
 
 .method private switchUser(ILandroid/os/IRemoteCallback;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/os/IRemoteCallback;
 
     iget-object v0, p0, Lcom/android/server/cocktailbar/CocktailBarManagerService;->mHost:Landroid/util/Pair;
 
@@ -773,10 +756,6 @@
 # virtual methods
 .method public bindRemoteViewsService(ILandroid/content/Intent;Landroid/os/IBinder;I)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/content/Intent;
-    .param p3    # Landroid/os/IBinder;
-    .param p4    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -794,8 +773,6 @@
 
 .method public closeCocktail(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -849,9 +826,6 @@
 
 .method public dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     iget-object v3, p0, Lcom/android/server/cocktailbar/CocktailBarManagerService;->mContext:Landroid/content/Context;
 
@@ -992,7 +966,6 @@
 
 .method public getCocktail(I)Lcom/samsung/android/cocktailbar/Cocktail;
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1016,8 +989,6 @@
 
 .method public getCocktailBarDecor(Lcom/samsung/android/cocktailbar/ICocktailBarDecorManagerCallback;Landroid/os/Bundle;)Landroid/os/ParcelFileDescriptor;
     .locals 1
-    .param p1    # Lcom/samsung/android/cocktailbar/ICocktailBarDecorManagerCallback;
-    .param p2    # Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1064,7 +1035,6 @@
 
 .method public getCocktailId(Landroid/content/ComponentName;)I
     .locals 1
-    .param p1    # Landroid/content/ComponentName;
 
     invoke-static {}, Landroid/os/UserHandle;->getCallingUserId()I
 
@@ -1083,7 +1053,6 @@
 
 .method public getCocktailIds(Landroid/content/ComponentName;)[I
     .locals 1
-    .param p1    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1199,7 +1168,6 @@
 
 .method public notifyCocktailBarDecorChanged(I)V
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1221,8 +1189,6 @@
 
 .method public notifyCocktailViewDataChanged(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1244,8 +1210,6 @@
 
 .method public notifyCocktailVisibiltyChanged(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1267,7 +1231,6 @@
 
 .method public notifyKeyguardState(Z)V
     .locals 1
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1289,7 +1252,6 @@
 
 .method public onScreenTurnedOn(Lcom/samsung/android/cocktailbar/ICocktailBarShowCallback;)V
     .locals 2
-    .param p1    # Lcom/samsung/android/cocktailbar/ICocktailBarShowCallback;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1318,8 +1280,6 @@
 
 .method public partiallyUpdateCocktail(Landroid/widget/RemoteViews;I)V
     .locals 1
-    .param p1    # Landroid/widget/RemoteViews;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1368,7 +1328,6 @@
 
 .method public requestToDisableCocktail(I)Z
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1392,7 +1351,6 @@
 
 .method public requestToDisableCocktailByCategory(I)Z
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1416,7 +1374,6 @@
 
 .method public requestToDisableCocktailByPrivateMode(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1440,7 +1397,6 @@
 
 .method public requestToUpdateCocktail(I)Z
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1464,7 +1420,6 @@
 
 .method public requestToUpdateCocktailByCategory(I)Z
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1488,7 +1443,6 @@
 
 .method public requestToUpdateCocktailByPrivateMode(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1512,8 +1466,6 @@
 
 .method public sendDragEvent(ILandroid/view/DragEvent;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/DragEvent;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1535,7 +1487,6 @@
 
 .method public sendExtraDataToCocktailBar(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1557,7 +1508,6 @@
 
 .method public setCocktailBarDecor(Ljava/lang/String;)Landroid/os/ParcelFileDescriptor;
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1581,8 +1531,6 @@
 
 .method public setCocktailBarVisibility(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1604,8 +1552,6 @@
 
 .method public setCocktailHostCallbacks(Lcom/samsung/android/cocktailbar/ICocktailHost;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Lcom/samsung/android/cocktailbar/ICocktailHost;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1656,7 +1602,6 @@
 
 .method public setDecorType(I)V
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1678,7 +1623,6 @@
 
 .method public setDisableTickerView(I)V
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1700,7 +1644,6 @@
 
 .method public setTransparentCocktail(Z)V
     .locals 1
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1722,7 +1665,6 @@
 
 .method public showCocktail(I)V
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1744,8 +1686,6 @@
 
 .method public startListening(Lcom/samsung/android/cocktailbar/ICocktailHost;Ljava/lang/String;Ljava/util/List;)[I
     .locals 1
-    .param p1    # Lcom/samsung/android/cocktailbar/ICocktailHost;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1808,9 +1748,6 @@
 
 .method public unbindRemoteViewsService(ILandroid/content/Intent;I)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/content/Intent;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1828,8 +1765,6 @@
 
 .method public updateCocktail(Lcom/samsung/android/cocktailbar/CocktailInfo;I)V
     .locals 1
-    .param p1    # Lcom/samsung/android/cocktailbar/CocktailInfo;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1857,7 +1792,6 @@
 
 .method public updateLongpressGesture(Z)V
     .locals 1
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1881,8 +1815,6 @@
 
 .method public updateWakeupGesture(IZ)V
     .locals 1
-    .param p1    # I
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1906,7 +1838,6 @@
 
 .method public wakeupCocktailBar(Z)V
     .locals 2
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

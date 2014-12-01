@@ -103,7 +103,6 @@
 
 .method public static valueOf(Ljava/lang/String;)Landroid/media/WFDUibcManager$UIBC_Mode;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-class v0, Landroid/media/WFDUibcManager$UIBC_Mode;
 

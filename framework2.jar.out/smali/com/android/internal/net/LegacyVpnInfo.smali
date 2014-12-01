@@ -76,7 +76,6 @@
 
 .method public static stateFromNetworkInfo(Landroid/net/NetworkInfo;)I
     .locals 4
-    .param p0    # Landroid/net/NetworkInfo;
 
     const/4 v0, 0x0
 
@@ -168,8 +167,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/internal/net/LegacyVpnInfo;->key:Ljava/lang/String;
 

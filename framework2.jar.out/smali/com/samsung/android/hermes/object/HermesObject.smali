@@ -68,7 +68,6 @@
 
 .method public readFromParcel(Landroid/os/Parcel;)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     const-class v0, Lcom/samsung/android/hermes/object/HermesObject;
 
@@ -87,7 +86,6 @@
 
 .method public setObject(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     iput-object p1, p0, Lcom/samsung/android/hermes/object/HermesObject;->obj:Ljava/lang/Object;
 
@@ -96,8 +94,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/samsung/android/hermes/object/HermesObject;->obj:Ljava/lang/Object;
 

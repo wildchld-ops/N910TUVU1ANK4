@@ -50,7 +50,6 @@
 
 .method protected copyLocalMatrix(Landroid/graphics/Shader;)V
     .locals 2
-    .param p1    # Landroid/graphics/Shader;
 
     iget-object v1, p0, Landroid/graphics/Shader;->mLocalMatrix:Landroid/graphics/Matrix;
 
@@ -110,7 +109,6 @@
 
 .method public getLocalMatrix(Landroid/graphics/Matrix;)Z
     .locals 2
-    .param p1    # Landroid/graphics/Matrix;
 
     const/4 v0, 0x0
 
@@ -138,7 +136,6 @@
 
 .method public setLocalMatrix(Landroid/graphics/Matrix;)V
     .locals 3
-    .param p1    # Landroid/graphics/Matrix;
 
     iput-object p1, p0, Landroid/graphics/Shader;->mLocalMatrix:Landroid/graphics/Matrix;
 

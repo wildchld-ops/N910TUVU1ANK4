@@ -20,10 +20,6 @@
 # direct methods
 .method protected constructor <init>(ILandroid/content/Context;Landroid/os/Looper;Landroid/hardware/contextaware/dataprovider/sensorhubprovider/ISensorHubResetObservable;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/os/Looper;
-    .param p4    # Landroid/hardware/contextaware/dataprovider/sensorhubprovider/ISensorHubResetObservable;
 
     invoke-direct {p0, p1, p2, p3, p4}, Landroid/hardware/contextaware/dataprovider/androidprovider/AndroidProvider;-><init>(ILandroid/content/Context;Landroid/os/Looper;Landroid/hardware/contextaware/dataprovider/sensorhubprovider/ISensorHubResetObservable;)V
 
@@ -44,7 +40,6 @@
 
 .method static synthetic access$000(Landroid/hardware/contextaware/dataprovider/androidprovider/RawGpsProvider;)Landroid/hardware/contextaware/manager/ContextBean;
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/dataprovider/androidprovider/RawGpsProvider;
 
     invoke-virtual {p0}, Landroid/hardware/contextaware/dataprovider/androidprovider/RawGpsProvider;->getContextBean()Landroid/hardware/contextaware/manager/ContextBean;
 
@@ -55,7 +50,6 @@
 
 .method static synthetic access$100(Landroid/hardware/contextaware/dataprovider/androidprovider/RawGpsProvider;)Landroid/hardware/contextaware/manager/ContextBean;
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/dataprovider/androidprovider/RawGpsProvider;
 
     invoke-virtual {p0}, Landroid/hardware/contextaware/dataprovider/androidprovider/RawGpsProvider;->getContextBean()Landroid/hardware/contextaware/manager/ContextBean;
 
@@ -66,7 +60,6 @@
 
 .method static synthetic access$1000(Landroid/hardware/contextaware/dataprovider/androidprovider/RawGpsProvider;)Landroid/hardware/contextaware/manager/ContextBean;
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/dataprovider/androidprovider/RawGpsProvider;
 
     invoke-virtual {p0}, Landroid/hardware/contextaware/dataprovider/androidprovider/RawGpsProvider;->getContextBean()Landroid/hardware/contextaware/manager/ContextBean;
 
@@ -77,7 +70,6 @@
 
 .method static synthetic access$1100(Landroid/hardware/contextaware/dataprovider/androidprovider/RawGpsProvider;)Landroid/hardware/contextaware/manager/ContextBean;
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/dataprovider/androidprovider/RawGpsProvider;
 
     invoke-virtual {p0}, Landroid/hardware/contextaware/dataprovider/androidprovider/RawGpsProvider;->getContextBean()Landroid/hardware/contextaware/manager/ContextBean;
 
@@ -88,7 +80,6 @@
 
 .method static synthetic access$1200(Landroid/hardware/contextaware/dataprovider/androidprovider/RawGpsProvider;)Landroid/hardware/contextaware/manager/ContextBean;
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/dataprovider/androidprovider/RawGpsProvider;
 
     invoke-virtual {p0}, Landroid/hardware/contextaware/dataprovider/androidprovider/RawGpsProvider;->getContextBean()Landroid/hardware/contextaware/manager/ContextBean;
 
@@ -99,7 +90,6 @@
 
 .method static synthetic access$1300(Landroid/hardware/contextaware/dataprovider/androidprovider/RawGpsProvider;)Landroid/hardware/contextaware/manager/ContextBean;
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/dataprovider/androidprovider/RawGpsProvider;
 
     invoke-virtual {p0}, Landroid/hardware/contextaware/dataprovider/androidprovider/RawGpsProvider;->getContextBean()Landroid/hardware/contextaware/manager/ContextBean;
 
@@ -110,7 +100,6 @@
 
 .method static synthetic access$1400(Landroid/hardware/contextaware/dataprovider/androidprovider/RawGpsProvider;)Landroid/hardware/contextaware/manager/ContextBean;
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/dataprovider/androidprovider/RawGpsProvider;
 
     invoke-virtual {p0}, Landroid/hardware/contextaware/dataprovider/androidprovider/RawGpsProvider;->getContextBean()Landroid/hardware/contextaware/manager/ContextBean;
 
@@ -121,7 +110,6 @@
 
 .method static synthetic access$1500(Landroid/hardware/contextaware/dataprovider/androidprovider/RawGpsProvider;)Landroid/hardware/contextaware/manager/ContextBean;
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/dataprovider/androidprovider/RawGpsProvider;
 
     invoke-virtual {p0}, Landroid/hardware/contextaware/dataprovider/androidprovider/RawGpsProvider;->getContextBean()Landroid/hardware/contextaware/manager/ContextBean;
 
@@ -132,7 +120,6 @@
 
 .method static synthetic access$1600(Landroid/hardware/contextaware/dataprovider/androidprovider/RawGpsProvider;)Landroid/hardware/contextaware/manager/ContextBean;
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/dataprovider/androidprovider/RawGpsProvider;
 
     invoke-virtual {p0}, Landroid/hardware/contextaware/dataprovider/androidprovider/RawGpsProvider;->getContextBean()Landroid/hardware/contextaware/manager/ContextBean;
 
@@ -143,7 +130,6 @@
 
 .method static synthetic access$200(Landroid/hardware/contextaware/dataprovider/androidprovider/RawGpsProvider;)Landroid/hardware/contextaware/manager/ContextBean;
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/dataprovider/androidprovider/RawGpsProvider;
 
     invoke-virtual {p0}, Landroid/hardware/contextaware/dataprovider/androidprovider/RawGpsProvider;->getContextBean()Landroid/hardware/contextaware/manager/ContextBean;
 
@@ -154,7 +140,6 @@
 
 .method static synthetic access$300(Landroid/hardware/contextaware/dataprovider/androidprovider/RawGpsProvider;)Landroid/hardware/contextaware/manager/ContextBean;
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/dataprovider/androidprovider/RawGpsProvider;
 
     invoke-virtual {p0}, Landroid/hardware/contextaware/dataprovider/androidprovider/RawGpsProvider;->getContextBean()Landroid/hardware/contextaware/manager/ContextBean;
 
@@ -165,7 +150,6 @@
 
 .method static synthetic access$400(Landroid/hardware/contextaware/dataprovider/androidprovider/RawGpsProvider;)Landroid/hardware/contextaware/manager/ContextBean;
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/dataprovider/androidprovider/RawGpsProvider;
 
     invoke-virtual {p0}, Landroid/hardware/contextaware/dataprovider/androidprovider/RawGpsProvider;->getContextBean()Landroid/hardware/contextaware/manager/ContextBean;
 
@@ -176,7 +160,6 @@
 
 .method static synthetic access$500(Landroid/hardware/contextaware/dataprovider/androidprovider/RawGpsProvider;)Landroid/hardware/contextaware/manager/ContextBean;
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/dataprovider/androidprovider/RawGpsProvider;
 
     invoke-virtual {p0}, Landroid/hardware/contextaware/dataprovider/androidprovider/RawGpsProvider;->getContextBean()Landroid/hardware/contextaware/manager/ContextBean;
 
@@ -187,7 +170,6 @@
 
 .method static synthetic access$600(Landroid/hardware/contextaware/dataprovider/androidprovider/RawGpsProvider;)Landroid/hardware/contextaware/manager/ContextBean;
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/dataprovider/androidprovider/RawGpsProvider;
 
     invoke-virtual {p0}, Landroid/hardware/contextaware/dataprovider/androidprovider/RawGpsProvider;->getContextBean()Landroid/hardware/contextaware/manager/ContextBean;
 
@@ -198,7 +180,6 @@
 
 .method static synthetic access$700(Landroid/hardware/contextaware/dataprovider/androidprovider/RawGpsProvider;)Landroid/hardware/contextaware/manager/ContextBean;
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/dataprovider/androidprovider/RawGpsProvider;
 
     invoke-virtual {p0}, Landroid/hardware/contextaware/dataprovider/androidprovider/RawGpsProvider;->getContextBean()Landroid/hardware/contextaware/manager/ContextBean;
 
@@ -209,7 +190,6 @@
 
 .method static synthetic access$800(Landroid/hardware/contextaware/dataprovider/androidprovider/RawGpsProvider;)Ljava/util/Iterator;
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/dataprovider/androidprovider/RawGpsProvider;
 
     invoke-direct {p0}, Landroid/hardware/contextaware/dataprovider/androidprovider/RawGpsProvider;->getGpsSatellites()Ljava/util/Iterator;
 
@@ -220,7 +200,6 @@
 
 .method static synthetic access$900(Landroid/hardware/contextaware/dataprovider/androidprovider/RawGpsProvider;)Landroid/hardware/contextaware/manager/ContextBean;
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/dataprovider/androidprovider/RawGpsProvider;
 
     invoke-virtual {p0}, Landroid/hardware/contextaware/dataprovider/androidprovider/RawGpsProvider;->getContextBean()Landroid/hardware/contextaware/manager/ContextBean;
 

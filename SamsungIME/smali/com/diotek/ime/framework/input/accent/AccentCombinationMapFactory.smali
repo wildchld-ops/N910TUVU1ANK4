@@ -41,7 +41,6 @@
 
 .method private getAccentCombinationMap(Ljava/lang/String;)Ljava/util/HashMap;
     .locals 2
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

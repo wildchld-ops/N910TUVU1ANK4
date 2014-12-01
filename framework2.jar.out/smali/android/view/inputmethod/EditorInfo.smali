@@ -141,8 +141,6 @@
 
 .method public dump(Landroid/util/Printer;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Landroid/util/Printer;
-    .param p2    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -413,7 +411,6 @@
 
 .method public final makeCompatible(I)V
     .locals 2
-    .param p1    # I
 
     const v1, 0xfff000
 
@@ -477,8 +474,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget v0, p0, Landroid/view/inputmethod/EditorInfo;->inputType:I
 

@@ -274,7 +274,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     const/4 v2, 0x2
 
@@ -352,8 +351,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v2, 0x2
 
@@ -431,9 +428,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v2, 0x2
 
@@ -511,8 +505,6 @@
 
 .method private applyColor(IZ)V
     .locals 3
-    .param p1    # I
-    .param p2    # Z
 
     iget v0, p0, Lcom/android/settings/myprofile/SpLitColorPickerView;->mSelectedColorIndex:I
 
@@ -585,9 +577,6 @@
 
 .method private changeColor(FFZ)V
     .locals 7
-    .param p1    # F
-    .param p2    # F
-    .param p3    # Z
 
     invoke-virtual {p0}, Landroid/view/View;->getWidth()I
 
@@ -674,7 +663,6 @@
 
 .method private drawColors(Landroid/graphics/Canvas;)V
     .locals 19
-    .param p1    # Landroid/graphics/Canvas;
 
     move-object/from16 v0, p0
 
@@ -1061,8 +1049,6 @@
 
 .method private initColorPicker(II)V
     .locals 13
-    .param p1    # I
-    .param p2    # I
 
     const v12, 0x7f02060f
 
@@ -1432,7 +1418,6 @@
 # virtual methods
 .method public dispatchTrackballEvent(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getAction()I
 
@@ -1473,7 +1458,6 @@
 
 .method protected onDraw(Landroid/graphics/Canvas;)V
     .locals 0
-    .param p1    # Landroid/graphics/Canvas;
 
     invoke-super {p0, p1}, Landroid/view/View;->onDraw(Landroid/graphics/Canvas;)V
 
@@ -1484,8 +1468,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/16 v5, 0x42
 
@@ -1692,8 +1674,6 @@
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     iget-object v0, p0, Lcom/android/settings/myprofile/SpLitColorPickerView;->LOG_TAG:Ljava/lang/String;
 
@@ -1739,11 +1719,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 4
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-super/range {p0 .. p5}, Landroid/view/View;->onLayout(ZIIII)V
 
@@ -1782,7 +1757,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 7
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v6, 0x1
 
@@ -1863,7 +1837,6 @@
 
 .method public setColor(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -1922,7 +1895,6 @@
 
 .method public setColorIndex(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Lcom/android/settings/myprofile/SpLitColorPickerView;->mSelectedColorIndex:I
 
@@ -1937,7 +1909,6 @@
 
 .method public setCustomColor(I)V
     .locals 2
-    .param p1    # I
 
     iget-boolean v0, p0, Lcom/android/settings/myprofile/SpLitColorPickerView;->useCustomColor:Z
 
@@ -1966,7 +1937,6 @@
 
 .method public setDeviceOrientation(I)V
     .locals 4
-    .param p1    # I
 
     iput p1, p0, Lcom/android/settings/myprofile/SpLitColorPickerView;->mCurrentDeviceOrientation:I
 
@@ -2014,7 +1984,6 @@
 
 .method public setDrawFocus(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/myprofile/SpLitColorPickerView;->m_bDrawFocusImage:Z
 
@@ -2023,7 +1992,6 @@
 
 .method public setKeepCustomColor(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/myprofile/SpLitColorPickerView;->m_bKeepCustomColor:Z
 
@@ -2032,8 +2000,6 @@
 
 .method public setLastIndexColorValue(IZ)V
     .locals 2
-    .param p1    # I
-    .param p2    # Z
 
     sget-object v0, Lcom/android/settings/myprofile/SpLitColorPickerView;->COLORS:[I
 
@@ -2048,7 +2014,6 @@
 
 .method public setOnColorChangedListener(Lcom/android/settings/myprofile/SpLitColorPickerView$OnColorChangedListener;)V
     .locals 0
-    .param p1    # Lcom/android/settings/myprofile/SpLitColorPickerView$OnColorChangedListener;
 
     iput-object p1, p0, Lcom/android/settings/myprofile/SpLitColorPickerView;->mOnColorChangedListener:Lcom/android/settings/myprofile/SpLitColorPickerView$OnColorChangedListener;
 
@@ -2057,7 +2022,6 @@
 
 .method public setOnSelectCustomColorListener(Lcom/android/settings/myprofile/SpLitColorPickerView$OnSelectCustomColorListener;)V
     .locals 0
-    .param p1    # Lcom/android/settings/myprofile/SpLitColorPickerView$OnSelectCustomColorListener;
 
     iput-object p1, p0, Lcom/android/settings/myprofile/SpLitColorPickerView;->mOnSelectCustomColorListener:Lcom/android/settings/myprofile/SpLitColorPickerView$OnSelectCustomColorListener;
 
@@ -2066,7 +2030,6 @@
 
 .method public setVisibility(I)V
     .locals 2
-    .param p1    # I
 
     invoke-super {p0, p1}, Landroid/view/View;->setVisibility(I)V
 

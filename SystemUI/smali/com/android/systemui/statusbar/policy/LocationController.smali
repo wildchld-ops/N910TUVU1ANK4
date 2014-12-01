@@ -90,7 +90,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 8
-    .param p1    # Landroid/content/Context;
 
     const/4 v4, 0x0
 
@@ -352,7 +351,6 @@
 
 .method static synthetic access$100(Lcom/android/systemui/statusbar/policy/LocationController;)V
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/policy/LocationController;
 
     invoke-direct {p0}, Lcom/android/systemui/statusbar/policy/LocationController;->locationSettingsChanged()V
 
@@ -361,7 +359,6 @@
 
 .method static synthetic access$200(Lcom/android/systemui/statusbar/policy/LocationController;)Landroid/media/ToneGenerator;
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/policy/LocationController;
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/LocationController;->mFocusToneGenerator:Landroid/media/ToneGenerator;
 
@@ -370,8 +367,6 @@
 
 .method static synthetic access$202(Lcom/android/systemui/statusbar/policy/LocationController;Landroid/media/ToneGenerator;)Landroid/media/ToneGenerator;
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/policy/LocationController;
-    .param p1    # Landroid/media/ToneGenerator;
 
     iput-object p1, p0, Lcom/android/systemui/statusbar/policy/LocationController;->mFocusToneGenerator:Landroid/media/ToneGenerator;
 
@@ -464,7 +459,6 @@
 
 .method private isUserLocationRestricted(I)Z
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/systemui/statusbar/policy/LocationController;->mContext:Landroid/content/Context;
 
@@ -554,7 +548,6 @@
 # virtual methods
 .method public addSettingsChangedCallback(Lcom/android/systemui/statusbar/policy/LocationController$LocationSettingsChangeCallback;)V
     .locals 1
-    .param p1    # Lcom/android/systemui/statusbar/policy/LocationController$LocationSettingsChangeCallback;
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/LocationController;->mSettingsChangeCallbacks:Ljava/util/ArrayList;
 
@@ -594,8 +587,6 @@
 
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 22
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     invoke-virtual/range {p2 .. p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
@@ -908,7 +899,6 @@
 
 .method public setLocationEnabled(Z)Z
     .locals 4
-    .param p1    # Z
 
     const/4 v2, 0x0
 

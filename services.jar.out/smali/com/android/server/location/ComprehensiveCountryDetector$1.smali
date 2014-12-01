@@ -36,7 +36,6 @@
 # virtual methods
 .method public onCountryDetected(Landroid/location/Country;)V
     .locals 3
-    .param p1    # Landroid/location/Country;
 
     iget-object v0, p0, Lcom/android/server/location/ComprehensiveCountryDetector$1;->this$0:Lcom/android/server/location/ComprehensiveCountryDetector;
 

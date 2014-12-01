@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager;Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$1;)V
     .locals 0
-    .param p1    # Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager;
-    .param p2    # Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$1;
 
     invoke-direct {p0, p1}, Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$MainLocationListener;-><init>(Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager;)V
 
@@ -46,7 +44,6 @@
 # virtual methods
 .method public onLocationChanged(Landroid/location/Location;)V
     .locals 6
-    .param p1    # Landroid/location/Location;
 
     const-string v2, "LppLocationManager"
 
@@ -422,7 +419,6 @@
 
 .method public onProviderDisabled(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "LppLocationManager"
 
@@ -451,7 +447,6 @@
 
 .method public onProviderEnabled(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "LppLocationManager"
 
@@ -480,9 +475,6 @@
 
 .method public onStatusChanged(Ljava/lang/String;ILandroid/os/Bundle;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Landroid/os/Bundle;
 
     return-void
 .end method

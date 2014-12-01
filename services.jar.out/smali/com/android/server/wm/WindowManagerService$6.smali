@@ -40,7 +40,6 @@
 # virtual methods
 .method public onKeyguardExitResult(Z)V
     .locals 1
-    .param p1    # Z
 
     :try_start_0
     iget-object v0, p0, Lcom/android/server/wm/WindowManagerService$6;->val$callback:Landroid/view/IOnKeyguardExitResult;

@@ -48,7 +48,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0, v1}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+    invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     # getter for: Lcom/android/phone/AutomaticConnectionsSettings;->onBoot:Z
     invoke-static {}, Lcom/android/phone/AutomaticConnectionsSettings;->access$100()Z

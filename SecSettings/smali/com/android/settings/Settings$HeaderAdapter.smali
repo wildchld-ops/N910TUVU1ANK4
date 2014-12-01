@@ -118,9 +118,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Ljava/util/List;Lcom/android/settings/accounts/AuthenticatorHelper;Landroid/app/admin/DevicePolicyManager;)V
     .locals 10
-    .param p1    # Landroid/content/Context;
-    .param p3    # Lcom/android/settings/accounts/AuthenticatorHelper;
-    .param p4    # Landroid/app/admin/DevicePolicyManager;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -839,7 +836,6 @@
 
 .method static synthetic access$1800(Lcom/android/settings/Settings$HeaderAdapter;)Lcom/android/settings/personalpage/PersonalPageEnabler;
     .locals 1
-    .param p0    # Lcom/android/settings/Settings$HeaderAdapter;
 
     iget-object v0, p0, Lcom/android/settings/Settings$HeaderAdapter;->mPersonalPageEnabler:Lcom/android/settings/personalpage/PersonalPageEnabler;
 
@@ -848,7 +844,6 @@
 
 .method static synthetic access$1900(Lcom/android/settings/Settings$HeaderAdapter;)Lcom/android/settings/smartbonding/SmartBondingEnabler;
     .locals 1
-    .param p0    # Lcom/android/settings/Settings$HeaderAdapter;
 
     iget-object v0, p0, Lcom/android/settings/Settings$HeaderAdapter;->mSmartBondingEnabler:Lcom/android/settings/smartbonding/SmartBondingEnabler;
 
@@ -857,8 +852,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/Settings$HeaderAdapter;Landroid/view/View;)V
     .locals 0
-    .param p0    # Lcom/android/settings/Settings$HeaderAdapter;
-    .param p1    # Landroid/view/View;
 
     invoke-direct {p0, p1}, Lcom/android/settings/Settings$HeaderAdapter;->setCheckBoxTypeValue(Landroid/view/View;)V
 
@@ -867,7 +860,6 @@
 
 .method static getHeaderType(Landroid/preference/PreferenceActivity$Header;)I
     .locals 6
-    .param p0    # Landroid/preference/PreferenceActivity$Header;
 
     const-wide/32 v4, 0x7f0b0751
 
@@ -1371,7 +1363,6 @@
 
 .method private setDirectSettingValue(Landroid/widget/Switch;)V
     .locals 3
-    .param p1    # Landroid/widget/Switch;
 
     const/4 v0, 0x1
 
@@ -1755,7 +1746,6 @@
 
 .method public getItemViewType(I)I
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/settings/Settings$HeaderAdapter;->getCount()I
 
@@ -4176,7 +4166,6 @@
 
 .method public isEnabled(I)Z
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Lcom/android/settings/Settings$HeaderAdapter;->getItemViewType(I)I
 
@@ -4755,7 +4744,6 @@
 
 .method public setEnablersForGuide(Lcom/android/settings/Settings;)V
     .locals 2
-    .param p1    # Lcom/android/settings/Settings;
 
     iget-object v0, p0, Lcom/android/settings/Settings$HeaderAdapter;->mWifiEnabler:Lcom/android/settings/wifi/WifiEnabler;
 
@@ -4768,7 +4756,6 @@
 
 .method public setSoftapEnabled(Z)V
     .locals 3
-    .param p1    # Z
 
     const/4 v2, 0x1
 

@@ -22,8 +22,6 @@
 # direct methods
 .method public constructor <init>(JLandroid/widget/DoubleDigitManager$CallBack;)V
     .locals 0
-    .param p1    # J
-    .param p3    # Landroid/widget/DoubleDigitManager$CallBack;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -36,7 +34,6 @@
 
 .method static synthetic access$000(Landroid/widget/DoubleDigitManager;)Ljava/lang/Integer;
     .locals 1
-    .param p0    # Landroid/widget/DoubleDigitManager;
 
     iget-object v0, p0, Landroid/widget/DoubleDigitManager;->intermediateDigit:Ljava/lang/Integer;
 
@@ -45,8 +42,6 @@
 
 .method static synthetic access$002(Landroid/widget/DoubleDigitManager;Ljava/lang/Integer;)Ljava/lang/Integer;
     .locals 0
-    .param p0    # Landroid/widget/DoubleDigitManager;
-    .param p1    # Ljava/lang/Integer;
 
     iput-object p1, p0, Landroid/widget/DoubleDigitManager;->intermediateDigit:Ljava/lang/Integer;
 
@@ -55,7 +50,6 @@
 
 .method static synthetic access$100(Landroid/widget/DoubleDigitManager;)Landroid/widget/DoubleDigitManager$CallBack;
     .locals 1
-    .param p0    # Landroid/widget/DoubleDigitManager;
 
     iget-object v0, p0, Landroid/widget/DoubleDigitManager;->mCallBack:Landroid/widget/DoubleDigitManager$CallBack;
 
@@ -66,7 +60,6 @@
 # virtual methods
 .method public reportDigit(I)V
     .locals 5
-    .param p1    # I
 
     const/4 v4, 0x0
 

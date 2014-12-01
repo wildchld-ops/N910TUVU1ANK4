@@ -124,10 +124,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/settings/BackgroundStyle;ILandroid/widget/AdapterView;Landroid/view/View;)V
     .locals 0
-    .param p0    # Lcom/android/mms/settings/BackgroundStyle;
-    .param p1    # I
-    .param p2    # Landroid/widget/AdapterView;
-    .param p3    # Landroid/view/View;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/mms/settings/BackgroundStyle;->setImageView(ILandroid/widget/AdapterView;Landroid/view/View;)V
 
@@ -136,7 +132,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/settings/BackgroundStyle;)Landroid/view/MenuItem;
     .locals 1
-    .param p0    # Lcom/android/mms/settings/BackgroundStyle;
 
     iget-object v0, p0, Lcom/android/mms/settings/BackgroundStyle;->mMenuSave:Landroid/view/MenuItem;
 
@@ -145,7 +140,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/settings/BackgroundStyle;)Landroid/app/AlertDialog;
     .locals 1
-    .param p0    # Lcom/android/mms/settings/BackgroundStyle;
 
     iget-object v0, p0, Lcom/android/mms/settings/BackgroundStyle;->mBackgroundDialog:Landroid/app/AlertDialog;
 
@@ -154,8 +148,6 @@
 
 .method static synthetic access$202(Lcom/android/mms/settings/BackgroundStyle;Landroid/app/AlertDialog;)Landroid/app/AlertDialog;
     .locals 0
-    .param p0    # Lcom/android/mms/settings/BackgroundStyle;
-    .param p1    # Landroid/app/AlertDialog;
 
     iput-object p1, p0, Lcom/android/mms/settings/BackgroundStyle;->mBackgroundDialog:Landroid/app/AlertDialog;
 
@@ -164,8 +156,6 @@
 
 .method static synthetic access$300(Lcom/android/mms/settings/BackgroundStyle;I)V
     .locals 0
-    .param p0    # Lcom/android/mms/settings/BackgroundStyle;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/mms/settings/BackgroundStyle;->startActivityforBackround(I)V
 
@@ -174,7 +164,6 @@
 
 .method static synthetic access$400(Lcom/android/mms/settings/BackgroundStyle;)V
     .locals 0
-    .param p0    # Lcom/android/mms/settings/BackgroundStyle;
 
     invoke-direct {p0}, Lcom/android/mms/settings/BackgroundStyle;->setPrevSelectedItem()V
 
@@ -183,8 +172,6 @@
 
 .method static synthetic access$500(Lcom/android/mms/settings/BackgroundStyle;I)V
     .locals 0
-    .param p0    # Lcom/android/mms/settings/BackgroundStyle;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/mms/settings/BackgroundStyle;->attachAppinfo(I)V
 
@@ -193,7 +180,6 @@
 
 .method static synthetic access$600(Lcom/android/mms/settings/BackgroundStyle;)I
     .locals 1
-    .param p0    # Lcom/android/mms/settings/BackgroundStyle;
 
     iget v0, p0, Lcom/android/mms/settings/BackgroundStyle;->backKeyRepeatCount:I
 
@@ -202,8 +188,6 @@
 
 .method static synthetic access$602(Lcom/android/mms/settings/BackgroundStyle;I)I
     .locals 0
-    .param p0    # Lcom/android/mms/settings/BackgroundStyle;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/mms/settings/BackgroundStyle;->backKeyRepeatCount:I
 
@@ -212,7 +196,6 @@
 
 .method static synthetic access$700(Lcom/android/mms/settings/BackgroundStyle;)Landroid/graphics/drawable/Drawable;
     .locals 1
-    .param p0    # Lcom/android/mms/settings/BackgroundStyle;
 
     iget-object v0, p0, Lcom/android/mms/settings/BackgroundStyle;->mCustomThumnaildDrawable:Landroid/graphics/drawable/Drawable;
 
@@ -221,10 +204,6 @@
 
 .method public static addGalleryIntentExtras(Landroid/content/Intent;Landroid/net/Uri;II)V
     .locals 3
-    .param p0    # Landroid/content/Intent;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v2, 0x1
 
@@ -271,7 +250,6 @@
 
 .method private attachAppinfo(I)V
     .locals 5
-    .param p1    # I
 
     const/4 v4, 0x0
 
@@ -434,8 +412,6 @@
 
 .method private getCropImageIntent(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     new-instance v3, Ljava/io/File;
 
@@ -474,7 +450,6 @@
 
 .method public static pathForNewCameraPhoto(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     new-instance v0, Ljava/io/File;
 
@@ -563,7 +538,6 @@
 
 .method private saveBackgoundStyle(I)Z
     .locals 6
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -653,7 +627,6 @@
 
 .method private saveBackgroundStyleIndex(I)V
     .locals 4
-    .param p1    # I
 
     const-string v1, "Mms/BackgroundStyle"
 
@@ -770,7 +743,6 @@
 
 .method private setCustomThumbnail(Z)V
     .locals 11
-    .param p1    # Z
 
     const/4 v10, 0x1
 
@@ -1120,8 +1092,6 @@
 
 .method private setImageView(ILandroid/widget/AdapterView;Landroid/view/View;)V
     .locals 6
-    .param p1    # I
-    .param p3    # Landroid/view/View;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -1299,7 +1269,6 @@
 
 .method private startActivityforBackround(I)V
     .locals 6
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -1404,7 +1373,6 @@
 
 .method private startSelectBackgroundActivity(Landroid/content/Intent;)V
     .locals 6
-    .param p1    # Landroid/content/Intent;
 
     const/4 v5, 0x1
 
@@ -1469,7 +1437,6 @@
 
 .method private startTakePictureBackgroundActivity(Landroid/content/Intent;)V
     .locals 2
-    .param p1    # Landroid/content/Intent;
 
     invoke-static {}, Lcom/android/mms/settings/BackgroundStyle;->generateTempPhotoFileName()Ljava/lang/String;
 
@@ -1621,9 +1588,6 @@
 
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const/4 v3, 0x0
 
@@ -1857,7 +1821,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 8
-    .param p1    # Landroid/view/View;
 
     const/4 v7, 0x1
 
@@ -2015,7 +1978,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 2
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Lcom/android/mms/settings/DisplayStyleActivity;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -2051,7 +2013,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/mms/settings/DisplayStyleActivity;->onCreate(Landroid/os/Bundle;)V
 
@@ -2263,8 +2224,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     invoke-virtual {p2}, Landroid/view/KeyEvent;->getKeyCode()I
 

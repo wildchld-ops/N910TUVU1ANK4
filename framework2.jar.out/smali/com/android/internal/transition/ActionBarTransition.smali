@@ -100,7 +100,6 @@
 
 .method public static beginDelayedTransition(Landroid/view/ViewGroup;)V
     .locals 1
-    .param p0    # Landroid/view/ViewGroup;
 
     sget-boolean v0, Lcom/android/internal/transition/ActionBarTransition;->TRANSITIONS_ENABLED:Z
 

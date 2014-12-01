@@ -70,7 +70,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -162,7 +161,6 @@
 
 .method static synthetic access$000(Landroid/drm/DrmManagerClient;)I
     .locals 1
-    .param p0    # Landroid/drm/DrmManagerClient;
 
     iget v0, p0, Landroid/drm/DrmManagerClient;->mUniqueId:I
 
@@ -171,9 +169,6 @@
 
 .method static synthetic access$100(Landroid/drm/DrmManagerClient;ILandroid/drm/DrmInfo;)Landroid/drm/DrmInfoStatus;
     .locals 1
-    .param p0    # Landroid/drm/DrmManagerClient;
-    .param p1    # I
-    .param p2    # Landroid/drm/DrmInfo;
 
     invoke-direct {p0, p1, p2}, Landroid/drm/DrmManagerClient;->_processDrmInfo(ILandroid/drm/DrmInfo;)Landroid/drm/DrmInfoStatus;
 
@@ -184,8 +179,6 @@
 
 .method static synthetic access$200(Landroid/drm/DrmManagerClient;I)I
     .locals 1
-    .param p0    # Landroid/drm/DrmManagerClient;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/drm/DrmManagerClient;->getEventType(I)I
 
@@ -196,9 +189,6 @@
 
 .method static synthetic access$300(Landroid/drm/DrmManagerClient;ILandroid/drm/DrmInfoStatus;)I
     .locals 1
-    .param p0    # Landroid/drm/DrmManagerClient;
-    .param p1    # I
-    .param p2    # Landroid/drm/DrmInfoStatus;
 
     invoke-direct {p0, p1, p2}, Landroid/drm/DrmManagerClient;->getErrorType(ILandroid/drm/DrmInfoStatus;)I
 
@@ -209,8 +199,6 @@
 
 .method static synthetic access$400(Landroid/drm/DrmManagerClient;I)I
     .locals 1
-    .param p0    # Landroid/drm/DrmManagerClient;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/drm/DrmManagerClient;->_removeAllRights(I)I
 
@@ -221,7 +209,6 @@
 
 .method static synthetic access$500(Landroid/drm/DrmManagerClient;)Landroid/drm/DrmManagerClient$OnEventListener;
     .locals 1
-    .param p0    # Landroid/drm/DrmManagerClient;
 
     iget-object v0, p0, Landroid/drm/DrmManagerClient;->mOnEventListener:Landroid/drm/DrmManagerClient$OnEventListener;
 
@@ -230,7 +217,6 @@
 
 .method static synthetic access$600(Landroid/drm/DrmManagerClient;)Landroid/drm/DrmManagerClient$OnErrorListener;
     .locals 1
-    .param p0    # Landroid/drm/DrmManagerClient;
 
     iget-object v0, p0, Landroid/drm/DrmManagerClient;->mOnErrorListener:Landroid/drm/DrmManagerClient$OnErrorListener;
 
@@ -239,7 +225,6 @@
 
 .method static synthetic access$700(Landroid/drm/DrmManagerClient;)Landroid/drm/DrmManagerClient$OnInfoListener;
     .locals 1
-    .param p0    # Landroid/drm/DrmManagerClient;
 
     iget-object v0, p0, Landroid/drm/DrmManagerClient;->mOnInfoListener:Landroid/drm/DrmManagerClient$OnInfoListener;
 
@@ -248,7 +233,6 @@
 
 .method private convertUriToPath(Landroid/net/Uri;)Ljava/lang/String;
     .locals 11
-    .param p1    # Landroid/net/Uri;
 
     const/4 v8, 0x0
 
@@ -500,8 +484,6 @@
 
 .method private getErrorType(ILandroid/drm/DrmInfoStatus;)I
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/drm/DrmInfoStatus;
 
     const/4 v0, -0x1
 
@@ -584,7 +566,6 @@
 
 .method private getEventType(I)I
     .locals 1
-    .param p1    # I
 
     const/4 v0, -0x1
 
@@ -613,10 +594,6 @@
 
 .method public static notify(Ljava/lang/Object;IILjava/lang/String;)V
     .locals 4
-    .param p0    # Ljava/lang/Object;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     check-cast p0, Ljava/lang/ref/WeakReference;
 
@@ -652,7 +629,6 @@
 # virtual methods
 .method public acquireDrmInfo(Landroid/drm/DrmInfoRequest;)Landroid/drm/DrmInfo;
     .locals 2
-    .param p1    # Landroid/drm/DrmInfoRequest;
 
     if-eqz p1, :cond_0
 
@@ -683,7 +659,6 @@
 
 .method public acquireRights(Landroid/drm/DrmInfoRequest;)I
     .locals 2
-    .param p1    # Landroid/drm/DrmInfoRequest;
 
     invoke-virtual {p0, p1}, Landroid/drm/DrmManagerClient;->acquireDrmInfo(Landroid/drm/DrmInfoRequest;)Landroid/drm/DrmInfo;
 
@@ -706,8 +681,6 @@
 
 .method public canHandle(Landroid/net/Uri;Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -749,8 +722,6 @@
 
 .method public canHandle(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -794,7 +765,6 @@
 
 .method public checkRightsStatus(Landroid/net/Uri;)I
     .locals 2
-    .param p1    # Landroid/net/Uri;
 
     if-eqz p1, :cond_0
 
@@ -825,8 +795,6 @@
 
 .method public checkRightsStatus(Landroid/net/Uri;I)I
     .locals 2
-    .param p1    # Landroid/net/Uri;
-    .param p2    # I
 
     if-eqz p1, :cond_0
 
@@ -857,7 +825,6 @@
 
 .method public checkRightsStatus(Ljava/lang/String;)I
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -870,8 +837,6 @@
 
 .method public checkRightsStatus(Ljava/lang/String;I)I
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     if-eqz p1, :cond_0
 
@@ -910,7 +875,6 @@
 
 .method public closeConvertSession(I)Landroid/drm/DrmConvertedStatus;
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/drm/DrmManagerClient;->mUniqueId:I
 
@@ -923,8 +887,6 @@
 
 .method public convertData(I[B)Landroid/drm/DrmConvertedStatus;
     .locals 2
-    .param p1    # I
-    .param p2    # [B
 
     if-eqz p2, :cond_0
 
@@ -1035,8 +997,6 @@
 
 .method public getConstraints(Landroid/net/Uri;I)Landroid/content/ContentValues;
     .locals 2
-    .param p1    # Landroid/net/Uri;
-    .param p2    # I
 
     if-eqz p1, :cond_0
 
@@ -1067,8 +1027,6 @@
 
 .method public getConstraints(Ljava/lang/String;I)Landroid/content/ContentValues;
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     if-eqz p1, :cond_0
 
@@ -1107,8 +1065,6 @@
 
 .method public getDrmObjectType(Landroid/net/Uri;Ljava/lang/String;)I
     .locals 4
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -1167,8 +1123,6 @@
 
 .method public getDrmObjectType(Ljava/lang/String;Ljava/lang/String;)I
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -1212,7 +1166,6 @@
 
 .method public getMetadata(Landroid/net/Uri;)Landroid/content/ContentValues;
     .locals 2
-    .param p1    # Landroid/net/Uri;
 
     if-eqz p1, :cond_0
 
@@ -1243,7 +1196,6 @@
 
 .method public getMetadata(Ljava/lang/String;)Landroid/content/ContentValues;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -1276,7 +1228,6 @@
 
 .method public getOriginalMimeType(Landroid/net/Uri;)Ljava/lang/String;
     .locals 2
-    .param p1    # Landroid/net/Uri;
 
     if-eqz p1, :cond_0
 
@@ -1307,7 +1258,6 @@
 
 .method public getOriginalMimeType(Ljava/lang/String;)Ljava/lang/String;
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -1440,7 +1390,6 @@
 
 .method public installDrmEngine(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -1493,7 +1442,6 @@
 
 .method public openConvertSession(Ljava/lang/String;)I
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -1526,7 +1474,6 @@
 
 .method public processDrmInfo(Landroid/drm/DrmInfo;)I
     .locals 4
-    .param p1    # Landroid/drm/DrmInfo;
 
     if-eqz p1, :cond_0
 
@@ -1667,7 +1614,6 @@
 
 .method public removeRights(Landroid/net/Uri;)I
     .locals 2
-    .param p1    # Landroid/net/Uri;
 
     if-eqz p1, :cond_0
 
@@ -1698,7 +1644,6 @@
 
 .method public removeRights(Ljava/lang/String;)I
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -1731,9 +1676,6 @@
 
 .method public saveRights(Landroid/drm/DrmRights;Ljava/lang/String;Ljava/lang/String;)I
     .locals 2
-    .param p1    # Landroid/drm/DrmRights;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1786,7 +1728,6 @@
 
 .method public declared-synchronized setOnErrorListener(Landroid/drm/DrmManagerClient$OnErrorListener;)V
     .locals 1
-    .param p1    # Landroid/drm/DrmManagerClient$OnErrorListener;
 
     monitor-enter p0
 
@@ -1814,7 +1755,6 @@
 
 .method public declared-synchronized setOnEventListener(Landroid/drm/DrmManagerClient$OnEventListener;)V
     .locals 1
-    .param p1    # Landroid/drm/DrmManagerClient$OnEventListener;
 
     monitor-enter p0
 
@@ -1842,7 +1782,6 @@
 
 .method public declared-synchronized setOnInfoListener(Landroid/drm/DrmManagerClient$OnInfoListener;)V
     .locals 1
-    .param p1    # Landroid/drm/DrmManagerClient$OnInfoListener;
 
     monitor-enter p0
 

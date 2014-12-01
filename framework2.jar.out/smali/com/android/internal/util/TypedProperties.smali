@@ -79,7 +79,6 @@
 
 .method static initTokenizer(Ljava/io/Reader;)Ljava/io/StreamTokenizer;
     .locals 8
-    .param p0    # Ljava/io/Reader;
 
     const/16 v7, 0x20
 
@@ -170,7 +169,6 @@
 
 .method static interpretType(Ljava/lang/String;)I
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string/jumbo v0, "unset"
 
@@ -297,7 +295,6 @@
 
 .method static parse(Ljava/io/Reader;Ljava/util/Map;)V
     .locals 14
-    .param p0    # Ljava/io/Reader;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -526,8 +523,6 @@
 
 .method static parseValue(Ljava/io/StreamTokenizer;I)Ljava/lang/Object;
     .locals 10
-    .param p0    # Ljava/io/StreamTokenizer;
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -979,7 +974,6 @@
 # virtual methods
 .method public get(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 2
-    .param p1    # Ljava/lang/Object;
 
     invoke-super {p0, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -997,7 +991,6 @@
 
 .method public getBoolean(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -1010,8 +1003,6 @@
 
 .method public getBoolean(Ljava/lang/String;Z)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     invoke-super {p0, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -1047,7 +1038,6 @@
 
 .method public getByte(Ljava/lang/String;)B
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -1060,8 +1050,6 @@
 
 .method public getByte(Ljava/lang/String;B)B
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # B
 
     invoke-super {p0, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -1097,7 +1085,6 @@
 
 .method public getDouble(Ljava/lang/String;)D
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const-wide/16 v0, 0x0
 
@@ -1110,8 +1097,6 @@
 
 .method public getDouble(Ljava/lang/String;D)D
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # D
 
     invoke-super {p0, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -1147,7 +1132,6 @@
 
 .method public getFloat(Ljava/lang/String;)F
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -1160,8 +1144,6 @@
 
 .method public getFloat(Ljava/lang/String;F)F
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # F
 
     invoke-super {p0, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -1197,7 +1179,6 @@
 
 .method public getInt(Ljava/lang/String;)I
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -1210,8 +1191,6 @@
 
 .method public getInt(Ljava/lang/String;I)I
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-super {p0, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -1247,7 +1226,6 @@
 
 .method public getLong(Ljava/lang/String;)J
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const-wide/16 v0, 0x0
 
@@ -1260,8 +1238,6 @@
 
 .method public getLong(Ljava/lang/String;J)J
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
 
     invoke-super {p0, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -1297,7 +1273,6 @@
 
 .method public getShort(Ljava/lang/String;)S
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -1310,8 +1285,6 @@
 
 .method public getShort(Ljava/lang/String;S)S
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # S
 
     invoke-super {p0, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -1347,7 +1320,6 @@
 
 .method public getString(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, ""
 
@@ -1360,8 +1332,6 @@
 
 .method public getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-super {p0, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -1404,7 +1374,6 @@
 
 .method public getStringInfo(Ljava/lang/String;)I
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-super {p0, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -1443,7 +1412,6 @@
 
 .method public load(Ljava/io/Reader;)V
     .locals 0
-    .param p1    # Ljava/io/Reader;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

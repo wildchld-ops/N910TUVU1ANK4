@@ -24,8 +24,6 @@
 # direct methods
 .method public constructor <init>(Landroid/filterfw/core/FilterContext;Landroid/filterfw/core/Filter;)V
     .locals 1
-    .param p1    # Landroid/filterfw/core/FilterContext;
-    .param p2    # Landroid/filterfw/core/Filter;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -116,7 +114,6 @@
 
 .method public execute(Landroid/filterfw/core/KeyValueMap;)Landroid/filterfw/core/Frame;
     .locals 11
-    .param p1    # Landroid/filterfw/core/KeyValueMap;
 
     const/4 v10, 0x0
 
@@ -318,7 +315,6 @@
 
 .method public varargs executeWithArgList([Ljava/lang/Object;)Landroid/filterfw/core/Frame;
     .locals 1
-    .param p1    # [Ljava/lang/Object;
 
     invoke-static {p1}, Landroid/filterfw/core/KeyValueMap;->fromKeyValues([Ljava/lang/Object;)Landroid/filterfw/core/KeyValueMap;
 
@@ -349,8 +345,6 @@
 
 .method public setInputFrame(Ljava/lang/String;Landroid/filterfw/core/Frame;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/filterfw/core/Frame;
 
     iget-object v0, p0, Landroid/filterfw/core/FilterFunction;->mFilter:Landroid/filterfw/core/Filter;
 
@@ -361,8 +355,6 @@
 
 .method public setInputValue(Ljava/lang/String;Ljava/lang/Object;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Object;
 
     iget-object v0, p0, Landroid/filterfw/core/FilterFunction;->mFilter:Landroid/filterfw/core/Filter;
 

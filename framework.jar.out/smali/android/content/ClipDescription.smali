@@ -48,7 +48,6 @@
 
 .method public constructor <init>(Landroid/content/ClipDescription;)V
     .locals 1
-    .param p1    # Landroid/content/ClipDescription;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -65,7 +64,6 @@
 
 .method constructor <init>(Landroid/os/Parcel;)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -90,8 +88,6 @@
 
 .method public constructor <init>(Ljava/lang/CharSequence;[Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # [Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -115,8 +111,6 @@
 
 .method public static compareMimeTypes(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 6
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x1
 
@@ -200,7 +194,6 @@
 
 .method public filterMimeTypes(Ljava/lang/String;)[Ljava/lang/String;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -271,7 +264,6 @@
 
 .method public getMimeType(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/content/ClipDescription;->mMimeTypes:[Ljava/lang/String;
 
@@ -292,7 +284,6 @@
 
 .method public hasMimeType(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -331,7 +322,6 @@
 
 .method public toShortString(Ljava/lang/StringBuilder;)Z
     .locals 5
-    .param p1    # Ljava/lang/StringBuilder;
 
     const/16 v4, 0x22
 
@@ -512,8 +502,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v0, p0, Landroid/content/ClipDescription;->mLabel:Ljava/lang/CharSequence;
 

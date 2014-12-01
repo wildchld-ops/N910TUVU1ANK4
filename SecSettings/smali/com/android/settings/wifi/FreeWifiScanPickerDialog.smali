@@ -51,7 +51,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/wifi/FreeWifiScanPickerDialog;)Landroid/widget/Button;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/FreeWifiScanPickerDialog;
 
     iget-object v0, p0, Lcom/android/settings/wifi/FreeWifiScanPickerDialog;->startBtn:Landroid/widget/Button;
 
@@ -60,8 +59,6 @@
 
 .method static synthetic access$002(Lcom/android/settings/wifi/FreeWifiScanPickerDialog;Landroid/widget/Button;)Landroid/widget/Button;
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/FreeWifiScanPickerDialog;
-    .param p1    # Landroid/widget/Button;
 
     iput-object p1, p0, Lcom/android/settings/wifi/FreeWifiScanPickerDialog;->startBtn:Landroid/widget/Button;
 
@@ -136,7 +133,6 @@
 # virtual methods
 .method public onConnecting(Ljava/lang/Boolean;)V
     .locals 2
-    .param p1    # Ljava/lang/Boolean;
 
     const-string v0, "FreeWifiScanPickerDialog"
 
@@ -167,7 +163,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
@@ -206,7 +201,6 @@
 
 .method public onScanCompleted(Ljava/lang/Boolean;)V
     .locals 2
-    .param p1    # Ljava/lang/Boolean;
 
     const-string v0, "FreeWifiScanPickerDialog"
 

@@ -38,8 +38,6 @@
 
 .method private createPageAddShortcut(Landroid/content/Context;Landroid/content/Intent;)Z
     .locals 15
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     const/4 v11, 0x0
 
@@ -176,9 +174,6 @@
 
 .method private static findEmptyCell(Landroid/content/Context;[II)Z
     .locals 23
-    .param p0    # Landroid/content/Context;
-    .param p1    # [I
-    .param p2    # I
 
     sget v2, Lcom/android/launcher2/InstallShortcutReceiver;->mCountX:I
 
@@ -429,9 +424,6 @@
 
 .method private installShortcut(Landroid/content/Context;Landroid/content/Intent;I)Z
     .locals 12
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
-    .param p3    # I
 
     const/4 v8, 0x1
 
@@ -510,8 +502,6 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 21
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     const-string v18, "android.intent.extra.shortcut.NAME"
 

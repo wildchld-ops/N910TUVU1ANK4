@@ -21,7 +21,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/settings/personalpage/PersonalPageChooseLockAdditionalPin;Landroid/os/Handler;)V
     .locals 0
-    .param p2    # Landroid/os/Handler;
 
     iput-object p1, p0, Lcom/android/settings/personalpage/PersonalPageChooseLockAdditionalPin$1;->this$0:Lcom/android/settings/personalpage/PersonalPageChooseLockAdditionalPin;
 
@@ -34,7 +33,6 @@
 # virtual methods
 .method public onChange(Z)V
     .locals 5
-    .param p1    # Z
 
     const/4 v4, 0x0
 

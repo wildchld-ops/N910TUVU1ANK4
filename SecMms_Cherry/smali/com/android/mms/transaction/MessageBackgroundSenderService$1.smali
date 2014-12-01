@@ -33,7 +33,6 @@
 # virtual methods
 .method public getSupportedAttchType(Landroid/content/Intent;)Z
     .locals 5
-    .param p1    # Landroid/content/Intent;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -84,9 +83,6 @@
 
 .method public sendMessage(IILandroid/content/Intent;)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

@@ -45,7 +45,6 @@
 
 .method private constructor <init>(I)V
     .locals 0
-    .param p1    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -56,8 +55,6 @@
 
 .method synthetic constructor <init>(ILandroid/os/StrictMode$1;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Landroid/os/StrictMode$1;
 
     invoke-direct {p0, p1}, Landroid/os/StrictMode$ThreadPolicy;-><init>(I)V
 

@@ -49,7 +49,6 @@
 
 .method public static isDuplicated(Landroid/view/MotionEvent;)Z
     .locals 5
-    .param p0    # Landroid/view/MotionEvent;
 
     const/4 v3, 0x0
 

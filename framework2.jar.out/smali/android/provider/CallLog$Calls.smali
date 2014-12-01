@@ -152,13 +152,6 @@
 
 .method public static addCall(Lcom/android/internal/telephony/CallerInfo;Landroid/content/Context;Ljava/lang/String;IIJI)Landroid/net/Uri;
     .locals 10
-    .param p0    # Lcom/android/internal/telephony/CallerInfo;
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # J
-    .param p7    # I
 
     const/4 v8, 0x0
 
@@ -187,14 +180,6 @@
 
 .method public static addCall(Lcom/android/internal/telephony/CallerInfo;Landroid/content/Context;Ljava/lang/String;IIJII)Landroid/net/Uri;
     .locals 10
-    .param p0    # Lcom/android/internal/telephony/CallerInfo;
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # J
-    .param p7    # I
-    .param p8    # I
 
     const/4 v9, 0x0
 
@@ -223,15 +208,6 @@
 
 .method public static addCall(Lcom/android/internal/telephony/CallerInfo;Landroid/content/Context;Ljava/lang/String;IIJIII)Landroid/net/Uri;
     .locals 16
-    .param p0    # Lcom/android/internal/telephony/CallerInfo;
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # J
-    .param p7    # I
-    .param p8    # I
-    .param p9    # I
 
     invoke-virtual/range {p1 .. p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -620,7 +596,6 @@
 
 .method public static getLastOutgoingCall(Landroid/content/Context;)Ljava/lang/String;
     .locals 7
-    .param p0    # Landroid/content/Context;
 
     invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -699,7 +674,6 @@
 
 .method private static removeExpiredEntries(Landroid/content/Context;)V
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 

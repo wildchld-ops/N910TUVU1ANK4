@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,9 +36,6 @@
 # virtual methods
 .method public addCard(ILandroid/content/ComponentName;Lcom/samsung/android/magazinecard/MagazineCardInfo;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # Lcom/samsung/android/magazinecard/MagazineCardInfo;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -141,7 +137,6 @@
 
 .method public getCard(I)Lcom/samsung/android/magazinecard/MagazineCardRecord;
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -213,8 +208,6 @@
 
 .method public getCardRecordIdList(IZ)[I
     .locals 6
-    .param p1    # I
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -287,9 +280,6 @@
 
 .method public isCardExist(ILandroid/content/ComponentName;I)Z
     .locals 7
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -380,8 +370,6 @@
 
 .method public removeAllCard(ILandroid/content/ComponentName;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -454,9 +442,6 @@
 
 .method public removeCard(ILandroid/content/ComponentName;I)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -531,9 +516,6 @@
 
 .method public updateCard(ILandroid/content/ComponentName;Lcom/samsung/android/magazinecard/MagazineCardInfo;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # Lcom/samsung/android/magazinecard/MagazineCardInfo;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

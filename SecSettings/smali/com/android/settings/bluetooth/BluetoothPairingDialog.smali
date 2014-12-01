@@ -55,7 +55,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/bluetooth/BluetoothPairingDialog;)Landroid/bluetooth/BluetoothDevice;
     .locals 1
-    .param p0    # Lcom/android/settings/bluetooth/BluetoothPairingDialog;
 
     iget-object v0, p0, Lcom/android/settings/bluetooth/BluetoothPairingDialog;->mDevice:Landroid/bluetooth/BluetoothDevice;
 
@@ -64,7 +63,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/bluetooth/BluetoothPairingDialog;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/bluetooth/BluetoothPairingDialog;
 
     iget-boolean v0, p0, Lcom/android/settings/bluetooth/BluetoothPairingDialog;->mEmergencyCallbackMode:Z
 
@@ -73,8 +71,6 @@
 
 .method static synthetic access$102(Lcom/android/settings/bluetooth/BluetoothPairingDialog;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/bluetooth/BluetoothPairingDialog;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/bluetooth/BluetoothPairingDialog;->mEmergencyCallbackMode:Z
 
@@ -83,7 +79,6 @@
 
 .method private createConfirmationDialog(Lcom/android/settings/bluetooth/CachedBluetoothDeviceManager;)V
     .locals 2
-    .param p1    # Lcom/android/settings/bluetooth/CachedBluetoothDeviceManager;
 
     iget-object v0, p0, Lcom/android/settings/bluetooth/BluetoothPairingDialog;->mAlertParams:Lcom/android/internal/app/AlertController$AlertParams;
 
@@ -128,7 +123,6 @@
 
 .method private createConsentDialog(Lcom/android/settings/bluetooth/CachedBluetoothDeviceManager;)V
     .locals 2
-    .param p1    # Lcom/android/settings/bluetooth/CachedBluetoothDeviceManager;
 
     iget-object v0, p0, Lcom/android/settings/bluetooth/BluetoothPairingDialog;->mAlertParams:Lcom/android/internal/app/AlertController$AlertParams;
 
@@ -173,7 +167,6 @@
 
 .method private createDisplayPasskeyOrPinDialog(Lcom/android/settings/bluetooth/CachedBluetoothDeviceManager;)V
     .locals 4
-    .param p1    # Lcom/android/settings/bluetooth/CachedBluetoothDeviceManager;
 
     iget-object v0, p0, Lcom/android/settings/bluetooth/BluetoothPairingDialog;->mAlertParams:Lcom/android/internal/app/AlertController$AlertParams;
 
@@ -241,7 +234,6 @@
 
 .method private createMyPlaceDialog(Lcom/android/settings/bluetooth/CachedBluetoothDeviceManager;)V
     .locals 2
-    .param p1    # Lcom/android/settings/bluetooth/CachedBluetoothDeviceManager;
 
     iget-object v0, p0, Lcom/android/settings/bluetooth/BluetoothPairingDialog;->mAlertParams:Lcom/android/internal/app/AlertController$AlertParams;
 
@@ -286,7 +278,6 @@
 
 .method private createPinEntryView(Ljava/lang/String;)Landroid/view/View;
     .locals 13
-    .param p1    # Ljava/lang/String;
 
     const/4 v9, 0x0
 
@@ -477,7 +468,6 @@
 
 .method private createUserEntryDialog(Lcom/android/settings/bluetooth/CachedBluetoothDeviceManager;)V
     .locals 3
-    .param p1    # Lcom/android/settings/bluetooth/CachedBluetoothDeviceManager;
 
     iget-object v0, p0, Lcom/android/settings/bluetooth/BluetoothPairingDialog;->mAlertParams:Lcom/android/internal/app/AlertController$AlertParams;
 
@@ -544,7 +534,6 @@
 
 .method private createView(Lcom/android/settings/bluetooth/CachedBluetoothDeviceManager;)Landroid/view/View;
     .locals 13
-    .param p1    # Lcom/android/settings/bluetooth/CachedBluetoothDeviceManager;
 
     const/4 v5, 0x0
 
@@ -761,7 +750,6 @@
 
 .method private onPair(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/settings/bluetooth/BluetoothPairingDialog;->destroyNotification()V
 
@@ -876,7 +864,6 @@
 # virtual methods
 .method public afterTextChanged(Landroid/text/Editable;)V
     .locals 2
-    .param p1    # Landroid/text/Editable;
 
     iget-object v0, p0, Lcom/android/settings/bluetooth/BluetoothPairingDialog;->mOkButton:Landroid/widget/Button;
 
@@ -906,18 +893,12 @@
 
 .method public beforeTextChanged(Ljava/lang/CharSequence;III)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     return-void
 .end method
 
 .method public onCheckedChanged(Lcom/sec/android/touchwiz/widget/TwCompoundButton;Z)V
     .locals 2
-    .param p1    # Lcom/sec/android/touchwiz/widget/TwCompoundButton;
-    .param p2    # Z
 
     const/4 v0, 0x0
 
@@ -946,8 +927,6 @@
 
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 3
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     packed-switch p2, :pswitch_data_0
 
@@ -1015,7 +994,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 14
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/internal/app/AlertActivity;->onCreate(Landroid/os/Bundle;)V
 
@@ -1456,8 +1434,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x4
 
@@ -1475,10 +1451,6 @@
 
 .method public onTextChanged(Ljava/lang/CharSequence;III)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     return-void
 .end method

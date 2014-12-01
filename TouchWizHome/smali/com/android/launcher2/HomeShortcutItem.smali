@@ -48,7 +48,6 @@
 
 .method constructor <init>(Lcom/android/launcher2/BaseItem$Type;)V
     .locals 0
-    .param p1    # Lcom/android/launcher2/BaseItem$Type;
 
     invoke-direct {p0, p1}, Lcom/android/launcher2/HomeItem;-><init>(Lcom/android/launcher2/BaseItem$Type;)V
 
@@ -57,8 +56,6 @@
 
 .method public static dumpShortcutInfoList(Ljava/lang/String;Ljava/lang/String;Ljava/util/ArrayList;)V
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -265,7 +262,6 @@
 
 .method onAddToDatabase(Landroid/content/ContentValues;)V
     .locals 4
-    .param p1    # Landroid/content/ContentValues;
 
     const/4 v3, 0x0
 
@@ -393,8 +389,6 @@
 
 .method final setActivity(Landroid/content/ComponentName;I)V
     .locals 2
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # I
 
     new-instance v0, Landroid/content/Intent;
 
@@ -423,7 +417,6 @@
 
 .method public setCustomIcon(Landroid/graphics/Bitmap;)V
     .locals 1
-    .param p1    # Landroid/graphics/Bitmap;
 
     sget-boolean v0, Lcom/android/launcher2/Launcher;->CSCFEATURE_LAUNCHER_THEME_ENABLE:Z
 
@@ -441,7 +434,6 @@
 
 .method public setIcon(Landroid/graphics/Bitmap;)V
     .locals 1
-    .param p1    # Landroid/graphics/Bitmap;
 
     iget-object v0, p0, Lcom/android/launcher2/BaseItem;->mIconBitmap:Landroid/graphics/Bitmap;
 

@@ -73,7 +73,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/SecExternalDisplayService;)V
     .locals 6
-    .param p1    # Lcom/android/server/SecExternalDisplayService;
 
     const/4 v5, 0x3
 
@@ -138,7 +137,6 @@
 
 .method public static StartEDSIntents(Lcom/android/server/SecExternalDisplayService;)V
     .locals 1
-    .param p0    # Lcom/android/server/SecExternalDisplayService;
 
     new-instance v0, Lcom/android/server/SecExternalDisplayIntents;
 
@@ -149,7 +147,6 @@
 
 .method static synthetic access$000(Lcom/android/server/SecExternalDisplayIntents;)Ljava/util/HashMap;
     .locals 1
-    .param p0    # Lcom/android/server/SecExternalDisplayIntents;
 
     iget-object v0, p0, Lcom/android/server/SecExternalDisplayIntents;->BroadcastMap:Ljava/util/HashMap;
 

@@ -29,7 +29,6 @@
 # virtual methods
 .method protected enter(Lcom/android/launcher2/UpdateableShadowBuilder;)V
     .locals 0
-    .param p1    # Lcom/android/launcher2/UpdateableShadowBuilder;
 
     invoke-virtual {p1}, Lcom/android/launcher2/UpdateableShadowBuilder;->resetPaint()V
 

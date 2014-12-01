@@ -36,7 +36,6 @@
 # virtual methods
 .method public onComplete(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/touchtype/personalizer/PersonalizationRequest$DownloadRunnable$1$1;->this$2:Lcom/touchtype/personalizer/PersonalizationRequest$DownloadRunnable$1;
 

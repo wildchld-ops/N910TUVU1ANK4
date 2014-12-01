@@ -36,8 +36,6 @@
 # virtual methods
 .method public onFocusChange(Landroid/view/View;Z)V
     .locals 4
-    .param p1    # Landroid/view/View;
-    .param p2    # Z
 
     const/16 v3, 0x8
 

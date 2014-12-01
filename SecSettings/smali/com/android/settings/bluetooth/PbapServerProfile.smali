@@ -38,7 +38,6 @@
 
 .method constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -65,8 +64,6 @@
 
 .method static synthetic access$102(Lcom/android/settings/bluetooth/PbapServerProfile;Landroid/bluetooth/BluetoothPbap;)Landroid/bluetooth/BluetoothPbap;
     .locals 0
-    .param p0    # Lcom/android/settings/bluetooth/PbapServerProfile;
-    .param p1    # Landroid/bluetooth/BluetoothPbap;
 
     iput-object p1, p0, Lcom/android/settings/bluetooth/PbapServerProfile;->mService:Landroid/bluetooth/BluetoothPbap;
 
@@ -75,8 +72,6 @@
 
 .method static synthetic access$202(Lcom/android/settings/bluetooth/PbapServerProfile;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/bluetooth/PbapServerProfile;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/bluetooth/PbapServerProfile;->mIsProfileReady:Z
 
@@ -87,7 +82,6 @@
 # virtual methods
 .method public connect(Landroid/bluetooth/BluetoothDevice;)Z
     .locals 1
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
 
     const/4 v0, 0x0
 
@@ -96,7 +90,6 @@
 
 .method public disconnect(Landroid/bluetooth/BluetoothDevice;)Z
     .locals 1
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
 
     iget-object v0, p0, Lcom/android/settings/bluetooth/PbapServerProfile;->mService:Landroid/bluetooth/BluetoothPbap;
 
@@ -164,7 +157,6 @@
 
 .method public getConnectionStatus(Landroid/bluetooth/BluetoothDevice;)I
     .locals 2
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
 
     const/4 v0, 0x0
 
@@ -192,7 +184,6 @@
 
 .method public getDrawableResource(Landroid/bluetooth/BluetoothClass;)I
     .locals 1
-    .param p1    # Landroid/bluetooth/BluetoothClass;
 
     const/4 v0, 0x0
 
@@ -201,7 +192,6 @@
 
 .method public getNameResource(Landroid/bluetooth/BluetoothDevice;)I
     .locals 1
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
 
     const/4 v0, 0x0
 
@@ -218,7 +208,6 @@
 
 .method public getPreferred(Landroid/bluetooth/BluetoothDevice;)I
     .locals 1
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
 
     const/4 v0, -0x1
 
@@ -227,7 +216,6 @@
 
 .method public getSummaryResourceForDevice(Landroid/bluetooth/BluetoothDevice;)I
     .locals 1
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
 
     const/4 v0, 0x0
 
@@ -252,7 +240,6 @@
 
 .method public isPreferred(Landroid/bluetooth/BluetoothDevice;)Z
     .locals 1
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
 
     const/4 v0, 0x0
 
@@ -269,8 +256,6 @@
 
 .method public setPreferred(Landroid/bluetooth/BluetoothDevice;Z)V
     .locals 0
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
-    .param p2    # Z
 
     return-void
 .end method

@@ -16,12 +16,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;ILcom/android/mms/drm/DrmWrapper;Lcom/android/mms/model/RegionModel;)V
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
-    .param p5    # Lcom/android/mms/drm/DrmWrapper;
-    .param p6    # Lcom/android/mms/model/RegionModel;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -54,12 +48,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;I[BLcom/android/mms/model/RegionModel;)V
     .locals 9
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
-    .param p5    # [B
-    .param p6    # Lcom/android/mms/model/RegionModel;
 
     const/16 v8, 0xd
 
@@ -156,10 +144,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Lcom/android/mms/model/RegionModel;)V
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Lcom/android/mms/model/RegionModel;
 
     const/16 v4, 0x6a
 
@@ -184,7 +168,6 @@
 
 .method private extractTextFromData([B)Ljava/lang/CharSequence;
     .locals 5
-    .param p1    # [B
 
     if-eqz p1, :cond_1
 
@@ -359,7 +342,6 @@
 
 .method public handleEvent(Lorg/w3c/dom/events/Event;)V
     .locals 4
-    .param p1    # Lorg/w3c/dom/events/Event;
 
     const/4 v3, 0x1
 
@@ -397,7 +379,6 @@
 
 .method public setText(Ljava/lang/CharSequence;)V
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
 
     iput-object p1, p0, Lcom/android/mms/model/TextModel;->mText:Ljava/lang/CharSequence;
 
@@ -424,8 +405,6 @@
 
 .method public setText(Ljava/lang/CharSequence;Z)V
     .locals 2
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Z
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 

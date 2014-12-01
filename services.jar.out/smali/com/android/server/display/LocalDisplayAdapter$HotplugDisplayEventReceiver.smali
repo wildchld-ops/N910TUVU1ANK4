@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/display/LocalDisplayAdapter;Landroid/os/Looper;)V
     .locals 0
-    .param p2    # Landroid/os/Looper;
 
     iput-object p1, p0, Lcom/android/server/display/LocalDisplayAdapter$HotplugDisplayEventReceiver;->this$0:Lcom/android/server/display/LocalDisplayAdapter;
 
@@ -34,9 +33,6 @@
 # virtual methods
 .method public onHotplug(JIZ)V
     .locals 2
-    .param p1    # J
-    .param p3    # I
-    .param p4    # Z
 
     iget-object v0, p0, Lcom/android/server/display/LocalDisplayAdapter$HotplugDisplayEventReceiver;->this$0:Lcom/android/server/display/LocalDisplayAdapter;
 

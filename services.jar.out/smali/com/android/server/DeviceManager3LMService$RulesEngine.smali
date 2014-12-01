@@ -70,8 +70,6 @@
 
 .method public checkPolicy(Ljava/lang/String;Z)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     move v1, p2
 
@@ -110,8 +108,6 @@
 
 .method public updatePolicy(Ljava/lang/String;Z)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const/4 v0, 0x0
 

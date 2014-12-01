@@ -14,8 +14,6 @@
 
 .method public static metaStateHasModifiers(II)Z
     .locals 1
-    .param p0    # I
-    .param p1    # I
 
     invoke-static {p0, p1}, Landroid/view/KeyEvent;->metaStateHasModifiers(II)Z
 
@@ -26,7 +24,6 @@
 
 .method public static metaStateHasNoModifiers(I)Z
     .locals 1
-    .param p0    # I
 
     invoke-static {p0}, Landroid/view/KeyEvent;->metaStateHasNoModifiers(I)Z
 
@@ -37,7 +34,6 @@
 
 .method public static normalizeMetaState(I)I
     .locals 1
-    .param p0    # I
 
     invoke-static {p0}, Landroid/view/KeyEvent;->normalizeMetaState(I)I
 

@@ -36,9 +36,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/recent/cardholder/BaseContainer;IFI)V
     .locals 6
-    .param p2    # I
-    .param p3    # F
-    .param p4    # I
 
     const/4 v5, 0x1
 
@@ -59,10 +56,6 @@
 
 .method constructor <init>(Lcom/android/systemui/recent/cardholder/BaseContainer;IFIZ)V
     .locals 7
-    .param p2    # I
-    .param p3    # F
-    .param p4    # I
-    .param p5    # Z
 
     const/4 v5, 0x1
 
@@ -85,11 +78,6 @@
 
 .method constructor <init>(Lcom/android/systemui/recent/cardholder/BaseContainer;IFIZZ)V
     .locals 3
-    .param p2    # I
-    .param p3    # F
-    .param p4    # I
-    .param p5    # Z
-    .param p6    # Z
 
     const/4 v2, 0x1
 

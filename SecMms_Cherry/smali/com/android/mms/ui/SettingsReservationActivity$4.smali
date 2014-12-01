@@ -36,10 +36,6 @@
 # virtual methods
 .method public onDateSet(Landroid/widget/DatePicker;III)V
     .locals 5
-    .param p1    # Landroid/widget/DatePicker;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     move v2, p2
 

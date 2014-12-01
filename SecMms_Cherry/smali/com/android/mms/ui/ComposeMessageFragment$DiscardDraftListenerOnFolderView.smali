@@ -41,8 +41,6 @@
 
 .method synthetic constructor <init>(Lcom/android/mms/ui/ComposeMessageFragment;Lcom/android/mms/ui/ComposeMessageFragment$1;)V
     .locals 0
-    .param p1    # Lcom/android/mms/ui/ComposeMessageFragment;
-    .param p2    # Lcom/android/mms/ui/ComposeMessageFragment$1;
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/ComposeMessageFragment$DiscardDraftListenerOnFolderView;-><init>(Lcom/android/mms/ui/ComposeMessageFragment;)V
 
@@ -53,8 +51,6 @@
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 5
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     const-string v1, "Mms/ComposeMessageFragment"
 
@@ -90,9 +86,6 @@
 
 .method public onKey(Landroid/content/DialogInterface;ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
-    .param p3    # Landroid/view/KeyEvent;
 
     const/16 v0, 0x52
 
@@ -116,7 +109,6 @@
 
 .method public setIntent(Landroid/content/Intent;)Lcom/android/mms/ui/ComposeMessageFragment$DiscardDraftListenerOnFolderView;
     .locals 0
-    .param p1    # Landroid/content/Intent;
 
     iput-object p1, p0, Lcom/android/mms/ui/ComposeMessageFragment$DiscardDraftListenerOnFolderView;->mIntent:Landroid/content/Intent;
 

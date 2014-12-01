@@ -198,7 +198,7 @@
 
     const-string v1, ""
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/PhotoringAgreement;->getResources()Landroid/content/res/Resources;
 
     move-result-object v2
 
@@ -239,13 +239,13 @@
 
     invoke-super {p0, p1}, Lcom/android/internal/app/AlertActivity;->onCreate(Landroid/os/Bundle;)V
 
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getBaseContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/PhotoringAgreement;->getBaseContext()Landroid/content/Context;
 
     move-result-object v1
 
     iput-object v1, p0, Lcom/android/phone/PhotoringAgreement;->mContext:Landroid/content/Context;
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/phone/PhotoringAgreement;->getIntent()Landroid/content/Intent;
 
     move-result-object v1
 
@@ -289,9 +289,9 @@
 
     iput-object v1, p0, Lcom/android/phone/PhotoringAgreement;->tv:Landroid/widget/TextView;
 
-    iget-object v0, p0, Lcom/android/internal/app/AlertActivity;->mAlertParams:Lcom/android/internal/app/AlertController$AlertParams;
+    iget-object v0, p0, Lcom/android/phone/PhotoringAgreement;->mAlertParams:Lcom/android/internal/app/AlertController$AlertParams;
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/PhotoringAgreement;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -313,13 +313,13 @@
 
     const v1, 0x104000a
 
-    invoke-virtual {p0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v1}, Lcom/android/phone/PhotoringAgreement;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
     iput-object v1, v0, Lcom/android/internal/app/AlertController$AlertParams;->mPositiveButtonText:Ljava/lang/CharSequence;
 
-    invoke-virtual {p0}, Lcom/android/internal/app/AlertActivity;->setupAlert()V
+    invoke-virtual {p0}, Lcom/android/phone/PhotoringAgreement;->setupAlert()V
 
     invoke-direct {p0}, Lcom/android/phone/PhotoringAgreement;->createThreadAndDialog()V
 
@@ -335,7 +335,7 @@
 
     iget-object v0, p0, Lcom/android/phone/PhotoringAgreement;->loadingDialog:Landroid/app/ProgressDialog;
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->isShowing()Z
+    invoke-virtual {v0}, Landroid/app/ProgressDialog;->isShowing()Z
 
     move-result v0
 
@@ -343,14 +343,14 @@
 
     iget-object v0, p0, Lcom/android/phone/PhotoringAgreement;->loadingDialog:Landroid/app/ProgressDialog;
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->dismiss()V
+    invoke-virtual {v0}, Landroid/app/ProgressDialog;->dismiss()V
 
     const/4 v0, 0x0
 
     iput-object v0, p0, Lcom/android/phone/PhotoringAgreement;->loadingDialog:Landroid/app/ProgressDialog;
 
     :cond_0
-    invoke-super {p0}, Landroid/app/Activity;->onDestroy()V
+    invoke-super {p0}, Lcom/android/internal/app/AlertActivity;->onDestroy()V
 
     return-void
 .end method

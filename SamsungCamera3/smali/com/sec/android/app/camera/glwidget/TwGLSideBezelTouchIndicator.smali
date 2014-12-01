@@ -134,11 +134,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;FFFF)V
     .locals 8
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
 
     const-wide/16 v6, 0x1f4
 
@@ -441,7 +436,6 @@
 
 .method static synthetic access$000(Lcom/sec/android/app/camera/glwidget/TwGLSideBezelTouchIndicator;)I
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLSideBezelTouchIndicator;
 
     iget v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLSideBezelTouchIndicator;->mAnimationCount:I
 
@@ -450,7 +444,6 @@
 
 .method static synthetic access$008(Lcom/sec/android/app/camera/glwidget/TwGLSideBezelTouchIndicator;)I
     .locals 2
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLSideBezelTouchIndicator;
 
     iget v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLSideBezelTouchIndicator;->mAnimationCount:I
 
@@ -463,7 +456,6 @@
 
 .method static synthetic access$100(Lcom/sec/android/app/camera/glwidget/TwGLSideBezelTouchIndicator;)Landroid/view/animation/Animation;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLSideBezelTouchIndicator;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLSideBezelTouchIndicator;->downAnimation:Landroid/view/animation/Animation;
 
@@ -472,7 +464,6 @@
 
 .method static synthetic access$200(Lcom/sec/android/app/camera/glwidget/TwGLSideBezelTouchIndicator;)Lcom/sec/android/glview/TwGLImage;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLSideBezelTouchIndicator;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLSideBezelTouchIndicator;->mShutterAnchor:Lcom/sec/android/glview/TwGLImage;
 
@@ -481,7 +472,6 @@
 
 .method static synthetic access$300(Lcom/sec/android/app/camera/glwidget/TwGLSideBezelTouchIndicator;)Landroid/view/animation/Animation;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLSideBezelTouchIndicator;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLSideBezelTouchIndicator;->upAnimation:Landroid/view/animation/Animation;
 
@@ -534,7 +524,6 @@
 
 .method public setOnSideTouchIndicatorHideListener(Lcom/sec/android/app/camera/glwidget/TwGLSideBezelTouchIndicator$OnSideTouchIndicatorHideListener;)V
     .locals 0
-    .param p1    # Lcom/sec/android/app/camera/glwidget/TwGLSideBezelTouchIndicator$OnSideTouchIndicatorHideListener;
 
     iput-object p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLSideBezelTouchIndicator;->mOnSideTouchIndicatorHideListener:Lcom/sec/android/app/camera/glwidget/TwGLSideBezelTouchIndicator$OnSideTouchIndicatorHideListener;
 
@@ -543,7 +532,6 @@
 
 .method public setSideTouchBarState(I)V
     .locals 5
-    .param p1    # I
 
     const/4 v4, 0x3
 

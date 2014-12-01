@@ -25,8 +25,6 @@
 # direct methods
 .method public constructor <init>(Lcom/diotek/ime/framework/input/remoteController/RemoteControllerDataStructure;II)V
     .locals 0
-    .param p2    # I
-    .param p3    # I
 
     iput-object p1, p0, Lcom/diotek/ime/framework/input/remoteController/RemoteControllerDataStructure$Position;->this$0:Lcom/diotek/ime/framework/input/remoteController/RemoteControllerDataStructure;
 

@@ -70,7 +70,7 @@
     :cond_0
     iget-object v1, p0, Lcom/android/phone/CallLockSettings$2;->this$0:Lcom/android/phone/CallLockSettings;
 
-    invoke-virtual {v1}, Landroid/app/Activity;->finish()V
+    invoke-virtual {v1}, Lcom/android/phone/CallLockSettings;->finish()V
 
     goto :goto_0
 

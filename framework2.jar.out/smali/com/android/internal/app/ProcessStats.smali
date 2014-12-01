@@ -726,7 +726,6 @@
 
 .method public constructor <init>(Landroid/os/Parcel;)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -767,7 +766,6 @@
 
 .method public constructor <init>(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -808,10 +806,6 @@
 
 .method static synthetic access$100(Lcom/android/internal/app/ProcessStats;Landroid/os/Parcel;Ljava/lang/String;Ljava/lang/String;)[I
     .locals 1
-    .param p0    # Lcom/android/internal/app/ProcessStats;
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/internal/app/ProcessStats;->readTableFromParcel(Landroid/os/Parcel;Ljava/lang/String;Ljava/lang/String;)[I
 
@@ -822,9 +816,6 @@
 
 .method static binarySearch([III)I
     .locals 6
-    .param p0    # [I
-    .param p1    # I
-    .param p2    # I
 
     const/4 v1, 0x0
 
@@ -889,9 +880,6 @@
 
 .method public static computeProcessData(Lcom/android/internal/app/ProcessStats$ProcessState;Lcom/android/internal/app/ProcessStats$ProcessDataCollection;J)V
     .locals 27
-    .param p0    # Lcom/android/internal/app/ProcessStats$ProcessState;
-    .param p1    # Lcom/android/internal/app/ProcessStats$ProcessDataCollection;
-    .param p2    # J
 
     const-wide/16 v21, 0x0
 
@@ -1377,11 +1365,6 @@
 
 .method static computeProcessTimeLocked(Lcom/android/internal/app/ProcessStats$ProcessState;[I[I[IJ)J
     .locals 8
-    .param p0    # Lcom/android/internal/app/ProcessStats$ProcessState;
-    .param p1    # [I
-    .param p2    # [I
-    .param p3    # [I
-    .param p4    # J
 
     const-wide/16 v4, 0x0
 
@@ -1446,12 +1429,6 @@
 
 .method static dumpAdjTimesCheckin(Ljava/io/PrintWriter;Ljava/lang/String;[JIJJ)V
     .locals 7
-    .param p0    # Ljava/io/PrintWriter;
-    .param p1    # Ljava/lang/String;
-    .param p2    # [J
-    .param p3    # I
-    .param p4    # J
-    .param p6    # J
 
     const/4 v1, 0x0
 
@@ -1502,8 +1479,6 @@
 
 .method static dumpAllProcessPssCheckin(Ljava/io/PrintWriter;Lcom/android/internal/app/ProcessStats$ProcessState;)V
     .locals 22
-    .param p0    # Ljava/io/PrintWriter;
-    .param p1    # Lcom/android/internal/app/ProcessStats$ProcessState;
 
     const/4 v7, 0x0
 
@@ -1756,9 +1731,6 @@
 
 .method static dumpAllProcessStateCheckin(Ljava/io/PrintWriter;Lcom/android/internal/app/ProcessStats$ProcessState;J)V
     .locals 9
-    .param p0    # Ljava/io/PrintWriter;
-    .param p1    # Lcom/android/internal/app/ProcessStats$ProcessState;
-    .param p2    # J
 
     const/4 v0, 0x0
 
@@ -1831,10 +1803,6 @@
 
 .method private dumpProcessInternalLocked(Ljava/io/PrintWriter;Ljava/lang/String;Lcom/android/internal/app/ProcessStats$ProcessState;Z)V
     .locals 1
-    .param p1    # Ljava/io/PrintWriter;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/android/internal/app/ProcessStats$ProcessState;
-    .param p4    # Z
 
     if-eqz p4, :cond_1
 
@@ -1993,12 +1961,6 @@
 
 .method static dumpProcessList(Ljava/io/PrintWriter;Ljava/lang/String;Ljava/util/ArrayList;[I[I[IJ)V
     .locals 9
-    .param p0    # Ljava/io/PrintWriter;
-    .param p1    # Ljava/lang/String;
-    .param p3    # [I
-    .param p4    # [I
-    .param p5    # [I
-    .param p6    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2111,14 +2073,6 @@
 
 .method public static dumpProcessListCsv(Ljava/io/PrintWriter;Ljava/util/ArrayList;Z[IZ[IZ[IJ)V
     .locals 11
-    .param p0    # Ljava/io/PrintWriter;
-    .param p2    # Z
-    .param p3    # [I
-    .param p4    # Z
-    .param p5    # [I
-    .param p6    # Z
-    .param p7    # [I
-    .param p8    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2239,12 +2193,6 @@
 
 .method static dumpProcessPss(Ljava/io/PrintWriter;Ljava/lang/String;Lcom/android/internal/app/ProcessStats$ProcessState;[I[I[I)V
     .locals 16
-    .param p0    # Ljava/io/PrintWriter;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/internal/app/ProcessStats$ProcessState;
-    .param p3    # [I
-    .param p4    # [I
-    .param p5    # [I
 
     const/4 v9, 0x0
 
@@ -2690,13 +2638,6 @@
 
 .method static dumpProcessState(Ljava/io/PrintWriter;Ljava/lang/String;Lcom/android/internal/app/ProcessStats$ProcessState;[I[I[IJ)V
     .locals 18
-    .param p0    # Ljava/io/PrintWriter;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/internal/app/ProcessStats$ProcessState;
-    .param p3    # [I
-    .param p4    # [I
-    .param p5    # [I
-    .param p6    # J
 
     const-wide/16 v14, 0x0
 
@@ -2980,15 +2921,6 @@
 
 .method static dumpProcessStateCsv(Ljava/io/PrintWriter;Lcom/android/internal/app/ProcessStats$ProcessState;Z[IZ[IZ[IJ)V
     .locals 26
-    .param p0    # Ljava/io/PrintWriter;
-    .param p1    # Lcom/android/internal/app/ProcessStats$ProcessState;
-    .param p2    # Z
-    .param p3    # [I
-    .param p4    # Z
-    .param p5    # [I
-    .param p6    # Z
-    .param p7    # [I
-    .param p8    # J
 
     if-eqz p2, :cond_0
 
@@ -3225,16 +3157,6 @@
 
 .method static dumpProcessSummaryDetails(Ljava/io/PrintWriter;Lcom/android/internal/app/ProcessStats$ProcessState;Ljava/lang/String;Ljava/lang/String;[I[I[IJJZ)V
     .locals 8
-    .param p0    # Ljava/io/PrintWriter;
-    .param p1    # Lcom/android/internal/app/ProcessStats$ProcessState;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # [I
-    .param p5    # [I
-    .param p6    # [I
-    .param p7    # J
-    .param p9    # J
-    .param p11    # Z
 
     new-instance v3, Lcom/android/internal/app/ProcessStats$ProcessDataCollection;
 
@@ -3287,13 +3209,6 @@
 
 .method static dumpProcessSummaryLocked(Ljava/io/PrintWriter;Ljava/lang/String;Ljava/util/ArrayList;[I[I[IJJ)V
     .locals 13
-    .param p0    # Ljava/io/PrintWriter;
-    .param p1    # Ljava/lang/String;
-    .param p3    # [I
-    .param p4    # [I
-    .param p5    # [I
-    .param p6    # J
-    .param p8    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3714,17 +3629,6 @@
 
 .method static dumpServiceTimeCheckin(Ljava/io/PrintWriter;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Lcom/android/internal/app/ProcessStats$ServiceState;IIIJJ)V
     .locals 10
-    .param p0    # Ljava/io/PrintWriter;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
-    .param p5    # Lcom/android/internal/app/ProcessStats$ServiceState;
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
-    .param p9    # J
-    .param p11    # J
 
     if-gtz p7, :cond_0
 
@@ -3841,13 +3745,6 @@
 
 .method public static dumpSingleServiceTime(Ljava/io/PrintWriter;Ljava/lang/String;Lcom/android/internal/app/ProcessStats$ServiceState;IIJJ)J
     .locals 18
-    .param p0    # Ljava/io/PrintWriter;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/internal/app/ProcessStats$ServiceState;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # J
-    .param p7    # J
 
     const-wide/16 v16, 0x0
 
@@ -3995,12 +3892,6 @@
 
 .method public static dumpSingleTime(Ljava/io/PrintWriter;Ljava/lang/String;[JIJJ)J
     .locals 12
-    .param p0    # Ljava/io/PrintWriter;
-    .param p1    # Ljava/lang/String;
-    .param p2    # [J
-    .param p3    # I
-    .param p4    # J
-    .param p6    # J
 
     const-wide/16 v8, 0x0
 
@@ -4125,11 +4016,6 @@
 
 .method static dumpStateHeadersCsv(Ljava/io/PrintWriter;Ljava/lang/String;[I[I[I)V
     .locals 10
-    .param p0    # Ljava/io/PrintWriter;
-    .param p1    # Ljava/lang/String;
-    .param p2    # [I
-    .param p3    # [I
-    .param p4    # [I
 
     const/4 v7, 0x1
 
@@ -4257,8 +4143,6 @@
 
 .method static printAdjTag(Ljava/io/PrintWriter;I)V
     .locals 2
-    .param p0    # Ljava/io/PrintWriter;
-    .param p1    # I
 
     sget-object v0, Lcom/android/internal/app/ProcessStats;->ADJ_SCREEN_TAGS:[Ljava/lang/String;
 
@@ -4279,9 +4163,6 @@
 
 .method static printAdjTagAndValue(Ljava/io/PrintWriter;IJ)V
     .locals 1
-    .param p0    # Ljava/io/PrintWriter;
-    .param p1    # I
-    .param p2    # J
 
     const/16 v0, 0x2c
 
@@ -4300,10 +4181,6 @@
 
 .method static printArrayEntry(Ljava/io/PrintWriter;[Ljava/lang/String;II)I
     .locals 2
-    .param p0    # Ljava/io/PrintWriter;
-    .param p1    # [Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     div-int v0, p2, p3
 
@@ -4334,7 +4211,6 @@
 
 .method static printLongOffset(I)Ljava/lang/String;
     .locals 3
-    .param p0    # I
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -4393,9 +4269,6 @@
 
 .method private static printMemLabel(Ljava/io/PrintWriter;IC)V
     .locals 1
-    .param p0    # Ljava/io/PrintWriter;
-    .param p1    # I
-    .param p2    # C
 
     packed-switch p1, :pswitch_data_0
 
@@ -4482,8 +4355,6 @@
 
 .method public static printMemLabelCsv(Ljava/io/PrintWriter;I)V
     .locals 1
-    .param p0    # Ljava/io/PrintWriter;
-    .param p1    # I
 
     if-ltz p1, :cond_0
 
@@ -4511,8 +4382,6 @@
 
 .method static printPercent(Ljava/io/PrintWriter;D)V
     .locals 4
-    .param p0    # Ljava/io/PrintWriter;
-    .param p1    # D
 
     const/4 v2, 0x1
 
@@ -4598,8 +4467,6 @@
 
 .method static printProcStateTag(Ljava/io/PrintWriter;I)V
     .locals 2
-    .param p0    # Ljava/io/PrintWriter;
-    .param p1    # I
 
     sget-object v0, Lcom/android/internal/app/ProcessStats;->ADJ_SCREEN_TAGS:[Ljava/lang/String;
 
@@ -4628,9 +4495,6 @@
 
 .method static printProcStateTagAndValue(Ljava/io/PrintWriter;IJ)V
     .locals 1
-    .param p0    # Ljava/io/PrintWriter;
-    .param p1    # I
-    .param p2    # J
 
     const/16 v0, 0x2c
 
@@ -4649,8 +4513,6 @@
 
 .method private static printScreenLabel(Ljava/io/PrintWriter;I)V
     .locals 1
-    .param p0    # Ljava/io/PrintWriter;
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -4698,8 +4560,6 @@
 
 .method public static printScreenLabelCsv(Ljava/io/PrintWriter;I)V
     .locals 2
-    .param p0    # Ljava/io/PrintWriter;
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -4749,8 +4609,6 @@
 
 .method static printSizeValue(Ljava/io/PrintWriter;J)V
     .locals 8
-    .param p0    # Ljava/io/PrintWriter;
-    .param p1    # J
 
     const/4 v7, 0x1
 
@@ -4902,9 +4760,6 @@
 
 .method private readCheckedInt(Landroid/os/Parcel;ILjava/lang/String;)Z
     .locals 3
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
@@ -4955,8 +4810,6 @@
 
 .method private readCommonString(Landroid/os/Parcel;I)Ljava/lang/String;
     .locals 4
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     const/16 v2, 0x9
 
@@ -5022,10 +4875,6 @@
 
 .method private readCompactedLongArray(Landroid/os/Parcel;I[JI)V
     .locals 8
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
-    .param p3    # [J
-    .param p4    # I
 
     const/16 v4, 0xa
 
@@ -5132,8 +4981,6 @@
 
 .method static readFully(Ljava/io/InputStream;[I)[B
     .locals 7
-    .param p0    # Ljava/io/InputStream;
-    .param p1    # [I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -5196,9 +5043,6 @@
 
 .method private readTableFromParcel(Landroid/os/Parcel;Ljava/lang/String;Ljava/lang/String;)[I
     .locals 7
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -5381,8 +5225,6 @@
 
 .method private writeCommonString(Landroid/os/Parcel;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/internal/app/ProcessStats;->mCommonStringToIndex:Landroid/util/ArrayMap;
 
@@ -5433,9 +5275,6 @@
 
 .method private writeCompactedLongArray(Landroid/os/Parcel;[JI)V
     .locals 10
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # [J
-    .param p3    # I
 
     const-wide/32 v8, 0x7fffffff
 
@@ -5521,7 +5360,6 @@
 # virtual methods
 .method public add(Lcom/android/internal/app/ProcessStats;)V
     .locals 33
-    .param p1    # Lcom/android/internal/app/ProcessStats;
 
     move-object/from16 v0, p1
 
@@ -6076,9 +5914,6 @@
 
 .method addLongData(III)I
     .locals 8
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v4, 0x0
 
@@ -6162,7 +5997,6 @@
 
 .method allocLongData(I)I
     .locals 6
-    .param p1    # I
 
     iget-object v3, p0, Lcom/android/internal/app/ProcessStats;->mLongs:Ljava/util/ArrayList;
 
@@ -6226,8 +6060,6 @@
 
 .method collapseString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p2, p1}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
@@ -6271,13 +6103,6 @@
 
 .method public collectProcessesLocked([I[I[I[IJLjava/lang/String;Z)Ljava/util/ArrayList;
     .locals 20
-    .param p1    # [I
-    .param p2    # [I
-    .param p3    # [I
-    .param p4    # [I
-    .param p5    # J
-    .param p7    # Ljava/lang/String;
-    .param p8    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([I[I[I[IJ",
@@ -6515,8 +6340,6 @@
 
 .method public dumpCheckinLocked(Ljava/io/PrintWriter;Ljava/lang/String;)V
     .locals 38
-    .param p1    # Ljava/io/PrintWriter;
-    .param p2    # Ljava/lang/String;
 
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 
@@ -7499,17 +7322,6 @@
 
 .method dumpFilteredSummaryLocked(Ljava/io/PrintWriter;Ljava/lang/String;Ljava/lang/String;[I[I[I[IJJLjava/lang/String;Z)V
     .locals 10
-    .param p1    # Ljava/io/PrintWriter;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # [I
-    .param p5    # [I
-    .param p6    # [I
-    .param p7    # [I
-    .param p8    # J
-    .param p10    # J
-    .param p12    # Ljava/lang/String;
-    .param p13    # Z
 
     move-object v0, p0
 
@@ -7566,12 +7378,6 @@
 
 .method public dumpLocked(Ljava/io/PrintWriter;Ljava/lang/String;JZZZ)V
     .locals 54
-    .param p1    # Ljava/io/PrintWriter;
-    .param p2    # Ljava/lang/String;
-    .param p3    # J
-    .param p5    # Z
-    .param p6    # Z
-    .param p7    # Z
 
     const/4 v4, 0x0
 
@@ -8875,19 +8681,6 @@
 
 .method dumpServiceStats(Ljava/io/PrintWriter;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/android/internal/app/ProcessStats$ServiceState;IIIJJJZ)V
     .locals 13
-    .param p1    # Ljava/io/PrintWriter;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Lcom/android/internal/app/ProcessStats$ServiceState;
-    .param p7    # I
-    .param p8    # I
-    .param p9    # I
-    .param p10    # J
-    .param p12    # J
-    .param p14    # J
-    .param p16    # Z
 
     if-eqz p7, :cond_0
 
@@ -8989,10 +8782,6 @@
 
 .method public dumpSummaryLocked(Ljava/io/PrintWriter;Ljava/lang/String;JZ)V
     .locals 18
-    .param p1    # Ljava/io/PrintWriter;
-    .param p2    # Ljava/lang/String;
-    .param p3    # J
-    .param p5    # Z
 
     const/4 v4, 0x0
 
@@ -9055,8 +8844,6 @@
 
 .method dumpTotalsLocked(Ljava/io/PrintWriter;J)V
     .locals 10
-    .param p1    # Ljava/io/PrintWriter;
-    .param p2    # J
 
     const/16 v9, 0x20
 
@@ -9187,7 +8974,6 @@
 
 .method public evaluateSystemProperties(Z)Z
     .locals 5
-    .param p1    # Z
 
     const/4 v0, 0x0
 
@@ -9254,8 +9040,6 @@
 
 .method getLong(II)J
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     iget-object v1, p0, Lcom/android/internal/app/ProcessStats;->mLongs:Ljava/util/ArrayList;
 
@@ -9290,8 +9074,6 @@
 
 .method public getPackageStateLocked(Ljava/lang/String;I)Lcom/android/internal/app/ProcessStats$PackageState;
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     iget-object v2, p0, Lcom/android/internal/app/ProcessStats;->mPackages:Lcom/android/internal/app/ProcessMap;
 
@@ -9324,9 +9106,6 @@
 
 .method public getProcessStateLocked(Ljava/lang/String;ILjava/lang/String;)Lcom/android/internal/app/ProcessStats$ProcessState;
     .locals 24
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     invoke-virtual/range {p0 .. p2}, Lcom/android/internal/app/ProcessStats;->getPackageStateLocked(Ljava/lang/String;I)Lcom/android/internal/app/ProcessStats$PackageState;
 
@@ -9585,10 +9364,6 @@
 
 .method public getServiceStateLocked(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)Lcom/android/internal/app/ProcessStats$ServiceState;
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     invoke-virtual {p0, p1, p2}, Lcom/android/internal/app/ProcessStats;->getPackageStateLocked(Ljava/lang/String;I)Lcom/android/internal/app/ProcessStats$PackageState;
 
@@ -9645,7 +9420,6 @@
 
 .method public read(Ljava/io/InputStream;)V
     .locals 6
-    .param p1    # Ljava/io/InputStream;
 
     const/4 v4, 0x1
 
@@ -9709,7 +9483,6 @@
 
 .method public readFromParcel(Landroid/os/Parcel;)V
     .locals 28
-    .param p1    # Landroid/os/Parcel;
 
     move-object/from16 v0, p0
 
@@ -11003,9 +10776,6 @@
 
 .method setLong(IIJ)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
 
     iget-object v1, p0, Lcom/android/internal/app/ProcessStats;->mLongs:Ljava/util/ArrayList;
 
@@ -11040,7 +10810,6 @@
 
 .method validateLongOffset(I)Z
     .locals 5
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -11084,8 +10853,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 31
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 

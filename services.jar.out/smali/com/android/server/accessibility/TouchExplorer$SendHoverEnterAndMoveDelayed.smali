@@ -61,7 +61,6 @@
 
 .method static synthetic access$400(Lcom/android/server/accessibility/TouchExplorer$SendHoverEnterAndMoveDelayed;)Z
     .locals 1
-    .param p0    # Lcom/android/server/accessibility/TouchExplorer$SendHoverEnterAndMoveDelayed;
 
     invoke-direct {p0}, Lcom/android/server/accessibility/TouchExplorer$SendHoverEnterAndMoveDelayed;->isPending()Z
 
@@ -131,7 +130,6 @@
 # virtual methods
 .method public addEvent(Landroid/view/MotionEvent;)V
     .locals 2
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-object v0, p0, Lcom/android/server/accessibility/TouchExplorer$SendHoverEnterAndMoveDelayed;->mEvents:Ljava/util/List;
 
@@ -187,10 +185,6 @@
 
 .method public post(Landroid/view/MotionEvent;ZII)V
     .locals 3
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # Z
-    .param p3    # I
-    .param p4    # I
 
     invoke-virtual {p0}, Lcom/android/server/accessibility/TouchExplorer$SendHoverEnterAndMoveDelayed;->cancel()V
 

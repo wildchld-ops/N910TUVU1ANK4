@@ -51,7 +51,6 @@
 # virtual methods
 .method public cancel(Landroid/view/MotionEvent;)V
     .locals 2
-    .param p1    # Landroid/view/MotionEvent;
 
     const-wide/32 v0, -0x80000000
 
@@ -81,7 +80,6 @@
 
 .method public process(Landroid/view/MotionEvent;)V
     .locals 30
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 

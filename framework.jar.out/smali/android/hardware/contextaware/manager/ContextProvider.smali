@@ -28,10 +28,6 @@
 # direct methods
 .method protected constructor <init>(ILandroid/content/Context;Landroid/os/Looper;Landroid/hardware/contextaware/dataprovider/sensorhubprovider/ISensorHubResetObservable;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/os/Looper;
-    .param p4    # Landroid/hardware/contextaware/dataprovider/sensorhubprovider/ISensorHubResetObservable;
 
     invoke-direct {p0}, Landroid/hardware/contextaware/manager/ContextComponent;-><init>()V
 
@@ -79,7 +75,6 @@
 
 .method protected disableForStop(I)V
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x2
 
@@ -253,8 +248,6 @@
 
 .method protected doTimeOutChecking(Landroid/hardware/contextaware/manager/ContextAwareService$Listener;Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/hardware/contextaware/manager/ContextAwareService$Listener;
-    .param p2    # Landroid/os/Bundle;
 
     if-nez p2, :cond_0
 
@@ -329,7 +322,6 @@
 
 .method protected enableForStart(I)V
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x2
 
@@ -364,7 +356,6 @@
 
 .method protected getContextInfo(Landroid/hardware/contextaware/manager/ContextAwareService$Listener;)V
     .locals 9
-    .param p1    # Landroid/hardware/contextaware/manager/ContextAwareService$Listener;
 
     const/4 v8, 0x1
 
@@ -536,8 +527,6 @@
 
 .method protected getDisplayContents(Landroid/os/Bundle;Ljava/lang/String;)Ljava/lang/String;
     .locals 9
-    .param p1    # Landroid/os/Bundle;
-    .param p2    # Ljava/lang/String;
 
     const/4 v7, 0x0
 
@@ -686,8 +675,6 @@
 
 .method protected final getFaultDetectionResult(ILjava/lang/String;)Landroid/os/Bundle;
     .locals 5
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p0}, Landroid/hardware/contextaware/manager/ContextProvider;->getFaultDetectionResultValueNames()[Ljava/lang/String;
 
@@ -856,8 +843,6 @@
 
 .method public final notifyCmdProcessResultObserver(Ljava/lang/String;Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Bundle;
 
     if-nez p2, :cond_0
 
@@ -1012,7 +997,6 @@
 
 .method public final setAPStatus(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/hardware/contextaware/manager/ContextProvider;->mApStatus:I
 
@@ -1021,7 +1005,6 @@
 
 .method protected final setVersion(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/hardware/contextaware/manager/ContextProvider;->mVersion:I
 
@@ -1030,8 +1013,6 @@
 
 .method public start(Landroid/hardware/contextaware/manager/ContextAwareService$Listener;I)V
     .locals 1
-    .param p1    # Landroid/hardware/contextaware/manager/ContextAwareService$Listener;
-    .param p2    # I
 
     invoke-static {}, Landroid/hardware/contextaware/utilbundle/logger/CaLogger;->trace()V
 
@@ -1062,8 +1043,6 @@
 
 .method public stop(Landroid/hardware/contextaware/manager/ContextAwareService$Listener;I)V
     .locals 1
-    .param p1    # Landroid/hardware/contextaware/manager/ContextAwareService$Listener;
-    .param p2    # I
 
     invoke-static {}, Landroid/hardware/contextaware/utilbundle/logger/CaLogger;->trace()V
 
@@ -1123,8 +1102,6 @@
 
 .method public updateApPowerStatus(IJ)V
     .locals 2
-    .param p1    # I
-    .param p2    # J
 
     iput p1, p0, Landroid/hardware/contextaware/manager/ContextProvider;->mApStatus:I
 
@@ -1217,7 +1194,6 @@
 
 .method public updateSensorHubResetStatus(I)V
     .locals 1
-    .param p1    # I
 
     const/16 v0, -0x2b
 

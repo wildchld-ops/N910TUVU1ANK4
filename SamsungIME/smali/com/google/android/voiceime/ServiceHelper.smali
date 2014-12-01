@@ -41,7 +41,6 @@
 # virtual methods
 .method public notifyResult(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/google/android/voiceime/ServiceHelper;->mCallback:Lcom/google/android/voiceime/ServiceHelper$Callback;
 
@@ -57,7 +56,6 @@
 
 .method public onBind(Landroid/content/Intent;)Landroid/os/IBinder;
     .locals 1
-    .param p1    # Landroid/content/Intent;
 
     iget-object v0, p0, Lcom/google/android/voiceime/ServiceHelper;->mBinder:Landroid/os/IBinder;
 
@@ -94,8 +92,6 @@
 
 .method public startRecognition(Ljava/lang/String;Lcom/google/android/voiceime/ServiceHelper$Callback;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/google/android/voiceime/ServiceHelper$Callback;
 
     const-string v1, "ServiceHelper"
 

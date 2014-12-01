@@ -36,7 +36,6 @@
 # direct methods
 .method public constructor <init>(Landroid/filterfw/core/FilterContext;)V
     .locals 2
-    .param p1    # Landroid/filterfw/core/FilterContext;
 
     invoke-direct {p0, p1}, Landroid/filterfw/core/GraphRunner;-><init>(Landroid/filterfw/core/FilterContext;)V
 
@@ -59,8 +58,6 @@
 
 .method public constructor <init>(Landroid/filterfw/core/FilterContext;Ljava/lang/Class;)V
     .locals 2
-    .param p1    # Landroid/filterfw/core/FilterContext;
-    .param p2    # Ljava/lang/Class;
 
     invoke-direct {p0, p1}, Landroid/filterfw/core/GraphRunner;-><init>(Landroid/filterfw/core/FilterContext;)V
 
@@ -81,7 +78,6 @@
 
 .method static synthetic access$100(Landroid/filterfw/core/AsyncRunner;)Z
     .locals 1
-    .param p0    # Landroid/filterfw/core/AsyncRunner;
 
     iget-boolean v0, p0, Landroid/filterfw/core/AsyncRunner;->mLogVerbose:Z
 
@@ -90,8 +86,6 @@
 
 .method static synthetic access$200(Landroid/filterfw/core/AsyncRunner;Z)V
     .locals 0
-    .param p0    # Landroid/filterfw/core/AsyncRunner;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Landroid/filterfw/core/AsyncRunner;->setRunning(Z)V
 
@@ -100,8 +94,6 @@
 
 .method static synthetic access$300(Landroid/filterfw/core/AsyncRunner;Ljava/lang/Exception;)V
     .locals 0
-    .param p0    # Landroid/filterfw/core/AsyncRunner;
-    .param p1    # Ljava/lang/Exception;
 
     invoke-direct {p0, p1}, Landroid/filterfw/core/AsyncRunner;->setException(Ljava/lang/Exception;)V
 
@@ -110,7 +102,6 @@
 
 .method static synthetic access$400(Landroid/filterfw/core/AsyncRunner;)Landroid/filterfw/core/SyncRunner;
     .locals 1
-    .param p0    # Landroid/filterfw/core/AsyncRunner;
 
     iget-object v0, p0, Landroid/filterfw/core/AsyncRunner;->mRunner:Landroid/filterfw/core/SyncRunner;
 
@@ -119,7 +110,6 @@
 
 .method static synthetic access$500(Landroid/filterfw/core/AsyncRunner;)Landroid/filterfw/core/GraphRunner$OnRunnerDoneListener;
     .locals 1
-    .param p0    # Landroid/filterfw/core/AsyncRunner;
 
     iget-object v0, p0, Landroid/filterfw/core/AsyncRunner;->mDoneListener:Landroid/filterfw/core/GraphRunner$OnRunnerDoneListener;
 
@@ -128,7 +118,6 @@
 
 .method private declared-synchronized setException(Ljava/lang/Exception;)V
     .locals 1
-    .param p1    # Ljava/lang/Exception;
 
     monitor-enter p0
 
@@ -151,7 +140,6 @@
 
 .method private declared-synchronized setRunning(Z)V
     .locals 1
-    .param p1    # Z
 
     monitor-enter p0
 
@@ -387,7 +375,6 @@
 
 .method public setDoneCallback(Landroid/filterfw/core/GraphRunner$OnRunnerDoneListener;)V
     .locals 0
-    .param p1    # Landroid/filterfw/core/GraphRunner$OnRunnerDoneListener;
 
     iput-object p1, p0, Landroid/filterfw/core/AsyncRunner;->mDoneListener:Landroid/filterfw/core/GraphRunner$OnRunnerDoneListener;
 
@@ -396,7 +383,6 @@
 
 .method public declared-synchronized setGraph(Landroid/filterfw/core/FilterGraph;)V
     .locals 3
-    .param p1    # Landroid/filterfw/core/FilterGraph;
 
     monitor-enter p0
 

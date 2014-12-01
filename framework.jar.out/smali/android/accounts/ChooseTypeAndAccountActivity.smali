@@ -140,8 +140,6 @@
 
 .method static synthetic access$002(Landroid/accounts/ChooseTypeAndAccountActivity;I)I
     .locals 0
-    .param p0    # Landroid/accounts/ChooseTypeAndAccountActivity;
-    .param p1    # I
 
     iput p1, p0, Landroid/accounts/ChooseTypeAndAccountActivity;->mSelectedItemIndex:I
 
@@ -150,7 +148,6 @@
 
 .method static synthetic access$100(Landroid/accounts/ChooseTypeAndAccountActivity;)Landroid/widget/Button;
     .locals 1
-    .param p0    # Landroid/accounts/ChooseTypeAndAccountActivity;
 
     iget-object v0, p0, Landroid/accounts/ChooseTypeAndAccountActivity;->mOkButton:Landroid/widget/Button;
 
@@ -159,7 +156,6 @@
 
 .method private getAcceptableAccountChoices(Landroid/accounts/AccountManager;)Ljava/util/ArrayList;
     .locals 8
-    .param p1    # Landroid/accounts/AccountManager;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -241,7 +237,6 @@
 
 .method private getAllowableAccountSet(Landroid/content/Intent;)Ljava/util/Set;
     .locals 5
-    .param p1    # Landroid/content/Intent;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -301,8 +296,6 @@
 
 .method private getItemIndexToSelect(Ljava/util/ArrayList;Ljava/lang/String;Z)I
     .locals 2
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -442,7 +435,6 @@
 
 .method private getReleventAccountTypes(Landroid/content/Intent;)Ljava/util/Set;
     .locals 9
-    .param p1    # Landroid/content/Intent;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -511,7 +503,6 @@
 
 .method private onAccountSelected(Landroid/accounts/Account;)V
     .locals 3
-    .param p1    # Landroid/accounts/Account;
 
     const-string v0, "AccountChooser"
 
@@ -546,7 +537,6 @@
 
 .method private overrideDescriptionIfSupplied(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const v1, 0x10202f9
 
@@ -577,7 +567,6 @@
 
 .method private final populateUIAccountList([Ljava/lang/String;)V
     .locals 4
-    .param p1    # [Ljava/lang/String;
 
     const/4 v3, 0x1
 
@@ -665,8 +654,6 @@
 
 .method private setResultAndFinish(Ljava/lang/String;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     new-instance v0, Landroid/os/Bundle;
 
@@ -839,9 +826,6 @@
 # virtual methods
 .method protected onActivityResult(IILandroid/content/Intent;)V
     .locals 14
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const-string v11, "AccountChooser"
 
@@ -1135,7 +1119,6 @@
 
 .method public onCancelButtonClicked(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p0}, Landroid/accounts/ChooseTypeAndAccountActivity;->onBackPressed()V
 
@@ -1144,7 +1127,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 12
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v11, 0x2
 
@@ -1484,7 +1466,6 @@
 
 .method public onOkButtonClicked(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     iget v0, p0, Landroid/accounts/ChooseTypeAndAccountActivity;->mSelectedItemIndex:I
 
@@ -1687,7 +1668,6 @@
 
 .method protected onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onSaveInstanceState(Landroid/os/Bundle;)V
 
@@ -1886,7 +1866,6 @@
 
 .method protected runAddAccountForAuthenticator(Ljava/lang/String;)V
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     const/4 v5, 0x0
 

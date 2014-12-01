@@ -6,9 +6,6 @@
 # direct methods
 .method public constructor <init>(ILandroid/content/Context;Landroid/hardware/contextaware/dataprovider/sensorhubprovider/ISensorHubResetObservable;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/hardware/contextaware/dataprovider/sensorhubprovider/ISensorHubResetObservable;
 
     const/4 v0, 0x0
 
@@ -141,8 +138,6 @@
 
 .method public final parse([BI)I
     .locals 8
-    .param p1    # [B
-    .param p2    # I
 
     move v4, p2
 

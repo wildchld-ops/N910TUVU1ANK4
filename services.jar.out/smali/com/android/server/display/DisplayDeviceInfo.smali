@@ -70,7 +70,6 @@
 
 .method private static flagsToString(I)Ljava/lang/String;
     .locals 2
-    .param p0    # I
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -148,7 +147,6 @@
 
 .method private static touchToString(I)Ljava/lang/String;
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -188,7 +186,6 @@
 # virtual methods
 .method public copyFrom(Lcom/android/server/display/DisplayDeviceInfo;)V
     .locals 1
-    .param p1    # Lcom/android/server/display/DisplayDeviceInfo;
 
     iget-object v0, p1, Lcom/android/server/display/DisplayDeviceInfo;->name:Ljava/lang/String;
 
@@ -251,7 +248,6 @@
 
 .method public equals(Lcom/android/server/display/DisplayDeviceInfo;)Z
     .locals 2
-    .param p1    # Lcom/android/server/display/DisplayDeviceInfo;
 
     if-eqz p1, :cond_0
 
@@ -370,7 +366,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     instance-of v0, p1, Lcom/android/server/display/DisplayDeviceInfo;
 
@@ -405,8 +400,6 @@
 
 .method public setAssumedDensityForExternalDisplay(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     invoke-static {p1, p2}, Ljava/lang/Math;->min(II)I
 

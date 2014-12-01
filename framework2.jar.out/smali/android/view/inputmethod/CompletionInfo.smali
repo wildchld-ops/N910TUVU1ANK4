@@ -44,9 +44,6 @@
 
 .method public constructor <init>(JILjava/lang/CharSequence;)V
     .locals 1
-    .param p1    # J
-    .param p3    # I
-    .param p4    # Ljava/lang/CharSequence;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -65,10 +62,6 @@
 
 .method public constructor <init>(JILjava/lang/CharSequence;Ljava/lang/CharSequence;)V
     .locals 0
-    .param p1    # J
-    .param p3    # I
-    .param p4    # Ljava/lang/CharSequence;
-    .param p5    # Ljava/lang/CharSequence;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -85,7 +78,6 @@
 
 .method private constructor <init>(Landroid/os/Parcel;)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -126,8 +118,6 @@
 
 .method synthetic constructor <init>(Landroid/os/Parcel;Landroid/view/inputmethod/CompletionInfo$1;)V
     .locals 0
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # Landroid/view/inputmethod/CompletionInfo$1;
 
     invoke-direct {p0, p1}, Landroid/view/inputmethod/CompletionInfo;-><init>(Landroid/os/Parcel;)V
 
@@ -246,8 +236,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-wide v0, p0, Landroid/view/inputmethod/CompletionInfo;->mId:J
 

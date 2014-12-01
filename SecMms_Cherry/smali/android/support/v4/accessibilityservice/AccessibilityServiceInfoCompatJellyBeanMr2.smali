@@ -14,7 +14,6 @@
 
 .method public static getCapabilities(Landroid/accessibilityservice/AccessibilityServiceInfo;)I
     .locals 1
-    .param p0    # Landroid/accessibilityservice/AccessibilityServiceInfo;
 
     invoke-virtual {p0}, Landroid/accessibilityservice/AccessibilityServiceInfo;->getCapabilities()I
 

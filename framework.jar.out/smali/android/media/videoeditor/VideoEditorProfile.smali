@@ -28,10 +28,6 @@
 
 .method private constructor <init>(IIII)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -58,7 +54,6 @@
 
 .method public static getExportLevel(I)I
     .locals 4
-    .param p0    # I
 
     const/4 v0, -0x1
 
@@ -105,7 +100,6 @@
 
 .method public static getExportProfile(I)I
     .locals 4
-    .param p0    # I
 
     const/4 v0, -0x1
 

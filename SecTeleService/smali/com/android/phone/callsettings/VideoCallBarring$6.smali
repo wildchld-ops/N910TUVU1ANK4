@@ -67,7 +67,7 @@
 
     iget-object v1, v1, Lcom/android/phone/callsettings/VideoCallBarring;->editText:Landroid/widget/EditText;
 
-    invoke-virtual {v1}, Landroid/view/View;->getWindowToken()Landroid/os/IBinder;
+    invoke-virtual {v1}, Landroid/widget/EditText;->getWindowToken()Landroid/os/IBinder;
 
     move-result-object v1
 

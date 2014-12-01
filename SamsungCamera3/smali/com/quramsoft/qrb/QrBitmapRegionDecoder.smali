@@ -14,7 +14,6 @@
 # direct methods
 .method private constructor <init>(I)V
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -31,7 +30,6 @@
 
 .method private checkRecycled(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-boolean v0, p0, Lcom/quramsoft/qrb/QrBitmapRegionDecoder;->mRecycled:Z
 
@@ -49,8 +47,6 @@
 
 .method public static newInstance(Ljava/io/FileDescriptor;Z)Lcom/quramsoft/qrb/QrBitmapRegionDecoder;
     .locals 1
-    .param p0    # Ljava/io/FileDescriptor;
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -64,8 +60,6 @@
 
 .method public static newInstance(Ljava/io/InputStream;Z)Lcom/quramsoft/qrb/QrBitmapRegionDecoder;
     .locals 5
-    .param p0    # Ljava/io/InputStream;
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -104,8 +98,6 @@
 
 .method public static newInstance(Ljava/lang/String;Z)Lcom/quramsoft/qrb/QrBitmapRegionDecoder;
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -128,10 +120,6 @@
 
 .method public static newInstance([BIIZ)Lcom/quramsoft/qrb/QrBitmapRegionDecoder;
     .locals 2
-    .param p0    # [B
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -167,8 +155,6 @@
 # virtual methods
 .method public decodeRegion(Landroid/graphics/Rect;Landroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;
     .locals 6
-    .param p1    # Landroid/graphics/Rect;
-    .param p2    # Landroid/graphics/BitmapFactory$Options;
 
     if-eqz p1, :cond_0
 

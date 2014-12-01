@@ -80,7 +80,6 @@
 
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -97,7 +96,6 @@
 
 .method public static create(Landroid/content/Context;)Landroid/support/v4/app/TaskStackBuilder;
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     new-instance v0, Landroid/support/v4/app/TaskStackBuilder;
 
@@ -108,7 +106,6 @@
 
 .method public static from(Landroid/content/Context;)Landroid/support/v4/app/TaskStackBuilder;
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Landroid/support/v4/app/TaskStackBuilder;->create(Landroid/content/Context;)Landroid/support/v4/app/TaskStackBuilder;
 
@@ -121,7 +118,6 @@
 # virtual methods
 .method public addNextIntent(Landroid/content/Intent;)Landroid/support/v4/app/TaskStackBuilder;
     .locals 1
-    .param p1    # Landroid/content/Intent;
 
     iget-object v0, p0, Landroid/support/v4/app/TaskStackBuilder;->mIntents:Ljava/util/ArrayList;
 
@@ -132,7 +128,6 @@
 
 .method public addNextIntentWithParentStack(Landroid/content/Intent;)Landroid/support/v4/app/TaskStackBuilder;
     .locals 2
-    .param p1    # Landroid/content/Intent;
 
     invoke-virtual {p1}, Landroid/content/Intent;->getComponent()Landroid/content/ComponentName;
 
@@ -163,7 +158,6 @@
 
 .method public addParentStack(Landroid/app/Activity;)Landroid/support/v4/app/TaskStackBuilder;
     .locals 3
-    .param p1    # Landroid/app/Activity;
 
     const/4 v0, 0x0
 
@@ -216,7 +210,6 @@
 
 .method public addParentStack(Landroid/content/ComponentName;)Landroid/support/v4/app/TaskStackBuilder;
     .locals 5
-    .param p1    # Landroid/content/ComponentName;
 
     iget-object v3, p0, Landroid/support/v4/app/TaskStackBuilder;->mIntents:Ljava/util/ArrayList;
 
@@ -297,7 +290,6 @@
 
 .method public editIntentAt(I)Landroid/content/Intent;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/support/v4/app/TaskStackBuilder;->mIntents:Ljava/util/ArrayList;
 
@@ -312,7 +304,6 @@
 
 .method public getIntent(I)Landroid/content/Intent;
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/support/v4/app/TaskStackBuilder;->editIntentAt(I)Landroid/content/Intent;
 
@@ -402,8 +393,6 @@
 
 .method public getPendingIntent(II)Landroid/app/PendingIntent;
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -416,9 +405,6 @@
 
 .method public getPendingIntent(IILandroid/os/Bundle;)Landroid/app/PendingIntent;
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/os/Bundle;
 
     const/4 v3, 0x0
 
@@ -519,7 +505,6 @@
 
 .method public startActivities(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v4, 0x0
 

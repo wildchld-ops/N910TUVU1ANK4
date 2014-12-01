@@ -31,8 +31,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/ChooseLockPattern;Z)V
     .locals 0
-    .param p0    # Lcom/android/settings/ChooseLockPattern;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/settings/ChooseLockPattern;->allowHomeAndBack(Z)V
 
@@ -41,7 +39,6 @@
 
 .method private allowHomeAndBack(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/ChooseLockPattern;->mAllowHomeAndBack:Z
 
@@ -108,7 +105,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onCreate(Landroid/os/Bundle;)V
 
@@ -136,8 +132,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v1, 0x4
 

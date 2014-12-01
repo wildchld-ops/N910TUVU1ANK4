@@ -59,7 +59,7 @@
 
     iget-object v1, p0, Lcom/android/phone/LGTNetworkAutoRebootPopup$4;->this$0:Lcom/android/phone/LGTNetworkAutoRebootPopup;
 
-    invoke-virtual {v1, v0}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {v1, v0}, Lcom/android/phone/LGTNetworkAutoRebootPopup;->startActivity(Landroid/content/Intent;)V
 
     const-string v1, "LGTNetworkAutoRebootPopup "
 

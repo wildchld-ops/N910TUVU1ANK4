@@ -48,7 +48,6 @@
 
 .method public constructor <init>(Landroid/os/Parcel;)V
     .locals 0
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -61,7 +60,6 @@
 # virtual methods
 .method public copyFrom(Lcom/android/internal/statusbar/StatusBarIconList;)V
     .locals 5
-    .param p1    # Lcom/android/internal/statusbar/StatusBarIconList;
 
     const/4 v3, 0x0
 
@@ -133,7 +131,6 @@
 
 .method public defineSlots([Ljava/lang/String;)V
     .locals 4
-    .param p1    # [Ljava/lang/String;
 
     array-length v0, p1
 
@@ -172,7 +169,6 @@
 
 .method public dump(Ljava/io/PrintWriter;)V
     .locals 6
-    .param p1    # Ljava/io/PrintWriter;
 
     iget-object v2, p0, Lcom/android/internal/statusbar/StatusBarIconList;->mSlots:[Ljava/lang/String;
 
@@ -229,7 +225,6 @@
 
 .method public getIcon(I)Lcom/android/internal/statusbar/StatusBarIcon;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/internal/statusbar/StatusBarIconList;->mIcons:[Lcom/android/internal/statusbar/StatusBarIcon;
 
@@ -240,7 +235,6 @@
 
 .method public getSlot(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/internal/statusbar/StatusBarIconList;->mSlots:[Ljava/lang/String;
 
@@ -251,7 +245,6 @@
 
 .method public getSlotIndex(Ljava/lang/String;)I
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v2, p0, Lcom/android/internal/statusbar/StatusBarIconList;->mSlots:[Ljava/lang/String;
 
@@ -288,7 +281,6 @@
 
 .method public getViewIndex(I)I
     .locals 3
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -316,7 +308,6 @@
 
 .method public readFromParcel(Landroid/os/Parcel;)V
     .locals 4
-    .param p1    # Landroid/os/Parcel;
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readStringArray()[Ljava/lang/String;
 
@@ -369,7 +360,6 @@
 
 .method public removeIcon(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/internal/statusbar/StatusBarIconList;->mIcons:[Lcom/android/internal/statusbar/StatusBarIcon;
 
@@ -382,8 +372,6 @@
 
 .method public setIcon(ILcom/android/internal/statusbar/StatusBarIcon;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Lcom/android/internal/statusbar/StatusBarIcon;
 
     iget-object v0, p0, Lcom/android/internal/statusbar/StatusBarIconList;->mIcons:[Lcom/android/internal/statusbar/StatusBarIcon;
 
@@ -408,8 +396,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 4
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v3, p0, Lcom/android/internal/statusbar/StatusBarIconList;->mSlots:[Ljava/lang/String;
 

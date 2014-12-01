@@ -36,7 +36,6 @@
 # virtual methods
 .method public onAnimationEnd(Landroid/view/animation/Animation;)Z
     .locals 2
-    .param p1    # Landroid/view/animation/Animation;
 
     const-string v0, "Debug"
 
@@ -73,7 +72,6 @@
 
 .method public onAnimationStart(Landroid/view/animation/Animation;)Z
     .locals 1
-    .param p1    # Landroid/view/animation/Animation;
 
     const/4 v0, 0x1
 

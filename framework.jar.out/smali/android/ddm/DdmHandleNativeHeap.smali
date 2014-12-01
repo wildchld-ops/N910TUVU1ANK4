@@ -43,7 +43,6 @@
 
 .method private handleNHGT(Lorg/apache/harmony/dalvik/ddmc/Chunk;)Lorg/apache/harmony/dalvik/ddmc/Chunk;
     .locals 5
-    .param p1    # Lorg/apache/harmony/dalvik/ddmc/Chunk;
 
     invoke-direct {p0}, Landroid/ddm/DdmHandleNativeHeap;->getLeakInfo()[B
 
@@ -138,7 +137,6 @@
 
 .method public handleChunk(Lorg/apache/harmony/dalvik/ddmc/Chunk;)Lorg/apache/harmony/dalvik/ddmc/Chunk;
     .locals 4
-    .param p1    # Lorg/apache/harmony/dalvik/ddmc/Chunk;
 
     const-string v1, "ddm-nativeheap"
 

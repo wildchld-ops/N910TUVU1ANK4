@@ -30,8 +30,6 @@
 # direct methods
 .method public constructor <init>(Landroid/widget/TabHost;Ljava/lang/CharSequence;Landroid/widget/TabHost$TabContentFactory;)V
     .locals 0
-    .param p2    # Ljava/lang/CharSequence;
-    .param p3    # Landroid/widget/TabHost$TabContentFactory;
 
     iput-object p1, p0, Landroid/widget/TabHost$FactoryContentStrategy;->this$0:Landroid/widget/TabHost;
 

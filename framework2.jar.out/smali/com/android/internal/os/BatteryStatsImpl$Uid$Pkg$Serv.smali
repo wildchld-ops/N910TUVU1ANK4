@@ -106,7 +106,6 @@
 
 .method getLaunchTimeToNowLocked(J)J
     .locals 4
-    .param p1    # J
 
     iget-boolean v0, p0, Lcom/android/internal/os/BatteryStatsImpl$Uid$Pkg$Serv;->mLaunched:Z
 
@@ -131,7 +130,6 @@
 
 .method public getLaunches(I)I
     .locals 2
-    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -170,8 +168,6 @@
 
 .method public getStartTime(JI)J
     .locals 4
-    .param p1    # J
-    .param p3    # I
 
     const/4 v2, 0x1
 
@@ -212,7 +208,6 @@
 
 .method getStartTimeToNowLocked(J)J
     .locals 4
-    .param p1    # J
 
     iget-boolean v0, p0, Lcom/android/internal/os/BatteryStatsImpl$Uid$Pkg$Serv;->mRunning:Z
 
@@ -237,7 +232,6 @@
 
 .method public getStarts(I)I
     .locals 2
-    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -276,16 +270,12 @@
 
 .method public plug(JJJ)V
     .locals 0
-    .param p1    # J
-    .param p3    # J
-    .param p5    # J
 
     return-void
 .end method
 
 .method readFromParcelLocked(Landroid/os/Parcel;)V
     .locals 5
-    .param p1    # Landroid/os/Parcel;
 
     const/4 v1, 0x1
 
@@ -574,9 +564,6 @@
 
 .method public unplug(JJJ)V
     .locals 2
-    .param p1    # J
-    .param p3    # J
-    .param p5    # J
 
     invoke-virtual {p0, p3, p4}, Lcom/android/internal/os/BatteryStatsImpl$Uid$Pkg$Serv;->getStartTimeToNowLocked(J)J
 
@@ -597,7 +584,6 @@
 
 .method writeToParcelLocked(Landroid/os/Parcel;)V
     .locals 5
-    .param p1    # Landroid/os/Parcel;
 
     const/4 v1, 0x1
 

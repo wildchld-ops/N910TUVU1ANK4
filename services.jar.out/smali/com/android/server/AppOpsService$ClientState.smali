@@ -39,7 +39,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/AppOpsService;Landroid/os/IBinder;)V
     .locals 2
-    .param p2    # Landroid/os/IBinder;
 
     iput-object p1, p0, Lcom/android/server/AppOpsService$ClientState;->this$0:Lcom/android/server/AppOpsService;
 

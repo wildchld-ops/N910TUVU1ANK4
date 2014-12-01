@@ -21,7 +21,6 @@
 # direct methods
 .method constructor <init>(Landroid/net/EthernetDataTracker;)V
     .locals 0
-    .param p1    # Landroid/net/EthernetDataTracker;
 
     invoke-direct {p0}, Lcom/android/server/net/BaseNetworkObserver;-><init>()V
 
@@ -34,7 +33,6 @@
 # virtual methods
 .method public interfaceAdded(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/net/EthernetDataTracker$InterfaceObserver;->mTracker:Landroid/net/EthernetDataTracker;
 
@@ -46,8 +44,6 @@
 
 .method public interfaceLinkStateChanged(Ljava/lang/String;Z)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     # getter for: Landroid/net/EthernetDataTracker;->mIface:Ljava/lang/String;
     invoke-static {}, Landroid/net/EthernetDataTracker;->access$000()Ljava/lang/String;
@@ -131,7 +127,6 @@
 
 .method public interfaceRemoved(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/net/EthernetDataTracker$InterfaceObserver;->mTracker:Landroid/net/EthernetDataTracker;
 
@@ -143,8 +138,6 @@
 
 .method public interfaceStatusChanged(Ljava/lang/String;Z)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const-string v1, "Ethernet"
 

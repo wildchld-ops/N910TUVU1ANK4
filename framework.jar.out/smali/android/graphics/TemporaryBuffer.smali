@@ -28,7 +28,6 @@
 
 .method public static obtain(I)[C
     .locals 3
-    .param p0    # I
 
     const-class v2, Landroid/graphics/TemporaryBuffer;
 
@@ -74,7 +73,6 @@
 
 .method public static recycle([C)V
     .locals 2
-    .param p0    # [C
 
     array-length v0, p0
 

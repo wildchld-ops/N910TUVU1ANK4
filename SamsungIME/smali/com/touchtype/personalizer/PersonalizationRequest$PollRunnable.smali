@@ -26,7 +26,6 @@
 # direct methods
 .method public constructor <init>(Lcom/touchtype/personalizer/PersonalizationRequest;I)V
     .locals 0
-    .param p2    # I
 
     iput-object p1, p0, Lcom/touchtype/personalizer/PersonalizationRequest$PollRunnable;->this$0:Lcom/touchtype/personalizer/PersonalizationRequest;
 
@@ -127,8 +126,6 @@
 
 .method private updateProgress(Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 

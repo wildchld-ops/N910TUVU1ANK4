@@ -170,7 +170,7 @@
     .locals 1
     .param p0    # Lcom/android/phone/sip/SipSettings;
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/sip/SipSettings;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -290,7 +290,7 @@
 
     invoke-static {v1, v2}, Lcom/android/phone/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/sip/SipSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -302,7 +302,7 @@
     :cond_0
     new-instance v0, Lcom/android/phone/sip/SipSettings$SipPreference;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/sip/SipSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -318,13 +318,13 @@
 
     iget-object v1, p0, Lcom/android/phone/sip/SipSettings;->mSipListContainer:Landroid/preference/PreferenceCategory;
 
-    invoke-virtual {v1, v0}, Landroid/preference/PreferenceGroup;->addPreference(Landroid/preference/Preference;)Z
+    invoke-virtual {v1, v0}, Landroid/preference/PreferenceCategory;->addPreference(Landroid/preference/Preference;)Z
 
     new-instance v1, Lcom/android/phone/sip/SipSettings$7;
 
     invoke-direct {v1, p0}, Lcom/android/phone/sip/SipSettings$7;-><init>(Lcom/android/phone/sip/SipSettings;)V
 
-    invoke-virtual {v0, v1}, Landroid/preference/Preference;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
+    invoke-virtual {v0, v1}, Lcom/android/phone/sip/SipSettings$SipPreference;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
 
     goto :goto_0
 .end method
@@ -439,7 +439,7 @@
 
     iget-object v3, p0, Lcom/android/phone/sip/SipSettings;->mPackageManager:Landroid/content/pm/PackageManager;
 
-    invoke-virtual {v0, v3}, Landroid/content/pm/PackageItemInfo;->loadLabel(Landroid/content/pm/PackageManager;)Ljava/lang/CharSequence;
+    invoke-virtual {v0, v3}, Landroid/content/pm/ApplicationInfo;->loadLabel(Landroid/content/pm/PackageManager;)Ljava/lang/CharSequence;
 
     move-result-object v3
 
@@ -615,7 +615,7 @@
     :cond_1
     new-instance v1, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/sip/SipSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -825,7 +825,7 @@
 .method private registerForAddSipListener()V
     .locals 2
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getView()Landroid/view/View;
+    invoke-virtual {p0}, Lcom/android/phone/sip/SipSettings;->getView()Landroid/view/View;
 
     move-result-object v0
 
@@ -845,7 +845,7 @@
 
     invoke-direct {v1, p0}, Lcom/android/phone/sip/SipSettings$3;-><init>(Lcom/android/phone/sip/SipSettings;)V
 
-    invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     return-void
 .end method
@@ -859,7 +859,7 @@
 
     const-string v0, "sip_receive_calls_key"
 
-    invoke-virtual {p0, v0}, Landroid/preference/PreferenceFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/phone/sip/SipSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -895,7 +895,7 @@
 
     sget-boolean v1, Lcom/android/phone/sip/SipSettings;->mCheckValue:Z
 
-    invoke-virtual {v0, v1}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+    invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     const/4 v0, 0x1
 
@@ -908,7 +908,7 @@
 
     invoke-direct {v1, p0}, Lcom/android/phone/sip/SipSettings$4;-><init>(Lcom/android/phone/sip/SipSettings;)V
 
-    invoke-virtual {v0, v1}, Landroid/preference/Preference;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
+    invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
 
     return-void
 
@@ -921,7 +921,7 @@
 
     move-result v1
 
-    invoke-virtual {v0, v1}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+    invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     goto :goto_0
 .end method
@@ -964,7 +964,7 @@
 
     iget-object v3, p0, Lcom/android/phone/sip/SipSettings;->mSipListContainer:Landroid/preference/PreferenceCategory;
 
-    invoke-virtual {v3}, Landroid/preference/PreferenceGroup;->removeAll()V
+    invoke-virtual {v3}, Landroid/preference/PreferenceCategory;->removeAll()V
 
     iget-object v3, p0, Lcom/android/phone/sip/SipSettings;->mSipProfileList:Ljava/util/List;
 
@@ -1087,7 +1087,7 @@
     .param p1    # Ljava/lang/String;
     .param p2    # Ljava/lang/String;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/sip/SipSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -1113,7 +1113,7 @@
 
     invoke-virtual {v4, v0, p1}, Landroid/os/Bundle;->putParcelable(Ljava/lang/String;Landroid/os/Parcelable;)V
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->isAdded()Z
+    invoke-virtual {p0}, Lcom/android/phone/sip/SipSettings;->isAdded()Z
 
     move-result v0
 
@@ -1133,7 +1133,7 @@
 
     move-object v1, p0
 
-    invoke-virtual/range {v0 .. v5}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->startFragment(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;I)Z
+    invoke-virtual/range {v0 .. v5}, Lcom/android/phone/sip/SipSettings;->startFragment(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;I)Z
 
     :cond_0
     return-void
@@ -1255,7 +1255,7 @@
 
     iget-object v1, p0, Lcom/android/phone/sip/SipSettings;->mSipListContainer:Landroid/preference/PreferenceCategory;
 
-    invoke-virtual {v1, v0}, Landroid/preference/PreferenceGroup;->removePreference(Landroid/preference/Preference;)Z
+    invoke-virtual {v1, v0}, Landroid/preference/PreferenceCategory;->removePreference(Landroid/preference/Preference;)Z
 
     :cond_0
     return-void
@@ -1273,7 +1273,7 @@
 
     invoke-static {v0, v1}, Lcom/android/phone/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->isAdded()Z
+    invoke-virtual {p0}, Lcom/android/phone/sip/SipSettings;->isAdded()Z
 
     move-result v0
 
@@ -1296,7 +1296,7 @@
 
     invoke-direct {v0, p0, p3, p2}, Lcom/android/phone/sip/SipSettings$2;-><init>(Lcom/android/phone/sip/SipSettings;Landroid/content/Intent;I)V
 
-    invoke-virtual {v0}, Ljava/lang/Thread;->start()V
+    invoke-virtual {v0}, Lcom/android/phone/sip/SipSettings$2;->start()V
 
     goto :goto_0
 .end method
@@ -1317,11 +1317,11 @@
 
     const v1, 0x7f06004a
 
-    invoke-virtual {p0, v1}, Landroid/preference/PreferenceFragment;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v1}, Lcom/android/phone/sip/SipSettings;->addPreferencesFromResource(I)V
 
     const-string v1, "sip_account_list"
 
-    invoke-virtual {p0, v1}, Landroid/preference/PreferenceFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v1}, Lcom/android/phone/sip/SipSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v1
 
@@ -1329,7 +1329,7 @@
 
     iput-object v1, p0, Lcom/android/phone/sip/SipSettings;->mSipListContainer:Landroid/preference/PreferenceCategory;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/sip/SipSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -1341,7 +1341,7 @@
 
     new-instance v1, Lcom/android/phone/sip/SipSharedPreferences;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/sip/SipSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -1351,7 +1351,7 @@
 
     new-instance v1, Lcom/android/phone/sip/SipProfileDb;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/sip/SipSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -1378,7 +1378,7 @@
     sput-boolean v4, Lcom/android/phone/sip/SipSettings;->updatedCipherProfiles:Z
 
     :cond_0
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {p0}, Lcom/android/phone/sip/SipSettings;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v1
 
@@ -1390,7 +1390,7 @@
 
     iput-object v1, p0, Lcom/android/phone/sip/SipSettings;->mCallManager:Lcom/android/internal/telephony/CallManager;
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getActionBar()Landroid/app/ActionBar;
+    invoke-virtual {p0}, Lcom/android/phone/sip/SipSettings;->getActionBar()Landroid/app/ActionBar;
 
     move-result-object v0
 
@@ -1399,7 +1399,7 @@
     invoke-virtual {v0, v4}, Landroid/app/ActionBar;->setDisplayHomeAsUpEnabled(Z)V
 
     :cond_1
-    invoke-virtual {p0, v4}, Landroid/app/Fragment;->setHasOptionsMenu(Z)V
+    invoke-virtual {p0, v4}, Lcom/android/phone/sip/SipSettings;->setHasOptionsMenu(Z)V
 
     return-void
 .end method
@@ -1429,7 +1429,7 @@
 
     invoke-interface {v0, v1}, Landroid/view/MenuItem;->setShowAsAction(I)V
 
-    invoke-super {p0, p1, p2}, Landroid/app/Fragment;->onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
+    invoke-super {p0, p1, p2}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
 
     return-void
 .end method
@@ -1460,7 +1460,7 @@
 .method public onDestroy()V
     .locals 0
 
-    invoke-super {p0}, Landroid/preference/PreferenceFragment;->onDestroy()V
+    invoke-super {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onDestroy()V
 
     return-void
 .end method
@@ -1509,7 +1509,7 @@
 
     const/4 v2, 0x1
 
-    invoke-super {p0, p1}, Landroid/app/Fragment;->onPrepareOptionsMenu(Landroid/view/Menu;)V
+    invoke-super {p0, p1}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onPrepareOptionsMenu(Landroid/view/Menu;)V
 
     const-string v0, "tablet_device"
 
@@ -1584,11 +1584,11 @@
 
     iget-object v0, p0, Lcom/android/phone/sip/SipSettings;->mButtonAddSipAccount:Landroid/widget/Button;
 
-    invoke-virtual {v0, v3}, Landroid/widget/TextView;->setEnabled(Z)V
+    invoke-virtual {v0, v3}, Landroid/widget/Button;->setEnabled(Z)V
 
     iget-object v0, p0, Lcom/android/phone/sip/SipSettings;->mButtonSipReceiveCalls:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v0, v3}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v0, v3}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     :goto_0
     const-string v0, "tablet_device"
@@ -1599,7 +1599,7 @@
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getView()Landroid/view/View;
+    invoke-virtual {p0}, Lcom/android/phone/sip/SipSettings;->getView()Landroid/view/View;
 
     move-result-object v0
 
@@ -1613,7 +1613,7 @@
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual {p0}, Lcom/android/phone/sip/SipSettings;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v0
 
@@ -1676,11 +1676,11 @@
     :cond_2
     iget-object v0, p0, Lcom/android/phone/sip/SipSettings;->mButtonAddSipAccount:Landroid/widget/Button;
 
-    invoke-virtual {v0, v4}, Landroid/widget/TextView;->setEnabled(Z)V
+    invoke-virtual {v0, v4}, Landroid/widget/Button;->setEnabled(Z)V
 
     iget-object v0, p0, Lcom/android/phone/sip/SipSettings;->mButtonSipReceiveCalls:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v0, v4}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v0, v4}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     goto :goto_0
 .end method
@@ -1694,7 +1694,7 @@
 
     invoke-static {v0, v1}, Lcom/android/phone/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-super {p0}, Landroid/preference/PreferenceFragment;->onStart()V
+    invoke-super {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onStart()V
 
     invoke-direct {p0}, Lcom/android/phone/sip/SipSettings;->registerForAddSipListener()V
 

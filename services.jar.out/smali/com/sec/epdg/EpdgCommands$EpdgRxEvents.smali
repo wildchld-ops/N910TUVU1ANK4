@@ -73,7 +73,6 @@
 
 .method public static toString(I)Ljava/lang/String;
     .locals 3
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 

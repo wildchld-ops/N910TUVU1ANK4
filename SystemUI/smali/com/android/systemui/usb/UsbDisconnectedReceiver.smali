@@ -14,8 +14,6 @@
 # direct methods
 .method public constructor <init>(Landroid/app/Activity;Landroid/hardware/usb/UsbAccessory;)V
     .locals 2
-    .param p1    # Landroid/app/Activity;
-    .param p2    # Landroid/hardware/usb/UsbAccessory;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -36,8 +34,6 @@
 
 .method public constructor <init>(Landroid/app/Activity;Landroid/hardware/usb/UsbDevice;)V
     .locals 2
-    .param p1    # Landroid/app/Activity;
-    .param p2    # Landroid/hardware/usb/UsbDevice;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -60,8 +56,6 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 

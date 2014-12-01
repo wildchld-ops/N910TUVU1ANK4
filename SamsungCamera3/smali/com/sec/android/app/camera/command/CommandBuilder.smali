@@ -18,10 +18,6 @@
 
 .method public static buildCommand(ILcom/sec/android/app/camera/Camera;Lcom/sec/android/glview/TwGLViewGroup;Lcom/sec/android/app/camera/MenuResourceDepot;)Lcom/sec/android/app/camera/command/MenuCommand;
     .locals 1
-    .param p0    # I
-    .param p1    # Lcom/sec/android/app/camera/Camera;
-    .param p2    # Lcom/sec/android/glview/TwGLViewGroup;
-    .param p3    # Lcom/sec/android/app/camera/MenuResourceDepot;
 
     const/4 v0, 0x3
 
@@ -34,11 +30,6 @@
 
 .method public static buildCommand(ILcom/sec/android/app/camera/Camera;Lcom/sec/android/glview/TwGLViewGroup;Lcom/sec/android/app/camera/MenuResourceDepot;I)Lcom/sec/android/app/camera/command/MenuCommand;
     .locals 7
-    .param p0    # I
-    .param p1    # Lcom/sec/android/app/camera/Camera;
-    .param p2    # Lcom/sec/android/glview/TwGLViewGroup;
-    .param p3    # Lcom/sec/android/app/camera/MenuResourceDepot;
-    .param p4    # I
 
     const/4 v0, 0x0
 
@@ -1832,11 +1823,6 @@
 
 .method public static buildCommandWithSub(ILjava/lang/String;Lcom/sec/android/app/camera/Camera;Lcom/sec/android/glview/TwGLViewGroup;Lcom/sec/android/app/camera/MenuResourceDepot;)Lcom/sec/android/app/camera/command/MenuCommand;
     .locals 2
-    .param p0    # I
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/sec/android/app/camera/Camera;
-    .param p3    # Lcom/sec/android/glview/TwGLViewGroup;
-    .param p4    # Lcom/sec/android/app/camera/MenuResourceDepot;
 
     const/4 v0, 0x0
 

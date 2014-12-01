@@ -70,7 +70,7 @@
     const/4 v0, 0x1
 
     :goto_0
-    invoke-virtual {v1, v0}, Landroid/widget/TextView;->setEnabled(Z)V
+    invoke-virtual {v1, v0}, Landroid/widget/Button;->setEnabled(Z)V
 
     return-void
 

@@ -93,7 +93,6 @@
 
 .method static acquire(Landroid/view/View;)Landroid/widget/RelativeLayout$DependencyGraph$Node;
     .locals 2
-    .param p0    # Landroid/view/View;
 
     sget-object v1, Landroid/widget/RelativeLayout$DependencyGraph$Node;->sPool:Landroid/util/Pools$SynchronizedPool;
 

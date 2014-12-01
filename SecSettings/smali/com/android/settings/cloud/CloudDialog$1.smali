@@ -21,8 +21,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/settings/cloud/CloudDialog;JJ)V
     .locals 0
-    .param p2    # J
-    .param p4    # J
 
     iput-object p1, p0, Lcom/android/settings/cloud/CloudDialog$1;->this$0:Lcom/android/settings/cloud/CloudDialog;
 
@@ -87,7 +85,6 @@
 
 .method public onTick(J)V
     .locals 2
-    .param p1    # J
 
     iget-object v0, p0, Lcom/android/settings/cloud/CloudDialog$1;->this$0:Lcom/android/settings/cloud/CloudDialog;
 

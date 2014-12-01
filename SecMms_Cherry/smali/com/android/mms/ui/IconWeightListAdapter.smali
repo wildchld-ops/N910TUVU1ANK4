@@ -115,8 +115,6 @@
 
 .method public constructor <init>(Landroid/content/Context;ILjava/util/List;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -136,7 +134,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Ljava/util/List;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -157,11 +154,6 @@
 
 .method protected static addEnabledPackageItem(Landroid/content/Context;Ljava/lang/String;Ljava/util/List;IJI)Z
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # J
-    .param p6    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -209,12 +201,6 @@
 
 .method protected static addEnabledPackageItem(Landroid/content/Context;Ljava/lang/String;Ljava/util/List;IJII)Z
     .locals 7
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # J
-    .param p6    # I
-    .param p7    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -285,12 +271,6 @@
 
 .method protected static addEnabledPackageItem(Landroid/content/Context;Ljava/lang/String;Ljava/util/List;IJLjava/lang/String;I)Z
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # J
-    .param p6    # Ljava/lang/String;
-    .param p7    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -351,10 +331,6 @@
 
 .method protected static addItem(Ljava/util/List;Ljava/lang/String;Landroid/graphics/drawable/Drawable;IJ)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/graphics/drawable/Drawable;
-    .param p3    # I
-    .param p4    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -387,10 +363,6 @@
 
 .method private static addPackageItem(Ljava/util/List;Ljava/lang/String;Landroid/graphics/drawable/Drawable;IJ)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/graphics/drawable/Drawable;
-    .param p3    # I
-    .param p4    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -572,7 +544,6 @@
 
 .method public static loadWeight(Landroid/content/Context;)V
     .locals 5
-    .param p0    # Landroid/content/Context;
 
     const-wide/16 v3, 0x0
 
@@ -721,8 +692,6 @@
 
 .method public static updateWeight(Landroid/content/Context;I)V
     .locals 8
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     const-wide/16 v6, 0x1
 

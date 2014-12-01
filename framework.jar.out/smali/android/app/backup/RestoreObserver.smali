@@ -16,29 +16,24 @@
 # virtual methods
 .method public onUpdate(ILjava/lang/String;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method public restoreFinished(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public restoreSetsAvailable([Landroid/app/backup/RestoreSet;)V
     .locals 0
-    .param p1    # [Landroid/app/backup/RestoreSet;
 
     return-void
 .end method
 
 .method public restoreStarting(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method

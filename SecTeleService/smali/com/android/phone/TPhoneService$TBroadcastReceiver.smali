@@ -75,7 +75,7 @@
     move-result-object v7
 
     # invokes: Lcom/android/phone/TPhoneService;->log(Ljava/lang/String;Z)V
-    invoke-static {v6, v7, v9}, Lcom/android/phone/TPhoneService;->access$100(Lcom/android/phone/TPhoneService;Ljava/lang/String;Z)V
+    invoke-static {v6, v7, v9}, Lcom/android/phone/TPhoneService;->access$700(Lcom/android/phone/TPhoneService;Ljava/lang/String;Z)V
 
     const-string v6, "com.skt.prod.phone.TPHONE_SERVICE_CONNECTED"
 
@@ -171,7 +171,7 @@
     iget-object v6, p0, Lcom/android/phone/TPhoneService$TBroadcastReceiver;->this$0:Lcom/android/phone/TPhoneService;
 
     # getter for: Lcom/android/phone/TPhoneService;->mCM:Lcom/android/internal/telephony/CallManager;
-    invoke-static {v6}, Lcom/android/phone/TPhoneService;->access$700(Lcom/android/phone/TPhoneService;)Lcom/android/internal/telephony/CallManager;
+    invoke-static {v6}, Lcom/android/phone/TPhoneService;->access$600(Lcom/android/phone/TPhoneService;)Lcom/android/internal/telephony/CallManager;
 
     move-result-object v6
 
@@ -247,7 +247,7 @@
 
     move-result-object v6
 
-    invoke-virtual {v6, v4}, Landroid/content/ContextWrapper;->sendBroadcast(Landroid/content/Intent;)V
+    invoke-virtual {v6, v4}, Lcom/android/phone/PhoneGlobals;->sendBroadcast(Landroid/content/Intent;)V
 
     goto :goto_2
 

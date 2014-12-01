@@ -48,7 +48,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/AirplaneModeSettings;)V
     .locals 0
-    .param p0    # Lcom/android/settings/AirplaneModeSettings;
 
     invoke-direct {p0}, Lcom/android/settings/AirplaneModeSettings;->onAirplaneModeChanged()V
 
@@ -57,7 +56,6 @@
 
 .method private isAirplaneModeOn(Landroid/content/Context;)Z
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -216,7 +214,6 @@
 
 .method private updateAirplaneModeInfo(Z)V
     .locals 6
-    .param p1    # Z
 
     const v5, 0x7f0d003b
 
@@ -330,7 +327,6 @@
 # virtual methods
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 7
-    .param p1    # Landroid/os/Bundle;
 
     const/16 v5, 0x10
 
@@ -445,9 +441,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 11
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const/4 v10, -0x2
 

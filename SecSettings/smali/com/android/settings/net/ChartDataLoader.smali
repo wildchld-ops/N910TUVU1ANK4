@@ -23,9 +23,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/net/INetworkStatsSession;Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/net/INetworkStatsSession;
-    .param p3    # Landroid/os/Bundle;
 
     invoke-direct {p0, p1}, Landroid/content/AsyncTaskLoader;-><init>(Landroid/content/Context;)V
 
@@ -38,8 +35,6 @@
 
 .method public static buildArgs(Landroid/net/NetworkTemplate;Lcom/android/settings/DataUsageSummary$AppItem;)Landroid/os/Bundle;
     .locals 1
-    .param p0    # Landroid/net/NetworkTemplate;
-    .param p1    # Lcom/android/settings/DataUsageSummary$AppItem;
 
     const/16 v0, 0xa
 
@@ -52,9 +47,6 @@
 
 .method public static buildArgs(Landroid/net/NetworkTemplate;Lcom/android/settings/DataUsageSummary$AppItem;I)Landroid/os/Bundle;
     .locals 2
-    .param p0    # Landroid/net/NetworkTemplate;
-    .param p1    # Lcom/android/settings/DataUsageSummary$AppItem;
-    .param p2    # I
 
     new-instance v0, Landroid/os/Bundle;
 
@@ -77,10 +69,6 @@
 
 .method private collectHistoryForUid(Landroid/net/NetworkTemplate;IILandroid/net/NetworkStatsHistory;)Landroid/net/NetworkStatsHistory;
     .locals 7
-    .param p1    # Landroid/net/NetworkTemplate;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/net/NetworkStatsHistory;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -118,9 +106,6 @@
 
 .method private loadInBackground(Landroid/net/NetworkTemplate;Lcom/android/settings/DataUsageSummary$AppItem;I)Lcom/android/settings/net/ChartData;
     .locals 8
-    .param p1    # Landroid/net/NetworkTemplate;
-    .param p2    # Lcom/android/settings/DataUsageSummary$AppItem;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

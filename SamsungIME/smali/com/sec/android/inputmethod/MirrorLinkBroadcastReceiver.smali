@@ -120,7 +120,6 @@
 
 .method static synthetic access$002(Lcom/mirrorlink/android/commonapi/ICommonAPIService;)Lcom/mirrorlink/android/commonapi/ICommonAPIService;
     .locals 0
-    .param p0    # Lcom/mirrorlink/android/commonapi/ICommonAPIService;
 
     sput-object p0, Lcom/sec/android/inputmethod/MirrorLinkBroadcastReceiver;->mService:Lcom/mirrorlink/android/commonapi/ICommonAPIService;
 
@@ -194,8 +193,6 @@
 
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     invoke-static {}, Lcom/diotek/ime/framework/common/InputManagerImpl;->getInstance()Lcom/diotek/ime/framework/common/InputManager;
 

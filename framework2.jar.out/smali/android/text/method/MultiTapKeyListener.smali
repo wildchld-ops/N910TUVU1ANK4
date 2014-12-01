@@ -150,8 +150,6 @@
 
 .method public constructor <init>(Landroid/text/method/TextKeyListener$Capitalize;Z)V
     .locals 0
-    .param p1    # Landroid/text/method/TextKeyListener$Capitalize;
-    .param p2    # Z
 
     invoke-direct {p0}, Landroid/text/method/BaseKeyListener;-><init>()V
 
@@ -164,8 +162,6 @@
 
 .method public static getInstance(ZLandroid/text/method/TextKeyListener$Capitalize;)Landroid/text/method/MultiTapKeyListener;
     .locals 3
-    .param p0    # Z
-    .param p1    # Landroid/text/method/TextKeyListener$Capitalize;
 
     invoke-virtual {p1}, Ljava/lang/Enum;->ordinal()I
 
@@ -209,7 +205,6 @@
 
 .method private static removeTimeouts(Landroid/text/Spannable;)V
     .locals 6
-    .param p0    # Landroid/text/Spannable;
 
     const/4 v3, 0x0
 
@@ -269,10 +264,6 @@
 
 .method public onKeyDown(Landroid/view/View;Landroid/text/Editable;ILandroid/view/KeyEvent;)Z
     .locals 28
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/text/Editable;
-    .param p3    # I
-    .param p4    # Landroid/view/KeyEvent;
 
     const/16 v26, 0x0
 
@@ -764,22 +755,12 @@
 
 .method public onSpanAdded(Landroid/text/Spannable;Ljava/lang/Object;II)V
     .locals 0
-    .param p1    # Landroid/text/Spannable;
-    .param p2    # Ljava/lang/Object;
-    .param p3    # I
-    .param p4    # I
 
     return-void
 .end method
 
 .method public onSpanChanged(Landroid/text/Spannable;Ljava/lang/Object;IIII)V
     .locals 1
-    .param p1    # Landroid/text/Spannable;
-    .param p2    # Ljava/lang/Object;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     sget-object v0, Landroid/text/Selection;->SELECTION_END:Ljava/lang/Object;
 
@@ -797,10 +778,6 @@
 
 .method public onSpanRemoved(Landroid/text/Spannable;Ljava/lang/Object;II)V
     .locals 0
-    .param p1    # Landroid/text/Spannable;
-    .param p2    # Ljava/lang/Object;
-    .param p3    # I
-    .param p4    # I
 
     return-void
 .end method

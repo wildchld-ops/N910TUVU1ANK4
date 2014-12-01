@@ -6,8 +6,6 @@
 # direct methods
 .method protected constructor <init>(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/immersion/EffectHandle;-><init>(II)V
 

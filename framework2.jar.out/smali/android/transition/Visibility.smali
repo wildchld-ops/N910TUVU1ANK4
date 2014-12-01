@@ -55,7 +55,6 @@
 
 .method private captureValues(Landroid/transition/TransitionValues;)V
     .locals 4
-    .param p1    # Landroid/transition/TransitionValues;
 
     iget-object v1, p1, Landroid/transition/TransitionValues;->view:Landroid/view/View;
 
@@ -90,8 +89,6 @@
 
 .method private getVisibilityChangeInfo(Landroid/transition/TransitionValues;Landroid/transition/TransitionValues;)Landroid/transition/Visibility$VisibilityInfo;
     .locals 7
-    .param p1    # Landroid/transition/TransitionValues;
-    .param p2    # Landroid/transition/TransitionValues;
 
     const/4 v6, -0x1
 
@@ -283,7 +280,6 @@
 # virtual methods
 .method public captureEndValues(Landroid/transition/TransitionValues;)V
     .locals 0
-    .param p1    # Landroid/transition/TransitionValues;
 
     invoke-direct {p0, p1}, Landroid/transition/Visibility;->captureValues(Landroid/transition/TransitionValues;)V
 
@@ -292,7 +288,6 @@
 
 .method public captureStartValues(Landroid/transition/TransitionValues;)V
     .locals 0
-    .param p1    # Landroid/transition/TransitionValues;
 
     invoke-direct {p0, p1}, Landroid/transition/Visibility;->captureValues(Landroid/transition/TransitionValues;)V
 
@@ -301,9 +296,6 @@
 
 .method public createAnimator(Landroid/view/ViewGroup;Landroid/transition/TransitionValues;Landroid/transition/TransitionValues;)Landroid/animation/Animator;
     .locals 12
-    .param p1    # Landroid/view/ViewGroup;
-    .param p2    # Landroid/transition/TransitionValues;
-    .param p3    # Landroid/transition/TransitionValues;
 
     const/4 v6, -0x1
 
@@ -466,7 +458,6 @@
 
 .method public isVisible(Landroid/transition/TransitionValues;)Z
     .locals 5
-    .param p1    # Landroid/transition/TransitionValues;
 
     const/4 v3, 0x0
 
@@ -519,11 +510,6 @@
 
 .method public onAppear(Landroid/view/ViewGroup;Landroid/transition/TransitionValues;ILandroid/transition/TransitionValues;I)Landroid/animation/Animator;
     .locals 1
-    .param p1    # Landroid/view/ViewGroup;
-    .param p2    # Landroid/transition/TransitionValues;
-    .param p3    # I
-    .param p4    # Landroid/transition/TransitionValues;
-    .param p5    # I
 
     const/4 v0, 0x0
 
@@ -532,11 +518,6 @@
 
 .method public onDisappear(Landroid/view/ViewGroup;Landroid/transition/TransitionValues;ILandroid/transition/TransitionValues;I)Landroid/animation/Animator;
     .locals 1
-    .param p1    # Landroid/view/ViewGroup;
-    .param p2    # Landroid/transition/TransitionValues;
-    .param p3    # I
-    .param p4    # Landroid/transition/TransitionValues;
-    .param p5    # I
 
     const/4 v0, 0x0
 

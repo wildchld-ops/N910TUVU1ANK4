@@ -252,7 +252,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/ui/SmsViewerActivity;)Lcom/android/mms/ui/MessageItem;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SmsViewerActivity;
 
     iget-object v0, p0, Lcom/android/mms/ui/SmsViewerActivity;->mMsgItem:Lcom/android/mms/ui/MessageItem;
 
@@ -261,7 +260,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/ui/SmsViewerActivity;)Lcom/android/mms/ui/ViewTitleHeader;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SmsViewerActivity;
 
     iget-object v0, p0, Lcom/android/mms/ui/SmsViewerActivity;->mViewTitleHeader:Lcom/android/mms/ui/ViewTitleHeader;
 
@@ -270,7 +268,6 @@
 
 .method static synthetic access$1000(Lcom/android/mms/ui/SmsViewerActivity;)Landroid/net/Uri;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SmsViewerActivity;
 
     iget-object v0, p0, Lcom/android/mms/ui/SmsViewerActivity;->msgUri:Landroid/net/Uri;
 
@@ -279,7 +276,6 @@
 
 .method static synthetic access$1100(Lcom/android/mms/ui/SmsViewerActivity;)J
     .locals 2
-    .param p0    # Lcom/android/mms/ui/SmsViewerActivity;
 
     iget-wide v0, p0, Lcom/android/mms/ui/SmsViewerActivity;->msgId:J
 
@@ -288,12 +284,6 @@
 
 .method static synthetic access$1200(Lcom/android/mms/ui/SmsViewerActivity;Landroid/text/Spannable;Ljava/lang/String;Ljava/lang/String;II)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/SmsViewerActivity;
-    .param p1    # Landroid/text/Spannable;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
-    .param p5    # I
 
     invoke-direct/range {p0 .. p5}, Lcom/android/mms/ui/SmsViewerActivity;->setTextLink(Landroid/text/Spannable;Ljava/lang/String;Ljava/lang/String;II)V
 
@@ -302,7 +292,6 @@
 
 .method static synthetic access$1300(Lcom/android/mms/ui/SmsViewerActivity;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SmsViewerActivity;
 
     iget-object v0, p0, Lcom/android/mms/ui/SmsViewerActivity;->mSelectedUrl:Ljava/lang/String;
 
@@ -311,8 +300,6 @@
 
 .method static synthetic access$1302(Lcom/android/mms/ui/SmsViewerActivity;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/SmsViewerActivity;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/mms/ui/SmsViewerActivity;->mSelectedUrl:Ljava/lang/String;
 
@@ -321,7 +308,6 @@
 
 .method static synthetic access$1400(Lcom/android/mms/ui/SmsViewerActivity;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SmsViewerActivity;
 
     iget-object v0, p0, Lcom/android/mms/ui/SmsViewerActivity;->mSelectedText:Ljava/lang/String;
 
@@ -330,7 +316,6 @@
 
 .method static synthetic access$1500(Lcom/android/mms/ui/SmsViewerActivity;)Landroid/text/style/ForegroundColorSpan;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SmsViewerActivity;
 
     iget-object v0, p0, Lcom/android/mms/ui/SmsViewerActivity;->mSelectedUrlSpan:Landroid/text/style/ForegroundColorSpan;
 
@@ -339,7 +324,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/ui/SmsViewerActivity;)Lcom/android/mms/data/ContactList;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SmsViewerActivity;
 
     iget-object v0, p0, Lcom/android/mms/ui/SmsViewerActivity;->mContactList:Lcom/android/mms/data/ContactList;
 
@@ -348,7 +332,6 @@
 
 .method static synthetic access$300(Lcom/android/mms/ui/SmsViewerActivity;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SmsViewerActivity;
 
     iget-object v0, p0, Lcom/android/mms/ui/SmsViewerActivity;->mContext:Landroid/content/Context;
 
@@ -357,7 +340,6 @@
 
 .method static synthetic access$400(Lcom/android/mms/ui/SmsViewerActivity;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/SmsViewerActivity;
 
     invoke-direct {p0}, Lcom/android/mms/ui/SmsViewerActivity;->initActionBar()V
 
@@ -366,7 +348,6 @@
 
 .method static synthetic access$500(Lcom/android/mms/ui/SmsViewerActivity;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/SmsViewerActivity;
 
     invoke-direct {p0}, Lcom/android/mms/ui/SmsViewerActivity;->drawTitle()V
 
@@ -375,7 +356,6 @@
 
 .method static synthetic access$600(Lcom/android/mms/ui/SmsViewerActivity;)I
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SmsViewerActivity;
 
     iget v0, p0, Lcom/android/mms/ui/SmsViewerActivity;->startX:I
 
@@ -384,7 +364,6 @@
 
 .method static synthetic access$700(Lcom/android/mms/ui/SmsViewerActivity;)I
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SmsViewerActivity;
 
     iget v0, p0, Lcom/android/mms/ui/SmsViewerActivity;->endX:I
 
@@ -393,10 +372,6 @@
 
 .method static synthetic access$800(Lcom/android/mms/ui/SmsViewerActivity;IIJ)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/SmsViewerActivity;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/mms/ui/SmsViewerActivity;->flickMessage(IIJ)V
 
@@ -405,7 +380,6 @@
 
 .method static synthetic access$900(Lcom/android/mms/ui/SmsViewerActivity;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/SmsViewerActivity;
 
     iget-object v0, p0, Lcom/android/mms/ui/SmsViewerActivity;->mSmsBodyView:Landroid/widget/TextView;
 
@@ -422,7 +396,6 @@
 
 .method private checkContactValidityWithDelay(I)V
     .locals 4
-    .param p1    # I
 
     const-string v0, "Mms/SmsViewerActivity"
 
@@ -1141,9 +1114,6 @@
 
 .method private flickMessage(IIJ)V
     .locals 21
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
 
     const/4 v13, 0x0
 
@@ -2097,8 +2067,6 @@
 
 .method private formatDate(Landroid/content/Context;J)Ljava/lang/String;
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # J
 
     invoke-static {p1}, Landroid/text/format/DateFormat;->getDateFormat(Landroid/content/Context;)Ljava/text/DateFormat;
 
@@ -2129,7 +2097,6 @@
 
 .method private getBoxUriFromBoxId(I)Landroid/net/Uri;
     .locals 4
-    .param p1    # I
 
     const-string v1, "Mms/SmsViewerActivity"
 
@@ -2197,10 +2164,6 @@
 
 .method private getCachedMessageItem(Landroid/net/Uri;JLjava/lang/String;Z)Lcom/android/mms/ui/MessageItem;
     .locals 12
-    .param p1    # Landroid/net/Uri;
-    .param p2    # J
-    .param p4    # Ljava/lang/String;
-    .param p5    # Z
 
     const/4 v8, 0x0
 
@@ -2403,9 +2366,6 @@
 
 .method private getCachedMessageItemWpm(Landroid/net/Uri;JLjava/lang/String;)Lcom/android/mms/ui/MessageItem;
     .locals 12
-    .param p1    # Landroid/net/Uri;
-    .param p2    # J
-    .param p4    # Ljava/lang/String;
 
     const-string v1, "SmsViewFrame"
 
@@ -3710,7 +3670,6 @@
 
 .method private markAsRead(Z)V
     .locals 14
-    .param p1    # Z
 
     const/4 v13, 0x2
 
@@ -4168,7 +4127,6 @@
 
 .method private navigateMsgFolderViewMode(Z)V
     .locals 22
-    .param p1    # Z
 
     const/4 v15, 0x0
 
@@ -4850,11 +4808,6 @@
 
 .method private setTextLink(Landroid/text/Spannable;Ljava/lang/String;Ljava/lang/String;II)V
     .locals 3
-    .param p1    # Landroid/text/Spannable;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
-    .param p5    # I
 
     iput-object p2, p0, Lcom/android/mms/ui/SmsViewerActivity;->mSelectedUrl:Ljava/lang/String;
 
@@ -4895,7 +4848,6 @@
 
 .method private startYellowPage(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const-string v1, "Mms/SmsViewerActivity"
 
@@ -5078,7 +5030,6 @@
 # virtual methods
 .method public dispatchTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 7
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v6, 0x0
 
@@ -5213,7 +5164,6 @@
 
 .method public getContactHeaderString(Lcom/android/mms/data/ContactList;)Ljava/lang/String;
     .locals 6
-    .param p1    # Lcom/android/mms/data/ContactList;
 
     const v5, 0x7f0c013b
 
@@ -5541,9 +5491,6 @@
 
 .method protected onActivityResult(IILandroid/content/Intent;)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const/16 v2, 0x1d
 
@@ -5590,7 +5537,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 2
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -5624,7 +5570,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 9
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v8, 0x0
 
@@ -5950,7 +5895,6 @@
 
 .method public onDown(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v0, 0x0
 
@@ -5959,8 +5903,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v1, 0x0
 
@@ -6153,8 +6095,6 @@
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x1
 
@@ -6212,7 +6152,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 5
-    .param p1    # Landroid/view/MenuItem;
 
     const/16 v4, 0x1d
 
@@ -6396,7 +6335,6 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)Z
     .locals 1
-    .param p1    # Landroid/view/Menu;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onPrepareOptionsMenu(Landroid/view/Menu;)Z
 
@@ -6606,7 +6544,6 @@
 
 .method public onUpdate(Lcom/android/mms/data/Contact;)V
     .locals 2
-    .param p1    # Lcom/android/mms/data/Contact;
 
     const-string v0, "Mms/SmsViewerActivity"
 

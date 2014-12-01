@@ -66,7 +66,6 @@
 
 .method public static containsEmoticons(Ljava/lang/String;)Z
     .locals 7
-    .param p0    # Ljava/lang/String;
 
     const v6, 0xd800
 
@@ -208,7 +207,6 @@
 
 .method public static convertHalftoFull(C)C
     .locals 1
-    .param p0    # C
 
     const/16 v0, 0x21
 
@@ -230,7 +228,6 @@
 
 .method public static convertToTitleCase(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     const/4 v2, 0x1
 
@@ -340,7 +337,6 @@
 
 .method public static getClass(Ljava/lang/String;)Ljava/lang/Class;
     .locals 2
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -417,7 +413,6 @@
 
 .method public static getCurrentLanguageScriptType(I)I
     .locals 6
-    .param p0    # I
 
     invoke-static {}, Lcom/diotek/ime/framework/common/InputManagerImpl;->getInstance()Lcom/diotek/ime/framework/common/InputManager;
 
@@ -463,12 +458,6 @@
 
 .method private static getDistanceSquare(IIIIII)I
     .locals 4
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     const/4 v0, 0x0
 
@@ -608,13 +597,6 @@
 
 .method private static getDistanceSquareHD(Lcom/diotek/ime/framework/view/Keyboard$Key;IIIII[Z)I
     .locals 9
-    .param p0    # Lcom/diotek/ime/framework/view/Keyboard$Key;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # [Z
 
     const/4 v0, 0x0
 
@@ -1074,19 +1056,6 @@
 
 .method private static getDistanceSquareKor(Lcom/diotek/ime/framework/view/Keyboard$Key;Lcom/diotek/ime/framework/view/Keyboard$Key;IIIII[IZZZZZ)I
     .locals 15
-    .param p0    # Lcom/diotek/ime/framework/view/Keyboard$Key;
-    .param p1    # Lcom/diotek/ime/framework/view/Keyboard$Key;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # [I
-    .param p8    # Z
-    .param p9    # Z
-    .param p10    # Z
-    .param p11    # Z
-    .param p12    # Z
 
     const/4 v4, 0x0
 
@@ -1620,7 +1589,6 @@
 
 .method public static getFieldFromClass(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/reflect/Field;
     .locals 2
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1670,9 +1638,6 @@
 
 .method public static getFieldValue(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/reflect/Field;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Ljava/lang/Object;
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/reflect/Field;
 
     if-nez p2, :cond_0
 
@@ -1697,7 +1662,6 @@
 
 .method public static getHWKeyboardCountryCode(Lcom/diotek/ime/framework/common/Language;)Ljava/lang/String;
     .locals 5
-    .param p0    # Lcom/diotek/ime/framework/common/Language;
 
     const/4 v0, 0x0
 
@@ -1927,7 +1891,6 @@
 
 .method public static getHangleShiftedChar(I)I
     .locals 1
-    .param p0    # I
 
     move v0, p0
 
@@ -1985,7 +1948,6 @@
 
 .method public static getLanguageCodeName(Lcom/diotek/ime/framework/common/Language;)Ljava/lang/String;
     .locals 4
-    .param p0    # Lcom/diotek/ime/framework/common/Language;
 
     if-nez p0, :cond_0
 
@@ -2105,7 +2067,6 @@
 
 .method public static varargs getMethod(Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
     .locals 2
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2157,7 +2118,6 @@
 
 .method public static getMonthText(I)Ljava/lang/String;
     .locals 3
-    .param p0    # I
 
     const/4 v1, 0x0
 
@@ -2185,8 +2145,6 @@
 
 .method public static getRepositoryData(Ljava/lang/String;Landroid/content/Context;)Ljava/lang/Object;
     .locals 12
-    .param p0    # Ljava/lang/String;
-    .param p1    # Landroid/content/Context;
 
     const/4 v6, 0x0
 
@@ -2391,7 +2349,6 @@
 
 .method public static getSystemStatusBarHeight(Landroid/content/Context;)I
     .locals 5
-    .param p0    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/res/Resources$NotFoundException;
@@ -2425,9 +2382,6 @@
 
 .method public static getTheMatchedKeyIndex(II[Lcom/diotek/ime/framework/view/Keyboard$Key;)I
     .locals 8
-    .param p0    # I
-    .param p1    # I
-    .param p2    # [Lcom/diotek/ime/framework/view/Keyboard$Key;
 
     const/4 v5, -0x1
 
@@ -2496,9 +2450,6 @@
 
 .method public static getTheMatchedKeyIndexForV15(II[Lcom/diotek/ime/framework/view/Keyboard$Key;)I
     .locals 9
-    .param p0    # I
-    .param p1    # I
-    .param p2    # [Lcom/diotek/ime/framework/view/Keyboard$Key;
 
     const/4 v4, 0x0
 
@@ -2595,11 +2546,6 @@
 
 .method public static getTheNearestKeyIndex(IILcom/diotek/ime/framework/view/Keyboard;IZ)I
     .locals 26
-    .param p0    # I
-    .param p1    # I
-    .param p2    # Lcom/diotek/ime/framework/view/Keyboard;
-    .param p3    # I
-    .param p4    # Z
 
     const/16 v24, -0x1
 
@@ -2906,13 +2852,6 @@
 
 .method public static getTheNearestKeyIndexHD(II[Lcom/diotek/ime/framework/view/Keyboard$Key;III[Z)I
     .locals 11
-    .param p0    # I
-    .param p1    # I
-    .param p2    # [Lcom/diotek/ime/framework/view/Keyboard$Key;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # [Z
 
     const/4 v10, -0x1
 
@@ -2962,12 +2901,6 @@
 
 .method public static getTheNearestKeyIndexKor(IILcom/diotek/ime/framework/view/DefaultKeyboard;IZZ)I
     .locals 24
-    .param p0    # I
-    .param p1    # I
-    .param p2    # Lcom/diotek/ime/framework/view/DefaultKeyboard;
-    .param p3    # I
-    .param p4    # Z
-    .param p5    # Z
 
     const/16 v22, -0x1
 
@@ -3238,8 +3171,6 @@
 
 .method public static getValidCMSymbol(II)I
     .locals 1
-    .param p0    # I
-    .param p1    # I
 
     sparse-switch p1, :sswitch_data_0
 
@@ -3313,9 +3244,6 @@
 
 .method public static getVerticalGap(I[Lcom/diotek/ime/framework/view/Keyboard$Key;Z)I
     .locals 5
-    .param p0    # I
-    .param p1    # [Lcom/diotek/ime/framework/view/Keyboard$Key;
-    .param p2    # Z
 
     const/4 v4, 0x0
 
@@ -3503,10 +3431,6 @@
 
 .method public static varargs invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/reflect/Method;[Ljava/lang/Object;)Ljava/lang/Object;
     .locals 4
-    .param p0    # Ljava/lang/Object;
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/reflect/Method;
-    .param p3    # [Ljava/lang/Object;
 
     if-nez p2, :cond_0
 
@@ -3561,7 +3485,6 @@
 
 .method public static isArabicLanguage(I)Z
     .locals 1
-    .param p0    # I
 
     sparse-switch p0, :sswitch_data_0
 
@@ -3587,7 +3510,6 @@
 
 .method public static isBumpButton(I)Z
     .locals 13
-    .param p0    # I
 
     const/16 v12, 0x68
 
@@ -4249,7 +4171,6 @@
 
 .method public static isCMSymbol(I)Z
     .locals 3
-    .param p0    # I
 
     const/4 v1, 0x0
 
@@ -4304,7 +4225,6 @@
 
 .method public static isChineseLanguage(I)Z
     .locals 1
-    .param p0    # I
 
     sparse-switch p0, :sswitch_data_0
 
@@ -4331,8 +4251,6 @@
 
 .method public static isContainString([Ljava/lang/String;Ljava/lang/CharSequence;)Z
     .locals 3
-    .param p0    # [Ljava/lang/String;
-    .param p1    # Ljava/lang/CharSequence;
 
     if-eqz p0, :cond_0
 
@@ -4379,7 +4297,6 @@
 
 .method public static isCyrillicLanguage(I)Z
     .locals 1
-    .param p0    # I
 
     sparse-switch p0, :sswitch_data_0
 
@@ -4410,7 +4327,6 @@
 
 .method public static isEmergencyModeON(Landroid/content/Context;)Z
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     const/4 v0, 0x1
 
@@ -4439,7 +4355,6 @@
 
 .method public static isEmojiCharacter(Ljava/lang/CharSequence;)Z
     .locals 7
-    .param p0    # Ljava/lang/CharSequence;
 
     const/4 v3, 0x1
 
@@ -4538,7 +4453,6 @@
 
 .method public static isHebrewLanguage(I)Z
     .locals 1
-    .param p0    # I
 
     const/high16 v0, 0x69770000
 
@@ -4557,7 +4471,6 @@
 
 .method public static isHiraganaKey(C)Z
     .locals 1
-    .param p0    # C
 
     const/16 v0, 0x3041
 
@@ -4580,7 +4493,6 @@
 
 .method public static isIndianLanguage(I)Z
     .locals 1
-    .param p0    # I
 
     sparse-switch p0, :sswitch_data_0
 
@@ -4616,7 +4528,6 @@
 
 .method public static isIndoChineseLanguage(I)Z
     .locals 1
-    .param p0    # I
 
     sparse-switch p0, :sswitch_data_0
 
@@ -4642,12 +4553,6 @@
 
 .method public static isInsideHwrArea(IIIIILandroid/graphics/Rect;)Z
     .locals 4
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Landroid/graphics/Rect;
 
     int-to-float v2, p4
 
@@ -4722,7 +4627,6 @@
 
 .method public static isJapaneseLanguage(I)Z
     .locals 1
-    .param p0    # I
 
     const/high16 v0, 0x6a610000
 
@@ -4741,7 +4645,6 @@
 
 .method public static isKNOX(Landroid/content/Context;)Z
     .locals 5
-    .param p0    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -4864,7 +4767,6 @@
 
 .method public static isKhmerChar(I)Z
     .locals 1
-    .param p0    # I
 
     const/16 v0, 0x1780
 
@@ -4887,7 +4789,6 @@
 
 .method public static isKoreanLetter(C)Z
     .locals 2
-    .param p0    # C
 
     const/4 v0, 0x1
 
@@ -4929,7 +4830,6 @@
 
 .method public static isLaggingModeLanguage(I)Z
     .locals 1
-    .param p0    # I
 
     invoke-static {p0}, Lcom/diotek/ime/framework/util/Utils;->isChineseLanguage(I)Z
 
@@ -4981,7 +4881,6 @@
 
 .method public static isLaoLanguage(I)Z
     .locals 1
-    .param p0    # I
 
     const/high16 v0, 0x6c6f0000
 
@@ -5000,8 +4899,6 @@
 
 .method public static isMultitapKey(II)Z
     .locals 2
-    .param p0    # I
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -5036,7 +4933,6 @@
 
 .method public static isMyanmarShanDigit(I)Z
     .locals 1
-    .param p0    # I
 
     const/16 v0, 0x1090
 
@@ -5059,7 +4955,6 @@
 
 .method public static isNotSupportCursiveHWR(I)Z
     .locals 3
-    .param p0    # I
 
     const/4 v0, 0x1
 
@@ -5107,7 +5002,6 @@
 
 .method public static isPowerSavingModeON(Landroid/content/Context;)Z
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     const/4 v1, 0x1
 
@@ -5159,7 +5053,6 @@
 
 .method public static isRomajiKey(C)Z
     .locals 1
-    .param p0    # C
 
     const/16 v0, 0x61
 
@@ -5182,7 +5075,6 @@
 
 .method public static isStatusBarShowing(Landroid/view/IWindowManager;)Z
     .locals 1
-    .param p0    # Landroid/view/IWindowManager;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -5198,7 +5090,6 @@
 
 .method public static isThaiLanguage(I)Z
     .locals 1
-    .param p0    # I
 
     const/high16 v0, 0x74680000
 
@@ -5217,7 +5108,6 @@
 
 .method public static isVietLanguage(I)Z
     .locals 1
-    .param p0    # I
 
     const/high16 v0, 0x76690000
 
@@ -5236,7 +5126,6 @@
 
 .method public static isZawgyiChar(I)Z
     .locals 1
-    .param p0    # I
 
     const/16 v0, 0x1000
 
@@ -5259,7 +5148,6 @@
 
 .method public static isZhuyinToneKey([I)Z
     .locals 4
-    .param p0    # [I
 
     const/4 v0, 0x1
 
@@ -5312,7 +5200,6 @@
 
 .method public static varargs newInstance(Ljava/lang/reflect/Constructor;[Ljava/lang/Object;)Ljava/lang/Object;
     .locals 5
-    .param p1    # [Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -5443,7 +5330,6 @@
 
 .method public static toUpperCaseOfTurkish(I)I
     .locals 1
-    .param p0    # I
 
     const/16 v0, 0x69
 
@@ -5480,7 +5366,6 @@
 
 .method public static unicodeToUTF16(Ljava/lang/String;)Ljava/lang/String;
     .locals 14
-    .param p0    # Ljava/lang/String;
 
     const-string v0, ""
 

@@ -149,7 +149,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/accessibility/AccessibilityManagerService;I)V
     .locals 1
-    .param p2    # I
 
     iput-object p1, p0, Lcom/android/server/accessibility/AccessibilityManagerService$UserState;->this$0:Lcom/android/server/accessibility/AccessibilityManagerService;
 
@@ -236,7 +235,6 @@
 
 .method static synthetic access$1600(Lcom/android/server/accessibility/AccessibilityManagerService$UserState;)Landroid/os/IBinder$DeathRecipient;
     .locals 1
-    .param p0    # Lcom/android/server/accessibility/AccessibilityManagerService$UserState;
 
     iget-object v0, p0, Lcom/android/server/accessibility/AccessibilityManagerService$UserState;->mUiAutomationSerivceOnwerDeathRecipient:Landroid/os/IBinder$DeathRecipient;
 
@@ -245,7 +243,6 @@
 
 .method static synthetic access$1700(Lcom/android/server/accessibility/AccessibilityManagerService$UserState;)Landroid/os/IBinder;
     .locals 1
-    .param p0    # Lcom/android/server/accessibility/AccessibilityManagerService$UserState;
 
     iget-object v0, p0, Lcom/android/server/accessibility/AccessibilityManagerService$UserState;->mUiAutomationServiceOwner:Landroid/os/IBinder;
 
@@ -254,8 +251,6 @@
 
 .method static synthetic access$1702(Lcom/android/server/accessibility/AccessibilityManagerService$UserState;Landroid/os/IBinder;)Landroid/os/IBinder;
     .locals 0
-    .param p0    # Lcom/android/server/accessibility/AccessibilityManagerService$UserState;
-    .param p1    # Landroid/os/IBinder;
 
     iput-object p1, p0, Lcom/android/server/accessibility/AccessibilityManagerService$UserState;->mUiAutomationServiceOwner:Landroid/os/IBinder;
 
@@ -264,7 +259,6 @@
 
 .method static synthetic access$1800(Lcom/android/server/accessibility/AccessibilityManagerService$UserState;)Landroid/accessibilityservice/IAccessibilityServiceClient;
     .locals 1
-    .param p0    # Lcom/android/server/accessibility/AccessibilityManagerService$UserState;
 
     iget-object v0, p0, Lcom/android/server/accessibility/AccessibilityManagerService$UserState;->mUiAutomationServiceClient:Landroid/accessibilityservice/IAccessibilityServiceClient;
 
@@ -273,8 +267,6 @@
 
 .method static synthetic access$1802(Lcom/android/server/accessibility/AccessibilityManagerService$UserState;Landroid/accessibilityservice/IAccessibilityServiceClient;)Landroid/accessibilityservice/IAccessibilityServiceClient;
     .locals 0
-    .param p0    # Lcom/android/server/accessibility/AccessibilityManagerService$UserState;
-    .param p1    # Landroid/accessibilityservice/IAccessibilityServiceClient;
 
     iput-object p1, p0, Lcom/android/server/accessibility/AccessibilityManagerService$UserState;->mUiAutomationServiceClient:Landroid/accessibilityservice/IAccessibilityServiceClient;
 
@@ -283,7 +275,6 @@
 
 .method static synthetic access$4600(Lcom/android/server/accessibility/AccessibilityManagerService$UserState;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Lcom/android/server/accessibility/AccessibilityManagerService$UserState;
 
     iget-object v0, p0, Lcom/android/server/accessibility/AccessibilityManagerService$UserState;->mLock:Ljava/lang/Object;
 
@@ -292,7 +283,6 @@
 
 .method static synthetic access$800(Lcom/android/server/accessibility/AccessibilityManagerService$UserState;)Lcom/android/server/accessibility/AccessibilityManagerService$Service;
     .locals 1
-    .param p0    # Lcom/android/server/accessibility/AccessibilityManagerService$UserState;
 
     iget-object v0, p0, Lcom/android/server/accessibility/AccessibilityManagerService$UserState;->mUiAutomationService:Lcom/android/server/accessibility/AccessibilityManagerService$Service;
 
@@ -301,8 +291,6 @@
 
 .method static synthetic access$802(Lcom/android/server/accessibility/AccessibilityManagerService$UserState;Lcom/android/server/accessibility/AccessibilityManagerService$Service;)Lcom/android/server/accessibility/AccessibilityManagerService$Service;
     .locals 0
-    .param p0    # Lcom/android/server/accessibility/AccessibilityManagerService$UserState;
-    .param p1    # Lcom/android/server/accessibility/AccessibilityManagerService$Service;
 
     iput-object p1, p0, Lcom/android/server/accessibility/AccessibilityManagerService$UserState;->mUiAutomationService:Lcom/android/server/accessibility/AccessibilityManagerService$Service;
 

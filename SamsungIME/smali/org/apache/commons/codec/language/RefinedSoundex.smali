@@ -49,7 +49,6 @@
 
 .method public constructor <init>([C)V
     .locals 0
-    .param p1    # [C
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -62,8 +61,6 @@
 # virtual methods
 .method public difference(Ljava/lang/String;Ljava/lang/String;)I
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/commons/codec/EncoderException;
@@ -79,7 +76,6 @@
 
 .method public encode(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 2
-    .param p1    # Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/apache/commons/codec/EncoderException;
@@ -110,7 +106,6 @@
 
 .method public encode(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lorg/apache/commons/codec/language/RefinedSoundex;->soundex(Ljava/lang/String;)Ljava/lang/String;
 
@@ -121,7 +116,6 @@
 
 .method getMappingCode(C)C
     .locals 2
-    .param p1    # C
 
     invoke-static {p1}, Ljava/lang/Character;->isLetter(C)Z
 
@@ -150,7 +144,6 @@
 
 .method public soundex(Ljava/lang/String;)Ljava/lang/String;
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 

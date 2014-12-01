@@ -30,9 +30,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/launcher2/LauncherApplication;Lcom/android/launcher2/PkgResCache;Lcom/android/launcher2/BadgeCache;)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/LauncherApplication;
-    .param p2    # Lcom/android/launcher2/PkgResCache;
-    .param p3    # Lcom/android/launcher2/BadgeCache;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -61,8 +58,6 @@
 
 .method private isComponentActive(Landroid/content/ComponentName;[Landroid/content/pm/ComponentInfo;)Z
     .locals 8
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # [Landroid/content/pm/ComponentInfo;
 
     const/4 v0, 0x0
 
@@ -125,7 +120,6 @@
 
 .method private refreshShortcut(Lcom/android/launcher2/HomeItem;)Z
     .locals 7
-    .param p1    # Lcom/android/launcher2/HomeItem;
 
     move-object v2, p1
 
@@ -281,7 +275,6 @@
 # virtual methods
 .method public removePackage(Ljava/util/Map;Ljava/lang/String;Ljava/util/List;)V
     .locals 5
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -480,7 +473,6 @@
 
 .method public updatePackage(Ljava/util/Map;Ljava/lang/String;Ljava/util/List;Ljava/util/List;)V
     .locals 7
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -717,8 +709,6 @@
 
 .method public updatePackageAvailability(Ljava/util/Map;Ljava/lang/String;ZLjava/util/List;Ljava/util/List;)V
     .locals 7
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

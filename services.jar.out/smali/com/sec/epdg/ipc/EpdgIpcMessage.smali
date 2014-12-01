@@ -90,9 +90,6 @@
 
 .method public constructor <init>(III)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -107,8 +104,6 @@
 
 .method public constructor <init>([BI)V
     .locals 8
-    .param p1    # [B
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -304,7 +299,6 @@
 # virtual methods
 .method public dumpHex([B)Ljava/lang/String;
     .locals 8
-    .param p1    # [B
 
     const-string v1, ""
 
@@ -381,8 +375,6 @@
 
 .method public encodeGeneralResponse(ZLcom/sec/epdg/ipc/EpdgIpcMessage;)Z
     .locals 8
-    .param p1    # Z
-    .param p2    # Lcom/sec/epdg/ipc/EpdgIpcMessage;
 
     const/4 v7, 0x4
 

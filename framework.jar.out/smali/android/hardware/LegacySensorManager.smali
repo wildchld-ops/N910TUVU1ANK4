@@ -49,7 +49,6 @@
 
 .method public constructor <init>(Landroid/hardware/SensorManager;)V
     .locals 3
-    .param p1    # Landroid/hardware/SensorManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -152,7 +151,6 @@
 
 .method static onRotationChanged(I)V
     .locals 2
-    .param p0    # I
 
     const-class v1, Landroid/hardware/SensorManager;
 
@@ -177,11 +175,6 @@
 
 .method private registerLegacyListener(IILandroid/hardware/SensorListener;II)Z
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/hardware/SensorListener;
-    .param p4    # I
-    .param p5    # I
 
     const/4 v1, 0x0
 
@@ -256,10 +249,6 @@
 
 .method private unregisterLegacyListener(IILandroid/hardware/SensorListener;I)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/hardware/SensorListener;
-    .param p4    # I
 
     and-int v2, p4, p1
 
@@ -392,9 +381,6 @@
 
 .method public registerListener(Landroid/hardware/SensorListener;II)Z
     .locals 12
-    .param p1    # Landroid/hardware/SensorListener;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v11, 0x3
 
@@ -558,8 +544,6 @@
 
 .method public unregisterListener(Landroid/hardware/SensorListener;I)V
     .locals 4
-    .param p1    # Landroid/hardware/SensorListener;
-    .param p2    # I
 
     const/4 v3, 0x3
 

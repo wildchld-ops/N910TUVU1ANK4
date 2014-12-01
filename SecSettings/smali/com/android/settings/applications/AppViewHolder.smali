@@ -30,8 +30,6 @@
 
 .method public static createOrRecycle(Landroid/view/LayoutInflater;Landroid/view/View;)Lcom/android/settings/applications/AppViewHolder;
     .locals 3
-    .param p0    # Landroid/view/LayoutInflater;
-    .param p1    # Landroid/view/View;
 
     if-nez p1, :cond_0
 
@@ -120,8 +118,6 @@
 # virtual methods
 .method updateSizeText(Ljava/lang/CharSequence;I)V
     .locals 4
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/settings/applications/AppViewHolder;->entry:Lcom/android/settings/applications/ApplicationsState$AppEntry;
 

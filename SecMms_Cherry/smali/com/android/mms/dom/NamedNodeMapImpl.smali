@@ -50,7 +50,6 @@
 
 .method public getNamedItem(Ljava/lang/String;)Lorg/w3c/dom/Node;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -102,8 +101,6 @@
 
 .method public getNamedItemNS(Ljava/lang/String;Ljava/lang/String;)Lorg/w3c/dom/Node;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -112,7 +109,6 @@
 
 .method public item(I)Lorg/w3c/dom/Node;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/mms/dom/NamedNodeMapImpl;->mNodes:Ljava/util/Vector;
 
@@ -141,7 +137,6 @@
 
 .method public removeNamedItem(Ljava/lang/String;)Lorg/w3c/dom/Node;
     .locals 4
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;
@@ -174,8 +169,6 @@
 
 .method public removeNamedItemNS(Ljava/lang/String;Ljava/lang/String;)Lorg/w3c/dom/Node;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;
@@ -189,7 +182,6 @@
 
 .method public setNamedItem(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;
     .locals 2
-    .param p1    # Lorg/w3c/dom/Node;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;
@@ -220,7 +212,6 @@
 
 .method public setNamedItemNS(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;
     .locals 1
-    .param p1    # Lorg/w3c/dom/Node;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;

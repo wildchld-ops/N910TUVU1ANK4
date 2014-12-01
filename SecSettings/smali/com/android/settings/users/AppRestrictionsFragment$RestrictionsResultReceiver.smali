@@ -27,9 +27,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/settings/users/AppRestrictionsFragment;Ljava/lang/String;Lcom/android/settings/users/AppRestrictionsFragment$AppRestrictionsPreference;Z)V
     .locals 0
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/android/settings/users/AppRestrictionsFragment$AppRestrictionsPreference;
-    .param p4    # Z
 
     iput-object p1, p0, Lcom/android/settings/users/AppRestrictionsFragment$RestrictionsResultReceiver;->this$0:Lcom/android/settings/users/AppRestrictionsFragment;
 
@@ -48,8 +45,6 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 8
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     const/4 v4, 0x1
 

@@ -25,7 +25,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/WallpaperManagerService;I)V
     .locals 1
-    .param p2    # I
 
     iput-object p1, p0, Lcom/android/server/WallpaperManagerService$PersonaObserver;->this$0:Lcom/android/server/WallpaperManagerService;
 
@@ -46,8 +45,6 @@
 
 .method static synthetic access$702(Lcom/android/server/WallpaperManagerService$PersonaObserver;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/WallpaperManagerService$PersonaObserver;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/WallpaperManagerService$PersonaObserver;->kioskmode:Z
 
@@ -82,7 +79,6 @@
 
 .method public onKeyGuardStateChanged(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
@@ -169,8 +165,6 @@
 
 .method public onStateChange(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     return-void
 .end method

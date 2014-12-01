@@ -40,8 +40,6 @@
 # virtual methods
 .method public compare(Lcom/android/server/am/ActivityManagerService$MemItem;Lcom/android/server/am/ActivityManagerService$MemItem;)I
     .locals 4
-    .param p1    # Lcom/android/server/am/ActivityManagerService$MemItem;
-    .param p2    # Lcom/android/server/am/ActivityManagerService$MemItem;
 
     iget-wide v0, p1, Lcom/android/server/am/ActivityManagerService$MemItem;->pss:J
 
@@ -77,8 +75,6 @@
 
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p1, Lcom/android/server/am/ActivityManagerService$MemItem;
 

@@ -46,8 +46,6 @@
 # virtual methods
 .method public compare(Lcom/android/server/content/SyncManager$AccountSyncStats;Lcom/android/server/content/SyncManager$AccountSyncStats;)I
     .locals 5
-    .param p1    # Lcom/android/server/content/SyncManager$AccountSyncStats;
-    .param p2    # Lcom/android/server/content/SyncManager$AccountSyncStats;
 
     iget v1, p2, Lcom/android/server/content/SyncManager$AccountSyncStats;->times:I
 
@@ -73,8 +71,6 @@
 
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p1, Lcom/android/server/content/SyncManager$AccountSyncStats;
 

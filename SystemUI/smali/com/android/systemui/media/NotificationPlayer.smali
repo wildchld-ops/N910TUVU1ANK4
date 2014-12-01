@@ -74,7 +74,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -129,7 +128,6 @@
 
 .method static synthetic access$000(Lcom/android/systemui/media/NotificationPlayer;)Landroid/os/Looper;
     .locals 1
-    .param p0    # Lcom/android/systemui/media/NotificationPlayer;
 
     iget-object v0, p0, Lcom/android/systemui/media/NotificationPlayer;->mLooper:Landroid/os/Looper;
 
@@ -138,8 +136,6 @@
 
 .method static synthetic access$002(Lcom/android/systemui/media/NotificationPlayer;Landroid/os/Looper;)Landroid/os/Looper;
     .locals 0
-    .param p0    # Lcom/android/systemui/media/NotificationPlayer;
-    .param p1    # Landroid/os/Looper;
 
     iput-object p1, p0, Lcom/android/systemui/media/NotificationPlayer;->mLooper:Landroid/os/Looper;
 
@@ -148,7 +144,6 @@
 
 .method static synthetic access$100(Lcom/android/systemui/media/NotificationPlayer;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/systemui/media/NotificationPlayer;
 
     iget-object v0, p0, Lcom/android/systemui/media/NotificationPlayer;->mTag:Ljava/lang/String;
 
@@ -157,7 +152,6 @@
 
 .method static synthetic access$200(Lcom/android/systemui/media/NotificationPlayer;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Lcom/android/systemui/media/NotificationPlayer;
 
     iget-object v0, p0, Lcom/android/systemui/media/NotificationPlayer;->mQueueAudioFocusLock:Ljava/lang/Object;
 
@@ -166,7 +160,6 @@
 
 .method static synthetic access$300(Lcom/android/systemui/media/NotificationPlayer;)Landroid/media/AudioManager;
     .locals 1
-    .param p0    # Lcom/android/systemui/media/NotificationPlayer;
 
     iget-object v0, p0, Lcom/android/systemui/media/NotificationPlayer;->mAudioManagerWithAudioFocus:Landroid/media/AudioManager;
 
@@ -175,8 +168,6 @@
 
 .method static synthetic access$302(Lcom/android/systemui/media/NotificationPlayer;Landroid/media/AudioManager;)Landroid/media/AudioManager;
     .locals 0
-    .param p0    # Lcom/android/systemui/media/NotificationPlayer;
-    .param p1    # Landroid/media/AudioManager;
 
     iput-object p1, p0, Lcom/android/systemui/media/NotificationPlayer;->mAudioManagerWithAudioFocus:Landroid/media/AudioManager;
 
@@ -185,7 +176,6 @@
 
 .method static synthetic access$400(Lcom/android/systemui/media/NotificationPlayer;)Landroid/media/MediaPlayer;
     .locals 1
-    .param p0    # Lcom/android/systemui/media/NotificationPlayer;
 
     iget-object v0, p0, Lcom/android/systemui/media/NotificationPlayer;->mPlayer:Landroid/media/MediaPlayer;
 
@@ -194,8 +184,6 @@
 
 .method static synthetic access$402(Lcom/android/systemui/media/NotificationPlayer;Landroid/media/MediaPlayer;)Landroid/media/MediaPlayer;
     .locals 0
-    .param p0    # Lcom/android/systemui/media/NotificationPlayer;
-    .param p1    # Landroid/media/MediaPlayer;
 
     iput-object p1, p0, Lcom/android/systemui/media/NotificationPlayer;->mPlayer:Landroid/media/MediaPlayer;
 
@@ -204,7 +192,6 @@
 
 .method static synthetic access$500(Lcom/android/systemui/media/NotificationPlayer;)Ljava/util/LinkedList;
     .locals 1
-    .param p0    # Lcom/android/systemui/media/NotificationPlayer;
 
     iget-object v0, p0, Lcom/android/systemui/media/NotificationPlayer;->mCmdQueue:Ljava/util/LinkedList;
 
@@ -213,8 +200,6 @@
 
 .method static synthetic access$600(Lcom/android/systemui/media/NotificationPlayer;Lcom/android/systemui/media/NotificationPlayer$Command;)V
     .locals 0
-    .param p0    # Lcom/android/systemui/media/NotificationPlayer;
-    .param p1    # Lcom/android/systemui/media/NotificationPlayer$Command;
 
     invoke-direct {p0, p1}, Lcom/android/systemui/media/NotificationPlayer;->startSound(Lcom/android/systemui/media/NotificationPlayer$Command;)V
 
@@ -223,8 +208,6 @@
 
 .method static synthetic access$702(Lcom/android/systemui/media/NotificationPlayer;Lcom/android/systemui/media/NotificationPlayer$CmdThread;)Lcom/android/systemui/media/NotificationPlayer$CmdThread;
     .locals 0
-    .param p0    # Lcom/android/systemui/media/NotificationPlayer;
-    .param p1    # Lcom/android/systemui/media/NotificationPlayer$CmdThread;
 
     iput-object p1, p0, Lcom/android/systemui/media/NotificationPlayer;->mThread:Lcom/android/systemui/media/NotificationPlayer$CmdThread;
 
@@ -233,7 +216,6 @@
 
 .method static synthetic access$800(Lcom/android/systemui/media/NotificationPlayer;)V
     .locals 0
-    .param p0    # Lcom/android/systemui/media/NotificationPlayer;
 
     invoke-direct {p0}, Lcom/android/systemui/media/NotificationPlayer;->releaseWakeLock()V
 
@@ -257,7 +239,6 @@
 
 .method private enqueueLocked(Lcom/android/systemui/media/NotificationPlayer$Command;)V
     .locals 1
-    .param p1    # Lcom/android/systemui/media/NotificationPlayer$Command;
 
     iget-object v0, p0, Lcom/android/systemui/media/NotificationPlayer;->mCmdQueue:Ljava/util/LinkedList;
 
@@ -300,7 +281,6 @@
 
 .method private startSound(Lcom/android/systemui/media/NotificationPlayer$Command;)V
     .locals 7
-    .param p1    # Lcom/android/systemui/media/NotificationPlayer$Command;
 
     :try_start_0
     iget-object v4, p0, Lcom/android/systemui/media/NotificationPlayer;->mCompletionHandlingLock:Ljava/lang/Object;
@@ -469,7 +449,6 @@
 # virtual methods
 .method public onCompletion(Landroid/media/MediaPlayer;)V
     .locals 5
-    .param p1    # Landroid/media/MediaPlayer;
 
     iget-object v3, p0, Lcom/android/systemui/media/NotificationPlayer;->mQueueAudioFocusLock:Ljava/lang/Object;
 
@@ -603,10 +582,6 @@
 
 .method public play(Landroid/content/Context;Landroid/net/Uri;ZI)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/net/Uri;
-    .param p3    # Z
-    .param p4    # I
 
     const/4 v3, 0x1
 
@@ -659,7 +634,6 @@
 
 .method public setOnCompletionListener(Landroid/app/INotificationPlayerOnCompletionListener;)Landroid/os/IBinder;
     .locals 1
-    .param p1    # Landroid/app/INotificationPlayerOnCompletionListener;
 
     iget-object v0, p0, Lcom/android/systemui/media/NotificationPlayer;->mOnCompletionListener:Ljava/util/Vector;
 
@@ -672,7 +646,6 @@
 
 .method public setUsesWakeLock(Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     iget-object v1, p0, Lcom/android/systemui/media/NotificationPlayer;->mWakeLock:Landroid/os/PowerManager$WakeLock;
 

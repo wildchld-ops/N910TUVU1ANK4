@@ -118,7 +118,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/applications/ManageApplications;)I
     .locals 1
-    .param p0    # Lcom/android/settings/applications/ManageApplications;
 
     iget v0, p0, Lcom/android/settings/applications/ManageApplications;->mNumTabs:I
 
@@ -127,7 +126,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/applications/ManageApplications;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/settings/applications/ManageApplications;
 
     iget-object v0, p0, Lcom/android/settings/applications/ManageApplications;->mTabs:Ljava/util/ArrayList;
 
@@ -136,7 +134,6 @@
 
 .method static synthetic access$1000(Lcom/android/settings/applications/ManageApplications;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/settings/applications/ManageApplications;
 
     iget-object v0, p0, Lcom/android/settings/applications/ManageApplications;->mCurrentPkgName:Ljava/lang/String;
 
@@ -145,7 +142,6 @@
 
 .method static synthetic access$1200(Lcom/android/settings/applications/ManageApplications;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/applications/ManageApplications;
 
     iget-boolean v0, p0, Lcom/android/settings/applications/ManageApplications;->mActivityResumed:Z
 
@@ -154,7 +150,6 @@
 
 .method static synthetic access$1300(Lcom/android/settings/applications/ManageApplications;)I
     .locals 1
-    .param p0    # Lcom/android/settings/applications/ManageApplications;
 
     iget v0, p0, Lcom/android/settings/applications/ManageApplications;->mSortOrder:I
 
@@ -163,7 +158,6 @@
 
 .method static synthetic access$1400(Lcom/android/settings/applications/ManageApplications;)Lcom/android/internal/app/IMediaContainerService;
     .locals 1
-    .param p0    # Lcom/android/settings/applications/ManageApplications;
 
     iget-object v0, p0, Lcom/android/settings/applications/ManageApplications;->mContainerService:Lcom/android/internal/app/IMediaContainerService;
 
@@ -172,8 +166,6 @@
 
 .method static synthetic access$1402(Lcom/android/settings/applications/ManageApplications;Lcom/android/internal/app/IMediaContainerService;)Lcom/android/internal/app/IMediaContainerService;
     .locals 0
-    .param p0    # Lcom/android/settings/applications/ManageApplications;
-    .param p1    # Lcom/android/internal/app/IMediaContainerService;
 
     iput-object p1, p0, Lcom/android/settings/applications/ManageApplications;->mContainerService:Lcom/android/internal/app/IMediaContainerService;
 
@@ -182,7 +174,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/applications/ManageApplications;)Landroid/view/LayoutInflater;
     .locals 1
-    .param p0    # Lcom/android/settings/applications/ManageApplications;
 
     iget-object v0, p0, Lcom/android/settings/applications/ManageApplications;->mInflater:Landroid/view/LayoutInflater;
 
@@ -191,7 +182,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/applications/ManageApplications;)Landroid/view/ViewGroup;
     .locals 1
-    .param p0    # Lcom/android/settings/applications/ManageApplications;
 
     iget-object v0, p0, Lcom/android/settings/applications/ManageApplications;->mContentContainer:Landroid/view/ViewGroup;
 
@@ -200,7 +190,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/applications/ManageApplications;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/settings/applications/ManageApplications;
 
     iget-object v0, p0, Lcom/android/settings/applications/ManageApplications;->mRootView:Landroid/view/View;
 
@@ -347,9 +336,6 @@
 
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const/4 v0, 0x1
 
@@ -371,8 +357,6 @@
 
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 8
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/settings/applications/ManageApplications;->mResetDialog:Landroid/app/AlertDialog;
 
@@ -951,8 +935,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
     .locals 8
-    .param p1    # Landroid/view/Menu;
-    .param p2    # Landroid/view/MenuInflater;
 
     const/4 v7, 0x4
 
@@ -1123,9 +1105,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 9
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const/4 v8, 0x1
 
@@ -1341,7 +1320,6 @@
 
 .method public onDismiss(Landroid/content/DialogInterface;)V
     .locals 1
-    .param p1    # Landroid/content/DialogInterface;
 
     iget-object v0, p0, Lcom/android/settings/applications/ManageApplications;->mResetDialog:Landroid/app/AlertDialog;
 
@@ -1357,10 +1335,6 @@
 
 .method public onItemClick(Lcom/android/settings/applications/ManageApplications$TabInfo;Landroid/widget/AdapterView;Landroid/view/View;IJ)V
     .locals 2
-    .param p1    # Lcom/android/settings/applications/ManageApplications$TabInfo;
-    .param p3    # Landroid/view/View;
-    .param p4    # I
-    .param p5    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1404,7 +1378,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 5
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v3, 0x1
 
@@ -1625,7 +1598,6 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)V
     .locals 0
-    .param p1    # Landroid/view/Menu;
 
     invoke-virtual {p0}, Lcom/android/settings/applications/ManageApplications;->updateOptionsMenu()V
 
@@ -1658,7 +1630,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onSaveInstanceState(Landroid/os/Bundle;)V
 
@@ -1719,7 +1690,6 @@
 
 .method tabForType(I)Lcom/android/settings/applications/ManageApplications$TabInfo;
     .locals 3
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -1760,7 +1730,6 @@
 
 .method public updateCurrentTab(I)V
     .locals 8
-    .param p1    # I
 
     iget-object v4, p0, Lcom/android/settings/applications/ManageApplications;->mTabs:Ljava/util/ArrayList;
 

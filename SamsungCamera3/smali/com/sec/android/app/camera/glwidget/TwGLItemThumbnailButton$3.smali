@@ -36,8 +36,6 @@
 # virtual methods
 .method public onFocusChanged(Lcom/sec/android/glview/TwGLView;I)Z
     .locals 1
-    .param p1    # Lcom/sec/android/glview/TwGLView;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLItemThumbnailButton$3;->this$0:Lcom/sec/android/app/camera/glwidget/TwGLItemThumbnailButton;
 

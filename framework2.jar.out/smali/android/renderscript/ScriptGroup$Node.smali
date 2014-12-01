@@ -58,7 +58,6 @@
 # direct methods
 .method constructor <init>(Landroid/renderscript/Script;)V
     .locals 1
-    .param p1    # Landroid/renderscript/Script;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

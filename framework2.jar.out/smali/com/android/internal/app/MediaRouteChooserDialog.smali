@@ -35,8 +35,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;I)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Landroid/app/Dialog;-><init>(Landroid/content/Context;I)V
 
@@ -63,7 +61,6 @@
 
 .method static synthetic access$100(Lcom/android/internal/app/MediaRouteChooserDialog;)Landroid/media/MediaRouter;
     .locals 1
-    .param p0    # Lcom/android/internal/app/MediaRouteChooserDialog;
 
     iget-object v0, p0, Lcom/android/internal/app/MediaRouteChooserDialog;->mRouter:Landroid/media/MediaRouter;
 
@@ -137,7 +134,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v2, 0x3
 
@@ -254,7 +250,6 @@
 
 .method public onFilterRoute(Landroid/media/MediaRouter$RouteInfo;)Z
     .locals 1
-    .param p1    # Landroid/media/MediaRouter$RouteInfo;
 
     invoke-virtual {p1}, Landroid/media/MediaRouter$RouteInfo;->isDefault()Z
 
@@ -304,7 +299,6 @@
 
 .method public setExtendedSettingsClickListener(Landroid/view/View$OnClickListener;)V
     .locals 1
-    .param p1    # Landroid/view/View$OnClickListener;
 
     iget-object v0, p0, Lcom/android/internal/app/MediaRouteChooserDialog;->mExtendedSettingsClickListener:Landroid/view/View$OnClickListener;
 
@@ -320,7 +314,6 @@
 
 .method public setRouteTypes(I)V
     .locals 3
-    .param p1    # I
 
     iget v0, p0, Lcom/android/internal/app/MediaRouteChooserDialog;->mRouteTypes:I
 

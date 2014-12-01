@@ -121,7 +121,6 @@
 
 .method public setBreadCrumbShortTitle(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/settings/AccountMenu$FragContainer;->mBreadCrumbShortTitle:Ljava/lang/String;
 
@@ -130,7 +129,6 @@
 
 .method public setBreadCrumbShortTitleRes(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/settings/AccountMenu$FragContainer;->mBreadCrumbShortTitleRes:I
 
@@ -139,7 +137,6 @@
 
 .method public setBreadCrumbTitle(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/settings/AccountMenu$FragContainer;->mBreadCrumbTitle:Ljava/lang/String;
 
@@ -148,7 +145,6 @@
 
 .method public setBreadCrumbTitleRes(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/settings/AccountMenu$FragContainer;->mBreadCrumbTitleRes:I
 
@@ -157,7 +153,6 @@
 
 .method public setId(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/settings/AccountMenu$FragContainer;->mId:Ljava/lang/String;
 
@@ -166,7 +161,6 @@
 
 .method public setTagetFragmentName(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/settings/AccountMenu$FragContainer;->mFragmentName:Ljava/lang/String;
 

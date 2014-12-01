@@ -35,8 +35,6 @@
 # direct methods
 .method constructor <init>(Landroid/app/backup/RestoreSession;Landroid/content/Context;Landroid/app/backup/RestoreObserver;)V
     .locals 2
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/app/backup/RestoreObserver;
 
     iput-object p1, p0, Landroid/app/backup/RestoreSession$RestoreObserverWrapper;->this$0:Landroid/app/backup/RestoreSession;
 
@@ -61,8 +59,6 @@
 # virtual methods
 .method public onUpdate(ILjava/lang/String;)V
     .locals 4
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/app/backup/RestoreSession$RestoreObserverWrapper;->mHandler:Landroid/os/Handler;
 
@@ -83,7 +79,6 @@
 
 .method public restoreFinished(I)V
     .locals 4
-    .param p1    # I
 
     iget-object v0, p0, Landroid/app/backup/RestoreSession$RestoreObserverWrapper;->mHandler:Landroid/os/Handler;
 
@@ -104,7 +99,6 @@
 
 .method public restoreSetsAvailable([Landroid/app/backup/RestoreSet;)V
     .locals 3
-    .param p1    # [Landroid/app/backup/RestoreSet;
 
     iget-object v0, p0, Landroid/app/backup/RestoreSession$RestoreObserverWrapper;->mHandler:Landroid/os/Handler;
 
@@ -123,7 +117,6 @@
 
 .method public restoreStarting(I)V
     .locals 4
-    .param p1    # I
 
     iget-object v0, p0, Landroid/app/backup/RestoreSession$RestoreObserverWrapper;->mHandler:Landroid/os/Handler;
 

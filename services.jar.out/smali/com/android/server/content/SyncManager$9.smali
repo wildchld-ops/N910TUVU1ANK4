@@ -46,9 +46,6 @@
 # virtual methods
 .method public onServiceChanged(Landroid/content/SyncAdapterType;IZ)V
     .locals 11
-    .param p1    # Landroid/content/SyncAdapterType;
-    .param p2    # I
-    .param p3    # Z
 
     const-wide/16 v6, 0x0
 
@@ -78,9 +75,6 @@
 
 .method public bridge synthetic onServiceChanged(Ljava/lang/Object;IZ)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
-    .param p2    # I
-    .param p3    # Z
 
     check-cast p1, Landroid/content/SyncAdapterType;
 

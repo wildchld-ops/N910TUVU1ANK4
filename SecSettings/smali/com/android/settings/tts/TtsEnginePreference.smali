@@ -32,10 +32,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/speech/tts/TextToSpeech$EngineInfo;Lcom/android/settings/tts/TtsEnginePreference$RadioButtonGroupState;Landroid/preference/PreferenceActivity;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/speech/tts/TextToSpeech$EngineInfo;
-    .param p3    # Lcom/android/settings/tts/TtsEnginePreference$RadioButtonGroupState;
-    .param p4    # Landroid/preference/PreferenceActivity;
 
     invoke-direct {p0, p1}, Landroid/preference/Preference;-><init>(Landroid/content/Context;)V
 
@@ -76,9 +72,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/tts/TtsEnginePreference;Landroid/widget/CompoundButton;Z)V
     .locals 0
-    .param p0    # Lcom/android/settings/tts/TtsEnginePreference;
-    .param p1    # Landroid/widget/CompoundButton;
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/settings/tts/TtsEnginePreference;->onRadioButtonClicked(Landroid/widget/CompoundButton;Z)V
 
@@ -87,7 +80,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/tts/TtsEnginePreference;)Landroid/speech/tts/TextToSpeech$EngineInfo;
     .locals 1
-    .param p0    # Lcom/android/settings/tts/TtsEnginePreference;
 
     iget-object v0, p0, Lcom/android/settings/tts/TtsEnginePreference;->mEngineInfo:Landroid/speech/tts/TextToSpeech$EngineInfo;
 
@@ -96,7 +88,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/tts/TtsEnginePreference;)Landroid/content/Intent;
     .locals 1
-    .param p0    # Lcom/android/settings/tts/TtsEnginePreference;
 
     iget-object v0, p0, Lcom/android/settings/tts/TtsEnginePreference;->mVoiceCheckData:Landroid/content/Intent;
 
@@ -105,7 +96,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/tts/TtsEnginePreference;)Landroid/preference/PreferenceActivity;
     .locals 1
-    .param p0    # Lcom/android/settings/tts/TtsEnginePreference;
 
     iget-object v0, p0, Lcom/android/settings/tts/TtsEnginePreference;->mPreferenceActivity:Landroid/preference/PreferenceActivity;
 
@@ -114,8 +104,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/tts/TtsEnginePreference;Landroid/widget/Checkable;)V
     .locals 0
-    .param p0    # Lcom/android/settings/tts/TtsEnginePreference;
-    .param p1    # Landroid/widget/Checkable;
 
     invoke-direct {p0, p1}, Lcom/android/settings/tts/TtsEnginePreference;->makeCurrentEngine(Landroid/widget/Checkable;)V
 
@@ -124,8 +112,6 @@
 
 .method private displayDataAlert(Landroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnClickListener;)V
     .locals 8
-    .param p1    # Landroid/content/DialogInterface$OnClickListener;
-    .param p2    # Landroid/content/DialogInterface$OnClickListener;
 
     const/4 v7, 0x1
 
@@ -210,7 +196,6 @@
 
 .method private makeCurrentEngine(Landroid/widget/Checkable;)V
     .locals 2
-    .param p1    # Landroid/widget/Checkable;
 
     iget-object v0, p0, Lcom/android/settings/tts/TtsEnginePreference;->mSharedState:Lcom/android/settings/tts/TtsEnginePreference$RadioButtonGroupState;
 
@@ -262,8 +247,6 @@
 
 .method private onRadioButtonClicked(Landroid/widget/CompoundButton;Z)V
     .locals 2
-    .param p1    # Landroid/widget/CompoundButton;
-    .param p2    # Z
 
     iget-boolean v0, p0, Lcom/android/settings/tts/TtsEnginePreference;->mPreventRadioButtonCallbacks:Z
 
@@ -341,8 +324,6 @@
 # virtual methods
 .method public getView(Landroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 9
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/ViewGroup;
 
     const/4 v5, 0x1
 
@@ -499,7 +480,6 @@
 
 .method public setVoiceDataDetails(Landroid/content/Intent;)V
     .locals 2
-    .param p1    # Landroid/content/Intent;
 
     iput-object p1, p0, Lcom/android/settings/tts/TtsEnginePreference;->mVoiceCheckData:Landroid/content/Intent;
 

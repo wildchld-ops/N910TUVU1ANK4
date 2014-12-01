@@ -195,7 +195,6 @@
 # virtual methods
 .method public getData(Lcom/diotek/ime/framework/repository/FastRepository$KeyIntFR;)I
     .locals 3
-    .param p1    # Lcom/diotek/ime/framework/repository/FastRepository$KeyIntFR;
 
     const/4 v0, 0x0
 
@@ -217,7 +216,6 @@
 
 .method public getData(Lcom/diotek/ime/framework/repository/FastRepository$KeyStringFR;)Ljava/lang/String;
     .locals 3
-    .param p1    # Lcom/diotek/ime/framework/repository/FastRepository$KeyStringFR;
 
     const-string v0, ""
 
@@ -239,7 +237,6 @@
 
 .method public getData(Lcom/diotek/ime/framework/repository/FastRepository$KeyBooleanFR;)Z
     .locals 3
-    .param p1    # Lcom/diotek/ime/framework/repository/FastRepository$KeyBooleanFR;
 
     const/4 v0, 0x0
 
@@ -261,8 +258,6 @@
 
 .method public setData(Lcom/diotek/ime/framework/repository/FastRepository$KeyBooleanFR;Z)V
     .locals 2
-    .param p1    # Lcom/diotek/ime/framework/repository/FastRepository$KeyBooleanFR;
-    .param p2    # Z
 
     iget-object v0, p0, Lcom/diotek/ime/framework/repository/FastRepository;->mBooleanArray:[Z
 
@@ -282,8 +277,6 @@
 
 .method public setData(Lcom/diotek/ime/framework/repository/FastRepository$KeyIntFR;I)V
     .locals 2
-    .param p1    # Lcom/diotek/ime/framework/repository/FastRepository$KeyIntFR;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/diotek/ime/framework/repository/FastRepository;->mIntegerArray:[I
 
@@ -303,8 +296,6 @@
 
 .method public setData(Lcom/diotek/ime/framework/repository/FastRepository$KeyStringFR;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Lcom/diotek/ime/framework/repository/FastRepository$KeyStringFR;
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/repository/FastRepository;->mStringArray:[Ljava/lang/String;
 

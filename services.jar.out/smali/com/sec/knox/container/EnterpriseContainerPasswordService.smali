@@ -107,7 +107,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -158,9 +157,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Lcom/sec/knox/container/EnterpriseContainerService;Lcom/sec/knox/container/manager/StateManager;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/sec/knox/container/EnterpriseContainerService;
-    .param p3    # Lcom/sec/knox/container/manager/StateManager;
 
     invoke-direct {p0, p1}, Lcom/sec/knox/container/EnterpriseContainerPasswordService;-><init>(Landroid/content/Context;)V
 
@@ -173,7 +169,6 @@
 
 .method private cancelPasswordExpirationAlarm(I)V
     .locals 8
-    .param p1    # I
 
     invoke-static {}, Landroid/os/Binder;->clearCallingIdentity()J
 
@@ -250,8 +245,6 @@
 
 .method private computeLevenshteinDistance(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)I
     .locals 9
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Ljava/lang/CharSequence;
 
     const/4 v4, 0x0
 
@@ -420,9 +413,6 @@
 
 .method private containsForbiddenStringDistance(ILjava/lang/String;Ljava/lang/String;)Z
     .locals 5
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -487,7 +477,6 @@
 
 .method private findAdmin(Landroid/content/ComponentName;)Landroid/app/admin/DeviceAdminInfo;
     .locals 7
-    .param p1    # Landroid/content/ComponentName;
 
     const/4 v5, 0x0
 
@@ -627,8 +616,6 @@
 
 .method private getCurrentPasswordHash(Ljava/lang/String;Ljava/lang/String;)[B
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v6, 0x0
 
@@ -942,8 +929,6 @@
 
 .method private getLong(Ljava/lang/String;J)J
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
 
     iget-object v0, p0, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->mContentResolver:Landroid/content/ContentResolver;
 
@@ -1013,7 +998,6 @@
 
 .method private passwordToHash(Ljava/lang/String;)[B
     .locals 14
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -1187,7 +1171,6 @@
 
 .method private passwordToHashOriginal(Ljava/lang/String;)[B
     .locals 9
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -1308,8 +1291,6 @@
 
 .method private removeContainerCredentialFiles(ILjava/lang/String;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     :try_start_0
     new-instance v1, Ljava/io/File;
@@ -1432,9 +1413,6 @@
 
 .method private sendAdminCommandLocked(ILandroid/app/admin/DeviceAdminInfo;Ljava/lang/String;)V
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/app/admin/DeviceAdminInfo;
-    .param p3    # Ljava/lang/String;
 
     new-instance v0, Landroid/content/Intent;
 
@@ -1474,19 +1452,6 @@
 
 .method private setActivePasswordState(IIIIIIIIIZIII)V
     .locals 14
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
-    .param p9    # I
-    .param p10    # Z
-    .param p11    # I
-    .param p12    # I
-    .param p13    # I
 
     iget-object v0, p0, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->mEcppStorageProvider:Lcom/sec/knox/container/contentprovider/EcppStorageProvider;
 
@@ -1523,8 +1488,6 @@
 
 .method private setLong(Ljava/lang/String;J)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
 
     iget-object v0, p0, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->mContentResolver:Landroid/content/ContentResolver;
 
@@ -1535,8 +1498,6 @@
 
 .method private setOldPasswordToHistory(I[B)V
     .locals 2
-    .param p1    # I
-    .param p2    # [B
 
     sget-object v0, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->TAG:Ljava/lang/String;
 
@@ -1582,19 +1543,6 @@
 
 .method private setPasswordStateInfoCache(IIIIIIIIIZIII)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
-    .param p9    # I
-    .param p10    # Z
-    .param p11    # I
-    .param p12    # I
-    .param p13    # I
 
     new-instance v0, Lcom/sec/knox/container/contentprovider/ContainerPasswordStateInfo;
 
@@ -1638,8 +1586,6 @@
 
 .method private declared-synchronized setPasswordStatusInActive(Landroid/content/Context;I)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     monitor-enter p0
 
@@ -1768,9 +1714,6 @@
 
 .method private storeHashofData(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -2039,8 +1982,6 @@
 
 .method private storePassword(ILjava/lang/String;)V
     .locals 33
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     if-nez p2, :cond_0
 
@@ -2382,7 +2323,6 @@
 
 .method private static toHex([B)Ljava/lang/String;
     .locals 6
-    .param p0    # [B
 
     const-string v0, "0123456789ABCDEF"
 
@@ -2459,9 +2399,6 @@
 
 .method private verifyStoredData(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -2809,8 +2746,6 @@
 # virtual methods
 .method public checkMaximumCharacterOccurrences(ILjava/lang/String;)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->getKnoxPasswordPolicy(I)Lcom/sec/enterprise/knox/ContainerPasswordPolicy;
 
@@ -2864,8 +2799,6 @@
 
 .method public checkMaximumCharacterSequenceLength(ILjava/lang/String;)Z
     .locals 12
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->getKnoxPasswordPolicy(I)Lcom/sec/enterprise/knox/ContainerPasswordPolicy;
 
@@ -3059,8 +2992,6 @@
 
 .method public checkMaximumNumericSequenceLength(ILjava/lang/String;)Z
     .locals 12
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->getKnoxPasswordPolicy(I)Lcom/sec/enterprise/knox/ContainerPasswordPolicy;
 
@@ -3254,9 +3185,6 @@
 
 .method public checkMinimumCharacterChangeLength(ILjava/lang/String;Ljava/lang/String;)Z
     .locals 2
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     sget-object v0, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->TAG:Ljava/lang/String;
 
@@ -3273,8 +3201,6 @@
 
 .method public checkOldPasswordHistory(ILjava/lang/String;)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -3339,7 +3265,6 @@
 
 .method public checkRepeatingChars(Ljava/lang/String;)Z
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x1
 
@@ -3426,7 +3351,6 @@
 
 .method public checkSequentialChars(Ljava/lang/String;)Z
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x1
 
@@ -3550,7 +3474,6 @@
 
 .method public executeTimeout(I)V
     .locals 5
-    .param p1    # I
 
     sget-object v2, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->TAG:Ljava/lang/String;
 
@@ -3631,8 +3554,6 @@
 
 .method public getAllowBluetoothMode(ILandroid/content/ComponentName;)I
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
 
     iget-object v0, p0, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->mEcppStorageProvider:Lcom/sec/knox/container/contentprovider/EcppStorageProvider;
 
@@ -3655,8 +3576,6 @@
 
 .method public getAllowBrowser(ILandroid/content/ComponentName;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
 
     iget-object v0, p0, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->mEcppStorageProvider:Lcom/sec/knox/container/contentprovider/EcppStorageProvider;
 
@@ -3679,8 +3598,6 @@
 
 .method public getAllowCamera(ILandroid/content/ComponentName;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
 
     iget-object v0, p0, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->mEcppStorageProvider:Lcom/sec/knox/container/contentprovider/EcppStorageProvider;
 
@@ -3703,8 +3620,6 @@
 
 .method public getAllowDesktopSync(ILandroid/content/ComponentName;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
 
     iget-object v0, p0, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->mEcppStorageProvider:Lcom/sec/knox/container/contentprovider/EcppStorageProvider;
 
@@ -3727,8 +3642,6 @@
 
 .method public getAllowInternetSharing(ILandroid/content/ComponentName;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
 
     iget-object v0, p0, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->mEcppStorageProvider:Lcom/sec/knox/container/contentprovider/EcppStorageProvider;
 
@@ -3751,8 +3664,6 @@
 
 .method public getAllowIrDA(ILandroid/content/ComponentName;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
 
     iget-object v0, p0, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->mEcppStorageProvider:Lcom/sec/knox/container/contentprovider/EcppStorageProvider;
 
@@ -3775,8 +3686,6 @@
 
 .method public getAllowPOPIMAPEmail(ILandroid/content/ComponentName;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
 
     iget-object v0, p0, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->mEcppStorageProvider:Lcom/sec/knox/container/contentprovider/EcppStorageProvider;
 
@@ -3799,8 +3708,6 @@
 
 .method public getAllowStorageCard(ILandroid/content/ComponentName;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
 
     iget-object v0, p0, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->mEcppStorageProvider:Lcom/sec/knox/container/contentprovider/EcppStorageProvider;
 
@@ -3823,8 +3730,6 @@
 
 .method public getAllowTextMessaging(ILandroid/content/ComponentName;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
 
     iget-object v0, p0, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->mEcppStorageProvider:Lcom/sec/knox/container/contentprovider/EcppStorageProvider;
 
@@ -3847,8 +3752,6 @@
 
 .method public getAllowWifi(ILandroid/content/ComponentName;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
 
     iget-object v0, p0, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->mEcppStorageProvider:Lcom/sec/knox/container/contentprovider/EcppStorageProvider;
 
@@ -3871,7 +3774,6 @@
 
 .method public getCurrentFailedPasswordAttempts(I)I
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->mStateManager:Lcom/sec/knox/container/manager/StateManager;
 
@@ -3884,7 +3786,6 @@
 
 .method public getKnoxPasswordPolicy(I)Lcom/sec/enterprise/knox/ContainerPasswordPolicy;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->mKEDM:Lcom/sec/enterprise/knox/EnterpriseKnoxManager;
 
@@ -3919,7 +3820,6 @@
 
 .method public getMaximumCharOccurrencesCount(Ljava/lang/String;)I
     .locals 10
-    .param p1    # Ljava/lang/String;
 
     sget-object v8, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->TAG:Ljava/lang/String;
 
@@ -4015,8 +3915,6 @@
 
 .method public getMaximumFailedPasswordsForDisable(ILandroid/content/ComponentName;)I
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
 
     iget-object v1, p0, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->mEcppStorageProvider:Lcom/sec/knox/container/contentprovider/EcppStorageProvider;
 
@@ -4069,8 +3967,6 @@
 
 .method public getMaximumFailedPasswordsForWipe(ILandroid/content/ComponentName;)I
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
 
     iget-object v1, p0, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->mEcppStorageProvider:Lcom/sec/knox/container/contentprovider/EcppStorageProvider;
 
@@ -4123,8 +4019,6 @@
 
 .method public getMaximumTimeToLock(ILandroid/content/ComponentName;)J
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
 
     sget-object v2, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->TAG:Ljava/lang/String;
 
@@ -4203,8 +4097,6 @@
 
 .method public getMinPasswordComplexChars(ILandroid/content/ComponentName;)I
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
 
     invoke-virtual {p0, p1, p2}, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->getPasswordMinimumSymbols(ILandroid/content/ComponentName;)I
 
@@ -4215,8 +4107,6 @@
 
 .method public getPasswordEnabledContainerLockTimeout(ILandroid/content/ComponentName;)J
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
 
     const-wide/16 v2, 0x0
 
@@ -4293,8 +4183,6 @@
 
 .method public getPasswordExpiration(ILandroid/content/ComponentName;)J
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
 
     iget-object v0, p0, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->mEcppStorageProvider:Lcom/sec/knox/container/contentprovider/EcppStorageProvider;
 
@@ -4317,8 +4205,6 @@
 
 .method public getPasswordExpirationTimeout(ILandroid/content/ComponentName;)J
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
 
     iget-object v0, p0, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->mEcppStorageProvider:Lcom/sec/knox/container/contentprovider/EcppStorageProvider;
 
@@ -4341,8 +4227,6 @@
 
 .method public getPasswordHistory(ILandroid/content/ComponentName;)I
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
 
     iget-object v0, p0, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->mEcppStorageProvider:Lcom/sec/knox/container/contentprovider/EcppStorageProvider;
 
@@ -4377,8 +4261,6 @@
 
 .method public getPasswordMaximumLength(II)I
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     const/16 v0, 0x10
 
@@ -4387,8 +4269,6 @@
 
 .method public getPasswordMinimumLength(ILandroid/content/ComponentName;)I
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
 
     iget-object v1, p0, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->mEcppStorageProvider:Lcom/sec/knox/container/contentprovider/EcppStorageProvider;
 
@@ -4458,8 +4338,6 @@
 
 .method public getPasswordMinimumLetters(ILandroid/content/ComponentName;)I
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
 
     iget-object v1, p0, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->mEcppStorageProvider:Lcom/sec/knox/container/contentprovider/EcppStorageProvider;
 
@@ -4491,8 +4369,6 @@
 
 .method public getPasswordMinimumLowerCase(ILandroid/content/ComponentName;)I
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
 
     iget-object v0, p0, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->mEcppStorageProvider:Lcom/sec/knox/container/contentprovider/EcppStorageProvider;
 
@@ -4515,8 +4391,6 @@
 
 .method public getPasswordMinimumNonLetter(ILandroid/content/ComponentName;)I
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
 
     iget-object v0, p0, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->mEcppStorageProvider:Lcom/sec/knox/container/contentprovider/EcppStorageProvider;
 
@@ -4539,8 +4413,6 @@
 
 .method public getPasswordMinimumNumeric(ILandroid/content/ComponentName;)I
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
 
     iget-object v1, p0, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->mEcppStorageProvider:Lcom/sec/knox/container/contentprovider/EcppStorageProvider;
 
@@ -4572,8 +4444,6 @@
 
 .method public getPasswordMinimumSymbols(ILandroid/content/ComponentName;)I
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
 
     iget-object v0, p0, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->mEcppStorageProvider:Lcom/sec/knox/container/contentprovider/EcppStorageProvider;
 
@@ -4596,8 +4466,6 @@
 
 .method public getPasswordMinimumUpperCase(ILandroid/content/ComponentName;)I
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
 
     iget-object v0, p0, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->mEcppStorageProvider:Lcom/sec/knox/container/contentprovider/EcppStorageProvider;
 
@@ -4620,8 +4488,6 @@
 
 .method public getPasswordQuality(ILandroid/content/ComponentName;)I
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
 
     iget-object v1, p0, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->mEcppStorageProvider:Lcom/sec/knox/container/contentprovider/EcppStorageProvider;
 
@@ -4653,8 +4519,6 @@
 
 .method public getSequenceLength(Ljava/lang/String;Ljava/lang/String;)I
     .locals 11
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     sget-object v9, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->TAG:Ljava/lang/String;
 
@@ -4759,8 +4623,6 @@
 
 .method public getSimplePasswordEnabled(ILandroid/content/ComponentName;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
 
     iget-object v0, p0, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->mEcppStorageProvider:Lcom/sec/knox/container/contentprovider/EcppStorageProvider;
 
@@ -4783,8 +4645,6 @@
 
 .method public isActivePasswordSufficient(IZ)Z
     .locals 9
-    .param p1    # I
-    .param p2    # Z
 
     const/high16 v8, 0x60000
 
@@ -5045,7 +4905,6 @@
 
 .method public isPasswordContainsValidChars(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_2
 
@@ -5089,8 +4948,6 @@
 
 .method public isPasswordForbidden(ILjava/lang/String;)Z
     .locals 7
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v4, 0x1
 
@@ -5209,7 +5066,6 @@
 
 .method public isPasswordVisisbilityEnabled(I)Z
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->mEcppStorageProvider:Lcom/sec/knox/container/contentprovider/EcppStorageProvider;
 
@@ -5232,7 +5088,6 @@
 
 .method protected declared-synchronized killTimer(I)V
     .locals 8
-    .param p1    # I
 
     monitor-enter p0
 
@@ -5313,7 +5168,6 @@
 
 .method protected declared-synchronized killUnmountTimer(I)V
     .locals 8
-    .param p1    # I
 
     monitor-enter p0
 
@@ -5372,7 +5226,6 @@
 
 .method public onChangePasswordSuccess(I)V
     .locals 8
-    .param p1    # I
 
     invoke-direct {p0}, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->getDPM()Landroid/app/admin/DevicePolicyManager;
 
@@ -5477,7 +5330,6 @@
 
 .method public passwordHasExpired(I)Z
     .locals 13
-    .param p1    # I
 
     const-wide/16 v11, 0x0
 
@@ -5603,7 +5455,6 @@
 
 .method public removeActiveAdmin(Landroid/content/ComponentName;)Z
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
 
     iget-object v0, p0, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->mEcppStorageProvider:Lcom/sec/knox/container/contentprovider/EcppStorageProvider;
 
@@ -5674,7 +5525,6 @@
 
 .method public removeContainer(I)Z
     .locals 2
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->cancelPasswordExpirationAlarm(I)V
 
@@ -5719,7 +5569,6 @@
 
 .method public reportFailedPasswordAttempt(I)Z
     .locals 8
-    .param p1    # I
 
     const/4 v7, 0x0
 
@@ -5868,7 +5717,6 @@
 
 .method public reportSuccessfulPasswordAttempt(I)V
     .locals 4
-    .param p1    # I
 
     iget-object v2, p0, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->mStateManager:Lcom/sec/knox/container/manager/StateManager;
 
@@ -5919,9 +5767,6 @@
 
 .method public resetPassword(ILjava/lang/String;I)Z
     .locals 2
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     invoke-virtual {p0, p1}, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->getKnoxPasswordPolicy(I)Lcom/sec/enterprise/knox/ContainerPasswordPolicy;
 
@@ -5952,9 +5797,6 @@
 
 .method protected declared-synchronized scheduleTimer(Landroid/content/Context;IZ)V
     .locals 12
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Z
 
     monitor-enter p0
 
@@ -6175,8 +6017,6 @@
 
 .method protected declared-synchronized scheduleTimerOnUserInteraction(Landroid/content/Context;I)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     monitor-enter p0
 
@@ -6232,7 +6072,6 @@
 
 .method protected declared-synchronized scheduleUnmountTimer(I)V
     .locals 12
-    .param p1    # I
 
     monitor-enter p0
 
@@ -6336,9 +6175,6 @@
 
 .method public setAllowBluetoothMode(ILandroid/content/ComponentName;I)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # I
 
     iget-object v0, p0, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->mEcppStorageProvider:Lcom/sec/knox/container/contentprovider/EcppStorageProvider;
 
@@ -6354,9 +6190,6 @@
 
 .method public setAllowBrowser(ILandroid/content/ComponentName;Z)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # Z
 
     iget-object v0, p0, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->mEcppStorageProvider:Lcom/sec/knox/container/contentprovider/EcppStorageProvider;
 
@@ -6372,9 +6205,6 @@
 
 .method public setAllowCamera(ILandroid/content/ComponentName;Z)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # Z
 
     iget-object v0, p0, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->mEcppStorageProvider:Lcom/sec/knox/container/contentprovider/EcppStorageProvider;
 
@@ -6390,9 +6220,6 @@
 
 .method public setAllowDesktopSync(ILandroid/content/ComponentName;Z)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # Z
 
     iget-object v0, p0, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->mEcppStorageProvider:Lcom/sec/knox/container/contentprovider/EcppStorageProvider;
 
@@ -6408,9 +6235,6 @@
 
 .method public setAllowInternetSharing(ILandroid/content/ComponentName;Z)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # Z
 
     iget-object v0, p0, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->mEcppStorageProvider:Lcom/sec/knox/container/contentprovider/EcppStorageProvider;
 
@@ -6426,9 +6250,6 @@
 
 .method public setAllowIrDA(ILandroid/content/ComponentName;Z)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # Z
 
     iget-object v0, p0, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->mEcppStorageProvider:Lcom/sec/knox/container/contentprovider/EcppStorageProvider;
 
@@ -6444,9 +6265,6 @@
 
 .method public setAllowPOPIMAPEmail(ILandroid/content/ComponentName;Z)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # Z
 
     iget-object v0, p0, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->mEcppStorageProvider:Lcom/sec/knox/container/contentprovider/EcppStorageProvider;
 
@@ -6462,9 +6280,6 @@
 
 .method public setAllowStorageCard(ILandroid/content/ComponentName;Z)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # Z
 
     iget-object v0, p0, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->mEcppStorageProvider:Lcom/sec/knox/container/contentprovider/EcppStorageProvider;
 
@@ -6480,9 +6295,6 @@
 
 .method public setAllowTextMessaging(ILandroid/content/ComponentName;Z)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # Z
 
     iget-object v0, p0, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->mEcppStorageProvider:Lcom/sec/knox/container/contentprovider/EcppStorageProvider;
 
@@ -6498,9 +6310,6 @@
 
 .method public setAllowWifi(ILandroid/content/ComponentName;Z)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # Z
 
     iget-object v0, p0, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->mEcppStorageProvider:Lcom/sec/knox/container/contentprovider/EcppStorageProvider;
 
@@ -6516,7 +6325,6 @@
 
 .method public setExpirationAlarmCheck(I)V
     .locals 31
-    .param p1    # I
 
     move-object/from16 v0, p0
 
@@ -6998,9 +6806,6 @@
 
 .method public setMaximumFailedPasswordsForDisable(ILandroid/content/ComponentName;I)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # I
 
     iget-object v0, p0, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->mEcppStorageProvider:Lcom/sec/knox/container/contentprovider/EcppStorageProvider;
 
@@ -7038,9 +6843,6 @@
 
 .method public setMaximumFailedPasswordsForWipe(ILandroid/content/ComponentName;I)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # I
 
     iget-object v0, p0, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->mEcppStorageProvider:Lcom/sec/knox/container/contentprovider/EcppStorageProvider;
 
@@ -7078,9 +6880,6 @@
 
 .method public setMaximumTimeToLock(ILandroid/content/ComponentName;J)V
     .locals 7
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # J
 
     iget-object v4, p0, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->mEcppStorageProvider:Lcom/sec/knox/container/contentprovider/EcppStorageProvider;
 
@@ -7144,9 +6943,6 @@
 
 .method public setMinPasswordComplexChars(ILandroid/content/ComponentName;I)V
     .locals 0
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # I
 
     invoke-virtual {p0, p1, p2, p3}, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->setPasswordMinimumSymbols(ILandroid/content/ComponentName;I)V
 
@@ -7155,9 +6951,6 @@
 
 .method public setPasswordEnabledContainerLockTimeout(ILandroid/content/ComponentName;J)V
     .locals 7
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # J
 
     iget-object v4, p0, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->mEcppStorageProvider:Lcom/sec/knox/container/contentprovider/EcppStorageProvider;
 
@@ -7221,9 +7014,6 @@
 
 .method public setPasswordExpirationTimeout(ILandroid/content/ComponentName;J)V
     .locals 11
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # J
 
     const-wide/16 v6, 0x0
 
@@ -7325,9 +7115,6 @@
 
 .method public setPasswordHistory(ILandroid/content/ComponentName;I)V
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # I
 
     iget-object v0, p0, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->mEcppStorageProvider:Lcom/sec/knox/container/contentprovider/EcppStorageProvider;
 
@@ -7357,9 +7144,6 @@
 
 .method public setPasswordMinimumLength(ILandroid/content/ComponentName;I)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # I
 
     iget-object v0, p0, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->mEcppStorageProvider:Lcom/sec/knox/container/contentprovider/EcppStorageProvider;
 
@@ -7426,9 +7210,6 @@
 
 .method public setPasswordMinimumLetters(ILandroid/content/ComponentName;I)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # I
 
     iget-object v0, p0, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->mEcppStorageProvider:Lcom/sec/knox/container/contentprovider/EcppStorageProvider;
 
@@ -7444,9 +7225,6 @@
 
 .method public setPasswordMinimumLowerCase(ILandroid/content/ComponentName;I)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # I
 
     iget-object v0, p0, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->mEcppStorageProvider:Lcom/sec/knox/container/contentprovider/EcppStorageProvider;
 
@@ -7462,9 +7240,6 @@
 
 .method public setPasswordMinimumNonLetter(ILandroid/content/ComponentName;I)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # I
 
     iget-object v0, p0, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->mEcppStorageProvider:Lcom/sec/knox/container/contentprovider/EcppStorageProvider;
 
@@ -7480,9 +7255,6 @@
 
 .method public setPasswordMinimumNumeric(ILandroid/content/ComponentName;I)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # I
 
     iget-object v0, p0, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->mEcppStorageProvider:Lcom/sec/knox/container/contentprovider/EcppStorageProvider;
 
@@ -7498,9 +7270,6 @@
 
 .method public setPasswordMinimumSymbols(ILandroid/content/ComponentName;I)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # I
 
     iget-object v0, p0, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->mEcppStorageProvider:Lcom/sec/knox/container/contentprovider/EcppStorageProvider;
 
@@ -7516,9 +7285,6 @@
 
 .method public setPasswordMinimumUpperCase(ILandroid/content/ComponentName;I)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # I
 
     iget-object v0, p0, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->mEcppStorageProvider:Lcom/sec/knox/container/contentprovider/EcppStorageProvider;
 
@@ -7534,9 +7300,6 @@
 
 .method public setPasswordQuality(ILandroid/content/ComponentName;I)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # I
 
     iget-object v0, p0, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->mEcppStorageProvider:Lcom/sec/knox/container/contentprovider/EcppStorageProvider;
 
@@ -7552,8 +7315,6 @@
 
 .method public setPasswordVisibilityEnabled(IZ)V
     .locals 1
-    .param p1    # I
-    .param p2    # Z
 
     iget-object v0, p0, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->mEcppStorageProvider:Lcom/sec/knox/container/contentprovider/EcppStorageProvider;
 
@@ -7569,9 +7330,6 @@
 
 .method public setSimplePasswordEnabled(ILandroid/content/ComponentName;Z)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # Z
 
     iget-object v0, p0, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->mEcppStorageProvider:Lcom/sec/knox/container/contentprovider/EcppStorageProvider;
 
@@ -7587,8 +7345,6 @@
 
 .method public storeUserCredentials(ILjava/lang/String;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->storePassword(ILjava/lang/String;)V
 
@@ -7597,8 +7353,6 @@
 
 .method public updatePassword(ILjava/lang/String;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -7645,8 +7399,6 @@
 
 .method public updatePasswordExpirationTimeout(ILandroid/content/ComponentName;)V
     .locals 11
-    .param p1    # I
-    .param p2    # Landroid/content/ComponentName;
 
     iget-object v8, p0, Lcom/sec/knox/container/EnterpriseContainerPasswordService;->mEcppStorageProvider:Lcom/sec/knox/container/contentprovider/EcppStorageProvider;
 
@@ -7722,8 +7474,6 @@
 
 .method public verifyPassword(ILjava/lang/String;)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v1, 0x0
 

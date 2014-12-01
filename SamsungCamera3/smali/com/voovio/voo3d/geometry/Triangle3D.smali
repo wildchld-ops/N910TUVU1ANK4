@@ -80,7 +80,6 @@
 # virtual methods
 .method public AddVertex(Lcom/voovio/voo3d/geometry/Vertex3D;)V
     .locals 8
-    .param p1    # Lcom/voovio/voo3d/geometry/Vertex3D;
 
     const/4 v4, 0x3
 
@@ -188,7 +187,6 @@
 
 .method public GetPointD2(Lcom/voovio/voo3d/data/Vector3;)F
     .locals 24
-    .param p1    # Lcom/voovio/voo3d/data/Vector3;
 
     move-object/from16 v0, p0
 
@@ -1133,7 +1131,6 @@
 
 .method public TestPointSide(Lcom/voovio/voo3d/geometry/Vertex3D;)I
     .locals 3
-    .param p1    # Lcom/voovio/voo3d/geometry/Vertex3D;
 
     iget-object v1, p0, Lcom/voovio/voo3d/geometry/Triangle3D;->m_vN:Lcom/voovio/voo3d/data/Vector3;
 
@@ -1177,8 +1174,6 @@
 
 .method public TestSegmentIntersection(Lcom/voovio/voo3d/data/Vector3;Lcom/voovio/voo3d/data/Vector3;)Z
     .locals 11
-    .param p1    # Lcom/voovio/voo3d/data/Vector3;
-    .param p2    # Lcom/voovio/voo3d/data/Vector3;
 
     const/4 v10, 0x0
 

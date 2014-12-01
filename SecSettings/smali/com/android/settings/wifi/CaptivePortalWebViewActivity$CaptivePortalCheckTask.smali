@@ -50,8 +50,6 @@
 
 .method synthetic constructor <init>(Lcom/android/settings/wifi/CaptivePortalWebViewActivity;Lcom/android/settings/wifi/CaptivePortalWebViewActivity$1;)V
     .locals 0
-    .param p1    # Lcom/android/settings/wifi/CaptivePortalWebViewActivity;
-    .param p2    # Lcom/android/settings/wifi/CaptivePortalWebViewActivity$1;
 
     invoke-direct {p0, p1}, Lcom/android/settings/wifi/CaptivePortalWebViewActivity$CaptivePortalCheckTask;-><init>(Lcom/android/settings/wifi/CaptivePortalWebViewActivity;)V
 
@@ -62,7 +60,6 @@
 # virtual methods
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [Ljava/lang/Void;
 
@@ -75,7 +72,6 @@
 
 .method protected varargs doInBackground([Ljava/lang/Void;)Ljava/lang/Void;
     .locals 1
-    .param p1    # [Ljava/lang/Void;
 
     invoke-static {}, Lcom/android/settings/wifi/WifiConnectivityUtils;->isWiFiConnAvailable()Z
 
@@ -101,7 +97,6 @@
 
 .method protected bridge synthetic onPostExecute(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Ljava/lang/Void;
 
@@ -112,7 +107,6 @@
 
 .method protected onPostExecute(Ljava/lang/Void;)V
     .locals 2
-    .param p1    # Ljava/lang/Void;
 
     iget-boolean v0, p0, Lcom/android/settings/wifi/CaptivePortalWebViewActivity$CaptivePortalCheckTask;->isWiFiConnAvailable:Z
 

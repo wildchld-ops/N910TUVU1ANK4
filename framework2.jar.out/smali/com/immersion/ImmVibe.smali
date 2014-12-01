@@ -91,7 +91,6 @@
 
 .method private static newImmVibeInstanceForName(Ljava/lang/String;)Lcom/immersion/ImmVibe;
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     const/4 v1, 0x0
 

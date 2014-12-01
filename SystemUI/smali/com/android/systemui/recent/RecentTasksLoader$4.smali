@@ -48,7 +48,6 @@
 # virtual methods
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [Ljava/lang/Void;
 
@@ -61,7 +60,6 @@
 
 .method protected varargs doInBackground([Ljava/lang/Void;)Ljava/lang/Void;
     .locals 9
-    .param p1    # [Ljava/lang/Void;
 
     const/4 v8, 0x0
 
@@ -174,7 +172,6 @@
 
 .method protected varargs onProgressUpdate([Lcom/android/systemui/recent/TaskDescription;)V
     .locals 3
-    .param p1    # [Lcom/android/systemui/recent/TaskDescription;
 
     const-string v1, "STATUSBAR-RecentTasksLoader"
 
@@ -245,7 +242,6 @@
 
 .method protected bridge synthetic onProgressUpdate([Ljava/lang/Object;)V
     .locals 0
-    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [Lcom/android/systemui/recent/TaskDescription;
 

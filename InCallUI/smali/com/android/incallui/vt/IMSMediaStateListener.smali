@@ -13,7 +13,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -26,8 +25,6 @@
 # virtual methods
 .method onCameraEvent(IZ)V
     .locals 5
-    .param p1    # I
-    .param p2    # Z
 
     const-string v2, "[IMSMediaStateListener]"
 
@@ -89,7 +86,6 @@
 
 .method onCameraFirstFrameReady(I)V
     .locals 5
-    .param p1    # I
 
     const-string v2, "[IMSMediaStateListener]"
 
@@ -131,8 +127,6 @@
 
 .method onCameraSwitchFailure(II)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     const-string v1, "[IMSMediaStateListener]"
 
@@ -170,8 +164,6 @@
 
 .method onCaptureFailure(IZ)V
     .locals 5
-    .param p1    # I
-    .param p2    # Z
 
     const-string v2, "[IMSMediaStateListener]"
 
@@ -237,9 +229,6 @@
 
 .method onCaptureSuccess(IZLjava/lang/String;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # Ljava/lang/String;
 
     const-string v2, "[IMSMediaStateListener]"
 
@@ -303,9 +292,6 @@
 
 .method public onReceive(IILcom/samsung/commonimsinterface/imscommon/IMSParameter;)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Lcom/samsung/commonimsinterface/imscommon/IMSParameter;
 
     sparse-switch p2, :sswitch_data_0
 
@@ -445,7 +431,6 @@
 
 .method onVideoAvailable(I)V
     .locals 5
-    .param p1    # I
 
     const-string v2, "[IMSMediaStateListener]"
 
@@ -541,7 +526,6 @@
 
 .method onWeakWifi(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "[IMSMediaStateListener]"
 

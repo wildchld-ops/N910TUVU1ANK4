@@ -30,7 +30,6 @@
 # direct methods
 .method private constructor <init>(Ljava/util/Locale;)V
     .locals 0
-    .param p1    # Ljava/util/Locale;
 
     invoke-direct {p0}, Landroid/view/AccessibilityIterators$AbstractTextSegmentIterator;-><init>()V
 
@@ -45,8 +44,6 @@
 
 .method synthetic constructor <init>(Ljava/util/Locale;Landroid/view/AccessibilityIterators$1;)V
     .locals 0
-    .param p1    # Ljava/util/Locale;
-    .param p2    # Landroid/view/AccessibilityIterators$1;
 
     invoke-direct {p0, p1}, Landroid/view/AccessibilityIterators$CharacterTextSegmentIterator;-><init>(Ljava/util/Locale;)V
 
@@ -55,7 +52,6 @@
 
 .method public static getInstance(Ljava/util/Locale;)Landroid/view/AccessibilityIterators$CharacterTextSegmentIterator;
     .locals 1
-    .param p0    # Ljava/util/Locale;
 
     sget-object v0, Landroid/view/AccessibilityIterators$CharacterTextSegmentIterator;->sInstance:Landroid/view/AccessibilityIterators$CharacterTextSegmentIterator;
 
@@ -77,7 +73,6 @@
 # virtual methods
 .method public following(I)[I
     .locals 6
-    .param p1    # I
 
     const/4 v5, -0x1
 
@@ -141,7 +136,6 @@
 
 .method public initialize(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-super {p0, p1}, Landroid/view/AccessibilityIterators$AbstractTextSegmentIterator;->initialize(Ljava/lang/String;)V
 
@@ -154,7 +148,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 2
-    .param p1    # Landroid/content/res/Configuration;
 
     iget-object v0, p1, Landroid/content/res/Configuration;->locale:Ljava/util/Locale;
 
@@ -176,7 +169,6 @@
 
 .method protected onLocaleChanged(Ljava/util/Locale;)V
     .locals 1
-    .param p1    # Ljava/util/Locale;
 
     invoke-static {p1}, Ljava/text/BreakIterator;->getCharacterInstance(Ljava/util/Locale;)Ljava/text/BreakIterator;
 
@@ -195,7 +187,6 @@
 
 .method public preceding(I)[I
     .locals 6
-    .param p1    # I
 
     const/4 v5, -0x1
 

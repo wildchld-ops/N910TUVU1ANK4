@@ -133,9 +133,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/content/Intent;Landroid/widget/RemoteViewsAdapter$RemoteAdapterConnectionCallback;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
-    .param p3    # Landroid/widget/RemoteViewsAdapter$RemoteAdapterConnectionCallback;
 
     const/4 v1, 0x0
 
@@ -405,8 +402,6 @@
 
 .method static synthetic access$000(Landroid/content/Context;I)V
     .locals 0
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     invoke-static {p0, p1}, Landroid/widget/RemoteViewsAdapter;->checkInteractAcrossUsersPermission(Landroid/content/Context;I)V
 
@@ -415,7 +410,6 @@
 
 .method static synthetic access$100(Landroid/widget/RemoteViewsAdapter;)Z
     .locals 1
-    .param p0    # Landroid/widget/RemoteViewsAdapter;
 
     iget-boolean v0, p0, Landroid/widget/RemoteViewsAdapter;->mNotifyDataSetChangedAfterOnServiceConnected:Z
 
@@ -424,7 +418,6 @@
 
 .method static synthetic access$1100(Landroid/widget/RemoteViewsAdapter;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Landroid/widget/RemoteViewsAdapter;
 
     iget-object v0, p0, Landroid/widget/RemoteViewsAdapter;->mWorkerQueue:Landroid/os/Handler;
 
@@ -433,7 +426,6 @@
 
 .method static synthetic access$1200(Landroid/widget/RemoteViewsAdapter;)Landroid/widget/RemoteViews$OnClickHandler;
     .locals 1
-    .param p0    # Landroid/widget/RemoteViewsAdapter;
 
     iget-object v0, p0, Landroid/widget/RemoteViewsAdapter;->mRemoteViewsOnClickHandler:Landroid/widget/RemoteViews$OnClickHandler;
 
@@ -458,9 +450,6 @@
 
 .method static synthetic access$1700(Landroid/widget/RemoteViewsAdapter;IZ)V
     .locals 0
-    .param p0    # Landroid/widget/RemoteViewsAdapter;
-    .param p1    # I
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Landroid/widget/RemoteViewsAdapter;->updateRemoteViews(IZ)V
 
@@ -469,7 +458,6 @@
 
 .method static synthetic access$1800(Landroid/widget/RemoteViewsAdapter;)V
     .locals 0
-    .param p0    # Landroid/widget/RemoteViewsAdapter;
 
     invoke-direct {p0}, Landroid/widget/RemoteViewsAdapter;->loadNextIndexInBackground()V
 
@@ -478,7 +466,6 @@
 
 .method static synthetic access$1900(Landroid/widget/RemoteViewsAdapter;)Landroid/widget/RemoteViewsAdapter$RemoteViewsFrameLayoutRefSet;
     .locals 1
-    .param p0    # Landroid/widget/RemoteViewsAdapter;
 
     iget-object v0, p0, Landroid/widget/RemoteViewsAdapter;->mRequestedViews:Landroid/widget/RemoteViewsAdapter$RemoteViewsFrameLayoutRefSet;
 
@@ -487,7 +474,6 @@
 
 .method static synthetic access$200(Landroid/widget/RemoteViewsAdapter;)V
     .locals 0
-    .param p0    # Landroid/widget/RemoteViewsAdapter;
 
     invoke-direct {p0}, Landroid/widget/RemoteViewsAdapter;->onNotifyDataSetChanged()V
 
@@ -496,7 +482,6 @@
 
 .method static synthetic access$300(Landroid/widget/RemoteViewsAdapter;)Landroid/widget/RemoteViewsAdapter$RemoteViewsAdapterServiceConnection;
     .locals 1
-    .param p0    # Landroid/widget/RemoteViewsAdapter;
 
     iget-object v0, p0, Landroid/widget/RemoteViewsAdapter;->mServiceConnection:Landroid/widget/RemoteViewsAdapter$RemoteViewsAdapterServiceConnection;
 
@@ -505,7 +490,6 @@
 
 .method static synthetic access$400(Landroid/widget/RemoteViewsAdapter;)V
     .locals 0
-    .param p0    # Landroid/widget/RemoteViewsAdapter;
 
     invoke-direct {p0}, Landroid/widget/RemoteViewsAdapter;->updateTemporaryMetaData()V
 
@@ -514,7 +498,6 @@
 
 .method static synthetic access$500(Landroid/widget/RemoteViewsAdapter;)Landroid/widget/RemoteViewsAdapter$FixedSizeRemoteViewsCache;
     .locals 1
-    .param p0    # Landroid/widget/RemoteViewsAdapter;
 
     iget-object v0, p0, Landroid/widget/RemoteViewsAdapter;->mCache:Landroid/widget/RemoteViewsAdapter$FixedSizeRemoteViewsCache;
 
@@ -523,7 +506,6 @@
 
 .method static synthetic access$600(Landroid/widget/RemoteViewsAdapter;)Ljava/lang/ref/WeakReference;
     .locals 1
-    .param p0    # Landroid/widget/RemoteViewsAdapter;
 
     iget-object v0, p0, Landroid/widget/RemoteViewsAdapter;->mCallback:Ljava/lang/ref/WeakReference;
 
@@ -532,7 +514,6 @@
 
 .method static synthetic access$700(Landroid/widget/RemoteViewsAdapter;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Landroid/widget/RemoteViewsAdapter;
 
     iget-object v0, p0, Landroid/widget/RemoteViewsAdapter;->mMainQueue:Landroid/os/Handler;
 
@@ -541,7 +522,6 @@
 
 .method static synthetic access$800(Landroid/widget/RemoteViewsAdapter;)V
     .locals 0
-    .param p0    # Landroid/widget/RemoteViewsAdapter;
 
     invoke-direct {p0}, Landroid/widget/RemoteViewsAdapter;->enqueueDeferredUnbindServiceMessage()V
 
@@ -550,8 +530,6 @@
 
 .method private static checkInteractAcrossUsersPermission(Landroid/content/Context;I)V
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/content/Context;->getUserId()I
 
@@ -599,7 +577,6 @@
 
 .method private getConvertViewTypeId(Landroid/view/View;)I
     .locals 3
-    .param p1    # Landroid/view/View;
 
     const/4 v1, -0x1
 
@@ -625,9 +602,6 @@
 
 .method private getVisibleWindow(III)Ljava/util/ArrayList;
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(III)",
@@ -907,8 +881,6 @@
 
 .method private processException(Ljava/lang/String;Ljava/lang/Exception;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Exception;
 
     const-string v1, "RemoteViewsAdapter"
 
@@ -1044,8 +1016,6 @@
 
 .method private updateRemoteViews(IZ)V
     .locals 14
-    .param p1    # I
-    .param p2    # Z
 
     iget-object v0, p0, Landroid/widget/RemoteViewsAdapter;->mServiceConnection:Landroid/widget/RemoteViewsAdapter$RemoteViewsAdapterServiceConnection;
 
@@ -1505,7 +1475,6 @@
 
 .method public getItem(I)Ljava/lang/Object;
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -1514,7 +1483,6 @@
 
 .method public getItemId(I)J
     .locals 3
-    .param p1    # I
 
     iget-object v2, p0, Landroid/widget/RemoteViewsAdapter;->mCache:Landroid/widget/RemoteViewsAdapter$FixedSizeRemoteViewsCache;
 
@@ -1561,7 +1529,6 @@
 
 .method public getItemViewType(I)I
     .locals 4
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -1648,9 +1615,6 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 24
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     move-object/from16 v0, p0
 
@@ -2157,7 +2121,6 @@
 
 .method public handleMessage(Landroid/os/Message;)Z
     .locals 5
-    .param p1    # Landroid/os/Message;
 
     const/4 v0, 0x0
 
@@ -2464,7 +2427,6 @@
 
 .method public setRemoteViewsOnClickHandler(Landroid/widget/RemoteViews$OnClickHandler;)V
     .locals 0
-    .param p1    # Landroid/widget/RemoteViews$OnClickHandler;
 
     iput-object p1, p0, Landroid/widget/RemoteViewsAdapter;->mRemoteViewsOnClickHandler:Landroid/widget/RemoteViews$OnClickHandler;
 
@@ -2473,8 +2435,6 @@
 
 .method public setVisibleRangeHint(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     iput p1, p0, Landroid/widget/RemoteViewsAdapter;->mVisibleWindowLowerBound:I
 

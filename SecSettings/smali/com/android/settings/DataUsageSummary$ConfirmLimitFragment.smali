@@ -41,7 +41,6 @@
 
 .method public static close(Lcom/android/settings/DataUsageSummary;)V
     .locals 2
-    .param p0    # Lcom/android/settings/DataUsageSummary;
 
     sget-object v0, Lcom/android/settings/DataUsageSummary$ConfirmLimitFragment;->dialog:Lcom/android/settings/DataUsageSummary$ConfirmLimitFragment;
 
@@ -75,7 +74,6 @@
 
 .method public static show(Lcom/android/settings/DataUsageSummary;)V
     .locals 15
-    .param p0    # Lcom/android/settings/DataUsageSummary;
 
     const-wide/32 v13, 0x40000000
 
@@ -361,7 +359,6 @@
 # virtual methods
 .method public onCreateDialog(Landroid/os/Bundle;)Landroid/app/Dialog;
     .locals 7
-    .param p1    # Landroid/os/Bundle;
 
     invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 

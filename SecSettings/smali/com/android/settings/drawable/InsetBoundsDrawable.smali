@@ -10,8 +10,6 @@
 # direct methods
 .method public constructor <init>(Landroid/graphics/drawable/Drawable;I)V
     .locals 0
-    .param p1    # Landroid/graphics/drawable/Drawable;
-    .param p2    # I
 
     invoke-direct {p0, p1}, Lcom/android/settings/drawable/DrawableWrapper;-><init>(Landroid/graphics/drawable/Drawable;)V
 
@@ -24,10 +22,6 @@
 # virtual methods
 .method public setBounds(IIII)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iget v0, p0, Lcom/android/settings/drawable/InsetBoundsDrawable;->mInsetBoundsSides:I
 

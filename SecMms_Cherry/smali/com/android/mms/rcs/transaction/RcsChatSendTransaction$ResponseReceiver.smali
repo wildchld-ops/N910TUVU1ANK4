@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Lcom/android/mms/rcs/transaction/RcsChatSendTransaction;Lcom/android/mms/rcs/transaction/RcsChatSendTransaction$1;)V
     .locals 0
-    .param p1    # Lcom/android/mms/rcs/transaction/RcsChatSendTransaction;
-    .param p2    # Lcom/android/mms/rcs/transaction/RcsChatSendTransaction$1;
 
     invoke-direct {p0, p1}, Lcom/android/mms/rcs/transaction/RcsChatSendTransaction$ResponseReceiver;-><init>(Lcom/android/mms/rcs/transaction/RcsChatSendTransaction;)V
 
@@ -43,8 +41,6 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 10
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     iget-object v6, p0, Lcom/android/mms/rcs/transaction/RcsChatSendTransaction$ResponseReceiver;->this$0:Lcom/android/mms/rcs/transaction/RcsChatSendTransaction;
 

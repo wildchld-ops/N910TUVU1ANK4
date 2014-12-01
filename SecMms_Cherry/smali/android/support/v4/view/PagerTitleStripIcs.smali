@@ -22,7 +22,6 @@
 
 .method public static setSingleLineAllCaps(Landroid/widget/TextView;)V
     .locals 2
-    .param p0    # Landroid/widget/TextView;
 
     new-instance v0, Landroid/support/v4/view/PagerTitleStripIcs$SingleLineAllCapsTransform;
 

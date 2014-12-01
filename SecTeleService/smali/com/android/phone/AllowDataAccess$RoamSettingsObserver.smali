@@ -43,7 +43,7 @@
 
     iget-object v1, p0, Lcom/android/phone/AllowDataAccess$RoamSettingsObserver;->this$0:Lcom/android/phone/AllowDataAccess;
 
-    invoke-virtual {v1}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v1}, Lcom/android/phone/AllowDataAccess;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -55,7 +55,7 @@
 
     iget-object v1, p0, Lcom/android/phone/AllowDataAccess$RoamSettingsObserver;->this$0:Lcom/android/phone/AllowDataAccess;
 
-    invoke-virtual {v1}, Landroid/app/Activity;->finish()V
+    invoke-virtual {v1}, Lcom/android/phone/AllowDataAccess;->finish()V
 
     return-void
 .end method

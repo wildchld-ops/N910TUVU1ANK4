@@ -37,10 +37,6 @@
 # direct methods
 .method constructor <init>(Landroid/sax/Element;Ljava/lang/String;Ljava/lang/String;I)V
     .locals 0
-    .param p1    # Landroid/sax/Element;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -57,8 +53,6 @@
 
 .method static toString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -125,7 +119,6 @@
 # virtual methods
 .method checkRequiredChildren(Lorg/xml/sax/Locator;)V
     .locals 6
-    .param p1    # Lorg/xml/sax/Locator;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xml/sax/SAXParseException;
@@ -212,7 +205,6 @@
 
 .method public getChild(Ljava/lang/String;)Landroid/sax/Element;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, ""
 
@@ -225,8 +217,6 @@
 
 .method public getChild(Ljava/lang/String;Ljava/lang/String;)Landroid/sax/Element;
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/sax/Element;->endTextElementListener:Landroid/sax/EndTextElementListener;
 
@@ -263,7 +253,6 @@
 
 .method public requireChild(Ljava/lang/String;)Landroid/sax/Element;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, ""
 
@@ -276,8 +265,6 @@
 
 .method public requireChild(Ljava/lang/String;Ljava/lang/String;)Landroid/sax/Element;
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p0, p1, p2}, Landroid/sax/Element;->getChild(Ljava/lang/String;Ljava/lang/String;)Landroid/sax/Element;
 
@@ -353,7 +340,6 @@
 
 .method public setElementListener(Landroid/sax/ElementListener;)V
     .locals 0
-    .param p1    # Landroid/sax/ElementListener;
 
     invoke-virtual {p0, p1}, Landroid/sax/Element;->setStartElementListener(Landroid/sax/StartElementListener;)V
 
@@ -364,7 +350,6 @@
 
 .method public setEndElementListener(Landroid/sax/EndElementListener;)V
     .locals 2
-    .param p1    # Landroid/sax/EndElementListener;
 
     iget-object v0, p0, Landroid/sax/Element;->endElementListener:Landroid/sax/EndElementListener;
 
@@ -386,7 +371,6 @@
 
 .method public setEndTextElementListener(Landroid/sax/EndTextElementListener;)V
     .locals 2
-    .param p1    # Landroid/sax/EndTextElementListener;
 
     iget-object v0, p0, Landroid/sax/Element;->endTextElementListener:Landroid/sax/EndTextElementListener;
 
@@ -421,7 +405,6 @@
 
 .method public setStartElementListener(Landroid/sax/StartElementListener;)V
     .locals 2
-    .param p1    # Landroid/sax/StartElementListener;
 
     iget-object v0, p0, Landroid/sax/Element;->startElementListener:Landroid/sax/StartElementListener;
 
@@ -443,7 +426,6 @@
 
 .method public setTextElementListener(Landroid/sax/TextElementListener;)V
     .locals 0
-    .param p1    # Landroid/sax/TextElementListener;
 
     invoke-virtual {p0, p1}, Landroid/sax/Element;->setStartElementListener(Landroid/sax/StartElementListener;)V
 

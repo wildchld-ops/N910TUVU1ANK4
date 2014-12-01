@@ -30,7 +30,6 @@
 # virtual methods
 .method public isUrlBlocked(Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 

@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Lcom/android/settings/GridSettings;Lcom/android/settings/GridSettings$1;)V
     .locals 0
-    .param p1    # Lcom/android/settings/GridSettings;
-    .param p2    # Lcom/android/settings/GridSettings$1;
 
     invoke-direct {p0, p1}, Lcom/android/settings/GridSettings$SettingsTabListener;-><init>(Lcom/android/settings/GridSettings;)V
 
@@ -46,8 +44,6 @@
 # virtual methods
 .method public onTabReselected(Landroid/app/ActionBar$Tab;Landroid/app/FragmentTransaction;)V
     .locals 2
-    .param p1    # Landroid/app/ActionBar$Tab;
-    .param p2    # Landroid/app/FragmentTransaction;
 
     # getter for: Lcom/android/settings/GridSettings;->LOG_TAG:Ljava/lang/String;
     invoke-static {}, Lcom/android/settings/GridSettings;->access$2400()Ljava/lang/String;
@@ -63,8 +59,6 @@
 
 .method public onTabSelected(Landroid/app/ActionBar$Tab;Landroid/app/FragmentTransaction;)V
     .locals 4
-    .param p1    # Landroid/app/ActionBar$Tab;
-    .param p2    # Landroid/app/FragmentTransaction;
 
     const/4 v3, 0x0
 
@@ -176,8 +170,6 @@
 
 .method public onTabUnselected(Landroid/app/ActionBar$Tab;Landroid/app/FragmentTransaction;)V
     .locals 2
-    .param p1    # Landroid/app/ActionBar$Tab;
-    .param p2    # Landroid/app/FragmentTransaction;
 
     # getter for: Lcom/android/settings/GridSettings;->LOG_TAG:Ljava/lang/String;
     invoke-static {}, Lcom/android/settings/GridSettings;->access$2400()Ljava/lang/String;

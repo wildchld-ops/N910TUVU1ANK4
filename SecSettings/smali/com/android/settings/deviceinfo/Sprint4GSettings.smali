@@ -36,7 +36,6 @@
 
 .method private static formatIpAddresses(Landroid/net/LinkProperties;)Ljava/lang/String;
     .locals 4
-    .param p0    # Landroid/net/LinkProperties;
 
     const/4 v0, 0x0
 
@@ -127,7 +126,6 @@
 # virtual methods
 .method public get4GIpAddress(Landroid/content/Context;)Ljava/lang/String;
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     const-string v2, "connectivity"
 
@@ -199,7 +197,6 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onActivityCreated(Landroid/os/Bundle;)V
 
@@ -208,7 +205,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 

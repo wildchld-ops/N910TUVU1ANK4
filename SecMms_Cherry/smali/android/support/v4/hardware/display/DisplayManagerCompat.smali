@@ -51,7 +51,6 @@
 
 .method public static getInstance(Landroid/content/Context;)Landroid/support/v4/hardware/display/DisplayManagerCompat;
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     sget-object v3, Landroid/support/v4/hardware/display/DisplayManagerCompat;->sInstances:Ljava/util/WeakHashMap;
 

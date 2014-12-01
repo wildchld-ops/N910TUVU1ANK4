@@ -59,8 +59,6 @@
 # direct methods
 .method public constructor <init>(Landroid/app/Activity;Landroid/support/v4/media/TransportPerformer;)V
     .locals 1
-    .param p1    # Landroid/app/Activity;
-    .param p2    # Landroid/support/v4/media/TransportPerformer;
 
     const/4 v0, 0x0
 
@@ -71,9 +69,6 @@
 
 .method private constructor <init>(Landroid/app/Activity;Landroid/view/View;Landroid/support/v4/media/TransportPerformer;)V
     .locals 5
-    .param p1    # Landroid/app/Activity;
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/support/v4/media/TransportPerformer;
 
     invoke-direct {p0}, Landroid/support/v4/media/TransportController;-><init>()V
 
@@ -177,8 +172,6 @@
 
 .method public constructor <init>(Landroid/view/View;Landroid/support/v4/media/TransportPerformer;)V
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/support/v4/media/TransportPerformer;
 
     const/4 v0, 0x0
 
@@ -221,7 +214,6 @@
 
 .method static isMediaKey(I)Z
     .locals 1
-    .param p0    # I
 
     sparse-switch p0, :sswitch_data_0
 
@@ -360,7 +352,6 @@
 
 .method public dispatchKeyEvent(Landroid/view/KeyEvent;)Z
     .locals 2
-    .param p1    # Landroid/view/KeyEvent;
 
     iget-object v0, p0, Landroid/support/v4/media/TransportMediator;->mKeyEventCallback:Landroid/view/KeyEvent$Callback;
 
@@ -492,7 +483,6 @@
 
 .method public registerStateListener(Landroid/support/v4/media/TransportStateListener;)V
     .locals 1
-    .param p1    # Landroid/support/v4/media/TransportStateListener;
 
     iget-object v0, p0, Landroid/support/v4/media/TransportMediator;->mListeners:Ljava/util/ArrayList;
 
@@ -503,7 +493,6 @@
 
 .method public seekTo(J)V
     .locals 1
-    .param p1    # J
 
     iget-object v0, p0, Landroid/support/v4/media/TransportMediator;->mCallbacks:Landroid/support/v4/media/TransportPerformer;
 
@@ -560,7 +549,6 @@
 
 .method public unregisterStateListener(Landroid/support/v4/media/TransportStateListener;)V
     .locals 1
-    .param p1    # Landroid/support/v4/media/TransportStateListener;
 
     iget-object v0, p0, Landroid/support/v4/media/TransportMediator;->mListeners:Ljava/util/ArrayList;
 

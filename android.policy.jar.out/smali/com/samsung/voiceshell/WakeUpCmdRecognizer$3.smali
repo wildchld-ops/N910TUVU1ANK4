@@ -36,7 +36,6 @@
 # virtual methods
 .method public onAudioFocusChange(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v0, p0, Lcom/samsung/voiceshell/WakeUpCmdRecognizer$3;->this$0:Lcom/samsung/voiceshell/WakeUpCmdRecognizer;
 

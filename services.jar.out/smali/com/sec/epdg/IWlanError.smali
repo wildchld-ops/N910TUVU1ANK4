@@ -23,8 +23,6 @@
 # direct methods
 .method public constructor <init>(Lcom/sec/epdg/IWlanError$EpdgError;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Lcom/sec/epdg/IWlanError$EpdgError;
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -35,9 +33,6 @@
 
 .method public constructor <init>(Lcom/sec/epdg/IWlanError$EpdgError;Ljava/lang/String;Lcom/sec/epdg/IWlanError$IkeError;)V
     .locals 2
-    .param p1    # Lcom/sec/epdg/IWlanError$EpdgError;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/sec/epdg/IWlanError$IkeError;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

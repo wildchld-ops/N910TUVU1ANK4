@@ -43,10 +43,6 @@
 
 .method private constructor <init>(ZIILandroid/widget/GridLayout$Alignment;)V
     .locals 2
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/widget/GridLayout$Alignment;
 
     new-instance v0, Landroid/widget/GridLayout$Interval;
 
@@ -61,11 +57,6 @@
 
 .method synthetic constructor <init>(ZIILandroid/widget/GridLayout$Alignment;Landroid/widget/GridLayout$1;)V
     .locals 0
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/widget/GridLayout$Alignment;
-    .param p5    # Landroid/widget/GridLayout$1;
 
     invoke-direct {p0, p1, p2, p3, p4}, Landroid/widget/GridLayout$Spec;-><init>(ZIILandroid/widget/GridLayout$Alignment;)V
 
@@ -74,9 +65,6 @@
 
 .method private constructor <init>(ZLandroid/widget/GridLayout$Interval;Landroid/widget/GridLayout$Alignment;)V
     .locals 0
-    .param p1    # Z
-    .param p2    # Landroid/widget/GridLayout$Interval;
-    .param p3    # Landroid/widget/GridLayout$Alignment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -93,7 +81,6 @@
 # virtual methods
 .method final copyWriteAlignment(Landroid/widget/GridLayout$Alignment;)Landroid/widget/GridLayout$Spec;
     .locals 3
-    .param p1    # Landroid/widget/GridLayout$Alignment;
 
     new-instance v0, Landroid/widget/GridLayout$Spec;
 
@@ -108,7 +95,6 @@
 
 .method final copyWriteSpan(Landroid/widget/GridLayout$Interval;)Landroid/widget/GridLayout$Spec;
     .locals 3
-    .param p1    # Landroid/widget/GridLayout$Interval;
 
     new-instance v0, Landroid/widget/GridLayout$Spec;
 
@@ -123,7 +109,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 5
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x1
 

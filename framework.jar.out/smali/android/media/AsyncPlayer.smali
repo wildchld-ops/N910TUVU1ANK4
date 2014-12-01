@@ -47,7 +47,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -78,7 +77,6 @@
 
 .method static synthetic access$000(Landroid/media/AsyncPlayer;)Ljava/lang/String;
     .locals 1
-    .param p0    # Landroid/media/AsyncPlayer;
 
     iget-object v0, p0, Landroid/media/AsyncPlayer;->mTag:Ljava/lang/String;
 
@@ -87,7 +85,6 @@
 
 .method static synthetic access$100(Landroid/media/AsyncPlayer;)Ljava/util/LinkedList;
     .locals 1
-    .param p0    # Landroid/media/AsyncPlayer;
 
     iget-object v0, p0, Landroid/media/AsyncPlayer;->mCmdQueue:Ljava/util/LinkedList;
 
@@ -96,8 +93,6 @@
 
 .method static synthetic access$200(Landroid/media/AsyncPlayer;Landroid/media/AsyncPlayer$Command;)V
     .locals 0
-    .param p0    # Landroid/media/AsyncPlayer;
-    .param p1    # Landroid/media/AsyncPlayer$Command;
 
     invoke-direct {p0, p1}, Landroid/media/AsyncPlayer;->startSound(Landroid/media/AsyncPlayer$Command;)V
 
@@ -106,7 +101,6 @@
 
 .method static synthetic access$300(Landroid/media/AsyncPlayer;)Landroid/media/MediaPlayer;
     .locals 1
-    .param p0    # Landroid/media/AsyncPlayer;
 
     iget-object v0, p0, Landroid/media/AsyncPlayer;->mPlayer:Landroid/media/MediaPlayer;
 
@@ -115,8 +109,6 @@
 
 .method static synthetic access$302(Landroid/media/AsyncPlayer;Landroid/media/MediaPlayer;)Landroid/media/MediaPlayer;
     .locals 0
-    .param p0    # Landroid/media/AsyncPlayer;
-    .param p1    # Landroid/media/MediaPlayer;
 
     iput-object p1, p0, Landroid/media/AsyncPlayer;->mPlayer:Landroid/media/MediaPlayer;
 
@@ -125,8 +117,6 @@
 
 .method static synthetic access$402(Landroid/media/AsyncPlayer;Landroid/media/AsyncPlayer$Thread;)Landroid/media/AsyncPlayer$Thread;
     .locals 0
-    .param p0    # Landroid/media/AsyncPlayer;
-    .param p1    # Landroid/media/AsyncPlayer$Thread;
 
     iput-object p1, p0, Landroid/media/AsyncPlayer;->mThread:Landroid/media/AsyncPlayer$Thread;
 
@@ -135,7 +125,6 @@
 
 .method static synthetic access$500(Landroid/media/AsyncPlayer;)V
     .locals 0
-    .param p0    # Landroid/media/AsyncPlayer;
 
     invoke-direct {p0}, Landroid/media/AsyncPlayer;->releaseWakeLock()V
 
@@ -159,7 +148,6 @@
 
 .method private enqueueLocked(Landroid/media/AsyncPlayer$Command;)V
     .locals 1
-    .param p1    # Landroid/media/AsyncPlayer$Command;
 
     iget-object v0, p0, Landroid/media/AsyncPlayer;->mCmdQueue:Ljava/util/LinkedList;
 
@@ -202,7 +190,6 @@
 
 .method private startSound(Landroid/media/AsyncPlayer$Command;)V
     .locals 8
-    .param p1    # Landroid/media/AsyncPlayer$Command;
 
     :try_start_0
     new-instance v3, Landroid/media/MediaPlayer;
@@ -320,10 +307,6 @@
 # virtual methods
 .method public play(Landroid/content/Context;Landroid/net/Uri;ZI)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/net/Uri;
-    .param p3    # Z
-    .param p4    # I
 
     const/4 v3, 0x1
 
@@ -376,7 +359,6 @@
 
 .method public setUsesWakeLock(Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     iget-object v1, p0, Landroid/media/AsyncPlayer;->mWakeLock:Landroid/os/PowerManager$WakeLock;
 

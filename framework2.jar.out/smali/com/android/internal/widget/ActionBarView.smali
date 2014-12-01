@@ -174,8 +174,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 19
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct/range {p0 .. p2}, Lcom/android/internal/widget/AbsActionBarView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -916,7 +914,6 @@
 
 .method static synthetic access$000(Lcom/android/internal/widget/ActionBarView;)Landroid/app/ActionBar$OnNavigationListener;
     .locals 1
-    .param p0    # Lcom/android/internal/widget/ActionBarView;
 
     iget-object v0, p0, Lcom/android/internal/widget/ActionBarView;->mCallback:Landroid/app/ActionBar$OnNavigationListener;
 
@@ -925,7 +922,6 @@
 
 .method static synthetic access$100(Lcom/android/internal/widget/ActionBarView;)Lcom/android/internal/widget/ActionBarView$ExpandedActionViewMenuPresenter;
     .locals 1
-    .param p0    # Lcom/android/internal/widget/ActionBarView;
 
     iget-object v0, p0, Lcom/android/internal/widget/ActionBarView;->mExpandedMenuPresenter:Lcom/android/internal/widget/ActionBarView$ExpandedActionViewMenuPresenter;
 
@@ -934,7 +930,6 @@
 
 .method static synthetic access$1000(Lcom/android/internal/widget/ActionBarView;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/android/internal/widget/ActionBarView;
 
     iget-object v0, p0, Lcom/android/internal/widget/ActionBarView;->mSubtitleView:Landroid/widget/TextView;
 
@@ -943,7 +938,6 @@
 
 .method static synthetic access$1100(Lcom/android/internal/widget/ActionBarView;)I
     .locals 1
-    .param p0    # Lcom/android/internal/widget/ActionBarView;
 
     iget v0, p0, Lcom/android/internal/widget/ActionBarView;->mActionBarTitleHoveredBackgroundRes:I
 
@@ -952,7 +946,6 @@
 
 .method static synthetic access$1200(Lcom/android/internal/widget/ActionBarView;)Landroid/view/ViewGroup;
     .locals 1
-    .param p0    # Lcom/android/internal/widget/ActionBarView;
 
     iget-object v0, p0, Lcom/android/internal/widget/ActionBarView;->mUpGoerFive:Landroid/view/ViewGroup;
 
@@ -961,7 +954,6 @@
 
 .method static synthetic access$1300(Lcom/android/internal/widget/ActionBarView;)Ljava/lang/CharSequence;
     .locals 1
-    .param p0    # Lcom/android/internal/widget/ActionBarView;
 
     iget-object v0, p0, Lcom/android/internal/widget/ActionBarView;->mSubtitle:Ljava/lang/CharSequence;
 
@@ -970,7 +962,6 @@
 
 .method static synthetic access$1400(Lcom/android/internal/widget/ActionBarView;)Ljava/lang/CharSequence;
     .locals 1
-    .param p0    # Lcom/android/internal/widget/ActionBarView;
 
     iget-object v0, p0, Lcom/android/internal/widget/ActionBarView;->mTitle:Ljava/lang/CharSequence;
 
@@ -979,7 +970,6 @@
 
 .method static synthetic access$1800(Lcom/android/internal/widget/ActionBarView;)Landroid/graphics/drawable/Drawable;
     .locals 1
-    .param p0    # Lcom/android/internal/widget/ActionBarView;
 
     iget-object v0, p0, Lcom/android/internal/widget/ActionBarView;->mIcon:Landroid/graphics/drawable/Drawable;
 
@@ -988,7 +978,6 @@
 
 .method static synthetic access$1900(Lcom/android/internal/widget/ActionBarView;)Lcom/android/internal/widget/ActionBarView$HomeView;
     .locals 1
-    .param p0    # Lcom/android/internal/widget/ActionBarView;
 
     iget-object v0, p0, Lcom/android/internal/widget/ActionBarView;->mExpandedHomeLayout:Lcom/android/internal/widget/ActionBarView$HomeView;
 
@@ -997,7 +986,6 @@
 
 .method static synthetic access$200(Lcom/android/internal/widget/ActionBarView;)Z
     .locals 1
-    .param p0    # Lcom/android/internal/widget/ActionBarView;
 
     iget-boolean v0, p0, Lcom/android/internal/widget/ActionBarView;->mIsTitleHoveredBackground:Z
 
@@ -1006,7 +994,6 @@
 
 .method static synthetic access$2000(Lcom/android/internal/widget/ActionBarView;)Z
     .locals 1
-    .param p0    # Lcom/android/internal/widget/ActionBarView;
 
     iget-boolean v0, p0, Lcom/android/internal/widget/ActionBarView;->mIsParentThemeDeviceDefault:Z
 
@@ -1015,8 +1002,6 @@
 
 .method static synthetic access$202(Lcom/android/internal/widget/ActionBarView;Z)Z
     .locals 0
-    .param p0    # Lcom/android/internal/widget/ActionBarView;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/internal/widget/ActionBarView;->mIsTitleHoveredBackground:Z
 
@@ -1025,7 +1010,6 @@
 
 .method static synthetic access$2100(Lcom/android/internal/widget/ActionBarView;)Lcom/android/internal/widget/ActionBarView$HomeView;
     .locals 1
-    .param p0    # Lcom/android/internal/widget/ActionBarView;
 
     iget-object v0, p0, Lcom/android/internal/widget/ActionBarView;->mHomeLayout:Lcom/android/internal/widget/ActionBarView$HomeView;
 
@@ -1034,7 +1018,6 @@
 
 .method static synthetic access$2200(Lcom/android/internal/widget/ActionBarView;)Landroid/widget/LinearLayout;
     .locals 1
-    .param p0    # Lcom/android/internal/widget/ActionBarView;
 
     iget-object v0, p0, Lcom/android/internal/widget/ActionBarView;->mTitleLayout:Landroid/widget/LinearLayout;
 
@@ -1043,7 +1026,6 @@
 
 .method static synthetic access$2300(Lcom/android/internal/widget/ActionBarView;)Lcom/android/internal/widget/ScrollingTabContainerView;
     .locals 1
-    .param p0    # Lcom/android/internal/widget/ActionBarView;
 
     iget-object v0, p0, Lcom/android/internal/widget/ActionBarView;->mTabScrollView:Lcom/android/internal/widget/ScrollingTabContainerView;
 
@@ -1052,7 +1034,6 @@
 
 .method static synthetic access$2400(Lcom/android/internal/widget/ActionBarView;)Landroid/widget/Spinner;
     .locals 1
-    .param p0    # Lcom/android/internal/widget/ActionBarView;
 
     iget-object v0, p0, Lcom/android/internal/widget/ActionBarView;->mSpinner:Landroid/widget/Spinner;
 
@@ -1061,7 +1042,6 @@
 
 .method static synthetic access$2500(Lcom/android/internal/widget/ActionBarView;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/internal/widget/ActionBarView;
 
     iget-object v0, p0, Lcom/android/internal/widget/ActionBarView;->mCustomNavView:Landroid/view/View;
 
@@ -1070,9 +1050,6 @@
 
 .method static synthetic access$2600(Lcom/android/internal/widget/ActionBarView;ZZ)V
     .locals 0
-    .param p0    # Lcom/android/internal/widget/ActionBarView;
-    .param p1    # Z
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/internal/widget/ActionBarView;->setHomeButtonEnabled(ZZ)V
 
@@ -1081,7 +1058,6 @@
 
 .method static synthetic access$2700(Lcom/android/internal/widget/ActionBarView;)I
     .locals 1
-    .param p0    # Lcom/android/internal/widget/ActionBarView;
 
     iget v0, p0, Lcom/android/internal/widget/ActionBarView;->mDisplayOptions:I
 
@@ -1090,7 +1066,6 @@
 
 .method static synthetic access$2800(Lcom/android/internal/widget/ActionBarView;)V
     .locals 0
-    .param p0    # Lcom/android/internal/widget/ActionBarView;
 
     invoke-direct {p0}, Lcom/android/internal/widget/ActionBarView;->initTitle()V
 
@@ -1099,7 +1074,6 @@
 
 .method static synthetic access$2900(Lcom/android/internal/widget/ActionBarView;)Z
     .locals 1
-    .param p0    # Lcom/android/internal/widget/ActionBarView;
 
     iget-boolean v0, p0, Lcom/android/internal/widget/ActionBarView;->mWasHomeEnabled:Z
 
@@ -1108,7 +1082,6 @@
 
 .method static synthetic access$300(Lcom/android/internal/widget/ActionBarView;)I
     .locals 1
-    .param p0    # Lcom/android/internal/widget/ActionBarView;
 
     iget v0, p0, Lcom/android/internal/widget/ActionBarView;->mActionBarItemBackgroundRes:I
 
@@ -1117,7 +1090,6 @@
 
 .method static synthetic access$400(Lcom/android/internal/widget/ActionBarView;)Z
     .locals 1
-    .param p0    # Lcom/android/internal/widget/ActionBarView;
 
     iget-boolean v0, p0, Lcom/android/internal/widget/ActionBarView;->mMenuPrepared:Z
 
@@ -1126,7 +1098,6 @@
 
 .method static synthetic access$500(Lcom/android/internal/widget/ActionBarView;)Lcom/android/internal/view/menu/ActionMenuItem;
     .locals 1
-    .param p0    # Lcom/android/internal/widget/ActionBarView;
 
     iget-object v0, p0, Lcom/android/internal/widget/ActionBarView;->mLogoNavItem:Lcom/android/internal/view/menu/ActionMenuItem;
 
@@ -1135,7 +1106,6 @@
 
 .method static synthetic access$600(Lcom/android/internal/widget/ActionBarView;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/internal/widget/ActionBarView;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -1144,7 +1114,6 @@
 
 .method static synthetic access$700(Lcom/android/internal/widget/ActionBarView;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/internal/widget/ActionBarView;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -1153,7 +1122,6 @@
 
 .method static synthetic access$800(Lcom/android/internal/widget/ActionBarView;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/internal/widget/ActionBarView;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -1162,7 +1130,6 @@
 
 .method static synthetic access$900(Lcom/android/internal/widget/ActionBarView;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Lcom/android/internal/widget/ActionBarView;
 
     iget-object v0, p0, Lcom/android/internal/widget/ActionBarView;->mTitleView:Landroid/widget/TextView;
 
@@ -1291,7 +1258,6 @@
 
 .method private configPresenters(Lcom/android/internal/view/menu/MenuBuilder;)V
     .locals 4
-    .param p1    # Lcom/android/internal/view/menu/MenuBuilder;
 
     const/4 v3, 0x0
 
@@ -1590,8 +1556,6 @@
 
 .method private setDisplayHomeAsUpOptionsWithAnimation(IJ)V
     .locals 9
-    .param p1    # I
-    .param p2    # J
 
     const/4 v0, -0x1
 
@@ -1787,8 +1751,6 @@
 
 .method private setHomeButtonEnabled(ZZ)V
     .locals 1
-    .param p1    # Z
-    .param p2    # Z
 
     if-eqz p2, :cond_0
 
@@ -1818,7 +1780,6 @@
 
 .method private setTitleImpl(Ljava/lang/CharSequence;)V
     .locals 5
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v2, 0x0
 
@@ -1940,7 +1901,6 @@
 
 .method private updateHomeAccessibility(Z)V
     .locals 2
-    .param p1    # Z
 
     if-nez p1, :cond_0
 
@@ -2126,7 +2086,6 @@
 
 .method public generateLayoutParams(Landroid/util/AttributeSet;)Landroid/view/ViewGroup$LayoutParams;
     .locals 2
-    .param p1    # Landroid/util/AttributeSet;
 
     new-instance v0, Landroid/app/ActionBar$LayoutParams;
 
@@ -2141,7 +2100,6 @@
 
 .method public generateLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Landroid/view/ViewGroup$LayoutParams;
     .locals 0
-    .param p1    # Landroid/view/ViewGroup$LayoutParams;
 
     if-nez p1, :cond_0
 
@@ -2424,7 +2382,6 @@
 
 .method protected onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 10
-    .param p1    # Landroid/content/res/Configuration;
 
     const/16 v9, 0xc
 
@@ -2735,11 +2692,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 39
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     sub-int v3, p5, p3
 
@@ -3681,8 +3633,6 @@
 
 .method protected onMeasure(II)V
     .locals 60
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual/range {p0 .. p0}, Landroid/view/ViewGroup;->getChildCount()I
 
@@ -5713,7 +5663,6 @@
 
 .method public onRestoreInstanceState(Landroid/os/Parcelable;)V
     .locals 4
-    .param p1    # Landroid/os/Parcelable;
 
     move-object v1, p1
 
@@ -5854,7 +5803,6 @@
 
 .method public setCallback(Landroid/app/ActionBar$OnNavigationListener;)V
     .locals 0
-    .param p1    # Landroid/app/ActionBar$OnNavigationListener;
 
     iput-object p1, p0, Lcom/android/internal/widget/ActionBarView;->mCallback:Landroid/app/ActionBar$OnNavigationListener;
 
@@ -5863,7 +5811,6 @@
 
 .method public setCollapsable(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/internal/widget/ActionBarView;->mIsCollapsable:Z
 
@@ -5872,7 +5819,6 @@
 
 .method public setContextView(Lcom/android/internal/widget/ActionBarContextView;)V
     .locals 0
-    .param p1    # Lcom/android/internal/widget/ActionBarContextView;
 
     iput-object p1, p0, Lcom/android/internal/widget/ActionBarView;->mContextView:Lcom/android/internal/widget/ActionBarContextView;
 
@@ -5881,7 +5827,6 @@
 
 .method public setCustomNavigationView(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     iget v1, p0, Lcom/android/internal/widget/ActionBarView;->mDisplayOptions:I
 
@@ -5931,7 +5876,6 @@
 
 .method public setDisplayHomeAsUpEnabledWithAnimation(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/internal/widget/ActionBarView;->mHomeLayout:Lcom/android/internal/widget/ActionBarView$HomeView;
 
@@ -5944,8 +5888,6 @@
 
 .method public setDisplayHomeAsUpEnabledWithAnimation(ZJ)V
     .locals 4
-    .param p1    # Z
-    .param p2    # J
 
     const/4 v0, -0x1
 
@@ -5980,7 +5922,6 @@
 
 .method public setDisplayOptions(I)V
     .locals 11
-    .param p1    # I
 
     const/4 v0, -0x1
 
@@ -6233,7 +6174,6 @@
 
 .method public setDropdownAdapter(Landroid/widget/SpinnerAdapter;)V
     .locals 1
-    .param p1    # Landroid/widget/SpinnerAdapter;
 
     iput-object p1, p0, Lcom/android/internal/widget/ActionBarView;->mSpinnerAdapter:Landroid/widget/SpinnerAdapter;
 
@@ -6251,7 +6191,6 @@
 
 .method public setDropdownSelectedPosition(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/internal/widget/ActionBarView;->mSpinner:Landroid/widget/Spinner;
 
@@ -6262,7 +6201,6 @@
 
 .method public setEmbeddedTabView(Lcom/android/internal/widget/ScrollingTabContainerView;)V
     .locals 4
-    .param p1    # Lcom/android/internal/widget/ScrollingTabContainerView;
 
     const/4 v2, 0x1
 
@@ -6325,7 +6263,6 @@
 
 .method public setHomeActionContentDescription(I)V
     .locals 1
-    .param p1    # I
 
     iput p1, p0, Lcom/android/internal/widget/ActionBarView;->mHomeDescriptionRes:I
 
@@ -6360,7 +6297,6 @@
 
 .method public setHomeActionContentDescription(Ljava/lang/CharSequence;)V
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
 
     iput-object p1, p0, Lcom/android/internal/widget/ActionBarView;->mHomeDescription:Ljava/lang/CharSequence;
 
@@ -6377,7 +6313,6 @@
 
 .method public setHomeAsUpIndicator(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/internal/widget/ActionBarView;->mHomeLayout:Lcom/android/internal/widget/ActionBarView$HomeView;
 
@@ -6388,7 +6323,6 @@
 
 .method public setHomeAsUpIndicator(Landroid/graphics/drawable/Drawable;)V
     .locals 1
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     iget-object v0, p0, Lcom/android/internal/widget/ActionBarView;->mHomeLayout:Lcom/android/internal/widget/ActionBarView$HomeView;
 
@@ -6399,7 +6333,6 @@
 
 .method public setHomeButtonEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     const/4 v0, 0x1
 
@@ -6410,7 +6343,6 @@
 
 .method public setIcon(I)V
     .locals 1
-    .param p1    # I
 
     if-eqz p1, :cond_0
 
@@ -6437,7 +6369,6 @@
 
 .method public setIcon(Landroid/graphics/drawable/Drawable;)V
     .locals 3
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     iput-object p1, p0, Lcom/android/internal/widget/ActionBarView;->mIcon:Landroid/graphics/drawable/Drawable;
 
@@ -6487,7 +6418,6 @@
 
 .method public setLogo(I)V
     .locals 1
-    .param p1    # I
 
     if-eqz p1, :cond_0
 
@@ -6514,7 +6444,6 @@
 
 .method public setLogo(Landroid/graphics/drawable/Drawable;)V
     .locals 1
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     iput-object p1, p0, Lcom/android/internal/widget/ActionBarView;->mLogo:Landroid/graphics/drawable/Drawable;
 
@@ -6536,8 +6465,6 @@
 
 .method public setMenu(Landroid/view/Menu;Lcom/android/internal/view/menu/MenuPresenter$Callback;)V
     .locals 8
-    .param p1    # Landroid/view/Menu;
-    .param p2    # Lcom/android/internal/view/menu/MenuPresenter$Callback;
 
     const/4 v7, -0x1
 
@@ -6770,7 +6697,6 @@
 
 .method public setNavigationMode(I)V
     .locals 11
-    .param p1    # I
 
     const/4 v10, 0x0
 
@@ -7134,7 +7060,6 @@
 
 .method public setSplitActionBar(Z)V
     .locals 5
-    .param p1    # Z
 
     const/4 v2, 0x0
 
@@ -7297,7 +7222,6 @@
 
 .method public setSubtitle(Ljava/lang/CharSequence;)V
     .locals 6
-    .param p1    # Ljava/lang/CharSequence;
 
     const/16 v4, 0x8
 
@@ -7424,7 +7348,6 @@
 
 .method public setTitle(Ljava/lang/CharSequence;)V
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v0, 0x1
 
@@ -7437,7 +7360,6 @@
 
 .method public setWindowCallback(Landroid/view/Window$Callback;)V
     .locals 0
-    .param p1    # Landroid/view/Window$Callback;
 
     iput-object p1, p0, Lcom/android/internal/widget/ActionBarView;->mWindowCallback:Landroid/view/Window$Callback;
 
@@ -7446,7 +7368,6 @@
 
 .method public setWindowTitle(Ljava/lang/CharSequence;)V
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
 
     iget-boolean v0, p0, Lcom/android/internal/widget/ActionBarView;->mUserTitle:Z
 

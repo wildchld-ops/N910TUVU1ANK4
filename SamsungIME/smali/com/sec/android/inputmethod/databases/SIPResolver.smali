@@ -46,7 +46,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -77,7 +76,6 @@
 # virtual methods
 .method public FrequencyUpdateHanja(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     iget-object v1, p0, Lcom/sec/android/inputmethod/databases/SIPResolver;->mFrequencyUpdateTask:Lcom/sec/android/inputmethod/databases/SIPResolver$FrequencyUpdateTask;
@@ -134,7 +132,6 @@
 
 .method public FrequencyUpdateHanjaDB(Ljava/lang/String;)Ljava/lang/Void;
     .locals 10
-    .param p1    # Ljava/lang/String;
 
     const/4 v9, 0x0
 
@@ -238,7 +235,6 @@
 
 .method public SearchHanja(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     iget-object v1, p0, Lcom/sec/android/inputmethod/databases/SIPResolver;->mTask:Lcom/sec/android/inputmethod/databases/SIPResolver$SearchTask;
@@ -308,7 +304,6 @@
 
 .method public SearchHanjaDB(Ljava/lang/String;)Ljava/util/ArrayList;
     .locals 12
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

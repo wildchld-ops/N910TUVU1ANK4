@@ -21,7 +21,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/am/ActivityManagerService;)V
     .locals 0
-    .param p1    # Lcom/android/server/am/ActivityManagerService;
 
     invoke-direct {p0}, Landroid/os/IPermissionController$Stub;-><init>()V
 
@@ -34,9 +33,6 @@
 # virtual methods
 .method public checkPermission(Ljava/lang/String;II)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     iget-object v0, p0, Lcom/android/server/am/ActivityManagerService$PermissionController;->mActivityManagerService:Lcom/android/server/am/ActivityManagerService;
 

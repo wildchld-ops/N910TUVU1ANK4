@@ -34,7 +34,6 @@
 # direct methods
 .method public constructor <init>(Landroid/location/ICountryDetector;)V
     .locals 1
-    .param p1    # Landroid/location/ICountryDetector;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -53,8 +52,6 @@
 # virtual methods
 .method public addCountryListener(Landroid/location/CountryListener;Landroid/os/Looper;)V
     .locals 5
-    .param p1    # Landroid/location/CountryListener;
-    .param p2    # Landroid/os/Looper;
 
     iget-object v3, p0, Landroid/location/CountryDetector;->mListeners:Ljava/util/HashMap;
 
@@ -146,7 +143,6 @@
 
 .method public removeCountryListener(Landroid/location/CountryListener;)V
     .locals 5
-    .param p1    # Landroid/location/CountryListener;
 
     iget-object v3, p0, Landroid/location/CountryDetector;->mListeners:Ljava/util/HashMap;
 

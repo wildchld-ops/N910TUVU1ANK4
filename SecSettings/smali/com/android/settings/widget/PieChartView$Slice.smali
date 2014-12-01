@@ -31,8 +31,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/settings/widget/PieChartView;JI)V
     .locals 1
-    .param p2    # J
-    .param p4    # I
 
     iput-object p1, p0, Lcom/android/settings/widget/PieChartView$Slice;->this$0:Lcom/android/settings/widget/PieChartView;
 

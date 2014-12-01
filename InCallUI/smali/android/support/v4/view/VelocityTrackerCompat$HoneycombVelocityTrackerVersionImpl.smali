@@ -30,8 +30,6 @@
 # virtual methods
 .method public getXVelocity(Landroid/view/VelocityTracker;I)F
     .locals 1
-    .param p1    # Landroid/view/VelocityTracker;
-    .param p2    # I
 
     invoke-static {p1, p2}, Landroid/support/v4/view/VelocityTrackerCompatHoneycomb;->getXVelocity(Landroid/view/VelocityTracker;I)F
 

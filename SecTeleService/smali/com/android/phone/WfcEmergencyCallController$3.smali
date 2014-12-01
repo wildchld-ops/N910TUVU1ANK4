@@ -67,6 +67,24 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
+    const-string v1, "IntentCsTimeoutForEmergency"
+
+    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1
+
+    iget-object v1, p0, Lcom/android/phone/WfcEmergencyCallController$3;->this$0:Lcom/android/phone/WfcEmergencyCallController;
+
+    # invokes: Lcom/android/phone/WfcEmergencyCallController;->handleCSTimeoutForEmergency()V
+    invoke-static {v1}, Lcom/android/phone/WfcEmergencyCallController;->access$500(Lcom/android/phone/WfcEmergencyCallController;)V
+
+    :cond_0
+    :goto_0
+    return-void
+
+    :cond_1
     const-string v1, "IntentDelayedImsRegistration"
 
     invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -78,8 +96,7 @@
     iget-object v1, p0, Lcom/android/phone/WfcEmergencyCallController$3;->this$0:Lcom/android/phone/WfcEmergencyCallController;
 
     # invokes: Lcom/android/phone/WfcEmergencyCallController;->handleDelayedRegistration()V
-    invoke-static {v1}, Lcom/android/phone/WfcEmergencyCallController;->access$500(Lcom/android/phone/WfcEmergencyCallController;)V
+    invoke-static {v1}, Lcom/android/phone/WfcEmergencyCallController;->access$600(Lcom/android/phone/WfcEmergencyCallController;)V
 
-    :cond_0
-    return-void
+    goto :goto_0
 .end method

@@ -159,7 +159,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -172,9 +171,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/database/Cursor;Z)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/database/Cursor;
-    .param p3    # Z
 
     const/4 v1, 0x0
 
@@ -340,7 +336,6 @@
 
 .method private getChosungID(Ljava/lang/String;)Ljava/lang/String;
     .locals 10
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -472,7 +467,6 @@
 
 .method private getCursorForCallLogContacts(Ljava/lang/String;)Landroid/database/Cursor;
     .locals 12
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -644,7 +638,6 @@
 
 .method private isDependentSigns(C)Z
     .locals 10
-    .param p1    # C
 
     const/4 v6, 0x1
 
@@ -711,7 +704,6 @@
 
 .method private queryContactsData(Ljava/lang/String;)Landroid/database/Cursor;
     .locals 10
-    .param p1    # Ljava/lang/String;
 
     const/4 v9, 0x0
 
@@ -890,7 +882,6 @@
 
 .method private usefulAsDigits(Ljava/lang/CharSequence;)Z
     .locals 4
-    .param p1    # Ljava/lang/CharSequence;
 
     invoke-interface {p1}, Ljava/lang/CharSequence;->length()I
 
@@ -984,9 +975,6 @@
 # virtual methods
 .method public final bindView(Landroid/view/View;Landroid/content/Context;Landroid/database/Cursor;)V
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/database/Cursor;
 
     if-eqz p1, :cond_0
 
@@ -1029,7 +1017,6 @@
 
 .method public final convertToString(Landroid/database/Cursor;)Ljava/lang/CharSequence;
     .locals 14
-    .param p1    # Landroid/database/Cursor;
 
     const/4 v10, 0x3
 
@@ -1302,9 +1289,6 @@
 
 .method public newView(Landroid/content/Context;Landroid/database/Cursor;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/database/Cursor;
-    .param p3    # Landroid/view/ViewGroup;
 
     invoke-static {p1}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
 
@@ -1323,7 +1307,6 @@
 
 .method public runQueryOnBackgroundThread(Ljava/lang/CharSequence;)Landroid/database/Cursor;
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
 
     invoke-static {}, Lcom/android/mms/MmsConfig;->getEnablePinyinSearch()Z
 
@@ -1345,8 +1328,6 @@
 
 .method public runQueryOnBackgroundThread(Ljava/lang/CharSequence;I)Landroid/database/Cursor;
     .locals 19
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
 
     if-eqz p1, :cond_0
 
@@ -2117,7 +2098,6 @@
 
 .method public setHighlightedPrefix([C)V
     .locals 0
-    .param p1    # [C
 
     iput-object p1, p0, Lcom/android/mms/ui/RecipientsAdapter;->mHighlightedPrefix:[C
 
@@ -2126,7 +2106,6 @@
 
 .method public setPatternString(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/mms/ui/RecipientsAdapter;->mPatternString:Ljava/lang/String;
 
@@ -2135,7 +2114,6 @@
 
 .method public setPatternStringKor(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/mms/ui/RecipientsAdapter;->mPatternStringKor:Ljava/lang/String;
 
@@ -2144,7 +2122,6 @@
 
 .method public setRecipientsListishowing(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/RecipientsAdapter;->mRecipientsListishowing:Z
 

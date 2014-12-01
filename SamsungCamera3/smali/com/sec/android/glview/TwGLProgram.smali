@@ -98,8 +98,6 @@
 # direct methods
 .method private constructor <init>(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -124,7 +122,6 @@
 
 .method private checkGlError(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     return-void
 .end method
@@ -150,8 +147,6 @@
 
 .method public static getInstance(Ljava/lang/String;Ljava/lang/String;)Lcom/sec/android/glview/TwGLProgram;
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Lcom/sec/android/glview/TwGLProgram;
 
@@ -162,8 +157,6 @@
 
 .method private loadProgram(Ljava/lang/String;Ljava/lang/String;)I
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v7, 0x1
 
@@ -268,8 +261,6 @@
 
 .method private loadShader(ILjava/lang/String;)I
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -343,7 +334,6 @@
 
 .method public static releaseInstance(Lcom/sec/android/glview/TwGLProgram;)V
     .locals 0
-    .param p0    # Lcom/sec/android/glview/TwGLProgram;
 
     if-eqz p0, :cond_0
 
@@ -359,9 +349,6 @@
 # virtual methods
 .method public declared-synchronized addNameIndexer(Ljava/lang/String;II)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     monitor-enter p0
 
@@ -443,7 +430,6 @@
 
 .method public declared-synchronized getNameIndexer(Ljava/lang/String;)Lcom/sec/android/glview/TwGLProgram$NameIndexerObj;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 

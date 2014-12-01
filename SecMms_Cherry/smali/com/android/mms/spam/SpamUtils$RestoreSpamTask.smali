@@ -44,8 +44,6 @@
 
 .method protected static bundleTaskParams(JLjava/lang/String;)Landroid/os/Bundle;
     .locals 2
-    .param p0    # J
-    .param p2    # Ljava/lang/String;
 
     new-instance v0, Landroid/os/Bundle;
 
@@ -64,7 +62,6 @@
 
 .method protected static bundleTaskParams(Landroid/database/Cursor;)Landroid/os/Bundle;
     .locals 6
-    .param p0    # Landroid/database/Cursor;
 
     new-instance v4, Landroid/os/Bundle;
 
@@ -114,7 +111,6 @@
 # virtual methods
 .method protected varargs doInBackground([Landroid/os/Bundle;)Ljava/lang/Boolean;
     .locals 9
-    .param p1    # [Landroid/os/Bundle;
 
     const/4 v4, 0x1
 
@@ -173,7 +169,6 @@
 
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [Landroid/os/Bundle;
 
@@ -186,7 +181,6 @@
 
 .method protected onPostExecute(Ljava/lang/Boolean;)V
     .locals 3
-    .param p1    # Ljava/lang/Boolean;
 
     const/4 v2, 0x1
 
@@ -229,7 +223,6 @@
 
 .method protected bridge synthetic onPostExecute(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Ljava/lang/Boolean;
 

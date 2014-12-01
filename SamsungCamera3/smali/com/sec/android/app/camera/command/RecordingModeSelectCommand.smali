@@ -22,8 +22,6 @@
 # direct methods
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;I)V
     .locals 1
-    .param p1    # Lcom/sec/android/app/camera/Camera;
-    .param p2    # I
 
     const/4 v0, 0x0
 

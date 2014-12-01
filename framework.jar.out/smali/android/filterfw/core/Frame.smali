@@ -32,8 +32,6 @@
 # direct methods
 .method constructor <init>(Landroid/filterfw/core/FrameFormat;Landroid/filterfw/core/FrameManager;)V
     .locals 2
-    .param p1    # Landroid/filterfw/core/FrameFormat;
-    .param p2    # Landroid/filterfw/core/FrameManager;
 
     const/4 v1, 0x0
 
@@ -70,10 +68,6 @@
 
 .method constructor <init>(Landroid/filterfw/core/FrameFormat;Landroid/filterfw/core/FrameManager;IJ)V
     .locals 2
-    .param p1    # Landroid/filterfw/core/FrameFormat;
-    .param p2    # Landroid/filterfw/core/FrameManager;
-    .param p3    # I
-    .param p4    # J
 
     const/4 v1, 0x0
 
@@ -114,7 +108,6 @@
 
 .method protected static convertBitmapToRGBA(Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
     .locals 3
-    .param p0    # Landroid/graphics/Bitmap;
 
     invoke-virtual {p0}, Landroid/graphics/Bitmap;->getConfig()Landroid/graphics/Bitmap$Config;
 
@@ -364,7 +357,6 @@
 
 .method protected requestResize([I)Z
     .locals 1
-    .param p1    # [I
 
     const/4 v0, 0x0
 
@@ -373,7 +365,6 @@
 
 .method protected reset(Landroid/filterfw/core/FrameFormat;)V
     .locals 1
-    .param p1    # Landroid/filterfw/core/FrameFormat;
 
     invoke-virtual {p1}, Landroid/filterfw/core/FrameFormat;->mutableCopy()Landroid/filterfw/core/MutableFrameFormat;
 
@@ -414,7 +405,6 @@
 
 .method public setData(Ljava/nio/ByteBuffer;)V
     .locals 2
-    .param p1    # Ljava/nio/ByteBuffer;
 
     const/4 v0, 0x0
 
@@ -432,9 +422,6 @@
 
 .method public setData([BII)V
     .locals 1
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
 
     invoke-static {p1, p2, p3}, Ljava/nio/ByteBuffer;->wrap([BII)Ljava/nio/ByteBuffer;
 
@@ -447,7 +434,6 @@
 
 .method public setDataFromFrame(Landroid/filterfw/core/Frame;)V
     .locals 1
-    .param p1    # Landroid/filterfw/core/Frame;
 
     invoke-virtual {p1}, Landroid/filterfw/core/Frame;->getData()Ljava/nio/ByteBuffer;
 
@@ -463,7 +449,6 @@
 
 .method protected setFormat(Landroid/filterfw/core/FrameFormat;)V
     .locals 1
-    .param p1    # Landroid/filterfw/core/FrameFormat;
 
     invoke-virtual {p1}, Landroid/filterfw/core/FrameFormat;->mutableCopy()Landroid/filterfw/core/MutableFrameFormat;
 
@@ -476,7 +461,6 @@
 
 .method protected setGenericObjectValue(Ljava/lang/Object;)V
     .locals 3
-    .param p1    # Ljava/lang/Object;
 
     new-instance v0, Ljava/lang/RuntimeException;
 
@@ -512,7 +496,6 @@
 
 .method public setObjectValue(Ljava/lang/Object;)V
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     invoke-virtual {p0}, Landroid/filterfw/core/Frame;->assertFrameMutable()V
 
@@ -572,7 +555,6 @@
 
 .method protected setReusable(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/filterfw/core/Frame;->mReusable:Z
 
@@ -581,7 +563,6 @@
 
 .method public setTimestamp(J)V
     .locals 0
-    .param p1    # J
 
     iput-wide p1, p0, Landroid/filterfw/core/Frame;->mTimestamp:J
 

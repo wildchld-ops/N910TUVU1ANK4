@@ -113,7 +113,7 @@
     const/4 v0, 0x1
 
     :goto_1
-    invoke-virtual {v1, v0}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v1, v0}, Landroid/preference/PreferenceScreen;->setEnabled(Z)V
 
     :cond_0
     return-void
@@ -126,7 +126,7 @@
     :goto_2
     const-string v5, "CallFeaturesSetting"
 
-    invoke-virtual {v0}, Ljava/lang/Throwable;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
 
     move-result-object v0
 

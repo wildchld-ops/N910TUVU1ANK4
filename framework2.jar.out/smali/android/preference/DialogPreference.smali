@@ -39,8 +39,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const v0, 0x1010091
 
@@ -51,9 +49,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 9
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v8, 0x4
 
@@ -184,7 +179,6 @@
 
 .method private requestInputMethod(Landroid/app/Dialog;)V
     .locals 4
-    .param p1    # Landroid/app/Dialog;
 
     invoke-virtual {p1}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
 
@@ -330,7 +324,6 @@
 
 .method protected onBindDialogView(Landroid/view/View;)V
     .locals 4
-    .param p1    # Landroid/view/View;
 
     const v3, 0x102000b
 
@@ -406,8 +399,6 @@
 
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 0
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     iput p2, p0, Landroid/preference/DialogPreference;->mWhichButtonClicked:I
 
@@ -448,14 +439,12 @@
 
 .method protected onDialogClosed(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method public onDismiss(Landroid/content/DialogInterface;)V
     .locals 2
-    .param p1    # Landroid/content/DialogInterface;
 
     invoke-virtual {p0}, Landroid/preference/Preference;->getPreferenceManager()Landroid/preference/PreferenceManager;
 
@@ -488,14 +477,12 @@
 
 .method protected onPrepareDialogBuilder(Landroid/app/AlertDialog$Builder;)V
     .locals 0
-    .param p1    # Landroid/app/AlertDialog$Builder;
 
     return-void
 .end method
 
 .method protected onRestoreInstanceState(Landroid/os/Parcelable;)V
     .locals 3
-    .param p1    # Landroid/os/Parcelable;
 
     if-eqz p1, :cond_0
 
@@ -587,7 +574,6 @@
 
 .method public setDialogIcon(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/preference/Preference;->getContext()Landroid/content/Context;
 
@@ -608,7 +594,6 @@
 
 .method public setDialogIcon(Landroid/graphics/drawable/Drawable;)V
     .locals 0
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     iput-object p1, p0, Landroid/preference/DialogPreference;->mDialogIcon:Landroid/graphics/drawable/Drawable;
 
@@ -617,7 +602,6 @@
 
 .method public setDialogLayoutResource(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/preference/DialogPreference;->mDialogLayoutResId:I
 
@@ -626,7 +610,6 @@
 
 .method public setDialogMessage(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/preference/Preference;->getContext()Landroid/content/Context;
 
@@ -643,7 +626,6 @@
 
 .method public setDialogMessage(Ljava/lang/CharSequence;)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
 
     iput-object p1, p0, Landroid/preference/DialogPreference;->mDialogMessage:Ljava/lang/CharSequence;
 
@@ -652,7 +634,6 @@
 
 .method public setDialogTitle(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/preference/Preference;->getContext()Landroid/content/Context;
 
@@ -669,7 +650,6 @@
 
 .method public setDialogTitle(Ljava/lang/CharSequence;)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
 
     iput-object p1, p0, Landroid/preference/DialogPreference;->mDialogTitle:Ljava/lang/CharSequence;
 
@@ -678,7 +658,6 @@
 
 .method public setNegativeButtonText(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/preference/Preference;->getContext()Landroid/content/Context;
 
@@ -695,7 +674,6 @@
 
 .method public setNegativeButtonText(Ljava/lang/CharSequence;)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
 
     iput-object p1, p0, Landroid/preference/DialogPreference;->mNegativeButtonText:Ljava/lang/CharSequence;
 
@@ -704,7 +682,6 @@
 
 .method public setPositiveButtonText(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/preference/Preference;->getContext()Landroid/content/Context;
 
@@ -721,7 +698,6 @@
 
 .method public setPositiveButtonText(Ljava/lang/CharSequence;)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
 
     iput-object p1, p0, Landroid/preference/DialogPreference;->mPositiveButtonText:Ljava/lang/CharSequence;
 
@@ -730,7 +706,6 @@
 
 .method protected showDialog(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     invoke-virtual {p0}, Landroid/preference/Preference;->getContext()Landroid/content/Context;
 

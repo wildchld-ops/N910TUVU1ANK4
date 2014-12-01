@@ -27,7 +27,6 @@
 
 .method public constructor <init>(I)V
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -68,8 +67,6 @@
 # virtual methods
 .method public append(IZ)V
     .locals 7
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v6, 0x0
 
@@ -221,7 +218,6 @@
 
 .method public delete(I)V
     .locals 6
-    .param p1    # I
 
     iget-object v1, p0, Landroid/util/SparseBooleanArray;->mKeys:[I
 
@@ -273,7 +269,6 @@
 
 .method public get(I)Z
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -286,8 +281,6 @@
 
 .method public get(IZ)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Z
 
     iget-object v1, p0, Landroid/util/SparseBooleanArray;->mKeys:[I
 
@@ -312,7 +305,6 @@
 
 .method public indexOfKey(I)I
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Landroid/util/SparseBooleanArray;->mKeys:[I
 
@@ -327,7 +319,6 @@
 
 .method public indexOfValue(Z)I
     .locals 2
-    .param p1    # Z
 
     const/4 v0, 0x0
 
@@ -358,7 +349,6 @@
 
 .method public keyAt(I)I
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/util/SparseBooleanArray;->mKeys:[I
 
@@ -369,8 +359,6 @@
 
 .method public put(IZ)V
     .locals 8
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v6, 0x0
 
@@ -566,7 +554,6 @@
 
 .method public valueAt(I)Z
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/util/SparseBooleanArray;->mValues:[Z
 

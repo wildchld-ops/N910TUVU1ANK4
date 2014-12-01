@@ -30,7 +30,6 @@
 
 .method static synthetic access$002(Landroid/media/MediaPlayer;)Landroid/media/MediaPlayer;
     .locals 0
-    .param p0    # Landroid/media/MediaPlayer;
 
     sput-object p0, Lcom/android/incallui/operator/dcm/AnswerMemoUtils;->mediaPlayer:Landroid/media/MediaPlayer;
 
@@ -77,7 +76,6 @@
 
 .method public static checkPhoneVibrateOrSilentMode(Landroid/content/Context;)Z
     .locals 5
-    .param p0    # Landroid/content/Context;
 
     const/4 v3, 0x1
 
@@ -182,7 +180,6 @@
 
 .method public static guidanceBeepSoundPlay(Landroid/content/Context;)V
     .locals 6
-    .param p0    # Landroid/content/Context;
 
     const-string v1, "guidance_beep"
 
@@ -315,7 +312,6 @@
 
 .method public static isAutoAnswered(Landroid/content/Context;)Z
     .locals 5
-    .param p0    # Landroid/content/Context;
 
     const/4 v1, 0x1
 
@@ -384,7 +380,6 @@
 
 .method public static isAutoAnsweringMode(Landroid/content/Context;)Z
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     const/4 v3, 0x0
 
@@ -439,7 +434,6 @@
 
 .method public static isGuidancePlaying(Landroid/content/Context;)Z
     .locals 5
-    .param p0    # Landroid/content/Context;
 
     const/4 v1, 0x1
 
@@ -468,7 +462,6 @@
 
 .method public static log(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "AnswerMemoUtils"
 
@@ -491,7 +484,6 @@
 
 .method public static playGuidance(Landroid/content/Context;)V
     .locals 7
-    .param p0    # Landroid/content/Context;
 
     const/4 v6, 0x0
 
@@ -657,8 +649,6 @@
 
 .method public static setAutoAnswered(Landroid/content/Context;Z)V
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -703,7 +693,6 @@
 
 .method public static setAutoAnswered(Z)V
     .locals 1
-    .param p0    # Z
 
     invoke-static {}, Lcom/android/incallui/InCallApp;->getInstance()Lcom/android/incallui/InCallApp;
 
@@ -716,8 +705,6 @@
 
 .method public static setAutoAnsweringMode(Landroid/content/Context;Z)V
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
 
     const-string v1, "callmemo_enabled="
 
@@ -786,7 +773,6 @@
 
 .method public static setAutoAnsweringMode(Z)V
     .locals 1
-    .param p0    # Z
 
     invoke-static {}, Lcom/android/incallui/InCallApp;->getInstance()Lcom/android/incallui/InCallApp;
 

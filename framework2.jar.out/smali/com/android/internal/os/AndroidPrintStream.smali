@@ -12,8 +12,6 @@
 # direct methods
 .method public constructor <init>(ILjava/lang/String;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/internal/os/LoggingPrintStream;-><init>()V
 
@@ -39,7 +37,6 @@
 # virtual methods
 .method protected log(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget v0, p0, Lcom/android/internal/os/AndroidPrintStream;->priority:I
 

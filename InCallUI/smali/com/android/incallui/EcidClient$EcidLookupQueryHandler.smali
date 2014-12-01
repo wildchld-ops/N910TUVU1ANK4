@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/incallui/EcidClient;Landroid/content/ContentResolver;)V
     .locals 0
-    .param p2    # Landroid/content/ContentResolver;
 
     iput-object p1, p0, Lcom/android/incallui/EcidClient$EcidLookupQueryHandler;->this$0:Lcom/android/incallui/EcidClient;
 
@@ -32,8 +31,6 @@
 
 .method private getFlag(Landroid/database/Cursor;I)Z
     .locals 2
-    .param p1    # Landroid/database/Cursor;
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -76,8 +73,6 @@
 
 .method private getString(Landroid/database/Cursor;I)Ljava/lang/String;
     .locals 2
-    .param p1    # Landroid/database/Cursor;
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -99,9 +94,6 @@
 # virtual methods
 .method protected onQueryComplete(ILjava/lang/Object;Landroid/database/Cursor;)V
     .locals 4
-    .param p1    # I
-    .param p2    # Ljava/lang/Object;
-    .param p3    # Landroid/database/Cursor;
 
     const/4 v0, 0x0
 

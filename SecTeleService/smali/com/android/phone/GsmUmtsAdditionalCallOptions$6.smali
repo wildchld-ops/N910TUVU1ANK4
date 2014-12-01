@@ -124,18 +124,18 @@
     move v0, v2
 
     :goto_1
-    invoke-virtual {v4, v0}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v4, v0}, Lcom/android/phone/CallWaitingCheckBoxPreference;->setEnabled(Z)V
 
     :cond_0
     iget-object v0, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions$6;->this$0:Lcom/android/phone/GsmUmtsAdditionalCallOptions;
 
-    invoke-virtual {v0}, Landroid/preference/PreferenceFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {v0}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
     const-string v4, "button_fdn_key"
 
-    invoke-virtual {v0, v4}, Landroid/preference/PreferenceGroup;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {v0, v4}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v4
 
@@ -175,7 +175,7 @@
     if-nez v1, :cond_5
 
     :goto_3
-    invoke-virtual {v0, v2}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v0, v2}, Landroid/preference/PreferenceScreen;->setEnabled(Z)V
 
     :cond_2
     return-void
@@ -188,7 +188,7 @@
     :goto_4
     const-string v6, "GsmUmtsAdditionalCallOptions"
 
-    invoke-virtual {v0}, Ljava/lang/Throwable;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
 
     move-result-object v0
 

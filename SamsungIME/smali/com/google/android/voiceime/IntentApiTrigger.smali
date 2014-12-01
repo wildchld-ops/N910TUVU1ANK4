@@ -44,7 +44,6 @@
 # direct methods
 .method public constructor <init>(Landroid/inputmethodservice/InputMethodService;)V
     .locals 2
-    .param p1    # Landroid/inputmethodservice/InputMethodService;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -117,8 +116,6 @@
 
 .method static synthetic access$000(Lcom/google/android/voiceime/IntentApiTrigger;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/google/android/voiceime/IntentApiTrigger;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/google/android/voiceime/IntentApiTrigger;->postResult(Ljava/lang/String;)V
 
@@ -127,7 +124,6 @@
 
 .method static synthetic access$100(Lcom/google/android/voiceime/IntentApiTrigger;)V
     .locals 0
-    .param p0    # Lcom/google/android/voiceime/IntentApiTrigger;
 
     invoke-direct {p0}, Lcom/google/android/voiceime/IntentApiTrigger;->commitResult()V
 
@@ -274,8 +270,6 @@
 
 .method private format(Landroid/view/inputmethod/ExtractedText;Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Landroid/view/inputmethod/ExtractedText;
-    .param p2    # Ljava/lang/String;
 
     iget v1, p1, Landroid/view/inputmethod/ExtractedText;->selectionStart:I
 
@@ -462,7 +456,6 @@
 
 .method public static isInstalled(Landroid/inputmethodservice/InputMethodService;)Z
     .locals 5
-    .param p0    # Landroid/inputmethodservice/InputMethodService;
 
     const/4 v2, 0x0
 
@@ -494,7 +487,6 @@
 
 .method private postResult(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/google/android/voiceime/IntentApiTrigger;->mLastRecognitionResult:Ljava/lang/String;
 
@@ -575,7 +567,6 @@
 
 .method public startVoiceRecognition(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/google/android/voiceime/IntentApiTrigger;->mInputMethodService:Landroid/inputmethodservice/InputMethodService;
 

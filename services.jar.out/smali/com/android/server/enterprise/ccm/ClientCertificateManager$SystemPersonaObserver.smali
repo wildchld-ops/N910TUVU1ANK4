@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Lcom/android/server/enterprise/ccm/ClientCertificateManager;Lcom/android/server/enterprise/ccm/ClientCertificateManager$1;)V
     .locals 0
-    .param p1    # Lcom/android/server/enterprise/ccm/ClientCertificateManager;
-    .param p2    # Lcom/android/server/enterprise/ccm/ClientCertificateManager$1;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/ccm/ClientCertificateManager$SystemPersonaObserver;-><init>(Lcom/android/server/enterprise/ccm/ClientCertificateManager;)V
 
@@ -43,7 +41,6 @@
 # virtual methods
 .method public onPersonaActive(I)V
     .locals 3
-    .param p1    # I
 
     # getter for: Lcom/android/server/enterprise/ccm/ClientCertificateManager;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/android/server/enterprise/ccm/ClientCertificateManager;->access$200()Ljava/lang/String;
@@ -75,7 +72,6 @@
 
 .method public onRemovePersona(I)V
     .locals 3
-    .param p1    # I
 
     # getter for: Lcom/android/server/enterprise/ccm/ClientCertificateManager;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/android/server/enterprise/ccm/ClientCertificateManager;->access$200()Ljava/lang/String;
@@ -129,7 +125,6 @@
 
 .method public onResetPersona(I)V
     .locals 3
-    .param p1    # I
 
     # getter for: Lcom/android/server/enterprise/ccm/ClientCertificateManager;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/android/server/enterprise/ccm/ClientCertificateManager;->access$200()Ljava/lang/String;
@@ -183,9 +178,6 @@
 
 .method public onSwitchPersona(IIZ)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     # getter for: Lcom/android/server/enterprise/ccm/ClientCertificateManager;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/android/server/enterprise/ccm/ClientCertificateManager;->access$200()Ljava/lang/String;

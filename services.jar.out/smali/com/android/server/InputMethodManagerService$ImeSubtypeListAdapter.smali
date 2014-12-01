@@ -59,9 +59,6 @@
 
 .method public constructor <init>(Landroid/content/Context;ILjava/util/List;I)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p4    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -107,9 +104,6 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 12
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     const/16 v11, 0x8
 
@@ -254,7 +248,6 @@
 
 .method public isEnabled(I)Z
     .locals 1
-    .param p1    # I
 
     sget-boolean v0, Lcom/android/server/InputMethodManagerService$ImeSubtypeListAdapter;->mSwitchingDialogAllListItemEnabled:Z
 
@@ -263,7 +256,6 @@
 
 .method public setAllListItemEnabled(Z)V
     .locals 0
-    .param p1    # Z
 
     sput-boolean p1, Lcom/android/server/InputMethodManagerService$ImeSubtypeListAdapter;->mSwitchingDialogAllListItemEnabled:Z
 
@@ -272,8 +264,6 @@
 
 .method public setAllListItemEnabled(ZLandroid/view/View;)V
     .locals 6
-    .param p1    # Z
-    .param p2    # Landroid/view/View;
 
     const/4 v5, 0x1
 

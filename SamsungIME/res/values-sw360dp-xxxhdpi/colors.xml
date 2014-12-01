@@ -33,13 +33,13 @@
     <color name="keypad_bg_color">#ff83878d</color>
     <color name="handwriting_panel_color">#ffbcbcbc</color>
     <color name="keypad_upper_line_color">#ffadafb2</color>
+    <item type="color" name="APKTOOL_DUMMY_004d">false</item>
     <color name="pressedkey_extra_labelcolor">#ff383838</color>
     <color name="pressed_numberkey_extra_labelcolor">#ff122438</color>
     <color name="numberkey_extra_labelcolor">#7f000000</color>
     <color name="phonepad_text_labelcolor">#7f000000</color>
     <color name="phonepad_text_labelcolor_press">#7f000000</color>
     <color name="phonepad_month_number_text_labelcolor">#7f000000</color>
-    <item type="color" name="APKTOOL_DUMMY_004d">false</item>
     <item type="color" name="APKTOOL_DUMMY_0054">false</item>
     <item type="color" name="APKTOOL_DUMMY_0055">false</item>
     <item type="color" name="APKTOOL_DUMMY_0056">false</item>

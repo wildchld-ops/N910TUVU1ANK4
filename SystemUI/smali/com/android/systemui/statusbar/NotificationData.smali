@@ -60,12 +60,6 @@
 # virtual methods
 .method public add(Landroid/os/IBinder;Landroid/service/notification/StatusBarNotification;Lcom/android/systemui/statusbar/ExpandableNotificationRow;Landroid/view/View;Landroid/view/View;Lcom/android/systemui/statusbar/StatusBarIconView;)I
     .locals 2
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Landroid/service/notification/StatusBarNotification;
-    .param p3    # Lcom/android/systemui/statusbar/ExpandableNotificationRow;
-    .param p4    # Landroid/view/View;
-    .param p5    # Landroid/view/View;
-    .param p6    # Lcom/android/systemui/statusbar/StatusBarIconView;
 
     new-instance v0, Lcom/android/systemui/statusbar/NotificationData$Entry;
 
@@ -96,7 +90,6 @@
 
 .method public add(Lcom/android/systemui/statusbar/NotificationData$Entry;)I
     .locals 4
-    .param p1    # Lcom/android/systemui/statusbar/NotificationData$Entry;
 
     iget-object v2, p0, Lcom/android/systemui/statusbar/NotificationData;->mEntries:Ljava/util/ArrayList;
 
@@ -138,7 +131,6 @@
 
 .method public findByKey(Landroid/os/IBinder;)Lcom/android/systemui/statusbar/NotificationData$Entry;
     .locals 3
-    .param p1    # Landroid/os/IBinder;
 
     iget-object v2, p0, Lcom/android/systemui/statusbar/NotificationData;->mEntries:Ljava/util/ArrayList;
 
@@ -174,7 +166,6 @@
 
 .method public get(I)Lcom/android/systemui/statusbar/NotificationData$Entry;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/NotificationData;->mEntries:Ljava/util/ArrayList;
 
@@ -271,7 +262,6 @@
 
 .method public remove(Landroid/os/IBinder;)Lcom/android/systemui/statusbar/NotificationData$Entry;
     .locals 2
-    .param p1    # Landroid/os/IBinder;
 
     invoke-virtual {p0, p1}, Lcom/android/systemui/statusbar/NotificationData;->findByKey(Landroid/os/IBinder;)Lcom/android/systemui/statusbar/NotificationData$Entry;
 

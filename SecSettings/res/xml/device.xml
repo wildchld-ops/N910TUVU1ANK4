@@ -2,11 +2,8 @@
 <PreferenceScreen android:title="Infamous Settings"
   xmlns:android="http://schemas.android.com/apk/res/android">
     <PreferenceCategory android:title="Infamous tweaks">
-        <PreferenceScreen android:title="Custom Settings">
+        <PreferenceScreen android:title="InfamousROM Settings" android:summary="Tweak your brains out!">
             <intent android:targetPackage="com.ficeto.customsettings" android:action="android.intent.action.MAIN" android:targetClass="com.ficeto.customsettings.RandomActivity" />
-        </PreferenceScreen>
-        <PreferenceScreen android:title="3MinitBattery">
-            <intent android:targetPackage="com.three.minit.minitbatterysettings" android:action="android.intent.action.MAIN" android:targetClass="com.three.minit.minitbatterysettings.MainActivity" />
         </PreferenceScreen>
         <PreferenceScreen android:title="CPU">
             <intent android:targetPackage="com.infamous.cpu" android:action="android.intent.action.MAIN" android:targetClass="com.infamous.cpu.MainActivity" />

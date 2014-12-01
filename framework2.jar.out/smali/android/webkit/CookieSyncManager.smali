@@ -51,7 +51,6 @@
 
 .method public static declared-synchronized createInstance(Landroid/content/Context;)Landroid/webkit/CookieSyncManager;
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     const-class v1, Landroid/webkit/CookieSyncManager;
 

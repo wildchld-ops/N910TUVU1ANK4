@@ -94,7 +94,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -197,8 +196,6 @@
 
 .method static synthetic access$002(Landroid/app/BarBeamService;Z)Z
     .locals 0
-    .param p0    # Landroid/app/BarBeamService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/app/BarBeamService;->isRunning:Z
 
@@ -207,8 +204,6 @@
 
 .method static synthetic access$100(Landroid/app/BarBeamService;Z)V
     .locals 0
-    .param p0    # Landroid/app/BarBeamService;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Landroid/app/BarBeamService;->setLEDNotification(Z)V
 
@@ -217,7 +212,6 @@
 
 .method private setLEDNotification(Z)V
     .locals 9
-    .param p1    # Z
 
     const/16 v8, 0x1428
 
@@ -302,7 +296,6 @@
 # virtual methods
 .method public addListener(Landroid/os/IBinder;)V
     .locals 9
-    .param p1    # Landroid/os/IBinder;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1231,7 +1224,6 @@
 
 .method public removeListener(Landroid/os/IBinder;)V
     .locals 7
-    .param p1    # Landroid/os/IBinder;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1325,7 +1317,6 @@
 
 .method public setBarcode([B)V
     .locals 10
-    .param p1    # [B
 
     const/4 v9, 0x0
 
@@ -1675,9 +1666,6 @@
 
 .method public setHopSequence([BII)V
     .locals 14
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
 
     const-string v11, "BarBeamService"
 
@@ -3188,7 +3176,6 @@
 
 .method public startBeaming_repeat(I)V
     .locals 14
-    .param p1    # I
 
     const/4 v12, 0x1
 

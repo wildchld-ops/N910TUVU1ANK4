@@ -64,7 +64,6 @@
 # virtual methods
 .method public parse(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p1}, Ljava/lang/String;->length()I
 

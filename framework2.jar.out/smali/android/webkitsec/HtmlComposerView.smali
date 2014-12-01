@@ -410,7 +410,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
 
     const/4 v5, 0x1
 
@@ -659,8 +658,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v5, 0x1
 
@@ -907,9 +904,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v5, 0x1
 
@@ -1156,8 +1150,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Ljava/lang/String;)V
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
 
     const/4 v6, 0x1
 
@@ -1406,8 +1398,6 @@
 
 .method private HtmlComposerViewInit(Ljava/lang/String;Ljava/lang/String;)V
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/16 v9, 0x140
 
@@ -1799,7 +1789,6 @@
 
 .method static synthetic access$000(Landroid/webkitsec/HtmlComposerView;)Ljava/lang/String;
     .locals 1
-    .param p0    # Landroid/webkitsec/HtmlComposerView;
 
     iget-object v0, p0, Landroid/webkitsec/HtmlComposerView;->mCaller:Ljava/lang/String;
 
@@ -1808,7 +1797,6 @@
 
 .method static synthetic access$100(Landroid/webkitsec/HtmlComposerView;)Landroid/content/BroadcastReceiver;
     .locals 1
-    .param p0    # Landroid/webkitsec/HtmlComposerView;
 
     iget-object v0, p0, Landroid/webkitsec/HtmlComposerView;->mReceiver:Landroid/content/BroadcastReceiver;
 
@@ -1817,7 +1805,6 @@
 
 .method static synthetic access$1000(Landroid/webkitsec/HtmlComposerView;)Landroid/webkitsec/HtmlComposerInputConnection;
     .locals 1
-    .param p0    # Landroid/webkitsec/HtmlComposerView;
 
     iget-object v0, p0, Landroid/webkitsec/HtmlComposerView;->mHtmlComposerInputConnection:Landroid/webkitsec/HtmlComposerInputConnection;
 
@@ -1826,8 +1813,6 @@
 
 .method static synthetic access$1100(Landroid/webkitsec/HtmlComposerView;Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Landroid/webkitsec/HtmlComposerView;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Landroid/webkitsec/HtmlComposerView;->insertImageWithResizing(Ljava/lang/String;)Z
 
@@ -1838,7 +1823,6 @@
 
 .method static synthetic access$1200(Landroid/webkitsec/HtmlComposerView;)Landroid/widget/Toast;
     .locals 1
-    .param p0    # Landroid/webkitsec/HtmlComposerView;
 
     iget-object v0, p0, Landroid/webkitsec/HtmlComposerView;->mToastForClipboard:Landroid/widget/Toast;
 
@@ -1847,8 +1831,6 @@
 
 .method static synthetic access$1202(Landroid/webkitsec/HtmlComposerView;Landroid/widget/Toast;)Landroid/widget/Toast;
     .locals 0
-    .param p0    # Landroid/webkitsec/HtmlComposerView;
-    .param p1    # Landroid/widget/Toast;
 
     iput-object p1, p0, Landroid/webkitsec/HtmlComposerView;->mToastForClipboard:Landroid/widget/Toast;
 
@@ -1857,7 +1839,6 @@
 
 .method static synthetic access$1300(Landroid/webkitsec/HtmlComposerView;)Landroid/content/Context;
     .locals 1
-    .param p0    # Landroid/webkitsec/HtmlComposerView;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -1866,7 +1847,6 @@
 
 .method static synthetic access$1400(Landroid/webkitsec/HtmlComposerView;)V
     .locals 0
-    .param p0    # Landroid/webkitsec/HtmlComposerView;
 
     invoke-direct {p0}, Landroid/webkitsec/HtmlComposerView;->getSelectionOffsetImage()V
 
@@ -1875,7 +1855,6 @@
 
 .method static synthetic access$1500(Landroid/webkitsec/HtmlComposerView;)Landroid/content/Context;
     .locals 1
-    .param p0    # Landroid/webkitsec/HtmlComposerView;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -1884,7 +1863,6 @@
 
 .method static synthetic access$300(Landroid/webkitsec/HtmlComposerView;)Z
     .locals 1
-    .param p0    # Landroid/webkitsec/HtmlComposerView;
 
     iget-boolean v0, p0, Landroid/webkitsec/HtmlComposerView;->mIsPenSelection:Z
 
@@ -1893,8 +1871,6 @@
 
 .method static synthetic access$302(Landroid/webkitsec/HtmlComposerView;Z)Z
     .locals 0
-    .param p0    # Landroid/webkitsec/HtmlComposerView;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/webkitsec/HtmlComposerView;->mIsPenSelection:Z
 
@@ -1903,7 +1879,6 @@
 
 .method static synthetic access$400(Landroid/webkitsec/HtmlComposerView;)Landroid/content/Context;
     .locals 1
-    .param p0    # Landroid/webkitsec/HtmlComposerView;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -1912,7 +1887,6 @@
 
 .method static synthetic access$500(Landroid/webkitsec/HtmlComposerView;)Landroid/content/Context;
     .locals 1
-    .param p0    # Landroid/webkitsec/HtmlComposerView;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -1921,7 +1895,6 @@
 
 .method static synthetic access$600(Landroid/webkitsec/HtmlComposerView;)Landroid/content/Context;
     .locals 1
-    .param p0    # Landroid/webkitsec/HtmlComposerView;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -1930,7 +1903,6 @@
 
 .method static synthetic access$700(Landroid/webkitsec/HtmlComposerView;)Landroid/content/Context;
     .locals 1
-    .param p0    # Landroid/webkitsec/HtmlComposerView;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -1939,7 +1911,6 @@
 
 .method static synthetic access$800(Landroid/webkitsec/HtmlComposerView;)Landroid/content/Context;
     .locals 1
-    .param p0    # Landroid/webkitsec/HtmlComposerView;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -1948,8 +1919,6 @@
 
 .method static synthetic access$902(Landroid/webkitsec/HtmlComposerView;Z)Z
     .locals 0
-    .param p0    # Landroid/webkitsec/HtmlComposerView;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/webkitsec/HtmlComposerView;->mIsSCHMenu:Z
 
@@ -2029,8 +1998,6 @@
 
 .method private copyFile(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v7, 0x0
 
@@ -2342,9 +2309,6 @@
 
 .method private drawImageResizeMoveHandlers(Landroid/graphics/Canvas;Landroid/graphics/Path;Landroid/graphics/Path;)V
     .locals 12
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # Landroid/graphics/Path;
-    .param p3    # Landroid/graphics/Path;
 
     const/4 v11, 0x1
 
@@ -2715,7 +2679,6 @@
 
 .method private drawWebImageSelectionControl(Landroid/graphics/Canvas;)V
     .locals 2
-    .param p1    # Landroid/graphics/Canvas;
 
     iget-object v0, p0, Landroid/webkitsec/HtmlComposerView;->mWebViewClassic:Landroid/webkitsec/WebViewClassic;
 
@@ -2820,7 +2783,6 @@
 
 .method private getDegreeOfRotatedImage(Landroid/net/Uri;)I
     .locals 13
-    .param p1    # Landroid/net/Uri;
 
     const/4 v8, 0x0
 
@@ -2999,7 +2961,6 @@
 
 .method private getLoadableContent(Ljava/lang/String;)Ljava/lang/String;
     .locals 16
-    .param p1    # Ljava/lang/String;
 
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -3493,7 +3454,6 @@
 
 .method private getSelectionOffsetImage(Landroid/graphics/Rect;)V
     .locals 3
-    .param p1    # Landroid/graphics/Rect;
 
     iget-object v0, p0, Landroid/webkitsec/HtmlComposerView;->mWebViewClassic:Landroid/webkitsec/WebViewClassic;
 
@@ -3569,9 +3529,6 @@
 
 .method private getSelectionOffsetImage(Landroid/graphics/Rect;Landroid/graphics/Path;Landroid/graphics/Path;)V
     .locals 3
-    .param p1    # Landroid/graphics/Rect;
-    .param p2    # Landroid/graphics/Path;
-    .param p3    # Landroid/graphics/Path;
 
     iget-object v0, p0, Landroid/webkitsec/HtmlComposerView;->mWebViewClassic:Landroid/webkitsec/WebViewClassic;
 
@@ -3667,8 +3624,6 @@
 
 .method private handleBottomMiddleHandleDrag(II)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     const/high16 v5, 0x42c80000
 
@@ -3752,8 +3707,6 @@
 
 .method private handleLeftBottomHandleDrag(II)V
     .locals 11
-    .param p1    # I
-    .param p2    # I
 
     const/16 v10, 0xa
 
@@ -3997,8 +3950,6 @@
 
 .method private handleLeftMiddleHandleDrag(II)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     const/high16 v5, 0x42c80000
 
@@ -4074,8 +4025,6 @@
 
 .method private handleLeftTopHandleDrag(II)V
     .locals 11
-    .param p1    # I
-    .param p2    # I
 
     const/16 v10, 0xa
 
@@ -4315,7 +4264,6 @@
 
 .method private handleNavKeys(I)V
     .locals 7
-    .param p1    # I
 
     const/4 v6, 0x1
 
@@ -4744,8 +4692,6 @@
 
 .method private handleRightBottomHandleDrag(II)V
     .locals 13
-    .param p1    # I
-    .param p2    # I
 
     const/16 v12, 0xa
 
@@ -5062,8 +5008,6 @@
 
 .method private handleRightMiddleHandleDrag(II)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     const/high16 v5, 0x42c80000
 
@@ -5139,8 +5083,6 @@
 
 .method private handleRightTopHandleDrag(II)V
     .locals 13
-    .param p1    # I
-    .param p2    # I
 
     const/16 v12, 0xa
 
@@ -5453,8 +5395,6 @@
 
 .method private handleTopMiddleHandleDrag(II)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     const/high16 v5, 0x42c80000
 
@@ -5560,10 +5500,6 @@
 
 .method private handle_ACTION_DOWN(IIII)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/high16 v3, 0x40000000
 
@@ -6097,8 +6033,6 @@
 
 .method private handle_ACTION_MOVE(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     const/4 v2, 0x1
 
@@ -6442,8 +6376,6 @@
 
 .method private handle_ACTION_UP(II)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
 
     const/4 v4, 0x0
 
@@ -6633,7 +6565,6 @@
 
 .method private imageCopy(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -6661,7 +6592,6 @@
 
 .method private insertImageContent(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/webkitsec/HtmlComposerView;->mWebViewClassic:Landroid/webkitsec/WebViewClassic;
 
@@ -6687,7 +6617,6 @@
 
 .method private insertImageWithResizing(Ljava/lang/String;)Z
     .locals 29
-    .param p1    # Ljava/lang/String;
 
     const/16 v19, 0x0
 
@@ -7696,8 +7625,6 @@
 
 .method private isBottomMiddleImageHandle(II)Z
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     move v0, p1
 
@@ -7906,8 +7833,6 @@
 
 .method private isCursorAtBoundary(II)I
     .locals 5
-    .param p1    # I
-    .param p2    # I
 
     const/4 v2, 0x0
 
@@ -8033,8 +7958,6 @@
 
 .method private isHoverPointWithinIconAreaForResizing(II)Z
     .locals 12
-    .param p1    # I
-    .param p2    # I
 
     const v11, 0x1080702
 
@@ -8642,7 +8565,6 @@
 
 .method private isInsertionAllowed(I)Z
     .locals 6
-    .param p1    # I
 
     const/4 v3, 0x1
 
@@ -8691,8 +8613,6 @@
 
 .method private isOutLineRect(II)Z
     .locals 5
-    .param p1    # I
-    .param p2    # I
 
     move v0, p1
 
@@ -8825,8 +8745,6 @@
 
 .method private isRightBottomImageHandle(II)Z
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     move v0, p1
 
@@ -9035,8 +8953,6 @@
 
 .method private isRightMiddleImageHandle(II)Z
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     move v0, p1
 
@@ -9245,8 +9161,6 @@
 
 .method private isRightTopImageHandle(II)Z
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     move v0, p1
 
@@ -9455,8 +9369,6 @@
 
 .method private isTopMiddleImageHandle(II)Z
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     move v0, p1
 
@@ -9665,8 +9577,6 @@
 
 .method private isleftBottomImageHandle(II)Z
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     move v0, p1
 
@@ -9875,8 +9785,6 @@
 
 .method private isleftMiddleImageHandle(II)Z
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     move v0, p1
 
@@ -10085,8 +9993,6 @@
 
 .method private isleftTopImageHandle(II)Z
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     move v0, p1
 
@@ -10748,7 +10654,6 @@
 
 .method private setEditable(Z)V
     .locals 3
-    .param p1    # Z
 
     const/16 v2, 0x207
 
@@ -11300,8 +11205,6 @@
 
 .method private updateOutlineRectangle(II)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     const/4 v3, 0x1
 
@@ -12430,7 +12333,6 @@
 
 .method public HtmlComposerDrawContent(Landroid/graphics/Canvas;)V
     .locals 9
-    .param p1    # Landroid/graphics/Canvas;
 
     const/4 v2, 0x1
 
@@ -12559,8 +12461,6 @@
 
 .method public IsWordMisspelledAtPosition(II)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Landroid/webkitsec/HtmlComposerView;->mWebViewClassic:Landroid/webkitsec/WebViewClassic;
 
@@ -12613,7 +12513,6 @@
 
 .method public SetContextMenuVisible(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/webkitsec/HtmlComposerView;->isContextMenuVisible:Z
 
@@ -12622,7 +12521,6 @@
 
 .method public SetLongPressForActioinPopup(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/webkitsec/HtmlComposerView;->mLongPressForActionPopup:Z
 
@@ -12631,7 +12529,6 @@
 
 .method public UpdateRichTextToolbar(Z)V
     .locals 2
-    .param p1    # Z
 
     const/4 v1, 0x1
 
@@ -12679,7 +12576,6 @@
 
 .method public addTextChangedListener(Landroid/text/TextWatcher;)V
     .locals 0
-    .param p1    # Landroid/text/TextWatcher;
 
     iput-object p1, p0, Landroid/webkitsec/HtmlComposerView;->textWatcher:Landroid/text/TextWatcher;
 
@@ -12688,7 +12584,6 @@
 
 .method public append(Ljava/lang/CharSequence;)V
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
 
     sget-object v0, Landroid/webkitsec/HtmlComposerView$InsertionPosition;->INSERT_AT_END:Landroid/webkitsec/HtmlComposerView$InsertionPosition;
 
@@ -13033,7 +12928,6 @@
 
 .method public changeFontBackColorForSelection(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "BackColor"
 
@@ -13044,7 +12938,6 @@
 
 .method public changeFontColorForSelection(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "ForeColor"
 
@@ -13059,7 +12952,6 @@
 
 .method public changeFontNameForSelection(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Landroid/webkitsec/HtmlComposerView;->clearComposingSelection()V
 
@@ -13076,7 +12968,6 @@
 
 .method public changeFontSize(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "FontValue"
 
@@ -13091,7 +12982,6 @@
 
 .method public changeFontSizeForSelection(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Landroid/webkitsec/HtmlComposerView;->clearComposingSelection()V
 
@@ -13408,8 +13298,6 @@
 
 .method public commitInputMethodText(Ljava/lang/String;I)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     iget-object v0, p0, Landroid/webkitsec/HtmlComposerView;->mWebViewClassic:Landroid/webkitsec/WebViewClassic;
 
@@ -13629,8 +13517,6 @@
 
 .method public deleteSurroundingText(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Landroid/webkitsec/HtmlComposerView;->mWebViewClassic:Landroid/webkitsec/WebViewClassic;
 
@@ -13783,7 +13669,6 @@
 
 .method public dispatchKeyEvent(Landroid/view/KeyEvent;)Z
     .locals 26
-    .param p1    # Landroid/view/KeyEvent;
 
     const/16 v24, 0x0
 
@@ -15305,7 +15190,6 @@
 
 .method public dispatchPopulateAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)Z
     .locals 2
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
 
     invoke-super {p0, p1}, Landroid/view/View;->dispatchPopulateAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)Z
 
@@ -15327,8 +15211,6 @@
 
 .method public doExecute(Landroid/os/Bundle;Landroid/os/Bundle;)Landroid/os/Bundle;
     .locals 1
-    .param p1    # Landroid/os/Bundle;
-    .param p2    # Landroid/os/Bundle;
 
     const/4 v0, 0x0
 
@@ -15337,8 +15219,6 @@
 
 .method public doResizeImage(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Landroid/webkitsec/HtmlComposerView;->mWebViewClassic:Landroid/webkitsec/WebViewClassic;
 
@@ -15396,7 +15276,6 @@
 
 .method public drawSelectionControl(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Landroid/webkitsec/HtmlComposerView;->mWebViewClassic:Landroid/webkitsec/WebViewClassic;
 
@@ -15447,7 +15326,6 @@
 
 .method public drawSelectionControl(Z)V
     .locals 3
-    .param p1    # Z
 
     const/4 v2, 0x1
 
@@ -15502,8 +15380,6 @@
 
 .method public dropTheDraggedText(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Landroid/webkitsec/HtmlComposerView;->mWebViewClassic:Landroid/webkitsec/WebViewClassic;
 
@@ -15573,8 +15449,6 @@
 
 .method public execEditorCommand(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const v6, 0x1040bf6
 
@@ -15789,7 +15663,6 @@
 
 .method public executeHyperlink(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Landroid/webkitsec/HtmlComposerView;->clearComposingSelection()V
 
@@ -16192,7 +16065,6 @@
 
 .method public getContentX(I)I
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Landroid/webkitsec/HtmlComposerView;->mWebViewClassic:Landroid/webkitsec/WebViewClassic;
 
@@ -16209,7 +16081,6 @@
 
 .method public getContentY(I)I
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Landroid/webkitsec/HtmlComposerView;->mWebViewClassic:Landroid/webkitsec/WebViewClassic;
 
@@ -16413,7 +16284,6 @@
 
 .method public getCursorRect(Z)Landroid/graphics/Rect;
     .locals 6
-    .param p1    # Z
 
     iget-object v4, p0, Landroid/webkitsec/HtmlComposerView;->mWebViewClassic:Landroid/webkitsec/WebViewClassic;
 
@@ -16565,8 +16435,6 @@
 
 .method public getImageSize(II)Landroid/graphics/Rect;
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     iget-object v4, p0, Landroid/webkitsec/HtmlComposerView;->mWebViewClassic:Landroid/webkitsec/WebViewClassic;
 
@@ -17698,8 +17566,6 @@
 
 .method public getTextAroundCursor(ILandroid/webkitsec/HtmlComposerView$CursorDirection;)Ljava/lang/String;
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/webkitsec/HtmlComposerView$CursorDirection;
 
     const/4 v3, 0x0
 
@@ -17841,11 +17707,6 @@
 
 .method protected handle_onTouchEvent(IIIII)Z
     .locals 21
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -20119,8 +19980,6 @@
 
 .method initImageResizeControls(Landroid/content/Context;Landroid/graphics/Rect;)V
     .locals 10
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/graphics/Rect;
 
     const/4 v9, -0x1
 
@@ -20641,8 +20500,6 @@
 
 .method public insertContent(Ljava/lang/CharSequence;Landroid/webkitsec/HtmlComposerView$InsertionPosition;)Z
     .locals 4
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Landroid/webkitsec/HtmlComposerView$InsertionPosition;
 
     const/4 v3, 0x0
 
@@ -20710,10 +20567,6 @@
 
 .method public insertImage(Ljava/lang/String;IIZ)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Z
 
     const/4 v0, 0x1
 
@@ -20749,8 +20602,6 @@
 
 .method public insertImage(Ljava/lang/String;Z)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const/4 v0, 0x1
 
@@ -20786,7 +20637,6 @@
 
 .method public insertImage(Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -20868,9 +20718,6 @@
 
 .method public insertImage(Ljava/lang/String;II)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v2, 0x0
 
@@ -21036,9 +20883,6 @@
 
 .method public insertTextContent(Ljava/lang/String;IZLjava/util/Vector;)Landroid/webkitsec/HtmlComposerView$SelectionOffset;
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -21208,7 +21052,6 @@
 
 .method public invokeTexttoSpeech(I)V
     .locals 6
-    .param p1    # I
 
     const/4 v5, 0x0
 
@@ -21674,8 +21517,6 @@
 
 .method public isTouchedOutside(II)Z
     .locals 8
-    .param p1    # I
-    .param p2    # I
 
     const/4 v5, 0x0
 
@@ -21819,7 +21660,6 @@
 
 .method public isVisibleCursorHandler(I)V
     .locals 5
-    .param p1    # I
 
     const/4 v4, 0x0
 
@@ -21983,7 +21823,6 @@
 
 .method public isVisibleCursorhandlerListener(Landroid/webkitsec/HtmlComposerViewUtils$HtmlComposerViewCursorHandlerListener;)V
     .locals 0
-    .param p1    # Landroid/webkitsec/HtmlComposerViewUtils$HtmlComposerViewCursorHandlerListener;
 
     iput-object p1, p0, Landroid/webkitsec/HtmlComposerView;->mHtmlComposerViewCursorHandlerListener:Landroid/webkitsec/HtmlComposerViewUtils$HtmlComposerViewCursorHandlerListener;
 
@@ -22006,7 +21845,6 @@
 
 .method public loadHtmlFile(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Landroid/webkitsec/HtmlComposerView;->getLoadableContent(Ljava/lang/String;)Ljava/lang/String;
 
@@ -22244,7 +22082,6 @@
 
 .method protected onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 4
-    .param p1    # Landroid/content/res/Configuration;
 
     const/4 v3, 0x1
 
@@ -22291,7 +22128,6 @@
 
 .method public onContextMenuItem(I)Z
     .locals 9
-    .param p1    # I
 
     const/4 v6, 0x0
 
@@ -22766,7 +22602,6 @@
 
 .method public onCreateInputConnection(Landroid/view/inputmethod/EditorInfo;)Landroid/view/inputmethod/InputConnection;
     .locals 5
-    .param p1    # Landroid/view/inputmethod/EditorInfo;
 
     const/4 v4, 0x1
 
@@ -22884,7 +22719,6 @@
 
 .method public onDragEvent(Landroid/view/DragEvent;)Z
     .locals 24
-    .param p1    # Landroid/view/DragEvent;
 
     invoke-virtual/range {p1 .. p1}, Landroid/view/DragEvent;->getAction()I
 
@@ -23477,7 +23311,6 @@
 
 .method protected onDraw(Landroid/graphics/Canvas;)V
     .locals 2
-    .param p1    # Landroid/graphics/Canvas;
 
     iget-object v0, p0, Landroid/webkitsec/HtmlComposerView;->mWebViewClassic:Landroid/webkitsec/WebViewClassic;
 
@@ -23517,7 +23350,6 @@
 
 .method public onEditorAction(I)V
     .locals 3
-    .param p1    # I
 
     const/16 v2, 0x82
 
@@ -23558,9 +23390,6 @@
 
 .method protected onFocusChanged(ZILandroid/graphics/Rect;)V
     .locals 5
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # Landroid/graphics/Rect;
 
     const/4 v4, 0x1
 
@@ -23673,7 +23502,6 @@
 
 .method public onHoverEvent(Landroid/view/MotionEvent;)Z
     .locals 7
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v6, 0x1
 
@@ -23887,7 +23715,6 @@
 
 .method public onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
     .locals 3
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
 
     invoke-super {p0, p1}, Landroid/webkitsec/WebView;->onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
 
@@ -23957,7 +23784,6 @@
 
 .method public onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
     .locals 2
-    .param p1    # Landroid/view/accessibility/AccessibilityNodeInfo;
 
     invoke-super {p0, p1}, Landroid/webkitsec/WebView;->onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
 
@@ -24053,8 +23879,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 10
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v9, 0x0
 
@@ -24496,8 +24320,6 @@
 
 .method public onKeyLongPress(ILandroid/view/KeyEvent;)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     iget-boolean v0, p0, Landroid/webkitsec/HtmlComposerView;->DEBUG:Z
 
@@ -24539,8 +24361,6 @@
 
 .method public onKeyPreIme(ILandroid/view/KeyEvent;)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x1
 
@@ -24593,8 +24413,6 @@
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 7
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v6, 0x0
 
@@ -24784,7 +24602,6 @@
 
 .method public onPopulateAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
     .locals 4
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
 
     invoke-super {p0, p1}, Landroid/view/View;->onPopulateAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
 
@@ -25349,7 +25166,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 10
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v9, 0x1
 
@@ -25483,7 +25299,6 @@
 
 .method public onWindowFocusChanged(Z)V
     .locals 8
-    .param p1    # Z
 
     const/4 v7, 0x0
 
@@ -25943,8 +25758,6 @@
 
 .method public outlineDrawRect(Landroid/content/Context;Landroid/graphics/Rect;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/graphics/Rect;
 
     const/4 v5, 0x1
 
@@ -26182,7 +25995,6 @@
 
 .method public registerNotificationListener(Landroid/webkitsec/HtmlComposerView$HtmlComposerNotificationToApp;)V
     .locals 0
-    .param p1    # Landroid/webkitsec/HtmlComposerView$HtmlComposerNotificationToApp;
 
     iput-object p1, p0, Landroid/webkitsec/HtmlComposerView;->mNotificationCallback:Landroid/webkitsec/HtmlComposerView$HtmlComposerNotificationToApp;
 
@@ -26358,10 +26170,6 @@
 
 .method public selectBWStartAndEnd(IIII)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iget-object v1, p0, Landroid/webkitsec/HtmlComposerView;->mWebViewClassic:Landroid/webkitsec/WebViewClassic;
 
@@ -26599,7 +26407,6 @@
 
 .method public sendAccessibilityEvent(I)V
     .locals 0
-    .param p1    # I
 
     invoke-super {p0, p1}, Landroid/view/View;->sendAccessibilityEvent(I)V
 
@@ -26608,10 +26415,6 @@
 
 .method sendAccessibilityEventTypeViewTextChanged(IIILjava/lang/CharSequence;)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/CharSequence;
 
     const/16 v1, 0x10
 
@@ -26634,7 +26437,6 @@
 
 .method protected sendSelectionChangeEvent(I)V
     .locals 2
-    .param p1    # I
 
     new-instance v0, Landroid/os/Message;
 
@@ -26660,7 +26462,6 @@
 
 .method public setAutoTextSelection(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Landroid/webkitsec/HtmlComposerView;->mWebViewClassic:Landroid/webkitsec/WebViewClassic;
 
@@ -26671,7 +26472,6 @@
 
 .method public setCaretForEdit(Z)V
     .locals 4
-    .param p1    # Z
 
     const/16 v1, 0x8e
 
@@ -26756,8 +26556,6 @@
 
 .method public setComposingRegion(II)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     iget-object v2, p0, Landroid/webkitsec/HtmlComposerView;->mWebViewClassic:Landroid/webkitsec/WebViewClassic;
 
@@ -26868,7 +26666,6 @@
 
 .method declared-synchronized setComposingState(Z)V
     .locals 1
-    .param p1    # Z
 
     monitor-enter p0
 
@@ -26958,7 +26755,6 @@
 
 .method public setDefaultFontSize(I)V
     .locals 3
-    .param p1    # I
 
     iget v0, p0, Landroid/webkitsec/HtmlComposerView;->mDensity:F
 
@@ -26999,8 +26795,6 @@
 
 .method public setEditableSelection(II)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     iget-object v2, p0, Landroid/webkitsec/HtmlComposerView;->mWebViewClassic:Landroid/webkitsec/WebViewClassic;
 
@@ -27118,7 +26912,6 @@
 
 .method public setEmoji(Z)V
     .locals 3
-    .param p1    # Z
 
     const-string v0, "HtmlComposerView"
 
@@ -27149,7 +26942,6 @@
 
 .method public setHCVSelectionChangedCallback(Landroid/webkitsec/HtmlComposerView$HCVSelectionChangedCallback;)V
     .locals 0
-    .param p1    # Landroid/webkitsec/HtmlComposerView$HCVSelectionChangedCallback;
 
     iput-object p1, p0, Landroid/webkitsec/HtmlComposerView;->mHCVSelectionChangedCallback:Landroid/webkitsec/HtmlComposerView$HCVSelectionChangedCallback;
 
@@ -27158,7 +26950,6 @@
 
 .method public setImeOptions(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/webkitsec/HtmlComposerView;->imeOptions:I
 
@@ -27167,7 +26958,6 @@
 
 .method protected setInputConnection(Landroid/webkitsec/HtmlComposerInputConnection;)V
     .locals 0
-    .param p1    # Landroid/webkitsec/HtmlComposerInputConnection;
 
     iput-object p1, p0, Landroid/webkitsec/HtmlComposerView;->mHtmlComposerInputConnection:Landroid/webkitsec/HtmlComposerInputConnection;
 
@@ -27176,7 +26966,6 @@
 
 .method public setLastKeyPadState(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/webkitsec/HtmlComposerView;->bLastSoftKeyPadStateShowing:Z
 
@@ -27185,7 +26974,6 @@
 
 .method public setMaxHtmlLength(I)V
     .locals 1
-    .param p1    # I
 
     iput p1, p0, Landroid/webkitsec/HtmlComposerView;->mMaxHtmlLength:I
 
@@ -27198,7 +26986,6 @@
 
 .method public setOnInsertedImageHitListener(Landroid/webkitsec/HtmlComposerView$InsertedImageHitListener;)V
     .locals 0
-    .param p1    # Landroid/webkitsec/HtmlComposerView$InsertedImageHitListener;
 
     iput-object p1, p0, Landroid/webkitsec/HtmlComposerView;->mInsertedImageHitListener:Landroid/webkitsec/HtmlComposerView$InsertedImageHitListener;
 
@@ -27207,7 +26994,6 @@
 
 .method public setOnRichTextFormatChangedListener(Landroid/webkitsec/HtmlComposerView$RichTextFormatChangedListener;)V
     .locals 0
-    .param p1    # Landroid/webkitsec/HtmlComposerView$RichTextFormatChangedListener;
 
     iput-object p1, p0, Landroid/webkitsec/HtmlComposerView;->mRichTextFormatChangedListener:Landroid/webkitsec/HtmlComposerView$RichTextFormatChangedListener;
 
@@ -27216,7 +27002,6 @@
 
 .method public setPageZoom(F)V
     .locals 3
-    .param p1    # F
 
     iget-boolean v0, p0, Landroid/webkitsec/HtmlComposerView;->DEBUG:Z
 
@@ -27320,7 +27105,6 @@
 
 .method public setPrivateImeOptions(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/webkitsec/HtmlComposerView;->mPrivateOptions:Ljava/lang/String;
 
@@ -27329,7 +27113,6 @@
 
 .method public setRotationFlag(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/webkitsec/HtmlComposerView;->mIsInRotation:Z
 
@@ -27338,7 +27121,6 @@
 
 .method public setSelectionHandle(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/webkitsec/HtmlComposerView;->mSelectionHandlerIsShown:Z
 
@@ -27347,7 +27129,6 @@
 
 .method public setShiftKeyState(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/webkitsec/HtmlComposerView;->mShiftKeyIsPressed:Z
 
@@ -27356,7 +27137,6 @@
 
 .method public setText(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Landroid/webkitsec/HtmlComposerView;->clear()V
 
@@ -27388,7 +27168,6 @@
 
 .method public textChangedForWatcher(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -27408,7 +27187,6 @@
 
 .method public textChangedForWatcher(Z)V
     .locals 4
-    .param p1    # Z
 
     const/4 v1, 0x0
 
@@ -27438,8 +27216,6 @@
 
 .method public textToSpeech(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
@@ -27772,7 +27548,6 @@
 
 .method public unmarkWord(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/webkitsec/HtmlComposerView;->mWebViewClassic:Landroid/webkitsec/WebViewClassic;
 
@@ -27783,8 +27558,6 @@
 
 .method public updateIMSelectionToEditor(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Landroid/webkitsec/HtmlComposerView;->mWebViewClassic:Landroid/webkitsec/WebViewClassic;
 
@@ -27832,7 +27605,6 @@
 
 .method public updateOutlineDrawRect(Landroid/graphics/Rect;)V
     .locals 1
-    .param p1    # Landroid/graphics/Rect;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 

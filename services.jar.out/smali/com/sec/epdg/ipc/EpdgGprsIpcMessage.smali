@@ -34,9 +34,6 @@
 
 .method public constructor <init>(III)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Lcom/sec/epdg/ipc/EpdgIpcMessage;-><init>(III)V
 
@@ -45,8 +42,6 @@
 
 .method public constructor <init>([BI)V
     .locals 0
-    .param p1    # [B
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -60,10 +55,6 @@
 
 .method private copyIPAddrStrToByteArray(Ljava/lang/String;[BII)Z
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # [B
-    .param p3    # I
-    .param p4    # I
 
     const/4 v7, 0x1
 
@@ -373,8 +364,6 @@
 
 .method public encodeGprsCallStatus(II)Z
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     const/4 v3, 0x0
 
@@ -405,8 +394,6 @@
 
 .method public encodeGprsEpdgStatus(II)Z
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     const/4 v3, 0x1
 
@@ -431,16 +418,6 @@
 
 .method public encodeGprsIPConfigs(ILcom/sec/epdg/IWlanEnum$IPSecIpType;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;)Z
     .locals 9
-    .param p1    # I
-    .param p2    # Lcom/sec/epdg/IWlanEnum$IPSecIpType;
-    .param p3    # Ljava/lang/String;
-    .param p4    # [Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Ljava/lang/String;
-    .param p7    # [Ljava/lang/String;
-    .param p8    # Ljava/lang/String;
-    .param p9    # [Ljava/lang/String;
-    .param p10    # [Ljava/lang/String;
 
     const/16 v6, 0x98
 

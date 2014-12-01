@@ -17,7 +17,6 @@
 # direct methods
 .method protected constructor <init>(I)V
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/hardware/contextaware/utilbundle/autotest/CaAutoTest;-><init>(I)V
 
@@ -34,7 +33,6 @@
 # virtual methods
 .method protected final addPacket([B)V
     .locals 1
-    .param p1    # [B
 
     iget-object v0, p0, Landroid/hardware/contextaware/utilbundle/autotest/OperationDebugging;->mPacketList:Ljava/util/List;
 
@@ -58,7 +56,6 @@
 
 .method protected final removePacket([B)V
     .locals 1
-    .param p1    # [B
 
     iget-object v0, p0, Landroid/hardware/contextaware/utilbundle/autotest/OperationDebugging;->mPacketList:Ljava/util/List;
 

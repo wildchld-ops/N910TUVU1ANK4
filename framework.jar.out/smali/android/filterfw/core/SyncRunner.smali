@@ -24,9 +24,6 @@
 # direct methods
 .method public constructor <init>(Landroid/filterfw/core/FilterContext;Landroid/filterfw/core/FilterGraph;Ljava/lang/Class;)V
     .locals 5
-    .param p1    # Landroid/filterfw/core/FilterContext;
-    .param p2    # Landroid/filterfw/core/FilterGraph;
-    .param p3    # Ljava/lang/Class;
 
     const/4 v4, 0x0
 
@@ -444,7 +441,6 @@
 
 .method protected processFilterNode(Landroid/filterfw/core/Filter;)V
     .locals 3
-    .param p1    # Landroid/filterfw/core/Filter;
 
     iget-boolean v0, p0, Landroid/filterfw/core/SyncRunner;->mLogVerbose:Z
 
@@ -608,8 +604,6 @@
 
 .method protected scheduleFilterWake(Landroid/filterfw/core/Filter;I)V
     .locals 7
-    .param p1    # Landroid/filterfw/core/Filter;
-    .param p2    # I
 
     iget-object v2, p0, Landroid/filterfw/core/SyncRunner;->mWakeCondition:Landroid/os/ConditionVariable;
 
@@ -636,7 +630,6 @@
 
 .method public setDoneCallback(Landroid/filterfw/core/GraphRunner$OnRunnerDoneListener;)V
     .locals 0
-    .param p1    # Landroid/filterfw/core/GraphRunner$OnRunnerDoneListener;
 
     iput-object p1, p0, Landroid/filterfw/core/SyncRunner;->mDoneListener:Landroid/filterfw/core/GraphRunner$OnRunnerDoneListener;
 

@@ -30,7 +30,6 @@
 
 .method private static getAudioManager(Landroid/content/Context;)Landroid/media/AudioManager;
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     sget-object v0, Lcom/android/mms/util/AudioUtils;->sAudioManager:Landroid/media/AudioManager;
 
@@ -54,9 +53,6 @@
 
 .method public static getVolume(Landroid/content/Context;II)I
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # I
 
     invoke-static {p0}, Lcom/android/mms/util/AudioUtils;->getAudioManager(Landroid/content/Context;)Landroid/media/AudioManager;
 
@@ -71,7 +67,6 @@
 
 .method public static isAudioPathBT(Landroid/content/Context;)Z
     .locals 5
-    .param p0    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -155,7 +150,6 @@
 
 .method public static isAudioPathEarjack(Landroid/content/Context;)Z
     .locals 5
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Lcom/android/mms/util/AudioUtils;->getAudioManager(Landroid/content/Context;)Landroid/media/AudioManager;
 
@@ -210,7 +204,6 @@
 
 .method public static isSilent(Landroid/content/Context;)Z
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Lcom/android/mms/util/AudioUtils;->getAudioManager(Landroid/content/Context;)Landroid/media/AudioManager;
 
@@ -235,7 +228,6 @@
 
 .method public static isVibrate(Landroid/content/Context;)Z
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     const/4 v0, 0x1
 
@@ -260,9 +252,6 @@
 
 .method public static setVolume(Landroid/content/Context;II)V
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # I
 
     invoke-static {p0}, Lcom/android/mms/util/AudioUtils;->getAudioManager(Landroid/content/Context;)Landroid/media/AudioManager;
 

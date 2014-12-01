@@ -27,8 +27,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/hardware/Camera;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/hardware/Camera;
 
     invoke-direct {p0, p1}, Landroid/view/SurfaceView;-><init>(Landroid/content/Context;)V
 
@@ -61,21 +59,12 @@
 # virtual methods
 .method protected onLayout(ZIIII)V
     .locals 0
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     return-void
 .end method
 
 .method public surfaceChanged(Landroid/view/SurfaceHolder;III)V
     .locals 4
-    .param p1    # Landroid/view/SurfaceHolder;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iget-object v1, p0, Lcom/voovio/view/Preview;->mHolder:Landroid/view/SurfaceHolder;
 
@@ -147,7 +136,6 @@
 
 .method public surfaceCreated(Landroid/view/SurfaceHolder;)V
     .locals 4
-    .param p1    # Landroid/view/SurfaceHolder;
 
     :try_start_0
     iget-object v1, p0, Lcom/voovio/view/Preview;->mCamera:Landroid/hardware/Camera;
@@ -189,7 +177,6 @@
 
 .method public surfaceDestroyed(Landroid/view/SurfaceHolder;)V
     .locals 0
-    .param p1    # Landroid/view/SurfaceHolder;
 
     return-void
 .end method

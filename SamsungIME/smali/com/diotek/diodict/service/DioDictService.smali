@@ -204,7 +204,6 @@
 
 .method public changeLang(I)Z
     .locals 4
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -349,7 +348,6 @@
 
 .method public setServiceEnabled(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/diodict/service/DioDictService;->mServiceEnabled:Z
 
@@ -358,7 +356,6 @@
 
 .method public setServicePackage(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/diotek/diodict/service/DioDictService;->mServicePackage:Ljava/lang/String;
 
@@ -367,7 +364,6 @@
 
 .method public setServicePackage(Z)V
     .locals 1
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 

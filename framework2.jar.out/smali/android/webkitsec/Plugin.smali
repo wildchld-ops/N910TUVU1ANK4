@@ -31,10 +31,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -61,7 +57,6 @@
 
 .method static synthetic access$100(Landroid/webkitsec/Plugin;)Ljava/lang/String;
     .locals 1
-    .param p0    # Landroid/webkitsec/Plugin;
 
     iget-object v0, p0, Landroid/webkitsec/Plugin;->mDescription:Ljava/lang/String;
 
@@ -70,7 +65,6 @@
 
 .method static synthetic access$200(Landroid/webkitsec/Plugin;)Ljava/lang/String;
     .locals 1
-    .param p0    # Landroid/webkitsec/Plugin;
 
     iget-object v0, p0, Landroid/webkitsec/Plugin;->mName:Ljava/lang/String;
 
@@ -81,7 +75,6 @@
 # virtual methods
 .method public dispatchClickEvent(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -139,7 +132,6 @@
 
 .method public setClickHandler(Landroid/webkitsec/Plugin$PreferencesClickHandler;)V
     .locals 0
-    .param p1    # Landroid/webkitsec/Plugin$PreferencesClickHandler;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -150,7 +142,6 @@
 
 .method public setDescription(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -161,7 +152,6 @@
 
 .method public setFileName(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -172,7 +162,6 @@
 
 .method public setName(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -183,7 +172,6 @@
 
 .method public setPath(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 

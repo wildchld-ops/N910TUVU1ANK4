@@ -34,7 +34,6 @@
 
 .method private getPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const-string v0, "personalizer_service"
 
@@ -49,8 +48,6 @@
 
 .method private setAlarm(Landroid/content/Context;J)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # J
 
     sget-object v3, Lcom/touchtype/personalizer/PersonalizationToggleReceiver;->TAG:Ljava/lang/String;
 
@@ -117,7 +114,6 @@
 # virtual methods
 .method public checkAlarmSet(Landroid/content/Context;)V
     .locals 10
-    .param p1    # Landroid/content/Context;
 
     const-wide/16 v8, 0x0
 
@@ -178,7 +174,6 @@
 
 .method public disablePersonalization(Landroid/content/Context;)V
     .locals 9
-    .param p1    # Landroid/content/Context;
 
     sget-object v7, Lcom/touchtype/personalizer/PersonalizationToggleReceiver;->TAG:Ljava/lang/String;
 
@@ -249,8 +244,6 @@
 
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     sget-object v2, Lcom/touchtype/personalizer/PersonalizationToggleReceiver;->TAG:Ljava/lang/String;
 

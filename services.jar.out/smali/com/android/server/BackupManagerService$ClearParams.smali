@@ -25,8 +25,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/BackupManagerService;Lcom/android/internal/backup/IBackupTransport;Landroid/content/pm/PackageInfo;)V
     .locals 0
-    .param p2    # Lcom/android/internal/backup/IBackupTransport;
-    .param p3    # Landroid/content/pm/PackageInfo;
 
     iput-object p1, p0, Lcom/android/server/BackupManagerService$ClearParams;->this$0:Lcom/android/server/BackupManagerService;
 

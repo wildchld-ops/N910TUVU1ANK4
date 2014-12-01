@@ -46,7 +46,6 @@
 # virtual methods
 .method public varargs post([Ljava/lang/Object;)V
     .locals 3
-    .param p1    # [Ljava/lang/Object;
 
     const/4 v1, 0x1
 
@@ -154,7 +153,6 @@
 
 .method public varargs run([Ljava/lang/Object;)V
     .locals 3
-    .param p1    # [Ljava/lang/Object;
 
     const/4 v2, 0x1
 

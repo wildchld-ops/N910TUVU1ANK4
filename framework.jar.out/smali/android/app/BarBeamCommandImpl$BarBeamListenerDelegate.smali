@@ -23,7 +23,6 @@
 # direct methods
 .method constructor <init>(Landroid/app/BarBeamCommandImpl;Landroid/app/BarBeamListener;)V
     .locals 0
-    .param p2    # Landroid/app/BarBeamListener;
 
     iput-object p1, p0, Landroid/app/BarBeamCommandImpl$BarBeamListenerDelegate;->this$0:Landroid/app/BarBeamCommandImpl;
 

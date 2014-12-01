@@ -28,12 +28,6 @@
 # direct methods
 .method public constructor <init>(Landroid/view/SurfaceSession;Landroid/graphics/Rect;Landroid/graphics/Rect;IIZ)V
     .locals 13
-    .param p1    # Landroid/view/SurfaceSession;
-    .param p2    # Landroid/graphics/Rect;
-    .param p3    # Landroid/graphics/Rect;
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/view/SurfaceControl$OutOfResourcesException;
@@ -380,8 +374,6 @@
 
 .method public printTo(Ljava/lang/String;Ljava/io/PrintWriter;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/io/PrintWriter;
 
     invoke-virtual {p2, p1}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
@@ -458,7 +450,6 @@
 
 .method public setAlpha(F)V
     .locals 2
-    .param p1    # F
 
     const/4 v0, 0x0
 
@@ -492,7 +483,6 @@
 
 .method public setMatrix(Landroid/graphics/Matrix;)V
     .locals 2
-    .param p1    # Landroid/graphics/Matrix;
 
     const/4 v0, 0x0
 

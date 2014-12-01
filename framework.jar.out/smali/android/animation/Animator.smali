@@ -64,7 +64,6 @@
 # virtual methods
 .method public addListener(Landroid/animation/Animator$AnimatorListener;)V
     .locals 1
-    .param p1    # Landroid/animation/Animator$AnimatorListener;
 
     iget-object v0, p0, Landroid/animation/Animator;->mListeners:Ljava/util/ArrayList;
 
@@ -86,7 +85,6 @@
 
 .method public addPauseListener(Landroid/animation/Animator$AnimatorPauseListener;)V
     .locals 1
-    .param p1    # Landroid/animation/Animator$AnimatorPauseListener;
 
     iget-object v0, p0, Landroid/animation/Animator;->mPauseListeners:Ljava/util/ArrayList;
 
@@ -363,7 +361,6 @@
 
 .method public removeListener(Landroid/animation/Animator$AnimatorListener;)V
     .locals 1
-    .param p1    # Landroid/animation/Animator$AnimatorListener;
 
     iget-object v0, p0, Landroid/animation/Animator;->mListeners:Ljava/util/ArrayList;
 
@@ -395,7 +392,6 @@
 
 .method public removePauseListener(Landroid/animation/Animator$AnimatorPauseListener;)V
     .locals 1
-    .param p1    # Landroid/animation/Animator$AnimatorPauseListener;
 
     iget-object v0, p0, Landroid/animation/Animator;->mPauseListeners:Ljava/util/ArrayList;
 
@@ -484,7 +480,6 @@
 
 .method public setTarget(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     return-void
 .end method

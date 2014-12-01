@@ -24,14 +24,6 @@
 # direct methods
 .method constructor <init>(Ljava/lang/String;ILandroid/content/res/CompatibilityInfo;Ljava/lang/CharSequence;IIII)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Landroid/content/res/CompatibilityInfo;
-    .param p4    # Ljava/lang/CharSequence;
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

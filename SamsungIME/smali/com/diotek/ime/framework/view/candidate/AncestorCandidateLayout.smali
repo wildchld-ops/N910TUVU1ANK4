@@ -25,7 +25,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -36,8 +35,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -48,9 +45,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v1, 0x0
 
@@ -75,7 +69,6 @@
 # virtual methods
 .method public fling(I)V
     .locals 4
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -212,7 +205,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 3
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-super {p0, p1}, Landroid/widget/HorizontalScrollView;->onTouchEvent(Landroid/view/MotionEvent;)Z
 
@@ -247,7 +239,6 @@
 
 .method public scrollKnobCandidateView(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Lcom/diotek/ime/framework/view/candidate/AncestorCandidateLayout;->mCandidatePositions:Ljava/util/ArrayList;
 
@@ -277,8 +268,6 @@
 
 .method public setCandidateWidthAndCount(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     iput p1, p0, Lcom/diotek/ime/framework/view/candidate/AncestorCandidateLayout;->mCandidateWidth:I
 

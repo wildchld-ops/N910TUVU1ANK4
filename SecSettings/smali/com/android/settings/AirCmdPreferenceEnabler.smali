@@ -23,8 +23,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/preference/SwitchPreference;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/preference/SwitchPreference;
 
     const/4 v1, 0x0
 
@@ -59,7 +57,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/AirCmdPreferenceEnabler;)Landroid/preference/SwitchPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/AirCmdPreferenceEnabler;
 
     iget-object v0, p0, Lcom/android/settings/AirCmdPreferenceEnabler;->mSwitch:Landroid/preference/SwitchPreference;
 
@@ -68,7 +65,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/AirCmdPreferenceEnabler;)V
     .locals 0
-    .param p0    # Lcom/android/settings/AirCmdPreferenceEnabler;
 
     invoke-direct {p0}, Lcom/android/settings/AirCmdPreferenceEnabler;->turnOnPenInfoPreview()V
 
@@ -77,7 +73,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/AirCmdPreferenceEnabler;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/settings/AirCmdPreferenceEnabler;
 
     iget-object v0, p0, Lcom/android/settings/AirCmdPreferenceEnabler;->mContext:Landroid/content/Context;
 
@@ -333,8 +328,6 @@
 # virtual methods
 .method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
     .locals 8
-    .param p1    # Landroid/preference/Preference;
-    .param p2    # Ljava/lang/Object;
 
     const/4 v4, 0x1
 

@@ -35,7 +35,6 @@
 # direct methods
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -52,7 +51,6 @@
 
 .method public static declared-synchronized getInstance(Landroid/content/Context;)Lcom/android/mms/prioritysender/PrioritySenderCache;
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     const-class v1, Lcom/android/mms/prioritysender/PrioritySenderCache;
 
@@ -203,8 +201,6 @@
 
 .method public declared-synchronized get(IJ)Lcom/android/mms/prioritysender/PrioritySenderCache$PrioritySender;
     .locals 4
-    .param p1    # I
-    .param p2    # J
 
     monitor-enter p0
 
@@ -292,7 +288,6 @@
 
 .method public declared-synchronized getId(Ljava/lang/String;)J
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const-wide/16 v2, 0x0
 
@@ -364,7 +359,6 @@
 
 .method public declared-synchronized getIdByThreadId(J)J
     .locals 6
-    .param p1    # J
 
     const-wide/16 v2, 0x0
 
@@ -429,7 +423,6 @@
 
 .method public declared-synchronized getThreadId(Ljava/lang/String;)J
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const-wide/16 v2, 0x0
 
@@ -501,7 +494,6 @@
 
 .method public declared-synchronized isPrioritySender(Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -570,10 +562,6 @@
 
 .method public declared-synchronized update(Landroid/content/Context;Ljava/lang/String;[Ljava/lang/String;Landroid/content/ContentValues;)I
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/String;
-    .param p3    # [Ljava/lang/String;
-    .param p4    # Landroid/content/ContentValues;
 
     monitor-enter p0
 
@@ -604,11 +592,6 @@
 
 .method public declared-synchronized update(Landroid/content/Context;JJIJ)Z
     .locals 10
-    .param p1    # Landroid/content/Context;
-    .param p2    # J
-    .param p4    # J
-    .param p6    # I
-    .param p7    # J
 
     monitor-enter p0
 

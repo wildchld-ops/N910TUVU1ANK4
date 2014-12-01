@@ -84,7 +84,7 @@
 
     iget-object v2, v2, Lcom/android/phone/callsettings/RejectCallWithMsg;->mListView:Landroid/widget/ListView;
 
-    invoke-virtual {v2}, Landroid/widget/AdapterView;->getCount()I
+    invoke-virtual {v2}, Landroid/widget/ListView;->getCount()I
 
     move-result v2
 
@@ -99,7 +99,7 @@
     move v2, v3
 
     :goto_1
-    invoke-virtual {v4, v1, v2}, Landroid/widget/AbsListView;->setItemChecked(IZ)V
+    invoke-virtual {v4, v1, v2}, Landroid/widget/ListView;->setItemChecked(IZ)V
 
     add-int/lit8 v1, v1, 0x1
 

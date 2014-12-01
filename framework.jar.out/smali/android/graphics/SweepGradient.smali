@@ -28,10 +28,6 @@
 # direct methods
 .method public constructor <init>(FFII)V
     .locals 1
-    .param p1    # F
-    .param p2    # F
-    .param p3    # I
-    .param p4    # I
 
     invoke-direct {p0}, Landroid/graphics/Shader;-><init>()V
 
@@ -66,10 +62,6 @@
 
 .method public constructor <init>(FF[I[F)V
     .locals 2
-    .param p1    # F
-    .param p2    # F
-    .param p3    # [I
-    .param p4    # [F
 
     invoke-direct {p0}, Landroid/graphics/Shader;-><init>()V
 

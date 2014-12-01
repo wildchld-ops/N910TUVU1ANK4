@@ -101,7 +101,6 @@
 # direct methods
 .method constructor <init>(Landroid/content/Context;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
 
     const/4 v2, 0x1
 
@@ -240,7 +239,6 @@
 
 .method private updatePresentationDisplays(I)V
     .locals 4
-    .param p1    # I
 
     iget-object v3, p0, Landroid/media/MediaRouter$Static;->mRoutes:Ljava/util/ArrayList;
 
@@ -295,7 +293,6 @@
 # virtual methods
 .method findGlobalRoute(Ljava/lang/String;)Landroid/media/MediaRouter$RouteInfo;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     iget-object v3, p0, Landroid/media/MediaRouter$Static;->mRoutes:Ljava/util/ArrayList;
 
@@ -354,7 +351,6 @@
 
 .method makeGlobalRoute(Landroid/media/MediaRouterClientState$RouteInfo;)Landroid/media/MediaRouter$RouteInfo;
     .locals 2
-    .param p1    # Landroid/media/MediaRouterClientState$RouteInfo;
 
     new-instance v0, Landroid/media/MediaRouter$RouteInfo;
 
@@ -419,7 +415,6 @@
 
 .method public onDisplayAdded(I)V
     .locals 0
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/media/MediaRouter$Static;->updatePresentationDisplays(I)V
 
@@ -428,7 +423,6 @@
 
 .method public onDisplayChanged(I)V
     .locals 0
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/media/MediaRouter$Static;->updatePresentationDisplays(I)V
 
@@ -437,7 +431,6 @@
 
 .method public onDisplayRemoved(I)V
     .locals 0
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/media/MediaRouter$Static;->updatePresentationDisplays(I)V
 
@@ -482,7 +475,6 @@
 
 .method publishClientSelectedRoute(Z)V
     .locals 4
-    .param p1    # Z
 
     iget-object v1, p0, Landroid/media/MediaRouter$Static;->mClient:Landroid/media/IMediaRouterClient;
 
@@ -529,7 +521,6 @@
 
 .method rebindAsUser(I)V
     .locals 4
-    .param p1    # I
 
     iget v2, p0, Landroid/media/MediaRouter$Static;->mCurrentUserId:I
 
@@ -619,8 +610,6 @@
 
 .method requestSetVolume(Landroid/media/MediaRouter$RouteInfo;I)V
     .locals 4
-    .param p1    # Landroid/media/MediaRouter$RouteInfo;
-    .param p2    # I
 
     iget-object v1, p1, Landroid/media/MediaRouter$RouteInfo;->mGlobalRouteId:Ljava/lang/String;
 
@@ -659,8 +648,6 @@
 
 .method requestUpdateVolume(Landroid/media/MediaRouter$RouteInfo;I)V
     .locals 4
-    .param p1    # Landroid/media/MediaRouter$RouteInfo;
-    .param p2    # I
 
     iget-object v1, p1, Landroid/media/MediaRouter$RouteInfo;->mGlobalRouteId:Ljava/lang/String;
 
@@ -699,8 +686,6 @@
 
 .method setSelectedRoute(Landroid/media/MediaRouter$RouteInfo;Z)V
     .locals 0
-    .param p1    # Landroid/media/MediaRouter$RouteInfo;
-    .param p2    # Z
 
     iput-object p1, p0, Landroid/media/MediaRouter$Static;->mSelectedRoute:Landroid/media/MediaRouter$RouteInfo;
 
@@ -711,7 +696,6 @@
 
 .method startMonitoringRoutes(Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     new-instance v1, Landroid/media/MediaRouter$RouteInfo;
 
@@ -821,7 +805,6 @@
 
 .method updateAudioRoutes(Landroid/media/AudioRoutesInfo;)V
     .locals 9
-    .param p1    # Landroid/media/AudioRoutesInfo;
 
     const/4 v8, 0x0
 
@@ -1541,8 +1524,6 @@
 
 .method updateGlobalRoute(Landroid/media/MediaRouter$RouteInfo;Landroid/media/MediaRouterClientState$RouteInfo;)V
     .locals 6
-    .param p1    # Landroid/media/MediaRouter$RouteInfo;
-    .param p2    # Landroid/media/MediaRouterClientState$RouteInfo;
 
     const/4 v0, 0x0
 

@@ -51,7 +51,7 @@
 
     const-string v4, "18004664411"
 
-    invoke-virtual {p0, v4}, Landroid/content/BroadcastReceiver;->setResultData(Ljava/lang/String;)V
+    invoke-virtual {p0, v4}, Lcom/android/phone/ProcessOutgoingCallTest;->setResultData(Ljava/lang/String;)V
 
     :cond_0
     invoke-virtual {v3}, Ljava/lang/String;->length()I
@@ -78,7 +78,7 @@
 
     move-result-object v4
 
-    invoke-virtual {p0, v4}, Landroid/content/BroadcastReceiver;->setResultData(Ljava/lang/String;)V
+    invoke-virtual {p0, v4}, Lcom/android/phone/ProcessOutgoingCallTest;->setResultData(Ljava/lang/String;)V
 
     :cond_1
     const-string v4, "##"
@@ -111,7 +111,7 @@
 
     invoke-virtual {p1, v2}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
 
-    invoke-virtual {p0, v7}, Landroid/content/BroadcastReceiver;->setResultData(Ljava/lang/String;)V
+    invoke-virtual {p0, v7}, Lcom/android/phone/ProcessOutgoingCallTest;->setResultData(Ljava/lang/String;)V
 
     :cond_2
     invoke-virtual {v3}, Ljava/lang/String;->length()I
@@ -158,7 +158,7 @@
 
     if-eqz v4, :cond_3
 
-    invoke-virtual {p0, v7}, Landroid/content/BroadcastReceiver;->setResultData(Ljava/lang/String;)V
+    invoke-virtual {p0, v7}, Lcom/android/phone/ProcessOutgoingCallTest;->setResultData(Ljava/lang/String;)V
 
     :cond_3
     return-void

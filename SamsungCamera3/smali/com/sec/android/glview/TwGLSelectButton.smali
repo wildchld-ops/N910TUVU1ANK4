@@ -10,14 +10,6 @@
 # direct methods
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;FFFFIII)V
     .locals 1
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
 
     invoke-direct/range {p0 .. p8}, Lcom/sec/android/glview/TwGLButton;-><init>(Lcom/sec/android/glview/TwGLContext;FFFFIII)V
 
@@ -30,12 +22,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;FFFFLjava/lang/String;)V
     .locals 1
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # Ljava/lang/String;
 
     invoke-direct/range {p0 .. p6}, Lcom/sec/android/glview/TwGLButton;-><init>(Lcom/sec/android/glview/TwGLContext;FFFFLjava/lang/String;)V
 
@@ -48,11 +34,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;FFII)V
     .locals 8
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # I
-    .param p5    # I
 
     const/4 v6, 0x0
 
@@ -79,12 +60,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;FFIII)V
     .locals 8
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     const/4 v6, 0x0
 
@@ -111,13 +86,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;FFIIII)V
     .locals 1
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
 
     invoke-direct/range {p0 .. p7}, Lcom/sec/android/glview/TwGLButton;-><init>(Lcom/sec/android/glview/TwGLContext;FFIIII)V
 
@@ -130,9 +98,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;II)V
     .locals 6
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v4, 0x0
 
@@ -384,7 +349,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 6
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v5, 0x0
 
@@ -515,7 +479,6 @@
 
 .method public setSelected(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-boolean v0, p0, Lcom/sec/android/glview/TwGLSelectButton;->mSelected:Z
 

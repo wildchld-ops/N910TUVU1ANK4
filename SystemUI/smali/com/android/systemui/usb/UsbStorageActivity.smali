@@ -70,8 +70,6 @@
 
 .method static synthetic access$000(Lcom/android/systemui/usb/UsbStorageActivity;Landroid/content/Intent;)V
     .locals 0
-    .param p0    # Lcom/android/systemui/usb/UsbStorageActivity;
-    .param p1    # Landroid/content/Intent;
 
     invoke-direct {p0, p1}, Lcom/android/systemui/usb/UsbStorageActivity;->handleUsbStateChanged(Landroid/content/Intent;)V
 
@@ -80,8 +78,6 @@
 
 .method static synthetic access$100(Lcom/android/systemui/usb/UsbStorageActivity;Z)V
     .locals 0
-    .param p0    # Lcom/android/systemui/usb/UsbStorageActivity;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/systemui/usb/UsbStorageActivity;->switchDisplay(Z)V
 
@@ -90,8 +86,6 @@
 
 .method static synthetic access$200(Lcom/android/systemui/usb/UsbStorageActivity;Z)V
     .locals 0
-    .param p0    # Lcom/android/systemui/usb/UsbStorageActivity;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/systemui/usb/UsbStorageActivity;->switchDisplayAsync(Z)V
 
@@ -100,7 +94,6 @@
 
 .method static synthetic access$300(Lcom/android/systemui/usb/UsbStorageActivity;)Landroid/os/storage/StorageManager;
     .locals 1
-    .param p0    # Lcom/android/systemui/usb/UsbStorageActivity;
 
     iget-object v0, p0, Lcom/android/systemui/usb/UsbStorageActivity;->mStorageManager:Landroid/os/storage/StorageManager;
 
@@ -109,8 +102,6 @@
 
 .method static synthetic access$400(Lcom/android/systemui/usb/UsbStorageActivity;Z)V
     .locals 0
-    .param p0    # Lcom/android/systemui/usb/UsbStorageActivity;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/systemui/usb/UsbStorageActivity;->switchUsbMassStorage(Z)V
 
@@ -119,7 +110,6 @@
 
 .method static synthetic access$500(Lcom/android/systemui/usb/UsbStorageActivity;)Z
     .locals 1
-    .param p0    # Lcom/android/systemui/usb/UsbStorageActivity;
 
     iget-boolean v0, p0, Lcom/android/systemui/usb/UsbStorageActivity;->mDestroyed:Z
 
@@ -128,7 +118,6 @@
 
 .method static synthetic access$600(Lcom/android/systemui/usb/UsbStorageActivity;)Landroid/widget/Button;
     .locals 1
-    .param p0    # Lcom/android/systemui/usb/UsbStorageActivity;
 
     iget-object v0, p0, Lcom/android/systemui/usb/UsbStorageActivity;->mUnmountButton:Landroid/widget/Button;
 
@@ -137,7 +126,6 @@
 
 .method static synthetic access$700(Lcom/android/systemui/usb/UsbStorageActivity;)Landroid/widget/Button;
     .locals 1
-    .param p0    # Lcom/android/systemui/usb/UsbStorageActivity;
 
     iget-object v0, p0, Lcom/android/systemui/usb/UsbStorageActivity;->mMountButton:Landroid/widget/Button;
 
@@ -146,7 +134,6 @@
 
 .method static synthetic access$800(Lcom/android/systemui/usb/UsbStorageActivity;)Landroid/widget/ProgressBar;
     .locals 1
-    .param p0    # Lcom/android/systemui/usb/UsbStorageActivity;
 
     iget-object v0, p0, Lcom/android/systemui/usb/UsbStorageActivity;->mProgressBar:Landroid/widget/ProgressBar;
 
@@ -155,7 +142,6 @@
 
 .method static synthetic access$900(Lcom/android/systemui/usb/UsbStorageActivity;)V
     .locals 0
-    .param p0    # Lcom/android/systemui/usb/UsbStorageActivity;
 
     invoke-direct {p0}, Lcom/android/systemui/usb/UsbStorageActivity;->checkStorageUsersAsync()V
 
@@ -299,7 +285,6 @@
 
 .method private handleUsbStateChanged(Landroid/content/Intent;)V
     .locals 3
-    .param p1    # Landroid/content/Intent;
 
     invoke-virtual {p1}, Landroid/content/Intent;->getExtras()Landroid/os/Bundle;
 
@@ -321,7 +306,6 @@
 
 .method private scheduleShowDialog(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "UsbStorageActivity"
 
@@ -358,7 +342,6 @@
 
 .method private switchDisplay(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/systemui/usb/UsbStorageActivity;->mUIHandler:Landroid/os/Handler;
 
@@ -373,7 +356,6 @@
 
 .method private switchDisplayAsync(Z)V
     .locals 5
-    .param p1    # Z
 
     const/4 v4, 0x0
 
@@ -472,7 +454,6 @@
 
 .method private switchUsbMassStorage(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/systemui/usb/UsbStorageActivity;->mUIHandler:Landroid/os/Handler;
 
@@ -497,7 +478,6 @@
 # virtual methods
 .method public onCancel(Landroid/content/DialogInterface;)V
     .locals 0
-    .param p1    # Landroid/content/DialogInterface;
 
     invoke-virtual {p0}, Landroid/app/Activity;->finish()V
 
@@ -506,7 +486,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Lcom/android/systemui/usb/UsbStorageActivity;->mMountButton:Landroid/widget/Button;
 
@@ -538,7 +517,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     const-string v1, "UsbStorageActivity"
 
@@ -697,8 +675,6 @@
 
 .method public onCreateDialog(ILandroid/os/Bundle;)Landroid/app/Dialog;
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     const v3, 0x104073d
 

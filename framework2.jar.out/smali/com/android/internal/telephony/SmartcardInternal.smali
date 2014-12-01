@@ -117,7 +117,6 @@
 
 .method public disconnect(I)I
     .locals 1
-    .param p1    # I
 
     sget-object v0, Lcom/android/internal/telephony/SmartcardInternal;->pcscInstance:Lcom/android/internal/telephony/IccPcscProvider;
 
@@ -140,7 +139,6 @@
 
 .method public getATR([B)I
     .locals 1
-    .param p1    # [B
 
     sget-object v0, Lcom/android/internal/telephony/SmartcardInternal;->pcscInstance:Lcom/android/internal/telephony/IccPcscProvider;
 
@@ -153,9 +151,6 @@
 
 .method public transmit(I[B[B)I
     .locals 1
-    .param p1    # I
-    .param p2    # [B
-    .param p3    # [B
 
     sget-object v0, Lcom/android/internal/telephony/SmartcardInternal;->pcscInstance:Lcom/android/internal/telephony/IccPcscProvider;
 

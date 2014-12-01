@@ -69,7 +69,7 @@
     :catch_0
     move-exception v0
 
-    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
+    invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
 
     iget-object v1, p0, Lcom/android/phone/callsettings/PhoneNumberLocator$15;->this$0:Lcom/android/phone/callsettings/PhoneNumberLocator;
 

@@ -21,7 +21,6 @@
 # virtual methods
 .method public adoptNode(Lorg/w3c/dom/Node;)Lorg/w3c/dom/Node;
     .locals 3
-    .param p1    # Lorg/w3c/dom/Node;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;
@@ -41,7 +40,6 @@
 
 .method public createAttribute(Ljava/lang/String;)Lorg/w3c/dom/Attr;
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;
@@ -57,8 +55,6 @@
 
 .method public createAttributeNS(Ljava/lang/String;Ljava/lang/String;)Lorg/w3c/dom/Attr;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;
@@ -72,7 +68,6 @@
 
 .method public createCDATASection(Ljava/lang/String;)Lorg/w3c/dom/CDATASection;
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;
@@ -86,7 +81,6 @@
 
 .method public createComment(Ljava/lang/String;)Lorg/w3c/dom/Comment;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -111,8 +105,6 @@
 
 .method public createElementNS(Ljava/lang/String;Ljava/lang/String;)Lorg/w3c/dom/Element;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;
@@ -126,7 +118,6 @@
 
 .method public createEntityReference(Ljava/lang/String;)Lorg/w3c/dom/EntityReference;
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;
@@ -140,8 +131,6 @@
 
 .method public createProcessingInstruction(Ljava/lang/String;Ljava/lang/String;)Lorg/w3c/dom/ProcessingInstruction;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;
@@ -155,7 +144,6 @@
 
 .method public createTextNode(Ljava/lang/String;)Lorg/w3c/dom/Text;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -197,7 +185,6 @@
 
 .method public getElementById(Ljava/lang/String;)Lorg/w3c/dom/Element;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -206,7 +193,6 @@
 
 .method public getElementsByTagName(Ljava/lang/String;)Lorg/w3c/dom/NodeList;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -215,8 +201,6 @@
 
 .method public getElementsByTagNameNS(Ljava/lang/String;Ljava/lang/String;)Lorg/w3c/dom/NodeList;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -289,8 +273,6 @@
 
 .method public importNode(Lorg/w3c/dom/Node;Z)Lorg/w3c/dom/Node;
     .locals 1
-    .param p1    # Lorg/w3c/dom/Node;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;
@@ -318,9 +300,6 @@
 
 .method public renameNode(Lorg/w3c/dom/Node;Ljava/lang/String;Ljava/lang/String;)Lorg/w3c/dom/Node;
     .locals 3
-    .param p1    # Lorg/w3c/dom/Node;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;
@@ -340,21 +319,18 @@
 
 .method public setDocumentURI(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method public setStrictErrorChecking(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method public setXmlStandalone(Z)V
     .locals 0
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;
@@ -366,7 +342,6 @@
 
 .method public setXmlVersion(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;

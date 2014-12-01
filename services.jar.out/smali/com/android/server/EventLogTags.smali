@@ -150,8 +150,6 @@
 
 .method public static writeBackupAgentFailure(Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const/16 v0, 0xb07
 
@@ -174,7 +172,6 @@
 
 .method public static writeBackupDataChanged(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const/16 v0, 0xb04
 
@@ -199,8 +196,6 @@
 
 .method public static writeBackupPackage(Ljava/lang/String;I)V
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
 
     const/16 v0, 0xb08
 
@@ -227,7 +222,6 @@
 
 .method public static writeBackupReset(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const/16 v0, 0xb0a
 
@@ -238,7 +232,6 @@
 
 .method public static writeBackupStart(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const/16 v0, 0xb05
 
@@ -249,8 +242,6 @@
 
 .method public static writeBackupSuccess(II)V
     .locals 4
-    .param p0    # I
-    .param p1    # I
 
     const/16 v0, 0xb09
 
@@ -281,7 +272,6 @@
 
 .method public static writeBackupTransportFailure(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const/16 v0, 0xb06
 
@@ -292,9 +282,6 @@
 
 .method public static writeBatteryDischarge(JII)V
     .locals 4
-    .param p0    # J
-    .param p2    # I
-    .param p3    # I
 
     const/16 v0, 0xaaa
 
@@ -333,9 +320,6 @@
 
 .method public static writeBatteryLevel(III)V
     .locals 4
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
 
     const/16 v0, 0xaa2
 
@@ -374,11 +358,6 @@
 
 .method public static writeBatteryStatus(IIIILjava/lang/String;)V
     .locals 4
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
 
     const/16 v0, 0xaa3
 
@@ -429,7 +408,6 @@
 
 .method public static writeBootProgressEnableScreen(J)V
     .locals 1
-    .param p0    # J
 
     const/16 v0, 0x791f
 
@@ -440,7 +418,6 @@
 
 .method public static writeBootProgressPmsDataScanStart(J)V
     .locals 1
-    .param p0    # J
 
     const/16 v0, 0xc08
 
@@ -451,7 +428,6 @@
 
 .method public static writeBootProgressPmsReady(J)V
     .locals 1
-    .param p0    # J
 
     const/16 v0, 0xc1c
 
@@ -462,7 +438,6 @@
 
 .method public static writeBootProgressPmsScanEnd(J)V
     .locals 1
-    .param p0    # J
 
     const/16 v0, 0xc12
 
@@ -473,7 +448,6 @@
 
 .method public static writeBootProgressPmsStart(J)V
     .locals 1
-    .param p0    # J
 
     const/16 v0, 0xbf4
 
@@ -484,7 +458,6 @@
 
 .method public static writeBootProgressPmsSystemScanStart(J)V
     .locals 1
-    .param p0    # J
 
     const/16 v0, 0xbfe
 
@@ -495,7 +468,6 @@
 
 .method public static writeBootProgressSystemRun(J)V
     .locals 1
-    .param p0    # J
 
     const/16 v0, 0xbc2
 
@@ -506,7 +478,6 @@
 
 .method public static writeCacheFileDeleted(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const/16 v0, 0xabc
 
@@ -517,7 +488,6 @@
 
 .method public static writeConfigInstallFailed(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const v0, 0xc864
 
@@ -528,9 +498,6 @@
 
 .method public static writeConnectivityStateChanged(III)V
     .locals 4
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
 
     const v0, 0xc364
 
@@ -569,7 +536,6 @@
 
 .method public static writeFreeStorageChanged(J)V
     .locals 1
-    .param p0    # J
 
     const/16 v0, 0xab8
 
@@ -580,9 +546,6 @@
 
 .method public static writeFreeStorageLeft(JJJ)V
     .locals 4
-    .param p0    # J
-    .param p2    # J
-    .param p4    # J
 
     const/16 v0, 0xaba
 
@@ -621,7 +584,6 @@
 
 .method public static writeFstrimFinish(J)V
     .locals 1
-    .param p0    # J
 
     const/16 v0, 0xac4
 
@@ -632,7 +594,6 @@
 
 .method public static writeFstrimStart(J)V
     .locals 1
-    .param p0    # J
 
     const/16 v0, 0xac3
 
@@ -643,10 +604,6 @@
 
 .method public static writeIdleMaintenanceWindowFinish(JJII)V
     .locals 4
-    .param p0    # J
-    .param p2    # J
-    .param p4    # I
-    .param p5    # I
 
     const/16 v0, 0xac2
 
@@ -693,10 +650,6 @@
 
 .method public static writeIdleMaintenanceWindowStart(JJII)V
     .locals 4
-    .param p0    # J
-    .param p2    # J
-    .param p4    # I
-    .param p5    # I
 
     const/16 v0, 0xac1
 
@@ -743,15 +696,6 @@
 
 .method public static writeIfwIntentMatched(ILjava/lang/String;IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V
     .locals 4
-    .param p0    # I
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Ljava/lang/String;
-    .param p7    # Ljava/lang/String;
-    .param p8    # I
 
     const v0, 0xc8c8
 
@@ -818,9 +762,6 @@
 
 .method public static writeImfForceReconnectIme([Ljava/lang/Object;JI)V
     .locals 4
-    .param p0    # [Ljava/lang/Object;
-    .param p1    # J
-    .param p3    # I
 
     const/16 v0, 0x7d00
 
@@ -855,7 +796,6 @@
 
 .method public static writeLockdownVpnConnected(I)V
     .locals 1
-    .param p0    # I
 
     const v0, 0xc801
 
@@ -866,7 +806,6 @@
 
 .method public static writeLockdownVpnConnecting(I)V
     .locals 1
-    .param p0    # I
 
     const v0, 0xc800
 
@@ -877,7 +816,6 @@
 
 .method public static writeLockdownVpnError(I)V
     .locals 1
-    .param p0    # I
 
     const v0, 0xc802
 
@@ -888,7 +826,6 @@
 
 .method public static writeLowStorage(J)V
     .locals 1
-    .param p0    # J
 
     const/16 v0, 0xab9
 
@@ -899,19 +836,6 @@
 
 .method public static writeNetstatsMobileSample(JJJJJJJJJJJJJ)V
     .locals 4
-    .param p0    # J
-    .param p2    # J
-    .param p4    # J
-    .param p6    # J
-    .param p8    # J
-    .param p10    # J
-    .param p12    # J
-    .param p14    # J
-    .param p16    # J
-    .param p18    # J
-    .param p20    # J
-    .param p22    # J
-    .param p24    # J
 
     const v0, 0xc79c
 
@@ -1030,19 +954,6 @@
 
 .method public static writeNetstatsWifiSample(JJJJJJJJJJJJJ)V
     .locals 4
-    .param p0    # J
-    .param p2    # J
-    .param p4    # J
-    .param p6    # J
-    .param p8    # J
-    .param p10    # J
-    .param p12    # J
-    .param p14    # J
-    .param p16    # J
-    .param p18    # J
-    .param p20    # J
-    .param p22    # J
-    .param p24    # J
 
     const v0, 0xc79d
 
@@ -1161,12 +1072,6 @@
 
 .method public static writeNotificationCancel(Ljava/lang/String;ILjava/lang/String;III)V
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     const/16 v0, 0xabf
 
@@ -1221,10 +1126,6 @@
 
 .method public static writeNotificationCancelAll(Ljava/lang/String;III)V
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/16 v0, 0xac0
 
@@ -1267,11 +1168,6 @@
 
 .method public static writeNotificationEnqueue(Ljava/lang/String;ILjava/lang/String;ILjava/lang/String;)V
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
 
     const/16 v0, 0xabe
 
@@ -1314,8 +1210,6 @@
 
 .method public static writePowerPartialWakeState(ILjava/lang/String;)V
     .locals 4
-    .param p0    # I
-    .param p1    # Ljava/lang/String;
 
     const/16 v0, 0xaa9
 
@@ -1342,9 +1236,6 @@
 
 .method public static writePowerScreenBroadcastDone(IJI)V
     .locals 4
-    .param p0    # I
-    .param p1    # J
-    .param p3    # I
 
     const/16 v0, 0xaa6
 
@@ -1383,7 +1274,6 @@
 
 .method public static writePowerScreenBroadcastSend(I)V
     .locals 1
-    .param p0    # I
 
     const/16 v0, 0xaa5
 
@@ -1394,8 +1284,6 @@
 
 .method public static writePowerScreenBroadcastStop(II)V
     .locals 4
-    .param p0    # I
-    .param p1    # I
 
     const/16 v0, 0xaa7
 
@@ -1426,10 +1314,6 @@
 
 .method public static writePowerScreenState(IIJI)V
     .locals 4
-    .param p0    # I
-    .param p1    # I
-    .param p2    # J
-    .param p4    # I
 
     const/16 v0, 0xaa8
 
@@ -1476,7 +1360,6 @@
 
 .method public static writePowerSleepRequested(I)V
     .locals 1
-    .param p0    # I
 
     const/16 v0, 0xaa4
 
@@ -1487,8 +1370,6 @@
 
 .method public static writeRestoreAgentFailure(Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const/16 v0, 0xb10
 
@@ -1511,8 +1392,6 @@
 
 .method public static writeRestorePackage(Ljava/lang/String;I)V
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
 
     const/16 v0, 0xb11
 
@@ -1539,8 +1418,6 @@
 
 .method public static writeRestoreStart(Ljava/lang/String;J)V
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # J
 
     const/16 v0, 0xb0e
 
@@ -1567,8 +1444,6 @@
 
 .method public static writeRestoreSuccess(II)V
     .locals 4
-    .param p0    # I
-    .param p1    # I
 
     const/16 v0, 0xb12
 
@@ -1613,7 +1488,6 @@
 
 .method public static writeUnknownSourcesEnabled(I)V
     .locals 1
-    .param p0    # I
 
     const/16 v0, 0xc26
 
@@ -1624,7 +1498,6 @@
 
 .method public static writeWatchdog(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const/16 v0, 0xaf2
 
@@ -1635,10 +1508,6 @@
 
 .method public static writeWatchdogHardReset(Ljava/lang/String;III)V
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/16 v0, 0xaf5
 
@@ -1681,17 +1550,6 @@
 
 .method public static writeWatchdogMeminfo(IIIIIIIIIII)V
     .locals 4
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
-    .param p9    # I
-    .param p10    # I
 
     const/16 v0, 0xaf9
 
@@ -1794,9 +1652,6 @@
 
 .method public static writeWatchdogProcPss(Ljava/lang/String;II)V
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
-    .param p2    # I
 
     const/16 v0, 0xaf3
 
@@ -1831,11 +1686,6 @@
 
 .method public static writeWatchdogProcStats(IIIII)V
     .locals 4
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/16 v0, 0xaf7
 
@@ -1890,17 +1740,6 @@
 
 .method public static writeWatchdogPssStats(IIIIIIIIIII)V
     .locals 4
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
-    .param p9    # I
-    .param p10    # I
 
     const/16 v0, 0xaf6
 
@@ -2003,13 +1842,6 @@
 
 .method public static writeWatchdogRequestedReboot(IIIIIII)V
     .locals 4
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     const/16 v0, 0xafb
 
@@ -2080,11 +1912,6 @@
 
 .method public static writeWatchdogScheduledReboot(JIIILjava/lang/String;)V
     .locals 4
-    .param p0    # J
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Ljava/lang/String;
 
     const/16 v0, 0xaf8
 
@@ -2135,11 +1962,6 @@
 
 .method public static writeWatchdogSoftReset(Ljava/lang/String;IIILjava/lang/String;)V
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
 
     const/16 v0, 0xaf4
 
@@ -2186,12 +2008,6 @@
 
 .method public static writeWatchdogVmstat(JIIIII)V
     .locals 4
-    .param p0    # J
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     const/16 v0, 0xafa
 
@@ -2254,7 +2070,6 @@
 
 .method public static writeWmHomeStackMoved(I)V
     .locals 1
-    .param p0    # I
 
     const/16 v0, 0x791d
 
@@ -2265,9 +2080,6 @@
 
 .method public static writeWmNoSurfaceMemory(Ljava/lang/String;ILjava/lang/String;)V
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/16 v0, 0x7918
 
@@ -2298,10 +2110,6 @@
 
 .method public static writeWmStackCreated(IIII)V
     .locals 4
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/16 v0, 0x791c
 
@@ -2348,7 +2156,6 @@
 
 .method public static writeWmStackRemoved(I)V
     .locals 1
-    .param p0    # I
 
     const/16 v0, 0x791e
 
@@ -2359,8 +2166,6 @@
 
 .method public static writeWmTaskCreated(II)V
     .locals 4
-    .param p0    # I
-    .param p1    # I
 
     const/16 v0, 0x7919
 
@@ -2391,9 +2196,6 @@
 
 .method public static writeWmTaskMoved(III)V
     .locals 4
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
 
     const/16 v0, 0x791a
 
@@ -2432,8 +2234,6 @@
 
 .method public static writeWmTaskRemoved(ILjava/lang/String;)V
     .locals 4
-    .param p0    # I
-    .param p1    # Ljava/lang/String;
 
     const/16 v0, 0x791b
 

@@ -97,7 +97,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     const/4 v3, -0x1
 
@@ -154,8 +153,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v3, -0x1
 
@@ -212,9 +209,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v3, -0x1
 
@@ -271,7 +265,6 @@
 
 .method static synthetic access$000(Lcom/sec/android/app/shootingmodemanager/views/ShootingModeGridView;)I
     .locals 1
-    .param p0    # Lcom/sec/android/app/shootingmodemanager/views/ShootingModeGridView;
 
     iget v0, p0, Lcom/sec/android/app/shootingmodemanager/views/ShootingModeGridView;->mDraggedScroll:I
 
@@ -280,7 +273,6 @@
 
 .method static synthetic access$100(Lcom/sec/android/app/shootingmodemanager/views/ShootingModeGridView;)F
     .locals 1
-    .param p0    # Lcom/sec/android/app/shootingmodemanager/views/ShootingModeGridView;
 
     iget v0, p0, Lcom/sec/android/app/shootingmodemanager/views/ShootingModeGridView;->mX:F
 
@@ -289,8 +281,6 @@
 
 .method static synthetic access$1002(Lcom/sec/android/app/shootingmodemanager/views/ShootingModeGridView;I)I
     .locals 0
-    .param p0    # Lcom/sec/android/app/shootingmodemanager/views/ShootingModeGridView;
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/app/shootingmodemanager/views/ShootingModeGridView;->mPrevDragOverposition:I
 
@@ -299,8 +289,6 @@
 
 .method static synthetic access$1102(Lcom/sec/android/app/shootingmodemanager/views/ShootingModeGridView;Z)Z
     .locals 0
-    .param p0    # Lcom/sec/android/app/shootingmodemanager/views/ShootingModeGridView;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/shootingmodemanager/views/ShootingModeGridView;->mAnimating:Z
 
@@ -309,7 +297,6 @@
 
 .method static synthetic access$1200(Lcom/sec/android/app/shootingmodemanager/views/ShootingModeGridView;)I
     .locals 1
-    .param p0    # Lcom/sec/android/app/shootingmodemanager/views/ShootingModeGridView;
 
     iget v0, p0, Lcom/sec/android/app/shootingmodemanager/views/ShootingModeGridView;->mAnimationTimeLeft:I
 
@@ -318,8 +305,6 @@
 
 .method static synthetic access$1202(Lcom/sec/android/app/shootingmodemanager/views/ShootingModeGridView;I)I
     .locals 0
-    .param p0    # Lcom/sec/android/app/shootingmodemanager/views/ShootingModeGridView;
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/app/shootingmodemanager/views/ShootingModeGridView;->mAnimationTimeLeft:I
 
@@ -328,8 +313,6 @@
 
 .method static synthetic access$1220(Lcom/sec/android/app/shootingmodemanager/views/ShootingModeGridView;I)I
     .locals 1
-    .param p0    # Lcom/sec/android/app/shootingmodemanager/views/ShootingModeGridView;
-    .param p1    # I
 
     iget v0, p0, Lcom/sec/android/app/shootingmodemanager/views/ShootingModeGridView;->mAnimationTimeLeft:I
 
@@ -342,7 +325,6 @@
 
 .method static synthetic access$1300(Lcom/sec/android/app/shootingmodemanager/views/ShootingModeGridView;)Lcom/sec/android/app/shootingmodemanager/views/ShootingModeGridView$AnimationTimeHandler;
     .locals 1
-    .param p0    # Lcom/sec/android/app/shootingmodemanager/views/ShootingModeGridView;
 
     iget-object v0, p0, Lcom/sec/android/app/shootingmodemanager/views/ShootingModeGridView;->mAnimationTimeHandler:Lcom/sec/android/app/shootingmodemanager/views/ShootingModeGridView$AnimationTimeHandler;
 
@@ -351,7 +333,6 @@
 
 .method static synthetic access$200(Lcom/sec/android/app/shootingmodemanager/views/ShootingModeGridView;)F
     .locals 1
-    .param p0    # Lcom/sec/android/app/shootingmodemanager/views/ShootingModeGridView;
 
     iget v0, p0, Lcom/sec/android/app/shootingmodemanager/views/ShootingModeGridView;->mY:F
 
@@ -360,10 +341,6 @@
 
 .method static synthetic access$300(Lcom/sec/android/app/shootingmodemanager/views/ShootingModeGridView;FFI)V
     .locals 0
-    .param p0    # Lcom/sec/android/app/shootingmodemanager/views/ShootingModeGridView;
-    .param p1    # F
-    .param p2    # F
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Lcom/sec/android/app/shootingmodemanager/views/ShootingModeGridView;->scroll(FFI)V
 
@@ -372,7 +349,6 @@
 
 .method static synthetic access$400(Lcom/sec/android/app/shootingmodemanager/views/ShootingModeGridView;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/sec/android/app/shootingmodemanager/views/ShootingModeGridView;
 
     iget-object v0, p0, Lcom/sec/android/app/shootingmodemanager/views/ShootingModeGridView;->mMainHandler:Landroid/os/Handler;
 
@@ -381,7 +357,6 @@
 
 .method static synthetic access$500(Lcom/sec/android/app/shootingmodemanager/views/ShootingModeGridView;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/sec/android/app/shootingmodemanager/views/ShootingModeGridView;
 
     iget-object v0, p0, Lcom/sec/android/app/shootingmodemanager/views/ShootingModeGridView;->mDragView:Landroid/view/View;
 
@@ -390,7 +365,6 @@
 
 .method static synthetic access$600(Lcom/sec/android/app/shootingmodemanager/views/ShootingModeGridView;)I
     .locals 1
-    .param p0    # Lcom/sec/android/app/shootingmodemanager/views/ShootingModeGridView;
 
     iget v0, p0, Lcom/sec/android/app/shootingmodemanager/views/ShootingModeGridView;->mDragPosition:I
 
@@ -399,8 +373,6 @@
 
 .method static synthetic access$602(Lcom/sec/android/app/shootingmodemanager/views/ShootingModeGridView;I)I
     .locals 0
-    .param p0    # Lcom/sec/android/app/shootingmodemanager/views/ShootingModeGridView;
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/app/shootingmodemanager/views/ShootingModeGridView;->mDragPosition:I
 
@@ -409,7 +381,6 @@
 
 .method static synthetic access$700(Lcom/sec/android/app/shootingmodemanager/views/ShootingModeGridView;)I
     .locals 1
-    .param p0    # Lcom/sec/android/app/shootingmodemanager/views/ShootingModeGridView;
 
     iget v0, p0, Lcom/sec/android/app/shootingmodemanager/views/ShootingModeGridView;->mDropOnPosition:I
 
@@ -418,8 +389,6 @@
 
 .method static synthetic access$702(Lcom/sec/android/app/shootingmodemanager/views/ShootingModeGridView;I)I
     .locals 0
-    .param p0    # Lcom/sec/android/app/shootingmodemanager/views/ShootingModeGridView;
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/app/shootingmodemanager/views/ShootingModeGridView;->mDropOnPosition:I
 
@@ -428,9 +397,6 @@
 
 .method static synthetic access$800(Lcom/sec/android/app/shootingmodemanager/views/ShootingModeGridView;II)V
     .locals 0
-    .param p0    # Lcom/sec/android/app/shootingmodemanager/views/ShootingModeGridView;
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/sec/android/app/shootingmodemanager/views/ShootingModeGridView;->insert(II)V
 
@@ -439,8 +405,6 @@
 
 .method static synthetic access$902(Lcom/sec/android/app/shootingmodemanager/views/ShootingModeGridView;I)I
     .locals 0
-    .param p0    # Lcom/sec/android/app/shootingmodemanager/views/ShootingModeGridView;
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/app/shootingmodemanager/views/ShootingModeGridView;->mDragOverPosition:I
 
@@ -449,8 +413,6 @@
 
 .method private declared-synchronized checkScrolling(FF)Z
     .locals 5
-    .param p1    # F
-    .param p2    # F
 
     const/4 v1, 0x1
 
@@ -576,8 +538,6 @@
 
 .method private getChildPosition(II)I
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     const/4 v2, -0x1
 
@@ -649,7 +609,6 @@
 
 .method private getChildPosition(Landroid/view/View;)I
     .locals 4
-    .param p1    # Landroid/view/View;
 
     new-instance v1, Landroid/graphics/Rect;
 
@@ -704,7 +663,6 @@
 
 .method private getDragShowView(Landroid/view/View;)Landroid/view/View;
     .locals 7
-    .param p1    # Landroid/view/View;
 
     const v5, 0x7f0f0035
 
@@ -840,8 +798,6 @@
 
 .method private insert(II)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     iget-object v3, p0, Lcom/sec/android/app/shootingmodemanager/views/ShootingModeGridView;->mAdapter:Lcom/sec/android/app/shootingmodemanager/views/ItemsAdapter;
 
@@ -924,9 +880,6 @@
 
 .method private moveBackward(III)V
     .locals 20
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const-string v1, "ShootingModeGridView"
 
@@ -1376,9 +1329,6 @@
 
 .method private moveForward(III)V
     .locals 16
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const-string v1, "ShootingModeGridView"
 
@@ -1852,9 +1802,6 @@
 
 .method private declared-synchronized scroll(FFI)V
     .locals 5
-    .param p1    # F
-    .param p2    # F
-    .param p3    # I
 
     const/4 v4, -0x1
 
@@ -2069,7 +2016,6 @@
 
 .method private showCursorView(Landroid/graphics/Rect;)V
     .locals 7
-    .param p1    # Landroid/graphics/Rect;
 
     iget-object v5, p0, Lcom/sec/android/app/shootingmodemanager/views/ShootingModeGridView;->mCursorView:Landroid/widget/ImageView;
 
@@ -2434,8 +2380,6 @@
 
 .method public onDragOver(FF)V
     .locals 7
-    .param p1    # F
-    .param p2    # F
 
     const/4 v6, 0x0
 
@@ -2724,8 +2668,6 @@
 
 .method public onDrop(FF)V
     .locals 5
-    .param p1    # F
-    .param p2    # F
 
     const/4 v4, 0x1
 
@@ -2804,7 +2746,6 @@
 
 .method public bridge synthetic setAdapter(Landroid/widget/Adapter;)V
     .locals 0
-    .param p1    # Landroid/widget/Adapter;
 
     check-cast p1, Landroid/widget/ListAdapter;
 
@@ -2815,7 +2756,6 @@
 
 .method public setAdapter(Landroid/widget/ListAdapter;)V
     .locals 2
-    .param p1    # Landroid/widget/ListAdapter;
 
     instance-of v0, p1, Lcom/sec/android/app/shootingmodemanager/views/ItemsAdapter;
 
@@ -2863,7 +2803,6 @@
 
 .method public startDrag(Landroid/view/View;)V
     .locals 6
-    .param p1    # Landroid/view/View;
 
     const/4 v5, 0x0
 

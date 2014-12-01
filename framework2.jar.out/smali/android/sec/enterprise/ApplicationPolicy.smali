@@ -34,7 +34,6 @@
 
 .method private getApplicationNotificationMode(Z)I
     .locals 4
-    .param p1    # Z
 
     :try_start_0
     invoke-static {}, Landroid/sec/enterprise/EnterpriseDeviceManager$EDMProxyServiceHelper;->getService()Landroid/sec/enterprise/IEDMProxy;
@@ -71,7 +70,6 @@
 # virtual methods
 .method public getApplicationIconFromDb(Ljava/lang/String;)[B
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -106,8 +104,6 @@
 
 .method public getApplicationNameFromDb(Ljava/lang/String;I)Ljava/lang/String;
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v2, 0x0
 
@@ -154,8 +150,6 @@
 
 .method public getApplicationStateEnabled(Ljava/lang/String;Z)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     :try_start_0
     invoke-static {}, Landroid/sec/enterprise/EnterpriseDeviceManager$EDMProxyServiceHelper;->getService()Landroid/sec/enterprise/IEDMProxy;
@@ -190,9 +184,6 @@
 
 .method public getApplicationStateEnabledAsUser(Ljava/lang/String;ZI)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # I
 
     :try_start_0
     invoke-static {}, Landroid/sec/enterprise/EnterpriseDeviceManager$EDMProxyServiceHelper;->getService()Landroid/sec/enterprise/IEDMProxy;
@@ -227,9 +218,6 @@
 
 .method public isApplicationForceStopDisabled(Ljava/lang/String;IZ)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Z
 
     :try_start_0
     invoke-static {}, Landroid/sec/enterprise/EnterpriseDeviceManager$EDMProxyServiceHelper;->getService()Landroid/sec/enterprise/IEDMProxy;
@@ -264,7 +252,6 @@
 
 .method public isIntentDisabled(Landroid/content/Intent;)Z
     .locals 4
-    .param p1    # Landroid/content/Intent;
 
     :try_start_0
     invoke-static {}, Landroid/sec/enterprise/EnterpriseDeviceManager$EDMProxyServiceHelper;->getService()Landroid/sec/enterprise/IEDMProxy;
@@ -299,7 +286,6 @@
 
 .method public isStatusBarNotificationAllowed(Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     invoke-static {}, Landroid/sec/enterprise/EnterpriseDeviceManager$EDMProxyServiceHelper;->getService()Landroid/sec/enterprise/IEDMProxy;

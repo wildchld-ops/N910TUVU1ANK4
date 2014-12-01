@@ -52,7 +52,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/accessibility/CaptionPropertiesFragment;)Lcom/android/internal/widget/SubtitleView;
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/CaptionPropertiesFragment;
 
     iget-object v0, p0, Lcom/android/settings/accessibility/CaptionPropertiesFragment;->mPreviewText:Lcom/android/internal/widget/SubtitleView;
 
@@ -61,9 +60,6 @@
 
 .method public static applyCaptionProperties(Landroid/view/accessibility/CaptioningManager;Lcom/android/internal/widget/SubtitleView;I)V
     .locals 8
-    .param p0    # Landroid/view/accessibility/CaptioningManager;
-    .param p1    # Lcom/android/internal/widget/SubtitleView;
-    .param p2    # I
 
     const v7, 0x7f0909ae
 
@@ -650,8 +646,6 @@
 
 .method private mergeColorOpacity(Lcom/android/settings/accessibility/ColorPreference;Lcom/android/settings/accessibility/ColorPreference;)I
     .locals 5
-    .param p1    # Lcom/android/settings/accessibility/ColorPreference;
-    .param p2    # Lcom/android/settings/accessibility/ColorPreference;
 
     invoke-virtual {p1}, Lcom/android/settings/accessibility/ListDialogPreference;->getValue()I
 
@@ -690,9 +684,6 @@
 
 .method private parseColorOpacity(Lcom/android/settings/accessibility/ColorPreference;Lcom/android/settings/accessibility/ColorPreference;I)V
     .locals 4
-    .param p1    # Lcom/android/settings/accessibility/ColorPreference;
-    .param p2    # Lcom/android/settings/accessibility/ColorPreference;
-    .param p3    # I
 
     const/high16 v3, -0x1000000
 
@@ -940,7 +931,6 @@
 # virtual methods
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -971,9 +961,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 5
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const/4 v4, -0x1
 
@@ -1047,8 +1034,6 @@
 
 .method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
     .locals 3
-    .param p1    # Landroid/preference/Preference;
-    .param p2    # Ljava/lang/Object;
 
     invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 
@@ -1117,8 +1102,6 @@
 
 .method public onValueChanged(Lcom/android/settings/accessibility/ListDialogPreference;I)V
     .locals 4
-    .param p1    # Lcom/android/settings/accessibility/ListDialogPreference;
-    .param p2    # I
 
     invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 
@@ -1217,8 +1200,6 @@
 
 .method public onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/os/Bundle;
 
     invoke-super {p0, p1, p2}, Landroid/app/Fragment;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
 

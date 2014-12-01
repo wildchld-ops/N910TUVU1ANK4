@@ -66,7 +66,6 @@
 
 .method public static forceGc(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const/16 v0, 0xab5
 

@@ -10,11 +10,6 @@
 # direct methods
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;FFIZ)V
     .locals 2
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # I
-    .param p5    # Z
 
     const/4 v1, 0x0
 

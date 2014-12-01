@@ -25,7 +25,6 @@
 # direct methods
 .method public constructor <init>(Z)V
     .locals 3
-    .param p1    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -46,7 +45,6 @@
 
 .method private getUmlautMap(Ljava/lang/String;)Ljava/util/HashMap;
     .locals 2
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

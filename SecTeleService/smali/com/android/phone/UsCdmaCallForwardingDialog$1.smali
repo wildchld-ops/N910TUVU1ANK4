@@ -54,7 +54,7 @@
 
     const/4 v1, 0x3
 
-    invoke-virtual {v0, v1}, Landroid/app/Activity;->showDialog(I)V
+    invoke-virtual {v0, v1}, Lcom/android/phone/UsCdmaCallForwardingDialog;->showDialog(I)V
 
     goto :goto_0
 

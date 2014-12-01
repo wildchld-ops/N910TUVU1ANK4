@@ -98,7 +98,7 @@
     iget-object v1, p0, Lcom/android/phone/network/multipart/StringPart;->value:Ljava/lang/String;
 
     :goto_0
-    invoke-virtual {p0}, Lcom/android/phone/network/multipart/PartBase;->getCharSet()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/android/phone/network/multipart/StringPart;->getCharSet()Ljava/lang/String;
 
     move-result-object v2
 
@@ -117,7 +117,7 @@
     :try_start_0
     iget-object v2, p0, Lcom/android/phone/network/multipart/StringPart;->value:Ljava/lang/String;
 
-    invoke-virtual {p0}, Lcom/android/phone/network/multipart/PartBase;->getCharSet()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/android/phone/network/multipart/StringPart;->getCharSet()Ljava/lang/String;
 
     move-result-object v3
 

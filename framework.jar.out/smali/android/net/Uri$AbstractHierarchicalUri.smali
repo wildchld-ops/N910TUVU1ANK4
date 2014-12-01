@@ -46,7 +46,6 @@
 
 .method synthetic constructor <init>(Landroid/net/Uri$1;)V
     .locals 0
-    .param p1    # Landroid/net/Uri$1;
 
     invoke-direct {p0}, Landroid/net/Uri$AbstractHierarchicalUri;-><init>()V
 
@@ -236,7 +235,6 @@
 # virtual methods
 .method public bridge synthetic compareTo(Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Landroid/net/Uri;
 

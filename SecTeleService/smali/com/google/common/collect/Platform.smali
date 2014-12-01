@@ -22,7 +22,7 @@
         }
     .end annotation
 
-    invoke-virtual {p0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
+    invoke-virtual {p0}, [Ljava/lang/Object;->clone()Ljava/lang/Object;
 
     move-result-object v0
 

@@ -57,8 +57,6 @@
 # virtual methods
 .method protected applyTransformation(FLandroid/view/animation/Transformation;)V
     .locals 5
-    .param p1    # F
-    .param p2    # Landroid/view/animation/Transformation;
 
     const/4 v4, 0x0
 

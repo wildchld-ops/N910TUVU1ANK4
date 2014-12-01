@@ -20,7 +20,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, -0x1
 
@@ -119,7 +118,6 @@
 
 .method private getSizeStr(J)Ljava/lang/String;
     .locals 4
-    .param p1    # J
 
     const-wide/16 v2, -0x1
 

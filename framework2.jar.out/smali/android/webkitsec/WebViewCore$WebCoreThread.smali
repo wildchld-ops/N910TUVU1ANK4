@@ -36,7 +36,6 @@
 
 .method synthetic constructor <init>(Landroid/webkitsec/WebViewCore$1;)V
     .locals 0
-    .param p1    # Landroid/webkitsec/WebViewCore$1;
 
     invoke-direct {p0}, Landroid/webkitsec/WebViewCore$WebCoreThread;-><init>()V
 

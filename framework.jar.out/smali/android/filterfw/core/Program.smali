@@ -19,8 +19,6 @@
 
 .method public process(Landroid/filterfw/core/Frame;Landroid/filterfw/core/Frame;)V
     .locals 2
-    .param p1    # Landroid/filterfw/core/Frame;
-    .param p2    # Landroid/filterfw/core/Frame;
 
     const/4 v1, 0x1
 

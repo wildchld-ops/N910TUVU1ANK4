@@ -48,7 +48,6 @@
 
 .method static synthetic access$000(Landroid/printservice/PrintService;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Landroid/printservice/PrintService;
 
     iget-object v0, p0, Landroid/printservice/PrintService;->mHandler:Landroid/os/Handler;
 
@@ -57,7 +56,6 @@
 
 .method static synthetic access$100(Landroid/printservice/PrintService;)I
     .locals 1
-    .param p0    # Landroid/printservice/PrintService;
 
     iget v0, p0, Landroid/printservice/PrintService;->mLastSessionId:I
 
@@ -66,8 +64,6 @@
 
 .method static synthetic access$102(Landroid/printservice/PrintService;I)I
     .locals 0
-    .param p0    # Landroid/printservice/PrintService;
-    .param p1    # I
 
     iput p1, p0, Landroid/printservice/PrintService;->mLastSessionId:I
 
@@ -76,7 +72,6 @@
 
 .method static synthetic access$200(Landroid/printservice/PrintService;)Landroid/printservice/PrinterDiscoverySession;
     .locals 1
-    .param p0    # Landroid/printservice/PrintService;
 
     iget-object v0, p0, Landroid/printservice/PrintService;->mDiscoverySession:Landroid/printservice/PrinterDiscoverySession;
 
@@ -85,8 +80,6 @@
 
 .method static synthetic access$202(Landroid/printservice/PrintService;Landroid/printservice/PrinterDiscoverySession;)Landroid/printservice/PrinterDiscoverySession;
     .locals 0
-    .param p0    # Landroid/printservice/PrintService;
-    .param p1    # Landroid/printservice/PrinterDiscoverySession;
 
     iput-object p1, p0, Landroid/printservice/PrintService;->mDiscoverySession:Landroid/printservice/PrinterDiscoverySession;
 
@@ -95,7 +88,6 @@
 
 .method static synthetic access$300(Landroid/printservice/PrintService;)Landroid/printservice/IPrintServiceClient;
     .locals 1
-    .param p0    # Landroid/printservice/PrintService;
 
     iget-object v0, p0, Landroid/printservice/PrintService;->mClient:Landroid/printservice/IPrintServiceClient;
 
@@ -104,8 +96,6 @@
 
 .method static synthetic access$302(Landroid/printservice/PrintService;Landroid/printservice/IPrintServiceClient;)Landroid/printservice/IPrintServiceClient;
     .locals 0
-    .param p0    # Landroid/printservice/PrintService;
-    .param p1    # Landroid/printservice/IPrintServiceClient;
 
     iput-object p1, p0, Landroid/printservice/PrintService;->mClient:Landroid/printservice/IPrintServiceClient;
 
@@ -141,7 +131,6 @@
 # virtual methods
 .method protected final attachBaseContext(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     invoke-super {p0, p1}, Landroid/content/ContextWrapper;->attachBaseContext(Landroid/content/Context;)V
 
@@ -160,7 +149,6 @@
 
 .method public final generatePrinterId(Ljava/lang/String;)Landroid/print/PrinterId;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Landroid/printservice/PrintService;->throwIfNotCalledOnMainThread()V
 
@@ -296,7 +284,6 @@
 
 .method public final onBind(Landroid/content/Intent;)Landroid/os/IBinder;
     .locals 1
-    .param p1    # Landroid/content/Intent;
 
     new-instance v0, Landroid/printservice/PrintService$1;
 

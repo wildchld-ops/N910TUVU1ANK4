@@ -65,9 +65,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/wifi/WifiDummyPickerActivity;Landroid/content/Context;Landroid/content/Intent;)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/WifiDummyPickerActivity;
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     invoke-direct {p0, p1, p2}, Lcom/android/settings/wifi/WifiDummyPickerActivity;->handleEvent(Landroid/content/Context;Landroid/content/Intent;)V
 
@@ -143,8 +140,6 @@
 
 .method private handleEvent(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     const/4 v5, 0x1
 
@@ -320,7 +315,6 @@
 
 .method private setGrandeDisplayView(Z)V
     .locals 10
-    .param p1    # Z
 
     const/4 v9, 0x0
 
@@ -521,7 +515,6 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p1}, Landroid/view/View;->getId()I
 
@@ -559,7 +552,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 2
-    .param p1    # Landroid/content/res/Configuration;
 
     const/4 v0, 0x1
 
@@ -588,7 +580,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v2, 0x1
 

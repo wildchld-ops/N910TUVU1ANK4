@@ -129,7 +129,7 @@
 .method private removeSoundEQMenu()V
     .locals 4
 
-    invoke-virtual {p0}, Landroid/preference/PreferenceFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/phone/CallSoundPreference;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v2
 
@@ -185,7 +185,7 @@
     const/4 v2, 0x1
 
     :goto_0
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/CallSoundPreference;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v4
 
@@ -218,7 +218,7 @@
     const/4 v2, 0x1
 
     :goto_0
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/CallSoundPreference;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v4
 
@@ -247,7 +247,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v3}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v3}, Lcom/android/phone/PhoneGlobals;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v3
 
@@ -261,7 +261,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v3}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v3}, Lcom/android/phone/PhoneGlobals;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v3
 
@@ -278,7 +278,7 @@
     move v3, v4
 
     :goto_0
-    invoke-virtual {v6, v3}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+    invoke-virtual {v6, v3}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     const-string v3, "support_easy_mode"
 
@@ -300,7 +300,7 @@
 
     iget-object v3, p0, Lcom/android/phone/CallSoundPreference;->mExtraVolPreference:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v3, v5}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v3, v5}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     :cond_0
     :goto_1
@@ -332,7 +332,7 @@
 
     move-result v4
 
-    invoke-virtual {v3, v4}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+    invoke-virtual {v3, v4}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     :cond_1
     :goto_2
@@ -348,7 +348,7 @@
     :cond_3
     iget-object v3, p0, Lcom/android/phone/CallSoundPreference;->mExtraVolPreference:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v3, v4}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v3, v4}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     goto :goto_1
 
@@ -389,7 +389,7 @@
 
     move-result v4
 
-    invoke-virtual {v3, v4}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+    invoke-virtual {v3, v4}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     goto :goto_2
 .end method
@@ -407,7 +407,7 @@
 
     if-eqz v1, :cond_0
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/CallSoundPreference;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v4
 
@@ -433,7 +433,7 @@
     if-lez v0, :cond_2
 
     :goto_1
-    invoke-virtual {v1, v2}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+    invoke-virtual {v1, v2}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     :cond_0
     return-void
@@ -452,7 +452,7 @@
 .method private updateMyCallSoundPreference()V
     .locals 3
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/CallSoundPreference;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -460,7 +460,7 @@
 
     move-result v0
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/CallSoundPreference;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -485,7 +485,7 @@
     const/4 v1, 0x1
 
     :goto_0
-    invoke-virtual {v2, v1}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v2, v1}, Lcom/android/phone/InCallSoundEQListPreference;->setEnabled(Z)V
 
     :cond_0
     return-void
@@ -511,7 +511,7 @@
 
     if-eqz v2, :cond_0
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/CallSoundPreference;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 
@@ -525,10 +525,10 @@
 
     iget-object v2, p0, Lcom/android/phone/CallSoundPreference;->mNaturalSound:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v2, v5}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+    invoke-virtual {v2, v5}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     :goto_0
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/CallSoundPreference;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v2
 
@@ -540,7 +540,7 @@
 
     iget-object v2, p0, Lcom/android/phone/CallSoundPreference;->mNaturalSound:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v2, v5}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v2, v5}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     :goto_1
     const-string v2, "support_safetycare"
@@ -563,7 +563,7 @@
 
     iget-object v2, p0, Lcom/android/phone/CallSoundPreference;->mNaturalSound:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v2, v4}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v2, v4}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     :cond_0
     return-void
@@ -571,14 +571,14 @@
     :cond_1
     iget-object v2, p0, Lcom/android/phone/CallSoundPreference;->mNaturalSound:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v2, v4}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+    invoke-virtual {v2, v4}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     goto :goto_0
 
     :cond_2
     iget-object v2, p0, Lcom/android/phone/CallSoundPreference;->mNaturalSound:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v2, v4}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v2, v4}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     goto :goto_1
 .end method
@@ -598,7 +598,7 @@
 
     if-eqz v2, :cond_0
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/CallSoundPreference;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 
@@ -612,10 +612,10 @@
 
     iget-object v2, p0, Lcom/android/phone/CallSoundPreference;->mNoiseReduction:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v2, v4}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+    invoke-virtual {v2, v4}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     :goto_0
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/CallSoundPreference;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v2
 
@@ -627,7 +627,7 @@
 
     iget-object v2, p0, Lcom/android/phone/CallSoundPreference;->mNoiseReduction:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v2, v4}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v2, v4}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     :cond_0
     :goto_1
@@ -636,14 +636,14 @@
     :cond_1
     iget-object v2, p0, Lcom/android/phone/CallSoundPreference;->mNoiseReduction:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v2, v5}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+    invoke-virtual {v2, v5}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     goto :goto_0
 
     :cond_2
     iget-object v2, p0, Lcom/android/phone/CallSoundPreference;->mNoiseReduction:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v2, v5}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v2, v5}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     goto :goto_1
 .end method
@@ -668,7 +668,7 @@
 
     if-ne p1, v0, :cond_2
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/CallSoundPreference;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -679,7 +679,7 @@
     :goto_1
     const v0, 0x10406ca
 
-    invoke-virtual {p0, v0}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lcom/android/phone/CallSoundPreference;->getString(I)Ljava/lang/String;
 
     move-result-object v9
 
@@ -687,7 +687,7 @@
 
     const v0, 0x10406c8
 
-    invoke-virtual {p0, v0}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lcom/android/phone/CallSoundPreference;->getString(I)Ljava/lang/String;
 
     move-result-object v9
 
@@ -749,7 +749,7 @@
 
     const/4 v7, 0x1
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/CallSoundPreference;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -768,7 +768,7 @@
 
     :cond_5
     :try_start_0
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/CallSoundPreference;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -873,7 +873,7 @@
     .locals 7
     .param p1    # Z
 
-    invoke-virtual {p0}, Landroid/preference/PreferenceFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/phone/CallSoundPreference;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v2
 
@@ -900,7 +900,7 @@
 
     const-string v3, "button_ringtone_keytone_key"
 
-    invoke-virtual {p0, v3}, Landroid/preference/PreferenceFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v3}, Lcom/android/phone/CallSoundPreference;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v3
 
@@ -910,7 +910,7 @@
 
     const-string v3, "callsettings_incallsound_eqlist_pref"
 
-    invoke-virtual {p0, v3}, Landroid/preference/PreferenceFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v3}, Lcom/android/phone/CallSoundPreference;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v3
 
@@ -920,7 +920,7 @@
 
     const-string v3, "callsettings_incallsound_eq"
 
-    invoke-virtual {p0, v3}, Landroid/preference/PreferenceFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v3}, Lcom/android/phone/CallSoundPreference;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v3
 
@@ -950,7 +950,7 @@
 
     const-string v3, "extra_ringtone_preference"
 
-    invoke-virtual {p0, v3}, Landroid/preference/PreferenceFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v3}, Lcom/android/phone/CallSoundPreference;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v3
 
@@ -960,7 +960,7 @@
 
     const-string v3, "showing_extra_vol_preference"
 
-    invoke-virtual {p0, v3}, Landroid/preference/PreferenceFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v3}, Lcom/android/phone/CallSoundPreference;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v3
 
@@ -1037,7 +1037,7 @@
     invoke-virtual {v2, v3}, Landroid/preference/PreferenceGroup;->removePreference(Landroid/preference/Preference;)Z
 
     :cond_6
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/CallSoundPreference;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v3
 
@@ -1050,7 +1050,7 @@
     invoke-direct {p0}, Lcom/android/phone/CallSoundPreference;->removeSoundEQMenu()V
 
     :cond_7
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/CallSoundPreference;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v3
 
@@ -1094,7 +1094,7 @@
 
     iget-object v3, p0, Lcom/android/phone/CallSoundPreference;->mNoiseReduction:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/CallSoundPreference;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v4
 
@@ -1110,7 +1110,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v3, v4}, Landroid/preference/Preference;->setDefaultValue(Ljava/lang/Object;)V
+    invoke-virtual {v3, v4}, Landroid/preference/CheckBoxPreference;->setDefaultValue(Ljava/lang/Object;)V
 
     goto/16 :goto_0
 
@@ -1140,7 +1140,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v3, v4}, Landroid/preference/Preference;->setDefaultValue(Ljava/lang/Object;)V
+    invoke-virtual {v3, v4}, Landroid/preference/CheckBoxPreference;->setDefaultValue(Ljava/lang/Object;)V
 
     goto/16 :goto_0
 
@@ -1156,7 +1156,7 @@
     .locals 3
     .param p1    # Z
 
-    invoke-virtual {p0}, Landroid/preference/PreferenceFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/phone/CallSoundPreference;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v1
 
@@ -1164,13 +1164,13 @@
 
     const-string v2, "button_voicemail_category_key"
 
-    invoke-virtual {v1, v2}, Landroid/preference/PreferenceGroup;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {v1, v2}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {v1, v0}, Landroid/preference/PreferenceGroup;->removePreference(Landroid/preference/Preference;)Z
+    invoke-virtual {v1, v0}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
     :cond_0
     :goto_0
@@ -1179,7 +1179,7 @@
     :cond_1
     const-string v2, "button_voicemail_category_key"
 
-    invoke-virtual {v1, v2}, Landroid/preference/PreferenceGroup;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {v1, v2}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -1187,7 +1187,7 @@
 
     const-string v2, "button_voicemail_notification_ringtone_key"
 
-    invoke-virtual {p0, v2}, Landroid/preference/PreferenceFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v2}, Lcom/android/phone/CallSoundPreference;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v2
 
@@ -1195,7 +1195,7 @@
 
     const-string v2, "button_voicemail_notification_vibrate_key"
 
-    invoke-virtual {p0, v2}, Landroid/preference/PreferenceFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v2}, Lcom/android/phone/CallSoundPreference;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v2
 
@@ -1216,7 +1216,7 @@
 
     const v0, 0x7f06000c
 
-    invoke-virtual {p0, v0}, Landroid/preference/PreferenceFragment;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/CallSoundPreference;->addPreferencesFromResource(I)V
 
     invoke-static {}, Lcom/android/phone/PhoneGlobals;->getPhone()Lcom/android/internal/telephony/Phone;
 
@@ -1268,13 +1268,13 @@
 
     iget-object v1, p0, Lcom/android/phone/CallSoundPreference;->mExtraRingerPreference:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v1}, Landroid/preference/TwoStatePreference;->isChecked()Z
+    invoke-virtual {v1}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/CallSoundPreference;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
@@ -1286,7 +1286,7 @@
     return v0
 
     :cond_0
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/CallSoundPreference;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
@@ -1303,13 +1303,13 @@
 
     iget-object v1, p0, Lcom/android/phone/CallSoundPreference;->mExtraVolPreference:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v1}, Landroid/preference/TwoStatePreference;->isChecked()Z
+    invoke-virtual {v1}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
     move-result v1
 
     if-eqz v1, :cond_2
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/CallSoundPreference;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
@@ -1320,7 +1320,7 @@
     goto :goto_0
 
     :cond_2
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/CallSoundPreference;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
@@ -1337,7 +1337,7 @@
 
     iget-object v1, p0, Lcom/android/phone/CallSoundPreference;->mNoiseReduction:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v1}, Landroid/preference/TwoStatePreference;->isChecked()Z
+    invoke-virtual {v1}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
     move-result v1
 
@@ -1352,7 +1352,7 @@
 
     iget-object v1, p0, Lcom/android/phone/CallSoundPreference;->mNaturalSound:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v1}, Landroid/preference/TwoStatePreference;->isChecked()Z
+    invoke-virtual {v1}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
     move-result v1
 
@@ -1361,7 +1361,7 @@
     goto :goto_0
 
     :cond_5
-    invoke-super {p0, p1, p2}, Landroid/preference/PreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
+    invoke-super {p0, p1, p2}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
 
     move-result v0
 

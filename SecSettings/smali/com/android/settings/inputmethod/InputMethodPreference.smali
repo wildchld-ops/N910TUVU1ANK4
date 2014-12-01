@@ -58,10 +58,6 @@
 
 .method public constructor <init>(Lcom/android/settings/SettingsPreferenceFragment;Landroid/content/Intent;Landroid/view/inputmethod/InputMethodManager;Landroid/view/inputmethod/InputMethodInfo;)V
     .locals 4
-    .param p1    # Lcom/android/settings/SettingsPreferenceFragment;
-    .param p2    # Landroid/content/Intent;
-    .param p3    # Landroid/view/inputmethod/InputMethodManager;
-    .param p4    # Landroid/view/inputmethod/InputMethodInfo;
 
     const/4 v3, 0x0
 
@@ -149,7 +145,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/inputmethod/InputMethodPreference;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/inputmethod/InputMethodPreference;
 
     iget-boolean v0, p0, Lcom/android/settings/inputmethod/InputMethodPreference;->mIsDefaultIme:Z
 
@@ -158,9 +153,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/inputmethod/InputMethodPreference;ZZ)V
     .locals 0
-    .param p0    # Lcom/android/settings/inputmethod/InputMethodPreference;
-    .param p1    # Z
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/settings/inputmethod/InputMethodPreference;->setChecked(ZZ)V
 
@@ -169,7 +161,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/inputmethod/InputMethodPreference;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/inputmethod/InputMethodPreference;
 
     iget-boolean v0, p0, Lcom/android/settings/inputmethod/InputMethodPreference;->mIsSystemIme:Z
 
@@ -178,7 +169,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/inputmethod/InputMethodPreference;)Landroid/view/inputmethod/InputMethodInfo;
     .locals 1
-    .param p0    # Lcom/android/settings/inputmethod/InputMethodPreference;
 
     iget-object v0, p0, Lcom/android/settings/inputmethod/InputMethodPreference;->mImi:Landroid/view/inputmethod/InputMethodInfo;
 
@@ -187,9 +177,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/inputmethod/InputMethodPreference;Landroid/view/inputmethod/InputMethodInfo;Lcom/android/settings/inputmethod/InputMethodPreference;)V
     .locals 0
-    .param p0    # Lcom/android/settings/inputmethod/InputMethodPreference;
-    .param p1    # Landroid/view/inputmethod/InputMethodInfo;
-    .param p2    # Lcom/android/settings/inputmethod/InputMethodPreference;
 
     invoke-direct {p0, p1, p2}, Lcom/android/settings/inputmethod/InputMethodPreference;->showSecurityWarnDialog(Landroid/view/inputmethod/InputMethodInfo;Lcom/android/settings/inputmethod/InputMethodPreference;)V
 
@@ -198,7 +185,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/inputmethod/InputMethodPreference;)Lcom/android/settings/SettingsPreferenceFragment;
     .locals 1
-    .param p0    # Lcom/android/settings/inputmethod/InputMethodPreference;
 
     iget-object v0, p0, Lcom/android/settings/inputmethod/InputMethodPreference;->mFragment:Lcom/android/settings/SettingsPreferenceFragment;
 
@@ -207,7 +193,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/inputmethod/InputMethodPreference;)Landroid/content/Intent;
     .locals 1
-    .param p0    # Lcom/android/settings/inputmethod/InputMethodPreference;
 
     iget-object v0, p0, Lcom/android/settings/inputmethod/InputMethodPreference;->mSettingsIntent:Landroid/content/Intent;
 
@@ -386,8 +371,6 @@
 
 .method private setChecked(ZZ)V
     .locals 3
-    .param p1    # Z
-    .param p2    # Z
 
     invoke-virtual {p0}, Landroid/preference/TwoStatePreference;->isChecked()Z
 
@@ -419,8 +402,6 @@
 
 .method private showSecurityWarnDialog(Landroid/view/inputmethod/InputMethodInfo;Lcom/android/settings/inputmethod/InputMethodPreference;)V
     .locals 7
-    .param p1    # Landroid/view/inputmethod/InputMethodInfo;
-    .param p2    # Lcom/android/settings/inputmethod/InputMethodPreference;
 
     const/4 v3, 0x1
 
@@ -538,10 +519,6 @@
 
 .method public static startFragment(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;)Z
     .locals 7
-    .param p0    # Landroid/app/Fragment;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Landroid/os/Bundle;
 
     invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 
@@ -646,7 +623,6 @@
 # virtual methods
 .method public compareTo(Landroid/preference/Preference;)I
     .locals 9
-    .param p1    # Landroid/preference/Preference;
 
     const/4 v6, 0x0
 
@@ -756,7 +732,6 @@
 
 .method public bridge synthetic compareTo(Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Landroid/preference/Preference;
 
@@ -769,7 +744,6 @@
 
 .method protected onBindView(Landroid/view/View;)V
     .locals 5
-    .param p1    # Landroid/view/View;
 
     const/4 v0, 0x1
 
@@ -915,7 +889,6 @@
 
 .method public setEnabled(Z)V
     .locals 0
-    .param p1    # Z
 
     invoke-super {p0, p1}, Landroid/preference/Preference;->setEnabled(Z)V
 
@@ -926,7 +899,6 @@
 
 .method public setOnImePreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
     .locals 0
-    .param p1    # Landroid/preference/Preference$OnPreferenceChangeListener;
 
     iput-object p1, p0, Lcom/android/settings/inputmethod/InputMethodPreference;->mOnImePreferenceChangeListener:Landroid/preference/Preference$OnPreferenceChangeListener;
 

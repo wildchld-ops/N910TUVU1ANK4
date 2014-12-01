@@ -62,7 +62,6 @@
 # direct methods
 .method public constructor <init>(Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$Panorama360View;I)V
     .locals 3
-    .param p2    # I
 
     const/16 v2, 0x9
 

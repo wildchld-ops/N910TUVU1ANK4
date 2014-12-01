@@ -58,8 +58,6 @@
 
 .method synthetic constructor <init>(Lcom/android/settings/powersavingmode/PowerNotiDialog;Lcom/android/settings/powersavingmode/PowerNotiDialog$1;)V
     .locals 0
-    .param p1    # Lcom/android/settings/powersavingmode/PowerNotiDialog;
-    .param p2    # Lcom/android/settings/powersavingmode/PowerNotiDialog$1;
 
     invoke-direct {p0, p1}, Lcom/android/settings/powersavingmode/PowerNotiDialog$LimitBackgroundDataTask;-><init>(Lcom/android/settings/powersavingmode/PowerNotiDialog;)V
 
@@ -70,7 +68,6 @@
 # virtual methods
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [Ljava/lang/Integer;
 
@@ -83,7 +80,6 @@
 
 .method protected varargs doInBackground([Ljava/lang/Integer;)Ljava/lang/Void;
     .locals 8
-    .param p1    # [Ljava/lang/Integer;
 
     const/4 v6, 0x1
 
@@ -246,7 +242,6 @@
 
 .method protected bridge synthetic onPostExecute(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Ljava/lang/Void;
 
@@ -257,7 +252,6 @@
 
 .method protected onPostExecute(Ljava/lang/Void;)V
     .locals 2
-    .param p1    # Ljava/lang/Void;
 
     :try_start_0
     iget-object v0, p0, Lcom/android/settings/powersavingmode/PowerNotiDialog$LimitBackgroundDataTask;->mProgressDialog:Landroid/app/ProgressDialog;

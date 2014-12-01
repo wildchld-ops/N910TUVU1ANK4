@@ -36,9 +36,6 @@
 # virtual methods
 .method public invoke(Ljava/lang/String;ZZ)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # Z
 
     new-instance v0, Landroid/webkitsec/WebViewCore$GeolocationPermissionsData;
 

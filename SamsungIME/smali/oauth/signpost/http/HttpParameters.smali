@@ -68,7 +68,6 @@
 
 .method public containsKey(Ljava/lang/Object;)Z
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     iget-object v0, p0, Loauth/signpost/http/HttpParameters;->wrappedMap:Ljava/util/TreeMap;
 
@@ -81,7 +80,6 @@
 
 .method public containsValue(Ljava/lang/Object;)Z
     .locals 3
-    .param p1    # Ljava/lang/Object;
 
     iget-object v2, p0, Loauth/signpost/http/HttpParameters;->wrappedMap:Ljava/util/TreeMap;
 
@@ -151,7 +149,6 @@
 
 .method public bridge synthetic get(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     invoke-virtual {p0, p1}, Loauth/signpost/http/HttpParameters;->get(Ljava/lang/Object;)Ljava/util/SortedSet;
 
@@ -162,7 +159,6 @@
 
 .method public get(Ljava/lang/Object;)Ljava/util/SortedSet;
     .locals 1
-    .param p1    # Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -188,7 +184,6 @@
 
 .method public getAsHeaderElement(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Loauth/signpost/http/HttpParameters;->getFirst(Ljava/lang/Object;)Ljava/lang/String;
 
@@ -235,7 +230,6 @@
 
 .method public getAsQueryString(Ljava/lang/Object;)Ljava/lang/String;
     .locals 5
-    .param p1    # Ljava/lang/Object;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -343,7 +337,6 @@
 
 .method public getFirst(Ljava/lang/Object;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     const/4 v0, 0x0
 
@@ -356,8 +349,6 @@
 
 .method public getFirst(Ljava/lang/Object;Z)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Z
 
     iget-object v2, p0, Loauth/signpost/http/HttpParameters;->wrappedMap:Ljava/util/TreeMap;
 
@@ -433,8 +424,6 @@
 
 .method public bridge synthetic put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p1, Ljava/lang/String;
 
@@ -449,8 +438,6 @@
 
 .method public put(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -463,9 +450,6 @@
 
 .method public put(Ljava/lang/String;Ljava/lang/String;Z)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     iget-object v1, p0, Loauth/signpost/http/HttpParameters;->wrappedMap:Ljava/util/TreeMap;
 
@@ -510,7 +494,6 @@
 
 .method public put(Ljava/lang/String;Ljava/util/SortedSet;)Ljava/util/SortedSet;
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -539,8 +522,6 @@
 
 .method public put(Ljava/lang/String;Ljava/util/SortedSet;Z)Ljava/util/SortedSet;
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -628,7 +609,6 @@
 
 .method public putAll(Ljava/util/Map;Z)V
     .locals 4
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -689,8 +669,6 @@
 
 .method public putAll([Ljava/lang/String;Z)V
     .locals 3
-    .param p1    # [Ljava/lang/String;
-    .param p2    # Z
 
     const/4 v0, 0x0
 
@@ -782,8 +760,6 @@
 
 .method public putNull(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p0, p1, p2}, Loauth/signpost/http/HttpParameters;->put(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
@@ -794,7 +770,6 @@
 
 .method public bridge synthetic remove(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     invoke-virtual {p0, p1}, Loauth/signpost/http/HttpParameters;->remove(Ljava/lang/Object;)Ljava/util/SortedSet;
 
@@ -805,7 +780,6 @@
 
 .method public remove(Ljava/lang/Object;)Ljava/util/SortedSet;
     .locals 1
-    .param p1    # Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

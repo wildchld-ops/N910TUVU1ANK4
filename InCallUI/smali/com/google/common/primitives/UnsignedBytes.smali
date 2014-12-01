@@ -22,8 +22,6 @@
 
 .method public static compare(BB)I
     .locals 2
-    .param p0    # B
-    .param p1    # B
 
     invoke-static {p0}, Lcom/google/common/primitives/UnsignedBytes;->toInt(B)I
 
@@ -55,7 +53,6 @@
 
 .method public static toInt(B)I
     .locals 1
-    .param p0    # B
 
     and-int/lit16 v0, p0, 0xff
 

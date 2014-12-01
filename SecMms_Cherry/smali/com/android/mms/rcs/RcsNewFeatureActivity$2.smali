@@ -36,8 +36,6 @@
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 17
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     move-object/from16 v0, p0
 

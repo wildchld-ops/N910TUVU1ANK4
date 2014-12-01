@@ -145,7 +145,6 @@
 # direct methods
 .method public constructor <init>(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -158,8 +157,6 @@
 
 .method public constructor <init>(Landroid/view/View;I)V
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     const/4 v2, 0x0
 
@@ -216,9 +213,6 @@
 
 .method public constructor <init>(Landroid/view/View;Lcom/sec/android/glview/TwGLView;I)V
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # Lcom/sec/android/glview/TwGLView;
-    .param p3    # I
 
     const/4 v2, 0x0
 
@@ -300,7 +294,6 @@
 
 .method static synthetic access$000(Lcom/sec/android/glview/HoverPopupWindow;)V
     .locals 0
-    .param p0    # Lcom/sec/android/glview/HoverPopupWindow;
 
     invoke-direct {p0}, Lcom/sec/android/glview/HoverPopupWindow;->dismissPopup()V
 
@@ -309,7 +302,6 @@
 
 .method static synthetic access$100(Lcom/sec/android/glview/HoverPopupWindow;)V
     .locals 0
-    .param p0    # Lcom/sec/android/glview/HoverPopupWindow;
 
     invoke-direct {p0}, Lcom/sec/android/glview/HoverPopupWindow;->showPopup()V
 
@@ -318,7 +310,6 @@
 
 .method static synthetic access$200(Lcom/sec/android/glview/HoverPopupWindow;)Ljava/lang/Runnable;
     .locals 1
-    .param p0    # Lcom/sec/android/glview/HoverPopupWindow;
 
     iget-object v0, p0, Lcom/sec/android/glview/HoverPopupWindow;->mDismissPopupRunnable:Ljava/lang/Runnable;
 
@@ -327,10 +318,6 @@
 
 .method private computePopupPositionInternal(Landroid/graphics/Rect;Landroid/graphics/Rect;II)V
     .locals 21
-    .param p1    # Landroid/graphics/Rect;
-    .param p2    # Landroid/graphics/Rect;
-    .param p3    # I
-    .param p4    # I
 
     move-object/from16 v0, p1
 
@@ -1837,8 +1824,6 @@
 
 .method private pointInValidHoverArea(FF)Z
     .locals 2
-    .param p1    # F
-    .param p2    # F
 
     iget v0, p0, Lcom/sec/android/glview/HoverPopupWindow;->mHoverPaddingLeft:I
 
@@ -2047,10 +2032,6 @@
 # virtual methods
 .method protected computePopupPosition(Landroid/view/View;III)V
     .locals 26
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     move-object/from16 v0, p0
 
@@ -3057,8 +3038,6 @@
 
 .method protected convertDPtoPX(FLandroid/util/DisplayMetrics;)I
     .locals 2
-    .param p1    # F
-    .param p2    # Landroid/util/DisplayMetrics;
 
     if-nez p2, :cond_0
 
@@ -3400,7 +3379,6 @@
 
 .method protected isHoveringSettingEnabled(I)Z
     .locals 5
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -3512,7 +3490,6 @@
 
 .method public onHoverEvent(Landroid/view/MotionEvent;)Z
     .locals 12
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getAction()I
 
@@ -3690,7 +3667,6 @@
 
 .method protected postDismiss(I)V
     .locals 4
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/android/glview/HoverPopupWindow;->mParentView:Landroid/view/View;
 
@@ -3707,7 +3683,6 @@
 
 .method public setAnchorView(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -3718,7 +3693,6 @@
 
 .method public setAnimationStyle(I)V
     .locals 2
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/glview/HoverPopupWindow;->mAnimationStyle:I
 
@@ -3738,7 +3712,6 @@
 
 .method public setContent(I)V
     .locals 1
-    .param p1    # I
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -3753,7 +3726,6 @@
 
 .method public setContent(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     if-eqz p1, :cond_0
 
@@ -3774,8 +3746,6 @@
 
 .method public setContent(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/ViewGroup$LayoutParams;
 
     iput-object p1, p0, Lcom/sec/android/glview/HoverPopupWindow;->mContentView:Landroid/view/View;
 
@@ -3790,7 +3760,6 @@
 
 .method public setContent(Ljava/lang/CharSequence;)V
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
 
     iput-object p1, p0, Lcom/sec/android/glview/HoverPopupWindow;->mContentText:Ljava/lang/CharSequence;
 
@@ -3803,7 +3772,6 @@
 
 .method public setEnabled(Z)V
     .locals 0
-    .param p1    # Z
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -3814,7 +3782,6 @@
 
 .method public setHoverDetectTime(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/glview/HoverPopupWindow;->mHoverDetectTimeMS:I
 
@@ -3823,10 +3790,6 @@
 
 .method public setHoverPaddingArea(IIII)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iput p1, p0, Lcom/sec/android/glview/HoverPopupWindow;->mHoverPaddingLeft:I
 
@@ -3863,7 +3826,6 @@
 
 .method public setHoverPopupListener(Lcom/sec/android/glview/HoverPopupWindow$HoverPopupListener;)V
     .locals 0
-    .param p1    # Lcom/sec/android/glview/HoverPopupWindow$HoverPopupListener;
 
     iput-object p1, p0, Lcom/sec/android/glview/HoverPopupWindow;->mListener:Lcom/sec/android/glview/HoverPopupWindow$HoverPopupListener;
 
@@ -3872,8 +3834,6 @@
 
 .method public setHoveringPoint(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     iput p1, p0, Lcom/sec/android/glview/HoverPopupWindow;->mHoveringPointX:I
 
@@ -3884,7 +3844,6 @@
 
 .method protected setInstanceByType(I)V
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -3910,7 +3869,6 @@
 
 .method public setPopupGravity(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/glview/HoverPopupWindow;->mPopupGravity:I
 
@@ -3919,8 +3877,6 @@
 
 .method public setPopupPosOffset(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     iput p1, p0, Lcom/sec/android/glview/HoverPopupWindow;->mPopupOffsetX:I
 
@@ -3931,7 +3887,6 @@
 
 .method public setRotation(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Lcom/sec/android/glview/HoverPopupWindow;->mOrientation:I
 
@@ -3951,7 +3906,6 @@
 
 .method public setShowPopupAlways(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/glview/HoverPopupWindow;->mShowPopupAlways:Z
 
@@ -3972,7 +3926,6 @@
 
 .method public show(I)V
     .locals 5
-    .param p1    # I
 
     const/4 v4, 0x1
 
@@ -4077,7 +4030,6 @@
 
 .method protected showPenPointEffect(Z)V
     .locals 3
-    .param p1    # Z
 
     const/4 v2, 0x1
 
@@ -4207,10 +4159,6 @@
 
 .method public updateHoverPopup(Landroid/view/View;III)V
     .locals 6
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/4 v5, 0x0
 

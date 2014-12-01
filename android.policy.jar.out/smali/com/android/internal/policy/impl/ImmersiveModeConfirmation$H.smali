@@ -37,8 +37,6 @@
 
 .method synthetic constructor <init>(Lcom/android/internal/policy/impl/ImmersiveModeConfirmation;Lcom/android/internal/policy/impl/ImmersiveModeConfirmation$1;)V
     .locals 0
-    .param p1    # Lcom/android/internal/policy/impl/ImmersiveModeConfirmation;
-    .param p2    # Lcom/android/internal/policy/impl/ImmersiveModeConfirmation$1;
 
     invoke-direct {p0, p1}, Lcom/android/internal/policy/impl/ImmersiveModeConfirmation$H;-><init>(Lcom/android/internal/policy/impl/ImmersiveModeConfirmation;)V
 
@@ -49,7 +47,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 2
-    .param p1    # Landroid/os/Message;
 
     iget v0, p1, Landroid/os/Message;->what:I
 

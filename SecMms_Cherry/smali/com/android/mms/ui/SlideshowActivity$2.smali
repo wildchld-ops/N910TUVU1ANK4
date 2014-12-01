@@ -21,7 +21,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/mms/ui/SlideshowActivity;Landroid/os/Handler;)V
     .locals 0
-    .param p2    # Landroid/os/Handler;
 
     iput-object p1, p0, Lcom/android/mms/ui/SlideshowActivity$2;->this$0:Lcom/android/mms/ui/SlideshowActivity;
 
@@ -34,7 +33,6 @@
 # virtual methods
 .method public onChange(Z)V
     .locals 3
-    .param p1    # Z
 
     const-string v0, "Mms/SlideshowActivity"
 

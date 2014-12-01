@@ -37,7 +37,6 @@
 # virtual methods
 .method public onAnimationEnd(Landroid/animation/Animator;)V
     .locals 2
-    .param p1    # Landroid/animation/Animator;
 
     iget-object v0, p0, Lcom/android/mms/spam/SetupSpamKeywordList$ModeCallback$3$1;->val$chb:Landroid/view/View;
 

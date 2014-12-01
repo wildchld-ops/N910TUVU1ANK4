@@ -100,8 +100,6 @@
 
 .method public static getRealPath(Ljava/lang/String;I)Ljava/lang/String;
     .locals 7
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
 
     const-string v3, ""
 

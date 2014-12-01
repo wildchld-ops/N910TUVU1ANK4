@@ -36,7 +36,6 @@
 # virtual methods
 .method public onTiltChanged(F)V
     .locals 5
-    .param p1    # F
 
     const/high16 v4, -0x3ce00000
 

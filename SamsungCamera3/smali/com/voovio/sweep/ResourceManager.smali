@@ -70,7 +70,6 @@
 
 .method public constructor <init>(Lcom/voovio/sweep/ImageProvider;)V
     .locals 2
-    .param p1    # Lcom/voovio/sweep/ImageProvider;
 
     const/4 v1, 0x0
 
@@ -133,8 +132,6 @@
 
 .method private setState(Lcom/voovio/sweep/Voovio;I)V
     .locals 5
-    .param p1    # Lcom/voovio/sweep/Voovio;
-    .param p2    # I
 
     const/4 v4, -0x1
 
@@ -474,7 +471,6 @@
 
 .method public getImage(Lcom/voovio/sweep/Voovio;)Z
     .locals 14
-    .param p1    # Lcom/voovio/sweep/Voovio;
 
     iget-object v10, p0, Lcom/voovio/sweep/ResourceManager;->m_oImageProvider:Lcom/voovio/sweep/ImageProvider;
 
@@ -742,7 +738,6 @@
 
 .method public loop(Z)V
     .locals 7
-    .param p1    # Z
 
     iget-object v3, p0, Lcom/voovio/sweep/ResourceManager;->m_aQueue:Ljava/util/ArrayList;
 
@@ -970,7 +965,6 @@
 
 .method public prepareVoovio(Lcom/voovio/sweep/Voovio;)V
     .locals 2
-    .param p1    # Lcom/voovio/sweep/Voovio;
 
     sget v0, Lcom/voovio/sweep/Voovio;->STATE_READY:I
 
@@ -1001,7 +995,6 @@
 
 .method public setBitmapPreferredConfig(Landroid/graphics/Bitmap$Config;)V
     .locals 1
-    .param p1    # Landroid/graphics/Bitmap$Config;
 
     iget-object v0, p0, Lcom/voovio/sweep/ResourceManager;->m_bmOpts:Landroid/graphics/BitmapFactory$Options;
 
@@ -1012,7 +1005,6 @@
 
 .method public setCurrentVoovio(Lcom/voovio/sweep/Voovio;)V
     .locals 7
-    .param p1    # Lcom/voovio/sweep/Voovio;
 
     iget-object v5, p0, Lcom/voovio/sweep/ResourceManager;->m_oSweep:Lcom/voovio/sweep/Sweep;
 
@@ -1129,7 +1121,6 @@
 
 .method public setImageProvider(Lcom/voovio/sweep/ImageProvider;)V
     .locals 0
-    .param p1    # Lcom/voovio/sweep/ImageProvider;
 
     iput-object p1, p0, Lcom/voovio/sweep/ResourceManager;->m_oImageProvider:Lcom/voovio/sweep/ImageProvider;
 
@@ -1138,7 +1129,6 @@
 
 .method public setImageSampleSize(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/voovio/sweep/ResourceManager;->m_bmOpts:Landroid/graphics/BitmapFactory$Options;
 
@@ -1149,7 +1139,6 @@
 
 .method public setSweep(Lcom/voovio/sweep/Sweep;)V
     .locals 13
-    .param p1    # Lcom/voovio/sweep/Sweep;
 
     const/4 v12, 0x0
 

@@ -80,7 +80,7 @@
 
     iget-object v0, p0, Lcom/android/phone/callsettings/PowerKeyEndPreference$3;->this$0:Lcom/android/phone/callsettings/PowerKeyEndPreference;
 
-    invoke-virtual {v0}, Landroid/preference/TwoStatePreference;->isChecked()Z
+    invoke-virtual {v0}, Lcom/android/phone/callsettings/PowerKeyEndPreference;->isChecked()Z
 
     move-result v0
 
@@ -102,7 +102,7 @@
 
     move-result v1
 
-    invoke-virtual {v0, v1}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+    invoke-virtual {v0, v1}, Lcom/android/phone/callsettings/PowerKeyEndPreference;->setChecked(Z)V
 
     :cond_0
     return-void

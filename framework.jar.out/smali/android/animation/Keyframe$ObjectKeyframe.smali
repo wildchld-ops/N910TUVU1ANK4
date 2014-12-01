@@ -21,8 +21,6 @@
 # direct methods
 .method constructor <init>(FLjava/lang/Object;)V
     .locals 1
-    .param p1    # F
-    .param p2    # Ljava/lang/Object;
 
     invoke-direct {p0}, Landroid/animation/Keyframe;-><init>()V
 
@@ -130,7 +128,6 @@
 
 .method public setValue(Ljava/lang/Object;)V
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     iput-object p1, p0, Landroid/animation/Keyframe$ObjectKeyframe;->mValue:Ljava/lang/Object;
 

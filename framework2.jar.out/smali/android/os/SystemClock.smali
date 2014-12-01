@@ -69,7 +69,6 @@
 
 .method public static setCurrentTimeMillis(J)Z
     .locals 1
-    .param p0    # J
 
     invoke-static {}, Landroid/os/SystemClock;->isEDMDateTimePolicyEnabled()Z
 
@@ -92,7 +91,6 @@
 
 .method public static sleep(J)V
     .locals 10
-    .param p0    # J
 
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 

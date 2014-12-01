@@ -146,7 +146,6 @@
 
 .method public static dispose(Ljava/lang/Object;)V
     .locals 4
-    .param p0    # Ljava/lang/Object;
 
     const-string v2, "ExtendedRemoteDisplayHelper"
 
@@ -260,10 +259,6 @@
 
 .method public static listen(Ljava/lang/String;Landroid/media/RemoteDisplay$Listener;Landroid/os/Handler;Landroid/content/Context;)Ljava/lang/Object;
     .locals 7
-    .param p0    # Ljava/lang/String;
-    .param p1    # Landroid/media/RemoteDisplay$Listener;
-    .param p2    # Landroid/os/Handler;
-    .param p3    # Landroid/content/Context;
 
     const/4 v2, 0x0
 

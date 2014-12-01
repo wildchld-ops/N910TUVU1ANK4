@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Landroid/print/PrintJobInfo;)V
     .locals 1
-    .param p1    # Landroid/print/PrintJobInfo;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -56,8 +55,6 @@
 
 .method public putAdvancedOption(Ljava/lang/String;I)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     iget-object v0, p0, Landroid/print/PrintJobInfo$Builder;->mPrototype:Landroid/print/PrintJobInfo;
 
@@ -92,8 +89,6 @@
 
 .method public putAdvancedOption(Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/print/PrintJobInfo$Builder;->mPrototype:Landroid/print/PrintJobInfo;
 
@@ -128,7 +123,6 @@
 
 .method public setAttributes(Landroid/print/PrintAttributes;)V
     .locals 1
-    .param p1    # Landroid/print/PrintAttributes;
 
     iget-object v0, p0, Landroid/print/PrintJobInfo$Builder;->mPrototype:Landroid/print/PrintJobInfo;
 
@@ -140,7 +134,6 @@
 
 .method public setCopies(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/print/PrintJobInfo$Builder;->mPrototype:Landroid/print/PrintJobInfo;
 
@@ -152,7 +145,6 @@
 
 .method public setPages([Landroid/print/PageRange;)V
     .locals 1
-    .param p1    # [Landroid/print/PageRange;
 
     iget-object v0, p0, Landroid/print/PrintJobInfo$Builder;->mPrototype:Landroid/print/PrintJobInfo;
 

@@ -14,7 +14,6 @@
 
 .method public static getConnectionStateSummary(I)I
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -56,11 +55,6 @@
 
 .method static showDisconnectDialog(Landroid/content/Context;Landroid/app/AlertDialog;Landroid/content/DialogInterface$OnClickListener;Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Landroid/app/AlertDialog;
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/app/AlertDialog;
-    .param p2    # Landroid/content/DialogInterface$OnClickListener;
-    .param p3    # Ljava/lang/CharSequence;
-    .param p4    # Ljava/lang/CharSequence;
 
     const v2, 0x104000a
 

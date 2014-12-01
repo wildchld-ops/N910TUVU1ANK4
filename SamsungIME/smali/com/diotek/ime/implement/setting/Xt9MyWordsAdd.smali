@@ -64,7 +64,6 @@
 
 .method static synthetic access$000(Lcom/diotek/ime/implement/setting/Xt9MyWordsAdd;)V
     .locals 0
-    .param p0    # Lcom/diotek/ime/implement/setting/Xt9MyWordsAdd;
 
     invoke-direct {p0}, Lcom/diotek/ime/implement/setting/Xt9MyWordsAdd;->controlMenuItem()V
 
@@ -317,7 +316,6 @@
 
 .method private addWordToUserModel(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Lcom/diotek/ime/framework/engine/swiftkey/SwiftkeyWrapper;->getSwiftKeySession()Lcom/touchtype_fluency/util/SwiftKeySession;
 
@@ -467,7 +465,6 @@
 
 .method private setDoneMenuItemEnabled(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/diotek/ime/implement/setting/Xt9MyWordsAdd;->mMenu:Landroid/view/Menu;
 
@@ -491,7 +488,6 @@
 # virtual methods
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 3
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -516,7 +512,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 7
-    .param p1    # Landroid/os/Bundle;
 
     const v6, 0x7f0e00a4
 
@@ -776,7 +771,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 2
-    .param p1    # Landroid/view/Menu;
 
     invoke-interface {p1}, Landroid/view/Menu;->clear()V
 
@@ -807,8 +801,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/16 v0, 0x52
 
@@ -829,7 +821,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 2
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v0, 0x1
 

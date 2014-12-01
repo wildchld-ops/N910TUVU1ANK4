@@ -28,7 +28,6 @@
 
 .method public static IsFileExist(Ljava/lang/String;)Z
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     new-instance v0, Ljava/io/File;
 
@@ -81,7 +80,6 @@
 
 .method public static ReadString(Ljava/lang/String;)Ljava/lang/String;
     .locals 9
-    .param p0    # Ljava/lang/String;
 
     const/4 v5, 0x0
 

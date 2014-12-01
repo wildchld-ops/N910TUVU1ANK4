@@ -29,7 +29,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/ContentValues;)V
     .locals 1
-    .param p1    # Landroid/content/ContentValues;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -48,8 +47,6 @@
 # virtual methods
 .method public addSubValue(Landroid/net/Uri;Landroid/content/ContentValues;)V
     .locals 2
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Landroid/content/ContentValues;
 
     iget-object v0, p0, Landroid/content/Entity;->mSubValues:Ljava/util/ArrayList;
 

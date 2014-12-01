@@ -41,7 +41,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/accessibility/AccessibilityManagerService;Landroid/os/Handler;)V
     .locals 1
-    .param p2    # Landroid/os/Handler;
 
     iput-object p1, p0, Lcom/android/server/accessibility/AccessibilityManagerService$AccessibilityContentObserver;->this$0:Lcom/android/server/accessibility/AccessibilityManagerService;
 
@@ -134,8 +133,6 @@
 # virtual methods
 .method public onChange(ZLandroid/net/Uri;)V
     .locals 8
-    .param p1    # Z
-    .param p2    # Landroid/net/Uri;
 
     const/4 v2, 0x1
 
@@ -784,7 +781,6 @@
 
 .method public register(Landroid/content/ContentResolver;)V
     .locals 3
-    .param p1    # Landroid/content/ContentResolver;
 
     const/4 v2, 0x0
 

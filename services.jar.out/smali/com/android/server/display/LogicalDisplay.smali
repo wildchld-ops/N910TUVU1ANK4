@@ -34,9 +34,6 @@
 # direct methods
 .method public constructor <init>(IILcom/android/server/display/DisplayDevice;)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Lcom/android/server/display/DisplayDevice;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -71,8 +68,6 @@
 # virtual methods
 .method public configureDisplayInTransactionLocked(Lcom/android/server/display/DisplayDevice;Z)V
     .locals 16
-    .param p1    # Lcom/android/server/display/DisplayDevice;
-    .param p2    # Z
 
     invoke-virtual/range {p0 .. p0}, Lcom/android/server/display/LogicalDisplay;->getDisplayInfoLocked()Landroid/view/DisplayInfo;
 
@@ -243,7 +238,6 @@
 
 .method public dumpLocked(Ljava/io/PrintWriter;)V
     .locals 2
-    .param p1    # Ljava/io/PrintWriter;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -501,7 +495,6 @@
 
 .method public setDisplayInfoOverrideFromWindowManagerLocked(Landroid/view/DisplayInfo;)Z
     .locals 3
-    .param p1    # Landroid/view/DisplayInfo;
 
     const/4 v0, 0x1
 
@@ -560,7 +553,6 @@
 
 .method public setHasBgPresentationLocked(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/display/LogicalDisplay;->mHasBgPresentation:Z
 
@@ -569,7 +561,6 @@
 
 .method public setHasContentLocked(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/display/LogicalDisplay;->mHasContent:Z
 

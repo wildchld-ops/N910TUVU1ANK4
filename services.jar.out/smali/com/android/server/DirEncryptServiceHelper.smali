@@ -136,7 +136,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
 
     const/4 v4, 0x0
 
@@ -255,7 +254,6 @@
 
 .method static synthetic access$100(Lcom/android/server/DirEncryptServiceHelper;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/server/DirEncryptServiceHelper;
 
     iget-object v0, p0, Lcom/android/server/DirEncryptServiceHelper;->mListeners:Ljava/util/ArrayList;
 
@@ -264,7 +262,6 @@
 
 .method static synthetic access$200(Lcom/android/server/DirEncryptServiceHelper;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/server/DirEncryptServiceHelper;
 
     iget-object v0, p0, Lcom/android/server/DirEncryptServiceHelper;->mHandler:Landroid/os/Handler;
 
@@ -273,7 +270,6 @@
 
 .method static synthetic access$300(Lcom/android/server/DirEncryptServiceHelper;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Lcom/android/server/DirEncryptServiceHelper;
 
     iget-object v0, p0, Lcom/android/server/DirEncryptServiceHelper;->mAnimateSync:Ljava/lang/Object;
 
@@ -290,7 +286,6 @@
 
 .method static synthetic access$500(Lcom/android/server/DirEncryptServiceHelper;)Landroid/dirEncryption/DirEncryptionWrapper;
     .locals 1
-    .param p0    # Lcom/android/server/DirEncryptServiceHelper;
 
     iget-object v0, p0, Lcom/android/server/DirEncryptServiceHelper;->mDew:Landroid/dirEncryption/DirEncryptionWrapper;
 
@@ -299,7 +294,6 @@
 
 .method static synthetic access$600(Lcom/android/server/DirEncryptServiceHelper;)Z
     .locals 1
-    .param p0    # Lcom/android/server/DirEncryptServiceHelper;
 
     iget-boolean v0, p0, Lcom/android/server/DirEncryptServiceHelper;->mBootCompleted:Z
 
@@ -328,10 +322,6 @@
 
 .method private doChangeEncryptPassword(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
 
     if-nez p1, :cond_0
 
@@ -622,13 +612,6 @@
 
 .method private doMountEcryptfs(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZIII)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Z
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
 
     invoke-virtual {p0, p3}, Lcom/android/server/DirEncryptServiceHelper;->addEscapeChar(Ljava/lang/String;)Ljava/lang/String;
 
@@ -713,7 +696,6 @@
 
 .method private doMountPointMounted(Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "dir_crypto"
 
@@ -742,9 +724,6 @@
 
 .method private doUnMountEcryptfs(Ljava/lang/String;II)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     const-string v0, "dir_crypto"
 
@@ -789,10 +768,6 @@
 
 .method private doUnMountEcryptfs(Ljava/lang/String;IIZ)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Z
 
     const/4 v4, 0x1
 
@@ -853,7 +828,6 @@
 
 .method private doWorkForPassword(Ljava/lang/String;)V
     .locals 14
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -1191,7 +1165,6 @@
 
 .method private doWorkForUSBState(Ljava/lang/String;)V
     .locals 12
-    .param p1    # Ljava/lang/String;
 
     const/4 v9, 0x4
 
@@ -1705,9 +1678,6 @@
 
 .method private getRemoteProgressView(Ljava/lang/String;II)Landroid/widget/RemoteViews;
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     const v4, 0x10203d7
 
@@ -1987,7 +1957,6 @@
 
 .method public static logD(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     sget-boolean v0, Lcom/android/server/DirEncryptServiceHelper;->LOCAL_LOGD:Z
 
@@ -2003,7 +1972,6 @@
 
 .method public static logE(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     sget-boolean v0, Lcom/android/server/DirEncryptServiceHelper;->LOCAL_LOGE:Z
 
@@ -2019,8 +1987,6 @@
 
 .method private notifyEncryptionStatusChanged(ILjava/lang/String;)V
     .locals 7
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     new-instance v4, Ljava/lang/StringBuilder;
 
@@ -2173,8 +2139,6 @@
 
 .method private varargs sendCommand(Ljava/lang/String;[Ljava/lang/Object;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/Object;
 
     iget-object v1, p0, Lcom/android/server/DirEncryptServiceHelper;->mConnector:Lcom/android/server/NativeDaemonConnector;
 
@@ -2205,7 +2169,6 @@
 
 .method private setStatus(I)V
     .locals 2
-    .param p1    # I
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -2234,9 +2197,6 @@
 
 .method private showNotification(IILjava/lang/String;)V
     .locals 12
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -3368,7 +3328,6 @@
 # virtual methods
 .method public addEscapeChar(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -3401,7 +3360,6 @@
 
 .method public doHandleMessage(Landroid/os/Message;)V
     .locals 12
-    .param p1    # Landroid/os/Message;
 
     iget-object v11, p0, Lcom/android/server/DirEncryptServiceHelper;->mSync:Ljava/lang/Object;
 
@@ -3707,9 +3665,6 @@
 
 .method public onEventInner(ILjava/lang/String;[Ljava/lang/String;)Z
     .locals 25
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # [Ljava/lang/String;
 
     move-object/from16 v0, p0
 
@@ -6661,7 +6616,6 @@
 
 .method public registerListener(Landroid/os/storage/IDirEncryptServiceListener;)V
     .locals 5
-    .param p1    # Landroid/os/storage/IDirEncryptServiceListener;
 
     iget-object v3, p0, Lcom/android/server/DirEncryptServiceHelper;->mListeners:Ljava/util/ArrayList;
 
@@ -6749,7 +6703,6 @@
 
 .method public setBootComplted(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/DirEncryptServiceHelper;->mBootCompleted:Z
 
@@ -6758,8 +6711,6 @@
 
 .method public setExecParams(Lcom/android/server/NativeDaemonConnector;Landroid/os/Handler;)V
     .locals 0
-    .param p1    # Lcom/android/server/NativeDaemonConnector;
-    .param p2    # Landroid/os/Handler;
 
     iput-object p1, p0, Lcom/android/server/DirEncryptServiceHelper;->mConnector:Lcom/android/server/NativeDaemonConnector;
 
@@ -6772,7 +6723,6 @@
 
 .method public setNeedToCreateKey(Z)V
     .locals 0
-    .param p1    # Z
 
     sput-boolean p1, Lcom/android/server/DirEncryptServiceHelper;->mNeedToCreateKey:Z
 
@@ -6887,7 +6837,6 @@
 
 .method public unregisterListener(Landroid/os/storage/IDirEncryptServiceListener;)V
     .locals 5
-    .param p1    # Landroid/os/storage/IDirEncryptServiceListener;
 
     iget-object v3, p0, Lcom/android/server/DirEncryptServiceHelper;->mListeners:Ljava/util/ArrayList;
 

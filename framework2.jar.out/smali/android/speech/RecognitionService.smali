@@ -66,9 +66,6 @@
 
 .method static synthetic access$000(Landroid/speech/RecognitionService;Landroid/content/Intent;Landroid/speech/IRecognitionListener;)V
     .locals 0
-    .param p0    # Landroid/speech/RecognitionService;
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Landroid/speech/IRecognitionListener;
 
     invoke-direct {p0, p1, p2}, Landroid/speech/RecognitionService;->dispatchStartListening(Landroid/content/Intent;Landroid/speech/IRecognitionListener;)V
 
@@ -77,8 +74,6 @@
 
 .method static synthetic access$100(Landroid/speech/RecognitionService;Landroid/speech/IRecognitionListener;)V
     .locals 0
-    .param p0    # Landroid/speech/RecognitionService;
-    .param p1    # Landroid/speech/IRecognitionListener;
 
     invoke-direct {p0, p1}, Landroid/speech/RecognitionService;->dispatchStopListening(Landroid/speech/IRecognitionListener;)V
 
@@ -87,8 +82,6 @@
 
 .method static synthetic access$200(Landroid/speech/RecognitionService;Landroid/speech/IRecognitionListener;)V
     .locals 0
-    .param p0    # Landroid/speech/RecognitionService;
-    .param p1    # Landroid/speech/IRecognitionListener;
 
     invoke-direct {p0, p1}, Landroid/speech/RecognitionService;->dispatchCancel(Landroid/speech/IRecognitionListener;)V
 
@@ -97,7 +90,6 @@
 
 .method static synthetic access$300(Landroid/speech/RecognitionService;)V
     .locals 0
-    .param p0    # Landroid/speech/RecognitionService;
 
     invoke-direct {p0}, Landroid/speech/RecognitionService;->dispatchClearCallback()V
 
@@ -106,7 +98,6 @@
 
 .method static synthetic access$600(Landroid/speech/RecognitionService;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Landroid/speech/RecognitionService;
 
     iget-object v0, p0, Landroid/speech/RecognitionService;->mHandler:Landroid/os/Handler;
 
@@ -115,8 +106,6 @@
 
 .method static synthetic access$700(Landroid/speech/RecognitionService;Landroid/speech/IRecognitionListener;)Z
     .locals 1
-    .param p0    # Landroid/speech/RecognitionService;
-    .param p1    # Landroid/speech/IRecognitionListener;
 
     invoke-direct {p0, p1}, Landroid/speech/RecognitionService;->checkPermissions(Landroid/speech/IRecognitionListener;)Z
 
@@ -127,7 +116,6 @@
 
 .method private checkPermissions(Landroid/speech/IRecognitionListener;)Z
     .locals 3
-    .param p1    # Landroid/speech/IRecognitionListener;
 
     const-string v1, "android.permission.RECORD_AUDIO"
 
@@ -175,7 +163,6 @@
 
 .method private dispatchCancel(Landroid/speech/IRecognitionListener;)V
     .locals 2
-    .param p1    # Landroid/speech/IRecognitionListener;
 
     iget-object v0, p0, Landroid/speech/RecognitionService;->mCurrentCallback:Landroid/speech/RecognitionService$Callback;
 
@@ -234,8 +221,6 @@
 
 .method private dispatchStartListening(Landroid/content/Intent;Landroid/speech/IRecognitionListener;)V
     .locals 3
-    .param p1    # Landroid/content/Intent;
-    .param p2    # Landroid/speech/IRecognitionListener;
 
     iget-object v1, p0, Landroid/speech/RecognitionService;->mCurrentCallback:Landroid/speech/RecognitionService$Callback;
 
@@ -287,7 +272,6 @@
 
 .method private dispatchStopListening(Landroid/speech/IRecognitionListener;)V
     .locals 3
-    .param p1    # Landroid/speech/IRecognitionListener;
 
     :try_start_0
     iget-object v1, p0, Landroid/speech/RecognitionService;->mCurrentCallback:Landroid/speech/RecognitionService$Callback;
@@ -365,7 +349,6 @@
 # virtual methods
 .method public final onBind(Landroid/content/Intent;)Landroid/os/IBinder;
     .locals 1
-    .param p1    # Landroid/content/Intent;
 
     iget-object v0, p0, Landroid/speech/RecognitionService;->mBinder:Landroid/speech/RecognitionService$RecognitionServiceBinder;
 

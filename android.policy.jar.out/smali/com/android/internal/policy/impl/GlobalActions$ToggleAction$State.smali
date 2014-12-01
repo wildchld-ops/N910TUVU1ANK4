@@ -110,7 +110,6 @@
 
 .method private constructor <init>(Ljava/lang/String;IZ)V
     .locals 0
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(Z)V"
@@ -126,7 +125,6 @@
 
 .method public static valueOf(Ljava/lang/String;)Lcom/android/internal/policy/impl/GlobalActions$ToggleAction$State;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-class v0, Lcom/android/internal/policy/impl/GlobalActions$ToggleAction$State;
 

@@ -33,8 +33,6 @@
 
 .method synthetic constructor <init>(Lcom/android/server/input/InputManagerService;Lcom/android/server/input/InputManagerService$1;)V
     .locals 0
-    .param p1    # Lcom/android/server/input/InputManagerService;
-    .param p2    # Lcom/android/server/input/InputManagerService$1;
 
     invoke-direct {p0, p1}, Lcom/android/server/input/InputManagerService$InputFilterHost;-><init>(Lcom/android/server/input/InputManagerService;)V
 
@@ -55,8 +53,6 @@
 
 .method public sendInputEvent(Landroid/view/InputEvent;I)V
     .locals 8
-    .param p1    # Landroid/view/InputEvent;
-    .param p2    # I
 
     if-nez p1, :cond_0
 

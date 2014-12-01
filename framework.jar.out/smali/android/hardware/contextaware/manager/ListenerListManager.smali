@@ -91,8 +91,6 @@
 
 .method private getUsedSubCollectionCount(Ljava/lang/String;Ljava/lang/String;)I
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -196,7 +194,6 @@
 
 .method private isAggregator(Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v2, p0, Landroid/hardware/contextaware/manager/ListenerListManager;->mCreator:Ljava/util/concurrent/CopyOnWriteArrayList;
 
@@ -244,7 +241,6 @@
 # virtual methods
 .method protected final addListener(Landroid/hardware/contextaware/manager/ContextAwareService$Listener;)V
     .locals 1
-    .param p1    # Landroid/hardware/contextaware/manager/ContextAwareService$Listener;
 
     if-eqz p1, :cond_0
 
@@ -266,7 +262,6 @@
 
 .method protected final getListener(Landroid/os/IBinder;)Landroid/hardware/contextaware/manager/ContextAwareService$Listener;
     .locals 4
-    .param p1    # Landroid/os/IBinder;
 
     const/4 v1, 0x0
 
@@ -324,7 +319,6 @@
 
 .method public final getUsedServiceCount(Ljava/lang/String;)I
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -398,7 +392,6 @@
 
 .method public final getUsedSubCollectionCount(Ljava/lang/String;)I
     .locals 9
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -483,7 +476,6 @@
 
 .method public final getUsedTotalCount(Ljava/lang/String;)I
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Landroid/hardware/contextaware/manager/ListenerListManager;->getUsedServiceCount(Ljava/lang/String;)I
 
@@ -500,7 +492,6 @@
 
 .method public final removeListener(Landroid/hardware/contextaware/manager/ContextAwareService$Listener;)V
     .locals 1
-    .param p1    # Landroid/hardware/contextaware/manager/ContextAwareService$Listener;
 
     if-eqz p1, :cond_0
 

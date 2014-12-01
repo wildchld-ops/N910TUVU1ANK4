@@ -23,8 +23,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/systemui/statusbar/GestureRecorder$Gesture;JLandroid/view/MotionEvent;)V
     .locals 1
-    .param p2    # J
-    .param p4    # Landroid/view/MotionEvent;
 
     iput-object p1, p0, Lcom/android/systemui/statusbar/GestureRecorder$Gesture$MotionEventRecord;->this$1:Lcom/android/systemui/statusbar/GestureRecorder$Gesture;
 
@@ -45,7 +43,6 @@
 # virtual methods
 .method actionName(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 

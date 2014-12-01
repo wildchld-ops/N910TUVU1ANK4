@@ -25,7 +25,6 @@
 
 .method synthetic constructor <init>(Lcom/android/mms/ReadChangedReceiver$1;)V
     .locals 0
-    .param p1    # Lcom/android/mms/ReadChangedReceiver$1;
 
     invoke-direct {p0}, Lcom/android/mms/ReadChangedReceiver$ReadChangedHandler;-><init>()V
 
@@ -36,7 +35,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 3
-    .param p1    # Landroid/os/Message;
 
     invoke-static {}, Lcom/android/mms/MmsApp;->getApplication()Lcom/android/mms/MmsApp;
 

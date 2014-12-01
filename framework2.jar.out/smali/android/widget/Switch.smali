@@ -140,7 +140,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -151,8 +150,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const v0, 0x101045b
 
@@ -163,9 +160,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 12
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/CompoundButton;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
@@ -1050,7 +1044,6 @@
 
 .method private animateThumbToCheckedState(Z)V
     .locals 0
-    .param p1    # Z
 
     invoke-virtual {p0, p1}, Landroid/widget/Switch;->setChecked(Z)V
 
@@ -1059,7 +1052,6 @@
 
 .method private cancelSuperTouch(Landroid/view/MotionEvent;)V
     .locals 2
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-static {p1}, Landroid/view/MotionEvent;->obtain(Landroid/view/MotionEvent;)Landroid/view/MotionEvent;
 
@@ -1192,8 +1184,6 @@
 
 .method private hitThumb(FF)Z
     .locals 8
-    .param p1    # F
-    .param p2    # F
 
     const/4 v4, 0x0
 
@@ -1291,7 +1281,6 @@
 
 .method private makeLayout(Ljava/lang/CharSequence;)Landroid/text/Layout;
     .locals 8
-    .param p1    # Ljava/lang/CharSequence;
 
     iget-object v0, p0, Landroid/widget/Switch;->mSwitchTransformationMethod:Landroid/text/method/TransformationMethod2;
 
@@ -1342,8 +1331,6 @@
 
 .method private setSwitchTypefaceByIndex(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -1381,7 +1368,6 @@
 
 .method private setThumbPosition(Z)V
     .locals 2
-    .param p1    # Z
 
     const/4 v0, 0x0
 
@@ -1425,7 +1411,6 @@
 
 .method private stopDrag(Landroid/view/MotionEvent;)V
     .locals 8
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v7, 0x0
 
@@ -1788,7 +1773,6 @@
 
 .method protected onCreateDrawableState(I)[I
     .locals 2
-    .param p1    # I
 
     add-int/lit8 v1, p1, 0x1
 
@@ -1840,7 +1824,6 @@
 
 .method protected onDraw(Landroid/graphics/Canvas;)V
     .locals 22
-    .param p1    # Landroid/graphics/Canvas;
 
     invoke-super/range {p0 .. p1}, Landroid/widget/CompoundButton;->onDraw(Landroid/graphics/Canvas;)V
 
@@ -2762,7 +2745,6 @@
 
 .method public onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
     .locals 1
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
 
     invoke-super {p0, p1}, Landroid/widget/CompoundButton;->onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
 
@@ -2779,7 +2761,6 @@
 
 .method public onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
     .locals 5
-    .param p1    # Landroid/view/accessibility/AccessibilityNodeInfo;
 
     invoke-super {p0, p1}, Landroid/widget/CompoundButton;->onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
 
@@ -2851,11 +2832,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 9
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     const/4 v8, 0x0
 
@@ -3019,8 +2995,6 @@
 
 .method public onMeasure(II)V
     .locals 9
-    .param p1    # I
-    .param p2    # I
 
     const/4 v8, 0x0
 
@@ -3252,7 +3226,6 @@
 
 .method public onPopulateAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
     .locals 3
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
 
     invoke-super {p0, p1}, Landroid/widget/TextView;->onPopulateAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
 
@@ -3310,7 +3283,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 9
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v8, 0x2
 
@@ -3510,7 +3482,6 @@
 
 .method public setChecked(Z)V
     .locals 1
-    .param p1    # Z
 
     invoke-super {p0, p1}, Landroid/widget/CompoundButton;->setChecked(Z)V
 
@@ -3527,7 +3498,6 @@
 
 .method public setSwitchMinWidth(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/widget/Switch;->mSwitchMinWidth:I
 
@@ -3538,7 +3508,6 @@
 
 .method public setSwitchPadding(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/widget/Switch;->mSwitchPadding:I
 
@@ -3549,8 +3518,6 @@
 
 .method public setSwitchTextAppearance(Landroid/content/Context;I)V
     .locals 11
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     const/4 v10, 0x1
 
@@ -3660,7 +3627,6 @@
 
 .method public setSwitchTypeface(Landroid/graphics/Typeface;)V
     .locals 1
-    .param p1    # Landroid/graphics/Typeface;
 
     iget-object v0, p0, Landroid/widget/Switch;->mTextPaint:Landroid/text/TextPaint;
 
@@ -3684,8 +3650,6 @@
 
 .method public setSwitchTypeface(Landroid/graphics/Typeface;I)V
     .locals 6
-    .param p1    # Landroid/graphics/Typeface;
-    .param p2    # I
 
     const/4 v3, 0x0
 
@@ -3771,7 +3735,6 @@
 
 .method public setTextOff(Ljava/lang/CharSequence;)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
 
     iput-object p1, p0, Landroid/widget/Switch;->mTextOff:Ljava/lang/CharSequence;
 
@@ -3782,7 +3745,6 @@
 
 .method public setTextOn(Ljava/lang/CharSequence;)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
 
     iput-object p1, p0, Landroid/widget/Switch;->mTextOn:Ljava/lang/CharSequence;
 
@@ -3793,7 +3755,6 @@
 
 .method public setThumbDrawable(Landroid/graphics/drawable/Drawable;)V
     .locals 0
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     iput-object p1, p0, Landroid/widget/Switch;->mThumbDrawable:Landroid/graphics/drawable/Drawable;
 
@@ -3804,7 +3765,6 @@
 
 .method public setThumbResource(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
@@ -3825,7 +3785,6 @@
 
 .method public setThumbTextPadding(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/widget/Switch;->mThumbTextPadding:I
 
@@ -3836,7 +3795,6 @@
 
 .method public setTrackDrawable(Landroid/graphics/drawable/Drawable;)V
     .locals 0
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     iput-object p1, p0, Landroid/widget/Switch;->mTrackDrawable:Landroid/graphics/drawable/Drawable;
 
@@ -3847,7 +3805,6 @@
 
 .method public setTrackResource(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
@@ -3868,7 +3825,6 @@
 
 .method protected verifyDrawable(Landroid/graphics/drawable/Drawable;)Z
     .locals 1
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     invoke-super {p0, p1}, Landroid/widget/CompoundButton;->verifyDrawable(Landroid/graphics/drawable/Drawable;)Z
 

@@ -36,7 +36,6 @@
 # virtual methods
 .method public onDeleteGroup(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v0, p0, Landroid/net/wifi/p2p/WifiP2pService$P2pStateMachine$1;->this$1:Landroid/net/wifi/p2p/WifiP2pService$P2pStateMachine;
 

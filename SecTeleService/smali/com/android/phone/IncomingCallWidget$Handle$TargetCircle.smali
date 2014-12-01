@@ -187,13 +187,13 @@
 
     new-array v8, v9, [I
 
-    invoke-virtual {p0, v8}, Landroid/view/View;->getLocationOnScreen([I)V
+    invoke-virtual {p0, v8}, Lcom/android/phone/IncomingCallWidget$Handle$TargetCircle;->getLocationOnScreen([I)V
 
     const/4 v9, 0x0
 
     aget v9, v8, v9
 
-    invoke-virtual {p0}, Landroid/view/View;->getWidth()I
+    invoke-virtual {p0}, Lcom/android/phone/IncomingCallWidget$Handle$TargetCircle;->getWidth()I
 
     move-result v10
 
@@ -207,7 +207,7 @@
 
     aget v9, v8, v9
 
-    invoke-virtual {p0}, Landroid/view/View;->getHeight()I
+    invoke-virtual {p0}, Lcom/android/phone/IncomingCallWidget$Handle$TargetCircle;->getHeight()I
 
     move-result v10
 
@@ -293,7 +293,7 @@
     .locals 4
     .param p1    # Landroid/graphics/Canvas;
 
-    invoke-virtual {p0}, Landroid/view/View;->getWidth()I
+    invoke-virtual {p0}, Lcom/android/phone/IncomingCallWidget$Handle$TargetCircle;->getWidth()I
 
     move-result v0
 
@@ -301,7 +301,7 @@
 
     int-to-float v0, v0
 
-    invoke-virtual {p0}, Landroid/view/View;->getHeight()I
+    invoke-virtual {p0}, Lcom/android/phone/IncomingCallWidget$Handle$TargetCircle;->getHeight()I
 
     move-result v1
 

@@ -73,7 +73,6 @@
 
 .method public set(I)V
     .locals 1
-    .param p1    # I
 
     monitor-enter p0
 

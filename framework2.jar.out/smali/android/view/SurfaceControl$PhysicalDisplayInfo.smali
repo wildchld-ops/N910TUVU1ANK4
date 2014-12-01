@@ -41,7 +41,6 @@
 
 .method public constructor <init>(Landroid/view/SurfaceControl$PhysicalDisplayInfo;)V
     .locals 0
-    .param p1    # Landroid/view/SurfaceControl$PhysicalDisplayInfo;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -54,7 +53,6 @@
 # virtual methods
 .method public copyFrom(Landroid/view/SurfaceControl$PhysicalDisplayInfo;)V
     .locals 1
-    .param p1    # Landroid/view/SurfaceControl$PhysicalDisplayInfo;
 
     iget v0, p1, Landroid/view/SurfaceControl$PhysicalDisplayInfo;->width:I
 
@@ -89,7 +87,6 @@
 
 .method public equals(Landroid/view/SurfaceControl$PhysicalDisplayInfo;)Z
     .locals 2
-    .param p1    # Landroid/view/SurfaceControl$PhysicalDisplayInfo;
 
     if-eqz p1, :cond_0
 
@@ -156,7 +153,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     instance-of v0, p1, Landroid/view/SurfaceControl$PhysicalDisplayInfo;
 

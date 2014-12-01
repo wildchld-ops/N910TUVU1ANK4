@@ -17,8 +17,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;I)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -33,8 +31,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Ljava/lang/CharSequence;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/lang/CharSequence;
 
     const/4 v0, 0x0
 

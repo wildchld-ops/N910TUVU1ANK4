@@ -25,7 +25,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/launcher2/Workspace;Ljava/lang/String;Lcom/android/launcher2/LauncherAppWidgetHost;Lcom/android/launcher2/HomeWidgetItem;)V
     .locals 0
-    .param p2    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/launcher2/Workspace$18;->this$0:Lcom/android/launcher2/Workspace;
 

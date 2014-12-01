@@ -14,10 +14,6 @@
 
 .method public static dispatch(Landroid/view/KeyEvent;Landroid/view/KeyEvent$Callback;Ljava/lang/Object;Ljava/lang/Object;)Z
     .locals 1
-    .param p0    # Landroid/view/KeyEvent;
-    .param p1    # Landroid/view/KeyEvent$Callback;
-    .param p2    # Ljava/lang/Object;
-    .param p3    # Ljava/lang/Object;
 
     check-cast p2, Landroid/view/KeyEvent$DispatcherState;
 
@@ -30,7 +26,6 @@
 
 .method public static getKeyDispatcherState(Landroid/view/View;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Landroid/view/View;
 
     invoke-virtual {p0}, Landroid/view/View;->getKeyDispatcherState()Landroid/view/KeyEvent$DispatcherState;
 
@@ -41,7 +36,6 @@
 
 .method public static isTracking(Landroid/view/KeyEvent;)Z
     .locals 1
-    .param p0    # Landroid/view/KeyEvent;
 
     invoke-virtual {p0}, Landroid/view/KeyEvent;->isTracking()Z
 
@@ -52,7 +46,6 @@
 
 .method public static startTracking(Landroid/view/KeyEvent;)V
     .locals 0
-    .param p0    # Landroid/view/KeyEvent;
 
     invoke-virtual {p0}, Landroid/view/KeyEvent;->startTracking()V
 

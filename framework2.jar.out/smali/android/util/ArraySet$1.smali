@@ -50,8 +50,6 @@
 
 .method protected colGetEntry(II)Ljava/lang/Object;
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Landroid/util/ArraySet$1;->this$0:Landroid/util/ArraySet;
 
@@ -93,7 +91,6 @@
 
 .method protected colIndexOfKey(Ljava/lang/Object;)I
     .locals 2
-    .param p1    # Ljava/lang/Object;
 
     if-nez p1, :cond_0
 
@@ -124,7 +121,6 @@
 
 .method protected colIndexOfValue(Ljava/lang/Object;)I
     .locals 2
-    .param p1    # Ljava/lang/Object;
 
     if-nez p1, :cond_0
 
@@ -170,7 +166,6 @@
 
 .method protected colRemoveAt(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/util/ArraySet$1;->this$0:Landroid/util/ArraySet;
 
@@ -181,7 +176,6 @@
 
 .method protected colSetValue(ILjava/lang/Object;)Ljava/lang/Object;
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(ITE;)TE;"

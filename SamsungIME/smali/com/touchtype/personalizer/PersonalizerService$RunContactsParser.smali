@@ -30,9 +30,6 @@
 # direct methods
 .method constructor <init>(Lcom/touchtype/personalizer/PersonalizerService;ZLjava/lang/String;I)V
     .locals 0
-    .param p2    # Z
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
 
     iput-object p1, p0, Lcom/touchtype/personalizer/PersonalizerService$RunContactsParser;->this$0:Lcom/touchtype/personalizer/PersonalizerService;
 
@@ -47,7 +44,6 @@
 
 .method static synthetic access$2300(Lcom/touchtype/personalizer/PersonalizerService$RunContactsParser;)I
     .locals 1
-    .param p0    # Lcom/touchtype/personalizer/PersonalizerService$RunContactsParser;
 
     iget v0, p0, Lcom/touchtype/personalizer/PersonalizerService$RunContactsParser;->mTotal:I
 
@@ -56,8 +52,6 @@
 
 .method static synthetic access$2302(Lcom/touchtype/personalizer/PersonalizerService$RunContactsParser;I)I
     .locals 0
-    .param p0    # Lcom/touchtype/personalizer/PersonalizerService$RunContactsParser;
-    .param p1    # I
 
     iput p1, p0, Lcom/touchtype/personalizer/PersonalizerService$RunContactsParser;->mTotal:I
 
@@ -66,7 +60,6 @@
 
 .method static synthetic access$2500(Lcom/touchtype/personalizer/PersonalizerService$RunContactsParser;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/touchtype/personalizer/PersonalizerService$RunContactsParser;
 
     iget-object v0, p0, Lcom/touchtype/personalizer/PersonalizerService$RunContactsParser;->mServiceName:Ljava/lang/String;
 
@@ -75,7 +68,6 @@
 
 .method static synthetic access$2600(Lcom/touchtype/personalizer/PersonalizerService$RunContactsParser;)I
     .locals 1
-    .param p0    # Lcom/touchtype/personalizer/PersonalizerService$RunContactsParser;
 
     iget v0, p0, Lcom/touchtype/personalizer/PersonalizerService$RunContactsParser;->mServiceId:I
 

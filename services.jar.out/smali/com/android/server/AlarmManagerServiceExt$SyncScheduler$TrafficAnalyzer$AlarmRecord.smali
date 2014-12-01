@@ -151,7 +151,6 @@
 
 .method public constructor <init>(Lcom/android/server/AlarmManagerServiceExt$SyncScheduler$TrafficAnalyzer;Lcom/android/server/AlarmManagerServiceExt$SyncScheduler$TrafficAnalyzer$AlarmRecord;)V
     .locals 2
-    .param p2    # Lcom/android/server/AlarmManagerServiceExt$SyncScheduler$TrafficAnalyzer$AlarmRecord;
 
     iput-object p1, p0, Lcom/android/server/AlarmManagerServiceExt$SyncScheduler$TrafficAnalyzer$AlarmRecord;->this$1:Lcom/android/server/AlarmManagerServiceExt$SyncScheduler$TrafficAnalyzer;
 
@@ -466,8 +465,6 @@
 
 .method public updateTrafficTimeLocked(ZJ)V
     .locals 27
-    .param p1    # Z
-    .param p2    # J
 
     if-eqz p1, :cond_e
 
@@ -1619,8 +1616,6 @@
 
 .method public updateTriggerTimeLocked(IJ)V
     .locals 10
-    .param p1    # I
-    .param p2    # J
 
     const-wide/16 v8, 0x0
 

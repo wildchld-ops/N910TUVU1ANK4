@@ -44,16 +44,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/display/VirtualDisplayAdapter;Landroid/os/IBinder;Landroid/os/IBinder;ILjava/lang/String;Ljava/lang/String;IIILandroid/view/Surface;I)V
     .locals 0
-    .param p2    # Landroid/os/IBinder;
-    .param p3    # Landroid/os/IBinder;
-    .param p4    # I
-    .param p5    # Ljava/lang/String;
-    .param p6    # Ljava/lang/String;
-    .param p7    # I
-    .param p8    # I
-    .param p9    # I
-    .param p10    # Landroid/view/Surface;
-    .param p11    # I
 
     iput-object p1, p0, Lcom/android/server/display/VirtualDisplayAdapter$VirtualDisplayDevice;->this$0:Lcom/android/server/display/VirtualDisplayAdapter;
 

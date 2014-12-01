@@ -46,7 +46,6 @@
 # virtual methods
 .method public close(Landroid/os/ParcelFileDescriptor$AutoCloseOutputStream;)V
     .locals 0
-    .param p1    # Landroid/os/ParcelFileDescriptor$AutoCloseOutputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -60,7 +59,6 @@
 
 .method public bridge synthetic close(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -76,7 +74,6 @@
 
 .method public flush(Landroid/os/ParcelFileDescriptor$AutoCloseOutputStream;)V
     .locals 0
-    .param p1    # Landroid/os/ParcelFileDescriptor$AutoCloseOutputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -90,7 +87,6 @@
 
 .method public bridge synthetic flush(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -138,7 +134,6 @@
 
 .method public process(Landroid/os/ParcelFileDescriptor$AutoCloseOutputStream;)V
     .locals 2
-    .param p1    # Landroid/os/ParcelFileDescriptor$AutoCloseOutputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -163,7 +158,6 @@
 
 .method public bridge synthetic process(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -179,7 +173,6 @@
 
 .method public sync(Landroid/os/ParcelFileDescriptor$AutoCloseOutputStream;)V
     .locals 1
-    .param p1    # Landroid/os/ParcelFileDescriptor$AutoCloseOutputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -197,7 +190,6 @@
 
 .method public bridge synthetic sync(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

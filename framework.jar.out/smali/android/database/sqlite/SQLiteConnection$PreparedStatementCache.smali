@@ -31,7 +31,6 @@
 # direct methods
 .method public constructor <init>(Landroid/database/sqlite/SQLiteConnection;I)V
     .locals 0
-    .param p2    # I
 
     iput-object p1, p0, Landroid/database/sqlite/SQLiteConnection$PreparedStatementCache;->this$0:Landroid/database/sqlite/SQLiteConnection;
 
@@ -44,7 +43,6 @@
 # virtual methods
 .method public dump(Landroid/util/Printer;)V
     .locals 8
-    .param p1    # Landroid/util/Printer;
 
     const-string v6, "  Prepared statement cache:"
 
@@ -208,10 +206,6 @@
 
 .method protected bridge synthetic entryRemoved(ZLjava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Z
-    .param p2    # Ljava/lang/Object;
-    .param p3    # Ljava/lang/Object;
-    .param p4    # Ljava/lang/Object;
 
     check-cast p2, Ljava/lang/String;
 
@@ -226,10 +220,6 @@
 
 .method protected entryRemoved(ZLjava/lang/String;Landroid/database/sqlite/SQLiteConnection$PreparedStatement;Landroid/database/sqlite/SQLiteConnection$PreparedStatement;)V
     .locals 1
-    .param p1    # Z
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/database/sqlite/SQLiteConnection$PreparedStatement;
-    .param p4    # Landroid/database/sqlite/SQLiteConnection$PreparedStatement;
 
     const/4 v0, 0x0
 

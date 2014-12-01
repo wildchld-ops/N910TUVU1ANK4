@@ -32,8 +32,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/mms/ui/BoxListFrame;Landroid/content/AsyncQueryHandler;Landroid/content/Context;)V
     .locals 1
-    .param p2    # Landroid/content/AsyncQueryHandler;
-    .param p3    # Landroid/content/Context;
 
     iput-object p1, p0, Lcom/android/mms/ui/BoxListFrame$DeleteMessageListener;->this$0:Lcom/android/mms/ui/BoxListFrame;
 
@@ -52,8 +50,6 @@
 
 .method public constructor <init>(Lcom/android/mms/ui/BoxListFrame;Landroid/net/Uri;Z)V
     .locals 0
-    .param p2    # Landroid/net/Uri;
-    .param p3    # Z
 
     iput-object p1, p0, Lcom/android/mms/ui/BoxListFrame$DeleteMessageListener;->this$0:Lcom/android/mms/ui/BoxListFrame;
 
@@ -68,7 +64,6 @@
 
 .method static synthetic access$1700(Lcom/android/mms/ui/BoxListFrame$DeleteMessageListener;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/BoxListFrame$DeleteMessageListener;
 
     iget-object v0, p0, Lcom/android/mms/ui/BoxListFrame$DeleteMessageListener;->mDeleteStartHandler:Landroid/os/Handler;
 
@@ -79,8 +74,6 @@
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 5
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     # getter for: Lcom/android/mms/ui/BoxListFrame;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/android/mms/ui/BoxListFrame;->access$500()Ljava/lang/String;
@@ -173,7 +166,6 @@
 
 .method public setDeleteLockedMessage(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/BoxListFrame$DeleteMessageListener;->mDeleteLockedMessages:Z
 
@@ -182,7 +174,6 @@
 
 .method public setDeleteStartHandler(Landroid/os/Handler;)Lcom/android/mms/ui/BoxListFrame$DeleteMessageListener;
     .locals 0
-    .param p1    # Landroid/os/Handler;
 
     iput-object p1, p0, Lcom/android/mms/ui/BoxListFrame$DeleteMessageListener;->mDeleteStartHandler:Landroid/os/Handler;
 
@@ -191,7 +182,6 @@
 
 .method public setHasLockedMessage(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/ui/BoxListFrame$DeleteMessageListener;->mHasLockedMessages:Z
 

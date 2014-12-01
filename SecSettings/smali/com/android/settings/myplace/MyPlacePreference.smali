@@ -16,11 +16,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;IZZZ)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # Z
-    .param p5    # Z
 
     invoke-direct {p0, p1}, Landroid/preference/Preference;-><init>(Landroid/content/Context;)V
 
@@ -55,7 +50,6 @@
 
 .method protected onBindView(Landroid/view/View;)V
     .locals 6
-    .param p1    # Landroid/view/View;
 
     const v5, 0x7f0202f2
 

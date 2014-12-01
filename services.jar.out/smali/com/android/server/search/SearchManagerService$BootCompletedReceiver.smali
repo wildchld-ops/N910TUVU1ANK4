@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Lcom/android/server/search/SearchManagerService;Lcom/android/server/search/SearchManagerService$1;)V
     .locals 0
-    .param p1    # Lcom/android/server/search/SearchManagerService;
-    .param p2    # Lcom/android/server/search/SearchManagerService$1;
 
     invoke-direct {p0, p1}, Lcom/android/server/search/SearchManagerService$BootCompletedReceiver;-><init>(Lcom/android/server/search/SearchManagerService;)V
 
@@ -43,8 +41,6 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     new-instance v0, Lcom/android/server/search/SearchManagerService$BootCompletedReceiver$1;
 

@@ -243,8 +243,6 @@
 
 .method static synthetic access$000(Landroid/content/Context;Z)V
     .locals 0
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
 
     invoke-static {p0, p1}, Lcom/android/server/power/ShutdownThread;->beginShutdownSequence(Landroid/content/Context;Z)V
 
@@ -253,8 +251,6 @@
 
 .method static synthetic access$1000(Landroid/content/Context;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p0, p1}, Lcom/android/server/power/ShutdownThread;->textToSpeech(Landroid/content/Context;Ljava/lang/String;)V
 
@@ -263,7 +259,6 @@
 
 .method static synthetic access$102(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/server/power/ShutdownThread;->mFake:Z
 
@@ -336,7 +331,6 @@
 
 .method static synthetic access$202(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/server/power/ShutdownThread;->coverOpen:Z
 
@@ -353,8 +347,6 @@
 
 .method static synthetic access$400(Landroid/content/Context;Z)V
     .locals 0
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
 
     invoke-static {p0, p1}, Lcom/android/server/power/ShutdownThread;->restoreMiniModeBarAndSleep(Landroid/content/Context;Z)V
 
@@ -379,7 +371,6 @@
 
 .method static synthetic access$702(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/server/power/ShutdownThread;->sIsConfirming:Z
 
@@ -396,7 +387,6 @@
 
 .method static synthetic access$900(Lcom/android/server/power/ShutdownThread;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/server/power/ShutdownThread;
 
     iget-object v0, p0, Lcom/android/server/power/ShutdownThread;->mContext:Landroid/content/Context;
 
@@ -405,8 +395,6 @@
 
 .method private static beginShutdownSequence(Landroid/content/Context;Z)V
     .locals 9
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
 
     const/4 v4, 0x0
 
@@ -703,7 +691,6 @@
 
 .method private static blackMiniModeBar(Landroid/content/Context;)V
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     const/4 v3, 0x1
 
@@ -759,8 +746,6 @@
 
 .method public static checkNeedToCheckTA(Landroid/content/Context;Z)Z
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
 
     const/4 v1, 0x0
 
@@ -805,9 +790,6 @@
 
 .method private static createConfirmDialog(Landroid/content/Context;II)Landroid/app/Dialog;
     .locals 13
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # I
 
     const v12, 0x1040009
 
@@ -1022,9 +1004,6 @@
 
 .method private static deviceRebootOrShutdown(Ljava/lang/String;ZLjava/lang/String;)Z
     .locals 10
-    .param p0    # Ljava/lang/String;
-    .param p1    # Z
-    .param p2    # Ljava/lang/String;
 
     const/4 v4, 0x1
 
@@ -1193,9 +1172,6 @@
 
 .method public static fakeShutdown(Landroid/content/Context;Ljava/lang/String;Z)V
     .locals 7
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const/4 v6, 0x0
 
@@ -1526,7 +1502,6 @@
 
 .method private static getSCoverState(Lcom/samsung/android/cover/CoverManager;)Z
     .locals 3
-    .param p0    # Lcom/samsung/android/cover/CoverManager;
 
     invoke-virtual {p0}, Lcom/samsung/android/cover/CoverManager;->getCoverState()Lcom/samsung/android/cover/CoverState;
 
@@ -1593,7 +1568,6 @@
 
 .method private static isTalkBackEnabled(Landroid/content/Context;)Z
     .locals 10
-    .param p0    # Landroid/content/Context;
 
     const/16 v1, 0x3a
 
@@ -1668,9 +1642,6 @@
 
 .method public static reboot(Landroid/content/Context;Ljava/lang/String;Z)V
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const/4 v3, 0x0
 
@@ -1733,8 +1704,6 @@
 
 .method public static rebootOrShutdown(ZLjava/lang/String;)V
     .locals 7
-    .param p0    # Z
-    .param p1    # Ljava/lang/String;
 
     const-string v5, "ShutdownThread"
 
@@ -1921,9 +1890,6 @@
 
 .method public static rebootSafeMode(Landroid/content/Context;Ljava/lang/String;Z)V
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const/4 v5, 0x1
 
@@ -2013,8 +1979,6 @@
 
 .method public static rebootSafeMode(Landroid/content/Context;Z)V
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
 
     invoke-static {}, Lcom/android/server/power/ShutdownThread;->IsShutDownStarted()Z
 
@@ -2065,8 +2029,6 @@
 
 .method private static restoreMiniModeBarAndSleep(Landroid/content/Context;Z)V
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
 
     const/4 v1, 0x0
 
@@ -2099,7 +2061,6 @@
 
 .method public static saveReasonforshutdown(Ljava/lang/Exception;)V
     .locals 10
-    .param p0    # Ljava/lang/Exception;
 
     const-string v7, "ShutdownThread"
 
@@ -2260,9 +2221,6 @@
 
 .method private static sendMiniModeUiIntent(Landroid/content/Context;ZZ)V
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
-    .param p2    # Z
 
     new-instance v0, Landroid/content/Intent;
 
@@ -2293,7 +2251,6 @@
 
 .method static setInputKeysDisable(Z)V
     .locals 5
-    .param p0    # Z
 
     const-string v2, "input"
 
@@ -2378,8 +2335,6 @@
 
 .method public static shutdown(Landroid/content/Context;Z)V
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
 
     const/4 v0, 0x0
 
@@ -2396,9 +2351,6 @@
 
 .method public static shutdown(Landroid/content/Context;ZLjava/lang/String;)V
     .locals 0
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
-    .param p2    # Ljava/lang/String;
 
     sput-object p2, Lcom/android/server/power/ShutdownThread;->mRebootReason:Ljava/lang/String;
 
@@ -2409,9 +2361,6 @@
 
 .method static shutdownInner(Landroid/content/Context;ZZ)V
     .locals 13
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
-    .param p2    # Z
 
     const/4 v12, 0x2
 
@@ -2738,9 +2687,6 @@
 
 .method private shutdownRadios(ILandroid/content/Context;Z)V
     .locals 11
-    .param p1    # I
-    .param p2    # Landroid/content/Context;
-    .param p3    # Z
 
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
@@ -2807,7 +2753,6 @@
 
 .method public static silentShutdown(Landroid/content/Context;)V
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -2828,7 +2773,6 @@
 
 .method private static startFakeShutdown(Landroid/content/Context;)V
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     new-instance v0, Lcom/android/server/power/ShutdownDialog;
 
@@ -2865,7 +2809,6 @@
 
 .method private static startGoogleShutdownDialog(Landroid/content/Context;)V
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     new-instance v0, Landroid/app/ProgressDialog;
 
@@ -2950,7 +2893,6 @@
 
 .method private static startShutdownDialog(Landroid/content/Context;)V
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     new-instance v0, Lcom/android/server/power/ShutdownDialog;
 
@@ -3068,7 +3010,6 @@
 
 .method public static systemShutdown(Landroid/content/Context;)V
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -3087,8 +3028,6 @@
 
 .method private static textToSpeech(Landroid/content/Context;Ljava/lang/String;)V
     .locals 8
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const-string v6, "audio"
 

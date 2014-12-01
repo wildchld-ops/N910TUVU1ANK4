@@ -60,8 +60,6 @@
 
 .method public constructor <init>(ILcom/samsung/android/magazinecard/MagazineCardInfo;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Lcom/samsung/android/magazinecard/MagazineCardInfo;
 
     const/4 v1, 0x0
 
@@ -84,9 +82,6 @@
 
 .method public constructor <init>(ILcom/samsung/android/magazinecard/MagazineCardInfo;Landroid/content/ComponentName;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Lcom/samsung/android/magazinecard/MagazineCardInfo;
-    .param p3    # Landroid/content/ComponentName;
 
     invoke-direct {p0, p1, p2}, Lcom/samsung/android/magazinecard/MagazineCardRecord;-><init>(ILcom/samsung/android/magazinecard/MagazineCardInfo;)V
 
@@ -233,7 +228,6 @@
 
 .method public readFromParcel(Landroid/os/Parcel;)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
@@ -274,8 +268,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget v0, p0, Lcom/samsung/android/magazinecard/MagazineCardRecord;->mId:I
 

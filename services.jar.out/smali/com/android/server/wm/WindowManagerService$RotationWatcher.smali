@@ -25,8 +25,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/wm/WindowManagerService;Landroid/view/IRotationWatcher;Landroid/os/IBinder$DeathRecipient;)V
     .locals 0
-    .param p2    # Landroid/view/IRotationWatcher;
-    .param p3    # Landroid/os/IBinder$DeathRecipient;
 
     iput-object p1, p0, Lcom/android/server/wm/WindowManagerService$RotationWatcher;->this$0:Lcom/android/server/wm/WindowManagerService;
 

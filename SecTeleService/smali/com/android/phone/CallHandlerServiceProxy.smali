@@ -235,7 +235,7 @@
 
     int-to-long v2, v0
 
-    invoke-virtual {p0, p1, v2, v3}, Landroid/os/Handler;->sendEmptyMessageDelayed(IJ)Z
+    invoke-virtual {p0, p1, v2, v3}, Lcom/android/phone/CallHandlerServiceProxy;->sendEmptyMessageDelayed(IJ)Z
 
     return-void
 
@@ -1883,7 +1883,7 @@
     :pswitch_0
     const/4 v1, 0x1
 
-    invoke-virtual {p0, v1}, Landroid/os/Handler;->removeMessages(I)V
+    invoke-virtual {p0, v1}, Lcom/android/phone/CallHandlerServiceProxy;->removeMessages(I)V
 
     invoke-direct {p0}, Lcom/android/phone/CallHandlerServiceProxy;->handleConnectRetry()V
 
@@ -1892,7 +1892,7 @@
     :pswitch_1
     const/4 v1, 0x2
 
-    invoke-virtual {p0, v1}, Landroid/os/Handler;->removeMessages(I)V
+    invoke-virtual {p0, v1}, Lcom/android/phone/CallHandlerServiceProxy;->removeMessages(I)V
 
     iget-object v2, p0, Lcom/android/phone/CallHandlerServiceProxy;->mServiceAndQueueLock:Ljava/lang/Object;
 
@@ -2590,7 +2590,7 @@
 
     if-nez v0, :cond_0
 
-    invoke-virtual {p1}, Ljava/lang/Enum;->ordinal()I
+    invoke-virtual {p1}, Lcom/android/services/telephony/common/PhotoringCommon$PhotoringMTState;->ordinal()I
 
     move-result v0
 
@@ -2608,7 +2608,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    invoke-virtual {p1}, Ljava/lang/Enum;->ordinal()I
+    invoke-virtual {p1}, Lcom/android/services/telephony/common/PhotoringCommon$PhotoringMTState;->ordinal()I
 
     move-result v0
 
@@ -3325,9 +3325,9 @@
     :try_start_1
     new-instance v7, Landroid/content/ComponentName;
 
-    iget-object v9, v4, Landroid/content/pm/PackageItemInfo;->packageName:Ljava/lang/String;
+    iget-object v9, v4, Landroid/content/pm/ServiceInfo;->packageName:Ljava/lang/String;
 
-    iget-object v10, v4, Landroid/content/pm/PackageItemInfo;->name:Ljava/lang/String;
+    iget-object v10, v4, Landroid/content/pm/ServiceInfo;->name:Ljava/lang/String;
 
     invoke-direct {v7, v9, v10}, Landroid/content/ComponentName;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 

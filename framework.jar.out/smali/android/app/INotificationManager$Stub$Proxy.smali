@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,8 +36,6 @@
 # virtual methods
 .method public areNotificationsEnabledForPackage(Ljava/lang/String;I)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -111,8 +108,6 @@
 
 .method public cancelAllNotifications(Ljava/lang/String;I)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -166,7 +161,6 @@
 
 .method public cancelAllNotificationsFromListener(Landroid/service/notification/INotificationListener;)V
     .locals 5
-    .param p1    # Landroid/service/notification/INotificationListener;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -230,10 +224,6 @@
 
 .method public cancelNotificationFromListener(Landroid/service/notification/INotificationListener;Ljava/lang/String;Ljava/lang/String;I)V
     .locals 5
-    .param p1    # Landroid/service/notification/INotificationListener;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -303,10 +293,6 @@
 
 .method public cancelNotificationWithTag(Ljava/lang/String;Ljava/lang/String;II)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -364,8 +350,6 @@
 
 .method public cancelToast(Ljava/lang/String;Landroid/app/ITransientNotification;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/app/ITransientNotification;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -431,7 +415,6 @@
 
 .method public clearAllNotificationsAsUser(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -483,13 +466,6 @@
 
 .method public enqueueNotificationWithTag(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILandroid/app/Notification;[II)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
-    .param p5    # Landroid/app/Notification;
-    .param p6    # [I
-    .param p7    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -574,9 +550,6 @@
 
 .method public enqueueToast(Ljava/lang/String;Landroid/app/ITransientNotification;I)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/app/ITransientNotification;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -644,7 +617,6 @@
 
 .method public getActiveNotifications(Ljava/lang/String;)[Landroid/service/notification/StatusBarNotification;
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -704,7 +676,6 @@
 
 .method public getActiveNotificationsFromListener(Landroid/service/notification/INotificationListener;)[Landroid/service/notification/StatusBarNotification;
     .locals 6
-    .param p1    # Landroid/service/notification/INotificationListener;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -776,8 +747,6 @@
 
 .method public getHistoricalNotifications(Ljava/lang/String;I)[Landroid/service/notification/StatusBarNotification;
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -847,8 +816,6 @@
 
 .method public getNotificationInfo(Ljava/lang/String;I)Landroid/app/NotificationInfo;
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -922,9 +889,6 @@
 
 .method public registerListener(Landroid/service/notification/INotificationListener;Landroid/content/ComponentName;I)V
     .locals 5
-    .param p1    # Landroid/service/notification/INotificationListener;
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1011,9 +975,6 @@
 
 .method public setNotificationsEnabledForPackage(Ljava/lang/String;IZ)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -1076,8 +1037,6 @@
 
 .method public unregisterListener(Landroid/service/notification/INotificationListener;I)V
     .locals 5
-    .param p1    # Landroid/service/notification/INotificationListener;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

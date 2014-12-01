@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/BackupManagerService;Landroid/os/Looper;)V
     .locals 0
-    .param p2    # Landroid/os/Looper;
 
     iput-object p1, p0, Lcom/android/server/BackupManagerService$BackupHandler;->this$0:Lcom/android/server/BackupManagerService;
 
@@ -34,7 +33,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 31
-    .param p1    # Landroid/os/Message;
 
     move-object/from16 v0, p1
 

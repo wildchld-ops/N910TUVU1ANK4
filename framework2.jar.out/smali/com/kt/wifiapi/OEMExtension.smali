@@ -112,7 +112,6 @@
 
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -143,7 +142,6 @@
 
 .method public static getInstance(Landroid/content/Context;)Lcom/kt/wifiapi/OEMExtension;
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     sget-boolean v0, Lcom/kt/wifiapi/OEMExtension;->DBG:Z
 
@@ -330,7 +328,6 @@
 
 .method public getInternetCheckOption(I)I
     .locals 4
-    .param p1    # I
 
     new-instance v0, Landroid/os/Message;
 
@@ -443,7 +440,6 @@
 
 .method public setDisconnectionPriority(I)Z
     .locals 7
-    .param p1    # I
 
     const/4 v2, 0x1
 
@@ -581,8 +577,6 @@
 
 .method public setInternetCheckOption(II)I
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     new-instance v0, Landroid/os/Message;
 
@@ -650,7 +644,6 @@
 
 .method public setManualConnection(Z)Z
     .locals 7
-    .param p1    # Z
 
     const/4 v3, 0x1
 
@@ -751,7 +744,6 @@
 
 .method public setScanResultsEx(Ljava/lang/String;)Ljava/util/List;
     .locals 28
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

@@ -14,9 +14,6 @@
 
 .method public static makeText(Lcom/sec/android/app/camera/Camera;II)Landroid/widget/Toast;
     .locals 5
-    .param p0    # Lcom/sec/android/app/camera/Camera;
-    .param p1    # I
-    .param p2    # I
 
     const/16 v4, 0x50
 
@@ -75,9 +72,6 @@
 
 .method public static makeText(Lcom/sec/android/app/camera/Camera;Ljava/lang/String;I)Landroid/widget/Toast;
     .locals 5
-    .param p0    # Lcom/sec/android/app/camera/Camera;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/16 v4, 0x50
 

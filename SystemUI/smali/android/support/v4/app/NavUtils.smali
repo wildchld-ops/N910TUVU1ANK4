@@ -60,7 +60,6 @@
 
 .method public static getParentActivityIntent(Landroid/app/Activity;)Landroid/content/Intent;
     .locals 1
-    .param p0    # Landroid/app/Activity;
 
     sget-object v0, Landroid/support/v4/app/NavUtils;->IMPL:Landroid/support/v4/app/NavUtils$NavUtilsImpl;
 
@@ -73,8 +72,6 @@
 
 .method public static getParentActivityIntent(Landroid/content/Context;Landroid/content/ComponentName;)Landroid/content/Intent;
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/pm/PackageManager$NameNotFoundException;
@@ -128,7 +125,6 @@
 
 .method public static getParentActivityIntent(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
     .locals 5
-    .param p0    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -192,7 +188,6 @@
 
 .method public static getParentActivityName(Landroid/app/Activity;)Ljava/lang/String;
     .locals 2
-    .param p0    # Landroid/app/Activity;
 
     :try_start_0
     invoke-virtual {p0}, Landroid/app/Activity;->getComponentName()Landroid/content/ComponentName;
@@ -219,8 +214,6 @@
 
 .method public static getParentActivityName(Landroid/content/Context;Landroid/content/ComponentName;)Ljava/lang/String;
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/content/ComponentName;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/pm/PackageManager$NameNotFoundException;
@@ -248,7 +241,6 @@
 
 .method public static navigateUpFromSameTask(Landroid/app/Activity;)V
     .locals 4
-    .param p0    # Landroid/app/Activity;
 
     invoke-static {p0}, Landroid/support/v4/app/NavUtils;->getParentActivityIntent(Landroid/app/Activity;)Landroid/content/Intent;
 
@@ -314,8 +306,6 @@
 
 .method public static navigateUpTo(Landroid/app/Activity;Landroid/content/Intent;)V
     .locals 1
-    .param p0    # Landroid/app/Activity;
-    .param p1    # Landroid/content/Intent;
 
     sget-object v0, Landroid/support/v4/app/NavUtils;->IMPL:Landroid/support/v4/app/NavUtils$NavUtilsImpl;
 
@@ -326,8 +316,6 @@
 
 .method public static shouldUpRecreateTask(Landroid/app/Activity;Landroid/content/Intent;)Z
     .locals 1
-    .param p0    # Landroid/app/Activity;
-    .param p1    # Landroid/content/Intent;
 
     sget-object v0, Landroid/support/v4/app/NavUtils;->IMPL:Landroid/support/v4/app/NavUtils$NavUtilsImpl;
 

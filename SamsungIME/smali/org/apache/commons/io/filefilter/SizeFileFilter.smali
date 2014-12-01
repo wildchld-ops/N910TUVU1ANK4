@@ -15,7 +15,6 @@
 # direct methods
 .method public constructor <init>(J)V
     .locals 1
-    .param p1    # J
 
     const/4 v0, 0x1
 
@@ -26,8 +25,6 @@
 
 .method public constructor <init>(JZ)V
     .locals 2
-    .param p1    # J
-    .param p3    # Z
 
     invoke-direct {p0}, Lorg/apache/commons/io/filefilter/AbstractFileFilter;-><init>()V
 
@@ -57,7 +54,6 @@
 # virtual methods
 .method public accept(Ljava/io/File;)Z
     .locals 7
-    .param p1    # Ljava/io/File;
 
     const/4 v1, 0x1
 

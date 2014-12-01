@@ -68,9 +68,6 @@
 
 .method public constructor <init>(III)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -85,7 +82,6 @@
 
 .method public constructor <init>(Landroid/os/Parcel;)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -112,7 +108,6 @@
 
 .method public static readFromParcel(Landroid/os/Parcel;)Landroid/dirEncryption/SDCardEncryptionPolicies;
     .locals 1
-    .param p0    # Landroid/os/Parcel;
 
     new-instance v0, Landroid/dirEncryption/SDCardEncryptionPolicies;
 
@@ -123,7 +118,6 @@
 
 .method public static unflattenFromString(Ljava/lang/String;)Landroid/dirEncryption/SDCardEncryptionPolicies;
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     const-string v4, " "
 
@@ -179,8 +173,6 @@
 
 .method public static writeToParcel(Landroid/dirEncryption/SDCardEncryptionPolicies;Landroid/os/Parcel;)V
     .locals 1
-    .param p0    # Landroid/dirEncryption/SDCardEncryptionPolicies;
-    .param p1    # Landroid/os/Parcel;
 
     if-eqz p0, :cond_0
 
@@ -234,7 +226,6 @@
 
 .method public compareTo(Landroid/dirEncryption/SDCardEncryptionPolicies;)I
     .locals 1
-    .param p1    # Landroid/dirEncryption/SDCardEncryptionPolicies;
 
     invoke-virtual {p0, p1}, Landroid/dirEncryption/SDCardEncryptionPolicies;->equals(Ljava/lang/Object;)Z
 
@@ -255,7 +246,6 @@
 
 .method public bridge synthetic compareTo(Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Landroid/dirEncryption/SDCardEncryptionPolicies;
 
@@ -276,7 +266,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 5
-    .param p1    # Ljava/lang/Object;
 
     const/4 v2, 0x0
 
@@ -471,8 +460,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget v0, p0, Landroid/dirEncryption/SDCardEncryptionPolicies;->mEnc:I
 

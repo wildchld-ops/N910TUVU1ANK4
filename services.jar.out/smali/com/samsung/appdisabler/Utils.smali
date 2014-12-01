@@ -32,7 +32,6 @@
 
 .method public static LogE(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "AppDisabler"
 
@@ -43,8 +42,6 @@
 
 .method public static LogE(Ljava/lang/String;Ljava/lang/Throwable;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/Throwable;
 
     const-string v0, "AppDisabler"
 
@@ -55,7 +52,6 @@
 
 .method public static LogI(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     sget-boolean v0, Lcom/samsung/appdisabler/Utils;->IS_SECURE:Z
 
@@ -71,7 +67,6 @@
 
 .method public static LogW(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     sget-boolean v0, Lcom/samsung/appdisabler/Utils;->IS_SECURE:Z
 

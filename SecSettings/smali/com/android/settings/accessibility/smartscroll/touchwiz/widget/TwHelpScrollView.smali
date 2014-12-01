@@ -46,7 +46,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     const/4 v2, 0x1
 
@@ -79,8 +78,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v2, 0x1
 
@@ -113,7 +110,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/accessibility/smartscroll/touchwiz/widget/TwHelpScrollView;)Landroid/view/Choreographer;
     .locals 1
-    .param p0    # Lcom/android/settings/accessibility/smartscroll/touchwiz/widget/TwHelpScrollView;
 
     iget-object v0, p0, Lcom/android/settings/accessibility/smartscroll/touchwiz/widget/TwHelpScrollView;->mChoreographer:Landroid/view/Choreographer;
 
@@ -193,7 +189,6 @@
 # virtual methods
 .method doAnimation(J)V
     .locals 4
-    .param p1    # J
 
     iget-object v0, p0, Lcom/android/settings/accessibility/smartscroll/touchwiz/widget/TwHelpScrollView;->mScrollTryListener:Lcom/android/settings/accessibility/smartscroll/touchwiz/widget/TwHelpScrollView$ScrollListener;
 
@@ -233,7 +228,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 3
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v2, 0x1
 
@@ -299,8 +293,6 @@
 
 .method public scrollBy(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     invoke-super {p0, p1, p2}, Landroid/view/View;->scrollBy(II)V
 
@@ -313,7 +305,6 @@
 
 .method public setEnableVSync(Z)V
     .locals 0
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -342,7 +333,6 @@
 
 .method public setScrollLintener(Lcom/android/settings/accessibility/smartscroll/touchwiz/widget/TwHelpScrollView$ScrollListener;)V
     .locals 1
-    .param p1    # Lcom/android/settings/accessibility/smartscroll/touchwiz/widget/TwHelpScrollView$ScrollListener;
 
     if-nez p1, :cond_0
 
@@ -361,7 +351,6 @@
 
 .method public setSmartScroll(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -494,7 +483,6 @@
 
 .method public smartScrollBy(I)V
     .locals 2
-    .param p1    # I
 
     const/4 v1, 0x0
 

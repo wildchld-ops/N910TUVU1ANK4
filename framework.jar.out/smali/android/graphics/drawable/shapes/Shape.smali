@@ -84,16 +84,12 @@
 
 .method protected onResize(FF)V
     .locals 0
-    .param p1    # F
-    .param p2    # F
 
     return-void
 .end method
 
 .method public final resize(FF)V
     .locals 2
-    .param p1    # F
-    .param p2    # F
 
     const/4 v1, 0x0
 

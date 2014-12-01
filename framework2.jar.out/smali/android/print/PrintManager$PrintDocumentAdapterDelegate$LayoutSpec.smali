@@ -41,8 +41,6 @@
 
 .method synthetic constructor <init>(Landroid/print/PrintManager$PrintDocumentAdapterDelegate;Landroid/print/PrintManager$1;)V
     .locals 0
-    .param p1    # Landroid/print/PrintManager$PrintDocumentAdapterDelegate;
-    .param p2    # Landroid/print/PrintManager$1;
 
     invoke-direct {p0, p1}, Landroid/print/PrintManager$PrintDocumentAdapterDelegate$LayoutSpec;-><init>(Landroid/print/PrintManager$PrintDocumentAdapterDelegate;)V
 

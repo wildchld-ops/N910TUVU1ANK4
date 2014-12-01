@@ -36,7 +36,6 @@
 # virtual methods
 .method public onDismiss(Landroid/content/DialogInterface;)V
     .locals 2
-    .param p1    # Landroid/content/DialogInterface;
 
     # getter for: Landroid/view/VolumePanel;->LOGD:Z
     invoke-static {}, Landroid/view/VolumePanel;->access$300()Z

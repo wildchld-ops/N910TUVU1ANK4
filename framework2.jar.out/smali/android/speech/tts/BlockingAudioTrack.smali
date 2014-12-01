@@ -48,12 +48,6 @@
 # direct methods
 .method constructor <init>(IIIIFF)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # F
-    .param p6    # F
 
     const/4 v2, 0x0
 
@@ -108,7 +102,6 @@
 
 .method private blockUntilCompletion(Landroid/media/AudioTrack;)V
     .locals 14
-    .param p1    # Landroid/media/AudioTrack;
 
     const-wide/16 v4, 0x9c4
 
@@ -200,7 +193,6 @@
 
 .method private blockUntilDone(Landroid/media/AudioTrack;)V
     .locals 1
-    .param p1    # Landroid/media/AudioTrack;
 
     iget v0, p0, Landroid/speech/tts/BlockingAudioTrack;->mBytesWritten:I
 
@@ -257,9 +249,6 @@
 
 .method private static clip(FFF)F
     .locals 1
-    .param p0    # F
-    .param p1    # F
-    .param p2    # F
 
     cmpl-float v0, p0, p2
 
@@ -285,9 +274,6 @@
 
 .method private static final clip(JJJ)J
     .locals 1
-    .param p0    # J
-    .param p2    # J
-    .param p4    # J
 
     cmp-long v0, p0, p2
 
@@ -379,7 +365,6 @@
 
 .method private static getBytesPerFrame(I)I
     .locals 2
-    .param p0    # I
 
     const/4 v0, 0x2
 
@@ -403,7 +388,6 @@
 
 .method static getChannelConfig(I)I
     .locals 1
-    .param p0    # I
 
     const/4 v0, 0x1
 
@@ -431,9 +415,6 @@
 
 .method private static setupVolume(Landroid/media/AudioTrack;FF)V
     .locals 7
-    .param p0    # Landroid/media/AudioTrack;
-    .param p1    # F
-    .param p2    # F
 
     const/4 v6, 0x0
 
@@ -492,8 +473,6 @@
 
 .method private static writeToAudioTrack(Landroid/media/AudioTrack;[B)I
     .locals 4
-    .param p0    # Landroid/media/AudioTrack;
-    .param p1    # [B
 
     invoke-virtual {p0}, Landroid/media/AudioTrack;->getPlayState()I
 
@@ -534,7 +513,6 @@
 # virtual methods
 .method getAudioLengthMs(I)J
     .locals 5
-    .param p1    # I
 
     iget v3, p0, Landroid/speech/tts/BlockingAudioTrack;->mBytesPerFrame:I
 
@@ -709,7 +687,6 @@
 
 .method public write([B)I
     .locals 4
-    .param p1    # [B
 
     const/4 v1, 0x0
 

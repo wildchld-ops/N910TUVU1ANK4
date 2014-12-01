@@ -61,8 +61,6 @@
 
 .method static synthetic access$002(Lcom/android/server/accessibility/OverlayMagnifier$OverlayMagnifierPolicy;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/accessibility/OverlayMagnifier$OverlayMagnifierPolicy;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/accessibility/OverlayMagnifier$OverlayMagnifierPolicy;->mIsMagnifying:Z
 
@@ -71,7 +69,6 @@
 
 .method static synthetic access$200(Lcom/android/server/accessibility/OverlayMagnifier$OverlayMagnifierPolicy;)Landroid/view/MagnificationSpec;
     .locals 1
-    .param p0    # Lcom/android/server/accessibility/OverlayMagnifier$OverlayMagnifierPolicy;
 
     iget-object v0, p0, Lcom/android/server/accessibility/OverlayMagnifier$OverlayMagnifierPolicy;->mMagnificationSpec:Landroid/view/MagnificationSpec;
 
@@ -80,7 +77,6 @@
 
 .method static synthetic access$300(Lcom/android/server/accessibility/OverlayMagnifier$OverlayMagnifierPolicy;)Landroid/view/MotionEvent;
     .locals 1
-    .param p0    # Lcom/android/server/accessibility/OverlayMagnifier$OverlayMagnifierPolicy;
 
     iget-object v0, p0, Lcom/android/server/accessibility/OverlayMagnifier$OverlayMagnifierPolicy;->mLatestMotionEvent:Landroid/view/MotionEvent;
 
@@ -107,7 +103,6 @@
 
 .method public onMotionEvent(Landroid/view/MotionEvent;)V
     .locals 5
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getAction()I
 

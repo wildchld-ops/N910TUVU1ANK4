@@ -65,7 +65,7 @@
     :pswitch_0
     iget-object v0, p0, Lcom/android/phone/PhoneUtils$7;->val$inputText:Landroid/widget/EditText;
 
-    invoke-virtual {v0}, Landroid/widget/TextView;->length()I
+    invoke-virtual {v0}, Landroid/widget/EditText;->length()I
 
     move-result v0
 
@@ -73,7 +73,7 @@
 
     iget-object v0, p0, Lcom/android/phone/PhoneUtils$7;->val$inputText:Landroid/widget/EditText;
 
-    invoke-virtual {v0}, Landroid/widget/TextView;->length()I
+    invoke-virtual {v0}, Landroid/widget/EditText;->length()I
 
     move-result v0
 
@@ -84,7 +84,7 @@
 
     iget-object v1, p0, Lcom/android/phone/PhoneUtils$7;->val$app:Lcom/android/phone/PhoneGlobals;
 
-    invoke-virtual {v1}, Landroid/content/ContextWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {v1}, Lcom/android/phone/PhoneGlobals;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 

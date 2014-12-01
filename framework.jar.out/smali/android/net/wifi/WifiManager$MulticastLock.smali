@@ -31,7 +31,6 @@
 # direct methods
 .method private constructor <init>(Landroid/net/wifi/WifiManager;Ljava/lang/String;)V
     .locals 2
-    .param p2    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -60,9 +59,6 @@
 
 .method synthetic constructor <init>(Landroid/net/wifi/WifiManager;Ljava/lang/String;Landroid/net/wifi/WifiManager$1;)V
     .locals 0
-    .param p1    # Landroid/net/wifi/WifiManager;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/net/wifi/WifiManager$1;
 
     invoke-direct {p0, p1, p2}, Landroid/net/wifi/WifiManager$MulticastLock;-><init>(Landroid/net/wifi/WifiManager;Ljava/lang/String;)V
 
@@ -431,7 +427,6 @@
 
 .method public setReferenceCounted(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/net/wifi/WifiManager$MulticastLock;->mRefCounted:Z
 

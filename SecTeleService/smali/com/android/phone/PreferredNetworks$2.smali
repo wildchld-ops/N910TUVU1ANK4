@@ -222,7 +222,7 @@
 
     iget-object v1, p0, Lcom/android/phone/PreferredNetworks$2;->this$0:Lcom/android/phone/PreferredNetworks;
 
-    invoke-virtual {v1, v0}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {v1, v0}, Lcom/android/phone/PreferredNetworks;->startActivity(Landroid/content/Intent;)V
 
     return-void
 .end method

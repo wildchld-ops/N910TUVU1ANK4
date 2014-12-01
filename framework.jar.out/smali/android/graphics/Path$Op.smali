@@ -135,7 +135,6 @@
 
 .method public static valueOf(Ljava/lang/String;)Landroid/graphics/Path$Op;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-class v0, Landroid/graphics/Path$Op;
 

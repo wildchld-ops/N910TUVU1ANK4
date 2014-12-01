@@ -40,8 +40,6 @@
 
 .method synthetic constructor <init>(Lcom/sec/android/app/shootingmodemanager/views/ItemsAdapter;Lcom/sec/android/app/shootingmodemanager/views/ItemsAdapter$1;)V
     .locals 0
-    .param p1    # Lcom/sec/android/app/shootingmodemanager/views/ItemsAdapter;
-    .param p2    # Lcom/sec/android/app/shootingmodemanager/views/ItemsAdapter$1;
 
     invoke-direct {p0, p1}, Lcom/sec/android/app/shootingmodemanager/views/ItemsAdapter$EffectTouchListener;-><init>(Lcom/sec/android/app/shootingmodemanager/views/ItemsAdapter;)V
 
@@ -52,8 +50,6 @@
 # virtual methods
 .method public onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 5
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     const/4 v2, 0x0
 

@@ -255,8 +255,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/os/Handler;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/Handler;
 
     const/4 v1, 0x0
 
@@ -407,7 +405,6 @@
 
 .method static synthetic access$000(Lcom/android/server/input/InputManagerService;)V
     .locals 0
-    .param p0    # Lcom/android/server/input/InputManagerService;
 
     invoke-direct {p0}, Lcom/android/server/input/InputManagerService;->updateKeyboardLayouts()V
 
@@ -416,7 +413,6 @@
 
 .method static synthetic access$100(Lcom/android/server/input/InputManagerService;)V
     .locals 0
-    .param p0    # Lcom/android/server/input/InputManagerService;
 
     invoke-direct {p0}, Lcom/android/server/input/InputManagerService;->reloadDeviceAliases()V
 
@@ -425,8 +421,6 @@
 
 .method static synthetic access$300(Lcom/android/server/input/InputManagerService;[Landroid/view/InputDevice;)V
     .locals 0
-    .param p0    # Lcom/android/server/input/InputManagerService;
-    .param p1    # [Landroid/view/InputDevice;
 
     invoke-direct {p0, p1}, Lcom/android/server/input/InputManagerService;->deliverInputDevicesChanged([Landroid/view/InputDevice;)V
 
@@ -435,9 +429,6 @@
 
 .method static synthetic access$400(Lcom/android/server/input/InputManagerService;II)V
     .locals 0
-    .param p0    # Lcom/android/server/input/InputManagerService;
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/input/InputManagerService;->handleSwitchKeyboardLayout(II)V
 
@@ -446,7 +437,6 @@
 
 .method static synthetic access$500(Lcom/android/server/input/InputManagerService;)V
     .locals 0
-    .param p0    # Lcom/android/server/input/InputManagerService;
 
     invoke-direct {p0}, Lcom/android/server/input/InputManagerService;->reloadKeyboardLayouts()V
 
@@ -455,7 +445,6 @@
 
 .method static synthetic access$600(Lcom/android/server/input/InputManagerService;)I
     .locals 1
-    .param p0    # Lcom/android/server/input/InputManagerService;
 
     iget v0, p0, Lcom/android/server/input/InputManagerService;->mPtr:I
 
@@ -464,13 +453,6 @@
 
 .method static synthetic access$700(ILandroid/view/InputEvent;IIIII)I
     .locals 1
-    .param p0    # I
-    .param p1    # Landroid/view/InputEvent;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     invoke-static/range {p0 .. p6}, Lcom/android/server/input/InputManagerService;->nativeInjectInputEvent(ILandroid/view/InputEvent;IIIII)I
 
@@ -481,8 +463,6 @@
 
 .method static synthetic access$800(Lcom/android/server/input/InputManagerService;I)V
     .locals 0
-    .param p0    # Lcom/android/server/input/InputManagerService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/input/InputManagerService;->onInputDevicesChangedListenerDied(I)V
 
@@ -491,7 +471,6 @@
 
 .method private cancelVibrateIfNeeded(Lcom/android/server/input/InputManagerService$VibratorToken;)V
     .locals 3
-    .param p1    # Lcom/android/server/input/InputManagerService$VibratorToken;
 
     monitor-enter p1
 
@@ -529,8 +508,6 @@
 
 .method private checkCallingPermission(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v1, 0x1
 
@@ -624,8 +601,6 @@
 
 .method private checkInjectEventsPermission(II)Z
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/server/input/InputManagerService;->mContext:Landroid/content/Context;
 
@@ -650,8 +625,6 @@
 
 .method private static containsInputDeviceWithDescriptor([Landroid/view/InputDevice;Ljava/lang/String;)Z
     .locals 4
-    .param p0    # [Landroid/view/InputDevice;
-    .param p1    # Ljava/lang/String;
 
     array-length v2, p0
 
@@ -690,8 +663,6 @@
 
 .method private static containsPhyFullKeyboardInputDeviceWithDescriptor([Landroid/view/InputDevice;Ljava/lang/String;)Z
     .locals 4
-    .param p0    # [Landroid/view/InputDevice;
-    .param p1    # Ljava/lang/String;
 
     array-length v2, p0
 
@@ -742,7 +713,6 @@
 
 .method private deliverInputDevicesChanged([Landroid/view/InputDevice;)V
     .locals 13
-    .param p1    # [Landroid/view/InputDevice;
 
     const/4 v7, 0x0
 
@@ -1112,9 +1082,6 @@
 
 .method private dispatchUnhandledKey(Lcom/android/server/input/InputWindowHandle;Landroid/view/KeyEvent;I)Landroid/view/KeyEvent;
     .locals 1
-    .param p1    # Lcom/android/server/input/InputWindowHandle;
-    .param p2    # Landroid/view/KeyEvent;
-    .param p3    # I
 
     iget-object v0, p0, Lcom/android/server/input/InputManagerService;->mWindowManagerCallbacks:Lcom/android/server/input/InputManagerService$WindowManagerCallbacks;
 
@@ -1127,7 +1094,6 @@
 
 .method private getBackBlockKeysFromSetting(Z)Z
     .locals 8
-    .param p1    # Z
 
     const/4 v2, 0x1
 
@@ -1202,7 +1168,6 @@
 
 .method private getBlockKeysSetting(Z)Z
     .locals 8
-    .param p1    # Z
 
     const/4 v2, 0x1
 
@@ -1326,7 +1291,6 @@
 
 .method private getDeviceAlias(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -1342,7 +1306,6 @@
 
 .method private getDiffKeyboardLayoutOverlay(Ljava/lang/String;)[Ljava/lang/String;
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -1782,7 +1745,6 @@
 
 .method private getGloveModeSetting(Z)Z
     .locals 8
-    .param p1    # Z
 
     const/4 v2, 0x1
 
@@ -1897,7 +1859,6 @@
 
 .method private getKeyboardLayoutOverlay(Ljava/lang/String;)[Ljava/lang/String;
     .locals 10
-    .param p1    # Ljava/lang/String;
 
     const/4 v6, 0x0
 
@@ -2184,7 +2145,6 @@
 
 .method private getKidsModeSetting(Z)Z
     .locals 8
-    .param p1    # Z
 
     const/4 v2, 0x1
 
@@ -2269,7 +2229,6 @@
 
 .method private getPenHoveringSetting(Z)Z
     .locals 8
-    .param p1    # Z
 
     const/4 v2, 0x1
 
@@ -2399,7 +2358,6 @@
 
 .method private getShowFingerHoveringSetting(Z)Z
     .locals 8
-    .param p1    # Z
 
     const/4 v2, 0x1
 
@@ -2492,7 +2450,6 @@
 
 .method private getShowHoveringSetting(Z)Z
     .locals 8
-    .param p1    # Z
 
     const/4 v2, 0x1
 
@@ -2567,7 +2524,6 @@
 
 .method private getShowTouchesSetting(I)I
     .locals 4
-    .param p1    # I
 
     move v0, p1
 
@@ -2599,7 +2555,6 @@
 
 .method private getSideSyncFromSetting(Z)Z
     .locals 8
-    .param p1    # Z
 
     const/4 v2, 0x1
 
@@ -2674,8 +2629,6 @@
 
 .method private getSuspendibleDevices(Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/server/input/InputManagerService;->mSuspendibleDevices:Ljava/util/HashMap;
 
@@ -2736,8 +2689,6 @@
 
 .method private handleSwitchKeyboardLayout(II)V
     .locals 8
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0, p1}, Lcom/android/server/input/InputManagerService;->getInputDevice(I)Landroid/view/InputDevice;
 
@@ -2871,9 +2822,6 @@
 
 .method private interceptKeyBeforeDispatching(Lcom/android/server/input/InputWindowHandle;Landroid/view/KeyEvent;I)J
     .locals 2
-    .param p1    # Lcom/android/server/input/InputWindowHandle;
-    .param p2    # Landroid/view/KeyEvent;
-    .param p3    # I
 
     iget-object v0, p0, Lcom/android/server/input/InputManagerService;->mWindowManagerCallbacks:Lcom/android/server/input/InputManagerService$WindowManagerCallbacks;
 
@@ -2886,9 +2834,6 @@
 
 .method private interceptKeyBeforeQueueing(Landroid/view/KeyEvent;IZ)I
     .locals 1
-    .param p1    # Landroid/view/KeyEvent;
-    .param p2    # I
-    .param p3    # Z
 
     iget-object v0, p0, Lcom/android/server/input/InputManagerService;->mWindowManagerCallbacks:Lcom/android/server/input/InputManagerService$WindowManagerCallbacks;
 
@@ -2901,9 +2846,6 @@
 
 .method private interceptKeyBeforeQuickAccess(IFF)V
     .locals 1
-    .param p1    # I
-    .param p2    # F
-    .param p3    # F
 
     iget-object v0, p0, Lcom/android/server/input/InputManagerService;->mWindowManagerCallbacks:Lcom/android/server/input/InputManagerService$WindowManagerCallbacks;
 
@@ -2914,7 +2856,6 @@
 
 .method private interceptMotionBeforeQueueingWhenScreenOff(I)I
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/input/InputManagerService;->mWindowManagerCallbacks:Lcom/android/server/input/InputManagerService$WindowManagerCallbacks;
 
@@ -3056,9 +2997,6 @@
 
 .method private notifyANR(Lcom/android/server/input/InputApplicationHandle;Lcom/android/server/input/InputWindowHandle;Ljava/lang/String;)J
     .locals 2
-    .param p1    # Lcom/android/server/input/InputApplicationHandle;
-    .param p2    # Lcom/android/server/input/InputWindowHandle;
-    .param p3    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/server/input/InputManagerService;->mWindowManagerCallbacks:Lcom/android/server/input/InputManagerService$WindowManagerCallbacks;
 
@@ -3071,7 +3009,6 @@
 
 .method private notifyConfigurationChanged(J)V
     .locals 1
-    .param p1    # J
 
     iget-object v0, p0, Lcom/android/server/input/InputManagerService;->mWindowManagerCallbacks:Lcom/android/server/input/InputManagerService$WindowManagerCallbacks;
 
@@ -3082,7 +3019,6 @@
 
 .method private notifyInputChannelBroken(Lcom/android/server/input/InputWindowHandle;)V
     .locals 1
-    .param p1    # Lcom/android/server/input/InputWindowHandle;
 
     iget-object v0, p0, Lcom/android/server/input/InputManagerService;->mWindowManagerCallbacks:Lcom/android/server/input/InputManagerService$WindowManagerCallbacks;
 
@@ -3093,7 +3029,6 @@
 
 .method private notifyInputDevicesChanged([Landroid/view/InputDevice;)V
     .locals 4
-    .param p1    # [Landroid/view/InputDevice;
 
     iget-object v1, p0, Lcom/android/server/input/InputManagerService;->mInputDevicesLock:Ljava/lang/Object;
 
@@ -3139,9 +3074,6 @@
 
 .method private notifySwitch(JII)V
     .locals 11
-    .param p1    # J
-    .param p3    # I
-    .param p4    # I
 
     const-string v8, "InputManager"
 
@@ -3442,7 +3374,6 @@
 
 .method private onInputDevicesChangedListenerDied(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/server/input/InputManagerService;->mInputDevicesLock:Ljava/lang/Object;
 
@@ -3819,8 +3750,6 @@
 
 .method private setDisplayViewport(ZLcom/android/server/display/DisplayViewport;)V
     .locals 15
-    .param p1    # Z
-    .param p2    # Lcom/android/server/display/DisplayViewport;
 
     iget v1, p0, Lcom/android/server/input/InputManagerService;->mPtr:I
 
@@ -3897,7 +3826,6 @@
 
 .method private setPointerSpeedUnchecked(I)V
     .locals 2
-    .param p1    # I
 
     const/4 v0, -0x7
 
@@ -3920,8 +3848,6 @@
 
 .method private setSuspendibleDevices(Ljava/lang/String;Z)Z
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const/4 v7, 0x1
 
@@ -4219,8 +4145,6 @@
 
 .method private sysfsWrite(Ljava/lang/String;I)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v4, 0x0
 
@@ -4357,7 +4281,6 @@
 
 .method private visitAllKeyboardLayouts(Lcom/android/server/input/InputManagerService$KeyboardLayoutVisitor;)V
     .locals 6
-    .param p1    # Lcom/android/server/input/InputManagerService$KeyboardLayoutVisitor;
 
     iget-object v4, p0, Lcom/android/server/input/InputManagerService;->mContext:Landroid/content/Context;
 
@@ -4408,8 +4331,6 @@
 
 .method private visitKeyboardLayout(Ljava/lang/String;Lcom/android/server/input/InputManagerService$KeyboardLayoutVisitor;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/server/input/InputManagerService$KeyboardLayoutVisitor;
 
     invoke-static {p1}, Lcom/android/server/input/InputManagerService$KeyboardLayoutDescriptor;->parse(Ljava/lang/String;)Lcom/android/server/input/InputManagerService$KeyboardLayoutDescriptor;
 
@@ -4456,10 +4377,6 @@
 
 .method private visitKeyboardLayoutsInPackage(Landroid/content/pm/PackageManager;Landroid/content/pm/ActivityInfo;Ljava/lang/String;Lcom/android/server/input/InputManagerService$KeyboardLayoutVisitor;)V
     .locals 18
-    .param p1    # Landroid/content/pm/PackageManager;
-    .param p2    # Landroid/content/pm/ActivityInfo;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Lcom/android/server/input/InputManagerService$KeyboardLayoutVisitor;
 
     move-object/from16 v0, p2
 
@@ -4867,8 +4784,6 @@
 # virtual methods
 .method public addKeyboardLayoutForInputDevice(Ljava/lang/String;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const-string v1, "android.permission.SET_KEYBOARD_LAYOUT"
 
@@ -4981,8 +4896,6 @@
 
 .method public cancelVibrate(ILandroid/os/IBinder;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/os/IBinder;
 
     iget-object v2, p0, Lcom/android/server/input/InputManagerService;->mVibratorLock:Ljava/lang/Object;
 
@@ -5047,9 +4960,6 @@
 
 .method public dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/server/input/InputManagerService;->mContext:Landroid/content/Context;
 
@@ -5123,8 +5033,6 @@
 
 .method final filterInputEvent(Landroid/view/InputEvent;I)Z
     .locals 2
-    .param p1    # Landroid/view/InputEvent;
-    .param p2    # I
 
     iget-object v1, p0, Lcom/android/server/input/InputManagerService;->mInputFilterLock:Ljava/lang/Object;
 
@@ -5183,7 +5091,6 @@
 
 .method public getCurrentKeyboardLayoutForInputDevice(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -5247,7 +5154,6 @@
 
 .method public getInputDevice(I)Landroid/view/InputDevice;
     .locals 5
-    .param p1    # I
 
     iget-object v4, p0, Lcom/android/server/input/InputManagerService;->mInputDevicesLock:Ljava/lang/Object;
 
@@ -5374,9 +5280,6 @@
 
 .method public getKeyCodeState(III)I
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     iget v0, p0, Lcom/android/server/input/InputManagerService;->mPtr:I
 
@@ -5389,7 +5292,6 @@
 
 .method public getKeyboardLayout(Ljava/lang/String;)Landroid/hardware/input/KeyboardLayout;
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -5482,7 +5384,6 @@
 
 .method public getKeyboardLayoutsForInputDevice(Ljava/lang/String;)[Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -5522,9 +5423,6 @@
 
 .method public getScanCodeState(III)I
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     iget v0, p0, Lcom/android/server/input/InputManagerService;->mPtr:I
 
@@ -5537,9 +5435,6 @@
 
 .method public getSwitchState(III)I
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     iget v0, p0, Lcom/android/server/input/InputManagerService;->mPtr:I
 
@@ -5552,8 +5447,6 @@
 
 .method public getWakeFlag(II)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget v0, p0, Lcom/android/server/input/InputManagerService;->mPtr:I
 
@@ -5566,10 +5459,6 @@
 
 .method public hasKeys(II[I[Z)Z
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [I
-    .param p4    # [Z
 
     if-nez p3, :cond_0
 
@@ -5611,8 +5500,6 @@
 
 .method public injectInputEvent(Landroid/view/InputEvent;I)Z
     .locals 13
-    .param p1    # Landroid/view/InputEvent;
-    .param p2    # I
 
     if-nez p1, :cond_0
 
@@ -5866,7 +5753,6 @@
 
 .method public monitorInput(Ljava/lang/String;)Landroid/view/InputChannel;
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const/4 v6, 0x1
 
@@ -5939,8 +5825,6 @@
 
 .method public monitorInputEx(Ljava/lang/String;Z)Landroid/view/InputChannel;
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const/4 v6, 0x0
 
@@ -6013,7 +5897,6 @@
 
 .method onVibratorTokenDied(Lcom/android/server/input/InputManagerService$VibratorToken;)V
     .locals 3
-    .param p1    # Lcom/android/server/input/InputManagerService$VibratorToken;
 
     iget-object v1, p0, Lcom/android/server/input/InputManagerService;->mVibratorLock:Ljava/lang/Object;
 
@@ -6047,7 +5930,6 @@
 
 .method public registerHoveringSpenCustomIcon(Landroid/graphics/Bitmap;)I
     .locals 1
-    .param p1    # Landroid/graphics/Bitmap;
 
     invoke-static {p1}, Landroid/view/PointerIcon;->setHoveringSpenCustomIcon(Landroid/graphics/Bitmap;)I
 
@@ -6058,8 +5940,6 @@
 
 .method public registerInputChannel(Landroid/view/InputChannel;Lcom/android/server/input/InputWindowHandle;)V
     .locals 2
-    .param p1    # Landroid/view/InputChannel;
-    .param p2    # Lcom/android/server/input/InputWindowHandle;
 
     if-nez p1, :cond_0
 
@@ -6083,7 +5963,6 @@
 
 .method public registerInputDevicesChangedListener(Landroid/hardware/input/IInputDevicesChangedListener;)V
     .locals 7
-    .param p1    # Landroid/hardware/input/IInputDevicesChangedListener;
 
     if-nez p1, :cond_0
 
@@ -6173,7 +6052,6 @@
 
 .method public registerMouseCustomIcon(Landroid/graphics/Bitmap;)I
     .locals 1
-    .param p1    # Landroid/graphics/Bitmap;
 
     invoke-static {p1}, Landroid/view/PointerIcon;->setMouseCustomIcon(Landroid/graphics/Bitmap;)I
 
@@ -6184,11 +6062,6 @@
 
 .method public reloadMousePointerIcon(IIILandroid/graphics/Point;I)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/graphics/Point;
-    .param p5    # I
 
     const-string v0, "PointerIcon"
 
@@ -6252,11 +6125,6 @@
 
 .method public reloadMousePointerIconForBitmap(IILandroid/graphics/Bitmap;Landroid/graphics/Point;I)I
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/graphics/Bitmap;
-    .param p4    # Landroid/graphics/Point;
-    .param p5    # I
 
     const-string v1, "PointerIcon"
 
@@ -6324,8 +6192,6 @@
 
 .method public reloadPointerIcon(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget v0, p0, Lcom/android/server/input/InputManagerService;->mPtr:I
 
@@ -6336,11 +6202,6 @@
 
 .method public reloadPointerIcon(IIILandroid/graphics/Point;I)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/graphics/Point;
-    .param p5    # I
 
     const-string v0, "PointerIcon"
 
@@ -6404,11 +6265,6 @@
 
 .method public reloadPointerIconForBitmap(IILandroid/graphics/Bitmap;Landroid/graphics/Point;I)I
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/graphics/Bitmap;
-    .param p4    # Landroid/graphics/Point;
-    .param p5    # I
 
     const-string v1, "PointerIcon"
 
@@ -6476,7 +6332,6 @@
 
 .method public removeHoveringSpenCustomIcon(I)V
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -6487,8 +6342,6 @@
 
 .method public removeKeyboardLayoutForInputDevice(Ljava/lang/String;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const-string v1, "android.permission.SET_KEYBOARD_LAYOUT"
 
@@ -6601,7 +6454,6 @@
 
 .method public removeMouseCustomIcon(I)V
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -6612,8 +6464,6 @@
 
 .method public setCurrentKeyboardLayoutForInputDevice(Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const-string v0, "android.permission.SET_KEYBOARD_LAYOUT"
 
@@ -6708,8 +6558,6 @@
 
 .method public setDisplayViewports(Lcom/android/server/display/DisplayViewport;Lcom/android/server/display/DisplayViewport;)V
     .locals 2
-    .param p1    # Lcom/android/server/display/DisplayViewport;
-    .param p2    # Lcom/android/server/display/DisplayViewport;
 
     const/4 v1, 0x1
 
@@ -6744,7 +6592,6 @@
 
 .method public setDoNotUseVelocity(Z)I
     .locals 1
-    .param p1    # Z
 
     iget v0, p0, Lcom/android/server/input/InputManagerService;->mPtr:I
 
@@ -6757,7 +6604,6 @@
 
 .method public setFlipCoverTouchEnabled(Z)V
     .locals 2
-    .param p1    # Z
 
     invoke-static {}, Landroid/os/Binder;->getCallingUid()I
 
@@ -6777,7 +6623,6 @@
 
 .method public setFocusedApplication(Lcom/android/server/input/InputApplicationHandle;)V
     .locals 1
-    .param p1    # Lcom/android/server/input/InputApplicationHandle;
 
     iget v0, p0, Lcom/android/server/input/InputManagerService;->mPtr:I
 
@@ -6788,8 +6633,6 @@
 
 .method public setInputDispatchMode(ZZ)V
     .locals 1
-    .param p1    # Z
-    .param p2    # Z
 
     iget v0, p0, Lcom/android/server/input/InputManagerService;->mPtr:I
 
@@ -6800,7 +6643,6 @@
 
 .method public setInputFilter(Landroid/view/IInputFilter;)V
     .locals 4
-    .param p1    # Landroid/view/IInputFilter;
 
     iget-object v2, p0, Lcom/android/server/input/InputManagerService;->mInputFilterLock:Ljava/lang/Object;
 
@@ -6907,7 +6749,6 @@
 
 .method public setInputWindows([Lcom/android/server/input/InputWindowHandle;)V
     .locals 1
-    .param p1    # [Lcom/android/server/input/InputWindowHandle;
 
     iget v0, p0, Lcom/android/server/input/InputManagerService;->mPtr:I
 
@@ -6918,7 +6759,6 @@
 
 .method public setLedState(Z)I
     .locals 1
-    .param p1    # Z
 
     iget v0, p0, Lcom/android/server/input/InputManagerService;->mPtr:I
 
@@ -6931,8 +6771,6 @@
 
 .method public setMonitorChannelFilter(Landroid/view/InputChannel;I)V
     .locals 2
-    .param p1    # Landroid/view/InputChannel;
-    .param p2    # I
 
     if-nez p1, :cond_0
 
@@ -6954,10 +6792,6 @@
 
 .method public setPointerBounds(FFFF)V
     .locals 2
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
 
     const-string v0, "com.samsung.android.permission.BIND_KMS"
 
@@ -6987,7 +6821,6 @@
 
 .method public setStartedShutdown(Z)V
     .locals 2
-    .param p1    # Z
 
     invoke-static {}, Landroid/os/Binder;->getCallingUid()I
 
@@ -7007,7 +6840,6 @@
 
 .method public setSystemUiVisibility(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Lcom/android/server/input/InputManagerService;->mPtr:I
 
@@ -7018,9 +6850,6 @@
 
 .method public setWakeKeyDynamically(Ljava/lang/String;ZLjava/lang/String;)V
     .locals 15
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # Ljava/lang/String;
 
     const-string v2, "WAKEKEY"
 
@@ -7348,7 +7177,6 @@
 
 .method public setWindowManagerCallbacks(Lcom/android/server/input/InputManagerService$WindowManagerCallbacks;)V
     .locals 0
-    .param p1    # Lcom/android/server/input/InputManagerService$WindowManagerCallbacks;
 
     iput-object p1, p0, Lcom/android/server/input/InputManagerService;->mWindowManagerCallbacks:Lcom/android/server/input/InputManagerService$WindowManagerCallbacks;
 
@@ -7357,7 +7185,6 @@
 
 .method public setWindowManagerService(Lcom/android/server/wm/WindowManagerService;)V
     .locals 0
-    .param p1    # Lcom/android/server/wm/WindowManagerService;
 
     iput-object p1, p0, Lcom/android/server/input/InputManagerService;->mWindowManagerService:Lcom/android/server/wm/WindowManagerService;
 
@@ -7366,7 +7193,6 @@
 
 .method public setWiredAccessoryCallbacks(Lcom/android/server/input/InputManagerService$WiredAccessoryCallbacks;)V
     .locals 0
-    .param p1    # Lcom/android/server/input/InputManagerService$WiredAccessoryCallbacks;
 
     iput-object p1, p0, Lcom/android/server/input/InputManagerService;->mWiredAccessoryCallbacks:Lcom/android/server/input/InputManagerService$WiredAccessoryCallbacks;
 
@@ -7457,8 +7283,6 @@
 
 .method public switchKeyboardLayout(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/server/input/InputManagerService;->mHandler:Lcom/android/server/input/InputManagerService$InputManagerHandler;
 
@@ -7572,8 +7396,6 @@
 
 .method public transferTouchFocus(Landroid/view/InputChannel;Landroid/view/InputChannel;)Z
     .locals 2
-    .param p1    # Landroid/view/InputChannel;
-    .param p2    # Landroid/view/InputChannel;
 
     if-nez p1, :cond_0
 
@@ -7608,7 +7430,6 @@
 
 .method public tryPointerSpeed(I)V
     .locals 2
-    .param p1    # I
 
     const-string v0, "android.permission.SET_POINTER_SPEED"
 
@@ -7654,7 +7475,6 @@
 
 .method public unregisterInputChannel(Landroid/view/InputChannel;)V
     .locals 2
-    .param p1    # Landroid/view/InputChannel;
 
     if-nez p1, :cond_0
 
@@ -7946,10 +7766,6 @@
 
 .method public vibrate(I[JILandroid/os/IBinder;)V
     .locals 5
-    .param p1    # I
-    .param p2    # [J
-    .param p3    # I
-    .param p4    # Landroid/os/IBinder;
 
     array-length v2, p2
 

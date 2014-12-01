@@ -22,7 +22,6 @@
 
 .method public constructor <init>(Z)V
     .locals 0
-    .param p1    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -77,7 +76,6 @@
 
 .method public block(J)Z
     .locals 6
-    .param p1    # J
 
     const-wide/16 v4, 0x0
 

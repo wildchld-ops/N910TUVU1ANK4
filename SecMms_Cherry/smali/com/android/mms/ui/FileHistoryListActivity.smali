@@ -89,8 +89,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/ui/FileHistoryListActivity;Z)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/FileHistoryListActivity;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/FileHistoryListActivity;->startAsyncQueryInternal(Z)V
 
@@ -99,7 +97,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/ui/FileHistoryListActivity;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/FileHistoryListActivity;
 
     invoke-direct {p0}, Lcom/android/mms/ui/FileHistoryListActivity;->startAsyncQuery()V
 
@@ -108,7 +105,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/ui/FileHistoryListActivity;)Lcom/android/mms/ui/FileHistoryListAdapter;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/FileHistoryListActivity;
 
     iget-object v0, p0, Lcom/android/mms/ui/FileHistoryListActivity;->mMsgListAdapter:Lcom/android/mms/ui/FileHistoryListAdapter;
 
@@ -117,7 +113,6 @@
 
 .method static synthetic access$300(Lcom/android/mms/ui/FileHistoryListActivity;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/FileHistoryListActivity;
 
     invoke-direct {p0}, Lcom/android/mms/ui/FileHistoryListActivity;->isFirstItemChanged()Z
 
@@ -128,7 +123,6 @@
 
 .method static synthetic access$400(Lcom/android/mms/ui/FileHistoryListActivity;)Landroid/widget/ListView;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/FileHistoryListActivity;
 
     iget-object v0, p0, Lcom/android/mms/ui/FileHistoryListActivity;->mListView:Landroid/widget/ListView;
 
@@ -137,7 +131,6 @@
 
 .method static synthetic access$500(Lcom/android/mms/ui/FileHistoryListActivity;)I
     .locals 1
-    .param p0    # Lcom/android/mms/ui/FileHistoryListActivity;
 
     iget v0, p0, Lcom/android/mms/ui/FileHistoryListActivity;->mVisibleOffset:I
 
@@ -146,7 +139,6 @@
 
 .method static synthetic access$600(Lcom/android/mms/ui/FileHistoryListActivity;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/FileHistoryListActivity;
 
     invoke-direct {p0}, Lcom/android/mms/ui/FileHistoryListActivity;->restoreListOffset()V
 
@@ -155,7 +147,6 @@
 
 .method static synthetic access$700(Lcom/android/mms/ui/FileHistoryListActivity;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/FileHistoryListActivity;
 
     iget-object v0, p0, Lcom/android/mms/ui/FileHistoryListActivity;->mContext:Landroid/content/Context;
 
@@ -277,7 +268,6 @@
 
 .method private startAsyncQueryDelayed(J)V
     .locals 2
-    .param p1    # J
 
     new-instance v0, Landroid/os/Handler;
 
@@ -294,7 +284,6 @@
 
 .method private startAsyncQueryInternal(Z)V
     .locals 9
-    .param p1    # Z
 
     :try_start_0
     invoke-static {}, Lcom/android/mms/MmsConfig;->isFreeMessageEnabled()Z
@@ -538,7 +527,6 @@
 
 .method public isMessageIndex(I)Z
     .locals 5
-    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -582,22 +570,18 @@
 
 .method public onCheckedChanged(Lcom/sec/android/touchwiz/widget/TwCompoundButton;Z)V
     .locals 0
-    .param p1    # Lcom/sec/android/touchwiz/widget/TwCompoundButton;
-    .param p2    # Z
 
     return-void
 .end method
 
 .method public onClick(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     return-void
 .end method
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 3
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -652,7 +636,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
@@ -776,8 +759,6 @@
 
 .method public onMenuItemSelected(ILandroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/MenuItem;
 
     invoke-interface {p2}, Landroid/view/MenuItem;->getItemId()I
 
@@ -809,7 +790,6 @@
 
 .method protected onNewIntent(Landroid/content/Intent;)V
     .locals 0
-    .param p1    # Landroid/content/Intent;
 
     invoke-direct {p0}, Lcom/android/mms/ui/FileHistoryListActivity;->startAsyncQuery()V
 
@@ -865,7 +845,6 @@
 
 .method public setCurrentListMode(I)I
     .locals 1
-    .param p1    # I
 
     iput p1, p0, Lcom/android/mms/ui/FileHistoryListActivity;->mMsgListMode:I
 
@@ -876,9 +855,6 @@
 
 .method public setListModeLayout(IZZ)V
     .locals 1
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # Z
 
     const/4 v0, 0x1
 
@@ -889,10 +865,6 @@
 
 .method public setListModeLayout(IZZZ)V
     .locals 3
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # Z
-    .param p4    # Z
 
     const-string v0, "Mms/FileHistoryListActivity"
 

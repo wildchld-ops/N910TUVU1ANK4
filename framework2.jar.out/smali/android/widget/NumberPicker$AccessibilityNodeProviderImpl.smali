@@ -63,10 +63,6 @@
 
 .method private createAccessibilityNodeInfoForNumberPicker(IIII)Landroid/view/accessibility/AccessibilityNodeInfo;
     .locals 9
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/4 v8, -0x1
 
@@ -291,12 +287,6 @@
 
 .method private createAccessibilityNodeInfoForVirtualButton(ILjava/lang/String;IIII)Landroid/view/accessibility/AccessibilityNodeInfo;
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     const/4 v5, 0x1
 
@@ -416,10 +406,6 @@
 
 .method private createAccessibiltyNodeInfoForInputText(IIII)Landroid/view/accessibility/AccessibilityNodeInfo;
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/4 v5, 0x2
 
@@ -496,8 +482,6 @@
 
 .method private findAccessibilityNodeInfosByTextInChild(Ljava/lang/String;ILjava/util/List;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -920,9 +904,6 @@
 
 .method private sendAccessibilityEventForVirtualButton(IILjava/lang/String;)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     iget-object v1, p0, Landroid/widget/NumberPicker$AccessibilityNodeProviderImpl;->this$0:Landroid/widget/NumberPicker;
 
@@ -996,7 +977,6 @@
 
 .method private sendAccessibilityEventForVirtualText(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Landroid/widget/NumberPicker$AccessibilityNodeProviderImpl;->this$0:Landroid/widget/NumberPicker;
 
@@ -1057,7 +1037,6 @@
 # virtual methods
 .method public createAccessibilityNodeInfo(I)Landroid/view/accessibility/AccessibilityNodeInfo;
     .locals 8
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -1383,8 +1362,6 @@
 
 .method public findAccessibilityNodeInfosByText(Ljava/lang/String;I)Ljava/util/List;
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1462,9 +1439,6 @@
 
 .method public performAction(IILandroid/os/Bundle;)Z
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/os/Bundle;
 
     const/high16 v5, 0x10000
 
@@ -1989,8 +1963,6 @@
 
 .method public sendAccessibilityEventForVirtualView(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     packed-switch p1, :pswitch_data_0
 

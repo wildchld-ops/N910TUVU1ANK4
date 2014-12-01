@@ -30,7 +30,6 @@
 # direct methods
 .method public constructor <init>(Lcom/samsung/android/multiwindow/IMultiWindowFacade;)V
     .locals 1
-    .param p1    # Lcom/samsung/android/multiwindow/IMultiWindowFacade;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -47,7 +46,6 @@
 # virtual methods
 .method public addTab(Landroid/os/IBinder;)V
     .locals 2
-    .param p1    # Landroid/os/IBinder;
 
     :try_start_0
     iget-object v1, p0, Lcom/samsung/android/multiwindow/MultiWindowFacade;->mService:Lcom/samsung/android/multiwindow/IMultiWindowFacade;
@@ -69,7 +67,6 @@
 
 .method public appMinimizingStarted(Landroid/os/IBinder;)V
     .locals 2
-    .param p1    # Landroid/os/IBinder;
 
     :try_start_0
     iget-object v1, p0, Lcom/samsung/android/multiwindow/MultiWindowFacade;->mService:Lcom/samsung/android/multiwindow/IMultiWindowFacade;
@@ -91,9 +88,6 @@
 
 .method public changeTaskToCascade(Landroid/graphics/Point;IZ)Z
     .locals 2
-    .param p1    # Landroid/graphics/Point;
-    .param p2    # I
-    .param p3    # Z
 
     :try_start_0
     iget-object v1, p0, Lcom/samsung/android/multiwindow/MultiWindowFacade;->mService:Lcom/samsung/android/multiwindow/IMultiWindowFacade;
@@ -119,7 +113,6 @@
 
 .method public changeTaskToFull(I)V
     .locals 2
-    .param p1    # I
 
     :try_start_0
     iget-object v1, p0, Lcom/samsung/android/multiwindow/MultiWindowFacade;->mService:Lcom/samsung/android/multiwindow/IMultiWindowFacade;
@@ -141,8 +134,6 @@
 
 .method public exchangeTopTaskToZone(II)Z
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     :try_start_0
     iget-object v1, p0, Lcom/samsung/android/multiwindow/MultiWindowFacade;->mService:Lcom/samsung/android/multiwindow/IMultiWindowFacade;
@@ -318,7 +309,6 @@
 
 .method public getFrontActivityMultiWindowStyle(I)Lcom/samsung/android/multiwindow/MultiWindowStyle;
     .locals 2
-    .param p1    # I
 
     :try_start_0
     iget-object v1, p0, Lcom/samsung/android/multiwindow/MultiWindowFacade;->mService:Lcom/samsung/android/multiwindow/IMultiWindowFacade;
@@ -369,7 +359,6 @@
 
 .method public getMultiWindowStyle(Landroid/os/IBinder;)Lcom/samsung/android/multiwindow/MultiWindowStyle;
     .locals 2
-    .param p1    # Landroid/os/IBinder;
 
     :try_start_0
     iget-object v1, p0, Lcom/samsung/android/multiwindow/MultiWindowFacade;->mService:Lcom/samsung/android/multiwindow/IMultiWindowFacade;
@@ -395,8 +384,6 @@
 
 .method public getRecentTaskSize(II)I
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     :try_start_0
     iget-object v1, p0, Lcom/samsung/android/multiwindow/MultiWindowFacade;->mService:Lcom/samsung/android/multiwindow/IMultiWindowFacade;
@@ -506,7 +493,6 @@
 
 .method public getStackBound(Landroid/os/IBinder;)Landroid/graphics/Rect;
     .locals 2
-    .param p1    # Landroid/os/IBinder;
 
     :try_start_0
     iget-object v1, p0, Lcom/samsung/android/multiwindow/MultiWindowFacade;->mService:Lcom/samsung/android/multiwindow/IMultiWindowFacade;
@@ -532,7 +518,6 @@
 
 .method public getStackBoxPosition(Landroid/os/IBinder;)Landroid/graphics/Point;
     .locals 2
-    .param p1    # Landroid/os/IBinder;
 
     :try_start_0
     iget-object v1, p0, Lcom/samsung/android/multiwindow/MultiWindowFacade;->mService:Lcom/samsung/android/multiwindow/IMultiWindowFacade;
@@ -558,7 +543,6 @@
 
 .method public getStackId(Landroid/os/IBinder;)I
     .locals 2
-    .param p1    # Landroid/os/IBinder;
 
     :try_start_0
     iget-object v1, p0, Lcom/samsung/android/multiwindow/MultiWindowFacade;->mService:Lcom/samsung/android/multiwindow/IMultiWindowFacade;
@@ -584,7 +568,6 @@
 
 .method public getStackOriginalBound(Landroid/os/IBinder;)Landroid/graphics/Rect;
     .locals 2
-    .param p1    # Landroid/os/IBinder;
 
     :try_start_0
     iget-object v1, p0, Lcom/samsung/android/multiwindow/MultiWindowFacade;->mService:Lcom/samsung/android/multiwindow/IMultiWindowFacade;
@@ -644,7 +627,6 @@
 
 .method public getZoneBounds(I)Landroid/graphics/Rect;
     .locals 2
-    .param p1    # I
 
     :try_start_0
     iget-object v1, p0, Lcom/samsung/android/multiwindow/MultiWindowFacade;->mService:Lcom/samsung/android/multiwindow/IMultiWindowFacade;
@@ -695,7 +677,6 @@
 
 .method public minimizeWindow(Landroid/os/IBinder;)V
     .locals 2
-    .param p1    # Landroid/os/IBinder;
 
     :try_start_0
     iget-object v1, p0, Lcom/samsung/android/multiwindow/MultiWindowFacade;->mService:Lcom/samsung/android/multiwindow/IMultiWindowFacade;
@@ -717,10 +698,6 @@
 
 .method public moveOnlySpecificTaskToFront(ILandroid/os/Bundle;ILcom/samsung/android/multiwindow/MultiWindowStyle;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
-    .param p3    # I
-    .param p4    # Lcom/samsung/android/multiwindow/MultiWindowStyle;
 
     :try_start_0
     iget-object v1, p0, Lcom/samsung/android/multiwindow/MultiWindowFacade;->mService:Lcom/samsung/android/multiwindow/IMultiWindowFacade;
@@ -767,8 +744,6 @@
 
 .method public removeAllTasks(Landroid/os/IBinder;I)V
     .locals 2
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # I
 
     :try_start_0
     iget-object v1, p0, Lcom/samsung/android/multiwindow/MultiWindowFacade;->mService:Lcom/samsung/android/multiwindow/IMultiWindowFacade;
@@ -790,7 +765,6 @@
 
 .method public removeTab(I)Z
     .locals 2
-    .param p1    # I
 
     :try_start_0
     iget-object v1, p0, Lcom/samsung/android/multiwindow/MultiWindowFacade;->mService:Lcom/samsung/android/multiwindow/IMultiWindowFacade;
@@ -816,7 +790,6 @@
 
 .method public requestSplitPreview(Z)V
     .locals 2
-    .param p1    # Z
 
     :try_start_0
     iget-object v1, p0, Lcom/samsung/android/multiwindow/MultiWindowFacade;->mService:Lcom/samsung/android/multiwindow/IMultiWindowFacade;
@@ -838,8 +811,6 @@
 
 .method public setAppVisibility(Landroid/os/IBinder;Z)V
     .locals 2
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Z
 
     :try_start_0
     iget-object v1, p0, Lcom/samsung/android/multiwindow/MultiWindowFacade;->mService:Lcom/samsung/android/multiwindow/IMultiWindowFacade;
@@ -861,7 +832,6 @@
 
 .method public setCenterBarPoint(Landroid/graphics/Point;)V
     .locals 2
-    .param p1    # Landroid/graphics/Point;
 
     :try_start_0
     iget-object v1, p0, Lcom/samsung/android/multiwindow/MultiWindowFacade;->mService:Lcom/samsung/android/multiwindow/IMultiWindowFacade;
@@ -883,7 +853,6 @@
 
 .method public setFocusAppByZone(I)V
     .locals 2
-    .param p1    # I
 
     :try_start_0
     iget-object v1, p0, Lcom/samsung/android/multiwindow/MultiWindowFacade;->mService:Lcom/samsung/android/multiwindow/IMultiWindowFacade;
@@ -905,8 +874,6 @@
 
 .method public setFocusedStack(IZ)V
     .locals 2
-    .param p1    # I
-    .param p2    # Z
 
     :try_start_0
     iget-object v1, p0, Lcom/samsung/android/multiwindow/MultiWindowFacade;->mService:Lcom/samsung/android/multiwindow/IMultiWindowFacade;
@@ -928,8 +895,6 @@
 
 .method public setMultiWindowStyle(Landroid/os/IBinder;Lcom/samsung/android/multiwindow/MultiWindowStyle;)V
     .locals 2
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Lcom/samsung/android/multiwindow/MultiWindowStyle;
 
     :try_start_0
     iget-object v1, p0, Lcom/samsung/android/multiwindow/MultiWindowFacade;->mService:Lcom/samsung/android/multiwindow/IMultiWindowFacade;
@@ -958,7 +923,6 @@
 
 .method public setMultiWindowTrayOpenState(Z)V
     .locals 2
-    .param p1    # Z
 
     :try_start_0
     iget-object v1, p0, Lcom/samsung/android/multiwindow/MultiWindowFacade;->mService:Lcom/samsung/android/multiwindow/IMultiWindowFacade;
@@ -980,7 +944,6 @@
 
 .method public setPreviewFullAppZone(I)V
     .locals 2
-    .param p1    # I
 
     :try_start_0
     iget-object v1, p0, Lcom/samsung/android/multiwindow/MultiWindowFacade;->mService:Lcom/samsung/android/multiwindow/IMultiWindowFacade;
@@ -1002,8 +965,6 @@
 
 .method public setStackBound(Landroid/os/IBinder;Landroid/graphics/Rect;)V
     .locals 2
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Landroid/graphics/Rect;
 
     :try_start_0
     iget-object v1, p0, Lcom/samsung/android/multiwindow/MultiWindowFacade;->mService:Lcom/samsung/android/multiwindow/IMultiWindowFacade;
@@ -1025,8 +986,6 @@
 
 .method public setStackBoundByStackId(ILandroid/graphics/Rect;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/graphics/Rect;
 
     :try_start_0
     iget-object v1, p0, Lcom/samsung/android/multiwindow/MultiWindowFacade;->mService:Lcom/samsung/android/multiwindow/IMultiWindowFacade;
@@ -1048,7 +1007,6 @@
 
 .method public updateIsolatedCenterPoint(Landroid/graphics/Point;)V
     .locals 2
-    .param p1    # Landroid/graphics/Point;
 
     :try_start_0
     iget-object v1, p0, Lcom/samsung/android/multiwindow/MultiWindowFacade;->mService:Lcom/samsung/android/multiwindow/IMultiWindowFacade;
@@ -1070,8 +1028,6 @@
 
 .method public updateMinimizeSize(Landroid/os/IBinder;[I)V
     .locals 2
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # [I
 
     :try_start_0
     iget-object v1, p0, Lcom/samsung/android/multiwindow/MultiWindowFacade;->mService:Lcom/samsung/android/multiwindow/IMultiWindowFacade;

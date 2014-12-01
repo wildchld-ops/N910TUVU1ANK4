@@ -51,7 +51,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->isShowing()Z
+    invoke-virtual {v0}, Landroid/app/ProgressDialog;->isShowing()Z
 
     move-result v0
 
@@ -64,7 +64,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->dismiss()V
+    invoke-virtual {v0}, Landroid/app/ProgressDialog;->dismiss()V
 
     iget-object v0, p0, Lcom/android/phone/PhotoringAgreement$1;->this$0:Lcom/android/phone/PhotoringAgreement;
 

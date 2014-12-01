@@ -40,8 +40,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/oem/AutoSmsReceiverService;Landroid/content/Intent;)V
     .locals 0
-    .param p0    # Lcom/android/mms/oem/AutoSmsReceiverService;
-    .param p1    # Landroid/content/Intent;
 
     invoke-direct {p0, p1}, Lcom/android/mms/oem/AutoSmsReceiverService;->handleAutoSmsSent(Landroid/content/Intent;)V
 
@@ -50,8 +48,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/oem/AutoSmsReceiverService;Landroid/content/Intent;)V
     .locals 0
-    .param p0    # Lcom/android/mms/oem/AutoSmsReceiverService;
-    .param p1    # Landroid/content/Intent;
 
     invoke-direct {p0, p1}, Lcom/android/mms/oem/AutoSmsReceiverService;->handleAutoSmsAlarm(Landroid/content/Intent;)V
 
@@ -60,7 +56,6 @@
 
 .method private handleAutoSmsAlarm(Landroid/content/Intent;)V
     .locals 5
-    .param p1    # Landroid/content/Intent;
 
     const-string v2, "AutoSmsReceiverService"
 
@@ -131,7 +126,6 @@
 
 .method private handleAutoSmsSent(Landroid/content/Intent;)V
     .locals 2
-    .param p1    # Landroid/content/Intent;
 
     const-string v0, "AutoSmsReceiverService"
 
@@ -163,7 +157,6 @@
 # virtual methods
 .method public onBind(Landroid/content/Intent;)Landroid/os/IBinder;
     .locals 1
-    .param p1    # Landroid/content/Intent;
 
     const/4 v0, 0x0
 
@@ -212,8 +205,6 @@
 
 .method public onStart(Landroid/content/Intent;I)V
     .locals 3
-    .param p1    # Landroid/content/Intent;
-    .param p2    # I
 
     if-eqz p1, :cond_0
 

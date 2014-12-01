@@ -169,8 +169,6 @@
 # direct methods
 .method constructor <init>(Landroid/content/Context;Landroid/os/Handler;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/Handler;
 
     const/4 v0, 0x0
 
@@ -230,8 +228,6 @@
 # virtual methods
 .method public getAssistIntent(Landroid/content/Context;Z)Landroid/content/Intent;
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Z
 
     invoke-static {}, Landroid/os/UserHandle;->myUserId()I
 
@@ -246,9 +242,6 @@
 
 .method public getAssistIntent(Landroid/content/Context;ZI)Landroid/content/Intent;
     .locals 9
-    .param p1    # Landroid/content/Context;
-    .param p2    # Z
-    .param p3    # I
 
     const/4 v5, 0x0
 
@@ -436,7 +429,6 @@
 
 .method public getSearchableInfo(Landroid/content/ComponentName;)Landroid/app/SearchableInfo;
     .locals 4
-    .param p1    # Landroid/content/ComponentName;
 
     :try_start_0
     sget-object v1, Landroid/app/SearchManager;->mService:Landroid/app/ISearchManager;
@@ -536,7 +528,6 @@
 
 .method public getSearchablesInInsightSearch(Z)Ljava/util/List;
     .locals 4
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(Z)",
@@ -591,8 +582,6 @@
 
 .method public getSuggestions(Landroid/app/SearchableInfo;Ljava/lang/String;)Landroid/database/Cursor;
     .locals 1
-    .param p1    # Landroid/app/SearchableInfo;
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, -0x1
 
@@ -605,9 +594,6 @@
 
 .method public getSuggestions(Landroid/app/SearchableInfo;Ljava/lang/String;I)Landroid/database/Cursor;
     .locals 9
-    .param p1    # Landroid/app/SearchableInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     const/4 v2, 0x0
 
@@ -784,7 +770,6 @@
 
 .method public onCancel(Landroid/content/DialogInterface;)V
     .locals 1
-    .param p1    # Landroid/content/DialogInterface;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -802,7 +787,6 @@
 
 .method public onDismiss(Landroid/content/DialogInterface;)V
     .locals 1
-    .param p1    # Landroid/content/DialogInterface;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -820,7 +804,6 @@
 
 .method public setOnCancelListener(Landroid/app/SearchManager$OnCancelListener;)V
     .locals 0
-    .param p1    # Landroid/app/SearchManager$OnCancelListener;
 
     iput-object p1, p0, Landroid/app/SearchManager;->mCancelListener:Landroid/app/SearchManager$OnCancelListener;
 
@@ -829,7 +812,6 @@
 
 .method public setOnDismissListener(Landroid/app/SearchManager$OnDismissListener;)V
     .locals 0
-    .param p1    # Landroid/app/SearchManager$OnDismissListener;
 
     iput-object p1, p0, Landroid/app/SearchManager;->mDismissListener:Landroid/app/SearchManager$OnDismissListener;
 
@@ -838,10 +820,6 @@
 
 .method startGlobalSearch(Ljava/lang/String;ZLandroid/os/Bundle;Landroid/graphics/Rect;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # Landroid/os/Bundle;
-    .param p4    # Landroid/graphics/Rect;
 
     invoke-virtual {p0}, Landroid/app/SearchManager;->getGlobalSearchActivity()Landroid/content/ComponentName;
 
@@ -969,11 +947,6 @@
 
 .method public startSearch(Ljava/lang/String;ZLandroid/content/ComponentName;Landroid/os/Bundle;Z)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # Landroid/content/ComponentName;
-    .param p4    # Landroid/os/Bundle;
-    .param p5    # Z
 
     const/4 v6, 0x0
 
@@ -996,12 +969,6 @@
 
 .method public startSearch(Ljava/lang/String;ZLandroid/content/ComponentName;Landroid/os/Bundle;ZLandroid/graphics/Rect;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
-    .param p3    # Landroid/content/ComponentName;
-    .param p4    # Landroid/os/Bundle;
-    .param p5    # Z
-    .param p6    # Landroid/graphics/Rect;
 
     if-eqz p5, :cond_0
 
@@ -1037,9 +1004,6 @@
 
 .method public triggerSearch(Ljava/lang/String;Landroid/content/ComponentName;Landroid/os/Bundle;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # Landroid/os/Bundle;
 
     const/4 v2, 0x0
 

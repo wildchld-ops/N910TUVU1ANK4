@@ -79,8 +79,6 @@
 # direct methods
 .method public constructor <init>(Lcom/sec/knox/container/EnterpriseContainerService;Landroid/os/Looper;Lcom/sec/knox/container/EnterpriseContainerService;)V
     .locals 1
-    .param p2    # Landroid/os/Looper;
-    .param p3    # Lcom/sec/knox/container/EnterpriseContainerService;
 
     iput-object p1, p0, Lcom/sec/knox/container/EnterpriseContainerService$ContainerServiceHandler;->this$0:Lcom/sec/knox/container/EnterpriseContainerService;
 
@@ -99,12 +97,6 @@
 # virtual methods
 .method public addContainer(IZIILcom/sec/knox/container/EnterpriseContainerObjectParam;Ljava/lang/String;)Z
     .locals 19
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Lcom/sec/knox/container/EnterpriseContainerObjectParam;
-    .param p6    # Ljava/lang/String;
 
     const/16 v18, 0x0
 
@@ -440,7 +432,6 @@
 
 .method public handleMessage(Landroid/os/Message;)V
     .locals 72
-    .param p1    # Landroid/os/Message;
 
     const-string v3, "EnterpriseContainerService"
 
@@ -4710,11 +4701,6 @@
 
 .method public mountSecondStorage(IIILjava/lang/String;Ljava/lang/String;)Z
     .locals 14
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
 
     const-string v2, "EnterpriseContainerService"
 
@@ -4926,7 +4912,6 @@
 
 .method public toString(I)V
     .locals 3
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 

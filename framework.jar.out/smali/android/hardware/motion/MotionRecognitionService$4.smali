@@ -21,8 +21,6 @@
 # direct methods
 .method constructor <init>(Landroid/hardware/motion/MotionRecognitionService;Landroid/content/Context;Landroid/os/Handler;)V
     .locals 0
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/os/Handler;
 
     iput-object p1, p0, Landroid/hardware/motion/MotionRecognitionService$4;->this$0:Landroid/hardware/motion/MotionRecognitionService;
 
@@ -35,8 +33,6 @@
 # virtual methods
 .method public onChangeMotionSettings(II)V
     .locals 8
-    .param p1    # I
-    .param p2    # I
 
     const/4 v7, 0x0
 

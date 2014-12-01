@@ -15,7 +15,6 @@
 # direct methods
 .method public constructor <init>(Lcom/samsung/android/cover/ISViewCoverBaseService;)V
     .locals 1
-    .param p1    # Lcom/samsung/android/cover/ISViewCoverBaseService;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -119,7 +118,6 @@
 
 .method public updateCoverState(Lcom/samsung/android/cover/CoverState;)V
     .locals 3
-    .param p1    # Lcom/samsung/android/cover/CoverState;
 
     :try_start_0
     iget-object v1, p0, Lcom/samsung/android/cover/SViewCoverBaseServiceWrapper;->mService:Lcom/samsung/android/cover/ISViewCoverBaseService;

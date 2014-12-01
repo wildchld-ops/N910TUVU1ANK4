@@ -42,8 +42,6 @@
 
 .method synthetic constructor <init>(Lcom/android/settings/ResetSettings;Lcom/android/settings/ResetSettings$1;)V
     .locals 0
-    .param p1    # Lcom/android/settings/ResetSettings;
-    .param p2    # Lcom/android/settings/ResetSettings$1;
 
     invoke-direct {p0, p1}, Lcom/android/settings/ResetSettings$ResetSettingsTask;-><init>(Lcom/android/settings/ResetSettings;)V
 
@@ -54,7 +52,6 @@
 # virtual methods
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [Landroid/content/Context;
 
@@ -67,7 +64,6 @@
 
 .method protected varargs doInBackground([Landroid/content/Context;)Ljava/lang/Void;
     .locals 2
-    .param p1    # [Landroid/content/Context;
 
     :try_start_0
     iget-object v0, p0, Lcom/android/settings/ResetSettings$ResetSettingsTask;->this$0:Lcom/android/settings/ResetSettings;
@@ -93,7 +89,6 @@
 
 .method protected bridge synthetic onPostExecute(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Ljava/lang/Void;
 
@@ -104,7 +99,6 @@
 
 .method protected onPostExecute(Ljava/lang/Void;)V
     .locals 1
-    .param p1    # Ljava/lang/Void;
 
     iget-object v0, p0, Lcom/android/settings/ResetSettings$ResetSettingsTask;->this$0:Lcom/android/settings/ResetSettings;
 

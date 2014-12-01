@@ -90,7 +90,6 @@
 
 .method private getNumberOfCBMessages(Landroid/content/Context;)Ljava/lang/String;
     .locals 8
-    .param p1    # Landroid/content/Context;
 
     const/4 v6, 0x0
 
@@ -170,7 +169,6 @@
 
 .method private getNumberOfInboxMessages(Landroid/content/Context;)Ljava/lang/String;
     .locals 8
-    .param p1    # Landroid/content/Context;
 
     const/4 v6, 0x0
 
@@ -250,7 +248,6 @@
 
 .method private getNumberOfOutBoxMessages(Landroid/content/Context;)Ljava/lang/String;
     .locals 8
-    .param p1    # Landroid/content/Context;
 
     const/4 v6, 0x0
 
@@ -330,7 +327,6 @@
 
 .method private getNumberOfSentMessages(Landroid/content/Context;)Ljava/lang/String;
     .locals 8
-    .param p1    # Landroid/content/Context;
 
     const/4 v6, 0x0
 
@@ -410,7 +406,6 @@
 
 .method private getNumberofMessageThreads(Landroid/content/Context;)Ljava/lang/String;
     .locals 8
-    .param p1    # Landroid/content/Context;
 
     const/4 v6, 0x0
 
@@ -490,7 +485,6 @@
 
 .method private getNumberofMessages(Landroid/content/Context;)Ljava/lang/String;
     .locals 9
-    .param p1    # Landroid/content/Context;
 
     const/4 v6, 0x0
 
@@ -651,8 +645,6 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     invoke-virtual {p2}, Landroid/content/Intent;->getExtras()Landroid/os/Bundle;
 

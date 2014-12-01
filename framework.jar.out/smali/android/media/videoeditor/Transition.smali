@@ -58,11 +58,6 @@
 
 .method protected constructor <init>(Ljava/lang/String;Landroid/media/videoeditor/MediaItem;Landroid/media/videoeditor/MediaItem;JI)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/media/videoeditor/MediaItem;
-    .param p3    # Landroid/media/videoeditor/MediaItem;
-    .param p4    # J
-    .param p6    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -167,7 +162,6 @@
 # virtual methods
 .method public equals(Ljava/lang/Object;)Z
     .locals 2
-    .param p1    # Ljava/lang/Object;
 
     instance-of v0, p1, Landroid/media/videoeditor/Transition;
 
@@ -1070,9 +1064,6 @@
 
 .method isEffectandOverlayOverlapping(Landroid/media/videoeditor/MediaItem;Landroid/media/videoeditor/MediaArtistNativeHelper$ClipSettings;I)Ljava/util/List;
     .locals 10
-    .param p1    # Landroid/media/videoeditor/MediaItem;
-    .param p2    # Landroid/media/videoeditor/MediaArtistNativeHelper$ClipSettings;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1232,7 +1223,6 @@
 
 .method public setDuration(J)V
     .locals 2
-    .param p1    # J
 
     invoke-virtual {p0}, Landroid/media/videoeditor/Transition;->getMaximumDuration()J
 
@@ -1266,7 +1256,6 @@
 
 .method setFilename(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/media/videoeditor/Transition;->mFilename:Ljava/lang/String;
 

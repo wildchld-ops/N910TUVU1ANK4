@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -45,8 +44,6 @@
 
 .method public clearGeoFence(Landroid/os/IBinder;Landroid/app/PendingIntent;)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Landroid/app/PendingIntent;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -119,7 +116,6 @@
 
 .method public clearGeoFenceUser(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -179,8 +175,6 @@
 
 .method public setGeoFence(Landroid/os/IBinder;Landroid/location/GeoFenceParams;)Z
     .locals 7
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Landroid/location/GeoFenceParams;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

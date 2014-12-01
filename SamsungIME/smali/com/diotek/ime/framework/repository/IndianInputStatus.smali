@@ -513,7 +513,6 @@
 
 .method public static declared-synchronized setCombinationAvailable(Z)V
     .locals 2
-    .param p0    # Z
 
     const-class v1, Lcom/diotek/ime/framework/repository/IndianInputStatus;
 
@@ -555,7 +554,6 @@
 
 .method public static declared-synchronized setLowEndFlag(Z)V
     .locals 2
-    .param p0    # Z
 
     const-class v1, Lcom/diotek/ime/framework/repository/IndianInputStatus;
 
@@ -597,7 +595,6 @@
 
 .method public static declared-synchronized setToggleIndianConsonantAvailable(Z)V
     .locals 2
-    .param p0    # Z
 
     const-class v1, Lcom/diotek/ime/framework/repository/IndianInputStatus;
 
@@ -639,7 +636,6 @@
 
 .method public static declared-synchronized setToggleIndianConsonantLongpressAvailable(Z)V
     .locals 2
-    .param p0    # Z
 
     const-class v1, Lcom/diotek/ime/framework/repository/IndianInputStatus;
 
@@ -681,7 +677,6 @@
 
 .method public static declared-synchronized setToggleIndianVoMatraAvailable(Z)V
     .locals 2
-    .param p0    # Z
 
     const-class v1, Lcom/diotek/ime/framework/repository/IndianInputStatus;
 
@@ -723,7 +718,6 @@
 
 .method public static declared-synchronized setVowelRowMax(I)V
     .locals 2
-    .param p0    # I
 
     const-class v1, Lcom/diotek/ime/framework/repository/IndianInputStatus;
 
@@ -765,7 +759,6 @@
 
 .method public static declared-synchronized setVowelRowShifted(Z)V
     .locals 2
-    .param p0    # Z
 
     const-class v1, Lcom/diotek/ime/framework/repository/IndianInputStatus;
 
@@ -807,7 +800,6 @@
 
 .method public static declared-synchronized setVowelRowState(I)V
     .locals 2
-    .param p0    # I
 
     const-class v1, Lcom/diotek/ime/framework/repository/IndianInputStatus;
 

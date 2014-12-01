@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Landroid/net/CaptivePortalTracker;Landroid/net/CaptivePortalTracker$1;)V
     .locals 0
-    .param p1    # Landroid/net/CaptivePortalTracker;
-    .param p2    # Landroid/net/CaptivePortalTracker$1;
 
     invoke-direct {p0, p1}, Landroid/net/CaptivePortalTracker$ActiveNetworkState;-><init>(Landroid/net/CaptivePortalTracker;)V
 
@@ -43,7 +41,6 @@
 # virtual methods
 .method public processMessage(Landroid/os/Message;)Z
     .locals 4
-    .param p1    # Landroid/os/Message;
 
     iget v1, p1, Landroid/os/Message;->what:I
 

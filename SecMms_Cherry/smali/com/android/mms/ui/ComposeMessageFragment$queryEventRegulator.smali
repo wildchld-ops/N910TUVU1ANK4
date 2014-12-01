@@ -31,7 +31,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/mms/ui/ComposeMessageFragment;Lcom/android/mms/ui/ComposeMessageFragment;)V
     .locals 2
-    .param p2    # Lcom/android/mms/ui/ComposeMessageFragment;
 
     iput-object p1, p0, Lcom/android/mms/ui/ComposeMessageFragment$queryEventRegulator;->this$0:Lcom/android/mms/ui/ComposeMessageFragment;
 
@@ -54,8 +53,6 @@
 # virtual methods
 .method public setMode(IZ)V
     .locals 1
-    .param p1    # I
-    .param p2    # Z
 
     iget-object v0, p0, Lcom/android/mms/ui/ComposeMessageFragment$queryEventRegulator;->mHandler:Lcom/android/mms/ui/ComposeMessageFragment$queryEventRegulator$queryHandler;
 

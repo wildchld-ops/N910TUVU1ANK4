@@ -57,7 +57,7 @@
 
     invoke-direct {p0}, Ljava/util/AbstractMap;-><init>()V
 
-    invoke-virtual {p1}, Lcom/google/common/collect/GenericMapMaker;->getRemovalListener()Lcom/google/common/collect/MapMaker$RemovalListener;
+    invoke-virtual {p1}, Lcom/google/common/collect/MapMaker;->getRemovalListener()Lcom/google/common/collect/MapMaker$RemovalListener;
 
     move-result-object v0
 

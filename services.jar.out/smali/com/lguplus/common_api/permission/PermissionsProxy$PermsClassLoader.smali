@@ -17,8 +17,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/ClassLoader;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/ClassLoader;
 
     invoke-direct {p0, p1, p2}, Ldalvik/system/PathClassLoader;-><init>(Ljava/lang/String;Ljava/lang/ClassLoader;)V
 
@@ -29,7 +27,6 @@
 # virtual methods
 .method public loadClass(Ljava/lang/String;)Ljava/lang/Class;
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

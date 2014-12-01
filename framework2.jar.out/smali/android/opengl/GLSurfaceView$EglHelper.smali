@@ -116,8 +116,6 @@
 
 .method public static formatEglError(Ljava/lang/String;I)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -150,9 +148,6 @@
 
 .method public static logEglErrorAsWarning(Ljava/lang/String;Ljava/lang/String;I)V
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-static {p1, p2}, Landroid/opengl/GLSurfaceView$EglHelper;->formatEglError(Ljava/lang/String;I)Ljava/lang/String;
 
@@ -165,7 +160,6 @@
 
 .method private throwEglException(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/opengl/GLSurfaceView$EglHelper;->mEgl:Ljavax/microedition/khronos/egl/EGL10;
 
@@ -180,8 +174,6 @@
 
 .method public static throwEglException(Ljava/lang/String;I)V
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
 
     invoke-static {p0, p1}, Landroid/opengl/GLSurfaceView$EglHelper;->formatEglError(Ljava/lang/String;I)Ljava/lang/String;
 

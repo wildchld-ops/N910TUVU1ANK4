@@ -75,8 +75,6 @@
 
 .method public constructor <init>(Lcom/android/mms/model/RegionModel;Ljava/util/ArrayList;Lorg/w3c/dom/smil/SMILDocument;)V
     .locals 19
-    .param p1    # Lcom/android/mms/model/RegionModel;
-    .param p3    # Lorg/w3c/dom/smil/SMILDocument;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -555,7 +553,6 @@
 # virtual methods
 .method public changeTo(I)V
     .locals 4
-    .param p1    # I
 
     const/4 v3, 0x1
 
@@ -672,7 +669,6 @@
 
 .method public findRegionById(Ljava/lang/String;)Lcom/android/mms/model/RegionModel;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const-string v2, "Image"
 
@@ -740,7 +736,6 @@
 
 .method public forceChangeTo(I)V
     .locals 4
-    .param p1    # I
 
     const/4 v3, 0x1
 
@@ -957,7 +952,6 @@
 
 .method protected registerModelChangedObserverInDescendants(Lcom/android/mms/model/IModelChangedObserver;)V
     .locals 1
-    .param p1    # Lcom/android/mms/model/IModelChangedObserver;
 
     iget-object v0, p0, Lcom/android/mms/model/LayoutModel;->mRootLayout:Lcom/android/mms/model/RegionModel;
 
@@ -991,7 +985,6 @@
 
 .method public setImageRegion(Lcom/android/mms/model/RegionModel;)V
     .locals 0
-    .param p1    # Lcom/android/mms/model/RegionModel;
 
     iput-object p1, p0, Lcom/android/mms/model/LayoutModel;->mImageRegion:Lcom/android/mms/model/RegionModel;
 
@@ -1000,7 +993,6 @@
 
 .method public setRootLayout(Lcom/android/mms/model/RegionModel;)V
     .locals 0
-    .param p1    # Lcom/android/mms/model/RegionModel;
 
     iput-object p1, p0, Lcom/android/mms/model/LayoutModel;->mRootLayout:Lcom/android/mms/model/RegionModel;
 
@@ -1009,7 +1001,6 @@
 
 .method public setTextRegion(Lcom/android/mms/model/RegionModel;)V
     .locals 0
-    .param p1    # Lcom/android/mms/model/RegionModel;
 
     iput-object p1, p0, Lcom/android/mms/model/LayoutModel;->mTextRegion:Lcom/android/mms/model/RegionModel;
 
@@ -1051,7 +1042,6 @@
 
 .method protected unregisterModelChangedObserverInDescendants(Lcom/android/mms/model/IModelChangedObserver;)V
     .locals 1
-    .param p1    # Lcom/android/mms/model/IModelChangedObserver;
 
     iget-object v0, p0, Lcom/android/mms/model/LayoutModel;->mRootLayout:Lcom/android/mms/model/RegionModel;
 

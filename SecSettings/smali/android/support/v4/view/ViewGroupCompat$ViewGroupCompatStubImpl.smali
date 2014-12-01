@@ -30,8 +30,6 @@
 # virtual methods
 .method public setMotionEventSplittingEnabled(Landroid/view/ViewGroup;Z)V
     .locals 0
-    .param p1    # Landroid/view/ViewGroup;
-    .param p2    # Z
 
     return-void
 .end method

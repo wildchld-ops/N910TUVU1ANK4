@@ -176,7 +176,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -383,7 +382,6 @@
 
 .method private static dumpHeap(Ljava/lang/String;)V
     .locals 6
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Exception;
@@ -1601,7 +1599,6 @@
 
 .method private lock(J)Z
     .locals 5
-    .param p1    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/InterruptedException;
@@ -1689,7 +1686,6 @@
 
 .method private parseAudioTrack(Lorg/xmlpull/v1/XmlPullParser;)Landroid/media/videoeditor/AudioTrack;
     .locals 20
-    .param p1    # Lorg/xmlpull/v1/XmlPullParser;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1887,8 +1883,6 @@
 
 .method private parseEffect(Lorg/xmlpull/v1/XmlPullParser;Landroid/media/videoeditor/MediaItem;)Landroid/media/videoeditor/Effect;
     .locals 20
-    .param p1    # Lorg/xmlpull/v1/XmlPullParser;
-    .param p2    # Landroid/media/videoeditor/MediaItem;
 
     const-string v2, ""
 
@@ -2185,7 +2179,6 @@
 
 .method private parseMediaItem(Lorg/xmlpull/v1/XmlPullParser;)Landroid/media/videoeditor/MediaItem;
     .locals 29
-    .param p1    # Lorg/xmlpull/v1/XmlPullParser;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -2460,8 +2453,6 @@
 
 .method private parseOverlay(Lorg/xmlpull/v1/XmlPullParser;Landroid/media/videoeditor/MediaItem;)Landroid/media/videoeditor/Overlay;
     .locals 17
-    .param p1    # Lorg/xmlpull/v1/XmlPullParser;
-    .param p2    # Landroid/media/videoeditor/MediaItem;
 
     const-string v2, ""
 
@@ -2662,7 +2653,6 @@
 
 .method private parseTransition(Lorg/xmlpull/v1/XmlPullParser;Ljava/util/List;)Landroid/media/videoeditor/Transition;
     .locals 25
-    .param p1    # Lorg/xmlpull/v1/XmlPullParser;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3049,7 +3039,6 @@
 
 .method private removeAdjacentTransitions(Landroid/media/videoeditor/MediaItem;)V
     .locals 4
-    .param p1    # Landroid/media/videoeditor/MediaItem;
 
     const/4 v3, 0x0
 
@@ -3114,8 +3103,6 @@
 
 .method private declared-synchronized removeMediaItem(Ljava/lang/String;Z)Landroid/media/videoeditor/MediaItem;
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     monitor-enter p0
 
@@ -3180,7 +3167,6 @@
 
 .method private removeTransitionAfter(I)V
     .locals 6
-    .param p1    # I
 
     const/4 v5, 0x0
 
@@ -3257,7 +3243,6 @@
 
 .method private removeTransitionBefore(I)V
     .locals 6
-    .param p1    # I
 
     const/4 v5, 0x0
 
@@ -3355,7 +3340,6 @@
 # virtual methods
 .method public declared-synchronized addAudioTrack(Landroid/media/videoeditor/AudioTrack;)V
     .locals 3
-    .param p1    # Landroid/media/videoeditor/AudioTrack;
 
     const/4 v2, 0x1
 
@@ -3484,7 +3468,6 @@
 
 .method public declared-synchronized addMediaItem(Landroid/media/videoeditor/MediaItem;)V
     .locals 4
-    .param p1    # Landroid/media/videoeditor/MediaItem;
 
     const/4 v3, 0x1
 
@@ -3594,7 +3577,6 @@
 
 .method public declared-synchronized addTransition(Landroid/media/videoeditor/Transition;)V
     .locals 6
-    .param p1    # Landroid/media/videoeditor/Transition;
 
     const/4 v5, -0x1
 
@@ -3759,7 +3741,6 @@
 
 .method public cancelExport(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/media/videoeditor/VideoEditorImpl;->mMANativeHelper:Landroid/media/videoeditor/MediaArtistNativeHelper;
 
@@ -3777,7 +3758,6 @@
 
 .method public clearSurface(Landroid/view/SurfaceHolder;)V
     .locals 3
-    .param p1    # Landroid/view/SurfaceHolder;
 
     if-nez p1, :cond_0
 
@@ -3843,12 +3823,6 @@
 
 .method public export(Ljava/lang/String;IIIILandroid/media/videoeditor/VideoEditor$ExportProgressListener;)V
     .locals 21
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Landroid/media/videoeditor/VideoEditor$ExportProgressListener;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -4260,10 +4234,6 @@
 
 .method public export(Ljava/lang/String;IILandroid/media/videoeditor/VideoEditor$ExportProgressListener;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/media/videoeditor/VideoEditor$ExportProgressListener;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -4291,7 +4261,6 @@
 
 .method public generatePreview(Landroid/media/videoeditor/VideoEditor$MediaProcessingProgressListener;)V
     .locals 6
-    .param p1    # Landroid/media/videoeditor/VideoEditor$MediaProcessingProgressListener;
 
     const/4 v1, 0x0
 
@@ -4444,7 +4413,6 @@
 
 .method public getAudioTrack(Ljava/lang/String;)Landroid/media/videoeditor/AudioTrack;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v2, p0, Landroid/media/videoeditor/VideoEditorImpl;->mAudioTracks:Ljava/util/List;
 
@@ -4496,7 +4464,6 @@
 
 .method public declared-synchronized getMediaItem(Ljava/lang/String;)Landroid/media/videoeditor/MediaItem;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -4568,7 +4535,6 @@
 
 .method public getTransition(Ljava/lang/String;)Landroid/media/videoeditor/Transition;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v2, p0, Landroid/media/videoeditor/VideoEditorImpl;->mTransitions:Ljava/util/List;
 
@@ -4610,8 +4576,6 @@
 
 .method public declared-synchronized insertAudioTrack(Landroid/media/videoeditor/AudioTrack;Ljava/lang/String;)V
     .locals 6
-    .param p1    # Landroid/media/videoeditor/AudioTrack;
-    .param p2    # Ljava/lang/String;
 
     const/4 v4, 0x1
 
@@ -4746,8 +4710,6 @@
 
 .method public declared-synchronized insertMediaItem(Landroid/media/videoeditor/MediaItem;Ljava/lang/String;)V
     .locals 6
-    .param p1    # Landroid/media/videoeditor/MediaItem;
-    .param p2    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -4921,8 +4883,6 @@
 
 .method public declared-synchronized moveAudioTrack(Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -4947,8 +4907,6 @@
 
 .method public declared-synchronized moveMediaItem(Ljava/lang/String;Ljava/lang/String;)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -5359,7 +5317,6 @@
 
 .method public declared-synchronized removeAudioTrack(Ljava/lang/String;)Landroid/media/videoeditor/AudioTrack;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -5420,7 +5377,6 @@
 
 .method public declared-synchronized removeMediaItem(Ljava/lang/String;)Landroid/media/videoeditor/MediaItem;
     .locals 9
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -5557,7 +5513,6 @@
 
 .method public declared-synchronized removeTransition(Ljava/lang/String;)Landroid/media/videoeditor/Transition;
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -5648,9 +5603,6 @@
 
 .method public renderPreviewFrame(Landroid/view/SurfaceHolder;JLandroid/media/videoeditor/VideoEditor$OverlayData;)J
     .locals 12
-    .param p1    # Landroid/view/SurfaceHolder;
-    .param p2    # J
-    .param p4    # Landroid/media/videoeditor/VideoEditor$OverlayData;
 
     if-nez p1, :cond_0
 
@@ -7952,7 +7904,6 @@
 
 .method public setAspectRatio(I)V
     .locals 8
-    .param p1    # I
 
     iput p1, p0, Landroid/media/videoeditor/VideoEditorImpl;->mAspectRatio:I
 
@@ -8038,12 +7989,6 @@
 
 .method public startPreview(Landroid/view/SurfaceHolder;JJZILandroid/media/videoeditor/VideoEditor$PreviewProgressListener;)V
     .locals 11
-    .param p1    # Landroid/view/SurfaceHolder;
-    .param p2    # J
-    .param p4    # J
-    .param p6    # Z
-    .param p7    # I
-    .param p8    # Landroid/media/videoeditor/VideoEditor$PreviewProgressListener;
 
     if-nez p1, :cond_0
 

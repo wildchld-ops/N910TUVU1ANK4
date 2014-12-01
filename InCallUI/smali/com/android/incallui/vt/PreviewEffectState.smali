@@ -114,7 +114,6 @@
 
 .method private log(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "PreviewEffectState"
 
@@ -125,8 +124,6 @@
 
 .method private log(Ljava/lang/String;Z)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const-string v0, "PreviewEffectState"
 
@@ -199,7 +196,6 @@
 
 .method protected setDualCameraEnable(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/incallui/vt/PreviewEffectState;->mIsDualCameraEnabled:Z
 
@@ -208,7 +204,6 @@
 
 .method protected setShowBackground(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/incallui/vt/PreviewEffectState;->mIsShowingBackground:Z
 
@@ -217,7 +212,6 @@
 
 .method protected setShowEffect(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/incallui/vt/PreviewEffectState;->mIsShowingEffect:Z
 
@@ -226,7 +220,6 @@
 
 .method protected setShowEmotion(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/incallui/vt/PreviewEffectState;->mIsShowingEmotion:Z
 
@@ -235,7 +228,6 @@
 
 .method protected setShowTheme(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/incallui/vt/PreviewEffectState;->mIsShowingTheme:Z
 

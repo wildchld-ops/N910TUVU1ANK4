@@ -179,7 +179,6 @@
 
 .method public constructor <init>(Landroid/hardware/camera2/impl/CameraMetadataNative;)V
     .locals 4
-    .param p1    # Landroid/hardware/camera2/impl/CameraMetadataNative;
 
     invoke-direct {p0}, Landroid/hardware/camera2/CameraMetadata;-><init>()V
 
@@ -384,7 +383,6 @@
 
 .method private static getEnumFromValue(Ljava/lang/Class;I)Ljava/lang/Enum;
     .locals 10
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -531,7 +529,6 @@
 
 .method private static getExpectedType(I)Ljava/lang/Class;
     .locals 3
-    .param p0    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -1079,7 +1076,6 @@
 
 .method private static getMarshaler(Ljava/lang/Class;I)Landroid/hardware/camera2/impl/MetadataMarshalClass;
     .locals 4
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -1148,7 +1144,6 @@
 
 .method public static getNativeType(I)I
     .locals 1
-    .param p0    # I
 
     invoke-static {p0}, Landroid/hardware/camera2/impl/CameraMetadataNative;->nativeGetTypeFromTag(I)I
 
@@ -1222,7 +1217,6 @@
 
 .method public static getTag(Ljava/lang/String;)I
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Landroid/hardware/camera2/impl/CameraMetadataNative;->nativeGetTagFromKey(Ljava/lang/String;)I
 
@@ -1233,7 +1227,6 @@
 
 .method private static getTypeSize(I)I
     .locals 3
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -1351,9 +1344,6 @@
 
 .method private static packArray(Ljava/lang/Object;Ljava/nio/ByteBuffer;Ljava/lang/Class;IZ)I
     .locals 5
-    .param p1    # Ljava/nio/ByteBuffer;
-    .param p3    # I
-    .param p4    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -1400,9 +1390,6 @@
 
 .method private static packClass(Ljava/lang/Object;Ljava/nio/ByteBuffer;Ljava/lang/Class;IZ)I
     .locals 5
-    .param p1    # Ljava/nio/ByteBuffer;
-    .param p3    # I
-    .param p4    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -1450,9 +1437,6 @@
 
 .method private static packEnum(Ljava/lang/Enum;Ljava/nio/ByteBuffer;Ljava/lang/Class;IZ)I
     .locals 2
-    .param p1    # Ljava/nio/ByteBuffer;
-    .param p3    # I
-    .param p4    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -1483,9 +1467,6 @@
 
 .method private static packSingle(Ljava/lang/Object;Ljava/nio/ByteBuffer;Ljava/lang/Class;IZ)I
     .locals 2
-    .param p1    # Ljava/nio/ByteBuffer;
-    .param p3    # I
-    .param p4    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -1555,9 +1536,6 @@
 
 .method private static packSingleNative(Ljava/lang/Object;Ljava/nio/ByteBuffer;Ljava/lang/Class;IZ)I
     .locals 7
-    .param p1    # Ljava/nio/ByteBuffer;
-    .param p3    # I
-    .param p4    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -1771,7 +1749,6 @@
 
 .method public static registerEnumValues(Ljava/lang/Class;[I)V
     .locals 3
-    .param p1    # [I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -1896,7 +1873,6 @@
 
 .method private setAvailableFormats([I)Z
     .locals 5
-    .param p1    # [I
 
     move-object v0, p1
 
@@ -2054,8 +2030,6 @@
 
 .method private static unpackArray(Ljava/nio/ByteBuffer;Ljava/lang/Class;I)Ljava/lang/Object;
     .locals 17
-    .param p0    # Ljava/nio/ByteBuffer;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -2264,8 +2238,6 @@
 
 .method private static unpackClass(Ljava/nio/ByteBuffer;Ljava/lang/Class;I)Ljava/lang/Object;
     .locals 4
-    .param p0    # Ljava/nio/ByteBuffer;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -2317,8 +2289,6 @@
 
 .method private static unpackEnum(Ljava/nio/ByteBuffer;Ljava/lang/Class;I)Ljava/lang/Enum;
     .locals 2
-    .param p0    # Ljava/nio/ByteBuffer;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -2351,8 +2321,6 @@
 
 .method private static unpackSingle(Ljava/nio/ByteBuffer;Ljava/lang/Class;I)Ljava/lang/Object;
     .locals 2
-    .param p0    # Ljava/nio/ByteBuffer;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -2418,8 +2386,6 @@
 
 .method private static unpackSingleNative(Ljava/nio/ByteBuffer;Ljava/lang/Class;I)Ljava/lang/Object;
     .locals 7
-    .param p0    # Ljava/nio/ByteBuffer;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -2727,7 +2693,6 @@
 
 .method public readFromParcel(Landroid/os/Parcel;)V
     .locals 0
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0, p1}, Landroid/hardware/camera2/impl/CameraMetadataNative;->nativeReadFromParcel(Landroid/os/Parcel;)V
 
@@ -2736,7 +2701,6 @@
 
 .method public readValues(I)[B
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/hardware/camera2/impl/CameraMetadataNative;->nativeReadValues(I)[B
 
@@ -2774,7 +2738,6 @@
 
 .method public swap(Landroid/hardware/camera2/impl/CameraMetadataNative;)V
     .locals 0
-    .param p1    # Landroid/hardware/camera2/impl/CameraMetadataNative;
 
     invoke-direct {p0, p1}, Landroid/hardware/camera2/impl/CameraMetadataNative;->nativeSwap(Landroid/hardware/camera2/impl/CameraMetadataNative;)V
 
@@ -2783,8 +2746,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 0
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     invoke-direct {p0, p1}, Landroid/hardware/camera2/impl/CameraMetadataNative;->nativeWriteToParcel(Landroid/os/Parcel;)V
 
@@ -2793,8 +2754,6 @@
 
 .method public writeValues(I[B)V
     .locals 0
-    .param p1    # I
-    .param p2    # [B
 
     invoke-direct {p0, p1, p2}, Landroid/hardware/camera2/impl/CameraMetadataNative;->nativeWriteValues(I[B)V
 

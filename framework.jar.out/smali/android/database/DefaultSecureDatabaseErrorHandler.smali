@@ -63,7 +63,6 @@
 
 .method private backupDatabaseFile(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const-string v2, ":memory:"
 
@@ -179,7 +178,6 @@
 # virtual methods
 .method public onCorruption(Landroid/database/sqlite/SQLiteDatabase;)V
     .locals 8
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
 
     const-string v5, "DefaultSecureDatabaseErrorHandler"
 

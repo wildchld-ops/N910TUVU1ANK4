@@ -102,10 +102,6 @@
 
 .method public Init_PhysicsEngine(IIII)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iget v0, p0, Lcom/sec/android/visualeffect/brilliantring/JniBrilliantRingRenderer;->mNativeJNI:I
 
@@ -134,8 +130,6 @@
 
 .method public SetTexture(Ljava/lang/String;Landroid/graphics/Bitmap;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/graphics/Bitmap;
 
     const-string v0, "BrilliantRingRenderer JNI"
 
@@ -152,8 +146,6 @@
 
 .method public SetTextureColor(Ljava/lang/String;Landroid/graphics/Bitmap;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/graphics/Bitmap;
 
     const-string v0, "BrilliantRingRenderer JNI"
 
@@ -182,8 +174,6 @@
 
 .method public onCustomEvent(IF)V
     .locals 1
-    .param p1    # I
-    .param p2    # F
 
     iget v0, p0, Lcom/sec/android/visualeffect/brilliantring/JniBrilliantRingRenderer;->mNativeJNI:I
 
@@ -194,7 +184,6 @@
 
 .method public onKeyEvent(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Lcom/sec/android/visualeffect/brilliantring/JniBrilliantRingRenderer;->mNativeJNI:I
 
@@ -205,10 +194,6 @@
 
 .method public onSensorEvent(IFFF)V
     .locals 1
-    .param p1    # I
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
 
     iget v0, p0, Lcom/sec/android/visualeffect/brilliantring/JniBrilliantRingRenderer;->mNativeJNI:I
 
@@ -219,8 +204,6 @@
 
 .method public onSurfaceChangedEvent(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget v0, p0, Lcom/sec/android/visualeffect/brilliantring/JniBrilliantRingRenderer;->mNativeJNI:I
 
@@ -231,11 +214,6 @@
 
 .method public onTouchEvent(III[I[I)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # [I
-    .param p5    # [I
 
     iget v0, p0, Lcom/sec/android/visualeffect/brilliantring/JniBrilliantRingRenderer;->mNativeJNI:I
 

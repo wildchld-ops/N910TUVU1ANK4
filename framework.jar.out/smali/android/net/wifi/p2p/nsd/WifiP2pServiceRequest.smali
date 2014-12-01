@@ -44,10 +44,6 @@
 
 .method private constructor <init>(IIILjava/lang/String;)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -64,11 +60,6 @@
 
 .method synthetic constructor <init>(IIILjava/lang/String;Landroid/net/wifi/p2p/nsd/WifiP2pServiceRequest$1;)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
-    .param p5    # Landroid/net/wifi/p2p/nsd/WifiP2pServiceRequest$1;
 
     invoke-direct {p0, p1, p2, p3, p4}, Landroid/net/wifi/p2p/nsd/WifiP2pServiceRequest;-><init>(IIILjava/lang/String;)V
 
@@ -77,8 +68,6 @@
 
 .method protected constructor <init>(ILjava/lang/String;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -113,7 +102,6 @@
 
 .method public static newInstance(I)Landroid/net/wifi/p2p/nsd/WifiP2pServiceRequest;
     .locals 2
-    .param p0    # I
 
     new-instance v0, Landroid/net/wifi/p2p/nsd/WifiP2pServiceRequest;
 
@@ -126,8 +114,6 @@
 
 .method public static newInstance(ILjava/lang/String;)Landroid/net/wifi/p2p/nsd/WifiP2pServiceRequest;
     .locals 1
-    .param p0    # I
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Landroid/net/wifi/p2p/nsd/WifiP2pServiceRequest;
 
@@ -138,7 +124,6 @@
 
 .method private validateQuery(Ljava/lang/String;)V
     .locals 9
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_1
 
@@ -301,7 +286,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 5
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x1
 
@@ -535,7 +519,6 @@
 
 .method public setTransactionId(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/net/wifi/p2p/nsd/WifiP2pServiceRequest;->mTransId:I
 
@@ -544,8 +527,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget v0, p0, Landroid/net/wifi/p2p/nsd/WifiP2pServiceRequest;->mProtocolType:I
 

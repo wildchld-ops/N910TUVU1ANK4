@@ -52,8 +52,6 @@
 
 .method public constructor <init>(Landroid/content/ComponentName;Z)V
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Z
 
     const/4 v2, 0x0
 
@@ -88,9 +86,6 @@
 
 .method protected constructor <init>(Lcom/android/launcher2/BaseItem$Type;Landroid/content/ComponentName;Z)V
     .locals 3
-    .param p1    # Lcom/android/launcher2/BaseItem$Type;
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # Z
 
     const/4 v2, 0x0
 
@@ -123,8 +118,6 @@
 
 .method public static dumpApplicationInfoList(Ljava/lang/String;Ljava/lang/String;Ljava/util/ArrayList;)V
     .locals 5
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -351,7 +344,6 @@
 
 .method public editIsDirty(Z)Z
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/launcher2/AppItem;->mSavedFolder:Lcom/android/launcher2/AppFolderItem;
 
@@ -661,7 +653,6 @@
 
 .method public parentDestroyed(Lcom/android/launcher2/AppFolderItem;)V
     .locals 3
-    .param p1    # Lcom/android/launcher2/AppFolderItem;
 
     const/4 v2, 0x0
 
@@ -733,7 +724,6 @@
 
 .method public setPosition(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/launcher2/AppItem;->mFolder:Lcom/android/launcher2/AppFolderItem;
 

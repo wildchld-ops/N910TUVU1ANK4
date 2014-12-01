@@ -76,9 +76,6 @@
 
 .method public constructor <init>(III)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -97,7 +94,6 @@
 
 .method public constructor <init>(Landroid/net/wifi/p2p/WifiP2pWfdInfo;)V
     .locals 1
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pWfdInfo;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -307,7 +303,6 @@
 
 .method public readFromParcel(Landroid/os/Parcel;)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
 
     const/4 v0, 0x1
 
@@ -348,7 +343,6 @@
 
 .method public setContentProtection(Z)V
     .locals 1
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -373,7 +367,6 @@
 
 .method public setControlPort(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/net/wifi/p2p/WifiP2pWfdInfo;->mCtrlPort:I
 
@@ -382,7 +375,6 @@
 
 .method public setCoupledSinkSupportAtSink(Z)V
     .locals 1
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -407,7 +399,6 @@
 
 .method public setCoupledSinkSupportAtSource(Z)V
     .locals 1
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -432,7 +423,6 @@
 
 .method public setDeviceType(I)Z
     .locals 1
-    .param p1    # I
 
     if-ltz p1, :cond_0
 
@@ -459,7 +449,6 @@
 
 .method public setMaxThroughput(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/net/wifi/p2p/WifiP2pWfdInfo;->mMaxThroughput:I
 
@@ -468,7 +457,6 @@
 
 .method public setSessionAvailable(Z)V
     .locals 1
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -499,7 +487,6 @@
 
 .method public setWfdEnabled(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/net/wifi/p2p/WifiP2pWfdInfo;->mWfdEnabled:Z
 
@@ -562,8 +549,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-boolean v0, p0, Landroid/net/wifi/p2p/WifiP2pWfdInfo;->mWfdEnabled:Z
 

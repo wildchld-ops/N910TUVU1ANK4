@@ -32,10 +32,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/BackupManagerService$PerformFullRestoreTask;Landroid/app/IBackupAgent;Lcom/android/server/BackupManagerService$FileMetadata;Landroid/os/ParcelFileDescriptor;I)V
     .locals 1
-    .param p2    # Landroid/app/IBackupAgent;
-    .param p3    # Lcom/android/server/BackupManagerService$FileMetadata;
-    .param p4    # Landroid/os/ParcelFileDescriptor;
-    .param p5    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

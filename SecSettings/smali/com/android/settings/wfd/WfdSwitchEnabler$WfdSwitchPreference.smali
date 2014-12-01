@@ -38,8 +38,6 @@
 
 .method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
     .locals 2
-    .param p1    # Landroid/preference/Preference;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p2, Ljava/lang/Boolean;
 
@@ -58,7 +56,6 @@
 
 .method public setChecked(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/settings/wfd/WfdSwitchEnabler$WfdSwitchPreference;->mSwitchPreference:Landroid/preference/SwitchPreference;
 
@@ -69,7 +66,6 @@
 
 .method public setEnabled(Z)Z
     .locals 1
-    .param p1    # Z
 
     invoke-super {p0, p1}, Lcom/android/settings/wfd/WfdSwitchEnabler$WfdCommonSwitch;->setEnabled(Z)Z
 

@@ -48,8 +48,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/launcher2/LauncherApplication;Lcom/android/launcher2/PkgResCache;)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/LauncherApplication;
-    .param p2    # Lcom/android/launcher2/PkgResCache;
 
     const/4 v0, 0x0
 
@@ -66,7 +64,6 @@
 
 .method static synthetic access$000(Lcom/android/launcher2/LauncherExModel;)Lcom/android/launcher2/LauncherExModel$LoaderTask;
     .locals 1
-    .param p0    # Lcom/android/launcher2/LauncherExModel;
 
     iget-object v0, p0, Lcom/android/launcher2/LauncherExModel;->mLoaderTask:Lcom/android/launcher2/LauncherExModel$LoaderTask;
 
@@ -75,8 +72,6 @@
 
 .method static synthetic access$002(Lcom/android/launcher2/LauncherExModel;Lcom/android/launcher2/LauncherExModel$LoaderTask;)Lcom/android/launcher2/LauncherExModel$LoaderTask;
     .locals 0
-    .param p0    # Lcom/android/launcher2/LauncherExModel;
-    .param p1    # Lcom/android/launcher2/LauncherExModel$LoaderTask;
 
     iput-object p1, p0, Lcom/android/launcher2/LauncherExModel;->mLoaderTask:Lcom/android/launcher2/LauncherExModel$LoaderTask;
 
@@ -85,8 +80,6 @@
 
 .method static synthetic access$1102(Lcom/android/launcher2/LauncherExModel;Z)Z
     .locals 0
-    .param p0    # Lcom/android/launcher2/LauncherExModel;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/launcher2/LauncherExModel;->mIsCurrentFestivalMode:Z
 
@@ -95,7 +88,6 @@
 
 .method static synthetic access$1200(Ljava/lang/Runnable;)V
     .locals 0
-    .param p0    # Ljava/lang/Runnable;
 
     invoke-static {p0}, Lcom/android/launcher2/LauncherExModel;->runOnWorkerThread(Ljava/lang/Runnable;)V
 
@@ -104,7 +96,6 @@
 
 .method static synthetic access$400(Lcom/android/launcher2/LauncherExModel;)Z
     .locals 1
-    .param p0    # Lcom/android/launcher2/LauncherExModel;
 
     iget-boolean v0, p0, Lcom/android/launcher2/LauncherExModel;->mIsLoaderTaskRunning:Z
 
@@ -113,8 +104,6 @@
 
 .method static synthetic access$402(Lcom/android/launcher2/LauncherExModel;Z)Z
     .locals 0
-    .param p0    # Lcom/android/launcher2/LauncherExModel;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/launcher2/LauncherExModel;->mIsLoaderTaskRunning:Z
 
@@ -123,7 +112,6 @@
 
 .method static synthetic access$500(Lcom/android/launcher2/LauncherExModel;)Z
     .locals 1
-    .param p0    # Lcom/android/launcher2/LauncherExModel;
 
     iget-boolean v0, p0, Lcom/android/launcher2/LauncherExModel;->mRefreshRequiredInSecretModeChange:Z
 
@@ -132,8 +120,6 @@
 
 .method static synthetic access$502(Lcom/android/launcher2/LauncherExModel;Z)Z
     .locals 0
-    .param p0    # Lcom/android/launcher2/LauncherExModel;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/launcher2/LauncherExModel;->mRefreshRequiredInSecretModeChange:Z
 
@@ -142,8 +128,6 @@
 
 .method static synthetic access$700(Lcom/android/launcher2/LauncherExModel;Ljava/lang/Runnable;)V
     .locals 0
-    .param p0    # Lcom/android/launcher2/LauncherExModel;
-    .param p1    # Ljava/lang/Runnable;
 
     invoke-direct {p0, p1}, Lcom/android/launcher2/LauncherExModel;->runOnMainThread(Ljava/lang/Runnable;)V
 
@@ -152,7 +136,6 @@
 
 .method private runOnMainThread(Ljava/lang/Runnable;)V
     .locals 2
-    .param p1    # Ljava/lang/Runnable;
 
     sget-object v0, Lcom/android/launcher2/LauncherExModel;->sWorkerThread:Landroid/os/HandlerThread;
 
@@ -181,7 +164,6 @@
 
 .method private static runOnWorkerThread(Ljava/lang/Runnable;)V
     .locals 2
-    .param p0    # Ljava/lang/Runnable;
 
     sget-object v0, Lcom/android/launcher2/LauncherExModel;->sWorkerThread:Landroid/os/HandlerThread;
 
@@ -210,9 +192,6 @@
 
 .method private startLoader(ZZZ)V
     .locals 6
-    .param p1    # Z
-    .param p2    # Z
-    .param p3    # Z
 
     const/4 v1, 0x1
 
@@ -233,11 +212,6 @@
 
 .method private startLoader(ZZZZZ)V
     .locals 7
-    .param p1    # Z
-    .param p2    # Z
-    .param p3    # Z
-    .param p4    # Z
-    .param p5    # Z
 
     const-string v0, "LauncherExModel"
 
@@ -476,8 +450,6 @@
 
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 13
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     const/4 v12, 0x0
 
@@ -869,7 +841,6 @@
 
 .method public startLoader(Z)V
     .locals 6
-    .param p1    # Z
 
     const/4 v2, 0x0
 
@@ -890,7 +861,6 @@
 
 .method public startLoaderFromBackground(Z)V
     .locals 7
-    .param p1    # Z
 
     const/4 v1, 0x0
 
@@ -968,7 +938,6 @@
 
 .method public updateHomeDataBase(Z)V
     .locals 13
-    .param p1    # Z
 
     invoke-static {}, Lcom/android/launcher2/LauncherApplication;->getSecretScreenCount()I
 

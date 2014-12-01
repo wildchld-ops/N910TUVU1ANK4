@@ -25,8 +25,6 @@
 # direct methods
 .method constructor <init>(Landroid/webkitsec/HTML5Audio;Landroid/os/Looper;Landroid/webkitsec/WebViewClassic;)V
     .locals 2
-    .param p2    # Landroid/os/Looper;
-    .param p3    # Landroid/webkitsec/WebViewClassic;
 
     iput-object p1, p0, Landroid/webkitsec/HTML5Audio$IsPrivateBrowsingEnabledGetter;->this$0:Landroid/webkitsec/HTML5Audio;
 
@@ -47,8 +45,6 @@
 
 .method static synthetic access$102(Landroid/webkitsec/HTML5Audio$IsPrivateBrowsingEnabledGetter;Z)Z
     .locals 0
-    .param p0    # Landroid/webkitsec/HTML5Audio$IsPrivateBrowsingEnabledGetter;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/webkitsec/HTML5Audio$IsPrivateBrowsingEnabledGetter;->mIsPrivateBrowsingEnabled:Z
 
@@ -57,8 +53,6 @@
 
 .method static synthetic access$202(Landroid/webkitsec/HTML5Audio$IsPrivateBrowsingEnabledGetter;Z)Z
     .locals 0
-    .param p0    # Landroid/webkitsec/HTML5Audio$IsPrivateBrowsingEnabledGetter;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/webkitsec/HTML5Audio$IsPrivateBrowsingEnabledGetter;->mIsReady:Z
 

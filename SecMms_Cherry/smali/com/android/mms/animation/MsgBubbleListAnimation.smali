@@ -50,8 +50,6 @@
 
 .method private createHideCheckBoxAnimation(Landroid/view/View;Z)Landroid/view/animation/AnimationSet;
     .locals 8
-    .param p1    # Landroid/view/View;
-    .param p2    # Z
 
     const-wide/16 v6, 0x12c
 
@@ -102,11 +100,6 @@
 
 .method private hideCheckBoxAnimation(Landroid/view/View;Landroid/view/View;ZZI)V
     .locals 4
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/View;
-    .param p3    # Z
-    .param p4    # Z
-    .param p5    # I
 
     invoke-direct {p0, p2, p4}, Lcom/android/mms/animation/MsgBubbleListAnimation;->createHideCheckBoxAnimation(Landroid/view/View;Z)Landroid/view/animation/AnimationSet;
 

@@ -232,7 +232,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/PreloadAppUpdateList;)Lcom/android/settings/PreloadAppUpdateList$AppListAdapter;
     .locals 1
-    .param p0    # Lcom/android/settings/PreloadAppUpdateList;
 
     iget-object v0, p0, Lcom/android/settings/PreloadAppUpdateList;->mAppListAdapter:Lcom/android/settings/PreloadAppUpdateList$AppListAdapter;
 
@@ -241,7 +240,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/PreloadAppUpdateList;)Ljava/util/LinkedHashMap;
     .locals 1
-    .param p0    # Lcom/android/settings/PreloadAppUpdateList;
 
     iget-object v0, p0, Lcom/android/settings/PreloadAppUpdateList;->mTempCheckedApplist:Ljava/util/LinkedHashMap;
 
@@ -250,7 +248,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/PreloadAppUpdateList;)I
     .locals 1
-    .param p0    # Lcom/android/settings/PreloadAppUpdateList;
 
     iget v0, p0, Lcom/android/settings/PreloadAppUpdateList;->setAllOn:I
 
@@ -259,8 +256,6 @@
 
 .method static synthetic access$202(Lcom/android/settings/PreloadAppUpdateList;I)I
     .locals 0
-    .param p0    # Lcom/android/settings/PreloadAppUpdateList;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/settings/PreloadAppUpdateList;->setAllOn:I
 
@@ -269,7 +264,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/PreloadAppUpdateList;)Lcom/sec/android/touchwiz/widget/TwCheckBox;
     .locals 1
-    .param p0    # Lcom/android/settings/PreloadAppUpdateList;
 
     iget-object v0, p0, Lcom/android/settings/PreloadAppUpdateList;->allCheck:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
@@ -278,7 +272,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/PreloadAppUpdateList;)Landroid/content/pm/PackageManager;
     .locals 1
-    .param p0    # Lcom/android/settings/PreloadAppUpdateList;
 
     iget-object v0, p0, Lcom/android/settings/PreloadAppUpdateList;->mPm:Landroid/content/pm/PackageManager;
 
@@ -365,7 +358,6 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 20
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super/range {p0 .. p1}, Landroid/app/ListFragment;->onActivityCreated(Landroid/os/Bundle;)V
 
@@ -1006,8 +998,6 @@
 
 .method public onCheckedChanged(Lcom/sec/android/touchwiz/widget/TwCompoundButton;Z)V
     .locals 4
-    .param p1    # Lcom/sec/android/touchwiz/widget/TwCompoundButton;
-    .param p2    # Z
 
     iget v2, p0, Lcom/android/settings/PreloadAppUpdateList;->setAllOn:I
 
@@ -1101,7 +1091,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/ListFragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -1110,8 +1099,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
     .locals 2
-    .param p1    # Landroid/view/Menu;
-    .param p2    # Landroid/view/MenuInflater;
 
     invoke-super {p0, p1, p2}, Landroid/app/ListFragment;->onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
 
@@ -1143,9 +1130,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 2
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const v0, 0x7f0401e5
 
@@ -1160,7 +1144,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 2
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v0, 0x1
 

@@ -36,8 +36,6 @@
 # direct methods
 .method constructor <init>(Lcom/sec/epdg/smartwifi/SmartWifiAdapter;Landroid/os/Handler;Lcom/sec/epdg/smartwifi/SmartWifiAdapter$ResultRunnable;)V
     .locals 1
-    .param p2    # Landroid/os/Handler;
-    .param p3    # Lcom/sec/epdg/smartwifi/SmartWifiAdapter$ResultRunnable;
 
     iput-object p1, p0, Lcom/sec/epdg/smartwifi/SmartWifiAdapter$SmartWifiTask;->this$0:Lcom/sec/epdg/smartwifi/SmartWifiAdapter;
 
@@ -58,7 +56,6 @@
 # virtual methods
 .method protected varargs doInBackground([Ljava/util/concurrent/Callable;)Ljava/lang/Boolean;
     .locals 7
-    .param p1    # [Ljava/util/concurrent/Callable;
 
     move-object v0, p1
 
@@ -123,7 +120,6 @@
 
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [Ljava/util/concurrent/Callable;
 
@@ -136,7 +132,6 @@
 
 .method protected onPostExecute(Ljava/lang/Boolean;)V
     .locals 2
-    .param p1    # Ljava/lang/Boolean;
 
     const-string v0, "[SMARTWIFI]"
 
@@ -188,7 +183,6 @@
 
 .method protected bridge synthetic onPostExecute(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Ljava/lang/Boolean;
 

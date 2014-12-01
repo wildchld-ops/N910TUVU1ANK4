@@ -73,7 +73,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -84,8 +83,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const v0, 0x1010070
 
@@ -96,9 +93,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 9
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v8, -0x1
 
@@ -203,8 +197,6 @@
 
 .method static synthetic access$002(Landroid/widget/Gallery;Z)Z
     .locals 0
-    .param p0    # Landroid/widget/Gallery;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/widget/Gallery;->mSuppressSelectionChanged:Z
 
@@ -213,7 +205,6 @@
 
 .method static synthetic access$1000(Landroid/widget/Gallery;)I
     .locals 1
-    .param p0    # Landroid/widget/Gallery;
 
     iget v0, p0, Landroid/view/View;->mPaddingRight:I
 
@@ -222,7 +213,6 @@
 
 .method static synthetic access$1100(Landroid/widget/Gallery;)I
     .locals 1
-    .param p0    # Landroid/widget/Gallery;
 
     iget v0, p0, Landroid/view/View;->mPaddingRight:I
 
@@ -231,7 +221,6 @@
 
 .method static synthetic access$1200(Landroid/widget/Gallery;)I
     .locals 1
-    .param p0    # Landroid/widget/Gallery;
 
     iget v0, p0, Landroid/view/View;->mPaddingLeft:I
 
@@ -240,7 +229,6 @@
 
 .method static synthetic access$300(Landroid/widget/Gallery;)V
     .locals 0
-    .param p0    # Landroid/widget/Gallery;
 
     invoke-direct {p0}, Landroid/widget/Gallery;->dispatchUnpress()V
 
@@ -249,7 +237,6 @@
 
 .method static synthetic access$400(Landroid/widget/Gallery;)I
     .locals 1
-    .param p0    # Landroid/widget/Gallery;
 
     iget v0, p0, Landroid/widget/Gallery;->mAnimationDuration:I
 
@@ -258,7 +245,6 @@
 
 .method static synthetic access$500(Landroid/widget/Gallery;)V
     .locals 0
-    .param p0    # Landroid/widget/Gallery;
 
     invoke-direct {p0}, Landroid/widget/Gallery;->scrollIntoSlots()V
 
@@ -267,7 +253,6 @@
 
 .method static synthetic access$600(Landroid/widget/Gallery;)Z
     .locals 1
-    .param p0    # Landroid/widget/Gallery;
 
     iget-boolean v0, p0, Landroid/widget/Gallery;->mShouldStopFling:Z
 
@@ -276,8 +261,6 @@
 
 .method static synthetic access$602(Landroid/widget/Gallery;Z)Z
     .locals 0
-    .param p0    # Landroid/widget/Gallery;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/widget/Gallery;->mShouldStopFling:Z
 
@@ -286,8 +269,6 @@
 
 .method static synthetic access$702(Landroid/widget/Gallery;I)I
     .locals 0
-    .param p0    # Landroid/widget/Gallery;
-    .param p1    # I
 
     iput p1, p0, Landroid/widget/Gallery;->mDownTouchPosition:I
 
@@ -296,7 +277,6 @@
 
 .method static synthetic access$800(Landroid/widget/Gallery;)Z
     .locals 1
-    .param p0    # Landroid/widget/Gallery;
 
     iget-boolean v0, p0, Landroid/widget/Gallery;->mIsRtl:Z
 
@@ -305,7 +285,6 @@
 
 .method static synthetic access$900(Landroid/widget/Gallery;)I
     .locals 1
-    .param p0    # Landroid/widget/Gallery;
 
     iget v0, p0, Landroid/view/View;->mPaddingLeft:I
 
@@ -314,8 +293,6 @@
 
 .method private calculateTop(Landroid/view/View;Z)I
     .locals 6
-    .param p1    # Landroid/view/View;
-    .param p2    # Z
 
     if-eqz p2, :cond_0
 
@@ -409,7 +386,6 @@
 
 .method private detachOffScreenChildren(Z)V
     .locals 11
-    .param p1    # Z
 
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getChildCount()I
 
@@ -558,9 +534,6 @@
 
 .method private dispatchLongPress(Landroid/view/View;IJ)Z
     .locals 7
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # J
 
     const/4 v6, 0x0
 
@@ -608,7 +581,6 @@
 
 .method private dispatchPress(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     const/4 v0, 0x1
 
@@ -1026,7 +998,6 @@
 
 .method private static getCenterOfView(Landroid/view/View;)I
     .locals 2
-    .param p0    # Landroid/view/View;
 
     invoke-virtual {p0}, Landroid/view/View;->getLeft()I
 
@@ -1045,10 +1016,6 @@
 
 .method private makeAndAddView(IIIZ)Landroid/view/View;
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Z
 
     iget-boolean v3, p0, Landroid/widget/AdapterView;->mDataChanged:Z
 
@@ -1113,7 +1080,6 @@
 
 .method private offsetChildrenLeftAndRight(I)V
     .locals 2
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getChildCount()I
 
@@ -1205,7 +1171,6 @@
 
 .method private scrollToChild(I)Z
     .locals 4
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
@@ -1356,10 +1321,6 @@
 
 .method private setUpChild(Landroid/view/View;IIZ)V
     .locals 11
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Z
 
     invoke-virtual {p1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
@@ -1533,7 +1494,6 @@
 # virtual methods
 .method protected checkLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Z
     .locals 1
-    .param p1    # Landroid/view/ViewGroup$LayoutParams;
 
     instance-of v0, p1, Landroid/widget/Gallery$LayoutParams;
 
@@ -1566,7 +1526,6 @@
 
 .method public dispatchKeyEvent(Landroid/view/KeyEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x0
 
@@ -1579,7 +1538,6 @@
 
 .method protected dispatchSetPressed(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Landroid/widget/Gallery;->mSelectedChild:Landroid/view/View;
 
@@ -1595,7 +1553,6 @@
 
 .method public dispatchSetSelected(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
@@ -1614,7 +1571,6 @@
 
 .method public generateLayoutParams(Landroid/util/AttributeSet;)Landroid/view/ViewGroup$LayoutParams;
     .locals 2
-    .param p1    # Landroid/util/AttributeSet;
 
     new-instance v0, Landroid/widget/Gallery$LayoutParams;
 
@@ -1629,7 +1585,6 @@
 
 .method protected generateLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Landroid/view/ViewGroup$LayoutParams;
     .locals 1
-    .param p1    # Landroid/view/ViewGroup$LayoutParams;
 
     new-instance v0, Landroid/widget/Gallery$LayoutParams;
 
@@ -1640,8 +1595,6 @@
 
 .method protected getChildDrawingOrder(II)I
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     iget v1, p0, Landroid/widget/AdapterView;->mSelectedPosition:I
 
@@ -1674,7 +1627,6 @@
 
 .method getChildHeight(Landroid/view/View;)I
     .locals 1
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p1}, Landroid/view/View;->getMeasuredHeight()I
 
@@ -1685,8 +1637,6 @@
 
 .method protected getChildStaticTransformation(Landroid/view/View;Landroid/view/animation/Transformation;)Z
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/animation/Transformation;
 
     invoke-virtual {p2}, Landroid/view/animation/Transformation;->clear()V
 
@@ -1719,8 +1669,6 @@
 
 .method getLimitedMotionScrollAmount(ZI)I
     .locals 7
-    .param p1    # Z
-    .param p2    # I
 
     const/4 v5, 0x0
 
@@ -1793,8 +1741,6 @@
 
 .method layout(IZ)V
     .locals 7
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v6, 0x0
 
@@ -1993,7 +1939,6 @@
 
 .method public onDown(Landroid/view/MotionEvent;)Z
     .locals 3
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v2, 0x1
 
@@ -2049,10 +1994,6 @@
 
 .method public onFling(Landroid/view/MotionEvent;Landroid/view/MotionEvent;FF)Z
     .locals 3
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # Landroid/view/MotionEvent;
-    .param p3    # F
-    .param p4    # F
 
     const/4 v2, 0x1
 
@@ -2084,9 +2025,6 @@
 
 .method protected onFocusChanged(ZILandroid/graphics/Rect;)V
     .locals 2
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # Landroid/graphics/Rect;
 
     invoke-super {p0, p1, p2, p3}, Landroid/view/View;->onFocusChanged(ZILandroid/graphics/Rect;)V
 
@@ -2112,7 +2050,6 @@
 
 .method public onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
     .locals 1
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
 
     invoke-super {p0, p1}, Landroid/widget/AbsSpinner;->onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
 
@@ -2129,7 +2066,6 @@
 
 .method public onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
     .locals 2
-    .param p1    # Landroid/view/accessibility/AccessibilityNodeInfo;
 
     const/4 v0, 0x1
 
@@ -2202,8 +2138,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x1
 
@@ -2260,8 +2194,6 @@
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     invoke-static {p1}, Landroid/view/KeyEvent;->isConfirmKey(I)Z
 
@@ -2335,11 +2267,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 2
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     const/4 v1, 0x0
 
@@ -2358,7 +2285,6 @@
 
 .method public onLongPress(Landroid/view/MotionEvent;)V
     .locals 4
-    .param p1    # Landroid/view/MotionEvent;
 
     iget v2, p0, Landroid/widget/Gallery;->mDownTouchPosition:I
 
@@ -2389,10 +2315,6 @@
 
 .method public onScroll(Landroid/view/MotionEvent;Landroid/view/MotionEvent;FF)Z
     .locals 5
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # Landroid/view/MotionEvent;
-    .param p3    # F
-    .param p4    # F
 
     const/4 v4, 0x0
 
@@ -2447,14 +2369,12 @@
 
 .method public onShowPress(Landroid/view/MotionEvent;)V
     .locals 0
-    .param p1    # Landroid/view/MotionEvent;
 
     return-void
 .end method
 
 .method public onSingleTapUp(Landroid/view/MotionEvent;)Z
     .locals 4
-    .param p1    # Landroid/view/MotionEvent;
 
     iget v0, p0, Landroid/widget/Gallery;->mDownTouchPosition:I
 
@@ -2507,7 +2427,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 3
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-object v2, p0, Landroid/widget/Gallery;->mGestureDetector:Landroid/view/GestureDetector;
 
@@ -2565,8 +2484,6 @@
 
 .method public performAccessibilityAction(ILandroid/os/Bundle;)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     const/4 v1, 0x0
 
@@ -2673,7 +2590,6 @@
 
 .method public setAnimationDuration(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/widget/Gallery;->mAnimationDuration:I
 
@@ -2682,7 +2598,6 @@
 
 .method public setCallbackDuringFling(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/widget/Gallery;->mShouldCallbackDuringFling:Z
 
@@ -2691,7 +2606,6 @@
 
 .method public setCallbackOnUnselectedItemClick(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/widget/Gallery;->mShouldCallbackOnUnselectedItemClick:Z
 
@@ -2700,7 +2614,6 @@
 
 .method public setGravity(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/widget/Gallery;->mGravity:I
 
@@ -2716,7 +2629,6 @@
 
 .method setSelectedPositionInt(I)V
     .locals 0
-    .param p1    # I
 
     invoke-super {p0, p1}, Landroid/widget/AdapterView;->setSelectedPositionInt(I)V
 
@@ -2727,7 +2639,6 @@
 
 .method public setSpacing(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/widget/Gallery;->mSpacing:I
 
@@ -2736,7 +2647,6 @@
 
 .method public setUnselectedAlpha(F)V
     .locals 0
-    .param p1    # F
 
     iput p1, p0, Landroid/widget/Gallery;->mUnselectedAlpha:F
 
@@ -2785,7 +2695,6 @@
 
 .method public showContextMenuForChild(Landroid/view/View;)Z
     .locals 4
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p0, p1}, Landroid/widget/AdapterView;->getPositionForView(Landroid/view/View;)I
 
@@ -2814,7 +2723,6 @@
 
 .method trackMotionScroll(I)V
     .locals 8
-    .param p1    # I
 
     const/4 v6, 0x0
 

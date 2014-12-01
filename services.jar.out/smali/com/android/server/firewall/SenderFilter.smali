@@ -106,8 +106,6 @@
 
 .method static isPrivilegedApp(II)Z
     .locals 6
-    .param p0    # I
-    .param p1    # I
 
     const/4 v2, 0x1
 

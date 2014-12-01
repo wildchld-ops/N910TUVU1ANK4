@@ -99,7 +99,6 @@
 
 .method public final onBind(Landroid/content/Intent;)Landroid/os/IBinder;
     .locals 1
-    .param p1    # Landroid/content/Intent;
 
     iget-object v0, p0, Landroid/nfc/cardemulation/HostApduService;->mMessenger:Landroid/os/Messenger;
 
@@ -118,7 +117,6 @@
 
 .method public final sendResponseApdu([B)V
     .locals 5
-    .param p1    # [B
 
     const/4 v3, 0x0
 

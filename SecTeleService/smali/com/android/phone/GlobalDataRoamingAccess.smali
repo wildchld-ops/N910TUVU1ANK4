@@ -413,7 +413,7 @@
 
     const v0, 0x7f040043
 
-    invoke-virtual {p0, v0}, Landroid/preference/DialogPreference;->setDialogLayoutResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/GlobalDataRoamingAccess;->setDialogLayoutResource(I)V
 
     invoke-super {p0}, Landroid/preference/DialogPreference;->onCreateDialogView()Landroid/view/View;
 

@@ -74,7 +74,7 @@
         }
     .end annotation
 
-    invoke-virtual {p0}, Ljava/lang/ref/Reference;->clear()V
+    invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$SoftValueReference;->clear()V
 
     return-void
 .end method
@@ -95,7 +95,7 @@
 
     new-instance v0, Lcom/google/common/collect/MapMakerInternalMap$SoftValueReference;
 
-    invoke-virtual {p0}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
+    invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$SoftValueReference;->get()Ljava/lang/Object;
 
     move-result-object v1
 
@@ -135,7 +135,7 @@
         }
     .end annotation
 
-    invoke-virtual {p0}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
+    invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$SoftValueReference;->get()Ljava/lang/Object;
 
     move-result-object v0
 

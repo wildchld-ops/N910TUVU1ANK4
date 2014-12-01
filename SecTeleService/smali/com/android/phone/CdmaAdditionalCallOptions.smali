@@ -156,7 +156,7 @@
     .locals 1
     .param p0    # Lcom/android/phone/CdmaAdditionalCallOptions;
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/CdmaAdditionalCallOptions;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -167,7 +167,7 @@
     .locals 1
     .param p0    # Lcom/android/phone/CdmaAdditionalCallOptions;
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/CdmaAdditionalCallOptions;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -187,7 +187,7 @@
     .locals 1
     .param p0    # Lcom/android/phone/CdmaAdditionalCallOptions;
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/CdmaAdditionalCallOptions;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -198,7 +198,7 @@
     .locals 1
     .param p0    # Lcom/android/phone/CdmaAdditionalCallOptions;
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/CdmaAdditionalCallOptions;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -209,7 +209,7 @@
     .locals 1
     .param p0    # Lcom/android/phone/CdmaAdditionalCallOptions;
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/CdmaAdditionalCallOptions;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -266,7 +266,7 @@
     .locals 1
     .param p0    # Lcom/android/phone/CdmaAdditionalCallOptions;
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/CdmaAdditionalCallOptions;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -334,7 +334,7 @@
     .locals 1
     .param p0    # Lcom/android/phone/CdmaAdditionalCallOptions;
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/CdmaAdditionalCallOptions;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -365,7 +365,7 @@
     .locals 1
     .param p0    # Lcom/android/phone/CdmaAdditionalCallOptions;
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/CdmaAdditionalCallOptions;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -376,7 +376,7 @@
     .locals 1
     .param p0    # Lcom/android/phone/CdmaAdditionalCallOptions;
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/CdmaAdditionalCallOptions;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -387,7 +387,7 @@
     .locals 1
     .param p0    # Lcom/android/phone/CdmaAdditionalCallOptions;
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/CdmaAdditionalCallOptions;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -398,7 +398,7 @@
     .locals 1
     .param p0    # Lcom/android/phone/CdmaAdditionalCallOptions;
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/CdmaAdditionalCallOptions;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -443,7 +443,7 @@
     :cond_0
     iget v0, p0, Lcom/android/phone/CdmaAdditionalCallOptions;->mPrevBusyDialog:I
 
-    invoke-virtual {p0, v0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->removeDialog(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/CdmaAdditionalCallOptions;->removeDialog(I)V
 
     return-void
 .end method
@@ -455,7 +455,7 @@
 
     invoke-direct {p0, v0}, Lcom/android/phone/CdmaAdditionalCallOptions;->setAppState(Lcom/android/phone/CdmaAdditionalCallOptions$AppState;)V
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/CdmaAdditionalCallOptions;->finish()V
 
     return-void
 .end method
@@ -464,7 +464,7 @@
     .locals 3
     .param p1    # Ljava/lang/String;
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/CdmaAdditionalCallOptions;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -608,7 +608,7 @@
 
     const v1, 0x7f0904f1
 
-    invoke-virtual {p0, v1}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v1}, Lcom/android/phone/CdmaAdditionalCallOptions;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -668,7 +668,7 @@
     :cond_0
     iget-object v2, p0, Lcom/android/phone/CdmaAdditionalCallOptions;->mVoicePrivacy:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v2, v3}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v2, v3}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     :goto_0
     return-void
@@ -698,7 +698,7 @@
     const/4 v2, 0x1
 
     :goto_1
-    invoke-virtual {v4, v2}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+    invoke-virtual {v4, v2}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     iget-object v2, p0, Lcom/android/phone/CdmaAdditionalCallOptions;->mPhone:Lcom/android/internal/telephony/Phone;
 
@@ -986,14 +986,14 @@
 
     const/16 v0, 0xc8
 
-    invoke-virtual {p0, v0}, Lcom/android/phone/TimeConsumingPreferenceActivity;->showDialog(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/CdmaAdditionalCallOptions;->showDialog(I)V
 
     goto :goto_1
 
     :sswitch_1
     const/16 v0, 0x320
 
-    invoke-virtual {p0, v0}, Lcom/android/phone/TimeConsumingPreferenceActivity;->showDialog(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/CdmaAdditionalCallOptions;->showDialog(I)V
 
     goto :goto_1
 
@@ -1002,7 +1002,7 @@
 
     const/16 v0, 0x12c
 
-    invoke-virtual {p0, v0}, Lcom/android/phone/TimeConsumingPreferenceActivity;->showDialog(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/CdmaAdditionalCallOptions;->showDialog(I)V
 
     goto :goto_1
 
@@ -1038,7 +1038,7 @@
 
     iget-object v1, p0, Lcom/android/phone/CdmaAdditionalCallOptions;->mAppState:Lcom/android/phone/CdmaAdditionalCallOptions$AppState;
 
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    invoke-virtual {v1}, Lcom/android/phone/CdmaAdditionalCallOptions$AppState;->ordinal()I
 
     move-result v1
 
@@ -1106,7 +1106,7 @@
 
     const/16 v0, 0x384
 
-    invoke-virtual {p0, v0}, Lcom/android/phone/TimeConsumingPreferenceActivity;->showDialog(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/CdmaAdditionalCallOptions;->showDialog(I)V
 
     goto :goto_2
 
@@ -1117,7 +1117,7 @@
 
     const/16 v0, 0x64
 
-    invoke-virtual {p0, v0}, Lcom/android/phone/TimeConsumingPreferenceActivity;->showDialog(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/CdmaAdditionalCallOptions;->showDialog(I)V
 
     goto :goto_2
 
@@ -1234,7 +1234,7 @@
     move v2, v3
 
     :goto_1
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/CdmaAdditionalCallOptions;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v3
 
@@ -1336,7 +1336,7 @@
 
     const v4, 0x7f09033f
 
-    invoke-virtual {p0, v4}, Landroid/app/Fragment;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v4}, Lcom/android/phone/CdmaAdditionalCallOptions;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v4
 
@@ -1350,7 +1350,7 @@
 
     iget-object v4, p0, Lcom/android/phone/CdmaAdditionalCallOptions;->mAutoAreaCodeButton:Landroid/preference/EditTextPreference;
 
-    invoke-virtual {v4, v3}, Landroid/preference/Preference;->setSummary(Ljava/lang/CharSequence;)V
+    invoke-virtual {v4, v3}, Landroid/preference/EditTextPreference;->setSummary(Ljava/lang/CharSequence;)V
 
     :cond_0
     :goto_1
@@ -1370,7 +1370,7 @@
 
     const v5, 0x7f090340
 
-    invoke-virtual {v4, v5}, Landroid/preference/Preference;->setSummary(I)V
+    invoke-virtual {v4, v5}, Landroid/preference/EditTextPreference;->setSummary(I)V
 
     goto :goto_1
 .end method
@@ -1382,7 +1382,7 @@
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/CdmaAdditionalCallOptions;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -1431,7 +1431,7 @@
 
     const/4 v7, 0x1
 
-    invoke-super {p0, p1}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/phone/TimeConsumingPreferenceActivity;->onCreate(Landroid/os/Bundle;)V
 
     const-string v5, "feature_chn_duos_gsm_cdma"
 
@@ -1456,13 +1456,13 @@
     :goto_0
     const v5, 0x7f060014
 
-    invoke-virtual {p0, v5}, Landroid/preference/PreferenceFragment;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v5}, Lcom/android/phone/CdmaAdditionalCallOptions;->addPreferencesFromResource(I)V
 
-    invoke-virtual {p0}, Landroid/preference/PreferenceFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/phone/CdmaAdditionalCallOptions;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v5
 
-    invoke-virtual {v5}, Landroid/preference/Preference;->getSharedPreferences()Landroid/content/SharedPreferences;
+    invoke-virtual {v5}, Landroid/preference/PreferenceScreen;->getSharedPreferences()Landroid/content/SharedPreferences;
 
     move-result-object v5
 
@@ -1470,7 +1470,7 @@
 
     const-string v5, "voiceprivacy_preference"
 
-    invoke-virtual {p0, v5}, Landroid/preference/PreferenceFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v5}, Lcom/android/phone/CdmaAdditionalCallOptions;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v5
 
@@ -1478,13 +1478,13 @@
 
     iput-object v5, p0, Lcom/android/phone/CdmaAdditionalCallOptions;->mVoicePrivacy:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {p0}, Landroid/preference/PreferenceFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/phone/CdmaAdditionalCallOptions;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v3
 
     const-string v5, "voicecall_eq_list_setting"
 
-    invoke-virtual {p0, v5}, Landroid/preference/PreferenceFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v5}, Lcom/android/phone/CdmaAdditionalCallOptions;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v5
 
@@ -1504,7 +1504,7 @@
 
     iput-object v5, p0, Lcom/android/phone/CdmaAdditionalCallOptions;->doDeactivate:Ljava/lang/Runnable;
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getActionBar()Landroid/app/ActionBar;
+    invoke-virtual {p0}, Lcom/android/phone/CdmaAdditionalCallOptions;->getActionBar()Landroid/app/ActionBar;
 
     move-result-object v1
 
@@ -1527,41 +1527,41 @@
 
     const-string v5, "voicecall_barring_key"
 
-    invoke-virtual {v3, v5}, Landroid/preference/PreferenceGroup;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {v3, v5}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v5
 
-    invoke-virtual {v3, v5}, Landroid/preference/PreferenceGroup;->removePreference(Landroid/preference/Preference;)Z
+    invoke-virtual {v3, v5}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
     const-string v5, "button_cw_key"
 
-    invoke-virtual {v3, v5}, Landroid/preference/PreferenceGroup;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {v3, v5}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v5
 
-    invoke-virtual {v3, v5}, Landroid/preference/PreferenceGroup;->removePreference(Landroid/preference/Preference;)Z
+    invoke-virtual {v3, v5}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
     iget-object v5, p0, Lcom/android/phone/CdmaAdditionalCallOptions;->mVoicePrivacy:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v3, v5}, Landroid/preference/PreferenceGroup;->removePreference(Landroid/preference/Preference;)Z
+    invoke-virtual {v3, v5}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
     const-string v5, "button_fdn_key"
 
-    invoke-virtual {v3, v5}, Landroid/preference/PreferenceGroup;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {v3, v5}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v5
 
-    invoke-virtual {v3, v5}, Landroid/preference/PreferenceGroup;->removePreference(Landroid/preference/Preference;)Z
+    invoke-virtual {v3, v5}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
     const-string v5, "button_cdma_voicecall_forwarding"
 
-    invoke-virtual {v3, v5}, Landroid/preference/PreferenceGroup;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {v3, v5}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v2
 
     if-eqz v2, :cond_1
 
-    invoke-virtual {v3, v2}, Landroid/preference/PreferenceGroup;->removePreference(Landroid/preference/Preference;)Z
+    invoke-virtual {v3, v2}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
     :cond_1
     :goto_1
@@ -1575,7 +1575,7 @@
 
     const-string v5, "button_fdn_key"
 
-    invoke-virtual {v3, v5}, Landroid/preference/PreferenceGroup;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {v3, v5}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v5
 
@@ -1586,7 +1586,7 @@
     :cond_2
     const-string v5, "edittext_areacode_key"
 
-    invoke-virtual {v3, v5}, Landroid/preference/PreferenceGroup;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {v3, v5}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v5
 
@@ -1604,7 +1604,7 @@
 
     invoke-direct {v6, p0}, Lcom/android/phone/CdmaAdditionalCallOptions$3;-><init>(Lcom/android/phone/CdmaAdditionalCallOptions;)V
 
-    invoke-virtual {v5, v6}, Landroid/preference/Preference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
+    invoke-virtual {v5, v6}, Landroid/preference/EditTextPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     :cond_3
     const-string v5, "feature_multisim"
@@ -1621,7 +1621,7 @@
 
     invoke-direct {v6, p0}, Lcom/android/phone/CdmaAdditionalCallOptions$4;-><init>(Lcom/android/phone/CdmaAdditionalCallOptions;)V
 
-    invoke-virtual {v5, v6}, Landroid/preference/Preference;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
+    invoke-virtual {v5, v6}, Landroid/preference/EditTextPreference;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
 
     :cond_4
     iget-object v5, p0, Lcom/android/phone/CdmaAdditionalCallOptions;->mVoiceCallEqListSetting:Landroid/preference/ListPreference;
@@ -1630,9 +1630,9 @@
 
     invoke-direct {v6, p0}, Lcom/android/phone/CdmaAdditionalCallOptions$5;-><init>(Lcom/android/phone/CdmaAdditionalCallOptions;)V
 
-    invoke-virtual {v5, v6}, Landroid/preference/Preference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
+    invoke-virtual {v5, v6}, Landroid/preference/ListPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/CdmaAdditionalCallOptions;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v5
 
@@ -1644,11 +1644,11 @@
 
     const-string v5, "button_voicecall_eq_category_key"
 
-    invoke-virtual {v3, v5}, Landroid/preference/PreferenceGroup;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {v3, v5}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v5
 
-    invoke-virtual {v3, v5}, Landroid/preference/PreferenceGroup;->removePreference(Landroid/preference/Preference;)Z
+    invoke-virtual {v3, v5}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
     iput-object v10, p0, Lcom/android/phone/CdmaAdditionalCallOptions;->mVoiceCallEqListSetting:Landroid/preference/ListPreference;
 
@@ -1676,11 +1676,11 @@
 
     const-string v5, "button_voicecall_eq_category_key"
 
-    invoke-virtual {v3, v5}, Landroid/preference/PreferenceGroup;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {v3, v5}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v5
 
-    invoke-virtual {v3, v5}, Landroid/preference/PreferenceGroup;->removePreference(Landroid/preference/Preference;)Z
+    invoke-virtual {v3, v5}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
     iput-object v10, p0, Lcom/android/phone/CdmaAdditionalCallOptions;->mVoiceCallEqListSetting:Landroid/preference/ListPreference;
 
@@ -1730,7 +1730,7 @@
 
     const/16 v5, 0xc8
 
-    invoke-virtual {p0, v5}, Lcom/android/phone/TimeConsumingPreferenceActivity;->showDialog(I)V
+    invoke-virtual {p0, v5}, Lcom/android/phone/CdmaAdditionalCallOptions;->showDialog(I)V
 
     :cond_9
     sget-boolean v5, Lcom/android/phone/CdmaAdditionalCallOptions;->DBG:Z
@@ -1750,11 +1750,11 @@
 
     if-nez v5, :cond_b
 
-    invoke-virtual {p0}, Landroid/preference/PreferenceFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/phone/CdmaAdditionalCallOptions;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v5
 
-    invoke-virtual {v5, v8}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v5, v8}, Landroid/preference/PreferenceScreen;->setEnabled(Z)V
 
     :cond_b
     :goto_2
@@ -1809,7 +1809,7 @@
 
     invoke-interface {v5, v6}, Lcom/android/internal/telephony/Phone;->getEnhancedVoicePrivacy(Landroid/os/Message;)V
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/CdmaAdditionalCallOptions;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v5
 
@@ -1823,14 +1823,14 @@
 
     iget-object v5, p0, Lcom/android/phone/CdmaAdditionalCallOptions;->mVoicePrivacy:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v5, v7}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+    invoke-virtual {v5, v7}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     goto/16 :goto_1
 
     :cond_f
     iget-object v5, p0, Lcom/android/phone/CdmaAdditionalCallOptions;->mVoicePrivacy:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v5, v8}, Landroid/preference/TwoStatePreference;->setChecked(Z)V
+    invoke-virtual {v5, v8}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     goto/16 :goto_1
 
@@ -1870,11 +1870,11 @@
     if-ne v4, v9, :cond_b
 
     :cond_11
-    invoke-virtual {p0}, Landroid/preference/PreferenceFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/phone/CdmaAdditionalCallOptions;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v5
 
-    invoke-virtual {v5, v8}, Landroid/preference/Preference;->setEnabled(Z)V
+    invoke-virtual {v5, v8}, Landroid/preference/PreferenceScreen;->setEnabled(Z)V
 
     goto :goto_2
 .end method
@@ -1937,7 +1937,7 @@
 
     new-instance v0, Landroid/app/ProgressDialog;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/CdmaAdditionalCallOptions;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
 
@@ -1953,11 +1953,11 @@
     return-object v0
 
     :sswitch_0
-    invoke-virtual {v0, v6}, Landroid/app/Dialog;->setCancelable(Z)V
+    invoke-virtual {v0, v6}, Landroid/app/ProgressDialog;->setCancelable(Z)V
 
     const v4, 0x7f09007e
 
-    invoke-virtual {p0, v4}, Landroid/app/Fragment;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v4}, Lcom/android/phone/CdmaAdditionalCallOptions;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v4
 
@@ -1966,11 +1966,11 @@
     goto :goto_0
 
     :sswitch_1
-    invoke-virtual {v0, v7}, Landroid/app/Dialog;->setCancelable(Z)V
+    invoke-virtual {v0, v7}, Landroid/app/ProgressDialog;->setCancelable(Z)V
 
     const v4, 0x7f09007d
 
-    invoke-virtual {p0, v4}, Landroid/app/Fragment;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v4}, Lcom/android/phone/CdmaAdditionalCallOptions;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v4
 
@@ -1984,7 +1984,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v0, v4}, Landroid/app/Dialog;->setCancelMessage(Landroid/os/Message;)V
+    invoke-virtual {v0, v4}, Landroid/app/ProgressDialog;->setCancelMessage(Landroid/os/Message;)V
 
     goto :goto_0
 
@@ -2011,7 +2011,7 @@
     :goto_1
     new-instance v1, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/CdmaAdditionalCallOptions;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
 
@@ -2019,13 +2019,13 @@
 
     invoke-virtual {v1, v6}, Landroid/app/AlertDialog$Builder;->setCancelable(Z)Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0, v3}, Landroid/app/Fragment;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v3}, Lcom/android/phone/CdmaAdditionalCallOptions;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v4
 
     invoke-virtual {v1, v4}, Landroid/app/AlertDialog$Builder;->setTitle(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0, v2}, Landroid/app/Fragment;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v2}, Lcom/android/phone/CdmaAdditionalCallOptions;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v4
 
@@ -2033,7 +2033,7 @@
 
     const v4, 0x7f0902d0
 
-    invoke-virtual {p0, v4}, Landroid/app/Fragment;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v4}, Lcom/android/phone/CdmaAdditionalCallOptions;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v4
 
@@ -2051,7 +2051,7 @@
 
     invoke-direct {v4, p0}, Lcom/android/phone/CdmaAdditionalCallOptions$10;-><init>(Lcom/android/phone/CdmaAdditionalCallOptions;)V
 
-    invoke-virtual {v0, v4}, Landroid/app/Dialog;->setOnKeyListener(Landroid/content/DialogInterface$OnKeyListener;)V
+    invoke-virtual {v0, v4}, Landroid/app/AlertDialog;->setOnKeyListener(Landroid/content/DialogInterface$OnKeyListener;)V
 
     goto :goto_0
 
@@ -2108,7 +2108,7 @@
 
     packed-switch v0, :pswitch_data_0
 
-    invoke-super {p0, p1}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
+    invoke-super {p0, p1}, Lcom/android/phone/TimeConsumingPreferenceActivity;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
 
     move-result v0
 
@@ -2116,7 +2116,7 @@
     return v0
 
     :pswitch_0
-    invoke-virtual {p0}, Landroid/app/Fragment;->getFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual {p0}, Lcom/android/phone/CdmaAdditionalCallOptions;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v0
 
@@ -2126,7 +2126,7 @@
 
     if-lez v0, :cond_0
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual {p0}, Lcom/android/phone/CdmaAdditionalCallOptions;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v0
 
@@ -2138,7 +2138,7 @@
     goto :goto_0
 
     :cond_0
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/CdmaAdditionalCallOptions;->finish()V
 
     goto :goto_1
 
@@ -2179,7 +2179,7 @@
 
     new-instance v0, Landroid/content/Intent;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/CdmaAdditionalCallOptions;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -2193,7 +2193,7 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    invoke-virtual {p0, v0}, Landroid/app/Fragment;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/CdmaAdditionalCallOptions;->startActivity(Landroid/content/Intent;)V
 
     const/4 v0, 0x1
 
@@ -2201,7 +2201,7 @@
     return v0
 
     :cond_0
-    invoke-super {p0, p1, p2}, Landroid/preference/PreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
+    invoke-super {p0, p1, p2}, Lcom/android/phone/TimeConsumingPreferenceActivity;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
 
     move-result v0
 
@@ -2243,7 +2243,7 @@
 
     if-eqz v4, :cond_4
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/CdmaAdditionalCallOptions;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v4
 
@@ -2273,7 +2273,7 @@
 
     if-eqz v4, :cond_3
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/CdmaAdditionalCallOptions;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v4
 
@@ -2283,7 +2283,7 @@
 
     move-result v2
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/CdmaAdditionalCallOptions;->getResources()Landroid/content/res/Resources;
 
     move-result-object v4
 
@@ -2293,7 +2293,7 @@
 
     move-result-object v1
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/CdmaAdditionalCallOptions;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v4
 
@@ -2305,7 +2305,7 @@
 
     if-ne v4, v6, :cond_2
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/CdmaAdditionalCallOptions;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v4
 
@@ -2322,7 +2322,7 @@
     if-ne v2, v10, :cond_2
 
     :cond_1
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/CdmaAdditionalCallOptions;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v4
 
@@ -2340,7 +2340,7 @@
 
     const v5, 0x7f0903e2
 
-    invoke-virtual {v4, v5}, Landroid/preference/Preference;->setSummary(I)V
+    invoke-virtual {v4, v5}, Landroid/preference/ListPreference;->setSummary(I)V
 
     :goto_2
     iget-object v4, p0, Lcom/android/phone/CdmaAdditionalCallOptions;->mVoiceCallEqListSetting:Landroid/preference/ListPreference;
@@ -2355,7 +2355,7 @@
     return-void
 
     :cond_4
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/CdmaAdditionalCallOptions;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v4
 
@@ -2370,7 +2370,7 @@
     :cond_5
     if-nez v3, :cond_6
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/CdmaAdditionalCallOptions;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v4
 
@@ -2385,7 +2385,7 @@
     :cond_6
     if-ne v3, v6, :cond_2
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/CdmaAdditionalCallOptions;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v4
 
@@ -2465,7 +2465,7 @@
 .method public onStop()V
     .locals 1
 
-    invoke-super {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onStop()V
+    invoke-super {p0}, Lcom/android/phone/TimeConsumingPreferenceActivity;->onStop()V
 
     const/4 v0, 0x0
 

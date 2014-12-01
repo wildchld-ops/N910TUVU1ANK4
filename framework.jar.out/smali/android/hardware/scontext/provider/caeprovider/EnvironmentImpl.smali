@@ -10,9 +10,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;ILandroid/hardware/scontext/provider/EventListener;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Landroid/hardware/scontext/provider/EventListener;
 
     const/16 v0, 0x8
 
@@ -31,7 +28,6 @@
 # virtual methods
 .method public parse(Landroid/os/Bundle;)Landroid/os/Bundle;
     .locals 4
-    .param p1    # Landroid/os/Bundle;
 
     const-string v2, "Temperature"
 
@@ -64,8 +60,6 @@
 
 .method public setProperty(ILandroid/os/Bundle;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     const-string v1, "environment_sensor_type"
 

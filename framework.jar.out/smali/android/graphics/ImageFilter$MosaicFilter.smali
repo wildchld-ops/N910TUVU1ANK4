@@ -27,7 +27,6 @@
 
 .method synthetic constructor <init>(Landroid/graphics/ImageFilter$1;)V
     .locals 0
-    .param p1    # Landroid/graphics/ImageFilter$1;
 
     invoke-direct {p0}, Landroid/graphics/ImageFilter$MosaicFilter;-><init>()V
 
@@ -38,7 +37,6 @@
 # virtual methods
 .method public setRadius(F)V
     .locals 2
-    .param p1    # F
 
     const/4 v0, 0x0
 

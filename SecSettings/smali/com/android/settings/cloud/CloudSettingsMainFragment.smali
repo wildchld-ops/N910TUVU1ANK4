@@ -137,7 +137,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/cloud/CloudSettingsMainFragment;)V
     .locals 0
-    .param p0    # Lcom/android/settings/cloud/CloudSettingsMainFragment;
 
     invoke-direct {p0}, Lcom/android/settings/cloud/CloudSettingsMainFragment;->dismissProgress()V
 
@@ -146,7 +145,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/cloud/CloudSettingsMainFragment;)Lcom/android/settings/cloud/CloudSettings;
     .locals 1
-    .param p0    # Lcom/android/settings/cloud/CloudSettingsMainFragment;
 
     iget-object v0, p0, Lcom/android/settings/cloud/CloudSettingsMainFragment;->mSettings:Lcom/android/settings/cloud/CloudSettings;
 
@@ -155,7 +153,6 @@
 
 .method static synthetic access$1000(Lcom/android/settings/cloud/CloudSettingsMainFragment;)V
     .locals 0
-    .param p0    # Lcom/android/settings/cloud/CloudSettingsMainFragment;
 
     invoke-direct {p0}, Lcom/android/settings/cloud/CloudSettingsMainFragment;->requestCloudAuthentication()V
 
@@ -164,8 +161,6 @@
 
 .method static synthetic access$102(Lcom/android/settings/cloud/CloudSettingsMainFragment;Lcom/android/settings/cloud/CloudSettings;)Lcom/android/settings/cloud/CloudSettings;
     .locals 0
-    .param p0    # Lcom/android/settings/cloud/CloudSettingsMainFragment;
-    .param p1    # Lcom/android/settings/cloud/CloudSettings;
 
     iput-object p1, p0, Lcom/android/settings/cloud/CloudSettingsMainFragment;->mSettings:Lcom/android/settings/cloud/CloudSettings;
 
@@ -174,7 +169,6 @@
 
 .method static synthetic access$1100(Lcom/android/settings/cloud/CloudSettingsMainFragment;)Landroid/app/DialogFragment;
     .locals 1
-    .param p0    # Lcom/android/settings/cloud/CloudSettingsMainFragment;
 
     iget-object v0, p0, Lcom/android/settings/cloud/CloudSettingsMainFragment;->dialogFragment:Landroid/app/DialogFragment;
 
@@ -183,8 +177,6 @@
 
 .method static synthetic access$1102(Lcom/android/settings/cloud/CloudSettingsMainFragment;Landroid/app/DialogFragment;)Landroid/app/DialogFragment;
     .locals 0
-    .param p0    # Lcom/android/settings/cloud/CloudSettingsMainFragment;
-    .param p1    # Landroid/app/DialogFragment;
 
     iput-object p1, p0, Lcom/android/settings/cloud/CloudSettingsMainFragment;->dialogFragment:Landroid/app/DialogFragment;
 
@@ -193,7 +185,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/cloud/CloudSettingsMainFragment;)V
     .locals 0
-    .param p0    # Lcom/android/settings/cloud/CloudSettingsMainFragment;
 
     invoke-direct {p0}, Lcom/android/settings/cloud/CloudSettingsMainFragment;->updatePreferences()V
 
@@ -202,7 +193,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/cloud/CloudSettingsMainFragment;)V
     .locals 0
-    .param p0    # Lcom/android/settings/cloud/CloudSettingsMainFragment;
 
     invoke-direct {p0}, Lcom/android/settings/cloud/CloudSettingsMainFragment;->requestCloudStorageUsage()V
 
@@ -211,7 +201,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/cloud/CloudSettingsMainFragment;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/cloud/CloudSettingsMainFragment;
 
     iget-boolean v0, p0, Lcom/android/settings/cloud/CloudSettingsMainFragment;->mIsConnected:Z
 
@@ -220,8 +209,6 @@
 
 .method static synthetic access$402(Lcom/android/settings/cloud/CloudSettingsMainFragment;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/cloud/CloudSettingsMainFragment;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/cloud/CloudSettingsMainFragment;->mIsConnected:Z
 
@@ -230,7 +217,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/cloud/CloudSettingsMainFragment;)Landroid/preference/Preference;
     .locals 1
-    .param p0    # Lcom/android/settings/cloud/CloudSettingsMainFragment;
 
     iget-object v0, p0, Lcom/android/settings/cloud/CloudSettingsMainFragment;->mPrefUsage:Landroid/preference/Preference;
 
@@ -239,7 +225,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/cloud/CloudSettingsMainFragment;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/settings/cloud/CloudSettingsMainFragment;
 
     iget-object v0, p0, Lcom/android/settings/cloud/CloudSettingsMainFragment;->mStorage:Ljava/lang/String;
 
@@ -248,8 +233,6 @@
 
 .method static synthetic access$602(Lcom/android/settings/cloud/CloudSettingsMainFragment;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # Lcom/android/settings/cloud/CloudSettingsMainFragment;
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/settings/cloud/CloudSettingsMainFragment;->mStorage:Ljava/lang/String;
 
@@ -258,7 +241,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/cloud/CloudSettingsMainFragment;)I
     .locals 1
-    .param p0    # Lcom/android/settings/cloud/CloudSettingsMainFragment;
 
     iget v0, p0, Lcom/android/settings/cloud/CloudSettingsMainFragment;->mValidationStatus:I
 
@@ -267,8 +249,6 @@
 
 .method static synthetic access$702(Lcom/android/settings/cloud/CloudSettingsMainFragment;I)I
     .locals 0
-    .param p0    # Lcom/android/settings/cloud/CloudSettingsMainFragment;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/settings/cloud/CloudSettingsMainFragment;->mValidationStatus:I
 
@@ -277,7 +257,6 @@
 
 .method static synthetic access$800(Lcom/android/settings/cloud/CloudSettingsMainFragment;)Landroid/app/ProgressDialog;
     .locals 1
-    .param p0    # Lcom/android/settings/cloud/CloudSettingsMainFragment;
 
     iget-object v0, p0, Lcom/android/settings/cloud/CloudSettingsMainFragment;->mProgressDialog:Landroid/app/ProgressDialog;
 
@@ -286,7 +265,6 @@
 
 .method static synthetic access$900(Lcom/android/settings/cloud/CloudSettingsMainFragment;)V
     .locals 0
-    .param p0    # Lcom/android/settings/cloud/CloudSettingsMainFragment;
 
     invoke-direct {p0}, Lcom/android/settings/cloud/CloudSettingsMainFragment;->showCloudChargeEnableDialog()V
 
@@ -819,7 +797,6 @@
 
 .method private getSyncSummaryString(I)Ljava/lang/String;
     .locals 4
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -1713,9 +1690,6 @@
 
 .method private showPreference(Landroid/preference/Preference;Landroid/preference/PreferenceGroup;Z)V
     .locals 0
-    .param p1    # Landroid/preference/Preference;
-    .param p2    # Landroid/preference/PreferenceGroup;
-    .param p3    # Z
 
     if-eqz p2, :cond_0
 
@@ -2536,7 +2510,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/preference/PreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 

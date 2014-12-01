@@ -112,7 +112,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/fuelgauge/PowerUsageDetail;)Landroid/widget/Button;
     .locals 1
-    .param p0    # Lcom/android/settings/fuelgauge/PowerUsageDetail;
 
     iget-object v0, p0, Lcom/android/settings/fuelgauge/PowerUsageDetail;->mForceStopButton:Landroid/widget/Button;
 
@@ -121,9 +120,6 @@
 
 .method private addControl(III)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     invoke-virtual {p0}, Lcom/android/settings/fuelgauge/PowerUsageDetail;->getResources()Landroid/content/res/Resources;
 
@@ -1121,7 +1117,6 @@
 
 .method private fillControlsSection(I)V
     .locals 10
-    .param p1    # I
 
     const/4 v6, 0x0
 
@@ -1520,7 +1515,6 @@
 
 .method private fillPackagesSection(I)V
     .locals 10
-    .param p1    # I
 
     const/4 v8, 0x1
 
@@ -1938,7 +1932,6 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p1}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
@@ -1957,7 +1950,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onCreate(Landroid/os/Bundle;)V
 
@@ -1990,9 +1982,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 3
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const/4 v2, 0x0
 

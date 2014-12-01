@@ -55,9 +55,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/widget/ImageView;Lcom/android/systemui/settings/ToggleSlider;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/widget/ImageView;
-    .param p3    # Lcom/android/systemui/settings/ToggleSlider;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -154,7 +151,6 @@
 
 .method static synthetic access$000(Lcom/android/systemui/settings/BrightnessController;)V
     .locals 0
-    .param p0    # Lcom/android/systemui/settings/BrightnessController;
 
     invoke-direct {p0}, Lcom/android/systemui/settings/BrightnessController;->updateMode()V
 
@@ -163,7 +159,6 @@
 
 .method static synthetic access$100(Lcom/android/systemui/settings/BrightnessController;)V
     .locals 0
-    .param p0    # Lcom/android/systemui/settings/BrightnessController;
 
     invoke-direct {p0}, Lcom/android/systemui/settings/BrightnessController;->updateSlider()V
 
@@ -172,7 +167,6 @@
 
 .method static synthetic access$200(Lcom/android/systemui/settings/BrightnessController;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/systemui/settings/BrightnessController;
 
     iget-object v0, p0, Lcom/android/systemui/settings/BrightnessController;->mChangeCallbacks:Ljava/util/ArrayList;
 
@@ -181,7 +175,6 @@
 
 .method static synthetic access$300(Lcom/android/systemui/settings/BrightnessController;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/systemui/settings/BrightnessController;
 
     iget-object v0, p0, Lcom/android/systemui/settings/BrightnessController;->mContext:Landroid/content/Context;
 
@@ -190,7 +183,6 @@
 
 .method private setBrightness(I)V
     .locals 1
-    .param p1    # I
 
     :try_start_0
     iget-object v0, p0, Lcom/android/systemui/settings/BrightnessController;->mPower:Landroid/os/IPowerManager;
@@ -210,7 +202,6 @@
 
 .method private setMode(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/systemui/settings/BrightnessController;->mContext:Landroid/content/Context;
 
@@ -233,7 +224,6 @@
 
 .method private updateIcon(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/systemui/settings/BrightnessController;->mIcon:Landroid/widget/ImageView;
 
@@ -383,7 +373,6 @@
 # virtual methods
 .method public addStateChangedCallback(Lcom/android/systemui/settings/BrightnessController$BrightnessStateChangeCallback;)V
     .locals 1
-    .param p1    # Lcom/android/systemui/settings/BrightnessController$BrightnessStateChangeCallback;
 
     iget-object v0, p0, Lcom/android/systemui/settings/BrightnessController;->mChangeCallbacks:Ljava/util/ArrayList;
 
@@ -394,10 +383,6 @@
 
 .method public onChanged(Lcom/android/systemui/settings/ToggleSlider;ZZI)V
     .locals 4
-    .param p1    # Lcom/android/systemui/settings/ToggleSlider;
-    .param p2    # Z
-    .param p3    # Z
-    .param p4    # I
 
     if-eqz p3, :cond_1
 
@@ -459,14 +444,12 @@
 
 .method public onInit(Lcom/android/systemui/settings/ToggleSlider;)V
     .locals 0
-    .param p1    # Lcom/android/systemui/settings/ToggleSlider;
 
     return-void
 .end method
 
 .method public removeStateChangedCallback(Lcom/android/systemui/settings/BrightnessController$BrightnessStateChangeCallback;)Z
     .locals 1
-    .param p1    # Lcom/android/systemui/settings/BrightnessController$BrightnessStateChangeCallback;
 
     iget-object v0, p0, Lcom/android/systemui/settings/BrightnessController;->mChangeCallbacks:Ljava/util/ArrayList;
 

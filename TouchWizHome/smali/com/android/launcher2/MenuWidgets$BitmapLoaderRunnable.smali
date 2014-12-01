@@ -41,9 +41,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/launcher2/MenuWidgets;Lcom/android/launcher2/PagedViewGridLayout;ILjava/util/List;Z)V
     .locals 0
-    .param p2    # Lcom/android/launcher2/PagedViewGridLayout;
-    .param p3    # I
-    .param p5    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

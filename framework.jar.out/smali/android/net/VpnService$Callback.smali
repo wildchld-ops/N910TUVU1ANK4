@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Landroid/net/VpnService;Landroid/net/VpnService$1;)V
     .locals 0
-    .param p1    # Landroid/net/VpnService;
-    .param p2    # Landroid/net/VpnService$1;
 
     invoke-direct {p0, p1}, Landroid/net/VpnService$Callback;-><init>(Landroid/net/VpnService;)V
 
@@ -43,10 +41,6 @@
 # virtual methods
 .method protected onTransact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/os/Parcel;
-    .param p3    # Landroid/os/Parcel;
-    .param p4    # I
 
     const v0, 0xffffff
 

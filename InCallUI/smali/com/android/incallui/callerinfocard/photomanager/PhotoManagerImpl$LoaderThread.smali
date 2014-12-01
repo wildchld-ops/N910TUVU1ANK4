@@ -41,7 +41,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/incallui/callerinfocard/photomanager/PhotoManagerImpl;Landroid/content/ContentResolver;)V
     .locals 1
-    .param p2    # Landroid/content/ContentResolver;
 
     iput-object p1, p0, Lcom/android/incallui/callerinfocard/photomanager/PhotoManagerImpl$LoaderThread;->this$0:Lcom/android/incallui/callerinfocard/photomanager/PhotoManagerImpl;
 
@@ -538,7 +537,6 @@
 
 .method public handleMessage(Landroid/os/Message;)Z
     .locals 1
-    .param p1    # Landroid/os/Message;
 
     iget v0, p1, Landroid/os/Message;->what:I
 

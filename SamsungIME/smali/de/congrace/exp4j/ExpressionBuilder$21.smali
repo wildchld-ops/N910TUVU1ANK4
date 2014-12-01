@@ -21,7 +21,6 @@
 # direct methods
 .method constructor <init>(Lde/congrace/exp4j/ExpressionBuilder;Ljava/lang/String;)V
     .locals 0
-    .param p2    # Ljava/lang/String;
 
     iput-object p1, p0, Lde/congrace/exp4j/ExpressionBuilder$21;->this$0:Lde/congrace/exp4j/ExpressionBuilder;
 
@@ -34,7 +33,6 @@
 # virtual methods
 .method public varargs applyFunction([D)D
     .locals 2
-    .param p1    # [D
 
     const/4 v0, 0x0
 

@@ -99,7 +99,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v2, v1}, Landroid/content/ContextWrapper;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {v2, v1}, Lcom/android/phone/PhoneGlobals;->startActivity(Landroid/content/Intent;)V
 
     invoke-static {v4}, Lcom/android/phone/ATCommandReceiver;->setATcommandExecuting(Z)V
 
@@ -132,7 +132,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v2, v0}, Landroid/content/ContextWrapper;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {v2, v0}, Lcom/android/phone/PhoneGlobals;->startActivity(Landroid/content/Intent;)V
 
     invoke-static {v4}, Lcom/android/phone/ATCommandReceiver;->setATcommandExecuting(Z)V
 
@@ -284,7 +284,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v1}, Lcom/android/phone/PhoneGlobals;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v1
 

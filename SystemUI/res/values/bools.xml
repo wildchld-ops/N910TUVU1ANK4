@@ -12,7 +12,7 @@
     <bool name="quick_settings_rssi_tile_capitalization">true</bool>
     <bool name="config_hasSettingsPanel">true</bool>
     <bool name="config_hasFlipSettingsPanel">true</bool>
-    <bool name="config_show4GForLTE">true</bool>
-    <bool name="config_recents_load_task_resumeonly">false</bool>
+    <bool name="config_show4GForLTE">false</bool>
+    <bool name="config_recents_load_task_resumeonly">true</bool>
     <bool name="config_recents_use_fixed_window_layout">true</bool>
 </resources>

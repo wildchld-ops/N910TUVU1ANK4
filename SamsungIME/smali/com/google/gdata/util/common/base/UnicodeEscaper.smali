@@ -42,9 +42,6 @@
 
 .method protected static final codePointAt(Ljava/lang/CharSequence;II)I
     .locals 6
-    .param p0    # Ljava/lang/CharSequence;
-    .param p1    # I
-    .param p2    # I
 
     if-ge p1, p2, :cond_5
 
@@ -198,9 +195,6 @@
 
 .method private static final growBuffer([CII)[C
     .locals 2
-    .param p0    # [C
-    .param p1    # I
-    .param p2    # I
 
     const/4 v1, 0x0
 
@@ -218,7 +212,6 @@
 # virtual methods
 .method public escape(Ljava/lang/Appendable;)Ljava/lang/Appendable;
     .locals 1
-    .param p1    # Ljava/lang/Appendable;
 
     invoke-static {p1}, Lcom/google/gdata/util/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -231,7 +224,6 @@
 
 .method public escape(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p1}, Ljava/lang/String;->length()I
 
@@ -261,8 +253,6 @@
 
 .method protected final escapeSlow(Ljava/lang/String;I)Ljava/lang/String;
     .locals 13
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v12, 0x0
 
@@ -401,9 +391,6 @@
 
 .method protected nextEscapeIndex(Ljava/lang/CharSequence;II)I
     .locals 3
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
 
     move v1, p2
 

@@ -49,7 +49,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 39
-    .param p1    # Landroid/os/Message;
 
     move-object/from16 v0, p1
 

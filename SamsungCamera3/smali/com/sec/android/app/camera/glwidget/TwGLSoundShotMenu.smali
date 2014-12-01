@@ -335,10 +335,6 @@
 
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;ILcom/sec/android/glview/TwGLViewGroup;Lcom/sec/android/app/camera/MenuResourceDepot;)V
     .locals 8
-    .param p1    # Lcom/sec/android/app/camera/Camera;
-    .param p2    # I
-    .param p3    # Lcom/sec/android/glview/TwGLViewGroup;
-    .param p4    # Lcom/sec/android/app/camera/MenuResourceDepot;
 
     const/4 v5, 0x6
 
@@ -703,7 +699,6 @@
 
 .method static synthetic access$000(Lcom/sec/android/app/camera/glwidget/TwGLSoundShotMenu;)Lcom/sec/android/app/camera/Camera;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLSoundShotMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -712,7 +707,6 @@
 
 .method static synthetic access$100(Lcom/sec/android/app/camera/glwidget/TwGLSoundShotMenu;)Lcom/sec/android/app/camera/Camera;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLSoundShotMenu;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/MenuBase;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -721,7 +715,6 @@
 
 .method static synthetic access$200(Lcom/sec/android/app/camera/glwidget/TwGLSoundShotMenu;)I
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLSoundShotMenu;
 
     iget v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLSoundShotMenu;->RecordedTime:I
 
@@ -730,8 +723,6 @@
 
 .method static synthetic access$202(Lcom/sec/android/app/camera/glwidget/TwGLSoundShotMenu;I)I
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLSoundShotMenu;
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLSoundShotMenu;->RecordedTime:I
 
@@ -740,7 +731,6 @@
 
 .method static synthetic access$208(Lcom/sec/android/app/camera/glwidget/TwGLSoundShotMenu;)I
     .locals 2
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLSoundShotMenu;
 
     iget v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLSoundShotMenu;->RecordedTime:I
 
@@ -761,7 +751,6 @@
 
 .method static synthetic access$400(Lcom/sec/android/app/camera/glwidget/TwGLSoundShotMenu;)Z
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLSoundShotMenu;
 
     iget-boolean v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLSoundShotMenu;->mFull:Z
 
@@ -770,8 +759,6 @@
 
 .method static synthetic access$402(Lcom/sec/android/app/camera/glwidget/TwGLSoundShotMenu;Z)Z
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLSoundShotMenu;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLSoundShotMenu;->mFull:Z
 
@@ -780,9 +767,6 @@
 
 .method static synthetic access$500(Lcom/sec/android/app/camera/glwidget/TwGLSoundShotMenu;IZ)V
     .locals 0
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLSoundShotMenu;
-    .param p1    # I
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/sec/android/app/camera/glwidget/TwGLSoundShotMenu;->setProgressBar(IZ)V
 
@@ -858,8 +842,6 @@
 
 .method private setProgressBar(IZ)V
     .locals 4
-    .param p1    # I
-    .param p2    # Z
 
     if-nez p2, :cond_2
 
@@ -1058,7 +1040,6 @@
 
 .method public onClick(Lcom/sec/android/glview/TwGLView;)Z
     .locals 1
-    .param p1    # Lcom/sec/android/glview/TwGLView;
 
     const/4 v0, 0x0
 
@@ -1081,8 +1062,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const-string v0, "TwGLSoundShotMenu"
 
@@ -1136,8 +1115,6 @@
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const-string v0, "TwGLSoundShotMenu"
 
@@ -1338,7 +1315,6 @@
 
 .method public saveAudio(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "TwGLSoundShotMenu"
 
@@ -1391,7 +1367,6 @@
 
 .method public setMode(I)V
     .locals 3
-    .param p1    # I
 
     const-string v0, "TwGLSoundShotMenu"
 

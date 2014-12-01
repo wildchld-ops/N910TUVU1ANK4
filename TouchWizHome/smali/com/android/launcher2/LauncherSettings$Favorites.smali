@@ -164,7 +164,6 @@
 
 .method static convertToLocalItemType(I)I
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -216,8 +215,6 @@
 
 .method static getContentUri(JZ)Landroid/net/Uri;
     .locals 2
-    .param p0    # J
-    .param p2    # Z
 
     new-instance v0, Ljava/lang/StringBuilder;
 

@@ -172,7 +172,6 @@
 
 .method public SetPortalCenter(Lcom/voovio/voo3d/data/Vector3;)V
     .locals 3
-    .param p1    # Lcom/voovio/voo3d/data/Vector3;
 
     invoke-static {}, Lcom/voovio/voo3d/data/Vector3Pool;->getVector3()Lcom/voovio/voo3d/data/Vector3;
 
@@ -213,7 +212,6 @@
 
 .method public SetPortalNormal(Lcom/voovio/voo3d/data/Vector3;)V
     .locals 12
-    .param p1    # Lcom/voovio/voo3d/data/Vector3;
 
     const/high16 v7, 0x40000000
 
@@ -386,7 +384,6 @@
 
 .method public SetPortalWidth(F)V
     .locals 7
-    .param p1    # F
 
     const/4 v6, 0x3
 
@@ -457,8 +454,6 @@
 
 .method public TestGoAcross(Lcom/voovio/voo3d/data/Vector3;Lcom/voovio/voo3d/data/Vector3;)Z
     .locals 10
-    .param p1    # Lcom/voovio/voo3d/data/Vector3;
-    .param p2    # Lcom/voovio/voo3d/data/Vector3;
 
     const/4 v4, 0x1
 

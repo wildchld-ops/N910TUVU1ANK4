@@ -58,7 +58,6 @@
 
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 8
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;
@@ -257,7 +256,6 @@
 
 .method private parseHex(Ljava/lang/String;)I
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 

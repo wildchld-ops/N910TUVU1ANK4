@@ -55,9 +55,6 @@
 
 .method public static get(Landroid/content/ContentProviderClient;Landroid/net/Uri;Landroid/accounts/Account;)[B
     .locals 7
-    .param p0    # Landroid/content/ContentProviderClient;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Landroid/accounts/Account;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -137,9 +134,6 @@
 
 .method public static getWithUri(Landroid/content/ContentProviderClient;Landroid/net/Uri;Landroid/accounts/Account;)Landroid/util/Pair;
     .locals 11
-    .param p0    # Landroid/content/ContentProviderClient;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Landroid/accounts/Account;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -247,10 +241,6 @@
 
 .method public static insert(Landroid/content/ContentProviderClient;Landroid/net/Uri;Landroid/accounts/Account;[B)Landroid/net/Uri;
     .locals 3
-    .param p0    # Landroid/content/ContentProviderClient;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Landroid/accounts/Account;
-    .param p3    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -286,9 +276,6 @@
 
 .method public static newSetOperation(Landroid/net/Uri;Landroid/accounts/Account;[B)Landroid/content/ContentProviderOperation;
     .locals 4
-    .param p0    # Landroid/net/Uri;
-    .param p1    # Landroid/accounts/Account;
-    .param p2    # [B
 
     new-instance v0, Landroid/content/ContentValues;
 
@@ -331,8 +318,6 @@
 
 .method public static newUpdateOperation(Landroid/net/Uri;[B)Landroid/content/ContentProviderOperation;
     .locals 2
-    .param p0    # Landroid/net/Uri;
-    .param p1    # [B
 
     new-instance v0, Landroid/content/ContentValues;
 
@@ -359,10 +344,6 @@
 
 .method public static set(Landroid/content/ContentProviderClient;Landroid/net/Uri;Landroid/accounts/Account;[B)V
     .locals 3
-    .param p0    # Landroid/content/ContentProviderClient;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Landroid/accounts/Account;
-    .param p3    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -396,9 +377,6 @@
 
 .method public static update(Landroid/content/ContentProviderClient;Landroid/net/Uri;[B)V
     .locals 3
-    .param p0    # Landroid/content/ContentProviderClient;
-    .param p1    # Landroid/net/Uri;
-    .param p2    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

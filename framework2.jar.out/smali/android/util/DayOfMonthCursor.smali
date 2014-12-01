@@ -12,10 +12,6 @@
 # direct methods
 .method public constructor <init>(IIII)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-direct {p0, p1, p2, p4}, Landroid/util/MonthDisplayHelper;-><init>(III)V
 
@@ -157,8 +153,6 @@
 
 .method public isSelected(II)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget v0, p0, Landroid/util/DayOfMonthCursor;->mRow:I
 
@@ -321,7 +315,6 @@
 
 .method public setSelectedDayOfMonth(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/util/MonthDisplayHelper;->getRowOf(I)I
 
@@ -340,8 +333,6 @@
 
 .method public setSelectedRowColumn(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     iput p1, p0, Landroid/util/DayOfMonthCursor;->mRow:I
 

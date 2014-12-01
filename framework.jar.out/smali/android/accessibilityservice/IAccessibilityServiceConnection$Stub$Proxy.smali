@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -45,12 +44,6 @@
 
 .method public findAccessibilityNodeInfoByAccessibilityId(IJILandroid/view/accessibility/IAccessibilityInteractionConnectionCallback;IJ)Z
     .locals 6
-    .param p1    # I
-    .param p2    # J
-    .param p4    # I
-    .param p5    # Landroid/view/accessibility/IAccessibilityInteractionConnectionCallback;
-    .param p6    # I
-    .param p7    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -135,12 +128,6 @@
 
 .method public findAccessibilityNodeInfosByText(IJLjava/lang/String;ILandroid/view/accessibility/IAccessibilityInteractionConnectionCallback;J)Z
     .locals 6
-    .param p1    # I
-    .param p2    # J
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
-    .param p6    # Landroid/view/accessibility/IAccessibilityInteractionConnectionCallback;
-    .param p7    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -225,12 +212,6 @@
 
 .method public findAccessibilityNodeInfosByViewId(IJLjava/lang/String;ILandroid/view/accessibility/IAccessibilityInteractionConnectionCallback;J)Z
     .locals 6
-    .param p1    # I
-    .param p2    # J
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
-    .param p6    # Landroid/view/accessibility/IAccessibilityInteractionConnectionCallback;
-    .param p7    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -315,12 +296,6 @@
 
 .method public findFocus(IJIILandroid/view/accessibility/IAccessibilityInteractionConnectionCallback;J)Z
     .locals 6
-    .param p1    # I
-    .param p2    # J
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Landroid/view/accessibility/IAccessibilityInteractionConnectionCallback;
-    .param p7    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -405,12 +380,6 @@
 
 .method public focusSearch(IJIILandroid/view/accessibility/IAccessibilityInteractionConnectionCallback;J)Z
     .locals 6
-    .param p1    # I
-    .param p2    # J
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Landroid/view/accessibility/IAccessibilityInteractionConnectionCallback;
-    .param p7    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -572,13 +541,6 @@
 
 .method public performAccessibilityAction(IJILandroid/os/Bundle;ILandroid/view/accessibility/IAccessibilityInteractionConnectionCallback;J)Z
     .locals 6
-    .param p1    # I
-    .param p2    # J
-    .param p4    # I
-    .param p5    # Landroid/os/Bundle;
-    .param p6    # I
-    .param p7    # Landroid/view/accessibility/IAccessibilityInteractionConnectionCallback;
-    .param p8    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -687,7 +649,6 @@
 
 .method public performGlobalAction(I)Z
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -750,8 +711,6 @@
 
 .method public setOnKeyEventResult(ZI)V
     .locals 5
-    .param p1    # Z
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -807,7 +766,6 @@
 
 .method public setServiceInfo(Landroid/accessibilityservice/AccessibilityServiceInfo;)V
     .locals 5
-    .param p1    # Landroid/accessibilityservice/AccessibilityServiceInfo;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

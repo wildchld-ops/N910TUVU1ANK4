@@ -34,7 +34,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -86,7 +85,6 @@
 # virtual methods
 .method public findNearestPosition(Lcom/android/settings/DataUsageSummary$CycleItem;)I
     .locals 4
-    .param p1    # Lcom/android/settings/DataUsageSummary$CycleItem;
 
     if-eqz p1, :cond_2
 
@@ -132,7 +130,6 @@
 
 .method public setChangePossible(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/DataUsageSummary$CycleAdapter;->mChangePossible:Z
 
@@ -143,7 +140,6 @@
 
 .method public setChangeVisible(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/DataUsageSummary$CycleAdapter;->mChangeVisible:Z
 

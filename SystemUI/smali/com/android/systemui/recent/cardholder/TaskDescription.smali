@@ -56,13 +56,6 @@
 
 .method public constructor <init>(IILandroid/content/pm/ResolveInfo;Landroid/content/Intent;Ljava/lang/String;Ljava/lang/CharSequence;Lcom/samsung/android/multiwindow/MultiWindowStyle;)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/pm/ResolveInfo;
-    .param p4    # Landroid/content/Intent;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Ljava/lang/CharSequence;
-    .param p7    # Lcom/samsung/android/multiwindow/MultiWindowStyle;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -177,7 +170,6 @@
 
 .method public setIcon(Landroid/graphics/drawable/Drawable;)V
     .locals 0
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     iput-object p1, p0, Lcom/android/systemui/recent/cardholder/TaskDescription;->mIcon:Landroid/graphics/drawable/Drawable;
 
@@ -186,7 +178,6 @@
 
 .method public setLabel(Ljava/lang/CharSequence;)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
 
     iput-object p1, p0, Lcom/android/systemui/recent/cardholder/TaskDescription;->mLabel:Ljava/lang/CharSequence;
 
@@ -195,7 +186,6 @@
 
 .method public setLoaded(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/systemui/recent/cardholder/TaskDescription;->mLoaded:Z
 
@@ -204,7 +194,6 @@
 
 .method public setThumbnail(Landroid/graphics/Bitmap;)V
     .locals 0
-    .param p1    # Landroid/graphics/Bitmap;
 
     iput-object p1, p0, Lcom/android/systemui/recent/cardholder/TaskDescription;->mThumbnail:Landroid/graphics/Bitmap;
 

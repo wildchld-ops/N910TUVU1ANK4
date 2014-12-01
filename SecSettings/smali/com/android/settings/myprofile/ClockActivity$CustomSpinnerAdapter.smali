@@ -36,8 +36,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/settings/myprofile/ClockActivity;Landroid/content/Context;ILjava/util/ArrayList;)V
     .locals 0
-    .param p2    # Landroid/content/Context;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -61,9 +59,6 @@
 # virtual methods
 .method public getCustomView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     iget-object v2, p0, Lcom/android/settings/myprofile/ClockActivity$CustomSpinnerAdapter;->this$0:Lcom/android/settings/myprofile/ClockActivity;
 
@@ -133,9 +128,6 @@
 
 .method public getDropDownView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     invoke-virtual {p0, p1, p2, p3}, Lcom/android/settings/myprofile/ClockActivity$CustomSpinnerAdapter;->getCustomView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
 
@@ -146,9 +138,6 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     invoke-virtual {p0, p1, p2, p3}, Lcom/android/settings/myprofile/ClockActivity$CustomSpinnerAdapter;->getCustomView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
 

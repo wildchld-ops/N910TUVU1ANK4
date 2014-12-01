@@ -14,9 +14,6 @@
 # direct methods
 .method public constructor <init>(FFJ)V
     .locals 0
-    .param p1    # F
-    .param p2    # F
-    .param p3    # J
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -31,7 +28,6 @@
 
 .method static deserialize(Ljava/io/DataInputStream;)Landroid/gesture/GesturePoint;
     .locals 5
-    .param p0    # Ljava/io/DataInputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

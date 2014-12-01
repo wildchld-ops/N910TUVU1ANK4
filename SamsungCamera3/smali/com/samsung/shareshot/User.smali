@@ -118,7 +118,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -141,9 +140,6 @@
 
 .method public constructor <init>(Landroid/content/Context;II)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -164,7 +160,6 @@
 
 .method public constructor <init>(Landroid/os/Parcel;)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -317,8 +312,6 @@
 
 .method private static AssignID([II)I
     .locals 4
-    .param p0    # [I
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -383,8 +376,6 @@
 
 .method private static UnassignGroupID(II)Z
     .locals 1
-    .param p0    # I
-    .param p1    # I
 
     sget-object v0, Lcom/samsung/shareshot/User;->s_nGroupIDs:[[I
 
@@ -399,8 +390,6 @@
 
 .method private static UnassignID([II)Z
     .locals 4
-    .param p0    # [I
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -439,7 +428,6 @@
 
 .method private static UnassignNormalID(I)Z
     .locals 1
-    .param p0    # I
 
     sget-object v0, Lcom/samsung/shareshot/User;->s_nIDs:[I
 
@@ -452,7 +440,6 @@
 
 .method private setHeadImage(Landroid/net/Uri;)V
     .locals 0
-    .param p1    # Landroid/net/Uri;
 
     invoke-virtual {p0}, Lcom/samsung/shareshot/User;->onSetHeadImage()V
 
@@ -497,7 +484,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 3
-    .param p1    # Ljava/lang/Object;
 
     if-ne p0, p1, :cond_0
 
@@ -726,7 +712,6 @@
 
 .method public setActivate(Z)Z
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/samsung/shareshot/User;->userInfo:Lcom/samsung/dmc/ux/db/UserInfo;
 
@@ -777,7 +762,6 @@
 
 .method public setHeadImage(Landroid/graphics/Bitmap;)V
     .locals 2
-    .param p1    # Landroid/graphics/Bitmap;
 
     iget-object v0, p0, Lcom/samsung/shareshot/User;->headImage:Landroid/graphics/Bitmap;
 
@@ -806,7 +790,6 @@
 
 .method public setIconID(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/samsung/shareshot/User;->iconID:I
 
@@ -815,7 +798,6 @@
 
 .method public setName(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/samsung/shareshot/User;->userInfo:Lcom/samsung/dmc/ux/db/UserInfo;
 
@@ -839,7 +821,6 @@
 
 .method protected setNormalID(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/samsung/shareshot/User;->userInfo:Lcom/samsung/dmc/ux/db/UserInfo;
 
@@ -850,7 +831,6 @@
 
 .method public setSelectUserCallBack(Lcom/samsung/shareshot/Interfaces$SelectUserInterface;)V
     .locals 0
-    .param p1    # Lcom/samsung/shareshot/Interfaces$SelectUserInterface;
 
     iput-object p1, p0, Lcom/samsung/shareshot/User;->selectUserCallBack:Lcom/samsung/shareshot/Interfaces$SelectUserInterface;
 
@@ -869,7 +849,6 @@
 
 .method public setState(I)V
     .locals 2
-    .param p1    # I
 
     if-nez p1, :cond_1
 
@@ -922,7 +901,6 @@
 
 .method public setUpdateUserStateCallBack(Lcom/samsung/shareshot/Interfaces$UpdateUserStateInterface;)V
     .locals 0
-    .param p1    # Lcom/samsung/shareshot/Interfaces$UpdateUserStateInterface;
 
     iput-object p1, p0, Lcom/samsung/shareshot/User;->updateUserStateCallBack:Lcom/samsung/shareshot/Interfaces$UpdateUserStateInterface;
 
@@ -931,7 +909,6 @@
 
 .method public setUserInfo(Lcom/samsung/dmc/ux/db/UserInfo;)V
     .locals 2
-    .param p1    # Lcom/samsung/dmc/ux/db/UserInfo;
 
     iput-object p1, p0, Lcom/samsung/shareshot/User;->userInfo:Lcom/samsung/dmc/ux/db/UserInfo;
 
@@ -968,8 +945,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget v0, p0, Lcom/samsung/shareshot/User;->iconID:I
 

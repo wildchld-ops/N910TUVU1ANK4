@@ -30,9 +30,6 @@
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;IZ)V
     .locals 0
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
-    .param p3    # Z
 
     packed-switch p2, :pswitch_data_0
 

@@ -6,8 +6,6 @@
 # direct methods
 .method constructor <init>(ILandroid/renderscript/RenderScript;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Landroid/renderscript/RenderScript;
 
     invoke-direct {p0, p1, p2}, Landroid/renderscript/ScriptIntrinsic;-><init>(ILandroid/renderscript/RenderScript;)V
 
@@ -16,9 +14,6 @@
 
 .method private blend(ILandroid/renderscript/Allocation;Landroid/renderscript/Allocation;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/renderscript/Allocation;
-    .param p3    # Landroid/renderscript/Allocation;
 
     invoke-virtual {p2}, Landroid/renderscript/Allocation;->getElement()Landroid/renderscript/Element;
 
@@ -79,8 +74,6 @@
 
 .method public static create(Landroid/renderscript/RenderScript;Landroid/renderscript/Element;)Landroid/renderscript/ScriptIntrinsicBlend;
     .locals 3
-    .param p0    # Landroid/renderscript/RenderScript;
-    .param p1    # Landroid/renderscript/Element;
 
     const/4 v1, 0x7
 
@@ -103,8 +96,6 @@
 # virtual methods
 .method public forEachAdd(Landroid/renderscript/Allocation;Landroid/renderscript/Allocation;)V
     .locals 1
-    .param p1    # Landroid/renderscript/Allocation;
-    .param p2    # Landroid/renderscript/Allocation;
 
     const/16 v0, 0x22
 
@@ -115,8 +106,6 @@
 
 .method public forEachClear(Landroid/renderscript/Allocation;Landroid/renderscript/Allocation;)V
     .locals 1
-    .param p1    # Landroid/renderscript/Allocation;
-    .param p2    # Landroid/renderscript/Allocation;
 
     const/4 v0, 0x0
 
@@ -127,16 +116,12 @@
 
 .method public forEachDst(Landroid/renderscript/Allocation;Landroid/renderscript/Allocation;)V
     .locals 0
-    .param p1    # Landroid/renderscript/Allocation;
-    .param p2    # Landroid/renderscript/Allocation;
 
     return-void
 .end method
 
 .method public forEachDstAtop(Landroid/renderscript/Allocation;Landroid/renderscript/Allocation;)V
     .locals 1
-    .param p1    # Landroid/renderscript/Allocation;
-    .param p2    # Landroid/renderscript/Allocation;
 
     const/16 v0, 0xa
 
@@ -147,8 +132,6 @@
 
 .method public forEachDstIn(Landroid/renderscript/Allocation;Landroid/renderscript/Allocation;)V
     .locals 1
-    .param p1    # Landroid/renderscript/Allocation;
-    .param p2    # Landroid/renderscript/Allocation;
 
     const/4 v0, 0x6
 
@@ -159,8 +142,6 @@
 
 .method public forEachDstOut(Landroid/renderscript/Allocation;Landroid/renderscript/Allocation;)V
     .locals 1
-    .param p1    # Landroid/renderscript/Allocation;
-    .param p2    # Landroid/renderscript/Allocation;
 
     const/16 v0, 0x8
 
@@ -171,8 +152,6 @@
 
 .method public forEachDstOver(Landroid/renderscript/Allocation;Landroid/renderscript/Allocation;)V
     .locals 1
-    .param p1    # Landroid/renderscript/Allocation;
-    .param p2    # Landroid/renderscript/Allocation;
 
     const/4 v0, 0x4
 
@@ -183,8 +162,6 @@
 
 .method public forEachMultiply(Landroid/renderscript/Allocation;Landroid/renderscript/Allocation;)V
     .locals 1
-    .param p1    # Landroid/renderscript/Allocation;
-    .param p2    # Landroid/renderscript/Allocation;
 
     const/16 v0, 0xe
 
@@ -195,8 +172,6 @@
 
 .method public forEachSrc(Landroid/renderscript/Allocation;Landroid/renderscript/Allocation;)V
     .locals 1
-    .param p1    # Landroid/renderscript/Allocation;
-    .param p2    # Landroid/renderscript/Allocation;
 
     const/4 v0, 0x1
 
@@ -207,8 +182,6 @@
 
 .method public forEachSrcAtop(Landroid/renderscript/Allocation;Landroid/renderscript/Allocation;)V
     .locals 1
-    .param p1    # Landroid/renderscript/Allocation;
-    .param p2    # Landroid/renderscript/Allocation;
 
     const/16 v0, 0x9
 
@@ -219,8 +192,6 @@
 
 .method public forEachSrcIn(Landroid/renderscript/Allocation;Landroid/renderscript/Allocation;)V
     .locals 1
-    .param p1    # Landroid/renderscript/Allocation;
-    .param p2    # Landroid/renderscript/Allocation;
 
     const/4 v0, 0x5
 
@@ -231,8 +202,6 @@
 
 .method public forEachSrcOut(Landroid/renderscript/Allocation;Landroid/renderscript/Allocation;)V
     .locals 1
-    .param p1    # Landroid/renderscript/Allocation;
-    .param p2    # Landroid/renderscript/Allocation;
 
     const/4 v0, 0x7
 
@@ -243,8 +212,6 @@
 
 .method public forEachSrcOver(Landroid/renderscript/Allocation;Landroid/renderscript/Allocation;)V
     .locals 1
-    .param p1    # Landroid/renderscript/Allocation;
-    .param p2    # Landroid/renderscript/Allocation;
 
     const/4 v0, 0x3
 
@@ -255,8 +222,6 @@
 
 .method public forEachSubtract(Landroid/renderscript/Allocation;Landroid/renderscript/Allocation;)V
     .locals 1
-    .param p1    # Landroid/renderscript/Allocation;
-    .param p2    # Landroid/renderscript/Allocation;
 
     const/16 v0, 0x23
 
@@ -267,8 +232,6 @@
 
 .method public forEachXor(Landroid/renderscript/Allocation;Landroid/renderscript/Allocation;)V
     .locals 1
-    .param p1    # Landroid/renderscript/Allocation;
-    .param p2    # Landroid/renderscript/Allocation;
 
     const/16 v0, 0xb
 

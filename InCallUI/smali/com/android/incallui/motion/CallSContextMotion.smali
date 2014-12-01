@@ -54,7 +54,6 @@
 
 .method static synthetic access$000(Z)V
     .locals 0
-    .param p0    # Z
 
     invoke-static {p0}, Lcom/android/incallui/motion/CallSContextMotion;->doActionPutUpDown(Z)V
 
@@ -130,7 +129,6 @@
 
 .method private static doActionPutUpDown(Z)V
     .locals 7
-    .param p0    # Z
 
     const/4 v3, 0x1
 
@@ -229,8 +227,6 @@
 
 .method private static log(Ljava/lang/String;Z)V
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Z
 
     const-string v0, "CallSContextMotion"
 
@@ -241,7 +237,6 @@
 
 .method public static startPutDownListening(Landroid/content/Context;)V
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     sget-object v1, Lcom/android/incallui/motion/CallSContextMotion;->lock:Ljava/lang/Object;
 
@@ -374,7 +369,6 @@
 
 .method public static stopPutDownListening(Landroid/content/Context;)V
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -385,8 +379,6 @@
 
 .method public static stopPutDownListening(Landroid/content/Context;Z)V
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
 
     const/4 v4, 0x1
 

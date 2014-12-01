@@ -48,7 +48,6 @@
 # direct methods
 .method constructor <init>(Landroid/location/LocationManager;Landroid/location/GpsStatus$Listener;)V
     .locals 1
-    .param p2    # Landroid/location/GpsStatus$Listener;
 
     iput-object p1, p0, Landroid/location/LocationManager$GpsStatusListenerTransport;->this$0:Landroid/location/LocationManager;
 
@@ -71,7 +70,6 @@
 
 .method constructor <init>(Landroid/location/LocationManager;Landroid/location/GpsStatus$NmeaListener;)V
     .locals 1
-    .param p2    # Landroid/location/GpsStatus$NmeaListener;
 
     iput-object p1, p0, Landroid/location/LocationManager$GpsStatusListenerTransport;->this$0:Landroid/location/LocationManager;
 
@@ -100,7 +98,6 @@
 
 .method static synthetic access$300(Landroid/location/LocationManager$GpsStatusListenerTransport;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Landroid/location/LocationManager$GpsStatusListenerTransport;
 
     iget-object v0, p0, Landroid/location/LocationManager$GpsStatusListenerTransport;->mNmeaBuffer:Ljava/util/ArrayList;
 
@@ -109,7 +106,6 @@
 
 .method static synthetic access$400(Landroid/location/LocationManager$GpsStatusListenerTransport;)Landroid/location/GpsStatus$NmeaListener;
     .locals 1
-    .param p0    # Landroid/location/LocationManager$GpsStatusListenerTransport;
 
     iget-object v0, p0, Landroid/location/LocationManager$GpsStatusListenerTransport;->mNmeaListener:Landroid/location/GpsStatus$NmeaListener;
 
@@ -118,7 +114,6 @@
 
 .method static synthetic access$500(Landroid/location/LocationManager$GpsStatusListenerTransport;)Landroid/location/GpsStatus$Listener;
     .locals 1
-    .param p0    # Landroid/location/LocationManager$GpsStatusListenerTransport;
 
     iget-object v0, p0, Landroid/location/LocationManager$GpsStatusListenerTransport;->mListener:Landroid/location/GpsStatus$Listener;
 
@@ -129,7 +124,6 @@
 # virtual methods
 .method public onFirstFix(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Landroid/location/LocationManager$GpsStatusListenerTransport;->mListener:Landroid/location/GpsStatus$Listener;
 
@@ -208,8 +202,6 @@
 
 .method public onNmeaReceived(JLjava/lang/String;)V
     .locals 5
-    .param p1    # J
-    .param p3    # Ljava/lang/String;
 
     const/16 v4, 0x3e8
 
@@ -264,15 +256,6 @@
 
 .method public onSvStatusChanged(I[I[F[F[FIII[I)V
     .locals 11
-    .param p1    # I
-    .param p2    # [I
-    .param p3    # [F
-    .param p4    # [F
-    .param p5    # [F
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
-    .param p9    # [I
 
     iget-object v0, p0, Landroid/location/LocationManager$GpsStatusListenerTransport;->mListener:Landroid/location/GpsStatus$Listener;
 

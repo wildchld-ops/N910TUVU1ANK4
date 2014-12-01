@@ -45,12 +45,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/pm/PackageManagerService;Landroid/net/Uri;Landroid/content/pm/IPackageInstallObserver;ILjava/lang/String;Landroid/content/pm/ManifestDigest;Landroid/os/UserHandle;)V
     .locals 2
-    .param p2    # Landroid/net/Uri;
-    .param p3    # Landroid/content/pm/IPackageInstallObserver;
-    .param p4    # I
-    .param p5    # Ljava/lang/String;
-    .param p6    # Landroid/content/pm/ManifestDigest;
-    .param p7    # Landroid/os/UserHandle;
 
     const/4 v1, 0x0
 
@@ -89,13 +83,6 @@
 
 .method constructor <init>(Lcom/android/server/pm/PackageManagerService;Landroid/net/Uri;Landroid/content/pm/IPackageInstallObserver;ILjava/lang/String;Ljava/lang/String;Landroid/content/pm/ManifestDigest;Landroid/os/UserHandle;)V
     .locals 2
-    .param p2    # Landroid/net/Uri;
-    .param p3    # Landroid/content/pm/IPackageInstallObserver;
-    .param p4    # I
-    .param p5    # Ljava/lang/String;
-    .param p6    # Ljava/lang/String;
-    .param p7    # Landroid/content/pm/ManifestDigest;
-    .param p8    # Landroid/os/UserHandle;
 
     const/4 v1, 0x0
 
@@ -237,7 +224,6 @@
 
 .method doPostCopy(I)I
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -275,8 +261,6 @@
 
 .method getNewDexPath(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p0}, Lcom/android/server/pm/PackageManagerService$InstallArgs;->getDexPath()Ljava/lang/String;
 

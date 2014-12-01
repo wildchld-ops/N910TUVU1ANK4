@@ -33,8 +33,6 @@
 # virtual methods
 .method public declared-synchronized onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 15
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     monitor-enter p0
 

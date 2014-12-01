@@ -59,7 +59,6 @@
 # direct methods
 .method public constructor <init>(Landroid/widget/HoverPopupWindow;Landroid/content/Context;)V
     .locals 2
-    .param p2    # Landroid/content/Context;
 
     const/4 v1, -0x1
 
@@ -90,7 +89,6 @@
 # virtual methods
 .method public draw(Landroid/graphics/Canvas;)V
     .locals 6
-    .param p1    # Landroid/graphics/Canvas;
 
     invoke-super {p0, p1}, Landroid/widget/FrameLayout;->draw(Landroid/graphics/Canvas;)V
 
@@ -312,8 +310,6 @@
 
 .method protected pointInValidPaddingArea(II)Z
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -386,7 +382,6 @@
 
 .method public setChildImageFadeHeight(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/widget/HoverPopupWindow$HoverPopupContainer;->mChildImageFadeHeight:I
 
@@ -395,7 +390,6 @@
 
 .method public setFHGuideLineForCotainer(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/widget/HoverPopupWindow$HoverPopupContainer;->mIsFHEnabled:Z
 
@@ -404,8 +398,6 @@
 
 .method public setGuideLine(II)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     const/4 v2, 0x0
 
@@ -505,12 +497,6 @@
 
 .method public setGuideLine(IIIIZZ)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Z
-    .param p6    # Z
 
     iput p1, p0, Landroid/widget/HoverPopupWindow$HoverPopupContainer;->mLineStartX:I
 
@@ -529,8 +515,6 @@
 
 .method public setGuideLineEndPoint(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     iput p1, p0, Landroid/widget/HoverPopupWindow$HoverPopupContainer;->mLineEndX:I
 
@@ -541,7 +525,6 @@
 
 .method public setOverTopForCotainer(Z)V
     .locals 3
-    .param p1    # Z
 
     const-string v0, "HoverPopupContainer"
 

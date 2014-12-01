@@ -31,7 +31,6 @@
 # direct methods
 .method public constructor <init>(I)V
     .locals 1
-    .param p1    # I
 
     const v0, 0xffffff
 
@@ -42,8 +41,6 @@
 
 .method public constructor <init>(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0}, Landroid/text/style/CharacterStyle;-><init>()V
 
@@ -62,7 +59,6 @@
 
 .method private checkType(I)Z
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -88,8 +84,6 @@
 
 .method private getMarqueeColor(II)I
     .locals 8
-    .param p1    # I
-    .param p2    # I
 
     const v5, 0xffffff
 
@@ -181,7 +175,6 @@
 
 .method public resetColor(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Lcom/android/ex/editstyledtext/EditStyledText$EditStyledTextSpans$MarqueeSpan;->mType:I
 
@@ -196,7 +189,6 @@
 
 .method public updateDrawState(Landroid/text/TextPaint;)V
     .locals 1
-    .param p1    # Landroid/text/TextPaint;
 
     iget v0, p0, Lcom/android/ex/editstyledtext/EditStyledText$EditStyledTextSpans$MarqueeSpan;->mMarqueeColor:I
 

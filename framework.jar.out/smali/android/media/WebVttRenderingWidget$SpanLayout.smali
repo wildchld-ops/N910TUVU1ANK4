@@ -23,8 +23,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;[Landroid/media/TextTrackCueSpan;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # [Landroid/media/TextTrackCueSpan;
 
     invoke-direct {p0, p1}, Lcom/android/internal/widget/SubtitleView;-><init>(Landroid/content/Context;)V
 
@@ -45,8 +43,6 @@
 # virtual methods
 .method public setCaptionStyle(Landroid/view/accessibility/CaptioningManager$CaptionStyle;F)V
     .locals 1
-    .param p1    # Landroid/view/accessibility/CaptioningManager$CaptionStyle;
-    .param p2    # F
 
     iget v0, p1, Landroid/view/accessibility/CaptioningManager$CaptionStyle;->backgroundColor:I
 

@@ -37,8 +37,6 @@
 
 .method synthetic constructor <init>(Landroid/media/RemoteControlClient;Landroid/media/RemoteControlClient$1;)V
     .locals 0
-    .param p1    # Landroid/media/RemoteControlClient;
-    .param p2    # Landroid/media/RemoteControlClient$1;
 
     invoke-direct {p0, p1}, Landroid/media/RemoteControlClient$MetadataEditor;-><init>(Landroid/media/RemoteControlClient;)V
 
@@ -280,8 +278,6 @@
 
 .method public bridge synthetic putBitmap(ILandroid/graphics/Bitmap;)Landroid/media/MediaMetadataEditor;
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/graphics/Bitmap;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;
@@ -297,8 +293,6 @@
 
 .method public declared-synchronized putBitmap(ILandroid/graphics/Bitmap;)Landroid/media/RemoteControlClient$MetadataEditor;
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/graphics/Bitmap;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;
@@ -326,8 +320,6 @@
 
 .method public bridge synthetic putLong(IJ)Landroid/media/MediaMetadataEditor;
     .locals 1
-    .param p1    # I
-    .param p2    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;
@@ -343,8 +335,6 @@
 
 .method public declared-synchronized putLong(IJ)Landroid/media/RemoteControlClient$MetadataEditor;
     .locals 1
-    .param p1    # I
-    .param p2    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;
@@ -372,8 +362,6 @@
 
 .method public bridge synthetic putString(ILjava/lang/String;)Landroid/media/MediaMetadataEditor;
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;
@@ -389,8 +377,6 @@
 
 .method public declared-synchronized putString(ILjava/lang/String;)Landroid/media/RemoteControlClient$MetadataEditor;
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;

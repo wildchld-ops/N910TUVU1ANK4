@@ -31,7 +31,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/incallui/ImageCache$ImageCacheParams;)V
     .locals 0
-    .param p1    # Lcom/android/incallui/ImageCache$ImageCacheParams;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,8 +41,6 @@
 
 .method public static findOrCreateCache(Landroid/app/FragmentManager;Lcom/android/incallui/ImageCache$ImageCacheParams;)Lcom/android/incallui/ImageCache;
     .locals 2
-    .param p0    # Landroid/app/FragmentManager;
-    .param p1    # Lcom/android/incallui/ImageCache$ImageCacheParams;
 
     invoke-static {p0}, Lcom/android/incallui/ImageCache;->findOrCreateRetainFragment(Landroid/app/FragmentManager;)Lcom/android/incallui/ImageCache$RetainFragment;
 
@@ -69,7 +66,6 @@
 
 .method public static findOrCreateRetainFragment(Landroid/app/FragmentManager;)Lcom/android/incallui/ImageCache$RetainFragment;
     .locals 3
-    .param p0    # Landroid/app/FragmentManager;
 
     const-string v1, "ImageCache"
 
@@ -103,7 +99,6 @@
 
 .method public static getBitmapSize(Landroid/graphics/Bitmap;)I
     .locals 1
-    .param p0    # Landroid/graphics/Bitmap;
     .annotation build Landroid/annotation/TargetApi;
         value = 0xc
     .end annotation
@@ -117,7 +112,6 @@
 
 .method private init(Lcom/android/incallui/ImageCache$ImageCacheParams;)V
     .locals 3
-    .param p1    # Lcom/android/incallui/ImageCache$ImageCacheParams;
 
     iput-object p1, p0, Lcom/android/incallui/ImageCache;->mCacheParams:Lcom/android/incallui/ImageCache$ImageCacheParams;
 
@@ -177,8 +171,6 @@
 # virtual methods
 .method public addBitmapToCache(Ljava/lang/String;Landroid/graphics/Bitmap;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/graphics/Bitmap;
 
     if-eqz p1, :cond_0
 
@@ -231,7 +223,6 @@
 
 .method public getBitmapFromMemCache(Ljava/lang/String;)Landroid/graphics/Bitmap;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/incallui/ImageCache;->mMemoryCache:Landroid/util/LruCache;
 

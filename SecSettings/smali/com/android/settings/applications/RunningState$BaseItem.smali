@@ -45,8 +45,6 @@
 # direct methods
 .method public constructor <init>(ZI)V
     .locals 0
-    .param p1    # Z
-    .param p2    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -61,8 +59,6 @@
 # virtual methods
 .method public loadIcon(Landroid/content/Context;Lcom/android/settings/applications/RunningState;)Landroid/graphics/drawable/Drawable;
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/settings/applications/RunningState;
 
     iget-object v0, p0, Lcom/android/settings/applications/RunningState$BaseItem;->mPackageInfo:Landroid/content/pm/PackageItemInfo;
 

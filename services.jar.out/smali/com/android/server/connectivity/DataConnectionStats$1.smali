@@ -33,7 +33,6 @@
 # virtual methods
 .method public onDataActivity(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/connectivity/DataConnectionStats$1;->this$0:Lcom/android/server/connectivity/DataConnectionStats;
 
@@ -45,8 +44,6 @@
 
 .method public onDataConnectionStateChanged(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/server/connectivity/DataConnectionStats$1;->this$0:Lcom/android/server/connectivity/DataConnectionStats;
 
@@ -63,7 +60,6 @@
 
 .method public onServiceStateChanged(Landroid/telephony/ServiceState;)V
     .locals 1
-    .param p1    # Landroid/telephony/ServiceState;
 
     iget-object v0, p0, Lcom/android/server/connectivity/DataConnectionStats$1;->this$0:Lcom/android/server/connectivity/DataConnectionStats;
 
@@ -80,7 +76,6 @@
 
 .method public onSignalStrengthsChanged(Landroid/telephony/SignalStrength;)V
     .locals 1
-    .param p1    # Landroid/telephony/SignalStrength;
 
     iget-object v0, p0, Lcom/android/server/connectivity/DataConnectionStats$1;->this$0:Lcom/android/server/connectivity/DataConnectionStats;
 

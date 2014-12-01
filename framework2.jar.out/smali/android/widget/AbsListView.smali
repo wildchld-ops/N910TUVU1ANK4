@@ -619,7 +619,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 9
-    .param p1    # Landroid/content/Context;
 
     const-wide/16 v7, 0x0
 
@@ -969,8 +968,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const v0, 0x101006a
 
@@ -981,9 +978,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 11
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/AdapterView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
@@ -1688,8 +1682,6 @@
 
 .method static synthetic access$000(Landroid/widget/AbsListView;Z)V
     .locals 0
-    .param p0    # Landroid/widget/AbsListView;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Landroid/widget/AbsListView;->setFastScrollerEnabledUiThread(Z)V
 
@@ -1698,8 +1690,6 @@
 
 .method static synthetic access$100(Landroid/widget/AbsListView;Z)V
     .locals 0
-    .param p0    # Landroid/widget/AbsListView;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Landroid/widget/AbsListView;->setFastScrollerAlwaysVisibleUiThread(Z)V
 
@@ -1708,9 +1698,6 @@
 
 .method static synthetic access$1000(Landroid/widget/AbsListView;II)V
     .locals 0
-    .param p0    # Landroid/widget/AbsListView;
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Landroid/widget/AbsListView;->addToPressItemListArray(II)V
 
@@ -1719,7 +1706,6 @@
 
 .method static synthetic access$1100(Landroid/widget/AbsListView;)I
     .locals 1
-    .param p0    # Landroid/widget/AbsListView;
 
     iget v0, p0, Landroid/widget/AbsListView;->mFirstPressedPoint:I
 
@@ -1728,8 +1714,6 @@
 
 .method static synthetic access$1102(Landroid/widget/AbsListView;I)I
     .locals 0
-    .param p0    # Landroid/widget/AbsListView;
-    .param p1    # I
 
     iput p1, p0, Landroid/widget/AbsListView;->mFirstPressedPoint:I
 
@@ -1738,8 +1722,6 @@
 
 .method static synthetic access$1202(Landroid/widget/AbsListView;Z)Z
     .locals 0
-    .param p0    # Landroid/widget/AbsListView;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/widget/AbsListView;->mIsChildViewEnabled:Z
 
@@ -1748,7 +1730,6 @@
 
 .method static synthetic access$1300(Landroid/widget/AbsListView;)Landroid/widget/AbsListView$CheckForLongPress;
     .locals 1
-    .param p0    # Landroid/widget/AbsListView;
 
     iget-object v0, p0, Landroid/widget/AbsListView;->mPendingCheckForLongPress:Landroid/widget/AbsListView$CheckForLongPress;
 
@@ -1757,8 +1738,6 @@
 
 .method static synthetic access$1302(Landroid/widget/AbsListView;Landroid/widget/AbsListView$CheckForLongPress;)Landroid/widget/AbsListView$CheckForLongPress;
     .locals 0
-    .param p0    # Landroid/widget/AbsListView;
-    .param p1    # Landroid/widget/AbsListView$CheckForLongPress;
 
     iput-object p1, p0, Landroid/widget/AbsListView;->mPendingCheckForLongPress:Landroid/widget/AbsListView$CheckForLongPress;
 
@@ -1767,8 +1746,6 @@
 
 .method static synthetic access$1602(Landroid/widget/AbsListView;Ljava/lang/Runnable;)Ljava/lang/Runnable;
     .locals 0
-    .param p0    # Landroid/widget/AbsListView;
-    .param p1    # Ljava/lang/Runnable;
 
     iput-object p1, p0, Landroid/widget/AbsListView;->mTouchModeReset:Ljava/lang/Runnable;
 
@@ -1777,7 +1754,6 @@
 
 .method static synthetic access$1700(Landroid/widget/AbsListView;)I
     .locals 1
-    .param p0    # Landroid/widget/AbsListView;
 
     iget v0, p0, Landroid/widget/AbsListView;->mActivePointerId:I
 
@@ -1786,7 +1762,6 @@
 
 .method static synthetic access$1800(Landroid/widget/AbsListView;)Landroid/view/VelocityTracker;
     .locals 1
-    .param p0    # Landroid/widget/AbsListView;
 
     iget-object v0, p0, Landroid/widget/AbsListView;->mVelocityTracker:Landroid/view/VelocityTracker;
 
@@ -1795,7 +1770,6 @@
 
 .method static synthetic access$2000(Landroid/widget/AbsListView;)I
     .locals 1
-    .param p0    # Landroid/widget/AbsListView;
 
     iget v0, p0, Landroid/widget/AbsListView;->mMaximumVelocity:I
 
@@ -1804,7 +1778,6 @@
 
 .method static synthetic access$2100(Landroid/widget/AbsListView;)I
     .locals 1
-    .param p0    # Landroid/widget/AbsListView;
 
     iget v0, p0, Landroid/widget/AbsListView;->mMinimumVelocity:I
 
@@ -1813,7 +1786,6 @@
 
 .method static synthetic access$2200(Landroid/widget/AbsListView;)Z
     .locals 1
-    .param p0    # Landroid/widget/AbsListView;
 
     iget-boolean v0, p0, Landroid/widget/AbsListView;->USE_SET_INTEGRATOR_HAPTIC:Z
 
@@ -1822,7 +1794,6 @@
 
 .method static synthetic access$2300(Landroid/widget/AbsListView;)Landroid/view/HapticPreDrawListener;
     .locals 1
-    .param p0    # Landroid/widget/AbsListView;
 
     iget-object v0, p0, Landroid/widget/AbsListView;->mHapticPreDrawListener:Landroid/view/HapticPreDrawListener;
 
@@ -1831,7 +1802,6 @@
 
 .method static synthetic access$2400(Landroid/widget/AbsListView;)Landroid/os/StrictMode$Span;
     .locals 1
-    .param p0    # Landroid/widget/AbsListView;
 
     iget-object v0, p0, Landroid/widget/AbsListView;->mFlingStrictSpan:Landroid/os/StrictMode$Span;
 
@@ -1840,8 +1810,6 @@
 
 .method static synthetic access$2402(Landroid/widget/AbsListView;Landroid/os/StrictMode$Span;)Landroid/os/StrictMode$Span;
     .locals 0
-    .param p0    # Landroid/widget/AbsListView;
-    .param p1    # Landroid/os/StrictMode$Span;
 
     iput-object p1, p0, Landroid/widget/AbsListView;->mFlingStrictSpan:Landroid/os/StrictMode$Span;
 
@@ -1850,7 +1818,6 @@
 
 .method static synthetic access$2500(Landroid/widget/AbsListView;)I
     .locals 1
-    .param p0    # Landroid/widget/AbsListView;
 
     iget v0, p0, Landroid/view/View;->mScrollY:I
 
@@ -1859,7 +1826,6 @@
 
 .method static synthetic access$2600(Landroid/widget/AbsListView;)I
     .locals 1
-    .param p0    # Landroid/widget/AbsListView;
 
     iget v0, p0, Landroid/view/View;->mScrollY:I
 
@@ -1868,7 +1834,6 @@
 
 .method static synthetic access$2700(Landroid/widget/AbsListView;)I
     .locals 1
-    .param p0    # Landroid/widget/AbsListView;
 
     iget v0, p0, Landroid/view/View;->mScrollY:I
 
@@ -1877,7 +1842,6 @@
 
 .method static synthetic access$2800(Landroid/widget/AbsListView;)Z
     .locals 1
-    .param p0    # Landroid/widget/AbsListView;
 
     invoke-direct {p0}, Landroid/widget/AbsListView;->contentFits()Z
 
@@ -1888,7 +1852,6 @@
 
 .method static synthetic access$2900(Landroid/widget/AbsListView;)Landroid/widget/EdgeEffect;
     .locals 1
-    .param p0    # Landroid/widget/AbsListView;
 
     iget-object v0, p0, Landroid/widget/AbsListView;->mEdgeGlowTop:Landroid/widget/EdgeEffect;
 
@@ -1897,7 +1860,6 @@
 
 .method static synthetic access$3000(Landroid/widget/AbsListView;)Landroid/widget/EdgeEffect;
     .locals 1
-    .param p0    # Landroid/widget/AbsListView;
 
     iget-object v0, p0, Landroid/widget/AbsListView;->mEdgeGlowBottom:Landroid/widget/EdgeEffect;
 
@@ -1906,7 +1868,6 @@
 
 .method static synthetic access$3100(Landroid/widget/AbsListView;)V
     .locals 0
-    .param p0    # Landroid/widget/AbsListView;
 
     invoke-direct {p0}, Landroid/widget/AbsListView;->clearScrollingCache()V
 
@@ -1915,7 +1876,6 @@
 
 .method static synthetic access$3200(Landroid/widget/AbsListView;)I
     .locals 1
-    .param p0    # Landroid/widget/AbsListView;
 
     iget v0, p0, Landroid/view/View;->mPaddingBottom:I
 
@@ -1924,7 +1884,6 @@
 
 .method static synthetic access$3300(Landroid/widget/AbsListView;)I
     .locals 1
-    .param p0    # Landroid/widget/AbsListView;
 
     iget v0, p0, Landroid/view/View;->mPaddingTop:I
 
@@ -1933,7 +1892,6 @@
 
 .method static synthetic access$3400(Landroid/widget/AbsListView;)I
     .locals 1
-    .param p0    # Landroid/widget/AbsListView;
 
     iget v0, p0, Landroid/view/View;->mPaddingBottom:I
 
@@ -1942,7 +1900,6 @@
 
 .method static synthetic access$3500(Landroid/widget/AbsListView;)I
     .locals 1
-    .param p0    # Landroid/widget/AbsListView;
 
     iget v0, p0, Landroid/view/View;->mPaddingTop:I
 
@@ -1951,7 +1908,6 @@
 
 .method static synthetic access$3600(Landroid/widget/AbsListView;)I
     .locals 1
-    .param p0    # Landroid/widget/AbsListView;
 
     iget v0, p0, Landroid/view/View;->mScrollY:I
 
@@ -1960,16 +1916,6 @@
 
 .method static synthetic access$3700(Landroid/widget/AbsListView;IIIIIIIIZ)Z
     .locals 1
-    .param p0    # Landroid/widget/AbsListView;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
-    .param p9    # Z
 
     invoke-virtual/range {p0 .. p9}, Landroid/view/View;->overScrollBy(IIIIIIIIZ)Z
 
@@ -1980,7 +1926,6 @@
 
 .method static synthetic access$3800(Landroid/widget/AbsListView;)I
     .locals 1
-    .param p0    # Landroid/widget/AbsListView;
 
     iget v0, p0, Landroid/view/View;->mScrollY:I
 
@@ -1989,16 +1934,6 @@
 
 .method static synthetic access$3900(Landroid/widget/AbsListView;IIIIIIIIZ)Z
     .locals 1
-    .param p0    # Landroid/widget/AbsListView;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
-    .param p9    # Z
 
     invoke-virtual/range {p0 .. p9}, Landroid/view/View;->overScrollBy(IIIIIIIIZ)Z
 
@@ -2009,7 +1944,6 @@
 
 .method static synthetic access$400(Landroid/widget/AbsListView;)I
     .locals 1
-    .param p0    # Landroid/widget/AbsListView;
 
     invoke-virtual {p0}, Landroid/view/View;->getWindowAttachCount()I
 
@@ -2020,7 +1954,6 @@
 
 .method static synthetic access$4000(Landroid/widget/AbsListView;)Landroid/content/Context;
     .locals 1
-    .param p0    # Landroid/widget/AbsListView;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -2029,7 +1962,6 @@
 
 .method static synthetic access$4100(Landroid/widget/AbsListView;)Landroid/widget/AbsListView$FlingRunnable;
     .locals 1
-    .param p0    # Landroid/widget/AbsListView;
 
     iget-object v0, p0, Landroid/widget/AbsListView;->mFlingRunnable:Landroid/widget/AbsListView$FlingRunnable;
 
@@ -2038,7 +1970,6 @@
 
 .method static synthetic access$4200(Landroid/widget/AbsListView;)Ljava/util/LinkedList;
     .locals 1
-    .param p0    # Landroid/widget/AbsListView;
 
     iget-object v0, p0, Landroid/widget/AbsListView;->mTwTwScrollRemains:Ljava/util/LinkedList;
 
@@ -2047,8 +1978,6 @@
 
 .method static synthetic access$4400(Landroid/widget/AbsListView;Z)V
     .locals 0
-    .param p0    # Landroid/widget/AbsListView;
-    .param p1    # Z
 
     invoke-virtual {p0, p1}, Landroid/view/ViewGroup;->setChildrenDrawnWithCacheEnabled(Z)V
 
@@ -2057,7 +1986,6 @@
 
 .method static synthetic access$4500(Landroid/widget/AbsListView;)I
     .locals 1
-    .param p0    # Landroid/widget/AbsListView;
 
     iget v0, p0, Landroid/view/ViewGroup;->mPersistentDrawingCache:I
 
@@ -2066,8 +1994,6 @@
 
 .method static synthetic access$4600(Landroid/widget/AbsListView;Z)V
     .locals 0
-    .param p0    # Landroid/widget/AbsListView;
-    .param p1    # Z
 
     invoke-virtual {p0, p1}, Landroid/view/ViewGroup;->setChildrenDrawingCacheEnabled(Z)V
 
@@ -2076,7 +2002,6 @@
 
 .method static synthetic access$4700(Landroid/widget/AbsListView;)Landroid/widget/EditText;
     .locals 1
-    .param p0    # Landroid/widget/AbsListView;
 
     invoke-direct {p0}, Landroid/widget/AbsListView;->getTextFilterInput()Landroid/widget/EditText;
 
@@ -2087,7 +2012,6 @@
 
 .method static synthetic access$4800(Landroid/widget/AbsListView;)Landroid/view/inputmethod/InputConnection;
     .locals 1
-    .param p0    # Landroid/widget/AbsListView;
 
     iget-object v0, p0, Landroid/widget/AbsListView;->mDefInputConnection:Landroid/view/inputmethod/InputConnection;
 
@@ -2096,7 +2020,6 @@
 
 .method static synthetic access$500(Landroid/widget/AbsListView;)I
     .locals 1
-    .param p0    # Landroid/widget/AbsListView;
 
     invoke-virtual {p0}, Landroid/view/View;->getWindowAttachCount()I
 
@@ -2107,7 +2030,6 @@
 
 .method static synthetic access$5000(Landroid/widget/AbsListView;)Landroid/widget/FastScroller;
     .locals 1
-    .param p0    # Landroid/widget/AbsListView;
 
     iget-object v0, p0, Landroid/widget/AbsListView;->mFastScroller:Landroid/widget/FastScroller;
 
@@ -2116,7 +2038,6 @@
 
 .method static synthetic access$5100(Landroid/widget/AbsListView;)Z
     .locals 1
-    .param p0    # Landroid/widget/AbsListView;
 
     iget-boolean v0, p0, Landroid/widget/AbsListView;->mTwCustomMultiChoiceMode:Z
 
@@ -2125,9 +2046,6 @@
 
 .method static synthetic access$5200(Landroid/widget/AbsListView;Landroid/view/View;Z)V
     .locals 0
-    .param p0    # Landroid/widget/AbsListView;
-    .param p1    # Landroid/view/View;
-    .param p2    # Z
 
     invoke-virtual {p0, p1, p2}, Landroid/view/ViewGroup;->removeDetachedView(Landroid/view/View;Z)V
 
@@ -2136,9 +2054,6 @@
 
 .method static synthetic access$5300(Landroid/widget/AbsListView;Landroid/view/View;Z)V
     .locals 0
-    .param p0    # Landroid/widget/AbsListView;
-    .param p1    # Landroid/view/View;
-    .param p2    # Z
 
     invoke-virtual {p0, p1, p2}, Landroid/view/ViewGroup;->removeDetachedView(Landroid/view/View;Z)V
 
@@ -2147,9 +2062,6 @@
 
 .method static synthetic access$5400(Landroid/widget/AbsListView;Landroid/view/View;Z)V
     .locals 0
-    .param p0    # Landroid/widget/AbsListView;
-    .param p1    # Landroid/view/View;
-    .param p2    # Z
 
     invoke-virtual {p0, p1, p2}, Landroid/view/ViewGroup;->removeDetachedView(Landroid/view/View;Z)V
 
@@ -2158,9 +2070,6 @@
 
 .method static synthetic access$5500(Landroid/widget/AbsListView;Landroid/view/View;Z)V
     .locals 0
-    .param p0    # Landroid/widget/AbsListView;
-    .param p1    # Landroid/view/View;
-    .param p2    # Z
 
     invoke-virtual {p0, p1, p2}, Landroid/view/ViewGroup;->removeDetachedView(Landroid/view/View;Z)V
 
@@ -2169,9 +2078,6 @@
 
 .method static synthetic access$5600(Landroid/widget/AbsListView;Landroid/view/View;Z)V
     .locals 0
-    .param p0    # Landroid/widget/AbsListView;
-    .param p1    # Landroid/view/View;
-    .param p2    # Z
 
     invoke-virtual {p0, p1, p2}, Landroid/view/ViewGroup;->removeDetachedView(Landroid/view/View;Z)V
 
@@ -2180,9 +2086,6 @@
 
 .method static synthetic access$5700(Landroid/widget/AbsListView;Landroid/view/View;Z)V
     .locals 0
-    .param p0    # Landroid/widget/AbsListView;
-    .param p1    # Landroid/view/View;
-    .param p2    # Z
 
     invoke-virtual {p0, p1, p2}, Landroid/view/ViewGroup;->removeDetachedView(Landroid/view/View;Z)V
 
@@ -2191,9 +2094,6 @@
 
 .method static synthetic access$5800(Landroid/widget/AbsListView;Landroid/view/View;Z)V
     .locals 0
-    .param p0    # Landroid/widget/AbsListView;
-    .param p1    # Landroid/view/View;
-    .param p2    # Z
 
     invoke-virtual {p0, p1, p2}, Landroid/view/ViewGroup;->removeDetachedView(Landroid/view/View;Z)V
 
@@ -2202,9 +2102,6 @@
 
 .method static synthetic access$5900(Landroid/widget/AbsListView;Landroid/view/View;Z)V
     .locals 0
-    .param p0    # Landroid/widget/AbsListView;
-    .param p1    # Landroid/view/View;
-    .param p2    # Z
 
     invoke-virtual {p0, p1, p2}, Landroid/view/ViewGroup;->removeDetachedView(Landroid/view/View;Z)V
 
@@ -2213,9 +2110,6 @@
 
 .method static synthetic access$6000(Landroid/widget/AbsListView;Landroid/view/View;Z)V
     .locals 0
-    .param p0    # Landroid/widget/AbsListView;
-    .param p1    # Landroid/view/View;
-    .param p2    # Z
 
     invoke-virtual {p0, p1, p2}, Landroid/view/ViewGroup;->removeDetachedView(Landroid/view/View;Z)V
 
@@ -2224,9 +2118,6 @@
 
 .method static synthetic access$6100(Landroid/widget/AbsListView;Landroid/view/View;Z)V
     .locals 0
-    .param p0    # Landroid/widget/AbsListView;
-    .param p1    # Landroid/view/View;
-    .param p2    # Z
 
     invoke-virtual {p0, p1, p2}, Landroid/view/ViewGroup;->removeDetachedView(Landroid/view/View;Z)V
 
@@ -2235,7 +2126,6 @@
 
 .method static synthetic access$6200(Landroid/widget/AbsListView;)Z
     .locals 1
-    .param p0    # Landroid/widget/AbsListView;
 
     iget-boolean v0, p0, Landroid/widget/AbsListView;->mMotionEnable:Z
 
@@ -2244,7 +2134,6 @@
 
 .method static synthetic access$6300(Landroid/widget/AbsListView;)Z
     .locals 1
-    .param p0    # Landroid/widget/AbsListView;
 
     iget-boolean v0, p0, Landroid/widget/AbsListView;->mHasWindowFocusForMotion:Z
 
@@ -2253,7 +2142,6 @@
 
 .method static synthetic access$6400(Ljava/lang/String;)V
     .locals 0
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Landroid/widget/AbsListView;->log(Ljava/lang/String;)V
 
@@ -2262,8 +2150,6 @@
 
 .method static synthetic access$6500(Landroid/widget/AbsListView;Landroid/os/Message;)V
     .locals 0
-    .param p0    # Landroid/widget/AbsListView;
-    .param p1    # Landroid/os/Message;
 
     invoke-direct {p0, p1}, Landroid/widget/AbsListView;->handleMessage(Landroid/os/Message;)V
 
@@ -2272,7 +2158,6 @@
 
 .method static synthetic access$6600(Landroid/widget/AbsListView;)Landroid/content/Context;
     .locals 1
-    .param p0    # Landroid/widget/AbsListView;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -2281,7 +2166,6 @@
 
 .method static synthetic access$6700(Landroid/widget/AbsListView;)Landroid/content/Context;
     .locals 1
-    .param p0    # Landroid/widget/AbsListView;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -2290,7 +2174,6 @@
 
 .method static synthetic access$6800(Landroid/widget/AbsListView;)Landroid/content/Context;
     .locals 1
-    .param p0    # Landroid/widget/AbsListView;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -2299,7 +2182,6 @@
 
 .method static synthetic access$6900(Landroid/widget/AbsListView;)Landroid/content/Context;
     .locals 1
-    .param p0    # Landroid/widget/AbsListView;
 
     iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
@@ -2308,7 +2190,6 @@
 
 .method static synthetic access$700(Landroid/widget/AbsListView;)Z
     .locals 1
-    .param p0    # Landroid/widget/AbsListView;
 
     iget-boolean v0, p0, Landroid/widget/AbsListView;->mForcedClick:Z
 
@@ -2317,7 +2198,6 @@
 
 .method static synthetic access$7000(Landroid/widget/AbsListView;)I
     .locals 1
-    .param p0    # Landroid/widget/AbsListView;
 
     iget v0, p0, Landroid/widget/AbsListView;->mQCScrollTo:I
 
@@ -2326,7 +2206,6 @@
 
 .method static synthetic access$7100(Landroid/widget/AbsListView;)I
     .locals 1
-    .param p0    # Landroid/widget/AbsListView;
 
     iget v0, p0, Landroid/widget/AbsListView;->mQCScrollNext:I
 
@@ -2335,8 +2214,6 @@
 
 .method static synthetic access$7102(Landroid/widget/AbsListView;I)I
     .locals 0
-    .param p0    # Landroid/widget/AbsListView;
-    .param p1    # I
 
     iput p1, p0, Landroid/widget/AbsListView;->mQCScrollNext:I
 
@@ -2345,7 +2222,6 @@
 
 .method static synthetic access$7200(Landroid/widget/AbsListView;)I
     .locals 1
-    .param p0    # Landroid/widget/AbsListView;
 
     iget v0, p0, Landroid/widget/AbsListView;->mQCScrollFrom:I
 
@@ -2354,7 +2230,6 @@
 
 .method static synthetic access$7300(Landroid/widget/AbsListView;)I
     .locals 1
-    .param p0    # Landroid/widget/AbsListView;
 
     iget v0, p0, Landroid/widget/AbsListView;->mQCScrollingCount:I
 
@@ -2363,7 +2238,6 @@
 
 .method static synthetic access$7308(Landroid/widget/AbsListView;)I
     .locals 2
-    .param p0    # Landroid/widget/AbsListView;
 
     iget v0, p0, Landroid/widget/AbsListView;->mQCScrollingCount:I
 
@@ -2376,7 +2250,6 @@
 
 .method static synthetic access$7400(Landroid/widget/AbsListView;)Landroid/view/animation/DecelerateInterpolator;
     .locals 1
-    .param p0    # Landroid/widget/AbsListView;
 
     iget-object v0, p0, Landroid/widget/AbsListView;->mScrollInterpolator:Landroid/view/animation/DecelerateInterpolator;
 
@@ -2385,7 +2258,6 @@
 
 .method static synthetic access$7500(Landroid/widget/AbsListView;)I
     .locals 1
-    .param p0    # Landroid/widget/AbsListView;
 
     iget v0, p0, Landroid/widget/AbsListView;->mQCScrollDirection:I
 
@@ -2394,7 +2266,6 @@
 
 .method static synthetic access$7600(Landroid/widget/AbsListView;)Ljava/lang/Runnable;
     .locals 1
-    .param p0    # Landroid/widget/AbsListView;
 
     iget-object v0, p0, Landroid/widget/AbsListView;->mQCScrollRunnable:Ljava/lang/Runnable;
 
@@ -2403,7 +2274,6 @@
 
 .method static synthetic access$800(Landroid/widget/AbsListView;)Z
     .locals 1
-    .param p0    # Landroid/widget/AbsListView;
 
     iget-boolean v0, p0, Landroid/widget/AbsListView;->mIsShiftkeyPressed:Z
 
@@ -2412,7 +2282,6 @@
 
 .method static synthetic access$900(Landroid/widget/AbsListView;)Z
     .locals 1
-    .param p0    # Landroid/widget/AbsListView;
 
     iget-boolean v0, p0, Landroid/widget/AbsListView;->mIsCtrlkeyPressed:Z
 
@@ -2421,8 +2290,6 @@
 
 .method private addToPressItemListArray(II)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -2740,7 +2607,6 @@
 
 .method private createTextFilter(Z)V
     .locals 4
-    .param p1    # Z
 
     const/4 v3, 0x0
 
@@ -2929,7 +2795,6 @@
 
 .method private drawQuickController(Landroid/graphics/Canvas;)V
     .locals 6
-    .param p1    # Landroid/graphics/Canvas;
 
     const/4 v5, 0x2
 
@@ -2994,7 +2859,6 @@
 
 .method private drawSelector(Landroid/graphics/Canvas;)V
     .locals 9
-    .param p1    # Landroid/graphics/Canvas;
 
     new-instance v4, Landroid/graphics/Rect;
 
@@ -3110,9 +2974,6 @@
 
 .method static getDistance(Landroid/graphics/Rect;Landroid/graphics/Rect;I)I
     .locals 8
-    .param p0    # Landroid/graphics/Rect;
-    .param p1    # Landroid/graphics/Rect;
-    .param p2    # I
 
     sparse-switch p2, :sswitch_data_0
 
@@ -3350,7 +3211,6 @@
 
 .method private handleMessage(Landroid/os/Message;)V
     .locals 14
-    .param p1    # Landroid/os/Message;
 
     iget v9, p1, Landroid/os/Message;->what:I
 
@@ -4614,7 +4474,6 @@
 
 .method private static log(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "AbsListView"
 
@@ -4625,7 +4484,6 @@
 
 .method private onHoverDrawableState(Landroid/view/MotionEvent;)V
     .locals 17
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual/range {p1 .. p1}, Landroid/view/MotionEvent;->getAction()I
 
@@ -5093,7 +4951,6 @@
 
 .method private onSecondaryPointerUp(Landroid/view/MotionEvent;)V
     .locals 6
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v3, 0x0
 
@@ -5245,7 +5102,6 @@
 
 .method private onTouchDown(Landroid/view/MotionEvent;)V
     .locals 7
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v6, 0x0
 
@@ -5458,7 +5314,6 @@
 
 .method private onTouchMove(Landroid/view/MotionEvent;)V
     .locals 7
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v6, 0x0
 
@@ -5593,7 +5448,6 @@
 
 .method private onTouchUp(Landroid/view/MotionEvent;)V
     .locals 20
-    .param p1    # Landroid/view/MotionEvent;
 
     move-object/from16 v0, p0
 
@@ -6728,10 +6582,6 @@
 
 .method private positionSelector(IIII)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iget-object v0, p0, Landroid/widget/AbsListView;->mSelectorRect:Landroid/graphics/Rect;
 
@@ -6817,7 +6667,6 @@
 
 .method static retrieveFromScrap(Ljava/util/ArrayList;I)Landroid/view/View;
     .locals 4
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -6887,7 +6736,6 @@
 
 .method private scrollIfNeeded(I)V
     .locals 31
-    .param p1    # I
 
     move-object/from16 v0, p0
 
@@ -7639,7 +7487,6 @@
 
 .method private setFastScrollerAlwaysVisibleUiThread(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Landroid/widget/AbsListView;->mFastScroller:Landroid/widget/FastScroller;
 
@@ -7655,7 +7502,6 @@
 
 .method private setFastScrollerEnabledUiThread(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Landroid/widget/AbsListView;->mFastScroller:Landroid/widget/FastScroller;
 
@@ -7700,7 +7546,6 @@
 
 .method private setupQuickController(I)V
     .locals 21
-    .param p1    # I
 
     invoke-virtual/range {p0 .. p0}, Landroid/view/View;->getWidth()I
 
@@ -8209,7 +8054,6 @@
 
 .method private showPointerIcon(I)Z
     .locals 4
-    .param p1    # I
 
     const/4 v1, -0x1
 
@@ -8276,7 +8120,6 @@
 
 .method private startScrollIfNeeded(I)Z
     .locals 11
-    .param p1    # I
 
     const/4 v9, 0x1
 
@@ -8412,9 +8255,6 @@
 
 .method private twNotifyMultiSelectState(Landroid/view/View;IJ)Z
     .locals 9
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # J
 
     const/4 v8, 0x0
 
@@ -8561,7 +8401,6 @@
 # virtual methods
 .method public addExtraPaddingInBottomHoverArea(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -8594,7 +8433,6 @@
 
 .method public addExtraPaddingInTopHoverArea(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -8680,24 +8518,18 @@
 
 .method public afterTextChanged(Landroid/text/Editable;)V
     .locals 0
-    .param p1    # Landroid/text/Editable;
 
     return-void
 .end method
 
 .method public beforeTextChanged(Ljava/lang/CharSequence;III)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     return-void
 .end method
 
 .method public canScrollList(I)Z
     .locals 10
-    .param p1    # I
 
     const/4 v7, 0x1
 
@@ -8774,7 +8606,6 @@
 
 .method public checkInputConnectionProxy(Landroid/view/View;)Z
     .locals 1
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Landroid/widget/AbsListView;->mTextFilter:Landroid/widget/EditText;
 
@@ -8793,7 +8624,6 @@
 
 .method protected checkLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Z
     .locals 1
-    .param p1    # Landroid/view/ViewGroup$LayoutParams;
 
     instance-of v0, p1, Landroid/widget/AbsListView$LayoutParams;
 
@@ -9330,9 +9160,6 @@
 
 .method createContextMenuInfo(Landroid/view/View;IJ)Landroid/view/ContextMenu$ContextMenuInfo;
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # J
 
     new-instance v0, Landroid/widget/AdapterView$AdapterContextMenuInfo;
 
@@ -9353,7 +9180,6 @@
 
 .method public dispatchDragEvent(Landroid/view/DragEvent;)Z
     .locals 15
-    .param p1    # Landroid/view/DragEvent;
 
     invoke-virtual/range {p1 .. p1}, Landroid/view/DragEvent;->getAction()I
 
@@ -9943,7 +9769,6 @@
 
 .method protected dispatchDraw(Landroid/graphics/Canvas;)V
     .locals 14
-    .param p1    # Landroid/graphics/Canvas;
 
     const/4 v8, 0x1
 
@@ -10171,7 +9996,6 @@
 
 .method protected dispatchHoverEvent(Landroid/view/MotionEvent;)Z
     .locals 26
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual/range {p1 .. p1}, Landroid/view/MotionEvent;->getAction()I
 
@@ -12380,14 +12204,12 @@
 
 .method protected dispatchSetPressed(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method public dispatchTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 30
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual/range {p1 .. p1}, Landroid/view/MotionEvent;->getX()F
 
@@ -15145,7 +14967,6 @@
 
 .method public draw(Landroid/graphics/Canvas;)V
     .locals 11
-    .param p1    # Landroid/graphics/Canvas;
 
     const/4 v10, 0x0
 
@@ -15375,7 +15196,6 @@
 
 .method findClosestMotionRow(I)I
     .locals 3
-    .param p1    # I
 
     const/4 v2, -0x1
 
@@ -15412,7 +15232,6 @@
 
 .method public findViewByAccessibilityIdTraversal(I)Landroid/view/View;
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/view/View;->getAccessibilityViewId()I
 
@@ -15458,7 +15277,6 @@
 
 .method public bridge synthetic generateLayoutParams(Landroid/util/AttributeSet;)Landroid/view/ViewGroup$LayoutParams;
     .locals 1
-    .param p1    # Landroid/util/AttributeSet;
 
     invoke-virtual {p0, p1}, Landroid/widget/AbsListView;->generateLayoutParams(Landroid/util/AttributeSet;)Landroid/widget/AbsListView$LayoutParams;
 
@@ -15469,7 +15287,6 @@
 
 .method protected generateLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Landroid/view/ViewGroup$LayoutParams;
     .locals 1
-    .param p1    # Landroid/view/ViewGroup$LayoutParams;
 
     new-instance v0, Landroid/widget/AbsListView$LayoutParams;
 
@@ -15480,7 +15297,6 @@
 
 .method public generateLayoutParams(Landroid/util/AttributeSet;)Landroid/widget/AbsListView$LayoutParams;
     .locals 2
-    .param p1    # Landroid/util/AttributeSet;
 
     new-instance v0, Landroid/widget/AbsListView$LayoutParams;
 
@@ -15730,7 +15546,6 @@
 
 .method public getFocusedRect(Landroid/graphics/Rect;)V
     .locals 2
-    .param p1    # Landroid/graphics/Rect;
 
     invoke-virtual {p0}, Landroid/widget/AbsListView;->getSelectedView()Landroid/view/View;
 
@@ -16612,7 +16427,6 @@
 
 .method public isItemChecked(I)Z
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/widget/AbsListView;->mChoiceMode:I
 
@@ -17013,8 +16827,6 @@
 
 .method obtainView(I[Z)Landroid/view/View;
     .locals 13
-    .param p1    # I
-    .param p2    # [Z
 
     const-wide/16 v11, 0x8
 
@@ -17407,7 +17219,6 @@
 
 .method protected onCreateDrawableState(I)[I
     .locals 6
-    .param p1    # I
 
     iget-boolean v4, p0, Landroid/widget/AbsListView;->mIsChildViewEnabled:Z
 
@@ -17472,7 +17283,6 @@
 
 .method public onCreateInputConnection(Landroid/view/inputmethod/EditorInfo;)Landroid/view/inputmethod/InputConnection;
     .locals 2
-    .param p1    # Landroid/view/inputmethod/EditorInfo;
 
     invoke-virtual {p0}, Landroid/widget/AbsListView;->isTextFilterEnabled()Z
 
@@ -17678,7 +17488,6 @@
 
 .method protected onDisplayHint(I)V
     .locals 1
-    .param p1    # I
 
     invoke-super {p0, p1}, Landroid/view/View;->onDisplayHint(I)V
 
@@ -17751,7 +17560,6 @@
 
 .method public onFilterComplete(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/widget/AdapterView;->mSelectedPosition:I
 
@@ -17771,9 +17579,6 @@
 
 .method protected onFocusChanged(ZILandroid/graphics/Rect;)V
     .locals 1
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # Landroid/graphics/Rect;
 
     invoke-super {p0, p1, p2, p3}, Landroid/view/View;->onFocusChanged(ZILandroid/graphics/Rect;)V
 
@@ -17844,7 +17649,6 @@
 
 .method public onGenericMotionEvent(Landroid/view/MotionEvent;)Z
     .locals 4
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getSource()I
 
@@ -17966,7 +17770,6 @@
 
 .method public onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
     .locals 1
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
 
     invoke-super {p0, p1}, Landroid/widget/AdapterView;->onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
 
@@ -17983,7 +17786,6 @@
 
 .method public onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
     .locals 3
-    .param p1    # Landroid/view/accessibility/AccessibilityNodeInfo;
 
     const/4 v2, 0x1
 
@@ -18040,9 +17842,6 @@
 
 .method public onInitializeAccessibilityNodeInfoForItem(Landroid/view/View;ILandroid/view/accessibility/AccessibilityNodeInfo;)V
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # Landroid/view/accessibility/AccessibilityNodeInfo;
 
     const/4 v2, 0x1
 
@@ -18133,7 +17932,6 @@
 
 .method public onInterceptHoverEvent(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-object v0, p0, Landroid/widget/AbsListView;->mFastScroller:Landroid/widget/FastScroller;
 
@@ -18162,7 +17960,6 @@
 
 .method public onInterceptTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 12
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v11, 0x4
 
@@ -18390,8 +18187,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v1, 0x1
 
@@ -18434,8 +18229,6 @@
 
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 8
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     const/4 v6, -0x1
 
@@ -18691,11 +18484,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 5
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-super/range {p0 .. p5}, Landroid/widget/AdapterView;->onLayout(ZIIII)V
 
@@ -18762,8 +18550,6 @@
 
 .method protected onMeasure(II)V
     .locals 8
-    .param p1    # I
-    .param p2    # I
 
     const/4 v5, 0x1
 
@@ -18868,10 +18654,6 @@
 
 .method protected onOverScrolled(IIZZ)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # Z
 
     iget v0, p0, Landroid/view/View;->mScrollY:I
 
@@ -18974,7 +18756,6 @@
 
 .method public onRestoreInstanceState(Landroid/os/Parcelable;)V
     .locals 7
-    .param p1    # Landroid/os/Parcelable;
 
     const-wide/16 v5, 0x0
 
@@ -19117,7 +18898,6 @@
 
 .method public onRtlPropertiesChanged(I)V
     .locals 2
-    .param p1    # I
 
     invoke-super {p0, p1}, Landroid/view/View;->onRtlPropertiesChanged(I)V
 
@@ -19443,10 +19223,6 @@
 
 .method protected onSizeChanged(IIII)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getChildCount()I
 
@@ -19475,10 +19251,6 @@
 
 .method public onTextChanged(Ljava/lang/CharSequence;III)V
     .locals 5
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/4 v4, 0x1
 
@@ -19556,7 +19328,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 12
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v8, 0x0
 
@@ -19789,7 +19560,6 @@
 
 .method public onTouchModeChanged(Z)V
     .locals 2
-    .param p1    # Z
 
     if-eqz p1, :cond_2
 
@@ -19865,8 +19635,6 @@
 
 .method protected onVisibilityChanged(Landroid/view/View;I)V
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     invoke-super {p0, p1, p2}, Landroid/view/View;->onVisibilityChanged(Landroid/view/View;I)V
 
@@ -19887,7 +19655,6 @@
 
 .method public onWindowFocusChanged(Z)V
     .locals 5
-    .param p1    # Z
 
     const/4 v2, 0x1
 
@@ -20015,8 +19782,6 @@
 
 .method public performAccessibilityAction(ILandroid/os/Bundle;)Z
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     const/16 v5, 0xc8
 
@@ -20133,9 +19898,6 @@
 
 .method public performItemClick(Landroid/view/View;IJ)Z
     .locals 10
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # J
 
     const/16 v3, 0x4e84
 
@@ -20428,9 +20190,6 @@
 
 .method performLongPress(Landroid/view/View;IJ)Z
     .locals 8
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # J
 
     const/4 v1, 0x3
 
@@ -20515,8 +20274,6 @@
 
 .method public pointToPosition(II)I
     .locals 7
-    .param p1    # I
-    .param p2    # I
 
     const/4 v3, 0x0
 
@@ -20618,8 +20375,6 @@
 
 .method public pointToRowId(II)J
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0, p1, p2}, Landroid/widget/AbsListView;->pointToPosition(II)I
 
@@ -20644,8 +20399,6 @@
 
 .method positionSelector(ILandroid/view/View;)V
     .locals 7
-    .param p1    # I
-    .param p2    # Landroid/view/View;
 
     const/4 v6, -0x1
 
@@ -20849,7 +20602,6 @@
 
 .method reportScrollStateChange(I)V
     .locals 8
-    .param p1    # I
 
     const/4 v7, 0x2
 
@@ -21163,7 +20915,6 @@
 
 .method public requestDisallowInterceptTouchEvent(Z)V
     .locals 0
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -21672,7 +21423,6 @@
 
 .method public scrollListBy(I)V
     .locals 2
-    .param p1    # I
 
     neg-int v0, p1
 
@@ -21685,7 +21435,6 @@
 
 .method public sendAccessibilityEvent(I)V
     .locals 3
-    .param p1    # I
 
     const/16 v2, 0x1000
 
@@ -21723,9 +21472,6 @@
 
 .method sendToTextFilter(IILandroid/view/KeyEvent;)Z
     .locals 12
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/view/KeyEvent;
 
     const/16 v11, 0x3c
 
@@ -21972,7 +21718,6 @@
 
 .method public bridge synthetic setAdapter(Landroid/widget/Adapter;)V
     .locals 0
-    .param p1    # Landroid/widget/Adapter;
 
     check-cast p1, Landroid/widget/ListAdapter;
 
@@ -21983,7 +21728,6 @@
 
 .method public setAdapter(Landroid/widget/ListAdapter;)V
     .locals 2
-    .param p1    # Landroid/widget/ListAdapter;
 
     if-eqz p1, :cond_0
 
@@ -22064,14 +21808,12 @@
 
 .method public setAirScrollEnable(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
 
 .method public setAlwaysDisableHoverHighlight(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/widget/AbsListView;->mAlwaysDisableHoverHighlight:Z
 
@@ -22080,7 +21822,6 @@
 
 .method public setCacheColorHint(I)V
     .locals 3
-    .param p1    # I
 
     iget v2, p0, Landroid/widget/AbsListView;->mCacheColorHint:I
 
@@ -22118,7 +21859,6 @@
 
 .method public setChoiceMode(I)V
     .locals 5
-    .param p1    # I
 
     const/4 v4, 0x3
 
@@ -22226,7 +21966,6 @@
 
 .method public setDrawSelectorOnTop(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/widget/AbsListView;->mDrawSelectorOnTop:Z
 
@@ -22235,7 +21974,6 @@
 
 .method public setEnableDragBlock(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/widget/AbsListView;->mIsDragBlockEnabled:Z
 
@@ -22244,7 +21982,6 @@
 
 .method public setEnableMultiFocus(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/widget/AbsListView;->mIsMultiFocusEnabled:Z
 
@@ -22253,7 +21990,6 @@
 
 .method public setEnableOnclickInMultiSelectMode(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/widget/AbsListView;->mIsTwOnClickEnabled:Z
 
@@ -22262,7 +21998,6 @@
 
 .method public setEnablePaddingInHoverScroll(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/widget/AbsListView;->mIsEnabledPaddingInHoverScroll:Z
 
@@ -22271,7 +22006,6 @@
 
 .method public setFastScrollAlwaysVisible(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-boolean v0, p0, Landroid/widget/AbsListView;->mFastScrollAlwaysVisible:Z
 
@@ -22314,7 +22048,6 @@
 
 .method public setFastScrollEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-boolean v0, p0, Landroid/widget/AbsListView;->mFastScrollEnabled:Z
 
@@ -22346,7 +22079,6 @@
 
 .method public setFilterText(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-boolean v1, p0, Landroid/widget/AbsListView;->mTextFilterEnabled:Z
 
@@ -22409,7 +22141,6 @@
 
 .method public setForcedClick(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/widget/AbsListView;->mForcedClick:Z
 
@@ -22418,10 +22149,6 @@
 
 .method protected setFrame(IIII)Z
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-super {p0, p1, p2, p3, p4}, Landroid/view/View;->setFrame(IIII)Z
 
@@ -22469,7 +22196,6 @@
 
 .method public setFriction(F)V
     .locals 1
-    .param p1    # F
 
     iget-object v0, p0, Landroid/widget/AbsListView;->mFlingRunnable:Landroid/widget/AbsListView$FlingRunnable;
 
@@ -22496,7 +22222,6 @@
 
 .method public setHoverScrollDelay(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/widget/AbsListView;->HOVERSCROLL_DELAY:I
 
@@ -22505,7 +22230,6 @@
 
 .method public setHoverScrollMode(Z)V
     .locals 1
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -22526,7 +22250,6 @@
 
 .method public setHoverScrollSpeed(I)V
     .locals 1
-    .param p1    # I
 
     int-to-float v0, p1
 
@@ -22537,8 +22260,6 @@
 
 .method public setItemChecked(IZ)V
     .locals 9
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v5, 0x3
 
@@ -22817,7 +22538,6 @@
 
 .method public setMotionEvent(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/widget/AbsListView;->mMotionEnable:Z
 
@@ -22826,7 +22546,6 @@
 
 .method public setMultiChoiceModeListener(Landroid/widget/AbsListView$MultiChoiceModeListener;)V
     .locals 1
-    .param p1    # Landroid/widget/AbsListView$MultiChoiceModeListener;
 
     iget-object v0, p0, Landroid/widget/AbsListView;->mMultiChoiceModeCallback:Landroid/widget/AbsListView$MultiChoiceModeWrapper;
 
@@ -22848,8 +22567,6 @@
 
 .method public setMultiFocusListItem(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Landroid/widget/AbsListView;->mTwPressItemListArray:Ljava/util/ArrayList;
 
@@ -22868,7 +22585,6 @@
 
 .method public setOnScrollListener(Landroid/widget/AbsListView$OnScrollListener;)V
     .locals 0
-    .param p1    # Landroid/widget/AbsListView$OnScrollListener;
 
     iput-object p1, p0, Landroid/widget/AbsListView;->mOnScrollListener:Landroid/widget/AbsListView$OnScrollListener;
 
@@ -22879,8 +22595,6 @@
 
 .method public setOverScrollEffectPadding(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     iput p1, p0, Landroid/widget/AbsListView;->mGlowPaddingLeft:I
 
@@ -22891,7 +22605,6 @@
 
 .method public setOverScrollMode(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -22935,7 +22648,6 @@
 
 .method public setRecyclerListener(Landroid/widget/AbsListView$RecyclerListener;)V
     .locals 1
-    .param p1    # Landroid/widget/AbsListView$RecyclerListener;
 
     iget-object v0, p0, Landroid/widget/AbsListView;->mRecycler:Landroid/widget/AbsListView$RecycleBin;
 
@@ -22947,7 +22659,6 @@
 
 .method public setRemoteViewsAdapter(Landroid/content/Intent;)V
     .locals 5
-    .param p1    # Landroid/content/Intent;
 
     iget-object v2, p0, Landroid/widget/AbsListView;->mRemoteAdapter:Landroid/widget/RemoteViewsAdapter;
 
@@ -23037,7 +22748,6 @@
 
 .method public setRemoteViewsOnClickHandler(Landroid/widget/RemoteViews$OnClickHandler;)V
     .locals 1
-    .param p1    # Landroid/widget/RemoteViews$OnClickHandler;
 
     iget-object v0, p0, Landroid/widget/AbsListView;->mRemoteAdapter:Landroid/widget/RemoteViewsAdapter;
 
@@ -23053,7 +22763,6 @@
 
 .method public setScrollBarStyle(I)V
     .locals 1
-    .param p1    # I
 
     invoke-super {p0, p1}, Landroid/view/View;->setScrollBarStyle(I)V
 
@@ -23071,8 +22780,6 @@
 
 .method public setScrollIndicators(Landroid/view/View;Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/View;
 
     iput-object p1, p0, Landroid/widget/AbsListView;->mScrollUp:Landroid/view/View;
 
@@ -23083,7 +22790,6 @@
 
 .method public setScrollingCacheEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-boolean v0, p0, Landroid/widget/AbsListView;->mScrollingCacheEnabled:Z
 
@@ -23104,7 +22810,6 @@
 
 .method public setSelector(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
 
@@ -23121,7 +22826,6 @@
 
 .method public setSelector(Landroid/graphics/drawable/Drawable;)V
     .locals 3
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     iget-object v1, p0, Landroid/widget/AbsListView;->mSelector:Landroid/graphics/drawable/Drawable;
 
@@ -23171,7 +22875,6 @@
 
 .method public setSmoothScrollbarEnabled(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/widget/AbsListView;->mSmoothScrollbarEnabled:Z
 
@@ -23180,7 +22883,6 @@
 
 .method public setStackFromBottom(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-boolean v0, p0, Landroid/widget/AbsListView;->mStackFromBottom:Z
 
@@ -23196,7 +22898,6 @@
 
 .method public setTextFilterEnabled(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/widget/AbsListView;->mTextFilterEnabled:Z
 
@@ -23205,7 +22906,6 @@
 
 .method public setTouchSlop(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/widget/AbsListView;->mTouchSlop:I
 
@@ -23214,7 +22914,6 @@
 
 .method public setTranscriptMode(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/widget/AbsListView;->mTranscriptMode:I
 
@@ -23223,7 +22922,6 @@
 
 .method public setVelocityScale(F)V
     .locals 0
-    .param p1    # F
 
     iput p1, p0, Landroid/widget/AbsListView;->mVelocityScale:F
 
@@ -23232,7 +22930,6 @@
 
 .method public setVerticalScrollbarPosition(I)V
     .locals 1
-    .param p1    # I
 
     invoke-super {p0, p1}, Landroid/view/View;->setVerticalScrollbarPosition(I)V
 
@@ -23250,8 +22947,6 @@
 
 .method setVisibleRangeHint(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Landroid/widget/AbsListView;->mRemoteAdapter:Landroid/widget/RemoteViewsAdapter;
 
@@ -23400,9 +23095,6 @@
 
 .method public showContextMenu(FFI)Z
     .locals 6
-    .param p1    # F
-    .param p2    # F
-    .param p3    # I
 
     float-to-int v4, p1
 
@@ -23460,7 +23152,6 @@
 
 .method public showContextMenuForChild(Landroid/view/View;)Z
     .locals 7
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p0, p1}, Landroid/widget/AdapterView;->getPositionForView(Landroid/view/View;)I
 
@@ -23523,8 +23214,6 @@
 
 .method public smoothScrollBy(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -23535,9 +23224,6 @@
 
 .method smoothScrollBy(IIZ)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     iget-object v5, p0, Landroid/widget/AbsListView;->mFlingRunnable:Landroid/widget/AbsListView$FlingRunnable;
 
@@ -23646,7 +23332,6 @@
 
 .method smoothScrollByOffset(I)V
     .locals 10
-    .param p1    # I
 
     const/high16 v9, 0x3f400000
 
@@ -23768,7 +23453,6 @@
 
 .method public smoothScrollToPosition(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/widget/AbsListView;->mPositionScroller:Landroid/widget/AbsListView$PositionScroller;
 
@@ -23790,8 +23474,6 @@
 
 .method public smoothScrollToPosition(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Landroid/widget/AbsListView;->mPositionScroller:Landroid/widget/AbsListView$PositionScroller;
 
@@ -23813,8 +23495,6 @@
 
 .method public smoothScrollToPositionFromTop(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Landroid/widget/AbsListView;->mPositionScroller:Landroid/widget/AbsListView$PositionScroller;
 
@@ -23836,9 +23516,6 @@
 
 .method public smoothScrollToPositionFromTop(III)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     iget-object v0, p0, Landroid/widget/AbsListView;->mPositionScroller:Landroid/widget/AbsListView$PositionScroller;
 
@@ -23886,8 +23563,6 @@
 
 .method trackMotionScroll(II)Z
     .locals 32
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual/range {p0 .. p0}, Landroid/view/ViewGroup;->getChildCount()I
 
@@ -24869,9 +24544,6 @@
 
 .method public twNotifyKeyPressState(Landroid/view/View;IJ)Z
     .locals 7
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # J
 
     const/4 v6, 0x0
 
@@ -24899,7 +24571,6 @@
 
 .method public twSetCustomMultiChoiceMode(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/widget/AbsListView;->mTwCustomMultiChoiceMode:Z
 
@@ -24908,7 +24579,6 @@
 
 .method public twSetSelection(I)V
     .locals 0
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/widget/AdapterView;->setSelection(I)V
 
@@ -24917,7 +24587,6 @@
 
 .method public twShowMultiChoiceMode(Z)V
     .locals 2
-    .param p1    # Z
 
     if-eqz p1, :cond_1
 
@@ -24961,7 +24630,6 @@
 
 .method public twSmoothScrollBy(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Landroid/widget/AbsListView;->mFlingRunnable:Landroid/widget/AbsListView$FlingRunnable;
 
@@ -25105,8 +24773,6 @@
 
 .method public updateCustomEdgeGlow(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
     .locals 1
-    .param p1    # Landroid/graphics/drawable/Drawable;
-    .param p2    # Landroid/graphics/drawable/Drawable;
 
     iget-object v0, p0, Landroid/widget/AbsListView;->mEdgeGlowTop:Landroid/widget/EdgeEffect;
 
@@ -25378,7 +25044,6 @@
 
 .method public verifyDrawable(Landroid/graphics/drawable/Drawable;)Z
     .locals 1
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     iget-object v0, p0, Landroid/widget/AbsListView;->mSelector:Landroid/graphics/drawable/Drawable;
 

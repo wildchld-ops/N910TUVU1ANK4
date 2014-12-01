@@ -64,8 +64,6 @@
 
 .method public static call(Landroid/graphics/Canvas;Lcom/android/launcher2/DrawGLFunction$Callback;)V
     .locals 6
-    .param p0    # Landroid/graphics/Canvas;
-    .param p1    # Lcom/android/launcher2/DrawGLFunction$Callback;
 
     # getter for: Lcom/android/launcher2/DrawGLFunction$Callback;->functor:I
     invoke-static {p1}, Lcom/android/launcher2/DrawGLFunction$Callback;->access$000(Lcom/android/launcher2/DrawGLFunction$Callback;)I
@@ -195,7 +193,6 @@
 
 .method public static destroy(Lcom/android/launcher2/DrawGLFunction$Callback;)V
     .locals 1
-    .param p0    # Lcom/android/launcher2/DrawGLFunction$Callback;
 
     # getter for: Lcom/android/launcher2/DrawGLFunction$Callback;->functor:I
     invoke-static {p0}, Lcom/android/launcher2/DrawGLFunction$Callback;->access$000(Lcom/android/launcher2/DrawGLFunction$Callback;)I

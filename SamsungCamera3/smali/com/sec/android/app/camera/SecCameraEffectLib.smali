@@ -100,8 +100,6 @@
 
 .method public static initEffectLib(Landroid/content/Context;Z)V
     .locals 0
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
 
     invoke-static {p1}, Lcom/sec/android/app/camera/SecCameraEffectLib;->init(Z)V
 
@@ -121,7 +119,6 @@
 
 .method public static initExternalResource(Lcom/sec/android/app/camera/ExternalFilterLoader;)V
     .locals 7
-    .param p0    # Lcom/sec/android/app/camera/ExternalFilterLoader;
 
     invoke-virtual {p0}, Lcom/sec/android/app/camera/ExternalFilterLoader;->isFilterLoaded()Z
 
@@ -219,7 +216,6 @@
 
 .method public static initResource(Landroid/content/Context;)V
     .locals 9
-    .param p0    # Landroid/content/Context;
 
     const/4 v2, 0x0
 
@@ -360,7 +356,6 @@
 
 .method public static setFrontCamera(Z)V
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/sec/android/app/camera/SecCameraEffectLib;->mIsFrontCamera:Z
 

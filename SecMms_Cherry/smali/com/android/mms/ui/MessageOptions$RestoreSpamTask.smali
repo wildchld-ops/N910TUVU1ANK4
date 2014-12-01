@@ -65,7 +65,6 @@
 
 .method protected onPostExecute(Ljava/lang/Boolean;)V
     .locals 1
-    .param p1    # Ljava/lang/Boolean;
 
     invoke-super {p0, p1}, Lcom/android/mms/spam/SpamUtils$RestoreSpamTask;->onPostExecute(Ljava/lang/Boolean;)V
 
@@ -91,7 +90,6 @@
 
 .method protected bridge synthetic onPostExecute(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Ljava/lang/Boolean;
 

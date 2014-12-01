@@ -54,9 +54,6 @@
 
 .method private constructor <init>(IIZ)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -85,9 +82,6 @@
 
 .method public static obtain(IIZ)Landroid/view/accessibility/AccessibilityNodeInfo$CollectionInfo;
     .locals 2
-    .param p0    # I
-    .param p1    # I
-    .param p2    # Z
 
     sget-object v1, Landroid/view/accessibility/AccessibilityNodeInfo$CollectionInfo;->sPool:Landroid/util/Pools$SynchronizedPool;
 
@@ -112,7 +106,6 @@
 
 .method public static obtain(Landroid/view/accessibility/AccessibilityNodeInfo$CollectionInfo;)Landroid/view/accessibility/AccessibilityNodeInfo$CollectionInfo;
     .locals 3
-    .param p0    # Landroid/view/accessibility/AccessibilityNodeInfo$CollectionInfo;
 
     iget v0, p0, Landroid/view/accessibility/AccessibilityNodeInfo$CollectionInfo;->mRowCount:I
 

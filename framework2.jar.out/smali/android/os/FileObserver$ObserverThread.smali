@@ -69,9 +69,6 @@
 # virtual methods
 .method public onEvent(IILjava/lang/String;)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -180,9 +177,6 @@
 
 .method public startWatching(Ljava/lang/String;ILandroid/os/FileObserver;)I
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Landroid/os/FileObserver;
 
     iget v2, p0, Landroid/os/FileObserver$ObserverThread;->m_fd:I
 
@@ -233,7 +227,6 @@
 
 .method public stopWatching(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/os/FileObserver$ObserverThread;->m_fd:I
 

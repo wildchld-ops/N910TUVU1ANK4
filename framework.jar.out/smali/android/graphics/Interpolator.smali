@@ -22,7 +22,6 @@
 # direct methods
 .method public constructor <init>(I)V
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x2
 
@@ -43,8 +42,6 @@
 
 .method public constructor <init>(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -114,7 +111,6 @@
 
 .method public reset(I)V
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x2
 
@@ -125,8 +121,6 @@
 
 .method public reset(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iput p1, p0, Landroid/graphics/Interpolator;->mValueCount:I
 
@@ -141,9 +135,6 @@
 
 .method public setKeyFrame(II[F)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [F
 
     const/4 v0, 0x0
 
@@ -154,10 +145,6 @@
 
 .method public setKeyFrame(II[F[F)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [F
-    .param p4    # [F
 
     if-ltz p1, :cond_0
 
@@ -210,8 +197,6 @@
 
 .method public setRepeatMirror(FZ)V
     .locals 1
-    .param p1    # F
-    .param p2    # Z
 
     const/4 v0, 0x0
 
@@ -229,8 +214,6 @@
 
 .method public timeToValues(I[F)Landroid/graphics/Interpolator$Result;
     .locals 2
-    .param p1    # I
-    .param p2    # [F
 
     if-eqz p2, :cond_0
 
@@ -281,7 +264,6 @@
 
 .method public timeToValues([F)Landroid/graphics/Interpolator$Result;
     .locals 2
-    .param p1    # [F
 
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 

@@ -36,8 +36,6 @@
 # virtual methods
 .method public onAniProgress(Lcom/sec/android/glview/TwGLView;I)V
     .locals 2
-    .param p1    # Lcom/sec/android/glview/TwGLView;
-    .param p2    # I
 
     packed-switch p2, :pswitch_data_0
 

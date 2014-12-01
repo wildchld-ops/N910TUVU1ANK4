@@ -36,7 +36,6 @@
 
 .method public constructor <init>(Ljava/io/InputStream;)V
     .locals 2
-    .param p1    # Ljava/io/InputStream;
 
     const/4 v1, 0x0
 
@@ -312,7 +311,6 @@
 
 .method public read([B)I
     .locals 2
-    .param p1    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -332,9 +330,6 @@
 
 .method public read([BII)I
     .locals 7
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

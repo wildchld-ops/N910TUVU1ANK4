@@ -100,7 +100,6 @@
 
 .method private constructor <init>(Ljava/lang/String;ILjava/lang/String;)V
     .locals 0
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -118,7 +117,6 @@
 
 .method public static valueOf(Ljava/lang/String;)Landroid/os/PersonaManager$AppType;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-class v0, Landroid/os/PersonaManager$AppType;
 
@@ -149,7 +147,6 @@
 # virtual methods
 .method public fromName(Ljava/lang/String;)Landroid/os/PersonaManager$AppType;
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Landroid/os/PersonaManager$AppType;->values()[Landroid/os/PersonaManager$AppType;
 

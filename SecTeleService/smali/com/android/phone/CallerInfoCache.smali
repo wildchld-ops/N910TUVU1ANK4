@@ -606,7 +606,7 @@
 
     const/4 v1, 0x1
 
-    invoke-virtual {v0, v1}, Landroid/os/AsyncTask;->cancel(Z)Z
+    invoke-virtual {v0, v1}, Lcom/android/phone/CallerInfoCache$CacheAsyncTask;->cancel(Z)Z
 
     :cond_1
     new-instance v0, Lcom/android/phone/CallerInfoCache$CacheAsyncTask;

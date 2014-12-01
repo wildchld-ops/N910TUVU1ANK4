@@ -24,10 +24,6 @@
 # direct methods
 .method private constructor <init>(Ljava/lang/CharSequence;[CII)V
     .locals 6
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # [C
-    .param p3    # I
-    .param p4    # I
 
     const/4 v5, 0x0
 
@@ -52,11 +48,6 @@
 
 .method synthetic constructor <init>(Ljava/lang/CharSequence;[CIILandroid/text/AlteredCharSequence$1;)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # [C
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Landroid/text/AlteredCharSequence$1;
 
     invoke-direct {p0, p1, p2, p3, p4}, Landroid/text/AlteredCharSequence$AlteredSpanned;-><init>(Ljava/lang/CharSequence;[CII)V
 
@@ -67,7 +58,6 @@
 # virtual methods
 .method public getSpanEnd(Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     iget-object v0, p0, Landroid/text/AlteredCharSequence$AlteredSpanned;->mSpanned:Landroid/text/Spanned;
 
@@ -80,7 +70,6 @@
 
 .method public getSpanFlags(Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     iget-object v0, p0, Landroid/text/AlteredCharSequence$AlteredSpanned;->mSpanned:Landroid/text/Spanned;
 
@@ -93,7 +82,6 @@
 
 .method public getSpanStart(Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     iget-object v0, p0, Landroid/text/AlteredCharSequence$AlteredSpanned;->mSpanned:Landroid/text/Spanned;
 
@@ -106,8 +94,6 @@
 
 .method public getSpans(IILjava/lang/Class;)[Ljava/lang/Object;
     .locals 1
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -129,9 +115,6 @@
 
 .method public nextSpanTransition(IILjava/lang/Class;)I
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/Class;
 
     iget-object v0, p0, Landroid/text/AlteredCharSequence$AlteredSpanned;->mSpanned:Landroid/text/Spanned;
 

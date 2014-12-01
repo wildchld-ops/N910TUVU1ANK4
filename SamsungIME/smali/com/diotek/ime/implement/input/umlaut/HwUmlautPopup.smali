@@ -38,7 +38,6 @@
 
 .method static synthetic access$000(Lcom/diotek/ime/implement/input/umlaut/HwUmlautPopup;)V
     .locals 0
-    .param p0    # Lcom/diotek/ime/implement/input/umlaut/HwUmlautPopup;
 
     invoke-direct {p0}, Lcom/diotek/ime/implement/input/umlaut/HwUmlautPopup;->sendSelectedCode()V
 
@@ -104,7 +103,6 @@
 
 .method private sendCode(Ljava/lang/CharSequence;)V
     .locals 4
-    .param p1    # Ljava/lang/CharSequence;
 
     iget-object v2, p0, Lcom/diotek/ime/implement/input/umlaut/HwUmlautPopup;->mHandler:Landroid/os/Handler;
 
@@ -170,7 +168,6 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 26
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super/range {p0 .. p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
@@ -563,8 +560,6 @@
 
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 13
-    .param p1    # I
-    .param p2    # Landroid/view/KeyEvent;
 
     invoke-virtual {p2}, Landroid/view/KeyEvent;->getRepeatCount()I
 

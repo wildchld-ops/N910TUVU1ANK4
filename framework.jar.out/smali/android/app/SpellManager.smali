@@ -22,8 +22,6 @@
 # direct methods
 .method constructor <init>(Landroid/content/Context;Landroid/os/Handler;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/Handler;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -50,8 +48,6 @@
 # virtual methods
 .method public cast(JLandroid/os/Bundle;)Z
     .locals 6
-    .param p1    # J
-    .param p3    # Landroid/os/Bundle;
 
     const/4 v2, 0x0
 
@@ -119,8 +115,6 @@
 
 .method public getBitmap(Ljava/lang/String;I)Landroid/graphics/Bitmap;
     .locals 12
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v8, 0x0
 
@@ -375,7 +369,6 @@
 
 .method public getInstantSpell(Ljava/lang/String;)J
     .locals 8
-    .param p1    # Ljava/lang/String;
 
     const-wide/16 v3, 0x0
 
@@ -440,7 +433,6 @@
 
 .method public getShallowSpellScroll(Ljava/lang/String;)Landroid/app/SpellScroll;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     sget-object v1, Landroid/app/SpellManager;->mService:Landroid/app/ISpellManager;
@@ -486,7 +478,6 @@
 
 .method public getSpell(J)Landroid/app/SpellScroll$Spell;
     .locals 6
-    .param p1    # J
 
     const/4 v2, 0x0
 
@@ -539,8 +530,6 @@
 
 .method public getSpell(Ljava/lang/String;Ljava/lang/String;)Landroid/app/SpellScroll$Spell;
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -593,7 +582,6 @@
 
 .method public getSpellName(J)Ljava/lang/String;
     .locals 4
-    .param p1    # J
 
     :try_start_0
     sget-object v1, Landroid/app/SpellManager;->mService:Landroid/app/ISpellManager;
@@ -639,7 +627,6 @@
 
 .method public getSpellNames(Ljava/lang/String;)Ljava/util/List;
     .locals 4
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -696,8 +683,6 @@
 
 .method public getSpellNamesWithIngredientName(Ljava/lang/String;Ljava/lang/String;)Ljava/util/List;
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -795,7 +780,6 @@
 
 .method public getSpellScroll(Ljava/lang/String;)Landroid/app/SpellScroll;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     sget-object v1, Landroid/app/SpellManager;->mService:Landroid/app/ISpellManager;
@@ -841,7 +825,6 @@
 
 .method public getSpellScrollName(J)Ljava/lang/String;
     .locals 4
-    .param p1    # J
 
     :try_start_0
     sget-object v1, Landroid/app/SpellManager;->mService:Landroid/app/ISpellManager;
@@ -941,7 +924,6 @@
 
 .method public getSpellScrollNamesByPriority(I)Ljava/util/List;
     .locals 4
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -996,7 +978,6 @@
 
 .method public getSpellScrollNamesWithIngredientName(Ljava/lang/String;)Ljava/util/List;
     .locals 4
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1053,8 +1034,6 @@
 
 .method public getSpellSet(Ljava/lang/String;Ljava/lang/String;)Landroid/app/SpellScroll$SpellSet;
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     :try_start_0
     sget-object v2, Landroid/app/SpellManager;->mService:Landroid/app/ISpellManager;
@@ -1107,7 +1086,6 @@
 
 .method public getSpells(Ljava/lang/String;)Ljava/util/List;
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1171,8 +1149,6 @@
 
 .method public getString(Ljava/lang/String;I)Ljava/lang/String;
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v4, 0x0
 
@@ -1321,7 +1297,6 @@
 
 .method public isValidSpell(J)Z
     .locals 7
-    .param p1    # J
 
     const/4 v3, 0x0
 
@@ -1382,8 +1357,6 @@
 
 .method public isValidSpell(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     :try_start_0
     sget-object v1, Landroid/app/SpellManager;->mService:Landroid/app/ISpellManager;
@@ -1429,7 +1402,6 @@
 
 .method public isValidSpellScroll(Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     sget-object v1, Landroid/app/SpellManager;->mService:Landroid/app/ISpellManager;

@@ -10,8 +10,6 @@
 # direct methods
 .method public constructor <init>(Ljava/io/File;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/io/File;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -27,9 +25,6 @@
 
 .method public constructor <init>(Ljava/io/File;Ljava/lang/String;Z)V
     .locals 1
-    .param p1    # Ljava/io/File;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -49,8 +44,6 @@
 
 .method public constructor <init>(Ljava/io/File;Ljava/nio/charset/Charset;)V
     .locals 1
-    .param p1    # Ljava/io/File;
-    .param p2    # Ljava/nio/charset/Charset;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -66,9 +59,6 @@
 
 .method public constructor <init>(Ljava/io/File;Ljava/nio/charset/Charset;Z)V
     .locals 1
-    .param p1    # Ljava/io/File;
-    .param p2    # Ljava/nio/charset/Charset;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -88,8 +78,6 @@
 
 .method public constructor <init>(Ljava/io/File;Ljava/nio/charset/CharsetEncoder;)V
     .locals 1
-    .param p1    # Ljava/io/File;
-    .param p2    # Ljava/nio/charset/CharsetEncoder;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -105,9 +93,6 @@
 
 .method public constructor <init>(Ljava/io/File;Ljava/nio/charset/CharsetEncoder;Z)V
     .locals 1
-    .param p1    # Ljava/io/File;
-    .param p2    # Ljava/nio/charset/CharsetEncoder;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -127,8 +112,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -148,9 +131,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Z)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -168,8 +148,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Ljava/nio/charset/Charset;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/nio/charset/Charset;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -189,9 +167,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Ljava/nio/charset/Charset;Z)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/nio/charset/Charset;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -209,8 +184,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Ljava/nio/charset/CharsetEncoder;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/nio/charset/CharsetEncoder;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -230,9 +203,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Ljava/nio/charset/CharsetEncoder;Z)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/nio/charset/CharsetEncoder;
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -250,9 +220,6 @@
 
 .method private static initWriter(Ljava/io/File;Ljava/lang/Object;Z)Ljava/io/Writer;
     .locals 8
-    .param p0    # Ljava/io/File;
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -421,7 +388,6 @@
 
 .method public write(I)V
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -437,7 +403,6 @@
 
 .method public write(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -453,9 +418,6 @@
 
 .method public write(Ljava/lang/String;II)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -471,7 +433,6 @@
 
 .method public write([C)V
     .locals 1
-    .param p1    # [C
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -487,9 +448,6 @@
 
 .method public write([CII)V
     .locals 1
-    .param p1    # [C
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

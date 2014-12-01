@@ -32,7 +32,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/settings/NotificationAccessSettings;Landroid/content/Context;)V
     .locals 2
-    .param p2    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -61,8 +60,6 @@
 # virtual methods
 .method public bindView(Landroid/view/View;I)V
     .locals 4
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     invoke-virtual {p1}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
@@ -127,7 +124,6 @@
 
 .method public getItemId(I)J
     .locals 2
-    .param p1    # I
 
     int-to-long v0, p1
 
@@ -136,9 +132,6 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     if-nez p2, :cond_0
 
@@ -167,7 +160,6 @@
 
 .method public newView(Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 5
-    .param p1    # Landroid/view/ViewGroup;
 
     iget-object v2, p0, Lcom/android/settings/NotificationAccessSettings$ListenerListAdapter;->mInflater:Landroid/view/LayoutInflater;
 

@@ -55,7 +55,6 @@
 
 .method public SetMultitapStartTime(J)V
     .locals 0
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/diotek/ime/framework/engine/xt9/Xt9Datatype$BaseCallback;->multitapStartTime:J
 
@@ -64,7 +63,6 @@
 
 .method public printMessage(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "SamsungIME"
 

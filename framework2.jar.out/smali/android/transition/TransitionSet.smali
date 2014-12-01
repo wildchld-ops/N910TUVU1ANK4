@@ -105,7 +105,6 @@
 # virtual methods
 .method public bridge synthetic addListener(Landroid/transition/Transition$TransitionListener;)Landroid/transition/Transition;
     .locals 1
-    .param p1    # Landroid/transition/Transition$TransitionListener;
 
     invoke-virtual {p0, p1}, Landroid/transition/TransitionSet;->addListener(Landroid/transition/Transition$TransitionListener;)Landroid/transition/TransitionSet;
 
@@ -116,7 +115,6 @@
 
 .method public addListener(Landroid/transition/Transition$TransitionListener;)Landroid/transition/TransitionSet;
     .locals 1
-    .param p1    # Landroid/transition/Transition$TransitionListener;
 
     invoke-super {p0, p1}, Landroid/transition/Transition;->addListener(Landroid/transition/Transition$TransitionListener;)Landroid/transition/Transition;
 
@@ -129,7 +127,6 @@
 
 .method public bridge synthetic addTarget(I)Landroid/transition/Transition;
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/transition/TransitionSet;->addTarget(I)Landroid/transition/TransitionSet;
 
@@ -140,7 +137,6 @@
 
 .method public bridge synthetic addTarget(Landroid/view/View;)Landroid/transition/Transition;
     .locals 1
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p0, p1}, Landroid/transition/TransitionSet;->addTarget(Landroid/view/View;)Landroid/transition/TransitionSet;
 
@@ -151,7 +147,6 @@
 
 .method public addTarget(I)Landroid/transition/TransitionSet;
     .locals 1
-    .param p1    # I
 
     invoke-super {p0, p1}, Landroid/transition/Transition;->addTarget(I)Landroid/transition/Transition;
 
@@ -164,7 +159,6 @@
 
 .method public addTarget(Landroid/view/View;)Landroid/transition/TransitionSet;
     .locals 1
-    .param p1    # Landroid/view/View;
 
     invoke-super {p0, p1}, Landroid/transition/Transition;->addTarget(Landroid/view/View;)Landroid/transition/Transition;
 
@@ -177,7 +171,6 @@
 
 .method public addTransition(Landroid/transition/Transition;)Landroid/transition/TransitionSet;
     .locals 4
-    .param p1    # Landroid/transition/Transition;
 
     if-eqz p1, :cond_0
 
@@ -239,7 +232,6 @@
 
 .method public captureEndValues(Landroid/transition/TransitionValues;)V
     .locals 6
-    .param p1    # Landroid/transition/TransitionValues;
 
     iget-object v3, p1, Landroid/transition/TransitionValues;->view:Landroid/view/View;
 
@@ -297,7 +289,6 @@
 
 .method public captureStartValues(Landroid/transition/TransitionValues;)V
     .locals 6
-    .param p1    # Landroid/transition/TransitionValues;
 
     iget-object v3, p1, Landroid/transition/TransitionValues;->view:Landroid/view/View;
 
@@ -428,9 +419,6 @@
 
 .method protected createAnimators(Landroid/view/ViewGroup;Landroid/transition/TransitionValuesMaps;Landroid/transition/TransitionValuesMaps;)V
     .locals 3
-    .param p1    # Landroid/view/ViewGroup;
-    .param p2    # Landroid/transition/TransitionValuesMaps;
-    .param p3    # Landroid/transition/TransitionValuesMaps;
 
     iget-object v2, p0, Landroid/transition/TransitionSet;->mTransitions:Ljava/util/ArrayList;
 
@@ -513,7 +501,6 @@
 
 .method public bridge synthetic removeListener(Landroid/transition/Transition$TransitionListener;)Landroid/transition/Transition;
     .locals 1
-    .param p1    # Landroid/transition/Transition$TransitionListener;
 
     invoke-virtual {p0, p1}, Landroid/transition/TransitionSet;->removeListener(Landroid/transition/Transition$TransitionListener;)Landroid/transition/TransitionSet;
 
@@ -524,7 +511,6 @@
 
 .method public removeListener(Landroid/transition/Transition$TransitionListener;)Landroid/transition/TransitionSet;
     .locals 1
-    .param p1    # Landroid/transition/Transition$TransitionListener;
 
     invoke-super {p0, p1}, Landroid/transition/Transition;->removeListener(Landroid/transition/Transition$TransitionListener;)Landroid/transition/Transition;
 
@@ -537,7 +523,6 @@
 
 .method public bridge synthetic removeTarget(I)Landroid/transition/Transition;
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/transition/TransitionSet;->removeTarget(I)Landroid/transition/TransitionSet;
 
@@ -548,7 +533,6 @@
 
 .method public bridge synthetic removeTarget(Landroid/view/View;)Landroid/transition/Transition;
     .locals 1
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p0, p1}, Landroid/transition/TransitionSet;->removeTarget(Landroid/view/View;)Landroid/transition/TransitionSet;
 
@@ -559,7 +543,6 @@
 
 .method public removeTarget(I)Landroid/transition/TransitionSet;
     .locals 1
-    .param p1    # I
 
     invoke-super {p0, p1}, Landroid/transition/Transition;->removeTarget(I)Landroid/transition/Transition;
 
@@ -572,7 +555,6 @@
 
 .method public removeTarget(Landroid/view/View;)Landroid/transition/TransitionSet;
     .locals 1
-    .param p1    # Landroid/view/View;
 
     invoke-super {p0, p1}, Landroid/transition/Transition;->removeTarget(Landroid/view/View;)Landroid/transition/Transition;
 
@@ -585,7 +567,6 @@
 
 .method public removeTransition(Landroid/transition/Transition;)Landroid/transition/TransitionSet;
     .locals 1
-    .param p1    # Landroid/transition/Transition;
 
     iget-object v0, p0, Landroid/transition/TransitionSet;->mTransitions:Ljava/util/ArrayList;
 
@@ -725,7 +706,6 @@
 
 .method setCanRemoveViews(Z)V
     .locals 3
-    .param p1    # Z
 
     invoke-super {p0, p1}, Landroid/transition/Transition;->setCanRemoveViews(Z)V
 
@@ -760,7 +740,6 @@
 
 .method public bridge synthetic setDuration(J)Landroid/transition/Transition;
     .locals 1
-    .param p1    # J
 
     invoke-virtual {p0, p1, p2}, Landroid/transition/TransitionSet;->setDuration(J)Landroid/transition/TransitionSet;
 
@@ -771,7 +750,6 @@
 
 .method public setDuration(J)Landroid/transition/TransitionSet;
     .locals 6
-    .param p1    # J
 
     invoke-super {p0, p1, p2}, Landroid/transition/Transition;->setDuration(J)Landroid/transition/Transition;
 
@@ -814,7 +792,6 @@
 
 .method public bridge synthetic setInterpolator(Landroid/animation/TimeInterpolator;)Landroid/transition/Transition;
     .locals 1
-    .param p1    # Landroid/animation/TimeInterpolator;
 
     invoke-virtual {p0, p1}, Landroid/transition/TransitionSet;->setInterpolator(Landroid/animation/TimeInterpolator;)Landroid/transition/TransitionSet;
 
@@ -825,7 +802,6 @@
 
 .method public setInterpolator(Landroid/animation/TimeInterpolator;)Landroid/transition/TransitionSet;
     .locals 1
-    .param p1    # Landroid/animation/TimeInterpolator;
 
     invoke-super {p0, p1}, Landroid/transition/Transition;->setInterpolator(Landroid/animation/TimeInterpolator;)Landroid/transition/Transition;
 
@@ -838,7 +814,6 @@
 
 .method public setOrdering(I)Landroid/transition/TransitionSet;
     .locals 3
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -890,7 +865,6 @@
 
 .method bridge synthetic setSceneRoot(Landroid/view/ViewGroup;)Landroid/transition/Transition;
     .locals 1
-    .param p1    # Landroid/view/ViewGroup;
 
     invoke-virtual {p0, p1}, Landroid/transition/TransitionSet;->setSceneRoot(Landroid/view/ViewGroup;)Landroid/transition/TransitionSet;
 
@@ -901,7 +875,6 @@
 
 .method setSceneRoot(Landroid/view/ViewGroup;)Landroid/transition/TransitionSet;
     .locals 3
-    .param p1    # Landroid/view/ViewGroup;
 
     invoke-super {p0, p1}, Landroid/transition/Transition;->setSceneRoot(Landroid/view/ViewGroup;)Landroid/transition/Transition;
 
@@ -936,7 +909,6 @@
 
 .method public bridge synthetic setStartDelay(J)Landroid/transition/Transition;
     .locals 1
-    .param p1    # J
 
     invoke-virtual {p0, p1, p2}, Landroid/transition/TransitionSet;->setStartDelay(J)Landroid/transition/TransitionSet;
 
@@ -947,7 +919,6 @@
 
 .method public setStartDelay(J)Landroid/transition/TransitionSet;
     .locals 1
-    .param p1    # J
 
     invoke-super {p0, p1, p2}, Landroid/transition/Transition;->setStartDelay(J)Landroid/transition/Transition;
 
@@ -960,7 +931,6 @@
 
 .method toString(Ljava/lang/String;)Ljava/lang/String;
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     invoke-super {p0, p1}, Landroid/transition/Transition;->toString(Ljava/lang/String;)Ljava/lang/String;
 

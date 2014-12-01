@@ -46,9 +46,6 @@
 # virtual methods
 .method public calculateTwilight(JDD)V
     .locals 25
-    .param p1    # J
-    .param p3    # D
-    .param p5    # D
 
     const-wide v19, 0xdc6d62da00L
 

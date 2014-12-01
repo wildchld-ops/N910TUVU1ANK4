@@ -73,7 +73,7 @@
 
     iget-object v1, v1, Lcom/android/phone/IccNetworkDepersonalizationPanel$2;->this$0:Lcom/android/phone/IccNetworkDepersonalizationPanel;
 
-    invoke-virtual {v1}, Landroid/app/Dialog;->getContext()Landroid/content/Context;
+    invoke-virtual {v1}, Lcom/android/phone/IccNetworkDepersonalizationPanel;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -83,7 +83,7 @@
 
     iget-object v1, v1, Lcom/android/phone/IccNetworkDepersonalizationPanel$2;->this$0:Lcom/android/phone/IccNetworkDepersonalizationPanel;
 
-    invoke-virtual {v1}, Landroid/app/Dialog;->dismiss()V
+    invoke-virtual {v1}, Lcom/android/phone/IccNetworkDepersonalizationPanel;->dismiss()V
 
     return-void
 .end method

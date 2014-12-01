@@ -46,7 +46,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -59,8 +58,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -71,9 +68,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 8
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/high16 v7, -0x10000
 
@@ -541,7 +535,6 @@
 # virtual methods
 .method public bindNetworkStats(Landroid/net/NetworkStatsHistory;)V
     .locals 0
-    .param p1    # Landroid/net/NetworkStatsHistory;
 
     iput-object p1, p0, Lcom/android/settings/widget/ChartNetworkSeriesView;->mStats:Landroid/net/NetworkStatsHistory;
 
@@ -609,8 +602,6 @@
 
 .method init(Lcom/android/settings/widget/ChartAxis;Lcom/android/settings/widget/ChartAxis;)V
     .locals 1
-    .param p1    # Lcom/android/settings/widget/ChartAxis;
-    .param p2    # Lcom/android/settings/widget/ChartAxis;
 
     const-string v0, "missing horiz"
 
@@ -653,7 +644,6 @@
 
 .method protected onDraw(Landroid/graphics/Canvas;)V
     .locals 8
-    .param p1    # Landroid/graphics/Canvas;
 
     const/4 v7, 0x0
 
@@ -786,8 +776,6 @@
 
 .method public setBounds(JJ)V
     .locals 0
-    .param p1    # J
-    .param p3    # J
 
     iput-wide p1, p0, Lcom/android/settings/widget/ChartNetworkSeriesView;->mStart:J
 
@@ -798,9 +786,6 @@
 
 .method public setChartColor(III)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v3, 0x1
 
@@ -937,7 +922,6 @@
 
 .method public setEndTime(J)V
     .locals 0
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/android/settings/widget/ChartNetworkSeriesView;->mEndTime:J
 
@@ -946,7 +930,6 @@
 
 .method public setEstimateVisible(Z)V
     .locals 1
-    .param p1    # Z
 
     const/4 v0, 0x0
 
@@ -959,8 +942,6 @@
 
 .method public setPrimaryRange(JJ)V
     .locals 0
-    .param p1    # J
-    .param p3    # J
 
     iput-wide p1, p0, Lcom/android/settings/widget/ChartNetworkSeriesView;->mPrimaryLeft:J
 

@@ -122,7 +122,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 6
-    .param p1    # Landroid/content/res/Configuration;
 
     const/4 v5, 0x1
 
@@ -315,7 +314,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 6
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v5, 0x1
 
@@ -530,9 +528,6 @@
 
 .method public onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
     .locals 2
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -589,7 +584,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -677,7 +671,6 @@
 
 .method public setTransitionEffect(I)V
     .locals 5
-    .param p1    # I
 
     sget v3, Lcom/android/launcher2/Launcher;->sWhichTransitionEffect:I
 

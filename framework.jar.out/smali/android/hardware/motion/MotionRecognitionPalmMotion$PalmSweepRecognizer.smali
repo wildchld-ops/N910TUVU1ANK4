@@ -143,8 +143,6 @@
 
 .method synthetic constructor <init>(Landroid/hardware/motion/MotionRecognitionPalmMotion;Landroid/hardware/motion/MotionRecognitionPalmMotion$1;)V
     .locals 0
-    .param p1    # Landroid/hardware/motion/MotionRecognitionPalmMotion;
-    .param p2    # Landroid/hardware/motion/MotionRecognitionPalmMotion$1;
 
     invoke-direct {p0, p1}, Landroid/hardware/motion/MotionRecognitionPalmMotion$PalmSweepRecognizer;-><init>(Landroid/hardware/motion/MotionRecognitionPalmMotion;)V
 
@@ -153,7 +151,6 @@
 
 .method private CalculateHorizontalSweepData(Landroid/hardware/motion/MotionRecognitionPalmMotion$SurfaceTouchSharingData;)V
     .locals 6
-    .param p1    # Landroid/hardware/motion/MotionRecognitionPalmMotion$SurfaceTouchSharingData;
 
     const/high16 v3, 0x42480000
 
@@ -497,7 +494,6 @@
 
 .method private GetRangeNum(Landroid/hardware/motion/MotionRecognitionPalmMotion$SurfaceTouchSharingData;)I
     .locals 3
-    .param p1    # Landroid/hardware/motion/MotionRecognitionPalmMotion$SurfaceTouchSharingData;
 
     const/4 v0, 0x0
 
@@ -604,7 +600,6 @@
 
 .method private RocognizeHorizontalSweepData(Landroid/hardware/motion/MotionRecognitionPalmMotion$SurfaceTouchSharingData;)V
     .locals 9
-    .param p1    # Landroid/hardware/motion/MotionRecognitionPalmMotion$SurfaceTouchSharingData;
 
     const/4 v8, 0x3
 
@@ -1072,7 +1067,6 @@
 
 .method private SetArrMaxTouchMajor(Landroid/hardware/motion/MotionRecognitionPalmMotion$SurfaceTouchSharingData;)V
     .locals 3
-    .param p1    # Landroid/hardware/motion/MotionRecognitionPalmMotion$SurfaceTouchSharingData;
 
     invoke-direct {p0, p1}, Landroid/hardware/motion/MotionRecognitionPalmMotion$PalmSweepRecognizer;->GetRangeNum(Landroid/hardware/motion/MotionRecognitionPalmMotion$SurfaceTouchSharingData;)I
 
@@ -1096,7 +1090,6 @@
 
 .method static synthetic access$700(Landroid/hardware/motion/MotionRecognitionPalmMotion$PalmSweepRecognizer;)Z
     .locals 1
-    .param p0    # Landroid/hardware/motion/MotionRecognitionPalmMotion$PalmSweepRecognizer;
 
     iget-boolean v0, p0, Landroid/hardware/motion/MotionRecognitionPalmMotion$PalmSweepRecognizer;->mPreSweepDown:Z
 
@@ -1105,8 +1098,6 @@
 
 .method static synthetic access$702(Landroid/hardware/motion/MotionRecognitionPalmMotion$PalmSweepRecognizer;Z)Z
     .locals 0
-    .param p0    # Landroid/hardware/motion/MotionRecognitionPalmMotion$PalmSweepRecognizer;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/hardware/motion/MotionRecognitionPalmMotion$PalmSweepRecognizer;->mPreSweepDown:Z
 
@@ -1115,7 +1106,6 @@
 
 .method static synthetic access$800(Landroid/hardware/motion/MotionRecognitionPalmMotion$PalmSweepRecognizer;)Z
     .locals 1
-    .param p0    # Landroid/hardware/motion/MotionRecognitionPalmMotion$PalmSweepRecognizer;
 
     iget-boolean v0, p0, Landroid/hardware/motion/MotionRecognitionPalmMotion$PalmSweepRecognizer;->mSweepDown:Z
 
@@ -1124,8 +1114,6 @@
 
 .method static synthetic access$802(Landroid/hardware/motion/MotionRecognitionPalmMotion$PalmSweepRecognizer;Z)Z
     .locals 0
-    .param p0    # Landroid/hardware/motion/MotionRecognitionPalmMotion$PalmSweepRecognizer;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/hardware/motion/MotionRecognitionPalmMotion$PalmSweepRecognizer;->mSweepDown:Z
 
@@ -1136,7 +1124,6 @@
 # virtual methods
 .method public Initialize(Landroid/hardware/motion/MotionRecognitionPalmMotion$SurfaceTouchSharingData;)V
     .locals 5
-    .param p1    # Landroid/hardware/motion/MotionRecognitionPalmMotion$SurfaceTouchSharingData;
 
     const/4 v4, 0x0
 
@@ -1246,7 +1233,6 @@
 
 .method public Process(Landroid/hardware/motion/MotionRecognitionPalmMotion$SurfaceTouchSharingData;)V
     .locals 2
-    .param p1    # Landroid/hardware/motion/MotionRecognitionPalmMotion$SurfaceTouchSharingData;
 
     iget v0, p0, Landroid/hardware/motion/MotionRecognitionPalmMotion$PalmSweepRecognizer;->mSmeanX:F
 
@@ -1287,7 +1273,6 @@
 
 .method public setSweepDown(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/hardware/motion/MotionRecognitionPalmMotion$PalmSweepRecognizer;->mSweepDown:Z
 

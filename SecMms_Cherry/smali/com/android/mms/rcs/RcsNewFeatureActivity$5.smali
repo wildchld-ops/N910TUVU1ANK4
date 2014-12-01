@@ -36,7 +36,6 @@
 # virtual methods
 .method public onCancel(Landroid/content/DialogInterface;)V
     .locals 17
-    .param p1    # Landroid/content/DialogInterface;
 
     move-object/from16 v0, p0
 

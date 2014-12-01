@@ -44,7 +44,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -55,8 +54,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v2, 0x0
 
@@ -101,8 +98,6 @@
 
 .method static synthetic access$076(Landroid/preference/MultiSelectListPreference;I)Z
     .locals 1
-    .param p0    # Landroid/preference/MultiSelectListPreference;
-    .param p1    # I
 
     iget-boolean v0, p0, Landroid/preference/MultiSelectListPreference;->mPreferenceChanged:Z
 
@@ -117,7 +112,6 @@
 
 .method static synthetic access$100(Landroid/preference/MultiSelectListPreference;)[Ljava/lang/CharSequence;
     .locals 1
-    .param p0    # Landroid/preference/MultiSelectListPreference;
 
     iget-object v0, p0, Landroid/preference/MultiSelectListPreference;->mEntryValues:[Ljava/lang/CharSequence;
 
@@ -126,7 +120,6 @@
 
 .method static synthetic access$200(Landroid/preference/MultiSelectListPreference;)Ljava/util/Set;
     .locals 1
-    .param p0    # Landroid/preference/MultiSelectListPreference;
 
     iget-object v0, p0, Landroid/preference/MultiSelectListPreference;->mNewValues:Ljava/util/Set;
 
@@ -173,7 +166,6 @@
 # virtual methods
 .method public findIndexOfValue(Ljava/lang/String;)I
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_1
 
@@ -249,7 +241,6 @@
 
 .method protected onDialogClosed(Z)V
     .locals 2
-    .param p1    # Z
 
     invoke-super {p0, p1}, Landroid/preference/DialogPreference;->onDialogClosed(Z)V
 
@@ -279,8 +270,6 @@
 
 .method protected onGetDefaultValue(Landroid/content/res/TypedArray;I)Ljava/lang/Object;
     .locals 5
-    .param p1    # Landroid/content/res/TypedArray;
-    .param p2    # I
 
     invoke-virtual {p1, p2}, Landroid/content/res/TypedArray;->getTextArray(I)[Ljava/lang/CharSequence;
 
@@ -320,7 +309,6 @@
 
 .method protected onPrepareDialogBuilder(Landroid/app/AlertDialog$Builder;)V
     .locals 3
-    .param p1    # Landroid/app/AlertDialog$Builder;
 
     invoke-super {p0, p1}, Landroid/preference/DialogPreference;->onPrepareDialogBuilder(Landroid/app/AlertDialog$Builder;)V
 
@@ -401,8 +389,6 @@
 
 .method protected onSetInitialValue(ZLjava/lang/Object;)V
     .locals 1
-    .param p1    # Z
-    .param p2    # Ljava/lang/Object;
 
     if-eqz p1, :cond_0
 
@@ -425,7 +411,6 @@
 
 .method public setEntries(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/preference/Preference;->getContext()Landroid/content/Context;
 
@@ -446,7 +431,6 @@
 
 .method public setEntries([Ljava/lang/CharSequence;)V
     .locals 0
-    .param p1    # [Ljava/lang/CharSequence;
 
     iput-object p1, p0, Landroid/preference/MultiSelectListPreference;->mEntries:[Ljava/lang/CharSequence;
 
@@ -455,7 +439,6 @@
 
 .method public setEntryValues(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/preference/Preference;->getContext()Landroid/content/Context;
 
@@ -476,7 +459,6 @@
 
 .method public setEntryValues([Ljava/lang/CharSequence;)V
     .locals 0
-    .param p1    # [Ljava/lang/CharSequence;
 
     iput-object p1, p0, Landroid/preference/MultiSelectListPreference;->mEntryValues:[Ljava/lang/CharSequence;
 

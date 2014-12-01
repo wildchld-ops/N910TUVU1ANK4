@@ -234,7 +234,6 @@
 
 .method public constructor <init>(Landroid/app/Activity;)V
     .locals 4
-    .param p1    # Landroid/app/Activity;
 
     const/4 v2, 0x0
 
@@ -337,8 +336,6 @@
 
 .method public constructor <init>(Landroid/app/Activity;Landroid/content/DialogInterface$OnClickListener;)V
     .locals 4
-    .param p1    # Landroid/app/Activity;
-    .param p2    # Landroid/content/DialogInterface$OnClickListener;
 
     const/4 v2, 0x0
 
@@ -449,7 +446,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/saverestore/SaveRestoreOperation;)Lcom/android/mms/saverestore/SaveRestoreOperation$SaveRestoreListener;
     .locals 1
-    .param p0    # Lcom/android/mms/saverestore/SaveRestoreOperation;
 
     iget-object v0, p0, Lcom/android/mms/saverestore/SaveRestoreOperation;->mSaveCompleteListener:Lcom/android/mms/saverestore/SaveRestoreOperation$SaveRestoreListener;
 
@@ -458,7 +454,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/saverestore/SaveRestoreOperation;)I
     .locals 1
-    .param p0    # Lcom/android/mms/saverestore/SaveRestoreOperation;
 
     iget v0, p0, Lcom/android/mms/saverestore/SaveRestoreOperation;->MAX_MESSAGES_PER_FILE:I
 
@@ -467,7 +462,6 @@
 
 .method static synthetic access$1000(Lcom/android/mms/saverestore/SaveRestoreOperation;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/mms/saverestore/SaveRestoreOperation;
 
     iget-object v0, p0, Lcom/android/mms/saverestore/SaveRestoreOperation;->mArrayList:Ljava/util/ArrayList;
 
@@ -476,8 +470,6 @@
 
 .method static synthetic access$1002(Lcom/android/mms/saverestore/SaveRestoreOperation;Ljava/util/ArrayList;)Ljava/util/ArrayList;
     .locals 0
-    .param p0    # Lcom/android/mms/saverestore/SaveRestoreOperation;
-    .param p1    # Ljava/util/ArrayList;
 
     iput-object p1, p0, Lcom/android/mms/saverestore/SaveRestoreOperation;->mArrayList:Ljava/util/ArrayList;
 
@@ -486,9 +478,6 @@
 
 .method static synthetic access$1100(Lcom/android/mms/saverestore/SaveRestoreOperation;II)V
     .locals 0
-    .param p0    # Lcom/android/mms/saverestore/SaveRestoreOperation;
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/mms/saverestore/SaveRestoreOperation;->showErrorSuccessRestoreDialog(II)V
 
@@ -497,8 +486,6 @@
 
 .method static synthetic access$1200(Lcom/android/mms/saverestore/SaveRestoreOperation;Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/saverestore/SaveRestoreOperation;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/mms/saverestore/SaveRestoreOperation;->fileAlreadyExists(Ljava/lang/String;)Z
 
@@ -509,7 +496,6 @@
 
 .method static synthetic access$1300(Lcom/android/mms/saverestore/SaveRestoreOperation;)Lcom/android/mms/saverestore/SaveRestoreOperation$BackgroundQueryHandler;
     .locals 1
-    .param p0    # Lcom/android/mms/saverestore/SaveRestoreOperation;
 
     iget-object v0, p0, Lcom/android/mms/saverestore/SaveRestoreOperation;->mQueryHandler:Lcom/android/mms/saverestore/SaveRestoreOperation$BackgroundQueryHandler;
 
@@ -518,7 +504,6 @@
 
 .method static synthetic access$1500(Lcom/android/mms/saverestore/SaveRestoreOperation;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/saverestore/SaveRestoreOperation;
 
     iget-boolean v0, p0, Lcom/android/mms/saverestore/SaveRestoreOperation;->SaveRestoreDestroyed:Z
 
@@ -527,7 +512,6 @@
 
 .method static synthetic access$1600(Lcom/android/mms/saverestore/SaveRestoreOperation;)Lcom/android/mms/saverestore/SaveRestoreOperation$MessageHandler;
     .locals 1
-    .param p0    # Lcom/android/mms/saverestore/SaveRestoreOperation;
 
     iget-object v0, p0, Lcom/android/mms/saverestore/SaveRestoreOperation;->mHandler:Lcom/android/mms/saverestore/SaveRestoreOperation$MessageHandler;
 
@@ -536,7 +520,6 @@
 
 .method static synthetic access$1700(Lcom/android/mms/saverestore/SaveRestoreOperation;)Landroid/widget/Toast;
     .locals 1
-    .param p0    # Lcom/android/mms/saverestore/SaveRestoreOperation;
 
     iget-object v0, p0, Lcom/android/mms/saverestore/SaveRestoreOperation;->mToast:Landroid/widget/Toast;
 
@@ -545,8 +528,6 @@
 
 .method static synthetic access$1702(Lcom/android/mms/saverestore/SaveRestoreOperation;Landroid/widget/Toast;)Landroid/widget/Toast;
     .locals 0
-    .param p0    # Lcom/android/mms/saverestore/SaveRestoreOperation;
-    .param p1    # Landroid/widget/Toast;
 
     iput-object p1, p0, Lcom/android/mms/saverestore/SaveRestoreOperation;->mToast:Landroid/widget/Toast;
 
@@ -563,7 +544,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/saverestore/SaveRestoreOperation;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/mms/saverestore/SaveRestoreOperation;
 
     iget-object v0, p0, Lcom/android/mms/saverestore/SaveRestoreOperation;->mSDcardFolderName:Ljava/lang/String;
 
@@ -572,7 +552,6 @@
 
 .method static synthetic access$300(Lcom/android/mms/saverestore/SaveRestoreOperation;)Landroid/app/Activity;
     .locals 1
-    .param p0    # Lcom/android/mms/saverestore/SaveRestoreOperation;
 
     iget-object v0, p0, Lcom/android/mms/saverestore/SaveRestoreOperation;->mActivity:Landroid/app/Activity;
 
@@ -581,8 +560,6 @@
 
 .method static synthetic access$402(Lcom/android/mms/saverestore/SaveRestoreOperation;I)I
     .locals 0
-    .param p0    # Lcom/android/mms/saverestore/SaveRestoreOperation;
-    .param p1    # I
 
     iput p1, p0, Lcom/android/mms/saverestore/SaveRestoreOperation;->mFileCount:I
 
@@ -591,7 +568,6 @@
 
 .method static synthetic access$500(Lcom/android/mms/saverestore/SaveRestoreOperation;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/saverestore/SaveRestoreOperation;
 
     iget-boolean v0, p0, Lcom/android/mms/saverestore/SaveRestoreOperation;->mIsThreadId:Z
 
@@ -600,9 +576,6 @@
 
 .method static synthetic access$600(Lcom/android/mms/saverestore/SaveRestoreOperation;[JZ)V
     .locals 0
-    .param p0    # Lcom/android/mms/saverestore/SaveRestoreOperation;
-    .param p1    # [J
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/mms/saverestore/SaveRestoreOperation;->checkIfMmsInSelection([JZ)V
 
@@ -611,7 +584,6 @@
 
 .method static synthetic access$700(Lcom/android/mms/saverestore/SaveRestoreOperation;)V
     .locals 0
-    .param p0    # Lcom/android/mms/saverestore/SaveRestoreOperation;
 
     invoke-direct {p0}, Lcom/android/mms/saverestore/SaveRestoreOperation;->showNoSmsSelectedDialog()V
 
@@ -620,8 +592,6 @@
 
 .method static synthetic access$800(Lcom/android/mms/saverestore/SaveRestoreOperation;[J)V
     .locals 0
-    .param p0    # Lcom/android/mms/saverestore/SaveRestoreOperation;
-    .param p1    # [J
 
     invoke-direct {p0, p1}, Lcom/android/mms/saverestore/SaveRestoreOperation;->showMmsSelectedDialog([J)V
 
@@ -630,9 +600,6 @@
 
 .method static synthetic access$900(Lcom/android/mms/saverestore/SaveRestoreOperation;[JZ)V
     .locals 0
-    .param p0    # Lcom/android/mms/saverestore/SaveRestoreOperation;
-    .param p1    # [J
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/mms/saverestore/SaveRestoreOperation;->showSavedMsgsListDialog([JZ)V
 
@@ -641,8 +608,6 @@
 
 .method private checkIfAnySmsPresent([JZ)V
     .locals 2
-    .param p1    # [J
-    .param p2    # Z
 
     iget-object v0, p0, Lcom/android/mms/saverestore/SaveRestoreOperation;->mQueryHandler:Lcom/android/mms/saverestore/SaveRestoreOperation$BackgroundQueryHandler;
 
@@ -655,8 +620,6 @@
 
 .method private checkIfMmsInSelection([JZ)V
     .locals 2
-    .param p1    # [J
-    .param p2    # Z
 
     iget-object v0, p0, Lcom/android/mms/saverestore/SaveRestoreOperation;->mQueryHandler:Lcom/android/mms/saverestore/SaveRestoreOperation$BackgroundQueryHandler;
 
@@ -669,8 +632,6 @@
 
 .method private checkIfSmsSelected([JZ)V
     .locals 2
-    .param p1    # [J
-    .param p2    # Z
 
     iget-object v0, p0, Lcom/android/mms/saverestore/SaveRestoreOperation;->mQueryHandler:Lcom/android/mms/saverestore/SaveRestoreOperation$BackgroundQueryHandler;
 
@@ -721,7 +682,6 @@
 
 .method private fileAlreadyExists(Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
 
@@ -780,8 +740,6 @@
 
 .method private showErrorSuccessRestoreDialog(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
@@ -808,7 +766,6 @@
 
 .method private showMmsSelectedDialog([J)V
     .locals 3
-    .param p1    # [J
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
@@ -903,8 +860,6 @@
 
 .method private showSavedMsgsListDialog([JZ)V
     .locals 6
-    .param p1    # [J
-    .param p2    # Z
 
     const/4 v3, 0x1
 
@@ -981,9 +936,6 @@
 
 .method private writeFile(Ljava/io/File;[BI)Z
     .locals 5
-    .param p1    # Ljava/io/File;
-    .param p2    # [B
-    .param p3    # I
 
     const/4 v3, 0x0
 
@@ -1162,7 +1114,6 @@
 
 .method public declared-synchronized SetOnSaveCompleteListener(Lcom/android/mms/saverestore/SaveRestoreOperation$SaveRestoreListener;)V
     .locals 1
-    .param p1    # Lcom/android/mms/saverestore/SaveRestoreOperation$SaveRestoreListener;
 
     monitor-enter p0
 
@@ -1185,7 +1136,6 @@
 
 .method public checkForDuplicates([J)V
     .locals 3
-    .param p1    # [J
 
     iget-object v0, p0, Lcom/android/mms/saverestore/SaveRestoreOperation;->mQueryHandler:Lcom/android/mms/saverestore/SaveRestoreOperation$BackgroundQueryHandler;
 
@@ -1440,8 +1390,6 @@
 
 .method public getEditTextFilter(Landroid/content/Context;I)[Landroid/text/InputFilter;
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     const/4 v1, 0x3
 
@@ -1535,8 +1483,6 @@
 
 .method public saveSmsToSdCard(Landroid/database/Cursor;Ljava/lang/String;)Z
     .locals 13
-    .param p1    # Landroid/database/Cursor;
-    .param p2    # Ljava/lang/String;
 
     invoke-static {}, Landroid/os/Environment;->getExternalStorageState()Ljava/lang/String;
 
@@ -1825,8 +1771,6 @@
 
 .method public showSaveFileNameDialog([JZ)V
     .locals 8
-    .param p1    # [J
-    .param p2    # Z
 
     const/4 v7, 0x1
 
@@ -2125,9 +2069,6 @@
 
 .method public startSaveOperation([JZZ)V
     .locals 1
-    .param p1    # [J
-    .param p2    # Z
-    .param p3    # Z
 
     iput-boolean p2, p0, Lcom/android/mms/saverestore/SaveRestoreOperation;->mIsThreadId:Z
 
@@ -2179,9 +2120,6 @@
 
 .method public writeToFile(Landroid/database/Cursor;Ljava/io/File;Z)V
     .locals 24
-    .param p1    # Landroid/database/Cursor;
-    .param p2    # Ljava/io/File;
-    .param p3    # Z
 
     const/4 v15, 0x0
 

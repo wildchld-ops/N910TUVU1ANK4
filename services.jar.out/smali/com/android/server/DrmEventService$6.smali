@@ -36,8 +36,6 @@
 # virtual methods
 .method public onError(Landroid/drm/DrmManagerClient;Landroid/drm/DrmErrorEvent;)V
     .locals 3
-    .param p1    # Landroid/drm/DrmManagerClient;
-    .param p2    # Landroid/drm/DrmErrorEvent;
 
     invoke-virtual {p2}, Landroid/drm/DrmEvent;->getType()I
 

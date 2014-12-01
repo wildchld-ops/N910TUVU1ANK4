@@ -83,7 +83,6 @@
 
 .method public setListenerAdapter(Landroid/animation/AnimatorListenerAdapter;)V
     .locals 0
-    .param p1    # Landroid/animation/AnimatorListenerAdapter;
 
     iput-object p1, p0, Lcom/android/launcher2/MenuStateAnimatorSet;->mStateChangeAnimatorListener:Landroid/animation/AnimatorListenerAdapter;
 

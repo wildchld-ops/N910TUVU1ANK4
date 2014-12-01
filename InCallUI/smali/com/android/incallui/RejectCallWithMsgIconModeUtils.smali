@@ -14,7 +14,6 @@
 
 .method public static isIconMode(Landroid/content/Context;)Z
     .locals 10
-    .param p0    # Landroid/content/Context;
 
     const/4 v6, 0x1
 

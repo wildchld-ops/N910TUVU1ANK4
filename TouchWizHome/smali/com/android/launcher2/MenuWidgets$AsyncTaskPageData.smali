@@ -59,12 +59,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/launcher2/PagedViewGridLayout;ILjava/util/List;IILcom/android/launcher2/MenuWidgets$AsyncTaskPageData$AsyncTaskCallback;Lcom/android/launcher2/MenuWidgets$AsyncTaskPageData$AsyncTaskCallback;)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/PagedViewGridLayout;
-    .param p2    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Lcom/android/launcher2/MenuWidgets$AsyncTaskPageData$AsyncTaskCallback;
-    .param p7    # Lcom/android/launcher2/MenuWidgets$AsyncTaskPageData$AsyncTaskCallback;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -109,8 +103,6 @@
 # virtual methods
 .method cleanup(Ljava/lang/String;Z)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     iget-object v0, p0, Lcom/android/launcher2/MenuWidgets$AsyncTaskPageData;->generatedImages:Ljava/util/ArrayList;
 

@@ -65,7 +65,6 @@
 
 .method private CreationModeActionName(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -101,7 +100,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/settings/MultimediamessagesSettings;)V
     .locals 0
-    .param p0    # Lcom/android/mms/settings/MultimediamessagesSettings;
 
     invoke-direct {p0}, Lcom/android/mms/settings/MultimediamessagesSettings;->updateGroupMmsPreference()V
 
@@ -110,7 +108,6 @@
 
 .method private confirmGroupMmsDialog(Landroid/content/DialogInterface$OnClickListener;)V
     .locals 3
-    .param p1    # Landroid/content/DialogInterface$OnClickListener;
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
@@ -141,7 +138,6 @@
 
 .method public static getCreationMode(Ljava/lang/String;)I
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "Mms/MultimediaMessagesSettings"
 
@@ -199,7 +195,6 @@
 
 .method private onAutoRetrieveSettingsClick(Landroid/preference/Preference;)V
     .locals 6
-    .param p1    # Landroid/preference/Preference;
 
     const/4 v5, 0x0
 
@@ -318,8 +313,6 @@
 
 .method private removePreference(Landroid/preference/PreferenceGroup;Landroid/preference/Preference;)V
     .locals 0
-    .param p1    # Landroid/preference/PreferenceGroup;
-    .param p2    # Landroid/preference/Preference;
 
     if-eqz p1, :cond_0
 
@@ -469,7 +462,6 @@
 
 .method private setCreationModeSummary(Landroid/content/SharedPreferences;)V
     .locals 4
-    .param p1    # Landroid/content/SharedPreferences;
 
     invoke-static {}, Lcom/android/mms/MmsConfig;->getEnableMmsCreationMode()Z
 
@@ -551,7 +543,6 @@
 # virtual methods
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/preference/PreferenceActivity;->onCreate(Landroid/os/Bundle;)V
 
@@ -752,7 +743,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -814,8 +804,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 5
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     const/4 v2, 0x1
 
@@ -972,8 +960,6 @@
 
 .method public onSharedPreferenceChanged(Landroid/content/SharedPreferences;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Landroid/content/SharedPreferences;
-    .param p2    # Ljava/lang/String;
 
     const-string v1, "pref_key_mms_delivery_reports"
 

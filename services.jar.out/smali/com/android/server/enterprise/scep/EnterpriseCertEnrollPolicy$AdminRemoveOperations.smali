@@ -48,7 +48,6 @@
 
 .method private constructor <init>(Lcom/android/server/enterprise/scep/EnterpriseCertEnrollPolicy;I)V
     .locals 3
-    .param p2    # I
 
     iput-object p1, p0, Lcom/android/server/enterprise/scep/EnterpriseCertEnrollPolicy$AdminRemoveOperations;->this$0:Lcom/android/server/enterprise/scep/EnterpriseCertEnrollPolicy;
 
@@ -102,9 +101,6 @@
 
 .method synthetic constructor <init>(Lcom/android/server/enterprise/scep/EnterpriseCertEnrollPolicy;ILcom/android/server/enterprise/scep/EnterpriseCertEnrollPolicy$1;)V
     .locals 0
-    .param p1    # Lcom/android/server/enterprise/scep/EnterpriseCertEnrollPolicy;
-    .param p2    # I
-    .param p3    # Lcom/android/server/enterprise/scep/EnterpriseCertEnrollPolicy$1;
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/enterprise/scep/EnterpriseCertEnrollPolicy$AdminRemoveOperations;-><init>(Lcom/android/server/enterprise/scep/EnterpriseCertEnrollPolicy;I)V
 
@@ -115,7 +111,6 @@
 # virtual methods
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [[Ljava/lang/Integer;
 
@@ -128,7 +123,6 @@
 
 .method protected varargs doInBackground([[Ljava/lang/Integer;)Ljava/lang/Void;
     .locals 18
-    .param p1    # [[Ljava/lang/Integer;
 
     move-object/from16 v0, p0
 

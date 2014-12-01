@@ -34,8 +34,6 @@
 # direct methods
 .method constructor <init>(Ljava/lang/String;Ljava/lang/Class;Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p3    # Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -60,7 +58,6 @@
 
 .method static synthetic access$000(Lcom/android/launcher2/tabs/TabManager$TabInfo;)Landroid/app/Fragment;
     .locals 1
-    .param p0    # Lcom/android/launcher2/tabs/TabManager$TabInfo;
 
     iget-object v0, p0, Lcom/android/launcher2/tabs/TabManager$TabInfo;->fragment:Landroid/app/Fragment;
 
@@ -69,8 +66,6 @@
 
 .method static synthetic access$002(Lcom/android/launcher2/tabs/TabManager$TabInfo;Landroid/app/Fragment;)Landroid/app/Fragment;
     .locals 0
-    .param p0    # Lcom/android/launcher2/tabs/TabManager$TabInfo;
-    .param p1    # Landroid/app/Fragment;
 
     iput-object p1, p0, Lcom/android/launcher2/tabs/TabManager$TabInfo;->fragment:Landroid/app/Fragment;
 
@@ -79,7 +74,6 @@
 
 .method static synthetic access$100(Lcom/android/launcher2/tabs/TabManager$TabInfo;)Ljava/lang/Class;
     .locals 1
-    .param p0    # Lcom/android/launcher2/tabs/TabManager$TabInfo;
 
     iget-object v0, p0, Lcom/android/launcher2/tabs/TabManager$TabInfo;->clss:Ljava/lang/Class;
 
@@ -88,8 +82,6 @@
 
 .method static synthetic access$102(Lcom/android/launcher2/tabs/TabManager$TabInfo;Ljava/lang/Class;)Ljava/lang/Class;
     .locals 0
-    .param p0    # Lcom/android/launcher2/tabs/TabManager$TabInfo;
-    .param p1    # Ljava/lang/Class;
 
     iput-object p1, p0, Lcom/android/launcher2/tabs/TabManager$TabInfo;->clss:Ljava/lang/Class;
 
@@ -98,7 +90,6 @@
 
 .method static synthetic access$200(Lcom/android/launcher2/tabs/TabManager$TabInfo;)Landroid/os/Bundle;
     .locals 1
-    .param p0    # Lcom/android/launcher2/tabs/TabManager$TabInfo;
 
     iget-object v0, p0, Lcom/android/launcher2/tabs/TabManager$TabInfo;->args:Landroid/os/Bundle;
 

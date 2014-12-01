@@ -6,7 +6,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-static {p1}, Lcom/android/mms/settings/BackgroundSelectorAdapter;->getData(Landroid/content/Context;)Ljava/util/List;
 
@@ -19,7 +18,6 @@
 
 .method protected static getData(Landroid/content/Context;)Ljava/util/List;
     .locals 6
-    .param p0    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

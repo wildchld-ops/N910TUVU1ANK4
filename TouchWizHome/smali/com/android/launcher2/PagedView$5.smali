@@ -36,8 +36,6 @@
 # virtual methods
 .method public onChildViewAdded(Landroid/view/View;Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/View;
 
     iget-object v0, p0, Lcom/android/launcher2/PagedView$5;->this$0:Lcom/android/launcher2/PagedView;
 
@@ -48,8 +46,6 @@
 
 .method public onChildViewRemoved(Landroid/view/View;Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/View;
 
     iget-object v0, p0, Lcom/android/launcher2/PagedView$5;->this$0:Lcom/android/launcher2/PagedView;
 

@@ -63,9 +63,6 @@
 
 .method public static final getProtocolLabel(Landroid/content/res/Resources;ILjava/lang/CharSequence;)Ljava/lang/CharSequence;
     .locals 2
-    .param p0    # Landroid/content/res/Resources;
-    .param p1    # I
-    .param p2    # Ljava/lang/CharSequence;
 
     const/4 v1, -0x1
 
@@ -94,7 +91,6 @@
 
 .method public static final getProtocolLabelResource(I)I
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -166,9 +162,6 @@
 
 .method public static final getTypeLabel(Landroid/content/res/Resources;ILjava/lang/CharSequence;)Ljava/lang/CharSequence;
     .locals 2
-    .param p0    # Landroid/content/res/Resources;
-    .param p1    # I
-    .param p2    # Ljava/lang/CharSequence;
 
     if-nez p1, :cond_0
 
@@ -195,7 +188,6 @@
 
 .method public static final getTypeLabelResource(I)I
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 

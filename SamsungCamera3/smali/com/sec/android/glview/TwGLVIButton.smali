@@ -83,12 +83,6 @@
 
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;IFFFF)V
     .locals 7
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # I
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # F
 
     const/4 v6, 0x0
 
@@ -251,9 +245,6 @@
 
 .method private render(Landroid/graphics/Canvas;Lcom/sec/android/vector/RenderInfo;F)V
     .locals 3
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # Lcom/sec/android/vector/RenderInfo;
-    .param p3    # F
 
     invoke-virtual {p2, p3}, Lcom/sec/android/vector/RenderInfo;->calculatePath(F)Landroid/graphics/Path;
 
@@ -279,8 +270,6 @@
 
 .method private setProperty(II)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     const/high16 v3, 0x43960000
 
@@ -689,8 +678,6 @@
 
 .method protected makeRenderInfo(Lcom/sec/android/vector/IRenderData;Landroid/graphics/Paint;)Lcom/sec/android/vector/RenderInfo;
     .locals 6
-    .param p1    # Lcom/sec/android/vector/IRenderData;
-    .param p2    # Landroid/graphics/Paint;
 
     invoke-interface {p1}, Lcom/sec/android/vector/IRenderData;->getCommands()[Lcom/sec/android/vector/DRAW_PATH_TYPE;
 
@@ -735,7 +722,6 @@
 
 .method public onAnimationUpdate(Landroid/animation/ValueAnimator;)V
     .locals 3
-    .param p1    # Landroid/animation/ValueAnimator;
 
     invoke-virtual {p1}, Landroid/animation/ValueAnimator;->getAnimatedValue()Ljava/lang/Object;
 
@@ -855,7 +841,6 @@
 
 .method protected onOrientationChanged(I)V
     .locals 1
-    .param p1    # I
 
     invoke-super {p0, p1}, Lcom/sec/android/glview/TwGLView;->onOrientationChanged(I)V
 
@@ -883,7 +868,6 @@
 
 .method protected onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-object v0, p0, Lcom/sec/android/glview/TwGLView;->mOnClickListener:Lcom/sec/android/glview/TwGLView$OnClickListener;
 
@@ -903,7 +887,6 @@
 
 .method public setMode(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/glview/TwGLVIButton;->mMode:I
 
@@ -912,10 +895,6 @@
 
 .method public setRect(FFFF)V
     .locals 2
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
 
     const/4 v1, 0x0
 
@@ -951,8 +930,6 @@
 
 .method public setSize(FF)V
     .locals 1
-    .param p1    # F
-    .param p2    # F
 
     invoke-super {p0, p1, p2}, Lcom/sec/android/glview/TwGLView;->setSize(FF)V
 
@@ -1064,7 +1041,6 @@
 
 .method public declared-synchronized startPauseResumeVIAnimation(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v2, 0x1
 

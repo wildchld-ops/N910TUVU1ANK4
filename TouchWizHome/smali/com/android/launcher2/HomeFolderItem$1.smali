@@ -40,8 +40,6 @@
 # virtual methods
 .method public final compare(Lcom/android/launcher2/BaseItem;Lcom/android/launcher2/BaseItem;)I
     .locals 2
-    .param p1    # Lcom/android/launcher2/BaseItem;
-    .param p2    # Lcom/android/launcher2/BaseItem;
 
     iget v0, p1, Lcom/android/launcher2/BaseItem;->mScreen:I
 
@@ -54,8 +52,6 @@
 
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p1, Lcom/android/launcher2/BaseItem;
 

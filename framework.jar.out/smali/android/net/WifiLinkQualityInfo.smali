@@ -38,7 +38,6 @@
 
 .method public static createFromParcelBody(Landroid/os/Parcel;)Landroid/net/WifiLinkQualityInfo;
     .locals 3
-    .param p0    # Landroid/os/Parcel;
 
     new-instance v0, Landroid/net/WifiLinkQualityInfo;
 
@@ -123,7 +122,6 @@
 
 .method public setBssid(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/net/WifiLinkQualityInfo;->mBssid:Ljava/lang/String;
 
@@ -132,7 +130,6 @@
 
 .method public setRssi(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/net/WifiLinkQualityInfo;->mRssi:I
 
@@ -141,7 +138,6 @@
 
 .method public setTxBad(J)V
     .locals 0
-    .param p1    # J
 
     iput-wide p1, p0, Landroid/net/WifiLinkQualityInfo;->mTxBad:J
 
@@ -150,7 +146,6 @@
 
 .method public setTxGood(J)V
     .locals 0
-    .param p1    # J
 
     iput-wide p1, p0, Landroid/net/WifiLinkQualityInfo;->mTxGood:J
 
@@ -159,7 +154,6 @@
 
 .method public setType(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/net/WifiLinkQualityInfo;->mType:I
 
@@ -168,8 +162,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     const/4 v0, 0x2
 

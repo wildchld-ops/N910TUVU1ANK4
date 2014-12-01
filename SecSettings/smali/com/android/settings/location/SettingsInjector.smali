@@ -33,7 +33,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -58,7 +57,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/location/SettingsInjector;)Ljava/util/Set;
     .locals 1
-    .param p0    # Lcom/android/settings/location/SettingsInjector;
 
     iget-object v0, p0, Lcom/android/settings/location/SettingsInjector;->mSettings:Ljava/util/Set;
 
@@ -67,7 +65,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/location/SettingsInjector;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/settings/location/SettingsInjector;
 
     iget-object v0, p0, Lcom/android/settings/location/SettingsInjector;->mHandler:Landroid/os/Handler;
 
@@ -76,7 +73,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/location/SettingsInjector;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/settings/location/SettingsInjector;
 
     iget-object v0, p0, Lcom/android/settings/location/SettingsInjector;->mContext:Landroid/content/Context;
 
@@ -85,7 +81,6 @@
 
 .method private addServiceSetting(Ljava/util/List;Lcom/android/settings/location/InjectedSetting;)Landroid/preference/Preference;
     .locals 7
-    .param p2    # Lcom/android/settings/location/InjectedSetting;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -370,10 +365,6 @@
 
 .method private static parseAttributes(Ljava/lang/String;Ljava/lang/String;Landroid/content/res/Resources;Landroid/util/AttributeSet;)Lcom/android/settings/location/InjectedSetting;
     .locals 7
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/content/res/Resources;
-    .param p3    # Landroid/util/AttributeSet;
 
     sget-object v4, Landroid/R$styleable;->SettingInjectorService:[I
 
@@ -475,8 +466,6 @@
 
 .method private static parseServiceInfo(Landroid/content/pm/ResolveInfo;Landroid/content/pm/PackageManager;)Lcom/android/settings/location/InjectedSetting;
     .locals 11
-    .param p0    # Landroid/content/pm/ResolveInfo;
-    .param p1    # Landroid/content/pm/PackageManager;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,

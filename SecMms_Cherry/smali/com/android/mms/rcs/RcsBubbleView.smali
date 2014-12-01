@@ -122,7 +122,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     const/4 v2, 0x0
 
@@ -181,8 +180,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v2, 0x0
 
@@ -241,9 +238,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v2, 0x0
 
@@ -302,7 +296,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/rcs/RcsBubbleView;)Lcom/android/mms/ui/MessageListItem;
     .locals 1
-    .param p0    # Lcom/android/mms/rcs/RcsBubbleView;
 
     iget-object v0, p0, Lcom/android/mms/rcs/RcsBubbleView;->mMsgListItem:Lcom/android/mms/ui/MessageListItem;
 
@@ -311,7 +304,6 @@
 
 .method private calculateDrmImageBounds(Landroid/widget/ImageView;)V
     .locals 2
-    .param p1    # Landroid/widget/ImageView;
 
     const/4 v1, -0x2
 
@@ -328,8 +320,6 @@
 
 .method private decodeBitmap(Landroid/net/Uri;I)Landroid/graphics/Bitmap;
     .locals 18
-    .param p1    # Landroid/net/Uri;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/OutOfMemoryError;
@@ -1055,7 +1045,6 @@
 
 .method private static getEmptyImageBitmap(Landroid/content/res/Resources;)Landroid/graphics/Bitmap;
     .locals 3
-    .param p0    # Landroid/content/res/Resources;
 
     sget-object v1, Lcom/android/mms/rcs/RcsBubbleView;->sEmptyBitmap:Landroid/graphics/Bitmap;
 
@@ -1092,7 +1081,6 @@
 
 .method private static getErrorImageBitmap(Landroid/content/res/Resources;)Landroid/graphics/Bitmap;
     .locals 3
-    .param p0    # Landroid/content/res/Resources;
 
     sget-object v1, Lcom/android/mms/rcs/RcsBubbleView;->sEmptyBitmap:Landroid/graphics/Bitmap;
 
@@ -1202,9 +1190,6 @@
 
 .method private preCalculateImageBoudns(Landroid/widget/ImageView;II)V
     .locals 3
-    .param p1    # Landroid/widget/ImageView;
-    .param p2    # I
-    .param p3    # I
 
     iget-object v1, p0, Lcom/android/mms/rcs/RcsBubbleView;->mTempPoint:Landroid/graphics/Point;
 
@@ -1265,7 +1250,6 @@
 
 .method protected static recycleBitmap(Landroid/graphics/Bitmap;)V
     .locals 0
-    .param p0    # Landroid/graphics/Bitmap;
 
     if-nez p0, :cond_0
 
@@ -1280,9 +1264,6 @@
 
 .method private setImage(Lcom/android/mms/model/ImageModel;ZZ)V
     .locals 7
-    .param p1    # Lcom/android/mms/model/ImageModel;
-    .param p2    # Z
-    .param p3    # Z
 
     const/4 v6, 0x0
 
@@ -1434,7 +1415,6 @@
 
 .method private setIsTopLayout(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-boolean v0, p0, Lcom/android/mms/rcs/RcsBubbleView;->mIsTopLayout:Z
 
@@ -1494,7 +1474,6 @@
 # virtual methods
 .method public applyTextProperty(Lcom/android/mms/ui/MessageListItem$BodyTextViewProperty;)V
     .locals 3
-    .param p1    # Lcom/android/mms/ui/MessageListItem$BodyTextViewProperty;
 
     iput-object p1, p0, Lcom/android/mms/rcs/RcsBubbleView;->mTextProperty:Lcom/android/mms/ui/MessageListItem$BodyTextViewProperty;
 
@@ -1568,7 +1547,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Lcom/android/mms/rcs/RcsBubbleView;->mMsgListItem:Lcom/android/mms/ui/MessageListItem;
 
@@ -2059,9 +2037,6 @@
 
 .method public present(ILcom/android/mms/model/ImFileTransferModel;Lcom/android/mms/ui/MessageListItem;)Z
     .locals 1
-    .param p1    # I
-    .param p2    # Lcom/android/mms/model/ImFileTransferModel;
-    .param p3    # Lcom/android/mms/ui/MessageListItem;
 
     const/4 v0, 0x0
 
@@ -2074,10 +2049,6 @@
 
 .method public present(ILcom/android/mms/model/ImFileTransferModel;Lcom/android/mms/ui/MessageListItem;Z)Z
     .locals 9
-    .param p1    # I
-    .param p2    # Lcom/android/mms/model/ImFileTransferModel;
-    .param p3    # Lcom/android/mms/ui/MessageListItem;
-    .param p4    # Z
 
     const-wide/16 v7, 0x3
 
@@ -2411,7 +2382,6 @@
 
 .method public setAudio(Lcom/android/mms/model/AudioModel;)V
     .locals 9
-    .param p1    # Lcom/android/mms/model/AudioModel;
 
     const/4 v8, 0x0
 
@@ -2563,7 +2533,6 @@
 
 .method public setHighlight(Ljava/util/regex/Pattern;)V
     .locals 0
-    .param p1    # Ljava/util/regex/Pattern;
 
     iput-object p1, p0, Lcom/android/mms/rcs/RcsBubbleView;->mHighlight:Ljava/util/regex/Pattern;
 
@@ -2572,7 +2541,6 @@
 
 .method public setIsFailedMessage(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/rcs/RcsBubbleView;->mIsFailedMessage:Z
 
@@ -2581,7 +2549,6 @@
 
 .method public setIsReservedMessage(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/rcs/RcsBubbleView;->mIsScheduledMessage:Z
 
@@ -2590,7 +2557,6 @@
 
 .method public setText(Lcom/android/mms/model/ImTextModel;)V
     .locals 12
-    .param p1    # Lcom/android/mms/model/ImTextModel;
 
     const v5, 0x7f02029a
 
@@ -2872,8 +2838,6 @@
 
 .method public setText(Lcom/android/mms/model/TextModel;Z)V
     .locals 10
-    .param p1    # Lcom/android/mms/model/TextModel;
-    .param p2    # Z
 
     const/4 v9, 0x1
 
@@ -3011,7 +2975,6 @@
 
 .method public setTextVisibility(Z)V
     .locals 1
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -3036,7 +2999,6 @@
 
 .method public setVideo(Lcom/android/mms/model/VideoModel;)V
     .locals 8
-    .param p1    # Lcom/android/mms/model/VideoModel;
 
     const/4 v7, 0x0
 
@@ -3290,7 +3252,6 @@
 
 .method public setVisibility(Z)V
     .locals 0
-    .param p1    # Z
 
     invoke-static {p0, p1}, Lcom/android/mms/util/UIUtils;->setVisible(Landroid/view/View;Z)V
 

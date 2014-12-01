@@ -120,10 +120,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;III)V
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/high16 v2, 0x3f800000
 
@@ -696,7 +692,6 @@
 
 .method static synthetic access$000(Lcom/sec/android/visualeffect/fingerprint/FingerprintEffect;)I
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/fingerprint/FingerprintEffect;
 
     iget v0, p0, Lcom/sec/android/visualeffect/fingerprint/FingerprintEffect;->left:I
 
@@ -705,7 +700,6 @@
 
 .method static synthetic access$100(Lcom/sec/android/visualeffect/fingerprint/FingerprintEffect;)I
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/fingerprint/FingerprintEffect;
 
     iget v0, p0, Lcom/sec/android/visualeffect/fingerprint/FingerprintEffect;->top:I
 
@@ -714,7 +708,6 @@
 
 .method static synthetic access$200(Lcom/sec/android/visualeffect/fingerprint/FingerprintEffect;)I
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/fingerprint/FingerprintEffect;
 
     iget v0, p0, Lcom/sec/android/visualeffect/fingerprint/FingerprintEffect;->right:I
 
@@ -723,7 +716,6 @@
 
 .method static synthetic access$300(Lcom/sec/android/visualeffect/fingerprint/FingerprintEffect;)I
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/fingerprint/FingerprintEffect;
 
     iget v0, p0, Lcom/sec/android/visualeffect/fingerprint/FingerprintEffect;->bottom:I
 
@@ -732,7 +724,6 @@
 
 .method static synthetic access$400(Lcom/sec/android/visualeffect/fingerprint/FingerprintEffect;)I
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/fingerprint/FingerprintEffect;
 
     iget v0, p0, Lcom/sec/android/visualeffect/fingerprint/FingerprintEffect;->currentFirstDrawingCount:I
 
@@ -741,7 +732,6 @@
 
 .method static synthetic access$410(Lcom/sec/android/visualeffect/fingerprint/FingerprintEffect;)I
     .locals 2
-    .param p0    # Lcom/sec/android/visualeffect/fingerprint/FingerprintEffect;
 
     iget v0, p0, Lcom/sec/android/visualeffect/fingerprint/FingerprintEffect;->currentFirstDrawingCount:I
 
@@ -754,7 +744,6 @@
 
 .method static synthetic access$500(Lcom/sec/android/visualeffect/fingerprint/FingerprintEffect;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/fingerprint/FingerprintEffect;
 
     iget-object v0, p0, Lcom/sec/android/visualeffect/fingerprint/FingerprintEffect;->mHandler:Landroid/os/Handler;
 
@@ -763,7 +752,6 @@
 
 .method static synthetic access$600(Lcom/sec/android/visualeffect/fingerprint/FingerprintEffect;)Z
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/fingerprint/FingerprintEffect;
 
     invoke-direct {p0}, Lcom/sec/android/visualeffect/fingerprint/FingerprintEffect;->isCircleAnimating()Z
 
@@ -774,7 +762,6 @@
 
 .method static synthetic access$700(Lcom/sec/android/visualeffect/fingerprint/FingerprintEffect;)V
     .locals 0
-    .param p0    # Lcom/sec/android/visualeffect/fingerprint/FingerprintEffect;
 
     invoke-direct {p0}, Lcom/sec/android/visualeffect/fingerprint/FingerprintEffect;->stopDrawing()V
 
@@ -783,7 +770,6 @@
 
 .method static synthetic access$800(Lcom/sec/android/visualeffect/fingerprint/FingerprintEffect;)Z
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/fingerprint/FingerprintEffect;
 
     iget-boolean v0, p0, Lcom/sec/android/visualeffect/fingerprint/FingerprintEffect;->isDrawing:Z
 
@@ -817,7 +803,6 @@
 
 .method private changeScale(Z)V
     .locals 1
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -856,7 +841,6 @@
 
 .method private drawCircles(Landroid/graphics/Canvas;)V
     .locals 4
-    .param p1    # Landroid/graphics/Canvas;
 
     iget-object v2, p0, Lcom/sec/android/visualeffect/fingerprint/FingerprintEffect;->currentStatus:Lcom/sec/android/visualeffect/fingerprint/FingerprintEffect$EffectStatus;
 
@@ -1294,7 +1278,6 @@
 
 .method private setMatrix(F)V
     .locals 7
-    .param p1    # F
 
     const/high16 v5, 0x3f800000
 
@@ -1425,7 +1408,6 @@
 
 .method protected onDraw(Landroid/graphics/Canvas;)V
     .locals 3
-    .param p1    # Landroid/graphics/Canvas;
 
     const/4 v2, 0x0
 
@@ -1739,7 +1721,6 @@
 
 .method public setCurrentStatus(Lcom/sec/android/visualeffect/fingerprint/FingerprintEffect$EffectStatus;)V
     .locals 3
-    .param p1    # Lcom/sec/android/visualeffect/fingerprint/FingerprintEffect$EffectStatus;
 
     iget-object v2, p0, Lcom/sec/android/visualeffect/fingerprint/FingerprintEffect;->currentStatus:Lcom/sec/android/visualeffect/fingerprint/FingerprintEffect$EffectStatus;
 

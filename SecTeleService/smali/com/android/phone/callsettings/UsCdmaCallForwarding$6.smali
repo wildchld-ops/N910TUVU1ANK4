@@ -82,7 +82,7 @@
 
     iget-object v1, p0, Lcom/android/phone/callsettings/UsCdmaCallForwarding$6;->this$0:Lcom/android/phone/callsettings/UsCdmaCallForwarding;
 
-    invoke-virtual {v1}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v1}, Lcom/android/phone/callsettings/UsCdmaCallForwarding;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v1
 

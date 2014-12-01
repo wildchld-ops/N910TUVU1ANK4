@@ -42,8 +42,6 @@
 # direct methods
 .method constructor <init>(Lcom/sec/android/app/camera/glwidget/TwGLSettingsMenu;Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;Ljava/util/HashMap;Z)V
     .locals 2
-    .param p2    # Lcom/sec/android/app/camera/resourcedata/MenuResourceBase;
-    .param p4    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -139,8 +137,6 @@
 
 .method public getView(ILcom/sec/android/glview/TwGLView;)Lcom/sec/android/glview/TwGLView;
     .locals 22
-    .param p1    # I
-    .param p2    # Lcom/sec/android/glview/TwGLView;
 
     if-nez p2, :cond_5
 

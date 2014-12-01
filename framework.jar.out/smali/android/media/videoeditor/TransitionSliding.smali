@@ -42,12 +42,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Landroid/media/videoeditor/MediaItem;Landroid/media/videoeditor/MediaItem;JII)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/media/videoeditor/MediaItem;
-    .param p3    # Landroid/media/videoeditor/MediaItem;
-    .param p4    # J
-    .param p6    # I
-    .param p7    # I
 
     invoke-direct/range {p0 .. p6}, Landroid/media/videoeditor/Transition;-><init>(Ljava/lang/String;Landroid/media/videoeditor/MediaItem;Landroid/media/videoeditor/MediaItem;JI)V
 

@@ -30,9 +30,6 @@
 # direct methods
 .method constructor <init>(Lcom/sec/epdg/smartwifi/SmartWifiAdapter;ILjava/lang/Runnable;Ljava/lang/Runnable;)V
     .locals 0
-    .param p2    # I
-    .param p3    # Ljava/lang/Runnable;
-    .param p4    # Ljava/lang/Runnable;
 
     iput-object p1, p0, Lcom/sec/epdg/smartwifi/SmartWifiAdapter$WifiToLteRunnable;->this$0:Lcom/sec/epdg/smartwifi/SmartWifiAdapter;
 

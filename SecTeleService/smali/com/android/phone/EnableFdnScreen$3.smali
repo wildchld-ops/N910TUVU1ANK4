@@ -63,7 +63,7 @@
 
     iget-object v1, p0, Lcom/android/phone/EnableFdnScreen$3;->this$0:Lcom/android/phone/EnableFdnScreen;
 
-    invoke-virtual {v1}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {v1}, Lcom/android/phone/EnableFdnScreen;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 

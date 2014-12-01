@@ -28,7 +28,6 @@
 # direct methods
 .method constructor <init>(Lcom/sec/epdg/smartwifi/SmartWifiAdapter$PingThread;Ljava/net/InetAddress;)V
     .locals 1
-    .param p2    # Ljava/net/InetAddress;
 
     iput-object p1, p0, Lcom/sec/epdg/smartwifi/SmartWifiAdapter$PingThread$PingCallable;->this$1:Lcom/sec/epdg/smartwifi/SmartWifiAdapter$PingThread;
 
@@ -45,8 +44,6 @@
 
 .method constructor <init>(Lcom/sec/epdg/smartwifi/SmartWifiAdapter$PingThread;Ljava/net/InetAddress;I)V
     .locals 0
-    .param p2    # Ljava/net/InetAddress;
-    .param p3    # I
 
     iput-object p1, p0, Lcom/sec/epdg/smartwifi/SmartWifiAdapter$PingThread$PingCallable;->this$1:Lcom/sec/epdg/smartwifi/SmartWifiAdapter$PingThread;
 

@@ -16,8 +16,6 @@
 # direct methods
 .method public constructor <init>(Landroid/drm/ProcessedData;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Landroid/drm/ProcessedData;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -108,8 +106,6 @@
 
 .method public constructor <init>(Ljava/io/File;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/io/File;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -120,8 +116,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -136,9 +130,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Landroid/drm/DrmRights;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -149,10 +140,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Landroid/drm/DrmRights;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -165,8 +152,6 @@
 
 .method private instantiate(Ljava/io/File;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/io/File;
-    .param p2    # Ljava/lang/String;
 
     :try_start_0
     invoke-static {p1}, Landroid/drm/DrmUtils;->readBytes(Ljava/io/File;)[B

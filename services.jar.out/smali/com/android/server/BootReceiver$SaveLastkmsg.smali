@@ -35,7 +35,6 @@
 
 .method synthetic constructor <init>(Lcom/android/server/BootReceiver$1;)V
     .locals 0
-    .param p1    # Lcom/android/server/BootReceiver$1;
 
     invoke-direct {p0}, Lcom/android/server/BootReceiver$SaveLastkmsg;-><init>()V
 

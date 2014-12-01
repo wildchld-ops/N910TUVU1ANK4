@@ -106,8 +106,6 @@
 
 .method private constructor <init>(Ljava/lang/String;III)V
     .locals 0
-    .param p3    # I
-    .param p4    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II)V"

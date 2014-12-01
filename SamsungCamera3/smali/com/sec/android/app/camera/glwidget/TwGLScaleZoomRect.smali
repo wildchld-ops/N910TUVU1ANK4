@@ -234,10 +234,6 @@
 
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;FFLjava/lang/String;)V
     .locals 10
-    .param p1    # Lcom/sec/android/app/camera/Camera;
-    .param p2    # F
-    .param p3    # F
-    .param p4    # Ljava/lang/String;
 
     invoke-virtual {p1}, Lcom/sec/android/app/camera/Camera;->getGLContext()Lcom/sec/android/glview/TwGLContext;
 
@@ -553,9 +549,6 @@
 # virtual methods
 .method public resetPositionForCoverMode(IIZ)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     const/4 v6, 0x3
 
@@ -672,9 +665,6 @@
 
 .method public setZoomValue(ILjava/lang/String;Z)V
     .locals 11
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     const/high16 v7, 0x40000000
 
@@ -947,10 +937,6 @@
 
 .method public setZoomValue(ILjava/lang/String;ZZ)V
     .locals 11
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
-    .param p4    # Z
 
     const/4 v5, 0x0
 

@@ -29,13 +29,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/android/mms/transaction/TransactionSettings;I)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
-    .param p6    # Lcom/android/mms/transaction/TransactionSettings;
-    .param p7    # I
 
     const/4 v0, 0x0
 
@@ -1834,7 +1827,6 @@
 
 .method public setCallLog_SpamReport(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Lcom/android/mms/MmsConfig;->getEnableLogs()Z
 

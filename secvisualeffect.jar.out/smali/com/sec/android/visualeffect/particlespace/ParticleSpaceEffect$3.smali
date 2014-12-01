@@ -36,7 +36,6 @@
 # virtual methods
 .method public onAnimationCancel(Landroid/animation/Animator;)V
     .locals 2
-    .param p1    # Landroid/animation/Animator;
 
     const-string v0, "VisualEffectParticleEffect"
 
@@ -49,7 +48,6 @@
 
 .method public onAnimationEnd(Landroid/animation/Animator;)V
     .locals 1
-    .param p1    # Landroid/animation/Animator;
 
     iget-object v0, p0, Lcom/sec/android/visualeffect/particlespace/ParticleSpaceEffect$3;->this$0:Lcom/sec/android/visualeffect/particlespace/ParticleSpaceEffect;
 
@@ -61,14 +59,12 @@
 
 .method public onAnimationRepeat(Landroid/animation/Animator;)V
     .locals 0
-    .param p1    # Landroid/animation/Animator;
 
     return-void
 .end method
 
 .method public onAnimationStart(Landroid/animation/Animator;)V
     .locals 0
-    .param p1    # Landroid/animation/Animator;
 
     return-void
 .end method

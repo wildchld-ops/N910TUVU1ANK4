@@ -545,7 +545,7 @@
 
     const-string v0, "accessibility"
 
-    invoke-virtual {p1, v0}, Landroid/app/Activity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p1, v0}, Lcom/android/phone/OtaInCallScreen;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -1081,7 +1081,7 @@
 
     const v1, 0x7f0a00d6
 
-    invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    invoke-virtual {v0, v1}, Lcom/android/phone/DTMFTwelveKeyDialerView;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -1105,15 +1105,15 @@
 
     iget-object v1, p0, Lcom/android/phone/DTMFTwelveKeyDialer;->mDialerKeyListener:Lcom/android/phone/DTMFTwelveKeyDialer$DTMFKeyListener;
 
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setKeyListener(Landroid/text/method/KeyListener;)V
+    invoke-virtual {v0, v1}, Landroid/widget/EditText;->setKeyListener(Landroid/text/method/KeyListener;)V
 
     iget-object v0, p0, Lcom/android/phone/DTMFTwelveKeyDialer;->mDialpadDigits:Landroid/widget/EditText;
 
-    invoke-virtual {v0, v2}, Landroid/view/View;->setLongClickable(Z)V
+    invoke-virtual {v0, v2}, Landroid/widget/EditText;->setLongClickable(Z)V
 
     iget-object v0, p0, Lcom/android/phone/DTMFTwelveKeyDialer;->mDialpadDigits:Landroid/widget/EditText;
 
-    invoke-virtual {v0, v2}, Landroid/view/View;->setWritingBuddyEnabled(Z)V
+    invoke-virtual {v0, v2}, Landroid/widget/EditText;->setWritingBuddyEnabled(Z)V
 
     sget-object v0, Lcom/android/phone/DTMFTwelveKeyDialer;->sTypeface:Landroid/graphics/Typeface;
 
@@ -1121,7 +1121,7 @@
 
     iget-object v0, p0, Lcom/android/phone/DTMFTwelveKeyDialer;->mOtaInCallScreen:Lcom/android/phone/OtaInCallScreen;
 
-    invoke-virtual {v0}, Landroid/content/ContextWrapper;->getAssets()Landroid/content/res/AssetManager;
+    invoke-virtual {v0}, Lcom/android/phone/OtaInCallScreen;->getAssets()Landroid/content/res/AssetManager;
 
     move-result-object v0
 
@@ -1138,7 +1138,7 @@
 
     sget-object v1, Lcom/android/phone/DTMFTwelveKeyDialer;->sTypeface:Landroid/graphics/Typeface;
 
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTypeface(Landroid/graphics/Typeface;)V
+    invoke-virtual {v0, v1}, Landroid/widget/EditText;->setTypeface(Landroid/graphics/Typeface;)V
 
     :cond_1
     iget-object v0, p0, Lcom/android/phone/DTMFTwelveKeyDialer;->mDialerView:Lcom/android/phone/DTMFTwelveKeyDialerView;
@@ -1157,7 +1157,7 @@
 
     sget-object v1, Lcom/android/phone/DTMFTwelveKeyDialer;->sDTMFcharacters:Ljava/lang/String;
 
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {v0, v1}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
     iget-object v0, p0, Lcom/android/phone/DTMFTwelveKeyDialer;->mDialpadDigits:Landroid/widget/EditText;
 
@@ -1223,7 +1223,7 @@
 
     move-result v2
 
-    invoke-virtual {p1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p1, v2}, Lcom/android/phone/DTMFTwelveKeyDialerView;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -1361,7 +1361,7 @@
 
     const-string v1, ""
 
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {v0, v1}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
     :cond_0
     const/4 v0, 0x0
@@ -1390,7 +1390,7 @@
 
     const/16 v1, 0x8
 
-    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v1}, Lcom/android/phone/DTMFTwelveKeyDialerView;->setVisibility(I)V
 
     invoke-direct {p0}, Lcom/android/phone/DTMFTwelveKeyDialer;->onDialerClose()V
 
@@ -1500,7 +1500,7 @@
 
     iget-object v0, p0, Lcom/android/phone/DTMFTwelveKeyDialer;->mDialerView:Lcom/android/phone/DTMFTwelveKeyDialerView;
 
-    invoke-virtual {v0}, Landroid/view/View;->getVisibility()I
+    invoke-virtual {v0}, Lcom/android/phone/DTMFTwelveKeyDialerView;->getVisibility()I
 
     move-result v0
 
@@ -1892,7 +1892,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v4}, Landroid/content/ContextWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {v4}, Lcom/android/phone/PhoneGlobals;->getResources()Landroid/content/res/Resources;
 
     move-result-object v4
 
@@ -2016,7 +2016,7 @@
     :cond_5
     iget-object v4, p0, Lcom/android/phone/DTMFTwelveKeyDialer;->mOtaInCallScreen:Lcom/android/phone/OtaInCallScreen;
 
-    invoke-virtual {v4}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v4}, Lcom/android/phone/OtaInCallScreen;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v4
 

@@ -81,8 +81,6 @@
 
 .method public constructor <init>(Landroid/os/Looper;Landroid/app/IUiAutomationConnection;)V
     .locals 2
-    .param p1    # Landroid/os/Looper;
-    .param p2    # Landroid/app/IUiAutomationConnection;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -137,7 +135,6 @@
 
 .method static synthetic access$000(Landroid/app/UiAutomation;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Landroid/app/UiAutomation;
 
     iget-object v0, p0, Landroid/app/UiAutomation;->mLock:Ljava/lang/Object;
 
@@ -146,8 +143,6 @@
 
 .method static synthetic access$102(Landroid/app/UiAutomation;I)I
     .locals 0
-    .param p0    # Landroid/app/UiAutomation;
-    .param p1    # I
 
     iput p1, p0, Landroid/app/UiAutomation;->mConnectionId:I
 
@@ -156,8 +151,6 @@
 
 .method static synthetic access$202(Landroid/app/UiAutomation;J)J
     .locals 0
-    .param p0    # Landroid/app/UiAutomation;
-    .param p1    # J
 
     iput-wide p1, p0, Landroid/app/UiAutomation;->mLastEventTimeMillis:J
 
@@ -166,7 +159,6 @@
 
 .method static synthetic access$300(Landroid/app/UiAutomation;)Z
     .locals 1
-    .param p0    # Landroid/app/UiAutomation;
 
     iget-boolean v0, p0, Landroid/app/UiAutomation;->mWaitingForEventDelivery:Z
 
@@ -175,7 +167,6 @@
 
 .method static synthetic access$400(Landroid/app/UiAutomation;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Landroid/app/UiAutomation;
 
     iget-object v0, p0, Landroid/app/UiAutomation;->mEventQueue:Ljava/util/ArrayList;
 
@@ -184,7 +175,6 @@
 
 .method static synthetic access$500(Landroid/app/UiAutomation;)Landroid/app/UiAutomation$OnAccessibilityEventListener;
     .locals 1
-    .param p0    # Landroid/app/UiAutomation;
 
     iget-object v0, p0, Landroid/app/UiAutomation;->mOnAccessibilityEventListener:Landroid/app/UiAutomation$OnAccessibilityEventListener;
 
@@ -193,7 +183,6 @@
 
 .method private static getDegreesForRotation(I)F
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -507,9 +496,6 @@
 
 .method public executeAndWaitForEvent(Ljava/lang/Runnable;Landroid/app/UiAutomation$AccessibilityEventFilter;J)Landroid/view/accessibility/AccessibilityEvent;
     .locals 15
-    .param p1    # Ljava/lang/Runnable;
-    .param p2    # Landroid/app/UiAutomation$AccessibilityEventFilter;
-    .param p3    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/util/concurrent/TimeoutException;
@@ -845,8 +831,6 @@
 
 .method public injectInputEvent(Landroid/view/InputEvent;Z)Z
     .locals 3
-    .param p1    # Landroid/view/InputEvent;
-    .param p2    # Z
 
     iget-object v2, p0, Landroid/app/UiAutomation;->mLock:Ljava/lang/Object;
 
@@ -897,7 +881,6 @@
 
 .method public final performGlobalAction(I)Z
     .locals 5
-    .param p1    # I
 
     iget-object v3, p0, Landroid/app/UiAutomation;->mLock:Ljava/lang/Object;
 
@@ -959,7 +942,6 @@
 
 .method public setOnAccessibilityEventListener(Landroid/app/UiAutomation$OnAccessibilityEventListener;)V
     .locals 2
-    .param p1    # Landroid/app/UiAutomation$OnAccessibilityEventListener;
 
     iget-object v1, p0, Landroid/app/UiAutomation;->mLock:Ljava/lang/Object;
 
@@ -984,7 +966,6 @@
 
 .method public setRotation(I)Z
     .locals 3
-    .param p1    # I
 
     iget-object v2, p0, Landroid/app/UiAutomation;->mLock:Ljava/lang/Object;
 
@@ -1056,7 +1037,6 @@
 
 .method public setRunAsMonkey(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v2, p0, Landroid/app/UiAutomation;->mLock:Ljava/lang/Object;
 
@@ -1105,7 +1085,6 @@
 
 .method public final setServiceInfo(Landroid/accessibilityservice/AccessibilityServiceInfo;)V
     .locals 5
-    .param p1    # Landroid/accessibilityservice/AccessibilityServiceInfo;
 
     iget-object v3, p0, Landroid/app/UiAutomation;->mLock:Ljava/lang/Object;
 
@@ -1388,8 +1367,6 @@
 
 .method public waitForIdle(JJ)V
     .locals 21
-    .param p1    # J
-    .param p3    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/util/concurrent/TimeoutException;

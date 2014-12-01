@@ -31,7 +31,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/CharSequence;)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -44,7 +43,6 @@
 # virtual methods
 .method public charAt(I)C
     .locals 4
-    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -67,10 +65,6 @@
 
 .method public getChars(II[CI)V
     .locals 9
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [C
-    .param p4    # I
 
     iget-object v0, p0, Landroid/text/Layout$Ellipsizer;->mLayout:Landroid/text/Layout;
 
@@ -130,8 +124,6 @@
 
 .method public subSequence(II)Ljava/lang/CharSequence;
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     sub-int v1, p2, p1
 

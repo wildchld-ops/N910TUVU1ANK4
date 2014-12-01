@@ -40,7 +40,6 @@
 # virtual methods
 .method incorporateWifiConfigFile(Landroid/app/backup/BackupDataInput;)V
     .locals 4
-    .param p1    # Landroid/app/backup/BackupDataInput;
 
     invoke-virtual {p1}, Landroid/app/backup/BackupDataInput;->getDataSize()I
 
@@ -93,7 +92,6 @@
 
 .method incorporateWifiSupplicant(Landroid/app/backup/BackupDataInput;)V
     .locals 4
-    .param p1    # Landroid/app/backup/BackupDataInput;
 
     invoke-virtual {p1}, Landroid/app/backup/BackupDataInput;->getDataSize()I
 

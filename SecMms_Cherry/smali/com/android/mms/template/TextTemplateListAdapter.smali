@@ -34,8 +34,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/database/Cursor;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/database/Cursor;
 
     const/4 v0, 0x0
 
@@ -58,9 +56,6 @@
 # virtual methods
 .method public bindView(Landroid/view/View;Landroid/content/Context;Landroid/database/Cursor;)V
     .locals 10
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/database/Cursor;
 
     const/16 v9, 0x8
 
@@ -238,9 +233,6 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     move-object v0, p3
 
@@ -264,9 +256,6 @@
 
 .method public newView(Landroid/content/Context;Landroid/database/Cursor;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/database/Cursor;
-    .param p3    # Landroid/view/ViewGroup;
 
     iget-object v1, p0, Lcom/android/mms/template/TextTemplateListAdapter;->mInflater:Landroid/view/LayoutInflater;
 
@@ -316,7 +305,6 @@
 
 .method public setMessageListMode(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-boolean v0, p0, Lcom/android/mms/template/TextTemplateListAdapter;->mIsMsgMultiMode:Z
 
@@ -333,7 +321,6 @@
 
 .method public setOnContentChangedListener(Lcom/android/mms/template/TextTemplateListAdapter$OnContentChangedListener;)V
     .locals 0
-    .param p1    # Lcom/android/mms/template/TextTemplateListAdapter$OnContentChangedListener;
 
     iput-object p1, p0, Lcom/android/mms/template/TextTemplateListAdapter;->mOnContentChangedListener:Lcom/android/mms/template/TextTemplateListAdapter$OnContentChangedListener;
 

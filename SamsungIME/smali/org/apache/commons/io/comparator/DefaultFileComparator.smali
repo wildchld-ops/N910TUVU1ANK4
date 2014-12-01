@@ -46,8 +46,6 @@
 # virtual methods
 .method public compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 3
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Object;
 
     move-object v0, p1
 

@@ -411,7 +411,6 @@
 
 .method constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -448,7 +447,6 @@
 
 .method public static create(Landroid/content/Context;)Landroid/renderscript/RenderScript;
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     sget-object v0, Landroid/renderscript/RenderScript$ContextType;->NORMAL:Landroid/renderscript/RenderScript$ContextType;
 
@@ -461,8 +459,6 @@
 
 .method public static create(Landroid/content/Context;I)Landroid/renderscript/RenderScript;
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     sget-object v0, Landroid/renderscript/RenderScript$ContextType;->NORMAL:Landroid/renderscript/RenderScript$ContextType;
 
@@ -475,9 +471,6 @@
 
 .method public static create(Landroid/content/Context;ILandroid/renderscript/RenderScript$ContextType;)Landroid/renderscript/RenderScript;
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # Landroid/renderscript/RenderScript$ContextType;
 
     sget-boolean v1, Landroid/renderscript/RenderScript;->sInitialized:Z
 
@@ -547,8 +540,6 @@
 
 .method public static create(Landroid/content/Context;Landroid/renderscript/RenderScript$ContextType;)Landroid/renderscript/RenderScript;
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/renderscript/RenderScript$ContextType;
 
     invoke-virtual {p0}, Landroid/content/Context;->getApplicationInfo()Landroid/content/pm/ApplicationInfo;
 
@@ -573,7 +564,6 @@
 
 .method public static setupDiskCache(Ljava/io/File;)V
     .locals 2
-    .param p0    # Ljava/io/File;
 
     sget-boolean v0, Landroid/renderscript/RenderScript;->sInitialized:Z
 
@@ -701,8 +691,6 @@
 
 .method declared-synchronized nAllocationCopyFromBitmap(ILandroid/graphics/Bitmap;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/graphics/Bitmap;
 
     monitor-enter p0
 
@@ -729,8 +717,6 @@
 
 .method declared-synchronized nAllocationCopyToBitmap(ILandroid/graphics/Bitmap;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/graphics/Bitmap;
 
     monitor-enter p0
 
@@ -757,10 +743,6 @@
 
 .method declared-synchronized nAllocationCreateBitmapBackedAllocation(IILandroid/graphics/Bitmap;I)I
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/graphics/Bitmap;
-    .param p4    # I
 
     monitor-enter p0
 
@@ -799,8 +781,6 @@
 
 .method declared-synchronized nAllocationCreateBitmapRef(ILandroid/graphics/Bitmap;)I
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/graphics/Bitmap;
 
     monitor-enter p0
 
@@ -829,9 +809,6 @@
 
 .method declared-synchronized nAllocationCreateFromAssetStream(III)I
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     monitor-enter p0
 
@@ -860,10 +837,6 @@
 
 .method declared-synchronized nAllocationCreateFromBitmap(IILandroid/graphics/Bitmap;I)I
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/graphics/Bitmap;
-    .param p4    # I
 
     monitor-enter p0
 
@@ -902,10 +875,6 @@
 
 .method declared-synchronized nAllocationCreateTyped(IIII)I
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     monitor-enter p0
 
@@ -944,10 +913,6 @@
 
 .method declared-synchronized nAllocationCubeCreateFromBitmap(IILandroid/graphics/Bitmap;I)I
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/graphics/Bitmap;
-    .param p4    # I
 
     monitor-enter p0
 
@@ -986,12 +951,6 @@
 
 .method declared-synchronized nAllocationData1D(IIII[BI)V
     .locals 8
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # [B
-    .param p6    # I
 
     monitor-enter p0
 
@@ -1032,12 +991,6 @@
 
 .method declared-synchronized nAllocationData1D(IIII[FI)V
     .locals 8
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # [F
-    .param p6    # I
 
     monitor-enter p0
 
@@ -1078,12 +1031,6 @@
 
 .method declared-synchronized nAllocationData1D(IIII[II)V
     .locals 8
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # [I
-    .param p6    # I
 
     monitor-enter p0
 
@@ -1124,12 +1071,6 @@
 
 .method declared-synchronized nAllocationData1D(IIII[SI)V
     .locals 8
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # [S
-    .param p6    # I
 
     monitor-enter p0
 
@@ -1170,18 +1111,6 @@
 
 .method declared-synchronized nAllocationData2D(IIIIIIIIIIII)V
     .locals 14
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
-    .param p9    # I
-    .param p10    # I
-    .param p11    # I
-    .param p12    # I
 
     monitor-enter p0
 
@@ -1234,15 +1163,6 @@
 
 .method declared-synchronized nAllocationData2D(IIIIIII[BI)V
     .locals 11
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # [B
-    .param p9    # I
 
     monitor-enter p0
 
@@ -1289,15 +1209,6 @@
 
 .method declared-synchronized nAllocationData2D(IIIIIII[FI)V
     .locals 11
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # [F
-    .param p9    # I
 
     monitor-enter p0
 
@@ -1344,15 +1255,6 @@
 
 .method declared-synchronized nAllocationData2D(IIIIIII[II)V
     .locals 11
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # [I
-    .param p9    # I
 
     monitor-enter p0
 
@@ -1399,15 +1301,6 @@
 
 .method declared-synchronized nAllocationData2D(IIIIIII[SI)V
     .locals 11
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # [S
-    .param p9    # I
 
     monitor-enter p0
 
@@ -1454,12 +1347,6 @@
 
 .method declared-synchronized nAllocationData2D(IIIIILandroid/graphics/Bitmap;)V
     .locals 8
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Landroid/graphics/Bitmap;
 
     monitor-enter p0
 
@@ -1500,19 +1387,6 @@
 
 .method declared-synchronized nAllocationData3D(IIIIIIIIIIIII)V
     .locals 15
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
-    .param p9    # I
-    .param p10    # I
-    .param p11    # I
-    .param p12    # I
-    .param p13    # I
 
     monitor-enter p0
 
@@ -1567,16 +1441,6 @@
 
 .method declared-synchronized nAllocationData3D(IIIIIIII[BI)V
     .locals 12
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
-    .param p9    # [B
-    .param p10    # I
 
     monitor-enter p0
 
@@ -1625,16 +1489,6 @@
 
 .method declared-synchronized nAllocationData3D(IIIIIIII[FI)V
     .locals 12
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
-    .param p9    # [F
-    .param p10    # I
 
     monitor-enter p0
 
@@ -1683,16 +1537,6 @@
 
 .method declared-synchronized nAllocationData3D(IIIIIIII[II)V
     .locals 12
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
-    .param p9    # [I
-    .param p10    # I
 
     monitor-enter p0
 
@@ -1741,16 +1585,6 @@
 
 .method declared-synchronized nAllocationData3D(IIIIIIII[SI)V
     .locals 12
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
-    .param p9    # [S
-    .param p10    # I
 
     monitor-enter p0
 
@@ -1799,7 +1633,6 @@
 
 .method declared-synchronized nAllocationDestroy(I)V
     .locals 1
-    .param p1    # I
 
     monitor-enter p0
 
@@ -1826,12 +1659,6 @@
 
 .method declared-synchronized nAllocationElementData1D(IIII[BI)V
     .locals 8
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # [B
-    .param p6    # I
 
     monitor-enter p0
 
@@ -1872,7 +1699,6 @@
 
 .method declared-synchronized nAllocationGenerateMipmaps(I)V
     .locals 1
-    .param p1    # I
 
     monitor-enter p0
 
@@ -1899,7 +1725,6 @@
 
 .method declared-synchronized nAllocationGetSurface(I)Landroid/view/Surface;
     .locals 1
-    .param p1    # I
 
     monitor-enter p0
 
@@ -1928,7 +1753,6 @@
 
 .method declared-synchronized nAllocationGetType(I)I
     .locals 1
-    .param p1    # I
 
     monitor-enter p0
 
@@ -1957,7 +1781,6 @@
 
 .method declared-synchronized nAllocationIoReceive(I)V
     .locals 1
-    .param p1    # I
 
     monitor-enter p0
 
@@ -1984,7 +1807,6 @@
 
 .method declared-synchronized nAllocationIoSend(I)V
     .locals 1
-    .param p1    # I
 
     monitor-enter p0
 
@@ -2011,8 +1833,6 @@
 
 .method declared-synchronized nAllocationRead(I[B)V
     .locals 1
-    .param p1    # I
-    .param p2    # [B
 
     monitor-enter p0
 
@@ -2039,8 +1859,6 @@
 
 .method declared-synchronized nAllocationRead(I[F)V
     .locals 1
-    .param p1    # I
-    .param p2    # [F
 
     monitor-enter p0
 
@@ -2067,8 +1885,6 @@
 
 .method declared-synchronized nAllocationRead(I[I)V
     .locals 1
-    .param p1    # I
-    .param p2    # [I
 
     monitor-enter p0
 
@@ -2095,8 +1911,6 @@
 
 .method declared-synchronized nAllocationRead(I[S)V
     .locals 1
-    .param p1    # I
-    .param p2    # [S
 
     monitor-enter p0
 
@@ -2123,8 +1937,6 @@
 
 .method declared-synchronized nAllocationResize1D(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     monitor-enter p0
 
@@ -2151,8 +1963,6 @@
 
 .method declared-synchronized nAllocationSetSurface(ILandroid/view/Surface;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/view/Surface;
 
     monitor-enter p0
 
@@ -2179,8 +1989,6 @@
 
 .method declared-synchronized nAllocationSyncAll(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     monitor-enter p0
 
@@ -2207,8 +2015,6 @@
 
 .method declared-synchronized nAssignName(I[B)V
     .locals 1
-    .param p1    # I
-    .param p2    # [B
 
     monitor-enter p0
 
@@ -2235,7 +2041,6 @@
 
 .method declared-synchronized nContextBindProgramFragment(I)V
     .locals 1
-    .param p1    # I
 
     monitor-enter p0
 
@@ -2262,7 +2067,6 @@
 
 .method declared-synchronized nContextBindProgramRaster(I)V
     .locals 1
-    .param p1    # I
 
     monitor-enter p0
 
@@ -2289,7 +2093,6 @@
 
 .method declared-synchronized nContextBindProgramStore(I)V
     .locals 1
-    .param p1    # I
 
     monitor-enter p0
 
@@ -2316,7 +2119,6 @@
 
 .method declared-synchronized nContextBindProgramVertex(I)V
     .locals 1
-    .param p1    # I
 
     monitor-enter p0
 
@@ -2343,7 +2145,6 @@
 
 .method declared-synchronized nContextBindRootScript(I)V
     .locals 1
-    .param p1    # I
 
     monitor-enter p0
 
@@ -2370,8 +2171,6 @@
 
 .method declared-synchronized nContextBindSampler(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     monitor-enter p0
 
@@ -2398,10 +2197,6 @@
 
 .method declared-synchronized nContextCreate(IIII)I
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     monitor-enter p0
 
@@ -2426,21 +2221,6 @@
 
 .method declared-synchronized nContextCreateGL(IIIIIIIIIIIIIFI)I
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
-    .param p9    # I
-    .param p10    # I
-    .param p11    # I
-    .param p12    # I
-    .param p13    # I
-    .param p14    # F
-    .param p15    # I
 
     monitor-enter p0
 
@@ -2508,7 +2288,6 @@
 
 .method declared-synchronized nContextDump(I)V
     .locals 1
-    .param p1    # I
 
     monitor-enter p0
 
@@ -2625,8 +2404,6 @@
 
 .method declared-synchronized nContextSendMessage(I[I)V
     .locals 1
-    .param p1    # I
-    .param p2    # [I
 
     monitor-enter p0
 
@@ -2653,7 +2430,6 @@
 
 .method declared-synchronized nContextSetPriority(I)V
     .locals 1
-    .param p1    # I
 
     monitor-enter p0
 
@@ -2680,9 +2456,6 @@
 
 .method declared-synchronized nContextSetSurface(IILandroid/view/Surface;)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/view/Surface;
 
     monitor-enter p0
 
@@ -2709,9 +2482,6 @@
 
 .method declared-synchronized nContextSetSurfaceTexture(IILandroid/graphics/SurfaceTexture;)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/graphics/SurfaceTexture;
 
     monitor-enter p0
 
@@ -2747,10 +2517,6 @@
 
 .method declared-synchronized nElementCreate(IIZI)I
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # I
 
     monitor-enter p0
 
@@ -2789,9 +2555,6 @@
 
 .method declared-synchronized nElementCreate2([I[Ljava/lang/String;[I)I
     .locals 1
-    .param p1    # [I
-    .param p2    # [Ljava/lang/String;
-    .param p3    # [I
 
     monitor-enter p0
 
@@ -2820,8 +2583,6 @@
 
 .method declared-synchronized nElementGetNativeData(I[I)V
     .locals 1
-    .param p1    # I
-    .param p2    # [I
 
     monitor-enter p0
 
@@ -2848,10 +2609,6 @@
 
 .method declared-synchronized nElementGetSubElements(I[I[Ljava/lang/String;[I)V
     .locals 6
-    .param p1    # I
-    .param p2    # [I
-    .param p3    # [Ljava/lang/String;
-    .param p4    # [I
 
     monitor-enter p0
 
@@ -2888,8 +2645,6 @@
 
 .method declared-synchronized nFileA3DCreateFromAsset(Landroid/content/res/AssetManager;Ljava/lang/String;)I
     .locals 1
-    .param p1    # Landroid/content/res/AssetManager;
-    .param p2    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -2918,7 +2673,6 @@
 
 .method declared-synchronized nFileA3DCreateFromAssetStream(I)I
     .locals 1
-    .param p1    # I
 
     monitor-enter p0
 
@@ -2947,7 +2701,6 @@
 
 .method declared-synchronized nFileA3DCreateFromFile(Ljava/lang/String;)I
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     monitor-enter p0
 
@@ -2976,8 +2729,6 @@
 
 .method declared-synchronized nFileA3DGetEntryByIndex(II)I
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     monitor-enter p0
 
@@ -3006,10 +2757,6 @@
 
 .method declared-synchronized nFileA3DGetIndexEntries(II[I[Ljava/lang/String;)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [I
-    .param p4    # [Ljava/lang/String;
 
     monitor-enter p0
 
@@ -3046,7 +2793,6 @@
 
 .method declared-synchronized nFileA3DGetNumIndexEntries(I)I
     .locals 1
-    .param p1    # I
 
     monitor-enter p0
 
@@ -3075,10 +2821,6 @@
 
 .method declared-synchronized nFontCreateFromAsset(Landroid/content/res/AssetManager;Ljava/lang/String;FI)I
     .locals 6
-    .param p1    # Landroid/content/res/AssetManager;
-    .param p2    # Ljava/lang/String;
-    .param p3    # F
-    .param p4    # I
 
     monitor-enter p0
 
@@ -3117,10 +2859,6 @@
 
 .method declared-synchronized nFontCreateFromAssetStream(Ljava/lang/String;FII)I
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # F
-    .param p3    # I
-    .param p4    # I
 
     monitor-enter p0
 
@@ -3159,9 +2897,6 @@
 
 .method declared-synchronized nFontCreateFromFile(Ljava/lang/String;FI)I
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # F
-    .param p3    # I
 
     monitor-enter p0
 
@@ -3190,7 +2925,6 @@
 
 .method declared-synchronized nGetName(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     monitor-enter p0
 
@@ -3219,9 +2953,6 @@
 
 .method declared-synchronized nMeshCreate([I[I[I)I
     .locals 1
-    .param p1    # [I
-    .param p2    # [I
-    .param p3    # [I
 
     monitor-enter p0
 
@@ -3250,7 +2981,6 @@
 
 .method declared-synchronized nMeshGetIndexCount(I)I
     .locals 1
-    .param p1    # I
 
     monitor-enter p0
 
@@ -3279,10 +3009,6 @@
 
 .method declared-synchronized nMeshGetIndices(I[I[II)V
     .locals 6
-    .param p1    # I
-    .param p2    # [I
-    .param p3    # [I
-    .param p4    # I
 
     monitor-enter p0
 
@@ -3319,7 +3045,6 @@
 
 .method declared-synchronized nMeshGetVertexBufferCount(I)I
     .locals 1
-    .param p1    # I
 
     monitor-enter p0
 
@@ -3348,9 +3073,6 @@
 
 .method declared-synchronized nMeshGetVertices(I[II)V
     .locals 1
-    .param p1    # I
-    .param p2    # [I
-    .param p3    # I
 
     monitor-enter p0
 
@@ -3377,7 +3099,6 @@
 
 .method nObjDestroy(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/renderscript/RenderScript;->mContext:I
 
@@ -3393,11 +3114,6 @@
 
 .method declared-synchronized nPathCreate(IZIIF)I
     .locals 7
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # I
-    .param p4    # I
-    .param p5    # F
 
     monitor-enter p0
 
@@ -3438,9 +3154,6 @@
 
 .method declared-synchronized nProgramBindConstants(III)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     monitor-enter p0
 
@@ -3467,9 +3180,6 @@
 
 .method declared-synchronized nProgramBindSampler(III)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     monitor-enter p0
 
@@ -3496,9 +3206,6 @@
 
 .method declared-synchronized nProgramBindTexture(III)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     monitor-enter p0
 
@@ -3525,9 +3232,6 @@
 
 .method declared-synchronized nProgramFragmentCreate(Ljava/lang/String;[Ljava/lang/String;[I)I
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # [I
 
     monitor-enter p0
 
@@ -3556,8 +3260,6 @@
 
 .method declared-synchronized nProgramRasterCreate(ZI)I
     .locals 1
-    .param p1    # Z
-    .param p2    # I
 
     monitor-enter p0
 
@@ -3586,15 +3288,6 @@
 
 .method declared-synchronized nProgramStoreCreate(ZZZZZZIII)I
     .locals 11
-    .param p1    # Z
-    .param p2    # Z
-    .param p3    # Z
-    .param p4    # Z
-    .param p5    # Z
-    .param p6    # Z
-    .param p7    # I
-    .param p8    # I
-    .param p9    # I
 
     monitor-enter p0
 
@@ -3643,9 +3336,6 @@
 
 .method declared-synchronized nProgramVertexCreate(Ljava/lang/String;[Ljava/lang/String;[I)I
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # [I
 
     monitor-enter p0
 
@@ -3674,12 +3364,6 @@
 
 .method declared-synchronized nSamplerCreate(IIIIIF)I
     .locals 8
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # F
 
     monitor-enter p0
 
@@ -3722,9 +3406,6 @@
 
 .method declared-synchronized nScriptBindAllocation(III)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     monitor-enter p0
 
@@ -3751,10 +3432,6 @@
 
 .method declared-synchronized nScriptCCreate(Ljava/lang/String;Ljava/lang/String;[BI)I
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # [B
-    .param p4    # I
 
     monitor-enter p0
 
@@ -3793,8 +3470,6 @@
 
 .method declared-synchronized nScriptFieldIDCreate(II)I
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     monitor-enter p0
 
@@ -3823,11 +3498,6 @@
 
 .method declared-synchronized nScriptForEach(IIII[B)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # [B
 
     monitor-enter p0
 
@@ -3889,17 +3559,6 @@
 
 .method declared-synchronized nScriptForEachClipped(IIII[BIIIIII)V
     .locals 13
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # [B
-    .param p6    # I
-    .param p7    # I
-    .param p8    # I
-    .param p9    # I
-    .param p10    # I
-    .param p11    # I
 
     monitor-enter p0
 
@@ -3985,8 +3644,6 @@
 
 .method declared-synchronized nScriptGetVarD(II)D
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     monitor-enter p0
 
@@ -4015,8 +3672,6 @@
 
 .method declared-synchronized nScriptGetVarF(II)F
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     monitor-enter p0
 
@@ -4045,8 +3700,6 @@
 
 .method declared-synchronized nScriptGetVarI(II)I
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     monitor-enter p0
 
@@ -4075,8 +3728,6 @@
 
 .method declared-synchronized nScriptGetVarJ(II)J
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     monitor-enter p0
 
@@ -4105,9 +3756,6 @@
 
 .method declared-synchronized nScriptGetVarV(II[B)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [B
 
     monitor-enter p0
 
@@ -4134,11 +3782,6 @@
 
 .method declared-synchronized nScriptGroupCreate([I[I[I[I[I)I
     .locals 7
-    .param p1    # [I
-    .param p2    # [I
-    .param p3    # [I
-    .param p4    # [I
-    .param p5    # [I
 
     monitor-enter p0
 
@@ -4179,7 +3822,6 @@
 
 .method declared-synchronized nScriptGroupExecute(I)V
     .locals 1
-    .param p1    # I
 
     monitor-enter p0
 
@@ -4206,9 +3848,6 @@
 
 .method declared-synchronized nScriptGroupSetInput(III)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     monitor-enter p0
 
@@ -4235,9 +3874,6 @@
 
 .method declared-synchronized nScriptGroupSetOutput(III)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     monitor-enter p0
 
@@ -4264,8 +3900,6 @@
 
 .method declared-synchronized nScriptIntrinsicCreate(II)I
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     monitor-enter p0
 
@@ -4294,8 +3928,6 @@
 
 .method declared-synchronized nScriptInvoke(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     monitor-enter p0
 
@@ -4322,9 +3954,6 @@
 
 .method declared-synchronized nScriptInvokeV(II[B)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [B
 
     monitor-enter p0
 
@@ -4351,9 +3980,6 @@
 
 .method declared-synchronized nScriptKernelIDCreate(III)I
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     monitor-enter p0
 
@@ -4382,8 +4008,6 @@
 
 .method declared-synchronized nScriptSetTimeZone(I[B)V
     .locals 1
-    .param p1    # I
-    .param p2    # [B
 
     monitor-enter p0
 
@@ -4410,9 +4034,6 @@
 
 .method declared-synchronized nScriptSetVarD(IID)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # D
 
     monitor-enter p0
 
@@ -4447,9 +4068,6 @@
 
 .method declared-synchronized nScriptSetVarF(IIF)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # F
 
     monitor-enter p0
 
@@ -4476,9 +4094,6 @@
 
 .method declared-synchronized nScriptSetVarI(III)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     monitor-enter p0
 
@@ -4505,9 +4120,6 @@
 
 .method declared-synchronized nScriptSetVarJ(IIJ)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
 
     monitor-enter p0
 
@@ -4542,9 +4154,6 @@
 
 .method declared-synchronized nScriptSetVarObj(III)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     monitor-enter p0
 
@@ -4571,9 +4180,6 @@
 
 .method declared-synchronized nScriptSetVarV(II[B)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [B
 
     monitor-enter p0
 
@@ -4600,11 +4206,6 @@
 
 .method declared-synchronized nScriptSetVarVE(II[BI[I)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [B
-    .param p4    # I
-    .param p5    # [I
 
     monitor-enter p0
 
@@ -4643,13 +4244,6 @@
 
 .method declared-synchronized nTypeCreate(IIIIZZI)I
     .locals 9
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Z
-    .param p6    # Z
-    .param p7    # I
 
     monitor-enter p0
 
@@ -4694,8 +4288,6 @@
 
 .method declared-synchronized nTypeGetNativeData(I[I)V
     .locals 1
-    .param p1    # I
-    .param p2    # [I
 
     monitor-enter p0
 
@@ -5064,7 +4656,6 @@
 
 .method safeID(Landroid/renderscript/BaseObj;)I
     .locals 1
-    .param p1    # Landroid/renderscript/BaseObj;
 
     if-eqz p1, :cond_0
 
@@ -5083,8 +4674,6 @@
 
 .method public sendMessage(I[I)V
     .locals 0
-    .param p1    # I
-    .param p2    # [I
 
     invoke-virtual {p0, p1, p2}, Landroid/renderscript/RenderScript;->nContextSendMessage(I[I)V
 
@@ -5093,7 +4682,6 @@
 
 .method public setErrorHandler(Landroid/renderscript/RenderScript$RSErrorHandler;)V
     .locals 0
-    .param p1    # Landroid/renderscript/RenderScript$RSErrorHandler;
 
     iput-object p1, p0, Landroid/renderscript/RenderScript;->mErrorCallback:Landroid/renderscript/RenderScript$RSErrorHandler;
 
@@ -5102,7 +4690,6 @@
 
 .method public setMessageHandler(Landroid/renderscript/RenderScript$RSMessageHandler;)V
     .locals 0
-    .param p1    # Landroid/renderscript/RenderScript$RSMessageHandler;
 
     iput-object p1, p0, Landroid/renderscript/RenderScript;->mMessageCallback:Landroid/renderscript/RenderScript$RSMessageHandler;
 
@@ -5111,7 +4698,6 @@
 
 .method public setPriority(Landroid/renderscript/RenderScript$Priority;)V
     .locals 1
-    .param p1    # Landroid/renderscript/RenderScript$Priority;
 
     invoke-virtual {p0}, Landroid/renderscript/RenderScript;->validate()V
 

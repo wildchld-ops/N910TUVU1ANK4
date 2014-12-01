@@ -80,9 +80,6 @@
 
 .method public dispatchUiEvent(Landroid/view/MotionEvent;II)V
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # I
-    .param p3    # I
 
     iget-object v0, p0, Landroid/webkitsec/WebViewClassic$PrivateHandler;->this$0:Landroid/webkitsec/WebViewClassic;
 
@@ -116,7 +113,6 @@
 
 .method public handleMessage(Landroid/os/Message;)V
     .locals 47
-    .param p1    # Landroid/os/Message;
 
     move-object/from16 v0, p0
 
@@ -3318,7 +3314,6 @@
 
 .method public shouldInterceptTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 5
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v0, 0x0
 
@@ -3448,7 +3443,6 @@
 
 .method public showTapHighlight(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Landroid/webkitsec/WebViewClassic$PrivateHandler;->this$0:Landroid/webkitsec/WebViewClassic;
 

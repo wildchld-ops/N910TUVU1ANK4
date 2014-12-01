@@ -63,7 +63,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Landroid/view/ViewGroup;-><init>(Landroid/content/Context;)V
 
@@ -110,8 +109,6 @@
 # virtual methods
 .method public addItem(Lcom/android/launcher2/BaseItem;Z)Z
     .locals 3
-    .param p1    # Lcom/android/launcher2/BaseItem;
-    .param p2    # Z
 
     invoke-virtual {p0, p1}, Lcom/android/launcher2/CellLayoutChildren;->hasItem(Lcom/android/launcher2/BaseItem;)Z
 
@@ -172,9 +169,6 @@
 
 .method public addView(Landroid/view/View;ILandroid/view/ViewGroup$LayoutParams;)V
     .locals 7
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # Landroid/view/ViewGroup$LayoutParams;
 
     invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
 
@@ -335,7 +329,6 @@
 
 .method public buildView(Lcom/android/launcher2/BaseItem;)Landroid/view/View;
     .locals 3
-    .param p1    # Lcom/android/launcher2/BaseItem;
 
     invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
 
@@ -459,7 +452,6 @@
 
 .method public drawShadows(Landroid/graphics/Canvas;)V
     .locals 6
-    .param p1    # Landroid/graphics/Canvas;
 
     const/4 v0, 0x0
 
@@ -560,7 +552,6 @@
 
 .method public findFolderItem(J)Lcom/android/launcher2/BaseItem;
     .locals 4
-    .param p1    # J
 
     iget-object v2, p0, Lcom/android/launcher2/CellLayoutChildren;->mItems:Ljava/util/ArrayList;
 
@@ -598,8 +589,6 @@
 
 .method public getChildAt(II)Landroid/view/View;
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getChildCount()I
 
@@ -671,7 +660,6 @@
 
 .method public getChildAt(Lcom/android/launcher2/BaseItem;)Landroid/view/View;
     .locals 9
-    .param p1    # Lcom/android/launcher2/BaseItem;
 
     const/4 v4, 0x0
 
@@ -728,7 +716,6 @@
 
 .method public getChildFromPosition(I)Landroid/view/View;
     .locals 4
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getChildCount()I
 
@@ -786,7 +773,6 @@
 
 .method public getItemAt(I)Lcom/android/launcher2/BaseItem;
     .locals 3
-    .param p1    # I
 
     iget-object v2, p0, Lcom/android/launcher2/CellLayoutChildren;->mItems:Ljava/util/ArrayList;
 
@@ -824,8 +810,6 @@
 
 .method public getItemAt(II)Lcom/android/launcher2/BaseItem;
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0, p1, p2}, Lcom/android/launcher2/CellLayoutChildren;->getChildAt(II)Landroid/view/View;
 
@@ -850,7 +834,6 @@
 
 .method public hasItem(Lcom/android/launcher2/BaseItem;)Z
     .locals 1
-    .param p1    # Lcom/android/launcher2/BaseItem;
 
     iget-object v0, p0, Lcom/android/launcher2/CellLayoutChildren;->mItems:Ljava/util/ArrayList;
 
@@ -904,7 +887,6 @@
 
 .method public measureChild(Landroid/view/View;)V
     .locals 8
-    .param p1    # Landroid/view/View;
 
     const/high16 v7, 0x40000000
 
@@ -943,10 +925,6 @@
 
 .method notifyWidgetsOfPageScroll(IIII)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/4 v1, 0x0
 
@@ -982,11 +960,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 15
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getChildCount()I
 
@@ -1132,8 +1105,6 @@
 
 .method protected onMeasure(II)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
 
     invoke-static {p1}, Landroid/view/View$MeasureSpec;->getMode(I)I
 
@@ -1201,7 +1172,6 @@
 
 .method protected onViewAddedInCLC(Landroid/view/View;)V
     .locals 3
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p1}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
@@ -1247,7 +1217,6 @@
 
 .method protected onViewRemovedInCLC(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     return-void
 .end method
@@ -1266,7 +1235,6 @@
 
 .method public removeItem(Lcom/android/launcher2/BaseItem;)Z
     .locals 3
-    .param p1    # Lcom/android/launcher2/BaseItem;
 
     iget-object v2, p0, Lcom/android/launcher2/CellLayoutChildren;->mItems:Ljava/util/ArrayList;
 
@@ -1299,8 +1267,6 @@
 
 .method public requestChildFocus(Landroid/view/View;Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/View;
 
     invoke-super {p0, p1, p2}, Landroid/view/ViewGroup;->requestChildFocus(Landroid/view/View;Landroid/view/View;)V
 
@@ -1322,10 +1288,6 @@
 
 .method public setCellDimensions(IIII)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iput p1, p0, Lcom/android/launcher2/CellLayoutChildren;->mCellWidth:I
 
@@ -1397,7 +1359,6 @@
 
 .method protected setChildrenDrawingCacheEnabled(Z)V
     .locals 4
-    .param p1    # Z
 
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getChildCount()I
 
@@ -1437,7 +1398,6 @@
 
 .method protected setChildrenDrawnWithCacheEnabled(Z)V
     .locals 0
-    .param p1    # Z
 
     invoke-super {p0, p1}, Landroid/view/ViewGroup;->setChildrenDrawnWithCacheEnabled(Z)V
 
@@ -1446,7 +1406,6 @@
 
 .method public setItemViewBuilder(Lcom/android/launcher2/ItemViewBuilder;)V
     .locals 0
-    .param p1    # Lcom/android/launcher2/ItemViewBuilder;
 
     iput-object p1, p0, Lcom/android/launcher2/CellLayoutChildren;->mItemViewBuilder:Lcom/android/launcher2/ItemViewBuilder;
 
@@ -1455,8 +1414,6 @@
 
 .method public setItemVisibility(Lcom/android/launcher2/BaseItem;I)V
     .locals 2
-    .param p1    # Lcom/android/launcher2/BaseItem;
-    .param p2    # I
 
     if-nez p2, :cond_1
 
@@ -1488,7 +1445,6 @@
 
 .method public setupLp(Lcom/android/launcher2/CellLayout$LayoutParams;)V
     .locals 4
-    .param p1    # Lcom/android/launcher2/CellLayout$LayoutParams;
 
     iget v0, p0, Lcom/android/launcher2/CellLayoutChildren;->mCellWidth:I
 
@@ -1513,7 +1469,6 @@
 
 .method public updateChildrenToNewPage(ILjava/util/List;)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",

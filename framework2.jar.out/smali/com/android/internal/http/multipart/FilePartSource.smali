@@ -15,7 +15,6 @@
 # direct methods
 .method public constructor <init>(Ljava/io/File;)V
     .locals 2
-    .param p1    # Ljava/io/File;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/FileNotFoundException;
@@ -76,8 +75,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Ljava/io/File;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/io/File;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/FileNotFoundException;

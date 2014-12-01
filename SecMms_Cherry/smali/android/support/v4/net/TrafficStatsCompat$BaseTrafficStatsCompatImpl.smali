@@ -89,22 +89,18 @@
 
 .method public incrementOperationCount(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public incrementOperationCount(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     return-void
 .end method
 
 .method public setThreadStatsTag(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/support/v4/net/TrafficStatsCompat$BaseTrafficStatsCompatImpl;->mThreadSocketTags:Ljava/lang/ThreadLocal;
 
@@ -121,14 +117,12 @@
 
 .method public tagSocket(Ljava/net/Socket;)V
     .locals 0
-    .param p1    # Ljava/net/Socket;
 
     return-void
 .end method
 
 .method public untagSocket(Ljava/net/Socket;)V
     .locals 0
-    .param p1    # Ljava/net/Socket;
 
     return-void
 .end method

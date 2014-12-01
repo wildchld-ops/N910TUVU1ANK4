@@ -24,8 +24,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/incallui/InCallActivity;Landroid/content/Context;Landroid/view/View;)V
     .locals 0
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/view/View;
 
     iput-object p1, p0, Lcom/android/incallui/InCallActivity$InCallActivityMenu;->this$0:Lcom/android/incallui/InCallActivity;
 
@@ -38,7 +36,6 @@
 # virtual methods
 .method public onDismiss(Landroid/widget/PopupMenu;)V
     .locals 2
-    .param p1    # Landroid/widget/PopupMenu;
 
     iget-object v1, p0, Lcom/android/incallui/InCallActivity$InCallActivityMenu;->this$0:Lcom/android/incallui/InCallActivity;
 

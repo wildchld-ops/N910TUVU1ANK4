@@ -29,10 +29,6 @@
 # direct methods
 .method constructor <init>(Landroid/app/ActivityThread;[Ljava/lang/String;Landroid/content/IContentProvider;Landroid/content/ContentProvider;Landroid/app/IActivityManager$ContentProviderHolder;)V
     .locals 0
-    .param p2    # [Ljava/lang/String;
-    .param p3    # Landroid/content/IContentProvider;
-    .param p4    # Landroid/content/ContentProvider;
-    .param p5    # Landroid/app/IActivityManager$ContentProviderHolder;
 
     iput-object p1, p0, Landroid/app/ActivityThread$ProviderClientRecord;->this$0:Landroid/app/ActivityThread;
 

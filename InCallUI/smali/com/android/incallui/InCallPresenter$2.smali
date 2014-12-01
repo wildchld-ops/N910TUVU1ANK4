@@ -36,7 +36,6 @@
 # virtual methods
 .method public onReceiveSweep(Lcom/android/incallui/widget/incomingwidget/IncomingCallImageHandle$HandleState;)V
     .locals 12
-    .param p1    # Lcom/android/incallui/widget/incomingwidget/IncomingCallImageHandle$HandleState;
 
     const/4 v8, 0x1
 

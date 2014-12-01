@@ -14,7 +14,6 @@
 # direct methods
 .method public constructor <init>(Lcom/samsung/surfacewidget/SurfaceWidgetProviderInfo;)V
     .locals 1
-    .param p1    # Lcom/samsung/surfacewidget/SurfaceWidgetProviderInfo;
 
     sget-object v0, Lcom/android/launcher2/BaseItem$Type;->HOME_SURFACE_WIDGET:Lcom/android/launcher2/BaseItem$Type;
 

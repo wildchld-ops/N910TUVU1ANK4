@@ -52,9 +52,6 @@
 
 .method public constructor <init>(ILjava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const-string v0, "GMT-00:00"
 
@@ -73,7 +70,6 @@
 
 .method private constructor <init>(Landroid/os/Parcel;)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -112,8 +108,6 @@
 
 .method synthetic constructor <init>(Landroid/os/Parcel;Lcom/absolute/android/persistence/LogEntry$1;)V
     .locals 0
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # Lcom/absolute/android/persistence/LogEntry$1;
 
     invoke-direct {p0, p1}, Lcom/absolute/android/persistence/LogEntry;-><init>(Landroid/os/Parcel;)V
 
@@ -122,10 +116,6 @@
 
 .method public constructor <init>(Ljava/util/Calendar;ILjava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/util/Calendar;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -235,8 +225,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget v0, p0, Lcom/absolute/android/persistence/LogEntry;->m_severity:I
 

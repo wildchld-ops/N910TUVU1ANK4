@@ -21,8 +21,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/incallui/CallCardVideoFragment;JJ)V
     .locals 0
-    .param p2    # J
-    .param p4    # J
 
     iput-object p1, p0, Lcom/android/incallui/CallCardVideoFragment$DefaultImageTimer;->this$0:Lcom/android/incallui/CallCardVideoFragment;
 
@@ -51,7 +49,6 @@
 
 .method public onTick(J)V
     .locals 0
-    .param p1    # J
 
     return-void
 .end method

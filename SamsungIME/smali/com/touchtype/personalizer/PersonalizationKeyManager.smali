@@ -30,7 +30,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -79,7 +78,6 @@
 
 .method public static getInstance(Landroid/content/Context;)Lcom/touchtype/personalizer/PersonalizationKeyManager;
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     sget-object v0, Lcom/touchtype/personalizer/PersonalizationKeyManager;->sKeymanager:Lcom/touchtype/personalizer/PersonalizationKeyManager;
 
@@ -133,7 +131,6 @@
 
 .method public setApiKey(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_1
 

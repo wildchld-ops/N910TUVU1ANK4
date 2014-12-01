@@ -103,7 +103,6 @@
 
 .method public static valueOf(Ljava/lang/String;)Landroid/support/v4/content/ModernAsyncTask$Status;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-class v0, Landroid/support/v4/content/ModernAsyncTask$Status;
 

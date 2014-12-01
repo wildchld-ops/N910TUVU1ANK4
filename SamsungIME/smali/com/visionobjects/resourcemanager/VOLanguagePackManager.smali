@@ -72,7 +72,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 8
-    .param p1    # Landroid/content/Context;
 
     const/4 v7, 0x0
 
@@ -222,7 +221,6 @@
 
 .method public static getInstance(Landroid/content/Context;)Lcom/visionobjects/resourcemanager/VOLanguagePackManager;
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     sget-object v0, Lcom/visionobjects/resourcemanager/VOLanguagePackManager;->mInstance:Lcom/visionobjects/resourcemanager/VOLanguagePackManager;
 
@@ -242,7 +240,6 @@
 
 .method private getLanguageCode(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -268,7 +265,6 @@
 
 .method public static getLanguagePackManager(Landroid/content/Context;)Lcom/visionobjects/resourcemanager/VOLanguagePackManager;
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Lcom/visionobjects/resourcemanager/VOLanguagePackManager;->getInstance(Landroid/content/Context;)Lcom/visionobjects/resourcemanager/VOLanguagePackManager;
 
@@ -333,7 +329,6 @@
 
 .method public get(Ljava/lang/String;)Lcom/visionobjects/resourcemanager/VOLanguagePack;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/visionobjects/resourcemanager/VOLanguagePackManager;->mLanguagePacks:Ljava/util/HashMap;
 
@@ -360,8 +355,6 @@
 
 .method public getResources(Ljava/lang/String;Ljava/lang/String;)[Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/visionobjects/resourcemanager/VOLanguagePackManager;->rmHelper:Lcom/visionobjects/resourcemanager/RMHelper;
 
@@ -374,8 +367,6 @@
 
 .method public getVOlangaueName(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const-string v0, "ar"
 
@@ -507,7 +498,6 @@
 
 .method public removeLanguage(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/visionobjects/resourcemanager/VOLanguagePackManager;->mLanguagePacks:Ljava/util/HashMap;
 
@@ -531,8 +521,6 @@
 
 .method public setProgressLanguage(Ljava/lang/String;I)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     iget-object v1, p0, Lcom/visionobjects/resourcemanager/VOLanguagePackManager;->mLanguagePacks:Ljava/util/HashMap;
 
@@ -673,7 +661,6 @@
 
 .method public updateFailure(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/visionobjects/resourcemanager/VOLanguagePackManager;->mLanguagePacks:Ljava/util/HashMap;
 
@@ -699,7 +686,6 @@
 
 .method public updateSuccess(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/visionobjects/resourcemanager/VOLanguagePackManager;->mLanguagePacks:Ljava/util/HashMap;
 
@@ -719,7 +705,6 @@
 
 .method public updateVOLanguagePackManager(Lcom/touchtype_fluency/util/RefreshListener;)V
     .locals 1
-    .param p1    # Lcom/touchtype_fluency/util/RefreshListener;
 
     const/4 v0, 0x0
 

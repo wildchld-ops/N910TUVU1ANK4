@@ -27,10 +27,6 @@
 # direct methods
 .method constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -55,7 +51,6 @@
 # virtual methods
 .method public addColumn(Lcom/android/server/analytics/data/collection/storage/Column;)V
     .locals 1
-    .param p1    # Lcom/android/server/analytics/data/collection/storage/Column;
 
     iget-object v0, p0, Lcom/android/server/analytics/data/collection/storage/Table;->mColumns:Ljava/util/ArrayList;
 

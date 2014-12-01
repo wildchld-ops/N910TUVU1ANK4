@@ -33,7 +33,6 @@
 # virtual methods
 .method public onBluetoothStateChange(Z)V
     .locals 4
-    .param p1    # Z
 
     # getter for: Landroid/bluetooth/BluetoothHeadset;->DBG:Z
     invoke-static {}, Landroid/bluetooth/BluetoothHeadset;->access$000()Z

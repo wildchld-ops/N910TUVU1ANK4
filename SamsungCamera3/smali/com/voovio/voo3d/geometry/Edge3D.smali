@@ -108,8 +108,6 @@
 
 .method public constructor <init>(Lcom/voovio/voo3d/geometry/Vertex3D;Lcom/voovio/voo3d/geometry/Vertex3D;)V
     .locals 4
-    .param p1    # Lcom/voovio/voo3d/geometry/Vertex3D;
-    .param p2    # Lcom/voovio/voo3d/geometry/Vertex3D;
 
     const/4 v3, 0x4
 
@@ -180,7 +178,6 @@
 
 .method public GetSquaredDistance(Lcom/voovio/voo3d/geometry/Edge3D;)F
     .locals 22
-    .param p1    # Lcom/voovio/voo3d/geometry/Edge3D;
 
     move-object/from16 v0, p0
 

@@ -36,7 +36,6 @@
 # virtual methods
 .method public onModeChanged(Z)V
     .locals 7
-    .param p1    # Z
 
     const/16 v6, 0x34
 
@@ -335,14 +334,12 @@
 
 .method public onSizeChanged(Landroid/graphics/Rect;)V
     .locals 0
-    .param p1    # Landroid/graphics/Rect;
 
     return-void
 .end method
 
 .method public onZoneChanged(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method

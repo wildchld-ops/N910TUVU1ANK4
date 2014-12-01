@@ -40,7 +40,6 @@
 # virtual methods
 .method public onRenderPreview(Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$ResultInfo;)V
     .locals 6
-    .param p1    # Lcom/sec/android/app/camera/glwidget/TwGLPanorama360Menu$ResultInfo;
 
     const/4 v5, 0x0
 

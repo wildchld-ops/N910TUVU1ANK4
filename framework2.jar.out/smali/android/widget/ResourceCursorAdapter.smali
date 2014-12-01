@@ -14,9 +14,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;ILandroid/database/Cursor;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Landroid/database/Cursor;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -41,10 +38,6 @@
 
 .method public constructor <init>(Landroid/content/Context;ILandroid/database/Cursor;I)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Landroid/database/Cursor;
-    .param p4    # I
 
     invoke-direct {p0, p1, p3, p4}, Landroid/widget/CursorAdapter;-><init>(Landroid/content/Context;Landroid/database/Cursor;I)V
 
@@ -67,10 +60,6 @@
 
 .method public constructor <init>(Landroid/content/Context;ILandroid/database/Cursor;Z)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Landroid/database/Cursor;
-    .param p4    # Z
 
     invoke-direct {p0, p1, p3, p4}, Landroid/widget/CursorAdapter;-><init>(Landroid/content/Context;Landroid/database/Cursor;Z)V
 
@@ -95,9 +84,6 @@
 # virtual methods
 .method public newDropDownView(Landroid/content/Context;Landroid/database/Cursor;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/database/Cursor;
-    .param p3    # Landroid/view/ViewGroup;
 
     iget-object v0, p0, Landroid/widget/ResourceCursorAdapter;->mInflater:Landroid/view/LayoutInflater;
 
@@ -114,9 +100,6 @@
 
 .method public newView(Landroid/content/Context;Landroid/database/Cursor;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/database/Cursor;
-    .param p3    # Landroid/view/ViewGroup;
 
     iget-object v0, p0, Landroid/widget/ResourceCursorAdapter;->mInflater:Landroid/view/LayoutInflater;
 
@@ -133,7 +116,6 @@
 
 .method public setDropDownViewResource(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/widget/ResourceCursorAdapter;->mDropDownLayout:I
 
@@ -142,7 +124,6 @@
 
 .method public setViewResource(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/widget/ResourceCursorAdapter;->mLayout:I
 

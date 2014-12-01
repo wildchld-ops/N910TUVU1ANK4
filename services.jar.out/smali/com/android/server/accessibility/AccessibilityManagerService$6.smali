@@ -33,10 +33,6 @@
 # virtual methods
 .method public onHandleForceStop(Landroid/content/Intent;[Ljava/lang/String;IZ)Z
     .locals 13
-    .param p1    # Landroid/content/Intent;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Z
 
     iget-object v9, p0, Lcom/android/server/accessibility/AccessibilityManagerService$6;->this$0:Lcom/android/server/accessibility/AccessibilityManagerService;
 
@@ -175,8 +171,6 @@
 
 .method public onPackageRemoved(Ljava/lang/String;I)V
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     iget-object v5, p0, Lcom/android/server/accessibility/AccessibilityManagerService$6;->this$0:Lcom/android/server/accessibility/AccessibilityManagerService;
 

@@ -20,7 +20,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     sget-object v0, Landroid/net/LocalSocketAddress$Namespace;->ABSTRACT:Landroid/net/LocalSocketAddress$Namespace;
 
@@ -31,8 +30,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Landroid/net/LocalSocketAddress$Namespace;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/net/LocalSocketAddress$Namespace;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

@@ -13,7 +13,6 @@
 # direct methods
 .method public constructor <init>(Ljava/net/HttpURLConnection;)V
     .locals 0
-    .param p1    # Ljava/net/HttpURLConnection;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

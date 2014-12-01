@@ -34,11 +34,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/settings/SmsListPreference;Landroid/content/Context;I[Ljava/lang/CharSequence;[Landroid/graphics/drawable/Drawable;I)V
     .locals 1
-    .param p2    # Landroid/content/Context;
-    .param p3    # I
-    .param p4    # [Ljava/lang/CharSequence;
-    .param p5    # [Landroid/graphics/drawable/Drawable;
-    .param p6    # I
 
     iput-object p1, p0, Lcom/android/settings/SmsListPreference$SmsArrayAdapter;->this$0:Lcom/android/settings/SmsListPreference;
 
@@ -63,9 +58,6 @@
 # virtual methods
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 6
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     invoke-virtual {p0}, Landroid/widget/ArrayAdapter;->getContext()Landroid/content/Context;
 

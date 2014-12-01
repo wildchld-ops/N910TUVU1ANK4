@@ -37,7 +37,6 @@
 # virtual methods
 .method public onChange(Z)V
     .locals 2
-    .param p1    # Z
 
     const-string v0, "STATUSBAR-RecentsPanel"
 

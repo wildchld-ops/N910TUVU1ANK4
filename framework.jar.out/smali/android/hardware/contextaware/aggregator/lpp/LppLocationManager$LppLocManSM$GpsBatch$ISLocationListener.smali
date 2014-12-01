@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM$GpsBatch;Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$1;)V
     .locals 0
-    .param p1    # Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM$GpsBatch;
-    .param p2    # Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$1;
 
     invoke-direct {p0, p1}, Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM$GpsBatch$ISLocationListener;-><init>(Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$LppLocManSM$GpsBatch;)V
 
@@ -46,7 +44,6 @@
 # virtual methods
 .method public onLocationAvailable([Landroid/location/Location;)V
     .locals 6
-    .param p1    # [Landroid/location/Location;
 
     if-nez p1, :cond_1
 

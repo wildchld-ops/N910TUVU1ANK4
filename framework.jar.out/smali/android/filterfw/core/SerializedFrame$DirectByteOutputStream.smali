@@ -27,7 +27,6 @@
 # direct methods
 .method public constructor <init>(Landroid/filterfw/core/SerializedFrame;I)V
     .locals 2
-    .param p2    # I
 
     const/4 v1, 0x0
 
@@ -52,7 +51,6 @@
 
 .method private final ensureFit(I)V
     .locals 4
-    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -152,7 +150,6 @@
 
 .method public final write(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -175,7 +172,6 @@
 
 .method public final write([B)V
     .locals 2
-    .param p1    # [B
 
     const/4 v0, 0x0
 
@@ -188,9 +184,6 @@
 
 .method public final write([BII)V
     .locals 2
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0, p3}, Landroid/filterfw/core/SerializedFrame$DirectByteOutputStream;->ensureFit(I)V
 

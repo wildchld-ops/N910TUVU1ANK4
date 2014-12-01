@@ -62,11 +62,6 @@
 
 .method public constructor <init>(Landroid/media/videoeditor/MediaItem;Ljava/lang/String;Landroid/graphics/Bitmap;JJ)V
     .locals 7
-    .param p1    # Landroid/media/videoeditor/MediaItem;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/graphics/Bitmap;
-    .param p4    # J
-    .param p6    # J
 
     move-object v0, p0
 
@@ -103,11 +98,6 @@
 
 .method constructor <init>(Landroid/media/videoeditor/MediaItem;Ljava/lang/String;Ljava/lang/String;JJ)V
     .locals 8
-    .param p1    # Landroid/media/videoeditor/MediaItem;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # J
-    .param p6    # J
 
     const/4 v7, 0x0
 
@@ -148,10 +138,6 @@
 # virtual methods
 .method generateOverlayWithRenderingMode(Landroid/media/videoeditor/MediaItem;Landroid/media/videoeditor/OverlayFrame;II)V
     .locals 34
-    .param p1    # Landroid/media/videoeditor/MediaItem;
-    .param p2    # Landroid/media/videoeditor/OverlayFrame;
-    .param p3    # I
-    .param p4    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/FileNotFoundException;,
@@ -837,7 +823,6 @@
 
 .method save(Ljava/lang/String;)Ljava/lang/String;
     .locals 7
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/FileNotFoundException;,
@@ -1033,7 +1018,6 @@
 
 .method public setBitmap(Landroid/graphics/Bitmap;)V
     .locals 5
-    .param p1    # Landroid/graphics/Bitmap;
 
     invoke-virtual {p0}, Landroid/media/videoeditor/OverlayFrame;->getMediaItem()Landroid/media/videoeditor/MediaItem;
 
@@ -1083,7 +1067,6 @@
 
 .method setFilename(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/media/videoeditor/OverlayFrame;->mFilename:Ljava/lang/String;
 
@@ -1092,7 +1075,6 @@
 
 .method setOverlayFrameHeight(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/media/videoeditor/OverlayFrame;->mOFHeight:I
 
@@ -1101,7 +1083,6 @@
 
 .method setOverlayFrameWidth(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/media/videoeditor/OverlayFrame;->mOFWidth:I
 
@@ -1110,8 +1091,6 @@
 
 .method setResizedRGBSize(II)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
 
     iput p1, p0, Landroid/media/videoeditor/OverlayFrame;->mResizedRGBWidth:I
 

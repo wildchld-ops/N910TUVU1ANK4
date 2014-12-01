@@ -22,7 +22,6 @@
 
 .method public static dumpClassHierarchy(Ljava/lang/Object;)V
     .locals 8
-    .param p0    # Ljava/lang/Object;
 
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -153,9 +152,6 @@
 
 .method public static dumpObjectFields(Ljava/lang/Object;Ljava/lang/String;I)V
     .locals 9
-    .param p0    # Ljava/lang/Object;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v3, 0x0
 
@@ -222,14 +218,6 @@
 
 .method protected static dumpObjectFields(Ljava/lang/Object;Ljava/util/ArrayList;Ljava/lang/String;Ljava/lang/reflect/Field;Ljava/lang/String;IILjava/lang/String;Ljava/lang/String;)V
     .locals 31
-    .param p0    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/reflect/Field;
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
-    .param p6    # I
-    .param p7    # Ljava/lang/String;
-    .param p8    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1051,10 +1039,6 @@
 
 .method public static dumpObjectFieldsWithClassTypeFilter(Ljava/lang/Object;Ljava/lang/String;ILjava/lang/String;)V
     .locals 9
-    .param p0    # Ljava/lang/Object;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -1131,10 +1115,6 @@
 
 .method public static dumpObjectFieldsWithValueFilter(Ljava/lang/Object;Ljava/lang/String;ILjava/lang/String;)V
     .locals 9
-    .param p0    # Ljava/lang/Object;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -1211,7 +1191,6 @@
 
 .method public static dumpObjectMethods(Ljava/lang/Object;)V
     .locals 10
-    .param p0    # Ljava/lang/Object;
 
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -1330,7 +1309,6 @@
 
 .method protected static extractClassNameFromFullClassPath(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     const-string v1, "\\."
 
@@ -1359,7 +1337,6 @@
 
 .method protected static findObjFromArrayList(Ljava/util/ArrayList;Ljava/lang/Object;)I
     .locals 3
-    .param p1    # Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1403,8 +1380,6 @@
 
 .method protected static getArraySize(Ljava/lang/Object;Ljava/lang/String;)I
     .locals 2
-    .param p0    # Ljava/lang/Object;
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -1569,8 +1544,6 @@
 
 .method protected static getArrayValueObject(Ljava/lang/Object;I)Ljava/lang/Object;
     .locals 5
-    .param p0    # Ljava/lang/Object;
-    .param p1    # I
 
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -1795,8 +1768,6 @@
 
 .method public static getFieldObjectByFieldName(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
     .locals 12
-    .param p0    # Ljava/lang/Object;
-    .param p1    # Ljava/lang/String;
 
     const/4 v9, 0x0
 
@@ -1894,13 +1865,6 @@
 
 .method protected static getFieldObjectByObjectType(Ljava/lang/Object;ILjava/lang/String;ILjava/util/ArrayList;IIZ)V
     .locals 24
-    .param p0    # Ljava/lang/Object;
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2164,12 +2128,6 @@
 
 .method public static getFieldObjectByObjectType(Ljava/lang/Object;ILjava/lang/String;IIZ)[Ljava/lang/Object;
     .locals 8
-    .param p0    # Ljava/lang/Object;
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Z
 
     new-instance v4, Ljava/util/ArrayList;
 
@@ -2213,11 +2171,6 @@
 
 .method public static getFieldObjectByObjectType(Ljava/lang/Object;ILjava/lang/String;IZ)[Ljava/lang/Object;
     .locals 6
-    .param p0    # Ljava/lang/Object;
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Z
 
     const/4 v4, 0x1
 
@@ -2240,7 +2193,6 @@
 
 .method protected static getIndentString(I)Ljava/lang/String;
     .locals 4
-    .param p0    # I
 
     const-string v1, ""
 
@@ -2277,7 +2229,6 @@
 
 .method protected static isPrimitiveDataType(Ljava/lang/String;)Z
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     const/4 v0, 0x1
 

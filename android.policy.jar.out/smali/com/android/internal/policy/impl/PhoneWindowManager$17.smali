@@ -36,8 +36,6 @@
 # virtual methods
 .method public createInputEventReceiver(Landroid/view/InputChannel;Landroid/os/Looper;)Landroid/view/InputEventReceiver;
     .locals 2
-    .param p1    # Landroid/view/InputChannel;
-    .param p2    # Landroid/os/Looper;
 
     new-instance v0, Lcom/android/internal/policy/impl/PhoneWindowManager$HideNavInputEventReceiver;
 

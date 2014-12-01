@@ -397,10 +397,6 @@
 
 .method public constructor <init>(Lcom/sec/android/app/camera/Camera;ILcom/sec/android/glview/TwGLViewGroup;Lcom/sec/android/app/camera/MenuResourceDepot;)V
     .locals 9
-    .param p1    # Lcom/sec/android/app/camera/Camera;
-    .param p2    # I
-    .param p3    # Lcom/sec/android/glview/TwGLViewGroup;
-    .param p4    # Lcom/sec/android/app/camera/MenuResourceDepot;
 
     const/4 v6, 0x1
 
@@ -449,8 +445,6 @@
 
 .method private init(Lcom/sec/android/glview/TwGLViewGroup;I)V
     .locals 13
-    .param p1    # Lcom/sec/android/glview/TwGLViewGroup;
-    .param p2    # I
 
     const/high16 v12, 0x40000000
 
@@ -723,7 +717,6 @@
 # virtual methods
 .method protected calculateOrientationForPicture(I)I
     .locals 3
-    .param p1    # I
 
     move v0, p1
 
@@ -780,7 +773,6 @@
 
 .method public checkHeadPosition([B)Z
     .locals 1
-    .param p1    # [B
 
     const/4 v0, 0x0
 
@@ -810,8 +802,6 @@
 
 .method public deNormalize(FI)F
     .locals 2
-    .param p1    # F
-    .param p2    # I
 
     const/high16 v0, 0x447a0000
 
@@ -830,7 +820,6 @@
 
 .method public frontLCDWhitening(Z)V
     .locals 3
-    .param p1    # Z
 
     const/4 v2, 0x0
 
@@ -971,8 +960,6 @@
 
 .method public makeOffset(Landroid/graphics/Point;I)V
     .locals 6
-    .param p1    # Landroid/graphics/Point;
-    .param p2    # I
 
     iget-object v1, p0, Lcom/sec/android/app/camera/glwidget/TwGLSelfieMenu;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -1233,8 +1220,6 @@
 
 .method public onCameraSettingsChanged(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLSelfieMenu;->mActivityContext:Lcom/sec/android/app/camera/Camera;
 
@@ -1297,7 +1282,6 @@
 
 .method public onOrientationChanged(I)V
     .locals 4
-    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -1456,8 +1440,6 @@
 
 .method public onTouch(Lcom/sec/android/glview/TwGLView;Landroid/view/MotionEvent;)Z
     .locals 2
-    .param p1    # Lcom/sec/android/glview/TwGLView;
-    .param p2    # Landroid/view/MotionEvent;
 
     const/4 v1, 0x0
 
@@ -1471,7 +1453,6 @@
 
 .method public pushSelfieString(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -1807,7 +1788,6 @@
 
 .method public setContinuousCapturing(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/app/camera/glwidget/TwGLSelfieMenu;->isContinuousCapturing:Z
 
@@ -2063,7 +2043,6 @@
 
 .method public updateSelfieThumbnail([B)V
     .locals 6
-    .param p1    # [B
 
     const/4 v5, 0x0
 

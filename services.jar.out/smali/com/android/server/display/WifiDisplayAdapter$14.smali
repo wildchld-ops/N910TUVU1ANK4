@@ -36,7 +36,6 @@
 # virtual methods
 .method public onClientUpdated(Landroid/net/wifi/p2p/WifiP2pDevice;)V
     .locals 2
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pDevice;
 
     const-string v0, "WifiDisplayAdapter"
 
@@ -58,7 +57,6 @@
 
 .method public onDisplayChanged(Landroid/hardware/display/WifiDisplay;)V
     .locals 3
-    .param p1    # Landroid/hardware/display/WifiDisplay;
 
     iget-object v0, p0, Lcom/android/server/display/WifiDisplayAdapter$14;->this$0:Lcom/android/server/display/WifiDisplayAdapter;
 
@@ -156,12 +154,6 @@
 
 .method public onDisplayConnected(Landroid/hardware/display/WifiDisplay;Landroid/view/Surface;IIII)V
     .locals 9
-    .param p1    # Landroid/hardware/display/WifiDisplay;
-    .param p2    # Landroid/view/Surface;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     const/4 v8, 0x2
 
@@ -318,7 +310,6 @@
 
 .method public onDisplayConnecting(Landroid/hardware/display/WifiDisplay;)V
     .locals 3
-    .param p1    # Landroid/hardware/display/WifiDisplay;
 
     const/4 v2, 0x1
 
@@ -675,7 +666,6 @@
 
 .method public onDisplaySessionInfo(Landroid/hardware/display/WifiDisplaySessionInfo;)V
     .locals 2
-    .param p1    # Landroid/hardware/display/WifiDisplaySessionInfo;
 
     iget-object v0, p0, Lcom/android/server/display/WifiDisplayAdapter$14;->this$0:Lcom/android/server/display/WifiDisplayAdapter;
 
@@ -712,7 +702,6 @@
 
 .method public onFeatureStateChanged(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/display/WifiDisplayAdapter$14;->this$0:Lcom/android/server/display/WifiDisplayAdapter;
 
@@ -759,7 +748,6 @@
 
 .method public onP2pConnected(Ljava/net/InetAddress;)V
     .locals 2
-    .param p1    # Ljava/net/InetAddress;
 
     const-string v0, "WifiDisplayAdapter"
 
@@ -856,7 +844,6 @@
 
 .method public onScanResults([Landroid/hardware/display/WifiDisplay;)V
     .locals 7
-    .param p1    # [Landroid/hardware/display/WifiDisplay;
 
     const/4 v2, 0x1
 

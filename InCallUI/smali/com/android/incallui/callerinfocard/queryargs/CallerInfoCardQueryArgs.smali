@@ -22,8 +22,6 @@
 # direct methods
 .method public constructor <init>(ILjava/lang/Object;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Ljava/lang/Object;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -54,7 +52,6 @@
 
 .method protected getPeriod(J)Ljava/lang/String;
     .locals 6
-    .param p1    # J
 
     const-wide/16 v4, 0x3c
 

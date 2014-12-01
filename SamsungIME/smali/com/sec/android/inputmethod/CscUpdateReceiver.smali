@@ -46,7 +46,6 @@
 
 .method private getTagValueReturnBoolean(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "enable"
 
@@ -69,8 +68,6 @@
 
 .method private onUpdateSharedPreferences(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     const-string v0, "com.sec.android.inputmethod_preferences"
 
@@ -267,8 +264,6 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     const-string v0, "com.sec.android.inputmethod.UpdatePreferences"
 

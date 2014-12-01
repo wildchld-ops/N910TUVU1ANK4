@@ -26,11 +26,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;IIII)V
     .locals 7
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     const-string v2, "meet"
 
@@ -53,12 +48,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;IIII)V
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     const/4 v7, 0x0
 
@@ -83,13 +72,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;IIIILjava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/mms/model/Model;-><init>()V
 
@@ -170,7 +152,6 @@
 
 .method public setBackgroundColor(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/mms/model/RegionModel;->mBackgroundColor:Ljava/lang/String;
 
@@ -183,7 +164,6 @@
 
 .method public setFit(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/android/mms/model/RegionModel;->mFit:Ljava/lang/String;
 
@@ -196,7 +176,6 @@
 
 .method public setHeight(I)V
     .locals 1
-    .param p1    # I
 
     iput p1, p0, Lcom/android/mms/model/RegionModel;->mHeight:I
 
@@ -209,7 +188,6 @@
 
 .method public setLeft(I)V
     .locals 1
-    .param p1    # I
 
     iput p1, p0, Lcom/android/mms/model/RegionModel;->mLeft:I
 
@@ -222,7 +200,6 @@
 
 .method public setTop(I)V
     .locals 1
-    .param p1    # I
 
     iput p1, p0, Lcom/android/mms/model/RegionModel;->mTop:I
 
@@ -235,7 +212,6 @@
 
 .method public setWidth(I)V
     .locals 1
-    .param p1    # I
 
     iput p1, p0, Lcom/android/mms/model/RegionModel;->mWidth:I
 

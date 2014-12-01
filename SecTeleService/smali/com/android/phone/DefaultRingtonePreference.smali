@@ -71,7 +71,7 @@
 
     iget-object v1, p0, Lcom/android/phone/DefaultRingtonePreference;->mRingtoneKeytoneSettings:Lcom/android/phone/callsettings/RingtoneKeytoneSettings;
 
-    invoke-virtual {p0}, Landroid/preference/RingtonePreference;->getRingtoneType()I
+    invoke-virtual {p0}, Lcom/android/phone/DefaultRingtonePreference;->getRingtoneType()I
 
     move-result v2
 
@@ -98,7 +98,7 @@
 
     iget-object v1, p0, Lcom/android/phone/DefaultRingtonePreference;->mRingtoneKeytoneSettings:Lcom/android/phone/callsettings/RingtoneKeytoneSettings;
 
-    invoke-virtual {v1}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->finish()V
+    invoke-virtual {v1}, Lcom/android/phone/callsettings/RingtoneKeytoneSettings;->finish()V
 
     :cond_1
     invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
@@ -122,13 +122,13 @@
 
     invoke-virtual {p1, v0, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
-    invoke-virtual {p0}, Landroid/preference/RingtonePreference;->getRingtoneType()I
+    invoke-virtual {p0}, Lcom/android/phone/DefaultRingtonePreference;->getRingtoneType()I
 
     move-result v0
 
     if-eq v0, v2, :cond_0
 
-    invoke-virtual {p0}, Landroid/preference/RingtonePreference;->getRingtoneType()I
+    invoke-virtual {p0}, Lcom/android/phone/DefaultRingtonePreference;->getRingtoneType()I
 
     move-result v0
 
@@ -143,7 +143,7 @@
 
     const-string v0, "neutral_button_text"
 
-    invoke-virtual {p0}, Landroid/preference/Preference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/DefaultRingtonePreference;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -162,11 +162,11 @@
 .method protected onRestoreRingtone()Landroid/net/Uri;
     .locals 2
 
-    invoke-virtual {p0}, Landroid/preference/Preference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/DefaultRingtonePreference;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
-    invoke-virtual {p0}, Landroid/preference/RingtonePreference;->getRingtoneType()I
+    invoke-virtual {p0}, Lcom/android/phone/DefaultRingtonePreference;->getRingtoneType()I
 
     move-result v1
 
@@ -181,11 +181,11 @@
     .locals 9
     .param p1    # Landroid/net/Uri;
 
-    invoke-virtual {p0}, Landroid/preference/Preference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/DefaultRingtonePreference;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
-    invoke-virtual {p0}, Landroid/preference/RingtonePreference;->getRingtoneType()I
+    invoke-virtual {p0}, Lcom/android/phone/DefaultRingtonePreference;->getRingtoneType()I
 
     move-result v1
 
@@ -196,7 +196,7 @@
     const/4 v6, 0x0
 
     :try_start_0
-    invoke-virtual {p0}, Landroid/preference/Preference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/DefaultRingtonePreference;->getContext()Landroid/content/Context;
 
     move-result-object v0
 

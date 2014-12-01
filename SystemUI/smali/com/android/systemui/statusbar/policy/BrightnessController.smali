@@ -81,9 +81,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/widget/ImageView;Lcom/android/systemui/statusbar/policy/ToggleSlider;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/widget/ImageView;
-    .param p3    # Lcom/android/systemui/statusbar/policy/ToggleSlider;
 
     invoke-direct {p0, p1, p3}, Lcom/android/systemui/statusbar/policy/BrightnessController;-><init>(Landroid/content/Context;Lcom/android/systemui/statusbar/policy/ToggleSlider;)V
 
@@ -110,8 +107,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Lcom/android/systemui/statusbar/policy/ToggleSlider;)V
     .locals 19
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/systemui/statusbar/policy/ToggleSlider;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
@@ -727,7 +722,6 @@
 
 .method static synthetic access$000(Lcom/android/systemui/statusbar/policy/BrightnessController;)V
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/policy/BrightnessController;
 
     invoke-direct {p0}, Lcom/android/systemui/statusbar/policy/BrightnessController;->resetObservers()V
 
@@ -736,7 +730,6 @@
 
 .method static synthetic access$100(Lcom/android/systemui/statusbar/policy/BrightnessController;)Z
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/policy/BrightnessController;
 
     iget-boolean v0, p0, Lcom/android/systemui/statusbar/policy/BrightnessController;->mAllowSettingsChanges:Z
 
@@ -745,7 +738,6 @@
 
 .method static synthetic access$200(Lcom/android/systemui/statusbar/policy/BrightnessController;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/policy/BrightnessController;
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/BrightnessController;->mContext:Landroid/content/Context;
 
@@ -754,7 +746,6 @@
 
 .method static synthetic access$300(Lcom/android/systemui/statusbar/policy/BrightnessController;)Lcom/android/systemui/statusbar/policy/CurrentUserTracker;
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/policy/BrightnessController;
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/BrightnessController;->mUserTracker:Lcom/android/systemui/statusbar/policy/CurrentUserTracker;
 
@@ -763,7 +754,6 @@
 
 .method static synthetic access$400(Lcom/android/systemui/statusbar/policy/BrightnessController;)Lcom/android/systemui/statusbar/policy/ToggleSlider;
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/policy/BrightnessController;
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/BrightnessController;->mControl:Lcom/android/systemui/statusbar/policy/ToggleSlider;
 
@@ -772,7 +762,6 @@
 
 .method static synthetic access$500(Lcom/android/systemui/statusbar/policy/BrightnessController;)I
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/policy/BrightnessController;
 
     iget v0, p0, Lcom/android/systemui/statusbar/policy/BrightnessController;->mMinimumBacklight:I
 
@@ -781,7 +770,6 @@
 
 .method static synthetic access$600(Lcom/android/systemui/statusbar/policy/BrightnessController;)I
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/policy/BrightnessController;
 
     iget v0, p0, Lcom/android/systemui/statusbar/policy/BrightnessController;->mMaximumBacklight:I
 
@@ -790,7 +778,6 @@
 
 .method static synthetic access$700(Lcom/android/systemui/statusbar/policy/BrightnessController;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/policy/BrightnessController;
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/BrightnessController;->mContentResolver:Landroid/content/ContentResolver;
 
@@ -799,7 +786,6 @@
 
 .method static synthetic access$800(Lcom/android/systemui/statusbar/policy/BrightnessController;)Landroid/app/enterprise/RestrictionPolicy;
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/policy/BrightnessController;
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/BrightnessController;->mRestrictionPolicy:Landroid/app/enterprise/RestrictionPolicy;
 
@@ -808,7 +794,6 @@
 
 .method static synthetic access$900(Lcom/android/systemui/statusbar/policy/BrightnessController;)V
     .locals 0
-    .param p0    # Lcom/android/systemui/statusbar/policy/BrightnessController;
 
     invoke-direct {p0}, Lcom/android/systemui/statusbar/policy/BrightnessController;->setBrightnessEnabledState()V
 
@@ -961,7 +946,6 @@
 
 .method private setBrightness(I)V
     .locals 1
-    .param p1    # I
 
     iget-boolean v0, p0, Lcom/android/systemui/statusbar/policy/BrightnessController;->mAllowSettingsChanges:Z
 
@@ -1063,7 +1047,6 @@
 
 .method private setMode(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/BrightnessController;->mContext:Landroid/content/Context;
 
@@ -1088,7 +1071,6 @@
 # virtual methods
 .method public addStateChangedCallback(Lcom/android/systemui/statusbar/policy/BrightnessController$BrightnessStateChangeCallback;)V
     .locals 1
-    .param p1    # Lcom/android/systemui/statusbar/policy/BrightnessController$BrightnessStateChangeCallback;
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/BrightnessController;->mChangeCallbacks:Ljava/util/ArrayList;
 
@@ -1099,10 +1081,6 @@
 
 .method public onChanged(Lcom/android/systemui/statusbar/policy/ToggleSlider;ZZI)V
     .locals 4
-    .param p1    # Lcom/android/systemui/statusbar/policy/ToggleSlider;
-    .param p2    # Z
-    .param p3    # Z
-    .param p4    # I
 
     iget-boolean v3, p0, Lcom/android/systemui/statusbar/policy/BrightnessController;->mAllowSettingsChanges:Z
 
@@ -1183,7 +1161,6 @@
 
 .method public onInit(Lcom/android/systemui/statusbar/policy/ToggleSlider;)V
     .locals 0
-    .param p1    # Lcom/android/systemui/statusbar/policy/ToggleSlider;
 
     return-void
 .end method

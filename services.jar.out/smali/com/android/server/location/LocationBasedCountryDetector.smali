@@ -42,7 +42,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Lcom/android/server/location/CountryDetectorBase;-><init>(Landroid/content/Context;)V
 
@@ -61,8 +60,6 @@
 
 .method static synthetic access$000(Lcom/android/server/location/LocationBasedCountryDetector;Landroid/location/Location;)V
     .locals 0
-    .param p0    # Lcom/android/server/location/LocationBasedCountryDetector;
-    .param p1    # Landroid/location/Location;
 
     invoke-direct {p0, p1}, Lcom/android/server/location/LocationBasedCountryDetector;->queryCountryCode(Landroid/location/Location;)V
 
@@ -71,7 +68,6 @@
 
 .method private declared-synchronized queryCountryCode(Landroid/location/Location;)V
     .locals 2
-    .param p1    # Landroid/location/Location;
 
     monitor-enter p0
 
@@ -242,7 +238,6 @@
 
 .method protected getCountryFromLocation(Landroid/location/Location;)Ljava/lang/String;
     .locals 9
-    .param p1    # Landroid/location/Location;
 
     const/4 v7, 0x0
 
@@ -407,7 +402,6 @@
 
 .method protected isAcceptableProvider(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "passive"
 
@@ -420,8 +414,6 @@
 
 .method protected registerListener(Ljava/lang/String;Landroid/location/LocationListener;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/location/LocationListener;
 
     iget-object v0, p0, Lcom/android/server/location/LocationBasedCountryDetector;->mLocationManager:Landroid/location/LocationManager;
 
@@ -509,7 +501,6 @@
 
 .method protected unregisterListener(Landroid/location/LocationListener;)V
     .locals 1
-    .param p1    # Landroid/location/LocationListener;
 
     iget-object v0, p0, Lcom/android/server/location/LocationBasedCountryDetector;->mLocationManager:Landroid/location/LocationManager;
 

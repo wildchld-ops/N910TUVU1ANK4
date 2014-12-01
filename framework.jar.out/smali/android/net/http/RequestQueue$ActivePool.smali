@@ -34,7 +34,6 @@
 # direct methods
 .method constructor <init>(Landroid/net/http/RequestQueue;I)V
     .locals 4
-    .param p2    # I
 
     iput-object p1, p0, Landroid/net/http/RequestQueue$ActivePool;->this$0:Landroid/net/http/RequestQueue;
 
@@ -84,7 +83,6 @@
 
 .method static synthetic access$408(Landroid/net/http/RequestQueue$ActivePool;)I
     .locals 2
-    .param p0    # Landroid/net/http/RequestQueue$ActivePool;
 
     iget v0, p0, Landroid/net/http/RequestQueue$ActivePool;->mTotalRequest:I
 
@@ -134,8 +132,6 @@
 
 .method public getConnection(Landroid/content/Context;Lorg/apache/http/HttpHost;)Landroid/net/http/Connection;
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lorg/apache/http/HttpHost;
 
     iget-object v1, p0, Landroid/net/http/RequestQueue$ActivePool;->this$0:Landroid/net/http/RequestQueue;
 
@@ -197,7 +193,6 @@
 
 .method getThread(Lorg/apache/http/HttpHost;)Landroid/net/http/ConnectionThread;
     .locals 5
-    .param p1    # Lorg/apache/http/HttpHost;
 
     iget-object v4, p0, Landroid/net/http/RequestQueue$ActivePool;->this$0:Landroid/net/http/RequestQueue;
 
@@ -310,7 +305,6 @@
 
 .method public recycleConnection(Landroid/net/http/Connection;)Z
     .locals 2
-    .param p1    # Landroid/net/http/Connection;
 
     iget-object v0, p0, Landroid/net/http/RequestQueue$ActivePool;->mIdleCache:Landroid/net/http/IdleCache;
 

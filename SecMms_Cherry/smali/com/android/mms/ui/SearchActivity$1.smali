@@ -36,7 +36,6 @@
 # virtual methods
 .method public onUpdate(Lcom/android/mms/data/Contact;)V
     .locals 3
-    .param p1    # Lcom/android/mms/data/Contact;
 
     const-string v1, "Mms/SearchActivity"
 

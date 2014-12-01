@@ -135,7 +135,6 @@
 
 .method private ToggleAllCheck(Z)V
     .locals 4
-    .param p1    # Z
 
     sget-object v2, Lcom/android/settings/dormantmode/DormantModeGroupListDel;->mlistView:Landroid/widget/ListView;
 
@@ -201,7 +200,6 @@
 
 .method static synthetic access$102(Landroid/view/MenuItem;)Landroid/view/MenuItem;
     .locals 0
-    .param p0    # Landroid/view/MenuItem;
 
     sput-object p0, Lcom/android/settings/dormantmode/DormantModeGroupListDel;->mItem_trash:Landroid/view/MenuItem;
 
@@ -218,7 +216,6 @@
 
 .method static synthetic access$302(Landroid/view/MenuItem;)Landroid/view/MenuItem;
     .locals 0
-    .param p0    # Landroid/view/MenuItem;
 
     sput-object p0, Lcom/android/settings/dormantmode/DormantModeGroupListDel;->mItem_cancel:Landroid/view/MenuItem;
 
@@ -227,7 +224,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/dormantmode/DormantModeGroupListDel;)Landroid/view/ActionMode;
     .locals 1
-    .param p0    # Lcom/android/settings/dormantmode/DormantModeGroupListDel;
 
     iget-object v0, p0, Lcom/android/settings/dormantmode/DormantModeGroupListDel;->mActionMode:Landroid/view/ActionMode;
 
@@ -236,8 +232,6 @@
 
 .method static synthetic access$402(Lcom/android/settings/dormantmode/DormantModeGroupListDel;Landroid/view/ActionMode;)Landroid/view/ActionMode;
     .locals 0
-    .param p0    # Lcom/android/settings/dormantmode/DormantModeGroupListDel;
-    .param p1    # Landroid/view/ActionMode;
 
     iput-object p1, p0, Lcom/android/settings/dormantmode/DormantModeGroupListDel;->mActionMode:Landroid/view/ActionMode;
 
@@ -246,8 +240,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/dormantmode/DormantModeGroupListDel;Z)V
     .locals 0
-    .param p0    # Lcom/android/settings/dormantmode/DormantModeGroupListDel;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/settings/dormantmode/DormantModeGroupListDel;->ToggleAllCheck(Z)V
 
@@ -392,8 +384,6 @@
 
 .method public static newInstance(ILjava/lang/Boolean;)Lcom/android/settings/dormantmode/DormantModeGroupListDel;
     .locals 4
-    .param p0    # I
-    .param p1    # Ljava/lang/Boolean;
 
     new-instance v1, Lcom/android/settings/dormantmode/DormantModeGroupListDel;
 
@@ -422,7 +412,6 @@
 
 .method public static newInstance(Ljava/util/ArrayList;Ljava/lang/Boolean;)Lcom/android/settings/dormantmode/DormantModeGroupListDel;
     .locals 4
-    .param p1    # Ljava/lang/Boolean;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -653,7 +642,6 @@
 
 .method public convertContactGroupTitle(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -964,7 +952,6 @@
 
 .method public getContactString(Ljava/lang/String;)Ljava/lang/String;
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Lcom/android/settings/Utils;->isJapanDCMModel()Z
 
@@ -1175,7 +1162,6 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 10
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v3, 0x0
 
@@ -1417,7 +1403,6 @@
 
 .method public onAttach(Landroid/app/Activity;)V
     .locals 1
-    .param p1    # Landroid/app/Activity;
 
     invoke-static {}, Lcom/android/settings/Utils;->isSupportMenuTreeForK()Z
 
@@ -1457,7 +1442,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     sget-object v0, Lcom/android/settings/dormantmode/DormantModeGroupListDel;->mSelectAllCheck:Lcom/sec/android/touchwiz/widget/TwCheckBox;
 
@@ -1476,7 +1460,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 1
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/app/ListFragment;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
@@ -1491,7 +1474,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v2, 0x0
 
@@ -1567,8 +1549,6 @@
 
 .method public onCreateLoader(ILandroid/os/Bundle;)Landroid/content/Loader;
     .locals 7
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -1608,8 +1588,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
     .locals 6
-    .param p1    # Landroid/view/Menu;
-    .param p2    # Landroid/view/MenuInflater;
 
     const v5, 0x7f0901ba
 
@@ -1694,9 +1672,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 3
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const/4 v2, 0x0
 
@@ -1762,10 +1737,6 @@
 
 .method public onListItemClick(Landroid/widget/ListView;Landroid/view/View;IJ)V
     .locals 2
-    .param p1    # Landroid/widget/ListView;
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
 
     sget-object v0, Lcom/android/settings/dormantmode/DormantModeGroupListDel;->mAdapter_delete_group:Landroid/widget/SimpleCursorAdapter;
 
@@ -1832,7 +1803,6 @@
 
 .method public onLoadFinished(Landroid/content/Loader;Landroid/database/Cursor;)V
     .locals 3
-    .param p2    # Landroid/database/Cursor;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1933,8 +1903,6 @@
 
 .method public bridge synthetic onLoadFinished(Landroid/content/Loader;Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Landroid/content/Loader;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p2, Landroid/database/Cursor;
 
@@ -1966,7 +1934,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 2
-    .param p1    # Landroid/view/MenuItem;
 
     const/4 v0, 0x1
 
@@ -2017,7 +1984,6 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)V
     .locals 0
-    .param p1    # Landroid/view/Menu;
 
     invoke-super {p0, p1}, Landroid/app/ListFragment;->onPrepareOptionsMenu(Landroid/view/Menu;)V
 

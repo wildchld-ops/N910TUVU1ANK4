@@ -12,8 +12,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;I)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Landroid/widget/RemoteViews;-><init>(Ljava/lang/String;I)V
 
@@ -658,10 +656,6 @@
 
 .method public updateInCallQuickPanel(ILandroid/graphics/Bitmap;Ljava/lang/String;J)V
     .locals 18
-    .param p1    # I
-    .param p2    # Landroid/graphics/Bitmap;
-    .param p3    # Ljava/lang/String;
-    .param p4    # J
 
     const-string v2, "InCallQuickPanel"
 

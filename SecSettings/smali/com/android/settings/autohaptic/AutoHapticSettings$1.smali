@@ -46,8 +46,6 @@
 # virtual methods
 .method public compare(Lcom/android/settings/autohaptic/AutoHapticSettings$IncludedApps;Lcom/android/settings/autohaptic/AutoHapticSettings$IncludedApps;)I
     .locals 2
-    .param p1    # Lcom/android/settings/autohaptic/AutoHapticSettings$IncludedApps;
-    .param p2    # Lcom/android/settings/autohaptic/AutoHapticSettings$IncludedApps;
 
     iget-object v0, p1, Lcom/android/settings/autohaptic/AutoHapticSettings$IncludedApps;->mName:Ljava/lang/String;
 
@@ -62,8 +60,6 @@
 
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p1, Lcom/android/settings/autohaptic/AutoHapticSettings$IncludedApps;
 

@@ -31,7 +31,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Landroid/print/IPrintManager$Stub;-><init>()V
 
@@ -62,7 +61,6 @@
 
 .method static synthetic access$000(Lcom/android/server/print/PrintManagerService;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Lcom/android/server/print/PrintManagerService;
 
     iget-object v0, p0, Lcom/android/server/print/PrintManagerService;->mLock:Ljava/lang/Object;
 
@@ -71,7 +69,6 @@
 
 .method static synthetic access$100(Lcom/android/server/print/PrintManagerService;)Lcom/android/server/print/UserState;
     .locals 1
-    .param p0    # Lcom/android/server/print/PrintManagerService;
 
     invoke-direct {p0}, Lcom/android/server/print/PrintManagerService;->getCurrentUserStateLocked()Lcom/android/server/print/UserState;
 
@@ -82,8 +79,6 @@
 
 .method static synthetic access$200(Lcom/android/server/print/PrintManagerService;I)Lcom/android/server/print/UserState;
     .locals 1
-    .param p0    # Lcom/android/server/print/PrintManagerService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/print/PrintManagerService;->getOrCreateUserStateLocked(I)Lcom/android/server/print/UserState;
 
@@ -94,7 +89,6 @@
 
 .method static synthetic access$300(Lcom/android/server/print/PrintManagerService;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/server/print/PrintManagerService;
 
     iget-object v0, p0, Lcom/android/server/print/PrintManagerService;->mContext:Landroid/content/Context;
 
@@ -103,10 +97,6 @@
 
 .method static synthetic access$400(Lcom/android/server/print/PrintManagerService;Landroid/content/ComponentName;Ljava/lang/String;I)V
     .locals 0
-    .param p0    # Lcom/android/server/print/PrintManagerService;
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/server/print/PrintManagerService;->showEnableInstalledPrintServiceNotification(Landroid/content/ComponentName;Ljava/lang/String;I)V
 
@@ -115,8 +105,6 @@
 
 .method static synthetic access$500(Lcom/android/server/print/PrintManagerService;I)V
     .locals 0
-    .param p0    # Lcom/android/server/print/PrintManagerService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/print/PrintManagerService;->switchUser(I)V
 
@@ -125,8 +113,6 @@
 
 .method static synthetic access$600(Lcom/android/server/print/PrintManagerService;I)V
     .locals 0
-    .param p0    # Lcom/android/server/print/PrintManagerService;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/print/PrintManagerService;->removeUser(I)V
 
@@ -147,7 +133,6 @@
 
 .method private getOrCreateUserStateLocked(I)Lcom/android/server/print/UserState;
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/server/print/PrintManagerService;->mUserStates:Landroid/util/SparseArray;
 
@@ -263,7 +248,6 @@
 
 .method private removeUser(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v2, p0, Lcom/android/server/print/PrintManagerService;->mLock:Ljava/lang/Object;
 
@@ -303,7 +287,6 @@
 
 .method private resolveCallingAppEnforcingPermissions(I)I
     .locals 5
-    .param p1    # I
 
     invoke-static {}, Landroid/os/Binder;->getCallingUid()I
 
@@ -388,7 +371,6 @@
 
 .method private resolveCallingPackageNameEnforcingSecurity(Ljava/lang/String;)Ljava/lang/String;
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -446,7 +428,6 @@
 
 .method private resolveCallingUserEnforcingPermissions(I)I
     .locals 5
-    .param p1    # I
 
     const/4 v4, -0x3
 
@@ -573,9 +554,6 @@
 
 .method private showEnableInstalledPrintServiceNotification(Landroid/content/ComponentName;Ljava/lang/String;I)V
     .locals 12
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     const/4 v11, 0x1
 
@@ -724,7 +702,6 @@
 
 .method private switchUser(I)V
     .locals 5
-    .param p1    # I
 
     iget-object v2, p0, Lcom/android/server/print/PrintManagerService;->mLock:Ljava/lang/Object;
 
@@ -824,9 +801,6 @@
 # virtual methods
 .method public addPrintJobStateChangeListener(Landroid/print/IPrintJobStateChangeListener;II)V
     .locals 7
-    .param p1    # Landroid/print/IPrintJobStateChangeListener;
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -887,9 +861,6 @@
 
 .method public cancelPrintJob(Landroid/print/PrintJobId;II)V
     .locals 7
-    .param p1    # Landroid/print/PrintJobId;
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0, p2}, Lcom/android/server/print/PrintManagerService;->resolveCallingAppEnforcingPermissions(I)I
 
@@ -945,8 +916,6 @@
 
 .method public createPrinterDiscoverySession(Landroid/print/IPrinterDiscoveryObserver;I)V
     .locals 6
-    .param p1    # Landroid/print/IPrinterDiscoveryObserver;
-    .param p2    # I
 
     invoke-direct {p0, p2}, Lcom/android/server/print/PrintManagerService;->resolveCallingUserEnforcingPermissions(I)I
 
@@ -998,8 +967,6 @@
 
 .method public destroyPrinterDiscoverySession(Landroid/print/IPrinterDiscoveryObserver;I)V
     .locals 6
-    .param p1    # Landroid/print/IPrinterDiscoveryObserver;
-    .param p2    # I
 
     invoke-direct {p0, p2}, Lcom/android/server/print/PrintManagerService;->resolveCallingUserEnforcingPermissions(I)I
 
@@ -1051,9 +1018,6 @@
 
 .method public dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 7
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     iget-object v5, p0, Lcom/android/server/print/PrintManagerService;->mContext:Landroid/content/Context;
 
@@ -1184,7 +1148,6 @@
 
 .method public getEnabledPrintServices(I)Ljava/util/List;
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -1247,7 +1210,6 @@
 
 .method public getInstalledPrintServices(I)Ljava/util/List;
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -1310,9 +1272,6 @@
 
 .method public getPrintJobInfo(Landroid/print/PrintJobId;II)Landroid/print/PrintJobInfo;
     .locals 7
-    .param p1    # Landroid/print/PrintJobId;
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0, p2}, Lcom/android/server/print/PrintManagerService;->resolveCallingAppEnforcingPermissions(I)I
 
@@ -1370,8 +1329,6 @@
 
 .method public getPrintJobInfos(II)Ljava/util/List;
     .locals 7
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II)",
@@ -1438,12 +1395,6 @@
 
 .method public print(Ljava/lang/String;Landroid/print/IPrintDocumentAdapter;Landroid/print/PrintAttributes;Ljava/lang/String;II)Landroid/os/Bundle;
     .locals 9
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/print/IPrintDocumentAdapter;
-    .param p3    # Landroid/print/PrintAttributes;
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
-    .param p6    # I
 
     invoke-direct {p0, p5}, Lcom/android/server/print/PrintManagerService;->resolveCallingAppEnforcingPermissions(I)I
 
@@ -1511,8 +1462,6 @@
 
 .method public removePrintJobStateChangeListener(Landroid/print/IPrintJobStateChangeListener;I)V
     .locals 6
-    .param p1    # Landroid/print/IPrintJobStateChangeListener;
-    .param p2    # I
 
     invoke-direct {p0, p2}, Lcom/android/server/print/PrintManagerService;->resolveCallingUserEnforcingPermissions(I)I
 
@@ -1564,9 +1513,6 @@
 
 .method public restartPrintJob(Landroid/print/PrintJobId;II)V
     .locals 7
-    .param p1    # Landroid/print/PrintJobId;
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0, p2}, Lcom/android/server/print/PrintManagerService;->resolveCallingAppEnforcingPermissions(I)I
 
@@ -1622,8 +1568,6 @@
 
 .method public startPrinterDiscovery(Landroid/print/IPrinterDiscoveryObserver;Ljava/util/List;I)V
     .locals 6
-    .param p1    # Landroid/print/IPrinterDiscoveryObserver;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1685,8 +1629,6 @@
 
 .method public startPrinterStateTracking(Landroid/print/PrinterId;I)V
     .locals 6
-    .param p1    # Landroid/print/PrinterId;
-    .param p2    # I
 
     invoke-direct {p0, p2}, Lcom/android/server/print/PrintManagerService;->resolveCallingUserEnforcingPermissions(I)I
 
@@ -1738,8 +1680,6 @@
 
 .method public stopPrinterDiscovery(Landroid/print/IPrinterDiscoveryObserver;I)V
     .locals 6
-    .param p1    # Landroid/print/IPrinterDiscoveryObserver;
-    .param p2    # I
 
     invoke-direct {p0, p2}, Lcom/android/server/print/PrintManagerService;->resolveCallingUserEnforcingPermissions(I)I
 
@@ -1791,8 +1731,6 @@
 
 .method public stopPrinterStateTracking(Landroid/print/PrinterId;I)V
     .locals 6
-    .param p1    # Landroid/print/PrinterId;
-    .param p2    # I
 
     invoke-direct {p0, p2}, Lcom/android/server/print/PrintManagerService;->resolveCallingUserEnforcingPermissions(I)I
 
@@ -1860,7 +1798,6 @@
 
 .method public validatePrinters(Ljava/util/List;I)V
     .locals 6
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

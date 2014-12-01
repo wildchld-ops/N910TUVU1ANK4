@@ -16,7 +16,6 @@
 # virtual methods
 .method protected onFinishInflate(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     invoke-super {p0, p1}, Lcom/android/incallui/InCallButtonVideoFragment;->onFinishInflate(Landroid/view/View;)V
 

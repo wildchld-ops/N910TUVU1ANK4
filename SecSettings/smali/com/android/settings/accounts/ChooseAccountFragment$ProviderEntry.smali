@@ -36,8 +36,6 @@
 # direct methods
 .method constructor <init>(Ljava/lang/CharSequence;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -50,7 +48,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/accounts/ChooseAccountFragment$ProviderEntry;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/settings/accounts/ChooseAccountFragment$ProviderEntry;
 
     iget-object v0, p0, Lcom/android/settings/accounts/ChooseAccountFragment$ProviderEntry;->type:Ljava/lang/String;
 
@@ -59,7 +56,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/accounts/ChooseAccountFragment$ProviderEntry;)Ljava/lang/CharSequence;
     .locals 1
-    .param p0    # Lcom/android/settings/accounts/ChooseAccountFragment$ProviderEntry;
 
     iget-object v0, p0, Lcom/android/settings/accounts/ChooseAccountFragment$ProviderEntry;->name:Ljava/lang/CharSequence;
 
@@ -70,7 +66,6 @@
 # virtual methods
 .method public compareTo(Lcom/android/settings/accounts/ChooseAccountFragment$ProviderEntry;)I
     .locals 4
-    .param p1    # Lcom/android/settings/accounts/ChooseAccountFragment$ProviderEntry;
 
     const/4 v1, 0x1
 
@@ -132,7 +127,6 @@
 
 .method public bridge synthetic compareTo(Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/android/settings/accounts/ChooseAccountFragment$ProviderEntry;
 

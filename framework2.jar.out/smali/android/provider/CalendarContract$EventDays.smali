@@ -48,10 +48,6 @@
 
 .method public static final query(Landroid/content/ContentResolver;II[Ljava/lang/String;)Landroid/database/Cursor;
     .locals 8
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [Ljava/lang/String;
 
     const/4 v4, 0x0
 

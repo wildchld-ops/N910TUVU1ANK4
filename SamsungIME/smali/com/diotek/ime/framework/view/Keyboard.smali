@@ -136,8 +136,6 @@
 
 .method public constructor <init>(Landroid/content/Context;I)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -148,9 +146,6 @@
 
 .method public constructor <init>(Landroid/content/Context;II)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v5, 0x0
 
@@ -249,11 +244,6 @@
 
 .method public constructor <init>(Landroid/content/Context;IIII)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     const/4 v4, 0x0
 
@@ -340,11 +330,6 @@
 
 .method public constructor <init>(Landroid/content/Context;ILjava/lang/CharSequence;II)V
     .locals 10
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Ljava/lang/CharSequence;
-    .param p4    # I
-    .param p5    # I
 
     invoke-direct {p0, p1, p2}, Lcom/diotek/ime/framework/view/Keyboard;-><init>(Landroid/content/Context;I)V
 
@@ -530,7 +515,6 @@
 
 .method static synthetic access$000(Lcom/diotek/ime/framework/view/Keyboard;)I
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/view/Keyboard;
 
     iget v0, p0, Lcom/diotek/ime/framework/view/Keyboard;->mDisplayWidth:I
 
@@ -539,7 +523,6 @@
 
 .method static synthetic access$100(Lcom/diotek/ime/framework/view/Keyboard;)I
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/view/Keyboard;
 
     iget v0, p0, Lcom/diotek/ime/framework/view/Keyboard;->mDefaultWidth:I
 
@@ -548,7 +531,6 @@
 
 .method static synthetic access$200(Lcom/diotek/ime/framework/view/Keyboard;)I
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/view/Keyboard;
 
     iget v0, p0, Lcom/diotek/ime/framework/view/Keyboard;->mDisplayHeight:I
 
@@ -557,7 +539,6 @@
 
 .method static synthetic access$300(Lcom/diotek/ime/framework/view/Keyboard;)I
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/view/Keyboard;
 
     iget v0, p0, Lcom/diotek/ime/framework/view/Keyboard;->mDefaultHeight:I
 
@@ -566,7 +547,6 @@
 
 .method static synthetic access$400(Lcom/diotek/ime/framework/view/Keyboard;)I
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/view/Keyboard;
 
     iget v0, p0, Lcom/diotek/ime/framework/view/Keyboard;->mDefaultHorizontalGap:I
 
@@ -575,7 +555,6 @@
 
 .method static synthetic access$500(Lcom/diotek/ime/framework/view/Keyboard;)I
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/view/Keyboard;
 
     iget v0, p0, Lcom/diotek/ime/framework/view/Keyboard;->mDefaultVerticalGap:I
 
@@ -772,10 +751,6 @@
 
 .method static getDimensionOrFraction(Landroid/content/res/TypedArray;III)I
     .locals 3
-    .param p0    # Landroid/content/res/TypedArray;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     invoke-virtual {p0, p1}, Landroid/content/res/TypedArray;->peekValue(I)Landroid/util/TypedValue;
 
@@ -822,8 +797,6 @@
 
 .method private loadKeyboard(Landroid/content/Context;Landroid/content/res/XmlResourceParser;)V
     .locals 19
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/res/XmlResourceParser;
 
     const/4 v11, 0x0
 
@@ -1164,8 +1137,6 @@
 
 .method private parseKeyboardAttributes(Landroid/content/res/Resources;Landroid/content/res/XmlResourceParser;)V
     .locals 5
-    .param p1    # Landroid/content/res/Resources;
-    .param p2    # Landroid/content/res/XmlResourceParser;
 
     const/4 v4, 0x0
 
@@ -1250,7 +1221,6 @@
 
 .method private skipToEndOfRow(Landroid/content/res/XmlResourceParser;)V
     .locals 3
-    .param p1    # Landroid/content/res/XmlResourceParser;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -1291,11 +1261,6 @@
 # virtual methods
 .method protected createKeyFromXml(Landroid/content/res/Resources;Lcom/diotek/ime/framework/view/Keyboard$Row;IILandroid/content/res/XmlResourceParser;)Lcom/diotek/ime/framework/view/Keyboard$Key;
     .locals 6
-    .param p1    # Landroid/content/res/Resources;
-    .param p2    # Lcom/diotek/ime/framework/view/Keyboard$Row;
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Landroid/content/res/XmlResourceParser;
 
     new-instance v0, Lcom/diotek/ime/framework/view/Keyboard$Key;
 
@@ -1316,8 +1281,6 @@
 
 .method protected createRowFromXml(Landroid/content/res/Resources;Landroid/content/res/XmlResourceParser;)Lcom/diotek/ime/framework/view/Keyboard$Row;
     .locals 1
-    .param p1    # Landroid/content/res/Resources;
-    .param p2    # Landroid/content/res/XmlResourceParser;
 
     new-instance v0, Lcom/diotek/ime/framework/view/Keyboard$Row;
 
@@ -1402,8 +1365,6 @@
 
 .method public getNearestKeys(II)[I
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     iget-object v1, p0, Lcom/diotek/ime/framework/view/Keyboard;->mGridNeighbors:[[I
 
@@ -1497,8 +1458,6 @@
 
 .method final resize(II)V
     .locals 12
-    .param p1    # I
-    .param p2    # I
 
     iget-object v10, p0, Lcom/diotek/ime/framework/view/Keyboard;->rows:Ljava/util/ArrayList;
 
@@ -1622,7 +1581,6 @@
 
 .method protected setHorizontalGap(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/diotek/ime/framework/view/Keyboard;->mDefaultHorizontalGap:I
 
@@ -1631,7 +1589,6 @@
 
 .method protected setKeyHeight(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/diotek/ime/framework/view/Keyboard;->mDefaultHeight:I
 
@@ -1640,7 +1597,6 @@
 
 .method protected setKeyWidth(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/diotek/ime/framework/view/Keyboard;->mDefaultWidth:I
 
@@ -1649,7 +1605,6 @@
 
 .method public setShifted(Z)Z
     .locals 5
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/Keyboard;->mShiftKeys:[Lcom/diotek/ime/framework/view/Keyboard$Key;
 
@@ -1691,7 +1646,6 @@
 
 .method protected setTotalWidth(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/diotek/ime/framework/view/Keyboard;->mTotalWidth:I
 
@@ -1700,7 +1654,6 @@
 
 .method protected setVerticalGap(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/diotek/ime/framework/view/Keyboard;->mDefaultVerticalGap:I
 

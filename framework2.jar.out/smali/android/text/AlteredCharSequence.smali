@@ -29,10 +29,6 @@
 # direct methods
 .method private constructor <init>(Ljava/lang/CharSequence;[CII)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # [C
-    .param p3    # I
-    .param p4    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -49,11 +45,6 @@
 
 .method synthetic constructor <init>(Ljava/lang/CharSequence;[CIILandroid/text/AlteredCharSequence$1;)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # [C
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Landroid/text/AlteredCharSequence$1;
 
     invoke-direct {p0, p1, p2, p3, p4}, Landroid/text/AlteredCharSequence;-><init>(Ljava/lang/CharSequence;[CII)V
 
@@ -62,10 +53,6 @@
 
 .method public static make(Ljava/lang/CharSequence;[CII)Landroid/text/AlteredCharSequence;
     .locals 6
-    .param p0    # Ljava/lang/CharSequence;
-    .param p1    # [C
-    .param p2    # I
-    .param p3    # I
 
     instance-of v0, p0, Landroid/text/Spanned;
 
@@ -100,7 +87,6 @@
 # virtual methods
 .method public charAt(I)C
     .locals 2
-    .param p1    # I
 
     iget v0, p0, Landroid/text/AlteredCharSequence;->mStart:I
 
@@ -133,10 +119,6 @@
 
 .method public getChars(II[CI)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [C
-    .param p4    # I
 
     iget-object v0, p0, Landroid/text/AlteredCharSequence;->mSource:Ljava/lang/CharSequence;
 
@@ -184,8 +166,6 @@
 
 .method public subSequence(II)Ljava/lang/CharSequence;
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Landroid/text/AlteredCharSequence;->mSource:Ljava/lang/CharSequence;
 
@@ -232,9 +212,6 @@
 
 .method update([CII)V
     .locals 0
-    .param p1    # [C
-    .param p2    # I
-    .param p3    # I
 
     iput-object p1, p0, Landroid/text/AlteredCharSequence;->mChars:[C
 

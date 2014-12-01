@@ -30,8 +30,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/preference/PreferenceManager;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/preference/PreferenceManager;
 
     invoke-direct {p0, p1}, Landroid/preference/GenericInflater;-><init>(Landroid/content/Context;)V
 
@@ -42,8 +40,6 @@
 
 .method constructor <init>(Landroid/preference/GenericInflater;Landroid/preference/PreferenceManager;Landroid/content/Context;)V
     .locals 0
-    .param p2    # Landroid/preference/PreferenceManager;
-    .param p3    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -67,7 +63,6 @@
 
 .method private init(Landroid/preference/PreferenceManager;)V
     .locals 1
-    .param p1    # Landroid/preference/PreferenceManager;
 
     iput-object p1, p0, Landroid/preference/PreferenceInflater;->mPreferenceManager:Landroid/preference/PreferenceManager;
 
@@ -82,7 +77,6 @@
 # virtual methods
 .method public cloneInContext(Landroid/content/Context;)Landroid/preference/GenericInflater;
     .locals 2
-    .param p1    # Landroid/content/Context;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -107,9 +101,6 @@
 
 .method protected onCreateCustomFromTag(Lorg/xmlpull/v1/XmlPullParser;Landroid/preference/Preference;Landroid/util/AttributeSet;)Z
     .locals 8
-    .param p1    # Lorg/xmlpull/v1/XmlPullParser;
-    .param p2    # Landroid/preference/Preference;
-    .param p3    # Landroid/util/AttributeSet;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;
@@ -221,9 +212,6 @@
 
 .method protected bridge synthetic onCreateCustomFromTag(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/Object;Landroid/util/AttributeSet;)Z
     .locals 1
-    .param p1    # Lorg/xmlpull/v1/XmlPullParser;
-    .param p2    # Ljava/lang/Object;
-    .param p3    # Landroid/util/AttributeSet;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;
@@ -241,9 +229,6 @@
 
 .method protected bridge synthetic onMergeRoots(Landroid/preference/GenericInflater$Parent;ZLandroid/preference/GenericInflater$Parent;)Landroid/preference/GenericInflater$Parent;
     .locals 1
-    .param p1    # Landroid/preference/GenericInflater$Parent;
-    .param p2    # Z
-    .param p3    # Landroid/preference/GenericInflater$Parent;
 
     check-cast p1, Landroid/preference/PreferenceGroup;
 
@@ -258,9 +243,6 @@
 
 .method protected onMergeRoots(Landroid/preference/PreferenceGroup;ZLandroid/preference/PreferenceGroup;)Landroid/preference/PreferenceGroup;
     .locals 1
-    .param p1    # Landroid/preference/PreferenceGroup;
-    .param p2    # Z
-    .param p3    # Landroid/preference/PreferenceGroup;
 
     if-nez p1, :cond_0
 

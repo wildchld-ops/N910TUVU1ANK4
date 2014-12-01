@@ -17,7 +17,6 @@
 # direct methods
 .method public constructor <init>(Ljava/io/Reader;)V
     .locals 2
-    .param p1    # Ljava/io/Reader;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;
@@ -64,7 +63,6 @@
 
 .method public static closeQuietly(Lorg/apache/commons/io/LineIterator;)V
     .locals 0
-    .param p0    # Lorg/apache/commons/io/LineIterator;
 
     if-eqz p0, :cond_0
 
@@ -166,7 +164,6 @@
 
 .method protected isValidLine(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x1
 

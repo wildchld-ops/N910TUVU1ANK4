@@ -36,8 +36,6 @@
 # virtual methods
 .method public onSweep(Lcom/android/settings/widget/ChartSweepView;Z)V
     .locals 1
-    .param p1    # Lcom/android/settings/widget/ChartSweepView;
-    .param p2    # Z
 
     iget-object v0, p0, Lcom/android/settings/widget/ChartDataUsageView$3;->this$0:Lcom/android/settings/widget/ChartDataUsageView;
 
@@ -70,7 +68,6 @@
 
 .method public requestEdit(Lcom/android/settings/widget/ChartSweepView;)V
     .locals 0
-    .param p1    # Lcom/android/settings/widget/ChartSweepView;
 
     return-void
 .end method

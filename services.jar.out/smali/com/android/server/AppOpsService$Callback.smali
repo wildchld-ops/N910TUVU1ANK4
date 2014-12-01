@@ -26,7 +26,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/AppOpsService;Lcom/android/internal/app/IAppOpsCallback;)V
     .locals 2
-    .param p2    # Lcom/android/internal/app/IAppOpsCallback;
 
     iput-object p1, p0, Lcom/android/server/AppOpsService$Callback;->this$0:Lcom/android/server/AppOpsService;
 

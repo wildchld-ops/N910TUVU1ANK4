@@ -23,9 +23,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/graphics/Picture;Landroid/webkitsec/WebView;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/graphics/Picture;
-    .param p3    # Landroid/webkitsec/WebView;
 
     invoke-direct {p0, p1}, Landroid/view/View;-><init>(Landroid/content/Context;)V
 
@@ -60,7 +57,6 @@
 # virtual methods
 .method protected onDraw(Landroid/graphics/Canvas;)V
     .locals 1
-    .param p1    # Landroid/graphics/Canvas;
 
     iget-object v0, p0, Landroid/webkitsec/WebViewClassic$PictureWrapperView;->mPicture:Landroid/graphics/Picture;
 
@@ -71,7 +67,6 @@
 
 .method public post(Ljava/lang/Runnable;)Z
     .locals 1
-    .param p1    # Ljava/lang/Runnable;
 
     iget-object v0, p0, Landroid/webkitsec/WebViewClassic$PictureWrapperView;->mWebView:Landroid/webkitsec/WebView;
 

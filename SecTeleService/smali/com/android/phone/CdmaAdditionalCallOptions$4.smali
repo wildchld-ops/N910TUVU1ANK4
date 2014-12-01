@@ -58,7 +58,7 @@
 
     iget-object v2, p0, Lcom/android/phone/CdmaAdditionalCallOptions$4;->this$0:Lcom/android/phone/CdmaAdditionalCallOptions;
 
-    # invokes: Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    # invokes: Lcom/android/phone/CdmaAdditionalCallOptions;->getContentResolver()Landroid/content/ContentResolver;
     invoke-static {v2}, Lcom/android/phone/CdmaAdditionalCallOptions;->access$600(Lcom/android/phone/CdmaAdditionalCallOptions;)Landroid/content/ContentResolver;
 
     move-result-object v2
@@ -73,10 +73,10 @@
 
     move-result-object v2
 
-    invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {v1, v2}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
     :goto_0
-    invoke-virtual {v1}, Landroid/widget/TextView;->length()I
+    invoke-virtual {v1}, Landroid/widget/EditText;->length()I
 
     move-result v0
 
@@ -90,7 +90,7 @@
     :cond_1
     iget-object v2, p0, Lcom/android/phone/CdmaAdditionalCallOptions$4;->this$0:Lcom/android/phone/CdmaAdditionalCallOptions;
 
-    # invokes: Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    # invokes: Lcom/android/phone/CdmaAdditionalCallOptions;->getContentResolver()Landroid/content/ContentResolver;
     invoke-static {v2}, Lcom/android/phone/CdmaAdditionalCallOptions;->access$700(Lcom/android/phone/CdmaAdditionalCallOptions;)Landroid/content/ContentResolver;
 
     move-result-object v2
@@ -101,7 +101,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {v1, v2}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
     goto :goto_0
 .end method

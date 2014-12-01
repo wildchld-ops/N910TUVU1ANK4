@@ -25,7 +25,6 @@
 
 .method synthetic constructor <init>(Landroid/text/HtmlToSpannedConverter$1;)V
     .locals 0
-    .param p1    # Landroid/text/HtmlToSpannedConverter$1;
 
     invoke-direct {p0}, Landroid/text/HtmlToSpannedConverter$Underline;-><init>()V
 

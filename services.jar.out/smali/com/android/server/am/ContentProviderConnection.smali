@@ -26,8 +26,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/am/ContentProviderRecord;Lcom/android/server/am/ProcessRecord;)V
     .locals 2
-    .param p1    # Lcom/android/server/am/ContentProviderRecord;
-    .param p2    # Lcom/android/server/am/ProcessRecord;
 
     invoke-direct {p0}, Landroid/os/Binder;-><init>()V
 
@@ -66,7 +64,6 @@
 
 .method public toClientString(Ljava/lang/StringBuilder;)V
     .locals 4
-    .param p1    # Ljava/lang/StringBuilder;
 
     iget-object v2, p0, Lcom/android/server/am/ContentProviderConnection;->client:Lcom/android/server/am/ProcessRecord;
 
@@ -163,7 +160,6 @@
 
 .method public toShortString(Ljava/lang/StringBuilder;)V
     .locals 1
-    .param p1    # Ljava/lang/StringBuilder;
 
     iget-object v0, p0, Lcom/android/server/am/ContentProviderConnection;->provider:Lcom/android/server/am/ContentProviderRecord;
 

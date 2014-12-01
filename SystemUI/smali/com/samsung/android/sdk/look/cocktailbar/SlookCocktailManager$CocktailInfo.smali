@@ -33,12 +33,6 @@
 # direct methods
 .method private constructor <init>(IIILandroid/widget/RemoteViews;Landroid/widget/RemoteViews;Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/widget/RemoteViews;
-    .param p5    # Landroid/widget/RemoteViews;
-    .param p6    # Landroid/os/Bundle;
 
     const/4 v0, 0x1
 
@@ -61,13 +55,6 @@
 
 .method synthetic constructor <init>(IIILandroid/widget/RemoteViews;Landroid/widget/RemoteViews;Landroid/os/Bundle;Lcom/samsung/android/sdk/look/cocktailbar/SlookCocktailManager$1;)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/widget/RemoteViews;
-    .param p5    # Landroid/widget/RemoteViews;
-    .param p6    # Landroid/os/Bundle;
-    .param p7    # Lcom/samsung/android/sdk/look/cocktailbar/SlookCocktailManager$1;
 
     invoke-direct/range {p0 .. p6}, Lcom/samsung/android/sdk/look/cocktailbar/SlookCocktailManager$CocktailInfo;-><init>(IIILandroid/widget/RemoteViews;Landroid/widget/RemoteViews;Landroid/os/Bundle;)V
 
@@ -76,7 +63,6 @@
 
 .method static synthetic access$100(Lcom/samsung/android/sdk/look/cocktailbar/SlookCocktailManager$CocktailInfo;)I
     .locals 1
-    .param p0    # Lcom/samsung/android/sdk/look/cocktailbar/SlookCocktailManager$CocktailInfo;
 
     iget v0, p0, Lcom/samsung/android/sdk/look/cocktailbar/SlookCocktailManager$CocktailInfo;->mDisplayPolicy:I
 
@@ -85,7 +71,6 @@
 
 .method static synthetic access$200(Lcom/samsung/android/sdk/look/cocktailbar/SlookCocktailManager$CocktailInfo;)I
     .locals 1
-    .param p0    # Lcom/samsung/android/sdk/look/cocktailbar/SlookCocktailManager$CocktailInfo;
 
     iget v0, p0, Lcom/samsung/android/sdk/look/cocktailbar/SlookCocktailManager$CocktailInfo;->mCategory:I
 
@@ -94,7 +79,6 @@
 
 .method static synthetic access$300(Lcom/samsung/android/sdk/look/cocktailbar/SlookCocktailManager$CocktailInfo;)Landroid/widget/RemoteViews;
     .locals 1
-    .param p0    # Lcom/samsung/android/sdk/look/cocktailbar/SlookCocktailManager$CocktailInfo;
 
     iget-object v0, p0, Lcom/samsung/android/sdk/look/cocktailbar/SlookCocktailManager$CocktailInfo;->mContentView:Landroid/widget/RemoteViews;
 
@@ -103,7 +87,6 @@
 
 .method static synthetic access$400(Lcom/samsung/android/sdk/look/cocktailbar/SlookCocktailManager$CocktailInfo;)Landroid/os/Bundle;
     .locals 1
-    .param p0    # Lcom/samsung/android/sdk/look/cocktailbar/SlookCocktailManager$CocktailInfo;
 
     iget-object v0, p0, Lcom/samsung/android/sdk/look/cocktailbar/SlookCocktailManager$CocktailInfo;->mContentInfo:Landroid/os/Bundle;
 

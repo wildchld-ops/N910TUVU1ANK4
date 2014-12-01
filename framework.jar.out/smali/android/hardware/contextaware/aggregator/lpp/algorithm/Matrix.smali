@@ -22,8 +22,6 @@
 # direct methods
 .method public constructor <init>(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -50,9 +48,6 @@
 
 .method public constructor <init>(IID)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # D
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -105,8 +100,6 @@
 
 .method public constructor <init>([DI)V
     .locals 5
-    .param p1    # [D
-    .param p2    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -198,7 +191,6 @@
 
 .method public constructor <init>([[D)V
     .locals 3
-    .param p1    # [[D
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -250,9 +242,6 @@
 
 .method public constructor <init>([[DII)V
     .locals 0
-    .param p1    # [[D
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -267,7 +256,6 @@
 
 .method private checkMatrixDimensions(Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;)V
     .locals 2
-    .param p1    # Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;
 
     iget v0, p1, Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;->m:I
 
@@ -296,7 +284,6 @@
 
 .method public static constructWithCopy([[D)Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;
     .locals 9
-    .param p0    # [[D
 
     array-length v4, p0
 
@@ -362,8 +349,6 @@
 
 .method public static hypot(DD)D
     .locals 8
-    .param p0    # D
-    .param p2    # D
 
     const-wide/high16 v6, 0x3ff0000000000000L
 
@@ -431,8 +416,6 @@
 
 .method public static identity(II)Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;
     .locals 7
-    .param p0    # I
-    .param p1    # I
 
     new-instance v0, Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;
 
@@ -481,8 +464,6 @@
 
 .method public static random(II)Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;
     .locals 7
-    .param p0    # I
-    .param p1    # I
 
     new-instance v0, Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;
 
@@ -525,7 +506,6 @@
 
 .method public static read(Ljava/io/BufferedReader;)Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;
     .locals 12
-    .param p0    # Ljava/io/BufferedReader;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -764,7 +744,6 @@
 # virtual methods
 .method public arrayLeftDivide(Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;)Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;
     .locals 9
-    .param p1    # Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;
 
     invoke-direct {p0, p1}, Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;->checkMatrixDimensions(Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;)V
 
@@ -827,7 +806,6 @@
 
 .method public arrayLeftDivideEquals(Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;)Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;
     .locals 7
-    .param p1    # Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;
 
     invoke-direct {p0, p1}, Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;->checkMatrixDimensions(Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;)V
 
@@ -880,7 +858,6 @@
 
 .method public arrayRightDivide(Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;)Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;
     .locals 9
-    .param p1    # Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;
 
     invoke-direct {p0, p1}, Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;->checkMatrixDimensions(Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;)V
 
@@ -943,7 +920,6 @@
 
 .method public arrayRightDivideEquals(Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;)Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;
     .locals 7
-    .param p1    # Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;
 
     invoke-direct {p0, p1}, Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;->checkMatrixDimensions(Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;)V
 
@@ -996,7 +972,6 @@
 
 .method public arrayTimes(Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;)Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;
     .locals 9
-    .param p1    # Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;
 
     invoke-direct {p0, p1}, Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;->checkMatrixDimensions(Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;)V
 
@@ -1059,7 +1034,6 @@
 
 .method public arrayTimesEquals(Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;)Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;
     .locals 7
-    .param p1    # Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;
 
     invoke-direct {p0, p1}, Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;->checkMatrixDimensions(Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;)V
 
@@ -1202,8 +1176,6 @@
 
 .method public get(II)D
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;->A:[[D
 
@@ -1340,10 +1312,6 @@
 
 .method public getMatrix(IIII)Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;
     .locals 9
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     new-instance v1, Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;
 
@@ -1414,9 +1382,6 @@
 
 .method public getMatrix(II[I)Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;
     .locals 8
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [I
 
     new-instance v1, Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;
 
@@ -1487,9 +1452,6 @@
 
 .method public getMatrix([III)Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;
     .locals 9
-    .param p1    # [I
-    .param p2    # I
-    .param p3    # I
 
     new-instance v1, Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;
 
@@ -1560,8 +1522,6 @@
 
 .method public getMatrix([I[I)Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;
     .locals 8
-    .param p1    # [I
-    .param p2    # [I
 
     new-instance v1, Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;
 
@@ -1710,7 +1670,6 @@
 
 .method public minus(Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;)Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;
     .locals 9
-    .param p1    # Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;
 
     invoke-direct {p0, p1}, Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;->checkMatrixDimensions(Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;)V
 
@@ -1773,7 +1732,6 @@
 
 .method public minusEquals(Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;)Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;
     .locals 7
-    .param p1    # Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;
 
     invoke-direct {p0, p1}, Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;->checkMatrixDimensions(Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;)V
 
@@ -1982,7 +1940,6 @@
 
 .method public plus(Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;)Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;
     .locals 9
-    .param p1    # Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;
 
     invoke-direct {p0, p1}, Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;->checkMatrixDimensions(Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;)V
 
@@ -2045,7 +2002,6 @@
 
 .method public plusEquals(Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;)Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;
     .locals 7
-    .param p1    # Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;
 
     invoke-direct {p0, p1}, Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;->checkMatrixDimensions(Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;)V
 
@@ -2098,8 +2054,6 @@
 
 .method public print(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     new-instance v0, Ljava/io/PrintWriter;
 
@@ -2116,9 +2070,6 @@
 
 .method public print(Ljava/io/PrintWriter;II)V
     .locals 3
-    .param p1    # Ljava/io/PrintWriter;
-    .param p2    # I
-    .param p3    # I
 
     new-instance v0, Ljava/text/DecimalFormat;
 
@@ -2153,9 +2104,6 @@
 
 .method public print(Ljava/io/PrintWriter;Ljava/text/NumberFormat;I)V
     .locals 7
-    .param p1    # Ljava/io/PrintWriter;
-    .param p2    # Ljava/text/NumberFormat;
-    .param p3    # I
 
     invoke-virtual {p1}, Ljava/io/PrintWriter;->println()V
 
@@ -2230,8 +2178,6 @@
 
 .method public print(Ljava/text/NumberFormat;I)V
     .locals 3
-    .param p1    # Ljava/text/NumberFormat;
-    .param p2    # I
 
     new-instance v0, Ljava/io/PrintWriter;
 
@@ -2262,9 +2208,6 @@
 
 .method public set(IID)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # D
 
     iget-object v0, p0, Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;->A:[[D
 
@@ -2277,11 +2220,6 @@
 
 .method public setMatrix(IIIILandroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;
 
     move v1, p1
 
@@ -2336,10 +2274,6 @@
 
 .method public setMatrix(II[ILandroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [I
-    .param p4    # Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;
 
     move v1, p1
 
@@ -2396,10 +2330,6 @@
 
 .method public setMatrix([IIILandroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;)V
     .locals 6
-    .param p1    # [I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;
 
     const/4 v1, 0x0
 
@@ -2456,9 +2386,6 @@
 
 .method public setMatrix([I[ILandroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;)V
     .locals 7
-    .param p1    # [I
-    .param p2    # [I
-    .param p3    # Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;
 
     const/4 v1, 0x0
 
@@ -2517,7 +2444,6 @@
 
 .method public solve(Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;)Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;
     .locals 2
-    .param p1    # Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;
 
     iget v0, p0, Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;->m:I
 
@@ -2550,7 +2476,6 @@
 
 .method public solveTranspose(Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;)Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;
     .locals 2
-    .param p1    # Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;
 
     invoke-virtual {p0}, Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;->transpose()Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;
 
@@ -2579,7 +2504,6 @@
 
 .method public times(D)Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;
     .locals 7
-    .param p1    # D
 
     new-instance v1, Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;
 
@@ -2634,7 +2558,6 @@
 
 .method public times(Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;)Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;
     .locals 13
-    .param p1    # Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;
 
     iget v9, p1, Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;->m:I
 
@@ -2746,7 +2669,6 @@
 
 .method public timesEquals(D)Landroid/hardware/contextaware/aggregator/lpp/algorithm/Matrix;
     .locals 5
-    .param p1    # D
 
     const/4 v0, 0x0
 

@@ -36,7 +36,6 @@
 # virtual methods
 .method public parse(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p1}, Ljava/lang/String;->length()I
 
@@ -156,7 +155,6 @@
 
 .method parseRegion(Ljava/lang/String;)Landroid/media/TextTrackRegion;
     .locals 31
-    .param p1    # Ljava/lang/String;
 
     new-instance v27, Landroid/media/TextTrackRegion;
 

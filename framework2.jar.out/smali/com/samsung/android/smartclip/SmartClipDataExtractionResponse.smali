@@ -42,9 +42,6 @@
 
 .method public constructor <init>(IILcom/samsung/android/smartclip/SmartClipDataRepositoryImpl;)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Lcom/samsung/android/smartclip/SmartClipDataRepositoryImpl;
 
     const/4 v0, 0x0
 
@@ -79,7 +76,6 @@
 
 .method public readFromParcel(Landroid/os/Parcel;)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
@@ -112,8 +108,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget v0, p0, Lcom/samsung/android/smartclip/SmartClipDataExtractionResponse;->mRequestId:I
 

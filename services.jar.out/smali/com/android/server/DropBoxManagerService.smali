@@ -77,8 +77,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Ljava/io/File;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Ljava/io/File;
 
     const/4 v1, 0x0
 
@@ -161,8 +159,6 @@
 
 .method static synthetic access$002(Lcom/android/server/DropBoxManagerService;Z)Z
     .locals 0
-    .param p0    # Lcom/android/server/DropBoxManagerService;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/server/DropBoxManagerService;->mBooted:Z
 
@@ -171,8 +167,6 @@
 
 .method static synthetic access$102(Lcom/android/server/DropBoxManagerService;J)J
     .locals 0
-    .param p0    # Lcom/android/server/DropBoxManagerService;
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/android/server/DropBoxManagerService;->mCachedQuotaUptimeMillis:J
 
@@ -181,7 +175,6 @@
 
 .method static synthetic access$200(Lcom/android/server/DropBoxManagerService;)V
     .locals 0
-    .param p0    # Lcom/android/server/DropBoxManagerService;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -195,7 +188,6 @@
 
 .method static synthetic access$300(Lcom/android/server/DropBoxManagerService;)J
     .locals 2
-    .param p0    # Lcom/android/server/DropBoxManagerService;
 
     invoke-direct {p0}, Lcom/android/server/DropBoxManagerService;->trimToFit()J
 
@@ -206,7 +198,6 @@
 
 .method static synthetic access$400(Lcom/android/server/DropBoxManagerService;)Landroid/content/BroadcastReceiver;
     .locals 1
-    .param p0    # Lcom/android/server/DropBoxManagerService;
 
     iget-object v0, p0, Lcom/android/server/DropBoxManagerService;->mReceiver:Landroid/content/BroadcastReceiver;
 
@@ -215,7 +206,6 @@
 
 .method static synthetic access$500(Lcom/android/server/DropBoxManagerService;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/server/DropBoxManagerService;
 
     iget-object v0, p0, Lcom/android/server/DropBoxManagerService;->mContext:Landroid/content/Context;
 
@@ -224,9 +214,6 @@
 
 .method private declared-synchronized createEntry(Ljava/io/File;Ljava/lang/String;I)J
     .locals 18
-    .param p1    # Ljava/io/File;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -504,7 +491,6 @@
 
 .method private declared-synchronized enrollEntry(Lcom/android/server/DropBoxManagerService$EntryFile;)V
     .locals 4
-    .param p1    # Lcom/android/server/DropBoxManagerService$EntryFile;
 
     monitor-enter p0
 
@@ -1654,7 +1640,6 @@
 # virtual methods
 .method public add(Landroid/os/DropBoxManager$Entry;)V
     .locals 31
-    .param p1    # Landroid/os/DropBoxManager$Entry;
 
     const/16 v23, 0x0
 
@@ -2253,9 +2238,6 @@
 
 .method public declared-synchronized dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 31
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     monitor-enter p0
 
@@ -3246,8 +3228,6 @@
 
 .method public declared-synchronized getNextEntry(Ljava/lang/String;J)Landroid/os/DropBoxManager$Entry;
     .locals 11
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
 
     const/4 v10, 0x0
 
@@ -3446,7 +3426,6 @@
 
 .method public isTagEnabled(Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Landroid/os/Binder;->clearCallingIdentity()J
 

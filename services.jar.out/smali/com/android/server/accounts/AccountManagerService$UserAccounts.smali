@@ -100,8 +100,6 @@
 # direct methods
 .method constructor <init>(Landroid/content/Context;I)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -170,7 +168,6 @@
 
 .method static synthetic access$1400(Lcom/android/server/accounts/AccountManagerService$UserAccounts;)Ljava/util/HashMap;
     .locals 1
-    .param p0    # Lcom/android/server/accounts/AccountManagerService$UserAccounts;
 
     iget-object v0, p0, Lcom/android/server/accounts/AccountManagerService$UserAccounts;->signinRequiredNotificationIds:Ljava/util/HashMap;
 
@@ -179,7 +176,6 @@
 
 .method static synthetic access$300(Lcom/android/server/accounts/AccountManagerService$UserAccounts;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Lcom/android/server/accounts/AccountManagerService$UserAccounts;
 
     iget-object v0, p0, Lcom/android/server/accounts/AccountManagerService$UserAccounts;->cacheLock:Ljava/lang/Object;
 
@@ -188,7 +184,6 @@
 
 .method static synthetic access$400(Lcom/android/server/accounts/AccountManagerService$UserAccounts;)Lcom/android/server/accounts/AccountManagerService$DatabaseHelper;
     .locals 1
-    .param p0    # Lcom/android/server/accounts/AccountManagerService$UserAccounts;
 
     iget-object v0, p0, Lcom/android/server/accounts/AccountManagerService$UserAccounts;->openHelper:Lcom/android/server/accounts/AccountManagerService$DatabaseHelper;
 
@@ -197,7 +192,6 @@
 
 .method static synthetic access$500(Lcom/android/server/accounts/AccountManagerService$UserAccounts;)I
     .locals 1
-    .param p0    # Lcom/android/server/accounts/AccountManagerService$UserAccounts;
 
     iget v0, p0, Lcom/android/server/accounts/AccountManagerService$UserAccounts;->userId:I
 
@@ -206,7 +200,6 @@
 
 .method static synthetic access$600(Lcom/android/server/accounts/AccountManagerService$UserAccounts;)Ljava/util/HashMap;
     .locals 1
-    .param p0    # Lcom/android/server/accounts/AccountManagerService$UserAccounts;
 
     iget-object v0, p0, Lcom/android/server/accounts/AccountManagerService$UserAccounts;->accountCache:Ljava/util/HashMap;
 
@@ -215,7 +208,6 @@
 
 .method static synthetic access$700(Lcom/android/server/accounts/AccountManagerService$UserAccounts;)Ljava/util/HashMap;
     .locals 1
-    .param p0    # Lcom/android/server/accounts/AccountManagerService$UserAccounts;
 
     iget-object v0, p0, Lcom/android/server/accounts/AccountManagerService$UserAccounts;->userDataCache:Ljava/util/HashMap;
 
@@ -224,7 +216,6 @@
 
 .method static synthetic access$800(Lcom/android/server/accounts/AccountManagerService$UserAccounts;)Ljava/util/HashMap;
     .locals 1
-    .param p0    # Lcom/android/server/accounts/AccountManagerService$UserAccounts;
 
     iget-object v0, p0, Lcom/android/server/accounts/AccountManagerService$UserAccounts;->authTokenCache:Ljava/util/HashMap;
 
@@ -233,7 +224,6 @@
 
 .method static synthetic access$900(Lcom/android/server/accounts/AccountManagerService$UserAccounts;)Ljava/util/HashMap;
     .locals 1
-    .param p0    # Lcom/android/server/accounts/AccountManagerService$UserAccounts;
 
     iget-object v0, p0, Lcom/android/server/accounts/AccountManagerService$UserAccounts;->credentialsPermissionNotificationIds:Ljava/util/HashMap;
 

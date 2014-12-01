@@ -30,9 +30,6 @@
 # direct methods
 .method constructor <init>(Landroid/app/LoadedApk$ServiceDispatcher;Landroid/content/ComponentName;Landroid/os/IBinder;I)V
     .locals 0
-    .param p2    # Landroid/content/ComponentName;
-    .param p3    # Landroid/os/IBinder;
-    .param p4    # I
 
     iput-object p1, p0, Landroid/app/LoadedApk$ServiceDispatcher$RunConnection;->this$0:Landroid/app/LoadedApk$ServiceDispatcher;
 

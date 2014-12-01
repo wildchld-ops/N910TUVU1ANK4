@@ -20,10 +20,6 @@
 # direct methods
 .method public constructor <init>(ILjava/lang/String;Landroid/graphics/RectF;I)V
     .locals 2
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/graphics/RectF;
-    .param p4    # I
 
     const/4 v1, -0x1
 

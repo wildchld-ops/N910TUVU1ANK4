@@ -25,7 +25,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/mms/settings/BackgroundStyle;Landroid/content/Context;)V
     .locals 1
-    .param p2    # Landroid/content/Context;
 
     iput-object p1, p0, Lcom/android/mms/settings/BackgroundStyle$ImageAdapter;->this$0:Lcom/android/mms/settings/BackgroundStyle;
 
@@ -62,7 +61,6 @@
 
 .method public getItem(I)Ljava/lang/Object;
     .locals 1
-    .param p1    # I
 
     sget-object v0, Lcom/android/mms/settings/DisplayStyleActivity;->mBGImageArray:[I
 
@@ -77,7 +75,6 @@
 
 .method public getItemId(I)J
     .locals 2
-    .param p1    # I
 
     int-to-long v0, p1
 
@@ -86,9 +83,6 @@
 
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 12
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     const v9, 0x7f0c023b
 

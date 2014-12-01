@@ -31,7 +31,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/incallui/callerinfocard/photomanager/PhotoManagerImpl;I)V
     .locals 0
-    .param p2    # I
 
     iput-object p1, p0, Lcom/android/incallui/callerinfocard/photomanager/PhotoManagerImpl$2;->this$0:Lcom/android/incallui/callerinfocard/photomanager/PhotoManagerImpl;
 
@@ -44,10 +43,6 @@
 # virtual methods
 .method protected entryRemoved(ZLjava/lang/Object;Lcom/android/incallui/callerinfocard/photomanager/PhotoManagerImpl$BitmapHolder;Lcom/android/incallui/callerinfocard/photomanager/PhotoManagerImpl$BitmapHolder;)V
     .locals 1
-    .param p1    # Z
-    .param p2    # Ljava/lang/Object;
-    .param p3    # Lcom/android/incallui/callerinfocard/photomanager/PhotoManagerImpl$BitmapHolder;
-    .param p4    # Lcom/android/incallui/callerinfocard/photomanager/PhotoManagerImpl$BitmapHolder;
 
     iget-object v0, p0, Lcom/android/incallui/callerinfocard/photomanager/PhotoManagerImpl$2;->this$0:Lcom/android/incallui/callerinfocard/photomanager/PhotoManagerImpl;
 
@@ -59,10 +54,6 @@
 
 .method protected bridge synthetic entryRemoved(ZLjava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Z
-    .param p2    # Ljava/lang/Object;
-    .param p3    # Ljava/lang/Object;
-    .param p4    # Ljava/lang/Object;
 
     check-cast p3, Lcom/android/incallui/callerinfocard/photomanager/PhotoManagerImpl$BitmapHolder;
 
@@ -75,8 +66,6 @@
 
 .method protected sizeOf(Ljava/lang/Object;Lcom/android/incallui/callerinfocard/photomanager/PhotoManagerImpl$BitmapHolder;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Lcom/android/incallui/callerinfocard/photomanager/PhotoManagerImpl$BitmapHolder;
 
     iget-object v0, p2, Lcom/android/incallui/callerinfocard/photomanager/PhotoManagerImpl$BitmapHolder;->bytes:[B
 
@@ -97,8 +86,6 @@
 
 .method protected bridge synthetic sizeOf(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p2, Lcom/android/incallui/callerinfocard/photomanager/PhotoManagerImpl$BitmapHolder;
 

@@ -18,7 +18,6 @@
 
 .method public static isAutomaticTestMode(Landroid/content/Context;)Z
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     const/4 v0, 0x1
 
@@ -152,8 +151,6 @@
 
 .method public static isFactoryMode(Landroid/content/Context;Landroid/telephony/TelephonyManager;)Z
     .locals 8
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/telephony/TelephonyManager;
 
     const/4 v4, 0x0
 
@@ -481,8 +478,6 @@
 
 .method public static setBlockingPowerKey(Landroid/content/Context;Z)Z
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
 
     invoke-static {}, Landroid/os/FactoryTest;->isFactoryBinary()Z
 
@@ -554,8 +549,6 @@
 
 .method public static setRunningFactoryApp(Landroid/content/Context;Z)Z
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
 
     const-string v0, "com.sec.factory.permission.KEYSTRING"
 

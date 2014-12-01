@@ -26,7 +26,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/mms/settings/MessageSmscActivityDS;Landroid/content/Context;)V
     .locals 0
-    .param p2    # Landroid/content/Context;
 
     iput-object p1, p0, Lcom/android/mms/settings/MessageSmscActivityDS$TabFactory;->this$0:Lcom/android/mms/settings/MessageSmscActivityDS;
 
@@ -41,7 +40,6 @@
 # virtual methods
 .method public createTabContent(Ljava/lang/String;)Landroid/view/View;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/mms/settings/MessageSmscActivityDS$TabFactory;->this$0:Lcom/android/mms/settings/MessageSmscActivityDS;
 

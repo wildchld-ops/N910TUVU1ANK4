@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Lcom/android/server/ResettableTimeout;Lcom/android/server/ResettableTimeout$1;)V
     .locals 0
-    .param p1    # Lcom/android/server/ResettableTimeout;
-    .param p2    # Lcom/android/server/ResettableTimeout$1;
 
     invoke-direct {p0, p1}, Lcom/android/server/ResettableTimeout$T;-><init>(Lcom/android/server/ResettableTimeout;)V
 

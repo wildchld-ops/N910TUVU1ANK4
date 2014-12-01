@@ -67,8 +67,6 @@
 
 .method static synthetic access$000(Lcom/android/incallui/help/AirMotionTutorialIncallScreen;I)V
     .locals 0
-    .param p0    # Lcom/android/incallui/help/AirMotionTutorialIncallScreen;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/incallui/help/AirMotionTutorialIncallScreen;->displayToast(I)V
 
@@ -77,7 +75,6 @@
 
 .method private animationInit(Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     const v3, 0x7f050003
 
@@ -126,7 +123,6 @@
 
 .method private displayToast(I)V
     .locals 2
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -141,8 +137,6 @@
 
 .method private log(Ljava/lang/String;Z)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const-string v0, "AirMotionTutorialIncallScreen"
 
@@ -259,15 +253,12 @@
 
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 0
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     return-void
 .end method
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     const v4, 0x7f0e0019
 
@@ -542,8 +533,6 @@
 
 .method public onGrabbedStateChange(Landroid/view/View;I)V
     .locals 0
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     return-void
 .end method
@@ -573,7 +562,6 @@
 
 .method public onReceiveSweep(Lcom/android/incallui/widget/incomingwidget/IncomingCallImageHandle$HandleState;)V
     .locals 2
-    .param p1    # Lcom/android/incallui/widget/incomingwidget/IncomingCallImageHandle$HandleState;
 
     iget-object v0, p0, Lcom/android/incallui/help/AirMotionTutorialIncallScreen;->airMotionWidget:Lcom/android/incallui/widget/incomingwidget/IncomingCallImageWidget;
 
@@ -653,8 +641,6 @@
 
 .method public onTrigger(Landroid/view/View;I)V
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     const v0, 0x7f0900f2
 

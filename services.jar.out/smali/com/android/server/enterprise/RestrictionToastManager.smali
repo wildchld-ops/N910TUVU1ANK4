@@ -76,7 +76,6 @@
 
 .method static init(Landroid/content/Context;)V
     .locals 0
-    .param p0    # Landroid/content/Context;
 
     sput-object p0, Lcom/android/server/enterprise/RestrictionToastManager;->mContext:Landroid/content/Context;
 
@@ -85,7 +84,6 @@
 
 .method public static show(I)V
     .locals 4
-    .param p0    # I
 
     if-ltz p0, :cond_0
 
@@ -127,7 +125,6 @@
 
 .method public static declared-synchronized show(Ljava/lang/String;)V
     .locals 9
-    .param p0    # Ljava/lang/String;
 
     const-class v6, Lcom/android/server/enterprise/RestrictionToastManager;
 

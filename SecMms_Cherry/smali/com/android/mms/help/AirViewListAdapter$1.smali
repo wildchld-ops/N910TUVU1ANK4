@@ -36,7 +36,6 @@
 # virtual methods
 .method public doTask(Landroid/view/View;)V
     .locals 4
-    .param p1    # Landroid/view/View;
 
     new-instance v0, Landroid/os/Handler;
 

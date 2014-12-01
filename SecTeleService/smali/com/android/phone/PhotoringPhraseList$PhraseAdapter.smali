@@ -231,15 +231,15 @@
 
     const/4 v5, 0x4
 
-    invoke-virtual {v0, v5}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v5}, Landroid/widget/CheckBox;->setVisibility(I)V
 
     :goto_1
     return-object v4
 
     :cond_0
-    const v5, 0x7f0202de
+    const v5, 0x7f0202dd
 
-    invoke-virtual {v3, v5}, Landroid/view/View;->setBackgroundResource(I)V
+    invoke-virtual {v3, v5}, Landroid/widget/ImageView;->setBackgroundResource(I)V
 
     const v5, 0x7f020138
 
@@ -250,7 +250,7 @@
     :cond_1
     const/4 v5, 0x0
 
-    invoke-virtual {v0, v5}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v5}, Landroid/widget/CheckBox;->setVisibility(I)V
 
     goto :goto_1
 .end method
@@ -267,7 +267,7 @@
 
     check-cast v0, Landroid/widget/CheckBox;
 
-    invoke-virtual {v0}, Landroid/widget/CompoundButton;->isChecked()Z
+    invoke-virtual {v0}, Landroid/widget/CheckBox;->isChecked()Z
 
     move-result v0
 
@@ -296,7 +296,7 @@
 
     check-cast v0, Landroid/widget/CheckBox;
 
-    invoke-virtual {v0}, Landroid/widget/CompoundButton;->isChecked()Z
+    invoke-virtual {v0}, Landroid/widget/CheckBox;->isChecked()Z
 
     move-result v2
 
@@ -335,7 +335,7 @@
 
     check-cast v0, Landroid/widget/CheckBox;
 
-    invoke-virtual {v0}, Landroid/widget/CompoundButton;->isChecked()Z
+    invoke-virtual {v0}, Landroid/widget/CheckBox;->isChecked()Z
 
     move-result v2
 
@@ -375,7 +375,7 @@
 
     check-cast v0, Landroid/widget/CheckBox;
 
-    invoke-virtual {v0, p1}, Landroid/widget/CompoundButton;->setChecked(Z)V
+    invoke-virtual {v0, p1}, Landroid/widget/CheckBox;->setChecked(Z)V
 
     goto :goto_0
 

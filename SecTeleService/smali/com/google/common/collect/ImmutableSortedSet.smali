@@ -195,7 +195,7 @@
 
     check-cast v2, Lcom/google/common/collect/ImmutableSortedSet;
 
-    invoke-virtual {v2}, Lcom/google/common/collect/ImmutableCollection;->isPartialView()Z
+    invoke-virtual {v2}, Lcom/google/common/collect/ImmutableSortedSet;->isPartialView()Z
 
     move-result v3
 
@@ -213,7 +213,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/google/common/collect/ImmutableCollection;->isEmpty()Z
+    invoke-virtual {v1}, Lcom/google/common/collect/ImmutableList;->isEmpty()Z
 
     move-result v3
 
@@ -260,7 +260,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/google/common/collect/ImmutableCollection;->isEmpty()Z
+    invoke-virtual {v0}, Lcom/google/common/collect/ImmutableList;->isEmpty()Z
 
     move-result v1
 
@@ -646,7 +646,7 @@
 
     iget-object v1, p0, Lcom/google/common/collect/ImmutableSortedSet;->comparator:Ljava/util/Comparator;
 
-    invoke-virtual {p0}, Lcom/google/common/collect/ImmutableCollection;->toArray()[Ljava/lang/Object;
+    invoke-virtual {p0}, Lcom/google/common/collect/ImmutableSortedSet;->toArray()[Ljava/lang/Object;
 
     move-result-object v2
 

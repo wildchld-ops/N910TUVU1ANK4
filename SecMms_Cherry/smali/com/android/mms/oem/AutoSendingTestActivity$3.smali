@@ -40,7 +40,6 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     # getter for: Lcom/android/mms/oem/AutoSendingTestActivity;->mDialogPassword:Landroid/app/Dialog;
     invoke-static {}, Lcom/android/mms/oem/AutoSendingTestActivity;->access$500()Landroid/app/Dialog;

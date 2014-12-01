@@ -35,9 +35,6 @@
 
 .method public sendBroadcastChangeSettings(Lcom/sec/android/app/camera/Camera;II)V
     .locals 2
-    .param p1    # Lcom/sec/android/app/camera/Camera;
-    .param p2    # I
-    .param p3    # I
 
     if-nez p1, :cond_0
 
@@ -60,7 +57,6 @@
 
 .method public setAnchor(Lcom/sec/android/glview/TwGLImage;)V
     .locals 2
-    .param p1    # Lcom/sec/android/glview/TwGLImage;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/command/MenuCommand;->mAnchor:Lcom/sec/android/glview/TwGLImage;
 
@@ -85,8 +81,6 @@
 
 .method public setLaunchPosition(FF)V
     .locals 0
-    .param p1    # F
-    .param p2    # F
 
     iput p1, p0, Lcom/sec/android/app/camera/command/MenuCommand;->mLaunchX:F
 
@@ -97,7 +91,6 @@
 
 .method public setLaunchType(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/app/camera/command/MenuCommand;->mLaunchType:I
 
@@ -106,7 +99,6 @@
 
 .method public setZOrder(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/android/app/camera/command/MenuCommand;->mZOrder:I
 

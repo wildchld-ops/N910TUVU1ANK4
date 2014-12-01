@@ -28,8 +28,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/mms/ui/SpamMessageManager;Landroid/net/Uri;Z)V
     .locals 0
-    .param p2    # Landroid/net/Uri;
-    .param p3    # Z
 
     iput-object p1, p0, Lcom/android/mms/ui/SpamMessageManager$DeleteMessageListener;->this$0:Lcom/android/mms/ui/SpamMessageManager;
 
@@ -46,8 +44,6 @@
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 24
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     move-object/from16 v0, p0
 

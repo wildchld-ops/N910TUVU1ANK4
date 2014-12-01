@@ -30,7 +30,6 @@
 # direct methods
 .method public constructor <init>(Landroid/app/Activity;)V
     .locals 3
-    .param p1    # Landroid/app/Activity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -128,8 +127,6 @@
 
 .method public onSwitcherChanged(Landroid/widget/CompoundButton;Z)Z
     .locals 1
-    .param p1    # Landroid/widget/CompoundButton;
-    .param p2    # Z
 
     const/4 v0, 0x0
 
@@ -206,7 +203,6 @@
 
 .method protected showDialog(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     return-void
 .end method

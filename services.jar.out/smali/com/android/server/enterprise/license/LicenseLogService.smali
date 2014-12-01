@@ -39,7 +39,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Landroid/os/Binder;-><init>()V
 
@@ -106,8 +105,6 @@
 
 .method private _log(Ljava/lang/String;I)V
     .locals 11
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     :try_start_0
     invoke-direct {p0, p2}, Lcom/android/server/enterprise/license/LicenseLogService;->getPackageNameForUid(I)Ljava/lang/String;
@@ -252,7 +249,6 @@
 
 .method static synthetic access$100(Lcom/android/server/enterprise/license/LicenseLogService;)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/license/LicenseLogService;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/license/LicenseLogService;->handleLicenseLogCleanNotification()V
 
@@ -261,9 +257,6 @@
 
 .method static synthetic access$200(Lcom/android/server/enterprise/license/LicenseLogService;Ljava/lang/String;I)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/license/LicenseLogService;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/enterprise/license/LicenseLogService;->_log(Ljava/lang/String;I)V
 
@@ -272,7 +265,6 @@
 
 .method public static deleteLog(Ljava/lang/String;)Z
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     const/4 v4, 0x1
 
@@ -301,7 +293,6 @@
 
 .method public static getLog(Ljava/lang/String;)Landroid/os/Bundle;
     .locals 13
-    .param p0    # Ljava/lang/String;
 
     :try_start_0
     new-instance v9, Landroid/os/Bundle;
@@ -451,7 +442,6 @@
 
 .method private getPackageNameForUid(I)Ljava/lang/String;
     .locals 2
-    .param p1    # I
 
     sget-object v1, Lcom/android/server/enterprise/license/LicenseLogService;->mEdmStorageProvider:Lcom/android/server/enterprise/storage/EdmStorageProvider;
 
@@ -808,8 +798,6 @@
 
 .method public static log(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)V
     .locals 6
-    .param p0    # Landroid/app/enterprise/ContextInfo;
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -885,21 +873,18 @@
 # virtual methods
 .method public onAdminAdded(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onAdminRemoved(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onPreAdminRemoval(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method

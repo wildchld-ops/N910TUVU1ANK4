@@ -33,7 +33,6 @@
 # direct methods
 .method constructor <init>(Landroid/accounts/AccountAndUser;)V
     .locals 1
-    .param p1    # Landroid/accounts/AccountAndUser;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

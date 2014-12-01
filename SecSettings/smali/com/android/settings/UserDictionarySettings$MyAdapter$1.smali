@@ -36,9 +36,6 @@
 # virtual methods
 .method public setViewValue(Landroid/view/View;Landroid/database/Cursor;I)Z
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/database/Cursor;
-    .param p3    # I
 
     const/4 v1, 0x2
 

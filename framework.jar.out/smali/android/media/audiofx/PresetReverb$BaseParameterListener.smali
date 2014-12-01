@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Landroid/media/audiofx/PresetReverb;Landroid/media/audiofx/PresetReverb$1;)V
     .locals 0
-    .param p1    # Landroid/media/audiofx/PresetReverb;
-    .param p2    # Landroid/media/audiofx/PresetReverb$1;
 
     invoke-direct {p0, p1}, Landroid/media/audiofx/PresetReverb$BaseParameterListener;-><init>(Landroid/media/audiofx/PresetReverb;)V
 
@@ -46,10 +44,6 @@
 # virtual methods
 .method public onParameterChange(Landroid/media/audiofx/AudioEffect;I[B[B)V
     .locals 7
-    .param p1    # Landroid/media/audiofx/AudioEffect;
-    .param p2    # I
-    .param p3    # [B
-    .param p4    # [B
 
     const/4 v6, 0x0
 

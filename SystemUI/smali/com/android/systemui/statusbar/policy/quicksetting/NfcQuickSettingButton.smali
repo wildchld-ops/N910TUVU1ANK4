@@ -29,7 +29,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 8
-    .param p1    # Landroid/content/Context;
 
     const/4 v3, 0x0
 
@@ -105,7 +104,6 @@
 
 .method static synthetic access$000(Lcom/android/systemui/statusbar/policy/quicksetting/NfcQuickSettingButton;)Landroid/nfc/NfcAdapter;
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/policy/quicksetting/NfcQuickSettingButton;
 
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/quicksetting/NfcQuickSettingButton;->mNfcAdapter:Landroid/nfc/NfcAdapter;
 
@@ -114,8 +112,6 @@
 
 .method static synthetic access$100(Lcom/android/systemui/statusbar/policy/quicksetting/NfcQuickSettingButton;I)I
     .locals 1
-    .param p0    # Lcom/android/systemui/statusbar/policy/quicksetting/NfcQuickSettingButton;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/systemui/statusbar/policy/quicksetting/NfcQuickSettingButton;->handleStateChanged(I)I
 
@@ -126,7 +122,6 @@
 
 .method private handleStateChanged(I)I
     .locals 3
-    .param p1    # I
 
     const/4 v0, 0x2
 
@@ -277,7 +272,6 @@
 
 .method public onClick(Z)V
     .locals 7
-    .param p1    # Z
 
     const/4 v3, 0x1
 

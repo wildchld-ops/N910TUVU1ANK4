@@ -161,7 +161,6 @@
 
 .method public static returnVector3(Lcom/voovio/voo3d/data/Vector3;)V
     .locals 3
-    .param p0    # Lcom/voovio/voo3d/data/Vector3;
 
     sget-object v1, Lcom/voovio/voo3d/data/Vector3Pool;->m_oPoolLock:Ljava/lang/Object;
 

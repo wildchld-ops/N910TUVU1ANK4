@@ -54,8 +54,6 @@
 
 .method synthetic constructor <init>(Landroid/speech/tts/TextToSpeech;Landroid/speech/tts/TextToSpeech$1;)V
     .locals 0
-    .param p1    # Landroid/speech/tts/TextToSpeech;
-    .param p2    # Landroid/speech/tts/TextToSpeech$1;
 
     invoke-direct {p0, p1}, Landroid/speech/tts/TextToSpeech$Connection;-><init>(Landroid/speech/tts/TextToSpeech;)V
 
@@ -64,7 +62,6 @@
 
 .method static synthetic access$1000(Landroid/speech/tts/TextToSpeech$Connection;)Landroid/speech/tts/ITextToSpeechCallback$Stub;
     .locals 1
-    .param p0    # Landroid/speech/tts/TextToSpeech$Connection;
 
     iget-object v0, p0, Landroid/speech/tts/TextToSpeech$Connection;->mCallback:Landroid/speech/tts/ITextToSpeechCallback$Stub;
 
@@ -73,7 +70,6 @@
 
 .method static synthetic access$1100(Landroid/speech/tts/TextToSpeech$Connection;)Landroid/speech/tts/ITextToSpeechService;
     .locals 1
-    .param p0    # Landroid/speech/tts/TextToSpeech$Connection;
 
     iget-object v0, p0, Landroid/speech/tts/TextToSpeech$Connection;->mService:Landroid/speech/tts/ITextToSpeechService;
 
@@ -82,7 +78,6 @@
 
 .method static synthetic access$1200(Landroid/speech/tts/TextToSpeech$Connection;)Landroid/speech/tts/TextToSpeech$Connection$SetupConnectionAsyncTask;
     .locals 1
-    .param p0    # Landroid/speech/tts/TextToSpeech$Connection;
 
     iget-object v0, p0, Landroid/speech/tts/TextToSpeech$Connection;->mOnSetupConnectionAsyncTask:Landroid/speech/tts/TextToSpeech$Connection$SetupConnectionAsyncTask;
 
@@ -91,8 +86,6 @@
 
 .method static synthetic access$1202(Landroid/speech/tts/TextToSpeech$Connection;Landroid/speech/tts/TextToSpeech$Connection$SetupConnectionAsyncTask;)Landroid/speech/tts/TextToSpeech$Connection$SetupConnectionAsyncTask;
     .locals 0
-    .param p0    # Landroid/speech/tts/TextToSpeech$Connection;
-    .param p1    # Landroid/speech/tts/TextToSpeech$Connection$SetupConnectionAsyncTask;
 
     iput-object p1, p0, Landroid/speech/tts/TextToSpeech$Connection;->mOnSetupConnectionAsyncTask:Landroid/speech/tts/TextToSpeech$Connection$SetupConnectionAsyncTask;
 
@@ -101,8 +94,6 @@
 
 .method static synthetic access$1302(Landroid/speech/tts/TextToSpeech$Connection;Z)Z
     .locals 0
-    .param p0    # Landroid/speech/tts/TextToSpeech$Connection;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/speech/tts/TextToSpeech$Connection;->mEstablished:Z
 
@@ -227,8 +218,6 @@
 
 .method public onServiceConnected(Landroid/content/ComponentName;Landroid/os/IBinder;)V
     .locals 4
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Landroid/os/IBinder;
 
     iget-object v0, p0, Landroid/speech/tts/TextToSpeech$Connection;->this$0:Landroid/speech/tts/TextToSpeech;
 
@@ -325,7 +314,6 @@
 
 .method public onServiceDisconnected(Landroid/content/ComponentName;)V
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
 
     const-string v0, "TextToSpeech"
 
@@ -368,9 +356,6 @@
 
 .method public runAction(Landroid/speech/tts/TextToSpeech$Action;Ljava/lang/Object;Ljava/lang/String;ZZ)Ljava/lang/Object;
     .locals 5
-    .param p3    # Ljava/lang/String;
-    .param p4    # Z
-    .param p5    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<R:",

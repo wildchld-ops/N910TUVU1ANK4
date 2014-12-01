@@ -36,8 +36,6 @@
 
 .method constructor <init>(Landroid/filterfw/core/FrameFormat;Landroid/filterfw/core/FrameManager;)V
     .locals 1
-    .param p1    # Landroid/filterfw/core/FrameFormat;
-    .param p2    # Landroid/filterfw/core/FrameManager;
 
     invoke-direct {p0, p1, p2}, Landroid/filterfw/core/Frame;-><init>(Landroid/filterfw/core/FrameFormat;Landroid/filterfw/core/FrameManager;)V
 
@@ -54,10 +52,6 @@
 
 .method constructor <init>(Landroid/filterfw/core/FrameFormat;Landroid/filterfw/core/FrameManager;IJ)V
     .locals 1
-    .param p1    # Landroid/filterfw/core/FrameFormat;
-    .param p2    # Landroid/filterfw/core/FrameManager;
-    .param p3    # I
-    .param p4    # J
 
     invoke-direct/range {p0 .. p5}, Landroid/filterfw/core/Frame;-><init>(Landroid/filterfw/core/FrameFormat;Landroid/filterfw/core/FrameManager;IJ)V
 
@@ -189,7 +183,6 @@
 
 .method private initNew(Z)V
     .locals 3
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -248,7 +241,6 @@
 
 .method private initWithFbo(I)V
     .locals 4
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/filterfw/core/GLFrame;->getFormat()Landroid/filterfw/core/FrameFormat;
 
@@ -288,7 +280,6 @@
 
 .method private initWithTexture(I)V
     .locals 4
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/filterfw/core/GLFrame;->getFormat()Landroid/filterfw/core/FrameFormat;
 
@@ -387,7 +378,6 @@
 # virtual methods
 .method flushGPU(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Landroid/filterfw/core/GLFrameTimer;->get()Landroid/filterfw/core/StopWatchMap;
 
@@ -670,7 +660,6 @@
 
 .method init(Landroid/filterfw/core/GLEnvironment;)V
     .locals 6
-    .param p1    # Landroid/filterfw/core/GLEnvironment;
 
     invoke-virtual {p0}, Landroid/filterfw/core/GLFrame;->getFormat()Landroid/filterfw/core/FrameFormat;
 
@@ -907,7 +896,6 @@
 
 .method protected reset(Landroid/filterfw/core/FrameFormat;)V
     .locals 2
-    .param p1    # Landroid/filterfw/core/FrameFormat;
 
     invoke-direct {p0}, Landroid/filterfw/core/GLFrame;->nativeResetParams()Z
 
@@ -931,7 +919,6 @@
 
 .method public setBitmap(Landroid/graphics/Bitmap;)V
     .locals 3
-    .param p1    # Landroid/graphics/Bitmap;
 
     invoke-virtual {p0}, Landroid/filterfw/core/GLFrame;->assertFrameMutable()V
 
@@ -1003,9 +990,6 @@
 
 .method public setData(Ljava/nio/ByteBuffer;II)V
     .locals 3
-    .param p1    # Ljava/nio/ByteBuffer;
-    .param p2    # I
-    .param p3    # I
 
     invoke-virtual {p0}, Landroid/filterfw/core/GLFrame;->assertFrameMutable()V
 
@@ -1056,7 +1040,6 @@
 
 .method public setDataFromFrame(Landroid/filterfw/core/Frame;)V
     .locals 3
-    .param p1    # Landroid/filterfw/core/Frame;
 
     invoke-direct {p0}, Landroid/filterfw/core/GLFrame;->assertGLEnvValid()V
 
@@ -1184,7 +1167,6 @@
 
 .method public setFloats([F)V
     .locals 2
-    .param p1    # [F
 
     invoke-virtual {p0}, Landroid/filterfw/core/GLFrame;->assertFrameMutable()V
 
@@ -1210,7 +1192,6 @@
 
 .method public setInts([I)V
     .locals 2
-    .param p1    # [I
 
     invoke-virtual {p0}, Landroid/filterfw/core/GLFrame;->assertFrameMutable()V
 
@@ -1236,8 +1217,6 @@
 
 .method public setTextureParameter(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0}, Landroid/filterfw/core/GLFrame;->assertFrameMutable()V
 
@@ -1301,10 +1280,6 @@
 
 .method public setViewport(IIII)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-virtual {p0}, Landroid/filterfw/core/GLFrame;->assertFrameMutable()V
 
@@ -1315,7 +1290,6 @@
 
 .method public setViewport(Landroid/graphics/Rect;)V
     .locals 5
-    .param p1    # Landroid/graphics/Rect;
 
     invoke-virtual {p0}, Landroid/filterfw/core/GLFrame;->assertFrameMutable()V
 

@@ -14,8 +14,6 @@
 
 .method public static buildShortClassTag(Ljava/lang/Object;Ljava/lang/StringBuilder;)V
     .locals 3
-    .param p0    # Ljava/lang/Object;
-    .param p1    # Ljava/lang/StringBuilder;
 
     if-nez p0, :cond_0
 
@@ -88,7 +86,6 @@
 
 .method public static isObjectSelected(Ljava/lang/Object;)Z
     .locals 14
-    .param p0    # Ljava/lang/Object;
 
     const/4 v11, 0x0
 

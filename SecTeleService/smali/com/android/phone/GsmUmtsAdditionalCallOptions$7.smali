@@ -131,7 +131,7 @@
 
     iget-object v2, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions$7;->this$0:Lcom/android/phone/GsmUmtsAdditionalCallOptions;
 
-    # invokes: Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    # invokes: Lcom/android/phone/GsmUmtsAdditionalCallOptions;->getContentResolver()Landroid/content/ContentResolver;
     invoke-static {v2}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->access$1900(Lcom/android/phone/GsmUmtsAdditionalCallOptions;)Landroid/content/ContentResolver;
 
     move-result-object v2
@@ -171,7 +171,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v2}, Landroid/preference/DialogPreference;->getDialog()Landroid/app/Dialog;
+    invoke-virtual {v2}, Landroid/preference/EditTextPreference;->getDialog()Landroid/app/Dialog;
 
     move-result-object v2
 
@@ -185,7 +185,7 @@
     :cond_3
     iget-object v2, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions$7;->this$0:Lcom/android/phone/GsmUmtsAdditionalCallOptions;
 
-    # invokes: Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    # invokes: Lcom/android/phone/GsmUmtsAdditionalCallOptions;->getContentResolver()Landroid/content/ContentResolver;
     invoke-static {v2}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->access$2000(Lcom/android/phone/GsmUmtsAdditionalCallOptions;)Landroid/content/ContentResolver;
 
     move-result-object v2
@@ -199,7 +199,7 @@
     :cond_4
     iget-object v2, p0, Lcom/android/phone/GsmUmtsAdditionalCallOptions$7;->this$0:Lcom/android/phone/GsmUmtsAdditionalCallOptions;
 
-    # invokes: Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    # invokes: Lcom/android/phone/GsmUmtsAdditionalCallOptions;->getContentResolver()Landroid/content/ContentResolver;
     invoke-static {v2}, Lcom/android/phone/GsmUmtsAdditionalCallOptions;->access$2100(Lcom/android/phone/GsmUmtsAdditionalCallOptions;)Landroid/content/ContentResolver;
 
     move-result-object v2

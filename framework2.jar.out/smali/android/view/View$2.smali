@@ -50,7 +50,6 @@
 # virtual methods
 .method public apply(Landroid/view/View;)Z
     .locals 2
-    .param p1    # Landroid/view/View;
 
     iget v0, p1, Landroid/view/View;->mNextFocusForwardId:I
 
@@ -71,7 +70,6 @@
 
 .method public bridge synthetic apply(Ljava/lang/Object;)Z
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Landroid/view/View;
 

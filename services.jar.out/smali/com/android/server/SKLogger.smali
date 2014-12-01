@@ -256,7 +256,6 @@
 
 .method public static getStackTraceString(Ljava/lang/Throwable;)Ljava/lang/String;
     .locals 4
-    .param p0    # Ljava/lang/Throwable;
 
     if-nez p0, :cond_0
 
@@ -308,16 +307,6 @@
 # virtual methods
 .method public log(ILjava/lang/String;Ljava/lang/String;IIZZILjava/lang/String;Ljava/lang/String;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
-    .param p5    # I
-    .param p6    # Z
-    .param p7    # Z
-    .param p8    # I
-    .param p9    # Ljava/lang/String;
-    .param p10    # Ljava/lang/String;
 
     invoke-static {}, Lcom/android/server/SKLogger;->getCurrentLogLevel()I
 
@@ -587,8 +576,6 @@
 
 .method public logAll(Ljava/lang/String;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     new-instance v1, Landroid/text/format/Time;
 
@@ -665,9 +652,6 @@
 
 .method public logAll(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/Throwable;
 
     new-instance v1, Landroid/text/format/Time;
 

@@ -234,8 +234,6 @@
 
 .method public start(Landroid/view/View;Landroid/graphics/Rect;)V
     .locals 6
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/graphics/Rect;
 
     const/4 v1, 0x0
 

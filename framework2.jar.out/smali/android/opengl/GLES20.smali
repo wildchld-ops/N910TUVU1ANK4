@@ -1207,12 +1207,6 @@
 
 .method public static glVertexAttribPointer(IIIZILjava/nio/Buffer;)V
     .locals 7
-    .param p0    # I
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # I
-    .param p5    # Ljava/nio/Buffer;
 
     invoke-virtual {p5}, Ljava/nio/Buffer;->remaining()I
 

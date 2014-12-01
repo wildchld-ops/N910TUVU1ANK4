@@ -25,9 +25,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/am/ServiceRecord;Lcom/android/server/am/IntentBindRecord;Lcom/android/server/am/ProcessRecord;)V
     .locals 1
-    .param p1    # Lcom/android/server/am/ServiceRecord;
-    .param p2    # Lcom/android/server/am/IntentBindRecord;
-    .param p3    # Lcom/android/server/am/ProcessRecord;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -50,8 +47,6 @@
 # virtual methods
 .method dump(Ljava/io/PrintWriter;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/io/PrintWriter;
-    .param p2    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -112,8 +107,6 @@
 
 .method dumpInIntentBind(Ljava/io/PrintWriter;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/io/PrintWriter;
-    .param p2    # Ljava/lang/String;
 
     iget-object v2, p0, Lcom/android/server/am/AppBindRecord;->connections:Ljava/util/HashSet;
 

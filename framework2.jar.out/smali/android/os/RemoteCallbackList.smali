@@ -198,7 +198,6 @@
 
 .method public getBroadcastCookie(I)Ljava/lang/Object;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/os/RemoteCallbackList;->mActiveBroadcast:[Ljava/lang/Object;
 
@@ -213,7 +212,6 @@
 
 .method public getBroadcastItem(I)Landroid/os/IInterface;
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)TE;"
@@ -348,7 +346,6 @@
 
 .method public onCallbackDied(Landroid/os/IInterface;Ljava/lang/Object;)V
     .locals 0
-    .param p2    # Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;",
@@ -381,7 +378,6 @@
 
 .method public register(Landroid/os/IInterface;Ljava/lang/Object;)Z
     .locals 6
-    .param p2    # Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TE;",

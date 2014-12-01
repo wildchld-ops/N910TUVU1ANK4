@@ -59,7 +59,6 @@
 
 .method public static final getPresenceIconResourceId(I)I
     .locals 1
-    .param p0    # I
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -104,8 +103,6 @@
 
 .method public static final setPresenceIcon(Landroid/widget/ImageView;I)V
     .locals 1
-    .param p0    # Landroid/widget/ImageView;
-    .param p1    # I
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 

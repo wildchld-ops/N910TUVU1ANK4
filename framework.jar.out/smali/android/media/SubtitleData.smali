@@ -20,7 +20,6 @@
 # direct methods
 .method public constructor <init>(Landroid/os/Parcel;)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -44,7 +43,6 @@
 
 .method private parseParcel(Landroid/os/Parcel;)Z
     .locals 2
-    .param p1    # Landroid/os/Parcel;
 
     const/4 v0, 0x0
 

@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Lcom/android/mms/transaction/SmsReceiverService;Lcom/android/mms/transaction/SmsReceiverService$1;)V
     .locals 0
-    .param p1    # Lcom/android/mms/transaction/SmsReceiverService;
-    .param p2    # Lcom/android/mms/transaction/SmsReceiverService$1;
 
     invoke-direct {p0, p1}, Lcom/android/mms/transaction/SmsReceiverService$HeadsetEventReceiver;-><init>(Lcom/android/mms/transaction/SmsReceiverService;)V
 
@@ -43,8 +41,6 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/content/Intent;
 
     const/4 v1, 0x1
 

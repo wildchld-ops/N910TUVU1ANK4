@@ -74,8 +74,6 @@
 # direct methods
 .method private constructor <init>(Landroid/webkitsec/WebViewClassic;I)V
     .locals 1
-    .param p1    # Landroid/webkitsec/WebViewClassic;
-    .param p2    # I
 
     invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
 
@@ -102,11 +100,6 @@
 
 .method static synthetic access$000(Landroid/graphics/SurfaceTexture;IIII)Z
     .locals 1
-    .param p0    # Landroid/graphics/SurfaceTexture;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-static {p0, p1, p2, p3, p4}, Landroid/webkitsec/HTML5VideoViewProxy;->nativeSendSurfaceTexture(Landroid/graphics/SurfaceTexture;IIII)Z
 
@@ -117,8 +110,6 @@
 
 .method static synthetic access$1002(Landroid/webkitsec/HTML5VideoViewProxy;I)I
     .locals 0
-    .param p0    # Landroid/webkitsec/HTML5VideoViewProxy;
-    .param p1    # I
 
     iput p1, p0, Landroid/webkitsec/HTML5VideoViewProxy;->mSeekPosition:I
 
@@ -127,8 +118,6 @@
 
 .method static synthetic access$1100(Landroid/webkitsec/HTML5VideoViewProxy;I)V
     .locals 0
-    .param p0    # Landroid/webkitsec/HTML5VideoViewProxy;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/webkitsec/HTML5VideoViewProxy;->nativeOnEnded(I)V
 
@@ -137,8 +126,6 @@
 
 .method static synthetic access$1200(Landroid/webkitsec/HTML5VideoViewProxy;I)V
     .locals 0
-    .param p0    # Landroid/webkitsec/HTML5VideoViewProxy;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/webkitsec/HTML5VideoViewProxy;->nativeOnPaused(I)V
 
@@ -147,9 +134,6 @@
 
 .method static synthetic access$1300(Landroid/webkitsec/HTML5VideoViewProxy;Landroid/graphics/Bitmap;I)V
     .locals 0
-    .param p0    # Landroid/webkitsec/HTML5VideoViewProxy;
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Landroid/webkitsec/HTML5VideoViewProxy;->nativeOnPosterFetched(Landroid/graphics/Bitmap;I)V
 
@@ -158,9 +142,6 @@
 
 .method static synthetic access$1400(Landroid/webkitsec/HTML5VideoViewProxy;II)V
     .locals 0
-    .param p0    # Landroid/webkitsec/HTML5VideoViewProxy;
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Landroid/webkitsec/HTML5VideoViewProxy;->nativeOnTimeupdate(II)V
 
@@ -169,9 +150,6 @@
 
 .method static synthetic access$1500(Landroid/webkitsec/HTML5VideoViewProxy;II)V
     .locals 0
-    .param p0    # Landroid/webkitsec/HTML5VideoViewProxy;
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Landroid/webkitsec/HTML5VideoViewProxy;->nativeOnStopFullscreen(II)V
 
@@ -180,8 +158,6 @@
 
 .method static synthetic access$1600(Landroid/webkitsec/HTML5VideoViewProxy;I)V
     .locals 0
-    .param p0    # Landroid/webkitsec/HTML5VideoViewProxy;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/webkitsec/HTML5VideoViewProxy;->nativeOnRestoreState(I)V
 
@@ -190,8 +166,6 @@
 
 .method static synthetic access$400(Landroid/webkitsec/HTML5VideoViewProxy;Landroid/graphics/Bitmap;)V
     .locals 0
-    .param p0    # Landroid/webkitsec/HTML5VideoViewProxy;
-    .param p1    # Landroid/graphics/Bitmap;
 
     invoke-direct {p0, p1}, Landroid/webkitsec/HTML5VideoViewProxy;->doSetPoster(Landroid/graphics/Bitmap;)V
 
@@ -200,8 +174,6 @@
 
 .method static synthetic access$802(Landroid/webkitsec/HTML5VideoViewProxy;I)I
     .locals 0
-    .param p0    # Landroid/webkitsec/HTML5VideoViewProxy;
-    .param p1    # I
 
     iput p1, p0, Landroid/webkitsec/HTML5VideoViewProxy;->mDuration:I
 
@@ -210,11 +182,6 @@
 
 .method static synthetic access$900(Landroid/webkitsec/HTML5VideoViewProxy;IIII)V
     .locals 0
-    .param p0    # Landroid/webkitsec/HTML5VideoViewProxy;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-direct {p0, p1, p2, p3, p4}, Landroid/webkitsec/HTML5VideoViewProxy;->nativeOnPrepared(IIII)V
 
@@ -235,7 +202,6 @@
 
 .method private doSetPoster(Landroid/graphics/Bitmap;)V
     .locals 3
-    .param p1    # Landroid/graphics/Bitmap;
 
     if-nez p1, :cond_0
 
@@ -264,8 +230,6 @@
 
 .method public static getInstance(Landroid/webkitsec/WebViewCore;I)Landroid/webkitsec/HTML5VideoViewProxy;
     .locals 2
-    .param p0    # Landroid/webkitsec/WebViewCore;
-    .param p1    # I
 
     new-instance v0, Landroid/webkitsec/HTML5VideoViewProxy;
 
@@ -384,7 +348,6 @@
 
 .method public dispatchOnStopFullScreen(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v1, p0, Landroid/webkitsec/HTML5VideoViewProxy;->mWebCoreHandler:Landroid/os/Handler;
 
@@ -415,8 +378,6 @@
 
 .method public enterFullScreenVideo(ILjava/lang/String;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/webkitsec/HTML5VideoViewProxy;->mWebView:Landroid/webkitsec/WebViewClassic;
 
@@ -427,8 +388,6 @@
 
 .method public enterFullscreenForVideoLayer(Ljava/lang/String;I)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     if-nez p1, :cond_0
 
@@ -483,7 +442,6 @@
 
 .method public handleMessage(Landroid/os/Message;)V
     .locals 11
-    .param p1    # Landroid/os/Message;
 
     const/4 v10, 0x1
 
@@ -851,7 +809,6 @@
 
 .method public loadPoster(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -891,7 +848,6 @@
 
 .method public onCompletion(Landroid/media/MediaPlayer;)V
     .locals 3
-    .param p1    # Landroid/media/MediaPlayer;
 
     const/16 v0, 0xc9
 
@@ -910,9 +866,6 @@
 
 .method public onError(Landroid/media/MediaPlayer;II)Z
     .locals 1
-    .param p1    # Landroid/media/MediaPlayer;
-    .param p2    # I
-    .param p3    # I
 
     const/16 v0, 0x67
 
@@ -929,7 +882,6 @@
 
 .method public onFrameAvailable(Landroid/graphics/SurfaceTexture;)V
     .locals 1
-    .param p1    # Landroid/graphics/SurfaceTexture;
 
     iget-object v0, p0, Landroid/webkitsec/HTML5VideoViewProxy;->mWebView:Landroid/webkitsec/WebViewClassic;
 
@@ -940,9 +892,6 @@
 
 .method public onInfo(Landroid/media/MediaPlayer;II)Z
     .locals 1
-    .param p1    # Landroid/media/MediaPlayer;
-    .param p2    # I
-    .param p3    # I
 
     const/16 v0, 0x2bd
 
@@ -980,7 +929,6 @@
 
 .method public onPrepared(Landroid/media/MediaPlayer;)V
     .locals 5
-    .param p1    # Landroid/media/MediaPlayer;
 
     invoke-static {}, Landroid/webkitsec/HTML5VideoViewProxy$VideoPlayer;->onPrepared()V
 
@@ -1043,7 +991,6 @@
 
 .method public onStopFullScreen(Z)V
     .locals 0
-    .param p1    # Z
 
     invoke-static {p1}, Landroid/webkitsec/HTML5VideoViewProxy$VideoPlayer;->onStopFullScreen(Z)V
 
@@ -1088,9 +1035,6 @@
 
 .method public play(Ljava/lang/String;II)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     if-nez p1, :cond_0
 
@@ -1120,7 +1064,6 @@
 
 .method public seek(I)V
     .locals 2
-    .param p1    # I
 
     const/16 v1, 0x65
 
@@ -1141,7 +1084,6 @@
 
 .method public setBaseLayer(I)V
     .locals 0
-    .param p1    # I
 
     invoke-static {p1}, Landroid/webkitsec/HTML5VideoViewProxy$VideoPlayer;->setBaseLayer(I)V
 
@@ -1150,7 +1092,6 @@
 
 .method public setVolume(F)V
     .locals 2
-    .param p1    # F
 
     const/16 v1, 0x6c
 

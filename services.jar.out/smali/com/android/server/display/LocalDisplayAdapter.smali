@@ -60,10 +60,6 @@
 
 .method public constructor <init>(Lcom/android/server/display/DisplayManagerService$SyncRoot;Landroid/content/Context;Landroid/os/Handler;Lcom/android/server/display/DisplayAdapter$Listener;)V
     .locals 6
-    .param p1    # Lcom/android/server/display/DisplayManagerService$SyncRoot;
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/os/Handler;
-    .param p4    # Lcom/android/server/display/DisplayAdapter$Listener;
 
     const-string v5, "LocalDisplayAdapter"
 
@@ -96,8 +92,6 @@
 
 .method static synthetic access$000(Lcom/android/server/display/LocalDisplayAdapter;I)V
     .locals 0
-    .param p0    # Lcom/android/server/display/LocalDisplayAdapter;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/display/LocalDisplayAdapter;->tryConnectDisplayLocked(I)V
 
@@ -106,8 +100,6 @@
 
 .method static synthetic access$100(Lcom/android/server/display/LocalDisplayAdapter;I)V
     .locals 0
-    .param p0    # Lcom/android/server/display/LocalDisplayAdapter;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/display/LocalDisplayAdapter;->tryDisconnectDisplayLocked(I)V
 
@@ -116,7 +108,6 @@
 
 .method private tryConnectDisplayLocked(I)V
     .locals 5
-    .param p1    # I
 
     invoke-static {p1}, Landroid/view/SurfaceControl;->getBuiltInDisplay(I)Landroid/os/IBinder;
 
@@ -184,7 +175,6 @@
 
 .method private tryDisconnectDisplayLocked(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/server/display/LocalDisplayAdapter;->mDevices:Landroid/util/SparseArray;
 

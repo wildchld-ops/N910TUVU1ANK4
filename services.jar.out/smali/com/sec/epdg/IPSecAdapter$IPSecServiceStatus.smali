@@ -35,8 +35,6 @@
 
 .method synthetic constructor <init>(Lcom/sec/epdg/IPSecAdapter;Lcom/sec/epdg/IPSecAdapter$1;)V
     .locals 0
-    .param p1    # Lcom/sec/epdg/IPSecAdapter;
-    .param p2    # Lcom/sec/epdg/IPSecAdapter$1;
 
     invoke-direct {p0, p1}, Lcom/sec/epdg/IPSecAdapter$IPSecServiceStatus;-><init>(Lcom/sec/epdg/IPSecAdapter;)V
 

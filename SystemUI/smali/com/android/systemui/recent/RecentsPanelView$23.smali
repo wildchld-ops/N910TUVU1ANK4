@@ -36,7 +36,6 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 5
-    .param p1    # Landroid/view/View;
 
     iget-object v2, p0, Lcom/android/systemui/recent/RecentsPanelView$23;->this$0:Lcom/android/systemui/recent/RecentsPanelView;
 

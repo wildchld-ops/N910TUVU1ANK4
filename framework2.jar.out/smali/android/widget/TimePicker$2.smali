@@ -36,9 +36,6 @@
 # virtual methods
 .method public onValueChange(Landroid/widget/NumberPicker;II)V
     .locals 3
-    .param p1    # Landroid/widget/NumberPicker;
-    .param p2    # I
-    .param p3    # I
 
     const/16 v2, 0xc
 

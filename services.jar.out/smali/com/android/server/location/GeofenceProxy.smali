@@ -42,13 +42,6 @@
 # direct methods
 .method private constructor <init>(Landroid/content/Context;IIILandroid/os/Handler;Landroid/location/IGpsGeofenceHardware;Landroid/location/IFusedGeofenceHardware;)V
     .locals 10
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Landroid/os/Handler;
-    .param p6    # Landroid/location/IGpsGeofenceHardware;
-    .param p7    # Landroid/location/IFusedGeofenceHardware;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -115,7 +108,6 @@
 
 .method static synthetic access$000(Lcom/android/server/location/GeofenceProxy;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/server/location/GeofenceProxy;
 
     iget-object v0, p0, Lcom/android/server/location/GeofenceProxy;->mHandler:Landroid/os/Handler;
 
@@ -124,7 +116,6 @@
 
 .method static synthetic access$100(Lcom/android/server/location/GeofenceProxy;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Lcom/android/server/location/GeofenceProxy;
 
     iget-object v0, p0, Lcom/android/server/location/GeofenceProxy;->mLock:Ljava/lang/Object;
 
@@ -133,7 +124,6 @@
 
 .method static synthetic access$200(Lcom/android/server/location/GeofenceProxy;)Landroid/hardware/location/IGeofenceHardware;
     .locals 1
-    .param p0    # Lcom/android/server/location/GeofenceProxy;
 
     iget-object v0, p0, Lcom/android/server/location/GeofenceProxy;->mGeofenceHardware:Landroid/hardware/location/IGeofenceHardware;
 
@@ -142,8 +132,6 @@
 
 .method static synthetic access$202(Lcom/android/server/location/GeofenceProxy;Landroid/hardware/location/IGeofenceHardware;)Landroid/hardware/location/IGeofenceHardware;
     .locals 0
-    .param p0    # Lcom/android/server/location/GeofenceProxy;
-    .param p1    # Landroid/hardware/location/IGeofenceHardware;
 
     iput-object p1, p0, Lcom/android/server/location/GeofenceProxy;->mGeofenceHardware:Landroid/hardware/location/IGeofenceHardware;
 
@@ -152,7 +140,6 @@
 
 .method static synthetic access$300(Lcom/android/server/location/GeofenceProxy;)V
     .locals 0
-    .param p0    # Lcom/android/server/location/GeofenceProxy;
 
     invoke-direct {p0}, Lcom/android/server/location/GeofenceProxy;->setGeofenceHardwareInProviderLocked()V
 
@@ -161,7 +148,6 @@
 
 .method static synthetic access$400(Lcom/android/server/location/GeofenceProxy;)V
     .locals 0
-    .param p0    # Lcom/android/server/location/GeofenceProxy;
 
     invoke-direct {p0}, Lcom/android/server/location/GeofenceProxy;->setGpsGeofenceLocked()V
 
@@ -170,7 +156,6 @@
 
 .method static synthetic access$500(Lcom/android/server/location/GeofenceProxy;)V
     .locals 0
-    .param p0    # Lcom/android/server/location/GeofenceProxy;
 
     invoke-direct {p0}, Lcom/android/server/location/GeofenceProxy;->setFusedGeofenceLocked()V
 
@@ -215,13 +200,6 @@
 
 .method public static createAndBind(Landroid/content/Context;IIILandroid/os/Handler;Landroid/location/IGpsGeofenceHardware;Landroid/location/IFusedGeofenceHardware;)Lcom/android/server/location/GeofenceProxy;
     .locals 8
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/os/Handler;
-    .param p5    # Landroid/location/IGpsGeofenceHardware;
-    .param p6    # Landroid/location/IFusedGeofenceHardware;
 
     new-instance v0, Lcom/android/server/location/GeofenceProxy;
 

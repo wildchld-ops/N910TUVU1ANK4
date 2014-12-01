@@ -49,8 +49,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/mms/ui/ComposeMessageFragment;Landroid/content/Context;ILjava/util/ArrayList;)V
     .locals 1
-    .param p2    # Landroid/content/Context;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -90,9 +88,6 @@
 # virtual methods
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 7
-    .param p1    # I
-    .param p2    # Landroid/view/View;
-    .param p3    # Landroid/view/ViewGroup;
 
     const/4 v6, 0x0
 
@@ -166,7 +161,6 @@
 
 .method public setContactInfo(Lcom/android/mms/data/Contact;)V
     .locals 0
-    .param p1    # Lcom/android/mms/data/Contact;
 
     iput-object p1, p0, Lcom/android/mms/ui/ComposeMessageFragment$HoverRecipientListAdapter;->mContact:Lcom/android/mms/data/Contact;
 
@@ -175,7 +169,6 @@
 
 .method public setContactInfo(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 

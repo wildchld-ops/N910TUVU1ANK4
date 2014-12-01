@@ -61,7 +61,6 @@
 
 .method static synthetic access$2300(Lcom/android/server/accessibility/ScreenMagnifier$MotionEventInfo;)Lcom/android/server/accessibility/ScreenMagnifier$MotionEventInfo;
     .locals 1
-    .param p0    # Lcom/android/server/accessibility/ScreenMagnifier$MotionEventInfo;
 
     iget-object v0, p0, Lcom/android/server/accessibility/ScreenMagnifier$MotionEventInfo;->mNext:Lcom/android/server/accessibility/ScreenMagnifier$MotionEventInfo;
 
@@ -70,8 +69,6 @@
 
 .method static synthetic access$2302(Lcom/android/server/accessibility/ScreenMagnifier$MotionEventInfo;Lcom/android/server/accessibility/ScreenMagnifier$MotionEventInfo;)Lcom/android/server/accessibility/ScreenMagnifier$MotionEventInfo;
     .locals 0
-    .param p0    # Lcom/android/server/accessibility/ScreenMagnifier$MotionEventInfo;
-    .param p1    # Lcom/android/server/accessibility/ScreenMagnifier$MotionEventInfo;
 
     iput-object p1, p0, Lcom/android/server/accessibility/ScreenMagnifier$MotionEventInfo;->mNext:Lcom/android/server/accessibility/ScreenMagnifier$MotionEventInfo;
 
@@ -108,9 +105,6 @@
 
 .method private initialize(Landroid/view/MotionEvent;Landroid/view/MotionEvent;I)V
     .locals 2
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # Landroid/view/MotionEvent;
-    .param p3    # I
 
     invoke-static {p1}, Landroid/view/MotionEvent;->obtain(Landroid/view/MotionEvent;)Landroid/view/MotionEvent;
 
@@ -137,9 +131,6 @@
 
 .method public static obtain(Landroid/view/MotionEvent;Landroid/view/MotionEvent;I)Lcom/android/server/accessibility/ScreenMagnifier$MotionEventInfo;
     .locals 3
-    .param p0    # Landroid/view/MotionEvent;
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # I
 
     sget-object v2, Lcom/android/server/accessibility/ScreenMagnifier$MotionEventInfo;->sLock:Ljava/lang/Object;
 

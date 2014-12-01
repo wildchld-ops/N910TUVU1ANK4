@@ -21,8 +21,6 @@
 # direct methods
 .method constructor <init>(Landroid/net/wifi/p2p/WifiP2pService$P2pStateMachine;JJ)V
     .locals 0
-    .param p2    # J
-    .param p4    # J
 
     iput-object p1, p0, Landroid/net/wifi/p2p/WifiP2pService$P2pStateMachine$9;->this$1:Landroid/net/wifi/p2p/WifiP2pService$P2pStateMachine;
 
@@ -72,7 +70,6 @@
 
 .method public onTick(J)V
     .locals 7
-    .param p1    # J
 
     iget-object v0, p0, Landroid/net/wifi/p2p/WifiP2pService$P2pStateMachine$9;->this$1:Landroid/net/wifi/p2p/WifiP2pService$P2pStateMachine;
 

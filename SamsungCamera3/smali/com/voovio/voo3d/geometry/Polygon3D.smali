@@ -161,8 +161,6 @@
 # virtual methods
 .method public AddEdge(Lcom/voovio/voo3d/geometry/Edge3D;F)V
     .locals 2
-    .param p1    # Lcom/voovio/voo3d/geometry/Edge3D;
-    .param p2    # F
 
     iget-object v0, p0, Lcom/voovio/voo3d/geometry/Polygon3D;->m_aEdges:Ljava/util/ArrayList;
 
@@ -195,7 +193,6 @@
 
 .method public AddVertex(Lcom/voovio/voo3d/geometry/Vertex3D;)V
     .locals 1
-    .param p1    # Lcom/voovio/voo3d/geometry/Vertex3D;
 
     iget-object v0, p0, Lcom/voovio/voo3d/geometry/Polygon3D;->m_aVertices:Ljava/util/ArrayList;
 
@@ -206,7 +203,6 @@
 
 .method public GetSlidePoint(Lcom/voovio/voo3d/data/Vector3;)Lcom/voovio/voo3d/data/Vector3;
     .locals 5
-    .param p1    # Lcom/voovio/voo3d/data/Vector3;
 
     iget-object v3, p0, Lcom/voovio/voo3d/geometry/Polygon3D;->m_ptI:Lcom/voovio/voo3d/data/Vector3;
 
@@ -259,7 +255,6 @@
 
 .method public SetNormal(Lcom/voovio/voo3d/data/Vector3;)V
     .locals 8
-    .param p1    # Lcom/voovio/voo3d/data/Vector3;
 
     const/4 v7, 0x1
 
@@ -451,8 +446,6 @@
 
 .method public TestCollision(Lcom/voovio/voo3d/data/Vector3;Lcom/voovio/voo3d/data/Vector3;)Z
     .locals 1
-    .param p1    # Lcom/voovio/voo3d/data/Vector3;
-    .param p2    # Lcom/voovio/voo3d/data/Vector3;
 
     const/4 v0, 0x0
 
@@ -465,9 +458,6 @@
 
 .method public TestCollision(Lcom/voovio/voo3d/data/Vector3;Lcom/voovio/voo3d/data/Vector3;F)Z
     .locals 19
-    .param p1    # Lcom/voovio/voo3d/data/Vector3;
-    .param p2    # Lcom/voovio/voo3d/data/Vector3;
-    .param p3    # F
 
     move-object/from16 v0, p0
 
@@ -794,7 +784,6 @@
 
 .method public TestPointSide(Lcom/voovio/voo3d/data/Vector3;)I
     .locals 1
-    .param p1    # Lcom/voovio/voo3d/data/Vector3;
 
     const/4 v0, 0x0
 
@@ -807,8 +796,6 @@
 
 .method public TestPointSide(Lcom/voovio/voo3d/data/Vector3;F)I
     .locals 3
-    .param p1    # Lcom/voovio/voo3d/data/Vector3;
-    .param p2    # F
 
     iget-object v1, p0, Lcom/voovio/voo3d/geometry/Polygon3D;->m_vN:Lcom/voovio/voo3d/data/Vector3;
 

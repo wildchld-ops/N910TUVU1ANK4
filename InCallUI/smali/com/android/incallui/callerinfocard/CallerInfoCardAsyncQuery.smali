@@ -30,7 +30,6 @@
 
 .method static synthetic access$000(Landroid/net/Uri;)Ljava/lang/String;
     .locals 1
-    .param p0    # Landroid/net/Uri;
 
     invoke-static {p0}, Lcom/android/incallui/callerinfocard/CallerInfoCardAsyncQuery;->sanitizeUriToString(Landroid/net/Uri;)Ljava/lang/String;
 
@@ -41,7 +40,6 @@
 
 .method static synthetic access$100(Lcom/android/incallui/callerinfocard/CallerInfoCardAsyncQuery;)V
     .locals 0
-    .param p0    # Lcom/android/incallui/callerinfocard/CallerInfoCardAsyncQuery;
 
     invoke-direct {p0}, Lcom/android/incallui/callerinfocard/CallerInfoCardAsyncQuery;->release()V
 
@@ -50,8 +48,6 @@
 
 .method private allocate(Landroid/content/Context;Landroid/net/Uri;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/net/Uri;
 
     if-eqz p1, :cond_0
 
@@ -115,7 +111,6 @@
 
 .method private static sanitizeUriToString(Landroid/net/Uri;)Ljava/lang/String;
     .locals 4
-    .param p0    # Landroid/net/Uri;
 
     if-eqz p0, :cond_1
 
@@ -167,12 +162,6 @@
 
 .method public static startQuery(ILandroid/content/Context;Landroid/database/Cursor;Lcom/android/incallui/callerinfocard/CallerInfoCardAsyncQuery$OnQueryCompleteListener;Ljava/lang/Object;Z)Lcom/android/incallui/callerinfocard/CallerInfoCardAsyncQuery;
     .locals 12
-    .param p0    # I
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/database/Cursor;
-    .param p3    # Lcom/android/incallui/callerinfocard/CallerInfoCardAsyncQuery$OnQueryCompleteListener;
-    .param p4    # Ljava/lang/Object;
-    .param p5    # Z
 
     const-string v1, "CallerInfoCardAsyncQuery"
 
@@ -295,9 +284,6 @@
 
 .method private static updateCookieWrapper(ILandroid/database/Cursor;Lcom/android/incallui/callerinfocard/CallerInfoCardAsyncQuery$CookieWrapper;)V
     .locals 6
-    .param p0    # I
-    .param p1    # Landroid/database/Cursor;
-    .param p2    # Lcom/android/incallui/callerinfocard/CallerInfoCardAsyncQuery$CookieWrapper;
 
     const/4 v5, -0x1
 

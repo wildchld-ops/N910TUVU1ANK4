@@ -72,8 +72,6 @@
 
 .method public static declared-synchronized deployGuide(Landroid/app/Activity;Landroid/content/Intent;)V
     .locals 10
-    .param p0    # Landroid/app/Activity;
-    .param p1    # Landroid/content/Intent;
 
     const-class v7, Lcom/android/launcher2/guide/GuideFragment;
 
@@ -602,7 +600,6 @@
 
 .method public static findMainView(Landroid/app/Activity;)Landroid/view/ViewGroup;
     .locals 4
-    .param p0    # Landroid/app/Activity;
 
     const/4 v1, 0x0
 
@@ -760,7 +757,6 @@
 
 .method public static showCompleteDialog(Landroid/app/Activity;)V
     .locals 3
-    .param p0    # Landroid/app/Activity;
 
     const/4 v2, 0x0
 
@@ -814,7 +810,6 @@
 
 .method public static showToast(Landroid/content/Context;)V
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     const v0, 0x7f100010
 
@@ -837,7 +832,6 @@
 
 .method public static showToast_createfolder(Landroid/content/Context;)V
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     const/4 v2, 0x0
 
@@ -858,7 +852,6 @@
 
 .method public static showWrongActionDialog(Landroid/app/Activity;)V
     .locals 5
-    .param p0    # Landroid/app/Activity;
 
     const/4 v4, 0x1
 
@@ -926,9 +919,6 @@
 # virtual methods
 .method public declared-synchronized onConfigurationChanged(Landroid/content/res/Configuration;Landroid/app/Activity;Landroid/content/Intent;)V
     .locals 9
-    .param p1    # Landroid/content/res/Configuration;
-    .param p2    # Landroid/app/Activity;
-    .param p3    # Landroid/content/Intent;
 
     monitor-enter p0
 

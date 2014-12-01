@@ -98,7 +98,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0, p1}, Lcom/android/internal/widget/SignView;-><init>(Landroid/content/Context;)V
 
@@ -111,7 +110,6 @@
 
 .method private addToPathForDrawing(I)V
     .locals 16
-    .param p1    # I
 
     move-object/from16 v0, p0
 
@@ -514,7 +512,6 @@
 
 .method private distanceTo(Landroid/graphics/Point;)F
     .locals 4
-    .param p1    # Landroid/graphics/Point;
 
     iget v0, p1, Landroid/graphics/Point;->x:I
 
@@ -567,10 +564,6 @@
 
 .method private drawBeautyEffect(Landroid/graphics/Canvas;Landroid/graphics/Paint;FF)V
     .locals 13
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # Landroid/graphics/Paint;
-    .param p3    # F
-    .param p4    # F
 
     invoke-virtual {p2}, Landroid/graphics/Paint;->getStrokeWidth()F
 
@@ -755,7 +748,6 @@
 
 .method private getStrokeWidth(F)F
     .locals 8
-    .param p1    # F
 
     iget v5, p0, Lcom/android/internal/widget/BeautySignView;->MAX_WIDTH:I
 
@@ -798,7 +790,6 @@
 
 .method private getVelocityFrom(Landroid/graphics/Point;)F
     .locals 6
-    .param p1    # Landroid/graphics/Point;
 
     const/4 v0, 0x0
 
@@ -856,13 +847,6 @@
 
 .method doBezier(IFFFFJF)V
     .locals 25
-    .param p1    # I
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # F
-    .param p6    # J
-    .param p8    # F
 
     move-object/from16 v0, p0
 
@@ -1167,9 +1151,6 @@
 
 .method protected handleActionDown(Landroid/view/MotionEvent;FF)V
     .locals 9
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # F
-    .param p3    # F
 
     const/4 v6, 0x0
 
@@ -1248,9 +1229,6 @@
 
 .method protected handleActionMove(Landroid/view/MotionEvent;FF)V
     .locals 11
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # F
-    .param p3    # F
 
     iget-boolean v0, p0, Lcom/android/internal/widget/SignView;->mUseHistoricalEvent:Z
 
@@ -1508,9 +1486,6 @@
 
 .method protected handleActionUp(Landroid/view/MotionEvent;FF)V
     .locals 9
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # F
-    .param p3    # F
 
     iget-object v8, p0, Lcom/android/internal/widget/BeautySignView;->mBeautyEffectInputData:Ljava/util/ArrayList;
 
@@ -1567,10 +1542,6 @@
 
 .method protected handleMoveEventWithBezier(IIJF)V
     .locals 15
-    .param p1    # I
-    .param p2    # I
-    .param p3    # J
-    .param p5    # F
 
     sget-boolean v1, Lcom/android/internal/widget/BeautySignView;->DBG_TOUCH:Z
 
@@ -1893,7 +1864,6 @@
 
 .method protected init(Landroid/content/Context;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
 
     const-wide/16 v3, 0x0
 
@@ -1960,7 +1930,6 @@
 
 .method protected onDraw(Landroid/graphics/Canvas;)V
     .locals 3
-    .param p1    # Landroid/graphics/Canvas;
 
     const/4 v2, 0x0
 

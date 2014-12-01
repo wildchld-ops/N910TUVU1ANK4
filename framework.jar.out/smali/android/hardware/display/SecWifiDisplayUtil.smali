@@ -24,7 +24,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -546,7 +545,6 @@
 
 .method private stopPeriodicScanning(Z)V
     .locals 5
-    .param p1    # Z
 
     iget-object v3, p0, Landroid/hardware/display/SecWifiDisplayUtil;->mContext:Landroid/content/Context;
 
@@ -877,7 +875,6 @@
 
 .method public setActivityState(Landroid/hardware/display/DisplayManager$WfdAppState;)V
     .locals 7
-    .param p1    # Landroid/hardware/display/DisplayManager$WfdAppState;
 
     const/4 v6, 0x0
 

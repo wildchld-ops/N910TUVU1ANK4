@@ -36,7 +36,6 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Lcom/android/mms/freemessage/FreeMessageBubbleView$1$1$2;->this$2:Lcom/android/mms/freemessage/FreeMessageBubbleView$1$1;
 

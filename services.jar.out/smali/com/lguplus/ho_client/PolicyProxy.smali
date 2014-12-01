@@ -38,9 +38,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;[Landroid/net/NetworkStateTracker;Z)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # [Landroid/net/NetworkStateTracker;
-    .param p3    # Z
 
     const/4 v1, 0x0
 
@@ -110,8 +107,6 @@
 # virtual methods
 .method public delayHandleConnect(Landroid/os/Handler;I)Z
     .locals 2
-    .param p1    # Landroid/os/Handler;
-    .param p2    # I
 
     const/4 v0, 0x0
 
@@ -145,7 +140,6 @@
 
 .method declared-synchronized getHoClient(Z)V
     .locals 11
-    .param p1    # Z
 
     monitor-enter p0
 
@@ -406,10 +400,6 @@
 
 .method public isRequiredToRestoreDefaultNetwork(Landroid/os/Handler;ILjava/lang/String;I)Z
     .locals 3
-    .param p1    # Landroid/os/Handler;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
 
     const/4 v0, 0x1
 
@@ -461,8 +451,6 @@
 
 .method public isTeardownRequiredOnConnect(II)Z
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     const/4 v1, 0x0
 
@@ -563,8 +551,6 @@
 
 .method public isValidDefaultNetworkOnConnect(II)Z
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     const/4 v1, 0x1
 
@@ -676,7 +662,6 @@
 
 .method public isValidDefaultNetworkOnFailover(I)Z
     .locals 5
-    .param p1    # I
 
     const/4 v1, 0x1
 
@@ -791,7 +776,6 @@
 
 .method log(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "lguplusHandover"
 
@@ -802,7 +786,6 @@
 
 .method public setDefaultNetworkChange(I)V
     .locals 1
-    .param p1    # I
 
     const-string v0, "get HOClient, setDefaultNetworkChange"
 
@@ -834,7 +817,6 @@
 
 .method public setMobileEnableWhenNSWOActived(Z)V
     .locals 1
-    .param p1    # Z
 
     const-string/jumbo v0, "policy proxy setMobileEnableWhenNSWOActived"
 
@@ -866,7 +848,6 @@
 
 .method public setNetworkInfo(I)V
     .locals 7
-    .param p1    # I
 
     iget-boolean v5, p0, Lcom/lguplus/ho_client/PolicyProxy;->isEnabled:Z
 

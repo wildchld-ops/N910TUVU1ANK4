@@ -35,8 +35,6 @@
 
 .method synthetic constructor <init>(Landroid/webkitsec/JsDialogHelper;Landroid/webkitsec/JsDialogHelper$1;)V
     .locals 0
-    .param p1    # Landroid/webkitsec/JsDialogHelper;
-    .param p2    # Landroid/webkitsec/JsDialogHelper$1;
 
     invoke-direct {p0, p1}, Landroid/webkitsec/JsDialogHelper$CancelListener;-><init>(Landroid/webkitsec/JsDialogHelper;)V
 
@@ -47,7 +45,6 @@
 # virtual methods
 .method public onCancel(Landroid/content/DialogInterface;)V
     .locals 1
-    .param p1    # Landroid/content/DialogInterface;
 
     iget-object v0, p0, Landroid/webkitsec/JsDialogHelper$CancelListener;->this$0:Landroid/webkitsec/JsDialogHelper;
 
@@ -63,8 +60,6 @@
 
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 1
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     iget-object v0, p0, Landroid/webkitsec/JsDialogHelper$CancelListener;->this$0:Landroid/webkitsec/JsDialogHelper;
 

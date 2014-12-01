@@ -18,7 +18,6 @@
 # virtual methods
 .method mutateStackForInfixTranslation(Ljava/util/Stack;Ljava/lang/StringBuilder;)V
     .locals 3
-    .param p2    # Ljava/lang/StringBuilder;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

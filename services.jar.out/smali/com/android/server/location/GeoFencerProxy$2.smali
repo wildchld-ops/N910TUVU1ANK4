@@ -33,7 +33,6 @@
 # virtual methods
 .method public geoFenceExpired(Landroid/app/PendingIntent;)V
     .locals 3
-    .param p1    # Landroid/app/PendingIntent;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

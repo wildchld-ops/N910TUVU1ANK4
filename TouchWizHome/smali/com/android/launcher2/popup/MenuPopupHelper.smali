@@ -54,8 +54,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Lcom/android/launcher2/popup/MenuBuilder;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/launcher2/popup/MenuBuilder;
 
     const/4 v0, 0x0
 
@@ -68,9 +66,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Lcom/android/launcher2/popup/MenuBuilder;Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/launcher2/popup/MenuBuilder;
-    .param p3    # Landroid/view/View;
 
     const/4 v0, 0x0
 
@@ -81,10 +76,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Lcom/android/launcher2/popup/MenuBuilder;Landroid/view/View;Z)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/launcher2/popup/MenuBuilder;
-    .param p3    # Landroid/view/View;
-    .param p4    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -125,7 +116,6 @@
 
 .method static synthetic access$200(Lcom/android/launcher2/popup/MenuPopupHelper;)Z
     .locals 1
-    .param p0    # Lcom/android/launcher2/popup/MenuPopupHelper;
 
     iget-boolean v0, p0, Lcom/android/launcher2/popup/MenuPopupHelper;->mOverflowOnly:Z
 
@@ -134,7 +124,6 @@
 
 .method static synthetic access$300(Lcom/android/launcher2/popup/MenuPopupHelper;)Landroid/view/LayoutInflater;
     .locals 1
-    .param p0    # Lcom/android/launcher2/popup/MenuPopupHelper;
 
     iget-object v0, p0, Lcom/android/launcher2/popup/MenuPopupHelper;->mInflater:Landroid/view/LayoutInflater;
 
@@ -143,7 +132,6 @@
 
 .method static synthetic access$400(Lcom/android/launcher2/popup/MenuPopupHelper;)Lcom/android/launcher2/popup/MenuBuilder;
     .locals 1
-    .param p0    # Lcom/android/launcher2/popup/MenuPopupHelper;
 
     iget-object v0, p0, Lcom/android/launcher2/popup/MenuPopupHelper;->mMenu:Lcom/android/launcher2/popup/MenuBuilder;
 
@@ -152,7 +140,6 @@
 
 .method static synthetic access$500(Lcom/android/launcher2/popup/MenuPopupHelper;)Lcom/android/launcher2/popup/MenuPopupHelper$MenuAdapter;
     .locals 1
-    .param p0    # Lcom/android/launcher2/popup/MenuPopupHelper;
 
     iget-object v0, p0, Lcom/android/launcher2/popup/MenuPopupHelper;->mAdapter:Lcom/android/launcher2/popup/MenuPopupHelper$MenuAdapter;
 
@@ -161,7 +148,6 @@
 
 .method private measureContentWidth(Landroid/widget/ListAdapter;)I
     .locals 10
-    .param p1    # Landroid/widget/ListAdapter;
 
     const/4 v8, 0x0
 
@@ -240,8 +226,6 @@
 # virtual methods
 .method public collapseItemActionView(Lcom/android/launcher2/popup/MenuBuilder;Lcom/android/launcher2/popup/MenuItemImpl;)Z
     .locals 1
-    .param p1    # Lcom/android/launcher2/popup/MenuBuilder;
-    .param p2    # Lcom/android/launcher2/popup/MenuItemImpl;
 
     const/4 v0, 0x0
 
@@ -267,8 +251,6 @@
 
 .method public expandItemActionView(Lcom/android/launcher2/popup/MenuBuilder;Lcom/android/launcher2/popup/MenuItemImpl;)Z
     .locals 1
-    .param p1    # Lcom/android/launcher2/popup/MenuBuilder;
-    .param p2    # Lcom/android/launcher2/popup/MenuItemImpl;
 
     const/4 v0, 0x0
 
@@ -293,7 +275,6 @@
 
 .method public getMenuView(Landroid/view/ViewGroup;)Lcom/android/launcher2/popup/MenuView;
     .locals 2
-    .param p1    # Landroid/view/ViewGroup;
 
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
@@ -306,8 +287,6 @@
 
 .method public initForMenu(Landroid/content/Context;Lcom/android/launcher2/popup/MenuBuilder;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/launcher2/popup/MenuBuilder;
 
     return-void
 .end method
@@ -340,8 +319,6 @@
 
 .method public onCloseMenu(Lcom/android/launcher2/popup/MenuBuilder;Z)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/popup/MenuBuilder;
-    .param p2    # Z
 
     iget-object v0, p0, Lcom/android/launcher2/popup/MenuPopupHelper;->mMenu:Lcom/android/launcher2/popup/MenuBuilder;
 
@@ -453,9 +430,6 @@
 
 .method public onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
     .locals 4
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -486,9 +460,6 @@
 
 .method public onKey(Landroid/view/View;ILandroid/view/KeyEvent;)Z
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x1
 
@@ -515,7 +486,6 @@
 
 .method public onRestoreInstanceState(Landroid/os/Parcelable;)V
     .locals 0
-    .param p1    # Landroid/os/Parcelable;
 
     return-void
 .end method
@@ -530,7 +500,6 @@
 
 .method public onSubMenuSelected(Lcom/android/launcher2/popup/SubMenuBuilder;)Z
     .locals 8
-    .param p1    # Lcom/android/launcher2/popup/SubMenuBuilder;
 
     const/4 v5, 0x0
 
@@ -612,14 +581,12 @@
 
 .method public onViewAttachedToWindow(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     return-void
 .end method
 
 .method public onViewDetachedFromWindow(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Lcom/android/launcher2/popup/MenuPopupHelper;->mTreeObserver:Landroid/view/ViewTreeObserver;
 
@@ -652,7 +619,6 @@
 
 .method public setAnchorView(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     iput-object p1, p0, Lcom/android/launcher2/popup/MenuPopupHelper;->mAnchorView:Landroid/view/View;
 
@@ -661,7 +627,6 @@
 
 .method public setCallback(Lcom/android/launcher2/popup/MenuPresenter$Callback;)V
     .locals 0
-    .param p1    # Lcom/android/launcher2/popup/MenuPresenter$Callback;
 
     iput-object p1, p0, Lcom/android/launcher2/popup/MenuPopupHelper;->mPresenterCallback:Lcom/android/launcher2/popup/MenuPresenter$Callback;
 
@@ -670,7 +635,6 @@
 
 .method public setForceShowIcon(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/launcher2/popup/MenuPopupHelper;->mForceShowIcon:Z
 
@@ -832,7 +796,6 @@
 
 .method public updateMenuView(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/launcher2/popup/MenuPopupHelper;->mAdapter:Lcom/android/launcher2/popup/MenuPopupHelper$MenuAdapter;
 

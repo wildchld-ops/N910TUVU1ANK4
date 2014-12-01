@@ -58,8 +58,6 @@
 
 .method synthetic constructor <init>(Landroid/webkitsec/HtmlComposerView;Landroid/webkitsec/HtmlComposerView$1;)V
     .locals 0
-    .param p1    # Landroid/webkitsec/HtmlComposerView;
-    .param p2    # Landroid/webkitsec/HtmlComposerView$1;
 
     invoke-direct {p0, p1}, Landroid/webkitsec/HtmlComposerView$StylusEventListener;-><init>(Landroid/webkitsec/HtmlComposerView;)V
 
@@ -70,8 +68,6 @@
 # virtual methods
 .method public onStylusButtonEvent(Landroid/view/MotionEvent;I)V
     .locals 13
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # I
 
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getAction()I
 

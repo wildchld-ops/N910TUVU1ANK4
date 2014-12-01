@@ -72,7 +72,7 @@
 
     iget-object v0, p0, Lcom/android/phone/PhotoRingDB;->mOpenHelper:Lcom/android/phone/callsettings/LGTPhotoRingDB;
 
-    invoke-virtual {v0}, Landroid/database/sqlite/SQLiteOpenHelper;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
+    invoke-virtual {v0}, Lcom/android/phone/callsettings/LGTPhotoRingDB;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
     move-result-object v0
 
@@ -318,7 +318,7 @@
 
     iget-object v0, p0, Lcom/android/phone/PhotoRingDB;->mOpenHelper:Lcom/android/phone/callsettings/LGTPhotoRingDB;
 
-    invoke-virtual {v0}, Landroid/database/sqlite/SQLiteOpenHelper;->close()V
+    invoke-virtual {v0}, Lcom/android/phone/callsettings/LGTPhotoRingDB;->close()V
 
     :cond_0
     const/4 v0, 0x0

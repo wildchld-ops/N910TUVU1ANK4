@@ -110,7 +110,6 @@
 
 .method static synthetic access$1200(Lcom/android/server/enterprise/isl/EnterpriseISLPolicy$ScanResult;)Ljava/security/MessageDigest;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/isl/EnterpriseISLPolicy$ScanResult;
 
     iget-object v0, p0, Lcom/android/server/enterprise/isl/EnterpriseISLPolicy$ScanResult;->fileNameDigest:Ljava/security/MessageDigest;
 
@@ -119,7 +118,6 @@
 
 .method static synthetic access$1300(Lcom/android/server/enterprise/isl/EnterpriseISLPolicy$ScanResult;)Ljava/security/MessageDigest;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/isl/EnterpriseISLPolicy$ScanResult;
 
     iget-object v0, p0, Lcom/android/server/enterprise/isl/EnterpriseISLPolicy$ScanResult;->fileAttributeDigest:Ljava/security/MessageDigest;
 
@@ -128,7 +126,6 @@
 
 .method static synthetic access$1400(Lcom/android/server/enterprise/isl/EnterpriseISLPolicy$ScanResult;)Ljava/security/MessageDigest;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/isl/EnterpriseISLPolicy$ScanResult;
 
     iget-object v0, p0, Lcom/android/server/enterprise/isl/EnterpriseISLPolicy$ScanResult;->contentDigest:Ljava/security/MessageDigest;
 

@@ -36,8 +36,6 @@
 # virtual methods
 .method public onScanCompleted(Ljava/lang/String;Landroid/net/Uri;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/net/Uri;
 
     return-void
 .end method

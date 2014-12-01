@@ -44,7 +44,6 @@
 
 .method private constructor <init>(Landroid/os/Parcel;)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -59,8 +58,6 @@
 
 .method synthetic constructor <init>(Landroid/os/Parcel;Landroid/content/pm/ManifestDigest$1;)V
     .locals 0
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # Landroid/content/pm/ManifestDigest$1;
 
     invoke-direct {p0, p1}, Landroid/content/pm/ManifestDigest;-><init>(Landroid/os/Parcel;)V
 
@@ -69,7 +66,6 @@
 
 .method constructor <init>([B)V
     .locals 0
-    .param p1    # [B
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -80,7 +76,6 @@
 
 .method static fromInputStream(Ljava/io/InputStream;)Landroid/content/pm/ManifestDigest;
     .locals 8
-    .param p0    # Ljava/io/InputStream;
 
     const/4 v5, 0x0
 
@@ -187,7 +182,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 4
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x0
 
@@ -300,8 +294,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v0, p0, Landroid/content/pm/ManifestDigest;->mDigest:[B
 

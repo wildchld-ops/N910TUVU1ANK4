@@ -72,7 +72,6 @@
 
 .method private constructor <init>(Ljava/lang/String;ILjava/lang/String;)V
     .locals 0
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -90,10 +89,6 @@
 
 .method synthetic constructor <init>(Ljava/lang/String;ILjava/lang/String;Landroid/hardware/contextaware/InterruptModeContextList$1;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Landroid/hardware/contextaware/InterruptModeContextList$1;
 
     invoke-direct {p0, p1, p2, p3}, Landroid/hardware/contextaware/InterruptModeContextList$InterruptModeContextType;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
@@ -102,7 +97,6 @@
 
 .method static synthetic access$100(Landroid/hardware/contextaware/InterruptModeContextList$InterruptModeContextType;)Ljava/lang/String;
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/InterruptModeContextList$InterruptModeContextType;
 
     iget-object v0, p0, Landroid/hardware/contextaware/InterruptModeContextList$InterruptModeContextType;->code:Ljava/lang/String;
 
@@ -111,7 +105,6 @@
 
 .method public static valueOf(Ljava/lang/String;)Landroid/hardware/contextaware/InterruptModeContextList$InterruptModeContextType;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-class v0, Landroid/hardware/contextaware/InterruptModeContextList$InterruptModeContextType;
 

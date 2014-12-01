@@ -20,8 +20,6 @@
 
 .method private static createAnimationFromXml(Landroid/content/Context;Lorg/xmlpull/v1/XmlPullParser;)Landroid/view/animation/Animation;
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lorg/xmlpull/v1/XmlPullParser;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -44,10 +42,6 @@
 
 .method private static createAnimationFromXml(Landroid/content/Context;Lorg/xmlpull/v1/XmlPullParser;Landroid/view/animation/AnimationSet;Landroid/util/AttributeSet;)Landroid/view/animation/Animation;
     .locals 7
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lorg/xmlpull/v1/XmlPullParser;
-    .param p2    # Landroid/view/animation/AnimationSet;
-    .param p3    # Landroid/util/AttributeSet;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -270,8 +264,6 @@
 
 .method private static createInterpolatorFromXml(Landroid/content/Context;Lorg/xmlpull/v1/XmlPullParser;)Landroid/view/animation/Interpolator;
     .locals 8
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lorg/xmlpull/v1/XmlPullParser;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -1087,8 +1079,6 @@
 
 .method private static createLayoutAnimationFromXml(Landroid/content/Context;Lorg/xmlpull/v1/XmlPullParser;)Landroid/view/animation/LayoutAnimationController;
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lorg/xmlpull/v1/XmlPullParser;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -1109,9 +1099,6 @@
 
 .method private static createLayoutAnimationFromXml(Landroid/content/Context;Lorg/xmlpull/v1/XmlPullParser;Landroid/util/AttributeSet;)Landroid/view/animation/LayoutAnimationController;
     .locals 7
-    .param p0    # Landroid/content/Context;
-    .param p1    # Lorg/xmlpull/v1/XmlPullParser;
-    .param p2    # Landroid/util/AttributeSet;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -1224,8 +1211,6 @@
 
 .method public static loadAnimation(Landroid/content/Context;I)Landroid/view/animation/Animation;
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/res/Resources$NotFoundException;
@@ -1343,8 +1328,6 @@
 
 .method public static loadInterpolator(Landroid/content/Context;I)Landroid/view/animation/Interpolator;
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/res/Resources$NotFoundException;
@@ -1462,8 +1445,6 @@
 
 .method public static loadLayoutAnimation(Landroid/content/Context;I)Landroid/view/animation/LayoutAnimationController;
     .locals 5
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/content/res/Resources$NotFoundException;
@@ -1581,8 +1562,6 @@
 
 .method public static makeInAnimation(Landroid/content/Context;Z)Landroid/view/animation/Animation;
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -1619,7 +1598,6 @@
 
 .method public static makeInChildBottomAnimation(Landroid/content/Context;)Landroid/view/animation/Animation;
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     const v1, 0x10a00a1
 
@@ -1644,8 +1622,6 @@
 
 .method public static makeOutAnimation(Landroid/content/Context;Z)Landroid/view/animation/Animation;
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 

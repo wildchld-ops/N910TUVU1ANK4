@@ -59,8 +59,6 @@
 
 .method synthetic constructor <init>(Lcom/sec/epdg/EpdgTestRilAdapter;Lcom/sec/epdg/EpdgTestRilAdapter$1;)V
     .locals 0
-    .param p1    # Lcom/sec/epdg/EpdgTestRilAdapter;
-    .param p2    # Lcom/sec/epdg/EpdgTestRilAdapter$1;
 
     invoke-direct {p0, p1}, Lcom/sec/epdg/EpdgTestRilAdapter$RILConnectionInfo;-><init>(Lcom/sec/epdg/EpdgTestRilAdapter;)V
 
@@ -69,8 +67,6 @@
 
 .method static synthetic access$402(Lcom/sec/epdg/EpdgTestRilAdapter$RILConnectionInfo;I)I
     .locals 0
-    .param p0    # Lcom/sec/epdg/EpdgTestRilAdapter$RILConnectionInfo;
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/epdg/EpdgTestRilAdapter$RILConnectionInfo;->intfstatus:I
 
@@ -81,7 +77,6 @@
 # virtual methods
 .method public bytesToHexString([B)Ljava/lang/String;
     .locals 4
-    .param p1    # [B
 
     if-nez p1, :cond_0
 
@@ -1093,7 +1088,6 @@
 
 .method public setConnectionId(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/epdg/EpdgTestRilAdapter$RILConnectionInfo;->connectionId:I
 
@@ -1102,7 +1096,6 @@
 
 .method public setGatewayIP(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/sec/epdg/EpdgTestRilAdapter$RILConnectionInfo;->gatewayIP:Ljava/lang/String;
 
@@ -1111,7 +1104,6 @@
 
 .method public setGatewayIPv6(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/sec/epdg/EpdgTestRilAdapter$RILConnectionInfo;->gatewayIPv6:Ljava/lang/String;
 
@@ -1120,7 +1112,6 @@
 
 .method public setIpType(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/sec/epdg/EpdgTestRilAdapter$RILConnectionInfo;->ipType:I
 
@@ -1129,7 +1120,6 @@
 
 .method public setLocalIP(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/sec/epdg/EpdgTestRilAdapter$RILConnectionInfo;->localIP:Ljava/lang/String;
 
@@ -1138,7 +1128,6 @@
 
 .method public setLocalIPv6(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Lcom/sec/epdg/EpdgTestRilAdapter$RILConnectionInfo;->localIPv6:Ljava/lang/String;
 

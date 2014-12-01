@@ -15,8 +15,6 @@
 # direct methods
 .method protected constructor <init>(Lcom/android/mms/dom/DocumentImpl;Ljava/lang/String;)V
     .locals 0
-    .param p1    # Lcom/android/mms/dom/DocumentImpl;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/mms/dom/NodeImpl;-><init>(Lcom/android/mms/dom/DocumentImpl;)V
 
@@ -127,7 +125,6 @@
 
 .method public setNodeValue(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;
@@ -141,7 +138,6 @@
 
 .method public setValue(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/DOMException;

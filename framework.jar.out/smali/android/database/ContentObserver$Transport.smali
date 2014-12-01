@@ -21,7 +21,6 @@
 # direct methods
 .method public constructor <init>(Landroid/database/ContentObserver;)V
     .locals 0
-    .param p1    # Landroid/database/ContentObserver;
 
     invoke-direct {p0}, Landroid/database/IContentObserver$Stub;-><init>()V
 
@@ -34,8 +33,6 @@
 # virtual methods
 .method public onChange(ZLandroid/net/Uri;)V
     .locals 1
-    .param p1    # Z
-    .param p2    # Landroid/net/Uri;
 
     iget-object v0, p0, Landroid/database/ContentObserver$Transport;->mContentObserver:Landroid/database/ContentObserver;
 

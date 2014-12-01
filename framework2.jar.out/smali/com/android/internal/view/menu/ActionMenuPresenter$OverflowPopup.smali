@@ -21,10 +21,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/internal/view/menu/ActionMenuPresenter;Landroid/content/Context;Lcom/android/internal/view/menu/MenuBuilder;Landroid/view/View;Z)V
     .locals 6
-    .param p2    # Landroid/content/Context;
-    .param p3    # Lcom/android/internal/view/menu/MenuBuilder;
-    .param p4    # Landroid/view/View;
-    .param p5    # Z
 
     iput-object p1, p0, Lcom/android/internal/view/menu/ActionMenuPresenter$OverflowPopup;->this$0:Lcom/android/internal/view/menu/ActionMenuPresenter;
 

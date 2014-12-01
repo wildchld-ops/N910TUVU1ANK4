@@ -26,7 +26,6 @@
 # direct methods
 .method public constructor <init>(Landroid/view/LayoutInflater;)V
     .locals 2
-    .param p1    # Landroid/view/LayoutInflater;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -143,7 +142,6 @@
 # virtual methods
 .method public changePaddingForPopup(Landroid/content/Context;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -206,7 +204,6 @@
 
 .method public setContentImage(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/settings/HelpItem;->contentImageView:Landroid/widget/ImageView;
 
@@ -217,7 +214,6 @@
 
 .method public setContentText(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/settings/HelpItem;->contentTextView:Landroid/widget/TextView;
 
@@ -228,7 +224,6 @@
 
 .method public setContentText(Landroid/text/SpannableString;)V
     .locals 1
-    .param p1    # Landroid/text/SpannableString;
 
     iget-object v0, p0, Lcom/android/settings/HelpItem;->contentTextView:Landroid/widget/TextView;
 
@@ -239,7 +234,6 @@
 
 .method public setContentText(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/settings/HelpItem;->contentTextView:Landroid/widget/TextView;
 
@@ -250,7 +244,6 @@
 
 .method public setContentVisibility(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/settings/HelpItem;->contentTextView:Landroid/widget/TextView;
 
@@ -261,7 +254,6 @@
 
 .method public setImageMarginTop(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -286,7 +278,6 @@
 
 .method public setImageVisibility(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/settings/HelpItem;->contentImageView:Landroid/widget/ImageView;
 
@@ -301,7 +292,6 @@
 
 .method public setOnTryBtnClickListener(Landroid/view/View$OnClickListener;)V
     .locals 2
-    .param p1    # Landroid/view/View$OnClickListener;
 
     iget-object v0, p0, Lcom/android/settings/HelpItem;->tryBtn:Landroid/widget/Button;
 
@@ -321,7 +311,6 @@
 
 .method public setTitle2Visibility(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/settings/HelpItem;->titleTextView2:Landroid/widget/TextView;
 
@@ -332,7 +321,6 @@
 
 .method public setTitleText(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/settings/HelpItem;->titleTextView2:Landroid/widget/TextView;
 
@@ -349,7 +337,6 @@
 
 .method public setTitleTextWithOutCategory(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/settings/HelpItem;->titleTextView:Landroid/widget/TextView;
 
@@ -374,7 +361,6 @@
 
 .method public setTitleTextWithOutCategory(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/settings/HelpItem;->titleTextView:Landroid/widget/TextView;
 
@@ -399,7 +385,6 @@
 
 .method public setTitleVisibility(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/settings/HelpItem;->titleTextView:Landroid/widget/TextView;
 
@@ -410,7 +395,6 @@
 
 .method public setTryBtnVisibility(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/settings/HelpItem;->tryBtn:Landroid/widget/Button;
 
@@ -421,7 +405,6 @@
 
 .method public usePlayButton(Z)V
     .locals 3
-    .param p1    # Z
 
     if-eqz p1, :cond_1
 

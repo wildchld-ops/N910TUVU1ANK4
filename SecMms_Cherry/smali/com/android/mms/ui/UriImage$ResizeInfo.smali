@@ -59,7 +59,6 @@
 
 .method synthetic constructor <init>(Lcom/android/mms/ui/UriImage$1;)V
     .locals 0
-    .param p1    # Lcom/android/mms/ui/UriImage$1;
 
     invoke-direct {p0}, Lcom/android/mms/ui/UriImage$ResizeInfo;-><init>()V
 

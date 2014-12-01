@@ -86,8 +86,6 @@
 
 .method private static dump(Ljava/lang/StringBuffer;B)Ljava/lang/StringBuffer;
     .locals 4
-    .param p0    # Ljava/lang/StringBuffer;
-    .param p1    # B
 
     const/4 v0, 0x0
 
@@ -122,8 +120,6 @@
 
 .method private static dump(Ljava/lang/StringBuffer;J)Ljava/lang/StringBuffer;
     .locals 4
-    .param p0    # Ljava/lang/StringBuffer;
-    .param p1    # J
 
     const/4 v0, 0x0
 
@@ -158,10 +154,6 @@
 
 .method public static dump([BJLjava/io/OutputStream;I)V
     .locals 10
-    .param p0    # [B
-    .param p1    # J
-    .param p3    # Ljava/io/OutputStream;
-    .param p4    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,

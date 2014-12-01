@@ -23,7 +23,6 @@
 # direct methods
 .method constructor <init>(Landroid/app/IThumbnailReceiver;)V
     .locals 1
-    .param p1    # Landroid/app/IThumbnailReceiver;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

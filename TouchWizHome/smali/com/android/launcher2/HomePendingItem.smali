@@ -26,7 +26,6 @@
 
 .method protected constructor <init>(Lcom/android/launcher2/BaseItem$Type;)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/BaseItem$Type;
 
     invoke-direct {p0, p1}, Lcom/android/launcher2/HomeItem;-><init>(Lcom/android/launcher2/BaseItem$Type;)V
 

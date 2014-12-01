@@ -31,7 +31,6 @@
 # direct methods
 .method private constructor <init>(Lcom/android/server/connectivity/VpnNamespace;Ljava/lang/String;)V
     .locals 4
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -99,9 +98,6 @@
 
 .method synthetic constructor <init>(Lcom/android/server/connectivity/VpnNamespace;Ljava/lang/String;Lcom/android/server/connectivity/VpnNamespace$1;)V
     .locals 0
-    .param p1    # Lcom/android/server/connectivity/VpnNamespace;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Lcom/android/server/connectivity/VpnNamespace$1;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -115,7 +111,6 @@
 
 .method private declared-synchronized execute(Lcom/android/server/connectivity/VpnNamespace$Cmd;Ljava/lang/Class;)Ljava/lang/Object;
     .locals 6
-    .param p1    # Lcom/android/server/connectivity/VpnNamespace$Cmd;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -336,7 +331,6 @@
 
 .method private initConnection(Ljava/lang/String;)Landroid/net/LocalSocket;
     .locals 7
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -504,7 +498,6 @@
 
 .method declared-synchronized execute(Lcom/android/server/connectivity/VpnNamespace$Cmd;)Ljava/lang/Object;
     .locals 1
-    .param p1    # Lcom/android/server/connectivity/VpnNamespace$Cmd;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -546,8 +539,6 @@
 
 .method declared-synchronized execute(Lcom/android/server/connectivity/VpnNamespace$Cmd;I)Ljava/lang/Object;
     .locals 1
-    .param p1    # Lcom/android/server/connectivity/VpnNamespace$Cmd;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -593,8 +584,6 @@
 
 .method declared-synchronized execute(Lcom/android/server/connectivity/VpnNamespace$Cmd;Lcom/android/server/connectivity/VpnNamespace$VpnNetIfAddr;)Ljava/lang/Object;
     .locals 1
-    .param p1    # Lcom/android/server/connectivity/VpnNamespace$Cmd;
-    .param p2    # Lcom/android/server/connectivity/VpnNamespace$VpnNetIfAddr;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -641,8 +630,6 @@
 
 .method declared-synchronized execute(Lcom/android/server/connectivity/VpnNamespace$Cmd;Ljava/lang/String;)Ljava/lang/Object;
     .locals 2
-    .param p1    # Lcom/android/server/connectivity/VpnNamespace$Cmd;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",

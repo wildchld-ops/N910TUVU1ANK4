@@ -76,12 +76,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/settings/applications/ManageApplications;Lcom/android/settings/applications/ApplicationsState;Ljava/lang/CharSequence;ILcom/android/settings/applications/AppClickListener;Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Lcom/android/settings/applications/ManageApplications;
-    .param p2    # Lcom/android/settings/applications/ApplicationsState;
-    .param p3    # Ljava/lang/CharSequence;
-    .param p4    # I
-    .param p5    # Lcom/android/settings/applications/AppClickListener;
-    .param p6    # Landroid/os/Bundle;
 
     const-wide/16 v0, 0x0
 
@@ -186,7 +180,6 @@
 
 .method static synthetic access$1100(Lcom/android/settings/applications/ManageApplications$TabInfo;)Lcom/android/settings/applications/RunningProcessesView;
     .locals 1
-    .param p0    # Lcom/android/settings/applications/ManageApplications$TabInfo;
 
     iget-object v0, p0, Lcom/android/settings/applications/ManageApplications$TabInfo;->mRunningProcessesView:Lcom/android/settings/applications/RunningProcessesView;
 
@@ -195,7 +188,6 @@
 
 .method static synthetic access$800(Lcom/android/settings/applications/ManageApplications$TabInfo;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/settings/applications/ManageApplications$TabInfo;
 
     iget-object v0, p0, Lcom/android/settings/applications/ManageApplications$TabInfo;->mListContainer:Landroid/view/View;
 
@@ -204,7 +196,6 @@
 
 .method static synthetic access$900(Lcom/android/settings/applications/ManageApplications$TabInfo;)Landroid/view/View;
     .locals 1
-    .param p0    # Lcom/android/settings/applications/ManageApplications$TabInfo;
 
     iget-object v0, p0, Lcom/android/settings/applications/ManageApplications$TabInfo;->mLoadingContainer:Landroid/view/View;
 
@@ -439,9 +430,6 @@
 
 .method public build(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/view/View;)Landroid/view/View;
     .locals 5
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/view/View;
 
     const/4 v4, 0x1
 
@@ -812,9 +800,6 @@
 
 .method public onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
     .locals 7
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -868,7 +853,6 @@
 
 .method public resume(I)V
     .locals 5
-    .param p1    # I
 
     const/4 v4, 0x0
 
@@ -921,7 +905,6 @@
 
 .method public setContainerService(Lcom/android/internal/app/IMediaContainerService;)V
     .locals 0
-    .param p1    # Lcom/android/internal/app/IMediaContainerService;
 
     iput-object p1, p0, Lcom/android/settings/applications/ManageApplications$TabInfo;->mContainerService:Lcom/android/internal/app/IMediaContainerService;
 

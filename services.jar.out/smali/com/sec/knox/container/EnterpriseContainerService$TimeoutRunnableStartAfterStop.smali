@@ -28,8 +28,6 @@
 # direct methods
 .method public constructor <init>(Lcom/sec/knox/container/EnterpriseContainerService;Landroid/content/Context;I)V
     .locals 1
-    .param p2    # Landroid/content/Context;
-    .param p3    # I
 
     iput-object p1, p0, Lcom/sec/knox/container/EnterpriseContainerService$TimeoutRunnableStartAfterStop;->this$0:Lcom/sec/knox/container/EnterpriseContainerService;
 

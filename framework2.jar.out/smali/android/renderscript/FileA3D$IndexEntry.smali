@@ -31,11 +31,6 @@
 # direct methods
 .method constructor <init>(Landroid/renderscript/RenderScript;IILjava/lang/String;Landroid/renderscript/FileA3D$EntryType;)V
     .locals 1
-    .param p1    # Landroid/renderscript/RenderScript;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
-    .param p5    # Landroid/renderscript/FileA3D$EntryType;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -58,8 +53,6 @@
 
 .method static declared-synchronized internalCreate(Landroid/renderscript/RenderScript;Landroid/renderscript/FileA3D$IndexEntry;)Landroid/renderscript/BaseObj;
     .locals 5
-    .param p0    # Landroid/renderscript/RenderScript;
-    .param p1    # Landroid/renderscript/FileA3D$IndexEntry;
 
     const/4 v1, 0x0
 

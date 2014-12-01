@@ -189,7 +189,6 @@
 
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -302,8 +301,6 @@
 # virtual methods
 .method protected addSanitizedEntry(Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/net/UrlQuerySanitizer;->mEntriesList:Ljava/util/ArrayList;
 
@@ -352,7 +349,6 @@
 
 .method protected decodeHexDigit(C)I
     .locals 1
-    .param p1    # C
 
     const/16 v0, 0x30
 
@@ -413,7 +409,6 @@
 
 .method public getEffectiveValueSanitizer(Ljava/lang/String;)Landroid/net/UrlQuerySanitizer$ValueSanitizer;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Landroid/net/UrlQuerySanitizer;->getValueSanitizer(Ljava/lang/String;)Landroid/net/UrlQuerySanitizer$ValueSanitizer;
 
@@ -489,7 +484,6 @@
 
 .method public getValue(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/net/UrlQuerySanitizer;->mEntries:Ljava/util/HashMap;
 
@@ -504,7 +498,6 @@
 
 .method public getValueSanitizer(Ljava/lang/String;)Landroid/net/UrlQuerySanitizer$ValueSanitizer;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/net/UrlQuerySanitizer;->mSanitizers:Ljava/util/HashMap;
 
@@ -519,7 +512,6 @@
 
 .method public hasParameter(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/net/UrlQuerySanitizer;->mEntries:Ljava/util/HashMap;
 
@@ -532,7 +524,6 @@
 
 .method protected isHexDigit(C)Z
     .locals 1
-    .param p1    # C
 
     invoke-virtual {p0, p1}, Landroid/net/UrlQuerySanitizer;->decodeHexDigit(C)I
 
@@ -553,8 +544,6 @@
 
 .method protected parseEntry(Ljava/lang/String;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Landroid/net/UrlQuerySanitizer;->unescape(Ljava/lang/String;)Ljava/lang/String;
 
@@ -585,7 +574,6 @@
 
 .method public parseQuery(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Landroid/net/UrlQuerySanitizer;->clear()V
 
@@ -650,7 +638,6 @@
 
 .method public parseUrl(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const/16 v2, 0x3f
 
@@ -679,8 +666,6 @@
 
 .method public registerParameter(Ljava/lang/String;Landroid/net/UrlQuerySanitizer$ValueSanitizer;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/net/UrlQuerySanitizer$ValueSanitizer;
 
     if-nez p2, :cond_0
 
@@ -698,8 +683,6 @@
 
 .method public registerParameters([Ljava/lang/String;Landroid/net/UrlQuerySanitizer$ValueSanitizer;)V
     .locals 4
-    .param p1    # [Ljava/lang/String;
-    .param p2    # Landroid/net/UrlQuerySanitizer$ValueSanitizer;
 
     array-length v1, p1
 
@@ -724,7 +707,6 @@
 
 .method public setAllowUnregisteredParamaters(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/net/UrlQuerySanitizer;->mAllowUnregisteredParamaters:Z
 
@@ -733,7 +715,6 @@
 
 .method public setPreferFirstRepeatedParameter(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/net/UrlQuerySanitizer;->mPreferFirstRepeatedParameter:Z
 
@@ -742,7 +723,6 @@
 
 .method public setUnregisteredParameterValueSanitizer(Landroid/net/UrlQuerySanitizer$ValueSanitizer;)V
     .locals 0
-    .param p1    # Landroid/net/UrlQuerySanitizer$ValueSanitizer;
 
     iput-object p1, p0, Landroid/net/UrlQuerySanitizer;->mUnregisteredParameterValueSanitizer:Landroid/net/UrlQuerySanitizer$ValueSanitizer;
 
@@ -751,7 +731,6 @@
 
 .method public unescape(Ljava/lang/String;)Ljava/lang/String;
     .locals 11
-    .param p1    # Ljava/lang/String;
 
     const/16 v10, 0x2b
 

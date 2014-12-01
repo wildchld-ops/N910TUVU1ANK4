@@ -28,8 +28,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/mms/ui/ComposeMessageFragment;IZ)V
     .locals 1
-    .param p2    # I
-    .param p3    # Z
 
     iput-object p1, p0, Lcom/android/mms/ui/ComposeMessageFragment$ToButtonMenuClickListener;->this$0:Lcom/android/mms/ui/ComposeMessageFragment;
 
@@ -50,8 +48,6 @@
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 5
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     const/4 v4, 0x1
 

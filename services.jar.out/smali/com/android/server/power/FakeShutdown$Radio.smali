@@ -39,8 +39,6 @@
 
 .method public static changeAirplaneMode(Landroid/content/Context;I)V
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     const-string v1, "FakeShutdown"
 
@@ -93,7 +91,6 @@
 
 .method public static off(Landroid/content/Context;)V
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     const/4 v3, 0x1
 
@@ -121,7 +118,6 @@
 
 .method private static offBluetooth(Landroid/content/Context;)V
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     const/4 v2, 0x1
 
@@ -155,7 +151,6 @@
 
 .method public static on(Landroid/content/Context;)V
     .locals 0
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Lcom/android/server/power/FakeShutdown$Radio;->restoreAirplane(Landroid/content/Context;)V
 
@@ -166,7 +161,6 @@
 
 .method private static restoreAirplane(Landroid/content/Context;)V
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     const/4 v3, -0x1
 
@@ -192,7 +186,6 @@
 
 .method private static restoreBluetooth(Landroid/content/Context;)V
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     const-string v2, "bluetooth_manager"
 
@@ -249,7 +242,6 @@
 
 .method private static waitForPhoneOff(I)V
     .locals 9
-    .param p0    # I
 
     const-string/jumbo v6, "phone"
 

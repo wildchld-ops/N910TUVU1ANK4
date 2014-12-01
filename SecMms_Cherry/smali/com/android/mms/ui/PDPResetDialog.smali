@@ -32,8 +32,6 @@
 
 .method static synthetic access$102(Lcom/android/mms/ui/PDPResetDialog;Landroid/app/AlertDialog;)Landroid/app/AlertDialog;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/PDPResetDialog;
-    .param p1    # Landroid/app/AlertDialog;
 
     iput-object p1, p0, Lcom/android/mms/ui/PDPResetDialog;->sDialog:Landroid/app/AlertDialog;
 
@@ -79,7 +77,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v2, 0x1
 
@@ -194,7 +191,6 @@
 
 .method protected sendIntentPDPReset(Lcom/android/mms/ui/PDPResetDialog;)V
     .locals 3
-    .param p1    # Lcom/android/mms/ui/PDPResetDialog;
 
     const-string v1, "Mms/PDPResetDialog"
 

@@ -35,8 +35,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/media/MediaScannerConnection$MediaScannerConnectionClient;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/media/MediaScannerConnection$MediaScannerConnectionClient;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -55,7 +53,6 @@
 
 .method static synthetic access$000(Landroid/media/MediaScannerConnection;)Landroid/media/MediaScannerConnection$MediaScannerConnectionClient;
     .locals 1
-    .param p0    # Landroid/media/MediaScannerConnection;
 
     iget-object v0, p0, Landroid/media/MediaScannerConnection;->mClient:Landroid/media/MediaScannerConnection$MediaScannerConnectionClient;
 
@@ -64,10 +61,6 @@
 
 .method public static scanFile(Landroid/content/Context;[Ljava/lang/String;[Ljava/lang/String;Landroid/media/MediaScannerConnection$OnScanCompletedListener;)V
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # [Ljava/lang/String;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # Landroid/media/MediaScannerConnection$OnScanCompletedListener;
 
     new-instance v0, Landroid/media/MediaScannerConnection$ClientProxy;
 
@@ -225,8 +218,6 @@
 
 .method public onServiceConnected(Landroid/content/ComponentName;Landroid/os/IBinder;)V
     .locals 1
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Landroid/os/IBinder;
 
     monitor-enter p0
 
@@ -266,7 +257,6 @@
 
 .method public onServiceDisconnected(Landroid/content/ComponentName;)V
     .locals 1
-    .param p1    # Landroid/content/ComponentName;
 
     monitor-enter p0
 
@@ -291,8 +281,6 @@
 
 .method public scanFile(Ljava/lang/String;Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     monitor-enter p0
 

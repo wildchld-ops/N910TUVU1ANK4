@@ -31,9 +31,6 @@
 # direct methods
 .method constructor <init>(Landroid/media/RemoteControlClient;Landroid/media/IRemoteControlDisplay;II)V
     .locals 1
-    .param p2    # Landroid/media/IRemoteControlDisplay;
-    .param p3    # I
-    .param p4    # I
 
     iput-object p1, p0, Landroid/media/RemoteControlClient$DisplayInfoForClient;->this$0:Landroid/media/RemoteControlClient;
 
@@ -58,7 +55,6 @@
 
 .method static synthetic access$2300(Landroid/media/RemoteControlClient$DisplayInfoForClient;)I
     .locals 1
-    .param p0    # Landroid/media/RemoteControlClient$DisplayInfoForClient;
 
     iget v0, p0, Landroid/media/RemoteControlClient$DisplayInfoForClient;->mArtworkExpectedWidth:I
 
@@ -67,8 +63,6 @@
 
 .method static synthetic access$2302(Landroid/media/RemoteControlClient$DisplayInfoForClient;I)I
     .locals 0
-    .param p0    # Landroid/media/RemoteControlClient$DisplayInfoForClient;
-    .param p1    # I
 
     iput p1, p0, Landroid/media/RemoteControlClient$DisplayInfoForClient;->mArtworkExpectedWidth:I
 
@@ -77,7 +71,6 @@
 
 .method static synthetic access$2400(Landroid/media/RemoteControlClient$DisplayInfoForClient;)I
     .locals 1
-    .param p0    # Landroid/media/RemoteControlClient$DisplayInfoForClient;
 
     iget v0, p0, Landroid/media/RemoteControlClient$DisplayInfoForClient;->mArtworkExpectedHeight:I
 
@@ -86,8 +79,6 @@
 
 .method static synthetic access$2402(Landroid/media/RemoteControlClient$DisplayInfoForClient;I)I
     .locals 0
-    .param p0    # Landroid/media/RemoteControlClient$DisplayInfoForClient;
-    .param p1    # I
 
     iput p1, p0, Landroid/media/RemoteControlClient$DisplayInfoForClient;->mArtworkExpectedHeight:I
 
@@ -96,7 +87,6 @@
 
 .method static synthetic access$2500(Landroid/media/RemoteControlClient$DisplayInfoForClient;)Z
     .locals 1
-    .param p0    # Landroid/media/RemoteControlClient$DisplayInfoForClient;
 
     iget-boolean v0, p0, Landroid/media/RemoteControlClient$DisplayInfoForClient;->mWantsPositionSync:Z
 
@@ -105,8 +95,6 @@
 
 .method static synthetic access$2502(Landroid/media/RemoteControlClient$DisplayInfoForClient;Z)Z
     .locals 0
-    .param p0    # Landroid/media/RemoteControlClient$DisplayInfoForClient;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/media/RemoteControlClient$DisplayInfoForClient;->mWantsPositionSync:Z
 
@@ -115,7 +103,6 @@
 
 .method static synthetic access$700(Landroid/media/RemoteControlClient$DisplayInfoForClient;)Z
     .locals 1
-    .param p0    # Landroid/media/RemoteControlClient$DisplayInfoForClient;
 
     iget-boolean v0, p0, Landroid/media/RemoteControlClient$DisplayInfoForClient;->mEnabled:Z
 
@@ -124,8 +111,6 @@
 
 .method static synthetic access$702(Landroid/media/RemoteControlClient$DisplayInfoForClient;Z)Z
     .locals 0
-    .param p0    # Landroid/media/RemoteControlClient$DisplayInfoForClient;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/media/RemoteControlClient$DisplayInfoForClient;->mEnabled:Z
 
@@ -134,7 +119,6 @@
 
 .method static synthetic access$800(Landroid/media/RemoteControlClient$DisplayInfoForClient;)Landroid/media/IRemoteControlDisplay;
     .locals 1
-    .param p0    # Landroid/media/RemoteControlClient$DisplayInfoForClient;
 
     iget-object v0, p0, Landroid/media/RemoteControlClient$DisplayInfoForClient;->mRcDisplay:Landroid/media/IRemoteControlDisplay;
 

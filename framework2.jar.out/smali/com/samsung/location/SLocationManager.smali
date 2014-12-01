@@ -92,7 +92,6 @@
 # direct methods
 .method public constructor <init>(Lcom/samsung/location/ISLocationManager;)V
     .locals 1
-    .param p1    # Lcom/samsung/location/ISLocationManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -121,7 +120,6 @@
 
 .method private isArgumentsValid(Lcom/samsung/location/SLocationParameter;)Z
     .locals 8
-    .param p1    # Lcom/samsung/location/SLocationParameter;
 
     const/4 v7, 0x3
 
@@ -262,7 +260,6 @@
 # virtual methods
 .method public addGeofence(Lcom/samsung/location/SLocationParameter;)I
     .locals 4
-    .param p1    # Lcom/samsung/location/SLocationParameter;
 
     iget-object v1, p0, Lcom/samsung/location/SLocationManager;->mService:Lcom/samsung/location/ISLocationManager;
 
@@ -406,8 +403,6 @@
 
 .method public removeCurrentLocation(ILcom/samsung/location/SCurrentLocListener;)I
     .locals 7
-    .param p1    # I
-    .param p2    # Lcom/samsung/location/SCurrentLocListener;
 
     const/4 v2, -0x4
 
@@ -552,7 +547,6 @@
 
 .method public removeGeofence(I)I
     .locals 4
-    .param p1    # I
 
     iget-object v1, p0, Lcom/samsung/location/SLocationManager;->mService:Lcom/samsung/location/ISLocationManager;
 
@@ -687,7 +681,6 @@
 
 .method public requestCurrentLocation(Lcom/samsung/location/SCurrentLocListener;)I
     .locals 5
-    .param p1    # Lcom/samsung/location/SCurrentLocListener;
 
     iget-object v2, p0, Lcom/samsung/location/SLocationManager;->mService:Lcom/samsung/location/ISLocationManager;
 
@@ -809,8 +802,6 @@
 
 .method public startBatching(ILcom/samsung/location/SLocationListener;)I
     .locals 5
-    .param p1    # I
-    .param p2    # Lcom/samsung/location/SLocationListener;
 
     iget-object v2, p0, Lcom/samsung/location/SLocationManager;->mService:Lcom/samsung/location/ISLocationManager;
 
@@ -929,8 +920,6 @@
 
 .method public startGeofence(ILandroid/app/PendingIntent;)I
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/app/PendingIntent;
 
     iget-object v1, p0, Lcom/samsung/location/SLocationManager;->mService:Lcom/samsung/location/ISLocationManager;
 
@@ -1010,8 +999,6 @@
 
 .method public startGeofence(ILcom/samsung/location/SGeofenceListener;)I
     .locals 5
-    .param p1    # I
-    .param p2    # Lcom/samsung/location/SGeofenceListener;
 
     iget-object v2, p0, Lcom/samsung/location/SLocationManager;->mService:Lcom/samsung/location/ISLocationManager;
 
@@ -1129,8 +1116,6 @@
 
 .method public stopBatching(ILcom/samsung/location/SLocationListener;)I
     .locals 5
-    .param p1    # I
-    .param p2    # Lcom/samsung/location/SLocationListener;
 
     iget-object v2, p0, Lcom/samsung/location/SLocationManager;->mService:Lcom/samsung/location/ISLocationManager;
 
@@ -1232,8 +1217,6 @@
 
 .method public stopGeofence(ILandroid/app/PendingIntent;)I
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/app/PendingIntent;
 
     iget-object v1, p0, Lcom/samsung/location/SLocationManager;->mService:Lcom/samsung/location/ISLocationManager;
 
@@ -1311,8 +1294,6 @@
 
 .method public stopGeofence(ILcom/samsung/location/SGeofenceListener;)I
     .locals 5
-    .param p1    # I
-    .param p2    # Lcom/samsung/location/SGeofenceListener;
 
     iget-object v2, p0, Lcom/samsung/location/SLocationManager;->mService:Lcom/samsung/location/ISLocationManager;
 
@@ -1413,8 +1394,6 @@
 
 .method public updateBatchingOptions(II)I
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     iget-object v1, p0, Lcom/samsung/location/SLocationManager;->mService:Lcom/samsung/location/ISLocationManager;
 

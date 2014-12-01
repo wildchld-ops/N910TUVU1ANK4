@@ -88,8 +88,6 @@
 
 .method constructor <init>(Landroid/content/Context;Landroid/bluetooth/BluetoothProfile$ServiceListener;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/bluetooth/BluetoothProfile$ServiceListener;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -172,7 +170,6 @@
 
 .method static synthetic access$100(Landroid/bluetooth/BluetoothHeadset;)Landroid/content/ServiceConnection;
     .locals 1
-    .param p0    # Landroid/bluetooth/BluetoothHeadset;
 
     iget-object v0, p0, Landroid/bluetooth/BluetoothHeadset;->mConnection:Landroid/content/ServiceConnection;
 
@@ -181,7 +178,6 @@
 
 .method static synthetic access$200(Landroid/bluetooth/BluetoothHeadset;)Landroid/bluetooth/IBluetoothHeadset;
     .locals 1
-    .param p0    # Landroid/bluetooth/BluetoothHeadset;
 
     iget-object v0, p0, Landroid/bluetooth/BluetoothHeadset;->mService:Landroid/bluetooth/IBluetoothHeadset;
 
@@ -190,8 +186,6 @@
 
 .method static synthetic access$202(Landroid/bluetooth/BluetoothHeadset;Landroid/bluetooth/IBluetoothHeadset;)Landroid/bluetooth/IBluetoothHeadset;
     .locals 0
-    .param p0    # Landroid/bluetooth/BluetoothHeadset;
-    .param p1    # Landroid/bluetooth/IBluetoothHeadset;
 
     iput-object p1, p0, Landroid/bluetooth/BluetoothHeadset;->mService:Landroid/bluetooth/IBluetoothHeadset;
 
@@ -200,7 +194,6 @@
 
 .method static synthetic access$300(Landroid/bluetooth/BluetoothHeadset;)Landroid/content/Context;
     .locals 1
-    .param p0    # Landroid/bluetooth/BluetoothHeadset;
 
     iget-object v0, p0, Landroid/bluetooth/BluetoothHeadset;->mContext:Landroid/content/Context;
 
@@ -209,7 +202,6 @@
 
 .method static synthetic access$400(Landroid/bluetooth/BluetoothHeadset;)Landroid/bluetooth/BluetoothProfile$ServiceListener;
     .locals 1
-    .param p0    # Landroid/bluetooth/BluetoothHeadset;
 
     iget-object v0, p0, Landroid/bluetooth/BluetoothHeadset;->mServiceListener:Landroid/bluetooth/BluetoothProfile$ServiceListener;
 
@@ -218,7 +210,6 @@
 
 .method public static isBluetoothVoiceDialingEnabled(Landroid/content/Context;)Z
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -283,7 +274,6 @@
 
 .method private isValidDevice(Landroid/bluetooth/BluetoothDevice;)Z
     .locals 2
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
 
     const/4 v0, 0x0
 
@@ -311,7 +301,6 @@
 
 .method private static log(Ljava/lang/String;)V
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "BluetoothHeadset"
 
@@ -324,7 +313,6 @@
 # virtual methods
 .method public acceptIncomingConnect(Landroid/bluetooth/BluetoothDevice;)Z
     .locals 3
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
 
     sget-boolean v1, Landroid/bluetooth/BluetoothHeadset;->DBG:Z
 
@@ -402,13 +390,6 @@
 
 .method public clccResponse(IIIIZLjava/lang/String;I)V
     .locals 9
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Z
-    .param p6    # Ljava/lang/String;
-    .param p7    # I
 
     iget-object v0, p0, Landroid/bluetooth/BluetoothHeadset;->mService:Landroid/bluetooth/IBluetoothHeadset;
 
@@ -608,7 +589,6 @@
 
 .method public connect(Landroid/bluetooth/BluetoothDevice;)Z
     .locals 4
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
 
     const/4 v1, 0x0
 
@@ -717,7 +697,6 @@
 
 .method public connectAudio(Landroid/bluetooth/BluetoothDevice;)Z
     .locals 3
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
 
     iget-object v1, p0, Landroid/bluetooth/BluetoothHeadset;->mService:Landroid/bluetooth/IBluetoothHeadset;
 
@@ -854,7 +833,6 @@
 
 .method public disconnect(Landroid/bluetooth/BluetoothDevice;)Z
     .locals 4
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
 
     const/4 v1, 0x0
 
@@ -1164,7 +1142,6 @@
 
 .method public getAudioState(Landroid/bluetooth/BluetoothDevice;)I
     .locals 3
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
 
     iget-object v1, p0, Landroid/bluetooth/BluetoothHeadset;->mService:Landroid/bluetooth/IBluetoothHeadset;
 
@@ -1233,7 +1210,6 @@
 
 .method public getBatteryUsageHint(Landroid/bluetooth/BluetoothDevice;)I
     .locals 3
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
 
     iget-object v1, p0, Landroid/bluetooth/BluetoothHeadset;->mService:Landroid/bluetooth/IBluetoothHeadset;
 
@@ -1371,7 +1347,6 @@
 
 .method public getConnectionState(Landroid/bluetooth/BluetoothDevice;)I
     .locals 4
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
 
     const/4 v1, 0x0
 
@@ -1447,7 +1422,6 @@
 
 .method public getDevicesMatchingConnectionStates([I)Ljava/util/List;
     .locals 3
-    .param p1    # [I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([I)",
@@ -1522,7 +1496,6 @@
 
 .method public getPriority(Landroid/bluetooth/BluetoothDevice;)I
     .locals 4
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
 
     const/4 v1, 0x0
 
@@ -1588,7 +1561,6 @@
 
 .method public getSamsungHandsfreeDeviceType(Landroid/bluetooth/BluetoothDevice;)Ljava/lang/String;
     .locals 3
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
 
     iget-object v1, p0, Landroid/bluetooth/BluetoothHeadset;->mService:Landroid/bluetooth/IBluetoothHeadset;
 
@@ -1663,7 +1635,6 @@
 
 .method public isAudioConnected(Landroid/bluetooth/BluetoothDevice;)Z
     .locals 3
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
 
     iget-object v1, p0, Landroid/bluetooth/BluetoothHeadset;->mService:Landroid/bluetooth/IBluetoothHeadset;
 
@@ -1858,11 +1829,6 @@
 
 .method public phoneStateChanged(IIILjava/lang/String;I)V
     .locals 7
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
 
     iget-object v0, p0, Landroid/bluetooth/BluetoothHeadset;->mService:Landroid/bluetooth/IBluetoothHeadset;
 
@@ -1936,8 +1902,6 @@
 
 .method public registerMessageListener(ILcom/samsung/bt/hfp/IMessageListener;)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Lcom/samsung/bt/hfp/IMessageListener;
 
     const-string v1, "BluetoothHeadset"
 
@@ -2058,7 +2022,6 @@
 
 .method public rejectIncomingConnect(Landroid/bluetooth/BluetoothDevice;)Z
     .locals 3
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
 
     sget-boolean v1, Landroid/bluetooth/BluetoothHeadset;->DBG:Z
 
@@ -2130,7 +2093,6 @@
 
 .method public roamChanged(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v1, p0, Landroid/bluetooth/BluetoothHeadset;->mService:Landroid/bluetooth/IBluetoothHeadset;
 
@@ -2194,9 +2156,6 @@
 
 .method public sendMessageToHeadset(Landroid/bluetooth/BluetoothDevice;ILjava/lang/String;)Z
     .locals 4
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     sget-boolean v1, Landroid/bluetooth/BluetoothHeadset;->DBG:Z
 
@@ -2363,8 +2322,6 @@
 
 .method public sendVendorSpecificResponse(ILjava/lang/String;)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     sget-boolean v1, Landroid/bluetooth/BluetoothHeadset;->DBG:Z
 
@@ -2529,9 +2486,6 @@
 
 .method public sendVendorSpecificResultCode(Landroid/bluetooth/BluetoothDevice;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     sget-boolean v1, Landroid/bluetooth/BluetoothHeadset;->DBG:Z
 
@@ -2615,8 +2569,6 @@
 
 .method public setPriority(Landroid/bluetooth/BluetoothDevice;I)Z
     .locals 4
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
-    .param p2    # I
 
     const/4 v1, 0x0
 
@@ -2732,7 +2684,6 @@
 
 .method public setScoPath(I)Z
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Landroid/bluetooth/BluetoothHeadset;->mService:Landroid/bluetooth/IBluetoothHeadset;
 
@@ -2801,7 +2752,6 @@
 
 .method public startScoUsingVirtualVoiceCall(Landroid/bluetooth/BluetoothDevice;)Z
     .locals 3
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
 
     sget-boolean v1, Landroid/bluetooth/BluetoothHeadset;->DBG:Z
 
@@ -2885,7 +2835,6 @@
 
 .method public startVoiceRecognition(Landroid/bluetooth/BluetoothDevice;)Z
     .locals 3
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
 
     sget-boolean v1, Landroid/bluetooth/BluetoothHeadset;->DBG:Z
 
@@ -3000,7 +2949,6 @@
 
 .method public stopScoUsingVirtualVoiceCall(Landroid/bluetooth/BluetoothDevice;)Z
     .locals 3
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
 
     sget-boolean v1, Landroid/bluetooth/BluetoothHeadset;->DBG:Z
 
@@ -3084,7 +3032,6 @@
 
 .method public stopVoiceRecognition(Landroid/bluetooth/BluetoothDevice;)Z
     .locals 3
-    .param p1    # Landroid/bluetooth/BluetoothDevice;
 
     sget-boolean v1, Landroid/bluetooth/BluetoothHeadset;->DBG:Z
 
@@ -3231,7 +3178,6 @@
 
 .method public unRegisterMessageListener(I)Z
     .locals 4
-    .param p1    # I
 
     const-string v1, "BluetoothHeadset"
 
@@ -3342,9 +3288,6 @@
 
 .method public updateCallState(III)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     iget-object v1, p0, Landroid/bluetooth/BluetoothHeadset;->mService:Landroid/bluetooth/IBluetoothHeadset;
 

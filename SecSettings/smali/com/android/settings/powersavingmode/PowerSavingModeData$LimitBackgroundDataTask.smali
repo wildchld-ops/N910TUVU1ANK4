@@ -36,7 +36,6 @@
 # virtual methods
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [Ljava/lang/Integer;
 
@@ -49,7 +48,6 @@
 
 .method protected varargs doInBackground([Ljava/lang/Integer;)Ljava/lang/Void;
     .locals 12
-    .param p1    # [Ljava/lang/Integer;
 
     const/4 v10, 0x1
 
@@ -323,7 +321,6 @@
 
 .method protected bridge synthetic onPostExecute(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Ljava/lang/Void;
 
@@ -334,7 +331,6 @@
 
 .method protected onPostExecute(Ljava/lang/Void;)V
     .locals 5
-    .param p1    # Ljava/lang/Void;
 
     :try_start_0
     iget-object v2, p0, Lcom/android/settings/powersavingmode/PowerSavingModeData$LimitBackgroundDataTask;->mProgressDialog:Landroid/app/ProgressDialog;

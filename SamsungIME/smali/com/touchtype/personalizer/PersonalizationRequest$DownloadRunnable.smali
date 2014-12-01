@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Lcom/touchtype/personalizer/PersonalizationRequest;Lcom/touchtype/personalizer/PersonalizationRequest$1;)V
     .locals 0
-    .param p1    # Lcom/touchtype/personalizer/PersonalizationRequest;
-    .param p2    # Lcom/touchtype/personalizer/PersonalizationRequest$1;
 
     invoke-direct {p0, p1}, Lcom/touchtype/personalizer/PersonalizationRequest$DownloadRunnable;-><init>(Lcom/touchtype/personalizer/PersonalizationRequest;)V
 

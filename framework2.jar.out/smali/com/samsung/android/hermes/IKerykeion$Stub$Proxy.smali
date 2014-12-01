@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -151,8 +150,6 @@
 
 .method public setIKerykeionCallBack(Ljava/lang/String;Landroid/os/IBinder;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/IBinder;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -206,8 +203,6 @@
 
 .method public show(Ljava/lang/String;Lcom/samsung/android/hermes/KerykeionPosition;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/samsung/android/hermes/KerykeionPosition;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -280,9 +275,6 @@
 
 .method public start(Ljava/lang/String;Lcom/samsung/android/hermes/KerykeionRequest;Lcom/samsung/android/hermes/KerykeionPosition;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/samsung/android/hermes/KerykeionRequest;
-    .param p3    # Lcom/samsung/android/hermes/KerykeionPosition;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -376,7 +368,6 @@
 
 .method public stop(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -428,7 +419,6 @@
 
 .method public training(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

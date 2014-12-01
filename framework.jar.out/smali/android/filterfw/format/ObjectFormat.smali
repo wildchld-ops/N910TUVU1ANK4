@@ -14,8 +14,6 @@
 
 .method private static bytesPerSampleForClass(Ljava/lang/Class;I)I
     .locals 4
-    .param p0    # Ljava/lang/Class;
-    .param p1    # I
 
     const/4 v1, 0x2
 
@@ -123,8 +121,6 @@
 
 .method public static fromClass(Ljava/lang/Class;I)Landroid/filterfw/core/MutableFrameFormat;
     .locals 1
-    .param p0    # Ljava/lang/Class;
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -137,9 +133,6 @@
 
 .method public static fromClass(Ljava/lang/Class;II)Landroid/filterfw/core/MutableFrameFormat;
     .locals 2
-    .param p0    # Ljava/lang/Class;
-    .param p1    # I
-    .param p2    # I
 
     new-instance v0, Landroid/filterfw/core/MutableFrameFormat;
 
@@ -169,8 +162,6 @@
 
 .method public static fromObject(Ljava/lang/Object;I)Landroid/filterfw/core/MutableFrameFormat;
     .locals 2
-    .param p0    # Ljava/lang/Object;
-    .param p1    # I
 
     if-nez p0, :cond_0
 
@@ -199,9 +190,6 @@
 
 .method public static fromObject(Ljava/lang/Object;II)Landroid/filterfw/core/MutableFrameFormat;
     .locals 2
-    .param p0    # Ljava/lang/Object;
-    .param p1    # I
-    .param p2    # I
 
     if-nez p0, :cond_0
 
@@ -228,7 +216,6 @@
 
 .method private static getBoxedClass(Ljava/lang/Class;)Ljava/lang/Class;
     .locals 3
-    .param p0    # Ljava/lang/Class;
 
     invoke-virtual {p0}, Ljava/lang/Class;->isPrimitive()Z
 

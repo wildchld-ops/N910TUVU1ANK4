@@ -504,7 +504,6 @@
 
 .method private clearSubTreeLocked(J)V
     .locals 0
-    .param p1    # J
 
     invoke-direct {p0, p1, p2}, Landroid/view/accessibility/AccessibilityNodeInfoCache;->clearSubTreeRecursiveLocked(J)V
 
@@ -513,7 +512,6 @@
 
 .method private clearSubTreeRecursiveLocked(J)V
     .locals 7
-    .param p1    # J
 
     iget-object v6, p0, Landroid/view/accessibility/AccessibilityNodeInfoCache;->mCacheImpl:Landroid/util/LongSparseArray;
 
@@ -559,7 +557,6 @@
 
 .method private refreshCachedNode(J)V
     .locals 3
-    .param p1    # J
 
     iget-object v2, p0, Landroid/view/accessibility/AccessibilityNodeInfoCache;->mLock:Ljava/lang/Object;
 
@@ -618,7 +615,6 @@
 # virtual methods
 .method public add(Landroid/view/accessibility/AccessibilityNodeInfo;)V
     .locals 17
-    .param p1    # Landroid/view/accessibility/AccessibilityNodeInfo;
 
     move-object/from16 v0, p0
 
@@ -775,7 +771,6 @@
 
 .method public get(J)Landroid/view/accessibility/AccessibilityNodeInfo;
     .locals 3
-    .param p1    # J
 
     iget-object v2, p0, Landroid/view/accessibility/AccessibilityNodeInfoCache;->mLock:Ljava/lang/Object;
 
@@ -813,7 +808,6 @@
 
 .method public onAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
     .locals 8
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
 
     invoke-virtual {p1}, Landroid/view/accessibility/AccessibilityEvent;->getEventType()I
 

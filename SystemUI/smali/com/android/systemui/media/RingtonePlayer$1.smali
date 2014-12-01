@@ -33,7 +33,6 @@
 # virtual methods
 .method public isPlaying(Landroid/os/IBinder;)Z
     .locals 3
-    .param p1    # Landroid/os/IBinder;
 
     iget-object v1, p0, Lcom/android/systemui/media/RingtonePlayer$1;->this$0:Lcom/android/systemui/media/RingtonePlayer;
 
@@ -94,9 +93,6 @@
 
 .method public play(Landroid/os/IBinder;Landroid/net/Uri;I)V
     .locals 7
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Landroid/net/Uri;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -184,10 +180,6 @@
 
 .method public playAsync(Landroid/net/Uri;Landroid/os/UserHandle;ZI)V
     .locals 2
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Landroid/os/UserHandle;
-    .param p3    # Z
-    .param p4    # I
 
     invoke-static {}, Landroid/os/Binder;->getCallingUid()I
 
@@ -227,7 +219,6 @@
 
 .method public setOnCompletionListener(Landroid/app/INotificationPlayerOnCompletionListener;)Landroid/os/IBinder;
     .locals 2
-    .param p1    # Landroid/app/INotificationPlayerOnCompletionListener;
 
     invoke-static {}, Landroid/os/Binder;->getCallingUid()I
 
@@ -262,7 +253,6 @@
 
 .method public stop(Landroid/os/IBinder;)V
     .locals 3
-    .param p1    # Landroid/os/IBinder;
 
     iget-object v1, p0, Lcom/android/systemui/media/RingtonePlayer$1;->this$0:Lcom/android/systemui/media/RingtonePlayer;
 

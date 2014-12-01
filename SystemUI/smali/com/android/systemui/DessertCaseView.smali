@@ -304,7 +304,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -315,8 +314,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -327,9 +324,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 17
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     invoke-direct/range {p0 .. p3}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
@@ -554,7 +548,6 @@
 
 .method static synthetic access$000(Lcom/android/systemui/DessertCaseView;)Z
     .locals 1
-    .param p0    # Lcom/android/systemui/DessertCaseView;
 
     iget-boolean v0, p0, Lcom/android/systemui/DessertCaseView;->mStarted:Z
 
@@ -563,7 +556,6 @@
 
 .method static synthetic access$100(Lcom/android/systemui/DessertCaseView;)Ljava/lang/Runnable;
     .locals 1
-    .param p0    # Lcom/android/systemui/DessertCaseView;
 
     iget-object v0, p0, Lcom/android/systemui/DessertCaseView;->mJuggle:Ljava/lang/Runnable;
 
@@ -572,7 +564,6 @@
 
 .method static synthetic access$200(Lcom/android/systemui/DessertCaseView;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/systemui/DessertCaseView;
 
     iget-object v0, p0, Lcom/android/systemui/DessertCaseView;->mHandler:Landroid/os/Handler;
 
@@ -581,7 +572,6 @@
 
 .method private static convertToAlphaMask(Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
     .locals 7
-    .param p0    # Landroid/graphics/Bitmap;
 
     const/4 v6, 0x0
 
@@ -634,8 +624,6 @@
 
 .method static frand(FF)F
     .locals 2
-    .param p0    # F
-    .param p1    # F
 
     invoke-static {}, Lcom/android/systemui/DessertCaseView;->frand()F
 
@@ -652,7 +640,6 @@
 
 .method private getOccupied(Landroid/view/View;)[Landroid/graphics/Point;
     .locals 10
-    .param p1    # Landroid/view/View;
 
     const v7, 0x2000002
 
@@ -737,8 +724,6 @@
 
 .method static irand(II)I
     .locals 2
-    .param p0    # I
-    .param p1    # I
 
     int-to-float v0, p0
 
@@ -755,7 +740,6 @@
 
 .method private final makeHardwareLayerListener(Landroid/view/View;)Landroid/animation/Animator$AnimatorListener;
     .locals 1
-    .param p1    # Landroid/view/View;
 
     new-instance v0, Lcom/android/systemui/DessertCaseView$3;
 
@@ -778,7 +762,6 @@
 
 .method public declared-synchronized fillFreeList(I)V
     .locals 14
-    .param p1    # I
 
     const/high16 v13, 0x3f000000
 
@@ -1049,7 +1032,6 @@
 
 .method public onDraw(Landroid/graphics/Canvas;)V
     .locals 0
-    .param p1    # Landroid/graphics/Canvas;
 
     invoke-super {p0, p1}, Landroid/view/View;->onDraw(Landroid/graphics/Canvas;)V
 
@@ -1058,10 +1040,6 @@
 
 .method protected declared-synchronized onSizeChanged(IIII)V
     .locals 8
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/high16 v7, 0x3f000000
 
@@ -1231,7 +1209,6 @@
 
 .method pick([I)I
     .locals 4
-    .param p1    # [I
 
     invoke-static {}, Ljava/lang/Math;->random()D
 
@@ -1312,9 +1289,6 @@
 
 .method public declared-synchronized place(Landroid/view/View;Landroid/graphics/Point;Z)V
     .locals 26
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/graphics/Point;
-    .param p3    # Z
 
     monitor-enter p0
 
@@ -2238,8 +2212,6 @@
 
 .method public place(Landroid/view/View;Z)V
     .locals 4
-    .param p1    # Landroid/view/View;
-    .param p2    # Z
 
     const/4 v3, 0x0
 

@@ -46,7 +46,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0, p2}, Landroid/widget/TextView;->setEnabled(Z)V
+    invoke-virtual {v0, p2}, Landroid/widget/Switch;->setEnabled(Z)V
 
     return-void
 .end method

@@ -130,7 +130,6 @@
 
 .method public recycle(Landroid/hardware/motion/MREvent;)V
     .locals 3
-    .param p1    # Landroid/hardware/motion/MREvent;
 
     iget-object v2, p0, Landroid/hardware/motion/MotionRecognitionService$EventPool;->mLockEventPool:Ljava/lang/Object;
 

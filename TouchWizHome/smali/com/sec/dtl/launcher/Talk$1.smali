@@ -36,7 +36,6 @@
 # virtual methods
 .method public onInit(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/sec/dtl/launcher/Talk$1;->this$0:Lcom/sec/dtl/launcher/Talk;
 

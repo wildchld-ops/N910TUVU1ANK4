@@ -60,7 +60,6 @@
 # virtual methods
 .method public addWindow(Lcom/android/internal/policy/impl/PhoneWindow;)V
     .locals 4
-    .param p1    # Lcom/android/internal/policy/impl/PhoneWindow;
 
     iget-object v2, p0, Lcom/android/internal/policy/impl/PhoneWindow$RotationWatcher;->mWindows:Ljava/util/ArrayList;
 
@@ -195,7 +194,6 @@
 
 .method public onRotationChanged(I)V
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -213,7 +211,6 @@
 
 .method public removeWindow(Lcom/android/internal/policy/impl/PhoneWindow;)V
     .locals 5
-    .param p1    # Lcom/android/internal/policy/impl/PhoneWindow;
 
     iget-object v4, p0, Lcom/android/internal/policy/impl/PhoneWindow$RotationWatcher;->mWindows:Ljava/util/ArrayList;
 

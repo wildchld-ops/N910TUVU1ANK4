@@ -110,8 +110,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v5, 0x1
 
@@ -422,8 +420,6 @@
 # virtual methods
 .method protected applyTransformation(FLandroid/view/animation/Transformation;)V
     .locals 4
-    .param p1    # F
-    .param p2    # Landroid/view/animation/Transformation;
 
     invoke-virtual {p2}, Landroid/view/animation/Transformation;->getTransformationType()I
 
@@ -452,7 +448,6 @@
 
 .method public setAbsolute(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/view/animation/ScaleAnimation3D;->isAbsolute:Z
 

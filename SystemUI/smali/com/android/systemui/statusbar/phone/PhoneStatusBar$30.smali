@@ -36,7 +36,6 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 9
-    .param p1    # Landroid/view/View;
 
     sget-boolean v6, Lcom/android/systemui/statusbar/Feature;->mShowWorldClock:Z
 

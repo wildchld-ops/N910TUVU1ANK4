@@ -10,10 +10,6 @@
 # direct methods
 .method protected constructor <init>(ILandroid/content/Context;Landroid/os/Looper;Ljava/util/concurrent/CopyOnWriteArrayList;Landroid/hardware/contextaware/dataprovider/sensorhubprovider/ISensorHubResetObservable;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/os/Looper;
-    .param p5    # Landroid/hardware/contextaware/dataprovider/sensorhubprovider/ISensorHubResetObservable;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -55,8 +51,6 @@
 
 .method protected final getRawSensorData(Landroid/os/Bundle;Ljava/lang/String;)[D
     .locals 1
-    .param p1    # Landroid/os/Bundle;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Landroid/os/Bundle;->getDoubleArray(Ljava/lang/String;)[D
 
@@ -77,7 +71,6 @@
 
 .method protected notifyCompensationData([D)V
     .locals 3
-    .param p1    # [D
 
     invoke-virtual {p0}, Landroid/hardware/contextaware/aggregator/EnvironmentSensorAggregator;->getContextValueNames()[Ljava/lang/String;
 
@@ -100,7 +93,6 @@
 
 .method public final setPropertyValue(ILjava/lang/Object;)Z
     .locals 4
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
@@ -148,8 +140,6 @@
 
 .method public final updateContext(Ljava/lang/String;Landroid/os/Bundle;)V
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/os/Bundle;
 
     if-nez p2, :cond_1
 

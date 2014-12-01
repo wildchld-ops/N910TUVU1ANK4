@@ -58,9 +58,6 @@
 # virtual methods
 .method public evaluate(FLandroid/view/MagnificationSpec;Landroid/view/MagnificationSpec;)Landroid/view/MagnificationSpec;
     .locals 4
-    .param p1    # F
-    .param p2    # Landroid/view/MagnificationSpec;
-    .param p3    # Landroid/view/MagnificationSpec;
 
     iget-object v0, p0, Lcom/android/server/accessibility/ScreenMagnifier$MagnificationController$1;->mTempTransformationSpec:Landroid/view/MagnificationSpec;
 
@@ -111,9 +108,6 @@
 
 .method public bridge synthetic evaluate(FLjava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # F
-    .param p2    # Ljava/lang/Object;
-    .param p3    # Ljava/lang/Object;
 
     check-cast p2, Landroid/view/MagnificationSpec;
 

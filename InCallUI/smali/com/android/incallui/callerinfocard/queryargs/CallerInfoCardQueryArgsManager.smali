@@ -14,8 +14,6 @@
 
 .method public static create(ILjava/lang/Object;)Lcom/android/incallui/callerinfocard/queryargs/CallerInfoCardQueryArgs;
     .locals 1
-    .param p0    # I
-    .param p1    # Ljava/lang/Object;
 
     sparse-switch p0, :sswitch_data_0
 

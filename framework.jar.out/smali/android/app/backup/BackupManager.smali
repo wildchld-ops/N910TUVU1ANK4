@@ -16,7 +16,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -50,7 +49,6 @@
 
 .method public static dataChanged(Ljava/lang/String;)V
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     invoke-static {}, Landroid/app/backup/BackupManager;->checkServiceBinder()V
 
@@ -173,7 +171,6 @@
 
 .method public requestRestore(Landroid/app/backup/RestoreObserver;)I
     .locals 8
-    .param p1    # Landroid/app/backup/RestoreObserver;
 
     const/4 v2, -0x1
 

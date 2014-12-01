@@ -38,9 +38,6 @@
 # direct methods
 .method constructor <init>(Ljava/lang/String;JJ)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # J
-    .param p4    # J
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -57,7 +54,6 @@
 # virtual methods
 .method public compareTo(Lcom/android/settings/deviceinfo/StorageMeasurement$FileInfo;)I
     .locals 4
-    .param p1    # Lcom/android/settings/deviceinfo/StorageMeasurement$FileInfo;
 
     if-eq p0, p1, :cond_0
 
@@ -96,7 +92,6 @@
 
 .method public bridge synthetic compareTo(Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/android/settings/deviceinfo/StorageMeasurement$FileInfo;
 

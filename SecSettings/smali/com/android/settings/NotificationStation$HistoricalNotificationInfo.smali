@@ -45,7 +45,6 @@
 
 .method synthetic constructor <init>(Lcom/android/settings/NotificationStation$1;)V
     .locals 0
-    .param p1    # Lcom/android/settings/NotificationStation$1;
 
     invoke-direct {p0}, Lcom/android/settings/NotificationStation$HistoricalNotificationInfo;-><init>()V
 

@@ -28,7 +28,6 @@
 # direct methods
 .method constructor <init>(Landroid/media/AudioService$VolumeStreamState;Landroid/os/IBinder;)V
     .locals 0
-    .param p2    # Landroid/os/IBinder;
 
     iput-object p1, p0, Landroid/media/AudioService$VolumeStreamState$VolumeDeathHandler;->this$1:Landroid/media/AudioService$VolumeStreamState;
 
@@ -41,7 +40,6 @@
 
 .method static synthetic access$2000(Landroid/media/AudioService$VolumeStreamState$VolumeDeathHandler;)I
     .locals 1
-    .param p0    # Landroid/media/AudioService$VolumeStreamState$VolumeDeathHandler;
 
     iget v0, p0, Landroid/media/AudioService$VolumeStreamState$VolumeDeathHandler;->mMuteCount:I
 
@@ -50,8 +48,6 @@
 
 .method static synthetic access$2002(Landroid/media/AudioService$VolumeStreamState$VolumeDeathHandler;I)I
     .locals 0
-    .param p0    # Landroid/media/AudioService$VolumeStreamState$VolumeDeathHandler;
-    .param p1    # I
 
     iput p1, p0, Landroid/media/AudioService$VolumeStreamState$VolumeDeathHandler;->mMuteCount:I
 
@@ -60,7 +56,6 @@
 
 .method static synthetic access$4700(Landroid/media/AudioService$VolumeStreamState$VolumeDeathHandler;)Landroid/os/IBinder;
     .locals 1
-    .param p0    # Landroid/media/AudioService$VolumeStreamState$VolumeDeathHandler;
 
     iget-object v0, p0, Landroid/media/AudioService$VolumeStreamState$VolumeDeathHandler;->mICallback:Landroid/os/IBinder;
 
@@ -119,7 +114,6 @@
 
 .method public mute(Z)V
     .locals 10
-    .param p1    # Z
 
     const/4 v3, 0x0
 

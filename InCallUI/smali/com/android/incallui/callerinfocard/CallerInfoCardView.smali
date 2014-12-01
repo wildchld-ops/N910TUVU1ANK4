@@ -60,8 +60,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/widget/RelativeLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -152,8 +150,6 @@
 
 .method static synthetic access$000(Lcom/android/incallui/callerinfocard/CallerInfoCardView;Lcom/android/incallui/callerinfocard/item/CallerInfoCardItem;)V
     .locals 0
-    .param p0    # Lcom/android/incallui/callerinfocard/CallerInfoCardView;
-    .param p1    # Lcom/android/incallui/callerinfocard/item/CallerInfoCardItem;
 
     invoke-direct {p0, p1}, Lcom/android/incallui/callerinfocard/CallerInfoCardView;->onQueryCompleted(Lcom/android/incallui/callerinfocard/item/CallerInfoCardItem;)V
 
@@ -162,7 +158,6 @@
 
 .method static synthetic access$200(Lcom/android/incallui/callerinfocard/CallerInfoCardView;)Landroid/widget/ScrollView;
     .locals 1
-    .param p0    # Lcom/android/incallui/callerinfocard/CallerInfoCardView;
 
     iget-object v0, p0, Lcom/android/incallui/callerinfocard/CallerInfoCardView;->mCallerInfoCardScrollView:Landroid/widget/ScrollView;
 
@@ -171,7 +166,6 @@
 
 .method private add(Lcom/android/incallui/callerinfocard/item/CallerInfoCardItem;)V
     .locals 3
-    .param p1    # Lcom/android/incallui/callerinfocard/item/CallerInfoCardItem;
 
     const/4 v2, 0x1
 
@@ -443,8 +437,6 @@
 
 .method private getDividerHeight(II)I
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget v0, p0, Lcom/android/incallui/callerinfocard/CallerInfoCardView;->mDividerHeight:I
 
@@ -471,9 +463,6 @@
 
 .method private getDividerHeight(III)I
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     add-int/lit8 v0, p2, -0x1
 
@@ -557,7 +546,6 @@
 
 .method private notifyDataSetChanged(Lcom/android/incallui/callerinfocard/item/CallerInfoCardItem;)V
     .locals 1
-    .param p1    # Lcom/android/incallui/callerinfocard/item/CallerInfoCardItem;
 
     iget-object v0, p0, Lcom/android/incallui/callerinfocard/CallerInfoCardView;->mCallerInfoCardViewAdapter:Lcom/android/incallui/callerinfocard/CallerInfoCardViewAdapter;
 
@@ -583,7 +571,6 @@
 
 .method private onQueryCompleted(Lcom/android/incallui/callerinfocard/item/CallerInfoCardItem;)V
     .locals 3
-    .param p1    # Lcom/android/incallui/callerinfocard/item/CallerInfoCardItem;
 
     const-string v0, "CallerInfoCardView"
 
@@ -633,7 +620,6 @@
 
 .method private replace(Lcom/android/incallui/callerinfocard/item/CallerInfoCardItem;)Z
     .locals 14
-    .param p1    # Lcom/android/incallui/callerinfocard/item/CallerInfoCardItem;
 
     const/16 v13, 0x8
 
@@ -866,7 +852,6 @@
 
 .method private scrollToUp(I)V
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -877,8 +862,6 @@
 
 .method private scrollViewTo(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget-boolean v0, p0, Lcom/android/incallui/callerinfocard/CallerInfoCardView;->mItemUpdated:Z
 
@@ -915,7 +898,6 @@
 
 .method private setScrollHeaderHeight(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/incallui/callerinfocard/CallerInfoCardView;->mCallerInfoCardScrollHeaderView:Landroid/view/View;
 
@@ -1084,11 +1066,6 @@
 
 .method protected onLayout(ZIIII)V
     .locals 4
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     const/4 v3, 0x0
 
@@ -1173,10 +1150,6 @@
 
 .method protected onSizeChanged(IIII)V
     .locals 0
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-super {p0, p1, p2, p3, p4}, Landroid/view/View;->onSizeChanged(IIII)V
 
@@ -1185,7 +1158,6 @@
 
 .method protected onWindowVisibilityChanged(I)V
     .locals 0
-    .param p1    # I
 
     invoke-super {p0, p1}, Landroid/view/View;->onWindowVisibilityChanged(I)V
 
@@ -1194,8 +1166,6 @@
 
 .method public setActionMemoFilePath(ILjava/lang/String;)V
     .locals 7
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const-string v4, "CallerInfoCardView"
 
@@ -1376,7 +1346,6 @@
 
 .method public setActionMemoFilePath(ILjava/util/ArrayList;)V
     .locals 9
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -1587,7 +1556,6 @@
 
 .method public setEnabled(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/incallui/callerinfocard/CallerInfoCardView;->mCallerInfoCardViewAdapter:Lcom/android/incallui/callerinfocard/CallerInfoCardViewAdapter;
 
@@ -1653,8 +1621,6 @@
 
 .method public setVisibility(IZ)V
     .locals 3
-    .param p1    # I
-    .param p2    # Z
 
     invoke-virtual {p0}, Landroid/view/View;->getVisibility()I
 
@@ -1711,10 +1677,6 @@
 
 .method public update(Landroid/content/Context;ILcom/android/incallui/ContactInfoCache$ContactCacheEntry;Z)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Lcom/android/incallui/ContactInfoCache$ContactCacheEntry;
-    .param p4    # Z
 
     const/16 v1, 0x12e
 

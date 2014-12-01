@@ -14,8 +14,6 @@
 
 .method public static addAction(Ljava/lang/Object;I)V
     .locals 0
-    .param p0    # Ljava/lang/Object;
-    .param p1    # I
 
     check-cast p0, Landroid/view/accessibility/AccessibilityNodeInfo;
 
@@ -26,8 +24,6 @@
 
 .method public static addChild(Ljava/lang/Object;Landroid/view/View;)V
     .locals 0
-    .param p0    # Ljava/lang/Object;
-    .param p1    # Landroid/view/View;
 
     check-cast p0, Landroid/view/accessibility/AccessibilityNodeInfo;
 
@@ -38,8 +34,6 @@
 
 .method public static findAccessibilityNodeInfosByText(Ljava/lang/Object;Ljava/lang/String;)Ljava/util/List;
     .locals 1
-    .param p0    # Ljava/lang/Object;
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -66,7 +60,6 @@
 
 .method public static getActions(Ljava/lang/Object;)I
     .locals 1
-    .param p0    # Ljava/lang/Object;
 
     check-cast p0, Landroid/view/accessibility/AccessibilityNodeInfo;
 
@@ -79,8 +72,6 @@
 
 .method public static getBoundsInParent(Ljava/lang/Object;Landroid/graphics/Rect;)V
     .locals 0
-    .param p0    # Ljava/lang/Object;
-    .param p1    # Landroid/graphics/Rect;
 
     check-cast p0, Landroid/view/accessibility/AccessibilityNodeInfo;
 
@@ -91,8 +82,6 @@
 
 .method public static getBoundsInScreen(Ljava/lang/Object;Landroid/graphics/Rect;)V
     .locals 0
-    .param p0    # Ljava/lang/Object;
-    .param p1    # Landroid/graphics/Rect;
 
     check-cast p0, Landroid/view/accessibility/AccessibilityNodeInfo;
 
@@ -103,8 +92,6 @@
 
 .method public static getChild(Ljava/lang/Object;I)Ljava/lang/Object;
     .locals 1
-    .param p0    # Ljava/lang/Object;
-    .param p1    # I
 
     check-cast p0, Landroid/view/accessibility/AccessibilityNodeInfo;
 
@@ -117,7 +104,6 @@
 
 .method public static getChildCount(Ljava/lang/Object;)I
     .locals 1
-    .param p0    # Ljava/lang/Object;
 
     check-cast p0, Landroid/view/accessibility/AccessibilityNodeInfo;
 
@@ -130,7 +116,6 @@
 
 .method public static getClassName(Ljava/lang/Object;)Ljava/lang/CharSequence;
     .locals 1
-    .param p0    # Ljava/lang/Object;
 
     check-cast p0, Landroid/view/accessibility/AccessibilityNodeInfo;
 
@@ -143,7 +128,6 @@
 
 .method public static getContentDescription(Ljava/lang/Object;)Ljava/lang/CharSequence;
     .locals 1
-    .param p0    # Ljava/lang/Object;
 
     check-cast p0, Landroid/view/accessibility/AccessibilityNodeInfo;
 
@@ -156,7 +140,6 @@
 
 .method public static getPackageName(Ljava/lang/Object;)Ljava/lang/CharSequence;
     .locals 1
-    .param p0    # Ljava/lang/Object;
 
     check-cast p0, Landroid/view/accessibility/AccessibilityNodeInfo;
 
@@ -169,7 +152,6 @@
 
 .method public static getParent(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Ljava/lang/Object;
 
     check-cast p0, Landroid/view/accessibility/AccessibilityNodeInfo;
 
@@ -182,7 +164,6 @@
 
 .method public static getText(Ljava/lang/Object;)Ljava/lang/CharSequence;
     .locals 1
-    .param p0    # Ljava/lang/Object;
 
     check-cast p0, Landroid/view/accessibility/AccessibilityNodeInfo;
 
@@ -195,7 +176,6 @@
 
 .method public static getWindowId(Ljava/lang/Object;)I
     .locals 1
-    .param p0    # Ljava/lang/Object;
 
     check-cast p0, Landroid/view/accessibility/AccessibilityNodeInfo;
 
@@ -208,7 +188,6 @@
 
 .method public static isCheckable(Ljava/lang/Object;)Z
     .locals 1
-    .param p0    # Ljava/lang/Object;
 
     check-cast p0, Landroid/view/accessibility/AccessibilityNodeInfo;
 
@@ -221,7 +200,6 @@
 
 .method public static isChecked(Ljava/lang/Object;)Z
     .locals 1
-    .param p0    # Ljava/lang/Object;
 
     check-cast p0, Landroid/view/accessibility/AccessibilityNodeInfo;
 
@@ -234,7 +212,6 @@
 
 .method public static isClickable(Ljava/lang/Object;)Z
     .locals 1
-    .param p0    # Ljava/lang/Object;
 
     check-cast p0, Landroid/view/accessibility/AccessibilityNodeInfo;
 
@@ -247,7 +224,6 @@
 
 .method public static isEnabled(Ljava/lang/Object;)Z
     .locals 1
-    .param p0    # Ljava/lang/Object;
 
     check-cast p0, Landroid/view/accessibility/AccessibilityNodeInfo;
 
@@ -260,7 +236,6 @@
 
 .method public static isFocusable(Ljava/lang/Object;)Z
     .locals 1
-    .param p0    # Ljava/lang/Object;
 
     check-cast p0, Landroid/view/accessibility/AccessibilityNodeInfo;
 
@@ -273,7 +248,6 @@
 
 .method public static isFocused(Ljava/lang/Object;)Z
     .locals 1
-    .param p0    # Ljava/lang/Object;
 
     check-cast p0, Landroid/view/accessibility/AccessibilityNodeInfo;
 
@@ -286,7 +260,6 @@
 
 .method public static isLongClickable(Ljava/lang/Object;)Z
     .locals 1
-    .param p0    # Ljava/lang/Object;
 
     check-cast p0, Landroid/view/accessibility/AccessibilityNodeInfo;
 
@@ -299,7 +272,6 @@
 
 .method public static isPassword(Ljava/lang/Object;)Z
     .locals 1
-    .param p0    # Ljava/lang/Object;
 
     check-cast p0, Landroid/view/accessibility/AccessibilityNodeInfo;
 
@@ -312,7 +284,6 @@
 
 .method public static isScrollable(Ljava/lang/Object;)Z
     .locals 1
-    .param p0    # Ljava/lang/Object;
 
     check-cast p0, Landroid/view/accessibility/AccessibilityNodeInfo;
 
@@ -325,7 +296,6 @@
 
 .method public static isSelected(Ljava/lang/Object;)Z
     .locals 1
-    .param p0    # Ljava/lang/Object;
 
     check-cast p0, Landroid/view/accessibility/AccessibilityNodeInfo;
 
@@ -348,7 +318,6 @@
 
 .method public static obtain(Landroid/view/View;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Landroid/view/View;
 
     invoke-static {p0}, Landroid/view/accessibility/AccessibilityNodeInfo;->obtain(Landroid/view/View;)Landroid/view/accessibility/AccessibilityNodeInfo;
 
@@ -359,7 +328,6 @@
 
 .method public static obtain(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Ljava/lang/Object;
 
     check-cast p0, Landroid/view/accessibility/AccessibilityNodeInfo;
 
@@ -372,8 +340,6 @@
 
 .method public static performAction(Ljava/lang/Object;I)Z
     .locals 1
-    .param p0    # Ljava/lang/Object;
-    .param p1    # I
 
     check-cast p0, Landroid/view/accessibility/AccessibilityNodeInfo;
 
@@ -386,7 +352,6 @@
 
 .method public static recycle(Ljava/lang/Object;)V
     .locals 0
-    .param p0    # Ljava/lang/Object;
 
     check-cast p0, Landroid/view/accessibility/AccessibilityNodeInfo;
 
@@ -397,8 +362,6 @@
 
 .method public static setBoundsInParent(Ljava/lang/Object;Landroid/graphics/Rect;)V
     .locals 0
-    .param p0    # Ljava/lang/Object;
-    .param p1    # Landroid/graphics/Rect;
 
     check-cast p0, Landroid/view/accessibility/AccessibilityNodeInfo;
 
@@ -409,8 +372,6 @@
 
 .method public static setBoundsInScreen(Ljava/lang/Object;Landroid/graphics/Rect;)V
     .locals 0
-    .param p0    # Ljava/lang/Object;
-    .param p1    # Landroid/graphics/Rect;
 
     check-cast p0, Landroid/view/accessibility/AccessibilityNodeInfo;
 
@@ -421,8 +382,6 @@
 
 .method public static setCheckable(Ljava/lang/Object;Z)V
     .locals 0
-    .param p0    # Ljava/lang/Object;
-    .param p1    # Z
 
     check-cast p0, Landroid/view/accessibility/AccessibilityNodeInfo;
 
@@ -433,8 +392,6 @@
 
 .method public static setChecked(Ljava/lang/Object;Z)V
     .locals 0
-    .param p0    # Ljava/lang/Object;
-    .param p1    # Z
 
     check-cast p0, Landroid/view/accessibility/AccessibilityNodeInfo;
 
@@ -445,8 +402,6 @@
 
 .method public static setClassName(Ljava/lang/Object;Ljava/lang/CharSequence;)V
     .locals 0
-    .param p0    # Ljava/lang/Object;
-    .param p1    # Ljava/lang/CharSequence;
 
     check-cast p0, Landroid/view/accessibility/AccessibilityNodeInfo;
 
@@ -457,8 +412,6 @@
 
 .method public static setClickable(Ljava/lang/Object;Z)V
     .locals 0
-    .param p0    # Ljava/lang/Object;
-    .param p1    # Z
 
     check-cast p0, Landroid/view/accessibility/AccessibilityNodeInfo;
 
@@ -469,8 +422,6 @@
 
 .method public static setContentDescription(Ljava/lang/Object;Ljava/lang/CharSequence;)V
     .locals 0
-    .param p0    # Ljava/lang/Object;
-    .param p1    # Ljava/lang/CharSequence;
 
     check-cast p0, Landroid/view/accessibility/AccessibilityNodeInfo;
 
@@ -481,8 +432,6 @@
 
 .method public static setEnabled(Ljava/lang/Object;Z)V
     .locals 0
-    .param p0    # Ljava/lang/Object;
-    .param p1    # Z
 
     check-cast p0, Landroid/view/accessibility/AccessibilityNodeInfo;
 
@@ -493,8 +442,6 @@
 
 .method public static setFocusable(Ljava/lang/Object;Z)V
     .locals 0
-    .param p0    # Ljava/lang/Object;
-    .param p1    # Z
 
     check-cast p0, Landroid/view/accessibility/AccessibilityNodeInfo;
 
@@ -505,8 +452,6 @@
 
 .method public static setFocused(Ljava/lang/Object;Z)V
     .locals 0
-    .param p0    # Ljava/lang/Object;
-    .param p1    # Z
 
     check-cast p0, Landroid/view/accessibility/AccessibilityNodeInfo;
 
@@ -517,8 +462,6 @@
 
 .method public static setLongClickable(Ljava/lang/Object;Z)V
     .locals 0
-    .param p0    # Ljava/lang/Object;
-    .param p1    # Z
 
     check-cast p0, Landroid/view/accessibility/AccessibilityNodeInfo;
 
@@ -529,8 +472,6 @@
 
 .method public static setPackageName(Ljava/lang/Object;Ljava/lang/CharSequence;)V
     .locals 0
-    .param p0    # Ljava/lang/Object;
-    .param p1    # Ljava/lang/CharSequence;
 
     check-cast p0, Landroid/view/accessibility/AccessibilityNodeInfo;
 
@@ -541,8 +482,6 @@
 
 .method public static setParent(Ljava/lang/Object;Landroid/view/View;)V
     .locals 0
-    .param p0    # Ljava/lang/Object;
-    .param p1    # Landroid/view/View;
 
     check-cast p0, Landroid/view/accessibility/AccessibilityNodeInfo;
 
@@ -553,8 +492,6 @@
 
 .method public static setPassword(Ljava/lang/Object;Z)V
     .locals 0
-    .param p0    # Ljava/lang/Object;
-    .param p1    # Z
 
     check-cast p0, Landroid/view/accessibility/AccessibilityNodeInfo;
 
@@ -565,8 +502,6 @@
 
 .method public static setScrollable(Ljava/lang/Object;Z)V
     .locals 0
-    .param p0    # Ljava/lang/Object;
-    .param p1    # Z
 
     check-cast p0, Landroid/view/accessibility/AccessibilityNodeInfo;
 
@@ -577,8 +512,6 @@
 
 .method public static setSelected(Ljava/lang/Object;Z)V
     .locals 0
-    .param p0    # Ljava/lang/Object;
-    .param p1    # Z
 
     check-cast p0, Landroid/view/accessibility/AccessibilityNodeInfo;
 
@@ -589,8 +522,6 @@
 
 .method public static setSource(Ljava/lang/Object;Landroid/view/View;)V
     .locals 0
-    .param p0    # Ljava/lang/Object;
-    .param p1    # Landroid/view/View;
 
     check-cast p0, Landroid/view/accessibility/AccessibilityNodeInfo;
 
@@ -601,8 +532,6 @@
 
 .method public static setText(Ljava/lang/Object;Ljava/lang/CharSequence;)V
     .locals 0
-    .param p0    # Ljava/lang/Object;
-    .param p1    # Ljava/lang/CharSequence;
 
     check-cast p0, Landroid/view/accessibility/AccessibilityNodeInfo;
 

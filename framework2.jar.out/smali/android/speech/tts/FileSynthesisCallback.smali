@@ -36,7 +36,6 @@
 # direct methods
 .method constructor <init>(Ljava/nio/channels/FileChannel;)V
     .locals 2
-    .param p1    # Ljava/nio/channels/FileChannel;
 
     const/4 v1, 0x0
 
@@ -103,10 +102,6 @@
 
 .method private makeWavHeader(IIII)Ljava/nio/ByteBuffer;
     .locals 9
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/4 v6, 0x1
 
@@ -241,9 +236,6 @@
 # virtual methods
 .method public audioAvailable([BII)I
     .locals 5
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
 
     const/4 v1, -0x1
 
@@ -488,9 +480,6 @@
 
 .method public start(III)I
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v1, -0x1
 

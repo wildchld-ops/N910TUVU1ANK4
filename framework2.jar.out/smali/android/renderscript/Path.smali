@@ -26,12 +26,6 @@
 # direct methods
 .method constructor <init>(ILandroid/renderscript/RenderScript;Landroid/renderscript/Path$Primitive;Landroid/renderscript/Allocation;Landroid/renderscript/Allocation;F)V
     .locals 0
-    .param p1    # I
-    .param p2    # Landroid/renderscript/RenderScript;
-    .param p3    # Landroid/renderscript/Path$Primitive;
-    .param p4    # Landroid/renderscript/Allocation;
-    .param p5    # Landroid/renderscript/Allocation;
-    .param p6    # F
 
     invoke-direct {p0, p1, p2}, Landroid/renderscript/BaseObj;-><init>(ILandroid/renderscript/RenderScript;)V
 
@@ -48,10 +42,6 @@
 
 .method public static createDynamicPath(Landroid/renderscript/RenderScript;Landroid/renderscript/Path$Primitive;FLandroid/renderscript/Allocation;)Landroid/renderscript/Path;
     .locals 1
-    .param p0    # Landroid/renderscript/RenderScript;
-    .param p1    # Landroid/renderscript/Path$Primitive;
-    .param p2    # F
-    .param p3    # Landroid/renderscript/Allocation;
 
     const/4 v0, 0x0
 
@@ -60,11 +50,6 @@
 
 .method public static createDynamicPath(Landroid/renderscript/RenderScript;Landroid/renderscript/Path$Primitive;FLandroid/renderscript/Allocation;Landroid/renderscript/Allocation;)Landroid/renderscript/Path;
     .locals 1
-    .param p0    # Landroid/renderscript/RenderScript;
-    .param p1    # Landroid/renderscript/Path$Primitive;
-    .param p2    # F
-    .param p3    # Landroid/renderscript/Allocation;
-    .param p4    # Landroid/renderscript/Allocation;
 
     const/4 v0, 0x0
 
@@ -73,10 +58,6 @@
 
 .method public static createStaticPath(Landroid/renderscript/RenderScript;Landroid/renderscript/Path$Primitive;FLandroid/renderscript/Allocation;)Landroid/renderscript/Path;
     .locals 7
-    .param p0    # Landroid/renderscript/RenderScript;
-    .param p1    # Landroid/renderscript/Path$Primitive;
-    .param p2    # F
-    .param p3    # Landroid/renderscript/Allocation;
 
     const/4 v6, 0x0
 
@@ -117,11 +98,6 @@
 
 .method public static createStaticPath(Landroid/renderscript/RenderScript;Landroid/renderscript/Path$Primitive;FLandroid/renderscript/Allocation;Landroid/renderscript/Allocation;)Landroid/renderscript/Path;
     .locals 1
-    .param p0    # Landroid/renderscript/RenderScript;
-    .param p1    # Landroid/renderscript/Path$Primitive;
-    .param p2    # F
-    .param p3    # Landroid/renderscript/Allocation;
-    .param p4    # Landroid/renderscript/Allocation;
 
     const/4 v0, 0x0
 

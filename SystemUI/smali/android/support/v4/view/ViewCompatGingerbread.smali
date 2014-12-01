@@ -14,7 +14,6 @@
 
 .method public static getOverScrollMode(Landroid/view/View;)I
     .locals 1
-    .param p0    # Landroid/view/View;
 
     invoke-virtual {p0}, Landroid/view/View;->getOverScrollMode()I
 
@@ -25,8 +24,6 @@
 
 .method public static setOverScrollMode(Landroid/view/View;I)V
     .locals 0
-    .param p0    # Landroid/view/View;
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/view/View;->setOverScrollMode(I)V
 

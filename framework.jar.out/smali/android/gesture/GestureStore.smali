@@ -78,7 +78,6 @@
 
 .method private readFormatV1(Ljava/io/DataInputStream;)V
     .locals 11
-    .param p1    # Ljava/io/DataInputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -152,8 +151,6 @@
 # virtual methods
 .method public addGesture(Ljava/lang/String;Landroid/gesture/Gesture;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/gesture/Gesture;
 
     if-eqz p1, :cond_0
 
@@ -231,7 +228,6 @@
 
 .method public getGestures(Ljava/lang/String;)Ljava/util/ArrayList;
     .locals 2
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -301,7 +297,6 @@
 
 .method public load(Ljava/io/InputStream;)V
     .locals 1
-    .param p1    # Ljava/io/InputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -317,8 +312,6 @@
 
 .method public load(Ljava/io/InputStream;Z)V
     .locals 5
-    .param p1    # Ljava/io/InputStream;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -406,7 +399,6 @@
 
 .method public recognize(Landroid/gesture/Gesture;)Ljava/util/ArrayList;
     .locals 5
-    .param p1    # Landroid/gesture/Gesture;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -446,7 +438,6 @@
 
 .method public removeEntry(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/gesture/GestureStore;->mNamedGestures:Ljava/util/HashMap;
 
@@ -465,8 +456,6 @@
 
 .method public removeGesture(Ljava/lang/String;Landroid/gesture/Gesture;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/gesture/Gesture;
 
     iget-object v1, p0, Landroid/gesture/GestureStore;->mNamedGestures:Ljava/util/HashMap;
 
@@ -512,7 +501,6 @@
 
 .method public save(Ljava/io/OutputStream;)V
     .locals 1
-    .param p1    # Ljava/io/OutputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -528,8 +516,6 @@
 
 .method public save(Ljava/io/OutputStream;Z)V
     .locals 11
-    .param p1    # Ljava/io/OutputStream;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -675,7 +661,6 @@
 
 .method public setOrientationStyle(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/gesture/GestureStore;->mOrientationStyle:I
 
@@ -684,7 +669,6 @@
 
 .method public setSequenceType(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/gesture/GestureStore;->mSequenceType:I
 

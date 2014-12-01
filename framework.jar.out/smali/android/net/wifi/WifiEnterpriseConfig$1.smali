@@ -38,7 +38,6 @@
 
 .method private readCertificate(Landroid/os/Parcel;)Ljava/security/cert/X509Certificate;
     .locals 6
-    .param p1    # Landroid/os/Parcel;
 
     const/4 v2, 0x0
 
@@ -87,7 +86,6 @@
 # virtual methods
 .method public createFromParcel(Landroid/os/Parcel;)Landroid/net/wifi/WifiEnterpriseConfig;
     .locals 13
-    .param p1    # Landroid/os/Parcel;
 
     const/4 v12, 0x1
 
@@ -217,7 +215,6 @@
 
 .method public bridge synthetic createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     invoke-virtual {p0, p1}, Landroid/net/wifi/WifiEnterpriseConfig$1;->createFromParcel(Landroid/os/Parcel;)Landroid/net/wifi/WifiEnterpriseConfig;
 
@@ -228,7 +225,6 @@
 
 .method public newArray(I)[Landroid/net/wifi/WifiEnterpriseConfig;
     .locals 1
-    .param p1    # I
 
     new-array v0, p1, [Landroid/net/wifi/WifiEnterpriseConfig;
 
@@ -237,7 +233,6 @@
 
 .method public bridge synthetic newArray(I)[Ljava/lang/Object;
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/net/wifi/WifiEnterpriseConfig$1;->newArray(I)[Landroid/net/wifi/WifiEnterpriseConfig;
 

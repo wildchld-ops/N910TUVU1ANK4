@@ -53,8 +53,6 @@
 # direct methods
 .method constructor <init>(Landroid/content/Context;Landroid/view/View$OnClickListener;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/view/View$OnClickListener;
 
     invoke-direct {p0, p1}, Landroid/preference/CheckBoxPreference;-><init>(Landroid/content/Context;)V
 
@@ -103,8 +101,6 @@
 
 .method static synthetic access$1200(Lcom/android/settings/users/AppRestrictionsFragment$AppRestrictionsPreference;Z)V
     .locals 0
-    .param p0    # Lcom/android/settings/users/AppRestrictionsFragment$AppRestrictionsPreference;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/settings/users/AppRestrictionsFragment$AppRestrictionsPreference;->setSettingsEnabled(Z)V
 
@@ -113,8 +109,6 @@
 
 .method static synthetic access$1300(Lcom/android/settings/users/AppRestrictionsFragment$AppRestrictionsPreference;Z)V
     .locals 0
-    .param p0    # Lcom/android/settings/users/AppRestrictionsFragment$AppRestrictionsPreference;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/settings/users/AppRestrictionsFragment$AppRestrictionsPreference;->setWidgetFrameEnabled(Z)V
 
@@ -123,7 +117,6 @@
 
 .method static synthetic access$1700(Lcom/android/settings/users/AppRestrictionsFragment$AppRestrictionsPreference;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/users/AppRestrictionsFragment$AppRestrictionsPreference;
 
     iget-boolean v0, p0, Lcom/android/settings/users/AppRestrictionsFragment$AppRestrictionsPreference;->hasSettings:Z
 
@@ -132,7 +125,6 @@
 
 .method static synthetic access$1800(Lcom/android/settings/users/AppRestrictionsFragment$AppRestrictionsPreference;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/settings/users/AppRestrictionsFragment$AppRestrictionsPreference;
 
     iget-object v0, p0, Lcom/android/settings/users/AppRestrictionsFragment$AppRestrictionsPreference;->restrictions:Ljava/util/ArrayList;
 
@@ -141,7 +133,6 @@
 
 .method static synthetic access$1900(Lcom/android/settings/users/AppRestrictionsFragment$AppRestrictionsPreference;)Ljava/util/List;
     .locals 1
-    .param p0    # Lcom/android/settings/users/AppRestrictionsFragment$AppRestrictionsPreference;
 
     iget-object v0, p0, Lcom/android/settings/users/AppRestrictionsFragment$AppRestrictionsPreference;->mChildren:Ljava/util/List;
 
@@ -150,7 +141,6 @@
 
 .method static synthetic access$900(Lcom/android/settings/users/AppRestrictionsFragment$AppRestrictionsPreference;)Landroid/view/View$OnClickListener;
     .locals 1
-    .param p0    # Lcom/android/settings/users/AppRestrictionsFragment$AppRestrictionsPreference;
 
     iget-object v0, p0, Lcom/android/settings/users/AppRestrictionsFragment$AppRestrictionsPreference;->listener:Landroid/view/View$OnClickListener;
 
@@ -159,7 +149,6 @@
 
 .method private setSettingsEnabled(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/users/AppRestrictionsFragment$AppRestrictionsPreference;->hasSettings:Z
 
@@ -168,7 +157,6 @@
 
 .method private setWidgetFrameEnabled(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/users/AppRestrictionsFragment$AppRestrictionsPreference;->hasWidgetFrame:Z
 
@@ -212,7 +200,6 @@
 
 .method protected onBindView(Landroid/view/View;)V
     .locals 9
-    .param p1    # Landroid/view/View;
 
     const/4 v7, 0x1
 
@@ -353,7 +340,6 @@
 
 .method public setChecked(Z)V
     .locals 2
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -384,7 +370,6 @@
 
 .method setImmutable(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/users/AppRestrictionsFragment$AppRestrictionsPreference;->immutable:Z
 

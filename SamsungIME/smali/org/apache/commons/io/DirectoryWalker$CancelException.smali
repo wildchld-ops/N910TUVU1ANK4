@@ -27,8 +27,6 @@
 # direct methods
 .method public constructor <init>(Ljava/io/File;I)V
     .locals 1
-    .param p1    # Ljava/io/File;
-    .param p2    # I
 
     const-string v0, "Operation Cancelled"
 
@@ -39,9 +37,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Ljava/io/File;I)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/io/File;
-    .param p3    # I
 
     invoke-direct {p0, p1}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
 

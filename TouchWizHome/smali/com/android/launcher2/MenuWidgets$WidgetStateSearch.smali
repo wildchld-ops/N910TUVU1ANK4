@@ -37,8 +37,6 @@
 
 .method synthetic constructor <init>(Lcom/android/launcher2/MenuWidgets;Lcom/android/launcher2/MenuWidgets$1;)V
     .locals 0
-    .param p1    # Lcom/android/launcher2/MenuWidgets;
-    .param p2    # Lcom/android/launcher2/MenuWidgets$1;
 
     invoke-direct {p0, p1}, Lcom/android/launcher2/MenuWidgets$WidgetStateSearch;-><init>(Lcom/android/launcher2/MenuWidgets;)V
 
@@ -59,7 +57,6 @@
 
 .method public enter(Lcom/android/launcher2/MenuWidgets$WidgetState;Ljava/util/List;)V
     .locals 7
-    .param p1    # Lcom/android/launcher2/MenuWidgets$WidgetState;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -157,7 +154,6 @@
 
 .method public exit(Lcom/android/launcher2/MenuWidgets$WidgetState;Ljava/util/List;)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/MenuWidgets$WidgetState;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -195,8 +191,6 @@
 
 .method public onClickWidget(Lcom/android/launcher2/HomePendingItem;Landroid/view/View;)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/HomePendingItem;
-    .param p2    # Landroid/view/View;
 
     instance-of v0, p2, Lcom/android/launcher2/WidgetFolderView;
 
@@ -223,7 +217,6 @@
 
 .method public restore(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/launcher2/MenuWidgets$WidgetStateObj;->restore(Landroid/os/Bundle;)V
 
@@ -241,7 +234,6 @@
 
 .method public save(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Lcom/android/launcher2/MenuWidgets$WidgetStateObj;->save(Landroid/os/Bundle;)V
 

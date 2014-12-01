@@ -178,8 +178,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v3, 0x2
 
@@ -427,7 +425,6 @@
 
 .method static synthetic access$000(Lcom/android/launcher2/Folder;)Landroid/widget/ScrollView;
     .locals 1
-    .param p0    # Lcom/android/launcher2/Folder;
 
     iget-object v0, p0, Lcom/android/launcher2/Folder;->mScrollView:Landroid/widget/ScrollView;
 
@@ -436,7 +433,6 @@
 
 .method static synthetic access$100(Lcom/android/launcher2/Folder;)Z
     .locals 1
-    .param p0    # Lcom/android/launcher2/Folder;
 
     invoke-direct {p0}, Lcom/android/launcher2/Folder;->checkAddItemState()Z
 
@@ -447,7 +443,6 @@
 
 .method static synthetic access$1000(Lcom/android/launcher2/Folder;)Landroid/view/View$OnClickListener;
     .locals 1
-    .param p0    # Lcom/android/launcher2/Folder;
 
     iget-object v0, p0, Lcom/android/launcher2/Folder;->mItemClickListener:Landroid/view/View$OnClickListener;
 
@@ -456,7 +451,6 @@
 
 .method static synthetic access$1100(Lcom/android/launcher2/Folder;)V
     .locals 0
-    .param p0    # Lcom/android/launcher2/Folder;
 
     invoke-direct {p0}, Lcom/android/launcher2/Folder;->showAddFolderItem()V
 
@@ -465,7 +459,6 @@
 
 .method static synthetic access$200(Lcom/android/launcher2/Folder;)Lcom/android/launcher2/HomeView;
     .locals 1
-    .param p0    # Lcom/android/launcher2/Folder;
 
     iget-object v0, p0, Lcom/android/launcher2/Folder;->mHomeView:Lcom/android/launcher2/HomeView;
 
@@ -474,7 +467,6 @@
 
 .method static synthetic access$300(Lcom/android/launcher2/Folder;)Lcom/android/launcher2/BaseItem;
     .locals 1
-    .param p0    # Lcom/android/launcher2/Folder;
 
     iget-object v0, p0, Lcom/android/launcher2/Folder;->child:Lcom/android/launcher2/BaseItem;
 
@@ -483,8 +475,6 @@
 
 .method static synthetic access$302(Lcom/android/launcher2/Folder;Lcom/android/launcher2/BaseItem;)Lcom/android/launcher2/BaseItem;
     .locals 0
-    .param p0    # Lcom/android/launcher2/Folder;
-    .param p1    # Lcom/android/launcher2/BaseItem;
 
     iput-object p1, p0, Lcom/android/launcher2/Folder;->child:Lcom/android/launcher2/BaseItem;
 
@@ -493,7 +483,6 @@
 
 .method static synthetic access$400(Lcom/android/launcher2/Folder;)Lcom/android/launcher2/MenuAppsGridFragment;
     .locals 1
-    .param p0    # Lcom/android/launcher2/Folder;
 
     iget-object v0, p0, Lcom/android/launcher2/Folder;->mMenuAppsGridFragment:Lcom/android/launcher2/MenuAppsGridFragment;
 
@@ -502,8 +491,6 @@
 
 .method static synthetic access$402(Lcom/android/launcher2/Folder;Lcom/android/launcher2/MenuAppsGridFragment;)Lcom/android/launcher2/MenuAppsGridFragment;
     .locals 0
-    .param p0    # Lcom/android/launcher2/Folder;
-    .param p1    # Lcom/android/launcher2/MenuAppsGridFragment;
 
     iput-object p1, p0, Lcom/android/launcher2/Folder;->mMenuAppsGridFragment:Lcom/android/launcher2/MenuAppsGridFragment;
 
@@ -512,7 +499,6 @@
 
 .method static synthetic access$500(Lcom/android/launcher2/Folder;)Z
     .locals 1
-    .param p0    # Lcom/android/launcher2/Folder;
 
     iget-boolean v0, p0, Lcom/android/launcher2/Folder;->mIsEditingName:Z
 
@@ -521,8 +507,6 @@
 
 .method static synthetic access$502(Lcom/android/launcher2/Folder;Z)Z
     .locals 0
-    .param p0    # Lcom/android/launcher2/Folder;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/launcher2/Folder;->mIsEditingName:Z
 
@@ -531,7 +515,6 @@
 
 .method static synthetic access$600(Lcom/android/launcher2/Folder;)Landroid/view/inputmethod/InputMethodManager;
     .locals 1
-    .param p0    # Lcom/android/launcher2/Folder;
 
     iget-object v0, p0, Lcom/android/launcher2/Folder;->mInputMethodManager:Landroid/view/inputmethod/InputMethodManager;
 
@@ -540,8 +523,6 @@
 
 .method static synthetic access$702(Lcom/android/launcher2/Folder;Z)Z
     .locals 0
-    .param p0    # Lcom/android/launcher2/Folder;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/launcher2/Folder;->mIsFolderOpenAnimationEnded:Z
 
@@ -550,7 +531,6 @@
 
 .method static synthetic access$800(Lcom/android/launcher2/Folder;)V
     .locals 0
-    .param p0    # Lcom/android/launcher2/Folder;
 
     invoke-direct {p0}, Lcom/android/launcher2/Folder;->onCloseComplete()V
 
@@ -559,7 +539,6 @@
 
 .method static synthetic access$900(Lcom/android/launcher2/Folder;)Landroid/view/LayoutInflater;
     .locals 1
-    .param p0    # Lcom/android/launcher2/Folder;
 
     iget-object v0, p0, Lcom/android/launcher2/Folder;->mInflater:Landroid/view/LayoutInflater;
 
@@ -709,7 +688,6 @@
 
 .method static fromXml(Landroid/content/Context;)Lcom/android/launcher2/Folder;
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
 
@@ -730,7 +708,6 @@
 
 .method private getGridValues(Landroid/content/res/Resources;)V
     .locals 1
-    .param p1    # Landroid/content/res/Resources;
 
     const v0, 0x7f0e0029
 
@@ -753,7 +730,6 @@
 
 .method private getViewForInfo(Lcom/android/launcher2/BaseItem;)Landroid/view/View;
     .locals 4
-    .param p1    # Lcom/android/launcher2/BaseItem;
 
     const/4 v1, 0x0
 
@@ -812,7 +788,6 @@
 
 .method private leftAdjustFolderForTB(Landroid/content/res/Resources;)I
     .locals 4
-    .param p1    # Landroid/content/res/Resources;
 
     const v3, 0x7f0c006c
 
@@ -900,7 +875,6 @@
 
 .method private notifyFolderNameChangeListeners(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     iget-object v2, p0, Lcom/android/launcher2/Folder;->mFolderNameChangeListeners:Ljava/util/List;
 
@@ -1031,7 +1005,6 @@
 
 .method private scrollIfNeeded(Landroid/view/DragEvent;)Z
     .locals 10
-    .param p1    # Landroid/view/DragEvent;
 
     const/4 v6, 0x1
 
@@ -1202,7 +1175,6 @@
 
 .method private setupContentDimensions(I)V
     .locals 4
-    .param p1    # I
 
     sget-boolean v1, Lcom/android/launcher2/Folder;->DEBUGGABLE:Z
 
@@ -1264,7 +1236,6 @@
 
 .method private setupContentForNumItems(I)V
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/launcher2/Folder;->setupContentDimensions(I)V
 
@@ -1503,7 +1474,6 @@
 # virtual methods
 .method public addFolderNameChangeListener(Lcom/android/launcher2/Folder$FolderNameChangeListener;)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/Folder$FolderNameChangeListener;
 
     iget-object v0, p0, Lcom/android/launcher2/Folder;->mFolderNameChangeListeners:Ljava/util/List;
 
@@ -1514,7 +1484,6 @@
 
 .method beginHotseatSwapAnimation(Lcom/android/launcher2/BaseItem;)V
     .locals 2
-    .param p1    # Lcom/android/launcher2/BaseItem;
 
     iget-object v0, p0, Lcom/android/launcher2/Folder;->mFolderAnimator:Lcom/android/launcher2/FolderAnimator;
 
@@ -1529,7 +1498,6 @@
 
 .method bind(Lcom/android/launcher2/FolderItem;)V
     .locals 8
-    .param p1    # Lcom/android/launcher2/FolderItem;
 
     iget-object v6, p0, Lcom/android/launcher2/Folder;->mVertScroller:Lcom/android/launcher2/Folder$FolderVertScroller;
 
@@ -2837,8 +2805,6 @@
 
 .method public close(ZZ)V
     .locals 9
-    .param p1    # Z
-    .param p2    # Z
 
     const/4 v8, 0x1
 
@@ -3052,7 +3018,6 @@
 
 .method protected createAndAddShortcut(Lcom/android/launcher2/BaseItem;)Z
     .locals 2
-    .param p1    # Lcom/android/launcher2/BaseItem;
 
     iget-object v0, p0, Lcom/android/launcher2/Folder;->mContent:Lcom/android/launcher2/CellLayoutNoGap;
 
@@ -3118,7 +3083,6 @@
 
 .method public dismissEditingName(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/launcher2/Folder;->mInputMethodManager:Landroid/view/inputmethod/InputMethodManager;
 
@@ -3137,7 +3101,6 @@
 
 .method public dispatchDragEvent(Landroid/view/DragEvent;)Z
     .locals 3
-    .param p1    # Landroid/view/DragEvent;
 
     invoke-super {p0, p1}, Landroid/view/ViewGroup;->dispatchDragEvent(Landroid/view/DragEvent;)Z
 
@@ -3178,7 +3141,6 @@
 
 .method public dispatchDraw(Landroid/graphics/Canvas;)V
     .locals 10
-    .param p1    # Landroid/graphics/Canvas;
 
     invoke-static {p0, p1}, Lcom/android/launcher2/Utilities;->onViewDraw(Landroid/view/View;Landroid/graphics/Canvas;)V
 
@@ -3309,7 +3271,6 @@
 
 .method public doneEditingFolderName(Z)V
     .locals 11
-    .param p1    # Z
 
     const/4 v10, 0x0
 
@@ -3582,7 +3543,6 @@
 
 .method finishHotseatSwapAnimation(Lcom/android/launcher2/BaseItem;)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/BaseItem;
 
     iget-object v0, p0, Lcom/android/launcher2/Folder;->mFolderAnimator:Lcom/android/launcher2/FolderAnimator;
 
@@ -3643,7 +3603,6 @@
 
 .method public getDragOutline(Landroid/view/View;)Landroid/graphics/Bitmap;
     .locals 2
-    .param p1    # Landroid/view/View;
 
     iget-object v1, p0, Lcom/android/launcher2/Folder;->mHomeView:Lcom/android/launcher2/HomeView;
 
@@ -3918,7 +3877,6 @@
 
 .method getFolderColorByView(Landroid/view/View;)Lcom/android/launcher2/Folder$FolderColor;
     .locals 6
-    .param p1    # Landroid/view/View;
 
     invoke-static {}, Lcom/android/launcher2/Folder$FolderColor;->values()[Lcom/android/launcher2/Folder$FolderColor;
 
@@ -4018,7 +3976,6 @@
 
 .method public getItemAt(I)Landroid/view/View;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/launcher2/Folder;->mContent:Lcom/android/launcher2/CellLayoutNoGap;
 
@@ -4128,8 +4085,6 @@
 
 .method public handleTouchOutsideBounds(Landroid/view/MotionEvent;Landroid/view/ViewGroup;)I
     .locals 7
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # Landroid/view/ViewGroup;
 
     const/4 v6, 0x0
 
@@ -4271,7 +4226,6 @@
 
 .method notifyFolderIconChanged(Lcom/android/launcher2/FolderIconView;)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/FolderIconView;
 
     iget-object v0, p0, Lcom/android/launcher2/Folder;->mFolderManager:Lcom/android/launcher2/Folder$FolderManager;
 
@@ -4287,7 +4241,6 @@
 
 .method public onAdd(Lcom/android/launcher2/BaseItem;)V
     .locals 0
-    .param p1    # Lcom/android/launcher2/BaseItem;
 
     return-void
 .end method
@@ -4357,7 +4310,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 15
-    .param p1    # Landroid/content/res/Configuration;
 
     iget-object v12, p0, Lcom/android/launcher2/Folder;->mContent:Lcom/android/launcher2/CellLayoutNoGap;
 
@@ -4568,7 +4520,6 @@
 
 .method public onDragEndedWithItem(Lcom/android/launcher2/BaseItem;)V
     .locals 2
-    .param p1    # Lcom/android/launcher2/BaseItem;
 
     iget-object v1, p0, Lcom/android/launcher2/Folder;->mHomeView:Lcom/android/launcher2/HomeView;
 
@@ -4583,7 +4534,6 @@
 
 .method public onDragEvent(Landroid/view/DragEvent;)Z
     .locals 7
-    .param p1    # Landroid/view/DragEvent;
 
     const/4 v6, 0x0
 
@@ -4784,7 +4734,6 @@
 
 .method public onDragStartedWithItem(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     iget-object v1, p0, Lcom/android/launcher2/Folder;->mHomeView:Lcom/android/launcher2/HomeView;
 
@@ -4799,9 +4748,6 @@
 
 .method public onEditorAction(Landroid/widget/TextView;ILandroid/view/KeyEvent;)Z
     .locals 2
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # I
-    .param p3    # Landroid/view/KeyEvent;
 
     const/4 v0, 0x1
 
@@ -5493,7 +5439,6 @@
 
 .method public onGenericMotionEvent(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getSource()I
 
@@ -5530,7 +5475,6 @@
 
 .method public onInterceptTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 13
-    .param p1    # Landroid/view/MotionEvent;
 
     const/16 v9, 0x8
 
@@ -5935,7 +5879,6 @@
 
 .method public onLongClick(Landroid/view/View;)Z
     .locals 6
-    .param p1    # Landroid/view/View;
 
     const/4 v3, 0x1
 
@@ -6054,7 +5997,6 @@
 
 .method public onRemove(Lcom/android/launcher2/BaseItem;)V
     .locals 2
-    .param p1    # Lcom/android/launcher2/BaseItem;
 
     invoke-direct {p0, p1}, Lcom/android/launcher2/Folder;->getViewForInfo(Lcom/android/launcher2/BaseItem;)Landroid/view/View;
 
@@ -6078,14 +6020,12 @@
 
 .method public onTitleChanged(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     return-void
 .end method
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v0, 0x1
 
@@ -6094,7 +6034,6 @@
 
 .method public onTouchModeChanged(Z)V
     .locals 4
-    .param p1    # Z
 
     const/4 v3, 0x0
 
@@ -6156,9 +6095,6 @@
 
 .method public open(Landroid/view/ViewGroup;Landroid/view/ViewGroup;Z)V
     .locals 2
-    .param p1    # Landroid/view/ViewGroup;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Z
 
     invoke-virtual {p0}, Lcom/android/launcher2/Folder;->getInfo()Lcom/android/launcher2/FolderItem;
 
@@ -6270,7 +6206,6 @@
 
 .method public removeFolderNameChangeListener(Lcom/android/launcher2/Folder$FolderNameChangeListener;)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/Folder$FolderNameChangeListener;
 
     iget-object v0, p0, Lcom/android/launcher2/Folder;->mFolderNameChangeListeners:Ljava/util/List;
 
@@ -6333,9 +6268,6 @@
 
 .method public restoreText(Ljava/lang/String;II)Z
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v1, 0x1
 
@@ -6386,7 +6318,6 @@
 
 .method public setAddToFolderButtonListener(Landroid/view/View$OnClickListener;)V
     .locals 1
-    .param p1    # Landroid/view/View$OnClickListener;
 
     iput-object p1, p0, Lcom/android/launcher2/Folder;->mAddToFolderButtonListener:Landroid/view/View$OnClickListener;
 
@@ -6399,8 +6330,6 @@
 
 .method setFolderColor(IZ)V
     .locals 2
-    .param p1    # I
-    .param p2    # Z
 
     sget-boolean v1, Lcom/android/launcher2/LauncherApplication;->sIsFolderColorSupport:Z
 
@@ -6476,8 +6405,6 @@
 
 .method setFolderColor(Lcom/android/launcher2/Folder$FolderColor;Z)V
     .locals 7
-    .param p1    # Lcom/android/launcher2/Folder$FolderColor;
-    .param p2    # Z
 
     sget-boolean v5, Lcom/android/launcher2/LauncherApplication;->sIsFolderColorSupport:Z
 
@@ -6580,7 +6507,6 @@
 
 .method setFolderManager(Lcom/android/launcher2/Folder$FolderManager;)V
     .locals 2
-    .param p1    # Lcom/android/launcher2/Folder$FolderManager;
 
     iput-object p1, p0, Lcom/android/launcher2/Folder;->mFolderManager:Lcom/android/launcher2/Folder$FolderManager;
 
@@ -6609,7 +6535,6 @@
 
 .method public setFolderNameDefaultFontSize(Z)V
     .locals 9
-    .param p1    # Z
 
     const/4 v8, 0x1
 
@@ -6701,7 +6626,6 @@
 
 .method public setHomeView(Lcom/android/launcher2/HomeView;)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/HomeView;
 
     iput-object p1, p0, Lcom/android/launcher2/Folder;->mHomeView:Lcom/android/launcher2/HomeView;
 
@@ -6714,7 +6638,6 @@
 
 .method public setItemClickListener(Landroid/view/View$OnClickListener;)V
     .locals 0
-    .param p1    # Landroid/view/View$OnClickListener;
 
     iput-object p1, p0, Lcom/android/launcher2/Folder;->mItemClickListener:Landroid/view/View$OnClickListener;
 
@@ -6764,7 +6687,6 @@
 
 .method public startEditingFolderName(Z)V
     .locals 2
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -6786,7 +6708,6 @@
 
 .method updateFolderColorViews(Lcom/android/launcher2/Folder$FolderColor;)V
     .locals 7
-    .param p1    # Lcom/android/launcher2/Folder$FolderColor;
 
     invoke-static {}, Lcom/android/launcher2/Folder$FolderColor;->values()[Lcom/android/launcher2/Folder$FolderColor;
 
@@ -6841,7 +6762,6 @@
 
 .method public updateToNewIcon(Lcom/android/launcher2/FolderIconView;)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/FolderIconView;
 
     iget-object v0, p0, Lcom/android/launcher2/Folder;->mFolderManager:Lcom/android/launcher2/Folder$FolderManager;
 

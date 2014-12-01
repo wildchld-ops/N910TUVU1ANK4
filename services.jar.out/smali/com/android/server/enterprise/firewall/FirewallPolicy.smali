@@ -166,7 +166,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Landroid/app/enterprise/IFirewallPolicy$Stub;-><init>()V
 
@@ -279,8 +278,6 @@
 
 .method static synthetic access$000(Lcom/android/server/enterprise/firewall/FirewallPolicy;Ljava/lang/Process;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/firewall/FirewallPolicy;
-    .param p1    # Ljava/lang/Process;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/firewall/FirewallPolicy;->getCommandResult(Ljava/lang/Process;)Ljava/lang/String;
 
@@ -291,8 +288,6 @@
 
 .method static synthetic access$100(Lcom/android/server/enterprise/firewall/FirewallPolicy;Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/firewall/FirewallPolicy;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/firewall/FirewallPolicy;->checkIptablesCommandResult(Ljava/lang/String;)Z
 
@@ -303,7 +298,6 @@
 
 .method static synthetic access$1000(Lcom/android/server/enterprise/firewall/FirewallPolicy;)Landroid/net/IConnectivityManager;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/firewall/FirewallPolicy;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/firewall/FirewallPolicy;->getConnectivityManagerService()Landroid/net/IConnectivityManager;
 
@@ -314,7 +308,6 @@
 
 .method static synthetic access$1100(Lcom/android/server/enterprise/firewall/FirewallPolicy;)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/firewall/FirewallPolicy;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/firewall/FirewallPolicy;->handleConnectivityAction()V
 
@@ -323,7 +316,6 @@
 
 .method static synthetic access$200(Lcom/android/server/enterprise/firewall/FirewallPolicy;)Ljava/util/ArrayList;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/firewall/FirewallPolicy;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/firewall/FirewallPolicy;->getAllUsers()Ljava/util/ArrayList;
 
@@ -334,9 +326,6 @@
 
 .method static synthetic access$300(Lcom/android/server/enterprise/firewall/FirewallPolicy;II)Lcom/android/server/enterprise/firewall/FirewallPolicyCache;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/firewall/FirewallPolicy;
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/enterprise/firewall/FirewallPolicy;->getFirewallPolicyCache(II)Lcom/android/server/enterprise/firewall/FirewallPolicyCache;
 
@@ -347,10 +336,6 @@
 
 .method static synthetic access$400(Lcom/android/server/enterprise/firewall/FirewallPolicy;Lcom/android/server/enterprise/firewall/FirewallPolicyCache;Ljava/lang/String;I)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/firewall/FirewallPolicy;
-    .param p1    # Lcom/android/server/enterprise/firewall/FirewallPolicyCache;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/server/enterprise/firewall/FirewallPolicy;->addPendingCommand(Lcom/android/server/enterprise/firewall/FirewallPolicyCache;Ljava/lang/String;I)V
 
@@ -359,7 +344,6 @@
 
 .method static synthetic access$500(Lcom/android/server/enterprise/firewall/FirewallPolicy;)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/firewall/FirewallPolicy;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/firewall/FirewallPolicy;->setGlobalProxyOnBoot()V
 
@@ -368,7 +352,6 @@
 
 .method static synthetic access$600(Lcom/android/server/enterprise/firewall/FirewallPolicy;)Z
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/firewall/FirewallPolicy;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/firewall/FirewallPolicy;->refreshProxyRules()Z
 
@@ -379,8 +362,6 @@
 
 .method static synthetic access$700(Lcom/android/server/enterprise/firewall/FirewallPolicy;I)I
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/firewall/FirewallPolicy;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/firewall/FirewallPolicy;->getLastUidForProxy(I)I
 
@@ -391,8 +372,6 @@
 
 .method static synthetic access$800(Lcom/android/server/enterprise/firewall/FirewallPolicy;Landroid/app/enterprise/ContextInfo;)V
     .locals 0
-    .param p0    # Lcom/android/server/enterprise/firewall/FirewallPolicy;
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/firewall/FirewallPolicy;->applyNetworkForMarket(Landroid/app/enterprise/ContextInfo;)V
 
@@ -401,7 +380,6 @@
 
 .method static synthetic access$900(Lcom/android/server/enterprise/firewall/FirewallPolicy;)Landroid/os/INetworkManagementService;
     .locals 1
-    .param p0    # Lcom/android/server/enterprise/firewall/FirewallPolicy;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/firewall/FirewallPolicy;->getNetworkManagementService()Landroid/os/INetworkManagementService;
 
@@ -412,9 +390,6 @@
 
 .method private addPendingCommand(Lcom/android/server/enterprise/firewall/FirewallPolicyCache;Ljava/lang/String;I)V
     .locals 2
-    .param p1    # Lcom/android/server/enterprise/firewall/FirewallPolicyCache;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     packed-switch p3, :pswitch_data_0
 
@@ -520,10 +495,6 @@
 
 .method private addRulesToDb(ILjava/util/ArrayList;ILjava/lang/String;Z)Z
     .locals 8
-    .param p1    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
-    .param p5    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -696,10 +667,6 @@
 
 .method private applyBasicRules(IILjava/util/List;II)Z
     .locals 17
-    .param p1    # I
-    .param p2    # I
-    .param p4    # I
-    .param p5    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II",
@@ -1107,10 +1074,6 @@
 
 .method private applyBasicRulesToIptables(ILjava/util/List;III)Z
     .locals 29
-    .param p1    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -1662,8 +1625,6 @@
 
 .method private declared-synchronized applyDnsPerAppRule(II)V
     .locals 17
-    .param p1    # I
-    .param p2    # I
 
     monitor-enter p0
 
@@ -1883,9 +1844,6 @@
 
 .method private applyMarketIptablesRules(ILjava/lang/String;I)V
     .locals 17
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     const-string v3, "FirewallPolicy"
 
@@ -1997,7 +1955,6 @@
 
 .method private applyNetworkForMarket(Landroid/app/enterprise/ContextInfo;)V
     .locals 8
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v7, 0x1
 
@@ -2063,11 +2020,6 @@
 
 .method private applyProxyRules(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)Z
     .locals 18
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
-    .param p5    # Ljava/lang/String;
 
     const-string v2, "FirewallPolicy"
 
@@ -2276,12 +2228,6 @@
 
 .method private applyProxyRulesToIptables(ILjava/lang/String;Ljava/lang/String;ILjava/lang/String;I)Z
     .locals 17
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
-    .param p5    # Ljava/lang/String;
-    .param p6    # I
 
     new-instance v16, Ljava/util/ArrayList;
 
@@ -2432,9 +2378,6 @@
 
 .method private applyRedirectExceptionRules(IILjava/util/List;I)Z
     .locals 13
-    .param p1    # I
-    .param p2    # I
-    .param p4    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II",
@@ -2614,9 +2557,6 @@
 
 .method private applyRedirectExceptionRulesToIptables(ILjava/util/List;II)Z
     .locals 21
-    .param p1    # I
-    .param p3    # I
-    .param p4    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -2821,9 +2761,6 @@
 
 .method private applyRerouteRules(IILjava/util/List;I)Z
     .locals 18
-    .param p1    # I
-    .param p2    # I
-    .param p4    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II",
@@ -3134,9 +3071,6 @@
 
 .method private applyRerouteRulesToIptables(ILjava/util/List;II)Z
     .locals 30
-    .param p1    # I
-    .param p3    # I
-    .param p4    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -3560,10 +3494,6 @@
 
 .method private checkDuplicateRule(ILjava/lang/String;Ljava/lang/String;I)Z
     .locals 5
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
 
     new-instance v0, Landroid/content/ContentValues;
 
@@ -3614,7 +3544,6 @@
 
 .method private checkIptablesCommandResult(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -3753,9 +3682,6 @@
 
 .method private cleanChain(ILjava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     if-nez p2, :cond_0
 
@@ -3823,9 +3749,6 @@
 
 .method private cleanInDb(IILjava/lang/String;)Z
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     new-instance v0, Ljava/util/HashMap;
 
@@ -3864,8 +3787,6 @@
 
 .method private clearDnsPerApp(II)Z
     .locals 8
-    .param p1    # I
-    .param p2    # I
 
     const/4 v4, 0x0
 
@@ -3926,7 +3847,6 @@
 
 .method private clearPendingCommands(Lcom/android/server/enterprise/firewall/FirewallPolicyCache;)V
     .locals 2
-    .param p1    # Lcom/android/server/enterprise/firewall/FirewallPolicyCache;
 
     iget-object v1, p1, Lcom/android/server/enterprise/firewall/FirewallPolicyCache;->mAllowQueue:Ljava/util/List;
 
@@ -4002,7 +3922,6 @@
 
 .method private createChainForMarket(I)V
     .locals 3
-    .param p1    # I
 
     iget-boolean v1, p0, Lcom/android/server/enterprise/firewall/FirewallPolicy;->isMarketChainCreated:Z
 
@@ -4034,9 +3953,6 @@
 
 .method private createContextForSpecifiedUser(Ljava/lang/String;II)Landroid/content/Context;
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v0, 0x0
 
@@ -4089,7 +4005,6 @@
 
 .method private createIptablesChains(I)V
     .locals 8
-    .param p1    # I
 
     const/4 v7, 0x3
 
@@ -4498,9 +4413,6 @@
 
 .method private createSingleIptablesChain(ILjava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     if-nez p3, :cond_0
 
@@ -4617,7 +4529,6 @@
 
 .method private disableProxyOnIptables(Landroid/app/enterprise/ContextInfo;)Z
     .locals 14
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v13, 0x1
 
@@ -4709,8 +4620,6 @@
 
 .method private disableRulesOnIptables(Landroid/app/enterprise/ContextInfo;I)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # I
 
     const/4 v6, 0x2
 
@@ -4860,7 +4769,6 @@
 
 .method private enforceFirewallPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/firewall/FirewallPolicy;->getEDM()Landroid/app/enterprise/EnterpriseDeviceManager;
 
@@ -4877,7 +4785,6 @@
 
 .method private enforceOwnerOnlyAndFirewallPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0}, Lcom/android/server/enterprise/firewall/FirewallPolicy;->getEDM()Landroid/app/enterprise/EnterpriseDeviceManager;
 
@@ -4894,8 +4801,6 @@
 
 .method private declared-synchronized executePendingCommands(Lcom/android/server/enterprise/firewall/FirewallPolicyCache;I)V
     .locals 9
-    .param p1    # Lcom/android/server/enterprise/firewall/FirewallPolicyCache;
-    .param p2    # I
 
     monitor-enter p0
 
@@ -5139,8 +5044,6 @@
 
 .method private filterRulesByUser(ILjava/lang/String;)Ljava/lang/String;
     .locals 15
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     new-instance v10, Ljava/lang/StringBuilder;
 
@@ -5362,8 +5265,6 @@
 
 .method private getAllAdminsNetworkForMarketEnabled(II)I
     .locals 12
-    .param p1    # I
-    .param p2    # I
 
     const/4 v2, 0x1
 
@@ -5455,8 +5356,6 @@
 
 .method private getAllPackagesFromDB(II)Ljava/util/List;
     .locals 7
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II)",
@@ -5529,8 +5428,6 @@
 
 .method private getAllRules(II)Ljava/util/List;
     .locals 6
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II)",
@@ -5821,7 +5718,6 @@
 
 .method private getAppUid(Ljava/lang/String;)I
     .locals 7
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, -0x1
 
@@ -5883,8 +5779,6 @@
 
 .method private getAppUidForUser(Ljava/lang/String;I)I
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v6, 0x0
 
@@ -5950,7 +5844,6 @@
 
 .method private getAppUids(I)[I
     .locals 9
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -6035,9 +5928,6 @@
 
 .method private getAppUids(ILjava/lang/String;I)[I
     .locals 7
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     const/4 v6, 0x1
 
@@ -6136,8 +6026,6 @@
 
 .method private getAppUidsForAllUsers(ILjava/lang/String;)[I
     .locals 10
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -6247,7 +6135,6 @@
 
 .method private getChain(I)Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     if-eqz p1, :cond_0
 
@@ -6279,7 +6166,6 @@
 
 .method private getCommandResult(Ljava/lang/Process;)Ljava/lang/String;
     .locals 8
-    .param p1    # Ljava/lang/Process;
 
     new-instance v4, Ljava/lang/StringBuilder;
 
@@ -6470,8 +6356,6 @@
 
 .method public static getContainerizedPackageName(ILjava/lang/String;)Ljava/lang/String;
     .locals 0
-    .param p0    # I
-    .param p1    # Ljava/lang/String;
 
     if-gtz p0, :cond_0
 
@@ -6488,9 +6372,6 @@
 
 .method private getDnsFromPackage(ILjava/lang/String;I)Ljava/util/List;
     .locals 10
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -6667,8 +6548,6 @@
 
 .method private getFirewallPolicyCache(II)Lcom/android/server/enterprise/firewall/FirewallPolicyCache;
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     const/4 v5, 0x2
 
@@ -6730,7 +6609,6 @@
 
 .method private getLastUidForProxy(I)I
     .locals 10
-    .param p1    # I
 
     const-string v0, "FirewallPolicy"
 
@@ -6851,8 +6729,6 @@
 
 .method private getLastUidForProxy(II)I
     .locals 11
-    .param p1    # I
-    .param p2    # I
 
     new-instance v4, Ljava/util/HashMap;
 
@@ -6969,8 +6845,6 @@
 
 .method private getLastUidForRules(II)I
     .locals 11
-    .param p1    # I
-    .param p2    # I
 
     new-instance v4, Ljava/util/HashMap;
 
@@ -7065,7 +6939,6 @@
 
 .method private getNetworkAppsList(I)Ljava/util/List;
     .locals 9
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -7167,8 +7040,6 @@
 
 .method public static getPackageName(ILjava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p0    # I
-    .param p1    # Ljava/lang/String;
 
     if-gtz p0, :cond_0
 
@@ -7193,8 +7064,6 @@
 
 .method private getPackagesFromDB(II)Ljava/util/List;
     .locals 8
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II)",
@@ -7277,9 +7146,6 @@
 
 .method private getRulesFromDb(IILjava/lang/String;)Ljava/util/ArrayList;
     .locals 17
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II",
@@ -8033,7 +7899,6 @@
 
 .method private getUidFromRule(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const-string v0, ";"
 
@@ -8056,8 +7921,6 @@
 
 .method private getUrlBlackList(Landroid/app/enterprise/ContextInfo;Z)Ljava/util/List;
     .locals 13
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -8281,8 +8144,6 @@
 
 .method private getUrlFilterState(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 13
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const/4 v10, 0x1
 
@@ -8511,8 +8372,6 @@
 
 .method private isDomain(Ljava/lang/String;I)Z
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v5, 0x1
 
@@ -8571,9 +8430,6 @@
 
 .method private refreshFirewallCache(Lcom/android/server/enterprise/firewall/FirewallPolicyCache;II)Z
     .locals 4
-    .param p1    # Lcom/android/server/enterprise/firewall/FirewallPolicyCache;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v1, 0x0
 
@@ -9159,7 +9015,6 @@
 
 .method private removeChainForMarket(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -9190,9 +9045,6 @@
 
 .method private removeDNSForApp(ILjava/lang/String;I)Z
     .locals 12
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     const/4 v9, 0x0
 
@@ -9356,9 +9208,6 @@
 
 .method private removeMarketIptablesRules(ILjava/lang/String;I)V
     .locals 17
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     const-string v3, "FirewallPolicy"
 
@@ -9470,7 +9319,6 @@
 
 .method private removeRuleUid(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -9538,9 +9386,6 @@
 
 .method private removeRulesFromDb(ILjava/util/ArrayList;ILjava/lang/String;)Z
     .locals 8
-    .param p1    # I
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -9632,7 +9477,6 @@
 
 .method private rollbackEnabled(I)V
     .locals 3
-    .param p1    # I
 
     invoke-static {}, Landroid/os/UserHandle;->getCallingUserId()I
 
@@ -9660,7 +9504,6 @@
 
 .method private rollbackProxyEnabled(I)V
     .locals 3
-    .param p1    # I
 
     invoke-static {}, Landroid/os/UserHandle;->getCallingUserId()I
 
@@ -9688,7 +9531,6 @@
 
 .method private runIptablesCommands(ILjava/util/List;)Ljava/util/List;
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -9716,9 +9558,6 @@
 
 .method private runIptablesCommands(ILjava/util/List;ZI)Ljava/util/List;
     .locals 4
-    .param p1    # I
-    .param p3    # Z
-    .param p4    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -9770,8 +9609,6 @@
 
 .method private runSingleIptablesCommand(ILjava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -9786,10 +9623,6 @@
 
 .method private runSingleIptablesCommand(ILjava/lang/String;ZI)Ljava/lang/String;
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
-    .param p4    # I
 
     const/4 v5, 0x0
 
@@ -9812,11 +9645,6 @@
 
 .method private runSingleIptablesCommand(ILjava/lang/String;ZIZ)Ljava/lang/String;
     .locals 13
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
-    .param p4    # I
-    .param p5    # Z
 
     new-instance v5, Ljava/util/ArrayList;
 
@@ -9929,7 +9757,6 @@
 
 .method private runSynchronousIptablesCommand(Ljava/lang/String;)Ljava/lang/String;
     .locals 12
-    .param p1    # Ljava/lang/String;
 
     const/4 v9, 0x0
 
@@ -10025,8 +9852,6 @@
 
 .method private saveUrlBlackList(IILjava/util/List;)Z
     .locals 5
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(II",
@@ -10130,8 +9955,6 @@
 
 .method private setBasicRules(Landroid/app/enterprise/ContextInfo;Ljava/util/List;I)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -10221,9 +10044,6 @@
 
 .method private setBasicRulesEnableOnDb(IZI)Z
     .locals 2
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # I
 
     const/4 v0, 0x0
 
@@ -10264,10 +10084,6 @@
 
 .method private setEnableOnDb(IZLjava/lang/String;I)Z
     .locals 10
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
 
     const-string v7, "FirewallPolicy"
 
@@ -10497,9 +10313,6 @@
 
 .method private setProxyRulesEnableOnDb(IZI)Z
     .locals 2
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # I
 
     const/4 v0, 0x1
 
@@ -10516,7 +10329,6 @@
 
 .method private validateDomain(Ljava/lang/String;)Z
     .locals 12
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -10740,8 +10552,6 @@
 
 .method private validateHostAndPort(ILjava/lang/String;)Z
     .locals 22
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const-string v16, "\\b(?:(?:6553[0-5]|655[0-2][0-9]|65[0-4][0-9]{2}|6[0-4][0-9]{3}|[1-5]?[0-9]{1,4}))|\\*"
 
@@ -11418,7 +11228,6 @@
 
 .method private validateIp(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -11443,8 +11252,6 @@
 
 .method private validateIp(Ljava/lang/String;I)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     if-nez p1, :cond_1
 
@@ -11476,7 +11283,6 @@
 
 .method private validateNetworkInterface(Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     sget-object v0, Lcom/android/server/enterprise/firewall/FirewallPolicy;->INTERFACE_TYPES:[Ljava/lang/String;
 
@@ -11513,8 +11319,6 @@
 
 .method private validatePackageName(Ljava/lang/String;I)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-direct {p0, p2}, Lcom/android/server/enterprise/firewall/FirewallPolicy;->getNetworkAppsList(I)Ljava/util/List;
 
@@ -11560,8 +11364,6 @@
 
 .method private validateParameters(ILjava/util/List;I)Z
     .locals 12
-    .param p1    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -11881,8 +11683,6 @@
 # virtual methods
 .method public addRules(Landroid/app/enterprise/ContextInfo;Ljava/util/List;I)Z
     .locals 12
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -12213,7 +12013,6 @@
 
 .method public cleanAllRules(Landroid/app/enterprise/ContextInfo;)Z
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const-string v1, "FirewallPolicy"
 
@@ -12262,8 +12061,6 @@
 
 .method public cleanBasicRules(Landroid/app/enterprise/ContextInfo;I)Z
     .locals 12
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # I
 
     const-string v10, "FirewallPolicy"
 
@@ -12578,8 +12375,6 @@
 
 .method public cleanProxyRules(Landroid/app/enterprise/ContextInfo;I)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/firewall/FirewallPolicy;->enforceFirewallPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -12645,8 +12440,6 @@
 
 .method public cleanRules(Landroid/app/enterprise/ContextInfo;I)Z
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/firewall/FirewallPolicy;->enforceFirewallPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -12691,7 +12484,6 @@
 
 .method public clearDnsPerApp(Landroid/app/enterprise/ContextInfo;)Z
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/firewall/FirewallPolicy;->enforceFirewallPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -12710,7 +12502,6 @@
 
 .method public clearGlobalProxyEnable(Landroid/app/enterprise/ContextInfo;)Z
     .locals 12
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v11, 0x1
 
@@ -12828,8 +12619,6 @@
 
 .method public enableProxy(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     const/4 v0, 0x0
 
@@ -12842,9 +12631,6 @@
 
 .method public enableProxy(Landroid/app/enterprise/ContextInfo;ZZ)Z
     .locals 17
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
-    .param p3    # Z
 
     invoke-direct/range {p0 .. p1}, Lcom/android/server/enterprise/firewall/FirewallPolicy;->enforceFirewallPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -13125,9 +12911,6 @@
 
 .method public enableProxyWithUid(IZI)Z
     .locals 2
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # I
 
     new-instance v0, Landroid/app/enterprise/ContextInfo;
 
@@ -13144,8 +12927,6 @@
 
 .method public enableProxyWithUid(ZI)Z
     .locals 2
-    .param p1    # Z
-    .param p2    # I
 
     new-instance v0, Landroid/app/enterprise/ContextInfo;
 
@@ -13164,8 +12945,6 @@
 
 .method public enableRules(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     const/4 v0, 0x0
 
@@ -13178,9 +12957,6 @@
 
 .method public declared-synchronized enableRules(Landroid/app/enterprise/ContextInfo;ZZ)Z
     .locals 6
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
-    .param p3    # Z
 
     const/4 v5, -0x1
 
@@ -13264,9 +13040,6 @@
 
 .method public enableRulesWithUid(IZI)Z
     .locals 2
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # I
 
     new-instance v0, Landroid/app/enterprise/ContextInfo;
 
@@ -13283,8 +13056,6 @@
 
 .method public enableRulesWithUid(ZI)Z
     .locals 2
-    .param p1    # Z
-    .param p2    # I
 
     new-instance v0, Landroid/app/enterprise/ContextInfo;
 
@@ -13303,7 +13074,6 @@
 
 .method public getAllRulesForUid(Landroid/app/enterprise/ContextInfo;)Ljava/util/List;
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -13337,8 +13107,6 @@
 
 .method public getDNSPerApp(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Ljava/util/List;
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -13392,7 +13160,6 @@
 
 .method public getGlobalProxy(Landroid/app/enterprise/ContextInfo;)Ljava/util/List;
     .locals 15
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -13546,8 +13313,6 @@
 
 .method public getNetworkForMarket(Landroid/app/enterprise/ContextInfo;Z)I
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     const/4 v2, 0x1
 
@@ -13594,8 +13359,6 @@
 
 .method public getRules(Landroid/app/enterprise/ContextInfo;I)Ljava/util/List;
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -13708,8 +13471,6 @@
 
 .method public getURLFilterEnabled(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/firewall/FirewallPolicy;->enforceFirewallPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -13724,8 +13485,6 @@
 
 .method public getURLFilterEnabledForContentProvider(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 4
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     iget v1, p1, Landroid/app/enterprise/ContextInfo;->mContainerId:I
 
@@ -13770,8 +13529,6 @@
 
 .method public getURLFilterList(Landroid/app/enterprise/ContextInfo;Z)Ljava/util/List;
     .locals 1
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -13797,8 +13554,6 @@
 
 .method public getURLFilterListForContentProvider(Landroid/app/enterprise/ContextInfo;Z)Ljava/util/List;
     .locals 8
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -13952,7 +13707,6 @@
 
 .method public getURLFilterReport(Landroid/app/enterprise/ContextInfo;)Ljava/util/List;
     .locals 12
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -14110,8 +13864,6 @@
 
 .method public getURLFilterReportEnabled(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     const-string v0, "FirewallPolicy"
 
@@ -14154,8 +13906,6 @@
 
 .method public getURLFilterReportEnabledForContentProvider(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 6
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     iget v1, p1, Landroid/app/enterprise/ContextInfo;->mContainerId:I
 
@@ -14217,7 +13967,6 @@
 
 .method public isEnabledProxy(Landroid/app/enterprise/ContextInfo;)Z
     .locals 4
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/firewall/FirewallPolicy;->enforceFirewallPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -14286,7 +14035,6 @@
 
 .method public isEnabledRules(Landroid/app/enterprise/ContextInfo;)Z
     .locals 3
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/firewall/FirewallPolicy;->enforceFirewallPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -14355,8 +14103,6 @@
 
 .method public isUrlBlocked(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 23
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     move-object/from16 v0, p1
 
@@ -14776,7 +14522,6 @@
 
 .method public isUrlBlocked(Ljava/lang/String;)Z
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Landroid/os/Binder;->getCallingUid()I
 
@@ -14821,7 +14566,6 @@
 
 .method public listIptablesRules(Landroid/app/enterprise/ContextInfo;)Ljava/util/List;
     .locals 5
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -14917,14 +14661,12 @@
 
 .method public onAdminAdded(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public onAdminRemoved(I)V
     .locals 2
-    .param p1    # I
 
     new-instance v0, Landroid/app/enterprise/ContextInfo;
 
@@ -14939,8 +14681,6 @@
 
 .method public onContainerCreation(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     const-string v0, "FirewallPolicy"
 
@@ -14985,8 +14725,6 @@
 
 .method public onContainerRemoved(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     const-string v0, "FirewallPolicy"
 
@@ -15037,7 +14775,6 @@
 
 .method public onPreAdminRemoval(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -15064,8 +14801,6 @@
 
 .method public onPreContainerRemoval(II)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     const-string v1, "FirewallPolicy"
 
@@ -15128,7 +14863,6 @@
 
 .method public removeAdmin(Landroid/app/enterprise/ContextInfo;)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
 
     const/4 v6, 0x0
 
@@ -15181,8 +14915,6 @@
 
 .method public removeDNSForApp(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const-string v0, "FirewallPolicy"
 
@@ -15221,8 +14953,6 @@
 
 .method public removeRules(Landroid/app/enterprise/ContextInfo;Ljava/util/List;I)Z
     .locals 6
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -15309,8 +15039,6 @@
 
 .method public saveURLBlockedReport(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;)V
     .locals 9
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
 
     const-string v6, "FirewallPolicy"
 
@@ -15435,10 +15163,6 @@
 
 .method public setDNSPerApp(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 22
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     const-string v19, "FirewallPolicy"
 
@@ -15943,9 +15667,6 @@
 
 .method public declared-synchronized setGlobalProxy(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;ILjava/util/List;)Z
     .locals 17
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -16231,8 +15952,6 @@
 
 .method public setNetworkForMarket(Landroid/app/enterprise/ContextInfo;I)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # I
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/firewall/FirewallPolicy;->enforceFirewallPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 
@@ -16275,9 +15994,6 @@
 
 .method public setProxyRules(Landroid/app/enterprise/ContextInfo;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 11
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     const/4 v2, 0x3
 
@@ -16388,8 +16104,6 @@
 
 .method public setRules(Landroid/app/enterprise/ContextInfo;Ljava/util/List;I)Z
     .locals 2
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -16452,8 +16166,6 @@
 
 .method public setURLFilterEnabled(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 9
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     const-string v6, "FirewallPolicy"
 
@@ -16577,7 +16289,6 @@
 
 .method public setURLFilterList(Landroid/app/enterprise/ContextInfo;Ljava/util/List;)Z
     .locals 7
-    .param p1    # Landroid/app/enterprise/ContextInfo;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -16668,8 +16379,6 @@
 
 .method public setURLFilterReportEnabled(Landroid/app/enterprise/ContextInfo;Z)Z
     .locals 14
-    .param p1    # Landroid/app/enterprise/ContextInfo;
-    .param p2    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/enterprise/firewall/FirewallPolicy;->enforceFirewallPermission(Landroid/app/enterprise/ContextInfo;)Landroid/app/enterprise/ContextInfo;
 

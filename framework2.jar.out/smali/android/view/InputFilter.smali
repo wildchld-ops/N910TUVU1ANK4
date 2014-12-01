@@ -32,7 +32,6 @@
 # direct methods
 .method public constructor <init>(Landroid/os/Looper;)V
     .locals 4
-    .param p1    # Landroid/os/Looper;
 
     const/4 v1, 0x0
 
@@ -86,8 +85,6 @@
 
 .method static synthetic access$002(Landroid/view/InputFilter;Landroid/view/IInputFilterHost;)Landroid/view/IInputFilterHost;
     .locals 0
-    .param p0    # Landroid/view/InputFilter;
-    .param p1    # Landroid/view/IInputFilterHost;
 
     iput-object p1, p0, Landroid/view/InputFilter;->mHost:Landroid/view/IInputFilterHost;
 
@@ -96,7 +93,6 @@
 
 .method static synthetic access$100(Landroid/view/InputFilter;)Landroid/view/InputEventConsistencyVerifier;
     .locals 1
-    .param p0    # Landroid/view/InputFilter;
 
     iget-object v0, p0, Landroid/view/InputFilter;->mInboundInputEventConsistencyVerifier:Landroid/view/InputEventConsistencyVerifier;
 
@@ -105,7 +101,6 @@
 
 .method static synthetic access$200(Landroid/view/InputFilter;)Landroid/view/InputEventConsistencyVerifier;
     .locals 1
-    .param p0    # Landroid/view/InputFilter;
 
     iget-object v0, p0, Landroid/view/InputFilter;->mOutboundInputEventConsistencyVerifier:Landroid/view/InputEventConsistencyVerifier;
 
@@ -116,8 +111,6 @@
 # virtual methods
 .method public final filterInputEvent(Landroid/view/InputEvent;I)V
     .locals 3
-    .param p1    # Landroid/view/InputEvent;
-    .param p2    # I
 
     iget-object v0, p0, Landroid/view/InputFilter;->mH:Landroid/view/InputFilter$H;
 
@@ -136,7 +129,6 @@
 
 .method public final install(Landroid/view/IInputFilterHost;)V
     .locals 2
-    .param p1    # Landroid/view/IInputFilterHost;
 
     iget-object v0, p0, Landroid/view/InputFilter;->mH:Landroid/view/InputFilter$H;
 
@@ -153,8 +145,6 @@
 
 .method public onInputEvent(Landroid/view/InputEvent;I)V
     .locals 0
-    .param p1    # Landroid/view/InputEvent;
-    .param p2    # I
 
     invoke-virtual {p0, p1, p2}, Landroid/view/InputFilter;->sendInputEvent(Landroid/view/InputEvent;I)V
 
@@ -175,8 +165,6 @@
 
 .method public sendInputEvent(Landroid/view/InputEvent;I)V
     .locals 2
-    .param p1    # Landroid/view/InputEvent;
-    .param p2    # I
 
     if-nez p1, :cond_0
 

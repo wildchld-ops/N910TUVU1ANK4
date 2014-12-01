@@ -15,7 +15,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     sget-object v0, Lorg/apache/commons/io/IOCase;->SENSITIVE:Lorg/apache/commons/io/IOCase;
 
@@ -26,8 +25,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Lorg/apache/commons/io/IOCase;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lorg/apache/commons/io/IOCase;
 
     invoke-direct {p0}, Lorg/apache/commons/io/filefilter/AbstractFileFilter;-><init>()V
 
@@ -64,7 +61,6 @@
 
 .method public constructor <init>(Ljava/util/List;)V
     .locals 1
-    .param p1    # Ljava/util/List;
 
     sget-object v0, Lorg/apache/commons/io/IOCase;->SENSITIVE:Lorg/apache/commons/io/IOCase;
 
@@ -75,8 +71,6 @@
 
 .method public constructor <init>(Ljava/util/List;Lorg/apache/commons/io/IOCase;)V
     .locals 2
-    .param p1    # Ljava/util/List;
-    .param p2    # Lorg/apache/commons/io/IOCase;
 
     invoke-direct {p0}, Lorg/apache/commons/io/filefilter/AbstractFileFilter;-><init>()V
 
@@ -119,7 +113,6 @@
 
 .method public constructor <init>([Ljava/lang/String;)V
     .locals 1
-    .param p1    # [Ljava/lang/String;
 
     sget-object v0, Lorg/apache/commons/io/IOCase;->SENSITIVE:Lorg/apache/commons/io/IOCase;
 
@@ -130,8 +123,6 @@
 
 .method public constructor <init>([Ljava/lang/String;Lorg/apache/commons/io/IOCase;)V
     .locals 2
-    .param p1    # [Ljava/lang/String;
-    .param p2    # Lorg/apache/commons/io/IOCase;
 
     invoke-direct {p0}, Lorg/apache/commons/io/filefilter/AbstractFileFilter;-><init>()V
 
@@ -162,7 +153,6 @@
 # virtual methods
 .method public accept(Ljava/io/File;)Z
     .locals 4
-    .param p1    # Ljava/io/File;
 
     invoke-virtual {p1}, Ljava/io/File;->getName()Ljava/lang/String;
 
@@ -207,8 +197,6 @@
 
 .method public accept(Ljava/io/File;Ljava/lang/String;)Z
     .locals 3
-    .param p1    # Ljava/io/File;
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 

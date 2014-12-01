@@ -40,7 +40,6 @@
 # virtual methods
 .method public createFromParcel(Landroid/os/Parcel;)Lcom/voovio/sweep/Template;
     .locals 2
-    .param p1    # Landroid/os/Parcel;
 
     new-instance v0, Lcom/voovio/sweep/Template;
 
@@ -63,7 +62,6 @@
 
 .method public newArray(I)[Lcom/voovio/sweep/Template;
     .locals 1
-    .param p1    # I
 
     new-array v0, p1, [Lcom/voovio/sweep/Template;
 

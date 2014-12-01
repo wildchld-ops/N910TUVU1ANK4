@@ -73,7 +73,6 @@
 
 .method static synthetic access$000(Landroid/hardware/contextaware/utilbundle/CaPowerManager;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Landroid/hardware/contextaware/utilbundle/CaPowerManager;
 
     iget-object v0, p0, Landroid/hardware/contextaware/utilbundle/CaPowerManager;->mHandler:Landroid/os/Handler;
 
@@ -82,8 +81,6 @@
 
 .method static synthetic access$100(Landroid/hardware/contextaware/utilbundle/CaPowerManager;I)V
     .locals 0
-    .param p0    # Landroid/hardware/contextaware/utilbundle/CaPowerManager;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/hardware/contextaware/utilbundle/CaPowerManager;->sendApStatusToSensorHub(I)V
 
@@ -135,7 +132,6 @@
 
 .method private sendApStatusToSensorHub(I)V
     .locals 5
-    .param p1    # I
 
     const/4 v4, 0x2
 
@@ -265,7 +261,6 @@
 
 .method public final initializeManager(Landroid/content/Context;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
 
     if-nez p1, :cond_0
 
@@ -379,8 +374,6 @@
 
 .method public final notifyApPowerObserver(IJ)V
     .locals 3
-    .param p1    # I
-    .param p2    # J
 
     iget-object v2, p0, Landroid/hardware/contextaware/utilbundle/CaPowerManager;->mListeners:Ljava/util/concurrent/CopyOnWriteArrayList;
 
@@ -416,7 +409,6 @@
 
 .method public final registerApPowerObserver(Landroid/hardware/contextaware/manager/IApPowerObserver;)V
     .locals 1
-    .param p1    # Landroid/hardware/contextaware/manager/IApPowerObserver;
 
     iget-object v0, p0, Landroid/hardware/contextaware/utilbundle/CaPowerManager;->mListeners:Ljava/util/concurrent/CopyOnWriteArrayList;
 
@@ -490,7 +482,6 @@
 
 .method public final unregisterApPowerObserver(Landroid/hardware/contextaware/manager/IApPowerObserver;)V
     .locals 1
-    .param p1    # Landroid/hardware/contextaware/manager/IApPowerObserver;
 
     iget-object v0, p0, Landroid/hardware/contextaware/utilbundle/CaPowerManager;->mListeners:Ljava/util/concurrent/CopyOnWriteArrayList;
 

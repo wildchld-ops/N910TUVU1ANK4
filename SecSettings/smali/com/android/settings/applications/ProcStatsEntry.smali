@@ -85,7 +85,6 @@
 
 .method public constructor <init>(Landroid/os/Parcel;)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -184,10 +183,6 @@
 
 .method public constructor <init>(Lcom/android/internal/app/ProcessStats$ProcessState;Lcom/android/internal/app/ProcessStats$ProcessDataCollection;ZZ)V
     .locals 4
-    .param p1    # Lcom/android/internal/app/ProcessStats$ProcessState;
-    .param p2    # Lcom/android/internal/app/ProcessStats$ProcessDataCollection;
-    .param p3    # Z
-    .param p4    # Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -284,7 +279,6 @@
 # virtual methods
 .method public addService(Lcom/android/internal/app/ProcessStats$ServiceState;)V
     .locals 2
-    .param p1    # Lcom/android/internal/app/ProcessStats$ServiceState;
 
     iget-object v0, p0, Lcom/android/settings/applications/ProcStatsEntry;->mServices:Ljava/util/ArrayList;
 
@@ -307,10 +301,6 @@
 
 .method public evaluateTargetPackage(Lcom/android/internal/app/ProcessStats;Lcom/android/internal/app/ProcessStats$ProcessDataCollection;Ljava/util/Comparator;ZZ)V
     .locals 20
-    .param p1    # Lcom/android/internal/app/ProcessStats;
-    .param p2    # Lcom/android/internal/app/ProcessStats$ProcessDataCollection;
-    .param p4    # Z
-    .param p5    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -529,7 +519,6 @@
 
 .method public retrieveUiData(Landroid/content/pm/PackageManager;)V
     .locals 12
-    .param p1    # Landroid/content/pm/PackageManager;
 
     const/4 v9, 0x0
 
@@ -881,8 +870,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/settings/applications/ProcStatsEntry;->mPackage:Ljava/lang/String;
 

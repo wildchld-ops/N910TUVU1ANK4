@@ -58,7 +58,7 @@
 
     aget-object v2, v2, p1
 
-    invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
+    invoke-virtual {v2}, Lcom/android/phone/EmergencyContactItemContainer$ItemType;->ordinal()I
 
     move-result v2
 
@@ -522,7 +522,7 @@
 
     sget-object v0, Lcom/android/phone/EmergencyContactItemContainer$1;->$SwitchMap$com$android$phone$EmergencyContactItemContainer$ItemType:[I
 
-    invoke-virtual {p1}, Ljava/lang/Enum;->ordinal()I
+    invoke-virtual {p1}, Lcom/android/phone/EmergencyContactItemContainer$ItemType;->ordinal()I
 
     move-result v1
 
@@ -577,7 +577,7 @@
 
     move-object v7, v2
 
-    invoke-virtual/range {v0 .. v7}, Landroid/content/AsyncQueryHandler;->startQuery(ILjava/lang/Object;Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual/range {v0 .. v7}, Lcom/android/phone/EmergencyContactItemContainer$EmergencyContactAsyncQuery;->startQuery(ILjava/lang/Object;Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
 

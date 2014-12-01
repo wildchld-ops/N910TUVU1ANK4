@@ -25,10 +25,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;ILcom/android/mms/transaction/TransactionSettings;Lcom/google/android/mms/pdu/NotificationInd;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Lcom/android/mms/transaction/TransactionSettings;
-    .param p4    # Lcom/google/android/mms/pdu/NotificationInd;
 
     const/4 v5, 0x0
 
@@ -49,11 +45,6 @@
 
 .method public constructor <init>(Landroid/content/Context;ILcom/android/mms/transaction/TransactionSettings;Lcom/google/android/mms/pdu/NotificationInd;I)V
     .locals 9
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Lcom/android/mms/transaction/TransactionSettings;
-    .param p4    # Lcom/google/android/mms/pdu/NotificationInd;
-    .param p5    # I
 
     const/4 v0, 0x0
 
@@ -122,10 +113,6 @@
 
 .method public constructor <init>(Landroid/content/Context;ILcom/android/mms/transaction/TransactionSettings;Ljava/lang/String;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Lcom/android/mms/transaction/TransactionSettings;
-    .param p4    # Ljava/lang/String;
 
     const/4 v5, 0x0
 
@@ -146,11 +133,6 @@
 
 .method public constructor <init>(Landroid/content/Context;ILcom/android/mms/transaction/TransactionSettings;Ljava/lang/String;I)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Lcom/android/mms/transaction/TransactionSettings;
-    .param p4    # Ljava/lang/String;
-    .param p5    # I
 
     const/4 v3, 0x1
 
@@ -279,7 +261,6 @@
 
 .method public static allowAutoDownload(I)Z
     .locals 9
-    .param p0    # I
 
     const/4 v8, 0x3
 
@@ -464,7 +445,6 @@
 
 .method private getResponseStatus(J)I
     .locals 10
-    .param p1    # J
 
     const/4 v9, 0x0
 
@@ -601,7 +581,6 @@
 
 .method private sendNotifyRespInd(I)V
     .locals 4
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/google/android/mms/MmsException;,

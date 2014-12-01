@@ -40,8 +40,6 @@
 # virtual methods
 .method public compare(Lcom/android/settings/applications/ProcStatsEntry;Lcom/android/settings/applications/ProcStatsEntry;)I
     .locals 4
-    .param p1    # Lcom/android/settings/applications/ProcStatsEntry;
-    .param p2    # Lcom/android/settings/applications/ProcStatsEntry;
 
     iget-wide v0, p1, Lcom/android/settings/applications/ProcStatsEntry;->mWeight:J
 
@@ -77,8 +75,6 @@
 
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p1, Lcom/android/settings/applications/ProcStatsEntry;
 

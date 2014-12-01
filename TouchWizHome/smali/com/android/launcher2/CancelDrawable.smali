@@ -83,8 +83,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/graphics/drawable/Drawable;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/graphics/drawable/Drawable;
 
     const/4 v1, 0x0
 
@@ -135,8 +133,6 @@
 
 .method static synthetic access$002(Lcom/android/launcher2/CancelDrawable;Z)Z
     .locals 0
-    .param p0    # Lcom/android/launcher2/CancelDrawable;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/launcher2/CancelDrawable;->mIsAnimatingTranslate:Z
 
@@ -145,8 +141,6 @@
 
 .method static synthetic access$102(Lcom/android/launcher2/CancelDrawable;Landroid/animation/Animator;)Landroid/animation/Animator;
     .locals 0
-    .param p0    # Lcom/android/launcher2/CancelDrawable;
-    .param p1    # Landroid/animation/Animator;
 
     iput-object p1, p0, Lcom/android/launcher2/CancelDrawable;->mCurrentAnimator:Landroid/animation/Animator;
 
@@ -155,8 +149,6 @@
 
 .method static synthetic access$202(Lcom/android/launcher2/CancelDrawable;Z)Z
     .locals 0
-    .param p0    # Lcom/android/launcher2/CancelDrawable;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/launcher2/CancelDrawable;->mIsRepeat:Z
 
@@ -199,7 +191,6 @@
 
 .method private setScaleAnimation(Z)V
     .locals 4
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/launcher2/CancelDrawable;->mScaleAnimator:Landroid/animation/Animator;
 
@@ -331,7 +322,6 @@
 # virtual methods
 .method public draw(Landroid/graphics/Canvas;)V
     .locals 2
-    .param p1    # Landroid/graphics/Canvas;
 
     invoke-virtual {p1}, Landroid/graphics/Canvas;->save()I
 
@@ -416,7 +406,6 @@
 
 .method public onBoundsChange(Landroid/graphics/Rect;)V
     .locals 2
-    .param p1    # Landroid/graphics/Rect;
 
     iget-object v0, p0, Lcom/android/launcher2/CancelDrawable;->mBounds:Landroid/graphics/Rect;
 
@@ -444,7 +433,6 @@
 
 .method protected onLevelChange(I)Z
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/launcher2/CancelDrawable;->mCancel:Landroid/graphics/drawable/Drawable;
 
@@ -457,7 +445,6 @@
 
 .method protected onStateChange([I)Z
     .locals 7
-    .param p1    # [I
 
     const/4 v3, 0x1
 
@@ -536,14 +523,12 @@
 
 .method public setAlpha(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public setCancelAppinfoDummy(F)V
     .locals 2
-    .param p1    # F
 
     const/high16 v1, 0x3f800000
 
@@ -565,7 +550,6 @@
 
 .method public setCancelAppinfoTranslate(F)V
     .locals 9
-    .param p1    # F
 
     const/high16 v8, -0x40800000
 
@@ -668,14 +652,12 @@
 
 .method public setColorFilter(Landroid/graphics/ColorFilter;)V
     .locals 0
-    .param p1    # Landroid/graphics/ColorFilter;
 
     return-void
 .end method
 
 .method public setScaleFactor(F)V
     .locals 6
-    .param p1    # F
 
     const/high16 v5, 0x40000000
 

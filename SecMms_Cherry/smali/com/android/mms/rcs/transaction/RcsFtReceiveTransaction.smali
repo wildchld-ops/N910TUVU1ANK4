@@ -31,15 +31,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;ILjava/lang/String;JLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V
     .locals 9
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # J
-    .param p6    # Ljava/lang/String;
-    .param p7    # Ljava/lang/String;
-    .param p8    # Ljava/lang/String;
-    .param p9    # Ljava/lang/String;
-    .param p10    # I
 
     invoke-static {p3}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
@@ -570,7 +561,6 @@
 
 .method public update(Lcom/android/mms/rcs/transaction/ImObservable;)V
     .locals 2
-    .param p1    # Lcom/android/mms/rcs/transaction/ImObservable;
 
     const-string v0, "Mms/RcsFtSendTransaction"
 

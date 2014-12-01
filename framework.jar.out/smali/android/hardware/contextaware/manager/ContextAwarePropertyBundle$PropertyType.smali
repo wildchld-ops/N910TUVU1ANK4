@@ -441,9 +441,6 @@
 
 .method synthetic constructor <init>(Ljava/lang/String;ILandroid/hardware/contextaware/manager/ContextAwarePropertyBundle$1;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # Landroid/hardware/contextaware/manager/ContextAwarePropertyBundle$1;
 
     invoke-direct {p0, p1, p2}, Landroid/hardware/contextaware/manager/ContextAwarePropertyBundle$PropertyType;-><init>(Ljava/lang/String;I)V
 
@@ -452,7 +449,6 @@
 
 .method public static valueOf(Ljava/lang/String;)Landroid/hardware/contextaware/manager/ContextAwarePropertyBundle$PropertyType;
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     const-class v0, Landroid/hardware/contextaware/manager/ContextAwarePropertyBundle$PropertyType;
 

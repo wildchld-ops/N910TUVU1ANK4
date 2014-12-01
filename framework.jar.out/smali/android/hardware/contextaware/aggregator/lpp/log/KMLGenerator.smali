@@ -45,7 +45,6 @@
 
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -219,7 +218,6 @@
 
 .method public AddCoordinateRT(Landroid/location/Location;)V
     .locals 3
-    .param p1    # Landroid/location/Location;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -1113,7 +1111,6 @@
 
 .method public SetLineStyle(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/hardware/contextaware/aggregator/lpp/log/KMLGenerator;->mLineStyle:Ljava/lang/String;
 
@@ -1122,7 +1119,6 @@
 
 .method SetLineWidth(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/hardware/contextaware/aggregator/lpp/log/KMLGenerator;->mWidth:I
 
@@ -1131,7 +1127,6 @@
 
 .method SetPlaceID(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/hardware/contextaware/aggregator/lpp/log/KMLGenerator;->mPlaceID:Ljava/lang/String;
 
@@ -1140,7 +1135,6 @@
 
 .method SetPolyStyleColor(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/hardware/contextaware/aggregator/lpp/log/KMLGenerator;->mPolyStyleColor:Ljava/lang/String;
 

@@ -141,7 +141,6 @@
 
 .method private constructor <init>(Z)V
     .locals 2
-    .param p1    # Z
 
     const/4 v1, 0x1
 
@@ -174,8 +173,6 @@
 
 .method static synthetic access$100(Landroid/content/res/AssetManager;I)J
     .locals 2
-    .param p0    # Landroid/content/res/AssetManager;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/content/res/AssetManager;->getAssetLength(I)J
 
@@ -186,8 +183,6 @@
 
 .method static synthetic access$200(Landroid/content/res/AssetManager;I)I
     .locals 1
-    .param p0    # Landroid/content/res/AssetManager;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/content/res/AssetManager;->readAssetChar(I)I
 
@@ -198,8 +193,6 @@
 
 .method static synthetic access$300(Landroid/content/res/AssetManager;I)J
     .locals 2
-    .param p0    # Landroid/content/res/AssetManager;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/content/res/AssetManager;->getAssetRemainingLength(I)J
 
@@ -210,8 +203,6 @@
 
 .method static synthetic access$400(Landroid/content/res/AssetManager;I)V
     .locals 0
-    .param p0    # Landroid/content/res/AssetManager;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/content/res/AssetManager;->destroyAsset(I)V
 
@@ -220,8 +211,6 @@
 
 .method static synthetic access$500(Landroid/content/res/AssetManager;I)V
     .locals 0
-    .param p0    # Landroid/content/res/AssetManager;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/content/res/AssetManager;->decRefsLocked(I)V
 
@@ -230,10 +219,6 @@
 
 .method static synthetic access$600(Landroid/content/res/AssetManager;IJI)J
     .locals 2
-    .param p0    # Landroid/content/res/AssetManager;
-    .param p1    # I
-    .param p2    # J
-    .param p4    # I
 
     invoke-direct {p0, p1, p2, p3, p4}, Landroid/content/res/AssetManager;->seekAsset(IJI)J
 
@@ -244,11 +229,6 @@
 
 .method static synthetic access$700(Landroid/content/res/AssetManager;I[BII)I
     .locals 1
-    .param p0    # Landroid/content/res/AssetManager;
-    .param p1    # I
-    .param p2    # [B
-    .param p3    # I
-    .param p4    # I
 
     invoke-direct {p0, p1, p2, p3, p4}, Landroid/content/res/AssetManager;->readAsset(I[BII)I
 
@@ -271,7 +251,6 @@
 
 .method private final decRefsLocked(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/content/res/AssetManager;->mNumRefs:I
 
@@ -379,7 +358,6 @@
 
 .method private final incRefsLocked(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Landroid/content/res/AssetManager;->mNumRefs:I
 
@@ -443,7 +421,6 @@
 # virtual methods
 .method public final addAssetPath(Ljava/lang/String;)I
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Landroid/content/res/AssetManager;->addAssetPathNative(Ljava/lang/String;)I
 
@@ -454,7 +431,6 @@
 
 .method public final addAssetPaths([Ljava/lang/String;)[I
     .locals 3
-    .param p1    # [Ljava/lang/String;
 
     if-nez p1, :cond_1
 
@@ -638,8 +614,6 @@
 
 .method final getPooledString(II)Ljava/lang/CharSequence;
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Landroid/content/res/AssetManager;->mStringBlocks:[Landroid/content/res/StringBlock;
 
@@ -656,8 +630,6 @@
 
 .method final getResourceBagText(II)Ljava/lang/CharSequence;
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     monitor-enter p0
 
@@ -736,7 +708,6 @@
 
 .method final getResourceStringArray(I)[Ljava/lang/String;
     .locals 1
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/content/res/AssetManager;->getArrayStringResource(I)[Ljava/lang/String;
 
@@ -747,7 +718,6 @@
 
 .method final getResourceText(I)Ljava/lang/CharSequence;
     .locals 4
-    .param p1    # I
 
     monitor-enter p0
 
@@ -816,7 +786,6 @@
 
 .method final getResourceTextArray(I)[Ljava/lang/CharSequence;
     .locals 9
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/content/res/AssetManager;->getArrayStringInfo(I)[I
 
@@ -874,10 +843,6 @@
 
 .method final getResourceValue(IILandroid/util/TypedValue;Z)Z
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/util/TypedValue;
-    .param p4    # Z
 
     const/4 v1, 0x1
 
@@ -921,10 +886,6 @@
 
 .method final getThemeValue(IILandroid/util/TypedValue;Z)Z
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/util/TypedValue;
-    .param p4    # Z
 
     const/4 v2, 0x1
 
@@ -984,7 +945,6 @@
 
 .method final makeStringBlocks(Z)V
     .locals 7
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -1053,7 +1013,6 @@
 
 .method public final open(Ljava/lang/String;)Ljava/io/InputStream;
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1071,8 +1030,6 @@
 
 .method public final open(Ljava/lang/String;I)Ljava/io/InputStream;
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1159,7 +1116,6 @@
 
 .method public final openFd(Ljava/lang/String;)Landroid/content/res/AssetFileDescriptor;
     .locals 6
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1252,8 +1208,6 @@
 
 .method public final openNonAsset(ILjava/lang/String;)Ljava/io/InputStream;
     .locals 1
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1271,9 +1225,6 @@
 
 .method public final openNonAsset(ILjava/lang/String;I)Ljava/io/InputStream;
     .locals 5
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1360,7 +1311,6 @@
 
 .method public final openNonAsset(Ljava/lang/String;)Ljava/io/InputStream;
     .locals 2
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1380,8 +1330,6 @@
 
 .method public final openNonAsset(Ljava/lang/String;I)Ljava/io/InputStream;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1399,8 +1347,6 @@
 
 .method public final openNonAssetFd(ILjava/lang/String;)Landroid/content/res/AssetFileDescriptor;
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1493,7 +1439,6 @@
 
 .method public final openNonAssetFd(Ljava/lang/String;)Landroid/content/res/AssetFileDescriptor;
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1511,8 +1456,6 @@
 
 .method final openXmlBlockAsset(ILjava/lang/String;)Landroid/content/res/XmlBlock;
     .locals 5
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1597,7 +1540,6 @@
 
 .method final openXmlBlockAsset(Ljava/lang/String;)Landroid/content/res/XmlBlock;
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1615,8 +1557,6 @@
 
 .method public final openXmlResourceParser(ILjava/lang/String;)Landroid/content/res/XmlResourceParser;
     .locals 2
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1638,7 +1578,6 @@
 
 .method public final openXmlResourceParser(Ljava/lang/String;)Landroid/content/res/XmlResourceParser;
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1656,7 +1595,6 @@
 
 .method final releaseTheme(I)V
     .locals 1
-    .param p1    # I
 
     monitor-enter p0
 
@@ -1693,7 +1631,6 @@
 
 .method xmlBlockGone(I)V
     .locals 1
-    .param p1    # I
 
     monitor-enter p0
 

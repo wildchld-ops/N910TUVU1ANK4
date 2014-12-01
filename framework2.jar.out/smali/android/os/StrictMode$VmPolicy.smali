@@ -62,7 +62,6 @@
 
 .method private constructor <init>(ILjava/util/HashMap;)V
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -96,9 +95,6 @@
 
 .method synthetic constructor <init>(ILjava/util/HashMap;Landroid/os/StrictMode$1;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Ljava/util/HashMap;
-    .param p3    # Landroid/os/StrictMode$1;
 
     invoke-direct {p0, p1, p2}, Landroid/os/StrictMode$VmPolicy;-><init>(ILjava/util/HashMap;)V
 

@@ -51,7 +51,6 @@
 # direct methods
 .method constructor <init>(Landroid/media/WebVttCueListener;)V
     .locals 1
-    .param p1    # Landroid/media/WebVttCueListener;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -112,9 +111,6 @@
 
 .method static synthetic access$000(Landroid/media/WebVttParser;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Landroid/media/WebVttParser;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Landroid/media/WebVttParser;->log_warning(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -123,7 +119,6 @@
 
 .method static synthetic access$100(Landroid/media/WebVttParser;)Landroid/media/WebVttParser$Phase;
     .locals 1
-    .param p0    # Landroid/media/WebVttParser;
 
     iget-object v0, p0, Landroid/media/WebVttParser;->mPhase:Landroid/media/WebVttParser$Phase;
 
@@ -132,7 +127,6 @@
 
 .method static synthetic access$1000(Landroid/media/WebVttParser;)Landroid/media/WebVttParser$Phase;
     .locals 1
-    .param p0    # Landroid/media/WebVttParser;
 
     iget-object v0, p0, Landroid/media/WebVttParser;->mParseCueText:Landroid/media/WebVttParser$Phase;
 
@@ -141,8 +135,6 @@
 
 .method static synthetic access$102(Landroid/media/WebVttParser;Landroid/media/WebVttParser$Phase;)Landroid/media/WebVttParser$Phase;
     .locals 0
-    .param p0    # Landroid/media/WebVttParser;
-    .param p1    # Landroid/media/WebVttParser$Phase;
 
     iput-object p1, p0, Landroid/media/WebVttParser;->mPhase:Landroid/media/WebVttParser$Phase;
 
@@ -151,7 +143,6 @@
 
 .method static synthetic access$1100(Landroid/media/WebVttParser;)Ljava/util/Vector;
     .locals 1
-    .param p0    # Landroid/media/WebVttParser;
 
     iget-object v0, p0, Landroid/media/WebVttParser;->mCueTexts:Ljava/util/Vector;
 
@@ -160,7 +151,6 @@
 
 .method static synthetic access$200(Landroid/media/WebVttParser;)Landroid/media/WebVttParser$Phase;
     .locals 1
-    .param p0    # Landroid/media/WebVttParser;
 
     iget-object v0, p0, Landroid/media/WebVttParser;->mSkipRest:Landroid/media/WebVttParser$Phase;
 
@@ -169,7 +159,6 @@
 
 .method static synthetic access$300(Landroid/media/WebVttParser;)Landroid/media/WebVttParser$Phase;
     .locals 1
-    .param p0    # Landroid/media/WebVttParser;
 
     iget-object v0, p0, Landroid/media/WebVttParser;->mParseHeader:Landroid/media/WebVttParser$Phase;
 
@@ -178,12 +167,6 @@
 
 .method static synthetic access$400(Landroid/media/WebVttParser;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Landroid/media/WebVttParser;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
 
     invoke-direct/range {p0 .. p5}, Landroid/media/WebVttParser;->log_warning(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
@@ -192,11 +175,6 @@
 
 .method static synthetic access$500(Landroid/media/WebVttParser;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Landroid/media/WebVttParser;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2, p3, p4}, Landroid/media/WebVttParser;->log_warning(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
@@ -205,7 +183,6 @@
 
 .method static synthetic access$600(Landroid/media/WebVttParser;)Landroid/media/WebVttParser$Phase;
     .locals 1
-    .param p0    # Landroid/media/WebVttParser;
 
     iget-object v0, p0, Landroid/media/WebVttParser;->mParseCueId:Landroid/media/WebVttParser$Phase;
 
@@ -214,7 +191,6 @@
 
 .method static synthetic access$700(Landroid/media/WebVttParser;)Landroid/media/WebVttParser$Phase;
     .locals 1
-    .param p0    # Landroid/media/WebVttParser;
 
     iget-object v0, p0, Landroid/media/WebVttParser;->mParseCueTime:Landroid/media/WebVttParser$Phase;
 
@@ -223,7 +199,6 @@
 
 .method static synthetic access$800(Landroid/media/WebVttParser;)Landroid/media/WebVttCueListener;
     .locals 1
-    .param p0    # Landroid/media/WebVttParser;
 
     iget-object v0, p0, Landroid/media/WebVttParser;->mListener:Landroid/media/WebVttCueListener;
 
@@ -232,7 +207,6 @@
 
 .method static synthetic access$900(Landroid/media/WebVttParser;)Landroid/media/TextTrackCue;
     .locals 1
-    .param p0    # Landroid/media/WebVttParser;
 
     iget-object v0, p0, Landroid/media/WebVttParser;->mCue:Landroid/media/TextTrackCue;
 
@@ -241,8 +215,6 @@
 
 .method static synthetic access$902(Landroid/media/WebVttParser;Landroid/media/TextTrackCue;)Landroid/media/TextTrackCue;
     .locals 0
-    .param p0    # Landroid/media/WebVttParser;
-    .param p1    # Landroid/media/TextTrackCue;
 
     iput-object p1, p0, Landroid/media/WebVttParser;->mCue:Landroid/media/TextTrackCue;
 
@@ -251,8 +223,6 @@
 
 .method private log_warning(Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -297,10 +267,6 @@
 
 .method private log_warning(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -365,11 +331,6 @@
 
 .method private log_warning(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
 
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -444,7 +405,6 @@
 
 .method public static parseFloatPercentage(Ljava/lang/String;)F
     .locals 4
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/NumberFormatException;
@@ -542,7 +502,6 @@
 
 .method public static parseIntPercentage(Ljava/lang/String;)I
     .locals 4
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/NumberFormatException;
@@ -634,7 +593,6 @@
 
 .method public static parseTimestampMs(Ljava/lang/String;)J
     .locals 11
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/NumberFormatException;
@@ -721,7 +679,6 @@
 
 .method public static timeToString(J)Ljava/lang/String;
     .locals 9
-    .param p0    # J
 
     const-wide/16 v7, 0x3e8
 
@@ -843,7 +800,6 @@
 
 .method public parse(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 

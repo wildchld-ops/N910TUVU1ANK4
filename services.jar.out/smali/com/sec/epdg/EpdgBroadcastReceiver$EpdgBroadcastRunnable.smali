@@ -26,7 +26,6 @@
 # direct methods
 .method public constructor <init>(Lcom/sec/epdg/EpdgBroadcastReceiver;Ljava/lang/Object;)V
     .locals 0
-    .param p2    # Ljava/lang/Object;
 
     iput-object p1, p0, Lcom/sec/epdg/EpdgBroadcastReceiver$EpdgBroadcastRunnable;->this$0:Lcom/sec/epdg/EpdgBroadcastReceiver;
 

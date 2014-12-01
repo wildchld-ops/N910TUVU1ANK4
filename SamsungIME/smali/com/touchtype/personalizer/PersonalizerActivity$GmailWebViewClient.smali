@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Lcom/touchtype/personalizer/PersonalizerActivity;Lcom/touchtype/personalizer/PersonalizerActivity$1;)V
     .locals 0
-    .param p1    # Lcom/touchtype/personalizer/PersonalizerActivity;
-    .param p2    # Lcom/touchtype/personalizer/PersonalizerActivity$1;
 
     invoke-direct {p0, p1}, Lcom/touchtype/personalizer/PersonalizerActivity$GmailWebViewClient;-><init>(Lcom/touchtype/personalizer/PersonalizerActivity;)V
 
@@ -43,8 +41,6 @@
 # virtual methods
 .method public onPageFinished(Landroid/webkit/WebView;Ljava/lang/String;)V
     .locals 2
-    .param p1    # Landroid/webkit/WebView;
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/touchtype/personalizer/PersonalizerActivity$GmailWebViewClient;->this$0:Lcom/touchtype/personalizer/PersonalizerActivity;
 
@@ -110,8 +106,6 @@
 
 .method public shouldOverrideUrlLoading(Landroid/webkit/WebView;Ljava/lang/String;)Z
     .locals 10
-    .param p1    # Landroid/webkit/WebView;
-    .param p2    # Ljava/lang/String;
 
     # getter for: Lcom/touchtype/personalizer/PersonalizerActivity;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/touchtype/personalizer/PersonalizerActivity;->access$300()Ljava/lang/String;

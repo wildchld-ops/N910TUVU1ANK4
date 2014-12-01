@@ -54,7 +54,7 @@
 
     iget-object v0, p0, Lcom/android/phone/RoamingAutoDialOption$1;->this$0:Lcom/android/phone/RoamingAutoDialOption;
 
-    invoke-virtual {v0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {v0}, Lcom/android/phone/RoamingAutoDialOption;->finish()V
 
     return-void
 .end method

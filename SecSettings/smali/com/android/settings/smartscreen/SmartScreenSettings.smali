@@ -208,7 +208,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/smartscreen/SmartScreenSettings;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/smartscreen/SmartScreenSettings;
 
     invoke-virtual {p0}, Lcom/android/settings/smartscreen/SmartScreenSettings;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -219,9 +218,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/smartscreen/SmartScreenSettings;II)V
     .locals 0
-    .param p0    # Lcom/android/settings/smartscreen/SmartScreenSettings;
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/settings/smartscreen/SmartScreenSettings;->showEnableSmartRotationDialog(II)V
 
@@ -230,7 +226,6 @@
 
 .method static synthetic access$1000(Lcom/android/settings/smartscreen/SmartScreenSettings;)Landroid/preference/CheckBoxPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/smartscreen/SmartScreenSettings;
 
     iget-object v0, p0, Lcom/android/settings/smartscreen/SmartScreenSettings;->mSmartStay:Landroid/preference/CheckBoxPreference;
 
@@ -239,7 +234,6 @@
 
 .method static synthetic access$1100(Lcom/android/settings/smartscreen/SmartScreenSettings;)Landroid/preference/CheckBoxPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/smartscreen/SmartScreenSettings;
 
     iget-object v0, p0, Lcom/android/settings/smartscreen/SmartScreenSettings;->mSmartPause:Landroid/preference/CheckBoxPreference;
 
@@ -248,7 +242,6 @@
 
 .method static synthetic access$1200(Lcom/android/settings/smartscreen/SmartScreenSettings;)Landroid/preference/SwitchPreferenceScreen;
     .locals 1
-    .param p0    # Lcom/android/settings/smartscreen/SmartScreenSettings;
 
     iget-object v0, p0, Lcom/android/settings/smartscreen/SmartScreenSettings;->mSmartScroll:Landroid/preference/SwitchPreferenceScreen;
 
@@ -257,7 +250,6 @@
 
 .method static synthetic access$1300(Lcom/android/settings/smartscreen/SmartScreenSettings;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/smartscreen/SmartScreenSettings;
 
     invoke-virtual {p0}, Lcom/android/settings/smartscreen/SmartScreenSettings;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -268,7 +260,6 @@
 
 .method static synthetic access$1400(Lcom/android/settings/smartscreen/SmartScreenSettings;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/smartscreen/SmartScreenSettings;
 
     invoke-virtual {p0}, Lcom/android/settings/smartscreen/SmartScreenSettings;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -279,7 +270,6 @@
 
 .method static synthetic access$1500(Lcom/android/settings/smartscreen/SmartScreenSettings;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/smartscreen/SmartScreenSettings;
 
     invoke-virtual {p0}, Lcom/android/settings/smartscreen/SmartScreenSettings;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -290,7 +280,6 @@
 
 .method static synthetic access$1600(Lcom/android/settings/smartscreen/SmartScreenSettings;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/smartscreen/SmartScreenSettings;
 
     invoke-virtual {p0}, Lcom/android/settings/smartscreen/SmartScreenSettings;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -301,7 +290,6 @@
 
 .method static synthetic access$1700(Lcom/android/settings/smartscreen/SmartScreenSettings;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/smartscreen/SmartScreenSettings;
 
     invoke-virtual {p0}, Lcom/android/settings/smartscreen/SmartScreenSettings;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -312,7 +300,6 @@
 
 .method static synthetic access$1800(Lcom/android/settings/smartscreen/SmartScreenSettings;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/smartscreen/SmartScreenSettings;
 
     iget-boolean v0, p0, Lcom/android/settings/smartscreen/SmartScreenSettings;->mIsFromAutoRotation:Z
 
@@ -321,7 +308,6 @@
 
 .method static synthetic access$1900(Lcom/android/settings/smartscreen/SmartScreenSettings;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/smartscreen/SmartScreenSettings;
 
     invoke-virtual {p0}, Lcom/android/settings/smartscreen/SmartScreenSettings;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -332,7 +318,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/smartscreen/SmartScreenSettings;)Landroid/widget/Switch;
     .locals 1
-    .param p0    # Lcom/android/settings/smartscreen/SmartScreenSettings;
 
     iget-object v0, p0, Lcom/android/settings/smartscreen/SmartScreenSettings;->mActionBarSwitch:Landroid/widget/Switch;
 
@@ -341,7 +326,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/smartscreen/SmartScreenSettings;)Landroid/preference/CheckBoxPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/smartscreen/SmartScreenSettings;
 
     iget-object v0, p0, Lcom/android/settings/smartscreen/SmartScreenSettings;->mSmartRotation:Landroid/preference/CheckBoxPreference;
 
@@ -350,7 +334,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/smartscreen/SmartScreenSettings;)Landroid/preference/CheckBoxPreference;
     .locals 1
-    .param p0    # Lcom/android/settings/smartscreen/SmartScreenSettings;
 
     iget-object v0, p0, Lcom/android/settings/smartscreen/SmartScreenSettings;->mGripRotationLock:Landroid/preference/CheckBoxPreference;
 
@@ -359,10 +342,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/smartscreen/SmartScreenSettings;IILjava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/settings/smartscreen/SmartScreenSettings;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/settings/smartscreen/SmartScreenSettings;->showAllOptionDisabledDialog(IILjava/lang/String;)V
 
@@ -371,7 +350,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/smartscreen/SmartScreenSettings;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/smartscreen/SmartScreenSettings;
 
     invoke-virtual {p0}, Lcom/android/settings/smartscreen/SmartScreenSettings;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -382,7 +360,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/smartscreen/SmartScreenSettings;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/smartscreen/SmartScreenSettings;
 
     invoke-virtual {p0}, Lcom/android/settings/smartscreen/SmartScreenSettings;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -393,9 +370,6 @@
 
 .method static synthetic access$800(Lcom/android/settings/smartscreen/SmartScreenSettings;Ljava/lang/String;Z)V
     .locals 0
-    .param p0    # Lcom/android/settings/smartscreen/SmartScreenSettings;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     invoke-direct {p0, p1, p2}, Lcom/android/settings/smartscreen/SmartScreenSettings;->broadcastStatusChanged(Ljava/lang/String;Z)V
 
@@ -404,7 +378,6 @@
 
 .method static synthetic access$900(Lcom/android/settings/smartscreen/SmartScreenSettings;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/smartscreen/SmartScreenSettings;
 
     iget-object v0, p0, Lcom/android/settings/smartscreen/SmartScreenSettings;->mResolver:Landroid/content/ContentResolver;
 
@@ -576,9 +549,6 @@
 
 .method private showAllOptionDisabledDialog(IILjava/lang/String;)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     move-object v0, p3
 
@@ -692,7 +662,6 @@
 # virtual methods
 .method public createGuideDialog(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Lcom/android/settings/smartscreen/SmartScreenSettings;->getActivity()Landroid/app/Activity;
 
@@ -780,7 +749,6 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 9
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v8, 0x0
 
@@ -896,7 +864,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 12
-    .param p1    # Landroid/os/Bundle;
 
     const/16 v9, 0x10
 
@@ -1380,8 +1347,6 @@
 
 .method public onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
     .locals 6
-    .param p1    # Landroid/preference/Preference;
-    .param p2    # Ljava/lang/Object;
 
     const/4 v2, 0x0
 
@@ -1470,8 +1435,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 9
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     const/4 v5, 0x0
 
@@ -2037,8 +2000,6 @@
 
 .method public onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 6
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/MotionEvent;
 
     const/4 v1, 0x1
 

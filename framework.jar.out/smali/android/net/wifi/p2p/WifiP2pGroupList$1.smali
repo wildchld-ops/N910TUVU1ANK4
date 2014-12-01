@@ -31,7 +31,6 @@
 # direct methods
 .method constructor <init>(Landroid/net/wifi/p2p/WifiP2pGroupList;I)V
     .locals 0
-    .param p2    # I
 
     iput-object p1, p0, Landroid/net/wifi/p2p/WifiP2pGroupList$1;->this$0:Landroid/net/wifi/p2p/WifiP2pGroupList;
 
@@ -44,10 +43,6 @@
 # virtual methods
 .method protected entryRemoved(ZLjava/lang/Integer;Landroid/net/wifi/p2p/WifiP2pGroup;Landroid/net/wifi/p2p/WifiP2pGroup;)V
     .locals 2
-    .param p1    # Z
-    .param p2    # Ljava/lang/Integer;
-    .param p3    # Landroid/net/wifi/p2p/WifiP2pGroup;
-    .param p4    # Landroid/net/wifi/p2p/WifiP2pGroup;
 
     iget-object v0, p0, Landroid/net/wifi/p2p/WifiP2pGroupList$1;->this$0:Landroid/net/wifi/p2p/WifiP2pGroupList;
 
@@ -86,10 +81,6 @@
 
 .method protected bridge synthetic entryRemoved(ZLjava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Z
-    .param p2    # Ljava/lang/Object;
-    .param p3    # Ljava/lang/Object;
-    .param p4    # Ljava/lang/Object;
 
     check-cast p2, Ljava/lang/Integer;
 

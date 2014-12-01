@@ -1040,7 +1040,7 @@
 
     const-string v2, "CallLogAsync"
 
-    invoke-virtual/range {v24 .. v24}, Ljava/lang/Throwable;->toString()Ljava/lang/String;
+    invoke-virtual/range {v24 .. v24}, Landroid/database/sqlite/SQLiteException;->toString()Ljava/lang/String;
 
     move-result-object v3
 
@@ -1057,7 +1057,7 @@
 
     const-string v2, "CallLogAsync"
 
-    invoke-virtual/range {v24 .. v24}, Ljava/lang/Throwable;->toString()Ljava/lang/String;
+    invoke-virtual/range {v24 .. v24}, Ljava/lang/IllegalArgumentException;->toString()Ljava/lang/String;
 
     move-result-object v3
 

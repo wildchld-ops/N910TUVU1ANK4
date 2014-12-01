@@ -33,7 +33,6 @@
 # virtual methods
 .method public onAnimationCancel(Landroid/animation/Animator;)V
     .locals 2
-    .param p1    # Landroid/animation/Animator;
 
     iget-object v0, p0, Lcom/android/launcher2/MenuAppsGrid$MenuAppsGridFolderMgr$2;->this$1:Lcom/android/launcher2/MenuAppsGrid$MenuAppsGridFolderMgr;
 
@@ -55,7 +54,6 @@
 
 .method public onAnimationEnd(Landroid/animation/Animator;)V
     .locals 2
-    .param p1    # Landroid/animation/Animator;
 
     iget-object v0, p0, Lcom/android/launcher2/MenuAppsGrid$MenuAppsGridFolderMgr$2;->this$1:Lcom/android/launcher2/MenuAppsGrid$MenuAppsGridFolderMgr;
 

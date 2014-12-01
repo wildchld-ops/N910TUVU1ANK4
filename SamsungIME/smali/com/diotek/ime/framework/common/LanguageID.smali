@@ -322,7 +322,6 @@
 
 .method public static getCode(I)Ljava/lang/String;
     .locals 10
-    .param p0    # I
 
     const/16 v9, 0x7a
 
@@ -448,7 +447,6 @@
 
 .method public static getCountryCode(I)Ljava/lang/String;
     .locals 7
-    .param p0    # I
 
     const/16 v6, 0x5a
 
@@ -514,7 +512,6 @@
 
 .method public static getCountryCodeOfLanguageCode(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     invoke-static {p0}, Lcom/diotek/ime/framework/common/LanguageID;->getId(Ljava/lang/String;)I
 
@@ -840,7 +837,6 @@
 
 .method public static getId(Ljava/lang/String;)I
     .locals 10
-    .param p0    # Ljava/lang/String;
 
     const/4 v9, 0x2
 
@@ -968,8 +964,6 @@
 
 .method public static getId(Ljava/lang/String;Ljava/lang/String;)I
     .locals 11
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     const/16 v10, 0x5a
 

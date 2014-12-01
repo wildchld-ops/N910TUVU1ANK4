@@ -74,7 +74,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -149,8 +148,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v0, 0x0
 
@@ -225,7 +222,6 @@
 
 .method static synthetic access$000(Lcom/diotek/ime/framework/view/candidate/AbstractCandidateView;)Lcom/diotek/ime/framework/view/candidate/AbstractCandidateExpandLayout;
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/view/candidate/AbstractCandidateView;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/candidate/AbstractCandidateView;->mExpandCandidateLayout:Lcom/diotek/ime/framework/view/candidate/AbstractCandidateExpandLayout;
 
@@ -234,7 +230,6 @@
 
 .method static synthetic access$100(Lcom/diotek/ime/framework/view/candidate/AbstractCandidateView;)Lcom/diotek/ime/framework/view/candidate/CandidateTextView;
     .locals 1
-    .param p0    # Lcom/diotek/ime/framework/view/candidate/AbstractCandidateView;
 
     invoke-direct {p0}, Lcom/diotek/ime/framework/view/candidate/AbstractCandidateView;->getFocussedCandidateView()Lcom/diotek/ime/framework/view/candidate/CandidateTextView;
 
@@ -245,8 +240,6 @@
 
 .method static synthetic access$200(Lcom/diotek/ime/framework/view/candidate/AbstractCandidateView;Lcom/diotek/ime/framework/view/candidate/CandidateTextView;)V
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/view/candidate/AbstractCandidateView;
-    .param p1    # Lcom/diotek/ime/framework/view/candidate/CandidateTextView;
 
     invoke-direct {p0, p1}, Lcom/diotek/ime/framework/view/candidate/AbstractCandidateView;->updateDrawableState(Lcom/diotek/ime/framework/view/candidate/CandidateTextView;)V
 
@@ -344,7 +337,6 @@
 
 .method private getKnobFocusKeyIndex(I)I
     .locals 3
-    .param p1    # I
 
     const/4 v0, -0x1
 
@@ -442,8 +434,6 @@
 
 .method private handleKnobCenterKey([Lcom/diotek/ime/framework/view/candidate/CandidateTextView;I)V
     .locals 6
-    .param p1    # [Lcom/diotek/ime/framework/view/candidate/CandidateTextView;
-    .param p2    # I
 
     const/4 v2, -0x1
 
@@ -491,7 +481,6 @@
 
 .method private handleKnobLeftArrow([Lcom/diotek/ime/framework/view/candidate/CandidateTextView;)V
     .locals 9
-    .param p1    # [Lcom/diotek/ime/framework/view/candidate/CandidateTextView;
 
     const/4 v8, 0x1
 
@@ -614,7 +603,6 @@
 
 .method private handleKnobRightArrow([Lcom/diotek/ime/framework/view/candidate/CandidateTextView;)V
     .locals 9
-    .param p1    # [Lcom/diotek/ime/framework/view/candidate/CandidateTextView;
 
     const/4 v8, 0x1
 
@@ -763,7 +751,6 @@
 
 .method private updateDrawableState(Lcom/diotek/ime/framework/view/candidate/CandidateTextView;)V
     .locals 2
-    .param p1    # Lcom/diotek/ime/framework/view/candidate/CandidateTextView;
 
     const/4 v1, -0x1
 
@@ -817,7 +804,6 @@
 
 .method private updateKnobViewFocus(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v1, p0, Lcom/diotek/ime/framework/view/candidate/AbstractCandidateView;->mSuggestionViews:[Lcom/diotek/ime/framework/view/candidate/CandidateTextView;
 
@@ -834,7 +820,6 @@
 
 .method private updateKnobViewVisibility(I)V
     .locals 6
-    .param p1    # I
 
     iget-object v0, p0, Lcom/diotek/ime/framework/view/candidate/AbstractCandidateView;->mSuggestionViews:[Lcom/diotek/ime/framework/view/candidate/CandidateTextView;
 
@@ -884,7 +869,6 @@
 
 .method private updateLeftArrowVisibility(I)V
     .locals 3
-    .param p1    # I
 
     if-nez p1, :cond_0
 
@@ -929,7 +913,6 @@
 
 .method private updateRightArrowVisibility(I)V
     .locals 3
-    .param p1    # I
 
     add-int/lit8 v0, p1, 0x4
 
@@ -1261,7 +1244,6 @@
 
 .method protected init(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     const/4 v2, 0x0
 
@@ -1341,8 +1323,6 @@
 
 .method public processSuggestionKnobEvents(Landroid/view/KeyEvent;I)V
     .locals 13
-    .param p1    # Landroid/view/KeyEvent;
-    .param p2    # I
 
     const/4 v12, 0x1
 
@@ -2683,7 +2663,6 @@
 
 .method public updateExpandButtonImage(Z)V
     .locals 0
-    .param p1    # Z
 
     invoke-virtual {p0, p1}, Lcom/diotek/ime/framework/view/candidate/AbstractCandidateView;->setExpandButtonImage(Z)V
 

@@ -100,7 +100,7 @@
 
     move-result-object v1
 
-    invoke-virtual {p0, v1}, Landroid/preference/ListPreference;->setValue(Ljava/lang/String;)V
+    invoke-virtual {p0, v1}, Lcom/android/phone/CdmaSubscriptionListPreference;->setValue(Ljava/lang/String;)V
 
     return-void
 .end method
@@ -119,7 +119,7 @@
     return-void
 
     :cond_0
-    invoke-virtual {p0}, Landroid/preference/ListPreference;->getValue()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/android/phone/CdmaSubscriptionListPreference;->getValue()Ljava/lang/String;
 
     move-result-object v2
 
@@ -164,11 +164,11 @@
 
     const/4 v4, 0x0
 
-    invoke-virtual {p0}, Landroid/preference/ListPreference;->getValue()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/android/phone/CdmaSubscriptionListPreference;->getValue()Ljava/lang/String;
 
     move-result-object v5
 
-    invoke-virtual {v3, v4, v5}, Landroid/os/Handler;->obtainMessage(ILjava/lang/Object;)Landroid/os/Message;
+    invoke-virtual {v3, v4, v5}, Lcom/android/phone/CdmaSubscriptionListPreference$CdmaSubscriptionButtonHandler;->obtainMessage(ILjava/lang/Object;)Landroid/os/Message;
 
     move-result-object v3
 
@@ -199,7 +199,7 @@
 
     invoke-direct {p0}, Lcom/android/phone/CdmaSubscriptionListPreference;->setCurrentCdmaSubscriptionModeValue()V
 
-    invoke-super {p0, p1}, Landroid/preference/DialogPreference;->showDialog(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Landroid/preference/ListPreference;->showDialog(Landroid/os/Bundle;)V
 
     return-void
 .end method

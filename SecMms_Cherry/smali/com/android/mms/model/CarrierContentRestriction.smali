@@ -80,7 +80,6 @@
 
 .method public static checkCarrierNOTSupportedType(Ljava/lang/String;)Z
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -153,7 +152,6 @@
 
 .method public static getMmsCreationMode(Landroid/content/Context;)I
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     invoke-static {p0}, Landroid/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -178,7 +176,6 @@
 # virtual methods
 .method public checkAudioContentType(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/android/mms/ContentRestrictionException;
@@ -271,8 +268,6 @@
 
 .method public checkAudioCreationMode(Ljava/lang/String;I)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/android/mms/ContentRestrictionException;
@@ -362,7 +357,6 @@
 
 .method public checkImageContentType(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/android/mms/ContentRestrictionException;
@@ -424,8 +418,6 @@
 
 .method public checkImageCreationMode(Ljava/lang/String;I)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/android/mms/ContentRestrictionException;
@@ -509,7 +501,6 @@
 
 .method public checkImageRotation(I)V
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/android/mms/ContentRestrictionException;
@@ -532,9 +523,6 @@
 
 .method public checkMessageSize(IILandroid/content/ContentResolver;)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/ContentResolver;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/android/mms/ContentRestrictionException;,
@@ -613,9 +601,6 @@
 
 .method public checkResolution(III)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/android/mms/ContentRestrictionException;
@@ -699,7 +684,6 @@
 
 .method public checkVideoContentType(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/android/mms/ContentRestrictionException;
@@ -761,8 +745,6 @@
 
 .method public checkVideoCreationMode(Ljava/lang/String;I)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/android/mms/ContentRestrictionException;

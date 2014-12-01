@@ -85,7 +85,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -96,8 +95,6 @@
 
 .method public constructor <init>(Landroid/content/Context;I)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -116,7 +113,6 @@
 
 .method private getCscResource(Ljava/lang/String;)Lorg/xmlpull/v1/XmlPullParser;
     .locals 9
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -749,7 +745,6 @@
 
 .method public getItemBitmap(Ljava/lang/String;)Landroid/graphics/Bitmap;
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -783,7 +778,6 @@
 
 .method public getItemColor(Ljava/lang/String;)I
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -817,7 +811,6 @@
 
 .method public getItemDrawable(Ljava/lang/String;)Landroid/graphics/drawable/Drawable;
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -855,7 +848,6 @@
 
 .method public getItemText(Ljava/lang/String;)Ljava/lang/CharSequence;
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -893,7 +885,6 @@
 
 .method public getItemXml(Ljava/lang/String;)Landroid/content/res/XmlResourceParser;
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -927,7 +918,6 @@
 
 .method public getPackageIcon(Ljava/lang/String;)Landroid/graphics/drawable/Drawable;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     iget-boolean v1, p0, Lcom/samsung/android/theme/SThemeManager;->mPackageIconLoaded:Z
 
@@ -998,7 +988,6 @@
 
 .method public getPackageIconBitmap(Ljava/lang/String;)Landroid/graphics/Bitmap;
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     iget-boolean v1, p0, Lcom/samsung/android/theme/SThemeManager;->mPackageIconLoaded:Z
 
@@ -1069,7 +1058,6 @@
 
 .method public getPackageIconBitmapStartsWith(Ljava/lang/String;)Landroid/graphics/Bitmap;
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     iget-boolean v3, p0, Lcom/samsung/android/theme/SThemeManager;->mPackageIconLoaded:Z
 

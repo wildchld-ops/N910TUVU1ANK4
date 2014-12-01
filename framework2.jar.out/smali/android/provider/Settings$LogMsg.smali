@@ -77,8 +77,6 @@
 
 .method public static addCallStackDBKey(Landroid/content/ContentResolver;Ljava/lang/String;)V
     .locals 2
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -117,8 +115,6 @@
 
 .method public static checkToMakeCallStackLog(Landroid/content/ContentResolver;Ljava/lang/String;)Z
     .locals 4
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     const-string/jumbo v2, "unsetted"
@@ -201,8 +197,6 @@
 
 .method public static setCallStackDBKey(Landroid/content/ContentResolver;Ljava/lang/String;)V
     .locals 2
-    .param p0    # Landroid/content/ContentResolver;
-    .param p1    # Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -241,8 +235,6 @@
 
 .method public static writeCallStackLog(Ljava/lang/String;Ljava/lang/String;)V
     .locals 13
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Ljava/util/Calendar;->getInstance()Ljava/util/Calendar;
 

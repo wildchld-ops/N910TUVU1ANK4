@@ -78,7 +78,6 @@
 
 .method public static final getAndroidProxySelectorRoutePlanner(Landroid/content/Context;)Lorg/apache/http/conn/routing/HttpRoutePlanner;
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     new-instance v0, Landroid/net/Proxy$AndroidProxySelectorRoutePlanner;
 
@@ -154,7 +153,6 @@
 
 .method public static final getHost(Landroid/content/Context;)Ljava/lang/String;
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     const/4 v3, 0x0
 
@@ -199,7 +197,6 @@
 
 .method public static final getPort(Landroid/content/Context;)I
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     const/4 v3, -0x1
 
@@ -246,8 +243,6 @@
 
 .method public static final getPreferredHttpHost(Landroid/content/Context;Ljava/lang/String;)Lorg/apache/http/HttpHost;
     .locals 6
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p0, p1}, Landroid/net/Proxy;->getProxy(Landroid/content/Context;Ljava/lang/String;)Ljava/net/Proxy;
 
@@ -292,8 +287,6 @@
 
 .method public static final getProxy(Landroid/content/Context;Ljava/lang/String;)Ljava/net/Proxy;
     .locals 4
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const-string v0, ""
 
@@ -367,7 +360,6 @@
 
 .method private static final isLocalHost(Ljava/lang/String;)Z
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     const/4 v1, 0x1
 
@@ -420,7 +412,6 @@
 
 .method public static final setHttpProxySystemProperty(Landroid/net/ProxyProperties;)V
     .locals 7
-    .param p0    # Landroid/net/ProxyProperties;
 
     const/4 v0, 0x0
 
@@ -488,10 +479,6 @@
 
 .method public static final setHttpProxySystemProperty(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
 
     if-eqz p2, :cond_0
 
@@ -603,12 +590,6 @@
 
 .method public static final setHttpProxySystemProperty(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
 
     if-eqz p4, :cond_0
 
@@ -740,9 +721,6 @@
 
 .method public static validate(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 5
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     sget-object v4, Landroid/net/Proxy;->HOSTNAME_PATTERN:Ljava/util/regex/Pattern;
 

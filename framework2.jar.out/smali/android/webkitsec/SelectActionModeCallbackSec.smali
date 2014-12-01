@@ -85,9 +85,6 @@
 
 .method private setMenuVisibility(Landroid/view/Menu;ZI)V
     .locals 1
-    .param p1    # Landroid/view/Menu;
-    .param p2    # Z
-    .param p3    # I
 
     invoke-interface {p1, p3}, Landroid/view/Menu;->findItem(I)Landroid/view/MenuItem;
 
@@ -124,7 +121,6 @@
 
 .method finish(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/webkitsec/SelectActionModeCallbackSec;->mRecreate:Z
 
@@ -143,8 +139,6 @@
 
 .method public onActionItemClicked(Landroid/view/ActionMode;Landroid/view/MenuItem;)Z
     .locals 13
-    .param p1    # Landroid/view/ActionMode;
-    .param p2    # Landroid/view/MenuItem;
 
     const/high16 v12, 0x10000000
 
@@ -482,8 +476,6 @@
 
 .method public onCreateActionMode(Landroid/view/ActionMode;Landroid/view/Menu;)Z
     .locals 13
-    .param p1    # Landroid/view/ActionMode;
-    .param p2    # Landroid/view/Menu;
 
     invoke-virtual {p1}, Landroid/view/ActionMode;->getMenuInflater()Landroid/view/MenuInflater;
 
@@ -873,7 +865,6 @@
 
 .method public onDestroyActionMode(Landroid/view/ActionMode;)V
     .locals 1
-    .param p1    # Landroid/view/ActionMode;
 
     iget-boolean v0, p0, Landroid/webkitsec/SelectActionModeCallbackSec;->mRecreate:Z
 
@@ -906,8 +897,6 @@
 
 .method public onPrepareActionMode(Landroid/view/ActionMode;Landroid/view/Menu;)Z
     .locals 1
-    .param p1    # Landroid/view/ActionMode;
-    .param p2    # Landroid/view/Menu;
 
     const/4 v0, 0x1
 
@@ -922,7 +911,6 @@
 
 .method setWebViewClassic(Landroid/webkitsec/WebViewClassic;)V
     .locals 0
-    .param p1    # Landroid/webkitsec/WebViewClassic;
 
     iput-object p1, p0, Landroid/webkitsec/SelectActionModeCallbackSec;->mWebView:Landroid/webkitsec/WebViewClassic;
 

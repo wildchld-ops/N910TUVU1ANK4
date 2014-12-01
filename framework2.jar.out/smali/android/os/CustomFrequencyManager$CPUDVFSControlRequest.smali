@@ -25,10 +25,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/CustomFrequencyManager;IIJLjava/lang/String;)V
     .locals 6
-    .param p2    # I
-    .param p3    # I
-    .param p4    # J
-    .param p6    # Ljava/lang/String;
 
     const/4 v5, 0x1
 
@@ -122,7 +118,6 @@
 # virtual methods
 .method public declared-synchronized cancelFrequencyRequest(I)V
     .locals 3
-    .param p1    # I
 
     monitor-enter p0
 
@@ -225,7 +220,6 @@
 
 .method public declared-synchronized doFrequencyRequest(I)V
     .locals 5
-    .param p1    # I
 
     monitor-enter p0
 

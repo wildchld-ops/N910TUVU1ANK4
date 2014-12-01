@@ -44,8 +44,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v3, 0x0
 
@@ -106,7 +104,6 @@
 
 .method public constructor <init>(Landroid/view/animation/Animation;)V
     .locals 1
-    .param p1    # Landroid/view/animation/Animation;
 
     const/high16 v0, 0x3f000000
 
@@ -117,9 +114,6 @@
 
 .method public constructor <init>(Landroid/view/animation/Animation;FF)V
     .locals 0
-    .param p1    # Landroid/view/animation/Animation;
-    .param p2    # F
-    .param p3    # F
 
     invoke-direct {p0, p1}, Landroid/view/animation/LayoutAnimationController;-><init>(Landroid/view/animation/Animation;)V
 
@@ -132,7 +126,6 @@
 
 .method private getTransformedColumnIndex(Landroid/view/animation/GridLayoutAnimationController$AnimationParameters;)I
     .locals 4
-    .param p1    # Landroid/view/animation/GridLayoutAnimationController$AnimationParameters;
 
     invoke-virtual {p0}, Landroid/view/animation/LayoutAnimationController;->getOrder()I
 
@@ -210,7 +203,6 @@
 
 .method private getTransformedRowIndex(Landroid/view/animation/GridLayoutAnimationController$AnimationParameters;)I
     .locals 4
-    .param p1    # Landroid/view/animation/GridLayoutAnimationController$AnimationParameters;
 
     invoke-virtual {p0}, Landroid/view/animation/LayoutAnimationController;->getOrder()I
 
@@ -298,7 +290,6 @@
 
 .method protected getDelayForView(Landroid/view/View;)J
     .locals 17
-    .param p1    # Landroid/view/View;
 
     invoke-virtual/range {p1 .. p1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
@@ -535,7 +526,6 @@
 
 .method public setColumnDelay(F)V
     .locals 0
-    .param p1    # F
 
     iput p1, p0, Landroid/view/animation/GridLayoutAnimationController;->mColumnDelay:F
 
@@ -544,7 +534,6 @@
 
 .method public setDirection(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/view/animation/GridLayoutAnimationController;->mDirection:I
 
@@ -553,7 +542,6 @@
 
 .method public setDirectionPriority(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/view/animation/GridLayoutAnimationController;->mDirectionPriority:I
 
@@ -562,7 +550,6 @@
 
 .method public setRowDelay(F)V
     .locals 0
-    .param p1    # F
 
     iput p1, p0, Landroid/view/animation/GridLayoutAnimationController;->mRowDelay:F
 

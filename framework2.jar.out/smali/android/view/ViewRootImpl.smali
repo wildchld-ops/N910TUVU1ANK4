@@ -653,8 +653,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/view/Display;)V
     .locals 12
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/view/Display;
 
     const/high16 v2, 0x3f800000
 
@@ -1254,7 +1252,6 @@
 
 .method static synthetic access$000(Landroid/view/ViewRootImpl;)Z
     .locals 1
-    .param p0    # Landroid/view/ViewRootImpl;
 
     iget-boolean v0, p0, Landroid/view/ViewRootImpl;->mRenderProfilingEnabled:Z
 
@@ -1263,7 +1260,6 @@
 
 .method static synthetic access$100(Landroid/view/ViewRootImpl;)Landroid/view/Choreographer$FrameCallback;
     .locals 1
-    .param p0    # Landroid/view/ViewRootImpl;
 
     iget-object v0, p0, Landroid/view/ViewRootImpl;->mRenderProfiler:Landroid/view/Choreographer$FrameCallback;
 
@@ -1272,8 +1268,6 @@
 
 .method static synthetic access$1000(Landroid/view/ViewRootImpl;Landroid/view/DragEvent;)V
     .locals 0
-    .param p0    # Landroid/view/ViewRootImpl;
-    .param p1    # Landroid/view/DragEvent;
 
     invoke-direct {p0, p1}, Landroid/view/ViewRootImpl;->handleDragEvent(Landroid/view/DragEvent;)V
 
@@ -1282,10 +1276,6 @@
 
 .method static synthetic access$1100(Landroid/view/ViewRootImpl;Landroid/view/View;II)Landroid/view/View;
     .locals 1
-    .param p0    # Landroid/view/ViewRootImpl;
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Landroid/view/ViewRootImpl;->findAirButtonViewByPosition(Landroid/view/View;II)Landroid/view/View;
 
@@ -1296,8 +1286,6 @@
 
 .method static synthetic access$1200(Landroid/view/ViewRootImpl;Landroid/view/ViewRootImpl$QueuedInputEvent;)V
     .locals 0
-    .param p0    # Landroid/view/ViewRootImpl;
-    .param p1    # Landroid/view/ViewRootImpl$QueuedInputEvent;
 
     invoke-direct {p0, p1}, Landroid/view/ViewRootImpl;->finishInputEvent(Landroid/view/ViewRootImpl$QueuedInputEvent;)V
 
@@ -1306,8 +1294,6 @@
 
 .method static synthetic access$1300(Landroid/view/ViewRootImpl;Landroid/view/KeyEvent;)Z
     .locals 1
-    .param p0    # Landroid/view/ViewRootImpl;
-    .param p1    # Landroid/view/KeyEvent;
 
     invoke-direct {p0, p1}, Landroid/view/ViewRootImpl;->checkForLeavingTouchModeAndConsume(Landroid/view/KeyEvent;)Z
 
@@ -1318,7 +1304,6 @@
 
 .method static synthetic access$1400(Landroid/view/ViewRootImpl;)Landroid/view/ViewRootImpl$MotionEventMonitor;
     .locals 1
-    .param p0    # Landroid/view/ViewRootImpl;
 
     iget-object v0, p0, Landroid/view/ViewRootImpl;->mMotionEventMonitor:Landroid/view/ViewRootImpl$MotionEventMonitor;
 
@@ -1327,7 +1312,6 @@
 
 .method static synthetic access$200(Landroid/view/View;)V
     .locals 0
-    .param p0    # Landroid/view/View;
 
     invoke-static {p0}, Landroid/view/ViewRootImpl;->forceLayout(Landroid/view/View;)V
 
@@ -1336,8 +1320,6 @@
 
 .method static synthetic access$2202(Landroid/view/ViewRootImpl;Z)Z
     .locals 0
-    .param p0    # Landroid/view/ViewRootImpl;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/view/ViewRootImpl;->mProfileRendering:Z
 
@@ -1346,8 +1328,6 @@
 
 .method static synthetic access$2302(Landroid/view/ViewRootImpl;Z)Z
     .locals 0
-    .param p0    # Landroid/view/ViewRootImpl;
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/view/ViewRootImpl;->mMediaDisabled:Z
 
@@ -1356,8 +1336,6 @@
 
 .method static synthetic access$2600(Landroid/view/ViewRootImpl;Z)V
     .locals 0
-    .param p0    # Landroid/view/ViewRootImpl;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Landroid/view/ViewRootImpl;->dispatchCoverStateChanged(Z)V
 
@@ -1366,8 +1344,6 @@
 
 .method static synthetic access$2700(Landroid/view/ViewRootImpl;Lcom/samsung/android/multiwindow/MultiWindowStyle;)V
     .locals 0
-    .param p0    # Landroid/view/ViewRootImpl;
-    .param p1    # Lcom/samsung/android/multiwindow/MultiWindowStyle;
 
     invoke-direct {p0, p1}, Landroid/view/ViewRootImpl;->dispatchWindowStyleChanged(Lcom/samsung/android/multiwindow/MultiWindowStyle;)V
 
@@ -1376,9 +1352,6 @@
 
 .method static synthetic access$2900(Landroid/view/ViewRootImpl;Landroid/view/View;Landroid/view/View;)Landroid/view/View;
     .locals 1
-    .param p0    # Landroid/view/ViewRootImpl;
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/View;
 
     invoke-direct {p0, p1, p2}, Landroid/view/ViewRootImpl;->getCommonPredecessor(Landroid/view/View;Landroid/view/View;)Landroid/view/View;
 
@@ -1397,8 +1370,6 @@
 
 .method static synthetic access$400(Landroid/view/ViewRootImpl;Z)V
     .locals 0
-    .param p0    # Landroid/view/ViewRootImpl;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Landroid/view/ViewRootImpl;->profileRendering(Z)V
 
@@ -1407,8 +1378,6 @@
 
 .method static synthetic access$500(Landroid/view/ViewRootImpl;Z)Z
     .locals 1
-    .param p0    # Landroid/view/ViewRootImpl;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Landroid/view/ViewRootImpl;->ensureTouchModeLocally(Z)Z
 
@@ -1419,7 +1388,6 @@
 
 .method static synthetic access$600(Landroid/view/ViewRootImpl;)Landroid/view/Surface;
     .locals 1
-    .param p0    # Landroid/view/ViewRootImpl;
 
     iget-object v0, p0, Landroid/view/ViewRootImpl;->mSurface:Landroid/view/Surface;
 
@@ -1428,7 +1396,6 @@
 
 .method static synthetic access$700(Landroid/view/ViewRootImpl;)Landroid/view/SurfaceHolder;
     .locals 1
-    .param p0    # Landroid/view/ViewRootImpl;
 
     iget-object v0, p0, Landroid/view/ViewRootImpl;->mHolder:Landroid/view/SurfaceHolder;
 
@@ -1437,7 +1404,6 @@
 
 .method static synthetic access$800(Landroid/view/ViewRootImpl;)Z
     .locals 1
-    .param p0    # Landroid/view/ViewRootImpl;
 
     invoke-direct {p0}, Landroid/view/ViewRootImpl;->isInLocalFocusMode()Z
 
@@ -1448,7 +1414,6 @@
 
 .method static synthetic access$900(Landroid/view/ViewRootImpl;)V
     .locals 0
-    .param p0    # Landroid/view/ViewRootImpl;
 
     invoke-direct {p0}, Landroid/view/ViewRootImpl;->sendUserActionEvent()V
 
@@ -1457,7 +1422,6 @@
 
 .method public static addConfigCallback(Landroid/content/ComponentCallbacks;)V
     .locals 2
-    .param p0    # Landroid/content/ComponentCallbacks;
 
     sget-object v1, Landroid/view/ViewRootImpl;->sConfigCallbacks:Ljava/util/ArrayList;
 
@@ -1484,7 +1448,6 @@
 
 .method public static addFirstDrawHandler(Ljava/lang/Runnable;)V
     .locals 2
-    .param p0    # Ljava/lang/Runnable;
 
     sget-object v1, Landroid/view/ViewRootImpl;->sFirstDrawHandlers:Ljava/util/ArrayList;
 
@@ -1516,7 +1479,6 @@
 
 .method private applyKeepScreenOnFlag(Landroid/view/WindowManager$LayoutParams;)V
     .locals 2
-    .param p1    # Landroid/view/WindowManager$LayoutParams;
 
     iget-object v0, p0, Landroid/view/ViewRootImpl;->mAttachInfo:Landroid/view/View$AttachInfo;
 
@@ -1551,7 +1513,6 @@
 
 .method private checkForLeavingTouchModeAndConsume(Landroid/view/KeyEvent;)Z
     .locals 3
-    .param p1    # Landroid/view/KeyEvent;
 
     const/4 v1, 0x0
 
@@ -1611,7 +1572,6 @@
 
 .method private checkPalmRejection(Landroid/view/MotionEvent;)Z
     .locals 7
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v4, 0x1
 
@@ -1900,7 +1860,6 @@
 
 .method private deliverInputEvent(Landroid/view/ViewRootImpl$QueuedInputEvent;)V
     .locals 12
-    .param p1    # Landroid/view/ViewRootImpl$QueuedInputEvent;
 
     const-wide/16 v9, 0x8
 
@@ -2279,7 +2238,6 @@
 
 .method private dispatchCoverStateChanged(Z)V
     .locals 2
-    .param p1    # Z
 
     invoke-static {}, Landroid/os/Message;->obtain()Landroid/os/Message;
 
@@ -2310,7 +2268,6 @@
 
 .method private dispatchWindowStyleChanged(Lcom/samsung/android/multiwindow/MultiWindowStyle;)V
     .locals 2
-    .param p1    # Lcom/samsung/android/multiwindow/MultiWindowStyle;
 
     invoke-static {}, Landroid/os/Message;->obtain()Landroid/os/Message;
 
@@ -2331,7 +2288,6 @@
 
 .method private draw(Z)V
     .locals 22
-    .param p1    # Z
 
     move-object/from16 v0, p0
 
@@ -2889,7 +2845,6 @@
 
 .method private drawAccessibilityFocusedDrawableIfNeeded(Landroid/graphics/Canvas;)V
     .locals 8
-    .param p1    # Landroid/graphics/Canvas;
 
     const/high16 v7, 0x3f800000
 
@@ -3079,11 +3034,6 @@
 
 .method private drawSoftware(Landroid/view/Surface;Landroid/view/View$AttachInfo;IZLandroid/graphics/Rect;)Z
     .locals 10
-    .param p1    # Landroid/view/Surface;
-    .param p2    # Landroid/view/View$AttachInfo;
-    .param p3    # I
-    .param p4    # Z
-    .param p5    # Landroid/graphics/Rect;
 
     const/4 v6, 0x1
 
@@ -3319,7 +3269,6 @@
 
 .method private drawTranscloudFocusedDrawableIfNeeded(Landroid/graphics/Canvas;)V
     .locals 8
-    .param p1    # Landroid/graphics/Canvas;
 
     const/4 v4, 0x2
 
@@ -3501,9 +3450,6 @@
 
 .method private dumpViewHierarchy(Ljava/lang/String;Ljava/io/PrintWriter;Landroid/view/View;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # Landroid/view/View;
 
     invoke-virtual {p2, p1}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
@@ -3573,7 +3519,6 @@
 
 .method private enableHardwareAcceleration(Landroid/view/WindowManager$LayoutParams;)V
     .locals 8
-    .param p1    # Landroid/view/WindowManager$LayoutParams;
 
     const/4 v5, 0x0
 
@@ -3761,7 +3706,6 @@
 
 .method private ensureTouchModeLocally(Z)Z
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Landroid/view/ViewRootImpl;->mAttachInfo:Landroid/view/View$AttachInfo;
 
@@ -3860,9 +3804,6 @@
 
 .method private findAirButtonViewByPosition(Landroid/view/View;II)Landroid/view/View;
     .locals 9
-    .param p1    # Landroid/view/View;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v6, 0x0
 
@@ -3949,7 +3890,6 @@
 
 .method private static findAncestorToTakeFocusInTouchMode(Landroid/view/View;)Landroid/view/ViewGroup;
     .locals 5
-    .param p0    # Landroid/view/View;
 
     const/4 v2, 0x0
 
@@ -4009,7 +3949,6 @@
 
 .method private finishInputEvent(Landroid/view/ViewRootImpl$QueuedInputEvent;)V
     .locals 3
-    .param p1    # Landroid/view/ViewRootImpl$QueuedInputEvent;
 
     iget-object v1, p1, Landroid/view/ViewRootImpl$QueuedInputEvent;->mReceiver:Landroid/view/InputEventReceiver;
 
@@ -4050,7 +3989,6 @@
 
 .method private static forceLayout(Landroid/view/View;)V
     .locals 4
-    .param p0    # Landroid/view/View;
 
     invoke-virtual {p0}, Landroid/view/View;->forceLayout()V
 
@@ -4196,8 +4134,6 @@
 
 .method private getCommonPredecessor(Landroid/view/View;Landroid/view/View;)Landroid/view/View;
     .locals 6
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/View;
 
     iget-object v5, p0, Landroid/view/ViewRootImpl;->mAttachInfo:Landroid/view/View$AttachInfo;
 
@@ -4288,8 +4224,6 @@
 
 .method private static getGfxInfo(Landroid/view/View;[I)V
     .locals 7
-    .param p0    # Landroid/view/View;
-    .param p1    # [I
 
     iget-object v1, p0, Landroid/view/View;->mDisplayList:Landroid/view/DisplayList;
 
@@ -4349,7 +4283,6 @@
 
 .method private getImpliedSystemUiVisibility(Landroid/view/WindowManager$LayoutParams;)I
     .locals 3
-    .param p1    # Landroid/view/WindowManager$LayoutParams;
 
     const/4 v0, 0x0
 
@@ -4380,7 +4313,6 @@
 
 .method private getPalmRejection(Landroid/view/MotionEvent;)Z
     .locals 31
-    .param p1    # Landroid/view/MotionEvent;
 
     const/16 v28, 0xa
 
@@ -5085,8 +5017,6 @@
 
 .method private static getRootMeasureSpec(II)I
     .locals 2
-    .param p0    # I
-    .param p1    # I
 
     const/high16 v1, 0x40000000
 
@@ -5191,7 +5121,6 @@
 
 .method private getTranscloudFocusedDrawable(I)Landroid/graphics/drawable/Drawable;
     .locals 8
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -5350,7 +5279,6 @@
 
 .method private getValidLayoutRequesters(Ljava/util/ArrayList;Z)Ljava/util/ArrayList;
     .locals 8
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -5514,7 +5442,6 @@
 
 .method private handleDragEvent(Landroid/view/DragEvent;)V
     .locals 14
-    .param p1    # Landroid/view/DragEvent;
 
     iget-object v11, p0, Landroid/view/ViewRootImpl;->mView:Landroid/view/View;
 
@@ -5941,7 +5868,6 @@
 
 .method private handleOutOfResourcesException(Landroid/view/Surface$OutOfResourcesException;)V
     .locals 2
-    .param p1    # Landroid/view/Surface$OutOfResourcesException;
 
     const-string v0, "ViewRootImpl"
 
@@ -6054,7 +5980,6 @@
 
 .method private static isNavigationKey(Landroid/view/KeyEvent;)Z
     .locals 1
-    .param p0    # Landroid/view/KeyEvent;
 
     invoke-virtual {p0}, Landroid/view/KeyEvent;->getKeyCode()I
 
@@ -6093,7 +6018,6 @@
 
 .method static isTerminalInputEvent(Landroid/view/InputEvent;)Z
     .locals 6
-    .param p0    # Landroid/view/InputEvent;
 
     const/4 v4, 0x0
 
@@ -6151,7 +6075,6 @@
 
 .method private static isTypingKey(Landroid/view/KeyEvent;)Z
     .locals 1
-    .param p0    # Landroid/view/KeyEvent;
 
     invoke-virtual {p0}, Landroid/view/KeyEvent;->getUnicodeChar()I
 
@@ -6172,8 +6095,6 @@
 
 .method public static isViewDescendantOf(Landroid/view/View;Landroid/view/View;)Z
     .locals 3
-    .param p0    # Landroid/view/View;
-    .param p1    # Landroid/view/View;
 
     const/4 v1, 0x1
 
@@ -6268,11 +6189,6 @@
 
 .method private measureHierarchy(Landroid/view/View;Landroid/view/WindowManager$LayoutParams;Landroid/content/res/Resources;II)Z
     .locals 10
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/WindowManager$LayoutParams;
-    .param p3    # Landroid/content/res/Resources;
-    .param p4    # I
-    .param p5    # I
 
     const/high16 v9, 0x1000000
 
@@ -6419,9 +6335,6 @@
 
 .method private obtainQueuedInputEvent(Landroid/view/InputEvent;Landroid/view/InputEventReceiver;I)Landroid/view/ViewRootImpl$QueuedInputEvent;
     .locals 3
-    .param p1    # Landroid/view/InputEvent;
-    .param p2    # Landroid/view/InputEventReceiver;
-    .param p3    # I
 
     const/4 v2, 0x0
 
@@ -6628,9 +6541,6 @@
 
 .method private performLayout(Landroid/view/WindowManager$LayoutParams;II)V
     .locals 12
-    .param p1    # Landroid/view/WindowManager$LayoutParams;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v0, 0x0
 
@@ -6832,8 +6742,6 @@
 
 .method private performMeasure(II)V
     .locals 13
-    .param p1    # I
-    .param p2    # I
 
     const/high16 v12, 0x40000000
 
@@ -10863,8 +10771,6 @@
 
 .method private postSendWindowContentChangedCallback(Landroid/view/View;I)V
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     iget-object v0, p0, Landroid/view/ViewRootImpl;->mSendWindowContentChangedAccessibilityEvent:Landroid/view/ViewRootImpl$SendWindowContentChangedAccessibilityEvent;
 
@@ -10888,7 +10794,6 @@
 
 .method private profileRendering(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-boolean v0, p0, Landroid/view/ViewRootImpl;->mProfileRendering:Z
 
@@ -10942,7 +10847,6 @@
 
 .method private recycleQueuedInputEvent(Landroid/view/ViewRootImpl$QueuedInputEvent;)V
     .locals 2
-    .param p1    # Landroid/view/ViewRootImpl$QueuedInputEvent;
 
     const/4 v0, 0x0
 
@@ -10974,9 +10878,6 @@
 
 .method private relayoutWindow(Landroid/view/WindowManager$LayoutParams;IZ)I
     .locals 21
-    .param p1    # Landroid/view/WindowManager$LayoutParams;
-    .param p2    # I
-    .param p3    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -11562,7 +11463,6 @@
 # virtual methods
 .method public attachFunctor(I)Z
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Landroid/view/ViewRootImpl;->mAttachInfo:Landroid/view/View$AttachInfo;
 
@@ -11601,7 +11501,6 @@
 
 .method public bringChildToFront(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     return-void
 .end method
@@ -11632,7 +11531,6 @@
 
 .method public cancelInvalidate(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Landroid/view/ViewRootImpl;->mHandler:Landroid/view/ViewRootImpl$ViewRootHandler;
 
@@ -11655,7 +11553,6 @@
 
 .method changeCanvasOpacity(Z)V
     .locals 3
-    .param p1    # Z
 
     const-string v0, "ViewRootImpl"
 
@@ -11707,22 +11604,18 @@
 
 .method public childDrawableStateChanged(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     return-void
 .end method
 
 .method public childHasTransientStateChanged(Landroid/view/View;Z)V
     .locals 0
-    .param p1    # Landroid/view/View;
-    .param p2    # Z
 
     return-void
 .end method
 
 .method public clearChildFocus(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p0}, Landroid/view/ViewRootImpl;->checkThread()V
 
@@ -11733,7 +11626,6 @@
 
 .method public createContextMenu(Landroid/view/ContextMenu;)V
     .locals 0
-    .param p1    # Landroid/view/ContextMenu;
 
     return-void
 .end method
@@ -11846,7 +11738,6 @@
 
 .method public detachFunctor(I)V
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/view/ViewRootImpl;->mAttachInfo:Landroid/view/View$AttachInfo;
 
@@ -11866,7 +11757,6 @@
 
 .method die(Z)Z
     .locals 3
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -11943,9 +11833,6 @@
 
 .method public dispatchAirButtonHitTest(III)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     new-instance v0, Landroid/os/Bundle;
 
@@ -11982,7 +11869,6 @@
 
 .method public dispatchAppVisibility(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v1, p0, Landroid/view/ViewRootImpl;->mHandler:Landroid/view/ViewRootImpl$ViewRootHandler;
 
@@ -12034,7 +11920,6 @@
 
 .method public dispatchCloseSystemDialogs(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     invoke-static {}, Landroid/os/Message;->obtain()Landroid/os/Message;
 
@@ -12055,7 +11940,6 @@
 
 .method public dispatchCocktailBarVisibilityChanged(Z)V
     .locals 2
-    .param p1    # Z
 
     invoke-static {}, Landroid/os/Message;->obtain()Landroid/os/Message;
 
@@ -12260,7 +12144,6 @@
 
 .method public dispatchDragEvent(Landroid/view/DragEvent;)V
     .locals 4
-    .param p1    # Landroid/view/DragEvent;
 
     invoke-virtual {p1}, Landroid/view/DragEvent;->getAction()I
 
@@ -12297,7 +12180,6 @@
 
 .method public dispatchFinishInputConnection(Landroid/view/inputmethod/InputConnection;)V
     .locals 3
-    .param p1    # Landroid/view/inputmethod/InputConnection;
 
     iget-object v1, p0, Landroid/view/ViewRootImpl;->mHandler:Landroid/view/ViewRootImpl$ViewRootHandler;
 
@@ -12356,7 +12238,6 @@
 
 .method public dispatchInputEvent(Landroid/view/InputEvent;)V
     .locals 3
-    .param p1    # Landroid/view/InputEvent;
 
     iget-object v1, p0, Landroid/view/ViewRootImpl;->mHandler:Landroid/view/ViewRootImpl$ViewRootHandler;
 
@@ -12379,8 +12260,6 @@
 
 .method public dispatchInvalidateDelayed(Landroid/view/View;J)V
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # J
 
     iget-object v1, p0, Landroid/view/ViewRootImpl;->mHandler:Landroid/view/ViewRootImpl$ViewRootHandler;
 
@@ -12399,7 +12278,6 @@
 
 .method public dispatchInvalidateOnAnimation(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Landroid/view/ViewRootImpl;->mInvalidateOnAnimationRunnable:Landroid/view/ViewRootImpl$InvalidateOnAnimationRunnable;
 
@@ -12410,8 +12288,6 @@
 
 .method public dispatchInvalidateRectDelayed(Landroid/view/View$AttachInfo$InvalidateInfo;J)V
     .locals 3
-    .param p1    # Landroid/view/View$AttachInfo$InvalidateInfo;
-    .param p2    # J
 
     iget-object v1, p0, Landroid/view/ViewRootImpl;->mHandler:Landroid/view/ViewRootImpl$ViewRootHandler;
 
@@ -12430,7 +12306,6 @@
 
 .method public dispatchInvalidateRectOnAnimation(Landroid/view/View$AttachInfo$InvalidateInfo;)V
     .locals 1
-    .param p1    # Landroid/view/View$AttachInfo$InvalidateInfo;
 
     iget-object v0, p0, Landroid/view/ViewRootImpl;->mInvalidateOnAnimationRunnable:Landroid/view/ViewRootImpl$InvalidateOnAnimationRunnable;
 
@@ -12441,7 +12316,6 @@
 
 .method public dispatchKeyFromIme(Landroid/view/KeyEvent;)V
     .locals 3
-    .param p1    # Landroid/view/KeyEvent;
 
     iget-object v1, p0, Landroid/view/ViewRootImpl;->mHandler:Landroid/view/ViewRootImpl$ViewRootHandler;
 
@@ -12464,8 +12338,6 @@
 
 .method public dispatchMoved(II)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     const-wide/high16 v4, 0x3fe0000000000000L
 
@@ -12519,12 +12391,6 @@
 
 .method public dispatchResized(Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Rect;ZLandroid/content/res/Configuration;)V
     .locals 5
-    .param p1    # Landroid/graphics/Rect;
-    .param p2    # Landroid/graphics/Rect;
-    .param p3    # Landroid/graphics/Rect;
-    .param p4    # Landroid/graphics/Rect;
-    .param p5    # Z
-    .param p6    # Landroid/content/res/Configuration;
 
     iget-object v4, p0, Landroid/view/ViewRootImpl;->mHandler:Landroid/view/ViewRootImpl$ViewRootHandler;
 
@@ -12653,7 +12519,6 @@
 
 .method public dispatchScreenStateChange(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v1, p0, Landroid/view/ViewRootImpl;->mHandler:Landroid/view/ViewRootImpl$ViewRootHandler;
 
@@ -12684,7 +12549,6 @@
 
 .method public dispatchSmartClipDataExtractionEvent(Lcom/samsung/android/smartclip/SmartClipDataExtractionEvent;)V
     .locals 2
-    .param p1    # Lcom/samsung/android/smartclip/SmartClipDataExtractionEvent;
 
     invoke-static {}, Landroid/os/Message;->obtain()Landroid/os/Message;
 
@@ -12705,10 +12569,6 @@
 
 .method public dispatchSystemUiVisibilityChanged(IIII)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     new-instance v0, Landroid/view/ViewRootImpl$SystemUiVisibilityInfo;
 
@@ -12739,7 +12599,6 @@
 
 .method public dispatchUnhandledKey(Landroid/view/KeyEvent;)V
     .locals 21
-    .param p1    # Landroid/view/KeyEvent;
 
     invoke-virtual/range {p1 .. p1}, Landroid/view/KeyEvent;->getFlags()I
 
@@ -12860,7 +12719,6 @@
 
 .method doConsumeBatchedInput(J)V
     .locals 1
-    .param p1    # J
 
     iget-boolean v0, p0, Landroid/view/ViewRootImpl;->mConsumeBatchedInputScheduled:Z
 
@@ -13153,10 +13011,6 @@
 
 .method public dump(Ljava/lang/String;Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/io/FileDescriptor;
-    .param p3    # Ljava/io/PrintWriter;
-    .param p4    # [Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -13285,7 +13139,6 @@
 
 .method public dumpGfxInfo([I)V
     .locals 2
-    .param p1    # [I
 
     const/4 v1, 0x0
 
@@ -13309,7 +13162,6 @@
 
 .method public enqueueDisplayList(Landroid/view/DisplayList;)V
     .locals 1
-    .param p1    # Landroid/view/DisplayList;
 
     iget-object v0, p0, Landroid/view/ViewRootImpl;->mDisplayLists:Ljava/util/ArrayList;
 
@@ -13320,7 +13172,6 @@
 
 .method enqueueInputEvent(Landroid/view/InputEvent;)V
     .locals 2
-    .param p1    # Landroid/view/InputEvent;
 
     const/4 v1, 0x0
 
@@ -13333,10 +13184,6 @@
 
 .method enqueueInputEvent(Landroid/view/InputEvent;Landroid/view/InputEventReceiver;IZ)V
     .locals 6
-    .param p1    # Landroid/view/InputEvent;
-    .param p2    # Landroid/view/InputEventReceiver;
-    .param p3    # I
-    .param p4    # Z
 
     const/4 v5, 0x0
 
@@ -13357,11 +13204,6 @@
 
 .method enqueueInputEvent(Landroid/view/InputEvent;Landroid/view/InputEventReceiver;IZZ)V
     .locals 6
-    .param p1    # Landroid/view/InputEvent;
-    .param p2    # Landroid/view/InputEventReceiver;
-    .param p3    # I
-    .param p4    # Z
-    .param p5    # Z
 
     invoke-direct {p0, p1, p2, p3}, Landroid/view/ViewRootImpl;->obtainQueuedInputEvent(Landroid/view/InputEvent;Landroid/view/InputEventReceiver;I)Landroid/view/ViewRootImpl$QueuedInputEvent;
 
@@ -13419,7 +13261,6 @@
 
 .method ensureTouchMode(Z)Z
     .locals 2
-    .param p1    # Z
 
     iget-object v1, p0, Landroid/view/ViewRootImpl;->mAttachInfo:Landroid/view/View$AttachInfo;
 
@@ -13504,8 +13345,6 @@
 
 .method public focusSearch(Landroid/view/View;I)Landroid/view/View;
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     invoke-virtual {p0}, Landroid/view/ViewRootImpl;->checkThread()V
 
@@ -13538,7 +13377,6 @@
 
 .method public focusableViewAvailable(Landroid/view/View;)V
     .locals 4
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p0}, Landroid/view/ViewRootImpl;->checkThread()V
 
@@ -13644,9 +13482,6 @@
 
 .method public getChildVisibleRect(Landroid/view/View;Landroid/graphics/Rect;Landroid/graphics/Point;)Z
     .locals 3
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/graphics/Rect;
-    .param p3    # Landroid/graphics/Point;
 
     const/4 v2, 0x0
 
@@ -13714,7 +13549,6 @@
 
 .method public getLastTouchPoint(Landroid/graphics/Point;)V
     .locals 1
-    .param p1    # Landroid/graphics/Point;
 
     iget-object v0, p0, Landroid/view/ViewRootImpl;->mLastTouchPoint:Landroid/graphics/PointF;
 
@@ -13833,7 +13667,6 @@
 
 .method handleAppVisibility(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-boolean v0, p0, Landroid/view/ViewRootImpl;->mAppVisible:Z
 
@@ -13849,7 +13682,6 @@
 
 .method public handleDispatchCocktailBarVisibilityChanged(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Landroid/view/ViewRootImpl;->mView:Landroid/view/View;
 
@@ -13868,7 +13700,6 @@
 
 .method public handleDispatchCoverStateChanged(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Landroid/view/ViewRootImpl;->mView:Landroid/view/View;
 
@@ -13921,7 +13752,6 @@
 
 .method public handleDispatchSystemUiVisibilityChanged(Landroid/view/ViewRootImpl$SystemUiVisibilityInfo;)V
     .locals 4
-    .param p1    # Landroid/view/ViewRootImpl$SystemUiVisibilityInfo;
 
     iget v1, p0, Landroid/view/ViewRootImpl;->mSeq:I
 
@@ -14005,7 +13835,6 @@
 
 .method handleScreenStateChange(Z)V
     .locals 3
-    .param p1    # Z
 
     const/4 v1, 0x1
 
@@ -14068,8 +13897,6 @@
 
 .method public invalidateChild(Landroid/view/View;Landroid/graphics/Rect;)V
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/graphics/Rect;
 
     const/4 v0, 0x0
 
@@ -14080,8 +13907,6 @@
 
 .method public invalidateChildInParent([ILandroid/graphics/Rect;)Landroid/view/ViewParent;
     .locals 10
-    .param p1    # [I
-    .param p2    # Landroid/graphics/Rect;
 
     const/4 v5, 0x1
 
@@ -14282,7 +14107,6 @@
 
 .method invalidateWorld(Landroid/view/View;)V
     .locals 3
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p1}, Landroid/view/View;->invalidate()V
 
@@ -14373,9 +14197,6 @@
 
 .method public notifySubtreeAccessibilityStateChanged(Landroid/view/View;Landroid/view/View;I)V
     .locals 0
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/View;
-    .param p3    # I
 
     invoke-direct {p0, p2, p3}, Landroid/view/ViewRootImpl;->postSendWindowContentChangedCallback(Landroid/view/View;I)V
 
@@ -14384,7 +14205,6 @@
 
 .method public onHardwarePostDraw(Landroid/view/HardwareCanvas;)V
     .locals 4
-    .param p1    # Landroid/view/HardwareCanvas;
 
     iget-object v0, p0, Landroid/view/ViewRootImpl;->mResizeBuffer:Landroid/view/HardwareLayer;
 
@@ -14418,7 +14238,6 @@
 
 .method public onHardwarePreDraw(Landroid/view/HardwareCanvas;)V
     .locals 2
-    .param p1    # Landroid/view/HardwareCanvas;
 
     const/4 v0, 0x0
 
@@ -14435,7 +14254,6 @@
 
 .method outputDisplayList(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     iget-object v1, p0, Landroid/view/ViewRootImpl;->mAttachInfo:Landroid/view/View$AttachInfo;
 
@@ -14465,8 +14283,6 @@
 
 .method public performHapticFeedback(IZ)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Z
 
     :try_start_0
     iget-object v1, p0, Landroid/view/ViewRootImpl;->mWindowSession:Landroid/view/IWindowSession;
@@ -14492,7 +14308,6 @@
 
 .method public playSoundEffect(I)V
     .locals 5
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/view/ViewRootImpl;->checkThread()V
 
@@ -14644,7 +14459,6 @@
 
 .method pushHardwareLayerUpdate(Landroid/view/HardwareLayer;)V
     .locals 1
-    .param p1    # Landroid/view/HardwareLayer;
 
     iget-object v0, p0, Landroid/view/ViewRootImpl;->mAttachInfo:Landroid/view/View$AttachInfo;
 
@@ -14674,7 +14488,6 @@
 
 .method public recomputeViewAttributes(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p0}, Landroid/view/ViewRootImpl;->checkThread()V
 
@@ -14700,8 +14513,6 @@
 
 .method public requestChildFocus(Landroid/view/View;Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/View;
 
     invoke-virtual {p0}, Landroid/view/ViewRootImpl;->checkThread()V
 
@@ -14712,9 +14523,6 @@
 
 .method public requestChildRectangleOnScreen(Landroid/view/View;Landroid/graphics/Rect;Z)Z
     .locals 4
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/graphics/Rect;
-    .param p3    # Z
 
     invoke-virtual {p0, p2, p3}, Landroid/view/ViewRootImpl;->scrollToRectOrFocus(Landroid/graphics/Rect;Z)Z
 
@@ -14771,7 +14579,6 @@
 
 .method public requestDisallowInterceptTouchEvent(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
@@ -14811,7 +14618,6 @@
 
 .method requestLayoutDuringLayout(Landroid/view/View;)Z
     .locals 2
-    .param p1    # Landroid/view/View;
 
     const/4 v0, 0x1
 
@@ -14852,7 +14658,6 @@
 
 .method public requestOnStylusButtonEvent(Landroid/view/MotionEvent;)V
     .locals 2
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-object v0, p0, Landroid/view/ViewRootImpl;->mAttachInfo:Landroid/view/View$AttachInfo;
 
@@ -14867,8 +14672,6 @@
 
 .method public requestSendAccessibilityEvent(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)Z
     .locals 9
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/accessibility/AccessibilityEvent;
 
     const/4 v8, 0x0
 
@@ -14971,7 +14774,6 @@
 
 .method public requestTransitionStart(Landroid/animation/LayoutTransition;)V
     .locals 1
-    .param p1    # Landroid/animation/LayoutTransition;
 
     iget-object v0, p0, Landroid/view/ViewRootImpl;->mPendingTransitions:Ljava/util/ArrayList;
 
@@ -15007,7 +14809,6 @@
 
 .method public requestTransparentRegion(Landroid/view/View;)V
     .locals 2
-    .param p1    # Landroid/view/View;
 
     invoke-virtual {p0}, Landroid/view/ViewRootImpl;->checkThread()V
 
@@ -15039,7 +14840,6 @@
 
 .method public requestUpdateConfiguration(Landroid/content/res/Configuration;)V
     .locals 3
-    .param p1    # Landroid/content/res/Configuration;
 
     iget-object v1, p0, Landroid/view/ViewRootImpl;->mHandler:Landroid/view/ViewRootImpl$ViewRootHandler;
 
@@ -15122,8 +14922,6 @@
 
 .method scrollToRectOrFocus(Landroid/graphics/Rect;Z)Z
     .locals 11
-    .param p1    # Landroid/graphics/Rect;
-    .param p2    # Z
 
     const/4 v9, 0x0
 
@@ -15505,8 +15303,6 @@
 
 .method setAccessibilityFocus(Landroid/view/View;Landroid/view/accessibility/AccessibilityNodeInfo;)V
     .locals 7
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/accessibility/AccessibilityNodeInfo;
 
     const/4 v6, 0x0
 
@@ -15572,7 +15368,6 @@
 
 .method public setCurrentWritingBuddyView(Landroid/view/View;)V
     .locals 0
-    .param p1    # Landroid/view/View;
 
     iput-object p1, p0, Landroid/view/ViewRootImpl;->mCurrentWritingBuddyView:Landroid/view/View;
 
@@ -15581,7 +15376,6 @@
 
 .method public setDragFocus(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     iget-object v0, p0, Landroid/view/ViewRootImpl;->mCurrentDragView:Landroid/view/View;
 
@@ -15595,7 +15389,6 @@
 
 .method public setDrawDuringWindowsAnimating(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/view/ViewRootImpl;->mDrawDuringWindowsAnimating:Z
 
@@ -15609,8 +15402,6 @@
 
 .method setLayoutParams(Landroid/view/WindowManager$LayoutParams;Z)V
     .locals 5
-    .param p1    # Landroid/view/WindowManager$LayoutParams;
-    .param p2    # Z
 
     monitor-enter p0
 
@@ -15784,7 +15575,6 @@
 
 .method setLocalDragState(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     iput-object p1, p0, Landroid/view/ViewRootImpl;->mLocalDragState:Ljava/lang/Object;
 
@@ -15793,8 +15583,6 @@
 
 .method public setMultiWindowScale(FF)V
     .locals 3
-    .param p1    # F
-    .param p2    # F
 
     const/high16 v2, 0x3f800000
 
@@ -15866,7 +15654,6 @@
 
 .method setStopped(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-boolean v0, p0, Landroid/view/ViewRootImpl;->mStopped:Z
 
@@ -15884,8 +15671,6 @@
 
 .method setTranscloudFocus(Landroid/view/View;I)V
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     iget-object v0, p0, Landroid/view/ViewRootImpl;->mTranscloudFocusedHost:Landroid/view/View;
 
@@ -15905,7 +15690,6 @@
 
 .method public setTransparentRegion(Landroid/graphics/Region;)V
     .locals 2
-    .param p1    # Landroid/graphics/Region;
 
     :try_start_0
     iget-object v0, p0, Landroid/view/ViewRootImpl;->mWindowSession:Landroid/view/IWindowSession;
@@ -15927,7 +15711,6 @@
 
 .method public setUseGestureDetectorEx(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/view/ViewRootImpl;->mUseGestureDetectorTouchEventEx:Z
 
@@ -15936,9 +15719,6 @@
 
 .method public setView(Landroid/view/View;Landroid/view/WindowManager$LayoutParams;Landroid/view/View;)V
     .locals 23
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/WindowManager$LayoutParams;
-    .param p3    # Landroid/view/View;
 
     monitor-enter p0
 
@@ -17136,7 +16916,6 @@
 
 .method public showContextMenuForChild(Landroid/view/View;)Z
     .locals 1
-    .param p1    # Landroid/view/View;
 
     const/4 v0, 0x0
 
@@ -17145,8 +16924,6 @@
 
 .method public startActionModeForChild(Landroid/view/View;Landroid/view/ActionMode$Callback;)Landroid/view/ActionMode;
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/ActionMode$Callback;
 
     const/4 v0, 0x0
 
@@ -17155,8 +16932,6 @@
 
 .method public twProcessTwToolBox(Landroid/view/MotionEvent;I)Z
     .locals 6
-    .param p1    # Landroid/view/MotionEvent;
-    .param p2    # I
 
     const/4 v3, 0x0
 
@@ -17321,8 +17096,6 @@
 
 .method updateConfiguration(Landroid/content/res/Configuration;Z)V
     .locals 10
-    .param p1    # Landroid/content/res/Configuration;
-    .param p2    # Z
 
     const/4 v9, 0x1
 
@@ -17501,8 +17274,6 @@
 
 .method public windowFocusChanged(ZZ)V
     .locals 4
-    .param p1    # Z
-    .param p2    # Z
 
     const/4 v2, 0x1
 

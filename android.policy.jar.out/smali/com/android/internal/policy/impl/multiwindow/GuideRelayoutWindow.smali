@@ -144,13 +144,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/graphics/Rect;Landroid/graphics/Point;Landroid/graphics/Point;IILcom/android/internal/policy/impl/MultiPhoneWindow;)V
     .locals 8
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/graphics/Rect;
-    .param p3    # Landroid/graphics/Point;
-    .param p4    # Landroid/graphics/Point;
-    .param p5    # I
-    .param p6    # I
-    .param p7    # Lcom/android/internal/policy/impl/MultiPhoneWindow;
 
     invoke-direct {p0, p1}, Landroid/app/Dialog;-><init>(Landroid/content/Context;)V
 
@@ -686,7 +679,6 @@
 
 .method static synthetic access$1000(Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow;)I
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow;
 
     iget v0, p0, Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow;->mStatusBarHeight:I
 
@@ -695,7 +687,6 @@
 
 .method static synthetic access$1100(Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow;)I
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow;
 
     iget v0, p0, Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow;->mFreestyleStatusBarMargin_H:I
 
@@ -704,7 +695,6 @@
 
 .method static synthetic access$1200(Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow;)Landroid/graphics/Point;
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow;->mMaxSize:Landroid/graphics/Point;
 
@@ -713,7 +703,6 @@
 
 .method static synthetic access$700(Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow;)Landroid/view/WindowManager$LayoutParams;
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow;->mLayoutParam:Landroid/view/WindowManager$LayoutParams;
 
@@ -722,8 +711,6 @@
 
 .method static synthetic access$702(Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow;Landroid/view/WindowManager$LayoutParams;)Landroid/view/WindowManager$LayoutParams;
     .locals 0
-    .param p0    # Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow;
-    .param p1    # Landroid/view/WindowManager$LayoutParams;
 
     iput-object p1, p0, Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow;->mLayoutParam:Landroid/view/WindowManager$LayoutParams;
 
@@ -732,7 +719,6 @@
 
 .method static synthetic access$800(Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow;)Landroid/app/Activity;
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow;
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow;->mActivity:Landroid/app/Activity;
 
@@ -741,7 +727,6 @@
 
 .method static synthetic access$900(Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow;)I
     .locals 1
-    .param p0    # Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow;
 
     iget v0, p0, Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow;->mPaddingWidth:I
 
@@ -750,9 +735,6 @@
 
 .method private createNinePatch(Landroid/graphics/Bitmap;Landroid/content/res/Resources;I)Landroid/graphics/NinePatch;
     .locals 3
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # Landroid/content/res/Resources;
-    .param p3    # I
 
     invoke-direct {p0, p1}, Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow;->recycleBitmap(Landroid/graphics/Bitmap;)V
 
@@ -777,7 +759,6 @@
 
 .method private getWindowMode(Landroid/app/ActivityManager$RunningTaskInfo;)I
     .locals 3
-    .param p1    # Landroid/app/ActivityManager$RunningTaskInfo;
 
     :try_start_0
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -822,7 +803,6 @@
 
 .method private recycleBitmap(Landroid/graphics/Bitmap;)V
     .locals 0
-    .param p1    # Landroid/graphics/Bitmap;
 
     if-eqz p1, :cond_0
 
@@ -836,8 +816,6 @@
 
 .method private reviseWindowPosition(Landroid/graphics/Rect;Landroid/graphics/Point;)V
     .locals 4
-    .param p1    # Landroid/graphics/Rect;
-    .param p2    # Landroid/graphics/Point;
 
     const/16 v0, 0x12c
 
@@ -927,7 +905,6 @@
 
 .method private setNinePatchImg(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -1067,7 +1044,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 2
-    .param p1    # Landroid/view/MotionEvent;
 
     iget v0, p0, Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow;->mMode:I
 
@@ -1098,7 +1074,6 @@
 
 .method public setApplicationRect(Landroid/graphics/Rect;)V
     .locals 4
-    .param p1    # Landroid/graphics/Rect;
 
     if-eqz p1, :cond_0
 
@@ -1146,14 +1121,12 @@
 
 .method public setCaptureImage(Landroid/graphics/Bitmap;)V
     .locals 0
-    .param p1    # Landroid/graphics/Bitmap;
 
     return-void
 .end method
 
 .method public setMode(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow;->mMode:I
 
@@ -1162,8 +1135,6 @@
 
 .method public setMovePosition(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/multiwindow/GuideRelayoutWindow;->mTempRect:Landroid/graphics/Rect;
 

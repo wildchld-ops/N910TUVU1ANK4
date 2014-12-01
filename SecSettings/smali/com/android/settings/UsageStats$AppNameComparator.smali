@@ -66,8 +66,6 @@
 # virtual methods
 .method public final compare(Lcom/android/internal/os/PkgUsageStats;Lcom/android/internal/os/PkgUsageStats;)I
     .locals 4
-    .param p1    # Lcom/android/internal/os/PkgUsageStats;
-    .param p2    # Lcom/android/internal/os/PkgUsageStats;
 
     iget-object v2, p0, Lcom/android/settings/UsageStats$AppNameComparator;->mAppLabelList:Ljava/util/Map;
 
@@ -106,8 +104,6 @@
 
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p1, Lcom/android/internal/os/PkgUsageStats;
 

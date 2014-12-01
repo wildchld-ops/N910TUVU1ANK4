@@ -60,7 +60,6 @@
 
 .method static synthetic access$000(Lcom/android/mms/ui/CMASDialog_single_top;)Landroid/app/StatusBarManager;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/CMASDialog_single_top;
 
     iget-object v0, p0, Lcom/android/mms/ui/CMASDialog_single_top;->mStatusbarManager:Landroid/app/StatusBarManager;
 
@@ -69,7 +68,6 @@
 
 .method static synthetic access$100(Lcom/android/mms/ui/CMASDialog_single_top;)Landroid/net/Uri;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/CMASDialog_single_top;
 
     iget-object v0, p0, Lcom/android/mms/ui/CMASDialog_single_top;->messageUri:Landroid/net/Uri;
 
@@ -78,8 +76,6 @@
 
 .method static synthetic access$200(Lcom/android/mms/ui/CMASDialog_single_top;Landroid/net/Uri;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/CMASDialog_single_top;
-    .param p1    # Landroid/net/Uri;
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/CMASDialog_single_top;->markAsRead(Landroid/net/Uri;)V
 
@@ -88,8 +84,6 @@
 
 .method static synthetic access$302(Lcom/android/mms/ui/CMASDialog_single_top;Landroid/app/AlertDialog;)Landroid/app/AlertDialog;
     .locals 0
-    .param p0    # Lcom/android/mms/ui/CMASDialog_single_top;
-    .param p1    # Landroid/app/AlertDialog;
 
     iput-object p1, p0, Lcom/android/mms/ui/CMASDialog_single_top;->sDialog:Landroid/app/AlertDialog;
 
@@ -98,7 +92,6 @@
 
 .method static synthetic access$400(Lcom/android/mms/ui/CMASDialog_single_top;)Z
     .locals 1
-    .param p0    # Lcom/android/mms/ui/CMASDialog_single_top;
 
     invoke-direct {p0}, Lcom/android/mms/ui/CMASDialog_single_top;->checkLockScreenOn()Z
 
@@ -109,7 +102,6 @@
 
 .method static synthetic access$500(Lcom/android/mms/ui/CMASDialog_single_top;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/CMASDialog_single_top;
 
     invoke-direct {p0}, Lcom/android/mms/ui/CMASDialog_single_top;->launchMessage()V
 
@@ -118,7 +110,6 @@
 
 .method static synthetic access$600(Lcom/android/mms/ui/CMASDialog_single_top;)V
     .locals 0
-    .param p0    # Lcom/android/mms/ui/CMASDialog_single_top;
 
     invoke-direct {p0}, Lcom/android/mms/ui/CMASDialog_single_top;->showCMASUserPropmtDialog()V
 
@@ -127,7 +118,6 @@
 
 .method static synthetic access$702(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/mms/ui/CMASDialog_single_top;->inCall:Z
 
@@ -275,7 +265,6 @@
 
 .method private markAsRead(Landroid/net/Uri;)V
     .locals 5
-    .param p1    # Landroid/net/Uri;
 
     const/4 v4, 0x0
 
@@ -469,7 +458,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 14
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 

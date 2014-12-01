@@ -82,9 +82,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;II)V
     .locals 9
-    .param p1    # Landroid/content/Context;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v8, 0x1
 
@@ -375,7 +372,6 @@
 
 .method static synthetic access$000(Lcom/sec/android/visualeffect/expressme/gradientbar/GradientBarEffect;)I
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/expressme/gradientbar/GradientBarEffect;
 
     iget v0, p0, Lcom/sec/android/visualeffect/expressme/gradientbar/GradientBarEffect;->effectWidth:I
 
@@ -384,7 +380,6 @@
 
 .method static synthetic access$100(Lcom/sec/android/visualeffect/expressme/gradientbar/GradientBarEffect;)I
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/expressme/gradientbar/GradientBarEffect;
 
     iget v0, p0, Lcom/sec/android/visualeffect/expressme/gradientbar/GradientBarEffect;->effectHeight:I
 
@@ -393,7 +388,6 @@
 
 .method static synthetic access$200(Lcom/sec/android/visualeffect/expressme/gradientbar/GradientBarEffect;)Z
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/expressme/gradientbar/GradientBarEffect;
 
     iget-boolean v0, p0, Lcom/sec/android/visualeffect/expressme/gradientbar/GradientBarEffect;->isDrawing:Z
 
@@ -402,7 +396,6 @@
 
 .method static synthetic access$300(Lcom/sec/android/visualeffect/expressme/gradientbar/GradientBarEffect;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/expressme/gradientbar/GradientBarEffect;
 
     iget-object v0, p0, Lcom/sec/android/visualeffect/expressme/gradientbar/GradientBarEffect;->mHandler:Landroid/os/Handler;
 
@@ -788,7 +781,6 @@
 
 .method private drawBg(Landroid/graphics/Canvas;)V
     .locals 6
-    .param p1    # Landroid/graphics/Canvas;
 
     const/4 v1, 0x0
 
@@ -948,7 +940,6 @@
 
 .method private setXOffset(F)V
     .locals 4
-    .param p1    # F
 
     iget v3, p0, Lcom/sec/android/visualeffect/expressme/gradientbar/GradientBarEffect;->effectWidth:I
 
@@ -1040,7 +1031,6 @@
 
 .method public handleTouchEvent(Landroid/view/MotionEvent;)V
     .locals 4
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v2, 0x1
 
@@ -1130,7 +1120,6 @@
 
 .method protected onDraw(Landroid/graphics/Canvas;)V
     .locals 8
-    .param p1    # Landroid/graphics/Canvas;
 
     const-wide v4, 0x401921fb54442d18L
 
@@ -1216,7 +1205,6 @@
 
 .method public setColor(Lcom/sec/android/visualeffect/expressme/gradientbar/GradientBarEffect$CoverColor;)V
     .locals 4
-    .param p1    # Lcom/sec/android/visualeffect/expressme/gradientbar/GradientBarEffect$CoverColor;
 
     const/4 v3, 0x1
 

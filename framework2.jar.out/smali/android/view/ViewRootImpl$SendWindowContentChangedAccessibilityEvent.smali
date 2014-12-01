@@ -44,8 +44,6 @@
 
 .method synthetic constructor <init>(Landroid/view/ViewRootImpl;Landroid/view/ViewRootImpl$1;)V
     .locals 0
-    .param p1    # Landroid/view/ViewRootImpl;
-    .param p2    # Landroid/view/ViewRootImpl$1;
 
     invoke-direct {p0, p1}, Landroid/view/ViewRootImpl$SendWindowContentChangedAccessibilityEvent;-><init>(Landroid/view/ViewRootImpl;)V
 
@@ -118,8 +116,6 @@
 
 .method public runOrPost(Landroid/view/View;I)V
     .locals 9
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     iget-object v5, p0, Landroid/view/ViewRootImpl$SendWindowContentChangedAccessibilityEvent;->mSource:Landroid/view/View;
 

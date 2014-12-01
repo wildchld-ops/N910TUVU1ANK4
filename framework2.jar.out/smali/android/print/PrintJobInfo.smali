@@ -104,7 +104,6 @@
 
 .method private constructor <init>(Landroid/os/Parcel;)V
     .locals 7
-    .param p1    # Landroid/os/Parcel;
 
     const/4 v3, 0x1
 
@@ -251,8 +250,6 @@
 
 .method synthetic constructor <init>(Landroid/os/Parcel;Landroid/print/PrintJobInfo$1;)V
     .locals 0
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # Landroid/print/PrintJobInfo$1;
 
     invoke-direct {p0, p1}, Landroid/print/PrintJobInfo;-><init>(Landroid/os/Parcel;)V
 
@@ -261,7 +258,6 @@
 
 .method public constructor <init>(Landroid/print/PrintJobInfo;)V
     .locals 2
-    .param p1    # Landroid/print/PrintJobInfo;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -330,8 +326,6 @@
 
 .method static synthetic access$002(Landroid/print/PrintJobInfo;I)I
     .locals 0
-    .param p0    # Landroid/print/PrintJobInfo;
-    .param p1    # I
 
     iput p1, p0, Landroid/print/PrintJobInfo;->mCopies:I
 
@@ -340,8 +334,6 @@
 
 .method static synthetic access$102(Landroid/print/PrintJobInfo;Landroid/print/PrintAttributes;)Landroid/print/PrintAttributes;
     .locals 0
-    .param p0    # Landroid/print/PrintJobInfo;
-    .param p1    # Landroid/print/PrintAttributes;
 
     iput-object p1, p0, Landroid/print/PrintJobInfo;->mAttributes:Landroid/print/PrintAttributes;
 
@@ -350,8 +342,6 @@
 
 .method static synthetic access$202(Landroid/print/PrintJobInfo;[Landroid/print/PageRange;)[Landroid/print/PageRange;
     .locals 0
-    .param p0    # Landroid/print/PrintJobInfo;
-    .param p1    # [Landroid/print/PageRange;
 
     iput-object p1, p0, Landroid/print/PrintJobInfo;->mPageRanges:[Landroid/print/PageRange;
 
@@ -360,7 +350,6 @@
 
 .method static synthetic access$300(Landroid/print/PrintJobInfo;)Landroid/os/Bundle;
     .locals 1
-    .param p0    # Landroid/print/PrintJobInfo;
 
     iget-object v0, p0, Landroid/print/PrintJobInfo;->mAdvancedOptions:Landroid/os/Bundle;
 
@@ -369,8 +358,6 @@
 
 .method static synthetic access$302(Landroid/print/PrintJobInfo;Landroid/os/Bundle;)Landroid/os/Bundle;
     .locals 0
-    .param p0    # Landroid/print/PrintJobInfo;
-    .param p1    # Landroid/os/Bundle;
 
     iput-object p1, p0, Landroid/print/PrintJobInfo;->mAdvancedOptions:Landroid/os/Bundle;
 
@@ -379,7 +366,6 @@
 
 .method public static stateToString(I)Ljava/lang/String;
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -449,7 +435,6 @@
 
 .method public getAdvancedIntOption(Ljava/lang/String;)I
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/print/PrintJobInfo;->mAdvancedOptions:Landroid/os/Bundle;
 
@@ -480,7 +465,6 @@
 
 .method public getAdvancedStringOption(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/print/PrintJobInfo;->mAdvancedOptions:Landroid/os/Bundle;
 
@@ -607,7 +591,6 @@
 
 .method public hasAdvancedOption(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/print/PrintJobInfo;->mAdvancedOptions:Landroid/os/Bundle;
 
@@ -642,7 +625,6 @@
 
 .method public setAdvancedOptions(Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     iput-object p1, p0, Landroid/print/PrintJobInfo;->mAdvancedOptions:Landroid/os/Bundle;
 
@@ -651,7 +633,6 @@
 
 .method public setAppId(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/print/PrintJobInfo;->mAppId:I
 
@@ -660,7 +641,6 @@
 
 .method public setAttributes(Landroid/print/PrintAttributes;)V
     .locals 0
-    .param p1    # Landroid/print/PrintAttributes;
 
     iput-object p1, p0, Landroid/print/PrintJobInfo;->mAttributes:Landroid/print/PrintAttributes;
 
@@ -669,7 +649,6 @@
 
 .method public setCancelling(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/print/PrintJobInfo;->mCanceling:Z
 
@@ -678,7 +657,6 @@
 
 .method public setCopies(I)V
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -700,7 +678,6 @@
 
 .method public setCreationTime(J)V
     .locals 2
-    .param p1    # J
 
     const-wide/16 v0, 0x0
 
@@ -724,7 +701,6 @@
 
 .method public setDocumentInfo(Landroid/print/PrintDocumentInfo;)V
     .locals 0
-    .param p1    # Landroid/print/PrintDocumentInfo;
 
     iput-object p1, p0, Landroid/print/PrintJobInfo;->mDocumentInfo:Landroid/print/PrintDocumentInfo;
 
@@ -733,7 +709,6 @@
 
 .method public setId(Landroid/print/PrintJobId;)V
     .locals 0
-    .param p1    # Landroid/print/PrintJobId;
 
     iput-object p1, p0, Landroid/print/PrintJobInfo;->mId:Landroid/print/PrintJobId;
 
@@ -742,7 +717,6 @@
 
 .method public setLabel(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/print/PrintJobInfo;->mLabel:Ljava/lang/String;
 
@@ -751,7 +725,6 @@
 
 .method public setPages([Landroid/print/PageRange;)V
     .locals 0
-    .param p1    # [Landroid/print/PageRange;
 
     iput-object p1, p0, Landroid/print/PrintJobInfo;->mPageRanges:[Landroid/print/PageRange;
 
@@ -760,7 +733,6 @@
 
 .method public setPrinterId(Landroid/print/PrinterId;)V
     .locals 0
-    .param p1    # Landroid/print/PrinterId;
 
     iput-object p1, p0, Landroid/print/PrintJobInfo;->mPrinterId:Landroid/print/PrinterId;
 
@@ -769,7 +741,6 @@
 
 .method public setPrinterName(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/print/PrintJobInfo;->mPrinterName:Ljava/lang/String;
 
@@ -778,7 +749,6 @@
 
 .method public setState(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/print/PrintJobInfo;->mState:I
 
@@ -787,7 +757,6 @@
 
 .method public setStateReason(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/print/PrintJobInfo;->mStateReason:Ljava/lang/String;
 
@@ -796,7 +765,6 @@
 
 .method public setTag(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     iput-object p1, p0, Landroid/print/PrintJobInfo;->mTag:Ljava/lang/String;
 
@@ -1084,8 +1052,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 3
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     const/4 v0, 0x0
 

@@ -56,8 +56,6 @@
 
 .method public constructor <init>(Landroid/webkitsec/WebCoreThreadWatchdog;Landroid/content/Context;Landroid/os/Handler;)V
     .locals 0
-    .param p2    # Landroid/content/Context;
-    .param p3    # Landroid/os/Handler;
 
     iput-object p1, p0, Landroid/webkitsec/WebCoreThreadWatchdog$PageNotRespondingRunnable;->this$0:Landroid/webkitsec/WebCoreThreadWatchdog;
 
@@ -72,7 +70,6 @@
 
 .method static synthetic access$400(Landroid/webkitsec/WebCoreThreadWatchdog$PageNotRespondingRunnable;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Landroid/webkitsec/WebCoreThreadWatchdog$PageNotRespondingRunnable;
 
     iget-object v0, p0, Landroid/webkitsec/WebCoreThreadWatchdog$PageNotRespondingRunnable;->mWatchdogHandler:Landroid/os/Handler;
 

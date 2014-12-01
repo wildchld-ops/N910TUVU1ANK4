@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Lcom/android/settings/bluetooth/MapProfile;Lcom/android/settings/bluetooth/MapProfile$1;)V
     .locals 0
-    .param p1    # Lcom/android/settings/bluetooth/MapProfile;
-    .param p2    # Lcom/android/settings/bluetooth/MapProfile$1;
 
     invoke-direct {p0, p1}, Lcom/android/settings/bluetooth/MapProfile$MapServiceListener;-><init>(Lcom/android/settings/bluetooth/MapProfile;)V
 
@@ -46,8 +44,6 @@
 # virtual methods
 .method public onServiceConnected(ILandroid/bluetooth/BluetoothProfile;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Landroid/bluetooth/BluetoothProfile;
 
     # getter for: Lcom/android/settings/bluetooth/MapProfile;->V:Z
     invoke-static {}, Lcom/android/settings/bluetooth/MapProfile;->access$000()Z
@@ -82,7 +78,6 @@
 
 .method public onServiceDisconnected(I)V
     .locals 2
-    .param p1    # I
 
     # getter for: Lcom/android/settings/bluetooth/MapProfile;->V:Z
     invoke-static {}, Lcom/android/settings/bluetooth/MapProfile;->access$000()Z

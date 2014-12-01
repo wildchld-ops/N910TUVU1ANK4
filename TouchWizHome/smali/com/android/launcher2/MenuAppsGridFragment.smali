@@ -113,7 +113,6 @@
 
 .method static synthetic access$000(Lcom/android/launcher2/MenuAppsGridFragment;)Lcom/android/launcher2/MenuAppsGrid;
     .locals 1
-    .param p0    # Lcom/android/launcher2/MenuAppsGridFragment;
 
     iget-object v0, p0, Lcom/android/launcher2/MenuAppsGridFragment;->mAppsGrid:Lcom/android/launcher2/MenuAppsGrid;
 
@@ -122,7 +121,6 @@
 
 .method static synthetic access$100(Lcom/android/launcher2/MenuAppsGridFragment;)Lcom/android/launcher2/MenuAppsGrid$State;
     .locals 1
-    .param p0    # Lcom/android/launcher2/MenuAppsGridFragment;
 
     iget-object v0, p0, Lcom/android/launcher2/MenuAppsGridFragment;->mState:Lcom/android/launcher2/MenuAppsGrid$State;
 
@@ -131,7 +129,6 @@
 
 .method static synthetic access$200(Lcom/android/launcher2/MenuAppsGridFragment;)Lcom/android/launcher2/MenuView$ViewType;
     .locals 1
-    .param p0    # Lcom/android/launcher2/MenuAppsGridFragment;
 
     iget-object v0, p0, Lcom/android/launcher2/MenuAppsGridFragment;->mViewType:Lcom/android/launcher2/MenuView$ViewType;
 
@@ -140,8 +137,6 @@
 
 .method static synthetic access$202(Lcom/android/launcher2/MenuAppsGridFragment;Lcom/android/launcher2/MenuView$ViewType;)Lcom/android/launcher2/MenuView$ViewType;
     .locals 0
-    .param p0    # Lcom/android/launcher2/MenuAppsGridFragment;
-    .param p1    # Lcom/android/launcher2/MenuView$ViewType;
 
     iput-object p1, p0, Lcom/android/launcher2/MenuAppsGridFragment;->mViewType:Lcom/android/launcher2/MenuView$ViewType;
 
@@ -150,7 +145,6 @@
 
 .method static synthetic access$300(Lcom/android/launcher2/MenuAppsGridFragment;)Lcom/android/launcher2/MenuView;
     .locals 1
-    .param p0    # Lcom/android/launcher2/MenuAppsGridFragment;
 
     iget-object v0, p0, Lcom/android/launcher2/MenuAppsGridFragment;->mTabHost:Lcom/android/launcher2/MenuView;
 
@@ -159,7 +153,6 @@
 
 .method static synthetic access$400(Lcom/android/launcher2/MenuAppsGridFragment;)Landroid/os/Bundle;
     .locals 1
-    .param p0    # Lcom/android/launcher2/MenuAppsGridFragment;
 
     iget-object v0, p0, Lcom/android/launcher2/MenuAppsGridFragment;->mFolderBundle:Landroid/os/Bundle;
 
@@ -168,8 +161,6 @@
 
 .method static synthetic access$402(Lcom/android/launcher2/MenuAppsGridFragment;Landroid/os/Bundle;)Landroid/os/Bundle;
     .locals 0
-    .param p0    # Lcom/android/launcher2/MenuAppsGridFragment;
-    .param p1    # Landroid/os/Bundle;
 
     iput-object p1, p0, Lcom/android/launcher2/MenuAppsGridFragment;->mFolderBundle:Landroid/os/Bundle;
 
@@ -249,8 +240,6 @@
 
 .method private updatePinchListener(Lcom/android/launcher2/MenuView$ViewType;Lcom/android/launcher2/MenuAppsGrid$State;)V
     .locals 2
-    .param p1    # Lcom/android/launcher2/MenuView$ViewType;
-    .param p2    # Lcom/android/launcher2/MenuAppsGrid$State;
 
     iget-object v0, p0, Lcom/android/launcher2/MenuAppsGridFragment;->mPinchLayer:Lcom/android/launcher2/mainmenu/PinchLayerView;
 
@@ -355,7 +344,6 @@
 
 .method public changeState(Lcom/android/launcher2/MenuAppsGrid$State;)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/MenuAppsGrid$State;
 
     const/4 v0, 0x0
 
@@ -366,8 +354,6 @@
 
 .method public changeState(Lcom/android/launcher2/MenuAppsGrid$State;Z)V
     .locals 2
-    .param p1    # Lcom/android/launcher2/MenuAppsGrid$State;
-    .param p2    # Z
 
     iget-object v0, p0, Lcom/android/launcher2/MenuAppsGridFragment;->mState:Lcom/android/launcher2/MenuAppsGrid$State;
 
@@ -757,9 +743,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 7
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const/4 v6, 0x0
 
@@ -1013,7 +996,6 @@
 
 .method public onHideTab(Lcom/android/launcher2/MenuView;)V
     .locals 2
-    .param p1    # Lcom/android/launcher2/MenuView;
 
     iget-object v0, p0, Lcom/android/launcher2/MenuAppsGridFragment;->mAppsGrid:Lcom/android/launcher2/MenuAppsGrid;
 
@@ -1051,7 +1033,6 @@
 
 .method public onHomePressed(Z)Z
     .locals 9
-    .param p1    # Z
 
     const/4 v5, 0x1
 
@@ -1231,8 +1212,6 @@
 
 .method public onPageSwitch(Landroid/view/View;I)V
     .locals 2
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     const/4 v1, 0x1
 
@@ -1455,7 +1434,6 @@
 
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onSaveInstanceState(Landroid/os/Bundle;)V
 
@@ -1505,7 +1483,6 @@
 
 .method public onShowTab(Lcom/android/launcher2/MenuView;)V
     .locals 2
-    .param p1    # Lcom/android/launcher2/MenuView;
 
     if-eqz p1, :cond_1
 
@@ -1579,7 +1556,6 @@
 
 .method public setTabHost(Lcom/android/launcher2/MenuView;)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/MenuView;
 
     iput-object p1, p0, Lcom/android/launcher2/MenuAppsGridFragment;->mTabHost:Lcom/android/launcher2/MenuView;
 
@@ -1597,7 +1573,6 @@
 
 .method public setViewType(Lcom/android/launcher2/MenuView$ViewType;)V
     .locals 1
-    .param p1    # Lcom/android/launcher2/MenuView$ViewType;
 
     invoke-virtual {p0}, Lcom/android/launcher2/MenuAppsGridFragment;->getState()Lcom/android/launcher2/MenuAppsGrid$State;
 

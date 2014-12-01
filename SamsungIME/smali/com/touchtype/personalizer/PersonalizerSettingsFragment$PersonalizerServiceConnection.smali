@@ -40,8 +40,6 @@
 
 .method synthetic constructor <init>(Lcom/touchtype/personalizer/PersonalizerSettingsFragment;Lcom/touchtype/personalizer/PersonalizerSettingsFragment$1;)V
     .locals 0
-    .param p1    # Lcom/touchtype/personalizer/PersonalizerSettingsFragment;
-    .param p2    # Lcom/touchtype/personalizer/PersonalizerSettingsFragment$1;
 
     invoke-direct {p0, p1}, Lcom/touchtype/personalizer/PersonalizerSettingsFragment$PersonalizerServiceConnection;-><init>(Lcom/touchtype/personalizer/PersonalizerSettingsFragment;)V
 
@@ -74,8 +72,6 @@
 
 .method public onServiceConnected(Landroid/content/ComponentName;Landroid/os/IBinder;)V
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
-    .param p2    # Landroid/os/IBinder;
 
     const/4 v1, 0x1
 
@@ -103,7 +99,6 @@
 
 .method public onServiceDisconnected(Landroid/content/ComponentName;)V
     .locals 1
-    .param p1    # Landroid/content/ComponentName;
 
     const/4 v0, 0x0
 

@@ -47,7 +47,6 @@
 
 .method public onCameraError(I)V
     .locals 6
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -252,8 +251,6 @@
 
 .method public onCaptureStarted(IJ)V
     .locals 4
-    .param p1    # I
-    .param p2    # J
 
     iget-object v1, p0, Landroid/hardware/camera2/impl/CameraDevice$CameraDeviceCallbacks;->this$0:Landroid/hardware/camera2/impl/CameraDevice;
 
@@ -357,8 +354,6 @@
 
 .method public onResultReceived(ILandroid/hardware/camera2/impl/CameraMetadataNative;)V
     .locals 11
-    .param p1    # I
-    .param p2    # Landroid/hardware/camera2/impl/CameraMetadataNative;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

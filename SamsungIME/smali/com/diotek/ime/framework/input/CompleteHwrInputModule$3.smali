@@ -36,7 +36,6 @@
 # virtual methods
 .method public onEndAddStroke(Z)V
     .locals 8
-    .param p1    # Z
 
     const/16 v7, 0x7d7
 
@@ -172,7 +171,6 @@
 
 .method public onStartAddStroke(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method

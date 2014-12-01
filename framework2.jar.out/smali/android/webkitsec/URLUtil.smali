@@ -46,9 +46,6 @@
 
 .method public static composeSearchUrl(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 6
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -111,7 +108,6 @@
 
 .method public static decode([B)[B
     .locals 9
-    .param p0    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalArgumentException;
@@ -211,9 +207,6 @@
 
 .method public static final guessFileName(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 12
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/16 v11, 0x2f
 
@@ -462,7 +455,6 @@
 
 .method public static guessUrl(Ljava/lang/String;)Ljava/lang/String;
     .locals 5
-    .param p0    # Ljava/lang/String;
 
     move-object v1, p0
 
@@ -600,7 +592,6 @@
 
 .method public static isAboutUrl(Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     if-eqz p0, :cond_0
 
@@ -625,7 +616,6 @@
 
 .method public static isAssetUrl(Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     if-eqz p0, :cond_0
 
@@ -650,7 +640,6 @@
 
 .method public static isContentUrl(Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     if-eqz p0, :cond_0
 
@@ -675,7 +664,6 @@
 
 .method public static isCookielessProxyUrl(Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -702,7 +690,6 @@
 
 .method public static isDataUrl(Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     if-eqz p0, :cond_0
 
@@ -727,7 +714,6 @@
 
 .method public static isFileUrl(Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     if-eqz p0, :cond_0
 
@@ -768,7 +754,6 @@
 
 .method public static isHttpUrl(Ljava/lang/String;)Z
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -804,7 +789,6 @@
 
 .method public static isHttpsUrl(Ljava/lang/String;)Z
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -840,7 +824,6 @@
 
 .method public static isJavaScriptUrl(Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     if-eqz p0, :cond_0
 
@@ -865,7 +848,6 @@
 
 .method public static isNetworkUrl(Ljava/lang/String;)Z
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -902,7 +884,6 @@
 
 .method public static isResourceUrl(Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Ljava/lang/String;
 
     if-eqz p0, :cond_0
 
@@ -927,7 +908,6 @@
 
 .method public static isValidUrl(Ljava/lang/String;)Z
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -1000,7 +980,6 @@
 
 .method static parseContentDisposition(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     :try_start_0
     sget-object v1, Landroid/webkitsec/URLUtil;->CONTENT_DISPOSITION_PATTERN:Ljava/util/regex/Pattern;
@@ -1037,7 +1016,6 @@
 
 .method private static parseHex(B)I
     .locals 3
-    .param p0    # B
 
     const/16 v0, 0x30
 
@@ -1116,7 +1094,6 @@
 
 .method public static stripAnchor(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p0    # Ljava/lang/String;
 
     const/16 v1, 0x23
 
@@ -1140,7 +1117,6 @@
 
 .method static verifyURLEncoding(Ljava/lang/String;)Z
     .locals 6
-    .param p0    # Ljava/lang/String;
 
     const/16 v5, 0x25
 

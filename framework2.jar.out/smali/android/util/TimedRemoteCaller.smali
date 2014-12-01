@@ -43,7 +43,6 @@
 # direct methods
 .method public constructor <init>(J)V
     .locals 2
-    .param p1    # J
 
     const/4 v1, -0x1
 
@@ -66,7 +65,6 @@
 
 .method private waitForResultTimedLocked(I)Z
     .locals 8
-    .param p1    # I
 
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 
@@ -123,7 +121,6 @@
 # virtual methods
 .method public final getResultTimed(I)Ljava/lang/Object;
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)TT;"
@@ -229,7 +226,6 @@
 
 .method public final onRemoteMethodResult(Ljava/lang/Object;I)V
     .locals 2
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TT;I)V"

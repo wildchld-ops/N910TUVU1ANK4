@@ -23,8 +23,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/internal/location/ProviderRequest;Landroid/os/WorkSource;)V
     .locals 0
-    .param p1    # Lcom/android/internal/location/ProviderRequest;
-    .param p2    # Landroid/os/WorkSource;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

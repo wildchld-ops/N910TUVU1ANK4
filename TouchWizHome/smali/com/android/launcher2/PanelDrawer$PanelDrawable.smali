@@ -69,7 +69,6 @@
 # virtual methods
 .method public draw(Landroid/graphics/Canvas;)V
     .locals 8
-    .param p1    # Landroid/graphics/Canvas;
 
     iget-boolean v0, p0, Lcom/android/launcher2/PanelDrawer$PanelDrawable;->blockDraw:Z
 
@@ -182,7 +181,6 @@
 
 .method public getPadding(Landroid/graphics/Rect;)Z
     .locals 2
-    .param p1    # Landroid/graphics/Rect;
 
     const/16 v0, 0x14
 
@@ -208,7 +206,6 @@
 
 .method public onBoundsChange(Landroid/graphics/Rect;)V
     .locals 1
-    .param p1    # Landroid/graphics/Rect;
 
     iget-object v0, p0, Lcom/android/launcher2/PanelDrawer$PanelDrawable;->mBounds:Landroid/graphics/Rect;
 
@@ -219,7 +216,6 @@
 
 .method public setAlpha(I)V
     .locals 1
-    .param p1    # I
 
     iget v0, p0, Lcom/android/launcher2/PanelDrawer$PanelDrawable;->mAlpha:I
 
@@ -235,7 +231,6 @@
 
 .method public setBackgroundDarken(F)V
     .locals 1
-    .param p1    # F
 
     const/4 v0, 0x0
 
@@ -262,7 +257,6 @@
 
 .method public setBaseDarken(F)V
     .locals 1
-    .param p1    # F
 
     iget v0, p0, Lcom/android/launcher2/PanelDrawer$PanelDrawable;->mBaseDarken:F
 
@@ -280,7 +274,6 @@
 
 .method public setBlend(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-boolean v0, p0, Lcom/android/launcher2/PanelDrawer$PanelDrawable;->mBlend:Z
 
@@ -296,7 +289,6 @@
 
 .method public setColorFilter(Landroid/graphics/ColorFilter;)V
     .locals 0
-    .param p1    # Landroid/graphics/ColorFilter;
 
     return-void
 .end method

@@ -23,9 +23,6 @@
 # direct methods
 .method public constructor <init>(Ljava/io/FileDescriptor;Landroid/os/Looper;Landroid/os/ParcelFileDescriptor$OnCloseListener;)V
     .locals 1
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Landroid/os/Looper;
-    .param p3    # Landroid/os/ParcelFileDescriptor$OnCloseListener;
 
     invoke-direct {p0}, Ljava/lang/Thread;-><init>()V
 

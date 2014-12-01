@@ -14,8 +14,6 @@
 
 .method public static checkFlagsArgument(II)V
     .locals 3
-    .param p0    # I
-    .param p1    # I
 
     and-int v0, p0, p1
 
@@ -97,7 +95,6 @@
 
 .method public static checkNotNull(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 2
-    .param p1    # Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -126,7 +123,6 @@
 
 .method public static checkState(Z)V
     .locals 1
-    .param p0    # Z
 
     if-nez p0, :cond_0
 

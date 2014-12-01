@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Lcom/android/systemui/statusbar/phone/NavigationBarView;Lcom/android/systemui/statusbar/phone/NavigationBarView$1;)V
     .locals 0
-    .param p1    # Lcom/android/systemui/statusbar/phone/NavigationBarView;
-    .param p2    # Lcom/android/systemui/statusbar/phone/NavigationBarView$1;
 
     invoke-direct {p0, p1}, Lcom/android/systemui/statusbar/phone/NavigationBarView$H;-><init>(Lcom/android/systemui/statusbar/phone/NavigationBarView;)V
 
@@ -43,7 +41,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 10
-    .param p1    # Landroid/os/Message;
 
     iget v5, p1, Landroid/os/Message;->what:I
 

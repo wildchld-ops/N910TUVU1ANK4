@@ -61,8 +61,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/widget/Switch;)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/widget/Switch;
 
     const/4 v3, 0x0
 
@@ -159,8 +157,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/wifi/WifiEnabler;I)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/WifiEnabler;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/settings/wifi/WifiEnabler;->handleWifiStateChanged(I)V
 
@@ -169,7 +165,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/wifi/WifiEnabler;)Ljava/util/concurrent/atomic/AtomicBoolean;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiEnabler;
 
     iget-object v0, p0, Lcom/android/settings/wifi/WifiEnabler;->mConnected:Ljava/util/concurrent/atomic/AtomicBoolean;
 
@@ -178,8 +173,6 @@
 
 .method static synthetic access$1200(Lcom/android/settings/wifi/WifiEnabler;Z)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/WifiEnabler;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/settings/wifi/WifiEnabler;->setSwitchChecked(Z)V
 
@@ -188,8 +181,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/wifi/WifiEnabler;Landroid/net/NetworkInfo$DetailedState;)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/WifiEnabler;
-    .param p1    # Landroid/net/NetworkInfo$DetailedState;
 
     invoke-direct {p0, p1}, Lcom/android/settings/wifi/WifiEnabler;->handleStateChanged(Landroid/net/NetworkInfo$DetailedState;)V
 
@@ -198,8 +189,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/wifi/WifiEnabler;I)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/WifiEnabler;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/settings/wifi/WifiEnabler;->handleWifiApStateChanged(I)V
 
@@ -208,7 +197,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/wifi/WifiEnabler;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiEnabler;
 
     invoke-direct {p0}, Lcom/android/settings/wifi/WifiEnabler;->checkWifiTetheringAndDisable()Z
 
@@ -219,7 +207,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/wifi/WifiEnabler;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiEnabler;
 
     invoke-direct {p0}, Lcom/android/settings/wifi/WifiEnabler;->checkWifiDirectAndDisable()Z
 
@@ -230,7 +217,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/wifi/WifiEnabler;)Lcom/android/settings/wifi/WifiEnabler$SwitchHandler;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiEnabler;
 
     iget-object v0, p0, Lcom/android/settings/wifi/WifiEnabler;->mHandler:Lcom/android/settings/wifi/WifiEnabler$SwitchHandler;
 
@@ -239,8 +225,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/wifi/WifiEnabler;Z)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/WifiEnabler;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/settings/wifi/WifiEnabler;->setWifiEnable(Z)V
 
@@ -360,7 +344,6 @@
 
 .method private dismissDialog(I)V
     .locals 2
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -467,7 +450,6 @@
 
 .method private handleStateChanged(Landroid/net/NetworkInfo$DetailedState;)V
     .locals 2
-    .param p1    # Landroid/net/NetworkInfo$DetailedState;
 
     invoke-static {}, Landroid/util/GateConfig;->isGateEnabled()Z
 
@@ -502,7 +484,6 @@
 
 .method private handleWifiApStateChanged(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v2, 0x2
 
@@ -560,7 +541,6 @@
 
 .method private handleWifiStateChanged(I)V
     .locals 5
-    .param p1    # I
 
     const/4 v4, 0x1
 
@@ -685,8 +665,6 @@
 
 .method private onSwitchChanged(Landroid/widget/CompoundButton;Z)Z
     .locals 2
-    .param p1    # Landroid/widget/CompoundButton;
-    .param p2    # Z
 
     const/4 v0, 0x0
 
@@ -706,7 +684,6 @@
 
 .method private setSwitchChecked(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/settings/wifi/WifiEnabler;->mSwitch:Landroid/widget/Switch;
 
@@ -734,7 +711,6 @@
 
 .method private setWifiEnable(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/android/settings/wifi/WifiEnabler;->mWifiManager:Landroid/net/wifi/WifiManager;
 
@@ -782,8 +758,6 @@
 # virtual methods
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 4
-    .param p1    # Landroid/widget/CompoundButton;
-    .param p2    # Z
 
     const/4 v3, 0x2
 
@@ -1044,7 +1018,6 @@
 
 .method public setSwitch(Landroid/widget/Switch;)V
     .locals 7
-    .param p1    # Landroid/widget/Switch;
 
     const/4 v4, 0x1
 

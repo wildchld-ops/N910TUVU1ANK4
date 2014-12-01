@@ -44,7 +44,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/fingerprint/PaypalPayment;)V
     .locals 0
-    .param p0    # Lcom/android/settings/fingerprint/PaypalPayment;
 
     invoke-direct {p0}, Lcom/android/settings/fingerprint/PaypalPayment;->updateActivity()V
 
@@ -175,7 +174,6 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 8
-    .param p1    # Landroid/view/View;
 
     iget-object v6, p0, Lcom/android/settings/fingerprint/PaypalPayment;->mInstallButton:Landroid/widget/Button;
 
@@ -251,9 +249,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 3
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const v1, 0x7f0400c7
 

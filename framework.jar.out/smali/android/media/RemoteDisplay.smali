@@ -46,8 +46,6 @@
 
 .method private constructor <init>(Landroid/media/RemoteDisplay$Listener;Landroid/os/Handler;)V
     .locals 1
-    .param p1    # Landroid/media/RemoteDisplay$Listener;
-    .param p2    # Landroid/os/Handler;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -77,7 +75,6 @@
 
 .method static synthetic access$000(Landroid/media/RemoteDisplay;)Landroid/media/RemoteDisplay$Listener;
     .locals 1
-    .param p0    # Landroid/media/RemoteDisplay;
 
     iget-object v0, p0, Landroid/media/RemoteDisplay;->mListener:Landroid/media/RemoteDisplay$Listener;
 
@@ -94,8 +91,6 @@
 
 .method private cbFromNativeWFD(ILjava/lang/String;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/media/RemoteDisplay;->mHandler:Landroid/os/Handler;
 
@@ -110,7 +105,6 @@
 
 .method private dispose(Z)V
     .locals 1
-    .param p1    # Z
 
     iget v0, p0, Landroid/media/RemoteDisplay;->mPtr:I
 
@@ -149,10 +143,6 @@
 
 .method public static listen(Ljava/lang/String;Landroid/media/RemoteDisplay$Listener;Landroid/os/Handler;Ljava/lang/String;)Landroid/media/RemoteDisplay;
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Landroid/media/RemoteDisplay$Listener;
-    .param p2    # Landroid/os/Handler;
-    .param p3    # Ljava/lang/String;
 
     if-nez p0, :cond_0
 
@@ -219,11 +209,6 @@
 
 .method private notifyDisplayConnected(Landroid/view/Surface;IIII)V
     .locals 8
-    .param p1    # Landroid/view/Surface;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     iget-object v7, p0, Landroid/media/RemoteDisplay;->mHandler:Landroid/os/Handler;
 
@@ -264,7 +249,6 @@
 
 .method private notifyDisplayError(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Landroid/media/RemoteDisplay;->mHandler:Landroid/os/Handler;
 
@@ -279,8 +263,6 @@
 
 .method public static setParam(ILjava/lang/String;)I
     .locals 4
-    .param p0    # I
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Landroid/media/RemoteDisplay;->nativeSetParam(Ljava/lang/String;)I
 
@@ -313,8 +295,6 @@
 
 .method private startListening(Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2}, Landroid/media/RemoteDisplay;->nativeListen(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -439,7 +419,6 @@
 
 .method public setDeviceName(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     sget-object v0, Landroid/media/RemoteDisplay;->mRemoteDisplayCallback:Landroid/media/RemoteDisplayCallback;
 

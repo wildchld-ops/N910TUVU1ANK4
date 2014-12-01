@@ -46,7 +46,6 @@
 
 .method public setRunning(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/input/InputModule$Timer;->mRunning:Z
 

@@ -107,7 +107,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/mirrorlink/MirrorLink;)Lcom/mirrorlink/android/service/IMirrorlinkManager;
     .locals 1
-    .param p0    # Lcom/android/settings/mirrorlink/MirrorLink;
 
     iget-object v0, p0, Lcom/android/settings/mirrorlink/MirrorLink;->mservice:Lcom/mirrorlink/android/service/IMirrorlinkManager;
 
@@ -116,8 +115,6 @@
 
 .method static synthetic access$002(Lcom/android/settings/mirrorlink/MirrorLink;Lcom/mirrorlink/android/service/IMirrorlinkManager;)Lcom/mirrorlink/android/service/IMirrorlinkManager;
     .locals 0
-    .param p0    # Lcom/android/settings/mirrorlink/MirrorLink;
-    .param p1    # Lcom/mirrorlink/android/service/IMirrorlinkManager;
 
     iput-object p1, p0, Lcom/android/settings/mirrorlink/MirrorLink;->mservice:Lcom/mirrorlink/android/service/IMirrorlinkManager;
 
@@ -126,7 +123,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/mirrorlink/MirrorLink;)Lcom/android/settings/mirrorlink/MirrorLink$MirrorlinkListener;
     .locals 1
-    .param p0    # Lcom/android/settings/mirrorlink/MirrorLink;
 
     iget-object v0, p0, Lcom/android/settings/mirrorlink/MirrorLink;->mMirrorlinkListener:Lcom/android/settings/mirrorlink/MirrorLink$MirrorlinkListener;
 
@@ -135,8 +131,6 @@
 
 .method static synthetic access$102(Lcom/android/settings/mirrorlink/MirrorLink;Lcom/android/settings/mirrorlink/MirrorLink$MirrorlinkListener;)Lcom/android/settings/mirrorlink/MirrorLink$MirrorlinkListener;
     .locals 0
-    .param p0    # Lcom/android/settings/mirrorlink/MirrorLink;
-    .param p1    # Lcom/android/settings/mirrorlink/MirrorLink$MirrorlinkListener;
 
     iput-object p1, p0, Lcom/android/settings/mirrorlink/MirrorLink;->mMirrorlinkListener:Lcom/android/settings/mirrorlink/MirrorLink$MirrorlinkListener;
 
@@ -145,7 +139,6 @@
 
 .method static synthetic access$1100(Lcom/android/settings/mirrorlink/MirrorLink;)Ljava/util/List;
     .locals 1
-    .param p0    # Lcom/android/settings/mirrorlink/MirrorLink;
 
     iget-object v0, p0, Lcom/android/settings/mirrorlink/MirrorLink;->mListDevices:Ljava/util/List;
 
@@ -154,7 +147,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/mirrorlink/MirrorLink;)V
     .locals 0
-    .param p0    # Lcom/android/settings/mirrorlink/MirrorLink;
 
     invoke-direct {p0}, Lcom/android/settings/mirrorlink/MirrorLink;->updateMirrorLinkApplications()V
 
@@ -163,10 +155,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/mirrorlink/MirrorLink;[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/android/settings/mirrorlink/MirrorLink;
-    .param p1    # [Ljava/lang/String;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # [Ljava/lang/String;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/settings/mirrorlink/MirrorLink;->updateState([Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;)V
 
@@ -175,8 +163,6 @@
 
 .method static synthetic access$502(Lcom/android/settings/mirrorlink/MirrorLink;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/mirrorlink/MirrorLink;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/mirrorlink/MirrorLink;->mMassStorageActive:Z
 
@@ -185,7 +171,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/mirrorlink/MirrorLink;)V
     .locals 0
-    .param p0    # Lcom/android/settings/mirrorlink/MirrorLink;
 
     invoke-direct {p0}, Lcom/android/settings/mirrorlink/MirrorLink;->updateState()V
 
@@ -194,7 +179,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/mirrorlink/MirrorLink;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/mirrorlink/MirrorLink;
 
     iget-boolean v0, p0, Lcom/android/settings/mirrorlink/MirrorLink;->mUsbConnected:Z
 
@@ -203,8 +187,6 @@
 
 .method static synthetic access$702(Lcom/android/settings/mirrorlink/MirrorLink;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/mirrorlink/MirrorLink;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/mirrorlink/MirrorLink;->mUsbConnected:Z
 
@@ -213,7 +195,6 @@
 
 .method static synthetic access$800(Lcom/android/settings/mirrorlink/MirrorLink;)Landroid/content/ContentResolver;
     .locals 1
-    .param p0    # Lcom/android/settings/mirrorlink/MirrorLink;
 
     invoke-virtual {p0}, Lcom/android/settings/SettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -224,8 +205,6 @@
 
 .method static synthetic access$902(Lcom/android/settings/mirrorlink/MirrorLink;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/mirrorlink/MirrorLink;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/mirrorlink/MirrorLink;->mTetheringEnabled:Z
 
@@ -284,7 +263,6 @@
 
 .method private setNcmTethering(Z)V
     .locals 10
-    .param p1    # Z
 
     const/4 v5, 0x1
 
@@ -421,7 +399,6 @@
 
 .method private startProvisioningIfNecessary(I)V
     .locals 5
-    .param p1    # I
 
     const/4 v4, 0x0
 
@@ -1014,9 +991,6 @@
 
 .method private updateState([Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;)V
     .locals 0
-    .param p1    # [Ljava/lang/String;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # [Ljava/lang/String;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/settings/mirrorlink/MirrorLink;->updateUsbState([Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;)V
 
@@ -1025,9 +999,6 @@
 
 .method private updateUsbState([Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;)V
     .locals 23
-    .param p1    # [Ljava/lang/String;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # [Ljava/lang/String;
 
     const-string v19, "connectivity"
 
@@ -1962,7 +1933,6 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v0, 0x1
 
@@ -1975,9 +1945,6 @@
 
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const/4 v2, -0x1
 
@@ -2007,7 +1974,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 6
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v4, 0x1
 
@@ -2147,8 +2113,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
     .locals 0
-    .param p1    # Landroid/view/Menu;
-    .param p2    # Landroid/view/MenuInflater;
 
     invoke-super {p0, p1, p2}, Lcom/android/settings/SettingsPreferenceFragment;->onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
 
@@ -2173,7 +2137,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 3
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -2234,8 +2197,6 @@
 
 .method public onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
     .locals 9
-    .param p1    # Landroid/preference/PreferenceScreen;
-    .param p2    # Landroid/preference/Preference;
 
     const/4 v6, 0x0
 

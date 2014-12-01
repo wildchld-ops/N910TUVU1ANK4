@@ -32,7 +32,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -43,8 +42,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v2, 0x1
 
@@ -296,7 +293,6 @@
 
 .method public onDraw(Landroid/graphics/Canvas;)V
     .locals 1
-    .param p1    # Landroid/graphics/Canvas;
 
     invoke-virtual {p0}, Landroid/view/View;->getWidth()I
 
@@ -374,7 +370,6 @@
 
 .method public onHoverEvent(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-super {p0, p1}, Landroid/view/View;->onHoverEvent(Landroid/view/MotionEvent;)Z
 
@@ -385,7 +380,6 @@
 
 .method public onInterceptTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-boolean v0, p0, Lcom/android/internal/widget/ActionBarContainer;->mIsTransitioning:Z
 
@@ -411,11 +405,6 @@
 
 .method public onLayout(ZIIII)V
     .locals 13
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     invoke-super/range {p0 .. p5}, Landroid/widget/FrameLayout;->onLayout(ZIIII)V
 
@@ -663,8 +652,6 @@
 
 .method public onMeasure(II)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
 
     invoke-super {p0, p1, p2}, Landroid/widget/FrameLayout;->onMeasure(II)V
 
@@ -762,7 +749,6 @@
 
 .method public onResolveDrawables(I)V
     .locals 1
-    .param p1    # I
 
     invoke-super {p0, p1}, Landroid/view/View;->onResolveDrawables(I)V
 
@@ -798,7 +784,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 1
-    .param p1    # Landroid/view/MotionEvent;
 
     invoke-super {p0, p1}, Landroid/view/View;->onTouchEvent(Landroid/view/MotionEvent;)Z
 
@@ -809,7 +794,6 @@
 
 .method public setPrimaryBackground(Landroid/graphics/drawable/Drawable;)V
     .locals 7
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     const/4 v0, 0x1
 
@@ -907,7 +891,6 @@
 
 .method public setScrollingTabExtended(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/internal/widget/ActionBarContainer;->mIsAppliedScrollingTabExtended:Z
 
@@ -916,7 +899,6 @@
 
 .method public setSplitBackground(Landroid/graphics/drawable/Drawable;)V
     .locals 5
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     const/4 v0, 0x1
 
@@ -1002,7 +984,6 @@
 
 .method public setStackedBackground(Landroid/graphics/drawable/Drawable;)V
     .locals 7
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     const/4 v0, 0x1
 
@@ -1104,7 +1085,6 @@
 
 .method public setTabContainer(Lcom/android/internal/widget/ScrollingTabContainerView;)V
     .locals 2
-    .param p1    # Lcom/android/internal/widget/ScrollingTabContainerView;
 
     iget-object v1, p0, Lcom/android/internal/widget/ActionBarContainer;->mTabContainer:Landroid/view/View;
 
@@ -1143,7 +1123,6 @@
 
 .method public setTransitioning(Z)V
     .locals 1
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/internal/widget/ActionBarContainer;->mIsTransitioning:Z
 
@@ -1164,7 +1143,6 @@
 
 .method public setVisibility(I)V
     .locals 6
-    .param p1    # I
 
     const/4 v4, 0x0
 
@@ -1302,8 +1280,6 @@
 
 .method public startActionModeForChild(Landroid/view/View;Landroid/view/ActionMode$Callback;)Landroid/view/ActionMode;
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/view/ActionMode$Callback;
 
     const/4 v0, 0x0
 
@@ -1320,7 +1296,6 @@
 
 .method public twPutTabsOnTop(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/internal/widget/ActionBarContainer;->mIsTabOnTop:Z
 
@@ -1329,7 +1304,6 @@
 
 .method protected verifyDrawable(Landroid/graphics/drawable/Drawable;)Z
     .locals 1
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     iget-object v0, p0, Lcom/android/internal/widget/ActionBarContainer;->mBackground:Landroid/graphics/drawable/Drawable;
 

@@ -36,7 +36,6 @@
 # virtual methods
 .method public updateQuota(J)V
     .locals 2
-    .param p1    # J
 
     iget-object v0, p0, Landroid/webkitsec/WebViewCore$1;->this$0:Landroid/webkitsec/WebViewCore;
 

@@ -179,8 +179,6 @@
 
 .method public constructor <init>(Landroid/net/IConnectivityManager;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Landroid/net/IConnectivityManager;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -209,7 +207,6 @@
 
 .method public static from(Landroid/content/Context;)Landroid/net/ConnectivityManager;
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     const-string v0, "connectivity"
 
@@ -224,7 +221,6 @@
 
 .method public static getNetworkTypeName(I)Ljava/lang/String;
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -400,7 +396,6 @@
 
 .method public static isNetworkTypeExempt(I)Z
     .locals 1
-    .param p0    # I
 
     sparse-switch p0, :sswitch_data_0
 
@@ -427,7 +422,6 @@
 
 .method public static isNetworkTypeMobile(I)Z
     .locals 1
-    .param p0    # I
 
     packed-switch p0, :pswitch_data_0
 
@@ -481,7 +475,6 @@
 
 .method public static isNetworkTypeValid(I)Z
     .locals 1
-    .param p0    # I
 
     if-ltz p0, :cond_0
 
@@ -512,7 +505,6 @@
 
 .method public static isNetworkTypeValidEx(I)Z
     .locals 1
-    .param p0    # I
 
     invoke-static {p0}, Landroid/net/ConnectivityManager;->isNetworkTypeValid(I)Z
 
@@ -523,7 +515,6 @@
 
 .method public static isNetworkTypeWifi(I)Z
     .locals 1
-    .param p0    # I
 
     sparse-switch p0, :sswitch_data_0
 
@@ -550,7 +541,6 @@
 # virtual methods
 .method public captivePortalCheckComplete(Landroid/net/NetworkInfo;)V
     .locals 1
-    .param p1    # Landroid/net/NetworkInfo;
 
     :try_start_0
     iget-object v0, p0, Landroid/net/ConnectivityManager;->mService:Landroid/net/IConnectivityManager;
@@ -570,8 +560,6 @@
 
 .method public captivePortalCheckCompleted(Landroid/net/NetworkInfo;Z)V
     .locals 1
-    .param p1    # Landroid/net/NetworkInfo;
-    .param p2    # Z
 
     :try_start_0
     iget-object v0, p0, Landroid/net/ConnectivityManager;->mService:Landroid/net/IConnectivityManager;
@@ -591,7 +579,6 @@
 
 .method public checkMobileProvisioning(I)I
     .locals 2
-    .param p1    # I
 
     const/4 v0, -0x1
 
@@ -718,7 +705,6 @@
 
 .method public getActiveNetworkInfoForUid(I)Landroid/net/NetworkInfo;
     .locals 2
-    .param p1    # I
 
     :try_start_0
     iget-object v1, p0, Landroid/net/ConnectivityManager;->mService:Landroid/net/IConnectivityManager;
@@ -890,7 +876,6 @@
 
 .method public getLastTetherError(Ljava/lang/String;)I
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     iget-object v1, p0, Landroid/net/ConnectivityManager;->mService:Landroid/net/IConnectivityManager;
@@ -914,7 +899,6 @@
 
 .method public getLinkProperties(I)Landroid/net/LinkProperties;
     .locals 2
-    .param p1    # I
 
     :try_start_0
     iget-object v1, p0, Landroid/net/ConnectivityManager;->mService:Landroid/net/IConnectivityManager;
@@ -938,7 +922,6 @@
 
 .method public getLinkQualityInfo(I)Landroid/net/LinkQualityInfo;
     .locals 3
-    .param p1    # I
 
     :try_start_0
     iget-object v2, p0, Landroid/net/ConnectivityManager;->mService:Landroid/net/IConnectivityManager;
@@ -985,7 +968,6 @@
 
 .method public getMobileDataEnabledEx(I)Z
     .locals 2
-    .param p1    # I
 
     :try_start_0
     iget-object v1, p0, Landroid/net/ConnectivityManager;->mService:Landroid/net/IConnectivityManager;
@@ -1055,7 +1037,6 @@
 
 .method public getNetworkInfo(I)Landroid/net/NetworkInfo;
     .locals 2
-    .param p1    # I
 
     :try_start_0
     iget-object v1, p0, Landroid/net/ConnectivityManager;->mService:Landroid/net/IConnectivityManager;
@@ -1298,7 +1279,6 @@
 
 .method public getUidsForApnType(Ljava/lang/String;)[I
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     iget-object v1, p0, Landroid/net/ConnectivityManager;->mService:Landroid/net/IConnectivityManager;
@@ -1322,7 +1302,6 @@
 
 .method public getUsersForEnterpriseNetwork(I)[I
     .locals 2
-    .param p1    # I
 
     :try_start_0
     iget-object v1, p0, Landroid/net/ConnectivityManager;->mService:Landroid/net/IConnectivityManager;
@@ -1369,7 +1348,6 @@
 
 .method public isEntApnEnabled(I)Z
     .locals 2
-    .param p1    # I
 
     :try_start_0
     iget-object v1, p0, Landroid/net/ConnectivityManager;->mService:Landroid/net/IConnectivityManager;
@@ -1416,7 +1394,6 @@
 
 .method public isNetworkSupported(I)Z
     .locals 1
-    .param p1    # I
 
     :try_start_0
     iget-object v0, p0, Landroid/net/ConnectivityManager;->mService:Landroid/net/IConnectivityManager;
@@ -1486,8 +1463,6 @@
 
 .method public removeRouteToHostAddress(ILjava/net/InetAddress;)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Ljava/net/InetAddress;
 
     invoke-virtual {p2}, Ljava/net/InetAddress;->getAddress()[B
 
@@ -1517,8 +1492,6 @@
 
 .method public reportInetCondition(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     :try_start_0
     iget-object v0, p0, Landroid/net/ConnectivityManager;->mService:Landroid/net/IConnectivityManager;
@@ -1538,7 +1511,6 @@
 
 .method public requestNetworkTransitionWakelock(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     iget-object v1, p0, Landroid/net/ConnectivityManager;->mService:Landroid/net/IConnectivityManager;
@@ -1562,8 +1534,6 @@
 
 .method public requestRouteToHost(II)Z
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     invoke-static {p2}, Landroid/net/NetworkUtils;->intToInetAddress(I)Ljava/net/InetAddress;
 
@@ -1586,8 +1556,6 @@
 
 .method public requestRouteToHostAddress(ILjava/net/InetAddress;)Z
     .locals 4
-    .param p1    # I
-    .param p2    # Ljava/net/InetAddress;
 
     invoke-virtual {p2}, Ljava/net/InetAddress;->getAddress()[B
 
@@ -1617,7 +1585,6 @@
 
 .method public saveDhcpServerConfiguration(Landroid/net/DhcpServerConfiguration;)Z
     .locals 2
-    .param p1    # Landroid/net/DhcpServerConfiguration;
 
     :try_start_0
     iget-object v1, p0, Landroid/net/ConnectivityManager;->mService:Landroid/net/IConnectivityManager;
@@ -1641,7 +1608,6 @@
 
 .method public setAirplaneMode(Z)V
     .locals 1
-    .param p1    # Z
 
     :try_start_0
     iget-object v0, p0, Landroid/net/ConnectivityManager;->mService:Landroid/net/IConnectivityManager;
@@ -1661,7 +1627,6 @@
 
 .method public setBackgroundDataSetting(Z)V
     .locals 0
-    .param p1    # Z
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -1670,8 +1635,6 @@
 
 .method public setDataDependency(IZ)V
     .locals 1
-    .param p1    # I
-    .param p2    # Z
 
     :try_start_0
     iget-object v0, p0, Landroid/net/ConnectivityManager;->mService:Landroid/net/IConnectivityManager;
@@ -1691,7 +1654,6 @@
 
 .method public setGlobalProxy(Landroid/net/ProxyProperties;)V
     .locals 1
-    .param p1    # Landroid/net/ProxyProperties;
 
     :try_start_0
     iget-object v0, p0, Landroid/net/ConnectivityManager;->mService:Landroid/net/IConnectivityManager;
@@ -1711,7 +1673,6 @@
 
 .method public setMobileDataEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     :try_start_0
     iget-object v0, p0, Landroid/net/ConnectivityManager;->mService:Landroid/net/IConnectivityManager;
@@ -1731,8 +1692,6 @@
 
 .method public setMobileDataEnabledEx(ZI)V
     .locals 1
-    .param p1    # Z
-    .param p2    # I
 
     :try_start_0
     iget-object v0, p0, Landroid/net/ConnectivityManager;->mService:Landroid/net/IConnectivityManager;
@@ -1752,7 +1711,6 @@
 
 .method public setNcmTethering(Z)I
     .locals 2
-    .param p1    # Z
 
     :try_start_0
     iget-object v1, p0, Landroid/net/ConnectivityManager;->mService:Landroid/net/IConnectivityManager;
@@ -1776,7 +1734,6 @@
 
 .method public setNetworkPreference(I)V
     .locals 1
-    .param p1    # I
 
     :try_start_0
     iget-object v0, p0, Landroid/net/ConnectivityManager;->mService:Landroid/net/IConnectivityManager;
@@ -1796,10 +1753,6 @@
 
 .method public setProvisioningNotificationVisible(ZILjava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     :try_start_0
     iget-object v0, p0, Landroid/net/ConnectivityManager;->mService:Landroid/net/IConnectivityManager;
@@ -1819,8 +1772,6 @@
 
 .method public setRadio(IZ)Z
     .locals 2
-    .param p1    # I
-    .param p2    # Z
 
     :try_start_0
     iget-object v1, p0, Landroid/net/ConnectivityManager;->mService:Landroid/net/IConnectivityManager;
@@ -1844,7 +1795,6 @@
 
 .method public setRadios(Z)Z
     .locals 2
-    .param p1    # Z
 
     :try_start_0
     iget-object v1, p0, Landroid/net/ConnectivityManager;->mService:Landroid/net/IConnectivityManager;
@@ -1868,7 +1818,6 @@
 
 .method public setUsbTethering(Z)I
     .locals 2
-    .param p1    # Z
 
     :try_start_0
     iget-object v1, p0, Landroid/net/ConnectivityManager;->mService:Landroid/net/IConnectivityManager;
@@ -1892,8 +1841,6 @@
 
 .method public startUsingNetworkFeature(ILjava/lang/String;)I
     .locals 3
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     :try_start_0
     iget-object v1, p0, Landroid/net/ConnectivityManager;->mService:Landroid/net/IConnectivityManager;
@@ -1921,8 +1868,6 @@
 
 .method public stopUsingNetworkFeature(ILjava/lang/String;)I
     .locals 2
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     :try_start_0
     iget-object v1, p0, Landroid/net/ConnectivityManager;->mService:Landroid/net/IConnectivityManager;
@@ -1946,8 +1891,6 @@
 
 .method public supplyMessenger(ILandroid/os/Messenger;)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/os/Messenger;
 
     :try_start_0
     iget-object v0, p0, Landroid/net/ConnectivityManager;->mService:Landroid/net/IConnectivityManager;
@@ -1967,9 +1910,6 @@
 
 .method public supplyMessenger(ILandroid/os/Messenger;I)V
     .locals 1
-    .param p1    # I
-    .param p2    # Landroid/os/Messenger;
-    .param p3    # I
 
     :try_start_0
     iget-object v0, p0, Landroid/net/ConnectivityManager;->mService:Landroid/net/IConnectivityManager;
@@ -1989,7 +1929,6 @@
 
 .method public tether(Ljava/lang/String;)I
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     iget-object v1, p0, Landroid/net/ConnectivityManager;->mService:Landroid/net/IConnectivityManager;
@@ -2013,7 +1952,6 @@
 
 .method public untether(Ljava/lang/String;)I
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     :try_start_0
     iget-object v1, p0, Landroid/net/ConnectivityManager;->mService:Landroid/net/IConnectivityManager;

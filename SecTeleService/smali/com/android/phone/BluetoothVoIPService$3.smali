@@ -56,7 +56,7 @@
 
     const/4 v3, 0x0
 
-    invoke-virtual {v1, v2, v3}, Landroid/content/ContextWrapper;->enforceCallingOrSelfPermission(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v1, v2, v3}, Lcom/android/phone/BluetoothVoIPService;->enforceCallingOrSelfPermission(Ljava/lang/String;Ljava/lang/String;)V
 
     :try_start_0
     iget-object v1, p0, Lcom/android/phone/BluetoothVoIPService$3;->voipInf:Landroid/os/IVoIPInterface;
@@ -130,7 +130,7 @@
 
     const/4 v3, 0x0
 
-    invoke-virtual {v1, v2, v3}, Landroid/content/ContextWrapper;->enforceCallingOrSelfPermission(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v1, v2, v3}, Lcom/android/phone/BluetoothVoIPService;->enforceCallingOrSelfPermission(Ljava/lang/String;Ljava/lang/String;)V
 
     iget-object v1, p0, Lcom/android/phone/BluetoothVoIPService$3;->this$0:Lcom/android/phone/BluetoothVoIPService;
 
@@ -170,7 +170,7 @@
 
     const/4 v3, 0x0
 
-    invoke-virtual {v1, v2, v3}, Landroid/content/ContextWrapper;->enforceCallingOrSelfPermission(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v1, v2, v3}, Lcom/android/phone/BluetoothVoIPService;->enforceCallingOrSelfPermission(Ljava/lang/String;Ljava/lang/String;)V
 
     iget-object v1, p0, Lcom/android/phone/BluetoothVoIPService$3;->this$0:Lcom/android/phone/BluetoothVoIPService;
 
@@ -274,7 +274,7 @@
 
     const-string v3, "android.permission.MODIFY_PHONE_STATE"
 
-    invoke-virtual {v2, v3, v1}, Landroid/content/ContextWrapper;->enforceCallingOrSelfPermission(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v2, v3, v1}, Lcom/android/phone/BluetoothVoIPService;->enforceCallingOrSelfPermission(Ljava/lang/String;Ljava/lang/String;)V
 
     const/4 v0, 0x0
 
@@ -479,7 +479,7 @@
 
     const-string v3, "android.permission.MODIFY_PHONE_STATE"
 
-    invoke-virtual {v2, v3, v1}, Landroid/content/ContextWrapper;->enforceCallingOrSelfPermission(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v2, v3, v1}, Lcom/android/phone/BluetoothVoIPService;->enforceCallingOrSelfPermission(Ljava/lang/String;Ljava/lang/String;)V
 
     const/4 v0, 0x0
 
@@ -553,7 +553,7 @@
 
     const/4 v3, 0x0
 
-    invoke-virtual {v1, v2, v3}, Landroid/content/ContextWrapper;->enforceCallingOrSelfPermission(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v1, v2, v3}, Lcom/android/phone/BluetoothVoIPService;->enforceCallingOrSelfPermission(Ljava/lang/String;Ljava/lang/String;)V
 
     const-string v1, "shiks"
 
@@ -597,7 +597,7 @@
 
     const/4 v3, 0x0
 
-    invoke-virtual {v1, v2, v3}, Landroid/content/ContextWrapper;->enforceCallingOrSelfPermission(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v1, v2, v3}, Lcom/android/phone/BluetoothVoIPService;->enforceCallingOrSelfPermission(Ljava/lang/String;Ljava/lang/String;)V
 
     :try_start_0
     iget-object v1, p0, Lcom/android/phone/BluetoothVoIPService$3;->voipInf:Landroid/os/IVoIPInterface;
@@ -738,7 +738,7 @@
 
     const/4 v3, 0x0
 
-    invoke-virtual {v1, v2, v3}, Landroid/content/ContextWrapper;->enforceCallingOrSelfPermission(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v1, v2, v3}, Lcom/android/phone/BluetoothVoIPService;->enforceCallingOrSelfPermission(Ljava/lang/String;Ljava/lang/String;)V
 
     iget-object v1, p0, Lcom/android/phone/BluetoothVoIPService$3;->this$0:Lcom/android/phone/BluetoothVoIPService;
 
@@ -781,7 +781,7 @@
 
     const/4 v7, 0x0
 
-    invoke-virtual {v5, v6, v7}, Landroid/content/ContextWrapper;->enforceCallingOrSelfPermission(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v5, v6, v7}, Lcom/android/phone/BluetoothVoIPService;->enforceCallingOrSelfPermission(Ljava/lang/String;Ljava/lang/String;)V
 
     iget-object v5, p0, Lcom/android/phone/BluetoothVoIPService$3;->this$0:Lcom/android/phone/BluetoothVoIPService;
 
@@ -1299,7 +1299,7 @@
 
     const/4 v3, 0x0
 
-    invoke-virtual {v1, v2, v3}, Landroid/content/ContextWrapper;->enforceCallingOrSelfPermission(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v1, v2, v3}, Lcom/android/phone/BluetoothVoIPService;->enforceCallingOrSelfPermission(Ljava/lang/String;Ljava/lang/String;)V
 
     iget-object v1, p0, Lcom/android/phone/BluetoothVoIPService$3;->this$0:Lcom/android/phone/BluetoothVoIPService;
 
@@ -1340,7 +1340,7 @@
 
     const/4 v3, 0x0
 
-    invoke-virtual {v1, v2, v3}, Landroid/content/ContextWrapper;->enforceCallingOrSelfPermission(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v1, v2, v3}, Lcom/android/phone/BluetoothVoIPService;->enforceCallingOrSelfPermission(Ljava/lang/String;Ljava/lang/String;)V
 
     const-string v1, "BluetoothVoIPService"
 
@@ -1360,7 +1360,7 @@
 
     const/4 v2, 0x0
 
-    invoke-virtual {v0, v1, v2}, Landroid/content/ContextWrapper;->enforceCallingOrSelfPermission(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Lcom/android/phone/BluetoothVoIPService;->enforceCallingOrSelfPermission(Ljava/lang/String;Ljava/lang/String;)V
 
     # getter for: Lcom/android/phone/BluetoothVoIPService;->VDBG:Z
     invoke-static {}, Lcom/android/phone/BluetoothVoIPService;->access$100()Z

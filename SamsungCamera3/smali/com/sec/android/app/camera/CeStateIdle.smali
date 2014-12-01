@@ -10,9 +10,6 @@
 # direct methods
 .method public constructor <init>(Lcom/sec/android/app/camera/CommonEngine;Lcom/sec/android/app/camera/CeRequestQueue;I)V
     .locals 0
-    .param p1    # Lcom/sec/android/app/camera/CommonEngine;
-    .param p2    # Lcom/sec/android/app/camera/CeRequestQueue;
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Lcom/sec/android/app/camera/AbstractCeState;-><init>(Lcom/sec/android/app/camera/CommonEngine;Lcom/sec/android/app/camera/CeRequestQueue;I)V
 
@@ -23,14 +20,12 @@
 # virtual methods
 .method public cancelRequest(Lcom/sec/android/app/camera/CeRequest;)V
     .locals 0
-    .param p1    # Lcom/sec/android/app/camera/CeRequest;
 
     return-void
 .end method
 
 .method public handleMessage(Landroid/os/Message;)V
     .locals 3
-    .param p1    # Landroid/os/Message;
 
     const-string v0, "CeStateIdle"
 
@@ -90,7 +85,6 @@
 
 .method public handleRequest(Lcom/sec/android/app/camera/CeRequest;)Z
     .locals 4
-    .param p1    # Lcom/sec/android/app/camera/CeRequest;
 
     const/4 v1, 0x1
 

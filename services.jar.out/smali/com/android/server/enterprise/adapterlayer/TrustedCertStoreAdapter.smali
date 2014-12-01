@@ -69,7 +69,6 @@
 # virtual methods
 .method public deleteCertificateEntry(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/security/cert/CertificateException;,
@@ -86,7 +85,6 @@
 
 .method public findIssuer(Ljava/security/cert/X509Certificate;)V
     .locals 1
-    .param p1    # Ljava/security/cert/X509Certificate;
 
     sget-object v0, Lcom/android/server/enterprise/adapterlayer/TrustedCertStoreAdapter;->mTrustCertStore:Lcom/android/org/conscrypt/TrustedCertificateStore;
 
@@ -97,7 +95,6 @@
 
 .method public installCertificate(Ljava/security/cert/X509Certificate;)V
     .locals 1
-    .param p1    # Ljava/security/cert/X509Certificate;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/security/cert/CertificateException;,

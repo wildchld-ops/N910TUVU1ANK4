@@ -128,7 +128,6 @@
 
 .method static synthetic access$000(Lcom/siso/ime/framework/touchmodal/TouchModalManager;)I
     .locals 1
-    .param p0    # Lcom/siso/ime/framework/touchmodal/TouchModalManager;
 
     iget v0, p0, Lcom/siso/ime/framework/touchmodal/TouchModalManager;->grid_mode:I
 
@@ -137,8 +136,6 @@
 
 .method static synthetic access$002(Lcom/siso/ime/framework/touchmodal/TouchModalManager;I)I
     .locals 0
-    .param p0    # Lcom/siso/ime/framework/touchmodal/TouchModalManager;
-    .param p1    # I
 
     iput p1, p0, Lcom/siso/ime/framework/touchmodal/TouchModalManager;->grid_mode:I
 
@@ -147,7 +144,6 @@
 
 .method static synthetic access$100(Lcom/siso/ime/framework/touchmodal/TouchModalManager;)I
     .locals 1
-    .param p0    # Lcom/siso/ime/framework/touchmodal/TouchModalManager;
 
     iget v0, p0, Lcom/siso/ime/framework/touchmodal/TouchModalManager;->grid_layoutType:I
 
@@ -156,8 +152,6 @@
 
 .method static synthetic access$102(Lcom/siso/ime/framework/touchmodal/TouchModalManager;I)I
     .locals 0
-    .param p0    # Lcom/siso/ime/framework/touchmodal/TouchModalManager;
-    .param p1    # I
 
     iput p1, p0, Lcom/siso/ime/framework/touchmodal/TouchModalManager;->grid_layoutType:I
 
@@ -166,7 +160,6 @@
 
 .method static synthetic access$200(Lcom/siso/ime/framework/touchmodal/TouchModalManager;)I
     .locals 1
-    .param p0    # Lcom/siso/ime/framework/touchmodal/TouchModalManager;
 
     iget v0, p0, Lcom/siso/ime/framework/touchmodal/TouchModalManager;->grid_lang:I
 
@@ -175,8 +168,6 @@
 
 .method static synthetic access$202(Lcom/siso/ime/framework/touchmodal/TouchModalManager;I)I
     .locals 0
-    .param p0    # Lcom/siso/ime/framework/touchmodal/TouchModalManager;
-    .param p1    # I
 
     iput p1, p0, Lcom/siso/ime/framework/touchmodal/TouchModalManager;->grid_lang:I
 
@@ -185,7 +176,6 @@
 
 .method static synthetic access$300(Lcom/siso/ime/framework/touchmodal/TouchModalManager;)I
     .locals 1
-    .param p0    # Lcom/siso/ime/framework/touchmodal/TouchModalManager;
 
     iget v0, p0, Lcom/siso/ime/framework/touchmodal/TouchModalManager;->grid_nKeys:I
 
@@ -194,8 +184,6 @@
 
 .method static synthetic access$302(Lcom/siso/ime/framework/touchmodal/TouchModalManager;I)I
     .locals 0
-    .param p0    # Lcom/siso/ime/framework/touchmodal/TouchModalManager;
-    .param p1    # I
 
     iput p1, p0, Lcom/siso/ime/framework/touchmodal/TouchModalManager;->grid_nKeys:I
 
@@ -212,7 +200,6 @@
 
 .method static synthetic access$500(Lcom/siso/ime/framework/touchmodal/TouchModalManager;)Z
     .locals 1
-    .param p0    # Lcom/siso/ime/framework/touchmodal/TouchModalManager;
 
     iget-boolean v0, p0, Lcom/siso/ime/framework/touchmodal/TouchModalManager;->isGridInvalidated:Z
 
@@ -221,8 +208,6 @@
 
 .method static synthetic access$502(Lcom/siso/ime/framework/touchmodal/TouchModalManager;Z)Z
     .locals 0
-    .param p0    # Lcom/siso/ime/framework/touchmodal/TouchModalManager;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/siso/ime/framework/touchmodal/TouchModalManager;->isGridInvalidated:Z
 
@@ -231,7 +216,6 @@
 
 .method static synthetic access$600(Lcom/siso/ime/framework/touchmodal/TouchModalManager;)Ljava/util/concurrent/atomic/AtomicInteger;
     .locals 1
-    .param p0    # Lcom/siso/ime/framework/touchmodal/TouchModalManager;
 
     iget-object v0, p0, Lcom/siso/ime/framework/touchmodal/TouchModalManager;->isGridReady:Ljava/util/concurrent/atomic/AtomicInteger;
 
@@ -278,13 +262,6 @@
 
 .method public dump(IIIZIII)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Z
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
 
     iget-object v2, p0, Lcom/siso/ime/framework/touchmodal/TouchModalManager;->isGridReady:Ljava/util/concurrent/atomic/AtomicInteger;
 
@@ -341,10 +318,6 @@
 
 .method public getKeyIndex(IIZ[Lcom/diotek/ime/framework/view/Keyboard$Key;)I
     .locals 5
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # [Lcom/diotek/ime/framework/view/Keyboard$Key;
 
     const/4 v2, -0x1
 
@@ -545,15 +518,6 @@
 
 .method public gridInitStart(Lcom/diotek/ime/framework/view/DefaultKeyboard;IIIIIIZI)V
     .locals 3
-    .param p1    # Lcom/diotek/ime/framework/view/DefaultKeyboard;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
-    .param p8    # Z
-    .param p9    # I
 
     iget-object v2, p0, Lcom/siso/ime/framework/touchmodal/TouchModalManager;->isGridReady:Ljava/util/concurrent/atomic/AtomicInteger;
 
@@ -698,8 +662,6 @@
 
 .method public setParameter(ZZ)V
     .locals 1
-    .param p1    # Z
-    .param p2    # Z
 
     iget-object v0, p0, Lcom/siso/ime/framework/touchmodal/TouchModalManager;->data:Lcom/siso/ime/framework/touchmodal/TouchModalDataStructure;
 
@@ -710,9 +672,6 @@
 
 .method public update(III)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     iget-object v0, p0, Lcom/siso/ime/framework/touchmodal/TouchModalManager;->mHandler:Landroid/os/Handler;
 
@@ -739,9 +698,6 @@
 
 .method public updateGrid(III)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
 
     iget-object v0, p0, Lcom/siso/ime/framework/touchmodal/TouchModalManager;->data:Lcom/siso/ime/framework/touchmodal/TouchModalDataStructure;
 

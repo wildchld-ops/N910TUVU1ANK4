@@ -40,8 +40,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/os/ILEDManager;)V
     .locals 0
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/ILEDManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -56,7 +54,6 @@
 # virtual methods
 .method public getLED(I)Landroid/os/LEDManager$LED;
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x4
 

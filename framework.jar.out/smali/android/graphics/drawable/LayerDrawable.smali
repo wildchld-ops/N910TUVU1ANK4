@@ -50,8 +50,6 @@
 
 .method constructor <init>(Landroid/graphics/drawable/LayerDrawable$LayerState;Landroid/content/res/Resources;)V
     .locals 2
-    .param p1    # Landroid/graphics/drawable/LayerDrawable$LayerState;
-    .param p2    # Landroid/content/res/Resources;
 
     invoke-direct {p0}, Landroid/graphics/drawable/Drawable;-><init>()V
 
@@ -83,7 +81,6 @@
 
 .method public constructor <init>([Landroid/graphics/drawable/Drawable;)V
     .locals 1
-    .param p1    # [Landroid/graphics/drawable/Drawable;
 
     const/4 v0, 0x0
 
@@ -94,8 +91,6 @@
 
 .method constructor <init>([Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/LayerDrawable$LayerState;)V
     .locals 6
-    .param p1    # [Landroid/graphics/drawable/Drawable;
-    .param p2    # Landroid/graphics/drawable/LayerDrawable$LayerState;
 
     const/4 v3, 0x0
 
@@ -160,12 +155,6 @@
 
 .method private addLayer(Landroid/graphics/drawable/Drawable;IIIII)V
     .locals 8
-    .param p1    # Landroid/graphics/drawable/Drawable;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
 
     const/4 v5, 0x0
 
@@ -296,8 +285,6 @@
 
 .method private reapplyPadding(ILandroid/graphics/drawable/LayerDrawable$ChildDrawable;)Z
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/graphics/drawable/LayerDrawable$ChildDrawable;
 
     iget-object v0, p0, Landroid/graphics/drawable/LayerDrawable;->mTmpRect:Landroid/graphics/Rect;
 
@@ -377,8 +364,6 @@
 # virtual methods
 .method createConstantState(Landroid/graphics/drawable/LayerDrawable$LayerState;Landroid/content/res/Resources;)Landroid/graphics/drawable/LayerDrawable$LayerState;
     .locals 1
-    .param p1    # Landroid/graphics/drawable/LayerDrawable$LayerState;
-    .param p2    # Landroid/content/res/Resources;
 
     new-instance v0, Landroid/graphics/drawable/LayerDrawable$LayerState;
 
@@ -389,7 +374,6 @@
 
 .method public draw(Landroid/graphics/Canvas;)V
     .locals 4
-    .param p1    # Landroid/graphics/Canvas;
 
     iget-object v3, p0, Landroid/graphics/drawable/LayerDrawable;->mLayerState:Landroid/graphics/drawable/LayerDrawable$LayerState;
 
@@ -420,7 +404,6 @@
 
 .method public findDrawableByLayerId(I)Landroid/graphics/drawable/Drawable;
     .locals 3
-    .param p1    # I
 
     iget-object v2, p0, Landroid/graphics/drawable/LayerDrawable;->mLayerState:Landroid/graphics/drawable/LayerDrawable$LayerState;
 
@@ -547,7 +530,6 @@
 
 .method public getDrawable(I)Landroid/graphics/drawable/Drawable;
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/graphics/drawable/LayerDrawable;->mLayerState:Landroid/graphics/drawable/LayerDrawable$LayerState;
 
@@ -562,7 +544,6 @@
 
 .method public getId(I)I
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Landroid/graphics/drawable/LayerDrawable;->mLayerState:Landroid/graphics/drawable/LayerDrawable$LayerState;
 
@@ -743,7 +724,6 @@
 
 .method public getPadding(Landroid/graphics/Rect;)Z
     .locals 5
-    .param p1    # Landroid/graphics/Rect;
 
     const/4 v3, 0x0
 
@@ -824,9 +804,6 @@
 
 .method public inflate(Landroid/content/res/Resources;Lorg/xmlpull/v1/XmlPullParser;Landroid/util/AttributeSet;)V
     .locals 16
-    .param p1    # Landroid/content/res/Resources;
-    .param p2    # Lorg/xmlpull/v1/XmlPullParser;
-    .param p3    # Landroid/util/AttributeSet;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -1062,7 +1039,6 @@
 
 .method public invalidateDrawable(Landroid/graphics/drawable/Drawable;)V
     .locals 1
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {p0}, Landroid/graphics/drawable/LayerDrawable;->getCallback()Landroid/graphics/drawable/Drawable$Callback;
 
@@ -1158,7 +1134,6 @@
 
 .method protected onBoundsChange(Landroid/graphics/Rect;)V
     .locals 14
-    .param p1    # Landroid/graphics/Rect;
 
     iget-object v8, p0, Landroid/graphics/drawable/LayerDrawable;->mLayerState:Landroid/graphics/drawable/LayerDrawable$LayerState;
 
@@ -1253,7 +1228,6 @@
 
 .method protected onLevelChange(I)Z
     .locals 7
-    .param p1    # I
 
     iget-object v6, p0, Landroid/graphics/drawable/LayerDrawable;->mLayerState:Landroid/graphics/drawable/LayerDrawable$LayerState;
 
@@ -1313,7 +1287,6 @@
 
 .method protected onStateChange([I)Z
     .locals 7
-    .param p1    # [I
 
     iget-object v6, p0, Landroid/graphics/drawable/LayerDrawable;->mLayerState:Landroid/graphics/drawable/LayerDrawable$LayerState;
 
@@ -1373,9 +1346,6 @@
 
 .method public scheduleDrawable(Landroid/graphics/drawable/Drawable;Ljava/lang/Runnable;J)V
     .locals 1
-    .param p1    # Landroid/graphics/drawable/Drawable;
-    .param p2    # Ljava/lang/Runnable;
-    .param p3    # J
 
     invoke-virtual {p0}, Landroid/graphics/drawable/LayerDrawable;->getCallback()Landroid/graphics/drawable/Drawable$Callback;
 
@@ -1391,7 +1361,6 @@
 
 .method public setAlpha(I)V
     .locals 4
-    .param p1    # I
 
     iget-object v3, p0, Landroid/graphics/drawable/LayerDrawable;->mLayerState:Landroid/graphics/drawable/LayerDrawable$LayerState;
 
@@ -1422,7 +1391,6 @@
 
 .method public setAutoMirrored(Z)V
     .locals 4
-    .param p1    # Z
 
     iget-object v3, p0, Landroid/graphics/drawable/LayerDrawable;->mLayerState:Landroid/graphics/drawable/LayerDrawable$LayerState;
 
@@ -1458,7 +1426,6 @@
 
 .method public setColorFilter(Landroid/graphics/ColorFilter;)V
     .locals 4
-    .param p1    # Landroid/graphics/ColorFilter;
 
     iget-object v3, p0, Landroid/graphics/drawable/LayerDrawable;->mLayerState:Landroid/graphics/drawable/LayerDrawable$LayerState;
 
@@ -1489,7 +1456,6 @@
 
 .method public setDither(Z)V
     .locals 4
-    .param p1    # Z
 
     iget-object v3, p0, Landroid/graphics/drawable/LayerDrawable;->mLayerState:Landroid/graphics/drawable/LayerDrawable$LayerState;
 
@@ -1520,8 +1486,6 @@
 
 .method public setDrawableByLayerId(ILandroid/graphics/drawable/Drawable;)Z
     .locals 5
-    .param p1    # I
-    .param p2    # Landroid/graphics/drawable/Drawable;
 
     iget-object v3, p0, Landroid/graphics/drawable/LayerDrawable;->mLayerState:Landroid/graphics/drawable/LayerDrawable$LayerState;
 
@@ -1597,8 +1561,6 @@
 
 .method public setId(II)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
 
     iget-object v0, p0, Landroid/graphics/drawable/LayerDrawable;->mLayerState:Landroid/graphics/drawable/LayerDrawable$LayerState;
 
@@ -1613,11 +1575,6 @@
 
 .method public setLayerInset(IIIII)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # I
 
     iget-object v1, p0, Landroid/graphics/drawable/LayerDrawable;->mLayerState:Landroid/graphics/drawable/LayerDrawable$LayerState;
 
@@ -1638,7 +1595,6 @@
 
 .method public setLayoutDirection(I)V
     .locals 4
-    .param p1    # I
 
     iget-object v3, p0, Landroid/graphics/drawable/LayerDrawable;->mLayerState:Landroid/graphics/drawable/LayerDrawable$LayerState;
 
@@ -1671,7 +1627,6 @@
 
 .method public setOpacity(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/graphics/drawable/LayerDrawable;->mOpacityOverride:I
 
@@ -1680,8 +1635,6 @@
 
 .method public setVisible(ZZ)Z
     .locals 5
-    .param p1    # Z
-    .param p2    # Z
 
     invoke-super {p0, p1, p2}, Landroid/graphics/drawable/Drawable;->setVisible(ZZ)Z
 
@@ -1716,8 +1669,6 @@
 
 .method public unscheduleDrawable(Landroid/graphics/drawable/Drawable;Ljava/lang/Runnable;)V
     .locals 1
-    .param p1    # Landroid/graphics/drawable/Drawable;
-    .param p2    # Ljava/lang/Runnable;
 
     invoke-virtual {p0}, Landroid/graphics/drawable/LayerDrawable;->getCallback()Landroid/graphics/drawable/Drawable$Callback;
 

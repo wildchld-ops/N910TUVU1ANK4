@@ -132,7 +132,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -149,7 +148,6 @@
 
 .method private escapeCharacters(Ljava/lang/String;)Ljava/lang/String;
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -253,7 +251,6 @@
 
 .method private foldingString(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -308,7 +305,6 @@
 
 .method private unfoldingString(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -363,7 +359,6 @@
 
 .method private vMessageBodyContent(Lcom/android/mms/ui/MessageItem;)Ljava/lang/String;
     .locals 9
-    .param p1    # Lcom/android/mms/ui/MessageItem;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -563,7 +558,6 @@
 
 .method private vMessageBodyProperties(Lcom/android/mms/ui/MessageItem;)Ljava/lang/String;
     .locals 6
-    .param p1    # Lcom/android/mms/ui/MessageItem;
 
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -667,7 +661,6 @@
 
 .method private vMessageContent(Lcom/android/mms/ui/MessageItem;)Ljava/lang/String;
     .locals 3
-    .param p1    # Lcom/android/mms/ui/MessageItem;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -708,7 +701,6 @@
 
 .method private vMessageEnvelope(Lcom/android/mms/ui/MessageItem;)Ljava/lang/String;
     .locals 3
-    .param p1    # Lcom/android/mms/ui/MessageItem;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -755,7 +747,6 @@
 
 .method private vMessageNestedEnvelope(Lcom/android/mms/ui/MessageItem;)Ljava/lang/String;
     .locals 3
-    .param p1    # Lcom/android/mms/ui/MessageItem;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -796,7 +787,6 @@
 
 .method private vMessageObject(Lcom/android/mms/ui/MessageItem;)Ljava/lang/String;
     .locals 8
-    .param p1    # Lcom/android/mms/ui/MessageItem;
 
     const/4 v7, 0x3
 
@@ -1031,7 +1021,6 @@
 
 .method private vMessageOriginator(Lcom/android/mms/ui/MessageItem;)Ljava/lang/String;
     .locals 10
-    .param p1    # Lcom/android/mms/ui/MessageItem;
 
     const/4 v6, 0x0
 
@@ -1138,7 +1127,6 @@
 
 .method private vMessageRecipient(Lcom/android/mms/ui/MessageItem;)Ljava/lang/String;
     .locals 14
-    .param p1    # Lcom/android/mms/ui/MessageItem;
 
     new-instance v8, Ljava/lang/StringBuilder;
 
@@ -1310,7 +1298,6 @@
 # virtual methods
 .method public checkPrefix(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -1575,7 +1562,6 @@
 
 .method public createVMessage(Lcom/android/mms/ui/MessageItem;)Ljava/lang/String;
     .locals 2
-    .param p1    # Lcom/android/mms/ui/MessageItem;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1600,7 +1586,6 @@
 
 .method public readFileFromSDCard1(Ljava/io/File;)Ljava/util/ArrayList;
     .locals 16
-    .param p1    # Ljava/io/File;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2227,7 +2212,6 @@
 
 .method public readFileFromSDCard2(Ljava/io/File;)Lcom/android/mms/ui/MsgItem;
     .locals 20
-    .param p1    # Ljava/io/File;
 
     const/4 v14, 0x0
 
@@ -3057,7 +3041,6 @@
 
 .method public readStreamFromViewer1(Ljava/io/InputStream;)Ljava/util/ArrayList;
     .locals 12
-    .param p1    # Ljava/io/InputStream;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -3300,7 +3283,6 @@
 
 .method public readStreamFromViewer2(Ljava/io/InputStream;)Lcom/android/mms/ui/MsgItem;
     .locals 14
-    .param p1    # Ljava/io/InputStream;
 
     const/4 v11, 0x0
 
@@ -3649,7 +3631,6 @@
 
 .method public vMessageDateParsing(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const-string v1, ":"
 
@@ -3671,7 +3652,6 @@
 
 .method public vMessageMsgTypeParsing(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const-string v1, ":"
 
@@ -3693,7 +3673,6 @@
 
 .method public vMessageNameParsing(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const-string v1, ":"
 
@@ -3715,7 +3694,6 @@
 
 .method public vMessageTelParsing(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     const-string v1, ":"
 

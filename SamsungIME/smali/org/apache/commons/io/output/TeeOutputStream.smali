@@ -10,8 +10,6 @@
 # direct methods
 .method public constructor <init>(Ljava/io/OutputStream;Ljava/io/OutputStream;)V
     .locals 0
-    .param p1    # Ljava/io/OutputStream;
-    .param p2    # Ljava/io/OutputStream;
 
     invoke-direct {p0, p1}, Lorg/apache/commons/io/output/ProxyOutputStream;-><init>(Ljava/io/OutputStream;)V
 
@@ -58,7 +56,6 @@
 
 .method public declared-synchronized write(I)V
     .locals 1
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -90,7 +87,6 @@
 
 .method public declared-synchronized write([B)V
     .locals 1
-    .param p1    # [B
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -122,9 +118,6 @@
 
 .method public declared-synchronized write([BII)V
     .locals 1
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

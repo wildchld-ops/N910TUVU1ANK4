@@ -154,8 +154,6 @@
 
 .method public constructor <init>(ZZ)V
     .locals 3
-    .param p1    # Z
-    .param p2    # Z
 
     const/4 v1, 0x0
 
@@ -205,7 +203,6 @@
 
 .method public static getInstance(Ljava/lang/String;)Landroid/text/method/DigitsKeyListener;
     .locals 4
-    .param p0    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -234,8 +231,6 @@
 
 .method public static getInstance(ZZ)Landroid/text/method/DigitsKeyListener;
     .locals 3
-    .param p0    # Z
-    .param p1    # Z
 
     const/4 v1, 0x0
 
@@ -287,7 +282,6 @@
 
 .method private static isDecimalPointChar(C)Z
     .locals 1
-    .param p0    # C
 
     const/16 v0, 0x2e
 
@@ -306,7 +300,6 @@
 
 .method private static isSignChar(C)Z
     .locals 1
-    .param p0    # C
 
     const/16 v0, 0x2d
 
@@ -332,12 +325,6 @@
 # virtual methods
 .method public filter(Ljava/lang/CharSequence;IILandroid/text/Spanned;II)Ljava/lang/CharSequence;
     .locals 10
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # Landroid/text/Spanned;
-    .param p5    # I
-    .param p6    # I
 
     invoke-super/range {p0 .. p6}, Landroid/text/method/NumberKeyListener;->filter(Ljava/lang/CharSequence;IILandroid/text/Spanned;II)Ljava/lang/CharSequence;
 

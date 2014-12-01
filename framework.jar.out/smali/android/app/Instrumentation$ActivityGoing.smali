@@ -26,7 +26,6 @@
 # direct methods
 .method public constructor <init>(Landroid/app/Instrumentation;Landroid/app/Instrumentation$ActivityWaiter;)V
     .locals 0
-    .param p2    # Landroid/app/Instrumentation$ActivityWaiter;
 
     iput-object p1, p0, Landroid/app/Instrumentation$ActivityGoing;->this$0:Landroid/app/Instrumentation;
 

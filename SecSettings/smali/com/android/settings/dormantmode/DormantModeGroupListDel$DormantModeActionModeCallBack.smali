@@ -44,8 +44,6 @@
 
 .method synthetic constructor <init>(Lcom/android/settings/dormantmode/DormantModeGroupListDel;Lcom/android/settings/dormantmode/DormantModeGroupListDel$1;)V
     .locals 0
-    .param p1    # Lcom/android/settings/dormantmode/DormantModeGroupListDel;
-    .param p2    # Lcom/android/settings/dormantmode/DormantModeGroupListDel$1;
 
     invoke-direct {p0, p1}, Lcom/android/settings/dormantmode/DormantModeGroupListDel$DormantModeActionModeCallBack;-><init>(Lcom/android/settings/dormantmode/DormantModeGroupListDel;)V
 
@@ -122,7 +120,6 @@
 
 .method public initOptionsMenu(Landroid/view/Menu;)V
     .locals 1
-    .param p1    # Landroid/view/Menu;
 
     const/4 v0, 0x5
 
@@ -138,8 +135,6 @@
 
 .method public onActionItemClicked(Landroid/view/ActionMode;Landroid/view/MenuItem;)Z
     .locals 11
-    .param p1    # Landroid/view/ActionMode;
-    .param p2    # Landroid/view/MenuItem;
 
     const v10, 0x7f090b6d
 
@@ -251,8 +246,6 @@
 
 .method public onCreateActionMode(Landroid/view/ActionMode;Landroid/view/Menu;)Z
     .locals 9
-    .param p1    # Landroid/view/ActionMode;
-    .param p2    # Landroid/view/Menu;
 
     const/16 v8, 0x8
 
@@ -454,7 +447,6 @@
 
 .method public onDestroyActionMode(Landroid/view/ActionMode;)V
     .locals 2
-    .param p1    # Landroid/view/ActionMode;
 
     iget-object v0, p0, Lcom/android/settings/dormantmode/DormantModeGroupListDel$DormantModeActionModeCallBack;->this$0:Lcom/android/settings/dormantmode/DormantModeGroupListDel;
 
@@ -491,8 +483,6 @@
 
 .method public onPrepareActionMode(Landroid/view/ActionMode;Landroid/view/Menu;)Z
     .locals 1
-    .param p1    # Landroid/view/ActionMode;
-    .param p2    # Landroid/view/Menu;
 
     const/4 v0, 0x0
 

@@ -39,8 +39,6 @@
 
 .method public constructor <init>(Landroid/os/Looper;Lcom/android/mms/data/Contact$ContentObserverHandler;)V
     .locals 0
-    .param p1    # Landroid/os/Looper;
-    .param p2    # Lcom/android/mms/data/Contact$ContentObserverHandler;
 
     invoke-direct {p0, p1}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
@@ -53,7 +51,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 1
-    .param p1    # Landroid/os/Message;
 
     const/4 v0, 0x0
 

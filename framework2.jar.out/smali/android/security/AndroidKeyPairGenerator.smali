@@ -20,8 +20,6 @@
 
 .method private static getArgsForKeyType(ILjava/security/spec/AlgorithmParameterSpec;)[[B
     .locals 6
-    .param p0    # I
-    .param p1    # Ljava/security/spec/AlgorithmParameterSpec;
 
     const/4 v5, 0x1
 
@@ -118,7 +116,6 @@
 
 .method private static getDefaultSignatureAlgorithmForKeyType(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
-    .param p0    # Ljava/lang/String;
 
     const-string v0, "RSA"
 
@@ -602,8 +599,6 @@
 
 .method public initialize(ILjava/security/SecureRandom;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Ljava/security/SecureRandom;
 
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -616,8 +611,6 @@
 
 .method public initialize(Ljava/security/spec/AlgorithmParameterSpec;Ljava/security/SecureRandom;)V
     .locals 3
-    .param p1    # Ljava/security/spec/AlgorithmParameterSpec;
-    .param p2    # Ljava/security/SecureRandom;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/security/InvalidAlgorithmParameterException;

@@ -60,8 +60,6 @@
 # direct methods
 .method public constructor <init>(Landroid/accounts/AccountManager;Landroid/app/Activity;Landroid/os/Handler;Landroid/accounts/AccountManagerCallback;)V
     .locals 2
-    .param p2    # Landroid/app/Activity;
-    .param p3    # Landroid/os/Handler;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -101,8 +99,6 @@
 
 .method static synthetic access$500(Landroid/accounts/AccountManager$AmsTask;Ljava/lang/Throwable;)V
     .locals 0
-    .param p0    # Landroid/accounts/AccountManager$AmsTask;
-    .param p1    # Ljava/lang/Throwable;
 
     invoke-virtual {p0, p1}, Landroid/accounts/AccountManager$AmsTask;->setException(Ljava/lang/Throwable;)V
 
@@ -111,8 +107,6 @@
 
 .method private internalGetResult(Ljava/lang/Long;Ljava/util/concurrent/TimeUnit;)Landroid/os/Bundle;
     .locals 5
-    .param p1    # Ljava/lang/Long;
-    .param p2    # Ljava/util/concurrent/TimeUnit;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/accounts/OperationCanceledException;,
@@ -367,8 +361,6 @@
 
 .method public getResult(JLjava/util/concurrent/TimeUnit;)Landroid/os/Bundle;
     .locals 1
-    .param p1    # J
-    .param p3    # Ljava/util/concurrent/TimeUnit;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/accounts/OperationCanceledException;,
@@ -407,8 +399,6 @@
 
 .method public bridge synthetic getResult(JLjava/util/concurrent/TimeUnit;)Ljava/lang/Object;
     .locals 1
-    .param p1    # J
-    .param p3    # Ljava/util/concurrent/TimeUnit;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/accounts/OperationCanceledException;,
@@ -426,7 +416,6 @@
 
 .method protected set(Landroid/os/Bundle;)V
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     if-nez p1, :cond_0
 
@@ -448,7 +437,6 @@
 
 .method protected bridge synthetic set(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Landroid/os/Bundle;
 

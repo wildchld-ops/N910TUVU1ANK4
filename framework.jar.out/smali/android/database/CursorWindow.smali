@@ -70,7 +70,6 @@
 
 .method private constructor <init>(Landroid/os/Parcel;)V
     .locals 2
-    .param p1    # Landroid/os/Parcel;
 
     invoke-direct {p0}, Landroid/database/sqlite/SQLiteClosable;-><init>()V
 
@@ -124,8 +123,6 @@
 
 .method synthetic constructor <init>(Landroid/os/Parcel;Landroid/database/CursorWindow$1;)V
     .locals 0
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # Landroid/database/CursorWindow$1;
 
     invoke-direct {p0, p1}, Landroid/database/CursorWindow;-><init>(Landroid/os/Parcel;)V
 
@@ -134,7 +131,6 @@
 
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     sget v0, Landroid/database/CursorWindow;->sCursorWindowSize:I
 
@@ -145,8 +141,6 @@
 
 .method public constructor <init>(Ljava/lang/String;I)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-direct {p0}, Landroid/database/sqlite/SQLiteClosable;-><init>()V
 
@@ -250,7 +244,6 @@
 
 .method public constructor <init>(Z)V
     .locals 1
-    .param p1    # Z
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -360,7 +353,6 @@
 
 .method public static newFromParcel(Landroid/os/Parcel;)Landroid/database/CursorWindow;
     .locals 1
-    .param p0    # Landroid/os/Parcel;
 
     sget-object v0, Landroid/database/CursorWindow;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -582,7 +574,6 @@
 
 .method private recordClosingOfWindow(I)V
     .locals 2
-    .param p1    # I
 
     sget-object v1, Landroid/database/CursorWindow;->sWindowToPidMap:Landroid/util/SparseIntArray;
 
@@ -623,8 +614,6 @@
 
 .method private recordNewWindow(II)V
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     sget-object v1, Landroid/database/CursorWindow;->sWindowToPidMap:Landroid/util/SparseIntArray;
 
@@ -744,9 +733,6 @@
 
 .method public copyStringToBuffer(IILandroid/database/CharArrayBuffer;)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/database/CharArrayBuffer;
 
     if-nez p3, :cond_0
 
@@ -852,8 +838,6 @@
 
 .method public getBlob(II)[B
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0}, Landroid/database/CursorWindow;->acquireReference()V
 
@@ -884,8 +868,6 @@
 
 .method public getDouble(II)D
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0}, Landroid/database/CursorWindow;->acquireReference()V
 
@@ -916,8 +898,6 @@
 
 .method public getFloat(II)F
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0, p1, p2}, Landroid/database/CursorWindow;->getDouble(II)D
 
@@ -930,8 +910,6 @@
 
 .method public getInt(II)I
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0, p1, p2}, Landroid/database/CursorWindow;->getLong(II)J
 
@@ -944,8 +922,6 @@
 
 .method public getLong(II)J
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0}, Landroid/database/CursorWindow;->acquireReference()V
 
@@ -1010,8 +986,6 @@
 
 .method public getShort(II)S
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0, p1, p2}, Landroid/database/CursorWindow;->getLong(II)J
 
@@ -1034,8 +1008,6 @@
 
 .method public getString(II)Ljava/lang/String;
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0}, Landroid/database/CursorWindow;->acquireReference()V
 
@@ -1066,8 +1038,6 @@
 
 .method public getType(II)I
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0}, Landroid/database/CursorWindow;->acquireReference()V
 
@@ -1098,8 +1068,6 @@
 
 .method public isBlob(II)Z
     .locals 2
-    .param p1    # I
-    .param p2    # I
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -1127,8 +1095,6 @@
 
 .method public isFloat(II)Z
     .locals 2
-    .param p1    # I
-    .param p2    # I
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -1153,8 +1119,6 @@
 
 .method public isLong(II)Z
     .locals 2
-    .param p1    # I
-    .param p2    # I
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -1177,8 +1141,6 @@
 
 .method public isNull(II)Z
     .locals 1
-    .param p1    # I
-    .param p2    # I
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -1201,8 +1163,6 @@
 
 .method public isString(II)Z
     .locals 2
-    .param p1    # I
-    .param p2    # I
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -1238,9 +1198,6 @@
 
 .method public putBlob([BII)Z
     .locals 2
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
 
     invoke-virtual {p0}, Landroid/database/CursorWindow;->acquireReference()V
 
@@ -1271,9 +1228,6 @@
 
 .method public putDouble(DII)Z
     .locals 2
-    .param p1    # D
-    .param p3    # I
-    .param p4    # I
 
     invoke-virtual {p0}, Landroid/database/CursorWindow;->acquireReference()V
 
@@ -1304,9 +1258,6 @@
 
 .method public putLong(JII)Z
     .locals 2
-    .param p1    # J
-    .param p3    # I
-    .param p4    # I
 
     invoke-virtual {p0}, Landroid/database/CursorWindow;->acquireReference()V
 
@@ -1337,8 +1288,6 @@
 
 .method public putNull(II)Z
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     invoke-virtual {p0}, Landroid/database/CursorWindow;->acquireReference()V
 
@@ -1369,9 +1318,6 @@
 
 .method public putString(Ljava/lang/String;II)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     invoke-virtual {p0}, Landroid/database/CursorWindow;->acquireReference()V
 
@@ -1402,7 +1348,6 @@
 
 .method public setNumColumns(I)Z
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/database/CursorWindow;->acquireReference()V
 
@@ -1429,7 +1374,6 @@
 
 .method public setStartPosition(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/database/CursorWindow;->mStartPos:I
 
@@ -1482,8 +1426,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     invoke-virtual {p0}, Landroid/database/CursorWindow;->acquireReference()V
 

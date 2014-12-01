@@ -187,13 +187,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/opengl/GLSurfaceView;ILcom/sec/android/visualeffect/brilliantring/JniBrilliantRingRenderer;III)V
     .locals 6
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/opengl/GLSurfaceView;
-    .param p3    # I
-    .param p4    # Lcom/sec/android/visualeffect/brilliantring/JniBrilliantRingRenderer;
-    .param p5    # I
-    .param p6    # I
-    .param p7    # I
 
     const/16 v5, 0xa
 
@@ -484,7 +477,6 @@
 
 .method static synthetic access$000(Lcom/sec/android/visualeffect/brilliantring/BrilliantRingRenderer;)F
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/brilliantring/BrilliantRingRenderer;
 
     iget v0, p0, Lcom/sec/android/visualeffect/brilliantring/BrilliantRingRenderer;->currentAlpha:F
 
@@ -493,8 +485,6 @@
 
 .method static synthetic access$002(Lcom/sec/android/visualeffect/brilliantring/BrilliantRingRenderer;F)F
     .locals 0
-    .param p0    # Lcom/sec/android/visualeffect/brilliantring/BrilliantRingRenderer;
-    .param p1    # F
 
     iput p1, p0, Lcom/sec/android/visualeffect/brilliantring/BrilliantRingRenderer;->currentAlpha:F
 
@@ -511,7 +501,6 @@
 
 .method static synthetic access$200(Lcom/sec/android/visualeffect/brilliantring/BrilliantRingRenderer;)Z
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/brilliantring/BrilliantRingRenderer;
 
     iget-boolean v0, p0, Lcom/sec/android/visualeffect/brilliantring/BrilliantRingRenderer;->isRestrictCPUClock:Z
 
@@ -520,7 +509,6 @@
 
 .method static synthetic access$300(Lcom/sec/android/visualeffect/brilliantring/BrilliantRingRenderer;)Z
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/brilliantring/BrilliantRingRenderer;
 
     iget-boolean v0, p0, Lcom/sec/android/visualeffect/brilliantring/BrilliantRingRenderer;->isRestrictGPUFreq:Z
 
@@ -529,7 +517,6 @@
 
 .method static synthetic access$400(Lcom/sec/android/visualeffect/brilliantring/BrilliantRingRenderer;)Lcom/sec/android/visualeffect/brilliantring/BrilliantRingRenderer$DVFSHandlerForBrilliantRing;
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/brilliantring/BrilliantRingRenderer;
 
     iget-object v0, p0, Lcom/sec/android/visualeffect/brilliantring/BrilliantRingRenderer;->mDVFSHandlerBrilliantRing:Lcom/sec/android/visualeffect/brilliantring/BrilliantRingRenderer$DVFSHandlerForBrilliantRing;
 
@@ -538,7 +525,6 @@
 
 .method static synthetic access$500(Lcom/sec/android/visualeffect/brilliantring/BrilliantRingRenderer;)I
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/brilliantring/BrilliantRingRenderer;
 
     iget v0, p0, Lcom/sec/android/visualeffect/brilliantring/BrilliantRingRenderer;->mDrawCount:I
 
@@ -547,7 +533,6 @@
 
 .method static synthetic access$600(Lcom/sec/android/visualeffect/brilliantring/BrilliantRingRenderer;)Ljava/lang/Runnable;
     .locals 1
-    .param p0    # Lcom/sec/android/visualeffect/brilliantring/BrilliantRingRenderer;
 
     iget-object v0, p0, Lcom/sec/android/visualeffect/brilliantring/BrilliantRingRenderer;->mDefaultRunnable:Ljava/lang/Runnable;
 
@@ -556,8 +541,6 @@
 
 .method static synthetic access$602(Lcom/sec/android/visualeffect/brilliantring/BrilliantRingRenderer;Ljava/lang/Runnable;)Ljava/lang/Runnable;
     .locals 0
-    .param p0    # Lcom/sec/android/visualeffect/brilliantring/BrilliantRingRenderer;
-    .param p1    # Ljava/lang/Runnable;
 
     iput-object p1, p0, Lcom/sec/android/visualeffect/brilliantring/BrilliantRingRenderer;->mDefaultRunnable:Ljava/lang/Runnable;
 
@@ -566,8 +549,6 @@
 
 .method static synthetic access$702(Lcom/sec/android/visualeffect/brilliantring/BrilliantRingRenderer;Z)Z
     .locals 0
-    .param p0    # Lcom/sec/android/visualeffect/brilliantring/BrilliantRingRenderer;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/sec/android/visualeffect/brilliantring/BrilliantRingRenderer;->calledScreenTurnedOn:Z
 
@@ -576,7 +557,6 @@
 
 .method static synthetic access$800(Lcom/sec/android/visualeffect/brilliantring/BrilliantRingRenderer;)V
     .locals 0
-    .param p0    # Lcom/sec/android/visualeffect/brilliantring/BrilliantRingRenderer;
 
     invoke-direct {p0}, Lcom/sec/android/visualeffect/brilliantring/BrilliantRingRenderer;->aquireCpuGpuMaxLock()V
 
@@ -585,7 +565,6 @@
 
 .method static synthetic access$900(Lcom/sec/android/visualeffect/brilliantring/BrilliantRingRenderer;)V
     .locals 0
-    .param p0    # Lcom/sec/android/visualeffect/brilliantring/BrilliantRingRenderer;
 
     invoke-direct {p0}, Lcom/sec/android/visualeffect/brilliantring/BrilliantRingRenderer;->releaseCpuGpuMaxLock()V
 
@@ -594,7 +573,6 @@
 
 .method private acquireBooster(I)V
     .locals 6
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -933,8 +911,6 @@
 
 .method private getBestMaxFreq([II)I
     .locals 6
-    .param p1    # [I
-    .param p2    # I
 
     const/4 v4, 0x0
 
@@ -974,9 +950,6 @@
 
 .method private getCenterCropBitmap(Landroid/graphics/Bitmap;II)Landroid/graphics/Bitmap;
     .locals 10
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v9, 0x0
 
@@ -1203,7 +1176,6 @@
 # virtual methods
 .method public declared-synchronized changeBackground(Landroid/graphics/Bitmap;)V
     .locals 2
-    .param p1    # Landroid/graphics/Bitmap;
 
     monitor-enter p0
 
@@ -1880,7 +1852,6 @@
 
 .method public handleSensorEvent(Landroid/hardware/SensorEvent;)Z
     .locals 1
-    .param p1    # Landroid/hardware/SensorEvent;
 
     iget-boolean v0, p0, Lcom/sec/android/visualeffect/brilliantring/BrilliantRingRenderer;->isEnableTilt:Z
 
@@ -1926,7 +1897,6 @@
 
 .method public onDrawFrame(Ljavax/microedition/khronos/opengles/GL10;)V
     .locals 0
-    .param p1    # Ljavax/microedition/khronos/opengles/GL10;
 
     invoke-virtual {p0}, Lcom/sec/android/visualeffect/brilliantring/BrilliantRingRenderer;->checkBackground()V
 
@@ -1949,9 +1919,6 @@
 
 .method public onSurfaceChanged(Ljavax/microedition/khronos/opengles/GL10;II)V
     .locals 6
-    .param p1    # Ljavax/microedition/khronos/opengles/GL10;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v3, 0x1
 
@@ -2093,8 +2060,6 @@
 
 .method public onSurfaceCreated(Ljavax/microedition/khronos/opengles/GL10;Ljavax/microedition/khronos/egl/EGLConfig;)V
     .locals 3
-    .param p1    # Ljavax/microedition/khronos/opengles/GL10;
-    .param p2    # Ljavax/microedition/khronos/egl/EGLConfig;
 
     const/4 v2, 0x0
 
@@ -2117,7 +2082,6 @@
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 11
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v6, 0x2
 
@@ -2478,7 +2442,6 @@
 
 .method public releaseBooster(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v2, 0x0
 
@@ -2645,8 +2608,6 @@
 
 .method public sendDragSoundInfo(Landroid/media/SoundPool;I)V
     .locals 4
-    .param p1    # Landroid/media/SoundPool;
-    .param p2    # I
 
     const/4 v3, 0x0
 
@@ -2710,7 +2671,6 @@
 
 .method public setBackground(Landroid/graphics/Bitmap;)V
     .locals 3
-    .param p1    # Landroid/graphics/Bitmap;
 
     const-string v0, "BrilliantRing_BrilliantRingRenderer"
 
@@ -2774,7 +2734,6 @@
 
 .method public setParentWindowFocusState(Z)V
     .locals 3
-    .param p1    # Z
 
     const-string v0, "BrilliantRing_BrilliantRingRenderer"
 
@@ -2807,7 +2766,6 @@
 
 .method public setResourcesBitmap(Landroid/graphics/Bitmap;)V
     .locals 0
-    .param p1    # Landroid/graphics/Bitmap;
 
     iput-object p1, p0, Lcom/sec/android/visualeffect/brilliantring/BrilliantRingRenderer;->mDiamondPT:Landroid/graphics/Bitmap;
 
@@ -2816,7 +2774,6 @@
 
 .method public setTiltImage(Landroid/graphics/Bitmap;)V
     .locals 3
-    .param p1    # Landroid/graphics/Bitmap;
 
     const-string v0, "BrilliantRing_BrilliantRingRenderer"
 
@@ -2880,10 +2837,6 @@
 
 .method public setValueOfDVFS(ZIZI)V
     .locals 3
-    .param p1    # Z
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # I
 
     iput-boolean p1, p0, Lcom/sec/android/visualeffect/brilliantring/BrilliantRingRenderer;->isRestrictCPUClock:Z
 
@@ -2994,8 +2947,6 @@
 
 .method public declared-synchronized settingsForImageType(ILandroid/graphics/Bitmap;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/graphics/Bitmap;
 
     monitor-enter p0
 
@@ -3187,8 +3138,6 @@
 
 .method public showUnlockAffordance(JLandroid/graphics/Rect;)V
     .locals 5
-    .param p1    # J
-    .param p3    # Landroid/graphics/Rect;
 
     const/4 v4, 0x0
 

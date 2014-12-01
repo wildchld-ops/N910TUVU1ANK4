@@ -10,8 +10,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     invoke-direct {p0, p1, p2}, Landroid/preference/DialogPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
@@ -30,7 +28,6 @@
 # virtual methods
 .method protected onDialogClosed(Z)V
     .locals 2
-    .param p1    # Z
 
     invoke-super {p0, p1}, Landroid/preference/DialogPreference;->onDialogClosed(Z)V
 
@@ -52,7 +49,6 @@
 
 .method protected onPrepareDialogBuilder(Landroid/app/AlertDialog$Builder;)V
     .locals 0
-    .param p1    # Landroid/app/AlertDialog$Builder;
 
     invoke-super {p0, p1}, Landroid/preference/DialogPreference;->onPrepareDialogBuilder(Landroid/app/AlertDialog$Builder;)V
 
@@ -61,7 +57,6 @@
 
 .method public setConfiguration(Lcom/touchtype/personalizer/PersonalizerSettingsActivity;)V
     .locals 0
-    .param p1    # Lcom/touchtype/personalizer/PersonalizerSettingsActivity;
 
     iput-object p1, p0, Lcom/touchtype/personalizer/DeleteDynamicLanguageModelDialog;->mSettings:Lcom/touchtype/personalizer/PersonalizerSettingsActivity;
 

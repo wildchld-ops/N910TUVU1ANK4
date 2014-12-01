@@ -43,7 +43,7 @@
 
     invoke-static/range {v23 .. v24}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-virtual/range {p0 .. p0}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual/range {p0 .. p0}, Lcom/lgu/ims/pal/common/CommonService;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v23
 
@@ -122,7 +122,7 @@
 
     if-eqz v23, :cond_4
 
-    invoke-virtual/range {p0 .. p0}, Landroid/content/ContextWrapper;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual/range {p0 .. p0}, Lcom/lgu/ims/pal/common/CommonService;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v23
 
@@ -746,7 +746,7 @@
     :catch_0
     move-exception v8
 
-    invoke-virtual {v8}, Ljava/lang/Throwable;->printStackTrace()V
+    invoke-virtual {v8}, Ljava/lang/Exception;->printStackTrace()V
 
     goto/16 :goto_1
 

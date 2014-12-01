@@ -56,8 +56,6 @@
 
 .method public static getRestrictions(Landroid/content/Context;Landroid/os/UserHandle;)Ljava/util/ArrayList;
     .locals 10
-    .param p0    # Landroid/content/Context;
-    .param p1    # Landroid/os/UserHandle;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -252,8 +250,6 @@
 
 .method public static setRestrictions(Landroid/content/Context;Ljava/util/ArrayList;Landroid/os/UserHandle;)V
     .locals 8
-    .param p0    # Landroid/content/Context;
-    .param p2    # Landroid/os/UserHandle;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

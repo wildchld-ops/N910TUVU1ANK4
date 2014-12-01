@@ -79,7 +79,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
 
     const/4 v2, 0x1
 
@@ -148,7 +147,6 @@
 
 .method static synthetic access$000(Lcom/android/server/DockObserver;)V
     .locals 0
-    .param p0    # Lcom/android/server/DockObserver;
 
     invoke-direct {p0}, Lcom/android/server/DockObserver;->handleDockStateChange()V
 
@@ -801,7 +799,6 @@
 # virtual methods
 .method public onUEvent(Landroid/os/UEventObserver$UEvent;)V
     .locals 9
-    .param p1    # Landroid/os/UEventObserver$UEvent;
 
     const/16 v8, 0xff
 

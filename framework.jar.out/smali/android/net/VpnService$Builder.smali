@@ -85,8 +85,6 @@
 
 .method private check(Ljava/net/InetAddress;I)V
     .locals 2
-    .param p1    # Ljava/net/InetAddress;
-    .param p2    # I
 
     invoke-virtual {p1}, Ljava/net/InetAddress;->isLoopbackAddress()Z
 
@@ -159,8 +157,6 @@
 # virtual methods
 .method public addAddress(Ljava/lang/String;I)Landroid/net/VpnService$Builder;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-static {p1}, Ljava/net/InetAddress;->parseNumericAddress(Ljava/lang/String;)Ljava/net/InetAddress;
 
@@ -175,8 +171,6 @@
 
 .method public addAddress(Ljava/net/InetAddress;I)Landroid/net/VpnService$Builder;
     .locals 2
-    .param p1    # Ljava/net/InetAddress;
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Landroid/net/VpnService$Builder;->check(Ljava/net/InetAddress;I)V
 
@@ -208,7 +202,6 @@
 
 .method public addDnsServer(Ljava/lang/String;)Landroid/net/VpnService$Builder;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p1}, Ljava/net/InetAddress;->parseNumericAddress(Ljava/lang/String;)Ljava/net/InetAddress;
 
@@ -223,7 +216,6 @@
 
 .method public addDnsServer(Ljava/net/InetAddress;)Landroid/net/VpnService$Builder;
     .locals 2
-    .param p1    # Ljava/net/InetAddress;
 
     invoke-virtual {p1}, Ljava/net/InetAddress;->isLoopbackAddress()Z
 
@@ -277,8 +269,6 @@
 
 .method public addRoute(Ljava/lang/String;I)Landroid/net/VpnService$Builder;
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-static {p1}, Ljava/net/InetAddress;->parseNumericAddress(Ljava/lang/String;)Ljava/net/InetAddress;
 
@@ -293,8 +283,6 @@
 
 .method public addRoute(Ljava/net/InetAddress;I)Landroid/net/VpnService$Builder;
     .locals 6
-    .param p1    # Ljava/net/InetAddress;
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Landroid/net/VpnService$Builder;->check(Ljava/net/InetAddress;I)V
 
@@ -360,7 +348,6 @@
 
 .method public addSearchDomain(Ljava/lang/String;)Landroid/net/VpnService$Builder;
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/net/VpnService$Builder;->mConfig:Lcom/android/internal/net/VpnConfig;
 
@@ -429,7 +416,6 @@
 
 .method public setConfigureIntent(Landroid/app/PendingIntent;)Landroid/net/VpnService$Builder;
     .locals 1
-    .param p1    # Landroid/app/PendingIntent;
 
     iget-object v0, p0, Landroid/net/VpnService$Builder;->mConfig:Lcom/android/internal/net/VpnConfig;
 
@@ -440,7 +426,6 @@
 
 .method public setMtu(I)Landroid/net/VpnService$Builder;
     .locals 2
-    .param p1    # I
 
     if-gtz p1, :cond_0
 
@@ -462,7 +447,6 @@
 
 .method public setSession(Ljava/lang/String;)Landroid/net/VpnService$Builder;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/net/VpnService$Builder;->mConfig:Lcom/android/internal/net/VpnConfig;
 

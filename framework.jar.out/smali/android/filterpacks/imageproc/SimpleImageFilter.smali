@@ -14,8 +14,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Landroid/filterfw/core/Filter;-><init>(Ljava/lang/String;)V
 
@@ -35,8 +33,6 @@
 
 .method public getOutputFormat(Ljava/lang/String;Landroid/filterfw/core/FrameFormat;)Landroid/filterfw/core/FrameFormat;
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Landroid/filterfw/core/FrameFormat;
 
     return-object p2
 .end method
@@ -46,7 +42,6 @@
 
 .method public process(Landroid/filterfw/core/FilterContext;)V
     .locals 4
-    .param p1    # Landroid/filterfw/core/FilterContext;
 
     const-string v3, "image"
 
@@ -148,8 +143,6 @@
 
 .method protected updateProgramWithTarget(ILandroid/filterfw/core/FilterContext;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/filterfw/core/FilterContext;
 
     iget v0, p0, Landroid/filterpacks/imageproc/SimpleImageFilter;->mCurrentTarget:I
 

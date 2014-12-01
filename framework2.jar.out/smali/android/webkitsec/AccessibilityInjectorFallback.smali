@@ -99,7 +99,6 @@
 
 .method public constructor <init>(Landroid/webkitsec/WebViewClassic;)V
     .locals 1
-    .param p1    # Landroid/webkitsec/WebViewClassic;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -134,9 +133,6 @@
 
 .method static synthetic access$000(Landroid/webkitsec/AccessibilityInjectorFallback;Ljava/lang/String;I)V
     .locals 0
-    .param p0    # Landroid/webkitsec/AccessibilityInjectorFallback;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Landroid/webkitsec/AccessibilityInjectorFallback;->onSelectionStringChangedMainThread(Ljava/lang/String;I)V
 
@@ -362,7 +358,6 @@
 
 .method private static getAxisForGranularity(I)I
     .locals 1
-    .param p0    # I
 
     const/4 v0, 0x2
 
@@ -401,7 +396,6 @@
 
 .method private static getDirectionForAction(I)I
     .locals 1
-    .param p0    # I
 
     sparse-switch p0, :sswitch_data_0
 
@@ -433,7 +427,6 @@
 
 .method private getPartialyPopulatedAccessibilityEvent(I)Landroid/view/accessibility/AccessibilityEvent;
     .locals 2
-    .param p1    # I
 
     invoke-static {p1}, Landroid/view/accessibility/AccessibilityEvent;->obtain(I)Landroid/view/accessibility/AccessibilityEvent;
 
@@ -448,7 +441,6 @@
 
 .method private isEnterActionKey(I)Z
     .locals 1
-    .param p1    # I
 
     const/16 v0, 0x17
 
@@ -476,8 +468,6 @@
 
 .method private onSelectionStringChangedMainThread(Ljava/lang/String;I)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v2, 0x0
 
@@ -577,10 +567,6 @@
 
 .method private performAxisTransition(IIZLjava/lang/String;)V
     .locals 1
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # Ljava/lang/String;
 
     iget v0, p0, Landroid/webkitsec/AccessibilityInjectorFallback;->mCurrentAxis:I
 
@@ -594,7 +580,6 @@
 
 .method private sendAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
     .locals 4
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
 
     const-string v1, "AccessibilityInjector"
 
@@ -642,9 +627,6 @@
 
 .method private setCurrentAxis(IZLjava/lang/String;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # Ljava/lang/String;
 
     iput p1, p0, Landroid/webkitsec/AccessibilityInjectorFallback;->mCurrentAxis:I
 
@@ -676,11 +658,6 @@
 
 .method private traverseGivenAxis(IIZLjava/lang/String;Z)Z
     .locals 10
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
-    .param p4    # Ljava/lang/String;
-    .param p5    # Z
 
     const/16 v7, 0xbe
 
@@ -816,7 +793,6 @@
 # virtual methods
 .method public onKeyEvent(Landroid/view/KeyEvent;)Z
     .locals 22
-    .param p1    # Landroid/view/KeyEvent;
 
     invoke-virtual/range {p1 .. p1}, Landroid/view/KeyEvent;->getKeyCode()I
 
@@ -1283,8 +1259,6 @@
 
 .method onSelectionStringChangedWebCoreThread(Ljava/lang/String;I)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v0, 0x1
 
@@ -1338,8 +1312,6 @@
 
 .method performAccessibilityAction(ILandroid/os/Bundle;)Z
     .locals 11
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     const/4 v4, 0x0
 

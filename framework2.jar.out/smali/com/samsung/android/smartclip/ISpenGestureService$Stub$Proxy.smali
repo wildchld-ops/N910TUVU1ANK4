@@ -24,7 +24,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
-    .param p1    # Landroid/os/IBinder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -94,9 +93,6 @@
 
 .method public getAirButtonHitTest(III)I
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -164,9 +160,6 @@
 
 .method public getSmartClipDataByScreenRect(Landroid/graphics/Rect;Landroid/os/IBinder;I)Lcom/samsung/android/smartclip/SmartClipDataRepositoryImpl;
     .locals 6
-    .param p1    # Landroid/graphics/Rect;
-    .param p2    # Landroid/os/IBinder;
-    .param p3    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -390,8 +383,6 @@
 
 .method public setAirButtonHitTestResult(II)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -445,7 +436,6 @@
 
 .method public setDisableGlobalAirBottonAppindex(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -497,7 +487,6 @@
 
 .method public setFocusWindow(I)V
     .locals 5
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -549,7 +538,6 @@
 
 .method public setSmartClipDataExtractionResult(Lcom/samsung/android/smartclip/SmartClipDataExtractionResponse;)V
     .locals 5
-    .param p1    # Lcom/samsung/android/smartclip/SmartClipDataExtractionResponse;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

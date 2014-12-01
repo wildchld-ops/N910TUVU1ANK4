@@ -23,7 +23,6 @@
 # direct methods
 .method public constructor <init>(Lcom/immersion/android/haptics/HapticFeedbackManager;Lcom/immersion/android/haptics/HapticFeedbackManager;)V
     .locals 2
-    .param p2    # Lcom/immersion/android/haptics/HapticFeedbackManager;
 
     iput-object p1, p0, Lcom/immersion/android/haptics/HapticFeedbackManager$ImmVibeInitializeContentObserver;->this$0:Lcom/immersion/android/haptics/HapticFeedbackManager;
 
@@ -66,7 +65,6 @@
 # virtual methods
 .method public onChange(Z)V
     .locals 6
-    .param p1    # Z
 
     const/4 v1, 0x0
 

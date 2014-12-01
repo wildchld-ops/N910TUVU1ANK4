@@ -68,8 +68,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/os/Handler;)V
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/Handler;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -160,7 +158,6 @@
 
 .method static synthetic access$000(Lcom/android/server/location/LocationFudger;)F
     .locals 1
-    .param p0    # Lcom/android/server/location/LocationFudger;
 
     invoke-direct {p0}, Lcom/android/server/location/LocationFudger;->loadCoarseAccuracy()F
 
@@ -171,8 +168,6 @@
 
 .method static synthetic access$100(Lcom/android/server/location/LocationFudger;F)V
     .locals 0
-    .param p0    # Lcom/android/server/location/LocationFudger;
-    .param p1    # F
 
     invoke-direct {p0, p1}, Lcom/android/server/location/LocationFudger;->setAccuracyInMeters(F)V
 
@@ -181,7 +176,6 @@
 
 .method private addCoarseLocationExtraLocked(Landroid/location/Location;)Landroid/location/Location;
     .locals 2
-    .param p1    # Landroid/location/Location;
 
     invoke-direct {p0, p1}, Lcom/android/server/location/LocationFudger;->createCoarseLocked(Landroid/location/Location;)Landroid/location/Location;
 
@@ -196,7 +190,6 @@
 
 .method private createCoarseLocked(Landroid/location/Location;)Landroid/location/Location;
     .locals 11
-    .param p1    # Landroid/location/Location;
 
     new-instance v0, Landroid/location/Location;
 
@@ -353,7 +346,6 @@
 
 .method private static metersToDegreesLatitude(D)D
     .locals 2
-    .param p0    # D
 
     const-wide v0, 0x40fb198000000000L
 
@@ -364,8 +356,6 @@
 
 .method private static metersToDegreesLongitude(DD)D
     .locals 4
-    .param p0    # D
-    .param p2    # D
 
     const-wide v0, 0x40fb198000000000L
 
@@ -402,7 +392,6 @@
 
 .method private setAccuracyInMeters(F)V
     .locals 2
-    .param p1    # F
 
     iget-object v1, p0, Lcom/android/server/location/LocationFudger;->mLock:Ljava/lang/Object;
 
@@ -427,7 +416,6 @@
 
 .method private setAccuracyInMetersLocked(F)V
     .locals 4
-    .param p1    # F
 
     const/high16 v0, 0x43480000
 
@@ -524,7 +512,6 @@
 
 .method private static wrapLatitude(D)D
     .locals 2
-    .param p0    # D
 
     const-wide v0, 0x40567fffda36a676L
 
@@ -549,7 +536,6 @@
 
 .method private static wrapLongitude(D)D
     .locals 4
-    .param p0    # D
 
     const-wide v2, 0x4076800000000000L
 
@@ -580,9 +566,6 @@
 # virtual methods
 .method public dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     const-string v0, "offset: %.0f, %.0f (meters)"
 
@@ -621,7 +604,6 @@
 
 .method public getOrCreate(Landroid/location/Location;)Landroid/location/Location;
     .locals 4
-    .param p1    # Landroid/location/Location;
 
     iget-object v2, p0, Lcom/android/server/location/LocationFudger;->mLock:Ljava/lang/Object;
 

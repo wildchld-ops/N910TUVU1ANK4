@@ -18,7 +18,6 @@
 
 .method public static containObjUnicode(Ljava/lang/String;)Z
     .locals 6
-    .param p0    # Ljava/lang/String;
 
     const/4 v3, 0x0
 

@@ -44,8 +44,6 @@
 
 .method synthetic constructor <init>(Lcom/android/settings/wifi/WifiCaptiveActivity;Lcom/android/settings/wifi/WifiCaptiveActivity$1;)V
     .locals 0
-    .param p1    # Lcom/android/settings/wifi/WifiCaptiveActivity;
-    .param p2    # Lcom/android/settings/wifi/WifiCaptiveActivity$1;
 
     invoke-direct {p0, p1}, Lcom/android/settings/wifi/WifiCaptiveActivity$CaptivePortalCheckTask;-><init>(Lcom/android/settings/wifi/WifiCaptiveActivity;)V
 
@@ -56,7 +54,6 @@
 # virtual methods
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [Ljava/lang/Void;
 
@@ -69,7 +66,6 @@
 
 .method protected varargs doInBackground([Ljava/lang/Void;)Ljava/lang/Void;
     .locals 3
-    .param p1    # [Ljava/lang/Void;
 
     iget-object v0, p0, Lcom/android/settings/wifi/WifiCaptiveActivity$CaptivePortalCheckTask;->this$0:Lcom/android/settings/wifi/WifiCaptiveActivity;
 
@@ -125,7 +121,6 @@
 
 .method protected bridge synthetic onPostExecute(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Ljava/lang/Void;
 
@@ -136,7 +131,6 @@
 
 .method protected onPostExecute(Ljava/lang/Void;)V
     .locals 3
-    .param p1    # Ljava/lang/Void;
 
     # getter for: Lcom/android/settings/wifi/WifiCaptiveActivity;->DBG:Z
     invoke-static {}, Lcom/android/settings/wifi/WifiCaptiveActivity;->access$000()Z

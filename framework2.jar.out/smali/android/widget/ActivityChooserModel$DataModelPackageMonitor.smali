@@ -31,8 +31,6 @@
 
 .method synthetic constructor <init>(Landroid/widget/ActivityChooserModel;Landroid/widget/ActivityChooserModel$1;)V
     .locals 0
-    .param p1    # Landroid/widget/ActivityChooserModel;
-    .param p2    # Landroid/widget/ActivityChooserModel$1;
 
     invoke-direct {p0, p1}, Landroid/widget/ActivityChooserModel$DataModelPackageMonitor;-><init>(Landroid/widget/ActivityChooserModel;)V
 

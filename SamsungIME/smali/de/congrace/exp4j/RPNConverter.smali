@@ -14,7 +14,6 @@
 
 .method private static isOperatorCharacter(CLjava/util/Map;)Z
     .locals 4
-    .param p0    # C
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(C",
@@ -68,7 +67,6 @@
 
 .method private static substituteUnaryOperators(Ljava/lang/String;Ljava/util/Map;)Ljava/lang/String;
     .locals 9
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -252,7 +250,6 @@
 
 .method static toRPNExpression(Ljava/lang/String;Ljava/util/Map;Ljava/util/Map;Ljava/util/Map;)Lde/congrace/exp4j/RPNExpression;
     .locals 9
-    .param p0    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

@@ -38,7 +38,6 @@
 
 .method private constructor <init>(I)V
     .locals 0
-    .param p1    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -115,7 +114,6 @@
 
 .method public static declared-synchronized makeInstance(I)Lcom/sec/epdg/EpdgRilSharedData;
     .locals 4
-    .param p0    # I
 
     const-class v2, Lcom/sec/epdg/EpdgRilSharedData;
 
@@ -174,7 +172,6 @@
 # virtual methods
 .method public declared-synchronized getIWlanApnState(I)I
     .locals 3
-    .param p1    # I
 
     monitor-enter p0
 
@@ -265,8 +262,6 @@
 
 .method public declared-synchronized setIWlanApnState(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     monitor-enter p0
 
@@ -367,7 +362,6 @@
 
 .method public declared-synchronized setSmartWifiState(I)V
     .locals 1
-    .param p1    # I
 
     monitor-enter p0
 

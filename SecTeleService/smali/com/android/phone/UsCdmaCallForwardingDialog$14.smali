@@ -37,7 +37,7 @@
 
     sget-object v1, Lcom/android/phone/UsCdmaCallForwardingDialog$CFState;->ROAMING:Lcom/android/phone/UsCdmaCallForwardingDialog$CFState;
 
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    invoke-virtual {v1}, Lcom/android/phone/UsCdmaCallForwardingDialog$CFState;->ordinal()I
 
     move-result v1
 
@@ -53,7 +53,7 @@
 
     sget-object v1, Lcom/android/phone/UsCdmaCallForwardingDialog$CFState;->DISPLAY_GUIDE:Lcom/android/phone/UsCdmaCallForwardingDialog$CFState;
 
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    invoke-virtual {v1}, Lcom/android/phone/UsCdmaCallForwardingDialog$CFState;->ordinal()I
 
     move-result v1
 
@@ -69,7 +69,7 @@
 
     sget-object v1, Lcom/android/phone/UsCdmaCallForwardingDialog$CFState;->NEED_NUMBER_FIX:Lcom/android/phone/UsCdmaCallForwardingDialog$CFState;
 
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    invoke-virtual {v1}, Lcom/android/phone/UsCdmaCallForwardingDialog$CFState;->ordinal()I
 
     move-result v1
 
@@ -85,7 +85,7 @@
 
     sget-object v1, Lcom/android/phone/UsCdmaCallForwardingDialog$CFState;->DEACTIVATE:Lcom/android/phone/UsCdmaCallForwardingDialog$CFState;
 
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    invoke-virtual {v1}, Lcom/android/phone/UsCdmaCallForwardingDialog$CFState;->ordinal()I
 
     move-result v1
 
@@ -101,7 +101,7 @@
 
     sget-object v1, Lcom/android/phone/UsCdmaCallForwardingDialog$CFState;->IDLE:Lcom/android/phone/UsCdmaCallForwardingDialog$CFState;
 
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    invoke-virtual {v1}, Lcom/android/phone/UsCdmaCallForwardingDialog$CFState;->ordinal()I
 
     move-result v1
 

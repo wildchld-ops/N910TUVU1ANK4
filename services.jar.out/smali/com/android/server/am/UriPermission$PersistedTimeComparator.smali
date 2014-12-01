@@ -40,8 +40,6 @@
 # virtual methods
 .method public compare(Lcom/android/server/am/UriPermission;Lcom/android/server/am/UriPermission;)I
     .locals 4
-    .param p1    # Lcom/android/server/am/UriPermission;
-    .param p2    # Lcom/android/server/am/UriPermission;
 
     iget-wide v0, p1, Lcom/android/server/am/UriPermission;->persistedCreateTime:J
 
@@ -56,8 +54,6 @@
 
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p1, Lcom/android/server/am/UriPermission;
 

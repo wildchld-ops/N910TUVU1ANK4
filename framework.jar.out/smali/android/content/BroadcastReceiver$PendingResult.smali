@@ -47,14 +47,6 @@
 # direct methods
 .method public constructor <init>(ILjava/lang/String;Landroid/os/Bundle;IZZLandroid/os/IBinder;I)V
     .locals 0
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/os/Bundle;
-    .param p4    # I
-    .param p5    # Z
-    .param p6    # Z
-    .param p7    # Landroid/os/IBinder;
-    .param p8    # I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -218,7 +210,6 @@
 
 .method public final getResultExtras(Z)Landroid/os/Bundle;
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Landroid/content/BroadcastReceiver$PendingResult;->mResultExtras:Landroid/os/Bundle;
 
@@ -254,7 +245,6 @@
 
 .method public sendFinished(Landroid/app/IActivityManager;)V
     .locals 6
-    .param p1    # Landroid/app/IActivityManager;
 
     monitor-enter p0
 
@@ -358,7 +348,6 @@
 
 .method public setExtrasClassLoader(Ljava/lang/ClassLoader;)V
     .locals 1
-    .param p1    # Ljava/lang/ClassLoader;
 
     iget-object v0, p0, Landroid/content/BroadcastReceiver$PendingResult;->mResultExtras:Landroid/os/Bundle;
 
@@ -374,9 +363,6 @@
 
 .method public final setResult(ILjava/lang/String;Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/os/Bundle;
 
     invoke-virtual {p0}, Landroid/content/BroadcastReceiver$PendingResult;->checkSynchronousHint()V
 
@@ -391,7 +377,6 @@
 
 .method public final setResultCode(I)V
     .locals 0
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/content/BroadcastReceiver$PendingResult;->checkSynchronousHint()V
 
@@ -402,7 +387,6 @@
 
 .method public final setResultData(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Landroid/content/BroadcastReceiver$PendingResult;->checkSynchronousHint()V
 
@@ -413,7 +397,6 @@
 
 .method public final setResultExtras(Landroid/os/Bundle;)V
     .locals 0
-    .param p1    # Landroid/os/Bundle;
 
     invoke-virtual {p0}, Landroid/content/BroadcastReceiver$PendingResult;->checkSynchronousHint()V
 

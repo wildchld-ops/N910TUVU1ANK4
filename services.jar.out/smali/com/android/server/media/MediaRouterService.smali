@@ -76,7 +76,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Landroid/media/IMediaRouterService$Stub;-><init>()V
 
@@ -115,7 +114,6 @@
 
 .method static synthetic access$000(Lcom/android/server/media/MediaRouterService;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/server/media/MediaRouterService;
 
     iget-object v0, p0, Lcom/android/server/media/MediaRouterService;->mContext:Landroid/content/Context;
 
@@ -124,7 +122,6 @@
 
 .method static synthetic access$100(Lcom/android/server/media/MediaRouterService;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Lcom/android/server/media/MediaRouterService;
 
     iget-object v0, p0, Lcom/android/server/media/MediaRouterService;->mLock:Ljava/lang/Object;
 
@@ -133,8 +130,6 @@
 
 .method private disposeClientLocked(Lcom/android/server/media/MediaRouterService$ClientRecord;Z)V
     .locals 3
-    .param p1    # Lcom/android/server/media/MediaRouterService$ClientRecord;
-    .param p2    # Z
 
     sget-boolean v0, Lcom/android/server/media/MediaRouterService;->DEBUG:Z
 
@@ -216,7 +211,6 @@
 
 .method private disposeUserIfNeededLocked(Lcom/android/server/media/MediaRouterService$UserRecord;)V
     .locals 3
-    .param p1    # Lcom/android/server/media/MediaRouterService$UserRecord;
 
     iget v0, p1, Lcom/android/server/media/MediaRouterService$UserRecord;->mUserId:I
 
@@ -271,7 +265,6 @@
 
 .method private getStateLocked(Landroid/media/IMediaRouterClient;)Landroid/media/MediaRouterClientState;
     .locals 3
-    .param p1    # Landroid/media/IMediaRouterClient;
 
     iget-object v1, p0, Lcom/android/server/media/MediaRouterService;->mAllClientRecords:Landroid/util/ArrayMap;
 
@@ -302,7 +295,6 @@
 
 .method private initializeClientLocked(Lcom/android/server/media/MediaRouterService$ClientRecord;)V
     .locals 3
-    .param p1    # Lcom/android/server/media/MediaRouterService$ClientRecord;
 
     sget-boolean v0, Lcom/android/server/media/MediaRouterService;->DEBUG:Z
 
@@ -336,7 +328,6 @@
 
 .method private initializeUserLocked(Lcom/android/server/media/MediaRouterService$UserRecord;)V
     .locals 3
-    .param p1    # Lcom/android/server/media/MediaRouterService$UserRecord;
 
     sget-boolean v0, Lcom/android/server/media/MediaRouterService;->DEBUG:Z
 
@@ -383,11 +374,6 @@
 
 .method private registerClientLocked(Landroid/media/IMediaRouterClient;ILjava/lang/String;IZ)V
     .locals 10
-    .param p1    # Landroid/media/IMediaRouterClient;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
-    .param p5    # Z
 
     invoke-interface {p1}, Landroid/media/IMediaRouterClient;->asBinder()Landroid/os/IBinder;
 
@@ -479,9 +465,6 @@
 
 .method private requestSetVolumeLocked(Landroid/media/IMediaRouterClient;Ljava/lang/String;I)V
     .locals 5
-    .param p1    # Landroid/media/IMediaRouterClient;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     invoke-interface {p1}, Landroid/media/IMediaRouterClient;->asBinder()Landroid/os/IBinder;
 
@@ -517,9 +500,6 @@
 
 .method private requestUpdateVolumeLocked(Landroid/media/IMediaRouterClient;Ljava/lang/String;I)V
     .locals 5
-    .param p1    # Landroid/media/IMediaRouterClient;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     invoke-interface {p1}, Landroid/media/IMediaRouterClient;->asBinder()Landroid/os/IBinder;
 
@@ -555,9 +535,6 @@
 
 .method private setDiscoveryRequestLocked(Landroid/media/IMediaRouterClient;IZ)V
     .locals 5
-    .param p1    # Landroid/media/IMediaRouterClient;
-    .param p2    # I
-    .param p3    # Z
 
     invoke-interface {p1}, Landroid/media/IMediaRouterClient;->asBinder()Landroid/os/IBinder;
 
@@ -652,9 +629,6 @@
 
 .method private setSelectedRouteLocked(Landroid/media/IMediaRouterClient;Ljava/lang/String;Z)V
     .locals 5
-    .param p1    # Landroid/media/IMediaRouterClient;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     iget-object v2, p0, Lcom/android/server/media/MediaRouterService;->mAllClientRecords:Landroid/util/ArrayMap;
 
@@ -772,8 +746,6 @@
 
 .method private unregisterClientLocked(Landroid/media/IMediaRouterClient;Z)V
     .locals 4
-    .param p1    # Landroid/media/IMediaRouterClient;
-    .param p2    # Z
 
     iget-object v2, p0, Lcom/android/server/media/MediaRouterService;->mAllClientRecords:Landroid/util/ArrayMap;
 
@@ -805,8 +777,6 @@
 
 .method private validatePackageName(ILjava/lang/String;)Z
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     if-eqz p2, :cond_1
 
@@ -859,7 +829,6 @@
 # virtual methods
 .method clientDied(Lcom/android/server/media/MediaRouterService$ClientRecord;)V
     .locals 3
-    .param p1    # Lcom/android/server/media/MediaRouterService$ClientRecord;
 
     iget-object v1, p0, Lcom/android/server/media/MediaRouterService;->mLock:Ljava/lang/Object;
 
@@ -888,9 +857,6 @@
 
 .method public dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     iget-object v3, p0, Lcom/android/server/media/MediaRouterService;->mContext:Landroid/content/Context;
 
@@ -1027,7 +993,6 @@
 
 .method public getState(Landroid/media/IMediaRouterClient;)Landroid/media/MediaRouterClientState;
     .locals 4
-    .param p1    # Landroid/media/IMediaRouterClient;
 
     if-nez p1, :cond_0
 
@@ -1109,9 +1074,6 @@
 
 .method public registerClientAsUser(Landroid/media/IMediaRouterClient;Ljava/lang/String;I)V
     .locals 11
-    .param p1    # Landroid/media/IMediaRouterClient;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     const/4 v4, 0x1
 
@@ -1232,9 +1194,6 @@
 
 .method public requestSetVolume(Landroid/media/IMediaRouterClient;Ljava/lang/String;I)V
     .locals 4
-    .param p1    # Landroid/media/IMediaRouterClient;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     if-nez p1, :cond_0
 
@@ -1303,9 +1262,6 @@
 
 .method public requestUpdateVolume(Landroid/media/IMediaRouterClient;Ljava/lang/String;I)V
     .locals 4
-    .param p1    # Landroid/media/IMediaRouterClient;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     if-nez p1, :cond_0
 
@@ -1374,9 +1330,6 @@
 
 .method public setDiscoveryRequest(Landroid/media/IMediaRouterClient;IZ)V
     .locals 4
-    .param p1    # Landroid/media/IMediaRouterClient;
-    .param p2    # I
-    .param p3    # Z
 
     if-nez p1, :cond_0
 
@@ -1434,9 +1387,6 @@
 
 .method public setSelectedRoute(Landroid/media/IMediaRouterClient;Ljava/lang/String;Z)V
     .locals 4
-    .param p1    # Landroid/media/IMediaRouterClient;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Z
 
     if-nez p1, :cond_0
 
@@ -1586,7 +1536,6 @@
 
 .method public unregisterClient(Landroid/media/IMediaRouterClient;)V
     .locals 4
-    .param p1    # Landroid/media/IMediaRouterClient;
 
     if-nez p1, :cond_0
 

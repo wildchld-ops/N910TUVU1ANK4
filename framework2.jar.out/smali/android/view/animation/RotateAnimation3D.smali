@@ -140,8 +140,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 10
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v9, 0x1
 
@@ -426,8 +424,6 @@
 # virtual methods
 .method protected applyTransformation(FLandroid/view/animation/Transformation;)V
     .locals 12
-    .param p1    # F
-    .param p2    # Landroid/view/animation/Transformation;
 
     invoke-virtual {p2}, Landroid/view/animation/Transformation;->getTransformationType()I
 
@@ -514,10 +510,6 @@
 
 .method public initialize(IIII)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     const/4 v1, 0x1
 
@@ -627,7 +619,6 @@
 
 .method public setAbsolute(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/view/animation/RotateAnimation3D;->isAbsolute:Z
 
@@ -636,8 +627,6 @@
 
 .method public setFadeValues(FF)V
     .locals 0
-    .param p1    # F
-    .param p2    # F
 
     iput p1, p0, Landroid/view/animation/RotateAnimation3D;->fadeFrom:F
 
@@ -648,7 +637,6 @@
 
 .method public setFinalAngle(F)Z
     .locals 1
-    .param p1    # F
 
     iput p1, p0, Landroid/view/animation/RotateAnimation3D;->toAngleDeg:F
 
@@ -659,7 +647,6 @@
 
 .method public setInitialAngle(F)Z
     .locals 1
-    .param p1    # F
 
     iput p1, p0, Landroid/view/animation/RotateAnimation3D;->fromAngleDeg:F
 

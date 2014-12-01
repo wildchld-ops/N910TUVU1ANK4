@@ -71,9 +71,6 @@
 
 .method private handleWidget(Landroid/database/sqlite/SQLiteDatabase;Landroid/net/Uri;Landroid/content/ContentValues;)Landroid/net/Uri;
     .locals 21
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p2    # Landroid/net/Uri;
-    .param p3    # Landroid/content/ContentValues;
 
     const-string v18, "itemType"
 
@@ -347,8 +344,6 @@
 
 .method private initValues(Landroid/net/Uri;Landroid/content/ContentValues;)V
     .locals 4
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Landroid/content/ContentValues;
 
     const-string v1, "initId"
 
@@ -419,9 +414,6 @@
 # virtual methods
 .method public delete(Landroid/net/Uri;Ljava/lang/String;[Ljava/lang/String;)I
     .locals 4
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Ljava/lang/String;
-    .param p3    # [Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/launcher2/LauncherProviderID;->getLauncherProvider()Lcom/android/launcher2/LauncherProvider;
 
@@ -480,7 +472,6 @@
 
 .method public getType(Landroid/net/Uri;)Ljava/lang/String;
     .locals 2
-    .param p1    # Landroid/net/Uri;
 
     invoke-direct {p0}, Lcom/android/launcher2/LauncherProviderID;->getLauncherProvider()Lcom/android/launcher2/LauncherProvider;
 
@@ -495,8 +486,6 @@
 
 .method public insert(Landroid/net/Uri;Landroid/content/ContentValues;)Landroid/net/Uri;
     .locals 5
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Landroid/content/ContentValues;
 
     invoke-direct {p0}, Lcom/android/launcher2/LauncherProviderID;->getLauncherProvider()Lcom/android/launcher2/LauncherProvider;
 
@@ -573,11 +562,6 @@
 
 .method public query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
     .locals 6
-    .param p1    # Landroid/net/Uri;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # [Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/launcher2/LauncherProviderID;->getLauncherProvider()Lcom/android/launcher2/LauncherProvider;
 
@@ -602,10 +586,6 @@
 
 .method public update(Landroid/net/Uri;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)I
     .locals 2
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Landroid/content/ContentValues;
-    .param p3    # Ljava/lang/String;
-    .param p4    # [Ljava/lang/String;
 
     invoke-direct {p0}, Lcom/android/launcher2/LauncherProviderID;->getLauncherProvider()Lcom/android/launcher2/LauncherProvider;
 

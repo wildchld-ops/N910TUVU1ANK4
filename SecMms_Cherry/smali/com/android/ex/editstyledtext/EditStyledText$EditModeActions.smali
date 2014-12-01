@@ -127,9 +127,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/ex/editstyledtext/EditStyledText;Lcom/android/ex/editstyledtext/EditStyledText;Lcom/android/ex/editstyledtext/EditStyledText$EditorManager;Lcom/android/ex/editstyledtext/EditStyledText$StyledTextDialog;)V
     .locals 3
-    .param p2    # Lcom/android/ex/editstyledtext/EditStyledText;
-    .param p3    # Lcom/android/ex/editstyledtext/EditStyledText$EditorManager;
-    .param p4    # Lcom/android/ex/editstyledtext/EditStyledText$StyledTextDialog;
 
     const/4 v1, 0x0
 
@@ -586,7 +583,6 @@
 
 .method static synthetic access$1800(Lcom/android/ex/editstyledtext/EditStyledText$EditModeActions;)Lcom/android/ex/editstyledtext/EditStyledText;
     .locals 1
-    .param p0    # Lcom/android/ex/editstyledtext/EditStyledText$EditModeActions;
 
     iget-object v0, p0, Lcom/android/ex/editstyledtext/EditStyledText$EditModeActions;->mEST:Lcom/android/ex/editstyledtext/EditStyledText;
 
@@ -595,7 +591,6 @@
 
 .method static synthetic access$2000(Lcom/android/ex/editstyledtext/EditStyledText$EditModeActions;)Lcom/android/ex/editstyledtext/EditStyledText$EditorManager;
     .locals 1
-    .param p0    # Lcom/android/ex/editstyledtext/EditStyledText$EditModeActions;
 
     iget-object v0, p0, Lcom/android/ex/editstyledtext/EditStyledText$EditModeActions;->mManager:Lcom/android/ex/editstyledtext/EditStyledText$EditorManager;
 
@@ -604,7 +599,6 @@
 
 .method static synthetic access$2200(Lcom/android/ex/editstyledtext/EditStyledText$EditModeActions;)I
     .locals 1
-    .param p0    # Lcom/android/ex/editstyledtext/EditStyledText$EditModeActions;
 
     iget v0, p0, Lcom/android/ex/editstyledtext/EditStyledText$EditModeActions;->mMode:I
 
@@ -613,7 +607,6 @@
 
 .method static synthetic access$3900(Lcom/android/ex/editstyledtext/EditStyledText$EditModeActions;)Lcom/android/ex/editstyledtext/EditStyledText$StyledTextDialog;
     .locals 1
-    .param p0    # Lcom/android/ex/editstyledtext/EditStyledText$EditModeActions;
 
     iget-object v0, p0, Lcom/android/ex/editstyledtext/EditStyledText$EditModeActions;->mDialog:Lcom/android/ex/editstyledtext/EditStyledText$StyledTextDialog;
 
@@ -622,7 +615,6 @@
 
 .method private getAction(I)Lcom/android/ex/editstyledtext/EditStyledText$EditModeActions$EditModeActionBase;
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/ex/editstyledtext/EditStyledText$EditModeActions;->mActionMap:Ljava/util/HashMap;
 
@@ -661,8 +653,6 @@
 # virtual methods
 .method public addAction(ILcom/android/ex/editstyledtext/EditStyledText$EditModeActions$EditModeActionBase;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Lcom/android/ex/editstyledtext/EditStyledText$EditModeActions$EditModeActionBase;
 
     iget-object v0, p0, Lcom/android/ex/editstyledtext/EditStyledText$EditModeActions;->mActionMap:Ljava/util/HashMap;
 
@@ -689,7 +679,6 @@
 
 .method public doNext(I)Z
     .locals 5
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -811,7 +800,6 @@
 
 .method public onAction(I)V
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -822,8 +810,6 @@
 
 .method public onAction(ILjava/lang/Object;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Ljava/lang/Object;
 
     const/4 v0, 0x1
 
@@ -840,8 +826,6 @@
 
 .method public onAction(I[Ljava/lang/Object;)V
     .locals 1
-    .param p1    # I
-    .param p2    # [Ljava/lang/Object;
 
     invoke-direct {p0, p1}, Lcom/android/ex/editstyledtext/EditStyledText$EditModeActions;->getAction(I)Lcom/android/ex/editstyledtext/EditStyledText$EditModeActions$EditModeActionBase;
 

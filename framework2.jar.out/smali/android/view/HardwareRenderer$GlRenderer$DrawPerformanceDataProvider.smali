@@ -31,7 +31,6 @@
 # direct methods
 .method constructor <init>(Landroid/view/HardwareRenderer$GlRenderer;I)V
     .locals 0
-    .param p2    # I
 
     iput-object p1, p0, Landroid/view/HardwareRenderer$GlRenderer$DrawPerformanceDataProvider;->this$0:Landroid/view/HardwareRenderer$GlRenderer;
 
@@ -130,7 +129,6 @@
 
 .method prepare(Landroid/util/DisplayMetrics;)V
     .locals 2
-    .param p1    # Landroid/util/DisplayMetrics;
 
     iget v0, p1, Landroid/util/DisplayMetrics;->density:F
 
@@ -175,7 +173,6 @@
 
 .method setupCurrentFramePaint(Landroid/graphics/Paint;)V
     .locals 2
-    .param p1    # Landroid/graphics/Paint;
 
     const v0, -0x30a055b3
 
@@ -199,8 +196,6 @@
 
 .method setupGraphPaint(Landroid/graphics/Paint;I)V
     .locals 2
-    .param p1    # Landroid/graphics/Paint;
-    .param p2    # I
 
     # getter for: Landroid/view/HardwareRenderer$GlRenderer;->PROFILE_DRAW_COLORS:[I
     invoke-static {}, Landroid/view/HardwareRenderer$GlRenderer;->access$400()[I
@@ -229,7 +224,6 @@
 
 .method setupThresholdPaint(Landroid/graphics/Paint;)V
     .locals 1
-    .param p1    # Landroid/graphics/Paint;
 
     const v0, -0xa055b3
 

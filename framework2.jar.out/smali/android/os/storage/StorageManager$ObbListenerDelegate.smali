@@ -36,7 +36,6 @@
 # direct methods
 .method constructor <init>(Landroid/os/storage/StorageManager;Landroid/os/storage/OnObbStateChangeListener;)V
     .locals 2
-    .param p2    # Landroid/os/storage/OnObbStateChangeListener;
 
     iput-object p1, p0, Landroid/os/storage/StorageManager$ObbListenerDelegate;->this$0:Landroid/os/storage/StorageManager;
 
@@ -71,7 +70,6 @@
 
 .method static synthetic access$200(Landroid/os/storage/StorageManager$ObbListenerDelegate;)I
     .locals 1
-    .param p0    # Landroid/os/storage/StorageManager$ObbListenerDelegate;
 
     iget v0, p0, Landroid/os/storage/StorageManager$ObbListenerDelegate;->nonce:I
 
@@ -106,8 +104,6 @@
 
 .method sendObbStateChanged(Ljava/lang/String;I)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     new-instance v0, Landroid/os/storage/StorageManager$ObbStateChangedStorageEvent;
 

@@ -51,8 +51,6 @@
 # direct methods
 .method public constructor <init>(Landroid/net/wifi/WifiWatchdogStateMachine;Landroid/os/Looper;I)V
     .locals 4
-    .param p2    # Landroid/os/Looper;
-    .param p3    # I
 
     const/4 v3, 0x0
 
@@ -166,7 +164,6 @@
 
 .method static synthetic access$14400(Landroid/net/wifi/WifiWatchdogStateMachine$QualityResultHandler;)Ljava/lang/String;
     .locals 1
-    .param p0    # Landroid/net/wifi/WifiWatchdogStateMachine$QualityResultHandler;
 
     iget-object v0, p0, Landroid/net/wifi/WifiWatchdogStateMachine$QualityResultHandler;->TAG:Ljava/lang/String;
 
@@ -175,7 +172,6 @@
 
 .method static synthetic access$14500(Landroid/net/wifi/WifiWatchdogStateMachine$QualityResultHandler;)Ljava/text/SimpleDateFormat;
     .locals 1
-    .param p0    # Landroid/net/wifi/WifiWatchdogStateMachine$QualityResultHandler;
 
     iget-object v0, p0, Landroid/net/wifi/WifiWatchdogStateMachine$QualityResultHandler;->mDateFormat:Ljava/text/SimpleDateFormat;
 
@@ -184,7 +180,6 @@
 
 .method static synthetic access$7200(Landroid/net/wifi/WifiWatchdogStateMachine$QualityResultHandler;)V
     .locals 0
-    .param p0    # Landroid/net/wifi/WifiWatchdogStateMachine$QualityResultHandler;
 
     invoke-direct {p0}, Landroid/net/wifi/WifiWatchdogStateMachine$QualityResultHandler;->notifyDisconnect()V
 
@@ -293,7 +288,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 18
-    .param p1    # Landroid/os/Message;
 
     move-object/from16 v0, p0
 

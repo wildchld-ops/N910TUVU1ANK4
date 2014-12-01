@@ -35,7 +35,6 @@
 
 .method synthetic constructor <init>(Lcom/android/internal/widget/LockPatternUtils$1;)V
     .locals 0
-    .param p1    # Lcom/android/internal/widget/LockPatternUtils$1;
 
     invoke-direct {p0}, Lcom/android/internal/widget/LockPatternUtils$verifyCardCallback;-><init>()V
 

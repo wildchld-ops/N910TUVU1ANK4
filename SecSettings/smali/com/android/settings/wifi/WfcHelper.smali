@@ -52,8 +52,6 @@
 
 .method static enableWifi(ZLandroid/content/Context;)V
     .locals 2
-    .param p0    # Z
-    .param p1    # Landroid/content/Context;
 
     const-string v1, "wifi"
 
@@ -83,7 +81,6 @@
 
 .method static isAirplaneModeOn(Landroid/content/Context;)Z
     .locals 3
-    .param p0    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -107,7 +104,6 @@
 
 .method static isWfcProvisioned(Landroid/content/Context;)Z
     .locals 10
-    .param p0    # Landroid/content/Context;
 
     const/4 v8, 0x1
 
@@ -174,7 +170,6 @@
 
 .method static queryWfcState(Landroid/content/Context;)I
     .locals 8
-    .param p0    # Landroid/content/Context;
 
     const/4 v2, 0x0
 

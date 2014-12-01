@@ -36,7 +36,6 @@
 # virtual methods
 .method public onGroupInfoAvailable(Landroid/net/wifi/p2p/WifiP2pGroup;)V
     .locals 1
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pGroup;
 
     iget-object v0, p0, Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker$1$1;->this$1:Lcom/android/settings/wifi/p2p/WifiP2pDevicePicker$1;
 

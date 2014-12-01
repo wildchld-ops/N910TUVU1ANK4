@@ -23,8 +23,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/widget/Switch;)V
     .locals 3
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/widget/Switch;
 
     const/4 v2, 0x0
 
@@ -53,7 +51,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/location/LocationModeEnabler;)Landroid/content/Context;
     .locals 1
-    .param p0    # Lcom/android/settings/location/LocationModeEnabler;
 
     iget-object v0, p0, Lcom/android/settings/location/LocationModeEnabler;->mContext:Landroid/content/Context;
 
@@ -62,7 +59,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/location/LocationModeEnabler;)Landroid/widget/Switch;
     .locals 1
-    .param p0    # Lcom/android/settings/location/LocationModeEnabler;
 
     iget-object v0, p0, Lcom/android/settings/location/LocationModeEnabler;->mSwitch:Landroid/widget/Switch;
 
@@ -177,8 +173,6 @@
 # virtual methods
 .method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
     .locals 4
-    .param p1    # Landroid/widget/CompoundButton;
-    .param p2    # Z
 
     const/4 v1, 0x0
 
@@ -243,8 +237,6 @@
 
 .method public onModeChanged(IZ)V
     .locals 4
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v1, 0x1
 
@@ -423,7 +415,6 @@
 
 .method public setLocationMode(I)V
     .locals 4
-    .param p1    # I
 
     invoke-direct {p0}, Lcom/android/settings/location/LocationModeEnabler;->isRestricted()Z
 
@@ -560,7 +551,6 @@
 
 .method public setSwitch(Landroid/widget/Switch;)V
     .locals 6
-    .param p1    # Landroid/widget/Switch;
 
     const/4 v1, 0x1
 

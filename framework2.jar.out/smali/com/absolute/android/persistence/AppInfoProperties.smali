@@ -152,7 +152,6 @@
 
 .method private constructor <init>(Landroid/os/Parcel;)V
     .locals 7
-    .param p1    # Landroid/os/Parcel;
 
     const/4 v5, 0x0
 
@@ -402,8 +401,6 @@
 
 .method synthetic constructor <init>(Landroid/os/Parcel;Lcom/absolute/android/persistence/AppInfoProperties$1;)V
     .locals 0
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # Lcom/absolute/android/persistence/AppInfoProperties$1;
 
     invoke-direct {p0, p1}, Lcom/absolute/android/persistence/AppInfoProperties;-><init>(Landroid/os/Parcel;)V
 
@@ -422,7 +419,6 @@
 
 .method public getAppProfile(Lcom/absolute/android/persistence/AppProfile;)Lcom/absolute/android/persistence/AppProfile;
     .locals 22
-    .param p1    # Lcom/absolute/android/persistence/AppProfile;
 
     if-nez p1, :cond_0
 
@@ -924,8 +920,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 4
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     const/4 v2, 0x1
 

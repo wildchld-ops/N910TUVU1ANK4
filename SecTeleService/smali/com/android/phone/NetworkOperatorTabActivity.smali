@@ -140,7 +140,7 @@
 
     move-result-object v4
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/NetworkOperatorTabActivity;->getResources()Landroid/content/res/Resources;
 
     move-result-object v5
 
@@ -171,7 +171,7 @@
     .locals 5
     .param p1    # Landroid/os/Bundle;
 
-    invoke-super {p0, p1}, Landroid/app/ActivityGroup;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Landroid/app/TabActivity;->onCreate(Landroid/os/Bundle;)V
 
     const-string v2, "NetworkOperatorTab"
 
@@ -179,7 +179,7 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    invoke-virtual {p0}, Landroid/app/Activity;->getActionBar()Landroid/app/ActionBar;
+    invoke-virtual {p0}, Lcom/android/phone/NetworkOperatorTabActivity;->getActionBar()Landroid/app/ActionBar;
 
     move-result-object v0
 
@@ -190,7 +190,7 @@
     invoke-virtual {v0, v2}, Landroid/app/ActionBar;->setDisplayHomeAsUpEnabled(Z)V
 
     :cond_0
-    invoke-virtual {p0}, Landroid/app/TabActivity;->getTabHost()Landroid/widget/TabHost;
+    invoke-virtual {p0}, Lcom/android/phone/NetworkOperatorTabActivity;->getTabHost()Landroid/widget/TabHost;
 
     move-result-object v2
 
@@ -263,7 +263,7 @@
 
     if-ne v0, v1, :cond_0
 
-    invoke-virtual {p0}, Landroid/app/Activity;->finish()V
+    invoke-virtual {p0}, Lcom/android/phone/NetworkOperatorTabActivity;->finish()V
 
     const/4 v1, 0x1
 
@@ -271,7 +271,7 @@
     return v1
 
     :cond_0
-    invoke-super {p0, p1}, Landroid/app/Activity;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
+    invoke-super {p0, p1}, Landroid/app/TabActivity;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
 
     move-result v1
 
@@ -283,7 +283,7 @@
 
     const/4 v5, 0x0
 
-    invoke-super {p0}, Landroid/app/ActivityGroup;->onResume()V
+    invoke-super {p0}, Landroid/app/TabActivity;->onResume()V
 
     const/4 v2, 0x0
 
@@ -310,7 +310,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/NetworkOperatorTabActivity;->getResources()Landroid/content/res/Resources;
 
     move-result-object v3
 
@@ -350,7 +350,7 @@
 
     invoke-virtual {v1, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    invoke-virtual {v1, v5}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v1, v5}, Landroid/widget/TextView;->setVisibility(I)V
 
     add-int/lit8 v2, v2, 0x1
 

@@ -21,7 +21,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/settings/accounts/AccountSyncSettings$CheckSamsungAccountValidationTask;Landroid/content/Context;)V
     .locals 0
-    .param p2    # Landroid/content/Context;
 
     iput-object p1, p0, Lcom/android/settings/accounts/AccountSyncSettings$CheckSamsungAccountValidationTask$1;->this$1:Lcom/android/settings/accounts/AccountSyncSettings$CheckSamsungAccountValidationTask;
 

@@ -43,7 +43,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/bluetooth/RequestPermissionActivity;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/bluetooth/RequestPermissionActivity;
 
     iget-boolean v0, p0, Lcom/android/settings/bluetooth/RequestPermissionActivity;->mNeededToEnableBluetooth:Z
 
@@ -52,7 +51,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/bluetooth/RequestPermissionActivity;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/bluetooth/RequestPermissionActivity;
 
     iget-boolean v0, p0, Lcom/android/settings/bluetooth/RequestPermissionActivity;->mUserConfirmed:Z
 
@@ -61,7 +59,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/bluetooth/RequestPermissionActivity;)V
     .locals 0
-    .param p0    # Lcom/android/settings/bluetooth/RequestPermissionActivity;
 
     invoke-direct {p0}, Lcom/android/settings/bluetooth/RequestPermissionActivity;->proceedAndFinish()V
 
@@ -70,7 +67,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/bluetooth/RequestPermissionActivity;)Landroid/content/BroadcastReceiver;
     .locals 1
-    .param p0    # Lcom/android/settings/bluetooth/RequestPermissionActivity;
 
     iget-object v0, p0, Lcom/android/settings/bluetooth/RequestPermissionActivity;->mReceiver:Landroid/content/BroadcastReceiver;
 
@@ -79,7 +75,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/bluetooth/RequestPermissionActivity;)Landroid/app/AlertDialog;
     .locals 1
-    .param p0    # Lcom/android/settings/bluetooth/RequestPermissionActivity;
 
     iget-object v0, p0, Lcom/android/settings/bluetooth/RequestPermissionActivity;->mDialog:Landroid/app/AlertDialog;
 
@@ -465,9 +460,6 @@
 # virtual methods
 .method protected onActivityResult(IILandroid/content/Intent;)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     const/4 v1, 0x1
 
@@ -562,8 +554,6 @@
 
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 1
-    .param p1    # Landroid/content/DialogInterface;
-    .param p2    # I
 
     packed-switch p2, :pswitch_data_0
 
@@ -593,7 +583,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 0
-    .param p1    # Landroid/content/res/Configuration;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 

@@ -52,8 +52,6 @@
 
 .method public constructor <init>(Ljava/lang/String;Ljava/util/Locale;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/util/Locale;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -68,7 +66,6 @@
 # virtual methods
 .method public compareTo(Lcom/android/internal/app/LocalePicker$LocaleInfo;)I
     .locals 3
-    .param p1    # Lcom/android/internal/app/LocalePicker$LocaleInfo;
 
     sget-object v0, Lcom/android/internal/app/LocalePicker$LocaleInfo;->sCollator:Ljava/text/Collator;
 
@@ -85,7 +82,6 @@
 
 .method public bridge synthetic compareTo(Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Lcom/android/internal/app/LocalePicker$LocaleInfo;
 

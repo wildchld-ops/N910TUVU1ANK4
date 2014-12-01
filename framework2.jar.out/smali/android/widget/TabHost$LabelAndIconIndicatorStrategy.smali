@@ -28,8 +28,6 @@
 # direct methods
 .method private constructor <init>(Landroid/widget/TabHost;Ljava/lang/CharSequence;Landroid/graphics/drawable/Drawable;)V
     .locals 0
-    .param p2    # Ljava/lang/CharSequence;
-    .param p3    # Landroid/graphics/drawable/Drawable;
 
     iput-object p1, p0, Landroid/widget/TabHost$LabelAndIconIndicatorStrategy;->this$0:Landroid/widget/TabHost;
 
@@ -44,10 +42,6 @@
 
 .method synthetic constructor <init>(Landroid/widget/TabHost;Ljava/lang/CharSequence;Landroid/graphics/drawable/Drawable;Landroid/widget/TabHost$1;)V
     .locals 0
-    .param p1    # Landroid/widget/TabHost;
-    .param p2    # Ljava/lang/CharSequence;
-    .param p3    # Landroid/graphics/drawable/Drawable;
-    .param p4    # Landroid/widget/TabHost$1;
 
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/TabHost$LabelAndIconIndicatorStrategy;-><init>(Landroid/widget/TabHost;Ljava/lang/CharSequence;Landroid/graphics/drawable/Drawable;)V
 

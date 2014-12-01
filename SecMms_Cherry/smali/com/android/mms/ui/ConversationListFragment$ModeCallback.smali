@@ -45,8 +45,6 @@
 
 .method synthetic constructor <init>(Lcom/android/mms/ui/ConversationListFragment;Lcom/android/mms/ui/ConversationListFragment$1;)V
     .locals 0
-    .param p1    # Lcom/android/mms/ui/ConversationListFragment;
-    .param p2    # Lcom/android/mms/ui/ConversationListFragment$1;
 
     invoke-direct {p0, p1}, Lcom/android/mms/ui/ConversationListFragment$ModeCallback;-><init>(Lcom/android/mms/ui/ConversationListFragment;)V
 
@@ -55,7 +53,6 @@
 
 .method static synthetic access$900(Lcom/android/mms/ui/ConversationListFragment$ModeCallback;)Landroid/view/Menu;
     .locals 1
-    .param p0    # Lcom/android/mms/ui/ConversationListFragment$ModeCallback;
 
     iget-object v0, p0, Lcom/android/mms/ui/ConversationListFragment$ModeCallback;->mOptionMenu:Landroid/view/Menu;
 
@@ -66,8 +63,6 @@
 # virtual methods
 .method public onActionItemClicked(Landroid/view/ActionMode;Landroid/view/MenuItem;)Z
     .locals 17
-    .param p1    # Landroid/view/ActionMode;
-    .param p2    # Landroid/view/MenuItem;
 
     const/4 v3, 0x0
 
@@ -968,8 +963,6 @@
 
 .method public onCreateActionMode(Landroid/view/ActionMode;Landroid/view/Menu;)Z
     .locals 7
-    .param p1    # Landroid/view/ActionMode;
-    .param p2    # Landroid/view/Menu;
 
     const/4 v6, 0x0
 
@@ -1533,7 +1526,6 @@
 
 .method public onDestroyActionMode(Landroid/view/ActionMode;)V
     .locals 4
-    .param p1    # Landroid/view/ActionMode;
 
     const/4 v3, 0x0
 
@@ -1795,10 +1787,6 @@
 
 .method public onItemCheckedStateChanged(Landroid/view/ActionMode;IJZ)V
     .locals 10
-    .param p1    # Landroid/view/ActionMode;
-    .param p2    # I
-    .param p3    # J
-    .param p5    # Z
 
     const/4 v9, 0x0
 
@@ -2069,7 +2057,6 @@
 
 .method public onPopupItemClick(I)Z
     .locals 1
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -2099,8 +2086,6 @@
 
 .method public onPrepareActionMode(Landroid/view/ActionMode;Landroid/view/Menu;)Z
     .locals 6
-    .param p1    # Landroid/view/ActionMode;
-    .param p2    # Landroid/view/Menu;
 
     const/4 v5, 0x0
 

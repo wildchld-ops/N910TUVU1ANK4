@@ -103,7 +103,6 @@
 
 .method private setInteractive(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v1, p0, Landroid/widget/Toast$TN;->mParams:Landroid/view/WindowManager$LayoutParams;
 

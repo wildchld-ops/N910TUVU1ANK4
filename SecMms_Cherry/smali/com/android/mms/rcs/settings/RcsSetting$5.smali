@@ -21,7 +21,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/mms/rcs/settings/RcsSetting;Landroid/os/Handler;)V
     .locals 0
-    .param p2    # Landroid/os/Handler;
 
     iput-object p1, p0, Lcom/android/mms/rcs/settings/RcsSetting$5;->this$0:Lcom/android/mms/rcs/settings/RcsSetting;
 
@@ -34,8 +33,6 @@
 # virtual methods
 .method public onChange(ZLandroid/net/Uri;)V
     .locals 1
-    .param p1    # Z
-    .param p2    # Landroid/net/Uri;
 
     iget-object v0, p0, Lcom/android/mms/rcs/settings/RcsSetting$5;->this$0:Lcom/android/mms/rcs/settings/RcsSetting;
 

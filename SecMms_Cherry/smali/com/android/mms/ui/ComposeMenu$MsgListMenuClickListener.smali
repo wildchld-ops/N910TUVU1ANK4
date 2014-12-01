@@ -28,8 +28,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/mms/ui/ComposeMenu;Lcom/android/mms/ui/MessageItem;Landroid/view/View;)V
     .locals 0
-    .param p2    # Lcom/android/mms/ui/MessageItem;
-    .param p3    # Landroid/view/View;
 
     iput-object p1, p0, Lcom/android/mms/ui/ComposeMenu$MsgListMenuClickListener;->this$0:Lcom/android/mms/ui/ComposeMenu;
 
@@ -46,7 +44,6 @@
 # virtual methods
 .method public onMenuItemClick(Landroid/view/MenuItem;)Z
     .locals 29
-    .param p1    # Landroid/view/MenuItem;
 
     move-object/from16 v0, p0
 

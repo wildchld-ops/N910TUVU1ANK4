@@ -52,9 +52,6 @@
 
 .method public static createCircularGeofence(DDD)Landroid/hardware/location/GeofenceHardwareRequest;
     .locals 7
-    .param p0    # D
-    .param p2    # D
-    .param p4    # D
 
     new-instance v0, Landroid/hardware/location/GeofenceHardwareRequest;
 
@@ -73,9 +70,6 @@
 
 .method private setCircularGeofence(DDD)V
     .locals 1
-    .param p1    # D
-    .param p3    # D
-    .param p5    # D
 
     iput-wide p1, p0, Landroid/hardware/location/GeofenceHardwareRequest;->mLatitude:D
 
@@ -158,7 +152,6 @@
 
 .method public setLastTransition(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/hardware/location/GeofenceHardwareRequest;->mLastTransition:I
 
@@ -167,7 +160,6 @@
 
 .method public setMonitorTransitions(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/hardware/location/GeofenceHardwareRequest;->mMonitorTransitions:I
 
@@ -176,7 +168,6 @@
 
 .method public setNotificationResponsiveness(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/hardware/location/GeofenceHardwareRequest;->mNotificationResponsiveness:I
 
@@ -185,7 +176,6 @@
 
 .method public setUnknownTimer(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/hardware/location/GeofenceHardwareRequest;->mUnknownTimer:I
 

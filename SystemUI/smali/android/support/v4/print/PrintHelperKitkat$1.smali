@@ -47,11 +47,6 @@
 # virtual methods
 .method public onLayout(Landroid/print/PrintAttributes;Landroid/print/PrintAttributes;Landroid/os/CancellationSignal;Landroid/print/PrintDocumentAdapter$LayoutResultCallback;Landroid/os/Bundle;)V
     .locals 4
-    .param p1    # Landroid/print/PrintAttributes;
-    .param p2    # Landroid/print/PrintAttributes;
-    .param p3    # Landroid/os/CancellationSignal;
-    .param p4    # Landroid/print/PrintDocumentAdapter$LayoutResultCallback;
-    .param p5    # Landroid/os/Bundle;
 
     const/4 v0, 0x1
 
@@ -94,10 +89,6 @@
 
 .method public onWrite([Landroid/print/PageRange;Landroid/os/ParcelFileDescriptor;Landroid/os/CancellationSignal;Landroid/print/PrintDocumentAdapter$WriteResultCallback;)V
     .locals 11
-    .param p1    # [Landroid/print/PageRange;
-    .param p2    # Landroid/os/ParcelFileDescriptor;
-    .param p3    # Landroid/os/CancellationSignal;
-    .param p4    # Landroid/print/PrintDocumentAdapter$WriteResultCallback;
 
     const/high16 v10, 0x40000000
 

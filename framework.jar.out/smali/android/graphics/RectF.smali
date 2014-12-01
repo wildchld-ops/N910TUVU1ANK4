@@ -52,10 +52,6 @@
 
 .method public constructor <init>(FFFF)V
     .locals 0
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -72,7 +68,6 @@
 
 .method public constructor <init>(Landroid/graphics/Rect;)V
     .locals 1
-    .param p1    # Landroid/graphics/Rect;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -121,7 +116,6 @@
 
 .method public constructor <init>(Landroid/graphics/RectF;)V
     .locals 1
-    .param p1    # Landroid/graphics/RectF;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -162,8 +156,6 @@
 
 .method public static intersects(Landroid/graphics/RectF;Landroid/graphics/RectF;)Z
     .locals 2
-    .param p0    # Landroid/graphics/RectF;
-    .param p1    # Landroid/graphics/RectF;
 
     iget v0, p0, Landroid/graphics/RectF;->left:F
 
@@ -244,8 +236,6 @@
 
 .method public contains(FF)Z
     .locals 2
-    .param p1    # F
-    .param p2    # F
 
     iget v0, p0, Landroid/graphics/RectF;->left:F
 
@@ -300,10 +290,6 @@
 
 .method public contains(FFFF)Z
     .locals 2
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
 
     iget v0, p0, Landroid/graphics/RectF;->left:F
 
@@ -358,7 +344,6 @@
 
 .method public contains(Landroid/graphics/RectF;)Z
     .locals 2
-    .param p1    # Landroid/graphics/RectF;
 
     iget v0, p0, Landroid/graphics/RectF;->left:F
 
@@ -429,7 +414,6 @@
 
 .method public equals(Ljava/lang/Object;)Z
     .locals 5
-    .param p1    # Ljava/lang/Object;
 
     const/4 v1, 0x1
 
@@ -605,8 +589,6 @@
 
 .method public inset(FF)V
     .locals 1
-    .param p1    # F
-    .param p2    # F
 
     iget v0, p0, Landroid/graphics/RectF;->left:F
 
@@ -637,10 +619,6 @@
 
 .method public intersect(FFFF)Z
     .locals 1
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
 
     iget v0, p0, Landroid/graphics/RectF;->left:F
 
@@ -715,7 +693,6 @@
 
 .method public intersect(Landroid/graphics/RectF;)Z
     .locals 4
-    .param p1    # Landroid/graphics/RectF;
 
     iget v0, p1, Landroid/graphics/RectF;->left:F
 
@@ -734,10 +711,6 @@
 
 .method public intersects(FFFF)Z
     .locals 1
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
 
     iget v0, p0, Landroid/graphics/RectF;->left:F
 
@@ -807,8 +780,6 @@
 
 .method public offset(FF)V
     .locals 1
-    .param p1    # F
-    .param p2    # F
 
     iget v0, p0, Landroid/graphics/RectF;->left:F
 
@@ -839,8 +810,6 @@
 
 .method public offsetTo(FF)V
     .locals 2
-    .param p1    # F
-    .param p2    # F
 
     iget v0, p0, Landroid/graphics/RectF;->right:F
 
@@ -871,7 +840,6 @@
 
 .method public printShortString(Ljava/io/PrintWriter;)V
     .locals 2
-    .param p1    # Ljava/io/PrintWriter;
 
     const/16 v1, 0x2c
 
@@ -912,7 +880,6 @@
 
 .method public readFromParcel(Landroid/os/Parcel;)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readFloat()F
 
@@ -943,7 +910,6 @@
 
 .method public round(Landroid/graphics/Rect;)V
     .locals 4
-    .param p1    # Landroid/graphics/Rect;
 
     iget v0, p0, Landroid/graphics/RectF;->left:F
 
@@ -976,7 +942,6 @@
 
 .method public roundOut(Landroid/graphics/Rect;)V
     .locals 4
-    .param p1    # Landroid/graphics/Rect;
 
     iget v0, p0, Landroid/graphics/RectF;->left:F
 
@@ -1017,10 +982,6 @@
 
 .method public set(FFFF)V
     .locals 0
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
 
     iput p1, p0, Landroid/graphics/RectF;->left:F
 
@@ -1035,7 +996,6 @@
 
 .method public set(Landroid/graphics/Rect;)V
     .locals 1
-    .param p1    # Landroid/graphics/Rect;
 
     iget v0, p1, Landroid/graphics/Rect;->left:I
 
@@ -1066,7 +1026,6 @@
 
 .method public set(Landroid/graphics/RectF;)V
     .locals 1
-    .param p1    # Landroid/graphics/RectF;
 
     iget v0, p1, Landroid/graphics/RectF;->left:F
 
@@ -1105,8 +1064,6 @@
 
 .method public setIntersect(Landroid/graphics/RectF;Landroid/graphics/RectF;)Z
     .locals 2
-    .param p1    # Landroid/graphics/RectF;
-    .param p2    # Landroid/graphics/RectF;
 
     iget v0, p1, Landroid/graphics/RectF;->left:F
 
@@ -1249,7 +1206,6 @@
 
 .method public toShortString(Ljava/lang/StringBuilder;)Ljava/lang/String;
     .locals 2
-    .param p1    # Ljava/lang/StringBuilder;
 
     const/16 v1, 0x2c
 
@@ -1366,8 +1322,6 @@
 
 .method public union(FF)V
     .locals 1
-    .param p1    # F
-    .param p2    # F
 
     iget v0, p0, Landroid/graphics/RectF;->left:F
 
@@ -1416,10 +1370,6 @@
 
 .method public union(FFFF)V
     .locals 2
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
 
     cmpg-float v0, p1, p3
 
@@ -1498,7 +1448,6 @@
 
 .method public union(Landroid/graphics/RectF;)V
     .locals 4
-    .param p1    # Landroid/graphics/RectF;
 
     iget v0, p1, Landroid/graphics/RectF;->left:F
 
@@ -1527,8 +1476,6 @@
 
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
-    .param p1    # Landroid/os/Parcel;
-    .param p2    # I
 
     iget v0, p0, Landroid/graphics/RectF;->left:F
 

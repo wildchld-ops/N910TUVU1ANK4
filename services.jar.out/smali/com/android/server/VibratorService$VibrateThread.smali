@@ -25,7 +25,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/VibratorService;Lcom/android/server/VibratorService$Vibration;)V
     .locals 2
-    .param p2    # Lcom/android/server/VibratorService$Vibration;
 
     iput-object p1, p0, Lcom/android/server/VibratorService$VibrateThread;->this$0:Lcom/android/server/VibratorService;
 
@@ -69,7 +68,6 @@
 
 .method private delay(J)V
     .locals 6
-    .param p1    # J
 
     const-wide/16 v4, 0x0
 

@@ -183,7 +183,6 @@
 
 .method private isKhmerNeedCombineWithCOENGCommittedText(I)Z
     .locals 6
-    .param p1    # I
 
     const/4 v3, 0x1
 
@@ -240,7 +239,6 @@
 
 .method private setText(Ljava/lang/CharSequence;)V
     .locals 3
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v2, 0x1
 
@@ -295,7 +293,6 @@
 # virtual methods
 .method protected addCurrentTextToCandidate(Ljava/util/ArrayList;Ljava/lang/StringBuilder;)V
     .locals 8
-    .param p2    # Ljava/lang/StringBuilder;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -444,7 +441,6 @@
 
 .method protected appendChunjiinInComposing(I)V
     .locals 3
-    .param p1    # I
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -487,7 +483,6 @@
 
 .method protected appendJamoInComposing(I)V
     .locals 3
-    .param p1    # I
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -635,8 +630,6 @@
 
 .method protected checkAcceptableIndochina(Ljava/lang/String;I)Z
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v9, 0x3
 
@@ -851,8 +844,6 @@
 
 .method protected checkAcceptableThai(Ljava/lang/String;I)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v4, 0x0
 
@@ -924,7 +915,6 @@
 
 .method public commitTextAndInitComposing(Ljava/lang/CharSequence;)V
     .locals 11
-    .param p1    # Ljava/lang/CharSequence;
 
     iget-object v9, p0, Lcom/diotek/ime/framework/input/AbstractInputModule;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -1447,7 +1437,6 @@
 
 .method public getSecondaryChar(I)I
     .locals 9
-    .param p1    # I
 
     iget-object v6, p0, Lcom/diotek/ime/framework/input/AbstractInputModule;->mShiftStateController:Lcom/diotek/ime/framework/common/ShiftStateController;
 
@@ -1625,7 +1614,6 @@
 
 .method public isLaoAcceptable(I)Z
     .locals 9
-    .param p1    # I
 
     const/4 v6, 0x1
 
@@ -1756,7 +1744,6 @@
 
 .method public isZawgyiAcceptable(I)Z
     .locals 10
-    .param p1    # I
 
     const/4 v7, 0x1
 
@@ -1884,9 +1871,6 @@
 
 .method protected makeComposingText(Landroid/view/inputmethod/InputConnection;IZ)V
     .locals 6
-    .param p1    # Landroid/view/inputmethod/InputConnection;
-    .param p2    # I
-    .param p3    # Z
 
     const/4 v5, 0x0
 
@@ -1994,7 +1978,6 @@
 
 .method public onText(Ljava/lang/CharSequence;)V
     .locals 9
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v5, 0x1
 
@@ -2239,7 +2222,6 @@
 
 .method public postUpdateSequence(I)V
     .locals 4
-    .param p1    # I
 
     const/16 v3, 0x15
 
@@ -2268,7 +2250,6 @@
 
 .method public postUpdateSequenceAndSuggestionDelay(I)V
     .locals 4
-    .param p1    # I
 
     const/16 v3, 0x2b
 
@@ -2297,7 +2278,6 @@
 
 .method public postUpdateSequenceAndSuggestionDelayForRecapture(I)V
     .locals 4
-    .param p1    # I
 
     const/16 v3, 0x2d
 
@@ -2648,8 +2628,6 @@
 
 .method public previewTrace(IZ)V
     .locals 8
-    .param p1    # I
-    .param p2    # Z
 
     const/4 v0, 0x0
 
@@ -2854,8 +2832,6 @@
 
 .method protected processKeyForHwKeyboard(I[I)V
     .locals 5
-    .param p1    # I
-    .param p2    # [I
 
     const/4 v4, 0x1
 
@@ -2991,7 +2967,6 @@
 
 .method public removeTerm(I)V
     .locals 3
-    .param p1    # I
 
     const/4 v2, 0x1
 
@@ -3055,7 +3030,6 @@
 
 .method protected replaceSpaceToSymbol(Ljava/lang/StringBuilder;)V
     .locals 5
-    .param p1    # Ljava/lang/StringBuilder;
 
     const/4 v4, 0x0
 
@@ -3111,7 +3085,6 @@
 
 .method public setEmojiPredictionEnabled(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/diotek/ime/framework/input/AbstractInputModule;->mEngineManager:Lcom/diotek/ime/framework/engine/InputEngineManager;
 
@@ -3122,7 +3095,6 @@
 
 .method public setParameterForCapsLockState(Z)V
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Lcom/diotek/ime/framework/input/AbstractInputModule;->mEngineManager:Lcom/diotek/ime/framework/engine/InputEngineManager;
 
@@ -3169,7 +3141,6 @@
 
 .method protected updateSequence(Ljava/lang/StringBuilder;)V
     .locals 6
-    .param p1    # Ljava/lang/StringBuilder;
 
     const/4 v5, 0x1
 

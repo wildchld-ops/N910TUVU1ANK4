@@ -40,8 +40,6 @@
 
 .method public static get(Ljava/lang/String;Landroid/content/res/AssetManager;)Landroid/graphics/Typeface;
     .locals 3
-    .param p0    # Ljava/lang/String;
-    .param p1    # Landroid/content/res/AssetManager;
 
     sget-object v2, Lcom/android/settings/flipfont/FontCache;->fontCache:Ljava/util/Hashtable;
 

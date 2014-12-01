@@ -46,10 +46,6 @@
 
 .method public addressRemoved(Ljava/lang/String;Ljava/lang/String;II)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
 
     const-string v0, "[NETMGMT]"
 
@@ -84,10 +80,6 @@
 
 .method public addressUpdated(Ljava/lang/String;Ljava/lang/String;II)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # I
 
     const-string v0, "[NETMGMT]"
 
@@ -122,7 +114,6 @@
 
 .method public interfaceAdded(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "[NETMGMT]"
 
@@ -157,8 +148,6 @@
 
 .method public interfaceClassDataActivityChanged(Ljava/lang/String;Z)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const-string v0, "[NETMGMT]"
 
@@ -197,8 +186,6 @@
 
 .method public interfaceLinkStateChanged(Ljava/lang/String;Z)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const-string v1, "[NETMGMT]"
 
@@ -257,7 +244,6 @@
 
 .method public interfaceRemoved(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "[NETMGMT]"
 
@@ -292,8 +278,6 @@
 
 .method public interfaceStatusChanged(Ljava/lang/String;Z)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const-string v1, "[NETMGMT]"
 
@@ -336,8 +320,6 @@
 
 .method public limitReached(Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const-string v0, "[NETMGMT]"
 

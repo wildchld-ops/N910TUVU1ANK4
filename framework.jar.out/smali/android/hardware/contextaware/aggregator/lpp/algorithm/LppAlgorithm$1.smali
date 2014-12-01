@@ -46,8 +46,6 @@
 # virtual methods
 .method public compare(Landroid/hardware/contextaware/aggregator/lpp/LppLocation;Landroid/hardware/contextaware/aggregator/lpp/LppLocation;)I
     .locals 4
-    .param p1    # Landroid/hardware/contextaware/aggregator/lpp/LppLocation;
-    .param p2    # Landroid/hardware/contextaware/aggregator/lpp/LppLocation;
 
     iget-wide v0, p1, Landroid/hardware/contextaware/aggregator/lpp/LppLocation;->Capturedtime:J
 
@@ -83,8 +81,6 @@
 
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p1, Landroid/hardware/contextaware/aggregator/lpp/LppLocation;
 

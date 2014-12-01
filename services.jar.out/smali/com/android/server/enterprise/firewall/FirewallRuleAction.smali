@@ -72,7 +72,6 @@
 
 .method public setAction(I)Z
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -114,7 +113,6 @@
 
 .method public setIpAddress(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget v0, p0, Lcom/android/server/enterprise/firewall/FirewallRuleAction;->mAction:I
 
@@ -142,7 +140,6 @@
 
 .method public setPort(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget v0, p0, Lcom/android/server/enterprise/firewall/FirewallRuleAction;->mAction:I
 

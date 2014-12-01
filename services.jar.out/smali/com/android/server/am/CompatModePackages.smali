@@ -38,8 +38,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/am/ActivityManagerService;Ljava/io/File;)V
     .locals 13
-    .param p1    # Lcom/android/server/am/ActivityManagerService;
-    .param p2    # Ljava/io/File;
 
     const/4 v12, 0x1
 
@@ -308,7 +306,6 @@
 
 .method private getPackageFlags(Ljava/lang/String;)I
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/server/am/CompatModePackages;->mPackages:Ljava/util/HashMap;
 
@@ -335,8 +332,6 @@
 
 .method private setPackageScreenCompatModeLocked(Landroid/content/pm/ApplicationInfo;I)V
     .locals 13
-    .param p1    # Landroid/content/pm/ApplicationInfo;
-    .param p2    # I
 
     iget-object v7, p1, Landroid/content/pm/PackageItemInfo;->packageName:Ljava/lang/String;
 
@@ -627,7 +622,6 @@
 # virtual methods
 .method public compatibilityInfoForPackageLocked(Landroid/content/pm/ApplicationInfo;)Landroid/content/res/CompatibilityInfo;
     .locals 4
-    .param p1    # Landroid/content/pm/ApplicationInfo;
 
     new-instance v0, Landroid/content/res/CompatibilityInfo;
 
@@ -668,7 +662,6 @@
 
 .method public computeCompatModeLocked(Landroid/content/pm/ApplicationInfo;)I
     .locals 6
-    .param p1    # Landroid/content/pm/ApplicationInfo;
 
     const/4 v2, 0x1
 
@@ -807,7 +800,6 @@
 
 .method public getPackageAskCompatModeLocked(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/server/am/CompatModePackages;->getPackageFlags(Ljava/lang/String;)I
 
@@ -830,7 +822,6 @@
 
 .method public getPackageScreenCompatModeLocked(Ljava/lang/String;)I
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -890,8 +881,6 @@
 
 .method public handlePackageAddedLocked(Ljava/lang/String;Z)V
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const/16 v7, 0x12c
 
@@ -1235,7 +1224,6 @@
 
 .method public setFrontActivityAskCompatModeLocked(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v1, p0, Lcom/android/server/am/CompatModePackages;->mService:Lcom/android/server/am/ActivityManagerService;
 
@@ -1261,7 +1249,6 @@
 
 .method public setFrontActivityScreenCompatModeLocked(I)V
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lcom/android/server/am/CompatModePackages;->mService:Lcom/android/server/am/ActivityManagerService;
 
@@ -1298,8 +1285,6 @@
 
 .method public setPackageAskCompatModeLocked(Ljava/lang/String;Z)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # Z
 
     const/16 v5, 0x12c
 
@@ -1359,8 +1344,6 @@
 
 .method public setPackageScreenCompatModeLocked(Ljava/lang/String;I)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     const/4 v0, 0x0
 

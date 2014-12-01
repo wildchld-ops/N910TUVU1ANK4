@@ -33,15 +33,12 @@
 
 .method public onLayoutFailed(Ljava/lang/CharSequence;)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
 
     return-void
 .end method
 
 .method public onLayoutFinished(Landroid/print/PrintDocumentInfo;Z)V
     .locals 0
-    .param p1    # Landroid/print/PrintDocumentInfo;
-    .param p2    # Z
 
     return-void
 .end method

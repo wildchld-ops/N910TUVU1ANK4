@@ -30,7 +30,6 @@
 
 .method private getHwrLanguageType(I)I
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -102,7 +101,6 @@
 # virtual methods
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 15
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super/range {p0 .. p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
@@ -515,7 +513,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 

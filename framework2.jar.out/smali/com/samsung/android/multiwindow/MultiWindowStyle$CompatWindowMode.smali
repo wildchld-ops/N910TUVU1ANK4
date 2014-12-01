@@ -27,9 +27,6 @@
 # direct methods
 .method constructor <init>(Lcom/samsung/android/multiwindow/MultiWindowStyle;III)V
     .locals 0
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     iput-object p1, p0, Lcom/samsung/android/multiwindow/MultiWindowStyle$CompatWindowMode;->this$0:Lcom/samsung/android/multiwindow/MultiWindowStyle;
 

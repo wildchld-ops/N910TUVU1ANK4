@@ -149,7 +149,6 @@
 
 .method public static newInstance(Landroid/content/Context;)Lcom/diotek/ime/framework/acmanager/ACDownloadManager;
     .locals 1
-    .param p0    # Landroid/content/Context;
 
     sget-object v0, Lcom/diotek/ime/framework/acmanager/ACDownloadManager;->sInstance:Lcom/diotek/ime/framework/acmanager/ACDownloadManager;
 
@@ -173,14 +172,12 @@
 # virtual methods
 .method public cancelDownload(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method protected deleteCacheTempFile(Ljava/io/File;)V
     .locals 1
-    .param p1    # Ljava/io/File;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -205,14 +202,12 @@
 
 .method public deleteLanguage(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public download(I)Z
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -221,7 +216,6 @@
 
 .method public dummyDownload(ILjava/util/List;)V
     .locals 0
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -237,7 +231,6 @@
 
 .method protected extractFiles(Ljava/io/File;)Ljava/util/List;
     .locals 1
-    .param p1    # Ljava/io/File;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -383,7 +376,6 @@
 
 .method public register(ILjava/util/List;)V
     .locals 0
-    .param p1    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
@@ -429,22 +421,18 @@
 
 .method public setLivingLanguage(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method
 
 .method public setUpdateState(IZ)V
     .locals 0
-    .param p1    # I
-    .param p2    # Z
 
     return-void
 .end method
 
 .method public setUseLivingLanguageFromSetting(Z)V
     .locals 0
-    .param p1    # Z
 
     return-void
 .end method
@@ -457,7 +445,6 @@
 
 .method public declared-synchronized startProgressBarThread(Lcom/diotek/ime/framework/acmanager/ACDownloadManager$ACDownloadCB;)V
     .locals 0
-    .param p1    # Lcom/diotek/ime/framework/acmanager/ACDownloadManager$ACDownloadCB;
 
     monitor-enter p0
 
@@ -484,7 +471,6 @@
 
 .method public unregister(I)V
     .locals 0
-    .param p1    # I
 
     return-void
 .end method

@@ -190,8 +190,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/os/Handler;)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/Handler;
 
     const/4 v4, 0x0
 
@@ -394,7 +392,6 @@
 
 .method static synthetic access$100(Lcom/android/server/display/DisplayManagerService;)V
     .locals 0
-    .param p0    # Lcom/android/server/display/DisplayManagerService;
 
     invoke-direct {p0}, Lcom/android/server/display/DisplayManagerService;->registerDefaultDisplayAdapter()V
 
@@ -403,7 +400,6 @@
 
 .method static synthetic access$1000(Lcom/android/server/display/DisplayManagerService;)Lcom/android/server/display/DisplayManagerService$InputManagerFuncs;
     .locals 1
-    .param p0    # Lcom/android/server/display/DisplayManagerService;
 
     iget-object v0, p0, Lcom/android/server/display/DisplayManagerService;->mInputManagerFuncs:Lcom/android/server/display/DisplayManagerService$InputManagerFuncs;
 
@@ -412,8 +408,6 @@
 
 .method static synthetic access$1100(Lcom/android/server/display/DisplayManagerService;Lcom/android/server/display/DisplayDevice;)V
     .locals 0
-    .param p0    # Lcom/android/server/display/DisplayManagerService;
-    .param p1    # Lcom/android/server/display/DisplayDevice;
 
     invoke-direct {p0, p1}, Lcom/android/server/display/DisplayManagerService;->handleDisplayDeviceAdded(Lcom/android/server/display/DisplayDevice;)V
 
@@ -422,8 +416,6 @@
 
 .method static synthetic access$1200(Lcom/android/server/display/DisplayManagerService;Lcom/android/server/display/DisplayDevice;)V
     .locals 0
-    .param p0    # Lcom/android/server/display/DisplayManagerService;
-    .param p1    # Lcom/android/server/display/DisplayDevice;
 
     invoke-direct {p0, p1}, Lcom/android/server/display/DisplayManagerService;->handleDisplayDeviceChanged(Lcom/android/server/display/DisplayDevice;)V
 
@@ -432,8 +424,6 @@
 
 .method static synthetic access$1300(Lcom/android/server/display/DisplayManagerService;Lcom/android/server/display/DisplayDevice;)V
     .locals 0
-    .param p0    # Lcom/android/server/display/DisplayManagerService;
-    .param p1    # Lcom/android/server/display/DisplayDevice;
 
     invoke-direct {p0, p1}, Lcom/android/server/display/DisplayManagerService;->handleDisplayDeviceRemoved(Lcom/android/server/display/DisplayDevice;)V
 
@@ -442,8 +432,6 @@
 
 .method static synthetic access$1400(Lcom/android/server/display/DisplayManagerService;Z)V
     .locals 0
-    .param p0    # Lcom/android/server/display/DisplayManagerService;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/server/display/DisplayManagerService;->scheduleTraversalLocked(Z)V
 
@@ -452,8 +440,6 @@
 
 .method static synthetic access$1500(Lcom/android/server/display/DisplayManagerService;Lcom/android/server/display/DisplayManagerService$CallbackRecord;)V
     .locals 0
-    .param p0    # Lcom/android/server/display/DisplayManagerService;
-    .param p1    # Lcom/android/server/display/DisplayManagerService$CallbackRecord;
 
     invoke-direct {p0, p1}, Lcom/android/server/display/DisplayManagerService;->onCallbackDied(Lcom/android/server/display/DisplayManagerService$CallbackRecord;)V
 
@@ -462,7 +448,6 @@
 
 .method static synthetic access$200(Lcom/android/server/display/DisplayManagerService;)V
     .locals 0
-    .param p0    # Lcom/android/server/display/DisplayManagerService;
 
     invoke-direct {p0}, Lcom/android/server/display/DisplayManagerService;->registerAdditionalDisplayAdapters()V
 
@@ -471,9 +456,6 @@
 
 .method static synthetic access$300(Lcom/android/server/display/DisplayManagerService;II)V
     .locals 0
-    .param p0    # Lcom/android/server/display/DisplayManagerService;
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/server/display/DisplayManagerService;->deliverDisplayEvent(II)V
 
@@ -482,7 +464,6 @@
 
 .method static synthetic access$400(Lcom/android/server/display/DisplayManagerService;)Lcom/android/server/display/DisplayManagerService$WindowManagerFuncs;
     .locals 1
-    .param p0    # Lcom/android/server/display/DisplayManagerService;
 
     iget-object v0, p0, Lcom/android/server/display/DisplayManagerService;->mWindowManagerFuncs:Lcom/android/server/display/DisplayManagerService$WindowManagerFuncs;
 
@@ -491,7 +472,6 @@
 
 .method static synthetic access$500(Lcom/android/server/display/DisplayManagerService;)Lcom/android/server/display/DisplayManagerService$SyncRoot;
     .locals 1
-    .param p0    # Lcom/android/server/display/DisplayManagerService;
 
     iget-object v0, p0, Lcom/android/server/display/DisplayManagerService;->mSyncRoot:Lcom/android/server/display/DisplayManagerService$SyncRoot;
 
@@ -500,7 +480,6 @@
 
 .method static synthetic access$600(Lcom/android/server/display/DisplayManagerService;)Lcom/android/server/display/DisplayViewport;
     .locals 1
-    .param p0    # Lcom/android/server/display/DisplayManagerService;
 
     iget-object v0, p0, Lcom/android/server/display/DisplayManagerService;->mDefaultViewport:Lcom/android/server/display/DisplayViewport;
 
@@ -509,7 +488,6 @@
 
 .method static synthetic access$700(Lcom/android/server/display/DisplayManagerService;)Lcom/android/server/display/DisplayViewport;
     .locals 1
-    .param p0    # Lcom/android/server/display/DisplayManagerService;
 
     iget-object v0, p0, Lcom/android/server/display/DisplayManagerService;->mTempDefaultViewport:Lcom/android/server/display/DisplayViewport;
 
@@ -518,7 +496,6 @@
 
 .method static synthetic access$800(Lcom/android/server/display/DisplayManagerService;)Lcom/android/server/display/DisplayViewport;
     .locals 1
-    .param p0    # Lcom/android/server/display/DisplayManagerService;
 
     iget-object v0, p0, Lcom/android/server/display/DisplayManagerService;->mExternalTouchViewport:Lcom/android/server/display/DisplayViewport;
 
@@ -527,7 +504,6 @@
 
 .method static synthetic access$900(Lcom/android/server/display/DisplayManagerService;)Lcom/android/server/display/DisplayViewport;
     .locals 1
-    .param p0    # Lcom/android/server/display/DisplayManagerService;
 
     iget-object v0, p0, Lcom/android/server/display/DisplayManagerService;->mTempExternalTouchViewport:Lcom/android/server/display/DisplayViewport;
 
@@ -536,7 +512,6 @@
 
 .method private addLogicalDisplayLocked(Lcom/android/server/display/DisplayDevice;)V
     .locals 9
-    .param p1    # Lcom/android/server/display/DisplayDevice;
 
     const/4 v5, 0x1
 
@@ -692,7 +667,6 @@
 
 .method private assignDisplayIdLocked(Z)I
     .locals 2
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -713,7 +687,6 @@
 
 .method private assignLayerStackLocked(I)I
     .locals 0
-    .param p1    # I
 
     return p1
 .end method
@@ -736,7 +709,6 @@
 
 .method private configureDisplayInTransactionLocked(Lcom/android/server/display/DisplayDevice;)V
     .locals 7
-    .param p1    # Lcom/android/server/display/DisplayDevice;
 
     const/4 v4, 0x1
 
@@ -879,8 +851,6 @@
 
 .method private deliverDisplayEvent(II)V
     .locals 5
-    .param p1    # I
-    .param p2    # I
 
     iget-object v3, p0, Lcom/android/server/display/DisplayManagerService;->mSyncRoot:Lcom/android/server/display/DisplayManagerService$SyncRoot;
 
@@ -960,7 +930,6 @@
 
 .method private findLogicalDisplayForDeviceLocked(Lcom/android/server/display/DisplayDevice;)Lcom/android/server/display/LogicalDisplay;
     .locals 4
-    .param p1    # Lcom/android/server/display/DisplayDevice;
 
     iget-object v3, p0, Lcom/android/server/display/DisplayManagerService;->mLogicalDisplays:Landroid/util/SparseArray;
 
@@ -1003,7 +972,6 @@
 
 .method private handleDisplayDeviceAdded(Lcom/android/server/display/DisplayDevice;)V
     .locals 2
-    .param p1    # Lcom/android/server/display/DisplayDevice;
 
     iget-object v1, p0, Lcom/android/server/display/DisplayManagerService;->mSyncRoot:Lcom/android/server/display/DisplayManagerService$SyncRoot;
 
@@ -1028,7 +996,6 @@
 
 .method private handleDisplayDeviceAddedLocked(Lcom/android/server/display/DisplayDevice;)V
     .locals 9
-    .param p1    # Lcom/android/server/display/DisplayDevice;
 
     const/4 v8, 0x3
 
@@ -1259,7 +1226,6 @@
 
 .method private handleDisplayDeviceChanged(Lcom/android/server/display/DisplayDevice;)V
     .locals 4
-    .param p1    # Lcom/android/server/display/DisplayDevice;
 
     iget-object v1, p0, Lcom/android/server/display/DisplayManagerService;->mSyncRoot:Lcom/android/server/display/DisplayManagerService$SyncRoot;
 
@@ -1361,7 +1327,6 @@
 
 .method private handleDisplayDeviceRemoved(Lcom/android/server/display/DisplayDevice;)V
     .locals 2
-    .param p1    # Lcom/android/server/display/DisplayDevice;
 
     iget-object v1, p0, Lcom/android/server/display/DisplayManagerService;->mSyncRoot:Lcom/android/server/display/DisplayManagerService$SyncRoot;
 
@@ -1386,7 +1351,6 @@
 
 .method private handleDisplayDeviceRemovedLocked(Lcom/android/server/display/DisplayDevice;)V
     .locals 4
-    .param p1    # Lcom/android/server/display/DisplayDevice;
 
     iget-object v1, p0, Lcom/android/server/display/DisplayManagerService;->mDisplayDevices:Ljava/util/ArrayList;
 
@@ -1546,7 +1510,6 @@
 
 .method private onCallbackDied(Lcom/android/server/display/DisplayManagerService$CallbackRecord;)V
     .locals 3
-    .param p1    # Lcom/android/server/display/DisplayManagerService$CallbackRecord;
 
     iget-object v1, p0, Lcom/android/server/display/DisplayManagerService;->mSyncRoot:Lcom/android/server/display/DisplayManagerService$SyncRoot;
 
@@ -1719,7 +1682,6 @@
 
 .method private registerDisplayAdapterLocked(Lcom/android/server/display/DisplayAdapter;)V
     .locals 1
-    .param p1    # Lcom/android/server/display/DisplayAdapter;
 
     iget-object v0, p0, Lcom/android/server/display/DisplayManagerService;->mDisplayAdapters:Ljava/util/ArrayList;
 
@@ -1858,7 +1820,6 @@
 
 .method private saveWifiDisplayInfo(Lcom/android/server/display/DisplayDevice;)V
     .locals 0
-    .param p1    # Lcom/android/server/display/DisplayDevice;
 
     iput-object p1, p0, Lcom/android/server/display/DisplayManagerService;->wifiDevice:Lcom/android/server/display/DisplayDevice;
 
@@ -1867,7 +1828,6 @@
 
 .method private scheduleTraversalLocked(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-boolean v0, p0, Lcom/android/server/display/DisplayManagerService;->mPendingTraversal:Z
 
@@ -1895,8 +1855,6 @@
 
 .method private sendDisplayEventLocked(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     iget-object v1, p0, Lcom/android/server/display/DisplayManagerService;->mHandler:Lcom/android/server/display/DisplayManagerService$DisplayManagerHandler;
 
@@ -1915,9 +1873,6 @@
 
 .method private static setViewportLocked(Lcom/android/server/display/DisplayViewport;Lcom/android/server/display/LogicalDisplay;Lcom/android/server/display/DisplayDevice;)V
     .locals 1
-    .param p0    # Lcom/android/server/display/DisplayViewport;
-    .param p1    # Lcom/android/server/display/LogicalDisplay;
-    .param p2    # Lcom/android/server/display/DisplayDevice;
 
     const/4 v0, 0x1
 
@@ -1958,7 +1913,6 @@
 
 .method private startWifiDisplayScanLocked(Lcom/android/server/display/DisplayManagerService$CallbackRecord;)V
     .locals 2
-    .param p1    # Lcom/android/server/display/DisplayManagerService$CallbackRecord;
 
     iget-boolean v0, p1, Lcom/android/server/display/DisplayManagerService$CallbackRecord;->mWifiDisplayScanRequested:Z
 
@@ -1990,7 +1944,6 @@
 
 .method private stopWifiDisplayScanLocked(Lcom/android/server/display/DisplayManagerService$CallbackRecord;)V
     .locals 4
-    .param p1    # Lcom/android/server/display/DisplayManagerService$CallbackRecord;
 
     const/4 v3, 0x0
 
@@ -2088,7 +2041,6 @@
 
 .method private updateDisplayBlankingLocked(Lcom/android/server/display/DisplayDevice;)V
     .locals 2
-    .param p1    # Lcom/android/server/display/DisplayDevice;
 
     invoke-virtual {p1}, Lcom/android/server/display/DisplayDevice;->getDisplayDeviceInfoLocked()Lcom/android/server/display/DisplayDeviceInfo;
 
@@ -2127,8 +2079,6 @@
 
 .method private updateDisplayDeviceInfo(Lcom/android/server/display/DisplayDevice;Lcom/android/server/display/DisplayDevice;)Lcom/android/server/display/DisplayDevice;
     .locals 4
-    .param p1    # Lcom/android/server/display/DisplayDevice;
-    .param p2    # Lcom/android/server/display/DisplayDevice;
 
     const-string v1, "DisplayManagerService"
 
@@ -2335,8 +2285,6 @@
 
 .method private validatePackageName(ILjava/lang/String;)Z
     .locals 6
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     if-eqz p2, :cond_1
 
@@ -2389,8 +2337,6 @@
 # virtual methods
 .method public addScaledPid(ILjava/lang/String;)V
     .locals 2
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/server/display/DisplayManagerService;->mScaledPids:Ljava/util/HashMap;
 
@@ -2444,7 +2390,6 @@
 
 .method public connectWifiDisplay(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -2517,8 +2462,6 @@
 
 .method public connectWifiDisplayWithMode(ILjava/lang/String;)V
     .locals 5
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     if-nez p2, :cond_0
 
@@ -2591,7 +2534,6 @@
 
 .method public connectWifiDisplayWithPin(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -2664,14 +2606,6 @@
 
 .method public createVirtualDisplay(Landroid/os/IBinder;Ljava/lang/String;Ljava/lang/String;IIILandroid/view/Surface;I)I
     .locals 17
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
-    .param p5    # I
-    .param p6    # I
-    .param p7    # Landroid/view/Surface;
-    .param p8    # I
 
     invoke-static {}, Landroid/os/Binder;->getCallingUid()I
 
@@ -3104,9 +3038,6 @@
 
 .method public dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 13
-    .param p1    # Ljava/io/FileDescriptor;
-    .param p2    # Ljava/io/PrintWriter;
-    .param p3    # [Ljava/lang/String;
 
     iget-object v10, p0, Lcom/android/server/display/DisplayManagerService;->mContext:Landroid/content/Context;
 
@@ -3743,7 +3674,6 @@
 
 .method public enableOverlayMagnifier(Z)V
     .locals 3
-    .param p1    # Z
 
     const-string v0, "DisplayManagerService"
 
@@ -3781,10 +3711,6 @@
 
 .method public enableWfdServiceWifiDisplay(Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -3835,8 +3761,6 @@
 
 .method public enableWifiDisplay(Landroid/net/wifi/p2p/WifiP2pDevice;I)V
     .locals 3
-    .param p1    # Landroid/net/wifi/p2p/WifiP2pDevice;
-    .param p2    # I
 
     if-nez p1, :cond_0
 
@@ -3887,7 +3811,6 @@
 
 .method public forgetWifiDisplay(Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -4075,7 +3998,6 @@
 
 .method public getDisplayInfo(I)Landroid/view/DisplayInfo;
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -4088,8 +4010,6 @@
 
 .method public getDisplayInfoEx(ILandroid/os/IBinder;)Landroid/view/DisplayInfo;
     .locals 18
-    .param p1    # I
-    .param p2    # Landroid/os/IBinder;
 
     invoke-static {}, Landroid/os/Binder;->getCallingPid()I
 
@@ -4456,7 +4376,6 @@
 
 .method public getLastConnectedDisplay(Z)Landroid/hardware/display/WifiDisplay;
     .locals 2
-    .param p1    # Z
 
     iget-object v1, p0, Lcom/android/server/display/DisplayManagerService;->mSyncRoot:Lcom/android/server/display/DisplayManagerService$SyncRoot;
 
@@ -4606,7 +4525,6 @@
 
 .method public isConnWithPinSupported(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/server/display/DisplayManagerService;->mSyncRoot:Lcom/android/server/display/DisplayManagerService$SyncRoot;
 
@@ -5155,7 +5073,6 @@
 
 .method public registerCallback(Landroid/hardware/display/IDisplayManagerCallback;)V
     .locals 7
-    .param p1    # Landroid/hardware/display/IDisplayManagerCallback;
 
     if-nez p1, :cond_0
 
@@ -5245,7 +5162,6 @@
 
 .method public registerDisplayTransactionListener(Lcom/android/server/display/DisplayTransactionListener;)V
     .locals 2
-    .param p1    # Lcom/android/server/display/DisplayTransactionListener;
 
     if-nez p1, :cond_0
 
@@ -5267,7 +5183,6 @@
 
 .method public releaseVirtualDisplay(Landroid/os/IBinder;)V
     .locals 5
-    .param p1    # Landroid/os/IBinder;
 
     invoke-static {}, Landroid/os/Binder;->clearCallingIdentity()J
 
@@ -5338,7 +5253,6 @@
 
 .method public removeScaledPid(I)V
     .locals 2
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/server/display/DisplayManagerService;->mScaledPids:Ljava/util/HashMap;
 
@@ -5376,7 +5290,6 @@
 
 .method public renameDongle(Ljava/lang/String;)V
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/server/display/DisplayManagerService;->mSyncRoot:Lcom/android/server/display/DisplayManagerService$SyncRoot;
 
@@ -5408,8 +5321,6 @@
 
 .method public renameWifiDisplay(Ljava/lang/String;Ljava/lang/String;)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -5627,9 +5538,6 @@
 
 .method public setDisplayHasContent(IZZ)V
     .locals 3
-    .param p1    # I
-    .param p2    # Z
-    .param p3    # Z
 
     iget-object v2, p0, Lcom/android/server/display/DisplayManagerService;->mSyncRoot:Lcom/android/server/display/DisplayManagerService$SyncRoot;
 
@@ -5673,8 +5581,6 @@
 
 .method public setDisplayInfoOverrideFromWindowManager(ILandroid/view/DisplayInfo;)V
     .locals 3
-    .param p1    # I
-    .param p2    # Landroid/view/DisplayInfo;
 
     iget-object v2, p0, Lcom/android/server/display/DisplayManagerService;->mSyncRoot:Lcom/android/server/display/DisplayManagerService$SyncRoot;
 
@@ -5722,7 +5628,6 @@
 
 .method public setInputManager(Lcom/android/server/display/DisplayManagerService$InputManagerFuncs;)V
     .locals 2
-    .param p1    # Lcom/android/server/display/DisplayManagerService$InputManagerFuncs;
 
     iget-object v1, p0, Lcom/android/server/display/DisplayManagerService;->mSyncRoot:Lcom/android/server/display/DisplayManagerService$SyncRoot;
 
@@ -5751,9 +5656,6 @@
 
 .method public setMagnificationSettings(IIF)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # F
 
     const-string v0, "DisplayManagerService"
 
@@ -5817,7 +5719,6 @@
 
 .method public setMagnificationSpec(Landroid/view/MagnificationSpec;)V
     .locals 1
-    .param p1    # Landroid/view/MagnificationSpec;
 
     iget-object v0, p0, Lcom/android/server/display/DisplayManagerService;->mMagnifierDisplayAdapter:Lcom/android/server/display/MagnifierDisplayAdapter;
 
@@ -5833,9 +5734,6 @@
 
 .method public setParameter(IILjava/lang/String;)I
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/server/display/DisplayManagerService;->mSyncRoot:Lcom/android/server/display/DisplayManagerService$SyncRoot;
 
@@ -5876,7 +5774,6 @@
 
 .method public setWindowManager(Lcom/android/server/display/DisplayManagerService$WindowManagerFuncs;)V
     .locals 2
-    .param p1    # Lcom/android/server/display/DisplayManagerService$WindowManagerFuncs;
 
     iget-object v1, p0, Lcom/android/server/display/DisplayManagerService;->mSyncRoot:Lcom/android/server/display/DisplayManagerService$SyncRoot;
 
@@ -6112,8 +6009,6 @@
 
 .method public systemReady(ZZ)V
     .locals 2
-    .param p1    # Z
-    .param p2    # Z
 
     iget-object v1, p0, Lcom/android/server/display/DisplayManagerService;->mSyncRoot:Lcom/android/server/display/DisplayManagerService$SyncRoot;
 
@@ -6188,7 +6083,6 @@
 
 .method public unregisterDisplayTransactionListener(Lcom/android/server/display/DisplayTransactionListener;)V
     .locals 2
-    .param p1    # Lcom/android/server/display/DisplayTransactionListener;
 
     if-nez p1, :cond_0
 

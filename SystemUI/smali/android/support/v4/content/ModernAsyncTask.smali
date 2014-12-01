@@ -170,7 +170,6 @@
 
 .method static synthetic access$200(Landroid/support/v4/content/ModernAsyncTask;)Ljava/util/concurrent/atomic/AtomicBoolean;
     .locals 1
-    .param p0    # Landroid/support/v4/content/ModernAsyncTask;
 
     iget-object v0, p0, Landroid/support/v4/content/ModernAsyncTask;->mTaskInvoked:Ljava/util/concurrent/atomic/AtomicBoolean;
 
@@ -179,8 +178,6 @@
 
 .method static synthetic access$300(Landroid/support/v4/content/ModernAsyncTask;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p0    # Landroid/support/v4/content/ModernAsyncTask;
-    .param p1    # Ljava/lang/Object;
 
     invoke-direct {p0, p1}, Landroid/support/v4/content/ModernAsyncTask;->postResult(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -191,8 +188,6 @@
 
 .method static synthetic access$400(Landroid/support/v4/content/ModernAsyncTask;Ljava/lang/Object;)V
     .locals 0
-    .param p0    # Landroid/support/v4/content/ModernAsyncTask;
-    .param p1    # Ljava/lang/Object;
 
     invoke-direct {p0, p1}, Landroid/support/v4/content/ModernAsyncTask;->postResultIfNotInvoked(Ljava/lang/Object;)V
 
@@ -201,8 +196,6 @@
 
 .method static synthetic access$500(Landroid/support/v4/content/ModernAsyncTask;Ljava/lang/Object;)V
     .locals 0
-    .param p0    # Landroid/support/v4/content/ModernAsyncTask;
-    .param p1    # Ljava/lang/Object;
 
     invoke-direct {p0, p1}, Landroid/support/v4/content/ModernAsyncTask;->finish(Ljava/lang/Object;)V
 
@@ -211,7 +204,6 @@
 
 .method public static execute(Ljava/lang/Runnable;)V
     .locals 1
-    .param p0    # Ljava/lang/Runnable;
 
     sget-object v0, Landroid/support/v4/content/ModernAsyncTask;->sDefaultExecutor:Ljava/util/concurrent/Executor;
 
@@ -314,7 +306,6 @@
 
 .method public static setDefaultExecutor(Ljava/util/concurrent/Executor;)V
     .locals 0
-    .param p0    # Ljava/util/concurrent/Executor;
 
     sput-object p0, Landroid/support/v4/content/ModernAsyncTask;->sDefaultExecutor:Ljava/util/concurrent/Executor;
 
@@ -325,7 +316,6 @@
 # virtual methods
 .method public final cancel(Z)Z
     .locals 1
-    .param p1    # Z
 
     iget-object v0, p0, Landroid/support/v4/content/ModernAsyncTask;->mFuture:Ljava/util/concurrent/FutureTask;
 
@@ -365,7 +355,6 @@
 
 .method public final varargs executeOnExecutor(Ljava/util/concurrent/Executor;[Ljava/lang/Object;)Landroid/support/v4/content/ModernAsyncTask;
     .locals 2
-    .param p1    # Ljava/util/concurrent/Executor;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -462,8 +451,6 @@
 
 .method public final get(JLjava/util/concurrent/TimeUnit;)Ljava/lang/Object;
     .locals 1
-    .param p1    # J
-    .param p3    # Ljava/util/concurrent/TimeUnit;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(J",

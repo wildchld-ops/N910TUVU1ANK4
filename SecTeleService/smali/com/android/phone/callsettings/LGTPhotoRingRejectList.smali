@@ -631,7 +631,7 @@
 .method private addUnknownItem()V
     .locals 6
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/LGTPhotoRingRejectList;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 
@@ -671,7 +671,7 @@
 
     new-instance v3, Lcom/android/phone/callsettings/LGTPhotoRingRejectList$AutoRejectItem;
 
-    invoke-virtual {p0, v0}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lcom/android/phone/callsettings/LGTPhotoRingRejectList;->getString(I)Ljava/lang/String;
 
     move-result-object v4
 
@@ -755,7 +755,7 @@
 
     move-object v1, p0
 
-    invoke-virtual/range {v0 .. v5}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->startFragment(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;I)Z
+    invoke-virtual/range {v0 .. v5}, Lcom/android/phone/callsettings/LGTPhotoRingRejectList;->startFragment(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;I)Z
 
     :goto_0
     return-void
@@ -773,7 +773,7 @@
 
     move-object v1, p0
 
-    invoke-virtual/range {v0 .. v5}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->startFragment(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;I)Z
+    invoke-virtual/range {v0 .. v5}, Lcom/android/phone/callsettings/LGTPhotoRingRejectList;->startFragment(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;I)Z
 
     goto :goto_0
 .end method
@@ -792,7 +792,7 @@
     if-eqz v0, :cond_0
 
     :try_start_0
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/LGTPhotoRingRejectList;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
@@ -842,7 +842,7 @@
     .locals 3
     .param p1    # Ljava/lang/String;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/LGTPhotoRingRejectList;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -862,7 +862,7 @@
 
     const/4 v3, 0x0
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/LGTPhotoRingRejectList;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -936,13 +936,13 @@
 
     iget-object v3, p0, Lcom/android/phone/callsettings/LGTPhotoRingRejectList;->mEmpty:Landroid/widget/TextView;
 
-    invoke-virtual {v2, v3}, Landroid/widget/AdapterView;->setEmptyView(Landroid/view/View;)V
+    invoke-virtual {v2, v3}, Landroid/widget/ListView;->setEmptyView(Landroid/view/View;)V
 
     iget-object v2, p0, Lcom/android/phone/callsettings/LGTPhotoRingRejectList;->mListView:Landroid/widget/ListView;
 
     const/4 v3, 0x3
 
-    invoke-virtual {v2, v3}, Landroid/widget/AbsListView;->setChoiceMode(I)V
+    invoke-virtual {v2, v3}, Landroid/widget/ListView;->setChoiceMode(I)V
 
     new-instance v2, Lcom/android/phone/callsettings/LGTPhotoRingRejectList$ActionModeCallback;
 
@@ -956,7 +956,7 @@
 
     iget-object v3, p0, Lcom/android/phone/callsettings/LGTPhotoRingRejectList;->mModeCallback:Lcom/android/phone/callsettings/LGTPhotoRingRejectList$ActionModeCallback;
 
-    invoke-virtual {v2, v3}, Landroid/widget/AbsListView;->setMultiChoiceModeListener(Landroid/widget/AbsListView$MultiChoiceModeListener;)V
+    invoke-virtual {v2, v3}, Landroid/widget/ListView;->setMultiChoiceModeListener(Landroid/widget/AbsListView$MultiChoiceModeListener;)V
 
     const v2, 0x7f0a0119
 
@@ -970,7 +970,7 @@
 
     iget-object v2, p0, Lcom/android/phone/callsettings/LGTPhotoRingRejectList;->mSelectAll:Landroid/widget/LinearLayout;
 
-    invoke-virtual {v2, v5}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v2, v5}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
     const v2, 0x7f0a011a
 
@@ -986,7 +986,7 @@
 
     invoke-direct {v3, p0}, Lcom/android/phone/callsettings/LGTPhotoRingRejectList$3;-><init>(Lcom/android/phone/callsettings/LGTPhotoRingRejectList;)V
 
-    invoke-virtual {v2, v3}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v2, v3}, Landroid/widget/LinearLayout;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     const v2, 0x7f0a0152
 
@@ -1017,7 +1017,7 @@
 
     invoke-direct {v3, p0}, Lcom/android/phone/callsettings/LGTPhotoRingRejectList$4;-><init>(Lcom/android/phone/callsettings/LGTPhotoRingRejectList;)V
 
-    invoke-virtual {v2, v3}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v2, v3}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     const v2, 0x7f0a0153
 
@@ -1031,7 +1031,7 @@
 
     iget-object v2, p0, Lcom/android/phone/callsettings/LGTPhotoRingRejectList;->searchLayout:Landroid/widget/LinearLayout;
 
-    invoke-virtual {v2, v4}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v2, v4}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
     const v2, 0x7f0a0154
 
@@ -1059,7 +1059,7 @@
 
     const v3, 0x10203df
 
-    invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    invoke-virtual {v2, v3}, Landroid/widget/SearchView;->findViewById(I)Landroid/view/View;
 
     move-result-object v1
 
@@ -1072,7 +1072,7 @@
 
     const v3, 0x10203e4
 
-    invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    invoke-virtual {v2, v3}, Landroid/widget/SearchView;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -1091,7 +1091,7 @@
 
     invoke-direct {v3, p0}, Lcom/android/phone/callsettings/LGTPhotoRingRejectList$7;-><init>(Lcom/android/phone/callsettings/LGTPhotoRingRejectList;)V
 
-    invoke-virtual {v2, v3}, Landroid/widget/AdapterView;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
+    invoke-virtual {v2, v3}, Landroid/widget/ListView;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
 
     iget-object v2, p0, Lcom/android/phone/callsettings/LGTPhotoRingRejectList;->mListView:Landroid/widget/ListView;
 
@@ -1099,7 +1099,7 @@
 
     invoke-direct {v3, p0}, Lcom/android/phone/callsettings/LGTPhotoRingRejectList$8;-><init>(Lcom/android/phone/callsettings/LGTPhotoRingRejectList;)V
 
-    invoke-virtual {v2, v3}, Landroid/widget/AdapterView;->setOnItemLongClickListener(Landroid/widget/AdapterView$OnItemLongClickListener;)V
+    invoke-virtual {v2, v3}, Landroid/widget/ListView;->setOnItemLongClickListener(Landroid/widget/AdapterView$OnItemLongClickListener;)V
 
     iget-object v2, p0, Lcom/android/phone/callsettings/LGTPhotoRingRejectList;->mListView:Landroid/widget/ListView;
 
@@ -1107,7 +1107,7 @@
 
     invoke-direct {v3, p0}, Lcom/android/phone/callsettings/LGTPhotoRingRejectList$9;-><init>(Lcom/android/phone/callsettings/LGTPhotoRingRejectList;)V
 
-    invoke-virtual {v2, v3}, Landroid/widget/AbsListView;->setOnScrollListener(Landroid/widget/AbsListView$OnScrollListener;)V
+    invoke-virtual {v2, v3}, Landroid/widget/ListView;->setOnScrollListener(Landroid/widget/AbsListView$OnScrollListener;)V
 
     return-void
 
@@ -1177,7 +1177,7 @@
 
     iput v0, p0, Lcom/android/phone/callsettings/LGTPhotoRingRejectList;->mCheckedCount:I
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/LGTPhotoRingRejectList;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v0
 
@@ -1187,7 +1187,7 @@
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/LGTPhotoRingRejectList;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -1360,7 +1360,7 @@
 
     new-instance v0, Lcom/android/phone/callsettings/LGTPhotoRingRejectList$AutoRejectAdapter;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/LGTPhotoRingRejectList;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -1381,7 +1381,7 @@
 
     iget-object v0, p0, Lcom/android/phone/callsettings/LGTPhotoRingRejectList;->mListView:Landroid/widget/ListView;
 
-    invoke-virtual {v0}, Landroid/widget/AdapterView;->getCount()I
+    invoke-virtual {v0}, Landroid/widget/ListView;->getCount()I
 
     move-result v0
 
@@ -1399,7 +1399,7 @@
 
     const/4 v2, 0x0
 
-    invoke-virtual {v0, v2}, Landroid/view/View;->setEnabled(Z)V
+    invoke-virtual {v0, v2}, Landroid/widget/SearchView;->setEnabled(Z)V
 
     iget-object v0, p0, Lcom/android/phone/callsettings/LGTPhotoRingRejectList;->svSearch:Landroid/widget/SearchView;
 
@@ -1409,7 +1409,7 @@
 
     const/4 v2, 0x0
 
-    invoke-virtual {v0, v2}, Landroid/view/View;->setFocusable(Z)V
+    invoke-virtual {v0, v2}, Landroid/widget/SearchView;->setFocusable(Z)V
 
     :goto_1
     iget-object v0, p0, Lcom/android/phone/callsettings/LGTPhotoRingRejectList;->queryString:Ljava/lang/String;
@@ -1439,7 +1439,7 @@
 
     sget-object v7, Lcom/android/phone/callsettings/LGTPhotoRingRejectList;->defaultName:Ljava/lang/String;
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/LGTPhotoRingRejectList;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -1548,13 +1548,13 @@
 
     const/4 v2, 0x1
 
-    invoke-virtual {v0, v2}, Landroid/view/View;->setEnabled(Z)V
+    invoke-virtual {v0, v2}, Landroid/widget/SearchView;->setEnabled(Z)V
 
     iget-object v0, p0, Lcom/android/phone/callsettings/LGTPhotoRingRejectList;->svSearch:Landroid/widget/SearchView;
 
     const/4 v2, 0x1
 
-    invoke-virtual {v0, v2}, Landroid/view/View;->setFocusable(Z)V
+    invoke-virtual {v0, v2}, Landroid/widget/SearchView;->setFocusable(Z)V
 
     goto/16 :goto_1
 .end method
@@ -1586,7 +1586,7 @@
 
     if-eqz p2, :cond_0
 
-    invoke-virtual {p2, v8}, Landroid/widget/AbsListView;->dispatchTouchEvent(Landroid/view/MotionEvent;)Z
+    invoke-virtual {p2, v8}, Landroid/widget/ListView;->dispatchTouchEvent(Landroid/view/MotionEvent;)Z
 
     :cond_0
     invoke-virtual {v8}, Landroid/view/MotionEvent;->recycle()V
@@ -1623,7 +1623,7 @@
 
     iget-object v2, p0, Lcom/android/phone/callsettings/LGTPhotoRingRejectList;->contactQueryThread:Lcom/android/phone/callsettings/LGTPhotoRingRejectList$QueryThread;
 
-    invoke-virtual {v2}, Ljava/lang/Thread;->getId()J
+    invoke-virtual {v2}, Lcom/android/phone/callsettings/LGTPhotoRingRejectList$QueryThread;->getId()J
 
     move-result-wide v2
 
@@ -1641,7 +1641,7 @@
 
     iget-object v0, p0, Lcom/android/phone/callsettings/LGTPhotoRingRejectList;->contactQueryThread:Lcom/android/phone/callsettings/LGTPhotoRingRejectList$QueryThread;
 
-    invoke-virtual {v0}, Ljava/lang/Thread;->start()V
+    invoke-virtual {v0}, Lcom/android/phone/callsettings/LGTPhotoRingRejectList$QueryThread;->start()V
 
     :cond_0
     return-void
@@ -1656,7 +1656,7 @@
 
     iget-object v0, p0, Lcom/android/phone/callsettings/LGTPhotoRingRejectList;->contactQueryThread:Lcom/android/phone/callsettings/LGTPhotoRingRejectList$QueryThread;
 
-    invoke-virtual {v0}, Ljava/lang/Thread;->interrupt()V
+    invoke-virtual {v0}, Lcom/android/phone/callsettings/LGTPhotoRingRejectList$QueryThread;->interrupt()V
 
     const/4 v0, 0x0
 
@@ -1691,7 +1691,7 @@
 
     move-result-object v1
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/LGTPhotoRingRejectList;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 
@@ -1705,7 +1705,7 @@
 
     invoke-direct {p0}, Lcom/android/phone/callsettings/LGTPhotoRingRejectList;->updateTitleBar()V
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/LGTPhotoRingRejectList;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v0
 
@@ -1728,7 +1728,7 @@
     :goto_0
     iget-object v1, p0, Lcom/android/phone/callsettings/LGTPhotoRingRejectList;->mListView:Landroid/widget/ListView;
 
-    invoke-virtual {v1}, Landroid/widget/AdapterView;->getCount()I
+    invoke-virtual {v1}, Landroid/widget/ListView;->getCount()I
 
     move-result v1
 
@@ -1736,7 +1736,7 @@
 
     iget-object v1, p0, Lcom/android/phone/callsettings/LGTPhotoRingRejectList;->mListView:Landroid/widget/ListView;
 
-    invoke-virtual {v1, v0}, Landroid/widget/AbsListView;->isItemChecked(I)Z
+    invoke-virtual {v1, v0}, Landroid/widget/ListView;->isItemChecked(I)Z
 
     move-result v1
 
@@ -1777,7 +1777,7 @@
 
     invoke-virtual {v1, v3}, Landroid/view/View;->sendAccessibilityEvent(I)V
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/LGTPhotoRingRejectList;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v1
 
@@ -1797,7 +1797,7 @@
 
     const/4 v2, 0x1
 
-    invoke-virtual {p0, v5}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v5}, Lcom/android/phone/callsettings/LGTPhotoRingRejectList;->getString(I)Ljava/lang/String;
 
     iget-object v0, p0, Lcom/android/phone/callsettings/LGTPhotoRingRejectList;->mAutoRejectItemList:Ljava/util/ArrayList;
 
@@ -1856,12 +1856,12 @@
     if-ne v0, v3, :cond_3
 
     :cond_2
-    invoke-virtual {p0, v4}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v4}, Lcom/android/phone/callsettings/LGTPhotoRingRejectList;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
     :goto_0
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/LGTPhotoRingRejectList;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -1872,7 +1872,7 @@
     :cond_3
     const v0, 0x7f090548
 
-    invoke-virtual {p0, v0}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lcom/android/phone/callsettings/LGTPhotoRingRejectList;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -1913,7 +1913,7 @@
     if-ne v0, v3, :cond_7
 
     :cond_6
-    invoke-virtual {p0, v4}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v4}, Lcom/android/phone/callsettings/LGTPhotoRingRejectList;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -1922,7 +1922,7 @@
     :cond_7
     const v0, 0x7f090547
 
-    invoke-virtual {p0, v0}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lcom/android/phone/callsettings/LGTPhotoRingRejectList;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -1955,7 +1955,7 @@
     if-ne v1, v3, :cond_b
 
     :cond_a
-    invoke-virtual {p0, v4}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v4}, Lcom/android/phone/callsettings/LGTPhotoRingRejectList;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -1966,7 +1966,7 @@
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-virtual {p0, v5}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v5}, Lcom/android/phone/callsettings/LGTPhotoRingRejectList;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2026,7 +2026,7 @@
 
     invoke-virtual {v4, v0, v1}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->isAdded()Z
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/LGTPhotoRingRejectList;->isAdded()Z
 
     move-result v0
 
@@ -2052,7 +2052,7 @@
 
     move-object v1, p0
 
-    invoke-virtual/range {v0 .. v5}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->startFragment(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;I)Z
+    invoke-virtual/range {v0 .. v5}, Lcom/android/phone/callsettings/LGTPhotoRingRejectList;->startFragment(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;I)Z
 
     :goto_0
     return-void
@@ -2070,7 +2070,7 @@
 
     move-object v1, p0
 
-    invoke-virtual/range {v0 .. v5}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->startFragment(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;I)Z
+    invoke-virtual/range {v0 .. v5}, Lcom/android/phone/callsettings/LGTPhotoRingRejectList;->startFragment(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;I)Z
 
     goto :goto_0
 
@@ -2098,7 +2098,7 @@
 
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/LGTPhotoRingRejectList;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
 
@@ -2112,7 +2112,7 @@
 
     if-ne p2, v6, :cond_1
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/LGTPhotoRingRejectList;->getResources()Landroid/content/res/Resources;
 
     move-result-object v4
 
@@ -2122,7 +2122,7 @@
 
     const v4, 0x7f0902ef
 
-    invoke-virtual {p0, v4}, Landroid/app/Fragment;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v4}, Lcom/android/phone/callsettings/LGTPhotoRingRejectList;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v1
 
@@ -2135,7 +2135,7 @@
 
     if-eqz v4, :cond_0
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/LGTPhotoRingRejectList;->getResources()Landroid/content/res/Resources;
 
     move-result-object v4
 
@@ -2182,16 +2182,16 @@
 
     invoke-direct {v5, p0}, Lcom/android/phone/callsettings/LGTPhotoRingRejectList$15;-><init>(Lcom/android/phone/callsettings/LGTPhotoRingRejectList;)V
 
-    invoke-virtual {v4, v5}, Landroid/app/Dialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
+    invoke-virtual {v4, v5}, Landroid/app/AlertDialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
     iget-object v4, p0, Lcom/android/phone/callsettings/LGTPhotoRingRejectList;->mDeleteDialog:Landroid/app/AlertDialog;
 
-    invoke-virtual {v4}, Landroid/app/Dialog;->show()V
+    invoke-virtual {v4}, Landroid/app/AlertDialog;->show()V
 
     return-void
 
     :cond_1
-    invoke-virtual {p0}, Landroid/app/Fragment;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/LGTPhotoRingRejectList;->getResources()Landroid/content/res/Resources;
 
     move-result-object v4
 
@@ -2205,7 +2205,7 @@
 
     const v4, 0x7f0902f1
 
-    invoke-virtual {p0, v4}, Landroid/app/Fragment;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v4}, Lcom/android/phone/callsettings/LGTPhotoRingRejectList;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v1
 
@@ -2224,7 +2224,7 @@
 
     const v4, 0x7f0902f0
 
-    invoke-virtual {p0, v4}, Landroid/app/Fragment;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v4}, Lcom/android/phone/callsettings/LGTPhotoRingRejectList;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v4
 
@@ -2270,7 +2270,7 @@
 
     const v0, 0x7f09038c
 
-    invoke-virtual {p0, v0}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lcom/android/phone/callsettings/LGTPhotoRingRejectList;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -2278,7 +2278,7 @@
 
     iget-object v0, p0, Lcom/android/phone/callsettings/LGTPhotoRingRejectList;->mAutoRejectAdapter:Lcom/android/phone/callsettings/LGTPhotoRingRejectList$AutoRejectAdapter;
 
-    invoke-virtual {v0}, Landroid/widget/BaseAdapter;->notifyDataSetInvalidated()V
+    invoke-virtual {v0}, Lcom/android/phone/callsettings/LGTPhotoRingRejectList$AutoRejectAdapter;->notifyDataSetInvalidated()V
 
     iput v2, p0, Lcom/android/phone/callsettings/LGTPhotoRingRejectList;->mScreenType:I
 
@@ -2294,7 +2294,7 @@
 
     iget-object v0, p0, Lcom/android/phone/callsettings/LGTPhotoRingRejectList;->mListView:Landroid/widget/ListView;
 
-    invoke-virtual {v0}, Landroid/widget/AdapterView;->getCount()I
+    invoke-virtual {v0}, Landroid/widget/ListView;->getCount()I
 
     move-result v0
 
@@ -2313,7 +2313,7 @@
 
     iget-object v2, p0, Lcom/android/phone/callsettings/LGTPhotoRingRejectList;->mListView:Landroid/widget/ListView;
 
-    invoke-virtual {v2, v1}, Landroid/widget/AbsListView;->isItemChecked(I)Z
+    invoke-virtual {v2, v1}, Landroid/widget/ListView;->isItemChecked(I)Z
 
     move-result v2
 
@@ -2362,7 +2362,7 @@
     :cond_3
     const v0, 0x7f09038c
 
-    invoke-virtual {p0, v0}, Landroid/app/Fragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lcom/android/phone/callsettings/LGTPhotoRingRejectList;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -2385,7 +2385,7 @@
     .param p2    # I
     .param p3    # Landroid/content/Intent;
 
-    invoke-super {p0, p1, p2, p3}, Landroid/preference/PreferenceFragment;->onActivityResult(IILandroid/content/Intent;)V
+    invoke-super {p0, p1, p2, p3}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onActivityResult(IILandroid/content/Intent;)V
 
     packed-switch p1, :pswitch_data_0
 
@@ -2415,13 +2415,13 @@
 
     invoke-direct {p0, v0}, Lcom/android/phone/callsettings/LGTPhotoRingRejectList;->log(Ljava/lang/String;)V
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/LGTPhotoRingRejectList;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v0
 
     invoke-virtual {v0}, Landroid/app/FragmentManager;->invalidateOptionsMenu()V
 
-    invoke-super {p0, p1}, Landroid/app/Fragment;->onConfigurationChanged(Landroid/content/res/Configuration;)V
+    invoke-super {p0, p1}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
     return-void
 .end method
@@ -2444,7 +2444,7 @@
 
     iput v1, p0, Lcom/android/phone/callsettings/LGTPhotoRingRejectList;->autoreject_maxcount:I
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/LGTPhotoRingRejectList;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -2460,7 +2460,7 @@
 
     iput-object v1, p0, Lcom/android/phone/callsettings/LGTPhotoRingRejectList;->mContentURI:Landroid/net/Uri;
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/LGTPhotoRingRejectList;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
@@ -2470,7 +2470,7 @@
 
     invoke-virtual {v1, v2, v4, v3}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;)V
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getActionBar()Landroid/app/ActionBar;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/LGTPhotoRingRejectList;->getActionBar()Landroid/app/ActionBar;
 
     move-result-object v0
 
@@ -2479,7 +2479,7 @@
     invoke-virtual {v0, v4}, Landroid/app/ActionBar;->setDisplayHomeAsUpEnabled(Z)V
 
     :cond_0
-    invoke-virtual {p0, v4}, Landroid/app/Fragment;->setHasOptionsMenu(Z)V
+    invoke-virtual {p0, v4}, Lcom/android/phone/callsettings/LGTPhotoRingRejectList;->setHasOptionsMenu(Z)V
 
     return-void
 .end method
@@ -2498,7 +2498,7 @@
     :pswitch_0
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/LGTPhotoRingRejectList;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
 
@@ -2512,7 +2512,7 @@
 
     const v4, 0x7f0902d2
 
-    invoke-virtual {p0, v4}, Landroid/app/Fragment;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v4}, Lcom/android/phone/callsettings/LGTPhotoRingRejectList;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v4
 
@@ -2522,7 +2522,7 @@
 
     const v4, 0x7f0902d4
 
-    invoke-virtual {p0, v4}, Landroid/app/Fragment;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v4}, Lcom/android/phone/callsettings/LGTPhotoRingRejectList;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v4
 
@@ -2584,7 +2584,7 @@
 
     invoke-direct {v3, p0}, Lcom/android/phone/callsettings/LGTPhotoRingRejectList$12;-><init>(Lcom/android/phone/callsettings/LGTPhotoRingRejectList;)V
 
-    invoke-virtual {p0, v3}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
+    invoke-virtual {p0, v3}, Lcom/android/phone/callsettings/LGTPhotoRingRejectList;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
     goto :goto_0
 
@@ -2601,7 +2601,7 @@
     .param p1    # Landroid/view/Menu;
     .param p2    # Landroid/view/MenuInflater;
 
-    invoke-super {p0, p1, p2}, Landroid/app/Fragment;->onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
+    invoke-super {p0, p1, p2}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
 
     return-void
 .end method
@@ -2649,9 +2649,9 @@
 .method public onDestroy()V
     .locals 2
 
-    invoke-super {p0}, Landroid/preference/PreferenceFragment;->onDestroy()V
+    invoke-super {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onDestroy()V
 
-    invoke-virtual {p0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/LGTPhotoRingRejectList;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -2724,7 +2724,7 @@
     :sswitch_1
     const/4 v1, 0x0
 
-    invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/phone/callsettings/LGTPhotoRingRejectList;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -2741,7 +2741,7 @@
     :goto_2
     if-eqz v0, :cond_0
 
-    invoke-virtual {v0}, Landroid/widget/AbsListView;->getSelectedView()Landroid/view/View;
+    invoke-virtual {v0}, Landroid/widget/ListView;->getSelectedView()Landroid/view/View;
 
     move-result-object v0
 
@@ -2751,7 +2751,7 @@
 
     const v1, 0x7f0a003f
 
-    invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    invoke-virtual {v0, v1}, Landroid/widget/LinearLayout;->findViewById(I)Landroid/view/View;
 
     move-result-object v1
 
@@ -2759,26 +2759,26 @@
 
     if-eqz v1, :cond_1
 
-    invoke-virtual {v1}, Landroid/view/View;->isShown()Z
+    invoke-virtual {v1}, Landroid/widget/LinearLayout;->isShown()Z
 
     move-result v2
 
     if-eqz v2, :cond_1
 
-    invoke-virtual {v1}, Landroid/view/View;->isClickable()Z
+    invoke-virtual {v1}, Landroid/widget/LinearLayout;->isClickable()Z
 
     move-result v2
 
     if-eqz v2, :cond_1
 
-    invoke-virtual {v1}, Landroid/view/View;->performClick()Z
+    invoke-virtual {v1}, Landroid/widget/LinearLayout;->performClick()Z
 
     goto :goto_0
 
     :cond_1
     const v1, 0x7f0a0119
 
-    invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    invoke-virtual {v0, v1}, Landroid/widget/LinearLayout;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -2786,19 +2786,19 @@
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {v0}, Landroid/view/View;->isShown()Z
+    invoke-virtual {v0}, Landroid/widget/LinearLayout;->isShown()Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    invoke-virtual {v0}, Landroid/view/View;->isClickable()Z
+    invoke-virtual {v0}, Landroid/widget/LinearLayout;->isClickable()Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    invoke-virtual {v0}, Landroid/view/View;->performClick()Z
+    invoke-virtual {v0}, Landroid/widget/LinearLayout;->performClick()Z
 
     goto :goto_0
 
@@ -2868,7 +2868,7 @@
 
     iget-object v1, p0, Lcom/android/phone/callsettings/LGTPhotoRingRejectList;->mListView:Landroid/widget/ListView;
 
-    invoke-virtual {v1, v0}, Landroid/widget/AbsListView;->twShowMultiChoiceMode(Z)V
+    invoke-virtual {v1, v0}, Landroid/widget/ListView;->twShowMultiChoiceMode(Z)V
 
     goto :goto_0
 
@@ -2917,7 +2917,7 @@
 
     iget-object v0, p0, Lcom/android/phone/callsettings/LGTPhotoRingRejectList;->svSearch:Landroid/widget/SearchView;
 
-    invoke-virtual {v0, v3}, Landroid/view/View;->setEnabled(Z)V
+    invoke-virtual {v0, v3}, Landroid/widget/SearchView;->setEnabled(Z)V
 
     iget-object v0, p0, Lcom/android/phone/callsettings/LGTPhotoRingRejectList;->svSearch:Landroid/widget/SearchView;
 
@@ -2925,7 +2925,7 @@
 
     iget-object v0, p0, Lcom/android/phone/callsettings/LGTPhotoRingRejectList;->svSearch:Landroid/widget/SearchView;
 
-    invoke-virtual {v0, v3}, Landroid/view/View;->setFocusable(Z)V
+    invoke-virtual {v0, v3}, Landroid/widget/SearchView;->setFocusable(Z)V
 
     :cond_0
     invoke-direct {p0}, Lcom/android/phone/callsettings/LGTPhotoRingRejectList;->stopContactQuery()V
@@ -2942,7 +2942,7 @@
 
     const/4 v1, 0x1
 
-    invoke-super {p0, p1}, Landroid/app/Fragment;->onPrepareOptionsMenu(Landroid/view/Menu;)V
+    invoke-super {p0, p1}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onPrepareOptionsMenu(Landroid/view/Menu;)V
 
     invoke-interface {p1}, Landroid/view/Menu;->clear()V
 
@@ -3072,7 +3072,7 @@
     move v0, v1
 
     :goto_4
-    invoke-virtual {v3, v0}, Landroid/view/View;->setEnabled(Z)V
+    invoke-virtual {v3, v0}, Landroid/widget/ImageView;->setEnabled(Z)V
 
     iget v0, p0, Lcom/android/phone/callsettings/LGTPhotoRingRejectList;->mScreenType:I
 
@@ -3080,7 +3080,7 @@
 
     iget-object v0, p0, Lcom/android/phone/callsettings/LGTPhotoRingRejectList;->searchLayout:Landroid/widget/LinearLayout;
 
-    invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v2}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
     :goto_5
     return-void
@@ -3115,7 +3115,7 @@
 
     const/16 v1, 0x8
 
-    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v0, v1}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
     goto :goto_5
 .end method
@@ -3143,7 +3143,7 @@
 
     const/16 v0, 0x64
 
-    invoke-virtual {p0, v0}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->removeDialog(I)V
+    invoke-virtual {p0, v0}, Lcom/android/phone/callsettings/LGTPhotoRingRejectList;->removeDialog(I)V
 
     iget v0, p0, Lcom/android/phone/callsettings/LGTPhotoRingRejectList;->mScreenType:I
 
@@ -3160,7 +3160,7 @@
 
     iget-object v0, p0, Lcom/android/phone/callsettings/LGTPhotoRingRejectList;->mDeleteDialog:Landroid/app/AlertDialog;
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->isShowing()Z
+    invoke-virtual {v0}, Landroid/app/AlertDialog;->isShowing()Z
 
     move-result v0
 
@@ -3168,7 +3168,7 @@
 
     iget-object v0, p0, Lcom/android/phone/callsettings/LGTPhotoRingRejectList;->mDeleteDialog:Landroid/app/AlertDialog;
 
-    invoke-virtual {v0}, Landroid/app/Dialog;->dismiss()V
+    invoke-virtual {v0}, Landroid/app/AlertDialog;->dismiss()V
 
     const/4 v0, 0x0
 
@@ -3200,7 +3200,7 @@
     .locals 2
     .param p1    # Landroid/os/Bundle;
 
-    invoke-super {p0, p1}, Landroid/preference/PreferenceFragment;->onSaveInstanceState(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/phone/callsettings/CallSettingsPreferenceFragment;->onSaveInstanceState(Landroid/os/Bundle;)V
 
     const-string v0, "LGTPhotoRingRejectList"
 
@@ -3280,7 +3280,7 @@
 
     iget-object v3, p0, Lcom/android/phone/callsettings/LGTPhotoRingRejectList;->mListView:Landroid/widget/ListView;
 
-    invoke-virtual {v3}, Landroid/widget/AdapterView;->getCount()I
+    invoke-virtual {v3}, Landroid/widget/ListView;->getCount()I
 
     move-result v3
 
@@ -3293,7 +3293,7 @@
 
     iget-object v3, p0, Lcom/android/phone/callsettings/LGTPhotoRingRejectList;->mListView:Landroid/widget/ListView;
 
-    invoke-virtual {v3, v1}, Landroid/widget/AbsListView;->isItemChecked(I)Z
+    invoke-virtual {v3, v1}, Landroid/widget/ListView;->isItemChecked(I)Z
 
     move-result v3
 
@@ -3311,7 +3311,7 @@
 
     iget-object v3, p0, Lcom/android/phone/callsettings/LGTPhotoRingRejectList;->mListView:Landroid/widget/ListView;
 
-    invoke-virtual {v3}, Landroid/widget/AdapterView;->getCount()I
+    invoke-virtual {v3}, Landroid/widget/ListView;->getCount()I
 
     move-result v3
 
@@ -3371,7 +3371,7 @@
 
     iget-object v0, p0, Lcom/android/phone/callsettings/LGTPhotoRingRejectList;->mListView:Landroid/widget/ListView;
 
-    invoke-virtual {v0}, Landroid/widget/AdapterView;->getCount()I
+    invoke-virtual {v0}, Landroid/widget/ListView;->getCount()I
 
     move-result v0
 

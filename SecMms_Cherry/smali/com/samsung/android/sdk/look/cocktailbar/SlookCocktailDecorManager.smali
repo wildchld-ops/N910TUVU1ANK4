@@ -44,7 +44,6 @@
 
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -80,7 +79,6 @@
 
 .method public static getInstance(Landroid/content/Context;)Lcom/samsung/android/sdk/look/cocktailbar/SlookCocktailDecorManager;
     .locals 5
-    .param p0    # Landroid/content/Context;
 
     sget-object v3, Lcom/samsung/android/sdk/look/cocktailbar/SlookCocktailDecorManager;->sManagerCache:Ljava/util/WeakHashMap;
 
@@ -195,7 +193,6 @@
 
 .method public setBitmap(Landroid/graphics/Bitmap;)V
     .locals 2
-    .param p1    # Landroid/graphics/Bitmap;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -222,7 +219,6 @@
 
 .method public setResource(I)V
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -249,7 +245,6 @@
 
 .method public setStream(Ljava/io/InputStream;)V
     .locals 2
-    .param p1    # Ljava/io/InputStream;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

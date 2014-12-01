@@ -46,7 +46,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -87,8 +86,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const/4 v1, 0x0
 
@@ -129,8 +126,6 @@
 
 .method static synthetic access$002(Lcom/diotek/ime/framework/view/candidate/AbstractCandidateExpandLayout;Z)Z
     .locals 0
-    .param p0    # Lcom/diotek/ime/framework/view/candidate/AbstractCandidateExpandLayout;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/diotek/ime/framework/view/candidate/AbstractCandidateExpandLayout;->mIgnorePick:Z
 
@@ -253,8 +248,6 @@
 
 .method private isShownExpandView(II)Z
     .locals 11
-    .param p1    # I
-    .param p2    # I
 
     const/4 v9, 0x1
 
@@ -385,7 +378,6 @@
 
 .method protected addNewLine(Z)Landroid/widget/LinearLayout;
     .locals 8
-    .param p1    # Z
 
     iget-object v5, p0, Lcom/diotek/ime/framework/view/candidate/AbstractCandidateExpandLayout;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -551,7 +543,6 @@
 
 .method public onClick(Landroid/view/View;)V
     .locals 3
-    .param p1    # Landroid/view/View;
 
     const/4 v2, 0x0
 
@@ -617,7 +608,6 @@
 
 .method protected onDraw(Landroid/graphics/Canvas;)V
     .locals 0
-    .param p1    # Landroid/graphics/Canvas;
 
     invoke-super {p0, p1}, Landroid/widget/LinearLayout;->onDraw(Landroid/graphics/Canvas;)V
 
@@ -626,7 +616,6 @@
 
 .method public setCandidates(Ljava/util/ArrayList;I)I
     .locals 33
-    .param p2    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

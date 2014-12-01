@@ -36,8 +36,6 @@
 # virtual methods
 .method public onPreviewFrame([BLcom/sec/android/seccamera/SecCamera;)V
     .locals 2
-    .param p1    # [B
-    .param p2    # Lcom/sec/android/seccamera/SecCamera;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/CommonEngine$CameraPreviewCallback;->this$0:Lcom/sec/android/app/camera/CommonEngine;
 

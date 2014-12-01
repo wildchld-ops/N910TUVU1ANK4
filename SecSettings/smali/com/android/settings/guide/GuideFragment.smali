@@ -64,7 +64,6 @@
 
 .method private static completeGuide(Landroid/app/Activity;)V
     .locals 0
-    .param p0    # Landroid/app/Activity;
 
     invoke-virtual {p0}, Landroid/app/Activity;->finish()V
 
@@ -73,8 +72,6 @@
 
 .method public static deployGuide(Landroid/app/Activity;Landroid/content/Intent;)V
     .locals 13
-    .param p0    # Landroid/app/Activity;
-    .param p1    # Landroid/content/Intent;
 
     const/4 v12, 0x1
 
@@ -259,7 +256,6 @@
 
 .method public static dismissHelpDialog(Landroid/app/Activity;)V
     .locals 4
-    .param p0    # Landroid/app/Activity;
 
     invoke-virtual {p0}, Landroid/app/Activity;->getFragmentManager()Landroid/app/FragmentManager;
 
@@ -343,7 +339,6 @@
 
 .method public static findGuideFragment(Landroid/app/Activity;)Lcom/android/settings/guide/GuideFragmentCallback;
     .locals 2
-    .param p0    # Landroid/app/Activity;
 
     if-eqz p0, :cond_0
 
@@ -370,7 +365,6 @@
 
 .method private static findMainView(Landroid/app/Activity;)Landroid/view/ViewGroup;
     .locals 3
-    .param p0    # Landroid/app/Activity;
 
     const/4 v1, 0x0
 
@@ -428,8 +422,6 @@
 
 .method private initFragment(Landroid/os/Bundle;Lcom/android/settings/guide/GuideFragment$GuideModes;)V
     .locals 6
-    .param p1    # Landroid/os/Bundle;
-    .param p2    # Lcom/android/settings/guide/GuideFragment$GuideModes;
 
     move-object v3, p2
 
@@ -627,7 +619,6 @@
 
 .method public static isInGuideMode(Landroid/app/Activity;)Z
     .locals 1
-    .param p0    # Landroid/app/Activity;
 
     sget-boolean v0, Lcom/android/settings/guide/GuideFragment;->sIsInGuideMode:Z
 
@@ -662,7 +653,6 @@
 
 .method private static newInstance(Landroid/content/Intent;)Lcom/android/settings/guide/GuideFragment;
     .locals 3
-    .param p0    # Landroid/content/Intent;
 
     invoke-virtual {p0}, Landroid/content/Intent;->getExtras()Landroid/os/Bundle;
 
@@ -701,9 +691,6 @@
 
 .method public static onApDisableClick(Landroid/content/DialogInterface;ILandroid/app/Activity;)V
     .locals 2
-    .param p0    # Landroid/content/DialogInterface;
-    .param p1    # I
-    .param p2    # Landroid/app/Activity;
 
     invoke-static {p2}, Lcom/android/settings/guide/GuideFragment;->findGuideFragment(Landroid/app/Activity;)Lcom/android/settings/guide/GuideFragmentCallback;
 
@@ -725,9 +712,6 @@
 
 .method public static setEnablersForGuide(Landroid/app/Activity;Lcom/android/settings/wifi/WifiEnabler;Lcom/android/settings/bluetooth/BluetoothEnabler;)V
     .locals 3
-    .param p0    # Landroid/app/Activity;
-    .param p1    # Lcom/android/settings/wifi/WifiEnabler;
-    .param p2    # Lcom/android/settings/bluetooth/BluetoothEnabler;
 
     invoke-virtual {p0}, Landroid/app/Activity;->getFragmentManager()Landroid/app/FragmentManager;
 
@@ -755,8 +739,6 @@
 
 .method public static setSelectedSection(Landroid/app/Activity;Landroid/preference/PreferenceActivity$Header;)Z
     .locals 4
-    .param p0    # Landroid/app/Activity;
-    .param p1    # Landroid/preference/PreferenceActivity$Header;
 
     const/4 v1, 0x0
 
@@ -791,7 +773,6 @@
 
 .method public static setsIsInGuideMode(Z)V
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/settings/guide/GuideFragment;->sIsInGuideMode:Z
 
@@ -800,7 +781,6 @@
 
 .method public static showHelpDialog(Landroid/app/Activity;)V
     .locals 4
-    .param p0    # Landroid/app/Activity;
 
     invoke-virtual {p0}, Landroid/app/Activity;->getFragmentManager()Landroid/app/FragmentManager;
 
@@ -895,7 +875,6 @@
 # virtual methods
 .method public dispatchKeyEvent(Landroid/view/KeyEvent;)Z
     .locals 3
-    .param p1    # Landroid/view/KeyEvent;
 
     const/4 v1, 0x0
 
@@ -941,7 +920,6 @@
 
 .method public onActivityCreated(Landroid/os/Bundle;)V
     .locals 1
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super {p0, p1}, Landroid/app/Fragment;->onActivityCreated(Landroid/os/Bundle;)V
 
@@ -967,7 +945,6 @@
 
 .method public onAttach(Landroid/app/Activity;)V
     .locals 2
-    .param p1    # Landroid/app/Activity;
 
     const/4 v1, 0x0
 
@@ -987,7 +964,6 @@
 
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 1
-    .param p1    # Landroid/content/res/Configuration;
 
     iget-boolean v0, p0, Lcom/android/settings/guide/GuideFragment;->mIsInGuideMode:Z
 
@@ -1009,7 +985,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 2
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v1, 0x1
 
@@ -1085,7 +1060,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 1
-    .param p1    # Landroid/view/MenuItem;
 
     iget-object v0, p0, Lcom/android/settings/guide/GuideFragment;->mGuider:Lcom/android/settings/guide/GuiderLifecycleListener;
 
@@ -1122,7 +1096,6 @@
 
 .method public onPrepareOptionsMenu(Landroid/view/Menu;)V
     .locals 2
-    .param p1    # Landroid/view/Menu;
 
     iget-object v1, p0, Lcom/android/settings/guide/GuideFragment;->mGuider:Lcom/android/settings/guide/GuiderLifecycleListener;
 
@@ -1182,8 +1155,6 @@
 
 .method public setEnablers(Lcom/android/settings/bluetooth/BluetoothEnabler;Lcom/android/settings/wifi/WifiEnabler;)V
     .locals 4
-    .param p1    # Lcom/android/settings/bluetooth/BluetoothEnabler;
-    .param p2    # Lcom/android/settings/wifi/WifiEnabler;
 
     new-instance v0, Lcom/android/settings/guide/GuideFragment$WrappedEnabler;
 
@@ -1231,7 +1202,6 @@
 
 .method public setSelectedSectionId(J)Z
     .locals 1
-    .param p1    # J
 
     invoke-static {}, Lcom/android/settings/guide/GuideModeHelper;->isTablet()Z
 

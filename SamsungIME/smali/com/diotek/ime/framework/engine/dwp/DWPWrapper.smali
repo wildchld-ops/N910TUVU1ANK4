@@ -185,8 +185,6 @@
 
 .method private getCandidateWord([CLjava/util/ArrayList;I)V
     .locals 8
-    .param p1    # [C
-    .param p3    # I
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([C",
@@ -708,7 +706,6 @@
 
 .method private inputKeyChinese(I)I
     .locals 8
-    .param p1    # I
 
     const/4 v7, 0x1
 
@@ -765,7 +762,6 @@
 
 .method private inputKeyKorean(I)I
     .locals 8
-    .param p1    # I
 
     const/4 v6, 0x1
 
@@ -836,7 +832,6 @@
 
 .method private isNomallyChineseWord(Ljava/lang/CharSequence;)Z
     .locals 5
-    .param p1    # Ljava/lang/CharSequence;
 
     new-instance v0, Landroid/graphics/Paint;
 
@@ -882,7 +877,6 @@
 
 .method private isTextCharacterChinese(I)Z
     .locals 9
-    .param p1    # I
 
     const/16 v8, 0x61
 
@@ -1043,7 +1037,6 @@
 
 .method private isTextCharacterKorean(I)Z
     .locals 5
-    .param p1    # I
 
     const/4 v4, 0x1
 
@@ -1471,7 +1464,6 @@
 
 .method public getActiveIndex([I)I
     .locals 2
-    .param p1    # [I
 
     const/4 v1, 0x0
 
@@ -1496,7 +1488,6 @@
 
 .method public getCharSequence(Ljava/lang/StringBuilder;)I
     .locals 2
-    .param p1    # Ljava/lang/StringBuilder;
 
     const/4 v1, 0x0
 
@@ -1515,8 +1506,6 @@
 
 .method public getCharSequence(Ljava/lang/StringBuilder;I)I
     .locals 2
-    .param p1    # Ljava/lang/StringBuilder;
-    .param p2    # I
 
     const/4 v1, 0x0
 
@@ -1798,7 +1787,6 @@
 
 .method public getPredictWord(Ljava/lang/CharSequence;Ljava/util/ArrayList;)I
     .locals 17
-    .param p1    # Ljava/lang/CharSequence;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2037,7 +2025,6 @@
 
 .method public getSuggestion(Ljava/util/ArrayList;Z)I
     .locals 3
-    .param p2    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2204,7 +2191,6 @@
 
 .method public inputCharSequence(Ljava/lang/CharSequence;)I
     .locals 3
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v2, 0x0
 
@@ -2236,7 +2222,6 @@
 
 .method public inputKey(I)I
     .locals 3
-    .param p1    # I
 
     iget-object v1, p0, Lcom/diotek/ime/framework/engine/dwp/DWPWrapper;->mCurrentResult:Ljava/lang/StringBuilder;
 
@@ -2269,7 +2254,6 @@
 
 .method public isContainInLanguageDB(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -2278,7 +2262,6 @@
 
 .method public isNumericCharacter(I)Z
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -2287,7 +2270,6 @@
 
 .method public isSentenceTermPunct(I)Z
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -2296,7 +2278,6 @@
 
 .method public isSentenceTermPunct(Ljava/lang/CharSequence;)Z
     .locals 1
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v0, 0x0
 
@@ -2305,7 +2286,6 @@
 
 .method public isTextCharacter(I)Z
     .locals 5
-    .param p1    # I
 
     const/4 v3, 0x0
 
@@ -2438,7 +2418,6 @@
 
 .method public setChinesePhoneticIndex(I)V
     .locals 5
-    .param p1    # I
 
     invoke-static {p1}, Lcom/diotek/dwp/DWP;->CNSetPhoneticIndex(I)I
 
@@ -2506,7 +2485,6 @@
 
 .method public setContextAwareUniqueID(Ljava/lang/String;)V
     .locals 0
-    .param p1    # Ljava/lang/String;
 
     return-void
 .end method
@@ -2521,7 +2499,6 @@
 
 .method public setUsingLanguage(I)I
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -2574,8 +2551,6 @@
 
 .method public wordSelected(ILjava/lang/CharSequence;)I
     .locals 11
-    .param p1    # I
-    .param p2    # Ljava/lang/CharSequence;
 
     const/4 v10, 0x1
 

@@ -31,7 +31,7 @@
 
     const-string v0, "com.android.phone.INetworkQueryServiceCallback2"
 
-    invoke-virtual {p0, p0, v0}, Landroid/os/Binder;->attachInterface(Landroid/os/IInterface;Ljava/lang/String;)V
+    invoke-virtual {p0, p0, v0}, Lcom/android/phone/INetworkQueryServiceCallback2$Stub;->attachInterface(Landroid/os/IInterface;Ljava/lang/String;)V
 
     return-void
 .end method

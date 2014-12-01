@@ -36,7 +36,6 @@
 # virtual methods
 .method public onCancel(Landroid/content/DialogInterface;)V
     .locals 2
-    .param p1    # Landroid/content/DialogInterface;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/Camera$137;->this$0:Lcom/sec/android/app/camera/Camera;
 

@@ -31,7 +31,6 @@
 # direct methods
 .method private constructor <init>([B)V
     .locals 6
-    .param p1    # [B
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -95,8 +94,6 @@
 
 .method synthetic constructor <init>([BLandroid/drm/DrmUtils$1;)V
     .locals 0
-    .param p1    # [B
-    .param p2    # Landroid/drm/DrmUtils$1;
 
     invoke-direct {p0, p1}, Landroid/drm/DrmUtils$ExtendedMetadataParser;-><init>([B)V
 
@@ -105,8 +102,6 @@
 
 .method private readByte([BI)I
     .locals 1
-    .param p1    # [B
-    .param p2    # I
 
     aget-byte v0, p1, p2
 
@@ -115,9 +110,6 @@
 
 .method private readMultipleBytes([BII)Ljava/lang/String;
     .locals 4
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
 
     new-array v2, p2, [B
 
@@ -152,7 +144,6 @@
 # virtual methods
 .method public get(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     iget-object v0, p0, Landroid/drm/DrmUtils$ExtendedMetadataParser;->mMap:Ljava/util/HashMap;
 

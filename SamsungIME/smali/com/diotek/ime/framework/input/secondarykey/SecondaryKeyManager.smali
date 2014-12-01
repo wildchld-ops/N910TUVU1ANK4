@@ -109,7 +109,6 @@
 # virtual methods
 .method public getSecondaryKey(I)I
     .locals 2
-    .param p1    # I
 
     const/4 v0, 0x0
 
@@ -174,7 +173,6 @@
 
 .method public setInputLanguage(Lcom/diotek/ime/framework/common/Language;)V
     .locals 2
-    .param p1    # Lcom/diotek/ime/framework/common/Language;
 
     iget-object v0, p0, Lcom/diotek/ime/framework/input/secondarykey/SecondaryKeyManager;->mSecondaryKeyMapSet:Landroid/util/SparseArray;
 

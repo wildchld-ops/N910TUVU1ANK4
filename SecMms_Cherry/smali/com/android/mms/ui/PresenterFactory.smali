@@ -20,10 +20,6 @@
 
 .method public static getPresenter(Ljava/lang/String;Landroid/content/Context;Lcom/android/mms/ui/ViewInterface;Lcom/android/mms/model/Model;)Lcom/android/mms/ui/Presenter;
     .locals 6
-    .param p0    # Ljava/lang/String;
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/android/mms/ui/ViewInterface;
-    .param p3    # Lcom/android/mms/model/Model;
 
     const/16 v3, 0x2e
 

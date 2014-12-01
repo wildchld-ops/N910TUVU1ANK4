@@ -23,7 +23,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -34,8 +33,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const v0, 0x1010093
 
@@ -46,9 +43,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v3, 0x0
 
@@ -115,9 +109,6 @@
 
 .method public onActivityResult(IILandroid/content/Intent;)Z
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/content/Intent;
 
     iget v1, p0, Landroid/preference/RingtonePreference;->mRequestCode:I
 
@@ -167,7 +158,6 @@
 
 .method protected onAttachedToHierarchy(Landroid/preference/PreferenceManager;)V
     .locals 1
-    .param p1    # Landroid/preference/PreferenceManager;
 
     invoke-super {p0, p1}, Landroid/preference/Preference;->onAttachedToHierarchy(Landroid/preference/PreferenceManager;)V
 
@@ -228,8 +218,6 @@
 
 .method protected onGetDefaultValue(Landroid/content/res/TypedArray;I)Ljava/lang/Object;
     .locals 1
-    .param p1    # Landroid/content/res/TypedArray;
-    .param p2    # I
 
     invoke-virtual {p1, p2}, Landroid/content/res/TypedArray;->getString(I)Ljava/lang/String;
 
@@ -240,7 +228,6 @@
 
 .method protected onPrepareRingtonePickerIntent(Landroid/content/Intent;)V
     .locals 2
-    .param p1    # Landroid/content/Intent;
 
     const-string v0, "android.intent.extra.ringtone.EXISTING_URI"
 
@@ -321,7 +308,6 @@
 
 .method protected onSaveRingtone(Landroid/net/Uri;)V
     .locals 1
-    .param p1    # Landroid/net/Uri;
 
     if-eqz p1, :cond_0
 
@@ -342,8 +328,6 @@
 
 .method protected onSetInitialValue(ZLjava/lang/Object;)V
     .locals 2
-    .param p1    # Z
-    .param p2    # Ljava/lang/Object;
 
     move-object v0, p2
 
@@ -373,7 +357,6 @@
 
 .method public setRingtoneType(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Landroid/preference/RingtonePreference;->mRingtoneType:I
 
@@ -382,7 +365,6 @@
 
 .method public setShowDefault(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/preference/RingtonePreference;->mShowDefault:Z
 
@@ -391,7 +373,6 @@
 
 .method public setShowSilent(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/preference/RingtonePreference;->mShowSilent:Z
 

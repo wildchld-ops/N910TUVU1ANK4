@@ -85,7 +85,7 @@
 
     const/4 v3, 0x1
 
-    invoke-virtual {v2, v3}, Landroid/os/Handler;->obtainMessage(I)Landroid/os/Message;
+    invoke-virtual {v2, v3}, Lcom/android/phone/NetworkModePreference$MyHandler;->obtainMessage(I)Landroid/os/Message;
 
     move-result-object v2
 
@@ -153,13 +153,13 @@
 
     move-result-object v3
 
-    invoke-virtual {v2, v3}, Landroid/preference/ListPreference;->findIndexOfValue(Ljava/lang/String;)I
+    invoke-virtual {v2, v3}, Lcom/android/phone/NetworkModePreference;->findIndexOfValue(Ljava/lang/String;)I
 
     move-result v2
 
     aget-object v1, v1, v2
 
-    invoke-virtual {v0, v1}, Landroid/preference/ListPreference;->setSummary(Ljava/lang/CharSequence;)V
+    invoke-virtual {v0, v1}, Lcom/android/phone/NetworkModePreference;->setSummary(Ljava/lang/CharSequence;)V
 
     :goto_0
     iget-object v0, p0, Lcom/android/phone/NetworkModePreference$12;->this$0:Lcom/android/phone/NetworkModePreference;
@@ -272,13 +272,13 @@
 
     move-result-object v3
 
-    invoke-virtual {v2, v3}, Landroid/preference/ListPreference;->findIndexOfValue(Ljava/lang/String;)I
+    invoke-virtual {v2, v3}, Lcom/android/phone/NetworkModePreference;->findIndexOfValue(Ljava/lang/String;)I
 
     move-result v2
 
     aget-object v1, v1, v2
 
-    invoke-virtual {v0, v1}, Landroid/preference/ListPreference;->setSummary(Ljava/lang/CharSequence;)V
+    invoke-virtual {v0, v1}, Lcom/android/phone/NetworkModePreference;->setSummary(Ljava/lang/CharSequence;)V
 
     goto :goto_0
 .end method

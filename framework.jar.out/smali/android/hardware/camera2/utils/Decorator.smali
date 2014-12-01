@@ -39,7 +39,6 @@
 # direct methods
 .method private constructor <init>(Ljava/lang/Object;Landroid/hardware/camera2/utils/Decorator$DecoratorListener;)V
     .locals 0
-    .param p2    # Landroid/hardware/camera2/utils/Decorator$DecoratorListener;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TT;",
@@ -59,7 +58,6 @@
 
 .method public static newInstance(Ljava/lang/Object;Landroid/hardware/camera2/utils/Decorator$DecoratorListener;)Ljava/lang/Object;
     .locals 3
-    .param p1    # Landroid/hardware/camera2/utils/Decorator$DecoratorListener;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -101,9 +99,6 @@
 # virtual methods
 .method public invoke(Ljava/lang/Object;Ljava/lang/reflect/Method;[Ljava/lang/Object;)Ljava/lang/Object;
     .locals 5
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/reflect/Method;
-    .param p3    # [Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Throwable;

@@ -136,7 +136,7 @@
 
     sget-object v0, Lcom/android/phone/PhoneGlobals$WakeState;->$VALUES:[Lcom/android/phone/PhoneGlobals$WakeState;
 
-    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
+    invoke-virtual {v0}, [Lcom/android/phone/PhoneGlobals$WakeState;->clone()Ljava/lang/Object;
 
     move-result-object v0
 

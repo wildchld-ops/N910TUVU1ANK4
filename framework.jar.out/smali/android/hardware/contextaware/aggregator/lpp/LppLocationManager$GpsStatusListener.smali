@@ -34,8 +34,6 @@
 
 .method synthetic constructor <init>(Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager;Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$1;)V
     .locals 0
-    .param p1    # Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager;
-    .param p2    # Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$1;
 
     invoke-direct {p0, p1}, Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager$GpsStatusListener;-><init>(Landroid/hardware/contextaware/aggregator/lpp/LppLocationManager;)V
 
@@ -46,7 +44,6 @@
 # virtual methods
 .method public onGpsStatusChanged(I)V
     .locals 2
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 

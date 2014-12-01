@@ -44,7 +44,6 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 27
-    .param p1    # Landroid/view/View;
 
     move-object/from16 v0, p0
 

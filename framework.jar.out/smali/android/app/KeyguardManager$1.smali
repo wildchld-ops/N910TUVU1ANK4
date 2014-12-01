@@ -37,7 +37,6 @@
 # virtual methods
 .method public onKeyguardExitResult(Z)V
     .locals 1
-    .param p1    # Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

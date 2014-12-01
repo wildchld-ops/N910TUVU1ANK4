@@ -34,13 +34,6 @@
 # direct methods
 .method public constructor <init>(FFFFIILandroid/graphics/Shader$TileMode;)V
     .locals 10
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # I
-    .param p6    # I
-    .param p7    # Landroid/graphics/Shader$TileMode;
 
     invoke-direct {p0}, Landroid/graphics/Shader;-><init>()V
 
@@ -121,13 +114,6 @@
 
 .method public constructor <init>(FFFF[I[FLandroid/graphics/Shader$TileMode;)V
     .locals 10
-    .param p1    # F
-    .param p2    # F
-    .param p3    # F
-    .param p4    # F
-    .param p5    # [I
-    .param p6    # [F
-    .param p7    # Landroid/graphics/Shader$TileMode;
 
     invoke-direct {p0}, Landroid/graphics/Shader;-><init>()V
 

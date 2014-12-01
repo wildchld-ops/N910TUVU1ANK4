@@ -31,8 +31,6 @@
 # direct methods
 .method constructor <init>(Landroid/content/ContentResolver;Landroid/database/Cursor;Landroid/content/IContentProvider;)V
     .locals 2
-    .param p2    # Landroid/database/Cursor;
-    .param p3    # Landroid/content/IContentProvider;
 
     iput-object p1, p0, Landroid/content/ContentResolver$CursorWrapperInner;->this$0:Landroid/content/ContentResolver;
 

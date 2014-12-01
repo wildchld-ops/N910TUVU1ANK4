@@ -54,8 +54,6 @@
 
 .method synthetic constructor <init>(Lcom/android/mms/saverestore/SavedMsgsList;Lcom/android/mms/saverestore/SavedMsgsList$1;)V
     .locals 0
-    .param p1    # Lcom/android/mms/saverestore/SavedMsgsList;
-    .param p2    # Lcom/android/mms/saverestore/SavedMsgsList$1;
 
     invoke-direct {p0, p1}, Lcom/android/mms/saverestore/SavedMsgsList$ReadFilesTask;-><init>(Lcom/android/mms/saverestore/SavedMsgsList;)V
 
@@ -66,7 +64,6 @@
 # virtual methods
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [Ljava/lang/Integer;
 
@@ -79,7 +76,6 @@
 
 .method protected varargs doInBackground([Ljava/lang/Integer;)Ljava/lang/String;
     .locals 4
-    .param p1    # [Ljava/lang/Integer;
 
     const/4 v2, 0x0
 
@@ -141,7 +137,6 @@
 
 .method protected bridge synthetic onPostExecute(Ljava/lang/Object;)V
     .locals 0
-    .param p1    # Ljava/lang/Object;
 
     check-cast p1, Ljava/lang/String;
 
@@ -152,7 +147,6 @@
 
 .method protected onPostExecute(Ljava/lang/String;)V
     .locals 6
-    .param p1    # Ljava/lang/String;
 
     const/4 v3, 0x0
 

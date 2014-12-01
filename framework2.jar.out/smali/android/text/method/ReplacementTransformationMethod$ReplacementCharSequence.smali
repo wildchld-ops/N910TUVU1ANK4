@@ -29,9 +29,6 @@
 # direct methods
 .method public constructor <init>(Ljava/lang/CharSequence;[C[C)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # [C
-    .param p3    # [C
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -48,7 +45,6 @@
 # virtual methods
 .method public charAt(I)C
     .locals 4
-    .param p1    # I
 
     iget-object v3, p0, Landroid/text/method/ReplacementTransformationMethod$ReplacementCharSequence;->mSource:Ljava/lang/CharSequence;
 
@@ -86,10 +82,6 @@
 
 .method public getChars(II[CI)V
     .locals 6
-    .param p1    # I
-    .param p2    # I
-    .param p3    # [C
-    .param p4    # I
 
     iget-object v5, p0, Landroid/text/method/ReplacementTransformationMethod$ReplacementCharSequence;->mSource:Ljava/lang/CharSequence;
 
@@ -155,8 +147,6 @@
 
 .method public subSequence(II)Ljava/lang/CharSequence;
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     sub-int v1, p2, p1
 

@@ -43,7 +43,6 @@
 
 .method private isValidLoginUrl(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -76,7 +75,6 @@
 
 .method private postoperation(Ljava/net/URI;)V
     .locals 22
-    .param p1    # Ljava/net/URI;
 
     invoke-virtual/range {p1 .. p1}, Ljava/net/URI;->toString()Ljava/lang/String;
 

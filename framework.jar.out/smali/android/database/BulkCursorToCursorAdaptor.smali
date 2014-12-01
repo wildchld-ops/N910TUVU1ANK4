@@ -194,7 +194,6 @@
 
 .method public initialize(Landroid/database/BulkCursorDescriptor;)V
     .locals 1
-    .param p1    # Landroid/database/BulkCursorDescriptor;
 
     iget-object v0, p1, Landroid/database/BulkCursorDescriptor;->cursor:Landroid/database/IBulkCursor;
 
@@ -234,8 +233,6 @@
 
 .method public onMove(II)Z
     .locals 4
-    .param p1    # I
-    .param p2    # I
 
     const/4 v1, 0x0
 
@@ -403,7 +400,6 @@
 
 .method public respond(Landroid/os/Bundle;)Landroid/os/Bundle;
     .locals 3
-    .param p1    # Landroid/os/Bundle;
 
     invoke-direct {p0}, Landroid/database/BulkCursorToCursorAdaptor;->throwIfCursorIsClosed()V
 

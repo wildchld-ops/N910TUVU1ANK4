@@ -27,7 +27,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/res/Resources;)V
     .locals 2
-    .param p1    # Landroid/content/res/Resources;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -89,7 +88,6 @@
 
 .method public isInFastTyping(J)Z
     .locals 4
-    .param p1    # J
 
     iget-wide v2, p0, Lcom/diotek/ime/framework/view/AbstractKeyboardView$TimeRecorder;->mLastLetterTypingTime:J
 
@@ -116,7 +114,6 @@
 
 .method public onEndBatchInput(J)V
     .locals 0
-    .param p1    # J
 
     iput-wide p1, p0, Lcom/diotek/ime/framework/view/AbstractKeyboardView$TimeRecorder;->mLastBatchInputTime:J
 
@@ -125,8 +122,6 @@
 
 .method public onKey(IJ)V
     .locals 4
-    .param p1    # I
-    .param p2    # J
 
     invoke-static {p1}, Ljava/lang/Character;->isLetter(I)Z
 

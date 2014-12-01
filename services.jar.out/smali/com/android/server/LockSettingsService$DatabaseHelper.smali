@@ -29,7 +29,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/LockSettingsService;Landroid/content/Context;)V
     .locals 3
-    .param p2    # Landroid/content/Context;
 
     iput-object p1, p0, Lcom/android/server/LockSettingsService$DatabaseHelper;->this$0:Lcom/android/server/LockSettingsService;
 
@@ -50,7 +49,6 @@
 
 .method private createTable(Landroid/database/sqlite/SQLiteDatabase;)V
     .locals 1
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
 
     const-string v0, "CREATE TABLE locksettings (_id INTEGER PRIMARY KEY AUTOINCREMENT,name TEXT,user INTEGER,value TEXT);"
 
@@ -61,7 +59,6 @@
 
 .method private initializeDefaults(Landroid/database/sqlite/SQLiteDatabase;)V
     .locals 5
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
 
     const/4 v4, 0x0
 
@@ -88,10 +85,6 @@
 
 .method private loadSetting(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;IZ)V
     .locals 4
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
-    .param p4    # Z
 
     const/4 v0, 0x0
 
@@ -150,7 +143,6 @@
 
 .method private maybeEnableWidgetSettingForUsers(Landroid/database/sqlite/SQLiteDatabase;)V
     .locals 9
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
 
     iget-object v6, p0, Lcom/android/server/LockSettingsService$DatabaseHelper;->this$0:Lcom/android/server/LockSettingsService;
 
@@ -277,7 +269,6 @@
 
 .method private updateFingerPrintSetting(Landroid/database/sqlite/SQLiteDatabase;)V
     .locals 4
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
 
     const/4 v0, 0x0
 
@@ -338,7 +329,6 @@
 # virtual methods
 .method public onCreate(Landroid/database/sqlite/SQLiteDatabase;)V
     .locals 0
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-direct {p0, p1}, Lcom/android/server/LockSettingsService$DatabaseHelper;->createTable(Landroid/database/sqlite/SQLiteDatabase;)V
 
@@ -349,9 +339,6 @@
 
 .method public onUpgrade(Landroid/database/sqlite/SQLiteDatabase;II)V
     .locals 3
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p2    # I
-    .param p3    # I
 
     move v0, p2
 

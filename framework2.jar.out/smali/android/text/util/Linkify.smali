@@ -77,7 +77,6 @@
 
 .method private static final addLinkMovementMethod(Landroid/widget/TextView;)V
     .locals 2
-    .param p0    # Landroid/widget/TextView;
 
     invoke-virtual {p0}, Landroid/widget/TextView;->getMovementMethod()Landroid/text/method/MovementMethod;
 
@@ -108,9 +107,6 @@
 
 .method public static final addLinks(Landroid/widget/TextView;Ljava/util/regex/Pattern;Ljava/lang/String;)V
     .locals 1
-    .param p0    # Landroid/widget/TextView;
-    .param p1    # Ljava/util/regex/Pattern;
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -121,11 +117,6 @@
 
 .method public static final addLinks(Landroid/widget/TextView;Ljava/util/regex/Pattern;Ljava/lang/String;Landroid/text/util/Linkify$MatchFilter;Landroid/text/util/Linkify$TransformFilter;)V
     .locals 2
-    .param p0    # Landroid/widget/TextView;
-    .param p1    # Ljava/util/regex/Pattern;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/text/util/Linkify$MatchFilter;
-    .param p4    # Landroid/text/util/Linkify$TransformFilter;
 
     invoke-virtual {p0}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
 
@@ -151,8 +142,6 @@
 
 .method public static final addLinks(Landroid/text/Spannable;I)Z
     .locals 15
-    .param p0    # Landroid/text/Spannable;
-    .param p1    # I
 
     if-nez p1, :cond_0
 
@@ -1184,9 +1173,6 @@
 
 .method public static final addLinks(Landroid/text/Spannable;Ljava/util/regex/Pattern;Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Landroid/text/Spannable;
-    .param p1    # Ljava/util/regex/Pattern;
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -1199,11 +1185,6 @@
 
 .method public static final addLinks(Landroid/text/Spannable;Ljava/util/regex/Pattern;Ljava/lang/String;Landroid/text/util/Linkify$MatchFilter;Landroid/text/util/Linkify$TransformFilter;)Z
     .locals 10
-    .param p0    # Landroid/text/Spannable;
-    .param p1    # Ljava/util/regex/Pattern;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Landroid/text/util/Linkify$MatchFilter;
-    .param p4    # Landroid/text/util/Linkify$TransformFilter;
 
     const/4 v9, 0x0
 
@@ -1280,8 +1261,6 @@
 
 .method public static final addLinks(Landroid/widget/TextView;I)Z
     .locals 5
-    .param p0    # Landroid/widget/TextView;
-    .param p1    # I
 
     const/4 v3, 0x1
 
@@ -1338,10 +1317,6 @@
 
 .method private static final applyLink(Ljava/lang/String;IILandroid/text/Spannable;)V
     .locals 2
-    .param p0    # Ljava/lang/String;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Landroid/text/Spannable;
 
     new-instance v0, Landroid/text/style/URLSpan;
 
@@ -1356,11 +1331,6 @@
 
 .method private static final gatherLinks(Ljava/util/ArrayList;Landroid/text/Spannable;Ljava/util/regex/Pattern;[Ljava/lang/String;Landroid/text/util/Linkify$MatchFilter;Landroid/text/util/Linkify$TransformFilter;)V
     .locals 6
-    .param p1    # Landroid/text/Spannable;
-    .param p2    # Ljava/util/regex/Pattern;
-    .param p3    # [Ljava/lang/String;
-    .param p4    # Landroid/text/util/Linkify$MatchFilter;
-    .param p5    # Landroid/text/util/Linkify$TransformFilter;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1437,7 +1407,6 @@
 
 .method private static final gatherMapLinks(Ljava/util/ArrayList;Landroid/text/Spannable;)V
     .locals 11
-    .param p1    # Landroid/text/Spannable;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1540,7 +1509,6 @@
 
 .method private static final gatherTelLinks(Ljava/util/ArrayList;Landroid/text/Spannable;)V
     .locals 10
-    .param p1    # Landroid/text/Spannable;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1648,10 +1616,6 @@
 
 .method private static final makeUrl(Ljava/lang/String;[Ljava/lang/String;Ljava/util/regex/Matcher;Landroid/text/util/Linkify$TransformFilter;)Ljava/lang/String;
     .locals 9
-    .param p0    # Ljava/lang/String;
-    .param p1    # [Ljava/lang/String;
-    .param p2    # Ljava/util/regex/Matcher;
-    .param p3    # Landroid/text/util/Linkify$TransformFilter;
 
     const/4 v2, 0x0
 

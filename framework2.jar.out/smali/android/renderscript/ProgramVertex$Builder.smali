@@ -17,7 +17,6 @@
 # direct methods
 .method public constructor <init>(Landroid/renderscript/RenderScript;)V
     .locals 0
-    .param p1    # Landroid/renderscript/RenderScript;
 
     invoke-direct {p0, p1}, Landroid/renderscript/Program$BaseProgramBuilder;-><init>(Landroid/renderscript/RenderScript;)V
 
@@ -28,7 +27,6 @@
 # virtual methods
 .method public addInput(Landroid/renderscript/Element;)Landroid/renderscript/ProgramVertex$Builder;
     .locals 3
-    .param p1    # Landroid/renderscript/Element;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/IllegalStateException;

@@ -22,7 +22,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -33,8 +32,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
 
     const v0, 0x101007c
 
@@ -45,9 +42,6 @@
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 10
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/util/AttributeSet;
-    .param p3    # I
 
     const/4 v5, 0x1
 
@@ -168,7 +162,6 @@
 
 .method private updateSecondaryProgress(I)V
     .locals 7
-    .param p1    # I
 
     invoke-direct {p0}, Landroid/widget/RatingBar;->getProgressPerStar()F
 
@@ -206,7 +199,6 @@
 # virtual methods
 .method dispatchRatingChange(Z)V
     .locals 2
-    .param p1    # Z
 
     iget-object v0, p0, Landroid/widget/RatingBar;->mOnRatingBarChangeListener:Landroid/widget/RatingBar$OnRatingBarChangeListener;
 
@@ -308,7 +300,6 @@
 
 .method public onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
     .locals 1
-    .param p1    # Landroid/view/accessibility/AccessibilityEvent;
 
     invoke-super {p0, p1}, Landroid/widget/AbsSeekBar;->onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
 
@@ -325,7 +316,6 @@
 
 .method public onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
     .locals 1
-    .param p1    # Landroid/view/accessibility/AccessibilityNodeInfo;
 
     invoke-super {p0, p1}, Landroid/widget/AbsSeekBar;->onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
 
@@ -354,8 +344,6 @@
 
 .method protected declared-synchronized onMeasure(II)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
 
     monitor-enter p0
 
@@ -405,8 +393,6 @@
 
 .method onProgressRefresh(FZ)V
     .locals 1
-    .param p1    # F
-    .param p2    # Z
 
     invoke-super {p0, p1, p2}, Landroid/widget/AbsSeekBar;->onProgressRefresh(FZ)V
 
@@ -463,7 +449,6 @@
 
 .method public setIsIndicator(Z)V
     .locals 3
-    .param p1    # Z
 
     const/4 v1, 0x1
 
@@ -496,7 +481,6 @@
 
 .method public declared-synchronized setMax(I)V
     .locals 1
-    .param p1    # I
 
     monitor-enter p0
 
@@ -525,7 +509,6 @@
 
 .method public setNumStars(I)V
     .locals 0
-    .param p1    # I
 
     if-gtz p1, :cond_0
 
@@ -542,7 +525,6 @@
 
 .method public setOnRatingBarChangeListener(Landroid/widget/RatingBar$OnRatingBarChangeListener;)V
     .locals 0
-    .param p1    # Landroid/widget/RatingBar$OnRatingBarChangeListener;
 
     iput-object p1, p0, Landroid/widget/RatingBar;->mOnRatingBarChangeListener:Landroid/widget/RatingBar$OnRatingBarChangeListener;
 
@@ -551,7 +533,6 @@
 
 .method public setRating(F)V
     .locals 1
-    .param p1    # F
 
     invoke-direct {p0}, Landroid/widget/RatingBar;->getProgressPerStar()F
 
@@ -570,7 +551,6 @@
 
 .method public setStepSize(F)V
     .locals 4
-    .param p1    # F
 
     const/4 v2, 0x0
 

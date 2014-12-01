@@ -46,8 +46,6 @@
 # virtual methods
 .method public compare(Landroid/graphics/Bitmap;Landroid/graphics/Bitmap;)I
     .locals 2
-    .param p1    # Landroid/graphics/Bitmap;
-    .param p2    # Landroid/graphics/Bitmap;
 
     invoke-virtual {p1}, Landroid/graphics/Bitmap;->getWidth()I
 
@@ -88,8 +86,6 @@
 
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p1, Landroid/graphics/Bitmap;
 

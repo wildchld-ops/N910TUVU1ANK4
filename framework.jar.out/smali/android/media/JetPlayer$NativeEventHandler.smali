@@ -23,8 +23,6 @@
 # direct methods
 .method public constructor <init>(Landroid/media/JetPlayer;Landroid/media/JetPlayer;Landroid/os/Looper;)V
     .locals 0
-    .param p2    # Landroid/media/JetPlayer;
-    .param p3    # Landroid/os/Looper;
 
     iput-object p1, p0, Landroid/media/JetPlayer$NativeEventHandler;->this$0:Landroid/media/JetPlayer;
 
@@ -39,7 +37,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 8
-    .param p1    # Landroid/os/Message;
 
     const/4 v7, 0x0
 

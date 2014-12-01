@@ -22,7 +22,6 @@
 # direct methods
 .method public constructor <init>([B)V
     .locals 1
-    .param p1    # [B
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -57,7 +56,6 @@
 
 .method public read(I)I
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/android/internal/util/BitwiseInputStream$AccessException;
@@ -188,7 +186,6 @@
 
 .method public readByteArray(I)[B
     .locals 6
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/android/internal/util/BitwiseInputStream$AccessException;
@@ -250,7 +247,6 @@
 
 .method public skip(I)V
     .locals 3
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lcom/android/internal/util/BitwiseInputStream$AccessException;

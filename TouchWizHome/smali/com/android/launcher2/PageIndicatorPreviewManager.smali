@@ -46,10 +46,6 @@
 
 .method public constructor <init>(Lcom/android/launcher2/PagedView;III)V
     .locals 0
-    .param p1    # Lcom/android/launcher2/PagedView;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/launcher2/PageIndicatorManager;-><init>(Lcom/android/launcher2/PagedView;III)V
 
@@ -100,8 +96,6 @@
 
 .method public getHitRect(Landroid/graphics/Rect;I)V
     .locals 11
-    .param p1    # Landroid/graphics/Rect;
-    .param p2    # I
 
     const/4 v10, 0x0
 
@@ -240,7 +234,6 @@
 
 .method protected getPageIndicator(Landroid/content/res/Resources;)Lcom/android/launcher2/PageIndicator;
     .locals 2
-    .param p1    # Landroid/content/res/Resources;
 
     new-instance v0, Lcom/android/launcher2/PagePreviewIndicator;
 
@@ -299,7 +292,6 @@
 
 .method public onDragEnter(I)Z
     .locals 3
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -339,7 +331,6 @@
 
 .method public onDragExit(I)Z
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x1
 
@@ -352,7 +343,6 @@
 
 .method public onDrop(I)Z
     .locals 1
-    .param p1    # I
 
     const/4 v0, 0x0
 

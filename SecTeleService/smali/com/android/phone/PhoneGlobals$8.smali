@@ -38,7 +38,7 @@
 
     iget-object v2, p0, Lcom/android/phone/PhoneGlobals$8;->this$0:Lcom/android/phone/PhoneGlobals;
 
-    invoke-virtual {v2}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v2}, Lcom/android/phone/PhoneGlobals;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 
@@ -83,7 +83,7 @@
 
     iget-object v2, p0, Lcom/android/phone/PhoneGlobals$8;->this$0:Lcom/android/phone/PhoneGlobals;
 
-    invoke-virtual {v2}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v2}, Lcom/android/phone/PhoneGlobals;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 
@@ -106,7 +106,7 @@
     :cond_2
     iget-object v2, p0, Lcom/android/phone/PhoneGlobals$8;->this$0:Lcom/android/phone/PhoneGlobals;
 
-    invoke-virtual {v2}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v2}, Lcom/android/phone/PhoneGlobals;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 
@@ -120,7 +120,7 @@
 
     iget-object v2, p0, Lcom/android/phone/PhoneGlobals$8;->this$0:Lcom/android/phone/PhoneGlobals;
 
-    invoke-virtual {v2}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v2}, Lcom/android/phone/PhoneGlobals;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 

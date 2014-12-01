@@ -40,7 +40,6 @@
 # virtual methods
 .method public createFromParcel(Landroid/os/Parcel;)Landroid/nfc/cardemulation/ApduServiceInfo$AidGroup;
     .locals 5
-    .param p1    # Landroid/os/Parcel;
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
@@ -72,7 +71,6 @@
 
 .method public bridge synthetic createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
     .locals 1
-    .param p1    # Landroid/os/Parcel;
 
     invoke-virtual {p0, p1}, Landroid/nfc/cardemulation/ApduServiceInfo$AidGroup$1;->createFromParcel(Landroid/os/Parcel;)Landroid/nfc/cardemulation/ApduServiceInfo$AidGroup;
 
@@ -83,7 +81,6 @@
 
 .method public newArray(I)[Landroid/nfc/cardemulation/ApduServiceInfo$AidGroup;
     .locals 1
-    .param p1    # I
 
     new-array v0, p1, [Landroid/nfc/cardemulation/ApduServiceInfo$AidGroup;
 
@@ -92,7 +89,6 @@
 
 .method public bridge synthetic newArray(I)[Ljava/lang/Object;
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0, p1}, Landroid/nfc/cardemulation/ApduServiceInfo$AidGroup$1;->newArray(I)[Landroid/nfc/cardemulation/ApduServiceInfo$AidGroup;
 

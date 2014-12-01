@@ -21,10 +21,6 @@
 # direct methods
 .method public constructor <init>(IIII)V
     .locals 3
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     new-instance v0, Landroid/graphics/drawable/shapes/RectShape;
 
@@ -55,7 +51,6 @@
 # virtual methods
 .method public draw(Landroid/graphics/Canvas;)V
     .locals 2
-    .param p1    # Landroid/graphics/Canvas;
 
     iget-object v0, p0, Lcom/android/ex/editstyledtext/EditStyledText$ColorPaletteDrawable;->mRect:Landroid/graphics/Rect;
 

@@ -293,11 +293,6 @@
 
 .method public static eglCreateWindowSurface(Landroid/opengl/EGLDisplay;Landroid/opengl/EGLConfig;Ljava/lang/Object;[II)Landroid/opengl/EGLSurface;
     .locals 6
-    .param p0    # Landroid/opengl/EGLDisplay;
-    .param p1    # Landroid/opengl/EGLConfig;
-    .param p2    # Ljava/lang/Object;
-    .param p3    # [I
-    .param p4    # I
 
     const/4 v1, 0x0
 

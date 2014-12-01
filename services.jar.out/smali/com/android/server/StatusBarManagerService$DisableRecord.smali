@@ -42,8 +42,6 @@
 
 .method synthetic constructor <init>(Lcom/android/server/StatusBarManagerService;Lcom/android/server/StatusBarManagerService$1;)V
     .locals 0
-    .param p1    # Lcom/android/server/StatusBarManagerService;
-    .param p2    # Lcom/android/server/StatusBarManagerService$1;
 
     invoke-direct {p0, p1}, Lcom/android/server/StatusBarManagerService$DisableRecord;-><init>(Lcom/android/server/StatusBarManagerService;)V
 

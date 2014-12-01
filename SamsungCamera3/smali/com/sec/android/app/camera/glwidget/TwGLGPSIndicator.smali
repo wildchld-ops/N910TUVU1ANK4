@@ -31,9 +31,6 @@
 # direct methods
 .method public constructor <init>(Lcom/sec/android/glview/TwGLContext;FF)V
     .locals 3
-    .param p1    # Lcom/sec/android/glview/TwGLContext;
-    .param p2    # F
-    .param p3    # F
 
     const/4 v0, 0x0
 
@@ -118,7 +115,6 @@
 
 .method static synthetic access$000(Lcom/sec/android/app/camera/glwidget/TwGLGPSIndicator;)Lcom/sec/android/glview/TwGLImage;
     .locals 1
-    .param p0    # Lcom/sec/android/app/camera/glwidget/TwGLGPSIndicator;
 
     iget-object v0, p0, Lcom/sec/android/app/camera/glwidget/TwGLGPSIndicator;->mGps:Lcom/sec/android/glview/TwGLImage;
 
@@ -139,7 +135,6 @@
 
 .method public setGPS(I)V
     .locals 2
-    .param p1    # I
 
     if-ltz p1, :cond_0
 

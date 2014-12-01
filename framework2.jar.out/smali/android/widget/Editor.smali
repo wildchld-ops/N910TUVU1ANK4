@@ -261,7 +261,6 @@
 
 .method constructor <init>(Landroid/widget/TextView;)V
     .locals 6
-    .param p1    # Landroid/widget/TextView;
 
     const/4 v3, 0x0
 
@@ -426,7 +425,6 @@
 
 .method static synthetic access$1000(Landroid/widget/Editor;)V
     .locals 0
-    .param p0    # Landroid/widget/Editor;
 
     invoke-direct {p0}, Landroid/widget/Editor;->sendUpdateSelection()V
 
@@ -435,7 +433,6 @@
 
 .method static synthetic access$1500(Landroid/widget/Editor;)Z
     .locals 1
-    .param p0    # Landroid/widget/Editor;
 
     invoke-direct {p0}, Landroid/widget/Editor;->extractedTextModeWillBeStarted()Z
 
@@ -446,7 +443,6 @@
 
 .method static synthetic access$1600(Landroid/widget/Editor;)Landroid/widget/Editor$PositionListener;
     .locals 1
-    .param p0    # Landroid/widget/Editor;
 
     invoke-direct {p0}, Landroid/widget/Editor;->getPositionListener()Landroid/widget/Editor$PositionListener;
 
@@ -457,8 +453,6 @@
 
 .method static synthetic access$1700(Landroid/widget/Editor;I)Z
     .locals 1
-    .param p0    # Landroid/widget/Editor;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Landroid/widget/Editor;->isOffsetVisible(I)Z
 
@@ -469,7 +463,6 @@
 
 .method static synthetic access$2500(Landroid/widget/Editor;)Landroid/graphics/Rect;
     .locals 1
-    .param p0    # Landroid/widget/Editor;
 
     iget-object v0, p0, Landroid/widget/Editor;->mTempRect:Landroid/graphics/Rect;
 
@@ -478,8 +471,6 @@
 
 .method static synthetic access$2502(Landroid/widget/Editor;Landroid/graphics/Rect;)Landroid/graphics/Rect;
     .locals 0
-    .param p0    # Landroid/widget/Editor;
-    .param p1    # Landroid/graphics/Rect;
 
     iput-object p1, p0, Landroid/widget/Editor;->mTempRect:Landroid/graphics/Rect;
 
@@ -488,10 +479,6 @@
 
 .method static synthetic access$2600(Landroid/widget/Editor;IIZ)V
     .locals 0
-    .param p0    # Landroid/widget/Editor;
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/Editor;->updateSpellCheckSpans(IIZ)V
 
@@ -500,7 +487,6 @@
 
 .method static synthetic access$2700(Landroid/widget/Editor;)Z
     .locals 1
-    .param p0    # Landroid/widget/Editor;
 
     iget-boolean v0, p0, Landroid/widget/Editor;->mThemeIsDeviceDefault:Z
 
@@ -509,7 +495,6 @@
 
 .method static synthetic access$2800(Landroid/widget/Editor;)Z
     .locals 1
-    .param p0    # Landroid/widget/Editor;
 
     invoke-direct {p0}, Landroid/widget/Editor;->isDictionaryEnabled()Z
 
@@ -520,7 +505,6 @@
 
 .method static synthetic access$2900(Landroid/widget/Editor;)Landroid/view/Menu;
     .locals 1
-    .param p0    # Landroid/widget/Editor;
 
     iget-object v0, p0, Landroid/widget/Editor;->mActionModeMenu:Landroid/view/Menu;
 
@@ -529,8 +513,6 @@
 
 .method static synthetic access$2902(Landroid/widget/Editor;Landroid/view/Menu;)Landroid/view/Menu;
     .locals 0
-    .param p0    # Landroid/widget/Editor;
-    .param p1    # Landroid/view/Menu;
 
     iput-object p1, p0, Landroid/widget/Editor;->mActionModeMenu:Landroid/view/Menu;
 
@@ -539,7 +521,6 @@
 
 .method static synthetic access$3000(Landroid/widget/Editor;)Z
     .locals 1
-    .param p0    # Landroid/widget/Editor;
 
     iget-boolean v0, p0, Landroid/widget/Editor;->mNewActionPopup:Z
 
@@ -548,7 +529,6 @@
 
 .method static synthetic access$3100(Landroid/widget/Editor;)Z
     .locals 1
-    .param p0    # Landroid/widget/Editor;
 
     invoke-direct {p0}, Landroid/widget/Editor;->isCursorInsideSuggestionSpan()Z
 
@@ -559,9 +539,6 @@
 
 .method static synthetic access$3400(Landroid/widget/Editor;II)Z
     .locals 1
-    .param p0    # Landroid/widget/Editor;
-    .param p1    # I
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Landroid/widget/Editor;->isPositionVisible(II)Z
 
@@ -572,7 +549,6 @@
 
 .method static synthetic access$3500(Landroid/widget/Editor;)V
     .locals 0
-    .param p0    # Landroid/widget/Editor;
 
     invoke-direct {p0}, Landroid/widget/Editor;->hideInsertionPointCursorController()V
 
@@ -581,7 +557,6 @@
 
 .method static synthetic access$3600(Landroid/widget/Editor;)Landroid/graphics/drawable/Drawable;
     .locals 1
-    .param p0    # Landroid/widget/Editor;
 
     iget-object v0, p0, Landroid/widget/Editor;->mSelectHandleCenter:Landroid/graphics/drawable/Drawable;
 
@@ -590,8 +565,6 @@
 
 .method static synthetic access$3602(Landroid/widget/Editor;Landroid/graphics/drawable/Drawable;)Landroid/graphics/drawable/Drawable;
     .locals 0
-    .param p0    # Landroid/widget/Editor;
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     iput-object p1, p0, Landroid/widget/Editor;->mSelectHandleCenter:Landroid/graphics/drawable/Drawable;
 
@@ -600,7 +573,6 @@
 
 .method static synthetic access$3700(Landroid/widget/Editor;)Landroid/graphics/drawable/Drawable;
     .locals 1
-    .param p0    # Landroid/widget/Editor;
 
     iget-object v0, p0, Landroid/widget/Editor;->mSelectHandleLeft:Landroid/graphics/drawable/Drawable;
 
@@ -609,8 +581,6 @@
 
 .method static synthetic access$3702(Landroid/widget/Editor;Landroid/graphics/drawable/Drawable;)Landroid/graphics/drawable/Drawable;
     .locals 0
-    .param p0    # Landroid/widget/Editor;
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     iput-object p1, p0, Landroid/widget/Editor;->mSelectHandleLeft:Landroid/graphics/drawable/Drawable;
 
@@ -619,7 +589,6 @@
 
 .method static synthetic access$3800(Landroid/widget/Editor;)Landroid/graphics/drawable/Drawable;
     .locals 1
-    .param p0    # Landroid/widget/Editor;
 
     iget-object v0, p0, Landroid/widget/Editor;->mSelectHandleRight:Landroid/graphics/drawable/Drawable;
 
@@ -628,8 +597,6 @@
 
 .method static synthetic access$3802(Landroid/widget/Editor;Landroid/graphics/drawable/Drawable;)Landroid/graphics/drawable/Drawable;
     .locals 0
-    .param p0    # Landroid/widget/Editor;
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     iput-object p1, p0, Landroid/widget/Editor;->mSelectHandleRight:Landroid/graphics/drawable/Drawable;
 
@@ -638,7 +605,6 @@
 
 .method static synthetic access$3900(Landroid/widget/Editor;)Landroid/graphics/drawable/Drawable;
     .locals 1
-    .param p0    # Landroid/widget/Editor;
 
     iget-object v0, p0, Landroid/widget/Editor;->mSelectHandleLeftTop:Landroid/graphics/drawable/Drawable;
 
@@ -647,8 +613,6 @@
 
 .method static synthetic access$3902(Landroid/widget/Editor;Landroid/graphics/drawable/Drawable;)Landroid/graphics/drawable/Drawable;
     .locals 0
-    .param p0    # Landroid/widget/Editor;
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     iput-object p1, p0, Landroid/widget/Editor;->mSelectHandleLeftTop:Landroid/graphics/drawable/Drawable;
 
@@ -657,7 +621,6 @@
 
 .method static synthetic access$4000(Landroid/widget/Editor;)Landroid/graphics/drawable/Drawable;
     .locals 1
-    .param p0    # Landroid/widget/Editor;
 
     iget-object v0, p0, Landroid/widget/Editor;->mSelectHandleRightTop:Landroid/graphics/drawable/Drawable;
 
@@ -666,8 +629,6 @@
 
 .method static synthetic access$4002(Landroid/widget/Editor;Landroid/graphics/drawable/Drawable;)Landroid/graphics/drawable/Drawable;
     .locals 0
-    .param p0    # Landroid/widget/Editor;
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     iput-object p1, p0, Landroid/widget/Editor;->mSelectHandleRightTop:Landroid/graphics/drawable/Drawable;
 
@@ -676,9 +637,6 @@
 
 .method static synthetic access$4100(Landroid/widget/Editor;FF)Z
     .locals 1
-    .param p0    # Landroid/widget/Editor;
-    .param p1    # F
-    .param p2    # F
 
     invoke-direct {p0, p1, p2}, Landroid/widget/Editor;->isPositionOnText(FF)Z
 
@@ -689,7 +647,6 @@
 
 .method static synthetic access$4200(Landroid/widget/Editor;)I
     .locals 1
-    .param p0    # Landroid/widget/Editor;
 
     iget v0, p0, Landroid/widget/Editor;->selection_start:I
 
@@ -698,8 +655,6 @@
 
 .method static synthetic access$4202(Landroid/widget/Editor;I)I
     .locals 0
-    .param p0    # Landroid/widget/Editor;
-    .param p1    # I
 
     iput p1, p0, Landroid/widget/Editor;->selection_start:I
 
@@ -708,7 +663,6 @@
 
 .method static synthetic access$4300(Landroid/widget/Editor;)I
     .locals 1
-    .param p0    # Landroid/widget/Editor;
 
     iget v0, p0, Landroid/widget/Editor;->selection_end:I
 
@@ -717,8 +671,6 @@
 
 .method static synthetic access$4302(Landroid/widget/Editor;I)I
     .locals 0
-    .param p0    # Landroid/widget/Editor;
-    .param p1    # I
 
     iput p1, p0, Landroid/widget/Editor;->selection_end:I
 
@@ -727,7 +679,6 @@
 
 .method static synthetic access$4400(Landroid/widget/Editor;)Landroid/content/BroadcastReceiver;
     .locals 1
-    .param p0    # Landroid/widget/Editor;
 
     iget-object v0, p0, Landroid/widget/Editor;->mReceiver:Landroid/content/BroadcastReceiver;
 
@@ -736,7 +687,6 @@
 
 .method static synthetic access$800(Landroid/widget/Editor;)Z
     .locals 1
-    .param p0    # Landroid/widget/Editor;
 
     invoke-direct {p0}, Landroid/widget/Editor;->shouldBlink()Z
 
@@ -747,7 +697,6 @@
 
 .method static synthetic access$900(Landroid/widget/Editor;)Landroid/widget/TextView;
     .locals 1
-    .param p0    # Landroid/widget/Editor;
 
     iget-object v0, p0, Landroid/widget/Editor;->mTextView:Landroid/widget/TextView;
 
@@ -788,9 +737,6 @@
 
 .method private chooseSize(Landroid/widget/PopupWindow;Ljava/lang/CharSequence;Landroid/widget/TextView;)V
     .locals 12
-    .param p1    # Landroid/widget/PopupWindow;
-    .param p2    # Ljava/lang/CharSequence;
-    .param p3    # Landroid/widget/TextView;
 
     invoke-virtual {p3}, Landroid/view/View;->getPaddingLeft()I
 
@@ -958,8 +904,6 @@
 
 .method private drawCursor(Landroid/graphics/Canvas;I)V
     .locals 4
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # I
 
     const/4 v3, 0x0
 
@@ -1012,11 +956,6 @@
 
 .method private drawHardwareAccelerated(Landroid/graphics/Canvas;Landroid/text/Layout;Landroid/graphics/Path;Landroid/graphics/Paint;I)V
     .locals 35
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # Landroid/text/Layout;
-    .param p3    # Landroid/graphics/Path;
-    .param p4    # Landroid/graphics/Paint;
-    .param p5    # I
 
     move-object/from16 v0, p2
 
@@ -1419,11 +1358,6 @@
 
 .method private extractTextInternal(Landroid/view/inputmethod/ExtractedTextRequest;IIILandroid/view/inputmethod/ExtractedText;)Z
     .locals 8
-    .param p1    # Landroid/view/inputmethod/ExtractedTextRequest;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
-    .param p5    # Landroid/view/inputmethod/ExtractedText;
 
     const/4 v6, 0x0
 
@@ -1658,9 +1592,6 @@
 
 .method private getAvailableDisplayListIndex([III)I
     .locals 8
-    .param p1    # [I
-    .param p2    # I
-    .param p3    # I
 
     const/4 v7, 0x0
 
@@ -1721,7 +1652,6 @@
 
 .method private getCharRange(I)J
     .locals 7
-    .param p1    # I
 
     iget-object v5, p0, Landroid/widget/Editor;->mTextView:Landroid/widget/TextView;
 
@@ -2177,10 +2107,6 @@
 
 .method private getPrimaryHorizontal(Landroid/text/Layout;Landroid/text/Layout;IZ)F
     .locals 1
-    .param p1    # Landroid/text/Layout;
-    .param p2    # Landroid/text/Layout;
-    .param p3    # I
-    .param p4    # Z
 
     invoke-virtual {p1}, Landroid/text/Layout;->getText()Ljava/lang/CharSequence;
 
@@ -2221,7 +2147,6 @@
 
 .method private getTextThumbnailBuilder(Ljava/lang/CharSequence;)Landroid/view/View$DragShadowBuilder;
     .locals 8
-    .param p1    # Ljava/lang/CharSequence;
 
     const/4 v7, -0x2
 
@@ -2737,7 +2662,6 @@
 
 .method private isOffsetVisible(I)Z
     .locals 6
-    .param p1    # I
 
     iget-object v4, p0, Landroid/widget/Editor;->mTextView:Landroid/widget/TextView;
 
@@ -2792,8 +2716,6 @@
 
 .method private isPositionOnText(FF)Z
     .locals 6
-    .param p1    # F
-    .param p2    # F
 
     const/4 v4, 0x1
 
@@ -2887,8 +2809,6 @@
 
 .method private isPositionVisible(II)Z
     .locals 11
-    .param p1    # I
-    .param p2    # I
 
     const/4 v10, 0x0
 
@@ -3674,7 +3594,6 @@
 
 .method private setErrorIcon(Landroid/graphics/drawable/Drawable;)V
     .locals 3
-    .param p1    # Landroid/graphics/drawable/Drawable;
 
     iget-object v1, p0, Landroid/widget/Editor;->mTextView:Landroid/widget/TextView;
 
@@ -4021,10 +3940,6 @@
 
 .method private updateCursorPosition(IIIF)V
     .locals 14
-    .param p1    # I
-    .param p2    # I
-    .param p3    # I
-    .param p4    # F
 
     iget-object v9, p0, Landroid/widget/Editor;->mCursorDrawable:[Landroid/graphics/drawable/Drawable;
 
@@ -4320,9 +4235,6 @@
 
 .method private updateSpellCheckSpans(IIZ)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
-    .param p3    # Z
 
     iget-object v0, p0, Landroid/widget/Editor;->mTextView:Landroid/widget/TextView;
 
@@ -4385,7 +4297,6 @@
 # virtual methods
 .method public addSpanWatchers(Landroid/text/Spannable;)V
     .locals 4
-    .param p1    # Landroid/text/Spannable;
 
     const/16 v3, 0x12
 
@@ -4424,10 +4335,6 @@
 
 .method adjustInputType(ZZZZ)V
     .locals 2
-    .param p1    # Z
-    .param p2    # Z
-    .param p3    # Z
-    .param p4    # Z
 
     iget v0, p0, Landroid/widget/Editor;->mInputType:I
 
@@ -4615,7 +4522,6 @@
 
 .method public enableNewActionPopupWindow(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/widget/Editor;->mEnableActionPopupWindow:Z
 
@@ -4679,8 +4585,6 @@
 
 .method extractText(Landroid/view/inputmethod/ExtractedTextRequest;Landroid/view/inputmethod/ExtractedText;)Z
     .locals 6
-    .param p1    # Landroid/view/inputmethod/ExtractedTextRequest;
-    .param p2    # Landroid/view/inputmethod/ExtractedText;
 
     const/4 v2, -0x1
 
@@ -4703,7 +4607,6 @@
 
 .method finishBatchEdit(Landroid/widget/Editor$InputMethodState;)V
     .locals 1
-    .param p1    # Landroid/widget/Editor$InputMethodState;
 
     iget-object v0, p0, Landroid/widget/Editor;->mTextView:Landroid/widget/TextView;
 
@@ -4929,9 +4832,6 @@
 
 .method invalidateTextDisplayList(Landroid/text/Layout;II)V
     .locals 9
-    .param p1    # Landroid/text/Layout;
-    .param p2    # I
-    .param p3    # I
 
     iget-object v8, p0, Landroid/widget/Editor;->mTextDisplayLists:[Landroid/view/DisplayList;
 
@@ -5280,7 +5180,6 @@
 
 .method public onCommitCorrection(Landroid/view/inputmethod/CorrectionInfo;)V
     .locals 2
-    .param p1    # Landroid/view/inputmethod/CorrectionInfo;
 
     iget-object v0, p0, Landroid/widget/Editor;->mCorrectionHighlighter:Landroid/widget/Editor$CorrectionHighlighter;
 
@@ -5432,11 +5331,6 @@
 
 .method onDraw(Landroid/graphics/Canvas;Landroid/text/Layout;Landroid/graphics/Path;Landroid/graphics/Paint;I)V
     .locals 19
-    .param p1    # Landroid/graphics/Canvas;
-    .param p2    # Landroid/text/Layout;
-    .param p3    # Landroid/graphics/Path;
-    .param p4    # Landroid/graphics/Paint;
-    .param p5    # I
 
     move-object/from16 v0, p0
 
@@ -5740,7 +5634,6 @@
 
 .method onDrop(Landroid/view/DragEvent;)V
     .locals 30
-    .param p1    # Landroid/view/DragEvent;
 
     new-instance v4, Ljava/lang/StringBuilder;
 
@@ -6277,8 +6170,6 @@
 
 .method onFocusChanged(ZI)V
     .locals 10
-    .param p1    # Z
-    .param p2    # I
 
     const/4 v6, 0x1
 
@@ -6694,7 +6585,6 @@
 
 .method public onGestureEvent(Lcom/samsung/android/service/gesture/GestureEvent;)V
     .locals 3
-    .param p1    # Lcom/samsung/android/service/gesture/GestureEvent;
 
     invoke-static {}, Lcom/samsung/android/feature/FloatingFeature;->getInstance()Lcom/samsung/android/feature/FloatingFeature;
 
@@ -6776,7 +6666,6 @@
 
 .method onScreenStateChanged(I)V
     .locals 0
-    .param p1    # I
 
     packed-switch p1, :pswitch_data_0
 
@@ -6854,7 +6743,6 @@
 
 .method onTouchEvent(Landroid/view/MotionEvent;)V
     .locals 3
-    .param p1    # Landroid/view/MotionEvent;
 
     const/4 v2, 0x0
 
@@ -6914,7 +6802,6 @@
 
 .method onTouchUpEvent(Landroid/view/MotionEvent;)V
     .locals 7
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-boolean v3, p0, Landroid/widget/Editor;->mSelectAllOnFocus:Z
 
@@ -7062,7 +6949,6 @@
 
 .method onWindowFocusChanged(Z)V
     .locals 2
-    .param p1    # Z
 
     const/4 v1, 0x0
 
@@ -7160,7 +7046,6 @@
 
 .method public performLongClick(Z)Z
     .locals 14
-    .param p1    # Z
 
     const/4 v13, 0x1
 
@@ -7794,8 +7679,6 @@
 
 .method sendOnTextChanged(II)V
     .locals 2
-    .param p1    # I
-    .param p2    # I
 
     add-int v0, p1, p2
 
@@ -7810,9 +7693,6 @@
 
 .method public sendToDictionary(Ljava/lang/String;II)V
     .locals 6
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     const/16 v5, 0x20
 
@@ -7896,7 +7776,6 @@
 
 .method protected setDeviceDefaultTheme(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Landroid/widget/Editor;->mThemeIsDeviceDefault:Z
 
@@ -7905,8 +7784,6 @@
 
 .method public setError(Ljava/lang/CharSequence;Landroid/graphics/drawable/Drawable;)V
     .locals 2
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # Landroid/graphics/drawable/Drawable;
 
     const/4 v1, 0x0
 
@@ -8023,8 +7900,6 @@
 
 .method public setNewActionPopupMenu(IZ)V
     .locals 0
-    .param p1    # I
-    .param p2    # Z
 
     packed-switch p1, :pswitch_data_0
 
@@ -8070,7 +7945,6 @@
 
 .method setWBPositionListenerEnalbed(Z)V
     .locals 3
-    .param p1    # Z
 
     if-eqz p1, :cond_2
 
@@ -8472,7 +8346,6 @@
 
 .method stopCursorBlink(Z)V
     .locals 0
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -8556,9 +8429,6 @@
 
 .method public translateRegister(Ljava/lang/String;II)V
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
-    .param p3    # I
 
     const/4 v4, 0x1
 
@@ -8680,7 +8550,6 @@
 
 .method public updateCurrentOrientation(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/widget/Editor;->hasInsertionController()Z
 

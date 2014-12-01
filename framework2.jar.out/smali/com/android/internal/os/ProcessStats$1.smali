@@ -40,8 +40,6 @@
 # virtual methods
 .method public final compare(Lcom/android/internal/os/ProcessStats$Stats;Lcom/android/internal/os/ProcessStats$Stats;)I
     .locals 6
-    .param p1    # Lcom/android/internal/os/ProcessStats$Stats;
-    .param p2    # Lcom/android/internal/os/ProcessStats$Stats;
 
     const/4 v3, 0x1
 
@@ -110,8 +108,6 @@
 
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 1
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/Object;
 
     check-cast p1, Lcom/android/internal/os/ProcessStats$Stats;
 

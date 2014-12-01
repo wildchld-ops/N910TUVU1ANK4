@@ -34,7 +34,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/mms/transaction/PushReceiver;Landroid/content/Context;)V
     .locals 0
-    .param p2    # Landroid/content/Context;
 
     iput-object p1, p0, Lcom/android/mms/transaction/PushReceiver$ReceivePushTask;->this$0:Lcom/android/mms/transaction/PushReceiver;
 
@@ -47,7 +46,6 @@
 
 .method private isDataAvailable(I)Z
     .locals 9
-    .param p1    # I
 
     const/4 v4, 0x1
 
@@ -218,7 +216,6 @@
 
 .method private updateAddress(Lcom/google/android/mms/pdu/EncodedStringValue;)V
     .locals 3
-    .param p1    # Lcom/google/android/mms/pdu/EncodedStringValue;
 
     if-nez p1, :cond_1
 
@@ -266,7 +263,6 @@
 # virtual methods
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .param p1    # [Ljava/lang/Object;
 
     check-cast p1, [Landroid/content/Intent;
 
@@ -279,7 +275,6 @@
 
 .method protected varargs doInBackground([Landroid/content/Intent;)Ljava/lang/Void;
     .locals 50
-    .param p1    # [Landroid/content/Intent;
 
     const/4 v5, 0x0
 

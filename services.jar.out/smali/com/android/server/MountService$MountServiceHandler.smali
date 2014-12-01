@@ -34,7 +34,6 @@
 # direct methods
 .method constructor <init>(Lcom/android/server/MountService;Landroid/os/Looper;)V
     .locals 1
-    .param p2    # Landroid/os/Looper;
 
     iput-object p1, p0, Lcom/android/server/MountService$MountServiceHandler;->this$0:Lcom/android/server/MountService;
 
@@ -57,7 +56,6 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 21
-    .param p1    # Landroid/os/Message;
 
     move-object/from16 v0, p1
 

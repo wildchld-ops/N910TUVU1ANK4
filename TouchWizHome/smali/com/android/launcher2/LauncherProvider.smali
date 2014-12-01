@@ -117,7 +117,6 @@
 
 .method static synthetic access$202(Z)Z
     .locals 0
-    .param p0    # Z
 
     sput-boolean p0, Lcom/android/launcher2/LauncherProvider;->mIsRestoreHomeScreen:Z
 
@@ -134,8 +133,6 @@
 
 .method static synthetic access$400(Ljava/lang/String;Ljava/lang/String;)Landroid/graphics/Bitmap;
     .locals 1
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     invoke-static {p0, p1}, Lcom/android/launcher2/LauncherProvider;->getBitmapFromBackupPath(Ljava/lang/String;Ljava/lang/String;)Landroid/graphics/Bitmap;
 
@@ -146,8 +143,6 @@
 
 .method public static final beginDocument(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)V
     .locals 4
-    .param p0    # Lorg/xmlpull/v1/XmlPullParser;
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/xmlpull/v1/XmlPullParserException;,
@@ -234,8 +229,6 @@
 
 .method static buildOrWhereString(Ljava/lang/String;[I)Ljava/lang/String;
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # [I
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -283,11 +276,6 @@
 
 .method protected static dbInsertAndCheck(Lcom/android/launcher2/LauncherProvider$DatabaseHelper;Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Ljava/lang/String;Landroid/content/ContentValues;)J
     .locals 2
-    .param p0    # Lcom/android/launcher2/LauncherProvider$DatabaseHelper;
-    .param p1    # Landroid/database/sqlite/SQLiteDatabase;
-    .param p2    # Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Landroid/content/ContentValues;
 
     const-string v0, "_id"
 
@@ -315,8 +303,6 @@
 
 .method private static getBitmapFromBackupPath(Ljava/lang/String;Ljava/lang/String;)Landroid/graphics/Bitmap;
     .locals 4
-    .param p0    # Ljava/lang/String;
-    .param p1    # Ljava/lang/String;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -365,7 +351,6 @@
 # virtual methods
 .method public LoadAttReady2GoDB(Ljava/lang/String;)I
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -374,8 +359,6 @@
 
 .method public addHomeFolderItems(JLcom/android/launcher2/HomeFolderItem;)V
     .locals 11
-    .param p1    # J
-    .param p3    # Lcom/android/launcher2/HomeFolderItem;
 
     const/4 v7, 0x1
 
@@ -575,8 +558,6 @@
 
 .method public bulkInsert(Landroid/net/Uri;[Landroid/content/ContentValues;)I
     .locals 8
-    .param p1    # Landroid/net/Uri;
-    .param p2    # [Landroid/content/ContentValues;
 
     new-instance v0, Lcom/android/launcher2/LauncherProvider$SqlArguments;
 
@@ -654,9 +635,6 @@
 
 .method public delete(Landroid/net/Uri;Ljava/lang/String;[Ljava/lang/String;)I
     .locals 6
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Ljava/lang/String;
-    .param p3    # [Ljava/lang/String;
 
     new-instance v0, Lcom/android/launcher2/LauncherProvider$SqlArguments;
 
@@ -921,7 +899,6 @@
 
 .method public getShortcutInfo(Lcom/android/launcher2/HomeItem;)Lcom/android/launcher2/HomeShortcutItem;
     .locals 9
-    .param p1    # Lcom/android/launcher2/HomeItem;
 
     new-instance v5, Lcom/android/launcher2/HomeShortcutItem;
 
@@ -1056,7 +1033,6 @@
 
 .method public getType(Landroid/net/Uri;)Ljava/lang/String;
     .locals 4
-    .param p1    # Landroid/net/Uri;
 
     const/4 v2, 0x0
 
@@ -1121,8 +1097,6 @@
 
 .method public insert(Landroid/net/Uri;Landroid/content/ContentValues;)Landroid/net/Uri;
     .locals 7
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Landroid/content/ContentValues;
 
     const/4 v4, 0x0
 
@@ -1448,11 +1422,6 @@
 
 .method public query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
     .locals 10
-    .param p1    # Landroid/net/Uri;
-    .param p2    # [Ljava/lang/String;
-    .param p3    # Ljava/lang/String;
-    .param p4    # [Ljava/lang/String;
-    .param p5    # Ljava/lang/String;
 
     const/4 v5, 0x0
 
@@ -1506,8 +1475,6 @@
 
 .method public restoreHomeScreenDB(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)I
     .locals 5
-    .param p1    # Lorg/xmlpull/v1/XmlPullParser;
-    .param p2    # Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -1560,7 +1527,6 @@
 
 .method protected sendNotify(Landroid/net/Uri;)V
     .locals 3
-    .param p1    # Landroid/net/Uri;
 
     const-string v1, "notify"
 
@@ -1597,7 +1563,6 @@
 
 .method switchToDynamicMode(I)Z
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Lcom/android/launcher2/LauncherProvider;->getDatabaseHelper()Lcom/android/launcher2/LauncherProvider$DatabaseHelper;
 
@@ -1612,10 +1577,6 @@
 
 .method public update(Landroid/net/Uri;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)I
     .locals 6
-    .param p1    # Landroid/net/Uri;
-    .param p2    # Landroid/content/ContentValues;
-    .param p3    # Ljava/lang/String;
-    .param p4    # [Ljava/lang/String;
 
     new-instance v0, Lcom/android/launcher2/LauncherProvider$SqlArguments;
 

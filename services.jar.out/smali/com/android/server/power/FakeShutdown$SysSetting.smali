@@ -25,7 +25,6 @@
 
 .method public static backupAll(Landroid/content/Context;)V
     .locals 4
-    .param p0    # Landroid/content/Context;
 
     const/4 v3, 0x1
 
@@ -60,10 +59,6 @@
 
 .method private static backupSettingInt(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;I)V
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     invoke-static {p0, p1, p3}, Lcom/android/server/power/FakeShutdown$SysSetting;->get(Landroid/content/Context;Ljava/lang/String;I)I
 
@@ -76,9 +71,6 @@
 
 .method private static backupSettingString(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-static {p0, p1}, Lcom/android/server/power/FakeShutdown$SysSetting;->getString(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
 
@@ -91,9 +83,6 @@
 
 .method public static get(Landroid/content/Context;Ljava/lang/String;I)I
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -108,9 +97,6 @@
 
 .method public static getSecure(Landroid/content/Context;Ljava/lang/String;I)I
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -125,8 +111,6 @@
 
 .method public static getString(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -141,7 +125,6 @@
 
 .method public static prepareFakeShutdown(Landroid/content/Context;)V
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -164,9 +147,6 @@
 
 .method public static put(Landroid/content/Context;Ljava/lang/String;I)V
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -179,9 +159,6 @@
 
 .method public static putSecure(Landroid/content/Context;Ljava/lang/String;I)V
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # I
 
     invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -194,9 +171,6 @@
 
 .method public static putString(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -209,7 +183,6 @@
 
 .method public static restoreAll(Landroid/content/Context;)V
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     const-string v0, "FakeShutdown"
 
@@ -246,9 +219,6 @@
 
 .method private static restoreSettingInt(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v1, -0x1
 
@@ -268,9 +238,6 @@
 
 .method private static restoreSettingString(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     invoke-static {p0, p2}, Lcom/android/server/power/FakeShutdown$SysSetting;->getString(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
 

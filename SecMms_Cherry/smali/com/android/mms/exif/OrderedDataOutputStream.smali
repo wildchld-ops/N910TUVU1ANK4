@@ -10,7 +10,6 @@
 # direct methods
 .method public constructor <init>(Ljava/io/OutputStream;)V
     .locals 1
-    .param p1    # Ljava/io/OutputStream;
 
     invoke-direct {p0, p1}, Ljava/io/FilterOutputStream;-><init>(Ljava/io/OutputStream;)V
 
@@ -29,7 +28,6 @@
 # virtual methods
 .method public setByteOrder(Ljava/nio/ByteOrder;)Lcom/android/mms/exif/OrderedDataOutputStream;
     .locals 1
-    .param p1    # Ljava/nio/ByteOrder;
 
     iget-object v0, p0, Lcom/android/mms/exif/OrderedDataOutputStream;->mByteBuffer:Ljava/nio/ByteBuffer;
 
@@ -40,7 +38,6 @@
 
 .method public writeInt(I)Lcom/android/mms/exif/OrderedDataOutputStream;
     .locals 2
-    .param p1    # I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -70,7 +67,6 @@
 
 .method public writeRational(Lcom/android/mms/exif/Rational;)Lcom/android/mms/exif/OrderedDataOutputStream;
     .locals 2
-    .param p1    # Lcom/android/mms/exif/Rational;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -98,7 +94,6 @@
 
 .method public writeShort(S)Lcom/android/mms/exif/OrderedDataOutputStream;
     .locals 4
-    .param p1    # S
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

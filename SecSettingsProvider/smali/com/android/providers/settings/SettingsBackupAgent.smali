@@ -98,8 +98,6 @@
 
 .method static synthetic access$000(Lcom/android/providers/settings/SettingsBackupAgent;Z)I
     .locals 1
-    .param p0    # Lcom/android/providers/settings/SettingsBackupAgent;
-    .param p1    # Z
 
     invoke-direct {p0, p1}, Lcom/android/providers/settings/SettingsBackupAgent;->enableWifi(Z)I
 
@@ -110,10 +108,6 @@
 
 .method static synthetic access$100(Lcom/android/providers/settings/SettingsBackupAgent;Ljava/lang/String;[BI)V
     .locals 0
-    .param p0    # Lcom/android/providers/settings/SettingsBackupAgent;
-    .param p1    # Ljava/lang/String;
-    .param p2    # [B
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/providers/settings/SettingsBackupAgent;->restoreWifiSupplicant(Ljava/lang/String;[BI)V
 
@@ -130,10 +124,6 @@
 
 .method static synthetic access$300(Lcom/android/providers/settings/SettingsBackupAgent;Ljava/lang/String;[BI)V
     .locals 0
-    .param p0    # Lcom/android/providers/settings/SettingsBackupAgent;
-    .param p1    # Ljava/lang/String;
-    .param p2    # [B
-    .param p3    # I
 
     invoke-direct {p0, p1, p2, p3}, Lcom/android/providers/settings/SettingsBackupAgent;->restoreFileData(Ljava/lang/String;[BI)V
 
@@ -142,7 +132,6 @@
 
 .method private copyWifiSupplicantTemplate(Ljava/io/BufferedWriter;)V
     .locals 6
-    .param p1    # Ljava/io/BufferedWriter;
 
     :try_start_0
     new-instance v0, Ljava/io/BufferedReader;
@@ -197,7 +186,6 @@
 
 .method private enableWifi(Z)I
     .locals 3
-    .param p1    # Z
 
     iget-object v1, p0, Lcom/android/providers/settings/SettingsBackupAgent;->mWfm:Landroid/net/wifi/WifiManager;
 
@@ -245,8 +233,6 @@
 
 .method private extractRelevantValues(Landroid/database/Cursor;[Ljava/lang/String;)[B
     .locals 19
-    .param p1    # Landroid/database/Cursor;
-    .param p2    # [Ljava/lang/String;
 
     move-object/from16 v0, p2
 
@@ -451,7 +437,6 @@
 
 .method private getFileData(Ljava/lang/String;)[B
     .locals 11
-    .param p1    # Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -802,7 +787,6 @@
 
 .method private getWifiSupplicant(Ljava/lang/String;)[B
     .locals 11
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -1121,8 +1105,6 @@
 
 .method private readInt([BI)I
     .locals 3
-    .param p1    # [B
-    .param p2    # I
 
     aget-byte v1, p1, p2
 
@@ -1165,7 +1147,6 @@
 
 .method private readOldChecksums(Landroid/os/ParcelFileDescriptor;)[J
     .locals 6
-    .param p1    # Landroid/os/ParcelFileDescriptor;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -1225,9 +1206,6 @@
 
 .method private restoreFileData(Ljava/lang/String;[BI)V
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # [B
-    .param p3    # I
 
     const/4 v3, 0x0
 
@@ -1391,8 +1369,6 @@
 
 .method private restoreSettings(Landroid/app/backup/BackupDataInput;Landroid/net/Uri;Ljava/util/HashSet;)V
     .locals 4
-    .param p1    # Landroid/app/backup/BackupDataInput;
-    .param p2    # Landroid/net/Uri;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -1441,9 +1417,6 @@
 
 .method private restoreSettings([BILandroid/net/Uri;Ljava/util/HashSet;)V
     .locals 18
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # Landroid/net/Uri;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([BI",
@@ -1704,9 +1677,6 @@
 
 .method private restoreWifiSupplicant(Ljava/lang/String;[BI)V
     .locals 10
-    .param p1    # Ljava/lang/String;
-    .param p2    # [B
-    .param p3    # I
 
     :try_start_0
     new-instance v6, Lcom/android/providers/settings/SettingsBackupAgent$WifiNetworkSettings;
@@ -1824,9 +1794,6 @@
 
 .method private writeBytes([BI[B)I
     .locals 2
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # [B
 
     const/4 v0, 0x0
 
@@ -1843,10 +1810,6 @@
 
 .method private writeIfChanged(JLjava/lang/String;[BLandroid/app/backup/BackupDataOutput;)J
     .locals 4
-    .param p1    # J
-    .param p3    # Ljava/lang/String;
-    .param p4    # [B
-    .param p5    # Landroid/app/backup/BackupDataOutput;
 
     new-instance v0, Ljava/util/zip/CRC32;
 
@@ -1890,9 +1853,6 @@
 
 .method private writeInt([BII)I
     .locals 2
-    .param p1    # [B
-    .param p2    # I
-    .param p3    # I
 
     add-int/lit8 v0, p2, 0x0
 
@@ -1941,8 +1901,6 @@
 
 .method private writeNewChecksums([JLandroid/os/ParcelFileDescriptor;)V
     .locals 4
-    .param p1    # [J
-    .param p2    # Landroid/os/ParcelFileDescriptor;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -2007,9 +1965,6 @@
 
 .method public onBackup(Landroid/os/ParcelFileDescriptor;Landroid/app/backup/BackupDataOutput;Landroid/os/ParcelFileDescriptor;)V
     .locals 35
-    .param p1    # Landroid/os/ParcelFileDescriptor;
-    .param p2    # Landroid/app/backup/BackupDataOutput;
-    .param p3    # Landroid/os/ParcelFileDescriptor;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -2208,7 +2163,6 @@
 
 .method public onFullBackup(Landroid/app/backup/FullBackupDataOutput;)V
     .locals 18
-    .param p1    # Landroid/app/backup/FullBackupDataOutput;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -2395,9 +2349,6 @@
 
 .method public onRestore(Landroid/app/backup/BackupDataInput;ILandroid/os/ParcelFileDescriptor;)V
     .locals 8
-    .param p1    # Landroid/app/backup/BackupDataInput;
-    .param p2    # I
-    .param p3    # Landroid/os/ParcelFileDescriptor;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -2562,13 +2513,6 @@
 
 .method public onRestoreFile(Landroid/os/ParcelFileDescriptor;JILjava/lang/String;Ljava/lang/String;JJ)V
     .locals 11
-    .param p1    # Landroid/os/ParcelFileDescriptor;
-    .param p2    # J
-    .param p4    # I
-    .param p5    # Ljava/lang/String;
-    .param p6    # Ljava/lang/String;
-    .param p7    # J
-    .param p9    # J
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

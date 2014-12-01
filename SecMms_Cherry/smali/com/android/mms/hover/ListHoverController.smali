@@ -39,7 +39,6 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x1
 
@@ -56,8 +55,6 @@
 
 .method private makeHoverText(Landroid/view/View;[I)Ljava/lang/StringBuffer;
     .locals 7
-    .param p1    # Landroid/view/View;
-    .param p2    # [I
 
     new-instance v1, Ljava/lang/StringBuffer;
 
@@ -121,8 +118,6 @@
 
 .method private makeHoverText(Landroid/widget/TextView;Landroid/view/View;)Ljava/lang/StringBuffer;
     .locals 13
-    .param p1    # Landroid/widget/TextView;
-    .param p2    # Landroid/view/View;
 
     const/16 v12, 0x21
 
@@ -563,7 +558,6 @@
 
 .method private setDefaultHoverPopupStyle(Landroid/view/View;)V
     .locals 3
-    .param p1    # Landroid/view/View;
 
     const/4 v2, 0x1
 
@@ -605,7 +599,6 @@
 
 .method private setHoverTextWidth(Landroid/widget/TextView;)V
     .locals 3
-    .param p1    # Landroid/widget/TextView;
 
     invoke-virtual {p1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
@@ -668,8 +661,6 @@
 # virtual methods
 .method public IsMMS(Landroid/content/Context;J)Z
     .locals 12
-    .param p1    # Landroid/content/Context;
-    .param p2    # J
 
     invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -792,8 +783,6 @@
 
 .method public getbodyFromMMS(Landroid/content/Context;J)Ljava/lang/String;
     .locals 12
-    .param p1    # Landroid/content/Context;
-    .param p2    # J
 
     invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -929,8 +918,6 @@
 
 .method public onSetContentView(Landroid/view/View;Landroid/widget/HoverPopupWindow;)Z
     .locals 7
-    .param p1    # Landroid/view/View;
-    .param p2    # Landroid/widget/HoverPopupWindow;
 
     const/4 v6, 0x6
 
@@ -1099,7 +1086,6 @@
 
 .method public setHoverPopupStyle(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     if-nez p1, :cond_0
 
@@ -1120,8 +1106,6 @@
 
 .method public setHoverPopupStyle(Landroid/view/View;Lcom/android/mms/data/Conversation;)V
     .locals 1
-    .param p1    # Landroid/view/View;
-    .param p2    # Lcom/android/mms/data/Conversation;
 
     if-nez p1, :cond_0
 
@@ -1147,8 +1131,6 @@
 
 .method public setHoverPopupStyle(Landroid/view/View;[I)V
     .locals 8
-    .param p1    # Landroid/view/View;
-    .param p2    # [I
 
     const/4 v7, 0x1
 
@@ -1213,7 +1195,6 @@
 
 .method public setPostTask(Lcom/android/mms/hover/ListHoverController$PostTaskCallBack;)V
     .locals 0
-    .param p1    # Lcom/android/mms/hover/ListHoverController$PostTaskCallBack;
 
     iput-object p1, p0, Lcom/android/mms/hover/ListHoverController;->mPostTask:Lcom/android/mms/hover/ListHoverController$PostTaskCallBack;
 
@@ -1222,7 +1203,6 @@
 
 .method public setShowStylusHoverPopup(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/hover/ListHoverController;->mShowStylusHoverPopup:Z
 
@@ -1231,7 +1211,6 @@
 
 .method public setStylusHoverPopupStyle(Landroid/view/View;)V
     .locals 6
-    .param p1    # Landroid/view/View;
 
     const/4 v5, 0x2
 
@@ -1288,7 +1267,6 @@
 
 .method public setUseCustomHoverPopupSize(Z)V
     .locals 0
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/mms/hover/ListHoverController;->mUseCustomHoverPopupSize:Z
 

@@ -21,8 +21,6 @@
 # direct methods
 .method public constructor <init>(Lcom/android/server/firewall/StringFilter$ValueProvider;Ljava/lang/String;)V
     .locals 1
-    .param p1    # Lcom/android/server/firewall/StringFilter$ValueProvider;
-    .param p2    # Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -39,8 +37,6 @@
 
 .method public constructor <init>(Lcom/android/server/firewall/StringFilter$ValueProvider;Z)V
     .locals 1
-    .param p1    # Lcom/android/server/firewall/StringFilter$ValueProvider;
-    .param p2    # Z
 
     const/4 v0, 0x0
 
@@ -55,7 +51,6 @@
 # virtual methods
 .method public matchesValue(Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x1
 

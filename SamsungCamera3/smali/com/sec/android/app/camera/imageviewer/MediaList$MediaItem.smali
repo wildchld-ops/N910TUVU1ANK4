@@ -33,7 +33,6 @@
 # direct methods
 .method public constructor <init>(Lcom/sec/android/app/camera/imageviewer/MediaList;Landroid/database/Cursor;)V
     .locals 3
-    .param p2    # Landroid/database/Cursor;
 
     const/4 v2, 0x1
 
@@ -134,7 +133,6 @@
 
 .method static synthetic access$000(Lcom/sec/android/app/camera/imageviewer/MediaList$MediaItem;)J
     .locals 2
-    .param p0    # Lcom/sec/android/app/camera/imageviewer/MediaList$MediaItem;
 
     iget-wide v0, p0, Lcom/sec/android/app/camera/imageviewer/MediaList$MediaItem;->id:J
 
@@ -145,7 +143,6 @@
 # virtual methods
 .method public getUri(Z)Landroid/net/Uri;
     .locals 3
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 

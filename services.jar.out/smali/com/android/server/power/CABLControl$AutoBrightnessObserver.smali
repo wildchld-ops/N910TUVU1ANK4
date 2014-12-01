@@ -37,7 +37,6 @@
 # virtual methods
 .method public onChange(Z)V
     .locals 5
-    .param p1    # Z
 
     # getter for: Lcom/android/server/power/CABLControl;->mContext:Landroid/content/Context;
     invoke-static {}, Lcom/android/server/power/CABLControl;->access$000()Landroid/content/Context;

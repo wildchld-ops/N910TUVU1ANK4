@@ -49,7 +49,6 @@
 
 .method public static getProxyInfo(I)[Ljava/lang/String;
     .locals 5
-    .param p0    # I
 
     const/4 v4, 0x0
 
@@ -128,8 +127,6 @@
 
 .method public static getSBInterfaceEx(II)Ljava/lang/String;
     .locals 3
-    .param p0    # I
-    .param p1    # I
 
     :try_start_0
     const-string/jumbo v2, "sb_service"
@@ -204,7 +201,6 @@
 
 .method public static getSBUsageStatus(J)I
     .locals 3
-    .param p0    # J
 
     :try_start_0
     const-string/jumbo v2, "sb_service"
@@ -236,7 +232,6 @@
 
 .method public static getSmartBondingData(I)[J
     .locals 3
-    .param p0    # I
 
     :try_start_0
     const-string/jumbo v2, "sb_service"
@@ -268,8 +263,6 @@
 
 .method public static reportSBUsage(J[J)V
     .locals 3
-    .param p0    # J
-    .param p2    # [J
 
     :try_start_0
     const-string/jumbo v2, "sb_service"
@@ -297,8 +290,6 @@
 
 .method public static requestGetAllByName(JLjava/lang/String;)V
     .locals 3
-    .param p0    # J
-    .param p2    # Ljava/lang/String;
 
     :try_start_0
     const-string/jumbo v2, "sb_service"
@@ -326,7 +317,6 @@
 
 .method public static responseGetAllByName(J)[Ljava/lang/String;
     .locals 5
-    .param p0    # J
 
     const/4 v4, 0x0
 
@@ -378,10 +368,6 @@
 
 .method public static startSBUsage(JJJLjava/lang/String;)Z
     .locals 9
-    .param p0    # J
-    .param p2    # J
-    .param p4    # J
-    .param p6    # Ljava/lang/String;
 
     :try_start_0
     const-string/jumbo v1, "sb_service"
@@ -421,7 +407,6 @@
 
 .method public static stopSBUsage(J)I
     .locals 3
-    .param p0    # J
 
     :try_start_0
     const-string/jumbo v2, "sb_service"
@@ -453,8 +438,6 @@
 
 .method public static stopSBUsageWithReason(JI)I
     .locals 3
-    .param p0    # J
-    .param p2    # I
 
     :try_start_0
     const-string/jumbo v2, "sb_service"
@@ -486,8 +469,6 @@
 
 .method public static submitMultiSocketData([J[J)V
     .locals 3
-    .param p0    # [J
-    .param p1    # [J
 
     :try_start_0
     const-string/jumbo v2, "sb_service"

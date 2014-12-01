@@ -70,7 +70,6 @@
 
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
-    .param p1    # Landroid/content/Context;
 
     const/4 v0, 0x0
 
@@ -1288,8 +1287,6 @@
 
 .method public writedata(Ljava/lang/String;Lcom/android/internal/util/NVStore$datatype;)V
     .locals 8
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/internal/util/NVStore$datatype;
 
     const-string v2, ""
 

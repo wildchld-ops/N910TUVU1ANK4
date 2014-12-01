@@ -201,7 +201,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/myprofile/MyProfileActivity;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/settings/myprofile/MyProfileActivity;
 
     iget-object v0, p0, Lcom/android/settings/myprofile/MyProfileActivity;->TAG:Ljava/lang/String;
 
@@ -210,8 +209,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/myprofile/MyProfileActivity;I)V
     .locals 0
-    .param p0    # Lcom/android/settings/myprofile/MyProfileActivity;
-    .param p1    # I
 
     invoke-direct {p0, p1}, Lcom/android/settings/myprofile/MyProfileActivity;->reflectSelectedTextFontColor(I)V
 
@@ -220,7 +217,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/myprofile/MyProfileActivity;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/myprofile/MyProfileActivity;
 
     iget-boolean v0, p0, Lcom/android/settings/myprofile/MyProfileActivity;->isTextButtonSelected:Z
 
@@ -229,7 +225,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/myprofile/MyProfileActivity;)Lcom/android/settings/myprofile/SpLitColorPickerView;
     .locals 1
-    .param p0    # Lcom/android/settings/myprofile/MyProfileActivity;
 
     iget-object v0, p0, Lcom/android/settings/myprofile/MyProfileActivity;->mSpLitColorPickerView:Lcom/android/settings/myprofile/SpLitColorPickerView;
 
@@ -238,7 +233,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/myprofile/MyProfileActivity;)[Landroid/graphics/Typeface;
     .locals 1
-    .param p0    # Lcom/android/settings/myprofile/MyProfileActivity;
 
     iget-object v0, p0, Lcom/android/settings/myprofile/MyProfileActivity;->mTypefaces:[Landroid/graphics/Typeface;
 
@@ -247,7 +241,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/myprofile/MyProfileActivity;)Z
     .locals 1
-    .param p0    # Lcom/android/settings/myprofile/MyProfileActivity;
 
     iget-boolean v0, p0, Lcom/android/settings/myprofile/MyProfileActivity;->isFirstInstance:Z
 
@@ -256,8 +249,6 @@
 
 .method static synthetic access$502(Lcom/android/settings/myprofile/MyProfileActivity;Z)Z
     .locals 0
-    .param p0    # Lcom/android/settings/myprofile/MyProfileActivity;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/android/settings/myprofile/MyProfileActivity;->isFirstInstance:Z
 
@@ -266,7 +257,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/myprofile/MyProfileActivity;)Lcom/android/settings/myprofile/EllipsisEditText;
     .locals 1
-    .param p0    # Lcom/android/settings/myprofile/MyProfileActivity;
 
     iget-object v0, p0, Lcom/android/settings/myprofile/MyProfileActivity;->mTvPreviewText:Lcom/android/settings/myprofile/EllipsisEditText;
 
@@ -275,9 +265,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/myprofile/MyProfileActivity;Landroid/view/View;I)V
     .locals 0
-    .param p0    # Lcom/android/settings/myprofile/MyProfileActivity;
-    .param p1    # Landroid/view/View;
-    .param p2    # I
 
     invoke-direct {p0, p1, p2}, Lcom/android/settings/myprofile/MyProfileActivity;->updateAlignButtonAndPreviewTextAlignment(Landroid/view/View;I)V
 
@@ -286,7 +273,6 @@
 
 .method static synthetic access$800(Lcom/android/settings/myprofile/MyProfileActivity;)[Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/settings/myprofile/MyProfileActivity;
 
     iget-object v0, p0, Lcom/android/settings/myprofile/MyProfileActivity;->mFontNames:[Ljava/lang/String;
 
@@ -295,8 +281,6 @@
 
 .method static synthetic access$900(Lcom/android/settings/myprofile/MyProfileActivity;Ljava/lang/String;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/android/settings/myprofile/MyProfileActivity;
-    .param p1    # Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/android/settings/myprofile/MyProfileActivity;->getFontName(Ljava/lang/String;)Ljava/lang/String;
 
@@ -605,7 +589,6 @@
 
 .method private getDimension(I)F
     .locals 1
-    .param p1    # I
 
     iget-object v0, p0, Lcom/android/settings/myprofile/MyProfileActivity;->mResources:Landroid/content/res/Resources;
 
@@ -1179,7 +1162,6 @@
 
 .method private getValueFromDB(Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x1
 
@@ -1216,7 +1198,6 @@
 
 .method private getViewID(Z)I
     .locals 1
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -1781,7 +1762,6 @@
 
 .method private refereshTextAndBackGroundColor(Z)V
     .locals 2
-    .param p1    # Z
 
     if-eqz p1, :cond_0
 
@@ -3037,8 +3017,6 @@
 
 .method public onCheckedChanged(Lcom/sec/android/touchwiz/widget/TwCompoundButton;Z)V
     .locals 1
-    .param p1    # Lcom/sec/android/touchwiz/widget/TwCompoundButton;
-    .param p2    # Z
 
     invoke-direct {p0}, Lcom/android/settings/myprofile/MyProfileActivity;->setTextOpecity()V
 
@@ -3064,7 +3042,6 @@
 
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 20
-    .param p1    # Landroid/os/Bundle;
 
     invoke-super/range {p0 .. p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
@@ -4037,7 +4014,6 @@
 
 .method public onCreateOptionsMenu(Landroid/view/Menu;)Z
     .locals 5
-    .param p1    # Landroid/view/Menu;
 
     const/4 v4, 0x5
 
@@ -4126,7 +4102,6 @@
 
 .method public onOptionsItemSelected(Landroid/view/MenuItem;)Z
     .locals 5
-    .param p1    # Landroid/view/MenuItem;
 
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
@@ -4509,7 +4484,6 @@
 
 .method public onWindowFocusChanged(Z)V
     .locals 3
-    .param p1    # Z
 
     invoke-super {p0, p1}, Landroid/app/Activity;->onWindowFocusChanged(Z)V
 
@@ -4563,7 +4537,6 @@
 
 .method public setBackgroundColor(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/settings/myprofile/MyProfileActivity;->selectodBackgroundColor:I
 
@@ -4572,7 +4545,6 @@
 
 .method public setSelectodColor(I)V
     .locals 1
-    .param p1    # I
 
     iget-boolean v0, p0, Lcom/android/settings/myprofile/MyProfileActivity;->isTextButtonSelected:Z
 
@@ -4591,7 +4563,6 @@
 
 .method public setTextColor(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/settings/myprofile/MyProfileActivity;->selectodTextColor:I
 

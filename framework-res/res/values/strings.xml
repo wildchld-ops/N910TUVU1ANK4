@@ -3131,4 +3131,6 @@ After exiting this mode, your widgets placed in Home screen may not display prop
     <string name="webviewchromium_profiler_error_toast">Failed to start profiler</string>
     <string name="flashlight">Flashlight</string>
     <string name="screenshot">Screenshot</string>
+    <string name="global_action_screenshot_txt">Take Screenshot</string>
+    <string name="global_action_screenrec_txt">Screen Record</string>
 </resources>

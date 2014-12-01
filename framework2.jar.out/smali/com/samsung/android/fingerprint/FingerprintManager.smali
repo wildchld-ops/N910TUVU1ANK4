@@ -221,7 +221,6 @@
 
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 2
-    .param p1    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -278,8 +277,6 @@
 
 .method static synthetic access$102(Lcom/samsung/android/fingerprint/FingerprintManager;Z)Z
     .locals 0
-    .param p0    # Lcom/samsung/android/fingerprint/FingerprintManager;
-    .param p1    # Z
 
     iput-boolean p1, p0, Lcom/samsung/android/fingerprint/FingerprintManager;->mIsServiceBind:Z
 
@@ -296,7 +293,6 @@
 
 .method static synthetic access$300(Lcom/samsung/android/fingerprint/FingerprintManager;)V
     .locals 0
-    .param p0    # Lcom/samsung/android/fingerprint/FingerprintManager;
 
     invoke-direct {p0}, Lcom/samsung/android/fingerprint/FingerprintManager;->unregisterActivityLifeCallback()V
 
@@ -305,7 +301,6 @@
 
 .method static synthetic access$400(Lcom/samsung/android/fingerprint/FingerprintManager;)Ljava/lang/String;
     .locals 1
-    .param p0    # Lcom/samsung/android/fingerprint/FingerprintManager;
 
     iget-object v0, p0, Lcom/samsung/android/fingerprint/FingerprintManager;->mOwnName:Ljava/lang/String;
 
@@ -314,10 +309,6 @@
 
 .method static synthetic access$500(Lcom/samsung/android/fingerprint/FingerprintManager;Ljava/lang/String;Ljava/lang/Exception;Ljava/lang/String;)V
     .locals 0
-    .param p0    # Lcom/samsung/android/fingerprint/FingerprintManager;
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Exception;
-    .param p3    # Ljava/lang/String;
 
     invoke-direct {p0, p1, p2, p3}, Lcom/samsung/android/fingerprint/FingerprintManager;->logExceptionInDetail(Ljava/lang/String;Ljava/lang/Exception;Ljava/lang/String;)V
 
@@ -326,7 +317,6 @@
 
 .method static synthetic access$600(Lcom/samsung/android/fingerprint/FingerprintManager;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/samsung/android/fingerprint/FingerprintManager;
 
     iget-object v0, p0, Lcom/samsung/android/fingerprint/FingerprintManager;->mHandler:Landroid/os/Handler;
 
@@ -712,8 +702,6 @@
 
 .method public static getImageQualityAnimation(ILandroid/content/Context;)Landroid/graphics/drawable/AnimationDrawable;
     .locals 8
-    .param p0    # I
-    .param p1    # Landroid/content/Context;
 
     invoke-virtual {p1}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -962,7 +950,6 @@
 
 .method public static getImageQualityFeedback(I)I
     .locals 1
-    .param p0    # I
 
     const/4 v0, 0x0
 
@@ -1061,7 +1048,6 @@
 
 .method public static getImageQualityIcon(I)I
     .locals 1
-    .param p0    # I
 
     const/4 v0, 0x0
 
@@ -1128,7 +1114,6 @@
 
 .method public static declared-synchronized getInstance(Landroid/content/Context;)Lcom/samsung/android/fingerprint/FingerprintManager;
     .locals 2
-    .param p0    # Landroid/content/Context;
 
     const-class v0, Lcom/samsung/android/fingerprint/FingerprintManager;
 
@@ -1157,8 +1142,6 @@
 
 .method public static declared-synchronized getInstance(Landroid/content/Context;I)Lcom/samsung/android/fingerprint/FingerprintManager;
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
 
     const-class v1, Lcom/samsung/android/fingerprint/FingerprintManager;
 
@@ -1189,9 +1172,6 @@
 
 .method public static declared-synchronized getInstance(Landroid/content/Context;ILjava/lang/String;)Lcom/samsung/android/fingerprint/FingerprintManager;
     .locals 3
-    .param p0    # Landroid/content/Context;
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const-class v1, Lcom/samsung/android/fingerprint/FingerprintManager;
 
@@ -1256,8 +1236,6 @@
 
 .method public static declared-synchronized getInstance(Landroid/content/Context;Ljava/lang/String;)Lcom/samsung/android/fingerprint/FingerprintManager;
     .locals 2
-    .param p0    # Landroid/content/Context;
-    .param p1    # Ljava/lang/String;
 
     const-class v0, Lcom/samsung/android/fingerprint/FingerprintManager;
 
@@ -1341,8 +1319,6 @@
 
 .method private logExceptionInDetail(Ljava/lang/String;Ljava/lang/Exception;)V
     .locals 1
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Exception;
 
     const/4 v0, 0x0
 
@@ -1353,9 +1329,6 @@
 
 .method private logExceptionInDetail(Ljava/lang/String;Ljava/lang/Exception;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Exception;
-    .param p3    # Ljava/lang/String;
 
     sget-boolean v0, Lcom/samsung/android/fingerprint/FingerprintManager;->DEBUG:Z
 
@@ -1474,10 +1447,6 @@
 
 .method private logExceptionInDetail(Ljava/lang/String;Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/String;)V
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/Exception;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Ljava/lang/String;
 
     sget-boolean v0, Lcom/samsung/android/fingerprint/FingerprintManager;->DEBUG:Z
 
@@ -1623,7 +1592,6 @@
 
 .method private setOwnName(Ljava/lang/String;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
 
     const-string v0, "FingerprintManager"
 
@@ -1898,9 +1866,6 @@
 # virtual methods
 .method public addPermission(Ljava/lang/String;Ljava/lang/String;I)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     const/4 v1, 0x0
 
@@ -1983,8 +1948,6 @@
 
 .method public attachClient(Landroid/os/IBinder;Lcom/samsung/android/fingerprint/IFingerprintClient;)Landroid/os/IBinder;
     .locals 5
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Lcom/samsung/android/fingerprint/IFingerprintClient;
 
     const/4 v1, 0x0
 
@@ -2098,7 +2061,6 @@
 
 .method public cancel(Landroid/os/IBinder;)Z
     .locals 5
-    .param p1    # Landroid/os/IBinder;
 
     const/4 v1, 0x0
 
@@ -2166,7 +2128,6 @@
 
 .method public closeTransaction(Landroid/os/IBinder;)Z
     .locals 5
-    .param p1    # Landroid/os/IBinder;
 
     const/4 v1, 0x0
 
@@ -2229,7 +2190,6 @@
 
 .method public detachClient(Landroid/os/IBinder;)Z
     .locals 5
-    .param p1    # Landroid/os/IBinder;
 
     const/4 v1, 0x0
 
@@ -2292,9 +2252,6 @@
 
 .method public enroll(Landroid/os/IBinder;Ljava/lang/String;I)I
     .locals 5
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     const/4 v1, -0x1
 
@@ -2377,10 +2334,6 @@
 
 .method public enrollForMultiUser(Landroid/os/IBinder;ILjava/lang/String;I)I
     .locals 6
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
 
     const/4 v1, -0x1
 
@@ -2481,8 +2434,6 @@
 
 .method public finishIdentify(Landroid/os/IBinder;Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -2643,7 +2594,6 @@
 
 .method public getEnrolledPermissions(Ljava/lang/String;)Ljava/util/List;
     .locals 4
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -2792,7 +2742,6 @@
 
 .method public getFingerprintId(I)Ljava/lang/String;
     .locals 4
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -2881,7 +2830,6 @@
 
 .method public getIndexName(I)Ljava/lang/String;
     .locals 4
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -2924,7 +2872,6 @@
 
 .method public getLastImageQuality(Landroid/content/Context;)I
     .locals 5
-    .param p1    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -3013,7 +2960,6 @@
 
 .method public getLastImageQualityMessage(Landroid/content/Context;)Ljava/lang/String;
     .locals 4
-    .param p1    # Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -3195,8 +3141,6 @@
 
 .method public identify(Landroid/os/IBinder;Ljava/lang/String;)I
     .locals 5
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Ljava/lang/String;
 
     const/4 v1, -0x1
 
@@ -3269,9 +3213,6 @@
 
 .method public identifyForMultiUser(Landroid/os/IBinder;ILjava/lang/String;)I
     .locals 6
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     const/4 v1, -0x1
 
@@ -3362,8 +3303,6 @@
 
 .method public identifyForMultiUser(Landroid/os/IBinder;Ljava/lang/String;)I
     .locals 5
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Ljava/lang/String;
 
     const/4 v1, -0x1
 
@@ -3438,9 +3377,6 @@
 
 .method public identifyWithDialog(Landroid/content/Context;Lcom/samsung/android/fingerprint/IFingerprintClient;Landroid/os/Bundle;)I
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/samsung/android/fingerprint/IFingerprintClient;
-    .param p3    # Landroid/os/Bundle;
 
     const/4 v3, -0x1
 
@@ -3554,8 +3490,6 @@
 
 .method public isEnrolledPermission(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -3714,8 +3648,6 @@
 
 .method public notifyAppActivityState(ILandroid/os/Bundle;)V
     .locals 4
-    .param p1    # I
-    .param p2    # Landroid/os/Bundle;
 
     invoke-static {}, Lcom/samsung/android/fingerprint/FingerprintManager;->ensureServiceConnected()V
 
@@ -3932,7 +3864,6 @@
 
 .method public openTransaction(Landroid/os/IBinder;)Z
     .locals 5
-    .param p1    # Landroid/os/IBinder;
 
     const/4 v1, 0x0
 
@@ -3995,10 +3926,6 @@
 
 .method public processFIDO(Landroid/content/Context;Landroid/os/IBinder;Ljava/lang/String;[B)[B
     .locals 7
-    .param p1    # Landroid/content/Context;
-    .param p2    # Landroid/os/IBinder;
-    .param p3    # Ljava/lang/String;
-    .param p4    # [B
 
     const/4 v5, 0x0
 
@@ -4141,9 +4068,6 @@
 
 .method public protect(Landroid/os/IBinder;Ljava/lang/String;[B)[B
     .locals 7
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Ljava/lang/String;
-    .param p3    # [B
 
     const/4 v1, 0x0
 
@@ -4276,8 +4200,6 @@
 
 .method public reEnroll(Landroid/os/IBinder;I)I
     .locals 5
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # I
 
     const/4 v1, -0x1
 
@@ -4350,8 +4272,6 @@
 
 .method public registerClient(Lcom/samsung/android/fingerprint/IFingerprintClient;Landroid/os/Bundle;)Landroid/os/IBinder;
     .locals 6
-    .param p1    # Lcom/samsung/android/fingerprint/IFingerprintClient;
-    .param p2    # Landroid/os/Bundle;
 
     const/4 v2, 0x0
 
@@ -4451,8 +4371,6 @@
 
 .method public registerClient(Lcom/samsung/android/fingerprint/IFingerprintClient;Lcom/samsung/android/fingerprint/FingerprintManager$FingerprintClientSpecBuilder;)Landroid/os/IBinder;
     .locals 1
-    .param p1    # Lcom/samsung/android/fingerprint/IFingerprintClient;
-    .param p2    # Lcom/samsung/android/fingerprint/FingerprintManager$FingerprintClientSpecBuilder;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
@@ -4515,7 +4433,6 @@
 
 .method public removeEnrolledFinger(I)Z
     .locals 5
-    .param p1    # I
 
     const/4 v1, 0x0
 
@@ -4562,9 +4479,6 @@
 
 .method public removeEnrolledPermission(Ljava/lang/String;Ljava/lang/String;I)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
-    .param p3    # I
 
     const/4 v1, 0x0
 
@@ -4647,8 +4561,6 @@
 
 .method public removeEnrolledPermissions(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
-    .param p2    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -4693,8 +4605,6 @@
 
 .method public secondaryEnroll(Landroid/os/IBinder;I)I
     .locals 5
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # I
 
     const/4 v1, -0x1
 
@@ -4767,7 +4677,6 @@
 
 .method public setEnrollFinishResult(I)V
     .locals 0
-    .param p1    # I
 
     sput p1, Lcom/samsung/android/fingerprint/FingerprintManager;->mEnrollFinishResult:I
 
@@ -4776,8 +4685,6 @@
 
 .method public setIndexName(ILjava/lang/String;)Z
     .locals 5
-    .param p1    # I
-    .param p2    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -4836,7 +4743,6 @@
 
 .method public setPassword(Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -4883,10 +4789,6 @@
 
 .method public showIdentifyDialog(Landroid/content/Context;Lcom/samsung/android/fingerprint/FingerprintIdentifyDialog$FingerprintListener;Ljava/lang/String;Z)Landroid/app/Dialog;
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/samsung/android/fingerprint/FingerprintIdentifyDialog$FingerprintListener;
-    .param p3    # Ljava/lang/String;
-    .param p4    # Z
 
     const/4 v2, 0x0
 
@@ -4997,9 +4899,6 @@
 
 .method public startEnrollActivity(Landroid/content/Context;Lcom/samsung/android/fingerprint/FingerprintManager$EnrollFinishListener;Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/samsung/android/fingerprint/FingerprintManager$EnrollFinishListener;
-    .param p3    # Ljava/lang/String;
 
     const/4 v0, -0x1
 
@@ -5012,10 +4911,6 @@
 
 .method public startEnrollActivity(Landroid/content/Context;Lcom/samsung/android/fingerprint/FingerprintManager$EnrollFinishListener;Ljava/lang/String;I)Z
     .locals 4
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/samsung/android/fingerprint/FingerprintManager$EnrollFinishListener;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
 
     const/4 v1, 0x1
 
@@ -5144,10 +5039,6 @@
 
 .method public startSettingEnrollActivity(Landroid/content/Context;Lcom/samsung/android/fingerprint/FingerprintManager$EnrollFinishListener;Ljava/lang/String;I)V
     .locals 5
-    .param p1    # Landroid/content/Context;
-    .param p2    # Lcom/samsung/android/fingerprint/FingerprintManager$EnrollFinishListener;
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
 
     new-instance v0, Lcom/samsung/android/fingerprint/FingerprintManager$EnrollFinishBroadcastReceiver;
 
@@ -5203,9 +5094,6 @@
 
 .method public unprotect(Landroid/os/IBinder;Ljava/lang/String;[B)[B
     .locals 7
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Ljava/lang/String;
-    .param p3    # [B
 
     const/4 v1, 0x0
 
@@ -5338,7 +5226,6 @@
 
 .method public unregisterClient(Landroid/os/IBinder;)Z
     .locals 5
-    .param p1    # Landroid/os/IBinder;
 
     const/4 v4, 0x0
 
@@ -5412,8 +5299,6 @@
 
 .method public verifyPassword(Landroid/os/IBinder;Ljava/lang/String;)Z
     .locals 5
-    .param p1    # Landroid/os/IBinder;
-    .param p2    # Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -5460,7 +5345,6 @@
 
 .method public verifyPassword(Ljava/lang/String;)Z
     .locals 1
-    .param p1    # Ljava/lang/String;
 
     const/4 v0, 0x0
 

@@ -262,11 +262,6 @@
 
 .method public constructor <init>(Lcom/android/settings/wifi/WifiConfigUiBase;Landroid/view/View;Lcom/android/settings/wifi/AccessPoint;ZZ)V
     .locals 4
-    .param p1    # Lcom/android/settings/wifi/WifiConfigUiBase;
-    .param p2    # Landroid/view/View;
-    .param p3    # Lcom/android/settings/wifi/AccessPoint;
-    .param p4    # Z
-    .param p5    # Z
 
     const/4 v3, 0x0
 
@@ -393,7 +388,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/wifi/WifiConfigController;)Landroid/widget/EditText;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiConfigController;
 
     iget-object v0, p0, Lcom/android/settings/wifi/WifiConfigController;->mSsidView:Landroid/widget/EditText;
 
@@ -402,7 +396,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/wifi/WifiConfigController;)Landroid/widget/Toast;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiConfigController;
 
     iget-object v0, p0, Lcom/android/settings/wifi/WifiConfigController;->sToast:Landroid/widget/Toast;
 
@@ -411,8 +404,6 @@
 
 .method static synthetic access$102(Lcom/android/settings/wifi/WifiConfigController;Landroid/widget/Toast;)Landroid/widget/Toast;
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/WifiConfigController;
-    .param p1    # Landroid/widget/Toast;
 
     iput-object p1, p0, Lcom/android/settings/wifi/WifiConfigController;->sToast:Landroid/widget/Toast;
 
@@ -421,7 +412,6 @@
 
 .method static synthetic access$200(Lcom/android/settings/wifi/WifiConfigController;)Lcom/android/settings/wifi/WifiConfigUiBase;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiConfigController;
 
     iget-object v0, p0, Lcom/android/settings/wifi/WifiConfigController;->mConfigUi:Lcom/android/settings/wifi/WifiConfigUiBase;
 
@@ -430,7 +420,6 @@
 
 .method static synthetic access$300(Lcom/android/settings/wifi/WifiConfigController;)I
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiConfigController;
 
     iget v0, p0, Lcom/android/settings/wifi/WifiConfigController;->mAccessPointSecurity:I
 
@@ -439,7 +428,6 @@
 
 .method static synthetic access$400(Lcom/android/settings/wifi/WifiConfigController;)Landroid/widget/Toast;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiConfigController;
 
     iget-object v0, p0, Lcom/android/settings/wifi/WifiConfigController;->pToast:Landroid/widget/Toast;
 
@@ -448,8 +436,6 @@
 
 .method static synthetic access$402(Lcom/android/settings/wifi/WifiConfigController;Landroid/widget/Toast;)Landroid/widget/Toast;
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/WifiConfigController;
-    .param p1    # Landroid/widget/Toast;
 
     iput-object p1, p0, Lcom/android/settings/wifi/WifiConfigController;->pToast:Landroid/widget/Toast;
 
@@ -458,7 +444,6 @@
 
 .method static synthetic access$500(Lcom/android/settings/wifi/WifiConfigController;)Landroid/widget/Toast;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiConfigController;
 
     iget-object v0, p0, Lcom/android/settings/wifi/WifiConfigController;->hpToast:Landroid/widget/Toast;
 
@@ -467,8 +452,6 @@
 
 .method static synthetic access$502(Lcom/android/settings/wifi/WifiConfigController;Landroid/widget/Toast;)Landroid/widget/Toast;
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/WifiConfigController;
-    .param p1    # Landroid/widget/Toast;
 
     iput-object p1, p0, Lcom/android/settings/wifi/WifiConfigController;->hpToast:Landroid/widget/Toast;
 
@@ -477,7 +460,6 @@
 
 .method static synthetic access$600(Lcom/android/settings/wifi/WifiConfigController;)Landroid/os/Handler;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiConfigController;
 
     iget-object v0, p0, Lcom/android/settings/wifi/WifiConfigController;->mTextViewChangedHandler:Landroid/os/Handler;
 
@@ -486,7 +468,6 @@
 
 .method static synthetic access$700(Lcom/android/settings/wifi/WifiConfigController;)V
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/WifiConfigController;
 
     invoke-direct {p0}, Lcom/android/settings/wifi/WifiConfigController;->restartFocusedViewInput()V
 
@@ -495,7 +476,6 @@
 
 .method static synthetic access$800(Lcom/android/settings/wifi/WifiConfigController;)Landroid/widget/Toast;
     .locals 1
-    .param p0    # Lcom/android/settings/wifi/WifiConfigController;
 
     iget-object v0, p0, Lcom/android/settings/wifi/WifiConfigController;->eToast:Landroid/widget/Toast;
 
@@ -504,8 +484,6 @@
 
 .method static synthetic access$802(Lcom/android/settings/wifi/WifiConfigController;Landroid/widget/Toast;)Landroid/widget/Toast;
     .locals 0
-    .param p0    # Lcom/android/settings/wifi/WifiConfigController;
-    .param p1    # Landroid/widget/Toast;
 
     iput-object p1, p0, Lcom/android/settings/wifi/WifiConfigController;->eToast:Landroid/widget/Toast;
 
@@ -514,9 +492,6 @@
 
 .method private addRow(Landroid/view/ViewGroup;ILjava/lang/String;)V
     .locals 4
-    .param p1    # Landroid/view/ViewGroup;
-    .param p2    # I
-    .param p3    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/android/settings/wifi/WifiConfigController;->mConfigUi:Lcom/android/settings/wifi/WifiConfigUiBase;
 
@@ -736,8 +711,6 @@
 
 .method private getSpinnerItemPosition(Landroid/widget/Spinner;Ljava/lang/String;)I
     .locals 3
-    .param p1    # Landroid/widget/Spinner;
-    .param p2    # Ljava/lang/String;
 
     const/4 v1, -0x1
 
@@ -785,11 +758,6 @@
 
 .method private initController(Lcom/android/settings/wifi/WifiConfigUiBase;Landroid/view/View;Lcom/android/settings/wifi/AccessPoint;ZZ)V
     .locals 39
-    .param p1    # Lcom/android/settings/wifi/WifiConfigUiBase;
-    .param p2    # Landroid/view/View;
-    .param p3    # Lcom/android/settings/wifi/AccessPoint;
-    .param p4    # Z
-    .param p5    # Z
 
     const-string v35, "ro.csc.sales_code"
 
@@ -3654,7 +3622,6 @@
 
 .method static requireKeyStore(Landroid/net/wifi/WifiConfiguration;)Z
     .locals 1
-    .param p0    # Landroid/net/wifi/WifiConfiguration;
 
     const/4 v0, 0x0
 
@@ -3735,7 +3702,6 @@
 
 .method private restartViewInput(Landroid/view/View;)V
     .locals 1
-    .param p1    # Landroid/view/View;
 
     if-eqz p1, :cond_0
 
@@ -3898,8 +3864,6 @@
 
 .method private setSelection(Landroid/widget/Spinner;Ljava/lang/String;)V
     .locals 3
-    .param p1    # Landroid/widget/Spinner;
-    .param p2    # Ljava/lang/String;
 
     if-eqz p2, :cond_0
 
@@ -6834,7 +6798,6 @@
 
 .method private updatePasswordVisibility(Z)V
     .locals 3
-    .param p1    # Z
 
     iget-object v1, p0, Lcom/android/settings/wifi/WifiConfigController;->mPasswordView:Landroid/widget/EditText;
 
@@ -7149,7 +7112,6 @@
 # virtual methods
 .method public afterTextChanged(Landroid/text/Editable;)V
     .locals 2
-    .param p1    # Landroid/text/Editable;
 
     iget-object v0, p0, Lcom/android/settings/wifi/WifiConfigController;->mTextViewChangedHandler:Landroid/os/Handler;
 
@@ -7164,10 +7126,6 @@
 
 .method public beforeTextChanged(Ljava/lang/CharSequence;III)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     return-void
 .end method
@@ -9360,9 +9318,6 @@
 
 .method public onItemSelected(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
     .locals 3
-    .param p2    # Landroid/view/View;
-    .param p3    # I
-    .param p4    # J
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -9530,17 +9485,12 @@
 
 .method public onTextChanged(Ljava/lang/CharSequence;III)V
     .locals 0
-    .param p1    # Ljava/lang/CharSequence;
-    .param p2    # I
-    .param p3    # I
-    .param p4    # I
 
     return-void
 .end method
 
 .method public setAccessPointSecurity(I)V
     .locals 0
-    .param p1    # I
 
     iput p1, p0, Lcom/android/settings/wifi/WifiConfigController;->mAccessPointSecurity:I
 

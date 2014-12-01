@@ -36,7 +36,6 @@
 # direct methods
 .method public constructor <init>(Lorg/w3c/dom/events/EventTarget;)V
     .locals 0
-    .param p1    # Lorg/w3c/dom/events/EventTarget;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -49,9 +48,6 @@
 # virtual methods
 .method public addEventListener(Ljava/lang/String;Lorg/w3c/dom/events/EventListener;Z)V
     .locals 2
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lorg/w3c/dom/events/EventListener;
-    .param p3    # Z
 
     if-eqz p1, :cond_0
 
@@ -96,7 +92,6 @@
 
 .method public dispatchEvent(Lorg/w3c/dom/events/Event;)Z
     .locals 7
-    .param p1    # Lorg/w3c/dom/events/Event;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/w3c/dom/events/EventException;
@@ -250,9 +245,6 @@
 
 .method public removeEventListener(Ljava/lang/String;Lorg/w3c/dom/events/EventListener;Z)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lorg/w3c/dom/events/EventListener;
-    .param p3    # Z
 
     iget-object v2, p0, Lcom/android/mms/dom/events/EventTargetImpl;->mListenerEntries:Ljava/util/ArrayList;
 

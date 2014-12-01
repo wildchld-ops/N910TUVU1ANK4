@@ -48,9 +48,6 @@
 
 .method public static varargs invoke(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Class;[Ljava/lang/Object;)Ljava/lang/Object;
     .locals 2
-    .param p1    # Ljava/lang/Object;
-    .param p2    # Ljava/lang/String;
-    .param p4    # [Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -95,7 +92,6 @@
 # virtual methods
 .method public checkMethod(Ljava/lang/String;)Z
     .locals 2
-    .param p1    # Ljava/lang/String;
 
     iget-object v1, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->mMethodMap:Ljava/util/HashMap;
 
@@ -120,8 +116,6 @@
 
 .method public varargs invoke(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;
     .locals 4
-    .param p1    # Ljava/lang/String;
-    .param p2    # [Ljava/lang/Object;
 
     :try_start_0
     iget-object v2, p0, Lcom/samsung/android/sdk/multiwindow/SMultiWindowReflator;->mMethodMap:Ljava/util/HashMap;
@@ -162,8 +156,6 @@
 
 .method public putMethod(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Class;)V
     .locals 4
-    .param p2    # Ljava/lang/Object;
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

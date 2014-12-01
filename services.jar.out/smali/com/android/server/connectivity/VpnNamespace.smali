@@ -83,8 +83,6 @@
 
 .method static synthetic access$700(Lcom/android/server/connectivity/VpnNamespace;Ljava/lang/String;)Z
     .locals 1
-    .param p0    # Lcom/android/server/connectivity/VpnNamespace;
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -100,7 +98,6 @@
 
 .method private declared-synchronized checkIf(Ljava/lang/String;)Z
     .locals 4
-    .param p1    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -160,9 +157,6 @@
 
 .method private setAddresses(Lcom/android/server/connectivity/VpnNamespace$VpnSvrCommand;ILcom/android/internal/net/VpnConfig;)V
     .locals 9
-    .param p1    # Lcom/android/server/connectivity/VpnNamespace$VpnSvrCommand;
-    .param p2    # I
-    .param p3    # Lcom/android/internal/net/VpnConfig;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -344,9 +338,6 @@
 
 .method private setRoutes(Lcom/android/server/connectivity/VpnNamespace$VpnSvrCommand;ILcom/android/internal/net/VpnConfig;)V
     .locals 8
-    .param p1    # Lcom/android/server/connectivity/VpnNamespace$VpnSvrCommand;
-    .param p2    # I
-    .param p3    # Lcom/android/internal/net/VpnConfig;
 
     iget-object v5, p3, Lcom/android/internal/net/VpnConfig;->routes:Ljava/util/List;
 
@@ -519,9 +510,6 @@
 
 .method declared-synchronized establish(Ljava/lang/String;Lcom/android/internal/net/VpnConfig;Lcom/android/server/connectivity/Vpn;)V
     .locals 3
-    .param p1    # Ljava/lang/String;
-    .param p2    # Lcom/android/internal/net/VpnConfig;
-    .param p3    # Lcom/android/server/connectivity/Vpn;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

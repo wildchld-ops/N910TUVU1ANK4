@@ -17,7 +17,6 @@
 # direct methods
 .method constructor <init>(Ljava/util/HashSet;Ljava/util/HashMap;Ljava/lang/String;)V
     .locals 0
-    .param p3    # Ljava/lang/String;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -42,10 +41,6 @@
 
 .method constructor <init>(Ljava/util/HashSet;Ljava/util/HashMap;Ljava/lang/String;ILjava/lang/String;Z)V
     .locals 0
-    .param p3    # Ljava/lang/String;
-    .param p4    # I
-    .param p5    # Ljava/lang/String;
-    .param p6    # Z
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -74,7 +69,6 @@
 # virtual methods
 .method public passedPolicyChecks(Landroid/content/pm/PackageParser$Package;)Z
     .locals 2
-    .param p1    # Landroid/content/pm/PackageParser$Package;
 
     iget-object v0, p0, Lcom/android/server/pm/SELinuxMMAC$InstallPolicy;->pkgPolicy:Ljava/util/HashMap;
 

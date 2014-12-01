@@ -99,8 +99,6 @@
 
 .method static synthetic access$000(Lcom/android/settings/applications/RunningServiceDetails;Landroid/content/ComponentName;)V
     .locals 0
-    .param p0    # Lcom/android/settings/applications/RunningServiceDetails;
-    .param p1    # Landroid/content/ComponentName;
 
     invoke-direct {p0, p1}, Lcom/android/settings/applications/RunningServiceDetails;->showConfirmStopDialog(Landroid/content/ComponentName;)V
 
@@ -109,7 +107,6 @@
 
 .method static synthetic access$100(Lcom/android/settings/applications/RunningServiceDetails;)V
     .locals 0
-    .param p0    # Lcom/android/settings/applications/RunningServiceDetails;
 
     invoke-direct {p0}, Lcom/android/settings/applications/RunningServiceDetails;->finish()V
 
@@ -134,7 +131,6 @@
 
 .method private showConfirmStopDialog(Landroid/content/ComponentName;)V
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
 
     const/4 v1, 0x1
 
@@ -161,7 +157,6 @@
 # virtual methods
 .method activeDetailForService(Landroid/content/ComponentName;)Lcom/android/settings/applications/RunningServiceDetails$ActiveDetail;
     .locals 3
-    .param p1    # Landroid/content/ComponentName;
 
     const/4 v1, 0x0
 
@@ -381,9 +376,6 @@
 
 .method addDetailsViews(Lcom/android/settings/applications/RunningState$MergedItem;ZZ)V
     .locals 7
-    .param p1    # Lcom/android/settings/applications/RunningState$MergedItem;
-    .param p2    # Z
-    .param p3    # Z
 
     const/4 v4, 0x0
 
@@ -522,8 +514,6 @@
 
 .method addProcessDetailsView(Lcom/android/settings/applications/RunningState$ProcessItem;Z)V
     .locals 13
-    .param p1    # Lcom/android/settings/applications/RunningState$ProcessItem;
-    .param p2    # Z
 
     const/4 v12, 0x0
 
@@ -791,10 +781,6 @@
 
 .method addServiceDetailsView(Lcom/android/settings/applications/RunningState$ServiceItem;Lcom/android/settings/applications/RunningState$MergedItem;ZZ)V
     .locals 13
-    .param p1    # Lcom/android/settings/applications/RunningState$ServiceItem;
-    .param p2    # Lcom/android/settings/applications/RunningState$MergedItem;
-    .param p3    # Z
-    .param p4    # Z
 
     if-eqz p3, :cond_3
 
@@ -1575,7 +1561,6 @@
 
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 5
-    .param p1    # Landroid/os/Bundle;
 
     const/4 v4, 0x0
 
@@ -1758,9 +1743,6 @@
 
 .method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 3
-    .param p1    # Landroid/view/LayoutInflater;
-    .param p2    # Landroid/view/ViewGroup;
-    .param p3    # Landroid/os/Bundle;
 
     const/4 v2, 0x0
 
@@ -1915,7 +1897,6 @@
 
 .method public onRefreshUi(I)V
     .locals 1
-    .param p1    # I
 
     invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 
@@ -1976,7 +1957,6 @@
 
 .method refreshUi(Z)V
     .locals 4
-    .param p1    # Z
 
     invoke-virtual {p0}, Lcom/android/settings/applications/RunningServiceDetails;->findMergedItem()Z
 
